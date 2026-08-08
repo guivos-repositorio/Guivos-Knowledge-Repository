@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1420" viewBox="0 0 390 1420" role="img" aria-labelledby="title desc">
-  <title id="title">Wireframe reformulado de baixa fidelidade do Detalhe de Oportunidade</title>
-  <desc id="desc">Estrutura móvel alinhada à Fundação da Guivos, demonstrando como a Guivos compreende o momento, qual avanço foi reconhecido, por que o próximo passo faz sentido, investimento, condições, responsável, relação comercial e ações contextuais.</desc>
-  <rect width="390" height="1420" fill="#ffffff"/>
-  <rect x="1" y="1" width="388" height="1418" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1860" viewBox="0 0 390 1860" role="img" aria-labelledby="title desc">
+  <title id="title">Wireframe reformulado do Detalhe de Oportunidade e revisão consciente de saída externa</title>
+  <desc id="desc">Estrutura móvel do Detalhe de Oportunidade com contexto, condições, responsável e relação comercial, seguida do estado de revisão antes de continuar para um destino externo.</desc>
+  <rect width="390" height="1860" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="1858" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
 
   <text x="24" y="36" font-family="Arial, sans-serif" font-size="12" fill="#555555">09:41</text>
   <text x="24" y="72" font-family="Arial, sans-serif" font-size="16">←</text>
@@ -88,4 +88,27 @@
   <text x="264" y="1383" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Salvar</text>
   <rect x="306" y="1358" width="64" height="40" rx="8" fill="#ffffff" stroke="#555555"/>
   <text x="338" y="1383" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Comparar</text>
+
+  <line x1="20" y1="1450" x2="370" y2="1450" stroke="#999999" stroke-dasharray="5 5"/>
+  <text x="20" y="1480" font-family="Arial, sans-serif" font-size="10" fill="#555555">ESTADO APÓS “VER COMO PARTICIPAR” · MESMA PER-203</text>
+  <rect x="20" y="1496" width="350" height="292" rx="12" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <text x="36" y="1526" font-family="Arial, sans-serif" font-size="16" font-weight="700">Você vai continuar fora da Guivos</text>
+  <text x="36" y="1550" font-family="Arial, sans-serif" font-size="10">A próxima etapa será no site oficial do Instituto Horizonte.</text>
+  <text x="36" y="1572" font-family="Arial, sans-serif" font-size="10" font-weight="700">Destino</text>
+  <text x="102" y="1572" font-family="Arial, sans-serif" font-size="10">institutohorizonte.example · ambiente externo</text>
+  <text x="36" y="1594" font-family="Arial, sans-serif" font-size="10" font-weight="700">Responsável</text>
+  <text x="112" y="1594" font-family="Arial, sans-serif" font-size="10">Instituto Horizonte</text>
+  <text x="36" y="1622" font-family="Arial, sans-serif" font-size="11" font-weight="700">Dados e contexto</text>
+  <text x="36" y="1643" font-family="Arial, sans-serif" font-size="10">Sua jornada, inferências e histórico não serão enviados.</text>
+  <text x="36" y="1661" font-family="Arial, sans-serif" font-size="10">Somente dados explicitamente informados aqui podem acompanhar a saída.</text>
+  <text x="36" y="1689" font-family="Arial, sans-serif" font-size="11" font-weight="700">Antes de continuar</text>
+  <text x="36" y="1710" font-family="Arial, sans-serif" font-size="10">Preço, disponibilidade e elegibilidade podem ser revalidados pelo responsável.</text>
+  <text x="36" y="1728" font-family="Arial, sans-serif" font-size="10">Continuar não confirma inscrição, reserva, compra ou contratação.</text>
+  <rect x="36" y="1745" width="194" height="30" rx="7" fill="#222222"/>
+  <text x="133" y="1765" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" font-weight="700">Continuar no site oficial</text>
+  <rect x="240" y="1745" width="114" height="30" rx="7" fill="#ffffff" stroke="#555555"/>
+  <text x="297" y="1765" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Voltar ao detalhe</text>
+
+  <rect x="20" y="1804" width="350" height="34" rx="8" fill="#f7f7f7" stroke="#aaaaaa"/>
+  <text x="34" y="1825" font-family="Arial, sans-serif" font-size="9">Se o destino não puder ser confirmado, a saída é bloqueada e o detalhe permanece acessível.</text>
 </svg>
