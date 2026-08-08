@@ -14804,7 +14804,8 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <h2 id="roadmap-6-fronteiras-preservadas">6. Fronteiras preservadas<a class="headerlink" href="#roadmap-6-fronteiras-preservadas" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>TRN-304</code>, <code>TRN-305</code> e <code>TRN-306</code>: integrações patrocinadas continuam parciais;</li>
-<li><code>TRN-416/426</code>: processo comercial após <code>BND-002</code> continua parcial;</li>
+<li><code>TRN-416/426</code>: processo de contratação/dimensionamento assistido após <code>BND-002</code> continua parcial;</li>
+<li><code>BND-002</code> não pertence semanticamente a Enterprise, Scale, Coletivo, Organização ou qualquer plano específico;</li>
 <li>gateway, cobrança real, proration, grace period e regras fiscais finais permanecem fora do escopo;</li>
 <li>comportamento posterior a <code>BND-001</code> permanece sob autoridade externa;</li>
 <li>nenhuma implementação é criada pela validação documental.</li>
@@ -14824,7 +14825,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li><code>TRN-001</code>, <code>TRN-003</code>, <code>TRN-004</code> e <code>TRN-005</code> parciais;</li>
 <li><code>TRN-304</code>, <code>TRN-305</code> e <code>TRN-306</code> parciais;</li>
 <li>cobrança real e gateway de Planos;</li>
-<li>processo Enterprise/Scale após <code>BND-002</code>;</li>
+<li>contratação/dimensionamento assistido após <code>BND-002</code>;</li>
 <li>entradas contextuais de Planos sem origem canônica adequada;</li>
 <li>operação interna restante do Coletivo;</li>
 <li>relação Organização–Coletivo ainda não materializada;</li>
@@ -33148,9 +33149,37 @@ Guivos Business
 <li><code>GAI-001 — Guivos Artificial Intelligence Knowledge Model</code> define o fluxo de dados, informação, conhecimento, contexto e recomendação;</li>
 <li><code>GAI-002 — Manifesto da Inteligência do Ecossistema Guivos</code> define propósito, princípios, Grafo Global, autonomia, limites e patrimônio cumulativo.</li>
 </ul>
+<h2 id="product-architecture-intelligence-grafo-e-tecnologia-de-referencia">Grafo e tecnologia de referência<a class="headerlink" href="#product-architecture-intelligence-grafo-e-tecnologia-de-referencia" title="Permanent link">&para;</a></h2>
+<p>O <strong>Grafo Global da Guivos</strong> é conceito e capacidade do ecossistema; não é sinônimo de um fornecedor de banco de dados.</p>
+<p>Por <code>ADR-007</code>, <strong>Neo4j é a tecnologia primária de referência para a camada de grafo</strong>, e <code>GEA-GRAPH-REFERENCE-001</code> governa a relação entre grafo, Graph Analytics, GraphRAG, Guivos Intelligence e consumo analítico.</p>
+<p>A separação obrigatória é:</p>
+<div class="highlight"><pre><span></span><code>Grafo Global da Guivos = modelo/capacidade de conexões governadas
+Guivos Intelligence = produto e Intelligence Layer
+Neo4j = tecnologia de referência para realização da camada de grafo
+</code></pre></div>
+<p>A escolha de Neo4j não declara instância, POC, cluster, Aura, dados carregados, Graph Data Science, GraphRAG, integração com Power BI ou produção implementados.</p>
+<h2 id="product-architecture-intelligence-relacao-com-graph-analytics">Relação com Graph Analytics<a class="headerlink" href="#product-architecture-intelligence-relacao-com-graph-analytics" title="Permanent link">&para;</a></h2>
+<p>Graph Analytics pode apoiar análises estruturais do ecossistema quando houver finalidade e dados autorizados.</p>
+<p>Resultados como centralidade, comunidades, similaridade ou previsão de relações são <strong>medidas técnicas contextualizadas</strong> e não podem ser convertidos automaticamente em valor humano, mérito, evolução, pertencimento, confiança ou verdade.</p>
+<h2 id="product-architecture-intelligence-relacao-com-graphrag">Relação com GraphRAG<a class="headerlink" href="#product-architecture-intelligence-relacao-com-graphrag" title="Permanent link">&para;</a></h2>
+<p>GraphRAG é padrão candidato de recuperação de contexto e relações governadas antes de uma geração por modelo de linguagem.</p>
+<p>Ele não substitui:</p>
+<ul>
+<li>a Guivos Knowledge Architecture;</li>
+<li>a Canon;</li>
+<li>validação de evidências;</li>
+<li>proveniência;</li>
+<li>permissões;</li>
+<li>distinção entre fato, inferência e síntese.</li>
+</ul>
+<p>Uma resposta gerada não se torna conhecimento canônico apenas por ter usado o grafo como contexto.</p>
+<h2 id="product-architecture-intelligence-consumo-analitico-e-power-bi">Consumo analítico e Power BI<a class="headerlink" href="#product-architecture-intelligence-consumo-analitico-e-power-bi" title="Permanent link">&para;</a></h2>
+<p>Guivos Intelligence poderá disponibilizar, quando autorizado, métricas e visões agregadas para Business Intelligence e dashboards executivos.</p>
+<p>Power BI é consumidor analítico possível, não fonte de verdade da Inteligência do Ecossistema. A forma técnica de integração permanece pendente de decisão posterior e deverá respeitar finalidade, minimização, autorização, segurança, volume, custo e rastreabilidade.</p>
 <h2 id="product-architecture-intelligence-limites">Limites<a class="headerlink" href="#product-architecture-intelligence-limites" title="Permanent link">&para;</a></h2>
 <p>Guivos Intelligence não substitui os produtos que executam jornadas, transações, viagens, soluções empresariais, conteúdo editorial ou publicidade.</p>
 <p>Também não deverá decidir o que uma pessoa deve querer, impor objetivos, substituir profissionais especializados, utilizar fontes como verdade automática, tratar inferências como certezas ou priorizar venda em prejuízo do participante.</p>
+<p>A camada de grafo também não concede autoridade adicional sobre Pessoas, Coletivos, Organizações ou demais atores.</p>
 <h2 id="product-architecture-intelligence-relacoes-principais">Relações principais<a class="headerlink" href="#product-architecture-intelligence-relacoes-principais" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Guivos Journey, para compreensão de contexto, próximos passos e oportunidades;</li>
@@ -33165,7 +33194,8 @@ Guivos Business
 <p><code>Inteligência do Ecossistema Guivos</code> é a expressão conceitual e pública para a inteligência entregue por esse produto.</p>
 <h2 id="product-architecture-intelligence-estado-de-maturidade">Estado de maturidade<a class="headerlink" href="#product-architecture-intelligence-estado-de-maturidade" title="Permanent link">&para;</a></h2>
 <p>A responsabilidade superior do produto, o modelo conceitual de aprendizagem, o Grafo Global como modelo de conexões e os princípios do manifesto estão consolidados.</p>
-<p>Ontologia formal, arquitetura de dados, modelos técnicos, mecanismos de consentimento, atualização de conhecimento, auditoria algorítmica e explicabilidade operacional ainda dependem de detalhamento, validação e implementação.</p></section><section class="print-page" id="product-architecture-ads" heading-number="8.10.5"><h1 id="product-architecture-ads-guivos-ads">Guivos Ads<a class="headerlink" href="#product-architecture-ads-guivos-ads" title="Permanent link">&para;</a></h1>
+<p>Neo4j está em estado <code>reference_selected</code> como tecnologia primária de referência para grafo.</p>
+<p>Ontologia formal, arquitetura física de dados, modelo de grafo físico, POC, infraestrutura, mecanismos técnicos de consentimento, atualização de conhecimento, auditoria algorítmica, Graph Analytics operacional, GraphRAG operacional, Power BI integrado e explicabilidade operacional ainda dependem de detalhamento, validação, autorização e implementação.</p></section><section class="print-page" id="product-architecture-ads" heading-number="8.10.5"><h1 id="product-architecture-ads-guivos-ads">Guivos Ads<a class="headerlink" href="#product-architecture-ads-guivos-ads" title="Permanent link">&para;</a></h1>
 <h2 id="product-architecture-ads-papel">Papel<a class="headerlink" href="#product-architecture-ads-papel" title="Permanent link">&para;</a></h2>
 <p>Guivos Ads é o produto responsável pela publicidade, mídia patrocinada e soluções para anunciantes dentro do Ecossistema Guivos.</p>
 <h2 id="product-architecture-ads-escopo-principal">Escopo principal<a class="headerlink" href="#product-architecture-ads-escopo-principal" title="Permanent link">&para;</a></h2>
@@ -33344,6 +33374,13 @@ Guivos Business
 <li>publicação ou ativação não equivale a distribuição garantida;</li>
 <li>plano pago não altera relevância, confiança, legitimidade, impacto ou evolução;</li>
 <li>oportunidade pública não é ocultada para vender plano;</li>
+<li>Pessoa utiliza <code>Free · Plus · Pro</code>;</li>
+<li>Coletivo utiliza <code>Livre · Mobiliza · Impacta · Rede</code>;</li>
+<li>Organização utiliza <code>Conecta · Eleva · Transforma</code>;</li>
+<li>Guivos Business utiliza <code>Start · Growth · Scale · Enterprise</code> como Produto Especializado separado;</li>
+<li>Organização ≠ Guivos Business;</li>
+<li>Organização Transforma ≠ Guivos Business Enterprise;</li>
+<li><code>BND-002</code> representa contratação/dimensionamento assistido quando o autoatendimento não for suficiente e não pertence semanticamente a plano específico;</li>
 <li>estado intermediário não cria superfície própria quando preserva responsabilidade, autoridade e decisão principal;</li>
 <li>fronteira externa não é tela da Guivos;</li>
 <li>validação até uma fronteira não valida comportamento de terceiro;</li>
@@ -33383,7 +33420,7 @@ Guivos Business
 <tbody>
 <tr>
 <td>Jornadas Integradas</td>
-<td><code>active</code> 0.31.0</td>
+<td><code>active</code> 0.32.0</td>
 </tr>
 <tr>
 <td>Jornada da Pessoa</td>
@@ -33391,15 +33428,15 @@ Guivos Business
 </tr>
 <tr>
 <td>Jornada do Coletivo</td>
-<td><code>draft</code> 0.15.0</td>
+<td><code>draft</code> 0.16.0</td>
 </tr>
 <tr>
 <td>Jornada da Organização</td>
-<td><code>draft</code> 0.8.0</td>
+<td><code>draft</code> 0.9.0</td>
 </tr>
 <tr>
 <td>catálogo integrado</td>
-<td><code>active</code> 0.26.0</td>
+<td><code>active</code> 0.27.0</td>
 </tr>
 <tr>
 <td>galeria visual</td>
@@ -33415,7 +33452,7 @@ Guivos Business
 </tr>
 <tr>
 <td>lacunas</td>
-<td><code>active</code> 0.26.0</td>
+<td><code>active</code> 0.27.0</td>
 </tr>
 <tr>
 <td>registro de superfícies</td>
@@ -33437,7 +33474,7 @@ Guivos Business
 <li><code>TRN-001</code>, <code>TRN-003</code>, <code>TRN-004</code> e <code>TRN-005</code> permanecem parciais;</li>
 <li><code>TRN-304</code>, <code>TRN-305</code> e <code>TRN-306</code> permanecem parciais na integração patrocinada;</li>
 <li><code>TRN-416/426</code> permanecem parciais;</li>
-<li>gateway, cobrança real, proration e processo comercial após <code>BND-002</code> permanecem fora do escopo;</li>
+<li>gateway, cobrança real, proration e processo de contratação/dimensionamento assistido após <code>BND-002</code> permanecem fora do escopo;</li>
 <li>processo externo após <code>BND-001</code> permanece sob autoridade de terceiro;</li>
 <li>Jornadas da Pessoa, Coletivo e Organização continuam <code>draft</code>.</li>
 </ul>
@@ -33450,7 +33487,7 @@ Guivos Business
 → V5 — pendente e não iniciada
 </code></pre></div>
 <h2 id="experience-architecture-10-proxima-evolucao-possivel">10. Próxima evolução possível<a class="headerlink" href="#experience-architecture-10-proxima-evolucao-possivel" title="Permanent link">&para;</a></h2>
-<p>V5, cobrança real, processo Enterprise/Scale e demais validações exigem autorização separada. A auditoria transversal dos Produtos Especializados pode ocorrer como diagnóstico sem iniciar nova UXA ou Engenharia de Produto.</p></section>
+<p>V5, cobrança real, contratação/dimensionamento assistido após <code>BND-002</code> e demais validações exigem autorização separada. A auditoria transversal dos Produtos Especializados pode ocorrer como diagnóstico sem iniciar nova UXA ou Engenharia de Produto.</p></section>
                     <section class='print-page md-section' id='section-9-2' heading-number='9.2'>
                         <h1>Fundação e padrões<a class='headerlink' href='#section-9-2' title='Permanent link'></a>
                         </h1>
@@ -52407,8 +52444,8 @@ d635b0b319264ce0562cfb85b07288dc3214f002
 <tbody>
 <tr>
 <td>visão geral das Jornadas Integradas</td>
-<td><code>active</code> 0.31.0</td>
-<td>UXA-101</td>
+<td><code>active</code> 0.32.0</td>
+<td>reconciliação de nomenclatura 2026-08-08</td>
 </tr>
 <tr>
 <td>Pessoa, Coletivo e Organização</td>
@@ -52422,13 +52459,13 @@ d635b0b319264ce0562cfb85b07288dc3214f002
 </tr>
 <tr>
 <td>Jornada do Coletivo</td>
-<td><code>draft</code> 0.15.0</td>
-<td>UXA-100-A3</td>
+<td><code>draft</code> 0.16.0</td>
+<td>taxonomia Livre/Mobiliza/Impacta/Rede</td>
 </tr>
 <tr>
 <td>Jornada da Organização</td>
-<td><code>draft</code> 0.8.0</td>
-<td>UXA-101</td>
+<td><code>draft</code> 0.9.0</td>
+<td>taxonomia Conecta/Eleva/Transforma</td>
 </tr>
 <tr>
 <td>catálogo integrado</td>
@@ -52462,7 +52499,7 @@ d635b0b319264ce0562cfb85b07288dc3214f002
 </tr>
 <tr>
 <td>registro de lacunas</td>
-<td><code>active</code> 0.26.0</td>
+<td><code>active</code> 0.27.0</td>
 <td>V4 encerrada; V5 pendente</td>
 </tr>
 <tr>
@@ -52493,9 +52530,16 @@ PER-203 → revisão consciente no mesmo estado → TRN-205 → BND-001
 <div class="highlight"><pre><span></span><code>*-301 Planos e comparação
 ├── upgrade → *-302 revisão → *-304 resultado/recuperação → *-301
 ├── downgrade/cancelamento → *-303 → *-304 → *-301
-└── Enterprise/Scale → BND-002 quando aplicável
+└── quando autoatendimento não for suficiente → BND-002
 </code></pre></div>
-<p>As transições internas continuam localmente validadas; <code>TRN-416/426</code> permanecem parciais. Cobrança real e processo posterior a <code>BND-002</code> continuam fora do escopo.</p>
+<p>A nomenclatura vigente é:</p>
+<ul>
+<li>Pessoa: <code>Free · Plus · Pro</code>;</li>
+<li>Coletivo: <code>Livre · Mobiliza · Impacta · Rede</code>;</li>
+<li>Organização: <code>Conecta · Eleva · Transforma</code>;</li>
+<li>Guivos Business: <code>Start · Growth · Scale · Enterprise</code>, como Produto Especializado separado.</li>
+</ul>
+<p><code>BND-002</code> é fronteira genérica de contratação/dimensionamento assistido e não plano. As transições internas continuam localmente validadas; <code>TRN-416/426</code> permanecem parciais. Cobrança real e processo posterior a <code>BND-002</code> continuam fora do escopo.</p>
 <h2 id="journeys-7-cobertura-canonica">7. Cobertura canônica<a class="headerlink" href="#journeys-7-cobertura-canonica" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -52550,6 +52594,9 @@ PER-203 → revisão consciente no mesmo estado → TRN-205 → BND-001
 <h2 id="journeys-8-separacoes-obrigatorias">8. Separações obrigatórias<a class="headerlink" href="#journeys-8-separacoes-obrigatorias" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Planos canonicamente registrado não equivale a checkout implementado;</li>
+<li>Organização ≠ Guivos Business;</li>
+<li>Organização Transforma ≠ Guivos Business Enterprise;</li>
+<li><code>BND-002</code> ≠ Enterprise ou Scale;</li>
 <li>revisão de saída em <code>PER-203</code> não cria tela nova;</li>
 <li>validação até <code>BND-001</code> não valida sistema de terceiro;</li>
 <li>pagar um plano ou patrocínio não altera relevância funcional;</li>
@@ -52870,7 +52917,7 @@ PER-203 → revisão consciente no mesmo estado → TRN-205 → BND-001
 <td style="text-align: right;"><strong>3</strong></td>
 <td><strong>3 validados</strong></td>
 <td>TRN-411 a 415 locais; TRN-416 parcial</td>
-<td>processo Enterprise e cobrança real</td>
+<td>contratação/dimensionamento assistido e cobrança real</td>
 </tr>
 <tr>
 <td>Organização</td>
@@ -52886,7 +52933,7 @@ PER-203 → revisão consciente no mesmo estado → TRN-205 → BND-001
 <td style="text-align: right;"><strong>3</strong></td>
 <td><strong>3 validados</strong></td>
 <td>TRN-421 a 425 locais; TRN-426 parcial</td>
-<td>processo Scale e cobrança real</td>
+<td>contratação/dimensionamento assistido e cobrança real</td>
 </tr>
 <tr>
 <td>camada comercial</td>
@@ -52902,7 +52949,7 @@ PER-203 → revisão consciente no mesmo estado → TRN-205 → BND-001
 <td style="text-align: right;">0</td>
 <td>não aplicável</td>
 <td>BND-001 examinada; BND-002 parcial</td>
-<td>processo externo posterior; Enterprise/Scale</td>
+<td>processo externo posterior; contratação/dimensionamento assistido</td>
 </tr>
 <tr>
 <td><strong>Total canônico</strong></td>
@@ -52937,7 +52984,7 @@ PER-203 → revisão consciente no mesmo estado → TRN-205 → BND-001
 <tr>
 <td>catálogo canônico</td>
 <td style="text-align: right;"><strong>118 SVGs</strong></td>
-<td><code>active</code> 0.26.0</td>
+<td><code>active</code> 0.27.0</td>
 </tr>
 <tr>
 <td>matriz de rastreabilidade</td>
@@ -53001,12 +53048,15 @@ PER-203 → revisão consciente no mesmo estado → TRN-205 → BND-001
 <li><code>PER-108</code> sintetiza contexto interno e não replica canais especializados;</li>
 <li>comparação incremental de Planos não é tela adicional;</li>
 <li>processamento financeiro transitório não é tela própria;</li>
-<li>Enterprise/Scale terminam em <code>BND-002</code>, não checkout;</li>
+<li><code>BND-002</code> representa contratação/dimensionamento assistido quando aplicável e não é plano Enterprise ou Scale;</li>
+<li>Coletivo usa <code>Livre · Mobiliza · Impacta · Rede</code>;</li>
+<li>Organização usa <code>Conecta · Eleva · Transforma</code>;</li>
+<li>Guivos Business usa <code>Start · Growth · Scale · Enterprise</code> como Produto Especializado separado;</li>
 <li><code>TRN-304</code>, <code>TRN-305</code>, <code>TRN-306</code>, <code>TRN-416</code> e <code>TRN-426</code> permanecem continuidades separadas.</li>
 </ul>
 <h2 id="journeys-screen-catalog-7-estado-do-catalogo">7. Estado do catálogo<a class="headerlink" href="#journeys-screen-catalog-7-estado-do-catalogo" title="Permanent link">&para;</a></h2>
 <ul>
-<li>catálogo: <code>active</code> 0.26.0;</li>
+<li>catálogo: <code>active</code> 0.27.0;</li>
 <li>galeria principal: <code>active</code> 0.21.0; 118 SVGs;</li>
 <li>matriz por SVG: <code>active</code> 0.17.0; 118 associações / 31 perfis;</li>
 <li>jornadas da Pessoa, Coletivo e Organização: <code>draft</code>;</li>
@@ -53277,9 +53327,9 @@ PER-203
 ├── TRN-413 → COL-303 — downgrade/cancelamento
 │   └── TRN-414 → COL-304
 │       └── TRN-415 → COL-301
-└── TRN-416 → BND-002 — proposta Enterprise
+└── TRN-416 → BND-002 — contratação/dimensionamento assistido
 </code></pre></div>
-<p><code>TRN-411</code> a <code>TRN-415</code> estão localmente validadas no pacote UXA-100. <code>TRN-416</code> permanece parcial porque o processo comercial posterior a <code>BND-002</code> não foi materializado.</p>
+<p><code>TRN-411</code> a <code>TRN-415</code> estão localmente validadas no pacote UXA-100. <code>TRN-416</code> permanece parcial porque o processo comercial posterior a <code>BND-002</code> não foi materializado. <code>BND-002</code> representa a necessidade de contratação/dimensionamento assistido quando o autoatendimento não for suficiente e não pertence semanticamente a um plano específico.</p>
 <p>Entrada contextual permanece válida:</p>
 <div class="highlight"><pre><span></span><code>criar atividade/oportunidade
 → limite do plano atingido ou publicação paga não incluída
@@ -53294,7 +53344,7 @@ PER-203
 <p>Regras:</p>
 <ul>
 <li><code>COL-301</code> mostra plano atual e consumo do ciclo;</li>
-<li>compara <code>Livre → Gestão → Impacto → Enterprise</code>;</li>
+<li>compara <code>Livre → Mobiliza → Impacta → Rede</code>;</li>
 <li>comparação incremental pertence a <code>COL-301</code> e não cria tela própria;</li>
 <li>o delta direto plano atual → alvo permanece obrigatório;</li>
 <li><code>COL-302</code> exibe preço mensal/anual, recorrência, início, pagador/beneficiário e método em simulação antes da confirmação;</li>
@@ -53303,7 +53353,7 @@ PER-203
 <li><code>COL-303</code> exige tratamento explícito de publicações gratuitas/pagas, administradores, núcleos/unidades, compromissos e exportação antes do downgrade;</li>
 <li>nenhum registro ou participante é apagado silenciosamente para efetivar redução de plano;</li>
 <li><code>COL-304</code> diferencia sucesso de falha e preserva o estado anterior quando não houver confirmação;</li>
-<li>Enterprise usa <code>BND-002</code>, não checkout autônomo;</li>
+<li>quando a contratação não puder ser concluída em autoatendimento, a jornada usa <code>BND-002</code> como fronteira assistida;</li>
 <li>plano pago não aumenta relevância orgânica, legitimidade ou impacto.</li>
 </ul>
 <p>A UXA-100-A2 forneceu a validação funcional visual e a UXA-100-A3 promoveu <code>COL-301</code> a <code>COL-304</code>.</p>
@@ -53342,7 +53392,7 @@ PER-203
 </tr>
 <tr>
 <td>COL-301 → BND-002 (<code>TRN-416</code>)</td>
-<td><strong>parcial; processo Enterprise posterior não materializado</strong></td>
+<td><strong>parcial; processo de contratação/dimensionamento assistido posterior não materializado</strong></td>
 </tr>
 </tbody>
 </table>
@@ -53377,11 +53427,11 @@ PER-203
 <li>estados P0B de superfícies da Pessoa permanecem separados;</li>
 <li>a relação Organização–Coletivo permanece contratada e não materializada;</li>
 <li>as transições de Planos são locais e <code>TRN-416</code> permanece parcial;</li>
-<li>cobrança real, gateway e processo Enterprise não foram implementados/validados ponta a ponta;</li>
+<li>cobrança real, gateway e processo assistido posterior a <code>BND-002</code> não foram implementados/validados ponta a ponta;</li>
 <li>outras continuidades ainda não foram examinadas como conjunto.</li>
 </ul>
 <h2 id="journeys-collective-8-estado-da-frente-de-planos">8. Estado da frente de Planos<a class="headerlink" href="#journeys-collective-8-estado-da-frente-de-planos" title="Permanent link">&para;</a></h2>
-<p>A fragmentação e promoção canônica do Coletivo foi concluída pela UXA-100-A3 em <code>COL-301</code> a <code>COL-304</code>, <code>TRN-411</code> a <code>TRN-416</code> e <code>BND-002</code>. Nenhuma próxima UXA é iniciada automaticamente.</p></section><section class="print-page" id="journeys-organization" heading-number="10.6"><h1 id="journeys-organization-jornada-integrada-da-organizacao">Jornada Integrada da Organização<a class="headerlink" href="#journeys-organization-jornada-integrada-da-organizacao" title="Permanent link">&para;</a></h1>
+<p>A fragmentação e promoção canônica do Coletivo foi concluída pela UXA-100-A3 em <code>COL-301</code> a <code>COL-304</code>, <code>TRN-411</code> a <code>TRN-416</code> e <code>BND-002</code>. A taxonomia vigente desta frente é <code>Livre · Mobiliza · Impacta · Rede</code>. Nenhuma próxima UXA é iniciada automaticamente.</p></section><section class="print-page" id="journeys-organization" heading-number="10.6"><h1 id="journeys-organization-jornada-integrada-da-organizacao">Jornada Integrada da Organização<a class="headerlink" href="#journeys-organization-jornada-integrada-da-organizacao" title="Permanent link">&para;</a></h1>
 <h2 id="journeys-organization-1-continuidade-institucional">1. Continuidade institucional<a class="headerlink" href="#journeys-organization-1-continuidade-institucional" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>identidade, unidade e autoridade
 → visão geral institucional
@@ -53466,7 +53516,7 @@ PER-203
 <td>GEM-004 / UXA-100-A3</td>
 <td>3 SVGs canônicos / 4 superfícies</td>
 <td>UXA-100-A2/A3</td>
-<td>transições internas locais; Scale parcial</td>
+<td>transições internas locais; <code>BND-002</code> parcial</td>
 </tr>
 <tr>
 <td>evidências e resultados institucionais</td>
@@ -53500,17 +53550,17 @@ PER-203
 <p>Antes da saída, <code>PER-203</code> explicita destino externo, responsável, dados/contexto que acompanham ou não a transição e ausência de garantia de conclusão. Destino ausente, inválido ou materialmente alterado bloqueia redirecionamento silencioso. Após <code>BND-001</code>, o processo e o resultado pertencem ao terceiro.</p>
 <p>A Organização continua responsável por manter preço, disponibilidade, local, modalidade, capacidade, elegibilidade, risco, responsável e demais informações materiais atualizados.</p>
 <h2 id="journeys-organization-4-planos-como-etapa-transversal-canonica">4. Planos como etapa transversal canônica<a class="headerlink" href="#journeys-organization-4-planos-como-etapa-transversal-canonica" title="Permanent link">&para;</a></h2>
-<p>A UXA-100-A3 registra <strong>Planos</strong> canonicamente na jornada institucional da Organização.</p>
+<p>A UXA-100-A3 registra <strong>Planos</strong> canonicamente na jornada institucional da Organização. A taxonomia desta jornada é <strong>Conecta / Eleva / Transforma</strong>. Guivos Business permanece Produto Especializado separado, com taxonomia própria e sem correspondência automática 1:1 com os planos da Organização.</p>
 <div class="highlight"><pre><span></span><code>ORG-301 — Planos e comparação
-├── TRN-421 → ORG-302 — revisão de contratação Growth
+├── TRN-421 → ORG-302 — revisão de contratação
 │   └── TRN-422 → ORG-304 — resultado/recuperação
 │       └── TRN-425 → ORG-301
 ├── TRN-423 → ORG-303 — downgrade/cancelamento
 │   └── TRN-424 → ORG-304
 │       └── TRN-425 → ORG-301
-└── TRN-426 → BND-002 — proposta Business Scale
+└── TRN-426 → BND-002 — contratação/dimensionamento assistido
 </code></pre></div>
-<p><code>TRN-421</code> a <code>TRN-425</code> estão localmente validadas. <code>TRN-426</code> permanece parcial porque o processo comercial posterior a <code>BND-002</code> não foi materializado.</p>
+<p><code>TRN-421</code> a <code>TRN-425</code> estão localmente validadas. <code>TRN-426</code> permanece parcial porque o processo posterior a <code>BND-002</code> não foi materializado. <code>BND-002</code> identifica a necessidade de contratação/dimensionamento assistido quando o autoatendimento não for suficiente; não representa Guivos Business Scale, Enterprise ou qualquer outro plano específico.</p>
 <p>Entrada contextual:</p>
 <div class="highlight"><pre><span></span><code>criar nova oportunidade/programa
 → capacidade do ciclo atingida
@@ -53525,16 +53575,22 @@ PER-203
 <p>Regras:</p>
 <ul>
 <li><code>ORG-301</code> mostra plano atual, uso e período do ciclo;</li>
-<li>compara <code>Business Start → Business Growth → Business Scale</code>;</li>
+<li>compara <code>Conecta → Eleva → Transforma</code>;</li>
 <li>comparação incremental pertence a <code>ORG-301</code>, sem superfície adicional;</li>
 <li>apresenta delta direto do plano atual para o escolhido;</li>
-<li><code>ORG-302</code> exibe preços mensal/anual, recorrência, início, pagador/autoridade financeira e beneficiário antes da confirmação;</li>
+<li><code>ORG-302</code> exibe preços mensal/anual, recorrência, início, pagador/autoridade financeira e beneficiário antes da confirmação quando essas condições forem aplicáveis ao plano alvo;</li>
 <li>contratação não amplia consentimento nem acesso ao contexto individual de Pessoas;</li>
 <li><code>ORG-303</code> exige selecionar unidades, administradores, publicações e Coletivos relacionados mantidos, integrações a encerrar e dados a exportar;</li>
 <li>históricos/agregados não são apagados para forçar retenção;</li>
 <li><code>ORG-304</code> diferencia sucesso e falha, preservando plano anterior e direitos quando não houver confirmação;</li>
-<li>Scale usa <code>BND-002</code>, não checkout definitivo;</li>
+<li>quando a contratação não puder ser concluída em autoatendimento, a jornada usa <code>BND-002</code> como fronteira assistida;</li>
 <li>capacidade comercial permanece separada de relevância, confiança, legitimidade e resultado.</li>
+</ul>
+<p>Separações obrigatórias:</p>
+<ul>
+<li><code>Organização ≠ Guivos Business</code>;</li>
+<li><code>Organização Transforma ≠ Guivos Business Enterprise</code>;</li>
+<li><code>BND-002 ≠ plano Enterprise ou Scale</code>.</li>
 </ul>
 <h2 id="journeys-organization-5-relacao-com-coletivos">5. Relação com Coletivos<a class="headerlink" href="#journeys-organization-5-relacao-com-coletivos" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>rascunho
@@ -53615,12 +53671,12 @@ PER-203
 <li><code>TRN-201</code> permanece parcial e <code>TRN-202</code> localmente validada;</li>
 <li>integrações patrocinadas com Mapa/Lista (<code>TRN-304</code>/<code>TRN-306</code>) permanecem parciais;</li>
 <li>as transições internas de Planos são locais e <code>TRN-426</code> permanece parcial;</li>
-<li>cobrança real, gateway e processo Scale não foram implementados/validados ponta a ponta;</li>
+<li>cobrança real, gateway e processo assistido posterior a <code>BND-002</code> não foram implementados/validados ponta a ponta;</li>
 <li>evidências e resultados institucionais continuam sem matriz integrada.</li>
 </ul>
 <p><code>TRN-205</code> deixa de ser pendência desta vista: UXA-101 a valida até <code>BND-001</code>, sem promover a jornada institucional completa.</p>
 <h2 id="journeys-organization-8-estado-da-frente">8. Estado da frente<a class="headerlink" href="#journeys-organization-8-estado-da-frente" title="Permanent link">&para;</a></h2>
-<p>A organização mantém publicação/descoberta validada pela UXA-098, saída consciente até <code>BND-001</code> validada pela UXA-101 e Planos canônicos pela UXA-100-A3. Nenhuma próxima UXA é iniciada automaticamente.</p></section><section class="print-page" id="journeys-handoffs" heading-number="10.7"><h1 id="journeys-handoffs-handoffs-entre-participantes">Handoffs entre Participantes<a class="headerlink" href="#journeys-handoffs-handoffs-entre-participantes" title="Permanent link">&para;</a></h1>
+<p>A Organização mantém publicação/descoberta validada pela UXA-098, saída consciente até <code>BND-001</code> validada pela UXA-101 e Planos canônicos pela UXA-100-A3. A taxonomia vigente é <code>Conecta · Eleva · Transforma</code>; Guivos Business permanece produto separado. Nenhuma próxima UXA é iniciada automaticamente.</p></section><section class="print-page" id="journeys-handoffs" heading-number="10.7"><h1 id="journeys-handoffs-handoffs-entre-participantes">Handoffs entre Participantes<a class="headerlink" href="#journeys-handoffs-handoffs-entre-participantes" title="Permanent link">&para;</a></h1>
 <h2 id="journeys-handoffs-1-finalidade">1. Finalidade<a class="headerlink" href="#journeys-handoffs-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Esta vista identifica pontos em que a próxima decisão ou contexto passa para outra superfície ou autoridade legítima. Nenhum handoff é considerado validado apenas porque as superfícies existem.</p>
 <h2 id="journeys-handoffs-2-matriz-governada-de-coletivos">2. Matriz governada de Coletivos<a class="headerlink" href="#journeys-handoffs-2-matriz-governada-de-coletivos" title="Permanent link">&para;</a></h2>
@@ -55339,14 +55395,14 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <td>COL-301 a 304; TRN-411 a 416</td>
 <td>3 SVGs canônicos</td>
 <td>superfícies validadas; TRN-411 a 415 locais; TRN-416 parcial</td>
-<td>cobrança real e processo Enterprise após BND-002</td>
+<td>cobrança real e contratação/dimensionamento assistido após BND-002</td>
 </tr>
 <tr>
 <td>Organização</td>
 <td>ORG-301 a 304; TRN-421 a 426</td>
 <td>3 SVGs canônicos</td>
 <td>superfícies validadas; TRN-421 a 425 locais; TRN-426 parcial</td>
-<td>cobrança real e processo Scale após BND-002</td>
+<td>cobrança real e contratação/dimensionamento assistido após BND-002</td>
 </tr>
 <tr>
 <td>fronteira comercial</td>
@@ -55357,6 +55413,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 </tr>
 </tbody>
 </table>
+<p><code>BND-002</code> é fronteira genérica de contratação/dimensionamento assistido. Não pertence semanticamente a Enterprise, Scale, Coletivo, Organização ou a qualquer plano específico.</p>
 <h2 id="journeys-gaps-6-gates-de-coletivos">6. Gates de Coletivos<a class="headerlink" href="#journeys-gaps-6-gates-de-coletivos" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -55462,7 +55519,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 </tr>
 <tr>
 <td style="text-align: right;">7</td>
-<td>processo comercial Enterprise/Scale</td>
+<td>contratação/dimensionamento assistido</td>
 <td>BND-002; TRN-416/426</td>
 <td>fronteira registrada</td>
 <td>contrato comercial/operacional suficiente</td>
@@ -55536,7 +55593,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>validação até uma fronteira não valida comportamento de terceiro;</li>
 <li>oportunidade pública não é ocultada para vender plano;</li>
 <li>plano pago não compra relevância, confiança, impacto, legitimidade ou evolução;</li>
-<li>Enterprise/Scale não recebem checkout fictício;</li>
+<li>contratação assistida não recebe checkout fictício;</li>
 <li>repetição da mesma intenção não duplica efeito lógico;</li>
 <li>validação documental não equivale a implementação técnica.</li>
 </ul>
@@ -56431,6 +56488,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <h2 id="economic-model-gem-commercial-plans-baseline-review-1-finalidade">1. Finalidade<a class="headerlink" href="#economic-model-gem-commercial-plans-baseline-review-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Esta revisão registra a reabertura localizada do Guivos Economic Model para transformar arquétipos conceituais em uma baseline comercial candidata de planos, benefícios, limites e preços.</p>
 <p>A reabertura atende aos critérios da Revisão de Fechamento do Modelo Econômico porque planos e preços passaram a exigir contratos específicos, parâmetros rastreáveis e validação separada.</p>
+<p>A versão 0.2.0 reconcilia a revisão com a taxonomia vigente e remove a antiga fusão entre Organização e Guivos Business.</p>
 <h2 id="economic-model-gem-commercial-plans-baseline-review-2-escopo-reaberto">2. Escopo reaberto<a class="headerlink" href="#economic-model-gem-commercial-plans-baseline-review-2-escopo-reaberto" title="Permanent link">&para;</a></h2>
 <p>Foram reabertos somente:</p>
 <ul>
@@ -56446,11 +56504,12 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <ul>
 <li>planos para Pessoas;</li>
 <li>planos para Coletivos;</li>
-<li>Coletivo Enterprise;</li>
+<li>Coletivo Rede e sua fronteira de dimensionamento quando aplicável;</li>
 <li>planos para Organizações;</li>
+<li>separação explícita de Guivos Business como Produto Especializado;</li>
 <li>acesso financiado e patrocinado;</li>
-<li>benefícios e limites;</li>
-<li>preços mensais e anuais candidatos;</li>
+<li>benefícios e limites candidatos;</li>
+<li>preços mensais e anuais candidatos onde existe autoridade econômica aplicável;</li>
 <li>regras de cotas;</li>
 <li>separação entre assinatura e transação;</li>
 <li>pontos legítimos de oferta;</li>
@@ -56469,16 +56528,25 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <h3 id="economic-model-gem-commercial-plans-baseline-review-coletivos">Coletivos<a class="headerlink" href="#economic-model-gem-commercial-plans-baseline-review-coletivos" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Coletivo Livre;</li>
-<li>Coletivo Gestão;</li>
-<li>Coletivo Impacto;</li>
-<li>Coletivo Enterprise.</li>
+<li>Coletivo Mobiliza;</li>
+<li>Coletivo Impacta;</li>
+<li>Coletivo Rede.</li>
 </ul>
 <h3 id="economic-model-gem-commercial-plans-baseline-review-organizacoes">Organizações<a class="headerlink" href="#economic-model-gem-commercial-plans-baseline-review-organizacoes" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Guivos Business Start;</li>
-<li>Guivos Business Growth;</li>
-<li>Guivos Business Scale.</li>
+<li>Organização Conecta;</li>
+<li>Organização Eleva;</li>
+<li>Organização Transforma.</li>
 </ul>
+<h3 id="economic-model-gem-commercial-plans-baseline-review-guivos-business">Guivos Business<a class="headerlink" href="#economic-model-gem-commercial-plans-baseline-review-guivos-business" title="Permanent link">&para;</a></h3>
+<p>Guivos Business é Produto Especializado com taxonomia própria:</p>
+<ul>
+<li>Start;</li>
+<li>Growth;</li>
+<li>Scale;</li>
+<li>Enterprise.</li>
+</ul>
+<p>Esta revisão não atribui aos tiers de Business os preços ou entitlements históricos da jornada de Organização.</p>
 <h3 id="economic-model-gem-commercial-plans-baseline-review-acesso-transversal">Acesso transversal<a class="headerlink" href="#economic-model-gem-commercial-plans-baseline-review-acesso-transversal" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Guivos Patrocinado ou financiado, vinculado a prazo, finalidade e capacidade declarados.</li>
@@ -56490,13 +56558,15 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>oportunidades públicas permanecem acessíveis pelo Explorar e Mapa;</li>
 <li>Coletivo Livre permite uma atividade gratuita e uma oportunidade gratuita por mês;</li>
 <li>Coletivo Livre possui até duas publicações simultaneamente ativas;</li>
-<li>publicação paga exige Coletivo Gestão ou superior;</li>
-<li>Coletivo Gestão possui quatro atividades, quatro oportunidades e seis publicações ativas;</li>
-<li>Coletivo Impacto possui quinze atividades, quinze oportunidades e vinte publicações ativas;</li>
-<li>Coletivo Enterprise não possui limite padrão fixo, mas capacidade contratada e uso justo;</li>
+<li>publicação paga exige Coletivo Mobiliza ou superior;</li>
+<li>Coletivo Mobiliza possui quatro atividades, quatro oportunidades e seis publicações ativas na baseline candidata;</li>
+<li>Coletivo Impacta possui quinze atividades, quinze oportunidades e vinte publicações ativas na baseline candidata;</li>
+<li>Coletivo Rede não possui limite padrão fixo, mas capacidade contratada e uso justo;</li>
 <li>compra de atividade paga independe da assinatura individual;</li>
 <li>assinatura, transação, comissão, taxa de pagamento e tributo permanecem objetos distintos;</li>
-<li>plano pago não aumenta ranking, impacto, evidência ou relevância orgânica.</li>
+<li>plano pago não aumenta ranking, impacto, evidência ou relevância orgânica;</li>
+<li>Organização ≠ Guivos Business;</li>
+<li>Organização Transforma ≠ Guivos Business Enterprise.</li>
 </ol>
 <h2 id="economic-model-gem-commercial-plans-baseline-review-6-precos-candidatos">6. Preços candidatos<a class="headerlink" href="#economic-model-gem-commercial-plans-baseline-review-6-precos-candidatos" title="Permanent link">&para;</a></h2>
 <table>
@@ -56535,43 +56605,43 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 </tr>
 <tr>
 <td>Coletivo</td>
-<td>Coletivo Gestão</td>
+<td>Coletivo Mobiliza</td>
 <td style="text-align: right;">R$ 89,90</td>
 <td style="text-align: right;">R$ 899,00</td>
 </tr>
 <tr>
 <td>Coletivo</td>
-<td>Coletivo Impacto</td>
+<td>Coletivo Impacta</td>
 <td style="text-align: right;">R$ 249,90</td>
 <td style="text-align: right;">R$ 2.499,00</td>
 </tr>
 <tr>
 <td>Coletivo</td>
-<td>Coletivo Enterprise</td>
+<td>Coletivo Rede</td>
 <td style="text-align: right;">sob consulta</td>
 <td style="text-align: right;">contrato anual</td>
 </tr>
 <tr>
 <td>Organização</td>
-<td>Business Start</td>
+<td>Organização Conecta</td>
 <td style="text-align: right;">R$ 299,00</td>
 <td style="text-align: right;">R$ 2.990,00</td>
 </tr>
 <tr>
 <td>Organização</td>
-<td>Business Growth</td>
+<td>Organização Eleva</td>
 <td style="text-align: right;">R$ 799,00</td>
 <td style="text-align: right;">R$ 7.990,00</td>
 </tr>
 <tr>
 <td>Organização</td>
-<td>Business Scale</td>
+<td>Organização Transforma</td>
 <td style="text-align: right;">a partir de R$ 1.990,00</td>
 <td style="text-align: right;">contrato anual</td>
 </tr>
 </tbody>
 </table>
-<p>Os valores são parâmetros candidatos para validação e não autorização de cobrança.</p>
+<p>Os valores são parâmetros candidatos para validação e não autorização de cobrança. Eles não constituem preços de Start/Growth/Scale/Enterprise do Guivos Business.</p>
 <h2 id="economic-model-gem-commercial-plans-baseline-review-7-protecoes-confirmadas">7. Proteções confirmadas<a class="headerlink" href="#economic-model-gem-commercial-plans-baseline-review-7-protecoes-confirmadas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>gratuito real;</li>
@@ -56604,7 +56674,8 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>revisão jurídica, fiscal, contábil, regulatória, de privacidade e segurança;</li>
 <li>implementação de entitlement;</li>
 <li>oferta pública;</li>
-<li>operação.</li>
+<li>operação;</li>
+<li>autoridade comercial própria de preços e entitlements do Guivos Business.</li>
 </ul>
 <h2 id="economic-model-gem-commercial-plans-baseline-review-9-efeito-sobre-o-fechamento-anterior">9. Efeito sobre o fechamento anterior<a class="headerlink" href="#economic-model-gem-commercial-plans-baseline-review-9-efeito-sobre-o-fechamento-anterior" title="Permanent link">&para;</a></h2>
 <p>A Revisão de Fechamento GEM-CLOSURE-REVIEW-001 permanece válida como registro da primeira arquitetura documental.</p>
@@ -56614,7 +56685,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>não reabre silenciosamente todo o domínio;</li>
 <li>substitui a ausência deliberada de preços e planos comerciais apenas no escopo definido;</li>
 <li>preserva os demais limites e separações;</li>
-<li>torna GEM-004-A1, GEM-004-A2 e GEM-010-A1 autoridades vigentes da baseline comercial candidata.</li>
+<li>torna GEM-004-A1, GEM-004-A2 e GEM-010-A1 autoridades vigentes da baseline comercial candidata, subordinadas à autoridade conceitual de taxonomia quando houver conflito de nomenclatura.</li>
 </ul>
 <h2 id="economic-model-gem-commercial-plans-baseline-review-10-parecer-de-continuidade">10. Parecer de continuidade<a class="headerlink" href="#economic-model-gem-commercial-plans-baseline-review-10-parecer-de-continuidade" title="Permanent link">&para;</a></h2>
 <p>A baseline poderá avançar para validação de mercado e modelagem financeira somente por autorização independente.</p>
@@ -56634,15 +56705,16 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 </blockquote>
 <h2 id="economic-model-gem-opportunity-boost-baseline-review-2-parecer">2. Parecer<a class="headerlink" href="#economic-model-gem-opportunity-boost-baseline-review-2-parecer" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p><strong>PASS DOCUMENTAL — mecanismo candidato definido; validações e operação permanecem pendentes.</strong></p>
+<p><strong>PASS DOCUMENTAL — mecanismo candidato definido; validações, reconciliação de entitlement de Organização e operação permanecem pendentes.</strong></p>
 </blockquote>
 <h2 id="economic-model-gem-opportunity-boost-baseline-review-3-decisoes-consolidadas">3. Decisões consolidadas<a class="headerlink" href="#economic-model-gem-opportunity-boost-baseline-review-3-decisoes-consolidadas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>o Boost é add-on separado dos planos;</li>
 <li>Guivos Ads é o operador econômico;</li>
-<li>Coletivo Gestão, Impacto e Enterprise podem contratar;</li>
+<li>Coletivo Mobiliza, Impacta e Rede podem contratar conforme a baseline econômica vigente;</li>
 <li>Coletivo Livre somente poderá receber Boost Social Financiado;</li>
-<li>Business Start, Growth e Scale podem contratar;</li>
+<li>Organização usa <code>Conecta · Eleva · Transforma</code> e sua elegibilidade específica para Boost deverá decorrer de plano, contrato ou autoridade econômica explicitamente reconciliada;</li>
+<li><code>Start · Growth · Scale · Enterprise</code> pertencem ao Produto Especializado Guivos Business e não podem ser usados como proxy de plano de Organização;</li>
 <li>somente oportunidade aprovada, ativa e atualizada poderá ser impulsionada;</li>
 <li>o ranking orgânico não considera pagamento;</li>
 <li>o inventário patrocinado será identificado e separado;</li>
@@ -56718,10 +56790,13 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>alcance não é recomendação;</li>
 <li>orçamento não é garantia de entrega ou resultado;</li>
 <li>financiador não é autoridade sobre Coletivo ou participante;</li>
-<li>Intelligence não recebe permissão para perfil publicitário sensível.</li>
+<li>Intelligence não recebe permissão para perfil publicitário sensível;</li>
+<li>Organização ≠ Guivos Business;</li>
+<li>tier de Guivos Business ≠ entitlement automático de Organização.</li>
 </ul>
 <h2 id="economic-model-gem-opportunity-boost-baseline-review-6-pendencias-bloqueantes">6. Pendências bloqueantes<a class="headerlink" href="#economic-model-gem-opportunity-boost-baseline-review-6-pendencias-bloqueantes" title="Permanent link">&para;</a></h2>
 <ul>
+<li>reconciliação específica do entitlement de Opportunity Boost para Organização;</li>
 <li>validação de disposição a pagar;</li>
 <li>teste das faixas de orçamento;</li>
 <li>escolha e calibração de CPM ou CPC;</li>
@@ -56739,7 +56814,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <h2 id="economic-model-gem-opportunity-boost-baseline-review-7-ausencias-preservadas">7. Ausências preservadas<a class="headerlink" href="#economic-model-gem-opportunity-boost-baseline-review-7-ausencias-preservadas" title="Permanent link">&para;</a></h2>
 <p>A revisão não cria oferta pública, campanha real, contrato final, projeção de receita, perfil publicitário individual, design final, protótipo, teste ou Engenharia de Produto.</p>
 <h2 id="economic-model-gem-opportunity-boost-baseline-review-8-resultado">8. Resultado<a class="headerlink" href="#economic-model-gem-opportunity-boost-baseline-review-8-resultado" title="Permanent link">&para;</a></h2>
-<p>O Opportunity Boost está <strong>documentalmente definido como mecanismo candidato</strong> e poderá avançar, em atos separados, para validação especializada, experiência detalhada, pesquisa de mercado e eventual teste controlado.</p></section><section class="print-page" id="economic-model-gem-001-foundation" heading-number="12.4"><h1 id="economic-model-gem-001-foundation-gem-001-fundacao-do-guivos-economic-model">GEM-001 — Fundação do Guivos Economic Model<a class="headerlink" href="#economic-model-gem-001-foundation-gem-001-fundacao-do-guivos-economic-model" title="Permanent link">&para;</a></h1>
+<p>O Opportunity Boost está <strong>documentalmente definido como mecanismo candidato</strong> e poderá avançar, em atos separados, para validação especializada, reconciliação de entitlement de Organização, experiência detalhada, pesquisa de mercado e eventual teste controlado.</p></section><section class="print-page" id="economic-model-gem-001-foundation" heading-number="12.4"><h1 id="economic-model-gem-001-foundation-gem-001-fundacao-do-guivos-economic-model">GEM-001 — Fundação do Guivos Economic Model<a class="headerlink" href="#economic-model-gem-001-foundation-gem-001-fundacao-do-guivos-economic-model" title="Permanent link">&para;</a></h1>
 <h2 id="economic-model-gem-001-foundation-1-proposito">1. Propósito<a class="headerlink" href="#economic-model-gem-001-foundation-1-proposito" title="Permanent link">&para;</a></h2>
 <p>Definir como a Guivos sustenta economicamente seu ecossistema sem subordinar seu propósito, a autonomia dos participantes ou a integridade das jornadas à maximização de receita.</p>
 <h2 id="economic-model-gem-001-foundation-2-definicao">2. Definição<a class="headerlink" href="#economic-model-gem-001-foundation-2-definicao" title="Permanent link">&para;</a></h2>
@@ -57087,7 +57162,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 </ul></section><section class="print-page" id="economic-model-gem-004-free-and-paid-model" heading-number="12.7"><h1 id="economic-model-gem-004-free-and-paid-model-gem-004-modelo-gratuito-e-pago">GEM-004 — Modelo Gratuito e Pago<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-gem-004-modelo-gratuito-e-pago" title="Permanent link">&para;</a></h1>
 <h2 id="economic-model-gem-004-free-and-paid-model-1-objetivo">1. Objetivo<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-1-objetivo" title="Permanent link">&para;</a></h2>
 <p>Definir como o Ecossistema Guivos distribui capacidades entre acesso gratuito, acesso pago e acesso financiado por terceiros, preservando valor universal, autonomia, segurança, transparência e sustentabilidade.</p>
-<p>A versão 0.2.0 incorpora a baseline comercial candidata de planos, benefícios, limites e preços para Pessoas, Coletivos e Organizações.</p>
+<p>A versão 0.3.0 reconcilia a baseline comercial com a autoridade conceitual vigente de planos, separando definitivamente os planos de Organização dos tiers do Produto Especializado Guivos Business.</p>
 <h2 id="economic-model-gem-004-free-and-paid-model-2-pergunta-arquitetural">2. Pergunta arquitetural<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-2-pergunta-arquitetural" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Qual valor mínimo toda pessoa, Coletivo ou Organização deverá conseguir acessar gratuitamente e quais ampliações poderão ser oferecidas de forma paga sem enfraquecer artificialmente o gratuito, explorar vulnerabilidade ou comprometer autonomia, segurança e propósito?</p>
@@ -57163,7 +57238,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>AM-06 — Acesso de Parceiros e Profissionais;</li>
 <li>AM-07 — Acesso Organizacional.</li>
 </ol>
-<h2 id="economic-model-gem-004-free-and-paid-model-8-planos-comerciais-candidatos">8. Planos comerciais candidatos<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-8-planos-comerciais-candidatos" title="Permanent link">&para;</a></h2>
+<h2 id="economic-model-gem-004-free-and-paid-model-8-taxonomia-comercial-vigente-para-validacao">8. Taxonomia comercial vigente para validação<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-8-taxonomia-comercial-vigente-para-validacao" title="Permanent link">&para;</a></h2>
 <h3 id="economic-model-gem-004-free-and-paid-model-pessoas">Pessoas<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-pessoas" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Guivos Free;</li>
@@ -57173,21 +57248,33 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <h3 id="economic-model-gem-004-free-and-paid-model-coletivos">Coletivos<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-coletivos" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Coletivo Livre;</li>
-<li>Coletivo Gestão;</li>
-<li>Coletivo Impacto;</li>
-<li>Coletivo Enterprise.</li>
+<li>Coletivo Mobiliza;</li>
+<li>Coletivo Impacta;</li>
+<li>Coletivo Rede.</li>
 </ul>
 <h3 id="economic-model-gem-004-free-and-paid-model-organizacoes">Organizações<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-organizacoes" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Guivos Business Start;</li>
-<li>Guivos Business Growth;</li>
-<li>Guivos Business Scale.</li>
+<li>Organização Conecta;</li>
+<li>Organização Eleva;</li>
+<li>Organização Transforma.</li>
 </ul>
+<h3 id="economic-model-gem-004-free-and-paid-model-guivos-business">Guivos Business<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-guivos-business" title="Permanent link">&para;</a></h3>
+<p>Guivos Business é Produto Especializado e não um tipo de participante nem uma família de planos de Organização. Sua taxonomia própria é:</p>
+<ul>
+<li>Start;</li>
+<li>Growth;</li>
+<li>Scale;</li>
+<li>Enterprise.</li>
+</ul>
+<p>Não existe correspondência automática 1:1 entre <code>Conecta / Eleva / Transforma</code> e <code>Start / Growth / Scale / Enterprise</code>.</p>
+<blockquote>
+<p><strong>Organização Transforma ≠ Guivos Business Enterprise.</strong></p>
+</blockquote>
 <h3 id="economic-model-gem-004-free-and-paid-model-acesso-transversal">Acesso transversal<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-acesso-transversal" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Guivos Patrocinado ou financiado.</li>
 </ul>
-<p>Nomes, preços, benefícios e limites são governados pelo GEM-004-A1.</p>
+<p>Nomes, preços, benefícios e limites de Pessoa, Coletivo e Organização são governados pela autoridade conceitual vigente e pelos artefatos econômicos derivados aplicáveis. A taxonomia de Guivos Business não autoriza preços ou entitlements de Business onde eles ainda não tenham autoridade específica.</p>
 <h2 id="economic-model-gem-004-free-and-paid-model-9-requisitos-minimos-de-admissibilidade">9. Requisitos mínimos de admissibilidade<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-9-requisitos-minimos-de-admissibilidade" title="Permanent link">&para;</a></h2>
 <p>Uma diferenciação somente poderá avançar quando:</p>
 <ul>
@@ -57207,14 +57294,15 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <h2 id="economic-model-gem-004-free-and-paid-model-10-baseline-comercial-vigente">10. Baseline comercial vigente<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-10-baseline-comercial-vigente" title="Permanent link">&para;</a></h2>
 <p>A baseline candidata está distribuída em:</p>
 <ul>
-<li>GEM-004-A1 — planos, benefícios, limites e preços;</li>
+<li>autoridade conceitual de taxonomia de planos — nomes, fronteiras e precedência semântica;</li>
+<li>GEM-004-A1 — planos, benefícios, limites e preços aplicáveis;</li>
 <li>GEM-004-A2 — oferta, upgrade, downgrade e cancelamento;</li>
 <li>GEM-010-A1 — premissas de preço, custos e validação;</li>
 <li>GEM-COMMERCIAL-BASELINE-001 — parecer de reabertura localizada.</li>
 </ul>
-<p>O conjunto é documentalmente definido e empiricamente não validado.</p>
+<p>O conjunto é documentalmente definido e empiricamente não validado. Em caso de conflito de nomenclatura, prevalece <code>GEM-004-PLAN-TAXONOMY-AUTHORITY-001</code>.</p>
 <h2 id="economic-model-gem-004-free-and-paid-model-11-limites-desta-versao">11. Limites desta versão<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-11-limites-desta-versao" title="Permanent link">&para;</a></h2>
-<p>A versão 0.2.0 não aprova:</p>
+<p>A versão 0.3.0 não aprova:</p>
 <ul>
 <li>oferta pública;</li>
 <li>cobrança;</li>
@@ -57228,7 +57316,8 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>unit economics calibrados;</li>
 <li>contratos;</li>
 <li>implementação de entitlement;</li>
-<li>produção.</li>
+<li>produção;</li>
+<li>preços ou entitlements próprios de Guivos Business sem autoridade específica.</li>
 </ul>
 <h2 id="economic-model-gem-004-free-and-paid-model-12-criterios-de-conclusao-documental">12. Critérios de conclusão documental<a class="headerlink" href="#economic-model-gem-004-free-and-paid-model-12-criterios-de-conclusao-documental" title="Permanent link">&para;</a></h2>
 <ul>
@@ -57237,7 +57326,8 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>ampliações pagas catalogadas;</li>
 <li>arquétipos preservados;</li>
 <li>planos comerciais candidatos para Pessoas, Coletivos e Organizações consolidados;</li>
-<li>preços e limites candidatos registrados;</li>
+<li>Guivos Business preservado como Produto Especializado separado;</li>
+<li>preços e limites candidatos registrados onde houver autoridade aplicável;</li>
 <li>acesso financiado estruturado;</li>
 <li>regras de cotas documentadas;</li>
 <li>separação entre assinatura e transação estabelecida;</li>
@@ -57247,8 +57337,9 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>pendências empíricas, operacionais e especializadas explícitas.</li>
 </ul></section><section class="print-page" id="economic-model-gem-004-a1-commercial-plans-pricing-catalog" heading-number="12.8"><h1 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-catalogo-comercial-candidato-de-planos-beneficios-e-precos">Catálogo Comercial Candidato de Planos, Benefícios e Preços<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-catalogo-comercial-candidato-de-planos-beneficios-e-precos" title="Permanent link">&para;</a></h1>
 <h2 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-1-finalidade">1. Finalidade<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este catálogo consolida a primeira baseline comercial candidata dos planos destinados a Pessoas, Coletivos e Organizações.</p>
+<p>Este catálogo consolida a baseline comercial candidata dos planos destinados a Pessoas, Coletivos e Organizações.</p>
 <p>A baseline define nomes comerciais candidatos, preços de referência, benefícios, limites, condições de acesso financiado e separações econômicas necessárias para validação.</p>
+<p>A versão 0.2.0 reconcilia a nomenclatura com <code>GEM-004-PLAN-TAXONOMY-AUTHORITY-001</code>: Pessoa usa <code>Free · Plus · Pro</code>, Coletivo usa <code>Livre · Mobiliza · Impacta · Rede</code> e Organização usa <code>Conecta · Eleva · Transforma</code>. Guivos Business permanece Produto Especializado separado, com taxonomia própria <code>Start · Growth · Scale · Enterprise</code> e sem preços ou entitlements criados por este catálogo.</p>
 <p>Ela não constitui oferta pública, autorização de cobrança, tabela fiscal, contrato definitivo, promessa de capacidade infinita ou evidência de disposição a pagar.</p>
 <h2 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-2-estado-comercial">2. Estado comercial<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-2-estado-comercial" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>baseline comercial aprovada para validação
@@ -57266,7 +57357,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>cobrança mensal: recorrente, quando contratada;</li>
 <li>cobrança anual: pagamento antecipado correspondente aproximadamente a dez mensalidades;</li>
 <li>preços anuais representam desconto candidato equivalente a cerca de dois meses;</li>
-<li>preços empresariais sob consulta exigem contrato anual e capacidade dimensionada;</li>
+<li>preços sob consulta exigem contrato anual e capacidade dimensionada;</li>
 <li>impostos, taxas de processamento, comissões transacionais e condições regionais permanecem sujeitos a validação especializada;</li>
 <li>nenhuma conversão automática de trial integra esta baseline;</li>
 <li>valores poderão ser alterados antes de qualquer oferta pública mediante decisão governada.</li>
@@ -57284,7 +57375,9 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>organização, patrocinador ou financiador não recebe acesso indevido ao contexto individual;</li>
 <li>nenhuma opção paga aumenta relevância funcional, veracidade, impacto ou posição orgânica;</li>
 <li>limites periódicos não são acumulativos;</li>
-<li>capacidade apresentada como sem limite fixo permanece sujeita ao contrato, segurança, capacidade operacional e política de uso justo.</li>
+<li>capacidade apresentada como sem limite fixo permanece sujeita ao contrato, segurança, capacidade operacional e política de uso justo;</li>
+<li>Organização ≠ Guivos Business;</li>
+<li>Organização Transforma ≠ Guivos Business Enterprise.</li>
 </ol>
 <h2 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-5-planos-para-pessoas">5. Planos para Pessoas<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-5-planos-para-pessoas" title="Permanent link">&para;</a></h2>
 <h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-51-visao-comparativa">5.1 Visão comparativa<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-51-visao-comparativa" title="Permanent link">&para;</a></h3>
@@ -57478,9 +57571,9 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <tr>
 <th>Capacidade</th>
 <th style="text-align: right;">Coletivo Livre</th>
-<th style="text-align: right;">Coletivo Gestão</th>
-<th style="text-align: right;">Coletivo Impacto</th>
-<th style="text-align: right;">Coletivo Enterprise</th>
+<th style="text-align: right;">Coletivo Mobiliza</th>
+<th style="text-align: right;">Coletivo Impacta</th>
+<th style="text-align: right;">Coletivo Rede</th>
 </tr>
 </thead>
 <tbody>
@@ -57615,7 +57708,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>atingir o limite não reduzirá a visibilidade das publicações existentes;</li>
 <li>publicações ativas continuarão gerenciáveis até seu encerramento.</li>
 </ul>
-<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-63-coletivo-gestao">6.3 Coletivo Gestão<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-63-coletivo-gestao" title="Permanent link">&para;</a></h3>
+<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-63-coletivo-mobiliza">6.3 Coletivo Mobiliza<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-63-coletivo-mobiliza" title="Permanent link">&para;</a></h3>
 <h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-finalidade_4">Finalidade<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-finalidade_4" title="Permanent link">&para;</a></h4>
 <p>Atender Coletivos com pequena operação recorrente e necessidade de monetização.</p>
 <h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-incluidos_4">Benefícios incluídos<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-incluidos_4" title="Permanent link">&para;</a></h4>
@@ -57640,7 +57733,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>relatórios financeiros básicos;</li>
 <li>não inclui API, SSO, múltiplos núcleos ou dashboards personalizados.</li>
 </ul>
-<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-64-coletivo-impacto">6.4 Coletivo Impacto<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-64-coletivo-impacto" title="Permanent link">&para;</a></h3>
+<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-64-coletivo-impacta">6.4 Coletivo Impacta<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-64-coletivo-impacta" title="Permanent link">&para;</a></h3>
 <h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-finalidade_5">Finalidade<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-finalidade_5" title="Permanent link">&para;</a></h4>
 <p>Atender operação estruturada, programas recorrentes, parceiros e mensuração ampliada.</p>
 <h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-incluidos_5">Benefícios incluídos<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-incluidos_5" title="Permanent link">&para;</a></h4>
@@ -57661,10 +57754,10 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-limites_3">Limites<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-limites_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>cotas mensais não acumulativas;</li>
-<li>volume acima do limite exige Enterprise ou contratação específica;</li>
+<li>volume acima do limite exige Coletivo Rede ou contratação/dimensionamento específico;</li>
 <li>impacto somente poderá ser declarado com evidência e metodologia autorizadas.</li>
 </ul>
-<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-65-coletivo-enterprise">6.5 Coletivo Enterprise<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-65-coletivo-enterprise" title="Permanent link">&para;</a></h3>
+<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-65-coletivo-rede">6.5 Coletivo Rede<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-65-coletivo-rede" title="Permanent link">&para;</a></h3>
 <h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-finalidade_6">Finalidade<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-finalidade_6" title="Permanent link">&para;</a></h4>
 <p>Atender redes, fundações, movimentos, programas nacionais ou internacionais e operações com múltiplos núcleos.</p>
 <h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-candidatos">Benefícios candidatos<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-candidatos" title="Permanent link">&para;</a></h4>
@@ -57717,9 +57810,9 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <thead>
 <tr>
 <th>Capacidade</th>
-<th style="text-align: right;">Guivos Business Start</th>
-<th style="text-align: right;">Guivos Business Growth</th>
-<th style="text-align: right;">Guivos Business Scale</th>
+<th style="text-align: right;">Organização Conecta</th>
+<th style="text-align: right;">Organização Eleva</th>
+<th style="text-align: right;">Organização Transforma</th>
 </tr>
 </thead>
 <tbody>
@@ -57797,10 +57890,11 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 </tr>
 </tbody>
 </table>
-<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-72-guivos-business-start">7.2 Guivos Business Start<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-72-guivos-business-start" title="Permanent link">&para;</a></h3>
+<p>Os limites e capacidades acima permanecem <strong>premissas econômicas candidatas herdadas da baseline de Organização</strong> e precisam de reconciliação/validação específica de entitlement. A migração de nomenclatura não transforma essa tabela em tabela de Guivos Business.</p>
+<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-72-organizacao-conecta">7.2 Organização Conecta<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-72-organizacao-conecta" title="Permanent link">&para;</a></h3>
 <h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-finalidade_7">Finalidade<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-finalidade_7" title="Permanent link">&para;</a></h4>
 <p>Permitir presença institucional e operação inicial de oportunidades e programas.</p>
-<h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-incluidos_6">Benefícios incluídos<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-incluidos_6" title="Permanent link">&para;</a></h4>
+<h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-candidatos-preservados-da-baseline">Benefícios candidatos preservados da baseline<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-candidatos-preservados-da-baseline" title="Permanent link">&para;</a></h4>
 <ul>
 <li>perfil institucional;</li>
 <li>até três administradores;</li>
@@ -57814,10 +57908,10 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>exportação básica;</li>
 <li>suporte padrão.</li>
 </ul>
-<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-73-guivos-business-growth">7.3 Guivos Business Growth<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-73-guivos-business-growth" title="Permanent link">&para;</a></h3>
+<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-73-organizacao-eleva">7.3 Organização Eleva<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-73-organizacao-eleva" title="Permanent link">&para;</a></h3>
 <h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-finalidade_8">Finalidade<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-finalidade_8" title="Permanent link">&para;</a></h4>
 <p>Atender Organizações com operação recorrente, múltiplos públicos, programas e necessidade analítica ampliada.</p>
-<h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-incluidos_7">Benefícios incluídos<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-incluidos_7" title="Permanent link">&para;</a></h4>
+<h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-candidatos-preservados-da-baseline_1">Benefícios candidatos preservados da baseline<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-candidatos-preservados-da-baseline_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>até dez administradores;</li>
 <li>até cinco unidades;</li>
@@ -57831,10 +57925,10 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>gestão ampliada de elegibilidade;</li>
 <li>suporte prioritário.</li>
 </ul>
-<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-74-guivos-business-scale">7.4 Guivos Business Scale<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-74-guivos-business-scale" title="Permanent link">&para;</a></h3>
+<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-74-organizacao-transforma">7.4 Organização Transforma<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-74-organizacao-transforma" title="Permanent link">&para;</a></h3>
 <h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-finalidade_9">Finalidade<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-finalidade_9" title="Permanent link">&para;</a></h4>
-<p>Atender Organizações de grande porte, redes e operações multiunidade.</p>
-<h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-candidatos_1">Benefícios candidatos<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-candidatos_1" title="Permanent link">&para;</a></h4>
+<p>Atender Organizações com operação de maior complexidade, múltiplas unidades, programas e necessidades de dimensionamento assistido.</p>
+<h4 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-candidatos-preservados-da-baseline_2">Benefícios candidatos preservados da baseline<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-beneficios-candidatos-preservados-da-baseline_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>capacidade de publicações dimensionada por contrato;</li>
 <li>múltiplas unidades;</li>
@@ -57851,13 +57945,21 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>condições comerciais e faturamento personalizados.</li>
 </ul>
 <p>O preço mensal de R$ 1.990,00 é referência mínima candidata e não substitui dimensionamento e proposta comercial.</p>
+<h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-75-guivos-business-separacao-obrigatoria">7.5 Guivos Business — separação obrigatória<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-75-guivos-business-separacao-obrigatoria" title="Permanent link">&para;</a></h3>
+<p>Guivos Business não é plano de Organização. É Produto Especializado, com tiers <code>Start · Growth · Scale · Enterprise</code>.</p>
+<p>Este catálogo não atribui aos tiers de Guivos Business os preços, limites ou benefícios das seções 7.1 a 7.4. Qualquer futura tabela comercial de Business deverá ter autoridade própria.</p>
+<p>Não existe equivalência econômica automática:</p>
+<div class="highlight"><pre><span></span><code>Organização Conecta ≠ Guivos Business Start
+Organização Eleva ≠ Guivos Business Growth
+Organização Transforma ≠ Guivos Business Scale ou Enterprise
+</code></pre></div>
 <h2 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-8-acesso-financiado-e-patrocinado">8. Acesso financiado e patrocinado<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-8-acesso-financiado-e-patrocinado" title="Permanent link">&para;</a></h2>
 <h3 id="economic-model-gem-004-a1-commercial-plans-pricing-catalog-81-guivos-patrocinado">8.1 Guivos Patrocinado<a class="headerlink" href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog-81-guivos-patrocinado" title="Permanent link">&para;</a></h3>
 <p>Acesso financiado poderá ser atribuído sem cobrança ao beneficiário, por prazo, finalidade e capacidades declarados.</p>
 <p>Poderá equivaler, conforme contrato, a:</p>
 <ul>
 <li>Guivos Plus ou Guivos Pro para Pessoas;</li>
-<li>Coletivo Gestão ou Coletivo Impacto;</li>
+<li>Coletivo Mobiliza ou Coletivo Impacta;</li>
 <li>capacidades organizacionais específicas;</li>
 <li>programas sociais ou institucionais limitados.</li>
 </ul>
@@ -57954,11 +58056,12 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>CAC ou LTV;</li>
 <li>internacionalização de preços;</li>
 <li>contrato ou termo de uso;</li>
-<li>implementação.</li>
+<li>implementação;</li>
+<li>preços ou entitlements de Guivos Business.</li>
 </ul></section><section class="print-page" id="economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy" heading-number="12.9"><h1 id="economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy-politica-comercial-de-oferta-upgrade-downgrade-e-cancelamento">Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento<a class="headerlink" href="#economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy-politica-comercial-de-oferta-upgrade-downgrade-e-cancelamento" title="Permanent link">&para;</a></h1>
 <h2 id="economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy-1-finalidade">1. Finalidade<a class="headerlink" href="#economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Esta política define onde, quando e como os planos candidatos poderão ser apresentados, comparados, contratados, alterados e encerrados sem reduzir autonomia, utilizar pressão indevida ou confundir assinatura com relevância funcional.</p>
-<p>Ela complementa a política conceitual do GEM-004 e governa a baseline comercial candidata do GEM-004-A1.</p>
+<p>Ela complementa a política conceitual do GEM-004 e governa a baseline comercial candidata do GEM-004-A1. Em nomenclatura, prevalece <code>GEM-004-PLAN-TAXONOMY-AUTHORITY-001</code>.</p>
 <h2 id="economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy-2-regra-central">2. Regra central<a class="headerlink" href="#economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy-2-regra-central" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>necessidade legítima ou limite transparente
 → alternativa gratuita preservada
@@ -58005,6 +58108,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>ao solicitar analytics, automações, integrações, Power BI, API, SSO ou SLA;</li>
 <li>em processo comercial solicitado pela Organização.</li>
 </ul>
+<p>Guivos Business é produto especializado separado e seus tiers não substituem a taxonomia <code>Conecta · Eleva · Transforma</code> da Organização.</p>
 <h2 id="economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy-4-momentos-proibidos">4. Momentos proibidos<a class="headerlink" href="#economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy-4-momentos-proibidos" title="Permanent link">&para;</a></h2>
 <p>A oferta não poderá interromper ou influenciar:</p>
 <ul>
@@ -58065,16 +58169,16 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>próximo período de renovação;</li>
 <li>publicações atuais preservadas;</li>
 <li>possibilidade de aguardar sem perda de dados;</li>
-<li>benefício exato do Coletivo Gestão.</li>
+<li>benefício exato do Coletivo Mobiliza.</li>
 </ul>
 <p>Mensagem de referência:</p>
 <blockquote>
-<p>Você utilizou a atividade gratuita incluída no Coletivo Livre neste mês. A próxima cota será liberada no próximo ciclo mensal. Para publicar outra atividade agora ou criar uma atividade paga, compare o Coletivo Gestão.</p>
+<p>Você utilizou a atividade gratuita incluída no Coletivo Livre neste mês. A próxima cota será liberada no próximo ciclo mensal. Para publicar outra atividade agora ou criar uma atividade paga, compare o Coletivo Mobiliza.</p>
 </blockquote>
 <h3 id="economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy-62-publicacao-paga">6.2 Publicação paga<a class="headerlink" href="#economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy-62-publicacao-paga" title="Permanent link">&para;</a></h3>
 <p>Ao tentar monetizar no Coletivo Livre, a superfície deverá explicar:</p>
 <ul>
-<li>que publicação paga exige Coletivo Gestão ou superior;</li>
+<li>que publicação paga exige Coletivo Mobiliza ou superior;</li>
 <li>que assinatura não substitui comissão, taxa do meio de pagamento ou tributo;</li>
 <li>que condições comerciais e responsabilidades deverão ser revisadas;</li>
 <li>que a publicação poderá permanecer gratuita sem upgrade.</li>
@@ -58782,20 +58886,17 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <p>Não é comissão, taxa de publicação, compra de lead, recomendação ou garantia de resultado.</p>
 <h2 id="economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract-4-elegibilidade">4. Elegibilidade<a class="headerlink" href="#economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract-4-elegibilidade" title="Permanent link">&para;</a></h2>
 <h3 id="economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract-coletivos">Coletivos<a class="headerlink" href="#economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract-coletivos" title="Permanent link">&para;</a></h3>
-<p>Podem contratar diretamente:</p>
+<p>Podem contratar diretamente, conforme a baseline econômica vigente:</p>
 <ul>
-<li>Coletivo Gestão;</li>
-<li>Coletivo Impacto;</li>
-<li>Coletivo Enterprise.</li>
+<li>Coletivo Mobiliza;</li>
+<li>Coletivo Impacta;</li>
+<li>Coletivo Rede.</li>
 </ul>
 <p>O Coletivo Livre não contrata diretamente. Poderá receber <strong>Boost Social Financiado</strong> quando a fonte, a finalidade e a ausência de autoridade do financiador estiverem explícitas e a oportunidade permanecer gratuita.</p>
 <h3 id="economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract-organizacoes">Organizações<a class="headerlink" href="#economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract-organizacoes" title="Permanent link">&para;</a></h3>
-<p>Podem contratar:</p>
-<ul>
-<li>Guivos Business Start;</li>
-<li>Guivos Business Growth;</li>
-<li>Guivos Business Scale.</li>
-</ul>
+<p>Organização é participante institucional e utiliza a taxonomia <strong>Conecta · Eleva · Transforma</strong>. Guivos Business é Produto Especializado separado e sua taxonomia <code>Start · Growth · Scale · Enterprise</code> não pode ser usada como proxy de elegibilidade de Organização.</p>
+<p>A Organização poderá contratar Opportunity Boost quando o seu plano, contrato ou autoridade econômica vigente explicitamente conceder essa capacidade. Esta versão não cria equivalência automática entre os antigos tiers atribuídos à Organização e <code>Conecta / Eleva / Transforma</code>.</p>
+<p>Até a reconciliação específica dos entitlements de Organização, a simples presença em qualquer um desses planos não deve ser interpretada isoladamente como autorização técnica/operacional de cobrança.</p>
 <p>A assinatura não inclui verba de Boost por padrão.</p>
 <h2 id="economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract-5-oportunidade-elegivel">5. Oportunidade elegível<a class="headerlink" href="#economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract-5-oportunidade-elegivel" title="Permanent link">&para;</a></h2>
 <p>A oportunidade deverá estar:</p>
@@ -58871,8 +58972,12 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <td>ranking orgânico, controles pessoais e proteção da jornada</td>
 </tr>
 <tr>
+<td>Organização anunciante</td>
+<td>identidade institucional, elegibilidade e administração da oportunidade</td>
+</tr>
+<tr>
 <td>Guivos Business</td>
-<td>identidade, plano elegível e administração institucional</td>
+<td>capacidades especializadas do produto quando houver contrato próprio aplicável; não substitui o papel Organização</td>
 </tr>
 <tr>
 <td>Guivos Intelligence</td>
@@ -58922,7 +59027,9 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>somente publicação ativa poderá ser impulsionada;</li>
 <li>downgrade deverá informar campanhas afetadas;</li>
 <li>créditos futuros terão fonte, validade e finalidade próprias;</li>
-<li>Boost Social Financiado não converte o Coletivo Livre em plano pago.</li>
+<li>Boost Social Financiado não converte o Coletivo Livre em plano pago;</li>
+<li>Organização ≠ Guivos Business;</li>
+<li>tier de Guivos Business não concede, por si só, entitlement de plano de Organização.</li>
 </ul>
 <h2 id="economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract-13-proibicoes">13. Proibições<a class="headerlink" href="#economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract-13-proibicoes" title="Permanent link">&para;</a></h2>
 <p>O Opportunity Boost não poderá:</p>
@@ -58939,7 +59046,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>atribuir impacto não comprovado.</li>
 </ul>
 <h2 id="economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract-14-estado">14. Estado<a class="headerlink" href="#economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract-14-estado" title="Permanent link">&para;</a></h2>
-<p><code>candidate_defined — economic and cross-product contract established; market, specialist, operational, technical and experience validation pending</code>.</p>
+<p><code>candidate_reconciled — economic and cross-product contract preserved; Organization entitlement mapping requires current-plan reconciliation before operationalization</code>.</p>
 <p>Este documento não autoriza oferta pública, cobrança, campanha real, algoritmo, uso publicitário de dados pessoais, interface final ou Engenharia de Produto.</p></section><section class="print-page" id="economic-model-gem-008-sustainability-and-reinvestment" heading-number="12.14"><h1 id="economic-model-gem-008-sustainability-and-reinvestment-gem-008-sustentabilidade-e-reinvestimento">GEM-008 — Sustentabilidade e Reinvestimento<a class="headerlink" href="#economic-model-gem-008-sustainability-and-reinvestment-gem-008-sustentabilidade-e-reinvestimento" title="Permanent link">&para;</a></h1>
 <h2 id="economic-model-gem-008-sustainability-and-reinvestment-1-objetivo">1. Objetivo<a class="headerlink" href="#economic-model-gem-008-sustainability-and-reinvestment-1-objetivo" title="Permanent link">&para;</a></h2>
 <p>Definir como a Guivos deverá proteger continuidade, financiar o valor universal gratuito, administrar capacidade, preservar obrigações, governar subsídios, estruturar reservas e priorizar reinvestimentos sem antecipar orçamento, valores, unit economics, contabilização ou operação.</p>
@@ -59196,6 +59303,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <h2 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-1-finalidade">1. Finalidade<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento registra os preços candidatos como premissas rastreáveis do modelo financeiro e define como deverão ser validados antes de planejamento aprovado ou oferta pública.</p>
 <p>Preço candidato não é preço comprovado, receita, margem, caixa, disposição a pagar ou autorização de cobrança.</p>
+<p>A versão 0.2.0 reconcilia a nomenclatura de planos com a autoridade vigente e impede que preços historicamente atribuídos à jornada de Organização sejam interpretados como tabela de preços de Guivos Business.</p>
 <h2 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-2-tabela-de-parametros-candidatos">2. Tabela de parâmetros candidatos<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-2-tabela-de-parametros-candidatos" title="Permanent link">&para;</a></h2>
 <h3 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-pessoas">Pessoas<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-pessoas" title="Permanent link">&para;</a></h3>
 <table>
@@ -59246,19 +59354,19 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <td>baseline gratuito limitado</td>
 </tr>
 <tr>
-<td>Coletivo Gestão</td>
+<td>Coletivo Mobiliza</td>
 <td style="text-align: right;">R$ 89,90</td>
 <td style="text-align: right;">R$ 899,00</td>
 <td>candidato para validação</td>
 </tr>
 <tr>
-<td>Coletivo Impacto</td>
+<td>Coletivo Impacta</td>
 <td style="text-align: right;">R$ 249,90</td>
 <td style="text-align: right;">R$ 2.499,00</td>
 <td>candidato para validação</td>
 </tr>
 <tr>
-<td>Coletivo Enterprise</td>
+<td>Coletivo Rede</td>
 <td style="text-align: right;">sob consulta</td>
 <td style="text-align: right;">contrato anual</td>
 <td>dimensionamento obrigatório</td>
@@ -59277,25 +59385,27 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 </thead>
 <tbody>
 <tr>
-<td>Guivos Business Start</td>
+<td>Organização Conecta</td>
 <td style="text-align: right;">R$ 299,00</td>
 <td style="text-align: right;">R$ 2.990,00</td>
 <td>candidato para validação</td>
 </tr>
 <tr>
-<td>Guivos Business Growth</td>
+<td>Organização Eleva</td>
 <td style="text-align: right;">R$ 799,00</td>
 <td style="text-align: right;">R$ 7.990,00</td>
 <td>candidato para validação</td>
 </tr>
 <tr>
-<td>Guivos Business Scale</td>
+<td>Organização Transforma</td>
 <td style="text-align: right;">a partir de R$ 1.990,00</td>
 <td style="text-align: right;">contrato anual</td>
 <td>dimensionamento obrigatório</td>
 </tr>
 </tbody>
 </table>
+<h3 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-guivos-business">Guivos Business<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-guivos-business" title="Permanent link">&para;</a></h3>
+<p>Guivos Business possui tiers <code>Start · Growth · Scale · Enterprise</code>, mas esta autoridade <strong>não lhes atribui os preços da tabela de Organização</strong>. Preços, limites e entitlements do Produto Especializado Business permanecem dependentes de autoridade comercial própria.</p>
 <h2 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-3-premissas-comerciais">3. Premissas comerciais<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-3-premissas-comerciais" title="Permanent link">&para;</a></h2>
 <ul>
 <li>os valores estão denominados em BRL;</li>
@@ -59304,11 +59414,12 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>o plano anual é antecipado;</li>
 <li>o preço anual equivale aproximadamente a dez mensalidades;</li>
 <li>o desconto anual candidato não poderá ser apresentado como economia garantida quando condições mudarem;</li>
-<li>Enterprise e Scale exigem proposta, capacidade e contrato;</li>
+<li>Coletivo Rede e Organização Transforma podem exigir proposta, capacidade e contrato conforme dimensionamento;</li>
 <li>acesso financiado possui preço contratual separado do beneficiário;</li>
 <li>comissão, taxa do meio de pagamento, impostos e repasses não estão incluídos nesta tabela;</li>
 <li>não existe trial com conversão automática na baseline inicial;</li>
-<li>preços internacionais exigirão poder de compra, tributos, moeda, meios de pagamento e estratégia local próprios.</li>
+<li>preços internacionais exigirão poder de compra, tributos, moeda, meios de pagamento e estratégia local próprios;</li>
+<li>Organização ≠ Guivos Business.</li>
 </ul>
 <h2 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-4-natureza-das-premissas">4. Natureza das premissas<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-4-natureza-das-premissas" title="Permanent link">&para;</a></h2>
 <table>
@@ -59346,9 +59457,14 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <td>não testada</td>
 </tr>
 <tr>
-<td>demanda por Enterprise ou Scale</td>
+<td>demanda por Rede ou Transforma</td>
 <td>hipótese</td>
 <td>não testada</td>
+</tr>
+<tr>
+<td>preços e entitlements de Guivos Business</td>
+<td>desconhecidos nesta autoridade</td>
+<td>governança própria pendente</td>
 </tr>
 <tr>
 <td>disposição a pagar</td>
@@ -59442,32 +59558,32 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <td style="text-align: right;">R$ 59,90</td>
 </tr>
 <tr>
-<td>Coletivo Gestão</td>
+<td>Coletivo Mobiliza</td>
 <td style="text-align: right;">R$ 69,90</td>
 <td style="text-align: right;">R$ 89,90</td>
 <td style="text-align: right;">R$ 119,90</td>
 </tr>
 <tr>
-<td>Coletivo Impacto</td>
+<td>Coletivo Impacta</td>
 <td style="text-align: right;">R$ 199,90</td>
 <td style="text-align: right;">R$ 249,90</td>
 <td style="text-align: right;">R$ 349,90</td>
 </tr>
 <tr>
-<td>Business Start</td>
+<td>Organização Conecta</td>
 <td style="text-align: right;">R$ 249,00</td>
 <td style="text-align: right;">R$ 299,00</td>
 <td style="text-align: right;">R$ 399,00</td>
 </tr>
 <tr>
-<td>Business Growth</td>
+<td>Organização Eleva</td>
 <td style="text-align: right;">R$ 649,00</td>
 <td style="text-align: right;">R$ 799,00</td>
 <td style="text-align: right;">R$ 999,00</td>
 </tr>
 </tbody>
 </table>
-<p>Enterprise e Scale deverão ser pesquisados por composição de valor, capacidade e contrato, não por um único preço de prateleira.</p>
+<p>Coletivo Rede e Organização Transforma deverão ser pesquisados por composição de valor, capacidade e contrato, não por um único preço de prateleira. Esta tabela não constitui pesquisa de preço para os tiers de Guivos Business.</p>
 <h2 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-7-perguntas-de-validacao">7. Perguntas de validação<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-7-perguntas-de-validacao" title="Permanent link">&para;</a></h2>
 <h3 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-pessoas_2">Pessoas<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-pessoas_2" title="Permanent link">&para;</a></h3>
 <ul>
@@ -59481,20 +59597,22 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <h3 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-coletivos_2">Coletivos<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-coletivos_2" title="Permanent link">&para;</a></h3>
 <ul>
 <li>uma atividade e uma oportunidade mensais tornam o Livre útil?</li>
-<li>quatro atividades e quatro oportunidades justificam o Gestão?</li>
+<li>quatro atividades e quatro oportunidades justificam o Mobiliza?</li>
 <li>seis publicações ativas são suficientes para pequena operação?</li>
-<li>quinze atividades e quinze oportunidades segmentam adequadamente o Impacto?</li>
+<li>quinze atividades e quinze oportunidades segmentam adequadamente o Impacta?</li>
 <li>monetização, pagamentos, indicadores e integrações justificam assinatura?</li>
 <li>quais Coletivos precisam de acesso patrocinado?</li>
 </ul>
 <h3 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-organizacoes_2">Organizações<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-organizacoes_2" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Start atende operação inicial real?</li>
-<li>Growth oferece ganho operacional e analítico claro?</li>
+<li>Conecta atende operação institucional inicial real?</li>
+<li>Eleva oferece ganho operacional e analítico claro?</li>
 <li>cotas por mês e publicações ativas refletem uso institucional?</li>
-<li>Power BI, API, SSO, unidades e SLA justificam Scale?</li>
+<li>Power BI, API, SSO, unidades e SLA justificam Transforma ou dimensionamento assistido?</li>
 <li>o comprador prefere preço por plano, unidade, usuário, programa ou capacidade?</li>
 </ul>
+<h3 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-guivos-business_1">Guivos Business<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-guivos-business_1" title="Permanent link">&para;</a></h3>
+<p>A validação de preço do Produto Especializado Business deve ocorrer em frente própria, sem reutilizar automaticamente as faixas de Organização.</p>
 <h2 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-8-metricas-necessarias">8. Métricas necessárias<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-8-metricas-necessarias" title="Permanent link">&para;</a></h2>
 <ul>
 <li>ativação do gratuito;</li>
@@ -59588,7 +59706,8 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>acesso patrocinado;</li>
 <li>mix mensal e anual;</li>
 <li>mix entre Pessoas, Coletivos e Organizações;</li>
-<li>Enterprise e Scale contratados;</li>
+<li>contratação dimensionada de Rede e Transforma;</li>
+<li>Guivos Business em cenário separado quando houver autoridade econômica própria;</li>
 <li>falha de pagamento e reembolso.</li>
 </ul>
 <h2 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-13-limites">13. Limites<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-13-limites" title="Permanent link">&para;</a></h2>
@@ -59605,7 +59724,8 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>gateway;</li>
 <li>contrato;</li>
 <li>oferta pública;</li>
-<li>implementação.</li>
+<li>implementação;</li>
+<li>preço ou entitlement de Guivos Business.</li>
 </ul></section><section class="print-page" id="economic-model-gem-010-a2-opportunity-boost-pricing-budget-and-measurement" heading-number="12.18"><h1 id="economic-model-gem-010-a2-opportunity-boost-pricing-budget-and-measurement-opportunity-boost-precos-orcamento-e-mensuracao-candidatos">Opportunity Boost — Preços, Orçamento e Mensuração Candidatos<a class="headerlink" href="#economic-model-gem-010-a2-opportunity-boost-pricing-budget-and-measurement-opportunity-boost-precos-orcamento-e-mensuracao-candidatos" title="Permanent link">&para;</a></h1>
 <h2 id="economic-model-gem-010-a2-opportunity-boost-pricing-budget-and-measurement-1-finalidade">1. Finalidade<a class="headerlink" href="#economic-model-gem-010-a2-opportunity-boost-pricing-budget-and-measurement-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Registrar a primeira baseline candidata de orçamento, cobrança, mensuração e reconciliação do Opportunity Boost, sem autorizar oferta pública ou faturamento.</p>

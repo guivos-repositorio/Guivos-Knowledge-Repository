@@ -9192,8 +9192,8 @@
 <tbody>
 <tr>
 <td>visão geral das Jornadas Integradas</td>
-<td><code>active</code> 0.31.0</td>
-<td>UXA-101</td>
+<td><code>active</code> 0.32.0</td>
+<td>reconciliação de nomenclatura 2026-08-08</td>
 </tr>
 <tr>
 <td>Pessoa, Coletivo e Organização</td>
@@ -9207,13 +9207,13 @@
 </tr>
 <tr>
 <td>Jornada do Coletivo</td>
-<td><code>draft</code> 0.15.0</td>
-<td>UXA-100-A3</td>
+<td><code>draft</code> 0.16.0</td>
+<td>taxonomia Livre/Mobiliza/Impacta/Rede</td>
 </tr>
 <tr>
 <td>Jornada da Organização</td>
-<td><code>draft</code> 0.8.0</td>
-<td>UXA-101</td>
+<td><code>draft</code> 0.9.0</td>
+<td>taxonomia Conecta/Eleva/Transforma</td>
 </tr>
 <tr>
 <td>catálogo integrado</td>
@@ -9247,7 +9247,7 @@
 </tr>
 <tr>
 <td>registro de lacunas</td>
-<td><code>active</code> 0.26.0</td>
+<td><code>active</code> 0.27.0</td>
 <td>V4 encerrada; V5 pendente</td>
 </tr>
 <tr>
@@ -9278,9 +9278,16 @@ PER-203 → revisão consciente no mesmo estado → TRN-205 → BND-001
 <div class="highlight"><pre><span></span><code>*-301 Planos e comparação
 ├── upgrade → *-302 revisão → *-304 resultado/recuperação → *-301
 ├── downgrade/cancelamento → *-303 → *-304 → *-301
-└── Enterprise/Scale → BND-002 quando aplicável
+└── quando autoatendimento não for suficiente → BND-002
 </code></pre></div>
-<p>As transições internas continuam localmente validadas; <code>TRN-416/426</code> permanecem parciais. Cobrança real e processo posterior a <code>BND-002</code> continuam fora do escopo.</p>
+<p>A nomenclatura vigente é:</p>
+<ul>
+<li>Pessoa: <code>Free · Plus · Pro</code>;</li>
+<li>Coletivo: <code>Livre · Mobiliza · Impacta · Rede</code>;</li>
+<li>Organização: <code>Conecta · Eleva · Transforma</code>;</li>
+<li>Guivos Business: <code>Start · Growth · Scale · Enterprise</code>, como Produto Especializado separado.</li>
+</ul>
+<p><code>BND-002</code> é fronteira genérica de contratação/dimensionamento assistido e não plano. As transições internas continuam localmente validadas; <code>TRN-416/426</code> permanecem parciais. Cobrança real e processo posterior a <code>BND-002</code> continuam fora do escopo.</p>
 <h2 id="7-cobertura-canonica">7. Cobertura canônica<a class="headerlink" href="#7-cobertura-canonica" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9335,6 +9342,9 @@ PER-203 → revisão consciente no mesmo estado → TRN-205 → BND-001
 <h2 id="8-separacoes-obrigatorias">8. Separações obrigatórias<a class="headerlink" href="#8-separacoes-obrigatorias" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Planos canonicamente registrado não equivale a checkout implementado;</li>
+<li>Organização ≠ Guivos Business;</li>
+<li>Organização Transforma ≠ Guivos Business Enterprise;</li>
+<li><code>BND-002</code> ≠ Enterprise ou Scale;</li>
 <li>revisão de saída em <code>PER-203</code> não cria tela nova;</li>
 <li>validação até <code>BND-001</code> não valida sistema de terceiro;</li>
 <li>pagar um plano ou patrocínio não altera relevância funcional;</li>

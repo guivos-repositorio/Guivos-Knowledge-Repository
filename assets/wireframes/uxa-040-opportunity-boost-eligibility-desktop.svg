@@ -26,7 +26,7 @@
   <rect x="260" y="326" width="550" height="448" rx="10" fill="#f8f8f8" stroke="#888888"/>
 
   <text x="286" y="360" font-family="Arial, sans-serif" font-size="13" font-weight="700">Plano</text>
-  <text x="770" y="360" text-anchor="end" font-family="Arial, sans-serif" font-size="12">Atendido · Coletivo Gestão</text>
+  <text x="770" y="360" text-anchor="end" font-family="Arial, sans-serif" font-size="12">Atendido · Coletivo Mobiliza</text>
   <line x1="286" y1="380" x2="784" y2="380" stroke="#cccccc"/>
   <text x="286" y="414" font-family="Arial, sans-serif" font-size="13" font-weight="700">Aprovação e atividade</text>
   <text x="770" y="414" text-anchor="end" font-family="Arial, sans-serif" font-size="12">Atendido · aprovada e ativa</text>

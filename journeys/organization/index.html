@@ -9217,7 +9217,7 @@
 <td>GEM-004 / UXA-100-A3</td>
 <td>3 SVGs canônicos / 4 superfícies</td>
 <td>UXA-100-A2/A3</td>
-<td>transições internas locais; Scale parcial</td>
+<td>transições internas locais; <code>BND-002</code> parcial</td>
 </tr>
 <tr>
 <td>evidências e resultados institucionais</td>
@@ -9251,17 +9251,17 @@
 <p>Antes da saída, <code>PER-203</code> explicita destino externo, responsável, dados/contexto que acompanham ou não a transição e ausência de garantia de conclusão. Destino ausente, inválido ou materialmente alterado bloqueia redirecionamento silencioso. Após <code>BND-001</code>, o processo e o resultado pertencem ao terceiro.</p>
 <p>A Organização continua responsável por manter preço, disponibilidade, local, modalidade, capacidade, elegibilidade, risco, responsável e demais informações materiais atualizados.</p>
 <h2 id="4-planos-como-etapa-transversal-canonica">4. Planos como etapa transversal canônica<a class="headerlink" href="#4-planos-como-etapa-transversal-canonica" title="Permanent link">&para;</a></h2>
-<p>A UXA-100-A3 registra <strong>Planos</strong> canonicamente na jornada institucional da Organização.</p>
+<p>A UXA-100-A3 registra <strong>Planos</strong> canonicamente na jornada institucional da Organização. A taxonomia desta jornada é <strong>Conecta / Eleva / Transforma</strong>. Guivos Business permanece Produto Especializado separado, com taxonomia própria e sem correspondência automática 1:1 com os planos da Organização.</p>
 <div class="highlight"><pre><span></span><code>ORG-301 — Planos e comparação
-├── TRN-421 → ORG-302 — revisão de contratação Growth
+├── TRN-421 → ORG-302 — revisão de contratação
 │   └── TRN-422 → ORG-304 — resultado/recuperação
 │       └── TRN-425 → ORG-301
 ├── TRN-423 → ORG-303 — downgrade/cancelamento
 │   └── TRN-424 → ORG-304
 │       └── TRN-425 → ORG-301
-└── TRN-426 → BND-002 — proposta Business Scale
+└── TRN-426 → BND-002 — contratação/dimensionamento assistido
 </code></pre></div>
-<p><code>TRN-421</code> a <code>TRN-425</code> estão localmente validadas. <code>TRN-426</code> permanece parcial porque o processo comercial posterior a <code>BND-002</code> não foi materializado.</p>
+<p><code>TRN-421</code> a <code>TRN-425</code> estão localmente validadas. <code>TRN-426</code> permanece parcial porque o processo posterior a <code>BND-002</code> não foi materializado. <code>BND-002</code> identifica a necessidade de contratação/dimensionamento assistido quando o autoatendimento não for suficiente; não representa Guivos Business Scale, Enterprise ou qualquer outro plano específico.</p>
 <p>Entrada contextual:</p>
 <div class="highlight"><pre><span></span><code>criar nova oportunidade/programa
 → capacidade do ciclo atingida
@@ -9276,16 +9276,22 @@
 <p>Regras:</p>
 <ul>
 <li><code>ORG-301</code> mostra plano atual, uso e período do ciclo;</li>
-<li>compara <code>Business Start → Business Growth → Business Scale</code>;</li>
+<li>compara <code>Conecta → Eleva → Transforma</code>;</li>
 <li>comparação incremental pertence a <code>ORG-301</code>, sem superfície adicional;</li>
 <li>apresenta delta direto do plano atual para o escolhido;</li>
-<li><code>ORG-302</code> exibe preços mensal/anual, recorrência, início, pagador/autoridade financeira e beneficiário antes da confirmação;</li>
+<li><code>ORG-302</code> exibe preços mensal/anual, recorrência, início, pagador/autoridade financeira e beneficiário antes da confirmação quando essas condições forem aplicáveis ao plano alvo;</li>
 <li>contratação não amplia consentimento nem acesso ao contexto individual de Pessoas;</li>
 <li><code>ORG-303</code> exige selecionar unidades, administradores, publicações e Coletivos relacionados mantidos, integrações a encerrar e dados a exportar;</li>
 <li>históricos/agregados não são apagados para forçar retenção;</li>
 <li><code>ORG-304</code> diferencia sucesso e falha, preservando plano anterior e direitos quando não houver confirmação;</li>
-<li>Scale usa <code>BND-002</code>, não checkout definitivo;</li>
+<li>quando a contratação não puder ser concluída em autoatendimento, a jornada usa <code>BND-002</code> como fronteira assistida;</li>
 <li>capacidade comercial permanece separada de relevância, confiança, legitimidade e resultado.</li>
+</ul>
+<p>Separações obrigatórias:</p>
+<ul>
+<li><code>Organização ≠ Guivos Business</code>;</li>
+<li><code>Organização Transforma ≠ Guivos Business Enterprise</code>;</li>
+<li><code>BND-002 ≠ plano Enterprise ou Scale</code>.</li>
 </ul>
 <h2 id="5-relacao-com-coletivos">5. Relação com Coletivos<a class="headerlink" href="#5-relacao-com-coletivos" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>rascunho
@@ -9366,12 +9372,12 @@
 <li><code>TRN-201</code> permanece parcial e <code>TRN-202</code> localmente validada;</li>
 <li>integrações patrocinadas com Mapa/Lista (<code>TRN-304</code>/<code>TRN-306</code>) permanecem parciais;</li>
 <li>as transições internas de Planos são locais e <code>TRN-426</code> permanece parcial;</li>
-<li>cobrança real, gateway e processo Scale não foram implementados/validados ponta a ponta;</li>
+<li>cobrança real, gateway e processo assistido posterior a <code>BND-002</code> não foram implementados/validados ponta a ponta;</li>
 <li>evidências e resultados institucionais continuam sem matriz integrada.</li>
 </ul>
 <p><code>TRN-205</code> deixa de ser pendência desta vista: UXA-101 a valida até <code>BND-001</code>, sem promover a jornada institucional completa.</p>
 <h2 id="8-estado-da-frente">8. Estado da frente<a class="headerlink" href="#8-estado-da-frente" title="Permanent link">&para;</a></h2>
-<p>A organização mantém publicação/descoberta validada pela UXA-098, saída consciente até <code>BND-001</code> validada pela UXA-101 e Planos canônicos pela UXA-100-A3. Nenhuma próxima UXA é iniciada automaticamente.</p>
+<p>A Organização mantém publicação/descoberta validada pela UXA-098, saída consciente até <code>BND-001</code> validada pela UXA-101 e Planos canônicos pela UXA-100-A3. A taxonomia vigente é <code>Conecta · Eleva · Transforma</code>; Guivos Business permanece produto separado. Nenhuma próxima UXA é iniciada automaticamente.</p>
 
 
 
