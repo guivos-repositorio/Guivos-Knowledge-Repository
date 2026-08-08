@@ -2,7 +2,7 @@
 id: GEM-F1-M0-M6-COST-BASELINE-001
 title: Baseline de Custos M0–M6 — F1
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Guivos Economic Model
 last_updated: 2026-08-08
 parent: GEM-010
@@ -17,6 +17,7 @@ depends_on:
 related:
   - GEM-F1B-M0-M6-COST-CALIBRATION-001
   - GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001
+  - GEM-F2B-M0-M6-PEOPLE-DELIVERY-COST-001
   - GEM-009-COST-AND-UNIT-ECONOMICS-001
   - GEA-REF-GRAPH-001
 normative: true
@@ -117,7 +118,7 @@ activation_gate: string | none
 notes: string
 ```
 
-F1-B pode registrar uma **taxa unitária benchmark** ou fórmula variável enquanto `amount_brl` permanece `TBD`. O valor mensal somente nasce quando quantidade, aplicabilidade e período estiverem suficientemente governados.
+F1-B pode registrar uma **taxa unitária benchmark** ou fórmula variável enquanto `amount_brl` permanece `TBD`. F2-B pode registrar benchmarks salariais e sensibilidades de pessoas enquanto regime, dedicação e amount real permanecem `TBD`. O valor mensal somente nasce quando quantidade, aplicabilidade e período estiverem suficientemente governados.
 
 ## 6. Catálogo mestre de pools M0–M6
 
@@ -127,7 +128,7 @@ F1-B pode registrar uma **taxa unitária benchmark** ou fórmula variável enqua
 | F1-C02 | C-02 | infraestrutura, hospedagem, armazenamento e observabilidade | semivariável/step | ambientes, tráfego, armazenamento e disponibilidade | TBD |
 | F1-C03 | C-01/C-02 | IA, processamento, mensageria e serviços de dados | variável/step | uso elegível e volume processado | TBD |
 | F1-C04 | C-04 | segurança, privacidade e controles técnicos | fixo/step | superfície, risco e requisitos aprovados | TBD / quote required |
-| F1-C05 | C-02 | equipe e serviços profissionais | fixo/step | capacidade e papéis requeridos | parcialmente parametrizado por F2 — 3 RE dedicados de referência + coberturas compartilhadas/fracionárias; custo TBD |
+| F1-C05 | C-02 | equipe e serviços profissionais | fixo/step | capacidade e papéis requeridos | parcialmente calibrado por F2-B — benchmarks R01/R02, proxy R03 e benchmark auxiliar de CRM/CX; amount TBD |
 | F1-C06 | C-02/C-04 | jurídico, contábil, fiscal, administrativo e compliance | fixo/event | obrigações, contratos e gates de lançamento | parcialmente calibrado por benchmark |
 | F1-C07 | C-02 | marca, conteúdo e produção criativa | fixo/event | calendário de conteúdo e lançamento | TBD |
 | F1-C08 | C-03 | CRM, vendas e Customer Success | fixo/step | pipeline institucional e contas ativas | parcialmente calibrado por benchmark |
@@ -142,7 +143,7 @@ F1-B pode registrar uma **taxa unitária benchmark** ou fórmula variável enqua
 | F1-C17 | C-02 | espaço físico, coworking, equipamentos e infraestrutura administrativa | fixed/event | decisão operacional explícita | benchmark BH disponível; necessidade TBD |
 | F1-C18 | C-06 | integrações, coordenação e reconciliação entre produtos/parceiros | variable/step | integrações e relações efetivamente ativadas | TBD |
 
-A calibração detalhada e suas fontes são governadas por `GEM-F1B-M0-M6-COST-CALIBRATION-001`. A capacidade de pessoas é governada por `GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001`.
+A calibração detalhada de custos gerais e suas fontes é governada por `GEM-F1B-M0-M6-COST-CALIBRATION-001`. A capacidade de pessoas é governada por `GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001` e os modos de entrega/benchmarks de pessoas por `GEM-F2B-M0-M6-PEOPLE-DELIVERY-COST-001`.
 
 ### C-07 e C-08
 
@@ -191,9 +192,9 @@ Consequentemente, esta baseline:
 - não transforma arquitetura de referência em OPEX ou CAPEX;
 - mantém F1-C01, F1-C02 e F1-C03 `TBD` até decisão técnica e evidência de custo compatíveis com os gates de Product Engineering.
 
-## 9. Relação com F2 — capacidade e headcount
+## 9. Relação com F2/F2-B — capacidade, entrega e custo de pessoas
 
-F2 definiu a baseline de cobertura funcional M0–M6 sem transformar capacidade em contratação.
+F2 definiu a baseline de cobertura funcional M0–M6 sem transformar capacidade em contratação. F2-B adicionou modos de entrega e benchmarks rastreáveis sem transformar benchmark em remuneração aprovada.
 
 O estado vigente é:
 
@@ -201,11 +202,14 @@ O estado vigente é:
 - conteúdo/marketing, operação/onboarding, suporte, governança e demais capacidades essenciais possuem cobertura compartilhada ou condicional governada;
 - contabilidade/fiscal, jurídico/privacidade/compliance e segurança/risco podem ser coberturas especialistas fracionárias;
 - engenharia e dados/IA de implementação permanecem bloqueados por Product Engineering;
-- HC interno total, regime, remuneração e custo monetário continuam `TBD`.
+- benchmark salarial 2026 de Growth/GTM em BH e comercial B2B nacional estão disponíveis;
+- ecossistema/parcerias possui apenas proxy salarial de comparabilidade limitada;
+- suporte/CS possui benchmark auxiliar de CRM/CX, sem ativação automática de HC;
+- HC interno total, owner real por papel, sobreposição, regime, dedicação, remuneração/fee e custo monetário mensal continuam `TBD`.
 
-Consequentemente, F1-C05 deixa de estar bloqueado por ausência de desenho funcional, mas **não está numericamente fechado**.
+Consequentemente, F1-C05 está **parcialmente calibrado**, mas não numericamente fechado.
 
-Nenhum número de RE deverá ser apresentado como número de empregados sem evidência adicional.
+O teste de salário-equivalente de três RE separados do F2-B é sensibilidade analítica e não poderá ser publicado como equipe, orçamento, burn ou necessidade de capital.
 
 ## 10. Regra de fechamento mensal
 
@@ -225,7 +229,7 @@ custo mensal candidato completo
 → ponte para caixa e runway
 ```
 
-Taxas unitárias sem quantidade governada não compõem o subtotal mensal.
+Taxas unitárias e benchmarks salariais sem quantidade, dedicação e regime governados não compõem o subtotal mensal.
 
 ## 11. Gates para calibração numérica do F1
 
@@ -242,7 +246,7 @@ Cada pool somente poderá receber valor quando houver, no mínimo:
 9. ausência de dupla contagem entre produtos e áreas;
 10. tratamento explícito de incerteza.
 
-## 12. Resultado do F1 após F1-B e F2
+## 12. Resultado do F1 após F1-B, F2 e F2-B
 
 | Gate | Resultado |
 |---|---|
@@ -252,23 +256,24 @@ Cada pool somente poderá receber valor quando houver, no mínimo:
 | comportamento e drivers iniciais | PASS |
 | matriz mensal de ativação | PASS |
 | fontes primárias de benchmark | PASS |
-| pools com alguma calibração numérica | PARTIAL — 6/18 |
+| pools com alguma calibração numérica | PARTIAL — 7/18 |
 | pools numericamente fechados | 0/18 |
 | cotações/contratos/realizados suficientes | PENDING |
 | capacidade e papéis de equipe | PARTIAL PASS — F2 |
-| HC interno/regime/remuneração | PENDING |
-| custo monetário F1-C05 | NOT CALCULABLE |
+| modos de entrega e benchmarks de pessoas | PARTIAL PASS — F2-B |
+| HC interno/regime/dedicação/remuneração | PENDING |
+| custo monetário completo F1-C05 | NOT CALCULABLE |
 | custo mensal completo | NOT CALCULABLE |
 | burn mensal completo | NOT CALCULABLE |
 | runway e necessidade de capital | NOT CALCULABLE |
 
-**Parecer:** `PARTIAL PASS — F1/F1-B/F2 now govern cost scope, six public benchmark pools and M0–M6 functional capacity; material monetary gaps still prevent a complete cost and burn baseline.`
+**Parecer:** `PARTIAL PASS — F1/F1-B/F2/F2-B now govern cost scope, seven pools with numeric benchmark evidence, functional capacity and people-delivery economics; material assignment, regime, quotations and monetary gaps still prevent a complete cost and burn baseline.`
 
 ## 13. Próximos incrementos permitidos
 
 Os próximos atos são independentes e exigem autorização própria:
 
 1. **F1-C — evidência e cotações faltantes**, para ampliar a cobertura externa de custos materiais;
-2. **F2-B — modelo de entrega e custo de pessoas**, para atribuir modos de cobertura, quantidade efetiva, regime candidato e benchmarks de remuneração/serviços sem contratar.
+2. **F2-C — assignment e dedicação M0–M6**, para definir quem cobre cada papel, sobreposições e frações de capacidade sem contratar.
 
 Burn, caixa, runway e necessidade de capital permanecem bloqueados até que as lacunas materiais de F1 e F2 estejam suficientemente resolvidas.
