@@ -2,7 +2,7 @@
 id: GEM-F1-M0-M6-COST-BASELINE-001
 title: Baseline de Custos M0–M6 — F1
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Guivos Economic Model
 last_updated: 2026-08-08
 parent: GEM-010
@@ -16,8 +16,10 @@ depends_on:
   - GTM-006
 related:
   - GEM-F1B-M0-M6-COST-CALIBRATION-001
+  - GEM-F1C-M0-M6-EVIDENCE-QUOTE-PACK-001
   - GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001
   - GEM-F2B-M0-M6-PEOPLE-DELIVERY-COST-001
+  - GEM-F2C-M0-M6-ASSIGNMENT-DEDICATION-001
   - GEM-009-COST-AND-UNIT-ECONOMICS-001
   - GEA-REF-GRAPH-001
 normative: true
@@ -118,32 +120,32 @@ activation_gate: string | none
 notes: string
 ```
 
-F1-B pode registrar uma **taxa unitária benchmark** ou fórmula variável enquanto `amount_brl` permanece `TBD`. F2-B pode registrar benchmarks salariais e sensibilidades de pessoas enquanto regime, dedicação e amount real permanecem `TBD`. O valor mensal somente nasce quando quantidade, aplicabilidade e período estiverem suficientemente governados.
+F1-B pode registrar uma **taxa unitária benchmark** ou fórmula variável enquanto `amount_brl` permanece `TBD`. F1-C pode ampliar evidência pública e estruturar pacotes de cotação sem promover benchmark a orçamento. F2-B pode registrar benchmarks salariais e sensibilidades de pessoas enquanto regime, dedicação e amount real permanecem `TBD`. O valor mensal somente nasce quando quantidade, aplicabilidade e período estiverem suficientemente governados.
 
 ## 6. Catálogo mestre de pools M0–M6
 
 | ID | Categoria | Pool de custo | Comportamento inicial | Driver principal | Estado numérico |
 |---|---|---|---|---|---|
-| F1-C01 | C-02 | produto, desenvolvimento, QA e entrega técnica | fixo/step | escopo implementável e releases autorizados | TBD |
-| F1-C02 | C-02 | infraestrutura, hospedagem, armazenamento e observabilidade | semivariável/step | ambientes, tráfego, armazenamento e disponibilidade | TBD |
-| F1-C03 | C-01/C-02 | IA, processamento, mensageria e serviços de dados | variável/step | uso elegível e volume processado | TBD |
-| F1-C04 | C-04 | segurança, privacidade e controles técnicos | fixo/step | superfície, risco e requisitos aprovados | TBD / quote required |
-| F1-C05 | C-02 | equipe e serviços profissionais | fixo/step | capacidade e papéis requeridos | parcialmente calibrado por F2-B — benchmarks R01/R02, proxy R03 e benchmark auxiliar de CRM/CX; amount TBD |
-| F1-C06 | C-02/C-04 | jurídico, contábil, fiscal, administrativo e compliance | fixo/event | obrigações, contratos e gates de lançamento | parcialmente calibrado por benchmark |
-| F1-C07 | C-02 | marca, conteúdo e produção criativa | fixo/event | calendário de conteúdo e lançamento | TBD |
+| F1-C01 | C-02 | produto, desenvolvimento, QA e entrega técnica | fixo/step | escopo implementável e releases autorizados | blocked_by_engineering |
+| F1-C02 | C-02 | infraestrutura, hospedagem, armazenamento e observabilidade | semivariável/step | ambientes, tráfego, armazenamento e disponibilidade | blocked_by_engineering |
+| F1-C03 | C-01/C-02 | IA, processamento, mensageria e serviços de dados | variável/step | uso elegível e volume processado | blocked_by_engineering |
+| F1-C04 | C-04 | segurança, privacidade e controles técnicos | fixo/step | superfície, risco e requisitos aprovados | parcialmente calibrado; endpoint benchmark + quote required para controles especializados |
+| F1-C05 | C-02 | equipe e serviços profissionais | fixo/step | capacidade e papéis requeridos | partially_parameterized_by_F2B_F2C; amount TBD |
+| F1-C06 | C-02/C-04 | jurídico, contábil, fiscal, administrativo e compliance | fixo/event | obrigações, contratos e gates de lançamento | parcialmente calibrado; jurídico/privacy/compliance quote required |
+| F1-C07 | C-02 | marca, conteúdo e produção criativa | fixo/event | calendário de conteúdo e lançamento | parcialmente calibrado; ferramenta criativa benchmark + produção quote required |
 | F1-C08 | C-03 | CRM, vendas e Customer Success | fixo/step | pipeline institucional e contas ativas | parcialmente calibrado por benchmark |
-| F1-C09 | C-03/C-06 | prospecção, reuniões, deslocamentos e operação comercial local | variável/event | reuniões, pilotos e parceiros em BH | TBD |
-| F1-C10 | C-03/C-06 | onboarding de Coletivos, Organizações, parceiros e ativação comunitária | variável/step | entidades ativadas e suporte de implantação | TBD |
-| F1-C11 | C-03 | mídia paga e performance | variável | aquisição incremental validada | TBD — condicionada a gate de ativação |
-| F1-C12 | C-03 | lançamento, eventos e presença de campo em BH | event | ações de lançamento autorizadas | TBD / quote required |
+| F1-C09 | C-03/C-06 | prospecção, reuniões, deslocamentos e operação comercial local | variável/event | reuniões, pilotos e parceiros em BH | parcialmente calibrado; transporte coletivo BH benchmark |
+| F1-C10 | C-03/C-06 | onboarding de Coletivos, Organizações, parceiros e ativação comunitária | variável/step | entidades ativadas e suporte de implantação | scope_definition_required |
+| F1-C11 | C-03 | mídia paga e performance | variável | aquisição incremental validada | budget_decision_and_experiment_required |
+| F1-C12 | C-03 | lançamento, eventos e presença de campo em BH | event | ações de lançamento autorizadas | parcialmente calibrado; ticketing condicional + quote required |
 | F1-C13 | C-01 | meios de pagamento e cobrança | variável | volume financeiro elegível e transações | fórmula benchmark disponível; amount TBD |
 | F1-C14 | C-05 | reembolsos, chargebacks, disputas e perdas operacionais | contingent/variable | transações e incidentes | tarifa parcial benchmark; incidência TBD |
-| F1-C15 | C-04 | suporte, moderação, curadoria e prevenção de fraude | semivariável/step | usuários, entidades, casos e conteúdo | TBD |
-| F1-C16 | C-02 | domínios, marca, propriedade intelectual e ativos institucionais | fixed/event | ativos efetivamente mantidos ou protegidos | tarifas oficiais de INPI parciais; demais itens TBD |
+| F1-C15 | C-04 | suporte, moderação, curadoria e prevenção de fraude | semivariável/step | usuários, entidades, casos e conteúdo | parcialmente calibrado; help desk benchmark + serviço especializado quote required |
+| F1-C16 | C-02 | domínios, marca, propriedade intelectual e ativos institucionais | fixed/event | ativos efetivamente mantidos ou protegidos | INPI + domínio .br com tarifas públicas parciais; quantidade/honorários TBD |
 | F1-C17 | C-02 | espaço físico, coworking, equipamentos e infraestrutura administrativa | fixed/event | decisão operacional explícita | benchmark BH disponível; necessidade TBD |
-| F1-C18 | C-06 | integrações, coordenação e reconciliação entre produtos/parceiros | variable/step | integrações e relações efetivamente ativadas | TBD |
+| F1-C18 | C-06 | integrações, coordenação e reconciliação entre produtos/parceiros | variable/step | integrações e relações efetivamente ativadas | scope_definition_required |
 
-A calibração detalhada de custos gerais e suas fontes é governada por `GEM-F1B-M0-M6-COST-CALIBRATION-001`. A capacidade de pessoas é governada por `GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001` e os modos de entrega/benchmarks de pessoas por `GEM-F2B-M0-M6-PEOPLE-DELIVERY-COST-001`.
+A calibração pública inicial é governada por `GEM-F1B-M0-M6-COST-CALIBRATION-001`. A expansão de evidência e os pacotes de cotação são governados por `GEM-F1C-M0-M6-EVIDENCE-QUOTE-PACK-001`. A capacidade de pessoas é governada por `GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001`, os modos econômicos por `GEM-F2B-M0-M6-PEOPLE-DELIVERY-COST-001` e assignment/dedicação por `GEM-F2C-M0-M6-ASSIGNMENT-DEDICATION-001`.
 
 ### C-07 e C-08
 
@@ -190,11 +192,11 @@ Consequentemente, esta baseline:
 - não presume contratação de Neo4j, GraphRAG, GDS, Power BI ou serviço equivalente;
 - não usa preço de vendor como fato interno;
 - não transforma arquitetura de referência em OPEX ou CAPEX;
-- mantém F1-C01, F1-C02 e F1-C03 `TBD` até decisão técnica e evidência de custo compatíveis com os gates de Product Engineering.
+- mantém F1-C01, F1-C02 e F1-C03 `blocked_by_engineering` até decisão técnica e evidência de custo compatíveis com os gates de Product Engineering.
 
-## 9. Relação com F2/F2-B — capacidade, entrega e custo de pessoas
+## 9. Relação com F2/F2-B/F2-C — capacidade, entrega e custo de pessoas
 
-F2 definiu a baseline de cobertura funcional M0–M6 sem transformar capacidade em contratação. F2-B adicionou modos de entrega e benchmarks rastreáveis sem transformar benchmark em remuneração aprovada.
+F2 definiu a baseline de cobertura funcional M0–M6 sem transformar capacidade em contratação. F2-B adicionou modos de entrega e benchmarks rastreáveis sem transformar benchmark em remuneração aprovada. F2-C adicionou owner scopes, regras de sobreposição e bandas candidatas de dedicação sem nomear pessoas ou transformar allocation em HC.
 
 O estado vigente é:
 
@@ -205,11 +207,12 @@ O estado vigente é:
 - benchmark salarial 2026 de Growth/GTM em BH e comercial B2B nacional estão disponíveis;
 - ecossistema/parcerias possui apenas proxy salarial de comparabilidade limitada;
 - suporte/CS possui benchmark auxiliar de CRM/CX, sem ativação automática de HC;
-- HC interno total, owner real por papel, sobreposição, regime, dedicação, remuneração/fee e custo monetário mensal continuam `TBD`.
+- owner scopes existem para as 18 capacidades e os três RE possuem guardrails candidatos de dedicação;
+- HC interno total, resource assignment nominal, regime, fração mensal exata, remuneração/fee e custo monetário mensal continuam `TBD`.
 
-Consequentemente, F1-C05 está **parcialmente calibrado**, mas não numericamente fechado.
+Consequentemente, F1-C05 está **partially_parameterized_by_F2B_F2C**, mas não numericamente fechado.
 
-O teste de salário-equivalente de três RE separados do F2-B é sensibilidade analítica e não poderá ser publicado como equipe, orçamento, burn ou necessidade de capital.
+O teste de salário-equivalente de três RE separados do F2-B é sensibilidade analítica e não poderá ser publicado como equipe, orçamento, burn ou necessidade de capital. O envelope de 0,60 RE-equivalent do F2-C é capacidade secundária de planejamento e não headcount.
 
 ## 10. Regra de fechamento mensal
 
@@ -246,7 +249,7 @@ Cada pool somente poderá receber valor quando houver, no mínimo:
 9. ausência de dupla contagem entre produtos e áreas;
 10. tratamento explícito de incerteza.
 
-## 12. Resultado do F1 após F1-B, F2 e F2-B
+## 12. Resultado do F1 após F1-B, F1-C, F2, F2-B e F2-C
 
 | Gate | Resultado |
 |---|---|
@@ -256,24 +259,23 @@ Cada pool somente poderá receber valor quando houver, no mínimo:
 | comportamento e drivers iniciais | PASS |
 | matriz mensal de ativação | PASS |
 | fontes primárias de benchmark | PASS |
-| pools com alguma calibração numérica | PARTIAL — 7/18 |
+| pools com alguma calibração numérica | PARTIAL — 12/18 |
 | pools numericamente fechados | 0/18 |
+| pacotes de cotação material | PASS — F1-C |
 | cotações/contratos/realizados suficientes | PENDING |
 | capacidade e papéis de equipe | PARTIAL PASS — F2 |
 | modos de entrega e benchmarks de pessoas | PARTIAL PASS — F2-B |
-| HC interno/regime/dedicação/remuneração | PENDING |
+| assignment e dedicação | PARTIAL PASS — F2-C |
+| HC interno/regime/resource assignment/remuneração | PENDING |
 | custo monetário completo F1-C05 | NOT CALCULABLE |
 | custo mensal completo | NOT CALCULABLE |
 | burn mensal completo | NOT CALCULABLE |
 | runway e necessidade de capital | NOT CALCULABLE |
 
-**Parecer:** `PARTIAL PASS — F1/F1-B/F2/F2-B now govern cost scope, seven pools with numeric benchmark evidence, functional capacity and people-delivery economics; material assignment, regime, quotations and monetary gaps still prevent a complete cost and burn baseline.`
+**Parecer:** `PARTIAL PASS — F1/F1-B/F1-C/F2/F2-B/F2-C now govern cost scope, twelve pools with traceable numeric evidence, quote-ready external scopes, functional capacity, people-delivery economics and assignment guardrails; material scope, quantity, quotations, resource assignment and monetary gaps still prevent a complete cost and burn baseline.`
 
-## 13. Próximos incrementos permitidos
+## 13. Próximo incremento permitido
 
-Os próximos atos são independentes e exigem autorização própria:
+Após integração do F1-C, o próximo ato recomendado é uma **reconciliação F1/F2 de prontidão para F3**, classificando os `TBD` remanescentes por materialidade e decidindo se F3 pode começar apenas como estrutura ou se deve aguardar mais evidência.
 
-1. **F1-C — evidência e cotações faltantes**, para ampliar a cobertura externa de custos materiais;
-2. **F2-C — assignment e dedicação M0–M6**, para definir quem cobre cada papel, sobreposições e frações de capacidade sem contratar.
-
-Burn, caixa, runway e necessidade de capital permanecem bloqueados até que as lacunas materiais de F1 e F2 estejam suficientemente resolvidas.
+Essa reconciliação exige autorização própria e **não autoriza F3 automaticamente**. Burn, caixa, runway e necessidade de capital continuam bloqueados até que as lacunas materiais sejam suficientemente resolvidas.
