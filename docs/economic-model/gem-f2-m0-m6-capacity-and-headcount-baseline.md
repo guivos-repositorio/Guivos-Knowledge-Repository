@@ -2,7 +2,7 @@
 id: GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001
 title: Baseline de Capacidade, Papéis e Headcount M0–M6 — F2
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Economic Model
 last_updated: 2026-08-08
 parent: GEM-010
@@ -17,6 +17,7 @@ depends_on:
   - GTM-002
 related:
   - GEM-F2B-M0-M6-PEOPLE-DELIVERY-COST-001
+  - GEM-F2C-M0-M6-ASSIGNMENT-DEDICATION-001
   - GEM-010-COST-AND-CAPACITY-MODEL-001
   - GEM-008-COST-ARCHITECTURE-001
 normative: true
@@ -81,7 +82,7 @@ Os modos abaixo são **alternativas de cobertura**, não decisões de contrataç
 - `partner_enabled`;
 - `TBD`.
 
-Nenhum modo possui custo aprovado nesta autoridade. A modelagem econômica detalhada desses modos é governada por [F2-B — Modelo de Entrega e Custo de Pessoas M0–M6](gem-f2b-m0-m6-people-delivery-and-cost-model.md).
+Nenhum modo possui custo aprovado nesta autoridade. A modelagem econômica detalhada é governada por [F2-B — Modelo de Entrega e Custo de Pessoas M0–M6](gem-f2b-m0-m6-people-delivery-and-cost-model.md), enquanto owner scopes, sobreposições e guardrails de dedicação são governados por [F2-C — Matriz de Assignment e Dedicação M0–M6](gem-f2c-m0-m6-assignment-and-dedication-model.md).
 
 ## 5. Base explícita do GTM para M0–M6
 
@@ -250,7 +251,7 @@ Coberturas compartilhadas deverão ser reforçadas antes de saturação quando s
 - incidente material;
 - entrada em atividade que exija revisão especializada.
 
-F2 não fixa thresholds numéricos sem dados observados. O primeiro ciclo real deverá instrumentar utilização, folga operacional, backlog saudável, tempo de resposta e sinais de saturação.
+F2 não fixa thresholds operacionais sem dados observados. F2-C adiciona apenas guardrails **candidatos de planejamento** para assignment e dedicação, que não devem ser confundidos com thresholds operacionais comprovados. O primeiro ciclo real deverá instrumentar utilização, folga operacional, backlog saudável, tempo de resposta e sinais de saturação.
 
 ## 11. Gate de prontidão M4
 
@@ -268,13 +269,15 @@ A passagem de preparação para lançamento não depende apenas do calendário. 
 10. segurança/risco aplicável;
 11. governança executiva.
 
+F2-C acrescenta que um mesmo recurso não pode ser contado duas vezes para satisfazer dois RE dedicados integrais e que soma planejada acima dos guardrails exige revisão de capacidade antes do lançamento.
+
 Se uma cobertura essencial estiver `unavailable`, `constrained`, `saturated` ou sem owner, o gate de crescimento deverá ser condicionado, limitado, pausado ou bloqueado conforme a autoridade GEM-008.
 
 ## 12. Relação com F1-C05 — custo de equipe
 
-Após F2 e F2-B, o estado de `F1-C05` é:
+Após F2-B e F2-C, o estado de `F1-C05` é:
 
-> `partially_calibrated_by_F2B — 3 dedicated role-equivalents of reference plus mandatory shared/fractional/conditional coverage; delivery modes and salary benchmarks are governed, while actual HC, assignment, overlap, regime, compensation, allocation and complete amount remain TBD`.
+> `partially_parameterized_by_F2B_F2C — 3 dedicated role-equivalents of reference plus mandatory shared/fractional/conditional coverage; delivery modes, salary benchmarks, owner scopes, overlap rules and candidate dedication bands are governed, while named resources, exact monthly allocations, regime, compensation and complete amount remain TBD`.
 
 F2-B adiciona:
 
@@ -285,13 +288,22 @@ F2-B adiciona:
 - componentes trabalhistas oficiais mínimos e guardrails contra multiplicador CLT incompleto;
 - prevenção de dupla contagem com outros pools.
 
+F2-C adiciona:
+
+- owner scopes para as 18 capacidades;
+- owner primário dos três RE dedicados;
+- regra matemática contra dupla contagem de dois RE integrais em uma única capacidade física;
+- piso central candidato de 65% por RE dedicado;
+- teto candidato de carga planejada de 85%, com 15% de folga;
+- teto suave candidato de 20% para uma capacidade secundária isolada;
+- envelope máximo de até 0.60 RE-equivalent de carga secundária agregada dentro dos três RE, sem convertê-lo em HC.
+
 Ainda faltam para converter F1-C05 em custo mensal completo:
 
-- decisão de quem cobre cada papel;
-- sobreposição admissível entre papéis;
-- vínculo/regime de execução por papel;
+- resource assignment real/candidato de cada papel por mês;
+- modo de entrega escolhido por assignment;
+- fração mensal exata dentro das bandas ou exceção documentada;
 - quantidade efetiva de pessoas/prestadores;
-- dedicação/rateio por período;
 - remuneração ou preço do serviço aplicável;
 - encargos, benefícios, impostos e custos acessórios quando aplicáveis;
 - datas de início/fim;
@@ -299,14 +311,16 @@ Ainda faltam para converter F1-C05 em custo mensal completo:
 
 ## 13. O que F2 não autoriza
 
-F2 e F2-B não autorizam:
+F2, F2-B e F2-C não autorizam:
 
 - contratar 3 pessoas;
 - contratar 18 pessoas;
 - afirmar que a Guivos possui atualmente qualquer uma dessas funções contratadas;
+- atribuir nominalmente uma pessoa sem evidência/decisão específica;
 - definir salários ou propostas de remuneração;
 - escolher CLT, PJ, contractor ou outsourcing;
-- transformar benchmark em orçamento;
+- transformar benchmark ou banda de dedicação em orçamento;
+- transformar 0.60 RE em headcount;
 - criar vagas;
 - iniciar Product Engineering;
 - contratar Neo4j, cloud, IA ou stack;
@@ -314,7 +328,7 @@ F2 e F2-B não autorizam:
 - calcular burn completo;
 - calcular runway ou capital necessário.
 
-## 14. Resultado F2 após F2-B
+## 14. Resultado F2 após F2-C
 
 | Gate | Resultado |
 |---|---|
@@ -327,21 +341,24 @@ F2 e F2-B não autorizam:
 | drivers de reforço/saturação | PASS |
 | modos de entrega econômicos | PASS — F2-B |
 | benchmarks de remuneração | PARTIAL PASS — R01/R02 + proxy R03 + auxiliar CRM/CX |
+| owner scopes das 18 capacidades | PASS — F2-C |
+| regras de sobreposição e dupla contagem | PASS — F2-C |
+| bandas candidatas de dedicação | PASS — planejamento, não observado |
+| resource assignment nominal | PENDING |
+| fração mensal exata por recurso | PENDING |
 | HC interno total | PENDING |
-| assignment/sobreposição/dedicação | PENDING |
 | regime por papel | PENDING |
 | remuneração/fee real por papel | PENDING |
 | engenharia de implementação | BLOCKED BY PRODUCT ENGINEERING |
 | custo mensal completo F1-C05 | NOT CALCULABLE |
 | burn/runway/capital | NOT CALCULABLE |
 
-**Parecer:** `PARTIAL PASS — M0–M6 functional capacity, delivery-mode economics and traceable people benchmarks are governed; exact assignment, headcount, overlap, regimes, allocations, compensation and complete monetary people cost remain pending.`
+**Parecer:** `PARTIAL PASS — M0–M6 functional capacity, delivery-mode economics, owner-scope assignment and candidate dedication guardrails are governed; named resources, exact monthly allocations, headcount, regimes, compensation and complete monetary people cost remain pending.`
 
 ## 15. Próximo incremento econômico permitido
 
-Após F2-B, o próximo incremento econômico-financeiro deverá escolher explicitamente entre:
+Após F2-C, o próximo incremento econômico recomendado é:
 
-1. **F2-C — assignment e dedicação M0–M6**, definindo quem cobre o quê, sobreposições e frações de capacidade sem contratar; ou
-2. **F1-C — completar evidências/cotações materiais ainda faltantes**.
+**F1-C — completar evidências e cotações materiais ainda faltantes**, usando a arquitetura F2/F2-B/F2-C para evitar cotar recursos inexistentes, duplicar custos ou confundir capacidade com contratação.
 
 Somente depois de F1 e F2 terem cobertura monetária material suficiente deverá o programa avançar para **F3 — caixa, capital de giro e necessidade de capital**.
