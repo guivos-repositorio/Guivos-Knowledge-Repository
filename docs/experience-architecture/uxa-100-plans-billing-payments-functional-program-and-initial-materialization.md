@@ -2,7 +2,7 @@
 id: UXA-100
 title: Programa Funcional e Materialização Inicial de Planos, Cobrança e Pagamentos
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: UXA-000
@@ -19,6 +19,7 @@ related:
   - UXA-011-A1
   - UXA-070
   - UXA-100-A1
+  - UXA-100-A2
   - GKR-STATE-001
 normative: false
 ---
@@ -35,7 +36,10 @@ A UXA-100 abre uma frente transversal para tornar compreensíveis, em baixa fide
 
 A frente deriva da baseline comercial candidata do GEM-004. Ela **não autoriza oferta pública, checkout real, cobrança, gateway, implantação, desenvolvimento ou publicação de preços como proposta comercial vigente**.
 
-A versão 0.3.0 incorpora a extensão `UXA-100-A1`, que adiciona uma **tela dedicada de Planos** e insere a etapa Planos nas jornadas de cada participante, sem criar IDs canônicos.
+A versão 0.4.0 incorpora:
+
+- `UXA-100-A1` — telas dedicadas de Planos e integração da etapa às três jornadas;
+- `UXA-100-A2` — auditoria funcional dos nove SVGs candidatos, com aprovação após reformulação controlada de seis ativos.
 
 ## 2. Pergunta funcional
 
@@ -57,7 +61,7 @@ A UXA-100 materializa somente referências já documentadas em GEM-004-A1 e GEM-
 
 O estado visual limitado do Guivos Free recai sobre uma **correspondência personalizada adicional após a cota semanal**, não sobre a existência da oportunidade pública.
 
-A experiência deverá preservar catálogo público no Explorar, Mapa, informações públicas essenciais, segurança, preço da oportunidade, prazo e responsabilidade quando a oferta já estiver acessível publicamente.
+A experiência preserva catálogo público no Explorar, Mapa, informações públicas essenciais, segurança, preço da oportunidade, prazo e responsabilidade quando a oferta já estiver acessível publicamente.
 
 É proibido desfocar uma oportunidade pública apenas para ocultar sua existência e pressionar upgrade.
 
@@ -93,7 +97,7 @@ O conjunto candidato é formado por **nove SVGs**:
 2. três placas de fluxo de planos/pagamentos;
 3. três comparações incrementais.
 
-A validação funcional posterior decidirá quantas superfícies canônicas devem existir, quais estados merecem SVG separado, quais IDs serão registrados e quais transições serão integradas ao registro global.
+A UXA-100-A2 confirmou a coerência funcional dos nove ativos como candidatos. Uma etapa posterior ainda deverá decidir quantas superfícies canônicas devem existir, quais estados merecem SVG separado, quais IDs serão registrados e quais transições serão integradas ao registro global.
 
 ## 5. Espinha dorsal transversal
 
@@ -106,7 +110,7 @@ A validação funcional posterior decidirá quantas superfícies canônicas deve
 → seleção afirmativa, sem pré-seleção
 → revisão da contratação
 → pagador + beneficiário
-→ preço + periodicidade + recorrência
+→ preço + periodicidade + recorrência + data de início
 → método autorizado em simulação
 → confirmar
 → processamento
@@ -115,7 +119,7 @@ A validação funcional posterior decidirá quantas superfícies canônicas deve
 
 plano ativo
 → downgrade ou cancelamento
-→ revisar consequência e data aplicável
+→ revisar consequência, capacidades excedentes e data aplicável
 → confirmar
 → registrar estado futuro
 ```
@@ -200,7 +204,7 @@ Devem permanecer acessíveis no mesmo estado: `Explorar oportunidades públicas`
 
 ### 8.4 Compra e mudança
 
-A Pessoa revisa plano escolhido, preço candidato, mensal/anual, recorrência, pagador, beneficiário, início informado, método autorizado em simulação, downgrade/cancelamento e ausência de promessa de resultado.
+A Pessoa revisa plano escolhido, preço candidato, mensal/anual, recorrência, pagador, beneficiário, data de início, método autorizado em simulação, downgrade/cancelamento e ausência de promessa de resultado.
 
 ## 9. Coletivo
 
@@ -227,6 +231,10 @@ Ao atingir cota ou tentar publicação paga, a superfície preserva publicaçõe
 
 Enterprise utiliza solicitação de proposta comercial e dimensionamento; não recebe checkout autônomo fictício.
 
+### 9.5 Downgrade
+
+Antes da efetivação, o Coletivo escolhe publicações gratuitas que permanecerão, encerra/converte publicações pagas excedentes, reduz administradores/núcleos conforme limite e preserva compromissos, exportação e registros aplicáveis. Não há exclusão silenciosa.
+
 ## 10. Organização
 
 ### 10.1 Planos candidatos
@@ -235,7 +243,7 @@ Enterprise utiliza solicitação de proposta comercial e dimensionamento; não r
 |---|---:|---:|---:|---:|---:|---:|
 | Business Start | R$ 299,00 | R$ 2.990,00 | 10/mês | 15 | 3 | 1 |
 | Business Growth | R$ 799,00 | R$ 7.990,00 | 50/mês | 75 | 10 | até 5 |
-| Business Scale | a partir de R$ 1.990,00 | contrato anual | capacidade contratada | capacidade contratada | conforme contrato | múltiplas |
+| Business Scale | a partir de R$ 1.990,00/mês | contrato anual | capacidade contratada | capacidade contratada | conforme contrato | múltiplas |
 
 ### 10.2 Limite e alternativas
 
@@ -251,6 +259,10 @@ Quando a Organização atingir capacidade, deverão estar visíveis limite e con
 
 Scale utiliza processo comercial solicitado pela Organização, com proposta e capacidade contratada. Não há checkout autônomo simulado como se preço e escopo fossem autoatendimento definitivo.
 
+### 10.5 Downgrade
+
+Antes da efetivação, a Organização seleciona unidades, administradores, publicações e Coletivos relacionados mantidos, identifica integrações a encerrar e dados a exportar e recebe a data efetiva/plano posterior. Históricos e agregados não são apagados para forçar retenção.
+
 ## 11. Pagador e beneficiário
 
 Toda revisão de contratação distingue explicitamente quem paga, quem recebe o benefício do plano, quem poderá cancelar e qual escopo de dados é necessário à cobrança.
@@ -265,7 +277,9 @@ A UXA-100 não define duração de `grace_period`.
 
 ## 13. Downgrade e cancelamento
 
-A experiência fica na mesma área de Plano e cobrança, mostra estado atual e futuro, explica capacidades que deixarão de estar disponíveis, preserva dados/direitos/acesso gratuito aplicável, exige confirmação afirmativa e emite evidência da solicitação.
+A experiência fica na mesma área de Plano e cobrança, mostra estado atual e futuro, explica capacidades que deixarão de estar disponíveis, trata explicitamente capacidades excedentes, preserva dados/direitos/acesso gratuito aplicável, exige confirmação afirmativa e emite evidência da solicitação.
+
+Cancelamento mostra data efetiva, interrompe renovação futura, confirma plano posterior e não reativa sem autorização.
 
 A UXA-100 não presume pró-rata, estorno ou crédito entre ciclos.
 
@@ -291,11 +305,11 @@ A UXA-100 não presume pró-rata, estorno ou crédito entre ciclos.
 
 Inspeção integrada: [Planos, Comparação e Cobrança — Galeria Candidata](../journeys/screen-gallery-plans-billing.md).
 
-Os **9 SVGs são candidatos e não elevam os 109 SVGs canônicos** até validação e promoção governadas.
+Os **9 SVGs são candidatos e não elevam os 109 SVGs canônicos** até promoção governada posterior.
 
-## 15. Critérios para futura validação funcional
+## 15. Resultado da validação funcional candidata
 
-A materialização somente poderá ser promovida quando uma validação posterior confirmar que:
+A UXA-100-A2 confirmou os critérios funcionais previstos para os nove SVGs:
 
 1. alternativa gratuita permanece visível e funcional;
 2. nenhuma oportunidade pública é ocultada para vender plano;
@@ -304,17 +318,19 @@ A materialização somente poderá ser promovida quando uma validação posterio
 5. tela de Planos é acessível voluntariamente em cada jornada;
 6. entrada contextual não elimina alternativas legítimas;
 7. comparação geral e incremental são coerentes;
-8. delta direto plano atual → alvo é compreensível;
+8. delta direto plano atual → alvo é previsto;
 9. nenhuma opção paga vem pré-selecionada;
-10. preço, periodicidade e recorrência aparecem antes da confirmação;
+10. preço, periodicidade, recorrência e data de início aparecem antes da confirmação;
 11. pagador e beneficiário são distinguíveis;
 12. sucesso não é presumido antes de confirmação;
 13. falha não remove direitos essenciais;
-14. cancelamento/downgrade são acessíveis e mostram perdas/reduções;
+14. cancelamento/downgrade são acessíveis e tratam perdas/reduções/excedentes;
 15. Enterprise/Scale não fingem checkout autônomo;
 16. assinatura não se confunde com taxa transacional;
 17. pagamento não promete melhor relevância, confiança ou evolução;
 18. parâmetros financeiros ainda indefinidos permanecem indefinidos.
+
+Veredito: **9/9 SVGs funcionalmente aprovados como candidatos; 6 após reforma controlada e 3 sem alteração visual**.
 
 ## 16. Fora do escopo
 
@@ -322,8 +338,18 @@ A UXA-100 não altera GEM-004, valida preços no mercado, registra superfícies/
 
 ## 17. Estado da frente
 
-A UXA-100 é **programa e materialização candidata**. A UXA-100-A1 integra a etapa Planos às três jornadas e adiciona as telas dedicadas.
+A UXA-100 permanece **programa candidato em draft**. A UXA-100-A1 integra a etapa Planos às três jornadas e adiciona as telas dedicadas. A UXA-100-A2 valida funcionalmente os nove ativos no escopo candidato.
 
-Os nove SVGs permanecem **não validados funcionalmente** até frente posterior específica.
+Estado atual da frente:
 
-Sua existência documental não constitui integração à `main`, lançamento, implementação ou operação.
+- 9 SVGs candidatos;
+- 9/9 funcionalmente aprovados como candidatos;
+- 6 reformulados pela UXA-100-A2;
+- 3 preservados sem reforma;
+- 109 SVGs canônicos permanecem inalterados;
+- 0 novas superfícies canônicas;
+- 0 novas transições canônicas;
+- jornadas permanecem `draft`;
+- Engenharia de Produto permanece pausada antes de W0-01.
+
+A existência e validação documental desses ativos não constituem integração à `main`, lançamento, implementação ou operação. A eventual promoção/fragmentação canônica exige decisão governada separada.
