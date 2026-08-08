@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.26.0
+version: 2.27.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
@@ -28,14 +28,15 @@ related:
   - UXA-098
   - UXA-099
   - UXA-100
+  - UXA-101
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - ROADMAP-12.73.0
-  - M7.87
+  - ROADMAP-12.74.0
+  - M7.88
 normative: true
 ---
 
@@ -43,20 +44,20 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro declara o estado global vigente da `main` após a integração governada da UXA-100. Em caso de divergência, este registro prevalece sobre resumos não normativos.
+Este registro declara o estado global proposto após a UXA-101 e só se torna vigente na `main` mediante integração governada. Em caso de divergência após integração, este registro prevalece sobre resumos não normativos.
 
-## 2. Estado global vigente após UXA-100-A3
+## 2. Estado global proposto após UXA-101
 
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
-| Marco | Planos fragmentados e promovidos canonicamente | UXA-100-A3; M7.87 |
+| Marco | saída consciente para fronteira externa validada | UXA-101; M7.88 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
-| Registros granulares | **53 superfícies/estados/fronteiras e 54 transições** | UXA-100-A3 |
-| Galeria visual | `active` 0.20.0; **118 SVGs** | UXA-100-A3 |
-| Matriz por SVG | `active` 0.16.0; **118 arquivos / 31 perfis** | UXA-100-A3 |
-| Jornadas Integradas | `active` 0.30.0; Pessoa, Coletivo e Organização em `draft` | UXA-100-A3 |
+| Registros granulares | **53 superfícies/estados/fronteiras e 54 transições** | UXA-101 |
+| Galeria visual | `active` 0.21.0; **118 SVGs** | UXA-101 |
+| Matriz por SVG | `active` 0.17.0; **118 arquivos / 31 perfis** | UXA-101 |
+| Jornadas Integradas | `active` 0.31.0; Pessoa, Coletivo e Organização permanecem `draft` | UXA-101 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Cobertura visual
@@ -72,123 +73,105 @@ Este registro declara o estado global vigente da `main` após a integração gov
 | responsabilidades sem SVG dedicado | **9** |
 | fronteiras sem tela por definição | **2** |
 
-A UXA-100-A3 promove os nove SVGs de Planos previamente aprovados pela UXA-100-A2, sem criar novos arquivos visuais nesta subetapa.
+A UXA-101 reformula e revalida `uxa-007-opportunity-detail-mobile.svg` sem criar novo ativo. O estado de revisão consciente permanece em `PER-203`; `BND-001` continua sem tela.
 
-## 4. Resultado da UXA-100
+## 4. Resultado da UXA-101
 
-A frente UXA-100:
+A frente UXA-101:
 
-- materializa tela de Planos, board de fluxo e comparação incremental para Pessoa, Coletivo e Organização;
-- integra Planos às três jornadas `draft`;
-- valida funcionalmente 9/9 SVGs, com seis reformas controladas;
-- promove os nove ativos ao conjunto canônico;
-- cria quatro famílias canônicas por participante: Planos/comparação, revisão de contratação, downgrade/cancelamento e resultado/recuperação;
-- cria `BND-002` como fronteira documental Enterprise/Scale;
-- registra 17 novas transições com maturidade explícita;
-- preserva oportunidade pública no Free;
-- preserva separação entre assinatura, transação, comissão, taxa e tributo;
-- não implementa cobrança, gateway ou entitlement.
+- fecha V4 no limite documental controlável pela Guivos;
+- materializa no mesmo SVG de `PER-203` a revisão pré-saída prevista por UXA-007;
+- identifica destino externo e responsável antes do handoff;
+- explicita dados/contexto que acompanham ou não acompanham a saída;
+- exige decisão afirmativa e revalidação do destino conhecido/autorizado;
+- bloqueia redirecionamento silencioso quando o destino está ausente, inválido ou materialmente alterado;
+- preserva cancelamento/retorno sem penalidade;
+- não presume inscrição, reserva, compra, contratação, presença ou evolução externas;
+- valida `TRN-205` até `BND-001`;
+- confirma `BND-001` como fronteira externa, não superfície Guivos.
 
 Veredito:
 
-> **Fragmentação mínima e promoção canônica aprovadas documentalmente: 12 superfícies de Planos, uma fronteira comercial, 17 transições e nove SVGs incorporados ao catálogo canônico.**
+> **V4 encerrada no limite de autoridade da Guivos: `TRN-205` validada até `BND-001`, sem apropriar comportamento ou resultado do terceiro.**
 
-## 5. Estrutura canônica de Planos
+## 5. Continuidade de oportunidades
 
-### Pessoa
+```text
+ORG-003
+→ TRN-203
+→ PER-201 — Mapa
+↔ TRN-210
+→ PER-202 — Lista
+→ TRN-204/211
+→ PER-203 — Detalhe
+→ estado de revisão de saída em PER-203
+→ TRN-205
+→ BND-001 — autoridade externa
+```
 
-`PER-301` a `PER-304`; `TRN-401` a `TRN-405` localmente validadas.
+`TRN-203`, `204`, `210`, `211` permanecem integralmente validadas pela UXA-098. `TRN-205` passa a ser integral no limite de autoridade declarado pela UXA-101.
 
-### Coletivo
+## 6. Continuidades preservadas
 
-`COL-301` a `COL-304`; `TRN-411` a `TRN-415` localmente validadas; `TRN-416` parcial para `BND-002`.
-
-### Organização
-
-`ORG-301` a `ORG-304`; `TRN-421` a `TRN-425` localmente validadas; `TRN-426` parcial para `BND-002`.
-
-Comparação incremental permanece em `*-301`; processamento financeiro permanece transitório; sucesso e falha pertencem a `*-304` como estados diferentes da mesma responsabilidade.
-
-## 6. Proteções da frente
-
-- oportunidade pública não é ocultada para vender plano;
-- Guivos Free mantém utilidade real e catálogo público;
-- plano pago não compra relevância, confiança, legitimidade, impacto ou evolução;
-- preço de assinatura não se confunde com preço de oportunidade, comissão, taxa ou tributo;
-- nenhuma opção paga é pré-selecionada;
-- downgrade/cancelamento mostra consequência e data aplicável;
-- falha não presume ativação nem permite perda silenciosa de dados;
-- Enterprise/Scale termina em `BND-002`, sem checkout fictício;
-- trial com conversão automática continua fora da baseline;
-- pró-rata, grace period e regras fiscais finais permanecem indefinidos.
-
-## 7. Continuidades anteriores preservadas
-
-- `TRN-203`, `TRN-204`, `TRN-210` e `TRN-211` permanecem integralmente validadas pela UXA-098;
 - `TRN-007` permanece integralmente validada pela UXA-097;
 - `COM-005` permanece funcionalmente validado pela UXA-099;
 - oito transições do trecho governado de Coletivos permanecem integralmente validadas: `TRN-105`, `106`, `107`, `108`, `109`, `110`, `111` e `112`;
-- `TRN-205`, `TRN-304`, `TRN-305` e `TRN-306` permanecem parciais e fora do escopo da promoção de Planos.
+- 15 transições internas de Planos permanecem localmente validadas;
+- `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais.
 
-## 8. Dívidas preservadas
+## 7. Dívidas preservadas
 
 - estados P0B de Meus Coletivos, Central e Início do Participante;
 - canais P1 e operação interna especializada;
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` parciais;
-- `TRN-205` efeito externo de oportunidades;
-- `TRN-304`, `TRN-305` e `TRN-306` integrações patrocinadas pendentes;
+- integrações patrocinadas `TRN-304/305/306`;
 - cobrança real e gateway da frente de Planos;
 - processo comercial posterior a `BND-002`;
 - entradas de Planos a partir de origens ainda sem identidade canônica adequada;
-- relação Organização–Coletivo ainda não materializada como conjunto.
+- relação Organização–Coletivo ainda não materializada como conjunto;
+- resultado externo posterior a `BND-001` permanece sob autoridade de terceiro.
 
-## 9. Fila global de validação
+## 8. Fila global de validação
 
 | Ordem | Continuidade ou família | Estado |
 |---:|---|---|
 | V1 | compreensão inicial → Tela Hoje | encerrada por UXA-097 |
 | V2 | publicação → descoberta/mapa/lista/detalhe | encerrada por UXA-098 |
 | V3 | dez estados residuais UXA-055 | encerrada por UXA-099 |
-| Planos | identidade e promoção canônica | **encerrada por UXA-100-A3** |
-| V4 | efeito externo de oportunidades | prioridade global preservada; pendente |
-| V5 | erros, retornos e interrupções | pendente |
+| Planos | identidade e promoção canônica | encerrada por UXA-100-A3 |
+| **V4** | efeito externo de oportunidades | **encerrada por UXA-101 até BND-001** |
+| V5 | erros, retornos e interrupções | pendente; **não iniciada** |
 
-A frente de Planos foi autorizada separadamente e não cancela V4/V5.
-
-## 10. Estado documental vigente
+## 9. Estado documental proposto
 
 | Camada | Estado |
 |---|---|
-| Arquitetura da Experiência | `active` 0.93.0 |
-| Jornadas Integradas | `active` 0.30.0 |
-| Jornada da Pessoa | `draft` 0.14.0 |
+| Arquitetura da Experiência | `active` 0.94.0 |
+| Jornadas Integradas | `active` 0.31.0 |
+| Jornada da Pessoa | `draft` 0.15.0 |
 | Jornada do Coletivo | `draft` 0.15.0 |
-| Jornada da Organização | `draft` 0.7.0 |
-| catálogo integrado | `active` 0.25.0 |
-| galeria visual | `active` 0.20.0 |
+| Jornada da Organização | `draft` 0.8.0 |
+| catálogo integrado | `active` 0.26.0 |
+| galeria visual | `active` 0.21.0 |
 | galeria de Planos | `active` 0.3.0 |
-| matriz por SVG | `active` 0.16.0 |
-| lacunas | `active` 0.25.0 |
-| registro de superfícies | `active` 0.16.0 |
-| registro de transições | `active` 0.17.0 |
-| detalhamento da Pessoa | `active` 0.10.0 |
-| detalhamento do Coletivo | `active` 0.7.0 |
-| detalhamento da Organização | `active` 0.3.0 |
-| detalhamento comercial/fronteira | `active` 0.4.0 |
+| matriz por SVG | `active` 0.17.0 |
+| lacunas | `active` 0.26.0 |
+| registro de superfícies | `active` 0.17.0 |
+| registro de transições | `active` 0.18.0 |
+| detalhamento comercial/fronteira | `active` 0.5.0 |
 | protótipo, aplicação, motor e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
 
-## 11. Preservações
+## 10. Preservações
 
 - materialização, validação, promoção e implementação são estados distintos;
-- uma versão visual reformulada exige validação correspondente;
+- validação até uma fronteira não valida sistema de terceiro;
 - publicação não é distribuição garantida;
 - relação comercial não compra relevância funcional;
 - estado canônico vigente prevalece sobre estado visual obsoleto;
-- validação local não equivale a transição ponta a ponta;
 - Pessoa, Coletivo e Organização permanecem `draft`;
 - nenhuma etapa autoriza automaticamente a seguinte.
 
-## 12. Próxima transição autorizável
+## 11. Próximo ato
 
-Com a identidade canônica de Planos encerrada pela UXA-100-A3, qualquer próximo ato — cobrança real, processo Enterprise/Scale, V4 ou outra frente — exige autorização humana separada. **UXA-101 não foi iniciada.**
+A UXA-101 encerra V4. **V5 não foi iniciada.** A auditoria transversal dos Produtos Especializados pode ser executada separadamente como diagnóstico documental/arquitetural, sem iniciar nova UXA ou Engenharia de Produto.

@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.16.0
+version: 0.17.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -26,6 +26,7 @@ depends_on:
   - UXA-099
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-101
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -42,7 +43,7 @@ Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos *
 
 ## 2. Estado do instrumento
 
-A UXA-100-A3 incorpora os nove SVGs funcionalmente aprovados pela UXA-100-A2, elevando a matriz de 109 para **118 associações** e de 28 para **31 perfis**. Os novos perfis preservam a fragmentação mínima: um perfil por participante cobre a tela de Planos, o board de fluxo e a comparação incremental correspondente.
+A UXA-101 reformula e revalida `uxa-007-opportunity-detail-mobile.svg` sem criar novo ativo ou perfil. O conjunto permanece em **118 associações** e **31 perfis**. O perfil R08 passa a incluir explicitamente o estado de revisão consciente antes de `BND-001`.
 
 ## 3. Perfis de rastreabilidade
 
@@ -55,7 +56,7 @@ A UXA-100-A3 incorpora os nove SVGs funcionalmente aprovados pela UXA-100-A2, el
 | R05 | PER-008 | **TRN-007** | continuidade recorrente | revisar/navegar/retornar | estados alternativos de Hoje | **UXA-010 recorrente; primeira entrada e TRN-007 UXA-097** |
 | R06 | PER-201 | TRN-203/304 | TRN-204/210 | voltar/alternar | integração patrocinada parcial | UXA-025/027/031/033; TRN-203/204/210 UXA-098 |
 | R07 | PER-202 | TRN-210/306 | TRN-211 | retornar ao mapa | integração patrocinada parcial | UXA-029; TRN-210/211 UXA-098 |
-| R08 | PER-203 | TRN-204/211 | TRN-205 | retornar | efeito externo | UXA-012; entradas UXA-098 |
+| R08 | PER-203 | TRN-204/211 | **TRN-205 → BND-001** | voltar ao detalhe; bloquear saída inválida; retorno externo sem presumir resultado | processo externo posterior à fronteira | **UXA-012; entradas UXA-098; reformulação, revisão consciente e TRN-205 UXA-101** |
 | R09 | ORG-001 | entrada institucional | TRN-201 | cancelar/retornar | matriz institucional | UXA-017 |
 | R10 | ORG-002/003 | TRN-201 | TRN-202/203 | editar/retirar/pausar | ligações institucionais restantes | UXA-013; TRN-203 UXA-098 |
 | R11 | COL-001 | busca ou entrada responsável | TRN-103 | retornar/sair | presença pública → gestão | UXA-018/063 |
@@ -210,12 +211,10 @@ A UXA-100-A3 incorpora os nove SVGs funcionalmente aprovados pela UXA-100-A2, el
 - perfis documentais: **31**;
 - com validação funcional vigente: **118**;
 - pendentes de validação específica: **0**;
-- SVGs promovidos pela UXA-100-A3: **9**;
-- novos perfis: **3 — R29, R30, R31**;
-- superfícies de Planos cobertas: **12**;
-- `BND-002` permanece sem SVG por definição de fronteira;
-- transições de Planos são locais/parciais conforme o registro; validação de SVG não as transforma automaticamente em implementação.
+- SVGs reformulados pela UXA-101: **1**, sem aumento do inventário;
+- `BND-001` e `BND-002` permanecem sem SVG por definição de fronteira;
+- validação visual não atribui à Guivos comportamento posterior às fronteiras.
 
-## 6. Estado após UXA-100-A3
+## 6. Estado após UXA-101
 
-A UXA-100-A3 promove os nove ativos de Planos após validação funcional da UXA-100-A2. O conjunto canônico passa a 118 associações. As jornadas principais permanecem `draft`, e validação de cobrança real, processo Enterprise/Scale e entradas contextuais externas continua separada.
+O perfil R08 está revalidado para o mesmo SVG canônico do Detalhe, agora com o estado de revisão consciente de saída. `TRN-205` é validada até `BND-001`; o processo externo posterior permanece fora do escopo. Pessoa, Coletivo e Organização continuam `draft`.

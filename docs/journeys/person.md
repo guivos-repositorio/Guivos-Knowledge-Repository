@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.14.0
+version: 0.15.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -39,6 +39,7 @@ related:
   - UXA-100-A1
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-101
 normative: false
 ---
 
@@ -59,13 +60,13 @@ Home pública
 → experiência recorrente e continuidades autorizadas
 ```
 
-A UXA-097 valida integralmente a continuidade `PER-007 → PER-008`. A primeira variante de Hoje não presume avanço, mudança anterior, urgência ou conteúdo comercial e usa somente condição confirmada, autorizada e vigente.
+A UXA-097 valida integralmente `PER-007 → PER-008`. A primeira variante de Hoje não presume avanço, mudança anterior, urgência ou conteúdo comercial e usa somente condição confirmada, autorizada e vigente.
 
 A jornada completa permanece `draft`: `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` ainda não estão validadas ponta a ponta.
 
-## 2. Descoberta de oportunidades validada como continuidade
+## 2. Descoberta de oportunidades e saída consciente
 
-A UXA-098 fecha a continuidade entre descoberta territorial e Detalhe:
+A UXA-098 fecha a continuidade entre descoberta territorial e Detalhe; a UXA-101 fecha V4 até a fronteira externa:
 
 ```text
 PER-201 — Mapa
@@ -74,25 +75,39 @@ PER-201 — Mapa
 
 PER-201 → TRN-204 → PER-203 — Detalhe
 PER-202 → TRN-211 → PER-203 — Detalhe
+
+PER-203
+→ “Ver como participar”
+→ estado de revisão de saída em PER-203
+→ confirmar destino/responsável/dados e limites
+→ TRN-205
+→ BND-001 — autoridade externa
 ```
 
 Regras integradas:
 
 - Mapa e Lista preservam contexto de atuação, região, busca, filtros, versão conhecida, seleção e permissões territoriais aplicáveis;
-- a alternância não cria autorização, personalização ou relevância;
 - Mapa e Lista conduzem à mesma oportunidade lógica em `PER-203`;
-- o Detalhe revalida o estado material vigente antes de ação substantiva;
-- expiração, pausa, indisponibilidade ou mudança de condição prevalecem sobre cartões obsoletos;
+- o Detalhe revalida estado material vigente antes de ação substantiva;
 - abrir o Detalhe não equivale a interesse, inscrição, recomendação ou evolução;
-- retorno preserva o contexto aplicável sem alterar consentimento ou ordenação.
+- selecionar `Ver como participar` ainda não sai da Guivos: abre estado de revisão dentro de `PER-203`;
+- a revisão identifica explicitamente ambiente externo e responsável;
+- a Pessoa vê o que acompanha ou não acompanha a transição;
+- continuar exige ação afirmativa e revalidação do destino conhecido/autorizado;
+- destino ausente, inválido ou materialmente alterado bloqueia redirecionamento silencioso;
+- `Voltar ao detalhe` é caminho legítimo e sem penalidade;
+- alcançar `BND-001` transfere autoridade ao terceiro; a Guivos não presume inscrição, reserva, compra ou contratação concluída;
+- retornar posteriormente não presume resultado externo.
 
-O efeito externo posterior permanece em `TRN-205` e não foi validado pela UXA-098.
+Referência visual reformulada e revalidada pela UXA-101:
+
+![Detalhe e revisão de saída](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
+
+[Visualizar SVG](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
 
 ## 3. Planos como etapa transversal canônica
 
 A UXA-100-A3 promove **Planos** como etapa canonicamente registrada da jornada da Pessoa. Ela não substitui Hoje, Explorar, Mapa ou Detalhe e não transforma assinatura em requisito para acessar oportunidades públicas.
-
-Superfícies:
 
 ```text
 PER-301 — Planos e comparação
@@ -104,9 +119,9 @@ PER-301 — Planos e comparação
         └── TRN-405 → PER-301
 ```
 
-As cinco transições estão **localmente validadas** no pacote UXA-100. Isso não comprova gateway, cobrança real, proration ou execução técnica de entitlement.
+As cinco transições estão **localmente validadas**; isso não comprova gateway, cobrança real, proration ou execução técnica de entitlement.
 
-Entrada voluntária continua prevista por Conta/Configurações. Como essa área genérica ainda não possui ID único no registro, a UXA-100-A3 não inventa uma transição de origem.
+Entrada voluntária continua prevista por Conta/Configurações. Como essa área genérica ainda não possui ID único no registro, a UXA-100-A3 não inventa transição de origem.
 
 Entrada contextual legítima:
 
@@ -115,34 +130,19 @@ correspondência personalizada adicional após cota Free
 → prévia limitada da camada personalizada
 ├── Explorar oportunidades públicas
 ├── Ver no Mapa
-└── Conhecer planos
-    → PER-301
+└── Conhecer planos → PER-301
 ```
-
-A superfície específica de correspondência personalizada também não recebe ID novo nesta frente; o estado funciona como gatilho contextual documentado.
-
-Referências canônicas:
-
-![Pessoa — Planos](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
-
-[Visualizar SVG](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
 
 Regras de jornada:
 
-- a Pessoa pode acessar Planos voluntariamente sem atingir qualquer limite;
-- `Guivos Free` permanece um plano real, funcional e não degradado artificialmente;
-- após a cota de correspondências completas, somente a camada personalizada adicional pode ficar limitada;
+- `Guivos Free` permanece plano real e funcional;
 - oportunidade pública, Explorar e Mapa permanecem acessíveis;
-- `PER-301` apresenta matriz geral, ganho incremental `Free → Plus → Pro` e delta direto plano atual → alvo;
-- comparação incremental não cria superfície própria;
-- recorrência, preço mensal/anual e data de início aparecem antes da confirmação em `PER-302`;
+- comparação geral e incremental pertencem a `PER-301`;
+- recorrência, preço e consequência aparecem antes da confirmação;
 - assinatura não amplia consentimento ou escopo de dados automaticamente;
-- `PER-303` mostra o que será perdido ou reduzido antes de downgrade/cancelamento;
-- cancelamento mostra data efetiva, plano posterior e interrupção da renovação;
-- `PER-304` diferencia sucesso e falha, preservando Free/estado anterior quando não houver confirmação;
+- downgrade/cancelamento explicita capacidades e data efetiva;
+- falha preserva Free/estado anterior quando não houver confirmação;
 - pagamento não altera relevância, confiança, posição orgânica nem garantia de evolução.
-
-A UXA-100-A2 forneceu a validação funcional visual; a UXA-100-A3 forneceu a identidade canônica.
 
 ## 4. Pessoa em Coletivos
 
@@ -168,48 +168,35 @@ Explorar Coletivos
 | Central de Atualizações | validado | UXA-093/094/095/096 | UXA-094; versão corrente UXA-096 | TRN-110 e TRN-111 integralmente validadas |
 | Início do Participante | validado | UXA-095/096 | UXA-096 | TRN-111 integralmente validada |
 
-## 5. Compreensão inicial → Hoje validada
-
-`PER-007 → TRN-007 → PER-008` permanece integralmente validada pela UXA-097. Personalização utiliza somente base confirmada, autorizada e vigente; Hoje continua acessível sem personalização; repetição não cria avanço nem efeito duplicado.
-
-## 6. Continuidades de Coletivos preservadas
-
-- `COL-003 → PER-105 aprovado → PER-106` permanece validada em `TRN-108`;
-- `PER-106 → PER-107` permanece validada em `TRN-110`;
-- `PER-107 → PER-108` permanece validada em `TRN-111`.
-
-## 7. Proteções preservadas
+## 5. Proteções preservadas
 
 - conclusão da compreensão inicial não equivale a avanço humano;
 - personalização não é condição para acessar Hoje;
 - oportunidade publicada não é automaticamente recomendada;
 - proximidade não equivale a relevância;
-- patrocínio não compra relevância funcional;
-- plano pago não compra relevância funcional;
-- atingir cota personalizada do Free não oculta o catálogo público;
-- Mapa/Lista não criam autorização territorial nova;
+- patrocínio e plano pago não compram relevância funcional;
+- atingir cota personalizada do Free não oculta catálogo público;
 - abrir Detalhe não cria obrigação de agir;
+- sair para ambiente externo não amplia consentimento nem transfere a jornada pessoal por padrão;
 - compartilhar pouco permanece legítimo;
 - acompanhar não equivale a participar;
 - convite não cria vínculo;
-- pausa não reduz reputação;
 - aprovação não cria função, autoridade ou presença obrigatória;
 - estado canônico vigente prevalece sobre renderização anterior.
 
-## 8. Estado da vista
+## 6. Estado da vista
 
 Esta vista permanece `draft` porque:
 
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` ainda são parciais;
-- `TRN-205` permanece parcial para efeito externo de oportunidade;
 - as transições de Planos são locais e não representam cobrança ponta a ponta;
-- as entradas genéricas de Conta/Configurações e de correspondência personalizada ainda não possuem transições canônicas de origem;
+- entradas genéricas de Conta/Configurações e correspondência personalizada ainda não possuem transições canônicas de origem;
 - estados P0B adicionais permanecem separados;
 - áreas internas especializadas a partir de `PER-108` não foram validadas como conjunto;
 - outras continuidades da jornada pessoal ainda não foram examinadas ponta a ponta.
 
-O status `draft` não invalida referências locais e transições específicas já validadas.
+`TRN-205` deixa de ser motivo de `draft`: a UXA-101 a valida integralmente **até `BND-001`**, sem validar o processo externo posterior.
 
-## 9. Estado da frente de Planos
+## 7. Estado atual
 
-A fragmentação e promoção canônica da Pessoa foi concluída pela UXA-100-A3 em `PER-301` a `PER-304` e `TRN-401` a `TRN-405`. Validação de cobrança real e futuras entradas contextuais permanece separada. Nenhuma próxima UXA é iniciada automaticamente.
+V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. A frente de Planos está canonicamente registrada. V5 não foi iniciada e nenhuma etapa de Engenharia de Produto foi autorizada automaticamente.

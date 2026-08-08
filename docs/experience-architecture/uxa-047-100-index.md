@@ -1,128 +1,28 @@
 ---
 id: GKR-UXA-047-100-INDEX-001
-title: Índice das Frentes UXA-047 a UXA-100
-status: active
-version: 2.6.0
+title: Índice Histórico das Frentes UXA-047 a UXA-100
+status: superseded
+version: 2.6.1
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
   - GKR-STATE-001
-  - UXA-100
 related:
-  - UXA-047
-  - UXA-055
-  - UXA-070
-  - UXA-085
-  - UXA-090
-  - UXA-091
-  - UXA-092
-  - UXA-093
-  - UXA-094
-  - UXA-095
-  - UXA-096
-  - UXA-097
-  - UXA-098
-  - UXA-099
   - UXA-100
-  - M7.87
+  - GKR-UXA-047-101-INDEX-001
 normative: false
 ---
 
-# Índice das Frentes UXA-047 a UXA-100
+# Índice Histórico das Frentes UXA-047 a UXA-100
 
-## 1. Opportunity Boost
+Este índice preserva o snapshot encerrado pela UXA-100 e foi **supersedido** por [Índice das Frentes UXA-047 a UXA-101](uxa-047-101-index.md).
 
-- [UXA-047](uxa-047-opportunity-boost-active-campaign-management-functional-validation-and-reformulation.md)
-- [UXA-048](uxa-048-opportunity-boost-aggregated-report-low-fidelity-wireframes.md)
-- [UXA-049](uxa-049-opportunity-boost-aggregated-report-functional-validation-and-reformulation.md)
-- [UXA-050](uxa-050-opportunity-boost-complete-wireframe-set-functional-validation.md)
-- [UXA-051](uxa-051-opportunity-boost-mobile-advertiser-configuration-low-fidelity-wireframes.md)
-- [UXA-052](uxa-052-opportunity-boost-mobile-advertiser-configuration-functional-validation-and-reformulation.md)
-- [UXA-053](uxa-053-opportunity-boost-mobile-active-campaign-management-low-fidelity-wireframes.md)
-- [UXA-054](uxa-054-opportunity-boost-mobile-active-campaign-management-functional-validation-and-reformulation.md)
-- [UXA-055](uxa-055-opportunity-boost-residual-states-low-fidelity-wireframes.md)
-- [UXA-099](uxa-099-opportunity-boost-residual-states-functional-validation-and-reformulation.md)
+O estado aqui registrado corresponde ao marco anterior `M7.87 / GKR-STATE 2.26.0` e não deve ser usado como autoridade corrente após a UXA-101.
 
-## 2. Coletivos
+Para navegação e estado atual, utilizar:
 
-- [UXA-056](uxa-056-collective-discovery-public-profile-and-participation-functional-contract.md)
-- [UXA-057](uxa-057-evaluation-and-reputation-functional-contract.md)
-- [UXA-058](uxa-058-interactions-recommendations-connections-functional-contract.md)
-- [UXA-059](uxa-059-collective-wireframe-program-and-prioritization.md)
-- [UXA-060](uxa-060-collective-explore-and-search-mobile-low-fidelity-wireframes.md)
-- [UXA-061](uxa-061-collective-explore-and-search-mobile-functional-validation.md)
-- [UXA-062](uxa-062-collective-public-profile-mobile-low-fidelity-wireframes.md)
-- [UXA-063](uxa-063-collective-public-profile-mobile-functional-validation.md)
-- [UXA-064](uxa-064-collective-participation-review-request-mobile-low-fidelity-wireframes.md)
-- [UXA-065](uxa-065-collective-participation-review-request-mobile-functional-validation.md)
-- [UXA-066](uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md)
-- [UXA-067](uxa-067-collective-pending-request-mobile-functional-validation.md)
-- [UXA-086](uxa-086-collective-responsible-overview-low-fidelity-wireframe.md)
-- [UXA-087](uxa-087-collective-responsible-overview-functional-validation-and-reformulation.md)
-- [UXA-088](uxa-088-collective-request-management-low-fidelity-wireframes.md)
-- [UXA-089](uxa-089-collective-request-management-functional-validation-and-reformulation.md)
-- [UXA-090](uxa-090-integrated-collective-request-handoffs-functional-validation.md)
-- [UXA-091](uxa-091-my-collectives-materialization-and-post-approval-continuity-refinement.md)
-- [UXA-092](uxa-092-my-collectives-functional-validation-and-post-approval-continuity-revalidation.md)
-- [UXA-093](uxa-093-collective-updates-center-materialization.md)
-- [UXA-094](uxa-094-collective-updates-center-functional-validation-and-trn110-revalidation.md)
-- [UXA-095](uxa-095-participant-home-materialization-and-trn111-refinement.md)
-- [UXA-096](uxa-096-participant-home-functional-validation-per107-revalidation-and-trn111-integrated-validation.md)
+- [Índice UXA-047 a UXA-101](uxa-047-101-index.md);
+- [UXA-101 — Saída Consciente para Fronteira Externa](uxa-101-conscious-external-boundary-validation.md);
+- [Registro do Estado Atual](../project/current-state-register.md).
 
-## 3. Expressão, jornadas e continuidades integradas
-
-- [UXA-068](uxa-068-guided-current-moment-text-voice-low-fidelity-wireframes.md)
-- [UXA-069](uxa-069-guided-current-moment-functional-validation-and-reformulation.md)
-- [UXA-070](uxa-070-journey-simulation-environment-functional-program.md)
-- [UXA-071](uxa-071-integrated-journeys-map-materialization.md)
-- [UXA-072](uxa-072-integrated-journeys-functional-validation-and-reformulation.md)
-- [UXA-073](uxa-073-integrated-journeys-reformulation-navigation-and-synchronization.md)
-- [UXA-074](uxa-074-integrated-journeys-functional-revalidation.md)
-- [UXA-075](uxa-075-integrated-journeys-controlled-promotion-and-post-validation-synchronization.md)
-- [UXA-076](uxa-076-integrated-journeys-granular-transition-and-surface-registry.md)
-- [UXA-077](uxa-077-granular-registry-functional-validation.md)
-- [UXA-078](uxa-078-controlled-granular-registry-reformulation.md)
-- [UXA-079](uxa-079-granular-registry-functional-revalidation.md)
-- [UXA-080](uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md)
-- [UXA-081](uxa-081-integrated-screen-gallery-and-coverage-audit.md)
-- [UXA-082](uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md)
-- [UXA-083](uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md)
-- [UXA-084](uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md)
-- [UXA-085](uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md)
-- [UXA-097](uxa-097-initial-understanding-to-today-integrated-continuity-validation.md)
-- [UXA-098](uxa-098-publication-discovery-map-list-detail-integrated-validation.md)
-
-## 4. Planos, cobrança e ciclo de vida
-
-- [UXA-100 — Programa Funcional, Materialização, Validação e Promoção de Planos](uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md)
-- [UXA-100-A1 — Integração às Jornadas e Telas Dedicadas](uxa-100-a1-plans-journey-integration-and-dedicated-screens.md)
-- [UXA-100-A2 — Auditoria Funcional](uxa-100-a2-plans-screens-and-journeys-functional-audit.md)
-- [UXA-100-A3 — Fragmentação e Promoção Canônica](uxa-100-a3-plans-canonical-fragmentation-and-promotion.md)
-
-## 5. Estado sincronizado
-
-| Elemento | Estado proposto pela UXA-100-A3 |
-|---|---|
-| intervalo indexado | UXA-047 a UXA-100 |
-| Registro do Estado Atual | **2.26.0** |
-| marco | **M7.87** |
-| última frente proposta | **UXA-100** |
-| SVGs | **118** |
-| associações individuais | **118** |
-| perfis documentais | **31** |
-| validações funcionais vigentes | **118** |
-| pendentes de validação específica | **0** |
-| superfícies/estados/fronteiras | **53** |
-| transições documentais | **54** |
-| IDs granulares com referência visual | **42 de 53** |
-| responsabilidades sem SVG dedicado | **9** |
-| próxima UXA | **UXA-101 não iniciada** |
-| Engenharia de Produto | pausada antes de W0-01 |
-
-## 6. Resultado da UXA-100
-
-A UXA-100 cria a frente transversal de Planos. A A1 integra telas e jornadas; a A2 aprova 9/9 SVGs após seis reformas; a A3 fragmenta a experiência em quatro famílias por participante, cria `BND-002`, registra 17 transições e promove os nove SVGs ao catálogo canônico.
-
-## 7. Limites
-
-Este índice não autoriza cobrança real, gateway, processo Enterprise/Scale posterior a `BND-002`, efeito externo de oportunidades, promoção das jornadas ou Engenharia de Produto. `TRN-416` e `TRN-426` permanecem parciais e **UXA-101 não foi iniciada**.
+A preservação deste arquivo é histórica e evita quebra de referências anteriores; seu status `superseded` elimina concorrência com o índice vigente.
