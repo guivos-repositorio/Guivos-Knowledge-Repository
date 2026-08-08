@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.17.0
+version: 0.18.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 depends_on:
   - UXA-083
@@ -30,6 +30,7 @@ depends_on:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-GAPS-001
 normative: false
@@ -44,6 +45,8 @@ Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos *
 ## 2. Estado do instrumento
 
 A UXA-101 reformula e revalida `uxa-007-opportunity-detail-mobile.svg` sem criar novo ativo ou perfil. O conjunto permanece em **118 associações** e **31 perfis**. O perfil R08 passa a incluir explicitamente o estado de revisão consciente antes de `BND-001`.
+
+A reconciliação de nomenclatura de 2026-08-08 preserva os mesmos perfis e associações, corrigindo apenas a leitura de `BND-002`: trata-se de fronteira genérica de contratação/dimensionamento assistido, não de processo exclusivo de Enterprise ou Scale.
 
 ## 3. Perfis de rastreabilidade
 
@@ -78,8 +81,8 @@ A UXA-101 reformula e revalida `uxa-007-opportunity-detail-mobile.svg` sem criar
 | R27 | PER-107 | TRN-110 ou atualização autorizada | PER-105/PER-106; TRN-111 | retornar/ajustar preferência | P0B separado | UXA-094; versão corrente UXA-096; TRN-111 UXA-096 |
 | R28 | PER-108 | TRN-111 | áreas internas próprias do Coletivo | voltar à Central; pausar/sair conforme fluxo próprio | estados P0B/P1 e áreas internas | UXA-096; TRN-111 UXA-096 |
 | R29 | PER-301/302/303/304 | acesso voluntário ou limite contextual legítimo | TRN-401 a 405 | manter plano, voltar, tentar novamente, preservar Free | gateway/proration e entradas externas específicas não materializados | **UXA-100-A2; promoção UXA-100-A3** |
-| R30 | COL-301/302/303/304 | área administrativa ou limite legítimo | TRN-411 a 416 | manter plano, aguardar, ajustar excedentes, retornar | processo Enterprise após BND-002 e cobrança real | **UXA-100-A2; promoção UXA-100-A3** |
-| R31 | ORG-301/302/303/304 | área administrativa ou capacidade legítima | TRN-421 a 426 | manter plano, ajustar capacidade, retornar | processo Scale após BND-002 e cobrança real | **UXA-100-A2; promoção UXA-100-A3** |
+| R30 | COL-301/302/303/304 | área administrativa ou limite legítimo | TRN-411 a 416 | manter plano, aguardar, ajustar excedentes, retornar | contratação/dimensionamento assistido após BND-002 e cobrança real | **UXA-100-A2; promoção UXA-100-A3** |
+| R31 | ORG-301/302/303/304 | área administrativa ou capacidade legítima | TRN-421 a 426 | manter plano, ajustar capacidade, retornar | contratação/dimensionamento assistido após BND-002 e cobrança real | **UXA-100-A2; promoção UXA-100-A3** |
 
 ## 4. Associação individual dos 118 SVGs
 
@@ -215,6 +218,8 @@ A UXA-101 reformula e revalida `uxa-007-opportunity-detail-mobile.svg` sem criar
 - `BND-001` e `BND-002` permanecem sem SVG por definição de fronteira;
 - validação visual não atribui à Guivos comportamento posterior às fronteiras.
 
-## 6. Estado após UXA-101
+## 6. Estado após reconciliação
 
-O perfil R08 está revalidado para o mesmo SVG canônico do Detalhe, agora com o estado de revisão consciente de saída. `TRN-205` é validada até `BND-001`; o processo externo posterior permanece fora do escopo. Pessoa, Coletivo e Organização continuam `draft`.
+O perfil R08 está revalidado para o mesmo SVG canônico do Detalhe, agora com o estado de revisão consciente de saída. `TRN-205` é validada até `BND-001`; o processo externo posterior permanece fora do escopo.
+
+R30 e R31 preservam suas transições e maturidade. A lacuna posterior a `BND-002` é descrita genericamente como contratação/dimensionamento assistido, sem reatribuir Enterprise/Scale a Coletivo ou Organização. Pessoa, Coletivo e Organização continuam `draft`.
