@@ -84,7 +84,7 @@ A UXA-101 reformula o SVG de Detalhe de Oportunidade para incluir a revisão con
 
 | Registro | Quantidade | Estado vigente após UXA-101 |
 |---|---:|---|
-| superfícies/estados/responsabilidades/fronteiras | **53** | `active` 0.16.0 |
+| superfícies/estados/responsabilidades/fronteiras | **53** | `active` 0.17.0 |
 | transições documentais | **54** | `active` 0.18.0 |
 | catálogo canônico | **118 SVGs** | `active` 0.26.0 |
 | matriz de rastreabilidade | **118 SVGs / 31 perfis** | `active` 0.17.0 |
