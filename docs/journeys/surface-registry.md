@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.17.0
+version: 0.18.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-070
   - UXA-080
@@ -26,6 +26,7 @@ related:
   - UXA-100-A2
   - UXA-100-A3
   - UXA-101
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
@@ -39,7 +40,7 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-A versão 0.17.0 não adiciona IDs. Ela registra a revalidação de `PER-203` e o exame de `BND-001` pela UXA-101, preservando a revisão pré-saída como estado da mesma superfície.
+A versão 0.18.0 não adiciona IDs nem altera maturidades. Ela sincroniza a autoridade conceitual dos planos e corrige `BND-002` como fronteira genérica de contratação/dimensionamento assistido, preservando a contagem total de 53 IDs.
 
 ## 2. Convenções
 
@@ -85,7 +86,7 @@ A versão 0.17.0 não adiciona IDs. Ela registra a revalidação de `PER-203` e 
 | GKR-SURF-PER-201 | Mapa de Oportunidades | Pessoa/visitante | móvel e computador | validado | UXA-004 | UXA-024 | UXA-025; integração UXA-098 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-202 | Lista de Oportunidades | Pessoa/visitante | móvel e computador | validado | UXA-004 | UXA-028 | UXA-029; integração UXA-098 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-203 | Detalhe de Oportunidade + revisão consciente de saída | Pessoa/visitante | móvel e computador | **validado** | UXA-004; UXA-007 | UXA-007; reformulação UXA-101 | UXA-012; entradas UXA-098; **saída UXA-101** | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-301 | Planos e comparação da Pessoa | Pessoa autenticada | móvel/protegido | **validado** | GEM-004-A1/A2; UXA-100-A3 | UXA-100/A1 | UXA-100-A2/A3 | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-301 | Planos e comparação da Pessoa | Pessoa autenticada | móvel/protegido | **validado** | GEM-004-A1/A2; GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3 | UXA-100/A1 | UXA-100-A2/A3 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-302 | revisão de contratação da Pessoa | Pessoa/pagador autorizado | móvel/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-303 | gestão de downgrade e cancelamento da Pessoa | Pessoa titular | móvel/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-304 | resultado e recuperação de plano/cobrança da Pessoa | Pessoa titular | móvel/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Pessoa](surface-registry-person-details.md) |
@@ -97,7 +98,7 @@ A versão 0.17.0 não adiciona IDs. Ela registra a revalidação de `PER-203` e 
 | GKR-SURF-COL-006 | atividades, consultas e decisões | responsável | protegido | programado | UXA-059 | parcial/dispersa | — | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-007 | proteção e moderação | responsável | protegido | contratado | UXA-058 | parcial | — | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-008 | relações institucionais | responsável | protegido | contratado | UXA-019 | — | — | [Coletivo](surface-registry-collective-details.md) |
-| GKR-SURF-COL-301 | Planos e comparação do Coletivo | responsável autorizado | computador/protegido | **validado** | GEM-004-A1/A2; UXA-100-A3 | UXA-100/A1 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
+| GKR-SURF-COL-301 | Planos e comparação do Coletivo — Livre · Mobiliza · Impacta · Rede | responsável autorizado | computador/protegido | **validado** | GEM-004-A1/A2; GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3 | UXA-100/A1 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-302 | revisão de contratação do Coletivo | responsável financeiro autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-303 | gestão de downgrade e cancelamento do Coletivo | responsável autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-304 | resultado e recuperação de plano/cobrança do Coletivo | responsável autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
@@ -108,7 +109,7 @@ A versão 0.17.0 não adiciona IDs. Ela registra a revalidação de `PER-203` e 
 | GKR-SURF-ORG-005 | avaliação e negociação bilateral | representantes | protegido | contratado | UXA-019 | — | — | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-006 | relação ativa e revisão | representantes | protegido | contratado | UXA-019 | — | — | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-007 | resultados e evidências institucionais | representante | protegido | indeterminado | referências dispersas | — | — | [Organização](surface-registry-organization-details.md) |
-| GKR-SURF-ORG-301 | Planos e comparação da Organização | representante autorizado | computador/protegido | **validado** | GEM-004-A1/A2; UXA-100-A3 | UXA-100/A1 | UXA-100-A2/A3 | [Organização](surface-registry-organization-details.md) |
+| GKR-SURF-ORG-301 | Planos e comparação da Organização — Conecta · Eleva · Transforma | representante autorizado | computador/protegido | **validado** | GEM-004-A1/A2; GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3 | UXA-100/A1 | UXA-100-A2/A3 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-302 | revisão de contratação da Organização | autoridade financeira identificada | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-303 | gestão de downgrade e cancelamento da Organização | representante autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-304 | resultado e recuperação de plano/cobrança da Organização | representante autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Organização](surface-registry-organization-details.md) |
@@ -118,17 +119,33 @@ A versão 0.17.0 não adiciona IDs. Ela registra a revalidação de `PER-203` e 
 | GKR-SURF-COM-004 | gestão ativa/relatório | anunciante | protegido | validado | UXA-038 | UXA-046/048/053 | UXA-047/049/054 | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-COM-005 | estados residuais Opportunity Boost | anunciante/Pessoa | misto | **validado** | UXA-055 | UXA-055 | UXA-099 | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-BND-001 | fronteira de destino externo de oportunidade | Pessoa → terceiro | externo | **examinado** | UXA-004/007/101 | sem tela por definição | **UXA-101; TRN-205 validada até a fronteira** | [Comercial](surface-registry-commercial-boundary-details.md) |
-| GKR-SURF-BND-002 | fronteira comercial Enterprise/Scale | Coletivo/Organização → processo comercial | externo ao autoatendimento | parcial | UXA-100-A3 | sem tela por definição | parcial | [Comercial](surface-registry-commercial-boundary-details.md) |
+| GKR-SURF-BND-002 | fronteira de contratação/dimensionamento assistido | Coletivo/Organização → processo assistido quando necessário | externo ao autoatendimento | parcial | GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3 | sem tela por definição | parcial; TRN-416/TRN-426 preservadas | [Comercial](surface-registry-commercial-boundary-details.md) |
 
-## 5. Efeito da UXA-101
+## 5. Autoridade de planos e BND-002
+
+A leitura vigente é:
+
+```text
+Pessoa: Free · Plus · Pro
+Coletivo: Livre · Mobiliza · Impacta · Rede
+Organização: Conecta · Eleva · Transforma
+Guivos Business: Start · Growth · Scale · Enterprise
+```
+
+Guivos Business é produto especializado e não recebe novos IDs neste registro.
+
+`BND-002` não é plano, produto, checkout ou fronteira exclusiva de Enterprise/Scale. Ele identifica a necessidade de contratação/dimensionamento assistido. A correção não altera contagem nem maturidade.
+
+## 6. Preservações
 
 - total de IDs permanece **53**;
-- `PER-203` é revalidada no recorte de saída externa;
+- `PER-203` permanece validada no recorte de saída externa;
 - a revisão consciente não recebe ID adicional;
-- `BND-001` passa de não examinado para examinado;
-- nenhuma tela é criada para `BND-001`;
-- processo posterior à fronteira permanece fora da autoridade Guivos.
+- `BND-001` permanece examinado, sem tela própria;
+- `BND-002` permanece parcial, sem tela própria;
+- `TRN-416` e `TRN-426` permanecem parciais;
+- nenhuma jornada ou Engenharia de Produto é promovida.
 
-## 6. Estado
+## 7. Estado
 
 O registro permanece `active` como inventário granular. O status não promove as jornadas completas nem representa implementação.

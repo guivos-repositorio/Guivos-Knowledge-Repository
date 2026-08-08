@@ -1,88 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
   <title id="title">Coletivo — tela dedicada de Planos</title>
-  <desc id="desc">Wireframe desktop candidato da área Planos do Coletivo com plano atual, comparação Livre Gestão Impacto Enterprise, benefícios incrementais, capacidade, preços mensal/anual e condições de contratação.</desc>
+  <desc id="desc">Wireframe desktop da área Planos do Coletivo com plano atual, comparação Livre Mobiliza Impacta Rede, benefícios incrementais, capacidade, preços mensal/anual e condições de contratação.</desc>
   <rect width="1440" height="1080" fill="#ffffff"/>
   <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
     <text x="60" y="54" font-size="14">Coletivo · Configurações</text>
     <text x="60" y="98" font-size="30" font-weight="700">Planos</text>
-    <text x="60" y="126" font-size="14">Compare capacidade operacional sem confundir assinatura com relevância ou impacto.</text>
+    <text x="60" y="126" font-size="14">Compare capacidade operacional sem confundir assinatura com relevância, mérito ou impacto.</text>
   </g>
-
   <g fill="none" stroke="#111111" stroke-width="2">
-    <rect x="60" y="158" width="1320" height="102" rx="14"/>
-    <rect x="60" y="292" width="1320" height="48" rx="10"/>
-    <rect x="60" y="376" width="300" height="420" rx="14"/>
-    <rect x="390" y="376" width="300" height="420" rx="14"/>
-    <rect x="720" y="376" width="300" height="420" rx="14"/>
-    <rect x="1050" y="376" width="330" height="420" rx="14"/>
-    <rect x="86" y="728" width="248" height="44" rx="8"/>
-    <rect x="416" y="728" width="248" height="44" rx="8"/>
-    <rect x="746" y="728" width="248" height="44" rx="8"/>
-    <rect x="1078" y="728" width="274" height="44" rx="8"/>
-    <rect x="60" y="918" width="1320" height="108" rx="12"/>
+    <rect x="60" y="158" width="1320" height="102" rx="14"/><rect x="60" y="292" width="1320" height="48" rx="10"/>
+    <rect x="60" y="376" width="300" height="420" rx="14"/><rect x="390" y="376" width="300" height="420" rx="14"/><rect x="720" y="376" width="300" height="420" rx="14"/><rect x="1050" y="376" width="330" height="420" rx="14"/>
+    <rect x="86" y="728" width="248" height="44" rx="8"/><rect x="416" y="728" width="248" height="44" rx="8"/><rect x="746" y="728" width="248" height="44" rx="8"/><rect x="1078" y="728" width="274" height="44" rx="8"/><rect x="60" y="918" width="1320" height="108" rx="12"/>
   </g>
-
   <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
-    <text x="86" y="187" font-size="12">PLANO ATUAL</text>
-    <text x="86" y="218" font-size="20" font-weight="700">Coletivo Livre · R$ 0</text>
-    <text x="430" y="218" font-size="13">Uso do ciclo: 1/1 atividade · 1/1 oportunidade · 2/2 ativas</text>
-    <text x="86" y="244" font-size="12">Publicações existentes continuam visíveis e gerenciáveis mesmo quando a cota é atingida.</text>
-
-    <text x="92" y="322" font-size="13" font-weight="700">Mensal</text>
-    <text x="238" y="322" font-size="13">Anual · pagamento antecipado</text>
-    <text x="1178" y="322" font-size="12" text-decoration="underline">Gerenciar cobrança</text>
-
-    <text x="86" y="412" font-size="20" font-weight="700">Livre</text>
-    <text x="86" y="442" font-size="15">R$ 0</text>
-    <text x="86" y="480" font-size="12">1 atividade gratuita/mês</text>
-    <text x="86" y="504" font-size="12">1 oportunidade gratuita/mês</text>
-    <text x="86" y="528" font-size="12">2 publicações ativas</text>
-    <text x="86" y="552" font-size="12">2 administradores · 1 núcleo/unidade</text>
-    <text x="86" y="576" font-size="12">indicadores básicos · 30 dias</text>
-    <text x="86" y="600" font-size="12">sem publicação paga</text>
-    <text x="166" y="756" font-size="12">Plano atual</text>
-
-    <text x="416" y="412" font-size="20" font-weight="700">Gestão</text>
-    <text x="416" y="442" font-size="15">R$ 89,90/mês</text>
-    <text x="416" y="462" font-size="11">R$ 899/ano*</text>
-    <text x="416" y="486" font-size="12" font-weight="700">Tudo do Livre +</text>
-    <text x="416" y="510" font-size="12">4 atividades + 4 oportunidades/mês</text>
-    <text x="416" y="534" font-size="12">6 publicações ativas · até 5 admins</text>
-    <text x="416" y="558" font-size="12">publicações e inscrições pagas</text>
-    <text x="416" y="582" font-size="12">cupons + exportação básica · integrações limitadas</text>
-    <text x="416" y="606" font-size="12">1 núcleo/unidade · suporte prioritário</text>
-    <text x="504" y="756" font-size="12">Escolher Gestão</text>
-
-    <text x="746" y="412" font-size="20" font-weight="700">Impacto</text>
-    <text x="746" y="442" font-size="15">R$ 249,90/mês</text>
-    <text x="746" y="462" font-size="11">R$ 2.499/ano*</text>
-    <text x="746" y="486" font-size="12" font-weight="700">Tudo do Gestão +</text>
-    <text x="746" y="510" font-size="12">15 atividades + 15 oportunidades/mês</text>
-    <text x="746" y="534" font-size="12">20 publicações ativas · até 15 admins</text>
-    <text x="746" y="558" font-size="12">até 5 núcleos ou programas</text>
-    <text x="746" y="582" font-size="12">indicadores históricos e de impacto</text>
-    <text x="746" y="606" font-size="12">parceiros, integrações e exportação completa</text>
-    <text x="832" y="756" font-size="12">Escolher Impacto</text>
-
-    <text x="1078" y="412" font-size="20" font-weight="700">Enterprise</text>
-    <text x="1078" y="442" font-size="15">Sob consulta · contrato anual</text>
-    <text x="1078" y="486" font-size="12" font-weight="700">Tudo do Impacto +</text>
-    <text x="1078" y="510" font-size="12">capacidade dimensionada por contrato</text>
-    <text x="1078" y="534" font-size="12">múltiplos núcleos, unidades e territórios</text>
-    <text x="1078" y="558" font-size="12">API, SSO e integrações dedicadas</text>
-    <text x="1078" y="582" font-size="12">Power BI e dashboards personalizados</text>
-    <text x="1078" y="606" font-size="12">implantação assistida · gerente dedicado · SLA</text>
-    <text x="1155" y="756" font-size="12">Solicitar proposta</text>
-
-    <text x="60" y="842" font-size="13" font-weight="700">Comparação direta</text>
-    <text x="60" y="870" font-size="12">Ao escolher um plano, mostrar somente o delta entre o plano atual e o plano alvo, além da matriz completa.</text>
-    <text x="60" y="900" font-size="12">Downgrade deve informar capacidades que serão reduzidas/removidas e exigir tratamento do excesso antes de efetivar.</text>
-
-    <text x="86" y="944" font-size="12" font-weight="700">Condições antes de contratar</text>
-    <text x="86" y="968" font-size="11">* preços anuais candidatos; recorrência/renovação, eventual desconto e data de início aparecem na revisão.</text>
-    <text x="86" y="990" font-size="11">Assinatura ≠ comissão/taxa/tributo de transação. Acesso financiado, quando elegível, é apresentado separadamente.</text>
-    <text x="86" y="1012" font-size="11">Plano pago amplia capacidade; não compra relevância orgânica, legitimidade, confiança ou impacto.</text>
-
-    <text x="60" y="1058" font-size="10">Materialização candidata; valores, limites e operação comercial permanecem sujeitos à validação governada.</text>
+    <text x="86" y="187" font-size="12">PLANO ATUAL</text><text x="86" y="218" font-size="20" font-weight="700">Coletivo Livre · R$ 0</text><text x="430" y="218" font-size="13">Uso do ciclo: 1/1 atividade · 1/1 oportunidade · 2/2 ativas</text><text x="86" y="244" font-size="12">Publicações existentes continuam visíveis e gerenciáveis mesmo quando a cota é atingida.</text>
+    <text x="92" y="322" font-size="13" font-weight="700">Mensal</text><text x="238" y="322" font-size="13">Anual · pagamento antecipado</text><text x="1178" y="322" font-size="12" text-decoration="underline">Gerenciar cobrança</text>
+    <text x="86" y="412" font-size="20" font-weight="700">Livre</text><text x="86" y="442" font-size="15">R$ 0</text><text x="86" y="480" font-size="12">1 atividade gratuita/mês</text><text x="86" y="504" font-size="12">1 oportunidade gratuita/mês</text><text x="86" y="528" font-size="12">2 publicações ativas</text><text x="86" y="552" font-size="12">2 administradores · 1 núcleo/unidade</text><text x="86" y="576" font-size="12">indicadores básicos · 30 dias</text><text x="86" y="600" font-size="12">sem publicação paga</text><text x="166" y="756" font-size="12">Plano atual</text>
+    <text x="416" y="412" font-size="20" font-weight="700">Mobiliza</text><text x="416" y="442" font-size="15">R$ 89,90/mês</text><text x="416" y="462" font-size="11">R$ 899/ano*</text><text x="416" y="486" font-size="12" font-weight="700">Tudo do Livre +</text><text x="416" y="510" font-size="12">4 atividades + 4 oportunidades/mês</text><text x="416" y="534" font-size="12">6 publicações ativas · até 5 admins</text><text x="416" y="558" font-size="12">publicações e inscrições pagas</text><text x="416" y="582" font-size="12">cupons + exportação básica · integrações limitadas</text><text x="416" y="606" font-size="12">1 núcleo/unidade · suporte prioritário</text><text x="494" y="756" font-size="12">Escolher Mobiliza</text>
+    <text x="746" y="412" font-size="20" font-weight="700">Impacta</text><text x="746" y="442" font-size="15">R$ 249,90/mês</text><text x="746" y="462" font-size="11">R$ 2.499/ano*</text><text x="746" y="486" font-size="12" font-weight="700">Tudo do Mobiliza +</text><text x="746" y="510" font-size="12">15 atividades + 15 oportunidades/mês</text><text x="746" y="534" font-size="12">20 publicações ativas · até 15 admins</text><text x="746" y="558" font-size="12">até 5 núcleos ou programas</text><text x="746" y="582" font-size="12">indicadores históricos e de impacto</text><text x="746" y="606" font-size="12">parceiros, integrações e exportação completa</text><text x="832" y="756" font-size="12">Escolher Impacta</text>
+    <text x="1078" y="412" font-size="20" font-weight="700">Rede</text><text x="1078" y="442" font-size="15">Sob consulta · contrato anual</text><text x="1078" y="486" font-size="12" font-weight="700">Tudo do Impacta +</text><text x="1078" y="510" font-size="12">capacidade dimensionada conforme necessidade</text><text x="1078" y="534" font-size="12">múltiplos núcleos, unidades e territórios</text><text x="1078" y="558" font-size="12">API, SSO e integrações dedicadas</text><text x="1078" y="582" font-size="12">Power BI e dashboards personalizados</text><text x="1078" y="606" font-size="12">implantação assistida · gerente dedicado · SLA</text><text x="1147" y="756" font-size="12">Solicitar dimensionamento</text>
+    <text x="60" y="842" font-size="13" font-weight="700">Comparação direta</text><text x="60" y="870" font-size="12">Ao escolher um plano, mostrar somente o delta entre o plano atual e o plano alvo, além da matriz completa.</text><text x="60" y="900" font-size="12">Downgrade deve informar capacidades que serão reduzidas/removidas e exigir tratamento do excesso antes de efetivar.</text>
+    <text x="86" y="944" font-size="12" font-weight="700">Condições antes de contratar</text><text x="86" y="968" font-size="11">* preços anuais candidatos; recorrência/renovação, eventual desconto e data de início aparecem na revisão.</text><text x="86" y="990" font-size="11">Assinatura ≠ comissão/taxa/tributo de transação. Acesso financiado, quando elegível, é apresentado separadamente.</text><text x="86" y="1012" font-size="11">Plano amplia capacidade; não compra relevância orgânica, legitimidade, confiança, mérito ou impacto.</text>
+    <text x="60" y="1058" font-size="10">Materialização sincronizada à autoridade Livre · Mobiliza · Impacta · Rede; valores e limites permanecem candidatos.</text>
   </g>
 </svg>
