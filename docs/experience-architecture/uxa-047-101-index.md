@@ -18,6 +18,7 @@ related:
   - UXA-098
   - UXA-099
   - UXA-100
+  - UXA-100-A4
   - UXA-101
   - M7.88
 normative: false
@@ -92,8 +93,11 @@ normative: false
 
 - [UXA-100 — Programa Funcional, Materialização, Validação e Promoção de Planos](uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md)
 - [UXA-100-A1 — Integração às Jornadas e Telas Dedicadas](uxa-100-a1-plans-journey-integration-and-dedicated-screens.md)
-- [UXA-100-A2 — Auditoria Funcional e sincronização taxonômica](uxa-100-a2-plans-screens-and-journeys-functional-audit.md)
+- [UXA-100-A2 — Auditoria Funcional](uxa-100-a2-plans-screens-and-journeys-functional-audit.md)
 - [UXA-100-A3 — Fragmentação e Promoção Canônica](uxa-100-a3-plans-canonical-fragmentation-and-promotion.md)
+- [UXA-100-A4 — Reconciliação Taxonômica e Revalidação](uxa-100-a4-plan-taxonomy-reconciliation-and-revalidation.md)
+
+`UXA-100/A1/A2/A3` permanecem preservadas como autoridades históricas de programa, materialização, auditoria e promoção. A `UXA-100-A4` atua como overlay posterior de nomenclatura e interpretação, sem reescrever esses contratos.
 
 Taxonomia vigente da frente:
 
@@ -110,8 +114,8 @@ Guivos Business `Start · Growth · Scale · Enterprise` permanece produto espec
 | intervalo indexado | UXA-047 a UXA-101 |
 | Registro do Estado Atual | **2.27.1** |
 | marco | **M7.88** |
-| última frente proposta | **UXA-101** |
-| patch | sincronização taxonômica de Planos; sem nova UXA |
+| última frente principal | **UXA-101** |
+| overlay | **UXA-100-A4** — reconciliação taxonômica; sem nova UXA principal |
 | SVGs | **118** |
 | associações individuais | **118** |
 | perfis documentais | **31** |
@@ -119,7 +123,7 @@ Guivos Business `Start · Growth · Scale · Enterprise` permanece produto espec
 | pendentes de validação específica | **0** |
 | superfícies/estados/fronteiras | **53** |
 | transições documentais | **54** |
-| próxima UXA | **UXA-102 não iniciada** |
+| próxima UXA principal | **UXA-102 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
 
 ## 6. Resultado preservado da UXA-101
@@ -128,10 +132,11 @@ A UXA-101 reforma o SVG de `PER-203`, valida `TRN-205` até `BND-001`, confirma 
 
 ## 7. Efeito do patch 2.27.1
 
-- nenhuma UXA adicional é criada;
+- nenhuma UXA principal adicional é criada;
 - nenhum marco é promovido;
-- seis dos nove SVGs UXA-100 são sincronizados apenas em nomenclatura/cópia;
+- seis dos nove SVGs UXA-100 são sincronizados apenas em nomenclatura/microcópia;
 - os três SVGs de Pessoa permanecem intactos;
+- `UXA-100-A4` revalida os seis ativos modificados por equivalência funcional;
 - `BND-002` passa a significar genericamente contratação/dimensionamento assistido;
 - `TRN-416` e `TRN-426` permanecem parciais;
 - preços/capacidades de participantes são preservados;
