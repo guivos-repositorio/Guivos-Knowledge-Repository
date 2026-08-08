@@ -1,9 +1,9 @@
 ---
 title: Guivos Market Validation System
 status: active
-version: 1.3.1
+version: 1.4.0
 owner: Guivos
-last_updated: 2026-07-19
+last_updated: 2026-08-08
 ---
 
 # Guivos Market Validation System
@@ -35,7 +35,9 @@ Transformar hipóteses internas em perguntas testáveis, coletar evidências de 
 - [VAL-005 — Plano de Amostragem](VAL-005-plano-de-amostragem.md) — versão 1.2.1;
 - [VAL-006 — Dashboard de Indicadores](VAL-006-dashboard-de-indicadores.md) — versão 1.3.1;
 - [VAL-007 — Critérios de Decisão](VAL-007-criterios-de-decisao.md) — versão 1.3.1;
-- [VAL-008 — Sinais Comportamentais](VAL-008-sinais-comportamentais.md) — versão 1.1.1.
+- [VAL-008 — Sinais Comportamentais](VAL-008-sinais-comportamentais.md) — versão 1.1.1;
+- [VAL-009 — Estado de Execução e Gates de Evidência](VAL-009-status-de-execucao-e-gates-de-evidencia.md) — versão 1.0.0;
+- [VAL-010 — Contrato de Intake, Evidência e Registro de Rodadas](VAL-010-contrato-de-intake-e-registro-de-rodadas.md) — versão 1.0.0.
 
 ## Sequência oficial
 
@@ -44,9 +46,25 @@ flowchart LR
     A["Hipótese"] --> B["Pesquisa curta"] --> C["Entrevistas"] --> D["Resultados"] --> E["Dashboard"] --> F["Decisão"] --> G["Ajustes"] --> H["Nova validação"]
 ```
 
-## Estado operacional
+A partir de VAL-009/010, a execução também precisa respeitar:
 
-- instrumento público em versão `2.1.0`;
+```text
+método definido
+→ instrumento identificado
+→ aplicação comprovada
+→ pré-teste comprovado
+→ base recebida
+→ base válida
+→ qualidade avaliada
+→ métricas reproduzíveis
+→ decisão registrada
+```
+
+Nenhuma seta pode ser preenchida apenas por intenção, divulgação ou percepção geral.
+
+## Estado metodológico
+
+- instrumento público documental em versão `2.1.0`;
 - duração estimada de 3 a 5 minutos;
 - 19 perguntas;
 - uma pergunta aberta obrigatória e uma opcional;
@@ -65,6 +83,8 @@ flowchart LR
 - coleta geográfica por estado ou Distrito Federal;
 - mínimo de 200 respostas válidas para decisão inicial;
 - meta preferencial de 500 respostas válidas.
+
+Esses itens constituem **autoridade metodológica** e não comprovam que a aplicação, o pré-teste, a coleta ou qualquer resultado já tenham ocorrido.
 
 ## Decisões editoriais da versão 2.1.0
 
@@ -96,9 +116,18 @@ A primeira aplicação valida a proposta B2C da Guivos, com foco em:
 
 Confiança operacional, recorrência, retenção, recomendação e pagamento serão validados posteriormente por protótipos, beta e comportamento real.
 
-## Entregáveis operacionais pendentes
+## Estado factual da execução
 
-- pré-teste do VAL-002 2.1.0 com 10 a 15 participantes;
-- ajuste somente de problemas comprovados pelo pré-teste;
-- formulário definitivo para aplicação;
-- planilha automática para recepção, tratamento e cálculo dos KPIs, IGV e gates.
+No checkpoint de 2026-08-08, o GKR não possui evidência integrada suficiente para declarar:
+
+- pré-teste concluído;
+- versão efetivamente publicada em uma rodada identificada;
+- período real de aplicação;
+- quantidade de respostas recebidas ou válidas;
+- KPIs ou IGV calculados;
+- decisão Go/Go com ajustes/Pivot/No-Go;
+- product-market fit;
+- disposição a pagar;
+- retenção ou recorrência.
+
+`VAL-009` e `VAL-010` definem exatamente o pacote de evidência necessário para promover esses fatos quando a base real estiver disponível.
