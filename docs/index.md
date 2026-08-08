@@ -26,7 +26,9 @@ A declaração oficial está no [Registro do Estado Atual](project/current-state
 | Resultados Empresariais canônicos | 0 |
 | Próxima UXA | **UXA-102 não iniciada** |
 
-A UXA-101 continua validando `TRN-205` até `BND-001`. O patch 2.27.1 não cria nova frente: sincroniza a taxonomia `Pessoa: Free · Plus · Pro`, `Coletivo: Livre · Mobiliza · Impacta · Rede`, `Organização: Conecta · Eleva · Transforma` e registra `Guivos Business: Start · Growth · Scale · Enterprise` como taxonomia conceitual do produto especializado.
+A UXA-101 reformula o Detalhe de Oportunidade sem criar nova tela, valida `TRN-205` até `BND-001` e confirma que qualquer inscrição, reserva, compra, contratação ou outro resultado posterior permanece sob autoridade externa.
+
+O patch 2.27.1 não cria nova frente principal: `GEM-004-A3` define a taxonomia `Pessoa: Free · Plus · Pro`, `Coletivo: Livre · Mobiliza · Impacta · Rede`, `Organização: Conecta · Eleva · Transforma` e `Guivos Business: Start · Growth · Scale · Enterprise`; `UXA-100-A4` reconcilia essa taxonomia com os mesmos nove ativos UXA-100, sem alterar contagens ou maturidades.
 
 **Organização Transforma ≠ Guivos Business Enterprise.**
 
@@ -36,6 +38,8 @@ A UXA-101 continua validando `TRN-205` até `BND-001`. O patch 2.27.1 não cria 
 - [Arquitetura da Experiência](experience-architecture/index.md)
 - [UXA-101 — Saída Consciente para Fronteira Externa](experience-architecture/uxa-101-conscious-external-boundary-validation.md)
 - [UXA-100 — Planos, Cobrança e Pagamentos](experience-architecture/uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md)
+- [UXA-100-A4 — Reconciliação Taxonômica e Revalidação](experience-architecture/uxa-100-a4-plan-taxonomy-reconciliation-and-revalidation.md)
+- [Especificação Canônica da Taxonomia Global de Planos](economic-model/gem-004-a3-global-plan-taxonomy-and-conceptual-specification.md)
 - [Galeria Canônica de Planos](journeys/screen-gallery-plans-billing.md)
 - [Galeria Visual Integrada](journeys/screen-gallery.md)
 - [Matriz de Rastreabilidade Visual por SVG](journeys/screen-gallery-traceability-matrix.md)
