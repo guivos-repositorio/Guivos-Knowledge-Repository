@@ -8929,6 +8929,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#relacao-f2-f1-c05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relação F2 → F1-C05
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gates-de-capacidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gates de capacidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#limites-desta-versao" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -8975,6 +8997,7 @@
 </ul>
 <h2 id="relacao-com-capacidade">Relação com capacidade<a class="headerlink" href="#relacao-com-capacidade" title="Permanent link">&para;</a></h2>
 <p>Custos em degrau deverão explicitar o gatilho de capacidade. Ganhos de escala não serão presumidos quando suporte, risco, qualidade ou infraestrutura crescem de forma diferente do volume.</p>
+<p>Capacidade funcional, role-equivalent, headcount, contratação e custo são dimensões distintas. Uma obrigação de cobertura não comprova vínculo, gasto ou disponibilidade operacional.</p>
 <h2 id="rateio">Rateio<a class="headerlink" href="#rateio" title="Permanent link">&para;</a></h2>
 <p>Custos compartilhados exigem driver causal ou justificativa gerencial, versão e reconciliação. Rateio não altera o custo total consolidado nem transfere ownership funcional.</p>
 <h2 id="estados-de-evidencia-de-valor">Estados de evidência de valor<a class="headerlink" href="#estados-de-evidencia-de-valor" title="Permanent link">&para;</a></h2>
@@ -8989,25 +9012,39 @@
 </ul>
 <p><code>TBD</code> não equivale a zero. Valor zero exige evidência explícita de ausência de custo, obrigação ou desembolso aplicável.</p>
 <h2 id="baseline-m0m6">Baseline M0–M6<a class="headerlink" href="#baseline-m0m6" title="Permanent link">&para;</a></h2>
-<p>A primeira aplicação governada deste modelo é a <a href="../gem-f1-m0-m6-cost-baseline/">Baseline de Custos M0–M6 — F1</a>.</p>
-<p>Ela estabelece:</p>
+<p>A aplicação governada deste modelo possui três camadas complementares:</p>
+<ol>
+<li><a href="../gem-f1-m0-m6-cost-baseline/">Baseline de Custos M0–M6 — F1</a>: pools, drivers, ativação e evidência;</li>
+<li><a href="../gem-f1b-m0-m6-cost-calibration/">Calibração Numérica M0–M6 — F1-B</a>: benchmarks públicos rastreáveis sem promoção a orçamento;</li>
+<li><a href="../gem-f2-m0-m6-capacity-and-headcount-baseline/">Baseline de Capacidade, Papéis e Headcount M0–M6 — F2</a>: cobertura funcional, role-equivalents e gates de capacidade.</li>
+</ol>
+<p>F2 estabelece como piso funcional de referência os três role-equivalents dedicados explicitamente suportados pelo GTM — Growth/GTM, comercial institucional/B2B e ecossistema/parcerias — além de coberturas compartilhadas, especialistas fracionários e capacidades condicionais.</p>
+<p>Esse piso <strong>não equivale a três empregados</strong> e não define HC total, vínculo ou custo.</p>
+<h2 id="relacao-f2-f1-c05">Relação F2 → F1-C05<a class="headerlink" href="#relacao-f2-f1-c05" title="Permanent link">&para;</a></h2>
+<p>O pool <code>F1-C05 — equipe e serviços profissionais</code> passa a estar <strong>parcialmente parametrizado em capacidade</strong>, mas permanece monetariamente <code>TBD</code>.</p>
+<p>Para converter capacidade em custo serão necessários, em incremento posterior:</p>
 <ul>
-<li>granularidade mensal de M0 a M6;</li>
-<li>separação entre preparação M0–M3 e lançamento M4–M6 em Belo Horizonte;</li>
-<li>pools de custo derivados da arquitetura GEM vigente;</li>
-<li>comportamento, drivers e estados de ativação;</li>
-<li>contrato de evidência para posterior preenchimento numérico;</li>
-<li>dependência explícita do F2 para dimensionamento de headcount e custo de equipe.</li>
+<li>delivery mode por papel;</li>
+<li>sobreposição admissível;</li>
+<li>quantidade efetiva de pessoas/prestadores;</li>
+<li>regime/vínculo candidato;</li>
+<li>remuneração/preço de serviço;</li>
+<li>encargos, benefícios e impostos aplicáveis;</li>
+<li>competência mensal.</li>
 </ul>
-<p>A ativação de uma linha não autoriza gasto nem comprova valor. Enquanto linhas materiais permanecerem <code>TBD</code>, burn, runway e necessidade de capital não poderão ser apresentados como completos.</p>
+<p>Até lá, não existe burn completo de pessoas.</p>
+<h2 id="gates-de-capacidade">Gates de capacidade<a class="headerlink" href="#gates-de-capacidade" title="Permanent link">&para;</a></h2>
+<p>A passagem para lançamento não poderá ocorrer apenas pelo calendário. Coberturas essenciais deverão possuir owner identificável e capacidade suficiente para não operar em estado <code>constrained</code>, <code>saturated</code>, <code>degraded</code> ou <code>unavailable</code>.</p>
+<p>Sinais como backlog crescente, tempo de resposta degradado, ausência de owner, falhas de moderação, sobrecarga de segurança ou concentração crítica deverão acionar revisão de capacidade antes de aumento de volume.</p>
 <h2 id="limites-desta-versao">Limites desta versão<a class="headerlink" href="#limites-desta-versao" title="Permanent link">&para;</a></h2>
 <p>Esta versão não aprova:</p>
 <ul>
-<li>valores de custo;</li>
+<li>valores completos de custo;</li>
 <li>orçamento;</li>
-<li>headcount;</li>
+<li>HC interno total;</li>
 <li>salários ou regimes de contratação;</li>
 <li>fornecedor, vendor, tier ou região tecnológica;</li>
+<li>Product Engineering;</li>
 <li>rateios definitivos;</li>
 <li>burn;</li>
 <li>runway;</li>
