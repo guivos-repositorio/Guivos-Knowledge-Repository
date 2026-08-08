@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.13.0
+version: 0.14.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -38,6 +38,7 @@ related:
   - UXA-100
   - UXA-100-A1
   - UXA-100-A2
+  - UXA-100-A3
 normative: false
 ---
 
@@ -87,23 +88,25 @@ Regras integradas:
 
 O efeito externo posterior permanece em `TRN-205` e não foi validado pela UXA-098.
 
-## 3. Planos como etapa transversal candidata
+## 3. Planos como etapa transversal canônica
 
-A UXA-100 introduz **Planos** como etapa transversal da jornada da Pessoa. Ela não substitui Hoje, Explorar, Mapa ou Detalhe e não transforma assinatura em requisito para acessar oportunidades públicas.
+A UXA-100-A3 promove **Planos** como etapa canonicamente registrada da jornada da Pessoa. Ela não substitui Hoje, Explorar, Mapa ou Detalhe e não transforma assinatura em requisito para acessar oportunidades públicas.
 
-Entradas previstas:
+Superfícies:
 
 ```text
-Conta / Configurações
-→ Planos
-→ plano atual + uso
-→ comparar Free / Plus / Pro
-→ escolher, manter ou gerenciar plano
-→ revisão de contratação quando aplicável
-→ pagamento simulado
-→ sucesso ou falha
-→ retorno ao contexto anterior
+PER-301 — Planos e comparação
+├── TRN-401 → PER-302 — revisão de contratação
+│   └── TRN-402 → PER-304 — resultado/recuperação
+│       └── TRN-405 → PER-301
+└── TRN-403 → PER-303 — downgrade/cancelamento
+    └── TRN-404 → PER-304
+        └── TRN-405 → PER-301
 ```
+
+As cinco transições estão **localmente validadas** no pacote UXA-100. Isso não comprova gateway, cobrança real, proration ou execução técnica de entitlement.
+
+Entrada voluntária continua prevista por Conta/Configurações. Como essa área genérica ainda não possui ID único no registro, a UXA-100-A3 não inventa uma transição de origem.
 
 Entrada contextual legítima:
 
@@ -113,10 +116,12 @@ correspondência personalizada adicional após cota Free
 ├── Explorar oportunidades públicas
 ├── Ver no Mapa
 └── Conhecer planos
-    → Planos
+    → PER-301
 ```
 
-A tela candidata dedicada é:
+A superfície específica de correspondência personalizada também não recebe ID novo nesta frente; o estado funciona como gatilho contextual documentado.
+
+Referências canônicas:
 
 ![Pessoa — Planos](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
 
@@ -128,15 +133,16 @@ Regras de jornada:
 - `Guivos Free` permanece um plano real, funcional e não degradado artificialmente;
 - após a cota de correspondências completas, somente a camada personalizada adicional pode ficar limitada;
 - oportunidade pública, Explorar e Mapa permanecem acessíveis;
-- a tela apresenta matriz geral e ganho incremental `Free → Plus → Pro`;
-- se o plano atual e o alvo forem conhecidos, deve existir comparação direta, por exemplo `Free → Pro`;
-- recorrência, preço mensal/anual e data de início aparecem antes da confirmação;
+- `PER-301` apresenta matriz geral, ganho incremental `Free → Plus → Pro` e delta direto plano atual → alvo;
+- comparação incremental não cria superfície própria;
+- recorrência, preço mensal/anual e data de início aparecem antes da confirmação em `PER-302`;
 - assinatura não amplia consentimento ou escopo de dados automaticamente;
-- downgrade mostra o que será perdido ou reduzido antes da confirmação;
+- `PER-303` mostra o que será perdido ou reduzido antes de downgrade/cancelamento;
 - cancelamento mostra data efetiva, plano posterior e interrupção da renovação;
+- `PER-304` diferencia sucesso e falha, preservando Free/estado anterior quando não houver confirmação;
 - pagamento não altera relevância, confiança, posição orgânica nem garantia de evolução.
 
-A UXA-100-A2 aprovou funcionalmente esta etapa no escopo candidato após reformulação da tela dedicada e do fluxo de pagamento. Ela ainda não possui ID canônico de superfície ou transição.
+A UXA-100-A2 forneceu a validação funcional visual; a UXA-100-A3 forneceu a identidade canônica.
 
 ## 4. Pessoa em Coletivos
 
@@ -196,13 +202,14 @@ Esta vista permanece `draft` porque:
 
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` ainda são parciais;
 - `TRN-205` permanece parcial para efeito externo de oportunidade;
-- a etapa Planos da UXA-100 foi aprovada funcionalmente apenas como candidata e ainda não possui superfície/transição canônica;
+- as transições de Planos são locais e não representam cobrança ponta a ponta;
+- as entradas genéricas de Conta/Configurações e de correspondência personalizada ainda não possuem transições canônicas de origem;
 - estados P0B adicionais permanecem separados;
 - áreas internas especializadas a partir de `PER-108` não foram validadas como conjunto;
 - outras continuidades da jornada pessoal ainda não foram examinadas ponta a ponta.
 
 O status `draft` não invalida referências locais e transições específicas já validadas.
 
-## 9. Próxima evolução possível
+## 9. Estado da frente de Planos
 
-A etapa Planos já foi auditada pela UXA-100-A2. A próxima decisão desta frente é definir, em ato governado separado, se os ativos devem ser fracionados e quais superfícies/transições canônicas serão criadas. Nenhuma promoção é automática.
+A fragmentação e promoção canônica da Pessoa foi concluída pela UXA-100-A3 em `PER-301` a `PER-304` e `TRN-401` a `TRN-405`. Validação de cobrança real e futuras entradas contextuais permanece separada. Nenhuma próxima UXA é iniciada automaticamente.
