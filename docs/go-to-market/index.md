@@ -41,9 +41,6 @@ O GTM não redefine produtos, preços ou arquitetura econômica. Ele consome:
 - `GEM-006` e `GEM-006-PARTNER-ROLE-TAXONOMY-001` para papéis e relações de parceiros;
 - `GEM-009` para contratos de métricas;
 - `GEM-010` para cenários, drivers e separação entre receita, caixa, funding e valuation;
-- P3 para naming, marca e ativos digitais;
-- P5 para identidade institucional e separação entre entidades;
-- P6 para verdade operacional, privacidade e superfícies legais;
 - decisões históricas de planejamento registradas em conversas-fontes, quando explicitamente classificadas como históricas ou candidatas.
 
 ## 4. Baselines históricas recuperadas
@@ -115,25 +112,30 @@ relação destinada a entregar oportunidade, benefício, programa, serviço ou c
 → não entra no KPI de Parcerias Estratégicas
 ```
 
-Uma mesma pessoa jurídica pode manter relações diferentes com a Guivos, mas cada relação deve ser classificada separadamente. A relação com usuários ou Coletivos nunca é reutilizada para inflar o KPI de Parcerias Estratégicas.
+Portanto, uma faculdade que oferece cursos, uma academia que oferece possibilidades de evolução em saúde, uma empresa que disponibiliza capacitação, uma clínica que disponibiliza atendimento elegível ou qualquer entidade que se relacione com Pessoas ou Coletivos para entregar valor dentro da Journey atua nessa relação como **Organização**, não como Parceiro Estratégico.
+
+Uma mesma pessoa jurídica pode manter relações diferentes com a Guivos, mas cada relação deve ser classificada separadamente. Se houver um acordo corporativo independente com a Guivos para distribuição, integração, infraestrutura, entrada territorial ou outra capacidade empresarial, essa relação poderá ser governada como Parceria Estratégica; a relação com usuários ou Coletivos permanece Organização e nunca é contabilizada no KPI de Parcerias Estratégicas.
 
 ### 5.2 Valor estratégico não exige receita direta
 
 Parceria Estratégica **não é sinônimo de fonte de receita**. Sua contribuição pode ser financeira ou não financeira.
 
-São resultados legítimos, entre outros:
+São resultados legítimos de uma Parceria Estratégica, entre outros:
 
-- alcance e distribuição;
-- escala nacional ou internacional;
-- infraestrutura;
-- tecnologia e integração;
-- apoio operacional ou institucional;
-- divulgação e presença;
-- acesso a mercados, redes e territórios;
-- redução de custo, risco, tempo ou fricção;
-- fortalecimento de reputação, legitimidade ou capacidade de execução.
+- ampliar alcance e distribuição da Guivos;
+- acelerar escala nacional ou internacional;
+- fornecer infraestrutura crítica;
+- habilitar tecnologia ou integração relevante;
+- apoiar operação, implantação ou expansão;
+- ampliar divulgação e presença institucional;
+- abrir acesso a mercados, redes ou territórios;
+- reduzir custo, tempo, risco ou fricção operacional;
+- fortalecer reputação, legitimidade ou capacidade de execução;
+- viabilizar cooperação empresarial de longo prazo.
 
-Receita direta, quando existir, deverá ser tratada pelo modelo econômico aplicável, mas não é requisito para que uma parceria seja estratégica.
+Receita direta, quando existir, deverá ser tratada pelo modelo econômico aplicável, mas **não é requisito para que uma parceria seja estratégica**.
+
+A meta de `500 Parcerias Estratégicas ativas` em M60 não representa 500 Organizações adicionais, 500 oportunidades ou 500 fontes de receita. Representa relações corporativas ativas que ampliam capacidade real da Guivos.
 
 ## 6. Estrutura do domínio
 
@@ -144,7 +146,7 @@ Receita direta, quando existir, deverá ser tratada pelo modelo econômico aplic
 | `GTM-003` | [Baseline de Pagantes, Receita e Crescimento](gtm-003-payer-revenue-and-growth-target-baseline.md) | usuários, pagantes por plano e faturamento candidato |
 | `GTM-004` | [Investimento, Valuation e Modelo para Investidores](gtm-004-investment-valuation-and-investor-model.md) | valuation, rodada, participação e sensibilidade de retorno |
 | `GTM-005` | [Governança, Métricas e Cadência](gtm-005-governance-metrics-and-review-cadence.md) | ownership, revisões, gates e status |
-| `GTM-006` | [Horizontes de Meta e Marcos de Crescimento](gtm-006-target-horizons-and-milestones.md) | curto M0–M12, médio M13–M36 e longo M37–M60 |
+| `GTM-006` | [Horizontes de Meta e Marcos de Crescimento](gtm-006-target-horizons-and-milestones.md) | curto M0–M12, médio M13–M36 e longo M37–M60, com checkpoints |
 | `GTM-007` | [Governança de Internacionalização e Programa Territorial](gtm-007-internationalization-and-territorial-governance.md) | estados T0–T9, readiness e separação entre intenção, piloto e mercado ativo |
 | `GTM-008` | [Portugal — Gates de Prontidão, Piloto e Escala](gtm-008-portugal-pilot-readiness-gates.md) | gates PT0–PT9 para Lisboa, Porto e futura replicação europeia |
 
@@ -167,19 +169,19 @@ A versão usada externamente deverá distinguir fatos realizados, metas internas
 
 ## 8. Princípios
 
-1. **densidade antes de dispersão**;
-2. **oferta e demanda crescem juntas**;
-3. **parceria estratégica é corporativa**;
-4. **parceria estratégica amplia capacidade, não substitui oferta**;
-5. **valor estratégico não depende de receita direta**;
-6. **crescimento não compra relevância**;
-7. **receita protege propósito e continuidade**;
-8. **projeção não é promessa**;
-9. **horizonte não substitui checkpoint**;
-10. **metas são cumulativas**;
-11. **capital não é receita**;
-12. **valuation não é fato contábil**;
-13. **internacionalização exige gate**;
+1. **densidade antes de dispersão** — a Guivos deve criar massa crítica local antes de pulverizar aquisição;
+2. **oferta e demanda crescem juntas** — Pessoas não são adquiridas isoladamente da disponibilidade de Coletivos, Organizações e oportunidades úteis;
+3. **parceria estratégica é corporativa** — sua relação primária é com a Guivos enquanto empresa; relações voltadas diretamente a Pessoas ou Coletivos pertencem à camada de Organizações/ofertas;
+4. **parceria estratégica amplia capacidade, não substitui oferta** — alianças estratégicas fortalecem alcance, escala, infraestrutura, integração, apoio, divulgação, acesso ou eficiência, sem inflar artificialmente a oferta da Journey;
+5. **valor estratégico não depende de receita direta** — uma aliança pode ser estratégica por alcance, escala, infraestrutura, apoio ou outra capacidade material mesmo sem gerar faturamento direto;
+6. **crescimento não compra relevância** — metas comerciais não alteram ranking, legitimidade ou evidência de impacto;
+7. **receita protege propósito e continuidade** — monetização não deve induzir comportamento contrário à evolução das pessoas;
+8. **projeção não é promessa** — toda meta numérica possui data-base, premissas e status;
+9. **horizonte não substitui checkpoint** — curto, médio e longo prazo organizam a estratégia; M6, M12, M24, M36, M48 e M60 preservam a precisão operacional;
+10. **metas são cumulativas** — números de um checkpoint representam o estado esperado acumulado e não devem ser somados aos checkpoints anteriores;
+11. **capital não é receita** — aporte, dívida, faturamento, receita reconhecida e caixa permanecem separados;
+12. **valuation não é fato contábil** — é uma referência negocial sujeita a evidência, diligência e mercado;
+13. **internacionalização exige gate** — Portugal não é acionado apenas por calendário;
 14. **territorialidade exige verdade operacional** — acesso, marca, domínio ou usuário incidental não tornam um país mercado ativo;
 15. **piloto não é escala** — execução em Lisboa não autoriza Porto ou outro país sem nova decisão;
 16. **compliance é por papel real** — produto, entidade, fluxo e contraparte determinam a análise aplicável;
@@ -187,6 +189,6 @@ A versão usada externamente deverá distinguir fatos realizados, metas internas
 
 ## 9. Estado
 
-`draft — candidate planning baseline with P7 territorial governance; market evidence, operating capacity and explicit authorization pending`.
+`draft — candidate planning baseline with P7 territorial governance; calibration, market evidence, operating capacity and executive approval pending`.
 
 A criação deste domínio não inicia operação comercial, contratação de equipe, campanha, Product Engineering, rodada de investimento ou expansão internacional.
