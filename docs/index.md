@@ -2,20 +2,21 @@
 
 O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
-## Estado vigente proposto pela UXA-101
+## Estado vigente
 
-A declaração oficial está no [Registro do Estado Atual](project/current-state-register.md).
+A declaração transversal oficial está no [Registro do Estado Atual](project/current-state-register.md).
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` 2.27.0 |
+| Registro | `GKR-STATE-001` **2.28.0** |
 | Era | GE-2 — Knowledge |
-| Marco | M7.88 |
-| Última frente proposta | UXA-101 — saída consciente para fronteira externa |
-| Galeria visual | `active` 0.21.0; 118 SVGs |
-| Matriz por SVG | `active` 0.17.0; 118 associações e 31 perfis |
+| Marco funcional | **M7.88** — saída consciente para fronteira externa validada |
+| Última frente funcional | UXA-101 |
+| Sincronização temática | validações recentes integradas em 2026-08-08 |
+| Galeria visual | `active` 0.21.0; **118 SVGs** |
+| Matriz por SVG | `active` 0.17.0; **118 associações e 31 perfis** |
 | Validações funcionais vigentes | **118** |
-| Pendentes de validação específica | **0** |
+| Pendentes de validação específica de SVG | **0** |
 | Superfícies/estados/fronteiras | **53** |
 | Transições documentais | **54** |
 | IDs com referência visual | **42 de 53** |
@@ -23,31 +24,67 @@ A declaração oficial está no [Registro do Estado Atual](project/current-state
 | Fronteiras sem tela | 2 |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Resultados Empresariais canônicos | 0 |
-| Próxima UXA | **UXA-102 não iniciada** |
+| Próxima UXA | **UXA-102/V5 não iniciada** |
 
-A UXA-101 reformula o Detalhe de Oportunidade sem criar nova tela, valida `TRN-205` até `BND-001` e confirma que qualquer inscrição, reserva, compra, contratação ou outro resultado posterior permanece sob autoridade externa.
+A sincronização mais recente não criou nova UXA nem alterou as contagens funcionais. Ela integrou autoridades de nomenclatura, arquitetura de grafo, Produtos Especializados, marca/naming/ativos digitais, evidência de validação de mercado e o guardrail de propósito antes de incentivos.
 
-## Domínio de Go-to-Market, Growth & Capital
+## Atualização consolidada de 2026-08-08
 
-A baseline candidata para **lançamento, expansão geográfica, aquisição, vendas, captação de Coletivos e Organizações, parcerias, metas de pagantes, faturamento e valuation** está organizada no domínio [Guivos Go-to-Market, Growth & Capital](go-to-market/index.md).
+O registro auditável está em [Sincronização das Validações Recentes](project/validated-updates-synchronization-2026-08-08.md).
 
-Esse domínio conecta a estratégia **Belo Horizonte → São Paulo → Portugal** ao Guivos Economic Model e mantém realizado, meta aprovada, meta candidata e cenário explicitamente separados.
+A atualização incorporou:
+
+- **P1.1 — nomenclaturas legadas:** reconciliação e gate permanente;
+- **P2 — grafo:** Neo4j como tecnologia primária de referência, sem afirmar implantação;
+- **P8 — Produtos Especializados:** Journey, Mall, Travel, Business, Media, Intelligence e Ads rebaselineados contra as jornadas;
+- **P3 — marca/naming/ativos:** governança e modelo de evidência, sem presumir registros ou domínio controlado;
+- **P4 — validação de mercado:** gates E0–E7 para separar método, aplicação, base, métricas e decisão;
+- **GEM-005-A1:** propósito e evolução prevalecem sobre pontos, créditos e acumulação artificial.
+
+A [Baseline Governada de Ressincronização](project/repository-resynchronization-baseline-2026-08-08.md) mantém P5, P6, P7 e P9 explicitamente abertos quando ainda dependem de consolidação ou evidência.
+
+## Go-to-Market, Growth & Capital
+
+A baseline de lançamento, expansão geográfica, aquisição, vendas, captação de Coletivos e Organizações, Guivos Business, Parcerias Estratégicas, metas, receita e valuation está organizada em [Guivos Go-to-Market, Growth & Capital](go-to-market/index.md).
+
+A sequência territorial governada é **Belo Horizonte → São Paulo → Portugal**, com Lisboa como base inicial candidata e Porto posterior mediante gate.
+
+Metas e projeções permanecem classificadas como `candidate_target` ou `scenario` onde aplicável. Run-rate projetado não é receita realizada, pipeline não é faturamento e valuation interno não é oferta nem laudo independente.
+
+## Autoridades temáticas recentes
+
+- [ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo](adr/ADR-007-neo4j-primary-graph-reference.md)
+- [Arquitetura de Referência de Grafo e Inteligência](enterprise-architecture/graph-intelligence-reference-architecture.md)
+- [Política de Representação e Handoffs entre Produtos Especializados](product-architecture/specialized-products-experience-and-handoff-policy.md)
+- [Matriz de Integração entre Produtos Especializados e Jornadas](product-architecture/specialized-products-journey-integration-matrix.md)
+- [Marca, Naming e Ativos Digitais](governance-framework/brand-and-digital-assets-index.md)
+- [VAL-009 — Estado de Execução e Gates de Evidência](research/market-validation/VAL-009-status-de-execucao-e-gates-de-evidencia.md)
+- [VAL-010 — Contrato de Intake e Registro de Rodadas](research/market-validation/VAL-010-contrato-de-intake-e-registro-de-rodadas.md)
+- [GEM-005-A1 — Propósito Antes do Incentivo](economic-model/gem-005-a1-purpose-before-incentive-guardrail.md)
 
 ## Acesso rápido
 
+- [Registro do Estado Atual](project/current-state-register.md)
+- [Sincronização das Validações Recentes](project/validated-updates-synchronization-2026-08-08.md)
+- [Baseline de Ressincronização](project/repository-resynchronization-baseline-2026-08-08.md)
 - [Go-to-Market, Growth & Capital](go-to-market/index.md)
-- [Índice UXA-047 a UXA-101](experience-architecture/uxa-047-101-index.md)
+- [Arquitetura de Produtos](product-architecture/index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
-- [UXA-101 — Saída Consciente para Fronteira Externa](experience-architecture/uxa-101-conscious-external-boundary-validation.md)
-- [UXA-100 — Planos, Cobrança e Pagamentos](experience-architecture/uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md)
+- [Índice UXA-047 a UXA-101](experience-architecture/uxa-047-101-index.md)
 - [Galeria Visual Integrada](journeys/screen-gallery.md)
 - [Matriz de Rastreabilidade Visual por SVG](journeys/screen-gallery-traceability-matrix.md)
 - [Registro Granular de Transições](journeys/transition-registry.md)
 - [Jornadas Integradas](journeys/index.md)
 - [Lacunas](journeys/gaps.md)
+- [Guivos Economic Model](economic-model/index.md)
+- [Validação de Mercado](research/market-validation/README.md)
 - [Roadmap Arquitetural](roadmap.md)
 - [Índice de changelogs](project/changelog-index.md)
 
 ## Limites preservados
 
-Esta superfície não autoriza **UXA-102**, V5, Engenharia de Produto, cobrança real, gateway, processo de contratação/dimensionamento assistido após `BND-002` ou qualquer operação executada pelo terceiro após `BND-001`. `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais; Pessoa, Coletivo e Organização permanecem `draft`. O novo domínio GTM permanece `draft` e não transforma metas candidatas, valuation, funding ou faturamento projetado em compromissos aprovados. Em caso de divergência após integração do incremento, prevalece `GKR-STATE-001`.
+Esta superfície não autoriza **UXA-102/V5**, Engenharia de Produto, cobrança real, gateway, programa operacional de pontos/créditos, implantação de Neo4j, registro marcário presumido, resultado de pesquisa não evidenciado, Fundação Guivos juridicamente constituída, internacionalização operacional ou qualquer processo de terceiro após `BND-001`.
+
+`TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais. Pessoa, Coletivo e Organização permanecem jornadas `draft`.
+
+Em caso de divergência, prevalecem `GKR-STATE-001` e a autoridade temática específica mais recente.
