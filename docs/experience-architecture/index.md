@@ -2,12 +2,13 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.94.0
+version: 0.95.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - PAS-001
   - GLPA-001
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - UXA-001
   - UXA-055
   - UXA-056
@@ -88,6 +89,13 @@ A UXA-101 reformula e revalida o SVG canônico do Detalhe de Oportunidade sem al
 - publicação ou ativação não equivale a distribuição garantida;
 - plano pago não altera relevância, confiança, legitimidade, impacto ou evolução;
 - oportunidade pública não é ocultada para vender plano;
+- Pessoa utiliza `Free · Plus · Pro`;
+- Coletivo utiliza `Livre · Mobiliza · Impacta · Rede`;
+- Organização utiliza `Conecta · Eleva · Transforma`;
+- Guivos Business utiliza `Start · Growth · Scale · Enterprise` como Produto Especializado separado;
+- Organização ≠ Guivos Business;
+- Organização Transforma ≠ Guivos Business Enterprise;
+- `BND-002` representa contratação/dimensionamento assistido quando o autoatendimento não for suficiente e não pertence semanticamente a plano específico;
 - estado intermediário não cria superfície própria quando preserva responsabilidade, autoridade e decisão principal;
 - fronteira externa não é tela da Guivos;
 - validação até uma fronteira não valida comportamento de terceiro;
@@ -125,15 +133,15 @@ A frente consolida:
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active` 0.31.0 |
+| Jornadas Integradas | `active` 0.32.0 |
 | Jornada da Pessoa | `draft` 0.15.0 |
-| Jornada do Coletivo | `draft` 0.15.0 |
-| Jornada da Organização | `draft` 0.8.0 |
-| catálogo integrado | `active` 0.26.0 |
+| Jornada do Coletivo | `draft` 0.16.0 |
+| Jornada da Organização | `draft` 0.9.0 |
+| catálogo integrado | `active` 0.27.0 |
 | galeria visual | `active` 0.21.0 |
 | galeria de Planos | `active` 0.3.0 |
 | matriz por SVG | `active` 0.17.0 |
-| lacunas | `active` 0.26.0 |
+| lacunas | `active` 0.27.0 |
 | registro de superfícies | `active` 0.17.0 |
 | registro de transições | `active` 0.18.0 |
 | detalhamento comercial/fronteira | `active` 0.5.0 |
@@ -144,7 +152,7 @@ A frente consolida:
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` permanecem parciais;
 - `TRN-304`, `TRN-305` e `TRN-306` permanecem parciais na integração patrocinada;
 - `TRN-416/426` permanecem parciais;
-- gateway, cobrança real, proration e processo comercial após `BND-002` permanecem fora do escopo;
+- gateway, cobrança real, proration e processo de contratação/dimensionamento assistido após `BND-002` permanecem fora do escopo;
 - processo externo após `BND-001` permanece sob autoridade de terceiro;
 - Jornadas da Pessoa, Coletivo e Organização continuam `draft`.
 
@@ -161,4 +169,4 @@ V1 — encerrada pela UXA-097
 
 ## 10. Próxima evolução possível
 
-V5, cobrança real, processo Enterprise/Scale e demais validações exigem autorização separada. A auditoria transversal dos Produtos Especializados pode ocorrer como diagnóstico sem iniciar nova UXA ou Engenharia de Produto.
+V5, cobrança real, contratação/dimensionamento assistido após `BND-002` e demais validações exigem autorização separada. A auditoria transversal dos Produtos Especializados pode ocorrer como diagnóstico sem iniciar nova UXA ou Engenharia de Produto.
