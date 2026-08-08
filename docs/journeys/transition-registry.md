@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.16.0
+version: 0.17.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -22,6 +22,9 @@ related:
   - UXA-097
   - UXA-098
   - UXA-099
+  - UXA-100
+  - UXA-100-A2
+  - UXA-100-A3
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
   - GKR-JOURNEY-GAPS-001
@@ -34,7 +37,7 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.
 
-A versão 0.16.0 preserva as 37 transições. A UXA-099 valida `COM-005` como conjunto de estados, mas não promove automaticamente `GKR-TRN-305` ou qualquer outra transição.
+A versão 0.17.0 adiciona dezessete transições canônicas da frente de Planos após a fragmentação da UXA-100-A3. A validação funcional dos SVGs pela UXA-100-A2 sustenta validação local das ligações internas, mas não comprova gateway, execução financeira ou processo comercial Enterprise/Scale.
 
 ## 2. Convenções de estado
 
@@ -57,7 +60,8 @@ Validação integral documental não comprova implementação técnica.
 | Pessoa em Coletivos e operação do responsável | 13 |
 | Organização, oportunidades e relações bilaterais | 11 |
 | Opportunity Boost | 6 |
-| **Total** | **37** |
+| Planos, cobrança e ciclo de vida | 17 |
+| **Total** | **54** |
 
 ## 4. Jornada pessoal
 
@@ -128,7 +132,7 @@ Regras integradas:
 
 ### 6.1 Contrato V2 preservado
 
-A UXA-099 não altera as validações da UXA-098. Elegibilidade à descoberta continua sem garantia de impressão, posição, recomendação, alcance ou relevância individual. Mapa e Lista continuam modos da mesma consulta e o efeito externo posterior permanece em `GKR-TRN-205`.
+A UXA-100-A3 não altera as validações da UXA-098. Elegibilidade à descoberta continua sem garantia de impressão, posição, recomendação, alcance ou relevância individual. Mapa e Lista continuam modos da mesma consulta e o efeito externo posterior permanece em `GKR-TRN-205`.
 
 ### 6.2 Fronteira comercial preservada
 
@@ -149,17 +153,59 @@ Opportunity Boost não altera o contrato orgânico: pagamento amplia distribuiç
 
 A UXA-099 valida os destinos residuais de `COM-005`, inclusive erro, inventário, baixa oferta, falha material e controles da pessoa. Isso não comprova a ligação completa a partir de `COM-004` para todos os estados e contextos. `TRN-305` permanece parcial até validação específica de origem, destino, autoridade, efeito, retorno, interrupção e concorrência.
 
-## 8. Efeito da UXA-099
+## 8. Planos, cobrança e ciclo de vida
 
-- transições totais: 37;
-- nenhuma transição nova;
-- nenhuma transição muda de estado nesta frente;
-- `TRN-305` permanece parcial com lacuna refinada após validação de `COM-005`;
-- `TRN-203`, `TRN-204`, `TRN-210` e `TRN-211` permanecem integralmente validadas;
-- `TRN-205`, `TRN-304` e `TRN-306` permanecem fora do escopo;
-- `TRN-007`, `TRN-110` e `TRN-111` permanecem integralmente validadas;
-- oito handoffs integralmente validados no trecho de Coletivos permanecem inalterados.
+### 8.1 Pessoa
 
-## 9. Próximo gate
+| ID | Origem | Destino | Condição e efeito principal | Estado | Lacuna |
+|---|---|---|---|---|---|
+| GKR-TRN-401 | PER-301 | PER-302 | selecionar Plus/Pro afirmativamente e abrir revisão com preço, recorrência, pagador, beneficiário e início | **localmente validada** | gateway e execução financeira não implementados |
+| GKR-TRN-402 | PER-302 | PER-304 | confirmar intenção; resultado distingue confirmação de falha sem ativação presumida | **localmente validada** | processamento financeiro real fora do escopo |
+| GKR-TRN-403 | PER-301 | PER-303 | abrir downgrade/cancelamento sem ocultar permanência no plano atual | **localmente validada** | regra financeira entre ciclos ainda indefinida |
+| GKR-TRN-404 | PER-303 | PER-304 | confirmar mudança após revisar capacidades, data efetiva e estado futuro | **localmente validada** | execução do entitlement não implementada |
+| GKR-TRN-405 | PER-304 | PER-301 | retornar ao plano reconciliado, preservando estado anterior em falha | **localmente validada** | persistência técnica não examinada |
 
-Com `V3` encerrada documentalmente pela UXA-099, a próxima prioridade registrada é `V4 — efeito externo de oportunidades`, associada a `TRN-205`. **UXA-100 não foi iniciada.**
+### 8.2 Coletivo
+
+| ID | Origem | Destino | Condição e efeito principal | Estado | Lacuna |
+|---|---|---|---|---|---|
+| GKR-TRN-411 | COL-301 | COL-302 | selecionar Gestão/Impacto e revisar contratação | **localmente validada** | gateway e execução financeira não implementados |
+| GKR-TRN-412 | COL-302 | COL-304 | confirmar intenção e receber resultado sem presumir ativação | **localmente validada** | processamento financeiro real fora do escopo |
+| GKR-TRN-413 | COL-301 | COL-303 | abrir downgrade/cancelamento com capacidades atuais e futuras | **localmente validada** | regra financeira entre ciclos ainda indefinida |
+| GKR-TRN-414 | COL-303 | COL-304 | confirmar após tratar publicações pagas/gratuitas, administradores, núcleos, compromissos e exportação | **localmente validada** | execução operacional/transacional não implementada |
+| GKR-TRN-415 | COL-304 | COL-301 | retornar ao estado reconciliado preservando publicações/dados aplicáveis | **localmente validada** | persistência técnica não examinada |
+| GKR-TRN-416 | COL-301 | BND-002 | solicitar proposta Enterprise e sair do autoatendimento | **parcial** | processo comercial posterior não materializado |
+
+### 8.3 Organização
+
+| ID | Origem | Destino | Condição e efeito principal | Estado | Lacuna |
+|---|---|---|---|---|---|
+| GKR-TRN-421 | ORG-301 | ORG-302 | selecionar Growth e revisar contratação | **localmente validada** | gateway e execução financeira não implementados |
+| GKR-TRN-422 | ORG-302 | ORG-304 | confirmar intenção e receber resultado sem presumir ativação | **localmente validada** | processamento financeiro real fora do escopo |
+| GKR-TRN-423 | ORG-301 | ORG-303 | abrir downgrade/cancelamento com capacidades atuais e futuras | **localmente validada** | regra financeira entre ciclos ainda indefinida |
+| GKR-TRN-424 | ORG-303 | ORG-304 | confirmar após selecionar unidades, admins, publicações e Coletivos mantidos, integrações encerradas e dados exportados | **localmente validada** | execução institucional não implementada |
+| GKR-TRN-425 | ORG-304 | ORG-301 | retornar ao estado reconciliado preservando direitos/dados aplicáveis | **localmente validada** | persistência técnica não examinada |
+| GKR-TRN-426 | ORG-301 | BND-002 | solicitar proposta Business Scale e sair do autoatendimento | **parcial** | processo comercial posterior não materializado |
+
+### 8.4 Regras transversais
+
+- comparação incremental permanece estado de `*-301` e não cria transição própria;
+- processamento transitório de pagamento permanece dentro de `*-302 → *-304`;
+- falha é estado de `*-304`, preserva o plano anterior e fornece recuperação;
+- downgrade/cancelamento não apagam dados silenciosamente nem prometem pró-rata;
+- `BND-002` identifica somente a fronteira para proposta comercial;
+- plano pago não altera relevância, confiança, impacto, legitimidade ou evolução.
+
+## 9. Efeito da UXA-100-A3
+
+- transições totais: **37 → 54**;
+- 15 novas transições internas registradas como **localmente validadas**;
+- 2 handoffs para `BND-002` registrados como **parciais**;
+- nenhuma nova transição é declarada integralmente validada;
+- `TRN-205`, `TRN-304`, `TRN-305` e `TRN-306` permanecem inalteradas;
+- oito handoffs integralmente validados no trecho de Coletivos permanecem inalterados;
+- validação documental continua distinta de implementação técnica.
+
+## 10. Próximo gate
+
+A promoção canônica de Planos fecha a definição de identidades e ligações da UXA-100. Validação ponta a ponta de cobrança real, processo comercial Enterprise/Scale e entradas contextuais a partir de superfícies ainda não registradas permanecem frentes futuras separadas. Nenhuma próxima UXA é iniciada automaticamente.
