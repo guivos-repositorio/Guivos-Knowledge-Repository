@@ -43,6 +43,16 @@ A atualização incorporou:
 
 A [Baseline Governada de Ressincronização](project/repository-resynchronization-baseline-2026-08-08.md) mantém P5, P6, P7 e P9 explicitamente abertos quando ainda dependem de consolidação ou evidência.
 
+## P5 — Arquitetura institucional, Fundação Guivos e jurídico
+
+O pacote P5 em estruturação está organizado em [Arquitetura Institucional, Fundação Guivos e Jurídico](governance-framework/institutional-and-legal-architecture-index.md).
+
+A regra é preservar estados distintos:
+
+`conceito ≠ forma jurídica ≠ ato constitutivo ≠ registro ≠ infraestrutura operacional ≠ operação real`.
+
+`Fundação Guivos` é tratada neste estágio como conceito institucional social e nome de trabalho. A forma jurídica permanece `unresolved`; registro, CNPJ, governança formal e operação própria não são presumidos.
+
 ## Go-to-Market, Growth & Capital
 
 A baseline de lançamento, expansão geográfica, aquisição, vendas, captação de Coletivos e Organizações, Guivos Business, Parcerias Estratégicas, metas, receita e valuation está organizada em [Guivos Go-to-Market, Growth & Capital](go-to-market/index.md).
@@ -58,6 +68,7 @@ Metas e projeções permanecem classificadas como `candidate_target` ou `scenari
 - [Política de Representação e Handoffs entre Produtos Especializados](product-architecture/specialized-products-experience-and-handoff-policy.md)
 - [Matriz de Integração entre Produtos Especializados e Jornadas](product-architecture/specialized-products-journey-integration-matrix.md)
 - [Marca, Naming e Ativos Digitais](governance-framework/brand-and-digital-assets-index.md)
+- [Arquitetura Institucional e Jurídica](governance-framework/institutional-and-legal-architecture-index.md)
 - [VAL-009 — Estado de Execução e Gates de Evidência](research/market-validation/VAL-009-status-de-execucao-e-gates-de-evidencia.md)
 - [VAL-010 — Contrato de Intake e Registro de Rodadas](research/market-validation/VAL-010-contrato-de-intake-e-registro-de-rodadas.md)
 - [GEM-005-A1 — Propósito Antes do Incentivo](economic-model/gem-005-a1-purpose-before-incentive-guardrail.md)
@@ -67,6 +78,7 @@ Metas e projeções permanecem classificadas como `candidate_target` ou `scenari
 - [Registro do Estado Atual](project/current-state-register.md)
 - [Sincronização das Validações Recentes](project/validated-updates-synchronization-2026-08-08.md)
 - [Baseline de Ressincronização](project/repository-resynchronization-baseline-2026-08-08.md)
+- [Arquitetura Institucional, Fundação Guivos e Jurídico](governance-framework/institutional-and-legal-architecture-index.md)
 - [Go-to-Market, Growth & Capital](go-to-market/index.md)
 - [Arquitetura de Produtos](product-architecture/index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
