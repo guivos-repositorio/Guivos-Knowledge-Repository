@@ -2,12 +2,13 @@
 id: GEM-007-BUSINESS-ECONOMIC-ROLE-001
 title: Papel Econômico do Guivos Business
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-21
+last_updated: 2026-08-08
 parent: GEM-007
 related:
   - GPA-004
+  - GEM-004-A1
   - VF-03
   - RF-03
   - RF-04
@@ -17,29 +18,59 @@ related:
 
 ## 1. Autoridade funcional preservada
 
-Guivos Business organiza soluções para empresas e organizações, incluindo desenvolvimento de pessoas, programas, benefícios, relacionamento, parcerias e inteligência empresarial.
+Guivos Business é o **produto especializado da Guivos para soluções empresariais e institucionais**, incluindo desenvolvimento de pessoas, programas, benefícios, relacionamento, parcerias e inteligência empresarial.
 
-## 2. Papel econômico principal
+Ele não é um tipo de participante e não substitui a jornada institucional de uma Organização.
+
+```text
+Organização = participante institucional do ecossistema
+Guivos Business = produto especializado contratado/utilizado por organizações
+```
+
+## 2. Separação canônica
+
+Os planos da Organização são `Conecta · Eleva · Transforma`.
+
+Os planos conceituais do Guivos Business são `Start · Growth · Scale · Enterprise`.
+
+Não existe correspondência automática 1:1 entre as estruturas. Em particular:
+
+> **Organização Transforma ≠ Guivos Business Enterprise.**
+
+Uma Organização pode operar sua jornada sem contratar Guivos Business; contratar Guivos Business não altera automaticamente o plano institucional da Organização.
+
+## 3. Taxonomia conceitual de Guivos Business
+
+| Plano | Função | Significado | Leitura conceitual |
+|---|---|---|---|
+| **Start** | estruturar a entrada no produto e uma solução empresarial de menor complexidade | iniciar uso Business com escopo claro e governável | ponto de entrada do produto; não é sinônimo de Organização Conecta |
+| **Growth** | ampliar recorrência, públicos, coordenação e profundidade analítica | sustentar crescimento do uso empresarial combinando mais capacidades | maior complexidade de solução; não é sinônimo de Organização Eleva |
+| **Scale** | coordenar soluções amplas, multiunidade e integrações mais complexas | escalar a solução Business com governança e controle | capacidade de escala do produto; não é sinônimo de Organização Transforma |
+| **Enterprise** | adaptar o produto Business a contextos empresariais de alta complexidade | compor solução sob requisitos, governança e dimensionamento específicos | complexidade atendida, não status da empresa nem estágio obrigatório |
+
+Esta taxonomia **não define preços, entitlements, limites, SLA, pacote técnico ou condições comerciais**.
+
+## 4. Papel econômico principal
 
 `integrador econômico de soluções institucionais e B2B`.
 
-## 3. Estados de participação
+## 5. Estados de participação econômica
 
 - `primary_value_owner` em soluções organizacionais;
 - `economic_lead` em relações institucionais futuras;
 - `contributing_product` quando apoia programas de outros produtos;
 - `revenue_family_owner_candidate` para soluções B2B e serviços profissionais;
-- `support_owner` no relacionamento com a organização;
+- `support_owner` no relacionamento com o contratante;
 - `evidence_provider` para resultados agregados autorizados.
 
-## 4. Fluxos principais
+## 6. Fluxos principais
 
 - `VF-03 — Soluções organizacionais`;
 - `VF-06 — Rede de parceiros`;
 - `VF-07 — Conhecimento e Intelligence`;
 - `VF-08 — Impacto social e comunitário`.
 
-## 5. Valor principal
+## 7. Valor principal
 
 - solução institucional;
 - diagnóstico;
@@ -51,33 +82,15 @@ Guivos Business organiza soluções para empresas e organizações, incluindo de
 - indicadores;
 - combinação de capacidades do ecossistema.
 
-## 6. Famílias de receita candidatas
+## 8. Famílias de receita candidatas
 
-### Principais
+Principais: `RF-03 — Soluções B2B` e `RF-04 — Serviços profissionais`.
 
-- `RF-03 — Soluções B2B`;
-- `RF-04 — Serviços profissionais`.
+Compartilhadas: RF-01, RF-05, RF-09, RF-11 e RF-12 conforme autoridades próprias.
 
-### Compartilhadas
+Nenhuma família de receita autoriza inferir preço por plano nesta etapa.
 
-- RF-01 — acesso recorrente;
-- RF-05 — licenciamento e tecnologia;
-- RF-09 — ferramentas para parceiros;
-- RF-11 — Intelligence e insights autorizados;
-- RF-12 — infraestrutura, integração e operação.
-
-## 7. Parceiros predominantes
-
-- PC-02 — profissionais;
-- PC-04 — organizações clientes ou financiadoras;
-- PC-06 — patrocinadores;
-- PC-08 — canais;
-- PC-09 — tecnologia;
-- PC-10 — benefícios;
-- PC-11 — organizações sociais;
-- PC-12 — parceiros estratégicos.
-
-## 8. Regra de solução composta
+## 9. Regra de solução composta
 
 ```text
 Business coordena relação e solução
@@ -90,64 +103,30 @@ Business coordena relação e solução
 
 A liderança do Business não transfere para ele as autoridades funcionais, custos ou receitas integrais dos componentes.
 
-## 9. Eventos econômicos candidatos
+## 10. Contratação e dimensionamento
 
-- diagnóstico;
-- proposta;
-- contrato futuro;
-- entitlement organizacional;
-- implantação;
-- entrega de programa;
-- mensuração agregada;
-- renovação;
-- expansão;
-- cancelamento;
-- encerramento do vínculo.
+Soluções Business podem futuramente exigir proposta, dimensionamento, contrato ou análise específica. A noção funcional corresponde à categoria genérica de **contratação/dimensionamento assistido**, mas esta frente não cria checkout, `SURF`, `TRN`, `BND` adicional nem integração UXA-100 própria para Business.
 
-## 10. Custos candidatos
+`BND-002` não pertence semanticamente a um plano Business específico.
 
-- venda consultiva;
-- diagnóstico;
-- implantação;
-- gestão de conta;
-- suporte;
-- configuração de programas;
-- coordenação de parceiros;
-- relatórios;
-- integrações futuras.
+## 11. Eventos econômicos candidatos
 
-## 11. Riscos
+Diagnóstico, proposta, contrato futuro, entitlement próprio, implantação, entrega de programa, mensuração agregada, renovação, expansão, cancelamento e encerramento do vínculo permanecem candidatos e dependentes de autoridade posterior.
 
-- solução vendida sem capacidade;
-- vigilância de participantes;
-- absorção indevida de receitas dos componentes;
-- dependência de customizações;
-- promessa excessiva;
-- dados individuais expostos;
-- responsabilidades de entrega difusas;
-- subsídio cruzado não governado.
+## 12. Custos candidatos
 
-## 12. Guardrails
+Venda consultiva, diagnóstico, implantação, gestão de conta, suporte, configuração, coordenação de parceiros, relatórios e integrações futuras.
 
-O Business não poderá:
+## 13. Riscos e guardrails
 
-- conceder ao contratante autoridade sobre decisões individuais;
-- utilizar dados pessoais para vigilância;
-- atribuir a si todo o valor de uma solução composta;
-- ocultar produtos e parceiros responsáveis;
-- vender programa incompatível com capacidades existentes;
-- transformar participação em obrigação não transparente.
+Riscos incluem solução vendida sem capacidade, vigilância de participantes, customização excessiva, promessa excessiva, exposição de dados individuais, responsabilidades difusas e subsídio cruzado não governado.
 
-## 13. Dependências de validação
+Business não pode conceder ao contratante autoridade sobre decisões individuais, usar dados pessoais para vigilância, ocultar responsáveis, vender programa incompatível, absorver indevidamente valor de componentes ou transformar participação em obrigação não transparente.
 
-- segmentos e necessidades;
-- disposição a pagar;
-- capacidade de implantação;
-- custos de atendimento;
-- dados agregados e privacidade;
-- contratos, tributação e contabilidade;
-- operação e segurança.
+## 14. Dependências de validação
 
-## 14. Estado
+Permanecem pendentes segmentos/necessidades, disposição a pagar, packaging, **preço e entitlement por plano**, capacidade de implantação, custos de atendimento, dados agregados/privacidade, contratos, tributação, contabilidade, operação e segurança.
 
-`conceptually_defined — B2B solutions and economics not validated`.
+## 15. Estado
+
+`conceptually_defined — Business taxonomy separated from Organization; pricing, entitlements and B2B economics not validated`.
