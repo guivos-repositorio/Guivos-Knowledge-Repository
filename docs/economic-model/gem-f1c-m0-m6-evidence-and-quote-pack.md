@@ -62,6 +62,7 @@ Quando o serviço depende de desenho específico, a saída correta é `quote_req
 | `public_offer_benchmark` | preço público existente, mas com condição promocional ou restritiva; não usar como preço permanente |
 | `quote_required` | serviço material com escopo suficiente para pedir proposta |
 | `scope_definition_required` | não é economicamente responsável pedir cotação antes de definir escopo/driver |
+| `budget_decision_and_experiment_required` | custo discricionário depende de decisão de orçamento e desenho de experimento antes de amount |
 | `blocked_by_engineering` | depende de reativação e decisão formal de Product Engineering |
 | `amount_TBD` | existe referência, mas falta quantidade/aplicabilidade para amount mensal |
 
@@ -237,7 +238,7 @@ unit_rate_brl:
   two_years: 76.00
 unit: dominio_periodo
 value_state: benchmark
-calibration_state: official_public_fee_available
+calibration_state: official_fee_available
 source: Registro.br
 amount_brl: TBD
 confidence_source: high
