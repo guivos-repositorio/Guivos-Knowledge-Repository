@@ -2,7 +2,7 @@
 id: GTM-000
 title: Guivos Go-to-Market, Growth & Capital
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Strategy & Growth
 last_updated: 2026-08-08
 related:
@@ -69,11 +69,45 @@ Organização
 - **Organização** é tipo estrutural de participante e pode disponibilizar oportunidades de evolução dentro da Journey;
 - **oportunidade** é um objeto/oferta disponibilizado sob autoridade aplicável, não uma entidade;
 - **Guivos Business** é produto especializado contratável, não tipo de participante;
-- **Parceria Estratégica** é uma relação da Guivos com uma contraparte externa para ampliar distribuição, capacidade, tecnologia, integração, acesso institucional, entrada territorial ou escala.
+- **Parceria Estratégica** é uma relação institucional ou empresarial da **Guivos enquanto empresa** com uma contraparte externa para ampliar alcance, escala, distribuição, infraestrutura, tecnologia, integração, apoio, divulgação, acesso institucional, entrada territorial, eficiência ou outra capacidade corporativa relevante.
 
-Uma entidade que oferece uma oportunidade é contabilizada nessa função como Organização. Ela somente será também Parceiro Estratégico se existir uma relação estratégica distinta, material e ativa com a Guivos.
+### 5.1 Regra de fronteira corporativa
 
-A meta de `500 Parceiros Estratégicos ativos` em M60 **não representa 500 Organizações adicionais nem 500 geradores adicionais de oportunidades**.
+A classificação é determinada pelo **objeto da relação**, e não apenas pela identidade da contraparte.
+
+```text
+relação com a Guivos enquanto empresa
+→ pode ser Parceria Estratégica
+
+relação destinada a entregar oportunidade, benefício, programa, serviço ou capacidade diretamente a Pessoas ou Coletivos dentro do ecossistema
+→ Organização / oferta de Organização
+→ não entra no KPI de Parcerias Estratégicas
+```
+
+Portanto, uma faculdade que oferece cursos, uma academia que oferece possibilidades de evolução em saúde, uma empresa que disponibiliza capacitação, uma clínica que disponibiliza atendimento elegível ou qualquer entidade que se relacione com Pessoas ou Coletivos para entregar valor dentro da Journey atua nessa relação como **Organização**, não como Parceiro Estratégico.
+
+Uma mesma pessoa jurídica pode manter relações diferentes com a Guivos, mas cada relação deve ser classificada separadamente. Se houver um acordo corporativo independente com a Guivos para distribuição, integração, infraestrutura, entrada territorial ou outra capacidade empresarial, essa relação poderá ser governada como Parceria Estratégica; a relação com usuários ou Coletivos permanece Organização e nunca é contabilizada no KPI de Parcerias Estratégicas.
+
+### 5.2 Valor estratégico não exige receita direta
+
+Parceria Estratégica **não é sinônimo de fonte de receita**. Sua contribuição pode ser financeira ou não financeira.
+
+São resultados legítimos de uma Parceria Estratégica, entre outros:
+
+- ampliar alcance e distribuição da Guivos;
+- acelerar escala nacional ou internacional;
+- fornecer infraestrutura crítica;
+- habilitar tecnologia ou integração relevante;
+- apoiar operação, implantação ou expansão;
+- ampliar divulgação e presença institucional;
+- abrir acesso a mercados, redes ou territórios;
+- reduzir custo, tempo, risco ou fricção operacional;
+- fortalecer reputação, legitimidade ou capacidade de execução;
+- viabilizar cooperação empresarial de longo prazo.
+
+Receita direta, quando existir, deverá ser tratada pelo modelo econômico aplicável, mas **não é requisito para que uma parceria seja estratégica**.
+
+A meta de `500 Parcerias Estratégicas ativas` em M60 não representa 500 Organizações adicionais, 500 oportunidades ou 500 fontes de receita. Representa relações corporativas ativas que ampliam capacidade real da Guivos.
 
 ## 6. Estrutura do domínio
 
@@ -106,13 +140,15 @@ A versão usada externamente deverá distinguir fatos realizados, metas internas
 
 1. **densidade antes de dispersão** — a Guivos deve criar massa crítica local antes de pulverizar aquisição;
 2. **oferta e demanda crescem juntas** — Pessoas não são adquiridas isoladamente da disponibilidade de Coletivos, Organizações e oportunidades úteis;
-3. **parceria estratégica amplia capacidade, não substitui oferta** — alianças estratégicas devem fortalecer distribuição, infraestrutura, integração, acesso ou escala, sem serem usadas para inflar artificialmente a oferta da Journey;
-4. **crescimento não compra relevância** — metas comerciais não alteram ranking, legitimidade ou evidência de impacto;
-5. **receita protege propósito e continuidade** — monetização não deve induzir comportamento contrário à evolução das pessoas;
-6. **projeção não é promessa** — toda meta numérica possui data-base, premissas e status;
-7. **capital não é receita** — aporte, dívida, faturamento, receita reconhecida e caixa permanecem separados;
-8. **valuation não é fato contábil** — é uma referência negocial sujeita a evidência, diligência e mercado;
-9. **internacionalização exige gate** — Portugal não é acionado apenas por calendário.
+3. **parceria estratégica é corporativa** — sua relação primária é com a Guivos enquanto empresa; relações voltadas diretamente a Pessoas ou Coletivos pertencem à camada de Organizações/ofertas;
+4. **parceria estratégica amplia capacidade, não substitui oferta** — alianças estratégicas fortalecem alcance, escala, infraestrutura, integração, apoio, divulgação, acesso ou eficiência, sem inflar artificialmente a oferta da Journey;
+5. **valor estratégico não depende de receita direta** — uma aliança pode ser estratégica por alcance, escala, infraestrutura, apoio ou outra capacidade material mesmo sem gerar faturamento direto;
+6. **crescimento não compra relevância** — metas comerciais não alteram ranking, legitimidade ou evidência de impacto;
+7. **receita protege propósito e continuidade** — monetização não deve induzir comportamento contrário à evolução das pessoas;
+8. **projeção não é promessa** — toda meta numérica possui data-base, premissas e status;
+9. **capital não é receita** — aporte, dívida, faturamento, receita reconhecida e caixa permanecem separados;
+10. **valuation não é fato contábil** — é uma referência negocial sujeita a evidência, diligência e mercado;
+11. **internacionalização exige gate** — Portugal não é acionado apenas por calendário.
 
 ## 9. Estado
 
