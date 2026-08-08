@@ -708,10 +708,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#estado-operacional">
+<a class="md-nav__link" href="#estado-metodologico">
 <span class="md-ellipsis">
       
-        Estado operacional
+        Estado metodológico
       
     </span>
 </a>
@@ -735,10 +735,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#entregaveis-operacionais-pendentes">
+<a class="md-nav__link" href="#estado-factual-da-execucao">
 <span class="md-ellipsis">
       
-        Entregáveis operacionais pendentes
+        Estado factual da execução
       
     </span>
 </a>
@@ -3581,10 +3581,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#estado-operacional">
+<a class="md-nav__link" href="#estado-metodologico">
 <span class="md-ellipsis">
       
-        Estado operacional
+        Estado metodológico
       
     </span>
 </a>
@@ -3608,10 +3608,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#entregaveis-operacionais-pendentes">
+<a class="md-nav__link" href="#estado-factual-da-execucao">
 <span class="md-ellipsis">
       
-        Entregáveis operacionais pendentes
+        Estado factual da execução
       
     </span>
 </a>
@@ -3647,15 +3647,29 @@
 <li><a href="VAL-005-plano-de-amostragem/">VAL-005 — Plano de Amostragem</a> — versão 1.2.1;</li>
 <li><a href="VAL-006-dashboard-de-indicadores/">VAL-006 — Dashboard de Indicadores</a> — versão 1.3.1;</li>
 <li><a href="VAL-007-criterios-de-decisao/">VAL-007 — Critérios de Decisão</a> — versão 1.3.1;</li>
-<li><a href="VAL-008-sinais-comportamentais/">VAL-008 — Sinais Comportamentais</a> — versão 1.1.1.</li>
+<li><a href="VAL-008-sinais-comportamentais/">VAL-008 — Sinais Comportamentais</a> — versão 1.1.1;</li>
+<li><a href="VAL-009-status-de-execucao-e-gates-de-evidencia/">VAL-009 — Estado de Execução e Gates de Evidência</a> — versão 1.0.0;</li>
+<li><a href="VAL-010-contrato-de-intake-e-registro-de-rodadas/">VAL-010 — Contrato de Intake, Evidência e Registro de Rodadas</a> — versão 1.0.0.</li>
 </ul>
 <h2 id="sequencia-oficial">Sequência oficial<a class="headerlink" href="#sequencia-oficial" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>flowchart LR
     A["Hipótese"] --&gt; B["Pesquisa curta"] --&gt; C["Entrevistas"] --&gt; D["Resultados"] --&gt; E["Dashboard"] --&gt; F["Decisão"] --&gt; G["Ajustes"] --&gt; H["Nova validação"]
 </code></pre>
-<h2 id="estado-operacional">Estado operacional<a class="headerlink" href="#estado-operacional" title="Permanent link">¶</a></h2>
+<p>A partir de VAL-009/010, a execução também precisa respeitar:</p>
+<div class="highlight"><pre><span></span><code>método definido
+→ instrumento identificado
+→ aplicação comprovada
+→ pré-teste comprovado
+→ base recebida
+→ base válida
+→ qualidade avaliada
+→ métricas reproduzíveis
+→ decisão registrada
+</code></pre></div>
+<p>Nenhuma seta pode ser preenchida apenas por intenção, divulgação ou percepção geral.</p>
+<h2 id="estado-metodologico">Estado metodológico<a class="headerlink" href="#estado-metodologico" title="Permanent link">¶</a></h2>
 <ul>
-<li>instrumento público em versão <code>2.1.0</code>;</li>
+<li>instrumento público documental em versão <code>2.1.0</code>;</li>
 <li>duração estimada de 3 a 5 minutos;</li>
 <li>19 perguntas;</li>
 <li>uma pergunta aberta obrigatória e uma opcional;</li>
@@ -3675,6 +3689,7 @@
 <li>mínimo de 200 respostas válidas para decisão inicial;</li>
 <li>meta preferencial de 500 respostas válidas.</li>
 </ul>
+<p>Esses itens constituem <strong>autoridade metodológica</strong> e não comprovam que a aplicação, o pré-teste, a coleta ou qualquer resultado já tenham ocorrido.</p>
 <h2 id="decisoes-editoriais-da-versao-210">Decisões editoriais da versão 2.1.0<a class="headerlink" href="#decisoes-editoriais-da-versao-210" title="Permanent link">¶</a></h2>
 <ul>
 <li>perguntas <code>8</code> e <code>9</code> foram encurtadas;</li>
@@ -3703,13 +3718,20 @@
 <li>barreiras e diferenças entre segmentos.</li>
 </ul>
 <p>Confiança operacional, recorrência, retenção, recomendação e pagamento serão validados posteriormente por protótipos, beta e comportamento real.</p>
-<h2 id="entregaveis-operacionais-pendentes">Entregáveis operacionais pendentes<a class="headerlink" href="#entregaveis-operacionais-pendentes" title="Permanent link">¶</a></h2>
+<h2 id="estado-factual-da-execucao">Estado factual da execução<a class="headerlink" href="#estado-factual-da-execucao" title="Permanent link">¶</a></h2>
+<p>No checkpoint de 2026-08-08, o GKR não possui evidência integrada suficiente para declarar:</p>
 <ul>
-<li>pré-teste do VAL-002 2.1.0 com 10 a 15 participantes;</li>
-<li>ajuste somente de problemas comprovados pelo pré-teste;</li>
-<li>formulário definitivo para aplicação;</li>
-<li>planilha automática para recepção, tratamento e cálculo dos KPIs, IGV e gates.</li>
+<li>pré-teste concluído;</li>
+<li>versão efetivamente publicada em uma rodada identificada;</li>
+<li>período real de aplicação;</li>
+<li>quantidade de respostas recebidas ou válidas;</li>
+<li>KPIs ou IGV calculados;</li>
+<li>decisão Go/Go com ajustes/Pivot/No-Go;</li>
+<li>product-market fit;</li>
+<li>disposição a pagar;</li>
+<li>retenção ou recorrência.</li>
 </ul>
+<p><code>VAL-009</code> e <code>VAL-010</code> definem exatamente o pacote de evidência necessário para promover esses fatos quando a base real estiver disponível.</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
