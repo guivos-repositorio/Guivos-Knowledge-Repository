@@ -2,7 +2,7 @@
 id: GEM-F1-M0-M6-COST-BASELINE-001
 title: Baseline de Custos M0–M6 — F1
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Economic Model
 last_updated: 2026-08-08
 parent: GEM-010
@@ -16,6 +16,7 @@ depends_on:
   - GTM-006
 related:
   - GEM-F1B-M0-M6-COST-CALIBRATION-001
+  - GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001
   - GEM-009-COST-AND-UNIT-ECONOMICS-001
   - GEA-REF-GRAPH-001
 normative: true
@@ -126,7 +127,7 @@ F1-B pode registrar uma **taxa unitária benchmark** ou fórmula variável enqua
 | F1-C02 | C-02 | infraestrutura, hospedagem, armazenamento e observabilidade | semivariável/step | ambientes, tráfego, armazenamento e disponibilidade | TBD |
 | F1-C03 | C-01/C-02 | IA, processamento, mensageria e serviços de dados | variável/step | uso elegível e volume processado | TBD |
 | F1-C04 | C-04 | segurança, privacidade e controles técnicos | fixo/step | superfície, risco e requisitos aprovados | TBD / quote required |
-| F1-C05 | C-02 | equipe e serviços profissionais | fixo/step | capacidade e papéis requeridos | TBD — depende de F2 para dimensionamento |
+| F1-C05 | C-02 | equipe e serviços profissionais | fixo/step | capacidade e papéis requeridos | parcialmente parametrizado por F2 — 3 RE dedicados de referência + coberturas compartilhadas/fracionárias; custo TBD |
 | F1-C06 | C-02/C-04 | jurídico, contábil, fiscal, administrativo e compliance | fixo/event | obrigações, contratos e gates de lançamento | parcialmente calibrado por benchmark |
 | F1-C07 | C-02 | marca, conteúdo e produção criativa | fixo/event | calendário de conteúdo e lançamento | TBD |
 | F1-C08 | C-03 | CRM, vendas e Customer Success | fixo/step | pipeline institucional e contas ativas | parcialmente calibrado por benchmark |
@@ -141,7 +142,7 @@ F1-B pode registrar uma **taxa unitária benchmark** ou fórmula variável enqua
 | F1-C17 | C-02 | espaço físico, coworking, equipamentos e infraestrutura administrativa | fixed/event | decisão operacional explícita | benchmark BH disponível; necessidade TBD |
 | F1-C18 | C-06 | integrações, coordenação e reconciliação entre produtos/parceiros | variable/step | integrações e relações efetivamente ativadas | TBD |
 
-A calibração detalhada e suas fontes são governadas por `GEM-F1B-M0-M6-COST-CALIBRATION-001`.
+A calibração detalhada e suas fontes são governadas por `GEM-F1B-M0-M6-COST-CALIBRATION-001`. A capacidade de pessoas é governada por `GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001`.
 
 ### C-07 e C-08
 
@@ -162,7 +163,7 @@ Legenda:
 | F1-C02 Infraestrutura/hospedagem | C | C | C | C | C | C | C |
 | F1-C03 IA/processamento/dados | C | C | C | C | C | C | C |
 | F1-C04 Segurança/privacidade | R | R | R | R | R | R | R |
-| F1-C05 Equipe/serviços profissionais | D | D | D | D | D | D | D |
+| F1-C05 Equipe/serviços profissionais | R | R | R | R | R | R | R |
 | F1-C06 Jurídico/contábil/fiscal/admin | R | R | R | R | R | R | R |
 | F1-C07 Marca/conteúdo/criativo | C | C | C | C | R | R | R |
 | F1-C08 CRM/vendas/Customer Success | C | C | C | C | R | R | R |
@@ -192,13 +193,19 @@ Consequentemente, esta baseline:
 
 ## 9. Relação com F2 — capacidade e headcount
 
-F1-C05 existe para impedir que custo de pessoas desapareça da baseline. Porém, **F1 não dimensiona quadro, cargos, salários, regime de contratação ou datas de admissão**.
+F2 definiu a baseline de cobertura funcional M0–M6 sem transformar capacidade em contratação.
 
-Esses parâmetros pertencem ao F2. Até lá:
+O estado vigente é:
 
-- o custo de equipe permanece material e `TBD`;
-- nenhum número de headcount será inferido a partir das metas de usuários;
-- nenhum burn total poderá ser declarado completo sem resolver essa dependência.
+- 3 role-equivalents dedicados de referência: Growth/GTM, comercial institucional/B2B e ecossistema/parcerias;
+- conteúdo/marketing, operação/onboarding, suporte, governança e demais capacidades essenciais possuem cobertura compartilhada ou condicional governada;
+- contabilidade/fiscal, jurídico/privacidade/compliance e segurança/risco podem ser coberturas especialistas fracionárias;
+- engenharia e dados/IA de implementação permanecem bloqueados por Product Engineering;
+- HC interno total, regime, remuneração e custo monetário continuam `TBD`.
+
+Consequentemente, F1-C05 deixa de estar bloqueado por ausência de desenho funcional, mas **não está numericamente fechado**.
+
+Nenhum número de RE deverá ser apresentado como número de empregados sem evidência adicional.
 
 ## 10. Regra de fechamento mensal
 
@@ -235,7 +242,7 @@ Cada pool somente poderá receber valor quando houver, no mínimo:
 9. ausência de dupla contagem entre produtos e áreas;
 10. tratamento explícito de incerteza.
 
-## 12. Resultado do F1 após F1-B
+## 12. Resultado do F1 após F1-B e F2
 
 | Gate | Resultado |
 |---|---|
@@ -248,20 +255,20 @@ Cada pool somente poderá receber valor quando houver, no mínimo:
 | pools com alguma calibração numérica | PARTIAL — 6/18 |
 | pools numericamente fechados | 0/18 |
 | cotações/contratos/realizados suficientes | PENDING |
-| headcount e custo de equipe | BLOCKED BY F2 |
+| capacidade e papéis de equipe | PARTIAL PASS — F2 |
+| HC interno/regime/remuneração | PENDING |
+| custo monetário F1-C05 | NOT CALCULABLE |
 | custo mensal completo | NOT CALCULABLE |
 | burn mensal completo | NOT CALCULABLE |
 | runway e necessidade de capital | NOT CALCULABLE |
 
-**Parecer:** `PARTIAL PASS — F1 structural baseline is active and F1-B added traceable unit benchmarks to six pools; material TBDs still prevent a complete M0–M6 cost baseline.`
+**Parecer:** `PARTIAL PASS — F1/F1-B/F2 now govern cost scope, six public benchmark pools and M0–M6 functional capacity; material monetary gaps still prevent a complete cost and burn baseline.`
 
 ## 13. Próximos incrementos permitidos
-
-F1-B foi executado sem promover nenhum benchmark a orçamento, contrato ou realizado.
 
 Os próximos atos são independentes e exigem autorização própria:
 
 1. **F1-C — evidência e cotações faltantes**, para ampliar a cobertura externa de custos materiais;
-2. **F2 — capacidade e headcount**, para dimensionar papéis, quantidade, regime e custo de pessoas M0–M6.
+2. **F2-B — modelo de entrega e custo de pessoas**, para atribuir modos de cobertura, quantidade efetiva, regime candidato e benchmarks de remuneração/serviços sem contratar.
 
 Burn, caixa, runway e necessidade de capital permanecem bloqueados até que as lacunas materiais de F1 e F2 estejam suficientemente resolvidas.
