@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.29.0
+version: 0.30.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -26,6 +26,7 @@ related:
   - UXA-100
   - UXA-100-A1
   - UXA-100-A2
+  - UXA-100-A3
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -44,7 +45,7 @@ Esta seção reúne, por referência, as jornadas da Pessoa, do Coletivo e da Or
 ## 2. Vistas disponíveis
 
 - [Galeria Visual Integrada de Telas](screen-gallery.md)
-- [Planos, Comparação e Cobrança — Galeria Candidata](screen-gallery-plans-billing.md)
+- [Planos, Comparação e Cobrança — Galeria Canônica](screen-gallery-plans-billing.md)
 - [Matriz de Rastreabilidade Visual por SVG](screen-gallery-traceability-matrix.md)
 - [Catálogo de Telas](screen-catalog.md)
 - [Jornada da Pessoa](person.md)
@@ -69,8 +70,9 @@ UXA-090 — cinco handoffs de solicitação validados ponta a ponta
 → UXA-097 — primeira Tela Hoje materializada; PER-007 revalidada; TRN-007 validada ponta a ponta
 → UXA-098 — publicação, descoberta, Mapa, Lista e Detalhe validados como continuidade integrada
 → UXA-099 — dez estados residuais Opportunity Boost validados
-→ UXA-100 / UXA-100-A1 — planos, comparação, cobrança e telas dedicadas materializados como candidatos
-→ UXA-100-A2 — 9/9 ativos de Planos auditados e aprovados funcionalmente como candidatos; 6 reformulados
+→ UXA-100 / A1 — planos, comparação, cobrança, telas e jornadas materializados
+→ UXA-100-A2 — 9/9 ativos auditados e aprovados funcionalmente; 6 reformulados
+→ UXA-100-A3 — fragmentação mínima e promoção canônica de Planos
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
@@ -79,82 +81,77 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.29.0 | UXA-100-A2 |
-| Pessoa, Coletivo e Organização | `draft` | incompletude explícita |
-| Jornada da Pessoa | `draft` 0.13.0 | Planos aprovado funcionalmente como candidato |
-| Jornada do Coletivo | `draft` 0.14.0 | Planos aprovado funcionalmente como candidato |
-| Jornada da Organização | `draft` 0.6.0 | Planos aprovado funcionalmente como candidato |
-| handoffs e cenários | `active` | sínteses preservadas |
-| catálogo integrado | `active`; conjunto candidato separado | 109 SVGs canônicos + 9 candidatos aprovados funcionalmente |
-| registro de superfícies | `active` 0.15.0 | sem IDs de Planos ainda |
-| detalhamento da Pessoa | `active` 0.9.0 | sem alteração canônica |
-| registro de transições | `active` 0.16.0 | sem transições de Planos ainda |
-| galeria visual integrada | `active`; apêndice candidato separado | 109 canônicos + 9 candidatos |
-| galeria candidata de Planos | `draft` 0.2.0 | 9/9 aprovados funcionalmente como candidatos |
-| matriz por SVG | `active` 0.15.0 | canônica preservada |
-| registro de lacunas | `active` 0.24.0 | sem promoção automática |
+| visão geral das Jornadas Integradas | `active` 0.30.0 | UXA-100-A3 |
+| Pessoa, Coletivo e Organização | `draft` | incompletude explícita preservada |
+| Jornada da Pessoa | `draft` 0.14.0 | PER-301 a 304; TRN-401 a 405 |
+| Jornada do Coletivo | `draft` 0.15.0 | COL-301 a 304; TRN-411 a 416 |
+| Jornada da Organização | `draft` 0.7.0 | ORG-301 a 304; TRN-421 a 426 |
+| catálogo integrado | `active` 0.25.0 | 118 SVGs canônicos |
+| registro de superfícies | `active` 0.16.0 | 53 IDs |
+| registro de transições | `active` 0.17.0 | 54 transições |
+| galeria visual integrada | `active` 0.20.0 | 118 SVGs canônicos |
+| galeria de Planos | `active` 0.3.0 | 9 SVGs canônicos |
+| matriz por SVG | `active` 0.16.0 | 118 associações / 31 perfis |
+| registro de lacunas | `active` | cobrança/processo comercial e outras continuidades preservadas |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
-## 5. Etapa transversal de Planos — UXA-100
+## 5. Etapa transversal canônica de Planos
 
-A UXA-100 introduz uma etapa transversal candidata nas três jornadas:
+A UXA-100-A3 registra a mesma estrutura funcional nos três participantes:
 
 ```text
-área do participante
-→ Planos
-→ plano atual + uso/capacidade
-→ comparação geral + diferença incremental
-→ manter / upgrade / downgrade / cancelar / solicitar proposta
-→ revisão de contratação quando aplicável
-→ pagamento simulado ou processo comercial governado
-→ retorno ao contexto anterior
+*-301 Planos e comparação
+├── upgrade → *-302 revisão de contratação → *-304 resultado/recuperação → *-301
+├── downgrade/cancelamento → *-303 gestão do ciclo → *-304 → *-301
+└── Enterprise/Scale → BND-002 quando aplicável
 ```
 
-A entrada em Planos ocorre por dois caminhos legítimos:
+A entrada em Planos continua legítima por dois caminhos:
 
 1. **voluntário**, pela área de conta/administração, sem necessidade de atingir limite;
 2. **contextual**, quando uma capacidade do plano é atingida, sempre preservando alternativas gratuitas ou operacionais aplicáveis.
 
-Telas dedicadas candidatas:
+A promoção não inventa IDs para superfícies de origem que ainda não estejam suficientemente definidas. Comparação incremental permanece estado de `*-301`, processamento de pagamento permanece transitório e `BND-002` é fronteira, não checkout.
 
-- Pessoa: `uxa-100-person-plans-screen-mobile.svg`;
-- Coletivo: `uxa-100-collective-plans-screen-desktop.svg`;
-- Organização: `uxa-100-organization-plans-screen-desktop.svg`.
+## 6. Cobertura canônica após UXA-100-A3
 
-A UXA-100-A2 aprovou funcionalmente os nove ativos como candidatos. Eles ainda não possuem IDs canônicos de superfície ou transição.
-
-## 6. Cobertura canônica preservada
-
-| Indicador | Resultado vigente antes de eventual promoção da UXA-100 |
+| Indicador | Resultado |
 |---|---:|
-| SVGs canônicos existentes | **109** |
-| associações individuais canônicas | **109** |
-| perfis de rastreabilidade | **28** |
-| com validação funcional vigente no conjunto canônico | **109** |
-| pendentes de validação específica no conjunto canônico | **0** |
-| IDs com referência visual | **30 de 40** |
+| SVGs canônicos existentes | **118** |
+| associações individuais canônicas | **118** |
+| perfis de rastreabilidade | **31** |
+| com validação funcional vigente | **118** |
+| pendentes de validação específica | **0** |
+| superfícies/estados/fronteiras | **53** |
+| transições documentais | **54** |
+| IDs com referência visual | **42 de 53** |
 | responsabilidades sem SVG dedicado | **9** |
-| fronteira sem tela por definição | 1 |
-| SVGs candidatos de Planos funcionalmente aprovados | **9 de 9** |
+| fronteiras sem tela por definição | **2** |
 
-Os 9 SVGs da UXA-100 permanecem **fora da contagem canônica** até promoção governada.
+## 7. Maturidade das transições de Planos
 
-## 7. Continuidades anteriores preservadas
+- Pessoa: `TRN-401` a `405` — **localmente validadas**;
+- Coletivo: `TRN-411` a `415` — **localmente validadas**; `TRN-416` — **parcial**;
+- Organização: `TRN-421` a `425` — **localmente validadas**; `TRN-426` — **parcial**.
+
+A maturidade preserva a diferença entre validação funcional documental e cobrança/processo comercial reais.
+
+## 8. Continuidades anteriores preservadas
 
 `TRN-203`, `TRN-204`, `TRN-210` e `TRN-211` permanecem integralmente validadas pela UXA-098. `TRN-007` permanece integralmente validada pela UXA-097. Oito handoffs permanecem integralmente validados no trecho governado de Coletivos: `TRN-105`, `106`, `107`, `108`, `109`, `110`, `111` e `112`.
 
-## 8. Separações obrigatórias
+## 9. Separações obrigatórias
 
-- Planos como etapa de jornada não equivale a checkout implementado;
-- tela funcionalmente aprovada como candidata não equivale a superfície canônica registrada;
-- pagar um plano não altera relevância orgânica, confiança, legitimidade ou evolução;
+- Planos canonicamente registrado não equivale a checkout implementado;
+- promoção de SVG/ID não equivale a promoção da jornada inteira;
+- pagar um plano não altera relevância orgânica, confiança, legitimidade, impacto ou evolução;
 - limite comercial não apaga direitos essenciais ou alternativas gratuitas legítimas;
+- sucesso e falha permanecem consequências diferentes, mesmo agrupados na família de resultado/recuperação;
+- Enterprise/Scale termina em `BND-002` até processo comercial posterior ser materializado;
 - validar `COM-005` não valida automaticamente `TRN-305`;
-- estados residuais publicitários não alteram catálogo, busca ou ordenação orgânicos;
-- repetir a mesma intenção não duplica efeito lógico;
 - validação documental não equivale a implementação técnica.
 
-## 9. Próxima decisão da UXA-100
+## 10. Estado da frente
 
-A validação funcional candidata foi concluída pela UXA-100-A2. O próximo ato possível é decidir, separadamente, **fragmentação e promoção canônica**: quantas superfícies devem existir, quais IDs devem ser criados e quais transições precisam ser registradas. Nenhuma dessas ações é automática.
+A fragmentação e promoção canônica da UXA-100 está concluída documentalmente pela UXA-100-A3. Permanecem separadas a validação ponta a ponta de cobrança real, o processo comercial após `BND-002`, as entradas contextuais sem origem canônica própria e outras lacunas das jornadas. Nenhuma próxima UXA é iniciada automaticamente.
