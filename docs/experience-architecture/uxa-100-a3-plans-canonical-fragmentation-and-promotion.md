@@ -2,9 +2,9 @@
 id: UXA-100-A3
 title: Fragmentação e Promoção Canônica de Planos, Cobrança e Ciclo de Vida
 status: draft
-version: 0.1.1
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 parent: UXA-100
 depends_on:
   - UXA-100-A1
@@ -26,178 +26,157 @@ normative: false
 
 ## 1. Finalidade
 
-A UXA-100-A3 transforma a materialização funcionalmente aprovada pela UXA-100-A2 em uma estrutura canônica de superfícies, estados e transições para **Pessoa, Coletivo e Organização**, preservando a regra de que um estado somente recebe identidade própria quando há mudança material de hierarquia, decisão, autoridade, visibilidade, dados, consequência, risco, continuidade, canal ou recuperação.
+A UXA-100-A3 registra a estrutura canônica de superfícies e transições de Planos para **Pessoa, Coletivo e Organização**, preservando fragmentação mínima e maturidade explícita.
 
-A promoção é documental. Ela não cria checkout real, gateway, cobrança, entitlement técnico, política fiscal, pró-rata, período de graça, processo comercial implementado ou Engenharia de Produto.
+A versão 0.2.0 não cria IDs nem promove maturidade. Ela sincroniza a taxonomia global e corrige `BND-002` para sua função genérica de contratação/dimensionamento assistido.
 
-## 2. Decisão de fragmentação
+## 2. Taxonomia aplicada
 
-Os nove SVGs da UXA-100 não serão convertidos em nove telas independentes nem cada estado interno dos boards receberá um ID próprio.
+- Pessoa: Free · Plus · Pro;
+- Coletivo: Livre · Mobiliza · Impacta · Rede;
+- Organização: Conecta · Eleva · Transforma.
 
-Para cada participante são promovidas quatro famílias canônicas:
+Guivos Business Start/Growth/Scale/Enterprise é produto especializado fora desta fragmentação. `Organização Transforma ≠ Guivos Business Enterprise`.
 
-1. **Planos e comparação** — plano atual, consumo/capacidade, matriz geral, delta incremental e delta direto atual → alvo;
-2. **Revisão de contratação** — seleção afirmativa, preço, periodicidade, recorrência, pagador, beneficiário, início, método autorizado em simulação e confirmação;
-3. **Gestão de downgrade e cancelamento** — estado atual/futuro, capacidades afetadas, data efetiva e tratamento de excedentes/compromissos;
-4. **Resultado e recuperação** — sucesso, falha, preservação do estado anterior quando necessário, evidência, retorno e nova tentativa.
+## 3. Decisão de fragmentação preservada
 
-Não recebem superfície própria:
+Para cada participante permanecem quatro famílias:
 
-- comparação incremental isolada, pois preserva a hierarquia e a decisão da superfície de Planos;
-- processamento de pagamento, por ser estado transitório sem decisão própria;
-- mensagens simples de confirmação;
-- preço mensal/anual como telas independentes;
-- preview contextual de limite, que permanece gatilho/estado de entrada para Planos e não substitui a superfície de origem;
-- Enterprise/Scale como checkout, pois exigem processo comercial governado.
+1. **Planos e comparação** — plano atual, consumo/capacidade, matriz, delta incremental e direto;
+2. **Revisão de contratação** — seleção afirmativa, preço/periodicidade quando governados, pagador, beneficiário, início e confirmação;
+3. **Gestão de downgrade e cancelamento** — estado atual/futuro, capacidades afetadas, data efetiva e excedentes;
+4. **Resultado e recuperação** — sucesso, falha, preservação do estado anterior, retorno e nova tentativa.
 
-## 3. Novas superfícies canônicas
+Não recebem superfície própria comparação incremental, processamento transitório, confirmação simples, periodicidade, preview de limite ou processo assistido.
 
-### 3.1 Pessoa
+## 4. Superfícies canônicas preservadas
 
-| ID | Superfície | Materialização principal |
-|---|---|---|
-| `GKR-SURF-PER-301` | Planos e comparação da Pessoa | tela dedicada + comparação incremental + estados de entrada do board |
-| `GKR-SURF-PER-302` | Revisão de contratação da Pessoa | board de fluxo UXA-100 |
-| `GKR-SURF-PER-303` | Gestão de downgrade e cancelamento da Pessoa | board de fluxo UXA-100 |
-| `GKR-SURF-PER-304` | Resultado e recuperação de plano/cobrança da Pessoa | board de fluxo UXA-100 |
+### Pessoa
 
-### 3.2 Coletivo
+- `GKR-SURF-PER-301` — Planos e comparação;
+- `GKR-SURF-PER-302` — revisão de contratação;
+- `GKR-SURF-PER-303` — downgrade/cancelamento;
+- `GKR-SURF-PER-304` — resultado/recuperação.
 
-| ID | Superfície | Materialização principal |
-|---|---|---|
-| `GKR-SURF-COL-301` | Planos e comparação do Coletivo | tela dedicada + comparação incremental + estados de limite do board |
-| `GKR-SURF-COL-302` | Revisão de contratação do Coletivo | board de fluxo UXA-100 |
-| `GKR-SURF-COL-303` | Gestão de downgrade e cancelamento do Coletivo | board de fluxo UXA-100 |
-| `GKR-SURF-COL-304` | Resultado e recuperação de plano/cobrança do Coletivo | board de fluxo UXA-100 |
+### Coletivo
 
-### 3.3 Organização
+- `GKR-SURF-COL-301` — Planos e comparação;
+- `GKR-SURF-COL-302` — revisão de contratação;
+- `GKR-SURF-COL-303` — downgrade/cancelamento;
+- `GKR-SURF-COL-304` — resultado/recuperação.
 
-| ID | Superfície | Materialização principal |
-|---|---|---|
-| `GKR-SURF-ORG-301` | Planos e comparação da Organização | tela dedicada + comparação incremental + estados de capacidade do board |
-| `GKR-SURF-ORG-302` | Revisão de contratação da Organização | board de fluxo UXA-100 |
-| `GKR-SURF-ORG-303` | Gestão de downgrade e cancelamento da Organização | board de fluxo UXA-100 |
-| `GKR-SURF-ORG-304` | Resultado e recuperação de plano/cobrança da Organização | board de fluxo UXA-100 |
+### Organização
 
-### 3.4 Fronteira comercial
+- `GKR-SURF-ORG-301` — Planos e comparação;
+- `GKR-SURF-ORG-302` — revisão de contratação;
+- `GKR-SURF-ORG-303` — downgrade/cancelamento;
+- `GKR-SURF-ORG-304` — resultado/recuperação.
 
-`GKR-SURF-BND-002 — processo comercial Enterprise/Scale` identifica o handoff para proposta e dimensionamento contratual. É fronteira documental, não checkout nem tela Guivos autônoma.
+### Fronteira compartilhada
 
-## 4. Novas transições canônicas
+`GKR-SURF-BND-002 — contratação/dimensionamento assistido` identifica o handoff quando uma contratação deixa de ser autonomamente configurável e exige proposta, dimensionamento, contrato, configuração ou análise específica.
 
-### 4.1 Pessoa
+`BND-002`:
 
-| ID | Origem | Destino | Significado | Estado inicial |
+- não é checkout;
+- não é plano;
+- não significa Enterprise, Scale, Rede ou Transforma;
+- não pertence exclusivamente a Coletivo ou Organização;
+- não define preço, capacidade, SLA ou contrato.
+
+## 5. Transições canônicas preservadas
+
+### Pessoa
+
+| ID | Origem | Destino | Significado | Estado |
 |---|---|---|---|---|
 | `GKR-TRN-401` | PER-301 | PER-302 | escolher Plus/Pro e revisar contratação | localmente validada |
-| `GKR-TRN-402` | PER-302 | PER-304 | confirmar intenção e receber resultado de cobrança/ativação | localmente validada |
-| `GKR-TRN-403` | PER-301 | PER-303 | iniciar downgrade ou cancelamento | localmente validada |
-| `GKR-TRN-404` | PER-303 | PER-304 | confirmar mudança de ciclo e registrar resultado | localmente validada |
-| `GKR-TRN-405` | PER-304 | PER-301 | retornar ao estado reconciliado de plano/cobrança | localmente validada |
+| `GKR-TRN-402` | PER-302 | PER-304 | confirmar intenção e receber resultado | localmente validada |
+| `GKR-TRN-403` | PER-301 | PER-303 | iniciar downgrade/cancelamento | localmente validada |
+| `GKR-TRN-404` | PER-303 | PER-304 | confirmar mudança de ciclo | localmente validada |
+| `GKR-TRN-405` | PER-304 | PER-301 | retornar ao estado reconciliado | localmente validada |
 
-### 4.2 Coletivo
+### Coletivo
 
-| ID | Origem | Destino | Significado | Estado inicial |
+| ID | Origem | Destino | Significado | Estado |
 |---|---|---|---|---|
-| `GKR-TRN-411` | COL-301 | COL-302 | escolher Gestão/Impacto e revisar contratação | localmente validada |
+| `GKR-TRN-411` | COL-301 | COL-302 | escolher mudança autonomamente configurável e revisar | localmente validada |
 | `GKR-TRN-412` | COL-302 | COL-304 | confirmar intenção e receber resultado | localmente validada |
-| `GKR-TRN-413` | COL-301 | COL-303 | iniciar downgrade ou cancelamento | localmente validada |
-| `GKR-TRN-414` | COL-303 | COL-304 | confirmar mudança após tratar excedentes/compromissos | localmente validada |
+| `GKR-TRN-413` | COL-301 | COL-303 | iniciar downgrade/cancelamento | localmente validada |
+| `GKR-TRN-414` | COL-303 | COL-304 | confirmar mudança após tratar excedentes | localmente validada |
 | `GKR-TRN-415` | COL-304 | COL-301 | retornar ao estado reconciliado | localmente validada |
-| `GKR-TRN-416` | COL-301 | BND-002 | solicitar proposta Enterprise | parcial |
+| `GKR-TRN-416` | COL-301 | BND-002 | solicitar contratação/dimensionamento assistido quando necessário | **parcial** |
 
-### 4.3 Organização
+### Organização
 
-| ID | Origem | Destino | Significado | Estado inicial |
+| ID | Origem | Destino | Significado | Estado |
 |---|---|---|---|---|
-| `GKR-TRN-421` | ORG-301 | ORG-302 | escolher Growth e revisar contratação | localmente validada |
+| `GKR-TRN-421` | ORG-301 | ORG-302 | escolher mudança autonomamente configurável e revisar | localmente validada |
 | `GKR-TRN-422` | ORG-302 | ORG-304 | confirmar intenção e receber resultado | localmente validada |
-| `GKR-TRN-423` | ORG-301 | ORG-303 | iniciar downgrade ou cancelamento | localmente validada |
+| `GKR-TRN-423` | ORG-301 | ORG-303 | iniciar downgrade/cancelamento | localmente validada |
 | `GKR-TRN-424` | ORG-303 | ORG-304 | confirmar mudança após tratar excedentes | localmente validada |
 | `GKR-TRN-425` | ORG-304 | ORG-301 | retornar ao estado reconciliado | localmente validada |
-| `GKR-TRN-426` | ORG-301 | BND-002 | solicitar proposta Business Scale | parcial |
+| `GKR-TRN-426` | ORG-301 | BND-002 | solicitar contratação/dimensionamento assistido quando necessário | **parcial** |
 
-## 5. Por que as transições não são promovidas integralmente
+## 6. Maturidade preservada
 
-A UXA-100-A2 validou os estados e decisões representados nos nove SVGs, mas não definiu gateway, proration, regra fiscal, período de graça, antifraude ou execução do processo comercial Enterprise/Scale.
+`TRN-416` e `TRN-426` continuam parciais porque o processo posterior a `BND-002` não foi materializado/validado como conjunto. A correção semântica da fronteira não constitui validação ponta a ponta.
 
-Por isso:
+## 7. Promoção visual preservada
 
-- as quinze ligações internas são **localmente validadas** no pacote UXA-100;
-- `TRN-416` e `TRN-426` permanecem **parciais** porque o processo comercial após a fronteira não foi materializado como conjunto;
-- nenhuma delas é apresentada como implementação técnica ou operação real.
+Os mesmos nove SVGs permanecem canônicos:
 
-## 6. Promoção dos nove SVGs
-
-Os nove SVGs funcionalmente aprovados pela UXA-100-A2 passam a integrar o conjunto canônico:
-
-- 3 telas dedicadas de Planos;
+- 3 telas dedicadas;
 - 3 boards de fluxo;
 - 3 comparações incrementais.
 
-Efeito proposto:
+A sincronização substitui apenas nomenclatura/cópia em Coletivo e Organização. Não cria arquivo ou ID adicional.
 
-| Indicador | Antes | Após UXA-100-A3 |
-|---|---:|---:|
-| SVGs canônicos | 109 | **118** |
-| associações individuais | 109 | **118** |
-| perfis de rastreabilidade | 28 | **31** |
-| SVGs com validação funcional vigente | 109 | **118** |
-| pendentes de validação específica | 0 | **0** |
-| superfícies/estados/fronteiras | 40 | **53** |
-| transições documentais | 37 | **54** |
-| IDs com referência visual | 30 | **42** |
-| responsabilidades sem SVG dedicado | 9 | **9** |
-| fronteiras sem tela por definição | 1 | **2** |
+Contagens permanecem:
 
-Os três novos perfis de rastreabilidade são:
+| Indicador | Estado vigente |
+|---|---:|
+| SVGs canônicos | **118** |
+| associações individuais | **118** |
+| perfis de rastreabilidade | **31** |
+| SVGs com validação funcional vigente | **118** |
+| pendentes de validação específica | **0** |
+| superfícies/estados/fronteiras | **53** |
+| transições documentais | **54** |
+| responsabilidades sem SVG dedicado | **9** |
+| fronteiras sem tela por definição | **2** |
 
-- `R29` — Pessoa: PER-301 a PER-304;
-- `R30` — Coletivo: COL-301 a COL-304;
-- `R31` — Organização: ORG-301 a ORG-304.
+Perfis `R29`, `R30` e `R31` permanecem associados a Pessoa, Coletivo e Organização respectivamente.
 
-## 7. Proteções preservadas
+## 8. Proteções preservadas
 
 - oportunidade pública não é escondida para vender plano;
-- limite do Free recai sobre correspondência personalizada adicional, não sobre o catálogo público;
 - assinatura não compra relevância, confiança, impacto, legitimidade ou evolução;
-- assinatura é separada de preço de oferta, comissão, taxa de pagamento e tributo;
+- assinatura é separada de transação/taxa/tributo;
 - nenhuma opção paga é pré-selecionada;
-- downgrade/cancelamento mostram consequência e data aplicável;
-- falha não presume ativação nem autoriza perda de dados;
-- Enterprise/Scale não fingem checkout autônomo;
-- trial com conversão automática continua fora da baseline;
-- parâmetros financeiros indefinidos continuam indefinidos.
+- downgrade/cancelamento mostram consequência e data;
+- falha não presume ativação nem perda de dados;
+- contratação assistida não finge checkout autônomo;
+- parâmetros financeiros indefinidos continuam indefinidos;
+- nomes de plano não expressam mérito do participante.
 
-## 8. Jornadas
+## 9. Jornadas
 
-A promoção canônica adiciona superfícies e transições estáveis às jornadas `draft`, mas **não promove Pessoa, Coletivo ou Organização a `active`**.
-
-A etapa transversal torna-se:
+A estrutura adicionada anteriormente às jornadas `draft` é preservada, sem promoção:
 
 ```text
 Planos e comparação
-├── upgrade → revisão de contratação → resultado/recuperação → Planos
-├── downgrade/cancelamento → revisão de ciclo → resultado/recuperação → Planos
-└── Enterprise/Scale → fronteira de proposta comercial
+├── mudança autônoma → revisão → resultado → Planos
+├── downgrade/cancelamento → revisão → resultado → Planos
+└── necessidade de contratação assistida → BND-002
 ```
 
-Entradas voluntárias e contextuais permanecem válidas. A ausência de uma superfície canônica única para `Conta/Configurações` ou para a correspondência personalizada não será preenchida por inferência nesta frente.
+Guivos Business não recebe quarta jornada ou novos IDs nesta atualização.
 
-## 9. Limites
+## 10. Limites
 
-A UXA-100-A3 não:
+Esta versão não cria superfície, transição, SVG, checkout, gateway, cobrança, preço/entitlement Business, pró-rata, período de graça, processo posterior a `BND-002`, promoção de jornada, UXA-102/V5 ou Engenharia de Produto.
 
-- cria superfície canônica para cada texto/estado do board;
-- cria checkout, gateway ou cobrança;
-- define proration, estorno, período de graça ou tributação;
-- materializa o processo após `BND-002`;
-- valida `TRN-416` ou `TRN-426` ponta a ponta;
-- altera `TRN-205`, `TRN-304`, `TRN-305` ou `TRN-306`;
-- promove as jornadas principais;
-- inicia protótipo ou Engenharia de Produto;
-- integra a PR #200 à `main`; a PR #199/UXA-099 já compõe a baseline vigente após integração governada.
+## 11. Veredito
 
-## 10. Veredito
-
-> **Promoção canônica aprovada documentalmente com fragmentação mínima: quatro famílias por participante, uma fronteira comercial compartilhada, nove SVGs incorporados ao catálogo canônico e dezessete transições registradas com maturidade explícita.**
+> **Taxonomia global sincronizada e BND-002 corrigido sem expansão da arquitetura: IDs, contagens, maturidades e nove SVGs permanecem preservados.**
