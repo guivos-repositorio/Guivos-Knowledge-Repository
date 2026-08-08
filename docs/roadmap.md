@@ -1,134 +1,101 @@
 ---
-id: ROADMAP-12.75.0
-title: Roadmap Arquitetural — Saída Consciente para Fronteira Externa Validada
+id: ROADMAP-12.76.0
+title: Roadmap Arquitetural — Consolidação Documental P0–P9
 status: active
-version: 12.75.0
+version: 12.76.0
 owner: Guivos
 last_updated: 2026-08-08
 supersedes_partial:
-  - ROADMAP-12.74.0
+  - ROADMAP-12.75.0
 related:
   - GKR-STATE-001
-  - GPA-007
-  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
-  - UXA-000
-  - UXA-099
-  - UXA-100
+  - GKR-P9-GLOBAL-CONSOLIDATION-001
+  - GOG-001
   - UXA-101
-  - GKR-JOURNEYS-001
-  - GKR-JOURNEY-SCREEN-GALLERY-001
-  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
-  - GKR-JOURNEY-SURFACE-REGISTRY-001
-  - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GTM-007
+  - GTM-008
   - M7.88
 ---
 
-# Roadmap Arquitetural — Saída Consciente para Fronteira Externa Validada
+# Roadmap Arquitetural — Consolidação Documental P0–P9
 
 ## 1. Autoridade
 
-Este documento governa a sequência global do Repositório. O estado oficial permanece no Registro do Estado Atual e só se torna vigente na `main` após integração governada.
+Este roadmap registra o estado global após a ressincronização documental de agosto de 2026. O estado oficial permanece em `GKR-STATE-001`.
 
-## 2. Estado proposto
+## 2. Estado vigente
 
-| Elemento | Estado | Referência |
-|---|---|---|
-| Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | saída consciente para fronteira externa validada | UXA-101; M7.88 |
-| Registros granulares | **53 superfícies/estados/fronteiras e 54 transições** | UXA-101 |
-| Galeria visual | `active` 0.21.0; **118 SVGs** | UXA-101 |
-| matriz por SVG | **118 arquivos / 31 perfis**; `active` 0.17.0 | UXA-101 |
-| validações funcionais vigentes de SVG | **118** | UXA-101 |
-| pendentes de validação específica | **0** | UXA-101 |
-| V4 | **encerrada até BND-001** | UXA-101 |
-| Jornadas principais | Pessoa, Coletivo e Organização em `draft` | Jornadas Integradas |
-| Engenharia de Produto | pausada antes de W0-01 | W0-01 |
-
-## 3. Sequência governada recente
-
-```text
-UXA-097 — compreensão inicial → primeira Hoje
-→ UXA-098 — publicação → descoberta → Mapa/Lista → Detalhe
-→ UXA-099 — dez estados residuais Opportunity Boost
-→ UXA-100/A1/A2/A3 — Planos materializados, validados e promovidos
-→ UXA-101 — Detalhe → revisão consciente → BND-001
-```
-
-Nenhuma etapa inicia automaticamente a seguinte.
-
-## 4. Resultado da UXA-101
-
-| Dimensão | Resultado |
+| Elemento | Estado |
 |---|---|
-| SVGs reformulados | **1 — uxa-007-opportunity-detail-mobile.svg** |
-| novos SVGs | **0** |
-| novas superfícies | **0** |
-| novas fronteiras | **0** |
-| novas transições | **0** |
-| `TRN-205` | **validada até BND-001** |
-| `BND-001` | **examinada como fronteira externa sem tela** |
-| SVGs totais | **118** |
+| Era | GE-2 — Knowledge |
+| marco funcional | **M7.88** |
+| última UXA | **UXA-101** |
+| UXA-102/V5 | **não iniciada** |
+| SVGs | **118** |
 | associações | **118** |
 | perfis | **31** |
 | superfícies/estados/fronteiras | **53** |
 | transições | **54** |
-| jornadas promovidas | 0 |
-| Engenharia iniciada | não |
+| Engenharia de Produto | pausada antes de W0-01 |
+| programa P0–P9 | documentalmente consolidado após integração de P9 |
 
-## 5. Contrato V4
-
-```text
-PER-203 — Detalhe
-→ “Ver como participar”
-→ revisão de saída na própria PER-203
-→ destino/responsável + dados/contexto + limites
-→ confirmação afirmativa
-→ revalidação do destino
-→ TRN-205
-→ BND-001
-→ autoridade externa
-```
-
-- revisão pré-saída não cria nova superfície;
-- ausência/invalidade do destino bloqueia redirecionamento silencioso;
-- cancelamento preserva a Pessoa no Detalhe;
-- saída não presume resultado externo;
-- retorno não presume inscrição, reserva, compra ou contratação;
-- dados pessoais e inferências não acompanham a saída sem finalidade e autorização adequadas.
-
-## 6. Fronteiras preservadas
-
-- `TRN-304`, `TRN-305` e `TRN-306`: integrações patrocinadas continuam parciais;
-- `TRN-416/426`: processo de contratação/dimensionamento assistido após `BND-002` continua parcial;
-- `BND-002` não pertence semanticamente a Enterprise, Scale, Coletivo, Organização ou qualquer plano específico;
-- gateway, cobrança real, proration, grace period e regras fiscais finais permanecem fora do escopo;
-- comportamento posterior a `BND-001` permanece sob autoridade externa;
-- nenhuma implementação é criada pela validação documental.
-
-## 7. Fila global
+## 3. Sequência funcional preservada
 
 ```text
-V1 — compreensão inicial → Tela Hoje — ENCERRADA pela UXA-097
-→ V2 — publicação → descoberta/mapa/lista/detalhe — ENCERRADA pela UXA-098
-→ V3 — dez estados residuais UXA-055 — ENCERRADA pela UXA-099
-→ Planos — identidade/promoção canônica — ENCERRADA pela UXA-100-A3
-→ V4 — efeito externo de oportunidades — ENCERRADA pela UXA-101 até BND-001
-→ V5 — erros, retornos e interrupções — PENDENTE
+UXA-097 — compreensão inicial → Tela Hoje
+→ UXA-098 — publicação → descoberta → Mapa/Lista → Detalhe
+→ UXA-099 — estados residuais Opportunity Boost
+→ UXA-100 — Planos
+→ UXA-101 — saída consciente → BND-001
+→ UXA-102/V5 — PENDENTE, NÃO INICIADA
 ```
 
-## 8. Dívidas preservadas
+Nenhuma frente P0–P9 cria nova UXA.
 
-- estados P0B adicionais de Meus Coletivos, Central e Início do Participante;
-- áreas P1 de comunicação especializada;
-- `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` parciais;
-- `TRN-304`, `TRN-305` e `TRN-306` parciais;
-- cobrança real e gateway de Planos;
-- contratação/dimensionamento assistido após `BND-002`;
-- entradas contextuais de Planos sem origem canônica adequada;
-- operação interna restante do Coletivo;
-- relação Organização–Coletivo ainda não materializada;
-- processo/resultados externos posteriores a `BND-001`.
+## 4. Consolidação temática
 
-## 9. Próxima iniciativa possível
+| Pacote | Resultado documental |
+|---|---|
+| P0 | intake/evidência preservado |
+| P1/P1.1 | semântica e nomenclaturas integradas |
+| P2 | Neo4j como referência de grafo |
+| P3 | naming/marca/ativos governados |
+| P4 | metodologia e gates de validação integrados |
+| P5 | arquitetura institucional/jurídica integrada |
+| P6 | privacidade e verdade operacional governadas |
+| P7 | internacionalização e gates territoriais integrados |
+| P8 | sete Produtos Especializados rebaselineados |
+| P9 | estado transversal, matriz e Public Canon reconciliados |
 
-V5 continua dependente de autorização humana separada. A auditoria dos Produtos Especializados é um diagnóstico transversal permitido após UXA-101 e não inicia automaticamente nova UXA, implementação ou Engenharia de Produto.
+## 5. Lacunas não fechadas por documentação
+
+Continuam dependentes de evidência ou autorização própria:
+
+- resultados reais de mercado e PMF;
+- implementação tecnológica e grafo em produção;
+- fatos registrários de marca/domínios;
+- constituição jurídica de eventual veículo social;
+- controles legais/privacidade em produção;
+- piloto e operação internacional;
+- cobrança/gateway real;
+- handoffs especializados ainda não materializados;
+- UXA-102/V5;
+- Product Engineering.
+
+## 6. Próximos caminhos possíveis
+
+Após P9, não existe “P10” automático.
+
+O próximo ato deve nascer de uma necessidade concreta e autoridade própria. Exemplos:
+
+- evidência de pesquisa → VAL;
+- decisão de implantação → ADR/Engineering;
+- fato jurídico/institucional → gates P5;
+- controle operacional/privacy → gates P6;
+- readiness/piloto territorial → gates P7;
+- nova continuidade funcional → UXA-102 somente por autorização humana separada;
+- implementação → Product Engineering somente por reativação explícita.
+
+## 7. Preservação
+
+`ressincronização documental concluída ≠ produto implementado ≠ operação comprovada`.

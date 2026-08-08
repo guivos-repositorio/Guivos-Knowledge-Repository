@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.28.0
+version: 2.29.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-08
 depends_on:
@@ -12,33 +12,31 @@ related:
   - GEA-000
   - PAS-001
   - GPA-007
-  - UXA-000
   - UXA-097
   - UXA-098
   - UXA-099
   - UXA-100
   - UXA-101
-  - GKR-JOURNEYS-001
-  - GKR-JOURNEY-SCREEN-GALLERY-001
-  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
-  - GKR-JOURNEY-SCREEN-CATALOG-001
-  - GKR-JOURNEY-SURFACE-REGISTRY-001
-  - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GTM-000
-  - GTM-006
+  - GTM-007
+  - GTM-008
   - ADR-007
   - GEA-GRAPH-REFERENCE-001
   - GPA-SPECIALIZED-EXPERIENCE-POLICY-001
-  - GPA-SPECIALIZED-JOURNEY-MATRIX-001
   - GKR-BRAND-ASSET-GOVERNANCE-001
-  - GKR-OFFICIAL-NAMING-AUTHORITY-001
-  - GKR-DIGITAL-ASSET-CONTROL-001
+  - GKR-FUNDACAO-GUIVOS-CONCEPT-001
+  - GKR-INSTITUTIONAL-LEGAL-ARCHITECTURE-001
+  - GKR-INSTITUTIONAL-LEGAL-EVIDENCE-001
+  - GKR-DATA-PRIVACY-CONSENT-001
+  - GKR-LEGAL-SURFACE-GATES-001
+  - GKR-OPERATIONAL-LEGAL-TRUTH-001
+  - GKR-INTERNATIONAL-OPERATIONS-READINESS-001
   - VAL-009
   - VAL-010
   - GEM-005-A1
-  - GKR-VALIDATED-UPDATES-SYNC-2026-08-08-001
-  - ROADMAP-12.75.0
+  - GKR-P9-GLOBAL-CONSOLIDATION-001
+  - ROADMAP-12.76.0
   - M7.88
 normative: true
 ---
@@ -47,159 +45,66 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro declara o estado global vigente da `main` após a sincronização governada das validações recentes de 2026-08-08.
+Este registro declara o estado global vigente do Guivos Knowledge Repository após a consolidação documental P1–P9 de 2026-08-08.
 
-Em caso de divergência entre este registro e resumos não normativos, prevalece `GKR-STATE-001` e, para cada domínio, a autoridade temática mais específica e mais recente.
+A consolidação documental **não cria novo marco funcional, não inicia implementação e não converte arquitetura, plano ou método em operação comprovada**. Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
-A sincronização temática **não cria novo marco funcional UXA**. O marco funcional permanece `M7.88`, encerrado pela UXA-101 no limite controlável pela Guivos.
+## 2. Estado global
 
-## 2. Estado global vigente
+| Elemento | Estado vigente |
+|---|---|
+| Era | GE-2 — Knowledge |
+| Marco funcional | **M7.88 — saída consciente para fronteira externa validada** |
+| Última frente funcional | **UXA-101** |
+| Próxima UXA | **UXA-102/V5 não iniciada** |
+| Engenharia de Produto | pausada antes de W0-01 |
+| Registros granulares | **53 superfícies/estados/fronteiras e 54 transições** |
+| Galeria visual | **118 SVGs** |
+| Matriz por SVG | **118 associações / 31 perfis** |
+| Jornadas principais | Pessoa, Coletivo e Organização permanecem `draft` |
+| P1/P1.1 | integrado — semântica e nomenclaturas reconciliadas |
+| P2 | integrado como arquitetura de referência — Neo4j `reference_selected` |
+| P3 | governança integrada — fatos registrários/digitais dependem de evidência |
+| P4 | método/gates integrados — resultado real de mercado não estabelecido |
+| P5 | arquitetura institucional integrada — Fundação Guivos continua conceito, não entidade comprovada |
+| P6 | arquitetura de privacidade/verdade operacional integrada — controles reais dependem de evidência |
+| P7 | governança territorial integrada — Portugal permanece `T1_candidate` |
+| P8 | sete Produtos Especializados rebaselineados |
+| P9 | consolidação global e Public Canon em edição corrente |
 
-| Elemento | Estado | Referência |
-|---|---|---|
-| Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
-| Marco funcional | **M7.88 — saída consciente para fronteira externa validada** | UXA-101 |
-| Fundação | congelada | GEA-000 |
-| Journey | funcionalmente estruturado | PAS-001 |
-| Registros granulares | **53 superfícies/estados/fronteiras e 54 transições** | UXA-101 |
-| Galeria visual | `active` 0.21.0; **118 SVGs** | UXA-101 |
-| Matriz por SVG | `active` 0.17.0; **118 arquivos / 31 perfis** | UXA-101 |
-| Jornadas Integradas | `active` 0.31.0; Pessoa, Coletivo e Organização permanecem `draft` | UXA-101 |
-| Taxonomia de planos | autoridade consolidada | GEM-004-PLAN-TAXONOMY-AUTHORITY-001 |
-| Go-to-Market | domínio integrado; metas continuam candidatas/cenários onde indicado | GTM-000 a GTM-006 |
-| Grafo | Neo4j selecionado como tecnologia primária de referência | ADR-007 |
-| Produtos Especializados | sete produtos rebaselineados contra jornadas e handoffs | GPA-SPECIALIZED-EXPERIENCE-POLICY-001 |
-| Marca/naming/ativos | governança documental integrada; fatos registrários dependem de evidência | GKR-BRAND-ASSET-GOVERNANCE-001 |
-| Validação de mercado | método e gates de evidência integrados; resultado real não estabelecido | VAL-009; VAL-010 |
-| Incentivos | guardrail ativo de propósito antes da recompensa | GEM-005-A1 |
-| Engenharia de Produto | pausada antes de W0-01 | W0-01 |
+## 3. Cobertura funcional preservada
 
-## 3. Cobertura funcional e visual preservada
+A consolidação P1–P9 não altera as contagens funcionais:
 
-| Indicador | Resultado |
-|---|---:|
-| SVGs existentes e referenciados | **118** |
-| associações individuais | **118** |
-| perfis de rastreabilidade | **31** |
-| com validação funcional vigente | **118** |
-| pendentes de validação específica de SVG | **0** |
-| IDs granulares com referência visual | **42 de 53** |
-| responsabilidades sem SVG dedicado | **9** |
-| fronteiras sem tela por definição | **2** |
-| superfícies/estados/fronteiras | **53** |
-| transições documentais | **54** |
+- 118 SVGs existentes e referenciados;
+- 118 associações individuais;
+- 31 perfis de rastreabilidade;
+- 118 validações funcionais vigentes de SVG;
+- 0 pendentes de validação específica de SVG;
+- 42 de 53 IDs granulares com referência visual;
+- 9 responsabilidades sem SVG dedicado;
+- 2 fronteiras sem tela por definição;
+- 53 superfícies/estados/fronteiras;
+- 54 transições documentais.
 
-A sincronização P1.1/P2/P3/P4/P8 e o guardrail GEM-005-A1 não criam SVG, `SURF`, `TRN`, `BND` ou nova UXA.
+A UXA-101 continua encerrando V4 em `BND-001`. Resultado executado por terceiro após essa fronteira não é presumido pela Guivos.
 
-## 4. Estado da Arquitetura da Experiência
+## 4. Participantes, planos e produtos
 
-A sequência funcional recente permanece:
+Participantes estruturais:
 
-```text
-UXA-097 — compreensão inicial → primeira Tela Hoje
-→ UXA-098 — publicação → descoberta → Mapa/Lista → Detalhe
-→ UXA-099 — dez estados residuais Opportunity Boost
-→ UXA-100/A1/A2/A3 — Planos, comparação, contratação e estados de pagamento
-→ UXA-101 — revisão consciente → TRN-205 → BND-001
-```
+- Pessoa;
+- Coletivo;
+- Organização.
 
-A UXA-101 encerra V4 no limite documental controlável pela Guivos:
+Taxonomia de planos:
 
-```text
-PER-203 — Detalhe
-→ revisão consciente de saída
-→ TRN-205
-→ BND-001 — autoridade externa
-```
+- Pessoa: Free · Plus · Pro;
+- Coletivo: Livre · Mobiliza · Impacta · Rede;
+- Organização: Conecta · Eleva · Transforma;
+- Guivos Business: Start · Growth · Scale · Enterprise.
 
-Nenhuma inscrição, reserva, compra, contratação, presença ou outro resultado posterior a `BND-001` é presumido pela Guivos.
-
-Continuidades preservadas:
-
-- `TRN-007` integralmente validada pela UXA-097;
-- `TRN-203`, `TRN-204`, `TRN-210` e `TRN-211` integralmente validadas pela UXA-098;
-- `COM-005` funcionalmente validado pela UXA-099;
-- oito transições do trecho governado de Coletivos permanecem integralmente validadas: `TRN-105`, `106`, `107`, `108`, `109`, `110`, `111` e `112`;
-- 15 transições internas de Planos permanecem localmente validadas;
-- `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais.
-
-## 5. Taxonomia vigente de participantes e planos
-
-A autoridade consolidada é:
-
-- **Pessoa:** Free · Plus · Pro;
-- **Coletivo:** Livre · Mobiliza · Impacta · Rede;
-- **Organização:** Conecta · Eleva · Transforma;
-- **Guivos Business:** Start · Growth · Scale · Enterprise.
-
-Regras estruturais:
-
-- Organização ≠ Guivos Business;
-- Organização Transforma ≠ Guivos Business Enterprise;
-- não existe correspondência automática 1:1 entre planos de Organização e tiers de Business;
-- plano representa profundidade de serviço, capacidade, escopo ou complexidade atendida — nunca valor humano, mérito, prestígio ou nível de evolução;
-- `BND-002` é fronteira genérica de contratação/dimensionamento assistido e não pertence semanticamente a um plano específico.
-
-A auditoria P1.1 integrou também um gate permanente para impedir regressão de nomenclaturas legadas conhecidas.
-
-## 6. Go-to-Market, crescimento e capital
-
-O domínio GTM integrado governa, como baseline candidata onde indicado:
-
-- lançamento e densidade inicial em Belo Horizonte;
-- São Paulo como principal frente comercial de escala nacional;
-- Portugal como primeiro mercado internacional condicionado a gates;
-- Lisboa como base inicial candidata e Porto como expansão posterior;
-- metas de Pessoas, Coletivos, Organizações, Business e Parcerias Estratégicas por horizonte;
-- receita e run-rate de planejamento separados de realizado, contrato, faturamento e caixa;
-- valuation histórico candidato de R$ 10 milhões a R$ 15 milhões, com âncora interna de R$ 12 milhões pre-money;
-- horizontes curto M0–M12, médio M13–M36 e longo M37–M60.
-
-Separação canônica:
-
-```text
-Organização
-≠ oportunidade
-≠ Guivos Business
-≠ Parceria Estratégica
-```
-
-Parceria Estratégica é relação corporativa da Guivos enquanto empresa com contraparte externa. Relação cujo objeto seja entregar valor diretamente a Pessoas ou Coletivos pertence ao papel de Organização quando aplicável.
-
-Parceria Estratégica não exige receita direta; pode gerar alcance, escala, infraestrutura, tecnologia, integração, apoio, divulgação, acesso territorial, eficiência ou outra capacidade corporativa material.
-
-Metas permanecem `candidate_target` ou `scenario` quando assim classificadas e não são convertidas em compromisso ou realizado pela publicação.
-
-## 7. Arquitetura de grafo e Guivos Intelligence
-
-`ADR-007` estabelece **Neo4j como tecnologia primária de referência para a camada de grafo**.
-
-A leitura obrigatória é:
-
-```text
-reference_selected
-≠ POC
-≠ provisioned
-≠ integrated
-≠ production
-```
-
-Estado factual:
-
-- referência Neo4j: selecionada;
-- POC: não comprovada;
-- Aura/Server/cluster: não declarado como provisionado;
-- dados reais no grafo: não comprovados;
-- Graph Data Science: não implementado por esta decisão;
-- GraphRAG: não implementado por esta decisão;
-- Power BI: não declarado conectado ao grafo;
-- produção: não autorizada.
-
-`Grafo Global ≠ Guivos Intelligence ≠ Neo4j`. O produto/camada de inteligência não é substituído pela tecnologia de persistência/consulta de grafo.
-
-## 8. Produtos Especializados e handoffs
-
-A arquitetura vigente reconhece sete Produtos Especializados:
+Sete Produtos Especializados:
 
 1. Guivos Journey;
 2. Guivos Mall;
@@ -209,27 +114,65 @@ A arquitetura vigente reconhece sete Produtos Especializados:
 6. Guivos Intelligence;
 7. Guivos Ads.
 
-Participante não é produto e produto não é participante.
+Separações canônicas:
 
-A política vigente preserva:
+```text
+Organização ≠ Guivos Business
+participante ≠ produto
+plano ≠ mérito ou nível de evolução
+Parceria Estratégica ≠ Organização
+Guivos Mall = nome canônico
+Guivos Marketplace = alias histórico/migração
+```
 
-- Journey como host principal da experiência;
-- Intelligence como apoio transversal com proveniência e explicabilidade;
-- Business como produto B2B separado de Organização;
-- Mall como responsabilidade comercial/transacional própria quando materializada;
-- Travel como responsabilidade especializada de viagem quando materializada;
-- Media como responsabilidade editorial quando materialmente distinta;
-- Ads como responsabilidade publicitária com natureza patrocinada identificável.
+`BND-002` permanece fronteira genérica de contratação/dimensionamento assistido e não pertence semanticamente a um plano específico.
 
-`TRN-203` representa publicação por Organização → descoberta Journey, e não Business → Journey.
+## 5. Go-to-Market e internacionalização
 
-Journey → Mall e Journey → Travel continuam gaps reais de handoff; nenhum `SURF` ou `TRN` foi inventado para fechá-los.
+O GTM governa como baseline candidata:
 
-A PR #203 permanece fonte histórica/intermediária e não autoridade candidata de merge.
+```text
+Belo Horizonte
+→ São Paulo
+→ amplificação nacional seletiva
+→ Portugal / Lisboa
+→ Portugal / Porto somente após gate
+→ novo país europeu somente mediante novo gate
+```
 
-## 9. Marca, naming, domínios e ativos digitais
+Portugal permanece `T1_candidate`.
 
-A governança integrada estabelece:
+Não estão comprovados por esta documentação:
+
+- entidade/filial portuguesa;
+- equipe local;
+- contratos locais;
+- IVA/OSS em operação;
+- PSP europeu em produção;
+- suporte internacional em produção;
+- piloto Lisboa executado;
+- Porto autorizado;
+- segundo país europeu autorizado.
+
+A governança territorial exige distinguir acesso internacional, pesquisa, readiness, piloto autorizado, piloto executado e mercado ativo.
+
+## 6. Grafo e Intelligence
+
+Neo4j é a tecnologia primária de referência para a camada de grafo.
+
+```text
+reference_selected
+≠ POC
+≠ provisioned
+≠ integrated
+≠ production
+```
+
+Não há autoridade suficiente para afirmar POC, cluster/Aura provisionado, dados pessoais reais no grafo, GDS em produção, GraphRAG implementado ou Power BI conectado.
+
+`Grafo Global ≠ Guivos Intelligence ≠ Neo4j`.
+
+## 7. Marca, naming e ativos digitais
 
 ```text
 nome canônico
@@ -239,122 +182,119 @@ nome canônico
 ≠ serviço em produção
 ```
 
-Também:
+O GKR governa naming e estados de evidência, mas não presume titularidade, proteção territorial, domínio adquirido ou controle técnico específico sem prova própria. Segredos, credenciais, recovery codes, chaves, tokens e inventário operacional sensível permanecem fora do corpus público.
 
-- `Guivos Mall` é o nome canônico do produto;
-- `Guivos Marketplace` permanece somente como alias histórico/de migração;
-- protocolo ou pedido não equivale a concessão;
-- proteção nacional não equivale a proteção global;
-- plano de proteção não equivale a execução;
-- inventário defensivo, registradores, account IDs, DNS detalhado, contatos de recuperação, credenciais, tokens, chaves e recovery codes não pertencem ao corpus público.
+## 8. Validação de mercado
 
-A existência da governança não comprova registro, titularidade, domínio adquirido ou controle técnico específico. Esses estados dependem de evidência própria.
+VAL-001–010 constituem o sistema metodológico B2C inicial.
 
-## 10. Validação de mercado
-
-O sistema VAL-001–010 está documentado para a validação B2C inicial.
-
-Autoridades metodológicas incluem:
-
-- VAL-002 2.1.0 com 19 perguntas;
-- pré-teste previsto de 10 a 15 participantes;
-- mínimo de 200 respostas válidas para decisão inicial;
-- meta preferencial de 500 respostas válidas;
-- IFO, compreensão, relevância, contribuição, intenção, interesse e IGV;
-- decisões possíveis Go, Go com ajustes, Pivot parcial ou No-Go temporário.
-
-A leitura obrigatória é:
+Parâmetros governados incluem questionário VAL-002 2.1.0 com 19 perguntas, pré-teste previsto de 10–15 participantes, mínimo de 200 respostas válidas para decisão inicial e meta preferencial de 500.
 
 ```text
 método definido
-≠ instrumento pronto
-≠ aplicação executada
+≠ instrumento aplicado
 ≠ base válida
-≠ métricas calculadas
+≠ KPI calculado
 ≠ decisão de mercado
+≠ product-market fit
 ```
 
-`VAL-009` e `VAL-010` exigem evidência E0–E7 antes de promover resultados. Neste estado global, não existe autoridade suficiente para declarar PMF, disposição a pagar, retenção, recorrência, resultado real da pesquisa ou alcance de 200/500 respostas.
+Neste checkpoint não existe evidência integrada suficiente para declarar PMF, disposição a pagar, retenção, recorrência ou resultado real da pesquisa.
 
-## 11. Incentivos, pontos e créditos
+## 9. Incentivos
 
-`GEM-005-A1` estabelece o guardrail **Propósito Antes do Incentivo**.
+`GEM-005-A1` estabelece **Propósito Antes do Incentivo**.
 
-A Guivos não deverá construir uma experiência em que a pessoa persiga saldo, pontos, créditos, sequência ou ranking em substituição à própria evolução.
+Pontos, créditos, saldo, streak ou ranking não podem substituir evolução, autonomia ou valor legítimo como objetivo da experiência. Nenhum programa operacional de pontos/créditos, carteira, token, cashback ou conversão está autorizado.
+
+## 10. Arquitetura institucional e Fundação Guivos
+
+`Fundação Guivos` permanece:
 
 ```text
-evolução e valor legítimo
-> acumulação e engajamento artificial
+conceito institucional social validado
++ nome de trabalho
+≠ forma jurídica escolhida
+≠ entidade constituída
+≠ CNPJ/registro comprovado
+≠ operação social própria comprovada
 ```
 
-Pontos, créditos ou benefícios futuros somente podem ser considerados quando apoiam finalidade legítima, reduzem barreiras ou reforçam uma ação que continuaria valiosa mesmo sem recompensa.
+F0–F9 governam a eventual progressão do conceito até uma operação institucional evidenciada. A forma jurídica permanece `unresolved`.
 
-Nenhum programa real de pontos, conversão, carteira, token, transferência, cashback, saldo ou implementação é autorizado por este guardrail.
+## 11. Privacidade, consentimentos e verdade operacional
 
-## 12. Dívidas e pacotes ainda não promovidos
+P6 estabelece:
 
-Permanecem fora de autoridade operacional ou ainda dependentes de consolidação/evidência:
+```text
+aceite contratual ≠ consentimento LGPD ≠ preferência voluntária
+arquitetura de privacidade ≠ conformidade operacional comprovada
+política em draft ≠ política publicada
+controle projetado ≠ controle implementado ≠ controle evidenciado
+```
 
-- P5 — arquitetura institucional, jurídica e eventual Fundação Guivos;
-- P6 — verdade operacional pública, privacidade, consentimentos e superfícies legais;
-- P7 — internacionalização operacional além da estratégia/gates já governados em GTM;
-- P9 — consolidação global e nova edição do Public Canon;
-- dados reais da validação de mercado;
-- proteção registral e controle de ativos específicos sem evidência;
-- implementação de grafo;
-- cobrança real, gateway, proration, grace period e política fiscal final;
-- processos posteriores a `BND-001` ou `BND-002` sob autoridade externa/assistida apropriada.
+Não são presumidos como operacionais: Termos publicados, Aviso/Política de Privacidade vigente, consentimentos, centro de preferências, inventário de cookies/SDKs, Encarregado formalmente indicado, fluxo de direitos, incident response LGPD ou dados pessoais em produção no grafo.
 
-Não preencher essas lacunas por inferência é parte da governança do GKR.
+## 12. Public Canon
 
-## 13. Estado documental funcional preservado
+`GOG-001 — Guia Oficial da Guivos` é a única superfície institucional classificada como `public-canon` neste domínio documental.
 
-| Camada | Estado |
+O Public Canon traduz autoridades do GKR para linguagem pública e deve distinguir claramente:
+
+- visão e disponibilidade real;
+- arquitetura e implementação;
+- preço/plano candidato e oferta vigente;
+- expansão planejada e mercado ativo;
+- conceito institucional e entidade constituída;
+- privacidade por design e controles efetivamente publicados/operacionais.
+
+Nenhum texto público pode promover estado superior ao evidenciado nas autoridades internas.
+
+## 13. Programa P0–P9
+
+O programa amplo de ressincronização documental está **consolidado** quanto aos pacotes temáticos previstos:
+
+- P0 — intake/evidência: preservado;
+- P1/P1.1 — semântica/nomenclatura: integrado;
+- P2 — tecnologia/grafo: integrado como referência;
+- P3 — marca/naming/ativos: integrado;
+- P4 — validação de mercado: integrado como método/gates;
+- P5 — institucional/jurídico: integrado como arquitetura/gates;
+- P6 — operação/privacidade/legal: integrado como arquitetura/gates;
+- P7 — internacionalização: integrado como programa territorial/gates;
+- P8 — Produtos Especializados: integrado;
+- P9 — estado global/Public Canon: consolidado por `GKR-P9-GLOBAL-CONSOLIDATION-001`.
+
+**Encerramento documental não significa encerramento das lacunas operacionais.** Itens dependentes de evidência permanecem abertos em seus domínios próprios.
+
+## 14. Fila funcional
+
+| Família | Estado |
 |---|---|
-| Arquitetura da Experiência | `active` 0.94.0 |
-| Jornadas Integradas | `active` 0.31.0 |
-| Jornada da Pessoa | `draft` 0.15.0 |
-| Jornada do Coletivo | `draft` 0.15.0 |
-| Jornada da Organização | `draft` 0.8.0 |
-| catálogo integrado | `active` 0.26.0 |
-| galeria visual | `active` 0.21.0 |
-| galeria de Planos | `active` 0.3.0 |
-| matriz por SVG | `active` 0.17.0 |
-| lacunas | `active` 0.26.0 |
-| registro de superfícies | `active` 0.17.0 |
-| registro de transições | `active` 0.18.0 |
-| detalhamento comercial/fronteira | `active` 0.5.0 |
-| protótipo, aplicação, motor e testes | não iniciados |
-| Engenharia de Produto | pausada antes de W0-01 |
+| V1 — compreensão inicial → Tela Hoje | encerrada pela UXA-097 |
+| V2 — publicação → descoberta/mapa/lista/detalhe | encerrada pela UXA-098 |
+| V3 — estados residuais Opportunity Boost | encerrada pela UXA-099 |
+| Planos — identidade/promoção canônica | encerrada pela UXA-100-A3 |
+| V4 — efeito externo de oportunidades | encerrada pela UXA-101 até BND-001 |
+| V5 — erros, retornos e interrupções | **pendente; não iniciada** |
 
-## 14. Fila funcional preservada
+## 15. Preservações finais
 
-| Ordem | Continuidade ou família | Estado |
-|---:|---|---|
-| V1 | compreensão inicial → Tela Hoje | encerrada por UXA-097 |
-| V2 | publicação → descoberta/mapa/lista/detalhe | encerrada por UXA-098 |
-| V3 | dez estados residuais UXA-055 | encerrada por UXA-099 |
-| Planos | identidade e promoção canônica | encerrada por UXA-100-A3 |
-| V4 | efeito externo de oportunidades | encerrada por UXA-101 até BND-001 |
-| V5 | erros, retornos e interrupções | **pendente; não iniciada** |
-
-## 15. Preservações
-
-- materialização, validação, promoção, contratação e implementação são estados distintos;
-- arquitetura de referência não é implantação;
-- preço candidato não é disposição a pagar;
-- projeção não é realizado;
-- valuation interno não é laudo, oferta ou promessa;
-- validação até uma fronteira não valida sistema de terceiro;
-- relação comercial não compra relevância funcional;
-- recompensa não compra evolução, mérito ou autoridade;
-- Pessoa, Coletivo e Organização permanecem `draft`;
+- M7.88 permanece o marco funcional;
+- UXA-101 permanece a última frente funcional;
 - UXA-102/V5 não foi iniciada;
 - Engenharia de Produto permanece pausada antes de W0-01;
+- Pessoa, Coletivo e Organização permanecem jornadas `draft`;
+- materialização, validação, promoção, contratação, implementação e operação são estados distintos;
+- projeção não é realizado;
+- preço não é disposição a pagar;
+- capital não é receita;
+- valuation interno não é laudo/oferta/promessa;
+- relação comercial não compra relevância;
+- recompensa não compra evolução;
+- internacionalização planejada não é mercado ativo;
 - nenhuma etapa autoriza automaticamente a seguinte.
 
 ## 16. Próximo ato governado
 
-O repositório está sincronizado com as validações temáticas identificadas até este checkpoint.
-
-O próximo avanço global deve tratar somente pacotes ainda pendentes com evidência suficiente — especialmente P5, P6, P7 e, após suas decisões aplicáveis, P9/Public Canon — sem reabrir as autoridades recém-integradas salvo nova evidência ou decisão explícita.
+Após a consolidação P9, novas frentes devem partir de necessidade, evidência ou autorização própria. O P9 não inicia UXA-102, Product Engineering, operação internacional, implantação tecnológica, programa social, pesquisa real, cobrança ou qualquer outro ato operacional.
