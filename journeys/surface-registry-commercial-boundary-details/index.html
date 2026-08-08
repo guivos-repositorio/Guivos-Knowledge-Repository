@@ -8907,10 +8907,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-estado" class="md-nav__link">
+  <a href="#4-efeito-da-uxa-099" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Estado
+        4. Efeito da UXA-099
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-estado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Estado
       
     </span>
   </a>
@@ -8944,7 +8955,7 @@
 
 <h1 id="detalhamento-obrigatorio-da-camada-comercial-e-da-fronteira">Detalhamento Obrigatório da Camada Comercial e da Fronteira<a class="headerlink" href="#detalhamento-obrigatorio-da-camada-comercial-e-da-fronteira" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este arquivo integra o <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens, maturidade ou status das entradas.</p>
+<p>Este arquivo integra o <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens por si só.</p>
 <h2 id="2-campos-por-identificador">2. Campos por identificador<a class="headerlink" href="#2-campos-por-identificador" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9012,7 +9023,7 @@
 </tr>
 <tr>
 <td>GKR-SURF-COM-004</td>
-<td>UXA-046 — <code>docs/experience-architecture/uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md</code></td>
+<td>UXA-046/053 — gestão ativa desktop/móvel</td>
 <td>indeterminado</td>
 <td>campanha ativa</td>
 <td>ajustar, pausar, retomar ou encerrar campanha</td>
@@ -9022,23 +9033,23 @@
 <td>revisar, desfazer quando permitido, pausar ou encerrar</td>
 <td>nenhuma identificada</td>
 <td>parcial</td>
-<td>validação residual</td>
-<td>entrada documental seletiva; não declara jornada completa</td>
+<td>integração com estados residuais</td>
+<td>validações locais UXA-047/054; transições permanecem separadas</td>
 </tr>
 <tr>
 <td>GKR-SURF-COM-005</td>
-<td>UXA-055 — <code>docs/experience-architecture/uxa-055-opportunity-boost-residual-states-low-fidelity-wireframes.md</code></td>
-<td>0.1.0</td>
-<td>estados anteriores</td>
-<td>decisão varia por estado residual e permanece não validada como conjunto</td>
-<td>continuidades específicas</td>
-<td>erro técnico, inventário, densidade, preferências, ocultação, denúncia e contestação</td>
-<td>gates específicos ainda aguardam validação funcional</td>
-<td>retorno, desfazer ou continuidade dependem do estado; não examinados</td>
-<td>referência incorreta UXA-047 a UXA-054 corrigida pela UXA-078</td>
-<td>não examinado</td>
-<td>validação dos estados residuais</td>
-<td>dez referências móveis materializadas pela UXA-055; validação funcional permanece ausente</td>
+<td>UXA-055 — <code>docs/experience-architecture/uxa-055-opportunity-boost-residual-states-low-fidelity-wireframes.md</code>; validação UXA-099</td>
+<td>0.1.0 + validação 0.1.0</td>
+<td>erro, zero inventário, baixa oferta, falha de atualização ou controle da pessoa</td>
+<td>continuar, revisar, tentar novamente, ocultar, reduzir, desativar, desfazer, denunciar ou contestar conforme o estado</td>
+<td>continuidade específica sem efeito implícito</td>
+<td>erro técnico, inventário, densidade, versão confirmada/candidata, preferências, denúncia e contestação</td>
+<td>gates específicos validados pela UXA-099; mudança material não confirmada bloqueia entrega futura</td>
+<td>retorno e reversão conforme escopo; escolhas independentes; repetição idempotente</td>
+<td>materialização UXA-055 refinada pela validação UXA-099</td>
+<td><strong>superfície validada; TRN-305 permanece parcial</strong></td>
+<td>integração ponta a ponta das transições</td>
+<td>dez referências móveis funcionalmente validadas; oito sem alteração e duas reformuladas</td>
 </tr>
 <tr>
 <td>GKR-SURF-BND-001</td>
@@ -9059,8 +9070,10 @@
 </table>
 <h2 id="3-regra-de-incerteza">3. Regra de incerteza<a class="headerlink" href="#3-regra-de-incerteza" title="Permanent link">&para;</a></h2>
 <p>Valores sem evidência suficiente permanecem <code>indeterminado</code>, <code>ausente</code> ou <code>não examinado</code>. Nenhum campo poderá ser completado por inferência.</p>
-<h2 id="4-estado">4. Estado<a class="headerlink" href="#4-estado" title="Permanent link">&para;</a></h2>
-<p>O detalhamento está <code>active</code> como parte integrante do registro promovido pela UXA-080. O status aprova o instrumento documental e não altera maturidade, continuidade ou lacuna de qualquer entrada.</p>
+<h2 id="4-efeito-da-uxa-099">4. Efeito da UXA-099<a class="headerlink" href="#4-efeito-da-uxa-099" title="Permanent link">&para;</a></h2>
+<p>A UXA-099 transforma <code>COM-005</code> de conjunto materializado sem validação específica em conjunto funcionalmente validado. A alteração não promove <code>TRN-305</code>, <code>TRN-304</code> ou <code>TRN-306</code> e não cria implementação.</p>
+<h2 id="5-estado">5. Estado<a class="headerlink" href="#5-estado" title="Permanent link">&para;</a></h2>
+<p>O detalhamento está <code>active</code> como parte integrante do registro. O status aprova o instrumento documental e não altera automaticamente maturidade de transições ou jornadas.</p>
 
 
 

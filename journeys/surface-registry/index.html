@@ -6726,10 +6726,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-efeito-da-uxa-097" class="md-nav__link">
+  <a href="#6-efeito-da-uxa-099" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Efeito da UXA-097
+        6. Efeito da UXA-099
       
     </span>
   </a>
@@ -9064,10 +9064,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-efeito-da-uxa-097" class="md-nav__link">
+  <a href="#6-efeito-da-uxa-099" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Efeito da UXA-097
+        6. Efeito da UXA-099
       
     </span>
   </a>
@@ -9113,7 +9113,7 @@
 <h1 id="registro-granular-de-superficies-e-estados">Registro Granular de Superfícies e Estados<a class="headerlink" href="#registro-granular-de-superficies-e-estados" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.</p>
-<p>A versão 0.14.0 preserva as 40 entradas. A UXA-097 revalida a variante de decisão de <code>PER-007</code>, adiciona uma variante inicial validada a <code>PER-008</code> e não cria qualquer novo ID.</p>
+<p>A versão 0.15.0 preserva as 40 entradas. A UXA-099 valida <code>COM-005</code> no escopo dos dez estados residuais da UXA-055 e não cria qualquer novo ID.</p>
 <h2 id="2-convencoes">2. Convenções<a class="headerlink" href="#2-convencoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>ausente</code>: responsabilidade conhecida sem materialização necessária;</li>
@@ -9589,8 +9589,8 @@
 <td>protegido</td>
 <td>materializado</td>
 <td>UXA-038</td>
-<td>UXA-046</td>
-<td>não consolidada aqui</td>
+<td>UXA-046/053</td>
+<td>UXA-047/054</td>
 <td><a href="../surface-registry-commercial-boundary-details/">Comercial</a></td>
 </tr>
 <tr>
@@ -9598,10 +9598,10 @@
 <td>dez estados residuais</td>
 <td>anunciante/Pessoa</td>
 <td>diversos</td>
-<td>materializado</td>
+<td><strong>validado</strong></td>
 <td>UXA-038</td>
 <td>UXA-055</td>
-<td>—</td>
+<td><strong>UXA-099</strong></td>
 <td><a href="../surface-registry-commercial-boundary-details/">Comercial</a></td>
 </tr>
 <tr>
@@ -9624,15 +9624,16 @@
 <li><code>PER-106</code> é central de participações e estados relacionados, não feed;</li>
 <li><code>PER-107</code> é triagem de atualizações e sua versão corrente está validada pela UXA-096;</li>
 <li><code>PER-108</code> é síntese interna validada e não replica Central ou canais especializados;</li>
-<li><code>COM-005</code> continua sem validação funcional específica;</li>
+<li><code>COM-005</code> está funcionalmente validado pela UXA-099; sua validação não promove automaticamente <code>TRN-305</code>;</li>
 <li><code>BND-001</code> é endpoint documental, não tela.</li>
 </ul>
-<h2 id="6-efeito-da-uxa-097">6. Efeito da UXA-097<a class="headerlink" href="#6-efeito-da-uxa-097" title="Permanent link">&para;</a></h2>
+<h2 id="6-efeito-da-uxa-099">6. Efeito da UXA-099<a class="headerlink" href="#6-efeito-da-uxa-099" title="Permanent link">&para;</a></h2>
 <ul>
 <li>40 IDs preservados;</li>
-<li><code>PER-007</code>: permanece validado; variante de decisão corrente revalidada;</li>
-<li><code>PER-008</code>: permanece validado e ganha primeira variante validada;</li>
-<li><code>TRN-007</code> é tratado no registro de transições e passa a integralmente validada;</li>
+<li><code>COM-005</code>: materializado → <strong>validado</strong> no escopo dos dez estados UXA-055;</li>
+<li>10 SVGs residuais passam a possuir validação funcional específica;</li>
+<li>2 SVGs são reformulados sem criação de novo ID;</li>
+<li><code>TRN-305</code> permanece parcial no registro de transições;</li>
 <li>nenhuma promoção de jornada ou implementação é inferida.</li>
 </ul>
 <h2 id="7-estado">7. Estado<a class="headerlink" href="#7-estado" title="Permanent link">&para;</a></h2>
