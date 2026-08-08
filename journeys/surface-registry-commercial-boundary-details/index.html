@@ -8907,10 +8907,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-efeito-da-uxa-100-a3" class="md-nav__link">
+  <a href="#4-efeito-da-uxa-101" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Efeito da UXA-100-A3
+        4. Efeito da UXA-101
       
     </span>
   </a>
@@ -9064,18 +9064,18 @@
 </tr>
 <tr>
 <td>GKR-SURF-BND-001</td>
-<td>fronteira documental governada por UXA-004 — <code>docs/experience-architecture/uxa-004-opportunities-organizations-collectives-map.md</code>; UXA-007 — <code>docs/experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md</code></td>
-<td>indeterminado</td>
-<td>Detalhe de Oportunidade</td>
-<td>prosseguir para destino externo conscientemente identificado</td>
-<td>destino externo apresentado</td>
-<td>identificador do destino, finalidade, responsável e contexto mínimo quando disponível</td>
-<td>ação consciente; requisitos externos permanecem fora do GKR</td>
-<td>retorno quando tecnicamente possível; efeito externo não presumido</td>
-<td>substitui o endpoint em texto livre de GKR-TRN-205</td>
-<td>não examinado</td>
-<td>efeito externo não validado</td>
-<td>endpoint documental; não é participante estrutural, tela Guivos ou implementação externa</td>
+<td>UXA-004/007; validação UXA-101 — <code>docs/experience-architecture/uxa-101-conscious-external-boundary-validation.md</code></td>
+<td>validação 0.1.0</td>
+<td>estado de revisão em PER-203</td>
+<td>confirmar conscientemente saída para destino externo identificado ou permanecer no Detalhe</td>
+<td>autoridade transferida ao destino externo após confirmação e revalidação</td>
+<td>identificador do destino, finalidade, responsável e contexto mínimo; dados pessoais não acompanham por conveniência</td>
+<td>ação afirmativa, destino ainda válido/autorizado e disclosure proporcional de dados/contexto</td>
+<td>cancelar antes da saída; retornar à Guivos não presume conclusão externa</td>
+<td>endpoint textual anterior consolidado pela UXA-101</td>
+<td><strong>fronteira examinada; TRN-205 integralmente validada até o limite de autoridade Guivos</strong></td>
+<td>comportamento e resultado posteriores pertencem ao terceiro</td>
+<td>endpoint documental; não é participante estrutural, tela Guivos nem implementação externa</td>
 </tr>
 <tr>
 <td>GKR-SURF-BND-002</td>
@@ -9096,13 +9096,15 @@
 </table>
 <h2 id="3-regra-de-incerteza">3. Regra de incerteza<a class="headerlink" href="#3-regra-de-incerteza" title="Permanent link">&para;</a></h2>
 <p>Valores sem evidência suficiente permanecem <code>indeterminado</code>, <code>ausente</code> ou <code>não examinado</code>. Nenhum campo poderá ser completado por inferência.</p>
-<h2 id="4-efeito-da-uxa-100-a3">4. Efeito da UXA-100-A3<a class="headerlink" href="#4-efeito-da-uxa-100-a3" title="Permanent link">&para;</a></h2>
-<p>A UXA-100-A3 adiciona <code>BND-002</code> para impedir que Enterprise/Scale sejam representados como checkout autônomo. <code>TRN-416</code> e <code>TRN-426</code> chegam à fronteira, mas permanecem parciais porque o processo comercial posterior ainda não foi materializado como conjunto.</p>
+<h2 id="4-efeito-da-uxa-101">4. Efeito da UXA-101<a class="headerlink" href="#4-efeito-da-uxa-101" title="Permanent link">&para;</a></h2>
+<p>A UXA-101 examina <code>BND-001</code> e valida <code>TRN-205</code> <strong>até a fronteira de autoridade da Guivos</strong>. O estado de revisão permanece em <code>PER-203</code>; nenhum SVG é criado para a fronteira e nenhum resultado externo é presumido.</p>
+<p>A Guivos deve interromper a saída quando o destino conhecido não puder ser revalidado e deve preservar retorno seguro ao Detalhe. Dados pessoais, inferências ou histórico de jornada não acompanham a transição sem finalidade e autorização adequadas.</p>
 <h2 id="5-preservacoes">5. Preservações<a class="headerlink" href="#5-preservacoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>COM-005</code> permanece validado pela UXA-099 sem promover <code>TRN-305</code>;</li>
-<li><code>BND-001</code> continua governando efeito externo de oportunidade;</li>
+<li><code>BND-001</code> continua sendo fronteira externa, não tela Guivos;</li>
 <li><code>BND-002</code> não define proposta, preço final, contrato, SLA ou capacidade real;</li>
+<li><code>TRN-416</code> e <code>TRN-426</code> permanecem parciais;</li>
 <li>pagamento de plano e Opportunity Boost permanecem objetos econômicos separados.</li>
 </ul>
 <h2 id="6-estado">6. Estado<a class="headerlink" href="#6-estado" title="Permanent link">&para;</a></h2>
