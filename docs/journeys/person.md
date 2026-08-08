@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.12.0
+version: 0.13.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -36,6 +36,8 @@ related:
   - UXA-097
   - UXA-098
   - UXA-100
+  - UXA-100-A1
+  - UXA-100-A2
 normative: false
 ---
 
@@ -128,10 +130,13 @@ Regras de jornada:
 - oportunidade pública, Explorar e Mapa permanecem acessíveis;
 - a tela apresenta matriz geral e ganho incremental `Free → Plus → Pro`;
 - se o plano atual e o alvo forem conhecidos, deve existir comparação direta, por exemplo `Free → Pro`;
+- recorrência, preço mensal/anual e data de início aparecem antes da confirmação;
+- assinatura não amplia consentimento ou escopo de dados automaticamente;
 - downgrade mostra o que será perdido ou reduzido antes da confirmação;
+- cancelamento mostra data efetiva, plano posterior e interrupção da renovação;
 - pagamento não altera relevância, confiança, posição orgânica nem garantia de evolução.
 
-Esta etapa é **materialização candidata** da UXA-100 e ainda não possui ID canônico de superfície ou transição.
+A UXA-100-A2 aprovou funcionalmente esta etapa no escopo candidato após reformulação da tela dedicada e do fluxo de pagamento. Ela ainda não possui ID canônico de superfície ou transição.
 
 ## 4. Pessoa em Coletivos
 
@@ -191,7 +196,7 @@ Esta vista permanece `draft` porque:
 
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` ainda são parciais;
 - `TRN-205` permanece parcial para efeito externo de oportunidade;
-- a etapa Planos da UXA-100 é candidata e ainda não possui superfície/transição canônica;
+- a etapa Planos da UXA-100 foi aprovada funcionalmente apenas como candidata e ainda não possui superfície/transição canônica;
 - estados P0B adicionais permanecem separados;
 - áreas internas especializadas a partir de `PER-108` não foram validadas como conjunto;
 - outras continuidades da jornada pessoal ainda não foram examinadas ponta a ponta.
@@ -200,4 +205,4 @@ O status `draft` não invalida referências locais e transições específicas j
 
 ## 9. Próxima evolução possível
 
-A UXA-100 adiciona Planos à leitura da jornada sem promovê-la. A próxima decisão desta frente é validar funcionalmente as telas e definir, somente então, superfícies e transições canônicas aplicáveis.
+A etapa Planos já foi auditada pela UXA-100-A2. A próxima decisão desta frente é definir, em ato governado separado, se os ativos devem ser fracionados e quais superfícies/transições canônicas serão criadas. Nenhuma promoção é automática.
