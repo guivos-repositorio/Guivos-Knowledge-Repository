@@ -148,6 +148,8 @@ nav:
       - Engineering Handoff — Paused for Economic Model: product-architecture/pas-001-guivos-journey-engineering-handoff-0.7.1.md
       - UIC-01 — Paused before W0-01: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.7.1.md
       - Produtos Especializados:
+          - Matriz Produto × Jornada: product-architecture/specialized-products-journey-integration-matrix.md
+          - Política de Representação e Handoffs: product-architecture/specialized-products-experience-and-handoff-policy.md
           - Guivos Journey: product-architecture/journey.md
           - Guivos Mall: product-architecture/mall.md
           - Guivos Business: product-architecture/business.md
