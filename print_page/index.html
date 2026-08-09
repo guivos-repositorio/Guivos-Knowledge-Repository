@@ -32852,6 +32852,7 @@ Neo4j = tecnologia de referência para realização da camada de grafo
 </tbody>
 </table>
 <p>A UXA-100-A4 adiciona somente <code>PER-009</code> como responsabilidade sem SVG e seis handoffs de navegação; os 118 ativos visuais permanecem em quantidade constante.</p>
+<p>A D5-A reforma quatro SVGs já associados a <code>PER-004</code>, <code>PER-007</code> e <code>PER-008</code> para materializar Domínios de Evolução sem criar novo ativo visual, superfície ou transição. As contagens permanecem inalteradas.</p>
 <h2 id="experience-architecture-4-decisoes-estruturais-preservadas">4. Decisões estruturais preservadas<a class="headerlink" href="#experience-architecture-4-decisoes-estruturais-preservadas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>materialização não equivale a validação funcional por padrão;</li>
@@ -32871,7 +32872,11 @@ Neo4j = tecnologia de referência para realização da camada de grafo
 <li>fronteira externa não é tela da Guivos;</li>
 <li>validação até uma fronteira não valida comportamento de terceiro;</li>
 <li>estado canônico vigente prevalece sobre estado visual obsoleto;</li>
-<li>validação documental não equivale a implementação técnica.</li>
+<li>validação documental não equivale a implementação técnica;</li>
+<li>Domínio de Evolução organiza sobre o que a jornada trata e não representa diagnóstico, identidade, score, objetivo, Próximo Passo ou prova de evolução;</li>
+<li>domínio candidato deve permanecer visualmente distinto de domínio confirmado;</li>
+<li>ausência de domínio confirmado é estado legítimo e não bloqueia a jornada;</li>
+<li>um participante ou item pode se relacionar a mais de um domínio quando houver autoridade e finalidade adequadas.</li>
 </ul>
 <h2 id="experience-architecture-5-evolucao-recente">5. Evolução recente<a class="headerlink" href="#experience-architecture-5-evolucao-recente" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>UXA-097 — primeira Hoje e TRN-007
@@ -32880,8 +32885,23 @@ Neo4j = tecnologia de referência para realização da camada de grafo
 → UXA-100/A1/A2/A3 — Planos nas três jornadas e promoção canônica
 → UXA-101 — revisão consciente de saída e TRN-205 até BND-001
 → UXA-100-A4 — reconciliação das origens administrativas de Planos
+→ D5-A — Domínios de Evolução em Expressão Guiada, Compreensão Inicial e Hoje
 </code></pre></div>
-<p>A UXA-100-A4 é uma subfrente da UXA-100 e não altera a última frente funcional numerada: UXA-101 continua vigente e UXA-102/V5 permanece não iniciada.</p>
+<p>A D5-A é uma frente de materialização semântica não numerada e não altera a última frente funcional numerada: UXA-101 continua vigente e UXA-102/V5 permanece não iniciada.</p>
+<h3 id="experience-architecture-51-resultado-da-d5-a">5.1 Resultado da D5-A<a class="headerlink" href="#experience-architecture-51-resultado-da-d5-a" title="Permanent link">&para;</a></h3>
+<p><a href="#experience-architecture-d5-a-evolution-domains-guided-expression-initial-understanding-today">GKR-UX-D5-A-001 — Materialização Controlada dos Domínios de Evolução na Jornada Inicial</a> consolida:</p>
+<ol>
+<li>área da jornada candidata e revisável na síntese estruturada de <code>PER-004</code>;</li>
+<li>reconciliação de <code>situação · impacto · prioridade · direção · contexto</code> como eixos de organização do relato, distintos dos Domínios de Evolução e das dimensões estruturais do Contexto Vivo;</li>
+<li>apresentação separada da área candidata em <code>PER-007</code>;</li>
+<li>gate próprio, sem pré-seleção, para confirmar, adicionar outra área, rejeitar ou manter em aberto;</li>
+<li>preservação de <code>Ainda estou descobrindo</code> como estado e <code>Outra área</code> como mecanismo de extensibilidade;</li>
+<li>domínio confirmado exibido somente como contexto discreto da continuidade em <code>PER-008</code>;</li>
+<li>ausência de domínio confirmada como estado legítimo da experiência;</li>
+<li>nenhuma nova superfície, transição ou família visual;</li>
+<li>118 SVGs, 31 perfis, 54 superfícies/estados/fronteiras e 60 transições preservados;</li>
+<li>D5-B, D5-C, UXA-102/V5 e Engenharia de Produto mantidos fora do escopo.</li>
+</ol>
 <h2 id="experience-architecture-6-resultado-da-uxa-100-a4">6. Resultado da UXA-100-A4<a class="headerlink" href="#experience-architecture-6-resultado-da-uxa-100-a4" title="Permanent link">&para;</a></h2>
 <p><a href="#experience-architecture-uxa-100-a4-plans-entry-origin-and-navigation-handoffs">UXA-100-A4 — Origens Administrativas e Handoffs de Entrada em Planos</a> consolida:</p>
 <ol>
@@ -32956,6 +32976,10 @@ Neo4j = tecnologia de referência para realização da camada de grafo
 <td>detalhamento comercial/fronteira</td>
 <td><code>active</code></td>
 </tr>
+<tr>
+<td>D5-A — Domínios na jornada inicial</td>
+<td><code>active</code> 1.0.0</td>
+</tr>
 </tbody>
 </table>
 <h2 id="experience-architecture-9-ressalvas-vigentes">9. Ressalvas vigentes<a class="headerlink" href="#experience-architecture-9-ressalvas-vigentes" title="Permanent link">&para;</a></h2>
@@ -32967,7 +32991,8 @@ Neo4j = tecnologia de referência para realização da camada de grafo
 <li><code>TRN-416/426</code> permanecem parciais;</li>
 <li>gateway, cobrança real, proration e processo de contratação/dimensionamento assistido após <code>BND-002</code> permanecem fora do escopo;</li>
 <li>processo externo após <code>BND-001</code> permanece sob autoridade de terceiro;</li>
-<li>Jornadas da Pessoa, Coletivo e Organização continuam <code>draft</code>.</li>
+<li>Jornadas da Pessoa, Coletivo e Organização continuam <code>draft</code>;</li>
+<li>D5-B e D5-C permanecem não iniciadas e exigem autorização separada.</li>
 </ul>
 <h2 id="experience-architecture-10-fila-global-preservada">10. Fila global preservada<a class="headerlink" href="#experience-architecture-10-fila-global-preservada" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>V1 — encerrada pela UXA-097
@@ -32976,10 +33001,12 @@ Neo4j = tecnologia de referência para realização da camada de grafo
 → Planos — identidade canônica encerrada pela UXA-100-A3
 → V4 — encerrada pela UXA-101 até BND-001
 → Planos — origem voluntária reconciliada pela UXA-100-A4
+→ D5-A — Domínios na jornada inicial materializados in-place
 → V5 — pendente e não iniciada
 </code></pre></div>
+<p>D5-A não consome nem antecipa V5.</p>
 <h2 id="experience-architecture-11-proxima-evolucao-possivel">11. Próxima evolução possível<a class="headerlink" href="#experience-architecture-11-proxima-evolucao-possivel" title="Permanent link">&para;</a></h2>
-<p>Materialização de <code>PER-009</code>, V5/UXA-102, cobrança real, contratação/dimensionamento assistido após <code>BND-002</code> e demais validações exigem autorização separada. Nenhuma delas é iniciada automaticamente por esta reconciliação.</p></section>
+<p>D5-B, D5-C, materialização de <code>PER-009</code>, V5/UXA-102, cobrança real, contratação/dimensionamento assistido após <code>BND-002</code> e demais validações exigem autorização separada. Nenhuma delas é iniciada automaticamente por esta frente.</p></section>
                     <section class='print-page md-section' id='section-9-2' heading-number='9.2'>
                         <h1>Fundação e padrões<a class='headerlink' href='#section-9-2' title='Permanent link'></a>
                         </h1>
