@@ -8,16 +8,16 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **2.32.0** |
+| Registro | `GKR-STATE-001` **2.33.0** |
 | Era | GE-2 — Knowledge |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária e retorno** |
-| Experience Architecture mais recente | **D5-C1 — Objetivos, Próximos Passos e Evolução contratados sem SVG** |
+| Experience Architecture mais recente | **D5-C2 — Objetivos, Próximos Passos e Evolução materializados em low-fidelity** |
 | Domínios de Evolução do Journey | **9 canônicos + estado “Ainda estou descobrindo”** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
-| Galeria | **118 SVGs** |
-| Matriz por SVG | **118 associações / 31 perfis** |
+| Galeria | **121 SVGs — 118 validados + 3 pendentes** |
+| Matriz por SVG | **121 associações / 34 perfis** |
 | Superfícies/estados/fronteiras | **57** |
 | Transições | **66** |
 | Engenharia de Produto | pausada antes de W0-01 |
@@ -27,10 +27,11 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 A superfície institucional pública vigente é o [GOG-001 — Guia Oficial da Guivos 5.0.0](public/guia-oficial-da-guivos.md).
 
-O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetura, implementação e operação. A D5-C1 é uma autoridade interna de Experience Architecture e não declara disponibilidade pública de novas telas.
+O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetura, implementação e operação. A D5-C2 é uma autoridade interna de Experience Architecture; seus wireframes não declaram disponibilidade pública de produto.
 
 ## Consolidação e reconciliações recentes
 
+- [D5-C2 — Materialização Low-Fidelity de Direção, Movimento e Evolução](experience-architecture/d5-c2-direction-movement-evolution-low-fidelity-wireframes.md)
 - [D5-C1 — Contrato das Superfícies de Direção, Movimento e Evolução](experience-architecture/d5-c1-direction-movement-evolution-surface-contract.md)
 - [D5-B — Domínios de Evolução na Camada de Oportunidades](experience-architecture/d5-b-evolution-domains-opportunities-layer.md)
 - [D5-A — Domínios de Evolução na Jornada Inicial](experience-architecture/d5-a-evolution-domains-guided-expression-initial-understanding-today.md)
@@ -61,7 +62,7 @@ Planos:
 
 A origem voluntária de Planos está formalizada por `PER-009 ↔ PER-301`, `COL-002 ↔ COL-301` e `ORG-001 ↔ ORG-301`. A origem da Pessoa permanece sem SVG dedicado e, portanto, seus dois handoffs ficam contratados até materialização suficiente.
 
-A D5-C1 registra a continuidade pessoal especializada:
+A D5-C1 contratou e a D5-C2 materializou visualmente a continuidade pessoal especializada:
 
 ```text
 PER-008 — Hoje
@@ -70,7 +71,7 @@ PER-008 — Hoje
 └── PER-012 — Minha Evolução
 ```
 
-As três responsabilidades e `TRN-008..013` permanecem contratadas e sem nova materialização visual.
+As três responsabilidades possuem agora um SVG low-fidelity cada, mas permanecem pendentes de validação funcional. `TRN-008..013` permanecem contratadas.
 
 Domínios de Evolução do Guivos Journey:
 
@@ -115,7 +116,7 @@ privacidade por arquitetura ≠ conformidade operacional comprovada
 método de pesquisa ≠ resultado de mercado
 pontos/créditos ≠ evolução
 navegar para Planos ≠ contratar ou iniciar cobrança
-PER-010..012 contratados ≠ telas materializadas
+PER-010..012 materializados ≠ superfícies funcionalmente validadas ≠ produto implementado
 TRN-008..013 contratadas ≠ continuidade validada
 Domínio de Evolução ≠ identidade ≠ score ≠ diagnóstico ≠ prova de evolução
 Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança
@@ -124,6 +125,6 @@ classificação candidata por IA ≠ domínio confirmado
 
 ## Limites preservados
 
-A reconciliação atual não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, classificação operacional por IA dos Domínios de Evolução, ontologia física do grafo, materialização visual automática de `PER-010..012`, cobrança real, processo posterior a `BND-002`, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado ou operação de controles legais/privacidade não comprovados.
+A reconciliação atual não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, classificação operacional por IA dos Domínios de Evolução, ontologia física do grafo, validação automática dos três SVGs D5-C2, promoção automática de `TRN-008..013`, cobrança real, processo posterior a `BND-002`, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado ou operação de controles legais/privacidade não comprovados.
 
 Em caso de divergência, prevalecem `GKR-STATE-001` e a autoridade temática específica mais recente.
