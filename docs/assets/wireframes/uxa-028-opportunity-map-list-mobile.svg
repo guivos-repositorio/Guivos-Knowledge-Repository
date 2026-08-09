@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Wireframe reformulado da visualização em Lista do Mapa de Oportunidades</title>
-  <desc id="desc">Estado móvel em Lista com contexto Agindo como, identificação de Lista territorial do Mapa, localização desativada, posição não acessada, região manual, quatro filtros ativos, ordenação explicável, cartões comparáveis, oportunidade selecionada e funcionamento sem carregar o mapa.</desc>
+  <title id="title">Lista do Mapa com Área da jornada como filtro explícito e área da oportunidade por item</title>
+  <desc id="desc">Estado móvel em Lista que preserva a mesma consulta do Mapa, admite Área da jornada como filtro escolhido pela Pessoa e apresenta domínio como metadado da oportunidade, sem classificação pessoal ou recomendação automática.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
 
@@ -40,16 +40,16 @@
     <text x="119" y="298" text-anchor="middle">Hoje ✓</text>
     <rect x="152" y="285" width="69" height="19" rx="9" fill="#f2f2f2" stroke="#777777"/>
     <text x="186" y="298" text-anchor="middle">Gratuitas ✓</text>
-    <rect x="226" y="285" width="59" height="19" rx="9" fill="#ffffff" stroke="#777777"/>
-    <text x="255" y="298" text-anchor="middle">Mais 2</text>
+    <rect x="226" y="285" width="74" height="19" rx="9" fill="#ffffff" stroke="#777777"/>
+    <text x="263" y="298" text-anchor="middle">Área + mais 2</text>
     <text x="370" y="298" text-anchor="end" text-decoration="underline">Limpar</text>
   </g>
 
   <text x="20" y="319" font-family="Arial, sans-serif" font-size="9" font-weight="700">8 resultados · região selecionada</text>
   <text x="370" y="319" text-anchor="end" font-family="Arial, sans-serif" font-size="7">Atualizados há instantes · <tspan text-decoration="underline">Atualizar</tspan></text>
   <rect x="20" y="328" width="350" height="29" rx="7" fill="#ffffff" stroke="#999999"/>
-  <text x="32" y="346" font-family="Arial, sans-serif" font-size="7">Ordenado por: correspondência à busca e aos filtros</text>
-  <text x="356" y="346" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Entender</text>
+  <text x="32" y="342" font-family="Arial, sans-serif" font-size="7">Área é escolhida no filtro; nunca aplicada silenciosamente.</text>
+  <text x="356" y="351" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Entender filtros</text>
 
   <rect x="20" y="367" width="350" height="134" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2"/>
   <rect x="234" y="377" width="122" height="18" rx="9" fill="#222222"/>
@@ -58,11 +58,12 @@
   <text x="32" y="414" font-family="Arial, sans-serif" font-size="13" font-weight="700">Mentoria de carreira</text>
   <text x="356" y="414" text-anchor="end" font-family="Arial, sans-serif" font-size="9" font-weight="700">Gratuita</text>
   <text x="32" y="432" font-family="Arial, sans-serif" font-size="7">Instituto Horizonte · amanhã, 18h · 2 vagas</text>
-  <text x="32" y="448" font-family="Arial, sans-serif" font-size="7">Acessibilidade: confirmada</text>
-  <text x="32" y="464" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Por que está aqui?</text>
-  <text x="141" y="464" font-family="Arial, sans-serif" font-size="7">Relação comercial: sem patrocínio</text>
-  <text x="32" y="488" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Salvar</text>
-  <text x="88" y="488" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Definir origem</text>
+  <text x="32" y="448" font-family="Arial, sans-serif" font-size="7" font-weight="700">Área: Trabalho, carreira e estudos</text>
+  <text x="32" y="464" font-family="Arial, sans-serif" font-size="7">Acessibilidade: confirmada · área declarada pela Organização</text>
+  <text x="32" y="480" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Por que está aqui?</text>
+  <text x="141" y="480" font-family="Arial, sans-serif" font-size="7">Domínio isolado não determina relevância</text>
+  <text x="32" y="493" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Salvar</text>
+  <text x="88" y="493" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Definir origem</text>
   <rect x="252" y="474" width="104" height="21" rx="6" fill="#222222"/>
   <text x="304" y="488" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#ffffff">Ver detalhes</text>
 
@@ -71,7 +72,7 @@
   <text x="32" y="548" font-family="Arial, sans-serif" font-size="12" font-weight="700">Feira de oportunidades</text>
   <text x="356" y="548" text-anchor="end" font-family="Arial, sans-serif" font-size="8" font-weight="700">Gratuita</text>
   <text x="32" y="565" font-family="Arial, sans-serif" font-size="7">Rede Aberta · sábado, 9h–16h · entrada livre</text>
-  <text x="32" y="581" font-family="Arial, sans-serif" font-size="7">Acessibilidade: parcial</text>
+  <text x="32" y="581" font-family="Arial, sans-serif" font-size="7">Área e acessibilidade disponíveis nos detalhes</text>
   <text x="32" y="598" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Por que está aqui?</text>
   <text x="141" y="598" font-family="Arial, sans-serif" font-size="7">Relação comercial: parceria identificada</text>
   <text x="356" y="598" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver detalhes</text>
@@ -81,7 +82,7 @@
   <text x="32" y="661" font-family="Arial, sans-serif" font-size="12" font-weight="700">Currículo e entrevistas</text>
   <text x="356" y="661" text-anchor="end" font-family="Arial, sans-serif" font-size="8" font-weight="700">R$ 25</text>
   <text x="32" y="678" font-family="Arial, sans-serif" font-size="7">Coletivo Caminhos · quinta, 19h · 12 vagas</text>
-  <text x="32" y="694" font-family="Arial, sans-serif" font-size="7">Acessibilidade: não informada</text>
+  <text x="32" y="694" font-family="Arial, sans-serif" font-size="7">Área e acessibilidade disponíveis nos detalhes</text>
   <text x="32" y="711" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Por que está aqui?</text>
   <text x="141" y="711" font-family="Arial, sans-serif" font-size="7">Relação comercial: conteúdo patrocinado</text>
   <text x="356" y="711" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver detalhes</text>
