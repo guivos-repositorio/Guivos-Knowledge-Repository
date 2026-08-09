@@ -9293,12 +9293,11 @@
 <p>A jornada completa permanece <code>draft</code>: <code>TRN-001</code>, <code>TRN-003</code>, <code>TRN-004</code> e <code>TRN-005</code> ainda não estão validadas ponta a ponta.</p>
 <h2 id="2-eixo-de-dominios-de-evolucao">2. Eixo de Domínios de Evolução<a class="headerlink" href="#2-eixo-de-dominios-de-evolucao" title="Permanent link">&para;</a></h2>
 <p>A D4 propaga para esta vista o vocabulário canônico de <code>PAS-001-DOMAIN-MODEL-001</code> e a reconciliação de <code>PAS-001-DOMAIN-RECON-001</code>.</p>
-<p>A Jornada da Pessoa passa a ser lida em dois eixos simultâneos:</p>
+<p>A Jornada da Pessoa é lida em dois eixos simultâneos:</p>
 <div class="highlight"><pre><span></span><code>como a jornada acontece
 ×
 sobre qual área da vida/evolução a jornada está tratando
 </code></pre></div>
-<p>Todos os nove Domínios de Evolução podem ser relevantes à Pessoa, conforme contexto declarado, autorizado ou legitimamente confirmado:</p>
 <table>
 <thead>
 <tr>
@@ -9368,27 +9367,20 @@ sobre qual área da vida/evolução a jornada está tratando
 → Evolução reconhecida pelo participante
 </code></pre></div>
 <p>O domínio pode aparecer antes, durante ou depois da formulação de um Objetivo. A Pessoa não deverá ser obrigada a classificar seu relato para continuar quando a capacidade aplicável não exigir essa classificação.</p>
-<p>Multidomínio é legítimo. Exemplo:</p>
-<div class="highlight"><pre><span></span><code>&quot;Quero melhorar minha renda para conseguir fazer uma viagem&quot;
-→ JED-003 Vida Financeira
-+ JED-007 Viagens, Lazer, Cultura e Novas Experiências
-</code></pre></div>
-<p><code>Ainda estou descobrindo</code> permanece estado legítimo de exploração e não constitui <code>JED-010</code>. <code>other_unmapped</code> preserva uma área ainda não representada adequadamente pela taxonomia e não autoriza reclassificação silenciosa.</p>
+<p>Multidomínio é legítimo. <code>Ainda estou descobrindo</code> permanece estado legítimo de exploração e não constitui <code>JED-010</code>; <code>other_unmapped</code> preserva área ainda não representada adequadamente.</p>
 <p>Regras desta vista:</p>
 <ul>
-<li><code>domain_link</code> pode ser <code>0..n</code> e permanece associação semântica, temporal e revisável;</li>
+<li><code>domain_link</code> pode ser <code>0..n</code>, temporal e revisável;</li>
 <li>domínio candidato não equivale a domínio confirmado;</li>
-<li>domínio não é identidade permanente da Pessoa;</li>
-<li>domínio não é diagnóstico, score, prioridade humana ou prova de evolução;</li>
+<li>domínio não é identidade permanente, diagnóstico, score, prioridade humana ou prova de evolução;</li>
 <li>saúde, espiritualidade, finanças e outros contextos sensíveis preservam finalidade, autoridade e proteção próprias;</li>
 <li>plano pago, patrocínio ou oferta comercial não altera domínio nem relevância funcional;</li>
-<li>D4 não cria nova tela, pergunta obrigatória, chip, card, SVG ou transição;</li>
-<li>D5-A e D5-B materializam o eixo em superfícies já existentes;</li>
-<li>D5-C1 cria somente as responsabilidades e handoffs mínimos de Objetivos, Próximos Passos e Evolução, ainda sem SVG.</li>
+<li>D5-A e D5-B materializam o eixo em superfícies existentes;</li>
+<li>D5-C1 contrata Objetivos, Próximos Passos e Evolução;</li>
+<li>D5-C2 materializa um estado-base low-fidelity para cada uma dessas três responsabilidades sem validá-las automaticamente.</li>
 </ul>
 <h2 id="3-direcao-movimento-e-evolucao-a-partir-de-hoje">3. Direção, movimento e evolução a partir de Hoje<a class="headerlink" href="#3-direcao-movimento-e-evolucao-a-partir-de-hoje" title="Permanent link">&para;</a></h2>
-<p>A D5-C1 reconhece três responsabilidades especializadas que já possuíam autoridade funcional no PAS-001, mas não possuíam identidade própria no registro granular da Experience Architecture.</p>
-<p>A estrutura passa a ser:</p>
+<p>A estrutura governada é:</p>
 <div class="highlight"><pre><span></span><code>PER-008 — Hoje
 ├── TRN-008 → PER-010 — Meus Objetivos
 │   └── TRN-009 → PER-008
@@ -9397,39 +9389,46 @@ sobre qual área da vida/evolução a jornada está tratando
 └── TRN-012 → PER-012 — Minha Evolução
     └── TRN-013 → PER-008
 </code></pre></div>
-<p>As três responsabilidades e as seis transições estão <strong>contratadas</strong>, sem materialização visual própria e sem validação ponta a ponta.</p>
+<p>A D5-C2 materializa:</p>
+<ul>
+<li><code>PER-010</code> em <code>d5-c2-person-objectives-mobile.svg</code>;</li>
+<li><code>PER-011</code> em <code>d5-c2-person-next-steps-mobile.svg</code>;</li>
+<li><code>PER-012</code> em <code>d5-c2-person-evolution-mobile.svg</code>.</li>
+</ul>
+<p>As três superfícies permanecem com <strong>validação funcional pendente</strong> e <code>TRN-008..013</code> permanecem <strong>contratadas</strong>.</p>
 <h3 id="31-per-010-meus-objetivos">3.1 PER-010 — Meus Objetivos<a class="headerlink" href="#31-per-010-meus-objetivos" title="Permanent link">&para;</a></h3>
-<p><code>PER-010</code> governa a compreensão, organização e controle dos objetivos da Pessoa, preservando estados, prioridades, critérios, marcos, progresso/evidências legítimas, conflitos, histórico, privacidade e revisão conforme <code>PAS-001-OBJ-VIEW-001</code>.</p>
-<p>Um objetivo pode possuir <code>0..n domain_link</code>, mas:</p>
+<p><code>PER-010</code> governa compreensão, organização e controle dos objetivos da Pessoa. O estado-base D5-C2 mostra portfólio, estados, Área da jornada, revisão e multidomínio quando legítimo, sem percentual automático de progresso.</p>
 <div class="highlight"><pre><span></span><code>Domínio de Evolução
 ≠ Objetivo
 ≠ prioridade
 ≠ critério de sucesso
 ≠ progresso
 </code></pre></div>
-<p>Para a futura UX, <code>área da jornada</code> deve ser distinguida de <code>dimensão estrutural do Contexto Vivo</code>.</p>
+<p>Área da jornada deve permanecer distinta de dimensão estrutural do Contexto Vivo.</p>
+<p><img alt="Meus Objetivos — D5-C2" src="../../assets/wireframes/d5-c2-person-objectives-mobile.svg" /></p>
 <h3 id="32-per-011-meus-proximos-passos">3.2 PER-011 — Meus Próximos Passos<a class="headerlink" href="#32-per-011-meus-proximos-passos" title="Permanent link">&para;</a></h3>
-<p><code>PER-011</code> governa movimentos contextuais, não uma lista coercitiva de tarefas.</p>
-<p>Pode organizar passos por estado, prioridade, prontidão, dependência, responsabilidade, período e Área da jornada. A formulação histórica <code>área da vida</code> é lida, para Experience Architecture, como Área da jornada vinculada semanticamente ao modelo de Domínios.</p>
+<p><code>PER-011</code> governa movimentos contextuais, não uma lista coercitiva de tarefas. O estado-base D5-C2 apresenta movimento atual e propostas como escolhas revisáveis, com ações de revisar, adiar, concluir, aceitar, manter em aberto ou não seguir.</p>
 <div class="highlight"><pre><span></span><code>domínio relacionado
 ≠ obrigação
 ≠ urgência
 ≠ prontidão
 ≠ execução
+≠ prova de evolução
 </code></pre></div>
+<p><img alt="Meus Próximos Passos — D5-C2" src="../../assets/wireframes/d5-c2-person-next-steps-mobile.svg" /></p>
 <h3 id="33-per-012-minha-evolucao">3.3 PER-012 — Minha Evolução<a class="headerlink" href="#33-per-012-minha-evolucao" title="Permanent link">&para;</a></h3>
-<p><code>PER-012</code> governa a compreensão e o controle de trajetórias, mudanças, continuidades, baselines, direções, evidências, confiança, incerteza, interpretações, contestações e histórico.</p>
-<p>A futura materialização deve preservar explicitamente:</p>
+<p><code>PER-012</code> governa compreensão e controle de trajetórias, mudanças, continuidades, evidências, confiança, incerteza, interpretações e contestações.</p>
+<p>O estado-base D5-C2 preserva explicitamente:</p>
 <div class="highlight"><pre><span></span><code>Domínio de Evolução
 ≠ dimensão estrutural do Contexto Vivo
 ≠ aspecto descritivo da mudança
 ≠ trajetória
 ≠ score
 </code></pre></div>
-<p><code>Minha Evolução</code> não poderá ser convertida em roda da vida obrigatória, ranking, percentual global da Pessoa, diagnóstico ou avaliação espiritual.</p>
+<p><code>Minha Evolução</code> não é roda da vida obrigatória, ranking, percentual global da Pessoa, diagnóstico ou avaliação espiritual.</p>
+<p><img alt="Minha Evolução — D5-C2" src="../../assets/wireframes/d5-c2-person-evolution-mobile.svg" /></p>
 <h3 id="34-papel-de-hoje">3.4 Papel de Hoje<a class="headerlink" href="#34-papel-de-hoje" title="Permanent link">&para;</a></h3>
 <p><code>PER-008</code> permanece síntese recorrente, não dashboard completo das três capacidades.</p>
-<p>A leitura é:</p>
 <div class="highlight"><pre><span></span><code>Hoje sintetiza
 → direção atual, quando relevante
 → movimento atual, quando relevante
@@ -9438,15 +9437,9 @@ sobre qual área da vida/evolução a jornada está tratando
 superfícies especializadas
 → aprofundam e oferecem controle
 </code></pre></div>
-<p>Isso não exige três cards permanentes em Hoje e não autoriza exposição de conteúdo sensível por padrão.</p>
+<p>A existência dos três SVGs não exige três cards permanentes em Hoje e não autoriza exposição sensível por padrão.</p>
 <h3 id="35-handoffs-nao-contratados">3.5 Handoffs não contratados<a class="headerlink" href="#35-handoffs-nao-contratados" title="Permanent link">&para;</a></h3>
-<p>A D5-C1 não cria navegação direta entre:</p>
-<ul>
-<li><code>PER-010 ↔ PER-011</code>;</li>
-<li><code>PER-011 ↔ PER-012</code>;</li>
-<li><code>PER-010 ↔ PER-012</code>.</li>
-</ul>
-<p>Relação semântica entre Objetivo, Próximo Passo e Evolução não é evidência suficiente de necessidade de navegação direta.</p>
+<p>Não existem handoffs diretos governados entre <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code>. Relação semântica entre Objetivo, Próximo Passo e Evolução não é evidência suficiente de necessidade de navegação direta.</p>
 <h2 id="4-descoberta-de-oportunidades-e-saida-consciente">4. Descoberta de oportunidades e saída consciente<a class="headerlink" href="#4-descoberta-de-oportunidades-e-saida-consciente" title="Permanent link">&para;</a></h2>
 <p>A UXA-098 fecha a continuidade entre descoberta territorial e Detalhe; a UXA-101 fecha V4 até a fronteira externa:</p>
 <div class="highlight"><pre><span></span><code>PER-201 — Mapa
@@ -9465,24 +9458,18 @@ PER-203
 </code></pre></div>
 <p>Regras integradas:</p>
 <ul>
-<li>Mapa e Lista preservam contexto de atuação, região, busca, filtros, versão conhecida, seleção e permissões territoriais aplicáveis;</li>
+<li>Mapa e Lista preservam contexto, busca, filtros, seleção e permissões aplicáveis;</li>
 <li>Mapa e Lista conduzem à mesma oportunidade lógica em <code>PER-203</code>;</li>
-<li>o Detalhe revalida estado material vigente antes de ação substantiva;</li>
-<li>abrir o Detalhe não equivale a interesse, inscrição, recomendação ou evolução;</li>
-<li>selecionar <code>Ver como participar</code> ainda não sai da Guivos: abre estado de revisão dentro de <code>PER-203</code>;</li>
-<li>a revisão identifica explicitamente ambiente externo e responsável;</li>
-<li>a Pessoa vê o que acompanha ou não acompanha a transição;</li>
+<li>abrir Detalhe não equivale a interesse, inscrição, recomendação ou evolução;</li>
+<li><code>Ver como participar</code> abre revisão dentro de <code>PER-203</code> antes da saída;</li>
 <li>continuar exige ação afirmativa e revalidação do destino conhecido/autorizado;</li>
-<li>destino ausente, inválido ou materialmente alterado bloqueia redirecionamento silencioso;</li>
-<li><code>Voltar ao detalhe</code> é caminho legítimo e sem penalidade;</li>
-<li>alcançar <code>BND-001</code> transfere autoridade ao terceiro; a Guivos não presume inscrição, reserva, compra ou contratação concluída;</li>
-<li>retornar posteriormente não presume resultado externo.</li>
+<li><code>Voltar ao detalhe</code> é caminho legítimo sem penalidade;</li>
+<li>alcançar <code>BND-001</code> transfere autoridade ao terceiro; a Guivos não presume resultado externo.</li>
 </ul>
-<p>Referência visual reformulada e revalidada pela UXA-101:</p>
+<p>Referência visual revalidada pela UXA-101:</p>
 <p><img alt="Detalhe e revisão de saída" src="../../assets/wireframes/uxa-007-opportunity-detail-mobile.svg" /></p>
-<p><a href="../../assets/wireframes/uxa-007-opportunity-detail-mobile.svg">Visualizar SVG</a></p>
 <h2 id="5-planos-como-etapa-transversal-canonica">5. Planos como etapa transversal canônica<a class="headerlink" href="#5-planos-como-etapa-transversal-canonica" title="Permanent link">&para;</a></h2>
-<p>A UXA-100-A3 promove <strong>Planos</strong> como etapa canonicamente registrada da jornada da Pessoa. A UXA-100-A4 fecha a identidade documental de sua origem voluntária sem criar uma tela artificial de Conta.</p>
+<p>A UXA-100-A3 registra Planos e a UXA-100-A4 fecha a identidade documental da origem voluntária:</p>
 <div class="highlight"><pre><span></span><code>PER-009 — Conta e configurações
 ├── TRN-406 → PER-301 — Planos e comparação
 │   ├── TRN-401 → PER-302 — revisão de contratação
@@ -9493,26 +9480,8 @@ PER-203
 │   │       └── TRN-405 → PER-301
 │   └── TRN-407 → PER-009 — retorno sem alteração de plano
 </code></pre></div>
-<p><code>TRN-401</code> a <code>TRN-405</code> permanecem <strong>localmente validadas</strong>. <code>TRN-406/407</code> ficam <strong>contratadas</strong>, pois <code>PER-009</code> possui identidade canônica suficiente para o handoff, mas ainda não possui materialização visual própria que sustente validação ponta a ponta.</p>
-<p>Abrir Planos por <code>TRN-406</code> não seleciona plano, não inicia cobrança, não consome cota e não amplia consentimento. Retornar por <code>TRN-407</code> não cancela assinatura nem altera o plano atual.</p>
-<p>Entrada contextual legítima permanece:</p>
-<div class="highlight"><pre><span></span><code>correspondência personalizada adicional após cota Free
-→ prévia limitada da camada personalizada
-├── Explorar oportunidades públicas
-├── Ver no Mapa
-└── Conhecer planos → PER-301
-</code></pre></div>
-<p>Regras de jornada:</p>
-<ul>
-<li><code>Guivos Free</code> permanece plano real e funcional;</li>
-<li>oportunidade pública, Explorar e Mapa permanecem acessíveis;</li>
-<li>comparação geral e incremental pertencem a <code>PER-301</code>;</li>
-<li>recorrência, preço e consequência aparecem antes da confirmação;</li>
-<li>assinatura não amplia consentimento ou escopo de dados automaticamente;</li>
-<li>downgrade/cancelamento explicita capacidades e data efetiva;</li>
-<li>falha preserva Free/estado anterior quando não houver confirmação;</li>
-<li>pagamento não altera relevância, confiança, posição orgânica nem garantia de evolução.</li>
-</ul>
+<p><code>TRN-401..405</code> permanecem localmente validadas. <code>TRN-406/407</code> permanecem contratadas porque <code>PER-009</code> ainda não possui materialização visual própria.</p>
+<p>Abrir Planos não seleciona plano, inicia cobrança, consome cota ou amplia consentimento. Pagamento não altera relevância, confiança, posição orgânica nem garantia de evolução.</p>
 <h2 id="6-pessoa-em-coletivos">6. Pessoa em Coletivos<a class="headerlink" href="#6-pessoa-em-coletivos" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>Explorar Coletivos
 → Resultados de Busca
@@ -9530,7 +9499,6 @@ PER-203
 <th>Etapa</th>
 <th>Maturidade</th>
 <th>Referência</th>
-<th>Evidência</th>
 <th>Continuidade integrada</th>
 </tr>
 </thead>
@@ -9538,51 +9506,44 @@ PER-203
 <tr>
 <td>descoberta e busca</td>
 <td>validado</td>
-<td>UXA-060</td>
-<td>UXA-061</td>
+<td>UXA-060/061</td>
 <td>parcial</td>
 </tr>
 <tr>
 <td>Perfil Público</td>
 <td>validado</td>
-<td>UXA-062</td>
-<td>UXA-063</td>
+<td>UXA-062/063</td>
 <td>parcial</td>
 </tr>
 <tr>
 <td>revisão e solicitação</td>
 <td>validado</td>
-<td>UXA-064</td>
-<td>UXA-065</td>
+<td>UXA-064/065</td>
 <td>parcial</td>
 </tr>
 <tr>
 <td>Solicitação Pendente</td>
 <td>validado</td>
-<td>UXA-066</td>
-<td>UXA-067; estado aprovado UXA-092</td>
-<td>TRN-105/106/107/109 por UXA-090; TRN-108 por UXA-092</td>
+<td>UXA-066/067/092</td>
+<td>TRN-105/106/107/109; TRN-108</td>
 </tr>
 <tr>
 <td>Meus Coletivos</td>
 <td>validado</td>
 <td>UXA-091/092/094</td>
-<td>UXA-092/094</td>
-<td>TRN-108 e TRN-110 integralmente validadas</td>
+<td>TRN-108 e TRN-110 integrais</td>
 </tr>
 <tr>
 <td>Central de Atualizações</td>
 <td>validado</td>
 <td>UXA-093/094/095/096</td>
-<td>UXA-094; versão corrente UXA-096</td>
-<td>TRN-110 e TRN-111 integralmente validadas</td>
+<td>TRN-110 e TRN-111 integrais</td>
 </tr>
 <tr>
 <td>Início do Participante</td>
 <td>validado</td>
 <td>UXA-095/096</td>
-<td>UXA-096</td>
-<td>TRN-111 integralmente validada</td>
+<td>TRN-111 integral</td>
 </tr>
 </tbody>
 </table>
@@ -9597,32 +9558,26 @@ PER-203
 <li>oportunidade publicada não é automaticamente recomendada;</li>
 <li>proximidade não equivale a relevância;</li>
 <li>patrocínio e plano pago não compram relevância funcional;</li>
-<li>atingir cota personalizada do Free não oculta catálogo público;</li>
 <li>abrir Planos voluntariamente não cria intenção de compra;</li>
-<li>abrir Detalhe não cria obrigação de agir;</li>
 <li>sair para ambiente externo não amplia consentimento nem transfere a jornada pessoal por padrão;</li>
 <li>compartilhar pouco permanece legítimo;</li>
-<li>acompanhar não equivale a participar;</li>
-<li>convite não cria vínculo;</li>
-<li>aprovação não cria função, autoridade ou presença obrigatória;</li>
-<li>estado canônico vigente prevalece sobre renderização anterior;</li>
 <li>mesmo domínio entre Pessoa, Coletivo e Organização não cria match, recomendação ou compartilhamento automático.</li>
 </ul>
 <h2 id="8-estado-da-vista">8. Estado da vista<a class="headerlink" href="#8-estado-da-vista" title="Permanent link">&para;</a></h2>
 <p>Esta vista permanece <code>draft</code> porque:</p>
 <ul>
 <li><code>TRN-001</code>, <code>TRN-003</code>, <code>TRN-004</code> e <code>TRN-005</code> ainda são parciais;</li>
-<li><code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> ainda não possuem materialização própria e <code>TRN-008..013</code> permanecem contratadas;</li>
+<li><code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> estão materializados, mas possuem validação funcional pendente e <code>TRN-008..013</code> permanecem contratadas;</li>
 <li>as transições comerciais internas de Planos são locais e não representam cobrança ponta a ponta;</li>
 <li><code>PER-009</code> ainda não possui materialização própria e <code>TRN-406/407</code> permanecem contratadas;</li>
 <li>estados P0B adicionais permanecem separados;</li>
 <li>áreas internas especializadas a partir de <code>PER-108</code> não foram validadas como conjunto;</li>
-<li>D5-A e D5-B materializam Domínios em superfícies existentes, enquanto a materialização visual de D5-C permanece pendente por responsabilidade;</li>
 <li>outras continuidades da jornada pessoal ainda não foram examinadas ponta a ponta.</li>
 </ul>
-<p><code>TRN-205</code> deixa de ser motivo de <code>draft</code>: a UXA-101 a valida integralmente <strong>até <code>BND-001</code></strong>, sem validar o processo externo posterior.</p>
+<p><code>TRN-205</code> não é motivo de <code>draft</code>: a UXA-101 a valida integralmente até <code>BND-001</code>, sem validar o processo externo posterior.</p>
 <h2 id="9-estado-atual">9. Estado atual<a class="headerlink" href="#9-estado-atual" title="Permanent link">&para;</a></h2>
-<p>V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. A frente de Planos está canonicamente registrada e sua origem voluntária possui identidade formal pela UXA-100-A4. D4 torna <code>JED-001..JED-009</code>, multidomínio, <code>Ainda estou descobrindo</code> e <code>other_unmapped</code> elementos explícitos desta vista. D5-A e D5-B materializam parte desse eixo em superfícies já existentes. A D5-C1 contrata <code>PER-010..012</code> e <code>TRN-008..013</code> sem criar SVG. V5/UXA-102, D6, D7 e Engenharia de Produto não foram iniciados automaticamente.</p>
+<p>V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. D4 torna <code>JED-001..JED-009</code>, multidomínio, <code>Ainda estou descobrindo</code> e <code>other_unmapped</code> explícitos nesta vista. D5-A/B materializam o eixo em superfícies existentes; D5-C1 contrata <code>PER-010..012</code> e <code>TRN-008..013</code>; D5-C2 materializa as três superfícies em low-fidelity, mantendo validação e handoffs como gates posteriores.</p>
+<p>V5/UXA-102, D6, D7 e Engenharia de Produto não foram iniciados automaticamente.</p>
 
 
 
