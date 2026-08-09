@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.19.0
+version: 0.20.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-09
 related:
   - UXA-070
   - UXA-080
@@ -27,6 +27,7 @@ related:
   - UXA-100-A3
   - UXA-100-A4
   - UXA-101
+  - GKR-UX-D5-C1-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -41,7 +42,7 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-A versão 0.19.0 adiciona somente `GKR-SURF-PER-009 — Conta e configurações da Pessoa` como responsabilidade canônica necessária para a origem voluntária de Planos. A UXA-100-A4 reutiliza `COL-002` e `ORG-001` como origens administrativas existentes, sem criar superfícies adicionais para Coletivo ou Organização. A contagem passa a 54 IDs.
+A versão 0.20.0 adiciona `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-011 — Meus Próximos Passos` e `GKR-SURF-PER-012 — Minha Evolução` como responsabilidades contratadas pela D5-C1. Nenhuma delas possui SVG ou validação visual nesta etapa. A contagem passa a 57 IDs.
 
 ## 2. Convenções
 
@@ -57,12 +58,12 @@ A versão 0.19.0 adiciona somente `GKR-SURF-PER-009 — Conta e configurações 
 
 | Categoria | Quantidade |
 |---|---:|
-| Pessoa | 24 |
+| Pessoa | 27 |
 | Coletivo | 12 |
 | Organização | 11 |
 | camada comercial | 5 |
 | fronteira documental | 2 |
-| **Total** | **54** |
+| **Total** | **57** |
 
 ## 4. Inventário principal
 
@@ -77,6 +78,9 @@ A versão 0.19.0 adiciona somente `GKR-SURF-PER-009 — Conta e configurações 
 | GKR-SURF-PER-007 | compreensão inicial revisável | Pessoa | protegido | **validado** | UXA-023 | UXA-036; UXA-097 | UXA-037; UXA-097 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-008 | Tela Hoje | Pessoa autenticada | protegido | **validado** | UXA-002; UXA-011-A1 | UXA-006; UXA-097 | UXA-010; UXA-097 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-009 | Conta e configurações da Pessoa | Pessoa autenticada; administração pessoal | protegido | contratado | UXA-100; UXA-100-A1; UXA-100-A4 | — | — | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-010 | Meus Objetivos | Pessoa autenticada; direção e objetivos | protegido | contratado | PAS-001-OBJ-VIEW-001; GKR-UX-D5-C1-001 | — | — | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-011 | Meus Próximos Passos | Pessoa autenticada; movimentos contextuais | protegido | contratado | PAS-001-PP-VIEW-001; GKR-UX-D5-C1-001 | — | — | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-012 | Minha Evolução | Pessoa autenticada; trajetórias e evolução contínua | protegido | contratado | PAS-001-EC-VIEW-001; GKR-UX-D5-C1-001 | — | — | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-101 | Explorar Coletivos | visitante | móvel | validado | UXA-056 | UXA-060 | UXA-061 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-102 | Resultados de Busca de Coletivos | visitante | móvel | validado | UXA-056 | UXA-060 | UXA-061 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-103 | Perfil Público do Coletivo | visitante | móvel | validado | UXA-056 | UXA-062 | UXA-063 | [Pessoa](surface-registry-person-details.md) |
@@ -123,9 +127,9 @@ A versão 0.19.0 adiciona somente `GKR-SURF-PER-009 — Conta e configurações 
 | GKR-SURF-BND-001 | fronteira de destino externo de oportunidade | Pessoa → terceiro | externo | **examinado** | UXA-004/007/101 | sem tela por definição | **UXA-101; TRN-205 validada até a fronteira** | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-BND-002 | fronteira de contratação/dimensionamento assistido | Coletivo/Organização → processo assistido quando necessário | externo ao autoatendimento | parcial | GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3 | sem tela por definição | parcial; TRN-416/TRN-426 preservadas | [Comercial](surface-registry-commercial-boundary-details.md) |
 
-## 5. Autoridade de planos e origem voluntária
+## 5. Autoridade de planos, jornada pessoal e origem voluntária
 
-A leitura vigente é:
+A leitura vigente de Planos é:
 
 ```text
 Pessoa: Free · Plus · Pro
@@ -134,7 +138,9 @@ Organização: Conecta · Eleva · Transforma
 Guivos Business: Start · Growth · Scale · Enterprise
 ```
 
-A origem voluntária de Planos passa a ser representada por `PER-009`, `COL-002` e `ORG-001`. A criação de `PER-009` não materializa uma arquitetura completa de Conta nem autoriza preencher outras responsabilidades administrativas por inferência.
+A origem voluntária de Planos permanece representada por `PER-009`, `COL-002` e `ORG-001`. A criação de `PER-009` não materializa uma arquitetura completa de Conta nem autoriza preencher outras responsabilidades administrativas por inferência.
+
+A D5-C1 adiciona `PER-010`, `PER-011` e `PER-012` como responsabilidades pessoais especializadas ligadas a Hoje por transições contratadas. Elas não são estados internos de `PER-008` e não possuem SVG nesta etapa.
 
 Guivos Business é produto especializado e não recebe novos IDs neste registro.
 
@@ -142,9 +148,11 @@ Guivos Business é produto especializado e não recebe novos IDs neste registro.
 
 ## 6. Preservações
 
-- total de IDs passa a **54**;
-- `PER-009` permanece sem SVG dedicado e com maturidade `contratado`;
+- total de IDs passa a **57**;
+- `PER-009`, `PER-010`, `PER-011` e `PER-012` permanecem sem SVG dedicado e com maturidade `contratado`;
 - os 118 SVGs canônicos permanecem inalterados em quantidade;
+- 42 IDs permanecem com referência visual, agora de 57;
+- responsabilidades sem SVG dedicado passam a 13;
 - `PER-203` permanece validada no recorte de saída externa;
 - `BND-001` permanece examinado, sem tela própria;
 - `BND-002` permanece parcial, sem tela própria;
