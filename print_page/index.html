@@ -14275,7 +14275,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <tbody>
 <tr>
 <td>Registro</td>
-<td><code>GKR-STATE-001</code> <strong>2.30.0</strong></td>
+<td><code>GKR-STATE-001</code> <strong>2.31.0</strong></td>
 </tr>
 <tr>
 <td>Era</td>
@@ -14292,6 +14292,10 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <tr>
 <td>Reconciliação de Planos</td>
 <td><strong>UXA-100-A4 — origem voluntária e retorno</strong></td>
+</tr>
+<tr>
+<td>Domínios de Evolução do Journey</td>
+<td><strong>9 canônicos + estado “Ainda estou descobrindo”</strong></td>
 </tr>
 <tr>
 <td>Próxima UXA</td>
@@ -14328,13 +14332,16 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <p>O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetura, implementação e operação.</p>
 <h2 id="index-consolidacao-e-reconciliacoes-recentes">Consolidação e reconciliações recentes<a class="headerlink" href="#index-consolidacao-e-reconciliacoes-recentes" title="Permanent link">&para;</a></h2>
 <ul>
+<li><a href="#product-architecture-pas-001-evolution-domains-model">PAS-001-DOMAIN-MODEL-001 — Modelo Canônico dos Domínios de Evolução do Guivos Journey</a></li>
+<li><a href="#product-architecture-journey">Guivos Journey — arquitetura e áreas de evolução</a></li>
+<li><a href="#research-market-validation-val-002-a1-mapeamento-dominios-evolucao">VAL-002-A1 — Mapeamento da pesquisa para os Domínios de Evolução</a></li>
 <li><a href="#project-p9-global-consolidation-and-public-canon-2026-08-08">Consolidação Global e Public Canon — P9</a></li>
 <li><a href="#experience-architecture-uxa-100-a4-plans-entry-origin-and-navigation-handoffs">UXA-100-A4 — Origens Administrativas e Handoffs de Entrada em Planos</a></li>
 <li><a href="#project-canonical-consolidation-matrix">Matriz de Consolidação Canônica 3.0.0</a></li>
 <li><a href="#roadmap">Roadmap 12.76.0</a></li>
 </ul>
-<p>O programa P0–P9 está consolidado quanto à ressincronização documental. A UXA-100-A4 não cria novo marco funcional nem inicia UXA-102. Lacunas empíricas, tecnológicas, jurídicas e operacionais permanecem abertas em suas autoridades próprias.</p>
-<h2 id="index-participantes-produtos-e-planos">Participantes, produtos e planos<a class="headerlink" href="#index-participantes-produtos-e-planos" title="Permanent link">&para;</a></h2>
+<p>O programa P0–P9 está consolidado quanto à ressincronização documental. A UXA-100-A4 não cria novo marco funcional nem inicia UXA-102. A formalização dos Domínios de Evolução é uma autoridade semântica do Journey e também não cria novo marco funcional. Lacunas empíricas, tecnológicas, jurídicas e operacionais permanecem abertas em suas autoridades próprias.</p>
+<h2 id="index-participantes-produtos-planos-e-dominios">Participantes, produtos, planos e domínios<a class="headerlink" href="#index-participantes-produtos-planos-e-dominios" title="Permanent link">&para;</a></h2>
 <p>Participantes: <strong>Pessoa · Coletivo · Organização</strong>.</p>
 <p>Produtos Especializados: <strong>Journey · Mall · Travel · Business · Media · Intelligence · Ads</strong>.</p>
 <p>Planos:</p>
@@ -14346,12 +14353,27 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </ul>
 <p><code>Organização ≠ Guivos Business</code>.</p>
 <p>A origem voluntária de Planos está formalizada por <code>PER-009 ↔ PER-301</code>, <code>COL-002 ↔ COL-301</code> e <code>ORG-001 ↔ ORG-301</code>. A origem da Pessoa permanece sem SVG dedicado e, portanto, seus dois handoffs ficam contratados até materialização suficiente.</p>
+<p>Domínios de Evolução do Guivos Journey:</p>
+<ol>
+<li>Saúde e Bem-estar;</li>
+<li>Trabalho, Carreira e Estudos;</li>
+<li>Vida Financeira;</li>
+<li>Empreendedorismo e Projetos;</li>
+<li>Relacionamentos e Vida Social;</li>
+<li>Espiritualidade, Propósito e Valores;</li>
+<li>Viagens, Lazer, Cultura e Novas Experiências;</li>
+<li>Causas, Voluntariado e Contribuição;</li>
+<li>Organização e Equilíbrio da Vida.</li>
+</ol>
+<p><code>Ainda estou descobrindo</code> é estado transversal de exploração, não um décimo domínio.</p>
 <h2 id="index-autoridades-tematicas">Autoridades temáticas<a class="headerlink" href="#index-autoridades-tematicas" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="#go-to-market">Go-to-Market, Growth &amp; Capital</a></li>
 <li><a href="#go-to-market-gtm-007-internationalization-and-territorial-governance">GTM-007 — Internacionalização</a></li>
 <li><a href="#go-to-market-gtm-008-portugal-pilot-readiness-gates">GTM-008 — Portugal</a></li>
 <li><a href="#product-architecture">Arquitetura de Produtos</a></li>
+<li><a href="#product-architecture-journey">Guivos Journey</a></li>
+<li><a href="#product-architecture-pas-001-evolution-domains-model">Domínios de Evolução do Journey</a></li>
 <li><a href="#experience-architecture">Arquitetura da Experiência</a></li>
 <li><a href="#experience-architecture-uxa-047-101-index">Índice UXA-047 a UXA-101</a></li>
 <li><a href="#journeys">Jornadas Integradas</a></li>
@@ -14371,17 +14393,19 @@ privacidade por arquitetura ≠ conformidade operacional comprovada
 método de pesquisa ≠ resultado de mercado
 pontos/créditos ≠ evolução
 navegar para Planos ≠ contratar ou iniciar cobrança
+Domínio de Evolução ≠ identidade ≠ score ≠ diagnóstico ≠ prova de evolução
+classificação candidata por IA ≠ domínio confirmado
 </code></pre></div>
 <h2 id="index-limites-preservados">Limites preservados<a class="headerlink" href="#index-limites-preservados" title="Permanent link">&para;</a></h2>
-<p>A reconciliação atual não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, cobrança real, processo posterior a <code>BND-002</code>, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado ou operação de controles legais/privacidade não comprovados.</p>
+<p>A reconciliação atual não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, classificação operacional por IA dos Domínios de Evolução, ontologia física do grafo, cobrança real, processo posterior a <code>BND-002</code>, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado ou operação de controles legais/privacidade não comprovados.</p>
 <p>Em caso de divergência, prevalecem <code>GKR-STATE-001</code> e a autoridade temática específica mais recente.</p></section>
                     <section class='print-page md-section' id='section-2' heading-number='2'>
                         <h1>Estado Atual<a class='headerlink' href='#section-2' title='Permanent link'></a>
                         </h1>
                     <section class="print-page" id="project-current-state-register" heading-number="2.1"><h1 id="project-current-state-register-registro-do-estado-atual">Registro do Estado Atual<a class="headerlink" href="#project-current-state-register-registro-do-estado-atual" title="Permanent link">&para;</a></h1>
 <h2 id="project-current-state-register-1-autoridade">1. Autoridade<a class="headerlink" href="#project-current-state-register-1-autoridade" title="Permanent link">&para;</a></h2>
-<p>Este registro declara o estado global vigente do Guivos Knowledge Repository após a consolidação documental P1–P9 de 2026-08-08 e a reconciliação controlada da origem voluntária de Planos pela UXA-100-A4.</p>
-<p>A UXA-100-A4 <strong>não cria novo marco funcional, não inicia implementação e não converte arquitetura, plano ou método em operação comprovada</strong>. Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.</p>
+<p>Este registro declara o estado global vigente do Guivos Knowledge Repository após a consolidação documental P1–P9 de 2026-08-08, a reconciliação controlada da origem voluntária de Planos pela UXA-100-A4 e a formalização do modelo canônico de Domínios de Evolução do Guivos Journey.</p>
+<p>A formalização de Domínios de Evolução <strong>não cria novo marco funcional, não inicia UXA-102, não retoma Engenharia de Produto e não converte taxonomia, arquitetura ou exemplos em operação comprovada</strong>. Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.</p>
 <h2 id="project-current-state-register-2-estado-global">2. Estado global<a class="headerlink" href="#project-current-state-register-2-estado-global" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -14414,6 +14438,10 @@ navegar para Planos ≠ contratar ou iniciar cobrança
 <tr>
 <td>Engenharia de Produto</td>
 <td>pausada antes de W0-01</td>
+</tr>
+<tr>
+<td>Domínios de Evolução do Journey</td>
+<td><strong>9 domínios canônicos + estado transversal “Ainda estou descobrindo”</strong></td>
 </tr>
 <tr>
 <td>Registros granulares</td>
@@ -14470,7 +14498,7 @@ navegar para Planos ≠ contratar ou iniciar cobrança
 </tbody>
 </table>
 <h2 id="project-current-state-register-3-cobertura-funcional-preservada-e-reconciliada">3. Cobertura funcional preservada e reconciliada<a class="headerlink" href="#project-current-state-register-3-cobertura-funcional-preservada-e-reconciliada" title="Permanent link">&para;</a></h2>
-<p>A UXA-100-A4 não cria SVGs; ela adiciona somente uma responsabilidade canônica sem tela própria e seis handoffs de navegação:</p>
+<p>A formalização dos Domínios de Evolução não altera a baseline visual ou de transições da Arquitetura da Experiência:</p>
 <ul>
 <li>118 SVGs existentes e referenciados;</li>
 <li>118 associações individuais;</li>
@@ -14483,9 +14511,9 @@ navegar para Planos ≠ contratar ou iniciar cobrança
 <li>54 superfícies/estados/fronteiras;</li>
 <li>60 transições documentais.</li>
 </ul>
-<p><code>PER-009 — Conta e configurações da Pessoa</code> é a única nova responsabilidade canônica e permanece sem SVG. <code>TRN-406/407</code> ficam contratadas; <code>TRN-417/418</code> e <code>TRN-427/428</code> são integralmente validadas no limite documental de navegação administrativa. As transições comerciais internas de Planos preservam suas maturidades anteriores.</p>
+<p><code>PER-009 — Conta e configurações da Pessoa</code> permanece sem SVG. <code>TRN-406/407</code> ficam contratadas; <code>TRN-417/418</code> e <code>TRN-427/428</code> são integralmente validadas no limite documental de navegação administrativa. As transições comerciais internas de Planos preservam suas maturidades anteriores.</p>
 <p>A UXA-101 continua encerrando V4 em <code>BND-001</code>. Resultado executado por terceiro após essa fronteira não é presumido pela Guivos.</p>
-<h2 id="project-current-state-register-4-participantes-planos-e-produtos">4. Participantes, planos e produtos<a class="headerlink" href="#project-current-state-register-4-participantes-planos-e-produtos" title="Permanent link">&para;</a></h2>
+<h2 id="project-current-state-register-4-participantes-planos-produtos-e-dominios-de-evolucao">4. Participantes, planos, produtos e Domínios de Evolução<a class="headerlink" href="#project-current-state-register-4-participantes-planos-produtos-e-dominios-de-evolucao" title="Permanent link">&para;</a></h2>
 <p>Participantes estruturais:</p>
 <ul>
 <li>Pessoa;</li>
@@ -14509,6 +14537,21 @@ navegar para Planos ≠ contratar ou iniciar cobrança
 <li>Guivos Intelligence;</li>
 <li>Guivos Ads.</li>
 </ol>
+<h3 id="project-current-state-register-41-dominios-de-evolucao-do-guivos-journey">4.1 Domínios de Evolução do Guivos Journey<a class="headerlink" href="#project-current-state-register-41-dominios-de-evolucao-do-guivos-journey" title="Permanent link">&para;</a></h3>
+<p><code>PAS-001-DOMAIN-MODEL-001</code> governa o baseline inicial de nove Domínios de Evolução:</p>
+<ol>
+<li>Saúde e Bem-estar;</li>
+<li>Trabalho, Carreira e Estudos;</li>
+<li>Vida Financeira;</li>
+<li>Empreendedorismo e Projetos;</li>
+<li>Relacionamentos e Vida Social;</li>
+<li>Espiritualidade, Propósito e Valores;</li>
+<li>Viagens, Lazer, Cultura e Novas Experiências;</li>
+<li>Causas, Voluntariado e Contribuição;</li>
+<li>Organização e Equilíbrio da Vida.</li>
+</ol>
+<p><code>Ainda estou descobrindo</code> é estado transversal legítimo de exploração e <strong>não</strong> constitui décimo domínio. <code>Outra área</code> é mecanismo de extensibilidade e preservação da expressão original do participante.</p>
+<p>Os domínios possuem interpretação específica para Pessoa, Coletivo e Organização. Uma trajetória pode envolver vários domínios simultaneamente.</p>
 <p>Separações canônicas:</p>
 <div class="highlight"><pre><span></span><code>Organização ≠ Guivos Business
 participante ≠ produto
@@ -14516,6 +14559,12 @@ plano ≠ mérito ou nível de evolução
 Parceria Estratégica ≠ Organização
 Guivos Mall = nome canônico
 Guivos Marketplace = alias histórico/migração
+Domínio de Evolução ≠ identidade
+Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo
+Domínio de Evolução ≠ Objetivo
+Domínio de Evolução ≠ score
+Domínio de Evolução ≠ diagnóstico
+Domínio de Evolução ≠ prova de evolução
 </code></pre></div>
 <p>A UXA-100-A4 corrige no SVG de <code>ORG-001</code> o rótulo visual obsoleto <code>Guivos Business</code>, sem criar novo ativo. <code>BND-002</code> permanece fronteira genérica de contratação/dimensionamento assistido e não pertence semanticamente a um plano específico.</p>
 <h2 id="project-current-state-register-5-go-to-market-e-internacionalizacao">5. Go-to-Market e internacionalização<a class="headerlink" href="#project-current-state-register-5-go-to-market-e-internacionalizacao" title="Permanent link">&para;</a></h2>
@@ -14541,7 +14590,7 @@ Guivos Marketplace = alias histórico/migração
 <li>segundo país europeu autorizado.</li>
 </ul>
 <p>A governança territorial exige distinguir acesso internacional, pesquisa, readiness, piloto autorizado, piloto executado e mercado ativo.</p>
-<h2 id="project-current-state-register-6-grafo-e-intelligence">6. Grafo e Intelligence<a class="headerlink" href="#project-current-state-register-6-grafo-e-intelligence" title="Permanent link">&para;</a></h2>
+<h2 id="project-current-state-register-6-grafo-journey-e-intelligence">6. Grafo, Journey e Intelligence<a class="headerlink" href="#project-current-state-register-6-grafo-journey-e-intelligence" title="Permanent link">&para;</a></h2>
 <p>Neo4j é a tecnologia primária de referência para a camada de grafo.</p>
 <div class="highlight"><pre><span></span><code>reference_selected
 ≠ POC
@@ -14551,6 +14600,8 @@ Guivos Marketplace = alias histórico/migração
 </code></pre></div>
 <p>Não há autoridade suficiente para afirmar POC, cluster/Aura provisionado, dados pessoais reais no grafo, GDS em produção, GraphRAG implementado ou Power BI conectado.</p>
 <p><code>Grafo Global ≠ Guivos Intelligence ≠ Neo4j</code>.</p>
+<p>Os Domínios de Evolução agora constituem vocabulário semântico canônico do Journey e podem orientar futura ontologia, classificação explicável e relações no Grafo Global. Isso <strong>não</strong> declara ontologia física, nós, relações, embeddings, pipelines ou dados implementados.</p>
+<p>Guivos Intelligence pode produzir candidatos de domínio e relações multidomínio, mas não pode transformar inferência em domínio confirmado sem autoridade suficiente, criar score humano ou utilizar domínio sensível como autorização de publicidade comportamental.</p>
 <h2 id="project-current-state-register-7-marca-naming-e-ativos-digitais">7. Marca, naming e ativos digitais<a class="headerlink" href="#project-current-state-register-7-marca-naming-e-ativos-digitais" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>nome canônico
 ≠ marca registrada
@@ -14562,6 +14613,7 @@ Guivos Marketplace = alias histórico/migração
 <h2 id="project-current-state-register-8-validacao-de-mercado">8. Validação de mercado<a class="headerlink" href="#project-current-state-register-8-validacao-de-mercado" title="Permanent link">&para;</a></h2>
 <p>VAL-001–010 constituem o sistema metodológico B2C inicial.</p>
 <p>Parâmetros governados incluem questionário VAL-002 2.1.0 com 19 perguntas, pré-teste previsto de 10–15 participantes, mínimo de 200 respostas válidas para decisão inicial e meta preferencial de 500.</p>
+<p>As áreas utilizadas no instrumento de pesquisa contribuíram para o baseline semântico dos Domínios de Evolução. Essa promoção arquitetural <strong>não transforma a existência da pergunta ou das opções em resultado de pesquisa, preferência de mercado ou evidência de eficácia</strong>.</p>
 <div class="highlight"><pre><span></span><code>método definido
 ≠ instrumento aplicado
 ≠ base válida
@@ -14573,6 +14625,7 @@ Guivos Marketplace = alias histórico/migração
 <h2 id="project-current-state-register-9-incentivos">9. Incentivos<a class="headerlink" href="#project-current-state-register-9-incentivos" title="Permanent link">&para;</a></h2>
 <p><code>GEM-005-A1</code> estabelece <strong>Propósito Antes do Incentivo</strong>.</p>
 <p>Pontos, créditos, saldo, streak ou ranking não podem substituir evolução, autonomia ou valor legítimo como objetivo da experiência. Nenhum programa operacional de pontos/créditos, carteira, token, cashback ou conversão está autorizado.</p>
+<p>O modelo de Domínios de Evolução reforça que contribuição, espiritualidade, saúde, finanças, relacionamentos ou organização não podem ser convertidos em ranking moral, score humano ou competição por “nível de evolução”.</p>
 <h2 id="project-current-state-register-10-arquitetura-institucional-e-fundacao-guivos">10. Arquitetura institucional e Fundação Guivos<a class="headerlink" href="#project-current-state-register-10-arquitetura-institucional-e-fundacao-guivos" title="Permanent link">&para;</a></h2>
 <p><code>Fundação Guivos</code> permanece:</p>
 <div class="highlight"><pre><span></span><code>conceito institucional social validado
@@ -14591,6 +14644,7 @@ política em draft ≠ política publicada
 controle projetado ≠ controle implementado ≠ controle evidenciado
 </code></pre></div>
 <p>Não são presumidos como operacionais: Termos publicados, Aviso/Política de Privacidade vigente, consentimentos, centro de preferências, inventário de cookies/SDKs, Encarregado formalmente indicado, fluxo de direitos, incident response LGPD ou dados pessoais em produção no grafo.</p>
+<p>Domínios que envolvam saúde, condição emocional, espiritualidade/religião, finanças, emprego, família, sexualidade, vulnerabilidade ou outras informações sensíveis exigem finalidade, minimização, autoridade e proteção reforçada.</p>
 <h2 id="project-current-state-register-12-public-canon">12. Public Canon<a class="headerlink" href="#project-current-state-register-12-public-canon" title="Permanent link">&para;</a></h2>
 <p><code>GOG-001 — Guia Oficial da Guivos</code> é a única superfície institucional classificada como <code>public-canon</code> neste domínio documental.</p>
 <p>O Public Canon traduz autoridades do GKR para linguagem pública e deve distinguir claramente:</p>
@@ -14602,6 +14656,7 @@ controle projetado ≠ controle implementado ≠ controle evidenciado
 <li>conceito institucional e entidade constituída;</li>
 <li>privacidade por design e controles efetivamente publicados/operacionais.</li>
 </ul>
+<p>A página pública de Arquitetura do Guivos Journey passa a explicitar os nove Domínios de Evolução e exemplos de como a Guivos pode apoiar jornadas nesses domínios, preservando os guardrails do <code>PAS-001-DOMAIN-MODEL-001</code>.</p>
 <p>Nenhum texto público pode promover estado superior ao evidenciado nas autoridades internas.</p>
 <h2 id="project-current-state-register-13-programa-p0p9">13. Programa P0–P9<a class="headerlink" href="#project-current-state-register-13-programa-p0p9" title="Permanent link">&para;</a></h2>
 <p>O programa amplo de ressincronização documental está <strong>consolidado</strong> quanto aos pacotes temáticos previstos:</p>
@@ -14645,7 +14700,11 @@ controle projetado ≠ controle implementado ≠ controle evidenciado
 </tr>
 <tr>
 <td>Planos — origem voluntária e retorno</td>
-<td><strong>identidade encerrada pela UXA-100-A4; PER-009 ainda sem materialização</strong></td>
+<td>identidade encerrada pela UXA-100-A4; PER-009 ainda sem materialização</td>
+</tr>
+<tr>
+<td>Journey — Domínios de Evolução</td>
+<td><strong>baseline canônico documentado; sem implementação técnica ou nova UX presumida</strong></td>
 </tr>
 <tr>
 <td>V4 — efeito externo de oportunidades</td>
@@ -14665,6 +14724,10 @@ controle projetado ≠ controle implementado ≠ controle evidenciado
 <li>UXA-102/V5 não foi iniciada;</li>
 <li>Engenharia de Produto permanece pausada antes de W0-01;</li>
 <li>Pessoa, Coletivo e Organização permanecem jornadas <code>draft</code>;</li>
+<li>nove Domínios de Evolução estão governados como vocabulário do Journey;</li>
+<li>“Ainda estou descobrindo” não é décimo domínio;</li>
+<li>classificação de domínio por IA não está declarada como operacional;</li>
+<li>ontologia de grafo física não está declarada como implementada;</li>
 <li>materialização, validação, promoção, contratação, implementação e operação são estados distintos;</li>
 <li>projeção não é realizado;</li>
 <li>preço não é disposição a pagar;</li>
@@ -14676,7 +14739,8 @@ controle projetado ≠ controle implementado ≠ controle evidenciado
 <li>nenhuma etapa autoriza automaticamente a seguinte.</li>
 </ul>
 <h2 id="project-current-state-register-16-proximo-ato-governado">16. Próximo ato governado<a class="headerlink" href="#project-current-state-register-16-proximo-ato-governado" title="Permanent link">&para;</a></h2>
-<p>Após esta reconciliação, materialização de <code>PER-009</code>, maturidade das transições internas de Planos, cobrança real, processo posterior a <code>BND-002</code>, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria.</p></section><section class="print-page" id="roadmap" heading-number="2.2"><h1 id="roadmap-roadmap-arquitetural-consolidacao-documental-p0p9">Roadmap Arquitetural — Consolidação Documental P0–P9<a class="headerlink" href="#roadmap-roadmap-arquitetural-consolidacao-documental-p0p9" title="Permanent link">&para;</a></h1>
+<p>A formalização dos Domínios de Evolução não autoriza automaticamente nova UX, esquema de banco, ontologia física, classificação algorítmica, coleta de dado sensível ou implementação.</p>
+<p>Materialização de <code>PER-009</code>, maturidade das transições internas de Planos, cobrança real, processo posterior a <code>BND-002</code>, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria.</p></section><section class="print-page" id="roadmap" heading-number="2.2"><h1 id="roadmap-roadmap-arquitetural-consolidacao-documental-p0p9">Roadmap Arquitetural — Consolidação Documental P0–P9<a class="headerlink" href="#roadmap-roadmap-arquitetural-consolidacao-documental-p0p9" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-autoridade">1. Autoridade<a class="headerlink" href="#roadmap-1-autoridade" title="Permanent link">&para;</a></h2>
 <p>Este roadmap registra o estado global após a ressincronização documental de agosto de 2026. O estado oficial permanece em <code>GKR-STATE-001</code>.</p>
 <h2 id="roadmap-2-estado-vigente">2. Estado vigente<a class="headerlink" href="#roadmap-2-estado-vigente" title="Permanent link">&para;</a></h2>
@@ -17948,6 +18012,7 @@ plano ≠ fato realizado
 <ul>
 <li><a href="#research-market-validation-val-001-framework-de-validacao-de-mercado">VAL-001 — Framework de Validação de Mercado</a> — versão 1.3.1;</li>
 <li><a href="#research-market-validation-val-002-pesquisa-oficial-da-guivos">VAL-002 — Pesquisa Oficial B2C</a> — versão 2.1.0, título público <code>Construindo a Guivos</code>;</li>
+<li><a href="#research-market-validation-val-002-a1-mapeamento-dominios-evolucao">VAL-002-A1 — Mapeamento da Pesquisa B2C para os Domínios de Evolução</a> — versão 1.0.0;</li>
 <li><a href="#research-market-validation-val-003-guia-do-entrevistador">VAL-003 — Guia do Entrevistador</a> — versão 1.2.1;</li>
 <li><a href="#research-market-validation-val-004-modelo-de-consolidacao-e-analise">VAL-004 — Modelo de Consolidação e Análise</a> — versão 1.3.1;</li>
 <li><a href="#research-market-validation-val-005-plano-de-amostragem">VAL-005 — Plano de Amostragem</a> — versão 1.2.1;</li>
@@ -17996,6 +18061,27 @@ plano ≠ fato realizado
 <li>meta preferencial de 500 respostas válidas.</li>
 </ul>
 <p>Esses itens constituem <strong>autoridade metodológica</strong> e não comprovam que a aplicação, o pré-teste, a coleta ou qualquer resultado já tenham ocorrido.</p>
+<h2 id="research-market-validation-rastreabilidade-com-os-dominios-de-evolucao-do-journey">Rastreabilidade com os Domínios de Evolução do Journey<a class="headerlink" href="#research-market-validation-rastreabilidade-com-os-dominios-de-evolucao-do-journey" title="Permanent link">&para;</a></h2>
+<p>A pergunta 4 do <code>VAL-002</code> utiliza nove áreas da vida e uma alternativa combinada de incerteza/outra área.</p>
+<p>Essas áreas contribuíram para o baseline arquitetural governado no <code>PAS-001-DOMAIN-MODEL-001</code>, sem alterar o questionário 2.1.0.</p>
+<p>O <code>VAL-002-A1</code> registra o mapeamento explícito:</p>
+<div class="highlight"><pre><span></span><code>4.1 → JED-001 Saúde e Bem-estar
+4.2 → JED-002 Trabalho, Carreira e Estudos
+4.3 → JED-003 Vida Financeira
+4.4 → JED-004 Empreendedorismo e Projetos
+4.5 → JED-005 Relacionamentos e Vida Social
+4.6 → JED-006 Espiritualidade, Propósito e Valores
+4.7 → JED-007 Viagens, Lazer, Cultura e Novas Experiências
+4.8 → JED-008 Causas, Voluntariado e Contribuição
+4.9 → JED-009 Organização e Equilíbrio da Vida
+4.10 → Ainda estou descobrindo | other_unmapped
+</code></pre></div>
+<p>A escolha única na pesquisa serve ao método de pesquisa e <strong>não restringe o Journey real a um único domínio</strong>.</p>
+<p>Também permanecem distintas:</p>
+<div class="highlight"><pre><span></span><code>alternativa da pesquisa ≠ domínio confirmado da jornada
+frequência de resposta ≠ eficácia da Guivos
+resultado B2C ≠ evidência sobre Coletivos ou Organizações
+</code></pre></div>
 <h2 id="research-market-validation-decisoes-editoriais-da-versao-210">Decisões editoriais da versão 2.1.0<a class="headerlink" href="#research-market-validation-decisoes-editoriais-da-versao-210" title="Permanent link">&para;</a></h2>
 <ul>
 <li>perguntas <code>8</code> e <code>9</code> foram encurtadas;</li>
@@ -32042,8 +32128,246 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li>acompanhamento da jornada;</li>
 <li>gamificação;</li>
 <li>comunicação com o participante;</li>
-<li>evidências de evolução.</li>
+<li>evidências de evolução;</li>
+<li><strong>Domínios de Evolução</strong>, que organizam sobre quais áreas da vida, da atuação coletiva ou da trajetória institucional a jornada está tratando.</li>
 </ul>
+<h2 id="product-architecture-journey-areas-de-evolucao-e-transformacao">Áreas de Evolução e Transformação<a class="headerlink" href="#product-architecture-journey-areas-de-evolucao-e-transformacao" title="Permanent link">&para;</a></h2>
+<p>O Journey pode apoiar Pessoas, Coletivos e Organizações em diferentes <strong>Domínios de Evolução</strong>.</p>
+<p>Esses domínios ajudam a responder:</p>
+<blockquote>
+<p><strong>Em que área a Guivos pode apoiar este participante a compreender seu momento, descobrir possibilidades, definir direções, agir, viver experiências e reconhecer mudanças legítimas?</strong></p>
+</blockquote>
+<p>Os domínios não são notas, diagnósticos, níveis de mérito ou categorias permanentes. Uma jornada pode envolver mais de um domínio ao mesmo tempo.</p>
+<p>A autoridade normativa completa é <code>PAS-001-DOMAIN-MODEL-001 — Modelo Canônico dos Domínios de Evolução do Guivos Journey</code>.</p>
+<h3 id="product-architecture-journey-1-saude-e-bem-estar">1. Saúde e Bem-estar<a class="headerlink" href="#product-architecture-journey-1-saude-e-bem-estar" title="Permanent link">&para;</a></h3>
+<p>A Guivos pode apoiar jornadas relacionadas a saúde física, atividade física, sono, alimentação, prevenção, autocuidado, bem-estar emocional declarado, acessibilidade e qualidade de vida.</p>
+<p>Exemplos:</p>
+<ul>
+<li>iniciar ou manter uma atividade física;</li>
+<li>organizar uma rotina de sono ou autocuidado;</li>
+<li>encontrar experiências de bem-estar;</li>
+<li>encontrar profissionais ou serviços adequados;</li>
+<li>adaptar próximos passos a restrições funcionais;</li>
+<li>um Coletivo organizar uma atividade de bem-estar;</li>
+<li>uma Organização oferecer programas de saúde, segurança ou qualidade de vida.</li>
+</ul>
+<p>A Guivos não diagnostica automaticamente, não prescreve tratamento e não transforma comportamento em prova de melhora de saúde.</p>
+<h3 id="product-architecture-journey-2-trabalho-carreira-e-estudos">2. Trabalho, Carreira e Estudos<a class="headerlink" href="#product-architecture-journey-2-trabalho-carreira-e-estudos" title="Permanent link">&para;</a></h3>
+<p>A Guivos pode apoiar jornadas de emprego, recolocação, carreira, educação, aprendizagem e desenvolvimento de competências.</p>
+<p>Exemplos:</p>
+<ul>
+<li>buscar emprego;</li>
+<li>mudar de carreira;</li>
+<li>desenvolver uma competência;</li>
+<li>organizar estudos;</li>
+<li>escolher ou concluir um curso;</li>
+<li>preparar-se para certificação;</li>
+<li>desenvolver liderança;</li>
+<li>encontrar mentores, especialistas ou oportunidades;</li>
+<li>um Coletivo capacitar membros ou voluntários;</li>
+<li>uma Organização estruturar programas de desenvolvimento.</li>
+</ul>
+<h3 id="product-architecture-journey-3-vida-financeira">3. Vida Financeira<a class="headerlink" href="#product-architecture-journey-3-vida-financeira" title="Permanent link">&para;</a></h3>
+<p>A Guivos pode apoiar jornadas de organização e sustentabilidade financeira dentro do escopo adequado ao participante.</p>
+<p>Exemplos:</p>
+<ul>
+<li>organizar orçamento;</li>
+<li>criar reserva;</li>
+<li>reorganizar dívidas;</li>
+<li>melhorar hábitos financeiros;</li>
+<li>planejar uma compra, viagem ou projeto;</li>
+<li>buscar educação financeira;</li>
+<li>explorar caminhos legítimos para aumento de renda;</li>
+<li>um Coletivo organizar recursos para uma iniciativa;</li>
+<li>uma Organização relacionar sustentabilidade econômica a objetivos institucionais.</li>
+</ul>
+<p>Vida financeira não representa valor, mérito ou sucesso humano.</p>
+<h3 id="product-architecture-journey-4-empreendedorismo-e-projetos">4. Empreendedorismo e Projetos<a class="headerlink" href="#product-architecture-journey-4-empreendedorismo-e-projetos" title="Permanent link">&para;</a></h3>
+<p>A Guivos pode apoiar a criação, validação e desenvolvimento de ideias, negócios e projetos.</p>
+<p>Exemplos:</p>
+<ul>
+<li>transformar uma ideia em projeto;</li>
+<li>validar uma iniciativa;</li>
+<li>desenvolver competências empreendedoras;</li>
+<li>encontrar parceiros, ferramentas ou especialistas;</li>
+<li>estruturar próximos passos e metas;</li>
+<li>criar um projeto paralelo;</li>
+<li>um Coletivo estruturar uma campanha ou iniciativa;</li>
+<li>uma Organização promover inovação e organizar projetos institucionais.</li>
+</ul>
+<h3 id="product-architecture-journey-5-relacionamentos-e-vida-social">5. Relacionamentos e Vida Social<a class="headerlink" href="#product-architecture-journey-5-relacionamentos-e-vida-social" title="Permanent link">&para;</a></h3>
+<p>A Guivos pode apoiar jornadas ligadas a vínculos, pertencimento, convivência, redes de apoio e participação social.</p>
+<p>Exemplos:</p>
+<ul>
+<li>fortalecer vínculos familiares;</li>
+<li>ampliar círculo social;</li>
+<li>construir novas amizades;</li>
+<li>participar de grupos ou Coletivos;</li>
+<li>encontrar atividades compartilhadas;</li>
+<li>desenvolver comunicação e convivência;</li>
+<li>um Coletivo fortalecer pertencimento e participação;</li>
+<li>uma Organização criar oportunidades legítimas de colaboração e conexão.</li>
+</ul>
+<h3 id="product-architecture-journey-6-espiritualidade-proposito-e-valores">6. Espiritualidade, Propósito e Valores<a class="headerlink" href="#product-architecture-journey-6-espiritualidade-proposito-e-valores" title="Permanent link">&para;</a></h3>
+<p>A Guivos pode apoiar jornadas voluntariamente relacionadas a fé, espiritualidade, sentido, propósito e valores declarados pelo participante.</p>
+<p>Exemplos:</p>
+<ul>
+<li>aprofundar uma prática espiritual escolhida;</li>
+<li>encontrar uma comunidade religiosa ou espiritual compatível;</li>
+<li>participar de encontros, estudos, retiros ou ações;</li>
+<li>refletir sobre propósito;</li>
+<li>aproximar decisões de valores declarados;</li>
+<li>organizar práticas voluntárias de reflexão, gratidão ou serviço;</li>
+<li>um Coletivo organizar uma comunidade de fé, reflexão ou serviço;</li>
+<li>uma Organização trabalhar propósito, ética e valores institucionais sem exercer autoridade espiritual sobre pessoas.</li>
+</ul>
+<p>A Guivos não mede fé, não mede proximidade de Deus, não diagnostica condição espiritual e não impõe crença ou propósito de vida.</p>
+<h3 id="product-architecture-journey-7-viagens-lazer-cultura-e-novas-experiencias">7. Viagens, Lazer, Cultura e Novas Experiências<a class="headerlink" href="#product-architecture-journey-7-viagens-lazer-cultura-e-novas-experiencias" title="Permanent link">&para;</a></h3>
+<p>A Guivos pode apoiar jornadas de descoberta, viagens, lazer, cultura, hobbies e novas experiências.</p>
+<p>Exemplos:</p>
+<ul>
+<li>conhecer novos lugares;</li>
+<li>planejar viagens;</li>
+<li>descobrir experiências compatíveis com orçamento, localização e preferências;</li>
+<li>participar de eventos culturais;</li>
+<li>desenvolver hobbies;</li>
+<li>experimentar novas atividades;</li>
+<li>conhecer pessoas e culturas;</li>
+<li>um Coletivo organizar experiências compartilhadas;</li>
+<li>uma Organização promover programas ou experiências institucionais.</li>
+</ul>
+<h3 id="product-architecture-journey-8-causas-voluntariado-e-contribuicao">8. Causas, Voluntariado e Contribuição<a class="headerlink" href="#product-architecture-journey-8-causas-voluntariado-e-contribuicao" title="Permanent link">&para;</a></h3>
+<p>A Guivos pode apoiar jornadas de participação social, voluntariado, causas, contribuição e impacto.</p>
+<p>Exemplos:</p>
+<ul>
+<li>encontrar uma causa;</li>
+<li>participar de voluntariado;</li>
+<li>contribuir com competências;</li>
+<li>apoiar projetos sociais;</li>
+<li>participar de movimentos e ações legítimas;</li>
+<li>um Coletivo organizar uma ação social;</li>
+<li>uma Organização oferecer recursos, conhecimento, infraestrutura ou programas de voluntariado.</li>
+</ul>
+<p>Um mesmo movimento pode conectar os três participantes:</p>
+<div class="highlight"><pre><span></span><code>Pessoa quer contribuir
+→ Coletivo organiza uma ação
+→ Organização disponibiliza apoio ou recursos
+→ Journey conecta os atores conforme relevância e autorização
+→ experiência acontece
+→ evidências e resultados são reconhecidos no escopo correto
+</code></pre></div>
+<p>Contribuição não deve ser convertida em ranking moral.</p>
+<h3 id="product-architecture-journey-9-organizacao-e-equilibrio-da-vida">9. Organização e Equilíbrio da Vida<a class="headerlink" href="#product-architecture-journey-9-organizacao-e-equilibrio-da-vida" title="Permanent link">&para;</a></h3>
+<p>A Guivos pode apoiar jornadas de rotina, prioridades, gestão de responsabilidades, organização e equilíbrio contextual.</p>
+<p>Exemplos:</p>
+<ul>
+<li>organizar rotina;</li>
+<li>definir prioridades;</li>
+<li>estruturar objetivos;</li>
+<li>melhorar gestão do tempo;</li>
+<li>equilibrar responsabilidades;</li>
+<li>reorganizar a vida após uma mudança;</li>
+<li>criar ou revisar hábitos;</li>
+<li>compreender qual área merece atenção primeiro;</li>
+<li>um Coletivo organizar responsabilidades, agenda e governança;</li>
+<li>uma Organização coordenar prioridades, programas e capacidade operacional.</li>
+</ul>
+<p>“Equilíbrio” não é um padrão universal imposto pela Guivos.</p>
+<h2 id="product-architecture-journey-ainda-estou-descobrindo">Ainda estou descobrindo<a class="headerlink" href="#product-architecture-journey-ainda-estou-descobrindo" title="Permanent link">&para;</a></h2>
+<p>Nem todo participante precisa saber imediatamente qual área deseja cuidar, fortalecer ou transformar.</p>
+<p><strong>Ainda estou descobrindo</strong> é um estado legítimo da jornada, e não um décimo domínio.</p>
+<p>Nesse estado, a Guivos pode ajudar o participante a:</p>
+<ul>
+<li>compreender melhor seu Momento Atual;</li>
+<li>explorar possibilidades;</li>
+<li>reconhecer interesses, necessidades, restrições ou Eventos de Vida;</li>
+<li>visualizar domínios candidatos com explicação;</li>
+<li>descobrir possíveis próximos passos;</li>
+<li>permanecer sem escolher enquanto não houver clareza suficiente.</li>
+</ul>
+<p>A Guivos não deve inventar uma prioridade ou propósito apenas para preencher essa ausência.</p>
+<h2 id="product-architecture-journey-outra-area">Outra área<a class="headerlink" href="#product-architecture-journey-outra-area" title="Permanent link">&para;</a></h2>
+<p>Quando o participante indicar uma área ainda não coberta adequadamente pelos nove domínios, sua expressão original deve ser preservada.</p>
+<p>A Guivos pode sugerir aproximações, mas não deve reclassificar silenciosamente o que a pessoa, o Coletivo ou a Organização quis expressar.</p>
+<p>Novos domínios ou subáreas são governados pelo <code>PAS-001-DOMAIN-MODEL-001</code>.</p>
+<h2 id="product-architecture-journey-dominios-podem-se-relacionar">Domínios podem se relacionar<a class="headerlink" href="#product-architecture-journey-dominios-podem-se-relacionar" title="Permanent link">&para;</a></h2>
+<p>As áreas não são “caixas” isoladas.</p>
+<p>Exemplo:</p>
+<blockquote>
+<p>“Quero melhorar minha situação financeira porque estou planejando uma viagem e também pensando em mudar de carreira.”</p>
+</blockquote>
+<p>Essa jornada pode relacionar:</p>
+<div class="highlight"><pre><span></span><code>Vida Financeira
+↕
+Viagens, Lazer, Cultura e Novas Experiências
+↕
+Trabalho, Carreira e Estudos
+</code></pre></div>
+<p>Outro exemplo:</p>
+<blockquote>
+<p>“Quero voltar a frequentar minha igreja porque depois que me mudei estou me sentindo sozinho.”</p>
+</blockquote>
+<p>A representação pode envolver, mediante confirmação:</p>
+<div class="highlight"><pre><span></span><code>Espiritualidade, Propósito e Valores
++
+Relacionamentos e Vida Social
++
+Evento de Vida: mudança de cidade
+</code></pre></div>
+<p>O Journey deve compreender essas relações sem inferir diagnóstico, crença, prioridade ou significado que não tenham autoridade suficiente.</p>
+<h2 id="product-architecture-journey-como-os-dominios-se-relacionam-as-capacidades-do-journey">Como os domínios se relacionam às capacidades do Journey<a class="headerlink" href="#product-architecture-journey-como-os-dominios-se-relacionam-as-capacidades-do-journey" title="Permanent link">&para;</a></h2>
+<p>Um domínio responde <strong>sobre o que</strong> a jornada trata. As capacidades respondem <strong>como</strong> o Journey opera.</p>
+<div class="highlight"><pre><span></span><code>Domínio de Evolução
++
+Contexto Vivo
++
+Objetivos
++
+Eventos de Vida
++
+Próximos Passos
++
+Oportunidades
++
+Experiências
++
+Evidências
+→ Trajetória de Evolução
+</code></pre></div>
+<p>Por isso:</p>
+<div class="highlight"><pre><span></span><code>Domínio ≠ Objetivo
+Domínio ≠ Momento
+Domínio ≠ Próximo Passo
+Domínio ≠ Oportunidade
+Domínio ≠ Experiência
+Domínio ≠ Evolução
+Domínio ≠ Score
+</code></pre></div>
+<h2 id="product-architecture-journey-o-que-pode-significar-evoluir">O que pode significar evoluir<a class="headerlink" href="#product-architecture-journey-o-que-pode-significar-evoluir" title="Permanent link">&para;</a></h2>
+<p>Evoluir não significa necessariamente melhorar continuamente ou produzir uma grande transformação.</p>
+<p>Dependendo do contexto, pode significar:</p>
+<ul>
+<li>descobrir;</li>
+<li>compreender;</li>
+<li>iniciar;</li>
+<li>aprender;</li>
+<li>desenvolver;</li>
+<li>fortalecer;</li>
+<li>organizar;</li>
+<li>adaptar;</li>
+<li>recuperar;</li>
+<li>manter;</li>
+<li>consolidar;</li>
+<li>experimentar;</li>
+<li>concluir;</li>
+<li>reorientar;</li>
+<li>pausar;</li>
+<li>abandonar legitimamente;</li>
+<li>reduzir o impacto de uma restrição;</li>
+<li>reconhecer ausência de mudança;</li>
+<li>permanecer inconclusivo.</li>
+</ul>
+<p>O participante permanece protagonista da interpretação da própria jornada.</p>
 <h2 id="product-architecture-journey-limites">Limites<a class="headerlink" href="#product-architecture-journey-limites" title="Permanent link">&para;</a></h2>
 <p>Guivos Journey não é:</p>
 <ul>
@@ -32060,6 +32384,7 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <h2 id="product-architecture-journey-relacoes-principais">Relações principais<a class="headerlink" href="#product-architecture-journey-relacoes-principais" title="Permanent link">&para;</a></h2>
 <ul>
 <li>utiliza Guivos Intelligence para interpretação de contexto e recomendações;</li>
+<li>utiliza os Domínios de Evolução como vocabulário governado de contexto, nunca como score humano;</li>
 <li>direciona participantes para ofertas do Guivos Mall e do Guivos Travel;</li>
 <li>recebe conteúdos do Guivos Media;</li>
 <li>pode integrar jornadas corporativas do Guivos Business;</li>
@@ -32247,16 +32572,52 @@ Guivos Business
 <li>benchmarks;</li>
 <li>tendências;</li>
 <li>interpretação do contexto dos participantes;</li>
+<li>classificação explicável de <strong>Domínios de Evolução candidatos</strong> conforme <code>PAS-001-DOMAIN-MODEL-001</code>;</li>
+<li>identificação de relações multidomínio sem impor prioridade humana;</li>
 <li>conhecimento estratégico do ecossistema;</li>
 <li>integração de estudos, pesquisas, livros, normas e fontes institucionais confiáveis;</li>
 <li>aprendizado com experiências e evidências produzidas pelo ecossistema;</li>
 <li>aprendizado contextual com objetivos, mudanças e movimentações autorizadas;</li>
 <li>explicabilidade e registro de incertezas.</li>
 </ul>
+<h2 id="product-architecture-intelligence-dominios-de-evolucao-do-journey">Domínios de Evolução do Journey<a class="headerlink" href="#product-architecture-intelligence-dominios-de-evolucao-do-journey" title="Permanent link">&para;</a></h2>
+<p><code>PAS-001-DOMAIN-MODEL-001</code> estabelece o vocabulário canônico dos nove Domínios de Evolução usados pelo Guivos Journey:</p>
+<ol>
+<li>Saúde e Bem-estar;</li>
+<li>Trabalho, Carreira e Estudos;</li>
+<li>Vida Financeira;</li>
+<li>Empreendedorismo e Projetos;</li>
+<li>Relacionamentos e Vida Social;</li>
+<li>Espiritualidade, Propósito e Valores;</li>
+<li>Viagens, Lazer, Cultura e Novas Experiências;</li>
+<li>Causas, Voluntariado e Contribuição;</li>
+<li>Organização e Equilíbrio da Vida.</li>
+</ol>
+<p>Guivos Intelligence poderá sugerir domínios, subáreas e relações como <strong>candidatos explicáveis</strong> quando houver finalidade e base adequadas.</p>
+<p>Deverão permanecer distintos:</p>
+<div class="highlight"><pre><span></span><code>domínio candidato ≠ domínio confirmado
+domínio ≠ identidade
+domínio ≠ diagnóstico
+domínio ≠ prioridade humana
+domínio ≠ score
+domínio ≠ prova de evolução
+</code></pre></div>
+<p>A declaração direta do participante, quando aplicável e legítima, deverá prevalecer sobre inferência incompatível.</p>
+<p>A Intelligence deverá preservar a possibilidade de:</p>
+<ul>
+<li>múltiplos domínios simultâneos;</li>
+<li>estado “Ainda estou descobrindo”;</li>
+<li>área ainda não mapeada;</li>
+<li>contestação;</li>
+<li>retirada;</li>
+<li>incerteza;</li>
+<li>ausência legítima de classificação.</li>
+</ul>
 <h2 id="product-architecture-intelligence-modelos-orientadores">Modelos orientadores<a class="headerlink" href="#product-architecture-intelligence-modelos-orientadores" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>GAI-001 — Guivos Artificial Intelligence Knowledge Model</code> define o fluxo de dados, informação, conhecimento, contexto e recomendação;</li>
-<li><code>GAI-002 — Manifesto da Inteligência do Ecossistema Guivos</code> define propósito, princípios, Grafo Global, autonomia, limites e patrimônio cumulativo.</li>
+<li><code>GAI-002 — Manifesto da Inteligência do Ecossistema Guivos</code> define propósito, princípios, Grafo Global, autonomia, limites e patrimônio cumulativo;</li>
+<li><code>PAS-001-DOMAIN-MODEL-001</code> define o vocabulário de Domínios de Evolução do Journey e os limites para classificação e uso desse contexto.</li>
 </ul>
 <h2 id="product-architecture-intelligence-grafo-e-tecnologia-de-referencia">Grafo e tecnologia de referência<a class="headerlink" href="#product-architecture-intelligence-grafo-e-tecnologia-de-referencia" title="Permanent link">&para;</a></h2>
 <p>O <strong>Grafo Global da Guivos</strong> é conceito e capacidade do ecossistema; não é sinônimo de um fornecedor de banco de dados.</p>
@@ -32267,9 +32628,11 @@ Guivos Intelligence = produto e Intelligence Layer
 Neo4j = tecnologia de referência para realização da camada de grafo
 </code></pre></div>
 <p>A escolha de Neo4j não declara instância, POC, cluster, Aura, dados carregados, Graph Data Science, GraphRAG, integração com Power BI ou produção implementados.</p>
+<p>Os Domínios de Evolução constituem vocabulário semântico candidato a compor uma futura ontologia do grafo, mas a sua aprovação documental <strong>não declara modelo físico de grafo implementado</strong>.</p>
 <h2 id="product-architecture-intelligence-relacao-com-graph-analytics">Relação com Graph Analytics<a class="headerlink" href="#product-architecture-intelligence-relacao-com-graph-analytics" title="Permanent link">&para;</a></h2>
 <p>Graph Analytics pode apoiar análises estruturais do ecossistema quando houver finalidade e dados autorizados.</p>
 <p>Resultados como centralidade, comunidades, similaridade ou previsão de relações são <strong>medidas técnicas contextualizadas</strong> e não podem ser convertidos automaticamente em valor humano, mérito, evolução, pertencimento, confiança ou verdade.</p>
+<p>Da mesma forma, afinidade de uma Pessoa, Coletivo ou Organização com determinado Domínio de Evolução não poderá ser convertida automaticamente em ranking, perfil determinístico ou conclusão sobre identidade.</p>
 <h2 id="product-architecture-intelligence-relacao-com-graphrag">Relação com GraphRAG<a class="headerlink" href="#product-architecture-intelligence-relacao-com-graphrag" title="Permanent link">&para;</a></h2>
 <p>GraphRAG é padrão candidato de recuperação de contexto e relações governadas antes de uma geração por modelo de linguagem.</p>
 <p>Ele não substitui:</p>
@@ -32285,26 +32648,39 @@ Neo4j = tecnologia de referência para realização da camada de grafo
 <h2 id="product-architecture-intelligence-consumo-analitico-e-power-bi">Consumo analítico e Power BI<a class="headerlink" href="#product-architecture-intelligence-consumo-analitico-e-power-bi" title="Permanent link">&para;</a></h2>
 <p>Guivos Intelligence poderá disponibilizar, quando autorizado, métricas e visões agregadas para Business Intelligence e dashboards executivos.</p>
 <p>Power BI é consumidor analítico possível, não fonte de verdade da Inteligência do Ecossistema. A forma técnica de integração permanece pendente de decisão posterior e deverá respeitar finalidade, minimização, autorização, segurança, volume, custo e rastreabilidade.</p>
+<p>Analytics por Domínio de Evolução deverá respeitar agregação, finalidade e proteção, especialmente quando envolver saúde, espiritualidade, condição emocional, finanças, emprego, família, vulnerabilidade ou outras informações sensíveis.</p>
 <h2 id="product-architecture-intelligence-limites">Limites<a class="headerlink" href="#product-architecture-intelligence-limites" title="Permanent link">&para;</a></h2>
 <p>Guivos Intelligence não substitui os produtos que executam jornadas, transações, viagens, soluções empresariais, conteúdo editorial ou publicidade.</p>
 <p>Também não deverá decidir o que uma pessoa deve querer, impor objetivos, substituir profissionais especializados, utilizar fontes como verdade automática, tratar inferências como certezas ou priorizar venda em prejuízo do participante.</p>
+<p>No uso de Domínios de Evolução, não deverá:</p>
+<ul>
+<li>confirmar domínio por conta própria quando a autoridade exigir participante ou fonte qualificada;</li>
+<li>diagnosticar saúde ou condição emocional;</li>
+<li>medir fé ou proximidade de Deus;</li>
+<li>inferir propósito de vida como verdade;</li>
+<li>transformar Vida Financeira em score de sucesso ou solvência pessoal;</li>
+<li>transformar Relacionamentos em score de valor social;</li>
+<li>transformar Voluntariado em ranking moral;</li>
+<li>utilizar domínio sensível para publicidade comportamental;</li>
+<li>criar um score global de evolução.</li>
+</ul>
 <p>A camada de grafo também não concede autoridade adicional sobre Pessoas, Coletivos, Organizações ou demais atores.</p>
 <h2 id="product-architecture-intelligence-relacoes-principais">Relações principais<a class="headerlink" href="#product-architecture-intelligence-relacoes-principais" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Guivos Journey, para compreensão de contexto, próximos passos e oportunidades;</li>
+<li>Guivos Journey, para compreensão de contexto, Domínios de Evolução, próximos passos e oportunidades;</li>
 <li>Guivos Business, para análises, indicadores e inteligência organizacional;</li>
 <li>Guivos Mall, para relevância, curadoria e organização de ofertas;</li>
 <li>Guivos Travel, para contexto e recomendação de experiências;</li>
 <li>Guivos Media, para organização e descoberta de conhecimento;</li>
-<li>Guivos Ads, para relevância, transparência e mensuração responsável.</li>
+<li>Guivos Ads, para relevância, transparência e mensuração responsável, sem usar domínio sensível como autorização de targeting.</li>
 </ul>
 <h2 id="product-architecture-intelligence-decisao-de-nomenclatura">Decisão de nomenclatura<a class="headerlink" href="#product-architecture-intelligence-decisao-de-nomenclatura" title="Permanent link">&para;</a></h2>
 <p><code>Guivos Intelligence</code> permanece como nome oficial do produto.</p>
 <p><code>Inteligência do Ecossistema Guivos</code> é a expressão conceitual e pública para a inteligência entregue por esse produto.</p>
 <h2 id="product-architecture-intelligence-estado-de-maturidade">Estado de maturidade<a class="headerlink" href="#product-architecture-intelligence-estado-de-maturidade" title="Permanent link">&para;</a></h2>
-<p>A responsabilidade superior do produto, o modelo conceitual de aprendizagem, o Grafo Global como modelo de conexões e os princípios do manifesto estão consolidados.</p>
+<p>A responsabilidade superior do produto, o modelo conceitual de aprendizagem, o Grafo Global como modelo de conexões, os princípios do manifesto e a relação semântica com os Domínios de Evolução estão consolidados documentalmente.</p>
 <p>Neo4j está em estado <code>reference_selected</code> como tecnologia primária de referência para grafo.</p>
-<p>Ontologia formal, arquitetura física de dados, modelo de grafo físico, POC, infraestrutura, mecanismos técnicos de consentimento, atualização de conhecimento, auditoria algorítmica, Graph Analytics operacional, GraphRAG operacional, Power BI integrado e explicabilidade operacional ainda dependem de detalhamento, validação, autorização e implementação.</p></section><section class="print-page" id="product-architecture-ads" heading-number="8.10.5"><h1 id="product-architecture-ads-guivos-ads">Guivos Ads<a class="headerlink" href="#product-architecture-ads-guivos-ads" title="Permanent link">&para;</a></h1>
+<p>A taxonomia dos Domínios de Evolução está governada no <code>PAS-001-DOMAIN-MODEL-001</code>, mas classificação operacional por IA, ontologia formal completa, arquitetura física de dados, modelo de grafo físico, POC, infraestrutura, mecanismos técnicos de consentimento, atualização de conhecimento, auditoria algorítmica, Graph Analytics operacional, GraphRAG operacional, Power BI integrado e explicabilidade operacional ainda dependem de detalhamento, validação, autorização e implementação.</p></section><section class="print-page" id="product-architecture-ads" heading-number="8.10.5"><h1 id="product-architecture-ads-guivos-ads">Guivos Ads<a class="headerlink" href="#product-architecture-ads-guivos-ads" title="Permanent link">&para;</a></h1>
 <h2 id="product-architecture-ads-papel">Papel<a class="headerlink" href="#product-architecture-ads-papel" title="Permanent link">&para;</a></h2>
 <p>Guivos Ads é o produto responsável pela publicidade, mídia patrocinada e soluções para anunciantes dentro do Ecossistema Guivos.</p>
 <h2 id="product-architecture-ads-escopo-principal">Escopo principal<a class="headerlink" href="#product-architecture-ads-escopo-principal" title="Permanent link">&para;</a></h2>
