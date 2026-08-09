@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -40,6 +40,7 @@ related:
   - GKR-UX-D5-B-001
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
+  - GKR-UX-D5-C3-001
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -79,8 +80,8 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | SVGs canônicos | **121** |
 | associações individuais | **121** |
 | perfis de rastreabilidade | **34** |
-| com validação funcional vigente | **118** |
-| pendentes de validação específica | **3** |
+| com validação funcional vigente | **121** |
+| pendentes de validação específica | **0** |
 | superfícies/estados/fronteiras | **57** |
 | transições documentais | **66** |
 | IDs com referência visual | **45 de 57** |
@@ -93,12 +94,13 @@ A D5-A reforma quatro SVGs de `PER-004`, `PER-007` e `PER-008` para materializar
 
 A D5-B materializa o mesmo eixo em `ORG-002`, `PER-201`, `PER-202` e `PER-203`, também in-place.
 
-A D5-C1 adiciona três responsabilidades (`PER-010..012`) e seis handoffs (`TRN-008..013`) no estado contratado. A D5-C2 adiciona **três SVGs low-fidelity e três perfis**, sem criar novo ID ou transição. Por isso, a baseline visual passa de 118 para **121**, mas somente os 118 ativos anteriores possuem validação funcional vigente.
+A D5-C1 adiciona três responsabilidades (`PER-010..012`) e seis handoffs (`TRN-008..013`) no estado contratado. A D5-C2 adiciona três SVGs low-fidelity e três perfis. A D5-C3 reforma in-place e valida funcionalmente os três SVGs, elevando a cobertura visual de **118 para 121 validações vigentes** sem criar novo ativo, ID ou transição.
 
 ## 4. Decisões estruturais preservadas
 
 - materialização não equivale a validação funcional;
-- perfil de rastreabilidade não equivale a aprovação da superfície;
+- validação local de superfície não equivale a continuidade integrada;
+- perfil de rastreabilidade não equivale por si só a aprovação da superfície;
 - transição contratada não equivale a continuidade validada;
 - uma versão visual reformulada exige validação correspondente;
 - publicação ou ativação não equivale a distribuição garantida;
@@ -137,6 +139,7 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-B — Domínios na camada de Oportunidades
 → D5-C1 — contrato das superfícies de direção, movimento e evolução
 → D5-C2 — low-fidelity de Meus Objetivos, Meus Próximos Passos e Minha Evolução
+→ D5-C3 — validação funcional e reformulação dos três SVGs
 ```
 
 D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada.
@@ -159,26 +162,21 @@ D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional
 4. `PER-012 — Minha Evolução`;
 5. `TRN-008..013` como handoffs mínimos com Hoje;
 6. nenhuma navegação direta inventada entre as três superfícies;
-7. responsabilidades e transições apenas contratadas.
+7. responsabilidades e transições inicialmente contratadas.
 
 ### 5.4 D5-C2
 
-[GKR-UX-D5-C2-001](d5-c2-direction-movement-evolution-low-fidelity-wireframes.md) materializa um estado-base móvel para cada responsabilidade:
+[GKR-UX-D5-C2-001](d5-c2-direction-movement-evolution-low-fidelity-wireframes.md) materializa um estado-base móvel para cada responsabilidade e cria três perfis de rastreabilidade (`R32..R34`). A frente eleva o inventário para 121 SVGs / 121 associações / 34 perfis, mantendo as três novas superfícies pendentes até validação posterior.
 
-- `d5-c2-person-objectives-mobile.svg` — direção e controle de Objetivos, sem score de produtividade;
-- `d5-c2-person-next-steps-mobile.svg` — movimentos contextuais revisáveis, sem streak ou urgência artificial;
-- `d5-c2-person-evolution-mobile.svg` — trajetória, evidência, contexto e incerteza, sem score, ranking ou roda da vida.
+### 5.5 D5-C3
 
-A D5-C2:
+[GKR-UX-D5-C3-001](d5-c3-direction-movement-evolution-functional-validation.md) confronta os três SVGs com `PAS-001-OBJ-VIEW-001`, `PAS-001-PP-VIEW-001` e `PAS-001-EC-VIEW-001` e reforma somente insuficiências materiais:
 
-- cria **3 SVGs** e **3 perfis** (`R32..R34`);
-- eleva o inventário visual para **121 SVGs / 121 associações / 34 perfis**;
-- mantém **118 validados + 3 pendentes**;
-- mantém **57 superfícies e 66 transições**;
-- eleva IDs com referência visual para **45/57**;
-- reduz responsabilidades sem SVG de 13 para **10**;
-- preserva `TRN-008..013` como contratadas;
-- não cria API, banco, evento, grafo, protótipo ou implementação.
+- `PER-010`: estados funcionais claros, prioridade declarada separada de valor pessoal, progresso qualitativo e controles de privacidade;
+- `PER-011`: estado `PRONTO`, prontidão/dependência explícitas, proposta distinta de decisão e ação coerente com o estado;
+- `PER-012`: período, baseline, direção, interpretação explicitamente inferida, confiança, incerteza, contestação e revisão;
+- os três SVGs passam a possuir validação funcional local vigente;
+- `TRN-008..013` permanecem contratadas e fora da promoção desta frente.
 
 ## 6. Resultado da UXA-100-A4 preservado
 
@@ -192,27 +190,27 @@ A D5-C2:
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active` 0.36.0 |
-| Jornada da Pessoa | `draft` 0.19.0 |
-| Jornada do Coletivo | `draft` 0.18.0 |
-| Jornada da Organização | `draft` 0.11.0 |
-| catálogo integrado | `active` 0.30.0; 121 SVGs |
-| galeria visual | `active` 0.23.0; 121 SVGs |
-| galeria da Pessoa | `active` 0.5.0; 23 SVGs |
+| Jornadas Integradas | `active`; D5-C3 sincronizada |
+| Jornada da Pessoa | `draft`; PER-010..012 validados localmente |
+| Jornada do Coletivo | `draft` |
+| Jornada da Organização | `draft` |
+| catálogo integrado | `active`; 121 SVGs / 121 validados |
+| galeria visual | `active`; 121 SVGs / 0 pendentes |
+| galeria da Pessoa | `active`; 23 SVGs |
 | galeria de Planos | `active` 0.5.0 |
-| matriz por SVG | `active` 0.21.0; 121 associações / 34 perfis |
-| lacunas | `active` 0.30.0 |
-| registro de superfícies | `active` 0.21.0; 57 IDs |
-| registro de transições | `active` 0.22.0; 66 transições |
-| detalhamento da Pessoa | `active` 0.14.0 |
+| matriz por SVG | `active`; 121 associações / 34 perfis |
+| lacunas | `active`; handoffs D5-C permanecem separados |
+| registro de superfícies | `active`; 57 IDs |
+| registro de transições | `active`; 66 transições |
+| detalhamento da Pessoa | `active`; PER-010..012 validados localmente |
 | D5-A | `active` 1.0.0 |
 | D5-B | `active` 1.0.0 |
 | D5-C1 | `active` 1.0.0 |
 | D5-C2 | `active` 1.0.0 |
+| D5-C3 | `active` 1.0.0 |
 
 ## 9. Ressalvas vigentes
 
-- 3 SVGs D5-C2 permanecem pendentes de validação funcional;
 - 10 responsabilidades permanecem sem SVG dedicado, incluindo `PER-009`;
 - `TRN-008..013` permanecem contratadas até validação ponta a ponta;
 - `TRN-406/407` permanecem contratadas;
@@ -238,11 +236,12 @@ V1 — encerrada pela UXA-097
 → D5-B — Domínios na camada de Oportunidades materializados sem nova superfície
 → D5-C1 — responsabilidades e handoffs mínimos contratados
 → D5-C2 — três superfícies materializadas em low-fidelity
+→ D5-C3 — três superfícies reformuladas e validadas localmente
 → V5 — pendente e não iniciada
 ```
 
-D5-A/B/C1/C2 não consomem nem antecipam V5.
+D5-A/B/C1/C2/C3 não consomem nem antecipam V5.
 
 ## 11. Próxima evolução possível
 
-Após integração governada da D5-C2, a validação/reformulação funcional de `PER-010`, `PER-011` e `PER-012` e o exame ponta a ponta de `TRN-008..013` podem constituir frente separada posterior. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real e demais validações permanecem independentes. Nenhuma é iniciada automaticamente.
+Após integração governada da D5-C3, uma frente posterior poderá examinar exclusivamente `TRN-008..013` e a continuidade `Hoje ↔ Objetivos/Próximos Passos/Evolução`. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real e demais validações permanecem independentes. Nenhuma é iniciada automaticamente.

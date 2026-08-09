@@ -8,13 +8,13 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **2.33.0** |
+| GKR-STATE-001 | **2.34.0** |
 | Era | GE-2 — Knowledge |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
-| frente não numerada mais recente | **D5-C2 — Objetivos, Próximos Passos e Evolução materializados em low-fidelity** |
+| frente não numerada mais recente | **D5-C3 — Objetivos, Próximos Passos e Evolução validados localmente** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
-| SVGs | **121 — 118 validados + 3 pendentes** |
+| SVGs | **121 — 121 validados / 0 pendentes** |
 | associações | **121** |
 | perfis | **34** |
 | superfícies/estados/fronteiras | **57** |
@@ -22,16 +22,17 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Engenharia de Produto | pausada antes de W0-01 |
 | programa P0–P9 | consolidado documentalmente após integração de P9 |
 
-O Journey possui baseline canônico de **9 Domínios de Evolução**. D5-A e D5-B materializam esse eixo em superfícies existentes; D5-C1 contratou `PER-010..012` e `TRN-008..013`; D5-C2 materializa um estado-base low-fidelity para as três responsabilidades sem validar automaticamente as superfícies ou os handoffs.
+O Journey possui baseline canônico de **9 Domínios de Evolução**. D5-A e D5-B materializam esse eixo em superfícies existentes; D5-C1 contratou `PER-010..012` e `TRN-008..013`; D5-C2 materializou um estado-base low-fidelity para as três responsabilidades; D5-C3 valida e reforma localmente esses três SVGs sem promover os handoffs.
 
 ## Public Canon
 
 O documento institucional público vigente é o [GOG-001 — Guia Oficial da Guivos 5.0.0](docs/public/guia-oficial-da-guivos.md).
 
-A edição 5.0.0 foi reconciliada com as autoridades de participantes, planos, sete Produtos Especializados, grafo/Neo4j, incentivos, arquitetura institucional, privacidade e internacionalização. D5-C2 é materialização interna de Experience Architecture e não declara disponibilidade pública de produto.
+A edição 5.0.0 foi reconciliada com as autoridades de participantes, planos, sete Produtos Especializados, grafo/Neo4j, incentivos, arquitetura institucional, privacidade e internacionalização. D5-C3 permanece autoridade interna de Experience Architecture e não declara disponibilidade pública de produto.
 
 ## Autoridades recentes
 
+- [D5-C3 — Validação Funcional de Direção, Movimento e Evolução](docs/experience-architecture/d5-c3-direction-movement-evolution-functional-validation.md)
 - [D5-C2 — Materialização Low-Fidelity de Direção, Movimento e Evolução](docs/experience-architecture/d5-c2-direction-movement-evolution-low-fidelity-wireframes.md)
 - [D5-C1 — Contrato das Superfícies de Direção, Movimento e Evolução](docs/experience-architecture/d5-c1-direction-movement-evolution-surface-contract.md)
 - [D5-B — Domínios de Evolução na Camada de Oportunidades](docs/experience-architecture/d5-b-evolution-domains-opportunities-layer.md)
@@ -61,7 +62,7 @@ Neo4j = tecnologia de referência ≠ produção
 Fundação Guivos = conceito ≠ entidade constituída
 Portugal = T1_candidate ≠ mercado ativo
 aceite contratual ≠ consentimento LGPD ≠ preferência
-PER-010..012 materializados ≠ superfícies funcionalmente validadas ≠ produto implementado
+PER-010..012 validados localmente ≠ continuidade integrada ≠ produto implementado
 TRN-008..013 contratadas ≠ continuidade validada
 Domínio de Evolução ≠ identidade ≠ score ≠ diagnóstico ≠ prova de evolução
 Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança
@@ -78,7 +79,7 @@ Plano não representa mérito, prestígio ou nível de evolução.
 
 A origem voluntária de Planos está formalizada por `PER-009 ↔ PER-301`, `COL-002 ↔ COL-301` e `ORG-001 ↔ ORG-301`. A origem da Pessoa ainda não possui SVG dedicado; navegar para Planos não equivale a contratar ou iniciar cobrança.
 
-## Jornada pessoal especializada após D5-C2
+## Jornada pessoal especializada após D5-C3
 
 A Experience Architecture reconhece:
 
@@ -89,7 +90,7 @@ PER-008 — Hoje
 └── TRN-012 → PER-012 — Minha Evolução → TRN-013 → PER-008
 ```
 
-`PER-010..012` possuem agora um SVG low-fidelity cada. Os três ativos estão **pendentes de validação funcional** e as seis transições permanecem `contratadas`. Hoje sintetiza; as superfícies especializadas aprofundam direção, movimento e trajetória somente dentro dos contratos vigentes.
+`PER-010..012` possuem um SVG low-fidelity cada e estão **funcionalmente validados localmente pela D5-C3**. As seis transições permanecem `contratadas`; portanto, retorno visual para Hoje não equivale a continuidade integrada validada.
 
 ## Domínios de Evolução do Guivos Journey
 
@@ -115,7 +116,7 @@ Não estão autorizados ou comprovados apenas pela consolidação documental:
 
 - UXA-102/V5;
 - retomada da Engenharia de Produto;
-- validação automática dos três SVGs D5-C2 ou promoção automática de `TRN-008..013`;
+- promoção automática de `TRN-008..013` a continuidade validada;
 - implementação/produção Neo4j, GraphRAG ou GDS;
 - classificação operacional por IA dos Domínios de Evolução;
 - ontologia física de grafo para os Domínios de Evolução;

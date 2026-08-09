@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.21.0
+version: 0.22.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -30,6 +30,7 @@ depends_on:
   - UXA-101
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
+  - GKR-UX-D5-C3-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -47,7 +48,7 @@ Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos *
 
 ## 2. Estado do instrumento
 
-A D5-C2 eleva o inventário para **121 associações** e **34 perfis** ao materializar um estado-base para `PER-010`, `PER-011` e `PER-012`. Os três novos perfis permanecem pendentes de validação funcional específica; `PER-009` continua sem perfil visual próprio.
+A D5-C2 elevou o inventário para **121 associações** e **34 perfis** ao materializar um estado-base para `PER-010`, `PER-011` e `PER-012`. A D5-C3 reforma esses três ativos in-place e valida funcionalmente os perfis `R32`, `R33` e `R34` no limite local de suas superfícies; `PER-009` continua sem perfil visual próprio.
 
 A reconciliação preserva a leitura de `BND-002` como fronteira genérica de contratação/dimensionamento assistido, a separação `Organização ≠ Guivos Business` e a distinção entre Domínio de Evolução, dimensão estrutural do Contexto Vivo e aspecto descritivo da mudança.
 
@@ -86,11 +87,11 @@ A reconciliação preserva a leitura de `BND-002` como fronteira genérica de co
 | R29 | PER-301/302/303/304 | **PER-009 via TRN-406** ou limite contextual legítimo | TRN-401 a 405; **TRN-407 para Conta** | manter plano, voltar, tentar novamente, preservar Free | **PER-009 sem materialização**; gateway/proration | UXA-100-A2/A3; **origem/retorno contratados UXA-100-A4** |
 | R30 | COL-301/302/303/304 | **COL-002 via TRN-417** ou limite legítimo | TRN-411 a 416; **TRN-418 para Visão Geral** | manter plano, aguardar, ajustar excedentes, retornar | contratação/dimensionamento após BND-002 e cobrança real | UXA-100-A2/A3; **TRN-417/418 integrais UXA-100-A4** |
 | R31 | ORG-301/302/303/304 | **ORG-001 via TRN-427** ou capacidade legítima | TRN-421 a 426; **TRN-428 para Visão Geral** | manter plano, ajustar capacidade, retornar | contratação/dimensionamento após BND-002 e cobrança real | UXA-100-A2/A3; **TRN-427/428 integrais UXA-100-A4** |
-| R32 | PER-010 | TRN-008 contratada | TRN-009 contratada | revisar objetivo; voltar para Hoje; interromper sem alteração | estados alternativos e handoff ponta a ponta | **pendente após materialização D5-C2** |
-| R33 | PER-011 | TRN-010 contratada | TRN-011 contratada | revisar, adiar, não seguir; voltar para Hoje | estados propostos/bloqueados e handoff ponta a ponta | **pendente após materialização D5-C2** |
-| R34 | PER-012 | TRN-012 contratada | TRN-013 contratada | revisar leitura, pausar acompanhamento, ajustar privacidade; voltar para Hoje | sensibilidade, evidência e handoff ponta a ponta | **pendente após materialização D5-C2** |
+| R32 | PER-010 | TRN-008 contratada | TRN-009 contratada | revisar objetivo; voltar para Hoje; interromper sem alteração | handoff ponta a ponta; estados alternativos permanecem posteriores | **GKR-UX-D5-C3-001 — superfície validada localmente; TRN-008/009 contratadas** |
+| R33 | PER-011 | TRN-010 contratada | TRN-011 contratada | revisar, adiar, não seguir; voltar para Hoje | handoff ponta a ponta; estados adicionais permanecem posteriores | **GKR-UX-D5-C3-001 — superfície validada localmente; TRN-010/011 contratadas** |
+| R34 | PER-012 | TRN-012 contratada | TRN-013 contratada | revisar leitura, pausar acompanhamento, ajustar privacidade; voltar para Hoje | handoff ponta a ponta; estados sensíveis adicionais quando aplicáveis | **GKR-UX-D5-C3-001 — superfície validada localmente; TRN-012/013 contratadas** |
 
-R32–R34 registram somente a evidência visual criada pela D5-C2. A existência desses perfis não promove `PER-010..012` para `validado` nem `TRN-008..013` além de `contratada`.
+R32–R34 preservam as mesmas associações criadas pela D5-C2 e passam a carregar validação funcional local pela D5-C3. Essa promoção não altera `TRN-008..013`, que continuam `contratadas`.
 
 ## 4. Associação individual dos 121 SVGs
 
@@ -223,17 +224,17 @@ R32–R34 registram somente a evidência visual criada pela D5-C2. A existência
 - SVGs registrados: **121**;
 - associações individuais: **121**;
 - perfis documentais: **34**;
-- com validação funcional vigente: **118**;
-- pendentes de validação específica: **3**;
-- R32, R33 e R34 registram materialização sem validação funcional;
+- com validação funcional vigente: **121**;
+- pendentes de validação específica: **0**;
+- R32, R33 e R34 possuem validação funcional local pela D5-C3;
 - `PER-009` continua sem perfil porque não possui SVG dedicado;
 - `BND-001` e `BND-002` permanecem sem SVG por definição de fronteira;
 - validação visual não atribui à Guivos comportamento posterior às fronteiras.
 
-## 6. Estado após D5-C2
+## 6. Estado após D5-C3
 
-A D5-C2 adiciona três associações individuais e três perfis documentais, sem remover ou substituir os 118 SVGs previamente validados.
+A D5-C3 preserva as 121 associações individuais e os 34 perfis documentais. Ela apenas reformula e valida localmente R32–R34, sem criar ou remover vínculo visual.
 
-`TRN-008..013` permanecem contratadas apesar da materialização de `PER-010..012`; sua validação exige exame específico ponta a ponta. `TRN-406/407` permanecem contratadas até materialização de `PER-009`. As transições internas de contratação/ciclo preservam a maturidade anterior, e `TRN-416/426` continuam parciais após `BND-002`.
+`TRN-008..013` permanecem contratadas apesar da validação local de `PER-010..012`; sua validação exige exame específico ponta a ponta. `TRN-406/407` permanecem contratadas até materialização de `PER-009`. As transições internas de contratação/ciclo preservam a maturidade anterior, e `TRN-416/426` continuam parciais após `BND-002`.
 
 Pessoa, Coletivo e Organização continuam `draft`; V5/UXA-102, D6, D7 e Engenharia de Produto não são iniciados.
