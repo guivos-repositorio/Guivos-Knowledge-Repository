@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">PER-012 — Minha Evolução — low-fidelity mobile</title>
+  <desc id="desc">Superfície de compreensão e revisão de trajetórias da Pessoa, sem score, ranking, roda da vida ou diagnóstico.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="389" height="843" fill="none" stroke="#222222"/>
+
+  <text x="20" y="34" font-family="Arial, sans-serif" font-size="14" fill="#222222">‹ Hoje</text>
+  <text x="20" y="72" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111111">Minha Evolução</text>
+  <text x="20" y="96" font-family="Arial, sans-serif" font-size="12" fill="#555555">Compreenda trajetórias, mudanças e continuidades.</text>
+  <text x="20" y="114" font-family="Arial, sans-serif" font-size="12" fill="#555555">Sem nota, ranking ou conclusão automática.</text>
+
+  <rect x="20" y="136" width="350" height="42" rx="8" fill="#ffffff" stroke="#bdbdbd"/>
+  <text x="34" y="162" font-family="Arial, sans-serif" font-size="12" fill="#333333">Área da jornada: Todas ▾</text>
+
+  <rect x="20" y="194" width="350" height="370" rx="10" fill="#fafafa" stroke="#777777"/>
+  <text x="34" y="220" font-family="Arial, sans-serif" font-size="11" fill="#666666">TRAJETÓRIA EM ACOMPANHAMENTO</text>
+  <text x="34" y="247" font-family="Arial, sans-serif" font-size="11" fill="#555555">Área da jornada</text>
+  <text x="34" y="267" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#222222">Trabalho, Carreira e Estudos</text>
+
+  <text x="34" y="296" font-family="Arial, sans-serif" font-size="11" fill="#555555">Trajetória</text>
+  <text x="34" y="316" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#111111">Transição para posição de liderança</text>
+
+  <text x="34" y="346" font-family="Arial, sans-serif" font-size="11" fill="#555555">Direção reconhecida</text>
+  <text x="34" y="366" font-family="Arial, sans-serif" font-size="12" fill="#222222">Assumir responsabilidades de gestão</text>
+
+  <text x="34" y="396" font-family="Arial, sans-serif" font-size="11" fill="#555555">Aspectos observados</text>
+  <text x="34" y="416" font-family="Arial, sans-serif" font-size="12" fill="#222222">profissional · cognitivo · comportamental</text>
+
+  <text x="34" y="446" font-family="Arial, sans-serif" font-size="11" fill="#555555">Contexto relacionado</text>
+  <text x="34" y="466" font-family="Arial, sans-serif" font-size="12" fill="#222222">Direção · Capacidades · Restrições</text>
+
+  <text x="34" y="496" font-family="Arial, sans-serif" font-size="11" fill="#555555">Leitura atual</text>
+  <text x="34" y="516" font-family="Arial, sans-serif" font-size="12" fill="#222222">Há sinais de fortalecimento, ainda inconclusivos.</text>
+  <text x="34" y="540" font-family="Arial, sans-serif" font-size="11" fill="#333333">Ver evidências e revisar leitura  →</text>
+
+  <rect x="20" y="582" width="350" height="96" rx="10" fill="#f5f5f5" stroke="#d0d0d0"/>
+  <text x="34" y="608" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#333333">Três conceitos permanecem separados</text>
+  <text x="34" y="629" font-family="Arial, sans-serif" font-size="11" fill="#555555">Área da jornada ≠ dimensão do Contexto Vivo</text>
+  <text x="34" y="648" font-family="Arial, sans-serif" font-size="11" fill="#555555">≠ aspecto descritivo da mudança.</text>
+  <text x="34" y="667" font-family="Arial, sans-serif" font-size="11" fill="#555555">Nenhum deles representa mérito humano.</text>
+
+  <rect x="20" y="696" width="350" height="54" rx="10" fill="#222222"/>
+  <text x="195" y="729" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Revisar minha trajetória</text>
+
+  <rect x="20" y="768" width="350" height="44" rx="8" fill="#ffffff" stroke="#bdbdbd"/>
+  <text x="195" y="795" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333333">Pausar acompanhamento · ajustar privacidade</text>
+</svg>
