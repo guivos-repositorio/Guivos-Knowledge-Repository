@@ -2,11 +2,12 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.96.0
+version: 0.97.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-08
 related:
   - PAS-001
+  - PAS-001-DOMAIN-MODEL-001
   - GLPA-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - UXA-001
@@ -34,6 +35,7 @@ related:
   - UXA-100-A3
   - UXA-100-A4
   - UXA-101
+  - GKR-UX-D5-A-001
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -83,6 +85,8 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 A UXA-100-A4 adiciona somente `PER-009` como responsabilidade sem SVG e seis handoffs de navegação; os 118 ativos visuais permanecem em quantidade constante.
 
+A D5-A reforma quatro SVGs já associados a `PER-004`, `PER-007` e `PER-008` para materializar Domínios de Evolução sem criar novo ativo visual, superfície ou transição. As contagens permanecem inalteradas.
+
 ## 4. Decisões estruturais preservadas
 
 - materialização não equivale a validação funcional por padrão;
@@ -102,7 +106,11 @@ A UXA-100-A4 adiciona somente `PER-009` como responsabilidade sem SVG e seis han
 - fronteira externa não é tela da Guivos;
 - validação até uma fronteira não valida comportamento de terceiro;
 - estado canônico vigente prevalece sobre estado visual obsoleto;
-- validação documental não equivale a implementação técnica.
+- validação documental não equivale a implementação técnica;
+- Domínio de Evolução organiza sobre o que a jornada trata e não representa diagnóstico, identidade, score, objetivo, Próximo Passo ou prova de evolução;
+- domínio candidato deve permanecer visualmente distinto de domínio confirmado;
+- ausência de domínio confirmado é estado legítimo e não bloqueia a jornada;
+- um participante ou item pode se relacionar a mais de um domínio quando houver autoridade e finalidade adequadas.
 
 ## 5. Evolução recente
 
@@ -113,9 +121,25 @@ UXA-097 — primeira Hoje e TRN-007
 → UXA-100/A1/A2/A3 — Planos nas três jornadas e promoção canônica
 → UXA-101 — revisão consciente de saída e TRN-205 até BND-001
 → UXA-100-A4 — reconciliação das origens administrativas de Planos
+→ D5-A — Domínios de Evolução em Expressão Guiada, Compreensão Inicial e Hoje
 ```
 
-A UXA-100-A4 é uma subfrente da UXA-100 e não altera a última frente funcional numerada: UXA-101 continua vigente e UXA-102/V5 permanece não iniciada.
+A D5-A é uma frente de materialização semântica não numerada e não altera a última frente funcional numerada: UXA-101 continua vigente e UXA-102/V5 permanece não iniciada.
+
+### 5.1 Resultado da D5-A
+
+[GKR-UX-D5-A-001 — Materialização Controlada dos Domínios de Evolução na Jornada Inicial](d5-a-evolution-domains-guided-expression-initial-understanding-today.md) consolida:
+
+1. área da jornada candidata e revisável na síntese estruturada de `PER-004`;
+2. reconciliação de `situação · impacto · prioridade · direção · contexto` como eixos de organização do relato, distintos dos Domínios de Evolução e das dimensões estruturais do Contexto Vivo;
+3. apresentação separada da área candidata em `PER-007`;
+4. gate próprio, sem pré-seleção, para confirmar, adicionar outra área, rejeitar ou manter em aberto;
+5. preservação de `Ainda estou descobrindo` como estado e `Outra área` como mecanismo de extensibilidade;
+6. domínio confirmado exibido somente como contexto discreto da continuidade em `PER-008`;
+7. ausência de domínio confirmada como estado legítimo da experiência;
+8. nenhuma nova superfície, transição ou família visual;
+9. 118 SVGs, 31 perfis, 54 superfícies/estados/fronteiras e 60 transições preservados;
+10. D5-B, D5-C, UXA-102/V5 e Engenharia de Produto mantidos fora do escopo.
 
 ## 6. Resultado da UXA-100-A4
 
@@ -154,6 +178,7 @@ A frente consolida revisão pré-saída em `PER-203`, identificação do destino
 | registro de superfícies | `active` 0.19.0 |
 | registro de transições | `active` 0.20.0 |
 | detalhamento comercial/fronteira | `active` |
+| D5-A — Domínios na jornada inicial | `active` 1.0.0 |
 
 ## 9. Ressalvas vigentes
 
@@ -164,7 +189,8 @@ A frente consolida revisão pré-saída em `PER-203`, identificação do destino
 - `TRN-416/426` permanecem parciais;
 - gateway, cobrança real, proration e processo de contratação/dimensionamento assistido após `BND-002` permanecem fora do escopo;
 - processo externo após `BND-001` permanece sob autoridade de terceiro;
-- Jornadas da Pessoa, Coletivo e Organização continuam `draft`.
+- Jornadas da Pessoa, Coletivo e Organização continuam `draft`;
+- D5-B e D5-C permanecem não iniciadas e exigem autorização separada.
 
 ## 10. Fila global preservada
 
@@ -175,9 +201,12 @@ V1 — encerrada pela UXA-097
 → Planos — identidade canônica encerrada pela UXA-100-A3
 → V4 — encerrada pela UXA-101 até BND-001
 → Planos — origem voluntária reconciliada pela UXA-100-A4
+→ D5-A — Domínios na jornada inicial materializados in-place
 → V5 — pendente e não iniciada
 ```
 
+D5-A não consome nem antecipa V5.
+
 ## 11. Próxima evolução possível
 
-Materialização de `PER-009`, V5/UXA-102, cobrança real, contratação/dimensionamento assistido após `BND-002` e demais validações exigem autorização separada. Nenhuma delas é iniciada automaticamente por esta reconciliação.
+D5-B, D5-C, materialização de `PER-009`, V5/UXA-102, cobrança real, contratação/dimensionamento assistido após `BND-002` e demais validações exigem autorização separada. Nenhuma delas é iniciada automaticamente por esta frente.
