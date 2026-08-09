@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.19.0
+version: 0.20.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -11,6 +11,7 @@ related:
   - GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
+  - GKR-UX-D5-C3-001
   - UXA-002
   - UXA-004
   - UXA-006
@@ -122,7 +123,8 @@ Regras desta vista:
 - plano pago, patrocínio ou oferta comercial não altera domínio nem relevância funcional;
 - D5-A e D5-B materializam o eixo em superfícies existentes;
 - D5-C1 contrata Objetivos, Próximos Passos e Evolução;
-- D5-C2 materializa um estado-base low-fidelity para cada uma dessas três responsabilidades sem validá-las automaticamente.
+- D5-C2 materializa um estado-base low-fidelity para cada uma dessas três responsabilidades;
+- D5-C3 reforma e valida funcionalmente esses três estados-base no limite local, sem promover seus handoffs.
 
 ## 3. Direção, movimento e evolução a partir de Hoje
 
@@ -138,17 +140,17 @@ PER-008 — Hoje
     └── TRN-013 → PER-008
 ```
 
-A D5-C2 materializa:
+A D5-C2 materializa e a D5-C3 reforma/valida localmente:
 
 - `PER-010` em `d5-c2-person-objectives-mobile.svg`;
 - `PER-011` em `d5-c2-person-next-steps-mobile.svg`;
 - `PER-012` em `d5-c2-person-evolution-mobile.svg`.
 
-As três superfícies permanecem com **validação funcional pendente** e `TRN-008..013` permanecem **contratadas**.
+As três superfícies possuem **validação funcional local vigente** e `TRN-008..013` permanecem **contratadas**.
 
 ### 3.1 PER-010 — Meus Objetivos
 
-`PER-010` governa compreensão, organização e controle dos objetivos da Pessoa. O estado-base D5-C2 mostra portfólio, estados, Área da jornada, revisão e multidomínio quando legítimo, sem percentual automático de progresso.
+`PER-010` governa compreensão, organização e controle dos objetivos da Pessoa. Após D5-C3, o estado-base explicita estado funcional, prioridade declarada, Área da jornada, progresso qualitativo, revisão, critérios/evidências e controles de privacidade, sem percentual automático de progresso.
 
 ```text
 Domínio de Evolução
@@ -158,13 +160,13 @@ Domínio de Evolução
 ≠ progresso
 ```
 
-Área da jornada deve permanecer distinta de dimensão estrutural do Contexto Vivo.
+Área da jornada permanece distinta de dimensão estrutural do Contexto Vivo. Prioridade declarada não representa valor humano, obrigação ou urgência automática.
 
-![Meus Objetivos — D5-C2](../assets/wireframes/d5-c2-person-objectives-mobile.svg)
+![Meus Objetivos — D5-C3](../assets/wireframes/d5-c2-person-objectives-mobile.svg)
 
 ### 3.2 PER-011 — Meus Próximos Passos
 
-`PER-011` governa movimentos contextuais, não uma lista coercitiva de tarefas. O estado-base D5-C2 apresenta movimento atual e propostas como escolhas revisáveis, com ações de revisar, adiar, concluir, aceitar, manter em aberto ou não seguir.
+`PER-011` governa movimentos contextuais, não uma lista coercitiva de tarefas. Após D5-C3, o estado-base distingue `PRONTO` de `PROPOSTO`, explicita prontidão/dependência e origem da proposta, e utiliza ações coerentes com cada estado.
 
 ```text
 domínio relacionado
@@ -175,13 +177,15 @@ domínio relacionado
 ≠ prova de evolução
 ```
 
-![Meus Próximos Passos — D5-C2](../assets/wireframes/d5-c2-person-next-steps-mobile.svg)
+Uma sugestão da Guivos não constitui decisão da Pessoa. Períodos sem Próximos Passos ativos são legítimos.
+
+![Meus Próximos Passos — D5-C3](../assets/wireframes/d5-c2-person-next-steps-mobile.svg)
 
 ### 3.3 PER-012 — Minha Evolução
 
 `PER-012` governa compreensão e controle de trajetórias, mudanças, continuidades, evidências, confiança, incerteza, interpretações e contestações.
 
-O estado-base D5-C2 preserva explicitamente:
+Após D5-C3, o estado-base torna explícitos período, baseline, direção, natureza inferida da interpretação, confiança, incerteza e possibilidade de contestação/revisão.
 
 ```text
 Domínio de Evolução
@@ -191,9 +195,9 @@ Domínio de Evolução
 ≠ score
 ```
 
-`Minha Evolução` não é roda da vida obrigatória, ranking, percentual global da Pessoa, diagnóstico ou avaliação espiritual.
+`Minha Evolução` não é roda da vida obrigatória, ranking, percentual global da Pessoa, diagnóstico ou avaliação espiritual. Inferência permanece visualmente distinta de fato confirmado.
 
-![Minha Evolução — D5-C2](../assets/wireframes/d5-c2-person-evolution-mobile.svg)
+![Minha Evolução — D5-C3](../assets/wireframes/d5-c2-person-evolution-mobile.svg)
 
 ### 3.4 Papel de Hoje
 
@@ -209,11 +213,13 @@ superfícies especializadas
 → aprofundam e oferecem controle
 ```
 
-A existência dos três SVGs não exige três cards permanentes em Hoje e não autoriza exposição sensível por padrão.
+A existência e validação local dos três SVGs não exige três cards permanentes em Hoje e não autoriza exposição sensível por padrão.
 
-### 3.5 Handoffs não contratados
+### 3.5 Handoffs não contratados e não validados
 
 Não existem handoffs diretos governados entre `PER-010`, `PER-011` e `PER-012`. Relação semântica entre Objetivo, Próximo Passo e Evolução não é evidência suficiente de necessidade de navegação direta.
+
+`TRN-008..013` permanecem contratadas. O rótulo `‹ Hoje` não valida payload/contexto, retorno, interrupção, concorrência, idempotência ou revalidação de autorização.
 
 ## 4. Descoberta de oportunidades e saída consciente
 
@@ -314,7 +320,7 @@ Explorar Coletivos
 Esta vista permanece `draft` porque:
 
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` ainda são parciais;
-- `PER-010`, `PER-011` e `PER-012` estão materializados, mas possuem validação funcional pendente e `TRN-008..013` permanecem contratadas;
+- `PER-010`, `PER-011` e `PER-012` estão validados localmente, mas `TRN-008..013` permanecem contratadas;
 - as transições comerciais internas de Planos são locais e não representam cobrança ponta a ponta;
 - `PER-009` ainda não possui materialização própria e `TRN-406/407` permanecem contratadas;
 - estados P0B adicionais permanecem separados;
@@ -325,6 +331,6 @@ Esta vista permanece `draft` porque:
 
 ## 9. Estado atual
 
-V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` explícitos nesta vista. D5-A/B materializam o eixo em superfícies existentes; D5-C1 contrata `PER-010..012` e `TRN-008..013`; D5-C2 materializa as três superfícies em low-fidelity, mantendo validação e handoffs como gates posteriores.
+V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` explícitos nesta vista. D5-A/B materializam o eixo em superfícies existentes; D5-C1 contrata `PER-010..012` e `TRN-008..013`; D5-C2 materializa as três superfícies em low-fidelity; D5-C3 reforma e valida localmente os três SVGs, mantendo os seis handoffs como gate posterior separado.
 
 V5/UXA-102, D6, D7 e Engenharia de Produto não foram iniciados automaticamente.
