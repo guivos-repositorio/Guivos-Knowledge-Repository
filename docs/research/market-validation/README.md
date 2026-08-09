@@ -1,7 +1,7 @@
 ---
 title: Guivos Market Validation System
 status: active
-version: 1.4.0
+version: 1.5.0
 owner: Guivos
 last_updated: 2026-08-08
 ---
@@ -30,6 +30,7 @@ Transformar hipóteses internas em perguntas testáveis, coletar evidências de 
 
 - [VAL-001 — Framework de Validação de Mercado](VAL-001-framework-de-validacao-de-mercado.md) — versão 1.3.1;
 - [VAL-002 — Pesquisa Oficial B2C](VAL-002-pesquisa-oficial-da-guivos.md) — versão 2.1.0, título público `Construindo a Guivos`;
+- [VAL-002-A1 — Mapeamento da Pesquisa B2C para os Domínios de Evolução](VAL-002-A1-mapeamento-dominios-evolucao.md) — versão 1.0.0;
 - [VAL-003 — Guia do Entrevistador](VAL-003-guia-do-entrevistador.md) — versão 1.2.1;
 - [VAL-004 — Modelo de Consolidação e Análise](VAL-004-modelo-de-consolidacao-e-analise.md) — versão 1.3.1;
 - [VAL-005 — Plano de Amostragem](VAL-005-plano-de-amostragem.md) — versão 1.2.1;
@@ -85,6 +86,37 @@ Nenhuma seta pode ser preenchida apenas por intenção, divulgação ou percepç
 - meta preferencial de 500 respostas válidas.
 
 Esses itens constituem **autoridade metodológica** e não comprovam que a aplicação, o pré-teste, a coleta ou qualquer resultado já tenham ocorrido.
+
+## Rastreabilidade com os Domínios de Evolução do Journey
+
+A pergunta 4 do `VAL-002` utiliza nove áreas da vida e uma alternativa combinada de incerteza/outra área.
+
+Essas áreas contribuíram para o baseline arquitetural governado no `PAS-001-DOMAIN-MODEL-001`, sem alterar o questionário 2.1.0.
+
+O `VAL-002-A1` registra o mapeamento explícito:
+
+```text
+4.1 → JED-001 Saúde e Bem-estar
+4.2 → JED-002 Trabalho, Carreira e Estudos
+4.3 → JED-003 Vida Financeira
+4.4 → JED-004 Empreendedorismo e Projetos
+4.5 → JED-005 Relacionamentos e Vida Social
+4.6 → JED-006 Espiritualidade, Propósito e Valores
+4.7 → JED-007 Viagens, Lazer, Cultura e Novas Experiências
+4.8 → JED-008 Causas, Voluntariado e Contribuição
+4.9 → JED-009 Organização e Equilíbrio da Vida
+4.10 → Ainda estou descobrindo | other_unmapped
+```
+
+A escolha única na pesquisa serve ao método de pesquisa e **não restringe o Journey real a um único domínio**.
+
+Também permanecem distintas:
+
+```text
+alternativa da pesquisa ≠ domínio confirmado da jornada
+frequência de resposta ≠ eficácia da Guivos
+resultado B2C ≠ evidência sobre Coletivos ou Organizações
+```
 
 ## Decisões editoriais da versão 2.1.0
 
