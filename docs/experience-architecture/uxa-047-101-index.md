@@ -72,7 +72,7 @@ Este índice preserva a rastreabilidade das frentes funcionais recentes. A UXA-1
 - [UXA-072](uxa-072-integrated-journeys-functional-validation-and-reformulation.md)
 - [UXA-073](uxa-073-integrated-journeys-reformulation-navigation-and-synchronization.md)
 - [UXA-074](uxa-074-integrated-journeys-functional-revalidation.md)
-- [UXA-075](uxa-075-integrated-journeys-controlled-promotion-and-post-revalidation-synchronization.md)
+- [UXA-075](uxa-075-integrated-journeys-controlled-promotion-and-post-validation-synchronization.md)
 - [UXA-076](uxa-076-integrated-journeys-granular-transition-and-surface-registry.md)
 - [UXA-077](uxa-077-granular-registry-functional-validation.md)
 - [UXA-078](uxa-078-controlled-granular-registry-reformulation.md)
