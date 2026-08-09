@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -42,6 +42,7 @@ related:
   - GKR-UX-D5-C2-001
   - GKR-UX-D5-C3-001
   - GKR-UX-D5-C4A-001
+  - GKR-UX-D5-C4B-001
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -95,14 +96,14 @@ A D5-A reforma quatro SVGs de `PER-004`, `PER-007` e `PER-008` para materializar
 
 A D5-B materializa o mesmo eixo em `ORG-002`, `PER-201`, `PER-202` e `PER-203`, também in-place.
 
-A D5-C1 adiciona três responsabilidades (`PER-010..012`) e seis handoffs (`TRN-008..013`) no estado contratado. A D5-C2 adiciona três SVGs low-fidelity e três perfis. A D5-C3 reforma in-place e valida funcionalmente os três SVGs, elevando a cobertura visual de **118 para 121 validações vigentes**. A D5-C4A reforma e revalida localmente o estado recorrente de `PER-008 — Hoje`, materializa origens visuais inequívocas e governa o contrato semântico dos seis handoffs sem promover nenhuma transição.
+A D5-C1 adiciona três responsabilidades (`PER-010..012`) e seis handoffs (`TRN-008..013`) no estado contratado. A D5-C2 adiciona três SVGs low-fidelity e três perfis. A D5-C3 reforma in-place e valida funcionalmente os três SVGs. A D5-C4A reforma e revalida localmente o estado recorrente de `PER-008 — Hoje`, materializa origens visuais inequívocas e governa o contrato semântico dos seis handoffs. A D5-C4B promove individualmente `TRN-008..013` para **integralmente validadas** no limite documental.
 
 ## 4. Decisões estruturais preservadas
 
 - materialização não equivale a validação funcional;
-- validação local de superfície não equivale a continuidade integrada;
+- validação local de superfície não equivale por si só a continuidade integrada;
+- validação integrada documental não equivale a implementação técnica;
 - perfil de rastreabilidade não equivale por si só a aprovação da superfície;
-- transição contratada não equivale a continuidade validada;
 - uma versão visual reformulada exige validação correspondente;
 - publicação ou ativação não equivale a distribuição garantida;
 - plano pago não altera relevância, confiança, legitimidade, impacto ou evolução;
@@ -143,7 +144,8 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C1 — contrato das superfícies de direção, movimento e evolução
 → D5-C2 — low-fidelity de Meus Objetivos, Meus Próximos Passos e Minha Evolução
 → D5-C3 — validação funcional e reformulação dos três SVGs
-→ D5-C4A — origens visuais em Hoje + contrato integrado dos seis handoffs, sem promoção
+→ D5-C4A — origens visuais em Hoje + contrato integrado dos seis handoffs
+→ D5-C4B — validação integrada individual e promoção de TRN-008..013
 ```
 
 D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada.
@@ -158,41 +160,32 @@ D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional
 
 ### 5.3 D5-C1
 
-[GKR-UX-D5-C1-001](d5-c1-direction-movement-evolution-surface-contract.md) consolida:
-
-1. reconciliação terminológica de Objetivos, Próximos Passos e Evolução;
-2. `PER-010 — Meus Objetivos`;
-3. `PER-011 — Meus Próximos Passos`;
-4. `PER-012 — Minha Evolução`;
-5. `TRN-008..013` como handoffs mínimos com Hoje;
-6. nenhuma navegação direta inventada entre as três superfícies;
-7. responsabilidades e transições inicialmente contratadas.
+[GKR-UX-D5-C1-001](d5-c1-direction-movement-evolution-surface-contract.md) consolida três responsabilidades especializadas (`PER-010..012`), seis handoffs mínimos (`TRN-008..013`) e nenhuma navegação direta inventada entre as três superfícies.
 
 ### 5.4 D5-C2
 
-[GKR-UX-D5-C2-001](d5-c2-direction-movement-evolution-low-fidelity-wireframes.md) materializa um estado-base móvel para cada responsabilidade e cria três perfis de rastreabilidade (`R32..R34`). A frente eleva o inventário para 121 SVGs / 121 associações / 34 perfis, mantendo as três novas superfícies pendentes até validação posterior.
+[GKR-UX-D5-C2-001](d5-c2-direction-movement-evolution-low-fidelity-wireframes.md) materializa um estado-base móvel para cada responsabilidade e cria três perfis de rastreabilidade (`R32..R34`).
 
 ### 5.5 D5-C3
 
-[GKR-UX-D5-C3-001](d5-c3-direction-movement-evolution-functional-validation.md) confronta os três SVGs com `PAS-001-OBJ-VIEW-001`, `PAS-001-PP-VIEW-001` e `PAS-001-EC-VIEW-001` e reforma somente insuficiências materiais:
-
-- `PER-010`: estados funcionais claros, prioridade declarada separada de valor pessoal, progresso qualitativo e controles de privacidade;
-- `PER-011`: estado `PRONTO`, prontidão/dependência explícitas, proposta distinta de decisão e ação coerente com o estado;
-- `PER-012`: período, baseline, direção, interpretação explicitamente inferida, confiança, incerteza, contestação e revisão;
-- os três SVGs passam a possuir validação funcional local vigente;
-- `TRN-008..013` permanecem contratadas e fora da promoção desta frente.
+[GKR-UX-D5-C3-001](d5-c3-direction-movement-evolution-functional-validation.md) reforma e valida localmente os três estados-base, preservando autonomia, prioridade declarada, prontidão, incerteza, privacidade e ausência de score humano.
 
 ### 5.6 D5-C4A
 
-[GKR-UX-D5-C4A-001](d5-c4a-direction-movement-evolution-handoff-contract.md) fecha o degrau anterior à validação integrada:
+[GKR-UX-D5-C4A-001](d5-c4a-direction-movement-evolution-handoff-contract.md) reformula `uxa-006-hoje-mobile.svg`, materializa `Meus Objetivos`, `Abrir este passo` e `Minha Evolução` no estado recorrente de Hoje e governa identidade, contexto mínimo, revalidação, retorno, interrupção, concorrência, idempotência, autoridade e sensibilidade.
 
-- reformula `uxa-006-hoje-mobile.svg` sem criar novo SVG;
-- materializa `Meus Objetivos`, `Abrir este passo` e `Minha Evolução` como affordances compactas no estado recorrente de Hoje;
-- preserva a primeira variante de Hoje sem sobrecarga adicional;
-- define identidade, contexto mínimo, revalidação, retorno, interrupção, concorrência e idempotência;
-- protege `TRN-012/013` contra exposição ou confirmação sensível implícita;
-- revalida localmente o SVG recorrente de Hoje;
-- mantém `TRN-008..013` no estado `contratada`.
+### 5.7 D5-C4B
+
+[GKR-UX-D5-C4B-001](d5-c4b-direction-movement-evolution-integrated-handoff-validation.md) aplica individualmente os gates de validação integrada e promove:
+
+- `TRN-008` — Hoje recorrente → Meus Objetivos;
+- `TRN-009` — Meus Objetivos → Hoje;
+- `TRN-010` — Hoje recorrente → Meus Próximos Passos;
+- `TRN-011` — Meus Próximos Passos → Hoje;
+- `TRN-012` — Hoje recorrente → Minha Evolução;
+- `TRN-013` — Minha Evolução → Hoje.
+
+As seis ficam **integralmente validadas no limite documental**. A primeira variante de Hoje não é obrigada a exibir os três affordances especializados.
 
 ## 6. Resultado da UXA-100-A4 preservado
 
@@ -206,8 +199,8 @@ D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active`; D5-C4A sincronizada |
-| Jornada da Pessoa | `draft`; PER-010..012 validados localmente; handoffs ainda contratados |
+| Jornadas Integradas | `active`; D5-C4B sincronizada |
+| Jornada da Pessoa | `draft`; PER-010..012 validados localmente; TRN-008..013 integrais |
 | Jornada do Coletivo | `draft` |
 | Jornada da Organização | `draft` |
 | catálogo integrado | `active`; 121 SVGs / 121 validados |
@@ -215,22 +208,22 @@ D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional
 | galeria da Pessoa | `active`; 23 SVGs |
 | galeria de Planos | `active` 0.5.0 |
 | matriz por SVG | `active`; 121 associações / 34 perfis |
-| lacunas | `active`; validação integrada D5-C4B permanece separada |
+| lacunas | `active`; lacuna D5-C de handoffs encerrada no limite documental |
 | registro de superfícies | `active`; 57 IDs |
-| registro de transições | `active`; 66 transições |
-| detalhamento da Pessoa | `active`; PER-008 recorrente revalidado localmente; PER-010..012 validados localmente |
+| registro de transições | `active`; 66 transições; TRN-008..013 integrais |
+| detalhamento da Pessoa | `active`; PER-008 recorrente e PER-010..012 com continuidade D5-C validada |
 | D5-A | `active` 1.0.0 |
 | D5-B | `active` 1.0.0 |
 | D5-C1 | `active` 1.0.0 |
 | D5-C2 | `active` 1.0.0 |
 | D5-C3 | `active` 1.0.0 |
 | D5-C4A | `active` 1.0.0 |
+| D5-C4B | `active` 1.0.0 |
 
 ## 9. Ressalvas vigentes
 
 - 10 responsabilidades permanecem sem SVG dedicado, incluindo `PER-009`;
-- `TRN-008..013` permanecem contratadas até validação ponta a ponta;
-- D5-C4A governa o contrato e materializa as origens, mas não substitui a validação integrada;
+- `TRN-008..013` estão integralmente validadas documentalmente, não implementadas;
 - `TRN-406/407` permanecem contratadas;
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` permanecem parciais;
 - `TRN-304`, `TRN-305` e `TRN-306` permanecem parciais na integração patrocinada;
@@ -256,11 +249,12 @@ V1 — encerrada pela UXA-097
 → D5-C2 — três superfícies materializadas em low-fidelity
 → D5-C3 — três superfícies reformuladas e validadas localmente
 → D5-C4A — Hoje recorrente reformulado/revalidado + contrato dos seis handoffs
+→ D5-C4B — seis handoffs integralmente validados no limite documental
 → V5 — pendente e não iniciada
 ```
 
-D5-A/B/C1/C2/C3/C4A não consomem nem antecipam V5.
+D5-A/B/C1/C2/C3/C4A/C4B não consomem nem antecipam V5.
 
 ## 11. Próxima evolução possível
 
-Após integração governada da D5-C4A, uma **D5-C4B** poderá examinar exclusivamente `TRN-008..013` e decidir individualmente se cada continuidade `Hoje ↔ Objetivos/Próximos Passos/Evolução` possui evidência suficiente para promoção. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real e demais validações permanecem independentes. Nenhuma é iniciada automaticamente.
+A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
