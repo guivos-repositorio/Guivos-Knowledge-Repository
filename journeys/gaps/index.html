@@ -6829,10 +6829,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-efeito-da-uxa-100-a4" class="md-nav__link">
+  <a href="#9-efeito-acumulado-vigente" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. Efeito da UXA-100-A4
+        9. Efeito acumulado vigente
       
     </span>
   </a>
@@ -9141,10 +9141,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-efeito-da-uxa-100-a4" class="md-nav__link">
+  <a href="#9-efeito-acumulado-vigente" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. Efeito da UXA-100-A4
+        9. Efeito acumulado vigente
       
     </span>
   </a>
@@ -9200,7 +9200,7 @@
 
 <h1 id="lacunas-e-continuidades-ausentes">Lacunas e Continuidades Ausentes<a class="headerlink" href="#lacunas-e-continuidades-ausentes" title="Permanent link">&para;</a></h1>
 <h2 id="1-natureza-do-registro">1. Natureza do registro<a class="headerlink" href="#1-natureza-do-registro" title="Permanent link">&para;</a></h2>
-<p>Este documento é observacional e não promocional. A UXA-100-A4 fecha somente a <strong>identidade da origem voluntária de Planos</strong>. Cobrança real, execução de entitlement, processo posterior a <code>BND-002</code>, materialização de <code>PER-009</code> e UXA-102/V5 permanecem separados.</p>
+<p>Este documento é observacional e não promocional. A D5-C1 fecha somente a <strong>identidade arquitetural e os handoffs mínimos</strong> de <code>Meus Objetivos</code>, <code>Meus Próximos Passos</code> e <code>Minha Evolução</code>. Materialização visual, validação ponta a ponta, V5/UXA-102, cobrança real e demais frentes continuam separadas.</p>
 <h2 id="2-gates-pessoais">2. Gates pessoais<a class="headerlink" href="#2-gates-pessoais" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9255,8 +9255,30 @@
 <td>identidade contratada pela UXA-100-A4</td>
 <td>materialização própria somente se necessária para validar ponta a ponta</td>
 </tr>
+<tr>
+<td>Hoje ↔ Meus Objetivos</td>
+<td>PER-008; TRN-008/009; PER-010</td>
+<td>PER-010 sem SVG</td>
+<td>responsabilidade e handoffs contratados pela D5-C1</td>
+<td>materialização e validação ponta a ponta em frente própria</td>
+</tr>
+<tr>
+<td>Hoje ↔ Meus Próximos Passos</td>
+<td>PER-008; TRN-010/011; PER-011</td>
+<td>PER-011 sem SVG</td>
+<td>responsabilidade e handoffs contratados pela D5-C1</td>
+<td>materialização e validação ponta a ponta em frente própria</td>
+</tr>
+<tr>
+<td>Hoje ↔ Minha Evolução</td>
+<td>PER-008; TRN-012/013; PER-012</td>
+<td>PER-012 sem SVG</td>
+<td>responsabilidade e handoffs contratados pela D5-C1</td>
+<td>materialização e validação ponta a ponta em frente própria</td>
+</tr>
 </tbody>
 </table>
+<p><code>PER-010..012</code> não são estados internos de Hoje. A D5-C1 reconhece responsabilidades próprias, mas não cria SVG nem valida navegação. Também não existem, nesta frente, handoffs diretos <code>PER-010 ↔ PER-011</code>, <code>PER-011 ↔ PER-012</code> ou <code>PER-010 ↔ PER-012</code>.</p>
 <h2 id="3-gates-de-oportunidade-e-descoberta">3. Gates de oportunidade e descoberta<a class="headerlink" href="#3-gates-de-oportunidade-e-descoberta" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9456,10 +9478,11 @@
 </tbody>
 </table>
 <h2 id="7-fila-de-materializacao-por-dependencia">7. Fila de materialização por dependência<a class="headerlink" href="#7-fila-de-materializacao-por-dependencia" title="Permanent link">&para;</a></h2>
+<p>A fila abaixo não autoriza execução automática. Ela apenas registra dependências e separa lacunas já identificadas.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: right;">Prioridade</th>
+<th style="text-align: right;">Prioridade documental</th>
 <th>Lacuna</th>
 <th>IDs relacionados</th>
 <th>Estado visual</th>
@@ -9467,6 +9490,27 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: right;">D5-C visual</td>
+<td>Meus Objetivos</td>
+<td>PER-010; TRN-008/009</td>
+<td>sem SVG</td>
+<td>programa visual próprio + materialização + validação</td>
+</tr>
+<tr>
+<td style="text-align: right;">D5-C visual</td>
+<td>Meus Próximos Passos</td>
+<td>PER-011; TRN-010/011</td>
+<td>sem SVG</td>
+<td>programa visual próprio + materialização + validação</td>
+</tr>
+<tr>
+<td style="text-align: right;">D5-C visual</td>
+<td>Minha Evolução</td>
+<td>PER-012; TRN-012/013</td>
+<td>sem SVG</td>
+<td>programa visual próprio + materialização + validação; preservar separação domínio/dimensão/aspecto</td>
+</tr>
 <tr>
 <td style="text-align: right;">1</td>
 <td>estados P0B adicionais de Meus Coletivos</td>
@@ -9525,6 +9569,7 @@
 </tr>
 </tbody>
 </table>
+<p>A presença das três linhas <code>D5-C visual</code> antes da fila numerada não redefine a prioridade das lacunas históricas. Elas representam continuidades diretamente dependentes do contrato D5-C1 e exigem autorização própria por responsabilidade.</p>
 <h2 id="8-fila-de-validacao">8. Fila de validação<a class="headerlink" href="#8-fila-de-validacao" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9573,6 +9618,12 @@
 <td>UXA-101</td>
 </tr>
 <tr>
+<td style="text-align: right;">D5-C1 — contrato arquitetural</td>
+<td>Hoje ↔ Objetivos/Próximos Passos/Evolução</td>
+<td>PER-010..012 + TRN-008..013 contratados</td>
+<td>materializações visuais separadas; não equivalem a V5</td>
+</tr>
+<tr>
 <td style="text-align: right;">V5</td>
 <td>erros, retornos e interrupções</td>
 <td>cobertura dispersa</td>
@@ -9580,20 +9631,21 @@
 </tr>
 </tbody>
 </table>
-<h2 id="9-efeito-da-uxa-100-a4">9. Efeito da UXA-100-A4<a class="headerlink" href="#9-efeito-da-uxa-100-a4" title="Permanent link">&para;</a></h2>
+<h2 id="9-efeito-acumulado-vigente">9. Efeito acumulado vigente<a class="headerlink" href="#9-efeito-acumulado-vigente" title="Permanent link">&para;</a></h2>
+<p>A baseline corrente após D5-C1 passa a ser:</p>
 <ul>
 <li>SVGs canônicos permanecem <strong>118</strong>;</li>
 <li>associações permanecem <strong>118</strong>;</li>
 <li>perfis permanecem <strong>31</strong>;</li>
-<li>superfícies/estados/fronteiras passam a <strong>54</strong>;</li>
-<li>transições passam a <strong>60</strong>;</li>
-<li>IDs com referência visual permanecem <strong>42</strong>, agora de 54;</li>
-<li>responsabilidades sem SVG dedicado passam a <strong>10</strong>;</li>
+<li>superfícies/estados/fronteiras passam a <strong>57</strong>;</li>
+<li>transições passam a <strong>66</strong>;</li>
+<li>IDs com referência visual permanecem <strong>42</strong>, agora de 57;</li>
+<li>responsabilidades sem SVG dedicado passam a <strong>13</strong>;</li>
 <li>fronteiras sem tela permanecem <strong>2</strong>;</li>
-<li><code>PER-009</code> é a única nova responsabilidade canônica;</li>
-<li><code>TRN-406/407</code> são contratadas;</li>
-<li><code>TRN-417/418</code> e <code>TRN-427/428</code> são integralmente validadas no limite documental de navegação;</li>
-<li>nenhum SVG novo é criado;</li>
+<li><code>PER-009</code>, <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> permanecem sem SVG dedicado;</li>
+<li><code>TRN-008..013</code> e <code>TRN-406/407</code> permanecem contratadas;</li>
+<li><code>TRN-417/418</code> e <code>TRN-427/428</code> permanecem integralmente validadas no limite documental de navegação;</li>
+<li>nenhum SVG novo é criado pela D5-C1;</li>
 <li><code>TRN-416/426</code> permanecem parciais;</li>
 <li>nenhuma implementação técnica é criada.</li>
 </ul>
@@ -9601,6 +9653,12 @@
 <ul>
 <li>validação de superfície não equivale a validação automática de transição;</li>
 <li>validação até uma fronteira não valida comportamento de terceiro;</li>
+<li>navegar para Objetivos não cria ou confirma Objetivo;</li>
+<li>navegar para Próximos Passos não inicia ou conclui movimento;</li>
+<li>navegar para Minha Evolução não presume mudança, progresso ou reconhecimento;</li>
+<li>domínio não é score, diagnóstico, identidade ou prova de evolução;</li>
+<li>dimensão estrutural do Contexto Vivo não é Domínio de Evolução;</li>
+<li>aspecto descritivo da mudança não é Domínio de Evolução;</li>
 <li>navegar para Planos não equivale a selecionar plano ou iniciar cobrança;</li>
 <li>oportunidade pública não é ocultada para vender plano;</li>
 <li>plano pago não compra relevância, confiança, impacto, legitimidade ou evolução;</li>
@@ -9609,7 +9667,7 @@
 <li>validação documental não equivale a implementação técnica.</li>
 </ul>
 <h2 id="11-proximo-ato-possivel">11. Próximo ato possível<a class="headerlink" href="#11-proximo-ato-possivel" title="Permanent link">&para;</a></h2>
-<p>A identidade da origem voluntária de Planos está encerrada. Materialização de <code>PER-009</code>, V5/UXA-102, integrações patrocinadas, cobrança real, processo posterior a <code>BND-002</code> e demais lacunas permanecem separadas. Nenhuma próxima frente é iniciada automaticamente.</p>
+<p>A D5-C1 encerra a identidade arquitetural de <code>PER-010..012</code> e <code>TRN-008..013</code>. Materializar <code>Meus Objetivos</code>, <code>Meus Próximos Passos</code> ou <code>Minha Evolução</code> exige autorização separada por responsabilidade. Materialização de <code>PER-009</code>, V5/UXA-102, D6, D7, integrações patrocinadas, cobrança real, processo posterior a <code>BND-002</code> e demais lacunas permanecem separadas. Nenhuma próxima frente é iniciada automaticamente.</p>
 
 
 

@@ -9312,7 +9312,7 @@
 
 <h1 id="registro-granular-de-transicoes">Registro Granular de Transições<a class="headerlink" href="#registro-granular-de-transicoes" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.20.0 adiciona seis handoffs bidirecionais de origem voluntária e retorno de Planos pela UXA-100-A4, elevando a contagem de 54 para <strong>60 transições</strong> sem alterar a maturidade das transições internas de contratação/ciclo ou das fronteiras existentes.</p>
+<p>Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.21.0 adiciona seis handoffs bidirecionais mínimos entre <code>PER-008 — Hoje</code> e as responsabilidades <code>PER-010 — Meus Objetivos</code>, <code>PER-011 — Meus Próximos Passos</code> e <code>PER-012 — Minha Evolução</code> contratadas pela D5-C1. A contagem passa de 60 para <strong>66 transições</strong>. Nenhuma das seis novas ligações é promovida além de <code>contratada</code> nesta etapa.</p>
 <h2 id="2-convencoes-de-estado">2. Convenções de estado<a class="headerlink" href="#2-convencoes-de-estado" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9360,7 +9360,7 @@
 <tbody>
 <tr>
 <td>jornada pessoal</td>
-<td style="text-align: right;">7</td>
+<td style="text-align: right;">13</td>
 </tr>
 <tr>
 <td>Pessoa em Coletivos e operação do responsável</td>
@@ -9380,7 +9380,7 @@
 </tr>
 <tr>
 <td><strong>Total</strong></td>
-<td style="text-align: right;"><strong>60</strong></td>
+<td style="text-align: right;"><strong>66</strong></td>
 </tr>
 </tbody>
 </table>
@@ -9445,9 +9445,53 @@
 <td><strong>integralmente validada</strong></td>
 <td>UXA-097</td>
 </tr>
+<tr>
+<td>GKR-TRN-008</td>
+<td>PER-008</td>
+<td>PER-010</td>
+<td><strong>contratada</strong></td>
+<td>D5-C1 define abertura consciente de Meus Objetivos; PER-010 sem SVG</td>
+</tr>
+<tr>
+<td>GKR-TRN-009</td>
+<td>PER-010</td>
+<td>PER-008</td>
+<td><strong>contratada</strong></td>
+<td>retorno a Hoje sem alterar objetivo, prioridade ou progresso; PER-010 sem SVG</td>
+</tr>
+<tr>
+<td>GKR-TRN-010</td>
+<td>PER-008</td>
+<td>PER-011</td>
+<td><strong>contratada</strong></td>
+<td>D5-C1 define abertura consciente de Meus Próximos Passos; PER-011 sem SVG</td>
+</tr>
+<tr>
+<td>GKR-TRN-011</td>
+<td>PER-011</td>
+<td>PER-008</td>
+<td><strong>contratada</strong></td>
+<td>retorno a Hoje sem concluir, aceitar ou executar passo; PER-011 sem SVG</td>
+</tr>
+<tr>
+<td>GKR-TRN-012</td>
+<td>PER-008</td>
+<td>PER-012</td>
+<td><strong>contratada</strong></td>
+<td>D5-C1 define abertura consciente de Minha Evolução sem presumir mudança; PER-012 sem SVG</td>
+</tr>
+<tr>
+<td>GKR-TRN-013</td>
+<td>PER-012</td>
+<td>PER-008</td>
+<td><strong>contratada</strong></td>
+<td>retorno a Hoje sem confirmar interpretação, baseline ou evolução; PER-012 sem SVG</td>
+</tr>
 </tbody>
 </table>
 <p><code>TRN-007</code> preserva consentimento, estado canônico, retorno e idempotência; navegar para Hoje não cria avanço ou autorização adicional.</p>
+<p><code>TRN-008..013</code> são handoffs de navegação protegida. Abrir uma responsabilidade especializada não cria, confirma ou altera o objeto funcional correspondente. Retornar a Hoje não equivale a concluir, aceitar, reconhecer evolução ou conceder nova autorização.</p>
+<p>A D5-C1 não registra handoffs diretos <code>PER-010 ↔ PER-011</code>, <code>PER-011 ↔ PER-012</code> ou <code>PER-010 ↔ PER-012</code>. Relação semântica entre capacidades não equivale automaticamente a navegação direta.</p>
 <h2 id="5-pessoa-em-coletivos-e-operacao-do-responsavel">5. Pessoa em Coletivos e operação do responsável<a class="headerlink" href="#5-pessoa-em-coletivos-e-operacao-do-responsavel" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9990,7 +10034,8 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 </ul>
 <h2 id="10-preservacoes-de-maturidade">10. Preservações de maturidade<a class="headerlink" href="#10-preservacoes-de-maturidade" title="Permanent link">&para;</a></h2>
 <ul>
-<li>transições totais passam a <strong>60</strong>;</li>
+<li>transições totais passam a <strong>66</strong>;</li>
+<li><code>TRN-008..013</code> ficam <strong>contratadas</strong> até materialização suficiente de <code>PER-010..012</code>;</li>
 <li><code>TRN-406/407</code> ficam <strong>contratadas</strong> até materialização suficiente de <code>PER-009</code>;</li>
 <li><code>TRN-417/418</code> e <code>TRN-427/428</code> ficam <strong>integralmente validadas</strong> no limite documental de navegação administrativa;</li>
 <li><code>TRN-401..405</code>, <code>TRN-411..415</code> e <code>TRN-421..425</code> permanecem localmente validadas;</li>
@@ -10000,7 +10045,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>validação documental continua distinta de implementação técnica.</li>
 </ul>
 <h2 id="11-proximo-gate">11. Próximo gate<a class="headerlink" href="#11-proximo-gate" title="Permanent link">&para;</a></h2>
-<p>A lacuna de <strong>identidade da origem voluntária de Planos</strong> é encerrada pela UXA-100-A4. A materialização própria de <code>PER-009</code>, caso justificada, permanece uma lacuna separada. V5/UXA-102, integrações patrocinadas, cobrança real e processos posteriores a <code>BND-002</code> permanecem frentes separadas e não são iniciados automaticamente.</p>
+<p>A D5-C1 encerra apenas a identidade arquitetural e os handoffs mínimos de <code>Meus Objetivos</code>, <code>Meus Próximos Passos</code> e <code>Minha Evolução</code>. A materialização visual e validação de <code>PER-010..012</code> e <code>TRN-008..013</code> exigem autorizações separadas. V5/UXA-102, D6, D7, integrações patrocinadas, cobrança real e processos posteriores a <code>BND-002</code> permanecem frentes separadas e não são iniciados automaticamente.</p>
 
 
 

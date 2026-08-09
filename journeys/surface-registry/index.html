@@ -6715,10 +6715,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-autoridade-de-planos-e-origem-voluntaria" class="md-nav__link">
+  <a href="#5-autoridade-de-planos-jornada-pessoal-e-origem-voluntaria" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Autoridade de planos e origem voluntária
+        5. Autoridade de planos, jornada pessoal e origem voluntária
       
     </span>
   </a>
@@ -9053,10 +9053,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-autoridade-de-planos-e-origem-voluntaria" class="md-nav__link">
+  <a href="#5-autoridade-de-planos-jornada-pessoal-e-origem-voluntaria" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Autoridade de planos e origem voluntária
+        5. Autoridade de planos, jornada pessoal e origem voluntária
       
     </span>
   </a>
@@ -9113,7 +9113,7 @@
 <h1 id="registro-granular-de-superficies-e-estados">Registro Granular de Superfícies e Estados<a class="headerlink" href="#registro-granular-de-superficies-e-estados" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.</p>
-<p>A versão 0.19.0 adiciona somente <code>GKR-SURF-PER-009 — Conta e configurações da Pessoa</code> como responsabilidade canônica necessária para a origem voluntária de Planos. A UXA-100-A4 reutiliza <code>COL-002</code> e <code>ORG-001</code> como origens administrativas existentes, sem criar superfícies adicionais para Coletivo ou Organização. A contagem passa a 54 IDs.</p>
+<p>A versão 0.20.0 adiciona <code>GKR-SURF-PER-010 — Meus Objetivos</code>, <code>GKR-SURF-PER-011 — Meus Próximos Passos</code> e <code>GKR-SURF-PER-012 — Minha Evolução</code> como responsabilidades contratadas pela D5-C1. Nenhuma delas possui SVG ou validação visual nesta etapa. A contagem passa a 57 IDs.</p>
 <h2 id="2-convencoes">2. Convenções<a class="headerlink" href="#2-convencoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>ausente</code>: responsabilidade conhecida sem materialização necessária;</li>
@@ -9135,7 +9135,7 @@
 <tbody>
 <tr>
 <td>Pessoa</td>
-<td style="text-align: right;">24</td>
+<td style="text-align: right;">27</td>
 </tr>
 <tr>
 <td>Coletivo</td>
@@ -9155,7 +9155,7 @@
 </tr>
 <tr>
 <td><strong>Total</strong></td>
-<td style="text-align: right;"><strong>54</strong></td>
+<td style="text-align: right;"><strong>57</strong></td>
 </tr>
 </tbody>
 </table>
@@ -9270,6 +9270,39 @@
 <td>protegido</td>
 <td>contratado</td>
 <td>UXA-100; UXA-100-A1; UXA-100-A4</td>
+<td>—</td>
+<td>—</td>
+<td><a href="../surface-registry-person-details/">Pessoa</a></td>
+</tr>
+<tr>
+<td>GKR-SURF-PER-010</td>
+<td>Meus Objetivos</td>
+<td>Pessoa autenticada; direção e objetivos</td>
+<td>protegido</td>
+<td>contratado</td>
+<td>PAS-001-OBJ-VIEW-001; GKR-UX-D5-C1-001</td>
+<td>—</td>
+<td>—</td>
+<td><a href="../surface-registry-person-details/">Pessoa</a></td>
+</tr>
+<tr>
+<td>GKR-SURF-PER-011</td>
+<td>Meus Próximos Passos</td>
+<td>Pessoa autenticada; movimentos contextuais</td>
+<td>protegido</td>
+<td>contratado</td>
+<td>PAS-001-PP-VIEW-001; GKR-UX-D5-C1-001</td>
+<td>—</td>
+<td>—</td>
+<td><a href="../surface-registry-person-details/">Pessoa</a></td>
+</tr>
+<tr>
+<td>GKR-SURF-PER-012</td>
+<td>Minha Evolução</td>
+<td>Pessoa autenticada; trajetórias e evolução contínua</td>
+<td>protegido</td>
+<td>contratado</td>
+<td>PAS-001-EC-VIEW-001; GKR-UX-D5-C1-001</td>
 <td>—</td>
 <td>—</td>
 <td><a href="../surface-registry-person-details/">Pessoa</a></td>
@@ -9771,21 +9804,24 @@
 </tr>
 </tbody>
 </table>
-<h2 id="5-autoridade-de-planos-e-origem-voluntaria">5. Autoridade de planos e origem voluntária<a class="headerlink" href="#5-autoridade-de-planos-e-origem-voluntaria" title="Permanent link">&para;</a></h2>
-<p>A leitura vigente é:</p>
+<h2 id="5-autoridade-de-planos-jornada-pessoal-e-origem-voluntaria">5. Autoridade de planos, jornada pessoal e origem voluntária<a class="headerlink" href="#5-autoridade-de-planos-jornada-pessoal-e-origem-voluntaria" title="Permanent link">&para;</a></h2>
+<p>A leitura vigente de Planos é:</p>
 <div class="highlight"><pre><span></span><code>Pessoa: Free · Plus · Pro
 Coletivo: Livre · Mobiliza · Impacta · Rede
 Organização: Conecta · Eleva · Transforma
 Guivos Business: Start · Growth · Scale · Enterprise
 </code></pre></div>
-<p>A origem voluntária de Planos passa a ser representada por <code>PER-009</code>, <code>COL-002</code> e <code>ORG-001</code>. A criação de <code>PER-009</code> não materializa uma arquitetura completa de Conta nem autoriza preencher outras responsabilidades administrativas por inferência.</p>
+<p>A origem voluntária de Planos permanece representada por <code>PER-009</code>, <code>COL-002</code> e <code>ORG-001</code>. A criação de <code>PER-009</code> não materializa uma arquitetura completa de Conta nem autoriza preencher outras responsabilidades administrativas por inferência.</p>
+<p>A D5-C1 adiciona <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> como responsabilidades pessoais especializadas ligadas a Hoje por transições contratadas. Elas não são estados internos de <code>PER-008</code> e não possuem SVG nesta etapa.</p>
 <p>Guivos Business é produto especializado e não recebe novos IDs neste registro.</p>
 <p><code>BND-002</code> não é plano, produto, checkout ou fronteira exclusiva de Enterprise/Scale. Ele identifica a necessidade de contratação/dimensionamento assistido.</p>
 <h2 id="6-preservacoes">6. Preservações<a class="headerlink" href="#6-preservacoes" title="Permanent link">&para;</a></h2>
 <ul>
-<li>total de IDs passa a <strong>54</strong>;</li>
-<li><code>PER-009</code> permanece sem SVG dedicado e com maturidade <code>contratado</code>;</li>
+<li>total de IDs passa a <strong>57</strong>;</li>
+<li><code>PER-009</code>, <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> permanecem sem SVG dedicado e com maturidade <code>contratado</code>;</li>
 <li>os 118 SVGs canônicos permanecem inalterados em quantidade;</li>
+<li>42 IDs permanecem com referência visual, agora de 57;</li>
+<li>responsabilidades sem SVG dedicado passam a 13;</li>
 <li><code>PER-203</code> permanece validada no recorte de saída externa;</li>
 <li><code>BND-001</code> permanece examinado, sem tela própria;</li>
 <li><code>BND-002</code> permanece parcial, sem tela própria;</li>
