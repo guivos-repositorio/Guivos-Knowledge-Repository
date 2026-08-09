@@ -2,10 +2,13 @@
 id: GKR-JOURNEY-ORGANIZATION-001
 title: Jornada Integrada da Organização
 status: draft
-version: 0.10.0
+version: 0.11.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-08
 related:
+  - PAS-001-DOMAIN-MODEL-001
+  - PAS-001-DOMAIN-RECON-001
+  - GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001
   - UXA-004
   - UXA-007
   - UXA-008
@@ -64,7 +67,69 @@ identidade, unidade e autoridade
 
 A validação de uma tela institucional ou de um fluxo de cadastro não equivale à validação integral da jornada institucional.
 
-## 2. Publicação → descoberta validada
+## 2. Eixo de Domínios de Evolução
+
+A D4 propaga `JED-001..JED-009` para esta vista institucional, preservando a diferença entre área de evolução apoiada e condição da própria Organização.
+
+Na Organização, um Domínio de Evolução descreve a área à qual uma oportunidade, programa, iniciativa, responsabilidade institucional ou resultado autorizado se relaciona.
+
+```text
+Organização relacionada a JED-001 Saúde e Bem-estar
+= Organização promove iniciativa de Saúde e Bem-estar
+≠ Organização possui estado de saúde
+```
+
+A leitura integrada pode assumir:
+
+```text
+Organização
+→ necessidade ou objetivo institucional autorizado
+→ domínio(s) relacionado(s)
+→ programa/oportunidade
+→ público e elegibilidade
+→ execução
+→ experiências dos participantes quando legitimamente registradas
+→ evidências institucionais autorizadas
+→ resultados e revisão
+```
+
+| ID | Domínio | Exemplos no contexto da Organização |
+|---|---|---|
+| `JED-001` | Saúde e Bem-estar | programas de saúde, segurança, prevenção, bem-estar e qualidade de vida |
+| `JED-002` | Trabalho, Carreira e Estudos | emprego, capacitação, educação, competências e desenvolvimento de carreira |
+| `JED-003` | Vida Financeira | educação financeira, benefícios ou iniciativas de segurança econômica dentro de finalidade autorizada |
+| `JED-004` | Empreendedorismo e Projetos | apoio ao empreendedorismo, inovação, incubação e projetos |
+| `JED-005` | Relacionamentos e Vida Social | pertencimento, integração, convivência, cultura relacional e redes de apoio |
+| `JED-006` | Espiritualidade, Propósito e Valores | propósito, valores, ética e iniciativas espirituais/religiosas apenas quando voluntárias e legitimamente aplicáveis |
+| `JED-007` | Viagens, Lazer, Cultura e Novas Experiências | viagens, cultura, lazer, experiências, eventos e programas relacionados |
+| `JED-008` | Causas, Voluntariado e Contribuição | responsabilidade social, voluntariado, causas, campanhas e contribuição comunitária |
+| `JED-009` | Organização e Equilíbrio da Vida | apoio à rotina, equilíbrio, organização e condições que facilitem participação e desenvolvimento |
+
+Separações obrigatórias:
+
+```text
+Domínio de Evolução
+≠ segmento comercial
+≠ plano da Organização
+≠ Guivos Business
+≠ público-alvo automático
+≠ permissão para acessar contexto individual
+```
+
+Uma Organização pode publicar uma oportunidade em determinado domínio sem receber acesso ao histórico, estado, objetivos ou classificação individual das Pessoas.
+
+Multidomínio é legítimo. `Ainda estou descobrindo` pode existir quando a necessidade institucional ou o recorte de atuação ainda não sustenta categorização segura. `other_unmapped` preserva áreas não representadas sem encaixe silencioso.
+
+Regras desta vista:
+
+- mesmo domínio entre Organização, Coletivo e Pessoa não cria match, relevância ou compartilhamento automático;
+- domínio não amplia autoridade institucional sobre a jornada individual;
+- domínio não mede legitimidade, reputação, impacto ou maturidade institucional;
+- patrocínio, Opportunity Boost ou plano pago não compram prioridade funcional;
+- `domain_link` permanece semântico e pode ser `0..n`;
+- D4 não cria superfície, SVG, transição ou implementação; a materialização experiencial permanece D5.
+
+## 3. Publicação → descoberta validada
 
 A UXA-098 formaliza:
 
@@ -80,7 +145,7 @@ A ativação torna a oportunidade elegível ao inventário de descoberta, mas n�
 
 Pausa, expiração, encerramento ou alteração material prevalecem sobre cartões ou detalhes anteriormente renderizados. Reprocessamento do mesmo estado não duplica oportunidade nem prioridade.
 
-## 3. Continuidade até a fronteira externa
+## 4. Continuidade até a fronteira externa
 
 A oportunidade mantém a mesma identidade lógica em Mapa, Lista e Detalhe.
 
@@ -91,7 +156,7 @@ A oportunidade mantém a mesma identidade lógica em Mapa, Lista e Detalhe.
 
 Antes da saída, `PER-203` explicita destino externo, responsável, dados/contexto que acompanham ou não a transição e ausência de garantia de conclusão. Destino ausente, inválido ou materialmente alterado bloqueia redirecionamento silencioso. Após `BND-001`, o processo e o resultado pertencem ao terceiro.
 
-## 4. Planos como etapa transversal canônica
+## 5. Planos como etapa transversal canônica
 
 A UXA-100-A3 registra **Planos** canonicamente na jornada institucional da Organização. A UXA-100-A4 fecha sua origem voluntária reutilizando `ORG-001 — Visão Geral da Organização` e corrige o rótulo visual obsoleto `Guivos Business` nessa superfície.
 
@@ -150,7 +215,7 @@ Separações obrigatórias:
 - `Organização Transforma ≠ Guivos Business Enterprise`;
 - `BND-002 ≠ plano Enterprise ou Scale`.
 
-## 5. Relação com Coletivos
+## 6. Relação com Coletivos
 
 ```text
 rascunho
@@ -174,7 +239,7 @@ rascunho
 
 A relação preserva finalidade, compromissos, recursos, autonomia, dados, contestação e saída. Apoio ou patrocínio não concede propriedade, direção ou acesso irrestrito a dados.
 
-## 6. Limites de visibilidade
+## 7. Limites de visibilidade
 
 - publicação não equivale a distribuição garantida;
 - dados pessoais individuais não são expostos por padrão;
@@ -185,9 +250,10 @@ A relação preserva finalidade, compromissos, recursos, autonomia, dados, conte
 - atingir limite do plano não altera retroativamente a legitimidade de publicações existentes;
 - representante institucional atua somente dentro da unidade e do papel apresentados;
 - `TRN-205` não atribui à Organização nem à Guivos controle sobre o processo externo posterior;
+- domínio compartilhado com uma Pessoa não concede acesso ao contexto pessoal dela;
 - cobertura incompleta permanece indicada como lacuna.
 
-## 7. Estado da vista
+## 8. Estado da vista
 
 Esta vista permanece `draft` porque:
 
@@ -197,10 +263,11 @@ Esta vista permanece `draft` porque:
 - integrações patrocinadas com Mapa/Lista (`TRN-304`/`TRN-306`) permanecem parciais;
 - as transições comerciais internas de Planos continuam locais e `TRN-426` permanece parcial;
 - cobrança real, gateway e processo assistido posterior a `BND-002` não foram implementados/validados ponta a ponta;
+- os Domínios de Evolução foram propagados documentalmente por D4, mas ainda não foram materializados/validados como UX; isso permanece D5;
 - evidências e resultados institucionais continuam sem matriz integrada.
 
 `TRN-205` deixa de ser pendência desta vista: UXA-101 a valida até `BND-001`, sem promover a jornada institucional completa.
 
-## 8. Estado da frente
+## 9. Estado da frente
 
-A Organização mantém publicação/descoberta validada pela UXA-098, saída consciente até `BND-001` validada pela UXA-101 e origem voluntária de Planos `ORG-001 ↔ ORG-301` validada pela UXA-100-A4. A taxonomia vigente é `Conecta · Eleva · Transforma`; Guivos Business permanece produto separado. Nenhuma próxima UXA é iniciada automaticamente.
+A Organização mantém publicação/descoberta validada pela UXA-098, saída consciente até `BND-001` validada pela UXA-101 e origem voluntária de Planos `ORG-001 ↔ ORG-301` validada pela UXA-100-A4. A taxonomia vigente de planos é `Conecta · Eleva · Transforma`; Guivos Business permanece produto separado. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista, sem iniciar D5. Nenhuma próxima UXA é iniciada automaticamente.
