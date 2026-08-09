@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-101
 status: active
-version: 2.9.0
+version: 2.10.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-09
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -21,6 +21,9 @@ related:
   - UXA-100-A4
   - UXA-101
   - PAS-001-DOMAIN-MODEL-001
+  - GKR-UX-D5-A-001
+  - GKR-UX-D5-B-001
+  - GKR-UX-D5-C1-001
   - M7.88
 normative: false
 ---
@@ -29,7 +32,7 @@ normative: false
 
 Este índice preserva a rastreabilidade das frentes funcionais recentes. A UXA-100-A4 é subfrente de reconciliação da UXA-100 e não cria UXA-102 nem novo marco funcional.
 
-A formalização de `PAS-001-DOMAIN-MODEL-001` é uma autoridade semântica do Guivos Journey e **não constitui nova UXA, novo SVG, nova transição ou novo marco funcional**.
+`PAS-001-DOMAIN-MODEL-001`, D4 e D5 são autoridades/frentes não numeradas do Journey e da Experience Architecture. Elas **não constituem nova UXA nem alteram a última UXA funcional numerada**, que permanece UXA-101.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -108,21 +111,29 @@ Complementos da UXA-100:
 - [UXA-100-A3](uxa-100-a3-plans-canonical-fragmentation-and-promotion.md)
 - [UXA-100-A4](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md) — origens voluntárias e retorno de Planos; não inicia UXA-102.
 
+## Frentes não numeradas posteriores
+
+- [D5-A](d5-a-evolution-domains-guided-expression-initial-understanding-today.md) — materialização dos Domínios na jornada inicial, sem nova superfície;
+- [D5-B](d5-b-evolution-domains-opportunities-layer.md) — materialização dos Domínios em Oportunidades, sem nova superfície;
+- [D5-C1](d5-c1-direction-movement-evolution-surface-contract.md) — `PER-010..012` e `TRN-008..013` contratados sem SVG.
+
+D5-C1 não é UXA-102/V5 e não altera a numeração deste índice.
+
 ## Estado sincronizado
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **2.31.0** |
+| Registro do Estado Atual | **2.32.0** |
 | marco funcional | **M7.88** |
-| última UXA | **UXA-101** |
+| última UXA funcional numerada | **UXA-101** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
 | SVGs | **118** |
 | associações | **118** |
 | perfis | **31** |
-| superfícies/estados/fronteiras | **54** |
-| transições | **60** |
+| superfícies/estados/fronteiras | **57** |
+| transições | **66** |
+| IDs com referência visual | **42 de 57** |
+| responsabilidades sem SVG | **13** |
 | Engenharia de Produto | pausada antes de W0-01 |
 
-A UXA-100-A4 adiciona `PER-009` e seis handoffs de navegação; não cria SVG, novo marco, checkout, cobrança real ou implementação técnica.
-
-O modelo de Domínios de Evolução não altera essas contagens e não inicia UXA-102/V5.
+A D5-C1 adiciona três responsabilidades pessoais sem SVG e seis handoffs contratados. Não cria novo SVG, novo marco funcional, checkout, cobrança real, implementação técnica, D6, D7 ou UXA-102/V5.
