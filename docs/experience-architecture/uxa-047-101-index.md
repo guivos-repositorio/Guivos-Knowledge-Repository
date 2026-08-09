@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-101
 status: active
-version: 2.10.0
+version: 2.11.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-09
 depends_on:
@@ -24,6 +24,7 @@ related:
   - GKR-UX-D5-A-001
   - GKR-UX-D5-B-001
   - GKR-UX-D5-C1-001
+  - GKR-UX-D5-C2-001
   - M7.88
 normative: false
 ---
@@ -115,25 +116,26 @@ Complementos da UXA-100:
 
 - [D5-A](d5-a-evolution-domains-guided-expression-initial-understanding-today.md) — materialização dos Domínios na jornada inicial, sem nova superfície;
 - [D5-B](d5-b-evolution-domains-opportunities-layer.md) — materialização dos Domínios em Oportunidades, sem nova superfície;
-- [D5-C1](d5-c1-direction-movement-evolution-surface-contract.md) — `PER-010..012` e `TRN-008..013` contratados sem SVG.
+- [D5-C1](d5-c1-direction-movement-evolution-surface-contract.md) — `PER-010..012` e `TRN-008..013` contratados sem SVG;
+- [D5-C2](d5-c2-direction-movement-evolution-low-fidelity-wireframes.md) — um estado-base low-fidelity para `PER-010..012`; `TRN-008..013` permanecem contratadas.
 
-D5-C1 não é UXA-102/V5 e não altera a numeração deste índice.
+D5-C2 não é UXA-102/V5 e não altera a numeração deste índice.
 
 ## Estado sincronizado
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **2.32.0** |
+| Registro do Estado Atual | **2.33.0** |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
-| SVGs | **118** |
-| associações | **118** |
-| perfis | **31** |
+| SVGs | **121 — 118 validados + 3 pendentes** |
+| associações | **121** |
+| perfis | **34** |
 | superfícies/estados/fronteiras | **57** |
 | transições | **66** |
-| IDs com referência visual | **42 de 57** |
-| responsabilidades sem SVG | **13** |
+| IDs com referência visual | **45 de 57** |
+| responsabilidades sem SVG | **10** |
 | Engenharia de Produto | pausada antes de W0-01 |
 
-A D5-C1 adiciona três responsabilidades pessoais sem SVG e seis handoffs contratados. Não cria novo SVG, novo marco funcional, checkout, cobrança real, implementação técnica, D6, D7 ou UXA-102/V5.
+A D5-C2 adiciona três SVGs e três perfis aos IDs já contratados pela D5-C1. Não cria novo marco funcional, não valida automaticamente os três ativos, não promove `TRN-008..013`, não inicia D6, D7, UXA-102/V5 ou implementação técnica.
