@@ -8,7 +8,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **2.30.0** |
+| GKR-STATE-001 | **2.31.0** |
 | Era | GE-2 — Knowledge |
 | marco funcional | **M7.88** |
 | última UXA | **UXA-101** |
@@ -21,7 +21,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Engenharia de Produto | pausada antes de W0-01 |
 | programa P0–P9 | consolidado documentalmente após integração de P9 |
 
-A UXA-100-A4 reconcilia a origem voluntária de Planos sem criar novo marco funcional, novo SVG ou implementação.
+O Journey possui agora um baseline canônico de **9 Domínios de Evolução**, derivado e refinado a partir das áreas usadas na pesquisa B2C. A formalização é semântica e documental: não inicia UXA-102, não retoma Engenharia de Produto e não declara classificação por IA ou ontologia física implementadas.
 
 ## Public Canon
 
@@ -31,6 +31,8 @@ A edição 5.0.0 foi reconciliada com as autoridades atuais de participantes, pl
 
 ## Autoridades recentes
 
+- [PAS-001-DOMAIN-MODEL-001 — Modelo Canônico dos Domínios de Evolução do Guivos Journey](docs/product-architecture/pas-001-evolution-domains-model.md)
+- [Guivos Journey — arquitetura pública e áreas de evolução](docs/product-architecture/journey.md)
 - [Consolidação Global e Public Canon — P9](docs/project/p9-global-consolidation-and-public-canon-2026-08-08.md)
 - [UXA-100-A4 — Origens Administrativas e Handoffs de Entrada em Planos](docs/experience-architecture/uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md)
 - [Matriz de Consolidação Canônica 3.0.0](docs/project/canonical-consolidation-matrix.md)
@@ -54,6 +56,7 @@ Neo4j = tecnologia de referência ≠ produção
 Fundação Guivos = conceito ≠ entidade constituída
 Portugal = T1_candidate ≠ mercado ativo
 aceite contratual ≠ consentimento LGPD ≠ preferência
+Domínio de Evolução ≠ identidade ≠ score ≠ diagnóstico ≠ prova de evolução
 ```
 
 ## Planos
@@ -67,6 +70,24 @@ Plano não representa mérito, prestígio ou nível de evolução.
 
 A origem voluntária de Planos está formalizada por `PER-009 ↔ PER-301`, `COL-002 ↔ COL-301` e `ORG-001 ↔ ORG-301`. A origem da Pessoa ainda não possui SVG dedicado; navegar para Planos não equivale a contratar ou iniciar cobrança.
 
+## Domínios de Evolução do Guivos Journey
+
+O baseline canônico inicial do Journey é:
+
+1. Saúde e Bem-estar;
+2. Trabalho, Carreira e Estudos;
+3. Vida Financeira;
+4. Empreendedorismo e Projetos;
+5. Relacionamentos e Vida Social;
+6. Espiritualidade, Propósito e Valores;
+7. Viagens, Lazer, Cultura e Novas Experiências;
+8. Causas, Voluntariado e Contribuição;
+9. Organização e Equilíbrio da Vida.
+
+`Ainda estou descobrindo` é estado transversal legítimo de exploração, não um décimo domínio. Uma jornada pode envolver vários domínios simultaneamente. A interpretação de cada domínio muda conforme o participante seja Pessoa, Coletivo ou Organização.
+
+A autoridade normativa detalhada, incluindo subáreas, exemplos, relação com as nove capacidades do Journey, uso pela Intelligence, sensibilidade e guardrails, é o [PAS-001-DOMAIN-MODEL-001](docs/product-architecture/pas-001-evolution-domains-model.md).
+
 ## Limites atuais
 
 Não estão autorizados ou comprovados apenas pela consolidação documental:
@@ -74,6 +95,8 @@ Não estão autorizados ou comprovados apenas pela consolidação documental:
 - UXA-102/V5;
 - retomada da Engenharia de Produto;
 - implementação/produção Neo4j, GraphRAG ou GDS;
+- classificação operacional por IA dos Domínios de Evolução;
+- ontologia física de grafo para os Domínios de Evolução;
 - PMF ou resultados de pesquisa sem base reproduzível;
 - programa operacional de pontos/créditos;
 - registro marcário/domínio sem evidência;
@@ -92,6 +115,7 @@ Não estão autorizados ou comprovados apenas pela consolidação documental:
 - [Roadmap](docs/roadmap.md)
 - [Guia Oficial](docs/public/guia-oficial-da-guivos.md)
 - [Arquitetura de Produtos](docs/product-architecture/index.md)
+- [Guivos Journey](docs/product-architecture/journey.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Jornadas](docs/journeys/index.md)
 - [Modelo Econômico](docs/economic-model/index.md)
