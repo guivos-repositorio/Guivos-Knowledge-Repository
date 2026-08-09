@@ -1,0 +1,10431 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
+      
+      
+        <meta name="author" content="Guivos">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Reconciliação Semântica Pós-Publicação dos Domínios de Evolução no PAS-001 - Guivos Knowledge Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pas-001-domain-recon-001-reconciliacao-semantica-pos-publicacao-dos-dominios-de-evolucao-no-pas-001" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Reconciliação Semântica Pós-Publicação dos Domínios de Evolução no PAS-001
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guivos Knowledge Repository
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estado Atual
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Estado Atual
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/current-state-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Current State Register
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/knowledge-board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Knowledge Board
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/architectural-milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Milestones
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz de Consolidação Canônica
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix-opportunity-boost-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adendo do Opportunity Boost
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix-uxa-039-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adendo da UXA-039
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix-uxa-040-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adendo da UXA-040
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix-uxa-041-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adendo da UXA-041
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix-uxa-042-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adendo da UXA-042
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix-uxa-043-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adendo da UXA-043
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix-uxa-044-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adendo da UXA-044
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix-uxa-045-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adendo da UXA-045
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix-uxa-046-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adendo da UXA-046
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/changelog-1.62.0-opportunity-boost/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórico 1.62.0
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/changelog-1.63.0-uxa-039/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórico 1.63.0
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/changelog-1.64.0-uxa-040/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórico 1.64.0
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/changelog-1.65.0-uxa-041/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórico 1.65.0
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/changelog-1.66.0-uxa-042/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórico 1.66.0
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/changelog-1.67.0-uxa-043/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórico 1.67.0
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/changelog-1.68.0-uxa-044/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórico 1.68.0
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/changelog-1.69.0-uxa-045/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórico 1.69.0
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/changelog-1.70.0-uxa-046/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórico 1.70.0
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/repository-mechanical-validation-2026-07-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parecer Mecânico do R5
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--passed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/governed-resumption-r6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retomada Governada do R6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guia Oficial da Guivos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/guia-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Completo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--public-canon"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Evolution Framework
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Evolution Framework
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolution-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEF-001 — Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Validação de Mercado
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-001-framework-de-validacao-de-mercado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-001 — Framework
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-002-pesquisa-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-002 — Pesquisa Oficial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-003-guia-do-entrevistador/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-003 — Guia do Entrevistador
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-004-modelo-de-consolidacao-e-analise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-004 — Consolidação e Análise
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-005-plano-de-amostragem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-005 — Plano de Amostragem
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-006-dashboard-de-indicadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-006 — Dashboard
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-007-criterios-de-decisao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-007 — Critérios de Decisão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-008-sinais-comportamentais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-008 — Sinais Comportamentais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RP-001 — Ecosystem Research Program
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RP-001 — Ecosystem Research Program
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/protocol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Protocol
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/MS-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta-Síntese MS-001
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/evidence-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evidence Registry
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/ecosystem-phenomena-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem Phenomena Catalog
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/recommendations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Recommendations
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Enterprise Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Enterprise Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/permanence-layer-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permanence Layer Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference-architecture/gccm-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference Architecture — GCCM-001
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--discovery"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário Canônico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEB — Ecosystem Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GEB — Ecosystem Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/01-essence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Essência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/02-purpose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propósito
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/03-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Missão Operacional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/04-vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão de Longo Prazo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/05-constitution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constituição
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/06-principles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Princípios Permanentes
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Fundamental
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelo Fundamental
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/phenomenon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fenômeno da Evolução
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/fundamental-journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Fundamental da Jornada
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/four-fundamental-natures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quatro Naturezas Fundamentais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Arquitetura de Produtos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layered-product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GLPA-001 — Layered Product Architecture
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-guivos-journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001 — Guivos Journey
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-guivos-journey-reconciliacao-fechamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reconciliação e Prontidão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-guivos-journey-publicacao-controlada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publicação Controlada
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-guivos-journey-mapa-final-capacidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa Final de Capacidades
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-guivos-journey-engineering-handoff/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engineering Handoff
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-guivos-journey-engineering-handoff-0.7.1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engineering Handoff — Paused for Economic Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-captura-de-contexto-engineering-unit-0.7.1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UIC-01 — Paused before W0-01
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_10" id="__nav_8_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Produtos Especializados
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Produtos Especializados
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Journey
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Mall
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../business/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Business
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intelligence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Intelligence
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Ads
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Media
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../travel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Travel
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura da Experiência
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Arquitetura da Experiência
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação e padrões
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundação e padrões
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-001-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-001 — Fundação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-003-journeys-and-screen-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-003 — Mapa de Jornadas e Telas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-003-a1-first-entry-functional-order/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-003-A1 — Correção da Ordem Funcional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-005-low-fidelity-wireframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-005 — Programa de Wireframes
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-009-plain-language-and-technical-identifiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-009 — Linguagem Clara
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-011-companion-presence-and-ecosystem-positioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-011 — Presença Companheira
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-011-a1-moment-progress-and-next-step-explainability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-011-A1 — Compreensão e Explicabilidade
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Primeira entrada pessoal — Home antes da Tela Hoje
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Primeira entrada pessoal — Home antes da Tela Hoje
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-020-home-and-journey-entry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-020 — Página Inicial e Início da Jornada
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-021-public-home-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-021 — Validação da Página Inicial Pública
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-022-public-home-low-fidelity-wireframe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-022 — Wireframe da Página Inicial Pública
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-023 — Validação do Início Protegido
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-034 — Wireframe Móvel do Início Protegido
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-035 — Validação do Wireframe Móvel Protegido
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-036-initial-understanding-low-fidelity-wireframe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-036 — Wireframe Móvel da Compreensão Inicial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-037 — Validação do Wireframe Móvel da Compreensão Inicial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_4" id="__nav_9_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiência recorrente — depois da compreensão inicial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiência recorrente — depois da compreensão inicial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-002-daily-experience-and-home/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-002 — Experiência Diária e Tela Hoje
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-006-today-low-fidelity-wireframe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-006 — Wireframe da Tela Hoje
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-010-today-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-010 — Validação da Tela Hoje
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_5" id="__nav_9_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explorar e Mapa — navegação recorrente
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Explorar e Mapa — navegação recorrente
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-004-opportunities-organizations-collectives-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-004 — Contrato de Oportunidades e Mapa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-024 — Wireframe do Mapa de Oportunidades
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-025 — Validação Funcional do Mapa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-026-opportunity-map-location-disabled-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-026 — Mapa com Localização Desativada
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-027 — Validação do Estado sem Localização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-028-opportunity-map-list-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-028 — Visualização em Lista do Mapa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-029-opportunity-map-list-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-029 — Validação da Lista do Mapa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-030-opportunity-map-no-results-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-030 — Mapa sem Resultados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-031 — Validação do Estado sem Resultados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-032-opportunity-map-desktop-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-032 — Referência do Mapa para Computador
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-033 — Validação da Referência para Computador
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-038-opportunity-boost-functional-experience-contract/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-038 — Opportunity Boost
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-039-opportunity-boost-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-039 — Validação Funcional do Opportunity Boost
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-040 — Wireframes do Fluxo do Anunciante
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-041 — Validação dos Wireframes do Anunciante
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-042 — Cartão Patrocinado e Explicação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-043 — Validação do Cartão Patrocinado e Explicação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-044 — Estados Patrocinados de Lista e Mapa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-045 — Validação dos Estados Patrocinados de Lista e Mapa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-046 — Gestão da Campanha Ativa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_6" id="__nav_9_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oportunidades
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Oportunidades
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-007 — Wireframe do Detalhe
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-012-opportunity-detail-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-012 — Validação do Detalhe
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-008-organization-opportunity-registration-low-fidelity-wireframe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-008 — Wireframe do Cadastro pela Organização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-013-organization-opportunity-registration-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-013 — Validação do Cadastro
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_7" id="__nav_9_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Organizações e Coletivos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-014-organizations-and-collectives-functional-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-014 — Fundação Funcional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-015-organization-overview-low-fidelity-wireframe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-015 — Wireframe da Organização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-017-organization-overview-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-017 — Validação da Organização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-016-collective-home-low-fidelity-wireframe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-016 — Wireframe do Coletivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-018-collective-home-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-018 — Validação do Coletivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-019-organization-collective-relationship-functional-contract/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-019 — Relações entre Organizações e Coletivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_8" id="__nav_9_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornadas Integradas — programa e governança
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jornadas Integradas — programa e governança
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-070-journey-simulation-environment-functional-program/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-070 — Programa Funcional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-071-integrated-journeys-map-materialization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-071 — Materialização Documental
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-072-integrated-journeys-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-072 — Validação e Reformulação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-073-integrated-journeys-reformulation-navigation-and-synchronization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-073 — Reformulação, Navegação e Sincronização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-074-integrated-journeys-functional-revalidation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-074 — Nova Validação Funcional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-075-integrated-journeys-controlled-promotion-and-post-validation-synchronization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-075 — Promoção e Sincronização Pós-Validação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-076-integrated-journeys-granular-transition-and-surface-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-076 — Registros Granulares
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-077-granular-registry-functional-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-077 — Validação dos Registros Granulares
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-078-controlled-granular-registry-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-078 — Reformulação dos Registros Granulares
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-079-granular-registry-functional-revalidation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-079 — Revalidação dos Registros Granulares
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-080 — Promoção dos Registros Granulares
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-081-integrated-screen-gallery-and-coverage-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-081 — Galeria Visual e Auditoria de Cobertura
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornadas Integradas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jornadas Integradas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/screen-gallery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Galeria Visual de Telas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/screen-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de Telas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/person/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/collective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coletivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/handoffs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Handoffs
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/scenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cenários
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/surface-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registro de Superfícies
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/transition-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registro de Transições
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/gaps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lacunas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intelligence Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Intelligence Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/knowledge-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GAI-001 — AI Knowledge Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/manifesto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GAI-002 — Manifesto da Inteligência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Economic Model
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Economic Model
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-commercial-plans-baseline-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Revisão da Baseline Comercial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-opportunity-boost-baseline-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Revisão do Opportunity Boost
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-001-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-001 — Fundação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-002-value-generation-and-flows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-002 — Geração e Fluxos de Valor
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-003-revenue-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-003 — Arquitetura de Receitas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-004-free-and-paid-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-004 — Modelo Gratuito e Pago
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-004-a1-commercial-plans-pricing-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-004-A1 — Planos, Benefícios e Preços
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-004-A2 — Oferta e Ciclo Comercial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-005-incentives-and-rewards-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-005 — Incentivos e Recompensas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-006-partner-economy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-006 — Economia de Parceiros
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-007-product-economic-roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-007 — Papéis Econômicos dos Produtos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-007-a1-opportunity-boost-economic-and-product-contract/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-007-A1 — Opportunity Boost
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-008-sustainability-and-reinvestment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-008 — Sustentabilidade e Reinvestimento
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-009-economic-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-009 — Métricas Econômicas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-010-financial-scenarios-and-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-010 — Cenários e Modelo Financeiro
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-010-a1-pricing-assumptions-and-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-010-A1 — Premissas de Precificação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/gem-010-a2-opportunity-boost-pricing-budget-and-measurement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-010-A2 — Preços do Opportunity Boost
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Business Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundations
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_13_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_13_3" id="__nav_13_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategy
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Strategy
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/strategy/business-transformation-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Transformation Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/strategy/business-outcomes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Outcomes
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/strategy/candidate-outcome-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Candidate Outcome Register
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/strategy/candidate-outcome-evaluation-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Candidate Outcome Evaluation Matrix
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/strategy/candidate-outcome-decision-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Candidate Outcome Decision Register
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governança e Validação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governança e Validação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Knowledge Consolidation Pipeline
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-audit-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Audit Framework
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/outcome-governance-method/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outcome Governance Method
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/repository-state-sequencing-audit-2026-07-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auditoria de Estado e Sequência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/repository-state-navigation-remediation-plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plano de Remediação — Concluído
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/repository-mechanical-validation-2026-07-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parecer Mecânico do R5
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--passed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/governed-resumption-r6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retomada Governada do R6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/strategic-resequencing-journey-to-economic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reordenamento Estratégico Executado
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--executed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_14_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_14_9" id="__nav_14_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validações Arquiteturais
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_14_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Validações Arquiteturais
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/AV-001-gea-structure-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AV-001 — GEA Structure Validation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-FEM-001-foundation-evidence-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01 — Foundation Evidence Matrix
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--working"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-CC-001-canonical-consolidation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01 — Foundation Canonical Consolidation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-RA-001-foundation-readiness-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01 — Foundation Readiness Assessment
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--complete"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/AV-A2-001-foundation-architecture-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AV-A2-001 — Foundation Architecture Validation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved_with_recommendations"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-AUD-001-foundation-architecture-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01 — Foundation Architecture Audit
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--passed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R02 — Fundamental Model Evidence Matrix
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--execution-ready"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_14_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_14_10" id="__nav_14_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADRs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_14_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ADRs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-001-gkr-as-source-of-truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-001 — GKR como fonte única da verdade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-002-foundation-principles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-002 — Fundação da Guivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-003-architectural-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-003 — Architectural Ownership
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-004-architectural-dependency-order/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-004 — Architectural Dependency Order
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-005-architectural-traceability-principle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-005 — Architectural Traceability Principle
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-006-guivos-knowledge-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-006 — Guivos Knowledge Architecture
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKR — Versão para Impressão
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-natureza-pos-publicacao-e-preservacao-historica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Natureza pós-publicação e preservação histórica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-regra-de-precedencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Regra de precedência
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-d1-federacao-do-eixo-de-dominios-no-pas-001-e-gpa-000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. D1 — Federação do eixo de Domínios no PAS-001 e GPA-000
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. D1 — Federação do eixo de Domínios no PAS-001 e GPA-000">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-pas-001" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 PAS-001
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-gpa-000-arquitetura-de-produtos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 GPA-000 — Arquitetura de Produtos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-mapa-arquitetural-reconciliado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Mapa arquitetural reconciliado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-contrato-transversal-minimo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Contrato transversal mínimo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-regras-transversais-d2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Regras transversais D2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-d2-contexto-vivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. D2 — Contexto Vivo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. D2 — Contexto Vivo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-oito-dimensoes-estruturais-permanecem-validas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Oito dimensões estruturais permanecem válidas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-associacao-no-contexto-vivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Associação no Contexto Vivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-autoridade-preservada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Autoridade preservada
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-d2-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. D2 — Objetivos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. D2 — Objetivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-associacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Associação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-autoria-preservada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Autoria preservada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-ciclo-de-vida-e-historico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Ciclo de vida e histórico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-d2-eventos-de-vida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. D2 — Eventos de Vida
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. D2 — Eventos de Vida">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-desambiguacao-de-dimensoes-afetadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Desambiguação de “dimensões afetadas”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-impacto-avaliado-nao-presumido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Impacto avaliado, não presumido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-sensibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Sensibilidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-d2-proximos-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. D2 — Próximos Passos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. D2 — Próximos Passos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-associacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 Associação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-separacoes-obrigatorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Separações obrigatórias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-d2-oportunidades-ativas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. D2 — Oportunidades Ativas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. D2 — Oportunidades Ativas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-associacao-e-relevancia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 Associação e relevância
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-publicidade-e-patrocinio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 Publicidade e patrocínio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-fonte-da-classificacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 Fonte da classificação
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-d2-experiencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. D2 — Experiências
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. D2 — Experiências">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-associacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 Associação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-experiencia-nao-comprova-evolucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 Experiência não comprova evolução
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-significado-e-autoridade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3 Significado e autoridade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-intervencoes-contextuais-preservacao-de-fronteira" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Intervenções Contextuais — preservação de fronteira
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-d3-evolucao-continua" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. D3 — Evolução Contínua
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. D3 — Evolução Contínua">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-problema-reconciliado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1 Problema reconciliado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-vocabulario-reconciliado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2 Vocabulário reconciliado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-trajetoria-de-evolucao-reconciliada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3 Trajetória de Evolução reconciliada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#144-reclassificacao-normativa-da-antiga-secao-dimensoes-iniciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.4 Reclassificação normativa da antiga seção “Dimensões iniciais”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#145-multidominio-em-evolucao-continua" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.5 Multidomínio em Evolução Contínua
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#146-dominio-nao-e-score-de-evolucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.6 Domínio não é score de evolução
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#147-direcao-e-significado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.7 Direção e significado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-compatibilidade-por-participante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Compatibilidade por participante
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-sensibilidade-e-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Sensibilidade e finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-compatibilidade-com-guivos-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Compatibilidade com Guivos Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-regras-de-propagacao-e-correcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Regras de propagação e correção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-criterios-de-conformidade-d1d3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Critérios de conformidade D1–D3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-impacto-documental-desta-decisao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Impacto documental desta decisão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-fora-de-escopo-d4-a-d7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Fora de escopo — D4 a D7
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="21. Fora de escopo — D4 a D7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#d4-jornadas-integradas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D4 — jornadas integradas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d5-experiencia-e-telas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D5 — experiência e telas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d6-grafo-e-ontologia-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D6 — grafo e ontologia técnica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d7-public-canon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D7 — Public Canon
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-nao-autorizacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Não autorizações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-estado-apos-d1d3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Estado após D1–D3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-criterios-de-reabertura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Critérios de reabertura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-decisao-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. Decisão final
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/product-architecture/pas-001-evolution-domains-semantic-reconciliation.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="pas-001-domain-recon-001-reconciliacao-semantica-pos-publicacao-dos-dominios-de-evolucao-no-pas-001">PAS-001-DOMAIN-RECON-001 — Reconciliação Semântica Pós-Publicação dos Domínios de Evolução no PAS-001<a class="headerlink" href="#pas-001-domain-recon-001-reconciliacao-semantica-pos-publicacao-dos-dominios-de-evolucao-no-pas-001" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Decisão normativa:</strong> <code>PAS-001-DOMAIN-MODEL-001</code> passa a ser autoridade ortogonal pós-publicação para interpretação do <code>PAS-001 1.0.0</code>, de <code>GPA-000</code> e das capacidades do Guivos Journey. Esta reconciliação promove o vocabulário <code>JED-001..JED-009</code> sem reescrever retroativamente a release auditada, sem alterar a contagem histórica de 54 extensões e sem autorizar implementação técnica, UX adicional, modelo físico de grafo ou tratamento de dados não previamente autorizado.</p>
+</blockquote>
+<h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Esta autoridade executa a reconciliação semântica D1–D3 após a canonização dos Domínios de Evolução.</p>
+<p>Ela resolve três necessidades:</p>
+<ol>
+<li><strong>D1 — federação pós-publicação:</strong> estabelecer como <code>PAS-001 1.0.0</code> e <code>GPA-000</code> devem ser lidos após a aprovação de <code>PAS-001-DOMAIN-MODEL-001</code>;</li>
+<li><strong>D2 — propagação entre capacidades:</strong> tornar explícito como os Domínios de Evolução se relacionam com Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Oportunidades Ativas e Experiências;</li>
+<li><strong>D3 — reconciliação terminológica de Evolução Contínua:</strong> separar Domínio de Evolução, dimensão estrutural do Contexto Vivo e aspecto descritivo da mudança.</li>
+</ol>
+<p>Esta autoridade não altera a responsabilidade funcional das nove capacidades do Journey.</p>
+<h2 id="2-natureza-pos-publicacao-e-preservacao-historica">2. Natureza pós-publicação e preservação histórica<a class="headerlink" href="#2-natureza-pos-publicacao-e-preservacao-historica" title="Permanent link">&para;</a></h2>
+<p>O <code>PAS-001 1.0.0</code> foi publicado após auditoria, validação de release e inventário de <strong>54 extensões especializadas</strong>.</p>
+<p>Essa contagem é histórica e permanece verdadeira para a release que foi auditada.</p>
+<p><code>PAS-001-DOMAIN-MODEL-001</code> e esta reconciliação surgiram posteriormente e não deverão ser utilizadas para afirmar retroativamente que a publicação original possuía 55, 56 ou outra quantidade de extensões auditadas.</p>
+<p>A leitura correta passa a ser:</p>
+<div class="highlight"><pre><span></span><code>PAS-001 1.0.0 publicado
++ nove contratos finais e 54 extensões da release auditada
++ PAS-001-DOMAIN-MODEL-001 como autoridade ortogonal pós-publicação
++ PAS-001-DOMAIN-RECON-001 como autoridade de reconciliação semântica pós-publicação
+</code></pre></div>
+<p>Portanto:</p>
+<div class="highlight"><pre><span></span><code>adição pós-publicação
+≠ alteração retroativa da evidência de release
+≠ reexecução automática da auditoria histórica
+≠ nova publicação do PAS-001
+</code></pre></div>
+<h2 id="3-regra-de-precedencia">3. Regra de precedência<a class="headerlink" href="#3-regra-de-precedencia" title="Permanent link">&para;</a></h2>
+<p>Para assuntos relacionados à taxonomia e associação de áreas da jornada:</p>
+<ol>
+<li><code>PAS-001-DOMAIN-MODEL-001</code> governa definição, IDs, fronteiras, multidomínio, sensibilidade, classificação e <code>domain_link</code>;</li>
+<li>esta reconciliação governa a compatibilização desse modelo com <code>PAS-001</code>, <code>GPA-000</code> e capacidades especializadas;</li>
+<li>os contratos especializados continuam governando estados, transições, eventos, integrações, KPIs, guardrails, cenários e regras próprias da capacidade;</li>
+<li>onde uma expressão histórica como <code>dimensão</code> puder ser confundida com Domínio de Evolução, aplica-se a desambiguação desta reconciliação;</li>
+<li>nenhum vínculo de domínio transfere autoridade entre capacidades.</li>
+</ol>
+<p>Em caso de conflito semântico específico sobre Domínios de Evolução, prevalece a autoridade mais recente e especializada, sem apagar a evidência histórica da formulação anterior.</p>
+<h2 id="4-d1-federacao-do-eixo-de-dominios-no-pas-001-e-gpa-000">4. D1 — Federação do eixo de Domínios no PAS-001 e GPA-000<a class="headerlink" href="#4-d1-federacao-do-eixo-de-dominios-no-pas-001-e-gpa-000" title="Permanent link">&para;</a></h2>
+<h3 id="41-pas-001">4.1 PAS-001<a class="headerlink" href="#41-pas-001" title="Permanent link">&para;</a></h3>
+<p>O <code>PAS-001</code> continua definindo <strong>como</strong> o Journey opera por meio de suas nove capacidades:</p>
+<div class="highlight"><pre><span></span><code>Captura de Contexto
+→ Contexto Vivo
+→ Objetivos
+→ Eventos de Vida
+→ Próximos Passos
+→ Oportunidades Ativas
+→ Intervenções Contextuais
+→ Experiências
+→ Evolução Contínua
+</code></pre></div>
+<p><code>PAS-001-DOMAIN-MODEL-001</code> adiciona o eixo ortogonal que responde <strong>sobre o que</strong> uma jornada está tratando.</p>
+<p>A arquitetura consolidada deve ser lida como dois eixos independentes e cruzáveis:</p>
+<div class="highlight"><pre><span></span><code>Eixo funcional: como o Journey opera
+×
+Eixo de domínio: sobre qual área a jornada trata
+</code></pre></div>
+<p>Os nove Domínios de Evolução são:</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Domínio canônico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>JED-001</code></td>
+<td>Saúde e Bem-estar</td>
+</tr>
+<tr>
+<td><code>JED-002</code></td>
+<td>Trabalho, Carreira e Estudos</td>
+</tr>
+<tr>
+<td><code>JED-003</code></td>
+<td>Vida Financeira</td>
+</tr>
+<tr>
+<td><code>JED-004</code></td>
+<td>Empreendedorismo e Projetos</td>
+</tr>
+<tr>
+<td><code>JED-005</code></td>
+<td>Relacionamentos e Vida Social</td>
+</tr>
+<tr>
+<td><code>JED-006</code></td>
+<td>Espiritualidade, Propósito e Valores</td>
+</tr>
+<tr>
+<td><code>JED-007</code></td>
+<td>Viagens, Lazer, Cultura e Novas Experiências</td>
+</tr>
+<tr>
+<td><code>JED-008</code></td>
+<td>Causas, Voluntariado e Contribuição</td>
+</tr>
+<tr>
+<td><code>JED-009</code></td>
+<td>Organização e Equilíbrio da Vida</td>
+</tr>
+</tbody>
+</table>
+<p><code>Ainda estou descobrindo</code> permanece estado legítimo de exploração e <strong>não é décimo domínio</strong>.</p>
+<p><code>Outra área</code> permanece mecanismo de extensibilidade e captura de necessidade ainda não mapeada, sem reclassificação silenciosa.</p>
+<h3 id="42-gpa-000-arquitetura-de-produtos">4.2 GPA-000 — Arquitetura de Produtos<a class="headerlink" href="#42-gpa-000-arquitetura-de-produtos" title="Permanent link">&para;</a></h3>
+<p>Para fins de Arquitetura de Produtos, a descrição do Guivos Journey em <code>GPA-000</code> passa a ser interpretada conjuntamente com:</p>
+<ul>
+<li><code>GPA-001 — Guivos Journey</code>;</li>
+<li><code>PAS-001 — Guivos Journey Product Architecture Specification</code>;</li>
+<li><code>PAS-001-DOMAIN-MODEL-001</code>;</li>
+<li><code>PAS-001-DOMAIN-RECON-001</code>.</li>
+</ul>
+<p>O eixo de Domínios de Evolução pertence ao <strong>Guivos Journey / Experience Layer</strong> como vocabulário transversal da jornada e não cria um oitavo Produto Especializado, uma décima capacidade ou uma nova camada arquitetural.</p>
+<div class="highlight"><pre><span></span><code>Domínio de Evolução
+≠ produto
+≠ capacidade
+≠ plano comercial
+≠ participante
+≠ tecnologia
+</code></pre></div>
+<h3 id="43-mapa-arquitetural-reconciliado">4.3 Mapa arquitetural reconciliado<a class="headerlink" href="#43-mapa-arquitetural-reconciliado" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Ecossistema Guivos
+└── Experience Layer
+    └── Guivos Journey
+        ├── nove capacidades funcionais
+        └── eixo transversal de Domínios de Evolução
+            ├── JED-001 ... JED-009
+            ├── multidomínio
+            ├── Ainda estou descobrindo
+            └── Outra área / other_unmapped
+</code></pre></div>
+<p>O eixo pode ser consumido por Guivos Intelligence e por produtos especializados somente dentro da autoridade, finalidade, proteção e handoff aplicáveis.</p>
+<h2 id="5-contrato-transversal-minimo">5. Contrato transversal mínimo<a class="headerlink" href="#5-contrato-transversal-minimo" title="Permanent link">&para;</a></h2>
+<p>Quando uma capacidade precisar relacionar seu objeto funcional a uma área da jornada, deverá utilizar semanticamente o contrato definido por <code>PAS-001-DOMAIN-MODEL-001</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">domain_link</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">domain_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">JED-001..JED-009 | other_unmapped | null</span>
+<span class="w">  </span><span class="nt">subdomain</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string_or_null</span>
+<span class="w">  </span><span class="nt">participant_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">person | collective | organization</span>
+<span class="w">  </span><span class="nt">relation_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">primary | secondary | contextual | candidate</span>
+<span class="w">  </span><span class="nt">authority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">participant_declared | authorized_source | guivos_candidate | professional | institutional</span>
+<span class="w">  </span><span class="nt">confirmation_state</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">candidate | declared | confirmed | contested | withdrawn | unknown</span>
+<span class="w">  </span><span class="nt">confidence</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">low | moderate | high | unknown</span>
+<span class="w">  </span><span class="nt">sensitive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true | false | context_dependent</span>
+<span class="w">  </span><span class="nt">purpose</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">source_ref</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string_or_null</span>
+<span class="w">  </span><span class="nt">valid_from</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">datetime_or_null</span>
+<span class="w">  </span><span class="nt">valid_until</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">datetime_or_null</span>
+<span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string_or_null</span>
+</code></pre></div>
+<p>Este contrato continua <strong>semântico</strong>.</p>
+<p>Ele não declara:</p>
+<ul>
+<li>coluna de banco de dados;</li>
+<li>tabela;</li>
+<li>nó ou relação física de grafo;</li>
+<li>API;</li>
+<li>payload técnico definitivo;</li>
+<li>indexação;</li>
+<li>evento de software;</li>
+<li>UI obrigatória;</li>
+<li>coleta automática de dados;</li>
+<li>consentimento;</li>
+<li>implementação.</li>
+</ul>
+<h2 id="6-regras-transversais-d2">6. Regras transversais D2<a class="headerlink" href="#6-regras-transversais-d2" title="Permanent link">&para;</a></h2>
+<p>As capacidades reconciliadas deverão preservar as seguintes invariantes:</p>
+<ol>
+<li>objeto funcional sem domínio conhecido continua válido quando o contrato da capacidade permitir;</li>
+<li>ausência de domínio não representa ausência de necessidade, objetivo, evento, movimento, oportunidade, experiência ou evolução;</li>
+<li>um objeto pode possuir <code>0..n</code> associações de domínio;</li>
+<li>multidomínio não exige escolha artificial de um único domínio principal;</li>
+<li>relação <code>candidate</code> não se torna <code>confirmed</code> por repetição, probabilidade ou conveniência técnica;</li>
+<li>declaração direta legítima do participante prevalece sobre inferência incompatível;</li>
+<li>domínio contestado, retirado ou vencido não poderá permanecer sendo tratado como confirmação vigente;</li>
+<li>domínio não define identidade, mérito, valor, diagnóstico ou prioridade humana;</li>
+<li>domínio compatível não comprova relevância, progresso, resultado ou evolução;</li>
+<li>informação sensível não adquire nova finalidade apenas por possuir <code>domain_link</code>;</li>
+<li>vínculo de domínio não amplia consentimento, base, autorização, acesso ou compartilhamento;</li>
+<li>histórico legítimo deve ser preservado sem reclassificação silenciosa.</li>
+</ol>
+<h2 id="7-d2-contexto-vivo">7. D2 — Contexto Vivo<a class="headerlink" href="#7-d2-contexto-vivo" title="Permanent link">&para;</a></h2>
+<h3 id="71-oito-dimensoes-estruturais-permanecem-validas">7.1 Oito dimensões estruturais permanecem válidas<a class="headerlink" href="#71-oito-dimensoes-estruturais-permanecem-validas" title="Permanent link">&para;</a></h3>
+<p>As oito dimensões estruturais do Contexto Vivo permanecem:</p>
+<ul>
+<li>Identidade;</li>
+<li>Momento;</li>
+<li>Direção;</li>
+<li>Capacidades;</li>
+<li>Restrições;</li>
+<li>Preferências;</li>
+<li>Relacionamentos;</li>
+<li>Evolução.</li>
+</ul>
+<p>Elas descrevem <strong>como o contexto é representado</strong>.</p>
+<p>Os Domínios de Evolução descrevem <strong>qual área da jornada está em foco</strong>.</p>
+<p>Portanto:</p>
+<div class="highlight"><pre><span></span><code>Dimensão do Contexto Vivo ≠ Domínio de Evolução
+</code></pre></div>
+<p>Exemplos:</p>
+<div class="highlight"><pre><span></span><code>JED-003 Vida Financeira
+→ Momento: situação atual relevante
+→ Direção: o que o participante deseja organizar
+→ Capacidades: recursos e conhecimentos disponíveis
+→ Restrições: obrigações ou limites relevantes
+→ Preferências: formas aceitáveis de apoio
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>JED-006 Espiritualidade, Propósito e Valores
+→ Identidade: somente quando legitimamente declarada e relevante
+→ Momento: contexto atual
+→ Direção: prática, reflexão ou participação desejada
+→ Relacionamentos: vínculos voluntariamente relevantes
+</code></pre></div>
+<p>Nenhum exemplo autoriza inferência de condição sensível não declarada.</p>
+<h3 id="72-associacao-no-contexto-vivo">7.2 Associação no Contexto Vivo<a class="headerlink" href="#72-associacao-no-contexto-vivo" title="Permanent link">&para;</a></h3>
+<p>O Contexto Vivo poderá representar <code>0..n</code> domínios atualmente relevantes por meio de associações semânticas equivalentes a <code>domain_link</code>.</p>
+<p>A associação deverá permanecer:</p>
+<ul>
+<li>contextual;</li>
+<li>temporal;</li>
+<li>revisável;</li>
+<li>contestável;</li>
+<li>proporcional à finalidade;</li>
+<li>separada da identidade permanente.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>domínio atualmente relevante
+≠ identidade do participante
+≠ prioridade permanente
+≠ preferência comercial
+</code></pre></div>
+<h3 id="73-autoridade-preservada">7.3 Autoridade preservada<a class="headerlink" href="#73-autoridade-preservada" title="Permanent link">&para;</a></h3>
+<p>Guivos Intelligence poderá sugerir um domínio candidato, mas Contexto Vivo não deverá promover esse candidato silenciosamente a declaração ou confirmação.</p>
+<p>Mudança de domínio não apaga estados históricos legítimos das oito dimensões.</p>
+<h2 id="8-d2-objetivos">8. D2 — Objetivos<a class="headerlink" href="#8-d2-objetivos" title="Permanent link">&para;</a></h2>
+<h3 id="81-associacao">8.1 Associação<a class="headerlink" href="#81-associacao" title="Permanent link">&para;</a></h3>
+<p>Um Objetivo poderá possuir <code>0..n</code> <code>domain_link</code>.</p>
+<p>Exemplos:</p>
+<div class="highlight"><pre><span></span><code>Objetivo: correr primeira prova de 5 km
+→ JED-001 Saúde e Bem-estar
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Objetivo: melhorar renda para financiar uma viagem internacional
+→ JED-003 Vida Financeira
++ JED-007 Viagens, Lazer, Cultura e Novas Experiências
+</code></pre></div>
+<h3 id="82-autoria-preservada">8.2 Autoria preservada<a class="headerlink" href="#82-autoria-preservada" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>domínio identificado
+≠ objetivo criado
+≠ objetivo confirmado
+</code></pre></div>
+<p>O domínio não concede à Guivos autoridade para inventar objetivo, prioridade, horizonte ou critério de sucesso.</p>
+<p>Um Objetivo pode existir sem domínio classificado.</p>
+<h3 id="83-ciclo-de-vida-e-historico">8.3 Ciclo de vida e histórico<a class="headerlink" href="#83-ciclo-de-vida-e-historico" title="Permanent link">&para;</a></h3>
+<p>Mudança, contestação ou retirada de um <code>domain_link</code>:</p>
+<ul>
+<li>não encerra automaticamente o Objetivo;</li>
+<li>não altera automaticamente sua prioridade;</li>
+<li>não converte objetivo pessoal em institucional;</li>
+<li>não apaga a associação histórica legítima;</li>
+<li>exige propagação controlada somente quando decisões dependentes utilizarem aquela classificação.</li>
+</ul>
+<h2 id="9-d2-eventos-de-vida">9. D2 — Eventos de Vida<a class="headerlink" href="#9-d2-eventos-de-vida" title="Permanent link">&para;</a></h2>
+<h3 id="91-desambiguacao-de-dimensoes-afetadas">9.1 Desambiguação de “dimensões afetadas”<a class="headerlink" href="#91-desambiguacao-de-dimensoes-afetadas" title="Permanent link">&para;</a></h3>
+<p>Quando os contratos históricos de Eventos de Vida utilizarem a expressão <code>dimensões afetadas</code>, ela deverá ser interpretada como referência às <strong>dimensões estruturais do Contexto Vivo</strong>, salvo quando o texto declarar expressamente outro significado.</p>
+<p>Domínios de Evolução afetados constituem relação separada.</p>
+<p>A unidade funcional reconciliada poderá preservar, quando aplicável:</p>
+<div class="highlight"><pre><span></span><code>Evento de Vida
+├── dimensões do Contexto Vivo afetadas: 0..n
+└── domain_links / Domínios de Evolução relacionados ou afetados: 0..n
+</code></pre></div>
+<h3 id="92-impacto-avaliado-nao-presumido">9.2 Impacto avaliado, não presumido<a class="headerlink" href="#92-impacto-avaliado-nao-presumido" title="Permanent link">&para;</a></h3>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Evento: mudança de cidade
+
+possíveis dimensões do Contexto Vivo afetadas:
+- Momento
+- Restrições
+- Relacionamentos
+- Direção
+
+possíveis Domínios de Evolução afetados, conforme contexto e evidência:
+- JED-002 Trabalho, Carreira e Estudos
+- JED-003 Vida Financeira
+- JED-005 Relacionamentos e Vida Social
+- JED-009 Organização e Equilíbrio da Vida
+</code></pre></div>
+<p>A ocorrência da mudança de cidade não confirma automaticamente nenhum desses impactos.</p>
+<h3 id="93-sensibilidade">9.3 Sensibilidade<a class="headerlink" href="#93-sensibilidade" title="Permanent link">&para;</a></h3>
+<p>Um Evento de Vida não deverá utilizar o domínio como atalho para inferir:</p>
+<ul>
+<li>condição de saúde;</li>
+<li>situação financeira;</li>
+<li>estado emocional;</li>
+<li>religião;</li>
+<li>vulnerabilidade;</li>
+<li>significado pessoal.</li>
+</ul>
+<p>Cada inferência continua dependente de finalidade, base, autoridade e proteção adequadas.</p>
+<h2 id="10-d2-proximos-passos">10. D2 — Próximos Passos<a class="headerlink" href="#10-d2-proximos-passos" title="Permanent link">&para;</a></h2>
+<h3 id="101-associacao">10.1 Associação<a class="headerlink" href="#101-associacao" title="Permanent link">&para;</a></h3>
+<p>Um Próximo Passo proposto ou confirmado poderá possuir <code>0..n</code> <code>domain_link</code>.</p>
+<p>O vínculo ajuda a explicar em qual área aquele movimento pode contribuir, mas não substitui:</p>
+<ul>
+<li>contexto atual;</li>
+<li>direção;</li>
+<li>objetivo;</li>
+<li>restrições;</li>
+<li>capacidades;</li>
+<li>dependências;</li>
+<li>risco;</li>
+<li>autoridade;</li>
+<li>confirmação aplicável.</li>
+</ul>
+<h3 id="102-separacoes-obrigatorias">10.2 Separações obrigatórias<a class="headerlink" href="#102-separacoes-obrigatorias" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Próximo Passo em JED-001
+≠ prova de melhora de saúde
+
+Próximo Passo em JED-003
+≠ prova de melhora financeira
+
+Próximo Passo em JED-006
+≠ prova de evolução espiritual
+</code></pre></div>
+<p>Executar, concluir, cancelar ou substituir um Próximo Passo não deverá alterar automaticamente a avaliação de Evolução Contínua.</p>
+<h2 id="11-d2-oportunidades-ativas">11. D2 — Oportunidades Ativas<a class="headerlink" href="#11-d2-oportunidades-ativas" title="Permanent link">&para;</a></h2>
+<h3 id="111-associacao-e-relevancia">11.1 Associação e relevância<a class="headerlink" href="#111-associacao-e-relevancia" title="Permanent link">&para;</a></h3>
+<p>Uma Oportunidade Ativa poderá possuir <code>0..n</code> associações de domínio.</p>
+<p>Essas associações poderão apoiar busca, filtros, explicação e avaliação contextual.</p>
+<p>Porém:</p>
+<div class="highlight"><pre><span></span><code>domínio compatível ≠ oportunidade relevante
+</code></pre></div>
+<p>Relevância continua dependente, conforme aplicável, de:</p>
+<ul>
+<li>Momento;</li>
+<li>Objetivos;</li>
+<li>Próximos Passos;</li>
+<li>Restrições;</li>
+<li>Preferências;</li>
+<li>localização ou modalidade;</li>
+<li>temporalidade;</li>
+<li>disponibilidade;</li>
+<li>elegibilidade;</li>
+<li>risco;</li>
+<li>custo;</li>
+<li>autoridade;</li>
+<li>finalidade;</li>
+<li>sensibilidade;</li>
+<li>proveniência;</li>
+<li>relações comerciais.</li>
+</ul>
+<h3 id="112-publicidade-e-patrocinio">11.2 Publicidade e patrocínio<a class="headerlink" href="#112-publicidade-e-patrocinio" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>patrocínio
+≠ domínio mais relevante
+≠ confirmação de domínio
+≠ prioridade orgânica
+</code></pre></div>
+<p>Pagamento não poderá criar, elevar ou confirmar afinidade de domínio.</p>
+<p>Domínio sensível não autoriza publicidade comportamental.</p>
+<h3 id="113-fonte-da-classificacao">11.3 Fonte da classificação<a class="headerlink" href="#113-fonte-da-classificacao" title="Permanent link">&para;</a></h3>
+<p>A oportunidade poderá possuir classificação de domínio derivada de fonte institucional, curadoria, declaração autorizada ou Guivos Intelligence candidata.</p>
+<p>A fonte e o estado de confirmação deverão permanecer distinguíveis quando materialmente relevantes.</p>
+<h2 id="12-d2-experiencias">12. D2 — Experiências<a class="headerlink" href="#12-d2-experiencias" title="Permanent link">&para;</a></h2>
+<h3 id="121-associacao">12.1 Associação<a class="headerlink" href="#121-associacao" title="Permanent link">&para;</a></h3>
+<p>Uma Experiência poderá possuir <code>0..n</code> <code>domain_link</code>, conforme o contexto legitimamente reconhecido.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Experiência: participação em curso profissional
+→ JED-002 Trabalho, Carreira e Estudos
+</code></pre></div>
+<p>Uma mesma experiência poderá atravessar mais de um domínio.</p>
+<h3 id="122-experiencia-nao-comprova-evolucao">12.2 Experiência não comprova evolução<a class="headerlink" href="#122-experiencia-nao-comprova-evolucao" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>experiência relacionada ao domínio
+≠ resultado positivo
+≠ transformação
+≠ evolução no domínio
+</code></pre></div>
+<p>Presença, compra, participação, conclusão, satisfação ou recorrência não deverão ser usadas isoladamente para concluir evolução.</p>
+<h3 id="123-significado-e-autoridade">12.3 Significado e autoridade<a class="headerlink" href="#123-significado-e-autoridade" title="Permanent link">&para;</a></h3>
+<p>O significado da experiência para a trajetória deve preservar:</p>
+<ul>
+<li>declaração do participante;</li>
+<li>evidências;</li>
+<li>contexto;</li>
+<li>limitações;</li>
+<li>temporalidade;</li>
+<li>incerteza;</li>
+<li>autoridade aplicável.</li>
+</ul>
+<h2 id="13-intervencoes-contextuais-preservacao-de-fronteira">13. Intervenções Contextuais — preservação de fronteira<a class="headerlink" href="#13-intervencoes-contextuais-preservacao-de-fronteira" title="Permanent link">&para;</a></h2>
+<p>Intervenções Contextuais não integra o escopo documental principal de D2 porque a auditoria não encontrou ambiguidade estrutural equivalente à das demais capacidades.</p>
+<p>Ainda assim, aplica-se a regra de <code>PAS-001-DOMAIN-MODEL-001</code>:</p>
+<ul>
+<li>domínio poderá explicar contexto da manifestação;</li>
+<li>domínio não amplia legitimidade para interromper;</li>
+<li>domínio não cria urgência;</li>
+<li>domínio sensível exige proteção reforçada;</li>
+<li>patrocínio não compra direito de intervenção.</li>
+</ul>
+<p>Nenhum novo contrato de Intervenções é criado por esta reconciliação.</p>
+<h2 id="14-d3-evolucao-continua">14. D3 — Evolução Contínua<a class="headerlink" href="#14-d3-evolucao-continua" title="Permanent link">&para;</a></h2>
+<h3 id="141-problema-reconciliado">14.1 Problema reconciliado<a class="headerlink" href="#141-problema-reconciliado" title="Permanent link">&para;</a></h3>
+<p>A formulação histórica de Evolução Contínua utiliza <code>dimensão</code> em pelo menos dois sentidos potencialmente confundíveis:</p>
+<ol>
+<li>campo genérico preservado pela Trajetória de Evolução;</li>
+<li>seção <code>Dimensões iniciais</code>, com uma lista heterogênea de recortes como profissional, financeira, física, cognitiva, comportamental, cultural, espiritual, cidadania e outros.</li>
+</ol>
+<p>Após a canonização de <code>PAS-001-DOMAIN-MODEL-001</code>, essa terminologia não deverá ser interpretada como uma taxonomia concorrente aos nove Domínios de Evolução nem como substituta das oito dimensões estruturais do Contexto Vivo.</p>
+<h3 id="142-vocabulario-reconciliado">14.2 Vocabulário reconciliado<a class="headerlink" href="#142-vocabulario-reconciliado" title="Permanent link">&para;</a></h3>
+<p>Passam a existir três conceitos explicitamente distintos:</p>
+<table>
+<thead>
+<tr>
+<th>Conceito</th>
+<th>Pergunta respondida</th>
+<th>Autoridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Domínio de Evolução</strong></td>
+<td>sobre qual área a trajetória está tratando?</td>
+<td><code>PAS-001-DOMAIN-MODEL-001</code></td>
+</tr>
+<tr>
+<td><strong>Dimensão do Contexto Vivo</strong></td>
+<td>qual eixo estrutural do contexto está envolvido?</td>
+<td>contratos de Contexto Vivo</td>
+</tr>
+<tr>
+<td><strong>Aspecto descritivo da mudança</strong></td>
+<td>que natureza ou recorte complementar ajuda a descrever a mudança?</td>
+<td>Evolução Contínua, subordinado aos dois anteriores</td>
+</tr>
+</tbody>
+</table>
+<p>Regra:</p>
+<div class="highlight"><pre><span></span><code>Domínio de Evolução
+≠ Dimensão do Contexto Vivo
+≠ Aspecto descritivo da mudança
+</code></pre></div>
+<h3 id="143-trajetoria-de-evolucao-reconciliada">14.3 Trajetória de Evolução reconciliada<a class="headerlink" href="#143-trajetoria-de-evolucao-reconciliada" title="Permanent link">&para;</a></h3>
+<p>A unidade funcional <code>Trajetória de Evolução</code> continua válida.</p>
+<p>O campo histórico genérico <code>dimensão</code> deverá ser interpretado de forma desambiguada e, em novos artefatos derivados, preferencialmente representado por estruturas separadas:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">evolution_trajectory_semantics</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">domain_links</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0..n</span>
+<span class="w">  </span><span class="nt">context_dimensions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0..n</span>
+<span class="w">  </span><span class="nt">change_aspects</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0..n</span>
+<span class="w">  </span><span class="nt">direction</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">baseline</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">period</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">observed_states</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">changes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">related_events</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">related_experiences</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">related_objectives</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">evidence</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">interpretations</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">confidence</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">uncertainty</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">contributing_factors</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">contestations</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">corrections</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">permissions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+<span class="w">  </span><span class="nt">history</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">existing_contract</span>
+</code></pre></div>
+<p>Essa representação é semântica e não constitui esquema técnico.</p>
+<h3 id="144-reclassificacao-normativa-da-antiga-secao-dimensoes-iniciais">14.4 Reclassificação normativa da antiga seção “Dimensões iniciais”<a class="headerlink" href="#144-reclassificacao-normativa-da-antiga-secao-dimensoes-iniciais" title="Permanent link">&para;</a></h3>
+<p>A lista histórica deverá ser lida, a partir desta reconciliação, como <strong>Aspectos descritivos iniciais da mudança</strong>, e não como conjunto canônico de Domínios de Evolução.</p>
+<p>A lista é preservada semanticamente:</p>
+<ul>
+<li>pessoal;</li>
+<li>relacional;</li>
+<li>familiar;</li>
+<li>social;</li>
+<li>comunitária;</li>
+<li>educacional;</li>
+<li>profissional;</li>
+<li>financeira;</li>
+<li>física;</li>
+<li>emocional declarada;</li>
+<li>cognitiva;</li>
+<li>comportamental;</li>
+<li>cultural;</li>
+<li>ambiental;</li>
+<li>espiritual ou religiosa declarada;</li>
+<li>autonomia;</li>
+<li>acessibilidade;</li>
+<li>participação;</li>
+<li>cuidado;</li>
+<li>cidadania.</li>
+</ul>
+<p>Esses termos poderão ajudar a descrever a natureza de uma mudança quando houver finalidade e clareza, mas não deverão competir com <code>JED-001..JED-009</code>.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Domínio:
+JED-002 Trabalho, Carreira e Estudos
+
+Subárea:
+transição de carreira
+
+Dimensões do Contexto Vivo relevantes:
+Momento + Direção + Capacidades + Restrições
+
+Aspectos descritivos da mudança:
+profissional + cognitiva + comportamental
+
+Trajetória:
+reorientação profissional
+</code></pre></div>
+<h3 id="145-multidominio-em-evolucao-continua">14.5 Multidomínio em Evolução Contínua<a class="headerlink" href="#145-multidominio-em-evolucao-continua" title="Permanent link">&para;</a></h3>
+<p>Uma Trajetória poderá referenciar mais de um domínio.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Trajetória: preparação para mudança de cidade e trabalho
+→ JED-002 Trabalho, Carreira e Estudos
+→ JED-003 Vida Financeira
+→ JED-005 Relacionamentos e Vida Social
+→ JED-009 Organização e Equilíbrio da Vida
+</code></pre></div>
+<p>Nenhum domínio precisa ser reduzido a outro.</p>
+<h3 id="146-dominio-nao-e-score-de-evolucao">14.6 Domínio não é score de evolução<a class="headerlink" href="#146-dominio-nao-e-score-de-evolucao" title="Permanent link">&para;</a></h3>
+<p>Evolução Contínua não deverá produzir por padrão:</p>
+<ul>
+<li>nota global da pessoa;</li>
+<li>score obrigatório por domínio;</li>
+<li>média dos nove domínios;</li>
+<li>ranking entre participantes;</li>
+<li>“nível de evolução” humano;</li>
+<li>pontuação espiritual, financeira, social ou de saúde.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>mais evidências em um domínio
+≠ mais valor humano
+
+mais atividade em um domínio
+≠ maior evolução
+
+mais domínios ativos
+≠ jornada melhor
+</code></pre></div>
+<h3 id="147-direcao-e-significado">14.7 Direção e significado<a class="headerlink" href="#147-direcao-e-significado" title="Permanent link">&para;</a></h3>
+<p>Evolução em um domínio continua podendo representar:</p>
+<ul>
+<li>descobrir;</li>
+<li>compreender;</li>
+<li>iniciar;</li>
+<li>aprender;</li>
+<li>desenvolver;</li>
+<li>fortalecer;</li>
+<li>organizar;</li>
+<li>adaptar;</li>
+<li>recuperar;</li>
+<li>manter;</li>
+<li>consolidar;</li>
+<li>experimentar;</li>
+<li>concluir;</li>
+<li>reorientar;</li>
+<li>pausar;</li>
+<li>abandonar legitimamente;</li>
+<li>reduzir impacto de uma restrição;</li>
+<li>reconhecer ausência de mudança;</li>
+<li>permanecer inconclusiva.</li>
+</ul>
+<p>O significado deverá respeitar direção, baseline, evidência, autoridade e interpretação legítima do participante.</p>
+<h2 id="15-compatibilidade-por-participante">15. Compatibilidade por participante<a class="headerlink" href="#15-compatibilidade-por-participante" title="Permanent link">&para;</a></h2>
+<p>Os <code>JED-*</code> pertencem ao vocabulário comum do Journey, mas sua interpretação permanece específica para Pessoa, Coletivo e Organização.</p>
+<div class="highlight"><pre><span></span><code>trajetória da Pessoa
+≠ trajetória do Coletivo
+≠ trajetória da Organização
+≠ indicador agregado
+≠ impacto social amplo
+</code></pre></div>
+<p>Nenhuma capacidade poderá utilizar domínio compartilhado para transferir automaticamente resultados entre titulares.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Organização executa programa JED-002
+≠ Pessoa evoluiu em JED-002
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Coletivo conclui ação JED-008
+≠ todos os participantes evoluíram individualmente
+</code></pre></div>
+<h2 id="16-sensibilidade-e-finalidade">16. Sensibilidade e finalidade<a class="headerlink" href="#16-sensibilidade-e-finalidade" title="Permanent link">&para;</a></h2>
+<p>A associação de domínio não reduz as exigências de proteção.</p>
+<p>Exigem cuidado reforçado quando aplicável:</p>
+<ul>
+<li>saúde;</li>
+<li>deficiência;</li>
+<li>condição emocional;</li>
+<li>religião e espiritualidade;</li>
+<li>finanças;</li>
+<li>emprego;</li>
+<li>família;</li>
+<li>sexualidade quando emergir no contexto;</li>
+<li>violência, trauma ou luto;</li>
+<li>localização protegida;</li>
+<li>crianças e adolescentes;</li>
+<li>vulnerabilidade.</li>
+</ul>
+<p>Proibições preservadas:</p>
+<ul>
+<li>publicidade comportamental baseada em domínio sensível;</li>
+<li>manipulação de preço;</li>
+<li>ranking humano;</li>
+<li>discriminação;</li>
+<li>exposição indevida;</li>
+<li>inferência de mérito, fé, saúde, solvência ou valor pessoal;</li>
+<li>reutilização para finalidade incompatível.</li>
+</ul>
+<h2 id="17-compatibilidade-com-guivos-intelligence">17. Compatibilidade com Guivos Intelligence<a class="headerlink" href="#17-compatibilidade-com-guivos-intelligence" title="Permanent link">&para;</a></h2>
+<p>Guivos Intelligence poderá continuar:</p>
+<ul>
+<li>classificando domínios como candidatos;</li>
+<li>sugerindo relações multidomínio;</li>
+<li>explicando a classificação;</li>
+<li>preservando confiança e incerteza;</li>
+<li>identificando <code>other_unmapped</code>;</li>
+<li>reconhecendo que o participante ainda está descobrindo.</li>
+</ul>
+<p>Esta reconciliação não amplia sua autoridade.</p>
+<div class="highlight"><pre><span></span><code>classificação por IA
+≠ confirmação
+≠ objetivo
+≠ diagnóstico
+≠ prioridade
+≠ evolução
+</code></pre></div>
+<h2 id="18-regras-de-propagacao-e-correcao">18. Regras de propagação e correção<a class="headerlink" href="#18-regras-de-propagacao-e-correcao" title="Permanent link">&para;</a></h2>
+<p>Quando uma associação de domínio for criada, modificada, contestada, retirada ou expirar:</p>
+<ol>
+<li>a origem e autoridade deverão permanecer rastreáveis;</li>
+<li>consumidores materiais deverão receber correção proporcional quando a classificação tiver influenciado uma decisão vigente;</li>
+<li>histórico legítimo não deverá ser sobrescrito silenciosamente;</li>
+<li>conteúdo meramente arquivado não deverá ser reescrito para parecer que sempre utilizou a taxonomia atual;</li>
+<li>correção de domínio não altera automaticamente fatos, eventos, experiências ou resultados;</li>
+<li>classificações derivadas deverão ser reavaliadas quando dependerem materialmente da associação alterada;</li>
+<li>ausência posterior de domínio não transforma o registro original em inválido.</li>
+</ol>
+<h2 id="19-criterios-de-conformidade-d1d3">19. Critérios de conformidade D1–D3<a class="headerlink" href="#19-criterios-de-conformidade-d1d3" title="Permanent link">&para;</a></h2>
+<p>Uma futura edição de artefato do PAS-001 estará semanticamente conforme a esta reconciliação quando:</p>
+<ul>
+<li>utilizar <code>JED-001..JED-009</code> para Domínios de Evolução;</li>
+<li>preservar <code>Ainda estou descobrindo</code> como estado não taxonômico;</li>
+<li>preservar <code>Outra área</code> / <code>other_unmapped</code> sem encaixe silencioso;</li>
+<li>distinguir domínio de dimensão do Contexto Vivo;</li>
+<li>não reutilizar a antiga lista de Evolução Contínua como taxonomia concorrente;</li>
+<li>permitir multidomínio quando necessário;</li>
+<li>preservar autoridade e confirmação;</li>
+<li>não transformar domínio em score;</li>
+<li>não ampliar consentimento ou finalidade;</li>
+<li>manter histórico e contestação;</li>
+<li>não inferir implementação técnica.</li>
+</ul>
+<h2 id="20-impacto-documental-desta-decisao">20. Impacto documental desta decisão<a class="headerlink" href="#20-impacto-documental-desta-decisao" title="Permanent link">&para;</a></h2>
+<p>Esta reconciliação possui efeito normativo prospectivo sobre a leitura de:</p>
+<ul>
+<li><code>GPA-000</code>;</li>
+<li><code>PAS-001</code>;</li>
+<li><code>PAS-001-CV-CONTRACT-001</code>;</li>
+<li><code>PAS-001-OBJ-CONTRACT-001</code>;</li>
+<li><code>PAS-001-EV-FOUNDATION-001</code>;</li>
+<li><code>PAS-001-EV-CONTRACT-001</code>;</li>
+<li><code>PAS-001-PP-CONTRACT-001</code>;</li>
+<li><code>PAS-001-OA-CONTRACT-001</code>;</li>
+<li><code>PAS-001-EXP-CONTRACT-001</code>;</li>
+<li><code>PAS-001-EC-FOUNDATION-001</code>;</li>
+<li><code>PAS-001-EC-CONTRACT-001</code>.</li>
+</ul>
+<p>Ela não altera retroativamente seus front matters, versões históricas ou evidências de auditoria.</p>
+<p>Uma futura revisão consolidada desses documentos deverá incorporar o vocabulário desta autoridade sem apagar o histórico anterior.</p>
+<h2 id="21-fora-de-escopo-d4-a-d7">21. Fora de escopo — D4 a D7<a class="headerlink" href="#21-fora-de-escopo-d4-a-d7" title="Permanent link">&para;</a></h2>
+<p>Esta frente <strong>não</strong> executa:</p>
+<h3 id="d4-jornadas-integradas">D4 — jornadas integradas<a class="headerlink" href="#d4-jornadas-integradas" title="Permanent link">&para;</a></h3>
+<p>Não altera:</p>
+<ul>
+<li>Jornada da Pessoa;</li>
+<li>Jornada do Coletivo;</li>
+<li>Jornada da Organização;</li>
+<li>registries de superfícies/transições.</li>
+</ul>
+<h3 id="d5-experiencia-e-telas">D5 — experiência e telas<a class="headerlink" href="#d5-experiencia-e-telas" title="Permanent link">&para;</a></h3>
+<p>Não cria nem modifica:</p>
+<ul>
+<li>UXA;</li>
+<li>SVG;</li>
+<li>wireframe;</li>
+<li>estado visual;</li>
+<li>fluxo de confirmação de domínio;</li>
+<li>Tela Hoje;</li>
+<li>expressão guiada;</li>
+<li>compreensão inicial.</li>
+</ul>
+<h3 id="d6-grafo-e-ontologia-tecnica">D6 — grafo e ontologia técnica<a class="headerlink" href="#d6-grafo-e-ontologia-tecnica" title="Permanent link">&para;</a></h3>
+<p>Não cria:</p>
+<ul>
+<li>nó físico <code>EvolutionDomain</code>;</li>
+<li>relação Neo4j;</li>
+<li>constraint;</li>
+<li>índice;</li>
+<li>Cypher;</li>
+<li>modelo lógico detalhado;</li>
+<li>modelo físico;</li>
+<li>POC;</li>
+<li>GraphRAG operacional.</li>
+</ul>
+<h3 id="d7-public-canon">D7 — Public Canon<a class="headerlink" href="#d7-public-canon" title="Permanent link">&para;</a></h3>
+<p>Não altera o Guia Oficial nem outros artefatos públicos.</p>
+<h2 id="22-nao-autorizacoes">22. Não autorizações<a class="headerlink" href="#22-nao-autorizacoes" title="Permanent link">&para;</a></h2>
+<p>A aprovação deste documento não autoriza:</p>
+<ul>
+<li>Engenharia de Produto;</li>
+<li>W0-01;</li>
+<li>UXA-102/V5;</li>
+<li>coleta de dados adicional;</li>
+<li>tratamento de dados sensíveis;</li>
+<li>personalização automática;</li>
+<li>publicidade comportamental;</li>
+<li>score de evolução;</li>
+<li>implementação de IA;</li>
+<li>banco de dados;</li>
+<li>grafo físico;</li>
+<li>API;</li>
+<li>billing;</li>
+<li>lançamento de funcionalidade.</li>
+</ul>
+<h2 id="23-estado-apos-d1d3">23. Estado após D1–D3<a class="headerlink" href="#23-estado-apos-d1d3" title="Permanent link">&para;</a></h2>
+<p>Após esta reconciliação:</p>
+<table>
+<thead>
+<tr>
+<th>Área</th>
+<th>Estado semântico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>taxonomia <code>JED-001..JED-009</code></td>
+<td>canônica em <code>PAS-001-DOMAIN-MODEL-001</code></td>
+</tr>
+<tr>
+<td>PAS-001</td>
+<td>reconciliado por autoridade pós-publicação, sem reescrever a release auditada</td>
+</tr>
+<tr>
+<td>GPA-000</td>
+<td>leitura reconciliada com o eixo transversal de domínios</td>
+</tr>
+<tr>
+<td>Contexto Vivo</td>
+<td>dimensões estruturais preservadas; domínio separado e ortogonal</td>
+</tr>
+<tr>
+<td>Objetivos</td>
+<td><code>0..n</code> domínios sem criar autoria ou prioridade</td>
+</tr>
+<tr>
+<td>Eventos de Vida</td>
+<td>dimensões do Contexto Vivo separadas de domínios afetados</td>
+</tr>
+<tr>
+<td>Próximos Passos</td>
+<td>domínios opcionais sem provar progresso/evolução</td>
+</tr>
+<tr>
+<td>Oportunidades Ativas</td>
+<td>domínios podem compor contexto; compatibilidade não equivale a relevância</td>
+</tr>
+<tr>
+<td>Experiências</td>
+<td>domínios opcionais sem provar transformação/evolução</td>
+</tr>
+<tr>
+<td>Evolução Contínua</td>
+<td>domínio, dimensão de Contexto Vivo e aspecto descritivo separados</td>
+</tr>
+<tr>
+<td>D4–D7</td>
+<td>não iniciados por esta autoridade</td>
+</tr>
+</tbody>
+</table>
+<h2 id="24-criterios-de-reabertura">24. Critérios de reabertura<a class="headerlink" href="#24-criterios-de-reabertura" title="Permanent link">&para;</a></h2>
+<p>Esta reconciliação deverá ser revista se ocorrer qualquer um dos seguintes eventos:</p>
+<ol>
+<li>alteração da taxonomia canônica de <code>JED-001..JED-009</code>;</li>
+<li>criação formal de novo Domínio de Evolução;</li>
+<li>mudança material do contrato <code>domain_link</code>;</li>
+<li>alteração estrutural das oito dimensões do Contexto Vivo;</li>
+<li>mudança da unidade funcional de Evolução Contínua;</li>
+<li>descoberta de conflito entre capacidade especializada e Domain Model;</li>
+<li>autorização de D4, D5, D6 ou D7 que revele nova necessidade semântica;</li>
+<li>alteração de governança de dados sensíveis que afete classificação por domínio.</li>
+</ol>
+<h2 id="25-decisao-final">25. Decisão final<a class="headerlink" href="#25-decisao-final" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>D1–D3 ficam semanticamente reconciliados por autoridade normativa pós-publicação.</strong></p>
+<p>O <code>PAS-001 1.0.0</code> e suas 54 extensões auditadas permanecem evidência histórica intacta. <code>PAS-001-DOMAIN-MODEL-001</code> governa a taxonomia e <code>PAS-001-DOMAIN-RECON-001</code> governa sua leitura transversal nas capacidades existentes. Nenhuma jornada integrada, UX, SVG, ontologia física, Public Canon ou implementação é promovida por esta decisão.</p>
+</blockquote>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
