@@ -6574,10 +6574,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#35-handoffs-nao-contratados-e-nao-validados" class="md-nav__link">
+  <a href="#35-handoffs-contratados-e-nao-validados" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.5 Handoffs não contratados e não validados
+        3.5 Handoffs contratados e não validados
       
     </span>
   </a>
@@ -9170,10 +9170,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#35-handoffs-nao-contratados-e-nao-validados" class="md-nav__link">
+  <a href="#35-handoffs-contratados-e-nao-validados" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.5 Handoffs não contratados e não validados
+        3.5 Handoffs contratados e não validados
       
     </span>
   </a>
@@ -9378,7 +9378,8 @@ sobre qual área da vida/evolução a jornada está tratando
 <li>D5-A e D5-B materializam o eixo em superfícies existentes;</li>
 <li>D5-C1 contrata Objetivos, Próximos Passos e Evolução;</li>
 <li>D5-C2 materializa um estado-base low-fidelity para cada uma dessas três responsabilidades;</li>
-<li>D5-C3 reforma e valida funcionalmente esses três estados-base no limite local, sem promover seus handoffs.</li>
+<li>D5-C3 reforma e valida funcionalmente esses três estados-base no limite local, sem promover seus handoffs;</li>
+<li>D5-C4A governa a navegação entre Hoje e as três responsabilidades sem transformar contexto ou domínio em decisão, prioridade, progresso ou evolução.</li>
 </ul>
 <h2 id="3-direcao-movimento-e-evolucao-a-partir-de-hoje">3. Direção, movimento e evolução a partir de Hoje<a class="headerlink" href="#3-direcao-movimento-e-evolucao-a-partir-de-hoje" title="Permanent link">&para;</a></h2>
 <p>A estrutura governada é:</p>
@@ -9396,7 +9397,13 @@ sobre qual área da vida/evolução a jornada está tratando
 <li><code>PER-011</code> em <code>d5-c2-person-next-steps-mobile.svg</code>;</li>
 <li><code>PER-012</code> em <code>d5-c2-person-evolution-mobile.svg</code>.</li>
 </ul>
-<p>As três superfícies possuem <strong>validação funcional local vigente</strong> e <code>TRN-008..013</code> permanecem <strong>contratadas</strong>.</p>
+<p>A D5-C4A reforma e revalida localmente o estado recorrente de <code>PER-008</code> em <code>uxa-006-hoje-mobile.svg</code> para materializar as origens dos três handoffs sem criar novo SVG. O estado recorrente passa a exibir, no bloco existente de continuidade:</p>
+<div class="highlight"><pre><span></span><code>Meus Objetivos
+Abrir este passo
+Minha Evolução
+</code></pre></div>
+<p>A primeira variante de Hoje permanece inalterada e não é obrigada a expor esses aprofundamentos durante a orientação inicial.</p>
+<p>As superfícies possuem <strong>validação funcional local vigente</strong> e <code>TRN-008..013</code> permanecem <strong>contratadas</strong>.</p>
 <h3 id="31-per-010-meus-objetivos">3.1 PER-010 — Meus Objetivos<a class="headerlink" href="#31-per-010-meus-objetivos" title="Permanent link">&para;</a></h3>
 <p><code>PER-010</code> governa compreensão, organização e controle dos objetivos da Pessoa. Após D5-C3, o estado-base explicita estado funcional, prioridade declarada, Área da jornada, progresso qualitativo, revisão, critérios/evidências e controles de privacidade, sem percentual automático de progresso.</p>
 <div class="highlight"><pre><span></span><code>Domínio de Evolução
@@ -9439,10 +9446,21 @@ sobre qual área da vida/evolução a jornada está tratando
 superfícies especializadas
 → aprofundam e oferecem controle
 </code></pre></div>
-<p>A existência e validação local dos três SVGs não exige três cards permanentes em Hoje e não autoriza exposição sensível por padrão.</p>
-<h3 id="35-handoffs-nao-contratados-e-nao-validados">3.5 Handoffs não contratados e não validados<a class="headerlink" href="#35-handoffs-nao-contratados-e-nao-validados" title="Permanent link">&para;</a></h3>
+<p>D5-C4A não cria três cards permanentes. Os três acessos são affordances compactas e neutras. <code>Minha Evolução</code> não afirma que houve mudança; <code>Abrir este passo</code> não inicia ou conclui o passo; <code>Meus Objetivos</code> não cria ou prioriza objetivo.</p>
+<h3 id="35-handoffs-contratados-e-nao-validados">3.5 Handoffs contratados e não validados<a class="headerlink" href="#35-handoffs-contratados-e-nao-validados" title="Permanent link">&para;</a></h3>
 <p>Não existem handoffs diretos governados entre <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code>. Relação semântica entre Objetivo, Próximo Passo e Evolução não é evidência suficiente de necessidade de navegação direta.</p>
-<p><code>TRN-008..013</code> permanecem contratadas. O rótulo <code>‹ Hoje</code> não valida payload/contexto, retorno, interrupção, concorrência, idempotência ou revalidação de autorização.</p>
+<p>D5-C4A governa para <code>TRN-008..013</code>:</p>
+<ul>
+<li>identidade preservada quando houver objeto explicitamente acionado;</li>
+<li>contexto semântico mínimo;</li>
+<li>revalidação no destino;</li>
+<li>retorno sem mutação implícita;</li>
+<li>interrupção sem efeito funcional;</li>
+<li>concorrência resolvida pelo estado vigente;</li>
+<li>idempotência da navegação;</li>
+<li>proteção adicional de sensibilidade em <code>TRN-012/013</code>.</li>
+</ul>
+<p>Mesmo após esse contrato, <code>TRN-008..013</code> permanecem contratadas. A presença das affordances e de <code>‹ Hoje</code> não constitui validação ponta a ponta.</p>
 <h2 id="4-descoberta-de-oportunidades-e-saida-consciente">4. Descoberta de oportunidades e saída consciente<a class="headerlink" href="#4-descoberta-de-oportunidades-e-saida-consciente" title="Permanent link">&para;</a></h2>
 <p>A UXA-098 fecha a continuidade entre descoberta territorial e Detalhe; a UXA-101 fecha V4 até a fronteira externa:</p>
 <div class="highlight"><pre><span></span><code>PER-201 — Mapa
@@ -9557,6 +9575,7 @@ PER-203
 <li>abrir Meus Objetivos não cria, confirma ou prioriza objetivo;</li>
 <li>abrir Meus Próximos Passos não inicia, aceita ou conclui movimento;</li>
 <li>abrir Minha Evolução não presume mudança, progresso ou evolução reconhecida;</li>
+<li>contexto de navegação não amplia consentimento nem autorização;</li>
 <li>conteúdo sensível nas três superfícies especializadas exige minimização e controle;</li>
 <li>oportunidade publicada não é automaticamente recomendada;</li>
 <li>proximidade não equivale a relevância;</li>
@@ -9570,7 +9589,7 @@ PER-203
 <p>Esta vista permanece <code>draft</code> porque:</p>
 <ul>
 <li><code>TRN-001</code>, <code>TRN-003</code>, <code>TRN-004</code> e <code>TRN-005</code> ainda são parciais;</li>
-<li><code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> estão validados localmente, mas <code>TRN-008..013</code> permanecem contratadas;</li>
+<li><code>PER-008</code> recorrente e <code>PER-010..012</code> estão validados localmente, mas <code>TRN-008..013</code> permanecem contratadas;</li>
 <li>as transições comerciais internas de Planos são locais e não representam cobrança ponta a ponta;</li>
 <li><code>PER-009</code> ainda não possui materialização própria e <code>TRN-406/407</code> permanecem contratadas;</li>
 <li>estados P0B adicionais permanecem separados;</li>
@@ -9579,8 +9598,8 @@ PER-203
 </ul>
 <p><code>TRN-205</code> não é motivo de <code>draft</code>: a UXA-101 a valida integralmente até <code>BND-001</code>, sem validar o processo externo posterior.</p>
 <h2 id="9-estado-atual">9. Estado atual<a class="headerlink" href="#9-estado-atual" title="Permanent link">&para;</a></h2>
-<p>V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. D4 torna <code>JED-001..JED-009</code>, multidomínio, <code>Ainda estou descobrindo</code> e <code>other_unmapped</code> explícitos nesta vista. D5-A/B materializam o eixo em superfícies existentes; D5-C1 contrata <code>PER-010..012</code> e <code>TRN-008..013</code>; D5-C2 materializa as três superfícies em low-fidelity; D5-C3 reforma e valida localmente os três SVGs, mantendo os seis handoffs como gate posterior separado.</p>
-<p>V5/UXA-102, D6, D7 e Engenharia de Produto não foram iniciados automaticamente.</p>
+<p>V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. D4 torna <code>JED-001..JED-009</code>, multidomínio, <code>Ainda estou descobrindo</code> e <code>other_unmapped</code> explícitos nesta vista. D5-A/B materializam o eixo em superfícies existentes; D5-C1 contrata <code>PER-010..012</code> e <code>TRN-008..013</code>; D5-C2 materializa as três superfícies em low-fidelity; D5-C3 reforma e valida localmente os três SVGs; D5-C4A reforma/revalida Hoje recorrente e governa o contrato dos seis handoffs, mantendo-os contratados.</p>
+<p>D5-C4B, V5/UXA-102, D6, D7 e Engenharia de Produto não foram iniciados automaticamente.</p>
 
 
 
