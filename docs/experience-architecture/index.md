@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.99.0
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -39,6 +39,7 @@ related:
   - GKR-UX-D5-A-001
   - GKR-UX-D5-B-001
   - GKR-UX-D5-C1-001
+  - GKR-UX-D5-C2-001
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -75,30 +76,30 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs canônicos | **118** |
-| associações individuais | **118** |
-| perfis de rastreabilidade | **31** |
+| SVGs canônicos | **121** |
+| associações individuais | **121** |
+| perfis de rastreabilidade | **34** |
 | com validação funcional vigente | **118** |
-| pendentes de validação específica de SVG existente | **0** |
+| pendentes de validação específica | **3** |
 | superfícies/estados/fronteiras | **57** |
 | transições documentais | **66** |
-| IDs com referência visual | **42 de 57** |
-| responsabilidades sem SVG dedicado | **13** |
+| IDs com referência visual | **45 de 57** |
+| responsabilidades sem SVG dedicado | **10** |
 | fronteiras sem tela | **2** |
 
-A UXA-100-A4 adiciona `PER-009` como responsabilidade sem SVG e seis handoffs de navegação de Planos, mantendo os 118 ativos visuais.
+A UXA-100-A4 adiciona `PER-009` como responsabilidade sem SVG e seis handoffs de navegação de Planos.
 
-A D5-A reforma quatro SVGs já associados a `PER-004`, `PER-007` e `PER-008` para materializar Domínios de Evolução sem criar novo ativo visual, superfície ou transição.
+A D5-A reforma quatro SVGs de `PER-004`, `PER-007` e `PER-008` para materializar Domínios de Evolução sem criar novo ID.
 
-A D5-B materializa o mesmo eixo em `ORG-002`, `PER-201`, `PER-202` e `PER-203`, reutilizando o cadastro institucional e reformulando Mapa, Lista e Detalhe in-place, também sem criar nova superfície ou transição.
+A D5-B materializa o mesmo eixo em `ORG-002`, `PER-201`, `PER-202` e `PER-203`, também in-place.
 
-A D5-C1 possui natureza diferente: adiciona **três responsabilidades sem SVG** (`PER-010..012`) e **seis handoffs contratados** (`TRN-008..013`). Por isso, as contagens granulares passam a 57/66, mas a baseline visual permanece 118 SVGs, 118 associações e 31 perfis.
+A D5-C1 adiciona três responsabilidades (`PER-010..012`) e seis handoffs (`TRN-008..013`) no estado contratado. A D5-C2 adiciona **três SVGs low-fidelity e três perfis**, sem criar novo ID ou transição. Por isso, a baseline visual passa de 118 para **121**, mas somente os 118 ativos anteriores possuem validação funcional vigente.
 
 ## 4. Decisões estruturais preservadas
 
-- materialização não equivale a validação funcional por padrão;
-- responsabilidade contratada sem SVG não equivale a superfície materializada;
-- transição contratada sem materialização suficiente não equivale a continuidade validada;
+- materialização não equivale a validação funcional;
+- perfil de rastreabilidade não equivale a aprovação da superfície;
+- transição contratada não equivale a continuidade validada;
 - uma versão visual reformulada exige validação correspondente;
 - publicação ou ativação não equivale a distribuição garantida;
 - plano pago não altera relevância, confiança, legitimidade, impacto ou evolução;
@@ -110,22 +111,17 @@ A D5-C1 possui natureza diferente: adiciona **três responsabilidades sem SVG** 
 - Guivos Business utiliza `Start · Growth · Scale · Enterprise` como Produto Especializado separado;
 - Organização ≠ Guivos Business;
 - Organização Transforma ≠ Guivos Business Enterprise;
-- `BND-002` representa contratação/dimensionamento assistido quando o autoatendimento não for suficiente e não pertence semanticamente a plano específico;
-- estado intermediário não cria superfície própria quando preserva responsabilidade, autoridade e decisão principal;
+- `BND-002` representa contratação/dimensionamento assistido e não plano específico;
 - fronteira externa não é tela da Guivos;
 - validação até uma fronteira não valida comportamento de terceiro;
-- estado canônico vigente prevalece sobre estado visual obsoleto;
-- validação documental não equivale a implementação técnica;
-- Domínio de Evolução organiza sobre o que a jornada trata e não representa diagnóstico, identidade, score, objetivo, Próximo Passo ou prova de evolução;
-- domínio candidato deve permanecer visualmente distinto de domínio confirmado;
-- ausência de domínio confirmado é estado legítimo e não bloqueia a jornada;
-- um participante ou item pode se relacionar a mais de um domínio quando houver autoridade e finalidade adequadas;
+- Domínio de Evolução organiza sobre o que a jornada trata e não representa diagnóstico, identidade, score, Objetivo, Próximo Passo ou prova de evolução;
+- domínio candidato permanece distinto de domínio confirmado;
+- ausência de domínio confirmado é estado legítimo;
+- multidomínio é legítimo quando houver autoridade e finalidade adequadas;
 - domínio da oportunidade ≠ domínio confirmado da Pessoa ≠ relevância contextual ≠ recomendação;
-- Área da jornada, quando usada como filtro de Oportunidades, depende de ação explícita da Pessoa e não pode ser ativada silenciosamente por inferência;
-- uma Organização pode declarar a área da oportunidade, mas não classificar a Pessoa nessa área;
-- mesmo domínio entre oportunidade e jornada não cria match, recomendação, compartilhamento ou autorização automáticos;
 - `PER-008 — Hoje` sintetiza e encaminha, mas não substitui Objetivos, Próximos Passos ou Evolução Contínua;
-- Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança.
+- Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança;
+- `Minha Evolução` ≠ roda da vida obrigatória ≠ ranking ≠ diagnóstico ≠ percentual global da Pessoa.
 
 ## 5. Evolução recente
 
@@ -140,110 +136,92 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-A — Domínios em Expressão Guiada, Compreensão Inicial e Hoje
 → D5-B — Domínios na camada de Oportunidades
 → D5-C1 — contrato das superfícies de direção, movimento e evolução
+→ D5-C2 — low-fidelity de Meus Objetivos, Meus Próximos Passos e Minha Evolução
 ```
 
-D4 e D5 são frentes não numeradas e não alteram a última frente funcional numerada: UXA-101 continua vigente e UXA-102/V5 permanece não iniciada.
+D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada.
 
-### 5.1 Resultado da D5-A
+### 5.1 D5-A
 
-[GKR-UX-D5-A-001 — Materialização Controlada dos Domínios de Evolução na Jornada Inicial](d5-a-evolution-domains-guided-expression-initial-understanding-today.md) consolida:
+[GKR-UX-D5-A-001](d5-a-evolution-domains-guided-expression-initial-understanding-today.md) consolida Área da jornada candidata/revisável em Expressão Guiada e Compreensão Inicial e contexto discreto em Hoje, sem nova superfície ou transição.
 
-1. área da jornada candidata e revisável na síntese estruturada de `PER-004`;
-2. reconciliação de `situação · impacto · prioridade · direção · contexto` como eixos de organização do relato, distintos dos Domínios de Evolução e das dimensões estruturais do Contexto Vivo;
-3. apresentação separada da área candidata em `PER-007`;
-4. gate próprio, sem pré-seleção, para confirmar, adicionar outra área, rejeitar ou manter em aberto;
-5. preservação de `Ainda estou descobrindo` como estado e `Outra área` como mecanismo de extensibilidade;
-6. domínio confirmado exibido somente como contexto discreto da continuidade em `PER-008`;
-7. ausência de domínio confirmada como estado legítimo da experiência;
-8. nenhuma nova superfície, transição ou família visual;
-9. baseline visual de 118 SVGs preservada;
-10. D5-B, D5-C, UXA-102/V5 e Engenharia de Produto mantidos fora do escopo daquela frente.
+### 5.2 D5-B
 
-### 5.2 Resultado da D5-B
+[GKR-UX-D5-B-001](d5-b-evolution-domains-opportunities-layer.md) consolida `0..n` Áreas relacionadas no cadastro institucional, filtro explícito em Mapa/Lista e separação entre área da oportunidade e relevância pessoal no Detalhe.
 
-[GKR-UX-D5-B-001 — Materialização Controlada dos Domínios de Evolução na Camada de Oportunidades](d5-b-evolution-domains-opportunities-layer.md) consolida:
+### 5.3 D5-C1
 
-1. `0..n` Áreas relacionadas dentro da etapa existente `Jornada e contribuição` de `ORG-002`, sem criar 12ª etapa;
-2. área declarada como metadado da oportunidade, nunca como classificação da Pessoa;
-3. Área da jornada disponível como filtro explícito em `PER-201` e `PER-202`;
-4. proibição de ativação silenciosa do filtro a partir de inferência ou perfil pessoal;
-5. Mapa e Lista preservando a mesma consulta e a mesma semântica de área;
-6. `PER-203` separando área/proveniência da oportunidade da explicação de relevância contextual;
-7. domínio isolado declarado insuficiente para produzir recomendação;
-8. proteção reforçada contra reconstrução de saúde, espiritualidade/religião, finanças ou outros contextos sensíveis por navegação;
-9. nenhuma nova superfície, transição ou família visual;
-10. D5-C, D6, D7, UXA-102/V5 e Engenharia de Produto mantidos fora do escopo daquela frente.
+[GKR-UX-D5-C1-001](d5-c1-direction-movement-evolution-surface-contract.md) consolida:
 
-### 5.3 Resultado da D5-C1
+1. reconciliação terminológica de Objetivos, Próximos Passos e Evolução;
+2. `PER-010 — Meus Objetivos`;
+3. `PER-011 — Meus Próximos Passos`;
+4. `PER-012 — Minha Evolução`;
+5. `TRN-008..013` como handoffs mínimos com Hoje;
+6. nenhuma navegação direta inventada entre as três superfícies;
+7. responsabilidades e transições apenas contratadas.
 
-[GKR-UX-D5-C1-001 — Contrato de Materialização das Superfícies de Direção, Movimento e Evolução](d5-c1-direction-movement-evolution-surface-contract.md) consolida:
+### 5.4 D5-C2
 
-1. reconciliação de `área ou dimensão contextual` em Objetivos, separando Área da jornada de dimensão estrutural do Contexto Vivo;
-2. reconciliação de `área da vida` em Próximos Passos como expressão pública/legada compatível com Área da jornada/domain_link;
-3. reconciliação de `dimensão` em Evolução Contínua em três conceitos distintos: Domínio de Evolução, dimensão estrutural do Contexto Vivo e aspecto descritivo da mudança;
-4. `PER-010 — Meus Objetivos`;
-5. `PER-011 — Meus Próximos Passos`;
-6. `PER-012 — Minha Evolução`;
-7. `TRN-008..013` como seis handoffs bidirecionais mínimos com `PER-008 — Hoje`;
-8. todas as novas responsabilidades e transições no estado `contratado`;
-9. nenhum handoff direto entre `PER-010`, `PER-011` e `PER-012` inventado nesta etapa;
-10. nenhuma criação de SVG, perfil visual, implementação ou validação ponta a ponta;
-11. baseline visual preservada em 118 SVGs / 118 associações / 31 perfis;
-12. inventário granular atualizado para 57 superfícies/estados/fronteiras e 66 transições.
+[GKR-UX-D5-C2-001](d5-c2-direction-movement-evolution-low-fidelity-wireframes.md) materializa um estado-base móvel para cada responsabilidade:
 
-## 6. Resultado da UXA-100-A4
+- `d5-c2-person-objectives-mobile.svg` — direção e controle de Objetivos, sem score de produtividade;
+- `d5-c2-person-next-steps-mobile.svg` — movimentos contextuais revisáveis, sem streak ou urgência artificial;
+- `d5-c2-person-evolution-mobile.svg` — trajetória, evidência, contexto e incerteza, sem score, ranking ou roda da vida.
 
-[UXA-100-A4 — Origens Administrativas e Handoffs de Entrada em Planos](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md) continua governando:
+A D5-C2:
 
-1. `PER-009 — Conta e configurações da Pessoa`, sem SVG dedicado;
-2. `TRN-406/407` contratadas entre `PER-009` e `PER-301`;
-3. `TRN-417/418` integralmente validadas entre `COL-002` e `COL-301`;
-4. `TRN-427/428` integralmente validadas entre `ORG-001` e `ORG-301`;
-5. navegação de `COL-002` reformulada in-place para explicitar Planos;
-6. `ORG-001` reformulada in-place, removendo o rótulo obsoleto `Guivos Business` e explicitando Planos;
-7. retorno explícito às origens em `COL-301` e `ORG-301`;
-8. nenhuma alteração de maturidade em `TRN-401..405`, `TRN-411..416` ou `TRN-421..426`;
-9. nenhuma implementação de cobrança, entitlement, `BND-002`, V5 ou Engenharia de Produto.
+- cria **3 SVGs** e **3 perfis** (`R32..R34`);
+- eleva o inventário visual para **121 SVGs / 121 associações / 34 perfis**;
+- mantém **118 validados + 3 pendentes**;
+- mantém **57 superfícies e 66 transições**;
+- eleva IDs com referência visual para **45/57**;
+- reduz responsabilidades sem SVG de 13 para **10**;
+- preserva `TRN-008..013` como contratadas;
+- não cria API, banco, evento, grafo, protótipo ou implementação.
+
+## 6. Resultado da UXA-100-A4 preservado
+
+[UXA-100-A4](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md) continua governando `PER-009`, `TRN-406/407`, `TRN-417/418` e `TRN-427/428`. `PER-009` permanece sem SVG; cobrança real, entitlement e processo posterior a `BND-002` continuam fora do escopo.
 
 ## 7. Resultado da UXA-101 preservado
 
-[UXA-101 — Validação da Saída Consciente para Fronteira Externa](uxa-101-conscious-external-boundary-validation.md) continua encerrando V4 no limite controlável pela Guivos.
-
-A frente consolida revisão pré-saída em `PER-203`, identificação do destino externo, minimização de dados/contexto, confirmação afirmativa, revalidação, bloqueio de redirecionamento inválido, retorno seguro e `TRN-205` validada até `BND-001`.
+[UXA-101](uxa-101-conscious-external-boundary-validation.md) continua encerrando V4 no limite controlável pela Guivos: revisão pré-saída em `PER-203`, destino externo, minimização de dados/contexto, confirmação afirmativa, revalidação, retorno seguro e `TRN-205` validada até `BND-001`.
 
 ## 8. Instrumentos vigentes
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active` 0.35.0 |
-| Jornada da Pessoa | `draft` 0.18.0 |
+| Jornadas Integradas | `active` 0.36.0 |
+| Jornada da Pessoa | `draft` 0.19.0 |
 | Jornada do Coletivo | `draft` 0.18.0 |
 | Jornada da Organização | `draft` 0.11.0 |
-| catálogo integrado | `active` 0.29.0 |
-| galeria visual | `active`; 118 SVGs |
+| catálogo integrado | `active` 0.30.0; 121 SVGs |
+| galeria visual | `active` 0.23.0; 121 SVGs |
+| galeria da Pessoa | `active` 0.5.0; 23 SVGs |
 | galeria de Planos | `active` 0.5.0 |
-| matriz por SVG | `active` 0.20.0; 118 associações / 31 perfis |
-| lacunas | `active` 0.29.0 |
-| registro de superfícies | `active` 0.20.0; 57 IDs |
-| registro de transições | `active` 0.21.0; 66 transições |
-| detalhamento da Pessoa | `active` 0.13.0 |
-| detalhamento comercial/fronteira | `active` |
-| D5-A — Domínios na jornada inicial | `active` 1.0.0 |
-| D5-B — Domínios na camada de Oportunidades | `active` 1.0.0 |
-| D5-C1 — contrato direção/movimento/evolução | `active` 1.0.0 |
+| matriz por SVG | `active` 0.21.0; 121 associações / 34 perfis |
+| lacunas | `active` 0.30.0 |
+| registro de superfícies | `active` 0.21.0; 57 IDs |
+| registro de transições | `active` 0.22.0; 66 transições |
+| detalhamento da Pessoa | `active` 0.14.0 |
+| D5-A | `active` 1.0.0 |
+| D5-B | `active` 1.0.0 |
+| D5-C1 | `active` 1.0.0 |
+| D5-C2 | `active` 1.0.0 |
 
 ## 9. Ressalvas vigentes
 
-- 13 responsabilidades permanecem sem SVG dedicado, incluindo `PER-009..012`;
-- `TRN-008..013` permanecem contratadas até materialização suficiente de `PER-010..012`;
-- `TRN-406/407` permanecem contratadas até materialização suficiente de Conta;
+- 3 SVGs D5-C2 permanecem pendentes de validação funcional;
+- 10 responsabilidades permanecem sem SVG dedicado, incluindo `PER-009`;
+- `TRN-008..013` permanecem contratadas até validação ponta a ponta;
+- `TRN-406/407` permanecem contratadas;
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` permanecem parciais;
 - `TRN-304`, `TRN-305` e `TRN-306` permanecem parciais na integração patrocinada;
 - `TRN-416/426` permanecem parciais;
-- gateway, cobrança real, proration e processo de contratação/dimensionamento assistido após `BND-002` permanecem fora do escopo;
+- gateway, cobrança real, proration e processo após `BND-002` permanecem fora do escopo;
 - processo externo após `BND-001` permanece sob autoridade de terceiro;
 - Jornadas da Pessoa, Coletivo e Organização continuam `draft`;
-- materializações visuais de `PER-010`, `PER-011` e `PER-012` permanecem não iniciadas e exigem autorização separada;
 - D6 e D7 permanecem não iniciadas;
 - V5/UXA-102 permanece não iniciada.
 
@@ -258,12 +236,13 @@ V1 — encerrada pela UXA-097
 → Planos — origem voluntária reconciliada pela UXA-100-A4
 → D5-A — Domínios na jornada inicial materializados in-place
 → D5-B — Domínios na camada de Oportunidades materializados sem nova superfície
-→ D5-C1 — responsabilidades e handoffs mínimos contratados sem SVG
+→ D5-C1 — responsabilidades e handoffs mínimos contratados
+→ D5-C2 — três superfícies materializadas em low-fidelity
 → V5 — pendente e não iniciada
 ```
 
-D5-A, D5-B e D5-C1 não consomem nem antecipam V5.
+D5-A/B/C1/C2 não consomem nem antecipam V5.
 
 ## 11. Próxima evolução possível
 
-A materialização visual de `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` ou `PER-012 — Minha Evolução` exige autorização separada por responsabilidade. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, contratação/dimensionamento assistido após `BND-002` e demais validações também permanecem separadas. Nenhuma delas é iniciada automaticamente por D5-C1.
+Após integração governada da D5-C2, a validação/reformulação funcional de `PER-010`, `PER-011` e `PER-012` e o exame ponta a ponta de `TRN-008..013` podem constituir frente separada posterior. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real e demais validações permanecem independentes. Nenhuma é iniciada automaticamente.
