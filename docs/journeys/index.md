@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.37.0
+version: 0.38.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -14,6 +14,7 @@ related:
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
   - GKR-UX-D5-C3-001
+  - GKR-UX-D5-C4A-001
   - UXA-070
   - UXA-080
   - UXA-085
@@ -72,6 +73,7 @@ UXA-097 — compreensão inicial → primeira Tela Hoje
 → D5-C1 — responsabilidades e handoffs de Objetivos, Próximos Passos e Evolução contratados
 → D5-C2 — três responsabilidades materializadas em low-fidelity
 → D5-C3 — três estados-base reformulados e validados localmente
+→ D5-C4A — origens visuais em Hoje + contrato integrado dos handoffs, sem promoção
 ```
 
 D4 e D5 são frentes não numeradas no programa UXA. Nenhuma delas altera a última frente funcional numerada: UXA-101 continua vigente, e UXA-102/V5 permanece não iniciada.
@@ -82,24 +84,25 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.37.0 | D4 + D5-C3 |
+| visão geral das Jornadas Integradas | `active` 0.38.0 | D4 + D5-C4A |
 | propagação dos Domínios de Evolução | `active` 1.0.0 | GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001 |
 | D5-A — jornada inicial | `active` 1.0.0 | materialização in-place |
 | D5-B — Oportunidades | `active` 1.0.0 | materialização in-place |
 | D5-C1 — contrato direção/movimento/evolução | `active` 1.0.0 | três responsabilidades + seis handoffs contratados |
 | D5-C2 — low-fidelity direção/movimento/evolução | `active` 1.0.0 | 3 SVGs materializados |
 | D5-C3 — validação local | `active` 1.0.0 | 3 SVGs reformulados/validados; handoffs preservados |
+| D5-C4A — contrato/materialização dos handoffs | `active` 1.0.0 | Hoje recorrente reformulado/revalidado; seis TRNs ainda contratadas |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita preservada |
-| Jornada da Pessoa | `draft` 0.20.0 | D4; D5-C1/C2/C3; origem de Planos A4; V4 UXA-101 |
+| Jornada da Pessoa | `draft` | D4; D5-C1/C2/C3/C4A; origem de Planos A4; V4 UXA-101 |
 | Jornada do Coletivo | `draft` 0.18.0 | D4; origem de Planos A4 |
 | Jornada da Organização | `draft` 0.11.0 | D4; origem de Planos A4 |
-| catálogo integrado | `active` 0.31.0 | 121 SVGs; 121 validados / 0 pendentes |
-| registro de superfícies | `active` 0.22.0 | 57 IDs |
-| registro de transições | `active` 0.22.0 | 66 transições |
-| galeria visual integrada | `active` 0.24.0 | 121 SVGs / 121 validados |
+| catálogo integrado | `active` | 121 SVGs; 121 validados / 0 pendentes |
+| registro de superfícies | `active` | 57 IDs |
+| registro de transições | `active` | 66 transições |
+| galeria visual integrada | `active` | 121 SVGs / 121 validados |
 | galeria de Planos | `active` | 9 SVGs canônicos |
-| matriz por SVG | `active` 0.22.0 | 121 associações / 34 perfis |
-| registro de lacunas | `active` 0.31.0 | handoffs D5-C/V5 e demais continuidades separadas |
+| matriz por SVG | `active` | 121 associações / 34 perfis |
+| registro de lacunas | `active` | D5-C4B/V5 e demais continuidades separadas |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -131,7 +134,7 @@ Regras transversais:
 
 A interpretação detalhada por participante está em [Propagação dos Domínios de Evolução nas Jornadas — D4](evolution-domains-d4.md).
 
-## 6. D5-C1/C2/C3 — direção, movimento e evolução na Jornada da Pessoa
+## 6. D5-C1/C2/C3/C4A — direção, movimento e evolução na Jornada da Pessoa
 
 A D5-C1 contratou as três responsabilidades especializadas e seus handoffs mínimos:
 
@@ -154,8 +157,31 @@ A D5-C3 reformula e valida funcionalmente esses três estados-base:
 - `PER-011`: `PRONTO` versus `PROPOSTO`, prontidão/dependência, origem e ações coerentes explicitados;
 - `PER-012`: período, baseline, direção, inferência, confiança, incerteza e contestação explicitados.
 
+A D5-C4A reforma e revalida localmente o estado recorrente de Hoje sem criar novo SVG. Dentro do bloco existente `Continuando sua jornada`, passam a existir três affordances compactas:
+
+```text
+Meus Objetivos
+Abrir este passo
+Minha Evolução
+```
+
+O contrato integrado define:
+
+- origem consciente e autenticada;
+- contexto semântico mínimo;
+- referência lógica somente quando explicitamente acionada e necessária;
+- revalidação de estado, autorização e atualidade no destino;
+- retorno sem mutação implícita;
+- interrupção sem efeito funcional;
+- concorrência resolvida pelo estado vigente;
+- idempotência da navegação;
+- proteção adicional para `TRN-012/013`, sem transportar área, domínio, interpretação ou evidência sensível por padrão.
+
+A primeira variante de Hoje permanece sem esses aprofundamentos para preservar sua função de orientação inicial sem sobrecarga.
+
 Estado preservado:
 
+- `PER-008` recorrente: **reformulado e revalidado localmente**;
 - `PER-010..012`: **validados localmente**;
 - `TRN-008..013`: `contratada`, sem validação ponta a ponta;
 - nenhum handoff direto entre `PER-010`, `PER-011` e `PER-012` foi criado;
@@ -236,6 +262,8 @@ A nomenclatura vigente é:
 - aspecto descritivo da mudança não equivale a Domínio de Evolução;
 - mesmo domínio entre participantes não equivale a match automático;
 - `PER-010..012` validados localmente não equivalem a continuidade integrada ou implementação;
+- `PER-008` recorrente reformulado/revalidado não equivale a promoção de `TRN-008..013`;
+- contexto de navegação não amplia consentimento, prioridade, progresso ou autoridade;
 - `TRN-008..013` contratadas não equivalem a continuidade validada;
 - Planos canonicamente registrado não equivale a checkout implementado;
 - navegar para Planos não equivale a contratar;
@@ -250,6 +278,6 @@ A nomenclatura vigente é:
 
 ## 11. Estado da frente
 
-V1, V2, V3 e V4 estão encerradas nos limites declarados. D4 propaga `JED-001..JED-009`; D5-A e D5-B materializam o eixo em superfícies existentes; D5-C1 contrata `PER-010..012` e `TRN-008..013`; D5-C2 materializa as três superfícies em low-fidelity; D5-C3 reforma e valida localmente os três SVGs, mantendo os handoffs como gate posterior separado.
+V1, V2, V3 e V4 estão encerradas nos limites declarados. D4 propaga `JED-001..JED-009`; D5-A e D5-B materializam o eixo em superfícies existentes; D5-C1 contrata `PER-010..012` e `TRN-008..013`; D5-C2 materializa as três superfícies em low-fidelity; D5-C3 reforma e valida localmente os três SVGs; D5-C4A materializa as origens em Hoje e governa o contrato integrado, mantendo os seis handoffs contratados.
 
-A validação ponta a ponta de `TRN-008..013` permanece frente posterior separada. V5/UXA-102, D6, D7 e Engenharia de Produto permanecem fora desta frente.
+A **D5-C4B — validação ponta a ponta de `TRN-008..013`** permanece frente posterior separada. V5/UXA-102, D6, D7 e Engenharia de Produto permanecem fora desta frente.
