@@ -8,29 +8,33 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **2.31.0** |
+| GKR-STATE-001 | **2.32.0** |
 | Era | GE-2 — Knowledge |
 | marco funcional | **M7.88** |
-| última UXA | **UXA-101** |
+| última UXA funcional numerada | **UXA-101** |
+| frente não numerada mais recente | **D5-C1 — Objetivos, Próximos Passos e Evolução contratados sem SVG** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
 | SVGs | **118** |
 | associações | **118** |
 | perfis | **31** |
-| superfícies/estados/fronteiras | **54** |
-| transições | **60** |
+| superfícies/estados/fronteiras | **57** |
+| transições | **66** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | programa P0–P9 | consolidado documentalmente após integração de P9 |
 
-O Journey possui agora um baseline canônico de **9 Domínios de Evolução**, derivado e refinado a partir das áreas usadas na pesquisa B2C. A formalização é semântica e documental: não inicia UXA-102, não retoma Engenharia de Produto e não declara classificação por IA ou ontologia física implementadas.
+O Journey possui baseline canônico de **9 Domínios de Evolução**. D5-A e D5-B já materializam esse eixo em superfícies existentes; a D5-C1 registra `PER-010..012` e `TRN-008..013` apenas como responsabilidades e handoffs contratados, sem criar novos SVGs ou implementação.
 
 ## Public Canon
 
 O documento institucional público vigente é o [GOG-001 — Guia Oficial da Guivos 5.0.0](docs/public/guia-oficial-da-guivos.md).
 
-A edição 5.0.0 foi reconciliada com as autoridades atuais de participantes, planos, sete Produtos Especializados, grafo/Neo4j, incentivos, arquitetura institucional, privacidade e internacionalização.
+A edição 5.0.0 foi reconciliada com as autoridades de participantes, planos, sete Produtos Especializados, grafo/Neo4j, incentivos, arquitetura institucional, privacidade e internacionalização. A D5-C1 não declara disponibilidade pública de novas telas.
 
 ## Autoridades recentes
 
+- [D5-C1 — Contrato das Superfícies de Direção, Movimento e Evolução](docs/experience-architecture/d5-c1-direction-movement-evolution-surface-contract.md)
+- [D5-B — Domínios de Evolução na Camada de Oportunidades](docs/experience-architecture/d5-b-evolution-domains-opportunities-layer.md)
+- [D5-A — Domínios de Evolução na Jornada Inicial](docs/experience-architecture/d5-a-evolution-domains-guided-expression-initial-understanding-today.md)
 - [PAS-001-DOMAIN-MODEL-001 — Modelo Canônico dos Domínios de Evolução do Guivos Journey](docs/product-architecture/pas-001-evolution-domains-model.md)
 - [Guivos Journey — arquitetura pública e áreas de evolução](docs/product-architecture/journey.md)
 - [Consolidação Global e Public Canon — P9](docs/project/p9-global-consolidation-and-public-canon-2026-08-08.md)
@@ -56,7 +60,10 @@ Neo4j = tecnologia de referência ≠ produção
 Fundação Guivos = conceito ≠ entidade constituída
 Portugal = T1_candidate ≠ mercado ativo
 aceite contratual ≠ consentimento LGPD ≠ preferência
+PER-010..012 contratados ≠ telas materializadas
+TRN-008..013 contratadas ≠ continuidade validada
 Domínio de Evolução ≠ identidade ≠ score ≠ diagnóstico ≠ prova de evolução
+Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança
 ```
 
 ## Planos
@@ -69,6 +76,19 @@ Domínio de Evolução ≠ identidade ≠ score ≠ diagnóstico ≠ prova de ev
 Plano não representa mérito, prestígio ou nível de evolução.
 
 A origem voluntária de Planos está formalizada por `PER-009 ↔ PER-301`, `COL-002 ↔ COL-301` e `ORG-001 ↔ ORG-301`. A origem da Pessoa ainda não possui SVG dedicado; navegar para Planos não equivale a contratar ou iniciar cobrança.
+
+## Jornada pessoal especializada após D5-C1
+
+A Experience Architecture reconhece agora:
+
+```text
+PER-008 — Hoje
+├── TRN-008 → PER-010 — Meus Objetivos → TRN-009 → PER-008
+├── TRN-010 → PER-011 — Meus Próximos Passos → TRN-011 → PER-008
+└── TRN-012 → PER-012 — Minha Evolução → TRN-013 → PER-008
+```
+
+As três novas responsabilidades permanecem sem SVG e as seis transições permanecem `contratadas`. Hoje sintetiza; as superfícies especializadas aprofundarão e darão controle somente quando houver materialização autorizada.
 
 ## Domínios de Evolução do Guivos Journey
 
@@ -94,6 +114,7 @@ Não estão autorizados ou comprovados apenas pela consolidação documental:
 
 - UXA-102/V5;
 - retomada da Engenharia de Produto;
+- materialização visual automática de `PER-010`, `PER-011` ou `PER-012`;
 - implementação/produção Neo4j, GraphRAG ou GDS;
 - classificação operacional por IA dos Domínios de Evolução;
 - ontologia física de grafo para os Domínios de Evolução;

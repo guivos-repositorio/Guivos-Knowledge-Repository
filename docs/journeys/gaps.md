@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.28.0
+version: 0.29.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-09
 related:
   - UXA-055
   - UXA-059
@@ -23,6 +23,7 @@ related:
   - UXA-100-A3
   - UXA-100-A4
   - UXA-101
+  - GKR-UX-D5-C1-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -34,7 +35,7 @@ normative: false
 
 ## 1. Natureza do registro
 
-Este documento é observacional e não promocional. A UXA-100-A4 fecha somente a **identidade da origem voluntária de Planos**. Cobrança real, execução de entitlement, processo posterior a `BND-002`, materialização de `PER-009` e UXA-102/V5 permanecem separados.
+Este documento é observacional e não promocional. A D5-C1 fecha somente a **identidade arquitetural e os handoffs mínimos** de `Meus Objetivos`, `Meus Próximos Passos` e `Minha Evolução`. Materialização visual, validação ponta a ponta, V5/UXA-102, cobrança real e demais frentes continuam separadas.
 
 ## 2. Gates pessoais
 
@@ -46,6 +47,11 @@ Este documento é observacional e não promocional. A UXA-100-A4 fecha somente a
 | expressão → inventário | PER-004; TRN-004; PER-005 | materializados | parcial | integração com inventário |
 | inventário → processamento | PER-005; TRN-005; PER-006 | materializados | parcial | continuidade entre materializações |
 | Conta/Configurações da Pessoa | PER-009; TRN-406/407 | sem SVG dedicado | identidade contratada pela UXA-100-A4 | materialização própria somente se necessária para validar ponta a ponta |
+| Hoje ↔ Meus Objetivos | PER-008; TRN-008/009; PER-010 | PER-010 sem SVG | responsabilidade e handoffs contratados pela D5-C1 | materialização e validação ponta a ponta em frente própria |
+| Hoje ↔ Meus Próximos Passos | PER-008; TRN-010/011; PER-011 | PER-011 sem SVG | responsabilidade e handoffs contratados pela D5-C1 | materialização e validação ponta a ponta em frente própria |
+| Hoje ↔ Minha Evolução | PER-008; TRN-012/013; PER-012 | PER-012 sem SVG | responsabilidade e handoffs contratados pela D5-C1 | materialização e validação ponta a ponta em frente própria |
+
+`PER-010..012` não são estados internos de Hoje. A D5-C1 reconhece responsabilidades próprias, mas não cria SVG nem valida navegação. Também não existem, nesta frente, handoffs diretos `PER-010 ↔ PER-011`, `PER-011 ↔ PER-012` ou `PER-010 ↔ PER-012`.
 
 ## 3. Gates de oportunidade e descoberta
 
@@ -93,8 +99,13 @@ A origem voluntária não é mais um gap de identidade para as três jornadas. P
 
 ## 7. Fila de materialização por dependência
 
-| Prioridade | Lacuna | IDs relacionados | Estado visual | Gate |
+A fila abaixo não autoriza execução automática. Ela apenas registra dependências e separa lacunas já identificadas.
+
+| Prioridade documental | Lacuna | IDs relacionados | Estado visual | Gate |
 |---:|---|---|---|---|
+| D5-C visual | Meus Objetivos | PER-010; TRN-008/009 | sem SVG | programa visual próprio + materialização + validação |
+| D5-C visual | Meus Próximos Passos | PER-011; TRN-010/011 | sem SVG | programa visual próprio + materialização + validação |
+| D5-C visual | Minha Evolução | PER-012; TRN-012/013 | sem SVG | programa visual próprio + materialização + validação; preservar separação domínio/dimensão/aspecto |
 | 1 | estados P0B adicionais de Meus Coletivos | PER-106 | P0A validado | ativo próprio somente quando decisão/proteção justificar |
 | 2 | estados P0B da Central | PER-107 | P0A validado | vazio, excesso de volume e baixa conectividade em frente própria |
 | 3 | estados alternativos do Início do Participante | PER-108 | P0A validado | materializar somente mudança material de decisão/proteção |
@@ -103,6 +114,8 @@ A origem voluntária não é mais um gap de identidade para as três jornadas. P
 | 6 | matriz institucional completa | ORG-001; ORG-007 | cobertura parcial | programa específico e validação |
 | 7 | Conta/Configurações da Pessoa | PER-009; TRN-406/407 | sem SVG dedicado | materializar somente se arquitetura de Conta exigir superfície própria; validar handoffs depois |
 | 8 | contratação/dimensionamento assistido | BND-002; TRN-416/426 | fronteira registrada | contrato comercial/operacional suficiente |
+
+A presença das três linhas `D5-C visual` antes da fila numerada não redefine a prioridade das lacunas históricas. Elas representam continuidades diretamente dependentes do contrato D5-C1 e exigem autorização própria por responsabilidade.
 
 ## 8. Fila de validação
 
@@ -114,22 +127,25 @@ A origem voluntária não é mais um gap de identidade para as três jornadas. P
 | Planos — identidade canônica encerrada | fragmentação e promoção canônica | 12 superfícies da frente + 17 transições internas | UXA-100-A3 |
 | Planos — origem voluntária encerrada | Conta/Administração → Planos → retorno | PER-009 + 6 handoffs; 4 integrais e 2 contratados | UXA-100-A4 |
 | V4 — encerrado | Detalhe → fronteira externa | TRN-205 integral até BND-001 | UXA-101 |
+| D5-C1 — contrato arquitetural | Hoje ↔ Objetivos/Próximos Passos/Evolução | PER-010..012 + TRN-008..013 contratados | materializações visuais separadas; não equivalem a V5 |
 | V5 | erros, retornos e interrupções | cobertura dispersa | validação por jornada; **não iniciada** |
 
-## 9. Efeito da UXA-100-A4
+## 9. Efeito acumulado vigente
+
+A baseline corrente após D5-C1 passa a ser:
 
 - SVGs canônicos permanecem **118**;
 - associações permanecem **118**;
 - perfis permanecem **31**;
-- superfícies/estados/fronteiras passam a **54**;
-- transições passam a **60**;
-- IDs com referência visual permanecem **42**, agora de 54;
-- responsabilidades sem SVG dedicado passam a **10**;
+- superfícies/estados/fronteiras passam a **57**;
+- transições passam a **66**;
+- IDs com referência visual permanecem **42**, agora de 57;
+- responsabilidades sem SVG dedicado passam a **13**;
 - fronteiras sem tela permanecem **2**;
-- `PER-009` é a única nova responsabilidade canônica;
-- `TRN-406/407` são contratadas;
-- `TRN-417/418` e `TRN-427/428` são integralmente validadas no limite documental de navegação;
-- nenhum SVG novo é criado;
+- `PER-009`, `PER-010`, `PER-011` e `PER-012` permanecem sem SVG dedicado;
+- `TRN-008..013` e `TRN-406/407` permanecem contratadas;
+- `TRN-417/418` e `TRN-427/428` permanecem integralmente validadas no limite documental de navegação;
+- nenhum SVG novo é criado pela D5-C1;
 - `TRN-416/426` permanecem parciais;
 - nenhuma implementação técnica é criada.
 
@@ -137,6 +153,12 @@ A origem voluntária não é mais um gap de identidade para as três jornadas. P
 
 - validação de superfície não equivale a validação automática de transição;
 - validação até uma fronteira não valida comportamento de terceiro;
+- navegar para Objetivos não cria ou confirma Objetivo;
+- navegar para Próximos Passos não inicia ou conclui movimento;
+- navegar para Minha Evolução não presume mudança, progresso ou reconhecimento;
+- domínio não é score, diagnóstico, identidade ou prova de evolução;
+- dimensão estrutural do Contexto Vivo não é Domínio de Evolução;
+- aspecto descritivo da mudança não é Domínio de Evolução;
 - navegar para Planos não equivale a selecionar plano ou iniciar cobrança;
 - oportunidade pública não é ocultada para vender plano;
 - plano pago não compra relevância, confiança, impacto, legitimidade ou evolução;
@@ -146,4 +168,4 @@ A origem voluntária não é mais um gap de identidade para as três jornadas. P
 
 ## 11. Próximo ato possível
 
-A identidade da origem voluntária de Planos está encerrada. Materialização de `PER-009`, V5/UXA-102, integrações patrocinadas, cobrança real, processo posterior a `BND-002` e demais lacunas permanecem separadas. Nenhuma próxima frente é iniciada automaticamente.
+A D5-C1 encerra a identidade arquitetural de `PER-010..012` e `TRN-008..013`. Materializar `Meus Objetivos`, `Meus Próximos Passos` ou `Minha Evolução` exige autorização separada por responsabilidade. Materialização de `PER-009`, V5/UXA-102, D6, D7, integrações patrocinadas, cobrança real, processo posterior a `BND-002` e demais lacunas permanecem separadas. Nenhuma próxima frente é iniciada automaticamente.
