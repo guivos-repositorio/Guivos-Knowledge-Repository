@@ -8,12 +8,12 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **2.34.0** |
+| Registro | `GKR-STATE-001` **2.35.0** |
 | Era | GE-2 — Knowledge |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária e retorno** |
-| Experience Architecture mais recente | **D5-C3 — Objetivos, Próximos Passos e Evolução validados localmente** |
+| Experience Architecture mais recente | **D5-C4A — origens visuais e contrato dos handoffs, sem promoção** |
 | Domínios de Evolução do Journey | **9 canônicos + estado “Ainda estou descobrindo”** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Galeria | **121 SVGs — 121 validados / 0 pendentes** |
@@ -27,10 +27,11 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 A superfície institucional pública vigente é o [GOG-001 — Guia Oficial da Guivos 5.0.0](public/guia-oficial-da-guivos.md).
 
-O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetura, implementação e operação. A D5-C3 é uma autoridade interna de Experience Architecture; validação documental/visual não declara disponibilidade pública de produto.
+O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetura, implementação e operação. A D5-C4A é uma autoridade interna de Experience Architecture; validação documental/visual não declara disponibilidade pública de produto.
 
 ## Consolidação e reconciliações recentes
 
+- [D5-C4A — Materialização e Contrato Integrado dos Handoffs](experience-architecture/d5-c4a-direction-movement-evolution-handoff-contract.md)
 - [D5-C3 — Validação Funcional de Direção, Movimento e Evolução](experience-architecture/d5-c3-direction-movement-evolution-functional-validation.md)
 - [D5-C2 — Materialização Low-Fidelity de Direção, Movimento e Evolução](experience-architecture/d5-c2-direction-movement-evolution-low-fidelity-wireframes.md)
 - [D5-C1 — Contrato das Superfícies de Direção, Movimento e Evolução](experience-architecture/d5-c1-direction-movement-evolution-surface-contract.md)
@@ -63,7 +64,7 @@ Planos:
 
 A origem voluntária de Planos está formalizada por `PER-009 ↔ PER-301`, `COL-002 ↔ COL-301` e `ORG-001 ↔ ORG-301`. A origem da Pessoa permanece sem SVG dedicado e, portanto, seus dois handoffs ficam contratados até materialização suficiente.
 
-A D5-C1 contratou, a D5-C2 materializou e a D5-C3 validou localmente a continuidade pessoal especializada:
+A D5-C1 contratou, a D5-C2 materializou, a D5-C3 validou localmente e a D5-C4A fechou o contrato/origem visual da continuidade pessoal especializada:
 
 ```text
 PER-008 — Hoje
@@ -72,7 +73,7 @@ PER-008 — Hoje
 └── PER-012 — Minha Evolução
 ```
 
-As três responsabilidades possuem um SVG low-fidelity funcionalmente validado localmente. `TRN-008..013` permanecem contratadas; a validação local dos destinos não valida a continuidade integrada com Hoje.
+As três responsabilidades possuem um SVG low-fidelity funcionalmente validado localmente. Hoje recorrente também está reformulado/revalidado localmente para expor `Meus Objetivos`, `Abrir este passo` e `Minha Evolução` de forma compacta. `TRN-008..013` permanecem contratadas; origem visual e contrato semântico não validam a continuidade integrada.
 
 Domínios de Evolução do Guivos Journey:
 
@@ -118,6 +119,7 @@ método de pesquisa ≠ resultado de mercado
 pontos/créditos ≠ evolução
 navegar para Planos ≠ contratar ou iniciar cobrança
 PER-010..012 validados localmente ≠ continuidade integrada ≠ produto implementado
+PER-008 recorrente reformulado/revalidado ≠ TRN-008..013 promovidas
 TRN-008..013 contratadas ≠ continuidade validada
 Domínio de Evolução ≠ identidade ≠ score ≠ diagnóstico ≠ prova de evolução
 Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança
@@ -126,6 +128,6 @@ classificação candidata por IA ≠ domínio confirmado
 
 ## Limites preservados
 
-A reconciliação atual não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, classificação operacional por IA dos Domínios de Evolução, ontologia física do grafo, promoção automática de `TRN-008..013`, cobrança real, processo posterior a `BND-002`, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado ou operação de controles legais/privacidade não comprovados.
+A reconciliação atual não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, classificação operacional por IA dos Domínios de Evolução, ontologia física do grafo, promoção automática de `TRN-008..013`, D5-C4B sem autorização separada, cobrança real, processo posterior a `BND-002`, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado ou operação de controles legais/privacidade não comprovados.
 
 Em caso de divergência, prevalecem `GKR-STATE-001` e a autoridade temática específica mais recente.
