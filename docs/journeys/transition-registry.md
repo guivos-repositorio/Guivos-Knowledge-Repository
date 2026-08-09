@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.20.0
+version: 0.21.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-09
 related:
   - UXA-070
   - UXA-080
@@ -27,6 +27,7 @@ related:
   - UXA-100-A3
   - UXA-100-A4
   - UXA-101
+  - GKR-UX-D5-C1-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
@@ -38,7 +39,7 @@ normative: false
 
 ## 1. Finalidade
 
-Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.20.0 adiciona seis handoffs bidirecionais de origem voluntária e retorno de Planos pela UXA-100-A4, elevando a contagem de 54 para **60 transições** sem alterar a maturidade das transições internas de contratação/ciclo ou das fronteiras existentes.
+Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.21.0 adiciona seis handoffs bidirecionais mínimos entre `PER-008 — Hoje` e as responsabilidades `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução` contratadas pela D5-C1. A contagem passa de 60 para **66 transições**. Nenhuma das seis novas ligações é promovida além de `contratada` nesta etapa.
 
 ## 2. Convenções de estado
 
@@ -57,12 +58,12 @@ Validação integral documental não comprova implementação técnica nem esten
 
 | Família | Quantidade |
 |---|---:|
-| jornada pessoal | 7 |
+| jornada pessoal | 13 |
 | Pessoa em Coletivos e operação do responsável | 13 |
 | Organização, oportunidades e relações bilaterais | 11 |
 | Opportunity Boost | 6 |
 | Planos, cobrança e ciclo de vida | 23 |
-| **Total** | **60** |
+| **Total** | **66** |
 
 ## 4. Jornada pessoal
 
@@ -75,8 +76,18 @@ Validação integral documental não comprova implementação técnica nem esten
 | GKR-TRN-005 | PER-005 | PER-006 | parcial | continuidade entre materializações |
 | GKR-TRN-006 | PER-006 | PER-007 | localmente validada | UXA-037 |
 | GKR-TRN-007 | PER-007 | PER-008 | **integralmente validada** | UXA-097 |
+| GKR-TRN-008 | PER-008 | PER-010 | **contratada** | D5-C1 define abertura consciente de Meus Objetivos; PER-010 sem SVG |
+| GKR-TRN-009 | PER-010 | PER-008 | **contratada** | retorno a Hoje sem alterar objetivo, prioridade ou progresso; PER-010 sem SVG |
+| GKR-TRN-010 | PER-008 | PER-011 | **contratada** | D5-C1 define abertura consciente de Meus Próximos Passos; PER-011 sem SVG |
+| GKR-TRN-011 | PER-011 | PER-008 | **contratada** | retorno a Hoje sem concluir, aceitar ou executar passo; PER-011 sem SVG |
+| GKR-TRN-012 | PER-008 | PER-012 | **contratada** | D5-C1 define abertura consciente de Minha Evolução sem presumir mudança; PER-012 sem SVG |
+| GKR-TRN-013 | PER-012 | PER-008 | **contratada** | retorno a Hoje sem confirmar interpretação, baseline ou evolução; PER-012 sem SVG |
 
 `TRN-007` preserva consentimento, estado canônico, retorno e idempotência; navegar para Hoje não cria avanço ou autorização adicional.
+
+`TRN-008..013` são handoffs de navegação protegida. Abrir uma responsabilidade especializada não cria, confirma ou altera o objeto funcional correspondente. Retornar a Hoje não equivale a concluir, aceitar, reconhecer evolução ou conceder nova autorização.
+
+A D5-C1 não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011 ↔ PER-012` ou `PER-010 ↔ PER-012`. Relação semântica entre capacidades não equivale automaticamente a navegação direta.
 
 ## 5. Pessoa em Coletivos e operação do responsável
 
@@ -222,7 +233,8 @@ A correção semântica preservada:
 
 ## 10. Preservações de maturidade
 
-- transições totais passam a **60**;
+- transições totais passam a **66**;
+- `TRN-008..013` ficam **contratadas** até materialização suficiente de `PER-010..012`;
 - `TRN-406/407` ficam **contratadas** até materialização suficiente de `PER-009`;
 - `TRN-417/418` e `TRN-427/428` ficam **integralmente validadas** no limite documental de navegação administrativa;
 - `TRN-401..405`, `TRN-411..415` e `TRN-421..425` permanecem localmente validadas;
@@ -233,4 +245,4 @@ A correção semântica preservada:
 
 ## 11. Próximo gate
 
-A lacuna de **identidade da origem voluntária de Planos** é encerrada pela UXA-100-A4. A materialização própria de `PER-009`, caso justificada, permanece uma lacuna separada. V5/UXA-102, integrações patrocinadas, cobrança real e processos posteriores a `BND-002` permanecem frentes separadas e não são iniciados automaticamente.
+A D5-C1 encerra apenas a identidade arquitetural e os handoffs mínimos de `Meus Objetivos`, `Meus Próximos Passos` e `Minha Evolução`. A materialização visual e validação de `PER-010..012` e `TRN-008..013` exigem autorizações separadas. V5/UXA-102, D6, D7, integrações patrocinadas, cobrança real e processos posteriores a `BND-002` permanecem frentes separadas e não são iniciados automaticamente.
