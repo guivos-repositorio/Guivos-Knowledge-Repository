@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.20.0
+version: 0.21.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -29,6 +29,7 @@ depends_on:
   - UXA-100-A4
   - UXA-101
   - GKR-UX-D5-C1-001
+  - GKR-UX-D5-C2-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -42,11 +43,11 @@ normative: false
 
 ## 1. Finalidade
 
-Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos **118 SVGs canônicos**. Perfis documentais não substituem análise semântica exclusiva de cada estado e não validam automaticamente transições ou jornadas.
+Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos **121 SVGs canônicos**. Perfis documentais não substituem análise semântica exclusiva de cada estado e não validam automaticamente transições ou jornadas.
 
 ## 2. Estado do instrumento
 
-A D5-C1 mantém **118 associações** e **31 perfis**. `PER-010`, `PER-011` e `PER-012` não criam perfil porque permanecem responsabilidades contratadas sem SVG dedicado, assim como `PER-009` continua sem perfil visual próprio.
+A D5-C2 eleva o inventário para **121 associações** e **34 perfis** ao materializar um estado-base para `PER-010`, `PER-011` e `PER-012`. Os três novos perfis permanecem pendentes de validação funcional específica; `PER-009` continua sem perfil visual próprio.
 
 A reconciliação preserva a leitura de `BND-002` como fronteira genérica de contratação/dimensionamento assistido, a separação `Organização ≠ Guivos Business` e a distinção entre Domínio de Evolução, dimensão estrutural do Contexto Vivo e aspecto descritivo da mudança.
 
@@ -58,7 +59,7 @@ A reconciliação preserva a leitura de `BND-002` como fronteira genérica de co
 | R02 | PER-002/003/005 | TRN-001 | TRN-002 a 005 | voltar/trocar/editar/recusar | integração inicial | UXA-035 |
 | R03 | PER-004 | TRN-003 | TRN-004 | trocar/editar/descartar | expressão → inventário | UXA-069 |
 | R04 | PER-006/007 | TRN-005/006 | TRN-007 | revisar/recusar/retornar | handoffs pessoais anteriores | UXA-037; decisão corrente e TRN-007 UXA-097 |
-| R05 | PER-008 | TRN-007 | continuidade recorrente; TRN-008/010/012 contratadas | revisar/navegar/retornar; TRN-009/011/013 contratadas | estados alternativos de Hoje; PER-010..012 sem SVG | UXA-010 recorrente; primeira entrada e TRN-007 UXA-097; D5-C1 contratual |
+| R05 | PER-008 | TRN-007 | continuidade recorrente; TRN-008/010/012 contratadas | revisar/navegar/retornar; TRN-009/011/013 contratadas | estados alternativos de Hoje; handoffs especializados não validados | UXA-010 recorrente; primeira entrada e TRN-007 UXA-097; D5-C1 contratual |
 | R06 | PER-201 | TRN-203/304 | TRN-204/210 | voltar/alternar | integração patrocinada parcial | UXA-025/027/031/033; TRN-203/204/210 UXA-098 |
 | R07 | PER-202 | TRN-210/306 | TRN-211 | retornar ao mapa | integração patrocinada parcial | UXA-029; TRN-210/211 UXA-098 |
 | R08 | PER-203 | TRN-204/211 | TRN-205 → BND-001 | voltar ao detalhe; bloquear saída inválida; retorno externo sem presumir resultado | processo externo posterior à fronteira | UXA-012; entradas UXA-098; reformulação, revisão consciente e TRN-205 UXA-101 |
@@ -85,10 +86,13 @@ A reconciliação preserva a leitura de `BND-002` como fronteira genérica de co
 | R29 | PER-301/302/303/304 | **PER-009 via TRN-406** ou limite contextual legítimo | TRN-401 a 405; **TRN-407 para Conta** | manter plano, voltar, tentar novamente, preservar Free | **PER-009 sem materialização**; gateway/proration | UXA-100-A2/A3; **origem/retorno contratados UXA-100-A4** |
 | R30 | COL-301/302/303/304 | **COL-002 via TRN-417** ou limite legítimo | TRN-411 a 416; **TRN-418 para Visão Geral** | manter plano, aguardar, ajustar excedentes, retornar | contratação/dimensionamento após BND-002 e cobrança real | UXA-100-A2/A3; **TRN-417/418 integrais UXA-100-A4** |
 | R31 | ORG-301/302/303/304 | **ORG-001 via TRN-427** ou capacidade legítima | TRN-421 a 426; **TRN-428 para Visão Geral** | manter plano, ajustar capacidade, retornar | contratação/dimensionamento após BND-002 e cobrança real | UXA-100-A2/A3; **TRN-427/428 integrais UXA-100-A4** |
+| R32 | PER-010 | TRN-008 contratada | TRN-009 contratada | revisar objetivo; voltar para Hoje; interromper sem alteração | estados alternativos e handoff ponta a ponta | **pendente após materialização D5-C2** |
+| R33 | PER-011 | TRN-010 contratada | TRN-011 contratada | revisar, adiar, não seguir; voltar para Hoje | estados propostos/bloqueados e handoff ponta a ponta | **pendente após materialização D5-C2** |
+| R34 | PER-012 | TRN-012 contratada | TRN-013 contratada | revisar leitura, pausar acompanhamento, ajustar privacidade; voltar para Hoje | sensibilidade, evidência e handoff ponta a ponta | **pendente após materialização D5-C2** |
 
-`PER-010`, `PER-011` e `PER-012` não recebem perfis R32+ nesta frente porque não há ativo visual a associar. Criar perfil sem SVG inventaria evidência visual inexistente.
+R32–R34 registram somente a evidência visual criada pela D5-C2. A existência desses perfis não promove `PER-010..012` para `validado` nem `TRN-008..013` além de `contratada`.
 
-## 4. Associação individual dos 118 SVGs
+## 4. Associação individual dos 121 SVGs
 
 | SVG | Perfil |
 |---|---|
@@ -112,6 +116,9 @@ A reconciliação preserva a leitura de `BND-002` como fronteira genérica de co
 | `uxa-036-initial-understanding-insufficient-basis-mobile.svg` | R04 |
 | `uxa-006-hoje-mobile.svg` | R05 |
 | `uxa-097-first-today-after-initial-understanding-mobile.svg` | R05 |
+| `d5-c2-person-objectives-mobile.svg` | R32 |
+| `d5-c2-person-next-steps-mobile.svg` | R33 |
+| `d5-c2-person-evolution-mobile.svg` | R34 |
 | `uxa-024-opportunity-map-mobile.svg` | R06 |
 | `uxa-026-opportunity-map-location-disabled-mobile.svg` | R06 |
 | `uxa-030-opportunity-map-no-results-mobile.svg` | R06 |
@@ -213,19 +220,20 @@ A reconciliação preserva a leitura de `BND-002` como fronteira genérica de co
 
 ## 5. Totais e limites
 
-- SVGs registrados: **118**;
-- associações individuais: **118**;
-- perfis documentais: **31**;
+- SVGs registrados: **121**;
+- associações individuais: **121**;
+- perfis documentais: **34**;
 - com validação funcional vigente: **118**;
-- pendentes de validação específica: **0**;
-- `PER-009`, `PER-010`, `PER-011` e `PER-012` não recebem perfil porque não possuem SVG dedicado;
+- pendentes de validação específica: **3**;
+- R32, R33 e R34 registram materialização sem validação funcional;
+- `PER-009` continua sem perfil porque não possui SVG dedicado;
 - `BND-001` e `BND-002` permanecem sem SVG por definição de fronteira;
 - validação visual não atribui à Guivos comportamento posterior às fronteiras.
 
-## 6. Estado após D5-C1
+## 6. Estado após D5-C2
 
-A D5-C1 não adiciona, remove ou substitui qualquer associação individual de SVG. R05 passa apenas a reconhecer que Hoje possui handoffs contratados para três responsabilidades ainda não materializadas.
+A D5-C2 adiciona três associações individuais e três perfis documentais, sem remover ou substituir os 118 SVGs previamente validados.
 
-`TRN-008..013` permanecem contratadas até materialização suficiente de `PER-010..012`; `TRN-406/407` permanecem contratadas até materialização de `PER-009`. As transições internas de contratação/ciclo preservam a maturidade anterior, e `TRN-416/426` continuam parciais após `BND-002`.
+`TRN-008..013` permanecem contratadas apesar da materialização de `PER-010..012`; sua validação exige exame específico ponta a ponta. `TRN-406/407` permanecem contratadas até materialização de `PER-009`. As transições internas de contratação/ciclo preservam a maturidade anterior, e `TRN-416/426` continuam parciais após `BND-002`.
 
 Pessoa, Coletivo e Organização continuam `draft`; V5/UXA-102, D6, D7 e Engenharia de Produto não são iniciados.

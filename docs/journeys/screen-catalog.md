@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.29.0
+version: 0.30.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -31,6 +31,7 @@ related:
   - UXA-100-A4
   - UXA-101
   - GKR-UX-D5-C1-001
+  - GKR-UX-D5-C2-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -52,7 +53,7 @@ SVG existente
 ≠ implementação técnica
 ```
 
-A D5-C1 adiciona três responsabilidades granulares da Pessoa sem criar SVG: `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução`. Os 118 ativos visuais permanecem inalterados; os seis handoffs `TRN-008..013` permanecem contratados até materialização e validação próprias.
+A D5-C1 contratou `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução`. A D5-C2 cria um SVG low-fidelity para cada uma dessas responsabilidades sem criar novo ID granular e sem promover `TRN-008..013`. O inventário visual passa de 118 para 121 ativos; os três novos SVGs permanecem pendentes de validação funcional específica.
 
 ## 2. Inventário agregado canônico por família
 
@@ -62,10 +63,10 @@ A D5-C1 adiciona três responsabilidades granulares da Pessoa sem criar SVG: `PE
 | Pessoa | início protegido | 4 | 4 validados | parcial | reconciliação ponta a ponta |
 | Pessoa | expressão guiada | 8 | 8 validados | parcial | integração com inventário |
 | Pessoa | compreensão inicial | 5 | 5 validados | **TRN-007 integralmente validada** | handoffs anteriores ainda parciais |
-| Pessoa | Tela Hoje | 2 | 2 validados | primeira entrada validada; `TRN-008/010/012` contratadas | estados alternativos e handoffs especializados ainda sem materialização ponta a ponta |
-| Pessoa | Meus Objetivos | **0** | sem SVG | `TRN-008/009` contratadas | materialização e validação próprias |
-| Pessoa | Meus Próximos Passos | **0** | sem SVG | `TRN-010/011` contratadas | materialização e validação próprias |
-| Pessoa | Minha Evolução | **0** | sem SVG | `TRN-012/013` contratadas | materialização e validação próprias; separar domínio/dimensão/aspecto |
+| Pessoa | Tela Hoje | 2 | 2 validados | primeira entrada validada; `TRN-008/010/012` contratadas | estados alternativos e handoffs especializados ainda não validados ponta a ponta |
+| Pessoa | Meus Objetivos | **1** | **materializado; validação pendente** | `TRN-008/009` contratadas | validação funcional e do handoff |
+| Pessoa | Meus Próximos Passos | **1** | **materializado; validação pendente** | `TRN-010/011` contratadas | validação funcional e do handoff |
+| Pessoa | Minha Evolução | **1** | **materializado; validação pendente** | `TRN-012/013` contratadas | validação funcional; sensibilidade; handoff |
 | Pessoa | oportunidades orgânicas | 7 | **7 validados; Detalhe revalidado pela UXA-101** | publicação/descoberta, Mapa/Lista/Detalhe e saída até BND-001 integrados | processo externo posterior separado |
 | Pessoa | Conta/Configurações | **0** | sem SVG | TRN-406/407 contratadas | materialização própria de PER-009 somente se necessária |
 | Pessoa | Planos, comparação e cobrança | **3** | **3 validados** | TRN-401 a 405 locais; origem voluntária contratada | gateway/proration e materialização de PER-009 |
@@ -84,43 +85,45 @@ A D5-C1 adiciona três responsabilidades granulares da Pessoa sem criar SVG: `PE
 | Organização | Planos, comparação e cobrança | **3** | **3 validados** | TRN-427/428 integrais; TRN-421 a 425 locais; TRN-426 parcial | contratação/dimensionamento assistido e cobrança real |
 | camada comercial | Opportunity Boost | 46 | **46 validados** | parcial | TRN-304/305/306 e integrações específicas |
 | fronteira documental | destinos externos/comerciais | 0 | não aplicável | BND-001 examinada; BND-002 parcial | processo externo posterior; contratação/dimensionamento assistido |
-| **Total canônico** |  | **118** | **118 validados; 0 pendentes** |  |  |
+| **Total canônico** |  | **121** | **118 validados; 3 pendentes** |  |  |
 
 ## 3. Instrumentos granulares vigentes
 
-| Registro | Quantidade | Estado vigente após D5-C1 |
+| Registro | Quantidade | Estado vigente após D5-C2 |
 |---|---:|---|
-| superfícies/estados/responsabilidades/fronteiras | **57** | `active` 0.20.0 |
-| transições documentais | **66** | `active` 0.21.0 |
-| catálogo canônico | **118 SVGs** | `active` 0.29.0 |
-| matriz de rastreabilidade | **118 SVGs / 31 perfis** | sem novos perfis porque PER-010..012 não possuem SVG |
-| galeria visual | **118 SVGs** | quantidade preservada |
+| superfícies/estados/responsabilidades/fronteiras | **57** | D5-C2 não cria novo ID |
+| transições documentais | **66** | D5-C2 não promove `TRN-008..013` |
+| catálogo canônico | **121 SVGs** | `active` 0.30.0 |
+| matriz de rastreabilidade | **121 SVGs / 34 perfis** | R32–R34 pendentes de validação |
+| galeria visual | **121 SVGs** | três novos estados-base D5-C2 |
 
 ## 4. Cobertura visual canônica
 
 | Condição | Quantidade |
 |---|---:|
-| IDs com referência visual direta ou agrupada | **42** |
-| responsabilidades sem SVG dedicado | **13** |
+| IDs com referência visual direta ou agrupada | **45** |
+| responsabilidades sem SVG dedicado | **10** |
 | fronteiras intencionalmente sem tela | **2** |
 | **Total** | **57** |
 
-## 5. Efeito acumulado da D5-C1 no catálogo
+## 5. Efeito da D5-C2 no catálogo
 
-- SVGs canônicos: **118 → 118**;
-- associações: **118 → 118**;
-- perfis: **31 → 31**;
+- SVGs canônicos: **118 → 121**;
+- associações: **118 → 121**;
+- perfis: **31 → 34**;
 - validações funcionais vigentes de SVG: **118 → 118**;
-- pendências específicas de SVG existente: **0 → 0**;
-- IDs granulares: **54 → 57**;
-- transições: **60 → 66**;
-- `PER-010`, `PER-011` e `PER-012`: novas responsabilidades sem SVG dedicado;
-- `TRN-008..013`: contratadas;
+- pendências específicas de SVG: **0 → 3**;
+- IDs granulares: **57 → 57**;
+- transições: **66 → 66**;
+- IDs com referência visual: **42 → 45**;
+- responsabilidades sem SVG dedicado: **13 → 10**;
+- `PER-010`, `PER-011` e `PER-012`: passam de contratados sem SVG para responsabilidades contratadas com materialização low-fidelity;
+- `TRN-008..013`: permanecem contratadas;
 - `PER-009`: permanece responsabilidade sem SVG dedicado;
 - `TRN-406/407`: permanecem contratadas;
 - `TRN-417/418` e `TRN-427/428`: permanecem integralmente validadas no limite de navegação administrativa.
 
-A D5-C1 não altera nenhum dos 118 ativos já materializados por D5-A, D5-B ou pelas UXAs anteriores.
+A D5-C2 não altera nenhum dos 118 ativos já validados por D5-A, D5-B ou pelas UXAs anteriores.
 
 ## 6. Separações obrigatórias
 
@@ -130,7 +133,9 @@ A D5-C1 não altera nenhum dos 118 ativos já materializados por D5-A, D5-B ou p
 - `PER-011` governa movimentos contextuais, não uma lista coercitiva de tarefas;
 - `PER-012` governa trajetórias de evolução, não roda da vida, ranking ou nota humana;
 - em Minha Evolução, Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança;
-- a D5-C1 não cria handoff direto entre `PER-010`, `PER-011` e `PER-012`;
+- materialização de `PER-010..012` ≠ validação funcional das superfícies;
+- presença de retorno visual para Hoje ≠ validação de `TRN-008..013`;
+- a D5-C2 não cria handoff direto entre `PER-010`, `PER-011` e `PER-012`;
 - revisão de saída é estado do mesmo `PER-203`, não nova tela canônica;
 - `BND-001` representa a transferência de autoridade, não o processo do terceiro;
 - `PER-009` é responsabilidade de Conta suficiente para handoff e não uma arquitetura completa de Conta;
@@ -148,12 +153,12 @@ A D5-C1 não altera nenhum dos 118 ativos já materializados por D5-A, D5-B ou p
 
 ## 7. Estado do catálogo
 
-- catálogo: `active` 0.29.0;
-- galeria principal: 118 SVGs;
-- matriz por SVG: 118 associações / 31 perfis;
-- novas responsabilidades D5-C1: 3, todas sem SVG e `contratadas`;
-- novos handoffs D5-C1: 6, todos `contratados`;
+- catálogo: `active` 0.30.0;
+- galeria principal: **121 SVGs**;
+- matriz por SVG: **121 associações / 34 perfis**;
+- `PER-010..012`: materializados em low-fidelity e pendentes de validação funcional;
+- `TRN-008..013`: permanecem `contratadas`;
 - jornadas da Pessoa, Coletivo e Organização: `draft`;
 - protótipo e Engenharia de Produto: não iniciados.
 
-A reconciliação documental não autoriza materialização visual de `PER-010..012`, implementação, cobrança real, UXA-102/V5, D6, D7 ou próxima frente.
+A D5-C2 não autoriza validação automática, implementação, cobrança real, UXA-102/V5, D6, D7 ou próxima frente.

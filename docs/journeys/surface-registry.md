@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.20.0
+version: 0.21.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -28,6 +28,7 @@ related:
   - UXA-100-A4
   - UXA-101
   - GKR-UX-D5-C1-001
+  - GKR-UX-D5-C2-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -42,7 +43,7 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-A versão 0.20.0 adiciona `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-011 — Meus Próximos Passos` e `GKR-SURF-PER-012 — Minha Evolução` como responsabilidades contratadas pela D5-C1. Nenhuma delas possui SVG ou validação visual nesta etapa. A contagem passa a 57 IDs.
+A D5-C1 adicionou `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-011 — Meus Próximos Passos` e `GKR-SURF-PER-012 — Minha Evolução` como responsabilidades contratadas. A D5-C2 materializa um SVG low-fidelity para cada uma sem criar novos IDs e sem promover sua maturidade para `validado`. A contagem permanece em 57 IDs.
 
 ## 2. Convenções
 
@@ -50,6 +51,7 @@ A versão 0.20.0 adiciona `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-0
 - `indeterminado`: evidência insuficiente;
 - `não examinado`: integração ainda não avaliada;
 - `parcial`: cobertura incompleta;
+- `contratado`: responsabilidade/ligação governada sem validação funcional suficiente;
 - `materializado`: referência existente sem implicar validação;
 - `validado`: superfície examinada funcionalmente;
 - `local`: validação limitada ao pacote de origem.
@@ -78,9 +80,9 @@ A versão 0.20.0 adiciona `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-0
 | GKR-SURF-PER-007 | compreensão inicial revisável | Pessoa | protegido | **validado** | UXA-023 | UXA-036; UXA-097 | UXA-037; UXA-097 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-008 | Tela Hoje | Pessoa autenticada | protegido | **validado** | UXA-002; UXA-011-A1 | UXA-006; UXA-097 | UXA-010; UXA-097 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-009 | Conta e configurações da Pessoa | Pessoa autenticada; administração pessoal | protegido | contratado | UXA-100; UXA-100-A1; UXA-100-A4 | — | — | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-010 | Meus Objetivos | Pessoa autenticada; direção e objetivos | protegido | contratado | PAS-001-OBJ-VIEW-001; GKR-UX-D5-C1-001 | — | — | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-011 | Meus Próximos Passos | Pessoa autenticada; movimentos contextuais | protegido | contratado | PAS-001-PP-VIEW-001; GKR-UX-D5-C1-001 | — | — | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-012 | Minha Evolução | Pessoa autenticada; trajetórias e evolução contínua | protegido | contratado | PAS-001-EC-VIEW-001; GKR-UX-D5-C1-001 | — | — | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-010 | Meus Objetivos | Pessoa autenticada; direção e objetivos | protegido | contratado | PAS-001-OBJ-VIEW-001; GKR-UX-D5-C1-001; GKR-UX-D5-C2-001 | `d5-c2-person-objectives-mobile.svg` | pendente | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-011 | Meus Próximos Passos | Pessoa autenticada; movimentos contextuais | protegido | contratado | PAS-001-PP-VIEW-001; GKR-UX-D5-C1-001; GKR-UX-D5-C2-001 | `d5-c2-person-next-steps-mobile.svg` | pendente | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-012 | Minha Evolução | Pessoa autenticada; trajetórias e evolução contínua | protegido | contratado | PAS-001-EC-VIEW-001; GKR-UX-D5-C1-001; GKR-UX-D5-C2-001 | `d5-c2-person-evolution-mobile.svg` | pendente | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-101 | Explorar Coletivos | visitante | móvel | validado | UXA-056 | UXA-060 | UXA-061 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-102 | Resultados de Busca de Coletivos | visitante | móvel | validado | UXA-056 | UXA-060 | UXA-061 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-103 | Perfil Público do Coletivo | visitante | móvel | validado | UXA-056 | UXA-062 | UXA-063 | [Pessoa](surface-registry-person-details.md) |
@@ -140,7 +142,7 @@ Guivos Business: Start · Growth · Scale · Enterprise
 
 A origem voluntária de Planos permanece representada por `PER-009`, `COL-002` e `ORG-001`. A criação de `PER-009` não materializa uma arquitetura completa de Conta nem autoriza preencher outras responsabilidades administrativas por inferência.
 
-A D5-C1 adiciona `PER-010`, `PER-011` e `PER-012` como responsabilidades pessoais especializadas ligadas a Hoje por transições contratadas. Elas não são estados internos de `PER-008` e não possuem SVG nesta etapa.
+A D5-C1 adiciona `PER-010`, `PER-011` e `PER-012` como responsabilidades pessoais especializadas ligadas a Hoje por transições contratadas. A D5-C2 lhes adiciona materialização low-fidelity, sem alterar maturidade, autoridade ou o estado das transições.
 
 Guivos Business é produto especializado e não recebe novos IDs neste registro.
 
@@ -148,17 +150,19 @@ Guivos Business é produto especializado e não recebe novos IDs neste registro.
 
 ## 6. Preservações
 
-- total de IDs passa a **57**;
-- `PER-009`, `PER-010`, `PER-011` e `PER-012` permanecem sem SVG dedicado e com maturidade `contratado`;
-- os 118 SVGs canônicos permanecem inalterados em quantidade;
-- 42 IDs permanecem com referência visual, agora de 57;
-- responsabilidades sem SVG dedicado passam a 13;
+- total de IDs permanece **57**;
+- `PER-010`, `PER-011` e `PER-012` possuem SVG low-fidelity, mas permanecem com maturidade `contratado` e validação pendente;
+- `PER-009` permanece contratado e sem SVG dedicado;
+- os SVGs canônicos passam de **118 para 121**;
+- IDs com referência visual passam de **42 para 45**, agora de 57;
+- responsabilidades sem SVG dedicado passam de **13 para 10**;
 - `PER-203` permanece validada no recorte de saída externa;
 - `BND-001` permanece examinado, sem tela própria;
 - `BND-002` permanece parcial, sem tela própria;
+- `TRN-008..013` permanecem contratadas;
 - `TRN-416` e `TRN-426` permanecem parciais;
 - nenhuma jornada ou Engenharia de Produto é promovida.
 
 ## 7. Estado
 
-O registro permanece `active` como inventário granular. O status não promove as jornadas completas nem representa implementação.
+O registro permanece `active` como inventário granular. Materialização low-fidelity não equivale a validação funcional nem representa implementação.
