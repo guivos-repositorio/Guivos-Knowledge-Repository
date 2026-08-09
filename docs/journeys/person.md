@@ -2,13 +2,14 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.17.0
+version: 0.18.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-09
 related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
   - GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001
+  - GKR-UX-D5-C1-001
   - UXA-002
   - UXA-004
   - UXA-006
@@ -129,9 +130,103 @@ Regras desta vista:
 - domínio não é diagnóstico, score, prioridade humana ou prova de evolução;
 - saúde, espiritualidade, finanças e outros contextos sensíveis preservam finalidade, autoridade e proteção próprias;
 - plano pago, patrocínio ou oferta comercial não altera domínio nem relevância funcional;
-- D4 não cria nova tela, pergunta obrigatória, chip, card, SVG ou transição; materialização experiencial permanece D5.
+- D4 não cria nova tela, pergunta obrigatória, chip, card, SVG ou transição;
+- D5-A e D5-B materializam o eixo em superfícies já existentes;
+- D5-C1 cria somente as responsabilidades e handoffs mínimos de Objetivos, Próximos Passos e Evolução, ainda sem SVG.
 
-## 3. Descoberta de oportunidades e saída consciente
+## 3. Direção, movimento e evolução a partir de Hoje
+
+A D5-C1 reconhece três responsabilidades especializadas que já possuíam autoridade funcional no PAS-001, mas não possuíam identidade própria no registro granular da Experience Architecture.
+
+A estrutura passa a ser:
+
+```text
+PER-008 — Hoje
+├── TRN-008 → PER-010 — Meus Objetivos
+│   └── TRN-009 → PER-008
+├── TRN-010 → PER-011 — Meus Próximos Passos
+│   └── TRN-011 → PER-008
+└── TRN-012 → PER-012 — Minha Evolução
+    └── TRN-013 → PER-008
+```
+
+As três responsabilidades e as seis transições estão **contratadas**, sem materialização visual própria e sem validação ponta a ponta.
+
+### 3.1 PER-010 — Meus Objetivos
+
+`PER-010` governa a compreensão, organização e controle dos objetivos da Pessoa, preservando estados, prioridades, critérios, marcos, progresso/evidências legítimas, conflitos, histórico, privacidade e revisão conforme `PAS-001-OBJ-VIEW-001`.
+
+Um objetivo pode possuir `0..n domain_link`, mas:
+
+```text
+Domínio de Evolução
+≠ Objetivo
+≠ prioridade
+≠ critério de sucesso
+≠ progresso
+```
+
+Para a futura UX, `área da jornada` deve ser distinguida de `dimensão estrutural do Contexto Vivo`.
+
+### 3.2 PER-011 — Meus Próximos Passos
+
+`PER-011` governa movimentos contextuais, não uma lista coercitiva de tarefas.
+
+Pode organizar passos por estado, prioridade, prontidão, dependência, responsabilidade, período e Área da jornada. A formulação histórica `área da vida` é lida, para Experience Architecture, como Área da jornada vinculada semanticamente ao modelo de Domínios.
+
+```text
+domínio relacionado
+≠ obrigação
+≠ urgência
+≠ prontidão
+≠ execução
+```
+
+### 3.3 PER-012 — Minha Evolução
+
+`PER-012` governa a compreensão e o controle de trajetórias, mudanças, continuidades, baselines, direções, evidências, confiança, incerteza, interpretações, contestações e histórico.
+
+A futura materialização deve preservar explicitamente:
+
+```text
+Domínio de Evolução
+≠ dimensão estrutural do Contexto Vivo
+≠ aspecto descritivo da mudança
+≠ trajetória
+≠ score
+```
+
+`Minha Evolução` não poderá ser convertida em roda da vida obrigatória, ranking, percentual global da Pessoa, diagnóstico ou avaliação espiritual.
+
+### 3.4 Papel de Hoje
+
+`PER-008` permanece síntese recorrente, não dashboard completo das três capacidades.
+
+A leitura é:
+
+```text
+Hoje sintetiza
+→ direção atual, quando relevante
+→ movimento atual, quando relevante
+→ mudança ou continuidade relevante, quando legítima
+
+superfícies especializadas
+→ aprofundam e oferecem controle
+```
+
+Isso não exige três cards permanentes em Hoje e não autoriza exposição de conteúdo sensível por padrão.
+
+### 3.5 Handoffs não contratados
+
+A D5-C1 não cria navegação direta entre:
+
+- `PER-010 ↔ PER-011`;
+- `PER-011 ↔ PER-012`;
+- `PER-010 ↔ PER-012`.
+
+Relação semântica entre Objetivo, Próximo Passo e Evolução não é evidência suficiente de necessidade de navegação direta.
+
+## 4. Descoberta de oportunidades e saída consciente
 
 A UXA-098 fecha a continuidade entre descoberta territorial e Detalhe; a UXA-101 fecha V4 até a fronteira externa:
 
@@ -172,7 +267,7 @@ Referência visual reformulada e revalidada pela UXA-101:
 
 [Visualizar SVG](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
 
-## 4. Planos como etapa transversal canônica
+## 5. Planos como etapa transversal canônica
 
 A UXA-100-A3 promove **Planos** como etapa canonicamente registrada da jornada da Pessoa. A UXA-100-A4 fecha a identidade documental de sua origem voluntária sem criar uma tela artificial de Conta.
 
@@ -213,7 +308,7 @@ Regras de jornada:
 - falha preserva Free/estado anterior quando não houver confirmação;
 - pagamento não altera relevância, confiança, posição orgânica nem garantia de evolução.
 
-## 5. Pessoa em Coletivos
+## 6. Pessoa em Coletivos
 
 ```text
 Explorar Coletivos
@@ -237,10 +332,14 @@ Explorar Coletivos
 | Central de Atualizações | validado | UXA-093/094/095/096 | UXA-094; versão corrente UXA-096 | TRN-110 e TRN-111 integralmente validadas |
 | Início do Participante | validado | UXA-095/096 | UXA-096 | TRN-111 integralmente validada |
 
-## 6. Proteções preservadas
+## 7. Proteções preservadas
 
 - conclusão da compreensão inicial não equivale a avanço humano;
 - personalização não é condição para acessar Hoje;
+- abrir Meus Objetivos não cria, confirma ou prioriza objetivo;
+- abrir Meus Próximos Passos não inicia, aceita ou conclui movimento;
+- abrir Minha Evolução não presume mudança, progresso ou evolução reconhecida;
+- conteúdo sensível nas três superfícies especializadas exige minimização e controle;
 - oportunidade publicada não é automaticamente recomendada;
 - proximidade não equivale a relevância;
 - patrocínio e plano pago não compram relevância funcional;
@@ -255,20 +354,21 @@ Explorar Coletivos
 - estado canônico vigente prevalece sobre renderização anterior;
 - mesmo domínio entre Pessoa, Coletivo e Organização não cria match, recomendação ou compartilhamento automático.
 
-## 7. Estado da vista
+## 8. Estado da vista
 
 Esta vista permanece `draft` porque:
 
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` ainda são parciais;
+- `PER-010`, `PER-011` e `PER-012` ainda não possuem materialização própria e `TRN-008..013` permanecem contratadas;
 - as transições comerciais internas de Planos são locais e não representam cobrança ponta a ponta;
 - `PER-009` ainda não possui materialização própria e `TRN-406/407` permanecem contratadas;
 - estados P0B adicionais permanecem separados;
 - áreas internas especializadas a partir de `PER-108` não foram validadas como conjunto;
-- os Domínios de Evolução foram propagados documentalmente por D4, mas ainda não foram materializados/validados como UX; isso permanece D5;
+- D5-A e D5-B materializam Domínios em superfícies existentes, enquanto a materialização visual de D5-C permanece pendente por responsabilidade;
 - outras continuidades da jornada pessoal ainda não foram examinadas ponta a ponta.
 
 `TRN-205` deixa de ser motivo de `draft`: a UXA-101 a valida integralmente **até `BND-001`**, sem validar o processo externo posterior.
 
-## 8. Estado atual
+## 9. Estado atual
 
-V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. A frente de Planos está canonicamente registrada e sua origem voluntária possui identidade formal pela UXA-100-A4. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista sem criar materialização visual. V5/UXA-102 não foi iniciada e nenhuma etapa de Engenharia de Produto foi autorizada automaticamente.
+V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. A frente de Planos está canonicamente registrada e sua origem voluntária possui identidade formal pela UXA-100-A4. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista. D5-A e D5-B materializam parte desse eixo em superfícies já existentes. A D5-C1 contrata `PER-010..012` e `TRN-008..013` sem criar SVG. V5/UXA-102, D6, D7 e Engenharia de Produto não foram iniciados automaticamente.
