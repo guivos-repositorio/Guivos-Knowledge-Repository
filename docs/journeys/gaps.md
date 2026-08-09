@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.31.0
+version: 0.32.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -26,6 +26,7 @@ related:
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
   - GKR-UX-D5-C3-001
+  - GKR-UX-D5-C4A-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -37,7 +38,7 @@ normative: false
 
 ## 1. Natureza do registro
 
-Este documento é observacional e não promocional. A D5-C1 fechou a identidade arquitetural de `Meus Objetivos`, `Meus Próximos Passos` e `Minha Evolução`; a D5-C2 fechou a ausência visual do estado-base; a D5-C3 fecha a **validação funcional local dos três SVGs**. A lacuna remanescente passa a ser a validação integrada de `TRN-008..013` e, quando necessário, estados sensíveis/alternativos específicos. V5/UXA-102, D6, D7, cobrança real e demais frentes continuam separadas.
+Este documento é observacional e não promocional. A D5-C1 fechou a identidade arquitetural de `Meus Objetivos`, `Meus Próximos Passos` e `Minha Evolução`; a D5-C2 fechou a ausência visual do estado-base; a D5-C3 fechou a validação funcional local dos três SVGs; a D5-C4A fecha a ausência de origem visual inequívoca no estado recorrente de Hoje e governa o contrato semântico dos seis handoffs. A lacuna remanescente passa a ser **exclusivamente a validação integrada de `TRN-008..013`**, além de estados sensíveis/alternativos específicos quando necessários. V5/UXA-102, D6, D7, cobrança real e demais frentes continuam separadas.
 
 ## 2. Gates pessoais
 
@@ -49,11 +50,11 @@ Este documento é observacional e não promocional. A D5-C1 fechou a identidade 
 | expressão → inventário | PER-004; TRN-004; PER-005 | materializados | parcial | integração com inventário |
 | inventário → processamento | PER-005; TRN-005; PER-006 | materializados | parcial | continuidade entre materializações |
 | Conta/Configurações da Pessoa | PER-009; TRN-406/407 | sem SVG dedicado | identidade contratada pela UXA-100-A4 | materialização própria somente se necessária para validar ponta a ponta |
-| Hoje ↔ Meus Objetivos | PER-008; TRN-008/009; PER-010 | **SVG D5-C2 reformulado e validado pela D5-C3** | PER-010 validado localmente; handoffs contratados | validação integrada de TRN-008/009 |
-| Hoje ↔ Meus Próximos Passos | PER-008; TRN-010/011; PER-011 | **SVG D5-C2 reformulado e validado pela D5-C3** | PER-011 validado localmente; handoffs contratados | validação integrada de TRN-010/011 |
-| Hoje ↔ Minha Evolução | PER-008; TRN-012/013; PER-012 | **SVG D5-C2 reformulado e validado pela D5-C3** | PER-012 validado localmente; handoffs contratados | validação integrada de TRN-012/013; estados sensíveis adicionais quando aplicáveis |
+| Hoje ↔ Meus Objetivos | PER-008; TRN-008/009; PER-010 | **Hoje recorrente reformulado D5-C4A + PER-010 validado D5-C3** | contrato integrado governado; handoffs contratados | D5-C4B — validação integrada de TRN-008/009 |
+| Hoje ↔ Meus Próximos Passos | PER-008; TRN-010/011; PER-011 | **Hoje recorrente reformulado D5-C4A + PER-011 validado D5-C3** | contrato integrado governado; handoffs contratados | D5-C4B — validação integrada de TRN-010/011 |
+| Hoje ↔ Minha Evolução | PER-008; TRN-012/013; PER-012 | **Hoje recorrente reformulado D5-C4A + PER-012 validado D5-C3** | contrato integrado governado; handoffs contratados | D5-C4B — validação integrada de TRN-012/013; estados sensíveis adicionais quando aplicáveis |
 
-`PER-010..012` não são estados internos de Hoje. A presença de `‹ Hoje` nos wireframes não valida `TRN-008..013`. Também não existem handoffs diretos governados entre as três superfícies especializadas.
+`PER-010..012` não são estados internos de Hoje. A presença das affordances em Hoje e de `‹ Hoje` nos destinos não valida `TRN-008..013`. Também não existem handoffs diretos governados entre as três superfícies especializadas.
 
 ## 3. Gates de oportunidade e descoberta
 
@@ -103,9 +104,9 @@ A fila não autoriza execução automática.
 
 | Grupo | Lacuna | IDs relacionados | Estado visual | Gate |
 |---|---|---|---|---|
-| D5-C integração | Hoje ↔ Meus Objetivos | PER-008; PER-010; TRN-008/009 | superfícies validadas | validar identidade, contexto/payload, retorno, interrupção, concorrência, idempotência e autoridade |
-| D5-C integração | Hoje ↔ Meus Próximos Passos | PER-008; PER-011; TRN-010/011 | superfícies validadas | validar identidade, contexto/payload, retorno, interrupção, concorrência, idempotência e autoridade |
-| D5-C integração | Hoje ↔ Minha Evolução | PER-008; PER-012; TRN-012/013 | superfícies validadas | validar identidade, contexto/payload, retorno, interrupção, concorrência, idempotência, autoridade e sensibilidade |
+| D5-C4B | Hoje ↔ Meus Objetivos | PER-008; PER-010; TRN-008/009 | origens/destino + contrato D5-C4A | validar ponta a ponta identidade, contexto, retorno, interrupção, concorrência, idempotência e autoridade |
+| D5-C4B | Hoje ↔ Meus Próximos Passos | PER-008; PER-011; TRN-010/011 | origem específica + destino + contrato D5-C4A | validar preservação da referência lógica do passo, fallback e retorno neutro |
+| D5-C4B | Hoje ↔ Minha Evolução | PER-008; PER-012; TRN-012/013 | origem genérica/neutra + destino + contrato D5-C4A | validar ponta a ponta autoridade, sensibilidade e preservação epistemológica |
 | P0B | Meus Coletivos | PER-106 | P0A validado | ativo próprio quando decisão/proteção justificar |
 | P0B | Central | PER-107 | P0A validado | vazio, excesso de volume e baixa conectividade |
 | P0B | Início do Participante | PER-108 | P0A validado | mudança material de decisão/proteção |
@@ -127,10 +128,12 @@ A fila não autoriza execução automática.
 | V4 — encerrado | Detalhe → fronteira externa | TRN-205 integral até BND-001 | UXA-101 |
 | D5-C1 | contrato arquitetural | PER-010..012 + TRN-008..013 contratados | concluído |
 | D5-C2 | materialização low-fidelity | 3 SVGs materializados | concluído |
-| D5-C3 | validação/reformulação local | **PER-010..012 validados; 0 SVGs pendentes** | concluído localmente; TRNs separados |
+| D5-C3 | validação/reformulação local | **PER-010..012 validados; 0 SVGs pendentes** | concluído localmente |
+| D5-C4A | origens + contrato dos handoffs | **Hoje recorrente reformulado/revalidado; seis TRNs ainda contratadas** | concluído sem promoção |
+| D5-C4B | validação integrada de TRN-008..013 | **não iniciada** | autorização separada |
 | V5 | erros, retornos e interrupções | cobertura dispersa | **não iniciada** |
 
-## 9. Baseline após D5-C3
+## 9. Baseline após D5-C4A
 
 - SVGs canônicos: **121**;
 - associações: **121**;
@@ -142,6 +145,7 @@ A fila não autoriza execução automática.
 - IDs com referência visual: **45 de 57**;
 - responsabilidades sem SVG dedicado: **10**;
 - fronteiras sem tela: **2**;
+- `PER-008` recorrente reformulado/revalidado localmente;
 - `PER-010..012` materializados, reformulados e validados localmente;
 - `TRN-008..013` e `TRN-406/407` contratadas;
 - `TRN-417/418` e `TRN-427/428` integralmente validadas no limite documental;
@@ -153,6 +157,8 @@ A fila não autoriza execução automática.
 - navegar para Objetivos não cria ou confirma Objetivo;
 - navegar para Próximos Passos não inicia ou conclui movimento;
 - navegar para Minha Evolução não presume mudança, progresso ou reconhecimento;
+- `Abrir este passo` pode preservar referência lógica mínima, mas não inicia o passo;
+- contexto de navegação não amplia consentimento, autorização, prioridade ou progresso;
 - domínio não é score, diagnóstico, identidade ou prova de evolução;
 - dimensão estrutural do Contexto Vivo não é Domínio de Evolução;
 - aspecto descritivo da mudança não é Domínio de Evolução;
@@ -162,4 +168,4 @@ A fila não autoriza execução automática.
 
 ## 11. Próximo ato possível
 
-Após integração governada da D5-C3, a validação ponta a ponta de `TRN-008..013` pode constituir frente posterior separada. Isso não inicia automaticamente V5/UXA-102, D6, D7, Product Engineering ou qualquer outra lacuna.
+Após integração governada da D5-C4A, a **D5-C4B — validação ponta a ponta de `TRN-008..013`** pode constituir frente posterior separada e deverá decidir individualmente a maturidade de cada ligação. Isso não inicia automaticamente V5/UXA-102, D6, D7, Product Engineering ou qualquer outra lacuna.

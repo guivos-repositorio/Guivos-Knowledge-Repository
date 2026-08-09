@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.34.0
+version: 2.35.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-09
 depends_on:
@@ -25,6 +25,7 @@ related:
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
   - GKR-UX-D5-C3-001
+  - GKR-UX-D5-C4A-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GTM-000
   - GTM-007
@@ -53,9 +54,9 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro declara o estado global vigente do Guivos Knowledge Repository após a consolidação documental P1–P9, a reconciliação controlada da origem voluntária de Planos, a formalização dos Domínios de Evolução do Guivos Journey, a D5-C1 — contrato arquitetural das superfícies de direção, movimento e evolução da Pessoa —, a D5-C2 — materialização low-fidelity dessas três responsabilidades — e a D5-C3 — validação funcional/reformulação local dos três SVGs.
+Este registro declara o estado global vigente do Guivos Knowledge Repository após a consolidação documental P1–P9, a reconciliação controlada da origem voluntária de Planos, a formalização dos Domínios de Evolução do Guivos Journey, a D5-C1 — contrato arquitetural das superfícies de direção, movimento e evolução da Pessoa —, a D5-C2 — materialização low-fidelity dessas três responsabilidades —, a D5-C3 — validação funcional/reformulação local dos três SVGs — e a D5-C4A — materialização e contrato integrado dos handoffs entre Hoje e essas responsabilidades.
 
-A D5-C3 **não cria novo marco funcional, não inicia UXA-102, não retoma Engenharia de Produto e não valida automaticamente `TRN-008..013`**. Ela reforma in-place e valida localmente `PER-010`, `PER-011` e `PER-012`, mantendo as seis transições no estado `contratada`.
+A D5-C4A **não cria novo marco funcional, não inicia UXA-102, não retoma Engenharia de Produto e não promove `TRN-008..013`**. Ela reforma e revalida localmente o estado recorrente de `PER-008 — Hoje`, torna inequívocas as origens visuais dos três aprofundamentos e governa contexto mínimo, retorno, interrupção, concorrência, idempotência, autoridade e sensibilidade dos seis handoffs, mantendo-os no estado `contratada`.
 
 Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
@@ -67,7 +68,7 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Marco funcional | **M7.88 — saída consciente para fronteira externa validada** |
 | Última frente funcional numerada | **UXA-101** |
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária de Planos** |
-| Frente não numerada mais recente de Experience Architecture | **D5-C3 — Meus Objetivos, Meus Próximos Passos e Minha Evolução funcionalmente validados localmente** |
+| Frente não numerada mais recente de Experience Architecture | **D5-C4A — origens visuais e contrato integrado de `TRN-008..013`, sem promoção** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Domínios de Evolução do Journey | **9 domínios canônicos + estado transversal “Ainda estou descobrindo”** |
@@ -87,7 +88,7 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 
 ## 3. Cobertura funcional e visual reconciliada
 
-A D5-C3 altera maturidade de validação sem alterar o inventário visual ou granular:
+A D5-C4A preserva o inventário físico e granular e altera somente a evidência de materialização/contrato dos handoffs:
 
 - **121 SVGs** existentes e referenciados;
 - **121 associações** individuais;
@@ -100,8 +101,9 @@ A D5-C3 altera maturidade de validação sem alterar o inventário visual ou gra
 - **57 superfícies/estados/fronteiras**;
 - **66 transições documentais**.
 
-Entre as quatro responsabilidades pessoais adicionadas/reconciliadas recentemente:
+Entre as responsabilidades pessoais adicionadas/reconciliadas recentemente:
 
+- `PER-008 — Hoje` mantém duas variantes; o estado recorrente é reformulado e revalidado localmente pela D5-C4A;
 - `PER-009 — Conta e configurações da Pessoa` permanece sem SVG;
 - `PER-010 — Meus Objetivos` possui SVG D5-C2 reformulado e validado localmente pela D5-C3;
 - `PER-011 — Meus Próximos Passos` possui SVG D5-C2 reformulado e validado localmente pela D5-C3;
@@ -116,7 +118,7 @@ PER-008 — Hoje
 └── TRN-012 → PER-012 → TRN-013 → PER-008
 ```
 
-`TRN-008..013` permanecem `contratadas`. A presença de `‹ Hoje` nos três wireframes não valida entrada, saída, payload, retorno, interrupção, concorrência, idempotência ou revalidação de autorização.
+A D5-C4A materializa no estado recorrente de Hoje `Meus Objetivos`, `Abrir este passo` e `Minha Evolução` como affordances compactas e governa contexto mínimo, revalidação, retorno neutro, interrupção, concorrência e idempotência. `TRN-008..013` continuam `contratadas`: contrato e affordance não equivalem a validação ponta a ponta.
 
 `TRN-406/407` também permanecem contratadas. `TRN-417/418` e `TRN-427/428` continuam integralmente validadas no limite documental de navegação administrativa. As transições comerciais internas de Planos preservam suas maturidades anteriores.
 
@@ -184,7 +186,7 @@ Domínio de Evolução ≠ diagnóstico
 Domínio de Evolução ≠ prova de evolução
 ```
 
-A D5-C1 aplica essa separação prospectivamente à Experience Architecture de `Meus Objetivos`, `Meus Próximos Passos` e `Minha Evolução`. A D5-C2 a torna visualmente inspecionável e a D5-C3 valida/reformula o estado-base sem reescrever retroativamente os contratos históricos publicados do PAS-001.
+A D5-C1 aplica essa separação prospectivamente à Experience Architecture de `Meus Objetivos`, `Meus Próximos Passos` e `Minha Evolução`. A D5-C2 a torna visualmente inspecionável, a D5-C3 valida/reformula o estado-base e a D5-C4A governa a navegação entre Hoje e essas capacidades sem transformar domínio ou contexto em decisão, prioridade, progresso ou evolução.
 
 A UXA-100-A4 corrige no SVG de `ORG-001` o rótulo visual obsoleto `Guivos Business`, sem criar novo ativo. `BND-002` permanece fronteira genérica de contratação/dimensionamento assistido e não pertence semanticamente a um plano específico.
 
@@ -237,7 +239,7 @@ Os Domínios de Evolução constituem vocabulário semântico canônico do Journ
 
 Guivos Intelligence pode produzir candidatos de domínio e relações multidomínio, mas não pode transformar inferência em domínio confirmado sem autoridade suficiente, criar score humano ou utilizar domínio sensível como autorização de publicidade comportamental.
 
-A materialização/validação documental de `PER-010..012` também não declara rotas, banco, APIs, eventos ou modelo físico de grafo implementados.
+A materialização/validação documental de `PER-010..012` e o contrato D5-C4A também não declaram rotas, banco, APIs, eventos ou modelo físico de grafo implementados.
 
 ## 7. Marca, naming e ativos digitais
 
@@ -310,7 +312,7 @@ Não são presumidos como operacionais: Termos publicados, Aviso/Política de Pr
 
 Domínios que envolvam saúde, condição emocional, espiritualidade/religião, finanças, emprego, família, sexualidade, vulnerabilidade ou outras informações sensíveis exigem finalidade, minimização, autoridade e proteção reforçada.
 
-A D5-C3 valida documentalmente que os estados-base preservam minimização, contestação e controles de privacidade, mas isso não comprova controles operacionais. Títulos neutros, ocultação de área/domínio sensível, dispositivo compartilhado e autenticação reforçada continuam dependentes de materializações específicas quando aplicáveis. `domain_link` sensível não constitui autorização adicional de tratamento.
+A D5-C3 valida documentalmente que os estados-base preservam minimização, contestação e controles de privacidade, mas isso não comprova controles operacionais. A D5-C4A acrescenta que a navegação não transporta automaticamente domínio sensível, interpretação, evidência, conteúdo clínico/financeiro/religioso ou autorização ampliada; `TRN-012` abre Minha Evolução de modo genérico e neutro por padrão. Títulos neutros, ocultação de área/domínio sensível, dispositivo compartilhado e autenticação reforçada continuam dependentes de materializações específicas quando aplicáveis. `domain_link` sensível não constitui autorização adicional de tratamento.
 
 ## 12. Public Canon
 
@@ -327,7 +329,7 @@ O Public Canon traduz autoridades do GKR para linguagem pública e deve distingu
 
 A página pública de Arquitetura do Guivos Journey explicita os nove Domínios de Evolução e exemplos de como a Guivos pode apoiar jornadas nesses domínios, preservando os guardrails do `PAS-001-DOMAIN-MODEL-001`.
 
-D5-C3 é uma autoridade interna de Experience Architecture e não, por si só, autoriza declaração pública de disponibilidade de produto. Validação documental/visual ≠ tela implementada.
+D5-C4A é uma autoridade interna de Experience Architecture e não, por si só, autoriza declaração pública de disponibilidade de produto. Validação documental/visual ≠ tela implementada.
 
 Nenhum texto público pode promover estado superior ao evidenciado nas autoridades internas.
 
@@ -360,18 +362,19 @@ O programa amplo de ressincronização documental está **consolidado** quanto a
 | Journey — Domínios de Evolução | baseline canônico + D4 propagado + D5-A/B materializados em superfícies existentes |
 | D5-C1 — direção, movimento e evolução | PER-010..012 + TRN-008..013 contratados |
 | D5-C2 — low-fidelity das três superfícies | PER-010..012 materializados |
-| D5-C3 — validação funcional local | **PER-010..012 reformulados e validados; TRN-008..013 ainda contratadas** |
+| D5-C3 — validação funcional local | PER-010..012 reformulados e validados; TRN-008..013 ainda contratadas |
+| D5-C4A — contrato/materialização dos handoffs | **Hoje recorrente reformulado/revalidado; contexto mínimo e proteção dos seis handoffs governados; TRN-008..013 ainda contratadas** |
 | V4 — efeito externo de oportunidades | encerrada pela UXA-101 até BND-001 |
 | V5 — erros, retornos e interrupções | **pendente; não iniciada** |
 
-D5-C1/C2/C3 não são V5 e não alteram a numeração UXA.
+D5-C1/C2/C3/C4A não são V5 e não alteram a numeração UXA.
 
 ## 15. Preservações finais
 
 - M7.88 permanece o marco funcional;
 - UXA-101 permanece a última frente funcional numerada;
 - UXA-100-A4 permanece reconciliação de Planos e não inicia UXA-102;
-- D5-C3 é a frente não numerada mais recente de Experience Architecture;
+- D5-C4A é a frente não numerada mais recente de Experience Architecture;
 - UXA-102/V5 não foi iniciada;
 - Engenharia de Produto permanece pausada antes de W0-01;
 - Pessoa, Coletivo e Organização permanecem jornadas `draft`;
@@ -380,6 +383,7 @@ D5-C1/C2/C3 não são V5 e não alteram a numeração UXA.
 - classificação de domínio por IA não está declarada como operacional;
 - ontologia de grafo física não está declarada como implementada;
 - `PER-010..012` validados localmente não equivalem a continuidade integrada ou telas disponíveis em produto;
+- `PER-008` recorrente reformulado/revalidado pela D5-C4A não promove as seis transições;
 - `TRN-008..013` contratadas não equivalem a continuidade validada;
 - materialização, validação, promoção, contratação, implementação e operação são estados distintos;
 - projeção não é realizado;
@@ -393,6 +397,6 @@ D5-C1/C2/C3 não são V5 e não alteram a numeração UXA.
 
 ## 16. Próximo ato governado
 
-A D5-C3 não autoriza automaticamente promoção de `TRN-008..013`.
+A D5-C4A não autoriza automaticamente promoção de `TRN-008..013`.
 
-A eventual validação integrada de `Hoje ↔ Meus Objetivos`, `Hoje ↔ Meus Próximos Passos` e `Hoje ↔ Minha Evolução` exige autorização separada e deverá tratar identidade, payload/contexto, retorno, interrupção, concorrência, idempotência e revalidação de autorização. D6, D7, materialização de `PER-009`, maturidade das transições internas de Planos, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering também permanecem frentes separadas.
+A eventual **D5-C4B — validação integrada dos seis handoffs** exige autorização separada e deverá decidir individualmente se cada ligação possui evidência suficiente para promoção, incluindo origem/destino, identidade, contexto mínimo, retorno, interrupção, concorrência, idempotência, revalidação de autoridade e sensibilidade. D6, D7, materialização de `PER-009`, maturidade das transições internas de Planos, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering também permanecem frentes separadas.

@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.20.0
+version: 0.21.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -12,6 +12,7 @@ related:
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
   - GKR-UX-D5-C3-001
+  - GKR-UX-D5-C4A-001
   - UXA-002
   - UXA-004
   - UXA-006
@@ -124,7 +125,8 @@ Regras desta vista:
 - D5-A e D5-B materializam o eixo em superfícies existentes;
 - D5-C1 contrata Objetivos, Próximos Passos e Evolução;
 - D5-C2 materializa um estado-base low-fidelity para cada uma dessas três responsabilidades;
-- D5-C3 reforma e valida funcionalmente esses três estados-base no limite local, sem promover seus handoffs.
+- D5-C3 reforma e valida funcionalmente esses três estados-base no limite local, sem promover seus handoffs;
+- D5-C4A governa a navegação entre Hoje e as três responsabilidades sem transformar contexto ou domínio em decisão, prioridade, progresso ou evolução.
 
 ## 3. Direção, movimento e evolução a partir de Hoje
 
@@ -146,7 +148,17 @@ A D5-C2 materializa e a D5-C3 reforma/valida localmente:
 - `PER-011` em `d5-c2-person-next-steps-mobile.svg`;
 - `PER-012` em `d5-c2-person-evolution-mobile.svg`.
 
-As três superfícies possuem **validação funcional local vigente** e `TRN-008..013` permanecem **contratadas**.
+A D5-C4A reforma e revalida localmente o estado recorrente de `PER-008` em `uxa-006-hoje-mobile.svg` para materializar as origens dos três handoffs sem criar novo SVG. O estado recorrente passa a exibir, no bloco existente de continuidade:
+
+```text
+Meus Objetivos
+Abrir este passo
+Minha Evolução
+```
+
+A primeira variante de Hoje permanece inalterada e não é obrigada a expor esses aprofundamentos durante a orientação inicial.
+
+As superfícies possuem **validação funcional local vigente** e `TRN-008..013` permanecem **contratadas**.
 
 ### 3.1 PER-010 — Meus Objetivos
 
@@ -213,13 +225,24 @@ superfícies especializadas
 → aprofundam e oferecem controle
 ```
 
-A existência e validação local dos três SVGs não exige três cards permanentes em Hoje e não autoriza exposição sensível por padrão.
+D5-C4A não cria três cards permanentes. Os três acessos são affordances compactas e neutras. `Minha Evolução` não afirma que houve mudança; `Abrir este passo` não inicia ou conclui o passo; `Meus Objetivos` não cria ou prioriza objetivo.
 
-### 3.5 Handoffs não contratados e não validados
+### 3.5 Handoffs contratados e não validados
 
 Não existem handoffs diretos governados entre `PER-010`, `PER-011` e `PER-012`. Relação semântica entre Objetivo, Próximo Passo e Evolução não é evidência suficiente de necessidade de navegação direta.
 
-`TRN-008..013` permanecem contratadas. O rótulo `‹ Hoje` não valida payload/contexto, retorno, interrupção, concorrência, idempotência ou revalidação de autorização.
+D5-C4A governa para `TRN-008..013`:
+
+- identidade preservada quando houver objeto explicitamente acionado;
+- contexto semântico mínimo;
+- revalidação no destino;
+- retorno sem mutação implícita;
+- interrupção sem efeito funcional;
+- concorrência resolvida pelo estado vigente;
+- idempotência da navegação;
+- proteção adicional de sensibilidade em `TRN-012/013`.
+
+Mesmo após esse contrato, `TRN-008..013` permanecem contratadas. A presença das affordances e de `‹ Hoje` não constitui validação ponta a ponta.
 
 ## 4. Descoberta de oportunidades e saída consciente
 
@@ -306,6 +329,7 @@ Explorar Coletivos
 - abrir Meus Objetivos não cria, confirma ou prioriza objetivo;
 - abrir Meus Próximos Passos não inicia, aceita ou conclui movimento;
 - abrir Minha Evolução não presume mudança, progresso ou evolução reconhecida;
+- contexto de navegação não amplia consentimento nem autorização;
 - conteúdo sensível nas três superfícies especializadas exige minimização e controle;
 - oportunidade publicada não é automaticamente recomendada;
 - proximidade não equivale a relevância;
@@ -320,7 +344,7 @@ Explorar Coletivos
 Esta vista permanece `draft` porque:
 
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` ainda são parciais;
-- `PER-010`, `PER-011` e `PER-012` estão validados localmente, mas `TRN-008..013` permanecem contratadas;
+- `PER-008` recorrente e `PER-010..012` estão validados localmente, mas `TRN-008..013` permanecem contratadas;
 - as transições comerciais internas de Planos são locais e não representam cobrança ponta a ponta;
 - `PER-009` ainda não possui materialização própria e `TRN-406/407` permanecem contratadas;
 - estados P0B adicionais permanecem separados;
@@ -331,6 +355,6 @@ Esta vista permanece `draft` porque:
 
 ## 9. Estado atual
 
-V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` explícitos nesta vista. D5-A/B materializam o eixo em superfícies existentes; D5-C1 contrata `PER-010..012` e `TRN-008..013`; D5-C2 materializa as três superfícies em low-fidelity; D5-C3 reforma e valida localmente os três SVGs, mantendo os seis handoffs como gate posterior separado.
+V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` explícitos nesta vista. D5-A/B materializam o eixo em superfícies existentes; D5-C1 contrata `PER-010..012` e `TRN-008..013`; D5-C2 materializa as três superfícies em low-fidelity; D5-C3 reforma e valida localmente os três SVGs; D5-C4A reforma/revalida Hoje recorrente e governa o contrato dos seis handoffs, mantendo-os contratados.
 
-V5/UXA-102, D6, D7 e Engenharia de Produto não foram iniciados automaticamente.
+D5-C4B, V5/UXA-102, D6, D7 e Engenharia de Produto não foram iniciados automaticamente.

@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.22.0
+version: 0.23.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -31,6 +31,7 @@ depends_on:
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
   - GKR-UX-D5-C3-001
+  - GKR-UX-D5-C4A-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -48,7 +49,7 @@ Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos *
 
 ## 2. Estado do instrumento
 
-A D5-C2 elevou o inventário para **121 associações** e **34 perfis** ao materializar um estado-base para `PER-010`, `PER-011` e `PER-012`. A D5-C3 reforma esses três ativos in-place e valida funcionalmente os perfis `R32`, `R33` e `R34` no limite local de suas superfícies; `PER-009` continua sem perfil visual próprio.
+A D5-C2 elevou o inventário para **121 associações** e **34 perfis** ao materializar um estado-base para `PER-010`, `PER-011` e `PER-012`. A D5-C3 reforma esses três ativos in-place e valida funcionalmente os perfis `R32`, `R33` e `R34`. A D5-C4A reforma e revalida localmente o SVG recorrente de `PER-008` no perfil `R05`, sem alterar associação, perfil ou maturidade das seis transições. `PER-009` continua sem perfil visual próprio.
 
 A reconciliação preserva a leitura de `BND-002` como fronteira genérica de contratação/dimensionamento assistido, a separação `Organização ≠ Guivos Business` e a distinção entre Domínio de Evolução, dimensão estrutural do Contexto Vivo e aspecto descritivo da mudança.
 
@@ -60,7 +61,7 @@ A reconciliação preserva a leitura de `BND-002` como fronteira genérica de co
 | R02 | PER-002/003/005 | TRN-001 | TRN-002 a 005 | voltar/trocar/editar/recusar | integração inicial | UXA-035 |
 | R03 | PER-004 | TRN-003 | TRN-004 | trocar/editar/descartar | expressão → inventário | UXA-069 |
 | R04 | PER-006/007 | TRN-005/006 | TRN-007 | revisar/recusar/retornar | handoffs pessoais anteriores | UXA-037; decisão corrente e TRN-007 UXA-097 |
-| R05 | PER-008 | TRN-007 | continuidade recorrente; TRN-008/010/012 contratadas | revisar/navegar/retornar; TRN-009/011/013 contratadas | estados alternativos de Hoje; handoffs especializados não validados | UXA-010 recorrente; primeira entrada e TRN-007 UXA-097; D5-C1 contratual |
+| R05 | PER-008 | TRN-007 | continuidade recorrente; TRN-008/010/012 contratadas | revisar/navegar/retornar; TRN-009/011/013 contratadas | validação integrada dos seis handoffs; estados alternativos de Hoje | UXA-010 recorrente; primeira entrada e TRN-007 UXA-097; **estado recorrente reformulado/revalidado GKR-UX-D5-C4A-001** |
 | R06 | PER-201 | TRN-203/304 | TRN-204/210 | voltar/alternar | integração patrocinada parcial | UXA-025/027/031/033; TRN-203/204/210 UXA-098 |
 | R07 | PER-202 | TRN-210/306 | TRN-211 | retornar ao mapa | integração patrocinada parcial | UXA-029; TRN-210/211 UXA-098 |
 | R08 | PER-203 | TRN-204/211 | TRN-205 → BND-001 | voltar ao detalhe; bloquear saída inválida; retorno externo sem presumir resultado | processo externo posterior à fronteira | UXA-012; entradas UXA-098; reformulação, revisão consciente e TRN-205 UXA-101 |
@@ -91,7 +92,7 @@ A reconciliação preserva a leitura de `BND-002` como fronteira genérica de co
 | R33 | PER-011 | TRN-010 contratada | TRN-011 contratada | revisar, adiar, não seguir; voltar para Hoje | handoff ponta a ponta; estados adicionais permanecem posteriores | **GKR-UX-D5-C3-001 — superfície validada localmente; TRN-010/011 contratadas** |
 | R34 | PER-012 | TRN-012 contratada | TRN-013 contratada | revisar leitura, pausar acompanhamento, ajustar privacidade; voltar para Hoje | handoff ponta a ponta; estados sensíveis adicionais quando aplicáveis | **GKR-UX-D5-C3-001 — superfície validada localmente; TRN-012/013 contratadas** |
 
-R32–R34 preservam as mesmas associações criadas pela D5-C2 e passam a carregar validação funcional local pela D5-C3. Essa promoção não altera `TRN-008..013`, que continuam `contratadas`.
+R32–R34 preservam as mesmas associações criadas pela D5-C2 e a validação funcional local da D5-C3. D5-C4A atualiza somente R05 e o contrato das ligações; `TRN-008..013` continuam `contratadas`.
 
 ## 4. Associação individual dos 121 SVGs
 
@@ -226,15 +227,16 @@ R32–R34 preservam as mesmas associações criadas pela D5-C2 e passam a carreg
 - perfis documentais: **34**;
 - com validação funcional vigente: **121**;
 - pendentes de validação específica: **0**;
+- R05 registra a revalidação local do estado recorrente de Hoje pela D5-C4A;
 - R32, R33 e R34 possuem validação funcional local pela D5-C3;
 - `PER-009` continua sem perfil porque não possui SVG dedicado;
 - `BND-001` e `BND-002` permanecem sem SVG por definição de fronteira;
 - validação visual não atribui à Guivos comportamento posterior às fronteiras.
 
-## 6. Estado após D5-C3
+## 6. Estado após D5-C4A
 
-A D5-C3 preserva as 121 associações individuais e os 34 perfis documentais. Ela apenas reformula e valida localmente R32–R34, sem criar ou remover vínculo visual.
+A D5-C4A preserva as 121 associações individuais e os 34 perfis documentais. Ela reformula/revalida localmente o SVG recorrente de R05 e mantém as associações de R32–R34 sem alteração.
 
-`TRN-008..013` permanecem contratadas apesar da validação local de `PER-010..012`; sua validação exige exame específico ponta a ponta. `TRN-406/407` permanecem contratadas até materialização de `PER-009`. As transições internas de contratação/ciclo preservam a maturidade anterior, e `TRN-416/426` continuam parciais após `BND-002`.
+`TRN-008..013` permanecem contratadas apesar da materialização das origens e do contrato integrado; sua validação exige exame específico ponta a ponta. `TRN-406/407` permanecem contratadas até materialização de `PER-009`. As transições internas de contratação/ciclo preservam a maturidade anterior, e `TRN-416/426` continuam parciais após `BND-002`.
 
-Pessoa, Coletivo e Organização continuam `draft`; V5/UXA-102, D6, D7 e Engenharia de Produto não são iniciados.
+Pessoa, Coletivo e Organização continuam `draft`; D5-C4B, V5/UXA-102, D6, D7 e Engenharia de Produto não são iniciados.
