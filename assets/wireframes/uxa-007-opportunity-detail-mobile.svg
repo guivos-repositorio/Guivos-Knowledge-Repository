@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="1860" viewBox="0 0 390 1860" role="img" aria-labelledby="title desc">
-  <title id="title">Wireframe reformulado do Detalhe de Oportunidade e revisão consciente de saída externa</title>
-  <desc id="desc">Estrutura móvel do Detalhe de Oportunidade com contexto, condições, responsável e relação comercial, seguida do estado de revisão antes de continuar para um destino externo.</desc>
+  <title id="title">Detalhe de Oportunidade com área própria e relevância contextual separadas</title>
+  <desc id="desc">Estrutura móvel do Detalhe que apresenta a área declarada da oportunidade como metadado institucional e, em bloco separado, explica por que ela pode fazer sentido para a Pessoa sem converter domínio em recomendação automática.</desc>
   <rect width="390" height="1860" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="1858" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
 
@@ -14,7 +14,7 @@
   <text x="34" y="140" font-family="Arial, sans-serif" font-size="10" fill="#555555">CURSO · ONLINE · INSCRIÇÕES ABERTAS</text>
   <text x="34" y="168" font-family="Arial, sans-serif" font-size="19" font-weight="700">Inglês profissional</text>
   <text x="34" y="190" font-family="Arial, sans-serif" font-size="12">Instituto Horizonte</text>
-  <text x="34" y="208" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver origem e responsável</text>
+  <text x="34" y="208" font-family="Arial, sans-serif" font-size="8">Área: Trabalho, carreira e estudos · declarada pelo Instituto Horizonte</text>
 
   <rect x="20" y="234" width="350" height="112" rx="10" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
   <text x="34" y="258" font-family="Arial, sans-serif" font-size="13" font-weight="700">Como a Guivos compreende seu momento</text>
@@ -32,10 +32,10 @@
   <text x="177" y="443" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Corrigir avanço</text>
 
   <rect x="20" y="466" width="350" height="122" rx="10" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
-  <text x="34" y="490" font-family="Arial, sans-serif" font-size="13" font-weight="700">Por que este próximo passo faz sentido</text>
-  <text x="34" y="512" font-family="Arial, sans-serif" font-size="10">Você já construiu uma base, deseja usar o idioma no trabalho</text>
-  <text x="34" y="529" font-family="Arial, sans-serif" font-size="10">e informou que a prática profissional ainda é uma dificuldade.</text>
-  <text x="34" y="550" font-family="Arial, sans-serif" font-size="10">O curso pode apoiar essa prática, mas não é o único caminho.</text>
+  <text x="34" y="490" font-family="Arial, sans-serif" font-size="13" font-weight="700">Por que pode fazer sentido para você?</text>
+  <text x="34" y="512" font-family="Arial, sans-serif" font-size="10">Seu objetivo confirmado e sua busca indicam interesse profissional.</text>
+  <text x="34" y="529" font-family="Arial, sans-serif" font-size="10">Formato e horário também são compatíveis com preferências informadas.</text>
+  <text x="34" y="550" font-family="Arial, sans-serif" font-size="9">A área da oportunidade é só um sinal; isoladamente não recomenda nada.</text>
   <text x="34" y="572" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Faz sentido</text>
   <text x="109" y="572" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Parcialmente</text>
   <text x="196" y="572" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Não faz sentido</text>
