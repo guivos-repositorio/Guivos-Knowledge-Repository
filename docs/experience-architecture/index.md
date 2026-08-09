@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.97.0
+version: 0.98.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-09
 related:
   - PAS-001
   - PAS-001-DOMAIN-MODEL-001
@@ -36,6 +36,7 @@ related:
   - UXA-100-A4
   - UXA-101
   - GKR-UX-D5-A-001
+  - GKR-UX-D5-B-001
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -87,6 +88,8 @@ A UXA-100-A4 adiciona somente `PER-009` como responsabilidade sem SVG e seis han
 
 A D5-A reforma quatro SVGs já associados a `PER-004`, `PER-007` e `PER-008` para materializar Domínios de Evolução sem criar novo ativo visual, superfície ou transição. As contagens permanecem inalteradas.
 
+A D5-B materializa o mesmo eixo em `ORG-002`, `PER-201`, `PER-202` e `PER-203`, reutilizando o cadastro institucional e reformulando Mapa, Lista e Detalhe in-place. Nenhum novo ativo visual, superfície ou transição é criado.
+
 ## 4. Decisões estruturais preservadas
 
 - materialização não equivale a validação funcional por padrão;
@@ -110,7 +113,11 @@ A D5-A reforma quatro SVGs já associados a `PER-004`, `PER-007` e `PER-008` par
 - Domínio de Evolução organiza sobre o que a jornada trata e não representa diagnóstico, identidade, score, objetivo, Próximo Passo ou prova de evolução;
 - domínio candidato deve permanecer visualmente distinto de domínio confirmado;
 - ausência de domínio confirmado é estado legítimo e não bloqueia a jornada;
-- um participante ou item pode se relacionar a mais de um domínio quando houver autoridade e finalidade adequadas.
+- um participante ou item pode se relacionar a mais de um domínio quando houver autoridade e finalidade adequadas;
+- domínio da oportunidade ≠ domínio confirmado da Pessoa ≠ relevância contextual ≠ recomendação;
+- Área da jornada, quando usada como filtro de Oportunidades, depende de ação explícita da Pessoa e não pode ser ativada silenciosamente por inferência;
+- uma Organização pode declarar a área da oportunidade, mas não classificar a Pessoa nessa área;
+- mesmo domínio entre oportunidade e jornada não cria match, recomendação, compartilhamento ou autorização automáticos.
 
 ## 5. Evolução recente
 
@@ -122,9 +129,10 @@ UXA-097 — primeira Hoje e TRN-007
 → UXA-101 — revisão consciente de saída e TRN-205 até BND-001
 → UXA-100-A4 — reconciliação das origens administrativas de Planos
 → D5-A — Domínios de Evolução em Expressão Guiada, Compreensão Inicial e Hoje
+→ D5-B — Domínios de Evolução na camada de Oportunidades
 ```
 
-A D5-A é uma frente de materialização semântica não numerada e não altera a última frente funcional numerada: UXA-101 continua vigente e UXA-102/V5 permanece não iniciada.
+D5-A e D5-B são frentes de materialização semântica não numeradas e não alteram a última frente funcional numerada: UXA-101 continua vigente e UXA-102/V5 permanece não iniciada.
 
 ### 5.1 Resultado da D5-A
 
@@ -139,7 +147,22 @@ A D5-A é uma frente de materialização semântica não numerada e não altera 
 7. ausência de domínio confirmada como estado legítimo da experiência;
 8. nenhuma nova superfície, transição ou família visual;
 9. 118 SVGs, 31 perfis, 54 superfícies/estados/fronteiras e 60 transições preservados;
-10. D5-B, D5-C, UXA-102/V5 e Engenharia de Produto mantidos fora do escopo.
+10. D5-B, D5-C, UXA-102/V5 e Engenharia de Produto mantidos fora do escopo daquela frente.
+
+### 5.2 Resultado da D5-B
+
+[GKR-UX-D5-B-001 — Materialização Controlada dos Domínios de Evolução na Camada de Oportunidades](d5-b-evolution-domains-opportunities-layer.md) consolida:
+
+1. `0..n` Áreas relacionadas dentro da etapa existente `Jornada e contribuição` de `ORG-002`, sem criar 12ª etapa;
+2. área declarada como metadado da oportunidade, nunca como classificação da Pessoa;
+3. Área da jornada disponível como filtro explícito em `PER-201` e `PER-202`;
+4. proibição de ativação silenciosa do filtro a partir de inferência ou perfil pessoal;
+5. Mapa e Lista preservando a mesma consulta e a mesma semântica de área;
+6. `PER-203` separando área/proveniência da oportunidade da explicação de relevância contextual;
+7. domínio isolado declarado insuficiente para produzir recomendação;
+8. proteção reforçada contra reconstrução de saúde, espiritualidade/religião, finanças ou outros contextos sensíveis por navegação;
+9. nenhuma nova superfície, transição ou família visual;
+10. D5-C, D6, D7, UXA-102/V5 e Engenharia de Produto mantidos fora do escopo.
 
 ## 6. Resultado da UXA-100-A4
 
@@ -179,6 +202,7 @@ A frente consolida revisão pré-saída em `PER-203`, identificação do destino
 | registro de transições | `active` 0.20.0 |
 | detalhamento comercial/fronteira | `active` |
 | D5-A — Domínios na jornada inicial | `active` 1.0.0 |
+| D5-B — Domínios na camada de Oportunidades | `active` 1.0.0 |
 
 ## 9. Ressalvas vigentes
 
@@ -190,7 +214,8 @@ A frente consolida revisão pré-saída em `PER-203`, identificação do destino
 - gateway, cobrança real, proration e processo de contratação/dimensionamento assistido após `BND-002` permanecem fora do escopo;
 - processo externo após `BND-001` permanece sob autoridade de terceiro;
 - Jornadas da Pessoa, Coletivo e Organização continuam `draft`;
-- D5-B e D5-C permanecem não iniciadas e exigem autorização separada.
+- D5-C permanece não iniciada e exige autorização separada;
+- D6 e D7 permanecem não iniciadas.
 
 ## 10. Fila global preservada
 
@@ -202,11 +227,12 @@ V1 — encerrada pela UXA-097
 → V4 — encerrada pela UXA-101 até BND-001
 → Planos — origem voluntária reconciliada pela UXA-100-A4
 → D5-A — Domínios na jornada inicial materializados in-place
+→ D5-B — Domínios na camada de Oportunidades materializados sem nova superfície
 → V5 — pendente e não iniciada
 ```
 
-D5-A não consome nem antecipa V5.
+D5-A e D5-B não consomem nem antecipam V5.
 
 ## 11. Próxima evolução possível
 
-D5-B, D5-C, materialização de `PER-009`, V5/UXA-102, cobrança real, contratação/dimensionamento assistido após `BND-002` e demais validações exigem autorização separada. Nenhuma delas é iniciada automaticamente por esta frente.
+D5-C, D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, contratação/dimensionamento assistido após `BND-002` e demais validações exigem autorização separada. Nenhuma delas é iniciada automaticamente por esta frente.

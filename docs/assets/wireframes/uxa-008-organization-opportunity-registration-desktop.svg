@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1120" viewBox="0 0 1440 1120" role="img" aria-labelledby="title desc">
-  <title id="title">Wireframe reformulado do Cadastro de Oportunidade pela Organização</title>
-  <desc id="desc">Estrutura desktop com contexto institucional, contribuição para jornadas, onze etapas reformuladas, investimento e condições, painel de coerência com a Fundação da Guivos, prévia e ações de salvamento.</desc>
+  <title id="title">Cadastro de Oportunidade com áreas relacionadas dentro de Jornada e contribuição</title>
+  <desc id="desc">Estrutura desktop do cadastro institucional em etapa posterior, mantendo visível o resumo de Jornada e contribuição com áreas relacionadas à oportunidade, sem classificar participantes ou criar nova etapa.</desc>
   <rect width="1440" height="1120" fill="#ffffff"/>
   <rect x="0" y="0" width="250" height="1120" fill="#f3f3f3" stroke="#999999"/>
   <text x="28" y="52" font-family="Arial, sans-serif" font-size="22" font-weight="700">Guivos Business</text>
@@ -57,8 +57,9 @@
   <text x="690" y="240" font-family="Arial, sans-serif" font-size="11">Praticar comunicação aplicada e ampliar confiança em situações de trabalho.</text>
   <text x="1080" y="220" font-family="Arial, sans-serif" font-size="11" font-weight="700">Limite declarado</text>
   <text x="1080" y="240" font-family="Arial, sans-serif" font-size="11">Não garante fluência, promoção ou contratação.</text>
-  <text x="310" y="272" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Editar Jornada e contribuição</text>
-  <text x="510" y="272" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver evidências apresentadas</text>
+  <text x="310" y="260" font-family="Arial, sans-serif" font-size="10" font-weight="700">Áreas relacionadas: Trabalho, carreira e estudos · Organização e equilíbrio da vida</text>
+  <text x="310" y="282" font-family="Arial, sans-serif" font-size="9">Metadado da oportunidade · não classifica o participante · <tspan text-decoration="underline">Editar Jornada e contribuição</tspan></text>
+  <text x="880" y="282" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver evidências apresentadas</text>
 
   <text x="286" y="334" font-family="Arial, sans-serif" font-size="24" font-weight="700">Investimento e condições</text>
   <text x="286" y="360" font-family="Arial, sans-serif" font-size="12" fill="#555555">Informe o custo real sem desconectar o investimento da contribuição e dos limites já declarados.</text>
