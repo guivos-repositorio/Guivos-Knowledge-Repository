@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -41,6 +41,7 @@ related:
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
   - GKR-UX-D5-C3-001
+  - GKR-UX-D5-C4A-001
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -94,7 +95,7 @@ A D5-A reforma quatro SVGs de `PER-004`, `PER-007` e `PER-008` para materializar
 
 A D5-B materializa o mesmo eixo em `ORG-002`, `PER-201`, `PER-202` e `PER-203`, também in-place.
 
-A D5-C1 adiciona três responsabilidades (`PER-010..012`) e seis handoffs (`TRN-008..013`) no estado contratado. A D5-C2 adiciona três SVGs low-fidelity e três perfis. A D5-C3 reforma in-place e valida funcionalmente os três SVGs, elevando a cobertura visual de **118 para 121 validações vigentes** sem criar novo ativo, ID ou transição.
+A D5-C1 adiciona três responsabilidades (`PER-010..012`) e seis handoffs (`TRN-008..013`) no estado contratado. A D5-C2 adiciona três SVGs low-fidelity e três perfis. A D5-C3 reforma in-place e valida funcionalmente os três SVGs, elevando a cobertura visual de **118 para 121 validações vigentes**. A D5-C4A reforma e revalida localmente o estado recorrente de `PER-008 — Hoje`, materializa origens visuais inequívocas e governa o contrato semântico dos seis handoffs sem promover nenhuma transição.
 
 ## 4. Decisões estruturais preservadas
 
@@ -122,6 +123,8 @@ A D5-C1 adiciona três responsabilidades (`PER-010..012`) e seis handoffs (`TRN-
 - multidomínio é legítimo quando houver autoridade e finalidade adequadas;
 - domínio da oportunidade ≠ domínio confirmado da Pessoa ≠ relevância contextual ≠ recomendação;
 - `PER-008 — Hoje` sintetiza e encaminha, mas não substitui Objetivos, Próximos Passos ou Evolução Contínua;
+- acesso visual a uma superfície especializada não cria, inicia, confirma ou reconhece objeto funcional;
+- contexto de navegação é mínimo e não amplia consentimento ou autoridade;
 - Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança;
 - `Minha Evolução` ≠ roda da vida obrigatória ≠ ranking ≠ diagnóstico ≠ percentual global da Pessoa.
 
@@ -140,6 +143,7 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C1 — contrato das superfícies de direção, movimento e evolução
 → D5-C2 — low-fidelity de Meus Objetivos, Meus Próximos Passos e Minha Evolução
 → D5-C3 — validação funcional e reformulação dos três SVGs
+→ D5-C4A — origens visuais em Hoje + contrato integrado dos seis handoffs, sem promoção
 ```
 
 D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada.
@@ -178,6 +182,18 @@ D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional
 - os três SVGs passam a possuir validação funcional local vigente;
 - `TRN-008..013` permanecem contratadas e fora da promoção desta frente.
 
+### 5.6 D5-C4A
+
+[GKR-UX-D5-C4A-001](d5-c4a-direction-movement-evolution-handoff-contract.md) fecha o degrau anterior à validação integrada:
+
+- reformula `uxa-006-hoje-mobile.svg` sem criar novo SVG;
+- materializa `Meus Objetivos`, `Abrir este passo` e `Minha Evolução` como affordances compactas no estado recorrente de Hoje;
+- preserva a primeira variante de Hoje sem sobrecarga adicional;
+- define identidade, contexto mínimo, revalidação, retorno, interrupção, concorrência e idempotência;
+- protege `TRN-012/013` contra exposição ou confirmação sensível implícita;
+- revalida localmente o SVG recorrente de Hoje;
+- mantém `TRN-008..013` no estado `contratada`.
+
 ## 6. Resultado da UXA-100-A4 preservado
 
 [UXA-100-A4](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md) continua governando `PER-009`, `TRN-406/407`, `TRN-417/418` e `TRN-427/428`. `PER-009` permanece sem SVG; cobrança real, entitlement e processo posterior a `BND-002` continuam fora do escopo.
@@ -190,8 +206,8 @@ D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active`; D5-C3 sincronizada |
-| Jornada da Pessoa | `draft`; PER-010..012 validados localmente |
+| Jornadas Integradas | `active`; D5-C4A sincronizada |
+| Jornada da Pessoa | `draft`; PER-010..012 validados localmente; handoffs ainda contratados |
 | Jornada do Coletivo | `draft` |
 | Jornada da Organização | `draft` |
 | catálogo integrado | `active`; 121 SVGs / 121 validados |
@@ -199,20 +215,22 @@ D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional
 | galeria da Pessoa | `active`; 23 SVGs |
 | galeria de Planos | `active` 0.5.0 |
 | matriz por SVG | `active`; 121 associações / 34 perfis |
-| lacunas | `active`; handoffs D5-C permanecem separados |
+| lacunas | `active`; validação integrada D5-C4B permanece separada |
 | registro de superfícies | `active`; 57 IDs |
 | registro de transições | `active`; 66 transições |
-| detalhamento da Pessoa | `active`; PER-010..012 validados localmente |
+| detalhamento da Pessoa | `active`; PER-008 recorrente revalidado localmente; PER-010..012 validados localmente |
 | D5-A | `active` 1.0.0 |
 | D5-B | `active` 1.0.0 |
 | D5-C1 | `active` 1.0.0 |
 | D5-C2 | `active` 1.0.0 |
 | D5-C3 | `active` 1.0.0 |
+| D5-C4A | `active` 1.0.0 |
 
 ## 9. Ressalvas vigentes
 
 - 10 responsabilidades permanecem sem SVG dedicado, incluindo `PER-009`;
 - `TRN-008..013` permanecem contratadas até validação ponta a ponta;
+- D5-C4A governa o contrato e materializa as origens, mas não substitui a validação integrada;
 - `TRN-406/407` permanecem contratadas;
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` permanecem parciais;
 - `TRN-304`, `TRN-305` e `TRN-306` permanecem parciais na integração patrocinada;
@@ -237,11 +255,12 @@ V1 — encerrada pela UXA-097
 → D5-C1 — responsabilidades e handoffs mínimos contratados
 → D5-C2 — três superfícies materializadas em low-fidelity
 → D5-C3 — três superfícies reformuladas e validadas localmente
+→ D5-C4A — Hoje recorrente reformulado/revalidado + contrato dos seis handoffs
 → V5 — pendente e não iniciada
 ```
 
-D5-A/B/C1/C2/C3 não consomem nem antecipam V5.
+D5-A/B/C1/C2/C3/C4A não consomem nem antecipam V5.
 
 ## 11. Próxima evolução possível
 
-Após integração governada da D5-C3, uma frente posterior poderá examinar exclusivamente `TRN-008..013` e a continuidade `Hoje ↔ Objetivos/Próximos Passos/Evolução`. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real e demais validações permanecem independentes. Nenhuma é iniciada automaticamente.
+Após integração governada da D5-C4A, uma **D5-C4B** poderá examinar exclusivamente `TRN-008..013` e decidir individualmente se cada continuidade `Hoje ↔ Objetivos/Próximos Passos/Evolução` possui evidência suficiente para promoção. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real e demais validações permanecem independentes. Nenhuma é iniciada automaticamente.
