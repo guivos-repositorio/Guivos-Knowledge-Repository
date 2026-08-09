@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-101
 status: active
-version: 2.8.0
+version: 2.9.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-08
 depends_on:
@@ -20,6 +20,7 @@ related:
   - UXA-100
   - UXA-100-A4
   - UXA-101
+  - PAS-001-DOMAIN-MODEL-001
   - M7.88
 normative: false
 ---
@@ -27,6 +28,8 @@ normative: false
 # Índice das Frentes UXA-047 a UXA-101
 
 Este índice preserva a rastreabilidade das frentes funcionais recentes. A UXA-100-A4 é subfrente de reconciliação da UXA-100 e não cria UXA-102 nem novo marco funcional.
+
+A formalização de `PAS-001-DOMAIN-MODEL-001` é uma autoridade semântica do Guivos Journey e **não constitui nova UXA, novo SVG, nova transição ou novo marco funcional**.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -109,7 +112,7 @@ Complementos da UXA-100:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **2.30.0** |
+| Registro do Estado Atual | **2.31.0** |
 | marco funcional | **M7.88** |
 | última UXA | **UXA-101** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
@@ -121,3 +124,5 @@ Complementos da UXA-100:
 | Engenharia de Produto | pausada antes de W0-01 |
 
 A UXA-100-A4 adiciona `PER-009` e seis handoffs de navegação; não cria SVG, novo marco, checkout, cobrança real ou implementação técnica.
+
+O modelo de Domínios de Evolução não altera essas contagens e não inicia UXA-102/V5.
