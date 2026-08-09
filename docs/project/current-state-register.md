@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.31.0
+version: 2.32.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-09
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -12,6 +12,7 @@ related:
   - GEA-000
   - PAS-001
   - PAS-001-DOMAIN-MODEL-001
+  - PAS-001-DOMAIN-RECON-001
   - GPA-007
   - UXA-097
   - UXA-098
@@ -19,6 +20,9 @@ related:
   - UXA-100
   - UXA-100-A4
   - UXA-101
+  - GKR-UX-D5-A-001
+  - GKR-UX-D5-B-001
+  - GKR-UX-D5-C1-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GTM-000
   - GTM-007
@@ -47,9 +51,11 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro declara o estado global vigente do Guivos Knowledge Repository após a consolidação documental P1–P9 de 2026-08-08, a reconciliação controlada da origem voluntária de Planos pela UXA-100-A4 e a formalização do modelo canônico de Domínios de Evolução do Guivos Journey.
+Este registro declara o estado global vigente do Guivos Knowledge Repository após a consolidação documental P1–P9, a reconciliação controlada da origem voluntária de Planos, a formalização dos Domínios de Evolução do Guivos Journey e a D5-C1 — contrato arquitetural das superfícies de direção, movimento e evolução da Pessoa.
 
-A formalização de Domínios de Evolução **não cria novo marco funcional, não inicia UXA-102, não retoma Engenharia de Produto e não converte taxonomia, arquitetura ou exemplos em operação comprovada**. Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
+A D5-C1 **não cria novo marco funcional, não inicia UXA-102, não retoma Engenharia de Produto e não transforma responsabilidade contratada em tela materializada ou implementação**. Ela adiciona três responsabilidades granulares e seis handoffs documentais, mantendo intacta a baseline de 118 SVGs.
+
+Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
 ## 2. Estado global
 
@@ -57,12 +63,13 @@ A formalização de Domínios de Evolução **não cria novo marco funcional, n�
 |---|---|
 | Era | GE-2 — Knowledge |
 | Marco funcional | **M7.88 — saída consciente para fronteira externa validada** |
-| Última frente funcional | **UXA-101** |
-| Subfrente de reconciliação | **UXA-100-A4 — origem voluntária de Planos** |
+| Última frente funcional numerada | **UXA-101** |
+| Reconciliação de Planos | **UXA-100-A4 — origem voluntária de Planos** |
+| Frente não numerada mais recente de Experience Architecture | **D5-C1 — responsabilidades de Objetivos, Próximos Passos e Evolução contratadas sem SVG** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Domínios de Evolução do Journey | **9 domínios canônicos + estado transversal “Ainda estou descobrindo”** |
-| Registros granulares | **54 superfícies/estados/fronteiras e 60 transições** |
+| Registros granulares | **57 superfícies/estados/fronteiras e 66 transições** |
 | Galeria visual | **118 SVGs** |
 | Matriz por SVG | **118 associações / 31 perfis** |
 | Jornadas principais | Pessoa, Coletivo e Organização permanecem `draft` |
@@ -76,22 +83,38 @@ A formalização de Domínios de Evolução **não cria novo marco funcional, n�
 | P8 | sete Produtos Especializados rebaselineados |
 | P9 | consolidação global e Public Canon em edição corrente |
 
-## 3. Cobertura funcional preservada e reconciliada
+## 3. Cobertura funcional e visual reconciliada
 
-A formalização dos Domínios de Evolução não altera a baseline visual ou de transições da Arquitetura da Experiência:
+A D5-C1 altera o inventário granular sem alterar o inventário visual:
 
 - 118 SVGs existentes e referenciados;
 - 118 associações individuais;
 - 31 perfis de rastreabilidade;
 - 118 validações funcionais vigentes de SVG;
-- 0 pendentes de validação específica de SVG;
-- 42 de 54 IDs granulares com referência visual;
-- 10 responsabilidades sem SVG dedicado;
+- 0 pendentes de validação específica de SVG existente;
+- 42 de 57 IDs granulares com referência visual;
+- 13 responsabilidades sem SVG dedicado;
 - 2 fronteiras sem tela por definição;
-- 54 superfícies/estados/fronteiras;
-- 60 transições documentais.
+- 57 superfícies/estados/fronteiras;
+- 66 transições documentais.
 
-`PER-009 — Conta e configurações da Pessoa` permanece sem SVG. `TRN-406/407` ficam contratadas; `TRN-417/418` e `TRN-427/428` são integralmente validadas no limite documental de navegação administrativa. As transições comerciais internas de Planos preservam suas maturidades anteriores.
+Responsabilidades pessoais ainda sem SVG:
+
+- `PER-009 — Conta e configurações da Pessoa`;
+- `PER-010 — Meus Objetivos`;
+- `PER-011 — Meus Próximos Passos`;
+- `PER-012 — Minha Evolução`.
+
+A D5-C1 registra:
+
+```text
+PER-008 — Hoje
+├── TRN-008 → PER-010 → TRN-009 → PER-008
+├── TRN-010 → PER-011 → TRN-011 → PER-008
+└── TRN-012 → PER-012 → TRN-013 → PER-008
+```
+
+`TRN-008..013` permanecem `contratadas`. `TRN-406/407` também permanecem contratadas. `TRN-417/418` e `TRN-427/428` continuam integralmente validadas no limite documental de navegação administrativa. As transições comerciais internas de Planos preservam suas maturidades anteriores.
 
 A UXA-101 continua encerrando V4 em `BND-001`. Resultado executado por terceiro após essa fronteira não é presumido pela Guivos.
 
@@ -149,11 +172,15 @@ Guivos Mall = nome canônico
 Guivos Marketplace = alias histórico/migração
 Domínio de Evolução ≠ identidade
 Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo
+Domínio de Evolução ≠ aspecto descritivo da mudança
 Domínio de Evolução ≠ Objetivo
+Domínio de Evolução ≠ Próximo Passo
 Domínio de Evolução ≠ score
 Domínio de Evolução ≠ diagnóstico
 Domínio de Evolução ≠ prova de evolução
 ```
+
+A D5-C1 aplica essa separação prospectivamente à Experience Architecture de `Meus Objetivos`, `Meus Próximos Passos` e `Minha Evolução` sem reescrever retroativamente os contratos históricos publicados do PAS-001.
 
 A UXA-100-A4 corrige no SVG de `ORG-001` o rótulo visual obsoleto `Guivos Business`, sem criar novo ativo. `BND-002` permanece fronteira genérica de contratação/dimensionamento assistido e não pertence semanticamente a um plano específico.
 
@@ -202,9 +229,11 @@ Não há autoridade suficiente para afirmar POC, cluster/Aura provisionado, dado
 
 `Grafo Global ≠ Guivos Intelligence ≠ Neo4j`.
 
-Os Domínios de Evolução agora constituem vocabulário semântico canônico do Journey e podem orientar futura ontologia, classificação explicável e relações no Grafo Global. Isso **não** declara ontologia física, nós, relações, embeddings, pipelines ou dados implementados.
+Os Domínios de Evolução constituem vocabulário semântico canônico do Journey e podem orientar futura ontologia, classificação explicável e relações no Grafo Global. Isso **não** declara ontologia física, nós, relações, embeddings, pipelines ou dados implementados.
 
 Guivos Intelligence pode produzir candidatos de domínio e relações multidomínio, mas não pode transformar inferência em domínio confirmado sem autoridade suficiente, criar score humano ou utilizar domínio sensível como autorização de publicidade comportamental.
+
+A existência documental de `PER-010..012` e `TRN-008..013` também não declara rotas, banco, APIs, eventos ou modelo físico de grafo implementados.
 
 ## 7. Marca, naming e ativos digitais
 
@@ -245,6 +274,8 @@ Pontos, créditos, saldo, streak ou ranking não podem substituir evolução, au
 
 O modelo de Domínios de Evolução reforça que contribuição, espiritualidade, saúde, finanças, relacionamentos ou organização não podem ser convertidos em ranking moral, score humano ou competição por “nível de evolução”.
 
+`PER-012 — Minha Evolução` permanece explicitamente incompatível com placar global, roda da vida obrigatória ou percentual geral da Pessoa.
+
 ## 10. Arquitetura institucional e Fundação Guivos
 
 `Fundação Guivos` permanece:
@@ -275,6 +306,8 @@ Não são presumidos como operacionais: Termos publicados, Aviso/Política de Pr
 
 Domínios que envolvam saúde, condição emocional, espiritualidade/religião, finanças, emprego, família, sexualidade, vulnerabilidade ou outras informações sensíveis exigem finalidade, minimização, autoridade e proteção reforçada.
 
+As futuras materializações de `PER-010..012` deverão preservar títulos neutros quando necessário, minimização, ocultação de área/domínio sensível, contestação e controle de compartilhamento. `domain_link` sensível não constitui autorização adicional de tratamento.
+
 ## 12. Public Canon
 
 `GOG-001 — Guia Oficial da Guivos` é a única superfície institucional classificada como `public-canon` neste domínio documental.
@@ -288,7 +321,9 @@ O Public Canon traduz autoridades do GKR para linguagem pública e deve distingu
 - conceito institucional e entidade constituída;
 - privacidade por design e controles efetivamente publicados/operacionais.
 
-A página pública de Arquitetura do Guivos Journey passa a explicitar os nove Domínios de Evolução e exemplos de como a Guivos pode apoiar jornadas nesses domínios, preservando os guardrails do `PAS-001-DOMAIN-MODEL-001`.
+A página pública de Arquitetura do Guivos Journey explicita os nove Domínios de Evolução e exemplos de como a Guivos pode apoiar jornadas nesses domínios, preservando os guardrails do `PAS-001-DOMAIN-MODEL-001`.
+
+D5-C1 é uma autoridade interna de Experience Architecture e não, por si só, autoriza nova declaração pública de disponibilidade de telas.
 
 Nenhum texto público pode promover estado superior ao evidenciado nas autoridades internas.
 
@@ -318,15 +353,19 @@ O programa amplo de ressincronização documental está **consolidado** quanto a
 | V3 — estados residuais Opportunity Boost | encerrada pela UXA-099 |
 | Planos — identidade/promoção canônica | encerrada pela UXA-100-A3 |
 | Planos — origem voluntária e retorno | identidade encerrada pela UXA-100-A4; PER-009 ainda sem materialização |
-| Journey — Domínios de Evolução | **baseline canônico documentado; sem implementação técnica ou nova UX presumida** |
+| Journey — Domínios de Evolução | baseline canônico + D4 propagado + D5-A/B materializados em superfícies existentes |
+| D5-C1 — direção, movimento e evolução | **PER-010..012 + TRN-008..013 contratados; sem SVG e sem validação ponta a ponta** |
 | V4 — efeito externo de oportunidades | encerrada pela UXA-101 até BND-001 |
 | V5 — erros, retornos e interrupções | **pendente; não iniciada** |
+
+D5-C1 não é V5 e não altera a numeração UXA.
 
 ## 15. Preservações finais
 
 - M7.88 permanece o marco funcional;
 - UXA-101 permanece a última frente funcional numerada;
-- UXA-100-A4 é subfrente de reconciliação e não inicia UXA-102;
+- UXA-100-A4 permanece reconciliação de Planos e não inicia UXA-102;
+- D5-C1 permanece frente não numerada de Experience Architecture;
 - UXA-102/V5 não foi iniciada;
 - Engenharia de Produto permanece pausada antes de W0-01;
 - Pessoa, Coletivo e Organização permanecem jornadas `draft`;
@@ -334,6 +373,8 @@ O programa amplo de ressincronização documental está **consolidado** quanto a
 - “Ainda estou descobrindo” não é décimo domínio;
 - classificação de domínio por IA não está declarada como operacional;
 - ontologia de grafo física não está declarada como implementada;
+- `PER-010..012` contratados não equivalem a telas disponíveis;
+- `TRN-008..013` contratadas não equivalem a continuidade validada;
 - materialização, validação, promoção, contratação, implementação e operação são estados distintos;
 - projeção não é realizado;
 - preço não é disposição a pagar;
@@ -346,6 +387,6 @@ O programa amplo de ressincronização documental está **consolidado** quanto a
 
 ## 16. Próximo ato governado
 
-A formalização dos Domínios de Evolução não autoriza automaticamente nova UX, esquema de banco, ontologia física, classificação algorítmica, coleta de dado sensível ou implementação.
+A D5-C1 não autoriza automaticamente materialização visual de suas três novas responsabilidades.
 
-Materialização de `PER-009`, maturidade das transições internas de Planos, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria.
+Materializar `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` ou `PER-012 — Minha Evolução` exige autorização separada por responsabilidade. D6, D7, materialização de `PER-009`, maturidade das transições internas de Planos, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering também permanecem frentes separadas e exigem autorização própria.
