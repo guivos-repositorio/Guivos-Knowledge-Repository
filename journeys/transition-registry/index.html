@@ -9312,7 +9312,8 @@
 
 <h1 id="registro-granular-de-transicoes">Registro Granular de Transições<a class="headerlink" href="#registro-granular-de-transicoes" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A D5-C1 adicionou seis handoffs bidirecionais mínimos entre <code>PER-008 — Hoje</code> e <code>PER-010 — Meus Objetivos</code>, <code>PER-011 — Meus Próximos Passos</code> e <code>PER-012 — Minha Evolução</code>. A D5-C2 materializou os três destinos, a D5-C3 os validou localmente e a D5-C4A materializa as origens no estado recorrente de Hoje e governa o contrato semântico dos seis handoffs. A contagem permanece em <strong>66 transições</strong> e <code>TRN-008..013</code> continuam <code>contratada</code>.</p>
+<p>Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A D5-C1 adicionou seis handoffs bidirecionais mínimos entre <code>PER-008 — Hoje</code> e <code>PER-010 — Meus Objetivos</code>, <code>PER-011 — Meus Próximos Passos</code> e <code>PER-012 — Minha Evolução</code>. A D5-C2 materializou os três destinos, a D5-C3 os validou localmente, a D5-C4A materializou as origens recorrentes em Hoje e fechou o contrato semântico, e a D5-C4B validou individualmente <code>TRN-008..013</code> ponta a ponta no limite documental.</p>
+<p>A contagem permanece em <strong>66 transições</strong>. <code>TRN-008..013</code> passam a <strong>integralmente validadas</strong>.</p>
 <h2 id="2-convencoes-de-estado">2. Convenções de estado<a class="headerlink" href="#2-convencoes-de-estado" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9449,49 +9450,49 @@
 <td>GKR-TRN-008</td>
 <td>PER-008</td>
 <td>PER-010</td>
-<td><strong>contratada</strong></td>
-<td>D5-C4A materializa origem genérica <code>Meus Objetivos</code> e governa contexto mínimo/revalidação; validação ponta a ponta ainda pendente</td>
+<td><strong>integralmente validada</strong></td>
+<td>D5-C4B — Hoje recorrente → acesso genérico a Objetivos; contexto mínimo, revalidação, retorno, interrupção, concorrência e idempotência examinados</td>
 </tr>
 <tr>
 <td>GKR-TRN-009</td>
 <td>PER-010</td>
 <td>PER-008</td>
-<td><strong>contratada</strong></td>
-<td>retorno <code>‹ Hoje</code> + contrato neutro D5-C4A; preservação integrada de estado e efeitos ainda não validada ponta a ponta</td>
+<td><strong>integralmente validada</strong></td>
+<td>D5-C4B — retorno <code>‹ Hoje</code> neutro; não salva edição incompleta, não altera prioridade/progresso e reconsulta estado canônico</td>
 </tr>
 <tr>
 <td>GKR-TRN-010</td>
 <td>PER-008</td>
 <td>PER-011</td>
-<td><strong>contratada</strong></td>
-<td>D5-C4A refina origem para <code>Abrir este passo</code> e governa referência lógica mínima/fallback; validação ponta a ponta ainda pendente</td>
+<td><strong>integralmente validada</strong></td>
+<td>D5-C4B — <code>Abrir este passo</code> preserva somente referência lógica mínima quando vigente; fallback neutro/atualizado</td>
 </tr>
 <tr>
 <td>GKR-TRN-011</td>
 <td>PER-011</td>
 <td>PER-008</td>
-<td><strong>contratada</strong></td>
-<td>retorno <code>‹ Hoje</code> não conclui/aceita passo segundo D5-C4A; reentrada integrada ainda não validada</td>
+<td><strong>integralmente validada</strong></td>
+<td>D5-C4B — retorno não marca passo como visto/aceito/iniciado/executado/concluído; Hoje reconsulta estado vigente</td>
 </tr>
 <tr>
 <td>GKR-TRN-012</td>
 <td>PER-008</td>
 <td>PER-012</td>
-<td><strong>contratada</strong></td>
-<td>D5-C4A materializa origem genérica/neutra <code>Minha Evolução</code> sem payload sensível por padrão; validação ponta a ponta ainda pendente</td>
+<td><strong>integralmente validada</strong></td>
+<td>D5-C4B — entrada genérica/neutra; sem trajetória/domínio/interpretação/evidência sensível por padrão; privacidade revalidada</td>
 </tr>
 <tr>
 <td>GKR-TRN-013</td>
 <td>PER-012</td>
 <td>PER-008</td>
-<td><strong>contratada</strong></td>
-<td>D5-C4A governa retorno sem confirmar interpretação/evolução e preservação epistemológica; validação ponta a ponta ainda pendente</td>
+<td><strong>integralmente validada</strong></td>
+<td>D5-C4B — retorno não confirma interpretação/evolução; natureza epistemológica, minimização e permissões preservadas</td>
 </tr>
 </tbody>
 </table>
 <p><code>TRN-007</code> preserva consentimento, estado canônico, retorno e idempotência; navegar para Hoje não cria avanço ou autorização adicional.</p>
-<p><code>TRN-008..013</code> são handoffs de navegação protegida. Abrir uma responsabilidade especializada não cria, confirma ou altera o objeto funcional correspondente. Retornar a Hoje não equivale a concluir, aceitar, reconhecer evolução ou conceder nova autorização.</p>
-<p>A D5-C4A fecha o contrato de identidade quando aplicável, contexto mínimo, revalidação, retorno, interrupção, concorrência e idempotência e materializa as origens no estado recorrente de Hoje. Isso <strong>não comprova execução ponta a ponta</strong>. Por isso, a maturidade das seis ligações não muda.</p>
+<p><code>TRN-008..013</code> são handoffs de navegação protegida integralmente validados pela D5-C4B no limite documental. Abrir uma responsabilidade especializada não cria, confirma ou altera automaticamente o objeto funcional correspondente. Retornar a Hoje não equivale a concluir, aceitar, reconhecer evolução ou conceder nova autorização.</p>
+<p>Para <code>TRN-008</code>, <code>TRN-010</code> e <code>TRN-012</code>, a validação aplica-se ao <strong>estado recorrente de PER-008 quando o affordance correspondente estiver presente e aplicável</strong>. A primeira variante de Hoje da UXA-097 não é obrigada a materializar esses três acessos.</p>
 <p>A D5-C1 não registra handoffs diretos <code>PER-010 ↔ PER-011</code>, <code>PER-011 ↔ PER-012</code> ou <code>PER-010 ↔ PER-012</code>. Relação semântica entre capacidades não equivale automaticamente a navegação direta.</p>
 <h2 id="5-pessoa-em-coletivos-e-operacao-do-responsavel">5. Pessoa em Coletivos e operação do responsável<a class="headerlink" href="#5-pessoa-em-coletivos-e-operacao-do-responsavel" title="Permanent link">&para;</a></h2>
 <table>
@@ -10036,7 +10037,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <h2 id="10-preservacoes-de-maturidade">10. Preservações de maturidade<a class="headerlink" href="#10-preservacoes-de-maturidade" title="Permanent link">&para;</a></h2>
 <ul>
 <li>transições totais permanecem <strong>66</strong>;</li>
-<li><code>TRN-008..013</code> ficam <strong>contratadas</strong> após D5-C4A; origem visual e contrato integrado não substituem validação específica ponta a ponta;</li>
+<li><code>TRN-008..013</code> ficam <strong>integralmente validadas</strong> pela D5-C4B no limite documental;</li>
 <li><code>TRN-406/407</code> ficam <strong>contratadas</strong> até materialização suficiente de <code>PER-009</code>;</li>
 <li><code>TRN-417/418</code> e <code>TRN-427/428</code> ficam <strong>integralmente validadas</strong> no limite documental de navegação administrativa;</li>
 <li><code>TRN-401..405</code>, <code>TRN-411..415</code> e <code>TRN-421..425</code> permanecem localmente validadas;</li>
@@ -10046,7 +10047,7 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>validação documental continua distinta de implementação técnica.</li>
 </ul>
 <h2 id="11-proximo-gate">11. Próximo gate<a class="headerlink" href="#11-proximo-gate" title="Permanent link">&para;</a></h2>
-<p>A D5-C4A encerra a lacuna de origem visual inequívoca em Hoje recorrente e governa o contrato dos seis handoffs sem promovê-los. A <strong>D5-C4B — validação integrada de <code>TRN-008..013</code></strong> exige autorização separada e deverá decidir individualmente a maturidade de cada ligação. V5/UXA-102, D6, D7, integrações patrocinadas, cobrança real e processos posteriores a <code>BND-002</code> permanecem frentes separadas e não são iniciados automaticamente.</p>
+<p>A D5-C4B encerra a lacuna específica de continuidade <code>Hoje ↔ Meus Objetivos / Meus Próximos Passos / Minha Evolução</code> no limite documental. A Jornada da Pessoa permanece <code>draft</code> por outras lacunas. V5/UXA-102, D6, D7, integrações patrocinadas, cobrança real e processos posteriores a <code>BND-002</code> permanecem frentes separadas e não são iniciados automaticamente.</p>
 
 
 
