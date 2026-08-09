@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
 title: Detalhamento Obrigatório das Superfícies da Pessoa
 status: active
-version: 0.14.0
+version: 0.15.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -17,6 +17,7 @@ related:
   - UXA-101
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
+  - GKR-UX-D5-C3-001
 normative: false
 ---
 
@@ -39,9 +40,9 @@ Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obri
 | GKR-SURF-PER-007 | UXA-036; variante revalidada UXA-097 | 0.3.0 | processamento/compreensão revisada | escolher persistência e personalização independentemente | `TRN-007` para Hoje ou rotas explícitas | síntese revisada, origens, escolhas e finalidades | escolhas compatíveis + confirmação explícita | voltar/revisar/excluir e explorar | decisão refinada UXA-097 | **TRN-007 integralmente validada** | demais handoffs pessoais anteriores | exclusão + exploração fora de TRN-007 |
 | GKR-SURF-PER-008 | UXA-006 recorrente + UXA-097 primeira entrada | primeira variante 0.1.0 | compreensão confirmada via TRN-007 ou acesso recorrente | compreender o que importa e escolher se/quando agir | continuidades recorrentes + `TRN-008/010/012` contratadas | condição confirmada/autorizada/vigente; sínteses sem exposição sensível indevida | estado canônico; personalização não é gate | revisar/ignorar/navegar; retornos `TRN-009/011/013` | primeira variante adicionada UXA-097 | **TRN-007 integralmente validada; TRN-008..013 contratadas** | estados alternativos de Hoje e validação dos handoffs especializados | primeira entrada não presume avanço; Hoje sintetiza e não absorve capacidades especializadas |
 | GKR-SURF-PER-009 | sem SVG dedicado; autoridade UXA-100/A1/A4 | indeterminado | acesso autenticado à Conta/Configurações | escolher área administrativa e abrir Planos voluntariamente | `TRN-406` para PER-301 ou outras áreas ainda não governadas | somente contexto administrativo necessário; nenhum conteúdo adicional inferido | autenticação | permanecer/retornar; `TRN-407` | nenhuma | `TRN-406/407` contratadas | materialização própria de Conta | responsabilidade criada somente para origem/retorno de Planos; não define arquitetura total da Conta |
-| GKR-SURF-PER-010 | GKR-UX-D5-C2-001 — `d5-c2-person-objectives-mobile.svg`; autoridade funcional PAS-001-OBJ-VIEW-001 | 0.1.0 materializado | `TRN-008` a partir de PER-008 | compreender, organizar e controlar objetivos sem julgamento ou mutação automática | `TRN-009` para PER-008; demais handoffs diretos não contratados | objetivos, estados, prioridades, critérios, marcos, progresso/evidências legítimas, conflitos, histórico, permissões e `0..n domain_link` | autenticação; autoridade da Pessoa; proteção proporcional a conteúdo sensível | retornar por `TRN-009`; revisar/pausar/retomar/retirar conforme contrato funcional | nenhuma | `TRN-008/009` contratadas | validação funcional pendente; handoffs diretos com PER-011/012 não definidos | Área da jornada ≠ dimensão estrutural do Contexto Vivo; domínio não cria Objetivo nem prioridade |
-| GKR-SURF-PER-011 | GKR-UX-D5-C2-001 — `d5-c2-person-next-steps-mobile.svg`; autoridade funcional PAS-001-PP-VIEW-001 | 0.1.0 materializado | `TRN-010` a partir de PER-008 | compreender, organizar e controlar movimentos contextuais sem converter sugestão em execução | `TRN-011` para PER-008; demais handoffs diretos não contratados | passos, estados, prontidão, prioridade, dependências, bloqueios, responsabilidade, recorrência, resultados, histórico e `0..n domain_link` | autenticação; decisão consciente; minimização de conteúdo sensível | retornar por `TRN-011`; adiar/pausar/cancelar/substituir conforme contrato funcional | nenhuma | `TRN-010/011` contratadas | validação funcional pendente; handoffs diretos com PER-010/012 não definidos | Área da jornada é contexto semântico; não representa obrigação, urgência ou mérito |
-| GKR-SURF-PER-012 | GKR-UX-D5-C2-001 — `d5-c2-person-evolution-mobile.svg`; autoridade funcional PAS-001-EC-VIEW-001 | 0.1.0 materializado | `TRN-012` a partir de PER-008 | compreender e controlar trajetórias, mudanças, continuidades e interpretações sem score humano | `TRN-013` para PER-008; demais handoffs diretos não contratados | trajetórias, períodos, baselines, direções, mudanças/estabilidade, observações, evidências, confiança, incerteza, contestações, histórico e `0..n domain_link` | autenticação; privacidade por padrão; distinção entre declarado/observado/inferido/confirmado | retornar por `TRN-013`; contestar/corrigir/pausar/revogar conforme contrato funcional | nenhuma | `TRN-012/013` contratadas | validação funcional e sensibilidade pendentes; sem roda da vida/score | Domínio de Evolução, dimensão do Contexto Vivo e aspecto descritivo da mudança permanecem separados |
+| GKR-SURF-PER-010 | GKR-UX-D5-C2-001 / GKR-UX-D5-C3-001 — `d5-c2-person-objectives-mobile.svg`; autoridade funcional PAS-001-OBJ-VIEW-001 | **0.2.0 reformulado/validado localmente** | `TRN-008` a partir de PER-008 | compreender, organizar e controlar objetivos sem julgamento ou mutação automática | `TRN-009` para PER-008; demais handoffs diretos não contratados | objetivos, estados, prioridades declaradas, critérios, marcos, progresso/evidências legítimas, conflitos, histórico, permissões e `0..n domain_link` | autenticação; autoridade da Pessoa; proteção proporcional a conteúdo sensível | retornar por `TRN-009`; revisar/pausar/retomar/retirar conforme contrato funcional | reformulado D5-C3 | `TRN-008/009` contratadas | validação integrada dos handoffs; handoffs diretos com PER-011/012 não definidos | estado, prioridade e progresso permanecem separados; Área da jornada não cria Objetivo nem prioridade |
+| GKR-SURF-PER-011 | GKR-UX-D5-C2-001 / GKR-UX-D5-C3-001 — `d5-c2-person-next-steps-mobile.svg`; autoridade funcional PAS-001-PP-VIEW-001 | **0.2.0 reformulado/validado localmente** | `TRN-010` a partir de PER-008 | compreender, organizar e controlar movimentos contextuais sem converter sugestão em execução | `TRN-011` para PER-008; demais handoffs diretos não contratados | passos, estados, prontidão, prioridade, dependências, bloqueios, responsabilidade, recorrência, resultados, histórico e `0..n domain_link` | autenticação; decisão consciente; minimização de conteúdo sensível | retornar por `TRN-011`; adiar/pausar/cancelar/substituir conforme contrato funcional | reformulado D5-C3 | `TRN-010/011` contratadas | validação integrada dos handoffs; handoffs diretos com PER-010/012 não definidos | proposta ≠ decisão; prontidão ≠ obrigação; Área da jornada não representa urgência ou mérito |
+| GKR-SURF-PER-012 | GKR-UX-D5-C2-001 / GKR-UX-D5-C3-001 — `d5-c2-person-evolution-mobile.svg`; autoridade funcional PAS-001-EC-VIEW-001 | **0.2.0 reformulado/validado localmente** | `TRN-012` a partir de PER-008 | compreender e controlar trajetórias, mudanças, continuidades e interpretações sem score humano | `TRN-013` para PER-008; demais handoffs diretos não contratados | trajetórias, períodos, baselines, direções, observações, interpretações, evidências, confiança, incerteza, contestações, histórico e `0..n domain_link` | autenticação; privacidade por padrão; distinção entre declarado/observado/inferido/confirmado | retornar por `TRN-013`; contestar/corrigir/pausar/revogar conforme contrato funcional | reformulado D5-C3 | `TRN-012/013` contratadas | validação integrada dos handoffs; estados sensíveis adicionais quando aplicáveis | interpretação inferida é explícita; Domínio de Evolução, dimensão do Contexto Vivo e aspecto descritivo permanecem separados |
 | GKR-SURF-PER-101 | UXA-060 | indeterminado | navegação recorrente | explorar/pesquisar | resultados | termos/filtros | nenhum vínculo | limpar/voltar | nenhuma | parcial | famílias | Coletivos |
 | GKR-SURF-PER-102 | UXA-060 | indeterminado | Explorar | selecionar/refinar | Perfil Público | filtros/resultados | conteúdo público | voltar/refinar | nenhuma | parcial | descoberta → perfil | Coletivos |
 | GKR-SURF-PER-103 | UXA-062 | indeterminado | busca | avaliar e solicitar | revisão | conteúdo público | autenticação ao solicitar | retornar/não prosseguir | nenhuma | parcial | participação | Perfil Público |
@@ -66,13 +67,13 @@ Valores sem evidência suficiente permanecem `indeterminado`, `ausente` ou `não
 
 `PER-009` fecha a identidade documental da origem voluntária de Planos sem criar um SVG artificial de Conta. `TRN-406/407` permanecem contratadas até que haja materialização suficiente para validação ponta a ponta. Navegar para Planos não seleciona plano, não inicia cobrança e não amplia consentimento.
 
-## 5. Efeito da D5-C1 e D5-C2
+## 5. Efeito da D5-C1, D5-C2 e D5-C3
 
-A D5-C1 contratou `PER-010`, `PER-011` e `PER-012` e seus seis handoffs mínimos com Hoje. A D5-C2 materializa um estado-base low-fidelity para cada responsabilidade sem promover qualquer uma para `validado`.
+A D5-C1 contratou `PER-010`, `PER-011` e `PER-012` e seus seis handoffs mínimos com Hoje. A D5-C2 materializou um estado-base low-fidelity para cada responsabilidade. A D5-C3 reformula e valida funcionalmente os três SVGs no limite local de cada superfície.
 
-A presença dos três SVGs remove a lacuna de ausência visual, mas `TRN-008..013` continuam contratadas porque entrada, saída, payload, retorno, interrupção, concorrência, autorização e idempotência ainda não foram examinados ponta a ponta.
+`TRN-008..013` continuam contratadas porque entrada, saída, payload, retorno, interrupção, concorrência, autorização e idempotência ainda não foram examinados ponta a ponta.
 
-A separação entre Domínio de Evolução, dimensão estrutural do Contexto Vivo e aspecto descritivo da mudança permanece obrigatória na futura validação.
+A separação entre Domínio de Evolução, dimensão estrutural do Contexto Vivo e aspecto descritivo da mudança permanece obrigatória.
 
 ## 6. Efeito da UXA-101 preservado
 
@@ -80,4 +81,4 @@ A UXA-101 não cria superfície nova. `PER-203` continua sendo a responsabilidad
 
 ## 7. Estado
 
-O detalhamento está `active` como parte integrante do registro granular. Materialização low-fidelity não promove a Jornada da Pessoa como completa nem comprova implementação.
+O detalhamento está `active` como parte integrante do registro granular. A validação local D5-C3 não promove a Jornada da Pessoa como completa, não valida `TRN-008..013` e não comprova implementação.
