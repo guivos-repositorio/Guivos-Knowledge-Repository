@@ -1,43 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">PER-011 — Meus Próximos Passos — low-fidelity mobile</title>
-  <desc id="desc">Superfície de movimentos contextuais da Pessoa, sem lógica de produtividade, streak ou urgência artificial.</desc>
+  <title id="title">PER-011 — Meus Próximos Passos — low-fidelity mobile reformulado pela D5-C3</title>
+  <desc id="desc">Superfície de movimentos contextuais da Pessoa. Explicita estado funcional, prontidão, origem de proposta e autonomia sem produtividade, streak ou urgência artificial.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="0.5" y="0.5" width="389" height="843" fill="none" stroke="#222222"/>
 
   <text x="20" y="34" font-family="Arial, sans-serif" font-size="14" fill="#222222">‹ Hoje</text>
   <text x="20" y="72" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111111">Meus Próximos Passos</text>
   <text x="20" y="96" font-family="Arial, sans-serif" font-size="12" fill="#555555">Movimentos que podem ajudar no seu contexto atual.</text>
-  <text x="20" y="114" font-family="Arial, sans-serif" font-size="12" fill="#555555">Você pode revisar, adiar ou não seguir.</text>
+  <text x="20" y="114" font-family="Arial, sans-serif" font-size="12" fill="#555555">Você pode revisar, adiar, pausar ou não seguir.</text>
 
   <rect x="20" y="136" width="350" height="44" rx="8" fill="#f5f5f5" stroke="#bdbdbd"/>
-  <text x="34" y="163" font-family="Arial, sans-serif" font-size="12" fill="#333333">Agora  ·  Propostos  ·  Bloqueados</text>
+  <text x="34" y="163" font-family="Arial, sans-serif" font-size="12" fill="#333333">Ativos  ·  Propostos  ·  Bloqueados</text>
 
   <rect x="20" y="192" width="350" height="42" rx="8" fill="#ffffff" stroke="#bdbdbd"/>
   <text x="34" y="218" font-family="Arial, sans-serif" font-size="12" fill="#333333">Área da jornada: Todas ▾</text>
 
-  <rect x="20" y="250" width="350" height="192" rx="10" fill="#fafafa" stroke="#777777"/>
-  <text x="34" y="276" font-family="Arial, sans-serif" font-size="11" fill="#666666">MOVIMENTO ATUAL</text>
+  <rect x="20" y="250" width="350" height="208" rx="10" fill="#fafafa" stroke="#777777"/>
+  <text x="34" y="276" font-family="Arial, sans-serif" font-size="11" fill="#666666">PRONTO</text>
   <text x="34" y="303" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#111111">Revisar duas vagas alinhadas ao</text>
   <text x="34" y="323" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#111111">objetivo de liderança</text>
-  <text x="34" y="350" font-family="Arial, sans-serif" font-size="11" fill="#555555">Objetivo relacionado</text>
-  <text x="34" y="369" font-family="Arial, sans-serif" font-size="12" fill="#222222">Assumir uma posição de liderança</text>
-  <text x="34" y="395" font-family="Arial, sans-serif" font-size="11" fill="#555555">Janela sugerida · quando fizer sentido nesta semana</text>
-  <line x1="34" y1="411" x2="356" y2="411" stroke="#d0d0d0"/>
-  <text x="34" y="430" font-family="Arial, sans-serif" font-size="11" fill="#333333">Revisar  ·  Adiar  ·  Concluir</text>
+  <text x="34" y="349" font-family="Arial, sans-serif" font-size="11" fill="#555555">Objetivo relacionado · Assumir uma posição de liderança</text>
+  <text x="34" y="374" font-family="Arial, sans-serif" font-size="11" fill="#555555">Prontidão · pronto, sem dependência pendente conhecida</text>
+  <text x="34" y="399" font-family="Arial, sans-serif" font-size="11" fill="#555555">Janela possível · nesta semana, se fizer sentido</text>
+  <line x1="34" y1="417" x2="356" y2="417" stroke="#d0d0d0"/>
+  <text x="34" y="438" font-family="Arial, sans-serif" font-size="11" fill="#333333">Iniciar  ·  Adiar  ·  Revisar</text>
 
-  <rect x="20" y="456" width="350" height="176" rx="10" fill="#fafafa" stroke="#777777"/>
-  <text x="34" y="482" font-family="Arial, sans-serif" font-size="11" fill="#666666">PROPOSTO — VOCÊ DECIDE</text>
-  <text x="34" y="509" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#111111">Conversar com alguém da sua rede</text>
-  <text x="34" y="535" font-family="Arial, sans-serif" font-size="11" fill="#555555">Área relacionada</text>
-  <text x="34" y="554" font-family="Arial, sans-serif" font-size="12" fill="#222222">Trabalho, Carreira e Estudos</text>
-  <text x="34" y="580" font-family="Arial, sans-serif" font-size="11" fill="#555555">Sugestão não cria obrigação nem urgência.</text>
-  <text x="34" y="607" font-family="Arial, sans-serif" font-size="11" fill="#333333">Aceitar  ·  Manter em aberto  ·  Não seguir</text>
+  <rect x="20" y="474" width="350" height="174" rx="10" fill="#fafafa" stroke="#777777"/>
+  <text x="34" y="500" font-family="Arial, sans-serif" font-size="11" fill="#666666">PROPOSTO — AGUARDA SUA DECISÃO</text>
+  <text x="34" y="527" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#111111">Conversar com alguém da sua rede</text>
+  <text x="34" y="553" font-family="Arial, sans-serif" font-size="11" fill="#555555">Área relacionada · Trabalho, Carreira e Estudos</text>
+  <text x="34" y="578" font-family="Arial, sans-serif" font-size="11" fill="#555555">Origem · sugestão da Guivos; ainda não é decisão sua</text>
+  <text x="34" y="603" font-family="Arial, sans-serif" font-size="11" fill="#555555">Sugestão não cria obrigação, prioridade nem urgência.</text>
+  <text x="34" y="629" font-family="Arial, sans-serif" font-size="11" fill="#333333">Avaliar  ·  Manter em aberto  ·  Não seguir</text>
 
-  <rect x="20" y="654" width="350" height="54" rx="10" fill="#222222"/>
-  <text x="195" y="687" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Registrar próximo passo</text>
+  <rect x="20" y="666" width="350" height="54" rx="10" fill="#222222"/>
+  <text x="195" y="699" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Registrar próximo passo</text>
 
-  <rect x="20" y="728" width="350" height="74" rx="10" fill="#f5f5f5" stroke="#d0d0d0"/>
-  <text x="34" y="753" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#333333">Conclusão não prova evolução</text>
-  <text x="34" y="773" font-family="Arial, sans-serif" font-size="11" fill="#555555">Finalizar uma ação registra movimento; resultado e</text>
-  <text x="34" y="790" font-family="Arial, sans-serif" font-size="11" fill="#555555">evolução dependem de contexto e evidência próprios.</text>
+  <rect x="20" y="738" width="350" height="64" rx="10" fill="#f5f5f5" stroke="#d0d0d0"/>
+  <text x="34" y="763" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#333333">Períodos sem passos ativos são legítimos</text>
+  <text x="34" y="783" font-family="Arial, sans-serif" font-size="11" fill="#555555">Concluir uma ação também não prova evolução.</text>
 </svg>

@@ -6505,10 +6505,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-efeito-da-d5-c2-no-catalogo" class="md-nav__link">
+  <a href="#5-efeito-acumulado-d5-c2-d5-c3-no-catalogo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Efeito da D5-C2 no catálogo
+        5. Efeito acumulado D5-C2 → D5-C3 no catálogo
       
     </span>
   </a>
@@ -9053,10 +9053,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-efeito-da-d5-c2-no-catalogo" class="md-nav__link">
+  <a href="#5-efeito-acumulado-d5-c2-d5-c3-no-catalogo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Efeito da D5-C2 no catálogo
+        5. Efeito acumulado D5-C2 → D5-C3 no catálogo
       
     </span>
   </a>
@@ -9118,7 +9118,7 @@
 ≠ jornada integrada validada
 ≠ implementação técnica
 </code></pre></div>
-<p>A D5-C1 contratou <code>PER-010 — Meus Objetivos</code>, <code>PER-011 — Meus Próximos Passos</code> e <code>PER-012 — Minha Evolução</code>. A D5-C2 cria um SVG low-fidelity para cada uma dessas responsabilidades sem criar novo ID granular e sem promover <code>TRN-008..013</code>. O inventário visual passa de 118 para 121 ativos; os três novos SVGs permanecem pendentes de validação funcional específica.</p>
+<p>A D5-C1 contratou <code>PER-010 — Meus Objetivos</code>, <code>PER-011 — Meus Próximos Passos</code> e <code>PER-012 — Minha Evolução</code>. A D5-C2 criou um SVG low-fidelity para cada uma dessas responsabilidades sem criar novo ID granular e sem promover <code>TRN-008..013</code>. A D5-C3 reforma in-place e valida funcionalmente os três estados-base, mantendo as transições contratadas.</p>
 <h2 id="2-inventario-agregado-canonico-por-familia">2. Inventário agregado canônico por família<a class="headerlink" href="#2-inventario-agregado-canonico-por-familia" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9176,25 +9176,25 @@
 <td>Pessoa</td>
 <td>Meus Objetivos</td>
 <td style="text-align: right;"><strong>1</strong></td>
-<td><strong>materializado; validação pendente</strong></td>
+<td><strong>validado localmente pela D5-C3</strong></td>
 <td><code>TRN-008/009</code> contratadas</td>
-<td>validação funcional e do handoff</td>
+<td>validação integrada do handoff</td>
 </tr>
 <tr>
 <td>Pessoa</td>
 <td>Meus Próximos Passos</td>
 <td style="text-align: right;"><strong>1</strong></td>
-<td><strong>materializado; validação pendente</strong></td>
+<td><strong>validado localmente pela D5-C3</strong></td>
 <td><code>TRN-010/011</code> contratadas</td>
-<td>validação funcional e do handoff</td>
+<td>validação integrada do handoff</td>
 </tr>
 <tr>
 <td>Pessoa</td>
 <td>Minha Evolução</td>
 <td style="text-align: right;"><strong>1</strong></td>
-<td><strong>materializado; validação pendente</strong></td>
+<td><strong>validado localmente pela D5-C3</strong></td>
 <td><code>TRN-012/013</code> contratadas</td>
-<td>validação funcional; sensibilidade; handoff</td>
+<td>estados sensíveis adicionais quando aplicáveis; validação integrada do handoff</td>
 </tr>
 <tr>
 <td>Pessoa</td>
@@ -9344,7 +9344,7 @@
 <td><strong>Total canônico</strong></td>
 <td></td>
 <td style="text-align: right;"><strong>121</strong></td>
-<td><strong>118 validados; 3 pendentes</strong></td>
+<td><strong>121 validados; 0 pendentes</strong></td>
 <td></td>
 <td></td>
 </tr>
@@ -9356,34 +9356,34 @@
 <tr>
 <th>Registro</th>
 <th style="text-align: right;">Quantidade</th>
-<th>Estado vigente após D5-C2</th>
+<th>Estado vigente após D5-C3</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>superfícies/estados/responsabilidades/fronteiras</td>
 <td style="text-align: right;"><strong>57</strong></td>
-<td>D5-C2 não cria novo ID</td>
+<td>D5-C3 não cria novo ID</td>
 </tr>
 <tr>
 <td>transições documentais</td>
 <td style="text-align: right;"><strong>66</strong></td>
-<td>D5-C2 não promove <code>TRN-008..013</code></td>
+<td>D5-C3 não promove <code>TRN-008..013</code></td>
 </tr>
 <tr>
 <td>catálogo canônico</td>
 <td style="text-align: right;"><strong>121 SVGs</strong></td>
-<td><code>active</code> 0.30.0</td>
+<td><code>active</code> 0.31.0</td>
 </tr>
 <tr>
 <td>matriz de rastreabilidade</td>
 <td style="text-align: right;"><strong>121 SVGs / 34 perfis</strong></td>
-<td>R32–R34 pendentes de validação</td>
+<td>R32–R34 validados localmente</td>
 </tr>
 <tr>
 <td>galeria visual</td>
 <td style="text-align: right;"><strong>121 SVGs</strong></td>
-<td>três novos estados-base D5-C2</td>
+<td>121 validados / 0 pendentes</td>
 </tr>
 </tbody>
 </table>
@@ -9414,24 +9414,25 @@
 </tr>
 </tbody>
 </table>
-<h2 id="5-efeito-da-d5-c2-no-catalogo">5. Efeito da D5-C2 no catálogo<a class="headerlink" href="#5-efeito-da-d5-c2-no-catalogo" title="Permanent link">&para;</a></h2>
+<h2 id="5-efeito-acumulado-d5-c2-d5-c3-no-catalogo">5. Efeito acumulado D5-C2 → D5-C3 no catálogo<a class="headerlink" href="#5-efeito-acumulado-d5-c2-d5-c3-no-catalogo" title="Permanent link">&para;</a></h2>
+<p>D5-C2 alterou o inventário físico:</p>
 <ul>
 <li>SVGs canônicos: <strong>118 → 121</strong>;</li>
 <li>associações: <strong>118 → 121</strong>;</li>
 <li>perfis: <strong>31 → 34</strong>;</li>
-<li>validações funcionais vigentes de SVG: <strong>118 → 118</strong>;</li>
-<li>pendências específicas de SVG: <strong>0 → 3</strong>;</li>
-<li>IDs granulares: <strong>57 → 57</strong>;</li>
-<li>transições: <strong>66 → 66</strong>;</li>
 <li>IDs com referência visual: <strong>42 → 45</strong>;</li>
-<li>responsabilidades sem SVG dedicado: <strong>13 → 10</strong>;</li>
-<li><code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code>: passam de contratados sem SVG para responsabilidades contratadas com materialização low-fidelity;</li>
+<li>responsabilidades sem SVG dedicado: <strong>13 → 10</strong>.</li>
+</ul>
+<p>D5-C3 não altera essas contagens. Ela altera somente a maturidade visual:</p>
+<ul>
+<li>validações funcionais vigentes de SVG: <strong>118 → 121</strong>;</li>
+<li>pendências específicas de SVG: <strong>3 → 0</strong>;</li>
+<li><code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code>: passam de materializados/pendentes para <strong>validados localmente</strong>;</li>
 <li><code>TRN-008..013</code>: permanecem contratadas;</li>
 <li><code>PER-009</code>: permanece responsabilidade sem SVG dedicado;</li>
 <li><code>TRN-406/407</code>: permanecem contratadas;</li>
 <li><code>TRN-417/418</code> e <code>TRN-427/428</code>: permanecem integralmente validadas no limite de navegação administrativa.</li>
 </ul>
-<p>A D5-C2 não altera nenhum dos 118 ativos já validados por D5-A, D5-B ou pelas UXAs anteriores.</p>
 <h2 id="6-separacoes-obrigatorias">6. Separações obrigatórias<a class="headerlink" href="#6-separacoes-obrigatorias" title="Permanent link">&para;</a></h2>
 <ul>
 <li>primeira Tela Hoje e Tela Hoje recorrente são variantes do mesmo <code>PER-008</code>;</li>
@@ -9440,9 +9441,9 @@
 <li><code>PER-011</code> governa movimentos contextuais, não uma lista coercitiva de tarefas;</li>
 <li><code>PER-012</code> governa trajetórias de evolução, não roda da vida, ranking ou nota humana;</li>
 <li>em Minha Evolução, Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança;</li>
-<li>materialização de <code>PER-010..012</code> ≠ validação funcional das superfícies;</li>
-<li>presença de retorno visual para Hoje ≠ validação de <code>TRN-008..013</code>;</li>
-<li>a D5-C2 não cria handoff direto entre <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code>;</li>
+<li>validação local de <code>PER-010..012</code> ≠ validação integrada de <code>TRN-008..013</code>;</li>
+<li>presença de retorno visual para Hoje ≠ validação dos handoffs;</li>
+<li>D5-C1/C2/C3 não criam handoff direto entre <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code>;</li>
 <li>revisão de saída é estado do mesmo <code>PER-203</code>, não nova tela canônica;</li>
 <li><code>BND-001</code> representa a transferência de autoridade, não o processo do terceiro;</li>
 <li><code>PER-009</code> é responsabilidade de Conta suficiente para handoff e não uma arquitetura completa de Conta;</li>
@@ -9460,15 +9461,15 @@
 </ul>
 <h2 id="7-estado-do-catalogo">7. Estado do catálogo<a class="headerlink" href="#7-estado-do-catalogo" title="Permanent link">&para;</a></h2>
 <ul>
-<li>catálogo: <code>active</code> 0.30.0;</li>
-<li>galeria principal: <strong>121 SVGs</strong>;</li>
+<li>catálogo: <code>active</code> 0.31.0;</li>
+<li>galeria principal: <strong>121 SVGs / 121 validados / 0 pendentes</strong>;</li>
 <li>matriz por SVG: <strong>121 associações / 34 perfis</strong>;</li>
-<li><code>PER-010..012</code>: materializados em low-fidelity e pendentes de validação funcional;</li>
+<li><code>PER-010..012</code>: validados localmente pela D5-C3;</li>
 <li><code>TRN-008..013</code>: permanecem <code>contratadas</code>;</li>
 <li>jornadas da Pessoa, Coletivo e Organização: <code>draft</code>;</li>
 <li>protótipo e Engenharia de Produto: não iniciados.</li>
 </ul>
-<p>A D5-C2 não autoriza validação automática, implementação, cobrança real, UXA-102/V5, D6, D7 ou próxima frente.</p>
+<p>A D5-C3 não autoriza implementação, cobrança real, UXA-102/V5, D6, D7 ou próxima frente.</p>
 
 
 

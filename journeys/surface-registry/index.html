@@ -9113,7 +9113,7 @@
 <h1 id="registro-granular-de-superficies-e-estados">Registro Granular de Superfícies e Estados<a class="headerlink" href="#registro-granular-de-superficies-e-estados" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.</p>
-<p>A D5-C1 adicionou <code>GKR-SURF-PER-010 — Meus Objetivos</code>, <code>GKR-SURF-PER-011 — Meus Próximos Passos</code> e <code>GKR-SURF-PER-012 — Minha Evolução</code> como responsabilidades contratadas. A D5-C2 materializa um SVG low-fidelity para cada uma sem criar novos IDs e sem promover sua maturidade para <code>validado</code>. A contagem permanece em 57 IDs.</p>
+<p>A D5-C1 adicionou <code>GKR-SURF-PER-010 — Meus Objetivos</code>, <code>GKR-SURF-PER-011 — Meus Próximos Passos</code> e <code>GKR-SURF-PER-012 — Minha Evolução</code> como responsabilidades contratadas. A D5-C2 materializou um SVG low-fidelity para cada uma sem criar novos IDs. A D5-C3 reforma e valida funcionalmente esses três estados-base, mantendo a contagem em 57 IDs e preservando <code>TRN-008..013</code> como contratadas.</p>
 <h2 id="2-convencoes">2. Convenções<a class="headerlink" href="#2-convencoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>ausente</code>: responsabilidade conhecida sem materialização necessária;</li>
@@ -9280,10 +9280,10 @@
 <td>Meus Objetivos</td>
 <td>Pessoa autenticada; direção e objetivos</td>
 <td>protegido</td>
-<td>contratado</td>
-<td>PAS-001-OBJ-VIEW-001; GKR-UX-D5-C1-001; GKR-UX-D5-C2-001</td>
+<td><strong>validado</strong></td>
+<td>PAS-001-OBJ-VIEW-001; GKR-UX-D5-C1-001; GKR-UX-D5-C2-001; GKR-UX-D5-C3-001</td>
 <td><code>d5-c2-person-objectives-mobile.svg</code></td>
-<td>pendente</td>
+<td><strong>D5-C3 local</strong></td>
 <td><a href="../surface-registry-person-details/">Pessoa</a></td>
 </tr>
 <tr>
@@ -9291,10 +9291,10 @@
 <td>Meus Próximos Passos</td>
 <td>Pessoa autenticada; movimentos contextuais</td>
 <td>protegido</td>
-<td>contratado</td>
-<td>PAS-001-PP-VIEW-001; GKR-UX-D5-C1-001; GKR-UX-D5-C2-001</td>
+<td><strong>validado</strong></td>
+<td>PAS-001-PP-VIEW-001; GKR-UX-D5-C1-001; GKR-UX-D5-C2-001; GKR-UX-D5-C3-001</td>
 <td><code>d5-c2-person-next-steps-mobile.svg</code></td>
-<td>pendente</td>
+<td><strong>D5-C3 local</strong></td>
 <td><a href="../surface-registry-person-details/">Pessoa</a></td>
 </tr>
 <tr>
@@ -9302,10 +9302,10 @@
 <td>Minha Evolução</td>
 <td>Pessoa autenticada; trajetórias e evolução contínua</td>
 <td>protegido</td>
-<td>contratado</td>
-<td>PAS-001-EC-VIEW-001; GKR-UX-D5-C1-001; GKR-UX-D5-C2-001</td>
+<td><strong>validado</strong></td>
+<td>PAS-001-EC-VIEW-001; GKR-UX-D5-C1-001; GKR-UX-D5-C2-001; GKR-UX-D5-C3-001</td>
 <td><code>d5-c2-person-evolution-mobile.svg</code></td>
-<td>pendente</td>
+<td><strong>D5-C3 local</strong></td>
 <td><a href="../surface-registry-person-details/">Pessoa</a></td>
 </tr>
 <tr>
@@ -9813,17 +9813,17 @@ Organização: Conecta · Eleva · Transforma
 Guivos Business: Start · Growth · Scale · Enterprise
 </code></pre></div>
 <p>A origem voluntária de Planos permanece representada por <code>PER-009</code>, <code>COL-002</code> e <code>ORG-001</code>. A criação de <code>PER-009</code> não materializa uma arquitetura completa de Conta nem autoriza preencher outras responsabilidades administrativas por inferência.</p>
-<p>A D5-C1 adiciona <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> como responsabilidades pessoais especializadas ligadas a Hoje por transições contratadas. A D5-C2 lhes adiciona materialização low-fidelity, sem alterar maturidade, autoridade ou o estado das transições.</p>
+<p>A D5-C1 adiciona <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> como responsabilidades pessoais especializadas ligadas a Hoje por transições contratadas. A D5-C2 lhes adiciona materialização low-fidelity. A D5-C3 promove somente a maturidade local dessas três superfícies para <code>validado</code>, sem alterar a maturidade dos handoffs.</p>
 <p>Guivos Business é produto especializado e não recebe novos IDs neste registro.</p>
 <p><code>BND-002</code> não é plano, produto, checkout ou fronteira exclusiva de Enterprise/Scale. Ele identifica a necessidade de contratação/dimensionamento assistido.</p>
 <h2 id="6-preservacoes">6. Preservações<a class="headerlink" href="#6-preservacoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li>total de IDs permanece <strong>57</strong>;</li>
-<li><code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> possuem SVG low-fidelity, mas permanecem com maturidade <code>contratado</code> e validação pendente;</li>
+<li><code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> possuem SVG low-fidelity e validação funcional local pela D5-C3;</li>
 <li><code>PER-009</code> permanece contratado e sem SVG dedicado;</li>
-<li>os SVGs canônicos passam de <strong>118 para 121</strong>;</li>
-<li>IDs com referência visual passam de <strong>42 para 45</strong>, agora de 57;</li>
-<li>responsabilidades sem SVG dedicado passam de <strong>13 para 10</strong>;</li>
+<li>SVGs canônicos permanecem <strong>121</strong>;</li>
+<li>IDs com referência visual permanecem <strong>45 de 57</strong>;</li>
+<li>responsabilidades sem SVG dedicado permanecem <strong>10</strong>;</li>
 <li><code>PER-203</code> permanece validada no recorte de saída externa;</li>
 <li><code>BND-001</code> permanece examinado, sem tela própria;</li>
 <li><code>BND-002</code> permanece parcial, sem tela própria;</li>
@@ -9832,7 +9832,7 @@ Guivos Business: Start · Growth · Scale · Enterprise
 <li>nenhuma jornada ou Engenharia de Produto é promovida.</li>
 </ul>
 <h2 id="7-estado">7. Estado<a class="headerlink" href="#7-estado" title="Permanent link">&para;</a></h2>
-<p>O registro permanece <code>active</code> como inventário granular. Materialização low-fidelity não equivale a validação funcional nem representa implementação.</p>
+<p>O registro permanece <code>active</code> como inventário granular. Validação local dos três SVGs D5-C3 não equivale a validação das transições, implementação ou disponibilidade em produto.</p>
 
 
 

@@ -3881,6 +3881,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#55-d5-c3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 D5-C3
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -9202,6 +9213,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#55-d5-c3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 D5-C3
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -9337,11 +9359,11 @@
 </tr>
 <tr>
 <td>com validação funcional vigente</td>
-<td style="text-align: right;"><strong>118</strong></td>
+<td style="text-align: right;"><strong>121</strong></td>
 </tr>
 <tr>
 <td>pendentes de validação específica</td>
-<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
 </tr>
 <tr>
 <td>superfícies/estados/fronteiras</td>
@@ -9368,11 +9390,12 @@
 <p>A UXA-100-A4 adiciona <code>PER-009</code> como responsabilidade sem SVG e seis handoffs de navegação de Planos.</p>
 <p>A D5-A reforma quatro SVGs de <code>PER-004</code>, <code>PER-007</code> e <code>PER-008</code> para materializar Domínios de Evolução sem criar novo ID.</p>
 <p>A D5-B materializa o mesmo eixo em <code>ORG-002</code>, <code>PER-201</code>, <code>PER-202</code> e <code>PER-203</code>, também in-place.</p>
-<p>A D5-C1 adiciona três responsabilidades (<code>PER-010..012</code>) e seis handoffs (<code>TRN-008..013</code>) no estado contratado. A D5-C2 adiciona <strong>três SVGs low-fidelity e três perfis</strong>, sem criar novo ID ou transição. Por isso, a baseline visual passa de 118 para <strong>121</strong>, mas somente os 118 ativos anteriores possuem validação funcional vigente.</p>
+<p>A D5-C1 adiciona três responsabilidades (<code>PER-010..012</code>) e seis handoffs (<code>TRN-008..013</code>) no estado contratado. A D5-C2 adiciona três SVGs low-fidelity e três perfis. A D5-C3 reforma in-place e valida funcionalmente os três SVGs, elevando a cobertura visual de <strong>118 para 121 validações vigentes</strong> sem criar novo ativo, ID ou transição.</p>
 <h2 id="4-decisoes-estruturais-preservadas">4. Decisões estruturais preservadas<a class="headerlink" href="#4-decisoes-estruturais-preservadas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>materialização não equivale a validação funcional;</li>
-<li>perfil de rastreabilidade não equivale a aprovação da superfície;</li>
+<li>validação local de superfície não equivale a continuidade integrada;</li>
+<li>perfil de rastreabilidade não equivale por si só a aprovação da superfície;</li>
 <li>transição contratada não equivale a continuidade validada;</li>
 <li>uma versão visual reformulada exige validação correspondente;</li>
 <li>publicação ou ativação não equivale a distribuição garantida;</li>
@@ -9409,6 +9432,7 @@
 → D5-B — Domínios na camada de Oportunidades
 → D5-C1 — contrato das superfícies de direção, movimento e evolução
 → D5-C2 — low-fidelity de Meus Objetivos, Meus Próximos Passos e Minha Evolução
+→ D5-C3 — validação funcional e reformulação dos três SVGs
 </code></pre></div>
 <p>D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada.</p>
 <h3 id="51-d5-a">5.1 D5-A<a class="headerlink" href="#51-d5-a" title="Permanent link">&para;</a></h3>
@@ -9424,25 +9448,18 @@
 <li><code>PER-012 — Minha Evolução</code>;</li>
 <li><code>TRN-008..013</code> como handoffs mínimos com Hoje;</li>
 <li>nenhuma navegação direta inventada entre as três superfícies;</li>
-<li>responsabilidades e transições apenas contratadas.</li>
+<li>responsabilidades e transições inicialmente contratadas.</li>
 </ol>
 <h3 id="54-d5-c2">5.4 D5-C2<a class="headerlink" href="#54-d5-c2" title="Permanent link">&para;</a></h3>
-<p><a href="d5-c2-direction-movement-evolution-low-fidelity-wireframes/">GKR-UX-D5-C2-001</a> materializa um estado-base móvel para cada responsabilidade:</p>
+<p><a href="d5-c2-direction-movement-evolution-low-fidelity-wireframes/">GKR-UX-D5-C2-001</a> materializa um estado-base móvel para cada responsabilidade e cria três perfis de rastreabilidade (<code>R32..R34</code>). A frente eleva o inventário para 121 SVGs / 121 associações / 34 perfis, mantendo as três novas superfícies pendentes até validação posterior.</p>
+<h3 id="55-d5-c3">5.5 D5-C3<a class="headerlink" href="#55-d5-c3" title="Permanent link">&para;</a></h3>
+<p><a href="d5-c3-direction-movement-evolution-functional-validation/">GKR-UX-D5-C3-001</a> confronta os três SVGs com <code>PAS-001-OBJ-VIEW-001</code>, <code>PAS-001-PP-VIEW-001</code> e <code>PAS-001-EC-VIEW-001</code> e reforma somente insuficiências materiais:</p>
 <ul>
-<li><code>d5-c2-person-objectives-mobile.svg</code> — direção e controle de Objetivos, sem score de produtividade;</li>
-<li><code>d5-c2-person-next-steps-mobile.svg</code> — movimentos contextuais revisáveis, sem streak ou urgência artificial;</li>
-<li><code>d5-c2-person-evolution-mobile.svg</code> — trajetória, evidência, contexto e incerteza, sem score, ranking ou roda da vida.</li>
-</ul>
-<p>A D5-C2:</p>
-<ul>
-<li>cria <strong>3 SVGs</strong> e <strong>3 perfis</strong> (<code>R32..R34</code>);</li>
-<li>eleva o inventário visual para <strong>121 SVGs / 121 associações / 34 perfis</strong>;</li>
-<li>mantém <strong>118 validados + 3 pendentes</strong>;</li>
-<li>mantém <strong>57 superfícies e 66 transições</strong>;</li>
-<li>eleva IDs com referência visual para <strong>45/57</strong>;</li>
-<li>reduz responsabilidades sem SVG de 13 para <strong>10</strong>;</li>
-<li>preserva <code>TRN-008..013</code> como contratadas;</li>
-<li>não cria API, banco, evento, grafo, protótipo ou implementação.</li>
+<li><code>PER-010</code>: estados funcionais claros, prioridade declarada separada de valor pessoal, progresso qualitativo e controles de privacidade;</li>
+<li><code>PER-011</code>: estado <code>PRONTO</code>, prontidão/dependência explícitas, proposta distinta de decisão e ação coerente com o estado;</li>
+<li><code>PER-012</code>: período, baseline, direção, interpretação explicitamente inferida, confiança, incerteza, contestação e revisão;</li>
+<li>os três SVGs passam a possuir validação funcional local vigente;</li>
+<li><code>TRN-008..013</code> permanecem contratadas e fora da promoção desta frente.</li>
 </ul>
 <h2 id="6-resultado-da-uxa-100-a4-preservado">6. Resultado da UXA-100-A4 preservado<a class="headerlink" href="#6-resultado-da-uxa-100-a4-preservado" title="Permanent link">&para;</a></h2>
 <p><a href="uxa-100-a4-plans-entry-origin-and-navigation-handoffs/">UXA-100-A4</a> continua governando <code>PER-009</code>, <code>TRN-406/407</code>, <code>TRN-417/418</code> e <code>TRN-427/428</code>. <code>PER-009</code> permanece sem SVG; cobrança real, entitlement e processo posterior a <code>BND-002</code> continuam fora do escopo.</p>
@@ -9459,31 +9476,31 @@
 <tbody>
 <tr>
 <td>Jornadas Integradas</td>
-<td><code>active</code> 0.36.0</td>
+<td><code>active</code>; D5-C3 sincronizada</td>
 </tr>
 <tr>
 <td>Jornada da Pessoa</td>
-<td><code>draft</code> 0.19.0</td>
+<td><code>draft</code>; PER-010..012 validados localmente</td>
 </tr>
 <tr>
 <td>Jornada do Coletivo</td>
-<td><code>draft</code> 0.18.0</td>
+<td><code>draft</code></td>
 </tr>
 <tr>
 <td>Jornada da Organização</td>
-<td><code>draft</code> 0.11.0</td>
+<td><code>draft</code></td>
 </tr>
 <tr>
 <td>catálogo integrado</td>
-<td><code>active</code> 0.30.0; 121 SVGs</td>
+<td><code>active</code>; 121 SVGs / 121 validados</td>
 </tr>
 <tr>
 <td>galeria visual</td>
-<td><code>active</code> 0.23.0; 121 SVGs</td>
+<td><code>active</code>; 121 SVGs / 0 pendentes</td>
 </tr>
 <tr>
 <td>galeria da Pessoa</td>
-<td><code>active</code> 0.5.0; 23 SVGs</td>
+<td><code>active</code>; 23 SVGs</td>
 </tr>
 <tr>
 <td>galeria de Planos</td>
@@ -9491,23 +9508,23 @@
 </tr>
 <tr>
 <td>matriz por SVG</td>
-<td><code>active</code> 0.21.0; 121 associações / 34 perfis</td>
+<td><code>active</code>; 121 associações / 34 perfis</td>
 </tr>
 <tr>
 <td>lacunas</td>
-<td><code>active</code> 0.30.0</td>
+<td><code>active</code>; handoffs D5-C permanecem separados</td>
 </tr>
 <tr>
 <td>registro de superfícies</td>
-<td><code>active</code> 0.21.0; 57 IDs</td>
+<td><code>active</code>; 57 IDs</td>
 </tr>
 <tr>
 <td>registro de transições</td>
-<td><code>active</code> 0.22.0; 66 transições</td>
+<td><code>active</code>; 66 transições</td>
 </tr>
 <tr>
 <td>detalhamento da Pessoa</td>
-<td><code>active</code> 0.14.0</td>
+<td><code>active</code>; PER-010..012 validados localmente</td>
 </tr>
 <tr>
 <td>D5-A</td>
@@ -9525,11 +9542,14 @@
 <td>D5-C2</td>
 <td><code>active</code> 1.0.0</td>
 </tr>
+<tr>
+<td>D5-C3</td>
+<td><code>active</code> 1.0.0</td>
+</tr>
 </tbody>
 </table>
 <h2 id="9-ressalvas-vigentes">9. Ressalvas vigentes<a class="headerlink" href="#9-ressalvas-vigentes" title="Permanent link">&para;</a></h2>
 <ul>
-<li>3 SVGs D5-C2 permanecem pendentes de validação funcional;</li>
 <li>10 responsabilidades permanecem sem SVG dedicado, incluindo <code>PER-009</code>;</li>
 <li><code>TRN-008..013</code> permanecem contratadas até validação ponta a ponta;</li>
 <li><code>TRN-406/407</code> permanecem contratadas;</li>
@@ -9553,11 +9573,12 @@
 → D5-B — Domínios na camada de Oportunidades materializados sem nova superfície
 → D5-C1 — responsabilidades e handoffs mínimos contratados
 → D5-C2 — três superfícies materializadas em low-fidelity
+→ D5-C3 — três superfícies reformuladas e validadas localmente
 → V5 — pendente e não iniciada
 </code></pre></div>
-<p>D5-A/B/C1/C2 não consomem nem antecipam V5.</p>
+<p>D5-A/B/C1/C2/C3 não consomem nem antecipam V5.</p>
 <h2 id="11-proxima-evolucao-possivel">11. Próxima evolução possível<a class="headerlink" href="#11-proxima-evolucao-possivel" title="Permanent link">&para;</a></h2>
-<p>Após integração governada da D5-C2, a validação/reformulação funcional de <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> e o exame ponta a ponta de <code>TRN-008..013</code> podem constituir frente separada posterior. D6, D7, materialização de <code>PER-009</code>, V5/UXA-102, cobrança real e demais validações permanecem independentes. Nenhuma é iniciada automaticamente.</p>
+<p>Após integração governada da D5-C3, uma frente posterior poderá examinar exclusivamente <code>TRN-008..013</code> e a continuidade <code>Hoje ↔ Objetivos/Próximos Passos/Evolução</code>. D6, D7, materialização de <code>PER-009</code>, V5/UXA-102, cobrança real e demais validações permanecem independentes. Nenhuma é iniciada automaticamente.</p>
 
 
 

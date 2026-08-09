@@ -6829,10 +6829,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-baseline-apos-d5-c2" class="md-nav__link">
+  <a href="#9-baseline-apos-d5-c3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. Baseline após D5-C2
+        9. Baseline após D5-C3
       
     </span>
   </a>
@@ -9141,10 +9141,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-baseline-apos-d5-c2" class="md-nav__link">
+  <a href="#9-baseline-apos-d5-c3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. Baseline após D5-C2
+        9. Baseline após D5-C3
       
     </span>
   </a>
@@ -9200,7 +9200,7 @@
 
 <h1 id="lacunas-e-continuidades-ausentes">Lacunas e Continuidades Ausentes<a class="headerlink" href="#lacunas-e-continuidades-ausentes" title="Permanent link">&para;</a></h1>
 <h2 id="1-natureza-do-registro">1. Natureza do registro<a class="headerlink" href="#1-natureza-do-registro" title="Permanent link">&para;</a></h2>
-<p>Este documento é observacional e não promocional. A D5-C1 fechou a identidade arquitetural de <code>Meus Objetivos</code>, <code>Meus Próximos Passos</code> e <code>Minha Evolução</code>; a D5-C2 fecha somente a <strong>ausência visual do estado-base</strong> dessas três responsabilidades. Validação funcional, validação ponta a ponta dos handoffs, V5/UXA-102, D6, D7, cobrança real e demais frentes continuam separadas.</p>
+<p>Este documento é observacional e não promocional. A D5-C1 fechou a identidade arquitetural de <code>Meus Objetivos</code>, <code>Meus Próximos Passos</code> e <code>Minha Evolução</code>; a D5-C2 fechou a ausência visual do estado-base; a D5-C3 fecha a <strong>validação funcional local dos três SVGs</strong>. A lacuna remanescente passa a ser a validação integrada de <code>TRN-008..013</code> e, quando necessário, estados sensíveis/alternativos específicos. V5/UXA-102, D6, D7, cobrança real e demais frentes continuam separadas.</p>
 <h2 id="2-gates-pessoais">2. Gates pessoais<a class="headerlink" href="#2-gates-pessoais" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9258,23 +9258,23 @@
 <tr>
 <td>Hoje ↔ Meus Objetivos</td>
 <td>PER-008; TRN-008/009; PER-010</td>
-<td><strong>1 SVG D5-C2; validação pendente</strong></td>
-<td>responsabilidade contratada; handoffs contratados</td>
-<td>validação/reformulação da superfície + validação ponta a ponta</td>
+<td><strong>SVG D5-C2 reformulado e validado pela D5-C3</strong></td>
+<td>PER-010 validado localmente; handoffs contratados</td>
+<td>validação integrada de TRN-008/009</td>
 </tr>
 <tr>
 <td>Hoje ↔ Meus Próximos Passos</td>
 <td>PER-008; TRN-010/011; PER-011</td>
-<td><strong>1 SVG D5-C2; validação pendente</strong></td>
-<td>responsabilidade contratada; handoffs contratados</td>
-<td>validação/reformulação da superfície + validação ponta a ponta</td>
+<td><strong>SVG D5-C2 reformulado e validado pela D5-C3</strong></td>
+<td>PER-011 validado localmente; handoffs contratados</td>
+<td>validação integrada de TRN-010/011</td>
 </tr>
 <tr>
 <td>Hoje ↔ Minha Evolução</td>
 <td>PER-008; TRN-012/013; PER-012</td>
-<td><strong>1 SVG D5-C2; validação pendente</strong></td>
-<td>responsabilidade contratada; handoffs contratados</td>
-<td>validação/reformulação, sensibilidade e validação ponta a ponta</td>
+<td><strong>SVG D5-C2 reformulado e validado pela D5-C3</strong></td>
+<td>PER-012 validado localmente; handoffs contratados</td>
+<td>validação integrada de TRN-012/013; estados sensíveis adicionais quando aplicáveis</td>
 </tr>
 </tbody>
 </table>
@@ -9490,25 +9490,25 @@
 </thead>
 <tbody>
 <tr>
-<td>D5-C validação</td>
-<td>Meus Objetivos</td>
-<td>PER-010; TRN-008/009</td>
-<td>SVG D5-C2 pendente</td>
-<td>validação/reformulação + handoff</td>
+<td>D5-C integração</td>
+<td>Hoje ↔ Meus Objetivos</td>
+<td>PER-008; PER-010; TRN-008/009</td>
+<td>superfícies validadas</td>
+<td>validar identidade, contexto/payload, retorno, interrupção, concorrência, idempotência e autoridade</td>
 </tr>
 <tr>
-<td>D5-C validação</td>
-<td>Meus Próximos Passos</td>
-<td>PER-011; TRN-010/011</td>
-<td>SVG D5-C2 pendente</td>
-<td>validação/reformulação + handoff</td>
+<td>D5-C integração</td>
+<td>Hoje ↔ Meus Próximos Passos</td>
+<td>PER-008; PER-011; TRN-010/011</td>
+<td>superfícies validadas</td>
+<td>validar identidade, contexto/payload, retorno, interrupção, concorrência, idempotência e autoridade</td>
 </tr>
 <tr>
-<td>D5-C validação</td>
-<td>Minha Evolução</td>
-<td>PER-012; TRN-012/013</td>
-<td>SVG D5-C2 pendente</td>
-<td>validação/reformulação + sensibilidade + handoff</td>
+<td>D5-C integração</td>
+<td>Hoje ↔ Minha Evolução</td>
+<td>PER-008; PER-012; TRN-012/013</td>
+<td>superfícies validadas</td>
+<td>validar identidade, contexto/payload, retorno, interrupção, concorrência, idempotência, autoridade e sensibilidade</td>
 </tr>
 <tr>
 <td>P0B</td>
@@ -9624,8 +9624,14 @@
 <tr>
 <td style="text-align: right;">D5-C2</td>
 <td>materialização low-fidelity</td>
-<td><strong>3 SVGs materializados; 3 pendentes de validação</strong></td>
-<td>frente atual</td>
+<td>3 SVGs materializados</td>
+<td>concluído</td>
+</tr>
+<tr>
+<td style="text-align: right;">D5-C3</td>
+<td>validação/reformulação local</td>
+<td><strong>PER-010..012 validados; 0 SVGs pendentes</strong></td>
+<td>concluído localmente; TRNs separados</td>
 </tr>
 <tr>
 <td style="text-align: right;">V5</td>
@@ -9635,27 +9641,26 @@
 </tr>
 </tbody>
 </table>
-<h2 id="9-baseline-apos-d5-c2">9. Baseline após D5-C2<a class="headerlink" href="#9-baseline-apos-d5-c2" title="Permanent link">&para;</a></h2>
+<h2 id="9-baseline-apos-d5-c3">9. Baseline após D5-C3<a class="headerlink" href="#9-baseline-apos-d5-c3" title="Permanent link">&para;</a></h2>
 <ul>
 <li>SVGs canônicos: <strong>121</strong>;</li>
 <li>associações: <strong>121</strong>;</li>
 <li>perfis: <strong>34</strong>;</li>
-<li>validações funcionais vigentes de SVG: <strong>118</strong>;</li>
-<li>pendências específicas de SVG: <strong>3</strong>;</li>
+<li>validações funcionais vigentes de SVG: <strong>121</strong>;</li>
+<li>pendências específicas de SVG: <strong>0</strong>;</li>
 <li>superfícies/estados/fronteiras: <strong>57</strong>;</li>
 <li>transições: <strong>66</strong>;</li>
 <li>IDs com referência visual: <strong>45 de 57</strong>;</li>
 <li>responsabilidades sem SVG dedicado: <strong>10</strong>;</li>
 <li>fronteiras sem tela: <strong>2</strong>;</li>
-<li><code>PER-010..012</code> materializados e pendentes de validação;</li>
+<li><code>PER-010..012</code> materializados, reformulados e validados localmente;</li>
 <li><code>TRN-008..013</code> e <code>TRN-406/407</code> contratadas;</li>
 <li><code>TRN-417/418</code> e <code>TRN-427/428</code> integralmente validadas no limite documental;</li>
 <li>nenhuma implementação técnica criada.</li>
 </ul>
 <h2 id="10-criterios-preservados">10. Critérios preservados<a class="headerlink" href="#10-criterios-preservados" title="Permanent link">&para;</a></h2>
 <ul>
-<li>materialização de superfície não equivale a validação funcional;</li>
-<li>validação de superfície não equivale a validação automática de transição;</li>
+<li>validação local de superfície não equivale a validação automática de transição;</li>
 <li>navegar para Objetivos não cria ou confirma Objetivo;</li>
 <li>navegar para Próximos Passos não inicia ou conclui movimento;</li>
 <li>navegar para Minha Evolução não presume mudança, progresso ou reconhecimento;</li>
@@ -9667,7 +9672,7 @@
 <li>validação documental não equivale a implementação técnica.</li>
 </ul>
 <h2 id="11-proximo-ato-possivel">11. Próximo ato possível<a class="headerlink" href="#11-proximo-ato-possivel" title="Permanent link">&para;</a></h2>
-<p>Após integração governada da D5-C2, a validação/reformulação funcional de <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> e o exame ponta a ponta de <code>TRN-008..013</code> podem constituir frente posterior separada. Isso não inicia automaticamente V5/UXA-102, D6, D7, Product Engineering ou qualquer outra lacuna.</p>
+<p>Após integração governada da D5-C3, a validação ponta a ponta de <code>TRN-008..013</code> pode constituir frente posterior separada. Isso não inicia automaticamente V5/UXA-102, D6, D7, Product Engineering ou qualquer outra lacuna.</p>
 
 
 
