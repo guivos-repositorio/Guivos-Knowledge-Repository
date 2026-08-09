@@ -2,10 +2,13 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: draft
-version: 0.17.0
+version: 0.18.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-08
 related:
+  - PAS-001-DOMAIN-MODEL-001
+  - PAS-001-DOMAIN-RECON-001
+  - GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001
   - UXA-014
   - UXA-016
   - UXA-018
@@ -75,7 +78,66 @@ representação e autoridade
 
 `COL-002` e `COL-003` estão validadas. `COL-004` a `COL-008` permanecem programadas/contratadas ou parcialmente cobertas e não são substituídas pelas superfícies da Pessoa.
 
-## 3. Planos como etapa transversal canônica
+## 3. Eixo de Domínios de Evolução
+
+A D4 propaga `JED-001..JED-009` para a leitura integrada do Coletivo sem antropomorfizar o participante coletivo.
+
+No Coletivo, um Domínio de Evolução descreve a área à qual uma necessidade, propósito, iniciativa, atividade, experiência ou contribuição coletiva se relaciona.
+
+```text
+Coletivo relacionado a JED-001 Saúde e Bem-estar
+≠ “o Coletivo está saudável”
+```
+
+A leitura integrada pode ser:
+
+```text
+Coletivo
+→ necessidade ou propósito coletivo
+→ domínio(s) relacionado(s)
+→ iniciativa/atividade
+→ participantes e relações autorizadas
+→ execução voluntária
+→ evidências coletivas legítimas
+→ resultados e aprendizados
+```
+
+| ID | Domínio | Exemplos no contexto do Coletivo |
+|---|---|---|
+| `JED-001` | Saúde e Bem-estar | caminhada comunitária, prevenção, promoção de bem-estar e hábitos saudáveis |
+| `JED-002` | Trabalho, Carreira e Estudos | grupo de estudos, capacitação, mentoria e desenvolvimento profissional |
+| `JED-003` | Vida Financeira | educação financeira comunitária e apoio à organização econômica dos participantes |
+| `JED-004` | Empreendedorismo e Projetos | rede de empreendedores, laboratório de projetos e iniciativa produtiva coletiva |
+| `JED-005` | Relacionamentos e Vida Social | pertencimento, convivência, integração, redes de apoio e comunidade |
+| `JED-006` | Espiritualidade, Propósito e Valores | comunidade de fé, reflexão, valores compartilhados e propósito coletivo voluntário |
+| `JED-007` | Viagens, Lazer, Cultura e Novas Experiências | viagens em grupo, cultura, lazer e experiências compartilhadas |
+| `JED-008` | Causas, Voluntariado e Contribuição | ação social, causa, voluntariado, mobilização e campanha comunitária |
+| `JED-009` | Organização e Equilíbrio da Vida | coordenação de iniciativas, organização de rotinas e apoio à vida comunitária |
+
+O Coletivo pode propor uma atividade relacionada a um domínio, mas não atribui automaticamente esse domínio à Pessoa participante.
+
+```text
+atividade coletiva em JED-006
+≠ participante classificado como religioso
+```
+
+```text
+atividade coletiva em JED-003
+≠ participante classificado por situação financeira
+```
+
+Multidomínio é legítimo. `Ainda estou descobrindo` pode existir quando o propósito, necessidade ou direção ainda está sendo compreendido. `other_unmapped` preserva áreas ainda não representadas adequadamente.
+
+Regras desta vista:
+
+- o mesmo domínio entre Coletivo e Pessoa não cria match, pertencimento, recomendação ou compartilhamento automático;
+- domínio não transfere governança, autoridade ou visibilidade de dados;
+- domínio não mede impacto, legitimidade ou maturidade do Coletivo;
+- plano pago não altera domínio, relevância orgânica ou impacto;
+- `domain_link` permanece semântico e pode ser `0..n`;
+- D4 não cria superfície, SVG ou transição; a materialização experiencial permanece D5.
+
+## 4. Planos como etapa transversal canônica
 
 A UXA-100-A3 registra **Planos** canonicamente na jornada operacional do Coletivo. A UXA-100-A4 fecha a origem administrativa voluntária reutilizando `COL-002 — Visão Geral do Responsável`.
 
@@ -127,7 +189,7 @@ Regras:
 - quando a contratação não puder ser concluída em autoatendimento, a jornada usa `BND-002` como fronteira assistida;
 - plano pago não aumenta relevância orgânica, legitimidade ou impacto.
 
-## 4. Handoffs críticos
+## 5. Handoffs críticos
 
 | Ligação | Estado |
 |---|---|
@@ -140,7 +202,7 @@ Regras:
 | Coletivo ↔ Organização | contratada; materialização bilateral pendente |
 | COL-301 → BND-002 (`TRN-416`) | **parcial; processo de contratação/dimensionamento assistido posterior não materializado** |
 
-## 5. Efeito da UXA-100-A4
+## 6. Efeito da UXA-100-A4
 
 - reformula in-place a navegação de `COL-002` para incluir `Planos e cobrança`;
 - torna explícito em `COL-301` o retorno à Visão Geral;
@@ -148,7 +210,7 @@ Regras:
 - não cria nova superfície ou SVG;
 - não altera a maturidade das transições comerciais internas ou de `BND-002`.
 
-## 6. Princípios preservados
+## 7. Princípios preservados
 
 - responsável atua somente com autoridade concedida;
 - apoio institucional não transfere governança;
@@ -163,9 +225,9 @@ Regras:
 - atingir cota não reduz visibilidade das publicações existentes;
 - pausa, recusa e saída não reduzem reputação;
 - estado canônico mais recente prevalece sobre estado visual obsoleto;
-- validação integral documental não equivale a implementação.
+- mesmo domínio entre participantes não transfere contexto pessoal ou autoridade.
 
-## 7. Estado da vista
+## 8. Estado da vista
 
 Esta vista permanece `draft` porque:
 
@@ -174,8 +236,9 @@ Esta vista permanece `draft` porque:
 - a relação Organização–Coletivo permanece contratada e não materializada;
 - as transições comerciais internas de Planos continuam locais e `TRN-416` permanece parcial;
 - cobrança real, gateway e processo assistido posterior a `BND-002` não foram implementados/validados ponta a ponta;
+- os Domínios de Evolução foram propagados documentalmente por D4, mas ainda não foram materializados/validados como UX; isso permanece D5;
 - outras continuidades ainda não foram examinadas como conjunto.
 
-## 8. Estado da frente de Planos
+## 9. Estado da frente
 
-A identidade da origem administrativa voluntária do Coletivo está encerrada pela UXA-100-A4 em `COL-002 ↔ COL-301`. A taxonomia vigente permanece `Livre · Mobiliza · Impacta · Rede`. Nenhuma próxima UXA é iniciada automaticamente.
+A identidade da origem administrativa voluntária do Coletivo está encerrada pela UXA-100-A4 em `COL-002 ↔ COL-301`. A taxonomia vigente de planos permanece `Livre · Mobiliza · Impacta · Rede`. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista, sem iniciar D5. Nenhuma próxima UXA é iniciada automaticamente.

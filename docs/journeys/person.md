@@ -2,10 +2,13 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.16.0
+version: 0.17.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-08
 related:
+  - PAS-001-DOMAIN-MODEL-001
+  - PAS-001-DOMAIN-RECON-001
+  - GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001
   - UXA-002
   - UXA-004
   - UXA-006
@@ -65,7 +68,70 @@ A UXA-097 valida integralmente `PER-007 → PER-008`. A primeira variante de Hoj
 
 A jornada completa permanece `draft`: `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` ainda não estão validadas ponta a ponta.
 
-## 2. Descoberta de oportunidades e saída consciente
+## 2. Eixo de Domínios de Evolução
+
+A D4 propaga para esta vista o vocabulário canônico de `PAS-001-DOMAIN-MODEL-001` e a reconciliação de `PAS-001-DOMAIN-RECON-001`.
+
+A Jornada da Pessoa passa a ser lida em dois eixos simultâneos:
+
+```text
+como a jornada acontece
+×
+sobre qual área da vida/evolução a jornada está tratando
+```
+
+Todos os nove Domínios de Evolução podem ser relevantes à Pessoa, conforme contexto declarado, autorizado ou legitimamente confirmado:
+
+| ID | Domínio | Exemplos de contexto da Pessoa |
+|---|---|---|
+| `JED-001` | Saúde e Bem-estar | hábitos, atividade física, sono, alimentação, autocuidado, prevenção, qualidade de vida |
+| `JED-002` | Trabalho, Carreira e Estudos | emprego, recolocação, carreira, cursos, estudos, competências, certificações, liderança |
+| `JED-003` | Vida Financeira | orçamento, reserva, renda, dívida, planejamento e organização financeira |
+| `JED-004` | Empreendedorismo e Projetos | ideia, negócio, projeto pessoal, validação, parceiros e execução |
+| `JED-005` | Relacionamentos e Vida Social | família, amizades, convivência, pertencimento e novas conexões |
+| `JED-006` | Espiritualidade, Propósito e Valores | fé, espiritualidade, propósito, valores, reflexão e comunidade escolhida |
+| `JED-007` | Viagens, Lazer, Cultura e Novas Experiências | viagens, hobbies, cultura, lazer, eventos e experiências desejadas |
+| `JED-008` | Causas, Voluntariado e Contribuição | voluntariado, causas, participação comunitária, contribuição e serviço |
+| `JED-009` | Organização e Equilíbrio da Vida | rotina, prioridades, tempo, equilíbrio e reorganização após mudanças |
+
+Uma leitura semântica possível é:
+
+```text
+Pessoa
+→ Momento Atual
+→ domínio declarado/candidato
+→ Direção
+→ Objetivo
+→ Próximo Passo
+→ Oportunidades compatíveis e relevantes
+→ Experiência
+→ Evidências legítimas
+→ Evolução reconhecida pelo participante
+```
+
+O domínio pode aparecer antes, durante ou depois da formulação de um Objetivo. A Pessoa não deverá ser obrigada a classificar seu relato para continuar quando a capacidade aplicável não exigir essa classificação.
+
+Multidomínio é legítimo. Exemplo:
+
+```text
+"Quero melhorar minha renda para conseguir fazer uma viagem"
+→ JED-003 Vida Financeira
++ JED-007 Viagens, Lazer, Cultura e Novas Experiências
+```
+
+`Ainda estou descobrindo` permanece estado legítimo de exploração e não constitui `JED-010`. `other_unmapped` preserva uma área ainda não representada adequadamente pela taxonomia e não autoriza reclassificação silenciosa.
+
+Regras desta vista:
+
+- `domain_link` pode ser `0..n` e permanece associação semântica, temporal e revisável;
+- domínio candidato não equivale a domínio confirmado;
+- domínio não é identidade permanente da Pessoa;
+- domínio não é diagnóstico, score, prioridade humana ou prova de evolução;
+- saúde, espiritualidade, finanças e outros contextos sensíveis preservam finalidade, autoridade e proteção próprias;
+- plano pago, patrocínio ou oferta comercial não altera domínio nem relevância funcional;
+- D4 não cria nova tela, pergunta obrigatória, chip, card, SVG ou transição; materialização experiencial permanece D5.
+
+## 3. Descoberta de oportunidades e saída consciente
 
 A UXA-098 fecha a continuidade entre descoberta territorial e Detalhe; a UXA-101 fecha V4 até a fronteira externa:
 
@@ -106,7 +172,7 @@ Referência visual reformulada e revalidada pela UXA-101:
 
 [Visualizar SVG](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
 
-## 3. Planos como etapa transversal canônica
+## 4. Planos como etapa transversal canônica
 
 A UXA-100-A3 promove **Planos** como etapa canonicamente registrada da jornada da Pessoa. A UXA-100-A4 fecha a identidade documental de sua origem voluntária sem criar uma tela artificial de Conta.
 
@@ -147,7 +213,7 @@ Regras de jornada:
 - falha preserva Free/estado anterior quando não houver confirmação;
 - pagamento não altera relevância, confiança, posição orgânica nem garantia de evolução.
 
-## 4. Pessoa em Coletivos
+## 5. Pessoa em Coletivos
 
 ```text
 Explorar Coletivos
@@ -171,7 +237,7 @@ Explorar Coletivos
 | Central de Atualizações | validado | UXA-093/094/095/096 | UXA-094; versão corrente UXA-096 | TRN-110 e TRN-111 integralmente validadas |
 | Início do Participante | validado | UXA-095/096 | UXA-096 | TRN-111 integralmente validada |
 
-## 5. Proteções preservadas
+## 6. Proteções preservadas
 
 - conclusão da compreensão inicial não equivale a avanço humano;
 - personalização não é condição para acessar Hoje;
@@ -186,9 +252,10 @@ Explorar Coletivos
 - acompanhar não equivale a participar;
 - convite não cria vínculo;
 - aprovação não cria função, autoridade ou presença obrigatória;
-- estado canônico vigente prevalece sobre renderização anterior.
+- estado canônico vigente prevalece sobre renderização anterior;
+- mesmo domínio entre Pessoa, Coletivo e Organização não cria match, recomendação ou compartilhamento automático.
 
-## 6. Estado da vista
+## 7. Estado da vista
 
 Esta vista permanece `draft` porque:
 
@@ -197,10 +264,11 @@ Esta vista permanece `draft` porque:
 - `PER-009` ainda não possui materialização própria e `TRN-406/407` permanecem contratadas;
 - estados P0B adicionais permanecem separados;
 - áreas internas especializadas a partir de `PER-108` não foram validadas como conjunto;
+- os Domínios de Evolução foram propagados documentalmente por D4, mas ainda não foram materializados/validados como UX; isso permanece D5;
 - outras continuidades da jornada pessoal ainda não foram examinadas ponta a ponta.
 
 `TRN-205` deixa de ser motivo de `draft`: a UXA-101 a valida integralmente **até `BND-001`**, sem validar o processo externo posterior.
 
-## 7. Estado atual
+## 8. Estado atual
 
-V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. A frente de Planos está canonicamente registrada e sua origem voluntária possui identidade formal pela UXA-100-A4. V5/UXA-102 não foi iniciada e nenhuma etapa de Engenharia de Produto foi autorizada automaticamente.
+V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. A frente de Planos está canonicamente registrada e sua origem voluntária possui identidade formal pela UXA-100-A4. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista sem criar materialização visual. V5/UXA-102 não foi iniciada e nenhuma etapa de Engenharia de Produto foi autorizada automaticamente.
