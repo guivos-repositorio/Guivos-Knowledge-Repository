@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-PERSON-001
 title: Pessoa — Fundação, Entrada, Compreensão e Recorrência
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -15,6 +15,7 @@ related:
   - UXA-097
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
+  - GKR-UX-D5-C3-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -39,7 +40,7 @@ Home pública
 └── Minha Evolução
 ```
 
-A UXA-097 valida `GKR-TRN-007` entre a compreensão inicial e a primeira Tela Hoje. A D5-C2 materializa as três responsabilidades especializadas posteriores, mas `TRN-008..013` permanecem contratadas e ainda não estão validadas ponta a ponta.
+A UXA-097 valida `GKR-TRN-007` entre a compreensão inicial e a primeira Tela Hoje. A D5-C3 valida localmente as três superfícies especializadas posteriores, mas `TRN-008..013` permanecem contratadas e ainda não estão validadas ponta a ponta.
 
 ## 2. Home pública
 
@@ -147,39 +148,39 @@ A primeira variante não presume avanço, mudança anterior, urgência ou preenc
 
 ![](../assets/wireframes/uxa-006-hoje-mobile.svg){ width="320" loading="lazy" }
 
-## 8. Meus Objetivos — D5-C2
+## 8. Meus Objetivos — D5-C3
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-010` · materialização: `GKR-UX-D5-C2-001` · **validação funcional pendente** · `TRN-008/009` contratadas
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-010` · materialização: `GKR-UX-D5-C2-001` · **validação/reformulação local: `GKR-UX-D5-C3-001`** · `TRN-008/009` contratadas
 
 ### `d5-c2-person-objectives-mobile.svg`
 
 ![](../assets/wireframes/d5-c2-person-objectives-mobile.svg){ width="320" loading="lazy" }
 
-O estado-base organiza direção e controle de Objetivos sem percentual automático de progresso, score humano ou produtividade como valor.
+O estado-base passa a explicitar estado funcional, prioridade declarada, progresso qualitativo, revisão e privacidade. Prioridade e progresso permanecem separados de valor humano.
 
-## 9. Meus Próximos Passos — D5-C2
+## 9. Meus Próximos Passos — D5-C3
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-011` · materialização: `GKR-UX-D5-C2-001` · **validação funcional pendente** · `TRN-010/011` contratadas
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-011` · materialização: `GKR-UX-D5-C2-001` · **validação/reformulação local: `GKR-UX-D5-C3-001`** · `TRN-010/011` contratadas
 
 ### `d5-c2-person-next-steps-mobile.svg`
 
 ![](../assets/wireframes/d5-c2-person-next-steps-mobile.svg){ width="320" loading="lazy" }
 
-O estado-base apresenta movimentos contextuais como escolhas revisáveis, sem streak, obrigação ou urgência artificial. Conclusão de passo não comprova evolução.
+O estado-base distingue `PRONTO` de `PROPOSTO`, torna prontidão/dependência explícitas e usa ações compatíveis com cada estado. Não utiliza streak, obrigação ou urgência artificial.
 
-## 10. Minha Evolução — D5-C2
+## 10. Minha Evolução — D5-C3
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-012` · materialização: `GKR-UX-D5-C2-001` · **validação funcional pendente** · `TRN-012/013` contratadas
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-012` · materialização: `GKR-UX-D5-C2-001` · **validação/reformulação local: `GKR-UX-D5-C3-001`** · `TRN-012/013` contratadas
 
 ### `d5-c2-person-evolution-mobile.svg`
 
 ![](../assets/wireframes/d5-c2-person-evolution-mobile.svg){ width="320" loading="lazy" }
 
-O estado-base separa Área da jornada, trajetória, aspectos observados e contexto relacionado. Não utiliza score, radar, roda da vida, diagnóstico ou avaliação espiritual.
+O estado-base explicita período, baseline, direção, natureza inferida da interpretação, confiança e incerteza, mantendo Área da jornada, Contexto Vivo e aspecto descritivo separados. Não utiliza score, radar, roda da vida, diagnóstico ou avaliação espiritual.
 
 ## 11. Limite
 
-Esta página passa a reunir **23 SVGs** da jornada pessoal deste recorte: 20 previamente validados + 3 materializados pela D5-C2 e ainda pendentes de validação funcional.
+Esta página reúne **23 SVGs**, todos com validação funcional documental vigente. A validação dos três destinos D5-C3 é local e não promove seus handoffs.
 
 A Home e a Tela Hoje permanecem separadas. `TRN-007` está integralmente validada, mas `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` continuam parciais e `TRN-008..013` permanecem contratadas; portanto a Jornada da Pessoa permanece `draft`.
 
