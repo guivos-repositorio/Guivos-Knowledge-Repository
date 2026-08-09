@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-101
 status: active
-version: 2.13.0
+version: 2.14.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-09
 depends_on:
@@ -27,6 +27,7 @@ related:
   - GKR-UX-D5-C2-001
   - GKR-UX-D5-C3-001
   - GKR-UX-D5-C4A-001
+  - GKR-UX-D5-C4B-001
   - M7.88
 normative: false
 ---
@@ -121,15 +122,16 @@ Complementos da UXA-100:
 - [D5-C1](d5-c1-direction-movement-evolution-surface-contract.md) — `PER-010..012` e `TRN-008..013` contratados sem SVG;
 - [D5-C2](d5-c2-direction-movement-evolution-low-fidelity-wireframes.md) — um estado-base low-fidelity para `PER-010..012`;
 - [D5-C3](d5-c3-direction-movement-evolution-functional-validation.md) — validação funcional e reformulação local dos três SVGs;
-- [D5-C4A](d5-c4a-direction-movement-evolution-handoff-contract.md) — Hoje recorrente reformulado/revalidado e contrato semântico de `TRN-008..013`, sem promoção.
+- [D5-C4A](d5-c4a-direction-movement-evolution-handoff-contract.md) — Hoje recorrente reformulado/revalidado e contrato semântico de `TRN-008..013`, sem promoção;
+- [D5-C4B](d5-c4b-direction-movement-evolution-integrated-handoff-validation.md) — validação individual integrada de `TRN-008..013`; seis ligações promovidas no limite documental.
 
-D5-C4A não é UXA-102/V5 e não altera a numeração deste índice.
+D5-C4B não é UXA-102/V5 e não altera a numeração deste índice.
 
 ## Estado sincronizado
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **2.35.0** |
+| Registro do Estado Atual | **2.36.0** |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
@@ -142,4 +144,4 @@ D5-C4A não é UXA-102/V5 e não altera a numeração deste índice.
 | responsabilidades sem SVG | **10** |
 | Engenharia de Produto | pausada antes de W0-01 |
 
-A D5-C4A não altera inventário físico ou granular. Ela reformula/revalida localmente o estado recorrente de `PER-008`, materializa as origens visuais compactas e governa o contexto dos seis handoffs, mantendo `TRN-008..013` contratadas; não cria novo marco funcional, não inicia D6, D7, UXA-102/V5 ou implementação técnica.
+A D5-C4B não altera inventário físico ou granular. Ela promove `TRN-008..013` para integralmente validadas no limite documental; não cria novo marco funcional, não inicia D6, D7, UXA-102/V5 ou implementação técnica.

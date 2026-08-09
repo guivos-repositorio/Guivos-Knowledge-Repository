@@ -8,11 +8,11 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **2.35.0** |
+| GKR-STATE-001 | **2.36.0** |
 | Era | GE-2 — Knowledge |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
-| frente não numerada mais recente | **D5-C4A — origens visuais e contrato dos handoffs, sem promoção** |
+| frente não numerada mais recente | **D5-C4B — TRN-008..013 integralmente validadas no limite documental** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
 | SVGs | **121 — 121 validados / 0 pendentes** |
 | associações | **121** |
@@ -22,16 +22,17 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Engenharia de Produto | pausada antes de W0-01 |
 | programa P0–P9 | consolidado documentalmente após integração de P9 |
 
-O Journey possui baseline canônico de **9 Domínios de Evolução**. D5-A e D5-B materializam esse eixo em superfícies existentes; D5-C1 contratou `PER-010..012` e `TRN-008..013`; D5-C2 materializou um estado-base low-fidelity para as três responsabilidades; D5-C3 validou e reformou localmente esses três SVGs; D5-C4A reformula/revalida Hoje recorrente e governa o contrato dos seis handoffs sem promovê-los.
+O Journey possui baseline canônico de **9 Domínios de Evolução**. D5-A e D5-B materializam esse eixo em superfícies existentes; D5-C1 contratou `PER-010..012` e `TRN-008..013`; D5-C2 materializou um estado-base low-fidelity para as três responsabilidades; D5-C3 validou e reformou localmente esses três SVGs; D5-C4A reformulou/revalidou Hoje recorrente e governou o contrato dos seis handoffs; D5-C4B validou individualmente as seis ligações ponta a ponta no limite documental.
 
 ## Public Canon
 
 O documento institucional público vigente é o [GOG-001 — Guia Oficial da Guivos 5.0.0](docs/public/guia-oficial-da-guivos.md).
 
-A edição 5.0.0 foi reconciliada com as autoridades de participantes, planos, sete Produtos Especializados, grafo/Neo4j, incentivos, arquitetura institucional, privacidade e internacionalização. D5-C4A permanece autoridade interna de Experience Architecture e não declara disponibilidade pública de produto.
+A edição 5.0.0 foi reconciliada com as autoridades de participantes, planos, sete Produtos Especializados, grafo/Neo4j, incentivos, arquitetura institucional, privacidade e internacionalização. D5-C4B permanece autoridade interna de Experience Architecture e não declara disponibilidade pública de produto.
 
 ## Autoridades recentes
 
+- [D5-C4B — Validação Integrada dos Handoffs](docs/experience-architecture/d5-c4b-direction-movement-evolution-integrated-handoff-validation.md)
 - [D5-C4A — Materialização e Contrato Integrado dos Handoffs](docs/experience-architecture/d5-c4a-direction-movement-evolution-handoff-contract.md)
 - [D5-C3 — Validação Funcional de Direção, Movimento e Evolução](docs/experience-architecture/d5-c3-direction-movement-evolution-functional-validation.md)
 - [D5-C2 — Materialização Low-Fidelity de Direção, Movimento e Evolução](docs/experience-architecture/d5-c2-direction-movement-evolution-low-fidelity-wireframes.md)
@@ -63,9 +64,8 @@ Neo4j = tecnologia de referência ≠ produção
 Fundação Guivos = conceito ≠ entidade constituída
 Portugal = T1_candidate ≠ mercado ativo
 aceite contratual ≠ consentimento LGPD ≠ preferência
-PER-010..012 validados localmente ≠ continuidade integrada ≠ produto implementado
-PER-008 recorrente reformulado/revalidado ≠ TRN-008..013 promovidas
-TRN-008..013 contratadas ≠ continuidade validada
+PER-010..012 validados localmente ≠ produto implementado
+TRN-008..013 integralmente validadas documentalmente ≠ continuidade implementada
 Domínio de Evolução ≠ identidade ≠ score ≠ diagnóstico ≠ prova de evolução
 Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança
 ```
@@ -81,20 +81,20 @@ Plano não representa mérito, prestígio ou nível de evolução.
 
 A origem voluntária de Planos está formalizada por `PER-009 ↔ PER-301`, `COL-002 ↔ COL-301` e `ORG-001 ↔ ORG-301`. A origem da Pessoa ainda não possui SVG dedicado; navegar para Planos não equivale a contratar ou iniciar cobrança.
 
-## Jornada pessoal especializada após D5-C4A
+## Jornada pessoal especializada após D5-C4B
 
 A Experience Architecture reconhece:
 
 ```text
-PER-008 — Hoje
+PER-008 — Hoje recorrente
 ├── TRN-008 → PER-010 — Meus Objetivos → TRN-009 → PER-008
 ├── TRN-010 → PER-011 — Meus Próximos Passos → TRN-011 → PER-008
 └── TRN-012 → PER-012 — Minha Evolução → TRN-013 → PER-008
 ```
 
-`PER-010..012` possuem um SVG low-fidelity cada e estão **funcionalmente validados localmente pela D5-C3**. D5-C4A reforma o estado recorrente de Hoje para expor `Meus Objetivos`, `Abrir este passo` e `Minha Evolução` de forma compacta e governa identidade, contexto mínimo, retorno, interrupção, concorrência, idempotência, autoridade e sensibilidade.
+`PER-010..012` possuem um SVG low-fidelity cada e estão **funcionalmente validados localmente pela D5-C3**. D5-C4A reformulou o estado recorrente de Hoje para expor `Meus Objetivos`, `Abrir este passo` e `Minha Evolução` de forma compacta e governou identidade, contexto mínimo, retorno, interrupção, concorrência, idempotência, autoridade e sensibilidade.
 
-As seis transições permanecem `contratadas`; portanto, origem visual + contrato semântico não equivalem a continuidade integrada validada.
+A D5-C4B promove `TRN-008..013` para **integralmente validadas no limite documental**. Isso não comprova roteamento, persistência, sincronização ou produto implementado. A primeira variante de Hoje continua sem obrigação de expor esses aprofundamentos.
 
 ## Domínios de Evolução do Guivos Journey
 
@@ -120,8 +120,7 @@ Não estão autorizados ou comprovados apenas pela consolidação documental:
 
 - UXA-102/V5;
 - retomada da Engenharia de Produto;
-- promoção automática de `TRN-008..013` a continuidade validada;
-- D5-C4B sem autorização separada;
+- implementação técnica de `TRN-008..013`;
 - implementação/produção Neo4j, GraphRAG ou GDS;
 - classificação operacional por IA dos Domínios de Evolução;
 - ontologia física de grafo para os Domínios de Evolução;

@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.23.0
+version: 0.24.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -31,6 +31,7 @@ related:
   - GKR-UX-D5-C2-001
   - GKR-UX-D5-C3-001
   - GKR-UX-D5-C4A-001
+  - GKR-UX-D5-C4B-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
@@ -42,7 +43,9 @@ normative: false
 
 ## 1. Finalidade
 
-Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A D5-C1 adicionou seis handoffs bidirecionais mínimos entre `PER-008 — Hoje` e `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução`. A D5-C2 materializou os três destinos, a D5-C3 os validou localmente e a D5-C4A materializa as origens no estado recorrente de Hoje e governa o contrato semântico dos seis handoffs. A contagem permanece em **66 transições** e `TRN-008..013` continuam `contratada`.
+Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A D5-C1 adicionou seis handoffs bidirecionais mínimos entre `PER-008 — Hoje` e `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução`. A D5-C2 materializou os três destinos, a D5-C3 os validou localmente, a D5-C4A materializou as origens recorrentes em Hoje e fechou o contrato semântico, e a D5-C4B validou individualmente `TRN-008..013` ponta a ponta no limite documental.
+
+A contagem permanece em **66 transições**. `TRN-008..013` passam a **integralmente validadas**.
 
 ## 2. Convenções de estado
 
@@ -79,18 +82,18 @@ Validação integral documental não comprova implementação técnica nem esten
 | GKR-TRN-005 | PER-005 | PER-006 | parcial | continuidade entre materializações |
 | GKR-TRN-006 | PER-006 | PER-007 | localmente validada | UXA-037 |
 | GKR-TRN-007 | PER-007 | PER-008 | **integralmente validada** | UXA-097 |
-| GKR-TRN-008 | PER-008 | PER-010 | **contratada** | D5-C4A materializa origem genérica `Meus Objetivos` e governa contexto mínimo/revalidação; validação ponta a ponta ainda pendente |
-| GKR-TRN-009 | PER-010 | PER-008 | **contratada** | retorno `‹ Hoje` + contrato neutro D5-C4A; preservação integrada de estado e efeitos ainda não validada ponta a ponta |
-| GKR-TRN-010 | PER-008 | PER-011 | **contratada** | D5-C4A refina origem para `Abrir este passo` e governa referência lógica mínima/fallback; validação ponta a ponta ainda pendente |
-| GKR-TRN-011 | PER-011 | PER-008 | **contratada** | retorno `‹ Hoje` não conclui/aceita passo segundo D5-C4A; reentrada integrada ainda não validada |
-| GKR-TRN-012 | PER-008 | PER-012 | **contratada** | D5-C4A materializa origem genérica/neutra `Minha Evolução` sem payload sensível por padrão; validação ponta a ponta ainda pendente |
-| GKR-TRN-013 | PER-012 | PER-008 | **contratada** | D5-C4A governa retorno sem confirmar interpretação/evolução e preservação epistemológica; validação ponta a ponta ainda pendente |
+| GKR-TRN-008 | PER-008 | PER-010 | **integralmente validada** | D5-C4B — Hoje recorrente → acesso genérico a Objetivos; contexto mínimo, revalidação, retorno, interrupção, concorrência e idempotência examinados |
+| GKR-TRN-009 | PER-010 | PER-008 | **integralmente validada** | D5-C4B — retorno `‹ Hoje` neutro; não salva edição incompleta, não altera prioridade/progresso e reconsulta estado canônico |
+| GKR-TRN-010 | PER-008 | PER-011 | **integralmente validada** | D5-C4B — `Abrir este passo` preserva somente referência lógica mínima quando vigente; fallback neutro/atualizado |
+| GKR-TRN-011 | PER-011 | PER-008 | **integralmente validada** | D5-C4B — retorno não marca passo como visto/aceito/iniciado/executado/concluído; Hoje reconsulta estado vigente |
+| GKR-TRN-012 | PER-008 | PER-012 | **integralmente validada** | D5-C4B — entrada genérica/neutra; sem trajetória/domínio/interpretação/evidência sensível por padrão; privacidade revalidada |
+| GKR-TRN-013 | PER-012 | PER-008 | **integralmente validada** | D5-C4B — retorno não confirma interpretação/evolução; natureza epistemológica, minimização e permissões preservadas |
 
 `TRN-007` preserva consentimento, estado canônico, retorno e idempotência; navegar para Hoje não cria avanço ou autorização adicional.
 
-`TRN-008..013` são handoffs de navegação protegida. Abrir uma responsabilidade especializada não cria, confirma ou altera o objeto funcional correspondente. Retornar a Hoje não equivale a concluir, aceitar, reconhecer evolução ou conceder nova autorização.
+`TRN-008..013` são handoffs de navegação protegida integralmente validados pela D5-C4B no limite documental. Abrir uma responsabilidade especializada não cria, confirma ou altera automaticamente o objeto funcional correspondente. Retornar a Hoje não equivale a concluir, aceitar, reconhecer evolução ou conceder nova autorização.
 
-A D5-C4A fecha o contrato de identidade quando aplicável, contexto mínimo, revalidação, retorno, interrupção, concorrência e idempotência e materializa as origens no estado recorrente de Hoje. Isso **não comprova execução ponta a ponta**. Por isso, a maturidade das seis ligações não muda.
+Para `TRN-008`, `TRN-010` e `TRN-012`, a validação aplica-se ao **estado recorrente de PER-008 quando o affordance correspondente estiver presente e aplicável**. A primeira variante de Hoje da UXA-097 não é obrigada a materializar esses três acessos.
 
 A D5-C1 não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011 ↔ PER-012` ou `PER-010 ↔ PER-012`. Relação semântica entre capacidades não equivale automaticamente a navegação direta.
 
@@ -239,7 +242,7 @@ A correção semântica preservada:
 ## 10. Preservações de maturidade
 
 - transições totais permanecem **66**;
-- `TRN-008..013` ficam **contratadas** após D5-C4A; origem visual e contrato integrado não substituem validação específica ponta a ponta;
+- `TRN-008..013` ficam **integralmente validadas** pela D5-C4B no limite documental;
 - `TRN-406/407` ficam **contratadas** até materialização suficiente de `PER-009`;
 - `TRN-417/418` e `TRN-427/428` ficam **integralmente validadas** no limite documental de navegação administrativa;
 - `TRN-401..405`, `TRN-411..415` e `TRN-421..425` permanecem localmente validadas;
@@ -250,4 +253,4 @@ A correção semântica preservada:
 
 ## 11. Próximo gate
 
-A D5-C4A encerra a lacuna de origem visual inequívoca em Hoje recorrente e governa o contrato dos seis handoffs sem promovê-los. A **D5-C4B — validação integrada de `TRN-008..013`** exige autorização separada e deverá decidir individualmente a maturidade de cada ligação. V5/UXA-102, D6, D7, integrações patrocinadas, cobrança real e processos posteriores a `BND-002` permanecem frentes separadas e não são iniciados automaticamente.
+A D5-C4B encerra a lacuna específica de continuidade `Hoje ↔ Meus Objetivos / Meus Próximos Passos / Minha Evolução` no limite documental. A Jornada da Pessoa permanece `draft` por outras lacunas. V5/UXA-102, D6, D7, integrações patrocinadas, cobrança real e processos posteriores a `BND-002` permanecem frentes separadas e não são iniciados automaticamente.
