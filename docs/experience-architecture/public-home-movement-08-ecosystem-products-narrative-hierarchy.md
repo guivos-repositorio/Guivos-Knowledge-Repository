@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-NARR-002
 title: Refinamento do Movimento 08 — Hierarquia Narrativa do Ecossistema e Produtos na Home Pública
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-10
 parent: GKR-UX-HOME-NARR-001
@@ -11,6 +11,7 @@ depends_on:
   - UXA-021
   - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-NARR-001
+  - GKR-UX-HOME-NARR-003
   - GKR-UX-HOME-NAV-001
   - GKR-UX-HOME-NAV-002
   - GKR-UX-HOME-NAV-003
@@ -39,6 +40,8 @@ A decisão central é:
 
 > **O Movimento 08 não é uma vitrine de produtos. É uma explicação da coerência do ecossistema.**
 
+A entrada neste movimento é governada também por `GKR-UX-HOME-NARR-003`, que estabelece a distinção entre participantes e produtos/capacidades antes que qualquer manifestação especializada seja apresentada.
+
 Este documento não cria wireframe, layout, cards, fluxos internos, disponibilidade operacional, estratégia de lançamento ou Marketing/GTM.
 
 Quando houver conflito de interpretação com a descrição resumida do Movimento 08 em `GKR-UX-HOME-NARR-001`, este refinamento prevalece no limite específico da hierarquia entre os produtos e de sua representação institucional na Home.
@@ -54,7 +57,8 @@ Ao chegar ao Movimento 08, o visitante já deve ter compreendido:
 - que muitas delas existem de maneira desconectada;
 - por que a Guivos existe;
 - que Pessoas, Organizações e Coletivos participam do ecossistema;
-- que possibilidades podem chegar ao mundo real sem que a Guivos prometa resultado.
+- que possibilidades podem chegar ao mundo real sem que a Guivos prometa resultado;
+- que participantes não equivalem a produtos e não são classificados por um produto específico.
 
 Neste ponto, a pergunta deixa de ser:
 
@@ -335,6 +339,8 @@ O Movimento 08 constrói compreensão.
 
 ## 10. Relação com Pessoas, Organizações e Coletivos
 
+A entrada nesta relação é governada por `GKR-UX-HOME-NARR-003`.
+
 Pessoas, Organizações e Coletivos são participantes estruturais.
 
 Journey, Travel, Mall, Media, Business, Intelligence e Ads são componentes/produtos do ecossistema.
@@ -353,11 +359,23 @@ Consequências:
 - um participante pode relacionar-se com diferentes manifestações conforme contexto;
 - nenhum produto cria um quarto tipo de participante.
 
+Regra de passagem:
+
+> **Participantes respondem “quem”. Produtos e capacidades respondem “como”.**
+
 ---
 
 ## 11. Sequência narrativa interna recomendada
 
 Sem determinar layout, o Movimento 08 deve seguir aproximadamente esta lógica:
+
+### Passo 0 — preservar a passagem de pertencimento para materialização
+
+Antes de apresentar qualquer produto, preservar a compreensão de `GKR-UX-HOME-NARR-003`:
+
+- Pessoas, Organizações e Coletivos fazem o ecossistema acontecer;
+- nenhum deles corresponde automaticamente a um produto;
+- produtos/capacidades existem para dar forma ao ecossistema, não para classificar participantes.
 
 ### Passo 1 — reafirmar unidade
 
@@ -476,6 +494,7 @@ A função do movimento seguinte é substância e evidência.
 
 Uma futura solução é aderente quando:
 
+- o visitante chega ao Movimento 08 entendendo que participantes não equivalem a produtos;
 - o visitante percebe uma única Guivos antes de perceber sete nomes;
 - Journey possui papel diferente dos serviços especializados;
 - Intelligence possui papel transversal compreensível;
@@ -508,7 +527,8 @@ Rejeitar ou revisar se:
 12. o visitante precisa entender Experience Layer, Service Layer ou Intelligence Layer para entender a mensagem;
 13. há excesso de features, planos, preços ou detalhes operacionais;
 14. a seção descreve integrações não governadas como fatos;
-15. quantidade de produtos é usada como prova de grandeza.
+15. quantidade de produtos é usada como prova de grandeza;
+16. o Movimento 07 desemboca em segmentação direta por produto.
 
 ---
 
@@ -516,7 +536,7 @@ Rejeitar ou revisar se:
 
 Após o Movimento 08, o visitante deveria ser capaz de formular algo próximo de:
 
-> **“A Guivos é uma só. A Journey organiza a continuidade da experiência; existem ambientes especializados para viagens, produtos e serviços, conteúdo, necessidades empresariais e mídia patrocinada; e existe uma camada de inteligência apoiando o ecossistema. Agora entendo por que esses nomes fazem parte da mesma ideia.”**
+> **“Pessoas, Organizações e Coletivos fazem parte do mesmo ecossistema sem serem definidos por um produto. A Guivos é uma só. A Journey organiza a continuidade da experiência; existem ambientes especializados para viagens, produtos e serviços, conteúdo, necessidades empresariais e mídia patrocinada; e existe uma camada de inteligência apoiando o ecossistema. Agora entendo por que esses nomes fazem parte da mesma ideia.”**
 
 A pessoa não precisa conhecer os termos de arquitetura interna.
 
@@ -525,6 +545,10 @@ A pessoa não precisa conhecer os termos de arquitetura interna.
 ## 19. Regra sintética para design
 
 > **Uma Guivos antes de sete produtos. Papéis diferentes antes de cards iguais. Coerência antes de catálogo.**
+
+Regra de entrada:
+
+> **Pertencimento primeiro. Materialização depois. Segmentação por produto, nunca.**
 
 ---
 
