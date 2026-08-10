@@ -6,6 +6,7 @@ Verifica:
 - front matter YAML dos documentos Markdown;
 - unicidade dos IDs declarados no front matter;
 - existência dos caminhos configurados na navegação;
+- rótulos de navegação orientados por assunto, sem IDs técnicos expostos;
 - resolução de links e imagens Markdown locais.
 """
 
@@ -28,6 +29,11 @@ FRONT_MATTER_DELIMITER = re.compile(r"^---\s*$")
 FENCED_CODE = re.compile(r"```.*?```|~~~.*?~~~", re.DOTALL)
 INLINE_CODE = re.compile(r"`[^`]*`")
 MARKDOWN_LINK = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+NAV_TECHNICAL_IDENTIFIER = re.compile(
+    r"(?:^|\s)(?:UXA|GEM|GAI|GEF|GEB|GLPA|PAS|UIC|VAL|RP|AV|ADR|GCCM|MS|A2-R\d+)"
+    r"-[A-Z0-9][A-Z0-9.-]*(?=\s|$|\s*[—–-])",
+    re.IGNORECASE,
+)
 
 
 class MkDocsLoader(yaml.SafeLoader):
@@ -187,6 +193,17 @@ def nav_paths(node: Any) -> Iterable[str]:
             yield from nav_paths(value)
 
 
+def nav_labels(node: Any) -> Iterable[str]:
+    """Percorre somente os rótulos visíveis do menu configurado em nav."""
+    if isinstance(node, list):
+        for item in node:
+            yield from nav_labels(item)
+    elif isinstance(node, dict):
+        for label, value in node.items():
+            yield str(label)
+            yield from nav_labels(value)
+
+
 def validate_navigation(config: dict[str, Any], errors: list[str]) -> int:
     nav = config.get("nav")
     if nav is None:
@@ -204,6 +221,24 @@ def validate_navigation(config: dict[str, Any], errors: list[str]) -> int:
             continue
         if not target.is_file():
             fail(errors, f"mkdocs.yml: entrada de navegação inexistente: {entry}")
+    return checked
+
+
+def validate_navigation_labels(config: dict[str, Any], errors: list[str]) -> int:
+    """Impede que IDs documentais virem o texto primário do menu público do GKR."""
+    nav = config.get("nav")
+    if nav is None:
+        return 0
+
+    checked = 0
+    for label in nav_labels(nav):
+        checked += 1
+        if NAV_TECHNICAL_IDENTIFIER.search(label):
+            fail(
+                errors,
+                "mkdocs.yml: rótulo de navegação expõe identificador técnico; "
+                f"use título orientado por assunto e mantenha o ID dentro do conteúdo: {label}",
+            )
     return checked
 
 
@@ -235,12 +270,14 @@ def main() -> int:
 
     config = load_mkdocs(errors)
     nav_count = validate_navigation(config, errors) if config else 0
+    nav_label_count = validate_navigation_labels(config, errors) if config else 0
     link_count = validate_markdown_links(markdown_files, errors)
 
     print(f"Markdown files: {len(markdown_files)}")
     print(f"Front matters parsed: {front_matter_count}")
     print(f"Unique IDs: {len(ids)}")
     print(f"Navigation entries checked: {nav_count}")
+    print(f"Navigation labels checked: {nav_label_count}")
     print(f"Local links checked: {link_count}")
 
     if errors:
