@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-NAV-002
 title: Refinamento do Header Persistente e Limite do Mapa do Ecossistema na Home Pública
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 parent: GKR-UX-HOME-NAV-001
@@ -20,14 +20,15 @@ normative: false
 
 ## 1. Finalidade
 
-Este documento registra um refinamento posterior de escopo da arquitetura de navegação da Home pública de `guivos.com`.
+Este documento registra o refinamento mais recente da arquitetura de navegação da Home pública de `guivos.com`.
 
-Ele possui duas funções:
+Ele possui três funções:
 
 1. consolidar a hipótese principal atual para o **Header Persistente** da Home;
-2. corrigir a interpretação anterior de que o **Mapa do Ecossistema** deveria ser detalhado nesta frente.
+2. distinguir a porta principal `Iniciar Jornada` do launcher dos demais produtos/serviços;
+3. preservar o limite de que o **Mapa do Ecossistema** será apenas um link no rodapé nesta frente.
 
-A decisão mais recente prevalece sobre hipóteses anteriores desta frente quando houver conflito.
+A decisão mais recente deste documento prevalece sobre hipóteses anteriores desta frente quando houver conflito.
 
 ---
 
@@ -75,31 +76,60 @@ A disposição, ordem exata, espaçamento, labels finais e comportamento respons
 
 ---
 
-## 4. Launcher do ecossistema
+## 4. Launcher do ecossistema — inventário atual
 
-A grade de pontos é tratada como hipótese forte de acesso rápido ao ecossistema.
+A grade de pontos é tratada como hipótese forte de acesso rápido aos demais produtos e serviços do ecossistema.
 
-Ela pode disponibilizar diretamente:
+Na decisão atual, ela disponibiliza conceitualmente:
 
-- Guivos Journey;
 - Guivos Travel;
-- Guivos Mall;
+- Guivos Ads;
 - Guivos Media;
 - Guivos Business;
 - Guivos Intelligence;
-- Guivos Ads.
+- Guivos Mall.
+
+A ordem visual dessa lista ainda não está fechada.
 
 Regra preservada:
 
 > **acessível desde o início ≠ explicado desde o início ≠ protagonista desde o início.**
 
-O launcher permite que quem já conhece um produto o acesse rapidamente, enquanto a Hero e a narrativa continuam apresentando primeiro a Guivos como ideia/ecossistema maior.
+O launcher permite que quem já conhece um desses destinos o acesse rapidamente, enquanto a Hero e a narrativa continuam apresentando primeiro a Guivos como ideia/ecossistema maior.
 
 O launcher não deve transformar o Header em catálogo visual de produtos.
 
 ---
 
-## 5. Sobre
+## 5. Journey — porta própria no Header
+
+Na hipótese principal aprovada, **Guivos Journey não integra o launcher de grade de pontos**.
+
+A Journey já possui uma porta de maior hierarquia e semanticamente própria no Header:
+
+> **Iniciar Jornada**
+
+Essa separação possui função estratégica:
+
+- a Pessoa é o participante naturalmente atendido pela Home pública;
+- `Iniciar Jornada` representa sua principal continuidade;
+- a Journey não precisa disputar espaço dentro do launcher com os demais produtos/serviços;
+- evita duplicação de acesso com igual peso no mesmo Header;
+- preserva a diferença entre `continuar pela Jornada` e `acessar outro ambiente do ecossistema`.
+
+Journey continua podendo aparecer e ser explicada no Movimento 08 — Ecossistema / Produtos.
+
+Journey também pode possuir outros acessos contextuais quando houver fundamento legítimo.
+
+Formalização:
+
+> **Journey permanece parte do ecossistema, mas sua porta principal no Header é `Iniciar Jornada`, e não o launcher.**
+
+Esta decisão substitui, no limite do Header, hipóteses anteriores de `GKR-UX-HOME-NAV-001` e da versão anterior deste documento que incluíam Journey no launcher.
+
+---
+
+## 6. Sobre
 
 `Sobre` permanece como acesso institucional de primeiro nível no Header.
 
@@ -109,24 +139,19 @@ Seu papel na Home é apenas garantir que visitantes com intenção institucional
 
 ---
 
-## 6. Organizações e Coletivos
+## 7. Organizações e Coletivos
 
 A hipótese atual é manter **um único acesso de primeiro nível** no Header para `Organizações e Coletivos`.
 
 A Pessoa continua sendo o participante naturalmente atendido pela própria Home pública e pelo CTA `Iniciar Jornada`.
 
-O acesso `Organizações e Coletivos` deve futuramente conduzir a uma única página capaz de:
-
-- explicar o que é uma Organização no ecossistema Guivos;
-- explicar o que é um Coletivo;
-- mostrar suas diferenças;
-- mostrar o que compartilham como participantes capazes de criar, articular ou ampliar possibilidades.
+O acesso `Organizações e Coletivos` deverá futuramente conduzir a uma única página capaz de explicar ambos, suas diferenças e suas formas de participação no ecossistema.
 
 A página em si não é objeto desta frente.
 
 ---
 
-## 7. Compartilhar
+## 8. Compartilhar
 
 O Header pode conter um ícone utilitário de compartilhamento da Home/Guivos.
 
@@ -136,7 +161,7 @@ Seu comportamento técnico, canais de compartilhamento, analytics e estados não
 
 ---
 
-## 8. Idioma e região
+## 9. Idioma e região
 
 O Header pode conter um controle compacto de globo para acesso a uma superfície dedicada de idioma e região.
 
@@ -152,25 +177,24 @@ A superfície de seleção permanece para materialização futura.
 
 ---
 
-## 9. Login
+## 10. Login
 
 `Login` permanece acessível para participantes existentes.
 
-Não deve substituir nem competir hierarquicamente com a mensagem principal da Hero.
+Não deve substituir nem competir hierarquicamente com a mensagem principal da Hero ou com `Iniciar Jornada`.
 
 A presença de `Login` no Header não inicia nesta frente qualquer fluxo autenticado.
 
 ---
 
-## 10. Iniciar Jornada
+## 11. Iniciar Jornada
 
 `Iniciar Jornada` é a hipótese atual de CTA de maior hierarquia no Header.
 
-Sua função é representar a principal porta de continuidade para a Pessoa.
+Sua função é representar a principal porta de continuidade para a Pessoa e a principal porta de entrada para Guivos Journey a partir do Header público.
 
 Esta decisão não define ainda:
 
-- copy final;
 - URL/destino;
 - requisitos de autenticação;
 - onboarding;
@@ -182,7 +206,7 @@ Esses elementos permanecem fora do escopo atual.
 
 ---
 
-## 11. Mapa do Ecossistema — correção de escopo
+## 12. Mapa do Ecossistema — correção de escopo
 
 A interpretação anterior de que o Footer deveria, nesta frente, ser detalhado como um **mapa completo do ecossistema** com categorias e todos os acessos é substituída pela seguinte decisão:
 
@@ -212,12 +236,16 @@ Essas decisões serão tratadas futuramente quando a página `Mapa do Ecossistem
 
 ---
 
-## 12. Efeito sobre GKR-UX-HOME-NAV-001
+## 13. Efeito sobre GKR-UX-HOME-NAV-001
 
-Este documento refina e prevalece sobre `GKR-UX-HOME-NAV-001` especificamente nos trechos que tratavam o Footer como mapa completo ou que propunham uma arquitetura detalhada do `Mapa do Ecossistema`.
+Este documento refina e prevalece sobre `GKR-UX-HOME-NAV-001` em dois pontos específicos:
+
+1. **launcher** — Journey deixa de integrar o inventário atual do launcher e passa a ter `Iniciar Jornada` como porta principal própria no Header;
+2. **Mapa do Ecossistema** — o Footer não é detalhado nesta frente como mapa completo; existe somente o link para futura página.
 
 Em particular, ficam superadas nesta frente as hipóteses de:
 
+- Journey dentro do launcher do Header;
 - Footer como inventário completo de Guivos, Ecossistema, Empresa, Suporte, Legal e Presença/Social;
 - obrigatoriedade de replicar Trabalhe Conosco, Imprensa, Central de Ajuda ou outros destinos dentro do `Mapa do Ecossistema` já nesta fase;
 - necessidade de definir agora a taxonomia interna dessa futura página.
@@ -226,7 +254,7 @@ Permanece válido o princípio geral de encontrabilidade dos destinos públicos,
 
 ---
 
-## 13. Rodapé da Home — limite atual
+## 14. Rodapé da Home — limite atual
 
 Para esta frente, a única decisão específica relacionada ao `Mapa do Ecossistema` no rodapé é:
 
@@ -238,7 +266,7 @@ Isso evita antecipar a arquitetura de uma página que ainda não será trabalhad
 
 ---
 
-## 14. Síntese de controle
+## 15. Síntese de controle
 
 Header Persistente — hipótese principal atual:
 
@@ -251,8 +279,15 @@ Organizações e Coletivos
 Compartilhar
 Idioma / Região (globo)
 Ecossistema (grade de pontos)
+  → Travel
+  → Ads
+  → Media
+  → Business
+  → Intelligence
+  → Mall
 Login
 Iniciar Jornada
+  → porta própria da Journey
 ```
 
 Rodapé — decisão atual sobre o mapa:
