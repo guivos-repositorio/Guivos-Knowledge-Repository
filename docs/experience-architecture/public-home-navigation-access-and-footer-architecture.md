@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-NAV-001
 title: Arquitetura de Navegação e Acessos da Home Pública
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 parent: GKR-UX-HOME-HANDOFF-001
@@ -47,7 +47,7 @@ Esta especificação governa somente os elementos de navegação e acesso relaci
 
 Pode definir acesso para:
 
-- Guivos Journey;
+- Guivos Journey, por sua porta própria `Iniciar Jornada`;
 - Guivos Travel;
 - Guivos Mall;
 - Guivos Media;
@@ -60,7 +60,6 @@ Pode definir acesso para:
 - idioma e região;
 - compartilhamento;
 - login;
-- Iniciar Jornada;
 - link `Mapa do Ecossistema` no rodapé.
 
 Esta especificação não governa os fluxos internos desses destinos.
@@ -118,7 +117,7 @@ Hipótese principal atual, refinada em `GKR-UX-HOME-NAV-002`:
 - idioma/região por controle de globo;
 - launcher do ecossistema por grade de pontos;
 - `Login`;
-- `Iniciar Jornada` como CTA de maior hierarquia.
+- `Iniciar Jornada` como CTA de maior hierarquia e porta própria da Journey.
 
 A ordem final, layout, comportamento responsivo e labels ainda podem ser refinados.
 
@@ -184,14 +183,14 @@ Essa representação é semântica, não layout final.
 
 ## 6. Launcher do Ecossistema
 
-Guivos Journey, Travel, Mall, Media, Business, Intelligence e Ads podem estar disponíveis desde o primeiro viewport por meio de um launcher do ecossistema.
+O launcher do ecossistema é uma porta compacta para os demais produtos e serviços que precisam de acesso rápido sem ocupar individualmente o Header.
 
-A grade de pontos é a hipótese visual atualmente preferida para representar esse launcher.
+A grade de pontos é a hipótese visual atualmente preferida para representá-lo.
 
 Objetivos:
 
 - permitir acesso rápido a quem já conhece um produto;
-- preservar a primeira camada simples;
+- preservar uma primeira camada simples;
 - impedir que a Guivos pareça conglomerado de marcas independentes;
 - permitir expansão futura sem aumentar indefinidamente a navegação primária.
 
@@ -203,17 +202,24 @@ Regra:
 
 ## 7. Produtos no launcher
 
-A hipótese atual de inventário do launcher inclui:
+O inventário conceitualmente aprovado do launcher nesta fase é:
 
-- Guivos Journey;
 - Guivos Travel;
-- Guivos Mall;
+- Guivos Ads;
 - Guivos Media;
 - Guivos Business;
 - Guivos Intelligence;
-- Guivos Ads.
+- Guivos Mall.
 
-A descrição funcional e a ordem de cada produto ainda precisam ser reconciliadas com os contratos oficiais e com a disponibilidade real no lançamento.
+A ordem visual ainda não está fechada e a disponibilidade operacional de cada destino precisa ser confirmada antes do wireframe.
+
+**Guivos Journey não integra o launcher na hipótese principal atual.**
+
+Journey permanece parte do ecossistema, aparece no Movimento 08 e pode possuir acessos contextuais, mas sua porta principal no Header é `Iniciar Jornada`.
+
+Regra:
+
+> **Journey pertence ao ecossistema; `Iniciar Jornada` é sua porta própria no Header.**
 
 O launcher não deve virar catálogo promocional.
 
@@ -243,6 +249,8 @@ Mensagem conceitual:
 > **um ecossistema, diferentes formas de tornar possibilidades acessíveis, conectadas e vivíveis.**
 
 Cada produto deve ser apresentado como manifestação da mesma tese, não como negócio independente.
+
+Journey pode aparecer aqui junto às demais manifestações mesmo não integrando o launcher do Header.
 
 O requisito é:
 
@@ -310,7 +318,7 @@ Regra:
 
 `Iniciar Jornada` é a hipótese atual de CTA de maior hierarquia no Header.
 
-Sua função é representar a principal porta de continuidade para a Pessoa.
+Sua função é representar a principal porta de continuidade para a Pessoa e a porta própria de entrada para Guivos Journey a partir do Header público.
 
 Esta frente não define o fluxo posterior, autenticação, onboarding, personalização ou coleta de contexto.
 
@@ -348,13 +356,14 @@ Esses temas serão tratados futuramente em frente própria.
 
 ## 17. Relação com GKR-UX-HOME-NAV-002
 
-`GKR-UX-HOME-NAV-002` registra a decisão de refinamento que originou esta versão 0.2.0.
+`GKR-UX-HOME-NAV-002` registra a decisão de refinamento que originou esta versão 0.3.0.
 
 Em caso de conflito com hipóteses históricas anteriores, prevalecem:
 
-1. a decisão de Header Persistente mais recente;
-2. o limite de que `Mapa do Ecossistema` é somente um link no rodapé nesta fase;
-3. a postergação integral da página `Mapa do Ecossistema`.
+1. Journey fora do launcher e `Iniciar Jornada` como sua porta própria no Header;
+2. launcher composto por Travel, Ads, Media, Business, Intelligence e Mall;
+3. o limite de que `Mapa do Ecossistema` é somente um link no rodapé nesta fase;
+4. a postergação integral da página `Mapa do Ecossistema`.
 
 ---
 
@@ -452,15 +461,16 @@ Rejeitar ou revisar uma proposta quando:
 2. o Header parece menu de conglomerado;
 3. o visitante precisa rolar para acessar um produto que já conhece;
 4. o launcher vira catálogo promocional;
-5. `Sobre` fica escondido;
-6. `Organizações e Coletivos` perde encontrabilidade sem alternativa equivalente;
-7. login vira CTA principal da experiência;
-8. `Iniciar Jornada` é tratado como autorização para desenhar onboarding nesta frente;
-9. idioma e região são confundidos como uma única preferência;
-10. o `Mapa do Ecossistema` é detalhado ou desenhado antes da frente própria;
-11. mobile perde caminhos disponíveis no desktop;
-12. navegação depende de hover;
-13. o Header se torna mais importante que a Hero.
+5. Journey é duplicada no launcher sem nova decisão explícita;
+6. `Sobre` fica escondido;
+7. `Organizações e Coletivos` perde encontrabilidade sem alternativa equivalente;
+8. login vira CTA principal da experiência;
+9. `Iniciar Jornada` é tratado como autorização para desenhar onboarding nesta frente;
+10. idioma e região são confundidos como uma única preferência;
+11. o `Mapa do Ecossistema` é detalhado ou desenhado antes da frente própria;
+12. mobile perde caminhos disponíveis no desktop;
+13. navegação depende de hover;
+14. o Header se torna mais importante que a Hero.
 
 ---
 
@@ -468,8 +478,9 @@ Rejeitar ou revisar uma proposta quando:
 
 Uma futura arquitetura será considerada aderente quando:
 
-- produtos forem acessíveis imediatamente sem dominar a primeira percepção;
-- o launcher representar o ecossistema de forma compacta;
+- os produtos do launcher forem acessíveis sem dominar a primeira percepção;
+- Journey possuir `Iniciar Jornada` como porta própria no Header;
+- o launcher representar os demais ambientes de forma compacta;
 - a marca permanecer maior que a soma dos produtos;
 - `Sobre` for facilmente encontrável;
 - `Organizações e Coletivos` possuir porta clara;
@@ -488,17 +499,19 @@ Uma futura arquitetura será considerada aderente quando:
 Antes de aprovar um futuro Header, responder:
 
 1. Quem já conhece Travel consegue acessá-lo rapidamente?
-2. Quem nunca ouviu falar de Guivos entende a marca antes de ser bombardeado por produtos?
-3. O launcher parece pertencer a um único ecossistema?
-4. `Sobre` está encontrável?
-5. `Organizações e Coletivos` está encontrável?
-6. idioma/região está acessível?
-7. compartilhar está presente sem competir com a narrativa?
-8. login está claro sem dominar?
-9. `Iniciar Jornada` é a ação de maior hierarquia no Header?
-10. mobile preserva os mesmos caminhos essenciais?
-11. algum elemento existe apenas porque concorrentes usam?
-12. o `Mapa do Ecossistema` foi mantido somente como link, sem detalhamento prematuro?
+2. Quem quer iniciar sua Journey encontra `Iniciar Jornada` imediatamente?
+3. Quem nunca ouviu falar de Guivos entende a marca antes de ser bombardeado por produtos?
+4. O launcher parece pertencer a um único ecossistema?
+5. Journey está corretamente separada do launcher?
+6. `Sobre` está encontrável?
+7. `Organizações e Coletivos` está encontrável?
+8. idioma/região está acessível?
+9. compartilhar está presente sem competir com a narrativa?
+10. login está claro sem dominar?
+11. `Iniciar Jornada` é a ação de maior hierarquia no Header?
+12. mobile preserva os mesmos caminhos essenciais?
+13. algum elemento existe apenas porque concorrentes usam?
+14. o `Mapa do Ecossistema` foi mantido somente como link, sem detalhamento prematuro?
 
 ---
 
@@ -517,13 +530,13 @@ Considere como hipótese principal de Header Persistente:
 - idioma/região por ícone de globo;
 - launcher do ecossistema por grade de pontos;
 - Login;
-- Iniciar Jornada como CTA de maior hierarquia.
+- Iniciar Jornada como CTA de maior hierarquia e porta própria da Journey.
 
-O launcher deve permitir acesso a Journey, Travel, Mall, Media, Business, Intelligence e Ads sem transformar o Header em catálogo.
+O launcher deve permitir acesso a Travel, Ads, Media, Business, Intelligence e Mall sem transformar o Header em catálogo. Journey pertence ao ecossistema, mas não integra o launcher nesta hipótese; sua porta principal no Header é Iniciar Jornada.
 
 A Home precisa permitir acesso imediato a produtos conhecidos, mas os produtos não podem dominar a primeira percepção da marca.
 
-No rodapé, considere apenas um link `Mapa do Ecossistema`. Não desenhe nem detalhe a página de destino; ela pertence a frente futura.
+No rodapé, considere apenas um link Mapa do Ecossistema. Não desenhe nem detalhe a página de destino; ela pertence a frente futura.
 
 Preserve a mesma hierarquia semântica em desktop e mobile.
 
@@ -543,7 +556,7 @@ Entregue:
 
 A arquitetura deve permitir simultaneamente:
 
-> **quem não conhece a Guivos, compreender; quem já conhece um produto, acessar; quem quer saber quem é a Guivos, encontrar Sobre; quem representa Organização ou Coletivo, encontrar sua porta; quem já participa, fazer login; e quem quer avançar como Pessoa, iniciar sua Jornada.**
+> **quem não conhece a Guivos, compreender; quem já conhece Travel, Ads, Media, Business, Intelligence ou Mall, acessar; quem quer saber quem é a Guivos, encontrar Sobre; quem representa Organização ou Coletivo, encontrar sua porta; quem já participa, fazer login; e quem quer avançar como Pessoa, iniciar sua Jornada.**
 
 Sem transformar a Home em inventário.
 
