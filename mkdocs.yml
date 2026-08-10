@@ -121,8 +121,32 @@ nav:
           - Registro de Transições: journeys/transition-registry.md
           - Lacunas Conhecidas: journeys/gaps.md
       - Home Pública:
-          - Fundamentos Funcionais: experience-architecture/uxa-020-home-and-journey-entry.md
-          - Validação Funcional da Home Pública: experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md
+          - Documento Mestre da Home: experience-architecture/public-home-master-document.md
+          - Fundamentos Funcionais:
+              - Página Inicial e Início da Jornada: experience-architecture/uxa-020-home-and-journey-entry.md
+              - Validação Funcional da Home Pública: experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md
+          - Arquitetura Estratégica:
+              - Mensagem, Posicionamento e Transformação: experience-architecture/public-home-message-authority-transformation-direction.md
+              - Hero e Narrativa Consolidada: experience-architecture/public-home-validated-hero-and-narrative-consolidation.md
+              - 11 Movimentos Narrativos: experience-architecture/public-home-11-movements-narrative-specification.md
+              - Macroexperiências e Agrupamento Narrativo: experience-architecture/public-home-11-movements-macroexperience-grouping-map.md
+              - Header, Hero e CTAs: experience-architecture/public-home-header-hero-cta-hierarchy.md
+              - Header Persistente e Escopo do Mapa: experience-architecture/public-home-persistent-header-and-ecosystem-map-scope-refinement.md
+              - Header no Scroll e Mobile: experience-architecture/public-home-persistent-header-scroll-and-mobile-behavior.md
+              - Navegação, Acessos e Rodapé: experience-architecture/public-home-navigation-access-and-footer-architecture.md
+              - Conteúdo, Prova, Interação e Sistema Visual: experience-architecture/public-home-content-proof-interaction-visual-system.md
+              - Ecossistema e Produtos — Movimento 08: experience-architecture/public-home-movement-08-ecosystem-products-narrative-hierarchy.md
+              - Participantes e Produtos — Movimentos 07 para 08: experience-architecture/public-home-movement-07-to-08-participant-product-transition.md
+              - Realidade e Autoridade — Movimentos 02 e 09: experience-architecture/public-home-movement-02-vs-09-reality-authority-distinction.md
+              - Home e Marketing/GTM: experience-architecture/public-home-architecture-vs-marketing-gtm-boundary.md
+          - Handoff para Design:
+              - Brief e Prompt para Design, UX e UI: experience-architecture/public-home-design-ux-ui-handoff-brief-and-prompt.md
+          - Auditorias:
+              - Prontidão Pré-Wireframe: experience-architecture/public-home-pre-wireframe-readiness-audit.md
+              - Integridade da Arquitetura Estratégica: experience-architecture/public-home-consolidated-architecture-integrity-audit.md
+          - Benchmarks e Referências:
+              - Benchmark e Diferenciação: experience-architecture/public-home-benchmark-and-differentiation-evidence.md
+              - Comparativo Guivos e Referências Globais: experience-architecture/public-home-guivos-vs-global-hero-comparative.md
           - Referências Anteriores:
               - Wireframe Anterior da Home Pública: experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md
       - Entrada Protegida da Jornada:
