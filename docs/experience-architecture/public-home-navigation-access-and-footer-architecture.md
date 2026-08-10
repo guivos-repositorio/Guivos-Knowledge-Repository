@@ -1,8 +1,8 @@
 ---
 id: GKR-UX-HOME-NAV-001
-title: Arquitetura de Navegação, Acessos e Footer da Home Pública
+title: Arquitetura de Navegação e Acessos da Home Pública
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 parent: GKR-UX-HOME-HANDOFF-001
@@ -18,26 +18,26 @@ depends_on:
   - GEB-P01-F03
   - GEB-P01-F04
   - GEB-P01-F06
+related:
+  - GKR-UX-HOME-NAV-002
 normative: false
 ---
 
-# Arquitetura de Navegação, Acessos e Footer da Home Pública
+# Arquitetura de Navegação e Acessos da Home Pública
 
 ## 1. Finalidade
 
 Este documento define a arquitetura conceitual de navegação e acesso da Home pública de `guivos.com`.
 
-Ele esclarece como produtos, serviços, páginas institucionais, áreas utilitárias e caminhos de suporte podem permanecer acessíveis sem transformar a Home em catálogo, portal corporativo ou inventário de links.
+Ele esclarece como produtos, páginas institucionais, áreas utilitárias e caminhos de continuidade podem permanecer acessíveis sem transformar a Home em catálogo, portal corporativo ou inventário de links.
 
 A decisão central é:
 
 > **disponibilidade de navegação não implica protagonismo narrativo.**
 
-Um produto pode estar acessível desde o primeiro viewport por meio da navegação e, ainda assim, somente receber explicação e destaque institucional quando a narrativa da Home tiver construído contexto suficiente.
+Um produto pode estar acessível desde o primeiro viewport e ainda assim somente receber explicação e destaque institucional quando a narrativa tiver construído contexto suficiente.
 
-Este documento não define layout, posição final, tamanho, comportamento visual específico de dropdown, mega menu, drawer, modal, sticky header ou outro componente.
-
-Ele define função, hierarquia, relação entre caminhos, regras de exposição e critérios para futura materialização.
+Este documento não define layout, wireframe, Figma, comportamento visual final de menus, nem fluxos internos dos destinos.
 
 ---
 
@@ -56,24 +56,20 @@ Pode definir acesso para:
 - Guivos Ads;
 - futuras manifestações oficialmente integradas ao ecossistema;
 - Sobre a Guivos;
-- propósito, visão e conteúdo institucional;
-- Central de Ajuda;
-- Fale Conosco;
-- Trabalhe Conosco;
-- Imprensa;
-- Parceiros, quando aplicável;
-- páginas legais;
-- acessibilidade;
-- segurança e privacidade;
-- login/entrada para participantes existentes.
+- Organizações e Coletivos;
+- idioma e região;
+- compartilhamento;
+- login;
+- Iniciar Jornada;
+- link `Mapa do Ecossistema` no rodapé.
 
 Esta especificação não governa os fluxos internos desses destinos.
 
 A existência de um link para Travel não inicia UX de Travel.
 
-A existência de um link para Mall não inicia UX de Mall.
-
 A existência de login não inicia a experiência autenticada.
+
+A existência do link `Mapa do Ecossistema` não inicia nem governa essa futura página.
 
 ---
 
@@ -93,35 +89,38 @@ Permite que visitantes com intenção já formada encontrem diretamente um desti
 
 Sua função é orientar e permitir acesso.
 
-Os dois sistemas coexistem.
-
-A pessoa não precisa terminar a narrativa para acessar Guivos Travel.
-
-Ao mesmo tempo, o visitante que ainda não conhece a Guivos não deve ser recebido por uma lista de sete produtos como explicação da marca.
-
 Regra:
 
 > **a narrativa governa significado; a navegação garante liberdade.**
 
 ---
 
-## 4. As quatro camadas de acesso
+## 4. Camadas de acesso da Home
 
-A arquitetura conceitual da Home deve admitir quatro camadas.
+A arquitetura conceitual deve admitir quatro formas de acesso.
 
-### 4.1 Navegação global / Header
+### 4.1 Header Persistente
 
 Função:
 
 - orientação imediata;
-- acesso direto a destinos importantes;
-- reconhecimento da arquitetura geral;
-- entrada de usuários existentes;
-- suporte a visitantes com intenção prévia.
+- acesso direto a destinos essenciais;
+- entrada de participantes existentes;
+- acesso ao launcher do ecossistema;
+- continuidade pela Jornada.
 
-Produtos podem estar acessíveis a partir daqui.
+Hipótese principal atual, refinada em `GKR-UX-HOME-NAV-002`:
 
-Eles não precisam dominar visualmente o Header.
+- marca / acesso à Home;
+- `Sobre`;
+- `Organizações e Coletivos`;
+- compartilhar;
+- idioma/região por controle de globo;
+- launcher do ecossistema por grade de pontos;
+- `Login`;
+- `Iniciar Jornada` como CTA de maior hierarquia.
+
+A ordem final, layout, comportamento responsivo e labels ainda podem ser refinados.
 
 ### 4.2 Acesso contextual ao longo da narrativa
 
@@ -130,13 +129,6 @@ Função:
 - transformar conteúdo em continuidade;
 - permitir que uma história, oportunidade ou experiência leve naturalmente ao produto ou ambiente correspondente;
 - evitar CTAs genéricos.
-
-Exemplos conceituais:
-
-- história de viagem → acesso a Guivos Travel;
-- conteúdo editorial → acesso a Guivos Media;
-- iniciativa de Organização → acesso ao ambiente institucional aplicável;
-- oportunidade comercial ou institucional → acesso ao destino pertinente.
 
 Regra:
 
@@ -148,107 +140,82 @@ Função:
 
 - apresentar explicitamente a arquitetura de produtos;
 - explicar por que existem diferentes manifestações;
-- mostrar como elas pertencem à mesma tese;
+- mostrar como pertencem à mesma tese;
 - permitir acesso direto a cada uma.
 
 É o principal momento de protagonismo institucional dos produtos dentro da narrativa.
 
-### 4.4 Footer / mapa completo
+### 4.4 Rodapé
 
-Função:
+Nesta frente, o rodapé não é detalhado como mapa completo.
 
-- oferecer navegação completa;
-- suportar tarefas utilitárias;
-- expor páginas institucionais, suporte e legal;
-- servir de fallback de orientação;
-- permitir acesso mesmo quando determinado caminho não merece espaço no Header.
+A única decisão específica relativa ao `Mapa do Ecossistema` é:
 
-O Footer pode ser mais completo que a navegação principal.
+> **deve existir no rodapé um link chamado `Mapa do Ecossistema` ou equivalente validado posteriormente.**
+
+A página que esse link poderá abrir não é definida nesta frente.
 
 ---
 
-## 5. Header — princípio geral
+## 5. Header Persistente — princípio geral
 
 O Header deve equilibrar simplicidade e acessibilidade.
 
-Ele não deve tentar representar toda a estrutura da empresa em uma única linha.
+Ele não deve tentar representar toda a estrutura da Guivos em uma única linha.
 
-Deve permitir três naturezas de intenção:
+A hipótese principal atual é:
 
-1. **entender** — conhecer a Guivos;
-2. **descobrir** — explorar o ecossistema e possibilidades;
-3. **acessar** — chegar a um produto, suporte ou conta já conhecida.
+```text
+GUIVOS
 
-O Header pode conter agrupadores semânticos em vez de apenas nomes de produtos.
+Sobre
+Organizações e Coletivos
 
-Exemplos de territórios conceituais possíveis:
+Compartilhar
+Idioma / Região (globo)
+Ecossistema (grade de pontos)
+Login
+Iniciar Jornada
+```
 
-- Explorar;
-- Ecossistema;
-- Para Organizações;
-- Sobre;
-- Ajuda;
-- Entrar.
-
-Esses nomes não são copy final aprovada.
+Essa representação é semântica, não layout final.
 
 ---
 
-## 6. Produtos no Header
+## 6. Launcher do Ecossistema
 
-Guivos Journey, Travel, Mall, Media, Business, Intelligence e Ads podem estar disponíveis desde o primeiro viewport.
+Guivos Journey, Travel, Mall, Media, Business, Intelligence e Ads podem estar disponíveis desde o primeiro viewport por meio de um launcher do ecossistema.
 
-A recomendação conceitual é que sejam acessíveis por um agrupador como **Ecossistema**, **Produtos** ou equivalente futuro, em vez de ocupar individualmente toda a navegação principal.
+A grade de pontos é a hipótese visual atualmente preferida para representar esse launcher.
 
-Objetivo:
+Objetivos:
 
-- garantir descoberta rápida por quem já conhece um produto;
-- preservar uma primeira camada simples;
+- permitir acesso rápido a quem já conhece um produto;
+- preservar a primeira camada simples;
 - impedir que a Guivos pareça conglomerado de marcas independentes;
 - permitir expansão futura sem aumentar indefinidamente a navegação primária.
 
-Cada produto, quando apresentado na navegação expandida, pode receber uma descrição funcional curta para reduzir dependência do nome de marca.
-
-Exemplo conceitual:
-
-- Guivos Journey — jornada e próximos passos;
-- Guivos Travel — viagens e experiências;
-- Guivos Mall — produtos e serviços;
-- Guivos Media — histórias, conhecimento e conteúdo;
-- Guivos Business — Organizações e oportunidades;
-- Guivos Intelligence — inteligência e contexto;
-- Guivos Ads — mídia e presença.
-
-Essas descrições são placeholders semânticos e deverão ser reconciliadas com os contratos oficiais de cada produto antes da copy final.
-
----
-
-## 7. Regra de protagonismo dos produtos
-
-A navegação pode tornar os produtos encontráveis imediatamente.
-
-A narrativa só deve torná-los protagonistas após o visitante compreender a ideia maior.
-
-Formalização:
+Regra:
 
 > **acessível desde o início ≠ explicado desde o início ≠ protagonista desde o início.**
 
-A sequência recomendada é:
+---
 
-```text
-HEADER
-produto encontrável
+## 7. Produtos no launcher
 
-↓
+A hipótese atual de inventário do launcher inclui:
 
-NARRATIVA
-marca e tese compreendidas
+- Guivos Journey;
+- Guivos Travel;
+- Guivos Mall;
+- Guivos Media;
+- Guivos Business;
+- Guivos Intelligence;
+- Guivos Ads.
 
-↓
+A descrição funcional e a ordem de cada produto ainda precisam ser reconciliadas com os contratos oficiais e com a disponibilidade real no lançamento.
 
-MOVIMENTO 08
-produto explicado como manifestação do ecossistema
-```
+O launcher não deve virar catálogo promocional.
 
 ---
 
@@ -265,15 +232,9 @@ Critérios:
 5. o acesso não cria falsa disponibilidade;
 6. o destino operacional existe ou possui estado público legítimo.
 
-Exemplo:
-
-> uma experiência de viagem documentada pode oferecer `Explorar experiências` e conduzir a Travel.
-
-Não é necessário inserir um bloco chamado “Guivos Travel” naquele momento.
-
 ---
 
-## 9. Movimento 08 como vitrine institucional do ecossistema
+## 9. Movimento 08 como apresentação institucional do ecossistema
 
 O Movimento 08 possui a função principal de apresentar os produtos de forma estruturada.
 
@@ -283,137 +244,57 @@ Mensagem conceitual:
 
 Cada produto deve ser apresentado como manifestação da mesma tese, não como negócio independente.
 
-A futura composição pode usar:
-
-- caminhos;
-- áreas especializadas;
-- narrativas;
-- módulos;
-- cards;
-- outra solução visual.
-
-Nenhum formato está fechado.
-
 O requisito é:
 
 > **a coerência entre os produtos deve ser mais perceptível que a quantidade de produtos.**
 
 ---
 
-## 10. Sobre a Guivos
+## 10. Sobre
 
-`Sobre` possui relevância institucional suficiente para ser encontrável no Header e no Footer.
+`Sobre` permanece como acesso institucional de primeiro nível no Header.
 
-Pode futuramente agrupar caminhos como:
+A página `Sobre` não é detalhada nesta frente.
 
-- Sobre a Guivos;
-- Essência;
-- Propósito;
-- Missão;
-- Visão;
-- Princípios;
-- Como a Guivos funciona;
-- história institucional, quando houver;
-- imprensa;
-- Trabalhe Conosco.
-
-Não é obrigatório que todos estejam expostos no mesmo nível.
-
-A função é responder a visitantes que chegam com intenção institucional:
-
-> **quem é esta organização e no que acredita?**
+Seu papel aqui é apenas garantir encontrabilidade para quem quer compreender a organização, sua essência e sua visão.
 
 ---
 
-## 11. Trabalhe Conosco
+## 11. Organizações e Coletivos
 
-`Trabalhe Conosco` deve ser encontrável, mas não precisa ocupar espaço nobre da navegação primária.
+A hipótese atual é manter um único acesso de primeiro nível chamado `Organizações e Coletivos`.
 
-Destino recomendado conceitualmente:
+A Pessoa continua sendo o participante naturalmente atendido pela própria Home e pelo CTA `Iniciar Jornada`.
 
-- dentro de `Sobre` / `Empresa` ou equivalente;
-- replicado no Footer.
-
-Justificativa:
-
-- é importante;
-- possui intenção específica;
-- não define a proposta de valor da Home;
-- visitantes interessados sabem procurar em estrutura institucional.
+A futura página `Organizações e Coletivos` deverá explicar a diferença entre ambos e suas formas de participação no ecossistema, mas essa página não é objeto desta frente.
 
 ---
 
-## 12. Central de Ajuda
+## 12. Compartilhar
 
-A Central de Ajuda é uma função utilitária.
+O Header pode conter um ícone utilitário de compartilhamento da Home/Guivos.
 
-Ela deve ser facilmente encontrável por participantes existentes e por visitantes com dúvidas, sem competir narrativamente com a tese da Home.
+A presença conceitual está aceita para futura materialização.
 
-Pode aparecer:
-
-- em área utilitária do Header;
-- em menu de suporte;
-- obrigatoriamente no Footer;
-- em estados específicos quando contexto de ajuda existir.
-
-A nomenclatura futura pode ser:
-
-- Ajuda;
-- Central de Ajuda;
-- Suporte.
-
-A escolha final pertence à fase de IA/copy.
+Comportamento técnico e canais de compartilhamento permanecem abertos.
 
 ---
 
-## 13. Fale Conosco
+## 13. Idioma e região
 
-`Fale Conosco` deve ser tratado como caminho institucional/utilitário.
+O Header pode conter um controle compacto de globo para abrir uma superfície dedicada de idioma e região.
 
-Pode ser agrupado em:
+Princípios:
 
-- Ajuda;
-- Empresa;
-- Footer.
-
-A Home não deve transformar contato em CTA narrativo dominante.
-
----
-
-## 14. Imprensa
-
-A área de imprensa deve ser encontrável principalmente por usuários com intenção específica.
-
-Destinos preferenciais:
-
-- Sobre / Empresa;
-- Footer.
-
-Não precisa ocupar navegação primária isolada.
+- idioma e região são preferências distintas;
+- idioma governa apresentação linguística;
+- região poderá influenciar disponibilidade pública e contexto operacional quando houver fundamento real;
+- região selecionada não equivale a conhecimento pessoal do visitante;
+- o Header não deve listar diretamente dezenas de países ou idiomas.
 
 ---
 
-## 15. Páginas legais e confiança
-
-Páginas como:
-
-- Termos de Uso;
-- Política de Privacidade;
-- Cookies;
-- preferências de privacidade;
-- acessibilidade;
-- segurança;
-- outras obrigações legais;
-
-devem estar acessíveis de forma previsível, principalmente no Footer e quando o contexto exigir.
-
-Esses caminhos não precisam ocupar a narrativa principal para comunicar confiança.
-
-Confiança também deve ser percebida pelo comportamento da Home.
-
----
-
-## 16. Login / Entrar
+## 14. Login
 
 O acesso para participantes existentes deve permanecer facilmente encontrável.
 
@@ -421,148 +302,79 @@ Regra:
 
 > **usuário existente precisa acessar; visitante novo precisa compreender.**
 
-O login pode ocupar área utilitária do Header sem se tornar o CTA narrativo principal da Hero.
-
-A presença de login não autoriza personalização pública nem inicia fluxo autenticado nesta frente.
+`Login` não deve se tornar o CTA narrativo dominante.
 
 ---
 
-## 17. Possível taxonomia conceitual do Header
+## 15. Iniciar Jornada
 
-Como hipótese de arquitetura de informação, não como copy ou layout final:
+`Iniciar Jornada` é a hipótese atual de CTA de maior hierarquia no Header.
 
-```text
-GUIVOS
+Sua função é representar a principal porta de continuidade para a Pessoa.
 
-Explorar
-Ecossistema
-Para Organizações
-Sobre
-
-Ajuda
-Entrar
-```
-
-Dentro de `Ecossistema`, futuramente:
-
-```text
-Journey
-Travel
-Mall
-Media
-Business
-Intelligence
-Ads
-```
-
-Dentro de `Sobre`, futuramente:
-
-```text
-Sobre a Guivos
-Propósito e princípios
-Imprensa
-Trabalhe Conosco
-```
-
-Essa taxonomia deverá ser validada por testes de arquitetura de informação antes de materialização final.
+Esta frente não define o fluxo posterior, autenticação, onboarding, personalização ou coleta de contexto.
 
 ---
 
-## 18. Possível arquitetura conceitual do Footer
+## 16. Mapa do Ecossistema — limite atual
 
-O Footer deve funcionar como mapa completo, não apenas repetição do Header.
+`Mapa do Ecossistema` não é uma seção detalhada do rodapé nem uma página a ser especificada agora.
 
-Estrutura hipotética:
+A decisão vigente é:
 
-### Guivos
+> **nesta fase, será apenas um link no rodapé.**
 
-- O que é a Guivos;
-- Como funciona;
-- propósito;
-- possibilidades.
+A futura página permanece fora do escopo.
 
-### Ecossistema
+Não são definidos agora:
 
-- Journey;
-- Travel;
-- Mall;
-- Media;
-- Business;
-- Intelligence;
-- Ads.
-
-### Empresa
-
-- Sobre;
+- arquitetura da página;
+- grupos de links;
+- conteúdo;
+- categorias;
+- produtos e serviços nela listados;
 - Trabalhe Conosco;
-- Imprensa;
-- Parceiros, se houver página própria legítima.
-
-### Suporte
-
 - Central de Ajuda;
-- Fale Conosco;
-- Acessibilidade;
-- Segurança, quando aplicável.
-
-### Legal
-
-- Privacidade;
-- Termos;
-- Cookies;
-- preferências e demais documentos aplicáveis.
-
-### Presença / Social
-
-- canais oficiais legitimamente mantidos.
-
-Nenhum nome ou agrupamento desta seção é copy final.
-
----
-
-## 19. Footer como fallback de encontrabilidade
-
-Uma página não precisa estar no Header para ser importante.
-
-O Footer permite que caminhos específicos permaneçam previsíveis sem aumentar a carga cognitiva inicial.
-
-Regra:
-
-> **baixo protagonismo não significa baixa encontrabilidade.**
-
-Exemplos típicos:
-
-- Trabalhe Conosco;
 - Imprensa;
-- Termos;
-- Privacidade;
-- Acessibilidade.
+- páginas legais;
+- redes sociais;
+- países/regiões;
+- layout;
+- navegação interna.
+
+Esses temas serão tratados futuramente em frente própria.
 
 ---
 
-## 20. Navegação desktop e mobile
+## 17. Relação com GKR-UX-HOME-NAV-002
+
+`GKR-UX-HOME-NAV-002` registra a decisão de refinamento que originou esta versão 0.2.0.
+
+Em caso de conflito com hipóteses históricas anteriores, prevalecem:
+
+1. a decisão de Header Persistente mais recente;
+2. o limite de que `Mapa do Ecossistema` é somente um link no rodapé nesta fase;
+3. a postergação integral da página `Mapa do Ecossistema`.
+
+---
+
+## 18. Desktop e mobile
 
 A hierarquia semântica deve ser equivalente em desktop e mobile.
 
-O mobile pode usar:
-
-- drawer;
-- accordions;
-- grupos progressivos;
-- outra solução apropriada.
+O mobile pode usar drawer, grupos progressivos ou outra solução apropriada.
 
 Não deve:
 
 - esconder produtos essenciais;
-- eliminar caminhos institucionais relevantes;
-- inverter hierarquias;
-- transformar o menu em lista plana muito extensa;
-- exigir precisão motora inadequada;
+- eliminar `Sobre` ou `Organizações e Coletivos` sem solução equivalente;
+- remover idioma/região;
+- tornar `Login` ou `Iniciar Jornada` difíceis de encontrar;
 - depender de hover.
 
 ---
 
-## 21. Acessibilidade da navegação
+## 19. Acessibilidade
 
 A futura materialização deve assegurar:
 
@@ -574,202 +386,152 @@ A futura materialização deve assegurar:
 - ordem lógica;
 - alvo de toque adequado;
 - ausência de dependência exclusiva de hover;
-- controle sobre abertura/fechamento;
 - retorno de foco adequado.
 
 ---
 
-## 22. Comportamento do Header
+## 20. Comportamento do Header
 
-Este documento não determina se o Header será fixo, sticky, transparente, compacto ou adaptativo.
+Este documento chama o componente de **Header Persistente** como função de navegação contínua, mas ainda não fixa mecanismo visual específico.
 
-Qualquer solução futura deverá preservar:
+Qualquer solução futura deve preservar:
 
 - acesso previsível;
 - legibilidade;
 - baixo ruído;
 - autonomia;
 - ausência de mudança inesperada;
-- navegação disponível sem bloquear conteúdo.
-
-Um Header pode reduzir visualmente durante scroll, mas não deve ocultar caminhos de forma confusa.
+- acesso ao ecossistema sem bloquear conteúdo.
 
 ---
 
-## 23. CTA da Hero versus navegação
+## 21. CTA da Hero versus Header
 
-A navegação e o CTA da Hero possuem funções diferentes.
+A navegação e os CTAs da Hero possuem funções diferentes.
 
-### Navegação
+O Header atende intenção existente.
 
-Atende intenção existente.
+A Hero cria continuidade narrativa.
 
-Exemplo:
-
-> “Eu já quero Travel.”
-
-### CTA da Hero
-
-Cria continuidade narrativa.
-
-Exemplo conceitual:
-
-> “Quero descobrir.”
-
-O CTA principal da Hero não precisa competir com `Entrar`, `Ajuda` ou acesso direto aos produtos.
+`Iniciar Jornada` no Header não elimina a necessidade de avaliar separadamente o CTA da própria Hero.
 
 ---
 
-## 24. CTAs ao longo da Home
+## 22. Relação com Pessoas, Organizações e Coletivos
 
-CTAs devem nascer do contexto.
+A arquitetura preserva uma única Home e uma única tese.
 
-Hierarquia:
+A Pessoa é atendida prioritariamente pela Home e pela Jornada.
 
-1. ação principal coerente com o movimento;
-2. acesso contextual opcional;
-3. navegação global sempre disponível.
-
-Exemplos:
-
-- história → conhecer história completa;
-- experiência → explorar experiências;
-- ecossistema → conhecer produto;
-- autoridade → conhecer evidência/metodologia;
-- final → continuar descobrindo.
-
-Evitar repetir o mesmo CTA comercial em todas as seções.
-
----
-
-## 25. Relação com Pessoas, Organizações e Coletivos
-
-A navegação poderá oferecer caminhos específicos para diferentes participantes quando necessário.
-
-Isso não deve criar três marcas ou três Homes concorrentes.
+Organizações e Coletivos recebem uma porta de aprofundamento dedicada.
 
 Regra:
 
-> **uma Home, uma tese, múltiplas portas de aprofundamento.**
-
-Uma área como `Para Organizações` pode existir se houver valor claro e destino legítimo.
-
-Coletivos devem permanecer representados na arquitetura do ecossistema, mesmo que a solução futura não crie item de menu isolado com esse nome.
+> **uma Home, uma tese, múltiplas formas de participação.**
 
 ---
 
-## 26. Internacionalização
+## 23. Internacionalização
 
 A arquitetura deve tolerar:
 
 - nomes maiores em outros idiomas;
 - expansão de labels;
 - diferentes convenções de navegação;
-- domínios ou subdomínios futuros;
 - diferenças regulatórias por país;
-- páginas legais locais.
-
-O design não deve depender de labels extremamente curtos para funcionar.
-
----
-
-## 27. SEO e encontrabilidade não devem governar a narrativa
-
-Páginas institucionais, produtos e ajuda podem ser plenamente indexáveis e acessíveis sem ocupar protagonismo na Hero.
-
-SEO não é justificativa suficiente para transformar a Home em catálogo de links ou texto redundante.
-
-Arquitetura de informação e narrativa devem colaborar sem se confundirem.
+- páginas legais locais;
+- região diferente do idioma escolhido.
 
 ---
 
-## 28. Anti-padrões
+## 24. Anti-padrões
 
 Rejeitar ou revisar uma proposta quando:
 
-1. todos os produtos ocupam a navegação primária individualmente sem necessidade;
+1. todos os produtos ocupam individualmente o Header;
 2. o Header parece menu de conglomerado;
-3. o visitante precisa rolar para encontrar um produto que já conhece;
-4. acesso direto a Travel/Mall/Media é removido em nome da narrativa;
-5. páginas institucionais importantes ficam escondidas;
-6. Ajuda compete com a proposta principal;
-7. Trabalhe Conosco ocupa protagonismo indevido;
-8. o Footer é incompleto ou decorativo;
-9. mobile perde caminhos existentes no desktop;
-10. hover é requisito para navegação;
-11. mega menu vira catálogo promocional;
-12. cada produto usa linguagem visual independente a ponto de fragmentar a marca;
-13. login vira CTA principal da Hero;
-14. páginas legais são difíceis de encontrar;
-15. a Home exige percorrer os 11 movimentos para acessar um destino conhecido.
+3. o visitante precisa rolar para acessar um produto que já conhece;
+4. o launcher vira catálogo promocional;
+5. `Sobre` fica escondido;
+6. `Organizações e Coletivos` perde encontrabilidade sem alternativa equivalente;
+7. login vira CTA principal da experiência;
+8. `Iniciar Jornada` é tratado como autorização para desenhar onboarding nesta frente;
+9. idioma e região são confundidos como uma única preferência;
+10. o `Mapa do Ecossistema` é detalhado ou desenhado antes da frente própria;
+11. mobile perde caminhos disponíveis no desktop;
+12. navegação depende de hover;
+13. o Header se torna mais importante que a Hero.
 
 ---
 
-## 29. Critérios de aceitação
+## 25. Critérios de aceitação
 
-Uma futura arquitetura de navegação será considerada aderente quando:
+Uma futura arquitetura será considerada aderente quando:
 
 - produtos forem acessíveis imediatamente sem dominar a primeira percepção;
+- o launcher representar o ecossistema de forma compacta;
 - a marca permanecer maior que a soma dos produtos;
-- Sobre for facilmente encontrável;
-- Ajuda e login estiverem disponíveis sem disputar a narrativa;
-- Trabalhe Conosco e Imprensa forem encontráveis por arquitetura institucional;
-- Footer funcionar como mapa completo;
-- produtos forem explicados de forma destacada no momento narrativo adequado;
-- CTAs contextuais levarem naturalmente a destinos relevantes;
+- `Sobre` for facilmente encontrável;
+- `Organizações e Coletivos` possuir porta clara;
+- idioma/região estiver disponível sem poluir o Header;
+- compartilhar permanecer utilitário;
+- login estiver disponível sem disputar a narrativa;
+- `Iniciar Jornada` possuir hierarquia adequada;
+- o rodapé contiver o link `Mapa do Ecossistema` sem antecipar a página;
 - desktop e mobile preservarem hierarquia;
-- a navegação puder crescer sem se tornar inventário;
 - nenhuma área pública simular disponibilidade inexistente.
 
 ---
 
-## 30. Perguntas obrigatórias de revisão
+## 26. Perguntas obrigatórias de revisão
 
-Antes de aprovar um futuro Header/Footer, responder:
+Antes de aprovar um futuro Header, responder:
 
 1. Quem já conhece Travel consegue acessá-lo rapidamente?
 2. Quem nunca ouviu falar de Guivos entende a marca antes de ser bombardeado por produtos?
-3. A navegação parece uma única empresa/ecossistema?
-4. Sobre a Guivos está encontrável?
-5. Central de Ajuda está encontrável?
-6. Trabalhe Conosco está encontrável sem ocupar protagonismo excessivo?
-7. O Footer cobre mapa institucional, suporte e legal?
-8. Mobile preserva todos os caminhos necessários?
-9. Algum item existe apenas porque concorrentes usam?
-10. Algum item de navegação está tentando compensar uma arquitetura narrativa mal resolvida?
+3. O launcher parece pertencer a um único ecossistema?
+4. `Sobre` está encontrável?
+5. `Organizações e Coletivos` está encontrável?
+6. idioma/região está acessível?
+7. compartilhar está presente sem competir com a narrativa?
+8. login está claro sem dominar?
+9. `Iniciar Jornada` é a ação de maior hierarquia no Header?
+10. mobile preserva os mesmos caminhos essenciais?
+11. algum elemento existe apenas porque concorrentes usam?
+12. o `Mapa do Ecossistema` foi mantido somente como link, sem detalhamento prematuro?
 
 ---
 
-## 31. Prompt para futura arquitetura de informação
+## 27. Prompt para futura arquitetura de informação
 
 ```text
 Projete a arquitetura de navegação da Home pública de Guivos.com sem desenhar ainda a interface final.
 
 Princípio obrigatório: disponibilidade de navegação não implica protagonismo narrativo.
 
-A Home precisa permitir acesso imediato a Guivos Journey, Travel, Mall, Media, Business, Intelligence e Ads para quem já sabe onde quer ir, mas esses produtos não podem dominar a primeira percepção da marca.
+Considere como hipótese principal de Header Persistente:
+- marca Guivos;
+- Sobre;
+- Organizações e Coletivos;
+- compartilhar;
+- idioma/região por ícone de globo;
+- launcher do ecossistema por grade de pontos;
+- Login;
+- Iniciar Jornada como CTA de maior hierarquia.
 
-Organize a navegação de modo progressivo. Considere um agrupador de ecossistema/produtos, caminhos para entender a Guivos, explorar, atender Organizações, acessar ajuda e entrar em uma conta existente.
+O launcher deve permitir acesso a Journey, Travel, Mall, Media, Business, Intelligence e Ads sem transformar o Header em catálogo.
 
-Sobre a Guivos deve ser facilmente encontrável. Central de Ajuda deve funcionar como utilidade. Trabalhe Conosco e Imprensa podem ficar dentro de estrutura institucional e no Footer. Privacidade, Termos, Cookies, acessibilidade e demais páginas legais devem ser previsíveis e fáceis de localizar.
+A Home precisa permitir acesso imediato a produtos conhecidos, mas os produtos não podem dominar a primeira percepção da marca.
 
-O Footer deve funcionar como mapa completo da organização e do ecossistema.
+No rodapé, considere apenas um link `Mapa do Ecossistema`. Não desenhe nem detalhe a página de destino; ela pertence a frente futura.
 
-Diferencie:
-1. navegação global;
-2. acessos contextuais ao longo da Home;
-3. apresentação institucional dos produtos no Movimento 08;
-4. mapa completo no Footer.
-
-Não crie um catálogo de produtos no Header. Não obrigue a pessoa a percorrer a narrativa para acessar um produto conhecido. Preserve a mesma hierarquia semântica em desktop e mobile.
+Preserve a mesma hierarquia semântica em desktop e mobile.
 
 Entregue:
 - taxonomia proposta;
-- níveis de navegação;
 - racional de cada item;
-- destinos agrupados;
-- Header conceitual;
-- Footer conceitual;
+- comportamento conceitual do launcher;
+- relação entre Header e Hero;
 - diferenças desktop/mobile;
 - riscos;
 - itens ainda abertos para teste.
@@ -777,11 +539,11 @@ Entregue:
 
 ---
 
-## 32. Síntese de controle
+## 28. Síntese de controle
 
 A arquitetura deve permitir simultaneamente:
 
-> **quem não conhece a Guivos, compreender; quem quer explorar, descobrir; quem já conhece um produto, acessar; quem procura a empresa, encontrar; quem precisa de ajuda, resolver; quem busca informação legal, localizar.**
+> **quem não conhece a Guivos, compreender; quem já conhece um produto, acessar; quem quer saber quem é a Guivos, encontrar Sobre; quem representa Organização ou Coletivo, encontrar sua porta; quem já participa, fazer login; e quem quer avançar como Pessoa, iniciar sua Jornada.**
 
 Sem transformar a Home em inventário.
 
