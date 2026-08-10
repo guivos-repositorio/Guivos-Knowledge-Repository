@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-NAV-003
 title: Hierarquia entre Header Persistente, Hero e CTAs da Home Pública
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-10
 parent: GKR-UX-HOME-NAV-002
@@ -14,6 +14,7 @@ depends_on:
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-NAV-001
   - GKR-UX-HOME-NAV-002
+  - GKR-UX-HOME-NAV-004
   - GKR-UX-HOME-GTM-BOUNDARY-001
 normative: false
 ---
@@ -34,6 +35,8 @@ Este documento refina a arquitetura da Home pública de `guivos.com` para distin
 A finalidade é evitar que a Home apresente dois ou mais CTAs com significado concorrente logo na entrada.
 
 Este documento não define URL, implementação, onboarding, autenticação, disponibilidade operacional, estratégia de lançamento ou Marketing/GTM.
+
+O comportamento de persistência, compactação, scroll e mobile do Header é aprofundado por `GKR-UX-HOME-NAV-004`.
 
 ---
 
@@ -108,6 +111,10 @@ Na arquitetura vigente, ele contém conceitualmente:
 O Header não deve tentar contar a história da Home.
 
 Ele deve permanecer suficientemente simples para não competir com a Hero.
+
+Regra complementar de comportamento:
+
+> **O Header permanece disponível sem permanecer dominante; ele pode compactar durante a rolagem, mas não deve desaparecer completamente como comportamento padrão.**
 
 ---
 
@@ -190,6 +197,8 @@ A presença persistente de `Iniciar Jornada` não autoriza nesta frente definir:
 - fluxo posterior;
 - disponibilidade operacional;
 - regra de lançamento.
+
+Durante a rolagem, sua disponibilidade pode permanecer constante sem que sua pressão visual aumente.
 
 ---
 
@@ -300,6 +309,8 @@ Regra:
 
 > **persistência deve reduzir repetição, não aumentar pressão.**
 
+O comportamento material de persistência segue `GKR-UX-HOME-NAV-004`.
+
 ---
 
 ## 13. Relação com os CTAs contextuais
@@ -352,6 +363,8 @@ A arquitetura não exige que todos os elementos permaneçam simultaneamente vis�
 
 Ela exige equivalência de função e hierarquia.
 
+`GKR-UX-HOME-NAV-004` acrescenta que caminhos condensados devem permanecer, em regra, a uma camada de navegação de distância e que launcher e eventual menu geral não devem se tornar semanticamente indistinguíveis.
+
 ---
 
 ## 16. Anti-padrões
@@ -369,7 +382,10 @@ Rejeitar ou revisar uma proposta se:
 9. o Header ocupa atenção maior que a tese da Hero;
 10. a persistência é usada para repetir pressão comercial durante o scroll;
 11. a versão mobile remove ou esconde de forma imprevisível a principal continuidade;
-12. a página repete `Iniciar Jornada` em múltiplos movimentos sem função nova.
+12. a página repete `Iniciar Jornada` em múltiplos movimentos sem função nova;
+13. o Header desaparece completamente durante longos trechos como comportamento padrão;
+14. a compactação move alvos de forma imprevisível;
+15. launcher e menu geral mobile parecem o mesmo controle apesar de terem funções diferentes.
 
 ---
 
@@ -386,7 +402,8 @@ A relação Header/Hero é aderente quando:
 - nenhuma ação exige que o visitante revele contexto para compreender a Home;
 - a persistência do Header reduz repetição de CTAs;
 - a tese da Hero domina perceptivamente o primeiro viewport;
-- mobile preserva a mesma arquitetura de intenção.
+- mobile preserva a mesma arquitetura de intenção;
+- Header pode compactar sem desaparecer nem aumentar pressão perceptiva.
 
 ---
 
@@ -400,16 +417,14 @@ Este documento não define:
 - formato do botão;
 - ícone específico;
 - animação;
-- sticky behavior técnico;
 - breakpoint;
 - label final do CTA de descoberta;
 - microcopy;
-- comportamento exato de scroll;
 - abertura do launcher;
 - estado autenticado;
 - destino operacional de `Iniciar Jornada`.
 
-Essas decisões pertencem às etapas futuras apropriadas.
+O comportamento conceitual de scroll, compactação e mobile é governado por `GKR-UX-HOME-NAV-004`; sua materialização técnica e visual permanece aberta.
 
 ---
 
@@ -439,25 +454,9 @@ HERO
 ├── amplitude / pertencimento
 ├── concretização do papel da Guivos
 └── CTA de descoberta
-    └── continua a narrativa pública da Home
+    └── continua a própria Home
 ```
 
 Regra final:
 
 > **A Hero deve fazer a pessoa querer continuar entendendo; o Header deve permitir que ela aja quando já souber o que quer fazer.**
-
-Efeito esperado:
-
-```text
-quem ainda não conhece
-→ descobre
-
-quem já decidiu
-→ inicia
-
-quem já participa
-→ entra
-
-quem procura um ambiente específico
-→ acessa
-```
