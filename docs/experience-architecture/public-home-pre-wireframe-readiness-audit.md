@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-AUDIT-001
 title: Auditoria de Completude Pré-Wireframe da Home Pública
 status: draft
-version: 0.6.0
+version: 0.6.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-10
 parent: GKR-UX-HOME-HANDOFF-001
@@ -13,8 +13,8 @@ depends_on:
   - GKR-UX-HOME-VAL-001
   - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-NARR-001
-  - GKR-UX-HOME-NARR-002
   - GKR-UX-HOME-NARR-003
+  - GKR-UX-HOME-NARR-002
   - GKR-UX-HOME-NAV-001
   - GKR-UX-HOME-NAV-002
   - GKR-UX-HOME-NAV-003
