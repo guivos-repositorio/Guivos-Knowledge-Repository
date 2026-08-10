@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-NARR-003
 title: Refinamento da Transição Movimento 07 → 08 — Participantes e Produtos na Home Pública
 status: draft
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-10
 parent: GKR-UX-HOME-NARR-001
@@ -364,7 +364,7 @@ Ao atravessar a passagem 07 → 08, o visitante deveria conseguir formular algo 
 
 ## 18. Regra sintética para design
 
-> **Quem participa não define qual produto é. O contexto define quais capacidades podem fazer sentido.**
+> **O tipo de participante não determina um produto correspondente. O contexto orienta quais capacidades do ecossistema podem fazer sentido.**
 
 E, como regra de sequência:
 
