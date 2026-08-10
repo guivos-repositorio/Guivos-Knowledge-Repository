@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-AUDIT-001
 title: Auditoria de Completude Pré-Wireframe da Home Pública
 status: draft
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-10
 parent: GKR-UX-HOME-HANDOFF-001
@@ -15,6 +15,7 @@ depends_on:
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-NAV-001
   - GKR-UX-HOME-NAV-002
+  - GKR-UX-HOME-NAV-003
   - GKR-UX-HOME-SYS-001
   - GKR-UX-HOME-BENCH-001
   - GKR-UX-HOME-BENCH-002
@@ -51,7 +52,7 @@ Estado geral:
 Já estão suficientemente consolidados:
 
 - posicionamento;
-- tese da Hero;
+- tese e sistema semântico da Hero;
 - arquitetura narrativa;
 - onze movimentos;
 - conteúdo e prova;
@@ -60,16 +61,20 @@ Já estão suficientemente consolidados:
 - Header Persistente em princípio;
 - launcher do ecossistema em princípio;
 - separação da Journey em relação ao launcher;
+- relação entre Header, Hero e CTAs em princípio;
 - acesso de Organizações e Coletivos;
 - idioma/região;
 - link `Mapa do Ecossistema` no rodapé;
-- limites de autonomia, privacidade e não simulação.
+- limites de autonomia, privacidade e não simulação;
+- separação entre arquitetura da Home e Marketing/GTM.
 
-A principal correção desta versão é:
+A relação de ação do primeiro viewport está agora definida em princípio:
 
-> **disponibilidade de produtos no lançamento, páginas do lançamento, idiomas/regiões do lançamento e demais decisões de GTM não são requisitos da arquitetura conceitual da Home.**
+> **Hero = descoberta e continuidade narrativa. Header = acesso persistente à Journey por `Iniciar Jornada`.**
 
-Esses temas pertencem à futura estratégia de Marketing/GTM e aos gates de publicação/produção, conforme `GKR-UX-HOME-GTM-BOUNDARY-001`.
+Consequentemente, a Hero não deve duplicar `Iniciar Jornada` como CTA dominante na hipótese principal vigente.
+
+A disponibilidade dos produtos no lançamento, páginas do lançamento, idiomas/regiões do lançamento e demais decisões de GTM continuam fora dos requisitos da arquitetura conceitual da Home.
 
 Conclusão:
 
@@ -162,9 +167,9 @@ A arquitetura atual considera:
 - idioma/região por globo;
 - launcher do ecossistema por grade de pontos;
 - `Login`;
-- `Iniciar Jornada` como CTA de maior hierarquia e porta própria da Journey.
+- `Iniciar Jornada` como CTA de maior hierarquia dentro do Header e porta própria da Journey.
 
-Layout, espaçamento, ordem material final, responsividade e tratamento visual permanecem para a futura etapa de design.
+Layout, espaçamento, ordem material final, responsividade e tratamento visual permanecem para design.
 
 ### 3.12 Launcher do Ecossistema — DECIDIDO EM PRINCÍPIO
 
@@ -177,7 +182,7 @@ Inventário conceitualmente aprovado nesta fase:
 - Intelligence;
 - Mall.
 
-Journey não integra o launcher na hipótese principal atual.
+Journey não integra o launcher na hipótese principal vigente.
 
 ### 3.13 Journey no Header — DECIDIDO EM PRINCÍPIO
 
@@ -213,7 +218,42 @@ Comportamento técnico não é definido nesta frente.
 
 A página, sua arquitetura, categorias, conteúdo e acessos internos ficam fora da frente atual.
 
-### 3.18 Sistema de conteúdo — DECIDIDO
+### 3.18 Hierarquia Header × Hero × CTAs — DECIDIDO EM PRINCÍPIO
+
+A Home separa duas camadas de ação:
+
+```text
+Header Persistente
+→ orientação + acessos permanentes + decisão de iniciar Journey
+
+Hero
+→ abertura narrativa + continuidade de descoberta
+```
+
+Regra de controle:
+
+> **A Hero deve fazer a pessoa querer continuar entendendo; o Header deve permitir que ela aja quando já souber o que quer fazer.**
+
+Consequências:
+
+- `Iniciar Jornada` permanece no Header;
+- Hero não duplica `Iniciar Jornada` como CTA dominante na hipótese principal;
+- CTA da Hero possui função de continuar a descoberta dentro da própria Home;
+- Login permanece utilitário;
+- launcher permanece acesso direto para intenção já conhecida;
+- Header não pode sequestrar a hierarquia perceptiva da Hero.
+
+### 3.19 CTA da Hero — DECIDIDO EM FUNÇÃO / COPY ABERTA
+
+A função comportamental é:
+
+> **continuar a descoberta dentro da própria Home.**
+
+Territórios de copy como `Descubra a Guivos`, `Explore possibilidades`, `Comece a explorar` ou equivalentes permanecem apenas como hipóteses de redação.
+
+O mecanismo material de continuidade permanece para design.
+
+### 3.20 Sistema de conteúdo — DECIDIDO
 
 Classes:
 
@@ -223,39 +263,39 @@ Classes:
 - ecossistema;
 - navegação/ação.
 
-### 3.19 Hierarquia de prova — DECIDIDO
+### 3.21 Hierarquia de prova — DECIDIDO
 
 Prova direta > história documentada > evidência institucional > métrica > depoimento > afirmação institucional.
 
-### 3.20 Modelo das histórias — DECIDIDO
+### 3.22 Modelo das histórias — DECIDIDO
 
 Contexto → possibilidade → decisão → experiência → consequência → continuidade.
 
-### 3.21 Conteúdo vivo sem feed — DECIDIDO
+### 3.23 Conteúdo vivo sem feed — DECIDIDO
 
 Camadas permanente, editorial e temporal.
 
-### 3.22 Guivos Media como fonte editorial futura — DECIDIDO CONCEITUALMENTE
+### 3.24 Guivos Media como fonte editorial futura — DECIDIDO CONCEITUALMENTE
 
 Não existe autorização de integração técnica nesta frente.
 
-### 3.23 Interação e movimento — DECIDIDO EM PRINCÍPIO
+### 3.25 Interação e movimento — DECIDIDO EM PRINCÍPIO
 
 Movimento deve revelar, conectar e dar continuidade sem substituir clareza.
 
-### 3.24 Autonomia do scroll — DECIDIDO
+### 3.26 Autonomia do scroll — DECIDIDO
 
 Nenhuma experiência pode obrigar o visitante a assistir animações ou aguardar narrativa bloqueante.
 
-### 3.25 Desktop/mobile — DECIDIDO EM PRINCÍPIO
+### 3.27 Desktop/mobile — DECIDIDO EM PRINCÍPIO
 
 Mesma tese e hierarquia; composição pode variar.
 
-### 3.26 Percepção visual — DECIDIDO
+### 3.28 Percepção visual — DECIDIDO
 
 > **Futuro sem ficção. Tecnologia sem frieza. Sofisticação sem elitismo. Escala sem ruído. Humanidade sem clichê.**
 
-### 3.27 Acessibilidade e resiliência — DECIDIDO EM PRINCÍPIO
+### 3.29 Acessibilidade e resiliência — DECIDIDO EM PRINCÍPIO
 
 A experiência deve funcionar com:
 
@@ -268,15 +308,13 @@ A experiência deve funcionar com:
 - responsividade;
 - internacionalização.
 
-### 3.28 Anti-padrões — DECIDIDO
+### 3.30 Anti-padrões — DECIDIDO
 
 Existe repertório de rejeição narrativa, editorial, visual, interativa e de navegação.
 
 ---
 
 ## 4. Decisões que podem ser resolvidas durante design/copy
-
-Estes itens não exigem estratégia de lançamento para serem explorados:
 
 ### DESIGN-01 — composição material do Header
 
@@ -292,18 +330,20 @@ Definir futuramente:
 
 A arquitetura semântica já está definida em princípio.
 
-### DESIGN-02 — CTA da Hero
+### DESIGN-02 — materialização do CTA de descoberta da Hero
 
-A função está definida como continuidade de descoberta.
+A relação semântica com `Iniciar Jornada` **não está mais aberta**.
 
-A futura etapa de copy/design pode explorar:
+A futura etapa de copy/design deverá resolver apenas:
 
-- label primário;
-- eventual ação secundária;
-- relação com o CTA `Iniciar Jornada` do Header;
-- comportamento de continuidade dentro da própria Home ou para destino conceitual.
+- label final do CTA de descoberta;
+- aparência e hierarquia visual material;
+- affordance;
+- scroll, anchor ou mecanismo equivalente;
+- eventual microcopy;
+- comportamento responsivo.
 
-A escolha não deve ser determinada por uma estratégia de lançamento ainda inexistente.
+O CTA deve continuar a narrativa pública e não duplicar `Iniciar Jornada` como ação dominante na Hero sem nova decisão explícita de arquitetura.
 
 ### DESIGN-03 — estratégia material de mídia da Hero
 
@@ -423,6 +463,12 @@ Antes de publicação, a versão concreta deverá ser reconciliada com verdade o
 ### Hero — significado
 **ALTA**
 
+### Hero — função do CTA de descoberta
+**ALTA EM PRINCÍPIO**
+
+### Hero — copy/materialização do CTA
+**PARA DESIGN/COPY**
+
 ### Narrativa
 **ALTA**
 
@@ -434,6 +480,9 @@ Antes de publicação, a versão concreta deverá ser reconciliada com verdade o
 
 ### Header — materialização visual
 **PARA DESIGN**
+
+### Relação Header × Hero × CTAs
+**ALTA EM PRINCÍPIO**
 
 ### Launcher — inventário conceitual
 **ALTA**
@@ -478,9 +527,10 @@ Antes de iniciar um wireframe governado da Home, exigir apenas:
 2. confirmação de que o escopo continua restrito à Home pública;
 3. adoção dos documentos desta frente como baseline de trabalho;
 4. preservação da arquitetura narrativa e do Header vigente;
-5. preservação dos limites de prova, autonomia e privacidade;
-6. definição do objetivo da rodada de wireframe — exploração, comparação ou convergência;
-7. rastreabilidade entre proposta visual e requisitos da arquitetura.
+5. preservação da hierarquia `Hero = descoberta` versus `Header = Iniciar Jornada`;
+6. preservação dos limites de prova, autonomia e privacidade;
+7. definição do objetivo da rodada de wireframe — exploração, comparação ou convergência;
+8. rastreabilidade entre proposta visual e requisitos da arquitetura.
 
 Não é necessário, para esse gate:
 
@@ -504,6 +554,8 @@ O designer ou ferramenta generativa não pode redefinir:
 - a ordem semântica dominante da narrativa;
 - o papel estrutural dos produtos;
 - Journey como porta própria `Iniciar Jornada` no Header;
+- a função de descoberta do CTA da Hero;
+- a separação entre CTA da Hero e `Iniciar Jornada`;
 - o inventário conceitual vigente do launcher;
 - a existência do link `Mapa do Ecossistema` no rodapé;
 - regras de autonomia;
@@ -523,7 +575,8 @@ A futura etapa deverá propor, entre outros:
 - densidade;
 - hierarquia;
 - posição material dos acessos definidos;
-- relação Header / narrativa / rodapé;
+- relação Header / Hero / narrativa / rodapé;
+- tratamento visual do CTA da Hero;
 - forma de representar produtos sem catálogo;
 - slots e distribuição de prova;
 - Hero com fallback;
@@ -555,10 +608,12 @@ Uma proposta futura deverá responder:
 14. O design continua funcionando sem vídeo e sem animação?
 15. Os produtos entram narrativamente no momento correto?
 16. O Header oferece acesso sem transformar a marca em catálogo?
-17. O launcher preserva Journey fora de sua grade na hipótese vigente?
-18. `Mapa do Ecossistema` continua apenas como link no rodapé desta frente?
-19. A solução desperta vontade de descobrir?
-20. A proposta é reconhecivelmente Guivos e não uma cópia de benchmark?
+17. A Hero convida a descobrir em vez de duplicar `Iniciar Jornada`?
+18. `Iniciar Jornada` continua disponível no Header sem dominar a Hero?
+19. O launcher preserva Journey fora de sua grade na hipótese vigente?
+20. `Mapa do Ecossistema` continua apenas como link no rodapé desta frente?
+21. A solução desperta vontade de descobrir?
+22. A proposta é reconhecivelmente Guivos e não uma cópia de benchmark?
 
 ---
 
@@ -573,6 +628,8 @@ A documentação já responde com alta confiança:
 - por que produtos não dominam a abertura;
 - como o Header oferece acessos sem catalogar a marca;
 - como Journey se diferencia do launcher;
+- como a Hero se diferencia de `Iniciar Jornada`;
+- como o primeiro viewport acomoda descoberta e decisão sem misturá-las;
 - como Organizações e Coletivos aparecem na navegação;
 - como idioma/região entra no Header;
 - qual é o limite atual do `Mapa do Ecossistema`;
