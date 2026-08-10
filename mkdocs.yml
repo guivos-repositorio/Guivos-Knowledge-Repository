@@ -60,115 +60,66 @@ not_in_nav: |
 nav:
   - Início: index.md
 
-  - Estado e Evolução do Repositório:
-      - Estado e Planejamento:
-          - Estado Atual do Repositório: project/current-state-register.md
-          - Roadmap Arquitetural: roadmap.md
-          - Painel de Conhecimento: project/knowledge-board.md
-          - Marcos Arquiteturais: project/architectural-milestones.md
-      - Consolidação e Adendos:
-          - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
-          - Adendo — Opportunity Boost: project/canonical-consolidation-matrix-opportunity-boost-addendum.md
-          - Adendo — Validação Funcional do Opportunity Boost: project/canonical-consolidation-matrix-uxa-039-addendum.md
-          - Adendo — Fluxo do Anunciante: project/canonical-consolidation-matrix-uxa-040-addendum.md
-          - Adendo — Validação do Fluxo do Anunciante: project/canonical-consolidation-matrix-uxa-041-addendum.md
-          - Adendo — Cartão Patrocinado e Explicação: project/canonical-consolidation-matrix-uxa-042-addendum.md
-          - Adendo — Validação do Cartão Patrocinado: project/canonical-consolidation-matrix-uxa-043-addendum.md
-          - Adendo — Estados Patrocinados de Lista e Mapa: project/canonical-consolidation-matrix-uxa-044-addendum.md
-          - Adendo — Validação dos Estados Patrocinados: project/canonical-consolidation-matrix-uxa-045-addendum.md
-          - Adendo — Gestão da Campanha Ativa: project/canonical-consolidation-matrix-uxa-046-addendum.md
-      - Histórico e Validação do Repositório:
-          - Histórico — Opportunity Boost: project/changelog-1.62.0-opportunity-boost.md
-          - Histórico — Validação Funcional do Opportunity Boost: project/changelog-1.63.0-uxa-039.md
-          - Histórico — Fluxo do Anunciante: project/changelog-1.64.0-uxa-040.md
-          - Histórico — Validação do Fluxo do Anunciante: project/changelog-1.65.0-uxa-041.md
-          - Histórico — Cartão Patrocinado e Explicação: project/changelog-1.66.0-uxa-042.md
-          - Histórico — Validação do Cartão Patrocinado: project/changelog-1.67.0-uxa-043.md
-          - Histórico — Estados Patrocinados de Lista e Mapa: project/changelog-1.68.0-uxa-044.md
-          - Histórico — Validação dos Estados Patrocinados: project/changelog-1.69.0-uxa-045.md
-          - Histórico — Gestão da Campanha Ativa: project/changelog-1.70.0-uxa-046.md
-          - Parecer de Validação Mecânica do Repositório: project/repository-mechanical-validation-2026-07-24.md
-          - Retomada Governada do Repositório: project/governed-resumption-r6.md
+  - Comece por aqui:
+      - Guia Oficial da Guivos:
+          - Visão Geral: public/index.md
+          - Guia Completo: public/guia-oficial-da-guivos.md
+      - Estado Atual do Repositório: project/current-state-register.md
+      - Roadmap Arquitetural: roadmap.md
+      - Glossário da Guivos: glossary.md
 
-  - Guia Oficial da Guivos:
-      - Visão Geral: public/index.md
-      - Guia Completo: public/guia-oficial-da-guivos.md
-
-  - Fundamentos de Evolução:
-      - Visão Geral: evolution-framework/index.md
-
-  - Pesquisa e Validação:
-      - Visão Geral: research/index.md
-      - Validação de Mercado:
-          - Visão Geral: research/market-validation/README.md
-          - Framework de Validação: research/market-validation/VAL-001-framework-de-validacao-de-mercado.md
-          - Pesquisa Oficial: research/market-validation/VAL-002-pesquisa-oficial-da-guivos.md
-          - Guia do Entrevistador: research/market-validation/VAL-003-guia-do-entrevistador.md
-          - Consolidação e Análise: research/market-validation/VAL-004-modelo-de-consolidacao-e-analise.md
-          - Plano de Amostragem: research/market-validation/VAL-005-plano-de-amostragem.md
-          - Dashboard de Indicadores: research/market-validation/VAL-006-dashboard-de-indicadores.md
-          - Critérios de Decisão: research/market-validation/VAL-007-criterios-de-decisao.md
-          - Sinais Comportamentais: research/market-validation/VAL-008-sinais-comportamentais.md
-      - Programa de Pesquisa do Ecossistema:
-          - Visão Geral: research/RP-001/index.md
-          - Protocolo de Pesquisa: research/RP-001/protocol.md
-          - Meta-Síntese: research/RP-001/MS-001.md
-          - Registro de Evidências: research/RP-001/evidence-registry.md
-          - Catálogo de Fenômenos do Ecossistema: research/RP-001/ecosystem-phenomena-catalog.md
-          - Recomendações Arquiteturais: research/RP-001/recommendations.md
-
-  - Arquitetura Corporativa da Guivos:
-      - Visão Geral: enterprise-architecture/index.md
-      - Modelo de Camadas de Permanência: enterprise-architecture/permanence-layer-model.md
-      - Arquitetura de Referência: reference-architecture/gccm-001.md
-      - Glossário Canônico: glossary.md
-
-  - Fundamentos do Ecossistema:
-      - Visão Geral: geb/index.md
-      - Fundação:
-          - Visão Geral: geb/part-01-foundation/index.md
+  - Fundamentos da Guivos:
+      - Visão Geral dos Fundamentos: geb/index.md
+      - Essência, Propósito e Direção:
+          - Fundação da Guivos: geb/part-01-foundation/index.md
           - Essência: geb/part-01-foundation/01-essence.md
           - Propósito: geb/part-01-foundation/02-purpose.md
           - Missão Operacional: geb/part-01-foundation/03-mission.md
           - Visão de Longo Prazo: geb/part-01-foundation/04-vision.md
           - Constituição: geb/part-01-foundation/05-constitution.md
           - Princípios Permanentes: geb/part-01-foundation/06-principles.md
-      - Modelo Fundamental:
-          - Visão Geral: geb/part-02-fundamental-model/index.md
+      - Evolução e Jornada:
+          - Framework de Evolução: evolution-framework/index.md
+          - Modelo Fundamental — Visão Geral: geb/part-02-fundamental-model/index.md
           - Fenômeno da Evolução: geb/part-02-fundamental-model/phenomenon.md
           - Modelo Fundamental da Jornada: geb/part-02-fundamental-model/fundamental-journey.md
           - Quatro Naturezas Fundamentais: geb/part-02-fundamental-model/four-fundamental-natures.md
 
-  - Arquitetura de Produtos:
-      - Visão Geral: product-architecture/index.md
+  - Ecossistema e Produtos:
+      - Visão Geral da Arquitetura de Produtos: product-architecture/index.md
       - Arquitetura em Camadas dos Produtos: product-architecture/layered-product-architecture.md
-      - Guivos Journey — Arquitetura Principal: product-architecture/pas-001-guivos-journey.md
-      - Reconciliação e Prontidão: product-architecture/pas-001-guivos-journey-reconciliacao-fechamento.md
-      - Publicação Controlada: product-architecture/pas-001-guivos-journey-publicacao-controlada.md
-      - Mapa Final de Capacidades: product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md
-      - Handoff para Engenharia: product-architecture/pas-001-guivos-journey-engineering-handoff.md
-      - Handoff para Engenharia — Pausado pelo Modelo Econômico: product-architecture/pas-001-guivos-journey-engineering-handoff-0.7.1.md
-      - Captura de Contexto — Unidade de Engenharia Pausada: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.7.1.md
+      - Guivos Journey:
+          - Papel do Journey no Ecossistema: product-architecture/journey.md
+          - Arquitetura de Capacidades do Journey: product-architecture/pas-001-guivos-journey.md
+          - Mapa Final de Capacidades: product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md
+          - Reconciliação e Prontidão: product-architecture/pas-001-guivos-journey-reconciliacao-fechamento.md
+          - Publicação Controlada: product-architecture/pas-001-guivos-journey-publicacao-controlada.md
+          - Handoff para Engenharia: product-architecture/pas-001-guivos-journey-engineering-handoff.md
+          - Handoff para Engenharia — Pausado pelo Modelo Econômico: product-architecture/pas-001-guivos-journey-engineering-handoff-0.7.1.md
+          - Captura de Contexto — Unidade de Engenharia: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.7.1.md
       - Produtos Especializados:
-          - Guivos Journey: product-architecture/journey.md
-          - Guivos Mall: product-architecture/mall.md
-          - Guivos Business: product-architecture/business.md
-          - Guivos Intelligence: product-architecture/intelligence.md
-          - Guivos Ads: product-architecture/ads.md
-          - Guivos Media: product-architecture/media.md
           - Guivos Travel: product-architecture/travel.md
+          - Guivos Mall: product-architecture/mall.md
+          - Guivos Media: product-architecture/media.md
+          - Guivos Business: product-architecture/business.md
+          - Guivos Ads: product-architecture/ads.md
+          - Guivos Intelligence: product-architecture/intelligence.md
 
-  - Arquitetura da Experiência:
-      - Visão Geral: experience-architecture/index.md
-      - Fundamentos e Padrões:
-          - Fundação da Arquitetura da Experiência: experience-architecture/uxa-001-foundation.md
-          - Mapa de Jornadas e Telas: experience-architecture/uxa-003-journeys-and-screen-map.md
-          - Ordem Funcional da Primeira Entrada: experience-architecture/uxa-003-a1-first-entry-functional-order.md
-          - Programa de Wireframes: experience-architecture/uxa-005-low-fidelity-wireframes.md
-          - Linguagem Clara e Identificadores Técnicos: experience-architecture/uxa-009-plain-language-and-technical-identifiers.md
-          - Presença Companheira e Posicionamento: experience-architecture/uxa-011-companion-presence-and-ecosystem-positioning.md
-          - Compreensão do Momento e Próximo Passo: experience-architecture/uxa-011-a1-moment-progress-and-next-step-explainability.md
-      - Entrada Inicial da Pessoa:
+  - Experiência, Design e Jornadas:
+      - Visão Geral da Experiência: experience-architecture/index.md
+      - Jornadas e Telas Atuais:
+          - Visão Geral das Jornadas Integradas: journeys/index.md
+          - Galeria Visual de Telas: journeys/screen-gallery.md
+          - Catálogo de Telas: journeys/screen-catalog.md
+          - Jornada da Pessoa: journeys/person.md
+          - Jornada do Coletivo: journeys/collective.md
+          - Jornada da Organização: journeys/organization.md
+          - Passagens entre Jornadas: journeys/handoffs.md
+          - Cenários: journeys/scenarios.md
+          - Registro de Superfícies: journeys/surface-registry.md
+          - Registro de Transições: journeys/transition-registry.md
+          - Lacunas Conhecidas: journeys/gaps.md
+      - Home e Entrada da Pessoa:
           - Página Inicial e Início da Jornada: experience-architecture/uxa-020-home-and-journey-entry.md
           - Validação da Página Inicial Pública: experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md
           - Wireframe da Página Inicial Pública: experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md
@@ -181,7 +132,7 @@ nav:
           - Experiência Diária e Tela Hoje: experience-architecture/uxa-002-daily-experience-and-home.md
           - Wireframe da Tela Hoje: experience-architecture/uxa-006-today-low-fidelity-wireframe.md
           - Validação da Tela Hoje: experience-architecture/uxa-010-today-functional-validation-and-reformulation.md
-      - Explorar, Mapa e Opportunity Boost:
+      - Explorar e Mapa:
           - Contrato de Oportunidades e Mapa: experience-architecture/uxa-004-opportunities-organizations-collectives-map.md
           - Wireframe do Mapa de Oportunidades: experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md
           - Validação do Mapa de Oportunidades: experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md
@@ -193,20 +144,21 @@ nav:
           - Validação do Mapa sem Resultados: experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md
           - Referência do Mapa para Computador: experience-architecture/uxa-032-opportunity-map-desktop-reference.md
           - Validação da Referência para Computador: experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md
-          - Opportunity Boost — Experiência Funcional: experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md
-          - Opportunity Boost — Validação Funcional: experience-architecture/uxa-039-opportunity-boost-functional-validation-and-reformulation.md
-          - Opportunity Boost — Wireframes do Fluxo do Anunciante: experience-architecture/uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md
-          - Opportunity Boost — Validação do Fluxo do Anunciante: experience-architecture/uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md
-          - Opportunity Boost — Cartão Patrocinado e Explicação: experience-architecture/uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md
-          - Opportunity Boost — Validação do Cartão Patrocinado: experience-architecture/uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md
-          - Opportunity Boost — Estados Patrocinados de Lista e Mapa: experience-architecture/uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md
-          - Opportunity Boost — Validação dos Estados Patrocinados: experience-architecture/uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md
-          - Opportunity Boost — Gestão da Campanha Ativa: experience-architecture/uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md
       - Oportunidades:
-          - Wireframe do Detalhe da Oportunidade: experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md
-          - Validação do Detalhe da Oportunidade: experience-architecture/uxa-012-opportunity-detail-functional-validation-and-reformulation.md
-          - Cadastro da Oportunidade pela Organização — Wireframe: experience-architecture/uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md
+          - Detalhe da Oportunidade — Wireframe: experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md
+          - Detalhe da Oportunidade — Validação: experience-architecture/uxa-012-opportunity-detail-functional-validation-and-reformulation.md
+          - Cadastro pela Organização — Wireframe: experience-architecture/uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md
           - Cadastro da Oportunidade — Validação: experience-architecture/uxa-013-organization-opportunity-registration-functional-validation-and-reformulation.md
+      - Opportunity Boost:
+          - Experiência Funcional: experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md
+          - Validação Funcional: experience-architecture/uxa-039-opportunity-boost-functional-validation-and-reformulation.md
+          - Fluxo do Anunciante — Wireframes: experience-architecture/uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md
+          - Fluxo do Anunciante — Validação: experience-architecture/uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md
+          - Cartão Patrocinado e Explicação: experience-architecture/uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md
+          - Cartão Patrocinado — Validação: experience-architecture/uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md
+          - Estados Patrocinados de Lista e Mapa: experience-architecture/uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md
+          - Estados Patrocinados — Validação: experience-architecture/uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md
+          - Gestão da Campanha Ativa: experience-architecture/uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md
       - Organizações e Coletivos:
           - Fundamentos de Organizações e Coletivos: experience-architecture/uxa-014-organizations-and-collectives-functional-foundation.md
           - Organização — Wireframe: experience-architecture/uxa-015-organization-overview-low-fidelity-wireframe.md
@@ -214,7 +166,15 @@ nav:
           - Coletivo — Wireframe: experience-architecture/uxa-016-collective-home-low-fidelity-wireframe.md
           - Coletivo — Validação: experience-architecture/uxa-018-collective-home-functional-validation-and-reformulation.md
           - Relações entre Organizações e Coletivos: experience-architecture/uxa-019-organization-collective-relationship-functional-contract.md
-      - Programa e Governança das Jornadas Integradas:
+      - Fundamentos e Padrões de Experiência:
+          - Fundação da Arquitetura da Experiência: experience-architecture/uxa-001-foundation.md
+          - Mapa de Jornadas e Telas: experience-architecture/uxa-003-journeys-and-screen-map.md
+          - Ordem Funcional da Primeira Entrada: experience-architecture/uxa-003-a1-first-entry-functional-order.md
+          - Programa de Wireframes: experience-architecture/uxa-005-low-fidelity-wireframes.md
+          - Linguagem Clara e Identificadores Técnicos: experience-architecture/uxa-009-plain-language-and-technical-identifiers.md
+          - Presença Companheira e Posicionamento: experience-architecture/uxa-011-companion-presence-and-ecosystem-positioning.md
+          - Compreensão do Momento e Próximo Passo: experience-architecture/uxa-011-a1-moment-progress-and-next-step-explainability.md
+      - Histórico de Construção das Jornadas Integradas:
           - Programa Funcional: experience-architecture/uxa-070-journey-simulation-environment-functional-program.md
           - Mapa Documental das Jornadas: experience-architecture/uxa-071-integrated-journeys-map-materialization.md
           - Validação e Reformulação das Jornadas: experience-architecture/uxa-072-integrated-journeys-functional-validation-and-reformulation.md
@@ -228,63 +188,130 @@ nav:
           - Promoção dos Registros Granulares: experience-architecture/uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md
           - Galeria Visual e Auditoria de Cobertura: experience-architecture/uxa-081-integrated-screen-gallery-and-coverage-audit.md
 
-  - Jornadas Integradas:
-      - Visão Geral: journeys/index.md
-      - Galeria Visual de Telas: journeys/screen-gallery.md
-      - Catálogo de Telas: journeys/screen-catalog.md
-      - Jornada da Pessoa: journeys/person.md
-      - Jornada do Coletivo: journeys/collective.md
-      - Jornada da Organização: journeys/organization.md
-      - Passagens entre Jornadas: journeys/handoffs.md
-      - Cenários: journeys/scenarios.md
-      - Registro de Superfícies: journeys/surface-registry.md
-      - Registro de Transições: journeys/transition-registry.md
-      - Lacunas Conhecidas: journeys/gaps.md
+  - Pesquisa e Validação:
+      - Visão Geral: research/index.md
+      - Validação de Mercado:
+          - Visão Geral: research/market-validation/README.md
+          - Framework de Validação: research/market-validation/VAL-001-framework-de-validacao-de-mercado.md
+          - Pesquisa Oficial: research/market-validation/VAL-002-pesquisa-oficial-da-guivos.md
+          - Guia do Entrevistador: research/market-validation/VAL-003-guia-do-entrevistador.md
+          - Consolidação e Análise: research/market-validation/VAL-004-modelo-de-consolidacao-e-analise.md
+          - Plano de Amostragem: research/market-validation/VAL-005-plano-de-amostragem.md
+          - Dashboard de Indicadores: research/market-validation/VAL-006-dashboard-de-indicadores.md
+          - Critérios de Decisão: research/market-validation/VAL-007-criterios-de-decisao.md
+          - Sinais Comportamentais: research/market-validation/VAL-008-sinais-comportamentais.md
+      - Pesquisa do Ecossistema:
+          - Visão Geral: research/RP-001/index.md
+          - Protocolo de Pesquisa: research/RP-001/protocol.md
+          - Meta-Síntese: research/RP-001/MS-001.md
+          - Registro de Evidências: research/RP-001/evidence-registry.md
+          - Catálogo de Fenômenos do Ecossistema: research/RP-001/ecosystem-phenomena-catalog.md
+          - Recomendações Arquiteturais: research/RP-001/recommendations.md
 
-  - Inteligência e IA:
-      - Visão Geral: intelligence-architecture/index.md
-      - Modelo de Conhecimento da IA: intelligence-architecture/knowledge-model.md
-      - Manifesto da Inteligência: intelligence-architecture/manifesto.md
-
-  - Modelo Econômico:
-      - Visão Geral: economic-model/index.md
-      - Revisão da Baseline Comercial: economic-model/gem-commercial-plans-baseline-review.md
-      - Revisão do Opportunity Boost: economic-model/gem-opportunity-boost-baseline-review.md
-      - Fundação do Modelo Econômico: economic-model/gem-001-foundation.md
-      - Geração e Fluxos de Valor: economic-model/gem-002-value-generation-and-flows.md
-      - Arquitetura de Receitas: economic-model/gem-003-revenue-architecture.md
-      - Modelo Gratuito e Pago: economic-model/gem-004-free-and-paid-model.md
-      - Planos, Benefícios e Preços: economic-model/gem-004-a1-commercial-plans-pricing-catalog.md
-      - Oferta e Ciclo Comercial: economic-model/gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md
-      - Incentivos e Recompensas: economic-model/gem-005-incentives-and-rewards-model.md
-      - Economia de Parceiros: economic-model/gem-006-partner-economy.md
-      - Papéis Econômicos dos Produtos: economic-model/gem-007-product-economic-roles.md
-      - Opportunity Boost — Modelo Econômico e de Produto: economic-model/gem-007-a1-opportunity-boost-economic-and-product-contract.md
-      - Sustentabilidade e Reinvestimento: economic-model/gem-008-sustainability-and-reinvestment.md
-      - Métricas Econômicas: economic-model/gem-009-economic-metrics.md
-      - Cenários e Modelo Financeiro: economic-model/gem-010-financial-scenarios-and-model.md
-      - Premissas de Precificação: economic-model/gem-010-a1-pricing-assumptions-and-validation.md
-      - Opportunity Boost — Preços, Orçamento e Medição: economic-model/gem-010-a2-opportunity-boost-pricing-budget-and-measurement.md
-
-  - Arquitetura de Negócio:
-      - Visão Geral: business-architecture/index.md
-      - Fundamentos: business-architecture/foundations/index.md
-      - Estratégia:
+  - Estratégia, Mercado e Crescimento:
+      - Estratégia de Negócio:
+          - Visão Geral: business-architecture/index.md
+          - Fundamentos: business-architecture/foundations/index.md
           - Modelo de Transformação do Negócio: business-architecture/strategy/business-transformation-model.md
           - Resultados do Negócio: business-architecture/strategy/business-outcomes.md
           - Registro de Resultados Candidatos: business-architecture/strategy/candidate-outcome-register.md
-          - Matriz de Avaliação de Resultados Candidatos: business-architecture/strategy/candidate-outcome-evaluation-matrix.md
-          - Registro de Decisões sobre Resultados: business-architecture/strategy/candidate-outcome-decision-register.md
+          - Avaliação de Resultados Candidatos: business-architecture/strategy/candidate-outcome-evaluation-matrix.md
+          - Decisões sobre Resultados: business-architecture/strategy/candidate-outcome-decision-register.md
+      - Go-to-Market:
+          - Visão Geral: go-to-market/index.md
+          - Lançamento e Sequenciamento Geográfico: go-to-market/gtm-001-launch-and-geographic-sequencing.md
+          - Aquisição, Comercial e Parcerias: go-to-market/gtm-002-commercial-acquisition-and-partnership-engine.md
+          - Metas de Receita e Crescimento: go-to-market/gtm-003-payer-revenue-and-growth-target-baseline.md
+          - Investimento, Valuation e Investidores: go-to-market/gtm-004-investment-valuation-and-investor-model.md
+          - Métricas e Cadência de Revisão: go-to-market/gtm-005-governance-metrics-and-review-cadence.md
+          - Horizontes e Marcos de Crescimento: go-to-market/gtm-006-target-horizons-and-milestones.md
+          - Internacionalização e Governança Territorial: go-to-market/gtm-007-internationalization-and-territorial-governance.md
+          - Piloto em Portugal — Prontidão: go-to-market/gtm-008-portugal-pilot-readiness-gates.md
 
-  - Governança e Validação:
-      - Pipeline de Consolidação do Conhecimento Arquitetural: governance-framework/architectural-knowledge-consolidation-pipeline.md
-      - Framework de Auditoria Arquitetural: governance-framework/architectural-audit-framework.md
-      - Método de Governança de Resultados: governance-framework/outcome-governance-method.md
-      - Auditoria de Estado e Sequência: project/repository-state-sequencing-audit-2026-07-24.md
-      - Plano de Remediação — Concluído: project/repository-state-navigation-remediation-plan.md
-      - Parecer de Validação Mecânica do Repositório: project/repository-mechanical-validation-2026-07-24.md
-      - Retomada Governada do Repositório: project/governed-resumption-r6.md
-      - Reordenamento Estratégico Executado: project/strategic-resequencing-journey-to-economic-model.md
+  - Economia, Planos e Monetização:
+      - Visão Geral: economic-model/index.md
+      - Valor e Receitas:
+          - Fundação do Modelo Econômico: economic-model/gem-001-foundation.md
+          - Geração e Fluxos de Valor: economic-model/gem-002-value-generation-and-flows.md
+          - Arquitetura de Receitas: economic-model/gem-003-revenue-architecture.md
+      - Planos, Oferta e Precificação:
+          - Modelo Gratuito e Pago: economic-model/gem-004-free-and-paid-model.md
+          - Planos, Benefícios e Preços: economic-model/gem-004-a1-commercial-plans-pricing-catalog.md
+          - Oferta e Ciclo Comercial: economic-model/gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md
+          - Premissas de Precificação: economic-model/gem-010-a1-pricing-assumptions-and-validation.md
+          - Revisão da Baseline Comercial: economic-model/gem-commercial-plans-baseline-review.md
+      - Incentivos, Parceiros e Produtos:
+          - Incentivos e Recompensas: economic-model/gem-005-incentives-and-rewards-model.md
+          - Economia de Parceiros: economic-model/gem-006-partner-economy.md
+          - Papéis Econômicos dos Produtos: economic-model/gem-007-product-economic-roles.md
+          - Opportunity Boost — Modelo Econômico e de Produto: economic-model/gem-007-a1-opportunity-boost-economic-and-product-contract.md
+          - Opportunity Boost — Preços, Orçamento e Medição: economic-model/gem-010-a2-opportunity-boost-pricing-budget-and-measurement.md
+          - Revisão do Opportunity Boost: economic-model/gem-opportunity-boost-baseline-review.md
+      - Sustentabilidade e Métricas:
+          - Sustentabilidade e Reinvestimento: economic-model/gem-008-sustainability-and-reinvestment.md
+          - Métricas Econômicas: economic-model/gem-009-economic-metrics.md
+      - Cenários, Custos e Caixa:
+          - Cenários e Modelo Financeiro: economic-model/gem-010-financial-scenarios-and-model.md
+          - Arquitetura de Cenários Financeiros: economic-model/gem-010-scenario-architecture.md
+          - Custos e Capacidade: economic-model/gem-010-cost-and-capacity-model.md
+          - Caixa, Capital de Giro e Funding: economic-model/gem-010-cash-working-capital-and-funding.md
+          - Reconciliação Financeira Pós-P9: economic-model/gem-post-p9-financial-reconciliation.md
+      - Planejamento Financeiro M0–M6:
+          - Baseline de Custos M0–M6: economic-model/gem-f1-m0-m6-cost-baseline.md
+          - Calibração de Custos Públicos M0–M6: economic-model/gem-f1b-m0-m6-cost-calibration.md
+          - Evidências e Cotações M0–M6: economic-model/gem-f1c-m0-m6-evidence-and-quote-pack.md
+          - Capacidade e Headcount M0–M6: economic-model/gem-f2-m0-m6-capacity-and-headcount-baseline.md
+          - Modelo de Entrega e Custo de Pessoas M0–M6: economic-model/gem-f2b-m0-m6-people-delivery-and-cost-model.md
+          - Assignment e Dedicação M0–M6: economic-model/gem-f2c-m0-m6-assignment-and-dedication-model.md
+          - Prontidão de F1 e F2 para Caixa M0–M6: economic-model/gem-f1f2-f3-readiness-reconciliation.md
+          - Estrutura de Caixa e Capital de Giro M0–M6: economic-model/gem-f3s-m0-m6-cash-and-working-capital-structure.md
+
+  - Arquitetura, Dados e IA:
+      - Arquitetura Corporativa:
+          - Visão Geral: enterprise-architecture/index.md
+          - Modelo de Camadas de Permanência: enterprise-architecture/permanence-layer-model.md
+          - Arquitetura de Referência: reference-architecture/gccm-001.md
+      - Inteligência e IA:
+          - Visão Geral: intelligence-architecture/index.md
+          - Modelo de Conhecimento da IA: intelligence-architecture/knowledge-model.md
+          - Manifesto da Inteligência: intelligence-architecture/manifesto.md
+      - Tecnologia de Grafo:
+          - Neo4j como Tecnologia Primária de Referência: adr/ADR-007-neo4j-primary-graph-reference.md
+
+  - Governança do Repositório:
+      - Estado e Controle:
+          - Painel de Conhecimento: project/knowledge-board.md
+          - Marcos Arquiteturais: project/architectural-milestones.md
+          - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
+      - Consolidação e Histórico:
+          - Adendo — Opportunity Boost: project/canonical-consolidation-matrix-opportunity-boost-addendum.md
+          - Adendo — Validação Funcional do Opportunity Boost: project/canonical-consolidation-matrix-uxa-039-addendum.md
+          - Adendo — Fluxo do Anunciante: project/canonical-consolidation-matrix-uxa-040-addendum.md
+          - Adendo — Validação do Fluxo do Anunciante: project/canonical-consolidation-matrix-uxa-041-addendum.md
+          - Adendo — Cartão Patrocinado e Explicação: project/canonical-consolidation-matrix-uxa-042-addendum.md
+          - Adendo — Validação do Cartão Patrocinado: project/canonical-consolidation-matrix-uxa-043-addendum.md
+          - Adendo — Estados Patrocinados de Lista e Mapa: project/canonical-consolidation-matrix-uxa-044-addendum.md
+          - Adendo — Validação dos Estados Patrocinados: project/canonical-consolidation-matrix-uxa-045-addendum.md
+          - Adendo — Gestão da Campanha Ativa: project/canonical-consolidation-matrix-uxa-046-addendum.md
+          - Histórico — Opportunity Boost: project/changelog-1.62.0-opportunity-boost.md
+          - Histórico — Validação Funcional do Opportunity Boost: project/changelog-1.63.0-uxa-039.md
+          - Histórico — Fluxo do Anunciante: project/changelog-1.64.0-uxa-040.md
+          - Histórico — Validação do Fluxo do Anunciante: project/changelog-1.65.0-uxa-041.md
+          - Histórico — Cartão Patrocinado e Explicação: project/changelog-1.66.0-uxa-042.md
+          - Histórico — Validação do Cartão Patrocinado: project/changelog-1.67.0-uxa-043.md
+          - Histórico — Estados Patrocinados de Lista e Mapa: project/changelog-1.68.0-uxa-044.md
+          - Histórico — Validação dos Estados Patrocinados: project/changelog-1.69.0-uxa-045.md
+          - Histórico — Gestão da Campanha Ativa: project/changelog-1.70.0-uxa-046.md
+      - Métodos de Governança:
+          - Consolidação do Conhecimento Arquitetural: governance-framework/architectural-knowledge-consolidation-pipeline.md
+          - Auditoria Arquitetural: governance-framework/architectural-audit-framework.md
+          - Governança de Resultados: governance-framework/outcome-governance-method.md
+      - Auditorias e Validações do Repositório:
+          - Auditoria de Estado e Sequência: project/repository-state-sequencing-audit-2026-07-24.md
+          - Plano de Remediação — Concluído: project/repository-state-navigation-remediation-plan.md
+          - Parecer de Validação Mecânica: project/repository-mechanical-validation-2026-07-24.md
+          - Retomada Governada: project/governed-resumption-r6.md
+          - Reordenamento Estratégico Executado: project/strategic-resequencing-journey-to-economic-model.md
       - Validações Arquiteturais:
           - Validação da Estrutura Arquitetural: validation/AV-001-gea-structure-validation.md
           - Matriz de Evidências da Fundação: validation/A2-R01-FEM-001-foundation-evidence-matrix.md
