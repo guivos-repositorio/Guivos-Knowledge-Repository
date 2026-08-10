@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-AUDIT-001
 title: Auditoria de Completude Pré-Wireframe da Home Pública
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 parent: GKR-UX-HOME-HANDOFF-001
@@ -111,13 +111,26 @@ A hipótese principal atual inclui:
 - idioma/região por globo;
 - launcher do ecossistema por grade de pontos;
 - Login;
-- Iniciar Jornada como CTA de maior hierarquia.
+- Iniciar Jornada como CTA de maior hierarquia e porta própria da Journey.
 
 Layout, ordem exata, comportamento responsivo e labels finais permanecem para lapidação.
 
 ### 3.12 Launcher do Ecossistema — DECIDIDO EM PRINCÍPIO
 
-Deve permitir acesso rápido a Journey, Travel, Mall, Media, Business, Intelligence e Ads sem transformar o Header em catálogo.
+O inventário conceitualmente aprovado do launcher nesta fase é:
+
+- Travel;
+- Ads;
+- Media;
+- Business;
+- Intelligence;
+- Mall.
+
+Journey **não integra o launcher** na hipótese principal atual.
+
+Journey permanece parte do ecossistema, pode aparecer no Movimento 08 e em acessos contextuais, mas sua porta própria no Header é `Iniciar Jornada`.
+
+A disponibilidade operacional de cada destino ainda precisa ser confirmada em `OPEN-01`.
 
 ### 3.13 Participantes no Header — DECIDIDO EM PRINCÍPIO
 
@@ -191,14 +204,24 @@ Existe repertório de rejeição narrativa, editorial, visual, interativa e de n
 
 ### OPEN-01 — inventário público real de produtos no lançamento
 
-Confirmar para cada manifestação:
+Confirmar o estado público real de cada manifestação:
 
 - pública e operacional;
 - pública em apresentação institucional;
 - futura / não clicável;
 - não deve aparecer ainda.
 
-Abrange Journey, Travel, Mall, Media, Business, Intelligence, Ads e outras legitimamente existentes.
+Para o Header, a classificação precisa cobrir especialmente:
+
+- Travel;
+- Ads;
+- Media;
+- Business;
+- Intelligence;
+- Mall;
+- Journey, considerando que sua porta própria é `Iniciar Jornada` e não o launcher.
+
+A classificação operacional não altera por si só o papel conceitual de cada produto no ecossistema.
 
 ### OPEN-02 — inventário real de páginas institucionais
 
@@ -230,6 +253,8 @@ A taxonomia principal está muito mais madura, mas ainda deve ser validada quant
 - comportamento do launcher;
 - comportamento mobile;
 - relação entre Login e Iniciar Jornada.
+
+A separação `Journey → Iniciar Jornada` versus `demais produtos → launcher` já está decidida em princípio.
 
 ### OPEN-05 — inventário de evidências disponíveis no lançamento
 
@@ -334,8 +359,11 @@ Nenhuma dessas liberdades autoriza desenhar a página `Mapa do Ecossistema`.
 ### Header — composição final
 **MÉDIA / EM LAPIDAÇÃO**
 
-### Launcher do ecossistema — princípio
+### Launcher do ecossistema — composição conceitual
 **ALTA**
+
+### Journey — porta própria `Iniciar Jornada`
+**DECIDIDO EM PRINCÍPIO**
 
 ### Produtos — disponibilidade real de lançamento
 **A CONFIRMAR**
@@ -396,6 +424,8 @@ O designer ou ferramenta generativa não pode inventar:
 - quais claims são comprováveis;
 - a arquitetura da página `Mapa do Ecossistema`.
 
+Também não pode recolocar Journey no launcher sem uma nova decisão explícita de arquitetura.
+
 ---
 
 ## 9. O que o futuro wireframe deve decidir
@@ -427,6 +457,8 @@ A documentação já responde com alta confiança:
 - que prova é legítima;
 - como produtos entram sem dominar;
 - como o Header preserva liberdade;
+- como Journey se separa do launcher por meio de `Iniciar Jornada`;
+- como Travel, Ads, Media, Business, Intelligence e Mall ficam acessíveis no launcher;
 - como Organizações e Coletivos ganham uma porta própria;
 - como idioma/região entra sem poluir a navegação;
 - que `Mapa do Ecossistema` é somente um link no rodapé nesta fase;
