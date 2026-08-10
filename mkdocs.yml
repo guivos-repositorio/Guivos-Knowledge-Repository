@@ -109,56 +109,67 @@ nav:
       - Visão Geral da Experiência: experience-architecture/index.md
       - Jornadas e Telas Atuais:
           - Visão Geral das Jornadas Integradas: journeys/index.md
-          - Galeria Visual de Telas: journeys/screen-gallery.md
-          - Catálogo de Telas: journeys/screen-catalog.md
           - Jornada da Pessoa: journeys/person.md
           - Jornada do Coletivo: journeys/collective.md
           - Jornada da Organização: journeys/organization.md
+          - Galeria Visual de Telas: journeys/screen-gallery.md
+          - Catálogo de Telas: journeys/screen-catalog.md
           - Passagens entre Jornadas: journeys/handoffs.md
           - Cenários: journeys/scenarios.md
           - Registro de Superfícies: journeys/surface-registry.md
           - Registro de Transições: journeys/transition-registry.md
           - Lacunas Conhecidas: journeys/gaps.md
-      - Home e Entrada da Pessoa:
-          - Página Inicial e Início da Jornada: experience-architecture/uxa-020-home-and-journey-entry.md
-          - Validação da Página Inicial Pública: experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md
-          - Wireframe da Página Inicial Pública: experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md
+      - Home Pública:
+          - Fundamentos Funcionais: experience-architecture/uxa-020-home-and-journey-entry.md
+          - Validação Funcional da Home Pública: experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md
+          - Referências Anteriores:
+              - Wireframe Anterior da Home Pública: experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md
+      - Entrada Protegida da Jornada:
           - Validação do Início Protegido: experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md
           - Wireframe Móvel do Início Protegido: experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe.md
-          - Validação do Wireframe Móvel do Início Protegido: experience-architecture/uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation.md
-          - Wireframe Móvel da Compreensão Inicial: experience-architecture/uxa-036-initial-understanding-low-fidelity-wireframe.md
-          - Validação do Wireframe Móvel da Compreensão Inicial: experience-architecture/uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md
+          - Validação do Wireframe Móvel: experience-architecture/uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation.md
+          - Compreensão Inicial — Wireframe Móvel: experience-architecture/uxa-036-initial-understanding-low-fidelity-wireframe.md
+          - Compreensão Inicial — Validação: experience-architecture/uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md
       - Experiência Recorrente da Pessoa:
           - Experiência Diária e Tela Hoje: experience-architecture/uxa-002-daily-experience-and-home.md
           - Wireframe da Tela Hoje: experience-architecture/uxa-006-today-low-fidelity-wireframe.md
           - Validação da Tela Hoje: experience-architecture/uxa-010-today-functional-validation-and-reformulation.md
-      - Explorar e Mapa:
-          - Contrato de Oportunidades e Mapa: experience-architecture/uxa-004-opportunities-organizations-collectives-map.md
-          - Wireframe do Mapa de Oportunidades: experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md
-          - Validação do Mapa de Oportunidades: experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md
-          - Mapa com Localização Desativada: experience-architecture/uxa-026-opportunity-map-location-disabled-state.md
-          - Validação do Mapa sem Localização: experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md
-          - Visualização em Lista do Mapa: experience-architecture/uxa-028-opportunity-map-list-state.md
-          - Validação da Lista do Mapa: experience-architecture/uxa-029-opportunity-map-list-functional-validation-and-reformulation.md
-          - Mapa sem Resultados: experience-architecture/uxa-030-opportunity-map-no-results-state.md
-          - Validação do Mapa sem Resultados: experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md
-          - Referência do Mapa para Computador: experience-architecture/uxa-032-opportunity-map-desktop-reference.md
-          - Validação da Referência para Computador: experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md
-      - Oportunidades:
-          - Detalhe da Oportunidade — Wireframe: experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md
-          - Detalhe da Oportunidade — Validação: experience-architecture/uxa-012-opportunity-detail-functional-validation-and-reformulation.md
-          - Cadastro pela Organização — Wireframe: experience-architecture/uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md
-          - Cadastro da Oportunidade — Validação: experience-architecture/uxa-013-organization-opportunity-registration-functional-validation-and-reformulation.md
+      - Explorar, Mapa e Oportunidades:
+          - Visão Integrada — Publicação, Descoberta, Mapa, Lista e Detalhe: experience-architecture/uxa-098-publication-discovery-map-list-detail-integrated-validation.md
+          - Fundamentos:
+              - Contrato de Oportunidades e Mapa: experience-architecture/uxa-004-opportunities-organizations-collectives-map.md
+          - Mapa e Lista:
+              - Wireframe do Mapa de Oportunidades: experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md
+              - Validação do Mapa de Oportunidades: experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md
+              - Mapa com Localização Desativada: experience-architecture/uxa-026-opportunity-map-location-disabled-state.md
+              - Validação do Mapa sem Localização: experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md
+              - Visualização em Lista do Mapa: experience-architecture/uxa-028-opportunity-map-list-state.md
+              - Validação da Lista do Mapa: experience-architecture/uxa-029-opportunity-map-list-functional-validation-and-reformulation.md
+              - Mapa sem Resultados: experience-architecture/uxa-030-opportunity-map-no-results-state.md
+              - Validação do Mapa sem Resultados: experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md
+              - Referência do Mapa para Computador: experience-architecture/uxa-032-opportunity-map-desktop-reference.md
+              - Validação da Referência para Computador: experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md
+          - Detalhe e Cadastro de Oportunidades:
+              - Detalhe da Oportunidade — Wireframe: experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md
+              - Detalhe da Oportunidade — Validação: experience-architecture/uxa-012-opportunity-detail-functional-validation-and-reformulation.md
+              - Cadastro pela Organização — Wireframe: experience-architecture/uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md
+              - Cadastro da Oportunidade — Validação: experience-architecture/uxa-013-organization-opportunity-registration-functional-validation-and-reformulation.md
       - Opportunity Boost:
-          - Experiência Funcional: experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md
-          - Validação Funcional: experience-architecture/uxa-039-opportunity-boost-functional-validation-and-reformulation.md
-          - Fluxo do Anunciante — Wireframes: experience-architecture/uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md
-          - Fluxo do Anunciante — Validação: experience-architecture/uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md
-          - Cartão Patrocinado e Explicação: experience-architecture/uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md
-          - Cartão Patrocinado — Validação: experience-architecture/uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md
-          - Estados Patrocinados de Lista e Mapa: experience-architecture/uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md
-          - Estados Patrocinados — Validação: experience-architecture/uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md
-          - Gestão da Campanha Ativa: experience-architecture/uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md
+          - Estado Atual e Inspeção:
+              - Configuração e Exposição: journeys/screen-gallery-opportunity-boost-exposure.md
+              - Operação, Relatórios e Estados Residuais: journeys/screen-gallery-opportunity-boost-operations.md
+              - Validação Final dos Estados Residuais: experience-architecture/uxa-099-opportunity-boost-residual-states-functional-validation-and-reformulation.md
+          - Contrato Funcional:
+              - Experiência Funcional: experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md
+              - Validação Funcional: experience-architecture/uxa-039-opportunity-boost-functional-validation-and-reformulation.md
+          - Materializações e Validações Anteriores:
+              - Fluxo do Anunciante — Wireframes: experience-architecture/uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md
+              - Fluxo do Anunciante — Validação: experience-architecture/uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md
+              - Cartão Patrocinado e Explicação: experience-architecture/uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md
+              - Cartão Patrocinado — Validação: experience-architecture/uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md
+              - Estados Patrocinados de Lista e Mapa: experience-architecture/uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md
+              - Estados Patrocinados — Validação: experience-architecture/uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md
+              - Gestão da Campanha Ativa: experience-architecture/uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md
       - Organizações e Coletivos:
           - Fundamentos de Organizações e Coletivos: experience-architecture/uxa-014-organizations-and-collectives-functional-foundation.md
           - Organização — Wireframe: experience-architecture/uxa-015-organization-overview-low-fidelity-wireframe.md
