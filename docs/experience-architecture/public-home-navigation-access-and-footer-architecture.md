@@ -60,6 +60,7 @@ Pode definir acesso para:
 - idioma e região;
 - compartilhamento;
 - login;
+- Iniciar Jornada;
 - link `Mapa do Ecossistema` no rodapé.
 
 Esta especificação não governa os fluxos internos desses destinos.
