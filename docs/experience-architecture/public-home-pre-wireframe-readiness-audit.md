@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-AUDIT-001
 title: Auditoria de Completude Pré-Wireframe da Home Pública
 status: draft
-version: 0.7.0
+version: 0.8.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-10
 parent: GKR-UX-HOME-HANDOFF-001
@@ -20,6 +20,7 @@ depends_on:
   - GKR-UX-HOME-NAV-001
   - GKR-UX-HOME-NAV-002
   - GKR-UX-HOME-NAV-003
+  - GKR-UX-HOME-NAV-004
   - GKR-UX-HOME-SYS-001
   - GKR-UX-HOME-BENCH-001
   - GKR-UX-HOME-BENCH-002
@@ -59,14 +60,14 @@ Já estão suficientemente consolidados:
 - tese da Hero;
 - arquitetura narrativa;
 - onze movimentos;
-- distinção entre Realidade e Autoridade;
 - agrupamento de referência em sete macroexperiências;
+- distinção entre Realidade e Autoridade;
 - transição entre Pertencimento e Ecossistema/Produtos;
-- hierarquia interna do Movimento 08;
 - conteúdo e prova;
 - interação e ritmo;
 - percepção visual;
 - Header Persistente em princípio;
+- comportamento persistente do Header durante scroll e mobile;
 - launcher do ecossistema em princípio;
 - separação da Journey em relação ao launcher;
 - hierarquia Header × Hero × CTAs;
@@ -85,7 +86,7 @@ Journey / Travel / Mall / Media / Business / Intelligence / Ads
 = como o ecossistema ganha forma e capacidade
 ```
 
-A principal fronteira de escopo permanece:
+A principal correção de escopo permanece:
 
 > **disponibilidade de produtos no lançamento, páginas do lançamento, idiomas/regiões do lançamento e demais decisões de GTM não são requisitos da arquitetura conceitual da Home.**
 
@@ -123,8 +124,8 @@ A Home deve transmitir:
 
 Camadas conceituais:
 
-1. `O que se torna possível quando você entra aqui?`;
-2. `Um mundo maior de possibilidades passa a fazer parte do seu.`;
+1. `O que se torna possível quando você entra aqui?`
+2. `Um mundo maior de possibilidades passa a fazer parte do seu.`
 3. `A Guivos conecta pessoas, organizações, conhecimento, oportunidades e experiências para tornar novos caminhos mais visíveis e possíveis.`
 
 A futura copy pode lapidar redação, mas não remover o significado validado.
@@ -161,39 +162,35 @@ Território complementar de prova, experiência e continuidade.
 
 ### 3.8 Onze movimentos não equivalem a onze blocos visuais — DECIDIDO
 
+Os onze movimentos são funções estratégicas, não seções técnicas obrigatórias.
+
+### 3.9 Agrupamento em sete macroexperiências — DECIDIDO EM PRINCÍPIO
+
+A hipótese principal governada por `GKR-UX-HOME-NARR-005` é:
+
+1. Abrir o Horizonte — Movimento 01;
+2. Ver o Real e Perceber a Amplitude — Movimentos 02 + 03;
+3. Perceber a Desconexão e Entender o Papel da Guivos — Movimentos 04 + 05;
+4. Ver o Possível Virar Experiência e Perceber Quem Faz Acontecer — Movimentos 06 + 07;
+5. Compreender a Coerência do Ecossistema — Movimento 08;
+6. Encontrar Substância sem Perder Autonomia — Movimentos 09 + 10;
+7. Reabrir o Horizonte para a Descoberta — Movimento 11.
+
 Regra:
-
-> **Os onze movimentos governam a progressão de significado; a Home não precisa materializá-los como onze blocos separados.**
-
-### 3.9 Mapa de sete macroexperiências — DECIDIDO EM PRINCÍPIO
-
-`GKR-UX-HOME-NARR-005` define a hipótese principal de agrupamento:
-
-1. **Abrir o Horizonte** — Movimento 01;
-2. **Ver o Real e Perceber a Amplitude** — Movimentos 02 + 03;
-3. **Perceber a Desconexão e Entender o Papel da Guivos** — Movimentos 04 + 05;
-4. **Ver o Possível Virar Experiência e Perceber Quem Faz Acontecer** — Movimentos 06 + 07;
-5. **Compreender a Coerência do Ecossistema** — Movimento 08;
-6. **Encontrar Substância sem Perder Autonomia** — Movimentos 09 + 10;
-7. **Reabrir o Horizonte para a Descoberta** — Movimento 11.
-
-Regra sintética:
 
 > **Onze funções. Sete macroexperiências de referência. Uma única narrativa.**
 
-Sete macroexperiências não significam sete seções técnicas obrigatórias. O design decide sua materialização espacial, não reinventa livremente o agrupamento estratégico.
+Sete macroexperiências não equivalem a sete seções técnicas obrigatórias.
 
-### 3.10 Distinção Movimento 02 × Movimento 09 — DECIDIDO EM PRINCÍPIO
+### 3.10 Movimento 02 × Movimento 09 — DECIDIDO
 
-`GKR-UX-HOME-NARR-004` governa:
+Governado por `GKR-UX-HOME-NARR-004`:
 
 > **Movimento 02 prova que o universo de possibilidades é real. Movimento 09 prova que a Guivos possui substância, método e responsabilidade para atuar nesse universo.**
 
 Regra curta:
 
 > **02 = “isso existe”. 09 = “há razões para confiar em como a Guivos lida com isso”.**
-
-A mesma fonte pode apoiar ambos, mas o mesmo bloco de conteúdo não deve ser repetido de forma idêntica.
 
 ### 3.11 Produtos subordinados à ideia maior — DECIDIDO
 
@@ -216,9 +213,29 @@ A arquitetura atual considera:
 - `Login`;
 - `Iniciar Jornada` como CTA de maior hierarquia e porta própria da Journey.
 
-Layout, espaçamento, ordem material final, responsividade e tratamento visual permanecem para a futura etapa de design.
+Layout, espaçamento, ordem material final e tratamento visual permanecem para design.
 
-### 3.14 Launcher do Ecossistema — DECIDIDO EM PRINCÍPIO
+### 3.14 Comportamento persistente do Header — DECIDIDO EM PRINCÍPIO
+
+Governado por `GKR-UX-HOME-NAV-004`.
+
+Regra principal:
+
+> **O Header da Guivos deve permanecer disponível sem permanecer dominante. Ele orienta enquanto a narrativa conduz.**
+
+Consequências:
+
+- o Header não desaparece completamente durante longos trechos como comportamento padrão;
+- pode compactar após a Hero;
+- a Hero continua dominando o primeiro viewport;
+- `Iniciar Jornada` permanece disponível sem pressão crescente;
+- a arquitetura do Header não muda a cada macroexperiência;
+- mobile condensa sem criar uma segunda arquitetura de navegação;
+- controles condensados permanecem, em regra, a uma camada de navegação de distância;
+- launcher e eventual menu geral mantêm semânticas diferentes;
+- contraste e acessibilidade prevalecem sobre transparência estética.
+
+### 3.15 Launcher do Ecossistema — DECIDIDO EM PRINCÍPIO
 
 Inventário conceitualmente aprovado nesta fase:
 
@@ -231,13 +248,13 @@ Inventário conceitualmente aprovado nesta fase:
 
 Journey não integra o launcher na hipótese principal atual.
 
-### 3.15 Journey no Header — DECIDIDO EM PRINCÍPIO
+### 3.16 Journey no Header — DECIDIDO EM PRINCÍPIO
 
 > **Journey permanece parte do ecossistema, mas sua porta principal no Header é `Iniciar Jornada`, e não o launcher.**
 
 Journey continua podendo aparecer no Movimento 08 e em acessos contextuais quando houver fundamento legítimo.
 
-### 3.16 Participantes no Header — DECIDIDO EM PRINCÍPIO
+### 3.17 Participantes no Header — DECIDIDO EM PRINCÍPIO
 
 A Pessoa é atendida naturalmente pela própria Home e por `Iniciar Jornada`.
 
@@ -245,7 +262,7 @@ Organizações e Coletivos recebem uma única porta dedicada de aprofundamento.
 
 A página de destino permanece fora desta frente.
 
-### 3.17 Idioma e região — DECIDIDO EM PRINCÍPIO
+### 3.18 Idioma e região — DECIDIDO EM PRINCÍPIO
 
 Existe controle compacto no Header, conceitualmente representado por globo.
 
@@ -253,19 +270,19 @@ Idioma e região são preferências distintas.
 
 A superfície de seleção será materializada futuramente.
 
-### 3.18 Compartilhar — DECIDIDO EM PRINCÍPIO
+### 3.19 Compartilhar — DECIDIDO EM PRINCÍPIO
 
 Existe intenção de controle utilitário de compartilhamento no Header.
 
 Comportamento técnico não é definido nesta frente.
 
-### 3.19 Mapa do Ecossistema — DECIDIDO NO LIMITE DESTA FRENTE
+### 3.20 Mapa do Ecossistema — DECIDIDO NO LIMITE DESTA FRENTE
 
 > **Nesta fase, `Mapa do Ecossistema` é somente um link no rodapé.**
 
 A página, sua arquitetura, categorias, conteúdo e acessos internos ficam fora da frente atual.
 
-### 3.20 Header × Hero × CTAs — DECIDIDO EM PRINCÍPIO
+### 3.21 Header × Hero × CTAs — DECIDIDO EM PRINCÍPIO
 
 A relação de intenção fica definida:
 
@@ -275,7 +292,7 @@ A Hero não duplica `Iniciar Jornada` como CTA dominante na hipótese principal.
 
 A copy final e a forma material do CTA de descoberta permanecem abertas.
 
-### 3.21 Movimento 07 → 08 — DECIDIDO EM PRINCÍPIO
+### 3.22 Movimento 07 → 08 — DECIDIDO EM PRINCÍPIO
 
 A transição entre pertencimento e produtos está definida por `GKR-UX-HOME-NARR-003`.
 
@@ -291,19 +308,11 @@ Organização → Business
 Coletivo → produto específico
 ```
 
-Consequências:
-
-- Pessoa não é sinônimo de Journey;
-- Organização não é sinônimo de Business;
-- Coletivo mantém papel estrutural sem depender de produto homônimo;
-- um mesmo participante pode se relacionar com diferentes capacidades conforme contexto;
-- produtos materializam capacidades e não classificam participantes.
-
 Regra de sequência:
 
 > **Pertencimento primeiro. Materialização depois. Segmentação por produto, nunca.**
 
-### 3.22 Movimento 08 — hierarquia do ecossistema — DECIDIDO EM PRINCÍPIO
+### 3.23 Movimento 08 — hierarquia do ecossistema — DECIDIDO EM PRINCÍPIO
 
 A hierarquia narrativa é governada por `GKR-UX-HOME-NARR-002`:
 
@@ -315,7 +324,7 @@ Regra:
 
 > **O Movimento 08 não é uma vitrine de produtos. É uma explicação da coerência do ecossistema.**
 
-### 3.23 Sistema de conteúdo — DECIDIDO
+### 3.24 Sistema de conteúdo — DECIDIDO
 
 Classes:
 
@@ -325,39 +334,39 @@ Classes:
 - ecossistema;
 - navegação/ação.
 
-### 3.24 Hierarquia de prova — DECIDIDO
+### 3.25 Hierarquia de prova — DECIDIDO
 
 Prova direta > história documentada > evidência institucional > métrica > depoimento > afirmação institucional.
 
-### 3.25 Modelo das histórias — DECIDIDO
+### 3.26 Modelo das histórias — DECIDIDO
 
 Contexto → possibilidade → decisão → experiência → consequência → continuidade.
 
-### 3.26 Conteúdo vivo sem feed — DECIDIDO
+### 3.27 Conteúdo vivo sem feed — DECIDIDO
 
 Camadas permanente, editorial e temporal.
 
-### 3.27 Guivos Media como fonte editorial futura — DECIDIDO CONCEITUALMENTE
+### 3.28 Guivos Media como fonte editorial futura — DECIDIDO CONCEITUALMENTE
 
 Não existe autorização de integração técnica nesta frente.
 
-### 3.28 Interação e movimento — DECIDIDO EM PRINCÍPIO
+### 3.29 Interação e movimento — DECIDIDO EM PRINCÍPIO
 
 Movimento deve revelar, conectar e dar continuidade sem substituir clareza.
 
-### 3.29 Autonomia do scroll — DECIDIDO
+### 3.30 Autonomia do scroll — DECIDIDO
 
 Nenhuma experiência pode obrigar o visitante a assistir animações ou aguardar narrativa bloqueante.
 
-### 3.30 Desktop/mobile — DECIDIDO EM PRINCÍPIO
+### 3.31 Desktop/mobile — DECIDIDO EM PRINCÍPIO
 
-Mesma tese e hierarquia; composição pode variar.
+Mesma tese, mesma arquitetura de intenção e mesma hierarquia; composição e densidade podem variar.
 
-### 3.31 Percepção visual — DECIDIDO
+### 3.32 Percepção visual — DECIDIDO
 
 > **Futuro sem ficção. Tecnologia sem frieza. Sofisticação sem elitismo. Escala sem ruído. Humanidade sem clichê.**
 
-### 3.32 Acessibilidade e resiliência — DECIDIDO EM PRINCÍPIO
+### 3.33 Acessibilidade e resiliência — DECIDIDO EM PRINCÍPIO
 
 A experiência deve funcionar com:
 
@@ -370,7 +379,7 @@ A experiência deve funcionar com:
 - responsividade;
 - internacionalização.
 
-### 3.33 Anti-padrões — DECIDIDO
+### 3.34 Anti-padrões — DECIDIDO
 
 Existe repertório de rejeição narrativa, editorial, visual, interativa e de navegação.
 
@@ -380,17 +389,22 @@ Existe repertório de rejeição narrativa, editorial, visual, interativa e de n
 
 ### DESIGN-01 — composição material do Header
 
-Definir futuramente:
+A futura etapa poderá definir:
 
-- ordem material dos elementos;
+- altura inicial e compacta;
+- breakpoint;
+- ordem material final dentro dos núcleos aprovados;
 - espaçamentos;
-- comportamento sticky/persistent exato;
-- responsividade;
-- apresentação do launcher;
-- relação visual entre Login e `Iniciar Jornada`;
-- tratamento dos ícones de compartilhar e globo.
+- transparência ou superfície sólida;
+- formato de compactação;
+- tratamento visual de Login e `Iniciar Jornada`;
+- formato do launcher;
+- tipo de navegação mobile;
+- exposição direta ou em primeira camada de Login, globo e launcher no mobile;
+- animação específica;
+- comportamento técnico sticky/fixed equivalente.
 
-A arquitetura semântica já está definida em princípio.
+Não poderá redefinir a persistência semântica e os limites estabelecidos em `GKR-UX-HOME-NAV-004`.
 
 ### DESIGN-02 — CTA da Hero
 
@@ -403,7 +417,7 @@ A futura etapa de copy/design pode explorar:
 - forma visual;
 - mecanismo material de continuidade dentro da própria Home.
 
-A relação com `Iniciar Jornada` já está definida por `GKR-UX-HOME-NAV-003` e não deve ser reinventada pelo wireframe.
+A relação com `Iniciar Jornada` já está definida por `GKR-UX-HOME-NAV-003`.
 
 ### DESIGN-03 — estratégia material de mídia da Hero
 
@@ -419,20 +433,19 @@ A Hero deve funcionar mesmo sem mídia carregada.
 
 ### DESIGN-04 — materialização das sete macroexperiências
 
-O agrupamento estratégico de referência já está definido por `GKR-UX-HOME-NARR-005`.
+A hipótese de agrupamento estratégico já está definida por `GKR-UX-HOME-NARR-005`.
 
 O design poderá decidir:
 
-- quantas regiões técnicas existirão;
-- como as sete macroexperiências se conectam espacialmente;
-- se uma macroexperiência usa uma ou mais composições internas;
+- quantas regiões técnicas serão necessárias;
+- como cada macroexperiência ocupa o espaço;
+- continuidade entre regiões;
 - densidade;
 - alternância de ritmo;
 - transições;
-- relação entre texto, mídia e prova;
-- equivalência desktop/mobile.
+- relação entre texto, mídia e prova.
 
-O wireframe não deve voltar à premissa de que qualquer combinação entre os onze movimentos é igualmente válida.
+Não deverá reorganizar arbitrariamente os onze movimentos como se qualquer combinação fosse equivalente.
 
 ### DESIGN-05 — materialização dos slots de prova
 
@@ -446,8 +459,6 @@ Exemplos:
 - métrica com fonte/período;
 - conteúdo editorial;
 - fallback quando a prova não estiver disponível.
-
-A distribuição deve preservar `GKR-UX-HOME-NARR-004`: Movimento 02 e Movimento 09 possuem funções de prova diferentes.
 
 ### DESIGN-06 — percepção visual material
 
@@ -531,14 +542,14 @@ Antes de publicação, a versão concreta deverá ser reconciliada com verdade o
 ### Hero — significado
 **ALTA**
 
-### Narrativa — onze movimentos
+### Narrativa
 **ALTA**
 
-### Agrupamento — sete macroexperiências
+### Agrupamento em macroexperiências
 **ALTA EM PRINCÍPIO**
 
-### Movimento 02 × Movimento 09
-**ALTA EM PRINCÍPIO**
+### Distinção Realidade × Autoridade
+**ALTA**
 
 ### Transição Pertencimento → Ecossistema
 **ALTA EM PRINCÍPIO**
@@ -551,6 +562,9 @@ Antes de publicação, a versão concreta deverá ser reconciliada com verdade o
 
 ### Header — arquitetura conceitual
 **ALTA**
+
+### Header — comportamento persistente / scroll / mobile
+**ALTA EM PRINCÍPIO**
 
 ### Header — materialização visual
 **PARA DESIGN**
@@ -597,13 +611,11 @@ Antes de iniciar um wireframe governado da Home, exigir apenas:
 1. autorização explícita para entrar na etapa de materialização;
 2. confirmação de que o escopo continua restrito à Home pública;
 3. adoção dos documentos desta frente como baseline de trabalho;
-4. preservação da arquitetura dos onze movimentos e do agrupamento de referência em sete macroexperiências;
-5. preservação da distinção Movimento 02 × Movimento 09;
-6. preservação da transição 07 → 08 e da hierarquia do Movimento 08;
-7. preservação da arquitetura vigente do Header;
-8. preservação dos limites de prova, autonomia e privacidade;
-9. definição do objetivo da rodada de wireframe — exploração, comparação ou convergência;
-10. rastreabilidade entre proposta visual e requisitos da arquitetura.
+4. preservação da arquitetura narrativa, das sete macroexperiências, da transição 07 → 08, do Movimento 08 e do Header vigentes;
+5. preservação do comportamento do Header estabelecido em `GKR-UX-HOME-NAV-004`;
+6. preservação dos limites de prova, autonomia e privacidade;
+7. definição do objetivo da rodada de wireframe — exploração, comparação ou convergência;
+8. rastreabilidade entre proposta visual e requisitos da arquitetura.
 
 Não é necessário, para esse gate:
 
@@ -624,8 +636,8 @@ O designer ou ferramenta generativa não pode redefinir:
 - a pergunta-mãe;
 - os cinco pilares;
 - os onze movimentos;
-- o agrupamento estratégico de referência em sete macroexperiências;
-- a distinção `Movimento 02 — realidade ≠ Movimento 09 — autoridade`;
+- o agrupamento estratégico das sete macroexperiências sem justificativa e revisão de arquitetura;
+- a distinção Movimento 02 × Movimento 09;
 - o papel de Pessoas, Organizações e Coletivos;
 - a separação `participante ≠ produto`;
 - a regra `Participantes respondem “quem”; produtos e capacidades respondem “como”`;
@@ -634,6 +646,7 @@ O designer ou ferramenta generativa não pode redefinir:
 - Journey como porta própria `Iniciar Jornada` no Header;
 - o inventário conceitual vigente do launcher;
 - a hierarquia Journey / manifestações especializadas / Intelligence no Movimento 08;
+- a persistência semântica do Header e seus limites de comportamento;
 - a existência do link `Mapa do Ecossistema` no rodapé;
 - regras de autonomia;
 - limites de personalização pública;
@@ -647,18 +660,19 @@ Também não poderá inventar uma estratégia de lançamento para preencher lacu
 
 A futura etapa deverá propor, entre outros:
 
-- melhor materialização espacial das sete macroexperiências;
-- quantidade de regiões técnicas necessária para essa materialização;
 - estrutura espacial;
+- quantidade de regiões técnicas necessárias para materializar as sete macroexperiências;
 - densidade;
-- hierarquia;
+- hierarquia visual;
 - posição material dos acessos definidos;
+- altura e compactação do Header;
+- comportamento visual do Header entre Hero e narrativa;
+- solução responsiva mobile dentro da hierarquia vigente;
 - relação Header / narrativa / rodapé;
 - tradução visual da passagem `quem participa → como o ecossistema ganha forma`;
 - forma de representar produtos sem catálogo;
-- distribuição material das provas respeitando Realidade × Autoridade;
+- slots e distribuição de prova;
 - Hero com fallback;
-- comportamento desktop/mobile;
 - estados sem mídia;
 - arquitetura preliminar de componentes;
 - princípios de movimento;
@@ -672,33 +686,32 @@ Uma proposta futura deverá responder:
 
 1. O visitante entende a ideia da Guivos antes dos produtos?
 2. A página responde progressivamente à pergunta `O que se torna possível quando você entra aqui?`?
-3. Os onze movimentos continuam semanticamente presentes mesmo sem onze seções?
-4. As sete macroexperiências de referência são reconhecíveis como progressão de intenção?
-5. A passagem Hero → Realidade é clara?
-6. Realidade + Amplitude expandem o universo sem virar feed ou catálogo?
-7. Desconexão + Conexão apresentam problema e papel da Guivos sem narrativa salvadora?
-8. Do Possível ao Vivido + Pertencimento preservam protagonismo dos participantes?
-9. A transição 07 → 08 evita qualquer mapeamento automático de participante para produto?
-10. O Movimento 08 diferencia Journey, manifestações especializadas e Intelligence sem exigir arquitetura técnica?
-11. O Movimento 02 mostra que o universo existe sem virar propaganda institucional?
-12. O Movimento 09 demonstra substância da Guivos sem repetir emocionalmente o Movimento 02?
-13. Autoridade é equilibrada por autonomia e limites?
-14. A página faz a Guivos parecer ecossistema ou catálogo?
-15. Existe amplitude sem promessa vazia?
-16. Existe pertencimento?
-17. Pessoas, Organizações e Coletivos possuem papel compreensível?
-18. A Guivos aparece como facilitadora, não como heroína absoluta?
-19. A tecnologia está subordinada à consequência humana?
-20. A proposta poderia ser confundida com marketplace, IA, coaching ou portal de benefícios?
-21. A página parece global sem ser genérica?
-22. Existe sofisticação sem complexidade?
-23. O design continua funcionando sem vídeo e sem animação?
-24. O Header oferece acesso sem transformar a marca em catálogo?
-25. O launcher preserva Journey fora de sua grade na hipótese vigente?
-26. O Movimento 11 permanece encerramento narrativo próprio e não é absorvido pelo Footer?
-27. `Mapa do Ecossistema` continua apenas como link no rodapé desta frente?
-28. A solução desperta vontade de descobrir?
-29. A proposta é reconhecivelmente Guivos e não uma cópia de benchmark?
+3. A narrativa faz a realidade aparecer cedo sem depender de prova fictícia?
+4. A Guivos parece ecossistema ou catálogo?
+5. Existe amplitude sem promessa vazia?
+6. Existe pertencimento?
+7. Pessoas, Organizações e Coletivos possuem papel compreensível?
+8. A Guivos aparece como facilitadora, não como heroína absoluta?
+9. A autonomia permanece perceptível?
+10. A tecnologia está subordinada à consequência humana?
+11. A proposta poderia ser confundida com marketplace, IA, coaching ou portal de benefícios?
+12. A página parece global sem ser genérica?
+13. Existe sofisticação sem complexidade?
+14. O design continua funcionando sem vídeo e sem animação?
+15. Os produtos entram narrativamente no momento correto?
+16. O Header oferece acesso sem transformar a marca em catálogo?
+17. O Header permanece previsível durante a rolagem sem dominar a narrativa?
+18. A compactação do Header reduz espaço sem remover caminhos essenciais?
+19. No mobile, os acessos condensados permanecem a uma camada de distância?
+20. Launcher e navegação geral preservam funções diferentes?
+21. O launcher preserva Journey fora de sua grade na hipótese vigente?
+22. A transição 07 → 08 evita qualquer mapeamento automático de participante para produto?
+23. O Movimento 08 diferencia Journey, manifestações especializadas e Intelligence sem exigir arquitetura técnica?
+24. Movimento 02 e Movimento 09 cumprem funções diferentes de prova?
+25. As sete macroexperiências preservam os onze significados sem parecer onze seções?
+26. `Mapa do Ecossistema` continua apenas como link no rodapé desta frente?
+27. A solução desperta vontade de descobrir?
+28. A proposta é reconhecivelmente Guivos e não uma cópia de benchmark?
 
 ---
 
@@ -710,12 +723,13 @@ A documentação já responde com alta confiança:
 - qual percepção de marca deve gerar;
 - como a Hero abre a narrativa;
 - como os onze movimentos constroem compreensão;
-- como esses onze movimentos podem ser organizados em sete macroexperiências sem virarem onze caixas;
-- por que Realidade e Autoridade possuem funções de prova diferentes;
+- como esses movimentos se agrupam em sete macroexperiências de referência;
+- como Realidade e Autoridade cumprem papéis diferentes;
 - como Pertencimento conduz a Ecossistema sem segmentar participantes por produto;
 - por que produtos não dominam a abertura;
 - como o Movimento 08 explica coerência em vez de portfólio;
 - como o Header oferece acessos sem catalogar a marca;
+- como o Header se comporta durante scroll e mobile sem desaparecer ou dominar;
 - como Journey se diferencia do launcher;
 - como Organizações e Coletivos aparecem na navegação;
 - como idioma/região entra no Header;
