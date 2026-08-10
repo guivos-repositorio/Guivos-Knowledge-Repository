@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-AUDIT-001
 title: Auditoria de Completude Pré-Wireframe da Home Pública
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-10
 parent: GKR-UX-HOME-HANDOFF-001
 depends_on:
   - UXA-020
@@ -18,6 +18,7 @@ depends_on:
   - GKR-UX-HOME-SYS-001
   - GKR-UX-HOME-BENCH-001
   - GKR-UX-HOME-BENCH-002
+  - GKR-UX-HOME-GTM-BOUNDARY-001
 normative: false
 ---
 
@@ -25,16 +26,19 @@ normative: false
 
 ## 1. Objetivo
 
-Esta auditoria verifica se a documentação da Home pública já possui definição suficiente para iniciar futura materialização sem obrigar designers ou ferramentas generativas a reinventar decisões estratégicas.
+Esta auditoria verifica se a documentação da Home pública possui definição estratégica suficiente para uma futura materialização conceitual sem obrigar designers, equipes ou ferramentas generativas a reinventar decisões de marca e experiência.
 
-A auditoria não autoriza wireframe, Figma, UI ou implementação.
+A auditoria não autoriza wireframe, Figma, UI, protótipo ou implementação.
+
+Ela também não audita prontidão de lançamento, disponibilidade operacional dos produtos ou estratégia de Marketing/GTM.
 
 Classificações:
 
 - **DECIDIDO** — direção suficientemente consolidada;
-- **DECIDIDO COM LAPIDAÇÃO POSTERIOR** — significado fechado, redação/forma ainda aberta;
-- **ABERTO PRÉ-WIREFRAME** — precisa ser resolvido antes de desenhar;
-- **PODE SER RESOLVIDO DURANTE DESIGN** — liberdade legítima da futura etapa visual.
+- **DECIDIDO EM PRINCÍPIO** — arquitetura/semântica definida, com materialização ainda aberta;
+- **DECIDIDO COM LAPIDAÇÃO POSTERIOR** — significado preservado, copy ou forma ainda aberta;
+- **PODE SER RESOLVIDO DURANTE DESIGN** — liberdade legítima da futura etapa visual;
+- **FORA DO ESCOPO / ETAPA POSTERIOR** — não deve bloquear o wireframe conceitual.
 
 ---
 
@@ -42,25 +46,52 @@ Classificações:
 
 Estado geral:
 
-> **A HOME ESTÁ ESTRATEGICAMENTE MADURA, MAS AINDA NÃO DEVE SER LIBERADA PARA WIREFRAME FINAL.**
+> **A HOME ESTÁ ESTRATEGICAMENTE MADURA PARA UMA FUTURA EXPLORAÇÃO CONTROLADA DE WIREFRAME, MAS ESSA MATERIALIZAÇÃO AINDA DEPENDE DE AUTORIZAÇÃO EXPLÍCITA.**
 
-A tese, narrativa, hierarquia de significado, conteúdo, prova, navegação, percepção visual, interação e limites estão suficientemente consolidados.
+Já estão suficientemente consolidados:
 
-Ainda existem decisões de entrada operacional que devem ser fechadas para impedir que o primeiro wireframe use placeholders ambíguos ou invente destinos, provas e prioridades.
+- posicionamento;
+- tese da Hero;
+- arquitetura narrativa;
+- onze movimentos;
+- conteúdo e prova;
+- interação e ritmo;
+- percepção visual;
+- Header Persistente em princípio;
+- launcher do ecossistema em princípio;
+- separação da Journey em relação ao launcher;
+- acesso de Organizações e Coletivos;
+- idioma/região;
+- link `Mapa do Ecossistema` no rodapé;
+- limites de autonomia, privacidade e não simulação.
+
+A principal correção desta versão é:
+
+> **disponibilidade de produtos no lançamento, páginas do lançamento, idiomas/regiões do lançamento e demais decisões de GTM não são requisitos da arquitetura conceitual da Home.**
+
+Esses temas pertencem à futura estratégia de Marketing/GTM e aos gates de publicação/produção, conforme `GKR-UX-HOME-GTM-BOUNDARY-001`.
 
 Conclusão:
 
-> **pronta para consolidação de requisitos; ainda não pronta para materialização visual governada.**
+> **estratégia suficientemente definida para futura materialização conceitual; lançamento e GTM permanecem deliberadamente fora desta frente.**
 
 ---
 
-## 3. Decisões já consolidadas
+## 3. Decisões consolidadas
 
 ### 3.1 Posicionamento — DECIDIDO
 
-A Home deve transmitir futuro, possibilidade, simplicidade, confiança, humanidade, sofisticação e escala global.
+A Home deve transmitir:
 
-A Guivos deve parecer maior que a soma dos produtos.
+- futuro;
+- possibilidade;
+- simplicidade;
+- confiança;
+- humanidade;
+- sofisticação sem complexidade;
+- tecnologia sem frieza;
+- escala global;
+- ecossistema maior que a soma de seus produtos.
 
 ### 3.2 Pergunta-mãe — DECIDIDO COM LAPIDAÇÃO POSTERIOR
 
@@ -68,17 +99,27 @@ A Guivos deve parecer maior que a soma dos produtos.
 
 É a direção principal da Hero.
 
-### 3.3 Camadas da Hero — DECIDIDO COM LAPIDAÇÃO POSTERIOR
+### 3.3 Sistema semântico da Hero — DECIDIDO COM LAPIDAÇÃO POSTERIOR
 
-Pergunta, amplitude/pertencimento e concretização do papel da Guivos estão definidas semanticamente.
+Camadas conceituais:
+
+1. `O que se torna possível quando você entra aqui?`
+2. `Um mundo maior de possibilidades passa a fazer parte do seu.`
+3. `A Guivos conecta pessoas, organizações, conhecimento, oportunidades e experiências para tornar novos caminhos mais visíveis e possíveis.`
+
+A futura copy pode lapidar redação, mas não remover o significado validado.
 
 ### 3.4 Assinatura `Do possível ao vivido` — DECIDIDO
 
-Território editorial e de prova definido.
+Território complementar de prova, experiência e continuidade.
 
 ### 3.5 Cinco pilares — DECIDIDO
 
-Possibilidade, pertencimento, conexão, realidade e autonomia.
+- possibilidade;
+- pertencimento;
+- conexão;
+- realidade;
+- autonomia.
 
 ### 3.6 Cadeia conceitual — DECIDIDO
 
@@ -86,38 +127,48 @@ Possibilidade, pertencimento, conexão, realidade e autonomia.
 
 ### 3.7 Onze movimentos narrativos — DECIDIDO
 
-As funções e transições estão especificadas.
+1. Hero;
+2. Possibilidades Reais;
+3. Amplitude;
+4. Desconexão;
+5. Guivos / Conexão;
+6. Do Possível ao Vivido;
+7. Pertencimento;
+8. Ecossistema / Produtos;
+9. Autoridade;
+10. Autonomia e Confiança;
+11. Descoberta.
 
-### 3.8 Onze movimentos não equivalem a onze blocos — DECIDIDO
+### 3.8 Onze movimentos não equivalem a onze blocos visuais — DECIDIDO
 
 Design pode combinar funções sem eliminar significado.
 
-### 3.9 Produtos depois da ideia maior — DECIDIDO
+### 3.9 Produtos subordinados à ideia maior — DECIDIDO
 
-Produtos não dominam a abertura.
+Produtos não dominam a abertura da Home.
 
-### 3.10 Produtos acessíveis desde o início — DECIDIDO
+### 3.10 Acesso e protagonismo são dimensões diferentes — DECIDIDO
 
-`acessível desde o início ≠ explicado desde o início ≠ protagonista desde o início`.
+> **acessível desde o início ≠ explicado desde o início ≠ protagonista desde o início.**
 
 ### 3.11 Header Persistente — DECIDIDO EM PRINCÍPIO
 
-A hipótese principal atual inclui:
+A arquitetura atual considera:
 
 - Guivos / Home;
-- Sobre;
-- Organizações e Coletivos;
+- `Sobre`;
+- `Organizações e Coletivos`;
 - compartilhar;
 - idioma/região por globo;
 - launcher do ecossistema por grade de pontos;
-- Login;
-- Iniciar Jornada como CTA de maior hierarquia e porta própria da Journey.
+- `Login`;
+- `Iniciar Jornada` como CTA de maior hierarquia e porta própria da Journey.
 
-Layout, ordem exata, comportamento responsivo e labels finais permanecem para lapidação.
+Layout, espaçamento, ordem material final, responsividade e tratamento visual permanecem para a futura etapa de design.
 
 ### 3.12 Launcher do Ecossistema — DECIDIDO EM PRINCÍPIO
 
-O inventário conceitualmente aprovado do launcher nesta fase é:
+Inventário conceitualmente aprovado nesta fase:
 
 - Travel;
 - Ads;
@@ -126,222 +177,250 @@ O inventário conceitualmente aprovado do launcher nesta fase é:
 - Intelligence;
 - Mall.
 
-Journey **não integra o launcher** na hipótese principal atual.
+Journey não integra o launcher na hipótese principal atual.
 
-Journey permanece parte do ecossistema, pode aparecer no Movimento 08 e em acessos contextuais, mas sua porta própria no Header é `Iniciar Jornada`.
+### 3.13 Journey no Header — DECIDIDO EM PRINCÍPIO
 
-A disponibilidade operacional de cada destino ainda precisa ser confirmada em `OPEN-01`.
+> **Journey permanece parte do ecossistema, mas sua porta principal no Header é `Iniciar Jornada`, e não o launcher.**
 
-### 3.13 Participantes no Header — DECIDIDO EM PRINCÍPIO
+Journey continua podendo aparecer no Movimento 08 e em acessos contextuais quando houver fundamento legítimo.
 
-A Pessoa é naturalmente atendida pela própria Home e por `Iniciar Jornada`.
+### 3.14 Participantes no Header — DECIDIDO EM PRINCÍPIO
+
+A Pessoa é atendida naturalmente pela própria Home e por `Iniciar Jornada`.
 
 Organizações e Coletivos recebem uma única porta dedicada de aprofundamento.
 
-A página de destino não é tratada nesta frente.
+A página de destino permanece fora desta frente.
 
-### 3.14 Idioma e região — DECIDIDO EM PRINCÍPIO
+### 3.15 Idioma e região — DECIDIDO EM PRINCÍPIO
 
 Existe controle compacto no Header, conceitualmente representado por globo.
 
 Idioma e região são preferências distintas.
 
-A superfície detalhada de seleção ainda será materializada futuramente.
+A superfície de seleção será materializada futuramente.
 
-### 3.15 Mapa do Ecossistema — DECIDIDO NO LIMITE DESTA FRENTE
+### 3.16 Compartilhar — DECIDIDO EM PRINCÍPIO
+
+Existe intenção de controle utilitário de compartilhamento no Header.
+
+Comportamento técnico não é definido nesta frente.
+
+### 3.17 Mapa do Ecossistema — DECIDIDO NO LIMITE DESTA FRENTE
 
 > **Nesta fase, `Mapa do Ecossistema` é somente um link no rodapé.**
 
 A página, sua arquitetura, categorias, conteúdo e acessos internos ficam fora da frente atual.
 
-### 3.16 Sistema de conteúdo — DECIDIDO
+### 3.18 Sistema de conteúdo — DECIDIDO
 
-Institucional, evidência real, editorial, ecossistema e navegação/ação.
+Classes:
 
-### 3.17 Hierarquia de prova — DECIDIDO
+- institucional permanente;
+- evidência real;
+- editorial;
+- ecossistema;
+- navegação/ação.
+
+### 3.19 Hierarquia de prova — DECIDIDO
 
 Prova direta > história documentada > evidência institucional > métrica > depoimento > afirmação institucional.
 
-### 3.18 Modelo das histórias — DECIDIDO
+### 3.20 Modelo das histórias — DECIDIDO
 
 Contexto → possibilidade → decisão → experiência → consequência → continuidade.
 
-### 3.19 Conteúdo vivo sem feed — DECIDIDO
+### 3.21 Conteúdo vivo sem feed — DECIDIDO
 
 Camadas permanente, editorial e temporal.
 
-### 3.20 Guivos Media como fonte editorial futura — DECIDIDO CONCEITUALMENTE
+### 3.22 Guivos Media como fonte editorial futura — DECIDIDO CONCEITUALMENTE
 
 Não existe autorização de integração técnica nesta frente.
 
-### 3.21 Interação e movimento — DECIDIDO EM PRINCÍPIO
+### 3.23 Interação e movimento — DECIDIDO EM PRINCÍPIO
 
 Movimento deve revelar, conectar e dar continuidade sem substituir clareza.
 
-### 3.22 Autonomia do scroll — DECIDIDO
+### 3.24 Autonomia do scroll — DECIDIDO
 
-Nenhuma experiência pode obrigar o visitante a assistir animações.
+Nenhuma experiência pode obrigar o visitante a assistir animações ou aguardar narrativa bloqueante.
 
-### 3.23 Desktop/mobile — DECIDIDO EM PRINCÍPIO
+### 3.25 Desktop/mobile — DECIDIDO EM PRINCÍPIO
 
 Mesma tese e hierarquia; composição pode variar.
 
-### 3.24 Percepção visual — DECIDIDO
+### 3.26 Percepção visual — DECIDIDO
 
 > **Futuro sem ficção. Tecnologia sem frieza. Sofisticação sem elitismo. Escala sem ruído. Humanidade sem clichê.**
 
-### 3.25 Acessibilidade e resiliência — DECIDIDO EM PRINCÍPIO
+### 3.27 Acessibilidade e resiliência — DECIDIDO EM PRINCÍPIO
 
-A experiência deve funcionar com teclado, leitor de tela, redução de movimento, mídia indisponível e baixa conectividade.
+A experiência deve funcionar com:
 
-### 3.26 Anti-padrões — DECIDIDO
+- teclado;
+- leitor de tela;
+- foco visível;
+- redução de movimento;
+- mídia indisponível;
+- baixa conectividade;
+- responsividade;
+- internacionalização.
+
+### 3.28 Anti-padrões — DECIDIDO
 
 Existe repertório de rejeição narrativa, editorial, visual, interativa e de navegação.
 
 ---
 
-## 4. Decisões abertas que devem ser fechadas antes do wireframe
+## 4. Decisões que podem ser resolvidas durante design/copy
 
-### OPEN-01 — inventário público real de produtos no lançamento
+Estes itens não exigem estratégia de lançamento para serem explorados:
 
-Confirmar o estado público real de cada manifestação:
+### DESIGN-01 — composição material do Header
 
-- pública e operacional;
-- pública em apresentação institucional;
-- futura / não clicável;
-- não deve aparecer ainda.
+Definir futuramente:
 
-Para o Header, a classificação precisa cobrir especialmente:
+- ordem material dos elementos;
+- espaçamentos;
+- comportamento sticky/persistent exato;
+- responsividade;
+- apresentação do launcher;
+- relação visual entre Login e `Iniciar Jornada`;
+- tratamento dos ícones de compartilhar e globo.
 
-- Travel;
-- Ads;
-- Media;
-- Business;
-- Intelligence;
-- Mall;
-- Journey, considerando que sua porta própria é `Iniciar Jornada` e não o launcher.
+A arquitetura semântica já está definida em princípio.
 
-A classificação operacional não altera por si só o papel conceitual de cada produto no ecossistema.
+### DESIGN-02 — CTA da Hero
 
-### OPEN-02 — inventário real de páginas institucionais
+A função está definida como continuidade de descoberta.
 
-Confirmar quais páginas existirão inicialmente, por exemplo:
+A futura etapa de copy/design pode explorar:
 
-- Sobre;
-- Organizações e Coletivos;
-- Imprensa;
-- Trabalhe Conosco;
-- Central de Ajuda;
-- Fale Conosco;
-- Segurança;
-- Acessibilidade;
-- outras.
+- label primário;
+- eventual ação secundária;
+- relação com o CTA `Iniciar Jornada` do Header;
+- comportamento de continuidade dentro da própria Home ou para destino conceitual.
 
-A página `Mapa do Ecossistema` não é detalhada aqui; apenas seu link no rodapé está decidido.
+A escolha não deve ser determinada por uma estratégia de lançamento ainda inexistente.
 
-### OPEN-03 — inventário legal mínimo
+### DESIGN-03 — estratégia material de mídia da Hero
 
-Confirmar documentos e destinos públicos exigidos no lançamento e por geografia.
-
-### OPEN-04 — composição final do Header
-
-A taxonomia principal está muito mais madura, mas ainda deve ser validada quanto a:
-
-- ordem final;
-- nomenclatura final;
-- relação visual entre itens textuais e ícones;
-- comportamento do launcher;
-- comportamento mobile;
-- relação entre Login e Iniciar Jornada.
-
-A separação `Journey → Iniciar Jornada` versus `demais produtos → launcher` já está decidida em princípio.
-
-### OPEN-05 — inventário de evidências disponíveis no lançamento
-
-Precisamos saber o que será real e utilizável:
-
-- histórias;
-- vídeos;
-- fotografias;
-- Organizações;
-- Coletivos;
-- números;
-- experiências;
-- geografias;
-- conteúdo editorial.
-
-### OPEN-06 — política de evidência insuficiente
-
-Definir o comportamento inicial quando determinado tipo de prova ainda não existir.
-
-Nunca usar prova fictícia.
-
-### OPEN-07 — mídia da Hero no primeiro lançamento
-
-Decidir o cenário de referência inicial:
+Podem ser exploradas:
 
 - tipografia/composição sem mídia dominante;
 - fotografia;
 - vídeo;
-- mídia adaptativa;
-- solução híbrida.
+- mídia híbrida;
+- variação responsiva.
 
-O sistema deve possuir fallback.
+A Hero deve funcionar mesmo sem mídia carregada.
 
-### OPEN-08 — estratégia inicial de CTA da Hero
+### DESIGN-04 — composição dos onze movimentos
 
-A função é descoberta, mas ainda precisamos decidir:
+Decidir:
 
-- CTA primário da própria Hero;
-- eventual CTA secundário;
-- destino real;
-- relação com `Iniciar Jornada` do Header;
-- comportamento quando a pessoa ainda não possui conta.
+- quantos blocos visuais existirão;
+- quais movimentos podem compartilhar uma composição;
+- densidade;
+- alternância de ritmo;
+- transições;
+- relação entre texto, mídia e prova.
 
-### OPEN-09 — destinos contextuais
+### DESIGN-05 — materialização dos slots de prova
 
-Definir quais histórias e movimentos poderão realmente apontar para Travel, Media, Business, Journey ou outros destinos.
+O wireframe pode especificar o papel de uma prova sem inventar o fato concreto.
 
-Sem destinos reais, não criar CTAs decorativos.
+Exemplos:
 
-### OPEN-10 — disponibilidade de idiomas e regiões no lançamento
+- história real documentada;
+- fotografia autorizada;
+- evidência institucional;
+- métrica com fonte/período;
+- conteúdo editorial;
+- fallback quando a prova não estiver disponível.
 
-A presença do controle está decidida em princípio.
+### DESIGN-06 — percepção visual material
 
-Ainda precisamos confirmar:
+Permanecem para design:
 
-- idiomas efetivamente disponíveis;
-- regiões efetivamente disponíveis;
-- padrão inicial;
-- comportamento quando idioma e região diferirem;
-- eventual detecção automática versus escolha explícita.
+- grid;
+- tipografia;
+- paleta;
+- geometria;
+- composição fotográfica;
+- escala tipográfica;
+- componentes;
+- movimento;
+- microinterações.
 
-### OPEN-11 — critérios de sucesso da Home
-
-Definir indicadores que permitam avaliar a experiência sem reduzir sucesso a cadastro.
-
----
-
-## 5. Decisões que podem permanecer abertas até a fase de design
-
-- número exato de composições/seções;
-- grid e estrutura espacial;
-- mecanismo visual exato do Header Persistente;
-- aparência e abertura do launcher;
-- quantidade exata de histórias visíveis;
-- detalhes de animação;
-- tipografia final;
-- paleta final;
-- geometria/componentes;
-- composição visual dos produtos no Movimento 08.
-
-Nenhuma dessas liberdades autoriza desenhar a página `Mapa do Ecossistema`.
+A direção perceptiva já está governada.
 
 ---
 
-## 6. Matriz de prontidão
+## 5. Temas explicitamente fora do gate pré-wireframe
+
+Conforme `GKR-UX-HOME-GTM-BOUNDARY-001`, não bloqueiam o wireframe conceitual:
+
+- quais produtos estarão operacionais no lançamento;
+- ordem de lançamento dos produtos;
+- teaser, beta, preview, waitlist ou `em breve`;
+- produtos que receberão maior exposição comercial em determinada fase;
+- calendário de lançamento;
+- campanhas e canais de Marketing;
+- regiões comerciais do lançamento;
+- páginas que estarão publicadas no primeiro release;
+- idiomas efetivamente ativados no primeiro release;
+- destino final de produção de cada CTA;
+- disponibilidade transacional de Travel ou Mall;
+- disponibilidade self-service de Business ou Ads;
+- interface pública própria de Intelligence;
+- rollout de Journey;
+- arquitetura da página `Mapa do Ecossistema`.
+
+Esses pontos pertencem a Marketing/GTM, implementação, publicação ou outras frentes futuras.
+
+---
+
+## 6. Verdade operacional permanece obrigatória em produção
+
+Retirar lançamento/GTM do gate de wireframe não autoriza simulação.
+
+A futura Home publicada não poderá inventar:
+
+- usuários;
+- histórias;
+- parceiros;
+- Organizações;
+- Coletivos;
+- países de operação;
+- números;
+- resultados;
+- funcionalidades;
+- disponibilidade;
+- personalização;
+- claims de segurança ou conformidade.
+
+Separação:
+
+```text
+wireframe conceitual
+≠ claim público
+≠ produção
+≠ lançamento
+```
+
+Antes de publicação, a versão concreta deverá ser reconciliada com verdade operacional, direitos de uso, Legal, Produto, Tecnologia, Marketing/GTM e demais autoridades aplicáveis.
+
+---
+
+## 7. Matriz de prontidão
 
 ### Estratégia de marca
+**ALTA**
+
+### Hero — significado
 **ALTA**
 
 ### Narrativa
@@ -350,26 +429,23 @@ Nenhuma dessas liberdades autoriza desenhar a página `Mapa do Ecossistema`.
 ### Conteúdo e prova — regras
 **ALTA**
 
-### Conteúdo e prova — inventário real
-**BAIXA / A PREENCHER**
-
-### Header — princípios
+### Header — arquitetura conceitual
 **ALTA**
 
-### Header — composição final
-**MÉDIA / EM LAPIDAÇÃO**
+### Header — materialização visual
+**PARA DESIGN**
 
-### Launcher do ecossistema — composição conceitual
+### Launcher — inventário conceitual
 **ALTA**
 
 ### Journey — porta própria `Iniciar Jornada`
 **DECIDIDO EM PRINCÍPIO**
 
-### Produtos — disponibilidade real de lançamento
-**A CONFIRMAR**
+### Participantes — Pessoa / Organizações e Coletivos
+**ALTA EM PRINCÍPIO**
 
-### Institucional — inventário real de páginas
-**A CONFIRMAR**
+### Idioma/região — presença conceitual
+**ALTA EM PRINCÍPIO**
 
 ### Mapa do Ecossistema — link no rodapé
 **DECIDIDO**
@@ -383,99 +459,135 @@ Nenhuma dessas liberdades autoriza desenhar a página `Mapa do Ecossistema`.
 ### Percepção visual
 **ALTA EM PRINCÍPIO**
 
+### Estratégia de lançamento/GTM
+**INTENCIONALMENTE FORA DO ESCOPO**
+
 ### UI específica
 **INTENCIONALMENTE NÃO INICIADA**
 
 ### Wireframe
-**NÃO AUTORIZADO**
+**ESTRATEGICAMENTE APTO PARA FUTURA EXPLORAÇÃO, MAS NÃO AUTORIZADO**
 
 ---
 
-## 7. Gate recomendado para liberar wireframe
+## 8. Gate recomendado para iniciar futura materialização
 
-Antes de autorizar o primeiro wireframe da Home, exigir resolução mínima de:
+Antes de iniciar um wireframe governado da Home, exigir apenas:
 
-- OPEN-01 inventário de produtos;
-- OPEN-02 páginas institucionais que realmente existirão;
-- OPEN-03 links legais necessários;
-- OPEN-04 composição final do Header;
-- OPEN-05 inventário de evidências;
-- OPEN-06 fallback de prova;
-- OPEN-07 cenário inicial da Hero;
-- OPEN-08 CTA da Hero e destino;
-- OPEN-10 idiomas/regiões disponíveis.
+1. autorização explícita para entrar na etapa de materialização;
+2. confirmação de que o escopo continua restrito à Home pública;
+3. adoção dos documentos desta frente como baseline de trabalho;
+4. preservação da arquitetura narrativa e do Header vigente;
+5. preservação dos limites de prova, autonomia e privacidade;
+6. definição do objetivo da rodada de wireframe — exploração, comparação ou convergência;
+7. rastreabilidade entre proposta visual e requisitos da arquitetura.
 
-Não é necessário resolver a arquitetura da página `Mapa do Ecossistema` para liberar o wireframe da Home; basta preservar seu link no rodapé.
+Não é necessário, para esse gate:
 
----
-
-## 8. O que o futuro wireframe não poderá decidir sozinho
-
-O designer ou ferramenta generativa não pode inventar:
-
-- quais produtos existem;
-- quais produtos estão ativos;
-- quais páginas institucionais existirão;
-- quais histórias são reais;
-- quais métricas podem ser publicadas;
-- quais Organizações participam;
-- qual CTA leva a qual destino;
-- quais idiomas/regiões estão disponíveis;
-- quais claims são comprováveis;
-- a arquitetura da página `Mapa do Ecossistema`.
-
-Também não pode recolocar Journey no launcher sem uma nova decisão explícita de arquitetura.
+- fechar lançamento;
+- classificar produto como operacional/não operacional;
+- definir GTM;
+- definir mercados de lançamento;
+- detalhar a página `Mapa do Ecossistema`;
+- possuir todo o acervo real de mídia e histórias.
 
 ---
 
-## 9. O que o futuro wireframe deve decidir
+## 9. O que o futuro wireframe não poderá decidir sozinho
 
-Com os inputs resolvidos, o wireframe da Home deverá propor:
+O designer ou ferramenta generativa não pode redefinir:
+
+- o que a Guivos é;
+- a pergunta-mãe;
+- os cinco pilares;
+- o papel de Pessoas, Organizações e Coletivos;
+- a ordem semântica dominante da narrativa;
+- o papel estrutural dos produtos;
+- Journey como porta própria `Iniciar Jornada` no Header;
+- o inventário conceitual vigente do launcher;
+- a existência do link `Mapa do Ecossistema` no rodapé;
+- regras de autonomia;
+- limites de personalização pública;
+- regras de verdade e não simulação.
+
+Também não poderá inventar uma estratégia de lançamento para preencher lacunas de design.
+
+---
+
+## 10. O que o futuro wireframe deverá decidir
+
+A futura etapa deverá propor, entre outros:
 
 - melhor agrupamento visual dos movimentos;
-- ordem e transições materiais;
+- estrutura espacial;
 - densidade;
 - hierarquia;
-- posição material dos acessos já definidos;
-- relação Header/narrativa/rodapé;
+- posição material dos acessos definidos;
+- relação Header / narrativa / rodapé;
 - forma de representar produtos sem catálogo;
-- distribuição de provas;
+- slots e distribuição de prova;
+- Hero com fallback;
 - comportamento desktop/mobile;
 - estados sem mídia;
-- primeira arquitetura de componentes.
+- arquitetura preliminar de componentes;
+- princípios de movimento;
+- acessibilidade estrutural.
 
 ---
 
-## 10. Síntese de prontidão
+## 11. Questões para futura auditoria de wireframe
+
+Uma proposta futura deverá responder:
+
+1. O visitante entende a ideia da Guivos antes dos produtos?
+2. A página responde progressivamente à pergunta `O que se torna possível quando você entra aqui?`?
+3. A narrativa faz a realidade aparecer cedo sem depender de prova fictícia?
+4. A Guivos parece ecossistema ou catálogo?
+5. Existe amplitude sem promessa vazia?
+6. Existe pertencimento?
+7. Pessoas, Organizações e Coletivos possuem papel compreensível?
+8. A Guivos aparece como facilitadora, não como heroína absoluta?
+9. A autonomia permanece perceptível?
+10. A tecnologia está subordinada à consequência humana?
+11. A proposta poderia ser confundida com marketplace, IA, coaching ou portal de benefícios?
+12. A página parece global sem ser genérica?
+13. Existe sofisticação sem complexidade?
+14. O design continua funcionando sem vídeo e sem animação?
+15. Os produtos entram narrativamente no momento correto?
+16. O Header oferece acesso sem transformar a marca em catálogo?
+17. O launcher preserva Journey fora de sua grade na hipótese vigente?
+18. `Mapa do Ecossistema` continua apenas como link no rodapé desta frente?
+19. A solução desperta vontade de descobrir?
+20. A proposta é reconhecivelmente Guivos e não uma cópia de benchmark?
+
+---
+
+## 12. Síntese de prontidão
 
 A documentação já responde com alta confiança:
 
 - o que a Home precisa significar;
-- o que precisa fazer a pessoa sentir;
-- o que precisa explicar;
-- em que sequência;
-- que prova é legítima;
-- como produtos entram sem dominar;
-- como o Header preserva liberdade;
-- como Journey se separa do launcher por meio de `Iniciar Jornada`;
-- como Travel, Ads, Media, Business, Intelligence e Mall ficam acessíveis no launcher;
-- como Organizações e Coletivos ganham uma porta própria;
-- como idioma/região entra sem poluir a navegação;
-- que `Mapa do Ecossistema` é somente um link no rodapé nesta fase;
-- como movimento deve se comportar;
-- que imagem de marca deve transmitir;
+- qual percepção de marca deve gerar;
+- como a Hero abre a narrativa;
+- como os onze movimentos constroem compreensão;
+- por que produtos não dominam a abertura;
+- como o Header oferece acessos sem catalogar a marca;
+- como Journey se diferencia do launcher;
+- como Organizações e Coletivos aparecem na navegação;
+- como idioma/região entra no Header;
+- qual é o limite atual do `Mapa do Ecossistema`;
+- como provas devem funcionar sem ficção;
+- como movimento e interação servem à narrativa;
+- como autonomia e confiança são preservadas;
+- que percepção visual deve ser buscada;
 - o que deve ser rejeitado.
 
-Ainda precisamos responder operacionalmente:
+Não é necessário responder nesta frente:
 
-> **o que exatamente estará disponível, comprovável e clicável no primeiro lançamento da Home.**
+> **o que estará disponível, clicável ou comercialmente priorizado no primeiro lançamento.**
 
-Essa continua sendo a principal lacuna antes do wireframe.
+Essa pergunta pertence à futura estratégia de Marketing/GTM e à preparação de produção/publicação.
 
----
+Regra final:
 
-## 11. Estado final da auditoria
-
-> **PRÉ-WIREFRAME: CONCEITUALMENTE MADURO / OPERACIONALMENTE PENDENTE DE INVENTÁRIO E DECISÕES DE ENTRADA.**
-
-Nenhuma autorização de materialização é criada por esta auditoria.
+> **A Home pode ser desenhada como arquitetura completa do ecossistema enquanto o ecossistema ainda está sendo construído. O que será ativado em cada lançamento é uma decisão posterior de Marketing/GTM, sujeita à verdade operacional.**
