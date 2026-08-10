@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-NAV-004
 title: Comportamento Persistente do Header — Scroll, Densidade e Mobile na Home Pública
 status: draft
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-10
 parent: GKR-UX-HOME-NAV-002
@@ -41,7 +41,7 @@ Este documento não define pixels, breakpoint final, altura, paleta, tipografia,
 
 Na Home pública, `Header Persistente` significa:
 
-> **uma camada de orientação e acesso que permanece previsvisivelmente disponível durante a exploração da Home, sem competir com a narrativa.**
+> **uma camada de orientação e acesso que permanece previsivelmente disponível durante a exploração da Home, sem competir com a narrativa.**
 
 A hipótese principal rejeita um Header que desaparece completamente durante a rolagem para reaparecer somente quando o visitante muda de direção.
 
