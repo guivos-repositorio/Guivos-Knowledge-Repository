@@ -122,6 +122,8 @@ nav:
           - Lacunas Conhecidas: journeys/gaps.md
       - Home Pública:
           - Documento Mestre da Home: experience-architecture/public-home-master-document.md
+          - Home de Organizações e Coletivos:
+              - Documento Mestre: experience-architecture/public-home-organizations-collectives-master-document.md
           - Fundamentos Funcionais:
               - Página Inicial e Início da Jornada: experience-architecture/uxa-020-home-and-journey-entry.md
               - Validação Funcional da Home Pública: experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md
