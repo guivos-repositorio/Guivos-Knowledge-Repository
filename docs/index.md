@@ -8,6 +8,16 @@ Esta documentação está organizada para responder uma pergunta simples:
 
 A navegação principal não reproduz mais o histórico de construção do repositório. Contratos, auditorias, validações, IDs técnicos e documentos históricos continuam preservados internamente para rastreabilidade, mas os menus priorizam **documentos mestres de leitura e impressão**.
 
+## Estado sincronizado
+
+| Elemento | Estado |
+|---|---|
+| GKR-STATE-001 | **2.36.0** |
+| Marco funcional | **M7.88** |
+| Última UXA funcional numerada | **UXA-101** |
+| Próxima UXA | **UXA-102/V5 não iniciada** |
+| Engenharia de Produto | pausada antes de W0-01 |
+
 ## Comece por aqui
 
 - [Guia Oficial da Guivos](public/guia-oficial-da-guivos.md) — visão institucional completa da Guivos;
