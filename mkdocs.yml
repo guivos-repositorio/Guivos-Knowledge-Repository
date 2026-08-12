@@ -123,17 +123,8 @@ nav:
           - Registro de Superfícies: journeys/surface-registry.md
           - Registro de Transições: journeys/transition-registry.md
           - Lacunas Conhecidas: journeys/gaps.md
-      - Home Pública:
-          - Documento Mestre da Home: experience-architecture/public-home-master-document.md
-          - Home de Organizações e Coletivos:
-              - Documento Mestre: experience-architecture/public-home-organizations-collectives-master-document.md
-              - Auditoria Inicial de Prontidão: experience-architecture/public-home-organizations-collectives-pre-materialization-readiness-audit.md
-              - P1 — Macroexperiências e Agrupamento: experience-architecture/public-home-organizations-collectives-macroexperience-grouping-map.md
-              - P2 — Header, Hero e CTAs: experience-architecture/public-home-organizations-collectives-header-hero-cta-hierarchy.md
-              - P3 — Conteúdo, Prova e Evidência: experience-architecture/public-home-organizations-collectives-content-proof-evidence-map.md
-              - P4 — Handoff para Design/UX/UI: experience-architecture/public-home-organizations-collectives-design-handoff.md
-              - P5 — Reauditoria Final de Prontidão: experience-architecture/public-home-organizations-collectives-final-readiness-reaudit.md
-              - Decisão Pós-P5 — Sem Wireframe: experience-architecture/public-home-organizations-collectives-post-p5-materialization-decision.md
+      - Home Pública — Pessoa:
+          - Documento Mestre: experience-architecture/public-home-master-document.md
           - Fundamentos Funcionais:
               - Página Inicial e Início da Jornada: experience-architecture/uxa-020-home-and-journey-entry.md
               - Validação Funcional da Home Pública: experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md
@@ -159,6 +150,15 @@ nav:
           - Benchmarks e Referências:
               - Benchmark e Diferenciação: experience-architecture/public-home-benchmark-and-differentiation-evidence.md
               - Comparativo Guivos e Referências Globais: experience-architecture/public-home-guivos-vs-global-hero-comparative.md
+      - Home Pública — Organizações e Coletivos:
+          - Documento Mestre: experience-architecture/public-home-organizations-collectives-master-document.md
+          - Auditoria Inicial de Prontidão: experience-architecture/public-home-organizations-collectives-pre-materialization-readiness-audit.md
+          - P1 — Macroexperiências e Agrupamento: experience-architecture/public-home-organizations-collectives-macroexperience-grouping-map.md
+          - P2 — Header, Hero e CTAs: experience-architecture/public-home-organizations-collectives-header-hero-cta-hierarchy.md
+          - P3 — Conteúdo, Prova e Evidência: experience-architecture/public-home-organizations-collectives-content-proof-evidence-map.md
+          - P4 — Handoff para Design/UX/UI: experience-architecture/public-home-organizations-collectives-design-handoff.md
+          - P5 — Reauditoria Final de Prontidão: experience-architecture/public-home-organizations-collectives-final-readiness-reaudit.md
+          - Decisão Pós-P5 — Sem Wireframe: experience-architecture/public-home-organizations-collectives-post-p5-materialization-decision.md
       - Entrada Protegida da Jornada:
           - Validação do Início Protegido: experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md
           - Wireframe Móvel do Início Protegido: experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe.md
