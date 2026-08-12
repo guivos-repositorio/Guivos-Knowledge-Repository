@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.37.0
+version: 2.36.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-11
 depends_on:
@@ -19,9 +19,15 @@ related:
   - GPA-000
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-OC-AUDIT-002
+  - UXA-097
+  - UXA-098
+  - UXA-099
+  - UXA-100
+  - UXA-101
   - VAL-009
   - VAL-010
   - ADR-007
+  - M7.88
 normative: true
 ---
 
@@ -35,22 +41,24 @@ Detalhes de validação, históricos, contratos, IDs e artefatos especializados 
 
 ---
 
-## 2. Estado geral do GKR
+## 2. Estado geral
 
 | Dimensão | Estado vigente |
 |---|---|
-| Papel do GKR | fonte oficial de conhecimento governado da Guivos |
+| GKR-STATE-001 | **2.36.0** |
 | Era arquitetural | GE-2 — Knowledge |
+| Marco funcional | **M7.88** |
+| Última UXA funcional numerada | **UXA-101** |
+| Próxima UXA | **UXA-102/V5 não iniciada** |
 | Fundamentos | consolidados |
 | Modelo fundamental da evolução | consolidado |
 | Arquitetura de produtos | consolidada |
 | Guivos Journey | PAS-001 1.0.0 ativo como especificação arquitetural |
-| Jornadas de Pessoa, Coletivo e Organização | documentação ativa, com frentes ainda em evolução |
 | Home Pública | arquitetura estratégica consolidada |
 | Home de Organizações e Coletivos | P1→P5 concluídos; gate pré-materialização satisfeito |
 | Wireframe da Home Pública | **não integra o processo vigente** |
-| Engenharia de Produto | pausada antes de W0-01 no estado documental vigente |
-| Validação de mercado | método governado; resultado real ainda depende de evidência de execução |
+| Engenharia de Produto | pausada antes de W0-01 |
+| Validação de mercado | método governado; resultado real depende de evidência de execução |
 | Portugal | candidato condicionado; não operação ativa comprovada |
 | Neo4j | tecnologia primária de referência para grafo; implementação não presumida |
 
@@ -89,7 +97,7 @@ Entidade institucional com identidade, autoridade, responsabilidades, recursos, 
 
 ### Coletivo
 
-Formação voluntária de pessoas em torno de algo compartilhado, capaz de mobilização, criação e realização coletiva.
+Formação voluntária de Pessoas em torno de algo compartilhado, capaz de mobilização, criação e realização coletiva.
 
 Separações obrigatórias:
 
@@ -125,8 +133,6 @@ Domínio não representa identidade, score, diagnóstico, mérito, objetivo auto
 
 ## 6. Arquitetura do ecossistema e dos produtos
 
-Estrutura de consumo vigente:
-
 ```text
 GUIVOS
 │
@@ -144,11 +150,9 @@ GUIVOS
     └── Intelligence
 ```
 
-A arquitetura técnica também reconhece camadas de plataforma compartilhadas.
-
 Nenhum produto isolado é a Guivos.
 
-`Guivos Mall` é o nome canônico. `Marketplace` permanece apenas como referência histórica quando necessária para rastreabilidade e não deve ser utilizado como nome atual do produto.
+`Guivos Mall` é o nome canônico. `Marketplace` permanece somente como referência histórica quando necessária à rastreabilidade.
 
 ---
 
@@ -158,15 +162,11 @@ A Home Pública possui duas perspectivas da mesma Guivos.
 
 ### Pessoa
 
-Perspectiva:
-
 > **O que pode se tornar possível para mim?**
 
 A narrativa mostra possibilidades antes de produtos e preserva descoberta, autonomia e confiança.
 
 ### Organizações e Coletivos
-
-Perspectiva:
 
 > **O que podemos tornar possível juntos?**
 
@@ -182,14 +182,11 @@ O gate documental de pré-materialização foi satisfeito.
 
 Decisão posterior de processo:
 
-> **a Home Pública atual não utilizará wireframe como etapa.**
+> **a Home Pública atual não utiliza wireframe como etapa.**
 
-Consequências:
+A antiga materialização low-fidelity da Home não possui autoridade visual corrente e não deve ser utilizada como referência de Design.
 
-- a antiga materialização low-fidelity da Home não possui autoridade visual corrente;
-- não deve ser utilizada como referência de Design;
-- Figma, UI e implementação continuam dependendo de decisão própria;
-- readiness não significa implementação.
+Figma, UI e implementação continuam dependendo de decisão própria.
 
 ---
 
@@ -197,7 +194,7 @@ Consequências:
 
 O Guivos Journey permanece a camada de experiência e continuidade do ecossistema.
 
-A estrutura funcional reconhece, entre outros elementos:
+Estrutura funcional de referência:
 
 ```text
 Momento Atual
@@ -211,36 +208,31 @@ Momento Atual
 
 A jornada não é um funil comercial e aceita pausas, retornos, mudanças de direção, multidomínio e ausência legítima de ação.
 
-Os registros técnicos de telas, superfícies, transições e validações permanecem internos e não devem orientar a Home Pública atual quando forem anteriores à arquitetura estratégica consolidada dessa Home.
+Registros técnicos de telas, superfícies e transições permanecem internos e não devem governar a Home Pública quando forem anteriores à arquitetura estratégica consolidada dessa Home.
 
 ---
 
 ## 9. Planos e monetização
 
-Taxonomia de planos vigente no modelo econômico:
-
 ### Pessoa
 
-- Free;
-- Plus;
-- Pro.
+Free · Plus · Pro.
 
 ### Coletivo
 
-- Livre;
-- Mobiliza;
-- Impacta;
-- Rede.
+Livre · Mobiliza · Impacta · Rede.
 
 ### Organização
 
-- Conecta;
-- Eleva;
-- Transforma.
+Conecta · Eleva · Transforma.
 
 Planos e preços são instrumentos econômicos, não níveis de mérito ou evolução.
 
-O estado vigente **não adota uma economia genérica de pontos ou créditos como motor central da evolução**. Incentivos, reconhecimento e recompensas, quando existirem, precisam preservar a separação entre progresso, reconhecimento e benefício econômico.
+O estado vigente **não adota uma economia genérica de pontos ou créditos como motor central da evolução**. Incentivos, reconhecimento e recompensas, quando existirem, precisam preservar:
+
+```text
+progresso ≠ reconhecimento ≠ recompensa econômica
+```
 
 ---
 
@@ -257,13 +249,11 @@ Belo Horizonte
 → novo país somente mediante nova decisão
 ```
 
-Meta de referência de longo prazo:
-
-- 1 milhão de Pessoas em M60.
+Meta de referência de longo prazo: **1 milhão de Pessoas em M60**.
 
 Esses marcos são planejamento e não prova de execução.
 
-Portugal permanece candidato condicionado. Não estão comprovados por esta documentação piloto executado, entidade local, operação ativa, equipe local ou expansão para Porto.
+Portugal permanece candidato condicionado. Não estão comprovados por esta documentação piloto executado, entidade local, operação ativa ou equipe local.
 
 ---
 
@@ -271,20 +261,18 @@ Portugal permanece candidato condicionado. Não estão comprovados por esta docu
 
 A primeira frente de validação de mercado é B2C.
 
-O método está governado e distingue:
+O método distingue:
 
 ```text
 método definido
 → instrumento identificado
 → aplicação comprovada
-→ pré-teste comprovado
 → base recebida
-→ base válida
 → métricas reproduzíveis
 → decisão registrada
 ```
 
-No estado atual, documentação metodológica não é tratada como prova de aplicação ou resultado.
+Documentação metodológica não é tratada como prova de aplicação ou resultado.
 
 O programa de pesquisa do ecossistema possui evidências qualificadas e sínteses preliminares, mas pesquisa não promove automaticamente conclusões à Canon.
 
@@ -304,15 +292,11 @@ reference_selected
 
 Não é correto afirmar, sem evidência própria, que cluster, Aura, GraphRAG, GDS, Power BI ou dados pessoais reais estejam implementados no grafo.
 
-Guivos Intelligence é uma capacidade transversal de compreensão responsável.
-
-Inteligência não equivale a acesso irrestrito a Pessoas ou membros de Coletivos.
+Guivos Intelligence é uma capacidade transversal de compreensão responsável e não equivale a acesso irrestrito a Pessoas ou membros de Coletivos.
 
 ---
 
 ## 13. Dados, privacidade e autoridade
-
-Permanecem obrigatórias as distinções:
 
 ```text
 dado declarado
@@ -339,9 +323,9 @@ A arquitetura econômica está mais madura do que a evidência monetária real.
 
 No horizonte M0–M6:
 
-- custos e capacidades já possuem estrutura governada;
+- custos e capacidades possuem estrutura governada;
 - parte dos pools possui benchmarks ou fórmulas;
-- entradas materiais ainda permanecem TBD;
+- entradas materiais ainda permanecem `TBD`;
 - estrutura de caixa possui prontidão documental;
 - prontidão monetária completa ainda não está estabelecida.
 
@@ -349,9 +333,7 @@ Por isso, burn, runway e necessidade definitiva de capital não devem ser aprese
 
 ---
 
-## 15. Estado de implementação
-
-Regra transversal:
+## 15. Regra de estado operacional
 
 ```text
 conceito
@@ -363,9 +345,7 @@ conceito
 ≠ evidência real
 ```
 
-O GKR descreve muitas capacidades em maturidade arquitetural superior à sua maturidade operacional.
-
-Essa diferença precisa permanecer explícita em qualquer comunicação executiva ou pública.
+O GKR descreve capacidades em maturidade arquitetural superior à maturidade operacional. Essa diferença precisa permanecer explícita.
 
 ---
 
@@ -375,15 +355,15 @@ A navegação pública passa a ser organizada por **assunto**, não pelo histór
 
 O menu expõe documentos mestres de leitura e impressão.
 
-Contratos, auditorias, wireframes históricos, validações, changelogs e matrizes continuam disponíveis internamente quando necessários, mas deixam de funcionar como portas principais de navegação.
+Contratos, auditorias, wireframes históricos, validações, changelogs e matrizes permanecem disponíveis internamente quando necessários, mas deixam de funcionar como portas principais de navegação.
 
-> **complexidade de governança interna não deve ser transferida para quem precisa compreender a Guivos.**
+> **Complexidade de governança interna não deve ser transferida para quem precisa compreender a Guivos.**
 
 ---
 
 ## 17. Próximas decisões
 
-Próximos avanços continuam dependendo de autorização específica para cada frente.
+Próximos avanços dependem de autorização específica.
 
 Em particular:
 
@@ -391,5 +371,3 @@ Em particular:
 - não há autorização automática de Engenharia de Produto;
 - não há promoção automática de mercados candidatos;
 - não há promoção automática de preços, projeções ou resultados de pesquisa para fatos realizados.
-
-Este registro deve ser atualizado quando uma dessas fronteiras mudar.
