@@ -1,133 +1,108 @@
 # Guivos Knowledge Repository
 
-O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
+O **Guivos Knowledge Repository (GKR)** é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
-## Estado vigente
+Esta documentação está organizada para responder uma pergunta simples:
 
-A autoridade transversal é o [Registro do Estado Atual](project/current-state-register.md).
+> **Qual assunto você quer compreender?**
 
-| Dimensão | Situação |
+A navegação principal não reproduz mais o histórico de construção do repositório. Contratos, auditorias, validações, IDs técnicos e documentos históricos continuam preservados internamente para rastreabilidade, mas os menus priorizam **documentos mestres de leitura e impressão**.
+
+## Estado sincronizado
+
+| Elemento | Estado |
 |---|---|
-| Registro | `GKR-STATE-001` **2.36.0** |
-| Era | GE-2 — Knowledge |
+| GKR-STATE-001 | **2.36.0** |
 | Marco funcional | **M7.88** |
-| Última frente funcional numerada | **UXA-101** |
-| Reconciliação de Planos | **UXA-100-A4 — origem voluntária e retorno** |
-| Experience Architecture mais recente | **D5-C4B — TRN-008..013 integralmente validadas no limite documental** |
-| Domínios de Evolução do Journey | **9 canônicos + estado “Ainda estou descobrindo”** |
+| Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
-| Galeria | **121 SVGs — 121 validados / 0 pendentes** |
-| Matriz por SVG | **121 associações / 34 perfis** |
-| Superfícies/estados/fronteiras | **57** |
-| Transições | **66** |
 | Engenharia de Produto | pausada antes de W0-01 |
-| Ressincronização P0–P9 | consolidada documentalmente após integração de P9 |
 
-## Public Canon
+## Comece por aqui
 
-A superfície institucional pública vigente é o [GOG-001 — Guia Oficial da Guivos 5.0.0](public/guia-oficial-da-guivos.md).
+- [Guia Oficial da Guivos](public/guia-oficial-da-guivos.md) — visão institucional completa da Guivos;
+- [Estado Atual do Repositório](project/current-state-register.md) — o que está vigente, o que ainda é hipótese e quais fronteiras permanecem abertas;
+- [Roadmap Arquitetural](roadmap.md) — sequência e dependências de evolução do conhecimento;
+- [Glossário](glossary.md) — significados oficiais dos principais conceitos.
 
-O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetura, implementação e operação. A D5-C4B é uma autoridade interna de Experience Architecture; validação integrada documental não declara disponibilidade pública de produto.
+## Assuntos principais
 
-## Consolidação e reconciliações recentes
+### Fundamentos da Guivos
 
-- [D5-C4B — Validação Integrada dos Handoffs](experience-architecture/d5-c4b-direction-movement-evolution-integrated-handoff-validation.md)
-- [D5-C4A — Materialização e Contrato Integrado dos Handoffs](experience-architecture/d5-c4a-direction-movement-evolution-handoff-contract.md)
-- [D5-C3 — Validação Funcional de Direção, Movimento e Evolução](experience-architecture/d5-c3-direction-movement-evolution-functional-validation.md)
-- [D5-C2 — Materialização Low-Fidelity de Direção, Movimento e Evolução](experience-architecture/d5-c2-direction-movement-evolution-low-fidelity-wireframes.md)
-- [D5-C1 — Contrato das Superfícies de Direção, Movimento e Evolução](experience-architecture/d5-c1-direction-movement-evolution-surface-contract.md)
-- [D5-B — Domínios de Evolução na Camada de Oportunidades](experience-architecture/d5-b-evolution-domains-opportunities-layer.md)
-- [D5-A — Domínios de Evolução na Jornada Inicial](experience-architecture/d5-a-evolution-domains-guided-expression-initial-understanding-today.md)
-- [PAS-001-DOMAIN-MODEL-001 — Modelo Canônico dos Domínios de Evolução do Guivos Journey](product-architecture/pas-001-evolution-domains-model.md)
-- [Guivos Journey — arquitetura e áreas de evolução](product-architecture/journey.md)
-- [VAL-002-A1 — Mapeamento da pesquisa para os Domínios de Evolução](research/market-validation/VAL-002-A1-mapeamento-dominios-evolucao.md)
-- [Consolidação Global e Public Canon — P9](project/p9-global-consolidation-and-public-canon-2026-08-08.md)
-- [UXA-100-A4 — Origens Administrativas e Handoffs de Entrada em Planos](experience-architecture/uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md)
-- [Matriz de Consolidação Canônica 3.0.0](project/canonical-consolidation-matrix.md)
-- [Roadmap 12.76.0](roadmap.md)
+- [Fundamentos da Guivos](geb/fundamentos-da-guivos.md) — essência, propósito, missão, visão, participantes, constituição e princípios;
+- [Modelo Fundamental da Evolução](geb/modelo-fundamental-da-evolucao.md) — como a Guivos compreende momento, direção, próximos passos, oportunidades, experiências e evolução.
 
-O programa P0–P9 está consolidado quanto à ressincronização documental. D4 e D5 são frentes não numeradas e não criam novo marco funcional. Lacunas empíricas, tecnológicas, jurídicas e operacionais permanecem abertas em suas autoridades próprias.
+### Ecossistema e Produtos
 
-## Participantes, produtos, planos e domínios
+- [Arquitetura do Ecossistema e Produtos](product-architecture/index.md) — relação entre a Guivos, Journey, Intelligence e produtos especializados;
+- [Guivos Journey](product-architecture/journey.md) — papel da camada de experiência e continuidade.
 
-Participantes: **Pessoa · Coletivo · Organização**.
+### Experiência, Design e Jornadas
 
-Produtos Especializados: **Journey · Mall · Travel · Business · Media · Intelligence · Ads**.
+- [Visão Geral das Jornadas](journeys/index.md) — Pessoa, Coletivo e Organização;
+- [Home Pública](experience-architecture/home-publica.md) — narrativa consolidada das duas perspectivas públicas da Guivos;
+- [Jornada da Pessoa](journeys/person.md);
+- [Jornada do Coletivo](journeys/collective.md);
+- [Jornada da Organização](journeys/organization.md).
 
-Planos:
+A **Home Pública atual não utiliza wireframe como etapa do processo**. Materializações anteriores não possuem autoridade sobre a arquitetura vigente.
 
-- Pessoa: Free · Plus · Pro;
-- Coletivo: Livre · Mobiliza · Impacta · Rede;
-- Organização: Conecta · Eleva · Transforma;
-- Guivos Business: Start · Growth · Scale · Enterprise.
+### Pesquisa e Validação
 
-`Organização ≠ Guivos Business`.
+- [Validação de Mercado](research/market-validation/README.md) — método B2C, pesquisa, indicadores, amostragem e gates de evidência;
+- [Pesquisa do Ecossistema](research/pesquisa-do-ecossistema.md) — evidências e sínteses interdisciplinares sobre ecossistemas complexos.
 
-A origem voluntária de Planos está formalizada por `PER-009 ↔ PER-301`, `COL-002 ↔ COL-301` e `ORG-001 ↔ ORG-301`. A origem da Pessoa permanece sem SVG dedicado e, portanto, seus dois handoffs ficam contratados até materialização suficiente.
+### Estratégia, Mercado e Crescimento
 
-A D5-C1 contratou, a D5-C2 materializou, a D5-C3 validou localmente, a D5-C4A fechou o contrato/origem visual e a D5-C4B validou integralmente a continuidade pessoal especializada no limite documental:
+- [Estratégia de Negócio](business-architecture/index.md);
+- [Go-to-Market](go-to-market/go-to-market-consolidado.md) — lançamento, crescimento, comercial, parcerias, metas, capital e internacionalização em uma única leitura.
 
-```text
-PER-008 — Hoje recorrente
-├── TRN-008 → PER-010 — Meus Objetivos → TRN-009 → PER-008
-├── TRN-010 → PER-011 — Meus Próximos Passos → TRN-011 → PER-008
-└── TRN-012 → PER-012 — Minha Evolução → TRN-013 → PER-008
-```
+### Economia, Planos e Monetização
 
-As três responsabilidades possuem um SVG low-fidelity funcionalmente validado localmente. Hoje recorrente também está reformulado/revalidado localmente. `TRN-008..013` estão **integralmente validadas documentalmente**; isso não comprova implementação técnica ou disponibilidade de produto.
+- [Economia, Planos e Monetização](economic-model/economia-planos-monetizacao-atual.md) — geração de valor, receitas, planos, incentivos, parceiros e sustentabilidade;
+- [Planejamento Financeiro M0–M6](economic-model/planejamento-financeiro-m0-m6.md) — custos, capacidade, caixa e prontidão monetária do primeiro horizonte.
 
-Domínios de Evolução do Guivos Journey:
+### Arquitetura, Dados e IA
 
-1. Saúde e Bem-estar;
-2. Trabalho, Carreira e Estudos;
-3. Vida Financeira;
-4. Empreendedorismo e Projetos;
-5. Relacionamentos e Vida Social;
-6. Espiritualidade, Propósito e Valores;
-7. Viagens, Lazer, Cultura e Novas Experiências;
-8. Causas, Voluntariado e Contribuição;
-9. Organização e Equilíbrio da Vida.
+- [Arquitetura Corporativa](enterprise-architecture/index.md);
+- [Inteligência e IA](intelligence-architecture/index.md);
+- [Grafo e Neo4j](adr/ADR-007-neo4j-primary-graph-reference.md).
 
-`Ainda estou descobrindo` é estado transversal de exploração, não um décimo domínio.
+### Governança do Repositório
 
-## Autoridades temáticas
+- [Governança do GKR](governance-framework/governanca-do-repositorio.md) — autoridade, rastreabilidade, consolidação, obsolescência e regras de mudança;
+- [Painel de Conhecimento](project/knowledge-board.md);
+- [Marcos Arquiteturais](project/architectural-milestones.md);
+- [Matriz de Consolidação Canônica](project/canonical-consolidation-matrix.md).
 
-- [Go-to-Market, Growth & Capital](go-to-market/index.md)
-- [GTM-007 — Internacionalização](go-to-market/gtm-007-internationalization-and-territorial-governance.md)
-- [GTM-008 — Portugal](go-to-market/gtm-008-portugal-pilot-readiness-gates.md)
-- [Arquitetura de Produtos](product-architecture/index.md)
-- [Guivos Journey](product-architecture/journey.md)
-- [Domínios de Evolução do Journey](product-architecture/pas-001-evolution-domains-model.md)
-- [Arquitetura da Experiência](experience-architecture/index.md)
-- [Índice UXA-047 a UXA-101](experience-architecture/uxa-047-101-index.md)
-- [Jornadas Integradas](journeys/index.md)
-- [Modelo Econômico](economic-model/index.md)
-- [Marca, Naming e Ativos Digitais](governance-framework/brand-and-digital-assets-index.md)
-- [Arquitetura Institucional e Jurídica](governance-framework/institutional-and-legal-architecture-index.md)
-- [Privacidade e Verdade Operacional](governance-framework/operational-privacy-and-legal-truth-index.md)
-- [Prontidão Operacional Internacional](governance-framework/international-operations-and-cross-border-readiness.md)
-- [Validação de Mercado](research/market-validation/README.md)
-- [Arquitetura de Grafo e Intelligence](enterprise-architecture/graph-intelligence-reference-architecture.md)
+## Como imprimir
 
-## Estado das principais frentes
+Cada documento de leitura possui a ação **“Imprimir este assunto”**, permitindo gerar uma impressão ou PDF somente do tema aberto.
+
+A versão agregada do repositório continua disponível para auditoria e arquivo, mas não ocupa a navegação cotidiana.
+
+## Regra de interpretação
+
+O GKR distingue permanentemente:
 
 ```text
-Neo4j = reference_selected ≠ produção
-Fundação Guivos = conceito ≠ entidade constituída
-Portugal = T1_candidate ≠ mercado ativo
-privacidade por arquitetura ≠ conformidade operacional comprovada
-método de pesquisa ≠ resultado de mercado
-pontos/créditos ≠ evolução
-navegar para Planos ≠ contratar ou iniciar cobrança
-PER-010..012 validados localmente ≠ produto implementado
-TRN-008..013 integralmente validadas documentalmente ≠ continuidade implementada
-Domínio de Evolução ≠ identidade ≠ score ≠ diagnóstico ≠ prova de evolução
-Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança
-classificação candidata por IA ≠ domínio confirmado
+visão
+≠ arquitetura
+≠ materialização
+≠ implementação
+≠ operação
+≠ evidência real
 ```
 
-## Limites preservados
+Da mesma forma:
 
-A reconciliação atual não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, classificação operacional por IA dos Domínios de Evolução, ontologia física do grafo, implementação técnica de `TRN-008..013`, cobrança real, processo posterior a `BND-002`, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado ou operação de controles legais/privacidade não comprovados.
+```text
+participante ≠ produto
+Organização ≠ Guivos Business
+plano ≠ mérito
+projeção ≠ realizado
+país candidato ≠ mercado ativo
+tecnologia selecionada ≠ tecnologia implementada
+```
 
-Em caso de divergência, prevalecem `GKR-STATE-001` e a autoridade temática específica mais recente.
+Em caso de divergência, prevalecem o [Registro do Estado Atual](project/current-state-register.md) e a autoridade temática vigente mais recente.
