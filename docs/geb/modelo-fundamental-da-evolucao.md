@@ -2,7 +2,7 @@
 id: GKR-MODELO-EVOLUCAO-CONSOLIDADO-001
 title: Modelo Fundamental da Evolução
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Guivos
 last_updated: 2026-08-11
 depends_on:
@@ -10,7 +10,7 @@ depends_on:
   - KU-FM-001
   - KU-FM-002
   - KU-FM-003
-  - GKR-EVOLUTION-001
+  - GEF-001
 normative: false
 ---
 
@@ -18,7 +18,7 @@ normative: false
 
 ## 1. Finalidade
 
-Este documento consolida o modelo fundamental utilizado pela Guivos para compreender jornadas de evolução sem transformar a vida em uma sequência rígida, um score ou um caminho prescrito.
+Este documento consolida o modelo utilizado pela Guivos para compreender jornadas de evolução sem transformar a vida em uma sequência rígida, um score ou um caminho prescrito.
 
 Os documentos técnicos de origem permanecem no repositório para rastreabilidade. Esta é a porta de leitura e impressão do assunto.
 
@@ -37,7 +37,7 @@ A Guivos pode:
 - ajudar a compreender o momento atual;
 - tornar objetivos e possibilidades mais claros;
 - aproximar oportunidades compatíveis;
-- conectar conhecimentos, pessoas, Organizações e Coletivos;
+- conectar conhecimentos, Pessoas, Organizações e Coletivos;
 - apoiar escolhas e próximos passos;
 - registrar evidências e mudanças com responsabilidade;
 - tornar novas possibilidades mais visíveis.
@@ -69,7 +69,7 @@ NOVO MOMENTO ATUAL
     ↺
 ```
 
-Essa sequência não exige que todas as pessoas tenham um objetivo explícito ou saibam previamente qual próximo passo desejam.
+Essa sequência não exige que todas as Pessoas tenham um objetivo explícito ou saibam previamente qual próximo passo desejam.
 
 Estados legítimos incluem:
 
@@ -106,7 +106,7 @@ O contexto é revisável e pode ficar incompleto.
 
 Um participante pode possuir objetivos explícitos, direções provisórias ou apenas interesses ainda em exploração.
 
-A Guivos deve preservar:
+A Guivos preserva:
 
 ```text
 objetivo declarado
@@ -134,7 +134,7 @@ Pode ser:
 - aguardar;
 - não seguir adiante.
 
-Uma sugestão de próximo passo não equivale a decisão.
+Uma sugestão de próximo passo não equivale a decisão:
 
 ```text
 proposto
@@ -186,7 +186,7 @@ Ela pode produzir:
 - continuidade;
 - nenhum efeito material relevante.
 
-A Guivos não deve presumir que uma experiência necessariamente produziu evolução.
+A Guivos não presume que uma experiência necessariamente produziu evolução.
 
 ---
 
@@ -242,44 +242,30 @@ Domínio não é identidade, score, diagnóstico, objetivo ou prova de evoluçã
 
 ## 11. Quatro naturezas fundamentais
 
-O modelo distingue quatro naturezas para evitar mistura entre conceitos.
-
 ### Estado
 
 Descreve uma condição relevante em determinado momento.
-
-Exemplos:
-
-- oportunidade disponível;
-- objetivo ativo;
-- vínculo existente;
-- contexto confirmado.
 
 ### Decisão
 
 Representa uma escolha consciente de um participante ou autoridade legítima.
 
-Exemplos:
-
-- aceitar;
-- recusar;
-- compartilhar;
-- iniciar;
-- cancelar.
-
 ### Transição
 
 É a passagem entre estados ou contextos.
 
-Exemplos:
-
-- de interessado para participante;
-- de oportunidade disponível para indisponível;
-- de objetivo ativo para pausado.
-
 ### Resultado
 
 É o efeito ou consequência observável de uma ação, experiência ou processo.
+
+Separação:
+
+```text
+estado
+≠ decisão
+≠ transição
+≠ resultado
+```
 
 Resultado não deve ser confundido com intenção ou promessa.
 
@@ -287,7 +273,7 @@ Resultado não deve ser confundido com intenção ou promessa.
 
 ## 12. A jornada não é um funil
 
-A Guivos não deve representar a evolução humana como:
+A Guivos não representa a evolução humana como:
 
 ```text
 entrada
@@ -312,15 +298,13 @@ A jornada aceita:
 
 ## 13. Pessoas, Organizações e Coletivos
 
-O modelo fundamental é comum ao ecossistema, mas cada participante vive uma perspectiva diferente.
-
 ### Pessoa
 
 Vive sua própria jornada e preserva decisão sobre o caminho.
 
 ### Organização
 
-Pode estruturar capacidades, oportunidades, recursos e relações que participem de diferentes jornadas sem controlar a evolução das pessoas.
+Pode estruturar capacidades, oportunidades, recursos e relações que participem de diferentes jornadas sem controlar a evolução das Pessoas.
 
 ### Coletivo
 
@@ -348,7 +332,7 @@ Guivos Intelligence pode apoiar:
 Não deve:
 
 - converter inferência em verdade confirmada sem autoridade;
-- decidir qual evolução uma pessoa deve buscar;
+- decidir qual evolução uma Pessoa deve buscar;
 - criar score humano universal;
 - utilizar sensibilidade como autorização implícita;
 - remover possibilidade de contestação ou correção.
@@ -358,8 +342,6 @@ Não deve:
 ## 15. Regra de continuidade
 
 A saída de uma experiência pode tornar-se entrada para uma nova compreensão.
-
-Por isso:
 
 > **Uma ação não precisa terminar onde começou.**
 
@@ -371,6 +353,4 @@ A continuidade existe como possibilidade, não como obrigação.
 
 ## 16. Síntese
 
-O modelo fundamental da Guivos pode ser resumido assim:
-
-> **compreender o momento, ampliar o campo de possibilidades, apoiar escolhas conscientes, permitir experiências e aprender com o que realmente aconteceu — repetindo esse ciclo sem transformar a pessoa em um score ou a jornada em um caminho prescrito.**
+> **Compreender o momento, ampliar o campo de possibilidades, apoiar escolhas conscientes, permitir experiências e aprender com o que realmente aconteceu — repetindo esse ciclo sem transformar a Pessoa em um score ou a jornada em um caminho prescrito.**
