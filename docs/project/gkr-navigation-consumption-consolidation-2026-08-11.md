@@ -1,6 +1,6 @@
 ---
 id: GKR-NAV-CONSOLIDATION-2026-08-11
- title: Consolidação da Navegação de Consumo do GKR
+title: Consolidação da Navegação de Consumo do GKR
 status: draft
 version: 1.0.0
 owner: Repositório de Conhecimento da Guivos
