@@ -4,7 +4,7 @@ title: Registro do Estado Atual
 status: active
 version: 2.36.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-12
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -46,6 +46,8 @@ related:
   - VAL-010
   - GEM-005-A1
   - GKR-P9-GLOBAL-CONSOLIDATION-001
+  - GKR-HOME-P5
+  - GKR-HOME-DECISION-NO-WIREFRAME-001
   - ROADMAP-12.76.0
   - M7.88
 normative: true
@@ -58,6 +60,8 @@ normative: true
 Este registro declara o estado global vigente do Guivos Knowledge Repository após a consolidação documental P1–P9, a reconciliação controlada da origem voluntária de Planos, a formalização dos Domínios de Evolução do Guivos Journey, a D5-C1 — contrato arquitetural das superfícies de direção, movimento e evolução da Pessoa —, a D5-C2 — materialização low-fidelity dessas três responsabilidades —, a D5-C3 — validação funcional/reformulação local dos três SVGs —, a D5-C4A — materialização e contrato integrado dos handoffs — e a D5-C4B — validação integrada individual de `TRN-008..013`.
 
 A D5-C4B **não cria novo marco funcional, não inicia UXA-102, não retoma Engenharia de Produto e não altera inventário visual ou granular**. Ela promove individualmente `TRN-008..013` para `integralmente validada` no limite documental, após examinar origem, destino, autoridade, contexto mínimo, efeitos, retorno, interrupção, concorrência, idempotência e sensibilidade aplicável.
+
+Após `GKR-HOME-P5`, uma decisão humana posterior foi formalizada em `GKR-HOME-DECISION-NO-WIREFRAME-001`: a continuidade da Home Pública de Organizações e Coletivos **não utilizará wireframe como etapa de materialização**. P1–P5 permanecem historicamente válidos; P5 registra prontidão para uma decisão humana, não obrigação de wireframing. A próxima forma de materialização dessa Home permanece indefinida e exige autorização humana separada, sem passar por wireframe.
 
 Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
@@ -77,6 +81,7 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Galeria visual | **121 SVGs — 121 validados / 0 pendentes** |
 | Matriz por SVG | **121 associações / 34 perfis** |
 | Jornadas principais | Pessoa, Coletivo e Organização permanecem `draft` |
+| Home Pública de Organizações e Coletivos | **P1–P5 preservados; wireframe não será usado na continuidade; próximo caminho de materialização não definido** |
 | P1/P1.1 | integrado — semântica e nomenclaturas reconciliadas |
 | P2 | integrado como arquitetura de referência — Neo4j `reference_selected` |
 | P3 | governança integrada — fatos registrários/digitais dependem de evidência |
@@ -390,6 +395,11 @@ D5-C1/C2/C3/C4A/C4B não são V5 e não alteram a numeração UXA.
 - `TRN-008..013` estão integralmente validadas documentalmente e isso não equivale a implementação;
 - a primeira variante de Hoje não é obrigada a expor os handoffs especializados;
 - materialização, validação, promoção, implementação e operação são estados distintos;
+- a Home Pública de Organizações e Coletivos preserva P1–P5 como histórico válido;
+- o P5 dessa Home registra prontidão para decisão humana e não mandato de wireframing;
+- wireframe não será utilizado como etapa de continuidade dessa Home;
+- `UXA-022` permanece no escopo histórico da Main Home e não é reclassificada por essa decisão;
+- a próxima forma de materialização dessa Home não está definida e exige autorização humana separada;
 - projeção não é realizado;
 - preço não é disposição a pagar;
 - capital não é receita;
@@ -404,3 +414,5 @@ D5-C1/C2/C3/C4A/C4B não são V5 e não alteram a numeração UXA.
 A D5-C4B encerra somente a lacuna específica D5-C de continuidade entre Hoje e Objetivos/Próximos Passos/Minha Evolução no limite documental.
 
 D6, D7, materialização de `PER-009`, maturidade das transições internas de Planos, integrações patrocinadas, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria. Nenhuma é iniciada automaticamente.
+
+Para a Home Pública de Organizações e Coletivos, `GKR-HOME-DECISION-NO-WIREFRAME-001` encerra apenas a dúvida sobre usar ou não wireframe: **wireframe não será usado**. Qualquer materialização posterior deverá ser escolhida e autorizada separadamente, por caminho que não passe por wireframe. Figma, protótipo, UI, implementação, código e publicação não são iniciados por este registro.

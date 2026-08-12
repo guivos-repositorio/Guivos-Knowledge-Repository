@@ -4,7 +4,7 @@ title: Roadmap Arquitetural — Consolidação Documental P0–P9
 status: active
 version: 12.76.0
 owner: Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-12
 supersedes_partial:
   - ROADMAP-12.75.0
 related:
@@ -14,6 +14,8 @@ related:
   - UXA-101
   - GTM-007
   - GTM-008
+  - GKR-HOME-P5
+  - GKR-HOME-DECISION-NO-WIREFRAME-001
   - M7.88
 ---
 
@@ -21,7 +23,7 @@ related:
 
 ## 1. Autoridade
 
-Este roadmap registra o estado global após a ressincronização documental de agosto de 2026. O estado oficial permanece em `GKR-STATE-001`.
+Este roadmap registra o estado global após a ressincronização documental de agosto de 2026 e a decisão humana pós-P5 sobre a continuidade da Home Pública de Organizações e Coletivos. O estado oficial permanece em `GKR-STATE-001`.
 
 ## 2. Estado vigente
 
@@ -31,13 +33,15 @@ Este roadmap registra o estado global após a ressincronização documental de a
 | marco funcional | **M7.88** |
 | última UXA | **UXA-101** |
 | UXA-102/V5 | **não iniciada** |
-| SVGs | **118** |
-| associações | **118** |
-| perfis | **31** |
-| superfícies/estados/fronteiras | **53** |
-| transições | **54** |
+| SVGs | **121** |
+| associações | **121** |
+| perfis | **34** |
+| superfícies/estados/fronteiras | **57** |
+| transições | **66** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | programa P0–P9 | documentalmente consolidado após integração de P9 |
+| Home de Organizações e Coletivos — P1–P5 | concluída no limite de prontidão documental |
+| continuidade pós-P5 da Home de Organizações e Coletivos | **sem wireframe; próxima forma de materialização não definida e sujeita a autorização humana separada** |
 
 ## 3. Sequência funcional preservada
 
@@ -50,7 +54,7 @@ UXA-097 — compreensão inicial → Tela Hoje
 → UXA-102/V5 — PENDENTE, NÃO INICIADA
 ```
 
-Nenhuma frente P0–P9 cria nova UXA.
+Nenhuma frente P0–P9 nem a decisão pós-P5 da Home cria nova UXA.
 
 ## 4. Consolidação temática
 
@@ -67,6 +71,10 @@ Nenhuma frente P0–P9 cria nova UXA.
 | P8 | sete Produtos Especializados rebaselineados |
 | P9 | estado transversal, matriz e Public Canon reconciliados |
 
+A sequência P1–P5 específica da Home Pública de Organizações e Coletivos permanece historicamente válida. `GKR-HOME-P5` registrou prontidão suficiente para uma decisão humana sobre a etapa seguinte; `GKR-HOME-DECISION-NO-WIREFRAME-001`, posterior, determinou que **wireframe não será utilizado como etapa de continuidade dessa Home**.
+
+Essa decisão não reescreve P1–P5, não deprecia `UXA-022` da Main Home e não autoriza automaticamente Figma, protótipo, UI, implementação ou publicação.
+
 ## 5. Lacunas não fechadas por documentação
 
 Continuam dependentes de evidência ou autorização própria:
@@ -80,7 +88,8 @@ Continuam dependentes de evidência ou autorização própria:
 - cobrança/gateway real;
 - handoffs especializados ainda não materializados;
 - UXA-102/V5;
-- Product Engineering.
+- Product Engineering;
+- definição, por decisão humana separada, do caminho de materialização da Home de Organizações e Coletivos **sem wireframe**.
 
 ## 6. Próximos caminhos possíveis
 
@@ -94,8 +103,13 @@ O próximo ato deve nascer de uma necessidade concreta e autoridade própria. Ex
 - controle operacional/privacy → gates P6;
 - readiness/piloto territorial → gates P7;
 - nova continuidade funcional → UXA-102 somente por autorização humana separada;
-- implementação → Product Engineering somente por reativação explícita.
+- implementação → Product Engineering somente por reativação explícita;
+- Home de Organizações e Coletivos → escolha humana separada de um caminho de materialização que **não passe por wireframe**.
 
 ## 7. Preservação
 
 `ressincronização documental concluída ≠ produto implementado ≠ operação comprovada`.
+
+Para a Home de Organizações e Coletivos, adicionalmente:
+
+`P5 concluído ≠ wireframe autorizado ≠ Figma autorizado ≠ UI autorizada ≠ implementação autorizada ≠ publicação autorizada`.
