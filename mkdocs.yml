@@ -55,9 +55,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
-# O GKR possui um corpus técnico amplo. A navegação pública expõe apenas
-# documentos de leitura e impressão por assunto; fontes técnicas permanecem
-# acessíveis por busca, links internos e histórico do repositório.
+# A navegação é uma interface de acesso por assunto. O corpus documental
+# completo permanece preservado no repositório, inclusive documentos técnicos,
+# históricos, validações e autoridades especializadas não exibidos no menu.
 not_in_nav: |
   *
 
@@ -71,11 +71,13 @@ nav:
       - Glossário: glossary.md
 
   - Fundamentos da Guivos:
-      - Fundamentos da Guivos: geb/fundamentos-da-guivos.md
-      - Modelo Fundamental da Evolução: geb/modelo-fundamental-da-evolucao.md
+      - Fundação, Essência e Propósito: geb/part-01-foundation/index.md
+      - Modelo Fundamental da Jornada: geb/part-02-fundamental-model/index.md
+      - Framework de Evolução: evolution-framework/index.md
 
   - Ecossistema e Produtos:
-      - Arquitetura do Ecossistema e Produtos: product-architecture/index.md
+      - Arquitetura do Ecossistema: geb/index.md
+      - Arquitetura de Produtos: product-architecture/index.md
       - Guivos Journey: product-architecture/journey.md
       - Produtos Especializados:
           - Guivos Travel: product-architecture/travel.md
@@ -86,8 +88,9 @@ nav:
           - Guivos Intelligence: product-architecture/intelligence.md
 
   - Experiência, Design e Jornadas:
+      - Home Pública — Pessoa: experience-architecture/public-home-master-document.md
+      - Home — Organizações e Coletivos: experience-architecture/public-home-organizations-collectives-master-document.md
       - Visão Geral das Jornadas: journeys/index.md
-      - Home Pública: experience-architecture/home-publica.md
       - Jornada da Pessoa: journeys/person.md
       - Jornada do Coletivo: journeys/collective.md
       - Jornada da Organização: journeys/organization.md
@@ -97,24 +100,30 @@ nav:
           - Estado Atual e Validação: experience-architecture/uxa-099-opportunity-boost-residual-states-functional-validation-and-reformulation.md
 
   - Pesquisa e Validação:
+      - Pesquisa — Visão Geral: research/index.md
       - Validação de Mercado: research/market-validation/README.md
-      - Pesquisa do Ecossistema: research/pesquisa-do-ecossistema.md
 
   - Estratégia, Mercado e Crescimento:
       - Estratégia de Negócio: business-architecture/index.md
-      - Go-to-Market: go-to-market/go-to-market-consolidado.md
+      - Go-to-Market: go-to-market/index.md
 
   - Economia, Planos e Monetização:
-      - Economia, Planos e Monetização: economic-model/economia-planos-monetizacao-atual.md
-      - Planejamento Financeiro M0–M6: economic-model/planejamento-financeiro-m0-m6.md
+      - Modelo Econômico da Guivos: economic-model/index.md
+
+  - Marca e Identidade:
+      - Marca, Naming e Ativos Digitais: governance-framework/brand-and-digital-assets-index.md
+
+  - Governança Institucional, Jurídico e Privacidade:
+      - Arquitetura Institucional e Jurídica: governance-framework/institutional-and-legal-architecture-index.md
+      - Privacidade e Verdade Operacional: governance-framework/operational-privacy-and-legal-truth-index.md
+      - Prontidão Operacional Internacional: governance-framework/international-operations-and-cross-border-readiness.md
 
   - Arquitetura, Dados e IA:
       - Arquitetura Corporativa: enterprise-architecture/index.md
       - Inteligência e IA: intelligence-architecture/index.md
-      - Grafo e Neo4j: adr/ADR-007-neo4j-primary-graph-reference.md
+      - Grafo, Neo4j e Intelligence: enterprise-architecture/graph-intelligence-reference-architecture.md
 
   - Governança do Repositório:
-      - Governança do Repositório: governance-framework/governanca-do-repositorio.md
       - Painel de Conhecimento: project/knowledge-board.md
       - Marcos Arquiteturais: project/architectural-milestones.md
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
