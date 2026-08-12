@@ -1,0 +1,2992 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
+      
+      
+        <meta name="author" content="Guivos">
+      
+      
+      
+        <link rel="prev" href="../../journeys/">
+      
+      
+        <link rel="next" href="../../journeys/person/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Home Pública da Guivos - Guivos Knowledge Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <style>
+    /*
+      A navegação pública do GKR é organizada por grandes assuntos.
+      Somente o primeiro nível recebe maior hierarquia tipográfica;
+      documentos e subgrupos permanecem visualmente secundários.
+    */
+    .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+    .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-top: 0.35rem;
+    }
+
+    .md-nav--primary > .md-nav__list > .md-nav__item--section + .md-nav__item--section {
+      margin-top: 0.2rem;
+    }
+
+    .gkr-page-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 1rem;
+    }
+
+    .gkr-page-print {
+      cursor: pointer;
+    }
+
+    @media print {
+      .gkr-page-actions,
+      .md-header,
+      .md-tabs,
+      .md-sidebar,
+      .md-footer,
+      .md-top,
+      .md-dialog,
+      .md-content__button {
+        display: none !important;
+      }
+
+      .md-main__inner,
+      .md-content,
+      .md-content__inner {
+        margin: 0 !important;
+        max-width: none !important;
+      }
+    }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#home-publica-da-guivos" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home Pública da Guivos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guivos Knowledge Repository
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comece por aqui
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Comece por aqui
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/guia-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--public-canon"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/current-state-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estado Atual do Repositório
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos da Guivos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundamentos da Guivos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/fundamentos-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/modelo-fundamental-da-evolucao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Fundamental da Evolução
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecossistema e Produtos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ecossistema e Produtos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura do Ecossistema e Produtos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Journey
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Produtos Especializados
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Produtos Especializados
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/travel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Travel
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/mall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Mall
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Media
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/business/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Business
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/ads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Ads
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/intelligence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Intelligence
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiência, Design e Jornadas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiência, Design e Jornadas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral das Jornadas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Pública
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Pública
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-estado-atual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Estado atual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-o-que-a-home-precisa-transmitir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. O que a Home precisa transmitir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-tese-institucional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Tese institucional
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/person/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornada da Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/collective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornada do Coletivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornada da Organização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uxa-098-publication-discovery-map-list-detail-integrated-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explorar, Mapa e Oportunidades
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Opportunity Boost
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Opportunity Boost
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uxa-038-opportunity-boost-functional-experience-contract/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos e Funcionamento
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uxa-099-opportunity-boost-residual-states-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estado Atual e Validação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pesquisa e Validação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pesquisa e Validação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/pesquisa-do-ecossistema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pesquisa do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estratégia, Mercado e Crescimento
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Estratégia, Mercado e Crescimento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estratégia de Negócio
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/go-to-market-consolidado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go-to-Market
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Economia, Planos e Monetização
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Economia, Planos e Monetização
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/economia-planos-monetizacao-atual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Economia, Planos e Monetização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/planejamento-financeiro-m0-m6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planejamento Financeiro M0–M6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura, Dados e IA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Arquitetura, Dados e IA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Corporativa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inteligência e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-007-neo4j-primary-graph-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grafo e Neo4j
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governança do Repositório
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governança do Repositório
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/governanca-do-repositorio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governança do Repositório
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/knowledge-board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Painel de Conhecimento
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/architectural-milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marcos Arquiteturais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz de Consolidação Canônica
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-estado-atual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Estado atual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-o-que-a-home-precisa-transmitir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. O que a Home precisa transmitir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-tese-institucional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Tese institucional
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+    <div class="gkr-page-actions">
+      <button
+        type="button"
+        class="md-button gkr-page-print"
+        onclick="window.print()"
+        aria-label="Imprimir somente este assunto"
+      >
+        Imprimir este assunto
+      </button>
+    </div>
+  
+  
+                  
+
+
+  
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/experience-architecture/home-publica.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="home-publica-da-guivos">Home Pública da Guivos<a class="headerlink" href="#home-publica-da-guivos" title="Permanent link">&para;</a></h1>
+<h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este é o documento consolidado para leitura, impressão e compreensão da <strong>Home Pública da Guivos</strong>.</p>
+<p>Ele substitui, como porta de consumo, a necessidade de navegar por dezenas de documentos de construção, auditorias, refinamentos e handoffs. Esses artefatos permanecem no repositório como fontes internas de rastreabilidade quando ainda válidos.</p>
+<p>A Home Pública possui duas perspectivas narrativas dentro da mesma Guivos:</p>
+<div class="highlight"><pre><span></span><code>HOME PÚBLICA — PESSOA
+→ O que pode se tornar possível para mim?
+
+HOME PÚBLICA — ORGANIZAÇÕES E COLETIVOS
+→ O que podemos tornar possível juntos?
+</code></pre></div>
+<p>Não são duas empresas, marcas ou ecossistemas.</p>
+<p>São duas portas para compreender a mesma Guivos a partir de protagonistas diferentes.</p>
+<hr />
+<h2 id="2-estado-atual">2. Estado atual<a class="headerlink" href="#2-estado-atual" title="Permanent link">&para;</a></h2>
+<p>A arquitetura estratégica das duas perspectivas está consolidada.</p>
+<p>Para a perspectiva de Organizações e Coletivos, o programa de prontidão P1→P5 foi concluído e o gate pré-materialização foi satisfeito.</p>
+<p>Decisão posterior de processo:</p>
+<blockquote>
+<p><strong>A Guivos não utilizará wireframe como etapa para a Home Pública atual.</strong></p>
+</blockquote>
+<p>Portanto, documentos ou imagens de wireframes antigos da Home não representam o estado vigente e não devem ser utilizados como referência de Design.</p>
+<p>Nenhuma dessas decisões autoriza automaticamente Figma, protótipo, UI final, implementação ou publicação em produção.</p>
+<hr />
+<h2 id="3-o-que-a-home-precisa-transmitir">3. O que a Home precisa transmitir<a class="headerlink" href="#3-o-que-a-home-precisa-transmitir" title="Permanent link">&para;</a></h2>
+<p>Antes de explicar produtos, a Home deve transmitir:</p>
+<ul>
+<li>futuro;</li>
+<li>possibilidade;</li>
+<li>simplicidade;</li>
+<li>confiança;</li>
+<li>escala global;</li>
+<li>sofisticação sem complexidade;</li>
+<li>tecnologia sem frieza;</li>
+<li>humanidade sem clichê;</li>
+<li>uma Guivos maior do que a soma dos produtos.</li>
+</ul>
+<p>Direção transversal:</p>
+<blockquote>
+<p><strong>Futuro sem ficção. Tecnologia sem frieza. Sofisticação sem elitismo. Escala sem ruído. Humanidade sem clichê.</strong></p>
+</blockquote>
+<p>A Home não deve começar como catálogo, pricing, formulário, página SaaS ou portal institucional convencional.</p>
+<hr />
+<h2 id="4-tese-institucional">4. Tese institucional<a class="headerlink" href="#4-tese-institucional" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Entrar na Guivos deve ser percebido como entrar em um ecossistema capaz de ampliar o campo de possibilidades ao redor de Pessoas, Organizações e Coletivos, conectando elementos que normalmente existem de forma dispersa e tornando novos caminhos mais visíveis e possíveis, sem retirar de cada participante a autonomia sobre o caminho a seguir.</strong></p>
+</blockquote>
+<p>A Guivos não é autora da transformação humana.</p>
+<p>Ela pode:</p>
+<ul>
+<li>ampliar horizonte;</li>
+<li>organizar contexto;</li>
+<li>conectar possibilidades;</li>
+<li>aproximar participantes;</li>
+<li>tornar caminhos mais visíveis;</li>
+<li>apoiar continuidade;</li>
+<li>ajudar capacidades complementares a se encontrarem.</li>
+</ul>
+<blockquote>
+<p><strong>A Guivos não precisa ser o centro da história. Precisa ampliar o mundo em que a história pode acontecer.</strong></p>
+</blockquote>
+<hr />
+<h1 id="parte-i-home-publica-orientada-a-pessoa">Parte I — Home Pública orientada à Pessoa<a class="headerlink" href="#parte-i-home-publica-orientada-a-pessoa" title="Permanent link">&para;</a></h1>
+<h2 id="5-perspectiva">5. Perspectiva<a class="headerlink" href="#5-perspectiva" title="Permanent link">&para;</a></h2>
+<p>A pergunta de perspectiva é:</p>
+<blockquote>
+<p><strong>O que pode se tornar possível para mim?</strong></p>
+</blockquote>
+<p>A pergunta-mãe de Hero consolidada na arquitetura estratégica é:</p>
+<blockquote>
+<p><strong>O que se torna possível quando você entra aqui?</strong></p>
+</blockquote>
+<p>Essas formulações cumprem funções compatíveis: deslocam a conversa de “o que a Guivos vende” para “o que pode passar a fazer parte do campo de possibilidades de quem entra”.</p>
+<p>Camada complementar de trabalho:</p>
+<blockquote>
+<p><strong>Um mundo maior de possibilidades passa a fazer parte do seu.</strong></p>
+</blockquote>
+<p>Assinatura complementar:</p>
+<blockquote>
+<p><strong>Do possível ao vivido.</strong></p>
+</blockquote>
+<p>A copy pública final ainda pode ser lapidada sem reabrir a tese.</p>
+<hr />
+<h2 id="6-primeiro-comportamento-desejado">6. Primeiro comportamento desejado<a class="headerlink" href="#6-primeiro-comportamento-desejado" title="Permanent link">&para;</a></h2>
+<p>A primeira motivação não é:</p>
+<ul>
+<li>comprar;</li>
+<li>cadastrar;</li>
+<li>contratar;</li>
+<li>escolher produto;</li>
+<li>viajar;</li>
+<li>consumir conteúdo;</li>
+<li>usar IA.</li>
+</ul>
+<p>É:</p>
+<blockquote>
+<p><strong>descobrir.</strong></p>
+</blockquote>
+<p>Cadeia conceitual:</p>
+<div class="highlight"><pre><span></span><code>ENTRAR
+→ AMPLIAR
+→ DESCOBRIR
+→ CONECTAR
+→ ESCOLHER
+→ EXPERIENCIAR
+→ EVOLUIR
+</code></pre></div>
+<p>Isso representa direção perceptiva, não promessa de resultado.</p>
+<hr />
+<h2 id="7-onze-movimentos-da-home-da-pessoa">7. Onze movimentos da Home da Pessoa<a class="headerlink" href="#7-onze-movimentos-da-home-da-pessoa" title="Permanent link">&para;</a></h2>
+<p>Os onze movimentos governam significado. Não significam onze seções visuais obrigatórias.</p>
+<h3 id="1-hero-abrir-o-horizonte">1. Hero — abrir o horizonte<a class="headerlink" href="#1-hero-abrir-o-horizonte" title="Permanent link">&para;</a></h3>
+<p>A pessoa percebe que existe um campo maior de possibilidades.</p>
+<h3 id="2-possibilidades-reais">2. Possibilidades reais<a class="headerlink" href="#2-possibilidades-reais" title="Permanent link">&para;</a></h3>
+<p>A narrativa sai da abstração e mostra possibilidades reconhecíveis no mundo real.</p>
+<h3 id="3-amplitude">3. Amplitude<a class="headerlink" href="#3-amplitude" title="Permanent link">&para;</a></h3>
+<p>Mostra que a Guivos não se limita a uma única dimensão da vida ou a um único produto.</p>
+<h3 id="4-desconexao">4. Desconexão<a class="headerlink" href="#4-desconexao" title="Permanent link">&para;</a></h3>
+<p>Revela que conhecimentos, experiências, oportunidades, lugares e participantes normalmente estão dispersos.</p>
+<h3 id="5-guivos-conexao">5. Guivos / conexão<a class="headerlink" href="#5-guivos-conexao" title="Permanent link">&para;</a></h3>
+<p>Explica por que um ecossistema de contexto e continuidade pode existir.</p>
+<h3 id="6-do-possivel-ao-vivido">6. Do possível ao vivido<a class="headerlink" href="#6-do-possivel-ao-vivido" title="Permanent link">&para;</a></h3>
+<p>Mostra como uma possibilidade pode tornar-se experiência sem prometer transformação automática.</p>
+<h3 id="7-pertencimento">7. Pertencimento<a class="headerlink" href="#7-pertencimento" title="Permanent link">&para;</a></h3>
+<p>Apresenta Pessoas, Organizações e Coletivos como quem participa do ecossistema.</p>
+<h3 id="8-ecossistema-produtos">8. Ecossistema / produtos<a class="headerlink" href="#8-ecossistema-produtos" title="Permanent link">&para;</a></h3>
+<p>Os produtos aparecem depois da compreensão, como capacidades diferentes da mesma Guivos.</p>
+<h3 id="9-autoridade">9. Autoridade<a class="headerlink" href="#9-autoridade" title="Permanent link">&para;</a></h3>
+<p>A Home demonstra substância por realidade, fontes, governança e evidência proporcional.</p>
+<h3 id="10-autonomia-e-confianca">10. Autonomia e confiança<a class="headerlink" href="#10-autonomia-e-confianca" title="Permanent link">&para;</a></h3>
+<p>A pessoa precisa perceber que mantém escolha, controle, privacidade e possibilidade de recusa.</p>
+<h3 id="11-descoberta">11. Descoberta<a class="headerlink" href="#11-descoberta" title="Permanent link">&para;</a></h3>
+<p>O encerramento reabre o horizonte em vez de fechar a página em uma venda.</p>
+<hr />
+<h2 id="8-sete-macroexperiencias-de-referencia-pessoa">8. Sete macroexperiências de referência — Pessoa<a class="headerlink" href="#8-sete-macroexperiencias-de-referencia-pessoa" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>1. Abrir o Horizonte
+2. Ver o Real e Perceber a Amplitude
+3. Desconexão → Conexão
+4. Do Possível ao Vivido + Pertencimento
+5. Coerência do Ecossistema
+6. Autoridade + Autonomia
+7. Reabrir o Horizonte
+</code></pre></div>
+<p>Macroexperiência organiza ritmo; não define layout.</p>
+<hr />
+<h1 id="parte-ii-home-publica-de-organizacoes-e-coletivos">Parte II — Home Pública de Organizações e Coletivos<a class="headerlink" href="#parte-ii-home-publica-de-organizacoes-e-coletivos" title="Permanent link">&para;</a></h1>
+<h2 id="9-perspectiva">9. Perspectiva<a class="headerlink" href="#9-perspectiva" title="Permanent link">&para;</a></h2>
+<p>Pergunta-mãe:</p>
+<blockquote>
+<p><strong>O que podemos tornar possível juntos?</strong></p>
+</blockquote>
+<p>O visitante deve perceber que sua Organização ou Coletivo já possui capacidades e que essas capacidades podem participar de um campo maior de possibilidades.</p>
+<p>A página não começa por:</p>
+<ul>
+<li><code>soluções para empresas</code>;</li>
+<li><code>alcance nossos usuários</code>;</li>
+<li><code>fale com vendas</code>;</li>
+<li><code>crie sua comunidade</code>;</li>
+<li><code>anuncie agora</code>;</li>
+<li><code>escolha seu plano</code>.</li>
+</ul>
+<p>Ela começa pelo significado de participar.</p>
+<hr />
+<h2 id="10-organizacao">10. Organização<a class="headerlink" href="#10-organizacao" title="Permanent link">&para;</a></h2>
+<p>Definição pública:</p>
+<blockquote>
+<p><strong>Organizações transformam capacidade estruturada em realização.</strong></p>
+</blockquote>
+<p>Uma Organização estrutura pessoas, conhecimento, recursos e capacidades para realizar algo.</p>
+<p>Pode ter finalidade:</p>
+<ul>
+<li>econômica;</li>
+<li>social;</li>
+<li>pública;</li>
+<li>educacional;</li>
+<li>comunitária;</li>
+<li>religiosa;</li>
+<li>cultural;</li>
+<li>profissional;</li>
+<li>híbrida.</li>
+</ul>
+<p><strong>Organização ≠ Guivos Business.</strong></p>
+<p>Uma Organização pode participar da Guivos sem contratar ou utilizar Business.</p>
+<hr />
+<h2 id="11-coletivo">11. Coletivo<a class="headerlink" href="#11-coletivo" title="Permanent link">&para;</a></h2>
+<p>Definição pública:</p>
+<blockquote>
+<p><strong>Coletivos transformam algo compartilhado em capacidade coletiva.</strong></p>
+</blockquote>
+<p>Coletivos reúnem pessoas em torno de propósito, identidade, causa, interesse, território, prática, experiência ou objetivo compartilhado e transformam essa união em capacidade de mobilização, criação e realização coletiva.</p>
+<p>Um Coletivo não precisa ser ONG, projeto social ou entidade formal.</p>
+<p>Pode surgir em torno de:</p>
+<ul>
+<li>profissão;</li>
+<li>esporte;</li>
+<li>cultura;</li>
+<li>território;</li>
+<li>espiritualidade;</li>
+<li>conhecimento;</li>
+<li>empreendedorismo;</li>
+<li>causa;</li>
+<li>identidade;</li>
+<li>hobby;</li>
+<li>objetivo compartilhado.</li>
+</ul>
+<p><strong>Comunidade não é produto Guivos.</strong> Uma comunidade existente pode participar como Coletivo quando sua natureza for compatível.</p>
+<hr />
+<h2 id="12-pessoa-organizacao-e-coletivo">12. Pessoa, Organização e Coletivo<a class="headerlink" href="#12-pessoa-organizacao-e-coletivo" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>PESSOA
+vive sua própria jornada
+
+ORGANIZAÇÃO
+estrutura capacidade para realizar
+
+COLETIVO
+transforma algo compartilhado em capacidade coletiva
+
+GUIVOS
+conecta participantes, possibilidades e contextos ao longo das jornadas
+</code></pre></div>
+<p>Tipo estrutural e papel contextual permanecem separados.</p>
+<hr />
+<h2 id="13-onze-movimentos-organizacoes-e-coletivos">13. Onze movimentos — Organizações e Coletivos<a class="headerlink" href="#13-onze-movimentos-organizacoes-e-coletivos" title="Permanent link">&para;</a></h2>
+<h3 id="1-o-que-podemos-tornar-possivel-juntos">1. O que podemos tornar possível juntos?<a class="headerlink" href="#1-o-que-podemos-tornar-possivel-juntos" title="Permanent link">&para;</a></h3>
+<p>Abre o campo de possibilidades.</p>
+<h3 id="2-talvez-voces-ja-facam-isso-todos-os-dias">2. Talvez vocês já façam isso todos os dias.<a class="headerlink" href="#2-talvez-voces-ja-facam-isso-todos-os-dias" title="Permanent link">&para;</a></h3>
+<p>Reconhece conhecimento, oportunidades, mobilização, estrutura, experiências e iniciativas que já existem.</p>
+<h3 id="3-e-se-essas-possibilidades-pudessem-se-conectar-com-mais-continuidade">3. E se essas possibilidades pudessem se conectar com mais continuidade?<a class="headerlink" href="#3-e-se-essas-possibilidades-pudessem-se-conectar-com-mais-continuidade" title="Permanent link">&para;</a></h3>
+<p>Apresenta a fragmentação sem atacar os canais existentes e sem prometer causalidade.</p>
+<h3 id="4-e-aqui-que-a-guivos-entra">4. É aqui que a Guivos entra.<a class="headerlink" href="#4-e-aqui-que-a-guivos-entra" title="Permanent link">&para;</a></h3>
+<p>Explica a Guivos como contexto, conexão e continuidade — não como substituta dos participantes.</p>
+<h3 id="5-um-mesmo-ecossistema-diferentes-formas-de-participar">5. Um mesmo ecossistema. Diferentes formas de participar.<a class="headerlink" href="#5-um-mesmo-ecossistema-diferentes-formas-de-participar" title="Permanent link">&para;</a></h3>
+<p>Distingue Pessoa, Organização e Coletivo.</p>
+<h3 id="6-o-que-falta-para-um-pode-existir-no-outro">6. O que falta para um pode existir no outro.<a class="headerlink" href="#6-o-que-falta-para-um-pode-existir-no-outro" title="Permanent link">&para;</a></h3>
+<p>Mostra complementaridade multidirecional sem reduzir o ecossistema a oferta e demanda.</p>
+<h3 id="7-a-evolucao-pode-acontecer-em-muitas-dimensoes">7. A evolução pode acontecer em muitas dimensões.<a class="headerlink" href="#7-a-evolucao-pode-acontecer-em-muitas-dimensoes" title="Permanent link">&para;</a></h3>
+<p>Amplia os contextos em que capacidades podem fazer sentido e preserva caminhos não prescritivos.</p>
+<h3 id="8-quando-o-valor-circula-o-ecossistema-pode-crescer">8. Quando o valor circula, o ecossistema pode crescer.<a class="headerlink" href="#8-quando-o-valor-circula-o-ecossistema-pode-crescer" title="Permanent link">&para;</a></h3>
+<p>Mostra que todos podem gerar e receber valor; escala não é volume vazio.</p>
+<h3 id="9-participar-tambem-exige-confianca">9. Participar também exige confiança.<a class="headerlink" href="#9-participar-tambem-exige-confianca" title="Permanent link">&para;</a></h3>
+<p>Torna perceptíveis governança, privacidade, proveniência, transparência, autoridade, limites e autonomia.</p>
+<h3 id="10-uma-guivos-diferentes-capacidades-para-fazer-isso-acontecer">10. Uma Guivos. Diferentes capacidades para fazer isso acontecer.<a class="headerlink" href="#10-uma-guivos-diferentes-capacidades-para-fazer-isso-acontecer" title="Permanent link">&para;</a></h3>
+<p>Apresenta produtos e capacidades dentro da hierarquia correta do ecossistema.</p>
+<h3 id="11-como-voce-participa">11. Como você participa?<a class="headerlink" href="#11-como-voce-participa" title="Permanent link">&para;</a></h3>
+<p>Somente no fechamento surgem os dois caminhos:</p>
+<ul>
+<li>descobrir como participar como Organização;</li>
+<li>descobrir como participar como Coletivo.</li>
+</ul>
+<p>A bifurcação não deve dominar a Hero.</p>
+<hr />
+<h2 id="14-sete-macroexperiencias-organizacoes-e-coletivos">14. Sete macroexperiências — Organizações e Coletivos<a class="headerlink" href="#14-sete-macroexperiencias-organizacoes-e-coletivos" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>1. Abrir o campo de possibilidades
+2. Reconhecer o que já existe e perceber a desconexão
+3. Entender a Guivos e quem participa
+4. Perceber complementaridade e ampliar os contextos
+5. Compreender valor, diversidade e escala
+6. Encontrar confiança e compreender as capacidades da Guivos
+7. Escolher como continuar participando
+</code></pre></div>
+<p>A progressão perceptiva é:</p>
+<div class="highlight"><pre><span></span><code>capacidade
+→ reconhecimento
+→ desconexão
+→ Guivos
+→ participantes
+→ complementaridade
+→ amplitude
+→ valor
+→ escala
+→ confiança
+→ capacidades
+→ participação
+</code></pre></div>
+<hr />
+<h1 id="parte-iii-contratos-compartilhados">Parte III — Contratos compartilhados<a class="headerlink" href="#parte-iii-contratos-compartilhados" title="Permanent link">&para;</a></h1>
+<h2 id="15-header-global">15. Header global<a class="headerlink" href="#15-header-global" title="Permanent link">&para;</a></h2>
+<p>As duas perspectivas pertencem ao mesmo sistema público de navegação.</p>
+<p>Arquitetura conceitual:</p>
+<div class="highlight"><pre><span></span><code>Guivos | Sobre | Organizações e Coletivos
+
+Compartilhar | Idioma/Região | Launcher | Login | Iniciar Jornada
+</code></pre></div>
+<p>Na Home principal, <code>Organizações e Coletivos</code> é um destino.</p>
+<p>Na segunda Home, identifica o contexto atual.</p>
+<p>Não existe Header B2B paralelo.</p>
+<hr />
+<h2 id="16-iniciar-jornada">16. Iniciar Jornada<a class="headerlink" href="#16-iniciar-jornada" title="Permanent link">&para;</a></h2>
+<p><code>Iniciar Jornada</code> é a porta própria da <strong>Guivos Journey</strong>.</p>
+<p>Não significa:</p>
+<ul>
+<li>cadastrar Organização;</li>
+<li>cadastrar Coletivo;</li>
+<li>contratar Business;</li>
+<li>iniciar onboarding institucional.</li>
+</ul>
+<p>A navegação precisa manter distinguíveis:</p>
+<div class="highlight"><pre><span></span><code>iniciar minha Journey
+≠ descobrir como minha Organização participa
+≠ descobrir como meu Coletivo participa
+</code></pre></div>
+<hr />
+<h2 id="17-launcher-do-ecossistema">17. Launcher do ecossistema<a class="headerlink" href="#17-launcher-do-ecossistema" title="Permanent link">&para;</a></h2>
+<p>O launcher oferece acesso rápido a ambientes especializados:</p>
+<ul>
+<li>Travel;</li>
+<li>Ads;</li>
+<li>Media;</li>
+<li>Business;</li>
+<li>Intelligence;</li>
+<li>Mall.</li>
+</ul>
+<p>Journey permanece fora do launcher porque utiliza <code>Iniciar Jornada</code> como porta própria.</p>
+<p>Launcher é navegação. Não é explicação da arquitetura institucional.</p>
+<hr />
+<h2 id="18-participantes-nao-sao-produtos">18. Participantes não são produtos<a class="headerlink" href="#18-participantes-nao-sao-produtos" title="Permanent link">&para;</a></h2>
+<p>Separação estrutural:</p>
+<div class="highlight"><pre><span></span><code>Pessoa / Organização / Coletivo
+= quem participa
+
+Journey / Travel / Mall / Media / Business / Intelligence / Ads
+= como o ecossistema ganha capacidades e manifestações
+</code></pre></div>
+<p>Não existe correspondência obrigatória:</p>
+<div class="highlight"><pre><span></span><code>Pessoa → Journey
+Organização → Business
+Coletivo → Comunidade
+</code></pre></div>
+<p>Essas equivalências são inválidas.</p>
+<hr />
+<h2 id="19-hierarquia-dos-produtos">19. Hierarquia dos produtos<a class="headerlink" href="#19-hierarquia-dos-produtos" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GUIVOS
+│
+├── EXPERIÊNCIA E CONTINUIDADE
+│   └── Journey
+│
+├── MANIFESTAÇÕES ESPECIALIZADAS
+│   ├── Travel
+│   ├── Mall
+│   ├── Media
+│   ├── Business
+│   └── Ads
+│
+└── INTELIGÊNCIA TRANSVERSAL
+    └── Intelligence
+</code></pre></div>
+<p>Nenhuma dessas estruturas, isoladamente, é a Guivos.</p>
+<p>A Home deve mostrar <strong>uma Guivos antes de sete produtos</strong>.</p>
+<hr />
+<h2 id="20-conteudo-e-prova">20. Conteúdo e prova<a class="headerlink" href="#20-conteudo-e-prova" title="Permanent link">&para;</a></h2>
+<p>A Home distingue cinco classes de verdade editorial:</p>
+<ol>
+<li>fato governado;</li>
+<li>evidência verificável;</li>
+<li>interpretação editorial;</li>
+<li>cenário ilustrativo;</li>
+<li>estado futuro ou capacidade ainda não disponível.</li>
+</ol>
+<p>A experiência visual não pode fazer uma classe mais fraca parecer uma classe mais forte.</p>
+<p>Regras:</p>
+<ul>
+<li>cenário ilustrativo ≠ case real;</li>
+<li>logo ≠ autoridade;</li>
+<li>volume ≠ evolução;</li>
+<li>mapa global ≠ operação global;</li>
+<li>projeção ≠ resultado realizado;</li>
+<li>arquitetura futura ≠ disponibilidade atual.</li>
+</ul>
+<p>Quando falta prova real:</p>
+<blockquote>
+<p><strong>reduzir a força da afirmação é melhor que inventar evidência.</strong></p>
+</blockquote>
+<hr />
+<h2 id="21-dados-inteligencia-e-confianca">21. Dados, inteligência e confiança<a class="headerlink" href="#21-dados-inteligencia-e-confianca" title="Permanent link">&para;</a></h2>
+<p>Organizações não recebem automaticamente dados de Pessoas ou membros de Coletivos.</p>
+<p>Coletivos não podem autorizar genericamente, em nome de cada pessoa, usos que exigem autorização individual.</p>
+<p>Guivos Intelligence deve ser comunicada como capacidade transversal de compreensão responsável.</p>
+<p>Formulação preferencial:</p>
+<blockquote>
+<p><strong>compreender contextos através de inteligência responsável, dados autorizados e evidências adequadas.</strong></p>
+</blockquote>
+<p>Evitar:</p>
+<ul>
+<li>acesso privilegiado a usuários;</li>
+<li>dossiê de pessoas;</li>
+<li>vigilância;</li>
+<li>segmentação invasiva;</li>
+<li>inferência apresentada como fato;</li>
+<li>decisão automatizada tratada como autoridade final.</li>
+</ul>
+<hr />
+<h2 id="22-valor-e-escala">22. Valor e escala<a class="headerlink" href="#22-valor-e-escala" title="Permanent link">&para;</a></h2>
+<p>O modelo não é:</p>
+<div class="highlight"><pre><span></span><code>Organização dá
+→ Pessoa recebe
+</code></pre></div>
+<p>Nem:</p>
+<div class="highlight"><pre><span></span><code>Organização paga a Guivos
+→ Guivos distribui valor
+</code></pre></div>
+<p>A lógica é multidirecional:</p>
+<div class="highlight"><pre><span></span><code>Pessoa ↕ Coletivo ↕ Organização ↕ Ecossistema
+</code></pre></div>
+<p>Cada participante pode contribuir, receber e abrir novas possibilidades.</p>
+<blockquote>
+<p><strong>Quando a relação faz sentido para todos, ela pode continuar.</strong></p>
+</blockquote>
+<p>E:</p>
+<blockquote>
+<p><strong>Cada novo participante pode ampliar o que se torna possível para os demais.</strong></p>
+</blockquote>
+<p>Isso não deve ser traduzido como promessa automática de “efeito de rede”.</p>
+<hr />
+<h2 id="23-autonomia">23. Autonomia<a class="headerlink" href="#23-autonomia" title="Permanent link">&para;</a></h2>
+<p>Princípio comum às duas Homes:</p>
+<blockquote>
+<p><strong>A Guivos amplia o horizonte. O caminho continua sendo seu.</strong></p>
+</blockquote>
+<p>Nenhum participante deve ser representado somente como fonte ou destino de valor.</p>
+<p>Uma Organização não controla a jornada de uma Pessoa por oferecer recursos.</p>
+<p>Um Coletivo não perde sua autonomia por relacionar-se com uma Organização.</p>
+<p>Uma Pessoa não precisa seguir uma oportunidade apenas porque a Guivos a tornou visível.</p>
+<hr />
+<h2 id="24-o-que-a-home-nao-deve-parecer">24. O que a Home não deve parecer<a class="headerlink" href="#24-o-que-a-home-nao-deve-parecer" title="Permanent link">&para;</a></h2>
+<p>Rejeitar deriva predominante para:</p>
+<ul>
+<li>landing page SaaS;</li>
+<li>catálogo de produtos;</li>
+<li>pricing page;</li>
+<li>página de vendas;</li>
+<li>portal de parceiros;</li>
+<li>dashboard autenticado;</li>
+<li>CRM;</li>
+<li>marketplace;</li>
+<li>job board;</li>
+<li>rede social;</li>
+<li>construtor de comunidades;</li>
+<li>campanha genérica de ESG/CSR;</li>
+<li>apresentação para investidores;</li>
+<li>mural de logos;</li>
+<li>mural de cases.</li>
+</ul>
+<hr />
+<h2 id="25-design-e-midia">25. Design e mídia<a class="headerlink" href="#25-design-e-midia" title="Permanent link">&para;</a></h2>
+<p>A direção futura de Design deve preservar:</p>
+<ul>
+<li>contexto real;</li>
+<li>ação;</li>
+<li>naturalidade;</li>
+<li>diversidade;</li>
+<li>respiro;</li>
+<li>precisão;</li>
+<li>ritmo variável;</li>
+<li>legibilidade;</li>
+<li>experiência funcional sem vídeo ou animação.</li>
+</ul>
+<p>Evitar fotografia corporativa genérica, estética futurista vazia e recursos visuais que façam tecnologia ocupar o centro da narrativa.</p>
+<p>Movimento e interação precisam carregar significado.</p>
+<hr />
+<h2 id="26-mobile-e-acessibilidade">26. Mobile e acessibilidade<a class="headerlink" href="#26-mobile-e-acessibilidade" title="Permanent link">&para;</a></h2>
+<p>Mobile não é uma Home reduzida semanticamente.</p>
+<p>Pode serializar relações que desktop apresenta simultaneamente, mas precisa preservar as mesmas saídas cognitivas.</p>
+<p>A materialização futura deve contemplar:</p>
+<ul>
+<li>teclado;</li>
+<li>leitores de tela;</li>
+<li>foco visível;</li>
+<li>contraste;</li>
+<li>redução de movimento;</li>
+<li>legendas e transcrições quando aplicáveis;</li>
+<li>mídia indisponível;</li>
+<li>baixa conectividade;</li>
+<li>internacionalização.</li>
+</ul>
+<hr />
+<h2 id="27-estado-de-prontidao">27. Estado de prontidão<a class="headerlink" href="#27-estado-de-prontidao" title="Permanent link">&para;</a></h2>
+<p>A arquitetura vigente já define:</p>
+<ul>
+<li>tese;</li>
+<li>duas perspectivas públicas;</li>
+<li>Hero e função dos CTAs;</li>
+<li>onze movimentos em cada perspectiva;</li>
+<li>macroexperiências;</li>
+<li>participantes;</li>
+<li>produtos;</li>
+<li>confiança;</li>
+<li>prova;</li>
+<li>dados e inteligência;</li>
+<li>autonomia;</li>
+<li>responsividade sem perda de tese;</li>
+<li>anti-padrões.</li>
+</ul>
+<p>Permanecem posteriores:</p>
+<ul>
+<li>copy pública final;</li>
+<li>direção visual final;</li>
+<li>composição;</li>
+<li>tipografia;</li>
+<li>fotografia e vídeo finais;</li>
+<li>movimento específico;</li>
+<li>URLs finais;</li>
+<li>oferta comercial;</li>
+<li>onboarding;</li>
+<li>implementação.</li>
+</ul>
+<p>O processo atual <strong>não utiliza wireframe da Home como etapa</strong>.</p>
+<hr />
+<h2 id="28-fontes-internas-de-rastreabilidade">28. Fontes internas de rastreabilidade<a class="headerlink" href="#28-fontes-internas-de-rastreabilidade" title="Permanent link">&para;</a></h2>
+<p>Este documento consolida o estado vigente para consumo. Entre as principais fontes internas permanecem:</p>
+<ul>
+<li><code>GKR-UX-HOME-MASTER-001</code>;</li>
+<li><code>GKR-UX-HOME-OC-MASTER-001</code>;</li>
+<li><code>GKR-UX-HOME-OC-NARR-001</code>;</li>
+<li><code>GKR-UX-HOME-OC-NAV-001</code>;</li>
+<li><code>GKR-UX-HOME-OC-SYS-001</code>;</li>
+<li><code>GKR-UX-HOME-OC-HANDOFF-001</code>;</li>
+<li><code>GKR-UX-HOME-OC-AUDIT-002</code>;</li>
+<li><code>UXA-014</code>;</li>
+<li><code>UXA-019</code>.</li>
+</ul>
+<p>Esses artefatos existem para rastreabilidade e aprofundamento técnico, não como menu de leitura cotidiana.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
