@@ -2,9 +2,9 @@
 id: GPA-004
 title: Guivos Business
 status: consolidated
-version: 1.3.0
+version: 1.4.0
 owner: Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-12
 ---
 
 # Guivos Business
@@ -86,11 +86,73 @@ Esta autoridade de taxonomia **não inventa preços, limites, entitlements, SLA,
 - mensuração de campanhas e programas;
 - apoio à tomada de decisão por meio do Guivos Intelligence.
 
+## Programa de Pontos
+
+O **Programa de Pontos** é uma capacidade/produto do Guivos Business para disponibilização de benefícios a pessoas vinculadas a contextos empresariais elegíveis.
+
+Sua relação com o ecossistema deve ser lida como um fluxo de benefício e autonomia, não como medida de evolução pessoal:
+
+```text
+EMPRESA
+↓
+GUIVOS BUSINESS
+↓
+PROGRAMA DE PONTOS
+↓
+PESSOA RECEBE O BENEFÍCIO
+↓
+pode utilizar em ofertas elegíveis do
+MALL / TRAVEL
+↓
+A PESSOA ESCOLHE COMO UTILIZAR
+```
+
+### Uso de `Empresa` neste fluxo
+
+Neste fluxo comercial específico, **Empresa** é o termo utilizado para identificar a empresa cliente do Guivos Business e evitar confusão com os tipos estruturais amplos de participante `Organização` e `Coletivo`.
+
+Essa terminologia é local ao contexto comercial e não altera a ontologia global:
+
+```text
+Organização
+= tipo estrutural amplo de participante
+
+Empresa
+= termo utilizado no fluxo comercial específico
+  do Guivos Business e do Programa de Pontos
+```
+
+Uma Organização pode participar do ecossistema sem contratar Guivos Business. Da mesma forma, o uso de `Empresa` neste contrato não cria um novo tipo global de participante.
+
+### Natureza dos pontos
+
+Os pontos são um benefício transacional utilizável em possibilidades elegíveis do ecossistema, com uso já relacionado ao Guivos Mall e ao Guivos Travel.
+
+Eles não constituem uma pontuação universal da Guivos, não representam mérito humano e não medem evolução.
+
+```text
+mais pontos
+≠
+mais evolução
+```
+
+O Programa de Pontos também é distinto do Gift Card Guivos:
+
+```text
+Programa de Pontos
+≠
+Gift Card Guivos
+```
+
+Esta atualização arquitetural não define taxa de conversão, emissão, expiração, transferência, pagamento híbrido, elegibilidade detalhada, limites ou demais regras econômicas/operacionais que exijam autoridade própria.
+
 ## Princípio de aderência
 
 Guivos Business não deve operar ações, campanhas, recompensas ou parcerias apenas porque podem gerar receita.
 
 Toda solução deve possuir relação clara com desenvolvimento de pessoas, fortalecimento de relacionamentos, engajamento legítimo, experiências relevantes, jornadas de evolução, valor para participantes ou impacto social coerente com o propósito da Guivos.
+
+O Programa de Pontos deve obedecer ao mesmo princípio: sua existência como benefício não deve transformar a Guivos em uma experiência orientada a acumular pontos nem converter participação ou evolução em caça a recompensas.
 
 ## Limites
 
@@ -104,6 +166,7 @@ Não deve ser tratado como um CRM genérico, uma plataforma de publicidade irres
 
 - pode estruturar jornadas por meio do Guivos Journey;
 - pode contratar ou distribuir ofertas do Guivos Mall e do Guivos Travel;
+- por meio do Programa de Pontos, pode disponibilizar benefícios que pessoas utilizam em ofertas elegíveis do Guivos Mall e do Guivos Travel;
 - utiliza conteúdos do Guivos Media;
 - utiliza Guivos Intelligence para análises, indicadores e recomendações;
 - pode operar campanhas e ativações por meio do Guivos Ads;
@@ -114,6 +177,8 @@ Não deve ser tratado como um CRM genérico, uma plataforma de publicidade irres
 ### Colaboradores
 
 Uma empresa pode oferecer benefícios, conteúdos, grupos esportivos, bolsas, experiências, programas de desenvolvimento e recompensas relacionadas à participação ou ao progresso em jornadas corporativas.
+
+Quando aplicável ao Programa de Pontos, a empresa pode disponibilizar pontos como benefício e a pessoa preserva a escolha sobre sua utilização entre as possibilidades elegíveis do Mall e do Travel, conforme as regras vigentes do programa.
 
 ### Clientes
 
@@ -131,4 +196,6 @@ Uma empresa pode apoiar uma ONG, uma universidade, uma igreja ou um movimento em
 
 A responsabilidade superior do Guivos Business e sua separação de Organização estão consolidadas.
 
-A taxonomia Start · Growth · Scale · Enterprise está estabelecida conceitualmente. Preços, entitlements, limites, recompensas, fidelização, captação, retenção, mensuração, integrações e ofertas comerciais específicas ainda dependem de detalhamento, validação e implementação quando não houver autoridade própria já aprovada.
+A taxonomia Start · Growth · Scale · Enterprise está estabelecida conceitualmente. O Programa de Pontos está reconhecido arquiteturalmente como capacidade/produto do Guivos Business com utilização em ofertas elegíveis do Mall e do Travel.
+
+Preços, entitlements, limites, taxas de conversão, emissão, expiração, transferência, elegibilidades detalhadas, fidelização, captação, retenção, mensuração, integrações e ofertas comerciais específicas ainda dependem de detalhamento, validação e implementação quando não houver autoridade própria já aprovada.

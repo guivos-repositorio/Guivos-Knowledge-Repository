@@ -2,9 +2,9 @@
 id: GPA-003
 title: Guivos Travel
 status: consolidated
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
-last_updated: 2026-07-04
+last_updated: 2026-08-12
 ---
 
 # Guivos Travel
@@ -30,11 +30,39 @@ Guivos Travel não substitui o Guivos Journey, o Guivos Mall, o Guivos Business,
 
 Seu domínio principal é a operação especializada de viagens e experiências turísticas.
 
+## Relação com o Programa de Pontos do Guivos Business
+
+Guivos Travel admite utilização de pontos nas ofertas em que essa modalidade estiver efetivamente elegível, em conexão com o Programa de Pontos do Guivos Business.
+
+O fluxo comercial de referência é:
+
+```text
+EMPRESA
+↓
+GUIVOS BUSINESS
+↓
+PROGRAMA DE PONTOS
+↓
+PESSOA RECEBE O BENEFÍCIO
+↓
+pode utilizar em ofertas elegíveis do
+MALL / TRAVEL
+↓
+A PESSOA ESCOLHE COMO UTILIZAR
+```
+
+Neste fluxo específico, `Empresa` identifica a empresa cliente do Guivos Business. Essa terminologia não substitui `Organização` como tipo estrutural amplo de participante do ecossistema.
+
+Os pontos são um benefício transacional e não representam nível de evolução da pessoa.
+
+Esta relação arquitetural não cria taxa de conversão, emissão, expiração, transferência, pagamento híbrido, elegibilidade detalhada ou outras regras econômicas que dependam de autoridade própria.
+
 ## Relações principais
 
 - recebe participantes e recomendações originadas no Guivos Journey;
 - pode utilizar recursos comerciais do Guivos Mall;
 - pode atender programas corporativos do Guivos Business;
+- pode receber utilização de pontos do Programa de Pontos do Guivos Business em ofertas elegíveis;
 - utiliza conteúdo do Guivos Media;
 - utiliza Guivos Intelligence para personalização e análise;
 - pode receber campanhas do Guivos Ads.
