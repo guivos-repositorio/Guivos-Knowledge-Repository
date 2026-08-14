@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.37.0
+version: 2.36.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-14
 depends_on:
