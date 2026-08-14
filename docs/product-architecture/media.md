@@ -2,12 +2,16 @@
 id: GPA-005
 title: Guivos Media
 status: consolidated
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-08-13
 related:
   - GLPA-001
   - GKR-UX-HOME-MEDIA-MASTER-001
+  - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
+  - GKR-UX-HOME-OC-MEDIA-SUPPLY-001
+  - GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001
+  - GKR-UX-HOME-MALL-MEDIA-SUPPLY-001
   - GPA-001
   - GPA-003
   - GPA-004
@@ -71,7 +75,7 @@ Esses níveis não devem ser tratados como equivalentes na taxonomia, na navega�
 
 Uma produção editorial pode existir como núcleo único e gerar vídeo completo, áudio, artigo, cortes, citações, newsletter e publicações sociais. Essas manifestações devem permanecer relacionadas ao mesmo conteúdo-base quando representarem a mesma produção.
 
-Conteúdos podem relacionar-se a pessoas, lugares, assuntos, perspectivas, propriedades editoriais, outros conteúdos, organizações, destinos de publicação e continuações contextuais.
+Conteúdos podem relacionar-se a pessoas, lugares, assuntos, perspectivas, propriedades editoriais, outros conteúdos, organizações, destinos de publicação, superfícies abastecidas e continuações contextuais.
 
 > **Complexidade no sistema. Simplicidade na experiência.**
 
@@ -117,9 +121,9 @@ Consequências:
 - o Blog não deve ser tratado como produto equivalente ao Media;
 - conteúdo textual do Media não deve ser automaticamente reduzido ao Blog.
 
-## Distribuição editorial e continuidade no ecossistema
+## Distribuição, abastecimento editorial e continuidade no ecossistema
 
-Destinos de publicação e continuações contextuais são relações diferentes.
+A arquitetura do Media distingue três relações que podem coexistir para um mesmo conteúdo sem serem equivalentes.
 
 ### Distribuição
 
@@ -128,6 +132,40 @@ Pode incluir superfície Guivos Media, Guivos Blog, newsletters, redes sociais, 
 Distribuição responde:
 
 > **Onde este conteúdo é publicado ou manifestado?**
+
+### Abastecimento editorial
+
+Guivos Media pode produzir, organizar ou fornecer material editorial para outras superfícies Guivos quando esse material ajudar a cumprir a narrativa e a função próprias dessas superfícies.
+
+Pode incluir, conforme o contexto:
+
+- histórias reais;
+- entrevistas;
+- vídeos e imagens;
+- documentários;
+- conhecimento e explicações;
+- pessoas e trajetórias;
+- lugares e experiências;
+- perspectivas;
+- evidências editoriais;
+- recortes e derivados de um conteúdo-base.
+
+Abastecimento responde:
+
+> **Que material editorial pode ajudar outra superfície Guivos a tornar sua própria narrativa mais concreta, compreensível ou relevante?**
+
+Regra de autoridade:
+
+> **O Guivos Media pode fornecer conteúdo para outra superfície sem adquirir autoridade sobre a finalidade, narrativa, operação ou decisão comercial dessa superfície.**
+
+A superfície que consome o material mantém autoridade sobre seu papel. O Media mantém autoridade editorial sobre origem, integridade, contexto e classificação do conteúdo que produz.
+
+Os contratos pós-Media específicos para as Homes públicas são:
+
+- `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001` — Home Pública — Pessoa;
+- `GKR-UX-HOME-OC-MEDIA-SUPPLY-001` — Home Pública — Organizações e Coletivos;
+- `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001` — Home Pública — Guivos Travel;
+- `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001` — Home Pública — Guivos Mall.
 
 ### Continuidade contextual
 
@@ -154,6 +192,21 @@ CONTINUAÇÃO PERTINENTE
 
 Essa relação não transforma a superfície editorial em vitrine de cross-selling.
 
+### Diferença obrigatória entre as três relações
+
+```text
+DISTRIBUIÇÃO
+→ onde o conteúdo é publicado
+
+ABASTECIMENTO EDITORIAL
+→ onde o conteúdo ajuda outra superfície a cumprir sua própria narrativa
+
+CONTINUIDADE CONTEXTUAL
+→ para onde a descoberta pode levar a pessoa
+```
+
+Uma mesma produção pode participar das três relações, desde que cada uma permaneça semanticamente identificável.
+
 ## Conteúdo patrocinado e Guivos Ads
 
 Guivos Media pode produzir formatos patrocinados operados e governados em conjunto com as autoridades aplicáveis do Guivos Ads.
@@ -169,6 +222,8 @@ GUIVOS MEDIA
 GUIVOS ADS
 → publicidade, mídia patrocinada e relação comercial publicitária
 ```
+
+O fato de um conteúdo abastecer outra Home não remove sua natureza patrocinada nem autoriza convertê-lo silenciosamente em prova institucional, recomendação orgânica ou relevância espontânea.
 
 ## Home Pública do Guivos Media
 
@@ -197,11 +252,13 @@ Guivos Media não é:
 - a operação de viagens;
 - a solução B2B;
 - a camada de inteligência;
-- a plataforma de publicidade.
+- a plataforma de publicidade;
+- a autoridade narrativa ou operacional das demais Homes e especialidades que abastece.
 
 ## Relações principais
 
 - abastece o Guivos Journey com conteúdo;
+- pode abastecer editorialmente Homes públicas e outras superfícies Guivos quando houver aderência real;
 - produz materiais e conteúdos que podem apoiar Guivos Travel e Guivos Business;
 - pode estabelecer continuidade contextual com Journey, Travel, Business, Mall ou outra capacidade pertinente;
 - utiliza Guivos Intelligence para análise editorial, relações semânticas, personalização e distribuição dentro das autoridades aplicáveis;
