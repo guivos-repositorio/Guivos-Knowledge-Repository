@@ -27207,7 +27207,7 @@ Patrocinado
 <p>Esses níveis não devem ser tratados como equivalentes na taxonomia, na navegação ou na arquitetura de dados.</p>
 <h2 id="product-architecture-media-conteudo-base-e-relacoes-semanticas">Conteúdo-base e relações semânticas<a class="headerlink" href="#product-architecture-media-conteudo-base-e-relacoes-semanticas" title="Permanent link">&para;</a></h2>
 <p>Uma produção editorial pode existir como núcleo único e gerar vídeo completo, áudio, artigo, cortes, citações, newsletter e publicações sociais. Essas manifestações devem permanecer relacionadas ao mesmo conteúdo-base quando representarem a mesma produção.</p>
-<p>Conteúdos podem relacionar-se a pessoas, lugares, assuntos, perspectivas, propriedades editoriais, outros conteúdos, organizações, destinos de publicação e continuações contextuais.</p>
+<p>Conteúdos podem relacionar-se a pessoas, lugares, assuntos, perspectivas, propriedades editoriais, outros conteúdos, organizações, destinos de publicação, superfícies abastecidas e continuações contextuais.</p>
 <blockquote>
 <p><strong>Complexidade no sistema. Simplicidade na experiência.</strong></p>
 </blockquote>
@@ -27242,14 +27242,45 @@ EPISÓDIO
 <li>o Blog não deve ser tratado como produto equivalente ao Media;</li>
 <li>conteúdo textual do Media não deve ser automaticamente reduzido ao Blog.</li>
 </ul>
-<h2 id="product-architecture-media-distribuicao-editorial-e-continuidade-no-ecossistema">Distribuição editorial e continuidade no ecossistema<a class="headerlink" href="#product-architecture-media-distribuicao-editorial-e-continuidade-no-ecossistema" title="Permanent link">&para;</a></h2>
-<p>Destinos de publicação e continuações contextuais são relações diferentes.</p>
+<h2 id="product-architecture-media-distribuicao-abastecimento-editorial-e-continuidade-no-ecossistema">Distribuição, abastecimento editorial e continuidade no ecossistema<a class="headerlink" href="#product-architecture-media-distribuicao-abastecimento-editorial-e-continuidade-no-ecossistema" title="Permanent link">&para;</a></h2>
+<p>A arquitetura do Media distingue três relações que podem coexistir para um mesmo conteúdo sem serem equivalentes.</p>
 <h3 id="product-architecture-media-distribuicao">Distribuição<a class="headerlink" href="#product-architecture-media-distribuicao" title="Permanent link">&para;</a></h3>
 <p>Pode incluir superfície Guivos Media, Guivos Blog, newsletters, redes sociais, plataformas externas e outros canais editoriais autorizados.</p>
 <p>Distribuição responde:</p>
 <blockquote>
 <p><strong>Onde este conteúdo é publicado ou manifestado?</strong></p>
 </blockquote>
+<h3 id="product-architecture-media-abastecimento-editorial">Abastecimento editorial<a class="headerlink" href="#product-architecture-media-abastecimento-editorial" title="Permanent link">&para;</a></h3>
+<p>Guivos Media pode produzir, organizar ou fornecer material editorial para outras superfícies Guivos quando esse material ajudar a cumprir a narrativa e a função próprias dessas superfícies.</p>
+<p>Pode incluir, conforme o contexto:</p>
+<ul>
+<li>histórias reais;</li>
+<li>entrevistas;</li>
+<li>vídeos e imagens;</li>
+<li>documentários;</li>
+<li>conhecimento e explicações;</li>
+<li>pessoas e trajetórias;</li>
+<li>lugares e experiências;</li>
+<li>perspectivas;</li>
+<li>evidências editoriais;</li>
+<li>recortes e derivados de um conteúdo-base.</li>
+</ul>
+<p>Abastecimento responde:</p>
+<blockquote>
+<p><strong>Que material editorial pode ajudar outra superfície Guivos a tornar sua própria narrativa mais concreta, compreensível ou relevante?</strong></p>
+</blockquote>
+<p>Regra de autoridade:</p>
+<blockquote>
+<p><strong>O Guivos Media pode fornecer conteúdo para outra superfície sem adquirir autoridade sobre a finalidade, narrativa, operação ou decisão comercial dessa superfície.</strong></p>
+</blockquote>
+<p>A superfície que consome o material mantém autoridade sobre seu papel. O Media mantém autoridade editorial sobre origem, integridade, contexto e classificação do conteúdo que produz.</p>
+<p>Os contratos pós-Media específicos para as Homes públicas são:</p>
+<ul>
+<li><code>GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001</code> — Home Pública — Pessoa;</li>
+<li><code>GKR-UX-HOME-OC-MEDIA-SUPPLY-001</code> — Home Pública — Organizações e Coletivos;</li>
+<li><code>GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001</code> — Home Pública — Guivos Travel;</li>
+<li><code>GKR-UX-HOME-MALL-MEDIA-SUPPLY-001</code> — Home Pública — Guivos Mall.</li>
+</ul>
 <h3 id="product-architecture-media-continuidade-contextual">Continuidade contextual<a class="headerlink" href="#product-architecture-media-continuidade-contextual" title="Permanent link">&para;</a></h3>
 <p>Um conteúdo do Media pode revelar, quando houver relação real, uma continuidade em outra capacidade Guivos.</p>
 <p>Exemplos:</p>
@@ -27269,6 +27300,17 @@ POSSIBILIDADE
 CONTINUAÇÃO PERTINENTE
 </code></pre></div>
 <p>Essa relação não transforma a superfície editorial em vitrine de cross-selling.</p>
+<h3 id="product-architecture-media-diferenca-obrigatoria-entre-as-tres-relacoes">Diferença obrigatória entre as três relações<a class="headerlink" href="#product-architecture-media-diferenca-obrigatoria-entre-as-tres-relacoes" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>DISTRIBUIÇÃO
+→ onde o conteúdo é publicado
+
+ABASTECIMENTO EDITORIAL
+→ onde o conteúdo ajuda outra superfície a cumprir sua própria narrativa
+
+CONTINUIDADE CONTEXTUAL
+→ para onde a descoberta pode levar a pessoa
+</code></pre></div>
+<p>Uma mesma produção pode participar das três relações, desde que cada uma permaneça semanticamente identificável.</p>
 <h2 id="product-architecture-media-conteudo-patrocinado-e-guivos-ads">Conteúdo patrocinado e Guivos Ads<a class="headerlink" href="#product-architecture-media-conteudo-patrocinado-e-guivos-ads" title="Permanent link">&para;</a></h2>
 <p>Guivos Media pode produzir formatos patrocinados operados e governados em conjunto com as autoridades aplicáveis do Guivos Ads.</p>
 <p>Conteúdo patrocinado deve ser identificado e não deve ser apresentado como recomendação editorial orgânica quando sua exposição decorrer de relação comercial.</p>
@@ -27279,6 +27321,7 @@ CONTINUAÇÃO PERTINENTE
 GUIVOS ADS
 → publicidade, mídia patrocinada e relação comercial publicitária
 </code></pre></div>
+<p>O fato de um conteúdo abastecer outra Home não remove sua natureza patrocinada nem autoriza convertê-lo silenciosamente em prova institucional, recomendação orgânica ou relevância espontânea.</p>
 <h2 id="product-architecture-media-home-publica-do-guivos-media">Home Pública do Guivos Media<a class="headerlink" href="#product-architecture-media-home-publica-do-guivos-media" title="Permanent link">&para;</a></h2>
 <p>A arquitetura estratégica, narrativa, editorial e funcional da Home Pública do produto é governada por <code>GKR-UX-HOME-MEDIA-MASTER-001</code> — <strong>Home Pública — Guivos Media — Documento Mestre</strong>.</p>
 <p>A Home v1 é uma superfície pública especializada de descoberta editorial e não redefine nem esgota o escopo integral do Guivos Media descrito neste documento.</p>
@@ -27300,11 +27343,13 @@ GUIVOS ADS
 <li>a operação de viagens;</li>
 <li>a solução B2B;</li>
 <li>a camada de inteligência;</li>
-<li>a plataforma de publicidade.</li>
+<li>a plataforma de publicidade;</li>
+<li>a autoridade narrativa ou operacional das demais Homes e especialidades que abastece.</li>
 </ul>
 <h2 id="product-architecture-media-relacoes-principais">Relações principais<a class="headerlink" href="#product-architecture-media-relacoes-principais" title="Permanent link">&para;</a></h2>
 <ul>
 <li>abastece o Guivos Journey com conteúdo;</li>
+<li>pode abastecer editorialmente Homes públicas e outras superfícies Guivos quando houver aderência real;</li>
 <li>produz materiais e conteúdos que podem apoiar Guivos Travel e Guivos Business;</li>
 <li>pode estabelecer continuidade contextual com Journey, Travel, Business, Mall ou outra capacidade pertinente;</li>
 <li>utiliza Guivos Intelligence para análise editorial, relações semânticas, personalização e distribuição dentro das autoridades aplicáveis;</li>
