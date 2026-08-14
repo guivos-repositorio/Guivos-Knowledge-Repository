@@ -105,7 +105,7 @@ Somente após validação humana contra o GKR uma direção pode ser aceita como
 
 ## 4. Pacote oficial de handoff
 
-O pacote obrigatório possui **13 documentos de autoridade canônica**: este documento comum e dois documentos específicos por Home. Os Source Locks operacionais são adicionados na emissão de entrega descrita pelo Manifesto Canônico.
+O pacote obrigatório possui **13 documentos de autoridade**: este documento comum e dois documentos específicos por Home. A emissão operacional adiciona um Source Lock por Home conforme o Manifesto Canônico de Entrega.
 
 ### 4.1 Home Pública — Pessoa
 
@@ -143,7 +143,7 @@ O pacote obrigatório possui **13 documentos de autoridade canônica**: este doc
 2. `docs/experience-architecture/public-home-ads-master-document.md`;
 3. `docs/product-architecture/ads.md` (`GPA-007`).
 
-A pessoa responsável por Design não precisa receber o repositório inteiro como entrada inicial.
+A designer não precisa receber o repositório inteiro como entrada inicial.
 
 ---
 
@@ -273,7 +273,7 @@ Desde que preservados os contratos da Home, podem propor:
 - alternativas desktop e mobile;
 - protótipos de interação.
 
-A quantidade de movimentos narrativos ou funcionais de uma Home **não implica a mesma quantidade de blocos visuais equivalentes**.
+A quantidade de movimentos narrativos ou funcionais governados por uma Home **não implica a mesma quantidade de blocos visuais equivalentes**.
 
 > **Movimento narrativo é contrato de progressão. Seção visual é decisão de Design.**
 
@@ -376,7 +376,7 @@ A Home não deve ser construída prioritariamente como uma lista de serviços. N
 
 ### Etapa 1 — Source Lock e compreensão
 
-- confirmar os documentos autorizados da Home;
+- confirmar os três documentos autorizados da Home;
 - registrar versões e checkpoint;
 - identificar invariantes, liberdades e questões abertas.
 
@@ -426,45 +426,105 @@ EXPLORAÇÃO
 → proposta ainda não validada
 
 CANDIDATO
-→ direção selecionada para validação
+→ direção selecionada para avaliação
 
 VALIDADO EM UX
-→ arquitetura de experiência aprovada
+→ estrutura aceita, UI ainda pode evoluir
 
 VALIDADO EM UI
-→ materialização visual aprovada
+→ direção visual aceita
 
 APROVADO PARA HANDOFF DE ENGENHARIA
-→ somente após ato específico posterior
+→ somente após decisão específica posterior
 ```
 
-Nenhuma ferramenta generativa promove o próprio output de estado.
+Nenhum output de Figma Make deve nascer com o estado `canônico` ou `aprovado`.
 
 ---
 
-## 15. Critério de sucesso do handoff
+## 15. Registro mínimo de cada exploração
 
-O handoff funciona quando Design consegue:
+Cada execução relevante deve conseguir responder:
 
-1. compreender rapidamente o papel da Home;
-2. identificar o que não pode ser alterado;
-3. reconhecer o que está livre para exploração;
-4. utilizar Figma Make ou equivalente sem transformar a ferramenta em autoridade de produto;
-5. produzir alternativas visuais sem inventar fatos;
-6. manter as Homes distintas sem fragmentar a marca;
-7. preservar desktop e mobile como experiências coerentes;
-8. devolver hipóteses e lacunas ao GKR em vez de escondê-las na interface.
+- qual Home foi trabalhada;
+- qual problema estava sendo explorado;
+- quais documentos alimentaram a execução;
+- qual checkpoint do GKR foi utilizado;
+- qual ferramenta foi usada;
+- quais decisões foram preservadas;
+- quais hipóteses foram introduzidas;
+- quais dúvidas continuam abertas;
+- qual é o estado do output.
+
+Isso permite reproduzir, revisar e rejeitar uma direção sem perder rastreabilidade.
 
 ---
 
-## 16. Síntese canônica
+## 16. Materiais históricos e referências externas
 
-> **O GKR governa o significado. Design governa sua materialização.**
+Documentos históricos permanecem importantes para auditoria e aprofundamento, mas não pertencem ao input inicial obrigatório.
 
-Ferramentas generativas ampliam a capacidade de exploração, mas não recebem autoridade arquitetural.
+Benchmarks, referências visuais, concorrentes, moodboards e estudos de mercado podem apoiar exploração visual, porém:
 
-A versão 1.1.0 estende o handoff das cinco Homes originais para a **Home Pública — Guivos Ads**, preservando a separação entre autoridade comercial do Ads e autoridade funcional das superfícies anfitriãs.
+> **referência inspira; não governa.**
 
-Estado:
+Se um documento especializado for necessário para resolver uma dúvida, ele deve ser adicionado ao Source Lock daquela execução e sua função deve ser explicitada.
 
-> **SEIS HOMES AUTORIZADAS PARA EXPLORAÇÃO DE DESIGN SOB INPUT SEMANTICAMENTE CONTROLADO; ENGENHARIA E PUBLICAÇÃO CONTINUAM FORA DE ESCOPO.**
+---
+
+## 17. Critérios de aceite do handoff
+
+O processo está alinhado quando:
+
+1. Design consegue iniciar sem navegar pelo histórico completo do GKR;
+2. cada Home possui exatamente suas fontes obrigatórias identificadas;
+3. frases históricas de não autorização não bloqueiam a fase atual de Design;
+4. essas frases não são usadas como justificativa para alterar decisões semânticas;
+5. a ferramenta generativa recebe fontes governadas e não um corpus indiscriminado;
+6. o output distingue decisão canônica de hipótese de Design;
+7. as seis Homes parecem pertencer à mesma Guivos sem virar o mesmo template;
+8. nenhuma ferramenta inventa produto, feature, dado, prova ou promessa para preencher layout;
+9. os movimentos governados de cada Home permanecem preservados sem obrigação de seções visuais equivalentes;
+10. a solução é validada em UX antes do refinamento final de UI;
+11. acessibilidade, mobile e performance participam da validação;
+12. nenhum output visual passa a governar o GKR sem decisão explícita posterior.
+
+---
+
+## 18. Regra para novas Homes
+
+Novas Homes especializadas, incluindo futuras superfícies ainda não convergidas, devem adotar este mesmo método:
+
+```text
+DOCUMENTO MESTRE
++
+CONTRATO COMPLEMENTAR NECESSÁRIO
++
+GKR-UX-HOMES-DESIGN-HANDOFF-001
+↓
+SOURCE LOCK
+↓
+EXPLORAÇÃO
+↓
+VALIDAÇÃO UX
+↓
+VALIDAÇÃO UI
+```
+
+A composição exata do par específico pode variar conforme a arquitetura do produto, mas deve ser declarada antes de qualquer exploração generativa.
+
+---
+
+## 19. Síntese
+
+O objetivo deste handoff não é restringir criatividade visual.
+
+É impedir que liberdade de materialização seja confundida com liberdade para redesenhar o significado das Homes.
+
+> **O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração. A validação reconecta forma e significado.**
+
+A versão 1.1.0 amplia o handoff para a Home Pública — Guivos Ads e preserva sua natureza comercial distinta sem transferir ao Ads a autoridade funcional das superfícies anfitriãs.
+
+Estado desta frente:
+
+> **HANDOFF DAS SEIS HOMES PARA DESIGN AUTORIZADO — INPUT GENERATIVO SOB CONTROLE SEMÂNTICO — IMPLEMENTAÇÃO NÃO INCLUÍDA NESTE ESCOPO.**
