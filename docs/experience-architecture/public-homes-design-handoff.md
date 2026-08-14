@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-13
+last_updated: 2026-08-14
 normative: true
 depends_on:
   - GKR-UX-HOME-MASTER-001
@@ -17,23 +17,26 @@ depends_on:
   - GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001
   - GKR-UX-HOME-MEDIA-MASTER-001
   - GPA-005
+  - GKR-UX-HOME-ADS-MASTER-001
+  - GPA-007
 ---
 
 # Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 
 ## 1. Finalidade
 
-Este documento governa o **handoff das cinco Homes públicas já convergidas da Guivos para a fase de Design, UX, UI, wireframe e prototipação**.
+Este documento governa o **handoff das seis Homes públicas já convergidas da Guivos para a fase de Design, UX, UI, wireframe e prototipação**.
 
 Seu objetivo é permitir que Design trabalhe com um conjunto pequeno, atual e semanticamente controlado de fontes, sem precisar reconstruir decisões a partir do histórico completo do Guivos Knowledge Repository.
 
-As cinco Homes abrangidas por esta versão são:
+As seis Homes abrangidas por esta versão são:
 
 1. Home Pública — Pessoa;
 2. Home Pública — Organizações e Coletivos;
 3. Home Pública — Guivos Mall;
 4. Home Pública — Guivos Travel;
-5. Home Pública — Guivos Media.
+5. Home Pública — Guivos Media;
+6. Home Pública — Guivos Ads.
 
 Este documento **não desenha as páginas** e não determina solução visual final. Ele define quais decisões precisam ser preservadas, quais fontes têm autoridade, como ferramentas generativas podem ser utilizadas e onde termina a arquitetura governada e começa a liberdade de Design.
 
@@ -41,7 +44,7 @@ Este documento **não desenha as páginas** e não determina solução visual fi
 
 ## 2. Autorização da fase de Design
 
-A partir deste handoff, ficam autorizadas para as cinco Homes abrangidas:
+A partir deste handoff, ficam autorizadas para as seis Homes abrangidas:
 
 - exploração em Figma Make e ferramentas equivalentes;
 - arquitetura visual;
@@ -102,7 +105,7 @@ Somente após validação humana contra o GKR uma direção pode ser aceita como
 
 ## 4. Pacote oficial de handoff
 
-O pacote obrigatório possui **11 documentos**: este documento comum e dois documentos específicos por Home.
+O pacote obrigatório possui **13 documentos de autoridade**: este documento comum e dois documentos específicos por Home. A emissão operacional adiciona um Source Lock por Home conforme o Manifesto Canônico de Entrega.
 
 ### 4.1 Home Pública — Pessoa
 
@@ -134,6 +137,12 @@ O pacote obrigatório possui **11 documentos**: este documento comum e dois docu
 2. `docs/experience-architecture/public-home-media-master-document.md`;
 3. `docs/product-architecture/media.md` (`GPA-005`).
 
+### 4.6 Home Pública — Guivos Ads
+
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — este documento;
+2. `docs/experience-architecture/public-home-ads-master-document.md`;
+3. `docs/product-architecture/ads.md` (`GPA-007`).
+
 A designer não precisa receber o repositório inteiro como entrada inicial.
 
 ---
@@ -153,6 +162,7 @@ NÍVEL 1 — DOCUMENTO MESTRE DA HOME
 NÍVEL 2 — CONTRATO COMPLEMENTAR VIGENTE
 → reconciliação pós-Media
   ou GPA-005 no caso da Home Media
+  ou GPA-007 no caso da Home Ads
 → governa relações especializadas sem substituir o Documento Mestre
 
 NÍVEL 3 — DOCUMENTOS ESPECIALIZADOS
@@ -193,7 +203,7 @@ Regra:
 Não utilizar como input indiscriminado:
 
 - todo o GKR;
-- todas as cinco Homes simultaneamente;
+- todas as seis Homes simultaneamente;
 - documentos históricos misturados a documentos vigentes;
 - rascunhos de conversa sem status governado;
 - benchmark como se fosse requisito;
@@ -263,7 +273,7 @@ Desde que preservados os contratos da Home, podem propor:
 - alternativas desktop e mobile;
 - protótipos de interação.
 
-A existência de onze movimentos narrativos **não implica onze blocos visuais equivalentes**.
+A quantidade de movimentos narrativos ou funcionais governados por uma Home **não implica a mesma quantidade de blocos visuais equivalentes**.
 
 > **Movimento narrativo é contrato de progressão. Seção visual é decisão de Design.**
 
@@ -274,7 +284,7 @@ A existência de onze movimentos narrativos **não implica onze blocos visuais e
 Sem nova decisão governada, não podem:
 
 - redefinir o papel de uma Home;
-- trocar ou reinterpretar sua pergunta-mãe;
+- trocar ou reinterpretar sua pergunta-mãe quando houver uma governada;
 - transformar produtos em protagonistas antes da tese quando o Documento Mestre proíbe isso;
 - alterar o protagonista da experiência;
 - inventar produtos, serviços, funcionalidades ou fluxos;
@@ -283,7 +293,7 @@ Sem nova decisão governada, não podem:
 - confundir Guivos Media e Guivos Blog;
 - confundir conteúdo editorial, recomendação, oferta e publicidade;
 - atribuir ao Media autoridade operacional de Travel ou Mall;
-- atribuir a Ads autoridade editorial;
+- atribuir a Ads autoridade editorial, relevância orgânica ou pertinência pessoal;
 - garantir transformação, impacto ou resultado causal não comprovado;
 - inventar métricas, números, avaliações, cases, parceiros, depoimentos ou disponibilidade;
 - criar campanhas como se fossem vigentes;
@@ -322,7 +332,7 @@ Copy proposta por IA pode ser usada como material de exploração de Content Des
 
 ## 11. Mesma família, personalidades diferentes
 
-As cinco Homes devem pertencer claramente à mesma Guivos, mas não devem parecer cinco páginas produzidas pela simples substituição de textos dentro de um template único.
+As seis Homes devem pertencer claramente à mesma Guivos, mas não devem parecer seis páginas produzidas pela simples substituição de textos dentro de um template único.
 
 ```text
 MESMA FAMÍLIA
@@ -338,7 +348,8 @@ A expressão visual pode variar conforme o papel de cada superfície:
 - **Organizações e Coletivos** — participação, capacidade, responsabilidade e confiança;
 - **Mall** — descoberta, comércio e confiança;
 - **Travel** — inspiração, operação real e acesso direto;
-- **Media** — descoberta editorial, curadoria, profundidade e humanidade.
+- **Media** — descoberta editorial, curadoria, profundidade e humanidade;
+- **Ads** — clareza comercial, contexto, tecnologia aplicada e conversão sem atrito.
 
 Nenhuma Home deve ser visualmente reduzida ao estereótipo do seu setor.
 
@@ -357,7 +368,7 @@ A materialização deve preservar a percepção da Guivos como:
 - humana sem recorrer a clichês;
 - maior do que a soma dos próprios produtos.
 
-A Home não deve ser construída prioritariamente como uma lista de serviços.
+A Home não deve ser construída prioritariamente como uma lista de serviços. No caso específico do Ads, sua natureza comercial permite linguagem mais direta e orientada a objetivos, sem convertê-lo em catálogo técnico de mídia.
 
 ---
 
@@ -399,9 +410,10 @@ Confrontar a solução com:
 1. este handoff;
 2. Documento Mestre;
 3. contrato complementar;
-4. acessibilidade;
-5. performance;
-6. coerência entre as cinco Homes.
+4. Source Lock vigente da execução;
+5. acessibilidade;
+6. performance;
+7. coerência entre as seis Homes.
 
 ---
 
@@ -470,9 +482,9 @@ O processo está alinhado quando:
 4. essas frases não são usadas como justificativa para alterar decisões semânticas;
 5. a ferramenta generativa recebe fontes governadas e não um corpus indiscriminado;
 6. o output distingue decisão canônica de hipótese de Design;
-7. as cinco Homes parecem pertencer à mesma Guivos sem virar o mesmo template;
+7. as seis Homes parecem pertencer à mesma Guivos sem virar o mesmo template;
 8. nenhuma ferramenta inventa produto, feature, dado, prova ou promessa para preencher layout;
-9. os onze movimentos permanecem preservados sem obrigação de onze seções equivalentes;
+9. os movimentos governados de cada Home permanecem preservados sem obrigação de seções visuais equivalentes;
 10. a solução é validada em UX antes do refinamento final de UI;
 11. acessibilidade, mobile e performance participam da validação;
 12. nenhum output visual passa a governar o GKR sem decisão explícita posterior.
@@ -511,6 +523,8 @@ O objetivo deste handoff não é restringir criatividade visual.
 
 > **O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração. A validação reconecta forma e significado.**
 
+A versão 1.1.0 amplia o handoff para a Home Pública — Guivos Ads e preserva sua natureza comercial distinta sem transferir ao Ads a autoridade funcional das superfícies anfitriãs.
+
 Estado desta frente:
 
-> **HANDOFF DAS CINCO HOMES PARA DESIGN AUTORIZADO — INPUT GENERATIVO SOB CONTROLE SEMÂNTICO — IMPLEMENTAÇÃO NÃO INCLUÍDA NESTE ESCOPO.**
+> **HANDOFF DAS SEIS HOMES PARA DESIGN AUTORIZADO — INPUT GENERATIVO SOB CONTROLE SEMÂNTICO — IMPLEMENTAÇÃO NÃO INCLUÍDA NESTE ESCOPO.**
