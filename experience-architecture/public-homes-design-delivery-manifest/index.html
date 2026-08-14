@@ -11241,10 +11241,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-checkpoint-congelado" class="md-nav__link">
+  <a href="#2-checkpoint-da-emissao-v2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Checkpoint congelado
+        2. Checkpoint da emissão v2
       
     </span>
   </a>
@@ -11252,15 +11252,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-composicao-canonica-16-documentos-unicos" class="md-nav__link">
+  <a href="#3-composicao-canonica-da-v2-19-documentos-unicos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Composição canônica: 16 documentos únicos
+        3. Composição canônica da v2: 19 documentos únicos
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Composição canônica: 16 documentos únicos">
+    <nav class="md-nav" aria-label="3. Composição canônica da v2: 19 documentos únicos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -11329,6 +11329,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#37-home-publica-guivos-ads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Home Pública — Guivos Ads
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11346,10 +11357,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-estrutura-oficial-do-pacote-externo-v1" class="md-nav__link">
+  <a href="#5-estrutura-oficial-do-pacote-externo-v2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Estrutura oficial do pacote externo v1
+        5. Estrutura oficial do pacote externo v2
       
     </span>
   </a>
@@ -11473,9 +11484,10 @@
 
 <h1 id="homes-publicas-manifesto-canonico-de-entrega-para-design">Homes Públicas — Manifesto Canônico de Entrega para Design<a class="headerlink" href="#homes-publicas-manifesto-canonico-de-entrega-para-design" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este manifesto define o <strong>snapshot oficial de documentos a ser entregue à pessoa responsável por Design, UX e UI das cinco Homes públicas já convergidas da Guivos</strong>.</p>
+<p>Este manifesto define a <strong>emissão v2 do snapshot oficial de documentos a ser entregue à pessoa responsável por Design, UX e UI das seis Homes públicas já convergidas da Guivos</strong>.</p>
 <p>Ele não cria nova arquitetura, não substitui os Documentos Mestres e não duplica suas decisões. Sua função é operacional: fixar <strong>quais fontes canônicas entram no handoff, em qual checkpoint do GKR, como devem ser separadas por Home, em qual ordem devem ser lidas e quais materiais ficam deliberadamente fora da entrega inicial</strong>.</p>
-<p>O pacote aqui governado serve à primeira rodada de:</p>
+<p>A emissão v1 permanece historicamente íntegra, reproduzível e associada ao checkpoint e à branch já emitidos. A v2 é uma nova emissão e <strong>não altera silenciosamente o snapshot, branch ou ZIP da v1</strong>.</p>
+<p>O pacote v2 serve à primeira rodada de:</p>
 <ul>
 <li>compreensão da arquitetura;</li>
 <li>exploração em Figma Make ou ferramenta equivalente;</li>
@@ -11486,19 +11498,20 @@
 </ul>
 <p>Este manifesto não autoriza desenvolvimento, publicação ou promoção automática de qualquer output visual para estado canônico.</p>
 <hr />
-<h2 id="2-checkpoint-congelado">2. Checkpoint congelado<a class="headerlink" href="#2-checkpoint-congelado" title="Permanent link">&para;</a></h2>
-<p>Os documentos canônicos da entrega v1 devem ser extraídos do seguinte checkpoint:</p>
+<h2 id="2-checkpoint-da-emissao-v2">2. Checkpoint da emissão v2<a class="headerlink" href="#2-checkpoint-da-emissao-v2" title="Permanent link">&para;</a></h2>
+<p>A emissão v2 deve ser materializada <strong>após a integração canônica deste manifesto, do Handoff atualizado e do Source Lock do Ads</strong>.</p>
+<p>O checkpoint exato do snapshot externo será registrado no ato pós-merge que criar <code>delivery/design-handoff-v2</code>. Até esse momento, a base de elaboração é:</p>
 <div class="highlight"><pre><span></span><code>repository: guivos-repositorio/Guivos-Knowledge-Repository
-commit: 4fee04c4da8d099ac3c415c870391011ceb28e6d
+base de elaboração: ee0efc82dc17ec1c83cb34dc87695dbb2783b0c7
 </code></pre></div>
-<p>Esse commit contém as cinco instâncias específicas de Source Lock e prompt controlado integradas pela PR #263.</p>
+<p>A branch de entrega v2 não deve ser criada a partir de estado não mesclado. O snapshot externo deve apontar para conteúdo canônico já integrado à <code>main</code>.</p>
 <p>A razão de congelar o checkpoint é impedir que um pacote enviado à designer seja silenciosamente alterado por mudanças futuras na <code>main</code>.</p>
 <p>Regra:</p>
 <blockquote>
 <p><strong>Cada entrega é um snapshot reproduzível. Se o GKR evoluir materialmente, uma nova versão do pacote deve ser emitida; arquivos de checkpoints diferentes não devem ser misturados sem reconciliação explícita.</strong></p>
 </blockquote>
 <hr />
-<h2 id="3-composicao-canonica-16-documentos-unicos">3. Composição canônica: 16 documentos únicos<a class="headerlink" href="#3-composicao-canonica-16-documentos-unicos" title="Permanent link">&para;</a></h2>
+<h2 id="3-composicao-canonica-da-v2-19-documentos-unicos">3. Composição canônica da v2: 19 documentos únicos<a class="headerlink" href="#3-composicao-canonica-da-v2-19-documentos-unicos" title="Permanent link">&para;</a></h2>
 <h3 id="31-documento-comum-leia-primeiro">3.1 Documento comum — leia primeiro<a class="headerlink" href="#31-documento-comum-leia-primeiro" title="Permanent link">&para;</a></h3>
 <ol>
 <li><code>docs/experience-architecture/public-homes-design-handoff.md</code></li>
@@ -11615,27 +11628,51 @@ commit: 4fee04c4da8d099ac3c415c870391011ceb28e6d
 </ul>
 </li>
 </ol>
+<h3 id="37-home-publica-guivos-ads">3.7 Home Pública — Guivos Ads<a class="headerlink" href="#37-home-publica-guivos-ads" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><code>docs/experience-architecture/public-home-ads-master-document.md</code></p>
+<ul>
+<li>ID: <code>GKR-UX-HOME-ADS-MASTER-001</code></li>
+<li>função: autoridade arquitetural da Home Pública — Guivos Ads.</li>
+</ul>
+</li>
+<li>
+<p><code>docs/product-architecture/ads.md</code></p>
+<ul>
+<li>ID: <code>GPA-007</code></li>
+<li>função: autoridade complementar do produto, relação publicitária, contratos entre superfícies, Opportunity Boost, publicidade contextual e qualificação comercial inteligente.</li>
+</ul>
+</li>
+<li>
+<p><code>docs/experience-architecture/public-home-ads-generative-design-source-lock.md</code></p>
+<ul>
+<li>ID: <code>GKR-UX-HOME-ADS-GENINPUT-001</code></li>
+<li>função: Source Lock e prompt controlado da primeira exploração de Design do Ads.</li>
+</ul>
+</li>
+</ol>
 <hr />
 <h2 id="4-decisao-operacional-separar-a-entrega-por-home">4. Decisão operacional: separar a entrega por Home<a class="headerlink" href="#4-decisao-operacional-separar-a-entrega-por-home" title="Permanent link">&para;</a></h2>
-<p>A entrega externa <strong>não deve apresentar os 16 documentos como um conjunto indiferenciado</strong>.</p>
-<p>Embora o snapshot tenha 16 fontes canônicas únicas, o uso operacional deve ser separado em cinco contextos independentes de trabalho.</p>
+<p>A entrega externa <strong>não deve apresentar os 19 documentos como um conjunto indiferenciado</strong>.</p>
+<p>Embora o snapshot tenha 19 fontes canônicas únicas, o uso operacional deve ser separado em seis contextos independentes de trabalho.</p>
 <p>A designer não deve precisar descobrir quais documentos pertencem a cada Home, nem selecionar manualmente fontes a partir de uma pasta única.</p>
 <p>Princípio:</p>
 <blockquote>
 <p><strong>Uma Home = um contexto de trabalho isolado.</strong></p>
 </blockquote>
-<p>A única fonte comum às cinco Homes é <code>GKR-UX-HOMES-DESIGN-HANDOFF-001</code>, mantida em <code>00-LEIA-PRIMEIRO</code>.</p>
+<p>A única fonte comum às seis Homes é <code>GKR-UX-HOMES-DESIGN-HANDOFF-001</code>, mantida em <code>00-LEIA-PRIMEIRO</code>.</p>
 <p>Cada pasta específica de Home deve conter:</p>
 <ol>
 <li>um <code>LEIA-PRIMEIRO</code> operacional daquela Home;</li>
 <li>o Documento Mestre;</li>
-<li>o contrato complementar — reconciliação pós-Media ou <code>GPA-005</code> no caso do Media;</li>
+<li>o contrato complementar — reconciliação pós-Media, <code>GPA-005</code> no caso do Media ou <code>GPA-007</code> no caso do Ads;</li>
 <li>o Source Lock + Prompt Controlado.</li>
 </ol>
 <p>O <code>LEIA-PRIMEIRO</code> específico é <strong>arquivo operacional de embalagem</strong>, não documento canônico do GKR e não nova autoridade arquitetural. Sua função é somente indicar a ordem de uso e evitar mistura de contexto.</p>
 <hr />
-<h2 id="5-estrutura-oficial-do-pacote-externo-v1">5. Estrutura oficial do pacote externo v1<a class="headerlink" href="#5-estrutura-oficial-do-pacote-externo-v1" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>GUIVOS-HOMES-DESIGN-HANDOFF-v1/
+<h2 id="5-estrutura-oficial-do-pacote-externo-v2">5. Estrutura oficial do pacote externo v2<a class="headerlink" href="#5-estrutura-oficial-do-pacote-externo-v2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GUIVOS-HOMES-DESIGN-HANDOFF-v2/
 ├── 00-LEIA-PRIMEIRO/
 │   └── 00-Handoff-Canonico-das-Homes.md
 │
@@ -11663,20 +11700,26 @@ commit: 4fee04c4da8d099ac3c415c870391011ceb28e6d
 │   ├── 02-Reconciliacao-Pos-Media.md
 │   └── 03-Source-Lock-Prompt.md
 │
-└── 05-HOME-MEDIA/
-    ├── 00-LEIA-PRIMEIRO-MEDIA.md
+├── 05-HOME-MEDIA/
+│   ├── 00-LEIA-PRIMEIRO-MEDIA.md
+│   ├── 01-Documento-Mestre.md
+│   ├── 02-GPA-005-Guivos-Media.md
+│   └── 03-Source-Lock-Prompt.md
+│
+└── 06-HOME-ADS/
+    ├── 00-LEIA-PRIMEIRO-ADS.md
     ├── 01-Documento-Mestre.md
-    ├── 02-GPA-005-Guivos-Media.md
+    ├── 02-GPA-007-Guivos-Ads.md
     └── 03-Source-Lock-Prompt.md
 </code></pre></div>
 <p>O pacote externo contém, portanto:</p>
-<div class="highlight"><pre><span></span><code>16 FONTES CANÔNICAS CONGELADAS
+<div class="highlight"><pre><span></span><code>19 FONTES CANÔNICAS CONGELADAS
 +
-5 GUIAS OPERACIONAIS LEIA-PRIMEIRO
+6 GUIAS OPERACIONAIS LEIA-PRIMEIRO
 =
-21 ARQUIVOS NO SNAPSHOT EXTERNO
+25 ARQUIVOS NO SNAPSHOT EXTERNO
 </code></pre></div>
-<p>Os cinco guias operacionais não entram na contagem de fontes canônicas e não devem receber IDs normativos do GKR.</p>
+<p>Os seis guias operacionais não entram na contagem de fontes canônicas e não devem receber IDs normativos do GKR.</p>
 <hr />
 <h2 id="6-conteudo-minimo-de-cada-leia-primeiro-especifico">6. Conteúdo mínimo de cada <code>LEIA-PRIMEIRO</code> específico<a class="headerlink" href="#6-conteudo-minimo-de-cada-leia-primeiro-especifico" title="Permanent link">&para;</a></h2>
 <p>Cada guia operacional deve informar de forma inequívoca:</p>
@@ -11689,7 +11732,7 @@ commit: 4fee04c4da8d099ac3c415c870391011ceb28e6d
 <li>que documentos das outras Homes não devem ser adicionados à mesma execução;</li>
 <li>que o output inicial é sempre <code>EXPLORAÇÃO</code>;</li>
 <li>que a ferramenta não possui autoridade para alterar arquitetura, significado ou decisões canônicas;</li>
-<li>qual é o checkpoint congelado do pacote.</li>
+<li>qual é o checkpoint congelado do pacote v2, depois de materializado.</li>
 </ul>
 <p>Modelo operacional:</p>
 <div class="highlight"><pre><span></span><code>1. 00-Handoff-Canonico-das-Homes.md
@@ -11715,7 +11758,7 @@ CONTRATO COMPLEMENTAR DA HOME
 +
 SOURCE LOCK + PROMPT DA HOME
 </code></pre></div>
-<p>Não carregar simultaneamente documentos específicos de Pessoa, Organizações e Coletivos, Mall, Travel e Media na mesma execução generativa.</p>
+<p>Não carregar simultaneamente documentos específicos de Pessoa, Organizações e Coletivos, Mall, Travel, Media e Ads na mesma execução generativa.</p>
 <p>A comparação entre Homes pode ocorrer em revisão humana de coerência da família Guivos, mas não como mistura indiscriminada de contexto no momento da geração.</p>
 <p>A separação física das pastas é uma proteção semântica, não apenas conveniência de organização.</p>
 <hr />
@@ -11743,17 +11786,18 @@ SOURCE LOCK + PROMPT DA HOME
 <li>estudos e decisões intermediárias;</li>
 <li>rascunhos de conversa;</li>
 <li>documentação técnica de Engenharia;</li>
+<li>contratos detalhados do Opportunity Boost não requeridos pelo Source Lock inicial do Ads;</li>
 <li>documentos de produtos não necessários ao Source Lock da Home;</li>
 <li>todo o restante do GKR.</li>
 </ul>
 <p>Esses materiais permanecem preservados e podem ser fornecidos sob demanda quando uma dúvida concreta exigir aprofundamento.</p>
 <hr />
 <h2 id="10-regras-de-integridade-da-entrega">10. Regras de integridade da entrega<a class="headerlink" href="#10-regras-de-integridade-da-entrega" title="Permanent link">&para;</a></h2>
-<p>O pacote é íntegro quando:</p>
+<p>O pacote v2 é íntegro quando:</p>
 <ol>
-<li>contém exatamente as 16 fontes canônicas listadas neste manifesto;</li>
-<li>todos os documentos canônicos foram extraídos do commit congelado;</li>
-<li>contém os cinco <code>LEIA-PRIMEIRO</code> operacionais, um por Home;</li>
+<li>contém exatamente as 19 fontes canônicas listadas neste manifesto;</li>
+<li>todos os documentos canônicos foram extraídos do mesmo commit congelado da emissão v2;</li>
+<li>contém os seis <code>LEIA-PRIMEIRO</code> operacionais, um por Home;</li>
 <li>nenhum texto canônico foi resumido ou reescrito para caber no pacote;</li>
 <li>os nomes externos não alteram IDs ou conteúdo interno;</li>
 <li>cada Source Lock continua vinculado à sua respectiva Home;</li>
@@ -11762,7 +11806,9 @@ SOURCE LOCK + PROMPT DA HOME
 <li>o pacote deixa claro que outputs generativos começam como <code>EXPLORAÇÃO</code>;</li>
 <li>não há autorização implícita para Engenharia ou publicação;</li>
 <li>o arquivo entregue pode ser reproduzido a partir do checkpoint informado;</li>
-<li>os cinco guias operacionais não se apresentam como autoridade arquitetural ou documento canônico.</li>
+<li>os seis guias operacionais não se apresentam como autoridade arquitetural ou documento canônico;</li>
+<li>a emissão v1 permanece intacta e não é silenciosamente substituída;</li>
+<li>a Home Ads possui contexto isolado com <code>GKR-UX-HOME-ADS-MASTER-001 + GPA-007 + GKR-UX-HOME-ADS-GENINPUT-001</code>.</li>
 </ol>
 <hr />
 <h2 id="11-evolucao-e-reemissao">11. Evolução e reemissão<a class="headerlink" href="#11-evolucao-e-reemissao" title="Permanent link">&para;</a></h2>
@@ -11771,30 +11817,41 @@ SOURCE LOCK + PROMPT DA HOME
 <li>significado;</li>
 <li>narrativa;</li>
 <li>invariantes;</li>
-<li>relação pós-Media;</li>
+<li>relação pós-Media ou contrato complementar vigente;</li>
 <li>prompt controlado;</li>
 <li>liberdade de Design;</li>
 <li>proibições de inferência.</li>
 </ul>
 <p>Se afetar, emitir nova versão do manifesto e novo snapshot.</p>
 <p>Não substituir arquivos individualmente dentro de um pacote já distribuído sem registrar uma nova versão.</p>
+<p>A emissão v2 deverá possuir:</p>
+<ul>
+<li>branch exclusiva <code>delivery/design-handoff-v2</code>;</li>
+<li>snapshot próprio;</li>
+<li>ZIP próprio;</li>
+<li>checkpoint canônico explícito;</li>
+<li>seis Homes;</li>
+<li>nenhuma mutação retroativa da v1.</li>
+</ul>
+<p>A criação da branch e do snapshot v2 ocorre <strong>somente após merge desta evolução documental</strong>.</p>
 <hr />
 <h2 id="12-sintese">12. Síntese<a class="headerlink" href="#12-sintese" title="Permanent link">&para;</a></h2>
-<p>A entrega oficial para Design não é o repositório inteiro e não é uma pasta única com 16 documentos misturados.</p>
+<p>A entrega oficial para Design não é o repositório inteiro e não é uma pasta única com 19 documentos misturados.</p>
 <p>É um snapshot pequeno, reproduzível, separado por Home e semanticamente governado:</p>
 <div class="highlight"><pre><span></span><code>1 HANDOFF COMUM
 +
-5 × (LEIA-PRIMEIRO OPERACIONAL + DOCUMENTO MESTRE + COMPLEMENTO + SOURCE LOCK)
+6 × (LEIA-PRIMEIRO OPERACIONAL + DOCUMENTO MESTRE + COMPLEMENTO + SOURCE LOCK)
 =
-16 FONTES CANÔNICAS + 5 GUIAS OPERACIONAIS
+19 FONTES CANÔNICAS + 6 GUIAS OPERACIONAIS
 </code></pre></div>
 <p>Regra final:</p>
 <blockquote>
 <p><strong>Entregar cada Home como um contexto de trabalho isolado, com contexto suficiente para materializar com liberdade, mas sem permitir que a ferramenta reconstrua a arquitetura por mistura ou inferência.</strong></p>
 </blockquote>
+<p>A emissão v2 adiciona Guivos Ads sem reabrir ou adulterar a entrega v1.</p>
 <p>Estado desta frente:</p>
 <blockquote>
-<p><strong>PACOTE V1 DEFINIDO POR HOME — 16 FONTES CANÔNICAS CONGELADAS NO CHECKPOINT 4fee04c4da8d099ac3c415c870391011ceb28e6d + 5 GUIAS OPERACIONAIS — PRONTO PARA SNAPSHOT EXTERNO E ENTREGA À DESIGNER.</strong></p>
+<p><strong>PACOTE V2 DEFINIDO DOCUMENTALMENTE — 19 FONTES CANÔNICAS + 6 GUIAS OPERACIONAIS — MATERIALIZAÇÃO DA BRANCH/SNAPSHOT EXTERNO PENDENTE DO MERGE CANÔNICO DESTA EMISSÃO.</strong></p>
 </blockquote>
 
 
