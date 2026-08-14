@@ -28,6 +28,7 @@ related:
   - GKR-UX-HOME-ADS-MASTER-001
   - GPA-007
   - GKR-UX-HOME-ADS-GENINPUT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V2-SNAPSHOT-001
 ---
 
 # Homes Públicas — Manifesto Canônico de Entrega para Design
@@ -55,16 +56,21 @@ Este manifesto não autoriza desenvolvimento, publicação ou promoção automá
 
 ## 2. Checkpoint da emissão v2
 
-A emissão v2 deve ser materializada **após a integração canônica deste manifesto, do Handoff atualizado e do Source Lock do Ads**.
+A emissão v2 foi materializada somente após a integração canônica deste manifesto, do Handoff atualizado e do Source Lock do Ads.
 
-O checkpoint exato do snapshot externo será registrado no ato pós-merge que criar `delivery/design-handoff-v2`. Até esse momento, a base de elaboração é:
+O checkpoint canônico e o snapshot externo exatos são:
 
 ```text
 repository: guivos-repositorio/Guivos-Knowledge-Repository
-base de elaboração: ee0efc82dc17ec1c83cb34dc87695dbb2783b0c7
+main canônica de origem: 603aa7f37435ac376f7a202669ad4ac1d7d13a83
+branch externa: delivery/design-handoff-v2
+snapshot commit: 486f1c5e784be6cf3db9b2fbcbc47da39f9e9016
+snapshot tree: 650ecb5286cbd5d8d99f274fb0d9dc697b830fa4
 ```
 
-A branch de entrega v2 não deve ser criada a partir de estado não mesclado. O snapshot externo deve apontar para conteúdo canônico já integrado à `main`.
+`GKR-UX-HOMES-DESIGN-DELIVERY-V2-SNAPSHOT-001` registra o ato factual pós-merge e a auditoria da árvore externa.
+
+A branch de entrega v2 foi criada a partir de conteúdo canônico já integrado à `main`. Ela contém somente o pacote externo de distribuição e não constitui fonte canônica paralela.
 
 A razão de congelar o checkpoint é impedir que um pacote enviado à designer seja silenciosamente alterado por mudanças futuras na `main`.
 
@@ -263,7 +269,7 @@ Cada guia operacional deve informar de forma inequívoca:
 - que documentos das outras Homes não devem ser adicionados à mesma execução;
 - que o output inicial é sempre `EXPLORAÇÃO`;
 - que a ferramenta não possui autoridade para alterar arquitetura, significado ou decisões canônicas;
-- qual é o checkpoint congelado do pacote v2, depois de materializado.
+- qual é o checkpoint congelado do pacote v2.
 
 Modelo operacional:
 
@@ -380,16 +386,16 @@ Se afetar, emitir nova versão do manifesto e novo snapshot.
 
 Não substituir arquivos individualmente dentro de um pacote já distribuído sem registrar uma nova versão.
 
-A emissão v2 deverá possuir:
+A emissão v2 possui:
 
 - branch exclusiva `delivery/design-handoff-v2`;
-- snapshot próprio;
-- ZIP próprio;
-- checkpoint canônico explícito;
+- snapshot próprio `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`;
+- ZIP reproduzível pelo snapshot;
+- checkpoint canônico explícito `603aa7f37435ac376f7a202669ad4ac1d7d13a83`;
 - seis Homes;
 - nenhuma mutação retroativa da v1.
 
-A criação da branch e do snapshot v2 ocorre **somente após merge desta evolução documental**.
+A emissão v1 permanece preservada em `delivery/design-handoff-v1` @ `8e2a356ca84ba980e588258757800cde2a946f40`.
 
 ---
 
@@ -415,4 +421,4 @@ A emissão v2 adiciona Guivos Ads sem reabrir ou adulterar a entrega v1.
 
 Estado desta frente:
 
-> **PACOTE V2 DEFINIDO DOCUMENTALMENTE — 19 FONTES CANÔNICAS + 6 GUIAS OPERACIONAIS — MATERIALIZAÇÃO DA BRANCH/SNAPSHOT EXTERNO PENDENTE DO MERGE CANÔNICO DESTA EMISSÃO.**
+> **PACOTE V2 MATERIALIZADO — 19 FONTES CANÔNICAS + 6 GUIAS OPERACIONAIS — 25 ARQUIVOS — `delivery/design-handoff-v2` @ `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016` — V1 PRESERVADA.**
