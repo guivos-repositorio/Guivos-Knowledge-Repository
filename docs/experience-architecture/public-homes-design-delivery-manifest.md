@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-08-13
 normative: true
@@ -33,7 +33,7 @@ related:
 
 Este manifesto define o **snapshot oficial de documentos a ser entregue à pessoa responsável por Design, UX e UI das cinco Homes públicas já convergidas da Guivos**.
 
-Ele não cria nova arquitetura, não substitui os Documentos Mestres e não duplica suas decisões. Sua função é operacional: fixar **quais arquivos entram no pacote de handoff, em qual checkpoint do GKR, em qual ordem devem ser lidos e quais materiais ficam deliberadamente fora da entrega inicial**.
+Ele não cria nova arquitetura, não substitui os Documentos Mestres e não duplica suas decisões. Sua função é operacional: fixar **quais fontes canônicas entram no handoff, em qual checkpoint do GKR, como devem ser separadas por Home, em qual ordem devem ser lidas e quais materiais ficam deliberadamente fora da entrega inicial**.
 
 O pacote aqui governado serve à primeira rodada de:
 
@@ -50,7 +50,7 @@ Este manifesto não autoriza desenvolvimento, publicação ou promoção automá
 
 ## 2. Checkpoint congelado
 
-Os documentos da entrega v1 devem ser extraídos do seguinte checkpoint:
+Os documentos canônicos da entrega v1 devem ser extraídos do seguinte checkpoint:
 
 ```text
 repository: guivos-repositorio/Guivos-Knowledge-Repository
@@ -67,7 +67,7 @@ Regra:
 
 ---
 
-## 3. Composição oficial: 16 documentos únicos
+## 3. Composição canônica: 16 documentos únicos
 
 ### 3.1 Documento comum — leia primeiro
 
@@ -147,41 +147,138 @@ Regra:
 
 ---
 
-## 4. Estrutura recomendada do pacote enviado
+## 4. Decisão operacional: separar a entrega por Home
 
-O snapshot externo deve ser organizado assim:
+A entrega externa **não deve apresentar os 16 documentos como um conjunto indiferenciado**.
+
+Embora o snapshot tenha 16 fontes canônicas únicas, o uso operacional deve ser separado em cinco contextos independentes de trabalho.
+
+A designer não deve precisar descobrir quais documentos pertencem a cada Home, nem selecionar manualmente fontes a partir de uma pasta única.
+
+Princípio:
+
+> **Uma Home = um contexto de trabalho isolado.**
+
+A única fonte comum às cinco Homes é `GKR-UX-HOMES-DESIGN-HANDOFF-001`, mantida em `00-LEIA-PRIMEIRO`.
+
+Cada pasta específica de Home deve conter:
+
+1. um `LEIA-PRIMEIRO` operacional daquela Home;
+2. o Documento Mestre;
+3. o contrato complementar — reconciliação pós-Media ou `GPA-005` no caso do Media;
+4. o Source Lock + Prompt Controlado.
+
+O `LEIA-PRIMEIRO` específico é **arquivo operacional de embalagem**, não documento canônico do GKR e não nova autoridade arquitetural. Sua função é somente indicar a ordem de uso e evitar mistura de contexto.
+
+---
+
+## 5. Estrutura oficial do pacote externo v1
 
 ```text
 GUIVOS-HOMES-DESIGN-HANDOFF-v1/
 ├── 00-LEIA-PRIMEIRO/
-│   └── 00-Handoff-Canonico.md
+│   └── 00-Handoff-Canonico-das-Homes.md
+│
 ├── 01-HOME-PESSOA/
+│   ├── 00-LEIA-PRIMEIRO-PESSOA.md
 │   ├── 01-Documento-Mestre.md
 │   ├── 02-Reconciliacao-Pos-Media.md
 │   └── 03-Source-Lock-Prompt.md
+│
 ├── 02-HOME-ORGANIZACOES-E-COLETIVOS/
+│   ├── 00-LEIA-PRIMEIRO-ORGANIZACOES-E-COLETIVOS.md
 │   ├── 01-Documento-Mestre.md
 │   ├── 02-Reconciliacao-Pos-Media.md
 │   └── 03-Source-Lock-Prompt.md
+│
 ├── 03-HOME-MALL/
+│   ├── 00-LEIA-PRIMEIRO-MALL.md
 │   ├── 01-Documento-Mestre.md
 │   ├── 02-Reconciliacao-Pos-Media.md
 │   └── 03-Source-Lock-Prompt.md
+│
 ├── 04-HOME-TRAVEL/
+│   ├── 00-LEIA-PRIMEIRO-TRAVEL.md
 │   ├── 01-Documento-Mestre.md
 │   ├── 02-Reconciliacao-Pos-Media.md
 │   └── 03-Source-Lock-Prompt.md
+│
 └── 05-HOME-MEDIA/
+    ├── 00-LEIA-PRIMEIRO-MEDIA.md
     ├── 01-Documento-Mestre.md
     ├── 02-GPA-005-Guivos-Media.md
     └── 03-Source-Lock-Prompt.md
 ```
 
-Os nomes externos podem ser simplificados para facilitar o uso pela designer, desde que o conteúdo permaneça integral e sem edição semântica.
+O pacote externo contém, portanto:
+
+```text
+16 FONTES CANÔNICAS CONGELADAS
++
+5 GUIAS OPERACIONAIS LEIA-PRIMEIRO
+=
+21 ARQUIVOS NO SNAPSHOT EXTERNO
+```
+
+Os cinco guias operacionais não entram na contagem de fontes canônicas e não devem receber IDs normativos do GKR.
 
 ---
 
-## 5. Formato de entrega
+## 6. Conteúdo mínimo de cada `LEIA-PRIMEIRO` específico
+
+Cada guia operacional deve informar de forma inequívoca:
+
+- qual Home está sendo trabalhada;
+- que o Handoff Canônico comum deve ser lido primeiro;
+- quais três documentos da pasta formam o contexto específico daquela Home;
+- qual é a ordem de leitura;
+- qual arquivo contém o prompt que inicia a exploração generativa;
+- que documentos das outras Homes não devem ser adicionados à mesma execução;
+- que o output inicial é sempre `EXPLORAÇÃO`;
+- que a ferramenta não possui autoridade para alterar arquitetura, significado ou decisões canônicas;
+- qual é o checkpoint congelado do pacote.
+
+Modelo operacional:
+
+```text
+1. 00-Handoff-Canonico-das-Homes.md
+↓
+2. 01-Documento-Mestre.md
+↓
+3. 02-Contrato-Complementar.md
+↓
+4. 03-Source-Lock-Prompt.md
+↓
+5. EXECUÇÃO NO FIGMA MAKE / FERRAMENTA EQUIVALENTE
+↓
+6. OUTPUT = EXPLORAÇÃO
+```
+
+---
+
+## 7. Regra de carregamento no Figma Make e ferramentas equivalentes
+
+Para trabalhar em uma Home, utilizar **somente quatro fontes canônicas**:
+
+```text
+HANDOFF CANÔNICO COMUM
++
+DOCUMENTO MESTRE DA HOME
++
+CONTRATO COMPLEMENTAR DA HOME
++
+SOURCE LOCK + PROMPT DA HOME
+```
+
+Não carregar simultaneamente documentos específicos de Pessoa, Organizações e Coletivos, Mall, Travel e Media na mesma execução generativa.
+
+A comparação entre Homes pode ocorrer em revisão humana de coerência da família Guivos, mas não como mistura indiscriminada de contexto no momento da geração.
+
+A separação física das pastas é uma proteção semântica, não apenas conveniência de organização.
+
+---
+
+## 8. Formato de entrega
 
 Para o pacote primário, utilizar **Markdown (`.md`)** como formato oficial de transferência.
 
@@ -195,31 +292,11 @@ Motivos:
 
 PDF pode ser produzido como material auxiliar para leitura humana, mas **não deve substituir os Markdown como input primário para Figma Make ou ferramenta equivalente**.
 
----
-
-## 6. Ordem operacional por Home
-
-Antes de gerar qualquer proposta para uma Home, a designer ou ferramenta deve ler apenas:
-
-```text
-1. HANDOFF CANÔNICO COMUM
-↓
-2. DOCUMENTO MESTRE DA HOME
-↓
-3. CONTRATO COMPLEMENTAR DA HOME
-↓
-4. SOURCE LOCK + PROMPT ESPECÍFICO
-↓
-5. EXECUÇÃO GENERATIVA
-```
-
-Não carregar simultaneamente os documentos específicos das cinco Homes em uma execução de geração.
-
-A comparação entre Homes pode ocorrer em revisão humana de coerência, não como mistura indiscriminada de contexto durante a geração.
+O pacote externo pode ser distribuído como arquivo `.zip`, desde que sua estrutura interna preserve exatamente a separação por Home definida neste manifesto.
 
 ---
 
-## 7. Materiais deliberadamente fora do pacote
+## 9. Materiais deliberadamente fora do pacote
 
 Não fazem parte da entrega inicial:
 
@@ -238,23 +315,26 @@ Esses materiais permanecem preservados e podem ser fornecidos sob demanda quando
 
 ---
 
-## 8. Regras de integridade da entrega
+## 10. Regras de integridade da entrega
 
 O pacote é íntegro quando:
 
-1. contém exatamente os 16 documentos listados neste manifesto;
-2. todos foram extraídos do commit congelado;
-3. nenhum texto canônico foi resumido ou reescrito para caber no pacote;
-4. os nomes externos não alteram IDs ou conteúdo interno;
-5. cada Source Lock continua vinculado à sua respectiva Home;
-6. não há mistura de documentos históricos como fonte vigente;
-7. o pacote deixa claro que outputs generativos começam como `EXPLORAÇÃO`;
-8. não há autorização implícita para Engenharia ou publicação;
-9. o arquivo entregue pode ser reproduzido a partir do checkpoint informado.
+1. contém exatamente as 16 fontes canônicas listadas neste manifesto;
+2. todos os documentos canônicos foram extraídos do commit congelado;
+3. contém os cinco `LEIA-PRIMEIRO` operacionais, um por Home;
+4. nenhum texto canônico foi resumido ou reescrito para caber no pacote;
+5. os nomes externos não alteram IDs ou conteúdo interno;
+6. cada Source Lock continua vinculado à sua respectiva Home;
+7. os documentos específicos estão fisicamente separados por Home;
+8. não há mistura de documentos históricos como fonte vigente;
+9. o pacote deixa claro que outputs generativos começam como `EXPLORAÇÃO`;
+10. não há autorização implícita para Engenharia ou publicação;
+11. o arquivo entregue pode ser reproduzido a partir do checkpoint informado;
+12. os cinco guias operacionais não se apresentam como autoridade arquitetural ou documento canônico.
 
 ---
 
-## 9. Evolução e reemissão
+## 11. Evolução e reemissão
 
 Se qualquer uma das fontes obrigatórias sofrer mudança material depois deste snapshot, avaliar se a alteração afeta:
 
@@ -272,24 +352,24 @@ Não substituir arquivos individualmente dentro de um pacote já distribuído se
 
 ---
 
-## 10. Síntese
+## 12. Síntese
 
-A entrega oficial para Design não é o repositório inteiro.
+A entrega oficial para Design não é o repositório inteiro e não é uma pasta única com 16 documentos misturados.
 
-É um snapshot pequeno, reproduzível e semanticamente governado:
+É um snapshot pequeno, reproduzível, separado por Home e semanticamente governado:
 
 ```text
 1 HANDOFF COMUM
 +
-5 × (DOCUMENTO MESTRE + COMPLEMENTO + SOURCE LOCK)
+5 × (LEIA-PRIMEIRO OPERACIONAL + DOCUMENTO MESTRE + COMPLEMENTO + SOURCE LOCK)
 =
-16 DOCUMENTOS ÚNICOS
+16 FONTES CANÔNICAS + 5 GUIAS OPERACIONAIS
 ```
 
 Regra final:
 
-> **Entregar contexto suficiente para materializar com liberdade, mas não contexto indiscriminado a ponto de permitir que a ferramenta reconstrua a arquitetura por inferência.**
+> **Entregar cada Home como um contexto de trabalho isolado, com contexto suficiente para materializar com liberdade, mas sem permitir que a ferramenta reconstrua a arquitetura por mistura ou inferência.**
 
 Estado desta frente:
 
-> **PACOTE V1 DEFINIDO — 16 FONTES CONGELADAS NO CHECKPOINT 4fee04c4da8d099ac3c415c870391011ceb28e6d — PRONTO PARA SNAPSHOT EXTERNO E ENTREGA À DESIGNER.**
+> **PACOTE V1 DEFINIDO POR HOME — 16 FONTES CANÔNICAS CONGELADAS NO CHECKPOINT 4fee04c4da8d099ac3c415c870391011ceb28e6d + 5 GUIAS OPERACIONAIS — PRONTO PARA SNAPSHOT EXTERNO E ENTREGA À DESIGNER.**
