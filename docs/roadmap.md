@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.77.0
+id: ROADMAP-12.78.0
 title: Roadmap Arquitetural — Consolidação Documental P0–P9
 status: active
-version: 12.77.0
+version: 12.78.0
 owner: Guivos
 last_updated: 2026-08-14
 supersedes_partial:
-  - ROADMAP-12.76.0
+  - ROADMAP-12.77.0
 related:
   - GKR-STATE-001
   - GKR-P9-GLOBAL-CONSOLIDATION-001
@@ -18,11 +18,15 @@ related:
   - GKR-HOME-DECISION-NO-WIREFRAME-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V2-SNAPSHOT-001
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-MALL-MASTER-001
   - GKR-UX-HOME-TRAVEL-MASTER-001
   - GKR-UX-HOME-MEDIA-MASTER-001
+  - GKR-UX-HOME-ADS-MASTER-001
+  - GKR-UX-HOME-ADS-GENINPUT-001
   - M7.88
 ---
 
@@ -30,7 +34,7 @@ related:
 
 ## 1. Autoridade
 
-Este roadmap registra o estado global após a ressincronização documental de agosto de 2026, a convergência das cinco Homes públicas atualmente entregáveis e a autorização procedimental de sua fase de Design. O estado oficial permanece em `GKR-STATE-001`.
+Este roadmap registra o estado global após a ressincronização documental de agosto de 2026, a convergência das seis Homes públicas atualmente entregáveis e a autorização procedimental de sua fase de Design. O estado oficial permanece em `GKR-STATE-001`.
 
 A decisão pós-P5 de 2026-08-12 que afastava wireframe da continuidade da Home de Organizações e Coletivos permanece preservada como histórico em `GKR-HOME-DECISION-NO-WIREFRAME-001`, mas foi posteriormente superada **somente quanto à autorização procedimental da fase de Design** por `GKR-UX-HOMES-DESIGN-HANDOFF-001`.
 
@@ -54,9 +58,11 @@ A decisão pós-P5 de 2026-08-12 que afastava wireframe da continuidade da Home 
 | Home Pública — Guivos Mall | Documento Mestre + reconciliação pós-Media + Source Lock; Design autorizado proceduralmente |
 | Home Pública — Guivos Travel | Documento Mestre + reconciliação pós-Media + Source Lock; Design autorizado proceduralmente |
 | Home Pública — Guivos Media | Documento Mestre + GPA-005 + Source Lock; Design autorizado proceduralmente |
-| handoff comum das cinco Homes | **GKR-UX-HOMES-DESIGN-HANDOFF-001 ativo** |
-| pacote externo para Design | **GKR-UX-HOMES-DESIGN-DELIVERY-001 v1.1.0 — 16 fontes canônicas + 5 guias operacionais** |
-| Home Guivos Ads | **não iniciada** |
+| Home Pública — Guivos Ads | Documento Mestre + GPA-007 + Source Lock; Design autorizado proceduralmente |
+| handoff comum das seis Homes | **GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.1.0 ativo** |
+| pacote externo para Design | **GKR-UX-HOMES-DESIGN-DELIVERY-001 v2.0.0 — 19 fontes canônicas + 6 guias operacionais** |
+| snapshot externo v2 | **`delivery/design-handoff-v2` @ `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`** |
+| snapshot externo v1 | **preservado em `delivery/design-handoff-v1` @ `8e2a356ca84ba980e588258757800cde2a946f40`** |
 
 ## 3. Sequência funcional preservada
 
@@ -86,19 +92,24 @@ A convergência das Homes públicas e o handoff de Design constituem Experience 
 | P8 | sete Produtos Especializados rebaselineados |
 | P9 | estado transversal, matriz e Public Canon reconciliados |
 
-Na Experience Architecture pública, cinco Homes atingiram convergência documental suficiente para handoff controlado à fase de Design:
+Na Experience Architecture pública, seis Homes atingiram convergência documental suficiente para handoff controlado à fase de Design:
 
 1. Pessoa;
 2. Organizações e Coletivos;
 3. Guivos Mall;
 4. Guivos Travel;
-5. Guivos Media.
+5. Guivos Media;
+6. Guivos Ads.
 
-A Home de Organizações e Coletivos preserva P1–P5 como histórico válido. `GKR-HOME-P5` registrou prontidão para decisão humana; a decisão pós-P5 inicialmente afastou wireframe; `GKR-UX-HOMES-DESIGN-HANDOFF-001`, posterior, passou a autorizar wireframe low-fi e demais explorações de Design para as cinco Homes. A superação é exclusivamente procedimental e não altera significado, narrativa ou produto.
+A Home de Organizações e Coletivos preserva P1–P5 como histórico válido. `GKR-HOME-P5` registrou prontidão para decisão humana; a decisão pós-P5 inicialmente afastou wireframe; `GKR-UX-HOMES-DESIGN-HANDOFF-001`, posterior, passou a autorizar wireframe low-fi e demais explorações de Design. A superação é exclusivamente procedimental e não altera significado, narrativa ou produto.
 
 A reconciliação pós-Media estabeleceu que Guivos Media pode abastecer editorialmente outras superfícies sem assumir autoridade sobre a finalidade, narrativa ou operação dessas superfícies.
 
-O pacote de entrega v1 é governado por `GKR-UX-HOMES-DESIGN-DELIVERY-001`: 16 fontes canônicas congeladas no checkpoint `4fee04c4da8d099ac3c415c870391011ceb28e6d`, separadas por Home, acrescidas de cinco guias operacionais `LEIA-PRIMEIRO` no snapshot externo.
+A Home Guivos Ads possui arquitetura própria, B2B e comercial, com `GKR-UX-HOME-ADS-MASTER-001`, `GPA-007` v1.3.0 e `GKR-UX-HOME-ADS-GENINPUT-001`. Ads preserva a autoridade das superfícies anfitriãs, organiza soluções por objetivo comercial e conduz a qualificação inteligente sem transformar contexto pessoal protegido em matéria-prima publicitária.
+
+O pacote de entrega v2 é governado por `GKR-UX-HOMES-DESIGN-DELIVERY-001`: 19 fontes canônicas extraídas da `main` canônica `603aa7f37435ac376f7a202669ad4ac1d7d13a83`, separadas por Home, acrescidas de seis guias operacionais `LEIA-PRIMEIRO`, totalizando 25 arquivos no snapshot externo `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`.
+
+A emissão v1 continua preservada no snapshot `8e2a356ca84ba980e588258757800cde2a946f40` e não foi reescrita pela v2.
 
 ## 5. Lacunas não fechadas por documentação
 
@@ -112,9 +123,10 @@ Continuam dependentes de evidência ou autorização própria:
 - piloto e operação internacional;
 - cobrança/gateway real;
 - handoffs especializados ainda não materializados;
-- seleção e validação humana das direções visuais das cinco Homes;
+- seleção e validação humana das direções visuais das seis Homes;
 - promoção de qualquer output de Design a estado canônico;
-- Home Guivos Ads, ainda sem Documento Mestre específico nesta frente;
+- implementação operacional da experiência inteligente de qualificação do Guivos Ads;
+- implementação operacional de campanhas, inventário, pricing e mensuração do Guivos Ads;
 - UXA-102/V5;
 - Product Engineering.
 
@@ -131,8 +143,8 @@ O próximo ato deve nascer de uma necessidade concreta e autoridade própria. Ex
 - readiness/piloto territorial → gates P7;
 - nova continuidade funcional → UXA-102 somente por autorização humana separada;
 - implementação → Product Engineering somente por reativação explícita;
-- cinco Homes convergidas → exploração de Design controlada por Home e por Source Lock;
-- Home Guivos Ads → nova frente de Experience Architecture somente por autorização humana própria.
+- seis Homes convergidas → exploração de Design controlada por Home e por Source Lock;
+- Guivos Ads → validar direção de Design, operação comercial e experiência inteligente em atos próprios, sem inferir implementação automática.
 
 ## 7. Handoff e entrega para Design
 
@@ -143,24 +155,30 @@ GKR
 → fonte de verdade e arquitetura
 
 GKR-UX-HOMES-DESIGN-HANDOFF-001
-→ autorização procedimental + regras de Design
+→ autorização procedimental + regras de Design para seis Homes
 
 SOURCE LOCK DE CADA HOME
 → contexto permitido por execução
 
-GKR-UX-HOMES-DESIGN-DELIVERY-001
+GKR-UX-HOMES-DESIGN-DELIVERY-001 v2.0.0
 → composição e integridade do pacote externo
 
-branch delivery/design-handoff-v1
-→ snapshot de distribuição
+GKR-UX-HOMES-DESIGN-DELIVERY-V2-SNAPSHOT-001
+→ registro factual do snapshot emitido
+
+branch delivery/design-handoff-v2
+→ snapshot de distribuição vigente
 → não é fonte canônica paralela
+
+branch delivery/design-handoff-v1
+→ snapshot histórico preservado
 
 OUTPUT DE DESIGN
 → EXPLORAÇÃO
 → requer validação humana antes de qualquer promoção
 ```
 
-A branch de entrega não deve ser mesclada na `main` para duplicar os documentos canônicos. Se qualquer fonte obrigatória evoluir materialmente, deve ser avaliada a emissão de nova versão do pacote em vez de substituição silenciosa de arquivos dentro do snapshot v1.
+As branches de entrega não devem ser mescladas na `main` para duplicar documentos canônicos. Se qualquer fonte obrigatória evoluir materialmente, deve ser avaliada nova emissão do pacote em vez de substituição silenciosa de arquivos dentro de um snapshot já distribuído.
 
 ## 8. Preservação
 
@@ -172,6 +190,6 @@ Para Organizações e Coletivos:
 
 `decisão histórica sem wireframe ≠ proibição procedimental vigente`, pois o handoff posterior de Design governa esse limite específico.
 
-Para a Home Guivos Ads:
+Para Guivos Ads:
 
-`produto especializado existente ≠ Home específica construída ≠ Design autorizado automaticamente`.
+`Home convergida ≠ campanha operacional ≠ inventário disponível ≠ pricing público ≠ Intelligence implementado ≠ contratação automática`.
