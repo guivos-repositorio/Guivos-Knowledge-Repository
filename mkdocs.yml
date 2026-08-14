@@ -200,7 +200,7 @@ nav:
           - Validação e Reformulação das Jornadas: experience-architecture/uxa-072-integrated-journeys-functional-validation-and-reformulation.md
           - Navegação e Sincronização das Jornadas: experience-architecture/uxa-073-integrated-journeys-reformulation-navigation-and-synchronization.md
           - Revalidação Funcional das Jornadas: experience-architecture/uxa-074-integrated-journeys-functional-revalidation.md
-          - Promoção dos Registros Granulares: experience-architecture/uxa-075-integrated-journeys-controlled-promotion-and-post-validation-synchronization.md
+          - Promoção e Sincronização Pós-Validação: experience-architecture/uxa-075-integrated-journeys-controlled-promotion-and-post-validation-synchronization.md
           - Registro Granular de Superfícies e Transições: experience-architecture/uxa-076-integrated-journeys-granular-transition-and-surface-registry.md
           - Validação dos Registros Granulares: experience-architecture/uxa-077-granular-registry-functional-validation.md
           - Reformulação dos Registros Granulares: experience-architecture/uxa-078-controlled-granular-registry-reformulation.md
@@ -319,7 +319,7 @@ nav:
           - Histórico — Validação do Fluxo do Anunciante: project/changelog-1.65.0-uxa-041.md
           - Histórico — Cartão Patrocinado e Explicação: project/changelog-1.66.0-uxa-042.md
           - Histórico — Validação do Cartão Patrocinado: project/changelog-1.67.0-uxa-043.md
-          - Histórico — Estados Patrocinados de Lista e Mapa: project/changelog-1.68.0-uxa-044-addendum.md
+          - Histórico — Estados Patrocinados de Lista e Mapa: project/changelog-1.68.0-uxa-044.md
           - Histórico — Validação dos Estados Patrocinados: project/changelog-1.69.0-uxa-045.md
           - Histórico — Gestão da Campanha Ativa: project/changelog-1.70.0-uxa-046.md
       - Métodos de Governança:
