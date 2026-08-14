@@ -1,10 +1,10 @@
 ---
 id: GKR-HOME-DECISION-NO-WIREFRAME-001
 title: Decisão Pós-P5 — Continuidade da Home de Organizações e Coletivos sem Wireframe
-status: active
-version: 1.0.0
+status: superseded
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-08-12
+last_updated: 2026-08-14
 depends_on:
   - GKR-UX-PUBLIC-HOME-ORG-COLLECTIVE-001
   - GKR-HOME-P1
@@ -14,13 +14,41 @@ depends_on:
   - GKR-HOME-P5
 related:
   - GKR-STATE-001
-  - ROADMAP-12.76.0
+  - ROADMAP-12.77.0
+  - GKR-UX-HOMES-DESIGN-HANDOFF-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - M7.88
   - UXA-101
+superseded_by:
+  - GKR-UX-HOMES-DESIGN-HANDOFF-001
 normative: true
 ---
 
 # Decisão Pós-P5 — Continuidade da Home de Organizações e Coletivos sem Wireframe
+
+## 0. Nota de superação posterior
+
+Este documento preserva a decisão humana tomada em 2026-08-12 e continua válido como **registro histórico do estado pós-P5 naquele momento**.
+
+Posteriormente, `GKR-UX-HOMES-DESIGN-HANDOFF-001` instituiu uma nova decisão humana para as cinco Homes públicas já convergidas e autorizou proceduralmente a fase de Design, incluindo exploração em Figma Make, arquitetura visual, **wireframe de baixa fidelidade**, UX, UI e prototipação.
+
+Por ser autoridade posterior e declarar expressamente que, em conflito com proibições procedimentais anteriores de materialização, o handoff prevalece **somente quanto à autorização da fase de Design**, a proibição de wireframe registrada neste documento está **superada nesse limite específico**.
+
+Portanto:
+
+```text
+DECISÃO PÓS-P5 DE 2026-08-12
+→ permanece como histórico válido
+
+GKR-UX-HOMES-DESIGN-HANDOFF-001
+→ governa o estado procedimental vigente da fase de Design
+→ wireframe low-fi pode ser explorado para Organizações e Coletivos
+
+SEMÂNTICA / NARRATIVA / PRODUTO / FRONTEIRAS
+→ continuam governados pelo Documento Mestre e contratos vigentes
+```
+
+Esta superação não autoriza Engenharia, implementação, código ou publicação.
 
 ## 1. Autoridade e contexto
 
@@ -47,6 +75,8 @@ A partir desta decisão:
 - `UXA-102/V5` permanece não iniciada;
 - Engenharia de Produto permanece pausada;
 - Figma, protótipo, UI, implementação, código e publicação permanecem não autorizados por este registro.
+
+> **Nota de vigência:** os itens procedimentais acima descrevem o estado estabelecido por esta decisão em 2026-08-12. Para a fase de Design, foram posteriormente superados por `GKR-UX-HOMES-DESIGN-HANDOFF-001` conforme a seção 0. Os demais limites continuam preservados.
 
 ## 3. Escopo exato
 
@@ -77,23 +107,23 @@ Home Pública de Organizações e Coletivos / P1–P5
 
 ## 5. Estado após a decisão
 
-| Elemento | Estado |
+| Elemento | Estado histórico desta decisão |
 |---|---|
 | P1–P5 | preservados e historicamente válidos |
 | P5 | prontidão documental concluída; não é mandato de wireframe |
-| Wireframe para Home de Organizações e Coletivos | **não será utilizado como etapa de continuidade** |
-| Próxima forma de materialização | não definida; depende de decisão humana separada |
+| Wireframe para Home de Organizações e Coletivos | **não seria utilizado como etapa de continuidade; posteriormente superado para a fase de Design por GKR-UX-HOMES-DESIGN-HANDOFF-001** |
+| Próxima forma de materialização | à época, não definida; posteriormente definida proceduralmente pelo handoff de Design |
 | UXA-102/V5 | não iniciada |
 | Engenharia de Produto | não iniciada/pausada conforme autoridade vigente |
-| Figma/protótipo/UI | não autorizados |
+| Figma/protótipo/UI | à época, não autorizados; posteriormente autorizados somente como fase de Design |
 | Implementação/código | não autorizados |
-| Publicação | não autorizada por esta decisão |
+| Publicação | não autorizada por esta decisão nem pelo handoff de Design |
 
 ## 6. Próximo ato governado
 
-Não existe próxima etapa automática.
+No estado registrado em 2026-08-12, não existia próxima etapa automática.
 
-Caso a Guivos decida materializar a Home de Organizações e Coletivos, deverá existir autorização humana separada que defina **qual artefato ou processo substitui a etapa de wireframe**, seu escopo, suas entradas e seus gates. Até lá, a autoridade vigente permanece documental.
+A decisão posterior materializada em `GKR-UX-HOMES-DESIGN-HANDOFF-001` passou a governar o próximo ato procedimental das cinco Homes: exploração de Design controlada por Source Lock, sem autorização de Engenharia ou publicação.
 
 ## 7. Preservação final
 
@@ -107,4 +137,4 @@ prontidão para decidir
 ≠ publicação
 ```
 
-Esta decisão altera o **caminho futuro**, não a validade histórica de P1–P5.
+Este documento preserva a validade histórica da decisão pós-P5. A autorização procedimental vigente da fase de Design é governada pela autoridade posterior `GKR-UX-HOMES-DESIGN-HANDOFF-001`.

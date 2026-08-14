@@ -4,7 +4,7 @@ title: Registro do Estado Atual
 status: active
 version: 2.36.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-12
+last_updated: 2026-08-14
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -48,7 +48,15 @@ related:
   - GKR-P9-GLOBAL-CONSOLIDATION-001
   - GKR-HOME-P5
   - GKR-HOME-DECISION-NO-WIREFRAME-001
-  - ROADMAP-12.76.0
+  - GKR-UX-HOME-MASTER-001
+  - GKR-UX-HOME-OC-MASTER-001
+  - GKR-UX-HOME-MALL-MASTER-001
+  - GKR-UX-HOME-TRAVEL-MASTER-001
+  - GKR-UX-HOME-MEDIA-MASTER-001
+  - GPA-005
+  - GKR-UX-HOMES-DESIGN-HANDOFF-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-001
+  - ROADMAP-12.77.0
   - M7.88
 normative: true
 ---
@@ -61,7 +69,11 @@ Este registro declara o estado global vigente do Guivos Knowledge Repository ap�
 
 A D5-C4B **não cria novo marco funcional, não inicia UXA-102, não retoma Engenharia de Produto e não altera inventário visual ou granular**. Ela promove individualmente `TRN-008..013` para `integralmente validada` no limite documental, após examinar origem, destino, autoridade, contexto mínimo, efeitos, retorno, interrupção, concorrência, idempotência e sensibilidade aplicável.
 
-Após `GKR-HOME-P5`, uma decisão humana posterior foi formalizada em `GKR-HOME-DECISION-NO-WIREFRAME-001`: a continuidade da Home Pública de Organizações e Coletivos **não utilizará wireframe como etapa de materialização**. P1–P5 permanecem historicamente válidos; P5 registra prontidão para uma decisão humana, não obrigação de wireframing. A próxima forma de materialização dessa Home permanece indefinida e exige autorização humana separada, sem passar por wireframe.
+A frente pública evoluiu posteriormente com a convergência dos Documentos Mestres das Homes de Pessoa, Organizações e Coletivos, Guivos Mall, Guivos Travel e Guivos Media; com a reconciliação do abastecimento editorial do Guivos Media; com Source Locks específicos; e com `GKR-UX-HOMES-DESIGN-HANDOFF-001`, que autoriza proceduralmente exploração de Design das cinco Homes sem autorizar Engenharia ou publicação.
+
+`GKR-HOME-DECISION-NO-WIREFRAME-001` permanece preservado como registro histórico da decisão pós-P5 de 2026-08-12, mas sua proibição procedimental de wireframe foi posteriormente **superada para a fase de Design** por `GKR-UX-HOMES-DESIGN-HANDOFF-001`. O handoff posterior prevalece nesse limite específico; as decisões semânticas, narrativas, funcionais e de produto das autoridades próprias de cada Home permanecem intactas.
+
+`GKR-UX-HOMES-DESIGN-DELIVERY-001` governa a composição e a separação do pacote externo de Design. A branch `delivery/design-handoff-v1` é snapshot operacional de distribuição e **não constitui fonte canônica paralela à `main`**.
 
 Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
@@ -73,7 +85,8 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Marco funcional | **M7.88 — saída consciente para fronteira externa validada** |
 | Última frente funcional numerada | **UXA-101** |
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária de Planos** |
-| Frente não numerada mais recente de Experience Architecture | **D5-C4B — `TRN-008..013` integralmente validadas no limite documental** |
+| Journey — frente não numerada funcional mais recente | **D5-C4B — `TRN-008..013` integralmente validadas no limite documental** |
+| Experience Architecture pública mais recente | **handoff e entrega controlada das cinco Homes já convergidas para Design** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Domínios de Evolução do Journey | **9 domínios canônicos + estado transversal “Ainda estou descobrindo”** |
@@ -81,7 +94,14 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Galeria visual | **121 SVGs — 121 validados / 0 pendentes** |
 | Matriz por SVG | **121 associações / 34 perfis** |
 | Jornadas principais | Pessoa, Coletivo e Organização permanecem `draft` |
-| Home Pública de Organizações e Coletivos | **P1–P5 preservados; wireframe não será usado na continuidade; próximo caminho de materialização não definido** |
+| Home Pública — Pessoa | **Documento Mestre convergido; reconciliação pós-Media e Source Lock vigentes; Design autorizado proceduralmente** |
+| Home Pública — Organizações e Coletivos | **Documento Mestre convergido; P1–P5 preservados como histórico; proibição pós-P5 de wireframe superada para a fase de Design; Source Lock vigente** |
+| Home Pública — Guivos Mall | **Documento Mestre convergido; reconciliação pós-Media e Source Lock vigentes; Design autorizado proceduralmente** |
+| Home Pública — Guivos Travel | **Documento Mestre convergido; reconciliação pós-Media e Source Lock vigentes; Design autorizado proceduralmente** |
+| Home Pública — Guivos Media | **Documento Mestre convergido; GPA-005 e Source Lock vigentes; Design autorizado proceduralmente** |
+| Handoff das cinco Homes | **GKR-UX-HOMES-DESIGN-HANDOFF-001 ativo** |
+| Entrega para Design | **GKR-UX-HOMES-DESIGN-DELIVERY-001 v1.1.0; 16 fontes canônicas + 5 guias operacionais no snapshot externo** |
+| Home Guivos Ads | **não iniciada; eventual construção exige ato próprio e não decorre automaticamente deste checkpoint** |
 | P1/P1.1 | integrado — semântica e nomenclaturas reconciliadas |
 | P2 | integrado como arquitetura de referência — Neo4j `reference_selected` |
 | P3 | governança integrada — fatos registrários/digitais dependem de evidência |
@@ -341,6 +361,39 @@ D5-C4B é uma autoridade interna de Experience Architecture e não, por si só, 
 
 Nenhum texto público pode promover estado superior ao evidenciado nas autoridades internas.
 
+### 12.1 Homes públicas, Media e handoff para Design
+
+Cinco Homes públicas estão convergidas documentalmente para a fase de Design:
+
+1. Pessoa;
+2. Organizações e Coletivos;
+3. Guivos Mall;
+4. Guivos Travel;
+5. Guivos Media.
+
+Cada Home mantém autoridade própria de narrativa e finalidade. O Guivos Media possui autoridade editorial e pode abastecer outras superfícies com conteúdo sem adquirir autoridade sobre a finalidade, narrativa ou operação dessas superfícies.
+
+A relação transversal distingue:
+
+```text
+DISTRIBUIÇÃO
+→ onde o conteúdo Media é publicado
+
+ABASTECIMENTO EDITORIAL
+→ material Media utilizado dentro da narrativa de outra superfície
+
+CONTINUIDADE CONTEXTUAL
+→ descoberta editorial conduzindo, quando pertinente, a outra capacidade do ecossistema
+```
+
+`GKR-UX-HOMES-DESIGN-HANDOFF-001` autoriza somente a fase de Design das cinco Homes: exploração generativa, arquitetura visual, wireframe low-fi, UX, direção visual, UI, protótipos e estudos responsivos. Essa autorização **não** equivale a implementação, publicação, Marketing/GTM ou promoção automática do output a estado canônico.
+
+Os Source Locks específicos limitam cada exploração ao contexto da respectiva Home. Ferramentas como Figma Make são instrumentos de exploração; não possuem autoridade para redefinir arquitetura, produto ou significado.
+
+`GKR-UX-HOMES-DESIGN-DELIVERY-001` v1.1.0 governa o snapshot externo. O pacote v1 usa 16 fontes canônicas congeladas no checkpoint `4fee04c4da8d099ac3c415c870391011ceb28e6d`, separadas por Home, mais cinco guias operacionais `LEIA-PRIMEIRO`, totalizando 21 arquivos de entrega.
+
+A branch `delivery/design-handoff-v1`, commit `8e2a356ca84ba980e588258757800cde2a946f40`, materializa esse snapshot para distribuição. Ela é **artefato externo reproduzível**, não nova fonte de verdade e não deve ser mesclada na `main` como duplicação das fontes canônicas.
+
 ## 13. Programa P0–P9
 
 O programa amplo de ressincronização documental está **consolidado** quanto aos pacotes temáticos previstos:
@@ -378,12 +431,14 @@ O programa amplo de ressincronização documental está **consolidado** quanto a
 
 D5-C1/C2/C3/C4A/C4B não são V5 e não alteram a numeração UXA.
 
+A evolução das Homes públicas e o handoff de Design são frentes de Experience Architecture separadas da fila UXA funcional acima e não alteram M7.88 nem iniciam UXA-102.
+
 ## 15. Preservações finais
 
 - M7.88 permanece o marco funcional;
 - UXA-101 permanece a última frente funcional numerada;
 - UXA-100-A4 permanece reconciliação de Planos e não inicia UXA-102;
-- D5-C4B é a frente não numerada mais recente de Experience Architecture;
+- D5-C4B permanece a frente funcional não numerada mais recente do Journey;
 - UXA-102/V5 não foi iniciada;
 - Engenharia de Produto permanece pausada antes de W0-01;
 - Pessoa, Coletivo e Organização permanecem jornadas `draft`;
@@ -395,11 +450,14 @@ D5-C1/C2/C3/C4A/C4B não são V5 e não alteram a numeração UXA.
 - `TRN-008..013` estão integralmente validadas documentalmente e isso não equivale a implementação;
 - a primeira variante de Hoje não é obrigada a expor os handoffs especializados;
 - materialização, validação, promoção, implementação e operação são estados distintos;
-- a Home Pública de Organizações e Coletivos preserva P1–P5 como histórico válido;
-- o P5 dessa Home registra prontidão para decisão humana e não mandato de wireframing;
-- wireframe não será utilizado como etapa de continuidade dessa Home;
-- `UXA-022` permanece no escopo histórico da Main Home e não é reclassificada por essa decisão;
-- a próxima forma de materialização dessa Home não está definida e exige autorização humana separada;
+- P1–P5 da Home de Organizações e Coletivos permanecem histórico válido;
+- `GKR-HOME-DECISION-NO-WIREFRAME-001` permanece histórico, mas está `superseded` quanto à proibição procedimental de wireframe na fase de Design;
+- `GKR-UX-HOMES-DESIGN-HANDOFF-001` governa a autorização procedimental vigente de Design das cinco Homes;
+- Design autorizado ≠ output canônico ≠ implementação ≠ publicação;
+- cada Home mantém finalidade, narrativa e autoridade próprias;
+- Media pode abastecer editorialmente outra superfície sem adquirir autoridade sobre ela;
+- o snapshot `delivery/design-handoff-v1` não é fonte canônica paralela;
+- a Home Guivos Ads ainda não foi iniciada neste checkpoint;
 - projeção não é realizado;
 - preço não é disposição a pagar;
 - capital não é receita;
@@ -411,8 +469,8 @@ D5-C1/C2/C3/C4A/C4B não são V5 e não alteram a numeração UXA.
 
 ## 16. Próximo ato governado
 
-A D5-C4B encerra somente a lacuna específica D5-C de continuidade entre Hoje e Objetivos/Próximos Passos/Minha Evolução no limite documental.
+A fase de Design das cinco Homes já convergidas está proceduralmente autorizada e deve ser executada por contexto isolado, utilizando o handoff comum, o Documento Mestre, o contrato complementar e o Source Lock da respectiva Home. Outputs permanecem `EXPLORAÇÃO` até validação humana contra o GKR.
 
 D6, D7, materialização de `PER-009`, maturidade das transições internas de Planos, integrações patrocinadas, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria. Nenhuma é iniciada automaticamente.
 
-Para a Home Pública de Organizações e Coletivos, `GKR-HOME-DECISION-NO-WIREFRAME-001` encerra apenas a dúvida sobre usar ou não wireframe: **wireframe não será usado**. Qualquer materialização posterior deverá ser escolhida e autorizada separadamente, por caminho que não passe por wireframe. Figma, protótipo, UI, implementação, código e publicação não são iniciados por este registro.
+A eventual construção da **Home Guivos Ads** é uma frente nova e separada. Este registro reconhece apenas que Guivos Ads integra o conjunto de Produtos Especializados; não cria Documento Mestre da Home Ads, não define narrativa, não cria Source Lock e não inicia sua arquitetura. Qualquer avanço exige autorização humana própria.
