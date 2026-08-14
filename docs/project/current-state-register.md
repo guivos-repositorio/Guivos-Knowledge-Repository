@@ -53,10 +53,14 @@ related:
   - GKR-UX-HOME-MALL-MASTER-001
   - GKR-UX-HOME-TRAVEL-MASTER-001
   - GKR-UX-HOME-MEDIA-MASTER-001
+  - GKR-UX-HOME-ADS-MASTER-001
   - GPA-005
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
-  - ROADMAP-12.77.0
+  - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
+  - GKR-UX-HOME-ADS-GENINPUT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V2-SNAPSHOT-001
+  - ROADMAP-12.78.0
   - M7.88
 normative: true
 ---
@@ -69,11 +73,11 @@ Este registro declara o estado global vigente do Guivos Knowledge Repository ap�
 
 A D5-C4B **não cria novo marco funcional, não inicia UXA-102, não retoma Engenharia de Produto e não altera inventário visual ou granular**. Ela promove individualmente `TRN-008..013` para `integralmente validada` no limite documental, após examinar origem, destino, autoridade, contexto mínimo, efeitos, retorno, interrupção, concorrência, idempotência e sensibilidade aplicável.
 
-A frente pública evoluiu posteriormente com a convergência dos Documentos Mestres das Homes de Pessoa, Organizações e Coletivos, Guivos Mall, Guivos Travel e Guivos Media; com a reconciliação do abastecimento editorial do Guivos Media; com Source Locks específicos; e com `GKR-UX-HOMES-DESIGN-HANDOFF-001`, que autoriza proceduralmente exploração de Design das cinco Homes sem autorizar Engenharia ou publicação.
+A frente pública evoluiu posteriormente com a convergência dos Documentos Mestres das Homes de Pessoa, Organizações e Coletivos, Guivos Mall, Guivos Travel, Guivos Media e Guivos Ads; com a reconciliação do abastecimento editorial do Guivos Media; com Source Locks específicos; e com `GKR-UX-HOMES-DESIGN-HANDOFF-001`, que autoriza proceduralmente exploração de Design das seis Homes sem autorizar Engenharia ou publicação.
 
 `GKR-HOME-DECISION-NO-WIREFRAME-001` permanece preservado como registro histórico da decisão pós-P5 de 2026-08-12, mas sua proibição procedimental de wireframe foi posteriormente **superada para a fase de Design** por `GKR-UX-HOMES-DESIGN-HANDOFF-001`. O handoff posterior prevalece nesse limite específico; as decisões semânticas, narrativas, funcionais e de produto das autoridades próprias de cada Home permanecem intactas.
 
-`GKR-UX-HOMES-DESIGN-DELIVERY-001` governa a composição e a separação do pacote externo de Design. A branch `delivery/design-handoff-v1` é snapshot operacional de distribuição e **não constitui fonte canônica paralela à `main`**.
+`GKR-UX-HOMES-DESIGN-DELIVERY-001` v2.0.0 governa a composição e a separação do pacote externo de Design. A branch `delivery/design-handoff-v2` materializa o snapshot operacional vigente de distribuição; `delivery/design-handoff-v1` permanece preservada como emissão histórica. Nenhuma das duas constitui fonte canônica paralela à `main`.
 
 Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
@@ -86,7 +90,7 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Última frente funcional numerada | **UXA-101** |
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária de Planos** |
 | Journey — frente não numerada funcional mais recente | **D5-C4B — `TRN-008..013` integralmente validadas no limite documental** |
-| Experience Architecture pública mais recente | **handoff e entrega controlada das cinco Homes já convergidas para Design** |
+| Experience Architecture pública mais recente | **handoff e entrega controlada das seis Homes convergidas para Design** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Domínios de Evolução do Journey | **9 domínios canônicos + estado transversal “Ainda estou descobrindo”** |
@@ -99,9 +103,11 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Home Pública — Guivos Mall | **Documento Mestre convergido; reconciliação pós-Media e Source Lock vigentes; Design autorizado proceduralmente** |
 | Home Pública — Guivos Travel | **Documento Mestre convergido; reconciliação pós-Media e Source Lock vigentes; Design autorizado proceduralmente** |
 | Home Pública — Guivos Media | **Documento Mestre convergido; GPA-005 e Source Lock vigentes; Design autorizado proceduralmente** |
-| Handoff das cinco Homes | **GKR-UX-HOMES-DESIGN-HANDOFF-001 ativo** |
-| Entrega para Design | **GKR-UX-HOMES-DESIGN-DELIVERY-001 v1.1.0; 16 fontes canônicas + 5 guias operacionais no snapshot externo** |
-| Home Guivos Ads | **não iniciada; eventual construção exige ato próprio e não decorre automaticamente deste checkpoint** |
+| Home Pública — Guivos Ads | **Documento Mestre convergido; GPA-007 v1.3.0 e Source Lock vigentes; Design autorizado proceduralmente** |
+| Handoff das seis Homes | **GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.1.0 ativo** |
+| Entrega para Design | **GKR-UX-HOMES-DESIGN-DELIVERY-001 v2.0.0; 19 fontes canônicas + 6 guias operacionais no snapshot externo** |
+| Snapshot externo v2 | **`delivery/design-handoff-v2` @ `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`; 25 arquivos** |
+| Snapshot externo v1 | **preservado em `delivery/design-handoff-v1` @ `8e2a356ca84ba980e588258757800cde2a946f40`** |
 | P1/P1.1 | integrado — semântica e nomenclaturas reconciliadas |
 | P2 | integrado como arquitetura de referência — Neo4j `reference_selected` |
 | P3 | governança integrada — fatos registrários/digitais dependem de evidência |
@@ -361,19 +367,20 @@ D5-C4B é uma autoridade interna de Experience Architecture e não, por si só, 
 
 Nenhum texto público pode promover estado superior ao evidenciado nas autoridades internas.
 
-### 12.1 Homes públicas, Media e handoff para Design
+### 12.1 Homes públicas, Media, Ads e handoff para Design
 
-Cinco Homes públicas estão convergidas documentalmente para a fase de Design:
+Seis Homes públicas estão convergidas documentalmente para a fase de Design:
 
 1. Pessoa;
 2. Organizações e Coletivos;
 3. Guivos Mall;
 4. Guivos Travel;
-5. Guivos Media.
+5. Guivos Media;
+6. Guivos Ads.
 
 Cada Home mantém autoridade própria de narrativa e finalidade. O Guivos Media possui autoridade editorial e pode abastecer outras superfícies com conteúdo sem adquirir autoridade sobre a finalidade, narrativa ou operação dessas superfícies.
 
-A relação transversal distingue:
+A relação transversal do Media distingue:
 
 ```text
 DISTRIBUIÇÃO
@@ -386,13 +393,17 @@ CONTINUIDADE CONTEXTUAL
 → descoberta editorial conduzindo, quando pertinente, a outra capacidade do ecossistema
 ```
 
-`GKR-UX-HOMES-DESIGN-HANDOFF-001` autoriza somente a fase de Design das cinco Homes: exploração generativa, arquitetura visual, wireframe low-fi, UX, direção visual, UI, protótipos e estudos responsivos. Essa autorização **não** equivale a implementação, publicação, Marketing/GTM ou promoção automática do output a estado canônico.
+Guivos Ads possui autoridade comercial publicitária e postura funcional transversal. Os produtos anfitriões preservam autoridade sobre sua finalidade e experiência; Ads governa a relação publicitária, o inventário permitido, a identificação e a mensuração dentro dos contratos vigentes. Opportunity Boost permanece mecanismo do Ads, não definição integral do produto. A qualificação comercial inteligente pode utilizar respostas declaradas e contexto comercial autorizado sem transformar contexto pessoal protegido dos participantes em matéria-prima publicitária.
+
+`GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.1.0 autoriza somente a fase de Design das seis Homes: exploração generativa, arquitetura visual, wireframe low-fi, UX, direção visual, UI, protótipos e estudos responsivos. Essa autorização **não** equivale a implementação, publicação, Marketing/GTM ou promoção automática do output a estado canônico.
 
 Os Source Locks específicos limitam cada exploração ao contexto da respectiva Home. Ferramentas como Figma Make são instrumentos de exploração; não possuem autoridade para redefinir arquitetura, produto ou significado.
 
-`GKR-UX-HOMES-DESIGN-DELIVERY-001` v1.1.0 governa o snapshot externo. O pacote v1 usa 16 fontes canônicas congeladas no checkpoint `4fee04c4da8d099ac3c415c870391011ceb28e6d`, separadas por Home, mais cinco guias operacionais `LEIA-PRIMEIRO`, totalizando 21 arquivos de entrega.
+`GKR-UX-HOMES-DESIGN-DELIVERY-001` v2.0.0 governa o pacote externo vigente. A emissão v2 utiliza 19 fontes canônicas extraídas da `main` canônica `603aa7f37435ac376f7a202669ad4ac1d7d13a83`, separadas por Home, mais seis guias operacionais `LEIA-PRIMEIRO`, totalizando 25 arquivos de entrega.
 
-A branch `delivery/design-handoff-v1`, commit `8e2a356ca84ba980e588258757800cde2a946f40`, materializa esse snapshot para distribuição. Ela é **artefato externo reproduzível**, não nova fonte de verdade e não deve ser mesclada na `main` como duplicação das fontes canônicas.
+A branch `delivery/design-handoff-v2`, commit `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`, materializa esse snapshot para distribuição. Ela é **artefato externo reproduzível**, não nova fonte de verdade e não deve ser mesclada na `main` como duplicação das fontes canônicas.
+
+A emissão v1 permanece preservada em `delivery/design-handoff-v1`, commit `8e2a356ca84ba980e588258757800cde2a946f40`.
 
 ## 13. Programa P0–P9
 
@@ -452,12 +463,14 @@ A evolução das Homes públicas e o handoff de Design são frentes de Experienc
 - materialização, validação, promoção, implementação e operação são estados distintos;
 - P1–P5 da Home de Organizações e Coletivos permanecem histórico válido;
 - `GKR-HOME-DECISION-NO-WIREFRAME-001` permanece histórico, mas está `superseded` quanto à proibição procedimental de wireframe na fase de Design;
-- `GKR-UX-HOMES-DESIGN-HANDOFF-001` governa a autorização procedimental vigente de Design das cinco Homes;
+- `GKR-UX-HOMES-DESIGN-HANDOFF-001` governa a autorização procedimental vigente de Design das seis Homes;
 - Design autorizado ≠ output canônico ≠ implementação ≠ publicação;
 - cada Home mantém finalidade, narrativa e autoridade próprias;
 - Media pode abastecer editorialmente outra superfície sem adquirir autoridade sobre ela;
-- o snapshot `delivery/design-handoff-v1` não é fonte canônica paralela;
-- a Home Guivos Ads ainda não foi iniciada neste checkpoint;
+- Ads pode comercializar oportunidades publicitárias legítimas sem adquirir autoridade funcional sobre a superfície anfitriã;
+- `delivery/design-handoff-v2` é o snapshot externo vigente e não é fonte canônica paralela;
+- `delivery/design-handoff-v1` permanece preservado como snapshot histórico;
+- Home Guivos Ads está convergida documentalmente, mas operação publicitária, pricing, inventário, formulário inteligente e Intelligence operacional não são presumidos;
 - projeção não é realizado;
 - preço não é disposição a pagar;
 - capital não é receita;
@@ -469,8 +482,8 @@ A evolução das Homes públicas e o handoff de Design são frentes de Experienc
 
 ## 16. Próximo ato governado
 
-A fase de Design das cinco Homes já convergidas está proceduralmente autorizada e deve ser executada por contexto isolado, utilizando o handoff comum, o Documento Mestre, o contrato complementar e o Source Lock da respectiva Home. Outputs permanecem `EXPLORAÇÃO` até validação humana contra o GKR.
+A fase de Design das seis Homes convergidas está proceduralmente autorizada e deve ser executada por contexto isolado, utilizando o handoff comum, o Documento Mestre, o contrato complementar e o Source Lock da respectiva Home. Outputs permanecem `EXPLORAÇÃO` até validação humana contra o GKR.
 
 D6, D7, materialização de `PER-009`, maturidade das transições internas de Planos, integrações patrocinadas, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria. Nenhuma é iniciada automaticamente.
 
-A eventual construção da **Home Guivos Ads** é uma frente nova e separada. Este registro reconhece apenas que Guivos Ads integra o conjunto de Produtos Especializados; não cria Documento Mestre da Home Ads, não define narrativa, não cria Source Lock e não inicia sua arquitetura. Qualquer avanço exige autorização humana própria.
+Para Guivos Ads, os próximos atos possíveis são Design controlado da Home, validação da experiência inteligente de qualificação e futura operacionalização comercial em frentes próprias. A existência do Documento Mestre e do Source Lock **não** autoriza campanhas reais, pricing público, inventário vendável, checkout, painel do anunciante, segmentação pessoal ou implementação de Intelligence.
