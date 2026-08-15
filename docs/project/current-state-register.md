@@ -80,7 +80,7 @@ A frente pública evoluiu posteriormente com a convergência dos Documentos Mest
 
 `GKR-UX-HOMES-DESIGN-DELIVERY-001` v2.0.0 governa a composição e a separação do pacote externo de Design. A branch `delivery/design-handoff-v2` materializa o snapshot operacional vigente de distribuição; `delivery/design-handoff-v1` permanece preservada como emissão histórica. Nenhuma das duas constitui fonte canônica paralela à `main`.
 
-A autoridade de produto do Guivos Business foi posteriormente reconciliada em `GPA-004` v1.5.0 para incorporar decisões validadas que não devem permanecer apenas em conversas. A reconciliação preserva `Organização ≠ Guivos Business`, formaliza limites de custeio empresarial da Journey, Programa de Pontos e Intelligence e estabelece de forma explícita que **Guivos Ads é produto totalmente distinto e comercialmente independente do Guivos Business**. Essa atualização não cria a Home Pública do Business nem altera os snapshots congelados de Design.
+A autoridade de produto do Guivos Business foi posteriormente reconciliada em `GPA-004` v1.5.0 para incorporar decisões validadas que não devem permanecer apenas em conversas. A reconciliação preserva `Organização ≠ Guivos Business`, estabelece **Empresa** como ponto de partida do contrato Business, formaliza limites de custeio empresarial da Journey e do Programa de Pontos, limita o Intelligence Business a dados/eventos gerados na Guivos e estabelece de forma explícita que **Guivos Ads é produto totalmente distinto e comercialmente independente do Guivos Business**. Essa atualização não cria a Home Pública do Business nem altera os snapshots congelados de Design.
 
 Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
@@ -94,7 +94,7 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária de Planos** |
 | Journey — frente não numerada funcional mais recente | **D5-C4B — `TRN-008..013` integralmente validadas no limite documental** |
 | Experience Architecture pública mais recente | **handoff e entrega controlada das seis Homes convergidas para Design** |
-| Guivos Business — autoridade de produto | **GPA-004 v1.5.0 reconciliado; Business distinto de Organização e totalmente independente de Guivos Ads** |
+| Guivos Business — autoridade de produto | **GPA-004 v1.5.0 reconciliado; arquitetura comercial parte da Empresa; Business distinto de Organização e totalmente independente de Guivos Ads** |
 | Home Pública — Guivos Business | **não iniciada; tese, narrativa, conversão e Source Lock exigem frente própria de Experience Architecture** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
@@ -210,6 +210,7 @@ Separações canônicas:
 
 ```text
 Organização ≠ Guivos Business
+Empresa no contrato Business ≠ novo tipo estrutural de participante
 Guivos Business ≠ Guivos Ads
 participante ≠ produto
 plano ≠ mérito ou nível de evolução
@@ -282,7 +283,7 @@ Os Domínios de Evolução constituem vocabulário semântico canônico do Journ
 
 Guivos Intelligence pode produzir candidatos de domínio e relações multidomínio, mas não pode transformar inferência em domínio confirmado sem autoridade suficiente, criar score humano ou utilizar domínio sensível como autorização de publicidade comportamental.
 
-No Guivos Business, Intelligence pode apoiar análise de dados empresariais autorizados e indicadores agregados legitimamente produzidos pelo próprio programa. A empresa pode acompanhar seus programas e KPIs autorizados, mas o contexto pessoal protegido da Journey não se torna dado empresarial por existir relação contratual, financiamento de incentivo ou capacidade técnica. Correlação operacional não constitui prova automática de causalidade, impacto humano ou evolução pessoal.
+No Guivos Business, Intelligence trabalha com **dados, interações e eventos legitimamente gerados dentro do Ecossistema Guivos**. A Guivos pode produzir indicadores agregados, tendências e comparações temporais do próprio programa e fornecê-los de forma estruturada; a empresa pode combinar essas saídas com seus KPIs internos em seu próprio ambiente analítico. O Intelligence Business não depende de importar bases internas da empresa nem utiliza comparação interna antes/depois como atalho para provar causalidade. O contexto pessoal protegido da Journey não se torna dado empresarial por existir relação contratual, financiamento de incentivo ou capacidade técnica.
 
 A materialização/validação documental de `PER-010..012`, o contrato D5-C4A e a validação integrada D5-C4B não declaram rotas, banco, APIs, eventos ou modelo físico de grafo implementados.
 
@@ -321,9 +322,13 @@ Neste checkpoint não existe evidência integrada suficiente para declarar PMF, 
 
 `GEM-005-A1` estabelece **Propósito Antes do Incentivo**.
 
-Pontos, créditos, saldo, streak ou ranking não podem substituir evolução, autonomia ou valor legítimo como objetivo da experiência. `GPA-004` reconhece arquiteturalmente o Programa de Pontos do Guivos Business como capacidade de benefício empresarial, mas isso **não comprova um programa operacional em produção, carteira, token, cashback ou conversão efetivamente implementados**.
+Pontos, créditos, saldo, streak ou ranking não podem substituir evolução, autonomia ou valor legítimo como objetivo da experiência. `GPA-004` reconhece arquiteturalmente o Programa de Pontos do Guivos Business como capacidade de benefício empresarial, com equivalência econômica previamente validada preservada, mas isso **não comprova carteira, token, cashback ou operação financeira em produção**.
 
-No Business, a empresa pode financiar um orçamento de pontos/benefícios para programa elegível e acompanhar seu próprio saldo econômico e indicadores agregados no limite contratado. Regras de expiração, devolução, conversão, pagamento híbrido e tratamento financeiro exigem autoridade própria e não são presumidas. Pontos não compram relevância orgânica, prioridade de Journey, confiança, impacto, conclusão editorial ou exposição publicitária.
+No Business, a empresa pode financiar/carregar um orçamento de pontos. A concessão à pessoa já constitui consumo/alocação do orçamento empresarial; o uso posterior pelo participante é evento distinto. O saldo empresarial distingue carregado, utilizado e disponível. A leitura de **onde os pontos foram efetivamente utilizados** considera somente usos realizados pelas pessoas, fecha 100% entre Mall, Travel e Journey e exclui pontos não utilizados ou expirados dessa distribuição percentual.
+
+Pontos Business não pagam plano do Journey. Journey permanece voluntário e com seus planos normais; pontos podem ser usados somente em possibilidades pagas elegíveis e não alteram pertinência, recomendação, prioridade, `Next Step`, confiança, impacto, conclusão editorial ou exposição publicitária.
+
+A terminologia **VALOR DE IMPACTO LIBERADO** descreve valor disponibilizado a uma ação e não constitui impacto realizado, impacto comprovado ou prova de evolução.
 
 O modelo de Domínios de Evolução reforça que contribuição, espiritualidade, saúde, finanças, relacionamentos ou organização não podem ser convertidos em ranking moral, score humano ou competição por “nível de evolução”.
 
@@ -428,7 +433,10 @@ A separação central é:
 
 ```text
 ORGANIZAÇÃO
-= participante do ecossistema
+= participante estrutural do ecossistema
+
+EMPRESA
+= ponto de partida do contrato comercial específico do Business
 
 GUIVOS BUSINESS
 = produto especializado B2B
@@ -439,7 +447,9 @@ GUIVOS ADS
 
 Business e Ads podem ser contratados pela mesma empresa, porém permanecem relações comerciais independentes. Ads não é módulo, capacidade, componente, benefício de plano ou subsistema do Business; Business não opera inventário ou campanha publicitária em nome do Ads.
 
-Guivos Business pode financiar ou estruturar benefícios, incentivos e capacidades empresariais ligadas ao Journey, mas o financiamento não transfere controle da Journey nem acesso ao contexto pessoal protegido. Intelligence pode apoiar análises de dados empresariais autorizados e indicadores agregados; esse apoio não transforma Intelligence em módulo Business nem o contexto pessoal da Journey em ativo empresarial.
+Guivos Business pode financiar ou estruturar benefícios, incentivos e capacidades empresariais ligadas ao Journey, mas o financiamento não transfere controle da Journey nem acesso ao contexto pessoal protegido. Journey permanece voluntário; pontos Business não pagam plano e não compram pertinência. O uso efetivo dos pontos pode ocorrer em possibilidades pagas elegíveis de Mall, Travel e Journey.
+
+Guivos Intelligence apoia o Business utilizando dados/eventos gerados na própria Guivos. A empresa pode combinar externamente essas saídas com seus indicadores internos; a Guivos não precisa importar bases corporativas para produzir o Intelligence Business e não deve usar comparações internas antes/depois para inferir causalidade automaticamente.
 
 A futura Home Pública do Guivos Business permanece **não iniciada**. Documento Mestre, tese pública, arquitetura narrativa, conversão comercial, contrato complementar e Source Lock exigem uma frente própria e posterior de Experience Architecture.
 
@@ -512,11 +522,17 @@ A reconciliação do Guivos Business é uma atualização de autoridade de produ
 - `delivery/design-handoff-v1` permanece preservado como snapshot histórico;
 - Home Guivos Ads está convergida documentalmente, mas operação publicitária, pricing, inventário, formulário inteligente e Intelligence operacional não são presumidos;
 - Guivos Business permanece distinto da participação de Organização;
+- a arquitetura comercial Business parte da Empresa sem criar novo tipo global de participante;
 - Guivos Ads permanece produto totalmente distinto e independente do Guivos Business;
 - capacidade Business ≠ investimento publicitário;
 - custeio empresarial da Journey ≠ propriedade, controle ou acesso ao contexto pessoal protegido da Journey;
+- Journey permanece voluntário; pontos Business não pagam plano nem compram pertinência;
 - Programa de Pontos ≠ identidade do Business ≠ medida de evolução;
+- a equivalência econômica de pontos já validada permanece preservada e não é reaberta por esta reconciliação;
+- distribuição de uso de pontos considera somente usos efetivos e fecha 100% entre Mall, Travel e Journey, excluindo não utilizados/expirados da distribuição percentual;
+- `VALOR DE IMPACTO LIBERADO` ≠ impacto realizado ≠ impacto comprovado;
 - Intelligence apoiando Business ≠ Intelligence como módulo Business ≠ acesso irrestrito a dados pessoais;
+- Intelligence Business usa dados/eventos gerados na Guivos; combinação com KPIs internos ocorre no ambiente analítico da empresa;
 - Home Pública do Guivos Business ainda não existe como autoridade convergida;
 - projeção não é realizado;
 - preço não é disposição a pagar;
