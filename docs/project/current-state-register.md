@@ -80,7 +80,7 @@ A frente pública evoluiu posteriormente com a convergência dos Documentos Mest
 
 `GKR-UX-HOMES-DESIGN-DELIVERY-001` v2.0.0 governa a composição e a separação do pacote externo de Design. A branch `delivery/design-handoff-v2` materializa o snapshot operacional vigente de distribuição; `delivery/design-handoff-v1` permanece preservada como emissão histórica. Nenhuma das duas constitui fonte canônica paralela à `main`.
 
-A autoridade de produto do Guivos Business foi posteriormente reconciliada em `GPA-004` v1.5.0 para incorporar decisões validadas que não devem permanecer apenas em conversas. A reconciliação preserva `Organização ≠ Guivos Business`, estabelece **Empresa** como ponto de partida do contrato Business, formaliza limites de custeio empresarial da Journey e do Programa de Pontos, limita o Intelligence Business a dados/eventos gerados na Guivos e estabelece de forma explícita que **Guivos Ads é produto totalmente distinto e comercialmente independente do Guivos Business**. Essa atualização não cria a Home Pública do Business nem altera os snapshots congelados de Design.
+A autoridade de produto do Guivos Business está ressincronizada em `GPA-004` v1.6.0. A versão explicita o **formato vigente em duas ofertas principais — Programas de Incentivo e Guivos Journey custeado pela EMPRESA —**, preserva `Organização ≠ Guivos Business`, estabelece **Empresa** como ponto de partida do contrato Business, diferencia oferta, plano, escala, orçamento e serviço, formaliza as fronteiras de Pontos e Intelligence e mantém **Guivos Ads como produto totalmente distinto e comercialmente independente do Guivos Business**. A ressincronização corrige a leitura anterior de “jornadas corporativas”: a empresa pode custear o Guivos Journey existente, mas não criar, possuir ou controlar a Journey da pessoa. Essa atualização não cria a Home Pública do Business nem altera os snapshots congelados de Design.
 
 Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
@@ -94,7 +94,7 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária de Planos** |
 | Journey — frente não numerada funcional mais recente | **D5-C4B — `TRN-008..013` integralmente validadas no limite documental** |
 | Experience Architecture pública mais recente | **handoff e entrega controlada das seis Homes convergidas para Design** |
-| Guivos Business — autoridade de produto | **GPA-004 v1.5.0 reconciliado; arquitetura comercial parte da Empresa; Business distinto de Organização e totalmente independente de Guivos Ads** |
+| Guivos Business — autoridade de produto | **GPA-004 v1.6.0 ressincronizado; duas ofertas principais: Programas de Incentivo + Guivos Journey custeado pela Empresa; Business distinto de Organização e independente de Ads** |
 | Home Pública — Guivos Business | **não iniciada; tese, narrativa, conversão e Source Lock exigem frente própria de Experience Architecture** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
@@ -427,7 +427,7 @@ A emissão v1 permanece preservada em `delivery/design-handoff-v1`, commit `8e2a
 
 ### 12.2 Reconciliação canônica do Guivos Business
 
-`GPA-004` v1.5.0 incorpora ao corpus oficial as decisões de produto validadas sobre o Guivos Business sem iniciar sua Home Pública.
+`GPA-004` v1.6.0 consolida a autoridade superior do Guivos Business e explicita o formato funcional já validado sem iniciar sua Home Pública.
 
 A separação central é:
 
@@ -445,13 +445,25 @@ GUIVOS ADS
 = produto especializado de publicidade e exposição comercial paga
 ```
 
+O formato vigente possui duas ofertas principais:
+
+```text
+GUIVOS BUSINESS
+├── PROGRAMAS DE INCENTIVO
+└── GUIVOS JOURNEY CUSTEADO PELA EMPRESA
+```
+
+Pontos Guivos, Guivos Intelligence, integrações/eventos, transações/liquidação e governança apoiam essas ofertas sem se tornarem automaticamente novas famílias comerciais.
+
 Business e Ads podem ser contratados pela mesma empresa, porém permanecem relações comerciais independentes. Ads não é módulo, capacidade, componente, benefício de plano ou subsistema do Business; Business não opera inventário ou campanha publicitária em nome do Ads.
 
-Guivos Business pode financiar ou estruturar benefícios, incentivos e capacidades empresariais ligadas ao Journey, mas o financiamento não transfere controle da Journey nem acesso ao contexto pessoal protegido. Journey permanece voluntário; pontos Business não pagam plano e não compram pertinência. O uso efetivo dos pontos pode ocorrer em possibilidades pagas elegíveis de Mall, Travel e Journey.
+A empresa pode estruturar Programas de Incentivo para públicos elegíveis e pode custear o acesso ao **Guivos Journey existente**. Não existe nesta arquitetura Journey para Empresas, Journey Business, Journey Corporativo, Journey Patrocinado ou Journey criada/controlada pela empresa. O custeio não transfere controle da Journey nem acesso ao contexto pessoal protegido. Journey permanece voluntário; pontos Business não pagam plano e não compram pertinência. O uso efetivo dos pontos pode ocorrer em possibilidades pagas elegíveis de Mall, Travel e Journey.
+
+A arquitetura Business diferencia **oferta, plano, escala, orçamento pré-pago e serviço**. Os planos Start, Growth, Scale e Enterprise governam profundidade de capacidade, Intelligence, integração, governança, escala e serviço; não determinam mérito ou qual das duas ofertas a empresa pode contratar.
 
 Guivos Intelligence apoia o Business utilizando dados/eventos gerados na própria Guivos. A empresa pode combinar externamente essas saídas com seus indicadores internos; a Guivos não precisa importar bases corporativas para produzir o Intelligence Business e não deve usar comparações internas antes/depois para inferir causalidade automaticamente.
 
-A futura Home Pública do Guivos Business permanece **não iniciada**. Documento Mestre, tese pública, arquitetura narrativa, conversão comercial, contrato complementar e Source Lock exigem uma frente própria e posterior de Experience Architecture.
+A futura Home Pública do Guivos Business permanece **não iniciada**. Documento Mestre, tese pública, arquitetura narrativa convergida, conversão comercial e Source Lock exigem uma frente própria e posterior de Experience Architecture.
 
 ## 13. Programa P0–P9
 
@@ -523,6 +535,7 @@ A reconciliação do Guivos Business é uma atualização de autoridade de produ
 - Home Guivos Ads está convergida documentalmente, mas operação publicitária, pricing, inventário, formulário inteligente e Intelligence operacional não são presumidos;
 - Guivos Business permanece distinto da participação de Organização;
 - a arquitetura comercial Business parte da Empresa sem criar novo tipo global de participante;
+- Guivos Business possui duas ofertas principais: Programas de Incentivo e Guivos Journey custeado pela Empresa;
 - Guivos Ads permanece produto totalmente distinto e independente do Guivos Business;
 - capacidade Business ≠ investimento publicitário;
 - custeio empresarial da Journey ≠ propriedade, controle ou acesso ao contexto pessoal protegido da Journey;
@@ -547,7 +560,7 @@ A reconciliação do Guivos Business é uma atualização de autoridade de produ
 
 A fase de Design das seis Homes convergidas continua proceduralmente autorizada e deve ser executada por contexto isolado, utilizando o handoff comum, o Documento Mestre, o contrato complementar e o Source Lock da respectiva Home. Outputs permanecem `EXPLORAÇÃO` até validação humana contra o GKR.
 
-Após a reconciliação canônica de `GPA-004`, o próximo ato possível para o Guivos Business é uma frente própria de **Experience Architecture da Home Pública do Guivos Business**, começando por tese, protagonista, problema, promessa, arquitetura narrativa e contratos de autoridade. Essa frente deve permanecer separada dos snapshots v1/v2 já congelados e não deve presumir que Ads seja parte do Business.
+Após a ressincronização de `GPA-004` v1.6.0, o próximo ato possível para o Guivos Business é continuar a frente própria de **Experience Architecture da Home Pública do Guivos Business**, começando pela base conceitual já validada e retomando a arquitetura narrativa antes dos contratos de autoridade. Essa frente deve permanecer separada dos snapshots v1/v2 já congelados e não deve presumir que Ads seja parte do Business.
 
 D6, D7, materialização de `PER-009`, maturidade das transições internas de Planos, integrações patrocinadas, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria. Nenhuma é iniciada automaticamente.
 
