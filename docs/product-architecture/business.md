@@ -127,7 +127,7 @@ A Guivos **não depende de receber bases internas da empresa para produzir o Int
 
 ## Programa de Pontos
 
-O **Programa de Pontos** é uma capacidade/produto do Guivos Business para disponibilização de benefícios a pessoas vinculadas a contextos empresariais elegíveis.
+O **Programa de Pontos** é uma capacidade do Guivos Business para disponibilização de benefícios a pessoas vinculadas a contextos empresariais elegíveis.
 
 Sua relação com o ecossistema deve ser lida como um fluxo de benefício e autonomia, não como medida de evolução pessoal:
 
@@ -189,7 +189,7 @@ A equivalência econômica previamente validada entre pontos e reais permanece p
 
 No contexto empresarial, a empresa carrega/financia um orçamento de pontos para um programa elegível. A concessão de pontos a uma pessoa já representa consumo/alocação do orçamento da empresa; o uso posterior pelo participante é um evento distinto, ligado à escolha da pessoa dentro das possibilidades elegíveis.
 
-O saldo empresarial deve distinguir, no mínimo, a leitura econômica de **carregado, utilizado e disponível**, preservando rastreabilidade entre orçamento da empresa e benefícios concedidos.
+O saldo empresarial deve distinguir, no mínimo, a leitura econômica de **carregado, concedido e disponível**, preservando rastreabilidade entre orçamento da empresa e benefícios concedidos. Neste contexto, `concedido` representa a alocação/consumo do orçamento empresarial; `utilizado` fica reservado ao uso posterior realizado pela pessoa.
 
 Para a análise de **onde os pontos foram efetivamente utilizados pelas pessoas**, a métrica de distribuição considera somente pontos realmente consumidos em possibilidades elegíveis e deve fechar em **100% entre Mall, Travel e Journey**. Pontos ainda não utilizados ou expirados ficam fora dessa distribuição percentual.
 
@@ -204,7 +204,7 @@ PONTOS EFETIVAMENTE UTILIZADOS = 100%
 
 Os percentuais acima são somente exemplo de leitura e **não constituem meta, benchmark ou distribuição esperada**.
 
-Pontos vencidos, não utilizados, cancelados ou devolvidos exigem as regras econômicas já aplicáveis ao programa. Esta reconciliação não redefine seu tratamento financeiro e não presume impacto a partir da mera concessão de pontos.
+Pontos vencidos, não utilizados, cancelados ou devolvidos dependem das regras econômicas e operacionais próprias aplicáveis, quando aprovadas. Esta reconciliação não define nem redefine seu tratamento financeiro e não presume impacto a partir da mera concessão de pontos.
 
 Pagamento híbrido por pontos + moeda somente pode existir quando a autoridade do produto anfitrião e as regras econômicas da transação o permitirem.
 
@@ -248,7 +248,7 @@ Business não deve transformar Journey em ferramenta de vigilância empresarial,
 
 ## Relação com Guivos Intelligence e dados empresariais
 
-Guivos Intelligence pode analisar **somente dados, interações e eventos legitimamente gerados dentro do Ecossistema Guivos e vinculados à finalidade Business autorizada**.
+No contexto específico do Guivos Business, o Guivos Intelligence pode apoiar análises de **dados, interações e eventos legitimamente gerados dentro do Ecossistema Guivos e vinculados à finalidade Business autorizada**. Esta limitação governa o uso do Intelligence no contrato Business e **não redefine o escopo global do Guivos Intelligence estabelecido em `GPA-006`**.
 
 O contrato conceitual é:
 
@@ -357,7 +357,7 @@ A Guivos Intelligence não precisa ingerir a base interna da empresa e não deve
 
 A responsabilidade superior do Guivos Business e sua separação de Organização estão consolidadas.
 
-A arquitetura Business parte da **Empresa** no contrato comercial específico. A taxonomia Start · Growth · Scale · Enterprise está estabelecida conceitualmente. O Programa de Pontos está reconhecido arquiteturalmente como capacidade/produto do Guivos Business, com equivalência econômica previamente validada preservada e utilização em possibilidades pagas elegíveis de Mall, Travel e Journey; pontos não pagam plano Journey e não alteram pertinência ou recomendação.
+A arquitetura Business parte da **Empresa** no contrato comercial específico. A taxonomia Start · Growth · Scale · Enterprise está estabelecida conceitualmente. O Programa de Pontos está reconhecido arquiteturalmente como capacidade do Guivos Business, com equivalência econômica previamente validada preservada e utilização em possibilidades pagas elegíveis de Mall, Travel e Journey; pontos não pagam plano Journey e não alteram pertinência ou recomendação.
 
 A leitura empresarial do programa distingue o saldo econômico da empresa da distribuição de uso das pessoas. A distribuição por produto considera somente pontos efetivamente utilizados e fecha 100% entre Mall, Travel e Journey, excluindo não utilizados e expirados.
 
