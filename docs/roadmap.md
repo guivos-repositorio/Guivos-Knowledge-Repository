@@ -56,7 +56,7 @@ A reconciliação do Business é uma frente de autoridade de produto. Ela não r
 | transições | **66** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | programa P0–P9 | documentalmente consolidado após integração de P9 |
-| Guivos Business — autoridade de produto | **GPA-004 v1.5.0 reconciliado; Business distinto de Organização e independente de Ads** |
+| Guivos Business — autoridade de produto | **GPA-004 v1.5.0 reconciliado; contrato parte da Empresa; Business distinto de Organização e independente de Ads** |
 | Home Pública — Guivos Business | **não iniciada; requer frente própria de Experience Architecture** |
 | Home Pública — Pessoa | Documento Mestre + reconciliação pós-Media + Source Lock; Design autorizado proceduralmente |
 | Home Pública — Organizações e Coletivos | Documento Mestre + reconciliação pós-Media + Source Lock; Design autorizado proceduralmente; P1–P5 preservados como histórico |
@@ -116,17 +116,24 @@ O Guivos Business teve sua autoridade de produto reconciliada em `GPA-004` v1.5.
 
 ```text
 Organização ≠ Guivos Business
+Empresa no contrato Business ≠ novo tipo estrutural de participante
 Guivos Business ≠ Guivos Ads
 custeio empresarial da Journey ≠ propriedade ou controle da Journey
 Programa de Pontos ≠ identidade do Business ≠ medida de evolução
 Intelligence apoiando Business ≠ Intelligence como módulo Business
 ```
 
+A arquitetura comercial do Business parte da **Empresa**, enquanto `Organização` permanece o tipo estrutural de participante na ontologia global. A direção humana validada é “Como podemos ajudar os seres humanos a terem uma vida melhor?”: a empresa amplia condições e possibilidades; não define evolução individual nem adquire autoridade sobre a Journey da pessoa.
+
 Uma empresa pode contratar Business e Ads simultaneamente, mas como **relações comerciais independentes**. Business governa capacidades B2B próprias; Ads governa publicidade, patrocínio, impulsionamento e exposição comercial paga. Nenhuma contratação concede automaticamente autoridade, inventário, capacidades ou direitos do outro produto.
 
-O Programa de Pontos permanece reconhecido arquiteturalmente como capacidade Business, com financiamento empresarial e uso em ofertas elegíveis sob regras próprias. A reconciliação não presume operação em produção, taxa de conversão, expiração, reembolso, pagamento híbrido ou tratamento financeiro não governado.
+O Programa de Pontos permanece reconhecido arquiteturalmente como capacidade Business. A equivalência econômica entre pontos e reais já validada permanece preservada e **não é reaberta** nesta frente. Journey permanece voluntário e com seus planos normais; pontos Business não pagam plano Journey e podem ser usados somente em possibilidades pagas elegíveis de Mall, Travel e Journey sem comprar pertinência, recomendação ou prioridade.
 
-Guivos Business pode estruturar arranjos empresariais que custeiem acesso, benefícios, incentivos ou capacidades vinculadas ao Journey, mas esse custeio não transfere à empresa autoridade sobre a Journey nem acesso ao contexto pessoal protegido. Guivos Intelligence pode apoiar análises empresariais autorizadas e indicadores agregados sem se tornar módulo Business e sem converter contexto pessoal protegido em ativo empresarial.
+A empresa carrega/financia o orçamento de pontos; a concessão à pessoa constitui consumo/alocação do orçamento empresarial, enquanto o uso posterior é evento distinto. A distribuição de onde os pontos foram **efetivamente utilizados** considera apenas usos realizados e fecha 100% entre Mall, Travel e Journey, excluindo não utilizados e expirados dessa métrica percentual.
+
+Quando uma solução Business expressar recursos disponibilizados a uma ação de impacto, utiliza-se **VALOR DE IMPACTO LIBERADO**. O termo não equivale a impacto realizado, comprovado ou causado.
+
+Guivos Intelligence apoia Business a partir de **dados e eventos gerados dentro do Ecossistema Guivos**. A empresa pode combinar externamente essas saídas com seus indicadores internos, inclusive por exportação estruturada/API quando contratualmente disponível. A Guivos não depende de importar bases internas da empresa para produzir o Intelligence Business e não utiliza comparação interna antes/depois como atalho para declarar causalidade.
 
 O pacote de entrega v2 é governado por `GKR-UX-HOMES-DESIGN-DELIVERY-001`: 19 fontes canônicas extraídas da `main` canônica `603aa7f37435ac376f7a202669ad4ac1d7d13a83`, separadas por Home, acrescidas de seis guias operacionais `LEIA-PRIMEIRO`, totalizando 25 arquivos no snapshot externo `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`.
 
@@ -148,11 +155,13 @@ Continuam dependentes de evidência ou autorização própria:
 - promoção de qualquer output de Design a estado canônico;
 - implementação operacional da experiência inteligente de qualificação do Guivos Ads;
 - implementação operacional de campanhas, inventário, pricing e mensuração do Guivos Ads;
-- regras econômicas/operacionais ainda abertas do Programa de Pontos Business;
+- regras econômicas/operacionais ainda abertas do Programa de Pontos Business que não tenham autoridade própria já aprovada;
 - arquitetura narrativa, Documento Mestre, conversão e Source Lock da Home Pública do Guivos Business;
-- implementação de analytics/Intelligence Business e seus contratos técnicos de dados;
+- implementação de analytics/Intelligence Business, exportação/API e seus contratos técnicos;
 - UXA-102/V5;
 - Product Engineering.
+
+A equivalência econômica de pontos já validada **não é classificada como lacuna por este roadmap**; esta versão apenas não redefine seu parâmetro numérico.
 
 ## 6. Próximos caminhos possíveis
 
@@ -169,7 +178,7 @@ O próximo ato deve nascer de uma necessidade concreta e autoridade própria. Ex
 - implementação → Product Engineering somente por reativação explícita;
 - seis Homes convergidas → exploração de Design controlada por Home e por Source Lock;
 - Guivos Ads → validar direção de Design, operação comercial e experiência inteligente em atos próprios, sem inferir implementação automática;
-- Guivos Business → iniciar, em frente própria, tese, protagonista, problema, promessa, arquitetura narrativa, contratos de autoridade, conversão e posterior Documento Mestre da Home, sem tratá-lo como extensão da Home de Organizações nem como contêiner do Ads.
+- Guivos Business → iniciar, em frente própria, tese, protagonista, problema, promessa, arquitetura narrativa, contratos de autoridade, conversão e posterior Documento Mestre da Home, partindo da **Empresa** e sem tratá-lo como extensão da Home de Organizações nem como contêiner do Ads.
 
 ## 7. Handoff e entrega para Design
 
@@ -225,9 +234,19 @@ Para Guivos Business:
 
 `Organização ≠ Business ≠ Ads`.
 
+`Empresa como início do contrato Business ≠ novo tipo estrutural de participante`.
+
 `custeio da Journey ≠ propriedade da Journey ≠ acesso ao contexto pessoal protegido`.
 
-`Programa de Pontos reconhecido arquiteturalmente ≠ operação financeira implementada ≠ medida de evolução`.
+`pontos em possibilidade Journey elegível ≠ pagamento de plano Journey ≠ compra de pertinência`.
+
+`Programa de Pontos reconhecido arquiteturalmente ≠ medida de evolução`.
+
+`equivalência econômica preservada ≠ redefinição da equivalência nesta frente`.
+
+`VALOR DE IMPACTO LIBERADO ≠ impacto realizado ≠ impacto comprovado`.
+
+`Intelligence Business = dados/eventos gerados na Guivos ≠ ingestão obrigatória de KPIs internos da empresa`.
 
 `Intelligence apoiando Business ≠ módulo Business ≠ acesso irrestrito a dados pessoais`.
 
