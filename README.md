@@ -53,12 +53,25 @@ A edição 5.0.0 foi reconciliada com as autoridades de participantes, planos, s
 - [Produtos Especializados — Política de Handoffs](docs/product-architecture/specialized-products-experience-and-handoff-policy.md)
 - [GEM-005-A1 — Propósito Antes do Incentivo](docs/economic-model/gem-005-a1-purpose-before-incentive-guardrail.md)
 
+## Guivos Business — continuidade recuperável
+
+A reconciliação canônica da PR #271 já está integrada à `main`. Para retomar o Guivos Business em uma nova conversa sem depender do histórico do chat, usar obrigatoriamente estes três documentos em conjunto:
+
+1. [GPA-004 — Guivos Business](docs/product-architecture/business.md) — autoridade superior do produto;
+2. [GPA-004-FUNCTIONAL-PORTFOLIO-001 — Portfólio Funcional v1](docs/product-architecture/business-functional-portfolio.md) — duas ofertas principais, Pontos, Journey custeado, Intelligence, planos e fronteiras econômicas;
+3. [GKR-BUSINESS-CONTINUITY-001 — Checkpoint de Continuidade](docs/project/business-continuity-checkpoint-2026-08-15.md) — decisões validadas, caminhos descartados, itens ainda abertos e próximo ponto exato de retomada.
+
+O checkpoint existe especificamente para evitar que decisões validadas do Business permaneçam recuperáveis apenas por uma conversa anterior.
+
 ## Separações canônicas
 
 ```text
 Pessoa · Coletivo · Organização = participantes
 Journey · Mall · Travel · Business · Media · Intelligence · Ads = Produtos Especializados
 Organização ≠ Guivos Business
+Guivos Business ≠ Guivos Ads
+Guivos Intelligence ≠ módulo do Guivos Business
+custeio empresarial da Journey ≠ propriedade ou controle da Journey
 Guivos Mall = nome canônico
 Neo4j = tecnologia de referência ≠ produção
 Fundação Guivos = conceito ≠ entidade constituída
@@ -142,6 +155,9 @@ Não estão autorizados ou comprovados apenas pela consolidação documental:
 - [Roadmap](docs/roadmap.md)
 - [Guia Oficial](docs/public/guia-oficial-da-guivos.md)
 - [Arquitetura de Produtos](docs/product-architecture/index.md)
+- [Guivos Business](docs/product-architecture/business.md)
+- [Portfólio Funcional do Guivos Business](docs/product-architecture/business-functional-portfolio.md)
+- [Checkpoint de Continuidade do Guivos Business](docs/project/business-continuity-checkpoint-2026-08-15.md)
 - [Guivos Journey](docs/product-architecture/journey.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Jornadas](docs/journeys/index.md)
