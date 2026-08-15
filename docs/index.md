@@ -8,7 +8,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **2.36.0** |
+| Registro | `GKR-STATE-001` **2.37.0** |
 | Era | GE-2 — Knowledge |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
@@ -44,7 +44,7 @@ O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetu
 - [Consolidação Global e Public Canon — P9](project/p9-global-consolidation-and-public-canon-2026-08-08.md)
 - [UXA-100-A4 — Origens Administrativas e Handoffs de Entrada em Planos](experience-architecture/uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md)
 - [Matriz de Consolidação Canônica 3.0.0](project/canonical-consolidation-matrix.md)
-- [Roadmap 12.76.0](roadmap.md)
+- [Roadmap 12.79.0](roadmap.md)
 
 O programa P0–P9 está consolidado quanto à ressincronização documental. D4 e D5 são frentes não numeradas e não criam novo marco funcional. Lacunas empíricas, tecnológicas, jurídicas e operacionais permanecem abertas em suas autoridades próprias.
 
