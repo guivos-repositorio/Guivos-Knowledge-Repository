@@ -12,6 +12,8 @@ related:
   - GKR-P9-GLOBAL-CONSOLIDATION-001
   - GOG-001
   - GPA-004
+  - GPA-004-FUNCTIONAL-PORTFOLIO-001
+  - GKR-BUSINESS-CONTINUITY-001
   - UXA-101
   - GTM-007
   - GTM-008
@@ -35,11 +37,13 @@ related:
 
 ## 1. Autoridade
 
-Este roadmap registra o estado global após a ressincronização documental de agosto de 2026, a convergência das seis Homes públicas atualmente entregáveis, a autorização procedimental de sua fase de Design e a reconciliação canônica do Guivos Business em `GPA-004` v1.5.0. O estado oficial permanece em `GKR-STATE-001`.
+Este roadmap registra o estado global após a ressincronização documental de agosto de 2026, a convergência das seis Homes públicas atualmente entregáveis, a autorização procedimental de sua fase de Design, a ressincronização da autoridade do Guivos Business em `GPA-004` v1.6.0 e o início conceitual controlado da Home Pública do Business. O estado oficial permanece em `GKR-STATE-001`.
 
 A decisão pós-P5 de 2026-08-12 que afastava wireframe da continuidade da Home de Organizações e Coletivos permanece preservada como histórico em `GKR-HOME-DECISION-NO-WIREFRAME-001`, mas foi posteriormente superada **somente quanto à autorização procedimental da fase de Design** por `GKR-UX-HOMES-DESIGN-HANDOFF-001`.
 
-A reconciliação do Business é uma frente de autoridade de produto. Ela não reabre os snapshots de Design v1/v2, não cria automaticamente a Home Pública do Business, não inicia UXA-102 e não altera o marco M7.88.
+A ressincronização do Business é uma frente de autoridade de produto. Ela explicita o formato funcional já validado, corrige a leitura residual de “jornadas corporativas” e não reabre os snapshots de Design v1/v2, não inicia UXA-102 e não altera o marco M7.88.
+
+A Home Business é uma frente separada de Experience Architecture. Seu **Checkpoint 2 está validado como base conceitual**, enquanto o **Checkpoint 3 permanece não convergido** e precisa de reformulação antes dos contratos de autoridade, conversão, Documento Mestre e Source Lock.
 
 ## 2. Estado vigente
 
@@ -56,8 +60,8 @@ A reconciliação do Business é uma frente de autoridade de produto. Ela não r
 | transições | **66** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | programa P0–P9 | documentalmente consolidado após integração de P9 |
-| Guivos Business — autoridade de produto | **GPA-004 v1.5.0 reconciliado; contrato parte da Empresa; Business distinto de Organização e independente de Ads** |
-| Home Pública — Guivos Business | **não iniciada; requer frente própria de Experience Architecture** |
+| Guivos Business — autoridade de produto | **GPA-004 v1.6.0; duas ofertas principais: Programas de Incentivo + Guivos Journey custeado pela Empresa; contrato parte da Empresa; Business distinto de Organização e independente de Ads** |
+| Home Pública — Guivos Business | **iniciada conceitualmente; Checkpoint 2 validado como base; Checkpoint 3 não convergido; sem Documento Mestre/Source Lock** |
 | Home Pública — Pessoa | Documento Mestre + reconciliação pós-Media + Source Lock; Design autorizado proceduralmente |
 | Home Pública — Organizações e Coletivos | Documento Mestre + reconciliação pós-Media + Source Lock; Design autorizado proceduralmente; P1–P5 preservados como histórico |
 | Home Pública — Guivos Mall | Documento Mestre + reconciliação pós-Media + Source Lock; Design autorizado proceduralmente |
@@ -80,7 +84,7 @@ UXA-097 — compreensão inicial → Tela Hoje
 → UXA-102/V5 — PENDENTE, NÃO INICIADA
 ```
 
-A convergência das Homes públicas, o handoff de Design e a reconciliação do Guivos Business constituem frentes separadas da sequência UXA e **não criam nova UXA, não alteram M7.88 e não retomam Engenharia de Produto**.
+A convergência das Homes públicas, o handoff de Design, a ressincronização do Guivos Business e a construção conceitual da Home Business constituem frentes separadas da sequência UXA e **não criam nova UXA, não alteram M7.88 e não retomam Engenharia de Produto**.
 
 ## 4. Consolidação temática
 
@@ -112,7 +116,7 @@ A reconciliação pós-Media estabeleceu que Guivos Media pode abastecer editori
 
 A Home Guivos Ads possui arquitetura própria, B2B e comercial, com `GKR-UX-HOME-ADS-MASTER-001`, `GPA-007` v1.3.0 e `GKR-UX-HOME-ADS-GENINPUT-001`. Ads preserva a autoridade das superfícies anfitriãs, organiza soluções por objetivo comercial e conduz a qualificação inteligente sem transformar contexto pessoal protegido em matéria-prima publicitária.
 
-O Guivos Business teve sua autoridade de produto reconciliada em `GPA-004` v1.5.0. O estado canônico preserva:
+O Guivos Business está ressincronizado em `GPA-004` v1.6.0. O estado canônico preserva:
 
 ```text
 Organização ≠ Guivos Business
@@ -125,15 +129,94 @@ Intelligence apoiando Business ≠ Intelligence como módulo Business
 
 A arquitetura comercial do Business parte da **Empresa**, enquanto `Organização` permanece o tipo estrutural de participante na ontologia global. A direção humana validada é “Como podemos ajudar os seres humanos a terem uma vida melhor?”: a empresa amplia condições e possibilidades; não define evolução individual nem adquire autoridade sobre a Journey da pessoa.
 
-Uma empresa pode contratar Business e Ads simultaneamente, mas como **relações comerciais independentes**. Business governa capacidades B2B próprias; Ads governa publicidade, patrocínio, impulsionamento e exposição comercial paga. Nenhuma contratação concede automaticamente autoridade, inventário, capacidades ou direitos do outro produto.
+### 4.1 Formato vigente do Guivos Business
 
-O Programa de Pontos permanece reconhecido arquiteturalmente como capacidade Business. A equivalência econômica entre pontos e reais já validada permanece preservada e **não é reaberta** nesta frente. Journey permanece voluntário e com seus planos normais; pontos Business não pagam plano Journey e podem ser usados somente em possibilidades pagas elegíveis de Mall, Travel e Journey sem comprar pertinência, recomendação ou prioridade.
+O produto possui **duas ofertas principais**:
+
+```text
+GUIVOS BUSINESS
+├── PROGRAMAS DE INCENTIVO
+└── GUIVOS JOURNEY CUSTEADO PELA EMPRESA
+```
+
+Pontos Guivos, Guivos Intelligence, integrações/eventos, transações/liquidação e governança/gestão empresarial são capacidades relacionadas. Elas apoiam as ofertas sem criar automaticamente novas famílias comerciais.
+
+**Programas de Incentivo** utilizam um núcleo comum de programa, campanha, participante, evento, regra, resultado, orçamento/financiamento e Intelligence. O mesmo núcleo pode atender recortes de funcionários/pessoas vinculadas e clientes sem exigir dois motores de produto distintos.
+
+A segunda oferta é o **Guivos Journey existente, custeado pela empresa**. A empresa viabiliza acesso; a pessoa preserva voluntariedade, escolha, privacidade, pertinência e autoridade sobre a própria Journey. Não são formatos vigentes Journey para Empresas, Journey Business, Journey Corporativo, Journey Patrocinado, jornadas corporativas criadas pela empresa, trilhas obrigatórias ou cursos corporativos bonificados dentro do Journey.
+
+### 4.2 Planos e composição comercial
+
+Os planos vigentes permanecem:
+
+```text
+Start
+Growth
+Scale
+Enterprise
+```
+
+O plano não define qual oferta pode ser contratada. Sua função é governar profundidade de capacidade, Intelligence, integração, governança, escala e serviço.
+
+A leitura funcional de referência permanece:
+
+```text
+START → operar
+GROWTH → acompanhar e compreender
+SCALE → interpretar e integrar
+ENTERPRISE → governar em alta complexidade e escala
+```
+
+A arquitetura diferencia:
+
+```text
+OFERTA
+≠ PLANO BUSINESS
+≠ ESCALA / PARTICIPANTES / ACESSOS
+≠ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
+≠ NÍVEL DE SERVIÇO
+```
+
+A composição econômica de referência pode combinar plano Business, escala, ofertas contratadas, orçamento pré-pago e serviços adicionais. Preços, limites e entitlements finais permanecem abertos.
+
+A direção de serviço separa capacidade tecnológica/comercial de participação da Guivos na implantação/operação. `Self-service`, `Assisted` e `Managed` permanecem direções de trabalho, não ofertas finais congeladas.
+
+### 4.3 Pontos, impacto e Intelligence
+
+O Programa de Pontos permanece capacidade Business. A equivalência econômica entre pontos e reais já validada permanece preservada e **não é reaberta** nesta frente. Journey permanece voluntário e com seus planos normais; pontos Business não pagam plano Journey e podem ser usados somente em possibilidades pagas elegíveis de Mall, Travel e Journey sem comprar pertinência, recomendação ou prioridade.
 
 A empresa carrega/financia o orçamento de pontos; a concessão à pessoa constitui consumo/alocação do orçamento empresarial, enquanto o uso posterior é evento distinto. A distribuição de onde os pontos foram **efetivamente utilizados** considera apenas usos realizados e fecha 100% entre Mall, Travel e Journey, excluindo não utilizados e expirados dessa métrica percentual.
 
 Quando uma solução Business expressar recursos disponibilizados a uma ação de impacto, utiliza-se **VALOR DE IMPACTO LIBERADO**. O termo não equivale a impacto realizado, comprovado ou causado.
 
-Guivos Intelligence apoia Business a partir de **dados e eventos gerados dentro do Ecossistema Guivos**. A empresa pode combinar externamente essas saídas com seus indicadores internos, inclusive por exportação estruturada/API quando contratualmente disponível. A Guivos não depende de importar bases internas da empresa para produzir o Intelligence Business e não utiliza comparação interna antes/depois como atalho para declarar causalidade.
+Guivos Intelligence apoia Business a partir de **dados e eventos gerados ou legitimamente conhecidos dentro do Ecossistema Guivos**. A empresa pode combinar externamente essas saídas com seus indicadores internos, inclusive por exportação estruturada/API quando contratualmente disponível. A Guivos não depende de importar bases internas da empresa para produzir o Intelligence Business e não utiliza comparação interna antes/depois como atalho para declarar causalidade.
+
+Quando Journey é custeado pela empresa, Intelligence pode produzir leitura agregada e protegida de interesses, tendências, temas e movimentos autorizados. A empresa não recebe score individual de evolução, Journey individual ou explicação individual de pertinência.
+
+### 4.4 Relações econômicas e fronteiras
+
+Uma empresa pode contratar Business e Ads simultaneamente, mas como **relações comerciais independentes**. Business governa capacidades B2B próprias; Ads governa publicidade, patrocínio, impulsionamento e exposição comercial paga. Nenhuma contratação concede automaticamente autoridade, inventário, capacidades ou direitos do outro produto.
+
+Business pode aumentar circulação econômica em Mall, Travel e possibilidades pagas apresentadas pelo Journey, mas cada produto preserva sua autoridade e sua receita própria. Esse efeito é upside do ecossistema; o Business deve ser economicamente sustentável por si.
+
+### 4.5 Home Pública do Guivos Business — continuidade conceitual
+
+A Home Business foi iniciada conceitualmente, mas ainda não alcançou convergência documental.
+
+`GKR-BUSINESS-CONTINUITY-001` v1.1.0 registra como **base validada do Checkpoint 2**:
+
+- tese: quando uma empresa amplia possibilidades para as pessoas, novas possibilidades também se abrem para a própria empresa;
+- protagonista: a empresa é o protagonista comercial e as pessoas são o centro humano do valor criado;
+- problema: criar relações mais relevantes, ampliar possibilidades e compreender movimentos sem reduzir pessoas a números, pontos ou mecanismos de controle;
+- promessa: **Mais possibilidades para as pessoas. Mais capacidade para sua empresa.**;
+- pergunta-mãe candidata: **O que sua empresa pode tornar possível para as pessoas?**
+
+O **Checkpoint 3 não está convergido**. Antes de qualquer avanço, duas correções precisam ser incorporadas à arquitetura narrativa:
+
+1. o movimento sobre o Guivos Journey precisa explicar de forma mais clara e impactante o valor de a empresa custear o acesso, sem reduzir a oferta à frase “ampliar o acesso das pessoas ao Guivos Journey”;
+2. o movimento que explicava que a Guivos “não precisa substituir os sistemas da empresa” deve ser removido ou reformulado como proposta positiva de valor, pois essa justificativa defensiva não pertence à narrativa pública da Home.
+
+Nenhum dos demais movimentos propostos no Checkpoint 3 deve ser tratado isoladamente como arquitetura aprovada até a nova validação integral da sequência revisada.
 
 O pacote de entrega v2 é governado por `GKR-UX-HOMES-DESIGN-DELIVERY-001`: 19 fontes canônicas extraídas da `main` canônica `603aa7f37435ac376f7a202669ad4ac1d7d13a83`, separadas por Home, acrescidas de seis guias operacionais `LEIA-PRIMEIRO`, totalizando 25 arquivos no snapshot externo `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`.
 
@@ -155,9 +238,13 @@ Continuam dependentes de evidência ou autorização própria:
 - promoção de qualquer output de Design a estado canônico;
 - implementação operacional da experiência inteligente de qualificação do Guivos Ads;
 - implementação operacional de campanhas, inventário, pricing e mensuração do Guivos Ads;
+- preços, limites quantitativos e entitlements finais dos planos Business;
+- preço/faixa de escala e preço de acessos Journey custeados pela empresa;
+- definição final dos níveis Self-service / Assisted / Managed;
 - regras econômicas/operacionais ainda abertas do Programa de Pontos Business que não tenham autoridade própria já aprovada;
-- arquitetura narrativa, Documento Mestre, conversão e Source Lock da Home Pública do Guivos Business;
-- implementação de analytics/Intelligence Business, exportação/API e seus contratos técnicos;
+- arquitetura técnica de analytics/Intelligence Business, exportação/API e seus contratos;
+- thresholds mínimos de agregação/coorte do Intelligence Business;
+- arquitetura narrativa convergida, Documento Mestre, conversão e Source Lock da Home Pública do Guivos Business;
 - UXA-102/V5;
 - Product Engineering.
 
@@ -178,7 +265,7 @@ O próximo ato deve nascer de uma necessidade concreta e autoridade própria. Ex
 - implementação → Product Engineering somente por reativação explícita;
 - seis Homes convergidas → exploração de Design controlada por Home e por Source Lock;
 - Guivos Ads → validar direção de Design, operação comercial e experiência inteligente em atos próprios, sem inferir implementação automática;
-- Guivos Business → iniciar, em frente própria, tese, protagonista, problema, promessa, arquitetura narrativa, contratos de autoridade, conversão e posterior Documento Mestre da Home, partindo da **Empresa** e sem tratá-lo como extensão da Home de Organizações nem como contêiner do Ads.
+- Guivos Business → continuar a arquitetura narrativa da Home Pública preservando o Checkpoint 2, reformulando os movimentos 6 e 9 do Checkpoint 3 e submetendo novamente a sequência completa à validação antes dos contratos de autoridade.
 
 ## 7. Handoff e entrega para Design
 
@@ -214,7 +301,7 @@ OUTPUT DE DESIGN
 
 As branches de entrega não devem ser mescladas na `main` para duplicar documentos canônicos. Se qualquer fonte obrigatória evoluir materialmente, deve ser avaliada nova emissão do pacote em vez de substituição silenciosa de arquivos dentro de um snapshot já distribuído.
 
-A futura Home do Guivos Business **não entra automaticamente no snapshot v2 existente**. Sua eventual convergência e inclusão em nova emissão de Design dependerão de Documento Mestre, contratos complementares, Source Lock, validação e autorização próprias.
+A Home do Guivos Business **não entra automaticamente no snapshot v2 existente**. Sua eventual convergência e inclusão em nova emissão de Design dependerão de arquitetura narrativa aprovada, Documento Mestre, contratos complementares, Source Lock, validação e autorização próprias.
 
 ## 8. Preservação
 
@@ -236,6 +323,10 @@ Para Guivos Business:
 
 `Empresa como início do contrato Business ≠ novo tipo estrutural de participante`.
 
+`duas ofertas principais = Programas de Incentivo + Guivos Journey custeado pela Empresa`.
+
+`oferta ≠ plano ≠ escala ≠ orçamento pré-pago ≠ nível de serviço`.
+
 `custeio da Journey ≠ propriedade da Journey ≠ acesso ao contexto pessoal protegido`.
 
 `pontos em possibilidade Journey elegível ≠ pagamento de plano Journey ≠ compra de pertinência`.
@@ -250,4 +341,6 @@ Para Guivos Business:
 
 `Intelligence apoiando Business ≠ módulo Business ≠ acesso irrestrito a dados pessoais`.
 
-`GPA-004 reconciliado ≠ Home Business convergida ≠ inclusão automática em pacote de Design`.
+`Checkpoint 2 da Home validado como base ≠ Checkpoint 3 convergido ≠ Documento Mestre ≠ Source Lock ≠ Design autorizado`.
+
+`GPA-004 v1.6.0 ressincronizado ≠ Home Business convergida ≠ inclusão automática em pacote de Design`.
