@@ -48,6 +48,27 @@ O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetu
 
 O programa P0–P9 está consolidado quanto à ressincronização documental. D4 e D5 são frentes não numeradas e não criam novo marco funcional. Lacunas empíricas, tecnológicas, jurídicas e operacionais permanecem abertas em suas autoridades próprias.
 
+## Guivos Business — retomada sem depender do chat
+
+A PR #271 consolidou a autoridade superior do Business na `main`. Para recuperar o ponto atual de forma assertiva, a leitura mínima passa a ser:
+
+- [GPA-004 — Guivos Business](product-architecture/business.md);
+- [GPA-004-FUNCTIONAL-PORTFOLIO-001 — Portfólio Funcional v1](product-architecture/business-functional-portfolio.md);
+- [GKR-BUSINESS-CONTINUITY-001 — Checkpoint de Continuidade e Decisões Validadas](project/business-continuity-checkpoint-2026-08-15.md).
+
+O Portfólio Funcional consolida as duas ofertas principais — **Programas de Incentivo** e **Guivos Journey custeado pela EMPRESA** — e o checkpoint registra decisões validadas, caminhos rejeitados, itens ainda não congelados e o próximo ponto exato de continuidade.
+
+Separações que não devem ser confundidas na retomada:
+
+```text
+Organização ≠ Guivos Business
+Guivos Business ≠ Guivos Ads
+Guivos Intelligence ≠ módulo do Guivos Business
+custeio empresarial da Journey ≠ propriedade ou controle da Journey
+```
+
+A Home Pública do Guivos Business permanece não iniciada.
+
 ## Participantes, produtos, planos e domínios
 
 Participantes: **Pessoa · Coletivo · Organização**.
@@ -96,6 +117,9 @@ Domínios de Evolução do Guivos Journey:
 - [GTM-007 — Internacionalização](go-to-market/gtm-007-internationalization-and-territorial-governance.md)
 - [GTM-008 — Portugal](go-to-market/gtm-008-portugal-pilot-readiness-gates.md)
 - [Arquitetura de Produtos](product-architecture/index.md)
+- [Guivos Business](product-architecture/business.md)
+- [Portfólio Funcional do Guivos Business](product-architecture/business-functional-portfolio.md)
+- [Checkpoint de Continuidade do Guivos Business](project/business-continuity-checkpoint-2026-08-15.md)
 - [Guivos Journey](product-architecture/journey.md)
 - [Domínios de Evolução do Journey](product-architecture/pas-001-evolution-domains-model.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
