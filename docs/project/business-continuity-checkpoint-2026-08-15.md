@@ -2,7 +2,7 @@
 id: GKR-BUSINESS-CONTINUITY-001
 title: Guivos Business — Checkpoint de Continuidade e Decisões Validadas
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-08-15
 depends_on:
@@ -12,6 +12,7 @@ related:
   - PAS-001
   - GPA-006
   - GPA-007
+  - GPA-004-FUNCTIONAL-PORTFOLIO-001
   - ROADMAP-12.79.0
 normative: false
 ---
@@ -31,11 +32,11 @@ Seu papel é registrar quatro coisas que precisam permanecer recuperáveis em qu
 3. o que permanece em aberto;
 4. qual é o próximo ponto exato de continuidade.
 
-## 2. Checkpoint do repositório que encerrou a reconciliação anterior
+## 2. Checkpoints de repositório
 
 A PR **#271 — `GKR: reconciliar Guivos Business e decisões validadas em chat`** foi integrada em 2026-08-15.
 
-Estado resultante:
+Estado resultante daquela reconciliação:
 
 ```text
 main
@@ -54,7 +55,28 @@ GKR Mechanical Validation #733
 = SUCCESS
 ```
 
-A PR #271 consolidou `GPA-004` v1.5.0, `GKR-STATE-001` v2.37.0 e `ROADMAP-12.79.0`, sem iniciar a Home Pública do Guivos Business e sem alterar os snapshots congelados de Design v1/v2.
+A PR #271 consolidou `GPA-004` v1.5.0, `GKR-STATE-001` v2.37.0 e `ROADMAP-12.79.0`.
+
+Posteriormente, a PR **#272 — `GKR: registrar continuidade recuperável do Guivos Business`** foi integrada e criou `GPA-004-FUNCTIONAL-PORTFOLIO-001` e este checkpoint de continuidade. O estado de `main` após essa integração foi:
+
+```text
+main
+= d44f77f8956671860cd97b335832723a584a462e
+
+PR #272
+= MERGED
+
+head final da PR
+= 3800c1df16e91f999512bb90cee4781ca3bde48b
+
+GKR Semantic State Validation #390
+= SUCCESS
+
+GKR Mechanical Validation #734
+= SUCCESS
+```
+
+A frente atual ressincroniza `GPA-004` para **v1.6.0**, tornando a autoridade superior do produto coerente com o portfólio funcional já validado. `GKR-STATE-001` permanece 2.37.0 e `ROADMAP` permanece 12.79.0 porque não existe novo marco funcional, nova UXA ou retomada de Engenharia.
 
 ## 3. Separações canônicas que não devem ser reabertas sem nova decisão explícita
 
@@ -689,54 +711,108 @@ Os seguintes temas permanecem abertos ou precisam de autoridade específica ante
 - arquitetura técnica de API/exportação Business;
 - thresholds mínimos de agregação/coorte do Intelligence;
 - composição exata do resumo mensal Intelligence por plano;
-- Home Pública do Guivos Business.
+- arquitetura narrativa convergida, conversão, Documento Mestre e Source Lock da Home Pública do Guivos Business.
 
 A equivalência econômica `X pontos = Y reais` **não está nesta lista** porque já existe regra validada e não deve ser reaberta nesta frente.
 
-## 17. Estado da Home Pública do Guivos Business
+## 17. Estado atual da Home Pública do Guivos Business
 
-A Home Pública do Guivos Business **ainda não foi iniciada**.
+A Home Pública do Guivos Business **foi iniciada conceitualmente em conversa**, mas ainda **não possui arquitetura narrativa convergida nem autoridade própria publicada no GKR**.
 
-Não existem ainda, como autoridade convergida específica do Business:
+Não existem ainda como autoridade convergida específica do Business:
 
 - Documento Mestre da Home;
 - Source Lock;
-- arquitetura narrativa aprovada;
+- arquitetura narrativa aprovada integralmente;
 - wireframe;
 - protótipo;
 - handoff para Design.
 
 A Home não deve ser derivada visualmente da Home de Organizações e Coletivos e não deve tratar Ads como parte do Business.
 
-## 18. Próximo ponto exato de continuidade
+### 17.1 Checkpoint 2 — base conceitual validada da Home
 
-Após a integração da PR #271 e deste checkpoint de continuidade, a arquitetura de produto do Business possui base suficiente para uma retomada assertiva.
+Foram validados em conversa os seguintes fundamentos para orientar a continuidade da Experience Architecture:
 
-O próximo ato **não é automático**. Se houver autorização para avançar a Home Pública do Guivos Business, a sequência correta é:
+**Tese**
+
+> **Quando uma empresa amplia possibilidades para as pessoas, novas possibilidades também se abrem para a própria empresa.**
+
+**Protagonista**
+
+> **A empresa é o protagonista comercial; as pessoas são o centro humano do valor criado.**
+
+A Home fala com a empresa, mas o valor apresentado não deve reduzir pessoas a objeto operacional ou métrica empresarial.
+
+**Problema**
+
+> **Como criar relações mais relevantes, ampliar possibilidades e compreender movimentos sem reduzir pessoas a números, pontos ou mecanismos de controle?**
+
+**Promessa**
+
+> **Mais possibilidades para as pessoas. Mais capacidade para sua empresa.**
+
+**Pergunta-mãe candidata validada para orientar a Home**
+
+> **O que sua empresa pode tornar possível para as pessoas?**
+
+Esses elementos constituem base conceitual validada de continuidade, mas ainda precisam ser materializados posteriormente em autoridade própria da Home antes de qualquer Design.
+
+### 17.2 Checkpoint 3 — arquitetura narrativa ainda não convergida
+
+Foi proposta uma arquitetura narrativa em 11 movimentos, porém **o conjunto não foi aprovado como versão final**.
+
+Duas correções foram explicitamente solicitadas antes de qualquer avanço:
+
+1. a formulação **“Sua empresa também pode ampliar o acesso das pessoas ao Guivos Journey.”** foi considerada pouco explicativa e pouco impactante; o movimento relacionado ao Journey precisa ser reescrito para comunicar melhor o valor real da oferta;
+2. o movimento **“Mostrar que a Guivos não precisa substituir os sistemas da empresa”** foi considerado sem sentido como mensagem pública da Home e deve ser removido ou reformulado a partir de uma proposta de valor positiva, não defensiva.
+
+Consequentemente:
 
 ```text
-TESE
-→ PROTAGONISTA
-→ PROBLEMA
-→ PROMESSA
-→ ARQUITETURA NARRATIVA
-→ CONTRATOS DE AUTORIDADE
-→ CONVERSÃO
-→ DOCUMENTO MESTRE
-→ SOURCE LOCK
+CHECKPOINT 2
+→ base conceitual validada
+
+CHECKPOINT 3
+→ arquitetura narrativa em construção
+→ NÃO convergida
+→ movimentos 6 e 9 exigem reformulação
+```
+
+Os demais movimentos propostos também **não devem ser tratados isoladamente como arquitetura aprovada** antes de nova leitura integral da sequência revisada.
+
+## 18. Próximo ponto exato de continuidade
+
+Após a ressincronização de `GPA-004` v1.6.0 e deste checkpoint, o próximo ato da Home Business é **retomar a arquitetura narrativa**, preservando o Checkpoint 2 e corrigindo especificamente os movimentos 6 e 9 antes de submeter novamente a sequência completa à validação.
+
+A ordem governada permanece:
+
+```text
+TESE                       → VALIDADA COMO BASE
+→ PROTAGONISTA             → VALIDADO COMO BASE
+→ PROBLEMA                 → VALIDADO COMO BASE
+→ PROMESSA                 → VALIDADA COMO BASE
+→ ARQUITETURA NARRATIVA    → EM CONSTRUÇÃO / NÃO CONVERGIDA
+→ CONTRATOS DE AUTORIDADE  → NÃO INICIADOS
+→ CONVERSÃO                → NÃO CONVERGIDA
+→ DOCUMENTO MESTRE         → NÃO EXISTE
+→ SOURCE LOCK              → NÃO EXISTE
 → somente depois: Design
 ```
 
-Se a decisão for aprofundar produto/economia antes da Home, o ponto de retomada é **planos, unit economics e regras econômicas ainda abertas**, sem reabrir as decisões já listadas como validadas neste checkpoint.
+Se a decisão for aprofundar produto/economia antes da Home, o ponto de retomada continua sendo **planos, unit economics e regras econômicas ainda abertas**, sem reabrir as decisões já listadas como validadas neste checkpoint.
 
 ## 19. Instrução de retomada para novas conversas
 
 Ao retomar Guivos Business em uma nova conversa:
 
-1. ler `GPA-004`;
-2. ler este checkpoint `GKR-BUSINESS-CONTINUITY-001`;
-3. confirmar o `main` atual e qualquer PR aberta;
-4. não inferir que temas listados em `Itens ainda não congelados` já foram decididos;
-5. não reabrir decisões validadas sem nova solicitação explícita;
-6. preservar **Business ≠ Ads** em toda arquitetura, narrativa e monetização;
-7. preservar que Journey continua sendo Journey e que a empresa apenas pode custear acesso, não possuir a jornada pessoal.
+1. ler `GPA-004` v1.6.0 ou autoridade posterior;
+2. ler `GPA-004-FUNCTIONAL-PORTFOLIO-001`;
+3. ler este checkpoint `GKR-BUSINESS-CONTINUITY-001`;
+4. confirmar a `main` atual e qualquer PR aberta;
+5. não inferir que temas listados em `Itens ainda não congelados` já foram decididos;
+6. não reabrir decisões validadas sem nova solicitação explícita;
+7. preservar **Business ≠ Ads** em toda arquitetura, narrativa e monetização;
+8. preservar que Journey continua sendo Journey e que a empresa apenas pode custear acesso, não possuir a jornada pessoal;
+9. preservar integralmente o Checkpoint 2 da Home;
+10. retomar o Checkpoint 3 pela reformulação dos movimentos 6 e 9 e somente depois reavaliar a arquitetura narrativa completa.
