@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.36.0
+version: 2.37.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-14
+last_updated: 2026-08-15
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -13,6 +13,7 @@ related:
   - PAS-001
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
+  - GPA-004
   - GPA-007
   - UXA-097
   - UXA-098
@@ -60,7 +61,7 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
   - GKR-UX-HOME-ADS-GENINPUT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V2-SNAPSHOT-001
-  - ROADMAP-12.78.0
+  - ROADMAP-12.79.0
   - M7.88
 normative: true
 ---
@@ -79,6 +80,8 @@ A frente pública evoluiu posteriormente com a convergência dos Documentos Mest
 
 `GKR-UX-HOMES-DESIGN-DELIVERY-001` v2.0.0 governa a composição e a separação do pacote externo de Design. A branch `delivery/design-handoff-v2` materializa o snapshot operacional vigente de distribuição; `delivery/design-handoff-v1` permanece preservada como emissão histórica. Nenhuma das duas constitui fonte canônica paralela à `main`.
 
+A autoridade de produto do Guivos Business foi posteriormente reconciliada em `GPA-004` v1.5.0 para incorporar decisões validadas que não devem permanecer apenas em conversas. A reconciliação preserva `Organização ≠ Guivos Business`, estabelece **Empresa** como ponto de partida do contrato Business, formaliza limites de custeio empresarial da Journey e do Programa de Pontos, limita o Intelligence Business a dados/eventos gerados na Guivos e estabelece de forma explícita que **Guivos Ads é produto totalmente distinto e comercialmente independente do Guivos Business**. Essa atualização não cria a Home Pública do Business nem altera os snapshots congelados de Design.
+
 Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
 ## 2. Estado global
@@ -91,6 +94,8 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária de Planos** |
 | Journey — frente não numerada funcional mais recente | **D5-C4B — `TRN-008..013` integralmente validadas no limite documental** |
 | Experience Architecture pública mais recente | **handoff e entrega controlada das seis Homes convergidas para Design** |
+| Guivos Business — autoridade de produto | **GPA-004 v1.5.0 reconciliado; arquitetura comercial parte da Empresa; Business distinto de Organização e totalmente independente de Guivos Ads** |
+| Home Pública — Guivos Business | **não iniciada; tese, narrativa, conversão e Source Lock exigem frente própria de Experience Architecture** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Domínios de Evolução do Journey | **9 domínios canônicos + estado transversal “Ainda estou descobrindo”** |
@@ -205,8 +210,13 @@ Separações canônicas:
 
 ```text
 Organização ≠ Guivos Business
+Empresa no contrato Business ≠ novo tipo estrutural de participante
+Guivos Business ≠ Guivos Ads
 participante ≠ produto
 plano ≠ mérito ou nível de evolução
+custeio empresarial da Journey ≠ propriedade ou controle da Journey
+Intelligence apoiando Business ≠ Intelligence como módulo Business
+pontos/benefícios ≠ relevância pessoal, mérito ou evolução
 Parceria Estratégica ≠ Organização
 Guivos Mall = nome canônico
 Guivos Marketplace = alias histórico/migração
@@ -273,6 +283,8 @@ Os Domínios de Evolução constituem vocabulário semântico canônico do Journ
 
 Guivos Intelligence pode produzir candidatos de domínio e relações multidomínio, mas não pode transformar inferência em domínio confirmado sem autoridade suficiente, criar score humano ou utilizar domínio sensível como autorização de publicidade comportamental.
 
+No Guivos Business, Intelligence trabalha com **dados, interações e eventos legitimamente gerados dentro do Ecossistema Guivos**. A Guivos pode produzir indicadores agregados, tendências e comparações temporais do próprio programa e fornecê-los de forma estruturada; a empresa pode combinar essas saídas com seus KPIs internos em seu próprio ambiente analítico. O Intelligence Business não depende de importar bases internas da empresa nem utiliza comparação interna antes/depois como atalho para provar causalidade. O contexto pessoal protegido da Journey não se torna dado empresarial por existir relação contratual, financiamento de incentivo ou capacidade técnica.
+
 A materialização/validação documental de `PER-010..012`, o contrato D5-C4A e a validação integrada D5-C4B não declaram rotas, banco, APIs, eventos ou modelo físico de grafo implementados.
 
 ## 7. Marca, naming e ativos digitais
@@ -310,7 +322,13 @@ Neste checkpoint não existe evidência integrada suficiente para declarar PMF, 
 
 `GEM-005-A1` estabelece **Propósito Antes do Incentivo**.
 
-Pontos, créditos, saldo, streak ou ranking não podem substituir evolução, autonomia ou valor legítimo como objetivo da experiência. Nenhum programa operacional de pontos/créditos, carteira, token, cashback ou conversão está autorizado.
+Pontos, créditos, saldo, streak ou ranking não podem substituir evolução, autonomia ou valor legítimo como objetivo da experiência. `GPA-004` reconhece arquiteturalmente o Programa de Pontos do Guivos Business como capacidade de benefício empresarial, com equivalência econômica previamente validada preservada, mas isso **não comprova carteira, token, cashback ou operação financeira em produção**.
+
+No Business, a empresa pode financiar/carregar um orçamento de pontos. A concessão à pessoa já constitui consumo/alocação do orçamento empresarial; o uso posterior pelo participante é evento distinto. O saldo empresarial distingue **carregado, concedido e disponível**; neste contexto, `concedido` representa a alocação/consumo do orçamento empresarial, enquanto `utilizado` fica reservado ao uso posterior realizado pela pessoa. A leitura de **onde os pontos foram efetivamente utilizados** considera somente usos realizados pelas pessoas, fecha 100% entre Mall, Travel e Journey e exclui pontos não utilizados ou expirados dessa distribuição percentual.
+
+Pontos Business não pagam plano do Journey. Journey permanece voluntário e com seus planos normais; pontos podem ser usados somente em possibilidades pagas elegíveis e não alteram pertinência, recomendação, prioridade, `Next Step`, confiança, impacto, conclusão editorial ou exposição publicitária.
+
+A terminologia **VALOR DE IMPACTO LIBERADO** descreve valor disponibilizado a uma ação e não constitui impacto realizado, impacto comprovado ou prova de evolução.
 
 O modelo de Domínios de Evolução reforça que contribuição, espiritualidade, saúde, finanças, relacionamentos ou organização não podem ser convertidos em ranking moral, score humano ou competição por “nível de evolução”.
 
@@ -347,6 +365,8 @@ Não são presumidos como operacionais: Termos publicados, Aviso/Política de Pr
 Domínios que envolvam saúde, condição emocional, espiritualidade/religião, finanças, emprego, família, sexualidade, vulnerabilidade ou outras informações sensíveis exigem finalidade, minimização, autoridade e proteção reforçada.
 
 A D5-C3 valida documentalmente que os estados-base preservam minimização, contestação e controles de privacidade. A D5-C4A acrescenta que a navegação não transporta automaticamente domínio sensível, interpretação, evidência, conteúdo clínico/financeiro/religioso ou autorização ampliada. A D5-C4B valida integralmente esse limite documental para `TRN-012/013`, sem comprovar controles técnicos ou operacionais. Títulos neutros, ocultação de área/domínio sensível, dispositivo compartilhado e autenticação reforçada continuam dependentes de materializações específicas quando aplicáveis. `domain_link` sensível não constitui autorização adicional de tratamento.
+
+No Guivos Business, vínculo empresarial, custeio de Journey, concessão de benefício ou participação em programa não ampliam automaticamente a finalidade nem autorizam exposição do contexto pessoal protegido à empresa contratante.
 
 ## 12. Public Canon
 
@@ -405,6 +425,34 @@ A branch `delivery/design-handoff-v2`, commit `486f1c5e784be6cf3db9b2fbcbc47da39
 
 A emissão v1 permanece preservada em `delivery/design-handoff-v1`, commit `8e2a356ca84ba980e588258757800cde2a946f40`.
 
+### 12.2 Reconciliação canônica do Guivos Business
+
+`GPA-004` v1.5.0 incorpora ao corpus oficial as decisões de produto validadas sobre o Guivos Business sem iniciar sua Home Pública.
+
+A separação central é:
+
+```text
+ORGANIZAÇÃO
+= participante estrutural do ecossistema
+
+EMPRESA
+= ponto de partida do contrato comercial específico do Business
+
+GUIVOS BUSINESS
+= produto especializado B2B
+
+GUIVOS ADS
+= produto especializado de publicidade e exposição comercial paga
+```
+
+Business e Ads podem ser contratados pela mesma empresa, porém permanecem relações comerciais independentes. Ads não é módulo, capacidade, componente, benefício de plano ou subsistema do Business; Business não opera inventário ou campanha publicitária em nome do Ads.
+
+Guivos Business pode financiar ou estruturar benefícios, incentivos e capacidades empresariais ligadas ao Journey, mas o financiamento não transfere controle da Journey nem acesso ao contexto pessoal protegido. Journey permanece voluntário; pontos Business não pagam plano e não compram pertinência. O uso efetivo dos pontos pode ocorrer em possibilidades pagas elegíveis de Mall, Travel e Journey.
+
+Guivos Intelligence apoia o Business utilizando dados/eventos gerados na própria Guivos. A empresa pode combinar externamente essas saídas com seus indicadores internos; a Guivos não precisa importar bases corporativas para produzir o Intelligence Business e não deve usar comparações internas antes/depois para inferir causalidade automaticamente.
+
+A futura Home Pública do Guivos Business permanece **não iniciada**. Documento Mestre, tese pública, arquitetura narrativa, conversão comercial, contrato complementar e Source Lock exigem uma frente própria e posterior de Experience Architecture.
+
 ## 13. Programa P0–P9
 
 O programa amplo de ressincronização documental está **consolidado** quanto aos pacotes temáticos previstos:
@@ -444,6 +492,8 @@ D5-C1/C2/C3/C4A/C4B não são V5 e não alteram a numeração UXA.
 
 A evolução das Homes públicas e o handoff de Design são frentes de Experience Architecture separadas da fila UXA funcional acima e não alteram M7.88 nem iniciam UXA-102.
 
+A reconciliação do Guivos Business é uma atualização de autoridade de produto separada da fila UXA e dos snapshots de Design; ela também não altera M7.88, não inicia UXA-102 e não cria automaticamente uma Home Business.
+
 ## 15. Preservações finais
 
 - M7.88 permanece o marco funcional;
@@ -471,6 +521,19 @@ A evolução das Homes públicas e o handoff de Design são frentes de Experienc
 - `delivery/design-handoff-v2` é o snapshot externo vigente e não é fonte canônica paralela;
 - `delivery/design-handoff-v1` permanece preservado como snapshot histórico;
 - Home Guivos Ads está convergida documentalmente, mas operação publicitária, pricing, inventário, formulário inteligente e Intelligence operacional não são presumidos;
+- Guivos Business permanece distinto da participação de Organização;
+- a arquitetura comercial Business parte da Empresa sem criar novo tipo global de participante;
+- Guivos Ads permanece produto totalmente distinto e independente do Guivos Business;
+- capacidade Business ≠ investimento publicitário;
+- custeio empresarial da Journey ≠ propriedade, controle ou acesso ao contexto pessoal protegido da Journey;
+- Journey permanece voluntário; pontos Business não pagam plano nem compram pertinência;
+- Programa de Pontos ≠ identidade do Business ≠ medida de evolução;
+- a equivalência econômica de pontos já validada permanece preservada e não é reaberta por esta reconciliação;
+- distribuição de uso de pontos considera somente usos efetivos e fecha 100% entre Mall, Travel e Journey, excluindo não utilizados/expirados da distribuição percentual;
+- `VALOR DE IMPACTO LIBERADO` ≠ impacto realizado ≠ impacto comprovado;
+- Intelligence apoiando Business ≠ Intelligence como módulo Business ≠ acesso irrestrito a dados pessoais;
+- Intelligence Business usa dados/eventos gerados na Guivos; combinação com KPIs internos ocorre no ambiente analítico da empresa;
+- Home Pública do Guivos Business ainda não existe como autoridade convergida;
 - projeção não é realizado;
 - preço não é disposição a pagar;
 - capital não é receita;
@@ -482,8 +545,10 @@ A evolução das Homes públicas e o handoff de Design são frentes de Experienc
 
 ## 16. Próximo ato governado
 
-A fase de Design das seis Homes convergidas está proceduralmente autorizada e deve ser executada por contexto isolado, utilizando o handoff comum, o Documento Mestre, o contrato complementar e o Source Lock da respectiva Home. Outputs permanecem `EXPLORAÇÃO` até validação humana contra o GKR.
+A fase de Design das seis Homes convergidas continua proceduralmente autorizada e deve ser executada por contexto isolado, utilizando o handoff comum, o Documento Mestre, o contrato complementar e o Source Lock da respectiva Home. Outputs permanecem `EXPLORAÇÃO` até validação humana contra o GKR.
+
+Após a reconciliação canônica de `GPA-004`, o próximo ato possível para o Guivos Business é uma frente própria de **Experience Architecture da Home Pública do Guivos Business**, começando por tese, protagonista, problema, promessa, arquitetura narrativa e contratos de autoridade. Essa frente deve permanecer separada dos snapshots v1/v2 já congelados e não deve presumir que Ads seja parte do Business.
 
 D6, D7, materialização de `PER-009`, maturidade das transições internas de Planos, integrações patrocinadas, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria. Nenhuma é iniciada automaticamente.
 
-Para Guivos Ads, os próximos atos possíveis são Design controlado da Home, validação da experiência inteligente de qualificação e futura operacionalização comercial em frentes próprias. A existência do Documento Mestre e do Source Lock **não** autoriza campanhas reais, pricing público, inventário vendável, checkout, painel do anunciante, segmentação pessoal ou implementação de Intelligence.
+Para Guivos Ads, os próximos atos possíveis continuam sendo Design controlado da Home, validação da experiência inteligente de qualificação e futura operacionalização comercial em frentes próprias. A existência do Documento Mestre e do Source Lock **não** autoriza campanhas reais, pricing público, inventário vendável, checkout, painel do anunciante, segmentação pessoal ou implementação de Intelligence.
