@@ -14,6 +14,8 @@ related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
   - GPA-004
+  - GPA-004-FUNCTIONAL-PORTFOLIO-001
+  - GKR-BUSINESS-CONTINUITY-001
   - GPA-007
   - UXA-097
   - UXA-098
@@ -80,7 +82,9 @@ A frente pública evoluiu posteriormente com a convergência dos Documentos Mest
 
 `GKR-UX-HOMES-DESIGN-DELIVERY-001` v2.0.0 governa a composição e a separação do pacote externo de Design. A branch `delivery/design-handoff-v2` materializa o snapshot operacional vigente de distribuição; `delivery/design-handoff-v1` permanece preservada como emissão histórica. Nenhuma das duas constitui fonte canônica paralela à `main`.
 
-A autoridade de produto do Guivos Business está ressincronizada em `GPA-004` v1.6.0. A versão explicita o **formato vigente em duas ofertas principais — Programas de Incentivo e Guivos Journey custeado pela EMPRESA —**, preserva `Organização ≠ Guivos Business`, estabelece **Empresa** como ponto de partida do contrato Business, diferencia oferta, plano, escala, orçamento e serviço, formaliza as fronteiras de Pontos e Intelligence e mantém **Guivos Ads como produto totalmente distinto e comercialmente independente do Guivos Business**. A ressincronização corrige a leitura anterior de “jornadas corporativas”: a empresa pode custear o Guivos Journey existente, mas não criar, possuir ou controlar a Journey da pessoa. Essa atualização não cria a Home Pública do Business nem altera os snapshots congelados de Design.
+A autoridade de produto do Guivos Business está ressincronizada em `GPA-004` v1.6.0. A versão explicita o **formato vigente em duas ofertas principais — Programas de Incentivo e Guivos Journey custeado pela EMPRESA —**, preserva `Organização ≠ Guivos Business`, estabelece **Empresa** como ponto de partida do contrato Business, diferencia oferta, plano, escala, orçamento e serviço, formaliza as fronteiras de Pontos e Intelligence e mantém **Guivos Ads como produto totalmente distinto e comercialmente independente do Guivos Business**. A ressincronização corrige a leitura anterior de “jornadas corporativas”: a empresa pode custear o Guivos Journey existente, mas não criar, possuir ou controlar a Journey da pessoa.
+
+A Home Pública do Guivos Business foi **iniciada conceitualmente em conversa**, sem Documento Mestre ou Source Lock. O Checkpoint 2 — tese, protagonista, problema, promessa e pergunta-mãe — foi validado como base. A arquitetura narrativa do Checkpoint 3 permanece **não convergida**: o movimento relacionado ao Journey precisa ser mais explicativo e impactante, e o movimento que explicava que a Guivos não precisa substituir sistemas empresariais deve ser removido ou reformulado. Essa continuidade está registrada em `GKR-BUSINESS-CONTINUITY-001` v1.1.0 e não autoriza Design.
 
 Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
@@ -93,9 +97,9 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Última frente funcional numerada | **UXA-101** |
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária de Planos** |
 | Journey — frente não numerada funcional mais recente | **D5-C4B — `TRN-008..013` integralmente validadas no limite documental** |
-| Experience Architecture pública mais recente | **handoff e entrega controlada das seis Homes convergidas para Design** |
+| Experience Architecture pública mais recente | **handoff e entrega controlada das seis Homes convergidas para Design; Home Business iniciada conceitualmente, ainda não convergida** |
 | Guivos Business — autoridade de produto | **GPA-004 v1.6.0 ressincronizado; duas ofertas principais: Programas de Incentivo + Guivos Journey custeado pela Empresa; Business distinto de Organização e independente de Ads** |
-| Home Pública — Guivos Business | **não iniciada; tese, narrativa, conversão e Source Lock exigem frente própria de Experience Architecture** |
+| Home Pública — Guivos Business | **iniciada conceitualmente; Checkpoint 2 validado como base; arquitetura narrativa do Checkpoint 3 não convergida; sem Documento Mestre/Source Lock** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Domínios de Evolução do Journey | **9 domínios canônicos + estado transversal “Ainda estou descobrindo”** |
@@ -427,7 +431,7 @@ A emissão v1 permanece preservada em `delivery/design-handoff-v1`, commit `8e2a
 
 ### 12.2 Reconciliação canônica do Guivos Business
 
-`GPA-004` v1.6.0 consolida a autoridade superior do Guivos Business e explicita o formato funcional já validado sem iniciar sua Home Pública.
+`GPA-004` v1.6.0 consolida a autoridade superior do Guivos Business e explicita o formato funcional já validado.
 
 A separação central é:
 
@@ -463,7 +467,7 @@ A arquitetura Business diferencia **oferta, plano, escala, orçamento pré-pago 
 
 Guivos Intelligence apoia o Business utilizando dados/eventos gerados na própria Guivos. A empresa pode combinar externamente essas saídas com seus indicadores internos; a Guivos não precisa importar bases corporativas para produzir o Intelligence Business e não deve usar comparações internas antes/depois para inferir causalidade automaticamente.
 
-A futura Home Pública do Guivos Business permanece **não iniciada**. Documento Mestre, tese pública, arquitetura narrativa convergida, conversão comercial e Source Lock exigem uma frente própria e posterior de Experience Architecture.
+A Home Pública do Guivos Business está **iniciada conceitualmente, mas não convergida**. `GKR-BUSINESS-CONTINUITY-001` v1.1.0 preserva o Checkpoint 2 como base validada e registra que o Checkpoint 3 precisa de reformulação nos movimentos 6 e 9 antes de nova validação integral. Documento Mestre, Source Lock e Design ainda não existem para essa Home.
 
 ## 13. Programa P0–P9
 
@@ -504,7 +508,7 @@ D5-C1/C2/C3/C4A/C4B não são V5 e não alteram a numeração UXA.
 
 A evolução das Homes públicas e o handoff de Design são frentes de Experience Architecture separadas da fila UXA funcional acima e não alteram M7.88 nem iniciam UXA-102.
 
-A reconciliação do Guivos Business é uma atualização de autoridade de produto separada da fila UXA e dos snapshots de Design; ela também não altera M7.88, não inicia UXA-102 e não cria automaticamente uma Home Business.
+A ressincronização do Guivos Business é uma atualização de autoridade de produto separada da fila UXA e dos snapshots de Design; ela também não altera M7.88 nem inicia UXA-102. A Home Business pode avançar conceitualmente em frente própria sem se tornar automaticamente Home convergida ou autorizada para Design.
 
 ## 15. Preservações finais
 
@@ -546,7 +550,7 @@ A reconciliação do Guivos Business é uma atualização de autoridade de produ
 - `VALOR DE IMPACTO LIBERADO` ≠ impacto realizado ≠ impacto comprovado;
 - Intelligence apoiando Business ≠ Intelligence como módulo Business ≠ acesso irrestrito a dados pessoais;
 - Intelligence Business usa dados/eventos gerados na Guivos; combinação com KPIs internos ocorre no ambiente analítico da empresa;
-- Home Pública do Guivos Business ainda não existe como autoridade convergida;
+- Home Business: Checkpoint 2 validado como base ≠ Checkpoint 3 convergido ≠ Documento Mestre ≠ Source Lock ≠ Design autorizado;
 - projeção não é realizado;
 - preço não é disposição a pagar;
 - capital não é receita;
@@ -560,7 +564,7 @@ A reconciliação do Guivos Business é uma atualização de autoridade de produ
 
 A fase de Design das seis Homes convergidas continua proceduralmente autorizada e deve ser executada por contexto isolado, utilizando o handoff comum, o Documento Mestre, o contrato complementar e o Source Lock da respectiva Home. Outputs permanecem `EXPLORAÇÃO` até validação humana contra o GKR.
 
-Após a ressincronização de `GPA-004` v1.6.0, o próximo ato possível para o Guivos Business é continuar a frente própria de **Experience Architecture da Home Pública do Guivos Business**, começando pela base conceitual já validada e retomando a arquitetura narrativa antes dos contratos de autoridade. Essa frente deve permanecer separada dos snapshots v1/v2 já congelados e não deve presumir que Ads seja parte do Business.
+Para o Guivos Business, o próximo ato é continuar a **arquitetura narrativa da Home Pública**, preservando integralmente o Checkpoint 2 e reformulando os movimentos 6 e 9 do Checkpoint 3 antes de nova validação da sequência completa. Contratos de autoridade, conversão, Documento Mestre e Source Lock somente avançam depois dessa convergência narrativa.
 
 D6, D7, materialização de `PER-009`, maturidade das transições internas de Planos, integrações patrocinadas, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria. Nenhuma é iniciada automaticamente.
 
