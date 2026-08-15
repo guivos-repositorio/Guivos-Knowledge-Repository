@@ -11241,10 +11241,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-checkpoint-do-repositorio-que-encerrou-a-reconciliacao-anterior" class="md-nav__link">
+  <a href="#2-checkpoints-de-repositorio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Checkpoint do repositório que encerrou a reconciliação anterior
+        2. Checkpoints de repositório
       
     </span>
   </a>
@@ -11623,13 +11623,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#17-estado-da-home-publica-do-guivos-business" class="md-nav__link">
+  <a href="#17-estado-atual-da-home-publica-do-guivos-business" class="md-nav__link">
     <span class="md-ellipsis">
       
-        17. Estado da Home Pública do Guivos Business
+        17. Estado atual da Home Pública do Guivos Business
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="17. Estado atual da Home Pública do Guivos Business">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#171-checkpoint-2-base-conceitual-validada-da-home" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.1 Checkpoint 2 — base conceitual validada da Home
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#172-checkpoint-3-arquitetura-narrativa-ainda-nao-convergida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.2 Checkpoint 3 — arquitetura narrativa ainda não convergida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -11704,9 +11732,9 @@
 <li>o que permanece em aberto;</li>
 <li>qual é o próximo ponto exato de continuidade.</li>
 </ol>
-<h2 id="2-checkpoint-do-repositorio-que-encerrou-a-reconciliacao-anterior">2. Checkpoint do repositório que encerrou a reconciliação anterior<a class="headerlink" href="#2-checkpoint-do-repositorio-que-encerrou-a-reconciliacao-anterior" title="Permanent link">&para;</a></h2>
+<h2 id="2-checkpoints-de-repositorio">2. Checkpoints de repositório<a class="headerlink" href="#2-checkpoints-de-repositorio" title="Permanent link">&para;</a></h2>
 <p>A PR <strong>#271 — <code>GKR: reconciliar Guivos Business e decisões validadas em chat</code></strong> foi integrada em 2026-08-15.</p>
-<p>Estado resultante:</p>
+<p>Estado resultante daquela reconciliação:</p>
 <div class="highlight"><pre><span></span><code>main
 = 38122cc7b091e38b2152be357a3849a75734c2a7
 
@@ -11722,7 +11750,24 @@ GKR Semantic State Validation #388
 GKR Mechanical Validation #733
 = SUCCESS
 </code></pre></div>
-<p>A PR #271 consolidou <code>GPA-004</code> v1.5.0, <code>GKR-STATE-001</code> v2.37.0 e <code>ROADMAP-12.79.0</code>, sem iniciar a Home Pública do Guivos Business e sem alterar os snapshots congelados de Design v1/v2.</p>
+<p>A PR #271 consolidou <code>GPA-004</code> v1.5.0, <code>GKR-STATE-001</code> v2.37.0 e <code>ROADMAP-12.79.0</code>.</p>
+<p>Posteriormente, a PR <strong>#272 — <code>GKR: registrar continuidade recuperável do Guivos Business</code></strong> foi integrada e criou <code>GPA-004-FUNCTIONAL-PORTFOLIO-001</code> e este checkpoint de continuidade. O estado de <code>main</code> após essa integração foi:</p>
+<div class="highlight"><pre><span></span><code>main
+= d44f77f8956671860cd97b335832723a584a462e
+
+PR #272
+= MERGED
+
+head final da PR
+= 3800c1df16e91f999512bb90cee4781ca3bde48b
+
+GKR Semantic State Validation #390
+= SUCCESS
+
+GKR Mechanical Validation #734
+= SUCCESS
+</code></pre></div>
+<p>A frente atual ressincroniza <code>GPA-004</code> para <strong>v1.6.0</strong>, tornando a autoridade superior do produto coerente com o portfólio funcional já validado. <code>GKR-STATE-001</code> permanece 2.37.0 e <code>ROADMAP</code> permanece 12.79.0 porque não existe novo marco funcional, nova UXA ou retomada de Engenharia.</p>
 <h2 id="3-separacoes-canonicas-que-nao-devem-ser-reabertas-sem-nova-decisao-explicita">3. Separações canônicas que não devem ser reabertas sem nova decisão explícita<a class="headerlink" href="#3-separacoes-canonicas-que-nao-devem-ser-reabertas-sem-nova-decisao-explicita" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>Organização ≠ Guivos Business
 Empresa no contrato Business ≠ novo tipo estrutural de participante
@@ -12186,46 +12231,90 @@ ADS
 <li>arquitetura técnica de API/exportação Business;</li>
 <li>thresholds mínimos de agregação/coorte do Intelligence;</li>
 <li>composição exata do resumo mensal Intelligence por plano;</li>
-<li>Home Pública do Guivos Business.</li>
+<li>arquitetura narrativa convergida, conversão, Documento Mestre e Source Lock da Home Pública do Guivos Business.</li>
 </ul>
 <p>A equivalência econômica <code>X pontos = Y reais</code> <strong>não está nesta lista</strong> porque já existe regra validada e não deve ser reaberta nesta frente.</p>
-<h2 id="17-estado-da-home-publica-do-guivos-business">17. Estado da Home Pública do Guivos Business<a class="headerlink" href="#17-estado-da-home-publica-do-guivos-business" title="Permanent link">&para;</a></h2>
-<p>A Home Pública do Guivos Business <strong>ainda não foi iniciada</strong>.</p>
-<p>Não existem ainda, como autoridade convergida específica do Business:</p>
+<h2 id="17-estado-atual-da-home-publica-do-guivos-business">17. Estado atual da Home Pública do Guivos Business<a class="headerlink" href="#17-estado-atual-da-home-publica-do-guivos-business" title="Permanent link">&para;</a></h2>
+<p>A Home Pública do Guivos Business <strong>foi iniciada conceitualmente em conversa</strong>, mas ainda <strong>não possui arquitetura narrativa convergida nem autoridade própria publicada no GKR</strong>.</p>
+<p>Não existem ainda como autoridade convergida específica do Business:</p>
 <ul>
 <li>Documento Mestre da Home;</li>
 <li>Source Lock;</li>
-<li>arquitetura narrativa aprovada;</li>
+<li>arquitetura narrativa aprovada integralmente;</li>
 <li>wireframe;</li>
 <li>protótipo;</li>
 <li>handoff para Design.</li>
 </ul>
 <p>A Home não deve ser derivada visualmente da Home de Organizações e Coletivos e não deve tratar Ads como parte do Business.</p>
+<h3 id="171-checkpoint-2-base-conceitual-validada-da-home">17.1 Checkpoint 2 — base conceitual validada da Home<a class="headerlink" href="#171-checkpoint-2-base-conceitual-validada-da-home" title="Permanent link">&para;</a></h3>
+<p>Foram validados em conversa os seguintes fundamentos para orientar a continuidade da Experience Architecture:</p>
+<p><strong>Tese</strong></p>
+<blockquote>
+<p><strong>Quando uma empresa amplia possibilidades para as pessoas, novas possibilidades também se abrem para a própria empresa.</strong></p>
+</blockquote>
+<p><strong>Protagonista</strong></p>
+<blockquote>
+<p><strong>A empresa é o protagonista comercial; as pessoas são o centro humano do valor criado.</strong></p>
+</blockquote>
+<p>A Home fala com a empresa, mas o valor apresentado não deve reduzir pessoas a objeto operacional ou métrica empresarial.</p>
+<p><strong>Problema</strong></p>
+<blockquote>
+<p><strong>Como criar relações mais relevantes, ampliar possibilidades e compreender movimentos sem reduzir pessoas a números, pontos ou mecanismos de controle?</strong></p>
+</blockquote>
+<p><strong>Promessa</strong></p>
+<blockquote>
+<p><strong>Mais possibilidades para as pessoas. Mais capacidade para sua empresa.</strong></p>
+</blockquote>
+<p><strong>Pergunta-mãe candidata validada para orientar a Home</strong></p>
+<blockquote>
+<p><strong>O que sua empresa pode tornar possível para as pessoas?</strong></p>
+</blockquote>
+<p>Esses elementos constituem base conceitual validada de continuidade, mas ainda precisam ser materializados posteriormente em autoridade própria da Home antes de qualquer Design.</p>
+<h3 id="172-checkpoint-3-arquitetura-narrativa-ainda-nao-convergida">17.2 Checkpoint 3 — arquitetura narrativa ainda não convergida<a class="headerlink" href="#172-checkpoint-3-arquitetura-narrativa-ainda-nao-convergida" title="Permanent link">&para;</a></h3>
+<p>Foi proposta uma arquitetura narrativa em 11 movimentos, porém <strong>o conjunto não foi aprovado como versão final</strong>.</p>
+<p>Duas correções foram explicitamente solicitadas antes de qualquer avanço:</p>
+<ol>
+<li>a formulação <strong>“Sua empresa também pode ampliar o acesso das pessoas ao Guivos Journey.”</strong> foi considerada pouco explicativa e pouco impactante; o movimento relacionado ao Journey precisa ser reescrito para comunicar melhor o valor real da oferta;</li>
+<li>o movimento <strong>“Mostrar que a Guivos não precisa substituir os sistemas da empresa”</strong> foi considerado sem sentido como mensagem pública da Home e deve ser removido ou reformulado a partir de uma proposta de valor positiva, não defensiva.</li>
+</ol>
+<p>Consequentemente:</p>
+<div class="highlight"><pre><span></span><code>CHECKPOINT 2
+→ base conceitual validada
+
+CHECKPOINT 3
+→ arquitetura narrativa em construção
+→ NÃO convergida
+→ movimentos 6 e 9 exigem reformulação
+</code></pre></div>
+<p>Os demais movimentos propostos também <strong>não devem ser tratados isoladamente como arquitetura aprovada</strong> antes de nova leitura integral da sequência revisada.</p>
 <h2 id="18-proximo-ponto-exato-de-continuidade">18. Próximo ponto exato de continuidade<a class="headerlink" href="#18-proximo-ponto-exato-de-continuidade" title="Permanent link">&para;</a></h2>
-<p>Após a integração da PR #271 e deste checkpoint de continuidade, a arquitetura de produto do Business possui base suficiente para uma retomada assertiva.</p>
-<p>O próximo ato <strong>não é automático</strong>. Se houver autorização para avançar a Home Pública do Guivos Business, a sequência correta é:</p>
-<div class="highlight"><pre><span></span><code>TESE
-→ PROTAGONISTA
-→ PROBLEMA
-→ PROMESSA
-→ ARQUITETURA NARRATIVA
-→ CONTRATOS DE AUTORIDADE
-→ CONVERSÃO
-→ DOCUMENTO MESTRE
-→ SOURCE LOCK
+<p>Após a ressincronização de <code>GPA-004</code> v1.6.0 e deste checkpoint, o próximo ato da Home Business é <strong>retomar a arquitetura narrativa</strong>, preservando o Checkpoint 2 e corrigindo especificamente os movimentos 6 e 9 antes de submeter novamente a sequência completa à validação.</p>
+<p>A ordem governada permanece:</p>
+<div class="highlight"><pre><span></span><code>TESE                       → VALIDADA COMO BASE
+→ PROTAGONISTA             → VALIDADO COMO BASE
+→ PROBLEMA                 → VALIDADO COMO BASE
+→ PROMESSA                 → VALIDADA COMO BASE
+→ ARQUITETURA NARRATIVA    → EM CONSTRUÇÃO / NÃO CONVERGIDA
+→ CONTRATOS DE AUTORIDADE  → NÃO INICIADOS
+→ CONVERSÃO                → NÃO CONVERGIDA
+→ DOCUMENTO MESTRE         → NÃO EXISTE
+→ SOURCE LOCK              → NÃO EXISTE
 → somente depois: Design
 </code></pre></div>
-<p>Se a decisão for aprofundar produto/economia antes da Home, o ponto de retomada é <strong>planos, unit economics e regras econômicas ainda abertas</strong>, sem reabrir as decisões já listadas como validadas neste checkpoint.</p>
+<p>Se a decisão for aprofundar produto/economia antes da Home, o ponto de retomada continua sendo <strong>planos, unit economics e regras econômicas ainda abertas</strong>, sem reabrir as decisões já listadas como validadas neste checkpoint.</p>
 <h2 id="19-instrucao-de-retomada-para-novas-conversas">19. Instrução de retomada para novas conversas<a class="headerlink" href="#19-instrucao-de-retomada-para-novas-conversas" title="Permanent link">&para;</a></h2>
 <p>Ao retomar Guivos Business em uma nova conversa:</p>
 <ol>
-<li>ler <code>GPA-004</code>;</li>
+<li>ler <code>GPA-004</code> v1.6.0 ou autoridade posterior;</li>
+<li>ler <code>GPA-004-FUNCTIONAL-PORTFOLIO-001</code>;</li>
 <li>ler este checkpoint <code>GKR-BUSINESS-CONTINUITY-001</code>;</li>
-<li>confirmar o <code>main</code> atual e qualquer PR aberta;</li>
+<li>confirmar a <code>main</code> atual e qualquer PR aberta;</li>
 <li>não inferir que temas listados em <code>Itens ainda não congelados</code> já foram decididos;</li>
 <li>não reabrir decisões validadas sem nova solicitação explícita;</li>
 <li>preservar <strong>Business ≠ Ads</strong> em toda arquitetura, narrativa e monetização;</li>
-<li>preservar que Journey continua sendo Journey e que a empresa apenas pode custear acesso, não possuir a jornada pessoal.</li>
+<li>preservar que Journey continua sendo Journey e que a empresa apenas pode custear acesso, não possuir a jornada pessoal;</li>
+<li>preservar integralmente o Checkpoint 2 da Home;</li>
+<li>retomar o Checkpoint 3 pela reformulação dos movimentos 6 e 9 e somente depois reavaliar a arquitetura narrativa completa.</li>
 </ol>
 
 

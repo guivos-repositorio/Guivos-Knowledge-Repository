@@ -18597,7 +18597,8 @@ plano ≠ fato realizado
 <p>A frente pública evoluiu posteriormente com a convergência dos Documentos Mestres das Homes de Pessoa, Organizações e Coletivos, Guivos Mall, Guivos Travel, Guivos Media e Guivos Ads; com a reconciliação do abastecimento editorial do Guivos Media; com Source Locks específicos; e com <code>GKR-UX-HOMES-DESIGN-HANDOFF-001</code>, que autoriza proceduralmente exploração de Design das seis Homes sem autorizar Engenharia ou publicação.</p>
 <p><code>GKR-HOME-DECISION-NO-WIREFRAME-001</code> permanece preservado como registro histórico da decisão pós-P5 de 2026-08-12, mas sua proibição procedimental de wireframe foi posteriormente <strong>superada para a fase de Design</strong> por <code>GKR-UX-HOMES-DESIGN-HANDOFF-001</code>. O handoff posterior prevalece nesse limite específico; as decisões semânticas, narrativas, funcionais e de produto das autoridades próprias de cada Home permanecem intactas.</p>
 <p><code>GKR-UX-HOMES-DESIGN-DELIVERY-001</code> v2.0.0 governa a composição e a separação do pacote externo de Design. A branch <code>delivery/design-handoff-v2</code> materializa o snapshot operacional vigente de distribuição; <code>delivery/design-handoff-v1</code> permanece preservada como emissão histórica. Nenhuma das duas constitui fonte canônica paralela à <code>main</code>.</p>
-<p>A autoridade de produto do Guivos Business foi posteriormente reconciliada em <code>GPA-004</code> v1.5.0 para incorporar decisões validadas que não devem permanecer apenas em conversas. A reconciliação preserva <code>Organização ≠ Guivos Business</code>, estabelece <strong>Empresa</strong> como ponto de partida do contrato Business, formaliza limites de custeio empresarial da Journey e do Programa de Pontos, limita o Intelligence Business a dados/eventos gerados na Guivos e estabelece de forma explícita que <strong>Guivos Ads é produto totalmente distinto e comercialmente independente do Guivos Business</strong>. Essa atualização não cria a Home Pública do Business nem altera os snapshots congelados de Design.</p>
+<p>A autoridade de produto do Guivos Business está ressincronizada em <code>GPA-004</code> v1.6.0. A versão explicita o <strong>formato vigente em duas ofertas principais — Programas de Incentivo e Guivos Journey custeado pela EMPRESA —</strong>, preserva <code>Organização ≠ Guivos Business</code>, estabelece <strong>Empresa</strong> como ponto de partida do contrato Business, diferencia oferta, plano, escala, orçamento e serviço, formaliza as fronteiras de Pontos e Intelligence e mantém <strong>Guivos Ads como produto totalmente distinto e comercialmente independente do Guivos Business</strong>. A ressincronização corrige a leitura anterior de “jornadas corporativas”: a empresa pode custear o Guivos Journey existente, mas não criar, possuir ou controlar a Journey da pessoa.</p>
+<p>A Home Pública do Guivos Business foi <strong>iniciada conceitualmente em conversa</strong>, sem Documento Mestre ou Source Lock. O Checkpoint 2 — tese, protagonista, problema, promessa e pergunta-mãe — foi validado como base. A arquitetura narrativa do Checkpoint 3 permanece <strong>não convergida</strong>: o movimento relacionado ao Journey precisa ser mais explicativo e impactante, e o movimento que explicava que a Guivos não precisa substituir sistemas empresariais deve ser removido ou reformulado. Essa continuidade está registrada em <code>GKR-BUSINESS-CONTINUITY-001</code> v1.1.0 e não autoriza Design.</p>
 <p>Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.</p>
 <h2 id="project-current-state-register-2-estado-global">2. Estado global<a class="headerlink" href="#project-current-state-register-2-estado-global" title="Permanent link">&para;</a></h2>
 <table>
@@ -18630,15 +18631,15 @@ plano ≠ fato realizado
 </tr>
 <tr>
 <td>Experience Architecture pública mais recente</td>
-<td><strong>handoff e entrega controlada das seis Homes convergidas para Design</strong></td>
+<td><strong>handoff e entrega controlada das seis Homes convergidas para Design; Home Business iniciada conceitualmente, ainda não convergida</strong></td>
 </tr>
 <tr>
 <td>Guivos Business — autoridade de produto</td>
-<td><strong>GPA-004 v1.5.0 reconciliado; arquitetura comercial parte da Empresa; Business distinto de Organização e totalmente independente de Guivos Ads</strong></td>
+<td><strong>GPA-004 v1.6.0 ressincronizado; duas ofertas principais: Programas de Incentivo + Guivos Journey custeado pela Empresa; Business distinto de Organização e independente de Ads</strong></td>
 </tr>
 <tr>
 <td>Home Pública — Guivos Business</td>
-<td><strong>não iniciada; tese, narrativa, conversão e Source Lock exigem frente própria de Experience Architecture</strong></td>
+<td><strong>iniciada conceitualmente; Checkpoint 2 validado como base; arquitetura narrativa do Checkpoint 3 não convergida; sem Documento Mestre/Source Lock</strong></td>
 </tr>
 <tr>
 <td>Próxima UXA</td>
@@ -18968,7 +18969,7 @@ CONTINUIDADE CONTEXTUAL
 <p>A branch <code>delivery/design-handoff-v2</code>, commit <code>486f1c5e784be6cf3db9b2fbcbc47da39f9e9016</code>, materializa esse snapshot para distribuição. Ela é <strong>artefato externo reproduzível</strong>, não nova fonte de verdade e não deve ser mesclada na <code>main</code> como duplicação das fontes canônicas.</p>
 <p>A emissão v1 permanece preservada em <code>delivery/design-handoff-v1</code>, commit <code>8e2a356ca84ba980e588258757800cde2a946f40</code>.</p>
 <h3 id="project-current-state-register-122-reconciliacao-canonica-do-guivos-business">12.2 Reconciliação canônica do Guivos Business<a class="headerlink" href="#project-current-state-register-122-reconciliacao-canonica-do-guivos-business" title="Permanent link">&para;</a></h3>
-<p><code>GPA-004</code> v1.5.0 incorpora ao corpus oficial as decisões de produto validadas sobre o Guivos Business sem iniciar sua Home Pública.</p>
+<p><code>GPA-004</code> v1.6.0 consolida a autoridade superior do Guivos Business e explicita o formato funcional já validado.</p>
 <p>A separação central é:</p>
 <div class="highlight"><pre><span></span><code>ORGANIZAÇÃO
 = participante estrutural do ecossistema
@@ -18982,10 +18983,17 @@ GUIVOS BUSINESS
 GUIVOS ADS
 = produto especializado de publicidade e exposição comercial paga
 </code></pre></div>
+<p>O formato vigente possui duas ofertas principais:</p>
+<div class="highlight"><pre><span></span><code>GUIVOS BUSINESS
+├── PROGRAMAS DE INCENTIVO
+└── GUIVOS JOURNEY CUSTEADO PELA EMPRESA
+</code></pre></div>
+<p>Pontos Guivos, Guivos Intelligence, integrações/eventos, transações/liquidação e governança apoiam essas ofertas sem se tornarem automaticamente novas famílias comerciais.</p>
 <p>Business e Ads podem ser contratados pela mesma empresa, porém permanecem relações comerciais independentes. Ads não é módulo, capacidade, componente, benefício de plano ou subsistema do Business; Business não opera inventário ou campanha publicitária em nome do Ads.</p>
-<p>Guivos Business pode financiar ou estruturar benefícios, incentivos e capacidades empresariais ligadas ao Journey, mas o financiamento não transfere controle da Journey nem acesso ao contexto pessoal protegido. Journey permanece voluntário; pontos Business não pagam plano e não compram pertinência. O uso efetivo dos pontos pode ocorrer em possibilidades pagas elegíveis de Mall, Travel e Journey.</p>
+<p>A empresa pode estruturar Programas de Incentivo para públicos elegíveis e pode custear o acesso ao <strong>Guivos Journey existente</strong>. Não existe nesta arquitetura Journey para Empresas, Journey Business, Journey Corporativo, Journey Patrocinado ou Journey criada/controlada pela empresa. O custeio não transfere controle da Journey nem acesso ao contexto pessoal protegido. Journey permanece voluntário; pontos Business não pagam plano e não compram pertinência. O uso efetivo dos pontos pode ocorrer em possibilidades pagas elegíveis de Mall, Travel e Journey.</p>
+<p>A arquitetura Business diferencia <strong>oferta, plano, escala, orçamento pré-pago e serviço</strong>. Os planos Start, Growth, Scale e Enterprise governam profundidade de capacidade, Intelligence, integração, governança, escala e serviço; não determinam mérito ou qual das duas ofertas a empresa pode contratar.</p>
 <p>Guivos Intelligence apoia o Business utilizando dados/eventos gerados na própria Guivos. A empresa pode combinar externamente essas saídas com seus indicadores internos; a Guivos não precisa importar bases corporativas para produzir o Intelligence Business e não deve usar comparações internas antes/depois para inferir causalidade automaticamente.</p>
-<p>A futura Home Pública do Guivos Business permanece <strong>não iniciada</strong>. Documento Mestre, tese pública, arquitetura narrativa, conversão comercial, contrato complementar e Source Lock exigem uma frente própria e posterior de Experience Architecture.</p>
+<p>A Home Pública do Guivos Business está <strong>iniciada conceitualmente, mas não convergida</strong>. <code>GKR-BUSINESS-CONTINUITY-001</code> v1.1.0 preserva o Checkpoint 2 como base validada e registra que o Checkpoint 3 precisa de reformulação nos movimentos 6 e 9 antes de nova validação integral. Documento Mestre, Source Lock e Design ainda não existem para essa Home.</p>
 <h2 id="project-current-state-register-13-programa-p0p9">13. Programa P0–P9<a class="headerlink" href="#project-current-state-register-13-programa-p0p9" title="Permanent link">&para;</a></h2>
 <p>O programa amplo de ressincronização documental está <strong>consolidado</strong> quanto aos pacotes temáticos previstos:</p>
 <ul>
@@ -19066,7 +19074,7 @@ GUIVOS ADS
 </table>
 <p>D5-C1/C2/C3/C4A/C4B não são V5 e não alteram a numeração UXA.</p>
 <p>A evolução das Homes públicas e o handoff de Design são frentes de Experience Architecture separadas da fila UXA funcional acima e não alteram M7.88 nem iniciam UXA-102.</p>
-<p>A reconciliação do Guivos Business é uma atualização de autoridade de produto separada da fila UXA e dos snapshots de Design; ela também não altera M7.88, não inicia UXA-102 e não cria automaticamente uma Home Business.</p>
+<p>A ressincronização do Guivos Business é uma atualização de autoridade de produto separada da fila UXA e dos snapshots de Design; ela também não altera M7.88 nem inicia UXA-102. A Home Business pode avançar conceitualmente em frente própria sem se tornar automaticamente Home convergida ou autorizada para Design.</p>
 <h2 id="project-current-state-register-15-preservacoes-finais">15. Preservações finais<a class="headerlink" href="#project-current-state-register-15-preservacoes-finais" title="Permanent link">&para;</a></h2>
 <ul>
 <li>M7.88 permanece o marco funcional;</li>
@@ -19096,6 +19104,7 @@ GUIVOS ADS
 <li>Home Guivos Ads está convergida documentalmente, mas operação publicitária, pricing, inventário, formulário inteligente e Intelligence operacional não são presumidos;</li>
 <li>Guivos Business permanece distinto da participação de Organização;</li>
 <li>a arquitetura comercial Business parte da Empresa sem criar novo tipo global de participante;</li>
+<li>Guivos Business possui duas ofertas principais: Programas de Incentivo e Guivos Journey custeado pela Empresa;</li>
 <li>Guivos Ads permanece produto totalmente distinto e independente do Guivos Business;</li>
 <li>capacidade Business ≠ investimento publicitário;</li>
 <li>custeio empresarial da Journey ≠ propriedade, controle ou acesso ao contexto pessoal protegido da Journey;</li>
@@ -19106,7 +19115,7 @@ GUIVOS ADS
 <li><code>VALOR DE IMPACTO LIBERADO</code> ≠ impacto realizado ≠ impacto comprovado;</li>
 <li>Intelligence apoiando Business ≠ Intelligence como módulo Business ≠ acesso irrestrito a dados pessoais;</li>
 <li>Intelligence Business usa dados/eventos gerados na Guivos; combinação com KPIs internos ocorre no ambiente analítico da empresa;</li>
-<li>Home Pública do Guivos Business ainda não existe como autoridade convergida;</li>
+<li>Home Business: Checkpoint 2 validado como base ≠ Checkpoint 3 convergido ≠ Documento Mestre ≠ Source Lock ≠ Design autorizado;</li>
 <li>projeção não é realizado;</li>
 <li>preço não é disposição a pagar;</li>
 <li>capital não é receita;</li>
@@ -19118,13 +19127,14 @@ GUIVOS ADS
 </ul>
 <h2 id="project-current-state-register-16-proximo-ato-governado">16. Próximo ato governado<a class="headerlink" href="#project-current-state-register-16-proximo-ato-governado" title="Permanent link">&para;</a></h2>
 <p>A fase de Design das seis Homes convergidas continua proceduralmente autorizada e deve ser executada por contexto isolado, utilizando o handoff comum, o Documento Mestre, o contrato complementar e o Source Lock da respectiva Home. Outputs permanecem <code>EXPLORAÇÃO</code> até validação humana contra o GKR.</p>
-<p>Após a reconciliação canônica de <code>GPA-004</code>, o próximo ato possível para o Guivos Business é uma frente própria de <strong>Experience Architecture da Home Pública do Guivos Business</strong>, começando por tese, protagonista, problema, promessa, arquitetura narrativa e contratos de autoridade. Essa frente deve permanecer separada dos snapshots v1/v2 já congelados e não deve presumir que Ads seja parte do Business.</p>
+<p>Para o Guivos Business, o próximo ato é continuar a <strong>arquitetura narrativa da Home Pública</strong>, preservando integralmente o Checkpoint 2 e reformulando os movimentos 6 e 9 do Checkpoint 3 antes de nova validação da sequência completa. Contratos de autoridade, conversão, Documento Mestre e Source Lock somente avançam depois dessa convergência narrativa.</p>
 <p>D6, D7, materialização de <code>PER-009</code>, maturidade das transições internas de Planos, integrações patrocinadas, cobrança real, processo posterior a <code>BND-002</code>, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria. Nenhuma é iniciada automaticamente.</p>
 <p>Para Guivos Ads, os próximos atos possíveis continuam sendo Design controlado da Home, validação da experiência inteligente de qualificação e futura operacionalização comercial em frentes próprias. A existência do Documento Mestre e do Source Lock <strong>não</strong> autoriza campanhas reais, pricing público, inventário vendável, checkout, painel do anunciante, segmentação pessoal ou implementação de Intelligence.</p></section><section class="print-page" id="roadmap" heading-number="2.3"><h1 id="roadmap-roadmap-arquitetural-consolidacao-documental-p0p9">Roadmap Arquitetural — Consolidação Documental P0–P9<a class="headerlink" href="#roadmap-roadmap-arquitetural-consolidacao-documental-p0p9" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-autoridade">1. Autoridade<a class="headerlink" href="#roadmap-1-autoridade" title="Permanent link">&para;</a></h2>
-<p>Este roadmap registra o estado global após a ressincronização documental de agosto de 2026, a convergência das seis Homes públicas atualmente entregáveis, a autorização procedimental de sua fase de Design e a reconciliação canônica do Guivos Business em <code>GPA-004</code> v1.5.0. O estado oficial permanece em <code>GKR-STATE-001</code>.</p>
+<p>Este roadmap registra o estado global após a ressincronização documental de agosto de 2026, a convergência das seis Homes públicas atualmente entregáveis, a autorização procedimental de sua fase de Design, a ressincronização da autoridade do Guivos Business em <code>GPA-004</code> v1.6.0 e o início conceitual controlado da Home Pública do Business. O estado oficial permanece em <code>GKR-STATE-001</code>.</p>
 <p>A decisão pós-P5 de 2026-08-12 que afastava wireframe da continuidade da Home de Organizações e Coletivos permanece preservada como histórico em <code>GKR-HOME-DECISION-NO-WIREFRAME-001</code>, mas foi posteriormente superada <strong>somente quanto à autorização procedimental da fase de Design</strong> por <code>GKR-UX-HOMES-DESIGN-HANDOFF-001</code>.</p>
-<p>A reconciliação do Business é uma frente de autoridade de produto. Ela não reabre os snapshots de Design v1/v2, não cria automaticamente a Home Pública do Business, não inicia UXA-102 e não altera o marco M7.88.</p>
+<p>A ressincronização do Business é uma frente de autoridade de produto. Ela explicita o formato funcional já validado, corrige a leitura residual de “jornadas corporativas” e não reabre os snapshots de Design v1/v2, não inicia UXA-102 e não altera o marco M7.88.</p>
+<p>A Home Business é uma frente separada de Experience Architecture. Seu <strong>Checkpoint 2 está validado como base conceitual</strong>, enquanto o <strong>Checkpoint 3 permanece não convergido</strong> e precisa de reformulação antes dos contratos de autoridade, conversão, Documento Mestre e Source Lock.</p>
 <h2 id="roadmap-2-estado-vigente">2. Estado vigente<a class="headerlink" href="#roadmap-2-estado-vigente" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -19180,11 +19190,11 @@ GUIVOS ADS
 </tr>
 <tr>
 <td>Guivos Business — autoridade de produto</td>
-<td><strong>GPA-004 v1.5.0 reconciliado; contrato parte da Empresa; Business distinto de Organização e independente de Ads</strong></td>
+<td><strong>GPA-004 v1.6.0; duas ofertas principais: Programas de Incentivo + Guivos Journey custeado pela Empresa; contrato parte da Empresa; Business distinto de Organização e independente de Ads</strong></td>
 </tr>
 <tr>
 <td>Home Pública — Guivos Business</td>
-<td><strong>não iniciada; requer frente própria de Experience Architecture</strong></td>
+<td><strong>iniciada conceitualmente; Checkpoint 2 validado como base; Checkpoint 3 não convergido; sem Documento Mestre/Source Lock</strong></td>
 </tr>
 <tr>
 <td>Home Pública — Pessoa</td>
@@ -19236,7 +19246,7 @@ GUIVOS ADS
 → UXA-101 — saída consciente → BND-001
 → UXA-102/V5 — PENDENTE, NÃO INICIADA
 </code></pre></div>
-<p>A convergência das Homes públicas, o handoff de Design e a reconciliação do Guivos Business constituem frentes separadas da sequência UXA e <strong>não criam nova UXA, não alteram M7.88 e não retomam Engenharia de Produto</strong>.</p>
+<p>A convergência das Homes públicas, o handoff de Design, a ressincronização do Guivos Business e a construção conceitual da Home Business constituem frentes separadas da sequência UXA e <strong>não criam nova UXA, não alteram M7.88 e não retomam Engenharia de Produto</strong>.</p>
 <h2 id="roadmap-4-consolidacao-tematica">4. Consolidação temática<a class="headerlink" href="#roadmap-4-consolidacao-tematica" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -19300,7 +19310,7 @@ GUIVOS ADS
 <p>A Home de Organizações e Coletivos preserva P1–P5 como histórico válido. <code>GKR-HOME-P5</code> registrou prontidão para decisão humana; a decisão pós-P5 inicialmente afastou wireframe; <code>GKR-UX-HOMES-DESIGN-HANDOFF-001</code>, posterior, passou a autorizar wireframe low-fi e demais explorações de Design. A superação é exclusivamente procedimental e não altera significado, narrativa ou produto.</p>
 <p>A reconciliação pós-Media estabeleceu que Guivos Media pode abastecer editorialmente outras superfícies sem assumir autoridade sobre a finalidade, narrativa ou operação dessas superfícies.</p>
 <p>A Home Guivos Ads possui arquitetura própria, B2B e comercial, com <code>GKR-UX-HOME-ADS-MASTER-001</code>, <code>GPA-007</code> v1.3.0 e <code>GKR-UX-HOME-ADS-GENINPUT-001</code>. Ads preserva a autoridade das superfícies anfitriãs, organiza soluções por objetivo comercial e conduz a qualificação inteligente sem transformar contexto pessoal protegido em matéria-prima publicitária.</p>
-<p>O Guivos Business teve sua autoridade de produto reconciliada em <code>GPA-004</code> v1.5.0. O estado canônico preserva:</p>
+<p>O Guivos Business está ressincronizado em <code>GPA-004</code> v1.6.0. O estado canônico preserva:</p>
 <div class="highlight"><pre><span></span><code>Organização ≠ Guivos Business
 Empresa no contrato Business ≠ novo tipo estrutural de participante
 Guivos Business ≠ Guivos Ads
@@ -19309,11 +19319,63 @@ Programa de Pontos ≠ identidade do Business ≠ medida de evolução
 Intelligence apoiando Business ≠ Intelligence como módulo Business
 </code></pre></div>
 <p>A arquitetura comercial do Business parte da <strong>Empresa</strong>, enquanto <code>Organização</code> permanece o tipo estrutural de participante na ontologia global. A direção humana validada é “Como podemos ajudar os seres humanos a terem uma vida melhor?”: a empresa amplia condições e possibilidades; não define evolução individual nem adquire autoridade sobre a Journey da pessoa.</p>
-<p>Uma empresa pode contratar Business e Ads simultaneamente, mas como <strong>relações comerciais independentes</strong>. Business governa capacidades B2B próprias; Ads governa publicidade, patrocínio, impulsionamento e exposição comercial paga. Nenhuma contratação concede automaticamente autoridade, inventário, capacidades ou direitos do outro produto.</p>
-<p>O Programa de Pontos permanece reconhecido arquiteturalmente como capacidade Business. A equivalência econômica entre pontos e reais já validada permanece preservada e <strong>não é reaberta</strong> nesta frente. Journey permanece voluntário e com seus planos normais; pontos Business não pagam plano Journey e podem ser usados somente em possibilidades pagas elegíveis de Mall, Travel e Journey sem comprar pertinência, recomendação ou prioridade.</p>
+<h3 id="roadmap-41-formato-vigente-do-guivos-business">4.1 Formato vigente do Guivos Business<a class="headerlink" href="#roadmap-41-formato-vigente-do-guivos-business" title="Permanent link">&para;</a></h3>
+<p>O produto possui <strong>duas ofertas principais</strong>:</p>
+<div class="highlight"><pre><span></span><code>GUIVOS BUSINESS
+├── PROGRAMAS DE INCENTIVO
+└── GUIVOS JOURNEY CUSTEADO PELA EMPRESA
+</code></pre></div>
+<p>Pontos Guivos, Guivos Intelligence, integrações/eventos, transações/liquidação e governança/gestão empresarial são capacidades relacionadas. Elas apoiam as ofertas sem criar automaticamente novas famílias comerciais.</p>
+<p><strong>Programas de Incentivo</strong> utilizam um núcleo comum de programa, campanha, participante, evento, regra, resultado, orçamento/financiamento e Intelligence. O mesmo núcleo pode atender recortes de funcionários/pessoas vinculadas e clientes sem exigir dois motores de produto distintos.</p>
+<p>A segunda oferta é o <strong>Guivos Journey existente, custeado pela empresa</strong>. A empresa viabiliza acesso; a pessoa preserva voluntariedade, escolha, privacidade, pertinência e autoridade sobre a própria Journey. Não são formatos vigentes Journey para Empresas, Journey Business, Journey Corporativo, Journey Patrocinado, jornadas corporativas criadas pela empresa, trilhas obrigatórias ou cursos corporativos bonificados dentro do Journey.</p>
+<h3 id="roadmap-42-planos-e-composicao-comercial">4.2 Planos e composição comercial<a class="headerlink" href="#roadmap-42-planos-e-composicao-comercial" title="Permanent link">&para;</a></h3>
+<p>Os planos vigentes permanecem:</p>
+<div class="highlight"><pre><span></span><code>Start
+Growth
+Scale
+Enterprise
+</code></pre></div>
+<p>O plano não define qual oferta pode ser contratada. Sua função é governar profundidade de capacidade, Intelligence, integração, governança, escala e serviço.</p>
+<p>A leitura funcional de referência permanece:</p>
+<div class="highlight"><pre><span></span><code>START → operar
+GROWTH → acompanhar e compreender
+SCALE → interpretar e integrar
+ENTERPRISE → governar em alta complexidade e escala
+</code></pre></div>
+<p>A arquitetura diferencia:</p>
+<div class="highlight"><pre><span></span><code>OFERTA
+≠ PLANO BUSINESS
+≠ ESCALA / PARTICIPANTES / ACESSOS
+≠ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
+≠ NÍVEL DE SERVIÇO
+</code></pre></div>
+<p>A composição econômica de referência pode combinar plano Business, escala, ofertas contratadas, orçamento pré-pago e serviços adicionais. Preços, limites e entitlements finais permanecem abertos.</p>
+<p>A direção de serviço separa capacidade tecnológica/comercial de participação da Guivos na implantação/operação. <code>Self-service</code>, <code>Assisted</code> e <code>Managed</code> permanecem direções de trabalho, não ofertas finais congeladas.</p>
+<h3 id="roadmap-43-pontos-impacto-e-intelligence">4.3 Pontos, impacto e Intelligence<a class="headerlink" href="#roadmap-43-pontos-impacto-e-intelligence" title="Permanent link">&para;</a></h3>
+<p>O Programa de Pontos permanece capacidade Business. A equivalência econômica entre pontos e reais já validada permanece preservada e <strong>não é reaberta</strong> nesta frente. Journey permanece voluntário e com seus planos normais; pontos Business não pagam plano Journey e podem ser usados somente em possibilidades pagas elegíveis de Mall, Travel e Journey sem comprar pertinência, recomendação ou prioridade.</p>
 <p>A empresa carrega/financia o orçamento de pontos; a concessão à pessoa constitui consumo/alocação do orçamento empresarial, enquanto o uso posterior é evento distinto. A distribuição de onde os pontos foram <strong>efetivamente utilizados</strong> considera apenas usos realizados e fecha 100% entre Mall, Travel e Journey, excluindo não utilizados e expirados dessa métrica percentual.</p>
 <p>Quando uma solução Business expressar recursos disponibilizados a uma ação de impacto, utiliza-se <strong>VALOR DE IMPACTO LIBERADO</strong>. O termo não equivale a impacto realizado, comprovado ou causado.</p>
-<p>Guivos Intelligence apoia Business a partir de <strong>dados e eventos gerados dentro do Ecossistema Guivos</strong>. A empresa pode combinar externamente essas saídas com seus indicadores internos, inclusive por exportação estruturada/API quando contratualmente disponível. A Guivos não depende de importar bases internas da empresa para produzir o Intelligence Business e não utiliza comparação interna antes/depois como atalho para declarar causalidade.</p>
+<p>Guivos Intelligence apoia Business a partir de <strong>dados e eventos gerados ou legitimamente conhecidos dentro do Ecossistema Guivos</strong>. A empresa pode combinar externamente essas saídas com seus indicadores internos, inclusive por exportação estruturada/API quando contratualmente disponível. A Guivos não depende de importar bases internas da empresa para produzir o Intelligence Business e não utiliza comparação interna antes/depois como atalho para declarar causalidade.</p>
+<p>Quando Journey é custeado pela empresa, Intelligence pode produzir leitura agregada e protegida de interesses, tendências, temas e movimentos autorizados. A empresa não recebe score individual de evolução, Journey individual ou explicação individual de pertinência.</p>
+<h3 id="roadmap-44-relacoes-economicas-e-fronteiras">4.4 Relações econômicas e fronteiras<a class="headerlink" href="#roadmap-44-relacoes-economicas-e-fronteiras" title="Permanent link">&para;</a></h3>
+<p>Uma empresa pode contratar Business e Ads simultaneamente, mas como <strong>relações comerciais independentes</strong>. Business governa capacidades B2B próprias; Ads governa publicidade, patrocínio, impulsionamento e exposição comercial paga. Nenhuma contratação concede automaticamente autoridade, inventário, capacidades ou direitos do outro produto.</p>
+<p>Business pode aumentar circulação econômica em Mall, Travel e possibilidades pagas apresentadas pelo Journey, mas cada produto preserva sua autoridade e sua receita própria. Esse efeito é upside do ecossistema; o Business deve ser economicamente sustentável por si.</p>
+<h3 id="roadmap-45-home-publica-do-guivos-business-continuidade-conceitual">4.5 Home Pública do Guivos Business — continuidade conceitual<a class="headerlink" href="#roadmap-45-home-publica-do-guivos-business-continuidade-conceitual" title="Permanent link">&para;</a></h3>
+<p>A Home Business foi iniciada conceitualmente, mas ainda não alcançou convergência documental.</p>
+<p><code>GKR-BUSINESS-CONTINUITY-001</code> v1.1.0 registra como <strong>base validada do Checkpoint 2</strong>:</p>
+<ul>
+<li>tese: quando uma empresa amplia possibilidades para as pessoas, novas possibilidades também se abrem para a própria empresa;</li>
+<li>protagonista: a empresa é o protagonista comercial e as pessoas são o centro humano do valor criado;</li>
+<li>problema: criar relações mais relevantes, ampliar possibilidades e compreender movimentos sem reduzir pessoas a números, pontos ou mecanismos de controle;</li>
+<li>promessa: <strong>Mais possibilidades para as pessoas. Mais capacidade para sua empresa.</strong>;</li>
+<li>pergunta-mãe candidata: <strong>O que sua empresa pode tornar possível para as pessoas?</strong></li>
+</ul>
+<p>O <strong>Checkpoint 3 não está convergido</strong>. Antes de qualquer avanço, duas correções precisam ser incorporadas à arquitetura narrativa:</p>
+<ol>
+<li>o movimento sobre o Guivos Journey precisa explicar de forma mais clara e impactante o valor de a empresa custear o acesso, sem reduzir a oferta à frase “ampliar o acesso das pessoas ao Guivos Journey”;</li>
+<li>o movimento que explicava que a Guivos “não precisa substituir os sistemas da empresa” deve ser removido ou reformulado como proposta positiva de valor, pois essa justificativa defensiva não pertence à narrativa pública da Home.</li>
+</ol>
+<p>Nenhum dos demais movimentos propostos no Checkpoint 3 deve ser tratado isoladamente como arquitetura aprovada até a nova validação integral da sequência revisada.</p>
 <p>O pacote de entrega v2 é governado por <code>GKR-UX-HOMES-DESIGN-DELIVERY-001</code>: 19 fontes canônicas extraídas da <code>main</code> canônica <code>603aa7f37435ac376f7a202669ad4ac1d7d13a83</code>, separadas por Home, acrescidas de seis guias operacionais <code>LEIA-PRIMEIRO</code>, totalizando 25 arquivos no snapshot externo <code>486f1c5e784be6cf3db9b2fbcbc47da39f9e9016</code>.</p>
 <p>A emissão v1 continua preservada no snapshot <code>8e2a356ca84ba980e588258757800cde2a946f40</code> e não foi reescrita pela v2.</p>
 <h2 id="roadmap-5-lacunas-nao-fechadas-por-documentacao">5. Lacunas não fechadas por documentação<a class="headerlink" href="#roadmap-5-lacunas-nao-fechadas-por-documentacao" title="Permanent link">&para;</a></h2>
@@ -19331,9 +19393,13 @@ Intelligence apoiando Business ≠ Intelligence como módulo Business
 <li>promoção de qualquer output de Design a estado canônico;</li>
 <li>implementação operacional da experiência inteligente de qualificação do Guivos Ads;</li>
 <li>implementação operacional de campanhas, inventário, pricing e mensuração do Guivos Ads;</li>
+<li>preços, limites quantitativos e entitlements finais dos planos Business;</li>
+<li>preço/faixa de escala e preço de acessos Journey custeados pela empresa;</li>
+<li>definição final dos níveis Self-service / Assisted / Managed;</li>
 <li>regras econômicas/operacionais ainda abertas do Programa de Pontos Business que não tenham autoridade própria já aprovada;</li>
-<li>arquitetura narrativa, Documento Mestre, conversão e Source Lock da Home Pública do Guivos Business;</li>
-<li>implementação de analytics/Intelligence Business, exportação/API e seus contratos técnicos;</li>
+<li>arquitetura técnica de analytics/Intelligence Business, exportação/API e seus contratos;</li>
+<li>thresholds mínimos de agregação/coorte do Intelligence Business;</li>
+<li>arquitetura narrativa convergida, Documento Mestre, conversão e Source Lock da Home Pública do Guivos Business;</li>
 <li>UXA-102/V5;</li>
 <li>Product Engineering.</li>
 </ul>
@@ -19351,7 +19417,7 @@ Intelligence apoiando Business ≠ Intelligence como módulo Business
 <li>implementação → Product Engineering somente por reativação explícita;</li>
 <li>seis Homes convergidas → exploração de Design controlada por Home e por Source Lock;</li>
 <li>Guivos Ads → validar direção de Design, operação comercial e experiência inteligente em atos próprios, sem inferir implementação automática;</li>
-<li>Guivos Business → iniciar, em frente própria, tese, protagonista, problema, promessa, arquitetura narrativa, contratos de autoridade, conversão e posterior Documento Mestre da Home, partindo da <strong>Empresa</strong> e sem tratá-lo como extensão da Home de Organizações nem como contêiner do Ads.</li>
+<li>Guivos Business → continuar a arquitetura narrativa da Home Pública preservando o Checkpoint 2, reformulando os movimentos 6 e 9 do Checkpoint 3 e submetendo novamente a sequência completa à validação antes dos contratos de autoridade.</li>
 </ul>
 <h2 id="roadmap-7-handoff-e-entrega-para-design">7. Handoff e entrega para Design<a class="headerlink" href="#roadmap-7-handoff-e-entrega-para-design" title="Permanent link">&para;</a></h2>
 <p>O estado governado é:</p>
@@ -19382,7 +19448,7 @@ OUTPUT DE DESIGN
 → requer validação humana antes de qualquer promoção
 </code></pre></div>
 <p>As branches de entrega não devem ser mescladas na <code>main</code> para duplicar documentos canônicos. Se qualquer fonte obrigatória evoluir materialmente, deve ser avaliada nova emissão do pacote em vez de substituição silenciosa de arquivos dentro de um snapshot já distribuído.</p>
-<p>A futura Home do Guivos Business <strong>não entra automaticamente no snapshot v2 existente</strong>. Sua eventual convergência e inclusão em nova emissão de Design dependerão de Documento Mestre, contratos complementares, Source Lock, validação e autorização próprias.</p>
+<p>A Home do Guivos Business <strong>não entra automaticamente no snapshot v2 existente</strong>. Sua eventual convergência e inclusão em nova emissão de Design dependerão de arquitetura narrativa aprovada, Documento Mestre, contratos complementares, Source Lock, validação e autorização próprias.</p>
 <h2 id="roadmap-8-preservacao">8. Preservação<a class="headerlink" href="#roadmap-8-preservacao" title="Permanent link">&para;</a></h2>
 <p><code>ressincronização documental concluída ≠ produto implementado ≠ operação comprovada</code>.</p>
 <p><code>Design autorizado ≠ solução aprovada ≠ output canônico ≠ implementação ≠ publicação</code>.</p>
@@ -19393,6 +19459,8 @@ OUTPUT DE DESIGN
 <p>Para Guivos Business:</p>
 <p><code>Organização ≠ Business ≠ Ads</code>.</p>
 <p><code>Empresa como início do contrato Business ≠ novo tipo estrutural de participante</code>.</p>
+<p><code>duas ofertas principais = Programas de Incentivo + Guivos Journey custeado pela Empresa</code>.</p>
+<p><code>oferta ≠ plano ≠ escala ≠ orçamento pré-pago ≠ nível de serviço</code>.</p>
 <p><code>custeio da Journey ≠ propriedade da Journey ≠ acesso ao contexto pessoal protegido</code>.</p>
 <p><code>pontos em possibilidade Journey elegível ≠ pagamento de plano Journey ≠ compra de pertinência</code>.</p>
 <p><code>Programa de Pontos reconhecido arquiteturalmente ≠ medida de evolução</code>.</p>
@@ -19400,7 +19468,8 @@ OUTPUT DE DESIGN
 <p><code>VALOR DE IMPACTO LIBERADO ≠ impacto realizado ≠ impacto comprovado</code>.</p>
 <p><code>Intelligence Business = dados/eventos gerados na Guivos ≠ ingestão obrigatória de KPIs internos da empresa</code>.</p>
 <p><code>Intelligence apoiando Business ≠ módulo Business ≠ acesso irrestrito a dados pessoais</code>.</p>
-<p><code>GPA-004 reconciliado ≠ Home Business convergida ≠ inclusão automática em pacote de Design</code>.</p></section><section class="print-page" id="glossary" heading-number="2.4"><h1 id="glossary-glossario-canonico-da-guivos">Glossário Canônico da Guivos<a class="headerlink" href="#glossary-glossario-canonico-da-guivos" title="Permanent link">&para;</a></h1>
+<p><code>Checkpoint 2 da Home validado como base ≠ Checkpoint 3 convergido ≠ Documento Mestre ≠ Source Lock ≠ Design autorizado</code>.</p>
+<p><code>GPA-004 v1.6.0 ressincronizado ≠ Home Business convergida ≠ inclusão automática em pacote de Design</code>.</p></section><section class="print-page" id="glossary" heading-number="2.4"><h1 id="glossary-glossario-canonico-da-guivos">Glossário Canônico da Guivos<a class="headerlink" href="#glossary-glossario-canonico-da-guivos" title="Permanent link">&para;</a></h1>
 <p>Este glossário estabelece o uso oficial dos principais termos da arquitetura, dos produtos e da governança da Guivos.</p>
 <p>Quando documentos antigos utilizarem nomenclatura diferente, prevalece a definição registrada aqui, salvo decisão posterior formalmente consolidada no GKR.</p>
 <h2 id="glossary-1-participantes-e-relacoes">1. Participantes e relações<a class="headerlink" href="#glossary-1-participantes-e-relacoes" title="Permanent link">&para;</a></h2>
@@ -27775,282 +27844,445 @@ GUIVOS ADS
 <h2 id="product-architecture-media-decisao-de-nomenclatura">Decisão de nomenclatura<a class="headerlink" href="#product-architecture-media-decisao-de-nomenclatura" title="Permanent link">&para;</a></h2>
 <p><code>Guivos Media</code> permanece o nome oficial do produto.</p>
 <p><code>Guivos Podcast</code> não é produto independente. Como nome próprio, é uma propriedade editorial do Guivos Media.</p></section><section class="print-page" id="product-architecture-business" heading-number="4.4.4"><h1 id="product-architecture-business-guivos-business">Guivos Business<a class="headerlink" href="#product-architecture-business-guivos-business" title="Permanent link">&para;</a></h1>
-<h2 id="product-architecture-business-papel">Papel<a class="headerlink" href="#product-architecture-business-papel" title="Permanent link">&para;</a></h2>
-<p>Guivos Business é um <strong>produto especializado da Guivos para contextos empresariais e institucionais de maior complexidade</strong>. Ele não é um tipo de participante do ecossistema e não substitui a jornada de Organização.</p>
+<h2 id="product-architecture-business-1-papel-e-natureza">1. Papel e natureza<a class="headerlink" href="#product-architecture-business-1-papel-e-natureza" title="Permanent link">&para;</a></h2>
+<p>Guivos Business é o <strong>produto especializado B2B da Guivos para empresas que desejam criar programas, benefícios, acessos e relações de valor com pessoas utilizando capacidades do Ecossistema Guivos</strong>.</p>
+<p>Ele não é um tipo de participante, não substitui a jornada de Organização e não representa uma versão premium da participação institucional dentro da Guivos.</p>
 <p>A separação é normativa:</p>
-<div class="highlight"><pre><span></span><code>Organização
-= tipo de participante e respectiva jornada no ecossistema
+<div class="highlight"><pre><span></span><code>ORGANIZAÇÃO
+= tipo estrutural de participante do ecossistema
 
-Guivos Business
-= produto especializado contratado quando o contexto exige capacidades corporativas próprias
+EMPRESA
+= ponto de partida do contrato comercial e funcional específico do Business
+
+GUIVOS BUSINESS
+= produto especializado B2B contratado pela empresa
 </code></pre></div>
-<p>Portanto, <strong>Organização ≠ Guivos Business</strong> e não existe correspondência automática 1:1 entre os planos das duas estruturas.</p>
-<p>Uma formulação operacionalmente segura é:</p>
-<blockquote>
-<p><strong>A Organização é quem participa. Guivos Business é uma das capacidades especializadas que ela pode utilizar.</strong></p>
-</blockquote>
-<p>Na ontologia global, <code>Organização</code> permanece o tipo estrutural de participante. <strong>Na arquitetura comercial e funcional do Guivos Business, o ponto de partida é a EMPRESA</strong>, isto é, a cliente empresarial que contrata e utiliza capacidades Business. Não se deve iniciar o raciocínio Business chamando essa cliente de “Organização” quando o objetivo é descrever a relação comercial específica.</p>
-<p>Seu papel abrange desenvolvimento de pessoas, relacionamento com clientes, ativação de públicos, distribuição de benefícios e recompensas, formação de parcerias e geração de inteligência empresarial vinculada ao Ecossistema Guivos, sempre dentro das autoridades próprias de cada produto relacionado.</p>
-<h2 id="product-architecture-business-principio-de-valor">Princípio de valor<a class="headerlink" href="#product-architecture-business-principio-de-valor" title="Permanent link">&para;</a></h2>
+<p>Portanto:</p>
+<div class="highlight"><pre><span></span><code>Organização ≠ Guivos Business
+Empresa no contrato Business ≠ novo tipo estrutural de participante
+</code></pre></div>
+<p>Uma Organização pode participar do ecossistema sem contratar Guivos Business. A utilização do termo <strong>Empresa</strong> no contexto Business identifica a cliente empresarial da relação comercial e não altera a ontologia global da Guivos.</p>
+<h2 id="product-architecture-business-2-principio-de-valor">2. Princípio de valor<a class="headerlink" href="#product-architecture-business-2-principio-de-valor" title="Permanent link">&para;</a></h2>
 <p>A direção humana do Guivos Business é sintetizada pela pergunta:</p>
 <blockquote>
 <p><strong>Como podemos ajudar os seres humanos a terem uma vida melhor?</strong></p>
 </blockquote>
-<p>A empresa pode ampliar condições, acesso, benefícios e possibilidades. Ela <strong>não define o que é uma pessoa melhor, não decide a evolução individual e não adquire autoridade sobre a Journey pessoal</strong>.</p>
-<div class="highlight"><pre><span></span><code>EMPRESA amplia possibilidades
-↓
-PESSOA escolhe, participa e decide dentro de sua autonomia
-↓
-GUIVOS pode apoiar experiências e jornadas legítimas
-</code></pre></div>
-<p>Esse princípio impede que o Business seja reduzido a controle de pessoas, pontuação humana, vigilância, prêmio por obediência ou promessa de impacto causal.</p>
-<h2 id="product-architecture-business-planos-do-guivos-business">Planos do Guivos Business<a class="headerlink" href="#product-architecture-business-planos-do-guivos-business" title="Permanent link">&para;</a></h2>
-<p>A taxonomia de referência do produto é:</p>
-<table>
-<thead>
-<tr>
-<th>Plano</th>
-<th>Função</th>
-<th>Significado</th>
-<th>Leitura conceitual</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Start</strong></td>
-<td>estabelecer a operação empresarial inicial do produto</td>
-<td>início estruturado de uso do Guivos Business</td>
-<td>começar uma operação Business com escopo controlado e capacidade essencial</td>
-</tr>
-<tr>
-<td><strong>Growth</strong></td>
-<td>ampliar recorrência, públicos, unidades e capacidade analítica</td>
-<td>crescimento operacional com maior coordenação</td>
-<td>expandir a operação Business sem perder governança, rastreabilidade e clareza de capacidade</td>
-</tr>
-<tr>
-<td><strong>Scale</strong></td>
-<td>atender operações amplas, multiunidade e integradas</td>
-<td>escala operacional e tecnológica</td>
-<td>sustentar maior complexidade, integração e volume mediante capacidade dimensionada</td>
-</tr>
-<tr>
-<td><strong>Enterprise</strong></td>
-<td>adaptar o produto a contextos empresariais de alta complexidade</td>
-<td>configuração assistida e contratual sob requisitos específicos</td>
-<td>dimensionar o Guivos Business para estruturas, integrações, governança, segurança ou suporte que não devem ser presumidos como autoatendimento</td>
-</tr>
-</tbody>
-</table>
-<p>Os nomes dos planos representam <strong>profundidade de serviço, capacidade e complexidade atendida</strong>. Não representam mérito, impacto, prestígio ou nível de evolução da empresa contratante.</p>
-<p>Nenhuma progressão entre Start, Growth, Scale e Enterprise constitui escada obrigatória. Uma contratação deverá refletir necessidade real, contexto e capacidade requerida.</p>
-<p>Esta autoridade de taxonomia <strong>não inventa preços, limites, entitlements, SLA, integrações ou condições comerciais</strong> ainda não aprovados especificamente para o Guivos Business. Comparações temporais mais sofisticadas e exportação estruturada/API para o BI da empresa podem compor diferenciação futura entre planos superiores, mas <strong>não são declaradas como entitlement vigente por este documento</strong>.</p>
-<h2 id="product-architecture-business-escopo-principal">Escopo principal<a class="headerlink" href="#product-architecture-business-escopo-principal" title="Permanent link">&para;</a></h2>
-<h3 id="product-architecture-business-desenvolvimento-de-pessoas-e-publicos-vinculados">Desenvolvimento de pessoas e públicos vinculados<a class="headerlink" href="#product-architecture-business-desenvolvimento-de-pessoas-e-publicos-vinculados" title="Permanent link">&para;</a></h3>
-<ul>
-<li>soluções B2B;</li>
-<li>benefícios corporativos;</li>
-<li>programas de desenvolvimento;</li>
-<li>jornadas corporativas sob autoridade do Guivos Journey;</li>
-<li>educação e bem-estar;</li>
-<li>reconhecimento e incentivos;</li>
-<li>gestão de públicos vinculados sem apropriação do contexto pessoal protegido;</li>
-<li>integrações com produtos e serviços do ecossistema dentro das autoridades próprias de cada produto.</li>
-</ul>
-<h3 id="product-architecture-business-relacionamento-engajamento-e-crescimento">Relacionamento, engajamento e crescimento<a class="headerlink" href="#product-architecture-business-relacionamento-engajamento-e-crescimento" title="Permanent link">&para;</a></h3>
-<ul>
-<li>programas de recompensas;</li>
-<li>programas de fidelização;</li>
-<li>campanhas de engajamento não publicitário;</li>
-<li>relacionamento contínuo com clientes;</li>
-<li>ações de retenção e recorrência;</li>
-<li>captação de novos clientes por capacidades Business legítimas;</li>
-<li>experiências personalizadas quando autorizadas pelo contexto e pela finalidade;</li>
-<li>ativação de comunidades e públicos;</li>
-<li>fortalecimento de relacionamentos por meio de experiências relevantes.</li>
-</ul>
-<p>Essas capacidades <strong>não transformam Guivos Business em produto de publicidade</strong>. Quando a finalidade for publicidade, patrocínio, impulsionamento, inventário publicitário ou exposição comercial paga dentro da Guivos, a autoridade é do <strong>Guivos Ads</strong>, em relação comercial própria e independente.</p>
-<h3 id="product-architecture-business-parcerias-e-impacto">Parcerias e impacto<a class="headerlink" href="#product-architecture-business-parcerias-e-impacto" title="Permanent link">&para;</a></h3>
-<ul>
-<li>parcerias empresariais;</li>
-<li>conexão com universidades, igrejas, ONGs, movimentos, comunidades, especialistas e outros parceiros;</li>
-<li>programas de voluntariado e impacto social;</li>
-<li>apoio a causas e iniciativas comunitárias;</li>
-<li>conexão entre empresas e oportunidades do ecossistema.</li>
-</ul>
-<p>Quando uma experiência Business precisar nomear o montante disponibilizado para uma ação de impacto, a terminologia validada é <strong>VALOR DE IMPACTO LIBERADO</strong>. O termo descreve valor disponibilizado; não declara que impacto humano ou social foi realizado, causado ou comprovado.</p>
-<div class="highlight"><pre><span></span><code>VALOR DE IMPACTO LIBERADO
-≠ impacto realizado
-≠ impacto comprovado
-≠ evolução comprovada
-</code></pre></div>
-<h3 id="product-architecture-business-inteligencia-empresarial">Inteligência empresarial<a class="headerlink" href="#product-architecture-business-inteligencia-empresarial" title="Permanent link">&para;</a></h3>
-<ul>
-<li>relatórios e indicadores empresariais produzidos a partir do ecossistema Guivos;</li>
-<li>análise agregada e autorizada de engajamento;</li>
-<li>acompanhamento agregado e autorizado de participação;</li>
-<li>tendências e comparações temporais com base em eventos gerados na própria Guivos;</li>
-<li>mensuração de programas sob autoridade Business;</li>
-<li>apoio à tomada de decisão por meio do Guivos Intelligence.</li>
-</ul>
-<p>Guivos Intelligence <strong>não é módulo do Guivos Business</strong>. Intelligence permanece capacidade transversal com autoridade própria e pode apoiar o Business na interpretação, organização e análise de <strong>dados e eventos gerados no Ecossistema Guivos</strong>. O Business materializa utilidade B2B dentro de seu domínio; não absorve a autoridade do Intelligence.</p>
-<p>A Guivos <strong>não depende de receber bases internas da empresa para produzir o Intelligence Business</strong> e não deve importar KPIs empresariais internos para tentar provar relações de antes/depois. A empresa pode, em seu próprio ambiente analítico, combinar os indicadores exportados pela Guivos com seus dados internos e realizar suas próprias leituras.</p>
-<h2 id="product-architecture-business-programa-de-pontos">Programa de Pontos<a class="headerlink" href="#product-architecture-business-programa-de-pontos" title="Permanent link">&para;</a></h2>
-<p>O <strong>Programa de Pontos</strong> é uma capacidade do Guivos Business para disponibilização de benefícios a pessoas vinculadas a contextos empresariais elegíveis.</p>
-<p>Sua relação com o ecossistema deve ser lida como um fluxo de benefício e autonomia, não como medida de evolução pessoal:</p>
+<p>A empresa pode ampliar condições, acesso, benefícios, incentivos e possibilidades. Ela <strong>não define quem a pessoa deve se tornar, não mede evolução humana e não adquire autoridade sobre a Journey pessoal</strong>.</p>
 <div class="highlight"><pre><span></span><code>EMPRESA
-↓
-GUIVOS BUSINESS
-↓
-PROGRAMA DE PONTOS
-↓
-PESSOA RECEBE O BENEFÍCIO
-↓
-pode utilizar em possibilidades pagas elegíveis do
-MALL / TRAVEL / JOURNEY
-↓
-A PESSOA ESCOLHE COMO UTILIZAR
-</code></pre></div>
-<h3 id="product-architecture-business-uso-de-empresa-neste-fluxo">Uso de <code>Empresa</code> neste fluxo<a class="headerlink" href="#product-architecture-business-uso-de-empresa-neste-fluxo" title="Permanent link">&para;</a></h3>
-<p>Neste fluxo comercial específico, <strong>Empresa</strong> é o termo utilizado para identificar a empresa cliente do Guivos Business e evitar confusão com os tipos estruturais amplos de participante <code>Organização</code> e <code>Coletivo</code>.</p>
-<p>Essa terminologia é local ao contexto comercial e não altera a ontologia global:</p>
-<div class="highlight"><pre><span></span><code>Organização
-= tipo estrutural amplo de participante
+→ cria condições, acesso, benefícios e possibilidades
 
-Empresa
-= termo utilizado no fluxo comercial específico
-  do Guivos Business e do Programa de Pontos
+PESSOA
+→ escolhe, participa e decide dentro de sua autonomia
+
+GUIVOS
+→ conecta capacidades e experiências coerentes com suas autoridades
 </code></pre></div>
-<p>Uma Organização pode participar do ecossistema sem contratar Guivos Business. Da mesma forma, o uso de <code>Empresa</code> neste contrato não cria um novo tipo global de participante.</p>
-<h3 id="product-architecture-business-natureza-dos-pontos">Natureza dos pontos<a class="headerlink" href="#product-architecture-business-natureza-dos-pontos" title="Permanent link">&para;</a></h3>
-<p>Os pontos são um benefício transacional utilizável em <strong>possibilidades pagas elegíveis</strong> do ecossistema, incluindo possibilidades elegíveis do Guivos Mall, Guivos Travel e Guivos Journey conforme a autoridade do produto anfitrião.</p>
-<p>Eles não constituem uma pontuação universal da Guivos, não representam mérito humano e não medem evolução.</p>
+<p>Esse princípio impede que Business seja reduzido a controle de pessoas, score humano, vigilância, prêmio por obediência ou promessa automática de impacto causal.</p>
+<h2 id="product-architecture-business-3-formato-vigente-do-produto">3. Formato vigente do produto<a class="headerlink" href="#product-architecture-business-3-formato-vigente-do-produto" title="Permanent link">&para;</a></h2>
+<p>O portfólio funcional vigente do Guivos Business possui <strong>duas ofertas principais</strong>:</p>
+<div class="highlight"><pre><span></span><code>GUIVOS BUSINESS
+├── 1. PROGRAMAS DE INCENTIVO
+└── 2. GUIVOS JOURNEY CUSTEADO PELA EMPRESA
+</code></pre></div>
+<p>Capacidades relacionadas apoiam essas ofertas sem constituírem, por si só, novas famílias comerciais independentes:</p>
+<div class="highlight"><pre><span></span><code>CAPACIDADES RELACIONADAS
+├── Pontos Guivos
+├── Guivos Intelligence
+├── integrações e eventos
+├── transações e liquidação
+└── governança e gestão empresarial
+</code></pre></div>
+<p>A autoridade detalhada do portfólio funcional está em <code>GPA-004-FUNCTIONAL-PORTFOLIO-001 — Guivos Business — Portfólio Funcional v1</code>.</p>
+<h2 id="product-architecture-business-4-oferta-1-programas-de-incentivo">4. Oferta 1 — Programas de Incentivo<a class="headerlink" href="#product-architecture-business-4-oferta-1-programas-de-incentivo" title="Permanent link">&para;</a></h2>
+<p>Programas de Incentivo permitem que a empresa estruture iniciativas destinadas a públicos elegíveis por meio de <strong>objetivos, eventos verificáveis, regras, benefícios e orçamento governado</strong>.</p>
+<p>O mesmo núcleo funcional pode atender diferentes recortes comerciais.</p>
+<h3 id="product-architecture-business-41-pessoas-vinculadas-a-empresa">4.1 Pessoas vinculadas à empresa<a class="headerlink" href="#product-architecture-business-41-pessoas-vinculadas-a-empresa" title="Permanent link">&para;</a></h3>
+<p>Exemplos de finalidades possíveis incluem:</p>
+<ul>
+<li>engajamento;</li>
+<li>reconhecimento;</li>
+<li>assiduidade;</li>
+<li>comprometimento traduzido em critério observável;</li>
+<li>desempenho e metas legítimas;</li>
+<li>treinamento e certificação;</li>
+<li>segurança;</li>
+<li>inovação;</li>
+<li>sustentabilidade;</li>
+<li>ações de impacto.</li>
+</ul>
+<h3 id="product-architecture-business-42-clientes">4.2 Clientes<a class="headerlink" href="#product-architecture-business-42-clientes" title="Permanent link">&para;</a></h3>
+<p>Exemplos de finalidades possíveis incluem:</p>
+<ul>
+<li>fidelização;</li>
+<li>recorrência;</li>
+<li>aquisição;</li>
+<li>indicação;</li>
+<li>ativação;</li>
+<li>campanhas de relacionamento não publicitário;</li>
+<li>relacionamento contínuo.</li>
+</ul>
+<p>Esses recortes <strong>não exigem motores de produto diferentes</strong>. São aplicações de um mesmo núcleo Business.</p>
+<h3 id="product-architecture-business-43-nucleo-funcional">4.3 Núcleo funcional<a class="headerlink" href="#product-architecture-business-43-nucleo-funcional" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>PROGRAMA
+→ CAMPANHA
+→ PARTICIPANTE
+→ EVENTO
+→ REGRA
+→ RESULTADO
+→ ORÇAMENTO / FINANCIAMENTO
+→ INTELLIGENCE
+</code></pre></div>
+<p>A lógica de execução é:</p>
+<div class="highlight"><pre><span></span><code>EVENTO
++
+CONDIÇÕES
+→ RESULTADO
+</code></pre></div>
+<p>A empresa define o critério empresarial legítimo. A Guivos executa a regra configurada ou contratada. Conceitos subjetivos como “comprometimento” precisam ser traduzidos pela empresa em eventos e condições observáveis antes de serem utilizados pela plataforma.</p>
+<p>Resultados elegíveis podem incluir:</p>
+<ul>
+<li>Pontos Guivos;</li>
+<li>benefício direto elegível;</li>
+<li><code>VALOR DE IMPACTO LIBERADO</code>, quando houver finalidade social legítima.</li>
+</ul>
+<h2 id="product-architecture-business-5-oferta-2-guivos-journey-custeado-pela-empresa">5. Oferta 2 — Guivos Journey custeado pela EMPRESA<a class="headerlink" href="#product-architecture-business-5-oferta-2-guivos-journey-custeado-pela-empresa" title="Permanent link">&para;</a></h2>
+<p>A empresa pode <strong>custear o acesso de pessoas elegíveis ao Guivos Journey existente</strong>, oferecendo acesso à experiência de evolução da Guivos sem transformar o Journey em ferramenta corporativa de direção individual.</p>
+<p>A regra é:</p>
+<blockquote>
+<p><strong>Continua sendo Guivos Journey. O que muda é quem paga o acesso.</strong></p>
+</blockquote>
+<p>O custeio empresarial preserva:</p>
+<ul>
+<li>voluntariedade;</li>
+<li>planos e regras normais do Guivos Journey;</li>
+<li>escolha livre das jornadas pela pessoa;</li>
+<li>autoridade da pessoa sobre seu contexto;</li>
+<li>privacidade;</li>
+<li>pertinência, recomendação e <code>Next Step</code> governados pelo Journey.</li>
+</ul>
+<p>A empresa viabiliza o acesso. <strong>A pessoa continua escolhendo o que faz sentido para sua própria jornada.</strong></p>
+<p>Não são produtos ou formatos válidos desta arquitetura:</p>
+<ul>
+<li>Journey para Empresas;</li>
+<li>Journey Business;</li>
+<li>Journey Corporativo;</li>
+<li>Journey Patrocinado;</li>
+<li>jornadas corporativas criadas pela empresa;</li>
+<li>trilhas internas obrigatórias;</li>
+<li>cursos corporativos bonificados;</li>
+<li>listas de tarefas empresariais transformadas em Journey.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>EMPRESA CUSTEIA O JOURNEY
+≠
+EMPRESA CRIA, POSSUI OU CONTROLA A JOURNEY
+</code></pre></div>
+<p>O financiamento não concede à empresa acesso ao conteúdo individual da Journey, temas pessoais, intenções, vulnerabilidades ou explicações individuais de pertinência.</p>
+<h2 id="product-architecture-business-6-pontos-guivos-no-business">6. Pontos Guivos no Business<a class="headerlink" href="#product-architecture-business-6-pontos-guivos-no-business" title="Permanent link">&para;</a></h2>
+<p>Pontos Guivos são uma <strong>capacidade de benefício transacional</strong> que pode ser utilizada pelos Programas de Incentivo. Eles não constituem a identidade integral do Guivos Business e não representam mérito ou evolução humana.</p>
 <div class="highlight"><pre><span></span><code>mais pontos
 ≠
 mais evolução
 </code></pre></div>
-<p>O Programa de Pontos também é distinto do Gift Card Guivos:</p>
-<div class="highlight"><pre><span></span><code>Programa de Pontos
-≠
-Gift Card Guivos
+<p>A equivalência econômica entre pontos e reais já validada no ecossistema permanece preservada e <strong>não é reaberta por esta autoridade</strong>.</p>
+<h3 id="product-architecture-business-61-saldo-da-pessoa">6.1 Saldo da pessoa<a class="headerlink" href="#product-architecture-business-61-saldo-da-pessoa" title="Permanent link">&para;</a></h3>
+<p>A direção funcional é de <strong>um saldo unificado de Pontos Guivos por pessoa</strong>, enquanto origens e lotes permanecem rastreáveis internamente para auditoria, validade, reversão e liquidação.</p>
+<div class="highlight"><pre><span></span><code>Empresa X → +500
+Empresa Y → +300
+
+SALDO DA PESSOA → 800 Pontos Guivos
 </code></pre></div>
-<p>A equivalência econômica previamente validada entre pontos e reais permanece preservada. <strong>Esta versão não reabre nem recalcula essa equivalência.</strong> A equivalência serve ao funcionamento econômico do benefício e não transforma pontos em score humano, investimento, saldo bancário ou prova de evolução.</p>
-<h3 id="product-architecture-business-financiamento-concessao-e-uso">Financiamento, concessão e uso<a class="headerlink" href="#product-architecture-business-financiamento-concessao-e-uso" title="Permanent link">&para;</a></h3>
-<p>No contexto empresarial, a empresa carrega/financia um orçamento de pontos para um programa elegível. A concessão de pontos a uma pessoa já representa consumo/alocação do orçamento da empresa; o uso posterior pelo participante é um evento distinto, ligado à escolha da pessoa dentro das possibilidades elegíveis.</p>
-<p>O saldo empresarial deve distinguir, no mínimo, a leitura econômica de <strong>carregado, concedido e disponível</strong>, preservando rastreabilidade entre orçamento da empresa e benefícios concedidos. Neste contexto, <code>concedido</code> representa a alocação/consumo do orçamento empresarial; <code>utilizado</code> fica reservado ao uso posterior realizado pela pessoa.</p>
-<p>Para a análise de <strong>onde os pontos foram efetivamente utilizados pelas pessoas</strong>, a métrica de distribuição considera somente pontos realmente consumidos em possibilidades elegíveis e deve fechar em <strong>100% entre Mall, Travel e Journey</strong>. Pontos ainda não utilizados ou expirados ficam fora dessa distribuição percentual.</p>
-<p>Exemplo conceitual:</p>
+<p>A origem empresarial não fragmenta a experiência em múltiplas carteiras corporativas visíveis.</p>
+<h3 id="product-architecture-business-62-orcamento-empresarial">6.2 Orçamento empresarial<a class="headerlink" href="#product-architecture-business-62-orcamento-empresarial" title="Permanent link">&para;</a></h3>
+<p>A empresa carrega previamente orçamento para financiar o programa.</p>
+<p>A leitura administrativa validada é:</p>
+<div class="highlight"><pre><span></span><code>CARREGADO
+CONCEDIDO
+DISPONÍVEL
+</code></pre></div>
+<p><code>Concedido</code> representa orçamento já alocado/consumido pela empresa quando os pontos são entregues à pessoa. O uso posterior dos pontos pela pessoa é outro evento e não reabre o saldo empresarial.</p>
+<h3 id="product-architecture-business-63-utilizacao-no-ecossistema">6.3 Utilização no ecossistema<a class="headerlink" href="#product-architecture-business-63-utilizacao-no-ecossistema" title="Permanent link">&para;</a></h3>
+<p>Pontos Guivos podem ser utilizados em possibilidades pagas elegíveis do:</p>
+<ul>
+<li>Guivos Mall;</li>
+<li>Guivos Travel;</li>
+<li>Guivos Journey, quando a possibilidade tiver sido apresentada normalmente pela autoridade do Journey.</li>
+</ul>
+<p>No Journey, a relação obrigatória é:</p>
+<div class="highlight"><pre><span></span><code>INTENÇÃO
+→ CONTEXTO
+→ PERTINÊNCIA
+→ POSSIBILIDADE
+→ somente depois: FORMA DE PAGAMENTO
+</code></pre></div>
+<p>Pontos não alteram descoberta, pertinência, recomendação, prioridade ou <code>Next Step</code>.</p>
+<p><strong>Pontos Guivos não pagam o plano do Journey.</strong> Eles podem atuar somente como forma de pagamento ou acesso em possibilidades pagas elegíveis, quando a autoridade do produto anfitrião permitir.</p>
+<p>Pagamento misto <code>Pontos + dinheiro</code> é uma direção funcional validada para possibilidades elegíveis, embora checkout, estorno, liquidação e tributação ainda dependam de regras próprias.</p>
+<h3 id="product-architecture-business-64-liquidacao-para-fornecedores-organizacoes-e-coletivos">6.4 Liquidação para fornecedores, Organizações e Coletivos<a class="headerlink" href="#product-architecture-business-64-liquidacao-para-fornecedores-organizacoes-e-coletivos" title="Permanent link">&para;</a></h3>
+<p>Um fornecedor, Organização ou Coletivo não precisa operar carteira própria de Pontos Guivos nem escolher manualmente “aceitar pontos”.</p>
+<div class="highlight"><pre><span></span><code>PESSOA
+→ paga na plataforma Guivos
+   com dinheiro, pontos ou forma mista elegível
+→ GUIVOS processa a transação
+→ GUIVOS realiza o repasse financeiro aplicável
+→ FORNECEDOR / ORGANIZAÇÃO / COLETIVO
+</code></pre></div>
+<p>A elegibilidade do meio de pagamento é governada pela Guivos e pela relação econômica da possibilidade.</p>
+<h3 id="product-architecture-business-65-leitura-agregada-de-utilizacao">6.5 Leitura agregada de utilização<a class="headerlink" href="#product-architecture-business-65-leitura-agregada-de-utilizacao" title="Permanent link">&para;</a></h3>
+<p>Para a empresa, a leitura de destino considera <strong>somente pontos efetivamente utilizados</strong> e fecha 100% entre as áreas exibidas:</p>
 <div class="highlight"><pre><span></span><code>PONTOS EFETIVAMENTE UTILIZADOS = 100%
-├── Mall    10%
-├── Travel  70%
-└── Journey 20%
+├── Mall
+├── Travel
+└── Journey
 </code></pre></div>
-<p>Os percentuais acima são somente exemplo de leitura e <strong>não constituem meta, benchmark ou distribuição esperada</strong>.</p>
-<p>Pontos vencidos, não utilizados, cancelados ou devolvidos dependem das regras econômicas e operacionais próprias aplicáveis, quando aprovadas. Esta reconciliação não define nem redefine seu tratamento financeiro e não presume impacto a partir da mera concessão de pontos.</p>
-<p>Pagamento híbrido por pontos + moeda somente pode existir quando a autoridade do produto anfitrião e as regras econômicas da transação o permitirem.</p>
-<h3 id="product-architecture-business-limites-do-incentivo">Limites do incentivo<a class="headerlink" href="#product-architecture-business-limites-do-incentivo" title="Permanent link">&para;</a></h3>
-<p>Pontos e benefícios não compram nem alteram:</p>
-<ul>
-<li>relevância orgânica;</li>
-<li>prioridade ou direção do Guivos Journey;</li>
-<li><code>Next Step</code> ou interpretação pessoal;</li>
-<li>mérito, confiança ou impacto;</li>
-<li>conclusão editorial;</li>
-<li>posição de “melhor” oferta, destino, experiência ou conteúdo;</li>
-<li>inventário ou exposição do Guivos Ads.</li>
-</ul>
-<p>O programa é mecanismo de incentivo e benefício; <strong>não é a identidade integral do Guivos Business</strong> e não deve deslocar o propósito do produto para acumulação de saldo.</p>
-<h2 id="product-architecture-business-relacao-com-guivos-journey">Relação com Guivos Journey<a class="headerlink" href="#product-architecture-business-relacao-com-guivos-journey" title="Permanent link">&para;</a></h2>
-<p>O Guivos Journey é voluntário e preserva seus planos e regras normais. <strong>Pontos Business não pagam o plano do Journey.</strong> Eles podem ser utilizados somente em possibilidades pagas elegíveis associadas ao Journey quando a autoridade do Journey permitir.</p>
-<p>A presença de pontos não altera pertinência, recomendação, prioridade, próximo passo ou decisão do Journey.</p>
-<p>Guivos Business pode estruturar e contratar arranjos B2B em que uma empresa custeie acesso, incentivos, benefícios ou capacidades vinculadas ao Guivos Journey por mecanismos comerciais próprios. Esse custeio não transfere à empresa autoridade sobre a Journey da pessoa.</p>
-<p>A separação é obrigatória:</p>
-<div class="highlight"><pre><span></span><code>empresa financia acesso/capacidade/incentivo
-≠
-empresa possui ou controla a Journey
+<p>Pontos ainda guardados ou expirados não entram nesse denominador. A empresa não recebe histórico individual de consumo das pessoas.</p>
+<h2 id="product-architecture-business-7-expiracao-e-orcamento-nao-concedido">7. Expiração e orçamento não concedido<a class="headerlink" href="#product-architecture-business-7-expiracao-e-orcamento-nao-concedido" title="Permanent link">&para;</a></h2>
+<p>A arquitetura admite validade para os Pontos Guivos da pessoa, mas o prazo exato ainda não está congelado. O exemplo de 24 meses discutido anteriormente <strong>não constitui regra vigente por esta autoridade</strong>.</p>
+<div class="highlight"><pre><span></span><code>PONTOS JÁ CONCEDIDOS À PESSOA
+→ não retornam automaticamente à empresa de origem
 
-custeio empresarial
-≠
-acesso ao contexto pessoal protegido
+ORÇAMENTO EMPRESARIAL NÃO CONCEDIDO
+→ permanece empresarial
+→ pode admitir transferência ou estorno conforme contrato
 </code></pre></div>
-<p>A empresa pode definir o programa empresarial legítimo que financia, seus critérios administrativos e seus objetivos organizacionais. O Guivos Journey preserva a autoridade sobre a experiência pessoal, a relevância individual, os próximos passos, a autonomia, a privacidade e os limites de contexto da pessoa.</p>
-<p>Business não deve transformar Journey em ferramenta de vigilância empresarial, avaliação psicológica, score humano, gestão de vulnerabilidades pessoais ou mecanismo para expor escolhas íntimas a empregadores, clientes ou patrocinadores.</p>
-<h2 id="product-architecture-business-relacao-com-guivos-intelligence-e-dados-empresariais">Relação com Guivos Intelligence e dados empresariais<a class="headerlink" href="#product-architecture-business-relacao-com-guivos-intelligence-e-dados-empresariais" title="Permanent link">&para;</a></h2>
-<p>No contexto específico do Guivos Business, o Guivos Intelligence pode apoiar análises de <strong>dados, interações e eventos legitimamente gerados dentro do Ecossistema Guivos e vinculados à finalidade Business autorizada</strong>. Esta limitação governa o uso do Intelligence no contrato Business e <strong>não redefine o escopo global do Guivos Intelligence estabelecido em <code>GPA-006</code></strong>.</p>
-<p>O contrato conceitual é:</p>
-<div class="highlight"><pre><span></span><code>eventos e dados gerados na Guivos
-↓
-Guivos Intelligence apoia interpretação/análise agregada
-↓
-Guivos Business apresenta utilidade B2B autorizada
-↓
-empresa acompanha o que ocorreu no ecossistema
-↓
-empresa pode combinar externamente esses indicadores
-com seus próprios dados internos
+<p>Prazo final, destinação econômica dos pontos expirados, percentuais, taxas administrativas e regras detalhadas de reversão exigem autoridade própria antes de implementação.</p>
+<h2 id="product-architecture-business-8-valor-de-impacto-liberado">8. VALOR DE IMPACTO LIBERADO<a class="headerlink" href="#product-architecture-business-8-valor-de-impacto-liberado" title="Permanent link">&para;</a></h2>
+<p>Impacto não constitui uma terceira família independente do Business.</p>
+<p><code>VALOR DE IMPACTO LIBERADO</code> é uma possível saída de um Programa de Incentivo quando houver finalidade social legítima.</p>
+<div class="highlight"><pre><span></span><code>VALOR DE IMPACTO LIBERADO
+≠ Pontos Guivos
+≠ dinheiro livre da pessoa
+≠ impacto realizado
+≠ impacto comprovado
+≠ evolução comprovada
 </code></pre></div>
-<p>A Guivos não precisa importar bases internas de RH, vendas, produtividade, absenteísmo ou outros KPIs corporativos para operar essa inteligência. Comparações mensais ou por outros períodos podem usar dados gerados na própria Guivos; exportação estruturada ou API pode permitir que a empresa faça a combinação com seus indicadores no próprio BI, quando essa capacidade estiver contratualmente disponível.</p>
-<p>A empresa pode visualizar indicadores de seu próprio programa e resultados agregados autorizados. Não pode inferir daí direito a detalhes individuais protegidos, perfis psicológicos, vulnerabilidades, conteúdos sensíveis ou histórico privado de Journey.</p>
-<p>Correlação ou tendência observada dentro da Guivos <strong>não prova causalidade, impacto humano ou evolução pessoal</strong>. A Guivos não deve declarar que um programa melhorou um KPI interno da empresa sem evidência apropriada produzida fora deste contrato arquitetural.</p>
-<h2 id="product-architecture-business-independencia-entre-guivos-business-e-guivos-ads">Independência entre Guivos Business e Guivos Ads<a class="headerlink" href="#product-architecture-business-independencia-entre-guivos-business-e-guivos-ads" title="Permanent link">&para;</a></h2>
-<p><strong>Guivos Ads não é módulo, capacidade, componente, benefício de plano, subsistema incorporado nem subproduto do Guivos Business.</strong></p>
-<p>Os dois são produtos especializados distintos, com teses, autoridades, contratos e modelos de valor próprios:</p>
-<div class="highlight"><pre><span></span><code>Guivos Business
-= capacidades B2B para a empresa compreender, organizar,
-  operar programas e utilizar recursos empresariais da Guivos
-
-Guivos Ads
-= publicidade, patrocínio, impulsionamento, exposição comercial paga,
-  ativações publicitárias e operação de inventário permitido
+<p>O termo informa valor disponibilizado para uma ação elegível; não declara causalidade ou resultado humano/social comprovado.</p>
+<h2 id="product-architecture-business-9-guivos-intelligence-no-business">9. Guivos Intelligence no Business<a class="headerlink" href="#product-architecture-business-9-guivos-intelligence-no-business" title="Permanent link">&para;</a></h2>
+<p>Guivos Intelligence <strong>não é módulo do Guivos Business</strong>. Intelligence permanece produto/capacidade transversal com autoridade própria e pode apoiar as duas ofertas Business por meio de dados, interações e eventos legitimamente gerados ou conhecidos dentro do Ecossistema Guivos.</p>
+<div class="highlight"><pre><span></span><code>DADOS E EVENTOS GUIVOS
+↓
+GUIVOS INTELLIGENCE
+interpreta / organiza / analisa
+↓
+GUIVOS BUSINESS
+materializa utilidade B2B autorizada
+↓
+EMPRESA
+acompanha e compreende o que ocorreu no ecossistema
 </code></pre></div>
-<p>Uma mesma empresa pode contratar ou utilizar Guivos Business e Guivos Ads, porém isso representa <strong>duas relações comerciais independentes</strong>. Nenhuma contratação concede automaticamente capacidades, inventário, exposição, autoridade, desconto, elegibilidade ou direitos do outro produto.</p>
-<blockquote>
-<p><strong>Capacidade Business e investimento publicitário são relações comerciais independentes.</strong></p>
-</blockquote>
-<p>O Business não governa campanhas publicitárias, inventário publicitário, identificação de publicidade, compra de exposição ou mensuração publicitária. Essas responsabilidades pertencem ao Guivos Ads nos limites de <code>GPA-007</code> e das superfícies anfitriãs.</p>
-<p>Da mesma forma, contratar Ads não concede capacidades Business, acesso a indicadores empresariais, programas de pontos, Journey corporativa, benefícios ou autoridade sobre uma Organização.</p>
-<h2 id="product-architecture-business-principio-de-aderencia">Princípio de aderência<a class="headerlink" href="#product-architecture-business-principio-de-aderencia" title="Permanent link">&para;</a></h2>
-<p>Guivos Business não deve operar ações, programas, recompensas ou parcerias apenas porque podem gerar receita.</p>
-<p>Toda solução deve possuir relação clara com desenvolvimento de pessoas, fortalecimento de relacionamentos, engajamento legítimo, experiências relevantes, jornadas de evolução, valor para participantes ou impacto social coerente com o propósito da Guivos.</p>
-<p>O Programa de Pontos deve obedecer ao mesmo princípio: sua existência como benefício não deve transformar a Guivos em uma experiência orientada a acumular pontos nem converter participação ou evolução em caça a recompensas.</p>
-<h2 id="product-architecture-business-limites">Limites<a class="headerlink" href="#product-architecture-business-limites" title="Permanent link">&para;</a></h2>
-<p>Guivos Business não substitui os produtos voltados à jornada individual, viagens, conteúdo editorial, inteligência, comércio ou publicidade.</p>
-<p>Seu domínio principal é a relação institucional e comercial com empresas que demandem um produto especializado. A existência de uma Organização no ecossistema não implica contratação do Guivos Business, e contratar Guivos Business não altera a natureza estrutural da Organização como participante.</p>
-<p>Não deve ser tratado como um CRM genérico, ERP genérico, dashboard como produto, plataforma de publicidade, consultoria genérica, versão paga de Organização ou programa de pontos desconectado do propósito da Guivos.</p>
-<p>A presença de recursos analíticos não transforma Business em Guivos Intelligence. A presença de incentivo não transforma Business em Guivos Journey. A possibilidade de uma mesma empresa também anunciar não transforma Ads em módulo Business.</p>
-<h2 id="product-architecture-business-relacoes-principais">Relações principais<a class="headerlink" href="#product-architecture-business-relacoes-principais" title="Permanent link">&para;</a></h2>
+<p>A arquitetura padrão <strong>não depende de importar bases completas</strong> de RH, folha, absenteísmo, produtividade, vendas, CRM ou ERP.</p>
+<p>Integrações podem transmitir o evento mínimo necessário para acionar uma regra, por exemplo:</p>
+<div class="highlight"><pre><span></span><code>sistema empresarial
+→ evento elegível confirmado
+→ Guivos Business
+→ regra
+→ benefício
+</code></pre></div>
+<p>Guivos pode informar, conforme finalidade e contrato:</p>
 <ul>
-<li>parte da <strong>Empresa</strong> como cliente no contrato comercial específico do Business, sem alterar a ontologia global de participantes;</li>
-<li>pode estruturar e contratar arranjos empresariais relacionados ao Guivos Journey, preservando a autoridade, a voluntariedade, os planos normais, a privacidade e a autonomia da Journey da pessoa;</li>
-<li>pode contratar ou distribuir ofertas do Guivos Mall e do Guivos Travel quando as autoridades desses produtos permitirem;</li>
-<li>por meio do Programa de Pontos, pode disponibilizar benefícios que pessoas utilizam em possibilidades pagas elegíveis do Guivos Mall, Guivos Travel e Guivos Journey, sem pagar plano Journey ou comprar pertinência;</li>
-<li>utiliza conteúdos do Guivos Media sem adquirir autoridade editorial;</li>
-<li>pode utilizar Guivos Intelligence para análises de dados/eventos gerados na Guivos sem absorver sua autoridade nem importar irrestritamente dados internos da empresa;</li>
-<li>pode fornecer indicadores estruturados para a empresa combinar com seus próprios dados fora da Guivos, quando essa capacidade existir;</li>
-<li>pode coexistir comercialmente com Guivos Ads, mas <strong>não opera Ads como módulo ou capacidade interna</strong>;</li>
-<li>pode conectar empresas a grupos, comunidades, movimentos, universidades, igrejas, ONGs e demais participantes do ecossistema.</li>
+<li>participação;</li>
+<li>concessões;</li>
+<li>orçamento;</li>
+<li>recorrência;</li>
+<li>utilização;</li>
+<li>tendências e movimentos temporais;</li>
+<li>distribuição agregada autorizada;</li>
+<li>comparações entre períodos com base em dados Guivos.</li>
 </ul>
-<h2 id="product-architecture-business-exemplos-de-aplicacao">Exemplos de aplicação<a class="headerlink" href="#product-architecture-business-exemplos-de-aplicacao" title="Permanent link">&para;</a></h2>
-<h3 id="product-architecture-business-colaboradores">Colaboradores<a class="headerlink" href="#product-architecture-business-colaboradores" title="Permanent link">&para;</a></h3>
-<p>Uma empresa pode oferecer benefícios, conteúdos, grupos esportivos, bolsas, experiências, programas de desenvolvimento e recompensas relacionadas à participação em programas corporativos legítimos.</p>
-<p>Quando aplicável ao Programa de Pontos, a empresa pode disponibilizar pontos como benefício e a pessoa preserva a escolha sobre sua utilização entre as possibilidades pagas elegíveis do Mall, Travel e Journey, conforme as regras vigentes do programa.</p>
-<p>Se a empresa custear capacidades associadas ao Journey, esse custeio não lhe concede acesso ao contexto pessoal protegido, aos próximos passos privados ou à interpretação individual da evolução da pessoa.</p>
-<h3 id="product-architecture-business-clientes">Clientes<a class="headerlink" href="#product-architecture-business-clientes" title="Permanent link">&para;</a></h3>
-<p>Uma empresa pode criar um programa de benefícios, recompensas ou relacionamento ligado à participação em experiências ou ao engajamento com iniciativas coerentes com seu posicionamento. Caso deseje publicidade ou exposição paga dentro da Guivos, essa necessidade deve seguir separadamente para Guivos Ads.</p>
-<h3 id="product-architecture-business-captacao-e-fidelizacao">Captação e fidelização<a class="headerlink" href="#product-architecture-business-captacao-e-fidelizacao" title="Permanent link">&para;</a></h3>
-<p>Uma empresa pode atrair e manter clientes por meio de experiências úteis, parcerias, conteúdos e benefícios dentro das capacidades Business. Publicidade, patrocínio ou compra de exposição não são presumidos como parte desse contrato.</p>
-<h3 id="product-architecture-business-comunidade-e-impacto">Comunidade e impacto<a class="headerlink" href="#product-architecture-business-comunidade-e-impacto" title="Permanent link">&para;</a></h3>
-<p>Uma empresa pode apoiar uma ONG, uma universidade, uma igreja ou um movimento em uma ação local, conectando colaboradores, clientes e parceiros a uma experiência de impacto social. O <strong>VALOR DE IMPACTO LIBERADO</strong> descreve o recurso disponibilizado à ação e não deve ser interpretado como impacto já realizado ou comprovado.</p>
-<h3 id="product-architecture-business-inteligencia-empresarial_1">Inteligência empresarial<a class="headerlink" href="#product-architecture-business-inteligencia-empresarial_1" title="Permanent link">&para;</a></h3>
-<p>Uma empresa pode acompanhar indicadores gerados dentro da Guivos — como adesão, participação, utilização de pontos, distribuição de usos e evolução temporal desses eventos — e combinar os dados exportados com seus KPIs internos em seu próprio ambiente analítico.</p>
-<p>A Guivos Intelligence não precisa ingerir a base interna da empresa e não deve usar comparação interna antes/depois como atalho para declarar causalidade ou evolução humana.</p>
-<h2 id="product-architecture-business-estado-de-maturidade">Estado de maturidade<a class="headerlink" href="#product-architecture-business-estado-de-maturidade" title="Permanent link">&para;</a></h2>
-<p>A responsabilidade superior do Guivos Business e sua separação de Organização estão consolidadas.</p>
-<p>A arquitetura Business parte da <strong>Empresa</strong> no contrato comercial específico. A taxonomia Start · Growth · Scale · Enterprise está estabelecida conceitualmente. O Programa de Pontos está reconhecido arquiteturalmente como capacidade do Guivos Business, com equivalência econômica previamente validada preservada e utilização em possibilidades pagas elegíveis de Mall, Travel e Journey; pontos não pagam plano Journey e não alteram pertinência ou recomendação.</p>
-<p>A leitura empresarial do programa distingue o saldo econômico da empresa da distribuição de uso das pessoas. A distribuição por produto considera somente pontos efetivamente utilizados e fecha 100% entre Mall, Travel e Journey, excluindo não utilizados e expirados.</p>
-<p>Também estão consolidados os limites de autoridade entre Business, Journey, Intelligence e Ads: custeio empresarial não transfere autoridade sobre a Journey; Intelligence trabalha com dados/eventos gerados no ecossistema e pode fornecer saídas para combinação externa no BI da empresa; e <strong>Guivos Ads permanece produto totalmente distinto e comercialmente independente do Guivos Business</strong>.</p>
-<p>Preços, entitlements, limites, emissão, expiração, transferência, elegibilidades detalhadas, fidelização, captação, retenção, integrações e ofertas comerciais específicas ainda dependem de detalhamento, validação e implementação quando não houver autoridade própria já aprovada. A equivalência econômica de pontos já validada não é reaberta por esta lista de lacunas.</p>
-<p>A arquitetura narrativa da futura Home Pública do Guivos Business, sua mensagem principal, movimentos narrativos, conversão comercial e Source Lock <strong>não são definidos por este documento</strong> e permanecem como frente própria de Experience Architecture.</p></section><section class="print-page" id="product-architecture-ads" heading-number="4.4.5"><h1 id="product-architecture-ads-guivos-ads">Guivos Ads<a class="headerlink" href="#product-architecture-ads-guivos-ads" title="Permanent link">&para;</a></h1>
+<p>A empresa pode levar indicadores Guivos para seu próprio ambiente analítico e combiná-los com KPIs internos quando exportação/API estiver contratualmente disponível.</p>
+<div class="highlight"><pre><span></span><code>RESULTADO OBSERVADO NA GUIVOS
+≠
+RESULTADO OPERACIONAL INTERNO DA EMPRESA
+</code></pre></div>
+<p>Correlação ou tendência observada na Guivos não constitui prova automática de causalidade, impacto humano ou melhoria de KPI interno.</p>
+<h2 id="product-architecture-business-10-intelligence-relacionado-ao-journey-custeado">10. Intelligence relacionado ao Journey custeado<a class="headerlink" href="#product-architecture-business-10-intelligence-relacionado-ao-journey-custeado" title="Permanent link">&para;</a></h2>
+<p>Quando a empresa custeia Guivos Journey para uma população elegível, o Intelligence pode produzir leituras <strong>agregadas e protegidas</strong>, quando autorizadas, como:</p>
+<ul>
+<li>interesses de evolução agregados;</li>
+<li>tendências temporais;</li>
+<li>temas emergentes;</li>
+<li>movimentos de interesse;</li>
+<li>aderência entre interesses agregados e benefícios/iniciativas cadastrados pela empresa;</li>
+<li>lacunas de cobertura;</li>
+<li>sinais de subutilização conhecidos pela Guivos.</li>
+</ul>
+<p>Regras semânticas obrigatórias:</p>
+<div class="highlight"><pre><span></span><code>interesse ≠ condição
+intenção ≠ diagnóstico
+tema ≠ problema
+escolha ≠ causa
+</code></pre></div>
+<p>Não existe score individual de evolução para a empresa. A empresa não recebe Journey individual, tema pessoal específico, intenção da pessoa ou explicação individual de pertinência.</p>
+<p>Uma leitura possível é conectar, de forma agregada:</p>
+<div class="highlight"><pre><span></span><code>O QUE AS PESSOAS BUSCAM
+↕
+O QUE A EMPRESA JÁ OFERECE
+</code></pre></div>
+<p>A empresa pode informar benefícios e iniciativas existentes para essa comparação sem transformar a Guivos em ERP de benefícios.</p>
+<h2 id="product-architecture-business-11-planos-do-guivos-business">11. Planos do Guivos Business<a class="headerlink" href="#product-architecture-business-11-planos-do-guivos-business" title="Permanent link">&para;</a></h2>
+<p>A taxonomia vigente é:</p>
+<div class="highlight"><pre><span></span><code>Start
+Growth
+Scale
+Enterprise
+</code></pre></div>
+<p>O plano <strong>não define qual das duas ofertas a empresa pode contratar</strong>. Uma empresa pode utilizar:</p>
+<ul>
+<li>apenas Programas de Incentivo;</li>
+<li>apenas acessos Guivos Journey custeados;</li>
+<li>ambas as ofertas.</li>
+</ul>
+<p>A função do plano é governar nível de capacidade, escala, Intelligence, integração, governança e serviço.</p>
+<p>Direção funcional de referência:</p>
+<div class="highlight"><pre><span></span><code>START
+→ operar
+
+GROWTH
+→ acompanhar e compreender
+
+SCALE
+→ interpretar e integrar
+
+ENTERPRISE
+→ governar em alta complexidade e escala
+</code></pre></div>
+<p>Os planos não representam mérito, impacto, prestígio ou nível de evolução da empresa. Não existe progressão moral ou obrigatória entre eles.</p>
+<p>Preços, limites quantitativos, SLAs e entitlements finais ainda não estão definidos por esta autoridade.</p>
+<h2 id="product-architecture-business-12-oferta-plano-escala-orcamento-e-servico">12. Oferta, plano, escala, orçamento e serviço<a class="headerlink" href="#product-architecture-business-12-oferta-plano-escala-orcamento-e-servico" title="Permanent link">&para;</a></h2>
+<p>A arquitetura comercial separa dimensões que não devem ser confundidas:</p>
+<div class="highlight"><pre><span></span><code>OFERTA
+= o que a empresa utiliza
+
+PLANO BUSINESS
+= até onde vão capacidade, Intelligence,
+  governança, integração e serviço
+
+ESCALA / PARTICIPANTES / ACESSOS
+= dimensão de volume aplicável
+
+ORÇAMENTO PRÉ-PAGO DE INCENTIVO
+= recursos destinados às concessões do programa
+
+SERVIÇOS ADICIONAIS
+= participação operacional da Guivos quando contratada
+</code></pre></div>
+<p>A composição econômica de referência é:</p>
+<div class="highlight"><pre><span></span><code>PLANO BUSINESS
++
+ESCALA / PARTICIPANTES / ACESSOS
++
+OFERTAS CONTRATADAS
++
+ORÇAMENTO PRÉ-PAGO DE INCENTIVO
++
+SERVIÇOS ADICIONAIS, QUANDO APLICÁVEIS
+</code></pre></div>
+<p>O orçamento de incentivo <strong>não é a assinatura do plano Business</strong>. O acesso ao Journey custeado pela empresa possui relação econômica própria e não deve ser presumido como incluído automaticamente em qualquer plano.</p>
+<h2 id="product-architecture-business-13-nivel-de-servico">13. Nível de serviço<a class="headerlink" href="#product-architecture-business-13-nivel-de-servico" title="Permanent link">&para;</a></h2>
+<p>A direção conceitual aceita separa capacidade tecnológica/comercial de participação operacional da Guivos:</p>
+<div class="highlight"><pre><span></span><code>PLANO
+= capacidade tecnológica/comercial
+
+SERVIÇO
+= quanto a Guivos participa da implantação e operação
+</code></pre></div>
+<p>Foram trabalhados como direção:</p>
+<ul>
+<li>Self-service;</li>
+<li>Assisted;</li>
+<li>Managed.</li>
+</ul>
+<p>Os nomes, escopos e entitlements desses níveis ainda não constituem oferta comercial final congelada.</p>
+<h2 id="product-architecture-business-14-relacao-com-outros-produtos-do-ecossistema">14. Relação com outros produtos do ecossistema<a class="headerlink" href="#product-architecture-business-14-relacao-com-outros-produtos-do-ecossistema" title="Permanent link">&para;</a></h2>
+<p>Business utiliza ou se conecta a capacidades de outros produtos <strong>sem absorver suas autoridades</strong>.</p>
+<h3 id="product-architecture-business-141-guivos-journey">14.1 Guivos Journey<a class="headerlink" href="#product-architecture-business-141-guivos-journey" title="Permanent link">&para;</a></h3>
+<p>Journey governa trajetória, contexto, pertinência, escolhas, próximos passos e evolução. Business pode financiar acesso e estruturar relações B2B compatíveis, mas não controla a Journey pessoal.</p>
+<h3 id="product-architecture-business-142-guivos-mall-e-guivos-travel">14.2 Guivos Mall e Guivos Travel<a class="headerlink" href="#product-architecture-business-142-guivos-mall-e-guivos-travel" title="Permanent link">&para;</a></h3>
+<p>Mall e Travel podem oferecer possibilidades pagas elegíveis nas quais Pontos Guivos atuem como forma de pagamento ou acesso, preservando suas próprias autoridades, ofertas, receitas e relações comerciais.</p>
+<h3 id="product-architecture-business-143-guivos-intelligence">14.3 Guivos Intelligence<a class="headerlink" href="#product-architecture-business-143-guivos-intelligence" title="Permanent link">&para;</a></h3>
+<p>Intelligence interpreta e organiza informação autorizada. Business materializa utilidade empresarial dentro de seu domínio sem reconstruir ou absorver Intelligence.</p>
+<h3 id="product-architecture-business-144-guivos-ads">14.4 Guivos Ads<a class="headerlink" href="#product-architecture-business-144-guivos-ads" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>GUIVOS BUSINESS
+≠
+GUIVOS ADS
+</code></pre></div>
+<p>Ads é produto totalmente distinto, com finalidade publicitária/comercial própria.</p>
+<p>Contratar Business:</p>
+<ul>
+<li>não compra exposição;</li>
+<li>não compra inventário publicitário;</li>
+<li>não altera relevância orgânica;</li>
+<li>não concede capacidades Ads.</li>
+</ul>
+<p>Contratar Ads:</p>
+<ul>
+<li>não concede capacidades Business;</li>
+<li>não altera planos Business;</li>
+<li>não transfere autoridade sobre incentivos, Journey ou Intelligence Business.</li>
+</ul>
+<p>Uma mesma empresa pode contratar os dois produtos em <strong>relações comerciais independentes</strong>.</p>
+<h2 id="product-architecture-business-15-economia-e-sustentabilidade">15. Economia e sustentabilidade<a class="headerlink" href="#product-architecture-business-15-economia-e-sustentabilidade" title="Permanent link">&para;</a></h2>
+<p>Receitas diretas do Business podem incluir, conforme futura modelagem específica:</p>
+<ul>
+<li>assinatura do plano;</li>
+<li>escala ou participantes;</li>
+<li>acessos Journey custeados;</li>
+<li>Intelligence avançado;</li>
+<li>exportações, API e integrações;</li>
+<li>serviços Assisted/Managed;</li>
+<li>taxas operacionais transparentes quando aplicáveis.</li>
+</ul>
+<p>Esses itens são direções de modelagem e <strong>não constituem pricing ou entitlement final</strong>.</p>
+<p>A circulação criada pelo Business também pode gerar atividade econômica em Mall, Travel e possibilidades pagas apresentadas pelo Journey. Uma empresa Business também pode contratar Ads separadamente.</p>
+<p>Esse efeito é <strong>upside do ecossistema</strong>. A sustentabilidade do Guivos Business não deve depender de receitas externas ao próprio produto para ocultar uma operação estruturalmente deficitária.</p>
+<h2 id="product-architecture-business-16-o-que-o-guivos-business-nao-e">16. O que o Guivos Business não é<a class="headerlink" href="#product-architecture-business-16-o-que-o-guivos-business-nao-e" title="Permanent link">&para;</a></h2>
+<p>Guivos Business não deve ser interpretado como:</p>
+<ul>
+<li>CRM genérico;</li>
+<li>ERP;</li>
+<li>LMS/LXP;</li>
+<li>universidade corporativa;</li>
+<li>dashboard como produto;</li>
+<li>consultoria corporativa genérica;</li>
+<li>“Guivos para empresas” como substituição da participação de Organização;</li>
+<li>Guivos Intelligence com outro nome;</li>
+<li>Guivos Ads ou pacote de publicidade;</li>
+<li>plataforma de score humano;</li>
+<li>sistema de vigilância da Journey pessoal;</li>
+<li>versão premium da Organização.</li>
+</ul>
+<h2 id="product-architecture-business-17-itens-ainda-nao-congelados">17. Itens ainda não congelados<a class="headerlink" href="#product-architecture-business-17-itens-ainda-nao-congelados" title="Permanent link">&para;</a></h2>
+<p>Permanecem dependentes de autoridade específica antes de implementação ou publicação comercial definitiva:</p>
+<ul>
+<li>preços de Start, Growth, Scale e Enterprise;</li>
+<li>limites quantitativos e entitlements finais;</li>
+<li>preço/faixa por escala, participante ou acesso;</li>
+<li>preço dos acessos Journey custeados pela empresa;</li>
+<li>definição final de Self-service / Assisted / Managed;</li>
+<li>prazo final de validade dos Pontos Guivos;</li>
+<li>destino econômico e percentuais de pontos expirados;</li>
+<li>política completa de estorno, reversão e fraude;</li>
+<li>regra detalhada de consumo de múltiplos lotes;</li>
+<li>outras origens autorizadas de Pontos Guivos;</li>
+<li>internacionalização e multi-moeda;</li>
+<li>detalhes operacionais do pagamento misto;</li>
+<li>comissão, taxa ou margem específica por transação;</li>
+<li>regras fiscais, contábeis, jurídicas e de liquidação;</li>
+<li>arquitetura técnica de API/exportação;</li>
+<li>thresholds mínimos de agregação/coorte do Intelligence;</li>
+<li>composição exata do resumo recorrente de Intelligence por plano;</li>
+<li>arquitetura convergida da Home Pública do Guivos Business.</li>
+</ul>
+<p>A equivalência econômica já validada entre pontos e reais <strong>não está nesta lista e não deve ser reaberta nesta frente</strong>.</p>
+<h2 id="product-architecture-business-18-autoridade-complementar-e-continuidade">18. Autoridade complementar e continuidade<a class="headerlink" href="#product-architecture-business-18-autoridade-complementar-e-continuidade" title="Permanent link">&para;</a></h2>
+<p>Para detalhes funcionais das duas ofertas, Pontos, Intelligence, planos e fronteiras econômicas, consultar:</p>
+<ul>
+<li><code>GPA-004-FUNCTIONAL-PORTFOLIO-001 — Guivos Business — Portfólio Funcional v1</code>.</li>
+</ul>
+<p>Para recuperar decisões validadas, caminhos descartados, temas ainda abertos e o ponto exato de continuidade entre conversas, consultar:</p>
+<ul>
+<li><code>GKR-BUSINESS-CONTINUITY-001 — Guivos Business — Checkpoint de Continuidade e Decisões Validadas</code>.</li>
+</ul>
+<p>A Home Pública do Guivos Business permanece uma frente própria de Experience Architecture. A atualização desta autoridade <strong>não cria Documento Mestre, Source Lock, wireframe, UI ou protótipo</strong>, não altera snapshots de Design existentes e não inicia UXA-102 ou Product Engineering.</p></section><section class="print-page" id="product-architecture-ads" heading-number="4.4.5"><h1 id="product-architecture-ads-guivos-ads">Guivos Ads<a class="headerlink" href="#product-architecture-ads-guivos-ads" title="Permanent link">&para;</a></h1>
 <h2 id="product-architecture-ads-papel">Papel<a class="headerlink" href="#product-architecture-ads-papel" title="Permanent link">&para;</a></h2>
 <p>Guivos Ads é o produto responsável pela publicidade, mídia patrocinada, patrocínios, impulsionamentos, ativações de marca e soluções comerciais para anunciantes dentro do Ecossistema Guivos.</p>
 <p>Sua finalidade econômica predominante é <strong>gerar receita publicitária e comercial para a Guivos</strong>, preservando a finalidade, a autoridade e a experiência das superfícies nas quais a publicidade se manifesta.</p>
