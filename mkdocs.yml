@@ -135,6 +135,8 @@ nav:
           - Documento Mestre: experience-architecture/public-home-media-master-document.md
       - Home Pública — Guivos Ads:
           - Documento Mestre: experience-architecture/public-home-ads-master-document.md
+      - Home Pública — Guivos Business:
+          - Documento Mestre: experience-architecture/public-home-business-master-document.md
       - Entrada Protegida da Jornada:
           - Validação do Início Protegido: experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md
           - Wireframe Móvel do Início Protegido: experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe.md
@@ -314,7 +316,7 @@ nav:
           - Adendo — Validação do Cartão Patrocinado: project/canonical-consolidation-matrix-uxa-043-addendum.md
           - Adendo — Estados Patrocinados de Lista e Mapa: project/canonical-consolidation-matrix-uxa-044-addendum.md
           - Adendo — Validação dos Estados Patrocinados: project/canonical-consolidation-matrix-uxa-045-addendum.md
-          - Adendo — Gestão da Campanha Ativa: project/canonical-consolidation-matrix-uxa-046-addendum.md
+          - Adendo — Gestão da Campanha Ativa: project/canonical-consolidation-matrix-uxa-046.md
           - Histórico — Opportunity Boost: project/changelog-1.62.0-opportunity-boost.md
           - Histórico — Validação Funcional do Opportunity Boost: project/changelog-1.63.0-uxa-039.md
           - Histórico — Fluxo do Anunciante: project/changelog-1.64.0-uxa-040.md
