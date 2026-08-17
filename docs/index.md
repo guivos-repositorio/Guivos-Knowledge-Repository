@@ -71,7 +71,7 @@ O Guivos Business possui autoridade superior de produto ressincronizada e Home P
 - [Conversão Global v2](experience-architecture/public-home-business-conversion-authority-v2.md);
 - [Contratos de Autoridade](experience-architecture/public-home-business-authority-contracts.md);
 - [Source Lock Operacional + Prompt](experience-architecture/public-home-business-generative-design-source-lock.md);
-- [Checkpoint de Continuidade v5](project/business-home-continuity-checkpoint-2026-08-17-v5.md).
+- [Checkpoint de Continuidade v5](project/business-home-continuity-checkpoint-2026-08-16-v5.md).
 
 O Portfólio Funcional preserva as duas ofertas principais — **Programas de Incentivo** e **Guivos Journey custeado pela EMPRESA**. A Home pública preserva evolução humana antes do produto, Journey antes de Incentivos, Pontos fora da narrativa pública, Intelligence limitado ao ecossistema Guivos, contratação online e os modelos `Self-service / Com apoio do suporte / Gerenciado`.
 
@@ -140,7 +140,7 @@ Domínios de Evolução do Guivos Journey:
 - [Guivos Business](product-architecture/business.md)
 - [Portfólio Funcional do Guivos Business](product-architecture/business-functional-portfolio.md)
 - [Source Lock da Home Guivos Business](experience-architecture/public-home-business-source-lock.md)
-- [Checkpoint de Continuidade v5 da Home Guivos Business](project/business-home-continuity-checkpoint-2026-08-17-v5.md)
+- [Checkpoint de Continuidade v5 da Home Guivos Business](project/business-home-continuity-checkpoint-2026-08-16-v5.md)
 - [Guivos Journey](product-architecture/journey.md)
 - [Domínios de Evolução do Journey](product-architecture/pas-001-evolution-domains-model.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
