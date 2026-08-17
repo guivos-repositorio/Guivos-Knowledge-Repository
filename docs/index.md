@@ -8,12 +8,13 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **2.37.0** |
+| Registro | `GKR-STATE-001` **2.38.0** |
 | Era | GE-2 — Knowledge |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária e retorno** |
-| Experience Architecture mais recente | **D5-C4B — TRN-008..013 integralmente validadas no limite documental** |
+| Experience Architecture funcional mais recente | **D5-C4B — TRN-008..013 integralmente validadas no limite documental** |
+| Experience Architecture pública | **7 Homes convergidas; handoff de Design v1.2.0; emissão externa v3 materializada** |
 | Domínios de Evolução do Journey | **9 canônicos + estado “Ainda estou descobrindo”** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Galeria | **121 SVGs — 121 validados / 0 pendentes** |
@@ -31,6 +32,12 @@ O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetu
 
 ## Consolidação e reconciliações recentes
 
+- [Snapshot externo de Design v3 — sete Homes](experience-architecture/public-homes-design-delivery-v3-snapshot-record.md)
+- [Manifesto Canônico de Entrega para Design v3](experience-architecture/public-homes-design-delivery-manifest.md)
+- [Handoff Canônico das Homes Públicas v1.2.0](experience-architecture/public-homes-design-handoff.md)
+- [Source Lock da Home Guivos Business](experience-architecture/public-home-business-source-lock.md)
+- [Documento Mestre da Home Guivos Business](experience-architecture/public-home-business-master-document.md)
+- [Source Lock Operacional + Prompt da Home Guivos Business](experience-architecture/public-home-business-generative-design-source-lock.md)
 - [D5-C4B — Validação Integrada dos Handoffs](experience-architecture/d5-c4b-direction-movement-evolution-integrated-handoff-validation.md)
 - [D5-C4A — Materialização e Contrato Integrado dos Handoffs](experience-architecture/d5-c4a-direction-movement-evolution-handoff-contract.md)
 - [D5-C3 — Validação Funcional de Direção, Movimento e Evolução](experience-architecture/d5-c3-direction-movement-evolution-functional-validation.md)
@@ -44,19 +51,29 @@ O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetu
 - [Consolidação Global e Public Canon — P9](project/p9-global-consolidation-and-public-canon-2026-08-08.md)
 - [UXA-100-A4 — Origens Administrativas e Handoffs de Entrada em Planos](experience-architecture/uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md)
 - [Matriz de Consolidação Canônica 3.0.0](project/canonical-consolidation-matrix.md)
-- [Roadmap 12.79.0](roadmap.md)
+- [Roadmap 12.80.0](roadmap.md)
 
 O programa P0–P9 está consolidado quanto à ressincronização documental. D4 e D5 são frentes não numeradas e não criam novo marco funcional. Lacunas empíricas, tecnológicas, jurídicas e operacionais permanecem abertas em suas autoridades próprias.
 
 ## Guivos Business — retomada sem depender do chat
 
-A PR #271 consolidou a autoridade superior do Business na `main`. Para recuperar o ponto atual de forma assertiva, a leitura mínima passa a ser:
+O Guivos Business possui autoridade superior de produto ressincronizada e Home Pública documentalmente convergida. Para recuperar o ponto atual de forma assertiva:
+
+### Produto
 
 - [GPA-004 — Guivos Business](product-architecture/business.md);
-- [GPA-004-FUNCTIONAL-PORTFOLIO-001 — Portfólio Funcional v1](product-architecture/business-functional-portfolio.md);
-- [GKR-BUSINESS-CONTINUITY-001 — Checkpoint de Continuidade e Decisões Validadas](project/business-continuity-checkpoint-2026-08-15.md).
+- [GPA-004-FUNCTIONAL-PORTFOLIO-001 — Portfólio Funcional v1](product-architecture/business-functional-portfolio.md).
 
-O Portfólio Funcional consolida as duas ofertas principais — **Programas de Incentivo** e **Guivos Journey custeado pela EMPRESA** — e o checkpoint registra decisões validadas, caminhos rejeitados, itens ainda não congelados e o próximo ponto exato de continuidade.
+### Home Pública
+
+- [Source Lock semântico](experience-architecture/public-home-business-source-lock.md);
+- [Documento Mestre](experience-architecture/public-home-business-master-document.md);
+- [Conversão Global v2](experience-architecture/public-home-business-conversion-authority-v2.md);
+- [Contratos de Autoridade](experience-architecture/public-home-business-authority-contracts.md);
+- [Source Lock Operacional + Prompt](experience-architecture/public-home-business-generative-design-source-lock.md);
+- [Checkpoint de Continuidade v5](project/business-home-continuity-checkpoint-2026-08-16-v5.md).
+
+O Portfólio Funcional preserva as duas ofertas principais — **Programas de Incentivo** e **Guivos Journey custeado pela EMPRESA**. A Home pública preserva evolução humana antes do produto, Journey antes de Incentivos, Pontos fora da narrativa pública, Intelligence limitado ao ecossistema Guivos, contratação online e os modelos `Self-service / Com apoio do suporte / Gerenciado`.
 
 Separações que não devem ser confundidas na retomada:
 
@@ -65,9 +82,12 @@ Organização ≠ Guivos Business
 Guivos Business ≠ Guivos Ads
 Guivos Intelligence ≠ módulo do Guivos Business
 custeio empresarial da Journey ≠ propriedade ou controle da Journey
+contratação online ≠ modelo de implementação/operação
+Self-service / Com apoio do suporte / Gerenciado ≠ Start / Growth / Scale / Enterprise
+Pontos como capacidade funcional ≠ narrativa pública da Home ≠ evolução
 ```
 
-A Home Pública do Guivos Business permanece não iniciada.
+A Home Pública do Guivos Business está **convergida, Source Locked, incluída no handoff canônico de Design v1.2.0 e materializada no snapshot externo v3**. Design está autorizado proceduralmente; o primeiro output visual permanece pendente e, quando produzido, será `EXPLORAÇÃO` até validação humana.
 
 ## Participantes, produtos, planos e domínios
 
@@ -119,7 +139,8 @@ Domínios de Evolução do Guivos Journey:
 - [Arquitetura de Produtos](product-architecture/index.md)
 - [Guivos Business](product-architecture/business.md)
 - [Portfólio Funcional do Guivos Business](product-architecture/business-functional-portfolio.md)
-- [Checkpoint de Continuidade do Guivos Business](project/business-continuity-checkpoint-2026-08-15.md)
+- [Source Lock da Home Guivos Business](experience-architecture/public-home-business-source-lock.md)
+- [Checkpoint de Continuidade v5 da Home Guivos Business](project/business-home-continuity-checkpoint-2026-08-16-v5.md)
 - [Guivos Journey](product-architecture/journey.md)
 - [Domínios de Evolução do Journey](product-architecture/pas-001-evolution-domains-model.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
@@ -145,6 +166,7 @@ pontos/créditos ≠ evolução
 navegar para Planos ≠ contratar ou iniciar cobrança
 PER-010..012 validados localmente ≠ produto implementado
 TRN-008..013 integralmente validadas documentalmente ≠ continuidade implementada
+Design autorizado ≠ output canônico ≠ implementação ≠ publicação
 Domínio de Evolução ≠ identidade ≠ score ≠ diagnóstico ≠ prova de evolução
 Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança
 classificação candidata por IA ≠ domínio confirmado
@@ -152,6 +174,6 @@ classificação candidata por IA ≠ domínio confirmado
 
 ## Limites preservados
 
-A reconciliação atual não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, classificação operacional por IA dos Domínios de Evolução, ontologia física do grafo, implementação técnica de `TRN-008..013`, cobrança real, processo posterior a `BND-002`, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado ou operação de controles legais/privacidade não comprovados.
+A reconciliação atual não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, classificação operacional por IA dos Domínios de Evolução, ontologia física do grafo, implementação técnica de `TRN-008..013`, cobrança real, processo posterior a `BND-002`, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado, operação de controles legais/privacidade não comprovados ou promoção automática de output de Design.
 
 Em caso de divergência, prevalecem `GKR-STATE-001` e a autoridade temática específica mais recente.

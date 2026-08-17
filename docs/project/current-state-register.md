@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.37.0
+version: 2.38.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-15
+last_updated: 2026-08-17
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -16,6 +16,13 @@ related:
   - GPA-004
   - GPA-004-FUNCTIONAL-PORTFOLIO-001
   - GKR-BUSINESS-CONTINUITY-001
+  - GKR-UX-HOME-BUSINESS-NARRATIVE-001
+  - GKR-UX-HOME-BUSINESS-AUTHORITY-001
+  - GKR-UX-HOME-BUSINESS-CONVERSION-002
+  - GKR-UX-HOME-BUSINESS-MASTER-001
+  - GKR-UX-HOME-BUSINESS-SOURCELOCK-001
+  - GKR-UX-HOME-BUSINESS-GENINPUT-001
+  - GKR-BUSINESS-HOME-CONTINUITY-005
   - GPA-007
   - UXA-097
   - UXA-098
@@ -63,7 +70,8 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
   - GKR-UX-HOME-ADS-GENINPUT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V2-SNAPSHOT-001
-  - ROADMAP-12.79.0
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V3-SNAPSHOT-001
+  - ROADMAP-12.80.0
   - M7.88
 normative: true
 ---
@@ -76,15 +84,15 @@ Este registro declara o estado global vigente do Guivos Knowledge Repository ap�
 
 A D5-C4B **não cria novo marco funcional, não inicia UXA-102, não retoma Engenharia de Produto e não altera inventário visual ou granular**. Ela promove individualmente `TRN-008..013` para `integralmente validada` no limite documental, após examinar origem, destino, autoridade, contexto mínimo, efeitos, retorno, interrupção, concorrência, idempotência e sensibilidade aplicável.
 
-A frente pública evoluiu posteriormente com a convergência dos Documentos Mestres das Homes de Pessoa, Organizações e Coletivos, Guivos Mall, Guivos Travel, Guivos Media e Guivos Ads; com a reconciliação do abastecimento editorial do Guivos Media; com Source Locks específicos; e com `GKR-UX-HOMES-DESIGN-HANDOFF-001`, que autoriza proceduralmente exploração de Design das seis Homes sem autorizar Engenharia ou publicação.
+A frente pública evoluiu posteriormente com a convergência dos Documentos Mestres e Source Locks das sete Homes de Pessoa, Organizações e Coletivos, Guivos Mall, Guivos Travel, Guivos Media, Guivos Ads e Guivos Business; com a reconciliação do abastecimento editorial do Guivos Media; e com `GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.2.0, que autoriza proceduralmente exploração de Design das sete Homes sem autorizar Engenharia ou publicação.
 
 `GKR-HOME-DECISION-NO-WIREFRAME-001` permanece preservado como registro histórico da decisão pós-P5 de 2026-08-12, mas sua proibição procedimental de wireframe foi posteriormente **superada para a fase de Design** por `GKR-UX-HOMES-DESIGN-HANDOFF-001`. O handoff posterior prevalece nesse limite específico; as decisões semânticas, narrativas, funcionais e de produto das autoridades próprias de cada Home permanecem intactas.
 
-`GKR-UX-HOMES-DESIGN-DELIVERY-001` v2.0.0 governa a composição e a separação do pacote externo de Design. A branch `delivery/design-handoff-v2` materializa o snapshot operacional vigente de distribuição; `delivery/design-handoff-v1` permanece preservada como emissão histórica. Nenhuma das duas constitui fonte canônica paralela à `main`.
+`GKR-UX-HOMES-DESIGN-DELIVERY-001` v3.0.0 governa a composição e a separação do pacote externo vigente de Design. A branch `delivery/design-handoff-v3` materializa o snapshot operacional vigente de distribuição com sete Homes; `delivery/design-handoff-v2` e `delivery/design-handoff-v1` permanecem preservadas como emissões históricas. Nenhuma delas constitui fonte canônica paralela à `main`.
 
 A autoridade de produto do Guivos Business está ressincronizada em `GPA-004` v1.6.0. A versão explicita o **formato vigente em duas ofertas principais — Programas de Incentivo e Guivos Journey custeado pela EMPRESA —**, preserva `Organização ≠ Guivos Business`, estabelece **Empresa** como ponto de partida do contrato Business, diferencia oferta, plano, escala, orçamento e serviço, formaliza as fronteiras de Pontos e Intelligence e mantém **Guivos Ads como produto totalmente distinto e comercialmente independente do Guivos Business**. A ressincronização corrige a leitura anterior de “jornadas corporativas”: a empresa pode custear o Guivos Journey existente, mas não criar, possuir ou controlar a Journey da pessoa.
 
-A Home Pública do Guivos Business foi **iniciada conceitualmente em conversa**, sem Documento Mestre ou Source Lock. O Checkpoint 2 — tese, protagonista, problema, promessa e pergunta-mãe — foi validado como base. A arquitetura narrativa do Checkpoint 3 permanece **não convergida**: o movimento relacionado ao Journey precisa ser mais explicativo e impactante, e o movimento que explicava que a Guivos não precisa substituir sistemas empresariais deve ser removido ou reformulado. Essa continuidade está registrada em `GKR-BUSINESS-CONTINUITY-001` v1.1.0 e não autoriza Design.
+A Home Pública do Guivos Business está **documentalmente convergida e apta à fase externa de Design**. A arquitetura narrativa, os contratos de autoridade, a conversão global v2, o Documento Mestre, o Source Lock semântico e o Source Lock Operacional + Prompt estão integrados. Business foi incluído no handoff canônico v1.2.0 e na emissão externa v3, sem que qualquer output visual tenha sido produzido ou promovido automaticamente no GKR.
 
 Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
@@ -97,9 +105,9 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Última frente funcional numerada | **UXA-101** |
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária de Planos** |
 | Journey — frente não numerada funcional mais recente | **D5-C4B — `TRN-008..013` integralmente validadas no limite documental** |
-| Experience Architecture pública mais recente | **handoff e entrega controlada das seis Homes convergidas para Design; Home Business iniciada conceitualmente, ainda não convergida** |
+| Experience Architecture pública mais recente | **sete Homes convergidas e incluídas no handoff controlado de Design; emissão externa v3 materializada** |
 | Guivos Business — autoridade de produto | **GPA-004 v1.6.0 ressincronizado; duas ofertas principais: Programas de Incentivo + Guivos Journey custeado pela Empresa; Business distinto de Organização e independente de Ads** |
-| Home Pública — Guivos Business | **iniciada conceitualmente; Checkpoint 2 validado como base; arquitetura narrativa do Checkpoint 3 não convergida; sem Documento Mestre/Source Lock** |
+| Home Pública — Guivos Business | **arquitetura narrativa, autoridade, conversão v2, Documento Mestre e Source Locks convergidos; Design autorizado proceduralmente; snapshot v3 emitido; output visual ainda não produzido no GKR** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Domínios de Evolução do Journey | **9 domínios canônicos + estado transversal “Ainda estou descobrindo”** |
@@ -113,9 +121,10 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Home Pública — Guivos Travel | **Documento Mestre convergido; reconciliação pós-Media e Source Lock vigentes; Design autorizado proceduralmente** |
 | Home Pública — Guivos Media | **Documento Mestre convergido; GPA-005 e Source Lock vigentes; Design autorizado proceduralmente** |
 | Home Pública — Guivos Ads | **Documento Mestre convergido; GPA-007 v1.3.0 e Source Lock vigentes; Design autorizado proceduralmente** |
-| Handoff das seis Homes | **GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.1.0 ativo** |
-| Entrega para Design | **GKR-UX-HOMES-DESIGN-DELIVERY-001 v2.0.0; 19 fontes canônicas + 6 guias operacionais no snapshot externo** |
-| Snapshot externo v2 | **`delivery/design-handoff-v2` @ `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`; 25 arquivos** |
+| Handoff das sete Homes | **GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.2.0 ativo** |
+| Entrega para Design | **GKR-UX-HOMES-DESIGN-DELIVERY-001 v3.0.0; 25 fontes canônicas + 7 guias operacionais no snapshot externo** |
+| Snapshot externo v3 | **`delivery/design-handoff-v3` @ `7b2b20c035551e3b1206af987aaddda710757166`; tree `2744a86ca761146a7fcb90ee5ee2e09ef6baefa7`; 32 arquivos** |
+| Snapshot externo v2 | **preservado em `delivery/design-handoff-v2` @ `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`** |
 | Snapshot externo v1 | **preservado em `delivery/design-handoff-v1` @ `8e2a356ca84ba980e588258757800cde2a946f40`** |
 | P1/P1.1 | integrado — semântica e nomenclaturas reconciliadas |
 | P2 | integrado como arquitetura de referência — Neo4j `reference_selected` |
@@ -393,14 +402,15 @@ Nenhum texto público pode promover estado superior ao evidenciado nas autoridad
 
 ### 12.1 Homes públicas, Media, Ads e handoff para Design
 
-Seis Homes públicas estão convergidas documentalmente para a fase de Design:
+Sete Homes públicas estão convergidas documentalmente para a fase de Design:
 
 1. Pessoa;
 2. Organizações e Coletivos;
 3. Guivos Mall;
 4. Guivos Travel;
 5. Guivos Media;
-6. Guivos Ads.
+6. Guivos Ads;
+7. Guivos Business.
 
 Cada Home mantém autoridade própria de narrativa e finalidade. O Guivos Media possui autoridade editorial e pode abastecer outras superfícies com conteúdo sem adquirir autoridade sobre a finalidade, narrativa ou operação dessas superfícies.
 
@@ -419,15 +429,15 @@ CONTINUIDADE CONTEXTUAL
 
 Guivos Ads possui autoridade comercial publicitária e postura funcional transversal. Os produtos anfitriões preservam autoridade sobre sua finalidade e experiência; Ads governa a relação publicitária, o inventário permitido, a identificação e a mensuração dentro dos contratos vigentes. Opportunity Boost permanece mecanismo do Ads, não definição integral do produto. A qualificação comercial inteligente pode utilizar respostas declaradas e contexto comercial autorizado sem transformar contexto pessoal protegido dos participantes em matéria-prima publicitária.
 
-`GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.1.0 autoriza somente a fase de Design das seis Homes: exploração generativa, arquitetura visual, wireframe low-fi, UX, direção visual, UI, protótipos e estudos responsivos. Essa autorização **não** equivale a implementação, publicação, Marketing/GTM ou promoção automática do output a estado canônico.
+`GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.2.0 autoriza a fase de Design das sete Homes: exploração generativa, arquitetura visual, wireframe low-fi, UX, direção visual, UI, protótipos e estudos responsivos. Essa autorização **não** equivale a implementação, publicação, Marketing/GTM ou promoção automática do output a estado canônico.
 
 Os Source Locks específicos limitam cada exploração ao contexto da respectiva Home. Ferramentas como Figma Make são instrumentos de exploração; não possuem autoridade para redefinir arquitetura, produto ou significado.
 
-`GKR-UX-HOMES-DESIGN-DELIVERY-001` v2.0.0 governa o pacote externo vigente. A emissão v2 utiliza 19 fontes canônicas extraídas da `main` canônica `603aa7f37435ac376f7a202669ad4ac1d7d13a83`, separadas por Home, mais seis guias operacionais `LEIA-PRIMEIRO`, totalizando 25 arquivos de entrega.
+`GKR-UX-HOMES-DESIGN-DELIVERY-001` v3.0.0 governa o pacote externo vigente. A emissão v3 utiliza 25 fontes canônicas congeladas, separadas por Home, mais sete guias operacionais `LEIA-PRIMEIRO`, totalizando 32 arquivos de entrega.
 
-A branch `delivery/design-handoff-v2`, commit `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`, materializa esse snapshot para distribuição. Ela é **artefato externo reproduzível**, não nova fonte de verdade e não deve ser mesclada na `main` como duplicação das fontes canônicas.
+A branch `delivery/design-handoff-v3`, commit `7b2b20c035551e3b1206af987aaddda710757166`, tree `2744a86ca761146a7fcb90ee5ee2e09ef6baefa7`, materializa esse snapshot para distribuição. Ela é **artefato externo reproduzível**, não nova fonte de verdade e não deve ser mesclada na `main` como duplicação das fontes canônicas.
 
-A emissão v1 permanece preservada em `delivery/design-handoff-v1`, commit `8e2a356ca84ba980e588258757800cde2a946f40`.
+A emissão v2 permanece preservada em `delivery/design-handoff-v2`, commit `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`; a emissão v1 permanece preservada em `delivery/design-handoff-v1`, commit `8e2a356ca84ba980e588258757800cde2a946f40`.
 
 ### 12.2 Reconciliação canônica do Guivos Business
 
@@ -467,7 +477,7 @@ A arquitetura Business diferencia **oferta, plano, escala, orçamento pré-pago 
 
 Guivos Intelligence apoia o Business utilizando dados/eventos gerados na própria Guivos. A empresa pode combinar externamente essas saídas com seus indicadores internos; a Guivos não precisa importar bases corporativas para produzir o Intelligence Business e não deve usar comparações internas antes/depois para inferir causalidade automaticamente.
 
-A Home Pública do Guivos Business está **iniciada conceitualmente, mas não convergida**. `GKR-BUSINESS-CONTINUITY-001` v1.1.0 preserva o Checkpoint 2 como base validada e registra que o Checkpoint 3 precisa de reformulação nos movimentos 6 e 9 antes de nova validação integral. Documento Mestre, Source Lock e Design ainda não existem para essa Home.
+A Home Pública do Guivos Business está documentalmente convergida. `GKR-UX-HOME-BUSINESS-NARRATIVE-001`, `GKR-UX-HOME-BUSINESS-AUTHORITY-001`, `GKR-UX-HOME-BUSINESS-CONVERSION-002`, `GKR-UX-HOME-BUSINESS-MASTER-001`, `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` e `GKR-UX-HOME-BUSINESS-GENINPUT-001` governam sua narrativa, fronteiras, conversão, Documento Mestre e inputs de Design. Pontos permanecem capacidade funcional do produto, porém foram deliberadamente retirados da narrativa pública da Home. A contratação pública vigente é online; `Self-service`, `Com apoio do suporte` e `Gerenciado` são modelos de implementação/operação. Business integra o handoff de Design v1.2.0 e o snapshot externo v3; nenhum output visual é promovido automaticamente a autoridade canônica.
 
 ## 13. Programa P0–P9
 
@@ -506,9 +516,9 @@ O programa amplo de ressincronização documental está **consolidado** quanto a
 
 D5-C1/C2/C3/C4A/C4B não são V5 e não alteram a numeração UXA.
 
-A evolução das Homes públicas e o handoff de Design são frentes de Experience Architecture separadas da fila UXA funcional acima e não alteram M7.88 nem iniciam UXA-102.
+A evolução das Homes públicas e o handoff de Design são frentes de Experience Architecture separadas da fila UXA funcional acima e não alteram M7.88 nem iniciam UXA-102. As sete Homes atualmente convergidas podem seguir para exploração de Design dentro de seus contextos isolados e Source Locks.
 
-A ressincronização do Guivos Business é uma atualização de autoridade de produto separada da fila UXA e dos snapshots de Design; ela também não altera M7.88 nem inicia UXA-102. A Home Business pode avançar conceitualmente em frente própria sem se tornar automaticamente Home convergida ou autorizada para Design.
+A ressincronização do Guivos Business continua sendo atualização de autoridade de produto separada da fila UXA. A Home Business também percorreu frente própria de Experience Architecture até Documento Mestre, Source Lock, autorização procedimental de Design e inclusão na emissão v3, sem alterar M7.88 ou iniciar UXA-102.
 
 ## 15. Preservações finais
 
@@ -529,13 +539,13 @@ A ressincronização do Guivos Business é uma atualização de autoridade de pr
 - materialização, validação, promoção, implementação e operação são estados distintos;
 - P1–P5 da Home de Organizações e Coletivos permanecem histórico válido;
 - `GKR-HOME-DECISION-NO-WIREFRAME-001` permanece histórico, mas está `superseded` quanto à proibição procedimental de wireframe na fase de Design;
-- `GKR-UX-HOMES-DESIGN-HANDOFF-001` governa a autorização procedimental vigente de Design das seis Homes;
+- `GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.2.0 governa a autorização procedimental vigente de Design das sete Homes;
 - Design autorizado ≠ output canônico ≠ implementação ≠ publicação;
 - cada Home mantém finalidade, narrativa e autoridade próprias;
 - Media pode abastecer editorialmente outra superfície sem adquirir autoridade sobre ela;
 - Ads pode comercializar oportunidades publicitárias legítimas sem adquirir autoridade funcional sobre a superfície anfitriã;
-- `delivery/design-handoff-v2` é o snapshot externo vigente e não é fonte canônica paralela;
-- `delivery/design-handoff-v1` permanece preservado como snapshot histórico;
+- `delivery/design-handoff-v3` é o snapshot externo vigente e não é fonte canônica paralela;
+- `delivery/design-handoff-v2` e `delivery/design-handoff-v1` permanecem preservados como snapshots históricos;
 - Home Guivos Ads está convergida documentalmente, mas operação publicitária, pricing, inventário, formulário inteligente e Intelligence operacional não são presumidos;
 - Guivos Business permanece distinto da participação de Organização;
 - a arquitetura comercial Business parte da Empresa sem criar novo tipo global de participante;
@@ -545,12 +555,14 @@ A ressincronização do Guivos Business é uma atualização de autoridade de pr
 - custeio empresarial da Journey ≠ propriedade, controle ou acesso ao contexto pessoal protegido da Journey;
 - Journey permanece voluntário; pontos Business não pagam plano nem compram pertinência;
 - Programa de Pontos ≠ identidade do Business ≠ medida de evolução;
+- Pontos permanecem fora da narrativa pública da Home Business;
 - a equivalência econômica de pontos já validada permanece preservada e não é reaberta por esta reconciliação;
 - distribuição de uso de pontos considera somente usos efetivos e fecha 100% entre Mall, Travel e Journey, excluindo não utilizados/expirados da distribuição percentual;
 - `VALOR DE IMPACTO LIBERADO` ≠ impacto realizado ≠ impacto comprovado;
 - Intelligence apoiando Business ≠ Intelligence como módulo Business ≠ acesso irrestrito a dados pessoais;
 - Intelligence Business usa dados/eventos gerados na Guivos; combinação com KPIs internos ocorre no ambiente analítico da empresa;
-- Home Business: Checkpoint 2 validado como base ≠ Checkpoint 3 convergido ≠ Documento Mestre ≠ Source Lock ≠ Design autorizado;
+- Home Business: narrativa + autoridade + conversão v2 + Documento Mestre + Source Lock + Prompt operacional convergidos; Design autorizado proceduralmente ≠ output visual aprovado;
+- contratação Business pública vigente = online; `Self-service / Com apoio do suporte / Gerenciado` = modelos de implementação/operação;
 - projeção não é realizado;
 - preço não é disposição a pagar;
 - capital não é receita;
@@ -562,9 +574,9 @@ A ressincronização do Guivos Business é uma atualização de autoridade de pr
 
 ## 16. Próximo ato governado
 
-A fase de Design das seis Homes convergidas continua proceduralmente autorizada e deve ser executada por contexto isolado, utilizando o handoff comum, o Documento Mestre, o contrato complementar e o Source Lock da respectiva Home. Outputs permanecem `EXPLORAÇÃO` até validação humana contra o GKR.
+A fase de Design das sete Homes convergidas está proceduralmente autorizada e deve ser executada por contexto isolado, utilizando o handoff comum, as autoridades específicas e o Source Lock da respectiva Home. Outputs permanecem `EXPLORAÇÃO` até validação humana contra o GKR.
 
-Para o Guivos Business, o próximo ato é continuar a **arquitetura narrativa da Home Pública**, preservando integralmente o Checkpoint 2 e reformulando os movimentos 6 e 9 do Checkpoint 3 antes de nova validação da sequência completa. Contratos de autoridade, conversão, Documento Mestre e Source Lock somente avançam depois dessa convergência narrativa.
+Para o Guivos Business, a etapa documental necessária para iniciar Design está concluída. O próximo ato é materializar a primeira exploração externa da Home Business a partir do contexto isolado da emissão v3 e submetê-la à validação humana contra `GKR-UX-HOME-BUSINESS-SOURCELOCK-001`, o Documento Mestre, a conversão vigente, os contratos de autoridade e `GPA-004`. Nenhum output é promovido automaticamente a estado canônico.
 
 D6, D7, materialização de `PER-009`, maturidade das transições internas de Planos, integrações patrocinadas, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria. Nenhuma é iniciada automaticamente.
 
