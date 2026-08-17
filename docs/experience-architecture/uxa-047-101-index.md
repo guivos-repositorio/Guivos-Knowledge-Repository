@@ -4,7 +4,7 @@ title: Índice das Frentes UXA-047 a UXA-101
 status: active
 version: 2.14.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-15
+last_updated: 2026-08-17
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -131,7 +131,7 @@ D5-C4B não é UXA-102/V5 e não altera a numeração deste índice.
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **2.37.0** |
+| Registro do Estado Atual | **2.38.0** |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
