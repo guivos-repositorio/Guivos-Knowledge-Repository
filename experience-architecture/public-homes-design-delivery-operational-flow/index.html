@@ -11241,10 +11241,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-fluxo-obrigatorio-apos-o-recebimento-do-pacote" class="md-nav__link">
+  <a href="#2-fluxo-obrigatorio-apos-recebimento-do-pacote" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Fluxo obrigatório após o recebimento do pacote
+        2. Fluxo obrigatório após recebimento do pacote
       
     </span>
   </a>
@@ -11274,10 +11274,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-estado-do-resultado-gerado" class="md-nav__link">
+  <a href="#5-regra-especifica-para-guivos-business" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Estado do resultado gerado
+        5. Regra específica para Guivos Business
       
     </span>
   </a>
@@ -11285,10 +11285,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-relacao-entre-v1-e-v2" class="md-nav__link">
+  <a href="#6-estado-do-resultado-gerado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Relação entre v1 e v2
+        6. Estado do resultado gerado
       
     </span>
   </a>
@@ -11296,10 +11296,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-regra-final" class="md-nav__link">
+  <a href="#7-relacao-entre-v1-v2-e-v3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. Regra final
+        7. Relação entre v1, v2 e v3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-regra-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Regra final
       
     </span>
   </a>
@@ -11346,19 +11357,18 @@
 
 <h1 id="homes-publicas-fluxo-operacional-de-uso-do-pacote-de-design">Homes Públicas — Fluxo Operacional de Uso do Pacote de Design<a class="headerlink" href="#homes-publicas-fluxo-operacional-de-uso-do-pacote-de-design" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este guia registra, de forma curta e inequívoca, <strong>como a pessoa responsável por Design, UX e UI deve iniciar o trabalho após receber o pacote externo vigente das seis Homes públicas da Guivos</strong>.</p>
-<p>Ele é um artefato operacional subordinado a <code>GKR-UX-HOMES-DESIGN-DELIVERY-001</code> e <code>GKR-UX-HOMES-DESIGN-HANDOFF-001</code>.</p>
+<p>Este guia registra como a pessoa responsável por Design, UX e UI deve iniciar o trabalho após receber o pacote externo vigente das <strong>sete Homes públicas da Guivos</strong>.</p>
+<p>Ele é subordinado a <code>GKR-UX-HOMES-DESIGN-DELIVERY-001</code> e <code>GKR-UX-HOMES-DESIGN-HANDOFF-001</code>.</p>
 <p>Este documento:</p>
 <ul>
 <li>não cria nova arquitetura;</li>
 <li>não substitui o Manifesto Canônico de Entrega;</li>
 <li>não substitui o Handoff Canônico;</li>
-<li>não altera os Documentos Mestres;</li>
-<li>não altera os Source Locks;</li>
+<li>não altera Documentos Mestres ou Source Locks;</li>
+<li>não produz mapa, wireframe, direção visual, UI ou protótipo;</li>
 <li>não autoriza implementação ou publicação.</li>
 </ul>
-<hr />
-<h2 id="2-fluxo-obrigatorio-apos-o-recebimento-do-pacote">2. Fluxo obrigatório após o recebimento do pacote<a class="headerlink" href="#2-fluxo-obrigatorio-apos-o-recebimento-do-pacote" title="Permanent link">&para;</a></h2>
+<h2 id="2-fluxo-obrigatorio-apos-recebimento-do-pacote">2. Fluxo obrigatório após recebimento do pacote<a class="headerlink" href="#2-fluxo-obrigatorio-apos-recebimento-do-pacote" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>BAIXAR O ZIP DA EMISSÃO VIGENTE
       ↓
 abrir 00-LEIA-PRIMEIRO
@@ -11367,41 +11377,31 @@ escolher UMA Home
       ↓
 abrir o LEIA-PRIMEIRO daquela Home
       ↓
-seguir os 3 documentos indicados
+seguir somente os documentos indicados
       ↓
-usar o Source Lock + Prompt no Figma Make
+usar o Source Lock + Prompt da Home
+      ↓
+OUTPUT EXTERNO = EXPLORAÇÃO
 </code></pre></div>
-<p>A sequência deve ser interpretada da seguinte forma:</p>
+<p>A sequência significa:</p>
 <ol>
-<li><strong>Baixar o ZIP</strong> oficial da emissão de Design vigente.</li>
-<li><strong>Abrir <code>00-LEIA-PRIMEIRO</code></strong> e ler o Handoff Canônico comum antes de trabalhar uma Home específica.</li>
-<li><strong>Escolher uma única Home</strong> para a execução em andamento: Pessoa, Organizações e Coletivos, Mall, Travel, Media ou Ads.</li>
-<li><strong>Abrir o <code>LEIA-PRIMEIRO</code> daquela Home</strong>, que identifica o contexto específico e a ordem de uso.</li>
-<li><strong>Seguir os três documentos indicados na pasta da Home</strong>:</li>
-<li>Documento Mestre;</li>
-<li>contrato complementar — Reconciliação pós-Media, <code>GPA-005</code> no caso de Media ou <code>GPA-007</code> no caso de Ads;</li>
-<li>Source Lock + Prompt Controlado.</li>
-<li><strong>Usar o Source Lock + Prompt no Figma Make ou ferramenta generativa equivalente</strong>, mantendo como contexto somente as fontes autorizadas para aquela Home.</li>
+<li>baixar o ZIP oficial da emissão vigente;</li>
+<li>ler o Handoff Canônico comum;</li>
+<li>escolher somente uma Home: Pessoa, Organizações e Coletivos, Mall, Travel, Media, Ads ou Business;</li>
+<li>abrir o <code>LEIA-PRIMEIRO</code> daquela Home;</li>
+<li>carregar somente as fontes específicas indicadas naquele contexto;</li>
+<li>utilizar o Source Lock + Prompt Controlado no Figma Make ou ferramenta equivalente;</li>
+<li>tratar toda saída como <code>EXPLORAÇÃO</code> até validação humana.</li>
 </ol>
-<hr />
 <h2 id="3-regra-de-isolamento-de-contexto">3. Regra de isolamento de contexto<a class="headerlink" href="#3-regra-de-isolamento-de-contexto" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><strong>Uma Home = uma execução semanticamente isolada.</strong></p>
 </blockquote>
-<p>Não carregar simultaneamente no Figma Make os documentos específicos das seis Homes.</p>
-<p>Para uma execução de uma Home, o contexto autorizado é:</p>
-<div class="highlight"><pre><span></span><code>HANDOFF CANÔNICO COMUM
-+
-DOCUMENTO MESTRE DA HOME
-+
-CONTRATO COMPLEMENTAR DA HOME
-+
-SOURCE LOCK + PROMPT DA HOME
-</code></pre></div>
-<p>Documentos de outras Homes não devem ser adicionados à mesma execução apenas para aumentar contexto.</p>
-<hr />
+<p>Não carregar simultaneamente documentos específicos das sete Homes.</p>
+<p>As seis Homes já presentes na emissão v2 preservam o fluxo de contexto mínimo já vigente.</p>
+<p>Business utiliza contexto específico maior porque suas fronteiras vigentes são distribuídas por Source Lock, Documento Mestre, Conversão, Contratos de Autoridade e <code>GPA-004</code>.</p>
 <h2 id="4-regra-especifica-para-guivos-ads">4. Regra específica para Guivos Ads<a class="headerlink" href="#4-regra-especifica-para-guivos-ads" title="Permanent link">&para;</a></h2>
-<p>Para a Home Ads, utilizar:</p>
+<p>Para Ads, permanece:</p>
 <div class="highlight"><pre><span></span><code>GKR-UX-HOMES-DESIGN-HANDOFF-001
 +
 GKR-UX-HOME-ADS-MASTER-001
@@ -11410,11 +11410,52 @@ GPA-007
 +
 GKR-UX-HOME-ADS-GENINPUT-001
 </code></pre></div>
-<p>Não carregar automaticamente contratos detalhados do Opportunity Boost, pricing ou documentação operacional de outros produtos. Se uma dúvida específica exigir aprofundamento, ampliar o contexto de forma deliberada e registrar a fonte adicional.</p>
-<p>A referência externa a iFood Ads ou outros benchmarks não faz parte do Source Lock canônico e não deve ser tratada como template.</p>
-<hr />
-<h2 id="5-estado-do-resultado-gerado">5. Estado do resultado gerado<a class="headerlink" href="#5-estado-do-resultado-gerado" title="Permanent link">&para;</a></h2>
-<p>Todo resultado inicial produzido pelo Figma Make ou ferramenta equivalente começa obrigatoriamente como:</p>
+<p>Não carregar automaticamente contratos detalhados do Opportunity Boost, pricing ou documentação operacional de outros produtos.</p>
+<h2 id="5-regra-especifica-para-guivos-business">5. Regra específica para Guivos Business<a class="headerlink" href="#5-regra-especifica-para-guivos-business" title="Permanent link">&para;</a></h2>
+<p>Para Business, utilizar:</p>
+<div class="highlight"><pre><span></span><code>GKR-UX-HOMES-DESIGN-HANDOFF-001
++
+GKR-UX-HOME-BUSINESS-SOURCELOCK-001
++
+GKR-UX-HOME-BUSINESS-MASTER-001
++
+GKR-UX-HOME-BUSINESS-CONVERSION-002
++
+GKR-UX-HOME-BUSINESS-AUTHORITY-001
++
+GPA-004
++
+GKR-UX-HOME-BUSINESS-GENINPUT-001
+</code></pre></div>
+<p>Ordem operacional:</p>
+<div class="highlight"><pre><span></span><code>HANDOFF COMUM
+↓
+SOURCE LOCK SEMÂNTICO BUSINESS
+↓
+DOCUMENTO MESTRE
+↓
+CONVERSÃO GLOBAL
+↓
+CONTRATOS DE AUTORIDADE
+↓
+GPA-004
+↓
+SOURCE LOCK OPERACIONAL + PROMPT
+↓
+EXECUÇÃO EXTERNA
+</code></pre></div>
+<p>Não carregar automaticamente:</p>
+<ul>
+<li>outras Homes;</li>
+<li>conversão v1;</li>
+<li>documentos históricos;</li>
+<li>pricing ainda não formalizado;</li>
+<li>Ads;</li>
+<li>benchmarks como requisito;</li>
+<li>documentos adicionais de Journey sem dúvida concreta.</li>
+</ul>
+<h2 id="6-estado-do-resultado-gerado">6. Estado do resultado gerado<a class="headerlink" href="#6-estado-do-resultado-gerado" title="Permanent link">&para;</a></h2>
+<p>Todo resultado inicial produzido pela frente de Design, Figma Make ou ferramenta equivalente começa obrigatoriamente como:</p>
 <blockquote>
 <p><strong>EXPLORAÇÃO — NÃO CANÔNICA — NÃO APROVADA PARA IMPLEMENTAÇÃO.</strong></p>
 </blockquote>
@@ -11430,14 +11471,16 @@ VALIDADO EM UI
 APROVADO PARA HANDOFF DE ENGENHARIA
 </code></pre></div>
 <p>A ferramenta generativa não possui autoridade para promover seu próprio output.</p>
-<hr />
-<h2 id="6-relacao-entre-v1-e-v2">6. Relação entre v1 e v2<a class="headerlink" href="#6-relacao-entre-v1-e-v2" title="Permanent link">&para;</a></h2>
-<p>A emissão v1 permanece um snapshot histórico íntegro das cinco Homes originalmente entregues.</p>
-<p>A emissão v2 adiciona Guivos Ads e deve ser distribuída por branch/snapshot/ZIP próprios. Não misturar arquivos da v1 e da v2 numa mesma execução sem reconciliação explícita.</p>
-<hr />
-<h2 id="7-regra-final">7. Regra final<a class="headerlink" href="#7-regra-final" title="Permanent link">&para;</a></h2>
+<h2 id="7-relacao-entre-v1-v2-e-v3">7. Relação entre v1, v2 e v3<a class="headerlink" href="#7-relacao-entre-v1-v2-e-v3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>v1 permanece snapshot histórico íntegro das cinco Homes originalmente entregues;</li>
+<li>v2 adicionou Guivos Ads e permanece preservada;</li>
+<li>v3 adiciona Guivos Business em nova branch/snapshot/ZIP próprios após integração canônica.</li>
+</ul>
+<p>Não misturar arquivos entre emissões sem reconciliação explícita.</p>
+<h2 id="8-regra-final">8. Regra final<a class="headerlink" href="#8-regra-final" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p><strong>Baixe a emissão correta, leia a orientação comum, escolha uma Home, mantenha o contexto isolado e só então use o Source Lock + Prompt como entrada da exploração generativa.</strong></p>
+<p><strong>Baixe a emissão correta, leia a orientação comum, escolha uma Home, mantenha o contexto isolado e só então use o Source Lock + Prompt como entrada da exploração externa.</strong></p>
 </blockquote>
 <p>O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração; não decidem a arquitetura da Guivos.</p>
 
