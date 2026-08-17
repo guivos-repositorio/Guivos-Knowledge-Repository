@@ -1,54 +1,53 @@
 ---
 id: GKR-BUSINESS-HOME-CONTINUITY-005
-title: Checkpoint de Continuidade — Home Pública — Guivos Business — Emissão de Handoff de Design v3
+title: Checkpoint de Continuidade — Home Pública — Guivos Business — Pós-Emissão de Design v3
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-08-17
 parent: GKR-BUSINESS-HOME-CONTINUITY-004
 depends_on:
-  - GKR-UX-HOMES-DESIGN-HANDOFF-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
   - GKR-UX-HOME-BUSINESS-SOURCELOCK-001
-  - GKR-UX-HOME-BUSINESS-GENINPUT-001
   - GKR-UX-HOME-BUSINESS-MASTER-001
   - GKR-UX-HOME-BUSINESS-CONVERSION-002
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
   - GPA-004
+  - GKR-UX-HOME-BUSINESS-GENINPUT-001
+  - GKR-UX-HOMES-DESIGN-HANDOFF-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V3-SNAPSHOT-001
+  - GKR-STATE-001
+  - ROADMAP-12.80.0
 normative: false
 ---
 
-# Checkpoint de Continuidade — Home Pública — Guivos Business — Emissão de Handoff de Design v3
+# Checkpoint de Continuidade — Home Pública — Guivos Business — Pós-Emissão de Design v3
 
 ## 1. Finalidade
 
-Preservar o ponto exato de continuidade da Home Pública do Guivos Business após a integração do Source Lock e durante a preparação da **emissão v3 do pacote de Design**, seguindo a mesma lógica operacional aplicada às Homes anteriores.
+Preservar o ponto exato de continuidade da Home Pública do Guivos Business depois de sua convergência documental, congelamento por Source Lock, inclusão no handoff canônico de Design e materialização da emissão externa v3.
 
-Correção explícita desta continuidade:
-
-> **Esta frente não entra em mapa, wireframe, direção visual, UI ou protótipo. O GKR prepara e congela o pacote; a frente externa de Design materializa depois.**
+Este documento evolui o próprio `GKR-BUSINESS-HOME-CONTINUITY-005` de seu estado preparatório da emissão v3 para o estado factual pós-emissão. O histórico anterior permanece preservado pelo versionamento Git.
 
 ## 2. Base técnica
 
 ```text
-MAIN DE PARTIDA
-693193ca4cd924d751648a88635ac705286dac94
+MAIN CANÔNICA APÓS REGISTRO PÓS-EMISSÃO V3
+2c40d221529ca128bb8d565bc8dfa70efd05f946
+
+SNAPSHOT EXTERNO V3
+branch: delivery/design-handoff-v3
+commit: 7b2b20c035551e3b1206af987aaddda710757166
+tree: 2744a86ca761146a7fcb90ee5ee2e09ef6baefa7
 
 ÚLTIMO MARCO FUNCIONAL
 M7.88
 
 ÚLTIMA UXA NUMERADA
 UXA-101
-
-GKR-STATE-001
-2.37.0
-
-ROADMAP
-12.79.0
 ```
 
-Esta frente permanece em Experience Architecture e não retoma Product Engineering.
+A evolução da Home Business e sua entrega para Design continuam sendo uma frente de Experience Architecture separada da fila UXA. Não criam novo marco funcional, não iniciam UXA-102/V5 e não retomam Product Engineering.
 
 ## 3. Estado de convergência
 
@@ -60,173 +59,179 @@ CHECKPOINT 6 — CONTRATOS DE AUTORIDADE
 → CONVERGIDO
 
 CHECKPOINT 7 — CONVERSÃO GLOBAL
-→ CONVERGIDO / REFINADO
+→ CONVERGIDO / REFINADO POR GKR-UX-HOME-BUSINESS-CONVERSION-002
 
 CHECKPOINT 8 — DOCUMENTO MESTRE
-→ CONVERGIDO
+→ CONVERGIDO EM GKR-UX-HOME-BUSINESS-MASTER-001
 
-SOURCE LOCK BUSINESS
-→ INTEGRADO EM GKR-UX-HOME-BUSINESS-SOURCELOCK-001
+SOURCE LOCK SEMÂNTICO
+→ CONVERGIDO EM GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 
-HANDOFF CANÔNICO
-→ GKR-UX-HOMES-DESIGN-HANDOFF-001 EVOLUÍDO PARA v1.2.0 NA EMISSÃO PROPOSTA
-
-MANIFESTO DE ENTREGA
-→ GKR-UX-HOMES-DESIGN-DELIVERY-001 EVOLUÍDO PARA v3.0.0 NA EMISSÃO PROPOSTA
-
-SOURCE LOCK OPERACIONAL + PROMPT BUSINESS
-→ GKR-UX-HOME-BUSINESS-GENINPUT-001 PROPOSTO
-
-MAPA / WIREFRAME / VISUAL / UI / PROTÓTIPO
-→ NÃO INICIADOS NESTA FRENTE
-```
-
-## 4. Método vigente
-
-Business passa a seguir o mesmo método das Homes anteriores:
-
-```text
-AUTORIDADES CANÔNICAS
-↓
-SOURCE LOCK
-↓
-HANDOFF CANÔNICO
-↓
-MANIFESTO DE ENTREGA
-↓
 SOURCE LOCK OPERACIONAL + PROMPT
-↓
-SNAPSHOT EXTERNO / ZIP
-↓
-DESIGNER / FIGMA MAKE
-↓
-OUTPUT = EXPLORAÇÃO
-↓
-VALIDAÇÃO HUMANA
+→ CONVERGIDO EM GKR-UX-HOME-BUSINESS-GENINPUT-001
+
+HANDOFF CANÔNICO DE DESIGN
+→ BUSINESS INCLUÍDO EM GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.2.0
+
+DESIGN
+→ AUTORIZADO PROCEDIMENTALMENTE
+
+SNAPSHOT EXTERNO V3
+→ MATERIALIZADO E AUDITADO
+
+OUTPUT VISUAL DA HOME BUSINESS
+→ AINDA NÃO PRODUZIDO NESTA FRENTE CANÔNICA
 ```
 
-O GKR encerra sua responsabilidade operacional da emissão no snapshot/ZIP auditado e no registro pós-merge correspondente.
+## 4. Fonte de verdade da Home Business
 
-## 5. Emissão v3
+A materialização de Design deve preservar a seguinte ordem de autoridade:
 
-A emissão v3 adiciona Business às seis Homes já presentes na v2 e preserva v1/v2 historicamente.
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.2.0 — regras comuns da fase de Design;
+2. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — lock semântico superior;
+3. `GKR-UX-HOME-BUSINESS-MASTER-001` — Documento Mestre vigente;
+4. `GKR-UX-HOME-BUSINESS-CONVERSION-002` — conversão e contratação online vigentes;
+5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` — contratos de autoridade;
+6. `GPA-004` v1.6.0 ou autoridade posterior vigente — arquitetura funcional/comercial do produto;
+7. `GKR-UX-HOME-BUSINESS-GENINPUT-001` — Source Lock Operacional + Prompt controlado.
 
-Composição prevista:
+O guia `07-HOME-BUSINESS/00-LEIA-PRIMEIRO-BUSINESS.md` da emissão v3 é operacional de embalagem, não nova autoridade canônica.
+
+## 5. Emissão externa v3
+
+A emissão v3 foi materializada a partir do conteúdo canônico integrado à `main` e contém:
 
 ```text
-25 FONTES CANÔNICAS
+25 FONTES CANÔNICAS CONGELADAS
 +
 7 GUIAS OPERACIONAIS LEIA-PRIMEIRO
 =
-32 ARQUIVOS NO SNAPSHOT EXTERNO V3
+32 ARQUIVOS EXTERNOS
 ```
 
-A branch externa prevista é:
+As sete Homes permanecem em contextos isolados:
 
-`delivery/design-handoff-v3`
+1. Pessoa;
+2. Organizações e Coletivos;
+3. Guivos Mall;
+4. Guivos Travel;
+5. Guivos Media;
+6. Guivos Ads;
+7. Guivos Business.
 
-Ela somente deve ser materializada após integração das autoridades desta emissão na `main`.
+A branch `delivery/design-handoff-v3` é artefato externo reproduzível de distribuição. Não constitui fonte canônica paralela à `main`.
 
-## 6. Contexto específico de Business
+As emissões v1 e v2 permanecem historicamente preservadas e não são alteradas pela v3.
 
-A pasta Business da emissão v3 deverá utilizar:
+O ZIP é apenas embalagem transportável derivada da árvore congelada. O conteúdo autoritativo é determinado pelo snapshot/tree e pelas fontes canônicas da `main`, não por um binário ZIP versionado como autoridade.
 
-```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001
-+
-GKR-UX-HOME-BUSINESS-SOURCELOCK-001
-+
-GKR-UX-HOME-BUSINESS-MASTER-001
-+
-GKR-UX-HOME-BUSINESS-CONVERSION-002
-+
-GKR-UX-HOME-BUSINESS-AUTHORITY-001
-+
-GPA-004
-+
-GKR-UX-HOME-BUSINESS-GENINPUT-001
-```
+## 6. Regras públicas congeladas relevantes para Design
 
-O contexto maior é deliberado e deriva do próprio Source Lock Business.
+A exploração da Home Business deve preservar, entre outras, estas decisões:
 
-## 7. Estado semântico preservado
-
-A emissão deve preservar, entre outros:
-
-- pergunta-mãe `O que sua empresa pode tornar possível para as pessoas?`;
+- pergunta-mãe: **O que sua empresa pode tornar possível para as pessoas?**;
+- promessa: **Mais possibilidades para as pessoas. Mais capacidade para sua empresa.**;
 - evolução humana antes do produto;
-- `A empresa apoia. A pessoa escolhe.`;
+- assinatura de autonomia: **A empresa apoia. A pessoa escolhe.**;
 - Journey antes de Incentivos;
-- Journey custeado pela empresa sem controle empresarial sobre a Journey;
-- Pontos fora da Home;
-- Incentivos abrindo possibilidades, não apenas premiando passado;
-- ecossistema narrado pela vida da pessoa;
-- Intelligence visual;
+- Journey custeado pela empresa sem controle empresarial sobre a Journey da pessoa;
+- Pontos Guivos fora da narrativa pública da Home;
+- Incentivos como reconhecimento, estímulo, viabilização e abertura de novas possibilidades;
+- ecossistema apresentado pela vida e pelas possibilidades da pessoa antes do catálogo de produtos;
+- Guivos Intelligence prioritariamente visual, limitado ao que acontece ou é legitimamente conhecido dentro do ecossistema Guivos;
 - CTA `Conheça o Guivos Intelligence`;
-- Start / Growth / Scale / Enterprise com comparação;
-- configurador comercial;
-- contratação online;
-- implementação/operação `Self-service / Com apoio do suporte / Gerenciado`;
-- suporte depois da contratação quando aplicável;
-- escala global;
-- Business distinto de Ads e das demais autoridades do ecossistema.
+- Start / Growth / Scale / Enterprise com comparação de capacidades, sem inventar preços, limites, SLA ou entitlements;
+- configurador comercial como experiência de configuração, comparação, estimativa e contratação;
+- contratação online como regra vigente;
+- modelos de implementação/operação `Self-service`, `Com apoio do suporte` e `Gerenciado`;
+- no modelo `Com apoio do suporte`, suporte após a contratação online;
+- Business distinto de Ads e das demais autoridades do ecossistema;
+- princípio de escala global sem presumir disponibilidade concreta de país, moeda ou entidade ainda não evidenciada.
 
-## 8. O que esta frente não fará
+## 7. O que a autorização de Design permite
 
-Não serão produzidos aqui:
+A autorização procedimental permite, fora desta frente canônica:
 
-- mapa da página;
 - arquitetura visual;
-- wireframe;
+- wireframe low-fi;
+- estudos de hierarquia e composição;
 - direção visual;
-- UI;
-- protótipo;
-- decisões estéticas;
-- implementação frontend/backend.
+- UX/UI;
+- protótipos;
+- estudos responsivos;
+- exploração generativa controlada por Figma Make ou ferramenta equivalente.
 
-Esses materiais pertencem à etapa externa de Design, exatamente como nas Homes anteriores.
-
-## 9. Próximo ponto exato após integração da emissão v3
-
-Após a PR da emissão v3 ser validada e integrada:
+Todo primeiro output permanece:
 
 ```text
-1. reconfirmar a main canônica pós-merge;
-2. criar delivery/design-handoff-v3 a partir do conteúdo integrado;
-3. materializar a estrutura oficial das sete Homes;
-4. criar os sete LEIA-PRIMEIRO operacionais;
-5. auditar 25 fontes canônicas + 7 guias;
-6. gerar snapshot/ZIP reproduzível;
-7. registrar em ato canônico pós-merge o SHA de origem, snapshot commit, tree e contagem exata;
-8. preservar delivery/design-handoff-v1 e v2 intactas.
+EXPLORAÇÃO
+≠ AUTORIDADE CANÔNICA
+≠ IMPLEMENTAÇÃO
+≠ PUBLICAÇÃO
 ```
 
-Somente depois, fora desta frente, a designer poderá utilizar o pacote para explorar a Home Business.
+Nenhum output se promove automaticamente ao GKR.
 
-## 10. Preservações
+## 8. Preservações
 
 Este checkpoint não:
 
-- altera M7.88;
-- inicia UXA-102/V5;
+- altera `M7.88`;
+- inicia `UXA-102/V5`;
 - retoma Product Engineering;
-- implementa a Home;
-- define preços;
-- define limites, SLA ou entitlements;
-- cria Home Intelligence;
-- cria clientes, cases ou métricas reais;
-- altera GPA-004;
-- redefine Points;
+- altera `GPA-004`;
+- muda as duas ofertas principais do Business;
+- cria Journey corporativa;
+- transforma Intelligence em auditor de KPIs internos;
 - incorpora Ads ao Business;
-- produz qualquer artefato visual.
+- redefine economia de Pontos;
+- recoloca Pontos na Home pública;
+- define preços finais;
+- define limites quantitativos;
+- define SLA;
+- congela entitlements não formalizados;
+- define países, moedas, meios de pagamento ou entidades concretamente disponíveis;
+- define fórmula final do configurador;
+- cria a Home Guivos Intelligence;
+- materializa Design dentro do GKR;
+- aprova automaticamente qualquer output visual;
+- autoriza implementação ou publicação.
 
-## 11. Instrução de retomada
+## 9. Próximo ponto exato
 
-Ao retomar esta frente:
+A etapa documental da Home Business necessária para iniciar Design está concluída.
 
-1. usar `GKR-UX-HOMES-DESIGN-HANDOFF-001` como autoridade comum vigente;
-2. usar `GKR-UX-HOMES-DESIGN-DELIVERY-001` como autoridade da emissão;
-3. usar `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` como lock semântico;
-4. usar `GKR-UX-HOME-BUSINESS-GENINPUT-001` como Source Lock Operacional + Prompt;
-5. não iniciar Design visual dentro do GKR;
-6. concluir primeiro snapshot/ZIP v3 e registro factual pós-merge.
+O próximo ato é:
+
+> **MATERIALIZAR A PRIMEIRA EXPLORAÇÃO DE DESIGN DA HOME GUIVOS BUSINESS A PARTIR DO CONTEXTO ISOLADO DA EMISSÃO V3 E SUBMETÊ-LA À VALIDAÇÃO HUMANA CONTRA O SOURCE LOCK.**
+
+Fluxo:
+
+```text
+PACOTE BUSINESS V3
+→ leitura na ordem governada
+→ execução na frente externa de Design
+→ OUTPUT = EXPLORAÇÃO
+→ revisão humana contra Source Lock + Documento Mestre + contratos vigentes
+→ ajustes, se necessários
+→ decisão explícita sobre eventual promoção de uma direção
+```
+
+A existência do handoff e do snapshot não exige que Design seja produzido no GKR nem autoriza a ferramenta a redefinir narrativa, produto, autoridade ou conversão.
+
+## 10. Instrução de retomada
+
+Ao retomar a Home Guivos Business:
+
+1. considerar Checkpoints 5, 6, 7 e 8 convergidos;
+2. considerar Source Lock semântico concluído;
+3. considerar Source Lock Operacional + Prompt concluído;
+4. considerar Business incluído no handoff canônico de Design v1.2.0;
+5. considerar a emissão externa v3 materializada e auditada;
+6. usar somente o contexto isolado da pasta `07-HOME-BUSINESS` junto do Handoff Canônico comum;
+7. não misturar fontes específicas das demais Homes na mesma execução generativa;
+8. preservar Pontos fora da Home pública;
+9. preservar contratação online e os três modelos de implementação/operação;
+10. tratar qualquer primeiro output visual como `EXPLORAÇÃO`;
+11. não retomar UXA-102/V5 ou Product Engineering por consequência desta frente;
+12. próximo ato: exploração externa de Design + validação humana.
