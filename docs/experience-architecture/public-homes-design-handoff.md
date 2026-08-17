@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Experience Architecture
-last_updated: 2026-08-14
+last_updated: 2026-08-16
 normative: true
 depends_on:
   - GKR-UX-HOME-MASTER-001
@@ -19,32 +19,53 @@ depends_on:
   - GPA-005
   - GKR-UX-HOME-ADS-MASTER-001
   - GPA-007
+  - GKR-UX-HOME-BUSINESS-SOURCELOCK-001
+  - GKR-UX-HOME-BUSINESS-MASTER-001
+  - GKR-UX-HOME-BUSINESS-CONVERSION-002
+  - GKR-UX-HOME-BUSINESS-AUTHORITY-001
+  - GPA-004
 ---
 
 # Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 
 ## 1. Finalidade
 
-Este documento governa o **handoff das seis Homes públicas já convergidas da Guivos para a fase de Design, UX, UI, wireframe e prototipação**.
+Este documento governa o **handoff das sete Homes públicas já convergidas da Guivos para a fase de Design, UX, UI, wireframe e prototipação**.
 
-Seu objetivo é permitir que Design trabalhe com um conjunto pequeno, atual e semanticamente controlado de fontes, sem precisar reconstruir decisões a partir do histórico completo do Guivos Knowledge Repository.
+Seu objetivo é permitir que a pessoa responsável por Design trabalhe com um conjunto pequeno, atual e semanticamente controlado de fontes, sem precisar reconstruir decisões a partir do histórico completo do Guivos Knowledge Repository.
 
-As seis Homes abrangidas por esta versão são:
+As sete Homes abrangidas por esta versão são:
 
 1. Home Pública — Pessoa;
 2. Home Pública — Organizações e Coletivos;
 3. Home Pública — Guivos Mall;
 4. Home Pública — Guivos Travel;
 5. Home Pública — Guivos Media;
-6. Home Pública — Guivos Ads.
+6. Home Pública — Guivos Ads;
+7. Home Pública — Guivos Business.
 
 Este documento **não desenha as páginas** e não determina solução visual final. Ele define quais decisões precisam ser preservadas, quais fontes têm autoridade, como ferramentas generativas podem ser utilizadas e onde termina a arquitetura governada e começa a liberdade de Design.
+
+A inclusão de Business nesta versão segue a mesma lógica das Homes anteriores:
+
+```text
+GKR
+→ prepara autoridades, Source Lock, prompt e pacote de entrega
+
+DESIGN / FIGMA MAKE / FERRAMENTA EQUIVALENTE
+→ produz a exploração visual fora desta frente canônica
+
+VALIDAÇÃO HUMANA
+→ confronta a exploração com o GKR
+```
+
+Portanto, **a atualização deste handoff não cria mapa de página, wireframe, direção visual, UI ou protótipo dentro do GKR**.
 
 ---
 
 ## 2. Autorização da fase de Design
 
-A partir deste handoff, ficam autorizadas para as seis Homes abrangidas:
+A partir deste handoff, ficam autorizadas para as sete Homes abrangidas, quando executadas pela frente de Design e pelo pacote de entrega vigente:
 
 - exploração em Figma Make e ferramentas equivalentes;
 - arquitetura visual;
@@ -70,13 +91,13 @@ Ela não autoriza automaticamente:
 - novas promessas, métricas, parceiros, ofertas ou claims não sustentados;
 - merge de implementação.
 
-Alguns Documentos Mestres registram historicamente estados como `materialização não autorizada` ou afirmam que o documento isolado não autoriza wireframe/UI. A presente decisão **supera somente esse estado procedimental para a fase de Design**.
+Alguns Documentos Mestres ou Source Locks registram historicamente estados como `materialização não autorizada` ou afirmam que o documento isolado não autoriza wireframe/UI. A presente decisão **supera somente esse estado procedimental para a fase de Design** das Homes abrangidas.
 
-Ela não revoga, substitui ou enfraquece nenhuma decisão semântica, narrativa, funcional, de produto ou de fronteira registrada nesses documentos.
+Ela não revoga, substitui ou enfraquece nenhuma decisão semântica, narrativa, funcional, comercial, de produto ou de fronteira registrada nesses documentos.
 
 Regra:
 
-> **O handoff autoriza materializar. Os Documentos Mestres continuam governando o que não pode ser semanticamente perdido durante a materialização.**
+> **O handoff autoriza materializar externamente. Os Documentos Mestres, contratos e Source Locks continuam governando o que não pode ser semanticamente perdido durante a materialização.**
 
 ---
 
@@ -105,65 +126,68 @@ Somente após validação humana contra o GKR uma direção pode ser aceita como
 
 ## 4. Pacote oficial de handoff
 
-O pacote obrigatório possui **13 documentos de autoridade**: este documento comum e dois documentos específicos por Home. A emissão operacional adiciona um Source Lock por Home conforme o Manifesto Canônico de Entrega.
+A composição operacional de cada emissão é governada por `GKR-UX-HOMES-DESIGN-DELIVERY-001`.
+
+A designer não precisa receber o repositório inteiro como entrada inicial.
 
 ### 4.1 Home Pública — Pessoa
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — este documento;
-2. `docs/experience-architecture/public-home-master-document.md`;
-3. `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`.
+Usar o Handoff Canônico comum e as autoridades específicas registradas no Manifesto de Entrega vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
 
 ### 4.2 Home Pública — Organizações e Coletivos
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — este documento;
-2. `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
-3. `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
+Usar o Handoff Canônico comum e as autoridades específicas registradas no Manifesto de Entrega vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
 
 ### 4.3 Home Pública — Guivos Mall
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — este documento;
-2. `docs/experience-architecture/public-home-mall-master-document.md`;
-3. `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md`.
+Usar o Handoff Canônico comum e as autoridades específicas registradas no Manifesto de Entrega vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
 
 ### 4.4 Home Pública — Guivos Travel
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — este documento;
-2. `docs/experience-architecture/public-home-travel-master-document.md`;
-3. `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
+Usar o Handoff Canônico comum e as autoridades específicas registradas no Manifesto de Entrega vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
 
 ### 4.5 Home Pública — Guivos Media
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — este documento;
-2. `docs/experience-architecture/public-home-media-master-document.md`;
-3. `docs/product-architecture/media.md` (`GPA-005`).
+Usar o Handoff Canônico comum e as autoridades específicas registradas no Manifesto de Entrega vigente, incluindo Documento Mestre, `GPA-005` e Source Lock + Prompt.
 
 ### 4.6 Home Pública — Guivos Ads
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — este documento;
-2. `docs/experience-architecture/public-home-ads-master-document.md`;
-3. `docs/product-architecture/ads.md` (`GPA-007`).
+Usar o Handoff Canônico comum e as autoridades específicas registradas no Manifesto de Entrega vigente, incluindo Documento Mestre, `GPA-007` e Source Lock + Prompt.
 
-A designer não precisa receber o repositório inteiro como entrada inicial.
+### 4.7 Home Pública — Guivos Business
+
+O contexto inicial de Business é deliberadamente mais amplo porque suas fronteiras comerciais e de autoridade são distribuídas por documentos especializados já convergidos.
+
+Usar somente o pacote definido pelo Manifesto de Entrega vigente, baseado em:
+
+1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001`;
+2. `GKR-UX-HOME-BUSINESS-MASTER-001`;
+3. `GKR-UX-HOME-BUSINESS-CONVERSION-002`;
+4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001`;
+5. `GPA-004`;
+6. Source Lock Operacional + Prompt específico de Business emitido para a rodada de Design.
+
+Não substituir esse contexto por documentos históricos, conversão v1, materiais de Ads, benchmarks ou rascunhos de conversa.
 
 ---
 
 ## 5. Ordem de autoridade
 
-Quando os documentos forem consumidos por uma pessoa ou por uma ferramenta generativa, a ordem de autoridade é:
+Quando os documentos forem consumidos por uma pessoa ou por uma ferramenta generativa, a ordem geral é:
 
 ```text
 NÍVEL 0 — HANDOFF CANÔNICO
 GKR-UX-HOMES-DESIGN-HANDOFF-001
 → governa processo, autorização, fontes e uso de IA
 
-NÍVEL 1 — DOCUMENTO MESTRE DA HOME
-→ governa identidade, significado, narrativa, experiência e invariantes da Home
+NÍVEL 1 — SOURCE LOCK / DOCUMENTO MESTRE DA HOME
+→ governa identidade, significado, narrativa, experiência e invariantes congelados
 
 NÍVEL 2 — CONTRATO COMPLEMENTAR VIGENTE
 → reconciliação pós-Media
   ou GPA-005 no caso da Home Media
   ou GPA-007 no caso da Home Ads
-→ governa relações especializadas sem substituir o Documento Mestre
+  ou Conversão + Contratos de Autoridade + GPA-004 no caso da Home Business
 
 NÍVEL 3 — DOCUMENTOS ESPECIALIZADOS
 → consultados somente quando uma dúvida concreta exigir aprofundamento
@@ -173,24 +197,25 @@ NÍVEL 4 — HISTÓRICO
 → não substitui o estado vigente
 ```
 
+No caso de Business, a ordem detalhada entre Source Lock, Documento Mestre, Conversão, Contratos de Autoridade e `GPA-004` é a registrada em `GKR-UX-HOME-BUSINESS-SOURCELOCK-001`.
+
 Se houver conflito aparente entre uma antiga proibição procedimental de materialização e este documento, prevalece este handoff **somente quanto à autorização da fase de Design**.
 
-Se houver conflito sobre significado da Home, prevalece o Documento Mestre correspondente, salvo decisão posterior explicitamente governada.
+Se houver conflito sobre significado da Home, prevalecem as autoridades específicas vigentes da Home conforme o Source Lock correspondente.
 
 ---
 
 ## 6. Controle semântico do input generativo
 
-Toda execução em Figma Make ou ferramenta generativa deve começar por um **Source Lock**.
+Toda execução em Figma Make ou ferramenta generativa deve começar por um **Source Lock operacional específico da Home**.
 
 O Source Lock registra:
 
 - Home em trabalho;
 - objetivo da execução;
-- fase: arquitetura visual, wireframe, UX, UI ou protótipo;
 - documento de handoff utilizado;
 - Documento Mestre utilizado;
-- contrato complementar utilizado;
+- contratos complementares utilizados;
 - versões dos documentos;
 - commit ou checkpoint do GKR de onde os arquivos foram extraídos;
 - decisões adicionais autorizadas especificamente para aquela execução;
@@ -203,7 +228,7 @@ Regra:
 Não utilizar como input indiscriminado:
 
 - todo o GKR;
-- todas as seis Homes simultaneamente;
+- todas as sete Homes simultaneamente;
 - documentos históricos misturados a documentos vigentes;
 - rascunhos de conversa sem status governado;
 - benchmark como se fosse requisito;
@@ -215,41 +240,34 @@ Exceções devem ser deliberadas e registradas.
 
 ## 7. Estrutura obrigatória do prompt de exploração
 
-O prompt enviado a uma ferramenta generativa deve conter, nesta ordem conceitual:
+O prompt enviado à ferramenta generativa deve conter, nesta ordem conceitual:
 
 ### A. Objetivo
-
-Qual Home está sendo trabalhada e qual artefato precisa ser produzido.
+Qual Home está sendo trabalhada e qual artefato a frente de Design deseja explorar.
 
 ### B. Fontes autorizadas
-
-Listar o handoff, o Documento Mestre e o contrato complementar com seus IDs e versões.
+Listar as fontes do pacote daquela Home com IDs e versões.
 
 ### C. Invariantes
-
 Repetir os contratos que não podem ser reinterpretados naquela execução.
 
 ### D. Liberdades de Design
-
-Explicitar o que pode ser explorado livremente.
+Explicitar o que a frente de Design pode explorar livremente.
 
 ### E. Proibições de inferência
-
 Explicitar o que não pode ser inventado para preencher lacunas.
 
 ### F. Estado da saída
-
 Declarar que o resultado é **exploratório e não canônico** até validação.
 
 ### G. Questões abertas
-
 Quando uma fonte não responde algo, a ferramenta deve sinalizar a lacuna em vez de criar uma decisão de produto por conta própria.
 
 ---
 
 ## 8. O que ferramentas generativas podem explorar
 
-Desde que preservados os contratos da Home, podem propor:
+Desde que preservados os contratos da Home, podem propor na frente externa de Design:
 
 - grid;
 - composição;
@@ -294,6 +312,9 @@ Sem nova decisão governada, não podem:
 - confundir conteúdo editorial, recomendação, oferta e publicidade;
 - atribuir ao Media autoridade operacional de Travel ou Mall;
 - atribuir a Ads autoridade editorial, relevância orgânica ou pertinência pessoal;
+- transformar Business em Ads, HR software, LMS/LXP, plataforma de pontos ou mecanismo de controle individual;
+- transformar Journey custeado pela empresa em Journey controlado pela empresa;
+- recolocar Pontos na narrativa pública da Home Business;
 - garantir transformação, impacto ou resultado causal não comprovado;
 - inventar métricas, números, avaliações, cases, parceiros, depoimentos ou disponibilidade;
 - criar campanhas como se fossem vigentes;
@@ -312,7 +333,7 @@ Ferramentas podem usar conteúdo provisório para testar hierarquia, desde que e
 
 Não utilizar como se fossem reais:
 
-- nomes de parceiros não confirmados;
+- nomes de parceiros ou clientes não confirmados;
 - indicadores de impacto;
 - número de usuários;
 - preços;
@@ -324,7 +345,13 @@ Não utilizar como se fossem reais:
 - histórias de pessoas;
 - depoimentos;
 - estatísticas;
-- provas sociais.
+- provas sociais;
+- KPIs reais de Intelligence;
+- limites de planos;
+- SLA;
+- entitlements;
+- integrações não formalizadas;
+- países ou moedas ainda não formalmente disponíveis.
 
 Copy proposta por IA pode ser usada como material de exploração de Content Design, mas não substitui copy final governada.
 
@@ -332,7 +359,7 @@ Copy proposta por IA pode ser usada como material de exploração de Content Des
 
 ## 11. Mesma família, personalidades diferentes
 
-As seis Homes devem pertencer claramente à mesma Guivos, mas não devem parecer seis páginas produzidas pela simples substituição de textos dentro de um template único.
+As sete Homes devem pertencer claramente à mesma Guivos, mas não devem parecer sete páginas produzidas pela simples substituição de textos dentro de um template único.
 
 ```text
 MESMA FAMÍLIA
@@ -349,7 +376,8 @@ A expressão visual pode variar conforme o papel de cada superfície:
 - **Mall** — descoberta, comércio e confiança;
 - **Travel** — inspiração, operação real e acesso direto;
 - **Media** — descoberta editorial, curadoria, profundidade e humanidade;
-- **Ads** — clareza comercial, contexto, tecnologia aplicada e conversão sem atrito.
+- **Ads** — clareza comercial, contexto, tecnologia aplicada e conversão sem atrito;
+- **Business** — evolução humana, possibilidade, capacidade empresarial, inteligência e escala global sem aparência de SaaS B2B genérico.
 
 Nenhuma Home deve ser visualmente reduzida ao estereótipo do seu setor.
 
@@ -368,58 +396,39 @@ A materialização deve preservar a percepção da Guivos como:
 - humana sem recorrer a clichês;
 - maior do que a soma dos próprios produtos.
 
-A Home não deve ser construída prioritariamente como uma lista de serviços. No caso específico do Ads, sua natureza comercial permite linguagem mais direta e orientada a objetivos, sem convertê-lo em catálogo técnico de mídia.
+A Home não deve ser construída prioritariamente como uma lista de serviços. No caso específico do Ads, sua natureza comercial permite linguagem mais direta e orientada a objetivos, sem convertê-lo em catálogo técnico de mídia. No Business, capacidade comercial e contratação devem aparecer sem deslocar evolução humana e possibilidades do centro narrativo.
 
 ---
 
-## 13. Fluxo recomendado de Design
+## 13. Fluxo recomendado para a frente de Design
 
-### Etapa 1 — Source Lock e compreensão
+A frente externa de Design deve seguir:
 
-- confirmar os três documentos autorizados da Home;
-- registrar versões e checkpoint;
-- identificar invariantes, liberdades e questões abertas.
+```text
+PACOTE OFICIAL DA EMISSÃO VIGENTE
+↓
+LEIA-PRIMEIRO COMUM
+↓
+ESCOLHER UMA HOME
+↓
+LEIA-PRIMEIRO DA HOME
+↓
+FONTES CANÔNICAS ISOLADAS
+↓
+SOURCE LOCK + PROMPT
+↓
+OUTPUT = EXPLORAÇÃO
+↓
+VALIDAÇÃO HUMANA
+```
 
-### Etapa 2 — Arquitetura visual
-
-- mapa de página;
-- hierarquia;
-- agrupamento dos movimentos;
-- wireframe low-fi desktop e mobile.
-
-### Gate de UX
-
-Validar estrutura e significado antes de investir em refinamento visual.
-
-### Etapa 3 — Direção visual
-
-Explorar linguagem, tipografia, mídia, composição, ritmo, cor e atmosfera.
-
-### Etapa 4 — UI
-
-Construir alta fidelidade, componentes, estados essenciais e comportamento responsivo.
-
-### Etapa 5 — Protótipo
-
-Materializar navegação, microinterações e motion quando realmente contribuírem para a experiência.
-
-### Gate final
-
-Confrontar a solução com:
-
-1. este handoff;
-2. Documento Mestre;
-3. contrato complementar;
-4. Source Lock vigente da execução;
-5. acessibilidade;
-6. performance;
-7. coerência entre as seis Homes.
+A definição de mapa, wireframe, direção visual, UI ou protótipo pertence à execução de Design e **não é produzida por este handoff nem pelo ato canônico de emissão do pacote**.
 
 ---
 
 ## 14. Classificação dos outputs
 
-Todo artefato produzido deve possuir um estado explícito:
+Todo artefato produzido externamente deve possuir um estado explícito:
 
 ```text
 EXPLORAÇÃO
@@ -482,12 +491,14 @@ O processo está alinhado quando:
 4. essas frases não são usadas como justificativa para alterar decisões semânticas;
 5. a ferramenta generativa recebe fontes governadas e não um corpus indiscriminado;
 6. o output distingue decisão canônica de hipótese de Design;
-7. as seis Homes parecem pertencer à mesma Guivos sem virar o mesmo template;
+7. as sete Homes parecem pertencer à mesma Guivos sem virar o mesmo template;
 8. nenhuma ferramenta inventa produto, feature, dado, prova ou promessa para preencher layout;
 9. os movimentos governados de cada Home permanecem preservados sem obrigação de seções visuais equivalentes;
-10. a solução é validada em UX antes do refinamento final de UI;
-11. acessibilidade, mobile e performance participam da validação;
-12. nenhum output visual passa a governar o GKR sem decisão explícita posterior.
+10. a solução é validada humanamente antes de qualquer promoção de estado;
+11. acessibilidade, mobile e performance participam da validação de Design;
+12. nenhum output visual passa a governar o GKR sem decisão explícita posterior;
+13. Business preserva Pontos fora da Home, Journey antes de Incentivos, Intelligence visual, contratação online e seus modelos de implementação/operação;
+14. a emissão canônica apenas prepara e entrega o contexto; ela não substitui a execução da designer.
 
 ---
 
@@ -498,20 +509,20 @@ Novas Homes especializadas, incluindo futuras superfícies ainda não convergida
 ```text
 DOCUMENTO MESTRE
 +
-CONTRATO COMPLEMENTAR NECESSÁRIO
+CONTRATOS COMPLEMENTARES NECESSÁRIOS
 +
 GKR-UX-HOMES-DESIGN-HANDOFF-001
 ↓
 SOURCE LOCK
 ↓
-EXPLORAÇÃO
+EMISSÃO DO PACOTE
 ↓
-VALIDAÇÃO UX
+EXPLORAÇÃO EXTERNA
 ↓
-VALIDAÇÃO UI
+VALIDAÇÃO HUMANA
 ```
 
-A composição exata do par específico pode variar conforme a arquitetura do produto, mas deve ser declarada antes de qualquer exploração generativa.
+A composição exata do contexto específico pode variar conforme a arquitetura do produto, mas deve ser declarada antes de qualquer exploração generativa.
 
 ---
 
@@ -523,8 +534,8 @@ O objetivo deste handoff não é restringir criatividade visual.
 
 > **O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração. A validação reconecta forma e significado.**
 
-A versão 1.1.0 amplia o handoff para a Home Pública — Guivos Ads e preserva sua natureza comercial distinta sem transferir ao Ads a autoridade funcional das superfícies anfitriãs.
+A versão 1.2.0 amplia o handoff para a Home Pública — Guivos Business, preservando o método já aplicado às Homes anteriores e sem produzir material visual dentro desta frente.
 
 Estado desta frente:
 
-> **HANDOFF DAS SEIS HOMES PARA DESIGN AUTORIZADO — INPUT GENERATIVO SOB CONTROLE SEMÂNTICO — IMPLEMENTAÇÃO NÃO INCLUÍDA NESTE ESCOPO.**
+> **HANDOFF DAS SETE HOMES PARA DESIGN AUTORIZADO — EMISSÃO E INPUT GENERATIVO SOB CONTROLE SEMÂNTICO — IMPLEMENTAÇÃO NÃO INCLUÍDA NESTE ESCOPO.**
