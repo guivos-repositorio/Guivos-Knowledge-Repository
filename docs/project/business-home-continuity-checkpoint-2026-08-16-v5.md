@@ -1,14 +1,17 @@
 ---
 id: GKR-BUSINESS-HOME-CONTINUITY-005
-title: Checkpoint de Continuidade — Home Pública — Guivos Business — Handoff de Design
+title: Checkpoint de Continuidade — Home Pública — Guivos Business — Emissão de Handoff de Design v3
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-08-16
 parent: GKR-BUSINESS-HOME-CONTINUITY-004
 depends_on:
-  - GKR-UX-HOMES-DESIGN-HANDOFF-002
+  - GKR-UX-HOMES-DESIGN-HANDOFF-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
   - GKR-UX-HOME-BUSINESS-SOURCELOCK-001
+  - GKR-UX-HOME-BUSINESS-GENINPUT-001
   - GKR-UX-HOME-BUSINESS-MASTER-001
   - GKR-UX-HOME-BUSINESS-CONVERSION-002
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
@@ -16,11 +19,15 @@ depends_on:
 normative: false
 ---
 
-# Checkpoint de Continuidade — Home Pública — Guivos Business — Handoff de Design
+# Checkpoint de Continuidade — Home Pública — Guivos Business — Emissão de Handoff de Design v3
 
 ## 1. Finalidade
 
-Preservar o ponto exato de continuidade da Home Pública do Guivos Business após a criação do Source Lock e a proposta de inclusão formal do Business no Handoff Canônico de Design.
+Preservar o ponto exato de continuidade da Home Pública do Guivos Business após a integração do Source Lock e durante a preparação da **emissão v3 do pacote de Design**, seguindo a mesma lógica operacional aplicada às Homes anteriores.
+
+Correção explícita desta continuidade:
+
+> **Esta frente não entra em mapa, wireframe, direção visual, UI ou protótipo. O GKR prepara e congela o pacote; a frente externa de Design materializa depois.**
 
 ## 2. Base técnica
 
@@ -58,37 +65,74 @@ CHECKPOINT 7 — CONVERSÃO GLOBAL
 CHECKPOINT 8 — DOCUMENTO MESTRE
 → CONVERGIDO
 
-SOURCE LOCK
+SOURCE LOCK BUSINESS
 → INTEGRADO EM GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 
-HANDOFF CANÔNICO DE DESIGN V2
-→ PROPOSTO EM GKR-UX-HOMES-DESIGN-HANDOFF-002
+HANDOFF CANÔNICO
+→ GKR-UX-HOMES-DESIGN-HANDOFF-001 EVOLUÍDO PARA v1.2.0 NA EMISSÃO PROPOSTA
 
-WIREFRAME / UI / PROTÓTIPO
-→ AINDA NÃO INICIADOS NESTE CHECKPOINT
+MANIFESTO DE ENTREGA
+→ GKR-UX-HOMES-DESIGN-DELIVERY-001 EVOLUÍDO PARA v3.0.0 NA EMISSÃO PROPOSTA
+
+SOURCE LOCK OPERACIONAL + PROMPT BUSINESS
+→ GKR-UX-HOME-BUSINESS-GENINPUT-001 PROPOSTO
+
+MAPA / WIREFRAME / VISUAL / UI / PROTÓTIPO
+→ NÃO INICIADOS NESTA FRENTE
 ```
 
-## 4. Decisão procedimental proposta
+## 4. Método vigente
 
-`GKR-UX-HOMES-DESIGN-HANDOFF-002` passa a suceder o handoff anterior e inclui a Home Pública — Guivos Business como a sétima Home autorizada para Design.
-
-A autorização cobre:
-
-- arquitetura visual;
-- wireframe low-fi;
-- UX;
-- direção visual;
-- UI;
-- protótipo;
-- desktop e mobile;
-- validação contra GKR.
-
-Não cobre implementação.
-
-## 5. Pacote Business para Design
+Business passa a seguir o mesmo método das Homes anteriores:
 
 ```text
-GKR-UX-HOMES-DESIGN-HANDOFF-002
+AUTORIDADES CANÔNICAS
+↓
+SOURCE LOCK
+↓
+HANDOFF CANÔNICO
+↓
+MANIFESTO DE ENTREGA
+↓
+SOURCE LOCK OPERACIONAL + PROMPT
+↓
+SNAPSHOT EXTERNO / ZIP
+↓
+DESIGNER / FIGMA MAKE
+↓
+OUTPUT = EXPLORAÇÃO
+↓
+VALIDAÇÃO HUMANA
+```
+
+O GKR encerra sua responsabilidade operacional da emissão no snapshot/ZIP auditado e no registro pós-merge correspondente.
+
+## 5. Emissão v3
+
+A emissão v3 adiciona Business às seis Homes já presentes na v2 e preserva v1/v2 historicamente.
+
+Composição prevista:
+
+```text
+25 FONTES CANÔNICAS
++
+7 GUIAS OPERACIONAIS LEIA-PRIMEIRO
+=
+32 ARQUIVOS NO SNAPSHOT EXTERNO V3
+```
+
+A branch externa prevista é:
+
+`delivery/design-handoff-v3`
+
+Ela somente deve ser materializada após integração das autoridades desta emissão na `main`.
+
+## 6. Contexto específico de Business
+
+A pasta Business da emissão v3 deverá utilizar:
+
+```text
+GKR-UX-HOMES-DESIGN-HANDOFF-001
 +
 GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 +
@@ -99,16 +143,21 @@ GKR-UX-HOME-BUSINESS-CONVERSION-002
 GKR-UX-HOME-BUSINESS-AUTHORITY-001
 +
 GPA-004
++
+GKR-UX-HOME-BUSINESS-GENINPUT-001
 ```
 
-## 6. Estado semântico preservado
+O contexto maior é deliberado e deriva do próprio Source Lock Business.
 
-Design deve preservar, entre outros:
+## 7. Estado semântico preservado
+
+A emissão deve preservar, entre outros:
 
 - pergunta-mãe `O que sua empresa pode tornar possível para as pessoas?`;
 - evolução humana antes do produto;
 - `A empresa apoia. A pessoa escolhe.`;
 - Journey antes de Incentivos;
+- Journey custeado pela empresa sem controle empresarial sobre a Journey;
 - Pontos fora da Home;
 - Incentivos abrindo possibilidades, não apenas premiando passado;
 - ecossistema narrado pela vida da pessoa;
@@ -118,44 +167,41 @@ Design deve preservar, entre outros:
 - configurador comercial;
 - contratação online;
 - implementação/operação `Self-service / Com apoio do suporte / Gerenciado`;
+- suporte depois da contratação quando aplicável;
 - escala global;
 - Business distinto de Ads e das demais autoridades do ecossistema.
 
-## 7. Intelligence na materialização
+## 8. O que esta frente não fará
 
-A primeira exploração deve demonstrar visualmente Intelligence por dashboards, KPIs, gráficos, tendências e leituras agregadas, sem inventar dados reais ou resultados causais.
+Não serão produzidos aqui:
 
-A Home própria do Intelligence permanece futura.
+- mapa da página;
+- arquitetura visual;
+- wireframe;
+- direção visual;
+- UI;
+- protótipo;
+- decisões estéticas;
+- implementação frontend/backend.
 
-## 8. Planos e configurador
+Esses materiais pertencem à etapa externa de Design, exatamente como nas Homes anteriores.
 
-A primeira exploração pode materializar:
+## 9. Próximo ponto exato após integração da emissão v3
 
-- comparativo dos quatro planos;
-- estrutura da calculadora/configurador;
-- resultado de configuração;
-- indicação de modelo de implementação/operação;
-- contratação online.
-
-Preços, limites, SLA, entitlements e fórmula comercial não podem ser inventados como vigentes.
-
-## 9. Próximo ponto exato após integração
-
-Se `GKR-UX-HOMES-DESIGN-HANDOFF-002` for validado e integrado, o próximo estágio será:
-
-> **PRIMEIRA EXPLORAÇÃO DE DESIGN — HOME GUIVOS BUSINESS**
-
-Prioridade:
+Após a PR da emissão v3 ser validada e integrada:
 
 ```text
-ARQUITETURA VISUAL
-+
-WIREFRAME LOW-FI DESKTOP
-+
-WIREFRAME LOW-FI MOBILE
+1. reconfirmar a main canônica pós-merge;
+2. criar delivery/design-handoff-v3 a partir do conteúdo integrado;
+3. materializar a estrutura oficial das sete Homes;
+4. criar os sete LEIA-PRIMEIRO operacionais;
+5. auditar 25 fontes canônicas + 7 guias;
+6. gerar snapshot/ZIP reproduzível;
+7. registrar em ato canônico pós-merge o SHA de origem, snapshot commit, tree e contagem exata;
+8. preservar delivery/design-handoff-v1 e v2 intactas.
 ```
 
-Antes de UI final.
+Somente depois, fora desta frente, a designer poderá utilizar o pacote para explorar a Home Business.
 
 ## 10. Preservações
 
@@ -172,14 +218,15 @@ Este checkpoint não:
 - altera GPA-004;
 - redefine Points;
 - incorpora Ads ao Business;
-- cria wireframe nesta própria PR.
+- produz qualquer artefato visual.
 
 ## 11. Instrução de retomada
 
-Após integração do handoff v2:
+Ao retomar esta frente:
 
-1. usar `GKR-UX-HOMES-DESIGN-HANDOFF-002` como autoridade procedimental vigente;
-2. usar `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` como lock semântico da execução;
-3. começar pela arquitetura visual e wireframe low-fi;
-4. não inventar lacunas comerciais;
-5. submeter a exploração à validação humana antes de avançar para UI.
+1. usar `GKR-UX-HOMES-DESIGN-HANDOFF-001` como autoridade comum vigente;
+2. usar `GKR-UX-HOMES-DESIGN-DELIVERY-001` como autoridade da emissão;
+3. usar `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` como lock semântico;
+4. usar `GKR-UX-HOME-BUSINESS-GENINPUT-001` como Source Lock Operacional + Prompt;
+5. não iniciar Design visual dentro do GKR;
+6. concluir primeiro snapshot/ZIP v3 e registro factual pós-merge.
