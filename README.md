@@ -77,7 +77,7 @@ O Guivos Business possui autoridade de produto ressincronizada e Home Pública d
 5. [Conversão Global v2](docs/experience-architecture/public-home-business-conversion-authority-v2.md) — contratação online e modelos de implementação/operação;
 6. [Contratos de Autoridade](docs/experience-architecture/public-home-business-authority-contracts.md) — fronteiras entre pessoa, empresa, Business, Journey, Incentivos e Intelligence;
 7. [Source Lock Operacional + Prompt](docs/experience-architecture/public-home-business-generative-design-source-lock.md) — input controlado para a frente de Design;
-8. [Checkpoint de Continuidade v5](docs/project/business-home-continuity-checkpoint-2026-08-17-v5.md) — ponto exato pós-emissão v3 e próximo ato.
+8. [Checkpoint de Continuidade v5](docs/project/business-home-continuity-checkpoint-2026-08-16-v5.md) — ponto exato pós-emissão v3 e próximo ato.
 
 A Home Business está incluída no `GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.2.0 e no snapshot externo v3. **Design está autorizado proceduralmente; nenhum output visual foi produzido ou promovido automaticamente pelo GKR.**
 
@@ -181,7 +181,7 @@ Não estão autorizados ou comprovados apenas pela consolidação documental:
 - [Portfólio Funcional do Guivos Business](docs/product-architecture/business-functional-portfolio.md)
 - [Source Lock da Home Guivos Business](docs/experience-architecture/public-home-business-source-lock.md)
 - [Documento Mestre da Home Guivos Business](docs/experience-architecture/public-home-business-master-document.md)
-- [Checkpoint de Continuidade v5 da Home Guivos Business](docs/project/business-home-continuity-checkpoint-2026-08-17-v5.md)
+- [Checkpoint de Continuidade v5 da Home Guivos Business](docs/project/business-home-continuity-checkpoint-2026-08-16-v5.md)
 - [Guivos Journey](docs/product-architecture/journey.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Jornadas](docs/journeys/index.md)
