@@ -2,9 +2,9 @@
 id: GIA-000
 title: Guivos Intelligence Architecture
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Guivos
-last_updated: 2026-07-11
+last_updated: 2026-08-18
 ---
 
 # Guivos Intelligence Architecture
@@ -36,6 +36,27 @@ A Intelligence Layer serve todo o ecossistema.
 - a Platform Layer sustenta dados, segurança, permissões, integrações e rastreabilidade.
 
 A Intelligence não deve absorver responsabilidades permanentes de experiência, operação de serviços ou infraestrutura comum.
+
+## Relação com GPA-006 — autoridade de produto
+
+`GPA-006 — Guivos Intelligence` governa a **identidade, proposta funcional, duas frentes de geração de valor, capacidades de produto, classes de input/output e guardrails de utilização da inteligência**.
+
+`GIA-000` governa a arquitetura responsável por realizar essas capacidades e continua distinguindo conceitos funcionais consolidados de hipóteses técnicas ainda candidatas.
+
+A separação é obrigatória:
+
+```text
+GPA-006
+= o que o Produto Especializado Guivos Intelligence é, entrega e pode fazer
+
+GIA-000 / GAI-001 / GAI-002
+= como a Intelligence Architecture organiza princípios, aprendizagem, contexto, conhecimento e inteligência
+
+GEA-GRAPH-REFERENCE-001
+= arquitetura de referência para grafo e tecnologias relacionadas
+```
+
+A evolução de `GPA-006` não transforma nomes de engines candidatos em componentes obrigatórios, não declara microserviços, não materializa LPM, não seleciona modelo de IA e não autoriza implementação.
 
 ## Grafo Global da Guivos
 
@@ -104,6 +125,8 @@ Foram identificadas para futura modelagem:
 
 Esses nomes representam responsabilidades candidatas, não microserviços obrigatórios.
 
+As dez responsabilidades funcionais consolidadas em `GPA-006` — contexto, conhecimento, relações, compreensão, relevância, descoberta de possibilidades, agregação, insights/tendências, explicabilidade e aprendizado — **não devem ser mapeadas mecanicamente 1:1 para essa família candidata de engines**. A decomposição técnica permanece aberta.
+
 ## Living Participant Model — candidato
 
 O `Living Participant Model (LPM)` permanece uma hipótese de modelo contextual, temporal e continuamente atualizável do participante.
@@ -128,5 +151,7 @@ A criação de uma futura `Guivos Participant Model Architecture (GPMA)` depende
 Os princípios superiores de aprendizagem, conhecimento, evidência, contexto, recomendação, autonomia e organização por grafo estão consolidados.
 
 Interpretação do Contexto e Contexto Vivo estão consolidados como conceitos funcionais do PAS-001, sem definir implementação técnica definitiva.
+
+`GPA-006` v1.6.0 consolida no plano de produto os Checkpoints 1–6 da atual estruturação do Guivos Intelligence e mantém o Checkpoint 7 como próximo ponto. Essa consolidação não autoriza Home Pública, Design ou implementação.
 
 CIE, LPM, família de Intelligence Engines, GPMA, ontologia formal, modelos lógicos, tecnologias, políticas operacionais e controles técnicos permanecem em investigação, detalhamento ou validação.
