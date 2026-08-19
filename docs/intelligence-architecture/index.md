@@ -2,14 +2,21 @@
 id: GIA-000
 title: Guivos Intelligence Architecture
 status: active
-version: 1.4.0
+version: 1.5.0
 owner: Guivos
 last_updated: 2026-08-18
+related:
+  - GPA-006
+  - GAI-001
+  - GAI-002
+  - GEA-GRAPH-REFERENCE-001
+  - ADR-007
+  - GKR-INTELLIGENCE-CONTINUITY-001
 ---
 
 # Guivos Intelligence Architecture
 
-Este domínio reúne os modelos arquiteturais que orientam como a Guivos transforma dados, conhecimento, evidências, contexto e conexões em inteligência útil para apoiar Pessoas, Organizações e Coletivos.
+Este domínio reúne os modelos arquiteturais que orientam como a Guivos realiza tecnicamente capacidades necessárias para transformar dados, conhecimento, evidências, contexto e conexões em inteligência útil.
 
 ## Documentos do domínio
 
@@ -20,72 +27,90 @@ Este domínio reúne os modelos arquiteturais que orientam como a Guivos transfo
 
 A expressão pública e conceitual preferencial é **Inteligência do Ecossistema Guivos**.
 
-Ela descreve uma inteligência transversal que interpreta um ecossistema vivo de participantes, jornadas, oportunidades, experiências, conhecimentos, relacionamentos e evidências.
+Ela descreve uma inteligência transversal que interpreta um ecossistema vivo de participantes, jornadas, possibilidades, oportunidades, experiências, conhecimentos, relacionamentos e evidências.
+
+## Autoridade entre Produto e Arquitetura
+
+`GPA-006 — Guivos Intelligence 2.0.0` governa a **identidade e a autoridade de produto**.
+
+`GIA-000`, `GAI-001` e `GAI-002` governam princípios e arquiteturas responsáveis por realizar as capacidades do produto sem redefinir seu significado.
+
+`GEA-GRAPH-REFERENCE-001` governa a arquitetura de referência para grafo e tecnologias relacionadas.
+
+```mermaid
+flowchart TD
+    P[GPA-006 — Produto]
+    A[GIA / GAI — Intelligence Architecture]
+    G[GEA-GRAPH-REFERENCE-001 — Graph Architecture]
+    E[Engineering]
+    T[Tecnologias]
+
+    P --> A
+    P --> G
+    A --> E
+    G --> E
+    E --> T
+```
+
+Separação obrigatória:
+
+```text
+GPA-006
+= o que Guivos Intelligence é, entrega, pode fazer e deve preservar
+
+GIA-000 / GAI-001 / GAI-002
+= como a Intelligence Architecture organiza contexto, conhecimento,
+  aprendizagem, princípios e responsabilidades técnicas
+
+GEA-GRAPH-REFERENCE-001
+= arquitetura de referência para grafo e mecanismos relacionados
+
+ENGINEERING
+= realização física
+```
+
+A tecnologia não pode redefinir autoridade de produto.
 
 ## Princípio central
 
-A Inteligência do Ecossistema Guivos deve ampliar a capacidade de compreensão e decisão dos participantes, sem substituir sua autonomia, profissionais especializados ou instituições responsáveis por conhecimento validado.
+> **A tecnologia amplia a capacidade do Intelligence. Não amplia sua autoridade.**
+
+A Intelligence Architecture deve preservar autonomia humana, finalidade, minimização, proveniência, temporalidade, explicabilidade, incerteza, proteção e autoridade definidos em `GPA-006`.
 
 ## Relação com as camadas
 
 A Intelligence Layer serve todo o ecossistema.
 
-- o Journey apresenta compreensão, recomendações e explicações ao participante;
-- a Intelligence interpreta contexto, propõe compreensão e apoia decisões;
-- os produtos da Service Layer fornecem e consomem capacidades especializadas;
-- a Platform Layer sustenta dados, segurança, permissões, integrações e rastreabilidade.
+- o Journey governa a experiência da Pessoa e pode consumir compreensão, recomendações e explicações;
+- o Guivos Intelligence governa a produção de compreensão dentro de sua autoridade;
+- Business pode consumir inteligência populacional agregada e protegida;
+- Mall, Travel, Media e Ads podem fornecer sinais e consumir outputs dentro de seus contratos próprios;
+- a Platform Layer sustenta dados, segurança, permissões, integrações e rastreabilidade;
+- Engenharia realiza os mecanismos técnicos sem absorver autoridade de produto.
 
-A Intelligence não deve absorver responsabilidades permanentes de experiência, operação de serviços ou infraestrutura comum.
+## Arquitetura funcional versus decomposição técnica
 
-## Relação com GPA-006 — autoridade de produto
+`GPA-006 2.0.0` consolida como responsabilidades funcionais:
 
-`GPA-006 — Guivos Intelligence` governa a **identidade, proposta funcional, duas frentes de geração de valor, capacidades de produto, classes de input/output e guardrails de utilização da inteligência**.
+1. contexto;
+2. conhecimento;
+3. relações;
+4. compreensão;
+5. relevância;
+6. descoberta de possibilidades;
+7. agregação;
+8. insights e tendências;
+9. explicabilidade;
+10. aprendizado governado;
+11. Intelligence Serving como responsabilidade de entrega.
 
-`GIA-000` governa a arquitetura responsável por realizar essas capacidades e continua distinguindo conceitos funcionais consolidados de hipóteses técnicas ainda candidatas.
-
-A separação é obrigatória:
+Essas responsabilidades **não devem ser mapeadas mecanicamente 1:1 para serviços, engines ou componentes físicos**.
 
 ```text
-GPA-006
-= o que o Produto Especializado Guivos Intelligence é, entrega e pode fazer
-
-GIA-000 / GAI-001 / GAI-002
-= como a Intelligence Architecture organiza princípios, aprendizagem, contexto, conhecimento e inteligência
-
-GEA-GRAPH-REFERENCE-001
-= arquitetura de referência para grafo e tecnologias relacionadas
+RESPONSABILIDADE FUNCIONAL
+≠ MICROSSERVIÇO
+≠ ENGINE OBRIGATÓRIO
 ```
-
-A evolução de `GPA-006` não transforma nomes de engines candidatos em componentes obrigatórios, não declara microserviços, não materializa LPM, não seleciona modelo de IA e não autoriza implementação.
-
-## Grafo Global da Guivos
-
-O Grafo Global da Guivos é o modelo conceitual que organiza conexões, contextos, jornadas, experiências e evidências ao longo do tempo.
-
-Ele diferencia a inteligência da Guivos de uma inteligência baseada apenas em documentos, conversas ou respostas isoladas.
-
-Sua ontologia formal, modelo lógico e implementação técnica permanecem dependentes de detalhamento e validação.
-
-## Contexto multimodal
-
-A Guivos deve ser capaz de compreender contexto por meios naturais e complementares, incluindo voz, texto, documentos, imagens e integrações autorizadas.
-
-A voz é registrada como canal prioritário de expressão do Momento Atual, sem excluir alternativas acessíveis ou estruturadas.
-
-## Interpretação do Contexto
-
-Interpretação do Contexto é a responsabilidade funcional de transformar entradas autorizadas em compreensão coerente, explicável e utilizável.
-
-Ela deve distinguir fatos, intenções, objetivos, limitações, preferências, incertezas e inferências, preservando:
-
-- proveniência;
-- temporalidade;
-- confiança;
-- finalidade;
-- permissões;
-- possibilidade de confirmação, correção e contestação.
-
-A interpretação não deve alterar silenciosamente informações sensíveis ou permanentes.
 
 ## Contexto Vivo
 
@@ -93,13 +118,34 @@ Contexto Vivo é o conceito funcional vigente no `PAS-001` para a melhor compree
 
 Ele não representa verdade absoluta nem perfil fixo.
 
-A representação deve ser contextual, temporal, explicável, revisável e controlável pelo participante.
+A representação deve ser contextual, temporal, explicável, revisável e controlável pelo participante dentro das autoridades aplicáveis.
 
 O Contexto Vivo pertence funcionalmente à experiência do Journey, depende de interpretação apoiada pela Intelligence Layer e de persistência governada pela Platform Layer.
 
+## Interpretação do Contexto
+
+Interpretação do Contexto é a responsabilidade de transformar entradas autorizadas em compreensão coerente e utilizável preservando, conforme aplicável:
+
+- natureza da informação;
+- proveniência;
+- temporalidade;
+- confiança;
+- finalidade;
+- permissões;
+- possibilidade de confirmação;
+- correção;
+- contestação;
+- retirada.
+
+```text
+DECLARADO ≠ OBSERVADO ≠ INFERIDO ≠ PREDITO
+```
+
+A interpretação não deve promover inferência a fato nem alterar silenciosamente informação sob autoridade da Pessoa.
+
 ## Context Intelligence Engine — candidato
 
-O `Context Intelligence Engine (CIE)` permanece uma capacidade candidata da Intelligence Layer para:
+O `Context Intelligence Engine (CIE)` permanece capacidade candidata da Intelligence Layer para:
 
 - receber entradas multimodais autorizadas;
 - interpretar linguagem natural e sinais contextuais;
@@ -107,13 +153,13 @@ O `Context Intelligence Engine (CIE)` permanece uma capacidade candidata da Inte
 - propor atualizações do Contexto Vivo;
 - registrar proveniência, temporalidade e confiança;
 - solicitar confirmação quando necessário;
-- preservar explicabilidade e consentimento.
+- preservar explicabilidade e finalidade.
 
-O CIE permanece em Discovery/Engineering e não representa componente técnico obrigatório ou ativo canônico.
+O CIE permanece em Discovery/Engineering e não representa componente técnico obrigatório ou implementação comprovada.
 
 ## Família candidata de Intelligence Engines
 
-Foram identificadas para futura modelagem:
+Continuam identificados para futura modelagem:
 
 - Context Intelligence Engine;
 - Recommendation Intelligence Engine;
@@ -125,33 +171,162 @@ Foram identificadas para futura modelagem:
 
 Esses nomes representam responsabilidades candidatas, não microserviços obrigatórios.
 
-As dez responsabilidades funcionais consolidadas em `GPA-006` — contexto, conhecimento, relações, compreensão, relevância, descoberta de possibilidades, agregação, insights/tendências, explicabilidade e aprendizado — **não devem ser mapeadas mecanicamente 1:1 para essa família candidata de engines**. A decomposição técnica permanece aberta.
+A decomposição física pode futuramente consolidar, dividir, renomear ou eliminar esses candidatos conforme evidência de Engenharia.
 
 ## Living Participant Model — candidato
 
-O `Living Participant Model (LPM)` permanece uma hipótese de modelo contextual, temporal e continuamente atualizável do participante.
+O `Living Participant Model (LPM)` permanece hipótese de modelo contextual, temporal e continuamente atualizável do participante.
 
-O conceito funcional vigente no PAS é **Contexto Vivo**. A eventual relação entre Contexto Vivo e LPM deverá ser definida somente após validação funcional suficiente, sem presumir equivalência técnica ou arquitetural.
+O conceito funcional vigente é **Contexto Vivo**.
 
-Qualquer evolução deverá preservar:
+A eventual relação entre Contexto Vivo e LPM deverá ser definida somente após validação funcional e técnica suficiente, sem presumir equivalência.
+
+Qualquer evolução deve preservar:
 
 - soberania do participante;
 - transparência;
 - correção e contestação;
 - proveniência;
-- graus de confiança;
-- minimização de dados;
+- confiança;
+- minimização;
 - limites de uso;
 - integração governada com o Grafo Global.
 
-A criação de uma futura `Guivos Participant Model Architecture (GPMA)` depende de evidência prática suficiente produzida pelo Product Engineering, validação de responsabilidade permanente e decisão arquitetural formal.
+A futura `Guivos Participant Model Architecture (GPMA)` continua dependente de evidência prática, validação de responsabilidade permanente e decisão arquitetural formal.
+
+## Grafo Global da Guivos
+
+O Grafo Global é o modelo/capacidade de relações governadas que pode organizar conexões entre participantes, contextos, objetivos, possibilidades, oportunidades, experiências, conhecimento e evidências.
+
+```text
+GRAFO GLOBAL
+≠ GUIVOS INTELLIGENCE
+≠ NEO4J
+```
+
+Sua ontologia lógica completa, modelo físico, implementação e dados reais permanecem dependentes de detalhamento, validação e autoridade própria.
+
+Neo4j permanece tecnologia primária de referência por `ADR-007`, em estado `reference_selected`.
+
+## Knowledge, Graph, Analytics e AI
+
+A realização futura do Intelligence pode combinar:
+
+```mermaid
+flowchart LR
+    K[Knowledge]
+    G[Graph]
+    A[Analytics]
+    AI[AI]
+    I[Guivos Intelligence]
+
+    K --> I
+    G --> I
+    A --> I
+    AI --> I
+```
+
+Nenhuma dessas arquiteturas ou técnicas define isoladamente o produto.
+
+### Knowledge
+
+Preserva fontes, evidências, autoridade, conflitos, atualização e aplicabilidade.
+
+### Graph
+
+Preserva relações governadas, contexto relacional e mecanismos estruturais sem converter medidas técnicas em valor humano.
+
+### Analytics
+
+Mede, compara e identifica padrões, mudanças e tendências; correlação não constitui causalidade.
+
+### AI
+
+Pode apoiar linguagem, classificação, extração, síntese, recomendação e interação, mas sua capacidade técnica não cria autoridade de uso.
+
+## RAG e GraphRAG
+
+RAG e GraphRAG permanecem mecanismos candidatos para recuperação de conhecimento e contexto antes de síntese por modelos.
+
+```text
+RAG / GraphRAG
+≠ Guivos Intelligence
+≠ verdade automática
+≠ Canon automático
+```
+
+Relações inferidas por modelos devem permanecer distinguíveis de relações observadas, declaradas, curadas ou confirmadas.
+
+## Intelligence Serving
+
+`GPA-006 2.0.0` reconhece Intelligence Serving como responsabilidade de entregar outputs ao consumidor autorizado na granularidade, momento, canal e forma adequados.
+
+A realização técnica de Serving permanece aberta e pode futuramente envolver APIs, eventos, relatórios, alertas, superfícies analíticas, interfaces conversacionais ou outros mecanismos.
+
+```text
+OUTPUT PRODUZIDO
+≠ OUTPUT AUTORIZADO PARA ENTREGA
+```
+
+## Guivos.ai
+
+Guivos.ai permanece possível interface/agente conversacional que pode consumir capacidades do Intelligence.
+
+```text
+GUIVOS.AI
+= possível superfície
+
+GUIVOS INTELLIGENCE
+= Produto Especializado / Intelligence Layer
+```
+
+A interface deve herdar as mesmas políticas de autoridade aplicáveis a dashboards, APIs, relatórios e demais superfícies.
+
+## Power BI
+
+Power BI permanece consumidor/superfície analítica possível, não fonte de verdade do Intelligence.
+
+A integração técnica não está selecionada nem implementada.
+
+## Aprendizado governado
+
+Aprendizado contínuo não significa treinamento indiscriminado.
+
+```text
+NOVO EVENTO
+→ FINALIDADE
+→ AUTORIDADE
+→ QUALIDADE
+→ USO PERMITIDO
+→ APRENDIZADO
+```
+
+Dado autorizado para personalização, analytics ou serving não está automaticamente autorizado para treinamento de modelo.
 
 ## Estado
 
-Os princípios superiores de aprendizagem, conhecimento, evidência, contexto, recomendação, autonomia e organização por grafo estão consolidados.
+`GPA-006 2.0.0` consolida a arquitetura de produto dos Checkpoints 1–12 e encerra a fase de estruturação conceitual do Produto Especializado antes do Source Lock.
 
-Interpretação do Contexto e Contexto Vivo estão consolidados como conceitos funcionais do PAS-001, sem definir implementação técnica definitiva.
+Permanecem abertos ou não evidenciados:
 
-`GPA-006` v1.6.0 consolida no plano de produto os Checkpoints 1–6 da atual estruturação do Guivos Intelligence e mantém o Checkpoint 7 como próximo ponto. Essa consolidação não autoriza Home Pública, Design ou implementação.
+- CIE operacional;
+- LPM físico;
+- GPMA;
+- família física de Intelligence Engines;
+- ontologia lógica completa;
+- ontologia física;
+- modelo físico de dados;
+- POC de grafo;
+- Neo4j provisionado/produção;
+- GDS operacional;
+- GraphRAG operacional;
+- modelo de IA selecionado;
+- MLOps;
+- serving técnico;
+- APIs físicas;
+- Power BI integrado;
+- thresholds de proteção populacional;
+- explicabilidade operacional;
+- controles de privacidade operacionais.
 
-CIE, LPM, família de Intelligence Engines, GPMA, ontologia formal, modelos lógicos, tecnologias, políticas operacionais e controles técnicos permanecem em investigação, detalhamento ou validação.
+A próxima etapa de produto é a criação governada do **Source Lock do Guivos Intelligence**, após integração de `GPA-006 2.0.0`. A Home Pública do Intelligence permanece não iniciada.
