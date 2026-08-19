@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.38.0
+version: 2.39.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-17
+last_updated: 2026-08-18
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -23,6 +23,10 @@ related:
   - GKR-UX-HOME-BUSINESS-SOURCELOCK-001
   - GKR-UX-HOME-BUSINESS-GENINPUT-001
   - GKR-BUSINESS-HOME-CONTINUITY-005
+  - GPA-005
+  - GPA-006
+  - GIA-000
+  - GKR-INTELLIGENCE-CONTINUITY-001
   - GPA-007
   - UXA-097
   - UXA-098
@@ -64,14 +68,13 @@ related:
   - GKR-UX-HOME-TRAVEL-MASTER-001
   - GKR-UX-HOME-MEDIA-MASTER-001
   - GKR-UX-HOME-ADS-MASTER-001
-  - GPA-005
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
   - GKR-UX-HOME-ADS-GENINPUT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V2-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V3-SNAPSHOT-001
-  - ROADMAP-12.80.0
+  - ROADMAP-12.81.0
   - M7.88
 normative: true
 ---
@@ -94,6 +97,10 @@ A autoridade de produto do Guivos Business está ressincronizada em `GPA-004` v1
 
 A Home Pública do Guivos Business está **documentalmente convergida e apta à fase externa de Design**. A arquitetura narrativa, os contratos de autoridade, a conversão global v2, o Documento Mestre, o Source Lock semântico e o Source Lock Operacional + Prompt estão integrados. Business foi incluído no handoff canônico v1.2.0 e na emissão externa v3, sem que qualquer output visual tenha sido produzido ou promovido automaticamente no GKR.
 
+A autoridade de produto do Guivos Intelligence está agora consolidada em **`GPA-006 2.0.0`**. A edição encerra os Checkpoints 1–12 e governa identidade, duas frentes superiores — Pessoa/Journey e Business/População —, capacidades funcionais, Contexto Vivo, inputs, outputs, proveniência, proteção populacional, contratos interproduto, handoffs minimizados, arquiteturas tecnológicas subordinadas, modos de entrega, Intelligence Serving, direção comercial, governança, maturidade, gaps e guardrails. `GIA-000 1.5.0` reconcilia a relação entre autoridade de produto e Intelligence Architecture sem promover engines candidatos ou implementação física.
+
+A convergência do Intelligence **não inicia sua Home Pública, não cria Source Lock de Home, não cria wireframe/UI/Design, não seleciona modelo de IA e não comprova Neo4j, GraphRAG, Power BI ou APIs operacionais**. O próximo ponto governado é o **Source Lock do Produto Guivos Intelligence**; somente depois deve ser iniciada a arquitetura da Home Pública.
+
 Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
 ## 2. Estado global
@@ -108,6 +115,8 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Experience Architecture pública mais recente | **sete Homes convergidas e incluídas no handoff controlado de Design; emissão externa v3 materializada** |
 | Guivos Business — autoridade de produto | **GPA-004 v1.6.0 ressincronizado; duas ofertas principais: Programas de Incentivo + Guivos Journey custeado pela Empresa; Business distinto de Organização e independente de Ads** |
 | Home Pública — Guivos Business | **arquitetura narrativa, autoridade, conversão v2, Documento Mestre e Source Locks convergidos; Design autorizado proceduralmente; snapshot v3 emitido; output visual ainda não produzido no GKR** |
+| Guivos Intelligence — autoridade de produto | **GPA-006 v2.0.0 convergido; Checkpoints 1–12 consolidados; GIA-000 v1.5.0 sincronizado; próximo ponto = Source Lock do Produto** |
+| Home Pública — Guivos Intelligence | **não iniciada; sem Documento Mestre de Home, Source Lock de Home, wireframe, UI, protótipo ou Design** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Domínios de Evolução do Journey | **9 domínios canônicos + estado transversal “Ainda estou descobrindo”** |
@@ -133,7 +142,7 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | P5 | arquitetura institucional integrada — Fundação Guivos continua conceito, não entidade comprovada |
 | P6 | arquitetura de privacidade/verdade operacional integrada — controles reais dependem de evidência |
 | P7 | governança territorial integrada — Portugal permanece `T1_candidate` |
-| P8 | sete Produtos Especializados rebaselineados |
+| P8 | sete Produtos Especializados rebaselineados; Intelligence posteriormente aprofundado em GPA-006 v2.0.0 |
 | P9 | consolidação global e Public Canon em edição corrente |
 
 ## 3. Cobertura funcional e visual reconciliada
@@ -294,11 +303,42 @@ Não há autoridade suficiente para afirmar POC, cluster/Aura provisionado, dado
 
 Os Domínios de Evolução constituem vocabulário semântico canônico do Journey e podem orientar futura ontologia, classificação explicável e relações no Grafo Global. Isso **não** declara ontologia física, nós, relações, embeddings, pipelines ou dados implementados.
 
-Guivos Intelligence pode produzir candidatos de domínio e relações multidomínio, mas não pode transformar inferência em domínio confirmado sem autoridade suficiente, criar score humano ou utilizar domínio sensível como autorização de publicidade comportamental.
+`GPA-006 2.0.0` consolida Guivos Intelligence como Produto Especializado transversal e Intelligence Layer com dois grandes eixos de valor:
 
-No Guivos Business, Intelligence trabalha com **dados, interações e eventos legitimamente gerados dentro do Ecossistema Guivos**. A Guivos pode produzir indicadores agregados, tendências e comparações temporais do próprio programa e fornecê-los de forma estruturada; a empresa pode combinar essas saídas com seus KPIs internos em seu próprio ambiente analítico. O Intelligence Business não depende de importar bases internas da empresa nem utiliza comparação interna antes/depois como atalho para provar causalidade. O contexto pessoal protegido da Journey não se torna dado empresarial por existir relação contratual, financiamento de incentivo ou capacidade técnica.
+```mermaid
+flowchart TD
+    I[Guivos Intelligence]
+    I --> P[Pessoa / Journey]
+    I --> B[Business / População]
 
-A materialização/validação documental de `PER-010..012`, o contrato D5-C4A e a validação integrada D5-C4B não declaram rotas, banco, APIs, eventos ou modelo físico de grafo implementados.
+    P --> P1[Contexto individual autorizado]
+    P1 --> P2[Compreensão + possibilidades]
+
+    B --> B1[Minimização + agregação + proteção]
+    B1 --> B2[Indicadores + tendências + movimentos + insights]
+```
+
+Na frente Pessoa, a Intelligence pode compreender contexto autorizado e apoiar o Journey a revelar possibilidades relevantes sem assumir a decisão da Pessoa.
+
+Na frente Business, Intelligence trabalha com **dados, interações e eventos legitimamente gerados ou conhecidos dentro do Ecossistema Guivos** e entrega leitura populacional agregada e protegida. A Empresa pode combinar essas saídas com seus KPIs internos em seu próprio ambiente analítico. O Intelligence Business não depende de importar bases internas completas da empresa nem utiliza comparação interna antes/depois como atalho para provar causalidade.
+
+A arquitetura preserva:
+
+```text
+COMPREENDER ≠ DECIDIR
+CONHECER ≠ UTILIZAR ≠ COMPARTILHAR
+PERSONALIZAR ≠ EXPOR
+DECLARADO ≠ OBSERVADO ≠ INFERIDO ≠ PREDITO
+CORRELAÇÃO ≠ CAUSALIDADE
+ENTITLEMENT ≠ AUTORIDADE
+MAIOR PLANO ≠ MENOR PRIVACIDADE
+INFERÊNCIA DA IA ≠ FATO
+TECNOLOGIA ≠ PRODUTO
+```
+
+`GIA-000 1.5.0` mantém CIE, LPM, GPMA e família de Intelligence Engines como candidatos técnicos/arquiteturais. Não existe autoridade suficiente para declarar arquitetura física, engines implementados, modelo de IA selecionado, MLOps, serving técnico, APIs ou ontologia física.
+
+A materialização/validação documental de `PER-010..012`, o contrato D5-C4A, a validação integrada D5-C4B e a convergência do GPA-006 não declaram rotas, banco, APIs, eventos, grafo físico ou Intelligence operacional implementados.
 
 ## 7. Marca, naming e ativos digitais
 
@@ -381,6 +421,8 @@ A D5-C3 valida documentalmente que os estados-base preservam minimização, cont
 
 No Guivos Business, vínculo empresarial, custeio de Journey, concessão de benefício ou participação em programa não ampliam automaticamente a finalidade nem autorizam exposição do contexto pessoal protegido à empresa contratante.
 
+`GPA-006 2.0.0` reforça Privacy by Architecture na Intelligence Layer: profundidade de compreensão não equivale a profundidade de exposição; dados individualmente utilizados para servir a própria Pessoa não se tornam automaticamente outputs Business, Ads, treinamento de modelo ou datasets exportáveis. Thresholds operacionais, técnicas de proteção e controles de enforcement continuam dependentes de autoridades próprias e evidência.
+
 ## 12. Public Canon
 
 `GOG-001 — Guia Oficial da Guivos` é a única superfície institucional classificada como `public-canon` neste domínio documental.
@@ -398,6 +440,8 @@ A página pública de Arquitetura do Guivos Journey explicita os nove Domínios 
 
 D5-C4B é uma autoridade interna de Experience Architecture e não, por si só, autoriza declaração pública de disponibilidade de produto. Validação documental integrada ≠ tela implementada.
 
+`GPA-006 2.0.0` é autoridade de Produto Especializado e não, por si só, autoriza Home Pública, oferta operacional, pricing, IA em produção, dashboard, API, GraphRAG ou benchmark real.
+
 Nenhum texto público pode promover estado superior ao evidenciado nas autoridades internas.
 
 ### 12.1 Homes públicas, Media, Ads e handoff para Design
@@ -411,6 +455,8 @@ Sete Homes públicas estão convergidas documentalmente para a fase de Design:
 5. Guivos Media;
 6. Guivos Ads;
 7. Guivos Business.
+
+A Home Pública do Guivos Intelligence ainda **não integra essa lista**.
 
 Cada Home mantém autoridade própria de narrativa e finalidade. O Guivos Media possui autoridade editorial e pode abastecer outras superfícies com conteúdo sem adquirir autoridade sobre a finalidade, narrativa ou operação dessas superfícies.
 
@@ -479,6 +525,34 @@ Guivos Intelligence apoia o Business utilizando dados/eventos gerados na própri
 
 A Home Pública do Guivos Business está documentalmente convergida. `GKR-UX-HOME-BUSINESS-NARRATIVE-001`, `GKR-UX-HOME-BUSINESS-AUTHORITY-001`, `GKR-UX-HOME-BUSINESS-CONVERSION-002`, `GKR-UX-HOME-BUSINESS-MASTER-001`, `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` e `GKR-UX-HOME-BUSINESS-GENINPUT-001` governam sua narrativa, fronteiras, conversão, Documento Mestre e inputs de Design. Pontos permanecem capacidade funcional do produto, porém foram deliberadamente retirados da narrativa pública da Home. A contratação pública vigente é online; `Self-service`, `Com apoio do suporte` e `Gerenciado` são modelos de implementação/operação. Business integra o handoff de Design v1.2.0 e o snapshot externo v3; nenhum output visual é promovido automaticamente a autoridade canônica.
 
+### 12.3 Reconciliação canônica do Guivos Intelligence
+
+`GPA-006 2.0.0` passa a ser a autoridade superior do Produto Especializado Guivos Intelligence.
+
+Sua unidade de valor é **compreensão útil e contextualizada**.
+
+A arquitetura reconhece um núcleo transversal e duas frentes superiores:
+
+```text
+PESSOA / JOURNEY
+→ contexto individual autorizado
+→ compreensão e possibilidades relevantes
+→ decisão permanece com a Pessoa
+
+BUSINESS / POPULAÇÃO
+→ minimização + agregação + proteção
+→ indicadores, tendências, movimentos e insights
+→ decisão empresarial permanece com a Empresa
+```
+
+O produto reconhece responsabilidades de contexto, conhecimento, relações, compreensão, relevância, possibilidades, agregação, insights/tendências, explicabilidade, aprendizado governado e Intelligence Serving.
+
+Graph, Knowledge, Analytics e AI são arquiteturas/capacidades subordinadas. Neo4j, modelos de IA, embeddings e Power BI são tecnologias ou consumidores possíveis. Guivos.ai permanece possível superfície conversacional. Nenhum desses elementos redefine a identidade do produto.
+
+O modelo comercial de alto nível preserva Intelligence predominantemente embutido para a Pessoa e capacidades progressivas do Intelligence dentro dos entitlements Business, sem transformar Intelligence em módulo do Business. Oferta B2B autônoma do Intelligence permanece candidato futuro.
+
+A Home Pública do Intelligence permanece não iniciada. O próximo ato governado é a criação de seu Source Lock de Produto.
+
 ## 13. Programa P0–P9
 
 O programa amplo de ressincronização documental está **consolidado** quanto aos pacotes temáticos previstos:
@@ -491,7 +565,7 @@ O programa amplo de ressincronização documental está **consolidado** quanto a
 - P5 — institucional/jurídico: integrado como arquitetura/gates;
 - P6 — operação/privacidade/legal: integrado como arquitetura/gates;
 - P7 — internacionalização: integrado como programa territorial/gates;
-- P8 — Produtos Especializados: integrado;
+- P8 — Produtos Especializados: integrado, com aprofundamento posterior do Intelligence em `GPA-006 2.0.0`;
 - P9 — estado global/Public Canon: consolidado por `GKR-P9-GLOBAL-CONSOLIDATION-001`.
 
 **Encerramento documental não significa encerramento das lacunas operacionais.** Itens dependentes de evidência permanecem abertos em seus domínios próprios.
@@ -519,6 +593,8 @@ D5-C1/C2/C3/C4A/C4B não são V5 e não alteram a numeração UXA.
 A evolução das Homes públicas e o handoff de Design são frentes de Experience Architecture separadas da fila UXA funcional acima e não alteram M7.88 nem iniciam UXA-102. As sete Homes atualmente convergidas podem seguir para exploração de Design dentro de seus contextos isolados e Source Locks.
 
 A ressincronização do Guivos Business continua sendo atualização de autoridade de produto separada da fila UXA. A Home Business também percorreu frente própria de Experience Architecture até Documento Mestre, Source Lock, autorização procedimental de Design e inclusão na emissão v3, sem alterar M7.88 ou iniciar UXA-102.
+
+A convergência do Guivos Intelligence em `GPA-006 2.0.0` também é frente de autoridade de produto separada da fila UXA. Ela não cria superfície, transição, SVG, UXA ou marco funcional.
 
 ## 15. Preservações finais
 
@@ -563,11 +639,23 @@ A ressincronização do Guivos Business continua sendo atualização de autorida
 - Intelligence Business usa dados/eventos gerados na Guivos; combinação com KPIs internos ocorre no ambiente analítico da empresa;
 - Home Business: narrativa + autoridade + conversão v2 + Documento Mestre + Source Lock + Prompt operacional convergidos; Design autorizado proceduralmente ≠ output visual aprovado;
 - contratação Business pública vigente = online; `Self-service / Com apoio do suporte / Gerenciado` = modelos de implementação/operação;
+- `GPA-006 2.0.0` está convergido como autoridade de Produto Especializado, não como prova de implementação;
+- duas frentes do Intelligence = Pessoa/Journey + Business/População;
+- profundidade de compreensão ≠ profundidade de exposição;
+- entitlement ≠ autoridade;
+- relação comercial ≠ relevância pessoal;
+- Guivos Intelligence ≠ IA ≠ Guivos.ai ≠ Grafo Global ≠ Neo4j ≠ Power BI;
+- Intelligence Serving está consolidado conceitualmente, não implementado tecnicamente;
+- CIE, LPM, GPMA e família de Intelligence Engines permanecem candidatos técnicos/arquiteturais;
+- Neo4j permanece `reference_selected`, não POC/provisioned/production;
+- GraphRAG permanece padrão candidato, não implementação comprovada;
+- oferta B2B autônoma do Intelligence não está estabelecida;
+- Home Pública do Intelligence não foi iniciada;
+- Source Lock do Produto Intelligence permanece próximo ato e não é criado automaticamente por esta versão;
 - projeção não é realizado;
 - preço não é disposição a pagar;
 - capital não é receita;
 - valuation interno não é laudo/oferta/promessa;
-- relação comercial não compra relevância;
 - recompensa não compra evolução;
 - internacionalização planejada não é mercado ativo;
 - nenhuma etapa autoriza automaticamente a seguinte.
@@ -577,6 +665,17 @@ A ressincronização do Guivos Business continua sendo atualização de autorida
 A fase de Design das sete Homes convergidas está proceduralmente autorizada e deve ser executada por contexto isolado, utilizando o handoff comum, as autoridades específicas e o Source Lock da respectiva Home. Outputs permanecem `EXPLORAÇÃO` até validação humana contra o GKR.
 
 Para o Guivos Business, a etapa documental necessária para iniciar Design está concluída. O próximo ato é materializar a primeira exploração externa da Home Business a partir do contexto isolado da emissão v3 e submetê-la à validação humana contra `GKR-UX-HOME-BUSINESS-SOURCELOCK-001`, o Documento Mestre, a conversão vigente, os contratos de autoridade e `GPA-004`. Nenhum output é promovido automaticamente a estado canônico.
+
+Para o Guivos Intelligence, `GPA-006 2.0.0` encerra a estruturação do Produto Especializado. O próximo ato é **criar o Source Lock do Produto Guivos Intelligence**, congelando as autoridades necessárias para iniciar posteriormente a arquitetura da Home sem permitir que a Home redefina o produto. Somente após esse Source Lock deve ser iniciada a Home Pública do Intelligence.
+
+```mermaid
+flowchart TD
+    A[GPA-006 2.0.0 integrado]
+    B[Source Lock do Produto Intelligence]
+    C[Home Pública do Guivos Intelligence]
+
+    A --> B --> C
+```
 
 D6, D7, materialização de `PER-009`, maturidade das transições internas de Planos, integrações patrocinadas, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria. Nenhuma é iniciada automaticamente.
 
