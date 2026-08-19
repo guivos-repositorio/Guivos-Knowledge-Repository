@@ -1,12 +1,13 @@
 ---
 id: GKR-INTELLIGENCE-CONTINUITY-001
-title: Checkpoint de Continuidade — Guivos Intelligence — Produto Especializado — GPA-006 V2
+title: Checkpoint de Continuidade — Guivos Intelligence — pós-Source Lock do Produto
 status: active
-version: 2.0.0
+version: 2.1.0
 owner: Guivos
 last_updated: 2026-08-18
 related:
   - GPA-006
+  - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
   - GIA-000
   - GAI-001
   - GAI-002
@@ -16,13 +17,13 @@ related:
 normative: false
 ---
 
-# Checkpoint de Continuidade — Guivos Intelligence — Produto Especializado — GPA-006 V2
+# Checkpoint de Continuidade — Guivos Intelligence — pós-Source Lock do Produto
 
 ## 1. Finalidade
 
-Este checkpoint preserva o ponto exato da estruturação do **Produto Especializado Guivos Intelligence** após a convergência dos Checkpoints 1–12 e antes da criação de seu Source Lock e de sua Home Pública.
+Este checkpoint preserva o ponto exato da estruturação do **Produto Especializado Guivos Intelligence** após a convergência dos Checkpoints 1–12, a promoção de `GPA-006` para `2.0.0` e a materialização do `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001`.
 
-A autoridade superior é `GPA-006 — Guivos Intelligence 2.0.0`. Este arquivo é somente um registro recuperável de continuidade e não substitui a autoridade de produto, as autoridades de Intelligence Architecture, Grafo, Journey, Business, dados, privacidade ou governança.
+A autoridade superior continua sendo `GPA-006 — Guivos Intelligence 2.0.0`. O Source Lock governa quais fontes, claims, precedências e limites podem alimentar a futura estruturação da Home Pública. Este arquivo é somente um registro recuperável de continuidade e não substitui essas autoridades.
 
 ## 2. Estado consolidado
 
@@ -61,10 +62,33 @@ CHECKPOINT 11 — governança, maturidade, gaps, riscos e guardrails
 → CONVERGIDO
 
 CHECKPOINT 12 — Documento Mestre / GPA-006 V2
-→ CONVERGIDO
+→ CONVERGIDO E INTEGRADO
+
+SOURCE LOCK DO PRODUTO
+→ GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
+→ MATERIALIZADO
+
+HOME PÚBLICA GUIVOS INTELLIGENCE
+→ NÃO INICIADA
 ```
 
-## 3. Arquitetura recuperável em uma visão
+## 3. Sequência governada vigente
+
+```mermaid
+flowchart TD
+    A[GPA-006 v2.0.0\nProduto convergido]
+    B[Source Lock do Produto\nv1.0.0]
+    C[Home Intelligence\narquitetura conceitual]
+    D[Documento Mestre da Home]
+    E[Source Lock da Home]
+    F[Handoff / Design controlado]
+
+    A --> B --> C --> D --> E --> F
+```
+
+Nenhuma etapa autoriza automaticamente a seguinte.
+
+## 4. Arquitetura recuperável em uma visão
 
 ```mermaid
 flowchart TD
@@ -94,7 +118,7 @@ flowchart TD
     I -. apoia sob limites .-> A[Ads]
 ```
 
-## 4. Identidade congelada
+## 5. Identidade congelada
 
 Guivos Intelligence é o **Produto Especializado transversal da Guivos e a Intelligence Layer do ecossistema**.
 
@@ -110,7 +134,7 @@ COMPREENDER ≠ DECIDIR
 
 Intelligence produz compreensão; a autoridade de decisão permanece com quem legitimamente a possui.
 
-## 5. Duas frentes superiores
+## 6. Duas frentes superiores
 
 ```mermaid
 flowchart LR
@@ -127,13 +151,13 @@ flowchart LR
 
 ### Pessoa / Journey
 
-Pergunta:
+Pergunta funcional:
 
 > **O que pode ser relevante para esta Pessoa, neste momento, considerando sua própria Journey?**
 
 ### Business / População
 
-Pergunta:
+Pergunta funcional:
 
 > **O que está emergindo nesta população e o que a Empresa pode compreender a partir disso?**
 
@@ -144,7 +168,7 @@ AUTORIDADE PARA PERSONALIZAR
 ≠ AUTORIDADE PARA EXPOR
 ```
 
-## 6. Núcleo funcional
+## 7. Núcleo funcional
 
 Responsabilidades consolidadas:
 
@@ -166,7 +190,7 @@ RESPONSABILIDADE FUNCIONAL
 ≠ ENGINE TÉCNICO OBRIGATÓRIO
 ```
 
-## 7. Inputs e outputs
+## 8. Inputs e outputs
 
 Inputs distinguem:
 
@@ -209,7 +233,7 @@ Contrato:
 DECLARADO ≠ OBSERVADO ≠ INFERIDO ≠ PREDITO
 ```
 
-## 8. Proveniência e finalidade
+## 9. Proveniência e finalidade
 
 ```text
 CONHECER ≠ UTILIZAR ≠ COMPARTILHAR
@@ -228,7 +252,7 @@ flowchart LR
     F --> D --> G --> P --> O
 ```
 
-## 9. Proteção populacional
+## 10. Proteção populacional
 
 ```text
 INDIVIDUAL
@@ -248,7 +272,7 @@ AGREGADO ≠ AUTOMATICAMENTE SEGURO
 
 A Empresa não recebe um “Intelligence por funcionário”.
 
-## 10. Contratos interproduto
+## 11. Contratos interproduto
 
 | Produto | Intelligence apoia | Autoridade final |
 |---|---|---|
@@ -263,7 +287,7 @@ Princípio:
 
 > **Intelligence conecta autoridades. Não as absorve.**
 
-## 11. Handoff minimizado
+## 12. Handoff minimizado
 
 ```mermaid
 flowchart LR
@@ -281,7 +305,7 @@ OUTPUT AUTORIZADO
 ≠ DATASET DE ORIGEM
 ```
 
-## 12. Produto versus tecnologia
+## 13. Produto versus tecnologia
 
 ```text
 GUIVOS INTELLIGENCE
@@ -317,7 +341,7 @@ GUIVOS.AI
 
 > **A tecnologia amplia capacidade. Não amplia autoridade.**
 
-## 13. Modos de entrega
+## 14. Modos de entrega
 
 ```text
 EMBUTIDO
@@ -332,7 +356,7 @@ Intelligence pode ser origem de compreensão sem ser destino da experiência.
 
 `Intelligence Serving` governa conceitualmente quem pode receber determinado output, em qual granularidade, momento, canal e forma.
 
-## 14. Direção comercial
+## 15. Direção comercial
 
 ### Pessoa
 
@@ -361,7 +385,7 @@ MAIOR PLANO ≠ MENOR PRIVACIDADE
 
 Uma oferta B2B autônoma do Intelligence permanece candidato futuro, não oferta vigente.
 
-## 15. Constituição
+## 16. Constituição
 
 1. servir à compreensão, não ao controle;
 2. preservar autonomia humana;
@@ -376,7 +400,7 @@ Uma oferta B2B autônoma do Intelligence permanece candidato futuro, não oferta
 11. tecnologia não cria autoridade;
 12. quando não houver evidência suficiente, não inventar certeza.
 
-## 16. Maturidade e gaps
+## 17. Maturidade e gaps
 
 Convergido como autoridade de produto:
 
@@ -392,7 +416,8 @@ Convergido como autoridade de produto:
 - Serving;
 - direção comercial;
 - governança;
-- guardrails.
+- guardrails;
+- Source Lock do Produto para entrada controlada da futura Home.
 
 Continuam abertos ou não evidenciados:
 
@@ -412,11 +437,41 @@ Continuam abertos ou não evidenciados:
 - pricing final;
 - compliance e controles de privacidade operacionais.
 
-## 17. Home Pública
+## 18. Source Lock do Produto
 
-A Home Pública do Guivos Intelligence permanece **não iniciada**.
+`GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0` passa a ser a **porta de entrada normativa para a futura estruturação da Home Pública do Guivos Intelligence**.
 
-Esta convergência não cria:
+Ele congela:
+
+- pacote primário de fontes;
+- fontes secundárias consultáveis somente por dúvida específica;
+- ordem de autoridade;
+- centro semântico;
+- duas frentes superiores;
+- traduções públicas permitidas e distorções proibidas;
+- maturidade tecnológica;
+- claims proibidos;
+- direção comercial vigente;
+- gaps que a Home não pode preencher por inferência;
+- gate para novos claims e novas fontes.
+
+Ele não congela:
+
+- pergunta-mãe da Home;
+- hero;
+- headline;
+- CTA;
+- arquitetura narrativa;
+- quantidade de movimentos;
+- visual;
+- UI;
+- Design.
+
+## 19. Home Pública
+
+A Home Pública do Guivos Intelligence permanece **não iniciada** neste checkpoint.
+
+O Source Lock do Produto não cria:
 
 - Documento Mestre da Home;
 - Source Lock da Home;
@@ -427,21 +482,10 @@ Esta convergência não cria:
 - protótipo;
 - Design.
 
-## 18. Próximo ponto exato
+## 20. Próximo ponto exato
 
-Após a integração governada de `GPA-006 2.0.0`, retomar exatamente em:
+Após integração governada do `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001`, retomar exatamente em:
 
-> **Source Lock do Produto Guivos Intelligence.**
+> **arquitetura conceitual da Home Pública do Guivos Intelligence.**
 
-Sequência preservada:
-
-```mermaid
-flowchart TD
-    A[GPA-006 2.0.0 integrado]
-    B[Source Lock do Produto]
-    C[Home Guivos Intelligence]
-
-    A --> B --> C
-```
-
-O Source Lock deve congelar a autoridade de produto necessária para a construção da Home sem iniciar Design ou UI.
+A Home deverá começar pelo Source Lock do Produto e por `GPA-006 v2.0.0`, sem misturar automaticamente Source Locks, Documentos Mestres ou Design das outras Homes.
