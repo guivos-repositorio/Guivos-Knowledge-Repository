@@ -8,12 +8,14 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **2.38.0** |
+| GKR-STATE-001 | **2.39.0** |
 | Era | GE-2 — Knowledge |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
 | frente não numerada mais recente | **D5-C4B — TRN-008..013 integralmente validadas no limite documental** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
+| Guivos Intelligence | **GPA-006 v2.0.0 convergido; Source Lock do Produto é o próximo ponto** |
+| Home Pública do Intelligence | **não iniciada** |
 | Homes públicas convergidas para Design | **7 — Pessoa, Organizações e Coletivos, Mall, Travel, Media, Ads e Business** |
 | handoff externo vigente | **v3 — 25 fontes canônicas + 7 guias = 32 arquivos** |
 | SVGs | **121 — 121 validados / 0 pendentes** |
@@ -30,10 +32,13 @@ O Journey possui baseline canônico de **9 Domínios de Evolução**. D5-A e D5-
 
 O documento institucional público vigente é o [GOG-001 — Guia Oficial da Guivos 5.0.0](docs/public/guia-oficial-da-guivos.md).
 
-A edição 5.0.0 foi reconciliada com as autoridades de participantes, planos, sete Produtos Especializados, grafo/Neo4j, incentivos, arquitetura institucional, privacidade e internacionalização. D5-C4B permanece autoridade interna de Experience Architecture e não declara disponibilidade pública de produto.
+A edição 5.0.0 foi reconciliada com as autoridades de participantes, planos, sete Produtos Especializados, grafo/Neo4j, incentivos, arquitetura institucional, privacidade e internacionalização. D5-C4B permanece autoridade interna de Experience Architecture e não declara disponibilidade pública de produto. `GPA-006 2.0.0` é autoridade de Produto Especializado e não declara Home Pública, IA em produção ou oferta operacional do Intelligence.
 
 ## Autoridades recentes
 
+- [GPA-006 — Guivos Intelligence v2.0.0](docs/product-architecture/intelligence.md)
+- [Checkpoint de Continuidade — Guivos Intelligence — GPA-006 V2](docs/project/intelligence-product-continuity-checkpoint-2026-08-18.md)
+- [Guivos Intelligence Architecture — GIA-000 v1.5.0](docs/intelligence-architecture/index.md)
 - [Snapshot externo de Design v3 — sete Homes](docs/experience-architecture/public-homes-design-delivery-v3-snapshot-record.md)
 - [Manifesto Canônico de Entrega para Design v3](docs/experience-architecture/public-homes-design-delivery-manifest.md)
 - [Handoff Canônico das Homes Públicas v1.2.0](docs/experience-architecture/public-homes-design-handoff.md)
@@ -81,6 +86,42 @@ O Guivos Business possui autoridade de produto ressincronizada e Home Pública d
 
 A Home Business está incluída no `GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.2.0 e no snapshot externo v3. **Design está autorizado proceduralmente; nenhum output visual foi produzido ou promovido automaticamente pelo GKR.**
 
+## Guivos Intelligence — continuidade recuperável
+
+O Produto Especializado está consolidado em [GPA-006 — Guivos Intelligence v2.0.0](docs/product-architecture/intelligence.md).
+
+A arquitetura vigente reconhece:
+
+```text
+GUIVOS INTELLIGENCE
+= Produto Especializado transversal + Intelligence Layer
+
+DUAS FRENTES
+├── Pessoa / Journey
+└── Business / População
+
+UNIDADE DE VALOR
+→ compreensão útil e contextualizada
+```
+
+Contratos de leitura obrigatórios:
+
+```text
+COMPREENDER ≠ DECIDIR
+CONHECER ≠ UTILIZAR ≠ COMPARTILHAR
+PERSONALIZAR ≠ EXPOR
+ENTITLEMENT ≠ AUTORIDADE
+PAGAMENTO ≠ PERTINÊNCIA
+INFERÊNCIA ≠ FATO
+TECNOLOGIA ≠ PRODUTO
+```
+
+O `GPA-006 2.0.0` inclui diagramas e fluxos canônicos para arquitetura funcional, inputs, outputs, duas frentes, proteção populacional, handoffs, Graph/Knowledge/Analytics/AI, Serving, modelo comercial e governança.
+
+O [checkpoint de continuidade](docs/project/intelligence-product-continuity-checkpoint-2026-08-18.md) registra os Checkpoints 1–12 como convergidos.
+
+**Próximo ponto:** criar o Source Lock do Produto Guivos Intelligence. A Home Pública do Intelligence continua não iniciada.
+
 ## Separações canônicas
 
 ```text
@@ -89,6 +130,7 @@ Journey · Mall · Travel · Business · Media · Intelligence · Ads = Produtos
 Organização ≠ Guivos Business
 Guivos Business ≠ Guivos Ads
 Guivos Intelligence ≠ módulo do Guivos Business
+Guivos Intelligence ≠ IA ≠ Guivos.ai ≠ Grafo Global ≠ Neo4j ≠ Power BI
 custeio empresarial da Journey ≠ propriedade ou controle da Journey
 contratação Business = online ≠ modelo de implementação/operação
 Self-service / Com apoio do suporte / Gerenciado ≠ Start / Growth / Scale / Enterprise
@@ -102,6 +144,7 @@ PER-010..012 validados localmente ≠ produto implementado
 TRN-008..013 integralmente validadas documentalmente ≠ continuidade implementada
 Domínio de Evolução ≠ identidade ≠ score ≠ diagnóstico ≠ prova de evolução
 Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança
+GPA-006 2.0.0 convergido ≠ Intelligence implementado
 ```
 
 ## Planos
@@ -158,6 +201,11 @@ Não estão autorizados ou comprovados apenas pela consolidação documental:
 - implementação/produção Neo4j, GraphRAG ou GDS;
 - classificação operacional por IA dos Domínios de Evolução;
 - ontologia física de grafo para os Domínios de Evolução;
+- modelo físico de dados/ontologia física do Guivos Intelligence;
+- modelo de IA selecionado ou MLOps operacional;
+- APIs Intelligence operacionais;
+- Power BI integrado ao Intelligence;
+- Source Lock ou Home Pública do Guivos Intelligence;
 - PMF ou resultados de pesquisa sem base reproduzível;
 - programa operacional de pontos/créditos;
 - registro marcário/domínio sem evidência;
@@ -182,6 +230,9 @@ Não estão autorizados ou comprovados apenas pela consolidação documental:
 - [Source Lock da Home Guivos Business](docs/experience-architecture/public-home-business-source-lock.md)
 - [Documento Mestre da Home Guivos Business](docs/experience-architecture/public-home-business-master-document.md)
 - [Checkpoint de Continuidade v5 da Home Guivos Business](docs/project/business-home-continuity-checkpoint-2026-08-16-v5.md)
+- [Guivos Intelligence](docs/product-architecture/intelligence.md)
+- [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
+- [Checkpoint de Continuidade do Guivos Intelligence](docs/project/intelligence-product-continuity-checkpoint-2026-08-18.md)
 - [Guivos Journey](docs/product-architecture/journey.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Jornadas](docs/journeys/index.md)
