@@ -2,13 +2,14 @@
 id: GTM-007
 title: Governança de Internacionalização e Programa Territorial
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Strategy & Growth
-last_updated: 2026-08-08
+last_updated: 2026-08-20
 depends_on:
   - GTM-001
   - GTM-005
   - GKR-BRAND-ASSET-GOVERNANCE-001
+  - GKR-BRAND-SIGNATURE-001
   - GKR-DIGITAL-ASSET-CONTROL-001
   - GKR-INSTITUTIONAL-LEGAL-ARCHITECTURE-001
   - GKR-DATA-PRIVACY-CONSENT-001
@@ -55,6 +56,9 @@ parceiro local ≠ entidade Guivos local
 piloto autorizado ≠ piloto executado
 piloto executado ≠ escala aprovada
 presença digital ≠ presença física
+assinatura localizada ≠ operação territorial
+assinatura localizada ≠ proteção marcária territorial
+uso da assinatura em idioma local ≠ mercado ativo
 ```
 
 ## 4. Registro territorial mínimo
@@ -211,6 +215,33 @@ domínio desejado
 
 Estratégia defensiva em `.pt`, `.eu` ou outros territórios pode existir antes da entrada operacional e deve permanecer classificada como proteção de ativo.
 
+### 12.1 Assinatura de marca e localização linguística
+
+Por `GKR-BRAND-SIGNATURE-001`, a referência institucional global é:
+
+```text
+Possibility, lived.
+```
+
+A Guivos adota **uma assinatura global com localizações linguísticas controladas**, e não um slogan independente por mercado.
+
+Regras territoriais:
+
+1. a forma global permanece referência semântica e verbal comum;
+2. uma versão localizada somente se torna oficial após validação linguística nativa, adequação cultural e decisão governada;
+3. transcriação pode ser usada quando a tradução literal comprometer naturalidade, mas não autoriza reescrita livre da ideia de marca;
+4. a localização deve preservar brevidade, relação entre possibilidade e vivido, força emocional e reconhecimento como manifestação da mesma assinatura;
+5. publicação de uma versão em idioma local não promove o território a mercado ativo;
+6. uso local da assinatura não comprova registro, disponibilidade, titularidade ou proteção marcária naquela jurisdição;
+7. proteção jurídica da assinatura permanece gate separado por território.
+
+```text
+localização linguística
+≠ entrada de mercado
+≠ operação territorial
+≠ proteção marcária
+```
+
 ## 13. Métricas por praça
 
 - densidade de oferta útil;
@@ -261,4 +292,4 @@ piloto português evidenciado
 
 ## 16. Limites
 
-Este documento não inicia operação em Portugal; não cria empresa, filial, conta bancária, número fiscal/IVA, PSP, equipe, domínio, marca, Termos, Política de Privacidade, representante europeu ou obrigação concreta de DSA/OSS/IVA. Também não inicia UXA-102/V5 nem retoma Product Engineering.
+Este documento não inicia operação em Portugal; não cria empresa, filial, conta bancária, número fiscal/IVA, PSP, equipe, domínio, marca, Termos, Política de Privacidade, representante europeu ou obrigação concreta de DSA/OSS/IVA. Também não inicia UXA-102/V5 nem retoma Product Engineering. A localização linguística da assinatura institucional não altera nenhum desses estados.

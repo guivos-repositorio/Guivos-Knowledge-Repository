@@ -2,9 +2,9 @@
 id: GOG-001
 title: Guia Oficial da Guivos
 status: public-canon
-version: 5.0.0
+version: 5.1.0
 owner: Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-20
 classification: Documento Institucional Público
 source: Derived from GKR Canon
 update_cycle: Continuous
@@ -20,8 +20,8 @@ update_cycle: Continuous
 | Finalidade | Explicar publicamente o que é a Guivos, como o ecossistema é organizado, seus princípios e seus limites de maturidade |
 | Público | Pessoas, Coletivos, Organizações, clientes, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados |
 | Responsável | Guivos |
-| Versão | 5.0.0 |
-| Última atualização | 08/08/2026 |
+| Versão | 5.1.0 |
+| Última atualização | 20/08/2026 |
 | Status | Public Canon |
 | Fonte | Guivos Knowledge Repository |
 
@@ -70,6 +70,24 @@ A Guivos é um ecossistema criado para acelerar jornadas de evolução por meio 
 ## Visão
 
 > **Tornar a Guivos um ecossistema global de referência para descoberta, conexão e desenvolvimento de oportunidades capazes de transformar positivamente a vida de pessoas, organizações e coletivos.**
+
+## Assinatura institucional
+
+A assinatura institucional global da Guivos é:
+
+> **Possibility, lived.**
+
+Em português, a versão oficial é:
+
+> **Possibilidade, vivida.**
+
+A assinatura conecta o que é possível àquilo que pode ser vivido. Ela não representa promessa de resultado nem afirma que a Guivos determina o que uma pessoa deve viver.
+
+A hashtag institucional global associada é **#PossibilityLived**.
+
+**Do possível ao vivido.** é um bordão / linha narrativa recorrente em português. Ele pertence ao território verbal da Guivos, mas não constitui uma segunda assinatura institucional.
+
+A redação, pontuação, localização e regras de aplicação são governadas por [GKR-BRAND-SIGNATURE-001 — Assinatura de Marca e Sistema Verbal da Guivos](../governance-framework/brand-signature-and-verbal-system.md).
 
 ---
 

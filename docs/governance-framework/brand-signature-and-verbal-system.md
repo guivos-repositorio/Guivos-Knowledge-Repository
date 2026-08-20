@@ -2,7 +2,7 @@
 id: GKR-BRAND-SIGNATURE-001
 title: Assinatura de Marca e Sistema Verbal da Guivos
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-08-20
 depends_on:
@@ -11,6 +11,8 @@ related:
   - GKR-BRAND-DIGITAL-ASSETS-INDEX-001
   - GKR-OFFICIAL-NAMING-AUTHORITY-001
   - GPA-000
+  - GOG-001
+  - GTM-007
 normative: true
 ---
 
@@ -147,6 +149,9 @@ ASSINATURA ≠ PROMESSA DE RESULTADO
 TECNOLOGIA ≠ PROPÓSITO
 BORDÃO ≠ SEGUNDA ASSINATURA
 LOCALIZAÇÃO ≠ REESCRITA LIVRE DA MARCA
+ASSINATURA DA MARCA-MÃE ≠ SLOGAN OBRIGATÓRIO DE PRODUTO
+CONSISTÊNCIA DE MARCA ≠ REPETIÇÃO LITERAL EM TODA SUPERFÍCIE
+USO RECOMENDADO NA HOME PESSOA ≠ POSIÇÃO VISUAL DEFINIDA
 ```
 
 A assinatura deve permanecer válida independentemente da evolução, criação, consolidação ou retirada de produtos específicos do ecossistema.
@@ -186,6 +191,27 @@ A assinatura:
 - não cria slogans próprios para Journey, Mall, Travel, Business, Media, Intelligence ou Ads;
 - deve preservar a mesma grafia e pontuação nas aplicações institucionais textuais.
 
+### 11.1 Aplicação por superfície
+
+A propagação da assinatura segue o princípio:
+
+> **A assinatura deve ser recorrente onde a Guivos se apresenta como marca e seletiva onde a Guivos se manifesta por seus produtos, experiências e sistemas.**
+
+Aplicação governada:
+
+| Superfície | Regra |
+|---|---|
+| Home institucional/global da Guivos | uso recomendado quando a superfície representar diretamente a marca-mãe |
+| Home Pessoa | **uso recomendado** como uma das principais superfícies de encontro entre a Guivos e a pessoa |
+| Homes de Produtos Especializados | uso não obrigatório; somente quando houver justificativa narrativa específica |
+| campanhas, manifestos, lançamentos e comunicação institucional | uso permitido conforme contexto e arquitetura verbal |
+| interfaces operacionais, funcionais, transacionais ou de erro | evitar repetição ornamental; clareza funcional prevalece |
+| snapshots, entregas históricas e pacotes de Design já emitidos | não alterar retroativamente apenas para propagar a assinatura |
+
+Na Home Pessoa, a assinatura deve ser percebida como expressão da marca Guivos, mas este documento **não define onde ela aparece, em qual componente, ordem, hierarquia ou tratamento visual**. Essas decisões pertencem a gate posterior de Design.
+
+A regra de Home Pessoa não cria obrigação equivalente para Journey, Intelligence, Travel, Mall, Business, Media ou Ads. Nos Produtos Especializados, a ideia da marca deve ser principalmente materializada pela experiência; repetição literal da assinatura depende de necessidade narrativa.
+
 Este documento não define lockup visual, tipografia, tamanho, posição, cor, animação, áudio ou qualquer outro tratamento de identidade visual.
 
 ## 12. Relação com a governança de marca
@@ -203,13 +229,14 @@ A eventual proteção jurídica da assinatura e de ativos associados exige proce
 
 ## 13. Próximos gates
 
-Este documento fecha a decisão verbal inicial da assinatura. Permanecem separados:
+Este documento fecha a decisão verbal inicial da assinatura e sua regra de propagação por superfície. Permanecem separados:
 
 1. validação linguística nativa para novos idiomas;
 2. busca jurídica/registral por jurisdição relevante;
 3. decisão sobre eventual proteção marcária;
 4. definição futura de regras visuais da assinatura, se autorizada;
 5. canonicalização de novas localizações somente após validação;
-6. eventual aprovação de hashtags locais ou de campanha.
+6. eventual aprovação de hashtags locais ou de campanha;
+7. materialização visual da assinatura na Home Pessoa somente em gate de Design autorizado.
 
 Nenhum desses gates é iniciado automaticamente por este registro.
