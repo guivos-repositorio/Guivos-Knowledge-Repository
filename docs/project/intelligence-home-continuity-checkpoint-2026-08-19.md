@@ -1,8 +1,8 @@
 ---
 id: GKR-INTELLIGENCE-HOME-CONTINUITY-001
-title: Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — Movimentos 1–10
+title: Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — 11 Movimentos e Documento Mestre
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-08-19
 related:
@@ -10,52 +10,67 @@ related:
   - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
   - GKR-UX-HOMES-OUTCOME-001
   - GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
+  - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GKR-INTELLIGENCE-CONTINUITY-001
   - GKR-STATE-001
 normative: false
 ---
 
-# Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — Movimentos 1–10
+# Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — 11 Movimentos e Documento Mestre
 
 ## 1. Finalidade
 
-Este checkpoint preserva o ponto exato da construção conceitual da **Home Pública do Guivos Intelligence v1** após a integração do Source Lock do Produto e a convergência dos Movimentos 01–10 em conversa.
+Este checkpoint preserva o ponto exato da construção da **Home Pública Guivos Intelligence v1** após:
+
+- integração de `GPA-006 2.0.0`;
+- integração do `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 1.0.0`;
+- integração do princípio `GKR-UX-HOMES-OUTCOME-001 1.0.0`;
+- convergência dos Movimentos 01–11;
+- encerramento da arquitetura narrativa em onze movimentos;
+- criação do `GKR-UX-HOME-INTELLIGENCE-MASTER-001 0.1.0`.
 
 A autoridade superior de produto continua sendo `GPA-006 2.0.0`.
 
 A porta de entrada normativa para a Home continua sendo `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 1.0.0`.
 
-A arquitetura parcial da Home está registrada em `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 0.1.0`.
+A arquitetura da Home passa a estar registrada em `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 0.2.0`.
 
-## 2. Baseline canônico anterior
+O Documento Mestre da Home passa a estar registrado em `GKR-UX-HOME-INTELLIGENCE-MASTER-001 0.1.0`.
 
-Antes desta frente documental, o estado canônico era:
+## 2. Baseline antes deste pacote
+
+O pacote parte exatamente de:
 
 ```text
 main
-471a8ae50afef28627478df23da7b10a75c33653
+0815b2035ce0f8c2b4482c8fe0a71a7e9d7b8771
+
+PR ANTERIOR
+#285 — GKR: consolidar movimentos 1–10 da Home Intelligence v1
+→ merged
 
 GPA-006
 2.0.0
 
-SOURCE LOCK DO PRODUTO
+PRODUCT SOURCE LOCK
 GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 1.0.0
 
-HOME INTELLIGENCE
-não iniciada no estado global anterior
+ARQUITETURA DA HOME
+GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 0.1.0
+→ Movimentos 01–10 convergidos
+→ Movimento 11 como próximo ponto
+
+CHECKPOINT DE CONTINUIDADE
+GKR-INTELLIGENCE-HOME-CONTINUITY-001 1.0.0
 ```
 
-A publicação documental correspondente foi confirmada em `gh-pages` por:
+A publicação documental do baseline `0815b2035...` já havia sido confirmada em `gh-pages` antes deste novo pacote.
 
-```text
-Deployed 471a8ae50 with MkDocs version: 1.6.1
-```
-
-## 3. Estado conceitual desta frente
+## 3. Estado conceitual atual
 
 ```text
 HOME PÚBLICA GUIVOS INTELLIGENCE v1
-→ INICIADA CONCEITUALMENTE
+→ ARQUITETURA CONCEITUAL COMPLETA
 
 MOVIMENTO 01 — POSSIBILIDADE
 → CONVERGIDO
@@ -87,111 +102,74 @@ MOVIMENTO 09 — AUTONOMIA / DECISÃO
 MOVIMENTO 10 — INTELIGÊNCIA CONECTADA
 → CONVERGIDO
 
-MOVIMENTO 11
-→ PRÓXIMO PONTO
-→ AINDA NÃO DESENVOLVIDO / NÃO CONVERGIDO
+MOVIMENTO 11 — HORIZONTE AMPLIADO
+→ CONVERGIDO
+
+QUANTIDADE FINAL DE MOVIMENTOS
+→ 11
+
+MOVIMENTO 12
+→ NÃO PREVISTO NESTA ARQUITETURA
+
+DOCUMENTO MESTRE
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 0.1.0
+→ CRIADO
+
+HOME SOURCE LOCK
+→ NÃO CRIADO
+
+DESIGN / UI / PROTÓTIPO
+→ NÃO INICIADOS NESTE FLUXO
 ```
 
-## 4. Correções conceituais incorporadas
+## 4. Movimento 11 — convergência registrada
 
-### 4.1 Linguagem abstrata simplificada
+Função:
 
-Foi rejeitada como excessivamente abstrata a formulação interna:
+> **Levar a narrativa da compreensão para aquilo que uma compreensão mais ampla pode tornar perceptível, sem converter Intelligence em previsão do futuro.**
 
-> “há algo além da informação: compreensão capaz de revelar possibilidades”.
+Ideia central:
 
-A direção pública passa a privilegiar linguagem mais simples:
+> **Compreender melhor não muda apenas o que você sabe. Pode mudar o que você consegue perceber.**
 
-> **Ter informação não é o mesmo que entender o que ela significa — e entender melhor ajuda a enxergar novas possibilidades.**
+Headline de referência:
 
-### 4.2 Falar diretamente com o visitante
+> **Perceba antes o que começa a mudar. Enxergue além do que já está evidente.**
 
-Foi rejeitada a dependência de formulações genéricas como:
+Supporting copy de referência:
 
-> “veja o que está mudando e entenda por que isso pode merecer sua atenção”.
+> **Guivos Intelligence conecta sinais, contexto, conhecimento e relações para tornar padrões, movimentos e novas possibilidades mais visíveis — ajudando você a compreender mais antes de decidir.**
 
-A Home deve preferir consequências diretas e compreensíveis para quem visita.
-
-### 4.3 Intelligence ≠ Journey
-
-Foi corrigido o desvio que aproximava a Home de expressões como:
-
-> “entenda melhor o seu momento e descubra possibilidades que fazem sentido para você”.
-
-Essa intenção é predominantemente Journey.
-
-A Home Intelligence deve permanecer centrada em:
-
-- informação;
-- contexto;
-- conhecimento;
-- evidência;
-- relações;
-- padrões;
-- mudanças;
-- movimentos;
-- insights;
-- explicações;
-- compreensão.
-
-### 4.4 Intelligence ≠ Business
-
-A frente Business/População pode aparecer como aplicação da compreensão, mas a Home Intelligence não deve se tornar página de programas, benefícios, RH, planos ou contratação Business.
-
-## 5. Regra transversal criada durante a construção
-
-A construção da Home produziu uma regra válida para todas as Homes Públicas:
-
-> **A Home não deve apenas explicar produto, significado e funcionalidades. Deve mostrar o que as capacidades entregam e quais resultados ou possibilidades são legitimamente esperados por quem usa.**
-
-Essa regra está formalizada em `GKR-UX-HOMES-OUTCOME-001 1.0.0`.
-
-Arquitetura:
-
-```mermaid
-flowchart LR
-    S[Significado] --> C[Capacidade]
-    C --> E[Entrega]
-    E --> B[Benefício]
-    B --> R[Resultado esperado]
-```
-
-Guardrail:
+Progressão:
 
 ```text
-RESULTADO ESPERADO
-≠
-RESULTADO COMPROVADO
+COMPREENDER MAIS
+→ PERCEBER MAIS
+→ ENXERGAR MAIS CEDO
+→ AMPLIAR O QUE PODE SER CONSIDERADO
 ```
 
-## 6. Diretriz visual consolidada
+Resposta de fechamento à pergunta-mãe:
 
-A Home Intelligence pode utilizar representações de:
+> **Você passa a perceber mais, mais cedo — e a enxergar possibilidades que informações isoladas ainda não conseguiam mostrar.**
 
-- KPIs;
-- indicadores;
-- mini gráficos;
-- comparações;
-- tendências;
-- padrões;
-- movimentos;
-- cards analíticos;
-- organogramas;
-- fluxos;
-- sequências;
-- redes conceituais;
-- escadas de interpretação.
+Guardrails específicos:
 
-Esses elementos devem demonstrar **o tipo de leitura**, **a sequência de compreensão** ou **o resultado entregue**.
+```text
+PERCEBER ANTES ≠ PREVER O FUTURO
+ENXERGAR MAIS LONGE ≠ SABER O QUE VAI ACONTECER
+SINAL ≠ CERTEZA
+TENDÊNCIA ≠ DESTINO
+PADRÃO EM FORMAÇÃO ≠ RESULTADO FUTURO GARANTIDO
+POSSIBILIDADE ≠ RECOMENDAÇÃO OBRIGATÓRIA
+```
 
-Não devem ser usados apenas como decoração nem confundidos com wireframe, dashboard operacional ou prova de implementação.
-
-## 7. Síntese dos dez movimentos
+## 5. Mapa final da arquitetura
 
 ```mermaid
 flowchart TD
     M1[01 Possibilidade] --> M2[02 Necessidade]
-    M2 --> M3[03 Valor]
+    M2 --> M3[03 Valor próprio]
     M3 --> M4[04 Resultados]
     M4 --> M5[05 Materialização]
     M5 --> M6[06 Formação]
@@ -199,10 +177,12 @@ flowchart TD
     M7 --> M8[08 Confiança]
     M8 --> M9[09 Autonomia]
     M9 --> M10[10 Inteligência conectada]
-    M10 --> M11[11 Próximo ponto]
+    M10 --> M11[11 Horizonte ampliado]
 ```
 
-Formulações de referência preservadas:
+A arquitetura não exige onze seções visuais equivalentes. Os movimentos são funções semânticas que podem ser agrupadas no Design posterior sem perder significado ou ordem narrativa.
+
+## 6. Formulações de referência preservadas
 
 ```text
 01
@@ -234,29 +214,158 @@ Veja mais antes de decidir.
 
 10
 Entenda não apenas cada informação, mas como elas podem estar relacionadas.
+
+11
+Perceba antes o que começa a mudar. Enxergue além do que já está evidente.
 ```
 
-## 8. O que permanece aberto
+## 7. Correções e fronteiras preservadas
+
+### 7.1 Intelligence ≠ Journey
+
+A Home Intelligence permanece centrada em:
+
+- informação;
+- contexto;
+- conhecimento;
+- evidência;
+- relações;
+- padrões;
+- mudanças;
+- movimentos;
+- insights;
+- explicações;
+- compreensão.
+
+O território de evolução, direção, caminho pessoal e experiência da Pessoa permanece governado pela Journey.
+
+### 7.2 Intelligence ≠ Business
+
+A frente Business/População pode aparecer como aplicação da compreensão, mas a Home Intelligence não se torna página de programas, benefícios, RH, planos ou contratação Business.
+
+### 7.3 Tecnologia ≠ produto
+
+```text
+INTELLIGENCE ≠ IA
+INTELLIGENCE ≠ LLM
+INTELLIGENCE ≠ DASHBOARD
+INTELLIGENCE ≠ POWER BI
+INTELLIGENCE ≠ NEO4J
+INTELLIGENCE ≠ GRAPHRAG
+INTELLIGENCE ≠ GRAFO GLOBAL
+```
+
+> **A tecnologia amplia a capacidade do Intelligence. Não amplia sua autoridade.**
+
+### 7.4 Compreensão ≠ previsão
+
+O Movimento 11 amplia o horizonte sem autorizar linguagem determinística de futuro.
+
+## 8. Regra transversal de resultado
+
+Continua vigente `GKR-UX-HOMES-OUTCOME-001 1.0.0`:
+
+> **A Home não deve apenas explicar produto, significado e funcionalidades. Deve mostrar o que as capacidades entregam e quais resultados ou possibilidades são legitimamente esperados por quem usa.**
+
+```mermaid
+flowchart LR
+    S[Significado] --> C[Capacidade]
+    C --> E[Entrega]
+    E --> B[Benefício]
+    B --> R[Resultado esperado]
+```
+
+```text
+RESULTADO ESPERADO
+≠
+RESULTADO COMPROVADO
+```
+
+## 9. Diretriz visual preservada
+
+A Home Intelligence pode utilizar representações de:
+
+- KPIs;
+- indicadores;
+- mini gráficos;
+- comparações;
+- tendências;
+- padrões;
+- movimentos;
+- cards analíticos;
+- organogramas;
+- fluxos;
+- sequências;
+- redes conceituais;
+- escadas de interpretação.
+
+Esses elementos devem demonstrar **o tipo de leitura**, **a sequência de compreensão**, **a relação entre sinais** ou **o resultado esperado**.
+
+Não devem ser usados apenas como decoração nem confundidos com wireframe, dashboard operacional ou prova de implementação.
+
+## 10. Guardrails mestres preservados
+
+```text
+CONHECER ≠ UTILIZAR ≠ COMPARTILHAR
+DECLARADO ≠ OBSERVADO ≠ INFERIDO ≠ PREDITO
+PERSONALIZAR ≠ EXPOR
+COMPREENDER ≠ DECIDIR
+PADRÃO ≠ CAUSA
+RELAÇÃO ≠ CAUSA
+MOVIMENTO ≠ DIAGNÓSTICO
+INFERÊNCIA ≠ FATO
+CORRELAÇÃO ≠ CAUSALIDADE
+PAGAMENTO ≠ RELEVÂNCIA
+ENTITLEMENT ≠ AUTORIDADE
+PLANO SUPERIOR ≠ MENOS PRIVACIDADE
+```
+
+A Empresa recebe compreensão populacional autorizada e protegida; não recebe a intimidade individual da Journey.
+
+## 11. Documento Mestre criado
+
+`GKR-UX-HOME-INTELLIGENCE-MASTER-001 0.1.0` passa a concentrar a leitura mestre desta Home antes do Home Source Lock.
+
+O Documento Mestre consolida:
+
+- autoridade de origem;
+- intenção própria da Home;
+- proposta de valor;
+- pergunta-mãe e copy de referência;
+- os onze movimentos;
+- as duas frentes superiores;
+- explicabilidade e autonomia;
+- horizonte ampliado;
+- papel subordinado da tecnologia;
+- diretrizes visuais;
+- guardrails;
+- itens ainda não congelados;
+- critério de passagem para a próxima etapa.
+
+O Documento Mestre não substitui `GPA-006` nem o Product Source Lock.
+
+## 12. O que permanece aberto
 
 Ainda não estão congelados:
 
-- Movimento 11;
-- quantidade final de movimentos da Home;
-- síntese/fechamento final;
-- CTA principal e secundário;
-- pergunta-mãe definitiva, caso a arquitetura completa exija refinamento;
-- copy final;
-- composição final das duas frentes;
-- profundidade da apresentação tecnológica;
-- eventual seção específica de Graph/AI;
+- Home Source Lock;
+- CTA principal;
+- CTA secundário;
+- microcopy final;
+- formulação final da pergunta-mãe, caso o Source Lock exija refinamento semântico;
 - ordem visual final;
-- quantidade de exemplos de KPI;
+- quantidade final de exemplos de KPI;
 - dados reais versus exemplos conceituais;
-- Documento Mestre;
-- Source Lock da Home;
-- Handoff de Design desta Home.
+- profundidade da apresentação pública de Graph/AI;
+- composição visual final das duas frentes;
+- wireframe;
+- UI;
+- protótipo;
+- Design Handoff.
 
-## 9. Preservações globais
+Esses itens não reabrem automaticamente os onze movimentos convergidos.
+
+## 13. Preservações globais
 
 Esta frente não altera:
 
@@ -271,32 +380,43 @@ Esta frente não altera:
 - ausência de GraphRAG/GDS/Power BI/Guivos.ai operacionais comprovados;
 - ausência de pricing final e oferta B2B autônoma vigente.
 
-## 10. Estado global e roadmap
+## 14. Estado global e roadmap
 
-`GKR-STATE-001 2.39.0` e `ROADMAP-12.81.0` permanecem como último snapshot global até uma próxima sincronização transversal.
+`GKR-STATE-001 2.39.0` e `ROADMAP-12.81.0` permanecem como último snapshot global até uma próxima sincronização transversal autorizada.
 
-Este checkpoint é a autoridade de continuidade **mais recente e específica para a frente Home Intelligence** e corrige, somente dentro dessa frente, a leitura anterior de “Home não iniciada”.
+Não há promoção silenciosa de versão global por este pacote documental.
 
-Não há promoção silenciosa de versão global por uma convergência narrativa ainda parcial.
-
-## 11. Próximo ponto exato
+## 15. Próximo ponto exato
 
 Retomar exatamente em:
 
-> **Home Guivos Intelligence v1 — Movimento 11.**
+> **Home Pública Guivos Intelligence v1 — elaboração do Home Source Lock.**
 
-Brief já identificado, mas não convergido:
+Estado:
 
-> **Traduzir a compreensão em uma visão mais aspiracional de resultado — perceber antes, enxergar mais longe e descobrir possibilidades que antes não estavam visíveis — sem transformar isso em promessa de prever o futuro.**
+```text
+ARQUITETURA NARRATIVA
+→ COMPLETA EM 11 MOVIMENTOS
 
-## 12. Sequência depois do Movimento 11
+DOCUMENTO MESTRE
+→ CRIADO
+
+HOME SOURCE LOCK
+→ PRÓXIMO PONTO
+→ NÃO CRIADO
+
+HANDOFF / DESIGN
+→ BLOQUEADO ATÉ ETAPA AUTORIZADA
+```
+
+## 16. Sequência preservada
 
 ```mermaid
 flowchart TD
-    A[Movimento 11] --> B[Completar movimentos restantes, se necessários]
-    B --> C[Arquitetura narrativa completa]
-    C --> D[Documento Mestre da Home Intelligence]
-    D --> E[Source Lock da Home Intelligence]
+    A[Product Source Lock\nintegrado] --> B[11 movimentos\nconvergidos]
+    B --> C[Arquitetura narrativa\ncompleta]
+    C --> D[Documento Mestre\nv0.1.0]
+    D --> E[Home Source Lock\npróximo ponto]
     E --> F[Handoff / Design controlado]
 ```
 
