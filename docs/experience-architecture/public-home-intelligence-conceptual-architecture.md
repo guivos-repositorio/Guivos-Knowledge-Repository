@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
 title: Home Pública — Guivos Intelligence v1 — Arquitetura Conceitual — Movimentos 1–11
 status: draft
-version: 0.2.0
+version: 0.2.1
 owner: Experience Architecture
 last_updated: 2026-08-19
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -30,7 +30,7 @@ normative: false
 
 Este documento preserva a **arquitetura conceitual completa da Home Pública do Guivos Intelligence v1** após a integração de `GPA-006 2.0.0`, do `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 1.0.0`, do princípio transversal `GKR-UX-HOMES-OUTCOME-001 1.0.0` e da convergência em conversa dos **Movimentos 01–11**.
 
-A versão `0.2.0` substitui a convergência parcial dos Movimentos 01–10 registrada em `0.1.0` e incorpora o **Movimento 11 — Horizonte ampliado** como fechamento da arquitetura narrativa.
+A versão `0.2.1` corrige a camada editorial de `0.2.0` para refletir a copy de referência efetivamente aprovada em conversa, sem alterar a quantidade de movimentos, a arquitetura, as autoridades, as fronteiras ou os guardrails já convergidos.
 
 Este documento **não é**:
 
@@ -61,9 +61,12 @@ HOME INTELLIGENCE v1
 → ARQUITETURA CONCEITUAL COMPLETA
 → 11 MOVIMENTOS CONVERGIDOS
 
+ARQUITETURA NARRATIVA
+→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1
+→ COPY DE REFERÊNCIA CORRIGIDA
+
 DOCUMENTO MESTRE DA HOME
-→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.0
-→ CRIADO NO MESMO PACOTE GOVERNADO
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
 
 SOURCE LOCK DA HOME
 → NÃO CRIADO
@@ -76,9 +79,7 @@ DESIGN / UI / PROTÓTIPO
 
 A Home do Guivos Intelligence não pode funcionar como uma segunda Home do Journey, do Business ou de qualquer outro produto.
 
-Sua intenção própria é tornar compreensível que a Guivos pode:
-
-> **transformar informações, contexto, conhecimento, evidências e relações em compreensão capaz de revelar conexões, padrões, mudanças, movimentos, insights, explicações e novas possibilidades de leitura.**
+Sua intenção própria é tornar compreensível que a Guivos pode transformar informações, contexto, conhecimento, evidências e relações em compreensão útil — sem exigir que o visitante compreenda essa arquitetura antes de perceber o benefício.
 
 A unidade de valor permanece:
 
@@ -157,14 +158,13 @@ No Intelligence, isso significa não parar em:
 A narrativa deve chegar a consequências compreensíveis:
 
 ```text
-ENXERGAR CONEXÕES
-IDENTIFICAR PADRÕES
-ENTENDER MUDANÇAS
-PERCEBER MOVIMENTOS
-IR ALÉM DO NÚMERO
+VER COMO AS INFORMAÇÕES SE CONECTAM
+PERCEBER O QUE SE REPETE
+ENTENDER O QUE ESTÁ MUDANDO
+VER O QUE COMEÇA A GANHAR FORÇA
 ENTENDER DE ONDE VEIO UMA LEITURA
 VER MAIS ANTES DE DECIDIR
-PERCEBER MAIS CEDO O QUE COMEÇA A TOMAR FORMA
+RECONHECER SINAIS MAIS CEDO SEM PREVER O FUTURO
 ```
 
 Guardrail transversal:
@@ -181,7 +181,23 @@ A Home não promete causalidade, melhoria percentual, redução de risco, perfor
 
 Regra consolidada:
 
-> **Não apenas descrever o resultado. Fazer o visitante se enxergar recebendo esse resultado.**
+> **Primeiro mostre o que a pessoa consegue enxergar. Depois explique como o Intelligence torna isso possível.**
+
+Consequentemente:
+
+```text
+RESULTADO
+ANTES DO
+MECANISMO
+```
+
+```text
+LINGUAGEM COMPREENSÍVEL
+ANTES DA
+TERMINOLOGIA ANALÍTICA
+```
+
+Termos como padrão, tendência, movimento, contexto, evidência e relação podem ser utilizados quando necessários, mas não devem ser requisito para que o visitante compreenda o benefício.
 
 Preferir, quando semanticamente correto:
 
@@ -193,8 +209,6 @@ Preferir, quando semanticamente correto:
 - **perceba**;
 - **saiba por quê**.
 
-Evitar abstração quando uma consequência legítima puder ser expressa de forma simples.
-
 ## 6. Mapa final dos 11 movimentos
 
 ```mermaid
@@ -202,13 +216,13 @@ flowchart TD
     M1[01 — POSSIBILIDADE\nCompreender melhor]
     M2[02 — NECESSIDADE\nInformação ≠ compreensão]
     M3[03 — VALOR\nEntender o que o isolado não mostra]
-    M4[04 — RESULTADO\nConexões, padrões, mudanças e movimentos]
-    M5[05 — MATERIALIZAÇÃO\nTornar leituras tangíveis]
-    M6[06 — FORMAÇÃO\nContexto + conhecimento + evidências + relações]
+    M4[04 — RESULTADO\nO que passa a ser percebido]
+    M5[05 — MATERIALIZAÇÃO\nDemonstrar leituras concretamente]
+    M6[06 — FORMAÇÃO\nContexto e relações dão sentido]
     M7[07 — APLICAÇÃO\nOnde a compreensão gera valor]
-    M8[08 — CONFIANÇA\nComo a leitura foi construída]
+    M8[08 — CONFIANÇA\nDe onde veio a leitura]
     M9[09 — AUTONOMIA\nVeja mais antes de decidir]
-    M10[10 — INTELIGÊNCIA CONECTADA\nEntender relações entre informações]
+    M10[10 — INTELIGÊNCIA CONECTADA\nPor que as relações importam]
     M11[11 — HORIZONTE AMPLIADO\nPerceber mais, mais cedo]
 
     M1 --> M2 --> M3 --> M4 --> M5 --> M6 --> M7 --> M8 --> M9 --> M10 --> M11
@@ -224,17 +238,15 @@ Os movimentos são **funções semânticas**. Não representam obrigação de on
 
 Abrir a Home pela consequência da compreensão, e não pela tecnologia.
 
-> **Ter informação não é o mesmo que entender o que ela significa — e entender melhor ajuda a enxergar novas possibilidades.**
-
 ### Pergunta-mãe de referência
 
 > **O que se torna possível quando você compreende melhor o que está acontecendo?**
 
-### Expressão de referência
+### Expressão de apoio de referência
 
-> **Transforme contexto em compreensão. E compreensão em novas possibilidades.**
+> **Entenda melhor o que está acontecendo. Amplie o que você consegue perceber.**
 
-A primeira dobra não deve tentar explicar toda a arquitetura funcional do produto.
+A primeira dobra não deve tentar explicar toda a arquitetura funcional do produto nem antecipar o fechamento aspiracional do Movimento 11.
 
 Evitar como abertura dominante: IA, LLM, Neo4j, GraphRAG, Power BI, dashboard, APIs ou listas de features.
 
@@ -246,19 +258,18 @@ Evitar como abertura dominante: IA, LLM, Neo4j, GraphRAG, Power BI, dashboard, A
 
 > **Ter mais informação não significa entender melhor.**
 
-A Home cria necessidade a partir de uma realidade simples: dados, sinais, acontecimentos e conteúdos podem existir em abundância sem produzir clareza.
+A Home cria necessidade a partir de uma realidade simples: informações podem existir em abundância sem produzir clareza.
 
 ### Supporting copy de referência
 
-> **O que faz diferença é conseguir conectar o que está acontecendo, perceber relações e transformar informações dispersas em uma visão mais clara.**
+> **O que faz diferença é conseguir juntar informações que estão espalhadas e entender o que elas mostram quando vistas em conjunto.**
 
 ```mermaid
 flowchart LR
     A[Muita informação] --> B[Informações espalhadas]
-    B --> C[Relações difíceis de perceber]
-    C --> D[Pouca clareza]
-    D --> E[Intelligence conecta e contextualiza]
-    E --> F[Visão mais clara]
+    B --> C[Pouca clareza]
+    C --> D[Informações vistas em conjunto]
+    D --> E[Mais compreensão]
 ```
 
 ```text
@@ -273,19 +284,19 @@ MAIS COMPREENSÃO
 
 ## 9. Função
 
-Fixar o território próprio do produto e impedir que a Home seja absorvida pela narrativa de Journey.
+Fixar o território próprio do produto e responder por que o Intelligence existe, sem aproximar a Home da promessa central de Journey ou Business.
 
 ### Headline de referência
 
-> **Entenda o que suas informações, isoladamente, não conseguem mostrar.**
+> **Entenda o que informações isoladas não conseguem mostrar.**
 
 ### Supporting copy de referência
 
-> **Guivos Intelligence conecta dados, contexto, conhecimento, evidências e relações para revelar padrões, mudanças e conexões que ajudam você a compreender melhor o que está acontecendo.**
+> **Guivos Intelligence conecta informações que, separadas, mostram apenas parte da história — ajudando você a perceber relações, padrões e mudanças que antes poderiam passar despercebidos.**
 
 ### Expressão funcional
 
-> **Veja conexões. Identifique padrões. Entenda mudanças. Transforme informação em compreensão.**
+> **Veja como as informações se conectam. Perceba o que se repete. Entenda o que está mudando.**
 
 Resultado antes do mecanismo.
 
@@ -295,21 +306,27 @@ Resultado antes do mecanismo.
 
 ## 10. Função
 
-Apresentar o que o Intelligence permite perceber antes de detalhar como isso acontece.
+Apresentar **o que o Intelligence permite perceber**, sem ainda demonstrar como isso ganha forma visual.
+
+> **Veja o que está conectado.**
+
+> **Perceba o que se repete.**
+
+> **Entenda o que está mudando.**
+
+> **Veja o que começa a ganhar força.**
+
+Separação obrigatória:
 
 ```text
-VEJA CONEXÕES
-↓
-IDENTIFIQUE PADRÕES
-↓
-ENTENDA MUDANÇAS
-↓
-PERCEBA MOVIMENTOS
-↓
-TRANSFORME INFORMAÇÃO EM COMPREENSÃO
+MOVIMENTO 04
+→ MOSTRA OS RESULTADOS
+
+MOVIMENTO 05
+→ DEMONSTRA OS RESULTADOS
 ```
 
-O visitante deve entender que o Intelligence ajuda a enxergar **relações e mudanças que informações isoladas não mostram com facilidade**.
+O Movimento 04 não deve virar catálogo de engines, gráficos ou mecanismos.
 
 ---
 
@@ -319,23 +336,25 @@ O visitante deve entender que o Intelligence ajuda a enxergar **relações e mud
 
 > **Veja o que você não enxergaria olhando cada informação separadamente.**
 
-## 12. Entregas públicas
+## 12. Função demonstrativa
 
-### Perceba conexões
+Este movimento materializa, por meio de exemplos visuais e analíticos, aquilo que o Movimento 04 apresentou conceitualmente.
+
+### Conexões
 
 > **Perceba como informações diferentes podem estar relacionadas.**
 
-### Identifique padrões
+### Repetições
 
-> **Identifique o que está se repetindo — e o que começa a fugir do padrão.**
+> **Veja o que está acontecendo novamente — e o que começa a fugir do habitual.**
 
-### Entenda mudanças
+### Mudanças
 
 > **Entenda não apenas como as coisas estão, mas como estão mudando.**
 
-### Reconheça movimentos
+### Sinais ganhando força
 
-> **Perceba quando pequenos sinais começam a formar um movimento maior.**
+> **Perceba quando algo que parecia isolado começa a se repetir e ganhar força.**
 
 ```mermaid
 flowchart LR
@@ -344,11 +363,11 @@ flowchart LR
     C --> M[Movimento perceptível]
 ```
 
-### Vá além dos números
+### Contexto
 
 > **Vá além do número. Entenda o que ele pode estar mostrando.**
 
-### Saiba por quê
+### Explicação
 
 > **Entenda de onde uma conclusão veio — e até onde ela pode ir.**
 
@@ -361,8 +380,24 @@ São adequados, quando ajudam a explicar o tipo de leitura:
 - comparações entre períodos;
 - distribuições agregadas;
 - destaques de mudança;
-- exemplos de Movimento Emergente;
+- exemplos de sinais ganhando força;
 - insights acompanhados de contexto e explicação.
+
+Exemplo conceitual:
+
+```text
+UTILIZAÇÃO
+72% → 64%
+
+ISOLADAMENTE
+“houve queda”
+
+EM CONTEXTO
+→ quando começou?
+→ em quais grupos?
+→ ocorreu junto com quais outras mudanças?
+→ é recorrente ou pontual?
+```
 
 Quando não houver dados reais, esses elementos são **representações conceituais**, não evidência operacional.
 
@@ -372,37 +407,27 @@ Quando não houver dados reais, esses elementos são **representações conceitu
 
 ## 14. Headline de referência
 
-> **Transformar informação em compreensão exige mais do que reunir dados.**
+> **Informações fazem mais sentido quando você consegue enxergar o contexto ao redor delas.**
 
 ### Supporting copy de referência
 
-> **Guivos Intelligence conecta informações, contexto, conhecimento, evidências e relações para revelar leituras que seriam mais difíceis de perceber olhando tudo de forma isolada.**
+> **Guivos Intelligence observa informações em conjunto, considera o contexto em que elas existem e busca relações que ajudem você a interpretá-las melhor.**
+
+Aprofundamento conceitual:
 
 ```mermaid
 flowchart TD
-    D[Dados e sinais]
+    D[Informações]
     C[Contexto]
-    K[Conhecimento]
-    E[Evidências]
     R[Relações]
+    K[Conhecimento e evidências]
 
     D --> I[Guivos Intelligence]
     C --> I
-    K --> I
-    E --> I
     R --> I
+    K --> I
 
-    I --> P[Padrões]
-    I --> M[Mudanças]
-    I --> MV[Movimentos]
-    I --> IN[Insights]
-    I --> EX[Explicações]
-
-    P --> CO[Compreensão]
-    M --> CO
-    MV --> CO
-    IN --> CO
-    EX --> CO
+    I --> CO[Compreensão]
 ```
 
 Papéis públicos simples:
@@ -411,7 +436,6 @@ Papéis públicos simples:
 - **Contexto** — onde, quando e em qual situação a informação existe;
 - **Relações** — como diferentes elementos podem estar conectados;
 - **Conhecimento e evidências** — referências que ajudam a interpretar;
-- **Análise** — transformação desses elementos em leitura;
 - **Compreensão** — significado útil produzido dentro dos limites de autoridade.
 
 ---
@@ -434,11 +458,11 @@ Sem transformar Journey, Business, Mall, Travel, Media ou Ads em módulos do Int
 
 ### Comparar cenários
 
-> **Compare cenários com mais contexto.**
+> **Compare situações diferentes com mais contexto.**
 
-### Identificar movimentos
+### Perceber mudanças
 
-> **Perceba mudanças antes que elas se percam no volume de informações.**
+> **Veja mudanças antes que elas se percam no volume de informações.**
 
 Isso não significa prever o futuro nem declarar causalidade.
 
@@ -456,29 +480,47 @@ INTERESSE
 NECESSIDADE COMPROVADA
 ```
 
-### Tornar a análise compreensível
+### Entender análises
 
 > **Não receba apenas números. Entenda o que eles podem estar mostrando.**
 
 ## 17. Duas frentes superiores
 
-### Pessoa
+### Pessoa / Journey
 
-> **Mais contexto para entender o que está sendo apresentado e escolher com mais clareza.**
+> **Entenda melhor por que determinadas informações, recomendações ou possibilidades podem aparecer em determinado contexto.**
 
-O Intelligence pode explicar relações, bases, alternativas e incertezas. Journey preserva a autoridade sobre a experiência pessoal.
+```text
+INTELLIGENCE
+→ produz compreensão
 
-### Empresa / população
+JOURNEY
+→ governa a experiência
 
-> **Mais contexto para compreender movimentos agregados e decidir com uma visão mais completa.**
+PESSOA
+→ escolhe
+```
 
-O Intelligence pode produzir indicadores agregados, padrões, mudanças, tendências, movimentos emergentes, lacunas, benchmarks autorizados e insights explicáveis. Business preserva a relação B2B.
+### Business / população
+
+> **Compreenda padrões, mudanças e movimentos em populações de forma agregada e protegida.**
+
+```text
+INTELLIGENCE
+→ produz leitura populacional
+
+BUSINESS
+→ governa a relação empresarial
+
+EMPRESA
+→ decide
+```
 
 ```mermaid
 flowchart TD
     I[Guivos Intelligence\nproduz compreensão]
-    I --> P[Pessoa\nmais contexto para escolher]
-    I --> B[Empresa\nmais contexto para decidir]
+    I --> P[Pessoa\ncompreensão contextual autorizada]
+    I --> B[População\nleitura agregada e protegida]
     I -. apoia .-> J[Journey]
     I -. apoia .-> M[Mall]
     I -. apoia .-> T[Travel]
@@ -494,27 +536,27 @@ flowchart TD
 
 ## 18. Headline de referência
 
-> **Não receba apenas uma conclusão. Entenda como ela foi construída.**
+> **Não veja apenas a conclusão. Entenda de onde ela veio.**
 
-### Supporting copy de referência
+A Home pode tornar perguntas como estas visíveis:
 
-> **Guivos Intelligence busca mostrar as informações, relações e evidências que sustentam uma leitura — além de deixar claro quando algo é observado, interpretado ou ainda incerto.**
+```text
+O que foi observado?
+O que mudou?
+Quais informações foram consideradas?
+Como elas podem estar relacionadas?
+O que é fato?
+O que é interpretação?
+Até onde essa leitura pode ir?
+```
 
 Resultados de confiança:
 
-- **Fato ≠ interpretação** — saiba o que aconteceu e o que foi interpretado a partir disso;
-- **Proveniência** — veja quais informações sustentam uma leitura;
-- **Limites** — saiba também o que ainda não pode ser concluído;
-- **Incerteza** — entenda quando uma leitura é forte e quando precisa de mais evidências;
-- **Correção e contestação** — novos dados ou contestação legítima podem alterar uma leitura.
-
-```mermaid
-flowchart TD
-    O[O que foi observado] --> R[O que foi relacionado]
-    R --> I[O que foi interpretado]
-    I --> S[O que isso pode significar]
-    S --> L[O que ainda não pode ser concluído]
-```
+- **Fato ≠ interpretação** — diferenciar o que aconteceu do que foi interpretado;
+- **Proveniência** — mostrar quais informações sustentam uma leitura;
+- **Limites** — deixar claro o que ainda não pode ser concluído;
+- **Incerteza** — explicitar quando uma leitura ainda precisa de mais evidências;
+- **Correção e contestação** — permitir que novos dados ou contestação legítima alterem uma leitura.
 
 ```mermaid
 flowchart LR
@@ -542,7 +584,7 @@ Traduzir o contrato arquitetural `COMPREENDER ≠ DECIDIR` em benefício compree
 
 ### Supporting copy de referência
 
-> **Entenda relações, compare mudanças, considere diferentes sinais e conheça os limites de uma leitura antes de escolher o que fazer.**
+> **Guivos Intelligence pode mostrar relações, comparar informações e explicar leituras. A decisão continua com você — ou com quem tem autoridade para tomá-la.**
 
 ### Princípio
 
@@ -562,19 +604,6 @@ SINAL FRACO
 CONCLUSÃO FORTE
 ```
 
-```mermaid
-flowchart TD
-    C[Mais contexto]
-    A[Mais alternativas]
-    E[Mais explicação]
-    I[Incerteza mais visível]
-
-    C --> D[Decisão mais informada]
-    A --> D
-    E --> D
-    I --> D
-```
-
 A Home não promete que o Intelligence encontra “a decisão certa”.
 
 ---
@@ -583,39 +612,21 @@ A Home não promete que o Intelligence encontra “a decisão certa”.
 
 ## 20. Função
 
-Explicar por que o Intelligence consegue construir leituras mais completas sem usar IA, Graph, Neo4j ou GraphRAG como proposta de valor central.
+Aprofundar **por que as relações importam** para compreender melhor, sem repetir o Movimento 03 e sem usar IA, Graph, Neo4j ou GraphRAG como proposta de valor central.
 
 ### Headline de referência
 
-> **Entenda não apenas cada informação, mas como elas podem estar relacionadas.**
+> **Uma informação pode mostrar mais quando você entende com o que ela se relaciona.**
 
 ### Supporting copy de referência
 
-> **Guivos Intelligence pode conectar informações, contextos, conhecimentos, acontecimentos e relações do ecossistema para construir uma visão mais completa daquilo que está sendo analisado.**
-
-Resultado:
-
-> **Descubra conexões, padrões e mudanças que poderiam passar despercebidos quando cada informação é analisada separadamente.**
+> **Guivos Intelligence não olha apenas informações isoladas. Ele considera como acontecimentos, contextos e informações podem estar relacionados para construir uma leitura mais completa.**
 
 ```text
 MAIS DADOS
 ≠
 MELHOR INTELLIGENCE
 ```
-
-```text
-INFORMAÇÃO ADEQUADA
-+
-CONTEXTO ADEQUADO
-+
-RELAÇÕES ADEQUADAS
-+
-CONHECIMENTO ADEQUADO
-↓
-MELHOR COMPREENSÃO
-```
-
-Guardrail:
 
 ```text
 RELAÇÃO
@@ -655,14 +666,14 @@ O movimento deve elevar a narrativa sem converter Intelligence em previsão do f
 
 > **Compreender melhor não muda apenas o que você sabe. Pode mudar o que você consegue perceber.**
 
-Quando informações deixam de ser observadas isoladamente e passam a ser relacionadas com contexto, conhecimento, evidências e temporalidade, podem se tornar mais visíveis:
+Quando informações deixam de ser observadas isoladamente e passam a ser relacionadas em contexto, podem se tornar mais visíveis:
 
 - sinais;
 - mudanças;
 - padrões em formação;
 - movimentos;
 - relações menos evidentes;
-- possibilidades que merecem consideração.
+- novas possibilidades de consideração.
 
 A diferença não é “saber o futuro”. É **conseguir ver mais antes de tudo se tornar óbvio**.
 
@@ -672,14 +683,18 @@ A diferença não é “saber o futuro”. É **conseguir ver mais antes de tudo
 
 ## 24. Supporting copy de referência
 
-> **Guivos Intelligence conecta sinais, contexto, conhecimento e relações para tornar padrões, movimentos e novas possibilidades mais visíveis — ajudando você a compreender mais antes de decidir.**
+> **Ao perceber relações, repetições e mudanças com mais contexto, você pode reconhecer sinais mais cedo e ampliar o que consegue considerar.**
+
+Fechamento complementar:
+
+> **Novas possibilidades podem se tornar mais visíveis.**
 
 ## 25. Progressão de resultado
 
 ```text
 COMPREENDER MAIS
 → PERCEBER MAIS
-→ ENXERGAR MAIS CEDO
+→ RECONHECER SINAIS MAIS CEDO
 → AMPLIAR O QUE PODE SER CONSIDERADO
 ```
 
@@ -726,11 +741,9 @@ Portanto, “novas possibilidades” é permitido nesta Home apenas como **aquil
 
 > **Perceba antes o que começa a mudar. Enxergue além do que já está evidente.**
 
-> **Guivos Intelligence conecta sinais, contexto, conhecimento e relações para tornar padrões, movimentos e novas possibilidades mais visíveis — ajudando você a compreender mais antes de decidir.**
+> **Ao perceber relações, repetições e mudanças com mais contexto, você pode reconhecer sinais mais cedo e ampliar o que consegue considerar.**
 
-Resposta narrativa à pergunta-mãe do Movimento 01:
-
-> **Você passa a perceber mais, mais cedo — e a enxergar possibilidades que informações isoladas ainda não conseguiam mostrar.**
+> **Novas possibilidades podem se tornar mais visíveis.**
 
 O Movimento 11 encerra a progressão conceitual sem prometer previsão, certeza, causalidade ou decisão automática.
 
@@ -767,16 +780,16 @@ O GKR governa significado, função e relações. A materialização visual pert
 
 | Movimento | Visual conceitual recomendado | O que deve esclarecer |
 |---|---|---|
-| 01 | composição semântica simples | compreensão → possibilidade |
+| 01 | composição semântica simples | compreensão → percepção |
 | 02 | fluxo de dispersão para clareza | informação ≠ compreensão |
 | 03 | antes/depois conceitual | isolado → leitura conectada |
-| 04 | sequência de entregas | conexões, padrões, mudanças, movimentos |
-| 05 | KPIs, mini gráficos, cards analíticos | tornar resultados tangíveis |
-| 06 | organograma/fluxo | como a compreensão se forma |
+| 04 | sequência simples de resultados | o que passa a ser percebido |
+| 05 | KPIs, mini gráficos, cards analíticos | demonstrar resultados tangivelmente |
+| 06 | organograma/fluxo | como contexto e relações ajudam a formar compreensão |
 | 07 | exemplos de leitura e comparação | onde a compreensão gera valor |
 | 08 | escada/fluxo epistêmico | origem, interpretação, incerteza e limite |
 | 09 | fluxo de decisão | mais contexto sem perda de autonomia |
-| 10 | rede/organograma de relações | informação conectada e inteligência de ecossistema |
+| 10 | rede/organograma de relações | por que relações ampliam a leitura |
 | 11 | progressão temporal / sinais em formação | perceber mais cedo sem prever o futuro |
 
 ---
@@ -829,6 +842,8 @@ Mais plano, pagamento ou capacidade técnica não criam autoridade adicional sob
 ## 33. Linguagem e visual
 
 - falar diretamente com quem recebe o valor;
+- primeiro mostrar o que a pessoa consegue perceber;
+- depois explicar como o Intelligence torna isso possível;
 - evitar abstração quando uma consequência concreta puder ser dita;
 - não reduzir a Home a features;
 - não transformar a Home em documentação técnica;
@@ -855,13 +870,13 @@ O Movimento 11 cumpre a função de fechamento aspiracional da narrativa sem int
 
 A síntese governada desta arquitetura é consolidada em:
 
-`GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.0`
+`GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`
 
 O Documento Mestre não substitui `GPA-006` nem o Product Source Lock. Ele organiza a tradução da autoridade do produto para a Home Pública.
 
 ## 36. Próximo ponto exato
 
-Após a integração desta arquitetura e do Documento Mestre, o próximo artefato elegível é o **Source Lock da Home Pública Guivos Intelligence v1**.
+Após a integração desta correção editorial na arquitetura e no Documento Mestre, o próximo artefato elegível continua sendo o **Source Lock da Home Pública Guivos Intelligence v1**.
 
 Ainda permanecem fora desta versão:
 
@@ -877,8 +892,8 @@ Ainda permanecem fora desta versão:
 
 ```mermaid
 flowchart TD
-    A[11 movimentos\nconvergidos] --> B[Arquitetura narrativa completa]
-    B --> C[Documento Mestre\nv0.1.0]
+    A[11 movimentos\nconvergidos] --> B[Arquitetura narrativa\nv0.2.1]
+    B --> C[Documento Mestre\nv0.1.1]
     C --> D[Home Source Lock\npróximo ponto]
     D --> E[Handoff / Design controlado]
 ```
