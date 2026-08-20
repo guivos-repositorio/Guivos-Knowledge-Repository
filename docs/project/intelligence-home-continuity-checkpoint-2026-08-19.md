@@ -1,8 +1,8 @@
 ---
 id: GKR-INTELLIGENCE-HOME-CONTINUITY-001
-title: Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — Home Source Lock
+title: Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — Handoff Canônico
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-08-19
 related:
@@ -12,16 +12,17 @@ related:
   - GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
+  - GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
   - GKR-INTELLIGENCE-CONTINUITY-001
   - GKR-STATE-001
 normative: false
 ---
 
-# Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — Home Source Lock
+# Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — Handoff Canônico
 
 ## 1. Finalidade
 
-Este checkpoint preserva o ponto exato da construção da **Home Pública Guivos Intelligence v1** após a integração conceitual de toda a arquitetura pública e a criação do Home Source Lock.
+Este checkpoint preserva o ponto exato da construção da **Home Pública Guivos Intelligence v1** após a integração conceitual da arquitetura pública, do Documento Mestre e do Home Source Lock, e após a criação do **Handoff Canônico para Design** neste pacote.
 
 Estado de autoridade:
 
@@ -42,26 +43,31 @@ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
 GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
 → HOME SOURCE LOCK
 → NORMATIVO
+
+GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
+→ HANDOFF CANÔNICO PARA DESIGN
+→ NORMATIVO
 ```
 
-## 2. Baseline do Home Source Lock
+## 2. Baseline do Handoff
 
-O Source Lock foi preparado sobre o estado reconciliado:
+O Handoff foi preparado sobre o estado reconciliado:
 
 ```text
 main
-31f985625c312e3d0bdc3836dbf34fa39c762d80
+43a8b0b07c6b7fe6690f422dc26844d0e22c5ea8
 
-gh-pages
-40ee70b8b0038b4a20c2b12691f438d5f7d4fa06
-→ Deployed 31f985625 with MkDocs 1.6.1
-
-PR #287
-GKR: corrigir copy da Home Intelligence v1
+PR #288
+GKR: congelar Source Lock da Home Intelligence v1
 → merged
+
+HOME SOURCE LOCK
+GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+→ active
+→ normative: true
 ```
 
-A publicação documental e a `main` estavam sincronizadas antes da criação deste Source Lock.
+A `main` utilizada como base já contém o Home Source Lock vigente. Este pacote não promove estado global, maturidade tecnológica, implementação ou publicação.
 
 ## 3. Estado conceitual consolidado
 
@@ -79,13 +85,22 @@ COPY DE REFERÊNCIA
 → CORRIGIDA E INTEGRADA
 
 HOME SOURCE LOCK
-→ CRIADO
+→ INTEGRADO
 
-HANDOFF / DESIGN
-→ NÃO INICIADO NESTE FLUXO
+HANDOFF CANÔNICO PARA DESIGN
+→ CRIADO NESTE PACOTE
+
+GENINPUT INTELLIGENCE
+→ NÃO INICIADO NESTE PACOTE
+
+WIREFRAME / UI / PROTÓTIPO
+→ NÃO INICIADOS
+
+IMPLEMENTAÇÃO
+→ NÃO AUTORIZADA
 ```
 
-## 4. Centro semântico congelado
+## 4. Centro semântico preservado
 
 Unidade de valor:
 
@@ -113,7 +128,7 @@ Fechamento:
 
 > **Novas possibilidades podem se tornar mais visíveis.**
 
-## 5. CTAs congelados
+## 5. CTAs preservados
 
 CTA principal:
 
@@ -123,22 +138,22 @@ CTA secundário:
 
 > **Conheça o Guivos Intelligence**
 
-Os CTAs não autorizam promessa de futuro conhecido, decisão certa, diagnóstico ou resultado empresarial comprovado.
+Os CTAs não autorizam promessa de futuro conhecido, decisão certa, diagnóstico, certeza ou resultado empresarial comprovado.
 
-## 6. Arquitetura congelada
+## 6. Arquitetura preservada no Handoff
 
 ```text
-01 — POSSIBILIDADE
-02 — NECESSIDADE
-03 — VALOR PRÓPRIO
-04 — RESULTADOS
-05 — MATERIALIZAÇÃO
-06 — FORMAÇÃO DA COMPREENSÃO
-07 — APLICAÇÃO
-08 — CONFIANÇA
-09 — AUTONOMIA
-10 — INTELIGÊNCIA CONECTADA
-11 — HORIZONTE AMPLIADO
+01 — ABRIR A POSSIBILIDADE
+02 — CRIAR A NECESSIDADE
+03 — DEFINIR O VALOR
+04 — MOSTRAR OS RESULTADOS
+05 — DEMONSTRAR OS RESULTADOS
+06 — EXPLICAR A FORMAÇÃO
+07 — MOSTRAR UTILIDADE
+08 — CONSTRUIR CONFIANÇA
+09 — PRESERVAR AUTONOMIA
+10 — APROFUNDAR RELAÇÕES
+11 — AMPLIAR O HORIZONTE
 ```
 
 Separações obrigatórias:
@@ -151,15 +166,25 @@ M10
 → APROFUNDA POR QUE AS RELAÇÕES IMPORTAM
 
 M04
-→ MOSTRA OS RESULTADOS
+→ MOSTRA O QUE O INTELLIGENCE PERMITE PERCEBER
 
 M05
-→ DEMONSTRA OS RESULTADOS
+→ DEMONSTRA COMO ESSA PERCEPÇÃO GANHA FORMA
 ```
 
-Os onze movimentos não obrigam onze seções visuais equivalentes.
+Os onze movimentos continuam sendo funções semânticas. O Handoff permite agrupamento visual, mas não remoção de função.
 
-## 7. Duas frentes preservadas
+## 7. Contrato de materialização
+
+Regra introduzida pelo Handoff:
+
+> **DESIGN RECEBE AUTORIDADE DE MATERIALIZAÇÃO ≠ AUTORIDADE DE REDEFINIÇÃO**
+
+Design pode decidir composição, grid, quantidade física de seções, tipografia, mídia, iconografia, cards, tratamento de KPIs e gráficos, responsividade, motion, progressive disclosure e agrupamento visual dos movimentos.
+
+Design não recebe autoridade para alterar produto, unidade de valor, promessa, fronteiras, privacidade, autonomia, causalidade, maturidade, claims, evidências, pricing, arquitetura técnica ou estado global do GKR.
+
+## 8. Duas frentes preservadas
 
 ### Pessoa / Journey
 
@@ -193,21 +218,22 @@ EMPRESA
 
 A Empresa não recebe Intelligence individual por funcionário nem acesso à intimidade individual da Journey.
 
-## 8. Tecnologia e visual
+## 9. Tecnologia e visual
 
 Graph, IA, Neo4j, GraphRAG, Power BI, Guivos.ai, dashboards e APIs permanecem subordinados ao valor do produto.
 
-Não existe seção tecnológica obrigatória congelada.
+O Handoff não cria seção tecnológica obrigatória.
 
 Visualizações analíticas podem demonstrar conexões, repetições, mudanças, relações, sinais ganhando força, contexto, origem de leitura, incerteza e limites.
 
 ```text
 VISUAL ANALÍTICO ≠ DASHBOARD COMO PRODUTO
 EXEMPLO CONCEITUAL ≠ DADO OPERACIONAL REAL
+VISUAL EXPLICATIVO ≠ PROVA DE RESULTADO
 TECNOLOGIA ≠ PRODUTO
 ```
 
-## 9. Guardrails preservados
+## 10. Guardrails preservados
 
 ```text
 INFORMAÇÃO ≠ COMPREENSÃO
@@ -227,9 +253,11 @@ INFERÊNCIA ≠ FATO
 MAIS DADOS ≠ MELHOR INTELLIGENCE
 RESULTADO ESPERADO ≠ RESULTADO COMPROVADO
 PERCEBER ANTES ≠ PREVER O FUTURO
+POSSIBILIDADE ≠ RESULTADO GARANTIDO
+RECOMENDAÇÃO ≠ ORDEM
 ```
 
-## 10. Preservações globais
+## 11. Preservações globais
 
 Esta frente não altera:
 
@@ -245,20 +273,48 @@ Esta frente não altera:
 
 Não há promoção silenciosa de estado global por este pacote.
 
-## 11. Próximo ponto exato
+## 12. Próximo ponto exato
 
-Após a integração deste Home Source Lock, retomar exatamente em:
+Após a integração deste Handoff Canônico, retomar exatamente em:
 
-> **Home Pública Guivos Intelligence v1 — Handoff controlado para Design.**
+> **Home Pública Guivos Intelligence v1 — GENINPUT Intelligence — PR B.**
 
-Esse próximo ponto ainda exige autorização separada e não deve ser inferido como iniciado pela criação do Source Lock.
+Escopo do próximo gate:
+
+```text
+HOME SOURCE LOCK
+→ HANDOFF CANÔNICO PARA DESIGN
+→ GENINPUT INTELLIGENCE
+→ MATERIALIZAÇÃO CONTROLADA
+```
+
+O GENINPUT deve traduzir o Handoff para o formato operacional da etapa ou ferramenta de Design escolhida sem redefinir a Home.
+
+```text
+GENINPUT TRADUZ O HANDOFF
+≠
+REDEFINE A HOME
+```
+
+O GENINPUT está explicitamente **fora deste pacote**. Sua criação exige PR separada e autorização correspondente.
+
+Também permanecem não iniciados por este pacote:
+
+- execução em Figma Make ou outra ferramenta generativa;
+- wireframe;
+- UI;
+- protótipo;
+- implementação;
+- publicação.
 
 ```mermaid
 flowchart TD
     A[Product Source Lock] --> B[11 movimentos]
     B --> C[Documento Mestre]
     C --> D[Home Source Lock]
-    D --> E[Handoff / Design controlado\npróximo ponto]
+    D --> E[Handoff Canônico para Design]
+    E --> F[GENINPUT Intelligence\npróximo gate separado]
+    F --> G[Materialização controlada]
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
