@@ -1,10 +1,10 @@
 ---
 id: GKR-INTELLIGENCE-HOME-CONTINUITY-001
-title: Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — Handoff Canônico
+title: Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — GENINPUT emitido
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Guivos
-last_updated: 2026-08-19
+last_updated: 2026-08-20
 related:
   - GPA-006
   - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -13,16 +13,24 @@ related:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
   - GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
+  - GKR-UX-HOME-INTELLIGENCE-GENINPUT-001
   - GKR-INTELLIGENCE-CONTINUITY-001
   - GKR-STATE-001
 normative: false
 ---
 
-# Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — Handoff Canônico
+# Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — GENINPUT emitido
 
 ## 1. Finalidade
 
-Este checkpoint preserva o ponto exato da construção da **Home Pública Guivos Intelligence v1** após a integração conceitual da arquitetura pública, do Documento Mestre e do Home Source Lock, e após a criação do **Handoff Canônico para Design** neste pacote.
+Este checkpoint preserva o ponto exato da construção da **Home Pública Guivos Intelligence v1** após:
+
+- arquitetura narrativa convergida;
+- Documento Mestre integrado;
+- Home Source Lock integrado;
+- navegação da Home integrada ao Guivos Knowledge Repository;
+- Handoff Canônico para Design integrado;
+- emissão do **GENINPUT Intelligence** neste pacote.
 
 Estado de autoridade:
 
@@ -35,7 +43,6 @@ GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
 
 GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1
 → ARQUITETURA NARRATIVA EM 11 MOVIMENTOS
-→ COPY DE REFERÊNCIA CORRIGIDA
 
 GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
 → DOCUMENTO MESTRE
@@ -47,29 +54,33 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
 GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
 → HANDOFF CANÔNICO PARA DESIGN
 → NORMATIVO
+
+GKR-UX-HOME-INTELLIGENCE-GENINPUT-001 v1.0.0
+→ SOURCE LOCK OPERACIONAL DA PRIMEIRA EXPLORAÇÃO
+→ NORMATIVO
 ```
 
-## 2. Baseline do Handoff
+## 2. Baseline do GENINPUT
 
-O Handoff foi preparado sobre o estado reconciliado:
+O GENINPUT foi preparado sobre o estado reconciliado:
 
 ```text
 main
-43a8b0b07c6b7fe6690f422dc26844d0e22c5ea8
+43ed02030dc03600ce756ce63ea55bd3e742f910
 
-PR #288
-GKR: congelar Source Lock da Home Intelligence v1
+PR #289
+GKR: ativar Handoff de Design da Home Intelligence v1
 → merged
 
-HOME SOURCE LOCK
-GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+HANDOFF
+GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
 → active
 → normative: true
 ```
 
-A `main` utilizada como base já contém o Home Source Lock vigente. Este pacote não promove estado global, maturidade tecnológica, implementação ou publicação.
+O checkpoint acima é a fonte temporal do GENINPUT. A criação do GENINPUT não altera produto, maturidade tecnológica, implementação, pricing ou estado global do GKR.
 
-## 3. Estado conceitual consolidado
+## 3. Estado consolidado
 
 ```text
 MOVIMENTOS 01–11
@@ -87,20 +98,26 @@ COPY DE REFERÊNCIA
 HOME SOURCE LOCK
 → INTEGRADO
 
+NAVEGAÇÃO NO GKR
+→ INTEGRADA
+
 HANDOFF CANÔNICO PARA DESIGN
-→ CRIADO NESTE PACOTE
+→ INTEGRADO
 
 GENINPUT INTELLIGENCE
-→ NÃO INICIADO NESTE PACOTE
+→ EMITIDO NESTE PACOTE
 
 WIREFRAME / UI / PROTÓTIPO
 → NÃO INICIADOS
+
+PRIMEIRA EXPLORAÇÃO EXTERNA
+→ NÃO INICIADA
 
 IMPLEMENTAÇÃO
 → NÃO AUTORIZADA
 ```
 
-## 4. Centro semântico preservado
+## 4. Contratos centrais preservados
 
 Unidade de valor:
 
@@ -128,7 +145,16 @@ Fechamento:
 
 > **Novas possibilidades podem se tornar mais visíveis.**
 
-## 5. CTAs preservados
+Contratos:
+
+```text
+INFORMAÇÃO ≠ COMPREENSÃO
+COMPREENDER ≠ DECIDIR
+DESIGN RECEBE AUTORIDADE DE MATERIALIZAÇÃO ≠ AUTORIDADE DE REDEFINIÇÃO
+GENINPUT TRADUZ O HANDOFF ≠ REDEFINE A HOME
+```
+
+## 5. CTAs congelados
 
 CTA principal:
 
@@ -140,7 +166,7 @@ CTA secundário:
 
 Os CTAs não autorizam promessa de futuro conhecido, decisão certa, diagnóstico, certeza ou resultado empresarial comprovado.
 
-## 6. Arquitetura preservada no Handoff
+## 6. Arquitetura preservada
 
 ```text
 01 — ABRIR A POSSIBILIDADE
@@ -172,33 +198,63 @@ M05
 → DEMONSTRA COMO ESSA PERCEPÇÃO GANHA FORMA
 ```
 
-Os onze movimentos continuam sendo funções semânticas. O Handoff permite agrupamento visual, mas não remoção de função.
+Os onze movimentos continuam sendo funções semânticas, não obrigação de onze seções físicas.
 
-## 7. Contrato de materialização
+## 7. Papel do GENINPUT
 
-Regra introduzida pelo Handoff:
+O `GKR-UX-HOME-INTELLIGENCE-GENINPUT-001 v1.0.0`:
 
-> **DESIGN RECEBE AUTORIDADE DE MATERIALIZAÇÃO ≠ AUTORIDADE DE REDEFINIÇÃO**
+- fixa o checkpoint exato da `main` utilizado como fonte;
+- define o pacote mínimo de documentos entregues à ferramenta;
+- traduz as invariantes do Handoff em instruções operacionais;
+- congela copy e CTAs necessários à primeira exploração;
+- registra liberdades reais de Design;
+- proíbe inferências sobre claims, tecnologia, dados, maturidade e autoridade;
+- define placeholders permitidos;
+- inclui prompt controlado;
+- exige autoauditoria e validação humana.
 
-Design pode decidir composição, grid, quantidade física de seções, tipografia, mídia, iconografia, cards, tratamento de KPIs e gráficos, responsividade, motion, progressive disclosure e agrupamento visual dos movimentos.
+O GENINPUT não cria:
 
-Design não recebe autoridade para alterar produto, unidade de valor, promessa, fronteiras, privacidade, autonomia, causalidade, maturidade, claims, evidências, pricing, arquitetura técnica ou estado global do GKR.
+- UI;
+- wireframe;
+- protótipo;
+- claim;
+- tecnologia;
+- integração;
+- evidência;
+- decisão de produto.
 
-## 8. Duas frentes preservadas
+## 8. Direção de experiência registrada
+
+Expressão operacional:
+
+> **clareza emergindo da complexidade.**
+
+Transformações de referência:
+
+```text
+DISPERSÃO → RELAÇÃO
+RUÍDO → PADRÃO
+ESTADO → MUDANÇA
+SINAL → MOVIMENTO PERCEPTÍVEL
+NÚMERO → CONTEXTO
+CONCLUSÃO → EXPLICAÇÃO
+INFORMAÇÃO → COMPREENSÃO
+```
+
+A primeira percepção deve ser de ampliação de compreensão, e não de IA, dashboard, grafo ou plataforma analítica genérica.
+
+## 9. Duas frentes preservadas
 
 ### Pessoa / Journey
 
 > **Entenda melhor por que determinadas informações, recomendações ou possibilidades podem aparecer em determinado contexto.**
 
 ```text
-INTELLIGENCE
-→ produz compreensão
-
-JOURNEY
-→ governa a experiência
-
-PESSOA
-→ escolhe
+INTELLIGENCE → produz compreensão
+JOURNEY → governa a experiência
+PESSOA → escolhe
 ```
 
 ### Business / população
@@ -206,34 +262,29 @@ PESSOA
 > **Compreenda padrões, mudanças e movimentos em populações de forma agregada e protegida.**
 
 ```text
-INTELLIGENCE
-→ produz leitura populacional
-
-BUSINESS
-→ governa a relação empresarial
-
-EMPRESA
-→ decide
+INTELLIGENCE → produz leitura populacional
+BUSINESS → governa a relação empresarial
+EMPRESA → decide
 ```
 
 A Empresa não recebe Intelligence individual por funcionário nem acesso à intimidade individual da Journey.
 
-## 9. Tecnologia e visual
+## 10. Tecnologia e exemplos
 
-Graph, IA, Neo4j, GraphRAG, Power BI, Guivos.ai, dashboards e APIs permanecem subordinados ao valor do produto.
+IA, Graph, Neo4j, GraphRAG, Power BI, Guivos.ai, dashboards e APIs permanecem subordinados ao valor do produto.
 
-O Handoff não cria seção tecnológica obrigatória.
+O GENINPUT não cria seção tecnológica obrigatória.
 
-Visualizações analíticas podem demonstrar conexões, repetições, mudanças, relações, sinais ganhando força, contexto, origem de leitura, incerteza e limites.
+Exemplos analíticos permanecem conceituais até prova em contrário.
 
 ```text
 VISUAL ANALÍTICO ≠ DASHBOARD COMO PRODUTO
 EXEMPLO CONCEITUAL ≠ DADO OPERACIONAL REAL
-VISUAL EXPLICATIVO ≠ PROVA DE RESULTADO
+VISUALIZAÇÃO ≠ CLAIM COMPROVADO
 TECNOLOGIA ≠ PRODUTO
 ```
 
-## 10. Guardrails preservados
+## 11. Guardrails preservados
 
 ```text
 INFORMAÇÃO ≠ COMPREENSÃO
@@ -257,7 +308,7 @@ POSSIBILIDADE ≠ RESULTADO GARANTIDO
 RECOMENDAÇÃO ≠ ORDEM
 ```
 
-## 11. Preservações globais
+## 12. Preservações globais
 
 Esta frente não altera:
 
@@ -273,33 +324,29 @@ Esta frente não altera:
 
 Não há promoção silenciosa de estado global por este pacote.
 
-## 12. Próximo ponto exato
+## 13. Próximo ponto exato
 
-Após a integração deste Handoff Canônico, retomar exatamente em:
+Após a integração do GENINPUT, retomar exatamente em:
 
-> **Home Pública Guivos Intelligence v1 — GENINPUT Intelligence — PR B.**
+> **Home Pública Guivos Intelligence v1 — pacote oficial de entrega para Design — gate separado.**
 
-Escopo do próximo gate:
+Antes da primeira exploração externa, deve ser reconciliado o **Design Delivery Manifest** vigente e emitido um pacote que inclua formalmente o Intelligence e seu GENINPUT no checkpoint correto.
+
+Sequência:
 
 ```text
 HOME SOURCE LOCK
 → HANDOFF CANÔNICO PARA DESIGN
 → GENINPUT INTELLIGENCE
-→ MATERIALIZAÇÃO CONTROLADA
+→ PACOTE OFICIAL DE ENTREGA PARA DESIGN
+→ PRIMEIRA EXPLORAÇÃO EXTERNA
+→ VALIDAÇÃO HUMANA CONTRA O GKR
 ```
 
-O GENINPUT deve traduzir o Handoff para o formato operacional da etapa ou ferramenta de Design escolhida sem redefinir a Home.
+Permanecem fora deste pacote:
 
-```text
-GENINPUT TRADUZ O HANDOFF
-≠
-REDEFINE A HOME
-```
-
-O GENINPUT está explicitamente **fora deste pacote**. Sua criação exige PR separada e autorização correspondente.
-
-Também permanecem não iniciados por este pacote:
-
+- atualização ou nova emissão do Design Delivery Manifest;
+- bundle oficial de Design;
 - execução em Figma Make ou outra ferramenta generativa;
 - wireframe;
 - UI;
@@ -307,14 +354,18 @@ Também permanecem não iniciados por este pacote:
 - implementação;
 - publicação.
 
+Cada etapa exige gate e autorização próprios.
+
 ```mermaid
 flowchart TD
     A[Product Source Lock] --> B[11 movimentos]
     B --> C[Documento Mestre]
     C --> D[Home Source Lock]
     D --> E[Handoff Canônico para Design]
-    E --> F[GENINPUT Intelligence\npróximo gate separado]
-    F --> G[Materialização controlada]
+    E --> F[GENINPUT Intelligence]
+    F --> G[Pacote oficial de entrega para Design\npróximo gate separado]
+    G --> H[Primeira exploração externa]
+    H --> I[Validação humana contra GKR]
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
