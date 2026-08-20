@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.81.0
+id: ROADMAP-12.82.0
 title: Roadmap Arquitetural — Consolidação Documental P0–P9
 status: active
-version: 12.81.0
+version: 12.82.0
 owner: Guivos
-last_updated: 2026-08-18
+last_updated: 2026-08-20
 supersedes_partial:
-  - ROADMAP-12.80.0
+  - ROADMAP-12.81.0
 related:
   - GKR-STATE-001
   - GKR-P9-GLOBAL-CONSOLIDATION-001
@@ -24,6 +24,13 @@ related:
   - GPA-006
   - GIA-000
   - GKR-INTELLIGENCE-CONTINUITY-001
+  - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
+  - GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
+  - GKR-UX-HOME-INTELLIGENCE-MASTER-001
+  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
+  - GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
+  - GKR-UX-HOME-INTELLIGENCE-GENINPUT-001
+  - GKR-INTELLIGENCE-HOME-CONTINUITY-001
   - UXA-101
   - GTM-007
   - GTM-008
@@ -34,6 +41,7 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V2-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V3-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-MALL-MASTER-001
@@ -48,15 +56,15 @@ related:
 
 ## 1. Autoridade
 
-Este roadmap registra o estado global após a ressincronização documental de agosto de 2026, a convergência das sete Homes públicas atualmente entregáveis, a autorização procedimental de sua fase de Design, a ressincronização da autoridade do Guivos Business em `GPA-004` v1.6.0, a convergência documental da Home Pública do Business, a emissão externa v3 do handoff de Design e a **convergência integral do Produto Especializado Guivos Intelligence em `GPA-006` v2.0.0**. O estado oficial permanece em `GKR-STATE-001`.
+Este roadmap registra o estado global após a ressincronização documental de agosto de 2026, a convergência das oito Homes públicas atualmente incorporadas ao handoff comum, a ressincronização da autoridade do Guivos Business em `GPA-004` v1.6.0, a convergência documental da Home Pública do Business, a convergência integral do Produto Especializado Guivos Intelligence em `GPA-006` v2.0.0, a convergência documental de sua Home Pública e a emissão externa v4 do handoff de Design. O estado oficial permanece em `GKR-STATE-001`.
 
-A decisão pós-P5 de 2026-08-12 que afastava wireframe da continuidade da Home de Organizações e Coletivos permanece preservada como histórico em `GKR-HOME-DECISION-NO-WIREFRAME-001`, mas foi posteriormente superada **somente quanto à autorização procedimental da fase de Design** por `GKR-UX-HOMES-DESIGN-HANDOFF-001`.
+A decisão pós-P5 de 2026-08-12 que afastava wireframe da continuidade da Home de Organizações e Coletivos permanece preservada como histórico em `GKR-HOME-DECISION-NO-WIREFRAME-001`, mas foi posteriormente superada **somente quanto à autorização procedimental da fase externa de Design** por `GKR-UX-HOMES-DESIGN-HANDOFF-001`. A sincronização pós-v4 não cria qualquer tela, wireframe, UI ou protótipo.
 
 A ressincronização do Business é uma frente de autoridade de produto. Ela explicita o formato funcional já validado, corrige a leitura residual de “jornadas corporativas” e não inicia UXA-102 nem altera o marco M7.88.
 
-A Home Business é uma frente separada de Experience Architecture. Arquitetura narrativa, contratos de autoridade, conversão global v2, Documento Mestre, Source Lock semântico e Source Lock Operacional + Prompt estão convergidos. Business integra `GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.2.0 e a emissão externa v3; Design está autorizado proceduralmente, mas nenhum output visual é automaticamente canônico, implementado ou publicado.
+A Home Business é uma frente separada de Experience Architecture. Arquitetura narrativa, contratos de autoridade, conversão global v2, Documento Mestre, Source Lock semântico e Source Lock Operacional + Prompt estão convergidos. Business integra `GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.3.0 e a emissão externa v4; nenhum output visual é automaticamente canônico, implementado ou publicado.
 
-A convergência do Guivos Intelligence é uma **frente de autoridade de produto** separada da fila UXA e da Experience Architecture pública. `GPA-006 2.0.0` consolida os Checkpoints 1–12, incluindo identidade, duas frentes de geração de valor, capacidades, inputs, outputs, proteção populacional, contratos interproduto, arquitetura tecnológica subordinada, modos de entrega, Intelligence Serving, direção comercial, governança, maturidade, gaps e guardrails. Essa convergência não inicia a Home Pública do Intelligence, não cria Design e não comprova implementação técnica.
+A convergência do Guivos Intelligence permanece uma **frente de autoridade de produto** separada da fila UXA. `GPA-006 2.0.0` consolida os Checkpoints 1–12, incluindo identidade, duas frentes de geração de valor, capacidades, inputs, outputs, proteção populacional, contratos interproduto, arquitetura tecnológica subordinada, modos de entrega, Intelligence Serving, direção comercial, governança, maturidade, gaps e guardrails. Posteriormente, Product Source Lock, Narrative, Documento Mestre, Home Source Lock, Handoff e GENINPUT da Home Intelligence também foram convergidos e incorporados ao Design Delivery v4. Isso não cria Design nem comprova implementação técnica.
 
 ## 2. Estado vigente
 
@@ -74,18 +82,19 @@ A convergência do Guivos Intelligence é uma **frente de autoridade de produto*
 | Engenharia de Produto | pausada antes de W0-01 |
 | programa P0–P9 | documentalmente consolidado após integração de P9 |
 | Guivos Business — autoridade de produto | **GPA-004 v1.6.0; duas ofertas principais: Programas de Incentivo + Guivos Journey custeado pela Empresa; contrato parte da Empresa; Business distinto de Organização e independente de Ads** |
-| Home Pública — Guivos Business | **convergida; Documento Mestre + conversão v2 + contratos de autoridade + Source Locks; Design autorizado proceduralmente; incluída na emissão v3** |
-| Guivos Intelligence — autoridade de produto | **GPA-006 v2.0.0 convergido; Checkpoints 1–12 consolidados; duas frentes: Pessoa/Journey + Business/População; Source Lock do Produto é o próximo ponto** |
-| Home Pública — Guivos Intelligence | **não iniciada; sem Documento Mestre, Source Lock de Home, wireframe, UI ou Design** |
-| Home Pública — Pessoa | Documento Mestre + reconciliação pós-Media + Source Lock; Design autorizado proceduralmente |
-| Home Pública — Organizações e Coletivos | Documento Mestre + reconciliação pós-Media + Source Lock; Design autorizado proceduralmente; P1–P5 preservados como histórico |
-| Home Pública — Guivos Mall | Documento Mestre + reconciliação pós-Media + Source Lock; Design autorizado proceduralmente |
-| Home Pública — Guivos Travel | Documento Mestre + reconciliação pós-Media + Source Lock; Design autorizado proceduralmente |
-| Home Pública — Guivos Media | Documento Mestre + GPA-005 + Source Lock; Design autorizado proceduralmente |
-| Home Pública — Guivos Ads | Documento Mestre + GPA-007 + Source Lock; Design autorizado proceduralmente |
-| handoff comum das sete Homes | **GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.2.0 ativo** |
-| pacote externo para Design | **GKR-UX-HOMES-DESIGN-DELIVERY-001 v3.0.0 — 25 fontes canônicas + 7 guias operacionais** |
-| snapshot externo v3 | **`delivery/design-handoff-v3` @ `7b2b20c035551e3b1206af987aaddda710757166`; tree `2744a86ca761146a7fcb90ee5ee2e09ef6baefa7`; 32 arquivos** |
+| Home Pública — Guivos Business | **convergida; Documento Mestre + conversão v2 + contratos de autoridade + Source Locks; incluída na emissão v4; nenhum output visual produzido no GKR** |
+| Guivos Intelligence — autoridade de produto | **GPA-006 v2.0.0 convergido; Checkpoints 1–12 consolidados; duas frentes: Pessoa/Journey + Business/População; Product Source Lock v1.0.0 integrado** |
+| Home Pública — Guivos Intelligence | **Narrative + Documento Mestre + Source Lock + Handoff + GENINPUT convergidos; incluída na emissão v4; wireframe, UI, protótipo e Design não iniciados** |
+| Home Pública — Pessoa | Documento Mestre + reconciliação pós-Media + Source Lock; incluída no handoff v4 |
+| Home Pública — Organizações e Coletivos | Documento Mestre + reconciliação pós-Media + Source Lock; P1–P5 preservados como histórico; incluída no handoff v4 |
+| Home Pública — Guivos Mall | Documento Mestre + reconciliação pós-Media + Source Lock; incluída no handoff v4 |
+| Home Pública — Guivos Travel | Documento Mestre + reconciliação pós-Media + Source Lock; incluída no handoff v4 |
+| Home Pública — Guivos Media | Documento Mestre + GPA-005 + Source Lock; incluída no handoff v4 |
+| Home Pública — Guivos Ads | Documento Mestre + GPA-007 + Source Lock; incluída no handoff v4 |
+| handoff comum das oito Homes | **GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.3.0 ativo** |
+| pacote externo para Design | **GKR-UX-HOMES-DESIGN-DELIVERY-001 v4.0.0 — 31 fontes canônicas + 8 guias operacionais** |
+| snapshot externo v4 | **`delivery/design-handoff-v4` @ `dfed980d8cfb39bbe4694e58d7c86ca0692266dc`; tree `270e404cf0b5bf0d5d543bbbb0c5bd6a1f4602df`; 39 arquivos** |
+| snapshot externo v3 | **preservado em `delivery/design-handoff-v3` @ `7b2b20c035551e3b1206af987aaddda710757166`** |
 | snapshot externo v2 | **preservado em `delivery/design-handoff-v2` @ `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`** |
 | snapshot externo v1 | **preservado em `delivery/design-handoff-v1` @ `8e2a356ca84ba980e588258757800cde2a946f40`** |
 
@@ -100,7 +109,7 @@ UXA-097 — compreensão inicial → Tela Hoje
 → UXA-102/V5 — PENDENTE, NÃO INICIADA
 ```
 
-A convergência das Homes públicas, o handoff de Design, a ressincronização do Guivos Business, a convergência da Home Business e a convergência do `GPA-006 2.0.0` constituem frentes separadas da sequência UXA e **não criam nova UXA, não alteram M7.88 e não retomam Engenharia de Produto**.
+A convergência das Homes públicas, o handoff de Design, a ressincronização do Guivos Business, a convergência da Home Business, a convergência do `GPA-006 2.0.0`, a convergência da Home Intelligence e a emissão v4 constituem frentes separadas da sequência UXA e **não criam nova UXA, não alteram M7.88 e não retomam Engenharia de Produto**.
 
 ## 4. Consolidação temática
 
@@ -117,7 +126,7 @@ A convergência das Homes públicas, o handoff de Design, a ressincronização d
 | P8 | sete Produtos Especializados rebaselineados |
 | P9 | estado transversal, matriz e Public Canon reconciliados |
 
-Na Experience Architecture pública, sete Homes atingiram convergência documental suficiente para handoff controlado à fase de Design:
+Na Experience Architecture pública, oito Homes atingiram convergência documental suficiente para o handoff controlado:
 
 1. Pessoa;
 2. Organizações e Coletivos;
@@ -125,11 +134,12 @@ Na Experience Architecture pública, sete Homes atingiram convergência document
 4. Guivos Travel;
 5. Guivos Media;
 6. Guivos Ads;
-7. Guivos Business.
+7. Guivos Business;
+8. Guivos Intelligence.
 
-A Home do Guivos Intelligence **não integra esse conjunto** porque sua arquitetura pública ainda não foi iniciada.
+A inclusão da Home Intelligence no conjunto não autoriza automaticamente materialização visual. Seu pacote documental específico está convergido e incorporado à emissão v4.
 
-A Home de Organizações e Coletivos preserva P1–P5 como histórico válido. `GKR-HOME-P5` registrou prontidão para decisão humana; a decisão pós-P5 inicialmente afastou wireframe; `GKR-UX-HOMES-DESIGN-HANDOFF-001`, posterior, passou a autorizar wireframe low-fi e demais explorações de Design. A superação é exclusivamente procedimental e não altera significado, narrativa ou produto.
+A Home de Organizações e Coletivos preserva P1–P5 como histórico válido. `GKR-HOME-P5` registrou prontidão para decisão humana; a decisão pós-P5 inicialmente afastou wireframe; `GKR-UX-HOMES-DESIGN-HANDOFF-001`, posterior, passou a autorizar proceduralmente explorações de Design em frente externa. A superação é exclusivamente procedimental e não altera significado, narrativa ou produto; nenhuma exploração é iniciada por esta sincronização.
 
 A reconciliação pós-Media estabeleceu que Guivos Media pode abastecer editorialmente outras superfícies sem assumir autoridade sobre a finalidade, narrativa ou operação dessas superfícies.
 
@@ -234,7 +244,7 @@ Business pode aumentar circulação econômica em Mall, Travel e possibilidades 
 
 ### 4.5 Home Pública do Guivos Business — convergência e handoff
 
-A Home Business alcançou convergência documental suficiente para Design controlado.
+A Home Business alcançou convergência documental suficiente para handoff controlado.
 
 A cadeia vigente é:
 
@@ -258,10 +268,10 @@ SOURCE LOCK OPERACIONAL + PROMPT
 → GKR-UX-HOME-BUSINESS-GENINPUT-001
 
 HANDOFF CANÔNICO
-→ GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.2.0
+→ GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.3.0
 
 EMISSÃO EXTERNA
-→ DESIGN HANDOFF v3
+→ DESIGN HANDOFF v4
 ```
 
 A pergunta-mãe vigente é:
@@ -274,15 +284,15 @@ A promessa é:
 
 A arquitetura pública preserva Journey antes de Incentivos, autonomia da pessoa, Pontos fora da Home, Intelligence visual e limitado àquilo que acontece dentro da Guivos, comparativo Start / Growth / Scale / Enterprise, configurador comercial e contratação online com três modelos de implementação/operação.
 
-`GKR-BUSINESS-HOME-CONTINUITY-005` registra o ponto recuperável pós-emissão: a etapa documental necessária para iniciar Design está concluída; o próximo ato é a primeira exploração externa da Home Business e sua validação humana contra o Source Lock.
+`GKR-BUSINESS-HOME-CONTINUITY-005` permanece histórico recuperável da convergência Business. A inclusão posterior no Design Delivery v4 não altera suas autoridades e não inicia materialização visual por esta sincronização.
 
-O pacote de entrega v3 é governado por `GKR-UX-HOMES-DESIGN-DELIVERY-001`: 25 fontes canônicas separadas por Home, acrescidas de sete guias operacionais `LEIA-PRIMEIRO`, totalizando 32 arquivos no snapshot externo `7b2b20c035551e3b1206af987aaddda710757166`, tree `2744a86ca761146a7fcb90ee5ee2e09ef6baefa7`.
+O pacote de entrega v4 é governado por `GKR-UX-HOMES-DESIGN-DELIVERY-001`: 31 fontes canônicas separadas por Home, acrescidas de oito guias operacionais `LEIA-PRIMEIRO`, totalizando 39 arquivos no snapshot externo `dfed980d8cfb39bbe4694e58d7c86ca0692266dc`, tree `270e404cf0b5bf0d5d543bbbb0c5bd6a1f4602df`.
 
-A emissão v2 continua preservada no snapshot `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016` e a emissão v1 no snapshot `8e2a356ca84ba980e588258757800cde2a946f40`. Nenhuma foi reescrita pela v3.
+A emissão v3 continua preservada no snapshot `7b2b20c035551e3b1206af987aaddda710757166`, a emissão v2 no snapshot `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016` e a emissão v1 no snapshot `8e2a356ca84ba980e588258757800cde2a946f40`. Nenhuma foi reescrita pela v4.
 
-### 4.6 Guivos Intelligence — convergência do Produto Especializado
+### 4.6 Guivos Intelligence — Produto e Home Pública convergidos
 
-`GPA-006 2.0.0` encerra a fase de estruturação conceitual do Produto Especializado antes do Source Lock.
+`GPA-006 2.0.0` encerrou a fase de estruturação conceitual do Produto Especializado e permanece sua autoridade superior.
 
 A arquitetura consolidada reconhece:
 
@@ -304,18 +314,23 @@ O produto possui um único núcleo de Intelligence, duas frentes superiores e co
 Guardrails centrais:
 
 ```text
+INTELLIGENCE ≠ JOURNEY
+INTELLIGENCE ≠ BUSINESS
 COMPREENDER ≠ DECIDIR
 CONHECER ≠ UTILIZAR ≠ COMPARTILHAR
 PERSONALIZAR ≠ EXPOR
 ENTITLEMENT ≠ AUTORIDADE
 PAGAMENTO ≠ PERTINÊNCIA
 INFERÊNCIA ≠ FATO
+SINAL ≠ CERTEZA
+TENDÊNCIA ≠ DESTINO
+PERCEBER ANTES ≠ PREVER O FUTURO
 TECNOLOGIA ≠ PRODUTO
 ```
 
 `GIA-000 1.5.0` preserva CIE, LPM, GPMA e família de Intelligence Engines como candidatos técnicos/arquiteturais. `GPA-006 2.0.0` não declara microserviços, modelo físico de dados, ontologia física, Neo4j provisionado, GraphRAG/GDS operacional, modelo de IA selecionado, API operacional ou Power BI integrado.
 
-O próximo ponto governado do produto é o **Source Lock do Guivos Intelligence**. Somente depois dele deve ser iniciada a arquitetura da Home Pública do Intelligence.
+Após o produto, foram integrados `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001`, `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001`, `GKR-UX-HOME-INTELLIGENCE-MASTER-001`, `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001`, `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001` e `GKR-UX-HOME-INTELLIGENCE-GENINPUT-001`. A Home Intelligence está documentalmente convergida e incluída no snapshot externo v4, sem tela, wireframe, UI, protótipo ou Design produzido.
 
 ## 5. Lacunas não fechadas por documentação
 
@@ -329,7 +344,7 @@ Continuam dependentes de evidência ou autorização própria:
 - piloto e operação internacional;
 - cobrança/gateway real;
 - handoffs especializados ainda não materializados;
-- seleção e validação humana das direções visuais das sete Homes;
+- seleção e validação humana de eventuais direções visuais das Homes, caso uma frente visual seja futuramente autorizada;
 - promoção de qualquer output de Design a estado canônico;
 - implementação operacional da experiência inteligente de qualificação do Guivos Ads;
 - implementação operacional de campanhas, inventário, pricing e mensuração do Guivos Ads;
@@ -346,8 +361,7 @@ Continuam dependentes de evidência ou autorização própria:
 - stack de IA, MLOps, Serving técnico e APIs do Intelligence;
 - integração Power BI do Intelligence;
 - pricing final ou oferta B2B autônoma do Intelligence;
-- Source Lock do Produto Guivos Intelligence;
-- arquitetura e direção visual da Home Pública do Guivos Intelligence;
+- output visual validado/canônico da Home Pública do Guivos Intelligence;
 - direção visual validada e output canônico da Home Pública do Guivos Business;
 - UXA-102/V5;
 - Product Engineering.
@@ -367,10 +381,10 @@ O próximo ato deve nascer de uma necessidade concreta e autoridade própria. Ex
 - readiness/piloto territorial → gates P7;
 - nova continuidade funcional → UXA-102 somente por autorização humana separada;
 - implementação → Product Engineering somente por reativação explícita;
-- sete Homes convergidas → exploração de Design controlada por Home e por Source Lock;
-- Guivos Ads → validar direção de Design, operação comercial e experiência inteligente em atos próprios, sem inferir implementação automática;
-- Guivos Business → materializar a primeira exploração externa de Design usando exclusivamente o contexto Business da emissão v3 e submetê-la à validação humana contra o Source Lock;
-- **Guivos Intelligence → criar o Source Lock do Produto a partir de `GPA-006 2.0.0`; somente depois iniciar a Home Pública do Intelligence.**
+- oito Homes convergidas → nenhuma frente visual é iniciada automaticamente pela existência do handoff;
+- Guivos Ads → qualquer próxima frente comercial, visual ou inteligente exige ato próprio, sem inferir implementação automática;
+- Guivos Business → qualquer materialização visual futura exige autorização própria e deve preservar exclusivamente seu contexto e Source Lock;
+- **Guivos Intelligence → Produto e Home estão documentalmente convergidos e incluídos no v4; qualquer próximo movimento visual ou técnico exige autorização própria e deve preservar Product Source Lock, Narrative, Documento Mestre, Home Source Lock, Handoff e GENINPUT.**
 
 ## 7. Handoff e entrega para Design
 
@@ -380,22 +394,25 @@ O estado governado é:
 GKR
 → fonte de verdade e arquitetura
 
-GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.2.0
-→ autorização procedimental + regras de Design para sete Homes
+GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.3.0
+→ regras procedimentais de handoff para oito Homes
 
 SOURCE LOCK DE CADA HOME
-→ contexto permitido por execução
+→ contexto permitido por execução futura
 
-GKR-UX-HOMES-DESIGN-DELIVERY-001 v3.0.0
+GKR-UX-HOMES-DESIGN-DELIVERY-001 v4.0.0
 → composição e integridade do pacote externo
 
-GKR-UX-HOMES-DESIGN-DELIVERY-V3-SNAPSHOT-001
+GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
 → registro factual do snapshot emitido
 
-branch delivery/design-handoff-v3
+branch delivery/design-handoff-v4
 → snapshot de distribuição vigente
-→ 25 fontes canônicas + 7 guias = 32 arquivos
+→ 31 fontes canônicas + 8 guias = 39 arquivos
 → não é fonte canônica paralela
+
+branch delivery/design-handoff-v3
+→ snapshot histórico preservado
 
 branch delivery/design-handoff-v2
 → snapshot histórico preservado
@@ -403,26 +420,26 @@ branch delivery/design-handoff-v2
 branch delivery/design-handoff-v1
 → snapshot histórico preservado
 
-OUTPUT DE DESIGN
-→ EXPLORAÇÃO
-→ requer validação humana antes de qualquer promoção
+OUTPUT VISUAL
+→ não produzido por esta continuidade
+→ qualquer output futuro requer autorização e validação humanas
 ```
 
 As branches de entrega não devem ser mescladas na `main` para duplicar documentos canônicos. Se qualquer fonte obrigatória evoluir materialmente, deve ser avaliada nova emissão do pacote em vez de substituição silenciosa de arquivos dentro de um snapshot já distribuído.
 
-A Home do Guivos Business integra explicitamente a emissão v3. Seu contexto de trabalho é isolado e usa o Handoff Canônico comum, Source Lock semântico, Documento Mestre, Conversão Global v2, Contratos de Autoridade, `GPA-004` e Source Lock Operacional + Prompt. Documentos específicos das demais Homes não devem ser misturados na mesma execução generativa.
+A Home do Guivos Business integra explicitamente a emissão v4. Seu contexto de trabalho é isolado e usa o Handoff Canônico comum, Source Lock semântico, Documento Mestre, Conversão Global v2, Contratos de Autoridade, `GPA-004` e Source Lock Operacional + Prompt. Documentos específicos das demais Homes não devem ser misturados na mesma execução generativa.
 
-O Guivos Intelligence ainda **não integra o handoff das Homes**, porque sua Home Pública não foi iniciada. `GPA-006 2.0.0` é autoridade de produto e não deve ser confundida com Documento Mestre ou Source Lock de Home.
+A Home do Guivos Intelligence também integra explicitamente a emissão v4. Seu contexto isolado usa GENINPUT, Handoff específico, Home Source Lock, Documento Mestre, Product Source Lock e `GPA-006`, além do Handoff Canônico comum. A inclusão não produz Design e não transfere autoridade de Journey ou Business para Intelligence.
 
 ## 8. Preservação
 
 `ressincronização documental concluída ≠ produto implementado ≠ operação comprovada`.
 
-`Design autorizado ≠ solução aprovada ≠ output canônico ≠ implementação ≠ publicação`.
+`handoff emitido ≠ Design produzido ≠ solução aprovada ≠ output canônico ≠ implementação ≠ publicação`.
 
 Para Organizações e Coletivos:
 
-`decisão histórica sem wireframe ≠ proibição procedimental vigente`, pois o handoff posterior de Design governa esse limite específico.
+`decisão histórica sem wireframe ≠ proibição procedimental vigente`, pois o handoff posterior governa esse limite específico; nesta continuidade, porém, nenhum wireframe é criado.
 
 Para Guivos Ads:
 
@@ -456,9 +473,9 @@ Para Guivos Business:
 
 `Intelligence apoiando Business ≠ módulo Business ≠ acesso irrestrito a dados pessoais`.
 
-`Home Business convergida + Source Lock + Design autorizado ≠ output visual aprovado ≠ implementação ≠ publicação`.
+`Home Business convergida + Source Lock + inclusão no v4 ≠ output visual aprovado ≠ implementação ≠ publicação`.
 
-`GPA-004 v1.6.0 ressincronizado ≠ autorização para alterar a autoridade funcional durante Design`.
+`GPA-004 v1.6.0 ressincronizado ≠ autorização para alterar a autoridade funcional durante eventual Design`.
 
 Para Guivos Intelligence:
 
@@ -482,4 +499,6 @@ Para Guivos Intelligence:
 
 `Guivos.ai = possível superfície ≠ Guivos Intelligence`.
 
-`GPA-006 2.0.0 ≠ Source Lock da Home ≠ Documento Mestre da Home ≠ Design`.
+`Product Source Lock + Home Source Lock + Documento Mestre + Handoff + GENINPUT + snapshot v4 ≠ Design produzido ≠ implementação`.
+
+`PERCEBER ANTES ≠ PREVER O FUTURO`.

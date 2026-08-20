@@ -8,14 +8,14 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **2.39.0** |
+| Registro | `GKR-STATE-001` **2.40.0** |
 | Era | GE-2 — Knowledge |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária e retorno** |
 | Experience Architecture funcional mais recente | **D5-C4B — TRN-008..013 integralmente validadas no limite documental** |
-| Experience Architecture pública | **7 Homes convergidas; handoff de Design v1.2.0; emissão externa v3 materializada** |
-| Guivos Intelligence | **GPA-006 v2.0.0 convergido; Source Lock do Produto é o próximo ponto; Home não iniciada** |
+| Experience Architecture pública | **8 Homes convergidas; handoff de Design v1.3.0; emissão externa v4 materializada** |
+| Guivos Intelligence | **GPA-006 v2.0.0 + Product Source Lock + Home pública convergida; nenhum Design produzido** |
 | Domínios de Evolução do Journey | **9 canônicos + estado “Ainda estou descobrindo”** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Galeria | **121 SVGs — 121 validados / 0 pendentes** |
@@ -29,16 +29,23 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 A superfície institucional pública vigente é o [GOG-001 — Guia Oficial da Guivos 5.0.0](public/guia-oficial-da-guivos.md).
 
-O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetura, implementação e operação. A D5-C4B é uma autoridade interna de Experience Architecture; validação integrada documental não declara disponibilidade pública de produto. `GPA-006 2.0.0` é autoridade de Produto Especializado e também não declara Home, Design ou Intelligence operacional em produção.
+O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetura, implementação e operação. A D5-C4B é uma autoridade interna de Experience Architecture; validação integrada documental não declara disponibilidade pública de produto. `GPA-006 2.0.0` é autoridade de Produto Especializado e, isoladamente, não comprova implementação técnica do Intelligence; a Home Pública possui autoridades próprias posteriores e nenhum Design foi produzido por esta sincronização.
 
 ## Consolidação e reconciliações recentes
 
+- [Snapshot externo de Design v4 — oito Homes](experience-architecture/public-homes-design-delivery-v4-snapshot-record.md)
+- [Manifesto Canônico de Entrega para Design v4](experience-architecture/public-homes-design-delivery-manifest.md)
+- [Handoff Canônico das Homes Públicas v1.3.0](experience-architecture/public-homes-design-handoff.md)
+- [Fluxo Operacional do Design Delivery v1.3.0](experience-architecture/public-homes-design-delivery-operational-flow.md)
 - [Guivos Intelligence — GPA-006 v2.0.0](product-architecture/intelligence.md)
-- [Checkpoint de Continuidade — Guivos Intelligence — GPA-006 V2](project/intelligence-product-continuity-checkpoint-2026-08-18.md)
+- [Product Source Lock — Guivos Intelligence](product-architecture/intelligence-product-source-lock.md)
+- [Documento Mestre — Home Guivos Intelligence](experience-architecture/public-home-intelligence-master-document.md)
+- [Source Lock — Home Guivos Intelligence](experience-architecture/public-home-intelligence-source-lock.md)
+- [Design Handoff — Home Guivos Intelligence](experience-architecture/public-home-intelligence-design-handoff.md)
+- [GENINPUT — Home Guivos Intelligence](experience-architecture/public-home-intelligence-generative-design-source-lock.md)
+- [Checkpoint de Continuidade — Home Guivos Intelligence](project/intelligence-home-continuity-checkpoint-2026-08-19.md)
 - [Guivos Intelligence Architecture — GIA-000 v1.5.0](intelligence-architecture/index.md)
-- [Snapshot externo de Design v3 — sete Homes](experience-architecture/public-homes-design-delivery-v3-snapshot-record.md)
-- [Manifesto Canônico de Entrega para Design v3](experience-architecture/public-homes-design-delivery-manifest.md)
-- [Handoff Canônico das Homes Públicas v1.2.0](experience-architecture/public-homes-design-handoff.md)
+- [Snapshot externo de Design v3 — histórico](experience-architecture/public-homes-design-delivery-v3-snapshot-record.md)
 - [Source Lock da Home Guivos Business](experience-architecture/public-home-business-source-lock.md)
 - [Documento Mestre da Home Guivos Business](experience-architecture/public-home-business-master-document.md)
 - [Source Lock Operacional + Prompt da Home Guivos Business](experience-architecture/public-home-business-generative-design-source-lock.md)
@@ -55,9 +62,9 @@ O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetu
 - [Consolidação Global e Public Canon — P9](project/p9-global-consolidation-and-public-canon-2026-08-08.md)
 - [UXA-100-A4 — Origens Administrativas e Handoffs de Entrada em Planos](experience-architecture/uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md)
 - [Matriz de Consolidação Canônica 3.0.0](project/canonical-consolidation-matrix.md)
-- [Roadmap 12.81.0](roadmap.md)
+- [Roadmap 12.82.0](roadmap.md)
 
-O programa P0–P9 está consolidado quanto à ressincronização documental. D4 e D5 são frentes não numeradas e não criam novo marco funcional. Lacunas empíricas, tecnológicas, jurídicas e operacionais permanecem abertas em suas autoridades próprias.
+O programa P0–P9 está consolidado quanto à ressincronização documental. D4, D5 e a sincronização pós-v4 são frentes não numeradas e não criam novo marco funcional. Lacunas empíricas, tecnológicas, jurídicas e operacionais permanecem abertas em suas autoridades próprias.
 
 ## Guivos Business — retomada sem depender do chat
 
@@ -91,11 +98,11 @@ Self-service / Com apoio do suporte / Gerenciado ≠ Start / Growth / Scale / En
 Pontos como capacidade funcional ≠ narrativa pública da Home ≠ evolução
 ```
 
-A Home Pública do Guivos Business está **convergida, Source Locked, incluída no handoff canônico de Design v1.2.0 e materializada no snapshot externo v3**. Design está autorizado proceduralmente; o primeiro output visual permanece pendente e, quando produzido, será `EXPLORAÇÃO` até validação humana.
+A Home Pública do Guivos Business está **convergida, Source Locked, incluída no handoff canônico de Design v1.3.0 e materializada no snapshot externo v4**. Nenhum output visual foi produzido ou promovido automaticamente pelo GKR.
 
 ## Guivos Intelligence — retomada sem depender do chat
 
-O Produto Especializado Guivos Intelligence está convergido em [GPA-006 v2.0.0](product-architecture/intelligence.md).
+O Produto Especializado Guivos Intelligence está convergido em [GPA-006 v2.0.0](product-architecture/intelligence.md), com [Product Source Lock](product-architecture/intelligence-product-source-lock.md) integrado.
 
 Para recuperação rápida:
 
@@ -114,20 +121,25 @@ UNIDADE DE VALOR
 Contratos centrais:
 
 ```text
+INTELLIGENCE ≠ JOURNEY
+INTELLIGENCE ≠ BUSINESS
 COMPREENDER ≠ DECIDIR
 CONHECER ≠ UTILIZAR ≠ COMPARTILHAR
 PERSONALIZAR ≠ EXPOR
 ENTITLEMENT ≠ AUTORIDADE
 PAGAMENTO ≠ PERTINÊNCIA
 INFERÊNCIA ≠ FATO
+SINAL ≠ CERTEZA
+TENDÊNCIA ≠ DESTINO
+PERCEBER ANTES ≠ PREVER O FUTURO
 TECNOLOGIA ≠ PRODUTO
 ```
 
 A arquitetura funcional, taxonomias de inputs/outputs, proteção populacional, contratos com Journey/Business/Mall/Travel/Media/Ads, papel subordinado de Graph/Knowledge/Analytics/AI, modos de entrega, Intelligence Serving, direção comercial, governança, maturidade, gaps e guardrails estão consolidados no GPA-006.
 
-O [checkpoint de continuidade](project/intelligence-product-continuity-checkpoint-2026-08-18.md) registra os Checkpoints 1–12 como convergidos.
+A Home Pública possui [Documento Mestre](experience-architecture/public-home-intelligence-master-document.md), [Source Lock](experience-architecture/public-home-intelligence-source-lock.md), [Handoff específico](experience-architecture/public-home-intelligence-design-handoff.md) e [GENINPUT](experience-architecture/public-home-intelligence-generative-design-source-lock.md) convergidos. O [checkpoint de continuidade da Home](project/intelligence-home-continuity-checkpoint-2026-08-19.md) registra sua incorporação ao Design Delivery v4.
 
-**Próximo ponto:** Source Lock do Produto Guivos Intelligence. A Home Pública do Intelligence continua não iniciada.
+**Estado atual:** Home Intelligence documentalmente convergida e incluída no snapshot externo v4; tela, wireframe, UI, protótipo e Design não foram iniciados.
 
 ## Participantes, produtos, planos e domínios
 
@@ -182,8 +194,11 @@ Domínios de Evolução do Guivos Journey:
 - [Source Lock da Home Guivos Business](experience-architecture/public-home-business-source-lock.md)
 - [Checkpoint de Continuidade v5 da Home Guivos Business](project/business-home-continuity-checkpoint-2026-08-16-v5.md)
 - [Guivos Intelligence — GPA-006](product-architecture/intelligence.md)
+- [Product Source Lock do Guivos Intelligence](product-architecture/intelligence-product-source-lock.md)
+- [Documento Mestre da Home Guivos Intelligence](experience-architecture/public-home-intelligence-master-document.md)
+- [Source Lock da Home Guivos Intelligence](experience-architecture/public-home-intelligence-source-lock.md)
+- [Checkpoint de Continuidade da Home Guivos Intelligence](project/intelligence-home-continuity-checkpoint-2026-08-19.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
-- [Checkpoint de Continuidade do Guivos Intelligence](project/intelligence-product-continuity-checkpoint-2026-08-18.md)
 - [Guivos Journey](product-architecture/journey.md)
 - [Domínios de Evolução do Journey](product-architecture/pas-001-evolution-domains-model.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
@@ -215,11 +230,11 @@ Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto des
 classificação candidata por IA ≠ domínio confirmado
 GPA-006 2.0.0 convergido ≠ Intelligence implementado
 Guivos Intelligence ≠ IA ≠ Guivos.ai ≠ Grafo Global ≠ Neo4j ≠ Power BI
-Home Intelligence não iniciada → próximo ponto = Source Lock do Produto
+Home Intelligence convergida documentalmente ≠ Design produzido
 ```
 
 ## Limites preservados
 
-A reconciliação atual não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, classificação operacional por IA dos Domínios de Evolução, ontologia física do grafo, implementação técnica de `TRN-008..013`, cobrança real, processo posterior a `BND-002`, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado, operação de controles legais/privacidade não comprovados, promoção automática de output de Design, GraphRAG/GDS em produção, modelo de IA selecionado, APIs Intelligence operacionais, Power BI integrado ou Home Pública do Guivos Intelligence.
+A reconciliação atual não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, classificação operacional por IA dos Domínios de Evolução, ontologia física do grafo, implementação técnica de `TRN-008..013`, cobrança real, processo posterior a `BND-002`, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado, operação de controles legais/privacidade não comprovados, promoção automática de output de Design, GraphRAG/GDS em produção, modelo de IA selecionado, APIs Intelligence operacionais, Power BI integrado ou materialização visual da Home Pública do Guivos Intelligence.
 
 Em caso de divergência, prevalecem `GKR-STATE-001` e a autoridade temática específica mais recente.

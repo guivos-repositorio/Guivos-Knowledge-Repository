@@ -2,7 +2,7 @@
 id: GKR-PROJECT-INTELLIGENCE-HOME-CONTINUITY-001
 title: Checkpoint de Continuidade — Home Pública do Guivos Intelligence
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Knowledge Repository
 last_updated: 2026-08-20
 normative: false
@@ -12,7 +12,7 @@ normative: false
 
 ## 1. Finalidade
 
-Este checkpoint registra o estado de continuidade da **Home Pública do Guivos Intelligence v1** durante a preparação da geração `v4` do Design Delivery comum das Homes públicas.
+Este checkpoint registra o estado de continuidade da **Home Pública do Guivos Intelligence v1** após a materialização e o registro da geração `v4` do Design Delivery comum das Homes públicas.
 
 Ele é informativo e não cria autoridade superior às fontes normativas.
 
@@ -50,8 +50,9 @@ Unidade de valor:
 HOME SOURCE LOCK             ✓ emitido
 DEDICATED DESIGN HANDOFF     ✓ emitido
 OPERATIONAL GENINPUT         ✓ emitido
-DESIGN DELIVERY V4 PREP      ◐ em preparação nesta mudança
-SNAPSHOT / ZIP V4            ✕ não emitido
+DESIGN DELIVERY V4 PREP      ✓ concluída
+SNAPSHOT V4                  ✓ emitido
+REGISTRO DO SNAPSHOT V4      ✓ integrado
 DESIGN                       ✕ não iniciado
 WIREFRAME                    ✕ não iniciado
 UI                           ✕ não iniciado
@@ -59,26 +60,26 @@ PROTOTYPE                    ✕ não iniciado
 IMPLEMENTAÇÃO                ✕ não autorizada
 ```
 
-A existência do GENINPUT não significa que a primeira exploração visual já tenha começado.
+A existência do GENINPUT, do handoff e do snapshot não significa que qualquer exploração visual tenha começado.
 
 ---
 
-## 4. Preparação Design Delivery v4
+## 4. Design Delivery v4 materializado
 
-A revisão atual prepara quatro artefatos:
+A preparação integrou quatro artefatos:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — `1.2.0 → 1.3.0`;
-2. `GKR-UX-HOMES-DESIGN-DELIVERY-001` — `3.0.0 → 4.0.0`;
-3. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001` — `1.2.0 → 1.3.0`;
-4. este checkpoint — `1.4.0 → 1.5.0`.
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — `1.3.0`;
+2. `GKR-UX-HOMES-DESIGN-DELIVERY-001` — `4.0.0`;
+3. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001` — `1.3.0`;
+4. este checkpoint — `1.6.0` após o fechamento factual da emissão.
 
-Objetivos:
+Objetivos preservados:
 
 - incorporar Intelligence como oitava Home no Handoff comum;
-- preparar a nova emissão sem reescrever a v3;
+- preservar a v3 como emissão histórica;
 - preservar o método de isolamento por Home;
 - incorporar o pacote específico de Intelligence;
-- impedir que preparação seja confundida com início de Design.
+- impedir que emissão seja confundida com início de Design.
 
 ---
 
@@ -117,47 +118,57 @@ O Narrative Contract e `GKR-UX-HOMES-OUTCOME-001` continuam autoridades por refe
 
 ---
 
-## 6. Base desta preparação
+## 6. Checkpoint real da emissão v4
 
 A branch de preparação nasceu do estado:
 
 `main @ ec4985b89df996aef22370eb9be65271a9af4b09`
 
-Esse SHA é **base de preparação**, não o futuro checkpoint de emissão v4.
+Esse SHA permanece somente como **base histórica da preparação**.
 
-O checkpoint real da v4 somente poderá ser congelado depois que esta preparação for mesclada em `main` e a `main` for reconciliada novamente.
+O checkpoint canônico real congelado para a emissão v4 é:
 
----
+`main @ f900318af746ba25e3bb18d18bfddee5654620c7`
 
-## 7. Próximo gate obrigatório
-
-Após merge e reconciliação:
+Snapshot materializado:
 
 ```text
-CAPTURAR MAIN @ SHA EXATO
-↓
-VALIDAR MANIFEST 4.0.0 + FLOW 1.3.0
-↓
-VALIDAR 31/31 FONTES CANÔNICAS
-↓
-MATERIALIZAR delivery/design-handoff-v4
-↓
-CRIAR 8 LEIA-PRIMEIRO
-↓
-GERAR SNAPSHOT / ZIP V4
-↓
-VALIDAR REPRODUTIBILIDADE E ISOLAMENTO
-↓
-REGISTRAR CHECKPOINT DA EMISSÃO
-↓
-SOMENTE ENTÃO LIBERAR A PRIMEIRA EXPLORAÇÃO VISUAL
+branch: delivery/design-handoff-v4
+snapshot commit: dfed980d8cfb39bbe4694e58d7c86ca0692266dc
+snapshot tree: 270e404cf0b5bf0d5d543bbbb0c5bd6a1f4602df
 ```
 
-Nenhum SHA pós-merge, snapshot commit ou snapshot tree deve ser inventado antes desse gate.
+O registro factual da emissão foi integrado em `GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001`.
 
 ---
 
-## 8. Invariantes para a futura exploração Intelligence
+## 7. Gate de emissão concluído
+
+O fluxo obrigatório foi concluído:
+
+```text
+CAPTURAR MAIN @ SHA EXATO                 ✓
+↓
+VALIDAR MANIFEST 4.0.0 + FLOW 1.3.0      ✓
+↓
+VALIDAR 31/31 FONTES CANÔNICAS           ✓
+↓
+MATERIALIZAR delivery/design-handoff-v4  ✓
+↓
+CRIAR 8 LEIA-PRIMEIRO                    ✓
+↓
+GERAR SNAPSHOT V4                        ✓
+↓
+VALIDAR REPRODUTIBILIDADE E ISOLAMENTO   ✓
+↓
+REGISTRAR CHECKPOINT DA EMISSÃO          ✓
+```
+
+O fechamento desse gate **não inicia Design** e não cria autorização automática para materialização visual dentro desta continuidade.
+
+---
+
+## 8. Invariantes para qualquer continuidade futura de Intelligence
 
 ```text
 INFORMAÇÃO ≠ COMPREENSÃO
@@ -177,9 +188,11 @@ A Home preserva 11 movimentos funcionais, com `M03 ≠ M10` e `M04 ≠ M05`.
 
 M08 deve dar peso real à origem e explicabilidade da leitura; M09 preserva autonomia; M11 amplia horizonte sem previsão determinista.
 
-Direção visual conceitual:
+Direção visual conceitual registrada pelas autoridades permanece:
 
 > **clareza emergindo da complexidade**
+
+Essa formulação não constitui materialização visual produzida por este checkpoint.
 
 ---
 
@@ -207,17 +220,17 @@ EMPRESA → decide
 
 ## 10. O que esta revisão não autoriza
 
-Esta preparação não autoriza, por si só:
+O fechamento factual da emissão v4 não autoriza, por si só:
 
-- criar silenciosamente `delivery/design-handoff-v4`;
-- gerar snapshot ou ZIP v4;
-- reescrever a emissão v3;
+- reescrever as emissões v1, v2 ou v3;
 - iniciar Design;
 - iniciar wireframe, UI ou protótipo;
+- criar tela ou mapa visual;
 - iniciar implementação;
 - publicar a Home;
 - alterar produto, posicionamento, claims, copy congelada ou privacidade;
-- inventar dados, métricas, cases, integrações ou maturidade operacional.
+- inventar dados, métricas, cases, integrações ou maturidade operacional;
+- promover automaticamente qualquer output externo a estado canônico.
 
 ---
 
@@ -225,17 +238,17 @@ Esta preparação não autoriza, por si só:
 
 Ao retomar esta frente:
 
-1. ler o estado real de `main`;
-2. verificar se a preparação v4 foi mesclada;
-3. se ainda estiver em PR, não tratá-la como estado canônico;
-4. se estiver mesclada, capturar o SHA exato pós-merge;
-5. somente então materializar a emissão v4 conforme Manifesto e Fluxo;
-6. não iniciar Design antes da entrega v4 estar reconciliada e liberada.
+1. ler `GKR-STATE-001` vigente;
+2. tratar `delivery/design-handoff-v4` como snapshot externo de distribuição, não como fonte canônica paralela;
+3. preservar o contexto isolado da Home Intelligence;
+4. preservar as autoridades de produto, Narrative, Documento Mestre, Source Lock, Handoff e GENINPUT;
+5. não inferir início de Design a partir da existência do snapshot;
+6. não iniciar `UXA-102/V5` nem Engenharia de Produto por esta continuidade.
 
 ---
 
 ## 12. Síntese
 
-A versão `1.5.0` registra que Intelligence já possui sua cadeia conceitual e operacional específica e está pronta para ser incorporada ao Design Delivery v4, mas a emissão externa ainda depende do merge, checkpoint pós-merge e materialização controlada do novo pacote.
+A versão `1.6.0` registra que Intelligence possui sua cadeia conceitual e operacional específica, está incorporada ao Design Delivery v4 e possui snapshot externo materializado e registrado.
 
-> **INTELLIGENCE PRONTA PARA O DESIGN DELIVERY V4 — SNAPSHOT V4 NÃO EMITIDO — DESIGN NÃO INICIADO.**
+> **INTELLIGENCE INTEGRADA AO DESIGN DELIVERY V4 — SNAPSHOT V4 EMITIDO E REGISTRADO — DESIGN, WIREFRAME, UI E PROTÓTIPO NÃO INICIADOS.**
