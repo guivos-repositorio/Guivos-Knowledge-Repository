@@ -2,11 +2,12 @@
 id: GKR-BRAND-DIGITAL-ASSETS-INDEX-001
 title: Marca, Naming e Ativos Digitais — Índice Governado
 status: active
-version: 1.0.1
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-20
 related:
   - GKR-BRAND-ASSET-GOVERNANCE-001
+  - GKR-BRAND-SIGNATURE-001
   - GKR-OFFICIAL-NAMING-AUTHORITY-001
   - GKR-DIGITAL-ASSET-CONTROL-001
   - GKR-LEGACY-NOMENCLATURE-RECONCILIATION-001
@@ -35,7 +36,9 @@ O corpus público não substitui registros jurídicos, registradores, serviços 
 
 A frente P3 foi integrada na sincronização governada de 2026-08-08.
 
-Isso estabelece **governança documental e autoridade de naming**, mas não promove automaticamente a estado comprovado nenhum registro, titularidade, domínio, perfil, DNS, certificado, serviço ou cobertura territorial específica.
+Em 2026-08-20, o domínio passou a registrar também a assinatura institucional e o sistema verbal associado em `GKR-BRAND-SIGNATURE-001`.
+
+Isso estabelece **governança documental, autoridade de naming e autoridade verbal de marca**, mas não promove automaticamente a estado comprovado nenhum registro, titularidade, domínio, perfil, DNS, certificado, serviço ou cobertura territorial específica.
 
 Fatos operacionais/registrários continuam sujeitos ao modelo de evidência definido neste domínio.
 
@@ -67,6 +70,21 @@ Define:
 - ciclo de vida;
 - evidências;
 - gates de internacionalização e proteção.
+
+### Assinatura de Marca e Sistema Verbal
+
+[Assinatura de Marca e Sistema Verbal da Guivos](brand-signature-and-verbal-system.md)
+
+Define:
+
+- `Possibility, lived.` como assinatura canônica global;
+- `Possibilidade, vivida.` como versão canônica em português;
+- `#PossibilityLived` como hashtag institucional global;
+- `Do possível ao vivido.` como bordão / linha narrativa recorrente, sem criar segunda assinatura;
+- tese e significado canônico da assinatura;
+- invariantes semânticos;
+- regras de localização linguística controlada;
+- separação entre autoridade verbal no GKR e proteção jurídica.
 
 ### Modelo de Registro e Controle
 
@@ -105,7 +123,22 @@ Planos permanecem governados pela autoridade econômica própria:
 
 Nenhum desses nomes implica registro de marca, domínio, handle ou proteção territorial comprovada.
 
-## 5. Relação com P1.1
+## 5. Autoridade verbal corrente
+
+A autoridade verbal institucional deste domínio registra:
+
+```text
+Assinatura global     Possibility, lived.
+Versão PT             Possibilidade, vivida.
+Hashtag global        #PossibilityLived
+Bordão PT             Do possível ao vivido.
+```
+
+A assinatura, sua versão em português e a hashtag global são canônicas. O bordão pertence ao território verbal como linha narrativa recorrente e não constitui segunda assinatura.
+
+Nenhum desses estados afirma disponibilidade registral, exclusividade jurídica ou proteção territorial.
+
+## 6. Relação com P1.1
 
 P1.1 remove deriva conhecida de nomenclatura. P3 cria a governança permanente.
 
@@ -117,7 +150,7 @@ P3
 = controlar criação, aprovação, migração, evidência e proteção de nomes/ativos
 ```
 
-## 6. O que não está sendo publicado
+## 7. O que não está sendo publicado
 
 Esta frente não publica:
 
@@ -133,13 +166,14 @@ Esta frente não publica:
 - vulnerabilidades;
 - incidentes não sanitizados.
 
-## 7. Estado factual desta versão
+## 8. Estado factual desta versão
 
-A frente estabelece **governança e naming documental**.
+A frente estabelece **governança, naming documental e autoridade verbal de marca**.
 
 Ela não afirma que:
 
-- qualquer marca esteja registrada;
+- qualquer marca ou assinatura esteja registrada;
+- qualquer hashtag possua exclusividade jurídica;
 - qualquer domínio específico esteja adquirido;
 - qualquer perfil esteja reservado;
 - exista cobertura internacional;
@@ -148,7 +182,7 @@ Ela não afirma que:
 
 A população do inventário real depende de evidências específicas e classificação adequada.
 
-## 8. Próximos gates
+## 9. Próximos gates
 
 Antes de promover fatos específicos de proteção/controle, exigir:
 
@@ -158,4 +192,4 @@ Antes de promover fatos específicos de proteção/controle, exigir:
 4. revisão de confidencialidade;
 5. escopo territorial/registral correto;
 6. ausência de segredo no GKR;
-7. consistência com naming canônico.
+7. consistência com naming e sistema verbal canônicos.
