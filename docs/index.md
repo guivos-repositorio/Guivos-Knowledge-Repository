@@ -27,12 +27,15 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 ## Public Canon
 
-A superfície institucional pública vigente é o [GOG-001 — Guia Oficial da Guivos 5.0.0](public/guia-oficial-da-guivos.md).
+A superfície institucional pública vigente é o [GOG-001 — Guia Oficial da Guivos 5.1.0](public/guia-oficial-da-guivos.md).
+
+A autoridade verbal institucional vigente é [GKR-BRAND-SIGNATURE-001 — Assinatura de Marca e Sistema Verbal da Guivos](governance-framework/brand-signature-and-verbal-system.md), que governa `Possibility, lived.`, `Possibilidade, vivida.`, `#PossibilityLived`, o bordão `Do possível ao vivido.` e sua aplicação por superfície.
 
 O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetura, implementação e operação. A D5-C4B é uma autoridade interna de Experience Architecture; validação integrada documental não declara disponibilidade pública de produto. `GPA-006 2.0.0` é autoridade de Produto Especializado e, isoladamente, não comprova implementação técnica do Intelligence; a Home Pública possui autoridades próprias posteriores e nenhum Design foi produzido por esta sincronização.
 
 ## Consolidação e reconciliações recentes
 
+- [Assinatura de Marca e Sistema Verbal da Guivos v1.1.0](governance-framework/brand-signature-and-verbal-system.md)
 - [Snapshot externo de Design v4 — oito Homes](experience-architecture/public-homes-design-delivery-v4-snapshot-record.md)
 - [Manifesto Canônico de Entrega para Design v4](experience-architecture/public-homes-design-delivery-manifest.md)
 - [Handoff Canônico das Homes Públicas v1.3.0](experience-architecture/public-homes-design-handoff.md)
@@ -206,6 +209,7 @@ Domínios de Evolução do Guivos Journey:
 - [Jornadas Integradas](journeys/index.md)
 - [Modelo Econômico](economic-model/index.md)
 - [Marca, Naming e Ativos Digitais](governance-framework/brand-and-digital-assets-index.md)
+- [Assinatura de Marca e Sistema Verbal](governance-framework/brand-signature-and-verbal-system.md)
 - [Arquitetura Institucional e Jurídica](governance-framework/institutional-and-legal-architecture-index.md)
 - [Privacidade e Verdade Operacional](governance-framework/operational-privacy-and-legal-truth-index.md)
 - [Prontidão Operacional Internacional](governance-framework/international-operations-and-cross-border-readiness.md)
