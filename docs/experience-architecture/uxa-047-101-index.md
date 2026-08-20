@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-101
 status: active
-version: 2.15.0
+version: 2.16.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-18
+last_updated: 2026-08-20
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -28,6 +28,7 @@ related:
   - GKR-UX-D5-C3-001
   - GKR-UX-D5-C4A-001
   - GKR-UX-D5-C4B-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
   - M7.88
 normative: false
 ---
@@ -36,7 +37,7 @@ normative: false
 
 Este índice preserva a rastreabilidade das frentes funcionais recentes. A UXA-100-A4 é subfrente de reconciliação da UXA-100 e não cria UXA-102 nem novo marco funcional.
 
-`PAS-001-DOMAIN-MODEL-001`, D4 e D5 são autoridades/frentes não numeradas do Journey e da Experience Architecture. Elas **não constituem nova UXA nem alteram a última UXA funcional numerada**, que permanece UXA-101.
+`PAS-001-DOMAIN-MODEL-001`, D4, D5 e a sincronização das Homes públicas são autoridades/frentes não numeradas. Elas **não constituem nova UXA nem alteram a última UXA funcional numerada**, que permanece UXA-101.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -125,23 +126,27 @@ Complementos da UXA-100:
 - [D5-C4A](d5-c4a-direction-movement-evolution-handoff-contract.md) — Hoje recorrente reformulado/revalidado e contrato semântico de `TRN-008..013`, sem promoção;
 - [D5-C4B](d5-c4b-direction-movement-evolution-integrated-handoff-validation.md) — validação individual integrada de `TRN-008..013`; seis ligações promovidas no limite documental.
 
-D5-C4B não é UXA-102/V5 e não altera a numeração deste índice. A convergência de `GPA-006 2.0.0` também é uma frente de autoridade de produto separada e não altera este índice funcional.
+A convergência da Home Pública do Guivos Intelligence, o Design Delivery v4 e a sincronização global pós-v4 também são frentes não numeradas. Elas não alteram a numeração UXA, não retomam Engenharia e não produzem novo artefato visual.
 
 ## Estado sincronizado
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **2.39.0** |
+| Registro do Estado Atual | **2.40.0** |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
-| SVGs | **121 — 121 validados / 0 pendentes** |
+| Homes públicas convergidas | **8** |
+| Design Delivery vigente | **v4.0.0 — 39 arquivos externos** |
+| Snapshot externo v4 | **`dfed980d8cfb39bbe4694e58d7c86ca0692266dc`** |
+| SVGs funcionais pré-existentes | **121 — 121 validados / 0 pendentes** |
 | associações | **121** |
 | perfis | **34** |
 | superfícies/estados/fronteiras | **57** |
 | transições | **66** |
 | IDs com referência visual | **45 de 57** |
 | responsabilidades sem SVG | **10** |
-| Engenharia de Produto | pausada antes de W0-01 |
+| Engenharia de Produto | **pausada antes de W0-01** |
+| Design da Home Intelligence | **não iniciado** |
 
-A D5-C4B não altera inventário físico ou granular. Ela promove `TRN-008..013` para integralmente validadas no limite documental; não cria novo marco funcional, não inicia D6, D7, UXA-102/V5 ou implementação técnica.
+D5-C4B permanece a última frente funcional não numerada do Journey. O pós-v4 é uma sincronização documental transversal e não cria `UXA-102/V5`.
