@@ -1,255 +1,191 @@
 ---
-id: GKR-INTELLIGENCE-HOME-CONTINUITY-001
-title: Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — GENINPUT emitido
+id: GKR-PROJECT-INTELLIGENCE-HOME-CONTINUITY-001
+title: Checkpoint de Continuidade — Home Pública do Guivos Intelligence
 status: active
-version: 1.4.0
-owner: Guivos
+version: 1.5.0
+owner: Knowledge Repository
 last_updated: 2026-08-20
-related:
-  - GPA-006
-  - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
-  - GKR-UX-HOMES-OUTCOME-001
-  - GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
-  - GKR-UX-HOME-INTELLIGENCE-MASTER-001
-  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
-  - GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
-  - GKR-UX-HOME-INTELLIGENCE-GENINPUT-001
-  - GKR-INTELLIGENCE-CONTINUITY-001
-  - GKR-STATE-001
 normative: false
 ---
 
-# Checkpoint de Continuidade — Home Pública Guivos Intelligence v1 — GENINPUT emitido
+# Checkpoint de Continuidade — Home Pública do Guivos Intelligence
 
 ## 1. Finalidade
 
-Este checkpoint preserva o ponto exato da construção da **Home Pública Guivos Intelligence v1** após:
+Este checkpoint registra o estado de continuidade da **Home Pública do Guivos Intelligence v1** durante a preparação da geração `v4` do Design Delivery comum das Homes públicas.
 
-- arquitetura narrativa convergida;
-- Documento Mestre integrado;
-- Home Source Lock integrado;
-- navegação da Home integrada ao Guivos Knowledge Repository;
-- Handoff Canônico para Design integrado;
-- emissão do **GENINPUT Intelligence** neste pacote.
+Ele é informativo e não cria autoridade superior às fontes normativas.
 
-Estado de autoridade:
+---
+
+## 2. Cadeia já convergida de Intelligence
 
 ```text
 GPA-006 v2.0.0
-→ AUTORIDADE SUPERIOR DO PRODUTO
-
+↓
 GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
-→ PRODUCT SOURCE LOCK
-
+↓
 GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1
-→ ARQUITETURA NARRATIVA EM 11 MOVIMENTOS
-
+↓
 GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
-→ DOCUMENTO MESTRE
-
+↓
 GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
-→ HOME SOURCE LOCK
-→ NORMATIVO
-
+↓
 GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
-→ HANDOFF CANÔNICO PARA DESIGN
-→ NORMATIVO
-
+↓
 GKR-UX-HOME-INTELLIGENCE-GENINPUT-001 v1.0.0
-→ SOURCE LOCK OPERACIONAL DA PRIMEIRA EXPLORAÇÃO
-→ NORMATIVO
 ```
 
-## 2. Baseline do GENINPUT
-
-O GENINPUT foi preparado sobre o estado reconciliado:
-
-```text
-main
-43ed02030dc03600ce756ce63ea55bd3e742f910
-
-PR #289
-GKR: ativar Handoff de Design da Home Intelligence v1
-→ merged
-
-HANDOFF
-GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
-→ active
-→ normative: true
-```
-
-O checkpoint acima é a fonte temporal do GENINPUT. A criação do GENINPUT não altera produto, maturidade tecnológica, implementação, pricing ou estado global do GKR.
-
-## 3. Estado consolidado
-
-```text
-MOVIMENTOS 01–11
-→ CONVERGIDOS
-
-MOVIMENTO 12
-→ NÃO PREVISTO
-
-DOCUMENTO MESTRE
-→ CONVERGIDO E INTEGRADO
-
-COPY DE REFERÊNCIA
-→ CORRIGIDA E INTEGRADA
-
-HOME SOURCE LOCK
-→ INTEGRADO
-
-NAVEGAÇÃO NO GKR
-→ INTEGRADA
-
-HANDOFF CANÔNICO PARA DESIGN
-→ INTEGRADO
-
-GENINPUT INTELLIGENCE
-→ EMITIDO NESTE PACOTE
-
-WIREFRAME / UI / PROTÓTIPO
-→ NÃO INICIADOS
-
-PRIMEIRA EXPLORAÇÃO EXTERNA
-→ NÃO INICIADA
-
-IMPLEMENTAÇÃO
-→ NÃO AUTORIZADA
-```
-
-## 4. Contratos centrais preservados
+O contrato transversal `GKR-UX-HOMES-OUTCOME-001 v1.0.0` permanece aplicável.
 
 Unidade de valor:
 
-> **compreensão útil e contextualizada.**
+> **compreensão útil e contextualizada**
 
-Ideia-mãe:
+---
 
-> **Compreender melhor amplia o que você consegue perceber.**
+## 3. Estado de materialização
 
-Pergunta-mãe:
+```text
+HOME SOURCE LOCK             ✓ emitido
+DEDICATED DESIGN HANDOFF     ✓ emitido
+OPERATIONAL GENINPUT         ✓ emitido
+DESIGN DELIVERY V4 PREP      ◐ em preparação nesta mudança
+SNAPSHOT / ZIP V4            ✕ não emitido
+DESIGN                       ✕ não iniciado
+WIREFRAME                    ✕ não iniciado
+UI                           ✕ não iniciado
+PROTOTYPE                    ✕ não iniciado
+IMPLEMENTAÇÃO                ✕ não autorizada
+```
 
-> **O que se torna possível quando você compreende melhor o que está acontecendo?**
+A existência do GENINPUT não significa que a primeira exploração visual já tenha começado.
 
-Apoio inicial:
+---
 
-> **Entenda melhor o que está acontecendo. Amplie o que você consegue perceber.**
+## 4. Preparação Design Delivery v4
 
-Autonomia:
+A revisão atual prepara quatro artefatos:
 
-> **Veja mais antes de decidir.**
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — `1.2.0 → 1.3.0`;
+2. `GKR-UX-HOMES-DESIGN-DELIVERY-001` — `3.0.0 → 4.0.0`;
+3. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001` — `1.2.0 → 1.3.0`;
+4. este checkpoint — `1.4.0 → 1.5.0`.
 
-Fechamento:
+Objetivos:
 
-> **Perceba antes o que começa a mudar. Enxergue além do que já está evidente.**
+- incorporar Intelligence como oitava Home no Handoff comum;
+- preparar a nova emissão sem reescrever a v3;
+- preservar o método de isolamento por Home;
+- incorporar o pacote específico de Intelligence;
+- impedir que preparação seja confundida com início de Design.
 
-> **Novas possibilidades podem se tornar mais visíveis.**
+---
 
-Contratos:
+## 5. Reconciliação da composição v3 → v4
+
+O Manifesto v3 registra:
+
+```text
+25 FONTES CANÔNICAS
++
+7 LEIA-PRIMEIRO
+=
+32 ARQUIVOS EXTERNOS V3
+```
+
+A v4 preserva essas 25 fontes e acrescenta seis fontes específicas de Intelligence:
+
+1. `public-home-intelligence-generative-design-source-lock.md` — `GKR-UX-HOME-INTELLIGENCE-GENINPUT-001 v1.0.0`;
+2. `public-home-intelligence-design-handoff.md` — `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0`;
+3. `public-home-intelligence-source-lock.md` — `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`;
+4. `public-home-intelligence-master-document.md` — `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`;
+5. `docs/product-architecture/intelligence-product-source-lock.md` — `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0`;
+6. `docs/product-architecture/intelligence.md` — `GPA-006 v2.0.0`.
+
+Com a oitava guia operacional:
+
+```text
+31 FONTES CANÔNICAS
++
+8 LEIA-PRIMEIRO
+=
+39 ARQUIVOS EXTERNOS V4
+```
+
+O Narrative Contract e `GKR-UX-HOMES-OUTCOME-001` continuam autoridades por referência; conforme o GENINPUT, não precisam ser duplicados como input direto quando sua função estiver preservada pelas seis fontes acima.
+
+---
+
+## 6. Base desta preparação
+
+A branch de preparação nasceu do estado:
+
+`main @ ec4985b89df996aef22370eb9be65271a9af4b09`
+
+Esse SHA é **base de preparação**, não o futuro checkpoint de emissão v4.
+
+O checkpoint real da v4 somente poderá ser congelado depois que esta preparação for mesclada em `main` e a `main` for reconciliada novamente.
+
+---
+
+## 7. Próximo gate obrigatório
+
+Após merge e reconciliação:
+
+```text
+CAPTURAR MAIN @ SHA EXATO
+↓
+VALIDAR MANIFEST 4.0.0 + FLOW 1.3.0
+↓
+VALIDAR 31/31 FONTES CANÔNICAS
+↓
+MATERIALIZAR delivery/design-handoff-v4
+↓
+CRIAR 8 LEIA-PRIMEIRO
+↓
+GERAR SNAPSHOT / ZIP V4
+↓
+VALIDAR REPRODUTIBILIDADE E ISOLAMENTO
+↓
+REGISTRAR CHECKPOINT DA EMISSÃO
+↓
+SOMENTE ENTÃO LIBERAR A PRIMEIRA EXPLORAÇÃO VISUAL
+```
+
+Nenhum SHA pós-merge, snapshot commit ou snapshot tree deve ser inventado antes desse gate.
+
+---
+
+## 8. Invariantes para a futura exploração Intelligence
 
 ```text
 INFORMAÇÃO ≠ COMPREENSÃO
 COMPREENDER ≠ DECIDIR
-DESIGN RECEBE AUTORIDADE DE MATERIALIZAÇÃO ≠ AUTORIDADE DE REDEFINIÇÃO
-GENINPUT TRADUZ O HANDOFF ≠ REDEFINE A HOME
+CONHECER ≠ UTILIZAR ≠ COMPARTILHAR
+DECLARADO ≠ OBSERVADO ≠ INFERIDO ≠ PREDITO
+PERSONALIZAR ≠ EXPOR
+CORRELAÇÃO ≠ CAUSALIDADE
+RELAÇÃO ≠ CAUSA
+SINAL ≠ CERTEZA
+TENDÊNCIA ≠ DESTINO
+TECNOLOGIA ≠ PRODUTO
+PERCEBER ANTES ≠ PREVER O FUTURO
 ```
 
-## 5. CTAs congelados
+A Home preserva 11 movimentos funcionais, com `M03 ≠ M10` e `M04 ≠ M05`.
 
-CTA principal:
+M08 deve dar peso real à origem e explicabilidade da leitura; M09 preserva autonomia; M11 amplia horizonte sem previsão determinista.
 
-> **Veja o que suas informações podem mostrar**
+Direção visual conceitual:
 
-CTA secundário:
+> **clareza emergindo da complexidade**
 
-> **Conheça o Guivos Intelligence**
+---
 
-Os CTAs não autorizam promessa de futuro conhecido, decisão certa, diagnóstico, certeza ou resultado empresarial comprovado.
+## 9. Fronteiras de pessoa, empresa e privacidade
 
-## 6. Arquitetura preservada
-
-```text
-01 — ABRIR A POSSIBILIDADE
-02 — CRIAR A NECESSIDADE
-03 — DEFINIR O VALOR
-04 — MOSTRAR OS RESULTADOS
-05 — DEMONSTRAR OS RESULTADOS
-06 — EXPLICAR A FORMAÇÃO
-07 — MOSTRAR UTILIDADE
-08 — CONSTRUIR CONFIANÇA
-09 — PRESERVAR AUTONOMIA
-10 — APROFUNDAR RELAÇÕES
-11 — AMPLIAR O HORIZONTE
-```
-
-Separações obrigatórias:
-
-```text
-M03
-→ DEFINE POR QUE INTELLIGENCE EXISTE
-
-M10
-→ APROFUNDA POR QUE AS RELAÇÕES IMPORTAM
-
-M04
-→ MOSTRA O QUE O INTELLIGENCE PERMITE PERCEBER
-
-M05
-→ DEMONSTRA COMO ESSA PERCEPÇÃO GANHA FORMA
-```
-
-Os onze movimentos continuam sendo funções semânticas, não obrigação de onze seções físicas.
-
-## 7. Papel do GENINPUT
-
-O `GKR-UX-HOME-INTELLIGENCE-GENINPUT-001 v1.0.0`:
-
-- fixa o checkpoint exato da `main` utilizado como fonte;
-- define o pacote mínimo de documentos entregues à ferramenta;
-- traduz as invariantes do Handoff em instruções operacionais;
-- congela copy e CTAs necessários à primeira exploração;
-- registra liberdades reais de Design;
-- proíbe inferências sobre claims, tecnologia, dados, maturidade e autoridade;
-- define placeholders permitidos;
-- inclui prompt controlado;
-- exige autoauditoria e validação humana.
-
-O GENINPUT não cria:
-
-- UI;
-- wireframe;
-- protótipo;
-- claim;
-- tecnologia;
-- integração;
-- evidência;
-- decisão de produto.
-
-## 8. Direção de experiência registrada
-
-Expressão operacional:
-
-> **clareza emergindo da complexidade.**
-
-Transformações de referência:
-
-```text
-DISPERSÃO → RELAÇÃO
-RUÍDO → PADRÃO
-ESTADO → MUDANÇA
-SINAL → MOVIMENTO PERCEPTÍVEL
-NÚMERO → CONTEXTO
-CONCLUSÃO → EXPLICAÇÃO
-INFORMAÇÃO → COMPREENSÃO
-```
-
-A primeira percepção deve ser de ampliação de compreensão, e não de IA, dashboard, grafo ou plataforma analítica genérica.
-
-## 9. Duas frentes preservadas
-
-### Pessoa / Journey
-
-> **Entenda melhor por que determinadas informações, recomendações ou possibilidades podem aparecer em determinado contexto.**
+Pessoa/Journey:
 
 ```text
 INTELLIGENCE → produz compreensão
@@ -257,115 +193,49 @@ JOURNEY → governa a experiência
 PESSOA → escolhe
 ```
 
-### Business / população
-
-> **Compreenda padrões, mudanças e movimentos em populações de forma agregada e protegida.**
+Business/população:
 
 ```text
-INTELLIGENCE → produz leitura populacional
+INTELLIGENCE → produz leitura populacional protegida
 BUSINESS → governa a relação empresarial
 EMPRESA → decide
 ```
 
-A Empresa não recebe Intelligence individual por funcionário nem acesso à intimidade individual da Journey.
+É proibido converter conhecimento individual protegido em exposição para a organização.
 
-## 10. Tecnologia e exemplos
+---
 
-IA, Graph, Neo4j, GraphRAG, Power BI, Guivos.ai, dashboards e APIs permanecem subordinados ao valor do produto.
+## 10. O que esta revisão não autoriza
 
-O GENINPUT não cria seção tecnológica obrigatória.
+Esta preparação não autoriza, por si só:
 
-Exemplos analíticos permanecem conceituais até prova em contrário.
+- criar silenciosamente `delivery/design-handoff-v4`;
+- gerar snapshot ou ZIP v4;
+- reescrever a emissão v3;
+- iniciar Design;
+- iniciar wireframe, UI ou protótipo;
+- iniciar implementação;
+- publicar a Home;
+- alterar produto, posicionamento, claims, copy congelada ou privacidade;
+- inventar dados, métricas, cases, integrações ou maturidade operacional.
 
-```text
-VISUAL ANALÍTICO ≠ DASHBOARD COMO PRODUTO
-EXEMPLO CONCEITUAL ≠ DADO OPERACIONAL REAL
-VISUALIZAÇÃO ≠ CLAIM COMPROVADO
-TECNOLOGIA ≠ PRODUTO
-```
+---
 
-## 11. Guardrails preservados
+## 11. Continuidade
 
-```text
-INFORMAÇÃO ≠ COMPREENSÃO
-COMPREENDER ≠ DECIDIR
-INTELLIGENCE ≠ JOURNEY
-INTELLIGENCE ≠ BUSINESS
-CONHECER ≠ UTILIZAR ≠ COMPARTILHAR
-DECLARADO ≠ OBSERVADO ≠ INFERIDO ≠ PREDITO
-PERSONALIZAR ≠ EXPOR
-CORRELAÇÃO ≠ CAUSALIDADE
-RELAÇÃO ≠ CAUSA
-PADRÃO ≠ CAUSA
-MOVIMENTO ≠ DIAGNÓSTICO
-SINAL ≠ CERTEZA
-TENDÊNCIA ≠ DESTINO
-INFERÊNCIA ≠ FATO
-MAIS DADOS ≠ MELHOR INTELLIGENCE
-RESULTADO ESPERADO ≠ RESULTADO COMPROVADO
-PERCEBER ANTES ≠ PREVER O FUTURO
-POSSIBILIDADE ≠ RESULTADO GARANTIDO
-RECOMENDAÇÃO ≠ ORDEM
-```
+Ao retomar esta frente:
 
-## 12. Preservações globais
+1. ler o estado real de `main`;
+2. verificar se a preparação v4 foi mesclada;
+3. se ainda estiver em PR, não tratá-la como estado canônico;
+4. se estiver mesclada, capturar o SHA exato pós-merge;
+5. somente então materializar a emissão v4 conforme Manifesto e Fluxo;
+6. não iniciar Design antes da entrega v4 estar reconciliada e liberada.
 
-Esta frente não altera:
+---
 
-- `M7.88`;
-- `UXA-101` como última UXA numerada;
-- `UXA-102/V5`, que permanece não iniciada;
-- Product Engineering, que permanece pausada antes de W0-01;
-- maturidade tecnológica do Guivos Intelligence;
-- status de Neo4j como referência, não operação comprovada;
-- ausência de GraphRAG/GDS/Power BI/Guivos.ai operacionais comprovados;
-- ausência de pricing final e oferta B2B autônoma vigente;
-- `GKR-STATE-001 2.39.0` e `ROADMAP-12.81.0` como último snapshot global até sincronização transversal autorizada.
+## 12. Síntese
 
-Não há promoção silenciosa de estado global por este pacote.
+A versão `1.5.0` registra que Intelligence já possui sua cadeia conceitual e operacional específica e está pronta para ser incorporada ao Design Delivery v4, mas a emissão externa ainda depende do merge, checkpoint pós-merge e materialização controlada do novo pacote.
 
-## 13. Próximo ponto exato
-
-Após a integração do GENINPUT, retomar exatamente em:
-
-> **Home Pública Guivos Intelligence v1 — pacote oficial de entrega para Design — gate separado.**
-
-Antes da primeira exploração externa, deve ser reconciliado o **Design Delivery Manifest** vigente e emitido um pacote que inclua formalmente o Intelligence e seu GENINPUT no checkpoint correto.
-
-Sequência:
-
-```text
-HOME SOURCE LOCK
-→ HANDOFF CANÔNICO PARA DESIGN
-→ GENINPUT INTELLIGENCE
-→ PACOTE OFICIAL DE ENTREGA PARA DESIGN
-→ PRIMEIRA EXPLORAÇÃO EXTERNA
-→ VALIDAÇÃO HUMANA CONTRA O GKR
-```
-
-Permanecem fora deste pacote:
-
-- atualização ou nova emissão do Design Delivery Manifest;
-- bundle oficial de Design;
-- execução em Figma Make ou outra ferramenta generativa;
-- wireframe;
-- UI;
-- protótipo;
-- implementação;
-- publicação.
-
-Cada etapa exige gate e autorização próprios.
-
-```mermaid
-flowchart TD
-    A[Product Source Lock] --> B[11 movimentos]
-    B --> C[Documento Mestre]
-    C --> D[Home Source Lock]
-    D --> E[Handoff Canônico para Design]
-    E --> F[GENINPUT Intelligence]
-    F --> G[Pacote oficial de entrega para Design\npróximo gate separado]
-    G --> H[Primeira exploração externa]
-    H --> I[Validação humana contra GKR]
-```
-
-Nenhuma etapa autoriza automaticamente a seguinte.
+> **INTELLIGENCE PRONTA PARA O DESIGN DELIVERY V4 — SNAPSHOT V4 NÃO EMITIDO — DESIGN NÃO INICIADO.**
