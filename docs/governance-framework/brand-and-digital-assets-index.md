@@ -2,12 +2,17 @@
 id: GKR-BRAND-DIGITAL-ASSETS-INDEX-001
 title: Marca, Naming e Ativos Digitais — Índice Governado
 status: active
-version: 1.1.0
+version: 1.8.0
 owner: Guivos
 last_updated: 2026-08-20
 related:
   - GKR-BRAND-ASSET-GOVERNANCE-001
   - GKR-BRAND-SIGNATURE-001
+  - GKR-TRADEMARK-FILING-SCOPE-001
+  - GKR-TRADEMARK-FILING-PREFLIGHT-001
+  - GKR-TRADEMARK-OWNER-CLEARANCE-EVIDENCE-001
+  - GKR-TRADEMARK-SIGNATURE-FILING-DECISION-001
+  - GKR-TRADEMARK-BRAZIL-SIGNATURE-FILING-AUTH-001
   - GKR-OFFICIAL-NAMING-AUTHORITY-001
   - GKR-DIGITAL-ASSET-CONTROL-001
   - GKR-LEGACY-NOMENCLATURE-RECONCILIATION-001
@@ -19,113 +24,23 @@ normative: false
 
 ## 1. Propósito do domínio
 
-Este conjunto governa a identidade nominal e os ativos digitais da Guivos sem transformar planejamento em execução e sem expor informações que aumentem risco operacional.
+Este conjunto governa identidade nominal, assinatura, proteção marcária e ativos digitais da Guivos.
 
-A leitura correta é:
+A cadeia corrente é:
 
 ```text
 naming canônico
-→ política de proteção
-→ registro de evidência
-→ controle operacional em sistema apropriado
+→ autoridade verbal
+→ portfólio existente
+→ clearance das assinaturas
+→ decisão FILE
+→ authorization package
+→ autorização humana
+→ protocolo
+→ evidência registral
 ```
 
-O corpus público não substitui registros jurídicos, registradores, serviços de DNS, cofres de segredo ou inventários restritos.
-
-## 2. Estado do pacote
-
-A frente P3 foi integrada na sincronização governada de 2026-08-08.
-
-Em 2026-08-20, o domínio passou a registrar também a assinatura institucional e o sistema verbal associado em `GKR-BRAND-SIGNATURE-001`.
-
-Isso estabelece **governança documental, autoridade de naming e autoridade verbal de marca**, mas não promove automaticamente a estado comprovado nenhum registro, titularidade, domínio, perfil, DNS, certificado, serviço ou cobertura territorial específica.
-
-Fatos operacionais/registrários continuam sujeitos ao modelo de evidência definido neste domínio.
-
-## 3. Documentos
-
-### Autoridade Oficial de Naming
-
-[Autoridade Oficial de Naming da Guivos](official-naming-authority.md)
-
-Define:
-
-- nomes canônicos;
-- sete Produtos Especializados;
-- `Guivos Mall` como nome vigente e `Guivos Marketplace` como alias legado de migração;
-- separação entre participante, produto e plano;
-- critérios para canonicalizar novos nomes.
-
-### Governança de Marca, Naming e Ativos Digitais
-
-[Governança de Marca, Naming e Ativos Digitais](brand-naming-and-digital-assets-governance.md)
-
-Define:
-
-- estados de naming;
-- estados de ativos;
-- classificação público/interno/restrito/secreto;
-- controles mínimos por criticidade;
-- RACI funcional;
-- ciclo de vida;
-- evidências;
-- gates de internacionalização e proteção.
-
-### Assinatura de Marca e Sistema Verbal
-
-[Assinatura de Marca e Sistema Verbal da Guivos](brand-signature-and-verbal-system.md)
-
-Define:
-
-- `Possibility, lived.` como assinatura canônica global;
-- `Possibilidade, vivida.` como versão canônica em português;
-- `#PossibilityLived` como hashtag institucional global;
-- `Do possível ao vivido.` como bordão / linha narrativa recorrente, sem criar segunda assinatura;
-- tese e significado canônico da assinatura;
-- invariantes semânticos;
-- regras de localização linguística controlada;
-- separação entre autoridade verbal no GKR e proteção jurídica.
-
-### Modelo de Registro e Controle
-
-[Modelo Governado de Registro e Controle de Ativos Digitais](digital-asset-control-model.md)
-
-Define:
-
-- schema de inventário;
-- tipos de ativo;
-- estado factual;
-- criticidade;
-- referência de evidência;
-- visão pública, registro restrito e cofre de segredos;
-- intake, renovação, continuidade e KPIs futuros.
-
-## 4. Autoridades correntes de naming cobertas
-
-No escopo desta frente, o naming canônico inclui:
-
-- Guivos;
-- Guivos Knowledge Repository;
-- Guivos Journey;
-- Guivos Mall;
-- Guivos Travel;
-- Guivos Business;
-- Guivos Media;
-- Guivos Intelligence;
-- Guivos Ads.
-
-Planos permanecem governados pela autoridade econômica própria:
-
-- Pessoa: Free · Plus · Pro;
-- Coletivo: Livre · Mobiliza · Impacta · Rede;
-- Organização: Conecta · Eleva · Transforma;
-- Guivos Business: Start · Growth · Scale · Enterprise.
-
-Nenhum desses nomes implica registro de marca, domínio, handle ou proteção territorial comprovada.
-
-## 5. Autoridade verbal corrente
-
-A autoridade verbal institucional deste domínio registra:
+## 2. Autoridade verbal
 
 ```text
 Assinatura global     Possibility, lived.
@@ -134,62 +49,141 @@ Hashtag global        #PossibilityLived
 Bordão PT             Do possível ao vivido.
 ```
 
-A assinatura, sua versão em português e a hashtag global são canônicas. O bordão pertence ao território verbal como linha narrativa recorrente e não constitui segunda assinatura.
+## 3. Portfólio brasileiro existente — GUIVOS
 
-Nenhum desses estados afirma disponibilidade registral, exclusividade jurídica ou proteção territorial.
+| Processo | Classe | Situação |
+|---|---:|---|
+| `932319793` | 09 | Registro de marca em vigor |
+| `932319920` | 39 | Registro de marca em vigor |
+| `932319971` | 42 | Registro de marca em vigor |
+| `932412840` | 35 | Registro de marca em vigor |
 
-## 6. Relação com P1.1
-
-P1.1 remove deriva conhecida de nomenclatura. P3 cria a governança permanente.
+O titular informou continuidade do mesmo CNPJ `43.530.598/0001-33` após a alteração de `CLUBE DE VIAGENS E TURISMO LTDA` para `GUIVOS LTDA`.
 
 ```text
-P1.1
-= detectar/corrigir nomes superseded
-
-P3
-= controlar criação, aprovação, migração, evidência e proteção de nomes/ativos
+GUIVOS / 09 = existing_registered_coverage
+GUIVOS / 35 = existing_registered_coverage
+GUIVOS / 39 = existing_registered_coverage
+GUIVOS / 42 = existing_registered_coverage
+registration_claim_reconciled = true
 ```
 
-## 7. O que não está sendo publicado
+## 4. Clearance e decisão das assinaturas
 
-Esta frente não publica:
+A pesquisa detalhada no INPI foi informada como favorável e sem anterioridades bloqueadoras.
 
-- carteira defensiva de domínios;
-- registradores;
-- account IDs;
-- contatos de recuperação;
-- DNS operacional detalhado;
-- credenciais;
-- recovery codes;
-- chaves privadas;
-- tokens;
-- vulnerabilidades;
-- incidentes não sanitizados.
+```text
+Possibility, lived. = CLEAR
+Possibilidade, vivida. = CLEAR
+risk_acceptance = ACCEPTED_BY_OWNER
+```
 
-## 8. Estado factual desta versão
+Matriz:
 
-A frente estabelece **governança, naming documental e autoridade verbal de marca**.
+| Sinal | Classe 35 | Classe 42 |
+|---|---:|---:|
+| `Possibility, lived.` | **FILE** | **FILE** |
+| `Possibilidade, vivida.` | **FILE** | **FILE** |
 
-Ela não afirma que:
+## 5. Brazil Signature Filing Authorization Package
 
-- qualquer marca ou assinatura esteja registrada;
-- qualquer hashtag possua exclusividade jurídica;
-- qualquer domínio específico esteja adquirido;
-- qualquer perfil esteja reservado;
-- exista cobertura internacional;
-- exista contrato de monitoramento/enforcement;
-- controles técnicos descritos já estejam implementados em todos os ativos.
+O pacote brasileiro está preparado em `GKR-TRADEMARK-BRAZIL-SIGNATURE-FILING-AUTH-001`.
 
-A população do inventário real depende de evidências específicas e classificação adequada.
+### Forma
 
-## 9. Próximos gates
+```text
+Apresentação    Nominativa
+Natureza        Produto e/ou serviço
+Titular         GUIVOS LTDA
+CNPJ            43.530.598/0001-33
+Rota            INPI nacional direto
+```
 
-Antes de promover fatos específicos de proteção/controle, exigir:
+### Classe 35
 
-1. evidência identificável;
-2. estado factual compatível;
-3. responsável/autoridade;
-4. revisão de confidencialidade;
-5. escopo territorial/registral correto;
-6. ausência de segredo no GKR;
-7. consistência com naming e sistema verbal canônicos.
+1. `Provimento de mercado on-line para compradores e vendedores de produtos e serviços [marketplace]` — `350120`;
+2. `Publicidade on-line em rede de computadores` — `350084`;
+3. `Marketing` — `350106`.
+
+### Classe 42
+
+1. `Software como serviço [SaaS]` — `420220`;
+2. `Plataforma como serviço [PaaS]` — `420248`;
+3. `Inteligência artificial como serviço [AIaaS]` — `420315`.
+
+### Rota e custo
+
+Rota preferida: código INPI `389`, desde que todos os itens estejam selecionáveis como pré-aprovados no e-Marcas.
+
+```text
+4 × R$ 880,00 = R$ 3.520,00 integral
+4 × R$ 440,00 = R$ 1.760,00 com desconto de 50%, se confirmado pelo INPI
+```
+
+Código `394` não está automaticamente autorizado; se necessário, deve haver nova autorização.
+
+## 6. Documentos do domínio
+
+- [Autoridade Oficial de Naming da Guivos](official-naming-authority.md)
+- [Governança de Marca, Naming e Ativos Digitais](brand-naming-and-digital-assets-governance.md)
+- [Assinatura de Marca e Sistema Verbal da Guivos](brand-signature-and-verbal-system.md)
+- [Escopo de Depósito Marcário — Guivos e Assinatura Institucional](trademark-filing-scope.md) — `v1.3.0`
+- [Preflight de Depósito Marcário — Guivos e Assinatura Institucional](trademark-filing-preflight.md) — `v1.4.0`
+- [Evidências de Titular e Clearance Marcário — Guivos](trademark-owner-and-clearance-evidence.md) — `v1.2.0`
+- [Signature Final Clearance & Filing Decision — Guivos](trademark-signature-filing-decision.md) — `v1.1.0`
+- [Brazil Signature Filing Authorization Package — Guivos](trademark-brazil-signature-filing-authorization-package.md) — `v1.0.0`
+- [Modelo Governado de Registro e Controle de Ativos Digitais](digital-asset-control-model.md)
+
+## 7. Estado factual
+
+```text
+brand_naming_canonical
++ signature_system_canonical
++ GUIVOS_09_registered
++ GUIVOS_35_registered
++ GUIVOS_39_registered
++ GUIVOS_42_registered
++ owner_identity_reconciled
++ registration_claim_reconciled
++ signature_clearance_CLEAR
++ signature_35_42_FILE
++ authorization_package_prepared
++ ready_for_authorization
+≠ filing_authorized
+≠ GRU_issued
+≠ GRU_paid
+≠ signature_filed
+≠ signature_registered
+```
+
+## 8. Invariantes
+
+```text
+GUIVOS REGISTRADA ≠ ASSINATURA REGISTRADA
+GUIVOS ® ≠ Possibility, lived. ®
+CLEAR ≠ CONCESSÃO
+FILE ≠ AUTORIZAÇÃO DE PROTOCOLO
+READY_FOR_AUTHORIZATION ≠ FILING_AUTHORIZED
+PEDIDO ≠ REGISTRO
+REGISTRO BRASILEIRO ≠ PROTEÇÃO GLOBAL
+```
+
+## 9. Próximo gate
+
+O próximo gate é **Human Filing Authorization**.
+
+A autorização humana deverá declarar explicitamente:
+
+1. autorização dos quatro pedidos;
+2. autorização de emissão/pagamento das GRUs;
+3. autorização de protocolo;
+4. teto financeiro conforme o cenário confirmado no INPI.
+
+Cenários permitidos sem redefinir escopo:
+
+```text
+A — código 389 + desconto 50% = R$ 1.760,00
+B — código 389 sem desconto   = R$ 3.520,00
+```
+
+Se o código `394` for necessário, parar e reautorizar.
