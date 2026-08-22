@@ -1,9 +1,9 @@
 ---
 title: Guivos Market Validation System
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-22
 ---
 
 # Guivos Market Validation System
@@ -39,6 +39,23 @@ Transformar hipóteses internas em perguntas testáveis, coletar evidências de 
 - [VAL-008 — Sinais Comportamentais](VAL-008-sinais-comportamentais.md) — versão 1.1.1;
 - [VAL-009 — Estado de Execução e Gates de Evidência](VAL-009-status-de-execucao-e-gates-de-evidencia.md) — versão 1.0.0;
 - [VAL-010 — Contrato de Intake, Evidência e Registro de Rodadas](VAL-010-contrato-de-intake-e-registro-de-rodadas.md) — versão 1.0.0.
+
+## Rodadas de execução
+
+- [VAL-RND-2026-001 — Rodada B2C 01 · Preparação de Execução E0–E2](rounds/VAL-RND-2026-001-b2c-e0-e2.md) — `planned`, preparação da primeira rodada B2C com `VAL-002 v2.1.0`.
+
+Estado da rodada atual:
+
+```text
+round_id = VAL-RND-2026-001
+E0 = prepared_not_open
+E1 = evidence_pending
+E2 = planned
+main_collection = not_started
+market_decision = not_authorized
+```
+
+A existência da rodada não comprova publicação do instrumento, pré-teste, coleta, base válida ou resultado.
 
 ## Sequência oficial
 
@@ -150,10 +167,22 @@ Confiança operacional, recorrência, retenção, recomendação e pagamento ser
 
 ## Estado factual da execução
 
-No checkpoint de 2026-08-08, o GKR não possui evidência integrada suficiente para declarar:
+A preparação da rodada `VAL-RND-2026-001` altera o estado factual apenas no seguinte limite:
 
-- pré-teste concluído;
-- versão efetivamente publicada em uma rodada identificada;
+```text
+identidade de rodada = criada
+instrumento canônico = identificado
+plano de pré-teste = preparado
+instrumento efetivamente publicado = não estabelecido
+pré-teste concluído = não
+respostas recebidas/válidas = não estabelecidas
+KPIs/IGV = não calculados
+decisão de mercado = não autorizada
+```
+
+O GKR continua sem evidência integrada suficiente para declarar:
+
+- versão efetivamente publicada em superfície operacional;
 - período real de aplicação;
 - quantidade de respostas recebidas ou válidas;
 - KPIs ou IGV calculados;
