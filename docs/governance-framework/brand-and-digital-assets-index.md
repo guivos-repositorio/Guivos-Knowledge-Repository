@@ -2,9 +2,9 @@
 id: GKR-BRAND-DIGITAL-ASSETS-INDEX-001
 title: Marca, Naming e Ativos Digitais — Índice Governado
 status: active
-version: 1.8.0
+version: 1.9.0
 owner: Guivos
-last_updated: 2026-08-20
+last_updated: 2026-08-21
 related:
   - GKR-BRAND-ASSET-GOVERNANCE-001
   - GKR-BRAND-SIGNATURE-001
@@ -17,6 +17,7 @@ related:
   - GKR-DIGITAL-ASSET-CONTROL-001
   - GKR-LEGACY-NOMENCLATURE-RECONCILIATION-001
   - GKR-VALIDATED-UPDATES-SYNC-2026-08-08-001
+  - GKR-GLOBAL-INTEGRITY-POST300-001
 normative: false
 ---
 
@@ -31,12 +32,12 @@ A cadeia corrente é:
 ```text
 naming canônico
 → autoridade verbal
-→ portfólio existente
-→ clearance das assinaturas
+→ preflight
+→ portfólio/evidência e clearance
 → decisão FILE
 → authorization package
 → autorização humana
-→ protocolo
+→ GRU/protocolo
 → evidência registral
 ```
 
@@ -47,6 +48,15 @@ Assinatura global     Possibility, lived.
 Versão PT             Possibilidade, vivida.
 Hashtag global        #PossibilityLived
 Bordão PT             Do possível ao vivido.
+```
+
+Estados:
+
+```text
+Possibility, lived.      = canonical
+Possibilidade, vivida.   = canonical
+#PossibilityLived        = canonical
+Do possível ao vivido.   = canonical como bordão/linha narrativa; não segunda assinatura
 ```
 
 ## 3. Portfólio brasileiro existente — GUIVOS
@@ -70,9 +80,10 @@ registration_claim_reconciled = true
 
 ## 4. Clearance e decisão das assinaturas
 
-A pesquisa detalhada no INPI foi informada como favorável e sem anterioridades bloqueadoras.
+A evidência oficial informada está registrada por referência rastreável em `GKR-TRADEMARK-OWNER-CLEARANCE-EVIDENCE-001`.
 
 ```text
+evidence_id = GKR-TM-EVIDENCE-INPI-SIGNATURE-2026-08-20-001
 Possibility, lived. = CLEAR
 Possibilidade, vivida. = CLEAR
 risk_acceptance = ACCEPTED_BY_OWNER
@@ -84,6 +95,8 @@ Matriz:
 |---|---:|---:|
 | `Possibility, lived.` | **FILE** | **FILE** |
 | `Possibilidade, vivida.` | **FILE** | **FILE** |
+
+`FILE` governa a decisão estratégica de depósito por classe; não autoriza toda especificação possível nem protocolo.
 
 ## 5. Brazil Signature Filing Authorization Package
 
@@ -107,13 +120,25 @@ Rota            INPI nacional direto
 
 ### Classe 42
 
+Especificação-base:
+
 1. `Software como serviço [SaaS]` — `420220`;
-2. `Plataforma como serviço [PaaS]` — `420248`;
-3. `Inteligência artificial como serviço [AIaaS]` — `420315`.
+2. `Plataforma como serviço [PaaS]` — `420248`.
+
+Item condicional:
+
+3. `Inteligência artificial como serviço [AIaaS]` — `420315` — somente se houver evidência suficiente de compatibilidade com a atividade efetiva/objeto aplicável antes da autorização/protocolo.
+
+```text
+classe_42_FILE = preservado
+AIaaS_execution = conditional_on_activity_evidence
+```
+
+Sem essa evidência, a aplicação de classe 42 continua autorizável com SaaS/PaaS; AIaaS deve ser omitido.
 
 ### Rota e custo
 
-Rota preferida: código INPI `389`, desde que todos os itens estejam selecionáveis como pré-aprovados no e-Marcas.
+Rota preferida: código INPI `389`, desde que todos os itens efetivamente autorizados estejam selecionáveis como pré-aprovados no e-Marcas.
 
 ```text
 4 × R$ 880,00 = R$ 3.520,00 integral
@@ -126,12 +151,12 @@ Código `394` não está automaticamente autorizado; se necessário, deve haver 
 
 - [Autoridade Oficial de Naming da Guivos](official-naming-authority.md)
 - [Governança de Marca, Naming e Ativos Digitais](brand-naming-and-digital-assets-governance.md)
-- [Assinatura de Marca e Sistema Verbal da Guivos](brand-signature-and-verbal-system.md)
-- [Escopo de Depósito Marcário — Guivos e Assinatura Institucional](trademark-filing-scope.md) — `v1.3.0`
-- [Preflight de Depósito Marcário — Guivos e Assinatura Institucional](trademark-filing-preflight.md) — `v1.4.0`
-- [Evidências de Titular e Clearance Marcário — Guivos](trademark-owner-and-clearance-evidence.md) — `v1.2.0`
-- [Signature Final Clearance & Filing Decision — Guivos](trademark-signature-filing-decision.md) — `v1.1.0`
-- [Brazil Signature Filing Authorization Package — Guivos](trademark-brazil-signature-filing-authorization-package.md) — `v1.0.0`
+- [Assinatura de Marca e Sistema Verbal da Guivos](brand-signature-and-verbal-system.md) — `v1.2.0`
+- [Escopo de Depósito Marcário — Guivos e Assinatura Institucional](trademark-filing-scope.md) — autoridade de escopo vigente
+- [Preflight de Depósito Marcário — Guivos e Assinatura Institucional](trademark-filing-preflight.md) — `v1.5.0`
+- [Evidências de Titular e Clearance Marcário — Guivos](trademark-owner-and-clearance-evidence.md) — `v1.3.0`
+- [Signature Final Clearance & Filing Decision — Guivos](trademark-signature-filing-decision.md) — `v1.2.0`
+- [Brazil Signature Filing Authorization Package — Guivos](trademark-brazil-signature-filing-authorization-package.md) — `v1.1.0`
 - [Modelo Governado de Registro e Controle de Ativos Digitais](digital-asset-control-model.md)
 
 ## 7. Estado factual
@@ -148,7 +173,9 @@ brand_naming_canonical
 + signature_clearance_CLEAR
 + signature_35_42_FILE
 + authorization_package_prepared
-+ ready_for_authorization
++ evidence_reference_identified
++ ready_for_human_authorization
++ AIaaS_item_gate_required_if_included
 ≠ filing_authorized
 ≠ GRU_issued
 ≠ GRU_paid
@@ -163,6 +190,7 @@ GUIVOS REGISTRADA ≠ ASSINATURA REGISTRADA
 GUIVOS ® ≠ Possibility, lived. ®
 CLEAR ≠ CONCESSÃO
 FILE ≠ AUTORIZAÇÃO DE PROTOCOLO
+FILE DE CLASSE 42 ≠ AIaaS AUTOMATICAMENTE INCLUÍDO
 READY_FOR_AUTHORIZATION ≠ FILING_AUTHORIZED
 PEDIDO ≠ REGISTRO
 REGISTRO BRASILEIRO ≠ PROTEÇÃO GLOBAL
@@ -177,7 +205,8 @@ A autorização humana deverá declarar explicitamente:
 1. autorização dos quatro pedidos;
 2. autorização de emissão/pagamento das GRUs;
 3. autorização de protocolo;
-4. teto financeiro conforme o cenário confirmado no INPI.
+4. teto financeiro conforme o cenário confirmado no INPI;
+5. se AIaaS integra ou não as duas aplicações de classe 42, condicionado à evidência exigida.
 
 Cenários permitidos sem redefinir escopo:
 

@@ -1,10 +1,10 @@
 ---
 id: GKR-TRADEMARK-BRAZIL-SIGNATURE-FILING-AUTH-001
 title: Brazil Signature Filing Authorization Package — Guivos
-status: proposed
-version: 1.0.0
+status: active
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-08-20
+last_updated: 2026-08-21
 depends_on:
   - GKR-TRADEMARK-SIGNATURE-FILING-DECISION-001
   - GKR-TRADEMARK-FILING-PREFLIGHT-001
@@ -13,6 +13,7 @@ depends_on:
 related:
   - GKR-TRADEMARK-FILING-SCOPE-001
   - GKR-BRAND-DIGITAL-ASSETS-INDEX-001
+  - GKR-GLOBAL-INTEGRITY-POST300-001
 normative: true
 ---
 
@@ -34,6 +35,7 @@ Ele fecha, antes de qualquer protocolo:
 - taxa de referência;
 - condição de desconto;
 - titular/cadastro;
+- gates de execução por item;
 - checklist dos quatro pedidos.
 
 Este documento **não autoriza protocolo, não gera GRU, não paga taxa e não declara pedido depositado**.
@@ -153,15 +155,36 @@ APRESENTAÇÃO   Nominativa
 DECISÃO        FILE
 ```
 
-### Especificação-alvo
+### Especificação-base executável
 
 Selecionar, se disponíveis como itens pré-aprovados no e-Marcas vigente:
 
 1. `Software como serviço [SaaS]` — referência Nice/base `420220`;
-2. `Plataforma como serviço [PaaS]` — referência Nice/base `420248`;
-3. `Inteligência artificial como serviço [AIaaS]` — referência Nice/base `420315`.
+2. `Plataforma como serviço [PaaS]` — referência Nice/base `420248`.
 
-`AIaaS` foi incluído expressamente na NCL 13, versão 2026, classe 42.
+### Item condicional — AIaaS
+
+`Inteligência artificial como serviço [AIaaS]` — referência Nice/base `420315` — é um **item candidato condicional**.
+
+Ele somente poderá ser incluído neste pedido se, antes da autorização/protocolo, estiver arquivada evidência de que a atividade efetiva/objeto aplicável do titular oferece suporte suficiente ao item.
+
+```text
+AIaaS classificado na classe 42
+≠ AIaaS automaticamente autorizado
+
+AIaaS_execution_gate
+= EVIDÊNCIA DE ATIVIDADE EFETIVA COMPATÍVEL
+```
+
+Se a evidência não estiver disponível ou for insuficiente:
+
+```text
+MANTER classe 42 = FILE
+MANTER SaaS + PaaS
+OMITIR AIaaS
+NÃO inventar atividade
+NÃO atrasar a classe 42 apenas por esse item
+```
 
 Não ampliar para consultoria em IA, desenvolvimento para terceiros, blockchain, hospedagem ou outros serviços sem razão própria.
 
@@ -189,11 +212,11 @@ APRESENTAÇÃO   Nominativa
 DECISÃO        FILE
 ```
 
-Usar **a mesma especificação-alvo do Pedido 2**:
+Usar **a mesma especificação-base e o mesmo gate do Pedido 2**:
 
 1. `Software como serviço [SaaS]` — `420220`;
 2. `Plataforma como serviço [PaaS]` — `420248`;
-3. `Inteligência artificial como serviço [AIaaS]` — `420315`.
+3. `Inteligência artificial como serviço [AIaaS]` — `420315` **somente se o gate de atividade efetiva estiver satisfeito**.
 
 ## 9. Rota de especificação e código INPI
 
@@ -204,7 +227,7 @@ CÓDIGO 389
 Pedido de registro de marca com especificação pré-aprovada — valor por classe
 ```
 
-Essa rota é a preferida **somente se todos os itens acima estiverem disponíveis e selecionáveis no e-Marcas no momento real de preparação do pedido**.
+Essa rota é a preferida **somente se todos os itens efetivamente autorizados estiverem disponíveis e selecionáveis no e-Marcas no momento real de preparação do pedido**.
 
 O INPI informa que a lista pré-aprovada do e-Marcas é derivada da Classificação de Nice e listas auxiliares, mas que itens podem ser suprimidos da lista operacional.
 
@@ -306,6 +329,7 @@ Antes de cada protocolo confirmar:
 - [ ] sinal exatamente conforme seção correspondente;
 - [ ] classe correta;
 - [ ] somente especificações autorizadas;
+- [ ] para classe 42: AIaaS incluído **somente** se houver evidência de atividade efetiva compatível;
 - [ ] especificações selecionadas como pré-aprovadas, se código 389;
 - [ ] código da GRU coerente com a rota autorizada;
 - [ ] desconto confirmado ou negado pelo sistema antes do pagamento;
@@ -321,9 +345,11 @@ Antes de cada protocolo confirmar:
 | # | Sinal | Classe | Apresentação | Rota preferida | Estado |
 |---|---|---:|---|---|---|
 | 1 | `Possibility, lived.` | 35 | Nominativa | 389 | `READY_FOR_AUTHORIZATION` |
-| 2 | `Possibility, lived.` | 42 | Nominativa | 389 | `READY_FOR_AUTHORIZATION` |
+| 2 | `Possibility, lived.` | 42 | Nominativa | 389 | `READY_FOR_AUTHORIZATION_WITH_ITEM_GATE` |
 | 3 | `Possibilidade, vivida.` | 35 | Nominativa | 389 | `READY_FOR_AUTHORIZATION` |
-| 4 | `Possibilidade, vivida.` | 42 | Nominativa | 389 | `READY_FOR_AUTHORIZATION` |
+| 4 | `Possibilidade, vivida.` | 42 | Nominativa | 389 | `READY_FOR_AUTHORIZATION_WITH_ITEM_GATE` |
+
+`READY_FOR_AUTHORIZATION_WITH_ITEM_GATE` significa que a aplicação de classe 42 está pronta para decisão humana, mas o item AIaaS somente poderá integrar a especificação se a evidência factual exigida estiver presente. Sem ela, a aplicação continua autorizável com SaaS/PaaS.
 
 Estado agregado:
 
@@ -332,6 +358,7 @@ signature_clearance = CLEAR
 signature_filing_decision = FILE
 authorization_package_prepared = true
 preferred_route = INPI_389
+AIaaS_execution_gate = EVIDENCE_REQUIRED
 preferred_total_if_discount_confirmed = R$ 1.760,00
 maximum_total_on_389_without_discount = R$ 3.520,00
 filing_authorized = false
@@ -362,7 +389,8 @@ Uma autorização válida deverá declarar explicitamente que está autorizando:
 1. os quatro pedidos acima;
 2. emissão e pagamento das GRUs;
 3. protocolo no INPI;
-4. o teto financeiro aplicável ao cenário confirmado no sistema.
+4. o teto financeiro aplicável ao cenário confirmado no sistema;
+5. para as classes 42, se AIaaS está incluído com evidência suficiente ou omitido.
 
 Antes de qualquer pagamento, o executor deverá informar qual cenário foi confirmado:
 

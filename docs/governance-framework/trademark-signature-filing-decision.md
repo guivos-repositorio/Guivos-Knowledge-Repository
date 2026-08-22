@@ -1,10 +1,10 @@
 ---
 id: GKR-TRADEMARK-SIGNATURE-FILING-DECISION-001
 title: Signature Final Clearance & Filing Decision — Guivos
-status: proposed
-version: 1.1.0
+status: active
+version: 1.2.0
 owner: Guivos
-last_updated: 2026-08-20
+last_updated: 2026-08-21
 depends_on:
   - GKR-TRADEMARK-FILING-PREFLIGHT-001
   - GKR-TRADEMARK-OWNER-CLEARANCE-EVIDENCE-001
@@ -12,6 +12,7 @@ depends_on:
 related:
   - GKR-TRADEMARK-FILING-SCOPE-001
   - GKR-BRAND-DIGITAL-ASSETS-INDEX-001
+  - GKR-GLOBAL-INTEGRITY-POST300-001
 normative: true
 ---
 
@@ -34,7 +35,15 @@ Ele não protocola pedido, não paga taxa, não contrata agente e não constitui
 
 ## 2. Evidência oficial informada
 
-O titular informou ter executado, de forma detalhada, todas as pesquisas planejadas na base oficial do INPI, incluindo formas exatas, formas sem pontuação, termos dominantes e variações relevantes das duas assinaturas.
+A decisão consome a evidência rastreável registrada por `GKR-TRADEMARK-OWNER-CLEARANCE-EVIDENCE-001`:
+
+```text
+evidence_id = GKR-TM-EVIDENCE-INPI-SIGNATURE-2026-08-20-001
+source      = INPI official trademark search
+mode        = reference_only
+```
+
+O titular informou ter executado, de forma detalhada, as pesquisas planejadas na base oficial do INPI, incluindo formas exatas, formas sem pontuação, termos dominantes e variações relevantes das duas assinaturas.
 
 Resultado informado:
 
@@ -50,14 +59,13 @@ Possibilidade                nenhum registro bloqueador encontrado
 Vivida                       nenhum registro bloqueador encontrado
 ```
 
-A pesquisa foi declarada como detalhada e 100% favorável pelo titular.
-
 Estado governado:
 
 ```text
 official_INPI_signature_search_attested = true
 blocking_prior_record_reported = false
 owner_search_conclusion = favorable
+evidence_traceability = identified_reference_only
 ```
 
 Este registro documenta a evidência e conclusão informadas pelo titular. Não transforma a análise em parecer profissional externo que não ocorreu.
@@ -69,8 +77,9 @@ Combinando:
 - pesquisa pública anterior favorável;
 - ausência de colisão literal pública impeditiva identificada;
 - distintividade preliminar favorável;
-- pesquisa oficial do INPI informada como detalhada e sem registros;
-- inexistência de anterioridade bloqueadora reportada;
+- pesquisa oficial do INPI informada como detalhada e sem registros bloqueadores;
+- evidência de origem/data/escopo identificada na autoridade própria;
+- risco residual aceito pelo titular;
 
 este gate conclui:
 
@@ -87,7 +96,7 @@ risk_acceptance = ACCEPTED_BY_OWNER
 professional_external_opinion = not_required_for_this_internal_gate
 ```
 
-`CLEAR` neste documento significa que não foi identificado impedimento conhecido suficiente para manter o filing em espera. A decisão final do INPI somente ocorre no exame oficial do pedido.
+`CLEAR` significa que não foi identificado impedimento conhecido suficiente para manter o filing em espera. A decisão final do INPI somente ocorre no exame oficial do pedido.
 
 ## 4. Distintividade
 
@@ -136,6 +145,7 @@ FILE
 ≠ pedido protocolado
 ≠ taxa paga
 ≠ filing_authorized
+≠ toda especificação possível da classe autorizada
 ≠ registro concedido
 ```
 
@@ -147,8 +157,6 @@ A mesma pessoa jurídica já possui registros `GUIVOS` em vigor nas classes 35 e
 
 Isso oferece suporte factual relevante para manter essas classes como núcleo das assinaturas.
 
-A execução do protocolo ainda deverá confirmar as especificações exatas no e-Marcas vigente.
-
 Classe 35 — escopo candidato:
 
 - marketplace on-line;
@@ -159,12 +167,17 @@ Classe 42 — escopo candidato:
 
 - SaaS;
 - PaaS;
-- AIaaS, quando compatível com a atividade efetiva e a especificação vigente.
+- AIaaS, **somente quando compatível com a atividade efetiva/objeto aplicável e sustentado por evidência antes da autorização/protocolo**.
 
 ```text
 CLASSE APROVADA PARA FILE
 ≠ TODA ESPECIFICAÇÃO POSSÍVEL DA CLASSE APROVADA
+
+AIaaS CANDIDATO
+≠ AIaaS AUTORIZADO SEM EVIDÊNCIA DE ATIVIDADE
 ```
+
+Se a compatibilidade de AIaaS não estiver evidenciada, a decisão `FILE` da classe 42 permanece, mas o item AIaaS deve ser omitido da execução ou voltar a gate específico antes do protocolo.
 
 ## 8. Estado consolidado
 
@@ -177,6 +190,7 @@ GUIVOS_09_registered
 + signature_system_canonical
 + signature_public_screening_favorable
 + official_INPI_signature_search_attested
++ evidence_reference_identified
 + blocking_prior_record_reported_false
 + signature_clearance_CLEAR
 + signature_35_42_FILE
@@ -197,11 +211,12 @@ Ele deverá fechar, antes de qualquer protocolo:
 2. natureza/apresentação do pedido;
 3. especificação exata da classe 35 no e-Marcas;
 4. especificação exata da classe 42 no e-Marcas;
-5. taxa/código vigente;
-6. elegibilidade ou não a desconto;
-7. custo total final;
-8. titular/cadastro utilizado no INPI;
-9. checklist de quatro pedidos;
-10. autorização humana explícita de protocolo e gasto.
+5. evidência de compatibilidade de atividade para AIaaS, caso o item seja incluído;
+6. taxa/código vigente;
+7. elegibilidade ou não a desconto;
+8. custo total final;
+9. titular/cadastro utilizado no INPI;
+10. checklist de quatro pedidos;
+11. autorização humana explícita de protocolo e gasto.
 
 Nenhum protocolo ou pagamento é autorizado por esta versão.

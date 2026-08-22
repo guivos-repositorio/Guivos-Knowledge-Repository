@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 3.0.0
+version: 3.1.0
 owner: Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-21
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-GLOBAL-INTEGRITY-POST300-001
   - GKR-P9-GLOBAL-CONSOLIDATION-001
   - GOG-001
   - UXA-101
@@ -15,6 +16,9 @@ related:
   - GTM-007
   - GTM-008
   - GEM-005-A1
+  - GKR-BRAND-SIGNATURE-001
+  - GKR-BRAND-DIGITAL-ASSETS-INDEX-001
+  - GKR-CHRISTIAN-FOUNDATION-001
   - GKR-FUNDACAO-GUIVOS-CONCEPT-001
   - GKR-DATA-PRIVACY-CONSENT-001
   - M7.88
@@ -25,9 +29,13 @@ normative: false
 
 ## 1. Finalidade
 
-Esta matriz oferece uma leitura transversal compacta das autoridades correntes. Ela não substitui `GKR-STATE-001` nem a autoridade temática específica.
+Esta matriz oferece leitura transversal compacta das autoridades correntes. Ela não substitui `GKR-STATE-001` nem a autoridade temática específica.
 
-A edição 3.0.0 substitui a leitura agregada anterior, que refletia o estado funcional de julho. Addenda e changelogs anteriores permanecem evidência histórica.
+A edição 3.1.0 corrige a deriva acumulada após o P9 e sincroniza a matriz com `GKR-STATE-001 v2.42.0`, preservando linhas válidas da edição 3.0.0 que continuam relevantes para leitura transversal.
+
+```text
+ATUALIZAÇÃO DA MATRIZ ≠ APAGAMENTO DE LINHA VÁLIDA
+```
 
 ## 2. Regras de decisão
 
@@ -35,32 +43,48 @@ A edição 3.0.0 substitui a leitura agregada anterior, que refletia o estado fu
 |---|---|
 | consolidado | autoridade integrada e vigente |
 | referência | arquitetura/tecnologia escolhida sem prova de implantação |
-| candidato | direção ou meta ainda dependente de gate/evidência |
+| candidato | direção ou meta dependente de gate/evidência |
 | dependente de evidência | não pode ser promovido a fato |
 | histórico | preservado para rastreabilidade, não autoridade corrente |
 | pausado | válido, mas sem execução autorizada |
+| não iniciado | frente reconhecida, sem início autorizado |
 
-## 3. Fundação, propósito e participantes
+## 3. Estado transversal
+
+| Elemento | Estado |
+|---|---|
+| GKR-STATE | **2.42.0** |
+| Era | **GE-2 — Knowledge** |
+| Marco funcional | **M7.88** |
+| Última UXA | **UXA-101** |
+| Próxima UXA | **UXA-102/V5 — não iniciada** |
+| Product Engineering | **pausada antes de W0-01** |
+
+## 4. Fundação, propósito e participantes
 
 | Elemento | Estado | Autoridade/limite |
 |---|---|---|
 | Essência, propósito, missão e princípios | consolidado | GEA/GEB Foundation |
+| Fundamento Cristão | **consolidado** | `GKR-CHRISTIAN-FOUNDATION-001 v1.0.0`; uso interno de governança |
+| Evolução com propósito | **consolidado** | princípio fundacional interno |
 | Participantes | consolidado | Pessoa · Coletivo · Organização |
 | Organização ≠ Guivos Business | consolidado | taxonomia/GPA |
 | Jornada como evolução contextual | consolidado | GEF/PAS/UXA |
 | autonomia do participante | consolidado | arquitetura da experiência |
 | evolução ≠ engajamento ≠ pontos | consolidado | GEM-005-A1 |
 
-## 4. Produtos e planos
+A presença pública do Fundamento Cristão no GKR não o transforma em Public Canon ou comunicação externa automática.
+
+## 5. Produtos e planos
 
 | Elemento | Estado | Leitura corrente |
 |---|---|---|
 | Guivos Journey | consolidado | host principal da experiência |
 | Guivos Mall | consolidado | nome canônico; Marketplace é alias histórico |
 | Guivos Travel | consolidado | Produto Especializado |
-| Guivos Business | consolidado | Produto B2B separado de Organização |
+| Guivos Business | consolidado | Produto B2B separado de Organização e de Ads |
 | Guivos Media | consolidado | responsabilidade editorial especializada |
-| Guivos Intelligence | consolidado | inteligência transversal; não é Neo4j |
+| Guivos Intelligence | consolidado | Produto Especializado transversal + Intelligence Layer |
 | Guivos Ads | consolidado | publicidade/patrocínio identificável |
 | Pessoa | consolidado | Free · Plus · Pro |
 | Coletivo | consolidado | Livre · Mobiliza · Impacta · Rede |
@@ -68,61 +92,169 @@ A edição 3.0.0 substitui a leitura agregada anterior, que refletia o estado fu
 | Business | consolidado | Start · Growth · Scale · Enterprise |
 | preços e entitlements | parcialmente candidatos | autoridade econômica específica; preço ≠ WTP |
 
-## 5. Experiência e materialização
+## 6. Experiência e materialização
 
 | Elemento | Estado |
 |---|---|
-| marco funcional | **M7.88** |
-| última UXA | **UXA-101** |
-| UXA-102/V5 | não iniciada |
-| SVGs | 118 |
-| associações | 118 |
-| perfis | 31 |
-| superfícies/estados/fronteiras | 53 |
-| transições | 54 |
+| Marco funcional | **M7.88** |
+| Última UXA | **UXA-101** |
+| UXA-102/V5 | **não iniciada** |
+| SVGs | **121** |
+| SVGs validados | **121** |
+| SVGs pendentes | **0** |
+| Associações | **121** |
+| Perfis | **34** |
+| Superfícies/estados/fronteiras | **57** |
+| Transições | **66** |
 | Pessoa/Coletivo/Organização | jornadas `draft` |
 | Engenharia de Produto | pausada antes de W0-01 |
 
-V1–V4 estão encerradas nos limites documentais definidos. `BND-001` continua fronteira de autoridade externa; `BND-002` continua fronteira genérica de contratação/dimensionamento assistido.
+A continuidade especializada `TRN-008..013` permanece integralmente validada no limite documental. V1–V4 continuam encerradas nos limites definidos. `BND-001` permanece fronteira externa; `BND-002` permanece fronteira genérica de contratação/dimensionamento assistido.
 
-## 6. Handoffs e gaps preservados
+## 7. Homes públicas e Design
 
-- `TRN-203` = Organização publica → descoberta Journey; não prova Business;
-- Journey → Mall: handoff dedicado ainda é gap;
-- Journey → Travel: handoff dedicado ainda é gap;
-- Media: contexto editorial próprio ainda requer maturação quando materializado;
-- Intelligence: proveniência/explicabilidade devem acompanhar derivados;
-- Ads/Opportunity Boost: transições patrocinadas parciais permanecem parciais;
-- processo posterior a `BND-001` não pertence à autoridade da Guivos;
-- processo posterior a `BND-002` depende da autoridade contratual/assistida aplicável.
+| Home | Estado |
+|---|---|
+| Pessoa | documentalmente convergida |
+| Organizações e Coletivos | documentalmente convergida |
+| Mall | documentalmente convergida |
+| Travel | documentalmente convergida |
+| Media | documentalmente convergida |
+| Ads | documentalmente convergida |
+| Business | documentalmente convergida |
+| Intelligence | documentalmente convergida |
 
-## 7. Tecnologia e dados
+Handoff comum:
+
+```text
+GKR-UX-HOMES-DESIGN-HANDOFF-001 = v1.3.0
+GKR-UX-HOMES-DESIGN-DELIVERY-001 = v4.0.0
+snapshot v4 = 31 fontes + 8 guias = 39 arquivos
+```
+
+`Design Delivery emitido ≠ Design produzido ≠ implementação ≠ publicação`.
+
+## 8. Guivos Business
+
+```text
+GPA-004 = v1.6.0
+```
+
+Duas ofertas principais:
+
+1. Programas de Incentivo;
+2. Guivos Journey custeado pela Empresa.
+
+Separações:
+
+```text
+Organização ≠ Business
+Empresa no contrato Business ≠ novo participante
+Business ≠ Ads
+Pontos ≠ identidade do Business
+Pontos ≠ evolução
+custeio da Journey ≠ controle da Journey
+```
+
+Preços, limites, entitlements e SLA finais continuam dependentes de autoridade específica quando ainda abertos.
+
+## 9. Guivos Intelligence
+
+```text
+GPA-006 = v2.0.0
+GIA-000 = v1.5.0
+```
+
+Duas frentes:
+
+- Pessoa / Journey;
+- Business / População.
+
+Graph, Knowledge, Analytics e AI permanecem capacidades/arquiteturas subordinadas.
+
+```text
+INTELLIGENCE ≠ JOURNEY
+INTELLIGENCE ≠ BUSINESS
+INFERÊNCIA ≠ FATO
+SINAL ≠ CERTEZA
+TENDÊNCIA ≠ DESTINO
+PERCEBER ANTES ≠ PREVER O FUTURO
+```
+
+## 10. Tecnologia e dados
 
 | Elemento | Estado |
 |---|---|
 | Neo4j | `reference_selected` |
-| POC Neo4j | não comprovado |
+| POC Neo4j | não comprovada |
 | infraestrutura Neo4j | não comprovada |
-| GraphRAG | referência, não implementação |
-| GDS | referência, não produção |
+| GraphRAG | referência/candidato; não implementação |
+| GDS | referência; não produção |
 | Power BI conectado ao grafo | não comprovado |
 | dados pessoais no grafo | não comprovados |
+| stack final de IA | não definida como implementada |
+| MLOps/Serving técnico | não comprovados |
 
-`Grafo Global ≠ Guivos Intelligence ≠ Neo4j`.
+`Grafo Global ≠ Guivos Intelligence ≠ Neo4j ≠ Guivos.ai ≠ Power BI`.
 
-## 8. Marca e ativos digitais
+## 11. Marca e assinatura
+
+Autoridade verbal:
+
+| Ativo | Estado |
+|---|---|
+| `Possibility, lived.` | **canonical** |
+| `Possibilidade, vivida.` | **canonical** |
+| `#PossibilityLived` | **canonical** |
+| `Do possível ao vivido.` | **canonical como bordão/linha narrativa; não segunda assinatura** |
+
+Portfólio GUIVOS:
+
+| Classe | Estado |
+|---:|---|
+| 09 | registro em vigor reconciliado |
+| 35 | registro em vigor reconciliado |
+| 39 | registro em vigor reconciliado |
+| 42 | registro em vigor reconciliado |
+
+Assinaturas:
 
 ```text
-nome canônico
-≠ registro de marca
-≠ domínio controlado
-≠ DNS operacional
-≠ serviço ativo
+clearance = CLEAR
+35 = FILE
+42 = FILE
+filing_authorized = false
+filed = false
+registered = false
 ```
 
-Governança e modelo de evidência estão consolidados. Titularidade, registro, proteção territorial e controle técnico específico dependem de evidência própria.
+A evidência oficial informada possui referência governada:
 
-## 9. Mercado e GTM
+```text
+GKR-TM-EVIDENCE-INPI-SIGNATURE-2026-08-20-001
+```
+
+AIaaS permanece item condicional da classe 42 e exige evidência de atividade efetiva/objeto compatível antes de inclusão no protocolo.
+
+Separação registral preservada:
+
+```text
+nome canônico ≠ registro de marca ≠ domínio controlado ≠ DNS operacional ≠ serviço ativo
+GUIVOS registrada ≠ assinatura registrada
+```
+
+## 12. Handoffs e gaps preservados
+
+- `TRN-203` = Organização publica → descoberta Journey; **não prova Business**;
+- Journey → Mall: handoff dedicado ainda é gap;
+- Journey → Travel: handoff dedicado ainda é gap;
+- Media: contexto editorial próprio exige contrato quando houver mudança material de responsabilidade;
+- Intelligence: proveniência/explicabilidade devem acompanhar derivados materiais;
+- Ads/Opportunity Boost: transições patrocinadas preservam maturidade conforme registros funcionais; parcial não é promovido por esta matriz;
+- processo posterior a `BND-001` pertence à autoridade externa;
+- processo posterior a `BND-002` depende da autoridade contratual/assistida aplicável.
+
+## 13. Mercado e GTM
 
 | Elemento | Estado |
 |---|---|
@@ -130,21 +262,19 @@ Governança e modelo de evidência estão consolidados. Titularidade, registro, 
 | aplicação/resultados reais | dependentes de evidência |
 | PMF | não estabelecido |
 | disposição a pagar real | não estabelecida |
-| BH → SP → Portugal | baseline territorial candidata integrada |
+| BH → SP → Portugal | baseline territorial candidata |
 | Portugal | `T1_candidate` |
 | Lisboa | base inicial candidata |
-| Porto | posterior, condicionado |
+| Porto | posterior/condicionado a gate |
 | segundo país europeu | não autorizado |
-| metas M6–M60 | `candidate_target`/scenario conforme autoridade |
-| valuation R$10–15 mi / âncora R$12 mi | referência de planejamento, não fato transacional |
+| metas M6–M60 | `candidate_target` / cenário conforme autoridade |
+| valuation R$ 10–15 mi / âncora R$ 12 mi | referência de planejamento; não fato transacional, laudo, oferta ou promessa |
 
-## 10. Institucional e jurídico
+## 14. Institucional, jurídico e privacidade
 
-`Fundação Guivos` é conceito institucional social validado e nome de trabalho. Forma jurídica, entidade constituída, CNPJ, governança formal e operação própria não estão comprovados.
+`Fundação Guivos` permanece conceito institucional social e nome de trabalho. Forma jurídica, entidade constituída, CNPJ, governança formal e operação própria não estão comprovados.
 
 F0–F9 governam eventual formação. Produto, participante, empresa e veículo social permanecem objetos distintos.
-
-## 11. Privacidade e verdade operacional
 
 ```text
 aceite contratual ≠ consentimento LGPD ≠ preferência
@@ -153,20 +283,37 @@ arquitetura ≠ implementação ≠ operação evidenciada
 
 P6 governa atividades de tratamento, bases jurídicas, consentimentos, superfícies legais LS0–LS8 e verdade operacional OT0–OT8. Não presume Termos, Política/Aviso de Privacidade, cookies/SDKs, Encarregado, fluxo de direitos ou incident response em produção.
 
-## 12. Internacionalização
+## 15. Internacionalização
 
 P7 governa T0–T9 e PT0–PT9.
 
 Acesso de usuário, domínio territorial, marca protegida, pesquisa ou prospecção não tornam um território mercado ativo. Piloto autorizado não equivale a piloto executado; piloto executado não equivale a escala aprovada.
 
-## 13. Public Canon
+## 16. Public Canon
 
-`GOG-001 — Guia Oficial da Guivos` é a tradução pública das autoridades atuais.
+`GOG-001 — Guia Oficial da Guivos v5.1.0` é a tradução institucional pública vigente.
 
-O Public Canon não pode afirmar como disponível, registrado, implementado ou operacional aquilo que o GKR classifica como candidato, referência ou dependente de evidência.
+O Public Canon não pode afirmar como disponível, registrado, implementado ou operacional aquilo que o GKR classifica como candidato, referência, não iniciado ou dependente de evidência.
 
-## 14. Programa de ressincronização P0–P9
+O Fundamento Cristão permanece fora de promoção automática a Public Canon devido a `primary_use: internal_governance`.
 
-O programa documental está consolidado após P9. Isso significa que as frentes temáticas previstas foram reconciliadas com a autoridade atual; **não significa que os objetos de negócio, tecnologia, mercado, jurídico ou operação estejam executados**.
+## 17. Programa P0–P9 e reconciliação pós-300
 
-Novas evidências deverão atualizar o domínio correspondente por novo ato governado.
+P0–P9 permanece documentalmente consolidado. Isso não significa que objetos de negócio, tecnologia, mercado, jurídico ou operação estejam executados.
+
+`GKR-GLOBAL-INTEGRITY-POST300-001` corrige deriva posterior sem reabrir P0–P9.
+
+Históricos, addenda e PRs superseded permanecem na trilha Git, mas não competem com as autoridades correntes.
+
+## 18. Próximos gates possíveis
+
+Nenhum é automático:
+
+- nova evidência de mercado → VAL;
+- tecnologia/implementação → ADR/GEA/Product Engineering;
+- filing das assinaturas → Human Filing Authorization;
+- institucional/jurídico → gates próprios;
+- privacidade/operação → P6/LS/OT;
+- internacionalização → P7/T/PT;
+- experiência funcional → UXA autorizada;
+- Design → decisão humana própria sobre handoff existente.

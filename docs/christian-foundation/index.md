@@ -1,7 +1,7 @@
 ---
 id: GKR-CHRISTIAN-FOUNDATION-001
 title: Fundamento Cristão e Doutrina de Propósito da Guivos
-status: proposed
+status: active
 version: 1.0.0
 owner: Guivos
 last_updated: 2026-08-21
@@ -512,9 +512,7 @@ Mudanças no fundamento, referências bíblicas, interpretação central, princ�
 
 A alteração deve preservar histórico e não pode ser tratada como simples edição editorial.
 
-## 19. Estado canônico pretendido
-
-Após integração desta autoridade ao `main`:
+## 19. Estado canônico vigente
 
 ```text
 christian_foundation_defined = true

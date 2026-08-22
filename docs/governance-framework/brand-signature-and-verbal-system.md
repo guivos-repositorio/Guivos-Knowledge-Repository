@@ -2,9 +2,9 @@
 id: GKR-BRAND-SIGNATURE-001
 title: Assinatura de Marca e Sistema Verbal da Guivos
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
-last_updated: 2026-08-20
+last_updated: 2026-08-21
 depends_on:
   - GKR-BRAND-ASSET-GOVERNANCE-001
 related:
@@ -13,6 +13,7 @@ related:
   - GPA-000
   - GOG-001
   - GTM-007
+  - GKR-GLOBAL-INTEGRITY-POST300-001
 normative: true
 ---
 
@@ -91,9 +92,9 @@ Regras:
 Do possível ao vivido.
 ```
 
-Papel: `approved_internal` como bordão / linha narrativa recorrente em português.
+Estado: `canonical` como **bordão / linha narrativa recorrente em português**.
 
-`Do possível ao vivido.` pertence ao território verbal da Guivos, mas **não é uma segunda assinatura institucional**.
+`Do possível ao vivido.` pertence ao território verbal oficial da Guivos, mas **não é uma segunda assinatura institucional**. O estado `canonical` resolve sua autoridade verbal e permite os usos públicos definidos abaixo; ele não transforma o bordão em tagline concorrente, marca registrada ou obrigação de uso em toda superfície.
 
 Pode ser utilizado, quando fizer sentido, em:
 
