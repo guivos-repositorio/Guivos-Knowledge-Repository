@@ -7822,6 +7822,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../go-to-market/gtm-009-instagram-presence-and-editorial-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instagram Guivos — Presença e Governança
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -14005,6 +14040,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2.10 Instagram Guivos — Presença e Governança
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -17541,6 +17587,17 @@
     <span class="md-ellipsis">
       
         7.2.9 Piloto em Portugal — Prontidão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2.10 Instagram Guivos — Presença e Governança
       
     </span>
   </a>
@@ -72798,7 +72855,599 @@ uso da assinatura em idioma local ≠ mercado ativo
 <p>Estados permitidos:</p>
 <p><code>not_started → in_assessment → evidence_ready → approved → executed → verified → superseded/retired</code>.</p>
 <h2 id="go-to-market-gtm-008-portugal-pilot-readiness-gates-15-limites">15. Limites<a class="headerlink" href="#go-to-market-gtm-008-portugal-pilot-readiness-gates-15-limites" title="Permanent link">&para;</a></h2>
-<p>Este documento não autoriza orçamento, campanha, contratação, prospecção em escala, entidade local, pagamento real, faturação europeia, coleta específica de dados em Portugal, Porto ou outro país. UXA-102/V5 e Product Engineering permanecem pausados.</p></section></section></section>
+<p>Este documento não autoriza orçamento, campanha, contratação, prospecção em escala, entidade local, pagamento real, faturação europeia, coleta específica de dados em Portugal, Porto ou outro país. UXA-102/V5 e Product Engineering permanecem pausados.</p></section><section class="print-page" id="go-to-market-gtm-009-instagram-presence-and-editorial-governance" heading-number="7.2.10"><h1 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-instagram-guivos-presenca-arquitetura-editorial-e-governanca-v1">Instagram Guivos — Presença, Arquitetura Editorial e Governança v1<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-instagram-guivos-presenca-arquitetura-editorial-e-governanca-v1" title="Permanent link">&para;</a></h1>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-1-finalidade">1. Finalidade<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento governa a presença oficial da Guivos no Instagram em sua arquitetura v1: perfis, públicos, bios, papel dos produtos, distribuição editorial, participantes, direção visual, posts fixados, formatos, frequência, crescimento, relacionamento e governança operacional.</p>
+<p>A arquitetura existe para preservar uma percepção única de marca em diferentes contextos, sem transformar cada produto, participante ou especialidade em um perfil social independente.</p>
+<p>O Instagram é canal de expressão e distribuição. Ele não cria autoridade canônica por si só e não substitui as autoridades de marca, produto, Journey, Media, Business ou Go-to-Market.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-2-arquitetura-oficial-de-perfis">2. Arquitetura oficial de perfis<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-2-arquitetura-oficial-de-perfis" title="Permanent link">&para;</a></h2>
+<p>A presença inicial é composta por três perfis:</p>
+<table>
+<thead>
+<tr>
+<th>Perfil</th>
+<th>Nome exibido</th>
+<th>Audiência principal</th>
+<th>Idioma-base</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@guivosglobal</code></td>
+<td><strong>Guivos</strong></td>
+<td>Pessoas, Coletivos e Organizações em contexto global</td>
+<td>inglês</td>
+</tr>
+<tr>
+<td><code>@guivosbrasil</code></td>
+<td><strong>Guivos Brasil</strong></td>
+<td>Pessoas, Coletivos e Organizações no Brasil</td>
+<td>português</td>
+</tr>
+<tr>
+<td><code>@guivosbusiness</code></td>
+<td><strong>Guivos Business</strong></td>
+<td><strong>Empresas globais</strong></td>
+<td>inglês</td>
+</tr>
+</tbody>
+</table>
+<p><code>global</code> resolve o username do perfil principal e não altera o nome público da marca: o nome exibido permanece <strong>Guivos</strong>, não “Guivos Global”.</p>
+<p>A localização brasileira é uma expressão local da mesma marca. Guivos Business é a expressão B2B especializada para empresas e não uma conta de Organizações da Journey.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-3-taxonomia-de-publicos-e-participantes">3. Taxonomia de públicos e participantes<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-3-taxonomia-de-publicos-e-participantes" title="Permanent link">&para;</a></h2>
+<p>A terminologia pública e interna deve preservar a seguinte separação:</p>
+<div class="highlight"><pre><span></span><code>PESSOA
+→ participante estrutural do ecossistema
+
+COLETIVO
+→ participante estrutural do ecossistema
+
+ORGANIZAÇÃO
+→ participante estrutural do ecossistema / Journey
+
+EMPRESA
+→ público e contraparte do Guivos Business
+</code></pre></div>
+<p>Regras:</p>
+<div class="highlight"><pre><span></span><code>ORGANIZAÇÃO ≠ GUIVOS BUSINESS
+EMPRESA ≠ ORGANIZAÇÃO DO JOURNEY
+EMPRESA NO BUSINESS ≠ NOVO TIPO ESTRUTURAL DE PARTICIPANTE
+</code></pre></div>
+<p>Uma Organização pode participar do ecossistema sem contratar Guivos Business. No contexto Business, <strong>Empresa</strong> identifica a cliente empresarial da relação B2B conforme <code>GPA-004</code>.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-4-produtos-nao-determinam-perfis">4. Produtos não determinam perfis<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-4-produtos-nao-determinam-perfis" title="Permanent link">&para;</a></h2>
+<p>A arquitetura v1 não cria perfis editoriais independentes para:</p>
+<ul>
+<li>Guivos Journey;</li>
+<li>Guivos Travel;</li>
+<li>Guivos Media;</li>
+<li>Guivos Mall;</li>
+<li>Guivos Intelligence;</li>
+<li>Guivos Ads.</li>
+</ul>
+<p>A regra é:</p>
+<div class="highlight"><pre><span></span><code>PRODUTO
+≠ PERFIL SOCIAL OBRIGATÓRIO
+
+PÚBLICO + CONTEXTO + DENSIDADE EDITORIAL
+→ determinam a necessidade de um perfil
+</code></pre></div>
+<p>Journey, Travel, Mall e Intelligence podem aparecer dentro da experiência editorial da Guivos quando forem relevantes ao conteúdo. Ads pertence principalmente ao contexto Business. A existência de um produto não cria obrigação de construir audiência social própria.</p>
+<p>A proteção defensiva de usernames, quando realizada, não equivale à ativação de um canal editorial.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-5-papel-transversal-do-guivos-media">5. Papel transversal do Guivos Media<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-5-papel-transversal-do-guivos-media" title="Permanent link">&para;</a></h2>
+<p><code>GPA-005</code> permanece autoridade sobre Guivos Media.</p>
+<p>No Instagram:</p>
+<div class="highlight"><pre><span></span><code>GUIVOS MEDIA
+↓
+produz / organiza / transforma conteúdo
+↓
+distribui conforme público e contexto
+↓
+@guivosglobal
+@guivosbrasil
+@guivosbusiness
+outros canais autorizados
+</code></pre></div>
+<p>Princípio:</p>
+<blockquote>
+<p><strong>Media produz. O contexto determina onde o conteúdo vive.</strong></p>
+</blockquote>
+<p>Guivos Media não precisa possuir perfil Instagram próprio para cumprir sua função. Uma produção pode alimentar diferentes perfis com narrativas distintas sem transferir ao Media autoridade sobre a finalidade desses perfis.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-6-identidade-estrutural-e-bios-oficiais-v1">6. Identidade estrutural e bios oficiais v1<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-6-identidade-estrutural-e-bios-oficiais-v1" title="Permanent link">&para;</a></h2>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-61-guivosglobal">6.1 <code>@guivosglobal</code><a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-61-guivosglobal" title="Permanent link">&para;</a></h3>
+<p><strong>Nome exibido:</strong> <code>Guivos</code></p>
+<p><strong>Bio:</strong></p>
+<div class="highlight"><pre><span></span><code>Possibility, lived.
+Discover paths, experiences and possibilities that can become part of your life.
+</code></pre></div>
+<p><strong>Link inicial:</strong> <code>guivos.com</code></p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-62-guivosbrasil">6.2 <code>@guivosbrasil</code><a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-62-guivosbrasil" title="Permanent link">&para;</a></h3>
+<p><strong>Nome exibido:</strong> <code>Guivos Brasil</code></p>
+<p><strong>Bio:</strong></p>
+<div class="highlight"><pre><span></span><code>Possibilidade, vivida.
+Descubra caminhos, experiências e possibilidades que podem fazer parte da sua vida.
+</code></pre></div>
+<p><strong>Link inicial:</strong> <code>guivos.com</code></p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-63-guivosbusiness">6.3 <code>@guivosbusiness</code><a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-63-guivosbusiness" title="Permanent link">&para;</a></h3>
+<p><strong>Nome exibido:</strong> <code>Guivos Business</code></p>
+<p><strong>Bio:</strong></p>
+<div class="highlight"><pre><span></span><code>Possibility, lived.
+Helping companies expand possibilities for people.
+</code></pre></div>
+<p><strong>Link inicial:</strong> <code>guivos.com</code>, até existir rota pública oficial de Guivos Business adequada para substituí-lo.</p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-64-regras-de-bio">6.4 Regras de bio<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-64-regras-de-bio" title="Permanent link">&para;</a></h3>
+<p>Por padrão, as bios não devem incluir:</p>
+<ul>
+<li>CTA textual redundante como “Explore Guivos”;</li>
+<li>lista de produtos;</li>
+<li><code>#PossibilityLived</code>;</li>
+<li>“Official account”;</li>
+<li>bandeiras ou excesso de emojis;</li>
+<li>telefone ou e-mail digitados quando os recursos nativos da conta puderem cumprir a função;</li>
+<li>descrições que reduzam a Guivos a tecnologia, viagens, varejo ou outro produto isolado.</li>
+</ul>
+<p>A assinatura deve obedecer integralmente a <code>GKR-BRAND-SIGNATURE-001</code>.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-7-avatar-nome-e-unidade-de-marca">7. Avatar, nome e unidade de marca<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-7-avatar-nome-e-unidade-de-marca" title="Permanent link">&para;</a></h2>
+<p>Os três perfis usam o <strong>mesmo símbolo oficial da Guivos</strong> como avatar, salvo futura decisão visual governada.</p>
+<p>Não criar, por padrão:</p>
+<ul>
+<li>avatar “Guivos Brasil”;</li>
+<li>bandeira brasileira no avatar;</li>
+<li>avatar “Guivos Business”;</li>
+<li>cores proprietárias por perfil;</li>
+<li>símbolos alternativos que convertam os perfis em submarcas independentes.</li>
+</ul>
+<p>Princípio:</p>
+<blockquote>
+<p><strong>Uma marca. Diferentes contextos.</strong></p>
+</blockquote>
+<p>A diferenciação ocorre por username, nome exibido, idioma, bio, público e conteúdo.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-8-papel-de-pessoas-coletivos-e-organizacoes-na-narrativa">8. Papel de Pessoas, Coletivos e Organizações na narrativa<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-8-papel-de-pessoas-coletivos-e-organizacoes-na-narrativa" title="Permanent link">&para;</a></h2>
+<p>Pessoas estão no centro da Guivos, mas não estão isoladas.</p>
+<p>A síntese editorial é:</p>
+<div class="highlight"><pre><span></span><code>PESSOAS
+→ podem descobrir, escolher e viver
+
+COLETIVOS
+→ podem conectar, mobilizar e construir em conjunto
+
+ORGANIZAÇÕES
+→ podem contribuir, apoiar e viabilizar possibilidades
+</code></pre></div>
+<p>Síntese pública recomendada:</p>
+<blockquote>
+<p><strong>Pessoas podem descobrir. Coletivos podem mobilizar. Organizações podem viabilizar.</strong></p>
+</blockquote>
+<p>Esses três participantes:</p>
+<div class="highlight"><pre><span></span><code>≠ três produtos
+≠ três identidades visuais
+≠ três feeds
+≠ três submarcas
+</code></pre></div>
+<p>A diferença deve surgir da história e do contexto, não de códigos visuais rígidos.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-9-papel-das-empresas-no-business">9. Papel das Empresas no Business<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-9-papel-das-empresas-no-business" title="Permanent link">&para;</a></h2>
+<p>No <code>@guivosbusiness</code>, <strong>Empresas</strong> são o público da relação B2B.</p>
+<p>Podem aparecer temas como:</p>
+<ul>
+<li>programas de incentivo;</li>
+<li>Guivos Journey custeado pela empresa;</li>
+<li>acesso e experiências;</li>
+<li>Guivos Intelligence no contexto Business;</li>
+<li>Ads quando pertinente;</li>
+<li>parcerias empresariais;</li>
+<li>conhecimento e insights;</li>
+<li>cases, somente quando houver evidência real.</li>
+</ul>
+<p>Fronteiras obrigatórias:</p>
+<div class="highlight"><pre><span></span><code>EMPRESA CONTRIBUI
+≠ EMPRESA CONTROLA A JORNADA
+
+EMPRESA VIABILIZA
+≠ EMPRESA DEFINE EVOLUÇÃO
+
+EMPRESA CRIA CONDIÇÕES
+≠ EMPRESA DETERMINA O QUE A PESSOA DEVE SE TORNAR
+</code></pre></div>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-10-posts-fixados-oficiais-v1">10. Posts fixados oficiais v1<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-10-posts-fixados-oficiais-v1" title="Permanent link">&para;</a></h2>
+<p>Os três posts fixados funcionam como uma Home mínima de cada perfil.</p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-101-guivosglobal">10.1 <code>@guivosglobal</code><a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-101-guivosglobal" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Possibility, lived.</strong> — essência da marca;</li>
+<li><strong>What is Guivos?</strong> — definição do ecossistema;</li>
+<li><strong>People. Collectives. Organizations.</strong> — participantes e papéis.</li>
+</ol>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-102-guivosbrasil">10.2 <code>@guivosbrasil</code><a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-102-guivosbrasil" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Possibilidade, vivida.</strong> — essência da marca;</li>
+<li><strong>O que é a Guivos?</strong> — definição do ecossistema;</li>
+<li><strong>Pessoas. Coletivos. Organizações.</strong> — participantes e papéis.</li>
+</ol>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-103-guivosbusiness">10.3 <code>@guivosbusiness</code><a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-103-guivosbusiness" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Possibility, lived.</strong> — essência da marca aplicada ao B2B;</li>
+<li><strong>What is Guivos Business?</strong> — definição da oferta e relação Business;</li>
+<li><strong>Expand possibilities for people.</strong> — papel das empresas.</li>
+</ol>
+<p>O conteúdo “What can become part of your life?” / “O que pode fazer parte da sua vida?” permanece válido como publicação editorial inicial, mas não ocupa uma das três posições fixadas na v1.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-11-pilares-editoriais">11. Pilares editoriais<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-11-pilares-editoriais" title="Permanent link">&para;</a></h2>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-111-guivosglobal">11.1 <code>@guivosglobal</code><a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-111-guivosglobal" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Possibilities</strong>;</li>
+<li><strong>Journeys</strong>;</li>
+<li><strong>Experiences</strong>;</li>
+<li><strong>Stories</strong>;</li>
+<li><strong>Perspectives</strong>.</li>
+</ul>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-112-guivosbrasil">11.2 <code>@guivosbrasil</code><a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-112-guivosbrasil" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Possibilidades</strong>;</li>
+<li><strong>Jornadas</strong>;</li>
+<li><strong>Experiências</strong>;</li>
+<li><strong>Histórias</strong>;</li>
+<li><strong>Perspectivas</strong>.</li>
+</ul>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-113-guivosbusiness">11.3 <code>@guivosbusiness</code><a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-113-guivosbusiness" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>People</strong>;</li>
+<li><strong>Programs</strong>;</li>
+<li><strong>Insights</strong>;</li>
+<li><strong>Impact</strong> — somente com linguagem proporcional à evidência disponível;</li>
+<li><strong>Perspectives</strong>.</li>
+</ul>
+<p>Os pilares são territórios editoriais, não módulos de produto.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-12-regra-de-distribuicao-e-localizacao">12. Regra de distribuição e localização<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-12-regra-de-distribuicao-e-localizacao" title="Permanent link">&para;</a></h2>
+<p>O mesmo acontecimento pode alimentar mais de um perfil quando houver perspectiva real para cada público, mas não existe obrigação de replicação.</p>
+<div class="highlight"><pre><span></span><code>MESMO UNIVERSO
+≠ MESMO FEED
+
+MESMO ACONTECIMENTO
+≠ MESMA NARRATIVA
+
+LOCALIZAÇÃO
+≠ TRADUÇÃO
+
+CONTEÚDO MEDIA
+≠ PERFIL MEDIA
+
+PRODUTO
+≠ PILAR EDITORIAL OBRIGATÓRIO
+</code></pre></div>
+<p>Exemplo: uma empresa viabiliza uma experiência para um coletivo.</p>
+<ul>
+<li><code>@guivosglobal</code> pode contar a experiência humana, o coletivo e as possibilidades;</li>
+<li><code>@guivosbrasil</code> pode contextualizar cultura, território e relevância brasileira quando aplicável;</li>
+<li><code>@guivosbusiness</code> pode explicar o papel da empresa, programa, modelo e contribuição.</li>
+</ul>
+<p>O participante não determina sozinho o canal. <strong>A perspectiva da história determina o canal.</strong></p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-13-direcao-visual">13. Direção visual<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-13-direcao-visual" title="Permanent link">&para;</a></h2>
+<p>A Guivos deve parecer humana, contemporânea, global e real.</p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-131-priorizar">13.1 Priorizar<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-131-priorizar" title="Permanent link">&para;</a></h3>
+<ul>
+<li>pessoas reais;</li>
+<li>ambientes reais;</li>
+<li>movimento e descoberta;</li>
+<li>diversidade cultural e geracional;</li>
+<li>experiências e encontros;</li>
+<li>cenários urbanos e naturais;</li>
+<li>cultura e lugares;</li>
+<li>momentos espontâneos;</li>
+<li>luz natural;</li>
+<li>profundidade e espaço visual;</li>
+<li>imagens que permitam perceber possibilidade sem recorrer a clichês de sucesso.</li>
+</ul>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-132-evitar">13.2 Evitar<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-132-evitar" title="Permanent link">&para;</a></h3>
+<ul>
+<li>banco de imagem corporativo óbvio;</li>
+<li>felicidade artificial;</li>
+<li>executivos apertando mãos como linguagem dominante;</li>
+<li>estética genérica de RH, banco ou seguradora;</li>
+<li>excesso de mockups e telas de produto;</li>
+<li>estética motivacional genérica;</li>
+<li>feed dominado por frases em fundos gráficos.</li>
+</ul>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-133-participantes-e-identidade">13.3 Participantes e identidade<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-133-participantes-e-identidade" title="Permanent link">&para;</a></h3>
+<p>Não criar código rígido como:</p>
+<div class="highlight"><pre><span></span><code>Pessoa = uma cor
+Coletivo = outra cor
+Organização = outra cor
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>PARTICIPANTE
+≠ PRODUTO
+
+DIFERENÇA DE PAPEL
+≠ DIFERENÇA DE IDENTIDADE
+</code></pre></div>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-14-uso-da-assinatura-e-hashtag">14. Uso da assinatura e hashtag<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-14-uso-da-assinatura-e-hashtag" title="Permanent link">&para;</a></h2>
+<p><code>Possibility, lived.</code> / <code>Possibilidade, vivida.</code> funcionam como âncoras de marca, não como rodapé obrigatório de todo conteúdo.</p>
+<p>Usar prioritariamente em:</p>
+<ul>
+<li>manifestações institucionais;</li>
+<li>grandes lançamentos;</li>
+<li>campanhas principais;</li>
+<li>conteúdos de marca selecionados;</li>
+<li>encerramentos em que a assinatura acrescente significado.</li>
+</ul>
+<p>Não existe obrigação de usá-la em destino, entrevista, história, oportunidade, conhecimento ou conteúdo cotidiano.</p>
+<p><code>#PossibilityLived</code> permanece hashtag global canônica conforme <code>GKR-BRAND-SIGNATURE-001</code> e pode ser aplicada a conteúdos adequados sem necessidade de estar nas bios.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-15-formatos-editoriais-v1">15. Formatos editoriais v1<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-15-formatos-editoriais-v1" title="Permanent link">&para;</a></h2>
+<p>As proporções são referências de portfólio, não quotas rígidas.</p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-151-global-e-brasil">15.1 Global e Brasil<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-151-global-e-brasil" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>~45% Reels
+~30% carrosséis
+~15% fotografias / posts únicos
+~10% institucional / tipográfico
+</code></pre></div>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-152-business">15.2 Business<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-152-business" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>~40% carrosséis
+~30% Reels
+~20% posts visuais
+~10% institucional / oferta
+</code></pre></div>
+<p>Reels priorizam vida, movimento, histórias e descoberta. Carrosséis priorizam compreensão, perspectivas e conhecimento. Posts únicos devem ser usados quando uma imagem sustenta a narrativa por si só.</p>
+<p>Stories constroem proximidade, atualidade e bastidores. Não existe obrigação de publicar Stories apenas para cumprir frequência.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-16-frequencia-inicial">16. Frequência inicial<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-16-frequencia-inicial" title="Permanent link">&para;</a></h2>
+<p>Baseline v1:</p>
+<div class="highlight"><pre><span></span><code>@guivosglobal
+→ 3 publicações de feed por semana
+
+@guivosbrasil
+→ 3 publicações de feed por semana
+
+@guivosbusiness
+→ 2 publicações de feed por semana inicialmente
+</code></pre></div>
+<p>A frequência deve ser ajustada por capacidade editorial e evidência dos próprios Insights da conta. Qualidade e consistência prevalecem sobre preenchimento artificial de calendário.</p>
+<p>Global e Brasil não precisam publicar nos mesmos dias nem crescer na mesma velocidade.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-17-primeiro-mes-editorial">17. Primeiro mês editorial<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-17-primeiro-mes-editorial" title="Permanent link">&para;</a></h2>
+<p>O primeiro mês deve construir compreensão progressiva:</p>
+<div class="highlight"><pre><span></span><code>SEMANA 1
+→ quem somos
+→ assinatura
+→ definição da Guivos
+→ Pessoas · Coletivos · Organizações
+
+SEMANA 2
+→ tornar possibilidades concretas
+→ lugares, experiências, pessoas, conhecimento e coletivos
+
+SEMANA 3
+→ mostrar o ecossistema ganhando vida
+→ histórias, relações, contexto, Media e perspectivas
+
+SEMANA 4
+→ mostrar conexões entre participantes
+→ Pessoa ↔ Coletivo ↔ Organização
+→ contribuição de Empresas no contexto Business
+</code></pre></div>
+<p>O primeiro mês não precisa explicar todos os produtos. A experiência e a coerência do universo devem preceder a enumeração da infraestrutura interna.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-18-destaques">18. Destaques<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-18-destaques" title="Permanent link">&para;</a></h2>
+<p>Os Destaques são arquitetura potencial e só devem ser ativados quando houver conteúdo real suficiente.</p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-global">Global<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-global" title="Permanent link">&para;</a></h3>
+<p><code>About · Journey · Stories · Experiences · Discover</code></p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-brasil">Brasil<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-brasil" title="Permanent link">&para;</a></h3>
+<p><code>Sobre · Jornada · Histórias · Experiências · Descubra</code></p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-business">Business<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-business" title="Permanent link">&para;</a></h3>
+<p><code>About · Programs · Journey · Insights · Stories</code></p>
+<p>Não criar Destaques vazios para completar visualmente o perfil.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-19-crescimento">19. Crescimento<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-19-crescimento" title="Permanent link">&para;</a></h2>
+<p>A estratégia de crescimento deve priorizar audiência real e relacionamento.</p>
+<p>Não utilizar:</p>
+<ul>
+<li>compra de seguidores;</li>
+<li>compra de likes, comentários ou visualizações;</li>
+<li>follow/unfollow;</li>
+<li>engajamento artificial;</li>
+<li>Collab sem participação real apenas para ampliar alcance.</li>
+</ul>
+<p>Os três perfis podem seguir uns aos outros. Contas externas devem ser seguidas por relação real, relevância editorial ou estratégica, e não para obter follow-back.</p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-191-global-e-brasil">19.1 Global e Brasil<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-191-global-e-brasil" title="Permanent link">&para;</a></h3>
+<p>Priorizar:</p>
+<ul>
+<li>conteúdo original;</li>
+<li>histórias reais;</li>
+<li>Reels de descoberta e experiência;</li>
+<li>Collabs legítimas;</li>
+<li>pessoas e coletivos retratados;</li>
+<li>conteúdos produzidos por Guivos Media;</li>
+<li>amplificação do fundador e parceiros quando pertinente;</li>
+<li>compartilhamentos, salvamentos e interação real.</li>
+</ul>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-192-business">19.2 Business<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-192-business" title="Permanent link">&para;</a></h3>
+<p>Audiência qualificada prevalece sobre volume.</p>
+<p>Além de métricas editoriais, acompanhar progressivamente:</p>
+<ul>
+<li>empresas alcançadas;</li>
+<li>decisores alcançados;</li>
+<li>visitas qualificadas;</li>
+<li>DMs empresariais;</li>
+<li>leads;</li>
+<li>conversas e reuniões originadas;</li>
+<li>parcerias.</li>
+</ul>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-20-governanca-operacional">20. Governança operacional<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-20-governanca-operacional" title="Permanent link">&para;</a></h2>
+<p>A presença social possui uma governança única para os três perfis.</p>
+<p>Papéis conceituais:</p>
+<div class="highlight"><pre><span></span><code>Brand Owner
+→ autoridade final sobre marca e decisões sensíveis
+
+Editorial Lead / Guivos Media
+→ pauta, narrativa, calendário e qualidade editorial
+
+Publisher / Social
+→ publicação, agendamento, marcações e operação
+
+Community / Atendimento
+→ comentários, DMs, encaminhamentos e relacionamento
+</code></pre></div>
+<p>Uma mesma pessoa pode acumular papéis no início sem eliminar a separação de responsabilidades.</p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-201-niveis-de-aprovacao">20.1 Níveis de aprovação<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-201-niveis-de-aprovacao" title="Permanent link">&para;</a></h3>
+<p><strong>Nível 1 — rotina editorial</strong></p>
+<ul>
+<li>histórias;</li>
+<li>experiências;</li>
+<li>lugares;</li>
+<li>conhecimento;</li>
+<li>coletivos;</li>
+<li>Reels e carrosséis de rotina;</li>
+<li>Stories e reposts adequadamente autorizados.</li>
+</ul>
+<p><strong>Nível 2 — marca / institucional</strong></p>
+<ul>
+<li>definição da Guivos;</li>
+<li>assinatura;</li>
+<li>propósito;</li>
+<li>Pessoas, Coletivos e Organizações;</li>
+<li>lançamento de produto;</li>
+<li>posicionamento institucional;</li>
+<li>grandes campanhas.</li>
+</ul>
+<p><strong>Nível 3 — sensível</strong></p>
+<ul>
+<li>jurídico;</li>
+<li>crise reputacional;</li>
+<li>acusações;</li>
+<li>informações financeiras;</li>
+<li>dados pessoais;</li>
+<li>promessas de impacto;</li>
+<li>parceria ainda não anunciada;</li>
+<li>temas de alta sensibilidade institucional.</li>
+</ul>
+<p>O Nível 3 exige escalonamento e aprovação adequada antes de resposta ou publicação.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-21-comentarios-dms-collabs-e-reposts">21. Comentários, DMs, Collabs e reposts<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-21-comentarios-dms-collabs-e-reposts" title="Permanent link">&para;</a></h2>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-211-comentarios">21.1 Comentários<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-211-comentarios" title="Permanent link">&para;</a></h3>
+<p>A voz deve ser:</p>
+<div class="highlight"><pre><span></span><code>humana
+clara
+curta
+respeitosa
+útil
+</code></pre></div>
+<p>Crítica legítima, discordância e experiência negativa não devem ser removidas apenas por serem desfavoráveis.</p>
+<div class="highlight"><pre><span></span><code>CRÍTICA ≠ ATAQUE
+DISCORDÂNCIA ≠ VIOLAÇÃO
+</code></pre></div>
+<p>Spam, fraude, ameaça, exposição indevida de dados, discurso de ódio, assédio ou conteúdo ilegal podem ser moderados conforme a política aplicável.</p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-212-dms">21.2 DMs<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-212-dms" title="Permanent link">&para;</a></h3>
+<p>Global e Brasil podem receber histórias, dúvidas, sugestões, oportunidades, temas de Pessoas, Coletivos e Organizações e demandas de suporte.</p>
+<p>Business deve encaminhar interesse empresarial para fluxo comercial governado:</p>
+<div class="highlight"><pre><span></span><code>EMPRESA
+→ interesse
+→ qualificação
+→ responsável comercial
+→ CRM / processo aplicável
+</code></pre></div>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-213-collabs">21.3 Collabs<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-213-collabs" title="Permanent link">&para;</a></h3>
+<p>Usar quando existir coautoria, participação ou relação real com pessoas, coletivos, organizações, empresas, parceiros, entrevistados ou criadores.</p>
+<h3 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-214-reposts-e-conteudo-de-terceiros">21.4 Reposts e conteúdo de terceiros<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-214-reposts-e-conteudo-de-terceiros" title="Permanent link">&para;</a></h3>
+<p>Repostar por relevância, não para preencher calendário. Preservar autoria, contexto, crédito e autorização quando necessária.</p>
+<p>Marcar <code>@guivos</code> não constitui automaticamente autorização ampla de uso comercial.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-22-seguranca-de-acesso">22. Segurança de acesso<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-22-seguranca-de-acesso" title="Permanent link">&para;</a></h2>
+<p>Não compartilhar senha como mecanismo normal de colaboração.</p>
+<p>Preferir gestão oficial de permissões da infraestrutura Meta e autenticação em dois fatores.</p>
+<div class="highlight"><pre><span></span><code>pessoa saiu da equipe
+→ acesso removido
+
+função mudou
+→ permissão revisada
+
+credencial
+→ não circula em canais informais
+</code></pre></div>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-23-fonte-de-autoridade">23. Fonte de autoridade<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-23-fonte-de-autoridade" title="Permanent link">&para;</a></h2>
+<p>A relação de autoridade é:</p>
+<div class="highlight"><pre><span></span><code>GKR / autoridades canônicas
+↓
+Guivos Media / Editorial / Growth
+↓
+Instagram
+</code></pre></div>
+<p>E nunca o contrário.</p>
+<div class="highlight"><pre><span></span><code>POST PUBLICADO
+≠ NOVA DECISÃO CANÔNICA
+
+PERFIL SOCIAL
+≠ FONTE DE AUTORIDADE DE PRODUTO
+
+CONTEÚDO EDITORIAL
+≠ ALTERAÇÃO AUTOMÁTICA DA ARQUITETURA GUIVOS
+</code></pre></div>
+<p>Se uma publicação exigir nova definição estrutural, essa definição deve ser governada na autoridade correspondente antes de ser tratada como fato institucional.</p>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-24-invariantes-da-arquitetura-instagram-v1">24. Invariantes da arquitetura Instagram v1<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-24-invariantes-da-arquitetura-instagram-v1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GUIVOS GLOBAL
+≠ GUIVOS BRASIL TRADUZIDA
+
+LOCALIZAÇÃO
+≠ TRADUÇÃO
+
+PESSOA NO CENTRO
+≠ PESSOA ISOLADA
+
+COLETIVO
+≠ PRODUTO
+
+ORGANIZAÇÃO
+≠ GUIVOS BUSINESS
+
+EMPRESA
+≠ ORGANIZAÇÃO DO JOURNEY
+
+MEDIA
+≠ PERFIL SOCIAL OBRIGATÓRIO
+
+PRODUTO
+≠ PERFIL
+
+PRODUTO
+≠ PILAR EDITORIAL
+
+MESMO CONTEÚDO
+≠ PUBLICAÇÃO EM TODOS OS PERFIS
+
+ORGANIZAÇÃO VIABILIZA
+≠ ORGANIZAÇÃO CONTROLA
+
+EMPRESA CONTRIBUI
+≠ EMPRESA DEFINE A JORNADA
+
+POSSIBILITY, LIVED.
+≠ TEXTO OBRIGATÓRIO EM TODO POST
+
+INSTAGRAM
+≠ AUTORIDADE CANÔNICA
+</code></pre></div>
+<p>Também permanecem herdados de <code>GKR-BRAND-SIGNATURE-001</code>:</p>
+<div class="highlight"><pre><span></span><code>POSSIBILIDADE ≠ PROMESSA
+POSSÍVEL ≠ GARANTIDO
+VIVIDO ≠ RESULTADO DETERMINADO PELA GUIVOS
+AMPLIAR POSSIBILIDADES ≠ DECIDIR PELA PESSOA
+CONSISTÊNCIA DE MARCA ≠ REPETIÇÃO LITERAL EM TODA SUPERFÍCIE
+</code></pre></div>
+<h2 id="go-to-market-gtm-009-instagram-presence-and-editorial-governance-25-estado-e-fronteiras">25. Estado e fronteiras<a class="headerlink" href="#go-to-market-gtm-009-instagram-presence-and-editorial-governance-25-estado-e-fronteiras" title="Permanent link">&para;</a></h2>
+<p>Estado desta especificação:</p>
+<div class="highlight"><pre><span></span><code>Instagram Guivos v1
+→ arquitetura conceitual e operacional = ACTIVE
+→ perfis definidos = @guivosglobal / @guivosbrasil / @guivosbusiness
+→ bios v1 = ACTIVE
+→ posts fixados v1 = DEFINED
+→ pilares editoriais = DEFINED
+→ direção visual = DEFINED
+→ frequência inicial = BASELINE
+→ calendário do primeiro mês = BASELINE
+→ governança = ACTIVE
+</code></pre></div>
+<p>Esta especificação não:</p>
+<ul>
+<li>cria obrigação de publicar imediatamente;</li>
+<li>prova que qualquer calendário foi executado;</li>
+<li>declara crescimento, alcance, leads ou resultados realizados;</li>
+<li>cria novos produtos;</li>
+<li>altera a ontologia de Pessoa, Coletivo ou Organização;</li>
+<li>altera <code>GPA-004</code> ou <code>GPA-005</code>;</li>
+<li>inicia campanha paga;</li>
+<li>inicia Product Engineering;</li>
+<li>autoriza UXA ou Design;</li>
+<li>transforma recomendações de frequência em contrato imutável.</li>
+</ul>
+<p>Mudanças futuras nos perfis, bios, públicos, papéis, arquitetura editorial ou invariantes exigem nova versão governada deste documento ou autoridade superior aplicável.</p></section></section></section>
                     <section class='print-page md-section' id='section-8' heading-number='8'>
                         <h1>Economia, Planos e Monetização<a class='headerlink' href='#section-8' title='Permanent link'></a>
                         </h1>
@@ -90018,6 +90667,8 @@ Baseline authorization: YES
 .print-site-enumerate-headings #go-to-market-gtm-007-internationalization-and-territorial-governance > h1:before { content: '7.2.8 ' }
 
 .print-site-enumerate-headings #go-to-market-gtm-008-portugal-pilot-readiness-gates > h1:before { content: '7.2.9 ' }
+
+.print-site-enumerate-headings #go-to-market-gtm-009-instagram-presence-and-editorial-governance > h1:before { content: '7.2.10 ' }
 
 .print-site-enumerate-headings #section-8 > h1:before { content: '8 ' }
 .print-site-enumerate-headings #economic-model > h1:before { content: '8.1 ' }
