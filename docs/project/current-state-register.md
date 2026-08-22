@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.40.0
+version: 2.41.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-20
+last_updated: 2026-08-21
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -57,6 +57,8 @@ related:
   - GEA-GRAPH-REFERENCE-001
   - GPA-SPECIALIZED-EXPERIENCE-POLICY-001
   - GKR-BRAND-ASSET-GOVERNANCE-001
+  - GKR-CHRISTIAN-FOUNDATION-001
+  - GKR-INTERNAL-AUTHORITY-BOUNDARY-001
   - GKR-FUNDACAO-GUIVOS-CONCEPT-001
   - GKR-INSTITUTIONAL-LEGAL-ARCHITECTURE-001
   - GKR-INSTITUTIONAL-LEGAL-EVIDENCE-001
@@ -110,6 +112,8 @@ A autoridade de produto do Guivos Intelligence está consolidada em **`GPA-006 2
 
 A cadeia pública da Home Intelligence também está agora convergida: `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0`, `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1`, `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`, `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`, `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0` e `GKR-UX-HOME-INTELLIGENCE-GENINPUT-001 v1.0.0` estão integrados. Intelligence foi incorporada ao handoff v1.3.0 e ao snapshot externo v4. Essa convergência **não cria wireframe/UI/Design, não seleciona modelo de IA e não comprova Neo4j, GraphRAG, Power BI ou APIs operacionais**.
 
+`GKR-CHRISTIAN-FOUNDATION-001 v1.0.0` está integrado como autoridade fundacional normativa da Guivos. O documento registra a essência cristã, o princípio **Evolução com propósito**, a base bíblica convergente e os guardrails entre fé, pessoa, produto, negócio e ação social. Sua finalidade é **interna de governança**, embora permaneça canonicamente armazenado no GKR público com `classification: public` e `authority_profile: public_foundational`. A acessibilidade pública do repositório não transforma essa doutrina em comunicação externa automática; qualquer reutilização externa exige decisão contextual própria.
+
 Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
 ## 2. Estado global
@@ -117,6 +121,7 @@ Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada
 | Elemento | Estado vigente |
 |---|---|
 | Era | GE-2 — Knowledge |
+| Fundamento cristão e doutrina de propósito | **GKR-CHRISTIAN-FOUNDATION-001 v1.0.0 integrado; `Evolução com propósito`; uso interno de governança; armazenamento canônico no GKR; reutilização externa não automática** |
 | Marco funcional | **M7.88 — saída consciente para fronteira externa validada** |
 | Última frente funcional numerada | **UXA-101** |
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária de Planos** |
@@ -399,6 +404,36 @@ O modelo de Domínios de Evolução reforça que contribuição, espiritualidade
 
 `PER-012 — Minha Evolução` permanece explicitamente incompatível com placar global, roda da vida obrigatória ou percentual geral da Pessoa. A D5-C3 reforça período, baseline, natureza da interpretação, confiança e incerteza em vez de score.
 
+### 9.1 Fundamento cristão e doutrina de propósito
+
+`GKR-CHRISTIAN-FOUNDATION-001 v1.0.0` governa o fundamento cristão e a doutrina de propósito da Guivos sob o princípio **Evolução com propósito**.
+
+A autoridade preserva como formulação central que a Guivos **não transforma pessoas**. Seu papel é ampliar condições, percepção, acesso, conexão e possibilidades para que cada pessoa possa fazer escolhas e viver experiências capazes de contribuir para sua própria transformação; como organização de essência cristã, a Guivos espera que essa evolução aconteça com propósito e possa aproximar as pessoas de Deus.
+
+A base bíblica é convergente e complementar, organizada pelas dimensões **Crescer, Direcionar, Despertar, Desenvolver, Discernir e Reconhecer**, sem reduzir a doutrina a um único versículo isolado.
+
+A finalidade do documento é interna:
+
+```text
+primary_use = internal_governance
+classification = public
+authority_profile = public_foundational
+repository_storage = GKR
+external_reuse_automatic = false
+```
+
+A distinção é obrigatória:
+
+```text
+USO INTERNO ≠ CLASSIFICAÇÃO internal
+ACESSIBILIDADE PÚBLICA ≠ DESTINAÇÃO PÚBLICA
+PRESENÇA NO GKR ≠ AUTORIZAÇÃO DE USO EXTERNO
+FÉ ≠ MECANISMO DE CONVERSÃO COMERCIAL
+AMPLIAR POSSIBILIDADES ≠ DECIDIR PELA PESSOA
+```
+
+A integração desta autoridade não altera produto, Home, UX, Design, implementação, jornada funcional, marco M7.88 ou fila UXA. Também não autoriza automaticamente exposição religiosa em superfícies públicas.
+
 ## 10. Arquitetura institucional e Fundação Guivos
 
 `Fundação Guivos` permanece:
@@ -453,6 +488,8 @@ A página pública de Arquitetura do Guivos Journey explicita os nove Domínios 
 D5-C4B é uma autoridade interna de Experience Architecture e não, por si só, autoriza declaração pública de disponibilidade de produto. Validação documental integrada ≠ tela implementada.
 
 `GPA-006 2.0.0` é autoridade de Produto Especializado e não, por si só, autoriza oferta operacional, pricing, IA em produção, dashboard, API, GraphRAG ou benchmark real. A existência posterior da Home Pública e do handoff v4 também não comprova implementação ou publicação.
+
+`GKR-CHRISTIAN-FOUNDATION-001` é autoridade fundacional de **uso interno de governança**. Sua presença no GKR público não o promove automaticamente a Public Canon, copy institucional, campanha, produto ou comunicação externa. Qualquer reutilização externa de seu conteúdo exige decisão contextual própria.
 
 Nenhum texto público pode promover estado superior ao evidenciado nas autoridades internas.
 
@@ -607,6 +644,8 @@ A ressincronização do Guivos Business continua sendo atualização de autorida
 
 A convergência do Guivos Intelligence em `GPA-006 2.0.0` e a posterior convergência de sua Home Pública também são frentes separadas da fila UXA. Elas não criam superfície, transição, SVG, UXA ou marco funcional por esta sincronização.
 
+A integração e sincronização global do Fundamento Cristão também constituem frente de governança fundacional separada da fila UXA. Elas não criam superfície, transição, SVG, UXA, produto, Design ou marco funcional.
+
 ## 15. Preservações finais
 
 - M7.88 permanece o marco funcional;
@@ -666,6 +705,14 @@ A convergência do Guivos Intelligence em `GPA-006 2.0.0` e a posterior converg�
 - Product Source Lock, Narrative, Documento Mestre, Home Source Lock, Handoff e GENINPUT do Intelligence permanecem autoridades distintas e preservadas;
 - `PERCEBER ANTES ≠ PREVER O FUTURO` permanece guardrail explícito;
 - tela, wireframe, UI, protótipo e Design da Home Intelligence não foram iniciados nesta continuidade;
+- `GKR-CHRISTIAN-FOUNDATION-001 v1.0.0` permanece autoridade fundacional normativa da Guivos;
+- o Fundamento Cristão possui finalidade interna de governança e armazenamento canônico no GKR;
+- `classification: public` ≠ finalidade pública; `authority_profile: public_foundational` ≠ Public Canon;
+- presença da doutrina no GKR ≠ autorização automática de uso em Home, campanha, produto ou comunicação externa;
+- `Evolução com propósito` permanece princípio interno fundacional;
+- essência cristã ≠ proselitismo oculto; fé ≠ mecanismo comercial;
+- ampliar possibilidades ≠ decidir pela pessoa;
+- a integração do Fundamento Cristão não inicia UI, Design, implementação ou nova frente funcional;
 - projeção não é realizado;
 - preço não é disposição a pagar;
 - capital não é receita;
@@ -675,6 +722,10 @@ A convergência do Guivos Intelligence em `GPA-006 2.0.0` e a posterior converg�
 - nenhuma etapa autoriza automaticamente a seguinte.
 
 ## 16. Próximo ato governado
+
+A sincronização global do `GKR-CHRISTIAN-FOUNDATION-001` fecha a lacuna entre a autoridade fundacional integrada e o Registro do Estado Atual. O fundamento cristão passa a estar representado transversalmente como autoridade normativa de **uso interno de governança**, preservando seu armazenamento canônico no GKR e a regra de que reutilização externa não é automática.
+
+Esta sincronização **não inicia Home, UI, wireframe, protótipo, Design, implementação, Engenharia de Produto, campanha ou comunicação religiosa externa**.
 
 A sincronização global pós-v4 fecha o ato documental necessário para que o estado transversal volte a representar o estado real do repositório. O Design Delivery v4 está materializado e registrado, porém isso **não inicia qualquer tela, wireframe, UI, protótipo ou exploração visual**.
 

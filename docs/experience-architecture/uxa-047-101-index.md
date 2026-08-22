@@ -132,7 +132,7 @@ A convergência da Home Pública do Guivos Intelligence, o Design Delivery v4 e 
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **2.40.0** |
+| Registro do Estado Atual | **2.41.0** |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
