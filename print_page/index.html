@@ -58696,6 +58696,19 @@ d635b0b319264ce0562cfb85b07288dc3214f002
 <li><a href="#research-market-validation-val-009-status-de-execucao-e-gates-de-evidencia">VAL-009 — Estado de Execução e Gates de Evidência</a> — versão 1.0.0;</li>
 <li><a href="#research-market-validation-val-010-contrato-de-intake-e-registro-de-rodadas">VAL-010 — Contrato de Intake, Evidência e Registro de Rodadas</a> — versão 1.0.0.</li>
 </ul>
+<h2 id="research-market-validation-rodadas-de-execucao">Rodadas de execução<a class="headerlink" href="#research-market-validation-rodadas-de-execucao" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#research-market-validation-rounds-val-rnd-2026-001-b2c-e0-e2">VAL-RND-2026-001 — Rodada B2C 01 · Preparação de Execução E0–E2</a> — <code>planned</code>, preparação da primeira rodada B2C com <code>VAL-002 v2.1.0</code>.</li>
+</ul>
+<p>Estado da rodada atual:</p>
+<div class="highlight"><pre><span></span><code>round_id = VAL-RND-2026-001
+E0 = prepared_not_open
+E1 = evidence_pending
+E2 = planned
+main_collection = not_started
+market_decision = not_authorized
+</code></pre></div>
+<p>A existência da rodada não comprova publicação do instrumento, pré-teste, coleta, base válida ou resultado.</p>
 <h2 id="research-market-validation-sequencia-oficial">Sequência oficial<a class="headerlink" href="#research-market-validation-sequencia-oficial" title="Permanent link">&para;</a></h2>
 <pre  class="mermaid"><code>flowchart LR
     A["Hipótese"] --> B["Pesquisa curta"] --> C["Entrevistas"] --> D["Resultados"] --> E["Dashboard"] --> F["Decisão"] --> G["Ajustes"] --> H["Nova validação"]
@@ -58785,10 +58798,19 @@ resultado B2C ≠ evidência sobre Coletivos ou Organizações
 </ul>
 <p>Confiança operacional, recorrência, retenção, recomendação e pagamento serão validados posteriormente por protótipos, beta e comportamento real.</p>
 <h2 id="research-market-validation-estado-factual-da-execucao">Estado factual da execução<a class="headerlink" href="#research-market-validation-estado-factual-da-execucao" title="Permanent link">&para;</a></h2>
-<p>No checkpoint de 2026-08-08, o GKR não possui evidência integrada suficiente para declarar:</p>
+<p>A preparação da rodada <code>VAL-RND-2026-001</code> altera o estado factual apenas no seguinte limite:</p>
+<div class="highlight"><pre><span></span><code>identidade de rodada = criada
+instrumento canônico = identificado
+plano de pré-teste = preparado
+instrumento efetivamente publicado = não estabelecido
+pré-teste concluído = não
+respostas recebidas/válidas = não estabelecidas
+KPIs/IGV = não calculados
+decisão de mercado = não autorizada
+</code></pre></div>
+<p>O GKR continua sem evidência integrada suficiente para declarar:</p>
 <ul>
-<li>pré-teste concluído;</li>
-<li>versão efetivamente publicada em uma rodada identificada;</li>
+<li>versão efetivamente publicada em superfície operacional;</li>
 <li>período real de aplicação;</li>
 <li>quantidade de respostas recebidas ou válidas;</li>
 <li>KPIs ou IGV calculados;</li>
