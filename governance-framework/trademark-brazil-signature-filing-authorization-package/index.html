@@ -1018,7 +1018,7 @@
   <span class="md-ellipsis">
     
   
-    Evolução e Jornada
+    Fundamento Cristão e Doutrina de Propósito
   
 
     
@@ -1031,6 +1031,133 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundamento Cristão e Doutrina de Propósito
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../christian-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../christian-foundation/biblical-passages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Passagens e Versículos Bíblicos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolução e Jornada
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -11526,10 +11653,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#especificacao-alvo_1" class="md-nav__link">
+  <a href="#especificacao-base-executavel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Especificação-alvo
+        Especificação-base executável
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item-condicional-aiaas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Item condicional — AIaaS
       
     </span>
   </a>
@@ -11749,6 +11887,7 @@
 <li>taxa de referência;</li>
 <li>condição de desconto;</li>
 <li>titular/cadastro;</li>
+<li>gates de execução por item;</li>
 <li>checklist dos quatro pedidos.</li>
 </ul>
 <p>Este documento <strong>não autoriza protocolo, não gera GRU, não paga taxa e não declara pedido depositado</strong>.</p>
@@ -11833,14 +11972,28 @@ CLASSE         42
 APRESENTAÇÃO   Nominativa
 DECISÃO        FILE
 </code></pre></div>
-<h3 id="especificacao-alvo_1">Especificação-alvo<a class="headerlink" href="#especificacao-alvo_1" title="Permanent link">&para;</a></h3>
+<h3 id="especificacao-base-executavel">Especificação-base executável<a class="headerlink" href="#especificacao-base-executavel" title="Permanent link">&para;</a></h3>
 <p>Selecionar, se disponíveis como itens pré-aprovados no e-Marcas vigente:</p>
 <ol>
 <li><code>Software como serviço [SaaS]</code> — referência Nice/base <code>420220</code>;</li>
-<li><code>Plataforma como serviço [PaaS]</code> — referência Nice/base <code>420248</code>;</li>
-<li><code>Inteligência artificial como serviço [AIaaS]</code> — referência Nice/base <code>420315</code>.</li>
+<li><code>Plataforma como serviço [PaaS]</code> — referência Nice/base <code>420248</code>.</li>
 </ol>
-<p><code>AIaaS</code> foi incluído expressamente na NCL 13, versão 2026, classe 42.</p>
+<h3 id="item-condicional-aiaas">Item condicional — AIaaS<a class="headerlink" href="#item-condicional-aiaas" title="Permanent link">&para;</a></h3>
+<p><code>Inteligência artificial como serviço [AIaaS]</code> — referência Nice/base <code>420315</code> — é um <strong>item candidato condicional</strong>.</p>
+<p>Ele somente poderá ser incluído neste pedido se, antes da autorização/protocolo, estiver arquivada evidência de que a atividade efetiva/objeto aplicável do titular oferece suporte suficiente ao item.</p>
+<div class="highlight"><pre><span></span><code>AIaaS classificado na classe 42
+≠ AIaaS automaticamente autorizado
+
+AIaaS_execution_gate
+= EVIDÊNCIA DE ATIVIDADE EFETIVA COMPATÍVEL
+</code></pre></div>
+<p>Se a evidência não estiver disponível ou for insuficiente:</p>
+<div class="highlight"><pre><span></span><code>MANTER classe 42 = FILE
+MANTER SaaS + PaaS
+OMITIR AIaaS
+NÃO inventar atividade
+NÃO atrasar a classe 42 apenas por esse item
+</code></pre></div>
 <p>Não ampliar para consultoria em IA, desenvolvimento para terceiros, blockchain, hospedagem ou outros serviços sem razão própria.</p>
 <h2 id="7-pedido-3-possibilidade-vivida-classe-35">7. Pedido 3 — Possibilidade, vivida. / classe 35<a class="headerlink" href="#7-pedido-3-possibilidade-vivida-classe-35" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>SINAL          Possibilidade, vivida.
@@ -11860,18 +12013,18 @@ CLASSE         42
 APRESENTAÇÃO   Nominativa
 DECISÃO        FILE
 </code></pre></div>
-<p>Usar <strong>a mesma especificação-alvo do Pedido 2</strong>:</p>
+<p>Usar <strong>a mesma especificação-base e o mesmo gate do Pedido 2</strong>:</p>
 <ol>
 <li><code>Software como serviço [SaaS]</code> — <code>420220</code>;</li>
 <li><code>Plataforma como serviço [PaaS]</code> — <code>420248</code>;</li>
-<li><code>Inteligência artificial como serviço [AIaaS]</code> — <code>420315</code>.</li>
+<li><code>Inteligência artificial como serviço [AIaaS]</code> — <code>420315</code> <strong>somente se o gate de atividade efetiva estiver satisfeito</strong>.</li>
 </ol>
 <h2 id="9-rota-de-especificacao-e-codigo-inpi">9. Rota de especificação e código INPI<a class="headerlink" href="#9-rota-de-especificacao-e-codigo-inpi" title="Permanent link">&para;</a></h2>
 <h3 id="rota-preferencial">Rota preferencial<a class="headerlink" href="#rota-preferencial" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>CÓDIGO 389
 Pedido de registro de marca com especificação pré-aprovada — valor por classe
 </code></pre></div>
-<p>Essa rota é a preferida <strong>somente se todos os itens acima estiverem disponíveis e selecionáveis no e-Marcas no momento real de preparação do pedido</strong>.</p>
+<p>Essa rota é a preferida <strong>somente se todos os itens efetivamente autorizados estiverem disponíveis e selecionáveis no e-Marcas no momento real de preparação do pedido</strong>.</p>
 <p>O INPI informa que a lista pré-aprovada do e-Marcas é derivada da Classificação de Nice e listas auxiliares, mas que itens podem ser suprimidos da lista operacional.</p>
 <p>Portanto:</p>
 <div class="highlight"><pre><span></span><code>ITEM CONSTA NA NICE
@@ -11955,6 +12108,7 @@ custo total = R$ 3.520,00
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> sinal exatamente conforme seção correspondente;</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> classe correta;</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> somente especificações autorizadas;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> para classe 42: AIaaS incluído <strong>somente</strong> se houver evidência de atividade efetiva compatível;</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> especificações selecionadas como pré-aprovadas, se código 389;</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> código da GRU coerente com a rota autorizada;</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> desconto confirmado ou negado pelo sistema antes do pagamento;</li>
@@ -11992,7 +12146,7 @@ custo total = R$ 3.520,00
 <td style="text-align: right;">42</td>
 <td>Nominativa</td>
 <td>389</td>
-<td><code>READY_FOR_AUTHORIZATION</code></td>
+<td><code>READY_FOR_AUTHORIZATION_WITH_ITEM_GATE</code></td>
 </tr>
 <tr>
 <td>3</td>
@@ -12008,15 +12162,17 @@ custo total = R$ 3.520,00
 <td style="text-align: right;">42</td>
 <td>Nominativa</td>
 <td>389</td>
-<td><code>READY_FOR_AUTHORIZATION</code></td>
+<td><code>READY_FOR_AUTHORIZATION_WITH_ITEM_GATE</code></td>
 </tr>
 </tbody>
 </table>
+<p><code>READY_FOR_AUTHORIZATION_WITH_ITEM_GATE</code> significa que a aplicação de classe 42 está pronta para decisão humana, mas o item AIaaS somente poderá integrar a especificação se a evidência factual exigida estiver presente. Sem ela, a aplicação continua autorizável com SaaS/PaaS.</p>
 <p>Estado agregado:</p>
 <div class="highlight"><pre><span></span><code>signature_clearance = CLEAR
 signature_filing_decision = FILE
 authorization_package_prepared = true
 preferred_route = INPI_389
+AIaaS_execution_gate = EVIDENCE_REQUIRED
 preferred_total_if_discount_confirmed = R$ 1.760,00
 maximum_total_on_389_without_discount = R$ 3.520,00
 filing_authorized = false
@@ -12043,7 +12199,8 @@ registered = false
 <li>os quatro pedidos acima;</li>
 <li>emissão e pagamento das GRUs;</li>
 <li>protocolo no INPI;</li>
-<li>o teto financeiro aplicável ao cenário confirmado no sistema.</li>
+<li>o teto financeiro aplicável ao cenário confirmado no sistema;</li>
+<li>para as classes 42, se AIaaS está incluído com evidência suficiente ou omitido.</li>
 </ol>
 <p>Antes de qualquer pagamento, o executor deverá informar qual cenário foi confirmado:</p>
 <div class="highlight"><pre><span></span><code>A = código 389 + desconto 50% → R$ 1.760,00
