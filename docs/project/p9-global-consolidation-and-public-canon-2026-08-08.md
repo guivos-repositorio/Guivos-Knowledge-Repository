@@ -1,10 +1,10 @@
 ---
 id: GKR-P9-GLOBAL-CONSOLIDATION-001
 title: Consolidação Global e Public Canon — P9
-status: in-review
-version: 1.0.0
+status: consolidated
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-21
 related:
   - GKR-STATE-001
   - GKR-CANON-MATRIX-001
@@ -14,6 +14,7 @@ related:
   - GTM-007
   - GKR-DATA-PRIVACY-CONSENT-001
   - GKR-FUNDACAO-GUIVOS-CONCEPT-001
+  - GKR-GLOBAL-INTEGRITY-POST300-001
 normative: false
 ---
 
@@ -109,6 +110,8 @@ P9 sincroniza os derivados que devem refletir o estado vigente:
 | P7 | programa territorial integrado; Portugal T1_candidate |
 | Engenharia de Produto | pausada antes de W0-01 |
 
+> Este quadro preserva o **checkpoint histórico imediatamente posterior ao P9**. O estado global corrente posterior é governado por `GKR-STATE-001` e não deve ser inferido desta tabela histórica.
+
 ## 5. Dívidas reais que continuam abertas
 
 P9 não fecha por documentação o que depende de realidade operacional.
@@ -119,7 +122,7 @@ Continuam abertos conforme autoridade temática:
 - PMF e disposição a pagar;
 - POC/provisionamento/produção Neo4j;
 - GraphRAG/GDS/Power BI em produção;
-- registro marcário e controle de ativos específicos não evidenciados;
+- proteção marcária e controle de ativos que ainda dependam de execução/evidência específica;
 - escolha e constituição jurídica de eventual veículo social;
 - superfícies legais e controles de privacidade efetivamente publicados/operacionais;
 - inventário real de dados, cookies, SDKs, operadores e transferências;
@@ -130,15 +133,13 @@ Continuam abertos conforme autoridade temática:
 - UXA-102/V5;
 - Product Engineering.
 
-## 6. Critério de encerramento do programa amplo
+## 6. Encerramento do programa amplo
 
-O programa P0–P9 pode ser declarado documentalmente consolidado quando:
+Os critérios definidos pelo P9 foram posteriormente satisfeitos e o programa P0–P9 é tratado pelo GKR como **documentalmente consolidado**.
 
-1. P9 estiver integrado à `main`;
-2. Semantic State Validation estiver verde no head final;
-3. Mechanical Validation estiver verde no head final;
-4. Public Canon e matriz transversal apontarem para as autoridades correntes;
-5. nenhum gap de evidência tiver sido transformado em fato para “fechar” o programa.
+Essa consolidação não deve ser confundida com fechamento dos gaps empíricos, tecnológicos, jurídicos ou operacionais que permanecem em autoridades próprias.
+
+A reconciliação pós-PR #300 não reabre o P9; ela corrige derivados globais que voltaram a apresentar deriva após novas decisões posteriores.
 
 ## 7. Regra pós-P9
 

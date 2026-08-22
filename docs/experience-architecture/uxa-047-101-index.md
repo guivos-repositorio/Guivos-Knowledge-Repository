@@ -2,13 +2,14 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-101
 status: active
-version: 2.16.0
+version: 2.17.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-20
+last_updated: 2026-08-21
 depends_on:
   - GKR-STATE-001
   - UXA-101
 related:
+  - GKR-GLOBAL-INTEGRITY-POST300-001
   - UXA-047
   - UXA-055
   - UXA-070
@@ -37,7 +38,7 @@ normative: false
 
 Este índice preserva a rastreabilidade das frentes funcionais recentes. A UXA-100-A4 é subfrente de reconciliação da UXA-100 e não cria UXA-102 nem novo marco funcional.
 
-`PAS-001-DOMAIN-MODEL-001`, D4, D5 e a sincronização das Homes públicas são autoridades/frentes não numeradas. Elas **não constituem nova UXA nem alteram a última UXA funcional numerada**, que permanece UXA-101.
+`PAS-001-DOMAIN-MODEL-001`, D4, D5, a convergência das Homes públicas, a governança de marca/proteção marcária, o Fundamento Cristão e a Reconciliação Global de Integridade pós-#300 são autoridades/frentes não numeradas. Elas **não constituem nova UXA nem alteram a última UXA funcional numerada**, que permanece UXA-101.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -126,20 +127,31 @@ Complementos da UXA-100:
 - [D5-C4A](d5-c4a-direction-movement-evolution-handoff-contract.md) — Hoje recorrente reformulado/revalidado e contrato semântico de `TRN-008..013`, sem promoção;
 - [D5-C4B](d5-c4b-direction-movement-evolution-integrated-handoff-validation.md) — validação individual integrada de `TRN-008..013`; seis ligações promovidas no limite documental.
 
-A convergência da Home Pública do Guivos Intelligence, o Design Delivery v4 e a sincronização global pós-v4 também são frentes não numeradas. Elas não alteram a numeração UXA, não retomam Engenharia e não produzem novo artefato visual.
+Também são frentes não numeradas posteriores, em suas autoridades próprias:
+
+- convergência das oito Homes públicas;
+- Design Handoff e Design Delivery v4;
+- ressincronização do Guivos Business;
+- convergência do Guivos Intelligence e de sua Home;
+- assinatura e sistema verbal da marca;
+- proteção marcária e preparação de filing;
+- Fundamento Cristão e Doutrina de Propósito;
+- Reconciliação Global de Integridade pós-PR #300.
+
+Nenhuma dessas frentes altera a numeração UXA, retoma Engenharia ou inicia UXA-102.
 
 ## Estado sincronizado
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **2.41.0** |
+| Registro do Estado Atual | **2.42.0** |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
 | Homes públicas convergidas | **8** |
 | Design Delivery vigente | **v4.0.0 — 39 arquivos externos** |
 | Snapshot externo v4 | **`dfed980d8cfb39bbe4694e58d7c86ca0692266dc`** |
-| SVGs funcionais pré-existentes | **121 — 121 validados / 0 pendentes** |
+| SVGs funcionais | **121 — 121 validados / 0 pendentes** |
 | associações | **121** |
 | perfis | **34** |
 | superfícies/estados/fronteiras | **57** |
@@ -147,6 +159,6 @@ A convergência da Home Pública do Guivos Intelligence, o Design Delivery v4 e 
 | IDs com referência visual | **45 de 57** |
 | responsabilidades sem SVG | **10** |
 | Engenharia de Produto | **pausada antes de W0-01** |
-| Design da Home Intelligence | **não iniciado** |
+| Design automático | **não iniciado** |
 
-D5-C4B permanece a última frente funcional não numerada do Journey. O pós-v4 é uma sincronização documental transversal e não cria `UXA-102/V5`.
+D5-C4B permanece a última frente funcional não numerada do Journey. A reconciliação pós-#300 é documental e transversal; não cria `UXA-102/V5` nem novo marco funcional.
