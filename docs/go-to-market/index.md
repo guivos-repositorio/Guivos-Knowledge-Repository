@@ -2,9 +2,9 @@
 id: GTM-000
 title: Guivos Go-to-Market, Growth & Capital
 status: draft
-version: 0.5.0
+version: 0.6.0
 owner: Guivos Strategy & Growth
-last_updated: 2026-08-08
+last_updated: 2026-08-22
 related:
   - GEM-003
   - GEM-004-A1
@@ -149,6 +149,7 @@ A meta de `500 Parcerias Estratégicas ativas` em M60 não representa 500 Organi
 | `GTM-006` | [Horizontes de Meta e Marcos de Crescimento](gtm-006-target-horizons-and-milestones.md) | curto M0–M12, médio M13–M36 e longo M37–M60, com checkpoints |
 | `GTM-007` | [Governança de Internacionalização e Programa Territorial](gtm-007-internationalization-and-territorial-governance.md) | estados T0–T9, readiness e separação entre intenção, piloto e mercado ativo |
 | `GTM-008` | [Portugal — Gates de Prontidão, Piloto e Escala](gtm-008-portugal-pilot-readiness-gates.md) | gates PT0–PT9 para Lisboa, Porto e futura replicação europeia |
+| `GTM-009` | [Instagram Guivos — Presença, Arquitetura Editorial e Governança v1](gtm-009-instagram-presence-and-editorial-governance.md) | três perfis oficiais, públicos, bios, distribuição editorial, crescimento e governança social |
 
 ## 7. Públicos consumidores
 
