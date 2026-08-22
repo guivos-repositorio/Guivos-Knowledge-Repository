@@ -8,7 +8,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **2.40.0** |
+| GKR-STATE-001 | **2.41.0** |
 | Era | GE-2 — Knowledge |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
