@@ -2,14 +2,16 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-101
 status: active
-version: 2.17.0
+version: 2.18.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-21
+last_updated: 2026-08-22
 depends_on:
   - GKR-STATE-001
   - UXA-101
 related:
   - GKR-GLOBAL-INTEGRITY-POST300-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
   - UXA-047
   - UXA-055
   - UXA-070
@@ -38,7 +40,7 @@ normative: false
 
 Este índice preserva a rastreabilidade das frentes funcionais recentes. A UXA-100-A4 é subfrente de reconciliação da UXA-100 e não cria UXA-102 nem novo marco funcional.
 
-`PAS-001-DOMAIN-MODEL-001`, D4, D5, a convergência das Homes públicas, a governança de marca/proteção marcária, o Fundamento Cristão e a Reconciliação Global de Integridade pós-#300 são autoridades/frentes não numeradas. Elas **não constituem nova UXA nem alteram a última UXA funcional numerada**, que permanece UXA-101.
+`PAS-001-DOMAIN-MODEL-001`, D4, D5, a convergência das Homes públicas, a governança de marca/proteção marcária, o Fundamento Cristão, a Reconciliação Global de Integridade pós-#300 e a Autoridade Pública da Marca e do Fundador são autoridades/frentes não numeradas. Elas **não constituem nova UXA nem alteram a última UXA funcional numerada**, que permanece UXA-101.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -136,7 +138,9 @@ Também são frentes não numeradas posteriores, em suas autoridades próprias:
 - assinatura e sistema verbal da marca;
 - proteção marcária e preparação de filing;
 - Fundamento Cristão e Doutrina de Propósito;
-- Reconciliação Global de Integridade pós-PR #300.
+- Reconciliação Global de Integridade pós-PR #300;
+- Autoridade Pública da Marca e Papel do Fundador;
+- Reconciliação Derivada da Autoridade Pública da Marca e do Fundador.
 
 Nenhuma dessas frentes altera a numeração UXA, retoma Engenharia ou inicia UXA-102.
 
@@ -144,7 +148,7 @@ Nenhuma dessas frentes altera a numeração UXA, retoma Engenharia ou inicia UXA
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **2.42.0** |
+| Registro do Estado Atual | **2.43.0** |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
@@ -161,4 +165,4 @@ Nenhuma dessas frentes altera a numeração UXA, retoma Engenharia ou inicia UXA
 | Engenharia de Produto | **pausada antes de W0-01** |
 | Design automático | **não iniciado** |
 
-D5-C4B permanece a última frente funcional não numerada do Journey. A reconciliação pós-#300 é documental e transversal; não cria `UXA-102/V5` nem novo marco funcional.
+D5-C4B permanece a última frente funcional não numerada do Journey. As reconciliações pós-#300 e de autoridade pública do fundador são documentais e transversais; não criam `UXA-102/V5` nem novo marco funcional.
