@@ -2,13 +2,14 @@
 id: GKR-BRAND-SIGNATURE-001
 title: Assinatura de Marca e Sistema Verbal da Guivos
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
-last_updated: 2026-08-21
+last_updated: 2026-08-22
 depends_on:
   - GKR-BRAND-ASSET-GOVERNANCE-001
 related:
   - GKR-BRAND-DIGITAL-ASSETS-INDEX-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-001
   - GKR-OFFICIAL-NAMING-AUTHORITY-001
   - GPA-000
   - GOG-001
@@ -31,7 +32,9 @@ A tese que sustenta a assinatura é:
 
 > **A Guivos existe no espaço entre aquilo que pode ser e aquilo que passa a fazer parte da vida.**
 
-A Guivos não ocupa esse espaço como determinadora de resultados. Seu papel é ampliar possibilidades e tornar caminhos, conexões, inteligência, experiências e oportunidades mais acessíveis ou perceptíveis, preservando a autonomia das pessoas.
+A Guivos não ocupa esse espaço como determinadora de resultados. Seu papel é ampliar percepção, conexão, contexto e acesso para aproximar pessoas de caminhos, experiências, conhecimento e oportunidades que possam fazer sentido para suas vidas, preservando sua autonomia.
+
+Muitas possibilidades já existem antes da atuação da Guivos. O valor da Guivos pode estar em torná-las mais visíveis, conectadas, contextualizadas ou acessíveis, e não em se apresentar como autora necessária de cada possibilidade.
 
 ## 3. Assinatura canônica global
 
@@ -86,30 +89,7 @@ Regras:
 3. uma hashtag local ou de campanha pode existir mediante decisão específica, mas não substitui `#PossibilityLived` como ativo global;
 4. uso de hashtag não comprova disponibilidade registral, exclusividade jurídica ou titularidade.
 
-## 7. Bordão e linha narrativa recorrente
-
-```text
-Do possível ao vivido.
-```
-
-Estado: `canonical` como **bordão / linha narrativa recorrente em português**.
-
-`Do possível ao vivido.` pertence ao território verbal oficial da Guivos, mas **não é uma segunda assinatura institucional**. O estado `canonical` resolve sua autoridade verbal e permite os usos públicos definidos abaixo; ele não transforma o bordão em tagline concorrente, marca registrada ou obrigação de uso em toda superfície.
-
-Pode ser utilizado, quando fizer sentido, em:
-
-- campanhas;
-- manifestos;
-- storytelling;
-- conteúdos editoriais e sociais;
-- lançamentos e ativações;
-- narrativas que desejem tornar explícito o movimento entre possibilidade e experiência vivida.
-
-Por padrão, o bordão não deve ser empilhado imediatamente com `Possibilidade, vivida.` ou `Possibility, lived.` em uma mesma peça como se fossem duas taglines concorrentes.
-
-A forma `#DoPossivelAoVivido` pode ser avaliada futuramente como hashtag de campanha em português, mas **não é hashtag global canônica nesta versão**.
-
-## 8. Arquitetura verbal
+## 7. Arquitetura verbal
 
 ```text
 TESE DA MARCA
@@ -129,26 +109,21 @@ Possibilidade, vivida.
 
 HASHTAG
 #PossibilityLived
-
-        ↓ expansão narrativa PT quando pertinente
-
-BORDÃO
-Do possível ao vivido.
 ```
 
 Cada camada possui função distinta. A repetição entre camadas deve reforçar a mesma verdade de marca, não multiplicar slogans.
 
-## 9. Invariantes semânticos
+## 8. Invariantes semânticos
 
 ```text
 POSSIBILIDADE ≠ PROMESSA
 POSSÍVEL ≠ GARANTIDO
 VIVIDO ≠ RESULTADO DETERMINADO PELA GUIVOS
 AMPLIAR POSSIBILIDADES ≠ DECIDIR PELA PESSOA
+AMPLIAR POSSIBILIDADES ≠ GUIVOS CRIAR NECESSARIAMENTE TODAS AS POSSIBILIDADES
 ASSINATURA ≠ DESCRIÇÃO DE PRODUTO
 ASSINATURA ≠ PROMESSA DE RESULTADO
 TECNOLOGIA ≠ PROPÓSITO
-BORDÃO ≠ SEGUNDA ASSINATURA
 LOCALIZAÇÃO ≠ REESCRITA LIVRE DA MARCA
 ASSINATURA DA MARCA-MÃE ≠ SLOGAN OBRIGATÓRIO DE PRODUTO
 CONSISTÊNCIA DE MARCA ≠ REPETIÇÃO LITERAL EM TODA SUPERFÍCIE
@@ -157,7 +132,7 @@ USO RECOMENDADO NA HOME PESSOA ≠ POSIÇÃO VISUAL DEFINIDA
 
 A assinatura deve permanecer válida independentemente da evolução, criação, consolidação ou retirada de produtos específicos do ecossistema.
 
-## 10. Regra global de localização
+## 9. Regra global de localização
 
 A Guivos adota uma assinatura global única com localizações linguísticas controladas.
 
@@ -180,7 +155,7 @@ Não se deve produzir tradução palavra por palavra quando ela soar artificial.
 
 Nesta versão, somente inglês e português são canônicos. Espanhol, italiano, francês, alemão e demais idiomas dependem de validação linguística por falantes nativos, adequação cultural e decisão específica antes de se tornarem oficiais.
 
-## 11. Regras de uso
+## 10. Regras de uso
 
 A assinatura:
 
@@ -192,7 +167,7 @@ A assinatura:
 - não cria slogans próprios para Journey, Mall, Travel, Business, Media, Intelligence ou Ads;
 - deve preservar a mesma grafia e pontuação nas aplicações institucionais textuais.
 
-### 11.1 Aplicação por superfície
+### 10.1 Aplicação por superfície
 
 A propagação da assinatura segue o princípio:
 
@@ -215,6 +190,28 @@ A regra de Home Pessoa não cria obrigação equivalente para Journey, Intellige
 
 Este documento não define lockup visual, tipografia, tamanho, posição, cor, animação, áudio ou qualquer outro tratamento de identidade visual.
 
+## 11. Relação com a autoridade pública do fundador
+
+A assinatura pessoal e autoral do fundador é governada por `GKR-BRAND-PUBLIC-AUTHORITY-001`.
+
+```text
+Possibility, lived.
+→ assinatura institucional global da Guivos
+
+Possibilidade, vivida.
+→ versão institucional oficial em português
+
+#PossibilityLived
+→ hashtag institucional global da Guivos
+
+Do possível ao vivido.
+→ assinatura pessoal e autoral do fundador
+```
+
+`Do possível ao vivido.` não constitui assinatura, segunda assinatura, bordão ou linha narrativa institucional da Guivos.
+
+A relação conceitual entre os ativos preserva coerência entre fundador e marca sem confundir suas autoridades.
+
 ## 12. Relação com a governança de marca
 
 Nos termos de `GKR-BRAND-ASSET-GOVERNANCE-001`:
@@ -230,7 +227,7 @@ A eventual proteção jurídica da assinatura e de ativos associados exige proce
 
 ## 13. Próximos gates
 
-Este documento fecha a decisão verbal inicial da assinatura e sua regra de propagação por superfície. Permanecem separados:
+Este documento fecha a decisão verbal vigente da assinatura e sua regra de propagação por superfície. Permanecem separados:
 
 1. validação linguística nativa para novos idiomas;
 2. busca jurídica/registral por jurisdição relevante;
@@ -238,6 +235,7 @@ Este documento fecha a decisão verbal inicial da assinatura e sua regra de prop
 4. definição futura de regras visuais da assinatura, se autorizada;
 5. canonicalização de novas localizações somente após validação;
 6. eventual aprovação de hashtags locais ou de campanha;
-7. materialização visual da assinatura na Home Pessoa somente em gate de Design autorizado.
+7. materialização visual da assinatura na Home Pessoa somente em gate de Design autorizado;
+8. reconciliação de derivados antigos que ainda utilizem ativos verbais em função incompatível com esta autoridade.
 
 Nenhum desses gates é iniciado automaticamente por este registro.
