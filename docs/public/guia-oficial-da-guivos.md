@@ -2,9 +2,9 @@
 id: GOG-001
 title: Guia Oficial da Guivos
 status: public-canon
-version: 5.1.0
+version: 5.2.0
 owner: Guivos
-last_updated: 2026-08-20
+last_updated: 2026-08-22
 classification: Documento Institucional Público
 source: Derived from GKR Canon
 update_cycle: Continuous
@@ -20,8 +20,8 @@ update_cycle: Continuous
 | Finalidade | Explicar publicamente o que é a Guivos, como o ecossistema é organizado, seus princípios e seus limites de maturidade |
 | Público | Pessoas, Coletivos, Organizações, clientes, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados |
 | Responsável | Guivos |
-| Versão | 5.1.0 |
-| Última atualização | 20/08/2026 |
+| Versão | 5.2.0 |
+| Última atualização | 22/08/2026 |
 | Status | Public Canon |
 | Fonte | Guivos Knowledge Repository |
 
@@ -85,9 +85,25 @@ A assinatura conecta o que é possível àquilo que pode ser vivido. Ela não re
 
 A hashtag institucional global associada é **#PossibilityLived**.
 
-**Do possível ao vivido.** é um bordão / linha narrativa recorrente em português. Ele pertence ao território verbal da Guivos, mas não constitui uma segunda assinatura institucional.
-
 A redação, pontuação, localização e regras de aplicação são governadas por [GKR-BRAND-SIGNATURE-001 — Assinatura de Marca e Sistema Verbal da Guivos](../governance-framework/brand-signature-and-verbal-system.md).
+
+## Autoridade pública do fundador
+
+**Guilherme Oliveira** é o fundador e a principal referência humana pública inicial da Guivos.
+
+A expressão **Do possível ao vivido.** pertence à sua identidade pessoal e autoral. Ela não constitui assinatura, segunda assinatura, bordão ou linha narrativa institucional da Guivos.
+
+A presença do fundador torna reconhecíveis a origem, a visão, os princípios e a construção da empresa sem substituir a identidade, a governança ou a autoridade institucional da própria Guivos.
+
+```text
+GUIVOS ≠ FUNDADOR
+FALA PESSOAL ≠ POSICIONAMENTO INSTITUCIONAL
+DO POSSÍVEL AO VIVIDO. → FUNDADOR
+POSSIBILITY, LIVED. → GUIVOS
+POSSIBILIDADE, VIVIDA. → GUIVOS
+```
+
+A autoridade específica é [GKR-BRAND-PUBLIC-AUTHORITY-001 — Autoridade Pública da Marca e Papel do Fundador](../governance-framework/brand-public-authority-and-founder-role.md).
 
 ---
 
@@ -392,7 +408,7 @@ O Public Canon não deve ser lido como promessa de:
 
 O GKR possui uma arquitetura funcional detalhada da experiência até a **UXA-101**, encerrando o fluxo controlável pela Guivos até a fronteira externa de uma oportunidade.
 
-Esse trabalho inclui 118 referências visuais, registros granulares de superfícies e transições e uma taxonomia governada de participantes, produtos e planos.
+Esse trabalho inclui 121 referências visuais, registros granulares de superfícies e transições e uma taxonomia governada de participantes, produtos e planos.
 
 Isso é uma maturidade documental/arquitetural. **Não equivale a afirmar que toda essa arquitetura esteja implementada em software e operando em produção.**
 
