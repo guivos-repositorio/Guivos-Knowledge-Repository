@@ -2,19 +2,21 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.83.0
+version: 12.84.0
 owner: Guivos
-last_updated: 2026-08-21
+last_updated: 2026-08-22
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.83.0
+  - ROADMAP-12.84.0
   - GKR-GLOBAL-INTEGRITY-POST300-001
   - GPA-004
   - GPA-006
   - GIA-000
   - GKR-BRAND-SIGNATURE-001
   - GKR-BRAND-DIGITAL-ASSETS-INDEX-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
   - GKR-CHRISTIAN-FOUNDATION-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - UXA-070
@@ -31,9 +33,9 @@ normative: false
 
 ## 1. Autoridade
 
-Este painel resume o portfólio vigente. O estado oficial é declarado por `GKR-STATE-001 v2.42.0`.
+Este painel resume o portfólio vigente. O estado oficial é declarado por `GKR-STATE-001 v2.43.0`.
 
-A versão 12.83.0 substitui o painel antigo que ainda refletia M7.72/UXA-071 como estado corrente. O checkpoint histórico M7.72 permanece preservado neste documento apenas para rastreabilidade e não compete com M7.88.
+A versão 12.84.0 preserva o estado funcional da versão 12.83.0 e incorpora a autoridade pública do fundador, a separação entre assinatura pessoal e institucional e a reconciliação nominal da Home Pública.
 
 ```text
 PAINEL ATUALIZADO ≠ APAGAMENTO DO CHECKPOINT ANTERIOR
@@ -55,6 +57,8 @@ PAINEL ATUALIZADO ≠ APAGAMENTO DO CHECKPOINT ANTERIOR
 | Transições | **66** | registro granular |
 | Homes públicas | **8 convergidas** | Design Handoff |
 | Design Delivery | **v4 — 39 arquivos externos** | snapshot v4 |
+| Autoridade pública humana | **Guilherme Oliveira — Founder of Guivos** | GKR-BRAND-PUBLIC-AUTHORITY-001 |
+| Public Canon | **GOG-001 5.2.0** | documentação pública |
 
 ## 3. Participantes e produtos
 
@@ -112,6 +116,18 @@ DESIGN DELIVERY v4 = emitido
 DESIGN PRODUZIDO AUTOMATICAMENTE = não
 ```
 
+Na Home Pública da Pessoa:
+
+```text
+Movimento 06 — Da Possibilidade à Experiência
+= rótulo vigente
+
+função
+= possibilidade → escolha → experiência → novo contexto
+```
+
+A alteração é nominal e não reabre a arquitetura narrativa.
+
 ## 6. Business
 
 `GPA-004 v1.6.0`.
@@ -145,15 +161,30 @@ Neo4j permanece `reference_selected`, não produção comprovada.
 
 A Home Intelligence está convergida documentalmente e incluída no snapshot v4; nenhum Design foi produzido por essa convergência.
 
-## 8. Marca e proteção marcária
+## 8. Marca, autoridade pública e proteção marcária
 
-Sistema verbal:
+Sistema verbal institucional:
 
 ```text
-Possibility, lived.      = canonical
-Possibilidade, vivida.   = canonical
-#PossibilityLived        = canonical
-Do possível ao vivido.   = bordão canônico, não segunda assinatura
+Possibility, lived.      = assinatura global canônica da Guivos
+Possibilidade, vivida.   = versão PT canônica da Guivos
+#PossibilityLived        = hashtag global canônica da Guivos
+```
+
+Autoridade pública do fundador:
+
+```text
+Guilherme Oliveira
+→ Founder of Guivos
+→ principal referência humana pública inicial
+
+Do possível ao vivido.
+→ assinatura pessoal e autoral do fundador
+→ não segunda assinatura da Guivos
+
+Lucas 2:52
+→ referência bíblica deliberada na bio pessoal do fundador
+→ não Public Canon religioso automático
 ```
 
 GUIVOS possui portfólio reconciliado em vigor nas classes 09, 35, 39 e 42.
@@ -169,7 +200,7 @@ filing_authorized = false
 
 AIaaS é item condicional das aplicações de classe 42 e depende de evidência de atividade efetiva/objeto compatível antes de inclusão no protocolo.
 
-Próximo gate: **Human Filing Authorization**.
+Próximo gate marcário: **Human Filing Authorization**.
 
 ## 9. Fundamento Cristão
 
@@ -185,6 +216,8 @@ external_reuse_automatic = false
 
 A base bíblica possui seis conjuntos de passagens e índice próprio de localização.
 
+A presença de Lucas 2:52 na bio pessoal do fundador não reduz essa base convergente a um único versículo nem cria reutilização institucional externa automática.
+
 ## 10. Mercado, jurídico e operação
 
 Permanecem dependentes de evidência real:
@@ -196,7 +229,8 @@ Permanecem dependentes de evidência real:
 - constituição jurídica de eventual veículo social;
 - piloto internacional real;
 - cobrança/gateway;
-- implementação técnica dos produtos.
+- implementação técnica dos produtos;
+- implantação operacional do perfil e conteúdo do fundador.
 
 ## 11. Checkpoint histórico M7.72 preservado
 
@@ -253,6 +287,7 @@ EVIDÊNCIA → VAL
 TECNOLOGIA → ADR/GEA/Engineering
 MARCA → Brand/Trademark
 FILING → Human Filing Authorization
+AUTORIDADE DO FUNDADOR → GKR-BRAND-PUBLIC-AUTHORITY-001
 JURÍDICO → gates institucionais
 PRIVACIDADE/OPERAÇÃO → P6/LS/OT
 TERRITÓRIO → P7/T/PT
