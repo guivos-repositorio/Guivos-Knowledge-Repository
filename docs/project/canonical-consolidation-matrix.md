@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 3.1.0
+version: 3.2.0
 owner: Guivos
-last_updated: 2026-08-21
+last_updated: 2026-08-22
 depends_on:
   - GKR-STATE-001
 related:
@@ -18,6 +18,8 @@ related:
   - GEM-005-A1
   - GKR-BRAND-SIGNATURE-001
   - GKR-BRAND-DIGITAL-ASSETS-INDEX-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
   - GKR-CHRISTIAN-FOUNDATION-001
   - GKR-FUNDACAO-GUIVOS-CONCEPT-001
   - GKR-DATA-PRIVACY-CONSENT-001
@@ -31,7 +33,7 @@ normative: false
 
 Esta matriz oferece leitura transversal compacta das autoridades correntes. Ela não substitui `GKR-STATE-001` nem a autoridade temática específica.
 
-A edição 3.1.0 corrige a deriva acumulada após o P9 e sincroniza a matriz com `GKR-STATE-001 v2.42.0`, preservando linhas válidas da edição 3.0.0 que continuam relevantes para leitura transversal.
+A edição 3.2.0 sincroniza a matriz com `GKR-STATE-001 v2.43.0`, preservando as linhas válidas da edição 3.1.0 e incorporando a autoridade pública do fundador, sua separação do sistema verbal institucional e a reconciliação nominal da Home Pública.
 
 ```text
 ATUALIZAÇÃO DA MATRIZ ≠ APAGAMENTO DE LINHA VÁLIDA
@@ -53,12 +55,13 @@ ATUALIZAÇÃO DA MATRIZ ≠ APAGAMENTO DE LINHA VÁLIDA
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE | **2.42.0** |
+| GKR-STATE | **2.43.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — não iniciada** |
 | Product Engineering | **pausada antes de W0-01** |
+| Public Canon | **GOG-001 5.2.0** |
 
 ## 4. Fundação, propósito e participantes
 
@@ -132,6 +135,16 @@ GKR-UX-HOMES-DESIGN-DELIVERY-001 = v4.0.0
 snapshot v4 = 31 fontes + 8 guias = 39 arquivos
 ```
 
+Na Home Pública da Pessoa:
+
+```text
+Movimento 06 — Da Possibilidade à Experiência
+→ rótulo vigente
+→ função semântica preservada
+```
+
+`Do Possível ao Vivido` permanece apenas como rótulo histórico anterior nesse contexto e não deve ser materializado como ativo institucional da Home.
+
 `Design Delivery emitido ≠ Design produzido ≠ implementação ≠ publicação`.
 
 ## 8. Guivos Business
@@ -197,16 +210,29 @@ PERCEBER ANTES ≠ PREVER O FUTURO
 
 `Grafo Global ≠ Guivos Intelligence ≠ Neo4j ≠ Guivos.ai ≠ Power BI`.
 
-## 11. Marca e assinatura
+## 11. Marca, assinatura e autoridade pública
 
-Autoridade verbal:
+Autoridade verbal institucional:
 
 | Ativo | Estado |
 |---|---|
-| `Possibility, lived.` | **canonical** |
-| `Possibilidade, vivida.` | **canonical** |
-| `#PossibilityLived` | **canonical** |
-| `Do possível ao vivido.` | **canonical como bordão/linha narrativa; não segunda assinatura** |
+| `Possibility, lived.` | **canonical — assinatura global da Guivos** |
+| `Possibilidade, vivida.` | **canonical — versão PT da Guivos** |
+| `#PossibilityLived` | **canonical — hashtag global da Guivos** |
+
+Autoridade humana pública:
+
+| Elemento | Estado |
+|---|---|
+| Guilherme Oliveira | **Founder of Guivos / principal referência humana pública inicial** |
+| `Do possível ao vivido.` | **assinatura pessoal e autoral do fundador** |
+| Lucas 2:52 | **referência bíblica deliberada na bio pública pessoal do fundador** |
+
+```text
+GUIVOS ≠ FUNDADOR
+DO POSSÍVEL AO VIVIDO. ≠ ASSINATURA DA GUIVOS
+LUCAS 2:52 NA BIO DO FUNDADOR ≠ PUBLIC CANON RELIGIOSO AUTOMÁTICO
+```
 
 Portfólio GUIVOS:
 
@@ -291,17 +317,21 @@ Acesso de usuário, domínio territorial, marca protegida, pesquisa ou prospecç
 
 ## 16. Public Canon
 
-`GOG-001 — Guia Oficial da Guivos v5.1.0` é a tradução institucional pública vigente.
+`GOG-001 — Guia Oficial da Guivos v5.2.0` é a tradução institucional pública vigente.
 
 O Public Canon não pode afirmar como disponível, registrado, implementado ou operacional aquilo que o GKR classifica como candidato, referência, não iniciado ou dependente de evidência.
 
+A autoridade pública do fundador pode ser explicada no Public Canon sem transformar sua identidade pessoal, sua assinatura ou sua manifestação de fé em ativos institucionais da Guivos.
+
 O Fundamento Cristão permanece fora de promoção automática a Public Canon devido a `primary_use: internal_governance`.
 
-## 17. Programa P0–P9 e reconciliação pós-300
+## 17. Programa P0–P9 e reconciliações posteriores
 
 P0–P9 permanece documentalmente consolidado. Isso não significa que objetos de negócio, tecnologia, mercado, jurídico ou operação estejam executados.
 
 `GKR-GLOBAL-INTEGRITY-POST300-001` corrige deriva posterior sem reabrir P0–P9.
+
+`GKR-BRAND-PUBLIC-AUTHORITY-001` e `GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` constituem autoridades temáticas posteriores de marca e representação pública; não criam UXA, marco funcional ou implementação.
 
 Históricos, addenda e PRs superseded permanecem na trilha Git, mas não competem com as autoridades correntes.
 
@@ -312,6 +342,7 @@ Nenhum é automático:
 - nova evidência de mercado → VAL;
 - tecnologia/implementação → ADR/GEA/Product Engineering;
 - filing das assinaturas → Human Filing Authorization;
+- implantação do perfil/conteúdo do fundador → gate próprio de presença pública;
 - institucional/jurídico → gates próprios;
 - privacidade/operação → P6/LS/OT;
 - internacionalização → P7/T/PT;
