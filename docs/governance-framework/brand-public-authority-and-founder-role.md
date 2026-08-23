@@ -188,7 +188,7 @@ ASSINATURA AUTORAL
 
 Baseline inicial de bio para Instagram:
 
-> **Fundador da @guivosglobal | Engenheiro | Cristão**  
+> **Fundador da @guivosglobal | Engenheiro | Cristão**<br>
 > **Do possível ao vivido.**
 
 Esse baseline não constitui copy imutável. Pontuação, idioma, composição e ordem podem evoluir conforme a implantação real do canal, preservando a arquitetura de identidade.
