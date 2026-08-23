@@ -2,12 +2,13 @@
 id: GKR-BRAND-DIGITAL-ASSETS-INDEX-001
 title: Marca, Naming e Ativos Digitais — Índice Governado
 status: active
-version: 1.9.0
+version: 1.10.0
 owner: Guivos
-last_updated: 2026-08-21
+last_updated: 2026-08-22
 related:
   - GKR-BRAND-ASSET-GOVERNANCE-001
   - GKR-BRAND-SIGNATURE-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-001
   - GKR-TRADEMARK-FILING-SCOPE-001
   - GKR-TRADEMARK-FILING-PREFLIGHT-001
   - GKR-TRADEMARK-OWNER-CLEARANCE-EVIDENCE-001
@@ -47,7 +48,6 @@ naming canônico
 Assinatura global     Possibility, lived.
 Versão PT             Possibilidade, vivida.
 Hashtag global        #PossibilityLived
-Bordão PT             Do possível ao vivido.
 ```
 
 Estados:
@@ -56,7 +56,14 @@ Estados:
 Possibility, lived.      = canonical
 Possibilidade, vivida.   = canonical
 #PossibilityLived        = canonical
-Do possível ao vivido.   = canonical como bordão/linha narrativa; não segunda assinatura
+```
+
+A autoridade pública humana e a assinatura pessoal do fundador são governadas separadamente por `GKR-BRAND-PUBLIC-AUTHORITY-001`.
+
+```text
+Do possível ao vivido.
+→ assinatura pessoal e autoral do fundador
+→ não integra a autoridade verbal institucional da Guivos
 ```
 
 ## 3. Portfólio brasileiro existente — GUIVOS
@@ -151,7 +158,8 @@ Código `394` não está automaticamente autorizado; se necessário, deve haver 
 
 - [Autoridade Oficial de Naming da Guivos](official-naming-authority.md)
 - [Governança de Marca, Naming e Ativos Digitais](brand-naming-and-digital-assets-governance.md)
-- [Assinatura de Marca e Sistema Verbal da Guivos](brand-signature-and-verbal-system.md) — `v1.2.0`
+- [Assinatura de Marca e Sistema Verbal da Guivos](brand-signature-and-verbal-system.md) — `v1.3.0`
+- [Autoridade Pública da Marca e Papel do Fundador](brand-public-authority-and-founder-role.md) — `v1.0.0`
 - [Escopo de Depósito Marcário — Guivos e Assinatura Institucional](trademark-filing-scope.md) — autoridade de escopo vigente
 - [Preflight de Depósito Marcário — Guivos e Assinatura Institucional](trademark-filing-preflight.md) — `v1.5.0`
 - [Evidências de Titular e Clearance Marcário — Guivos](trademark-owner-and-clearance-evidence.md) — `v1.3.0`
@@ -164,6 +172,7 @@ Código `394` não está automaticamente autorizado; se necessário, deve haver 
 ```text
 brand_naming_canonical
 + signature_system_canonical
++ founder_public_authority_canonical
 + GUIVOS_09_registered
 + GUIVOS_35_registered
 + GUIVOS_39_registered
@@ -188,6 +197,8 @@ brand_naming_canonical
 ```text
 GUIVOS REGISTRADA ≠ ASSINATURA REGISTRADA
 GUIVOS ® ≠ Possibility, lived. ®
+DO POSSÍVEL AO VIVIDO. ≠ ASSINATURA DA GUIVOS
+DO POSSÍVEL AO VIVIDO. → ASSINATURA PESSOAL DO FUNDADOR
 CLEAR ≠ CONCESSÃO
 FILE ≠ AUTORIZAÇÃO DE PROTOCOLO
 FILE DE CLASSE 42 ≠ AIaaS AUTOMATICAMENTE INCLUÍDO
@@ -198,7 +209,7 @@ REGISTRO BRASILEIRO ≠ PROTEÇÃO GLOBAL
 
 ## 9. Próximo gate
 
-O próximo gate é **Human Filing Authorization**.
+O próximo gate marcário continua sendo **Human Filing Authorization**.
 
 A autorização humana deverá declarar explicitamente:
 
@@ -216,3 +227,5 @@ B — código 389 sem desconto   = R$ 3.520,00
 ```
 
 Se o código `394` for necessário, parar e reautorizar.
+
+A autoridade pública do fundador e sua execução editorial seguem gates próprios em `GKR-BRAND-PUBLIC-AUTHORITY-001` e não alteram automaticamente o filing marcário institucional.
