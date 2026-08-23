@@ -8,7 +8,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **2.42.0** |
+| GKR-STATE-001 | **2.43.0** |
 | Era | **GE-2 — Knowledge** |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
@@ -22,24 +22,50 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | transições | **66** |
 | Homes públicas convergidas | **8** |
 | Design Delivery vigente | **v4 — 31 fontes canônicas + 8 guias = 39 arquivos** |
+| Public Canon | **GOG-001 5.2.0** |
 
 A [Reconciliação Global de Integridade pós-PR #300](docs/project/global-integrity-reconciliation-post-300-2026-08-21.md) corrigiu deriva em superfícies globais sem reabrir decisões temáticas.
 
+A [Reconciliação Derivada da Autoridade Pública da Marca e do Fundador](docs/governance-framework/brand-public-authority-propagation.md) sincroniza a decisão posterior sobre fundador, sistema verbal e Home Pública sem criar nova UXA ou implementação.
+
 ## Public Canon
 
-O documento institucional público vigente é o [GOG-001 — Guia Oficial da Guivos 5.1.0](docs/public/guia-oficial-da-guivos.md).
+O documento institucional público vigente é o [GOG-001 — Guia Oficial da Guivos 5.2.0](docs/public/guia-oficial-da-guivos.md).
 
 O Public Canon traduz autoridades do GKR para linguagem pública. Ele não declara como implementado, disponível, registrado ou operacional o que permanecer candidato, referência, não iniciado ou dependente de evidência.
 
 ## Autoridade verbal da marca
 
-A autoridade vigente é [GKR-BRAND-SIGNATURE-001 — Assinatura de Marca e Sistema Verbal da Guivos](docs/governance-framework/brand-signature-and-verbal-system.md).
+A autoridade institucional vigente é [GKR-BRAND-SIGNATURE-001 — Assinatura de Marca e Sistema Verbal da Guivos](docs/governance-framework/brand-signature-and-verbal-system.md).
 
 ```text
-Possibility, lived.      = assinatura global canônica
-Possibilidade, vivida.   = versão PT canônica
-#PossibilityLived        = hashtag global canônica
-Do possível ao vivido.   = bordão/linha narrativa canônica; não segunda assinatura
+Possibility, lived.      = assinatura global canônica da Guivos
+Possibilidade, vivida.   = versão PT canônica da Guivos
+#PossibilityLived        = hashtag global canônica da Guivos
+```
+
+## Autoridade Pública da Marca e Papel do Fundador
+
+A autoridade vigente é [GKR-BRAND-PUBLIC-AUTHORITY-001 — Autoridade Pública da Marca e Papel do Fundador](docs/governance-framework/brand-public-authority-and-founder-role.md).
+
+```text
+Guilherme Oliveira
+→ Founder of Guivos / Fundador da Guivos
+→ principal referência humana pública inicial
+
+Do possível ao vivido.
+→ assinatura pessoal e autoral do fundador
+→ não integra a autoridade verbal institucional da Guivos
+
+Lucas 2:52
+→ referência bíblica deliberada na bio pública pessoal do fundador
+→ não copy institucional automática da Guivos
+```
+
+```text
+GUIVOS ≠ FUNDADOR
+FALA PESSOAL ≠ POSICIONAMENTO INSTITUCIONAL
+FUNDADOR VISÍVEL ≠ MARCA DEPENDENTE
 ```
 
 ### Proteção marcária
@@ -87,6 +113,8 @@ DESPERTAR
 ```
 
 A presença pública no GKR não transforma essa autoridade de uso interno em Public Canon, campanha, copy comercial ou exposição religiosa automática.
+
+A presença de Lucas 2:52 na bio pessoal do fundador decorre da autoridade própria do fundador e não altera essa fronteira institucional.
 
 ## Participantes, produtos e planos
 
@@ -142,6 +170,8 @@ Domínio de Evolução ≠ identidade ≠ score ≠ diagnóstico ≠ prova de ev
 Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança
 GPA-006 2.0.0 convergido ≠ Intelligence implementado
 Design Delivery emitido ≠ Design produzido ≠ implementação ≠ publicação
+Guilherme Oliveira ≠ Guivos
+Do possível ao vivido. ≠ assinatura institucional da Guivos
 ```
 
 ## Guivos Journey
@@ -231,6 +261,8 @@ As oito Homes públicas estão documentalmente convergidas e incluídas no [Hand
 
 O [Design Delivery v4](docs/experience-architecture/public-homes-design-delivery-manifest.md) usa 31 fontes canônicas + 8 guias operacionais.
 
+Na Home Pública da Pessoa, o rótulo vigente do Movimento 06 é **Da Possibilidade à Experiência**. A função `possibilidade → escolha → experiência → novo contexto` permanece inalterada.
+
 ```text
 Design Delivery emitido
 ≠ Design produzido
@@ -241,11 +273,13 @@ Design Delivery emitido
 
 ## Autoridades recentes e recuperação
 
-- [Registro do Estado Atual 2.42.0](docs/project/current-state-register.md)
-- [Roadmap 12.83.0](docs/roadmap.md)
-- [Matriz de Consolidação Canônica 3.1.0](docs/project/canonical-consolidation-matrix.md)
-- [Painel de Conhecimento 12.83.0](docs/project/knowledge-board.md)
-- [Marcos Arquiteturais 5.45.0](docs/project/architectural-milestones.md)
+- [Registro do Estado Atual 2.43.0](docs/project/current-state-register.md)
+- [Roadmap 12.84.0](docs/roadmap.md)
+- [Matriz de Consolidação Canônica 3.2.0](docs/project/canonical-consolidation-matrix.md)
+- [Painel de Conhecimento 12.84.0](docs/project/knowledge-board.md)
+- [Marcos Arquiteturais 5.46.0](docs/project/architectural-milestones.md)
+- [Autoridade Pública da Marca e Papel do Fundador](docs/governance-framework/brand-public-authority-and-founder-role.md)
+- [Reconciliação Derivada da Autoridade Pública](docs/governance-framework/brand-public-authority-propagation.md)
 - [Índice UXA-047 a UXA-101](docs/experience-architecture/uxa-047-101-index.md)
 - [Snapshot externo de Design v4 — oito Homes](docs/experience-architecture/public-homes-design-delivery-v4-snapshot-record.md)
 - [Manifesto Canônico de Entrega para Design v4](docs/experience-architecture/public-homes-design-delivery-manifest.md)
@@ -292,17 +326,19 @@ Não estão autorizados ou comprovados apenas pela consolidação documental:
 - cobrança real/gateway;
 - processo posterior a `BND-002`;
 - resultados de terceiros após `BND-001`;
-- promoção automática de qualquer output de Design a estado canônico.
+- promoção automática de qualquer output de Design a estado canônico;
+- implantação, publicação ou calendário editorial do fundador apenas pela existência da autoridade pública.
 
 ## Próximos gates
 
-O [Roadmap 12.83.0](docs/roadmap.md) não define uma sequência automática.
+O [Roadmap 12.84.0](docs/roadmap.md) não define uma sequência automática.
 
 ```text
 UXA-102/V5 = NOT_STARTED
 Product Engineering = PAUSED
 Design = exige decisão própria
 Filing das assinaturas = exige Human Filing Authorization
+Presença operacional do fundador = exige gate próprio
 ```
 
 O próximo movimento deve nascer da necessidade estratégica real e da autoridade correspondente.

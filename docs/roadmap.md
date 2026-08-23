@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.83.0
-title: Roadmap Arquitetural — Estado Governado pós-PR #300
+id: ROADMAP-12.84.0
+title: Roadmap Arquitetural — Estado Governado pós-Autoridade Pública do Fundador
 status: active
-version: 12.83.0
+version: 12.84.0
 owner: Guivos
-last_updated: 2026-08-21
+last_updated: 2026-08-22
 supersedes_partial:
-  - ROADMAP-12.82.0
+  - ROADMAP-12.83.0
 related:
   - GKR-STATE-001
   - GKR-GLOBAL-INTEGRITY-POST300-001
@@ -52,17 +52,19 @@ related:
   - GKR-UX-HOME-ADS-GENINPUT-001
   - GKR-BRAND-SIGNATURE-001
   - GKR-BRAND-DIGITAL-ASSETS-INDEX-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
   - GKR-CHRISTIAN-FOUNDATION-001
   - M7.88
 ---
 
-# Roadmap Arquitetural — Estado Governado pós-PR #300
+# Roadmap Arquitetural — Estado Governado pós-Autoridade Pública do Fundador
 
 ## 1. Autoridade
 
-Este roadmap traduz o estado corrente de `GKR-STATE-001 v2.42.0` em frentes governadas possíveis. Ele substitui a leitura operacional defasada de `ROADMAP-12.82.0` sem reabrir decisões integradas.
+Este roadmap traduz o estado corrente de `GKR-STATE-001 v2.43.0` em frentes governadas possíveis. Ele substitui parcialmente `ROADMAP-12.83.0` apenas para sincronizar a autoridade pública do fundador, o sistema verbal, o Public Canon e o rótulo reconciliado do Movimento 06 da Home Pública.
 
-A reorganização desta edição preserva deliberadamente os detalhes válidos do roadmap anterior. Síntese e reordenação não funcionam como revogação de autoridade ou de gap já registrado.
+A reorganização preserva os detalhes válidos do roadmap anterior. Síntese e reordenação não funcionam como revogação de autoridade ou de gap já registrado.
 
 ```text
 ROADMAP = POSSIBILIDADES GOVERNADAS DE AVANÇO
@@ -71,14 +73,14 @@ SÍNTESE ≠ APAGAMENTO DE GAP
 REORGANIZAÇÃO ≠ REVOGAÇÃO DE DECISÃO
 ```
 
-A Reconciliação Global de Integridade pós-#300 corrige derivados e não cria nova UXA, novo marco funcional ou autorização de implementação.
+A autoridade pública do fundador e sua propagação não criam nova UXA, novo marco funcional, Design, filing ou autorização de implementação.
 
 ## 2. Baseline vigente
 
 | Elemento | Estado |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v2.42.0** |
+| Estado global | **GKR-STATE-001 v2.43.0** |
 | Marco funcional | **M7.88** |
 | Última UXA | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — não iniciada** |
@@ -91,6 +93,8 @@ A Reconciliação Global de Integridade pós-#300 corrige derivados e não cria 
 | Homes públicas | **8 convergidas documentalmente** |
 | Design Delivery | **v4.0.0 — 39 arquivos externos** |
 | Design produzido automaticamente | **não** |
+| Autoridade pública humana inicial | **Guilherme Oliveira — Founder of Guivos** |
+| Public Canon | **GOG-001 v5.2.0** |
 
 ## 3. Programa P0–P9
 
@@ -149,6 +153,27 @@ Oito Homes estão documentalmente convergidas:
 8. Intelligence.
 
 A Home de Organizações e Coletivos preserva P1–P5 como histórico válido. `GKR-HOME-DECISION-NO-WIREFRAME-001` permanece histórico, mas sua proibição procedimental foi posteriormente superada **somente para a fase externa de Design** pelo handoff comum. Significado, narrativa e produto não foram reabertos.
+
+A Home Pública da Pessoa preserva onze funções. A autoridade posterior altera somente o nome do Movimento 06:
+
+```text
+Do Possível ao Vivido
+→ superseded como rótulo institucional da Home
+
+Da Possibilidade à Experiência
+→ rótulo vigente do Movimento 06
+```
+
+A função permanece:
+
+```text
+POSSIBILIDADE
+→ ESCOLHA
+→ EXPERIÊNCIA
+→ NOVO CONTEXTO
+```
+
+A antiga `Assinatura complementar` da Hero com `Do possível ao vivido.` também está superseded. A Home utiliza somente a assinatura institucional governada por `GKR-BRAND-SIGNATURE-001` quando pertinente.
 
 A reconciliação pós-Media permanece válida: Guivos Media pode abastecer editorialmente outras superfícies sem assumir autoridade sobre finalidade, narrativa ou operação dessas superfícies.
 
@@ -360,15 +385,36 @@ Gaps reais:
 
 `Neo4j = reference_selected`, não implementação comprovada.
 
-## 8. Marca e proteção marcária
+## 8. Marca, autoridade pública e proteção marcária
 
-Autoridade verbal:
+Autoridade institucional:
 
 ```text
-Possibility, lived.      = canonical
-Possibilidade, vivida.   = canonical
-#PossibilityLived        = canonical
-Do possível ao vivido.   = bordão canônico / não segunda assinatura
+Possibility, lived.      = assinatura global canônica da Guivos
+Possibilidade, vivida.   = versão PT canônica da Guivos
+#PossibilityLived        = hashtag global canônica da Guivos
+```
+
+Autoridade pública do fundador:
+
+```text
+Guilherme Oliveira
+→ Founder of Guivos / Fundador da Guivos
+→ principal referência humana pública inicial
+
+Do possível ao vivido.
+→ assinatura pessoal e autoral do fundador
+→ não integra a autoridade verbal institucional da Guivos
+
+Lucas 2:52
+→ referência bíblica deliberada na bio pública pessoal do fundador
+→ não constitui comunicação religiosa institucional automática da Guivos
+```
+
+```text
+GUIVOS ≠ FUNDADOR
+FALA PESSOAL ≠ POSICIONAMENTO INSTITUCIONAL
+DO POSSÍVEL AO VIVIDO. ≠ ASSINATURA DA GUIVOS
 ```
 
 Portfólio GUIVOS existente nas classes 09, 35, 39 e 42 permanece reconciliado.
@@ -381,7 +427,7 @@ CLEAR
 42 = FILE
 ```
 
-O próximo gate de execução é **Human Filing Authorization**, não novo clearance.
+O próximo gate de execução marcária é **Human Filing Authorization**, não novo clearance.
 
 Antes da execução:
 
@@ -397,6 +443,8 @@ FILE ≠ FILING_AUTHORIZED
 CLEAR ≠ REGISTRO
 ```
 
+A futura implantação do perfil pessoal do fundador, da bio e de conteúdos autorais pertence a gate operacional próprio e não altera o filing institucional.
+
 ## 9. Fundamento Cristão
 
 `GKR-CHRISTIAN-FOUNDATION-001 v1.0.0` está ativo e integrado.
@@ -408,6 +456,8 @@ classification = public
 authority_profile = public_foundational
 external_reuse_automatic = false
 ```
+
+A presença de Lucas 2:52 na bio pessoal do fundador é compatível com sua identidade cristã e com a autoridade própria do fundador, mas não transforma a base bíblica da Guivos em campanha, copy comercial ou Public Canon religioso automático.
 
 A próxima necessidade não é doutrinária. Melhorias futuras somente devem ocorrer se houver necessidade concreta de governança, interpretação ou navegação e exigem decisão explícita quando afetarem fundamento, passagens ou invariantes.
 
@@ -470,6 +520,9 @@ Além dos gaps detalhados por domínio, continuam abertos quando dependerem de r
 - handoffs especializados ainda não materializados;
 - controles jurídicos/privacidade efetivamente publicados e operacionais;
 - piloto e operação internacional;
+- implantação real dos canais pessoais do fundador;
+- composição material final da bio do fundador;
+- produção/publicação de conteúdo do fundador;
 - UXA-102/V5;
 - Product Engineering.
 
@@ -485,6 +538,7 @@ A ordem não é uma fila automática. Quando houver intenção concreta, rotear 
 | mudança tecnológica | ADR / GEA / Product Engineering |
 | marca/ativo/fato registral | Brand / Trademark Evidence |
 | filing das assinaturas | Human Filing Authorization |
+| autoridade/presença do fundador | GKR-BRAND-PUBLIC-AUTHORITY-001 |
 | ato institucional/jurídico | P5 / gates institucionais |
 | privacidade/operação | P6 / LS / OT |
 | expansão territorial | P7 / T / PT |
@@ -520,11 +574,17 @@ Power BI = consumidor possível ≠ fonte de verdade
 Guivos.ai = possível superfície ≠ Guivos Intelligence
 Product Source Lock + Home Source Lock + Documento Mestre + Handoff + GENINPUT + snapshot v4 ≠ Design produzido ≠ implementação
 PERCEBER ANTES ≠ PREVER O FUTURO
+GUIVOS ≠ FUNDADOR
+DO POSSÍVEL AO VIVIDO. → FUNDADOR
+POSSIBILITY, LIVED. → GUIVOS
+POSSIBILIDADE, VIVIDA. → GUIVOS
+LUCAS 2:52 NA BIO DO FUNDADOR ≠ COPY INSTITUCIONAL AUTOMÁTICA
+MUDANÇA DO RÓTULO DO MOVIMENTO 06 ≠ MUDANÇA DA FUNÇÃO DO MOVIMENTO 06
 ```
 
 ## 16. Regra de encerramento
 
-Após a reconciliação pós-#300:
+Após a integração da autoridade pública do fundador e sua reconciliação derivada:
 
 ```text
 NÃO HÁ P10 AUTOMÁTICO
@@ -532,6 +592,7 @@ NÃO HÁ UXA-102 AUTOMÁTICA
 NÃO HÁ DESIGN AUTOMÁTICO
 NÃO HÁ FILING AUTOMÁTICO
 NÃO HÁ ENGINEERING AUTOMÁTICA
+NÃO HÁ PUBLICAÇÃO AUTOMÁTICA DO FUNDADOR
 ```
 
 O próximo movimento deve ser escolhido pela necessidade estratégica real, não pela simples existência de uma sequência documental.
