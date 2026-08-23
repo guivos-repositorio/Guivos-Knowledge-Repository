@@ -8,7 +8,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **2.42.0** |
+| Registro | `GKR-STATE-001` **2.43.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
@@ -21,12 +21,15 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Transições | **66** |
 | Homes públicas | **8 convergidas documentalmente** |
 | Design Delivery | **v4 — 31 fontes + 8 guias = 39 arquivos** |
+| Public Canon | **GOG-001 5.2.0** |
 
 A [Reconciliação Global de Integridade pós-PR #300](project/global-integrity-reconciliation-post-300-2026-08-21.md) corrigiu deriva entre autoridades temáticas e superfícies globais sem reabrir decisões já validadas.
 
+A [Reconciliação Derivada da Autoridade Pública da Marca e do Fundador](governance-framework/brand-public-authority-propagation.md) sincroniza o estado posterior à autoridade pública do fundador sem criar nova UXA, marco funcional ou implementação.
+
 ## Public Canon
 
-A superfície institucional pública vigente é o [GOG-001 — Guia Oficial da Guivos 5.1.0](public/guia-oficial-da-guivos.md).
+A superfície institucional pública vigente é o [GOG-001 — Guia Oficial da Guivos 5.2.0](public/guia-oficial-da-guivos.md).
 
 O Public Canon diferencia visão, arquitetura, implementação e operação. Nenhum documento público pode promover um objeto acima do estado evidenciado no GKR.
 
@@ -62,13 +65,12 @@ A presença desta autoridade no GKR público não a transforma em Public Canon o
 
 ## Marca e sistema verbal
 
-A autoridade vigente é [GKR-BRAND-SIGNATURE-001 — Assinatura de Marca e Sistema Verbal](governance-framework/brand-signature-and-verbal-system.md).
+A autoridade institucional vigente é [GKR-BRAND-SIGNATURE-001 — Assinatura de Marca e Sistema Verbal](governance-framework/brand-signature-and-verbal-system.md).
 
 ```text
-Possibility, lived.      = assinatura global canônica
-Possibilidade, vivida.   = versão PT canônica
-#PossibilityLived        = hashtag global canônica
-Do possível ao vivido.   = bordão/linha narrativa canônica; não segunda assinatura
+Possibility, lived.      = assinatura global canônica da Guivos
+Possibilidade, vivida.   = versão PT canônica da Guivos
+#PossibilityLived        = hashtag global canônica da Guivos
 ```
 
 A proteção marcária corrente está consolidada no [Índice de Marca, Naming e Ativos Digitais](governance-framework/brand-and-digital-assets-index.md).
@@ -80,7 +82,35 @@ FILE ≠ FILING_AUTHORIZED
 CLEAR ≠ REGISTRO
 ```
 
-O próximo gate de execução é **Human Filing Authorization**. AIaaS somente pode integrar as aplicações de classe 42 se houver evidência suficiente de atividade efetiva/objeto compatível.
+O próximo gate de execução marcária é **Human Filing Authorization**. AIaaS somente pode integrar as aplicações de classe 42 se houver evidência suficiente de atividade efetiva/objeto compatível.
+
+## Autoridade Pública da Marca e Papel do Fundador
+
+A autoridade vigente é [GKR-BRAND-PUBLIC-AUTHORITY-001 — Autoridade Pública da Marca e Papel do Fundador](governance-framework/brand-public-authority-and-founder-role.md).
+
+```text
+Guilherme Oliveira
+→ Founder of Guivos / Fundador da Guivos
+→ principal referência humana pública inicial
+
+Do possível ao vivido.
+→ assinatura pessoal e autoral do fundador
+→ não integra a autoridade verbal institucional da Guivos
+
+Lucas 2:52
+→ referência bíblica deliberada na bio pública pessoal do fundador
+→ não copy institucional automática da Guivos
+```
+
+Separações obrigatórias:
+
+```text
+GUIVOS ≠ FUNDADOR
+FALA PESSOAL ≠ POSICIONAMENTO INSTITUCIONAL
+FUNDADOR VISÍVEL ≠ MARCA DEPENDENTE
+```
+
+A [Reconciliação Derivada](governance-framework/brand-public-authority-propagation.md) governa a leitura de resíduos anteriores e o novo rótulo do Movimento 06 da Home Pública: **Da Possibilidade à Experiência**.
 
 ## Participantes, produtos e planos
 
@@ -131,6 +161,8 @@ D5-A/B/C1/C2/C3/C4A/C4B são frentes não numeradas posteriores que aprofundam o
 
 `TRN-008..013` permanecem integralmente validadas no limite documental.
 
+Na Home Pública da Pessoa, `Movimento 06 — Da Possibilidade à Experiência` preserva a função `possibilidade → escolha → experiência → novo contexto`; a alteração é apenas de rótulo.
+
 ## Guivos Business
 
 Autoridade: [GPA-004 — Guivos Business](product-architecture/business.md).
@@ -169,12 +201,12 @@ snapshot externo ≠ fonte canônica paralela
 
 ## Navegação do estado
 
-- [Registro do Estado Atual — 2.42.0](project/current-state-register.md)
-- [Roadmap 12.83.0](roadmap.md)
-- [Painel de Conhecimento 12.83.0](project/knowledge-board.md)
-- [Matriz de Consolidação Canônica 3.1.0](project/canonical-consolidation-matrix.md)
-- [Marcos Arquiteturais 5.45.0](project/architectural-milestones.md)
-- [Índice de Changelogs 1.20.0](project/changelog-index.md)
+- [Registro do Estado Atual — 2.43.0](project/current-state-register.md)
+- [Roadmap 12.84.0](roadmap.md)
+- [Painel de Conhecimento 12.84.0](project/knowledge-board.md)
+- [Matriz de Consolidação Canônica 3.2.0](project/canonical-consolidation-matrix.md)
+- [Marcos Arquiteturais 5.46.0](project/architectural-milestones.md)
+- [Índice de Changelogs 1.21.0](project/changelog-index.md)
 
 ## Regra pós-reconciliação
 
@@ -183,6 +215,7 @@ NÃO HÁ UXA-102 AUTOMÁTICA
 NÃO HÁ DESIGN AUTOMÁTICO
 NÃO HÁ FILING AUTOMÁTICO
 NÃO HÁ PRODUCT ENGINEERING AUTOMÁTICO
+NÃO HÁ PUBLICAÇÃO AUTOMÁTICA DO FUNDADOR
 ```
 
 O próximo movimento deve nascer de uma necessidade real e da autoridade correspondente.
