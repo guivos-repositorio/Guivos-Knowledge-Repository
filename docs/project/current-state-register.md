@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.42.0
+version: 2.43.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-21
+last_updated: 2026-08-22
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -60,6 +60,8 @@ related:
   - GKR-BRAND-ASSET-GOVERNANCE-001
   - GKR-BRAND-SIGNATURE-001
   - GKR-BRAND-DIGITAL-ASSETS-INDEX-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
   - GKR-TRADEMARK-FILING-PREFLIGHT-001
   - GKR-TRADEMARK-OWNER-CLEARANCE-EVIDENCE-001
   - GKR-TRADEMARK-SIGNATURE-FILING-DECISION-001
@@ -93,6 +95,7 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V2-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V3-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
+  - GOG-001
   - ROADMAP-12.83.0
   - M7.88
 normative: true
@@ -102,11 +105,9 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro declara o estado global vigente do Guivos Knowledge Repository após a **Reconciliação Global de Integridade pós-PR #300**.
+Este registro declara o estado global vigente do Guivos Knowledge Repository após a **Reconciliação Global de Integridade pós-PR #300** e a integração da **Autoridade Pública da Marca e Papel do Fundador**.
 
-A auditoria transversal que originou esta versão concluiu que **nenhuma decisão canônica validada foi identificada como perdida do `main`**. Foram encontradas derivas em superfícies globais e derivados, que passam a ser corrigidas sem reabrir as autoridades temáticas.
-
-A versão 2.42.0 preserva deliberadamente as relações e invariantes válidos da versão 2.41.0. A reconciliação atualiza o snapshot global; não usa síntese como mecanismo de apagamento de contexto previamente governado.
+A versão 2.43.0 preserva integralmente o estado funcional da versão 2.42.0 e adiciona a reconciliação temática posterior de marca e autoridade pública. Nenhuma UXA, marco funcional, Produto Especializado, Design, implementação ou filing é promovido por esta atualização.
 
 ```text
 AUTORIDADE TEMÁTICA VIGENTE
@@ -132,7 +133,7 @@ Em caso de divergência, prevalece este registro transversal para o estado globa
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Registro do Estado Atual | **GKR-STATE-001 v2.42.0** |
+| Registro do Estado Atual | **GKR-STATE-001 v2.43.0** |
 | Marco funcional | **M7.88 — saída consciente para fronteira externa validada** |
 | Última frente funcional numerada | **UXA-101** |
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária de Planos** |
@@ -153,6 +154,9 @@ Em caso de divergência, prevalece este registro transversal para o estado globa
 | Design Delivery | **v4.0.0 — 31 fontes canônicas + 8 guias = 39 arquivos externos** |
 | Design produzido automaticamente | **não** |
 | Product Engineering | **não reativada** |
+| Autoridade pública humana inicial | **Guilherme Oliveira — Founder of Guivos** |
+| Assinatura pessoal do fundador | **Do possível ao vivido.** |
+| Public Canon | **GOG-001 v5.2.0** |
 
 ## 3. Participantes, produtos, planos e Domínios de Evolução
 
@@ -284,6 +288,18 @@ Oito Homes atingiram convergência documental suficiente para handoff controlado
 8. Guivos Intelligence.
 
 Cada Home mantém autoridade própria de narrativa e finalidade.
+
+A Home Pública da Pessoa preserva onze funções narrativas. A reconciliação verbal posterior altera somente o rótulo do Movimento 06:
+
+```text
+rótulo anterior
+Do Possível ao Vivido
+
+rótulo vigente
+Da Possibilidade à Experiência
+```
+
+A função permanece `possibilidade → escolha → experiência → novo contexto`. A mudança de rótulo não cria novo movimento, seção, Home ou Design.
 
 A relação transversal do Media distingue:
 
@@ -465,7 +481,7 @@ Não há autoridade suficiente para declarar:
 
 `Grafo Global ≠ Guivos Intelligence ≠ Neo4j ≠ IA ≠ Guivos.ai ≠ Power BI`.
 
-## 8. Marca, naming, assinatura e proteção marcária
+## 8. Marca, naming, assinatura, autoridade pública e proteção marcária
 
 ```text
 nome canônico
@@ -477,16 +493,37 @@ nome canônico
 
 O GKR governa naming e estados de evidência, mas não presume titularidade, proteção territorial, domínio adquirido ou controle técnico específico sem prova própria. Segredos, credenciais, recovery codes, chaves, tokens e inventário operacional sensível permanecem fora do corpus público.
 
-A autoridade verbal vigente é `GKR-BRAND-SIGNATURE-001 v1.2.0`.
+A autoridade verbal vigente é `GKR-BRAND-SIGNATURE-001 v1.3.0`.
 
 ```text
 Assinatura global   Possibility, lived.       = canonical
 Versão PT           Possibilidade, vivida.    = canonical
 Hashtag global      #PossibilityLived         = canonical
-Bordão PT           Do possível ao vivido.    = canonical como bordão/linha narrativa
 ```
 
-O bordão não é segunda assinatura institucional.
+A autoridade pública humana é governada por `GKR-BRAND-PUBLIC-AUTHORITY-001 v1.0.0`:
+
+```text
+Guilherme Oliveira
+→ Founder of Guivos / Fundador da Guivos
+→ principal referência humana pública inicial
+
+Do possível ao vivido.
+→ assinatura pessoal e autoral do fundador
+→ não integra a autoridade verbal institucional da Guivos
+
+Lucas 2:52
+→ referência bíblica deliberada na bio pública pessoal do fundador
+→ não constitui copy institucional automática da Guivos
+```
+
+A reconciliação derivada é governada por `GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001`.
+
+```text
+GUIVOS ≠ FUNDADOR
+FALA PESSOAL ≠ POSICIONAMENTO INSTITUCIONAL
+DO POSSÍVEL AO VIVIDO. ≠ ASSINATURA DA GUIVOS
+```
 
 Portfólio brasileiro GUIVOS reconciliado:
 
@@ -698,7 +735,7 @@ No Business, vínculo empresarial, custeio de Journey, concessão de benefício 
 
 ## 12. Public Canon
 
-`GOG-001 — Guia Oficial da Guivos v5.1.0` é a única superfície institucional pública vigente classificada como `public-canon` neste domínio documental.
+`GOG-001 — Guia Oficial da Guivos v5.2.0` é a única superfície institucional pública vigente classificada como `public-canon` neste domínio documental.
 
 O Public Canon deve distinguir:
 
@@ -707,7 +744,8 @@ O Public Canon deve distinguir:
 - preço/plano candidato e oferta vigente;
 - expansão planejada e mercado ativo;
 - conceito institucional e entidade constituída;
-- privacidade por design e controles efetivamente operacionais.
+- privacidade por design e controles efetivamente operacionais;
+- assinatura institucional e assinatura pessoal do fundador.
 
 D5-C4B é autoridade interna de Experience Architecture e não autoriza declaração pública de produto implementado.
 
@@ -715,12 +753,15 @@ D5-C4B é autoridade interna de Experience Architecture e não autoriza declara�
 
 `GKR-CHRISTIAN-FOUNDATION-001` é autoridade fundacional de uso interno. Sua presença no GKR público não o promove automaticamente a Public Canon, copy institucional, campanha, produto ou comunicação externa.
 
+Lucas 2:52 integra a bio pública pessoal do fundador por autoridade própria e não se torna, por essa razão, copy institucional automática da Guivos.
+
 ```text
 visão ≠ disponibilidade
 arquitetura ≠ implementação
 CLEAR ≠ registro concedido
 FILE ≠ protocolo
 Design Delivery ≠ Design produzido
+fundador ≠ marca
 ```
 
 Nenhum texto público pode promover estado superior ao evidenciado nas autoridades internas.
@@ -740,7 +781,7 @@ P0–P9 permanece **documentalmente consolidado**:
 - P8 — Produtos Especializados: integrado, com aprofundamento posterior do Intelligence;
 - P9 — estado global/Public Canon: consolidado.
 
-A Reconciliação Global de Integridade pós-#300 não reabre esse programa. Ela corrige deriva posterior nos derivados globais.
+A Reconciliação Global de Integridade pós-#300 não reabre esse programa. A autoridade pública do fundador é uma frente temática posterior e separada.
 
 **Encerramento documental não significa encerramento das lacunas operacionais.**
 
@@ -764,7 +805,7 @@ A Reconciliação Global de Integridade pós-#300 não reabre esse programa. Ela
 
 D5-C1/C2/C3/C4A/C4B não são V5 e não alteram a numeração UXA.
 
-Homes/Design, Business, Intelligence, marca/proteção marcária, Fundamento Cristão e a reconciliação pós-#300 permanecem frentes separadas da fila UXA e não alteram M7.88.
+Homes/Design, Business, Intelligence, marca/proteção marcária, autoridade pública do fundador, Fundamento Cristão e as reconciliações transversais permanecem frentes separadas da fila UXA e não alteram M7.88.
 
 ## 15. Dívidas e gates reais ainda abertos
 
@@ -790,6 +831,9 @@ Continuam abertos quando dependentes de realidade ou autorização específica:
 - operação Ads real, pricing, inventário, checkout/painel e Intelligence operacional;
 - Human Filing Authorization das quatro aplicações das assinaturas;
 - evidência de atividade efetiva para AIaaS se o item for incluído;
+- implantação real do perfil pessoal do fundador;
+- composição material final da bio nos limites do Instagram;
+- produção/publicação de conteúdo do fundador;
 - UXA-102/V5;
 - Product Engineering.
 
@@ -843,7 +887,12 @@ Continuam abertos quando dependentes de realidade ou autorização específica:
 - `Evolução com propósito` permanece princípio fundacional;
 - essência cristã ≠ proselitismo oculto; fé ≠ mecanismo comercial;
 - ampliar possibilidades ≠ decidir pela pessoa;
-- assinatura, clearance e filing decision permanecem preservados;
+- `Guilherme Oliveira = Founder of Guivos` permanece autoridade humana pública inicial;
+- fundador ≠ Guivos e fala pessoal ≠ posicionamento institucional;
+- `Do possível ao vivido.` permanece assinatura pessoal/autoral do fundador e não assinatura institucional da Guivos;
+- Lucas 2:52 permanece referência bíblica deliberada na bio pública pessoal do fundador sem substituir a base bíblica convergente da Guivos;
+- `Da Possibilidade à Experiência` substitui somente o rótulo institucional do Movimento 06 da Home; sua função permanece intacta;
+- assinatura institucional, clearance e filing decision permanecem preservados;
 - `FILE ≠ filing_authorized`;
 - projeção não é realizado;
 - preço não é disposição a pagar;
@@ -855,7 +904,7 @@ Continuam abertos quando dependentes de realidade ou autorização específica:
 
 ## 17. Regra de não perda
 
-A reconciliação pós-#300 não invalida detalhes válidos das autoridades temáticas ou da versão 2.41.0 apenas porque o registro transversal tenha sido reorganizado.
+A reconciliação pós-#300 e a propagação posterior da autoridade pública do fundador não invalidam detalhes válidos das autoridades temáticas ou das versões anteriores apenas porque o registro transversal tenha sido reorganizado.
 
 ```text
 REORGANIZAÇÃO DO ESTADO
@@ -871,9 +920,7 @@ HISTÓRICO PRESERVADO
 
 ## 18. Próximo ato governado
 
-A Reconciliação Global de Integridade pós-#300 fecha somente a deriva documental identificada.
-
-Ela **não seleciona automaticamente a próxima frente estratégica**.
+A versão 2.43.0 fecha a sincronização global necessária para a autoridade pública do fundador sem selecionar automaticamente a próxima frente estratégica.
 
 Qualquer próximo ato deve nascer de uma necessidade real e da autoridade correspondente. Em particular:
 
@@ -883,4 +930,5 @@ NÃO INFERIR PRODUCT ENGINEERING
 NÃO INFERIR DESIGN
 NÃO INFERIR FILING
 NÃO INFERIR IMPLEMENTAÇÃO
+NÃO INFERIR PUBLICAÇÃO DE CONTEÚDO DO FUNDADOR
 ```
