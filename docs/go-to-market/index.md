@@ -2,7 +2,7 @@
 id: GTM-000
 title: Guivos Go-to-Market, Growth & Capital
 status: draft
-version: 0.7.0
+version: 0.8.0
 owner: Guivos Strategy & Growth
 last_updated: 2026-08-23
 related:
@@ -87,7 +87,7 @@ Ativo digital territorial, usuário incidental, pesquisa, parceiro local ou pres
 
 ### 4.3 Presença editorial e autoridade do fundador
 
-`GTM-009` e `GTM-010` governam superfícies sociais distintas e não concorrentes:
+`GTM-009`, `GTM-010` e `GTM-011` governam superfícies e camadas sociais distintas e não concorrentes:
 
 ```text
 GTM-009
@@ -95,11 +95,14 @@ GTM-009
 
 GTM-010
 → especificação mestre do Instagram pessoal do fundador
+
+GTM-011
+→ especificação operacional do Instagram pessoal do fundador
 ```
 
-O perfil do fundador não constitui quarto perfil institucional da Guivos. Sua autoridade deriva de `GKR-BRAND-PUBLIC-AUTHORITY-001`, preservando a separação entre pessoa, fundador e instituição.
+`GTM-011` deriva de `GTM-010` e não o redefine. O perfil do fundador não constitui quarto perfil institucional da Guivos. Sua autoridade deriva de `GKR-BRAND-PUBLIC-AUTHORITY-001`, preservando a separação entre pessoa, fundador e instituição.
 
-A existência dessas autoridades não cria perfil real, não publica bio, não inicia calendário editorial e não altera o estado operacional de GTM, mercado ou produto.
+A existência dessas autoridades não cria perfil real, não publica bio, não inicia calendário editorial e não altera o estado operacional de GTM, mercado ou produto. Especificação operacional permanece separada de configuração, publicação e evidência reais.
 
 ## 5. Separação canônica de atores e relações
 
@@ -169,6 +172,7 @@ A meta de `500 Parcerias Estratégicas ativas` em M60 não representa 500 Organi
 | `GTM-008` | [Portugal — Gates de Prontidão, Piloto e Escala](gtm-008-portugal-pilot-readiness-gates.md) | gates PT0–PT9 para Lisboa, Porto e futura replicação europeia |
 | `GTM-009` | [Instagram Guivos — Presença, Arquitetura Editorial e Governança v1](gtm-009-instagram-presence-and-editorial-governance.md) | três perfis oficiais, públicos, bios, distribuição editorial, crescimento e governança social |
 | `GTM-010` | [Instagram do Fundador — Especificação Mestre v1](gtm-010-founder-instagram-master-specification.md) | função do perfil pessoal do fundador, bio, autoria, conteúdo, presença, crescimento, métricas e risco |
+| `GTM-011` | [Instagram do Fundador — Especificação Operacional v1](gtm-011-founder-instagram-operating-specification.md) | materialização do perfil, transição, fixados, ciclo inicial, produção, equipe, acessos, métricas, incidentes e internacionalização |
 
 ## 7. Públicos consumidores
 
@@ -209,12 +213,13 @@ A versão usada externamente deverá distinguir fatos realizados, metas internas
 17. **proteção de ativo não é expansão** — domínios e marcas defensivas permanecem separados do programa territorial;
 18. **autoridade precede formato** — perfil, alcance ou formato não substituem legitimidade temática;
 19. **perfil do fundador não é perfil institucional** — a associação com a Guivos deve ser forte sem fundir pessoa, fundador e instituição;
-20. **algoritmo não governa identidade** — distribuição pode ser otimizada sem fabricar convicções, personalidade ou autoridade.
+20. **algoritmo não governa identidade** — distribuição pode ser otimizada sem fabricar convicções, personalidade ou autoridade;
+21. **especificar não é executar** — `GTM-011` pode governar a operação sem alterar, configurar ou publicar automaticamente no perfil real.
 
 ## 9. Estado
 
 `draft — candidate planning baseline with P7 territorial governance; calibration, market evidence, operating capacity and executive approval pending`.
 
-`GTM-009` e `GTM-010` permanecem autoridades editoriais ativas dentro deste domínio e não alteram, por si só, o estado `draft` da baseline econômico-comercial e territorial.
+`GTM-009`, `GTM-010` e `GTM-011` permanecem autoridades editoriais/operacionais ativas dentro deste domínio e não alteram, por si só, o estado `draft` da baseline econômico-comercial e territorial.
 
 A criação ou atualização deste domínio não inicia operação comercial, contratação de equipe, campanha, Product Engineering, rodada de investimento, expansão internacional ou implementação real de perfil social.
