@@ -2,9 +2,9 @@
 id: GTM-000
 title: Guivos Go-to-Market, Growth & Capital
 status: draft
-version: 0.6.0
+version: 0.7.0
 owner: Guivos Strategy & Growth
-last_updated: 2026-08-22
+last_updated: 2026-08-23
 related:
   - GEM-003
   - GEM-004-A1
@@ -16,6 +16,7 @@ related:
   - GEM-010-OPERATING-DRIVER-MODEL-001
   - GEM-010-REVENUE-MODEL-001
   - GKR-INTERNATIONAL-OPERATIONS-READINESS-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-001
 normative: false
 ---
 
@@ -23,7 +24,7 @@ normative: false
 
 ## 1. Finalidade
 
-Este domínio governa a tradução da estratégia da Guivos em **lançamento, aquisição, vendas, captação de participantes institucionais, parcerias estratégicas, expansão geográfica, metas de receita, captação de capital e narrativa para investidores**.
+Este domínio governa a tradução da estratégia da Guivos em **lançamento, aquisição, vendas, captação de participantes institucionais, parcerias estratégicas, expansão geográfica, metas de receita, captação de capital, narrativa para investidores e presença editorial governada nos canais sociais aplicáveis**.
 
 Ele existe para que Marketing, Growth, Comercial, Parcerias, Operações, liderança e relações com investidores trabalhem sobre a mesma baseline, sem transformar cenários em promessas nem confundir projeção com resultado realizado.
 
@@ -33,7 +34,7 @@ Ele existe para que Marketing, Growth, Comercial, Parcerias, Operações, lidera
 
 ## 3. Fontes de autoridade
 
-O GTM não redefine produtos, preços ou arquitetura econômica. Ele consome:
+O GTM não redefine produtos, preços, identidade institucional ou arquitetura econômica. Ele consome:
 
 - `GEM-003` para famílias e eventos de receita;
 - `GEM-004-A1` para preços candidatos já governados;
@@ -41,6 +42,7 @@ O GTM não redefine produtos, preços ou arquitetura econômica. Ele consome:
 - `GEM-006` e `GEM-006-PARTNER-ROLE-TAXONOMY-001` para papéis e relações de parceiros;
 - `GEM-009` para contratos de métricas;
 - `GEM-010` para cenários, drivers e separação entre receita, caixa, funding e valuation;
+- `GKR-BRAND-PUBLIC-AUTHORITY-001` para autoridade pública humana e papel do fundador;
 - decisões históricas de planejamento registradas em conversas-fontes, quando explicitamente classificadas como históricas ou candidatas.
 
 ## 4. Baselines históricas recuperadas
@@ -82,6 +84,22 @@ segundo país europeu = não autorizado
 Portugal permanece `T1_candidate`. A internacionalização precisa atravessar discovery, readiness comercial/operacional/jurídico-fiscal, autorização explícita, piloto evidenciado e gate de escala.
 
 Ativo digital territorial, usuário incidental, pesquisa, parceiro local ou presença de marca não provam mercado ativo.
+
+### 4.3 Presença editorial e autoridade do fundador
+
+`GTM-009` e `GTM-010` governam superfícies sociais distintas e não concorrentes:
+
+```text
+GTM-009
+→ presença institucional da Guivos no Instagram
+
+GTM-010
+→ especificação mestre do Instagram pessoal do fundador
+```
+
+O perfil do fundador não constitui quarto perfil institucional da Guivos. Sua autoridade deriva de `GKR-BRAND-PUBLIC-AUTHORITY-001`, preservando a separação entre pessoa, fundador e instituição.
+
+A existência dessas autoridades não cria perfil real, não publica bio, não inicia calendário editorial e não altera o estado operacional de GTM, mercado ou produto.
 
 ## 5. Separação canônica de atores e relações
 
@@ -150,6 +168,7 @@ A meta de `500 Parcerias Estratégicas ativas` em M60 não representa 500 Organi
 | `GTM-007` | [Governança de Internacionalização e Programa Territorial](gtm-007-internationalization-and-territorial-governance.md) | estados T0–T9, readiness e separação entre intenção, piloto e mercado ativo |
 | `GTM-008` | [Portugal — Gates de Prontidão, Piloto e Escala](gtm-008-portugal-pilot-readiness-gates.md) | gates PT0–PT9 para Lisboa, Porto e futura replicação europeia |
 | `GTM-009` | [Instagram Guivos — Presença, Arquitetura Editorial e Governança v1](gtm-009-instagram-presence-and-editorial-governance.md) | três perfis oficiais, públicos, bios, distribuição editorial, crescimento e governança social |
+| `GTM-010` | [Instagram do Fundador — Especificação Mestre v1](gtm-010-founder-instagram-master-specification.md) | função do perfil pessoal do fundador, bio, autoria, conteúdo, presença, crescimento, métricas e risco |
 
 ## 7. Públicos consumidores
 
@@ -164,6 +183,7 @@ Este domínio deverá servir a:
 - planejamento financeiro e operacional;
 - fundadores, sócios e conselho;
 - investidores atuais e potenciais;
+- Brand, Media e Comunicação quando operarem presença pública e distribuição;
 - pitch decks, data rooms e materiais de captação.
 
 A versão usada externamente deverá distinguir fatos realizados, metas internas, cenários e hipóteses ainda não validadas.
@@ -186,10 +206,15 @@ A versão usada externamente deverá distinguir fatos realizados, metas internas
 14. **territorialidade exige verdade operacional** — acesso, marca, domínio ou usuário incidental não tornam um país mercado ativo;
 15. **piloto não é escala** — execução em Lisboa não autoriza Porto ou outro país sem nova decisão;
 16. **compliance é por papel real** — produto, entidade, fluxo e contraparte determinam a análise aplicável;
-17. **proteção de ativo não é expansão** — domínios e marcas defensivas permanecem separados do programa territorial.
+17. **proteção de ativo não é expansão** — domínios e marcas defensivas permanecem separados do programa territorial;
+18. **autoridade precede formato** — perfil, alcance ou formato não substituem legitimidade temática;
+19. **perfil do fundador não é perfil institucional** — a associação com a Guivos deve ser forte sem fundir pessoa, fundador e instituição;
+20. **algoritmo não governa identidade** — distribuição pode ser otimizada sem fabricar convicções, personalidade ou autoridade.
 
 ## 9. Estado
 
 `draft — candidate planning baseline with P7 territorial governance; calibration, market evidence, operating capacity and executive approval pending`.
 
-A criação deste domínio não inicia operação comercial, contratação de equipe, campanha, Product Engineering, rodada de investimento ou expansão internacional.
+`GTM-009` e `GTM-010` permanecem autoridades editoriais ativas dentro deste domínio e não alteram, por si só, o estado `draft` da baseline econômico-comercial e territorial.
+
+A criação ou atualização deste domínio não inicia operação comercial, contratação de equipe, campanha, Product Engineering, rodada de investimento, expansão internacional ou implementação real de perfil social.
