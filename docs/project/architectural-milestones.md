@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.45.0
+version: 5.46.0
 owner: Guivos
-last_updated: 2026-08-21
+last_updated: 2026-08-22
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.83.0
+  - ROADMAP-12.84.0
   - GKR-GLOBAL-INTEGRITY-POST300-001
   - GPA-007
   - UXA-070
@@ -17,6 +17,8 @@ related:
   - GKR-UX-D5-C4B-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
   - GKR-BRAND-SIGNATURE-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
   - GKR-CHRISTIAN-FOUNDATION-001
   - BA-STR-002
   - BA-STR-002-COR-001
@@ -46,9 +48,9 @@ normative: false
 
 ## 1. Autoridade
 
-Este registro apresenta a linha de maturidade arquitetural consolidada. O estado oficial permanece em `GKR-STATE-001 v2.42.0`.
+Este registro apresenta a linha de maturidade arquitetural consolidada. O estado oficial permanece em `GKR-STATE-001 v2.43.0`.
 
-A versão 5.45.0 corrige a deriva do registro anterior, que terminava em M7.72 embora o repositório já tivesse alcançado M7.88. A atualização preserva os marcos anteriores como checkpoints históricos válidos.
+A versão 5.46.0 preserva integralmente a linha funcional até M7.88 e incorpora a autoridade pública do fundador como frente de marca/governança que não cria novo marco funcional.
 
 ```text
 MARCO ANTERIOR ≠ ESTADO CORRENTE
@@ -157,6 +159,8 @@ Design Delivery v4
 31 fontes + 8 guias
 ```
 
+A reconciliação nominal do Movimento 06 da Home Pública da Pessoa — `Da Possibilidade à Experiência` — preserva sua função semântica e também não cria novo marco funcional.
+
 Nenhum Design, UI ou implementação é produzido automaticamente por esses registros.
 
 ## 8. Business e Intelligence
@@ -165,15 +169,22 @@ A ressincronização do Guivos Business (`GPA-004 v1.6.0`) e a convergência do 
 
 Da mesma forma, as Homes Business e Intelligence integram o conjunto de oito Homes sem alterar M7.88.
 
-## 9. Marca e fundamento
+## 9. Marca, autoridade pública e fundamento
 
-A canonicalização da assinatura `Possibility, lived.`, a preparação marcária e a integração do Fundamento Cristão são frentes de marca/governança, não marcos funcionais UXA.
+A canonicalização da assinatura `Possibility, lived.`, a preparação marcária, a autoridade pública inicial do fundador e a integração do Fundamento Cristão são frentes de marca/governança, não marcos funcionais UXA.
 
 ```text
-marca/fundamento integrados
+Possibility, lived. → Guivos
+Do possível ao vivido. → assinatura pessoal do fundador
+Guilherme Oliveira → Founder of Guivos / principal referência humana pública inicial
+Lucas 2:52 → referência deliberada na bio pessoal do fundador
+
+marca / autoridade pública / fundamento integrados
 ≠ M7.89
 ≠ UXA-102
 ```
+
+A presença de Lucas 2:52 na bio do fundador não promove o Fundamento Cristão a Public Canon religioso automático.
 
 ## 10. Preservações históricas de governança
 
