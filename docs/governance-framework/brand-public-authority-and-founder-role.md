@@ -184,14 +184,27 @@ QUALIFICAÇÕES / IDENTIDADE PESSOAL POSSÍVEIS
 
 ASSINATURA AUTORAL
 → Do possível ao vivido.
+
+VERSÍCULO DE REFERÊNCIA NA BIO
+→ Lucas 2:52
 ```
 
-Baseline inicial de bio para Instagram:
+A bio do Instagram do fundador deve incluir a redação de trabalho já registrada em `GKR-CHRISTIAN-FOUNDATION-001`:
+
+> **“E Jesus continuava crescendo em sabedoria, em desenvolvimento e em graça diante de Deus e das pessoas.”**
+> **Lucas 2:52**
+
+Baseline conceitual da presença no Instagram:
 
 > **Fundador da @guivosglobal | Engenheiro | Cristão**<br>
-> **Do possível ao vivido.**
+> **Do possível ao vivido.**<br>
+> **“E Jesus continuava crescendo em sabedoria, em desenvolvimento e em graça diante de Deus e das pessoas.” — Lucas 2:52**
 
-Esse baseline não constitui copy imutável. Pontuação, idioma, composição e ordem podem evoluir conforme a implantação real do canal, preservando a arquitetura de identidade.
+Lucas 2:52 constitui um elemento deliberado da bio pública do fundador. Sua presença não redefine a autoridade de `GKR-CHRISTIAN-FOUNDATION-001`, que preserva uma base bíblica convergente e complementar, nem transforma um único versículo em representação total do fundamento cristão da Guivos.
+
+A materialização exata da bio deverá respeitar os limites técnicos vigentes do Instagram no momento da implantação. O versículo e sua referência permanecem como requisito deste baseline; os demais elementos podem ser compactados ou distribuídos entre campos do perfil sem alterar a arquitetura de identidade.
+
+Esse baseline não constitui copy imutável. Pontuação, idioma, composição e ordem podem evoluir conforme a implantação real do canal, preservando a arquitetura de identidade e a presença de Lucas 2:52.
 
 Não se deve transformar a bio em currículo, coleção de cargos ou sequência de autoproclamações de autoridade.
 
@@ -1011,6 +1024,7 @@ Do possível ao vivido. = assinatura pessoal do fundador
 Possibility, lived. = assinatura global da Guivos
 Possibilidade, vivida. = versão PT da assinatura Guivos
 #PossibilityLived = hashtag global da Guivos
+Lucas 2:52 = referência bíblica presente na bio do fundador
 Fundador-Construtor = direção de personalidade pública
 autoridade percebida = construída, não autodeclarada
 Guivos deve possuir independência institucional
@@ -1021,7 +1035,7 @@ matriz de atribuição editorial = normativa
 
 Podem evoluir sem alterar o núcleo:
 
-- bio de Instagram;
+- bio de Instagram, preservando Lucas 2:52 salvo nova decisão;
 - headline de LinkedIn;
 - frequência de publicação;
 - proporções editoriais;
@@ -1081,6 +1095,7 @@ OPINIÃO PESSOAL ≠ POSICIONAMENTO INSTITUCIONAL
 DO POSSÍVEL AO VIVIDO. ≠ ASSINATURA DA GUIVOS
 DO POSSÍVEL AO VIVIDO. → ASSINATURA PESSOAL DO FUNDADOR
 #POSSIBILITYLIVED ≠ HASHTAG PESSOAL
+LUCAS 2:52 NA BIO DO FUNDADOR ≠ REPRESENTAÇÃO ISOLADA DE TODA A BASE BÍBLICA DA GUIVOS
 POSSIBILIDADE ≠ PROMESSA
 CONECTAR ≠ IMPOR
 GUIVOS AMPLIAR POSSIBILIDADES ≠ GUIVOS CRIAR NECESSARIAMENTE TODAS AS POSSIBILIDADES
@@ -1111,6 +1126,8 @@ GUIVOS → DEVE POSSUIR IDENTIDADE INSTITUCIONAL PRÓPRIA
 > **Sua autoridade pública é construída por meio de visão, conhecimento, experiência, construção real, coerência e responsabilidade. Seu território autoral parte das possibilidades humanas e da forma como novas perspectivas, conexões, experiências e acessos podem aproximar pessoas daquilo que pode fazer sentido para suas vidas.**
 >
 > **`Do possível ao vivido.` constitui sua assinatura pessoal e autoral. `Possibility, lived.` permanece a assinatura institucional global da Guivos; `Possibilidade, vivida.` permanece sua versão oficial em português; e `#PossibilityLived` permanece sua hashtag global canônica.**
+>
+> **Lucas 2:52 integra deliberadamente a bio pública do fundador, preservando a redação de trabalho registrada no fundamento cristão da Guivos e sem substituir a base bíblica convergente que governa a organização.**
 >
 > **A Guivos será deliberadamente associada ao seu fundador, mas permanecerá maior do que qualquer indivíduo, desenvolvendo outras autoridades, preservando sua identidade institucional e mantendo capacidade de crescer independentemente da presença operacional cotidiana de quem a fundou.**
 
