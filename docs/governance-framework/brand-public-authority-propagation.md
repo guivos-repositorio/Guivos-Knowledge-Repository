@@ -14,7 +14,7 @@ related:
   - GKR-STATE-001
   - GKR-KNOWLEDGE-BOARD-001
   - GKR-CANON-MATRIX-001
-  - ROADMAP-12.83.0
+  - ROADMAP-12.84.0
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-NARR-005
@@ -329,11 +329,12 @@ RESÍDUO TEXTUAL ≠ AUTORIDADE
 Após esta reconciliação, permanecem separados:
 
 1. limpeza mecânica opcional de resíduos textuais em derivados extensos, sem nova decisão semântica;
-2. exposição direta da autoridade do fundador na navegação principal do GKR;
-3. eventual atualização material de snapshots externos de Design, se uma nova emissão for necessária;
-4. implantação real do perfil pessoal do fundador;
-5. definição final da composição material da bio conforme limites do Instagram;
-6. produção e publicação de conteúdo;
-7. qualquer mudança de Design, UX, produto ou implementação.
+2. eventual atualização material de snapshots externos de Design, se uma nova emissão for necessária;
+3. implantação real do perfil pessoal do fundador;
+4. definição final da composição material da bio conforme limites do Instagram;
+5. produção e publicação de conteúdo;
+6. qualquer mudança de Design, UX, produto ou implementação.
 
-Nenhum desses gates é iniciado automaticamente por este documento.
+A exposição direta da autoridade do fundador na navegação principal do GKR integra esta própria frente de propagação e não constitui gate posterior.
+
+Nenhum dos demais gates é iniciado automaticamente por este documento.
