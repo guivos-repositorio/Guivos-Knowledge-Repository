@@ -2663,10 +2663,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-inventario-agregado-canonico-por-familia" class="md-nav__link">
+  <a href="#2-inventario-agregado-por-familia" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Inventário agregado canônico por família
+        2. Inventário agregado por família
       
     </span>
   </a>
@@ -2685,10 +2685,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-cobertura-visual-canonica" class="md-nav__link">
+  <a href="#4-cobertura-visual-fisica" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Cobertura visual canônica
+        4. Cobertura visual física
       
     </span>
   </a>
@@ -2696,10 +2696,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-efeito-acumulado-d5-c2-d5-c3-no-catalogo" class="md-nav__link">
+  <a href="#5-efeito-acumulado-d5-c2-d5-c3-no-snapshot-historico" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Efeito acumulado D5-C2 → D5-C3 no catálogo
+        5. Efeito acumulado D5-C2 → D5-C3 no snapshot histórico
       
     </span>
   </a>
@@ -12374,10 +12374,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-inventario-agregado-canonico-por-familia" class="md-nav__link">
+  <a href="#2-inventario-agregado-por-familia" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Inventário agregado canônico por família
+        2. Inventário agregado por família
       
     </span>
   </a>
@@ -12396,10 +12396,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-cobertura-visual-canonica" class="md-nav__link">
+  <a href="#4-cobertura-visual-fisica" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Cobertura visual canônica
+        4. Cobertura visual física
       
     </span>
   </a>
@@ -12407,10 +12407,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-efeito-acumulado-d5-c2-d5-c3-no-catalogo" class="md-nav__link">
+  <a href="#5-efeito-acumulado-d5-c2-d5-c3-no-snapshot-historico" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Efeito acumulado D5-C2 → D5-C3 no catálogo
+        5. Efeito acumulado D5-C2 → D5-C3 no snapshot histórico
       
     </span>
   </a>
@@ -12481,19 +12481,27 @@
 <h2 id="1-regra-de-leitura">1. Regra de leitura<a class="headerlink" href="#1-regra-de-leitura" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>SVG existente
 ≠ superfície granular adicional por padrão
+≠ wireframe vigente automaticamente
 ≠ transição integralmente validada automaticamente
 ≠ jornada integrada validada
 ≠ implementação técnica
 </code></pre></div>
+<p>Após a reconciliação pós-PR #313/#314, aplica-se também:</p>
+<div class="highlight"><pre><span></span><code>CONTAGEM FÍSICA DE SVGs
+≠ CONTAGEM DE WIREFRAMES VIGENTES
+≠ CONTAGEM DE WIREFRAMES VALIDADOS
+</code></pre></div>
+<p><code>UXA-015..018</code> e seus SVGs associados permanecem fisicamente no repositório para rastreabilidade, mas são históricos <code>superseded</code> e não podem sustentar maturidade atual da experiência autenticada principal de Organização ou Coletivo.</p>
 <p>A D5-C1 contratou <code>PER-010 — Meus Objetivos</code>, <code>PER-011 — Meus Próximos Passos</code> e <code>PER-012 — Minha Evolução</code>. A D5-C2 criou um SVG low-fidelity para cada uma dessas responsabilidades sem criar novo ID granular e sem promover <code>TRN-008..013</code>. A D5-C3 reforma in-place e valida funcionalmente os três estados-base, mantendo as transições contratadas.</p>
-<h2 id="2-inventario-agregado-canonico-por-familia">2. Inventário agregado canônico por família<a class="headerlink" href="#2-inventario-agregado-canonico-por-familia" title="Permanent link">&para;</a></h2>
+<h2 id="2-inventario-agregado-por-familia">2. Inventário agregado por família<a class="headerlink" href="#2-inventario-agregado-por-familia" title="Permanent link">&para;</a></h2>
+<p>A coluna <code>SVGs</code> abaixo é <strong>inventário físico</strong>. Ela não é, por si só, indicador de maturidade vigente.</p>
 <table>
 <thead>
 <tr>
 <th>Participante ou camada</th>
 <th>Família</th>
-<th style="text-align: right;">SVGs</th>
-<th>Validação funcional vigente</th>
+<th style="text-align: right;">SVGs físicos</th>
+<th>Estado de validação que pode ser afirmado</th>
 <th>Continuidade integrada</th>
 <th>Lacuna associada</th>
 </tr>
@@ -12583,7 +12591,7 @@
 <td>Pessoa</td>
 <td>Planos, comparação e cobrança</td>
 <td style="text-align: right;"><strong>3</strong></td>
-<td><strong>3 validados</strong></td>
+<td><strong>3 validados no pacote próprio</strong></td>
 <td>TRN-401 a 405 locais; origem voluntária contratada</td>
 <td>gateway/proration e materialização de PER-009</td>
 </tr>
@@ -12591,7 +12599,7 @@
 <td>Pessoa em Coletivos</td>
 <td>descoberta e busca</td>
 <td style="text-align: right;">5</td>
-<td>5 validados</td>
+<td>5 validados no recorte próprio</td>
 <td>parcial</td>
 <td>continuidade entre famílias</td>
 </tr>
@@ -12599,7 +12607,7 @@
 <td>Pessoa em Coletivos</td>
 <td>Perfil Público</td>
 <td style="text-align: right;">4</td>
-<td>4 validados</td>
+<td>4 validados no recorte próprio</td>
 <td>parcial</td>
 <td>handoff para solicitação</td>
 </tr>
@@ -12639,31 +12647,31 @@
 <td>Pessoa em Coletivos</td>
 <td>Início do Participante</td>
 <td style="text-align: right;">1</td>
-<td>validado</td>
+<td>validado por UXA-095/096 no recorte da Pessoa participante; não deriva de UXA-016/018</td>
 <td>TRN-111 integralmente validada</td>
 <td>P0B e áreas internas separadas</td>
 </tr>
 <tr>
 <td>Coletivo</td>
-<td>referência inicial</td>
+<td>referência inicial histórica</td>
 <td style="text-align: right;">1</td>
-<td>validado</td>
-<td>parcial</td>
-<td>continuidade com gestão</td>
+<td><code>UXA-016/018</code> superseded; artefato físico não é wireframe principal vigente</td>
+<td>não utilizável como baseline atual</td>
+<td><strong>wireframe principal autenticado pendente</strong></td>
 </tr>
 <tr>
 <td>Coletivo</td>
 <td>Visão Geral do Responsável</td>
 <td style="text-align: right;">1</td>
-<td>validado; navegação reformulada A4</td>
-<td>TRN-112 e TRN-417/418 integrais</td>
-<td>gestão especializada</td>
+<td>UXA-086/087 preservam evidência local do pacote administrativo; <strong>não constituem baseline final da UX principal</strong></td>
+<td>TRN-112 e contratos de Planos preservam maturidade própria</td>
+<td>arquitetura principal autenticada pendente</td>
 </tr>
 <tr>
 <td>Coletivo</td>
 <td>gestão de solicitações</td>
 <td style="text-align: right;">7</td>
-<td>7 validados</td>
+<td>7 validados no fluxo especializado</td>
 <td>handoffs aplicáveis integralmente validados</td>
 <td>operação interna posterior</td>
 </tr>
@@ -12671,31 +12679,31 @@
 <td>Coletivo</td>
 <td>Planos, comparação e cobrança</td>
 <td style="text-align: right;"><strong>3</strong></td>
-<td><strong>3 validados</strong></td>
-<td>TRN-417/418 integrais; TRN-411 a 415 locais; TRN-416 parcial</td>
-<td>contratação/dimensionamento assistido e cobrança real</td>
+<td><strong>3 validados no fluxo especializado</strong></td>
+<td>contratos de origem/retorno preservam maturidade própria; TRN-411 a 415 locais; TRN-416 parcial</td>
+<td>contratação/dimensionamento assistido e cobrança real; origem principal final pendente</td>
 </tr>
 <tr>
 <td>Organização</td>
 <td>visão geral e cadastro</td>
 <td style="text-align: right;">2</td>
-<td>2 validados; ORG-001 reformulada A4</td>
-<td>TRN-427/428 integrais; publicação–descoberta integral em TRN-203</td>
-<td>matriz institucional completa</td>
+<td><strong>ORG-001 histórico/superseded como wireframe principal; cadastro preserva validação própria por UXA-008/013</strong></td>
+<td>publicação–descoberta preservada; contratos de Planos têm maturidade própria</td>
+<td><strong>wireframe principal autenticado e matriz institucional completa pendentes</strong></td>
 </tr>
 <tr>
 <td>Organização</td>
 <td>Planos, comparação e cobrança</td>
 <td style="text-align: right;"><strong>3</strong></td>
-<td><strong>3 validados</strong></td>
-<td>TRN-427/428 integrais; TRN-421 a 425 locais; TRN-426 parcial</td>
-<td>contratação/dimensionamento assistido e cobrança real</td>
+<td><strong>3 validados no fluxo especializado</strong></td>
+<td>contratos de origem/retorno preservam maturidade própria; TRN-421 a 425 locais; TRN-426 parcial</td>
+<td>contratação/dimensionamento assistido e cobrança real; origem principal final pendente</td>
 </tr>
 <tr>
 <td>camada comercial</td>
 <td>Opportunity Boost</td>
 <td style="text-align: right;">46</td>
-<td><strong>46 validados</strong></td>
+<td><strong>46 validados no escopo próprio</strong></td>
 <td>parcial</td>
 <td>TRN-304/305/306 e integrações específicas</td>
 </tr>
@@ -12708,10 +12716,10 @@
 <td>processo externo posterior; contratação/dimensionamento assistido</td>
 </tr>
 <tr>
-<td><strong>Total canônico</strong></td>
+<td><strong>Total físico do catálogo</strong></td>
 <td></td>
 <td style="text-align: right;"><strong>121</strong></td>
-<td><strong>121 validados; 0 pendentes</strong></td>
+<td><strong>maturidade agregada não pode ser inferida; recomputação governada pendente</strong></td>
 <td></td>
 <td></td>
 </tr>
@@ -12722,44 +12730,44 @@
 <thead>
 <tr>
 <th>Registro</th>
-<th style="text-align: right;">Quantidade</th>
-<th>Estado vigente após D5-C3</th>
+<th style="text-align: right;">Quantidade física</th>
+<th>Estado vigente</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>superfícies/estados/responsabilidades/fronteiras</td>
 <td style="text-align: right;"><strong>57</strong></td>
-<td>D5-C3 não cria novo ID</td>
+<td>inventário granular; maturidade por item</td>
 </tr>
 <tr>
 <td>transições documentais</td>
 <td style="text-align: right;"><strong>66</strong></td>
-<td>D5-C3 não promove <code>TRN-008..013</code></td>
+<td>maturidade por transição</td>
 </tr>
 <tr>
-<td>catálogo canônico</td>
+<td>catálogo físico</td>
 <td style="text-align: right;"><strong>121 SVGs</strong></td>
-<td><code>active</code> 0.31.0</td>
+<td><code>active</code> 0.32.0; inclui artefatos históricos superseded</td>
 </tr>
 <tr>
 <td>matriz de rastreabilidade</td>
-<td style="text-align: right;"><strong>121 SVGs / 34 perfis</strong></td>
-<td>R32–R34 validados localmente</td>
+<td style="text-align: right;"><strong>121 associações físicas / 34 perfis</strong></td>
+<td>associação ≠ autoridade vigente</td>
 </tr>
 <tr>
 <td>galeria visual</td>
-<td style="text-align: right;"><strong>121 SVGs</strong></td>
-<td>121 validados / 0 pendentes</td>
+<td style="text-align: right;"><strong>121 SVGs físicos</strong></td>
+<td>resumo global <code>121 validados / 0 pendentes</code> superseded como claim de maturidade</td>
 </tr>
 </tbody>
 </table>
-<h2 id="4-cobertura-visual-canonica">4. Cobertura visual canônica<a class="headerlink" href="#4-cobertura-visual-canonica" title="Permanent link">&para;</a></h2>
+<h2 id="4-cobertura-visual-fisica">4. Cobertura visual física<a class="headerlink" href="#4-cobertura-visual-fisica" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>Condição</th>
-<th style="text-align: right;">Quantidade</th>
+<th style="text-align: right;">Quantidade histórica/física</th>
 </tr>
 </thead>
 <tbody>
@@ -12776,30 +12784,30 @@
 <td style="text-align: right;"><strong>2</strong></td>
 </tr>
 <tr>
-<td><strong>Total</strong></td>
+<td><strong>Total de IDs</strong></td>
 <td style="text-align: right;"><strong>57</strong></td>
 </tr>
 </tbody>
 </table>
-<h2 id="5-efeito-acumulado-d5-c2-d5-c3-no-catalogo">5. Efeito acumulado D5-C2 → D5-C3 no catálogo<a class="headerlink" href="#5-efeito-acumulado-d5-c2-d5-c3-no-catalogo" title="Permanent link">&para;</a></h2>
+<p>Essas contagens descrevem cobertura física/associativa do snapshot e não resolvem a vigência de cada artefato após supersessões posteriores.</p>
+<h2 id="5-efeito-acumulado-d5-c2-d5-c3-no-snapshot-historico">5. Efeito acumulado D5-C2 → D5-C3 no snapshot histórico<a class="headerlink" href="#5-efeito-acumulado-d5-c2-d5-c3-no-snapshot-historico" title="Permanent link">&para;</a></h2>
 <p>D5-C2 alterou o inventário físico:</p>
 <ul>
-<li>SVGs canônicos: <strong>118 → 121</strong>;</li>
+<li>SVGs físicos registrados: <strong>118 → 121</strong>;</li>
 <li>associações: <strong>118 → 121</strong>;</li>
 <li>perfis: <strong>31 → 34</strong>;</li>
-<li>IDs com referência visual: <strong>42 → 45</strong>;</li>
-<li>responsabilidades sem SVG dedicado: <strong>13 → 10</strong>.</li>
+<li>IDs com referência visual no snapshot: <strong>42 → 45</strong>;</li>
+<li>responsabilidades sem SVG dedicado no snapshot: <strong>13 → 10</strong>.</li>
 </ul>
-<p>D5-C3 não altera essas contagens. Ela altera somente a maturidade visual:</p>
+<p>No momento de D5-C3, o registro declarou:</p>
 <ul>
-<li>validações funcionais vigentes de SVG: <strong>118 → 121</strong>;</li>
-<li>pendências específicas de SVG: <strong>3 → 0</strong>;</li>
-<li><code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code>: passam de materializados/pendentes para <strong>validados localmente</strong>;</li>
-<li><code>TRN-008..013</code>: permanecem contratadas;</li>
-<li><code>PER-009</code>: permanece responsabilidade sem SVG dedicado;</li>
-<li><code>TRN-406/407</code>: permanecem contratadas;</li>
-<li><code>TRN-417/418</code> e <code>TRN-427/428</code>: permanecem integralmente validadas no limite de navegação administrativa.</li>
+<li>validações funcionais de SVG naquele snapshot: <strong>118 → 121</strong>;</li>
+<li>pendências específicas daquele snapshot: <strong>3 → 0</strong>;</li>
+<li><code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code>: promovidos para <strong>validados localmente</strong>;</li>
+<li><code>TRN-008..013</code>: permaneceram contratadas;</li>
+<li><code>PER-009</code>: permaneceu responsabilidade sem SVG dedicado.</li>
 </ul>
+<p>A reconciliação pós-PR #313/#314 <strong>não reescreve a história desse snapshot</strong>, mas supersede seu uso como resumo da maturidade visual atual do repositório, porque <code>UXA-015..018</code> deixaram de possuir autoridade vigente.</p>
 <h2 id="6-separacoes-obrigatorias">6. Separações obrigatórias<a class="headerlink" href="#6-separacoes-obrigatorias" title="Permanent link">&para;</a></h2>
 <ul>
 <li>primeira Tela Hoje e Tela Hoje recorrente são variantes do mesmo <code>PER-008</code>;</li>
@@ -12824,19 +12832,25 @@
 <li>Coletivo usa <code>Livre · Mobiliza · Impacta · Rede</code>;</li>
 <li>Organização usa <code>Conecta · Eleva · Transforma</code>;</li>
 <li>Guivos Business usa <code>Start · Growth · Scale · Enterprise</code> como Produto Especializado separado;</li>
-<li><code>TRN-304</code>, <code>TRN-305</code>, <code>TRN-306</code>, <code>TRN-416</code> e <code>TRN-426</code> permanecem continuidades separadas.</li>
+<li><code>TRN-304</code>, <code>TRN-305</code>, <code>TRN-306</code>, <code>TRN-416</code> e <code>TRN-426</code> permanecem continuidades separadas;</li>
+<li><strong>materialização histórica de Organização/Coletivo ≠ wireframe principal autenticado vigente</strong>;</li>
+<li><strong>contrato de navegação especializado ≠ definição da arquitetura principal autenticada</strong>.</li>
 </ul>
 <h2 id="7-estado-do-catalogo">7. Estado do catálogo<a class="headerlink" href="#7-estado-do-catalogo" title="Permanent link">&para;</a></h2>
 <ul>
-<li>catálogo: <code>active</code> 0.31.0;</li>
-<li>galeria principal: <strong>121 SVGs / 121 validados / 0 pendentes</strong>;</li>
-<li>matriz por SVG: <strong>121 associações / 34 perfis</strong>;</li>
-<li><code>PER-010..012</code>: validados localmente pela D5-C3;</li>
-<li><code>TRN-008..013</code>: permanecem <code>contratadas</code>;</li>
+<li>catálogo físico: <code>active</code> 0.32.0;</li>
+<li>inventário físico preservado: <strong>121 SVGs</strong>;</li>
+<li>matriz física: <strong>121 associações / 34 perfis</strong>;</li>
+<li>resumo <code>121 SVGs / 121 validados / 0 pendentes</code>: <strong>superseded como claim de maturidade vigente</strong>;</li>
+<li>wireframe principal autenticado da Organização: <strong>pendente</strong>;</li>
+<li>wireframe principal autenticado do Coletivo: <strong>pendente</strong>;</li>
+<li>fluxos especializados preservam sua maturidade própria quando sustentados por autoridade independente;</li>
+<li><code>PER-010..012</code>: permanecem validados localmente pela D5-C3;</li>
+<li><code>TRN-008..013</code>: preservam seu estado documental próprio;</li>
 <li>jornadas da Pessoa, Coletivo e Organização: <code>draft</code>;</li>
 <li>protótipo e Engenharia de Produto: não iniciados.</li>
 </ul>
-<p>A D5-C3 não autoriza implementação, cobrança real, UXA-102/V5, D6, D7 ou próxima frente.</p>
+<p>Nenhuma contagem corrigida de wireframes vigentes/validados é inferida nesta reconciliação. Uma nova contagem somente poderá ser publicada após recomputação governada do inventário.</p>
 
 
 

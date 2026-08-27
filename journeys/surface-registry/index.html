@@ -2812,10 +2812,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-preservacoes" class="md-nav__link">
+  <a href="#6-preservacoes-e-correcoes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Preservações
+        6. Preservações e correções
       
     </span>
   </a>
@@ -12418,10 +12418,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-preservacoes" class="md-nav__link">
+  <a href="#6-preservacoes-e-correcoes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Preservações
+        6. Preservações e correções
       
     </span>
   </a>
@@ -12480,17 +12480,19 @@
 <h1 id="registro-granular-de-superficies-e-estados">Registro Granular de Superfícies e Estados<a class="headerlink" href="#registro-granular-de-superficies-e-estados" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.</p>
-<p>A D5-C1 adicionou <code>GKR-SURF-PER-010 — Meus Objetivos</code>, <code>GKR-SURF-PER-011 — Meus Próximos Passos</code> e <code>GKR-SURF-PER-012 — Minha Evolução</code> como responsabilidades contratadas. A D5-C2 materializou um SVG low-fidelity para cada uma sem criar novos IDs. A D5-C3 reforma e valida funcionalmente esses três estados-base, mantendo a contagem em 57 IDs e preservando <code>TRN-008..013</code> como contratadas.</p>
+<p>A D5-C1 adicionou <code>GKR-SURF-PER-010 — Meus Objetivos</code>, <code>GKR-SURF-PER-011 — Meus Próximos Passos</code> e <code>GKR-SURF-PER-012 — Minha Evolução</code> como responsabilidades contratadas. A D5-C2 materializou um SVG low-fidelity para cada uma sem criar novos IDs. A D5-C3 reforma e valida funcionalmente esses três estados-base, mantendo a contagem em 57 IDs e preservando <code>TRN-008..013</code> conforme sua autoridade própria.</p>
+<p>A reconciliação pós-PR #313/#314 corrige a leitura de Organização e Coletivo: <code>UXA-015..018</code> são históricos <code>superseded</code>; referências administrativas ou especializadas posteriores não podem ser promovidas por inferência a wireframe principal autenticado final.</p>
 <h2 id="2-convencoes">2. Convenções<a class="headerlink" href="#2-convencoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>ausente</code>: responsabilidade conhecida sem materialização necessária;</li>
 <li><code>indeterminado</code>: evidência insuficiente;</li>
 <li><code>não examinado</code>: integração ainda não avaliada;</li>
-<li><code>parcial</code>: cobertura incompleta;</li>
+<li><code>parcial</code>: cobertura incompleta ou materialização válida apenas em recorte específico;</li>
 <li><code>contratado</code>: responsabilidade/ligação governada sem validação funcional suficiente;</li>
 <li><code>materializado</code>: referência existente sem implicar validação;</li>
-<li><code>validado</code>: superfície examinada funcionalmente;</li>
-<li><code>local</code>: validação limitada ao pacote de origem.</li>
+<li><code>validado</code>: superfície examinada funcionalmente no escopo explicitado;</li>
+<li><code>local</code>: validação limitada ao pacote de origem;</li>
+<li><code>histórico/superseded</code>: artefato preservado por rastreabilidade sem autoridade vigente para o estado que pretendia definir.</li>
 </ul>
 <h2 id="3-contagem">3. Contagem<a class="headerlink" href="#3-contagem" title="Permanent link">&para;</a></h2>
 <table>
@@ -12527,6 +12529,7 @@
 </tr>
 </tbody>
 </table>
+<p>A contagem de IDs permanece estrutural. Ela não implica que todos estejam materializados ou validados.</p>
 <h2 id="4-inventario-principal">4. Inventário principal<a class="headerlink" href="#4-inventario-principal" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -12757,8 +12760,8 @@
 <td>Início do Participante</td>
 <td>participante</td>
 <td>móvel</td>
-<td><strong>validado</strong></td>
-<td>UXA-016; UXA-018; UXA-056; UXA-058; UXA-059</td>
+<td><strong>validado no recorte da Pessoa participante</strong></td>
+<td>UXA-056; UXA-058; UXA-059</td>
 <td>UXA-095/096</td>
 <td>UXA-096</td>
 <td><a href="../surface-registry-person-details/">Pessoa</a></td>
@@ -12842,13 +12845,13 @@
 </tr>
 <tr>
 <td>GKR-SURF-COL-001</td>
-<td>presença pública existente</td>
+<td>presença pública existente / entrada coletiva ainda não consolidada</td>
 <td>visitante/responsável</td>
 <td>público e protegido</td>
-<td>materializado</td>
+<td>parcial</td>
 <td>UXA-014; UXA-056</td>
-<td>UXA-016</td>
-<td>UXA-018; UXA-063</td>
+<td>presença pública por UXA-062; <code>UXA-016</code> apenas histórico superseded</td>
+<td>UXA-063 no recorte público; <code>UXA-018</code> superseded</td>
 <td><a href="../surface-registry-collective-details/">Coletivo</a></td>
 </tr>
 <tr>
@@ -12856,10 +12859,10 @@
 <td>Visão Geral do Responsável</td>
 <td>responsável</td>
 <td>computador protegido</td>
-<td>validado</td>
+<td>parcial / materialização local</td>
 <td>UXA-014; UXA-059; UXA-100-A4</td>
-<td>UXA-086/087; reformulação UXA-100-A4</td>
-<td>UXA-087; navegação UXA-100-A4</td>
+<td>UXA-086/087 como evidência administrativa local; navegação A4 no pacote próprio</td>
+<td>UXA-087 local; <strong>não valida o wireframe principal autenticado final</strong></td>
 <td><a href="../surface-registry-collective-details/">Coletivo</a></td>
 </tr>
 <tr>
@@ -12933,10 +12936,10 @@
 <td>Planos e comparação do Coletivo — Livre · Mobiliza · Impacta · Rede</td>
 <td>responsável autorizado</td>
 <td>computador/protegido</td>
-<td><strong>validado</strong></td>
+<td><strong>validado no fluxo especializado</strong></td>
 <td>GEM-004-A1/A2; GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3; UXA-100-A4</td>
-<td>UXA-100/A1; retorno reformulado UXA-100-A4</td>
-<td>UXA-100-A2/A3; navegação UXA-100-A4</td>
+<td>UXA-100/A1; retorno contratado por UXA-100-A4</td>
+<td>UXA-100-A2/A3; navegação no escopo próprio A4</td>
 <td><a href="../surface-registry-collective-details/">Coletivo</a></td>
 </tr>
 <tr>
@@ -12977,10 +12980,10 @@
 <td>Visão Geral da Organização</td>
 <td>representante</td>
 <td>protegido</td>
-<td>validado</td>
-<td>UXA-014; UXA-100-A4</td>
-<td>UXA-015; reformulação UXA-100-A4</td>
-<td>UXA-017; navegação UXA-100-A4</td>
+<td><strong>contratado; wireframe principal pendente</strong></td>
+<td>UXA-014; contratos especializados posteriores conforme seu escopo</td>
+<td><code>UXA-015</code>/SVG associado somente como histórico superseded</td>
+<td><code>UXA-017</code> superseded; <strong>sem validação vigente do wireframe principal</strong></td>
 <td><a href="../surface-registry-organization-details/">Organização</a></td>
 </tr>
 <tr>
@@ -13054,10 +13057,10 @@
 <td>Planos e comparação da Organização — Conecta · Eleva · Transforma</td>
 <td>representante autorizado</td>
 <td>computador/protegido</td>
-<td><strong>validado</strong></td>
+<td><strong>validado no fluxo especializado</strong></td>
 <td>GEM-004-A1/A2; GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3; UXA-100-A4</td>
-<td>UXA-100/A1; retorno reformulado UXA-100-A4</td>
-<td>UXA-100-A2/A3; navegação UXA-100-A4</td>
+<td>UXA-100/A1; retorno contratado por UXA-100-A4</td>
+<td>UXA-100-A2/A3; navegação no escopo próprio A4</td>
 <td><a href="../surface-registry-organization-details/">Organização</a></td>
 </tr>
 <tr>
@@ -13179,27 +13182,30 @@ Coletivo: Livre · Mobiliza · Impacta · Rede
 Organização: Conecta · Eleva · Transforma
 Guivos Business: Start · Growth · Scale · Enterprise
 </code></pre></div>
-<p>A origem voluntária de Planos permanece representada por <code>PER-009</code>, <code>COL-002</code> e <code>ORG-001</code>. A criação de <code>PER-009</code> não materializa uma arquitetura completa de Conta nem autoriza preencher outras responsabilidades administrativas por inferência.</p>
-<p>A D5-C1 adiciona <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> como responsabilidades pessoais especializadas ligadas a Hoje por transições contratadas. A D5-C2 lhes adiciona materialização low-fidelity. A D5-C3 promove somente a maturidade local dessas três superfícies para <code>validado</code>, sem alterar a maturidade dos handoffs.</p>
+<p><code>PER-009</code>, <code>COL-002</code> e <code>ORG-001</code> continuam identificadores semânticos possíveis de origem/retorno para contratos de Planos. Isso <strong>não prova materialização visual vigente</strong> dessas origens. A criação de <code>PER-009</code> não materializa uma arquitetura completa de Conta; da mesma forma, os contratos de navegação de <code>COL-002</code> e <code>ORG-001</code> não substituem a futura definição da arquitetura principal autenticada de Coletivo e Organização.</p>
+<p>A D5-C1 adiciona <code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> como responsabilidades pessoais especializadas ligadas a Hoje por transições contratadas. A D5-C2 lhes adiciona materialização low-fidelity. A D5-C3 promove somente a maturidade local dessas três superfícies conforme sua autoridade própria.</p>
 <p>Guivos Business é produto especializado e não recebe novos IDs neste registro.</p>
 <p><code>BND-002</code> não é plano, produto, checkout ou fronteira exclusiva de Enterprise/Scale. Ele identifica a necessidade de contratação/dimensionamento assistido.</p>
-<h2 id="6-preservacoes">6. Preservações<a class="headerlink" href="#6-preservacoes" title="Permanent link">&para;</a></h2>
+<h2 id="6-preservacoes-e-correcoes">6. Preservações e correções<a class="headerlink" href="#6-preservacoes-e-correcoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li>total de IDs permanece <strong>57</strong>;</li>
-<li><code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> possuem SVG low-fidelity e validação funcional local pela D5-C3;</li>
+<li><code>PER-010</code>, <code>PER-011</code> e <code>PER-012</code> preservam sua materialização e validação local pela D5-C3;</li>
 <li><code>PER-009</code> permanece contratado e sem SVG dedicado;</li>
-<li>SVGs canônicos permanecem <strong>121</strong>;</li>
-<li>IDs com referência visual permanecem <strong>45 de 57</strong>;</li>
-<li>responsabilidades sem SVG dedicado permanecem <strong>10</strong>;</li>
+<li>inventário físico de SVGs permanece <strong>121</strong>, incluindo artefatos históricos superseded;</li>
+<li>a antiga conclusão agregada <code>121 validados / 0 pendentes</code> <strong>não é mais vigente</strong>;</li>
+<li>uma nova contagem de wireframes vigentes/validados <strong>não é inferida</strong> sem recomputação governada;</li>
 <li><code>PER-203</code> permanece validada no recorte de saída externa;</li>
 <li><code>BND-001</code> permanece examinado, sem tela própria;</li>
 <li><code>BND-002</code> permanece parcial, sem tela própria;</li>
-<li><code>TRN-008..013</code> permanecem contratadas;</li>
 <li><code>TRN-416</code> e <code>TRN-426</code> permanecem parciais;</li>
+<li><code>UXA-015..018</code> permanecem históricos <code>superseded</code>;</li>
+<li>wireframe principal autenticado da Organização permanece <strong>pendente</strong>;</li>
+<li>wireframe principal autenticado do Coletivo permanece <strong>pendente</strong>;</li>
+<li>fluxos especializados preservam sua maturidade quando sustentados por autoridade independente;</li>
 <li>nenhuma jornada ou Engenharia de Produto é promovida.</li>
 </ul>
 <h2 id="7-estado">7. Estado<a class="headerlink" href="#7-estado" title="Permanent link">&para;</a></h2>
-<p>O registro permanece <code>active</code> como inventário granular. Validação local dos três SVGs D5-C3 não equivale a validação das transições, implementação ou disponibilidade em produto.</p>
+<p>O registro permanece <code>active</code> como inventário granular. A maturidade deve ser lida por superfície e por escopo de autoridade, nunca pela mera existência física de SVG. Organização e Coletivo permanecem com arquitetura principal autenticada e respectivos wireframes finais <strong>pendentes</strong>.</p>
 
 
 
