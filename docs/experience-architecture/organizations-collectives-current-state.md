@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-26
 normative: false
@@ -34,7 +34,7 @@ A regra de leitura é:
 
 > **Organizações e Coletivos são participantes estruturais do ecossistema Guivos. Sua fundação, suas relações, suas jornadas, seu papel no supply e sua experiência de produto possuem níveis de maturidade diferentes e devem permanecer explicitamente separados.**
 
-Para compreender em profundidade **quais oportunidades esses agentes podem materializar, como a Guivos pesquisa supply real, como relevância é testada para diferentes perfis e por que algumas oportunidades são descartadas**, a leitura principal complementar é [Organizações e Coletivos — Supply, Rede e Modelo de Valor](organizations-collectives-supply-and-value.md). Essa página funciona como atlas de oportunidades e validação, reunindo exemplos mundiais, perfis sintéticos, gates, counterexamples, evidência e limites de PMF.
+Para compreender em profundidade **quais oportunidades esses agentes podem materializar, como a Guivos pesquisa supply real, como relevância é testada para diferentes perfis e por que algumas oportunidades são descartadas**, a leitura principal complementar é [Organizações e Coletivos — Atlas de Oportunidades, Relevância, Supply e Validação](organizations-collectives-supply-and-value.md). Essa página reúne exemplos mundiais, perfis sintéticos, gates, counterexamples, evidência e limites de PMF.
 
 ## 2. Estado executivo
 
@@ -47,7 +47,7 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | Jornada da Organização | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-ORGANIZATION-001` |
 | Jornada do Coletivo | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-COLLECTIVE-001` |
 | corpus de oportunidades reais | Research consolidado pré-campo | `RP-002-SUP-001` |
-| atlas de supply, relevância e testes | `active` 1.1.0, não normativo | `GKR-UX-ORGCOL-SUPPLY-VALUE-001` |
+| atlas de oportunidades, supply, relevância e testes | `active` 1.1.1, não normativo | `GKR-UX-ORGCOL-SUPPLY-VALUE-001` |
 | papel no supply | pesquisa consolidada pré-campo | `RP-002-OCE-001` |
 | proposta de valor econômica e de rede | hipótese de Research, não Canon | `RP-002-OCE-001` |
 | validação com perfis sintéticos | executada metodologicamente; não é PMF | `RP-002-PMF-001` + atlas |
@@ -171,7 +171,7 @@ Qualquer trecho desses documentos que derive maturidade de `UXA-015`, `UXA-016`,
 
 A investigação `RP-002` ampliou a compreensão sobre Organizações e Coletivos como agentes do supply.
 
-A leitura rica e orientada a exemplos está em [Supply, Rede e Modelo de Valor](organizations-collectives-supply-and-value.md). O corpus probatório completo está em [Corpus Real e Supply Ecosystems](../research/RP-002/real-world-supply-corpus.md), e o aprofundamento econômico em [Organizações, Coletivos, Efeito de Rede e Modelo Econômico do Supply](../research/RP-002/organizations-collectives-and-economic-model.md).
+A leitura rica e orientada a exemplos está em [Atlas de Oportunidades, Relevância, Supply e Validação](organizations-collectives-supply-and-value.md). O corpus probatório completo está em [Corpus Real e Supply Ecosystems](../research/RP-002/real-world-supply-corpus.md), e o aprofundamento econômico em [Organizações, Coletivos, Efeito de Rede e Modelo Econômico do Supply](../research/RP-002/organizations-collectives-and-economic-model.md).
 
 ### 8.1 Papéis possíveis de Organizações
 
