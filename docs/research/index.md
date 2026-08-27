@@ -2,9 +2,9 @@
 id: GKR-RES-000
 title: Research
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Knowledge Repository
-last_updated: 2026-06-29
+last_updated: 2026-08-26
 ---
 
 # Research
@@ -86,8 +86,45 @@ Um modelo produzido por Research somente será considerado suficientemente madur
 3. sustentar previsões coerentes dentro dos limites declarados;
 4. manter consistência em contextos distintos ou explicitar claramente seus limites de generalização.
 
-## Primeiro programa
+## Programas ativos
 
-O primeiro programa oficial é o [RP-001 — Ecosystem Research Program](RP-001/index.md).
+### RP-001 — Ecosystem Research Program
 
-Seu objetivo é investigar o estado da arte, identificar condições permanentes recorrentes em ecossistemas complexos capazes de gerar valor sustentável para seus participantes e apoiar o `BA-STR-002 — Business Outcomes`.
+O [RP-001 — Ecosystem Research Program](RP-001/index.md) investiga quais condições permanentes aparecem repetidamente em ecossistemas complexos capazes de gerar valor sustentável para seus participantes.
+
+Seu objetivo principal é reduzir incertezas para o `BA-STR-002 — Business Outcomes`, preservando Evidence Registry, fenômenos, meta-síntese e recomendações arquiteturais.
+
+### RP-002 — Possibilidades, Oportunidades, Supply e Evidência de Contribuição
+
+O [RP-002 — Possibilidades, Oportunidades, Supply e Evidência de Contribuição](RP-002/index.md) investiga se, uma vez compreendido o Momento de uma Pessoa, existem no mundo caminhos e oportunidades concretas suficientemente relevantes para apoiar sua Journey e como a Guivos pode descobrir, governar, contextualizar e aprender com esse supply sem vender relevância ou fabricar transformação.
+
+O programa consolida:
+
+- Possibilidade × Oportunidade;
+- Possibility Patterns e hipóteses contextuais;
+- mecanismos;
+- corpus real nos nove Domínios de Evolução;
+- Direct e Enabling Supply;
+- Supply Ecosystems;
+- discovery, admission, provenance e freshness;
+- Source Coverage e Possibility Gaps;
+- papel de Organizações e Coletivos;
+- Neutralidade Econômica da Relevância;
+- Contribution Intelligence como hipótese;
+- diferenciação competitiva da Guivos;
+- protocolo de PMF;
+- Field Kit e prontidão do piloto;
+- registro explícito de claims provadas, convergidas, simuladas e ainda não validadas.
+
+## Regra de maturidade entre programas
+
+Os Research Programs podem produzir conclusões em níveis diferentes de maturidade.
+
+Uma conclusão de Research não deve ser promovida à Canon apenas porque:
+
+- parece conceitualmente correta;
+- foi observada em simulação;
+- possui exemplo real;
+- apresenta forte coerência interna.
+
+Sempre que possível, a promoção deverá preservar evidência, contraexemplos, limites e owner arquitetural responsável.
