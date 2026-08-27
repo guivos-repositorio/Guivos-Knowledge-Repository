@@ -193,12 +193,13 @@ nav:
               - Estados Patrocinados — Validação: experience-architecture/uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md
               - Gestão da Campanha Ativa: experience-architecture/uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md
       - Organizações e Coletivos:
-          - Fundamentos de Organizações e Coletivos: experience-architecture/uxa-014-organizations-and-collectives-functional-foundation.md
-          - Organização — Wireframe: experience-architecture/uxa-015-organization-overview-low-fidelity-wireframe.md
-          - Organização — Validação: experience-architecture/uxa-017-organization-overview-functional-validation-and-reformulation.md
-          - Coletivo — Wireframe: experience-architecture/uxa-016-collective-home-low-fidelity-wireframe.md
-          - Coletivo — Validação: experience-architecture/uxa-018-collective-home-functional-validation-and-reformulation.md
-          - Relações entre Organizações e Coletivos: experience-architecture/uxa-019-organization-collective-relationship-functional-contract.md
+          - Visão Geral e Estado Atual: experience-architecture/organizations-collectives-current-state.md
+          - Fundamentos e Papéis:
+              - Fundamentos de Organizações e Coletivos: experience-architecture/uxa-014-organizations-and-collectives-functional-foundation.md
+              - Relações entre Organizações e Coletivos: experience-architecture/uxa-019-organization-collective-relationship-functional-contract.md
+          - Supply, Rede e Modelo de Valor: experience-architecture/organizations-collectives-supply-and-value.md
+          - UX e Wireframes:
+              - Estado Atual — Wireframes ainda não definidos: experience-architecture/organizations-collectives-ux-state.md
       - Fundamentos e Padrões de Experiência:
           - Fundação da Arquitetura da Experiência: experience-architecture/uxa-001-foundation.md
           - Mapa de Jornadas e Telas: experience-architecture/uxa-003-journeys-and-screen-map.md
