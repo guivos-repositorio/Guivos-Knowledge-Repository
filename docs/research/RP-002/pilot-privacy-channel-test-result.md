@@ -1,13 +1,13 @@
 ---
 id: RP-002-PILOT-PRIV-CH-TEST-001
-title: Piloto — Resultado do Teste do Canal de Privacidade
+title: Piloto — Resultado dos Testes dos Canais de Privacidade
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos Research
 last_updated: 2026-08-27
 normative: false
 parent: RP-002
-maturity: operational_test_failed_pending_provisioning
+maturity: channels_provisioned_delivery_confirmation_pending
 related:
   - RP-002-PILOT-PRIV-CH-DEC-001
   - RP-002-PILOT-CTRL-DEC-001
@@ -15,79 +15,129 @@ related:
   - RP-002-PILOT-OP-001
 ---
 
-# Piloto — Resultado do Teste do Canal de Privacidade
+# Piloto — Resultado dos Testes dos Canais de Privacidade
 
 ## 1. Finalidade
 
-Este documento registra o resultado operacional do primeiro teste sintético `T-PRIV-001` para o alias-alvo de privacidade do piloto `RP-002`.
+Este documento registra a cronologia operacional dos testes sintéticos do canal de privacidade do piloto `RP-002`.
 
-Ele substitui incerteza por evidência operacional sem promover o canal a `PASS` antes de sua existência real.
+Ele preserva tanto a falha inicial quanto o reteste realizado após confirmação operacional de criação dos endereços, evitando que um snapshot anterior permaneça como estado atual.
 
-## 2. Objeto testado
+## 2. Canais definidos
 
 ```text
-TESTE
-→ T-PRIV-001
+CANAL PRINCIPAL — PT-BR
+→ privacidade@guivos.com
 
+CANAL INTERNACIONAL — EN
+→ privacy@guivos.com
+
+CONTROLADOR
+→ Guivos Ltda
+```
+
+A existência técnica dos dois endereços foi confirmada pelo operador responsável no contexto operacional do piloto em 27/08/2026.
+
+## 3. Primeiro teste — antes do provisionamento
+
+### T-PRIV-001-A
+
+```text
 DESTINO
 → privacidade@guivos.com
 
-TIPO DE CONTEÚDO
+CONTEÚDO
 → sintético, sem dados pessoais reais de participante
 
-OBJETIVO
-→ verificar se o endereço está provisionado e aceita mensagens externas
-```
+RESULTADO
+→ FAIL
 
-## 3. Resultado observado
-
-O envio foi aceito pelo serviço do remetente, mas posteriormente houve retorno de falha de entrega pelo sistema de e-mail.
-
-Resposta operacional observada:
-
-```text
 SMTP
 → 550 5.1.1
 
-RESULTADO
+INTERPRETAÇÃO
 → endereço não encontrado ou incapaz de receber mensagens
 ```
 
-Nenhum dado de participante real foi utilizado.
+Esse teste provou que o canal ainda não estava operacional naquele momento.
 
-## 4. Interpretação
+## 4. Confirmação posterior de provisionamento
 
-A evidência permite concluir:
+Em 27/08/2026 foi confirmado operacionalmente que os seguintes endereços foram criados:
+
+- `privacidade@guivos.com`;
+- `privacy@guivos.com`.
+
+Essa confirmação substitui o estado anterior de `NOT PROVISIONED` para a existência técnica declarada dos canais.
+
+## 5. Reteste após criação
+
+Foram enviados dois novos testes sintéticos, ambos sem dados reais de participante.
+
+### T-PRIV-001-B — canal principal
 
 ```text
-privacidade@guivos.com
-→ NÃO PROVISIONADO COMO CANAL RECEBEDOR OPERACIONAL
+DESTINO
+→ privacidade@guivos.com
+
+ENVIO PELO REMETENTE
+→ ACCEPTED
+
+BOUNCE IMEDIATO OBSERVADO
+→ NÃO
+
+RECEBIMENTO CONFIRMADO NO DESTINO
+→ AINDA NÃO COMPROVADO
 ```
 
-A evidência não permite concluir qual configuração específica está ausente no provedor. Pode envolver inexistência de mailbox, alias, grupo, roteamento ou outra configuração equivalente.
-
-## 5. Estado do teste
+### T-PRIV-001-C — canal internacional
 
 ```text
-T-PRIV-001
-→ FAIL
+DESTINO
+→ privacy@guivos.com
 
-DELIVERY
-→ FAIL
+ENVIO PELO REMETENTE
+→ ACCEPTED
 
-ACCESS
-→ NOT TESTABLE
+BOUNCE IMEDIATO OBSERVADO
+→ NÃO
 
-RESPONSE
-→ NOT TESTABLE
-
-CLOSURE
-→ NOT TESTABLE
+RECEBIMENTO CONFIRMADO NO DESTINO
+→ AINDA NÃO COMPROVADO
 ```
 
-Como `DELIVERY` falhou, os estágios seguintes não foram executados.
+## 6. Interpretação correta
 
-## 6. Atualização de prontidão
+A evidência atual sustenta:
+
+```text
+EXISTÊNCIA / PROVISIONAMENTO DECLARADO
+→ PASS
+
+ACEITAÇÃO DO ENVIO PELO REMETENTE
+→ PASS
+
+FALHA SMTP IMEDIATA COMO NO TESTE ANTERIOR
+→ NÃO OBSERVADA NO RETESTE
+
+ENTREGA END-TO-END CONFIRMADA
+→ PENDING
+
+ACESSO PELO OWNER
+→ PENDING
+
+RESPOSTA
+→ PENDING
+
+FECHAMENTO
+→ PENDING
+```
+
+Regra:
+
+> **Ausência de bounce imediato não equivale a confirmação de entrega end-to-end.**
+
+## 7. Estado de prontidão atualizado
 
 ```text
 P1A — IDENTIDADE INSTITUCIONAL
@@ -100,16 +150,16 @@ P2B-1 — ARQUITETURA / NOMENCLATURA DO CANAL
 → PASS
 
 P2B-2 — PROVISIONAMENTO REAL
-→ FAIL / NOT PROVISIONED
+→ PASS
 
-P2B-3 — TESTE DE ENTREGA
-→ FAIL
+P2B-3 — ENTREGA END-TO-END
+→ PENDING CONFIRMATION
 
 P2B-4 — OWNER OPERACIONAL
 → HOLD
 
 P2B — CANAL OFICIAL DE PRIVACIDADE
-→ HOLD
+→ CONDITIONAL / HOLD
 
 P2C — PROCESSO DE DIREITOS TESTADO
 → HOLD
@@ -127,70 +177,90 @@ DRY RUN REAL
 → NOT RELEASED
 ```
 
-## 7. Consequência operacional
+## 8. Critério para promover P2B-3
 
-A próxima ação necessária é externa ao GKR:
+Para `P2B-3` virar `PASS`, deve existir evidência de que pelo menos o canal principal:
 
-> **provisionar tecnicamente `privacidade@guivos.com` no provedor real de e-mail da Guivos.**
+1. recebeu a mensagem sintética;
+2. pode ser acessado pelo owner operacional;
+3. permite resposta ao remetente externo.
 
-Somente depois disso `T-PRIV-001` deve ser reexecutado.
+O canal internacional deve ser testado pelo mesmo padrão.
 
-## 8. Critério para reexecução
+## 9. Critério para promover P2B completo
 
-Reexecutar somente após confirmação técnica de que o alias/caixa/grupo foi criado e está habilitado para receber mensagens externas.
-
-O novo teste deverá verificar:
-
-1. entrega;
-2. acesso pelo owner;
-3. resposta;
-4. fechamento;
-5. continuidade operacional.
-
-## 9. Regra de evidência
+`P2B` somente poderá ser promovido a `PASS` quando:
 
 ```text
-INTENÇÃO DE CRIAR
-≠ PROVISIONAMENTO
+P2B-1 — PASS
+P2B-2 — PASS
+P2B-3 — PASS
+P2B-4 — PASS
+```
 
-ENVIO SEM BOUNCE IMEDIATO
+## 10. Critério para P2C
+
+O processo de direitos deve ser testado separadamente com solicitação sintética que percorra:
+
+```text
+RECEBIMENTO
+→ TRIAGEM
+→ IDENTIFICAÇÃO DA SOLICITAÇÃO
+→ RESPOSTA
+→ REGISTRO DE FECHAMENTO
+```
+
+Nenhum dado real de participante deve ser usado para esse teste.
+
+## 11. Privacidade do próprio teste
+
+O GKR registra apenas resultados operacionais agregados.
+
+Não deve armazenar:
+
+- conteúdo de solicitações reais de titulares;
+- endereços pessoais de participantes;
+- headers completos;
+- credenciais;
+- configurações secretas do provedor;
+- conteúdo interno da caixa de privacidade.
+
+## 12. Regra de evidência
+
+```text
+CRIAÇÃO DECLARADA PELO OPERADOR
+→ EVIDÊNCIA DE PROVISIONAMENTO
+
+ENVIO ACEITO
 ≠ ENTREGA CONFIRMADA
+
+SEM BOUNCE IMEDIATO
+≠ ACESSO CONFIRMADO
 
 ALIAS EXISTENTE
 ≠ PROCESSO DE DIREITOS VALIDADO
 ```
 
-## 10. Privacidade do próprio teste
-
-O GKR registra apenas o resultado agregado do teste.
-
-Não deve armazenar:
-
-- conteúdo de mensagens reais de titulares;
-- endereços pessoais de participantes;
-- headers completos de e-mail;
-- credenciais;
-- configurações secretas do provedor.
-
-## 11. Próximo checkpoint
+## 13. Próximo checkpoint
 
 ```text
-CANAL-ALVO
-→ DEFINIDO
+privacidade@guivos.com
+→ CRIADO
+→ RETESTE ENVIADO
+→ ENTREGA A CONFIRMAR
 
-PROVISIONAMENTO
-→ FALHOU / AUSENTE
+privacy@guivos.com
+→ CRIADO
+→ RETESTE ENVIADO
+→ ENTREGA A CONFIRMAR
 
-TESTE DE ENTREGA
-→ FAIL
-
-PRÓXIMO PASSO
-→ CRIAR O CANAL NO PROVEDOR REAL
+PRÓXIMA EVIDÊNCIA NECESSÁRIA
+→ RECEBIMENTO + ACESSO + RESPOSTA
 
 PARTICIPANT 001
 → CONTINUA HOLD
 ```
 
-## 12. Regra final
+## 14. Regra final
 
-> **O teste cumpriu sua função ao provar que o canal ainda não existe operacionalmente. A falha é evidência útil e impede um `PASS` artificial.**
+> **A falha inicial continua válida como histórico; o estado atual é de canais provisionados com confirmação end-to-end ainda pendente.**
