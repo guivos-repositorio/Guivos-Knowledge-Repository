@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-26
 normative: false
@@ -11,7 +11,11 @@ related:
   - UXA-019
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
+  - GKR-UX-ORGCOL-SUPPLY-VALUE-001
+  - RP-002
+  - RP-002-SUP-001
   - RP-002-OCE-001
+  - RP-002-PMF-001
 ---
 
 # Organizações e Coletivos — Visão Geral e Estado Atual
@@ -30,6 +34,8 @@ A regra de leitura é:
 
 > **Organizações e Coletivos são participantes estruturais do ecossistema Guivos. Sua fundação, suas relações, suas jornadas, seu papel no supply e sua experiência de produto possuem níveis de maturidade diferentes e devem permanecer explicitamente separados.**
 
+Para compreender em profundidade **quais oportunidades esses agentes podem materializar, como a Guivos pesquisa supply real, como relevância é testada para diferentes perfis e por que algumas oportunidades são descartadas**, a leitura principal complementar é [Organizações e Coletivos — Supply, Rede e Modelo de Valor](organizations-collectives-supply-and-value.md). Essa página funciona como atlas de oportunidades e validação, reunindo exemplos mundiais, perfis sintéticos, gates, counterexamples, evidência e limites de PMF.
+
 ## 2. Estado executivo
 
 | Dimensão | Estado atual | Autoridade / referência |
@@ -40,8 +46,12 @@ A regra de leitura é:
 | relações Organização ↔ Coletivo | contrato funcional existente, não normativo | `UXA-019` |
 | Jornada da Organização | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-ORGANIZATION-001` |
 | Jornada do Coletivo | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-COLLECTIVE-001` |
+| corpus de oportunidades reais | Research consolidado pré-campo | `RP-002-SUP-001` |
+| atlas de supply, relevância e testes | `active` 1.1.0, não normativo | `GKR-UX-ORGCOL-SUPPLY-VALUE-001` |
 | papel no supply | pesquisa consolidada pré-campo | `RP-002-OCE-001` |
 | proposta de valor econômica e de rede | hipótese de Research, não Canon | `RP-002-OCE-001` |
+| validação com perfis sintéticos | executada metodologicamente; não é PMF | `RP-002-PMF-001` + atlas |
+| validação humana real / PMF | **pendente** | piloto de campo |
 | Home pública de Organizações e Coletivos | possui Documento Mestre próprio | `public-home-organizations-collectives-master-document.md` |
 | wireframe da experiência autenticada da Organização | **não definido** | pendente |
 | wireframe da experiência autenticada do Coletivo | **não definido** | pendente |
@@ -161,7 +171,7 @@ Qualquer trecho desses documentos que derive maturidade de `UXA-015`, `UXA-016`,
 
 A investigação `RP-002` ampliou a compreensão sobre Organizações e Coletivos como agentes do supply.
 
-O aprofundamento está em [Organizações, Coletivos, Efeito de Rede e Modelo Econômico do Supply](../research/RP-002/organizations-collectives-and-economic-model.md).
+A leitura rica e orientada a exemplos está em [Supply, Rede e Modelo de Valor](organizations-collectives-supply-and-value.md). O corpus probatório completo está em [Corpus Real e Supply Ecosystems](../research/RP-002/real-world-supply-corpus.md), e o aprofundamento econômico em [Organizações, Coletivos, Efeito de Rede e Modelo Econômico do Supply](../research/RP-002/organizations-collectives-and-economic-model.md).
 
 ### 8.1 Papéis possíveis de Organizações
 
@@ -198,6 +208,14 @@ Research observou papéis como:
 - mobilizador de recursos.
 
 Coletivos podem materializar ou habilitar possibilidades que mercados tradicionais não atendem adequadamente.
+
+### 8.3 Como ler relevância
+
+A investigação preserva:
+
+> **A relevância pertence à relação Pessoa ↔ Oportunidade.**
+
+O mesmo programa pode ter alto fit para uma Pessoa e falhar para outra por horário, território, elegibilidade, custo indireto, carga, risco, acessibilidade ou necessidade de renda. Por isso, o atlas registra tanto oportunidades apresentadas quanto oportunidades legitimamente descartadas.
 
 ## 9. Modelo de valor — estado de Research
 
@@ -257,7 +275,10 @@ Materiais anteriores que afirmavam o contrário foram reclassificados como regis
 | Jornada da Organização | `journeys/organization.md` |
 | Jornada do Coletivo | `journeys/collective.md` |
 | Home pública | `public-home-organizations-collectives-master-document.md` |
-| supply, rede e modelo econômico | `RP-002-OCE-001` |
+| **atlas de oportunidades, exemplos mundiais, perfis e testes de relevância** | `GKR-UX-ORGCOL-SUPPLY-VALUE-001` |
+| corpus real de supply | `RP-002-SUP-001` |
+| método de PMF e simulações | `RP-002-PMF-001` |
+| supply, rede e modelo econômico — aprofundamento | `RP-002-OCE-001` |
 | estado de UX e wireframes | `GKR-UX-ORGCOL-UX-STATE-001` |
 
 ## 14. Próxima sequência legítima para UX autenticada
@@ -287,3 +308,5 @@ Para o estado atual de Organizações e Coletivos:
 > **este documento prevalece sobre afirmações de maturidade de wireframe presentes em registros históricos ou documentos `draft` que dependam de `UXA-015` a `UXA-018`.**
 
 Isso não apaga o histórico; apenas impede que materializações prematuras sejam confundidas com decisão vigente.
+
+O atlas de supply e relevância possui função diferente: ele preserva Research, exemplos e método para tornar compreensível o universo de oportunidades. Ele **não** promove wireframes, matching, PMF ou implementação a estado superior.
