@@ -29,7 +29,8 @@ Ele **não deve ser apresentado a uma Pessoa real** enquanto permanecer qualquer
 
 O controlador previsto para o piloto é:
 
-**Guivos Ltda**  
+**Guivos Ltda**
+
 **CNPJ 43.530.598/0001-33**
 
 Canais oficiais de privacidade:
