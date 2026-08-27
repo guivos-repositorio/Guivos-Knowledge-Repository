@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: draft
-version: 0.18.0
+version: 0.19.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-26
 related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
@@ -35,6 +35,8 @@ related:
   - UXA-100-A2
   - UXA-100-A3
   - UXA-100-A4
+  - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
 
@@ -55,19 +57,22 @@ presença pública
 
 | Etapa | Maturidade | Evidência | Continuidade |
 |---|---|---|---|
-| presença pública e descoberta | validado localmente | UXA-016/018; UXA-060/063 | parcial entre famílias |
+| presença pública e descoberta | validado no recorte público | UXA-060/061/062/063; `UXA-016/018` apenas como histórico superseded | parcial entre famílias |
 | solicitação | validado | UXA-064/065/066/067 | handoffs bilaterais posteriores validados nos gates |
-| visão/gestão do responsável | validado | UXA-086/087/088/089 | TRN-112/105/106/107/109 integrais |
+| referência administrativa do responsável | evidência local do pacote, **não baseline final da UX principal** | UXA-086/087 | contratos especializados preservam maturidade própria; arquitetura principal pendente |
+| gestão de solicitações do responsável | validado no fluxo especializado | UXA-088/089/090/092 | handoffs bilaterais governados no escopo próprio |
 | aprovação → Meus Coletivos | validado | UXA-090/091/092 | TRN-108 integral |
 | Meus Coletivos → Central | validado | UXA-092/093/094/096 | TRN-110 integral |
 | Central corrente | **validado** | UXA-094/095/096 | TRN-110 e TRN-111 integrais |
-| Início do Participante | **validado** | UXA-095/096 | **TRN-111 integral** |
+| Início do Participante | **validado no recorte da Pessoa participante** | UXA-095/096 | **TRN-111 integral** |
+
+A reconciliação pós-PR #313/#314 preserva os fluxos independentes acima, mas elimina a inferência de que `UXA-016/018` ou uma referência administrativa local já definam o wireframe principal autenticado final do Coletivo.
 
 ## 2. Operação do responsável
 
 ```text
 representação e autoridade
-→ visão geral
+→ arquitetura principal autenticada ainda a definir
 → gestão de solicitações
 → participantes e vínculos
 → comunicação oficial
@@ -76,7 +81,15 @@ representação e autoridade
 → relações institucionais
 ```
 
-`COL-002` e `COL-003` estão validadas. `COL-004` a `COL-008` permanecem programadas/contratadas ou parcialmente cobertas e não são substituídas pelas superfícies da Pessoa.
+`COL-003` mantém validação no fluxo especializado de gestão de solicitações. `COL-002` conserva evidência administrativa local e contratos de navegação que tenham autoridade própria, mas **não é tratado como wireframe principal autenticado final**. `COL-004` a `COL-008` permanecem programadas/contratadas ou parcialmente cobertas e não são substituídas pelas superfícies da Pessoa.
+
+```text
+MATERIALIZAÇÃO ADMINISTRATIVA LOCAL
+≠ ARQUITETURA PRINCIPAL FINAL
+
+FLUXO ESPECIALIZADO VALIDADO
+≠ JORNADA DO COLETIVO COMPLETA VALIDADA
+```
 
 ## 3. Eixo de Domínios de Evolução
 
@@ -139,10 +152,12 @@ Regras desta vista:
 
 ## 4. Planos como etapa transversal canônica
 
-A UXA-100-A3 registra **Planos** canonicamente na jornada operacional do Coletivo. A UXA-100-A4 fecha a origem administrativa voluntária reutilizando `COL-002 — Visão Geral do Responsável`.
+A UXA-100-A3 registra **Planos** canonicamente na jornada operacional do Coletivo. A UXA-100-A4 preserva um contrato documental de origem/retorno associado semanticamente a `COL-002`. Após a reconciliação pós-PR #313/#314, esse contrato não pode ser interpretado como prova de que `COL-002` seja o wireframe principal autenticado final.
+
+A relação lógica preservada no fluxo especializado é:
 
 ```text
-COL-002 — Visão Geral do Responsável
+CONTEXTO ADMINISTRATIVO / COL-002 COMO RESPONSABILIDADE SEMÂNTICA
 └── TRN-417 → COL-301 — Planos e comparação
     ├── TRN-411 → COL-302 — revisão de contratação
     │   └── TRN-412 → COL-304 — resultado/recuperação
@@ -151,10 +166,10 @@ COL-002 — Visão Geral do Responsável
     │   └── TRN-414 → COL-304
     │       └── TRN-415 → COL-301
     ├── TRN-416 → BND-002 — contratação/dimensionamento assistido
-    └── TRN-418 → COL-002 — retorno sem alteração comercial
+    └── TRN-418 → contexto administrativo / COL-002 como responsabilidade semântica
 ```
 
-`TRN-417/418` estão **integralmente validadas no limite documental da Guivos**. Elas preservam Coletivo, papel e escopo de autoridade; abrir Planos não seleciona tier nem inicia cobrança, e retornar não cancela assinatura ou altera capacidade.
+`TRN-417/418` preservam a validação documental de seu **contrato especializado de navegação**. Elas mantêm a regra de que abrir Planos não seleciona tier nem inicia cobrança e que retornar não cancela assinatura ou altera capacidade. Isso não valida a futura composição, hierarquia, navegação principal ou wireframe final do Coletivo.
 
 `TRN-411` a `TRN-415` continuam localmente validadas no pacote UXA-100. `TRN-416` permanece parcial porque o processo comercial posterior a `BND-002` não foi materializado. `BND-002` representa a necessidade de contratação/dimensionamento assistido quando o autoatendimento não for suficiente e não pertence semanticamente a um plano específico.
 
@@ -168,7 +183,7 @@ criar atividade/oportunidade
     → COL-301
 ```
 
-Referência canônica:
+Referência do fluxo especializado de Planos:
 
 ![Coletivo — Planos](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
@@ -193,8 +208,8 @@ Regras:
 
 | Ligação | Estado |
 |---|---|
-| COL-002 → COL-003 (`TRN-112`) | integralmente validada |
-| COL-002 ↔ COL-301 (`TRN-417/418`) | **integralmente validadas pela UXA-100-A4** |
+| COL-002 → COL-003 (`TRN-112`) | contrato/handoff preserva maturidade documental própria; não define wireframe principal final |
+| COL-002 ↔ COL-301 (`TRN-417/418`) | **validadas como contrato especializado pela UXA-100-A4; não como prova de UI principal vigente** |
 | PER-105 ↔ COL-003 (`TRN-105/106/107/109`) | integralmente validadas |
 | COL-003 → PER-106 (`TRN-108`) | integralmente validada |
 | PER-106 → PER-107 (`TRN-110`) | integralmente validada |
@@ -202,12 +217,13 @@ Regras:
 | Coletivo ↔ Organização | contratada; materialização bilateral pendente |
 | COL-301 → BND-002 (`TRN-416`) | **parcial; processo de contratação/dimensionamento assistido posterior não materializado** |
 
-## 6. Efeito da UXA-100-A4
+## 6. Efeito da UXA-100-A4 após a reconciliação
 
-- reformula in-place a navegação de `COL-002` para incluir `Planos e cobrança`;
-- torna explícito em `COL-301` o retorno à Visão Geral;
-- adiciona e valida `TRN-417/418`;
-- não cria nova superfície ou SVG;
+- preserva no pacote de Planos o contrato de origem/retorno associado semanticamente a `COL-002`;
+- torna explícito em `COL-301` o retorno sem alteração comercial;
+- preserva `TRN-417/418` no limite documental de navegação;
+- não define arquitetura da informação principal do Coletivo;
+- não transforma a materialização administrativa local em wireframe final;
 - não altera a maturidade das transições comerciais internas ou de `BND-002`.
 
 ## 7. Princípios preservados
@@ -225,12 +241,16 @@ Regras:
 - atingir cota não reduz visibilidade das publicações existentes;
 - pausa, recusa e saída não reduzem reputação;
 - estado canônico mais recente prevalece sobre estado visual obsoleto;
-- mesmo domínio entre participantes não transfere contexto pessoal ou autoridade.
+- mesmo domínio entre participantes não transfere contexto pessoal ou autoridade;
+- contrato de navegação especializado não define automaticamente a UX principal.
 
 ## 8. Estado da vista
 
 Esta vista permanece `draft` porque:
 
+- **a arquitetura da informação e o wireframe principal autenticado do Coletivo ainda não foram definidos**;
+- `UXA-016/018` permanecem históricos `superseded`;
+- `COL-002` possui evidência administrativa local, mas não é baseline final da experiência principal;
 - participantes, comunicação e demais áreas do responsável continuam incompletos;
 - estados P0B de superfícies da Pessoa permanecem separados;
 - a relação Organização–Coletivo permanece contratada e não materializada;
@@ -241,4 +261,6 @@ Esta vista permanece `draft` porque:
 
 ## 9. Estado da frente
 
-A identidade da origem administrativa voluntária do Coletivo está encerrada pela UXA-100-A4 em `COL-002 ↔ COL-301`. A taxonomia vigente de planos permanece `Livre · Mobiliza · Impacta · Rede`. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista, sem iniciar D5. Nenhuma próxima UXA é iniciada automaticamente.
+A taxonomia vigente de planos permanece `Livre · Mobiliza · Impacta · Rede`. Os fluxos públicos, de participação, gestão de solicitações e Planos preservam suas maturidades próprias quando suportados por autoridade independente. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista, sem iniciar D5.
+
+O próximo avanço da experiência principal autenticada deve partir dos fundamentos, papéis/jobs, arquitetura da informação e mapa de superfícies vigentes — **não do SVG histórico de UXA-016 nem da promoção automática de uma referência administrativa local**. Nenhuma próxima UXA é iniciada automaticamente.
