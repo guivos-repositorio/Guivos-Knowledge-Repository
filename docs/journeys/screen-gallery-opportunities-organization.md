@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITIES-ORGANIZATION-001
 title: Organização e Oportunidades
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-26
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
@@ -17,6 +17,8 @@ related:
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
 
@@ -27,8 +29,9 @@ normative: false
 ## 1. Ordem funcional de inspeção
 
 ```text
-Visão Geral da Organização
-→ cadastro e ativação institucional
+contexto institucional da Organização
+→ arquitetura principal autenticada ainda a definir
+→ cadastro e ativação institucional de oportunidade
 → mapa de oportunidades
 ↔ lista sincronizada
 → detalhe
@@ -38,17 +41,34 @@ Visão Geral da Organização
 
 A UXA-098 valida `GKR-TRN-203`, `204`, `210` e `211`. A UXA-101 valida `GKR-TRN-205` até `GKR-SURF-BND-001`, preservando o destino externo fora da autoridade da Guivos.
 
+A reconciliação pós-PR #313/#314 separa a UX principal autenticada da Organização do fluxo especializado de oportunidades:
+
+```text
+UXA-015/017 + SVG de ORG-001
+→ HISTÓRICO SUPERSEDED
+
+UXA-008/013 — CADASTRO DE OPORTUNIDADE
+→ MATURIDADE PRÓPRIA PRESERVADA
+```
+
 ## 2. Organização
 
-**Cobertura:** 2 SVGs · IDs: `GKR-SURF-ORG-001`, `GKR-SURF-ORG-002`, `GKR-SURF-ORG-003` · origem: `UXA-015`, `UXA-008` · validação: `UXA-017`, `UXA-013`; continuidade de publicação: `UXA-098`
+**Cobertura física:** 2 SVGs · IDs associados: `GKR-SURF-ORG-001`, `GKR-SURF-ORG-002`, `GKR-SURF-ORG-003`.
 
-### `uxa-015-organization-overview-desktop.svg`
+- `GKR-SURF-ORG-001`: wireframe principal autenticado **pendente**; `UXA-015/017` permanecem somente para rastreabilidade histórica;
+- `GKR-SURF-ORG-002/003`: fluxo especializado de cadastro/ativação preserva autoridade `UXA-008/013`, com continuidade de publicação em `UXA-098`.
+
+### `uxa-015-organization-overview-desktop.svg` — histórico superseded
 
 ![](../assets/wireframes/uxa-015-organization-overview-desktop.svg){ width="320" loading="lazy" }
+
+> Este SVG permanece na galeria apenas por rastreabilidade. Não é wireframe vigente, baseline de produto ou autoridade de design da experiência autenticada principal da Organização.
 
 ### `uxa-008-organization-opportunity-registration-desktop.svg`
 
 ![](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg){ width="320" loading="lazy" }
+
+O cadastro de oportunidade permanece um fluxo especializado independente e não define a arquitetura completa da Organização.
 
 ## 3. Mapa de Oportunidades
 
@@ -90,7 +110,7 @@ A UXA-098 valida `GKR-TRN-203`, `204`, `210` e `211`. A UXA-101 valida `GKR-TRN-
 
 ![](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg){ width="320" loading="lazy" }
 
-O mesmo SVG agora mostra dois estados da mesma responsabilidade `PER-203`: o Detalhe e a revisão acionada por `Ver como participar`. A revisão identifica que a próxima etapa é externa, quem responde por ela, o tratamento de dados/contexto, os limites da Guivos e as opções de continuar ou voltar.
+O mesmo SVG mostra dois estados da mesma responsabilidade `PER-203`: o Detalhe e a revisão acionada por `Ver como participar`. A revisão identifica que a próxima etapa é externa, quem responde por ela, o tratamento de dados/contexto, os limites da Guivos e as opções de continuar ou voltar.
 
 Nenhum SVG é criado para `BND-001`.
 
@@ -99,6 +119,8 @@ Nenhum SVG é criado para `BND-001`.
 A continuidade orgânica `publicação → descoberta → Mapa/Lista → Detalhe → fronteira externa` está documentalmente validada nos limites de autoridade definidos pelas UXA-098 e UXA-101.
 
 Isso **não** valida inscrição, reserva, compra, contratação, disponibilidade, autenticação ou qualquer outro processo executado pelo terceiro depois de `BND-001`. Integrações patrocinadas `TRN-304/306` permanecem parciais.
+
+Também não valida a UX principal autenticada da Organização. Seu próximo avanço continua dependente de papéis/jobs, arquitetura da informação, mapa de superfícies, fluxos/estados e construção de um novo wireframe vigente.
 
 O status `active` registra o instrumento de inspeção e não inicia protótipo ou Engenharia de Produto.
 
