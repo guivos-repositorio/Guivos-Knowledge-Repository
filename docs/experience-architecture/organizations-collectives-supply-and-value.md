@@ -1,8 +1,8 @@
 ---
 id: GKR-UX-ORGCOL-SUPPLY-VALUE-001
-title: Organizações e Coletivos — Supply, Rede e Modelo de Valor
+title: Organizações e Coletivos — Atlas de Oportunidades, Relevância, Supply e Validação
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-26
 normative: false
@@ -16,7 +16,7 @@ related:
   - UXA-019
 ---
 
-# Organizações e Coletivos — Supply, Rede e Modelo de Valor
+# Organizações e Coletivos — Atlas de Oportunidades, Relevância, Supply e Validação
 
 ## 1. Finalidade desta seção
 
