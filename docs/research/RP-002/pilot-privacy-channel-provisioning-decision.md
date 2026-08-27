@@ -2,7 +2,7 @@
 id: RP-002-PILOT-PRIV-CH-DEC-001
 title: Piloto — Decisão de Provisionamento do Canal de Privacidade
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Guivos Research
 last_updated: 2026-08-27
 normative: false
@@ -34,7 +34,7 @@ A auditoria anterior registrou que:
 - não havia sido localizado um canal explicitamente designado para privacidade/direitos do titular;
 - não se deveria transformar automaticamente e-mail comercial, suporte, WhatsApp ou contato genérico em canal de privacidade.
 
-Verificação operacional adicional realizada em 27/08/2026 encontrou evidência de uso real de endereço sob o domínio `@guivos.com`, incluindo `guilherme@guivos.com`, mas **não encontrou evidência operacional de mensagens associadas a**:
+Verificação operacional adicional realizada em 27/08/2026 encontrou evidência de uso real de endereço sob o domínio `@guivos.com`, mas **não encontrou evidência operacional suficiente para tratar como canais atuais**:
 
 ```text
 privacidade@guivos.com
@@ -43,6 +43,8 @@ dpo@guivos.com
 ```
 
 Essa ausência de evidência não prova tecnicamente que tais aliases jamais tenham sido configurados em algum provedor; ela apenas significa que **não existe evidência suficiente, nas fontes verificadas, para tratá-los como canais operacionais atuais**.
+
+Por minimização, o GKR não precisa registrar o endereço individual usado apenas para confirmar que o domínio possui uso operacional.
 
 ## 3. Decisão de arquitetura do canal
 
@@ -84,7 +86,7 @@ Para o primeiro piloto, o canal deve ser:
 - adequado para constar em aviso de privacidade, política, convite e materiais do piloto;
 - compatível com crescimento futuro da operação de privacidade.
 
-O endereço pessoal `guilherme@guivos.com` não será promovido a canal oficial de direitos do titular apenas por já existir.
+Nenhum endereço individual já existente será promovido a canal oficial de direitos do titular apenas por estar operacional.
 
 Regra:
 
