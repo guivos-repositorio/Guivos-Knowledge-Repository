@@ -8,15 +8,18 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **2.43.0** |
+| Registro | `GKR-STATE-001` **2.44.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | **pausada antes de W0-01** |
 | Domínios de Evolução do Journey | **9 canônicos + `Ainda estou descobrindo`** |
-| Galeria | **121 SVGs — 121 validados / 0 pendentes** |
-| Matriz por SVG | **121 associações / 34 perfis** |
+| Galeria física | **121 SVGs; inclui artefatos históricos superseded** |
+| Maturidade visual agregada | **não inferir; recomputação governada pendente** |
+| Wireframe principal autenticado da Organização | **pendente** |
+| Wireframe principal autenticado do Coletivo | **pendente** |
+| Matriz por SVG | **121 associações físicas / 34 perfis** |
 | Superfícies/estados/fronteiras | **57** |
 | Transições | **66** |
 | Homes públicas | **8 convergidas documentalmente** |
@@ -26,6 +29,14 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 A [Reconciliação Global de Integridade pós-PR #300](project/global-integrity-reconciliation-post-300-2026-08-21.md) corrigiu deriva entre autoridades temáticas e superfícies globais sem reabrir decisões já validadas.
 
 A [Reconciliação Derivada da Autoridade Pública da Marca e do Fundador](governance-framework/brand-public-authority-propagation.md) sincroniza o estado posterior à autoridade pública do fundador sem criar nova UXA, marco funcional ou implementação.
+
+A reconciliação pós-PR #313/#314 estabelece que `UXA-015..018` são históricos `superseded`; seus SVGs permanecem fisicamente para rastreabilidade, sem autoridade vigente de design. Fluxos especializados independentes preservam a maturidade sustentada por suas próprias autoridades.
+
+```text
+121 SVGs FÍSICOS
+≠ 121 WIREFRAMES VIGENTES
+≠ 121 WIREFRAMES VALIDADOS
+```
 
 ## Public Canon
 
@@ -161,6 +172,8 @@ D5-A/B/C1/C2/C3/C4A/C4B são frentes não numeradas posteriores que aprofundam o
 
 `TRN-008..013` permanecem integralmente validadas no limite documental.
 
+Para Organização e Coletivo, contratos especializados de navegação não substituem a arquitetura principal autenticada. Os respectivos wireframes principais permanecem pendentes.
+
 Na Home Pública da Pessoa, `Movimento 06 — Da Possibilidade à Experiência` preserva a função `possibilidade → escolha → experiência → novo contexto`; a alteração é apenas de rótulo.
 
 ## Guivos Business
@@ -197,11 +210,14 @@ O [Design Delivery v4](experience-architecture/public-homes-design-delivery-mani
 handoff ≠ Design produzido
 Design Delivery ≠ implementação
 snapshot externo ≠ fonte canônica paralela
+HOME PÚBLICA DE ORGANIZAÇÕES E COLETIVOS
+≠ UX AUTENTICADA DA ORGANIZAÇÃO
+≠ UX AUTENTICADA DO COLETIVO
 ```
 
 ## Navegação do estado
 
-- [Registro do Estado Atual — 2.43.0](project/current-state-register.md)
+- [Registro do Estado Atual — 2.44.0](project/current-state-register.md)
 - [Roadmap 12.84.0](roadmap.md)
 - [Painel de Conhecimento 12.84.0](project/knowledge-board.md)
 - [Matriz de Consolidação Canônica 3.2.0](project/canonical-consolidation-matrix.md)
@@ -213,6 +229,8 @@ snapshot externo ≠ fonte canônica paralela
 ```text
 NÃO HÁ UXA-102 AUTOMÁTICA
 NÃO HÁ DESIGN AUTOMÁTICO
+NÃO HÁ WIREFRAME PRINCIPAL DE ORGANIZAÇÃO AUTOMÁTICO
+NÃO HÁ WIREFRAME PRINCIPAL DE COLETIVO AUTOMÁTICO
 NÃO HÁ FILING AUTOMÁTICO
 NÃO HÁ PRODUCT ENGINEERING AUTOMÁTICO
 NÃO HÁ PUBLICAÇÃO AUTOMÁTICA DO FUNDADOR

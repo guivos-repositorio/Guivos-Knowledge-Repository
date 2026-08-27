@@ -2,9 +2,9 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.39.0
+version: 0.40.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-26
 related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
@@ -32,6 +32,8 @@ related:
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-SUPPLY-VALUE-001
+  - RP-002
 normative: false
 ---
 
@@ -43,6 +45,8 @@ Esta seção reúne as jornadas da Pessoa, do Coletivo e da Organização para l
 
 As vistas consomem explicitamente o eixo transversal dos Domínios de Evolução governado por `PAS-001-DOMAIN-MODEL-001` e reconciliado por `PAS-001-DOMAIN-RECON-001`.
 
+A investigação de supply, oportunidades reais e testes de relevância de Organizações e Coletivos está exposta também como referência de leitura em [Organizações e Coletivos — Supply, Rede e Modelo de Valor](../experience-architecture/organizations-collectives-supply-and-value.md). Essa referência contém exemplos mundiais, perfis sintéticos, gates, descartes, evidência e limites de PMF; permanece Research consolidado pré-validação de campo.
+
 ## 2. Vistas disponíveis
 
 - [Propagação dos Domínios de Evolução nas Jornadas — D4](evolution-domains-d4.md)
@@ -53,6 +57,7 @@ As vistas consomem explicitamente o eixo transversal dos Domínios de Evolução
 - [Jornada da Pessoa](person.md)
 - [Jornada do Coletivo](collective.md)
 - [Jornada da Organização](organization.md)
+- [Atlas de oportunidades, supply e relevância de Organizações e Coletivos](../experience-architecture/organizations-collectives-supply-and-value.md)
 - [Handoffs entre participantes](handoffs.md)
 - [Cenários integrados](scenarios.md)
 - [Registro Granular de Superfícies e Estados](surface-registry.md)
@@ -86,7 +91,7 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.39.0 | D4 + D5-C4B |
+| visão geral das Jornadas Integradas | `active` 0.40.0 | D4 + D5-C4B + reconciliação pós-313/314 |
 | propagação dos Domínios de Evolução | `active` 1.0.0 | GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001 |
 | D5-A — jornada inicial | `active` 1.0.0 | materialização in-place |
 | D5-B — Oportunidades | `active` 1.0.0 | materialização in-place |
@@ -97,15 +102,16 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | D5-C4B — validação integrada dos handoffs | `active` 1.0.0 | TRN-008..013 integralmente validadas |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita preservada |
 | Jornada da Pessoa | `draft` | D4; D5-C1/C2/C3/C4A/C4B; origem de Planos A4; V4 UXA-101 |
-| Jornada do Coletivo | `draft` 0.18.0 | D4; origem de Planos A4 |
-| Jornada da Organização | `draft` 0.11.0 | D4; origem de Planos A4 |
-| catálogo integrado | `active` | 121 SVGs; 121 validados / 0 pendentes |
-| registro de superfícies | `active` | 57 IDs |
-| registro de transições | `active` | 66 transições; TRN-008..013 integrais |
-| galeria visual integrada | `active` | 121 SVGs / 121 validados |
-| galeria de Planos | `active` | 9 SVGs canônicos |
-| matriz por SVG | `active` | 121 associações / 34 perfis |
-| registro de lacunas | `active` | lacuna D5-C encerrada; demais continuidades preservadas |
+| Jornada do Coletivo | `draft` 0.19.0 | arquitetura principal autenticada pendente; fluxos especializados preservam maturidade própria |
+| Jornada da Organização | `draft` 0.12.0 | arquitetura principal autenticada pendente; fluxos especializados preservam maturidade própria |
+| atlas de supply/relevância Org/Col | `active` 1.1.0, não normativo | exemplos globais + simulações + gates; validação humana/PMF pendente |
+| catálogo integrado | `active` | 121 SVGs físicos; claim agregada antiga de validação superseded |
+| registro de superfícies | `active` | 57 IDs documentais; maturidade por objeto deve ser lida individualmente |
+| registro de transições | `active` | 66 transições documentais; maturidade por contrato preservada |
+| galeria visual integrada | `active` | 121 SVGs físicos para inspeção; não equivalem a 121 wireframes vigentes |
+| galeria de Planos | `active` | 9 SVGs do fluxo especializado de Planos |
+| matriz por SVG | `active` | 121 associações físicas / 34 perfis; não é prova agregada de vigência |
+| registro de lacunas | `active` | wireframes principais autenticados de Organização e Coletivo pendentes; demais gaps preservados |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -191,6 +197,8 @@ PER-203 → revisão consciente no mesmo estado → TRN-205 → BND-001
 - `BND-001` não possui tela Guivos;
 - qualquer resultado posterior pertence ao terceiro até reconciliação autorizada e comprovada.
 
+A continuidade documental acima não substitui o problema de relevância. O aprofundamento de como uma oportunidade é descoberta, qualificada, descartada ou apresentada para um Momento específico está no [Atlas de oportunidades, supply e relevância](../experience-architecture/organizations-collectives-supply-and-value.md).
+
 ## 8. Etapa transversal de Planos preservada e conectada
 
 A espinha dorsal comercial permanece:
@@ -202,13 +210,15 @@ A espinha dorsal comercial permanece:
 └── quando autoatendimento não for suficiente → BND-002
 ```
 
-A origem voluntária possui identidade canônica:
+A origem voluntária possui identidade contratual no fluxo especializado:
 
 ```text
 PER-009 ↔ PER-301   — TRN-406/407 contratadas
-COL-002 ↔ COL-301   — TRN-417/418 integralmente validadas
-ORG-001 ↔ ORG-301   — TRN-427/428 integralmente validadas
+COL-002 ↔ COL-301   — TRN-417/418 validadas no contrato especializado
+ORG-001 ↔ ORG-301   — TRN-427/428 validadas no contrato especializado
 ```
+
+A maturidade de `TRN-417/418` e `TRN-427/428` não promove `COL-002` ou `ORG-001` a wireframes principais autenticados vigentes.
 
 Abrir Planos não seleciona tier, não inicia cobrança e não altera consentimento, capacidade ou relevância. `PER-009` permanece sem SVG dedicado; sua futura materialização é gap separado.
 
@@ -221,20 +231,28 @@ A nomenclatura vigente é:
 
 `BND-002` é fronteira genérica de contratação/dimensionamento assistido e não plano. As transições comerciais internas continuam localmente validadas; `TRN-416/426` permanecem parciais. Cobrança real e processo posterior a `BND-002` continuam fora do escopo.
 
-## 9. Cobertura canônica
+## 9. Cobertura documental reconciliada
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs canônicos | **121** |
-| associações | **121** |
-| perfis | **34** |
-| validações vigentes de SVG | **121** |
-| pendentes de validação específica | **0** |
-| superfícies/estados/fronteiras | **57** |
-| transições | **66** |
-| IDs com referência visual | **45 de 57** |
+| SVGs físicos existentes | **121** |
+| associações físicas registradas | **121** |
+| perfis documentais | **34** |
+| claim agregada anterior `121 validados / 0 pendentes` | **superseded como estado de maturidade vigente** |
+| nova contagem agregada de wireframes vigentes/validados | **não inferida; requer recomputação governada** |
+| wireframe principal autenticado da Organização | **pendente** |
+| wireframe principal autenticado do Coletivo | **pendente** |
+| superfícies/estados/fronteiras documentais | **57** |
+| transições documentais | **66** |
+| IDs com referência visual física | **45 de 57** |
 | responsabilidades sem SVG dedicado | **10** |
 | fronteiras sem tela | **2** |
+
+```text
+INVENTÁRIO FÍSICO
+≠ VIGÊNCIA
+≠ VALIDAÇÃO FUNCIONAL ATUAL
+```
 
 ## 10. Separações obrigatórias
 
@@ -247,6 +265,7 @@ A nomenclatura vigente é:
 - contexto de navegação não amplia consentimento, prioridade, progresso ou autoridade;
 - Planos canonicamente registrado não equivale a checkout implementado;
 - navegar para Planos não equivale a contratar;
+- contrato de navegação especializado não equivale a wireframe principal vigente;
 - Organização ≠ Guivos Business;
 - Organização Transforma ≠ Guivos Business Enterprise;
 - `BND-002` ≠ Enterprise ou Scale;
@@ -254,10 +273,15 @@ A nomenclatura vigente é:
 - validação até `BND-001` não valida sistema de terceiro;
 - pagar um plano ou patrocínio não altera relevância funcional;
 - `COM-005` validado não promove automaticamente `TRN-305`;
+- exemplos reais do atlas não equivalem a parceiros, oportunidades admitidas ou PMF;
 - validação documental não equivale a implementação técnica.
 
 ## 11. Estado da frente
 
 V1, V2, V3 e V4 estão encerradas nos limites declarados. D4 propaga `JED-001..JED-009`; D5-A e D5-B materializam o eixo em superfícies existentes; D5-C1 contrata `PER-010..012` e `TRN-008..013`; D5-C2 materializa as três superfícies; D5-C3 valida localmente os três SVGs; D5-C4A materializa as origens em Hoje e governa o contrato integrado; D5-C4B promove as seis ligações para integralmente validadas no limite documental.
 
-A lacuna específica D5-C está encerrada. V5/UXA-102, D6, D7 e Engenharia de Produto permanecem fora desta frente.
+A reconciliação pós-313/314 corrige separadamente a maturidade da arquitetura principal de Organização e Coletivo: seus wireframes principais autenticados continuam pendentes, ainda que fluxos especializados preservem validações próprias.
+
+O atlas de supply e relevância documenta Research consolidado e simulações, mas não substitui o Dry Run/Piloto com Pessoas reais.
+
+V5/UXA-102, D6, D7 e Engenharia de Produto permanecem fora desta frente.

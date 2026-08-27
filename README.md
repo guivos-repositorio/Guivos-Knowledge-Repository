@@ -8,15 +8,18 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **2.43.0** |
+| GKR-STATE-001 | **2.44.0** |
 | Era | **GE-2 — Knowledge** |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
 | frente funcional não numerada mais recente do Journey | **D5-C4B — `TRN-008..013` integralmente validadas no limite documental** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | **pausada antes de W0-01** |
-| SVGs | **121 — 121 validados / 0 pendentes** |
-| associações | **121** |
+| SVGs físicos | **121; inclui artefatos históricos superseded** |
+| maturidade visual agregada | **não inferir; recomputação governada pendente** |
+| wireframe principal autenticado da Organização | **pendente** |
+| wireframe principal autenticado do Coletivo | **pendente** |
+| associações físicas | **121** |
 | perfis | **34** |
 | superfícies/estados/fronteiras | **57** |
 | transições | **66** |
@@ -27,6 +30,17 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 A [Reconciliação Global de Integridade pós-PR #300](docs/project/global-integrity-reconciliation-post-300-2026-08-21.md) corrigiu deriva em superfícies globais sem reabrir decisões temáticas.
 
 A [Reconciliação Derivada da Autoridade Pública da Marca e do Fundador](docs/governance-framework/brand-public-authority-propagation.md) sincroniza a decisão posterior sobre fundador, sistema verbal e Home Pública sem criar nova UXA ou implementação.
+
+A reconciliação pós-PR #313/#314 corrige o estado de Organizações e Coletivos: `UXA-015..018` permanecem históricos `superseded`, seus SVGs ficam apenas para rastreabilidade e não podem ser usados como wireframes principais vigentes. Fluxos especializados independentes preservam a maturidade que possuam por autoridade própria.
+
+```text
+121 SVGs FÍSICOS
+≠ 121 WIREFRAMES VIGENTES
+≠ 121 WIREFRAMES VALIDADOS
+
+CONTRATO DE NAVEGAÇÃO
+≠ WIREFRAME VIGENTE
+```
 
 ## Public Canon
 
@@ -143,7 +157,7 @@ Planos:
 
 Plano não representa mérito, prestígio ou nível de evolução.
 
-A origem voluntária de Planos está formalizada por `PER-009 ↔ PER-301`, `COL-002 ↔ COL-301` e `ORG-001 ↔ ORG-301`. A origem da Pessoa permanece sem SVG dedicado; navegar para Planos não equivale a contratar ou iniciar cobrança.
+A origem voluntária de Planos está formalizada semanticamente por `PER-009 ↔ PER-301`, `COL-002 ↔ COL-301` e `ORG-001 ↔ ORG-301`. A origem da Pessoa permanece sem SVG dedicado. Para Coletivo e Organização, esses contratos especializados de origem/retorno **não provam que os wireframes principais autenticados estejam definidos**. Navegar para Planos não equivale a contratar ou iniciar cobrança.
 
 ## Separações canônicas
 
@@ -172,6 +186,9 @@ GPA-006 2.0.0 convergido ≠ Intelligence implementado
 Design Delivery emitido ≠ Design produzido ≠ implementação ≠ publicação
 Guilherme Oliveira ≠ Guivos
 Do possível ao vivido. ≠ assinatura institucional da Guivos
+Home pública de Organizações e Coletivos ≠ UX autenticada da Organização ≠ UX autenticada do Coletivo
+fluxo especializado validado ≠ jornada principal validada
+materialização administrativa local ≠ baseline final da experiência
 ```
 
 ## Guivos Journey
@@ -188,6 +205,8 @@ PER-008 — Hoje recorrente
 ```
 
 `PER-010..012` possuem SVG low-fidelity e estão funcionalmente validados localmente. `TRN-008..013` estão integralmente validadas documentalmente; isso não comprova roteamento, persistência, sincronização ou produto implementado. A primeira variante de Hoje continua sem obrigação de expor esses aprofundamentos.
+
+Para Organização e Coletivo, a arquitetura principal autenticada permanece incompleta e os respectivos wireframes principais continuam pendentes. Os SVGs históricos de `UXA-015/016` não são baseline para a futura construção.
 
 Autoridade normativa dos Domínios: [PAS-001-DOMAIN-MODEL-001](docs/product-architecture/pas-001-evolution-domains-model.md).
 
@@ -273,13 +292,14 @@ Design Delivery emitido
 
 ## Autoridades recentes e recuperação
 
-- [Registro do Estado Atual 2.43.0](docs/project/current-state-register.md)
+- [Registro do Estado Atual 2.44.0](docs/project/current-state-register.md)
 - [Roadmap 12.84.0](docs/roadmap.md)
 - [Matriz de Consolidação Canônica 3.2.0](docs/project/canonical-consolidation-matrix.md)
 - [Painel de Conhecimento 12.84.0](docs/project/knowledge-board.md)
 - [Marcos Arquiteturais 5.46.0](docs/project/architectural-milestones.md)
 - [Autoridade Pública da Marca e Papel do Fundador](docs/governance-framework/brand-public-authority-and-founder-role.md)
 - [Reconciliação Derivada da Autoridade Pública](docs/governance-framework/brand-public-authority-propagation.md)
+- [Estado de UX e Wireframes — Organizações e Coletivos](docs/experience-architecture/organizations-collectives-ux-state.md)
 - [Índice UXA-047 a UXA-101](docs/experience-architecture/uxa-047-101-index.md)
 - [Snapshot externo de Design v4 — oito Homes](docs/experience-architecture/public-homes-design-delivery-v4-snapshot-record.md)
 - [Manifesto Canônico de Entrega para Design v4](docs/experience-architecture/public-homes-design-delivery-manifest.md)
@@ -316,6 +336,9 @@ Não estão autorizados ou comprovados apenas pela consolidação documental:
 - APIs Intelligence operacionais;
 - Power BI integrado ao Intelligence;
 - Design, wireframe, UI ou protótipo produzido para qualquer Home apenas pelo handoff;
+- wireframe principal autenticado da Organização;
+- wireframe principal autenticado do Coletivo;
+- nova contagem agregada de maturidade visual antes de recomputação governada;
 - PMF ou resultados de pesquisa sem base reproduzível;
 - operação de Pontos em produção sem autoridade/evidência própria;
 - assinatura registrada sem concessão própria;
@@ -337,6 +360,7 @@ O [Roadmap 12.84.0](docs/roadmap.md) não define uma sequência automática.
 UXA-102/V5 = NOT_STARTED
 Product Engineering = PAUSED
 Design = exige decisão própria
+Organização/Coletivo — wireframes principais = PENDENTES
 Filing das assinaturas = exige Human Filing Authorization
 Presença operacional do fundador = exige gate próprio
 ```

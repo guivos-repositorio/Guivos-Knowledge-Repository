@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-ORGANIZATION-001
 title: Jornada Integrada da Organização
 status: draft
-version: 0.11.0
+version: 0.12.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-26
 related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
@@ -35,6 +35,8 @@ related:
   - UXA-100-A3
   - UXA-100-A4
   - UXA-101
+  - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
 
@@ -44,7 +46,7 @@ normative: false
 
 ```text
 identidade, unidade e autoridade
-→ visão geral institucional
+→ visão geral institucional ainda a materializar em arquitetura vigente
 → responsabilidade material atual
 → oportunidades e programas
 → relações com Coletivos e Organizações
@@ -56,16 +58,26 @@ identidade, unidade e autoridade
 | Etapa | Maturidade primária | Autoridade contratual | Referência materializada | Evidência de validação | Continuidade integrada |
 |---|---|---|---|---|---|
 | fundação institucional | contratado | UXA-014 | — | — | não examinada |
-| Visão Geral da Organização | validado | UXA-014 | UXA-015; navegação A4 | UXA-017; UXA-100-A4 | parcial geral; Planos integral |
-| responsabilidade material atual | contratado | UXA-014 | presente parcialmente na Visão Geral | UXA-017 no escopo da referência | parcial |
-| cadastro de oportunidades | validado | UXA-004 | UXA-008 | UXA-013 | publicação → descoberta validada por UXA-098 |
+| Visão Geral da Organização | **contratado; wireframe principal pendente** | UXA-014 | `UXA-015`/SVG associado apenas como histórico `superseded` | `UXA-017` superseded; sem validação vigente do wireframe principal | contratos especializados preservam maturidade própria; arquitetura geral pendente |
+| responsabilidade material atual | contratado | UXA-014 | arquitetura final pendente | — | parcial/indeterminada até definição da experiência principal |
+| cadastro de oportunidades | validado no fluxo especializado | UXA-004 | UXA-008 | UXA-013 | publicação → descoberta validada por UXA-098 |
 | descoberta Mapa/Lista e detalhe | validado | UXA-004 | UXA-024; UXA-028; UXA-007 | UXA-025; UXA-029; UXA-012; UXA-101 no recorte de saída | TRN-203/204/210/211 por UXA-098; TRN-205 até BND-001 por UXA-101 |
 | relação Organização–Coletivo | contratado | UXA-019 | — | — | ausente |
 | patrocínio e Opportunity Boost | materializado | UXA-038 | UXA-040 a UXA-055 | UXA-041 a UXA-055; residual UXA-099 | parcial |
-| Planos e cobrança | canonicamente registrado | GEM-004 / UXA-100-A3/A4 | 3 SVGs canônicos / 4 superfícies | UXA-100-A2/A3/A4 | origem administrativa integral; transições internas locais; BND-002 parcial |
+| Planos e cobrança | canonicamente registrado no fluxo especializado | GEM-004 / UXA-100-A3/A4 | 3 SVGs do pacote / 4 superfícies | UXA-100-A2/A3/A4 no escopo próprio | contratos de origem/retorno preservados; transições internas locais; BND-002 parcial |
 | evidências e resultados institucionais | indeterminado | referências dispersas | matriz integrada ausente | — | não examinada |
 
-A validação de uma tela institucional ou de um fluxo de cadastro não equivale à validação integral da jornada institucional.
+A validação de um fluxo especializado não equivale à definição ou validação da arquitetura principal autenticada da Organização.
+
+```text
+CONTRATO DE NAVEGAÇÃO
+≠ WIREFRAME VIGENTE
+
+FLUXO ESPECIALIZADO VALIDADO
+≠ JORNADA INSTITUCIONAL COMPLETA VALIDADA
+```
+
+`UXA-015` e `UXA-017` permanecem relacionados apenas para rastreabilidade histórica e não são autoridade vigente de design.
 
 ## 2. Eixo de Domínios de Evolução
 
@@ -158,12 +170,14 @@ Antes da saída, `PER-203` explicita destino externo, responsável, dados/contex
 
 ## 5. Planos como etapa transversal canônica
 
-A UXA-100-A3 registra **Planos** canonicamente na jornada institucional da Organização. A UXA-100-A4 fecha sua origem voluntária reutilizando `ORG-001 — Visão Geral da Organização` e corrige o rótulo visual obsoleto `Guivos Business` nessa superfície.
+A UXA-100-A3 registra **Planos** canonicamente na jornada institucional da Organização. A UXA-100-A4 preserva um contrato documental de origem/retorno associado semanticamente a `ORG-001`, mas a reconciliação posterior impede que esse contrato seja usado para promover o antigo SVG de `ORG-001` a wireframe vigente.
 
 A taxonomia desta jornada é **Conecta / Eleva / Transforma**. Guivos Business permanece Produto Especializado separado, com taxonomia própria e sem correspondência automática 1:1 com os planos da Organização.
 
+A relação lógica preservada no pacote especializado é:
+
 ```text
-ORG-001 — Visão Geral da Organização
+CONTEXTO INSTITUCIONAL / ORG-001 COMO RESPONSABILIDADE SEMÂNTICA
 └── TRN-427 → ORG-301 — Planos e comparação
     ├── TRN-421 → ORG-302 — revisão de contratação
     │   └── TRN-422 → ORG-304 — resultado/recuperação
@@ -172,10 +186,10 @@ ORG-001 — Visão Geral da Organização
     │   └── TRN-424 → ORG-304
     │       └── TRN-425 → ORG-301
     ├── TRN-426 → BND-002 — contratação/dimensionamento assistido
-    └── TRN-428 → ORG-001 — retorno sem alteração comercial
+    └── TRN-428 → contexto institucional / ORG-001 como responsabilidade semântica
 ```
 
-`TRN-427/428` estão **integralmente validadas no limite documental da Guivos**. Elas preservam Organização, unidade e autoridade institucional; abrir Planos não seleciona tier nem inicia cobrança, e retornar não altera plano/capacidade.
+`TRN-427/428` preservam a validação documental de seu **contrato de navegação especializado**. Isso significa que abrir Planos não seleciona tier nem inicia cobrança, e retornar não altera plano/capacidade. Não significa que a tela principal autenticada da Organização esteja definida ou validada.
 
 `TRN-421` a `TRN-425` continuam localmente validadas. `TRN-426` permanece parcial porque o processo posterior a `BND-002` não foi materializado. `BND-002` identifica contratação/dimensionamento assistido quando o autoatendimento não for suficiente; não representa Guivos Business Scale, Enterprise ou qualquer outro plano específico.
 
@@ -189,7 +203,7 @@ criar nova oportunidade/programa
     → ORG-301
 ```
 
-Referência canônica:
+Referência do fluxo especializado de Planos:
 
 ![Organização — Planos](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
@@ -213,7 +227,8 @@ Separações obrigatórias:
 
 - `Organização ≠ Guivos Business`;
 - `Organização Transforma ≠ Guivos Business Enterprise`;
-- `BND-002 ≠ plano Enterprise ou Scale`.
+- `BND-002 ≠ plano Enterprise ou Scale`;
+- `TRN-427/428 validadas como contrato ≠ ORG-001 materializada como wireframe vigente`.
 
 ## 6. Relação com Coletivos
 
@@ -257,9 +272,11 @@ A relação preserva finalidade, compromissos, recursos, autonomia, dados, conte
 
 Esta vista permanece `draft` porque:
 
+- **a arquitetura da informação e o wireframe principal autenticado da Organização ainda não foram definidos**;
+- `UXA-015/017` permanecem históricos `superseded`;
 - a relação Organização–Coletivo não possui materialização bilateral específica;
 - a matriz institucional completa ainda não existe;
-- `TRN-201` permanece parcial e `TRN-202` localmente validada;
+- `TRN-201` permanece parcial e `TRN-202` preserva sua maturidade própria;
 - integrações patrocinadas com Mapa/Lista (`TRN-304`/`TRN-306`) permanecem parciais;
 - as transições comerciais internas de Planos continuam locais e `TRN-426` permanece parcial;
 - cobrança real, gateway e processo assistido posterior a `BND-002` não foram implementados/validados ponta a ponta;
@@ -270,4 +287,6 @@ Esta vista permanece `draft` porque:
 
 ## 9. Estado da frente
 
-A Organização mantém publicação/descoberta validada pela UXA-098, saída consciente até `BND-001` validada pela UXA-101 e origem voluntária de Planos `ORG-001 ↔ ORG-301` validada pela UXA-100-A4. A taxonomia vigente de planos é `Conecta · Eleva · Transforma`; Guivos Business permanece produto separado. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista, sem iniciar D5. Nenhuma próxima UXA é iniciada automaticamente.
+A Organização mantém publicação/descoberta validada pela UXA-098, saída consciente até `BND-001` validada pela UXA-101 e o fluxo especializado de Planos com sua maturidade documental própria. A taxonomia vigente de planos é `Conecta · Eleva · Transforma`; Guivos Business permanece produto separado. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista, sem iniciar D5.
+
+O próximo avanço da experiência principal autenticada deve partir dos fundamentos, papéis/jobs, arquitetura da informação e mapa de superfícies vigentes — **não do SVG histórico de UXA-015**. Nenhuma próxima UXA é iniciada automaticamente.

@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-COLLECTIVES-001
 title: Coletivos
 status: active
-version: 0.13.0
+version: 0.14.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-26
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
@@ -26,6 +26,8 @@ related:
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
 
@@ -35,20 +37,22 @@ normative: false
 
 ## 1. Ordem funcional de inspeção
 
+Esta página reúne materiais de naturezas distintas. A sequência abaixo é uma rota de inspeção física, não uma declaração de que todos os elementos componham uma única UX principal vigente.
+
 ```text
 explorar e buscar
 → Perfil Público
 → revisão e solicitação
 → Solicitação Pendente
-→ Visão Geral do Responsável
-→ gestão completa de solicitações
+→ referências administrativas locais do Coletivo
+→ gestão de solicitações
 → resultado aprovado
 → Meus Coletivos
 → Central de Atualizações
 → Início do Participante
 ```
 
-A galeria alcança visualmente `PER-108`. A UXA-096 reforma as versões correntes da Central e do Início, valida ambas e fecha `TRN-111` ponta a ponta sem adicionar novo SVG.
+A experiência principal autenticada do Coletivo ainda depende de arquitetura da informação e wireframe próprios. A UXA-096 preserva a maturidade da Central e do Início do Participante na perspectiva da Pessoa participante; isso não define a UX administrativa principal do Coletivo.
 
 ## 2. Descoberta e busca
 
@@ -71,7 +75,7 @@ A galeria alcança visualmente `PER-108`. A UXA-096 reforma as versões corrente
 
 ## 3. Perfil Público do Coletivo
 
-**Cobertura:** 4 SVGs · IDs: `GKR-SURF-PER-103`, `GKR-SURF-COL-001` · origem: `UXA-062` · validação: `UXA-063`
+**Cobertura:** 4 SVGs · IDs: `GKR-SURF-PER-103`, `GKR-SURF-COL-001` no recorte público · origem: `UXA-062` · validação: `UXA-063`
 
 ### `uxa-062-collective-public-profile-open-entry-mobile.svg`
 ![](../assets/wireframes/uxa-062-collective-public-profile-open-entry-mobile.svg){ width="320" loading="lazy" }
@@ -84,6 +88,8 @@ A galeria alcança visualmente `PER-108`. A UXA-096 reforma as versões corrente
 
 ### `uxa-062-collective-public-profile-protected-mobile.svg`
 ![](../assets/wireframes/uxa-062-collective-public-profile-protected-mobile.svg){ width="320" loading="lazy" }
+
+O Perfil Público preserva sua maturidade própria. Presença pública ≠ experiência autenticada principal do Coletivo.
 
 ## 4. Revisão e solicitação
 
@@ -106,7 +112,7 @@ A galeria alcança visualmente `PER-108`. A UXA-096 reforma as versões corrente
 
 ## 5. Solicitação Pendente
 
-**Cobertura:** 8 SVGs · IDs: `GKR-SURF-PER-105`, `GKR-SURF-COL-003` · origem: `UXA-066`
+**Cobertura:** 8 SVGs · IDs: `GKR-SURF-PER-105`, `GKR-SURF-COL-003` no handoff aplicável · origem: `UXA-066`
 
 ### `uxa-066-collective-pending-request-awaiting-decision-mobile.svg`
 ![](../assets/wireframes/uxa-066-collective-pending-request-awaiting-decision-mobile.svg){ width="320" loading="lazy" }
@@ -132,23 +138,25 @@ A galeria alcança visualmente `PER-108`. A UXA-096 reforma as versões corrente
 ### `uxa-066-collective-pending-request-expired-mobile.svg`
 ![](../assets/wireframes/uxa-066-collective-pending-request-expired-mobile.svg){ width="320" loading="lazy" }
 
-A família possui oito estados com validação funcional vigente; o estado aprovado corrente foi revalidado pela UXA-092.
+A família preserva validação funcional própria; o estado aprovado corrente foi revalidado pela UXA-092.
 
-## 6. Referência inicial do Coletivo
+## 6. Referência inicial histórica do Coletivo
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-COL-001` · origem: `UXA-016` · validação: `UXA-018`
+**Cobertura física:** 1 SVG · associação histórica: `GKR-SURF-COL-001` · `UXA-016/018` = **superseded**
 
-### `uxa-016-collective-home-mobile.svg`
+### `uxa-016-collective-home-mobile.svg` — histórico superseded
 ![](../assets/wireframes/uxa-016-collective-home-mobile.svg){ width="320" loading="lazy" }
 
-## 7. Visão Geral do Responsável
+> Este SVG permanece somente por rastreabilidade. Não é wireframe vigente, baseline de produto ou validação atual da experiência autenticada do Coletivo.
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-COL-002` · origem: `UXA-086` · reformulação e validação: **UXA-087**
+## 7. Referência administrativa local do Responsável
+
+**Cobertura física:** 1 SVG · ID: `GKR-SURF-COL-002` · origem: `UXA-086` · reformulação/validação local: `UXA-087`
 
 ### `uxa-086-collective-responsible-overview-desktop.svg`
 ![](../assets/wireframes/uxa-086-collective-responsible-overview-desktop.svg){ width="720" loading="lazy" }
 
-`GKR-TRN-112` está integralmente validada pela UXA-090.
+`GKR-TRN-112` preserva sua maturidade documental própria no fluxo de gestão de solicitações. A materialização de `COL-002` é uma evidência administrativa local e **não constitui baseline final da experiência principal autenticada do Coletivo**.
 
 ## 8. Gestão de Solicitações do Responsável
 
@@ -175,7 +183,7 @@ A família possui oito estados com validação funcional vigente; o estado aprov
 ### `uxa-088-collective-request-management-insufficient-authority-desktop.svg`
 ![](../assets/wireframes/uxa-088-collective-request-management-insufficient-authority-desktop.svg){ width="720" loading="lazy" }
 
-A UXA-090/092 validou os handoffs aplicáveis do fluxo de solicitação.
+A UXA-090/092 preserva os handoffs aplicáveis do fluxo de solicitação. Esse fluxo especializado não define as demais áreas internas do Coletivo.
 
 ## 9. Meus Coletivos
 
@@ -184,7 +192,7 @@ A UXA-090/092 validou os handoffs aplicáveis do fluxo de solicitação.
 ### `uxa-091-my-collectives-mobile.svg`
 ![](../assets/wireframes/uxa-091-my-collectives-mobile.svg){ width="320" loading="lazy" }
 
-`GKR-TRN-108` e `GKR-TRN-110` permanecem integralmente validadas.
+`GKR-TRN-108` e `GKR-TRN-110` preservam sua maturidade documental própria.
 
 ## 10. Central de Atualizações
 
@@ -204,24 +212,40 @@ A versão corrente explicita que o CTA para o Início depende do vínculo atual 
 
 A referência sintetiza propósito, vínculo atual, papel, momento, ação compartilhada, consulta e autonomia. Não replica a Central ou canais internos especializados e não infere presença, função ou autoridade.
 
-`GKR-TRN-111` está **integralmente validada** pela UXA-096: vínculo atual/permissão são revalidados, retorno é neutro, estado canônico prevalece e repetição não duplica efeito lógico.
+`GKR-TRN-111` preserva sua validação documental pela UXA-096: vínculo atual/permissão são revalidados, retorno é neutro, estado canônico prevalece e repetição não duplica efeito lógico.
 
-## 12. Dependências ainda sem SVG dedicado
+## 12. Dependências ainda sem SVG dedicado e UX principal pendente
 
 `GKR-SURF-COL-004` a `GKR-SURF-COL-008` permanecem fora deste pacote. Estados alternativos P0B/P1 também permanecem separados.
+
+Além disso:
+
+```text
+ARQUITETURA DA INFORMAÇÃO PRINCIPAL DO COLETIVO
+→ PENDENTE
+
+WIREFRAME PRINCIPAL AUTENTICADO DO COLETIVO
+→ PENDENTE
+
+VALIDAÇÃO DESSE WIREFRAME PRINCIPAL
+→ PENDENTE
+```
 
 ## 13. Cobertura desta página
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs | **34** |
-| validados na versão corrente | **34** |
-| pendentes locais | **0** |
+| SVGs físicos | **34** |
+| artefatos históricos superseded explícitos nesta página | **1** (`uxa-016-collective-home-mobile.svg`) |
+| maturidade agregada dos 34 SVGs | **não inferir; cada família deve ser lida por autoridade própria** |
+| wireframe principal autenticado do Coletivo | **pendente** |
 
-As dez pendências globais permanecem exclusivamente nos estados residuais da UXA-055.
+A presença física de 34 SVGs não significa 34 wireframes vigentes ou validados da UX do Coletivo.
 
 ## 14. Próximo gate
 
-A continuidade de Coletivos até o Início está validada no escopo documental. A próxima priorização deverá partir das lacunas remanescentes; **UXA-097 não foi iniciada**.
+Os fluxos públicos, de solicitação, participação e gestão especializada preservam as maturidades que possuem por autoridade própria. O próximo gate da **experiência principal autenticada do Coletivo** é anterior ao wireframing: papéis/jobs prioritários → arquitetura da informação → mapa de superfícies → fluxos e estados críticos.
+
+Nenhuma próxima UXA, UI, protótipo ou Engenharia de Produto é iniciada automaticamente.
 
 [← Organização e Oportunidades](screen-gallery-opportunities-organization.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Opportunity Boost — Exposição →](screen-gallery-opportunity-boost-exposure.md)
