@@ -2,12 +2,12 @@
 id: RP-002-PILOT-PRIV-CH-TEST-001
 title: Piloto — Resultado dos Testes dos Canais de Privacidade
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos Research
 last_updated: 2026-08-27
 normative: false
 parent: RP-002
-maturity: channels_provisioned_delivery_confirmation_pending
+maturity: privacy_channels_end_to_end_validated
 related:
   - RP-002-PILOT-PRIV-CH-DEC-001
   - RP-002-PILOT-CTRL-DEC-001
@@ -19,11 +19,19 @@ related:
 
 ## 1. Finalidade
 
-Este documento registra a cronologia operacional dos testes sintéticos do canal de privacidade do piloto `RP-002`.
+Este documento registra a cronologia operacional dos testes sintéticos dos canais de privacidade do piloto `RP-002`.
 
-Ele preserva tanto a falha inicial quanto o reteste realizado após confirmação operacional de criação dos endereços, evitando que um snapshot anterior permaneça como estado atual.
+Ele preserva:
 
-## 2. Canais definidos
+- a falha inicial anterior ao provisionamento;
+- a confirmação posterior de criação dos canais;
+- o reteste sem bounce imediato;
+- a confirmação final de recebimento, acesso e resposta pelos dois canais;
+- o fechamento do gate operacional `P2B`.
+
+Nenhuma mensagem de participante real foi utilizada.
+
+## 2. Canais vigentes
 
 ```text
 CANAL PRINCIPAL — PT-BR
@@ -34,9 +42,12 @@ CANAL INTERNACIONAL — EN
 
 CONTROLADOR
 → Guivos Ltda
+
+OWNER OPERACIONAL FUNCIONAL
+→ Guivos Research / Pilot Owner do RP-002
 ```
 
-A existência técnica dos dois endereços foi confirmada pelo operador responsável no contexto operacional do piloto em 27/08/2026.
+A responsabilidade operacional funcional já estava designada em `RP-002-PILOT-CTRL-DEC-001`.
 
 ## 3. Primeiro teste — antes do provisionamento
 
@@ -61,16 +72,23 @@ INTERPRETAÇÃO
 
 Esse teste provou que o canal ainda não estava operacional naquele momento.
 
-## 4. Confirmação posterior de provisionamento
+A falha permanece preservada como evidência histórica e não deve ser apagada por resultados posteriores.
+
+## 4. Provisionamento posterior
 
 Em 27/08/2026 foi confirmado operacionalmente que os seguintes endereços foram criados:
 
 - `privacidade@guivos.com`;
 - `privacy@guivos.com`.
 
-Essa confirmação substitui o estado anterior de `NOT PROVISIONED` para a existência técnica declarada dos canais.
+A partir dessa confirmação:
 
-## 5. Reteste após criação
+```text
+P2B-2 — PROVISIONAMENTO REAL
+→ PASS
+```
+
+## 5. Reteste de envio após criação
 
 Foram enviados dois novos testes sintéticos, ambos sem dados reais de participante.
 
@@ -83,11 +101,8 @@ DESTINO
 ENVIO PELO REMETENTE
 → ACCEPTED
 
-BOUNCE IMEDIATO OBSERVADO
-→ NÃO
-
-RECEBIMENTO CONFIRMADO NO DESTINO
-→ AINDA NÃO COMPROVADO
+BOUNCE IMEDIATO COMO NO TESTE A
+→ NÃO OBSERVADO
 ```
 
 ### T-PRIV-001-C — canal internacional
@@ -99,45 +114,166 @@ DESTINO
 ENVIO PELO REMETENTE
 → ACCEPTED
 
-BOUNCE IMEDIATO OBSERVADO
-→ NÃO
-
-RECEBIMENTO CONFIRMADO NO DESTINO
-→ AINDA NÃO COMPROVADO
+BOUNCE IMEDIATO COMO NO TESTE A
+→ NÃO OBSERVADO
 ```
 
-## 6. Interpretação correta
+Naquele checkpoint, ausência de bounce ainda não era tratada como confirmação end-to-end.
 
-A evidência atual sustenta:
+## 6. Confirmação end-to-end
+
+Posteriormente, o remetente externo recebeu respostas originadas dos dois canais testados.
+
+### 6.1 Canal internacional
 
 ```text
-EXISTÊNCIA / PROVISIONAMENTO DECLARADO
-→ PASS
+ORIGEM DA RESPOSTA
+→ privacy@guivos.com
 
-ACEITAÇÃO DO ENVIO PELO REMETENTE
-→ PASS
+DESTINO
+→ remetente externo usado no teste
 
-FALHA SMTP IMEDIATA COMO NO TESTE ANTERIOR
-→ NÃO OBSERVADA NO RETESTE
+TIMESTAMP OBSERVADO
+→ 2026-08-27T22:30:36Z
 
-ENTREGA END-TO-END CONFIRMADA
-→ PENDING
-
-ACESSO PELO OWNER
-→ PENDING
-
-RESPOSTA
-→ PENDING
-
-FECHAMENTO
-→ PENDING
+RESULTADO
+→ RESPONSE RECEIVED
 ```
 
-Regra:
+### 6.2 Canal principal
 
-> **Ausência de bounce imediato não equivale a confirmação de entrega end-to-end.**
+```text
+ORIGEM DA RESPOSTA
+→ privacidade@guivos.com
 
-## 7. Estado de prontidão atualizado
+DESTINO
+→ remetente externo usado no teste
+
+TIMESTAMP OBSERVADO
+→ 2026-08-27T22:31:24Z
+
+RESULTADO
+→ RESPONSE RECEIVED
+```
+
+O GKR não armazena o corpo das respostas nem headers completos. Registra apenas a evidência operacional mínima necessária.
+
+## 7. O que as respostas provam
+
+A resposta a uma mensagem previamente enviada para cada canal sustenta, no limite operacional deste teste:
+
+```text
+CANAL EXISTE
+→ COMPROVADO
+
+MENSAGEM DE TESTE CHEGOU A UM AMBIENTE ACESSÍVEL
+→ COMPROVADO POR RESPOSTA À THREAD
+
+CAIXA / CANAL PODE SER ACESSADO OPERACIONALMENTE
+→ COMPROVADO
+
+CANAL PERMITE RESPOSTA AO REMETENTE EXTERNO
+→ COMPROVADO
+
+ROTA DE IDA E VOLTA
+→ COMPROVADA
+```
+
+Portanto:
+
+```text
+SEND
+→ RECEIVE
+→ ACCESS
+→ REPLY
+→ RETURN TO EXTERNAL SENDER
+→ PASS
+```
+
+Esse teste não comprova, sozinho:
+
+- SLA;
+- disponibilidade contínua;
+- processo completo de direitos do titular;
+- triagem de todos os tipos de solicitação;
+- retenção;
+- exclusão;
+- resposta jurídica adequada;
+- conformidade LGPD completa.
+
+## 8. Owner operacional
+
+O `RP-002-PILOT-CTRL-DEC-001` já define:
+
+```text
+RESPONSABILIDADE OPERACIONAL INTERNA
+→ Guivos Research / Pilot Owner do RP-002
+```
+
+O teste end-to-end confirma adicionalmente que existe acesso operacional real aos canais.
+
+Para o gate de readiness do canal, não é necessário expor no GKR o nome, login ou credencial da Pessoa que acessa a caixa.
+
+A autoridade é funcional:
+
+```text
+CHANNEL FUNCTIONAL OWNER
+→ Guivos Research / Pilot Owner do RP-002
+
+P2B-4 — OWNER OPERACIONAL
+→ PASS
+```
+
+Qualquer mudança futura de ownership deve preservar continuidade e mínimo privilégio.
+
+## 9. Estado de P2B
+
+O estado vigente passa a ser:
+
+```text
+P2B-1 — ARQUITETURA / NOMENCLATURA DOS CANAIS
+→ PASS
+
+P2B-2 — PROVISIONAMENTO REAL
+→ PASS
+
+P2B-3 — ENTREGA + ACESSO + RESPOSTA END-TO-END
+→ PASS
+
+P2B-4 — OWNER OPERACIONAL FUNCIONAL
+→ PASS
+
+P2B — CANAL OFICIAL DE PRIVACIDADE
+→ PASS
+```
+
+Este documento prevalece sobre checkpoints anteriores exclusivamente para o estado operacional atual dos canais de privacidade.
+
+## 10. P2C permanece separado
+
+Fechar `P2B` **não fecha automaticamente `P2C`**.
+
+`P2C` exige um teste sintético de processo de direitos que percorra, no mínimo:
+
+```text
+RECEBIMENTO
+→ TRIAGEM
+→ CLASSIFICAÇÃO DA SOLICITAÇÃO
+→ AÇÃO / DECISÃO APLICÁVEL
+→ RESPOSTA
+→ REGISTRO DE FECHAMENTO
+```
+
+O teste deve utilizar somente dados sintéticos e não pode depender de um participante real.
+
+Até isso ocorrer:
+
+```text
+P2C — PROCESSO DE DIREITOS TESTADO NO CANAL REAL
+→ HOLD
+```
+
+## 11. Estado de prontidão atualizado
 
 ```text
 P1A — IDENTIDADE INSTITUCIONAL
@@ -146,20 +282,8 @@ P1A — IDENTIDADE INSTITUCIONAL
 P1B — CONTROLADOR FORMAL
 → PASS
 
-P2B-1 — ARQUITETURA / NOMENCLATURA DO CANAL
-→ PASS
-
-P2B-2 — PROVISIONAMENTO REAL
-→ PASS
-
-P2B-3 — ENTREGA END-TO-END
-→ PENDING CONFIRMATION
-
-P2B-4 — OWNER OPERACIONAL
-→ HOLD
-
 P2B — CANAL OFICIAL DE PRIVACIDADE
-→ CONDITIONAL / HOLD
+→ PASS
 
 P2C — PROCESSO DE DIREITOS TESTADO
 → HOLD
@@ -170,6 +294,12 @@ P3 — FINALIDADES / CATEGORIAS
 P4 — BASE LEGAL
 → HOLD
 
+OPERADORES / FERRAMENTAS
+→ HOLD
+
+PERMISSÕES REAIS
+→ HOLD
+
 PARTICIPANT 001
 → HOLD
 
@@ -177,90 +307,64 @@ DRY RUN REAL
 → NOT RELEASED
 ```
 
-## 8. Critério para promover P2B-3
-
-Para `P2B-3` virar `PASS`, deve existir evidência de que pelo menos o canal principal:
-
-1. recebeu a mensagem sintética;
-2. pode ser acessado pelo owner operacional;
-3. permite resposta ao remetente externo.
-
-O canal internacional deve ser testado pelo mesmo padrão.
-
-## 9. Critério para promover P2B completo
-
-`P2B` somente poderá ser promovido a `PASS` quando:
-
-```text
-P2B-1 — PASS
-P2B-2 — PASS
-P2B-3 — PASS
-P2B-4 — PASS
-```
-
-## 10. Critério para P2C
-
-O processo de direitos deve ser testado separadamente com solicitação sintética que percorra:
-
-```text
-RECEBIMENTO
-→ TRIAGEM
-→ IDENTIFICAÇÃO DA SOLICITAÇÃO
-→ RESPOSTA
-→ REGISTRO DE FECHAMENTO
-```
-
-Nenhum dado real de participante deve ser usado para esse teste.
-
-## 11. Privacidade do próprio teste
+## 12. Privacidade do próprio teste
 
 O GKR registra apenas resultados operacionais agregados.
 
 Não deve armazenar:
 
 - conteúdo de solicitações reais de titulares;
+- conteúdo integral das mensagens sintéticas quando desnecessário;
 - endereços pessoais de participantes;
 - headers completos;
 - credenciais;
+- senhas;
+- tokens;
 - configurações secretas do provedor;
 - conteúdo interno da caixa de privacidade.
 
-## 12. Regra de evidência
+## 13. Regra de evidência
 
 ```text
-CRIAÇÃO DECLARADA PELO OPERADOR
+CRIAÇÃO DECLARADA
 → EVIDÊNCIA DE PROVISIONAMENTO
 
 ENVIO ACEITO
-≠ ENTREGA CONFIRMADA
+→ EVIDÊNCIA DE SAÍDA DO REMETENTE
 
-SEM BOUNCE IMEDIATO
-≠ ACESSO CONFIRMADO
+RESPOSTA ORIGINADA DO CANAL À THREAD TESTADA
+→ EVIDÊNCIA DE RECEBIMENTO + ACESSO + REPLY PATH
 
-ALIAS EXISTENTE
-≠ PROCESSO DE DIREITOS VALIDADO
+P2B PASS
+≠ P2C PASS
+
+CANAL FUNCIONAL
+≠ CONFORMIDADE DE PRIVACIDADE COMPLETA
 ```
 
-## 13. Próximo checkpoint
+## 14. Próximo checkpoint
 
 ```text
 privacidade@guivos.com
-→ CRIADO
-→ RETESTE ENVIADO
-→ ENTREGA A CONFIRMAR
+→ PROVISIONADO
+→ END-TO-END TESTADO
+→ PASS
 
 privacy@guivos.com
-→ CRIADO
-→ RETESTE ENVIADO
-→ ENTREGA A CONFIRMAR
+→ PROVISIONADO
+→ END-TO-END TESTADO
+→ PASS
 
-PRÓXIMA EVIDÊNCIA NECESSÁRIA
-→ RECEBIMENTO + ACESSO + RESPOSTA
+P2B
+→ PASS
+
+PRÓXIMO BLOCKER DA FRENTE DE PRIVACIDADE
+→ P2C — TESTE SINTÉTICO DO PROCESSO DE DIREITOS
 
 PARTICIPANT 001
 → CONTINUA HOLD
 ```
 
-## 14. Regra final
+## 15. Regra final
 
-> **A falha inicial continua válida como histórico; o estado atual é de canais provisionados com confirmação end-to-end ainda pendente.**
+> **Os canais de privacidade do RP-002 estão materializados e validados end-to-end. O próximo passo é provar o processo de atendimento de direitos, não apenas a capacidade de trocar e-mails.**
