@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-SUPPLY-VALUE-001
 title: Organizações e Coletivos — Atlas de Oportunidades, Relevância, Supply e Validação
 status: active
-version: 1.1.1
+version: 1.1.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-26
 normative: false
@@ -935,7 +935,7 @@ E6 — econômica
 E7 — rede
 ```
 
-A existência de `REAL-EXT` e das simulações atuais ainda deixa a tese da Guivos predominantemente antes de `E3/E4` para o produto em campo.
+A existência de `REAL-EXT` e das simulações atuais ainda deixa a tese da Guivos sem evidência própria de campo suficiente para promoção a `E3/E4`.
 
 ## 24. Benchmark previsto
 
