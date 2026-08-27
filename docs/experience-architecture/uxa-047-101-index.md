@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-101
 status: active
-version: 2.18.0
+version: 2.19.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-22
+last_updated: 2026-08-26
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -32,6 +32,8 @@ related:
   - GKR-UX-D5-C4A-001
   - GKR-UX-D5-C4B-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
+  - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-ORGCOL-POST313-RECON-001
   - M7.88
 normative: false
 ---
@@ -40,7 +42,7 @@ normative: false
 
 Este índice preserva a rastreabilidade das frentes funcionais recentes. A UXA-100-A4 é subfrente de reconciliação da UXA-100 e não cria UXA-102 nem novo marco funcional.
 
-`PAS-001-DOMAIN-MODEL-001`, D4, D5, a convergência das Homes públicas, a governança de marca/proteção marcária, o Fundamento Cristão, a Reconciliação Global de Integridade pós-#300 e a Autoridade Pública da Marca e do Fundador são autoridades/frentes não numeradas. Elas **não constituem nova UXA nem alteram a última UXA funcional numerada**, que permanece UXA-101.
+`PAS-001-DOMAIN-MODEL-001`, D4, D5, a convergência das Homes públicas, a governança de marca/proteção marcária, o Fundamento Cristão, a Reconciliação Global de Integridade pós-#300, a Autoridade Pública da Marca e do Fundador e a reconciliação pós-PR #313/#314 de Organizações e Coletivos são autoridades/frentes não numeradas. Elas **não constituem nova UXA nem alteram a última UXA funcional numerada**, que permanece UXA-101.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -104,6 +106,8 @@ Este índice preserva a rastreabilidade das frentes funcionais recentes. A UXA-1
 - [UXA-095](uxa-095-participant-home-materialization-and-trn111-refinement.md)
 - [UXA-096](uxa-096-participant-home-functional-validation-per107-revalidation-and-trn111-integrated-validation.md)
 
+A reconciliação posterior preserva essas frentes conforme sua autoridade específica. `UXA-086/087`, por exemplo, continuam evidência administrativa local do pacote do Coletivo, mas **não constituem baseline final da UX principal autenticada do Coletivo**.
+
 ## UXA-097 a UXA-101 — fechamento funcional vigente
 
 - [UXA-097](uxa-097-initial-understanding-to-today-integrated-continuity-validation.md)
@@ -117,7 +121,7 @@ Complementos da UXA-100:
 - [UXA-100-A1](uxa-100-a1-plans-journey-integration-and-dedicated-screens.md)
 - [UXA-100-A2](uxa-100-a2-plans-screens-and-journeys-functional-audit.md)
 - [UXA-100-A3](uxa-100-a3-plans-canonical-fragmentation-and-promotion.md)
-- [UXA-100-A4](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md) — origens voluntárias e retorno de Planos; não inicia UXA-102.
+- [UXA-100-A4](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md) — origens voluntárias e retorno de Planos; não inicia UXA-102. Após a reconciliação pós-313/314, contratos de origem/retorno de Coletivo e Organização **não provam wireframe principal vigente**.
 
 ## Frentes não numeradas posteriores
 
@@ -140,7 +144,8 @@ Também são frentes não numeradas posteriores, em suas autoridades próprias:
 - Fundamento Cristão e Doutrina de Propósito;
 - Reconciliação Global de Integridade pós-PR #300;
 - Autoridade Pública da Marca e Papel do Fundador;
-- Reconciliação Derivada da Autoridade Pública da Marca e do Fundador.
+- Reconciliação Derivada da Autoridade Pública da Marca e do Fundador;
+- reconciliação de Organizações e Coletivos pós-PR #313/#314.
 
 Nenhuma dessas frentes altera a numeração UXA, retoma Engenharia ou inicia UXA-102.
 
@@ -148,21 +153,24 @@ Nenhuma dessas frentes altera a numeração UXA, retoma Engenharia ou inicia UXA
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **2.43.0** |
+| Registro do Estado Atual | **2.44.0** |
 | marco funcional | **M7.88** |
 | última UXA funcional numerada | **UXA-101** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
 | Homes públicas convergidas | **8** |
 | Design Delivery vigente | **v4.0.0 — 39 arquivos externos** |
 | Snapshot externo v4 | **`dfed980d8cfb39bbe4694e58d7c86ca0692266dc`** |
-| SVGs funcionais | **121 — 121 validados / 0 pendentes** |
-| associações | **121** |
+| SVGs físicos no inventário | **121; inclui históricos superseded** |
+| maturidade visual agregada | **não inferir; recomputação governada pendente** |
+| wireframe principal autenticado da Organização | **pendente** |
+| wireframe principal autenticado do Coletivo | **pendente** |
+| associações físicas | **121** |
 | perfis | **34** |
 | superfícies/estados/fronteiras | **57** |
 | transições | **66** |
-| IDs com referência visual | **45 de 57** |
-| responsabilidades sem SVG | **10** |
+| IDs com referência visual no snapshot | **45 de 57** |
+| responsabilidades sem SVG no snapshot | **10** |
 | Engenharia de Produto | **pausada antes de W0-01** |
 | Design automático | **não iniciado** |
 
-D5-C4B permanece a última frente funcional não numerada do Journey. As reconciliações pós-#300 e de autoridade pública do fundador são documentais e transversais; não criam `UXA-102/V5` nem novo marco funcional.
+D5-C4B permanece a última frente funcional não numerada do Journey. As reconciliações pós-#300, de autoridade pública do fundador e de Organizações/Coletivos são documentais e transversais; não criam `UXA-102/V5` nem novo marco funcional.
