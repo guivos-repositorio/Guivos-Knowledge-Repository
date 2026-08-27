@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.1.1
+version: 1.1.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-26
 normative: false
@@ -47,7 +47,7 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | Jornada da Organização | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-ORGANIZATION-001` |
 | Jornada do Coletivo | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-COLLECTIVE-001` |
 | corpus de oportunidades reais | Research consolidado pré-campo | `RP-002-SUP-001` |
-| atlas de oportunidades, supply, relevância e testes | `active` 1.1.1, não normativo | `GKR-UX-ORGCOL-SUPPLY-VALUE-001` |
+| atlas de oportunidades, supply, relevância e testes | `active`, não normativo | `GKR-UX-ORGCOL-SUPPLY-VALUE-001` |
 | papel no supply | pesquisa consolidada pré-campo | `RP-002-OCE-001` |
 | proposta de valor econômica e de rede | hipótese de Research, não Canon | `RP-002-OCE-001` |
 | validação com perfis sintéticos | executada metodologicamente; não é PMF | `RP-002-PMF-001` + atlas |
