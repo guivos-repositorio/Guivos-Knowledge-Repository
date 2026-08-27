@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.43.0
+version: 2.44.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-22
+last_updated: 2026-08-26
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -95,6 +95,9 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V2-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V3-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
+  - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-ORGCOL-POST313-RECON-001
+  - GKR-UX-ORGCOL-DERIVED-AUDIT-001
   - GOG-001
   - ROADMAP-12.83.0
   - M7.88
@@ -105,9 +108,9 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro declara o estado global vigente do Guivos Knowledge Repository após a **Reconciliação Global de Integridade pós-PR #300** e a integração da **Autoridade Pública da Marca e Papel do Fundador**.
+Este registro declara o estado global vigente do Guivos Knowledge Repository após a **Reconciliação Global de Integridade pós-PR #300**, a integração da **Autoridade Pública da Marca e Papel do Fundador** e a **reconciliação pós-PR #313/#314 do estado de UX de Organizações e Coletivos**.
 
-A versão 2.43.0 preserva integralmente o estado funcional da versão 2.42.0 e adiciona a reconciliação temática posterior de marca e autoridade pública. Nenhuma UXA, marco funcional, Produto Especializado, Design, implementação ou filing é promovido por esta atualização.
+A versão 2.44.0 preserva integralmente o estado funcional da versão 2.43.0 e sincroniza os derivados globais com a decisão de que os wireframes principais autenticados de Organização e Coletivo ainda não foram definidos. `UXA-015..018` permanecem históricos `superseded`; os SVGs associados permanecem fisicamente por rastreabilidade, sem autoridade vigente de design. Nenhuma nova UXA, marco funcional, Produto Especializado, Design, implementação ou filing é promovido por esta atualização.
 
 ```text
 AUTORIDADE TEMÁTICA VIGENTE
@@ -124,16 +127,20 @@ CORREÇÃO DE DERIVA
 ≠ NOVA UXA
 ≠ DESIGN
 ≠ IMPLEMENTAÇÃO
+
+INVENTÁRIO FÍSICO DE SVGs
+≠ WIREFRAMES VIGENTES
+≠ WIREFRAMES VALIDADOS
 ```
 
-Em caso de divergência, prevalece este registro transversal para o estado global e, dentro de cada domínio, a autoridade temática específica mais recente.
+Em caso de divergência, prevalece este registro transversal para o estado global e, dentro de cada domínio, a autoridade temática específica mais recente. No escopo de Organizações e Coletivos, `GKR-ORGCOL-POST313-RECON-001` e `GKR-UX-ORGCOL-UX-STATE-001` governam a correção de maturidade visual.
 
 ## 2. Estado global
 
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Registro do Estado Atual | **GKR-STATE-001 v2.43.0** |
+| Registro do Estado Atual | **GKR-STATE-001 v2.44.0** |
 | Marco funcional | **M7.88 — saída consciente para fronteira externa validada** |
 | Última frente funcional numerada | **UXA-101** |
 | Reconciliação de Planos | **UXA-100-A4 — origem voluntária de Planos** |
@@ -144,11 +151,14 @@ Em caso de divergência, prevalece este registro transversal para o estado globa
 | Domínios de Evolução | **9 canônicos + `Ainda estou descobrindo` como estado transversal** |
 | Superfícies/estados/fronteiras | **57** |
 | Transições | **66** |
-| SVGs | **121 — 121 validados / 0 pendentes** |
-| Associações por SVG | **121** |
-| Perfis | **34** |
-| IDs granulares com referência visual | **45 de 57** |
-| Responsabilidades sem SVG dedicado | **10** |
+| SVGs físicos no inventário | **121; inclui artefatos históricos `superseded`** |
+| Maturidade visual agregada | **não inferir do inventário; recomputação governada pendente após supersessão de UXA-015..018** |
+| Wireframe principal autenticado da Organização | **pendente / não definido** |
+| Wireframe principal autenticado do Coletivo | **pendente / não definido** |
+| Associações físicas por SVG | **121** |
+| Perfis de rastreabilidade | **34** |
+| IDs granulares com referência visual no snapshot | **45 de 57** |
+| Responsabilidades sem SVG dedicado no snapshot | **10** |
 | Fronteiras sem tela por definição | **2** |
 | Homes públicas convergidas | **8** |
 | Design Delivery | **v4.0.0 — 31 fontes canônicas + 8 guias = 39 arquivos externos** |
@@ -255,11 +265,22 @@ PER-008 — Hoje recorrente
 
 A promoção documental não comprova implementação técnica, roteamento real, persistência, cache, fila, telemetria, API ou produto em produção.
 
-`TRN-406/407` permanecem contratadas. `TRN-417/418` e `TRN-427/428` continuam integralmente validadas no limite documental de navegação administrativa. As transições comerciais internas de Planos preservam suas maturidades anteriores.
+`TRN-406/407` permanecem contratadas. `TRN-417/418` e `TRN-427/428` preservam a maturidade de seus **contratos especializados de navegação administrativa**. Essa maturidade não constitui prova de que a arquitetura de informação ou os wireframes principais autenticados de Coletivo e Organização estejam definidos. As transições comerciais internas de Planos preservam suas maturidades anteriores.
 
 A D5-C1 aplica as separações de Domínios às responsabilidades de `Meus Objetivos`, `Meus Próximos Passos` e `Minha Evolução`; D5-C2 materializa, D5-C3 valida/reformula, D5-C4A governa a navegação e D5-C4B valida os handoffs sem transformar domínio ou contexto em decisão, prioridade, progresso ou evolução.
 
-A UXA-100-A4 preserva a correção do rótulo obsoleto `Guivos Business` no SVG de `ORG-001` sem criar novo ativo. `BND-002` permanece fronteira genérica de contratação/dimensionamento assistido e não pertence semanticamente a um plano específico.
+A referência visual antiga de `ORG-001`, originada em `UXA-015/017` e posteriormente tocada por UXA-100-A4, é histórica `superseded` como wireframe principal. A UXA-100-A4 preserva somente os contratos e decisões especializadas que possuam autoridade própria; ela não revalida o SVG histórico como baseline de produto. O mesmo princípio se aplica às antigas referências de `UXA-016/018` do Coletivo. `BND-002` permanece fronteira genérica de contratação/dimensionamento assistido e não pertence semanticamente a um plano específico.
+
+```text
+CONTRATO DE NAVEGAÇÃO
+≠ WIREFRAME VIGENTE
+
+FLUXO ESPECIALIZADO VALIDADO
+≠ JORNADA PRINCIPAL VALIDADA
+
+MATERIALIZAÇÃO ADMINISTRATIVA LOCAL
+≠ BASELINE FINAL DA EXPERIÊNCIA
+```
 
 Sequência funcional preservada:
 
@@ -348,6 +369,8 @@ HANDOFF AUTORIZADO
 ```
 
 `GKR-HOME-DECISION-NO-WIREFRAME-001` permanece registro histórico da decisão pós-P5 de 2026-08-12; sua proibição procedimental foi posteriormente superada somente para a fase externa de Design pelo handoff comum. As decisões semânticas, narrativas, funcionais e de produto permanecem intactas.
+
+A convergência da **Home pública** de Organizações e Coletivos não equivale à definição dos wireframes das **experiências autenticadas** desses participantes. São superfícies e problemas distintos.
 
 ## 6. Guivos Business e incentivos
 
@@ -781,7 +804,7 @@ P0–P9 permanece **documentalmente consolidado**:
 - P8 — Produtos Especializados: integrado, com aprofundamento posterior do Intelligence;
 - P9 — estado global/Public Canon: consolidado.
 
-A Reconciliação Global de Integridade pós-#300 não reabre esse programa. A autoridade pública do fundador é uma frente temática posterior e separada.
+A Reconciliação Global de Integridade pós-#300 não reabre esse programa. A autoridade pública do fundador e a reconciliação de Organizações/Coletivos são frentes temáticas posteriores e separadas.
 
 **Encerramento documental não significa encerramento das lacunas operacionais.**
 
@@ -793,13 +816,15 @@ A Reconciliação Global de Integridade pós-#300 não reabre esse programa. A a
 | V2 — publicação → descoberta/mapa/lista/detalhe | encerrada pela UXA-098 |
 | V3 — estados residuais Opportunity Boost | encerrada pela UXA-099 |
 | Planos — identidade/promoção canônica | encerrada pela UXA-100-A3 |
-| Planos — origem voluntária e retorno | identidade encerrada pela UXA-100-A4; PER-009 ainda sem materialização |
+| Planos — origem voluntária e retorno | identidade encerrada pela UXA-100-A4; PER-009 ainda sem materialização; contratos de Coletivo/Organização não provam wireframes principais vigentes |
 | Journey — Domínios de Evolução | baseline canônico + D4 propagado + D5-A/B materializados em superfícies existentes |
 | D5-C1 | PER-010..012 + TRN-008..013 contratados |
 | D5-C2 | PER-010..012 materializados |
 | D5-C3 | PER-010..012 reformulados e validados |
 | D5-C4A | Hoje recorrente reformulado/revalidado; contexto mínimo e proteção dos handoffs governados |
 | D5-C4B | **TRN-008..013 integralmente validadas; lacuna específica D5-C encerrada no limite documental** |
+| Organização — UX principal autenticada | **arquitetura da informação e wireframe principal pendentes** |
+| Coletivo — UX principal autenticada | **arquitetura da informação e wireframe principal pendentes** |
 | V4 — efeito externo de oportunidades | encerrada pela UXA-101 até BND-001 |
 | V5 — erros, retornos e interrupções | **pendente; não iniciada** |
 
@@ -823,6 +848,9 @@ Continuam abertos quando dependentes de realidade ou autorização específica:
 - cobrança real e gateway;
 - handoffs Journey → Mall e Journey → Travel;
 - materialização de `PER-009`;
+- **arquitetura da informação e wireframe principal autenticado da Organização**;
+- **arquitetura da informação e wireframe principal autenticado do Coletivo**;
+- **recomputação governada da maturidade visual agregada após supersessão de `UXA-015..018`**;
 - maturidade das transições internas de Planos onde ainda parcial;
 - integrações patrocinadas ainda parciais conforme autoridade própria;
 - processo posterior a `BND-002`;
@@ -845,8 +873,14 @@ Continuam abertos quando dependentes de realidade ou autorização específica:
 - D5-C4B permanece a frente funcional não numerada mais recente do Journey;
 - **UXA-102/V5 permanece NOT_STARTED**;
 - **Product Engineering permanece PAUSED antes de W0-01**;
-- 121 SVGs permanecem validados;
+- **121 SVGs físicos permanecem no inventário; isso não significa 121 wireframes vigentes ou validados**;
+- **a antiga claim agregada `121 validados / 0 pendentes` está superseded como estado de maturidade vigente**;
+- **nenhuma nova contagem agregada é inferida antes de recomputação governada**;
+- **wireframe principal autenticado da Organização permanece pendente**;
+- **wireframe principal autenticado do Coletivo permanece pendente**;
+- `UXA-015`, `UXA-016`, `UXA-017` e `UXA-018` permanecem históricos `superseded`;
 - Pessoa, Coletivo e Organização permanecem jornadas `draft`;
+- fluxos especializados independentes preservam a maturidade sustentada por suas autoridades específicas;
 - nove Domínios de Evolução permanecem vocabulário do Journey;
 - `Ainda estou descobrindo` não é décimo domínio;
 - classificação de domínio por IA não está declarada como operacional;
@@ -856,6 +890,7 @@ Continuam abertos quando dependentes de realidade ou autorização específica:
 - a primeira variante de Hoje não é obrigada a expor os handoffs especializados;
 - materialização, validação, promoção, implementação e operação são estados distintos;
 - P1–P5 da Home de Organizações e Coletivos permanecem histórico válido;
+- a Home pública de Organizações e Coletivos ≠ experiência autenticada de Organização ≠ experiência autenticada de Coletivo;
 - `GKR-HOME-DECISION-NO-WIREFRAME-001` permanece histórico, superado somente quanto à proibição procedimental na fase externa de Design;
 - cada Home mantém finalidade, narrativa e autoridade próprias;
 - Media pode abastecer editorialmente outra superfície sem adquirir autoridade sobre ela;
@@ -904,7 +939,9 @@ Continuam abertos quando dependentes de realidade ou autorização específica:
 
 ## 17. Regra de não perda
 
-A reconciliação pós-#300 e a propagação posterior da autoridade pública do fundador não invalidam detalhes válidos das autoridades temáticas ou das versões anteriores apenas porque o registro transversal tenha sido reorganizado.
+A reconciliação pós-#300, a propagação posterior da autoridade pública do fundador e a reconciliação pós-PR #313/#314 de Organizações e Coletivos não invalidam detalhes válidos das autoridades temáticas ou das versões anteriores apenas porque o registro transversal tenha sido reorganizado.
+
+Ela invalida somente as claims conflitantes de maturidade que dependiam de `UXA-015..018` como autoridade visual vigente. Fluxos especializados com autoridade independente não são rebaixados automaticamente.
 
 ```text
 REORGANIZAÇÃO DO ESTADO
@@ -916,11 +953,16 @@ OMISSÃO EDITORIAL EM RESUMO
 HISTÓRICO PRESERVADO
 + AUTORIDADE TEMÁTICA PRESERVADA
 + ESTADO GLOBAL SINCRONIZADO
+
+SUPERSESSÃO DE UM WIREFRAME PRINCIPAL
+≠ INVALIDAÇÃO AUTOMÁTICA DE FLUXO ESPECIALIZADO INDEPENDENTE
 ```
 
 ## 18. Próximo ato governado
 
-A versão 2.43.0 fecha a sincronização global necessária para a autoridade pública do fundador sem selecionar automaticamente a próxima frente estratégica.
+A versão 2.44.0 fecha a sincronização global necessária para a autoridade pública do fundador **e para o estado real de UX de Organizações e Coletivos**, sem selecionar automaticamente a próxima frente estratégica.
+
+No recorte de Organização e Coletivo, o avanço futuro deve obedecer à sequência governada: fundamentos → papéis/jobs → arquitetura da informação → mapa de superfícies → fluxos/estados → wireframes → validação → UI → protótipo → testes → handoff. Nenhum SVG histórico pode pular essa sequência.
 
 Qualquer próximo ato deve nascer de uma necessidade real e da autoridade correspondente. Em particular:
 
@@ -928,6 +970,9 @@ Qualquer próximo ato deve nascer de uma necessidade real e da autoridade corres
 NÃO INFERIR UXA-102
 NÃO INFERIR PRODUCT ENGINEERING
 NÃO INFERIR DESIGN
+NÃO INFERIR WIREFRAME PRINCIPAL DE ORGANIZAÇÃO
+NÃO INFERIR WIREFRAME PRINCIPAL DE COLETIVO
+NÃO INFERIR NOVA CONTAGEM AGREGADA DE VALIDAÇÃO VISUAL
 NÃO INFERIR FILING
 NÃO INFERIR IMPLEMENTAÇÃO
 NÃO INFERIR PUBLICAÇÃO DE CONTEÚDO DO FUNDADOR
