@@ -1,11 +1,19 @@
 ---
 id: GKR-UX-HOME-MASTER-001
-title: Home Pública — Documento Mestre de Arquitetura Estratégica e Handoff para Design
-status: draft
-version: 0.1.0
+title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
+status: active
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-10
+last_updated: 2026-08-27
+normative: false
+maturity: reconciled_architecture_pre_materialization
 depends_on:
+  - GEB-P01
+  - GKR-CHRISTIAN-FOUNDATION-001
+  - GKR-BRAND-SIGNATURE-001
+  - GKR-BRAND-PUBLIC-AUTHORITY-001
+  - GOG-001
+  - GKR-STATE-001
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-001
@@ -16,184 +24,336 @@ depends_on:
   - GKR-UX-HOME-NARR-004
   - GKR-UX-HOME-NARR-005
   - GKR-UX-HOME-NAV-001
-  - GKR-UX-HOME-NAV-002
   - GKR-UX-HOME-NAV-003
-  - GKR-UX-HOME-NAV-004
   - GKR-UX-HOME-SYS-001
   - GKR-UX-HOME-GTM-BOUNDARY-001
+  - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
+related:
+  - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
   - GKR-UX-HOME-AUDIT-001
   - GKR-UX-HOME-AUDIT-002
-normative: false
+  - GKR-UX-HOME-PERSON-GENINPUT-001
 ---
 
-# Home Pública — Documento Mestre de Arquitetura Estratégica e Handoff para Design
+# Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 
-## 1. Finalidade deste documento
+## 1. Finalidade e autoridade de consumo
 
-Este é o **documento mestre de consumo da Home pública da Guivos**.
+Este é o **documento mestre vigente de consumo da Home pública principal da Guivos**, com perspectiva predominante da Pessoa.
 
-Ele existe para permitir que uma pessoa de Design, UX, UI, Produto, Desenvolvimento, Marketing, liderança ou qualquer novo participante do projeto consiga compreender a arquitetura estratégica vigente da Home **sem precisar reconstruir a decisão a partir de dezenas de documentos técnicos ou códigos internos**.
+Ele existe para que liderança, Brand, Marketing, Produto, Experience Architecture, UX, Design, Desenvolvimento, Research, Legal/Privacidade, Intelligence e demais equipes consigam compreender a Home sem reconstruir a verdade atual por meio de uma cadeia de documentos históricos, refinamentos e propagations.
 
-Este documento foi deliberadamente estruturado para:
+Regra de consumo:
 
-- ser aberto isoladamente;
-- ser impresso isoladamente;
-- ser enviado como briefing;
-- ser usado como referência para Figma;
-- orientar wireframe e exploração visual quando essa etapa for autorizada;
-- servir como porta de entrada para os documentos de aprofundamento;
-- preservar a diferença entre arquitetura estratégica e materialização visual.
+> **Para compreender o estado atual da Home Pública — Pessoa, comece por este documento. Os artefatos especializados permanecem como aprofundamento e evidência de decisões específicas enquanto a auditoria integral não concluir sua absorção ou permanência.**
 
-Regra de uso:
+Este master:
 
-> **Para compreender ou materializar a Home, comece por este documento. Use os documentos especializados apenas para aprofundar decisões específicas.**
+- preserva a riqueza estratégica construída na frente original;
+- absorve autoridades posteriores de Fundação, Marca, Public Canon, Research e Experience Architecture;
+- corrige formulações superadas sem apagar seu histórico no Git;
+- distingue verdade vigente de materialização futura;
+- não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, campanha ou lançamento;
+- não define a primeira tela autenticada após a Home.
 
-Este documento **não autoriza** wireframe, Figma, protótipo, UI final, implementação, publicação, Marketing/GTM ou merge.
+```text
+MASTER VIGENTE
+→ verdade atual da arquitetura pública da Home
 
----
+DOCUMENTOS ESPECIALIZADOS
+→ aprofundamento / evidência / contratos específicos ainda não removidos
 
-## 2. Estado atual da Home
-
-Estado consolidado desta frente:
-
-> **ARQUITETURA ESTRATÉGICA CONVERGIDA — MATERIALIZAÇÃO NÃO AUTORIZADA.**
-
-A arquitetura vigente está coerente entre:
-
-- posicionamento;
-- Hero;
-- narrativa;
-- Header;
-- participantes;
-- produtos;
-- prova;
-- autoridade;
-- autonomia;
-- interação;
-- ritmo;
-- mobile;
-- fronteira com Marketing/GTM.
-
-Não existe, no escopo atual, lacuna estratégica crítica que exija continuar criando novos refinamentos conceituais antes de futura materialização.
-
-Permanecem para etapas posteriores:
-
-- copy final;
-- grid e layout;
-- tipografia;
-- paleta;
-- fotografia e vídeo;
-- movimento;
-- breakpoints;
-- solução material do mobile;
-- quantidade final de regiões técnicas;
-- composição completa do rodapé;
-- disponibilidade e estratégia de lançamento;
-- implementação.
+GIT
+→ história das decisões anteriores
+```
 
 ---
 
-## 3. O que a Home precisa transmitir
+## 2. Estado atual
 
-A Home não deve apresentar a Guivos como um catálogo de produtos ou uma coleção de serviços.
+Estado desta autoridade:
 
-A percepção desejada é de:
+```text
+HOME PRINCIPAL / PESSOA
+→ ARQUITETURA ESTRATÉGICA RECONCILIADA NESTE MASTER
+
+MATERIALIZAÇÃO VISUAL NOVA
+→ NÃO AUTORIZADA POR ESTE DOCUMENTO
+
+PRIMEIRA TELA AUTENTICADA APÓS A HOME
+→ BLOQUEADA ATÉ O FECHAMENTO DA AUDITORIA INTEGRAL
+
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
+
+PMF
+→ NOT VALIDATED
+```
+
+A existência de Source Locks, snapshots, wireframes, Design deliveries ou explorações anteriores não promove seu conteúdo a baseline visual atual durante a auditoria.
+
+```text
+DOCUMENTO DE DESIGN EXISTENTE
+≠ DESIGN VIGENTE
+≠ UI APROVADA
+≠ IMPLEMENTAÇÃO
+```
+
+---
+
+## 3. Papel da Home no ecossistema
+
+A Home é uma superfície pública institucional.
+
+Ela deve permitir que uma pessoa:
+
+- compreenda a ideia central da Guivos;
+- perceba amplitude sem ser exposta a um catálogo;
+- reconheça Pessoas, Organizações e Coletivos como participantes do ecossistema;
+- compreenda que diferentes Produtos Especializados cumprem responsabilidades diferentes;
+- veja realidade e evidência sem falsa personalização;
+- encontre caminhos de navegação sem precisar percorrer toda a narrativa;
+- mantenha autonomia sobre quando explorar, entrar, iniciar uma Journey ou sair;
+- compreenda que entrar em uma experiência protegida é uma transição distinta da Home pública.
+
+A Home não deve:
+
+- diagnosticar o visitante;
+- fingir que conhece seu Momento;
+- pedir relato pessoal para explicar a Guivos;
+- apresentar conteúdo geral como recomendação pessoal;
+- transformar anúncio em relevância orgânica;
+- prometer transformação, resultado, emprego, renda, saúde, impacto ou evolução;
+- reduzir a Guivos a produto, IA, marketplace, comunidade, rede social, portal ou catálogo.
+
+---
+
+## 4. Fundação vigente que a Home deve materializar
+
+A formulação central preservada é:
+
+> **A Guivos reduz a distância entre o Momento Atual de um participante e seu Próximo Passo de evolução.**
+
+A Home deve refletir a hierarquia conceitual vigente:
+
+```text
+MOMENTO
+→ OBJETIVO / NECESSIDADE
+→ PRÓXIMO PASSO
+→ POSSIBILIDADE, quando agrega valor
+→ MECANISMO
+→ OPORTUNIDADE REAL, quando existe materialização externa legítima
+→ ESCOLHA
+→ EXPERIÊNCIA
+→ CONTRIBUIÇÃO / APRENDIZADO
+→ NOVO MOMENTO
+```
+
+Essa cadeia não é um funil obrigatório.
+
+Nem todo Próximo Passo exige uma Oportunidade externa. Nem toda Possibilidade precisa se materializar como produto, vaga, serviço, evento ou oferta.
+
+Exemplos legítimos:
+
+| Contexto | Possibilidade | Mecanismo possível | Oportunidade externa obrigatória? |
+|---|---|---|---|
+| Pessoa precisa organizar uma decisão | refletir, comparar alternativas, conversar | conhecimento, relação, ferramenta | não |
+| Pessoa quer desenvolver uma habilidade | aprender e praticar | conteúdo, curso, mentor, comunidade | pode existir |
+| Pessoa quer contribuir | participar de uma causa | Coletivo, Organização, ação social | pode existir |
+| Pessoa precisa cuidar de algo urgente | buscar orientação/serviço apropriado | recurso, profissional, instituição | pode existir |
+
+Regra:
+
+```text
+POSSIBILIDADE
+≠ OPORTUNIDADE
+
+OPORTUNIDADE
+≠ PROMESSA
+
+MAIS OPORTUNIDADES
+≠ MAIS EVOLUÇÃO
+```
+
+---
+
+## 5. Percepção institucional desejada
+
+A Home não deve apresentar a Guivos como soma de serviços.
+
+A percepção desejada permanece:
 
 - futuro;
 - possibilidade;
 - simplicidade;
 - confiança;
 - escala global;
-- sofisticação sem complexidade;
+- sofisticação sem complexidade desnecessária;
 - tecnologia sem frieza;
 - humanidade sem clichê;
-- uma Guivos maior do que a soma dos produtos.
+- uma Guivos maior do que a soma dos Produtos Especializados.
 
-Direção criativa:
+Direção criativa preservada:
 
 > **Futuro sem ficção. Tecnologia sem frieza. Sofisticação sem elitismo. Escala sem ruído. Humanidade sem clichê.**
 
-A Home deve fazer a pessoa perceber primeiro **o que se torna possível** e só depois compreender por que existe um ecossistema por trás disso.
-
 Regra narrativa central:
 
-> **A Home da Guivos não deve explicar um ecossistema para depois mostrar possibilidades. Deve mostrar possibilidades até que a pessoa naturalmente compreenda por que esse ecossistema precisa existir.**
+> **A Home da Guivos não deve explicar um ecossistema para depois mostrar possibilidades. Deve mostrar possibilidades e relações reais até que a pessoa naturalmente compreenda por que esse ecossistema precisa existir.**
 
 ---
 
-## 4. Tese institucional
+## 6. Tese institucional da Home
 
-A tese central é:
+A tese de trabalho reconciliada é:
 
-> **Entrar na Guivos deve ser percebido como entrar em um ecossistema capaz de ampliar o campo de possibilidades ao redor de uma Pessoa, Organização ou Coletivo, conectando elementos que normalmente existem de forma dispersa e tornando novos caminhos mais visíveis e possíveis, sem retirar de cada participante a autonomia sobre o caminho a seguir.**
+> **Entrar na Guivos deve ser percebido como entrar em um ecossistema capaz de ampliar o campo de possibilidades ao redor da Pessoa, conectando participantes, conhecimento, caminhos e experiências que muitas vezes existem de forma dispersa, e aproximando Oportunidades reais quando elas fizerem sentido — sem retirar da Pessoa a autonomia sobre o caminho a seguir.**
 
-A Guivos não deve ser apresentada como autora da transformação humana.
+A Guivos não é autora necessária de cada Possibilidade e não é autora automática da transformação de quem vive uma experiência.
 
 A Guivos pode:
 
-- ampliar horizonte;
+- ampliar percepção;
 - organizar contexto;
-- conectar possibilidades;
-- aproximar participantes;
-- tornar caminhos mais visíveis;
-- apoiar a passagem da possibilidade para a experiência;
-- preservar a decisão com o participante.
+- tornar caminhos visíveis;
+- conectar participantes;
+- aproximar conhecimento, relações e recursos;
+- reduzir barreiras;
+- tornar Oportunidades legítimas mais encontráveis quando houver fit contextual;
+- apoiar a continuidade de uma Journey;
+- preservar escolha, correção, explicação e alternativas.
 
-Norte interno:
+Norte interno preservado:
 
 > **A Guivos não precisa ser o centro da história. Ela precisa ampliar o mundo em que a história pode acontecer.**
 
 ---
 
-## 5. Hero — direção conceitual
+## 7. Marca e sistema verbal
 
-### 5.1 Pergunta-mãe
+A assinatura institucional global da Guivos é:
 
-> **O que se torna possível quando você entra aqui?**
+> **Possibility, lived.**
 
-Esta pergunta governa a narrativa inteira da Home.
+A versão oficial em português é:
 
-Ela desloca o foco de:
+> **Possibilidade, vivida.**
 
-> “o que a Guivos possui?”
+A hashtag global é:
 
-para:
+> **#PossibilityLived**
 
-> “o que pode passar a fazer parte do campo de possibilidades de quem entra?”
-
-### 5.2 Segunda camada
-
-> **Um mundo maior de possibilidades passa a fazer parte do seu.**
-
-A função é introduzir amplitude e pertencimento sem prometer abundância, resultado ou transformação garantida.
-
-### 5.3 Terceira camada
-
-Formulação de trabalho:
-
-> **A Guivos conecta pessoas, organizações, conhecimento, oportunidades e experiências para tornar novos caminhos mais visíveis e possíveis.**
-
-A redação pública final ainda pode ser lapidada.
-
-### 5.4 Assinatura complementar
+A expressão:
 
 > **Do possível ao vivido.**
 
-Não precisa disputar com a pergunta-mãe o papel de headline principal.
+pertence à identidade pessoal e autoral do fundador.
 
-### 5.5 Regra visual da Hero
+Consequentemente:
 
-As três camadas acima são **camadas semânticas**, não três blocos de texto obrigatoriamente grandes e simultâneos.
+```text
+POSSIBILITY, LIVED.
+→ GUIVOS
 
-> **camadas semânticas da Hero ≠ três massas de texto simultaneamente dominantes.**
+POSSIBILIDADE, VIVIDA.
+→ GUIVOS
 
-O design poderá trabalhar hierarquia, progressive disclosure, vídeo, fotografia, ritmo e composição desde que a mensagem permaneça compreensível.
+DO POSSÍVEL AO VIVIDO.
+→ FUNDADOR
+→ NÃO É ASSINATURA COMPLEMENTAR DA HOME
+→ NÃO É SEGUNDA ASSINATURA DA GUIVOS
+```
+
+A Home não precisa de uma segunda assinatura para sustentar sua Hero.
+
+Quando a assinatura institucional for utilizada, sua aplicação deve obedecer `GKR-BRAND-SIGNATURE-001`; este documento não determina posição visual, tamanho ou lockup.
 
 ---
 
-## 6. Primeiro comportamento desejado
+## 8. Hero — direção conceitual vigente
 
-A primeira motivação que a Home deve produzir não é:
+### 8.1 Pergunta-mãe
+
+Direção conceitual preservada:
+
+> **O que se torna possível quando você entra aqui?**
+
+A pergunta governa a progressão da Home e desloca o foco de:
+
+```text
+o que a Guivos possui?
+```
+
+para:
+
+```text
+o que pode se tornar visível, acessível, conectável ou vivível a partir deste ecossistema?
+```
+
+### 8.2 Segunda camada — amplitude
+
+Formulação conceitual preservada:
+
+> **Um mundo maior de possibilidades passa a fazer parte do seu.**
+
+É direção de mensagem, não promessa quantitativa de abundância.
+
+`mundo maior` significa ampliação de contexto, percepção, relações, conhecimento e caminhos possíveis — não consumo infinito.
+
+### 8.3 Terceira camada — concretização
+
+Território de trabalho reconciliado:
+
+> **A Guivos conecta Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências para tornar novas Possibilidades mais visíveis e aproximar Oportunidades reais quando elas fizerem sentido.**
+
+A copy final continua aberta.
+
+### 8.4 Regra de composição semântica
+
+As três camadas são funções de mensagem, não três massas textuais de mesmo peso.
+
+```text
+CAMADAS SEMÂNTICAS
+≠ TRÊS BLOCOS DOMINANTES
+```
+
+Design futuro poderá usar hierarquia e progressive disclosure, desde que a compreensão sobreviva sem animação ou mídia rica.
+
+### 8.5 Direção de mídia
+
+A mídia deve comunicar:
+
+> **há vida acontecendo além desta tela.**
+
+Preferir, quando houver material real e direitos:
+
+- pessoas em contexto;
+- experiências reais;
+- Organizações e Coletivos em ação;
+- lugares reais;
+- aprendizagem, criação, contribuição e descoberta;
+- continuidade de histórias.
+
+Evitar como protagonista:
+
+- stock genérico;
+- hologramas;
+- cérebro digital;
+- dashboard;
+- mockup de IA;
+- luxo como prova de evolução;
+- estética cyberpunk;
+- mapa-múndi decorativo;
+- tecnologia como espetáculo sem função.
+
+---
+
+## 9. Primeiro comportamento desejado
+
+A Home não precisa produzir como primeiro desejo:
 
 - comprar;
 - cadastrar;
@@ -201,79 +361,93 @@ A primeira motivação que a Home deve produzir não é:
 - viajar;
 - consumir conteúdo;
 - usar IA;
-- escolher um produto.
+- escolher produto.
 
-A motivação primária é:
+A motivação primária continua sendo:
 
 > **descobrir.**
 
-Cadeia conceitual:
+Cadeia perceptiva de referência:
 
 ```text
 ENTRAR
 → AMPLIAR
 → DESCOBRIR
-→ CONECTAR
+→ COMPREENDER / CONECTAR
 → ESCOLHER
 → EXPERIMENTAR
-→ EVOLUIR
+→ APRENDER / EVOLUIR
 ```
 
-Interpretação emocional desejada:
+Essa cadeia é narrativa, não ontologia rígida nem funil obrigatório.
+
+Meta perceptiva interna preservada:
 
 > **“Existe mais mundo possível para mim do que eu imaginava.”**
 
-Essa é uma meta perceptiva interna, não uma promessa pública de resultado.
+Ela não é claim público de resultado.
 
 ---
 
-## 7. Arquitetura global da Home
+## 10. Arquitetura global da Home
 
-A Home deve ser entendida como três sistemas coordenados:
+A Home funciona como três sistemas coordenados:
 
 ```text
 NAVEGAÇÃO PERSISTENTE
-→ oferece liberdade de acesso
+→ liberdade de acesso
 
 NARRATIVA PROGRESSIVA
-→ constrói compreensão
+→ compreensão
 
 PROVA + AUTONOMIA
-→ transforma compreensão em confiança sem coerção
+→ confiança sem coerção
 ```
 
-A navegação não deve contar toda a história.
+Princípios:
 
-A narrativa não deve impedir quem já sabe onde quer ir.
-
-A prova não deve substituir significado.
+- navegação não conta toda a história;
+- narrativa não bloqueia quem já sabe onde quer ir;
+- prova não substitui significado;
+- autonomia não fica restrita a um disclaimer final.
 
 ---
 
-## 8. Header Persistente
+## 11. Header Persistente
 
-Hipótese principal:
+Inventário conceitual de referência:
 
 ```text
-Guivos | Sobre | Organizações e Coletivos
-
-Compartilhar | Idioma/Região | Launcher | Login | Iniciar Jornada
+Guivos / Home
+Sobre
+Organizações e Coletivos
+Compartilhar
+Idioma / Região
+Launcher do Ecossistema
+Login
+Iniciar Jornada
 ```
 
-### 8.1 Funções
+Funções:
 
-- **Guivos / Home** — retorno à Home;
-- **Sobre** — aprofundamento institucional;
-- **Organizações e Coletivos** — porta pública compartilhada para esses participantes;
-- **Compartilhar** — compartilhamento institucional da Home;
-- **Idioma / Região** — preferência global por controle compacto;
-- **Launcher** — acesso direto a produtos especializados;
-- **Login** — acesso de participante existente;
-- **Iniciar Jornada** — CTA dominante do Header e porta própria da Journey.
+| Elemento | Função |
+|---|---|
+| Guivos / Home | retorno à Home institucional |
+| Sobre | aprofundamento institucional |
+| Organizações e Coletivos | porta pública compartilhada desses participantes |
+| Compartilhar | utilidade de compartilhamento institucional |
+| Idioma / Região | preferência pública sem fingir conhecimento pessoal |
+| Launcher | acesso compacto a Produtos Especializados conhecidos |
+| Login | retomada de relação existente |
+| Iniciar Jornada | porta própria e persistente da Journey |
 
-### 8.2 Launcher
+Regra:
 
-O launcher contém:
+> **disponibilidade de navegação não implica protagonismo narrativo.**
+
+### 11.1 Launcher
+
+Na arquitetura conceitual atual, o launcher contém:
 
 - Travel;
 - Ads;
@@ -282,241 +456,222 @@ O launcher contém:
 - Intelligence;
 - Mall.
 
-**Journey não integra o launcher.**
-
-A divisão é:
+Journey não integra o launcher.
 
 ```text
-Journey
-→ Iniciar Jornada
+JOURNEY
+→ INICIAR JORNADA
 
-Travel / Ads / Media / Business / Intelligence / Mall
-→ Launcher
+TRAVEL / ADS / MEDIA / BUSINESS / INTELLIGENCE / MALL
+→ LAUNCHER
 ```
 
-### 8.3 Regra de densidade
+Isso descreve arquitetura, não disponibilidade operacional de lançamento.
 
-> **inventário do Header ≠ oito elementos de igual peso visual.**
+### 11.2 Header durante scroll
 
-Launcher, globo e compartilhar permitem compactação sem perda de função.
+Regra preservada:
 
----
+> **O Header deve permanecer disponível sem permanecer dominante. Ele orienta enquanto a narrativa conduz.**
 
-## 9. Header × Hero × CTAs
+Pode compactar; não deve desaparecer completamente como comportamento padrão nem aumentar pressão do CTA durante o scroll.
 
-A arquitetura separa duas intenções:
-
-```text
-HERO
-→ ainda estou entendendo a Guivos
-→ continuar descobrindo a própria Home
-
-HEADER
-→ já sei que quero avançar
-→ Iniciar Jornada
-```
-
-Regra:
-
-> **A Hero deve fazer a pessoa querer continuar entendendo; o Header deve permitir que ela aja quando já souber o que quer fazer.**
-
-Na hipótese principal, a Hero **não repete `Iniciar Jornada`** como CTA dominante.
-
-O CTA da Hero permanece no território semântico de:
-
-- Descubra a Guivos;
-- Explore possibilidades;
-- Comece a explorar;
-- formulação equivalente.
-
-O destino semântico é aprofundar a narrativa da própria Home.
-
-Hierarquia perceptiva de referência:
-
-1. mensagem da Hero;
-2. possibilidade / compreensão;
-3. CTA de descoberta;
-4. `Iniciar Jornada` no Header;
-5. demais acessos.
-
----
-
-## 10. Comportamento do Header durante o scroll
-
-Regra central:
-
-> **O Header da Guivos deve permanecer disponível sem permanecer dominante. Ele orienta enquanto a narrativa conduz.**
-
-### Estado Hero
-
-- presença leve;
-- legibilidade suficiente;
-- Hero continua sendo o principal foco.
-
-### Estado de narrativa
-
-- pode reduzir altura e densidade;
-- pode ganhar maior estabilidade de contraste;
-- não deve desaparecer completamente como comportamento padrão.
-
-Rejeita-se como padrão principal:
-
-```text
-rola para baixo → Header desaparece
-rola para cima → Header reaparece
-```
-
-A previsibilidade é mais importante do que ganhar alguns pixels de tela.
-
-`Iniciar Jornada` permanece disponível, mas sua pressão perceptiva não aumenta durante a rolagem.
-
-Não usar:
-
-- pulsação;
-- banner sticky adicional;
-- aumento agressivo do CTA;
-- urgência artificial.
-
----
-
-## 11. Mobile
+### 11.3 Mobile
 
 Princípio:
 
 > **mesma arquitetura, menor simultaneidade.**
 
-Prioridade de exposição:
+Prioridade semântica:
 
-1. **Guivos / Home + Iniciar Jornada**;
-2. **Launcher + Login + idioma/região**;
-3. **Sobre + Organizações e Coletivos + Compartilhar**.
+1. Guivos/Home + Iniciar Jornada;
+2. Launcher + Login + idioma/região;
+3. Sobre + Organizações e Coletivos + Compartilhar.
 
-Isso governa responsividade, não layout final.
-
-Condensar é permitido.
-
-Enterrar, remover ou transformar funções essenciais em caça ao ícone não é.
-
-Launcher e menu mobile geral possuem funções diferentes:
-
-```text
-LAUNCHER
-→ ecossistema / produtos
-
-MENU GERAL
-→ navegação institucional e utilitária
-```
-
-Podem compartilhar uma superfície em telas muito pequenas, mas os produtos devem permanecer identificados como ecossistema.
+Launcher e menu geral podem compartilhar uma superfície em mobile, mas suas funções devem permanecer distinguíveis.
 
 ---
 
-## 12. Os 11 movimentos narrativos
+## 12. Hero × Header × CTAs
 
-Os movimentos são **funções de significado**, não obrigação de onze seções visuais.
+Dois estados legítimos coexistem:
 
-1. **Hero — abrir o horizonte**;
-2. **Possibilidades Reais — provar realidade**;
-3. **Amplitude — mostrar diversidade de caminhos**;
-4. **Desconexão — revelar o problema**;
-5. **Guivos / Conexão — explicar o papel da Guivos**;
-6. **Do Possível ao Vivido — mostrar consequência real**;
-7. **Pertencimento — mostrar quem faz acontecer**;
-8. **Ecossistema / Produtos — materializar a coerência**;
-9. **Autoridade — demonstrar substância**;
-10. **Autonomia e Confiança — preservar controle**;
-11. **Descoberta — convidar à continuidade**.
+```text
+AINDA ESTOU ENTENDENDO
+→ Hero
+→ continuar descobrindo a Home
+
+JÁ QUERO AVANÇAR
+→ Header
+→ Iniciar Jornada
+```
+
+Portanto:
+
+> **Hero = descoberta. Header = acesso persistente à Journey.**
+
+Na hipótese principal, a Hero não repete `Iniciar Jornada` como CTA dominante.
+
+Territórios possíveis de CTA exploratório, ainda sem copy final:
+
+- Descubra a Guivos;
+- Explore possibilidades;
+- Comece a explorar;
+- Veja o que existe aqui;
+- formulação equivalente de baixo compromisso.
+
+O CTA exploratório não deve pedir autenticação, relato, localização, upload ou qualquer dado pessoal.
+
+---
+
+## 13. Os 11 movimentos narrativos vigentes
+
+Os movimentos são funções de significado, não obrigação de onze seções visuais.
+
+| # | Movimento | Função principal |
+|---:|---|---|
+| 01 | Hero — Abrir o Horizonte | criar curiosidade e amplitude |
+| 02 | Possibilidades Reais | provar que o universo descrito é real |
+| 03 | Amplitude | mostrar diversidade de caminhos sem virar taxonomia rígida |
+| 04 | Desconexão | revelar fragmentação, invisibilidade e distância contextual |
+| 05 | Guivos / Conexão | explicar o papel do ecossistema sem salvacionismo |
+| 06 | **Da Possibilidade à Experiência** | mostrar agência, escolha, experiência e continuidade |
+| 07 | Pertencimento | mostrar quem participa e faz o ecossistema acontecer |
+| 08 | Ecossistema / Produtos | explicar coerência e responsabilidades distintas |
+| 09 | Autoridade | demonstrar substância, método, proveniência e responsabilidade |
+| 10 | Autonomia e Confiança | explicitar limites e preservar controle |
+| 11 | Descoberta | reabrir continuidade sem fechar como venda |
 
 Direção narrativa:
 
 ```text
-pergunta
-→ realidade
-→ amplitude
-→ desconexão
-→ Guivos
-→ experiência
-→ pertencimento
-→ ecossistema
-→ autoridade
-→ autonomia
-→ descoberta
+PERGUNTA
+→ REALIDADE
+→ AMPLITUDE
+→ DESCONEXÃO
+→ GUIVOS
+→ EXPERIÊNCIA
+→ PERTENCIMENTO
+→ ECOSSISTEMA
+→ AUTORIDADE
+→ AUTONOMIA
+→ DESCOBERTA
 ```
 
 ---
 
-## 13. Sete macroexperiências de referência
-
-Regra:
-
-> **Onze funções. Sete macroexperiências de referência. Uma única narrativa.**
-
-### Macro 01 — Abrir o Horizonte
-
-- Movimento 01 — Hero.
-
-### Macro 02 — Ver o Real e Perceber a Amplitude
-
-- Movimento 02 — Possibilidades Reais;
-- Movimento 03 — Amplitude.
-
-### Macro 03 — Desconexão → Conexão
-
-- Movimento 04 — Desconexão;
-- Movimento 05 — Guivos / Conexão.
-
-### Macro 04 — Do Possível ao Vivido + Pertencimento
-
-- Movimento 06 — Do Possível ao Vivido;
-- Movimento 07 — Pertencimento.
-
-### Macro 05 — Coerência do Ecossistema
-
-- Movimento 08 — Ecossistema / Produtos.
-
-### Macro 06 — Autoridade + Autonomia
-
-- Movimento 09 — Autoridade;
-- Movimento 10 — Autonomia e Confiança.
-
-### Macro 07 — Reabrir o Horizonte
-
-- Movimento 11 — Descoberta.
-
-Regra para materialização:
-
-> **7 macroexperiências de referência ≠ 7 seções técnicas obrigatórias.**
-
-E:
-
-> **macroexperiência ≠ template de seção.**
-
-Evitar repetir sete vezes a fórmula “título + subtítulo + três cards + CTA + divisor”.
-
----
-
-## 14. Participantes × produtos
-
-Esta separação é estrutural:
+## 14. Sete macroexperiências de referência
 
 ```text
-Pessoa / Organização / Coletivo
-= quem participa
+MACRO 01 — ABRIR O HORIZONTE
+→ M01
 
-Journey / Travel / Mall / Media / Business / Intelligence / Ads
-= como o ecossistema ganha forma e capacidade
+MACRO 02 — VER O REAL E PERCEBER A AMPLITUDE
+→ M02 + M03
+
+MACRO 03 — DESCONEXÃO → CONEXÃO
+→ M04 + M05
+
+MACRO 04 — DA POSSIBILIDADE À EXPERIÊNCIA + PERTENCIMENTO
+→ M06 + M07
+
+MACRO 05 — COERÊNCIA DO ECOSSISTEMA
+→ M08
+
+MACRO 06 — AUTORIDADE + AUTONOMIA
+→ M09 + M10
+
+MACRO 07 — REABRIR O HORIZONTE
+→ M11
 ```
 
-Não existe correspondência 1:1.
+Regras:
 
-Portanto:
+```text
+11 MOVIMENTOS
+≠ 11 SEÇÕES OBRIGATÓRIAS
+
+7 MACROEXPERIÊNCIAS
+≠ 7 SEÇÕES TÉCNICAS OBRIGATÓRIAS
+
+AGRUPAR
+≠ COMPRIMIR SIGNIFICADO
+```
+
+---
+
+## 15. Movimento 06 — Da Possibilidade à Experiência
+
+O rótulo vigente é:
+
+> **Da Possibilidade à Experiência**
+
+Sua função estratégica permanece:
+
+```text
+POSSIBILIDADE
+→ ESCOLHA
+→ EXPERIÊNCIA
+→ NOVO CONTEXTO
+```
+
+O movimento não afirma que toda Possibilidade termina em experiência nem que a Guivos causa o resultado.
+
+Uma história pode representar:
+
+```text
+CONTEXTO
+→ POSSIBILIDADE PERCEBIDA
+→ DECISÃO DA PESSOA
+→ EXPERIÊNCIA
+→ CONSEQUÊNCIA OBSERVÁVEL
+→ CONTINUIDADE / “E DEPOIS?”
+```
+
+Regra de causalidade:
+
+> **mostrar uma experiência real e autorizada ≠ afirmar que a Guivos produzirá o mesmo resultado para outra pessoa.**
+
+---
+
+## 16. Participantes × Produtos Especializados
+
+Participantes estruturais:
+
+```text
+PESSOA
+ORGANIZAÇÃO
+COLETIVO
+```
+
+Produtos Especializados:
+
+```text
+JOURNEY
+MALL
+TRAVEL
+BUSINESS
+MEDIA
+INTELLIGENCE
+ADS
+```
+
+Regra estrutural:
+
+```text
+PARTICIPANTE
+≠ PRODUTO
+```
+
+Consequências:
 
 - Pessoa ≠ Journey;
 - Organização ≠ Business;
 - Coletivo não depende de produto homônimo;
-- produto não define tipo de participante.
+- produto não cria novo participante estrutural;
+- um participante pode se relacionar com diferentes capacidades conforme contexto, autoridade e finalidade.
 
-Regra de transição entre Movimentos 07 e 08:
+Regra da transição 07→08:
 
 > **Participantes respondem “quem”. Produtos e capacidades respondem “como”.**
 
@@ -526,112 +681,90 @@ E:
 
 ---
 
-## 15. Movimento 08 — como apresentar o ecossistema
+## 17. Os nove Domínios de Evolução na Home
 
-O Movimento 08 não deve ser uma grade de sete produtos equivalentes.
+A Journey reconhece nove Domínios de Evolução:
 
-Regra:
+1. Saúde e Bem-estar;
+2. Trabalho, Carreira e Estudos;
+3. Vida Financeira;
+4. Empreendedorismo e Projetos;
+5. Relacionamentos e Vida Social;
+6. Espiritualidade, Propósito e Valores;
+7. Viagens, Lazer, Cultura e Novas Experiências;
+8. Causas, Voluntariado e Contribuição;
+9. Organização e Equilíbrio da Vida.
 
-> **O Movimento 08 não é uma vitrine de produtos. É uma explicação da coerência do ecossistema.**
+`Ainda estou descobrindo` é estado transversal, não décimo domínio.
 
-Hierarquia conceitual:
+Na Home pública, os Domínios servem como **vocabulário de amplitude e cobertura da Journey**, quando necessário. Eles não devem automaticamente virar:
+
+- nove cards;
+- nove categorias da Home;
+- menu principal;
+- diagnóstico da Pessoa;
+- score de equilíbrio;
+- “roda da vida” obrigatória.
+
+A Home deve mostrar amplitude sem transformar a Fundação em taxonomia visual rígida.
+
+---
+
+## 18. Movimento 08 — coerência do ecossistema
+
+O Movimento 08 não é vitrine nem launcher ampliado.
+
+> **O Movimento 08 explica por que responsabilidades diferentes pertencem à mesma Guivos.**
+
+Hierarquia conceitual reconciliada:
 
 ```text
 GUIVOS
 │
-├── EXPERIÊNCIA E CONTINUIDADE
-│   └── Journey
+├── JOURNEY
+│   └── experiência e continuidade da jornada
 │
-├── MANIFESTAÇÕES ESPECIALIZADAS
-│   ├── Travel
-│   ├── Mall
-│   ├── Media
-│   ├── Business
-│   └── Ads
+├── MALL / TRAVEL / BUSINESS / MEDIA / ADS
+│   └── Produtos Especializados com responsabilidades próprias
 │
-└── INTELIGÊNCIA TRANSVERSAL
-    └── Intelligence
+└── INTELLIGENCE
+    └── Produto Especializado transversal de inteligência
 ```
 
-Esses nomes de camada são instrumentos internos e não precisam aparecer literalmente na interface.
+Os rótulos de camada são internos e não precisam aparecer como copy pública.
 
-Regra curta:
-
-> **Uma Guivos antes de sete produtos. Papéis diferentes antes de cards iguais. Coerência antes de catálogo.**
-
-### Launcher × Movimento 08
+Preservações:
 
 ```text
-LAUNCHER
-“Eu já sei onde quero ir. Como acesso?”
-
-MOVIMENTO 08
-“Por que tudo isso existe junto e pertence à mesma Guivos?”
+ORGANIZAÇÃO ≠ BUSINESS
+INTELLIGENCE ≠ “A IA DA GUIVOS”
+JOURNEY ≠ CARD EQUIVALENTE POR CONVENÇÃO
+MOVIMENTO 08 ≠ LAUNCHER AMPLIADO
 ```
 
-O Movimento 08 não deve ser uma versão ampliada do launcher.
+Cada Produto deve ser descrito conforme sua autoridade vigente, sem reabrir arquitetura de produto dentro da Home.
 
 ---
 
-## 16. Possibilidades Reais × Autoridade
+## 19. Movimento 02 × Movimento 09 × Movimento 06
 
-Dois movimentos usam evidência, mas possuem funções diferentes.
+Três movimentos podem usar realidade e histórias, mas cumprem funções diferentes.
 
-### Movimento 02 — Possibilidades Reais
-
-Pergunta:
-
-> **“Isso existe?”**
-
-Função:
-
-> **“Veja. Isso acontece.”**
-
-Prioriza:
-
-- pessoas;
-- organizações;
-- coletivos;
-- experiências;
-- lugares;
-- acontecimentos;
-- conhecimento;
-- possibilidades concretas.
-
-É humano, imediato e fenomenológico.
-
-### Movimento 09 — Autoridade
-
-Pergunta:
-
-> **“Por que confiar na Guivos?”**
-
-Prioriza:
-
-- proveniência;
-- autoria;
-- critérios;
-- metodologia;
-- governança;
-- fonte;
-- contexto;
-- continuidade;
-- métricas contextualizadas;
-- transparência sobre limites.
-
-É institucional, deliberado e verificável.
+| Movimento | Pergunta | Objeto da prova | Efeito desejado |
+|---|---|---|---|
+| 02 — Possibilidades Reais | isso existe? | realidade do universo | “há vida real por trás da ideia” |
+| 06 — Da Possibilidade à Experiência | o que pode acontecer quando algo faz sentido? | agência, escolha, experiência e continuidade | “uma possibilidade pode chegar à vida real” |
+| 09 — Autoridade | por que confiar na Guivos? | método, fonte, critérios, governança e limites | “há substância e responsabilidade” |
 
 Regra:
 
-> **Movimento 02 prova que o universo de possibilidades é real. Movimento 09 prova que a Guivos possui substância, método e responsabilidade para atuar nesse universo.**
-
-A mesma fonte pode sustentar os dois movimentos, mas não deve ser repetida como o mesmo bloco visual.
+> **reutilizar uma fonte pode ser legítimo; repetir o mesmo bloco de prova, não.**
 
 ---
 
-## 17. Conteúdo e prova
+## 20. Sistema de conteúdo
 
-Classes principais de conteúdo:
+Cinco classes principais:
 
 1. institucional permanente;
 2. evidência real;
@@ -649,57 +782,133 @@ SIGNIFICADO
 → AÇÃO
 ```
 
-Hierarquia de prova:
+A Home não deve intensificar conversão antes de construir contexto suficiente.
+
+---
+
+## 21. Hierarquia de prova
+
+Ordem de força de referência:
 
 ```text
-prova direta
-> história documentada
-> evidência institucional
-> métrica
-> depoimento
-> afirmação institucional
+PROVA DIRETA
+> HISTÓRIA DOCUMENTADA
+> EVIDÊNCIA INSTITUCIONAL
+> MÉTRICA CONTEXTUALIZADA
+> DEPOIMENTO
+> AFIRMAÇÃO INSTITUCIONAL
 ```
 
-Regra:
+Regras:
 
-> **Nunca usar estética como substituto de prova.**
+- quanto maior o claim, maior a proximidade da evidência;
+- número exige definição, fonte, período e metodologia compatível;
+- poucas evidências fortes são preferíveis a volume artificial;
+- parede de logos não substitui contexto;
+- estética não substitui prova;
+- PMF não pode ser sugerido sem evidência própria;
+- simulação, arquitetura ou Research sintético não são prova de resultado humano real.
 
-Poucas evidências fortes são preferíveis a volume artificial.
-
-Referência inicial:
+Formulação de referência preservada:
 
 > **3 histórias profundas > 50 depoimentos genéricos.**
 
-Uma Organização real e contextualizada é melhor do que uma parede de logos sem significado.
-
 ---
 
-## 18. Modelo de história
+## 22. Guivos Media como supply editorial
 
-Quando uma história real for utilizada, a estrutura preferencial é:
+Guivos Media pode abastecer a Home com:
+
+- histórias reais;
+- entrevistas;
+- vídeos e imagens;
+- documentários;
+- trajetórias;
+- lugares e experiências;
+- conhecimento;
+- perspectivas;
+- acontecimentos;
+- evidências editoriais documentadas.
+
+Relação de autoridade:
 
 ```text
-Contexto
-→ Possibilidade
-→ Decisão
-→ Experiência
-→ Consequência
-→ Continuidade
+HOME PÚBLICA
+→ tese institucional, narrativa, seleção e função
+
+GUIVOS MEDIA
+→ origem, integridade, contexto e classificação editorial do conteúdo que produz
 ```
 
-Pergunta editorial importante:
+> **O Media pode fornecer conteúdo para a Home; a Home decide se, onde e por que esse conteúdo participa da narrativa.**
 
-> **“E depois?”**
+Conteúdo-base e derivados devem permanecer rastreáveis quando aplicável.
 
-A Home não deve usar transformação como promessa causal ao visitante.
-
-Mostrar uma transformação real, documentada e autorizada é diferente de afirmar que a Guivos produzirá o mesmo resultado para quem entra.
+Conteúdo patrocinado deve permanecer identificável e nunca comprar aparência de prova orgânica.
 
 ---
 
-## 19. Interação e movimento
+## 23. Histórias e autoridade longitudinal
 
-Interação deve servir a três funções:
+Modelo preferencial:
+
+```text
+CONTEXTO
+→ POSSIBILIDADE
+→ DECISÃO
+→ EXPERIÊNCIA
+→ CONSEQUÊNCIA
+→ CONTINUIDADE
+```
+
+Pergunta editorial:
+
+> **E depois?**
+
+A autoridade longitudinal pode mostrar mudanças e continuidade ao longo do tempo, mas deve preservar:
+
+- consentimento/autorização aplicável;
+- privacidade;
+- proveniência;
+- causalidade correta;
+- contexto;
+- direito de correção/retirada quando aplicável;
+- distinção entre experiência, contribuição percebida e impacto comprovado.
+
+```text
+EXPERIÊNCIA VIVIDA
+≠ IMPACTO COMPROVADO
+≠ CAUSALIDADE DEMONSTRADA
+```
+
+---
+
+## 24. Autonomia como comportamento transversal
+
+Autonomia não é apenas Movimento 10.
+
+Ela deve ser percebida por:
+
+- exploração pública sem relato;
+- CTA de baixo compromisso na Hero;
+- ausência de falsa personalização;
+- escolha do momento de Iniciar Jornada;
+- scroll não bloqueante;
+- ausência de urgência artificial;
+- Intelligence subordinada à decisão humana;
+- evidência sem exagero causal;
+- possibilidade de não seguir um caminho;
+- distinção clara entre conteúdo orgânico, editorial e patrocinado.
+
+Formulação interna preservada:
+
+> **A Guivos amplia o horizonte. O caminho continua sendo seu.**
+
+---
+
+## 25. Interação, movimento e ritmo
+
+Interação deve servir a:
 
 - revelar;
 - conectar;
@@ -707,401 +916,412 @@ Interação deve servir a três funções:
 
 Regra:
 
-> **A Home da Guivos deve revelar um universo progressivamente, permitindo que o visitante avance no próprio ritmo. Movimento e interação devem ampliar percepção, demonstrar conexão e dar continuidade à narrativa, nunca substituir clareza, restringir autonomia ou transformar a experiência em espetáculo tecnológico.**
+> **movimento deve carregar significado.**
 
-Critérios:
+Critérios obrigatórios para futura materialização:
 
-- significado essencial sobrevive com animação desligada;
-- Hero funciona com ou sem vídeo;
+- significado essencial sobrevive sem animação;
+- Hero funciona sem vídeo;
 - reduced motion permanece completo;
-- não bloquear scroll;
-- não criar espera forçada;
-- não criar dark patterns;
-- não usar movimento sem função compreensiva.
+- scroll não é bloqueado;
+- não há espera forçada;
+- não há dark patterns;
+- não há áudio automático;
+- conteúdo essencial não depende de hover ou gesto opcional;
+- sofisticação não significa lentidão.
 
-Sensação desejada:
+Ritmo:
 
-> **“Eu controlo essa experiência.”**
-
----
-
-## 20. Ritmo e percepção visual
+```text
+IMPACTO
+→ DESCOBERTA
+→ COMPREENSÃO
+→ EXPANSÃO
+→ PAUSA
+→ HUMANIDADE
+→ ESTRUTURA
+→ CONFIANÇA
+→ ABERTURA
+```
 
 Princípio:
 
 > **uma ideia dominante por momento.**
 
-A complexidade do ecossistema não pode virar complexidade perceptiva.
+---
 
-A Home deve parecer:
+## 26. Acessibilidade e robustez
 
-- grande;
-- moderna;
-- humana;
-- séria;
-- diferente;
-- simples de compreender.
+A futura materialização deve prever, no mínimo:
 
-Evitar como padrão:
-
-- gradientes genéricos de IA;
-- excesso de cards arredondados;
-- ícones clichês de inovação;
-- visual de dashboard corporativo;
-- mosaico infinito;
-- feed social;
-- aparência de marketplace;
-- sete produtos com tratamento idêntico;
-- espetáculo tecnológico sem significado.
+- navegação por teclado;
+- foco visível;
+- leitores de tela;
+- texto ampliado;
+- contraste adequado;
+- legendas/transcrições quando aplicável;
+- `prefers-reduced-motion` ou equivalente;
+- fallback de mídia;
+- alvos de toque adequados;
+- ausência de dependência exclusiva de hover;
+- baixa conectividade sem perda da tese;
+- mobile como solução semântica própria, não simples empilhamento do desktop.
 
 ---
 
-## 21. Movimento 10 — Autonomia e Confiança
+## 27. “Mais possibilidades” não significa consumo infinito
 
-Autonomia é transversal à Home, não apenas uma seção.
+A Home não deve ensinar que evolução significa:
 
-Ela aparece em:
+- consumir mais;
+- comprar mais;
+- viajar mais;
+- colecionar experiências;
+- acumular pontos;
+- manter streak;
+- perseguir novidade;
+- produzir cada vez mais.
 
-- exploração pública;
-- CTA de baixo compromisso na Hero;
-- ausência de falsa personalização;
-- escolha do momento de `Iniciar Jornada`;
-- scroll não bloqueante;
-- ausência de urgência artificial;
-- Intelligence subordinada à decisão humana;
-- prova sem causalidade exagerada.
-
-Formulação interna:
-
-> **A Guivos amplia o horizonte. O caminho continua sendo seu.**
-
-O Movimento 10 explicita um princípio que a pessoa já deve ter sentido durante toda a experiência.
-
----
-
-## 22. Movimento 11 — Descoberta
-
-O fechamento não precisa virar “fechamento de venda”.
-
-`Iniciar Jornada` já permanece disponível no Header.
-
-A sequência de saída pode ser percebida como:
+A ampliação desejada é de **percepção, contexto, escolha e acesso**, não compulsão por quantidade.
 
 ```text
-compreendi
-→ confio
-→ continuo livre
-→ quero descobrir
+MAIS POSSIBILIDADES VISÍVEIS
+≠ OBRIGAÇÃO DE ESCOLHER MAIS
 ```
-
-O encerramento deve reabrir o horizonte, não pressionar conversão.
 
 ---
 
-## 23. Rodapé
+## 28. Tecnologia e Intelligence
 
-Decisão vigente desta frente:
+Tecnologia é meio.
+
+A leitura prioritária da Home deve continuar sendo:
+
+- vida;
+- contexto;
+- possibilidade;
+- relações;
+- experiência;
+- descoberta;
+- autonomia;
+- evolução.
+
+IA, dados, grafo, automação e tecnologias específicas só devem aparecer quando contribuírem para compreensão ou confiança e quando o claim estiver sustentado.
+
+```text
+INTELLIGENCE
+≠ IA COMO PROTAGONISTA
+
+NEO4J
+→ TECNOLOGIA DE REFERÊNCIA
+≠ PRODUÇÃO COMPROVADA
+
+INFERÊNCIA
+≠ FATO
+
+SINAL
+≠ CERTEZA
+
+TENDÊNCIA
+≠ DESTINO
+```
+
+---
+
+## 29. Home pública × ambiente protegido
+
+A Home pública e a experiência autenticada são superfícies distintas.
+
+A Home:
+
+- não coleta relato pessoal;
+- não ativa voz, câmera ou upload para explicar a Guivos;
+- não cria compreensão persistente do visitante;
+- não apresenta recomendação personalizada sem base/autorização;
+- pode explicar que existe continuidade protegida.
+
+A transição para a Journey deve permanecer consciente.
+
+Este master **não define qual será a primeira tela autenticada final após a Home**.
+
+Durante a auditoria:
+
+```text
+HOME PÚBLICA RECONCILIADA
+≠ PRIMEIRA TELA AUTENTICADA DEFINIDA
+```
+
+`UXA-020`, `UXA-023` e demais autoridades de entrada protegida permanecem fontes funcionais em seus limites, mas o fluxo completo será reavaliado no Lote G antes de qualquer nova tela.
+
+---
+
+## 30. Fronteira Home × Marketing/GTM
+
+A arquitetura da Home define:
+
+- significado;
+- narrativa;
+- percepção;
+- hierarquia;
+- caminhos conceituais;
+- limites da experiência pública.
+
+Marketing/GTM define:
+
+- timing;
+- lançamento;
+- exposição por fase;
+- canais;
+- mercados;
+- campanhas;
+- ativação.
+
+Operação/Produto/Tecnologia/Legal definem o que efetivamente pode funcionar e ser declarado em produção.
+
+```text
+PRESENÇA NA ARQUITETURA
+≠ DISPONIBILIDADE OPERACIONAL
+≠ DECISÃO DE LANÇAMENTO
+≠ PRIORIDADE DE MARKETING
+```
+
+A publicação real exige reconciliação de disponibilidade, claims, direitos, páginas ativas, idiomas/regiões e requisitos legais aplicáveis.
+
+---
+
+## 31. Rodapé
+
+Decisão arquitetural preservada:
 
 > **deve existir um link `Mapa do Ecossistema`.**
 
-Não foi definido nesta frente:
+Este documento não fecha por inferência:
 
 - composição completa do rodapé;
+- arquitetura da futura página Mapa do Ecossistema;
 - Central de Ajuda;
 - Trabalhe Conosco;
 - Imprensa;
-- legal;
-- social;
+- redes sociais;
 - geografia;
-- conteúdo ou arquitetura da futura página `Mapa do Ecossistema`.
+- links legais finais.
 
-Regra:
-
-> **link Mapa do Ecossistema ≠ definição da página Mapa do Ecossistema ≠ definição integral do rodapé.**
-
----
-
-## 24. Fronteira com Marketing e GTM
-
-A arquitetura da Home e a estratégia de lançamento são responsabilidades diferentes.
-
-Regra:
-
-> **Arquitetura da Home define o que a Guivos é, como o ecossistema deve ser percebido e quais caminhos conceitualmente pertencem à experiência pública. Marketing/GTM define quando, como, em quais mercados e com qual intensidade cada parte do ecossistema será apresentada, ativada ou lançada ao mercado.**
-
-Portanto, não pertencem a esta frente:
-
-- ordem de lançamento dos produtos;
-- disponibilidade operacional no lançamento;
-- beta;
-- waitlist;
-- campanhas;
-- rollout;
-- regiões de lançamento;
-- intensidade comercial;
-- prioridade de mídia.
-
-Regra curta:
-
-> **presença na arquitetura ≠ disponibilidade operacional ≠ decisão de lançamento ≠ prioridade de Marketing.**
+```text
+LINK MAPA DO ECOSSISTEMA
+≠ PÁGINA DEFINIDA
+≠ RODAPÉ INTEGRAL DEFINIDO
+```
 
 ---
 
-## 25. O que este documento entrega para Design/Figma
+## 32. Critérios de aceitação de futura materialização
 
-Quando a materialização for autorizada, este documento deve permitir que Design comece sem reconstruir a estratégia.
-
-O design deverá preservar:
+Uma futura proposta precisa preservar, no mínimo:
 
 ### Posicionamento
 
 - possibilidade antes de produto;
-- Guivos maior do que a soma de seus produtos;
-- futuro, simplicidade, confiança e escala global;
-- tecnologia como meio, não protagonista.
+- Guivos maior do que a soma dos Produtos;
+- futuro, simplicidade, confiança e escala;
+- tecnologia como meio.
 
 ### Hero
 
 - pergunta-mãe;
-- amplitude;
-- explicação mínima do papel da Guivos;
-- CTA de descoberta, não duplicação de `Iniciar Jornada`.
+- amplitude sem promessa;
+- concretização mínima do papel da Guivos;
+- descoberta como função dominante;
+- nenhuma assinatura pessoal do fundador tratada como assinatura da Guivos.
 
 ### Navegação
 
-- Header persistente e não dominante;
-- `Iniciar Jornada` como porta própria da Journey;
-- launcher apenas para Travel, Ads, Media, Business, Intelligence e Mall;
-- pessoa não vira item top-level por padrão;
-- `Organizações e Coletivos` compartilham porta institucional.
+- Header disponível e não dominante;
+- Journey com porta própria em Iniciar Jornada;
+- launcher como acesso, não catálogo;
+- Login utilitário;
+- Organizações e Coletivos como porta de participante, não Business.
 
 ### Narrativa
 
-- 11 funções;
-- 7 macroexperiências de referência;
-- nenhuma obrigação de 11 ou 7 seções técnicas;
-- progressão de significado preservada.
-
-### Ecossistema
-
-- participante ≠ produto;
-- Journey ≠ sétimo card equivalente;
-- Intelligence ≠ “a IA da Guivos” como protagonista;
-- Business ≠ Organização;
-- Movimento 08 ≠ launcher ampliado.
+- 11 funções preservadas;
+- Movimento 06 = Da Possibilidade à Experiência;
+- 7 macroexperiências apenas como referência;
+- Possibilidade ≠ Oportunidade;
+- participante ≠ produto.
 
 ### Prova
 
-- realidade antes de afirmação;
-- autoridade depois que a pessoa compreendeu o universo;
-- fonte, contexto e limites quando houver números ou histórias.
+- realidade antes de autoafirmação;
+- proveniência e contexto;
+- nenhuma métrica inventada;
+- nenhum case fictício;
+- nenhuma causalidade exagerada;
+- conteúdo patrocinado identificável.
 
-### Autonomia
+### Autonomia e privacidade
 
-- scroll livre;
-- sem urgência artificial;
+- sem relato na Home;
 - sem falsa personalização;
-- sem espetáculo que prejudique entendimento;
-- reduced motion completo.
+- sem urgência artificial;
+- sem dark patterns;
+- controles e limites compreensíveis.
+
+### Acessibilidade
+
+- tese compreensível sem vídeo/animação;
+- mobile equivalente em função;
+- reduced motion;
+- navegação assistiva.
 
 ---
 
-## 26. Checklist de aderência para primeira exploração visual
+## 33. Anti-padrões de rejeição
 
-Uma proposta de wireframe/Figma futura deve ser rejeitada ou revisada se:
+Rejeitar ou revisar se a proposta:
 
-- começar com lista de produtos;
-- transformar a Hero em catálogo;
-- transformar os sete componentes em sete cards equivalentes;
-- colocar Journey dentro do launcher;
-- associar Pessoa → Journey, Organização → Business ou Coletivo → produto específico;
-- transformar Intelligence em protagonista tecnológico;
-- repetir `Iniciar Jornada` agressivamente;
-- esconder o Header por longos trechos como padrão;
-- transformar sete macroexperiências em sete templates idênticos;
-- usar métrica sem contexto;
-- usar estética como prova;
-- bloquear scroll;
-- depender de animação para transmitir significado;
-- parecer marketplace, feed, dashboard ou landing page SaaS convencional;
-- prometer transformação, resultado ou diagnóstico;
-- inferir estratégia de lançamento.
-
-Uma proposta está conceitualmente alinhada quando:
-
-- a pessoa percebe possibilidade antes de produto;
-- a Hero abre curiosidade;
-- a realidade aparece cedo;
-- a Guivos é compreendida como conexão, não como centro da história;
-- pertencimento precede produtos;
-- o ecossistema aparece coerente, não catalogado;
-- autoridade é demonstrada;
-- autonomia é preservada;
-- a pessoa termina querendo descobrir.
+- começa pela lista de produtos;
+- abre com IA, dashboard ou tecnologia como identidade;
+- transforma a Hero em catálogo;
+- usa `Do possível ao vivido.` como assinatura institucional;
+- chama o Movimento 06 de `Do Possível ao Vivido`;
+- trata Possibilidade e Oportunidade como sinônimos;
+- cria `Pessoa → Journey` ou `Organização → Business`;
+- converte os nove Domínios em score obrigatório;
+- cria sete cards de produto equivalentes por convenção;
+- transforma Intelligence em autoridade que decide pela Pessoa;
+- usa pontos, ranking, streak, consumo ou popularidade como proxy de evolução;
+- inventa usuários, países, parceiros, depoimentos, métricas ou resultados;
+- promete transformação;
+- usa estética como prova;
+- bloqueia scroll;
+- depende de animação para transmitir significado;
+- parece marketplace, dashboard, feed ou landing page SaaS genérica;
+- infere disponibilidade operacional ou estratégia de lançamento;
+- desenha ou pressupõe a primeira tela autenticada final.
 
 ---
 
-## 27. O que permanece deliberadamente aberto para Design
+## 34. O que permanece deliberadamente aberto
 
-Este documento não determina:
+Ainda pertencem a gates posteriores:
 
-- largura de grid;
-- número de colunas;
-- altura do Hero;
-- fonte;
-- peso tipográfico;
+- copy pública final;
+- grid;
+- layout;
+- tipografia;
 - paleta;
-- fotografia específica;
-- vídeo específico;
-- microinterações;
-- transições;
-- duração de animações;
+- fotografia/vídeo específicos;
 - componentes finais;
-- quantidade de regiões técnicas;
-- forma final do menu mobile;
-- breakpoint;
-- ordem exata de elementos dentro de uma composição;
-- copy final de CTAs;
-- forma final do rodapé.
+- microinterações;
+- breakpoints;
+- solução final do mobile;
+- forma material do Header;
+- quantidade final de regiões técnicas;
+- composição completa do rodapé;
+- disponibilidade operacional;
+- estratégia de lançamento;
+- implementação;
+- primeira tela autenticada após a Home.
 
-O design possui liberdade material **dentro da arquitetura estratégica**.
-
----
-
-## 28. Síntese em uma página
-
-```text
-GUIVOS HOME
-
-IDEIA CENTRAL
-O que se torna possível quando você entra aqui?
-
-PERCEPÇÃO
-futuro + possibilidade + simplicidade + confiança + escala global
-
-PRIMEIRO DESEJO
-Descobrir
-
-HEADER
-Guivos | Sobre | Organizações e Coletivos | Compartilhar | Idioma/Região |
-Launcher | Login | Iniciar Jornada
-
-JOURNEY
-fora do launcher → Iniciar Jornada
-
-LAUNCHER
-Travel | Ads | Media | Business | Intelligence | Mall
-
-NARRATIVA
-Hero
-→ Realidade + Amplitude
-→ Desconexão + Guivos
-→ Possível ao Vivido + Pertencimento
-→ Ecossistema
-→ Autoridade + Autonomia
-→ Descoberta
-
-PARTICIPANTES
-Pessoa | Organização | Coletivo
-
-ECOSSISTEMA
-Journey = experiência e continuidade
-Travel/Mall/Media/Business/Ads = manifestações especializadas
-Intelligence = inteligência transversal
-
-PROVA
-realidade cedo; autoridade depois; contexto sempre
-
-AUTONOMIA
-A Guivos amplia o horizonte. O caminho continua sendo seu.
-
-RODAPÉ
-Mapa do Ecossistema → link
-
-FRONTEIRA
-arquitetura da Home ≠ Marketing/GTM ≠ disponibilidade operacional
-```
+A auditoria não deve preencher esses itens por conveniência.
 
 ---
 
-## 29. Documentos de aprofundamento
+## 35. Matriz de conhecimento absorvido neste master
 
-Este documento consolida a decisão vigente, mas não elimina as fontes especializadas.
+| Fonte | Conhecimento absorvido | Estado após esta reconstrução |
+|---|---|---|
+| Fundação vigente | Momento, Próximo Passo, Possibilidade, Oportunidade, autonomia, visão global | absorvido na leitura mestre |
+| `GKR-BRAND-SIGNATURE-001` | assinatura institucional correta | absorvido |
+| `GKR-BRAND-PUBLIC-AUTHORITY-001` | Guivos ≠ fundador | absorvido |
+| propagation de autoridade pública | correção da Hero e Movimento 06 | **conteúdo Home absorvido; arquivo ainda não removido** |
+| `GKR-UX-HOME-VAL-001` | pergunta-mãe, amplitude, protagonismo, cinco pilares | absorvido com correções posteriores |
+| `NARR-001` | 11 movimentos e contratos narrativos | absorção mestre; detalhes permanecem no especializado |
+| `NARR-002` | coerência do Movimento 08 | absorvido |
+| `NARR-003` | participante ≠ produto | absorvido |
+| `NARR-004` | realidade × experiência × autoridade | absorvido |
+| `NARR-005` | 7 macroexperiências | absorvido com novo rótulo do M06 |
+| `NAV-001/003/004` | Header, launcher, CTAs, scroll e mobile | absorvido; resíduos históricos não governam o master |
+| `SYS-001` | conteúdo, prova, histórias, interação, ritmo e acessibilidade | absorvido |
+| `GTM-BOUNDARY-001` | arquitetura ≠ lançamento | absorvido |
+| Media supply | Media como fonte editorial sem transferência de autoridade | absorvido |
+| `UXA-020/021` | fronteira pública/protegida e ausência de coleta na Home | absorvido nos limites atuais |
 
-### Mensagem e Hero
+Esta matriz **não autoriza remoção automática das fontes**. A remoção física exige teste posterior de conteúdo único, evidência, dependências e referências.
+
+---
+
+## 36. Documentos de aprofundamento ainda preservados
+
+### Fundação funcional e entrada
+
+- [UXA-020 — Página Inicial e Início da Jornada](uxa-020-home-and-journey-entry.md)
+- [UXA-021 — Validação Funcional da Home](uxa-021-public-home-functional-validation-and-reformulation.md)
+
+### Mensagem e narrativa
 
 - [Diretriz Estratégica de Mensagem](public-home-message-authority-transformation-direction.md)
-- [Consolidação Validada da Hero e Narrativa](public-home-validated-hero-and-narrative-consolidation.md)
-- [Benchmark Estratégico](public-home-benchmark-and-differentiation-evidence.md)
-- [Comparativo da Hero com Players Globais](public-home-guivos-vs-global-hero-comparative.md)
-
-### Narrativa
-
+- [Consolidação da Hero e Narrativa](public-home-validated-hero-and-narrative-consolidation.md)
 - [Especificação dos 11 Movimentos](public-home-11-movements-narrative-specification.md)
-- [Agrupamento em Macroexperiências](public-home-11-movements-macroexperience-grouping-map.md)
+- [Macroexperiências](public-home-11-movements-macroexperience-grouping-map.md)
 - [Movimento 08 — Ecossistema e Produtos](public-home-movement-08-ecosystem-products-narrative-hierarchy.md)
 - [Transição Participantes → Produtos](public-home-movement-07-to-08-participant-product-transition.md)
+- [Realidade × Autoridade](public-home-movement-02-vs-09-reality-authority-distinction.md)
 
-### Navegação
+### Navegação, conteúdo e fronteiras
 
-- [Arquitetura de Navegação e Acessos](public-home-navigation-access-and-footer-architecture.md)
-- [Header Persistente e Mapa do Ecossistema](public-home-persistent-header-and-ecosystem-map-scope-refinement.md)
+- [Navegação e Acessos](public-home-navigation-access-and-footer-architecture.md)
 - [Header × Hero × CTAs](public-home-header-hero-cta-hierarchy.md)
-- [Scroll, Densidade e Mobile](public-home-persistent-header-scroll-and-mobile-behavior.md)
+- [Scroll e Mobile](public-home-persistent-header-scroll-and-mobile-behavior.md)
+- [Sistema de Conteúdo, Prova, Interação e Visual](public-home-content-proof-interaction-visual-system.md)
+- [Home × Marketing/GTM](public-home-architecture-vs-marketing-gtm-boundary.md)
+- [Supply Editorial do Media](public-home-person-media-editorial-supply-reconciliation.md)
 
-### Conteúdo, prova e visual
+### Auditoria e evidência
 
-- [Sistema de Conteúdo, Prova, Interação, Ritmo e Percepção Visual](public-home-content-proof-interaction-visual-system.md)
-
-### Handoff e auditoria
-
-- [Briefing de Handoff para Design, UX, UI e Wireframe](public-home-design-ux-ui-handoff-brief-and-prompt.md)
 - [Auditoria Pré-Wireframe](public-home-pre-wireframe-readiness-audit.md)
 - [Auditoria Consolidada de Integridade](public-home-consolidated-architecture-integrity-audit.md)
-- [Fronteira Home × Marketing/GTM](public-home-architecture-vs-marketing-gtm-boundary.md)
+- [Benchmark e diferenciação](public-home-benchmark-and-differentiation-evidence.md)
+- [Comparativo de Hero](public-home-guivos-vs-global-hero-comparative.md)
+
+A auditoria integral decidirá posteriormente quais desses documentos mantêm função própria e quais poderão ser removidos **somente após absorção integral comprovada**.
 
 ---
 
-## 30. Regra de precedência
+## 37. Regra sobre Source Locks e Design deliveries anteriores
 
-Quando existir diferença entre este documento e um artefato anterior da mesma frente, prevalece a decisão consolidada mais recente registrada nos refinamentos e auditorias vigentes.
-
-Este documento foi criado **depois da convergência da arquitetura** exatamente para evitar que uma pessoa de Design ou Desenvolvimento precise interpretar documentos históricos isoladamente.
-
-Ele é uma **síntese de consumo**, não uma nova fonte de decisões independentes.
-
----
-
-## 31. Regra para o menu do GKR
-
-A Home deve aparecer no menu como **assunto próprio** dentro de `Experiência, Design e Jornadas`.
-
-Estrutura de referência:
+Source Locks e snapshots de Design anteriores são dependentes do checkpoint em que foram emitidos.
 
 ```text
-Experiência, Design e Jornadas
-└── Home Pública
-    ├── Documento Mestre da Home
-    ├── Fundamentos Funcionais
-    ├── Mensagem e Hero
-    ├── Narrativa e Macroexperiências
-    ├── Header, Navegação e CTAs
-    ├── Conteúdo, Prova e Interação
-    └── Auditorias e Referências
+SOURCE LOCK ANTIGO
+→ EVIDÊNCIA DO PACOTE DE ENTRADA DAQUELA RODADA
+≠ AUTORIZAÇÃO PARA NOVA RODADA
+≠ VERDADE SUPERIOR AO MASTER RECONCILIADO
 ```
 
-`Entrada Protegida da Jornada` deve ser um assunto separado da Home Pública.
-
-Regra:
-
-> **um assunto importante deve possuir uma porta própria de navegação e, quando sua arquitetura estiver distribuída em vários artefatos, um documento mestre autocontido para leitura, impressão e handoff.**
+Qualquer futura retomada de materialização exige nova decisão governada e reconciliação das fontes vigentes.
 
 ---
 
-## 32. Formulação final de controle
+## 38. Formulação final de controle
 
-> **A futura Home da Guivos será considerada aderente quando transformar uma ideia institucional complexa em uma experiência simples: a pessoa entra, percebe um mundo maior de possibilidades, vê que esse mundo é real, entende que a Guivos conecta esse universo, reconhece diferentes participantes e capacidades, encontra substância para confiar, preserva a própria autonomia e sente vontade de descobrir o que pode vir depois.**
+> **A Home Pública da Guivos é uma porta institucional para um ecossistema de possibilidades. Ela deve abrir horizonte antes de mostrar produtos, provar realidade sem inventar escala, explicar como Pessoas, Organizações e Coletivos participam, mostrar como diferentes Produtos Especializados materializam responsabilidades distintas, demonstrar substância sem tomar a decisão da Pessoa e preservar uma transição consciente entre compreender a Guivos e iniciar qualquer experiência protegida.**
 
-Estado deste documento:
+```text
+HOME PÚBLICA
+→ COMPREENDER
+→ DESCOBRIR
+→ CONFIAR
+→ ESCOLHER
 
-> **DOCUMENTO MESTRE DE CONSUMO CRIADO — ARQUITETURA ESTRATÉGICA CONSOLIDADA, MATERIALIZAÇÃO NÃO AUTORIZADA.**
+HOME PÚBLICA
+≠ DIAGNOSTICAR
+≠ PERSONALIZAR SEM BASE
+≠ PROMETER
+≠ PRESSIONAR
+≠ DEFINIR A PRIMEIRA TELA AUTENTICADA
+```
+
+Estado desta versão:
+
+> **MASTER RECONCILIADO COM AS AUTORIDADES VIGENTES — CONTEÚDO PRESERVADO E ENRIQUECIDO — MATERIALIZAÇÃO NOVA NÃO AUTORIZADA POR ESTE DOCUMENTO.**
