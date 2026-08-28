@@ -36,7 +36,8 @@ Ela somente poderá ser promovida para uso real após:
 
 ## 2. Controlador
 
-**Guivos Ltda**  
+**Guivos Ltda**
+
 **CNPJ 43.530.598/0001-33**
 
 Canais oficiais de privacidade:
