@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-NAV-001
 title: Arquitetura de Navegação e Acessos da Home Pública
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-28
 parent: GKR-UX-HOME-HANDOFF-001
 depends_on:
   - UXA-020
@@ -20,7 +20,10 @@ depends_on:
   - GEB-P01-F06
 related:
   - GKR-UX-HOME-NAV-002
+  - GKR-UX-HOME-MASTER-001
+  - GKR-UX-HOME-GTM-BOUNDARY-001
 normative: false
+maturity: reconciled_navigation_architecture_pre_materialization
 ---
 
 # Arquitetura de Navegação e Acessos da Home Pública
@@ -38,6 +41,12 @@ A decisão central é:
 Um produto pode estar acessível desde o primeiro viewport e ainda assim somente receber explicação e destaque institucional quando a narrativa tiver construído contexto suficiente.
 
 Este documento não define layout, wireframe, Figma, comportamento visual final de menus, nem fluxos internos dos destinos.
+
+Regra de fronteira operacional:
+
+> **arquitetura conceitual e futuro wireframe não dependem da disponibilidade de lançamento de cada destino; publicação e ativação concretas dependem de verdade operacional.**
+
+Isso significa que um destino pode existir na arquitetura mesmo antes de estar público, desde que a futura experiência publicada nunca simule disponibilidade inexistente.
 
 ---
 
@@ -139,9 +148,9 @@ Regra:
 Função:
 
 - apresentar explicitamente a arquitetura de produtos;
-- explicar por que existem diferentes manifestações;
+- explicar por que existem diferentes responsabilidades especializadas;
 - mostrar como pertencem à mesma tese;
-- permitir acesso direto a cada uma.
+- permitir acesso direto quando houver estado público legítimo para isso.
 
 É o principal momento de protagonismo institucional dos produtos dentro da narrativa.
 
@@ -184,7 +193,7 @@ Essa representação é semântica, não layout final.
 
 ## 6. Launcher do Ecossistema
 
-O launcher do ecossistema é uma porta compacta para os demais produtos e serviços que precisam de acesso rápido sem ocupar individualmente o Header.
+O launcher do ecossistema é uma porta compacta para os demais produtos que precisam de acesso rápido sem ocupar individualmente o Header.
 
 A grade de pontos é a hipótese visual atualmente preferida para representá-lo.
 
@@ -212,7 +221,18 @@ O inventário conceitualmente aprovado do launcher nesta fase é:
 - Guivos Intelligence;
 - Guivos Mall.
 
-A ordem visual ainda não está fechada e a disponibilidade operacional de cada destino precisa ser confirmada antes do wireframe.
+A ordem visual ainda não está fechada.
+
+A existência desses destinos na arquitetura **não exige que todos estejam operacionalmente disponíveis antes de uma futura exploração de wireframe**. Disponibilidade, ativação por mercado e verdade do destino devem ser reconciliadas antes da publicação/ativação concreta, conforme `GKR-UX-HOME-GTM-BOUNDARY-001`.
+
+```text
+ARQUITETURA CONCEITUAL / WIREFRAME FUTURO
+≠
+DISPONIBILIDADE DE LANÇAMENTO
+
+PUBLICAÇÃO / ATIVAÇÃO CONCRETA
+→ exige verdade operacional
+```
 
 **Guivos Journey não integra o launcher na hipótese principal atual.**
 
@@ -230,32 +250,49 @@ O launcher não deve virar catálogo promocional.
 
 A Home pode apontar para produtos antes do Movimento 08 quando o acesso nasce naturalmente do conteúdo.
 
-Critérios:
+Critérios conceituais:
 
 1. existe contexto suficiente;
 2. o destino é coerente com o que a pessoa acabou de ver;
 3. o CTA não interrompe a narrativa principal;
 4. o produto é destino, não explicação da marca;
-5. o acesso não cria falsa disponibilidade;
-6. o destino operacional existe ou possui estado público legítimo.
+5. a arquitetura do acesso não cria a impressão de que disponibilidade operacional já foi comprovada;
+6. na versão efetivamente publicada, o acesso usa estado verdadeiro: destino operacional legítimo, estado público legítimo ou tratamento equivalente que não gere link enganoso nem falsa disponibilidade.
+
+Regra:
+
+> **representar conceitualmente um acesso não equivale a afirmar que o destino está disponível hoje.**
 
 ---
 
 ## 9. Movimento 08 como apresentação institucional do ecossistema
 
-O Movimento 08 possui a função principal de apresentar os produtos de forma estruturada.
+O Movimento 08 possui a função principal de apresentar os Produtos Especializados de forma estruturada.
 
 Mensagem conceitual:
 
-> **um ecossistema, diferentes formas de tornar possibilidades acessíveis, conectadas e vivíveis.**
+> **um ecossistema, responsabilidades especializadas diferentes trabalhando dentro de uma única Guivos.**
 
-Cada produto deve ser apresentado como manifestação da mesma tese, não como negócio independente.
+A leitura vigente deve preservar a hierarquia reconciliada do Master:
 
-Journey pode aparecer aqui junto às demais manifestações mesmo não integrando o launcher do Header.
+```text
+GUIVOS
+│
+├── JOURNEY
+│   └── experiência e continuidade da jornada
+│
+├── MALL / TRAVEL / BUSINESS / MEDIA / ADS
+│   └── Produtos Especializados com responsabilidades próprias
+│
+└── INTELLIGENCE
+    └── Produto Especializado transversal de inteligência / Intelligence Layer
+```
+
+Todos os sete permanecem Produtos Especializados. Journey não deve virar card equivalente por convenção; Intelligence é transversal sem criar nova classe estrutural; Organização não equivale a Business.
 
 O requisito é:
 
-> **a coerência entre os produtos deve ser mais perceptível que a quantidade de produtos.**
+> **a coerência entre responsabilidades deve ser mais perceptível que a quantidade de produtos.**
 
 ---
 
@@ -357,14 +394,16 @@ Esses temas serão tratados futuramente em frente própria.
 
 ## 17. Relação com GKR-UX-HOME-NAV-002
 
-`GKR-UX-HOME-NAV-002` registra a decisão de refinamento que originou esta versão 0.3.0.
+`GKR-UX-HOME-NAV-002` registra a decisão de refinamento que originou a arquitetura-base deste documento.
 
 Em caso de conflito com hipóteses históricas anteriores, prevalecem:
 
 1. Journey fora do launcher e `Iniciar Jornada` como sua porta própria no Header;
 2. launcher composto por Travel, Ads, Media, Business, Intelligence e Mall;
 3. o limite de que `Mapa do Ecossistema` é somente um link no rodapé nesta fase;
-4. a postergação integral da página `Mapa do Ecossistema`.
+4. a postergação integral da página `Mapa do Ecossistema`;
+5. a fronteira vigente `arquitetura/wireframe ≠ disponibilidade de lançamento`;
+6. a obrigação de verdade operacional antes de publicação e ativação concreta.
 
 ---
 
@@ -471,7 +510,9 @@ Rejeitar ou revisar uma proposta quando:
 11. o `Mapa do Ecossistema` é detalhado ou desenhado antes da frente própria;
 12. mobile perde caminhos disponíveis no desktop;
 13. navegação depende de hover;
-14. o Header se torna mais importante que a Hero.
+14. o Header se torna mais importante que a Hero;
+15. uma hipótese de acesso conceitual é apresentada como prova de disponibilidade operacional;
+16. um produto indisponível gera, na versão publicada, link ou estado enganoso.
 
 ---
 
@@ -479,7 +520,7 @@ Rejeitar ou revisar uma proposta quando:
 
 Uma futura arquitetura será considerada aderente quando:
 
-- os produtos do launcher forem acessíveis sem dominar a primeira percepção;
+- os produtos do launcher forem acessíveis conceitualmente sem dominar a primeira percepção;
 - Journey possuir `Iniciar Jornada` como porta própria no Header;
 - o launcher representar os demais ambientes de forma compacta;
 - a marca permanecer maior que a soma dos produtos;
@@ -491,15 +532,16 @@ Uma futura arquitetura será considerada aderente quando:
 - `Iniciar Jornada` possuir hierarquia adequada;
 - o rodapé contiver o link `Mapa do Ecossistema` sem antecipar a página;
 - desktop e mobile preservarem hierarquia;
-- nenhuma área pública simular disponibilidade inexistente.
+- a arquitetura não trate disponibilidade de lançamento como gate de desenho conceitual;
+- a versão publicada não simule disponibilidade inexistente.
 
 ---
 
 ## 26. Perguntas obrigatórias de revisão
 
-Antes de aprovar um futuro Header, responder:
+Antes de aprovar uma futura arquitetura de Header, responder:
 
-1. Quem já conhece Travel consegue acessá-lo rapidamente?
+1. Quem já conhece Travel encontra conceitualmente seu destino com rapidez?
 2. Quem quer iniciar sua Journey encontra `Iniciar Jornada` imediatamente?
 3. Quem nunca ouviu falar de Guivos entende a marca antes de ser bombardeado por produtos?
 4. O launcher parece pertencer a um único ecossistema?
@@ -513,6 +555,8 @@ Antes de aprovar um futuro Header, responder:
 12. mobile preserva os mesmos caminhos essenciais?
 13. algum elemento existe apenas porque concorrentes usam?
 14. o `Mapa do Ecossistema` foi mantido somente como link, sem detalhamento prematuro?
+15. alguma decisão conceitual foi bloqueada indevidamente por indisponibilidade de lançamento?
+16. algum estado publicado induziria o visitante a acreditar que um destino está disponível quando não está?
 
 ---
 
@@ -533,9 +577,11 @@ Considere como hipótese principal de Header Persistente:
 - Login;
 - Iniciar Jornada como CTA de maior hierarquia e porta própria da Journey.
 
-O launcher deve permitir acesso a Travel, Ads, Media, Business, Intelligence e Mall sem transformar o Header em catálogo. Journey pertence ao ecossistema, mas não integra o launcher nesta hipótese; sua porta principal no Header é Iniciar Jornada.
+O launcher deve representar Travel, Ads, Media, Business, Intelligence e Mall sem transformar o Header em catálogo. Journey pertence ao ecossistema, mas não integra o launcher nesta hipótese; sua porta principal no Header é Iniciar Jornada.
 
-A Home precisa permitir acesso imediato a produtos conhecidos, mas os produtos não podem dominar a primeira percepção da marca.
+A arquitetura conceitual pode representar destinos cuja ativação pública ainda dependa de GTM. Não trate disponibilidade de lançamento como gate do wireframe conceitual. Na versão efetivamente publicada, porém, nenhum link, CTA ou estado pode simular disponibilidade operacional inexistente.
+
+A Home precisa permitir acesso imediato a produtos conhecidos quando esse acesso estiver legitimamente ativado, mas os produtos não podem dominar a primeira percepção da marca.
 
 No rodapé, considere apenas um link Mapa do Ecossistema. Não desenhe nem detalhe a página de destino; ela pertence a frente futura.
 
@@ -547,6 +593,7 @@ Entregue:
 - comportamento conceitual do launcher;
 - relação entre Header e Hero;
 - diferenças desktop/mobile;
+- estados conceituais de destino disponível / ainda não ativado, sem inventar disponibilidade;
 - riscos;
 - itens ainda abertos para teste.
 ```
@@ -557,10 +604,10 @@ Entregue:
 
 A arquitetura deve permitir simultaneamente:
 
-> **quem não conhece a Guivos, compreender; quem já conhece Travel, Ads, Media, Business, Intelligence ou Mall, acessar; quem quer saber quem é a Guivos, encontrar Sobre; quem representa Organização ou Coletivo, encontrar sua porta; quem já participa, fazer login; e quem quer avançar como Pessoa, iniciar sua Jornada.**
+> **quem não conhece a Guivos, compreender; quem já conhece Travel, Ads, Media, Business, Intelligence ou Mall, encontrar seu caminho quando legitimamente ativado; quem quer saber quem é a Guivos, encontrar Sobre; quem representa Organização ou Coletivo, encontrar sua porta; quem já participa, fazer login; e quem quer avançar como Pessoa, iniciar sua Jornada.**
 
 Sem transformar a Home em inventário.
 
 Regra final:
 
-> **a Home conta uma história enquanto a navegação preserva liberdade.**
+> **a Home conta uma história enquanto a navegação preserva liberdade — e a arquitetura nunca deve ser confundida com disponibilidade operacional.**
