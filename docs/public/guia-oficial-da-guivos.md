@@ -2,9 +2,9 @@
 id: GOG-001
 title: Guia Oficial da Guivos
 status: public-canon
-version: 5.2.0
+version: 5.3.0
 owner: Guivos
-last_updated: 2026-08-22
+last_updated: 2026-08-27
 classification: Documento Institucional Público
 source: Derived from GKR Canon
 update_cycle: Continuous
@@ -20,8 +20,8 @@ update_cycle: Continuous
 | Finalidade | Explicar publicamente o que é a Guivos, como o ecossistema é organizado, seus princípios e seus limites de maturidade |
 | Público | Pessoas, Coletivos, Organizações, clientes, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados |
 | Responsável | Guivos |
-| Versão | 5.2.0 |
-| Última atualização | 22/08/2026 |
+| Versão | 5.3.0 |
+| Última atualização | 27/08/2026 |
 | Status | Public Canon |
 | Fonte | Guivos Knowledge Repository |
 
@@ -29,27 +29,65 @@ update_cycle: Continuous
 
 > O Guia Oficial traduz autoridades do GKR para linguagem pública. Quando uma capacidade ainda for referência, candidata, futura ou dependente de evidência, ela deve permanecer apresentada dessa forma.
 
+```text
+VISÃO
+≠ DISPONIBILIDADE
+
+ARQUITETURA
+≠ IMPLEMENTAÇÃO
+
+TARGET
+≠ OPERAÇÃO
+
+EXPERIÊNCIA
+≠ IMPACTO COMPROVADO
+```
+
 ---
 
 # 1. O problema que a Guivos busca reduzir
 
-Uma pessoa pode querer melhorar a carreira, estudar, cuidar da saúde, fortalecer relacionamentos ou espiritualidade, viajar, empreender, participar de uma comunidade ou apoiar uma causa. Existem muitas possibilidades, mas elas normalmente estão espalhadas entre plataformas, instituições, serviços, comunidades e conteúdos diferentes.
+Uma pessoa pode querer melhorar a carreira, estudar, cuidar da saúde, fortalecer relacionamentos ou espiritualidade, viajar, empreender, participar de uma comunidade ou apoiar uma causa. Organizações e Coletivos também vivem Momentos, necessidades, responsabilidades e decisões próprias.
 
-A dificuldade não é apenas encontrar informação. É compreender **o que faz sentido para aquele contexto e para o próximo passo**.
+Existem muitas informações, serviços, comunidades, produtos, experiências e oportunidades, mas elas normalmente estão espalhadas entre plataformas e instituições diferentes.
 
-A Guivos nasce para reduzir essa distância.
+A dificuldade não é apenas encontrar mais opções. É compreender:
+
+- o que está acontecendo agora;
+- o que realmente exige atenção;
+- qual Próximo Passo pode fazer sentido;
+- que Possibilidades existem;
+- quando alguma delas possui uma Oportunidade concreta e acessível;
+- o que pode ser aprendido depois de uma experiência.
+
+A Guivos nasce para reduzir essas distâncias.
 
 ---
 
 # 2. O que é a Guivos
 
-A Guivos é um ecossistema inteligente criado para apoiar jornadas de evolução por meio de oportunidades relevantes para cada momento.
+A Guivos é um ecossistema criado para **ampliar condições, percepção, acesso, conexão e possibilidades** para que Pessoas, Organizações e Coletivos possam compreender melhor seu Momento, reconhecer Próximos Passos e viver experiências capazes de contribuir para sua evolução.
 
 Sua formulação central é:
 
-> **A Guivos reduz a distância entre o Momento Atual de um participante e seu Próximo Passo de evolução.**
+> **A Guivos reduz a distância entre o Momento de um participante e os Próximos Passos que possam fazer sentido para sua jornada.**
 
-A Guivos não define o que uma pessoa deve querer, não estabelece um modelo universal de sucesso e não transforma atividade, dinheiro, popularidade ou pontuação em medida de valor humano.
+A Guivos não define o que uma pessoa deve querer, não estabelece um modelo universal de sucesso e não transforma atividade, dinheiro, popularidade, consumo ou pontuação em medida de valor humano.
+
+```text
+GUIVOS
+→ amplia condições
+→ organiza compreensão
+→ aproxima Possibilidades e conexões legítimas
+→ pode aproximar Oportunidades reais
+→ preserva escolha
+→ apoia continuidade
+
+GUIVOS
+≠ decide pela Pessoa
+≠ garante transformação
+≠ vende relevância
+```
 
 ---
 
@@ -57,19 +95,21 @@ A Guivos não define o que uma pessoa deve querer, não estabelece um modelo uni
 
 ## Essência
 
-A Guivos é um ecossistema criado para acelerar jornadas de evolução por meio das oportunidades mais relevantes para cada momento de vida.
+A Guivos é um ecossistema que amplia condições, percepção, acesso, conexão e possibilidades para apoiar jornadas de evolução sem substituir a autonomia ou a autoridade de seus participantes.
 
 ## Propósito
 
-> **Acelerar jornadas de evolução por meio das oportunidades mais relevantes para cada momento de vida.**
+> **Ampliar condições e possibilidades para que cada participante possa compreender seu Momento, reconhecer Próximos Passos e viver experiências que possam contribuir para sua evolução.**
 
 ## Missão
 
-> **Ajudar cada participante a evoluir continuamente por meio das oportunidades mais relevantes para seu momento de vida.**
+> **Ajudar cada participante a compreender seu Momento, reconhecer Próximos Passos e acessar condições, conexões, Possibilidades e experiências que possam contribuir para sua evolução.**
 
 ## Visão
 
-> **Tornar a Guivos um ecossistema global de referência para descoberta, conexão e desenvolvimento de oportunidades capazes de transformar positivamente a vida de pessoas, organizações e coletivos.**
+> **Tornar a Guivos um ecossistema global de referência para ampliar possibilidades, conexões e experiências capazes de contribuir positivamente para a evolução de Pessoas, Organizações e Coletivos.**
+
+A visão expressa direção de longo prazo e não afirma que essa escala ou posição de referência já tenha sido alcançada.
 
 ## Assinatura institucional
 
@@ -81,7 +121,7 @@ Em português, a versão oficial é:
 
 > **Possibilidade, vivida.**
 
-A assinatura conecta o que é possível àquilo que pode ser vivido. Ela não representa promessa de resultado nem afirma que a Guivos determina o que uma pessoa deve viver.
+A assinatura conecta o que é possível àquilo que pode ser vivido. Ela não representa promessa de resultado, obrigação de agir nem afirma que a Guivos determina o que uma pessoa deve viver.
 
 A hashtag institucional global associada é **#PossibilityLived**.
 
@@ -113,23 +153,34 @@ A arquitetura da Guivos reconhece três participantes estruturais.
 
 ## Pessoa
 
-Pessoa natural que utiliza o ecossistema para compreender seu momento, explorar possibilidades, participar de experiências e construir próximos passos.
+Pessoa natural que utiliza o ecossistema para compreender seu Momento, explorar Possibilidades, participar de experiências e construir Próximos Passos.
+
+A Pessoa permanece centro de sua própria Journey.
 
 ## Coletivo
 
-Grupo, comunidade, movimento, clube, equipe ou rede formado em torno de propósito, interesse, causa ou objetivo compartilhado.
+Formação voluntária de pessoas reunidas por propósito, identidade, causa, interesse, território, prática, experiência ou objetivo compartilhado.
+
+Um Coletivo possui governança e autoridade próprias. Apoio, patrocínio ou infraestrutura de uma Organização não transferem automaticamente seu propósito ou governo.
 
 ## Organização
 
-Empresa, universidade, escola, igreja, ONG, órgão público, instituição, negócio ou outra estrutura que, dentro do ecossistema, pode oferecer oportunidades, programas, serviços, benefícios, conhecimento ou capacidades para Pessoas e Coletivos.
+Entidade institucional com identidade, autoridade, responsabilidades, recursos e representantes, capaz de oferecer ou viabilizar programas, produtos, serviços, benefícios, suporte, infraestrutura e Oportunidades dentro de escopos legítimos.
 
-Essas três categorias não devem ser confundidas com produtos comerciais da Guivos.
+```text
+PESSOA
+≠ COLETIVO
+≠ ORGANIZAÇÃO
+
+PARTICIPANTE
+≠ PRODUTO COMERCIAL
+```
 
 ---
 
 # 5. Evolução não é ranking
 
-Na Guivos, evolução depende do contexto e dos objetivos legítimos escolhidos pelo próprio participante.
+Na Guivos, evolução depende de contexto, propósito e objetivos legítimos do próprio participante.
 
 Pode significar, por exemplo:
 
@@ -142,35 +193,51 @@ Pode significar, por exemplo:
 - viajar e viver novas experiências;
 - empreender;
 - servir em uma ação comunitária;
-- participar de uma causa.
+- participar de uma causa;
+- organizar melhor uma decisão;
+- reconhecer que ainda é cedo para agir.
 
 A Guivos não deve usar saldo, pontos, streak, ranking, consumo ou tempo de tela como substitutos de evolução.
 
-Benefícios ou incentivos futuros somente fazem sentido quando reduzem barreiras ou apoiam uma ação que já possui valor legítimo independentemente da recompensa.
+Benefícios ou incentivos somente fazem sentido quando reduzem barreiras ou apoiam algo que já possui valor legítimo independentemente da recompensa.
+
+```text
+MAIS ATIVIDADE
+≠ MAIS EVOLUÇÃO
+
+MAIS CONSUMO
+≠ MAIS EVOLUÇÃO
+
+MAIS PONTOS
+≠ MAIS VALOR HUMANO
+```
 
 ---
 
-# 6. Momento Atual e Próximo Passo
+# 6. Momento e Próximo Passo
 
-O **Momento Atual** representa a melhor compreensão disponível e autorizada sobre o contexto relevante do participante naquele momento.
+O **Momento** representa a melhor compreensão disponível e autorizada sobre o contexto relevante do participante naquele período.
 
-Ele não é uma definição permanente da pessoa.
+Ele não é uma definição permanente da pessoa, da Organização ou do Coletivo.
 
-O **Próximo Passo** representa uma direção contextual que pode ajudar o participante a avançar, sempre preservando escolha, explicação, correção e alternativas.
+O **Próximo Passo** representa um movimento contextual que pode ajudar o participante a avançar ou compreender melhor sua situação, sempre preservando escolha, explicação, correção e alternativas.
 
-A experiência deve permitir que a pessoa compreenda:
+Um Próximo Passo pode significar agir, conversar, organizar, pesquisar, pausar, revisar uma decisão ou não agir naquele momento.
+
+A experiência deve permitir, conforme a maturidade efetivamente disponível, compreender:
 
 - o que a Guivos entendeu;
 - de onde veio essa compreensão;
 - o que é informação declarada, observada ou inferida;
+- o que permanece desconhecido ou contestado;
 - como corrigir ou limitar uma informação;
-- por que uma possibilidade está sendo apresentada.
+- por que uma Possibilidade ou Oportunidade está sendo apresentada.
 
 ---
 
 # 7. Como a compreensão pode ser construída
 
-A visão de experiência prevê construção progressiva de contexto, evitando exigir um grande formulário inicial.
+A visão de experiência prevê construção progressiva de contexto, evitando exigir um grande formulário inicial como princípio obrigatório.
 
 Conforme a capacidade efetivamente disponível e a autorização aplicável, uma experiência poderá utilizar texto, voz, escolhas do participante, arquivos, localização ou integrações pertinentes.
 
@@ -178,34 +245,81 @@ Isso não significa que todas essas integrações estejam atualmente implementad
 
 Uma dimensão conceitual — saúde, finanças, relações, espiritualidade ou outra — também **não autoriza automaticamente a coleta de dados pessoais ou sensíveis sobre essa dimensão**.
 
+```text
+CONHECER UMA DIMENSÃO
+≠ TER AUTORIDADE PARA COLETAR TODO DADO SOBRE ELA
+```
+
 ---
 
 # 8. Jornada contínua
 
-A jornada conceitual pode ser compreendida como:
+A arquitetura conceitual da Journey pode ser compreendida como:
 
 ```text
-Momento Atual
-→ objetivo ou direção
+Momento
+→ objetivo / necessidade, quando houver
 → Próximo Passo
-→ oportunidades
+→ Possibilidade, quando agregar valor
+→ mecanismo, quando necessário
+→ Oportunidade real, quando existir
+→ escolha
 → experiência
-→ evidências e mudanças
-→ nova compreensão do contexto
-→ novo Próximo Passo
+→ contribuição / aprendizado, quando houver evidência
+→ novo Momento
 ```
+
+Esse fluxo não é um funil obrigatório.
+
+Uma pessoa pode chegar a um Próximo Passo sem precisar consumir um produto ou acessar uma Oportunidade externa. Também pode recusar uma Possibilidade, voltar a compreender o Momento ou escolher outro caminho.
 
 A Guivos pretende apoiar esse ciclo sem retirar autonomia do participante.
 
 ---
 
-# 9. O que é uma oportunidade
+# 9. Possibilidade, mecanismo e Oportunidade
 
-Oportunidade é uma possibilidade que pode ajudar um participante a avançar de forma relevante em seu contexto.
+## Possibilidade
+
+> **Possibilidade é um caminho potencial de evolução compatível com um Momento.**
+
+Ela pode existir antes de haver qualquer oferta concreta.
+
+Exemplos conceituais:
+
+- aprender uma nova habilidade;
+- reorganizar uma rotina;
+- buscar apoio especializado;
+- participar de uma comunidade;
+- conhecer outro lugar;
+- estruturar um projeto;
+- conversar com alguém;
+- revisar uma decisão.
+
+## Mecanismo
+
+Mecanismo é o meio pelo qual uma Possibilidade pode ser concretizada quando necessário.
+
+Exemplos podem incluir formação, mentoria, viagem, comunidade, serviço, ferramenta, atividade, produto ou outra forma legítima.
+
+## Oportunidade
+
+> **Oportunidade é uma materialização concreta de uma Possibilidade, oferecida ou viabilizada por um agente legítimo, com condições reais de acesso.**
 
 Pode envolver curso, vaga, bolsa, evento, grupo, mentoria, serviço, produto, viagem, conteúdo, benefício, ação social, atividade cultural, espiritual, esportiva ou comunitária, entre outras formas legítimas.
 
-A existência de uma oportunidade não garante adequação individual nem resultado.
+```text
+POSSIBILIDADE
+≠ OPORTUNIDADE
+
+OPORTUNIDADE DISPONÍVEL
+≠ OPORTUNIDADE RELEVANTE
+
+OPORTUNIDADE RELEVANTE
+≠ RESULTADO GARANTIDO
+```
+
+A relevância pertence à relação entre o participante e a Oportunidade, considerando contexto, Momento, finalidade e condições de acesso.
 
 Quando a execução ocorrer em ambiente de terceiro, a Guivos deve deixar clara a fronteira entre o que controla e o que passa a depender da autoridade externa.
 
@@ -217,13 +331,15 @@ A arquitetura vigente reconhece sete Produtos Especializados.
 
 ## Guivos Journey
 
-É a experiência principal do ecossistema, onde a jornada, o contexto, as possibilidades e as continuidades podem ser organizados.
+É a experiência principal do ecossistema, onde Momento, jornada, Próximos Passos, Possibilidades, experiências e continuidades podem ser organizados.
+
+Journey não significa que a Guivos controla a vida do participante.
 
 ## Guivos Mall
 
 Responsabilidade especializada relacionada a produtos, serviços e relações comerciais quando materializadas no ecossistema.
 
-`Guivos Mall` é o nome canônico vigente. Nomenclaturas anteriores pertencem apenas ao histórico de evolução da arquitetura.
+`Guivos Mall` é o nome canônico vigente.
 
 ## Guivos Travel
 
@@ -243,9 +359,16 @@ Responsabilidade editorial e de conteúdo quando houver contexto especializado p
 
 ## Guivos Intelligence
 
-Camada de inteligência transversal responsável por apoiar compreensão, contexto, conexões, evidências e recomendações de forma governada.
+Produto Especializado transversal que também exerce responsabilidades de uma camada de inteligência do ecossistema, apoiando compreensão, contexto, evidências e insights dentro de finalidade e autoridade governadas.
 
-Guivos Intelligence não é sinônimo de uma tecnologia de banco de dados específica.
+Guivos Intelligence não é sinônimo de IA, banco de dados, grafo, Neo4j, Power BI ou Guivos.ai.
+
+```text
+INTELLIGENCE
+≠ JOURNEY
+≠ BUSINESS
+≠ TECNOLOGIA ISOLADA
+```
 
 ## Guivos Ads
 
@@ -255,7 +378,7 @@ Responsabilidade de publicidade, patrocínios e ativações pagas, que devem per
 
 # 11. Planos
 
-A taxonomia vigente organiza planos por participante ou produto, sem representar status humano.
+A taxonomia vigente organiza planos por participante ou Produto, sem representar status humano.
 
 ## Pessoa
 
@@ -293,15 +416,24 @@ Preços, condições e entitlements devem ser consultados em autoridades comerci
 
 Publicidade não deve ser disfarçada de recomendação orgânica.
 
-Quando uma oportunidade ou presença for patrocinada, essa natureza deve ser identificável. Pagamento não compra relevância funcional, evidência de impacto, autoridade ou evolução.
+Quando uma Oportunidade ou presença for patrocinada, essa natureza deve ser identificável.
+
+Pagamento não compra:
+
+- relevância funcional;
+- pertinência contextual;
+- evidência de impacto;
+- autoridade;
+- evolução;
+- acesso ao contexto pessoal protegido além de finalidade legítima.
 
 ---
 
 # 13. Guivos Intelligence, grafo e IA
 
-A arquitetura da Guivos prevê inteligência contextual e uma camada de grafo como parte da evolução tecnológica.
+A arquitetura da Guivos prevê Intelligence contextual e uma camada de grafo como partes possíveis de sua evolução tecnológica.
 
-Neo4j foi selecionado no GKR como **tecnologia primária de referência para a camada de grafo**. Essa escolha não significa que uma infraestrutura Neo4j, GraphRAG, Graph Data Science ou integração com Power BI esteja atualmente implantada em produção.
+Neo4j foi selecionado no GKR como **tecnologia primária de referência para a camada de grafo**. Essa escolha não significa que infraestrutura Neo4j, GraphRAG, Graph Data Science ou integração com Power BI esteja atualmente implantada em produção.
 
 ```text
 tecnologia de referência
@@ -310,7 +442,21 @@ tecnologia de referência
 ≠ produção
 ```
 
-A inteligência deve preservar proveniência, diferença entre fato e inferência, possibilidade de correção e proteção contra usos discriminatórios ou classificações de valor humano.
+A Intelligence deve preservar proveniência, diferença entre declaração, observação, inferência e previsão, possibilidade de correção e proteção contra usos discriminatórios ou classificações de valor humano.
+
+```text
+INFERÊNCIA
+≠ FATO
+
+SINAL
+≠ CERTEZA
+
+TENDÊNCIA
+≠ DESTINO
+
+PERCEBER ANTES
+≠ PREVER O FUTURO
+```
 
 ---
 
@@ -330,6 +476,11 @@ O Guia não declara automaticamente que toda superfície legal, consentimento, c
 
 Dados pessoais devem ser tratados segundo finalidade, necessidade, transparência, segurança e demais requisitos aplicáveis. A relação com parceiro, Organização ou entidade relacionada não cria permissão automática de compartilhamento.
 
+```text
+ARQUITETURA DE PRIVACIDADE
+≠ CONFORMIDADE OPERACIONAL COMPROVADA
+```
+
 ---
 
 # 15. Fundação Guivos e impacto social
@@ -338,7 +489,7 @@ A Guivos desenvolveu o conceito institucional de uma futura frente social, histo
 
 No estado atual do GKR, esse nome representa um **conceito institucional social e nome de trabalho**. Ele não comprova que uma fundação privada, associação ou outra entidade jurídica já tenha sido constituída.
 
-O conceito busca ampliar acesso a oportunidades legítimas de desenvolvimento, educação, formação, inclusão, apoio comunitário e outras iniciativas de impacto compatíveis com o propósito.
+O conceito busca ampliar acesso a Possibilidades e Oportunidades legítimas de desenvolvimento, educação, formação, inclusão, apoio comunitário e outras iniciativas de impacto compatíveis com o propósito.
 
 Qualquer estrutura jurídica, programa, captação, bolsa, voluntariado ou operação futura dependerá de decisão, evidência e governança próprias.
 
@@ -354,9 +505,10 @@ Belo Horizonte
 → amplificação nacional seletiva
 → Portugal / Lisboa
 → Portugal / Porto somente após gate
+→ novo país europeu somente mediante novo gate
 ```
 
-Portugal é o primeiro mercado internacional de referência e Lisboa a primeira base candidata. Isso **não significa que a Guivos já opere comercialmente em Portugal**.
+Portugal permanece primeiro mercado internacional de referência e Lisboa a primeira base candidata. Isso **não significa que a Guivos já opere comercialmente em Portugal**.
 
 Acesso ao site desde outro país, registro de domínio, proteção de marca, pesquisa, prospecção ou presença de usuários não tornam automaticamente um território mercado ativo.
 
@@ -372,16 +524,16 @@ Essas relações permanecem separadas.
 Organização
 ≠ Guivos Business
 ≠ Parceria Estratégica
-≠ oportunidade
+≠ Oportunidade
 ```
 
-Uma Organização participa do ecossistema e pode oferecer valor a Pessoas e Coletivos.
+Uma Organização participa do ecossistema e pode oferecer ou viabilizar valor a Pessoas e Coletivos dentro de autoridade legítima.
 
-Guivos Business é um produto B2B contratado separadamente.
+Guivos Business é um Produto B2B contratado separadamente.
 
 Parceria Estratégica é uma relação corporativa da Guivos enquanto empresa com contraparte externa para ampliar capacidade, distribuição, tecnologia, infraestrutura, acesso institucional, território ou outra vantagem material.
 
-A mesma pessoa jurídica pode exercer mais de uma relação, mas cada uma deve ser identificada e medida separadamente.
+A mesma pessoa jurídica pode exercer mais de uma relação, mas cada uma deve ser identificada e governada separadamente.
 
 ---
 
@@ -391,6 +543,7 @@ O Public Canon não deve ser lido como promessa de:
 
 - resultado individual;
 - emprego, renda, saúde ou transformação garantidos;
+- relevância perfeita de toda recomendação;
 - disponibilidade imediata de toda funcionalidade descrita;
 - operação de todos os Produtos Especializados;
 - infraestrutura de IA/grafo já implantada;
@@ -400,28 +553,40 @@ O Public Canon não deve ser lido como promessa de:
 - registro global de marca ou domínio;
 - entidade Fundação Guivos constituída;
 - conformidade operacional demonstrada apenas pela existência de políticas de arquitetura;
-- mercado internacional ativo apenas porque existe uma estratégia de expansão.
+- mercado internacional ativo apenas porque existe estratégia de expansão;
+- impacto comprovado apenas porque uma experiência foi vivida.
 
 ---
 
 # 19. O que está validado documentalmente hoje
 
-O GKR possui uma arquitetura funcional detalhada da experiência até a **UXA-101**, encerrando o fluxo controlável pela Guivos até a fronteira externa de uma oportunidade.
+O GKR possui arquitetura funcional detalhada da experiência até a **UXA-101**, além de autoridades posteriores não numeradas em Fundação, Marca, Produtos, Research, Organizações e Coletivos, Go-to-Market e outras frentes.
 
-Esse trabalho inclui 121 referências visuais, registros granulares de superfícies e transições e uma taxonomia governada de participantes, produtos e planos.
+O inventário visual e suas contagens agregadas estão sendo reconciliados na auditoria integral do corpus. Por isso, uma contagem física de SVGs não deve ser apresentada como equivalente a quantidade de wireframes vigentes ou validados.
 
-Isso é uma maturidade documental/arquitetural. **Não equivale a afirmar que toda essa arquitetura esteja implementada em software e operando em produção.**
+```text
+ARTEFATO FÍSICO
+≠ AUTORIDADE VIGENTE
+
+DOCUMENTAÇÃO VALIDADA
+≠ SOFTWARE IMPLEMENTADO
+```
+
+A arquitetura documental detalhada é uma maturidade real do conhecimento. Ela **não equivale a afirmar que toda a arquitetura esteja implementada em software e operando em produção**.
+
+No Research, o método de validação pode estar documentalmente pronto sem que PMF tenha sido comprovado. O estado público deve preservar essa distinção.
 
 ---
 
 # 20. Como o conhecimento oficial evolui
 
-O Guivos Knowledge Repository é a fonte oficial de decisões e arquitetura.
+O Guivos Knowledge Repository é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 A governança distingue:
 
-- decisão de hipótese;
+- hipótese;
 - autoridade documental;
+- visão/target;
 - arquitetura de referência;
 - materialização;
 - validação;
@@ -431,14 +596,16 @@ A governança distingue:
 
 Esses estados não são intercambiáveis.
 
+A história de versões permanece preservada pelo Git. O corpus vigente deve representar a verdade atual com detalhe suficiente, sem exigir que uma equipe leia documentos substituídos para descobrir qual decisão vale hoje.
+
 O Guia Oficial é atualizado quando mudanças governadas no GKR alteram a compreensão pública necessária.
 
 ---
 
 # 21. Síntese
 
-A Guivos busca construir um ecossistema que compreenda contextos, organize oportunidades e ajude cada participante a encontrar próximos passos relevantes sem substituir sua autonomia.
+A Guivos busca construir um ecossistema que compreenda contextos, amplie Possibilidades e conexões, aproxime Oportunidades reais quando elas fizerem sentido e ajude cada participante a reconhecer Próximos Passos sem substituir sua autonomia.
 
-Sua arquitetura conecta Pessoas, Coletivos e Organizações a uma experiência central e a Produtos Especializados, com inteligência transversal, monetização subordinada ao propósito e separação explícita entre visão, arquitetura e realidade operacional.
+Sua arquitetura conecta Pessoas, Coletivos e Organizações a uma experiência central e a Produtos Especializados, com Intelligence transversal, monetização subordinada ao propósito e separação explícita entre visão, arquitetura, implementação e realidade operacional.
 
-> **A Guivos existe para aproximar cada participante das oportunidades que podem fazer sentido para o próximo passo de sua evolução — com contexto, autonomia, transparência e responsabilidade.**
+> **A Guivos existe para ampliar o que pode se tornar possível e ajudar cada participante a aproximar essas possibilidades da vida real — com contexto, autonomia, transparência e responsabilidade.**
