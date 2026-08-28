@@ -408,11 +408,26 @@ Classes:
 
 Prova direta > história documentada > evidência institucional > métrica > depoimento > afirmação institucional.
 
-### 3.26 Modelo das histórias — DECIDIDO
+### 3.26 Modelo editorial das histórias — DECIDIDO
 
-Contexto → Possibilidade → Mecanismo → eventual Oportunidade real → escolha → Experiência → continuidade.
+O modelo editorial canônico é:
 
-Nem toda história exige Oportunidade externa e nenhuma cadeia implica resultado garantido.
+```text
+CONTEXTO
+→ POSSIBILIDADE
+→ DECISÃO
+→ EXPERIÊNCIA
+→ CONSEQUÊNCIA
+→ CONTINUIDADE
+```
+
+Pergunta editorial de continuidade:
+
+> **E depois?**
+
+`Mecanismo` e eventual `Oportunidade real` não são etapas editoriais obrigatórias. Quando uma história estiver explicando especificamente o Movimento 06, aplica-se a cadeia mais rica definida em `3.4`, sem convertê-la em funil obrigatório nem promessa de resultado.
+
+A Guivos não deve apropriar-se da agência do participante.
 
 ### 3.27 Conteúdo vivo sem feed — DECIDIDO
 
@@ -797,7 +812,6 @@ Uma proposta futura deverá responder:
 28. `Mapa do Ecossistema` continua apenas como link no rodapé desta frente?
 29. A solução desperta vontade de descobrir?
 30. A proposta é reconhecivelmente Guivos e não uma cópia de benchmark?
-
 ---
 
 ## 12. Síntese de prontidão
