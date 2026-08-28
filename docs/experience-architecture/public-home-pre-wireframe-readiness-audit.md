@@ -152,11 +152,16 @@ Camadas conceituais:
 
 A futura copy pode lapidar redação, mas não remover:
 
+- conexão;
+- pluralidade de participantes;
 - Pessoas, Organizações e Coletivos;
+- conhecimento;
+- caminhos e experiências;
 - distinção entre Possibilidade e Oportunidade;
-- Oportunidade apenas quando houver materialização externa legítima;
-- ausência de promessa de resultado;
-- autonomia do participante.
+- Oportunidades reais apenas quando houver materialização externa legítima e fizerem sentido;
+- ausência de promessa de resultado.
+
+Autonomia permanece princípio transversal da Home e possui explicitação própria no Movimento 10; não é requisito adicional exclusivo da terceira camada da Hero.
 
 ### 3.4 Movimento 06 e assinatura institucional — DECIDIDO
 
@@ -362,25 +367,32 @@ Regra de sequência:
 
 ### 3.23 Movimento 08 — Produtos Especializados — DECIDIDO EM PRINCÍPIO
 
-O Movimento 08 deve apresentar:
+O Movimento 08 deve preservar a hierarquia reconciliada do Master:
 
-- Journey;
-- Travel;
-- Mall;
-- Business;
-- Media;
-- Ads;
-- Intelligence;
+```text
+GUIVOS
+│
+├── JOURNEY
+│   └── experiência e continuidade da jornada
+│
+├── MALL / TRAVEL / BUSINESS / MEDIA / ADS
+│   └── Produtos Especializados com responsabilidades próprias
+│
+└── INTELLIGENCE
+    └── Produto Especializado transversal de inteligência
+```
 
-como **sete Produtos Especializados com responsabilidades próprias dentro de uma única Guivos**.
+Os sete permanecem **Produtos Especializados** dentro de uma única Guivos; essa taxonomia comum não elimina as responsabilidades distintas do Movimento 08.
 
-O Intelligence possui papel transversal / Intelligence Layer sem deixar de ser Produto Especializado.
+Journey preserva seu papel de experiência e continuidade e **não deve virar card equivalente por convenção**.
+
+O Intelligence possui papel transversal / Intelligence Layer sem deixar de ser Produto Especializado e sem se tornar autoridade decisória totalizante.
 
 Business é Produto Especializado B2B e não equivale ao tipo estrutural `Organização`.
 
 Regra:
 
-> **O Movimento 08 não é uma vitrine de produtos. É uma explicação da coerência do ecossistema.**
+> **O Movimento 08 não é uma vitrine de produtos nem um launcher ampliado. É uma explicação da coerência entre responsabilidades diferentes dentro da mesma Guivos.**
 
 ### 3.24 Sistema de conteúdo — DECIDIDO
 
@@ -712,6 +724,7 @@ O designer ou ferramenta generativa não pode redefinir:
 - a regra `Participantes respondem “quem”; produtos e capacidades respondem “como”`;
 - a ordem semântica dominante da narrativa;
 - os sete Produtos Especializados e suas responsabilidades estruturais;
+- Journey como experiência e continuidade da jornada, sem equivalência automática a um card dos demais Produtos no Movimento 08;
 - Business como Produto Especializado B2B, não como sinônimo de Organização;
 - Intelligence como Produto Especializado transversal / Intelligence Layer, com `COMPREENDER ≠ DECIDIR`;
 - Journey como porta própria `Iniciar Jornada` no Header;
@@ -776,7 +789,7 @@ Uma proposta futura deverá responder:
 20. Launcher e navegação geral preservam funções diferentes?
 21. O launcher preserva Journey fora de sua grade na hipótese vigente?
 22. A transição 07 → 08 evita qualquer mapeamento automático de participante para produto?
-23. O Movimento 08 apresenta os sete Produtos Especializados com responsabilidades próprias, preservando o papel transversal do Intelligence sem criar nova classe estrutural?
+23. O Movimento 08 preserva Journey como experiência e continuidade, mantém os demais Produtos Especializados com responsabilidades próprias e preserva o papel transversal do Intelligence sem criar nova classe estrutural?
 24. Business permanece distinto do tipo estrutural Organização?
 25. Movimento 02 e Movimento 09 cumprem funções diferentes de prova?
 26. O Movimento 06 distingue Possibilidade, Mecanismo, eventual Oportunidade real, escolha e Experiência sem parecer funil garantido?
@@ -800,7 +813,7 @@ A documentação já responde com alta confiança:
 - como Realidade e Autoridade cumprem papéis diferentes;
 - como Pertencimento conduz a Ecossistema sem segmentar participantes por produto;
 - por que produtos não dominam a abertura;
-- como o Movimento 08 explica coerência entre sete Produtos Especializados em vez de portfólio;
+- como o Movimento 08 explica coerência entre sete Produtos Especializados em vez de portfólio, preservando Journey como experiência e continuidade e Intelligence como Produto Especializado transversal;
 - como Business permanece distinto de Organização;
 - como Intelligence amplia compreensão sem substituir decisão;
 - como o Header oferece acessos sem catalogar a marca;
