@@ -158,14 +158,9 @@ MACROEXPERIÊNCIA 04 — DA POSSIBILIDADE À EXPERIÊNCIA + PERTENCIMENTO
 
 MACROEXPERIÊNCIA 05 — COERÊNCIA DO ECOSSISTEMA
 └── Movimento 08 — Ecossistema / Produtos
-    ├── Journey
-    ├── Travel
-    ├── Mall
-    ├── Business
-    ├── Media
-    ├── Ads
-    └── Intelligence
-        └── Produto Especializado transversal / Intelligence Layer
+    ├── Journey — experiência e continuidade da jornada
+    ├── Mall / Travel / Business / Media / Ads — Produtos Especializados com responsabilidades próprias
+    └── Intelligence — Produto Especializado transversal de inteligência / Intelligence Layer
 
 ↓
 
@@ -189,7 +184,7 @@ Regra:
 
 > **Onze funções. Sete macroexperiências de referência. Uma única narrativa.**
 
-Todos os sete permanecem Produtos Especializados. A transversalidade do Intelligence descreve seu papel e não cria uma classe estrutural externa aos demais Produtos Especializados.
+Todos os sete permanecem Produtos Especializados. Essa taxonomia comum não elimina responsabilidades distintas: Journey preserva experiência e continuidade da jornada; Intelligence preserva transversalidade; e os demais Produtos Especializados preservam suas responsabilidades próprias.
 
 ---
 
@@ -241,7 +236,9 @@ As três camadas semânticas da Hero são:
 2. amplitude / pertencimento;
 3. concretização do papel da Guivos.
 
-A terceira camada vigente deve preservar Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências, distinguir Possibilidade de Oportunidade e não prometer resultado.
+A terceira camada vigente deve preservar conexão, pluralidade de participantes, Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências, distinguir Possibilidade de Oportunidade, limitar Oportunidades reais à materialização externa legítima quando fizerem sentido e não prometer resultado.
+
+Autonomia permanece princípio transversal da Home e possui explicitação própria no Movimento 10; não é requisito adicional exclusivo da terceira camada da Hero.
 
 Formalização:
 
@@ -286,15 +283,28 @@ A passagem Movimento 07 → 08 preserva corretamente esta separação.
 
 **COERENTE APÓS A RECONCILIAÇÃO DO DOMÍNIO NARRATIVO.**
 
-A leitura vigente é:
+A leitura vigente preserva a hierarquia reconciliada do Master:
 
-- Journey — Produto Especializado;
-- Travel — Produto Especializado;
-- Mall — Produto Especializado;
-- Business — Produto Especializado B2B;
-- Media — Produto Especializado;
-- Ads — Produto Especializado;
-- Intelligence — Produto Especializado transversal / Intelligence Layer.
+```text
+GUIVOS
+│
+├── JOURNEY
+│   └── experiência e continuidade da jornada
+│
+├── MALL / TRAVEL / BUSINESS / MEDIA / ADS
+│   └── Produtos Especializados com responsabilidades próprias
+│
+└── INTELLIGENCE
+    └── Produto Especializado transversal de inteligência
+```
+
+Os sete permanecem Produtos Especializados, mas o Movimento 08 não os achata em papéis equivalentes.
+
+Journey preserva experiência e continuidade da jornada e **não deve virar card equivalente por convenção**.
+
+Business é Produto Especializado B2B e não equivale ao tipo estrutural `Organização`.
+
+Intelligence é Produto Especializado transversal / Intelligence Layer, sem deixar de ser Produto Especializado e sem se tornar autoridade decisória totalizante.
 
 Regras:
 
@@ -305,6 +315,9 @@ Organização
 Intelligence transversal
 ≠ nova classe estrutural
 
+JOURNEY
+≠ CARD EQUIVALENTE POR CONVENÇÃO
+
 COMPREENDER
 ≠ DECIDIR
 ```
@@ -313,7 +326,7 @@ O Movimento 08 explica coerência e não replica o launcher.
 
 Formalização:
 
-> **launcher responde “onde ir”; Movimento 08 responde “por que isso pertence à mesma Guivos”.**
+> **launcher responde “onde ir”; Movimento 08 responde “por que responsabilidades diferentes pertencem à mesma Guivos”.**
 
 A arquitetura rejeita sete cards equivalentes como tradução automática dos sete Produtos Especializados.
 
