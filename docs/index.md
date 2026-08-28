@@ -23,7 +23,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Home Organizações e Coletivos | **REBUILD_REQUIRED** |
 | Demais Homes | **AUDIT_PENDING** |
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED** |
-| Public Canon atual | **GOG-001 v5.2.0** |
+| Public Canon atual | **GOG-001 v5.3.0** |
 
 O [Roadmap 13.0.0](roadmap.md) governa a sequência atual.
 
