@@ -1,170 +1,265 @@
 ---
-id: ROADMAP-12.84.0
-title: Roadmap Arquitetural — Estado Governado pós-Autoridade Pública do Fundador
+id: ROADMAP-13.0.0
+title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 12.84.0
+version: 13.0.0
 owner: Guivos
-last_updated: 2026-08-22
-supersedes_partial:
-  - ROADMAP-12.83.0
+last_updated: 2026-08-27
+normative: true
 related:
   - GKR-STATE-001
-  - GKR-GLOBAL-INTEGRITY-POST300-001
-  - GKR-P9-GLOBAL-CONSOLIDATION-001
+  - GKR-FULL-CORPUS-AUDIT-001
   - GOG-001
-  - GPA-004
-  - GPA-004-FUNCTIONAL-PORTFOLIO-001
-  - GKR-BUSINESS-CONTINUITY-001
-  - GKR-UX-HOME-BUSINESS-NARRATIVE-001
-  - GKR-UX-HOME-BUSINESS-AUTHORITY-001
-  - GKR-UX-HOME-BUSINESS-CONVERSION-002
-  - GKR-UX-HOME-BUSINESS-MASTER-001
-  - GKR-UX-HOME-BUSINESS-SOURCELOCK-001
-  - GKR-UX-HOME-BUSINESS-GENINPUT-001
-  - GKR-BUSINESS-HOME-CONTINUITY-005
-  - GPA-006
-  - GIA-000
-  - GKR-INTELLIGENCE-CONTINUITY-001
-  - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
-  - GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
-  - GKR-UX-HOME-INTELLIGENCE-MASTER-001
-  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
-  - GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
-  - GKR-UX-HOME-INTELLIGENCE-GENINPUT-001
-  - GKR-INTELLIGENCE-HOME-CONTINUITY-001
-  - UXA-101
-  - GTM-007
-  - GTM-008
-  - GKR-HOME-P5
-  - GKR-HOME-DECISION-NO-WIREFRAME-001
-  - GKR-UX-HOMES-DESIGN-HANDOFF-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V2-SNAPSHOT-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V3-SNAPSHOT-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
-  - GKR-UX-HOME-MASTER-001
-  - GKR-UX-HOME-OC-MASTER-001
-  - GKR-UX-HOME-MALL-MASTER-001
-  - GKR-UX-HOME-TRAVEL-MASTER-001
-  - GKR-UX-HOME-MEDIA-MASTER-001
-  - GKR-UX-HOME-ADS-MASTER-001
-  - GKR-UX-HOME-ADS-GENINPUT-001
   - GKR-BRAND-SIGNATURE-001
-  - GKR-BRAND-DIGITAL-ASSETS-INDEX-001
   - GKR-BRAND-PUBLIC-AUTHORITY-001
-  - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
   - GKR-CHRISTIAN-FOUNDATION-001
+  - GPA-004
+  - GPA-006
+  - RP-002-PMF-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
+  - GTM-009
+  - GTM-010
+  - GTM-011
   - M7.88
 ---
 
-# Roadmap Arquitetural — Estado Governado pós-Autoridade Pública do Fundador
+# Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 
-## 1. Autoridade
+## 1. Função
 
-Este roadmap traduz o estado corrente de `GKR-STATE-001 v2.43.0` em frentes governadas possíveis. Ele substitui parcialmente `ROADMAP-12.83.0` apenas para sincronizar a autoridade pública do fundador, o sistema verbal, o Public Canon e o rótulo reconciliado do Movimento 06 da Home Pública.
+Este roadmap traduz `GKR-STATE-001 v3.0.0` em **frentes governadas de avanço**.
 
-A reorganização preserva os detalhes válidos do roadmap anterior. Síntese e reordenação não funcionam como revogação de autoridade ou de gap já registrado.
+Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
 ```text
-ROADMAP = POSSIBILIDADES GOVERNADAS DE AVANÇO
-ROADMAP ≠ AUTORIZAÇÃO AUTOMÁTICA
-SÍNTESE ≠ APAGAMENTO DE GAP
-REORGANIZAÇÃO ≠ REVOGAÇÃO DE DECISÃO
+ROADMAP
+→ ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
+
+ROADMAP
+≠ FILA AUTOMÁTICA
+≠ AUTORIZAÇÃO DE IMPLEMENTAÇÃO
+≠ REGISTRO HISTÓRICO
 ```
 
-A autoridade pública do fundador e sua propagação não criam nova UXA, novo marco funcional, Design, filing ou autorização de implementação.
+O próximo movimento global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-## 2. Baseline vigente
+Enquanto essa auditoria estiver aberta, nenhuma nova UX principal, wireframe, Home, Design ou implementação deve ser promovida como consequência automática de trabalho anterior.
 
-| Elemento | Estado |
+## 2. Baseline governada
+
+| Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v2.43.0** |
+| Estado global | **GKR-STATE-001 v3.0.0** |
+| Auditoria integral | **IN_PROGRESS** |
+| Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
-| Última UXA | **UXA-101** |
-| Próxima UXA | **UXA-102/V5 — não iniciada** |
-| SVGs | **121 — 121 validados / 0 pendentes** |
-| Associações | **121** |
-| Perfis | **34** |
-| Superfícies/estados/fronteiras | **57** |
-| Transições | **66** |
-| Engenharia de Produto | **pausada antes de W0-01** |
-| Homes públicas | **8 convergidas documentalmente** |
-| Design Delivery | **v4.0.0 — 39 arquivos externos** |
-| Design produzido automaticamente | **não** |
-| Autoridade pública humana inicial | **Guilherme Oliveira — Founder of Guivos** |
-| Public Canon | **GOG-001 v5.2.0** |
+| Última UXA funcional numerada | **UXA-101** |
+| UXA-102/V5 | **NOT_STARTED** |
+| Product Engineering | **PAUSED BEFORE W0-01** |
+| PMF | **NOT VALIDATED** |
+| RP-002 conceptual readiness | **PASS** |
+| RP-002 methodological readiness | **PASS** |
+| RP-002 operational readiness | **HOLD** |
+| Home principal/Pessoa | **REBUILD_REQUIRED** |
+| Home Organizações e Coletivos | **REBUILD_REQUIRED** |
+| Demais Homes | **AUDIT_PENDING** |
+| O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
+| O/C Arquitetura da Informação | **DEFINED / ACTIVE** |
+| O/C mapa de superfícies | **NOT CANONICAL** |
+| Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 
-## 3. Programa P0–P9
+Nenhuma contagem agregada de wireframes vigentes/validados é afirmada enquanto o inventário visual estiver em reconciliação.
 
-O programa P0–P9 está **documentalmente consolidado**.
+## 3. Princípio de execução do roadmap
 
-Ele não deve ser reaberto genericamente. Novas evidências ou decisões devem entrar pelo domínio correspondente.
+Toda frente deve responder:
 
-```text
-P0–P9 CONSOLIDADO
-≠ NEGÓCIO IMPLEMENTADO
-≠ MERCADO VALIDADO
-≠ TECNOLOGIA EM PRODUÇÃO
-≠ OPERAÇÃO JURÍDICA/FISCAL CONCLUÍDA
-```
+1. existe necessidade estratégica real?
+2. qual autoridade governa a decisão?
+3. quais dependências precisam estar atuais?
+4. a frente exige somente documentação ou realidade operacional?
+5. quais gates impedem promoção de maturidade?
+6. o avanço produzirá nova verdade ou apenas eliminará fragmentação?
 
-## 4. Experience Architecture e Journey
-
-Sequência funcional preservada:
+Durante a auditoria:
 
 ```text
-UXA-097
-→ UXA-098
-→ UXA-099
-→ UXA-100
-→ UXA-101
-→ UXA-102/V5 — NOT_STARTED
+ATUALIZAR AUTORIDADE VIGENTE
+→ PREFERÍVEL A CRIAR NOVO ADENDO
+
+ABSORVER CONTEÚDO VÁLIDO
+→ ANTES DE REMOVER ARTEFATO
+
+GIT
+→ PRESERVA HISTÓRICO
+
+GKR
+→ PRESERVA ESTADO ATUAL
 ```
 
-D5-A, D5-B, D5-C1, D5-C2, D5-C3, D5-C4A e D5-C4B permanecem frentes não numeradas já integradas nos limites documentais próprios.
+## 4. Programa prioritário — Auditoria Integral do GKR
 
-Próximas frentes possíveis, **somente mediante autorização separada**:
+A auditoria é o programa prioritário até seu fechamento.
 
-- UXA-102/V5 — erros, retornos e interrupções;
-- materialização de `PER-009`, se houver necessidade funcional real;
-- maturidade das transições internas de Planos ainda parciais;
-- handoffs Journey → Mall;
-- handoffs Journey → Travel;
-- maturação de handoffs internos de Produtos Especializados;
-- integrações patrocinadas ainda parciais conforme autoridade vigente;
-- evolução de proveniência/explicabilidade de Intelligence nas superfícies;
-- processo posterior a `BND-002`, somente quando houver autoridade contratual/assistida própria.
-
-Nenhuma dessas frentes é iniciada por este roadmap.
-
-## 5. Homes, Media, Ads e Design
-
-Oito Homes estão documentalmente convergidas:
-
-1. Pessoa;
-2. Organizações e Coletivos;
-3. Mall;
-4. Travel;
-5. Media;
-6. Ads;
-7. Business;
-8. Intelligence.
-
-A Home de Organizações e Coletivos preserva P1–P5 como histórico válido. `GKR-HOME-DECISION-NO-WIREFRAME-001` permanece histórico, mas sua proibição procedimental foi posteriormente superada **somente para a fase externa de Design** pelo handoff comum. Significado, narrativa e produto não foram reabertos.
-
-A Home Pública da Pessoa preserva onze funções. A autoridade posterior altera somente o nome do Movimento 06:
+Sequência governada:
 
 ```text
-Do Possível ao Vivido
-→ superseded como rótulo institucional da Home
-
-Da Possibilidade à Experiência
-→ rótulo vigente do Movimento 06
+A. GOVERNANÇA DO CORPUS
+↓
+B. ESTADO ATUAL E ROADMAP
+↓
+C. FUNDAÇÃO / MARCA / PUBLIC CANON
+↓
+D. HOME PRINCIPAL / PESSOA
+↓
+E. HOME ORGANIZAÇÕES E COLETIVOS
+↓
+F. HOMES DOS PRODUTOS
+↓
+G. JORNADA DA PESSOA
+↓
+H. ORGANIZAÇÃO / COLETIVO
+↓
+I. REGISTRIES / CATÁLOGOS / SVGs
+↓
+J. PRODUTOS / ECONOMIA
+↓
+K. RESEARCH / RP-002
+↓
+L. TECNOLOGIA / DADOS / IA
+↓
+M. JURÍDICO / PRIVACIDADE / INSTITUCIONAL
+↓
+N. GTM / PRESENÇA PÚBLICA
+↓
+O. MENU FINAL / ROTAS MULTIEQUIPE
+↓
+P. AUDITORIA FINAL DE COMPLETUDE
+↓
+Q. PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
 ```
 
-A função permanece:
+A ordem protege o corpus contra duas falhas: desenhar sobre conceitos antigos e redesenhar navegação antes de saber quais autoridades permanecerão.
+
+## 5. Lote A — Governança do corpus
+
+Estado:
+
+```text
+GEA-AUDIT-001 v2.0.0
+→ CANONICAL
+
+A2-METHOD-001 v2.0.0
+→ CANONICAL
+```
+
+Regra central:
+
+> **Git preserva a história; o GKR vigente preserva a verdade atual.**
+
+Esse lote está documentalmente fechado.
+
+## 6. Lote B — Estado Atual e Roadmap
+
+Objetivo:
+
+- eliminar dependência de baseline antiga + adendo;
+- incorporar RP-002;
+- incorporar GTM-009/010/011;
+- incorporar atores/jobs e IA autenticada de O/C;
+- remover claims antigas de Homes e maturidade visual;
+- fazer da auditoria integral o próximo movimento governado explícito.
+
+Estado deste roadmap:
+
+```text
+GKR-STATE-001 v3.0.0
+→ REWRITTEN IN AUDIT BRANCH
+
+ROADMAP-13.0.0
+→ THIS AUTHORITY
+
+GLOBAL POST-RP002 ADDENDUM
+→ CANDIDATE FOR REMOVAL AFTER ABSORPTION VALIDATION
+```
+
+Gate de fechamento do lote:
+
+- conteúdo atual do adendo integralmente absorvido;
+- nenhuma referência obrigatória quebrada;
+- semantic validation = SUCCESS;
+- mechanical validation = SUCCESS;
+- adendo removido do corpus se não possuir função própria.
+
+## 7. Lote C — Fundação, Marca e Public Canon
+
+Após B, auditar de forma cruzada:
+
+- Fundação;
+- Constituição;
+- Fundamento Cristão;
+- identidade verbal;
+- assinatura institucional;
+- autoridade pública da Guivos;
+- autoridade pública do fundador;
+- Public Canon;
+- naming;
+- ativos digitais;
+- proteção marcária;
+- propagation/reconciliation records relacionados.
+
+Objetivo:
+
+```text
+UMA VERDADE ATUAL
+→ SEM CORREÇÃO PERMANENTE POR PROPAGATION
+→ SEM CONFUNDIR GUIVOS E FUNDADOR
+```
+
+Preservações obrigatórias:
+
+```text
+Possibility, lived.
+→ GUIVOS
+
+Possibilidade, vivida.
+→ GUIVOS
+
+#PossibilityLived
+→ GUIVOS
+
+Do possível ao vivido.
+→ FUNDADOR
+
+Lucas 2:52 na bio do fundador
+≠ copy institucional automática
+```
+
+Filing permanece fora da auditoria documental enquanto não houver autorização humana própria.
+
+## 8. Lote D — Home principal / Pessoa
+
+Estado:
+
+```text
+REBUILD_REQUIRED
+```
+
+Motivos já comprovados:
+
+- assinatura pessoal do fundador ainda aparece como assinatura complementar institucional no master antigo;
+- rótulo antigo do Movimento 06 permanece no master;
+- a Home deve ser confrontada com todas as autoridades posteriores de Fundação, Marca, Journey, Domínios de Evolução, Research, Public Canon e Experience Architecture.
+
+Movimento 06 vigente:
+
+```text
+DA POSSIBILIDADE À EXPERIÊNCIA
+```
+
+Função preservada:
 
 ```text
 POSSIBILIDADE
@@ -173,426 +268,543 @@ POSSIBILIDADE
 → NOVO CONTEXTO
 ```
 
-A antiga `Assinatura complementar` da Hero com `Do possível ao vivido.` também está superseded. A Home utiliza somente a assinatura institucional governada por `GKR-BRAND-SIGNATURE-001` quando pertinente.
+A reconstrução deve preservar a essência já válida da Home, não começar de uma folha em branco.
 
-A reconciliação pós-Media permanece válida: Guivos Media pode abastecer editorialmente outras superfícies sem assumir autoridade sobre finalidade, narrativa ou operação dessas superfícies.
+Gate:
 
-A Home Ads preserva arquitetura própria, B2B e comercial. Ads mantém autoridade sobre publicidade, patrocínio, inventário permitido e mensuração, sem adquirir autoridade funcional sobre as superfícies anfitriãs e sem transformar contexto pessoal protegido em matéria-prima publicitária.
+- master atualizado contém toda a narrativa ainda válida;
+- claims públicas sustentadas;
+- assinatura institucional correta;
+- nenhuma frase pessoal do fundador usada como autoridade institucional;
+- relação com a primeira experiência autenticada explicitada sem desenhar a tela ainda;
+- sem dependência de documento de propagação para saber a versão vigente.
 
-O handoff canônico v1.3.0 e o Design Delivery v4 permitem uma frente externa controlada, mas:
+## 9. Lote E — Home Organizações e Coletivos
 
-```text
-HANDOFF ≠ DESIGN PRODUZIDO
-SNAPSHOT ≠ OUTPUT APROVADO
-OUTPUT EXTERNO ≠ CANON
-CANON ≠ IMPLEMENTAÇÃO
-```
-
-Snapshot vigente:
+Estado:
 
 ```text
-delivery/design-handoff-v4
-commit = dfed980d8cfb39bbe4694e58d7c86ca0692266dc
-tree   = 270e404cf0b5bf0d5d543bbbb0c5bd6a1f4602df
-31 fontes canônicas + 8 guias = 39 arquivos
+REBUILD_REQUIRED
 ```
 
-Snapshots históricos preservados:
+A reconstrução deve incorporar:
 
-- v3: `7b2b20c035551e3b1206af987aaddda710757166`;
-- v2: `486f1c5e784be6cf3db9b2fbcbc47da39f9e9016`;
-- v1: `8e2a356ca84ba980e588258757800cde2a946f40`.
+- `UXA-014`;
+- `UXA-019`;
+- Research RP-002 sobre supply e relevância;
+- nove Domínios de Evolução;
+- atores, autoridades e jobs autenticados;
+- Arquitetura da Informação autenticada;
+- neutralidade econômica;
+- Organização ≠ Business;
+- Coletivo ≠ audiência/canal de marketing;
+- papel de Organizações e Coletivos como agentes capazes de materializar/habilitar oportunidades;
+- separação entre Home pública e experiência autenticada.
 
-As branches de entrega são snapshots reproduzíveis e **não devem ser mescladas na `main` para duplicar fontes canônicas**. Evolução material de fonte obrigatória deve gerar avaliação de nova emissão, não substituição silenciosa de snapshot distribuído.
+A Home pública não deve antecipar wireframes internos que ainda não existem.
 
-Próximos atos visuais dependem de autorização humana específica e seleção de direção material.
+## 10. Lote F — Homes dos Produtos Especializados
 
-## 6. Guivos Business
+Auditar individualmente:
 
-Estado preservado:
+| Home | Autoridades mínimas de confronto |
+|---|---|
+| Mall | GPA-002 + economia/pontos + Journey/handoffs |
+| Travel | GPA-003 + Journey/handoffs + internacionalização quando pertinente |
+| Media | GPA-005 + autoridade editorial + demais Homes |
+| Ads | GPA-007 + neutralidade econômica + supply/relevância + privacy |
+| Business | GPA-004 + Organização ≠ Business + pontos + Intelligence |
+| Intelligence | GPA-006 v2.0.0 + GIA-000 + privacy architecture + Research |
+
+Resultados possíveis:
 
 ```text
-GPA-004 = v1.6.0
-OFERTAS PRINCIPAIS
-├── Programas de Incentivo
-└── Guivos Journey custeado pela Empresa
+CURRENT
+UPDATE_REQUIRED
+REBUILD_REQUIRED
 ```
 
-Direção humana preservada:
+Nenhuma Home será mantida ou reescrita apenas por data de criação.
 
-> **Como podemos ajudar os seres humanos a terem uma vida melhor?**
+## 11. Lote G — Jornada da Pessoa
 
-A empresa amplia condições e possibilidades; não define evolução individual nem adquire autoridade sobre a Journey da pessoa.
+Somente depois da Home principal atualizada:
 
-Leitura funcional dos planos:
+- reconciliar jornada atual da Pessoa;
+- identificar a primeira responsabilidade realmente necessária após a Home;
+- confrontar entrada protegida, compreensão inicial, Tela Hoje e demais superfícies já existentes;
+- eliminar dependência de UXAs substituídas;
+- revisar continuidade e transições;
+- preservar `PER-008..012` e maturidades independentes quando ainda válidas;
+- confirmar se alguma superfície deve ser consolidada, renomeada, absorvida ou removida.
+
+Gate:
+
+> **não escrever a primeira tela pós-Home antes de G e dos lotes dependentes estarem auditados.**
+
+## 12. Lote H — Organização e Coletivo
+
+Estado atual que deve ser preservado:
 
 ```text
-START      → operar
-GROWTH     → acompanhar e compreender
-SCALE      → interpretar e integrar
-ENTERPRISE → governar em alta complexidade e escala
+FUNDAÇÃO FUNCIONAL
+→ EXISTS
+
+RELAÇÕES O/C
+→ FUNCTIONALLY CONTRACTED
+
+ATORES / AUTORIDADES / JOBS
+→ DEFINED
+
+AUTHENTICATED INFORMATION ARCHITECTURE
+→ DEFINED
+
+SURFACE MAP
+→ NOT CANONICAL
+
+MAIN AUTHENTICATED WIREFRAMES
+→ NOT DEFINED
 ```
 
-A arquitetura diferencia:
+Próximos passos do lote:
+
+1. absorver conteúdo útil de registros superseded;
+2. remover referências históricas de maturidade;
+3. atualizar jornadas draft;
+4. reconciliar registries;
+5. decidir se a proposta pré-auditoria de mapa de superfícies permanece adequada;
+6. somente depois promover um mapa lógico novo/atualizado;
+7. wireframes continuam etapa posterior.
+
+## 13. Lote I — Registries, catálogos e materializações
+
+Objetivo:
+
+- eliminar artefatos físicos sem função atual;
+- preservar somente materializações vigentes;
+- recomputar contagens a partir do corpus final;
+- fazer cada registry refletir autoridade atual.
+
+Famílias mínimas:
+
+- surface registry;
+- transition registry;
+- screen catalog;
+- galleries;
+- traceability matrices;
+- gaps;
+- SVGs;
+- diagrams.
+
+A antiga claim:
 
 ```text
-OFERTA
-≠ PLANO BUSINESS
-≠ ESCALA / PARTICIPANTES / ACESSOS
-≠ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
-≠ MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+121 validados / 0 pendentes
 ```
 
-Contratação e operação permanecem separadas:
+não é válida como maturidade atual.
+
+Até a recomputação:
 
 ```text
-CONTRATAÇÃO
-→ ONLINE
-
-MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
-→ SELF-SERVICE
-→ COM APOIO DO SUPORTE
-→ GERENCIADO
+NEW CURRENT VISUAL MATURITY COUNT
+→ NOT ASSERTED
 ```
 
-`Self-service / Com apoio do suporte / Gerenciado ≠ Start / Growth / Scale / Enterprise`.
+## 14. Lote J — Produtos, planos e economia
 
-A segunda oferta continua sendo o **Guivos Journey existente, custeado pela empresa**. Não são formatos vigentes Journey para Empresas, Journey Business, Journey Corporativo, Journey Patrocinado, jornadas criadas/controladas pela empresa, trilhas obrigatórias ou cursos corporativos bonificados dentro do Journey.
+Preservar e auditar fronteiras entre:
 
-### 6.1 Pontos e impacto
+- participante estrutural;
+- Produto Especializado;
+- oferta;
+- plano;
+- capacidade;
+- entitlement;
+- orçamento;
+- pontos;
+- cobrança;
+- Ads;
+- impacto.
 
-O Programa de Pontos permanece capacidade Business. A equivalência econômica previamente validada **permanece preservada e não constitui gap deste roadmap**; esta edição não redefine seu parâmetro numérico.
+### Business
+
+`GPA-004 v1.6.0` permanece autoridade superior.
+
+Ofertas:
 
 ```text
-pontos Business ≠ pagamento de plano Journey
-pontos ≠ compra de pertinência
-pontos ≠ recomendação
-pontos ≠ prioridade
-pontos ≠ evolução
+Programas de Incentivo
++
+Guivos Journey custeado pela Empresa
 ```
 
-A empresa carrega/financia orçamento. A concessão à pessoa é consumo/alocação do orçamento empresarial; o uso posterior pela pessoa é evento distinto. A distribuição de uso considera apenas usos efetivos e fecha 100% entre Mall, Travel e Journey, excluindo não utilizados/expirados.
-
-`VALOR DE IMPACTO LIBERADO ≠ impacto realizado ≠ impacto comprovado`.
-
-Na Home Pública do Guivos Business, Pontos foram deliberadamente retirados da narrativa. Isso não remove a capacidade funcional do produto.
-
-### 6.2 Business × Ads × Intelligence
-
-Uma empresa pode contratar Business e Ads simultaneamente, mas como relações comerciais independentes.
+Planos:
 
 ```text
-Organização ≠ Business
-Business ≠ Ads
-Intelligence apoiando Business ≠ Intelligence como módulo Business
+Start
+Growth
+Scale
+Enterprise
 ```
 
-Intelligence Business utiliza dados/eventos legitimamente gerados ou conhecidos dentro da Guivos. A empresa pode combinar externamente essas saídas com KPIs internos. A Guivos não depende de importar bases corporativas completas e não usa comparações internas antes/depois como atalho para causalidade.
-
-### 6.3 Home Business
-
-Cadeia preservada:
+Implementação/operação:
 
 ```text
-Narrative
-→ Authority Contracts
-→ Conversion v2
-→ Documento Mestre
-→ Source Lock
-→ GENINPUT
-→ Handoff comum v1.3.0
-→ Design Delivery v4
+Self-service
+Com apoio do suporte
+Gerenciado
 ```
 
-Pergunta-mãe vigente:
+Essas três dimensões não devem ser fundidas.
 
-> **O que sua empresa pode tornar possível para as pessoas?**
-
-Promessa:
-
-> **Mais possibilidades para as pessoas. Mais capacidade para sua empresa.**
-
-A Home preserva Journey antes de Incentivos, autonomia da pessoa, Pontos fora da narrativa pública, Intelligence limitado ao ecossistema Guivos, comparação Start/Growth/Scale/Enterprise, configurador comercial e contratação online com os três modelos de implementação/operação.
-
-Gaps reais que permanecem abertos quando não houver autoridade posterior:
-
-- preços finais;
-- limites e entitlements finais;
-- SLA;
-- preço/faixa de escala e preço de acessos Journey custeados pela empresa;
-- detalhamento operacional final dos modelos Self-service / Com apoio / Gerenciado;
-- regras econômicas/operacionais restantes de Pontos sem autoridade própria já aprovada;
-- arquitetura técnica de analytics/Intelligence Business;
-- exportação/API e contratos técnicos;
-- evidência operacional/comercial real;
-- direção visual validada e output canônico da Home Business, quando houver frente visual autorizada.
-
-## 7. Guivos Intelligence
-
-Estado preservado:
+### Pontos
 
 ```text
-GPA-006 = v2.0.0
-GIA-000 = v1.5.0
-Product Source Lock = integrado
-Home = convergida documentalmente
+PONTOS
+≠ EVOLUÇÃO
+≠ RELEVÂNCIA
+≠ PRIORIDADE
+≠ PAGAMENTO DE PLANO JOURNEY
 ```
 
-Duas frentes superiores:
+A equivalência econômica já validada permanece preservada; não é reaberta por esta auditoria sem razão objetiva.
+
+## 15. Lote K — Research, VAL e RP-002
+
+Preservar evidência e método que sustentem estado atual; remover somente registros intermediários cuja informação já esteja integralmente absorvida.
+
+RP-002:
 
 ```text
-Pessoa / Journey
-Business / População
+CONCEPTUAL READINESS
+→ PASS
+
+METHODOLOGICAL READINESS
+→ PASS
+
+FIELD KIT v0.1
+→ FROZEN FOR FIRST DRY RUN
+
+METHOD / ANALYSIS PLAN
+→ FROZEN v1.0.0
+
+DOCUMENTATION PHASE OF MINIMUM PILOT STACK
+→ CLOSED / PASS DOCUMENTAL
+
+OPERATIONAL IMPLEMENTATION
+→ DEFERRED
+
+OPERATIONAL READINESS
+→ HOLD
+
+PARTICIPANT 001
+→ HOLD
+
+DRY RUN REAL
+→ NOT RELEASED
+
+PMF
+→ NOT VALIDATED
 ```
 
-Guardrails preservados:
+Não apagar evidência necessária para esses gates.
+
+Não transformar simulação sintética em evidência humana real.
+
+## 16. Lote L — Tecnologia, dados e IA
+
+Product Engineering permanece pausada antes de `W0-01`.
+
+`GPA-006 v2.0.0` continua autoridade do Intelligence.
 
 ```text
-INTELLIGENCE ≠ JOURNEY
-INTELLIGENCE ≠ BUSINESS
-COMPREENDER ≠ DECIDIR
-CONHECER ≠ UTILIZAR ≠ COMPARTILHAR
-PERSONALIZAR ≠ EXPOR
-ENTITLEMENT ≠ AUTORIDADE
-PAGAMENTO ≠ PERTINÊNCIA
-INFERÊNCIA ≠ FATO
-SINAL ≠ CERTEZA
-TENDÊNCIA ≠ DESTINO
-PERCEBER ANTES ≠ PREVER O FUTURO
-TECNOLOGIA ≠ PRODUTO
+NEO4J
+→ reference_selected
+≠ POC
+≠ production
+
+GRAPHRAG
+→ candidate
+≠ implemented
+
+POWER BI
+→ possible consumer
+≠ source of truth
 ```
 
-`GIA-000 v1.5.0` preserva CIE, LPM, GPMA e família de Intelligence Engines como candidatos técnicos/arquiteturais. Não declara arquitetura física, modelo final de IA, MLOps, serving técnico, APIs, ontologia física ou grafo em produção.
+Auditar:
 
-Product Source Lock, Narrative, Documento Mestre, Home Source Lock, Handoff e GENINPUT permanecem autoridades distintas. A Home Intelligence está no snapshot v4 sem tela, wireframe, UI, protótipo ou Design produzido.
+- duplicações entre GEA/GIA/GPA;
+- modelos de grafo;
+- tecnologia de referência;
+- IA e Guivos.ai;
+- analytics;
+- dados;
+- privacy by architecture;
+- diagrams;
+- ADRs e decisões já absorvíveis.
 
-Gaps reais:
+## 17. Lote M — Jurídico, privacidade e institucional
 
-- thresholds mínimos de agregação/coorte e técnicas de proteção;
-- modelo físico de dados;
-- ontologia lógica completa e ontologia física;
-- contrato operacional de inferência, explicabilidade e aprendizado;
-- governança operacional de benchmarks e evidência causal;
-- estratégia de inferência e benchmark empírico;
-- stack final de IA;
-- MLOps/serving técnico;
-- APIs;
-- integração Power BI/consumidores analíticos em produção;
-- pricing/packaging final;
-- eventual oferta B2B autônoma do Intelligence;
-- evidência operacional de qualidade e valor;
-- output visual validado/canônico da Home Intelligence, quando houver frente visual autorizada.
+Auditar sem confundir documentação e operação.
 
-`Neo4j = reference_selected`, não implementação comprovada.
+Preservações:
 
-## 8. Marca, autoridade pública e proteção marcária
+```text
+ACEITE CONTRATUAL
+≠ CONSENTIMENTO LGPD
+
+ARQUITETURA DE PRIVACIDADE
+≠ CONTROLE OPERACIONAL COMPROVADO
+
+POLÍTICA EM DRAFT
+≠ POLÍTICA PUBLICADA
+```
+
+RP-002 mantém, conforme autoridades próprias:
+
+```text
+P1A → PASS
+P1B → PASS
+P2B → PASS
+P2C → PASS
+```
+
+Os demais gates operacionais continuam conforme evidência específica.
+
+`Fundação Guivos` continua conceito institucional social validado e nome de trabalho, não entidade jurídica automaticamente constituída.
+
+## 18. Lote N — GTM e presença pública
+
+Autoridades vigentes:
+
+- `GTM-009` — Instagram Guivos;
+- `GTM-010` — Instagram do Fundador — Especificação Mestre;
+- `GTM-011` — Instagram do Fundador — Especificação Operacional.
+
+Auditar GTM-001..008 e demais registros para identificar:
+
+- autoridade ainda própria;
+- conteúdo absorvível;
+- duplicação;
+- histórico sem função atual;
+- inconsistência com Marca/Public Canon.
+
+Preservação:
+
+```text
+GUIVOS
+≠ FUNDADOR
+
+PRESENÇA INSTITUCIONAL
+≠ PRESENÇA PESSOAL
+```
+
+## 19. Lote O — MENU final e rotas multiequipe
+
+O MENU final somente será definido quando o corpus já estiver substancialmente limpo.
+
+Ele deve permitir duas leituras simultâneas:
+
+1. por arquitetura/domínio;
+2. por necessidade de equipe.
+
+Equipes mínimas:
+
+- liderança / estratégia;
+- marketing;
+- publicidade / Ads;
+- comercial;
+- produto;
+- UX / Experience Architecture;
+- Design;
+- desenvolvimento / Product Engineering;
+- dados / Intelligence;
+- Research;
+- jurídico / privacidade;
+- internacionalização / operação.
+
+Princípio:
+
+```text
+ROTA POR EQUIPE
+→ PODE REUTILIZAR A MESMA AUTORIDADE
+
+ROTA POR EQUIPE
+≠ CÓPIA PARALELA DA VERDADE
+```
+
+Remover do MENU final se não houver função atual:
+
+- histórico de construção;
+- checkpoints;
+- snapshots intermediários;
+- UXAs superseded;
+- adendos já absorvidos;
+- nomenclatura baseada apenas em ordem de execução antiga.
+
+## 20. Lote P — Auditoria final
+
+A auditoria final deve verificar:
+
+- autoridade;
+- obsolescência;
+- fragmentação;
+- completude;
+- referências;
+- contagens;
+- Homes;
+- Public Canon;
+- MENU;
+- rotas por equipe;
+- semantic validation;
+- mechanical validation.
+
+Resultado permitido:
+
+```text
+PASS
+PASS WITH MINOR FINDINGS
+FAIL
+```
+
+A baseline final só pode ser autorizada sem achado Critical ou Major aberto.
+
+## 21. Lote Q — Primeira tela autenticada da Pessoa após a Home
+
+Estado atual:
+
+```text
+BLOCKED
+```
+
+Quando o Lote P fechar, a primeira tela será definida a partir do fluxo da Pessoa então vigente.
+
+Não será presumido agora que a resposta é uma tela histórica, a Tela Hoje ou qualquer outro objeto pré-existente.
+
+O processo será:
+
+```text
+HOME PESSOA FINAL
+→ INTENÇÃO DE ENTRADA
+→ CONTEXTO / AUTORIDADE / PRIVACIDADE NECESSÁRIOS
+→ PRIMEIRA RESPONSABILIDADE REAL
+→ ESCOPO DA SUPERFÍCIE
+→ ESTADOS
+→ FLUXOS DE ENTRADA E SAÍDA
+→ WIREFRAME LOW-FIDELITY
+→ VALIDAÇÃO
+→ UI / PROTÓTIPO SOMENTE DEPOIS
+```
+
+## 22. Marca e filing — gates paralelos, não prioritários
 
 Autoridade institucional:
 
 ```text
-Possibility, lived.      = assinatura global canônica da Guivos
-Possibilidade, vivida.   = versão PT canônica da Guivos
-#PossibilityLived        = hashtag global canônica da Guivos
+Possibility, lived.
+Possibilidade, vivida.
+#PossibilityLived
 ```
 
-Autoridade pública do fundador:
+Autoridade pessoal:
 
 ```text
-Guilherme Oliveira
-→ Founder of Guivos / Fundador da Guivos
-→ principal referência humana pública inicial
-
 Do possível ao vivido.
-→ assinatura pessoal e autoral do fundador
-→ não integra a autoridade verbal institucional da Guivos
-
-Lucas 2:52
-→ referência bíblica deliberada na bio pública pessoal do fundador
-→ não constitui comunicação religiosa institucional automática da Guivos
+→ fundador
 ```
 
-```text
-GUIVOS ≠ FUNDADOR
-FALA PESSOAL ≠ POSICIONAMENTO INSTITUCIONAL
-DO POSSÍVEL AO VIVIDO. ≠ ASSINATURA DA GUIVOS
-```
+Assinaturas institucionais permanecem `CLEAR` e com decisão `FILE` nas classes 35/42 nos limites já documentados.
 
-Portfólio GUIVOS existente nas classes 09, 35, 39 e 42 permanece reconciliado.
+Próximo gate de execução marcária:
 
-As assinaturas permanecem:
+> **Human Filing Authorization**
 
 ```text
+FILE
+≠ FILING_AUTHORIZED
+
 CLEAR
-35 = FILE
-42 = FILE
+≠ REGISTRO
 ```
 
-O próximo gate de execução marcária é **Human Filing Authorization**, não novo clearance.
+A auditoria documental não autoriza gasto, GRU ou protocolo.
 
-Antes da execução:
+## 23. Mercado e evidência — gates paralelos
 
-- confirmar rota/taxa/desconto no INPI;
-- confirmar titular/cadastro;
-- revalidar busca se houver intervalo material;
-- confirmar disponibilidade das especificações no e-Marcas;
-- incluir AIaaS somente se houver evidência de atividade efetiva/objeto compatível;
-- obter autorização humana explícita de gasto e protocolo.
+Continuam dependentes de realidade:
 
-```text
-FILE ≠ FILING_AUTHORIZED
-CLEAR ≠ REGISTRO
-```
-
-A futura implantação do perfil pessoal do fundador, da bio e de conteúdos autorais pertence a gate operacional próprio e não altera o filing institucional.
-
-## 9. Fundamento Cristão
-
-`GKR-CHRISTIAN-FOUNDATION-001 v1.0.0` está ativo e integrado.
-
-```text
-Evolução com propósito = preservado
-primary_use = internal_governance
-classification = public
-authority_profile = public_foundational
-external_reuse_automatic = false
-```
-
-A presença de Lucas 2:52 na bio pessoal do fundador é compatível com sua identidade cristã e com a autoridade própria do fundador, mas não transforma a base bíblica da Guivos em campanha, copy comercial ou Public Canon religioso automático.
-
-A próxima necessidade não é doutrinária. Melhorias futuras somente devem ocorrer se houver necessidade concreta de governança, interpretação ou navegação e exigem decisão explícita quando afetarem fundamento, passagens ou invariantes.
-
-## 10. Mercado e evidência
-
-Continuam dependentes de evidência real:
-
-- aplicação e resultados da validação B2C;
+- aplicação da validação B2C;
 - PMF;
 - disposição a pagar;
 - retenção/recorrência;
-- uso real e resultados de ofertas;
-- evidência de transformação/impacto sem confundir correlação com causalidade.
+- resultados reais de ofertas;
+- impacto;
+- causalidade quando alegada;
+- performance das Homes;
+- performance GTM.
 
-Nova evidência deve entrar pela família VAL correspondente.
+Nova evidência deve entrar por sua família metodológica apropriada.
 
-## 11. Tecnologia e implementação
+## 24. Internacionalização — gate paralelo
 
-Product Engineering permanece pausada antes de W0-01.
+Sequência candidata preservada:
 
-Não estão automaticamente autorizados:
+```text
+Belo Horizonte
+→ São Paulo
+→ amplificação nacional seletiva
+→ Lisboa
+→ Porto somente após gate
+→ novo país somente mediante novo gate
+```
 
-- stack final;
-- provisionamento Neo4j;
-- POC;
-- APIs;
-- GraphRAG;
-- GDS;
-- MLOps;
-- pipelines;
-- banco de produção;
-- observabilidade;
-- deploy;
-- integração real com Power BI.
+Planejamento territorial não equivale a mercado ativo.
 
-A reativação exige ato explícito de Product Engineering.
-
-## 12. Institucional, jurídico, privacidade e internacionalização
-
-Continuam abertos conforme autoridades próprias:
-
-- escolha/constituição de eventual veículo social;
-- atos societários/jurídicos ainda não comprovados;
-- superfícies legais em produção;
-- inventário real de cookies/SDKs/operadores/transferências;
-- controles LGPD operacionais;
-- piloto Lisboa;
-- estrutura fiscal/pagamentos/equipe internacional;
-- Porto ou novo país somente após gates próprios.
-
-## 13. Lacunas transversais preservadas
-
-Além dos gaps detalhados por domínio, continuam abertos quando dependerem de realidade ou autorização específica:
-
-- seleção e validação humana de direções visuais das Homes;
-- promoção de qualquer output de Design a estado canônico;
-- implementação operacional da qualificação inteligente do Guivos Ads;
-- campanhas reais, inventário, pricing e mensuração do Guivos Ads;
-- cobrança real e gateway;
-- handoffs especializados ainda não materializados;
-- controles jurídicos/privacidade efetivamente publicados e operacionais;
-- piloto e operação internacional;
-- implantação real dos canais pessoais do fundador;
-- composição material final da bio do fundador;
-- produção/publicação de conteúdo do fundador;
-- UXA-102/V5;
-- Product Engineering.
-
-A equivalência econômica de pontos previamente validada **não é classificada como lacuna** por este roadmap.
-
-## 14. Prioridade de governança após a reconciliação
-
-A ordem não é uma fila automática. Quando houver intenção concreta, rotear pelo tipo de necessidade:
-
-| Necessidade real | Autoridade de entrada |
-|---|---|
-| evidência de mercado | VAL |
-| mudança tecnológica | ADR / GEA / Product Engineering |
-| marca/ativo/fato registral | Brand / Trademark Evidence |
-| filing das assinaturas | Human Filing Authorization |
-| autoridade/presença do fundador | GKR-BRAND-PUBLIC-AUTHORITY-001 |
-| ato institucional/jurídico | P5 / gates institucionais |
-| privacidade/operação | P6 / LS / OT |
-| expansão territorial | P7 / T / PT |
-| experiência funcional | UXA autorizada |
-| Design | handoff + decisão humana própria |
-| implementação | Product Engineering explicitamente reativada |
-
-## 15. Preservações finais
+## 25. Preservações transversais
 
 ```text
 Organização ≠ Guivos Business ≠ Guivos Ads
-Empresa como início do contrato Business ≠ novo participante estrutural
-oferta ≠ plano ≠ escala ≠ orçamento pré-pago ≠ modelo de implementação/operação
-contratação online ≠ modelo de implementação/operação
-Self-service / Com apoio / Gerenciado ≠ Start / Growth / Scale / Enterprise
-custeio da Journey ≠ propriedade da Journey ≠ acesso ao contexto pessoal protegido
-pontos em possibilidade Journey elegível ≠ pagamento de plano Journey ≠ compra de pertinência
-Programa de Pontos ≠ presença obrigatória na Home ≠ medida de evolução
-equivalência econômica preservada ≠ redefinição nesta frente
+Empresa contratante ≠ novo participante estrutural
+oferta ≠ plano ≠ escala ≠ orçamento ≠ implementação
+contratação online ≠ modelo de operação
+custeio da Journey ≠ propriedade da Journey
+pontos ≠ evolução ≠ relevância ≠ prioridade
 VALOR DE IMPACTO LIBERADO ≠ impacto realizado ≠ impacto comprovado
-Intelligence Business ≠ ingestão obrigatória de KPIs internos da empresa
-Intelligence apoiando Business ≠ módulo Business ≠ acesso irrestrito a dados pessoais
-Home Business convergida ≠ output visual aprovado ≠ implementação ≠ publicação
-GPA-006 v2.0.0 convergido ≠ Intelligence implementado ≠ modelo de IA selecionado ≠ grafo em produção
-Produto Especializado próprio ≠ assinatura própria obrigatória
-Intelligence embutido ≠ Intelligence Direto
+Intelligence Business ≠ ingestão obrigatória de KPIs internos
+Intelligence apoiando Business ≠ módulo Business
 entitlement ≠ autoridade
 maior plano ≠ menor privacidade
-Graph / Knowledge / Analytics / AI = capacidades subordinadas ≠ identidade do produto
-Neo4j = reference_selected ≠ POC ≠ provisioned ≠ production
-GraphRAG = padrão candidato ≠ implementação
+Graph / Knowledge / Analytics / AI ≠ identidade do produto
+Neo4j = reference_selected ≠ production
+GraphRAG = candidate ≠ implementation
 Power BI = consumidor possível ≠ fonte de verdade
-Guivos.ai = possível superfície ≠ Guivos Intelligence
-Product Source Lock + Home Source Lock + Documento Mestre + Handoff + GENINPUT + snapshot v4 ≠ Design produzido ≠ implementação
+Guivos.ai ≠ Guivos Intelligence
 PERCEBER ANTES ≠ PREVER O FUTURO
 GUIVOS ≠ FUNDADOR
 DO POSSÍVEL AO VIVIDO. → FUNDADOR
 POSSIBILITY, LIVED. → GUIVOS
 POSSIBILIDADE, VIVIDA. → GUIVOS
 LUCAS 2:52 NA BIO DO FUNDADOR ≠ COPY INSTITUCIONAL AUTOMÁTICA
-MUDANÇA DO RÓTULO DO MOVIMENTO 06 ≠ MUDANÇA DA FUNÇÃO DO MOVIMENTO 06
+HOME DOCUMENTADA ≠ HOME CONSISTENTE APÓS NOVAS AUTORIDADES
+ARTEFATO FÍSICO ≠ AUTORIDADE VIGENTE
+DOCUMENTAÇÃO ≠ IMPLEMENTAÇÃO
+SIMULAÇÃO ≠ PMF
 ```
 
-## 16. Regra de encerramento
+## 26. Regra do próximo movimento
 
-Após a integração da autoridade pública do fundador e sua reconciliação derivada:
+Até o fechamento da auditoria:
 
 ```text
-NÃO HÁ P10 AUTOMÁTICO
 NÃO HÁ UXA-102 AUTOMÁTICA
+NÃO HÁ WIREFRAME AUTOMÁTICO
 NÃO HÁ DESIGN AUTOMÁTICO
-NÃO HÁ FILING AUTOMÁTICO
 NÃO HÁ ENGINEERING AUTOMÁTICA
-NÃO HÁ PUBLICAÇÃO AUTOMÁTICA DO FUNDADOR
+NÃO HÁ FILING AUTOMÁTICO
+NÃO HÁ PMF AUTOMÁTICO
+NÃO HÁ PRIMEIRA TELA PÓS-HOME AUTOMÁTICA
 ```
 
-O próximo movimento deve ser escolhido pela necessidade estratégica real, não pela simples existência de uma sequência documental.
+O próximo movimento é sempre o próximo lote necessário da **Auditoria Integral do GKR**, não a próxima etapa histórica de uma sequência antiga.
