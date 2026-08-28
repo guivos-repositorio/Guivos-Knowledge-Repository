@@ -1,6 +1,8 @@
 # Guivos Knowledge Repository
 
-O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
+O GKR é a base oficial do conhecimento vigente da Guivos.
+
+> **Git = histórico. GKR publicado = verdade atual.**
 
 ## Estado vigente
 
@@ -8,130 +10,129 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **2.44.0** |
+| Registro | `GKR-STATE-001` **3.0.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
-| Próxima UXA | **UXA-102/V5 não iniciada** |
-| Engenharia de Produto | **pausada antes de W0-01** |
-| Domínios de Evolução do Journey | **9 canônicos + `Ainda estou descobrindo`** |
-| Galeria física | **121 SVGs; inclui artefatos históricos superseded** |
-| Maturidade visual agregada | **não inferir; recomputação governada pendente** |
-| Wireframe principal autenticado da Organização | **pendente** |
-| Wireframe principal autenticado do Coletivo | **pendente** |
-| Matriz por SVG | **121 associações físicas / 34 perfis** |
-| Superfícies/estados/fronteiras | **57** |
-| Transições | **66** |
-| Homes públicas | **8 convergidas documentalmente** |
-| Design Delivery | **v4 — 31 fontes + 8 guias = 39 arquivos** |
-| Public Canon | **GOG-001 5.2.0** |
+| Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
+| Product Engineering | **PAUSED BEFORE W0-01** |
+| PMF | **NOT VALIDATED** |
+| Auditoria integral | **IN_PROGRESS** |
+| Baseline final pós-auditoria | **NOT AUTHORIZED** |
+| Home principal/Pessoa | **REBUILD_REQUIRED** |
+| Home Organizações e Coletivos | **REBUILD_REQUIRED** |
+| Demais Homes | **AUDIT_PENDING** |
+| Primeira tela autenticada pós-Home da Pessoa | **BLOCKED** |
+| Public Canon atual | **GOG-001 v5.2.0** |
 
-A [Reconciliação Global de Integridade pós-PR #300](project/global-integrity-reconciliation-post-300-2026-08-21.md) corrigiu deriva entre autoridades temáticas e superfícies globais sem reabrir decisões já validadas.
+O [Roadmap 13.0.0](roadmap.md) governa a sequência atual.
 
-A [Reconciliação Derivada da Autoridade Pública da Marca e do Fundador](governance-framework/brand-public-authority-propagation.md) sincroniza o estado posterior à autoridade pública do fundador sem criar nova UXA, marco funcional ou implementação.
+## Por que o repositório está em auditoria
 
-A reconciliação pós-PR #313/#314 estabelece que `UXA-015..018` são históricos `superseded`; seus SVGs permanecem fisicamente para rastreabilidade, sem autoridade vigente de design. Fluxos especializados independentes preservam a maturidade sustentada por suas próprias autoridades.
+A evolução recente da Guivos tornou parte do corpus anterior defasada ou excessivamente fragmentada. A auditoria integral está:
+
+- confrontando documentos antigos com autoridades posteriores;
+- absorvendo conteúdo ainda válido em autoridades atuais;
+- removendo versões substituídas depois da absorção;
+- recomputando registries, catálogos e contagens;
+- revalidando todas as Homes;
+- preparando um MENU mais simples para diferentes equipes.
 
 ```text
-121 SVGs FÍSICOS
-≠ 121 WIREFRAMES VIGENTES
-≠ 121 WIREFRAMES VALIDADOS
+CONSOLIDAR
+≠ RESUMIR
+
+REMOVER DO CORPUS ATUAL
+≠ APAGAR HISTÓRICO
 ```
 
-## Public Canon
+O histórico permanece no Git.
 
-A superfície institucional pública vigente é o [GOG-001 — Guia Oficial da Guivos 5.2.0](public/guia-oficial-da-guivos.md).
+## Comece por estas autoridades
 
-O Public Canon diferencia visão, arquitetura, implementação e operação. Nenhum documento público pode promover um objeto acima do estado evidenciado no GKR.
+### Estado e direção
+
+- [Registro do Estado Atual 3.0.0](project/current-state-register.md)
+- [Roadmap 13.0.0](roadmap.md)
+- [Auditoria Integral do GKR](project/gkr-full-corpus-audit.md)
+- [Guia Oficial da Guivos / Public Canon](public/guia-oficial-da-guivos.md)
+
+### Fundação e identidade
+
+- [Fundação da Guivos](geb/part-01-foundation/index.md)
+- [Fundamento Cristão e Doutrina de Propósito](christian-foundation/index.md)
+- [Assinatura de Marca e Sistema Verbal](governance-framework/brand-signature-and-verbal-system.md)
+- [Autoridade Pública da Marca e Papel do Fundador](governance-framework/brand-public-authority-and-founder-role.md)
+- [Marca, Naming e Ativos Digitais](governance-framework/brand-and-digital-assets-index.md)
+
+### Produto e experiência
+
+- [Arquitetura de Produtos](product-architecture/index.md)
+- [Arquitetura da Experiência](experience-architecture/index.md)
+- [Jornadas](journeys/index.md)
+- [Modelo Econômico](economic-model/index.md)
+
+### Research, operação e crescimento
+
+- [Pesquisa e Validação](research/market-validation/README.md)
+- [Go-to-Market](go-to-market/index.md)
+- [Arquitetura Institucional e Jurídica](governance-framework/institutional-and-legal-architecture-index.md)
+- [Privacidade e Verdade Operacional](governance-framework/operational-privacy-and-legal-truth-index.md)
 
 ## Fundamentos da Guivos
 
-A [Parte I — Fundação](geb/part-01-foundation/index.md) reúne Essência, Propósito, Missão, Visão, Constituição, Princípios Permanentes e a autoridade cristã fundacional.
+A direção humana preservada é:
 
-### Fundamento Cristão e Doutrina de Propósito
+> **Como podemos ajudar os seres humanos a terem uma vida melhor?**
 
-A autoridade vigente é [GKR-CHRISTIAN-FOUNDATION-001 — Fundamento Cristão e Doutrina de Propósito da Guivos](christian-foundation/index.md).
+A Guivos amplia condições, percepção, acesso, conexão e possibilidades; a transformação pertence à própria Pessoa.
+
+O Fundamento Cristão preserva:
 
 > **Evolução com propósito.**
 
 ```text
-primary_use = internal_governance
-classification = public
-authority_profile = public_foundational
-external_reuse_automatic = false
+AMPLIAR POSSIBILIDADES
+≠ DECIDIR PELA PESSOA
+
+FÉ
+≠ MECANISMO COMERCIAL
 ```
-
-As [Passagens e Versículos Bíblicos Fundamentais](christian-foundation/biblical-passages.md) possuem índice próprio.
-
-```text
-DESPERTAR
-→ PERCEBER
-→ DISCERNIR
-→ DESENVOLVER
-→ CRESCER
-→ APROXIMAR-SE DE DEUS
-```
-
-A presença desta autoridade no GKR público não a transforma em Public Canon ou comunicação religiosa/comercial automática.
 
 ## Marca e sistema verbal
 
-A autoridade institucional vigente é [GKR-BRAND-SIGNATURE-001 — Assinatura de Marca e Sistema Verbal](governance-framework/brand-signature-and-verbal-system.md).
-
 ```text
-Possibility, lived.      = assinatura global canônica da Guivos
-Possibilidade, vivida.   = versão PT canônica da Guivos
-#PossibilityLived        = hashtag global canônica da Guivos
+Possibility, lived.      → Guivos / assinatura global
+Possibilidade, vivida.   → Guivos / versão PT
+#PossibilityLived        → Guivos / hashtag global
+
+Do possível ao vivido.   → fundador / assinatura pessoal-autoral
 ```
-
-A proteção marcária corrente está consolidada no [Índice de Marca, Naming e Ativos Digitais](governance-framework/brand-and-digital-assets-index.md).
-
-GUIVOS possui cobertura reconciliada nas classes brasileiras 09, 35, 39 e 42. As duas assinaturas permanecem `CLEAR` e `FILE` nas classes 35 e 42, mas ainda não foram protocoladas.
-
-```text
-FILE ≠ FILING_AUTHORIZED
-CLEAR ≠ REGISTRO
-```
-
-O próximo gate de execução marcária é **Human Filing Authorization**. AIaaS somente pode integrar as aplicações de classe 42 se houver evidência suficiente de atividade efetiva/objeto compatível.
-
-## Autoridade Pública da Marca e Papel do Fundador
-
-A autoridade vigente é [GKR-BRAND-PUBLIC-AUTHORITY-001 — Autoridade Pública da Marca e Papel do Fundador](governance-framework/brand-public-authority-and-founder-role.md).
-
-```text
-Guilherme Oliveira
-→ Founder of Guivos / Fundador da Guivos
-→ principal referência humana pública inicial
-
-Do possível ao vivido.
-→ assinatura pessoal e autoral do fundador
-→ não integra a autoridade verbal institucional da Guivos
-
-Lucas 2:52
-→ referência bíblica deliberada na bio pública pessoal do fundador
-→ não copy institucional automática da Guivos
-```
-
-Separações obrigatórias:
 
 ```text
 GUIVOS ≠ FUNDADOR
 FALA PESSOAL ≠ POSICIONAMENTO INSTITUCIONAL
-FUNDADOR VISÍVEL ≠ MARCA DEPENDENTE
 ```
 
-A [Reconciliação Derivada](governance-framework/brand-public-authority-propagation.md) governa a leitura de resíduos anteriores e o novo rótulo do Movimento 06 da Home Pública: **Da Possibilidade à Experiência**.
+O próximo gate das aplicações marcárias das assinaturas é **Human Filing Authorization**.
 
-## Participantes, produtos e planos
+```text
+CLEAR ≠ REGISTRO
+FILE ≠ PROTOCOLO
+```
 
-Participantes:
+## Participantes estruturais
 
 - Pessoa;
-- Coletivo;
-- Organização.
+- Organização;
+- Coletivo.
 
-Produtos Especializados:
+```text
+ORGANIZAÇÃO ≠ GUIVOS BUSINESS ≠ GUIVOS ADS
+COLETIVO ≠ AUDIÊNCIA ≠ CANAL DE MARKETING
+```
+
+## Produtos Especializados
 
 - Journey;
 - Mall;
@@ -141,99 +142,195 @@ Produtos Especializados:
 - Intelligence;
 - Ads.
 
+Produto Especializado não substitui participante estrutural.
+
+## Domínios de Evolução do Journey
+
+1. Saúde e Bem-estar;
+2. Trabalho, Carreira e Estudos;
+3. Vida Financeira;
+4. Empreendedorismo e Projetos;
+5. Relacionamentos e Vida Social;
+6. Espiritualidade, Propósito e Valores;
+7. Viagens, Lazer, Cultura e Novas Experiências;
+8. Causas, Voluntariado e Contribuição;
+9. Organização e Equilíbrio da Vida.
+
+`Ainda estou descobrindo` é estado transversal, não décimo domínio.
+
+## Pessoa — estado funcional
+
+O marco funcional permanece **M7.88** e a última UXA funcional numerada permanece **UXA-101**.
+
+```text
+UXA-102/V5
+→ NOT_STARTED
+```
+
+Responsabilidades autenticadas reconhecidas incluem:
+
+- `PER-008` — Hoje;
+- `PER-009` — Conta e configurações;
+- `PER-010` — Meus Objetivos;
+- `PER-011` — Meus Próximos Passos;
+- `PER-012` — Minha Evolução.
+
+A primeira tela após a Home será definida somente depois que a auditoria encerrar e o fluxo vigente da Pessoa tiver sido reconciliado.
+
+## Organização e Coletivo — estado autenticado
+
+Já estão definidos:
+
+- fundação funcional;
+- contrato das relações Organização ↔ Coletivo;
+- atores, autoridades e jobs prioritários;
+- Arquitetura da Informação.
+
+Organização:
+
+```text
+Visão Geral
+Oportunidades e Programas
+Relações
+Responsabilidades e Evidências
+Organização e Autoridade
+Planos e Capacidade [especializado/contextual]
+```
+
+Coletivo:
+
+```text
+Início
+Atividades e Oportunidades
+Participação
+Governança e Proteção
+Relações
+Aprendizados e Evidências
+Coletivo e Autoridade
+Planos e Capacidade [especializado/contextual]
+```
+
+Ainda não são baselines finais:
+
+- mapa de superfícies pós-auditoria;
+- wireframe principal autenticado da Organização;
+- wireframe principal autenticado do Coletivo;
+- UI;
+- protótipo;
+- implementação.
+
+## Business
+
+`GPA-004 v1.6.0` permanece autoridade superior.
+
+Ofertas principais:
+
+```text
+Programas de Incentivo
+Guivos Journey custeado pela Empresa
+```
+
 Planos:
 
-- Pessoa: Free · Plus · Pro;
-- Coletivo: Livre · Mobiliza · Impacta · Rede;
-- Organização: Conecta · Eleva · Transforma;
-- Guivos Business: Start · Growth · Scale · Enterprise.
-
 ```text
-participante ≠ produto
-Organização ≠ Guivos Business
-Guivos Business ≠ Guivos Ads
-plano ≠ mérito ou evolução
+Start · Growth · Scale · Enterprise
 ```
 
-## Jornada e Experience Architecture
-
-A [Arquitetura da Experiência](experience-architecture/index.md) preserva a sequência funcional até UXA-101.
+Operação:
 
 ```text
-UXA-097
-→ UXA-098
-→ UXA-099
-→ UXA-100
-→ UXA-101
-→ UXA-102/V5 — NOT_STARTED
+Self-service
+Com apoio do suporte
+Gerenciado
 ```
 
-D5-A/B/C1/C2/C3/C4A/C4B são frentes não numeradas posteriores que aprofundam o Journey sem criar nova UXA.
+Essas dimensões permanecem separadas.
 
-`TRN-008..013` permanecem integralmente validadas no limite documental.
+## Intelligence
 
-Para Organização e Coletivo, contratos especializados de navegação não substituem a arquitetura principal autenticada. Os respectivos wireframes principais permanecem pendentes.
+`GPA-006 v2.0.0` permanece autoridade superior.
 
-Na Home Pública da Pessoa, `Movimento 06 — Da Possibilidade à Experiência` preserva a função `possibilidade → escolha → experiência → novo contexto`; a alteração é apenas de rótulo.
+Unidade de valor:
 
-## Guivos Business
-
-Autoridade: [GPA-004 — Guivos Business](product-architecture/business.md).
-
-Duas ofertas principais:
-
-```text
-PROGRAMAS DE INCENTIVO
-GUIVOS JOURNEY CUSTEADO PELA EMPRESA
-```
-
-A empresa custeia acesso ao Journey existente; não possui nem controla a Journey da pessoa.
-
-## Guivos Intelligence
-
-Autoridade: [GPA-006 — Guivos Intelligence v2.0.0](product-architecture/intelligence.md), com [Product Source Lock](product-architecture/intelligence-product-source-lock.md) e [GIA-000 v1.5.0](intelligence-architecture/index.md).
+> **compreensão útil e contextualizada**
 
 ```text
 Pessoa / Journey
 Business / População
 ```
 
+```text
+COMPREENDER ≠ DECIDIR
+PERSONALIZAR ≠ EXPOR
+INFERÊNCIA ≠ FATO
+SINAL ≠ CERTEZA
+TENDÊNCIA ≠ DESTINO
+PERCEBER ANTES ≠ PREVER O FUTURO
+```
+
 Neo4j permanece tecnologia de referência, não produção comprovada.
 
-## Homes públicas e Design
-
-Oito Homes estão documentalmente convergidas e incluídas no [Handoff Canônico](experience-architecture/public-homes-design-handoff.md).
-
-O [Design Delivery v4](experience-architecture/public-homes-design-delivery-manifest.md) mantém 31 fontes canônicas + 8 guias operacionais.
+## Research e RP-002
 
 ```text
-handoff ≠ Design produzido
-Design Delivery ≠ implementação
-snapshot externo ≠ fonte canônica paralela
-HOME PÚBLICA DE ORGANIZAÇÕES E COLETIVOS
-≠ UX AUTENTICADA DA ORGANIZAÇÃO
-≠ UX AUTENTICADA DO COLETIVO
+CONCEPTUAL READINESS → PASS
+METHODOLOGICAL READINESS → PASS
+FIELD KIT v0.1 → FROZEN FOR FIRST DRY RUN
+METHOD / ANALYSIS PLAN → FROZEN v1.0.0
+DOCUMENTATION PHASE OF MINIMUM PILOT STACK → CLOSED / PASS DOCUMENTAL
+OPERATIONAL IMPLEMENTATION → DEFERRED
+OPERATIONAL READINESS → HOLD
+PARTICIPANT 001 → HOLD
+DRY RUN REAL → NOT RELEASED
+PMF → NOT VALIDATED
 ```
 
-## Navegação do estado
+Simulação sintética não equivale a PMF.
 
-- [Registro do Estado Atual — 2.44.0](project/current-state-register.md)
-- [Roadmap 12.84.0](roadmap.md)
-- [Painel de Conhecimento 12.84.0](project/knowledge-board.md)
-- [Matriz de Consolidação Canônica 3.2.0](project/canonical-consolidation-matrix.md)
-- [Marcos Arquiteturais 5.46.0](project/architectural-milestones.md)
-- [Índice de Changelogs 1.21.0](project/changelog-index.md)
+## Homes públicas
 
-## Regra pós-reconciliação
+| Home | Estado na auditoria |
+|---|---|
+| Principal / Pessoa | `REBUILD_REQUIRED` |
+| Organizações e Coletivos | `REBUILD_REQUIRED` |
+| Mall | `AUDIT_PENDING` |
+| Travel | `AUDIT_PENDING` |
+| Media | `AUDIT_PENDING` |
+| Ads | `AUDIT_PENDING` |
+| Business | `AUDIT_PENDING` |
+| Intelligence | `AUDIT_PENDING` |
+
+A antiga leitura agregada de “oito Homes convergidas” não é usada como maturidade corrente enquanto a auditoria estiver aberta.
+
+## Materializações e contagens
+
+O corpus ainda contém artefatos físicos de ciclos anteriores. Alguns perderam autoridade vigente e serão removidos depois da absorção do conteúdo útil.
+
+Durante a auditoria:
 
 ```text
-NÃO HÁ UXA-102 AUTOMÁTICA
-NÃO HÁ DESIGN AUTOMÁTICO
-NÃO HÁ WIREFRAME PRINCIPAL DE ORGANIZAÇÃO AUTOMÁTICO
-NÃO HÁ WIREFRAME PRINCIPAL DE COLETIVO AUTOMÁTICO
-NÃO HÁ FILING AUTOMÁTICO
-NÃO HÁ PRODUCT ENGINEERING AUTOMÁTICO
-NÃO HÁ PUBLICAÇÃO AUTOMÁTICA DO FUNDADOR
+SVG FÍSICO
+≠ WIREFRAME VIGENTE
+≠ WIREFRAME VALIDADO
 ```
 
-O próximo movimento deve nascer de uma necessidade real e da autoridade correspondente.
+Nenhuma nova contagem agregada de maturidade visual será publicada antes da recomputação governada.
+
+## Próximo movimento
+
+O próximo movimento é concluir a auditoria integral, não iniciar automaticamente nova UXA, Design ou Engineering.
+
+```text
+NÃO INFERIR UXA-102
+NÃO INFERIR WIREFRAME
+NÃO INFERIR DESIGN
+NÃO INFERIR PRODUCT ENGINEERING
+NÃO INFERIR PMF
+NÃO ESCREVER A PRIMEIRA TELA PÓS-HOME DA PESSOA ANTES DO FECHAMENTO DA AUDITORIA
+```
+
+## Navegação
+
+O MENU atual também está sob auditoria e será reconstruído para uso multiequipe depois que o corpus final estiver definido.
+
+A futura navegação deverá ser eficiente para liderança, marketing, publicidade, comercial, produto, UX, Design, desenvolvimento, dados/Intelligence, Research, jurídico/privacidade e operação/internacionalização sem duplicar autoridades.
