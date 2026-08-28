@@ -1,48 +1,53 @@
 ---
 id: GKR-UXA-047-101-INDEX-001
-title: Índice das Frentes UXA-047 a UXA-101
+title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 2.19.0
+version: 3.0.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-26
+last_updated: 2026-08-27
 depends_on:
   - GKR-STATE-001
   - UXA-101
 related:
-  - GKR-GLOBAL-INTEGRITY-POST300-001
-  - GKR-BRAND-PUBLIC-AUTHORITY-001
-  - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
-  - UXA-047
-  - UXA-055
-  - UXA-070
-  - UXA-085
-  - UXA-090
-  - UXA-097
-  - UXA-098
-  - UXA-099
-  - UXA-100
-  - UXA-100-A4
-  - UXA-101
-  - PAS-001-DOMAIN-MODEL-001
-  - GKR-UX-D5-A-001
-  - GKR-UX-D5-B-001
-  - GKR-UX-D5-C1-001
-  - GKR-UX-D5-C2-001
-  - GKR-UX-D5-C3-001
-  - GKR-UX-D5-C4A-001
-  - GKR-UX-D5-C4B-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
-  - GKR-UX-ORGCOL-UX-STATE-001
-  - GKR-ORGCOL-POST313-RECON-001
   - M7.88
 normative: false
 ---
 
-# Índice das Frentes UXA-047 a UXA-101
+# Índice Vigente das Frentes UXA-047 a UXA-101
 
-Este índice preserva a rastreabilidade das frentes funcionais recentes. A UXA-100-A4 é subfrente de reconciliação da UXA-100 e não cria UXA-102 nem novo marco funcional.
+Este índice mantém a descoberta das frentes funcionais numeradas que permanecem fisicamente no corpus durante a auditoria integral.
 
-`PAS-001-DOMAIN-MODEL-001`, D4, D5, a convergência das Homes públicas, a governança de marca/proteção marcária, o Fundamento Cristão, a Reconciliação Global de Integridade pós-#300, a Autoridade Pública da Marca e do Fundador e a reconciliação pós-PR #313/#314 de Organizações e Coletivos são autoridades/frentes não numeradas. Elas **não constituem nova UXA nem alteram a última UXA funcional numerada**, que permanece UXA-101.
+Estado transversal sincronizado:
+
+```text
+GKR-STATE-001
+→ 3.0.0
+
+MARCO FUNCIONAL
+→ M7.88
+
+ÚLTIMA UXA FUNCIONAL NUMERADA
+→ UXA-101
+
+PRÓXIMA UXA
+→ UXA-102/V5 — NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
+```
+
+A presença de uma UXA neste índice significa que o artefato existe e integra a família numerada. Ela **não** prova que todo artefato ou materialização por ela referenciado continuará no corpus após a auditoria.
+
+```text
+INDEXADO
+≠ AUTORIDADE VISUAL VIGENTE AUTOMATICAMENTE
+
+ARTEFATO FÍSICO
+≠ WIREFRAME VIGENTE
+≠ IMPLEMENTAÇÃO
+```
+
+A auditoria integral decidirá quais artefatos antigos devem ser absorvidos e removidos. Enquanto isso, nenhuma nova contagem agregada de maturidade visual é inferida.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -71,7 +76,7 @@ Este índice preserva a rastreabilidade das frentes funcionais recentes. A UXA-1
 - [UXA-066](uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md)
 - [UXA-067](uxa-067-collective-pending-request-mobile-functional-validation.md)
 
-## UXA-068 a UXA-085 — expressão, jornadas e galeria
+## UXA-068 a UXA-085 — expressão, jornadas e registries
 
 - [UXA-068](uxa-068-guided-current-moment-text-voice-low-fidelity-wireframes.md)
 - [UXA-069](uxa-069-guided-current-moment-functional-validation-and-reformulation.md)
@@ -106,7 +111,7 @@ Este índice preserva a rastreabilidade das frentes funcionais recentes. A UXA-1
 - [UXA-095](uxa-095-participant-home-materialization-and-trn111-refinement.md)
 - [UXA-096](uxa-096-participant-home-functional-validation-per107-revalidation-and-trn111-integrated-validation.md)
 
-A reconciliação posterior preserva essas frentes conforme sua autoridade específica. `UXA-086/087`, por exemplo, continuam evidência administrativa local do pacote do Coletivo, mas **não constituem baseline final da UX principal autenticada do Coletivo**.
+Os fluxos especializados preservam a maturidade suportada por suas próprias autoridades. Uma materialização administrativa local do Coletivo não constitui automaticamente o wireframe principal autenticado final.
 
 ## UXA-097 a UXA-101 — fechamento funcional vigente
 
@@ -116,61 +121,63 @@ A reconciliação posterior preserva essas frentes conforme sua autoridade espec
 - [UXA-100](uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md)
 - [UXA-101](uxa-101-conscious-external-boundary-validation.md)
 
-Complementos da UXA-100:
+### Complementos da UXA-100
 
 - [UXA-100-A1](uxa-100-a1-plans-journey-integration-and-dedicated-screens.md)
 - [UXA-100-A2](uxa-100-a2-plans-screens-and-journeys-functional-audit.md)
 - [UXA-100-A3](uxa-100-a3-plans-canonical-fragmentation-and-promotion.md)
-- [UXA-100-A4](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md) — origens voluntárias e retorno de Planos; não inicia UXA-102. Após a reconciliação pós-313/314, contratos de origem/retorno de Coletivo e Organização **não provam wireframe principal vigente**.
+- [UXA-100-A4](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md)
 
-## Frentes não numeradas posteriores
+`UXA-100-A1..A4` são subfrentes da UXA-100 e não criam UXA-102.
 
-- [D5-A](d5-a-evolution-domains-guided-expression-initial-understanding-today.md) — materialização dos Domínios na jornada inicial, sem nova superfície;
-- [D5-B](d5-b-evolution-domains-opportunities-layer.md) — materialização dos Domínios em Oportunidades, sem nova superfície;
-- [D5-C1](d5-c1-direction-movement-evolution-surface-contract.md) — `PER-010..012` e `TRN-008..013` contratados sem SVG;
-- [D5-C2](d5-c2-direction-movement-evolution-low-fidelity-wireframes.md) — um estado-base low-fidelity para `PER-010..012`;
-- [D5-C3](d5-c3-direction-movement-evolution-functional-validation.md) — validação funcional e reformulação local dos três SVGs;
-- [D5-C4A](d5-c4a-direction-movement-evolution-handoff-contract.md) — Hoje recorrente reformulado/revalidado e contrato semântico de `TRN-008..013`, sem promoção;
-- [D5-C4B](d5-c4b-direction-movement-evolution-integrated-handoff-validation.md) — validação individual integrada de `TRN-008..013`; seis ligações promovidas no limite documental.
+## Frentes funcionais não numeradas relacionadas
 
-Também são frentes não numeradas posteriores, em suas autoridades próprias:
+O Journey também possui frentes não numeradas que não alteram o marco M7.88 nem a última UXA numerada:
 
-- convergência das oito Homes públicas;
-- Design Handoff e Design Delivery v4;
-- ressincronização do Guivos Business;
-- convergência do Guivos Intelligence e de sua Home;
-- assinatura e sistema verbal da marca;
-- proteção marcária e preparação de filing;
-- Fundamento Cristão e Doutrina de Propósito;
-- Reconciliação Global de Integridade pós-PR #300;
-- Autoridade Pública da Marca e Papel do Fundador;
-- Reconciliação Derivada da Autoridade Pública da Marca e do Fundador;
-- reconciliação de Organizações e Coletivos pós-PR #313/#314.
+- D5-A — Domínios de Evolução na expressão/compreensão/Hoje;
+- D5-B — Domínios de Evolução em Oportunidades;
+- D5-C1 — responsabilidades `PER-010..012` e contratos `TRN-008..013`;
+- D5-C2 — materializações low-fidelity de `PER-010..012`;
+- D5-C3 — validação/reformulação local de `PER-010..012`;
+- D5-C4A — contrato de handoff com Hoje recorrente;
+- D5-C4B — validação documental integrada de `TRN-008..013`.
 
-Nenhuma dessas frentes altera a numeração UXA, retoma Engenharia ou inicia UXA-102.
+Essas frentes permanecem sujeitas à auditoria do corpus quanto à necessidade de manter todos os artefatos intermediários separadamente.
+
+## Organizações e Coletivos — avanço posterior
+
+Depois das reconciliações funcionais anteriores, a experiência autenticada de Organização e Coletivo avançou para:
+
+```text
+GKR-UX-ORGCOL-AUTH-JOBS-001
+→ atores, autoridades e jobs prioritários definidos
+
+GKR-UX-ORGCOL-AUTH-IA-001
+→ Arquitetura da Informação definida
+```
+
+Ainda não são canônicos:
+
+- mapa final de superfícies pós-auditoria;
+- wireframe principal da Organização;
+- wireframe principal do Coletivo;
+- UI;
+- protótipo;
+- implementação.
 
 ## Estado sincronizado
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **2.44.0** |
-| marco funcional | **M7.88** |
-| última UXA funcional numerada | **UXA-101** |
-| próxima UXA | **UXA-102/V5 não iniciada** |
-| Homes públicas convergidas | **8** |
-| Design Delivery vigente | **v4.0.0 — 39 arquivos externos** |
-| Snapshot externo v4 | **`dfed980d8cfb39bbe4694e58d7c86ca0692266dc`** |
-| SVGs físicos no inventário | **121; inclui históricos superseded** |
-| maturidade visual agregada | **não inferir; recomputação governada pendente** |
-| wireframe principal autenticado da Organização | **pendente** |
-| wireframe principal autenticado do Coletivo | **pendente** |
-| associações físicas | **121** |
-| perfis | **34** |
-| superfícies/estados/fronteiras | **57** |
-| transições | **66** |
-| IDs com referência visual no snapshot | **45 de 57** |
-| responsabilidades sem SVG no snapshot | **10** |
-| Engenharia de Produto | **pausada antes de W0-01** |
-| Design automático | **não iniciado** |
+| Registro do Estado Atual | **3.0.0** |
+| Marco funcional | **M7.88** |
+| Última UXA funcional numerada | **UXA-101** |
+| Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
+| Auditoria integral | **IN_PROGRESS** |
+| Product Engineering | **PAUSED BEFORE W0-01** |
+| PMF | **NOT VALIDATED** |
+| Maturidade visual agregada | **não inferir durante recomputação** |
+| Home principal/Pessoa | **REBUILD_REQUIRED** |
+| Home Organizações e Coletivos | **REBUILD_REQUIRED** |
 
-D5-C4B permanece a última frente funcional não numerada do Journey. As reconciliações pós-#300, de autoridade pública do fundador e de Organizações/Coletivos são documentais e transversais; não criam `UXA-102/V5` nem novo marco funcional.
+A auditoria integral pode consolidar ou remover do corpus atual documentos desta família quando o conhecimento vigente tiver sido absorvido e as referências forem reconciliadas. Isso não muda, por si só, os estados funcionais que continuarem sustentados por autoridade vigente.
