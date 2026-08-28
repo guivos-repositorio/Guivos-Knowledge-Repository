@@ -1,14 +1,15 @@
 ---
-id: ROADMAP-13.0.0
+id: ROADMAP-13.1.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.0.0
+version: 13.1.0
 owner: Guivos
 last_updated: 2026-08-27
 normative: true
 related:
   - GKR-STATE-001
   - GKR-FULL-CORPUS-AUDIT-001
+  - GEB-P01
   - GOG-001
   - GKR-BRAND-SIGNATURE-001
   - GKR-BRAND-PUBLIC-AUTHORITY-001
@@ -28,7 +29,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.0.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.1.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -42,16 +43,18 @@ ROADMAP
 ≠ REGISTRO HISTÓRICO
 ```
 
-O próximo movimento global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
+O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Enquanto essa auditoria estiver aberta, nenhuma nova UX principal, wireframe, Home, Design ou implementação deve ser promovida como consequência automática de trabalho anterior.
+Os Lotes A, B e C estão reconciliados nesta baseline proposta. O próximo lote governado é **D — Home principal / Pessoa**.
+
+Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Design ou implementação deve ser promovida como consequência automática de trabalho anterior.
 
 ## 2. Baseline governada
 
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.0.0** |
+| Estado global | **GKR-STATE-001 v3.1.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -59,10 +62,12 @@ Enquanto essa auditoria estiver aberta, nenhuma nova UX principal, wireframe, Ho
 | UXA-102/V5 | **NOT_STARTED** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
+| Fundação | **RECONCILED / ENRICHED IN LOT C** |
+| Public Canon | **GOG-001 v5.3.0** |
 | RP-002 conceptual readiness | **PASS** |
 | RP-002 methodological readiness | **PASS** |
 | RP-002 operational readiness | **HOLD** |
-| Home principal/Pessoa | **REBUILD_REQUIRED** |
+| Home principal/Pessoa | **REBUILD_REQUIRED / NEXT LOT** |
 | Home Organizações e Coletivos | **REBUILD_REQUIRED** |
 | Demais Homes | **AUDIT_PENDING** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
@@ -82,6 +87,7 @@ Toda frente deve responder:
 4. a frente exige somente documentação ou realidade operacional?
 5. quais gates impedem promoção de maturidade?
 6. o avanço produzirá nova verdade ou apenas eliminará fragmentação?
+7. todo conhecimento validado e material foi preservado ou enriquecido?
 
 Durante a auditoria:
 
@@ -92,11 +98,14 @@ ATUALIZAR AUTORIDADE VIGENTE
 ABSORVER CONTEÚDO VÁLIDO
 → ANTES DE REMOVER ARTEFATO
 
+CONSOLIDAR
+≠ RESUMIR
+
 GIT
 → PRESERVA HISTÓRICO
 
 GKR
-→ PRESERVA ESTADO ATUAL
+→ PRESERVA ESTADO ATUAL COM DETALHE MATERIAL
 ```
 
 ## 4. Programa prioritário — Auditoria Integral do GKR
@@ -106,13 +115,13 @@ A auditoria é o programa prioritário até seu fechamento.
 Sequência governada:
 
 ```text
-A. GOVERNANÇA DO CORPUS
+A. GOVERNANÇA DO CORPUS                 [CONCLUÍDO]
 ↓
-B. ESTADO ATUAL E ROADMAP
+B. ESTADO ATUAL E ROADMAP               [CONCLUÍDO]
 ↓
-C. FUNDAÇÃO / MARCA / PUBLIC CANON
+C. FUNDAÇÃO / MARCA / PUBLIC CANON      [CONCLUÍDO]
 ↓
-D. HOME PRINCIPAL / PESSOA
+D. HOME PRINCIPAL / PESSOA              [PRÓXIMO]
 ↓
 E. HOME ORGANIZAÇÕES E COLETIVOS
 ↓
@@ -159,11 +168,15 @@ Regra central:
 
 > **Git preserva a história; o GKR vigente preserva a verdade atual.**
 
+Preservação reforçada:
+
+> **A limpeza nunca pode remover conhecimento validado ou reduzir riqueza material. Consolidação deve preservar ou aumentar clareza, contexto, exemplos, fluxos, guardrails, critérios e evidência útil.**
+
 Esse lote está documentalmente fechado.
 
 ## 6. Lote B — Estado Atual e Roadmap
 
-Objetivo:
+Objetivos concluídos:
 
 - eliminar dependência de baseline antiga + adendo;
 - incorporar RP-002;
@@ -172,50 +185,48 @@ Objetivo:
 - remover claims antigas de Homes e maturidade visual;
 - fazer da auditoria integral o próximo movimento governado explícito.
 
-Estado deste roadmap:
+Estado:
 
 ```text
 GKR-STATE-001 v3.0.0
-→ REWRITTEN IN AUDIT BRANCH
-
-ROADMAP-13.0.0
-→ THIS AUTHORITY
+→ INTEGRATED AS FIRST AUDIT GLOBAL STATE
 
 GLOBAL POST-RP002 ADDENDUM
-→ CANDIDATE FOR REMOVAL AFTER ABSORPTION VALIDATION
+→ CONTENT ABSORBED
+→ REMOVED FROM CURRENT CORPUS
+→ HISTORY PRESERVED IN GIT
 ```
 
-Gate de fechamento do lote:
-
-- conteúdo atual do adendo integralmente absorvido;
-- nenhuma referência obrigatória quebrada;
-- semantic validation = SUCCESS;
-- mechanical validation = SUCCESS;
-- adendo removido do corpus se não possuir função própria.
+Semantic e Mechanical Validation foram satisfeitas antes da integração do lote.
 
 ## 7. Lote C — Fundação, Marca e Public Canon
 
-Após B, auditar de forma cruzada:
+Objetivos executados:
 
-- Fundação;
-- Constituição;
-- Fundamento Cristão;
-- identidade verbal;
-- assinatura institucional;
-- autoridade pública da Guivos;
-- autoridade pública do fundador;
-- Public Canon;
-- naming;
-- ativos digitais;
-- proteção marcária;
-- propagation/reconciliation records relacionados.
+- confrontar Fundação com RP-002 e Estado Atual;
+- preservar significado validado e remover apenas metadados históricos de processo que não possuíam função atual;
+- enriquecer Essência, Propósito, Missão, Visão, Constituição e Princípios com fluxos, tabelas, exemplos, contraexemplos, guardrails e testes de aderência;
+- preservar os oito artigos constitucionais sem criar nova doutrina por inferência;
+- distinguir `Possibilidade`, `Mecanismo` e `Oportunidade`;
+- retirar Oportunidade do papel de etapa universal/obrigatória da Journey;
+- reconciliar PP-11/PP-12 para distinguir verdade vigente de visão/target;
+- preservar `GKR-BRAND-SIGNATURE-001`, `GKR-BRAND-PUBLIC-AUTHORITY-001` e `GKR-CHRISTIAN-FOUNDATION-001` porque permaneceram consistentes;
+- atualizar `GOG-001` para v5.3.0;
+- não remover ainda a propagação de autoridade pública, pois ela continua necessária até a reconstrução da Home Pessoa.
 
-Objetivo:
+Hierarquia reconciliada:
 
 ```text
-UMA VERDADE ATUAL
-→ SEM CORREÇÃO PERMANENTE POR PROPAGATION
-→ SEM CONFUNDIR GUIVOS E FUNDADOR
+MOMENTO
+→ OBJETIVO / NECESSIDADE, quando houver
+→ PRÓXIMO PASSO
+→ POSSIBILIDADE, quando agregar valor
+→ MECANISMO, quando necessário
+→ OPORTUNIDADE REAL, quando existir
+→ ESCOLHA
+→ EXPERIÊNCIA
+→ CONTRIBUIÇÃO / APRENDIZADO, quando houver evidência
+→ NOVO MOMENTO
 ```
 
 Preservações obrigatórias:
@@ -235,6 +246,12 @@ Do possível ao vivido.
 
 Lucas 2:52 na bio do fundador
 ≠ copy institucional automática
+
+POSSIBILIDADE
+≠ OPORTUNIDADE
+
+EXPERIÊNCIA
+≠ IMPACTO COMPROVADO
 ```
 
 Filing permanece fora da auditoria documental enquanto não houver autorização humana própria.
@@ -245,12 +262,15 @@ Estado:
 
 ```text
 REBUILD_REQUIRED
+NEXT_LOT
 ```
 
 Motivos já comprovados:
 
 - assinatura pessoal do fundador ainda aparece como assinatura complementar institucional no master antigo;
 - rótulo antigo do Movimento 06 permanece no master;
+- o master antecede a Fundação reconciliada do Lote C;
+- a Home precisa refletir a distinção atual entre Possibilidade, Mecanismo e Oportunidade;
 - a Home deve ser confrontada com todas as autoridades posteriores de Fundação, Marca, Journey, Domínios de Evolução, Research, Public Canon e Experience Architecture.
 
 Movimento 06 vigente:
@@ -268,16 +288,18 @@ POSSIBILIDADE
 → NOVO CONTEXTO
 ```
 
-A reconstrução deve preservar a essência já válida da Home, não começar de uma folha em branco.
+A reconstrução deve preservar toda essência, narrativa, movimentos, exemplos e detalhes ainda válidos da Home; não começa de uma folha em branco.
 
 Gate:
 
 - master atualizado contém toda a narrativa ainda válida;
-- claims públicas sustentadas;
+- Fundação 0.4/0.3 reconciliada é refletida corretamente;
+- claims públicas sustentadas pelo GOG 5.3.0;
 - assinatura institucional correta;
 - nenhuma frase pessoal do fundador usada como autoridade institucional;
 - relação com a primeira experiência autenticada explicitada sem desenhar a tela ainda;
-- sem dependência de documento de propagação para saber a versão vigente.
+- sem dependência de documento de propagação para saber a versão vigente;
+- todo conteúdo único da propagação necessária à Home absorvido antes de eventual remoção futura.
 
 ## 9. Lote E — Home Organizações e Coletivos
 
@@ -791,20 +813,23 @@ HOME DOCUMENTADA ≠ HOME CONSISTENTE APÓS NOVAS AUTORIDADES
 ARTEFATO FÍSICO ≠ AUTORIDADE VIGENTE
 DOCUMENTAÇÃO ≠ IMPLEMENTAÇÃO
 SIMULAÇÃO ≠ PMF
+CONSOLIDAÇÃO ≠ REDUÇÃO DE CONHECIMENTO
 ```
 
 ## 26. Regra do próximo movimento
+
+Após a integração do Lote C, o próximo movimento é **Lote D — Home principal / Pessoa**.
 
 Até o fechamento da auditoria:
 
 ```text
 NÃO HÁ UXA-102 AUTOMÁTICA
-NÃO HÁ WIREFRAME AUTOMÁTICO
+NÃO HÁ PRIMEIRA TELA PÓS-HOME AUTOMÁTICA
+NÃO HÁ WIREFRAME AUTENTICADO AUTOMÁTICO
 NÃO HÁ DESIGN AUTOMÁTICO
 NÃO HÁ ENGINEERING AUTOMÁTICA
 NÃO HÁ FILING AUTOMÁTICO
 NÃO HÁ PMF AUTOMÁTICO
-NÃO HÁ PRIMEIRA TELA PÓS-HOME AUTOMÁTICA
 ```
 
-O próximo movimento é sempre o próximo lote necessário da **Auditoria Integral do GKR**, não a próxima etapa histórica de uma sequência antiga.
+A Home Pessoa será reconstruída primeiro; a primeira tela autenticada somente será definida após os gates restantes da auditoria.
