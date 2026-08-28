@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-NAV-001
 title: Arquitetura de Navegação e Acessos da Home Pública
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-28
 parent: GKR-UX-HOME-HANDOFF-001
 depends_on:
   - UXA-020
@@ -20,7 +20,10 @@ depends_on:
   - GEB-P01-F06
 related:
   - GKR-UX-HOME-NAV-002
+  - GKR-UX-HOME-GTM-BOUNDARY-001
+  - GKR-UX-HOME-MASTER-001
 normative: false
+maturity: reconciled_navigation_architecture_pre_materialization
 ---
 
 # Arquitetura de Navegação e Acessos da Home Pública
@@ -38,6 +41,8 @@ A decisão central é:
 Um produto pode estar acessível desde o primeiro viewport e ainda assim somente receber explicação e destaque institucional quando a narrativa tiver construído contexto suficiente.
 
 Este documento não define layout, wireframe, Figma, comportamento visual final de menus, nem fluxos internos dos destinos.
+
+Nesta versão, a arquitetura de navegação foi reconciliada com `GKR-UX-HOME-GTM-BOUNDARY-001`: presença conceitual e destino governado na arquitetura não equivalem a disponibilidade operacional ou decisão de lançamento.
 
 ---
 
@@ -212,7 +217,9 @@ O inventário conceitualmente aprovado do launcher nesta fase é:
 - Guivos Intelligence;
 - Guivos Mall.
 
-A ordem visual ainda não está fechada e a disponibilidade operacional de cada destino precisa ser confirmada antes do wireframe.
+A ordem visual ainda não está fechada.
+
+A presença desses destinos no launcher é uma decisão de arquitetura conceitual e **não exige confirmação prévia de disponibilidade operacional para um futuro wireframe**. Quando a estratégia de lançamento ainda não estiver definida, cada item deve ser tratado como destino conceitual governado, sem inventar estado comercial, operacional ou clicabilidade de produção.
 
 **Guivos Journey não integra o launcher na hipótese principal atual.**
 
@@ -236,8 +243,16 @@ Critérios:
 2. o destino é coerente com o que a pessoa acabou de ver;
 3. o CTA não interrompe a narrativa principal;
 4. o produto é destino, não explicação da marca;
-5. o acesso não cria falsa disponibilidade;
-6. o destino operacional existe ou possui estado público legítimo.
+5. a arquitetura não inventa disponibilidade, estado comercial ou capacidade operacional;
+6. um futuro wireframe pode representar o destino conceitual governado mesmo sem decisão de lançamento fechada; ativação, clicabilidade e comunicação de disponibilidade em produção dependem de reconciliação posterior com Marketing/GTM, Produto, Operação, Legal e Tecnologia quando aplicável.
+
+Regra:
+
+```text
+DESTINO CONCEITUAL GOVERNADO
+≠ DESTINO OPERACIONAL ATIVO
+≠ DECISÃO DE LANÇAMENTO
+```
 
 ---
 
@@ -256,6 +271,48 @@ Journey pode aparecer aqui junto às demais manifestações mesmo não integrand
 O requisito é:
 
 > **a coerência entre os produtos deve ser mais perceptível que a quantidade de produtos.**
+
+---
+
+## 9A. Fronteira entre navegação conceitual e GTM
+
+A navegação deve ser projetável antes de o plano de lançamento estar fechado.
+
+A arquitetura define:
+
+- quais destinos pertencem conceitualmente ao Header, launcher, narrativa ou rodapé;
+- a relação semântica entre esses destinos;
+- a hierarquia e a função de acesso;
+- o que precisa permanecer encontrável.
+
+Marketing/GTM e as demais autoridades de publicação definem futuramente:
+
+- quais destinos estarão ativos em uma versão específica;
+- quais serão clicáveis em produção;
+- quais poderão aparecer como teaser, preview, beta, waitlist ou `em breve`;
+- quais mercados, idiomas e regiões estarão efetivamente suportados;
+- quais claims e estados operacionais poderão ser comunicados.
+
+Separação obrigatória:
+
+```text
+ARQUITETURA DE NAVEGAÇÃO
+→ define pertencimento, função e hierarquia conceitual
+
+WIREFRAME CONCEITUAL
+→ pode representar destinos governados sem inventar operação
+
+PUBLICAÇÃO / LANÇAMENTO
+→ exige verdade operacional, destinos reais e GTM reconciliado
+```
+
+Portanto:
+
+> **arquitetura / futuro wireframe ≠ disponibilidade de lançamento.**
+
+E, simultaneamente:
+
+> **presença conceitual ≠ autorização para publicar capacidade inexistente.**
 
 ---
 
@@ -357,14 +414,15 @@ Esses temas serão tratados futuramente em frente própria.
 
 ## 17. Relação com GKR-UX-HOME-NAV-002
 
-`GKR-UX-HOME-NAV-002` registra a decisão de refinamento que originou esta versão 0.3.0.
+`GKR-UX-HOME-NAV-002` registra a decisão de refinamento que originou esta arquitetura de navegação.
 
 Em caso de conflito com hipóteses históricas anteriores, prevalecem:
 
 1. Journey fora do launcher e `Iniciar Jornada` como sua porta própria no Header;
 2. launcher composto por Travel, Ads, Media, Business, Intelligence e Mall;
 3. o limite de que `Mapa do Ecossistema` é somente um link no rodapé nesta fase;
-4. a postergação integral da página `Mapa do Ecossistema`.
+4. a postergação integral da página `Mapa do Ecossistema`;
+5. `GKR-UX-HOME-GTM-BOUNDARY-001` para separar arquitetura conceitual de disponibilidade operacional, publicação e lançamento.
 
 ---
 
@@ -471,7 +529,9 @@ Rejeitar ou revisar uma proposta quando:
 11. o `Mapa do Ecossistema` é detalhado ou desenhado antes da frente própria;
 12. mobile perde caminhos disponíveis no desktop;
 13. navegação depende de hover;
-14. o Header se torna mais importante que a Hero.
+14. o Header se torna mais importante que a Hero;
+15. um wireframe conceitual é bloqueado apenas porque o lançamento de um destino ainda não foi definido;
+16. a presença conceitual de um destino é apresentada como prova de disponibilidade operacional.
 
 ---
 
@@ -491,7 +551,8 @@ Uma futura arquitetura será considerada aderente quando:
 - `Iniciar Jornada` possuir hierarquia adequada;
 - o rodapé contiver o link `Mapa do Ecossistema` sem antecipar a página;
 - desktop e mobile preservarem hierarquia;
-- nenhuma área pública simular disponibilidade inexistente.
+- a arquitetura distinguir explicitamente presença conceitual de disponibilidade operacional;
+- nenhuma publicação ou ativação simular disponibilidade inexistente.
 
 ---
 
@@ -499,7 +560,7 @@ Uma futura arquitetura será considerada aderente quando:
 
 Antes de aprovar um futuro Header, responder:
 
-1. Quem já conhece Travel consegue acessá-lo rapidamente?
+1. Quem já conhece Travel consegue acessá-lo rapidamente na arquitetura proposta?
 2. Quem quer iniciar sua Journey encontra `Iniciar Jornada` imediatamente?
 3. Quem nunca ouviu falar de Guivos entende a marca antes de ser bombardeado por produtos?
 4. O launcher parece pertencer a um único ecossistema?
@@ -513,6 +574,8 @@ Antes de aprovar um futuro Header, responder:
 12. mobile preserva os mesmos caminhos essenciais?
 13. algum elemento existe apenas porque concorrentes usam?
 14. o `Mapa do Ecossistema` foi mantido somente como link, sem detalhamento prematuro?
+15. algum destino conceitual está sendo confundido com promessa de disponibilidade operacional?
+16. alguma decisão de GTM está sendo usada indevidamente como gate para arquitetura ou wireframe?
 
 ---
 
@@ -533,9 +596,9 @@ Considere como hipótese principal de Header Persistente:
 - Login;
 - Iniciar Jornada como CTA de maior hierarquia e porta própria da Journey.
 
-O launcher deve permitir acesso a Travel, Ads, Media, Business, Intelligence e Mall sem transformar o Header em catálogo. Journey pertence ao ecossistema, mas não integra o launcher nesta hipótese; sua porta principal no Header é Iniciar Jornada.
+O launcher deve permitir acesso conceitual a Travel, Ads, Media, Business, Intelligence e Mall sem transformar o Header em catálogo. Journey pertence ao ecossistema, mas não integra o launcher nesta hipótese; sua porta principal no Header é Iniciar Jornada.
 
-A Home precisa permitir acesso imediato a produtos conhecidos, mas os produtos não podem dominar a primeira percepção da marca.
+A Home precisa permitir acesso imediato a produtos conhecidos como arquitetura de navegação, mas os produtos não podem dominar a primeira percepção da marca. Não presuma que presença conceitual signifique destino ativo em produção; quando o lançamento não estiver definido, represente o item como destino conceitual governado e deixe sua ativação para Marketing/GTM e os gates de publicação.
 
 No rodapé, considere apenas um link Mapa do Ecossistema. Não desenhe nem detalhe a página de destino; ela pertence a frente futura.
 
@@ -547,6 +610,7 @@ Entregue:
 - comportamento conceitual do launcher;
 - relação entre Header e Hero;
 - diferenças desktop/mobile;
+- fronteira entre destino conceitual e disponibilidade de produção;
 - riscos;
 - itens ainda abertos para teste.
 ```
@@ -557,10 +621,6 @@ Entregue:
 
 A arquitetura deve permitir simultaneamente:
 
-> **quem não conhece a Guivos, compreender; quem já conhece Travel, Ads, Media, Business, Intelligence ou Mall, acessar; quem quer saber quem é a Guivos, encontrar Sobre; quem representa Organização ou Coletivo, encontrar sua porta; quem já participa, fazer login; e quem quer avançar como Pessoa, iniciar sua Jornada.**
+> **quem não conhece a Guivos, compreender; quem já conhece Travel, Ads, Media, Business, Intelligence ou Mall, encontrar seu destino conceitual; quem quer saber quem é a Guivos, encontrar Sobre; quem representa Organização ou Coletivo, encontrar sua porta; quem já participa, fazer login; e quem quer avançar como Pessoa, iniciar sua Jornada.**
 
-Sem transformar a Home em inventário.
-
-Regra final:
-
-> **a Home conta uma história enquanto a navegação preserva liberdade.**
+A ativação concreta de cada destino em uma versão pública permanece subordinada à verdade operacional e à decisão de publicação/GTM correspondente.
