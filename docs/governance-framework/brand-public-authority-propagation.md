@@ -1,10 +1,10 @@
 ---
 id: GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
-title: Reconciliação Derivada da Autoridade Pública da Marca e do Fundador
+title: Reconciliação Transitória da Autoridade Pública da Marca e do Fundador
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-08-22
+last_updated: 2026-08-27
 depends_on:
   - GKR-BRAND-PUBLIC-AUTHORITY-001
   - GKR-BRAND-SIGNATURE-001
@@ -14,29 +14,49 @@ related:
   - GKR-STATE-001
   - GKR-KNOWLEDGE-BOARD-001
   - GKR-CANON-MATRIX-001
-  - ROADMAP-12.84.0
+  - ROADMAP-13.1.0
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-NARR-005
   - GKR-UX-HOME-AUDIT-002
-normative: true
+normative: false
+maturity: transitional_reconciliation_partially_absorbed
 ---
 
-# Reconciliação Derivada da Autoridade Pública da Marca e do Fundador
+# Reconciliação Transitória da Autoridade Pública da Marca e do Fundador
 
-## 1. Finalidade
+## 1. Finalidade atual
 
-Este documento propaga a decisão de `GKR-BRAND-PUBLIC-AUTHORITY-001` pelos derivados que ainda preservam formulações anteriores sobre `Do possível ao vivido.`.
+Este documento preserva a reconciliação que propagou `GKR-BRAND-PUBLIC-AUTHORITY-001` pelos derivados que ainda utilizavam formulações anteriores sobre `Do possível ao vivido.`.
 
-A reconciliação não reabre a assinatura institucional, a arquitetura da Home Pública, os onze movimentos, o Fundamento Cristão, o Public Canon em seus demais conteúdos, produto, Experience Architecture, Design, GTM ou implementação.
+As decisões de autoridade que motivaram esta frente continuam válidas. Entretanto, depois da atualização direta das autoridades superiores, do Public Canon e da reconstrução de `GKR-UX-HOME-MASTER-001 v1.0.0`, este arquivo **não precisa mais funcionar como camada normativa intermediária para essas superfícies já reconciliadas**.
 
-Seu escopo é estrito:
+Sua função atual é transitória:
 
-1. separar definitivamente a assinatura institucional da Guivos da assinatura pessoal do fundador;
-2. impedir que derivados anteriores continuem atribuindo `Do possível ao vivido.` à Guivos;
-3. preservar a função semântica do Movimento 06 da Home Pública com novo rótulo não conflitante;
-4. preservar registros históricos como evidência do estado válido à época;
-5. estabelecer precedência inequívoca para leitura de qualquer resíduo textual ainda não removido mecanicamente.
+1. preservar a rastreabilidade da correção aplicada;
+2. registrar os resíduos que ainda precisam de limpeza textual controlada;
+3. impedir regressão enquanto documentos especializados antigos ainda coexistirem no corpus;
+4. permitir auditoria de absorção antes de eventual remoção futura.
+
+```text
+AUTORIDADE PRIMÁRIA
+→ GKR-BRAND-PUBLIC-AUTHORITY-001
+→ GKR-BRAND-SIGNATURE-001
+
+PUBLIC CANON ATUAL
+→ GOG-001 v5.3.0
+
+HOME PESSOA — MASTER ATUAL
+→ GKR-UX-HOME-MASTER-001 v1.0.0
+
+ESTE DOCUMENTO
+→ RECONCILIAÇÃO TRANSITÓRIA / EVIDÊNCIA DE PROPAGAÇÃO
+→ NÃO É NOVA CAMADA NORMATIVA DE MARCA
+```
+
+A reconciliação não reabre assinatura institucional, arquitetura da Home Pública, onze movimentos, Fundamento Cristão, Public Canon em seus demais conteúdos, Produto, Experience Architecture, Design, GTM ou implementação.
+
+---
 
 ## 2. Autoridades vigentes
 
@@ -69,9 +89,11 @@ DO POSSÍVEL AO VIVIDO.
 → ASSINATURA PESSOAL E AUTORAL DO FUNDADOR
 ```
 
+---
+
 ## 3. Lucas 2:52 e a bio do fundador
 
-`GKR-BRAND-PUBLIC-AUTHORITY-001` governa que a bio pública do fundador no Instagram deve incluir Lucas 2:52 com a redação de trabalho já registrada em `GKR-CHRISTIAN-FOUNDATION-001`:
+`GKR-BRAND-PUBLIC-AUTHORITY-001` governa que a bio pública do fundador no Instagram deve incluir Lucas 2:52 com a redação de trabalho registrada em `GKR-CHRISTIAN-FOUNDATION-001`:
 
 > **“E Jesus continuava crescendo em sabedoria, em desenvolvimento e em graça diante de Deus e das pessoas.” — Lucas 2:52**
 
@@ -85,56 +107,57 @@ LUCAS 2:52 NA BIO DO FUNDADOR
 ≠ REPRESENTAÇÃO ISOLADA DE TODA A BASE BÍBLICA DA GUIVOS
 ```
 
-## 4. Regra de precedência sobre derivados
+---
 
-Quando um derivado anterior afirmar que `Do possível ao vivido.` é bordão, assinatura complementar, linha narrativa ou ativo verbal institucional da Guivos, essa atribuição está **superseded** por esta cadeia:
+## 4. Regra de precedência vigente
+
+Quando um derivado anterior afirmar que `Do possível ao vivido.` é bordão, assinatura complementar, linha narrativa ou ativo verbal institucional da Guivos, a atribuição está superada pela autoridade direta de:
 
 ```text
 GKR-BRAND-PUBLIC-AUTHORITY-001
 +
 GKR-BRAND-SIGNATURE-001 v1.3.0
-+
-GKR-BRAND-DIGITAL-ASSETS-INDEX-001 v1.10.0
-+
-GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
 ```
 
-A ocorrência textual antiga pode permanecer em registro histórico sem competir com o estado corrente.
+Este documento registra como essa correção foi propagada, mas não precisa integrar a cadeia normativa superior.
 
-Em documento corrente ainda não limpo mecanicamente:
+```text
+AUTORIDADE DIRETA
+> PROPAGATION TRANSITÓRIA
+> RESÍDUO TEXTUAL ANTIGO
+```
+
+A ocorrência textual antiga pode permanecer em registro histórico quando descreve corretamente o estado à época. Em documento corrente ainda não reconciliado:
 
 ```text
 RESÍDUO TEXTUAL ANTIGO
 ≠ AUTORIDADE CORRENTE
 ```
 
-## 5. Superfícies globais correntes reconciliadas
+---
 
-A auditoria pós-PR #307 identificou como derivados correntes com formulação anterior, entre outros:
+## 5. Estado de absorção por superfície
 
-- `README.md`;
-- `docs/index.md`;
-- `docs/public/index.md`;
-- `docs/public/guia-oficial-da-guivos.md`;
-- `docs/project/current-state-register.md`;
-- `docs/project/knowledge-board.md`;
-- `docs/project/canonical-consolidation-matrix.md`;
-- `docs/roadmap.md`.
+| Superfície / família | Estado | Observação |
+|---|---|---|
+| `GKR-BRAND-PUBLIC-AUTHORITY-001` | `AUTHORITATIVE` | autoridade humana pública direta |
+| `GKR-BRAND-SIGNATURE-001` | `AUTHORITATIVE` | assinatura institucional direta |
+| `GOG-001 v5.3.0` | `ABSORBED` | separação Guivos × fundador já incorporada |
+| `GKR-STATE-001 v3.1.0` | `ABSORBED` | estado global já incorporado |
+| `GKR-UX-HOME-MASTER-001 v1.0.0` | `ABSORBED` | Hero e Movimento 06 corrigidos no master |
+| `README.md` / `docs/index.md` | `ABSORBED` | leitura global atualizada |
+| documentos narrativos especializados da Home | `RESIDUAL_RECONCILIATION` | revisar ocorrências antigas sem perder detalhe |
+| snapshots / registros históricos | `HISTORY_OR_EVIDENCE_REVIEW` | não reescrever automaticamente |
 
-Para todos eles, a leitura vigente é:
+Conclusão:
 
-```text
-Possibility, lived.      = assinatura institucional global da Guivos
-Possibilidade, vivida.   = versão institucional oficial em português
-#PossibilityLived        = hashtag institucional global da Guivos
-Do possível ao vivido.   = assinatura pessoal e autoral do fundador
-```
+> **A função Home/Public Canon desta propagation já foi materialmente absorvida nas autoridades atuais, mas o arquivo permanece temporariamente porque ainda protege a reconciliação de resíduos especializados.**
 
-Nenhum derivado pode reclassificar `Do possível ao vivido.` como ativo institucional sem nova autoridade temática posterior.
+---
 
 ## 6. Public Canon
 
-O Public Canon deve preservar somente os três ativos institucionais da Guivos:
+O Public Canon vigente preserva os ativos institucionais da Guivos:
 
 ```text
 Possibility, lived.
@@ -144,30 +167,32 @@ Possibilidade, vivida.
 
 A presença pública do fundador pode ser explicada institucionalmente quando pertinente, mas sua assinatura pessoal não integra a assinatura institucional da Guivos.
 
-Formulação pública de referência:
+Formulação pública de referência preservada:
 
 > **Guilherme Oliveira é o fundador e a principal referência humana pública inicial da Guivos. `Do possível ao vivido.` pertence à sua identidade pessoal e autoral e não constitui uma segunda assinatura ou linha narrativa institucional da Guivos.**
 
 A bio pessoal do fundador e Lucas 2:52 são governados pela autoridade própria do fundador e não precisam ser reproduzidos no Guia Oficial da Guivos para serem válidos.
 
-## 7. Home Pública — correção da Hero
+---
 
-A seção `5.4 Assinatura complementar` de `GKR-UX-HOME-MASTER-001`, quando lida no estado anterior, atribuía `Do possível ao vivido.` à Hero institucional.
+## 7. Home Pública — Hero
 
-Essa atribuição está superseded.
+O master anterior atribuía `Do possível ao vivido.` à Hero institucional como assinatura complementar. Essa atribuição está superada e foi **absorvida diretamente** em `GKR-UX-HOME-MASTER-001 v1.0.0`.
 
 Regra vigente:
 
 ```text
 HERO DA GUIVOS
-→ não utiliza Do possível ao vivido. como assinatura complementar institucional
+→ NÃO utiliza Do possível ao vivido. como assinatura complementar institucional
 ```
 
-A assinatura institucional da Guivos, quando utilizada na Home, deve obedecer exclusivamente `GKR-BRAND-SIGNATURE-001`.
+A assinatura institucional da Guivos, quando utilizada na Home, obedece exclusivamente `GKR-BRAND-SIGNATURE-001`.
 
 Nenhuma segunda assinatura é necessária para preservar a arquitetura da Hero.
 
-A pergunta-mãe, a amplitude, a concretização do papel da Guivos e os demais contratos da Hero permanecem intactos.
+A pergunta-mãe, a amplitude, a concretização do papel da Guivos e os demais contratos válidos da Hero permanecem preservados no master atual.
+
+---
 
 ## 8. Home Pública — Movimento 06
 
@@ -177,15 +202,15 @@ O rótulo anterior:
 Movimento 06 — Do Possível ao Vivido
 ```
 
-fica superseded exclusivamente como **nome do movimento**.
+está superado exclusivamente como **nome do movimento**.
 
-O rótulo vigente passa a ser:
+O rótulo vigente, já absorvido no master, é:
 
 ```text
 Movimento 06 — Da Possibilidade à Experiência
 ```
 
-A função estratégica permanece inalterada:
+A função estratégica permanece:
 
 ```text
 POSSIBILIDADE
@@ -194,7 +219,7 @@ POSSIBILIDADE
 → NOVO CONTEXTO
 ```
 
-O Movimento 06 continua demonstrando que valor não termina em descoberta, clique ou recomendação e que uma possibilidade relevante pode sair da abstração e tornar-se experiência real pela agência do participante.
+O Movimento 06 demonstra que uma Possibilidade pode, pela agência do participante, tornar-se Experiência. A hierarquia fundacional posterior também exige preservar que nem toda Possibilidade precisa se materializar como Oportunidade externa e que experiência não prova causalidade da Guivos.
 
 ```text
 MUDANÇA DE RÓTULO
@@ -204,6 +229,8 @@ MUDANÇA DE RÓTULO
 ≠ NOVA HOME
 ```
 
+---
+
 ## 9. Macroexperiência 04
 
 O nome anterior:
@@ -212,7 +239,7 @@ O nome anterior:
 Do Possível ao Vivido + Pertencimento
 ```
 
-fica superseded como rótulo.
+está superado como rótulo.
 
 A leitura vigente é:
 
@@ -222,11 +249,13 @@ Da Possibilidade à Experiência + Pertencimento
 
 A função continua sendo:
 
-> **ver uma possibilidade tornar-se experiência e perceber quem faz acontecer.**
+> **ver uma Possibilidade poder tornar-se Experiência e perceber quem participa daquilo que a torna possível.**
+
+---
 
 ## 10. Referências internas equivalentes
 
-Em documentos da Home, as seguintes substituições são semânticas de leitura corrente:
+Em documentos correntes da Home que ainda não passaram pela reconciliação textual, as seguintes substituições refletem a leitura vigente:
 
 ```text
 Do Possível ao Vivido
@@ -244,6 +273,10 @@ VIVIDO + PERTENCIMENTO
 
 Expressões descritivas como `passagem da possibilidade para a experiência`, `possibilidade se torna experiência` ou equivalentes permanecem válidas e não pertencem exclusivamente ao fundador.
 
+A limpeza textual desses resíduos não deve apagar diagramas, exemplos, contratos narrativos, critérios ou demais conhecimentos únicos do documento em que aparecem.
+
+---
+
 ## 11. Documentos históricos
 
 Registros históricos, PRs, changelogs, snapshots e documentos que descrevem corretamente o estado vigente à época não precisam ser reescritos para apagar a formulação anterior.
@@ -257,6 +290,8 @@ PRESERVAR HISTÓRICO
 ```
 
 Quando necessário, um histórico pode continuar registrando que `Do possível ao vivido.` já foi tratado como bordão ou linha narrativa da Guivos antes da autoridade posterior.
+
+---
 
 ## 12. Instagram Guivos v1
 
@@ -279,6 +314,8 @@ Portanto, a arquitetura dos três perfis Guivos v1 permanece válida e não é r
 
 A futura implantação de perfil pessoal do fundador constitui gate separado.
 
+---
+
 ## 13. Filing e proteção marcária
 
 Esta reconciliação não altera:
@@ -293,21 +330,27 @@ Esta reconciliação não altera:
 
 `Do possível ao vivido.` não integra o pacote institucional de filing atualmente preparado.
 
+---
+
 ## 14. Estado resultante
 
 ```text
 founder_public_authority = active
-founder_public_authority_propagation = active
+founder_public_authority_propagation = transitional_non_normative
 founder_personal_signature = Do possível ao vivido.
 brand_global_signature = Possibility, lived.
 brand_pt_signature = Possibilidade, vivida.
 brand_global_hashtag = #PossibilityLived
 founder_bio_biblical_reference = Lucas 2:52
+home_master_brand_correction = absorbed
 home_movement_06_label = Da Possibilidade à Experiência
 home_movement_06_function = preserved
 public_canon_old_founder_phrase_attribution = superseded
 historical_occurrences = preserved_as_history
+specialized_home_residuals = reconciliation_pending
 ```
+
+---
 
 ## 15. Invariantes
 
@@ -322,19 +365,50 @@ LUCAS 2:52 NA BIO DO FUNDADOR ≠ PUBLIC CANON RELIGIOSO AUTOMÁTICO
 MUDANÇA DE RÓTULO DO MOVIMENTO 06 ≠ MUDANÇA DE SEMÂNTICA
 HISTÓRICO ≠ ESTADO CORRENTE
 RESÍDUO TEXTUAL ≠ AUTORIDADE
+PROPAGATION ≠ NOVA AUTORIDADE PRIMÁRIA
+ABSORÇÃO ≠ PERDA DE CONHECIMENTO
 ```
 
-## 16. Próximos gates
+---
 
-Após esta reconciliação, permanecem separados:
+## 16. Gate de eventual remoção desta propagation
 
-1. limpeza mecânica opcional de resíduos textuais em derivados extensos, sem nova decisão semântica;
-2. eventual atualização material de snapshots externos de Design, se uma nova emissão for necessária;
-3. implantação real do perfil pessoal do fundador;
-4. definição final da composição material da bio conforme limites do Instagram;
-5. produção e publicação de conteúdo;
-6. qualquer mudança de Design, UX, produto ou implementação.
+Este arquivo somente poderá ser removido do corpus vigente quando todos os testes abaixo forem satisfeitos:
 
-A exposição direta da autoridade do fundador na navegação principal do GKR integra esta própria frente de propagação e não constitui gate posterior.
+- [ ] `GKR-BRAND-PUBLIC-AUTHORITY-001` e `GKR-BRAND-SIGNATURE-001` permanecem autoridades diretas e suficientes;
+- [ ] Public Canon não depende desta propagation para ser interpretado corretamente;
+- [ ] Home master não depende desta propagation para Hero ou Movimento 06;
+- [ ] documentos narrativos correntes da Home foram reconciliados;
+- [ ] nenhum documento corrente usa esta propagation como única correção de um resíduo textual;
+- [ ] snapshots/históricos foram classificados sem apagar evidência legítima;
+- [ ] links e dependências foram reconciliados;
+- [ ] conteúdo único deste arquivo foi absorvido em autoridade apropriada ou classificado como evidência dispensável no corpus atual;
+- [ ] validação semântica e mecânica confirmam a remoção futura.
 
-Nenhum dos demais gates é iniciado automaticamente por este documento.
+Até lá:
+
+```text
+PROPAGATION
+→ KEEP TEMPORARILY
+→ NON-NORMATIVE
+→ PARTIALLY ABSORBED
+→ CANDIDATE FOR REMOVE_AFTER_ABSORPTION
+```
+
+Nenhuma remoção é autorizada por esta versão.
+
+---
+
+## 17. Próximos gates
+
+Permanecem separados:
+
+1. reconciliação textual dos documentos especializados correntes da Home;
+2. classificação de snapshots e registros históricos;
+3. eventual remoção desta propagation somente depois do gate da seção 16;
+4. implantação real do perfil pessoal do fundador;
+5. definição final da composição material da bio conforme limites do Instagram;
+6. produção e publicação de conteúdo;
+7. qualquer retomada de Design, UX, produto ou implementação.
+
+Nenhum desses gates é iniciado automaticamente por este documento.
