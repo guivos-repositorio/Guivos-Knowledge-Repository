@@ -2,11 +2,12 @@
 id: GKR-UX-HOME-VAL-001
 title: Consolidação Validada da Hero e da Narrativa da Home Pública
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-28
 parent: GKR-UX-HOME-001
 depends_on:
+  - GKR-UX-HOME-MASTER-001
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-001
@@ -19,17 +20,18 @@ depends_on:
 related:
   - GKR-UX-HOME-BENCH-001
 normative: false
+maturity: reconciled_message_narrative_detail_pre_materialization
 ---
 
 # Consolidação Validada da Hero e da Narrativa da Home Pública
 
 ## 1. Finalidade
 
-Este documento registra a **consolidação conceitualmente validada** da mensagem da Hero e da narrativa institucional da Home pública de `guivos.com`, resultante do refinamento realizado em 09/08/2026.
+Este documento registra a **consolidação conceitualmente validada** da mensagem da Hero e da narrativa institucional da Home pública de `guivos.com`, resultante do refinamento iniciado em 09/08/2026 e reconciliado, nesta versão, com `GKR-UX-HOME-MASTER-001 v1.0.0`.
 
-Ele não substitui as autoridades funcionais da Home pública e não cria design, tela, wireframe, SVG, protótipo, componente ou implementação.
+Ele não substitui a autoridade de consumo vigente do Master nem as autoridades funcionais da Home pública e não cria design, tela, wireframe, SVG, protótipo, componente ou implementação.
 
-Seu papel é estreitar o espaço de decisão aberto por `GKR-UX-HOME-001` e registrar quais conceitos passaram de hipótese de exploração para **direção conceitual aceita nesta frente**.
+Seu papel é estreitar o espaço de decisão aberto por `GKR-UX-HOME-001` e registrar quais conceitos passaram de hipótese de exploração para **direção conceitual aceita nesta frente**, preservando as reconciliações posteriores já consolidadas no Master.
 
 A validação registrada aqui é de **mensagem e narrativa**.
 
@@ -51,13 +53,13 @@ Ela não significa:
 
 Estado desta consolidação:
 
-> **VALIDADA CONCEITUALMENTE PARA CONTINUIDADE DA FRENTE DE MENSAGEM DA HOME.**
+> **VALIDADA CONCEITUALMENTE E RECONCILIADA COM O MASTER VIGENTE PARA CONTINUIDADE DA FRENTE DE MENSAGEM DA HOME.**
 
-A pergunta-mãe passa a ser tratada como **direção principal** da Hero nesta frente:
+A pergunta-mãe continua tratada como **direção principal** da Hero nesta frente:
 
 > **O que se torna possível quando você entra aqui?**
 
-As formulações anteriores permanecem preservadas como histórico de exploração e repertório auxiliar, mas deixam de ter o mesmo peso decisório desta pergunta.
+As formulações anteriores permanecem preservadas como histórico de exploração e repertório auxiliar quando não conflitarem com autoridades posteriores, mas deixam de ter o mesmo peso decisório desta pergunta e do Master vigente.
 
 A redação pública final ainda deverá passar por validação de linguagem, tradução, compreensão e adequação à implementação futura.
 
@@ -69,9 +71,9 @@ A Home não deve começar pela estrutura interna da Guivos.
 
 Ela deve começar pela ampliação do horizonte de quem chegou.
 
-A tese central validada é:
+A tese central reconciliada é:
 
-> **Entrar na Guivos deve ser percebido como entrar em um ecossistema capaz de ampliar o campo de possibilidades ao redor de uma Pessoa, Organização ou Coletivo, conectando elementos que normalmente existem de forma dispersa e tornando novos caminhos mais visíveis, acessíveis e possíveis, sem retirar de cada participante a autonomia sobre o caminho a seguir.**
+> **Entrar na Guivos deve ser percebido como entrar em um ecossistema capaz de ampliar o campo de Possibilidades ao redor da Pessoa, conectando participantes, conhecimento, caminhos e experiências que normalmente existem de forma dispersa e aproximando Oportunidades reais quando fizerem sentido, sem retirar da Pessoa a autonomia sobre o caminho a seguir.**
 
 A Guivos não é apresentada como autora da transformação humana.
 
@@ -79,10 +81,11 @@ A Guivos:
 
 - amplia horizonte;
 - organiza contexto;
-- conecta possibilidades;
+- conecta Possibilidades;
 - aproxima participantes;
 - torna relações e caminhos mais visíveis;
-- pode apoiar a passagem da possibilidade para a experiência;
+- pode aproximar Oportunidades reais quando houver materialização externa legítima e fizerem sentido;
+- pode apoiar a passagem de uma Possibilidade à Experiência sem prometer resultado;
 - preserva a decisão com o participante.
 
 ---
@@ -139,7 +142,7 @@ Ela também evita reduzir a Guivos a:
 
 Conceitualmente significa:
 
-> **entrar no universo Guivos e passar a ter contato com um contexto mais amplo de Pessoas, Organizações, Coletivos, conhecimento, oportunidades, experiências e caminhos possíveis.**
+> **entrar no universo Guivos e passar a ter contato com um contexto mais amplo de Pessoas, Organizações, Coletivos, conhecimento, caminhos, Possibilidades e experiências, além de Oportunidades reais quando existirem e fizerem sentido.**
 
 ---
 
@@ -162,7 +165,7 @@ Pode incluir, conforme maturidade e disponibilidade real:
 - Organizações;
 - Coletivos;
 - experiências;
-- oportunidades;
+- Oportunidades reais, quando disponíveis;
 - movimentos;
 - formas de contribuir;
 - caminhos antes desconhecidos ou desconectados.
@@ -181,19 +184,20 @@ A percepção desejada é:
 
 ## 6. Terceira camada — concretização da Guivos
 
-A formulação de trabalho mais madura até este ponto é:
+A formulação de trabalho reconciliada é:
 
-> **A Guivos conecta pessoas, organizações, conhecimento, oportunidades e experiências para tornar novos caminhos mais visíveis e possíveis.**
+> **A Guivos conecta Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências para tornar novas Possibilidades mais visíveis e aproximar Oportunidades reais quando elas fizerem sentido.**
 
 Esta formulação ainda pode ser lapidada como copy final.
 
-Sua função conceitual, porém, está validada: a terceira camada precisa explicar **o mecanismo da Guivos** sem quebrar a força da pergunta e da ampliação emocional.
+Sua função conceitual, porém, está validada: a terceira camada precisa explicar **o papel da Guivos** sem quebrar a força da pergunta e da ampliação emocional e sem confundir Possibilidade com Oportunidade.
 
 Ela deve responder:
 
-- por que novas possibilidades aparecem;
+- por que novas Possibilidades podem se tornar mais visíveis;
 - qual papel a Guivos desempenha;
 - por que a Guivos é ecossistema e não catálogo;
+- quando uma Oportunidade pode ser legitimamente aproximada;
 - por que a experiência não é apenas inspiração abstrata.
 
 ---
@@ -212,7 +216,7 @@ A estrutura conceitual consolidada é:
 
 ### Camada 3 — concretização
 
-> **A Guivos conecta pessoas, organizações, conhecimento, oportunidades e experiências para tornar novos caminhos mais visíveis e possíveis.**
+> **A Guivos conecta Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências para tornar novas Possibilidades mais visíveis e aproximar Oportunidades reais quando elas fizerem sentido.**
 
 Esta estrutura é semântica.
 
@@ -230,36 +234,39 @@ Ela não define:
 
 ---
 
-## 8. Assinatura narrativa complementar
+## 8. Reconciliação de assinatura e do Movimento 06
 
 A expressão:
 
 > **Do possível ao vivido.**
 
-permanece validada como forte **assinatura narrativa complementar**.
+não permanece como assinatura narrativa complementar da Home nem como segunda assinatura institucional da Guivos.
 
-Ela não precisa disputar com a pergunta-mãe o papel de headline principal.
+A autoridade de Marca vigente estabelece:
 
-Seu território natural é:
+> **Possibility, lived.**
 
-- histórias reais;
-- Guivos Media;
-- experiências;
-- documentários;
-- séries editoriais;
-- prova de transformação;
-- narrativa longitudinal;
-- passagem de oportunidade para experiência.
+com formulação oficial em português:
 
-Ela expressa um princípio já presente na Fundação:
+> **Possibilidade, vivida.**
+
+Na arquitetura narrativa da Home, a função anteriormente associada a `Do possível ao vivido` passa a ser expressa pelo:
+
+> **Movimento 06 — Da Possibilidade à Experiência.**
+
+Seu princípio de referência é:
 
 ```text
-possibilidade percebida
-→ oportunidade considerada
-→ escolha
-→ experiência vivida
-→ novo contexto
+POSSIBILIDADE
+→ MECANISMO
+→ OPORTUNIDADE REAL, quando existe materialização externa legítima
+→ ESCOLHA
+→ EXPERIÊNCIA
+→ CONTRIBUIÇÃO / APRENDIZADO
+→ NOVO MOMENTO
 ```
+
+Essa sequência não é funil obrigatório. Nem toda Possibilidade exige Oportunidade externa, Possibilidade e Oportunidade não são sinônimos e Experiência não significa resultado garantido.
 
 ---
 
@@ -289,7 +296,8 @@ Está em reduzir fragmentação entre:
 - Organizações;
 - Coletivos;
 - conhecimento;
-- oportunidades;
+- Possibilidades;
+- Oportunidades reais, quando existirem;
 - experiências;
 - conteúdos;
 - relações;
@@ -384,16 +392,16 @@ Estas formulações devem ser usadas como instrumentos de consistência, não co
 
 ## 13. Cadeia conceitual validada
 
-A progressão central passa a ser:
+A progressão perceptiva central reconciliada é:
 
 ```text
 ENTRAR
 → AMPLIAR
 → DESCOBRIR
-→ CONECTAR
+→ COMPREENDER / CONECTAR
 → ESCOLHER
 → EXPERIMENTAR
-→ EVOLUIR
+→ APRENDER / EVOLUIR
 ```
 
 ### ENTRAR
@@ -406,9 +414,9 @@ Perceber um campo maior de possibilidades.
 
 ### DESCOBRIR
 
-Encontrar pessoas, conhecimento, oportunidades, histórias, experiências ou caminhos antes desconhecidos.
+Encontrar pessoas, conhecimento, Possibilidades, Oportunidades reais quando existirem, histórias, experiências ou caminhos antes desconhecidos.
 
-### CONECTAR
+### COMPREENDER / CONECTAR
 
 Compreender relações e acessar contextos antes dispersos.
 
@@ -418,11 +426,11 @@ Preservar autonomia sobre o que explorar ou seguir.
 
 ### EXPERIMENTAR
 
-Permitir que algumas possibilidades possam se tornar experiências reais.
+Permitir que algumas Possibilidades possam chegar a experiências reais por diferentes Mecanismos e, quando houver, Oportunidades legítimas, sem garantia de resultado.
 
-### EVOLUIR
+### APRENDER / EVOLUIR
 
-Chegar a um novo momento sem impor uma definição única de sucesso.
+Chegar a novos aprendizados ou a um novo momento sem impor uma definição única de sucesso.
 
 ---
 
@@ -449,9 +457,10 @@ A cadeia associada é:
 ```text
 AMPLIAR O MUNDO
 → DESCOBRIR
+→ COMPREENDER / CONECTAR
 → ESCOLHER
 → EXPERIMENTAR
-→ EVOLUIR
+→ APRENDER / EVOLUIR
 ```
 
 ---
@@ -548,23 +557,27 @@ Exemplos de fragmentação:
 - conhecimento não chega no momento em que poderia ser útil;
 - experiências permanecem restritas a quem já sabe onde encontrá-las;
 - Coletivos existem fora do campo de visão de muitos participantes;
-- oportunidades não são compreendidas dentro de um contexto maior.
+- Oportunidades reais não são compreendidas dentro de um contexto maior.
 
 Só então a frase “a Guivos conecta esse universo” ganha substância.
 
-### 17.5 Mostrar “Do possível ao vivido”
+### 17.5 Mostrar Da Possibilidade à Experiência
 
-A narrativa deve demonstrar que descobrir uma possibilidade é apenas o começo.
+A narrativa deve demonstrar que descobrir uma Possibilidade é apenas o começo.
 
 Uma história pode representar:
 
 ```text
 antes
-→ descoberta
-→ decisão
+→ Possibilidade
+→ Mecanismo
+→ Oportunidade real, quando houver materialização externa legítima
+→ escolha
 → experiência
 → depois
 ```
+
+Essa estrutura não é obrigatória em todos os episódios e não pressupõe que toda Possibilidade precise de Oportunidade externa.
 
 A Guivos deve preservar causalidade correta e não atribuir exclusivamente a si resultados produzidos por múltiplos agentes.
 
@@ -583,9 +596,11 @@ A percepção desejada é:
 
 > **“Eu não estou entrando apenas em uma plataforma. Estou entrando em um ecossistema vivo.”**
 
-### 17.7 Revelar os produtos depois da ideia
+### 17.7 Revelar os Produtos Especializados depois da ideia
 
-Journey, Media, Travel, Mall e outras manifestações do ecossistema devem aparecer depois que a tese já estiver compreendida.
+Os sete Produtos Especializados — Journey, Travel, Mall, Business, Media, Ads e Intelligence — devem aparecer somente depois que a tese já estiver compreendida.
+
+Eles possuem responsabilidades distintas dentro de uma única Guivos. Intelligence é Produto Especializado transversal; sua transversalidade não o transforma em uma classe estrutural externa aos demais Produtos Especializados. Organização não é sinônimo de Business.
 
 A lógica é:
 
@@ -662,8 +677,8 @@ A Guivos conecta esse universo.
 
 ↓
 
-EXPERIÊNCIA
-Algumas possibilidades podem passar do possível ao vivido.
+DA POSSIBILIDADE À EXPERIÊNCIA
+Uma Possibilidade pode chegar à vida real por diferentes Mecanismos e, quando houver, Oportunidades reais, sempre por escolha e sem resultado garantido.
 
 ↓
 
@@ -673,7 +688,7 @@ Pessoas, Organizações e Coletivos fazem o ecossistema acontecer.
 ↓
 
 ECOSSISTEMA
-Os produtos revelam diferentes formas pelas quais essas conexões podem acontecer.
+Produtos Especializados cumprem responsabilidades distintas dentro de uma única Guivos.
 
 ↓
 
@@ -745,7 +760,7 @@ A integração técnica não é autorizada por este documento.
 
 ## 21. Autoridade longitudinal
 
-Uma oportunidade específica de diferenciação é mostrar não apenas o momento de descoberta, mas **o que aconteceu depois**.
+Uma possibilidade específica de diferenciação é mostrar não apenas o momento de descoberta, mas **o que aconteceu depois**.
 
 Exemplos conceituais:
 
@@ -869,7 +884,7 @@ Regra:
 
 Após contato breve com a Home, uma pessoa deveria ser capaz de concluir algo próximo de:
 
-> “A Guivos é um ecossistema que pode ampliar o que eu consigo descobrir e conectar, mostrando possibilidades, pessoas, organizações, conhecimento e experiências que podem fazer sentido para diferentes momentos, mas a escolha continua sendo minha.”
+> “A Guivos é um ecossistema que pode ampliar o que eu consigo descobrir e conectar, mostrando Possibilidades, Pessoas, Organizações, Coletivos, conhecimento e experiências que podem fazer sentido para diferentes momentos e aproximando Oportunidades reais quando existirem, mas a escolha continua sendo minha.”
 
 Falhas importantes incluem interpretações como:
 
@@ -909,30 +924,30 @@ A consolidação conceitual está validada, mas a copy final ainda exige:
 - do possível ao vivido;
 - autonomia e futuro.
 
-Esta consolidação não descarta esses territórios.
+Esta consolidação preserva essas formulações como **histórico de exploração**, sem lhes atribuir autoridade vigente quando conflitarem com reconciliações posteriores.
 
-Ela os reorganiza sob uma direção principal:
+A direção principal permanece:
 
 > **“O que se torna possível quando você entra aqui?”**
 
-E distribui os demais conceitos como funções de suporte:
+E os territórios anteriores se relacionam assim com o estado atual:
 
-| Conceito anterior | Função após consolidação |
+| Conceito anterior | Função após reconciliação |
 |---|---|
 | Possibilidade primeiro | núcleo da pergunta-mãe |
 | Momento → próximo passo | lógica estrutural da jornada |
-| Do possível ao vivido | assinatura de experiência e prova |
+| Do possível ao vivido | direção histórica reexpressa no Movimento 06 — Da Possibilidade à Experiência; não é assinatura complementar da Home |
 | Autonomia e futuro | princípio de confiança e limite |
 
 ---
 
 ## 30. Síntese final validada
 
-A Home pública da Guivos deve fazer a pessoa perceber que **entrar na Guivos pode ampliar o mundo de possibilidades ao seu redor**.
+A Home pública da Guivos deve fazer a pessoa perceber que **entrar na Guivos pode ampliar o mundo de Possibilidades ao seu redor**.
 
-A Home deve demonstrar que esse mundo é formado por Pessoas, Organizações, Coletivos, conhecimento, oportunidades, experiências, histórias e relações reais.
+A Home deve demonstrar que esse mundo é formado por Pessoas, Organizações, Coletivos, conhecimento, caminhos, experiências, histórias e relações reais e que Oportunidades reais podem ser aproximadas quando existirem e fizerem sentido.
 
-Ela deve mostrar que possibilidades normalmente dispersas podem se tornar mais visíveis e conectadas.
+Ela deve mostrar que Possibilidades normalmente dispersas podem se tornar mais visíveis e conectadas sem serem confundidas com Oportunidades.
 
 Ela deve demonstrar realidade antes de autodeclarar autoridade.
 
@@ -940,18 +955,16 @@ Ela deve preservar a autonomia de cada participante.
 
 Ela deve permitir que a pessoa queira descobrir antes de exigir que ela escolha um produto.
 
-A síntese de trabalho permanece:
+A síntese de trabalho reconciliada é:
 
 > **O que se torna possível quando você entra aqui?**
 >
 > **Um mundo maior de possibilidades passa a fazer parte do seu.**
 >
-> **A Guivos conecta pessoas, organizações, conhecimento, oportunidades e experiências para tornar novos caminhos mais visíveis e possíveis.**
+> **A Guivos conecta Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências para tornar novas Possibilidades mais visíveis e aproximar Oportunidades reais quando elas fizerem sentido.**
 
-E a assinatura narrativa complementar permanece:
+O Movimento 06 é **Da Possibilidade à Experiência** e não cria uma segunda assinatura institucional para a Home.
 
-> **Do possível ao vivido.**
-
-A formulação interna que resume o norte desta frente é:
+A formulação interna que resume o norte desta frente permanece:
 
 > **A Home da Guivos não deve explicar um ecossistema para depois mostrar possibilidades. Deve mostrar possibilidades até que a pessoa naturalmente compreenda por que esse ecossistema precisa existir.**
