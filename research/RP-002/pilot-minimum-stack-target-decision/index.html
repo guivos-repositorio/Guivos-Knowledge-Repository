@@ -12281,10 +12281,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-arquitetura-alvo-aprovada" class="md-nav__link">
+  <a href="#3-arquitetura-alvo-reconciliada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Arquitetura-alvo aprovada
+        3. Arquitetura-alvo reconciliada
       
     </span>
   </a>
@@ -12325,15 +12325,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-componentes-que-permanecem-nao-aprovados" class="md-nav__link">
+  <a href="#7-estado-dos-componentes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. Componentes que permanecem não aprovados
+        7. Estado dos componentes
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="7. Componentes que permanecem não aprovados">
+    <nav class="md-nav" aria-label="7. Estado dos componentes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -12485,10 +12485,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-o-que-esta-decisao-fecha" class="md-nav__link">
+  <a href="#9-o-que-ja-esta-fechado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. O que esta decisão fecha
+        9. O que já está fechado
       
     </span>
   </a>
@@ -12496,10 +12496,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#10-o-que-esta-decisao-nao-fecha" class="md-nav__link">
+  <a href="#10-o-que-permanece-vedado-inferir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10. O que esta decisão não fecha
+        10. O que permanece vedado inferir
       
     </span>
   </a>
@@ -12579,11 +12579,10 @@
 
 <h1 id="piloto-decisao-da-arquitetura-alvo-do-primeiro-dry-run">Piloto — Decisão da Arquitetura-Alvo do Primeiro Dry Run<a class="headerlink" href="#piloto-decisao-da-arquitetura-alvo-do-primeiro-dry-run" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este documento registra a decisão operacional sobre qual arquitetura deverá orientar a preparação do primeiro Dry Run Real <code>N=1</code> do <code>RP-002</code>.</p>
-<p>Ele fecha somente a decisão de <strong>arquitetura-alvo</strong>.</p>
-<p>Não configura ferramentas, não aprova operadores por inferência e não libera a entrada de Pessoa real.</p>
+<p>Este documento registra a decisão operacional sobre qual arquitetura orienta a preparação do primeiro Dry Run Real <code>N=1</code> do <code>RP-002</code> e mantém o estado reconciliado dos componentes já configurados.</p>
+<p>A arquitetura-alvo permanece a <strong>Option A — Local Privacy-First</strong>.</p>
+<p>O fechamento de um componente não aprova por inferência os demais nem libera Pessoa real.</p>
 <h2 id="2-decisao">2. Decisão<a class="headerlink" href="#2-decisao" title="Permanent link">&para;</a></h2>
-<p>Fica aprovada como arquitetura-alvo do primeiro Dry Run Real do <code>RP-002</code>:</p>
 <div class="highlight"><pre><span></span><code>TARGET ARCHITECTURE
 → OPTION A — LOCAL PRIVACY-FIRST
 
@@ -12591,7 +12590,7 @@ DECISION STATUS
 → APPROVED AS TARGET
 
 OPERATIONAL STACK
-→ NOT YET APPROVED
+→ PARTIALLY CONFIGURED / NOT YET APPROVED
 
 PARTICIPANT 001
 → HOLD
@@ -12599,29 +12598,34 @@ PARTICIPANT 001
 DRY RUN REAL
 → NOT RELEASED
 </code></pre></div>
-<p>A decisão adota a recomendação materializada em <code>RP-002-PILOT-STACK-PROP-001</code>.</p>
-<p>A aprovação é deliberadamente restrita à arquitetura-alvo.</p>
-<p>Ela não converte qualquer componente candidato em <code>PASS</code>.</p>
-<h2 id="3-arquitetura-alvo-aprovada">3. Arquitetura-alvo aprovada<a class="headerlink" href="#3-arquitetura-alvo-aprovada" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>RECRUTAMENTO / NOTICE / CONSENTIMENTO
-→ mailbox dedicada de Research sob @guivos.com
-→ Hostinger Mail como operador candidato já conhecido
-→ endereço final ainda a provisionar e testar
+<p>A decisão continua baseada em <code>RP-002-PILOT-STACK-PROP-001</code>.</p>
+<h2 id="3-arquitetura-alvo-reconciliada">3. Arquitetura-alvo reconciliada<a class="headerlink" href="#3-arquitetura-alvo-reconciliada" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>RECRUTAMENTO / OPERAÇÃO DE RESEARCH
+→ research@guivos.com
+→ Hostinger Mail
+→ A1 RESEARCH MAILBOX = PASS
+
+NOTICE / CONSENTIMENTO
+→ versioned email trail
+→ final flow ainda não congelado
 
 IDENTITY VAULT
 → armazenamento local criptografado A
 → dedicado
 → sem cloud sync por padrão
+→ ainda não configurado
 
 RESEARCH BASE
 → armazenamento local criptografado B
 → materialmente separado do Identity Vault
 → pseudonimizado
 → sem identidade direta por padrão
+→ ainda não configurado
 
 LINKAGE KEY
 → separada da Research Base
 → acesso mais restrito
+→ ainda não configurada
 
 IA
 → OpenAI API dedicada à Guivos / RP-002
@@ -12639,9 +12643,11 @@ PRIVACIDADE / DIREITOS
 → privacidade@guivos.com
 → privacy@guivos.com
 → Hostinger Mail
+→ P2B = PASS
+→ P2C = PASS
 </code></pre></div>
 <h2 id="4-razoes-da-decisao">4. Razões da decisão<a class="headerlink" href="#4-razoes-da-decisao" title="Permanent link">&para;</a></h2>
-<p>A Opção A é aprovada para <code>N=1</code> porque é a arquitetura que melhor preserva, no estágio atual:</p>
+<p>A Opção A permanece aprovada para <code>N=1</code> porque preserva:</p>
 <ol>
 <li>minimização de dados;</li>
 <li>separação material entre identidade e pesquisa;</li>
@@ -12654,17 +12660,16 @@ PRIVACIDADE / DIREITOS
 <li>aderência ao <code>RP-002-PILOT-DATA-LAW-001</code>;</li>
 <li>manutenção explícita dos blockers ainda não comprovados.</li>
 </ol>
-<p>Para o primeiro Dry Run, a prioridade não é escalabilidade tecnológica.</p>
-<p>A prioridade é provar o método com uma superfície de dados proporcional, rastreável e reversível.</p>
+<p>Para o primeiro Dry Run, a prioridade continua sendo provar o método com uma superfície de dados proporcional, rastreável e reversível.</p>
 <h2 id="5-relacao-com-o-rp-002-pilot-op-001">5. Relação com o RP-002-PILOT-OP-001<a class="headerlink" href="#5-relacao-com-o-rp-002-pilot-op-001" title="Permanent link">&para;</a></h2>
-<p>A decisão é compatível com a arquitetura operacional já vigente, que exige:</p>
+<p>A arquitetura operacional vigente exige:</p>
 <div class="highlight"><pre><span></span><code>IDENTITY VAULT
 +
 RESEARCH BASE PSEUDONIMIZADA
 +
 LINKAGE KEY MAIS RESTRITA
 </code></pre></div>
-<p>Também preserva as regras de:</p>
+<p>Também permanecem as regras de:</p>
 <ul>
 <li>mínimo privilégio;</li>
 <li>ausência de identificadores diretos na Research Base por padrão;</li>
@@ -12674,7 +12679,6 @@ LINKAGE KEY MAIS RESTRITA
 <li><code>Participant 001</code> em <code>HOLD</code> até fechamento dos gates críticos.</li>
 </ul>
 <h2 id="6-relacao-com-p3-e-p4">6. Relação com P3 e P4<a class="headerlink" href="#6-relacao-com-p3-e-p4" title="Permanent link">&para;</a></h2>
-<p>Esta decisão não altera automaticamente os gates jurídicos e de privacidade.</p>
 <p>Estado preservado:</p>
 <div class="highlight"><pre><span></span><code>P3-A — FINALIDADES
 → PASS DOCUMENTAL
@@ -12694,24 +12698,35 @@ P3
 P4
 → HOLD
 </code></pre></div>
-<p>A arquitetura escolhida reduz ambiguidade sobre o desenho pretendido, mas <code>P3-C</code>, <code>P3-D</code> e <code>P4</code> dependem de fatos operacionais que ainda precisam ser materialmente comprovados.</p>
-<h2 id="7-componentes-que-permanecem-nao-aprovados">7. Componentes que permanecem não aprovados<a class="headerlink" href="#7-componentes-que-permanecem-nao-aprovados" title="Permanent link">&para;</a></h2>
+<p>O fechamento de A1 e P2C reduz blockers, mas <code>P3-C</code>, <code>P3-D</code> e <code>P4</code> dependem do conjunto efetivo do stack e da revisão final.</p>
+<h2 id="7-estado-dos-componentes">7. Estado dos componentes<a class="headerlink" href="#7-estado-dos-componentes" title="Permanent link">&para;</a></h2>
 <h3 id="a1-mailbox-de-research">A1 — Mailbox de Research<a class="headerlink" href="#a1-mailbox-de-research" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>TARGET
-→ HOSTINGER MAIL / @guivos.com
+<div class="highlight"><pre><span></span><code>ADDRESS
+→ research@guivos.com
 
-ADDRESS
-→ TBD
+OPERATOR
+→ Hostinger Mail
 
 PROVISIONING
-→ NOT DONE
+→ PASS
 
 END-TO-END TEST
-→ NOT DONE
+→ PASS
+
+FUNCTIONAL OWNER
+→ PASS
+
+FUNCTIONAL SEGREGATION
+→ PASS
 
 STATUS
-→ HOLD
+→ PASS
 </code></pre></div>
+<p>Evidência:</p>
+<ul>
+<li><code>RP-002-PILOT-RESEARCH-MAILBOX-DEC-001</code>;</li>
+<li><code>RP-002-PILOT-RESEARCH-MAILBOX-TEST-001</code>.</li>
+</ul>
 <h3 id="a2-fluxo-de-notice-e-consentimento">A2 — Fluxo de Notice e consentimento<a class="headerlink" href="#a2-fluxo-de-notice-e-consentimento" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>MODEL
 → VERSIONED EMAIL TRAIL
@@ -12775,7 +12790,7 @@ STATUS
 → HOLD
 </code></pre></div>
 <h3 id="a7-correction-deletion-drill">A7 — Correction / deletion drill<a class="headerlink" href="#a7-correction-deletion-drill" title="Permanent link">&para;</a></h3>
-<p>O drill sintético anterior prova a lógica do processo, mas não prova o stack operacional ainda inexistente.</p>
+<p>O drill sintético anterior prova a lógica do processo, mas não prova o stack operacional ainda incompleto.</p>
 <div class="highlight"><pre><span></span><code>SYNTHETIC LOGIC
 → PASS
 
@@ -12843,8 +12858,7 @@ STATUS
 → HOLD
 </code></pre></div>
 <h2 id="8-opcao-b">8. Opção B<a class="headerlink" href="#8-opcao-b" title="Permanent link">&para;</a></h2>
-<p>A arquitetura baseada em Google Workspace Business permanece registrada como alternativa futura de colaboração e escala.</p>
-<p>Estado:</p>
+<p>A arquitetura baseada em Google Workspace Business permanece alternativa futura de colaboração e escala.</p>
 <div class="highlight"><pre><span></span><code>OPTION B — GOOGLE WORKSPACE BUSINESS
 → SCALE OPTION
 → NOT SELECTED FOR PARTICIPANT 001
@@ -12852,38 +12866,39 @@ STATUS
 → NOT APPROVED FOR CURRENT PILOT DATA
 </code></pre></div>
 <p>A existência de Google Drive conectado não equivale a tenant empresarial aprovado para tratamento de participantes.</p>
-<h2 id="9-o-que-esta-decisao-fecha">9. O que esta decisão fecha<a class="headerlink" href="#9-o-que-esta-decisao-fecha" title="Permanent link">&para;</a></h2>
+<h2 id="9-o-que-ja-esta-fechado">9. O que já está fechado<a class="headerlink" href="#9-o-que-ja-esta-fechado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>STACK ARCHITECTURE CHOICE
 → CLOSED
 
 SELECTED TARGET
 → OPTION A — LOCAL PRIVACY-FIRST
+
+A1 — RESEARCH MAILBOX
+→ PASS
+
+P2B — PRIVACY CHANNEL
+→ PASS
+
+P2C — RIGHTS PROCESS SYNTHETIC TEST
+→ PASS
 </code></pre></div>
-<p>Portanto, não é necessário continuar comparando arquiteturas antes de iniciar a configuração material do stack do <code>Participant 001</code>.</p>
-<h2 id="10-o-que-esta-decisao-nao-fecha">10. O que esta decisão não fecha<a class="headerlink" href="#10-o-que-esta-decisao-nao-fecha" title="Permanent link">&para;</a></h2>
-<p>Permanece vedado inferir:</p>
+<h2 id="10-o-que-permanece-vedado-inferir">10. O que permanece vedado inferir<a class="headerlink" href="#10-o-que-permanece-vedado-inferir" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>TARGET APPROVED
-≠ TOOL CONFIGURED
+≠ FULL STACK CONFIGURED
 
-TARGET APPROVED
-≠ OPERATOR APPROVED
+A1 PASS
+≠ P3-C PASS
 
-TARGET APPROVED
-≠ DPA VERIFIED
+P2C PASS
+≠ FINAL LEGAL REVIEW PASS
 
-TARGET APPROVED
-≠ RETENTION APPROVED
-
-TARGET APPROVED
-≠ LEGAL BASIS FINALIZED
-
-TARGET APPROVED
+PARTIAL STACK
 ≠ PARTICIPANT RELEASED
 </code></pre></div>
 <h2 id="11-ordem-operacional-autorizada">11. Ordem operacional autorizada<a class="headerlink" href="#11-ordem-operacional-autorizada" title="Permanent link">&para;</a></h2>
-<p>A preparação do stack deve seguir esta sequência:</p>
-<div class="highlight"><pre><span></span><code>1. provisionar mailbox dedicada de Research
-2. testar recebimento, resposta e owner funcional
+<p>A preparação do stack permanece nesta sequência material:</p>
+<div class="highlight"><pre><span></span><code>1. mailbox dedicada de Research → COMPLETED / A1 PASS
+2. recebimento, resposta, owner e segregação → COMPLETED / A1 PASS
 3. configurar Identity Vault local criptografado
 4. configurar Research Base local criptografada e separada
 5. configurar separação da linkage key
@@ -12894,21 +12909,20 @@ TARGET APPROVED
 10. aprovar método/operador de Search/Web
 11. congelar prazos exatos de retenção
 12. atualizar e congelar Notice correspondente ao stack real
-13. concluir P2C
+13. P2C → COMPLETED / PASS
 14. realizar revisão jurídica/privacidade final
 15. reavaliar P3-C / P3-D / P4
 16. somente então avaliar Participant 001
 </code></pre></div>
 <p>A ordem pode ser paralelizada apenas quando isso não cria dependência circular nem promove gates sem evidência.</p>
 <h2 id="12-proximo-ato-material">12. Próximo ato material<a class="headerlink" href="#12-proximo-ato-material" title="Permanent link">&para;</a></h2>
-<p>O próximo blocker operacional passa a ser:</p>
-<div class="highlight"><pre><span></span><code>A1 — RESEARCH MAILBOX
-→ DECIDIR ENDEREÇO
-→ PROVISIONAR
-→ TESTAR END-TO-END
-→ REGISTRAR OWNER FUNCIONAL
+<p>Com <code>A1</code> encerrado, o próximo blocker material passa a ser:</p>
+<div class="highlight"><pre><span></span><code>A3 — IDENTITY VAULT
+→ CONFIGURAR ARMAZENAMENTO LOCAL CRIPTOGRAFADO
+→ VERIFICAR PERMISSÕES
+→ PRESERVAR SEM CLOUD SYNC POR PADRÃO
 </code></pre></div>
-<p>Até esse ato ser materialmente comprovado:</p>
+<p>Até a continuidade do stack:</p>
 <div class="highlight"><pre><span></span><code>P3-C
 → HOLD
 
@@ -12929,10 +12943,13 @@ DRY RUN REAL
 → PROPOSAL PRESERVED
 
 RP-002-PILOT-STACK-DEC-001
-→ APPROVED TARGET DECISION
+→ APPROVED TARGET DECISION / PARTIALLY CONFIGURED
 
 TARGET ARCHITECTURE
 → OPTION A — LOCAL PRIVACY-FIRST
+
+A1 — RESEARCH MAILBOX
+→ PASS
 
 OPERATIONAL STACK READINESS
 → HOLD
