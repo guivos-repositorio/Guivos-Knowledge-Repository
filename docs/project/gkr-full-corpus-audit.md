@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-27
 normative: false
@@ -14,22 +14,22 @@ baseline_sha: a05a54071414086456877ee4d0de59c59eefed0a
 
 ## 1. Finalidade
 
-Controlar a auditoria integral do Guivos Knowledge Repository iniciada após a expansão recente da Fundação, Marca, Produtos, Experience Architecture, Research, Organizações e Coletivos, Go-to-Market e demais autoridades.
+Controlar a auditoria integral do Guivos Knowledge Repository após a expansão recente de Fundação, Marca, Produtos, Experience Architecture, Research, Organizações e Coletivos, Go-to-Market e demais autoridades.
 
-A auditoria existe para responder, de forma demonstrável:
+A auditoria deve provar se:
 
-1. o GKR contém apenas a verdade vigente necessária?
-2. documentos antigos ainda expressam decisões superadas?
-3. documentos substituídos continuam fisicamente no corpus sem função atual?
-4. conhecimento relacionado está excessivamente fragmentado?
-5. consolidações anteriores perderam detalhes materiais?
-6. decisões recentes foram propagadas para todas as autoridades afetadas?
-7. o MENU permite uso eficiente por diferentes equipes?
-8. todas as Homes continuam coerentes com o estado atual da Guivos?
-9. registries, catálogos, diagramas, fluxos, exemplos e contagens refletem os artefatos realmente vigentes?
-10. o corpus está suficientemente íntegro para servir de baseline antes de avançar para a primeira tela autenticada da Pessoa após a Home?
+1. o GKR contém apenas a verdade vigente necessária;
+2. documentos antigos ainda expressam decisões superadas;
+3. documentos substituídos continuam fisicamente no corpus sem função atual;
+4. conhecimento relacionado está excessivamente fragmentado;
+5. consolidações anteriores perderam detalhes materiais;
+6. decisões recentes foram propagadas para todas as autoridades afetadas;
+7. o MENU permite uso eficiente por diferentes equipes;
+8. todas as Homes continuam coerentes com o estado atual da Guivos;
+9. registries, catálogos, diagramas, fluxos, exemplos e contagens refletem os artefatos realmente vigentes;
+10. o corpus está íntegro o suficiente para servir de baseline antes da primeira tela autenticada da Pessoa após a Home.
 
-## 2. Regra desta auditoria
+## 2. Regra central
 
 ```text
 GIT
@@ -43,9 +43,7 @@ GKR VIGENTE
 → nenhuma dependência de cronologia histórica
 ```
 
-Esta auditoria não pretende apagar conhecimento.
-
-Ela pretende remover **versões sem função atual** depois que todo conteúdo ainda válido estiver absorvido na autoridade correta.
+Esta auditoria não pretende apagar conhecimento. Ela remove **versões sem função atual** somente depois que todo conteúdo ainda válido estiver absorvido na autoridade correta.
 
 ```text
 LIMPEZA
@@ -59,8 +57,6 @@ EXCLUSÃO DO MAIN
 ```
 
 ## 3. Baseline inicial
-
-A auditoria foi aberta contra:
 
 ```text
 repository
@@ -84,164 +80,30 @@ agent/gkr-orgcol-authenticated-surface-map-v1
 → NÃO É AUTORIDADE
 ```
 
-Ela permanece congelada até que a auditoria determine se o mapa lógico proposto ainda é compatível com o corpus limpo.
+Ela permanece congelada até que a auditoria determine se o mapa lógico proposto continua compatível com o corpus limpo.
 
 ## 4. Escopo integral
 
-A auditoria cobre, no mínimo:
+A auditoria cobre:
 
-### 4.1 Governança do conhecimento
+- governança do conhecimento;
+- Estado Atual e Roadmap;
+- Fundação, Fundamento Cristão, Marca e Public Canon;
+- Pessoa, Organização e Coletivo;
+- Journey e Experience Architecture;
+- Mall, Travel, Business, Media, Intelligence e Ads;
+- planos, pontos, incentivos, capacidade e economia;
+- Research, VAL, RP-002, Field Kit e PMF;
+- tecnologia, dados, Grafo, Neo4j, IA e analytics;
+- jurídico, privacidade, institucional e internacionalização;
+- GTM, Instagram Guivos e Instagram do Fundador;
+- registries, catálogos, galleries, matrizes, SVGs e contagens;
+- `mkdocs.yml` e navegação;
+- todas as Homes públicas.
 
-- framework de auditoria;
-- pipeline de consolidação;
-- regras de autoridade;
-- estados documentais;
-- política de histórico;
-- critérios de remoção;
-- rastreabilidade;
-- mecanismos de baseline.
+## 5. Ações documentais
 
-### 4.2 Estado global
-
-- Estado Atual;
-- Roadmap;
-- reconciliações globais;
-- propagations;
-- checkpoints;
-- snapshots;
-- registros de integração;
-- claims de maturidade global.
-
-### 4.3 Fundação, marca e identidade pública
-
-- Fundação;
-- essência, propósito, missão e visão;
-- Fundamento Cristão;
-- sistema verbal;
-- assinatura institucional;
-- assinatura pessoal do fundador;
-- autoridade pública da Guivos;
-- autoridade pública do fundador;
-- naming;
-- proteção marcária;
-- claims públicos.
-
-### 4.4 Participantes e Experience Architecture
-
-- Pessoa;
-- Organização;
-- Coletivo;
-- relações entre participantes;
-- Domínios de Evolução;
-- jornadas;
-- superfícies;
-- transições;
-- registries;
-- catálogos;
-- galerias;
-- materializações;
-- validações;
-- gaps.
-
-### 4.5 Produtos e ecossistema
-
-- Journey;
-- Mall;
-- Travel;
-- Business;
-- Media;
-- Intelligence;
-- Ads;
-- relações entre Produtos Especializados e participantes.
-
-### 4.6 Economia
-
-- planos;
-- preços quando governados;
-- pontos;
-- capacidade;
-- entitlements;
-- cobrança;
-- Opportunity Boost;
-- monetização;
-- limites de relevância e neutralidade econômica.
-
-### 4.7 Research e Validation
-
-- VAL;
-- RP-002;
-- Field Kit;
-- PMF;
-- supply;
-- Evidence Guivos;
-- metodologia;
-- stack privacy-first;
-- registros intermediários;
-- evidências que precisam permanecer.
-
-### 4.8 Dados, tecnologia e IA
-
-- GEA;
-- Product Engineering;
-- Neo4j;
-- Grafo Global;
-- Guivos Intelligence;
-- GraphRAG;
-- modelos de IA;
-- API;
-- dados;
-- analytics;
-- Power BI;
-- privacidade por arquitetura.
-
-### 4.9 Jurídico, privacidade e institucional
-
-- P5/P6 e derivados;
-- controlador;
-- direitos;
-- privacy channels;
-- notices;
-- retenção;
-- Fundação Guivos;
-- internacionalização;
-- gates jurídicos e operacionais.
-
-### 4.10 Go-to-Market e presença pública
-
-- GTM;
-- Instagram Guivos;
-- Instagram do Fundador;
-- comunicação institucional;
-- comunicação pessoal;
-- Public Canon;
-- fronteiras entre marketing, publicidade, conteúdo e produto.
-
-### 4.11 MENU e navegação
-
-- `mkdocs.yml`;
-- estrutura por domínio;
-- rotas por equipe;
-- duplicações de entrada;
-- documentos sem rota útil;
-- documentos históricos em menu;
-- nomenclatura editorial.
-
-### 4.12 Homes
-
-- Home principal / Pessoa;
-- Home Organizações e Coletivos;
-- Home Mall;
-- Home Travel;
-- Home Media;
-- Home Ads;
-- Home Business;
-- Home Intelligence.
-
-## 5. Escala de ação
-
-Cada artefato auditado recebe uma das ações:
-
-| Ação | Interpretação nesta auditoria |
+| Ação | Significado |
 |---|---|
 | `KEEP` | autoridade/conteúdo atual e necessário |
 | `UPDATE` | necessário, mas defasado |
@@ -250,75 +112,32 @@ Cada artefato auditado recebe uma das ações:
 | `REMOVE_AFTER_ABSORPTION` | remover depois de absorver conteúdo único válido |
 | `REMOVE` | remover porque já não possui função atual |
 | `EVIDENCE_KEEP` | manter como suporte probatório vigente |
-| `HOLD_REVIEW` | ainda não há análise suficiente |
+| `HOLD_REVIEW` | análise ainda insuficiente |
 
-## 6. Achados confirmados — abertura da auditoria
+Nenhuma remoção é executada antes de verificar conteúdo único, evidência e referências.
 
-### F-001 — Regra de histórico do corpus conflita com a necessidade atual
+## 6. Achados confirmados
 
-**Classe:** Major  
-**Estado:** correção em andamento  
-**Ação:** `UPDATE`
+| ID | Classe | Achado | Ação | Estado |
+|---|---|---|---|---|
+| F-001 | Major | política anterior mantinha histórico/superseded no corpus | `UPDATE` | correção em andamento |
+| F-002 | Major | MENU contém arquitetura histórica de construção e alta fragmentação | `REBUILD` | aberto |
+| F-003 | Critical | Home principal/Pessoa conflita com assinatura e Movimento 06 vigentes | `REBUILD` | aberto |
+| F-004 | Major | Home O/C antecede mudanças estruturais posteriores | `REBUILD` | aberto |
+| F-005 | Major | Mall, Travel, Media, Ads, Business e Intelligence precisam de auditoria semântica | `HOLD_REVIEW` | aberto |
+| F-006 | Major | UXA-015..018 e SVGs associados continuam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | aberto |
+| F-007 | Major | contagens físicas de SVGs não representam maturidade vigente | `UPDATE` | aberto |
+| F-008 | Major | Estado Atual e Roadmap dependem de reconciliação posterior | `UPDATE + CONSOLIDATE` | aberto |
+| F-009 | Major | autoridades O/C de atores/jobs e IA ainda não foram absorvidas nas autoridades globais/menu final | `UPDATE` | aberto |
+| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `HOLD_REVIEW` | aberto |
+| F-011 | Critical guardrail | nenhuma consolidação pode perder detalhe material | `KEEP_DETAIL` | regra ativa |
+| F-012 | Gate | primeira tela pós-Home da Pessoa depende do encerramento da auditoria | `BLOCK` | ativo |
 
-O GKR vinha preservando documentos e artefatos históricos/superseded dentro do próprio corpus para rastreabilidade.
+## 7. F-003 — conflito material da Home principal
 
-A evolução do repositório mostrou que essa prática cria:
+O Documento Mestre atual da Home principal ainda usa `Do possível ao vivido.` como assinatura complementar institucional e utiliza `Do Possível ao Vivido` no Movimento 06.
 
-- versões concorrentes;
-- navegação cronológica;
-- dependência de reconciliações posteriores;
-- contagens físicas que deixam de representar maturidade;
-- risco de equipes utilizarem material sem autoridade.
-
-Nova regra normativa proposta nesta auditoria:
-
-> **Git preserva história; GKR vigente preserva verdade atual.**
-
-Arquivos afetados inicialmente:
-
-- `architectural-audit-framework.md`;
-- `architectural-knowledge-consolidation-pipeline.md`.
-
-### F-002 — MENU contém arquitetura histórica de construção
-
-**Classe:** Major  
-**Estado:** aberto  
-**Ação:** `REBUILD`
-
-O `mkdocs.yml` contém, entre outras evidências:
-
-- seção `Histórico de Construção das Jornadas Integradas`;
-- múltiplas entradas organizadas por sequência de UXAs;
-- comentário declarando preservação de documentos técnicos e históricos no corpus;
-- alta granularidade de processo de construção.
-
-Isso é incompatível com o uso pretendido do GKR como base de conhecimento para equipes diversas.
-
-O MENU final deverá permitir leitura por:
-
-- domínio;
-- participante;
-- produto;
-- responsabilidade;
-- necessidade de trabalho;
-- rota por equipe quando útil.
-
-Ele não deve exigir conhecer:
-
-- ordem de PRs;
-- número de rodada;
-- história de construção;
-- IDs superseded.
-
-### F-003 — Home principal / Pessoa conflita com autoridade verbal atual
-
-**Classe:** Critical  
-**Estado:** aberto  
-**Ação:** `REBUILD`
-
-O Documento Mestre atual da Home principal ainda contém `Do possível ao vivido.` como assinatura complementar institucional e utiliza `Do Possível ao Vivido` no Movimento 06.
-
-As autoridades posteriores estabelecem:
+Autoridades posteriores estabelecem:
 
 ```text
 GUIVOS
@@ -332,13 +151,13 @@ FUNDADOR
 → não é assinatura institucional da Guivos
 ```
 
-O Movimento 06 vigente foi reconciliado como:
+O rótulo vigente do Movimento 06 é:
 
 ```text
 Da Possibilidade à Experiência
 ```
 
-preservando a função:
+A função permanece:
 
 ```text
 POSSIBILIDADE
@@ -347,93 +166,66 @@ POSSIBILIDADE
 → NOVO CONTEXTO
 ```
 
-Consequência:
+Conclusão provisória já comprovada:
 
-> a Home principal não pode ser tratada como baseline consistente até ser reconstruída contra as autoridades atuais.
+> **Home principal/Pessoa = REBUILD_REQUIRED.**
 
-### F-004 — Home de Organizações e Coletivos antecede mudanças estruturais relevantes
+## 8. F-004 — Home de Organizações e Coletivos
 
-**Classe:** Major  
-**Estado:** aberto  
-**Ação:** `REBUILD`
+O Documento Mestre vigente antecede, entre outros:
 
-O Documento Mestre da Home pública de Organizações e Coletivos antecede:
-
-- aprofundamentos do RP-002;
+- RP-002;
 - reconciliação do estado real de Organização/Coletivo;
-- definição mais recente de atores, autoridades e jobs;
+- atores, autoridades e jobs autenticados;
 - Arquitetura da Informação autenticada;
 - atualizações de marca e autoridade pública;
 - consolidação dos nove Domínios de Evolução.
 
-A Home deve ser confrontada integralmente com essas autoridades antes de permanecer como master.
+Conclusão provisória já comprovada:
 
-### F-005 — Demais Homes precisam de revalidação sistemática
+> **Home Organizações e Coletivos = REBUILD_REQUIRED.**
 
-**Classe:** Major  
-**Estado:** aberto  
-**Ação:** `HOLD_REVIEW`
+## 9. F-005 — demais Homes
 
-Homes a auditar:
-
-| Home | Estado inicial da auditoria |
+| Home | Estado de auditoria |
 |---|---|
-| Mall | `HOLD_REVIEW` |
-| Travel | `HOLD_REVIEW` |
-| Media | `HOLD_REVIEW` |
-| Ads | `HOLD_REVIEW` |
-| Business | `HOLD_REVIEW` |
-| Intelligence | `HOLD_REVIEW` |
+| Mall | `AUDIT_PENDING` |
+| Travel | `AUDIT_PENDING` |
+| Media | `AUDIT_PENDING` |
+| Ads | `AUDIT_PENDING` |
+| Business | `AUDIT_PENDING` |
+| Intelligence | `AUDIT_PENDING` |
 
-A data antiga não prova conflito. Cada documento será comparado semanticamente com autoridades posteriores antes de decidir `KEEP`, `UPDATE` ou `REBUILD`.
+Data antiga não prova conflito. Cada Home será comparada com autoridades posteriores antes de receber `KEEP`, `UPDATE` ou `REBUILD`.
 
-### F-006 — Artefatos superseded ainda existem fisicamente
+## 10. F-006/F-007 — artefatos e contagens históricas
 
-**Classe:** Major  
-**Estado:** aberto  
-**Ação:** `REMOVE_AFTER_ABSORPTION`
-
-Exemplos confirmados:
+Exemplos já confirmados de artefatos sem autoridade visual vigente:
 
 - `UXA-015`;
 - `UXA-016`;
 - `UXA-017`;
 - `UXA-018`;
-- SVG histórico da antiga Visão Geral da Organização;
-- SVG histórico do antigo Início do Coletivo.
+- SVG da antiga Visão Geral da Organização;
+- SVG do antigo Início do Coletivo.
 
-O estado atual já declara esses objetos como superseded para a UX principal autenticada.
+Antes de removê-los:
 
-Antes de removê-los será necessário:
+1. extrair semântica ainda válida;
+2. confirmar absorção em autoridades atuais;
+3. corrigir links e dependências;
+4. atualizar catálogo, gallery, registry e traceability;
+5. recomputar contagens;
+6. validar o corpus;
+7. remover os arquivos físicos.
 
-1. extrair qualquer semântica ainda válida;
-2. verificar se ela já está em `UXA-014`, jornadas atuais, estado O/C, atores/jobs ou IA;
-3. atualizar links e dependências;
-4. atualizar catálogo, gallery, registry, traceability e contagens;
-5. executar validação;
-6. então remover arquivos físicos.
+Nenhuma nova contagem agregada será inferida antes dessa limpeza.
 
-### F-007 — Contagens físicas não representam mais maturidade vigente
-
-**Classe:** Major  
-**Estado:** aberto  
-**Ação:** `UPDATE`
-
-O catálogo ainda preserva `121 SVGs físicos` e explica que a antiga claim `121 validados / 0 pendentes` está superseded.
-
-Depois da limpeza física, todas as contagens deverão ser recomputadas a partir do corpus remanescente.
-
-Nenhuma nova contagem será inferida antes da remoção controlada.
-
-### F-008 — Estado Atual e Roadmap dependem de reconciliação posterior
-
-**Classe:** Major  
-**Estado:** aberto  
-**Ação:** `UPDATE + CONSOLIDATE`
+## 11. F-008 — Estado Atual e Roadmap
 
 Existe uma reconciliação global posterior criada para suplementar versões anteriores de Estado Atual e Roadmap.
 
-Pela nova regra, a solução final não deve ser manter permanentemente:
+A auditoria não aceitará como solução final:
 
 ```text
 ESTADO ANTIGO
@@ -441,28 +233,23 @@ ESTADO ANTIGO
 + ADENDO DE RECONCILIAÇÃO
 ```
 
-O conteúdo válido do adendo deve ser absorvido nas autoridades globais atualizadas; depois, o adendo deve ser removido se não restar função própria.
+O conteúdo válido do adendo deve ser absorvido nas autoridades globais atualizadas. Depois, o adendo deve ser removido se não possuir função própria.
 
-### F-009 — Recentes autoridades O/C ainda não estão integradas à navegação final
+Achados adicionais já confirmados:
 
-**Classe:** Major  
-**Estado:** aberto  
-**Ação:** `UPDATE`
+- `GKR-STATE-001 v2.44.0` não contém RP-002;
+- `GKR-STATE-001 v2.44.0` não contém GTM-009;
+- `GKR-STATE-001 v2.44.0` não contém as autoridades de atores/jobs e IA autenticada de O/C;
+- `ROADMAP-12.84.0` não contém RP-002;
+- `ROADMAP-12.84.0` ainda registra `121 validados / 0 pendentes`, claim já considerada não inferível no Estado Atual posterior.
 
-Autoridades recentes:
+Portanto:
 
-- atores, autoridades e jobs da experiência autenticada;
-- Arquitetura da Informação autenticada.
+> **Estado Atual e Roadmap exigem reescrita integral controlada, não novo adendo.**
 
-Elas são canônicas, porém o MENU ainda não passou por reconciliação global posterior a essas integrações.
+## 12. F-010 — famílias candidatas a consolidação
 
-### F-010 — Fragmentação por checkpoints, snapshots, propagations e reconciliações precisa ser auditada
-
-**Classe:** Major  
-**Estado:** aberto  
-**Ação:** `HOLD_REVIEW → CONSOLIDATE/REMOVE_AFTER_ABSORPTION` quando comprovado
-
-Famílias candidatas incluem:
+Devem ser auditados individualmente, sem exclusão por nome:
 
 - checkpoints de continuidade;
 - snapshots de Design/Homes;
@@ -470,19 +257,24 @@ Famílias candidatas incluem:
 - addenda globais;
 - reconciliações temáticas já absorvíveis;
 - registros intermediários de Research;
-- decisões procedimentais que perderam função depois de uma autoridade posterior.
+- decisões procedimentais que perderam função após autoridade posterior.
 
-Nenhum arquivo desta família será excluído apenas pelo nome. Cada um será testado por conteúdo único e função atual.
+Teste obrigatório para cada arquivo:
 
-### F-011 — Consolidação não pode repetir a perda de detalhe observada em revisões anteriores
+```text
+CONTEÚDO ÚNICO ATUAL?
+EVIDÊNCIA AINDA NECESSÁRIA?
+AUTORIDADE PRÓPRIA?
+DEPENDÊNCIAS ATUAIS?
+```
 
-**Classe:** Critical guardrail  
-**Estado:** regra ativa  
-**Ação:** `KEEP_DETAIL`
+Somente depois desse teste definir `KEEP`, `CONSOLIDATE`, `REMOVE_AFTER_ABSORPTION` ou `REMOVE`.
 
-A auditoria considera falha qualquer consolidação que torne o corpus aparentemente menor, porém remova conhecimento atual necessário.
+## 13. Guardrail de detalhe
 
-Obrigatório preservar, quando material:
+A auditoria falha se uma consolidação reduzir a quantidade de arquivos às custas de conhecimento atual necessário.
+
+Preservar quando material:
 
 - diagramas;
 - exemplos;
@@ -496,58 +288,37 @@ Obrigatório preservar, quando material:
 - guardrails;
 - métricas e thresholds;
 - distinções semânticas;
-- evidências e limitações.
+- evidências;
+- limitações e incertezas.
 
-### F-012 — Primeira tela pós-Home da Pessoa permanece bloqueada pela auditoria
+```text
+CONSOLIDAR
+≠ RESUMIR
+```
 
-**Classe:** Gate  
-**Estado:** BLOCKED  
-**Ação:** nenhuma materialização antes do fechamento
-
-Não iniciar:
-
-- definição final da primeira tela;
-- novo wireframe;
-- nova UXA numerada;
-- UI;
-- protótipo;
-- Product Engineering.
-
-A tela só poderá ser escrita depois de:
-
-1. corpus auditado;
-2. Home principal reconciliada;
-3. fluxo da Pessoa reavaliado;
-4. material histórico removido/reclassificado;
-5. registries atualizados;
-6. MENU final reconciliado;
-7. auditoria final sem Critical/Major aberto relacionado ao fluxo.
-
-## 7. Matriz de trabalho
+## 14. Matriz de trabalho
 
 | Frente | Estado | Resultado esperado |
 |---|---|---|
-| A — Governança do corpus | IN_PROGRESS | regra de verdade vigente + pipeline de remoção |
-| B — Estado Atual e Roadmap | PENDING | autoridades globais atualizadas e sem addendum dependente |
-| C — Fundação / Marca / Public Canon | PENDING | autoridade sem contradição e propagations absorvidas |
-| D — Home principal / Pessoa | FINDING_CONFIRMED | master reconstruído |
-| E — Home Organizações e Coletivos | FINDING_CONFIRMED | master reconstruído |
-| F — Homes de Produtos | PENDING | classificação + correções necessárias |
-| G — Jornada da Pessoa | PENDING | fluxo vigente consolidado antes da próxima tela |
-| H — Organização / Coletivo | PENDING | recentes autoridades integradas e históricos removidos |
-| I — Registries / Catálogos / SVGs | PENDING | inventário físico e maturidade recomputados |
-| J — Produtos / Economia | PENDING | masters atuais sem fragmentação |
-| K — Research / RP-002 | PENDING | método/evidência preservados; intermediários absorvidos quando possível |
-| L — Tecnologia / Dados / IA | PENDING | autoridades atuais e fronteiras claras |
-| M — Jurídico / Privacidade / Institucional | PENDING | estado documental e operacional corretamente separados |
-| N — GTM / presença pública | PENDING | GTM atual e sem duplicações históricas |
-| O — MENU / rotas por equipe | PENDING | navegação final multiequipe |
-| P — Auditoria final de completude | PENDING | PASS ou PASS WITH MINOR FINDINGS |
-| Q — primeira tela pós-Home Pessoa | BLOCKED | somente depois de P |
+| A — Governança do corpus | `IN_PROGRESS` | regra de verdade vigente + pipeline de remoção |
+| B — Estado Atual e Roadmap | `FINDINGS_CONFIRMED` | autoridades globais atualizadas sem addendum dependente |
+| C — Fundação / Marca / Public Canon | `PENDING` | autoridade sem contradição e propagations absorvidas |
+| D — Home principal / Pessoa | `REBUILD_REQUIRED` | master reconstruído |
+| E — Home Organizações e Coletivos | `REBUILD_REQUIRED` | master reconstruído |
+| F — Homes de Produtos | `PENDING` | classificação e correções |
+| G — Jornada da Pessoa | `PENDING` | fluxo vigente consolidado antes da próxima tela |
+| H — Organização / Coletivo | `PENDING` | recentes autoridades integradas e históricos removidos |
+| I — Registries / Catálogos / SVGs | `PENDING` | inventário e maturidade recomputados |
+| J — Produtos / Economia | `PENDING` | masters atuais sem fragmentação |
+| K — Research / RP-002 | `PENDING` | método/evidência preservados; intermediários absorvidos quando possível |
+| L — Tecnologia / Dados / IA | `PENDING` | autoridades atuais e fronteiras claras |
+| M — Jurídico / Privacidade / Institucional | `PENDING` | documental e operacional separados corretamente |
+| N — GTM / presença pública | `PENDING` | autoridades atuais sem duplicação histórica |
+| O — MENU / rotas por equipe | `PENDING` | navegação final multiequipe |
+| P — Auditoria final | `PENDING` | `PASS` ou `PASS WITH MINOR FINDINGS` |
+| Q — primeira tela pós-Home Pessoa | `BLOCKED` | somente depois de P |
 
-## 8. Ordem de execução
-
-A ordem é deliberadamente estrutural:
+## 15. Ordem de execução
 
 ```text
 A. governança da verdade vigente
@@ -569,47 +340,11 @@ P. auditoria final
 Q. primeira tela da Pessoa
 ```
 
-O MENU é redesenhado perto do final porque sua estrutura deve refletir **o corpus que restou depois da consolidação**, não o inventário antigo.
+O MENU é redesenhado perto do final porque deve refletir o corpus que restar depois da consolidação.
 
-## 9. Critérios para eliminar um documento
+## 16. Requisitos da navegação final
 
-Um documento pode sair do corpus atual quando todos os critérios aplicáveis forem verdadeiros:
-
-- não é a autoridade vigente;
-- não contém evidência necessária ainda única;
-- todo conteúdo válido foi absorvido;
-- seus exemplos/diagramas úteis foram preservados quando necessários;
-- referências foram corrigidas;
-- registries/contagens foram atualizados;
-- não existe consumidor atual que dependa dele;
-- a validação aplicável confirma corpus íntegro sem o arquivo.
-
-## 10. Critérios para consolidar documentos
-
-Uma consolidação é aceita quando:
-
-```text
-MENOS FRAGMENTAÇÃO
-+ MESMA OU MAIOR CLAREZA
-+ MESMO OU MAIOR DETALHE MATERIAL
-+ AUTORIDADE MAIS CLARA
-+ REFERÊNCIAS MAIS SIMPLES
-```
-
-É rejeitada quando produz:
-
-- resumo genérico;
-- perda de fluxos;
-- perda de critérios;
-- perda de exemplos úteis;
-- apagamento de guardrails;
-- ocultação de divergências reais;
-- mistura de autoridade normativa com Research;
-- mistura de visão com implementação.
-
-## 11. Requisitos da navegação final
-
-O desenho final deverá permitir que pelo menos estas funções encontrem conhecimento sem reconstruir a história do projeto:
+A navegação deve permitir acesso eficiente para:
 
 - liderança / estratégia;
 - marketing;
@@ -628,50 +363,34 @@ Princípio:
 
 > **uma autoridade pode servir várias equipes; não criar cópias por equipe.**
 
-## 12. Requisitos da auditoria das Homes
+## 17. Requisitos da auditoria das Homes
 
-Cada Home será lida como uma promessa pública implícita sobre:
+Cada Home será confrontada com:
 
-- quem é a Guivos;
-- para quem existe;
-- o que torna possível;
-- como se relaciona com o ecossistema;
-- quais claims pode sustentar;
-- qual próximo movimento oferece.
-
-A auditoria verificará:
-
-1. alinhamento à Fundação;
+1. Fundação e Propósito vigentes;
 2. assinatura e linguagem de marca;
 3. separação Guivos × fundador;
 4. papel do participante;
-5. papel do Produto Especializado;
+5. Produto Especializado correspondente;
 6. taxonomias atuais;
 7. relação com Journey;
 8. neutralidade econômica;
-9. limites de privacy/Intelligence;
-10. coerência entre Home pública e experiência autenticada;
-11. ausência de promessa operacional não comprovada;
-12. coerência com demais Homes.
+9. privacy/Intelligence;
+10. experiência autenticada relacionada;
+11. evidência necessária para claims;
+12. demais Homes para evitar sobreposição de autoridade.
 
-## 13. Estado inicial das Homes
+Resultados permitidos:
 
-| Home | Estado nesta abertura | Motivo |
-|---|---|---|
-| Principal / Pessoa | `REBUILD_REQUIRED` | conflito material já confirmado com assinatura/Movimento 06 vigentes |
-| Organizações e Coletivos | `REBUILD_REQUIRED` | antecede mudanças estruturais posteriores |
-| Mall | `AUDIT_PENDING` | requer confronto com GPA-002/economia atual |
-| Travel | `AUDIT_PENDING` | requer confronto com GPA-003 e arquitetura atual |
-| Media | `AUDIT_PENDING` | requer confronto com GPA-005 e papel editorial atual |
-| Ads | `AUDIT_PENDING` | requer confronto com GPA-007, neutralidade e supply atual |
-| Business | `AUDIT_PENDING` | requer confronto com GPA-004, Organização ≠ Business e Intelligence atual |
-| Intelligence | `AUDIT_PENDING` | requer confronto com GPA-006 v2.0.0 e privacy architecture atual |
+```text
+CURRENT
+| UPDATE_REQUIRED
+| REBUILD_REQUIRED
+```
 
-Nenhuma Home pendente será declarada inconsistente apenas por data; o resultado virá da comparação de conteúdo.
+## 18. Preservações obrigatórias
 
-## 14. Preservações obrigatórias durante a auditoria
-
-A auditoria não pode promover ou apagar, por conveniência, estados como:
+A auditoria não muda por conveniência:
 
 ```text
 PMF
@@ -702,9 +421,30 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
 ```
 
-Esses estados somente mudam por autoridade/evidência própria.
+Esses estados mudam somente por autoridade/evidência própria.
 
-## 15. Gate para fechamento
+## 19. Gate para a primeira tela da Pessoa
+
+Não iniciar:
+
+- definição final da primeira tela;
+- novo wireframe;
+- nova UXA numerada;
+- UI;
+- protótipo;
+- Product Engineering.
+
+O avanço exige:
+
+1. corpus auditado;
+2. Home principal reconciliada;
+3. fluxo da Pessoa reavaliado;
+4. históricos removidos/reclassificados;
+5. registries atualizados;
+6. MENU final reconciliado;
+7. auditoria final sem Critical/Major relacionado ao fluxo.
+
+## 20. Gate de fechamento da auditoria
 
 A auditoria somente pode encerrar quando:
 
@@ -725,7 +465,7 @@ A auditoria somente pode encerrar quando:
 - [ ] validação mecânica final tiver sucesso;
 - [ ] não houver achado Critical ou Major aberto.
 
-## 16. Estado atual da auditoria
+## 21. Estado atual
 
 ```text
 AUDIT
@@ -753,9 +493,9 @@ FIRST PERSON SCREEN AFTER HOME
 → BLOCKED UNTIL AUDIT CLOSES
 ```
 
-## 17. Destino deste registro
+## 22. Destino deste registro
 
-Este arquivo é um instrumento temporário de execução e controle.
+Este arquivo é temporário.
 
 Quando a auditoria fechar:
 
