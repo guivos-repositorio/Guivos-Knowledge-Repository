@@ -2,174 +2,288 @@
 id: GEB-P01-F06
 title: Princípios Permanentes
 status: approved-draft
-version: 0.3.0
+version: 0.4.0
 owner: Guivos
-last_updated: 2026-07-02
+last_updated: 2026-08-27
 dependencies:
   - 05-constitution.md
 related_adrs:
   - ADR-002
+related:
+  - GKR-STATE-001
+  - GEA-AUDIT-001
+  - GKR-CHRISTIAN-FOUNDATION-001
+  - RP-002
 ---
 
 # Princípios Permanentes
 
+Os Princípios Permanentes traduzem a Constituição em regras estáveis de interpretação e governança.
+
+Eles não constituem funcionalidades, KPIs ou etapas obrigatórias de interface. Sua função é limitar decisões de Produto, Experience Architecture, tecnologia, dados, economia, comunicação e operação.
+
 ## PP-01 — Evolução contínua
 
-A jornada do participante nunca é considerada concluída. Cada novo momento de vida pode gerar novos objetivos e novos próximos passos.
+A jornada do participante permanece aberta a novos ciclos. Cada novo Momento pode gerar nova compreensão, objetivos, necessidades, Próximos Passos e Possibilidades.
 
-## PP-02 — Próximo passo
+Evolução contínua não significa atividade contínua, aceleração permanente ou obrigação de avançar.
 
-A experiência do participante deve ser orientada por próximos passos, não por catálogos genéricos de oportunidades.
+```text
+CONTINUIDADE
+≠ PRESSA
+≠ PRODUTIVIDADE PERMANENTE
+≠ AÇÃO OBRIGATÓRIA
+```
+
+## PP-02 — Próximo Passo
+
+A experiência deve ser orientada por Próximos Passos contextualizados, não por catálogos genéricos de ofertas ou pela necessidade de preencher a experiência com ações.
+
+Um Próximo Passo pode ser agir, compreender, conversar, organizar, esperar, pausar, revisar ou decidir não agir.
 
 ## PP-03 — Relevância contextual
 
-Uma oportunidade é relevante apenas quando faz sentido para o momento atual, objetivos e contexto do participante.
+Uma Possibilidade ou Oportunidade é relevante somente quando sua relação com o Momento, objetivo/necessidade, condições e autoridade do participante pode ser explicada.
+
+Para Oportunidades:
+
+> **A relevância pertence à relação Participante ↔ Oportunidade.**
+
+```text
+POPULARIDADE
+≠ RELEVÂNCIA
+
+PAGAMENTO
+≠ RELEVÂNCIA
+
+QUALIDADE ISOLADA
+≠ FIT CONTEXTUAL
+```
 
 ## PP-04 — Autonomia
 
-A plataforma não deve impor decisões. Toda recomendação deve preservar a liberdade de escolha.
+A Guivos não deve impor decisões.
 
-## PP-05 — Experiência como geração de valor
+Toda recomendação, Possibilidade, Próximo Passo ou Oportunidade deve preservar liberdade de escolha e permitir recusa, pausa, reconsideração e caminhos alternativos quando legítimos.
 
-O valor da Guivos é realizado quando uma oportunidade se transforma em experiência vivida.
+## PP-05 — Experiência vivida como realização de valor
+
+O valor potencial da Guivos se aproxima da vida real quando uma Possibilidade escolhida se torna experiência vivida — com ou sem Oportunidade externa como mecanismo de acesso.
+
+A experiência, por si só, não prova evolução, resultado ou impacto.
+
+```text
+POSSIBILIDADE
+→ pode levar a experiência
+
+OPORTUNIDADE
+→ pode materializar uma Possibilidade
+
+EXPERIÊNCIA VIVIDA
+≠ IMPACTO COMPROVADO
+```
 
 ## PP-06 — Relacionamentos como patrimônio
 
-Relacionamentos relevantes fortalecem o ecossistema e ampliam sua capacidade de gerar novas oportunidades.
+Relacionamentos legítimos fortalecem o ecossistema e podem ampliar compreensão, acesso, cooperação e novas Possibilidades.
+
+Relacionamento não transfere automaticamente autoridade, dados, governança ou finalidade entre participantes.
 
 ## PP-07 — Conhecimento acima de dados brutos
 
-Dados são registros. Conhecimento é compreensão. A Guivos deve preservar essa distinção.
+Dados são registros. Conhecimento é compreensão governada.
 
-## PP-08 — IA como interpretação
+A Guivos deve preservar essa distinção e explicitar, quando material, origem, temporalidade, confiança, contestação e limites do que conhece.
 
-A inteligência artificial interpreta o conhecimento do ecossistema. Ela não define a arquitetura.
+```text
+DADO
+≠ CONHECIMENTO
 
-## PP-09 — Simplicidade
+SINAL
+≠ CERTEZA
 
-A arquitetura deve conter apenas os conceitos indispensáveis.
+INFERÊNCIA
+≠ FATO
+```
+
+## PP-08 — IA como interpretação subordinada
+
+A inteligência artificial pode interpretar, organizar e apoiar o uso do conhecimento dentro de finalidade e autoridade legítimas.
+
+Ela não define a Fundação, não substitui autoridade humana e não transforma inferência em verdade.
+
+## PP-09 — Simplicidade com integridade
+
+A arquitetura deve conter apenas conceitos indispensáveis, e a experiência final deve reduzir complexidade desnecessária.
+
+Simplicidade não autoriza eliminar distinções necessárias de autoridade, privacidade, evidência, estado ou significado.
+
+```text
+SIMPLES PARA A PESSOA
+→ complexidade metodológica pode permanecer nos bastidores
+
+SIMPLIFICAR
+≠ OMITIR
+```
 
 ## PP-10 — Escalabilidade global
 
-Toda decisão permanente deve ser válida para operação global, independentemente de idioma, país, cultura ou tecnologia.
+Toda decisão permanente deve ser capaz de operar em perspectiva global, independentemente de idioma, país, cultura ou tecnologia, admitindo adaptações territoriais legitimamente necessárias.
 
-## PP-11 — Maturidade institucional
+Globalidade não significa homogeneização cultural nem presunção de operação já existente.
 
-O conteúdo canônico da Guivos deve representar a organização em seu estado de maturidade e capacidade máxima, não apenas no estágio atual de implementação.
+## PP-11 — Verdade vigente e visão explicitamente classificada
 
-## PP-12 — Visão antes da execução
+O GKR deve preservar a **verdade vigente** da Guivos.
 
-A implementação deve aproximar progressivamente a realidade da visão institucional. Restrições temporárias de tecnologia, equipe, orçamento ou prazo não redefinem automaticamente a visão.
+A visão de capacidade máxima pode e deve ser documentada quando material, mas precisa estar explicitamente classificada como visão, target, arquitetura de referência, hipótese ou estado futuro.
+
+```text
+VISÃO
+≠ ESTADO ATUAL
+
+TARGET
+≠ IMPLEMENTAÇÃO
+
+CANON VIGENTE
+→ deve distinguir claramente o que É do que PODERÁ SER
+```
+
+Nenhum documento pode usar a ambição de maturidade para promover como implementado, operacional, disponível, validado ou comprovado aquilo que ainda não possui evidência correspondente.
+
+## PP-12 — Visão antes da execução, sem confundir estado
+
+A implementação deve aproximar progressivamente a realidade da visão institucional.
+
+Restrições temporárias de tecnologia, equipe, orçamento ou prazo não redefinem automaticamente a visão; ao mesmo tempo, a existência da visão não autoriza afirmar que sua realização já ocorreu.
+
+```text
+RESTRIÇÃO TEMPORÁRIA
+≠ REDUÇÃO AUTOMÁTICA DA VISÃO
+
+VISÃO APROVADA
+≠ REALIDADE IMPLEMENTADA
+```
 
 ## PP-13 — Realização progressiva
 
-A Guivos é concebida integralmente em sua capacidade máxima e realizada progressivamente por arquiteturas de referência, programas e entregas.
+A Guivos pode ser concebida em sua capacidade de longo prazo e realizada progressivamente por arquiteturas de referência, programas, experimentos e entregas governadas.
+
+Cada estágio deve explicitar maturidade e evidência próprias.
 
 ## PP-14 — Permanência proporcional à mudança
 
 Quanto mais permanente for um ativo institucional, menor deve ser sua velocidade de mudança e maior deve ser o rigor aplicado à sua revisão.
 
----
+Alterar Fundação exige evidência e decisão superiores às exigidas para ajustar uma execução circunstancial.
 
-## Evidence Analysis — A2
+## 15. Mapa de aplicação dos princípios
 
-### Estado da análise
-
-| Campo | Valor |
+| Decisão | Princípios especialmente aplicáveis |
 |---|---|
-| Fase | `A2 — Functional Architecture Discovery` |
-| Data | 02/07/2026 |
-| Resultado | Evidence Extraction concluída |
-| Afirmações institucionais atômicas | 39 |
-| Significados institucionais | 14 |
-| Invariantes provisórios | 14 |
-| Responsabilidades institucionais | 14 |
-| Core Capabilities promovidas | 0 |
+| recomendação para Pessoa | PP-02, PP-03, PP-04, PP-07, PP-08 |
+| ranking de Oportunidades | PP-03, PP-04, PP-07 |
+| lançamento de Produto | PP-01, PP-09, PP-10, PP-11, PP-13 |
+| uso de IA | PP-04, PP-07, PP-08, PP-09 |
+| relação Organização ↔ Coletivo | PP-04, PP-06, PP-07 |
+| novo país | PP-09, PP-10, PP-11, PP-13 |
+| nova tecnologia | PP-08, PP-09, PP-12, PP-13 |
+| claim pública | PP-05, PP-07, PP-11, PP-12 |
+| limpeza/consolidação do GKR | PP-07, PP-09, PP-11, PP-14 |
 
-### Significados institucionais
-
-1. A jornada é contínua e permanece aberta a novos ciclos.
-2. O próximo passo contextual orienta a experiência.
-3. Relevância depende do momento, dos objetivos e do contexto.
-4. Recomendações devem preservar liberdade de escolha.
-5. O valor se realiza quando oportunidade se transforma em experiência vivida.
-6. Relacionamentos relevantes são patrimônio do ecossistema.
-7. Dados são registros; conhecimento é compreensão.
-8. A IA interpreta conhecimento, mas não define a arquitetura.
-9. A arquitetura deve conter apenas conceitos indispensáveis.
-10. Decisões permanentes precisam ter validade global.
-11. A Canon representa a Guivos madura e em capacidade máxima.
-12. A visão institucional prevalece sobre restrições temporárias.
-13. A realização ocorre progressivamente por arquiteturas, programas e entregas.
-14. O rigor de revisão cresce com a permanência do ativo.
-
-### Invariantes provisórios
+## 16. Invariantes vigentes
 
 | ID | Invariante |
 |---|---|
-| INV-F06-01 | A jornada deve permanecer aberta a novos ciclos de evolução. |
-| INV-F06-02 | A experiência deve permanecer orientada por próximos passos contextuais. |
-| INV-F06-03 | A relevância deve depender do contexto, dos objetivos e do momento atual. |
+| INV-F06-01 | A jornada deve permanecer aberta a novos ciclos sem obrigação de atividade contínua. |
+| INV-F06-02 | A experiência deve permanecer orientada por Próximos Passos contextuais. |
+| INV-F06-03 | Relevância deve depender do contexto, objetivos/necessidades, condições e Momento. |
 | INV-F06-04 | Recomendações devem preservar liberdade de escolha. |
-| INV-F06-05 | O valor deve ser associado à conversão de oportunidade em experiência vivida. |
-| INV-F06-06 | Relacionamentos relevantes devem ser preservados como ativos do ecossistema. |
+| INV-F06-05 | Experiência vivida aproxima valor potencial da realidade, mas não prova impacto. |
+| INV-F06-06 | Relacionamentos legítimos devem ser preservados como ativos sem transferência automática de autoridade. |
 | INV-F06-07 | Dados e conhecimento devem permanecer conceitualmente distintos. |
-| INV-F06-08 | A IA pode interpretar conhecimento, mas não definir a arquitetura. |
-| INV-F06-09 | A arquitetura deve conter apenas conceitos indispensáveis. |
-| INV-F06-10 | Decisões permanentes devem possuir validade global e independência tecnológica. |
-| INV-F06-11 | O conteúdo canônico deve representar a Guivos madura e em capacidade máxima. |
-| INV-F06-12 | Restrições temporárias não podem redefinir automaticamente a visão institucional. |
-| INV-F06-13 | A realização deve ocorrer progressivamente por arquiteturas de referência, programas e entregas. |
+| INV-F06-08 | IA pode interpretar conhecimento, mas não definir a arquitetura institucional ou promover inferência a fato. |
+| INV-F06-09 | A arquitetura deve conter apenas conceitos indispensáveis sem apagar semântica necessária. |
+| INV-F06-10 | Decisões permanentes devem possuir perspectiva global e independência tecnológica. |
+| INV-F06-11 | O corpus vigente deve distinguir estado atual de visão/target de capacidade máxima. |
+| INV-F06-12 | Restrições temporárias não podem redefinir automaticamente a visão, e visão não pode ser apresentada como implementação. |
+| INV-F06-13 | A realização deve ocorrer progressivamente por arquiteturas, programas e entregas com maturidade explícita. |
 | INV-F06-14 | A governança de mudança deve ser proporcional à permanência do ativo. |
 
-### Responsabilidades institucionais
+## 17. Responsabilidades institucionais
 
 | ID | Responsabilidade |
 |---|---|
-| RESP-F06-01 | Tratar a jornada como processo contínuo e recorrente. |
-| RESP-F06-02 | Orientar a experiência por próximos passos, evitando catálogos genéricos como princípio dominante. |
-| RESP-F06-03 | Avaliar oportunidades segundo contexto, objetivos e momento de vida. |
+| RESP-F06-01 | Tratar a jornada como processo contínuo e recorrente sem induzir atividade artificial. |
+| RESP-F06-02 | Orientar a experiência por Próximos Passos, evitando catálogos genéricos como princípio dominante. |
+| RESP-F06-03 | Avaliar Possibilidades e Oportunidades segundo contexto, condições e Momento. |
 | RESP-F06-04 | Preservar liberdade de escolha em toda recomendação. |
-| RESP-F06-05 | Medir realização de valor pela passagem de oportunidade para experiência vivida. |
-| RESP-F06-06 | Preservar e fortalecer relacionamentos relevantes do ecossistema. |
-| RESP-F06-07 | Diferenciar registros de dados de conhecimento interpretado. |
-| RESP-F06-08 | Impedir que a IA determine a arquitetura institucional. |
-| RESP-F06-09 | Evitar conceitos, entidades ou camadas não indispensáveis. |
+| RESP-F06-05 | Diferenciar experiência vivida de contribuição, resultado e impacto. |
+| RESP-F06-06 | Preservar e fortalecer relacionamentos legítimos sem dissolver autoridades. |
+| RESP-F06-07 | Diferenciar registros de dados de conhecimento interpretado e governado. |
+| RESP-F06-08 | Impedir que IA determine arquitetura institucional ou verdade sem evidência. |
+| RESP-F06-09 | Evitar conceitos, entidades ou camadas não indispensáveis sem reduzir detalhe necessário. |
 | RESP-F06-10 | Validar decisões permanentes em perspectiva global. |
-| RESP-F06-11 | Manter o GKR orientado ao estado de maturidade e capacidade máxima. |
-| RESP-F06-12 | Impedir que limitações temporárias redefinam indevidamente a visão. |
-| RESP-F06-13 | Realizar a visão por arquiteturas de referência, programas e entregas. |
+| RESP-F06-11 | Manter o GKR orientado à verdade vigente, classificando explicitamente visão e targets futuros. |
+| RESP-F06-12 | Impedir que limitações temporárias reduzam indevidamente a visão ou que a visão seja promovida como realidade. |
+| RESP-F06-13 | Realizar a visão por arquiteturas de referência, programas e entregas governadas. |
 | RESP-F06-14 | Aplicar rigor de revisão proporcional à permanência do ativo. |
 
-### Evidence Convergence
+## 18. Testes de aplicação
 
-O documento corrobora fortemente contexto, relevância, progressão da jornada, autonomia, governança de aderência, validade global, subordinação da IA, simplicidade arquitetural, conhecimento como patrimônio e coerência sob variação.
+### Recomendação
 
-Novos agrupamentos observados:
+```text
+Oportunidade paga
++ contexto incompatível
++ alto potencial de receita
 
-| ID | Agrupamento | Natureza |
-|---|---|---|
-| EV-F06-01 | Experiência vivida como realização de valor | Funcional / econômico |
-| EV-F06-02 | Relacionamentos como patrimônio do ecossistema | Estrutural / relacional |
-| EV-F06-03 | Distinção entre dados e conhecimento | Informacional |
-| EV-F06-04 | Canon orientada à maturidade institucional | Governança arquitetural |
-| EV-F06-05 | Visão superior às restrições temporárias | Governança arquitetural |
-| EV-F06-06 | Realização progressiva da arquitetura | Estrutural / operacional |
-| EV-F06-07 | Governança proporcional à permanência | Governança arquitetural |
+PP-03 + PP-04
+→ pagamento não corrige falta de pertinência
+→ não priorizar apenas por economia
+```
 
-### Teste de permanência
+### IA
 
-Todos os 14 princípios permanecem válidos se os produtos, tecnologias, equipes e mercados atuais deixarem de existir. PP-08 menciona IA, mas estabelece um limite permanente para essa classe tecnológica, não uma dependência de implementação.
+```text
+MODELO INFERE necessidade
+→ confiança moderada
+→ Pessoa não declarou
 
-### Confidence Assessment
+PP-07 + PP-08
+→ tratar como inferência
+→ não apresentar como fato
+→ permitir correção
+```
 
-| Critério | Avaliação |
-|---|---|
-| Consistência | Muito alta |
-| Originalidade | Alta |
-| Relevância arquitetural | Muito alta |
-| Impacto na convergência | Muito alto |
+### Canon e roadmap
 
-### Limites
+```text
+CAPACIDADE FUTURA APROVADA
+→ target documentado
+→ implementação ainda não iniciada
 
-A análise conclui a Evidence Extraction da Foundation, mas não promove Core Capabilities. A deduplicação, a Foundation Evidence Matrix e o readiness pertencem à `A2-R01 — Foundation Architecture Review`.
+PP-11 + PP-12
+→ documentar visão integral
+→ declarar explicitamente NOT_IMPLEMENTED
+```
+
+## 19. Teste de permanência
+
+Os 14 princípios devem continuar válidos se Produtos, tecnologias, equipes, canais e mercados atuais deixarem de existir.
+
+PP-08 menciona IA como classe tecnológica para impor um limite permanente; não cria dependência de uma implementação específica.
+
+PP-11 e PP-12 preservam a ambição de longo prazo sem permitir que o corpus confunda visão com realidade.
+
+## 20. Limites
+
+Os Princípios Permanentes não:
+
+- criam Core Capabilities técnicas;
+- definem algoritmo de relevância;
+- definem modelo de IA;
+- definem métricas finais de evolução;
+- comprovam PMF;
+- autorizam implementação;
+- autorizam claims causais de transformação.
