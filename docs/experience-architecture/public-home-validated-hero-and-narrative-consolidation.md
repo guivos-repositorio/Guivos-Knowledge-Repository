@@ -7,7 +7,6 @@ owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-28
 parent: GKR-UX-HOME-001
 depends_on:
-  - GKR-UX-HOME-MASTER-001
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-001
@@ -18,6 +17,7 @@ depends_on:
   - GEB-P01-F06
   - GPA-005
 related:
+  - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-BENCH-001
 normative: false
 maturity: reconciled_message_narrative_detail_pre_materialization
