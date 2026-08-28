@@ -2,33 +2,33 @@
 id: RP-002-PILOT-STACK-DEC-001
 title: Piloto — Decisão da Arquitetura-Alvo do Primeiro Dry Run
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos Research
 last_updated: 2026-08-27
 normative: false
 parent: RP-002
-maturity: operational_target_approved_pre_configuration
+maturity: operational_target_partially_configured
 related:
   - RP-002-PILOT-STACK-PROP-001
   - RP-002-PILOT-OP-001
   - RP-002-PILOT-DATA-LAW-001
   - RP-002-PILOT-PRIV-001
   - RP-002-PILOT-NOTICE-CONSENT-001
+  - RP-002-PILOT-RESEARCH-MAILBOX-DEC-001
+  - RP-002-PILOT-RESEARCH-MAILBOX-TEST-001
 ---
 
 # Piloto — Decisão da Arquitetura-Alvo do Primeiro Dry Run
 
 ## 1. Finalidade
 
-Este documento registra a decisão operacional sobre qual arquitetura deverá orientar a preparação do primeiro Dry Run Real `N=1` do `RP-002`.
+Este documento registra a decisão operacional sobre qual arquitetura orienta a preparação do primeiro Dry Run Real `N=1` do `RP-002` e mantém o estado reconciliado dos componentes já configurados.
 
-Ele fecha somente a decisão de **arquitetura-alvo**.
+A arquitetura-alvo permanece a **Option A — Local Privacy-First**.
 
-Não configura ferramentas, não aprova operadores por inferência e não libera a entrada de Pessoa real.
+O fechamento de um componente não aprova por inferência os demais nem libera Pessoa real.
 
 ## 2. Decisão
-
-Fica aprovada como arquitetura-alvo do primeiro Dry Run Real do `RP-002`:
 
 ```text
 TARGET ARCHITECTURE
@@ -38,7 +38,7 @@ DECISION STATUS
 → APPROVED AS TARGET
 
 OPERATIONAL STACK
-→ NOT YET APPROVED
+→ PARTIALLY CONFIGURED / NOT YET APPROVED
 
 PARTICIPANT 001
 → HOLD
@@ -47,34 +47,37 @@ DRY RUN REAL
 → NOT RELEASED
 ```
 
-A decisão adota a recomendação materializada em `RP-002-PILOT-STACK-PROP-001`.
+A decisão continua baseada em `RP-002-PILOT-STACK-PROP-001`.
 
-A aprovação é deliberadamente restrita à arquitetura-alvo.
-
-Ela não converte qualquer componente candidato em `PASS`.
-
-## 3. Arquitetura-alvo aprovada
+## 3. Arquitetura-alvo reconciliada
 
 ```text
-RECRUTAMENTO / NOTICE / CONSENTIMENTO
-→ mailbox dedicada de Research sob @guivos.com
-→ Hostinger Mail como operador candidato já conhecido
-→ endereço final ainda a provisionar e testar
+RECRUTAMENTO / OPERAÇÃO DE RESEARCH
+→ research@guivos.com
+→ Hostinger Mail
+→ A1 RESEARCH MAILBOX = PASS
+
+NOTICE / CONSENTIMENTO
+→ versioned email trail
+→ final flow ainda não congelado
 
 IDENTITY VAULT
 → armazenamento local criptografado A
 → dedicado
 → sem cloud sync por padrão
+→ ainda não configurado
 
 RESEARCH BASE
 → armazenamento local criptografado B
 → materialmente separado do Identity Vault
 → pseudonimizado
 → sem identidade direta por padrão
+→ ainda não configurado
 
 LINKAGE KEY
 → separada da Research Base
 → acesso mais restrito
+→ ainda não configurada
 
 IA
 → OpenAI API dedicada à Guivos / RP-002
@@ -92,11 +95,13 @@ PRIVACIDADE / DIREITOS
 → privacidade@guivos.com
 → privacy@guivos.com
 → Hostinger Mail
+→ P2B = PASS
+→ P2C = PASS
 ```
 
 ## 4. Razões da decisão
 
-A Opção A é aprovada para `N=1` porque é a arquitetura que melhor preserva, no estágio atual:
+A Opção A permanece aprovada para `N=1` porque preserva:
 
 1. minimização de dados;
 2. separação material entre identidade e pesquisa;
@@ -109,13 +114,11 @@ A Opção A é aprovada para `N=1` porque é a arquitetura que melhor preserva, 
 9. aderência ao `RP-002-PILOT-DATA-LAW-001`;
 10. manutenção explícita dos blockers ainda não comprovados.
 
-Para o primeiro Dry Run, a prioridade não é escalabilidade tecnológica.
-
-A prioridade é provar o método com uma superfície de dados proporcional, rastreável e reversível.
+Para o primeiro Dry Run, a prioridade continua sendo provar o método com uma superfície de dados proporcional, rastreável e reversível.
 
 ## 5. Relação com o RP-002-PILOT-OP-001
 
-A decisão é compatível com a arquitetura operacional já vigente, que exige:
+A arquitetura operacional vigente exige:
 
 ```text
 IDENTITY VAULT
@@ -125,7 +128,7 @@ RESEARCH BASE PSEUDONIMIZADA
 LINKAGE KEY MAIS RESTRITA
 ```
 
-Também preserva as regras de:
+Também permanecem as regras de:
 
 - mínimo privilégio;
 - ausência de identificadores diretos na Research Base por padrão;
@@ -135,8 +138,6 @@ Também preserva as regras de:
 - `Participant 001` em `HOLD` até fechamento dos gates críticos.
 
 ## 6. Relação com P3 e P4
-
-Esta decisão não altera automaticamente os gates jurídicos e de privacidade.
 
 Estado preservado:
 
@@ -160,28 +161,39 @@ P4
 → HOLD
 ```
 
-A arquitetura escolhida reduz ambiguidade sobre o desenho pretendido, mas `P3-C`, `P3-D` e `P4` dependem de fatos operacionais que ainda precisam ser materialmente comprovados.
+O fechamento de A1 e P2C reduz blockers, mas `P3-C`, `P3-D` e `P4` dependem do conjunto efetivo do stack e da revisão final.
 
-## 7. Componentes que permanecem não aprovados
+## 7. Estado dos componentes
 
 ### A1 — Mailbox de Research
 
 ```text
-TARGET
-→ HOSTINGER MAIL / @guivos.com
-
 ADDRESS
-→ TBD
+→ research@guivos.com
+
+OPERATOR
+→ Hostinger Mail
 
 PROVISIONING
-→ NOT DONE
+→ PASS
 
 END-TO-END TEST
-→ NOT DONE
+→ PASS
+
+FUNCTIONAL OWNER
+→ PASS
+
+FUNCTIONAL SEGREGATION
+→ PASS
 
 STATUS
-→ HOLD
+→ PASS
 ```
+
+Evidência:
+
+- `RP-002-PILOT-RESEARCH-MAILBOX-DEC-001`;
+- `RP-002-PILOT-RESEARCH-MAILBOX-TEST-001`.
 
 ### A2 — Fluxo de Notice e consentimento
 
@@ -262,7 +274,7 @@ STATUS
 
 ### A7 — Correction / deletion drill
 
-O drill sintético anterior prova a lógica do processo, mas não prova o stack operacional ainda inexistente.
+O drill sintético anterior prova a lógica do processo, mas não prova o stack operacional ainda incompleto.
 
 ```text
 SYNTHETIC LOGIC
@@ -350,9 +362,7 @@ STATUS
 
 ## 8. Opção B
 
-A arquitetura baseada em Google Workspace Business permanece registrada como alternativa futura de colaboração e escala.
-
-Estado:
+A arquitetura baseada em Google Workspace Business permanece alternativa futura de colaboração e escala.
 
 ```text
 OPTION B — GOOGLE WORKSPACE BUSINESS
@@ -364,7 +374,7 @@ OPTION B — GOOGLE WORKSPACE BUSINESS
 
 A existência de Google Drive conectado não equivale a tenant empresarial aprovado para tratamento de participantes.
 
-## 9. O que esta decisão fecha
+## 9. O que já está fechado
 
 ```text
 STACK ARCHITECTURE CHOICE
@@ -372,41 +382,40 @@ STACK ARCHITECTURE CHOICE
 
 SELECTED TARGET
 → OPTION A — LOCAL PRIVACY-FIRST
+
+A1 — RESEARCH MAILBOX
+→ PASS
+
+P2B — PRIVACY CHANNEL
+→ PASS
+
+P2C — RIGHTS PROCESS SYNTHETIC TEST
+→ PASS
 ```
 
-Portanto, não é necessário continuar comparando arquiteturas antes de iniciar a configuração material do stack do `Participant 001`.
-
-## 10. O que esta decisão não fecha
-
-Permanece vedado inferir:
+## 10. O que permanece vedado inferir
 
 ```text
 TARGET APPROVED
-≠ TOOL CONFIGURED
+≠ FULL STACK CONFIGURED
 
-TARGET APPROVED
-≠ OPERATOR APPROVED
+A1 PASS
+≠ P3-C PASS
 
-TARGET APPROVED
-≠ DPA VERIFIED
+P2C PASS
+≠ FINAL LEGAL REVIEW PASS
 
-TARGET APPROVED
-≠ RETENTION APPROVED
-
-TARGET APPROVED
-≠ LEGAL BASIS FINALIZED
-
-TARGET APPROVED
+PARTIAL STACK
 ≠ PARTICIPANT RELEASED
 ```
 
 ## 11. Ordem operacional autorizada
 
-A preparação do stack deve seguir esta sequência:
+A preparação do stack permanece nesta sequência material:
 
 ```text
-1. provisionar mailbox dedicada de Research
-2. testar recebimento, resposta e owner funcional
+1. mailbox dedicada de Research → COMPLETED / A1 PASS
+2. recebimento, resposta, owner e segregação → COMPLETED / A1 PASS
 3. configurar Identity Vault local criptografado
 4. configurar Research Base local criptografada e separada
 5. configurar separação da linkage key
@@ -417,7 +426,7 @@ A preparação do stack deve seguir esta sequência:
 10. aprovar método/operador de Search/Web
 11. congelar prazos exatos de retenção
 12. atualizar e congelar Notice correspondente ao stack real
-13. concluir P2C
+13. P2C → COMPLETED / PASS
 14. realizar revisão jurídica/privacidade final
 15. reavaliar P3-C / P3-D / P4
 16. somente então avaliar Participant 001
@@ -427,17 +436,16 @@ A ordem pode ser paralelizada apenas quando isso não cria dependência circular
 
 ## 12. Próximo ato material
 
-O próximo blocker operacional passa a ser:
+Com `A1` encerrado, o próximo blocker material passa a ser:
 
 ```text
-A1 — RESEARCH MAILBOX
-→ DECIDIR ENDEREÇO
-→ PROVISIONAR
-→ TESTAR END-TO-END
-→ REGISTRAR OWNER FUNCIONAL
+A3 — IDENTITY VAULT
+→ CONFIGURAR ARMAZENAMENTO LOCAL CRIPTOGRAFADO
+→ VERIFICAR PERMISSÕES
+→ PRESERVAR SEM CLOUD SYNC POR PADRÃO
 ```
 
-Até esse ato ser materialmente comprovado:
+Até a continuidade do stack:
 
 ```text
 P3-C
@@ -463,10 +471,13 @@ RP-002-PILOT-STACK-PROP-001
 → PROPOSAL PRESERVED
 
 RP-002-PILOT-STACK-DEC-001
-→ APPROVED TARGET DECISION
+→ APPROVED TARGET DECISION / PARTIALLY CONFIGURED
 
 TARGET ARCHITECTURE
 → OPTION A — LOCAL PRIVACY-FIRST
+
+A1 — RESEARCH MAILBOX
+→ PASS
 
 OPERATIONAL STACK READINESS
 → HOLD

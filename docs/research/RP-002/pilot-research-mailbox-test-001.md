@@ -2,12 +2,12 @@
 id: RP-002-PILOT-RESEARCH-MAILBOX-TEST-001
 title: Piloto — Evidência do T-RESEARCH-001 da Mailbox de Research
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos Research
 last_updated: 2026-08-27
 normative: false
 parent: RP-002
-maturity: operational_evidence_verified_partial
+maturity: operational_evidence_verified
 related:
   - RP-002-PILOT-RESEARCH-MAILBOX-DEC-001
   - RP-002-PILOT-STACK-DEC-001
@@ -18,9 +18,11 @@ related:
 
 ## 1. Finalidade
 
-Este artefato registra a execução controlada e o resultado observado do teste sintético `T-RESEARCH-001` da mailbox institucional de Research definida para o primeiro Dry Run Real `N=1` do `RP-002`.
+Este artefato registra a execução controlada, o resultado observado e o fechamento operacional do teste sintético `T-RESEARCH-001` da mailbox institucional de Research definida para o primeiro Dry Run Real `N=1` do `RP-002`.
 
-O teste não utilizou dados pessoais reais de participante e não libera, isoladamente, participante real ou qualquer gate jurídico, de privacidade ou de dados.
+O teste não utilizou dados pessoais reais de participante.
+
+O fechamento de `A1` não libera, isoladamente, participante real nem promove por inferência qualquer outro gate jurídico, de privacidade ou de dados.
 
 ## 2. Mailbox sob teste
 
@@ -31,7 +33,7 @@ ADDRESS
 FUNCTION
 → Guivos Research / RP-002
 
-TARGET OPERATOR
+OPERATOR
 → Hostinger Mail
 
 TEST ID
@@ -40,17 +42,9 @@ TEST ID
 
 O endereço foi previamente aprovado por `RP-002-PILOT-RESEARCH-MAILBOX-DEC-001`.
 
-## 3. Fato operacional inicial
-
-Em 2026-08-27 foi informado que `research@guivos.com` havia sido criada.
-
-A conexão autenticada do Hostinger Mail disponível nesta sessão enumerava apenas a mailbox `privacidade@guivos.com`. Isso não demonstrava inexistência da mailbox de Research; apenas impedia comprovação direta pelo escopo daquela conexão.
-
-Por isso, a validação foi concluída pelo fluxo externo ponta a ponta.
-
 Nenhum identificador interno de recurso, token, senha ou credencial é registrado neste artefato.
 
-## 4. Envio externo
+## 3. Evidência ponta a ponta
 
 Foi enviado um e-mail sintético de origem externa para `research@guivos.com` com assunto:
 
@@ -60,68 +54,142 @@ T-RESEARCH-001 — teste controlado de recebimento
 
 O conteúdo declarou explicitamente tratar-se de teste sintético e que nenhum dado de participante real estava envolvido.
 
-O remetente externo registrou o envio e não observou rejeição imediata associada à mailbox.
+Posteriormente, o remetente externo recebeu respostas provenientes da própria `research@guivos.com`, dentro da thread do `T-RESEARCH-001`.
 
-## 5. Resultado observado
+Isso comprovou materialmente o ciclo:
 
-### 5.1 Provisionamento funcional
+```text
+REMETENTE EXTERNO
+→ research@guivos.com
+→ RECEBIMENTO
+→ ACESSO OPERACIONAL
+→ RESPOSTA DA MAILBOX
+→ RETORNO AO REMETENTE EXTERNO
+```
 
-Posteriormente foram recebidas no remetente externo respostas provenientes da própria `research@guivos.com`, dentro da thread do `T-RESEARCH-001`.
-
-Isso demonstra que a mailbox estava funcionalmente provisionada para o ciclo testado.
+Resultado:
 
 ```text
 A1-2 PROVISIONING
 → PASS
-```
 
-### 5.2 Recebimento externo
-
-As respostas emitidas pela própria mailbox dentro da thread do teste demonstram que a mensagem externa original foi recebida e operacionalmente acessada.
-
-```text
 A1-3 INBOUND
 → PASS
-```
 
-### 5.3 Resposta externa
-
-O Gmail usado como remetente externo recebeu duas respostas provenientes de `research@guivos.com` na thread do `T-RESEARCH-001`.
-
-```text
 A1-4 OUTBOUND / REPLY
 → PASS
 ```
 
-## 6. Gates que permanecem abertos
+## 4. Confirmação operacional complementar
+
+Após o teste ponta a ponta, foi obtida confirmação operacional declarada do responsável pelo projeto de que:
+
+```text
+FUNCTIONAL OPERATOR
+→ Guivos Research / Pilot Owner do RP-002
+
+DEFAULT FORWARDING TO INCOMPATIBLE PERSONAL MAILBOX
+→ NO
+
+RESEARCH PURPOSE
+→ SEPARATE FROM PRIVACY
+
+MARKETING / SALES USE IN TEST
+→ NO
+```
+
+Essa confirmação não registra Pessoa nominal, login, senha, token, recovery code ou qualquer outra credencial.
+
+Ela é tratada como evidência operacional declarada para os critérios que dependem de configuração/owner e que não são expostos pela conexão técnica disponível do operador.
+
+## 5. Limite da inspeção técnica
+
+A conexão autenticada do Hostinger Mail disponível nesta sessão enumerava apenas `privacidade@guivos.com` e não expunha a configuração interna de `research@guivos.com`.
+
+Portanto, o GKR preserva a distinção:
+
+```text
+END-TO-END MAIL FLOW
+→ TECHNICALLY OBSERVED
+
+FUNCTIONAL OWNER + NO INCOMPATIBLE FORWARDING
+→ OPERATIONALLY ATTESTED
+
+DIRECT CONNECTOR INSPECTION OF research@guivos.com CONFIGURATION
+→ NOT AVAILABLE IN CURRENT CONNECTION SCOPE
+```
+
+O fechamento dos gates não deve ser interpretado como inspeção técnica de configuração que não ocorreu.
+
+## 6. Estado dos subgates A1
+
+### A1-1 — Address Decision
+
+```text
+PASS
+```
+
+Base:
+
+- `research@guivos.com` aprovado como endereço primário.
+
+### A1-2 — Provisioning
+
+```text
+PASS
+```
+
+Base:
+
+- fluxo real de recebimento e resposta demonstrou mailbox funcionalmente provisionada.
+
+### A1-3 — Inbound
+
+```text
+PASS
+```
+
+Base:
+
+- mensagem externa original recebida e operacionalmente acessada, demonstrado pela resposta na mesma thread.
+
+### A1-4 — Outbound / Reply
+
+```text
+PASS
+```
+
+Base:
+
+- remetente externo recebeu respostas provenientes de `research@guivos.com`.
 
 ### A1-5 — Functional Owner
 
-O critério vigente exige comprovar que a função `Guivos Research / Pilot Owner` é quem consegue operar a mailbox, sem exposição de credenciais.
-
-A evidência ponta a ponta comprova operação da mailbox, mas não identifica de forma suficiente a função operacional responsável.
-
 ```text
-A1-5 FUNCTIONAL OWNER
-→ HOLD
+PASS
 ```
+
+Base:
+
+- operação ponta a ponta comprovada;
+- confirmação operacional de que a função `Guivos Research / Pilot Owner do RP-002` é a responsável pela operação da mailbox;
+- nenhuma credencial registrada no GKR.
 
 ### A1-6 — Functional Segregation
 
-O critério vigente exige comprovar cumulativamente que:
-
-- a mailbox não redireciona por padrão para caixa pessoal incompatível;
-- a finalidade de Research permanece distinguível dos canais de Privacy;
-- não há uso de marketing ou vendas no teste.
-
-O teste comprova uso exclusivamente sintético de Research e endereços funcionais distintos, mas não comprova ainda a ausência de redirecionamento padrão incompatível.
-
 ```text
-A1-6 FUNCTIONAL SEGREGATION
-→ HOLD
+PASS
 ```
 
-## 7. Estado de A1 após o T-RESEARCH-001
+Base cumulativa:
+
+- `research@guivos.com` é funcionalmente distinta de `privacidade@guivos.com` e `privacy@guivos.com`;
+- o teste foi exclusivamente de Research, sem marketing ou vendas;
+- foi confirmada ausência de redirecionamento padrão para caixa pessoal incompatível.
+
+## 7. Fechamento de A1
+
+Com todos os subgates materialmente suportados:
 
 ```text
 A1-1 ADDRESS DECISION
@@ -137,41 +205,94 @@ A1-4 OUTBOUND / REPLY
 → PASS
 
 A1-5 FUNCTIONAL OWNER
-→ HOLD
+→ PASS
 
 A1-6 FUNCTIONAL SEGREGATION
-→ HOLD
+→ PASS
 
-A1 OVERALL
-→ PARTIAL / HOLD
+A1 — RESEARCH MAILBOX
+→ PASS
 ```
 
-## 8. Limites da evidência
+## 8. Gates preservados
 
-Este resultado:
+O fechamento de A1 não promove automaticamente o restante do stack.
 
-- comprova a operação básica ponta a ponta da mailbox de Research;
-- não comprova por inferência owner funcional;
-- não comprova por inferência segregação funcional completa;
-- não promove `P3-C`, `P3-D` ou `P4`;
-- não libera Participante 001;
-- não libera o Dry Run Real.
+```text
+P2C
+→ PASS
+
+A2 — NOTICE / CONSENT FLOW
+→ HOLD
+
+A3 — IDENTITY VAULT
+→ HOLD
+
+A4 — RESEARCH BASE
+→ HOLD
+
+A5 — LINKAGE KEY
+→ HOLD
+
+A6 — BACKUP / RECOVERY
+→ HOLD
+
+A7 — CORRECTION / DELETION DRILL ON TARGET STACK
+→ HOLD
+
+A8 — OPENAI API
+→ HOLD
+
+A9 — SEARCH / WEB
+→ HOLD
+
+A10 — RETENTION
+→ HOLD
+
+A11 — FINAL NOTICE
+→ HOLD
+
+A12 — FINAL LEGAL / PRIVACY REVIEW
+→ HOLD
+
+P3-C
+→ HOLD
+
+P3-D
+→ HOLD
+
+P4
+→ HOLD
+
+PARTICIPANT 001
+→ HOLD
+
+DRY RUN REAL
+→ NOT RELEASED
+```
 
 ## 9. Próximo ato material
 
-Fechar `A1` exige somente os dois subgates restantes:
+A sequência operacional aprovada passa agora para o próximo componente material:
 
 ```text
-A1-5 FUNCTIONAL OWNER
-→ PROVAR
-
-A1-6 FUNCTIONAL SEGREGATION
-→ PROVAR
+A3 — IDENTITY VAULT
+→ CONFIGURAR ARMAZENAMENTO LOCAL CRIPTOGRAFADO
+→ VERIFICAR PERMISSÕES
+→ PRESERVAR AUSÊNCIA DE CLOUD SYNC POR PADRÃO
 ```
 
-Até esse fechamento:
+`A2 — Notice / consent flow` permanece em `HOLD` e será congelado em momento compatível com o stack real, conforme a sequência operacional vigente.
+
+## 10. Estado final
 
 ```text
+T-RESEARCH-001
+→ COMPLETED
+
+A1 — RESEARCH MAILBOX
+→ PASS
+
 PARTICIPANT 001
 → HOLD
 
