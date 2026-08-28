@@ -2,11 +2,12 @@
 id: GKR-UX-HOME-NARR-001
 title: Especificação Narrativa Detalhada dos 11 Movimentos da Home Pública
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-28
 parent: GKR-UX-HOME-HANDOFF-001
 depends_on:
+  - GKR-UX-HOME-MASTER-001
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-001
@@ -21,13 +22,14 @@ depends_on:
   - GEB-P01-F06
   - GPA-005
 normative: false
+maturity: reconciled_narrative_detail_pre_materialization
 ---
 
 # Especificação Narrativa Detalhada dos 11 Movimentos da Home Pública
 
 ## 1. Finalidade
 
-Este documento detalha a arquitetura narrativa validada da Home pública de `guivos.com` em onze movimentos funcionais.
+Este documento detalha a arquitetura narrativa validada da Home pública de `guivos.com` em onze movimentos funcionais e, nesta versão, aprofunda `GKR-UX-HOME-MASTER-001 v1.0.0` sem substituir sua autoridade de consumo vigente.
 
 Seu objetivo é transformar a estratégia consolidada da Home em uma especificação suficientemente precisa para servir, futuramente, como entrada direta de:
 
@@ -62,6 +64,8 @@ Ela não poderá eliminar a função semântica necessária apenas para reduzir 
 A regra principal é:
 
 > **liberdade de composição não significa liberdade para perder significado.**
+
+A existência desta especificação não constitui autorização para retomar wireframe, Figma, UI ou implementação durante a auditoria integral.
 
 ---
 
@@ -102,7 +106,7 @@ Produtos podem ser **apresentados institucionalmente** na Home somente no movime
 
 Estado deste documento:
 
-> **ESPECIFICAÇÃO NARRATIVA CONCEITUALMENTE VALIDADA PARA SERVIR DE ENTRADA À FUTURA MATERIALIZAÇÃO DA HOME, AINDA SEM AUTORIZAÇÃO DE WIREFRAME, FIGMA, UI OU IMPLEMENTAÇÃO.**
+> **ESPECIFICAÇÃO NARRATIVA RECONCILIADA COM O MASTER VIGENTE PARA SERVIR DE APROFUNDAMENTO À FUTURA MATERIALIZAÇÃO DA HOME, AINDA SEM AUTORIZAÇÃO DE WIREFRAME, FIGMA, UI OU IMPLEMENTAÇÃO.**
 
 A arquitetura consolidada é:
 
@@ -111,9 +115,9 @@ A arquitetura consolidada é:
 3. Amplitude — mostrar diversidade de caminhos;
 4. Desconexão — revelar o problema estrutural;
 5. Guivos / Conexão — explicar o papel do ecossistema;
-6. Do Possível ao Vivido — demonstrar consequência real;
+6. Da Possibilidade à Experiência — mostrar agência, escolha, experiência e continuidade;
 7. Pertencimento — mostrar quem faz o ecossistema acontecer;
-8. Ecossistema / Produtos — revelar formas de materialização;
+8. Ecossistema / Produtos — revelar responsabilidades especializadas dentro de uma única Guivos;
 9. Autoridade — demonstrar substância;
 10. Autonomia e Confiança — preservar escolha e controle;
 11. Descoberta — convidar à continuidade.
@@ -129,15 +133,16 @@ A futura solução pode combinar visualmente movimentos adjacentes, desde que pr
 Quando uma futura decisão de design entrar em conflito com esta especificação, prevalece:
 
 1. Fundação da Guivos;
-2. `UXA-020` e `UXA-021`;
-3. `GKR-UX-HOME-001`;
-4. `GKR-UX-HOME-VAL-001`;
-5. `GKR-UX-HOME-HANDOFF-001`;
-6. este documento;
-7. benchmark;
-8. proposta de wireframe;
-9. proposta visual;
-10. preferência estética ou tendência de mercado.
+2. `GKR-UX-HOME-MASTER-001`;
+3. `UXA-020` e `UXA-021`;
+4. `GKR-UX-HOME-001`;
+5. `GKR-UX-HOME-VAL-001`;
+6. `GKR-UX-HOME-HANDOFF-001`;
+7. este documento;
+8. benchmark;
+9. proposta de wireframe;
+10. proposta visual;
+11. preferência estética ou tendência de mercado.
 
 Nenhuma referência visual externa possui autoridade para redefinir a Guivos.
 
@@ -153,9 +158,9 @@ A resposta emocional de amplitude é:
 
 > **Um mundo maior de possibilidades passa a fazer parte do seu.**
 
-A concretização institucional de trabalho é:
+A concretização institucional de trabalho reconciliada é:
 
-> **A Guivos conecta pessoas, organizações, conhecimento, oportunidades e experiências para tornar novos caminhos mais visíveis e possíveis.**
+> **A Guivos conecta Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências para tornar novas Possibilidades mais visíveis e aproximar Oportunidades reais quando elas fizerem sentido.**
 
 A Home deve fazer a pessoa compreender essa ideia por experiência narrativa e evidência, não por um manifesto longo na abertura.
 
@@ -178,7 +183,7 @@ PERCEBER A FRAGMENTAÇÃO
 ↓
 ENTENDER POR QUE A GUIVOS EXISTE
 ↓
-VER POSSIBILIDADES SE TORNANDO EXPERIÊNCIAS
+VER POSSIBILIDADES PODENDO CHEGAR À EXPERIÊNCIA
 ↓
 PERCEBER QUE PODE FAZER PARTE
 ↓
@@ -280,7 +285,7 @@ A Hero não deve tentar explicar a empresa inteira.
 
 ## 9.3 Resposta semântica
 
-> **Aqui existe um universo maior de possibilidades e a Guivos conecta elementos desse universo para tornar novos caminhos mais visíveis e possíveis.**
+> **Aqui existe um universo maior de Possibilidades e a Guivos conecta Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências para torná-las mais visíveis e aproximar Oportunidades reais quando elas fizerem sentido.**
 
 ## 9.4 Estado perceptivo de entrada
 
@@ -320,17 +325,17 @@ A pessoa deve sentir algo próximo de:
 
 ### Camada 3 — concretização
 
-> **A Guivos conecta pessoas, organizações, conhecimento, oportunidades e experiências para tornar novos caminhos mais visíveis e possíveis.**
+> **A Guivos conecta Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências para tornar novas Possibilidades mais visíveis e aproximar Oportunidades reais quando elas fizerem sentido.**
 
 A copy final poderá lapidar a terceira camada, mas não remover:
 
 - conexão;
 - pluralidade de participantes;
+- Pessoas, Organizações e Coletivos;
 - conhecimento;
-- oportunidades;
-- experiências;
-- novos caminhos;
-- visibilidade/possibilidade;
+- caminhos e experiências;
+- distinção entre Possibilidade e Oportunidade;
+- Oportunidades reais apenas quando houver materialização externa legítima e fizerem sentido;
 - ausência de promessa de resultado.
 
 ## 9.7 Conteúdos elegíveis
@@ -459,7 +464,7 @@ Não pode variar o significado central.
 
 ## 9.16 Fragmento de prompt para materialização
 
-> Construa a abertura da Home como uma porta para um universo de possibilidades, não como apresentação de portfólio. Preserve a pergunta “O que se torna possível quando você entra aqui?”, comunique amplitude e pertencimento, explique brevemente que a Guivos conecta pessoas, organizações, conhecimento, oportunidades e experiências, use realidade humana em vez de estética tecnológica genérica e faça a principal ação psicológica ser continuar descobrindo.
+> Construa a abertura da Home como uma porta para um universo de possibilidades, não como apresentação de portfólio. Preserve a pergunta “O que se torna possível quando você entra aqui?”, comunique amplitude e pertencimento, explique brevemente que a Guivos conecta Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências para tornar Possibilidades mais visíveis e aproximar Oportunidades reais quando fizerem sentido, use realidade humana em vez de estética tecnológica genérica e faça a principal ação psicológica ser continuar descobrindo.
 
 ---
 
@@ -993,11 +998,11 @@ com a Guivos conectando, organizando e apoiando relações.
 
 ---
 
-# 14. MOVIMENTO 06 — DO POSSÍVEL AO VIVIDO
+# 14. MOVIMENTO 06 — DA POSSIBILIDADE À EXPERIÊNCIA
 
 ## 14.1 Função estratégica
 
-Demonstrar que valor não termina em descoberta, clique ou recomendação.
+Demonstrar que valor não termina em descoberta, clique ou recomendação e que uma Possibilidade pode chegar à experiência pela agência e escolha do participante, sem resultado garantido.
 
 ## 14.2 Pergunta que resolve
 
@@ -1005,24 +1010,39 @@ Demonstrar que valor não termina em descoberta, clique ou recomendação.
 
 ## 14.3 Resposta semântica
 
-> **Algumas possibilidades podem ser descobertas, consideradas, escolhidas e se transformar em experiências reais que geram novos contextos.**
+> **Uma Possibilidade pode ser percebida, apoiada por um Mecanismo e, quando houver materialização externa legítima, aproximar uma Oportunidade real; a escolha permanece do participante e pode ou não levar a uma Experiência e a novos aprendizados ou contextos.**
 
-## 14.4 Assinatura narrativa
+## 14.4 Regra de marca
 
-> **Do possível ao vivido.**
+O Movimento 06 é denominado **Da Possibilidade à Experiência**.
+
+A expressão `Do possível ao vivido.` não constitui assinatura complementar da Home nem segunda assinatura institucional da Guivos.
+
+Quando a assinatura institucional for utilizada, sua aplicação deve obedecer à autoridade de Marca vigente.
 
 ## 14.5 Cadeia de valor
 
+A cadeia de referência, sem caráter de funil obrigatório, é:
+
 ```text
 POSSIBILIDADE
-→ DESCOBERTA
-→ CONSIDERAÇÃO
+→ MECANISMO
+→ OPORTUNIDADE REAL, quando existe materialização externa legítima
 → ESCOLHA
 → EXPERIÊNCIA
-→ NOVO CONTEXTO
+→ CONTRIBUIÇÃO / APRENDIZADO
+→ NOVO MOMENTO
 ```
 
-Nenhuma etapa deve ser interpretada como inevitável.
+```text
+POSSIBILIDADE
+≠ OPORTUNIDADE
+
+EXPERIÊNCIA
+≠ RESULTADO GARANTIDO
+```
+
+Nem toda Possibilidade exige Oportunidade externa. Nenhuma etapa deve ser interpretada como inevitável.
 
 ## 14.6 Estado perceptivo de entrada
 
@@ -1030,7 +1050,7 @@ O visitante entende conexão, mas ainda pode imaginar a Guivos como camada digit
 
 ## 14.7 Estado perceptivo desejado de saída
 
-> **“Isso pode sair da tela e entrar na vida real.”**
+> **“Uma possibilidade pode sair da abstração e chegar à vida real, mas a escolha e o que acontece depois não são determinados pela Guivos.”**
 
 ## 14.8 Tipos de experiência
 
@@ -1063,6 +1083,14 @@ Qual era o contexto?
 
 O que apareceu?
 
+### Mecanismo
+
+Que conhecimento, relação, recurso, ferramenta ou outra capacidade apoiou a passagem?
+
+### Oportunidade real, quando houver
+
+Existiu materialização externa legítima naquele contexto?
+
 ### Escolha
 
 O que o participante decidiu?
@@ -1073,7 +1101,7 @@ O que aconteceu?
 
 ### Depois
 
-Que novo contexto surgiu?
+Que contribuição, aprendizado ou novo contexto surgiu, se algum?
 
 ## 14.10 Autoridade longitudinal
 
@@ -1093,7 +1121,7 @@ Explicitar papéis quando necessário.
 
 Pode documentar:
 
-- “Do possível ao vivido”;
+- a passagem de uma Possibilidade à Experiência;
 - “E depois?”;
 - “O momento que abriu um caminho”;
 - experiências;
@@ -1104,16 +1132,17 @@ Pode documentar:
 
 ## 14.13 Ação comportamental desejada
 
-> **Perceber a Guivos como capaz de conectar possibilidades a experiências concretas sem prometer resultado.**
+> **Perceber a Guivos como capaz de ampliar e conectar condições para que Possibilidades possam chegar a Experiências concretas, inclusive por Oportunidades reais quando existirem, sem prometer resultado.**
 
 ## 14.14 Transição para o movimento 07
 
-> **“Quem faz tudo isso acontecer?”**
+> **“Quem participa daquilo que torna isso possível?”**
 
 ## 14.15 Critérios de aceitação
 
 - mundo real;
 - processo compreensível;
+- distinção entre Possibilidade, Mecanismo e eventual Oportunidade real;
 - protagonismo correto;
 - continuidade quando possível;
 - ausência de milagre;
@@ -1128,11 +1157,12 @@ Pode documentar:
 - “a Guivos mudou minha vida” sem contexto;
 - causalidade exagerada;
 - exploração de sofrimento;
+- confundir Possibilidade e Oportunidade;
 - confundir engajamento digital com evolução real.
 
 ## 14.17 Fragmento de prompt
 
-> Mostre a passagem do possível ao vivido por histórias de contexto, possibilidade, escolha, experiência e continuidade. A Guivos não deve ser a heroína da história. O foco é a experiência real e, quando possível, o que aconteceu depois. Não prometa que o mesmo resultado acontecerá com o visitante.
+> Mostre **Da Possibilidade à Experiência** por histórias de contexto, Possibilidade, Mecanismo, eventual Oportunidade real, escolha, experiência e continuidade. A Guivos não deve ser a heroína da história. Nem toda Possibilidade exige Oportunidade externa e nenhuma Experiência garante resultado. O foco é a agência do participante, a experiência real e, quando possível, o que aconteceu depois.
 
 ---
 
@@ -1148,7 +1178,7 @@ Transformar a percepção de “usuário de plataforma” em “participante de 
 
 ## 15.3 Resposta semântica
 
-> **Pessoas, Organizações e Coletivos também descobrem, criam, conectam, compartilham, participam e tornam possibilidades possíveis; a Guivos conecta esse movimento.**
+> **Pessoas, Organizações e Coletivos também descobrem, criam, conectam, compartilham, participam e ampliam Possibilidades; podem materializar ou habilitar Oportunidades legítimas, e a Guivos conecta esse movimento sem absorver sua agência.**
 
 ## 15.4 Estado perceptivo de entrada
 
@@ -1224,7 +1254,7 @@ Não requer:
 
 ## 15.12 Transição para o movimento 08
 
-> **“Como a Guivos organiza e materializa tudo isso?”**
+> **“Como diferentes responsabilidades especializadas dão forma a esse mesmo ecossistema?”**
 
 ## 15.13 Critérios de aceitação
 
@@ -1253,15 +1283,15 @@ Não requer:
 
 ## 16.1 Função estratégica
 
-Revelar, somente depois da compreensão da ideia maior, como a Guivos se materializa em diferentes estruturas e produtos.
+Revelar, somente depois da compreensão da ideia maior, como Produtos Especializados com responsabilidades distintas pertencem a uma única Guivos.
 
 ## 16.2 Pergunta que resolve
 
-> **Como a Guivos organiza e materializa esse ecossistema?**
+> **Como diferentes responsabilidades especializadas fazem parte da mesma Guivos?**
 
 ## 16.3 Resposta semântica
 
-> **Por diferentes manifestações especializadas da mesma ideia central, cada uma contribuindo para formas distintas de descobrir, conectar ou viver possibilidades.**
+> **Journey, Travel, Mall, Business, Media, Ads e Intelligence são Produtos Especializados com responsabilidades próprias dentro de uma única Guivos; o Intelligence possui papel transversal, sem deixar de ser Produto Especializado.**
 
 ## 16.4 Estado perceptivo de entrada
 
@@ -1271,13 +1301,23 @@ Agora está preparado para conhecer produtos sem reduzi-los à totalidade da mar
 
 ## 16.5 Estado perceptivo desejado de saída
 
-> **“Agora entendi como essa ideia maior começa a se materializar.”**
+> **“Agora entendo como diferentes responsabilidades especializadas fazem parte da mesma Guivos.”**
 
 ## 16.6 Regra principal
 
 > **Os produtos devem ser explicados pela tese da Guivos; a tese não deve ser explicada pela lista de produtos.**
 
-## 16.7 Interpretação institucional das manifestações
+Todos os sete permanecem Produtos Especializados. A transversalidade do Intelligence descreve seu papel e não cria uma classe estrutural externa à taxonomia de Produtos.
+
+```text
+participante
+≠ produto
+
+Organização
+≠ Guivos Business
+```
+
+## 16.7 Interpretação institucional dos Produtos Especializados
 
 ### Guivos Journey
 
@@ -1297,11 +1337,16 @@ Aproximação de produtos e serviços capazes de integrar contextos e experiênc
 
 ### Guivos Business
 
-Participação de Organizações e relações institucionais no ecossistema.
+Produto Especializado B2B para empresas que desejam criar programas, benefícios, acessos e relações de valor com pessoas utilizando capacidades do Ecossistema Guivos. Guivos Business não é sinônimo de Organização nem representa automaticamente a participação institucional de Organizações no ecossistema.
 
 ### Guivos Intelligence
 
-Capacidades de compreensão, organização e conexão de contexto, subordinadas à autonomia.
+Produto Especializado transversal e Intelligence Layer do ecossistema, responsável por transformar dados autorizados, conhecimento, evidências, contextos e relações em **compreensão útil e contextualizada**, insights, análises, Possibilidades e recomendações explicáveis, preservando as autoridades de Pessoas, Organizações e produtos.
+
+```text
+COMPREENDER
+≠ DECIDIR
+```
 
 ### Guivos Ads
 
@@ -1315,8 +1360,7 @@ Pode utilizar:
 
 - caminhos;
 - portas de entrada;
-- manifestações;
-- ambientes especializados;
+- Produtos Especializados com responsabilidades distintas;
 - relações entre capacidades;
 - narrativa conectada.
 
@@ -1328,7 +1372,7 @@ Evitar tratar uma grade homogênea de cards como única solução possível.
 
 ## 16.10 Escala
 
-A grandeza do ecossistema deve vir da coerência entre manifestações, não da quantidade de nomes.
+A grandeza do ecossistema deve vir da coerência entre responsabilidades, não da quantidade de nomes.
 
 ## 16.11 Ação comportamental desejada
 
@@ -1341,8 +1385,10 @@ A grandeza do ecossistema deve vir da coerência entre manifestações, não da 
 ## 16.13 Critérios de aceitação
 
 - produtos aparecem depois da tese;
-- relação entre eles é compreensível;
-- nenhum domina a marca;
+- responsabilidades distintas são compreensíveis;
+- Organização não é confundida com Business;
+- Intelligence é reconhecido como Produto Especializado transversal, não autoridade totalizante;
+- nenhum produto domina a marca;
 - linguagem de ecossistema;
 - sem excesso funcional;
 - sem documentação técnica.
@@ -1353,12 +1399,13 @@ A grandeza do ecossistema deve vir da coerência entre manifestações, não da 
 - grade de produtos sem narrativa;
 - explicar funcionalidades demais;
 - transformar Home em catálogo;
+- transformar Organização em Business;
 - transformar Intelligence em “a Guivos é uma IA”;
 - transformar Mall em “a Guivos é marketplace”.
 
 ## 16.15 Fragmento de prompt
 
-> Apresente os produtos somente depois de o visitante já compreender por que a Guivos existe. Trate Journey, Media, Travel, Mall, Business, Intelligence e Ads como manifestações especializadas da mesma ideia de ecossistema. Evite portfólio corporativo, grid genérico e excesso de funcionalidades.
+> Apresente Produtos Especializados somente depois de o visitante já compreender por que a Guivos existe. Preserve Journey como experiência e continuidade da jornada; Mall, Travel, Business, Media e Ads como Produtos Especializados com responsabilidades próprias; e Intelligence como Produto Especializado transversal de inteligência. Não confunda Organização com Business e não transforme os sete em catálogo, grid genérico ou classes estruturalmente incompatíveis.
 
 ---
 
@@ -1737,9 +1784,9 @@ FECHAMENTO
 | 03 | Amplitude | Possibilidades de quê? | Existem muitas formas de próximos passos | caso isolado → amplitude |
 | 04 | Desconexão | Por que a Guivos precisa existir? | Muitas possibilidades permanecem dispersas | abundância → problema compreendido |
 | 05 | Guivos / Conexão | O que a Guivos faz? | Conecta o que normalmente está separado | problema → função compreendida |
-| 06 | Do Possível ao Vivido | O que acontece depois? | Algumas possibilidades viram experiências | digital → mundo real |
+| 06 | Da Possibilidade à Experiência | O que pode acontecer quando algo faz sentido? | Uma Possibilidade pode chegar à vida real por escolha, sem resultado garantido | abstração → agência / experiência possível |
 | 07 | Pertencimento | Quem faz acontecer? | Pessoas, Organizações e Coletivos | usuário → participante |
-| 08 | Ecossistema | Como se materializa? | Produtos são manifestações da mesma tese | ideia → estrutura |
+| 08 | Ecossistema | Como as responsabilidades se organizam? | Produtos Especializados cumprem responsabilidades distintas dentro de uma única Guivos | ideia → coerência estrutural |
 | 09 | Autoridade | Por que acreditar? | Evidência, continuidade e transparência | estrutura → confiança institucional |
 | 10 | Autonomia | Vão decidir por mim? | O caminho continua sendo seu | autoridade → confiança sem submissão |
 | 11 | Descoberta | E agora? | Explore voluntariamente | compreensão → continuidade |
@@ -1753,7 +1800,7 @@ Os onze movimentos **não equivalem automaticamente a onze blocos visuais**.
 Uma proposta pode combinar, por exemplo:
 
 - Possibilidades Reais + Amplitude;
-- Guivos / Conexão + Do Possível ao Vivido;
+- Guivos / Conexão + Da Possibilidade à Experiência;
 - Pertencimento + Ecossistema;
 - Autoridade + Autonomia.
 
@@ -1792,7 +1839,7 @@ só devem entrar quando cumprirem uma função explícita dentro dos onze movime
 Exemplos:
 
 - logos podem servir a Autoridade, desde que tenham contexto;
-- conteúdo pode servir a Possibilidades Reais, Do Possível ao Vivido ou Autoridade;
+- conteúdo pode servir a Possibilidades Reais, Da Possibilidade à Experiência ou Autoridade;
 - perguntas frequentes podem existir se resolverem fricções reais, não porque a landing page “precisa de FAQ”.
 
 ---
@@ -2142,7 +2189,7 @@ A Home deve responder progressivamente à pergunta:
 A tese emocional é:
 “Um mundo maior de possibilidades passa a fazer parte do seu.”
 
-A função institucional da Guivos é conectar Pessoas, Organizações, Coletivos, conhecimento, oportunidades e experiências para tornar novos caminhos mais visíveis e possíveis, preservando autonomia.
+A função institucional da Guivos é conectar Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências para tornar novas Possibilidades mais visíveis e aproximar Oportunidades reais quando elas fizerem sentido, preservando autonomia.
 
 Construa a narrativa respeitando estas 11 funções:
 
@@ -2151,9 +2198,9 @@ Construa a narrativa respeitando estas 11 funções:
 3. AMPLITUDE — mostrar diferentes formas de próximos passos sem virar grade de categorias.
 4. DESCONEXÃO — mostrar que muitas possibilidades já existem, mas permanecem dispersas ou fora de contexto; sem medo ou FOMO.
 5. GUIVOS / CONEXÃO — explicar que a Guivos conecta o que normalmente está separado; sem grafo técnico ou IA como protagonista.
-6. DO POSSÍVEL AO VIVIDO — mostrar possibilidade → escolha → experiência → continuidade, com mundo real e sem promessa de resultado.
+6. DA POSSIBILIDADE À EXPERIÊNCIA — mostrar Possibilidade → Mecanismo → Oportunidade real, quando houver materialização externa legítima → escolha → Experiência → contribuição/aprendizado → novo Momento. Não trate a cadeia como funil obrigatório, não confunda Possibilidade com Oportunidade e não prometa resultado.
 7. PERTENCIMENTO — mostrar Pessoas, Organizações e Coletivos como participantes que também criam valor; não transformar em rede social.
-8. ECOSSISTEMA / PRODUTOS — somente agora apresentar Journey, Media, Travel, Mall, Business, Intelligence e Ads como manifestações da mesma ideia, nunca como catálogo que define a marca.
+8. ECOSSISTEMA / PRODUTOS — somente agora apresentar Journey, Travel, Mall, Business, Media, Ads e Intelligence como Produtos Especializados com responsabilidades distintas dentro de uma única Guivos; Intelligence é transversal sem deixar de ser Produto Especializado e Organização não é Business.
 9. AUTORIDADE — usar evidências, contexto, histórias, participantes e métricas apenas quando reais e verificáveis.
 10. AUTONOMIA E CONFIANÇA — mostrar que a Guivos amplia horizonte sem decidir pela pessoa; permitir compreensão sem cadastro e sem falsa personalização.
 11. DESCOBERTA — encerrar como porta para explorar; CTA orientado a descobrir, não a pressão comercial.
@@ -2243,7 +2290,7 @@ Antes de materialização futura, deverá existir decisão explícita que confir
 
 A futura Home será considerada narrativamente aderente quando uma pessoa puder percorrê-la e chegar, sem precisar conhecer a arquitetura interna da Guivos, a uma compreensão próxima de:
 
-> **Existe um mundo maior de possibilidades. Algumas já acontecem de verdade. Elas assumem muitas formas, mas frequentemente estão desconectadas. A Guivos existe para conectar esse universo e tornar novos caminhos mais visíveis e possíveis. Pessoas, Organizações e Coletivos também fazem isso acontecer. Diferentes produtos materializam partes do mesmo ecossistema. Há evidências reais por trás da proposta. A Guivos amplia meu horizonte, mas a escolha continua comigo. Agora quero descobrir o que existe aqui.**
+> **Existe um mundo maior de possibilidades. Algumas já acontecem de verdade. Elas assumem muitas formas, mas frequentemente estão desconectadas. A Guivos existe para conectar esse universo, tornar Possibilidades mais visíveis e aproximar Oportunidades reais quando fizerem sentido. Pessoas, Organizações e Coletivos também fazem isso acontecer. Produtos Especializados cumprem responsabilidades distintas dentro do mesmo ecossistema. Há evidências reais por trás da proposta. A Guivos amplia meu horizonte, mas a escolha continua comigo. Agora quero descobrir o que existe aqui.**
 
 ---
 
