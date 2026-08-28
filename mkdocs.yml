@@ -242,15 +242,45 @@ nav:
           - Catálogo de Fenômenos do Ecossistema: research/RP-001/ecosystem-phenomena-catalog.md
           - Recomendações Arquiteturais: research/RP-001/recommendations.md
       - Possibilidades, Oportunidades e Supply:
-          - Visão Geral: research/RP-002/index.md
-          - Modelo Conceitual: research/RP-002/conceptual-model.md
-          - Corpus Real e Supply Ecosystems: research/RP-002/real-world-supply-corpus.md
-          - Discovery, Admission, Proveniência e Freshness: research/RP-002/discovery-admission-and-freshness.md
-          - Organizações, Coletivos, Rede e Modelo Econômico: research/RP-002/organizations-collectives-and-economic-model.md
-          - Valor para a Pessoa e Diferenciação Competitiva: research/RP-002/person-value-and-competitive-differentiation.md
-          - Validação de PMF e Prontidão do Piloto: research/RP-002/pmf-validation-and-pilot-readiness.md
-          - Liberação Operacional do Piloto e Dry Run Real: research/RP-002/pilot-operational-release-and-dry-run.md
-          - Registro de Evidências e Estado das Claims: research/RP-002/evidence-and-claim-status-register.md
+          - Fundamentos e Pesquisa Consolidada:
+              - Visão Geral: research/RP-002/index.md
+              - Modelo Conceitual: research/RP-002/conceptual-model.md
+              - Corpus Real e Supply Ecosystems: research/RP-002/real-world-supply-corpus.md
+              - Discovery, Admission, Proveniência e Freshness: research/RP-002/discovery-admission-and-freshness.md
+              - Organizações, Coletivos, Rede e Modelo Econômico: research/RP-002/organizations-collectives-and-economic-model.md
+              - Valor para a Pessoa e Diferenciação Competitiva: research/RP-002/person-value-and-competitive-differentiation.md
+              - Registro de Evidências e Estado das Claims: research/RP-002/evidence-and-claim-status-register.md
+          - Validação, Field Kit e Dry Run:
+              - Validação de PMF e Prontidão do Piloto: research/RP-002/pmf-validation-and-pilot-readiness.md
+              - Liberação Operacional do Piloto e Dry Run Real: research/RP-002/pilot-operational-release-and-dry-run.md
+              - Congelamento Metodológico e Plano de Análise: research/RP-002/pilot-methodological-freeze-and-analysis-plan.md
+          - Privacidade, Controlador e Direitos:
+              - Prontidão do Controlador e Canal de Privacidade: research/RP-002/pilot-controller-and-privacy-channel-readiness.md
+              - Decisão Formal do Controlador: research/RP-002/pilot-controller-formal-decision.md
+              - Finalidades, Categorias de Dados e Base Legal: research/RP-002/pilot-data-purpose-categories-and-legal-basis-assessment.md
+              - Provisionamento do Canal de Privacidade: research/RP-002/pilot-privacy-channel-provisioning-decision.md
+              - Teste do Canal de Privacidade: research/RP-002/pilot-privacy-channel-test-result.md
+              - Fechamento do Teste Sintético de Direitos: research/RP-002/pilot-rights-process-synthetic-test-closure.md
+              - Fluxo de Notice e Consentimento: research/RP-002/pilot-notice-consent-flow-decision.md
+              - Notice e Consentimento v0.2: research/RP-002/pilot-participant-privacy-notice-and-consent-v0.2.md
+              - Checklist Final Legal e de Privacidade: research/RP-002/pilot-final-legal-privacy-review-checklist.md
+          - Research Mailbox:
+              - Decisão da Mailbox de Research: research/RP-002/pilot-research-mailbox-decision.md
+              - Teste da Mailbox de Research: research/RP-002/pilot-research-mailbox-test-001.md
+          - Stack Mínimo Privacy-First:
+              - Opções e Recomendação do Stack: research/RP-002/pilot-minimum-stack-options-and-recommendation.md
+              - Decisão do Target do Stack: research/RP-002/pilot-minimum-stack-target-decision.md
+              - Identity Vault — Target de Implementação: research/RP-002/pilot-identity-vault-implementation-decision.md
+              - Research Base — Target de Implementação: research/RP-002/pilot-research-base-implementation-decision.md
+              - Linkage Key — Target de Implementação: research/RP-002/pilot-linkage-key-implementation-decision.md
+              - Backup e Recovery — Target de Implementação: research/RP-002/pilot-backup-recovery-implementation-decision.md
+              - OpenAI API — Target de Implementação: research/RP-002/pilot-openai-api-implementation-decision.md
+              - Search/Web — Target de Implementação: research/RP-002/pilot-search-web-implementation-decision.md
+              - Política de Retenção — Target Documental: research/RP-002/pilot-retention-policy-decision.md
+              - Registro Reconciliado de Operadores e Ferramentas: research/RP-002/pilot-operator-and-tool-registry-reconciliation.md
+          - Fechamento Documental do Piloto:
+              - Decisão de Fechamento Documental: research/RP-002/pilot-documentation-closure-decision.md
+              - Revisão de Fechamento Documental: research/RP-002/pilot-documentation-closure-review.md
 
   - Estratégia, Mercado e Crescimento:
       - Estratégia de Negócio:
