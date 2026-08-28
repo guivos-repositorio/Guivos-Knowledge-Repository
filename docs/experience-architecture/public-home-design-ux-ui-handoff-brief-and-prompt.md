@@ -1182,7 +1182,7 @@ A solução deve fazer alguém pensar primeiro “existe mais mundo possível aq
 ```text
 Projete a Home pública da Guivos como entrada para um ecossistema global de Possibilidades humanas e institucionais, não como catálogo de produtos. A pergunta-mãe é “O que se torna possível quando você entra aqui?”. A percepção seguinte deve ser “Um mundo maior de possibilidades passa a fazer parte do seu.” A Guivos conecta Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências para tornar Possibilidades mais visíveis e aproximar Oportunidades reais quando elas fizerem sentido, preservando autonomia.
 
-Mostre Possibilidade antes de produto, prova antes de autodeclaração e mundo real antes de tecnologia. Possibilidade não é sinônimo de Oportunidade. O Movimento 06 é “Da Possibilidade à Experiência” e pode usar Mecanismo e eventual Oportunidade real; o modelo editorial geral continua Contexto → Possibilidade → Decisão → Experiência → Consequência → Continuidade.
+Mostre Possibilidade antes de produto, prova antes de autodeclaração e mundo real antes de tecnologia. Possibilidade não é sinônimo de Oportunidade. O Movimento 06 é “Da Possibilidade à Experiência” e deve preservar Mecanismo, com Oportunidade real somente quando houver materialização externa legítima; o modelo editorial geral continua Contexto → Possibilidade → Decisão → Experiência → Consequência → Continuidade.
 
 No Movimento 08, preserve Journey como experiência/continuidade, Mall/Travel/Business/Media/Ads com responsabilidades próprias e Intelligence como Produto Especializado transversal / Intelligence Layer. Todos os sete são Produtos Especializados. Organização não é Business. Intelligence amplia compreensão e não decide pelo participante.
 
