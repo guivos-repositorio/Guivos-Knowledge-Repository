@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-AUDIT-002
 title: Auditoria Consolidada de Integridade da Arquitetura da Home Pública
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-10
+last_updated: 2026-08-28
 parent: GKR-UX-HOME-AUDIT-001
 depends_on:
   - UXA-020
@@ -24,7 +24,10 @@ depends_on:
   - GKR-UX-HOME-SYS-001
   - GKR-UX-HOME-GTM-BOUNDARY-001
   - GKR-UX-HOME-AUDIT-001
+related:
+  - GKR-UX-HOME-MASTER-001
 normative: false
+maturity: reconciled_integrity_audit_pre_materialization
 ---
 
 # Auditoria Consolidada de Integridade da Arquitetura da Home Pública
@@ -32,6 +35,10 @@ normative: false
 ## 1. Finalidade
 
 Esta auditoria consolida a leitura arquitetural da Home pública de `guivos.com` após os refinamentos sucessivos desta frente.
+
+Nesta versão, o audit foi reconciliado com `GKR-UX-HOME-MASTER-001 v1.0.0`, com `GKR-UX-HOME-AUDIT-001 v0.9.0` e com o fechamento do domínio narrativo que atualizou `GKR-UX-HOME-NARR-005`, `GKR-UX-HOME-NARR-001` e `GKR-UX-HOME-VAL-001`.
+
+O Master é a autoridade de consumo vigente da Home. Esta auditoria verifica integridade entre camadas e não o substitui.
 
 Seu objetivo não é criar novas seções, wireframe, UI ou Marketing/GTM.
 
@@ -50,7 +57,7 @@ A auditoria também impede que documentos anteriores sejam lidos isoladamente e 
 
 Resultado:
 
-> **NENHUMA CONTRADIÇÃO ESTRUTURAL CRÍTICA FOI IDENTIFICADA NA INTERPRETAÇÃO VIGENTE DA ARQUITETURA DA HOME.**
+> **NENHUMA CONTRADIÇÃO ESTRUTURAL CRÍTICA FOI IDENTIFICADA NA INTERPRETAÇÃO VIGENTE DA ARQUITETURA DA HOME APÓS A RECONCILIAÇÃO NARRATIVA.**
 
 A arquitetura atual apresenta coerência entre:
 
@@ -58,7 +65,8 @@ A arquitetura atual apresenta coerência entre:
 - Hero;
 - navegação;
 - participantes;
-- produtos;
+- Produtos Especializados;
+- Possibilidade, Mecanismo, eventual Oportunidade real e Experiência;
 - sete macroexperiências;
 - prova;
 - autoridade;
@@ -66,13 +74,17 @@ A arquitetura atual apresenta coerência entre:
 - mobile;
 - fronteira com Marketing/GTM.
 
-Foram identificados **três resíduos documentais de menor precedência**, descritos nesta auditoria, que não alteram a arquitetura vigente porque já possuem refinamentos posteriores explícitos.
+Do inventário histórico de resíduos desta auditoria:
+
+- `RES-01` permanece como resíduo documental em `NAV-001`;
+- `RES-02` foi **resolvido** pela reconciliação de `NARR-001`;
+- `RES-03` permanece como risco de consumo do handoff original, que antecede refinamentos posteriores.
 
 Conclusão de maturidade:
 
 > **A arquitetura estratégica da Home está convergida dentro do escopo atual e não necessita de novos refinamentos conceituais isolados antes de uma futura etapa de materialização, salvo nova decisão explícita ou descoberta de contradição real.**
 
-Isso não autoriza wireframe, Figma, UI, protótipo, implementação ou merge.
+Isso não autoriza wireframe, Figma, UI, protótipo, implementação ou publicação.
 
 ---
 
@@ -138,17 +150,22 @@ MACROEXPERIÊNCIA 03 — DESCONEXÃO → CONEXÃO
 
 ↓
 
-MACROEXPERIÊNCIA 04 — DO POSSÍVEL AO VIVIDO + PERTENCIMENTO
-├── Movimento 06 — Do Possível ao Vivido
+MACROEXPERIÊNCIA 04 — DA POSSIBILIDADE À EXPERIÊNCIA + PERTENCIMENTO
+├── Movimento 06 — Da Possibilidade à Experiência
 └── Movimento 07 — Pertencimento
 
 ↓
 
 MACROEXPERIÊNCIA 05 — COERÊNCIA DO ECOSSISTEMA
 └── Movimento 08 — Ecossistema / Produtos
-    ├── Journey — experiência e continuidade
-    ├── Travel / Mall / Media / Business / Ads — manifestações especializadas
-    └── Intelligence — inteligência transversal
+    ├── Journey
+    ├── Travel
+    ├── Mall
+    ├── Business
+    ├── Media
+    ├── Ads
+    └── Intelligence
+        └── Produto Especializado transversal / Intelligence Layer
 
 ↓
 
@@ -172,6 +189,8 @@ Regra:
 
 > **Onze funções. Sete macroexperiências de referência. Uma única narrativa.**
 
+Todos os sete permanecem Produtos Especializados. A transversalidade do Intelligence descreve seu papel e não cria uma classe estrutural externa aos demais Produtos Especializados.
+
 ---
 
 ## 5. Auditoria de coerência — posicionamento
@@ -190,7 +209,7 @@ A arquitetura preserva:
 - simplicidade sem superficialidade;
 - autonomia sem passividade.
 
-Nenhum refinamento posterior deslocou a marca para uma interpretação de marketplace, superapp, rede social, plataforma de IA ou portfólio corporativo.
+Nenhum refinamento posterior desloca a marca para uma interpretação de marketplace, superapp, rede social, plataforma de IA ou portfólio corporativo.
 
 ---
 
@@ -216,23 +235,19 @@ O CTA da Hero pertence à continuidade da própria Home.
 
 Não existe necessidade estratégica de repetir `Iniciar Jornada` dentro da Hero.
 
-### Regra adicional de controle
-
-As três camadas semânticas da Hero:
+As três camadas semânticas da Hero são:
 
 1. pergunta-mãe;
 2. amplitude / pertencimento;
-3. concretização do papel da Guivos;
+3. concretização do papel da Guivos.
 
-**não significam obrigação de apresentar três blocos textuais longos simultaneamente com o mesmo peso visual.**
+A terceira camada vigente deve preservar Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências, distinguir Possibilidade de Oportunidade e não prometer resultado.
 
 Formalização:
 
 > **camadas semânticas da Hero ≠ três massas de texto simultaneamente dominantes.**
 
 O design futuro pode trabalhar hierarquia, ritmo, progressive disclosure e composição, desde que todas as funções semânticas permaneçam compreensíveis.
-
-Isso é necessário para proteger simplicidade e impacto.
 
 ---
 
@@ -248,8 +263,8 @@ A arquitetura vigente distingue:
 Pessoa / Organização / Coletivo
 = quem participa
 
-Journey / Travel / Mall / Media / Business / Intelligence / Ads
-= como o ecossistema ganha forma e capacidade
+Journey / Travel / Mall / Business / Media / Ads / Intelligence
+= Produtos Especializados com responsabilidades próprias
 ```
 
 Não existe correspondência 1:1.
@@ -269,13 +284,30 @@ A passagem Movimento 07 → 08 preserva corretamente esta separação.
 
 ### Resultado
 
-**COERENTE APÓS OS REFINAMENTOS NARR-002 E NARR-003.**
+**COERENTE APÓS A RECONCILIAÇÃO DO DOMÍNIO NARRATIVO.**
 
-A leitura correta é:
+A leitura vigente é:
 
-- Journey — experiência e continuidade;
-- Travel, Mall, Media, Business e Ads — manifestações especializadas;
-- Intelligence — inteligência transversal.
+- Journey — Produto Especializado;
+- Travel — Produto Especializado;
+- Mall — Produto Especializado;
+- Business — Produto Especializado B2B;
+- Media — Produto Especializado;
+- Ads — Produto Especializado;
+- Intelligence — Produto Especializado transversal / Intelligence Layer.
+
+Regras:
+
+```text
+Organização
+≠ Business
+
+Intelligence transversal
+≠ nova classe estrutural
+
+COMPREENDER
+≠ DECIDIR
+```
 
 O Movimento 08 explica coerência e não replica o launcher.
 
@@ -283,7 +315,7 @@ Formalização:
 
 > **launcher responde “onde ir”; Movimento 08 responde “por que isso pertence à mesma Guivos”.**
 
-A arquitetura rejeita sete cards equivalentes como tradução automática dos sete componentes.
+A arquitetura rejeita sete cards equivalentes como tradução automática dos sete Produtos Especializados.
 
 ---
 
@@ -291,7 +323,7 @@ A arquitetura rejeita sete cards equivalentes como tradução automática dos se
 
 ### Resultado
 
-**SEM REDUNDÂNCIA FUNCIONAL APÓS NARR-004.**
+**SEM REDUNDÂNCIA FUNCIONAL.**
 
 Os três territórios são diferentes:
 
@@ -303,9 +335,21 @@ Mostra realidade rapidamente.
 
 ### Movimento 06
 
-> **“Isso pode sair do possível e chegar à experiência.”**
+> **“Uma Possibilidade pode chegar à Experiência por agência e escolha.”**
 
-Mostra processo, escolha, experiência e continuidade.
+Sua cadeia de referência é:
+
+```text
+POSSIBILIDADE
+→ MECANISMO
+→ OPORTUNIDADE REAL, quando houver materialização externa legítima
+→ ESCOLHA
+→ EXPERIÊNCIA
+→ CONTRIBUIÇÃO / APRENDIZADO
+→ NOVO MOMENTO
+```
+
+Nem toda Possibilidade exige Oportunidade externa e nenhuma etapa implica resultado garantido.
 
 ### Movimento 09
 
@@ -323,11 +367,9 @@ A mesma história pode alimentar mais de uma função editorial, mas não deve s
 
 **ARQUITETURA SEMANTICAMENTE JUSTIFICADA, COM DENSIDADE VISUAL A SER CONTROLADA PELO DESIGN.**
 
-O Header possui oito funções conceituais principais.
+O Header possui múltiplas funções conceituais que seriam excessivas se tratadas como links textuais de igual peso.
 
-Isso seria excessivo se todas fossem tratadas como links textuais de igual peso.
-
-A própria arquitetura já mitiga esse risco por:
+A própria arquitetura mitiga esse risco por:
 
 - launcher compacto;
 - globo;
@@ -336,11 +378,11 @@ A própria arquitetura já mitiga esse risco por:
 - compactação durante o scroll;
 - condensação responsiva no mobile.
 
-Portanto, não existe fundamento arquitetural para remover itens neste momento.
+Portanto, não existe fundamento arquitetural para remover itens apenas por contagem.
 
 Regra:
 
-> **inventário do Header ≠ oito elementos de igual peso visual.**
+> **inventário do Header ≠ elementos de igual peso visual.**
 
 ---
 
@@ -352,15 +394,7 @@ Regra:
 
 O agrupamento reduz a fragmentação dos onze movimentos.
 
-Mas o futuro design não deve converter cada macroexperiência em uma seção corporativa com:
-
-- título;
-- subtítulo;
-- três cards;
-- CTA;
-- divisor;
-
-repetidos sete vezes.
+Mas o futuro design não deve converter cada macroexperiência em uma seção corporativa repetitiva com título, subtítulo, cards, CTA e divisor.
 
 Formalização:
 
@@ -434,7 +468,7 @@ Ela aparece em:
 - escolha do momento de `Iniciar Jornada`;
 - scroll não bloqueante;
 - ausência de urgência artificial;
-- Intelligence subordinada à decisão humana;
+- Intelligence subordinado à compreensão e sem substituir decisão;
 - prova sem causalidade exagerada.
 
 O Movimento 10 funciona como explicitação de um princípio já vivido ao longo da Home.
@@ -485,11 +519,11 @@ Regra:
 
 ---
 
-# 17. Resíduos documentais identificados
+# 17. Resíduos documentais e reconciliações
 
 ## RES-01 — disponibilidade operacional antes do wireframe em NAV-001
 
-`GKR-UX-HOME-NAV-001 v0.3.0` ainda contém formulação residual segundo a qual a disponibilidade operacional dos destinos deveria ser confirmada antes do wireframe e usa verdade operacional como critério para determinados acessos contextuais.
+`GKR-UX-HOME-NAV-001 v0.3.0` ainda contém formulação segundo a qual a disponibilidade operacional dos destinos deveria ser confirmada antes do wireframe e usa existência/estado público do destino como critério para determinados acessos contextuais.
 
 Essa formulação é anterior à fronteira consolidada em `GKR-UX-HOME-GTM-BOUNDARY-001`.
 
@@ -509,53 +543,43 @@ disponibilidade de lançamento
 
 Classificação:
 
-**RESÍDUO DOCUMENTAL SUPERADO — não é lacuna arquitetural.**
+**RESÍDUO DOCUMENTAL ATUAL — não é lacuna arquitetural.**
 
 ---
 
 ## RES-02 — descrição antiga de Business em NARR-001
 
-A descrição resumida original do Movimento 08 em `GKR-UX-HOME-NARR-001` associa Business à participação de Organizações.
+O audit original registrava que `GKR-UX-HOME-NARR-001` associava Business à participação de Organizações.
 
-Essa formulação foi refinada e substituída no domínio específico por `GKR-UX-HOME-NARR-002` e `GKR-UX-HOME-NARR-003`.
+Esse resíduo foi removido na reconciliação narrativa de 28/08/2026.
 
 Interpretação vigente:
 
 > **Organização ≠ Guivos Business.**
 
-Guivos Business é produto B2B especializado.
+Guivos Business é Produto Especializado B2B.
 
 Organização é tipo estrutural de participante.
 
 Classificação:
 
-**RESÍDUO DOCUMENTAL SUPERADO — não é lacuna arquitetural.**
+**RESOLVIDO — preservado apenas como histórico desta auditoria.**
 
 ---
 
 ## RES-03 — handoff original antecede os refinamentos posteriores
 
-`GKR-UX-HOME-HANDOFF-001 v0.1.0` foi criado antes de:
+`GKR-UX-HOME-HANDOFF-001 v0.1.0` permanece anterior a diversos refinamentos e ainda contém, entre outros, a terceira camada antiga da Hero, o rótulo histórico `Do possível ao vivido`, a cadeia conceitual anterior e formulações pré-reconciliação sobre produtos.
 
-- NARR-002;
-- NARR-003;
-- NARR-004;
-- NARR-005;
-- NAV-002;
-- NAV-003;
-- NAV-004;
-- GTM-BOUNDARY-001;
-- AUDIT-001 em suas revisões posteriores.
-
-Ele permanece válido como briefing-base, mas não deve ser utilizado isoladamente como snapshot final da arquitetura.
+Ele permanece útil como briefing-base histórico, mas não deve ser utilizado isoladamente como snapshot final da arquitetura.
 
 Regra de consumo:
 
-> **HANDOFF-001 deve ser lido junto aos refinamentos posteriores desta frente. Em conflito específico, prevalece o refinamento posterior do mesmo domínio.**
+> **GKR-UX-HOME-MASTER-001 é a autoridade de consumo vigente. HANDOFF-001 somente pode ser usado como aprofundamento histórico quando reconciliado com o Master e com os documentos especializados posteriores.**
 
 Classificação:
 
-**RISCO DE CONSUMO DOCUMENTAL — não é falha da arquitetura.**
+**RISCO DE CONSUMO DOCUMENTAL ATUAL — não é falha da arquitetura.**
 
 ---
 
@@ -563,36 +587,41 @@ Classificação:
 
 Para evitar reintrodução de decisões superadas, utilizar a seguinte regra prática:
 
+### Autoridade de consumo
+
+1. `GKR-UX-HOME-MASTER-001`.
+
 ### Fundação e contratos
 
-1. Fundação vigente da Guivos;
-2. `UXA-020`;
-3. `UXA-021`.
+2. Fundação vigente da Guivos;
+3. `UXA-020`;
+4. `UXA-021`.
 
-### Direção da Home
+### Direção e aprofundamentos
 
-4. `GKR-UX-HOME-001`;
-5. `GKR-UX-HOME-VAL-001`.
-
-### Narrativa específica
-
-6. `GKR-UX-HOME-NARR-001` como base;
-7. `NARR-002`, `NARR-003`, `NARR-004` e `NARR-005` prevalecem em seus respectivos domínios específicos.
+5. `GKR-UX-HOME-001`;
+6. `GKR-UX-HOME-VAL-001`;
+7. `GKR-UX-HOME-NARR-001`;
+8. `NARR-002`, `NARR-003`, `NARR-004` e `NARR-005` em seus respectivos domínios específicos.
 
 ### Navegação
 
-8. `GKR-UX-HOME-NAV-001` como base;
-9. `NAV-002`, `NAV-003` e `NAV-004` prevalecem em seus respectivos refinamentos.
+9. `GKR-UX-HOME-NAV-001` como base histórica;
+10. `NAV-002`, `NAV-003` e `NAV-004` prevalecem em seus refinamentos;
+11. `GKR-UX-HOME-GTM-BOUNDARY-001` prevalece sobre a formulação residual de disponibilidade operacional de `NAV-001`.
 
-### Sistemas transversais e fronteira
+### Sistemas transversais
 
-10. `GKR-UX-HOME-SYS-001`;
-11. `GKR-UX-HOME-GTM-BOUNDARY-001`.
+12. `GKR-UX-HOME-SYS-001`.
 
 ### Auditoria
 
-12. `GKR-UX-HOME-AUDIT-001`;
-13. esta auditoria consolidada para integridade entre as camadas.
+13. `GKR-UX-HOME-AUDIT-001 v0.9.0`;
+14. esta auditoria consolidada para integridade entre as camadas.
+
+Regra:
+
+> **o Master governa consumo; documentos especializados aprofundam; auditorias verificam integridade; nenhum audit reabre sozinho uma decisão convergida.**
 
 ---
 
@@ -627,6 +656,13 @@ Permanecem deliberadamente abertos:
 
 - composição adicional além do link `Mapa do Ecossistema`.
 
+### Resíduos documentais
+
+- reconciliação de `NAV-001` com a fronteira GTM vigente;
+- reconciliação de `HANDOFF-001` com o Master e os refinamentos posteriores.
+
+Esses resíduos são problemas de consumo documental, não lacunas da arquitetura estratégica.
+
 ### Etapas posteriores
 
 - Marketing/GTM;
@@ -643,7 +679,7 @@ Esses itens não justificam continuar aumentando a arquitetura conceitual da Hom
 
 ## 20. Decisão de convergência
 
-A partir desta auditoria, a recomendação de governança é:
+A recomendação de governança permanece:
 
 > **tratar a arquitetura estratégica da Home pública como convergida dentro do escopo atual.**
 
@@ -652,6 +688,7 @@ Isso significa:
 - não criar novos refinamentos apenas para aumentar detalhamento documental;
 - não reabrir decisões já consolidadas sem novo fundamento;
 - não transformar escolhas futuras de design em novas decisões estratégicas antecipadas;
+- corrigir resíduos documentais quando puderem reintroduzir semântica superada;
 - registrar nova exceção somente quando surgir conflito real, nova necessidade de produto ou nova decisão explícita do fundador/governança.
 
 Regra de controle:
@@ -662,7 +699,7 @@ Regra de controle:
 
 ## 21. Gate para a próxima etapa
 
-A próxima etapa possível é uma futura exploração de materialização visual/wireframe.
+A próxima etapa de produto possível é uma futura exploração de materialização visual/wireframe.
 
 Ela somente começa mediante autorização explícita.
 
@@ -674,6 +711,8 @@ Até essa autorização:
 - nenhuma implementação deve começar;
 - nenhuma decisão de Marketing/GTM deve ser inferida.
 
+A correção dos resíduos documentais de `NAV-001` e `HANDOFF-001` pode ocorrer sem constituir autorização de materialização, pois sua finalidade é apenas impedir reintrodução de decisões superadas.
+
 Estado final desta auditoria:
 
-> **ARQUITETURA ESTRATÉGICA CONVERGIDA — MATERIALIZAÇÃO NÃO AUTORIZADA.**
+> **ARQUITETURA ESTRATÉGICA CONVERGIDA — AUDITORIA RECONCILIADA — MATERIALIZAÇÃO NÃO AUTORIZADA.**
