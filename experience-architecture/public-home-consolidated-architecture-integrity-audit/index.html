@@ -13894,7 +13894,7 @@
 <h1 id="auditoria-consolidada-de-integridade-da-arquitetura-da-home-publica">Auditoria Consolidada de Integridade da Arquitetura da Home Pública<a class="headerlink" href="#auditoria-consolidada-de-integridade-da-arquitetura-da-home-publica" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Esta auditoria consolida a leitura arquitetural da Home pública de <code>guivos.com</code> após os refinamentos sucessivos desta frente.</p>
-<p>Nesta versão, o audit foi reconciliado com <code>GKR-UX-HOME-MASTER-001 v1.0.0</code>, com <code>GKR-UX-HOME-AUDIT-001 v0.9.0</code> e com o fechamento do domínio narrativo que atualizou <code>GKR-UX-HOME-NARR-005</code>, <code>GKR-UX-HOME-NARR-001</code> e <code>GKR-UX-HOME-VAL-001</code>.</p>
+<p>Nesta versão, o audit foi reconciliado com <code>GKR-UX-HOME-MASTER-001 v1.0.0</code>, com <code>GKR-UX-HOME-AUDIT-001 v0.9.0</code>, com o fechamento do domínio narrativo que atualizou <code>GKR-UX-HOME-NARR-005</code>, <code>GKR-UX-HOME-NARR-001</code> e <code>GKR-UX-HOME-VAL-001</code> e com <code>GKR-UX-HOME-NAV-001 v0.4.0</code>, reconciliado com a fronteira GTM vigente.</p>
 <p>O Master é a autoridade de consumo vigente da Home. Esta auditoria verifica integridade entre camadas e não o substitui.</p>
 <p>Seu objetivo não é criar novas seções, wireframe, UI ou Marketing/GTM.</p>
 <p>Ela verifica quatro dimensões:</p>
@@ -13909,7 +13909,7 @@
 <h2 id="2-resultado-executivo">2. Resultado executivo<a class="headerlink" href="#2-resultado-executivo" title="Permanent link">&para;</a></h2>
 <p>Resultado:</p>
 <blockquote>
-<p><strong>NENHUMA CONTRADIÇÃO ESTRUTURAL CRÍTICA FOI IDENTIFICADA NA INTERPRETAÇÃO VIGENTE DA ARQUITETURA DA HOME APÓS A RECONCILIAÇÃO NARRATIVA.</strong></p>
+<p><strong>NENHUMA CONTRADIÇÃO ESTRUTURAL CRÍTICA FOI IDENTIFICADA NA INTERPRETAÇÃO VIGENTE DA ARQUITETURA DA HOME APÓS A RECONCILIAÇÃO NARRATIVA E DE NAVEGAÇÃO.</strong></p>
 </blockquote>
 <p>A arquitetura atual apresenta coerência entre:</p>
 <ul>
@@ -13926,9 +13926,9 @@
 <li>mobile;</li>
 <li>fronteira com Marketing/GTM.</li>
 </ul>
-<p>Do inventário histórico de resíduos desta auditoria:</p>
+<p>Do inventário de resíduos desta auditoria:</p>
 <ul>
-<li><code>RES-01</code> permanece como resíduo documental em <code>NAV-001</code>;</li>
+<li><code>RES-01</code> foi <strong>resolvido</strong> pela reconciliação de <code>NAV-001 v0.4.0</code> com a fronteira GTM vigente;</li>
 <li><code>RES-02</code> foi <strong>resolvido</strong> pela reconciliação de <code>NARR-001</code>;</li>
 <li><code>RES-03</code> permanece como risco de consumo do handoff original, que antecede refinamentos posteriores.</li>
 </ul>
@@ -14271,8 +14271,12 @@ COMPREENDER
 <hr />
 <h1 id="17-residuos-documentais-e-reconciliacoes">17. Resíduos documentais e reconciliações<a class="headerlink" href="#17-residuos-documentais-e-reconciliacoes" title="Permanent link">&para;</a></h1>
 <h2 id="res-01-disponibilidade-operacional-antes-do-wireframe-em-nav-001">RES-01 — disponibilidade operacional antes do wireframe em NAV-001<a class="headerlink" href="#res-01-disponibilidade-operacional-antes-do-wireframe-em-nav-001" title="Permanent link">&para;</a></h2>
-<p><code>GKR-UX-HOME-NAV-001 v0.3.0</code> ainda contém formulação segundo a qual a disponibilidade operacional dos destinos deveria ser confirmada antes do wireframe e usa existência/estado público do destino como critério para determinados acessos contextuais.</p>
-<p>Essa formulação é anterior à fronteira consolidada em <code>GKR-UX-HOME-GTM-BOUNDARY-001</code>.</p>
+<p>A versão anterior <code>GKR-UX-HOME-NAV-001 v0.3.0</code> continha formulação segundo a qual a disponibilidade operacional dos destinos deveria ser confirmada antes do wireframe e usava existência/estado público do destino como critério para determinados acessos contextuais.</p>
+<p><code>GKR-UX-HOME-NAV-001 v0.4.0</code> reconciliou essa fronteira com <code>GKR-UX-HOME-GTM-BOUNDARY-001</code> e passou a distinguir explicitamente:</p>
+<div class="highlight"><pre><span></span><code>DESTINO CONCEITUAL GOVERNADO
+≠ DESTINO OPERACIONAL ATIVO
+≠ DECISÃO DE LANÇAMENTO
+</code></pre></div>
 <p>Interpretação vigente:</p>
 <blockquote>
 <p><strong>disponibilidade de lançamento e ativação operacional não são gate da arquitetura conceitual nem do futuro wireframe.</strong></p>
@@ -14284,7 +14288,7 @@ COMPREENDER
 disponibilidade de lançamento
 </code></pre></div>
 <p>Classificação:</p>
-<p><strong>RESÍDUO DOCUMENTAL ATUAL — não é lacuna arquitetural.</strong></p>
+<p><strong>RESOLVIDO — a reconciliação documental de NAV-001 com a fronteira GTM vigente foi concluída.</strong></p>
 <hr />
 <h2 id="res-02-descricao-antiga-de-business-em-narr-001">RES-02 — descrição antiga de Business em NARR-001<a class="headerlink" href="#res-02-descricao-antiga-de-business-em-narr-001" title="Permanent link">&para;</a></h2>
 <p>O audit original registrava que <code>GKR-UX-HOME-NARR-001</code> associava Business à participação de Organizações.</p>
@@ -14296,14 +14300,14 @@ disponibilidade de lançamento
 <p>Guivos Business é Produto Especializado B2B.</p>
 <p>Organização é tipo estrutural de participante.</p>
 <p>Classificação:</p>
-<p><strong>RESOLVIDO — preservado apenas como histórico desta auditoria.</strong></p>
+<p><strong>RESOLVIDO — preservado apenas como registro da reconciliação desta auditoria.</strong></p>
 <hr />
 <h2 id="res-03-handoff-original-antecede-os-refinamentos-posteriores">RES-03 — handoff original antecede os refinamentos posteriores<a class="headerlink" href="#res-03-handoff-original-antecede-os-refinamentos-posteriores" title="Permanent link">&para;</a></h2>
 <p><code>GKR-UX-HOME-HANDOFF-001 v0.1.0</code> permanece anterior a diversos refinamentos e ainda contém, entre outros, a terceira camada antiga da Hero, o rótulo histórico <code>Do possível ao vivido</code>, a cadeia conceitual anterior e formulações pré-reconciliação sobre produtos.</p>
-<p>Ele permanece útil como briefing-base histórico, mas não deve ser utilizado isoladamente como snapshot final da arquitetura.</p>
+<p>Ele permanece útil como briefing-base, mas não deve ser utilizado isoladamente como snapshot final da arquitetura.</p>
 <p>Regra de consumo:</p>
 <blockquote>
-<p><strong>GKR-UX-HOME-MASTER-001 é a autoridade de consumo vigente. HANDOFF-001 somente pode ser usado como aprofundamento histórico quando reconciliado com o Master e com os documentos especializados posteriores.</strong></p>
+<p><strong>GKR-UX-HOME-MASTER-001 é a autoridade de consumo vigente. HANDOFF-001 somente pode ser usado como aprofundamento quando reconciliado com o Master e com os documentos especializados posteriores.</strong></p>
 </blockquote>
 <p>Classificação:</p>
 <p><strong>RISCO DE CONSUMO DOCUMENTAL ATUAL — não é falha da arquitetura.</strong></p>
@@ -14329,9 +14333,9 @@ disponibilidade de lançamento
 </ol>
 <h3 id="navegacao">Navegação<a class="headerlink" href="#navegacao" title="Permanent link">&para;</a></h3>
 <ol>
-<li><code>GKR-UX-HOME-NAV-001</code> como base histórica;</li>
-<li><code>NAV-002</code>, <code>NAV-003</code> e <code>NAV-004</code> prevalecem em seus refinamentos;</li>
-<li><code>GKR-UX-HOME-GTM-BOUNDARY-001</code> prevalece sobre a formulação residual de disponibilidade operacional de <code>NAV-001</code>.</li>
+<li><code>GKR-UX-HOME-NAV-001 v0.4.0</code> como arquitetura de navegação reconciliada;</li>
+<li><code>NAV-002</code>, <code>NAV-003</code> e <code>NAV-004</code> aprofundam seus respectivos refinamentos;</li>
+<li><code>GKR-UX-HOME-GTM-BOUNDARY-001</code> governa a fronteira entre arquitetura conceitual, disponibilidade operacional, publicação e lançamento.</li>
 </ol>
 <h3 id="sistemas-transversais">Sistemas transversais<a class="headerlink" href="#sistemas-transversais" title="Permanent link">&para;</a></h3>
 <ol>
@@ -14375,12 +14379,11 @@ disponibilidade de lançamento
 <ul>
 <li>composição adicional além do link <code>Mapa do Ecossistema</code>.</li>
 </ul>
-<h3 id="residuos-documentais">Resíduos documentais<a class="headerlink" href="#residuos-documentais" title="Permanent link">&para;</a></h3>
+<h3 id="residuo-documental-ainda-aberto">Resíduo documental ainda aberto<a class="headerlink" href="#residuo-documental-ainda-aberto" title="Permanent link">&para;</a></h3>
 <ul>
-<li>reconciliação de <code>NAV-001</code> com a fronteira GTM vigente;</li>
 <li>reconciliação de <code>HANDOFF-001</code> com o Master e os refinamentos posteriores.</li>
 </ul>
-<p>Esses resíduos são problemas de consumo documental, não lacunas da arquitetura estratégica.</p>
+<p>Esse resíduo é problema de consumo documental, não lacuna da arquitetura estratégica.</p>
 <h3 id="etapas-posteriores">Etapas posteriores<a class="headerlink" href="#etapas-posteriores" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Marketing/GTM;</li>
@@ -14422,10 +14425,10 @@ disponibilidade de lançamento
 <li>nenhuma implementação deve começar;</li>
 <li>nenhuma decisão de Marketing/GTM deve ser inferida.</li>
 </ul>
-<p>A correção dos resíduos documentais de <code>NAV-001</code> e <code>HANDOFF-001</code> pode ocorrer sem constituir autorização de materialização, pois sua finalidade é apenas impedir reintrodução de decisões superadas.</p>
+<p>A correção do resíduo documental de <code>HANDOFF-001</code> pode ocorrer sem constituir autorização de materialização, pois sua finalidade é apenas impedir reintrodução de decisões superadas.</p>
 <p>Estado final desta auditoria:</p>
 <blockquote>
-<p><strong>ARQUITETURA ESTRATÉGICA CONVERGIDA — AUDITORIA RECONCILIADA — MATERIALIZAÇÃO NÃO AUTORIZADA.</strong></p>
+<p><strong>ARQUITETURA ESTRATÉGICA CONVERGIDA — AUDITORIA RECONCILIADA — RES-01 RESOLVIDO — HANDOFF-001 AINDA PENDENTE — MATERIALIZAÇÃO NÃO AUTORIZADA.</strong></p>
 </blockquote>
 
 

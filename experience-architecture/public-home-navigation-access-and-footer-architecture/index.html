@@ -13618,6 +13618,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#9a-fronteira-entre-navegacao-conceitual-e-gtm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9A. Fronteira entre navegação conceitual e GTM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#10-sobre" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -13874,6 +13885,7 @@
 </blockquote>
 <p>Um produto pode estar acessível desde o primeiro viewport e ainda assim somente receber explicação e destaque institucional quando a narrativa tiver construído contexto suficiente.</p>
 <p>Este documento não define layout, wireframe, Figma, comportamento visual final de menus, nem fluxos internos dos destinos.</p>
+<p>Nesta versão, a arquitetura de navegação foi reconciliada com <code>GKR-UX-HOME-GTM-BOUNDARY-001</code>: presença conceitual e destino governado na arquitetura não equivalem a disponibilidade operacional ou decisão de lançamento.</p>
 <hr />
 <h2 id="2-escopo-estrito">2. Escopo estrito<a class="headerlink" href="#2-escopo-estrito" title="Permanent link">&para;</a></h2>
 <p>Esta especificação governa somente os elementos de navegação e acesso relacionados à Home pública.</p>
@@ -14006,7 +14018,8 @@ Iniciar Jornada
 <li>Guivos Intelligence;</li>
 <li>Guivos Mall.</li>
 </ul>
-<p>A ordem visual ainda não está fechada e a disponibilidade operacional de cada destino precisa ser confirmada antes do wireframe.</p>
+<p>A ordem visual ainda não está fechada.</p>
+<p>A presença desses destinos no launcher é uma decisão de arquitetura conceitual e <strong>não exige confirmação prévia de disponibilidade operacional para um futuro wireframe</strong>. Quando a estratégia de lançamento ainda não estiver definida, cada item deve ser tratado como destino conceitual governado, sem inventar estado comercial, operacional ou clicabilidade de produção.</p>
 <p><strong>Guivos Journey não integra o launcher na hipótese principal atual.</strong></p>
 <p>Journey permanece parte do ecossistema, aparece no Movimento 08 e pode possuir acessos contextuais, mas sua porta principal no Header é <code>Iniciar Jornada</code>.</p>
 <p>Regra:</p>
@@ -14023,9 +14036,14 @@ Iniciar Jornada
 <li>o destino é coerente com o que a pessoa acabou de ver;</li>
 <li>o CTA não interrompe a narrativa principal;</li>
 <li>o produto é destino, não explicação da marca;</li>
-<li>o acesso não cria falsa disponibilidade;</li>
-<li>o destino operacional existe ou possui estado público legítimo.</li>
+<li>a arquitetura não inventa disponibilidade, estado comercial ou capacidade operacional;</li>
+<li>um futuro wireframe pode representar o destino conceitual governado mesmo sem decisão de lançamento fechada; ativação, clicabilidade e comunicação de disponibilidade em produção dependem de reconciliação posterior com Marketing/GTM, Produto, Operação, Legal e Tecnologia quando aplicável.</li>
 </ol>
+<p>Regra:</p>
+<div class="highlight"><pre><span></span><code>DESTINO CONCEITUAL GOVERNADO
+≠ DESTINO OPERACIONAL ATIVO
+≠ DECISÃO DE LANÇAMENTO
+</code></pre></div>
 <hr />
 <h2 id="9-movimento-08-como-apresentacao-institucional-do-ecossistema">9. Movimento 08 como apresentação institucional do ecossistema<a class="headerlink" href="#9-movimento-08-como-apresentacao-institucional-do-ecossistema" title="Permanent link">&para;</a></h2>
 <p>O Movimento 08 possui a função principal de apresentar os produtos de forma estruturada.</p>
@@ -14038,6 +14056,42 @@ Iniciar Jornada
 <p>O requisito é:</p>
 <blockquote>
 <p><strong>a coerência entre os produtos deve ser mais perceptível que a quantidade de produtos.</strong></p>
+</blockquote>
+<hr />
+<h2 id="9a-fronteira-entre-navegacao-conceitual-e-gtm">9A. Fronteira entre navegação conceitual e GTM<a class="headerlink" href="#9a-fronteira-entre-navegacao-conceitual-e-gtm" title="Permanent link">&para;</a></h2>
+<p>A navegação deve ser projetável antes de o plano de lançamento estar fechado.</p>
+<p>A arquitetura define:</p>
+<ul>
+<li>quais destinos pertencem conceitualmente ao Header, launcher, narrativa ou rodapé;</li>
+<li>a relação semântica entre esses destinos;</li>
+<li>a hierarquia e a função de acesso;</li>
+<li>o que precisa permanecer encontrável.</li>
+</ul>
+<p>Marketing/GTM e as demais autoridades de publicação definem futuramente:</p>
+<ul>
+<li>quais destinos estarão ativos em uma versão específica;</li>
+<li>quais serão clicáveis em produção;</li>
+<li>quais poderão aparecer como teaser, preview, beta, waitlist ou <code>em breve</code>;</li>
+<li>quais mercados, idiomas e regiões estarão efetivamente suportados;</li>
+<li>quais claims e estados operacionais poderão ser comunicados.</li>
+</ul>
+<p>Separação obrigatória:</p>
+<div class="highlight"><pre><span></span><code>ARQUITETURA DE NAVEGAÇÃO
+→ define pertencimento, função e hierarquia conceitual
+
+WIREFRAME CONCEITUAL
+→ pode representar destinos governados sem inventar operação
+
+PUBLICAÇÃO / LANÇAMENTO
+→ exige verdade operacional, destinos reais e GTM reconciliado
+</code></pre></div>
+<p>Portanto:</p>
+<blockquote>
+<p><strong>arquitetura / futuro wireframe ≠ disponibilidade de lançamento.</strong></p>
+</blockquote>
+<p>E, simultaneamente:</p>
+<blockquote>
+<p><strong>presença conceitual ≠ autorização para publicar capacidade inexistente.</strong></p>
 </blockquote>
 <hr />
 <h2 id="10-sobre">10. Sobre<a class="headerlink" href="#10-sobre" title="Permanent link">&para;</a></h2>
@@ -14105,13 +14159,14 @@ Iniciar Jornada
 <p>Esses temas serão tratados futuramente em frente própria.</p>
 <hr />
 <h2 id="17-relacao-com-gkr-ux-home-nav-002">17. Relação com GKR-UX-HOME-NAV-002<a class="headerlink" href="#17-relacao-com-gkr-ux-home-nav-002" title="Permanent link">&para;</a></h2>
-<p><code>GKR-UX-HOME-NAV-002</code> registra a decisão de refinamento que originou esta versão 0.3.0.</p>
+<p><code>GKR-UX-HOME-NAV-002</code> registra a decisão de refinamento que originou esta arquitetura de navegação.</p>
 <p>Em caso de conflito com hipóteses históricas anteriores, prevalecem:</p>
 <ol>
 <li>Journey fora do launcher e <code>Iniciar Jornada</code> como sua porta própria no Header;</li>
 <li>launcher composto por Travel, Ads, Media, Business, Intelligence e Mall;</li>
 <li>o limite de que <code>Mapa do Ecossistema</code> é somente um link no rodapé nesta fase;</li>
-<li>a postergação integral da página <code>Mapa do Ecossistema</code>.</li>
+<li>a postergação integral da página <code>Mapa do Ecossistema</code>;</li>
+<li><code>GKR-UX-HOME-GTM-BOUNDARY-001</code> para separar arquitetura conceitual de disponibilidade operacional, publicação e lançamento.</li>
 </ol>
 <hr />
 <h2 id="18-desktop-e-mobile">18. Desktop e mobile<a class="headerlink" href="#18-desktop-e-mobile" title="Permanent link">&para;</a></h2>
@@ -14194,7 +14249,9 @@ Iniciar Jornada
 <li>o <code>Mapa do Ecossistema</code> é detalhado ou desenhado antes da frente própria;</li>
 <li>mobile perde caminhos disponíveis no desktop;</li>
 <li>navegação depende de hover;</li>
-<li>o Header se torna mais importante que a Hero.</li>
+<li>o Header se torna mais importante que a Hero;</li>
+<li>um wireframe conceitual é bloqueado apenas porque o lançamento de um destino ainda não foi definido;</li>
+<li>a presença conceitual de um destino é apresentada como prova de disponibilidade operacional.</li>
 </ol>
 <hr />
 <h2 id="25-criterios-de-aceitacao">25. Critérios de aceitação<a class="headerlink" href="#25-criterios-de-aceitacao" title="Permanent link">&para;</a></h2>
@@ -14212,13 +14269,14 @@ Iniciar Jornada
 <li><code>Iniciar Jornada</code> possuir hierarquia adequada;</li>
 <li>o rodapé contiver o link <code>Mapa do Ecossistema</code> sem antecipar a página;</li>
 <li>desktop e mobile preservarem hierarquia;</li>
-<li>nenhuma área pública simular disponibilidade inexistente.</li>
+<li>a arquitetura distinguir explicitamente presença conceitual de disponibilidade operacional;</li>
+<li>nenhuma publicação ou ativação simular disponibilidade inexistente.</li>
 </ul>
 <hr />
 <h2 id="26-perguntas-obrigatorias-de-revisao">26. Perguntas obrigatórias de revisão<a class="headerlink" href="#26-perguntas-obrigatorias-de-revisao" title="Permanent link">&para;</a></h2>
 <p>Antes de aprovar um futuro Header, responder:</p>
 <ol>
-<li>Quem já conhece Travel consegue acessá-lo rapidamente?</li>
+<li>Quem já conhece Travel consegue acessá-lo rapidamente na arquitetura proposta?</li>
 <li>Quem quer iniciar sua Journey encontra <code>Iniciar Jornada</code> imediatamente?</li>
 <li>Quem nunca ouviu falar de Guivos entende a marca antes de ser bombardeado por produtos?</li>
 <li>O launcher parece pertencer a um único ecossistema?</li>
@@ -14232,6 +14290,8 @@ Iniciar Jornada
 <li>mobile preserva os mesmos caminhos essenciais?</li>
 <li>algum elemento existe apenas porque concorrentes usam?</li>
 <li>o <code>Mapa do Ecossistema</code> foi mantido somente como link, sem detalhamento prematuro?</li>
+<li>algum destino conceitual está sendo confundido com promessa de disponibilidade operacional?</li>
+<li>alguma decisão de GTM está sendo usada indevidamente como gate para arquitetura ou wireframe?</li>
 </ol>
 <hr />
 <h2 id="27-prompt-para-futura-arquitetura-de-informacao">27. Prompt para futura arquitetura de informação<a class="headerlink" href="#27-prompt-para-futura-arquitetura-de-informacao" title="Permanent link">&para;</a></h2>
@@ -14249,9 +14309,9 @@ Considere como hipótese principal de Header Persistente:
 - Login;
 - Iniciar Jornada como CTA de maior hierarquia e porta própria da Journey.
 
-O launcher deve permitir acesso a Travel, Ads, Media, Business, Intelligence e Mall sem transformar o Header em catálogo. Journey pertence ao ecossistema, mas não integra o launcher nesta hipótese; sua porta principal no Header é Iniciar Jornada.
+O launcher deve permitir acesso conceitual a Travel, Ads, Media, Business, Intelligence e Mall sem transformar o Header em catálogo. Journey pertence ao ecossistema, mas não integra o launcher nesta hipótese; sua porta principal no Header é Iniciar Jornada.
 
-A Home precisa permitir acesso imediato a produtos conhecidos, mas os produtos não podem dominar a primeira percepção da marca.
+A Home precisa permitir acesso imediato a produtos conhecidos como arquitetura de navegação, mas os produtos não podem dominar a primeira percepção da marca. Não presuma que presença conceitual signifique destino ativo em produção; quando o lançamento não estiver definido, represente o item como destino conceitual governado e deixe sua ativação para Marketing/GTM e os gates de publicação.
 
 No rodapé, considere apenas um link Mapa do Ecossistema. Não desenhe nem detalhe a página de destino; ela pertence a frente futura.
 
@@ -14263,6 +14323,7 @@ Entregue:
 - comportamento conceitual do launcher;
 - relação entre Header e Hero;
 - diferenças desktop/mobile;
+- fronteira entre destino conceitual e disponibilidade de produção;
 - riscos;
 - itens ainda abertos para teste.
 </code></pre></div>
@@ -14270,13 +14331,9 @@ Entregue:
 <h2 id="28-sintese-de-controle">28. Síntese de controle<a class="headerlink" href="#28-sintese-de-controle" title="Permanent link">&para;</a></h2>
 <p>A arquitetura deve permitir simultaneamente:</p>
 <blockquote>
-<p><strong>quem não conhece a Guivos, compreender; quem já conhece Travel, Ads, Media, Business, Intelligence ou Mall, acessar; quem quer saber quem é a Guivos, encontrar Sobre; quem representa Organização ou Coletivo, encontrar sua porta; quem já participa, fazer login; e quem quer avançar como Pessoa, iniciar sua Jornada.</strong></p>
+<p><strong>quem não conhece a Guivos, compreender; quem já conhece Travel, Ads, Media, Business, Intelligence ou Mall, encontrar seu destino conceitual; quem quer saber quem é a Guivos, encontrar Sobre; quem representa Organização ou Coletivo, encontrar sua porta; quem já participa, fazer login; e quem quer avançar como Pessoa, iniciar sua Jornada.</strong></p>
 </blockquote>
-<p>Sem transformar a Home em inventário.</p>
-<p>Regra final:</p>
-<blockquote>
-<p><strong>a Home conta uma história enquanto a navegação preserva liberdade.</strong></p>
-</blockquote>
+<p>A ativação concreta de cada destino em uma versão pública permanece subordinada à verdade operacional e à decisão de publicação/GTM correspondente.</p>
 
 
 
