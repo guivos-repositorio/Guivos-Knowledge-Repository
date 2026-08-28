@@ -2,114 +2,256 @@
 id: GEB-P01-F01
 title: Essência da Guivos
 status: consolidated
-version: 0.3.0
+version: 0.4.0
 owner: Guivos
-last_updated: 2026-07-01
+last_updated: 2026-08-27
 related_adrs:
   - ADR-002
+related:
+  - GKR-STATE-001
+  - GKR-CHRISTIAN-FOUNDATION-001
+  - RP-002
+  - RP-002-PMF-001
 ---
 
 # Essência da Guivos
 
-## Definição
+## 1. Definição
 
-A Guivos é um ecossistema criado para acelerar jornadas de evolução por meio das oportunidades mais relevantes para cada momento de vida.
+A Guivos é um ecossistema criado para **ampliar condições, percepção, acesso, conexão e possibilidades** para que Pessoas, Organizações e Coletivos possam compreender melhor seu Momento, reconhecer Próximos Passos e viver experiências capazes de contribuir para sua evolução.
 
-A Guivos não existe para substituir Pessoas, Organizações, Coletivos ou instituições. Ela existe para fortalecer conexões entre participantes e ampliar sua capacidade de gerar evolução.
+A Guivos não existe para substituir seus participantes, decidir por eles ou definir o que deve significar evolução em cada contexto. Ela existe para reduzir distâncias entre contexto, compreensão, possibilidade, acesso, experiência e aprendizado, preservando autonomia e autoridade legítima.
 
-## Formulação central
+## 2. Formulação central
 
-> A Guivos reduz a distância entre o Momento Atual de um participante e seu Próximo Passo de evolução.
+> **A Guivos reduz a distância entre o Momento de um participante e os Próximos Passos que possam fazer sentido para sua jornada, ampliando condições para que possibilidades se tornem escolhas e experiências reais quando houver pertinência, acesso e decisão.**
 
-## O que isso significa
+Essa formulação não promete transformação, resultado ou velocidade.
 
-A Guivos não impõe caminhos.
+```text
+AMPLIAR CONDIÇÕES
+≠ TRANSFORMAR A PESSOA
 
-A Guivos não determina o que é sucesso.
+APOIAR UM PRÓXIMO PASSO
+≠ DEFINIR O CAMINHO
 
-A Guivos não decide pelo participante.
+POSSIBILIDADE
+≠ OBRIGAÇÃO DE AGIR
 
-A Guivos organiza contexto, identifica possibilidades, apoia a definição de Próximos Passos e conecta participantes a Oportunidades capazes de gerar Experiências relevantes.
+OPORTUNIDADE
+≠ RELEVÂNCIA AUTOMÁTICA
 
-## Consequência arquitetural
+EXPERIÊNCIA
+≠ EVOLUÇÃO COMPROVADA
+```
 
-Toda decisão futura deverá ser avaliada pela sua contribuição à jornada de evolução do participante.
+## 3. Como a essência se materializa
 
-Se uma funcionalidade, produto, parceria ou tecnologia não contribuir para essa jornada, sua aderência ao ecossistema deverá ser reavaliada.
+A arquitetura vigente distingue as seguintes unidades:
 
----
-
-## Evidence Analysis — A2
-
-### Estado da análise
-
-| Campo | Valor |
+| Unidade | Papel na jornada |
 |---|---|
-| Fase | `A2 — Functional Architecture Discovery` |
-| Data | 01/07/2026 |
-| Resultado | Evidence Extraction concluída |
-| Afirmações institucionais atômicas | 29 |
-| Grupos de significado institucional | 5 |
-| Invariantes provisórios | 6 |
-| Responsabilidades institucionais | 9 |
-| Agrupamentos observados | 6 |
-| Core Capabilities promovidas | 0 |
+| **Momento** | contexto atual suficientemente compreendido para orientar uma leitura responsável |
+| **Objetivo / necessidade** | direção, intenção ou questão material quando existir e for relevante |
+| **Próximo Passo** | movimento possível que aproxima o participante de algo que faça sentido no contexto |
+| **Possibilidade** | caminho potencial de evolução compatível com o Momento |
+| **Mecanismo** | meio pelo qual uma Possibilidade pode ser concretizada, quando necessário |
+| **Oportunidade** | materialização concreta de uma Possibilidade, oferecida ou viabilizada por agente legítimo, com condições reais de acesso |
+| **Experiência** | aquilo que o participante efetivamente vive após uma escolha ou interação |
+| **Contribuição** | mudança, aprendizado, condição ou efeito que possa ser reconhecido sem exagerar causalidade |
+| **Novo Momento** | contexto posterior, que pode gerar nova compreensão e novos Próximos Passos |
 
-### Significados institucionais
+Fluxo conceitual:
 
-1. A Guivos existe para apoiar evolução, e não para se tornar um fim em si mesma.
-2. O Momento Atual e o Próximo Passo estruturam a compreensão da jornada.
-3. Oportunidades e Experiências funcionam como meios de progressão.
-4. A autonomia do participante limita a atuação institucional da Guivos.
-5. Funcionalidades, produtos, parcerias e tecnologias devem demonstrar aderência à jornada.
+```text
+MOMENTO
+↓
+OBJETIVO / NECESSIDADE, quando houver
+↓
+PRÓXIMO PASSO
+↓
+POSSIBILIDADE, quando agregar valor
+↓
+MECANISMO, quando necessário
+↓
+OPORTUNIDADE REAL, quando existir oferta/viabilização legítima
+↓
+ESCOLHA DO PARTICIPANTE
+↓
+EXPERIÊNCIA
+↓
+CONTRIBUIÇÃO / APRENDIZADO, quando houver evidência
+↓
+NOVO MOMENTO
+```
 
-### Invariantes provisórios
+O fluxo não é obrigatório nem linear em todos os casos. Um Próximo Passo pode ser reflexão, organização, conversa, pausa, busca de informação, decisão de não agir ou outra ação que não dependa de uma Oportunidade externa.
+
+## 4. O que a Guivos faz
+
+A Guivos pode, dentro das autoridades e finalidades vigentes:
+
+- organizar contexto;
+- apoiar compreensão do Momento;
+- tornar incertezas, limitações e informações desconhecidas mais explícitas;
+- apoiar a definição ou reconhecimento de Próximos Passos;
+- identificar e explicar Possibilidades;
+- conectar Possibilidades a mecanismos e Oportunidades reais quando isso agregar valor;
+- fortalecer conexões entre participantes;
+- organizar experiências, evidências, aprendizados e continuidade;
+- usar Intelligence para ampliar compreensão sem substituir decisão humana;
+- reduzir complexidade operacional para que a experiência final permaneça simples.
+
+## 5. O que a Guivos não faz
+
+A Guivos não:
+
+- impõe caminhos;
+- determina o que é sucesso;
+- define uma vida boa para cada Pessoa;
+- transforma autonomia em score ou obrigação;
+- trata toda Possibilidade como chamada para ação;
+- transforma toda necessidade em oferta comercial;
+- presume que maior volume de Oportunidades significa maior evolução;
+- permite que pagamento compre pertinência ou relevância;
+- confunde experiência realizada com impacto comprovado;
+- substitui a autoridade de Pessoas, Organizações ou Coletivos;
+- permite que tecnologia ou IA se tornem a identidade do ecossistema.
+
+## 6. Participantes e ecossistema
+
+A Guivos fortalece conexões sem dissolver identidades ou autoridades.
+
+```text
+PESSOA
+≠ ORGANIZAÇÃO
+≠ COLETIVO
+
+PARTICIPANTE
+≠ PRODUTO
+≠ PLANO
+≠ OPORTUNIDADE
+
+CONEXÃO
+≠ TRANSFERÊNCIA DE AUTORIDADE
+```
+
+Cada participante continua responsável por decisões que pertencem ao seu próprio contexto.
+
+## 7. Consequência arquitetural
+
+Toda decisão futura deve ser avaliada pela contribuição legítima que pode oferecer à jornada e ao ecossistema.
+
+Isso se aplica a:
+
+- funcionalidades;
+- Produtos Especializados;
+- interfaces;
+- modelos de recomendação;
+- Intelligence;
+- dados;
+- algoritmos e IA;
+- parcerias;
+- campanhas;
+- modelos econômicos;
+- processos operacionais;
+- expansão internacional;
+- novas tecnologias.
+
+Se um elemento não contribuir para compreensão, acesso, possibilidade, experiência, autonomia, proteção, aprendizado, conexão ou continuidade de forma compatível com o propósito, sua aderência deve ser reavaliada.
+
+## 8. Invariantes vigentes
 
 | ID | Invariante |
 |---|---|
 | INV-F01-01 | A Guivos existe para potencializar processos de evolução, não para ser um fim em si mesma. |
 | INV-F01-02 | A autonomia do participante deve ser preservada. |
-| INV-F01-03 | A Guivos amplia condições para transformação sem impô-la. |
-| INV-F01-04 | A atuação deve considerar o contexto e o momento de vida do participante. |
+| INV-F01-03 | A Guivos amplia condições para transformação sem impô-la ou garanti-la. |
+| INV-F01-04 | A atuação deve considerar contexto e Momento antes de inferir relevância. |
 | INV-F01-05 | A Guivos fortalece o ecossistema sem substituir seus participantes. |
-| INV-F01-06 | Decisões futuras devem demonstrar contribuição para a jornada de evolução. |
+| INV-F01-06 | Decisões futuras devem demonstrar contribuição legítima para a jornada ou para condições que a sustentem. |
+| INV-F01-07 | Possibilidade e Oportunidade são conceitos distintos; a Oportunidade é uma concretização possível, não o único caminho. |
+| INV-F01-08 | Experiência vivida não equivale automaticamente a evolução ou impacto comprovado. |
 
-### Responsabilidades institucionais
+## 9. Responsabilidades institucionais
 
 | ID | Responsabilidade |
 |---|---|
 | RESP-F01-01 | Manter a evolução da Guivos orientada à jornada dos participantes. |
-| RESP-F01-02 | Preservar a autonomia do participante em recomendações, decisões, experiências e interações. |
+| RESP-F01-02 | Preservar autonomia em recomendações, decisões, experiências e interações. |
 | RESP-F01-03 | Ampliar condições para transformação sem impor caminhos, metas ou resultados. |
-| RESP-F01-04 | Compreender o contexto atual antes de apoiar próximos passos. |
-| RESP-F01-05 | Identificar possibilidades relevantes para o momento de vida. |
-| RESP-F01-06 | Fortalecer conexões entre participantes sem substituí-los. |
-| RESP-F01-07 | Preservar o papel ativo dos participantes no ecossistema. |
-| RESP-F01-08 | Avaliar funcionalidades, produtos, parcerias e tecnologias pela contribuição à jornada. |
-| RESP-F01-09 | Reavaliar a aderência de elementos que não contribuam para a jornada. |
+| RESP-F01-04 | Compreender o contexto atual antes de apoiar Próximos Passos. |
+| RESP-F01-05 | Identificar Possibilidades compatíveis com o Momento quando isso agregar valor. |
+| RESP-F01-06 | Conectar Possibilidades a mecanismos e Oportunidades reais sem transformar oferta em destino obrigatório. |
+| RESP-F01-07 | Fortalecer conexões entre participantes sem substituí-los. |
+| RESP-F01-08 | Preservar o papel ativo e a autoridade legítima dos participantes. |
+| RESP-F01-09 | Avaliar funcionalidades, produtos, parcerias e tecnologias pela contribuição à jornada. |
+| RESP-F01-10 | Reavaliar elementos que não contribuam legitimamente para a jornada ou para as condições que a tornam possível. |
+| RESP-F01-11 | Diferenciar experiência, contribuição, resultado e impacto segundo a evidência disponível. |
 
-### Evidence Convergence
+## 10. Mapa de aderência
 
-| ID | Agrupamento | Natureza | Estado |
-|---|---|---|---|
-| EV-F01-01 | Compreensão de contexto | Funcional | Observed |
-| EV-F01-02 | Identificação de possibilidades relevantes | Funcional | Observed |
-| EV-F01-03 | Conexão e fortalecimento do ecossistema | Funcional | Observed |
-| EV-F01-04 | Apoio à progressão da jornada | Funcional | Observed |
-| EV-F01-05 | Preservação da autonomia | Constitucional | Observed |
-| EV-F01-06 | Governança de aderência à jornada | Constitucional | Observed |
+Uma decisão é coerente com a Essência quando consegue responder de forma satisfatória:
 
-Os agrupamentos são evidências analíticas. Não constituem Core Capabilities e dependem de convergência com outras fontes.
-
-### Confidence Assessment
-
-| Critério | Avaliação |
+| Pergunta | Sinal de aderência |
 |---|---|
-| Consistência interna | Muito alta |
-| Originalidade na Foundation | Muito alta |
-| Relevância arquitetural | Muito alta |
-| Impacto na convergência | Muito alto |
+| Qual participante e contexto estão envolvidos? | contexto explícito, sem autoridade presumida |
+| Que necessidade ou Momento justifica a decisão? | problema/necessidade real, não oferta procurando usuário |
+| Qual condição ou compreensão é ampliada? | benefício humano/institucional identificável |
+| Existe Próximo Passo ou Possibilidade legítima? | relação contextual explicável |
+| Há Oportunidade envolvida? | existência concreta, agente legítimo e condições reais de acesso |
+| A escolha continua voluntária? | autonomia preservada |
+| Como saberemos o que aconteceu? | estado, evidência e limitações observáveis |
+| A decisão depende de tecnologia específica? | tecnologia permanece meio, não identidade |
 
-### Limites
+## 11. Exemplos de aderência
 
-A análise não cria uma camada de `Institutional Functions`, não promove candidatas ao GCCM e não altera o conteúdo normativo da Essência.
+### Exemplo A — Possibilidade sem Oportunidade externa
+
+```text
+Pessoa percebe necessidade de reorganizar finanças
+→ Guivos ajuda a estruturar o Momento
+→ Próximo Passo = compreender despesas recorrentes
+→ Possibilidade = organizar visão financeira
+→ ação pode ocorrer sem oferta comercial externa
+```
+
+### Exemplo B — Possibilidade que chega a uma Oportunidade
+
+```text
+Pessoa quer desenvolver determinada competência
+→ contexto e objetivo são compreendidos
+→ Possibilidade = aprender com experiência estruturada
+→ mecanismo = formação / mentoria / comunidade / prática
+→ Oportunidade real = oferta concreta com condições de acesso
+→ Pessoa escolhe ou não
+→ experiência, se vivida, gera nova evidência e novo Momento
+```
+
+### Exemplo C — decisão que deve ser rejeitada ou revista
+
+```text
+Oferta paga
+→ alta margem comercial
+→ baixo fit contextual
+→ relevância não explicável
+
+RESULTADO
+→ não deve receber prioridade apenas por monetização
+```
+
+## 12. Evidência e confiança
+
+A Fundação consolidada sustenta com alta confiança:
+
+- centralidade da jornada;
+- Momento e contexto como base de compreensão;
+- autonomia como limite institucional;
+- Possibilidades como caminhos potenciais;
+- Oportunidades como materializações concretas e não como finalidade do ecossistema;
+- Experiências como unidade de vida real, sem inferência automática de impacto;
+- conexão e fortalecimento do ecossistema;
+- governança de aderência ao propósito;
+- tecnologia subordinada à finalidade humana.
+
+Esses elementos orientam arquitetura e governança. Eles não declaram Produto implementado, PMF, resultado causal, Core Capability técnica nem disponibilidade operacional específica.
