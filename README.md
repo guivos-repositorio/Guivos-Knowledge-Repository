@@ -23,7 +23,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Home Organizações e Coletivos | **REBUILD_REQUIRED** |
 | Demais Homes | **AUDIT_PENDING** |
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
-| Public Canon atual | **GOG-001 v5.2.0** |
+| Public Canon atual | **GOG-001 v5.3.0** |
 
 O [Roadmap 13.0.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
 
