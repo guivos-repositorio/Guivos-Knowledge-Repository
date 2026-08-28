@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **3.0.0** |
+| Registro | `GKR-STATE-001` **3.1.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
@@ -25,7 +25,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.0.0](roadmap.md) governa a sequência atual.
+O [Roadmap 13.1.0](roadmap.md) governa a sequência atual.
 
 ## Por que o repositório está em auditoria
 
@@ -52,8 +52,8 @@ O histórico permanece no Git.
 
 ### Estado e direção
 
-- [Registro do Estado Atual 3.0.0](project/current-state-register.md)
-- [Roadmap 13.0.0](roadmap.md)
+- [Registro do Estado Atual 3.1.0](project/current-state-register.md)
+- [Roadmap 13.1.0](roadmap.md)
 - [Auditoria Integral do GKR](project/gkr-full-corpus-audit.md)
 - [Guia Oficial da Guivos / Public Canon](public/guia-oficial-da-guivos.md)
 
