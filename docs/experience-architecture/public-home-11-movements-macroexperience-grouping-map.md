@@ -2,11 +2,12 @@
 id: GKR-UX-HOME-NARR-005
 title: Mapa de Agrupamento dos 11 Movimentos em Macroexperiências da Home Pública
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-10
+last_updated: 2026-08-27
 parent: GKR-UX-HOME-NARR-001
 depends_on:
+  - GKR-UX-HOME-MASTER-001
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-001
@@ -20,13 +21,14 @@ depends_on:
   - GKR-UX-HOME-SYS-001
   - GKR-UX-HOME-GTM-BOUNDARY-001
 normative: false
+maturity: reconciled_narrative_detail_pre_materialization
 ---
 
 # Mapa de Agrupamento dos 11 Movimentos em Macroexperiências da Home Pública
 
 ## 1. Finalidade
 
-Este documento refina a futura materialização da Home pública de `guivos.com` para impedir uma leitura literal de que:
+Este documento aprofunda `GKR-UX-HOME-MASTER-001 v1.0.0` e refina uma futura materialização autorizada da Home pública de `guivos.com`, impedindo a leitura literal de que:
 
 ```text
 11 movimentos narrativos
@@ -34,7 +36,7 @@ Este documento refina a futura materialização da Home pública de `guivos.com`
 11 seções visuais obrigatórias
 ```
 
-Os onze movimentos continuam sendo funções estratégicas independentes e preservam sua ordem de compreensão.
+Os onze movimentos continuam sendo funções estratégicas independentes e preservam sua ordem dominante de compreensão.
 
 Entretanto, movimentos adjacentes podem compartilhar uma mesma macroexperiência visual quando suas funções se reforçam e quando a passagem entre eles puder acontecer sem perda de significado.
 
@@ -43,6 +45,15 @@ Decisão central:
 > **Os onze movimentos governam a progressão de significado; a Home não precisa materializá-los como onze blocos separados.**
 
 Este documento não cria wireframe, grid, altura de seção, componente, breakpoint, animação específica, copy final ou implementação.
+
+A existência de uma hipótese de materialização não constitui autorização para retomada de Design durante a auditoria integral.
+
+```text
+MAPA NARRATIVO
+≠ SOURCE LOCK ATUAL
+≠ WIREFRAME AUTORIZADO
+≠ DESIGN AUTORIZADO
+```
 
 ---
 
@@ -67,7 +78,7 @@ Regra:
 
 ## 3. Hipótese principal — sete macroexperiências
 
-A hipótese de referência para futura exploração visual é:
+A hipótese de referência para eventual exploração visual futura é:
 
 ```text
 MACRO 01 — ABRIR O HORIZONTE
@@ -81,8 +92,8 @@ MACRO 03 — PERCEBER A DESCONEXÃO E ENTENDER O PAPEL DA GUIVOS
 Movimento 04 — Desconexão
 Movimento 05 — Guivos / Conexão
 
-MACRO 04 — VER O POSSÍVEL VIRAR EXPERIÊNCIA E PERCEBER QUEM FAZ ACONTECER
-Movimento 06 — Do Possível ao Vivido
+MACRO 04 — DA POSSIBILIDADE À EXPERIÊNCIA + PERTENCIMENTO
+Movimento 06 — Da Possibilidade à Experiência
 Movimento 07 — Pertencimento
 
 MACRO 05 — COMPREENDER A COERÊNCIA DO ECOSSISTEMA
@@ -96,9 +107,9 @@ MACRO 07 — REABRIR O HORIZONTE PARA A DESCOBERTA
 Movimento 11 — Descoberta
 ```
 
-Essa hipótese reduz onze funções a sete grandes momentos perceptivos sem remover nenhum movimento.
+Essa hipótese organiza onze funções em sete grandes momentos perceptivos sem remover nenhum movimento.
 
-Sete macroexperiências também não significam sete seções técnicas obrigatórias. Uma futura composição poderá criar continuidade, sobreposição ou subdivisões internas desde que preserve as responsabilidades abaixo.
+Sete macroexperiências também não significam sete seções técnicas obrigatórias. Uma futura composição, **se autorizada em gate próprio**, poderá criar continuidade, sobreposição ou subdivisões internas desde que preserve as responsabilidades abaixo.
 
 ---
 
@@ -239,11 +250,11 @@ A experiência pode voltar a ganhar vida, pessoas, contextos e movimento real.
 
 ---
 
-## 7. Macroexperiência 04 — Ver o Possível Virar Experiência e Perceber Quem Faz Acontecer
+## 7. Macroexperiência 04 — Da Possibilidade à Experiência + Pertencimento
 
 ### Movimentos incorporados
 
-- 06 — Do Possível ao Vivido;
+- 06 — Da Possibilidade à Experiência;
 - 07 — Pertencimento.
 
 ### Relação interna
@@ -256,17 +267,27 @@ POSSIBILIDADE
 
 ↓
 
-QUEM FAZ ISSO ACONTECER?
+QUEM PARTICIPA DAQUILO QUE A TORNA POSSÍVEL?
 → Pessoas
 → Organizações
 → Coletivos
 ```
 
+A cadeia acima representa a função do Movimento 06 na Home. Ela não afirma que toda Possibilidade exige Oportunidade externa ou termina inevitavelmente em Experiência.
+
+```text
+POSSIBILIDADE
+≠ OPORTUNIDADE
+
+EXPERIÊNCIA
+≠ RESULTADO GARANTIDO
+```
+
 ### Por que podem compartilhar composição
 
-O Movimento 06 mostra a possibilidade saindo da abstração e entrando no mundo real.
+O Movimento 06 mostra uma Possibilidade saindo da abstração e podendo entrar no mundo real pela escolha do participante.
 
-O Movimento 07 revela que esse mundo real não é produzido unilateralmente pela Guivos: Pessoas, Organizações e Coletivos também criam, vivem, conectam e ampliam possibilidades.
+O Movimento 07 revela que esse mundo real não é produzido unilateralmente pela Guivos: Pessoas, Organizações e Coletivos também criam, vivem, conectam e ampliam possibilidades e podem materializar ou habilitar Oportunidades legítimas.
 
 O pertencimento se torna mais crível depois que o visitante viu agência e experiência reais.
 
@@ -304,17 +325,29 @@ Coletivo → produto específico
 
 O Movimento 08 possui alta densidade conceitual e uma responsabilidade singular:
 
-> **explicar como diferentes componentes pertencem a uma única Guivos sem criar catálogo.**
+> **explicar como diferentes Produtos Especializados e responsabilidades pertencem a uma única Guivos sem criar catálogo.**
 
-Sua arquitetura interna já é governada por `GKR-UX-HOME-NARR-002`:
+A leitura atual é:
 
-- Journey — experiência e continuidade;
-- Travel, Mall, Media, Business e Ads — manifestações especializadas;
-- Intelligence — inteligência transversal.
+```text
+GUIVOS
+│
+├── JOURNEY
+│   └── experiência e continuidade da jornada
+│
+├── MALL / TRAVEL / BUSINESS / MEDIA / ADS
+│   └── Produtos Especializados com responsabilidades próprias
+│
+└── INTELLIGENCE
+    └── Produto Especializado transversal de inteligência
+```
 
-Misturá-lo integralmente com Pertencimento ou Autoridade aumentaria o risco de:
+Os sete continuam Produtos Especializados. A transversalidade do Intelligence descreve seu papel, não uma classe estrutural externa à taxonomia de Produtos.
+
+Misturar integralmente o Movimento 08 com Pertencimento ou Autoridade aumentaria o risco de:
 
 - participante = produto;
+- Organização = Business;
 - produto = prova de grandeza;
 - sete cards equivalentes;
 - portfólio corporativo;
@@ -326,7 +359,7 @@ Misturá-lo integralmente com Pertencimento ou Autoridade aumentaria o risco de:
 
 ### Estado de saída
 
-> **“Agora entendo como diferentes manifestações fazem parte da mesma Guivos.”**
+> **“Agora entendo como diferentes responsabilidades especializadas fazem parte da mesma Guivos.”**
 
 ### Mudança para Macro 06
 
@@ -451,7 +484,7 @@ mais vida / expansão / descoberta
 03 — DESCONEXÃO + CONEXÃO
 pausa / tensão / clareza
 
-04 — VIVIDO + PERTENCIMENTO
+04 — EXPERIÊNCIA + PERTENCIMENTO
 humanidade / experiência / agência
 
 05 — ECOSSISTEMA
@@ -482,7 +515,7 @@ Isso preserva o ritmo já governado em `GKR-UX-HOME-SYS-001`:
 
 Nem toda passagem exige nova seção visual.
 
-Porém, uma futura solução deve tornar perceptíveis pelo menos estas mudanças de função:
+Porém, uma futura solução autorizada deve tornar perceptíveis pelo menos estas mudanças de função:
 
 ### Hero → Realidade
 
@@ -492,7 +525,7 @@ Porém, uma futura solução deve tornar perceptíveis pelo menos estas mudança
 
 `expansão → problema`
 
-### Conexão → Do Possível ao Vivido
+### Conexão → Da Possibilidade à Experiência
 
 `compreensão institucional → consequência humana`
 
@@ -508,7 +541,7 @@ Porém, uma futura solução deve tornar perceptíveis pelo menos estas mudança
 
 `confiança → continuidade`
 
-A mudança perceptiva pode ocorrer por espaço, ritmo, mídia, composição, tipografia, movimento ou outra solução de design. Não exige necessariamente background, card ou nova seção técnica.
+A mudança perceptiva pode ocorrer por espaço, ritmo, mídia, composição, tipografia, movimento ou outra solução de Design. Não exige necessariamente background, card ou nova seção técnica.
 
 ---
 
@@ -546,9 +579,9 @@ Faria o encerramento da narrativa depender de navegação utilitária.
 
 ---
 
-## 14. Liberdade legítima de design
+## 14. Liberdade legítima de Design — somente após autorização
 
-O futuro wireframe poderá:
+Uma futura materialização, quando autorizada, poderá:
 
 - materializar as sete macroexperiências como menos ou mais regiões técnicas;
 - criar composições contínuas;
@@ -568,22 +601,24 @@ Não poderá:
 - eliminar a autonomia após construir autoridade;
 - absorver Movimento 11 no Footer como simples navegação.
 
+Esta seção define liberdade possível dentro da arquitetura. Ela não funciona como Source Lock nem libera execução atual.
+
 ---
 
 ## 15. Teste de continuidade
 
-Uma futura materialização deve permitir que o visitante atravesse a Home sentindo aproximadamente:
+Uma futura materialização autorizada deve permitir que o visitante atravesse a Home sentindo aproximadamente:
 
 ```text
 EXISTE MAIS
 ↓
 ISSO É REAL E AMPLO
 ↓
-MAS ESTÁ DESCONectado
+MAS ESTÁ DESCONECTADO
 ↓
 AGORA ENTENDO A GUIVOS
 ↓
-ISSO PODE VIRAR EXPERIÊNCIA E É FEITO POR GENTE REAL
+UMA POSSIBILIDADE PODE SE TORNAR EXPERIÊNCIA E EXISTEM PARTICIPANTES REAIS NESSE PROCESSO
 ↓
 AGORA ENTENDO COMO O ECOSSISTEMA GANHA FORMA
 ↓
@@ -592,11 +627,11 @@ EXISTE SUBSTÂNCIA E EU CONTINUO NO CONTROLE
 QUERO DESCOBRIR
 ```
 
-Se a futura solução precisar de onze títulos e onze caixas para produzir essa progressão, provavelmente está materializando a documentação literalmente em vez de projetar uma experiência.
+Se uma futura solução precisar de onze títulos e onze caixas para produzir essa progressão, provavelmente estará materializando a documentação literalmente em vez de projetar uma experiência.
 
 ---
 
-## 16. Regra sintética para design
+## 16. Regra sintética para Design
 
 > **Onze funções. Sete macroexperiências de referência. Uma única narrativa.**
 
@@ -610,6 +645,45 @@ Complemento:
 
 Estado deste refinamento:
 
-> **AGRUPAMENTO NARRATIVO EM SETE MACROEXPERIÊNCIAS DEFINIDO COMO HIPÓTESE PRINCIPAL DE MATERIALIZAÇÃO; QUANTIDADE FINAL DE REGIÕES VISUAIS E LAYOUT PERMANECEM PARA DESIGN.**
+> **AGRUPAMENTO NARRATIVO EM SETE MACROEXPERIÊNCIAS PRESERVADO COMO HIPÓTESE PRINCIPAL DE REFERÊNCIA; RÓTULO DO MOVIMENTO 06, PAPÉIS DOS PRODUTOS E LIMITES DE MATERIALIZAÇÃO RECONCILIADOS COM O MASTER VIGENTE.**
+
+Quantidade final de regiões visuais e layout permanecem para gate futuro de Design.
 
 Este documento não autoriza wireframe, Figma, protótipo ou implementação e não altera Marketing/GTM, disponibilidade operacional ou página `Mapa do Ecossistema`.
+
+---
+
+## 18. Preservações da reconciliação
+
+Esta versão não reduz o mapa anterior. Permanecem preservados:
+
+- as sete macroexperiências;
+- todos os onze movimentos;
+- justificativas de agrupamento;
+- estados perceptivos de saída;
+- transições entre macros;
+- ritmo;
+- fronteiras perceptivas;
+- agrupamentos inadequados;
+- liberdade de Design condicionada;
+- teste de continuidade;
+- regra sintética.
+
+Correções aplicadas:
+
+```text
+DO POSSÍVEL AO VIVIDO
+→ DA POSSIBILIDADE À EXPERIÊNCIA
+
+VIVIDO + PERTENCIMENTO
+→ EXPERIÊNCIA + PERTENCIMENTO
+
+ORGANIZAÇÃO → BUSINESS
+→ PROIBIDO COMO CORRESPONDÊNCIA ESTRUTURAL
+
+INTELLIGENCE
+→ PRODUTO ESPECIALIZADO TRANSVERSAL
+
+HIPÓTESE DE DESIGN
+≠ AUTORIZAÇÃO DE DESIGN
+```
