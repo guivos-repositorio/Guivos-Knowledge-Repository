@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-AUDIT-001
 title: Auditoria de Completude Pré-Wireframe da Home Pública
 status: draft
-version: 0.8.0
+version: 0.9.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-10
+last_updated: 2026-08-28
 parent: GKR-UX-HOME-HANDOFF-001
 depends_on:
   - UXA-020
@@ -25,7 +25,10 @@ depends_on:
   - GKR-UX-HOME-BENCH-001
   - GKR-UX-HOME-BENCH-002
   - GKR-UX-HOME-GTM-BOUNDARY-001
+related:
+  - GKR-UX-HOME-MASTER-001
 normative: false
+maturity: reconciled_pre_wireframe_readiness_audit
 ---
 
 # Auditoria de Completude Pré-Wireframe da Home Pública
@@ -33,6 +36,10 @@ normative: false
 ## 1. Objetivo
 
 Esta auditoria verifica se a documentação da Home pública possui definição estratégica suficiente para uma futura materialização conceitual sem obrigar designers, equipes ou ferramentas generativas a reinventar decisões de marca e experiência.
+
+Nesta versão, o audit foi reconciliado com `GKR-UX-HOME-MASTER-001 v1.0.0` e com o estado narrativo consolidado após a reconciliação de `GKR-UX-HOME-NARR-005`, `GKR-UX-HOME-NARR-001` e `GKR-UX-HOME-VAL-001`.
+
+O Master é a autoridade de consumo vigente da Home. Este audit funciona como verificação de prontidão e não o substitui.
 
 A auditoria não autoriza wireframe, Figma, UI, protótipo ou implementação.
 
@@ -61,8 +68,13 @@ Já estão suficientemente consolidados:
 - arquitetura narrativa;
 - onze movimentos;
 - agrupamento de referência em sete macroexperiências;
+- distinção `Possibilidade ≠ Oportunidade`;
+- camada de `Mecanismo` na passagem da Possibilidade à Experiência;
 - distinção entre Realidade e Autoridade;
 - transição entre Pertencimento e Ecossistema/Produtos;
+- taxonomia dos sete Produtos Especializados;
+- Guivos Business como Produto Especializado B2B, sem equivalência `Organização = Business`;
+- Guivos Intelligence como Produto Especializado transversal / Intelligence Layer, sem autoridade decisória totalizante;
 - conteúdo e prova;
 - interação e ritmo;
 - percepção visual;
@@ -82,8 +94,18 @@ A arquitetura distingue explicitamente:
 Pessoa / Organização / Coletivo
 = quem participa
 
-Journey / Travel / Mall / Media / Business / Intelligence / Ads
-= como o ecossistema ganha forma e capacidade
+Journey / Travel / Mall / Business / Media / Ads / Intelligence
+= Produtos Especializados com responsabilidades próprias
+```
+
+E preserva:
+
+```text
+Possibilidade
+≠ Oportunidade
+
+Compreender
+≠ Decidir
 ```
 
 A principal correção de escopo permanece:
@@ -126,13 +148,44 @@ Camadas conceituais:
 
 1. `O que se torna possível quando você entra aqui?`
 2. `Um mundo maior de possibilidades passa a fazer parte do seu.`
-3. `A Guivos conecta pessoas, organizações, conhecimento, oportunidades e experiências para tornar novos caminhos mais visíveis e possíveis.`
+3. `A Guivos conecta Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências para tornar novas Possibilidades mais visíveis e aproximar Oportunidades reais quando elas fizerem sentido.`
 
-A futura copy pode lapidar redação, mas não remover o significado validado.
+A futura copy pode lapidar redação, mas não remover:
 
-### 3.4 Assinatura `Do possível ao vivido` — DECIDIDO
+- conexão;
+- pluralidade de participantes;
+- Pessoas, Organizações e Coletivos;
+- conhecimento;
+- caminhos e experiências;
+- distinção entre Possibilidade e Oportunidade;
+- Oportunidades reais apenas quando houver materialização externa legítima e fizerem sentido;
+- ausência de promessa de resultado.
 
-Território complementar de prova, experiência e continuidade.
+Autonomia permanece princípio transversal da Home e possui explicitação própria no Movimento 10; não é requisito adicional exclusivo da terceira camada da Hero.
+
+### 3.4 Movimento 06 e assinatura institucional — DECIDIDO
+
+O Movimento 06 é:
+
+> **Da Possibilidade à Experiência.**
+
+A expressão histórica `Do possível ao vivido.` não funciona como assinatura complementar da Home nem como segunda assinatura institucional da Guivos.
+
+Quando a assinatura institucional da marca for utilizada, sua aplicação deve obedecer à autoridade de Marca vigente.
+
+A cadeia de referência do Movimento 06 é:
+
+```text
+POSSIBILIDADE
+→ MECANISMO
+→ OPORTUNIDADE REAL, quando houver materialização externa legítima
+→ ESCOLHA
+→ EXPERIÊNCIA
+→ CONTRIBUIÇÃO / APRENDIZADO
+→ NOVO MOMENTO
+```
+
+Ela não é funil obrigatório e não representa resultado garantido.
 
 ### 3.5 Cinco pilares — DECIDIDO
 
@@ -144,7 +197,7 @@ Território complementar de prova, experiência e continuidade.
 
 ### 3.6 Cadeia conceitual — DECIDIDO
 
-`ENTRAR → AMPLIAR → DESCOBRIR → CONECTAR → ESCOLHER → EXPERIMENTAR → EVOLUIR`.
+`ENTRAR → AMPLIAR → DESCOBRIR → COMPREENDER / CONECTAR → ESCOLHER → EXPERIMENTAR → APRENDER / EVOLUIR`.
 
 ### 3.7 Onze movimentos narrativos — DECIDIDO
 
@@ -153,7 +206,7 @@ Território complementar de prova, experiência e continuidade.
 3. Amplitude;
 4. Desconexão;
 5. Guivos / Conexão;
-6. Do Possível ao Vivido;
+6. Da Possibilidade à Experiência;
 7. Pertencimento;
 8. Ecossistema / Produtos;
 9. Autoridade;
@@ -171,7 +224,7 @@ A hipótese principal governada por `GKR-UX-HOME-NARR-005` é:
 1. Abrir o Horizonte — Movimento 01;
 2. Ver o Real e Perceber a Amplitude — Movimentos 02 + 03;
 3. Perceber a Desconexão e Entender o Papel da Guivos — Movimentos 04 + 05;
-4. Ver o Possível Virar Experiência e Perceber Quem Faz Acontecer — Movimentos 06 + 07;
+4. Da Possibilidade à Experiência + Pertencimento — Movimentos 06 + 07;
 5. Compreender a Coerência do Ecossistema — Movimento 08;
 6. Encontrar Substância sem Perder Autonomia — Movimentos 09 + 10;
 7. Reabrir o Horizonte para a Descoberta — Movimento 11.
@@ -312,17 +365,34 @@ Regra de sequência:
 
 > **Pertencimento primeiro. Materialização depois. Segmentação por produto, nunca.**
 
-### 3.23 Movimento 08 — hierarquia do ecossistema — DECIDIDO EM PRINCÍPIO
+### 3.23 Movimento 08 — Produtos Especializados — DECIDIDO EM PRINCÍPIO
 
-A hierarquia narrativa é governada por `GKR-UX-HOME-NARR-002`:
+O Movimento 08 deve preservar a hierarquia reconciliada do Master:
 
-- Journey — experiência e continuidade;
-- Travel, Mall, Media, Business e Ads — manifestações especializadas;
-- Intelligence — inteligência transversal.
+```text
+GUIVOS
+│
+├── JOURNEY
+│   └── experiência e continuidade da jornada
+│
+├── MALL / TRAVEL / BUSINESS / MEDIA / ADS
+│   └── Produtos Especializados com responsabilidades próprias
+│
+└── INTELLIGENCE
+    └── Produto Especializado transversal de inteligência
+```
+
+Os sete permanecem **Produtos Especializados** dentro de uma única Guivos; essa taxonomia comum não elimina as responsabilidades distintas do Movimento 08.
+
+Journey preserva seu papel de experiência e continuidade e **não deve virar card equivalente por convenção**.
+
+O Intelligence possui papel transversal / Intelligence Layer sem deixar de ser Produto Especializado e sem se tornar autoridade decisória totalizante.
+
+Business é Produto Especializado B2B e não equivale ao tipo estrutural `Organização`.
 
 Regra:
 
-> **O Movimento 08 não é uma vitrine de produtos. É uma explicação da coerência do ecossistema.**
+> **O Movimento 08 não é uma vitrine de produtos nem um launcher ampliado. É uma explicação da coerência entre responsabilidades diferentes dentro da mesma Guivos.**
 
 ### 3.24 Sistema de conteúdo — DECIDIDO
 
@@ -338,9 +408,26 @@ Classes:
 
 Prova direta > história documentada > evidência institucional > métrica > depoimento > afirmação institucional.
 
-### 3.26 Modelo das histórias — DECIDIDO
+### 3.26 Modelo editorial das histórias — DECIDIDO
 
-Contexto → possibilidade → decisão → experiência → consequência → continuidade.
+O modelo editorial canônico é:
+
+```text
+CONTEXTO
+→ POSSIBILIDADE
+→ DECISÃO
+→ EXPERIÊNCIA
+→ CONSEQUÊNCIA
+→ CONTINUIDADE
+```
+
+Pergunta editorial de continuidade:
+
+> **E depois?**
+
+`Mecanismo` e eventual `Oportunidade real` não são etapas editoriais obrigatórias. Quando uma história estiver explicando especificamente o Movimento 06, aplica-se a cadeia mais rica definida em `3.4`, sem convertê-la em funil obrigatório nem promessa de resultado.
+
+A Guivos não deve apropriar-se da agência do participante.
 
 ### 3.27 Conteúdo vivo sem feed — DECIDIDO
 
@@ -548,13 +635,19 @@ Antes de publicação, a versão concreta deverá ser reconciliada com verdade o
 ### Agrupamento em macroexperiências
 **ALTA EM PRINCÍPIO**
 
+### Distinção Possibilidade × Oportunidade
+**ALTA**
+
+### Movimento 06 — Possibilidade → Experiência
+**ALTA EM PRINCÍPIO**
+
 ### Distinção Realidade × Autoridade
 **ALTA**
 
 ### Transição Pertencimento → Ecossistema
 **ALTA EM PRINCÍPIO**
 
-### Movimento 08 — hierarquia do ecossistema
+### Movimento 08 — coerência dos Produtos Especializados
 **ALTA EM PRINCÍPIO**
 
 ### Conteúdo e prova — regras
@@ -610,12 +703,13 @@ Antes de iniciar um wireframe governado da Home, exigir apenas:
 
 1. autorização explícita para entrar na etapa de materialização;
 2. confirmação de que o escopo continua restrito à Home pública;
-3. adoção dos documentos desta frente como baseline de trabalho;
+3. adoção de `GKR-UX-HOME-MASTER-001` como autoridade de consumo e dos documentos especializados como baseline de aprofundamento;
 4. preservação da arquitetura narrativa, das sete macroexperiências, da transição 07 → 08, do Movimento 08 e do Header vigentes;
 5. preservação do comportamento do Header estabelecido em `GKR-UX-HOME-NAV-004`;
-6. preservação dos limites de prova, autonomia e privacidade;
-7. definição do objetivo da rodada de wireframe — exploração, comparação ou convergência;
-8. rastreabilidade entre proposta visual e requisitos da arquitetura.
+6. preservação da distinção `Possibilidade ≠ Oportunidade`, da camada de Mecanismo e da ausência de garantia de resultado;
+7. preservação dos limites de prova, autonomia e privacidade;
+8. definição do objetivo da rodada de wireframe — exploração, comparação ou convergência;
+9. rastreabilidade entre proposta visual e requisitos da arquitetura.
 
 Não é necessário, para esse gate:
 
@@ -637,15 +731,19 @@ O designer ou ferramenta generativa não pode redefinir:
 - os cinco pilares;
 - os onze movimentos;
 - o agrupamento estratégico das sete macroexperiências sem justificativa e revisão de arquitetura;
+- a distinção `Possibilidade ≠ Oportunidade`;
+- o papel do Mecanismo na passagem da Possibilidade à Experiência;
 - a distinção Movimento 02 × Movimento 09;
 - o papel de Pessoas, Organizações e Coletivos;
 - a separação `participante ≠ produto`;
 - a regra `Participantes respondem “quem”; produtos e capacidades respondem “como”`;
 - a ordem semântica dominante da narrativa;
-- o papel estrutural dos produtos;
+- os sete Produtos Especializados e suas responsabilidades estruturais;
+- Journey como experiência e continuidade da jornada, sem equivalência automática a um card dos demais Produtos no Movimento 08;
+- Business como Produto Especializado B2B, não como sinônimo de Organização;
+- Intelligence como Produto Especializado transversal / Intelligence Layer, com `COMPREENDER ≠ DECIDIR`;
 - Journey como porta própria `Iniciar Jornada` no Header;
 - o inventário conceitual vigente do launcher;
-- a hierarquia Journey / manifestações especializadas / Intelligence no Movimento 08;
 - a persistência semântica do Header e seus limites de comportamento;
 - a existência do link `Mapa do Ecossistema` no rodapé;
 - regras de autonomia;
@@ -670,7 +768,7 @@ A futura etapa deverá propor, entre outros:
 - solução responsiva mobile dentro da hierarquia vigente;
 - relação Header / narrativa / rodapé;
 - tradução visual da passagem `quem participa → como o ecossistema ganha forma`;
-- forma de representar produtos sem catálogo;
+- forma de representar Produtos Especializados sem catálogo;
 - slots e distribuição de prova;
 - Hero com fallback;
 - estados sem mídia;
@@ -706,13 +804,14 @@ Uma proposta futura deverá responder:
 20. Launcher e navegação geral preservam funções diferentes?
 21. O launcher preserva Journey fora de sua grade na hipótese vigente?
 22. A transição 07 → 08 evita qualquer mapeamento automático de participante para produto?
-23. O Movimento 08 diferencia Journey, manifestações especializadas e Intelligence sem exigir arquitetura técnica?
-24. Movimento 02 e Movimento 09 cumprem funções diferentes de prova?
-25. As sete macroexperiências preservam os onze significados sem parecer onze seções?
-26. `Mapa do Ecossistema` continua apenas como link no rodapé desta frente?
-27. A solução desperta vontade de descobrir?
-28. A proposta é reconhecivelmente Guivos e não uma cópia de benchmark?
-
+23. O Movimento 08 preserva Journey como experiência e continuidade, mantém os demais Produtos Especializados com responsabilidades próprias e preserva o papel transversal do Intelligence sem criar nova classe estrutural?
+24. Business permanece distinto do tipo estrutural Organização?
+25. Movimento 02 e Movimento 09 cumprem funções diferentes de prova?
+26. O Movimento 06 distingue Possibilidade, Mecanismo, eventual Oportunidade real, escolha e Experiência sem parecer funil garantido?
+27. As sete macroexperiências preservam os onze significados sem parecer onze seções?
+28. `Mapa do Ecossistema` continua apenas como link no rodapé desta frente?
+29. A solução desperta vontade de descobrir?
+30. A proposta é reconhecivelmente Guivos e não uma cópia de benchmark?
 ---
 
 ## 12. Síntese de prontidão
@@ -724,10 +823,13 @@ A documentação já responde com alta confiança:
 - como a Hero abre a narrativa;
 - como os onze movimentos constroem compreensão;
 - como esses movimentos se agrupam em sete macroexperiências de referência;
+- como Possibilidade, Mecanismo, eventual Oportunidade real, escolha e Experiência se distinguem;
 - como Realidade e Autoridade cumprem papéis diferentes;
 - como Pertencimento conduz a Ecossistema sem segmentar participantes por produto;
 - por que produtos não dominam a abertura;
-- como o Movimento 08 explica coerência em vez de portfólio;
+- como o Movimento 08 explica coerência entre sete Produtos Especializados em vez de portfólio, preservando Journey como experiência e continuidade e Intelligence como Produto Especializado transversal;
+- como Business permanece distinto de Organização;
+- como Intelligence amplia compreensão sem substituir decisão;
 - como o Header oferece acessos sem catalogar a marca;
 - como o Header se comporta durante scroll e mobile sem desaparecer ou dominar;
 - como Journey se diferencia do launcher;
@@ -749,3 +851,7 @@ Essa pergunta pertence à futura estratégia de Marketing/GTM e à preparação 
 Regra final:
 
 > **A Home pode ser desenhada como arquitetura completa do ecossistema enquanto o ecossistema ainda está sendo construído. O que será ativado em cada lançamento é uma decisão posterior de Marketing/GTM, sujeita à verdade operacional.**
+
+Estado deste audit:
+
+> **PRONTIDÃO ESTRATÉGICA PRÉ-WIREFRAME RECONCILIADA — MATERIALIZAÇÃO NÃO AUTORIZADA.**
