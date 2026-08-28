@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-AUDIT-002
 title: Auditoria Consolidada de Integridade da Arquitetura da Home Pública
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-28
 parent: GKR-UX-HOME-AUDIT-001
@@ -36,7 +36,7 @@ maturity: reconciled_integrity_audit_pre_materialization
 
 Esta auditoria consolida a leitura arquitetural da Home pública de `guivos.com` após os refinamentos sucessivos desta frente.
 
-Nesta versão, o audit foi reconciliado com `GKR-UX-HOME-MASTER-001 v1.0.0`, com `GKR-UX-HOME-AUDIT-001 v0.9.0`, com o fechamento do domínio narrativo que atualizou `GKR-UX-HOME-NARR-005`, `GKR-UX-HOME-NARR-001` e `GKR-UX-HOME-VAL-001` e com `GKR-UX-HOME-NAV-001 v0.4.0`, reconciliado com a fronteira GTM vigente.
+Nesta versão, o audit foi reconciliado com `GKR-UX-HOME-MASTER-001 v1.0.0`, com `GKR-UX-HOME-AUDIT-001 v0.9.0`, com o fechamento do domínio narrativo que atualizou `GKR-UX-HOME-NARR-005`, `GKR-UX-HOME-NARR-001` e `GKR-UX-HOME-VAL-001`, com `GKR-UX-HOME-NAV-001 v0.4.0`, reconciliado com a fronteira GTM vigente, e com `GKR-UX-HOME-HANDOFF-001 v0.2.0`, reconciliado com o Master e os refinamentos posteriores.
 
 O Master é a autoridade de consumo vigente da Home. Esta auditoria verifica integridade entre camadas e não o substitui.
 
@@ -57,7 +57,7 @@ A auditoria também impede que documentos anteriores sejam lidos isoladamente e 
 
 Resultado:
 
-> **NENHUMA CONTRADIÇÃO ESTRUTURAL CRÍTICA FOI IDENTIFICADA NA INTERPRETAÇÃO VIGENTE DA ARQUITETURA DA HOME APÓS A RECONCILIAÇÃO NARRATIVA E DE NAVEGAÇÃO.**
+> **NENHUMA CONTRADIÇÃO ESTRUTURAL CRÍTICA FOI IDENTIFICADA NA INTERPRETAÇÃO VIGENTE DA ARQUITETURA DA HOME APÓS A RECONCILIAÇÃO NARRATIVA, DE NAVEGAÇÃO E DO HANDOFF.**
 
 A arquitetura atual apresenta coerência entre:
 
@@ -72,13 +72,14 @@ A arquitetura atual apresenta coerência entre:
 - autoridade;
 - autonomia;
 - mobile;
-- fronteira com Marketing/GTM.
+- fronteira com Marketing/GTM;
+- briefing e critérios de futura materialização.
 
 Do inventário de resíduos desta auditoria:
 
 - `RES-01` foi **resolvido** pela reconciliação de `NAV-001 v0.4.0` com a fronteira GTM vigente;
 - `RES-02` foi **resolvido** pela reconciliação de `NARR-001`;
-- `RES-03` permanece como risco de consumo do handoff original, que antecede refinamentos posteriores.
+- `RES-03` foi **resolvido** pela reconciliação de `HANDOFF-001 v0.2.0` com o Master e os refinamentos posteriores.
 
 Conclusão de maturidade:
 
@@ -586,19 +587,33 @@ Classificação:
 
 ---
 
-## RES-03 — handoff original antecede os refinamentos posteriores
+## RES-03 — handoff original antecedia os refinamentos posteriores
 
-`GKR-UX-HOME-HANDOFF-001 v0.1.0` permanece anterior a diversos refinamentos e ainda contém, entre outros, a terceira camada antiga da Hero, o rótulo histórico `Do possível ao vivido`, a cadeia conceitual anterior e formulações pré-reconciliação sobre produtos.
+`GKR-UX-HOME-HANDOFF-001 v0.1.0` antecedia diversos refinamentos e continha, entre outros, a terceira camada antiga da Hero, `Do possível ao vivido.` como assinatura complementar, a cadeia conceitual anterior e formulações pré-reconciliação sobre Produtos.
 
-Ele permanece útil como briefing-base, mas não deve ser utilizado isoladamente como snapshot final da arquitetura.
+`GKR-UX-HOME-HANDOFF-001 v0.2.0` reconciliou o briefing com o Master e os refinamentos posteriores, preservando sua riqueza operacional e corrigindo explicitamente:
 
-Regra de consumo:
+- terceira camada da Hero;
+- sistema verbal e assinatura institucional;
+- `Possibilidade ≠ Oportunidade`;
+- camada de Mecanismo específica da passagem do Movimento 06;
+- Movimento 06 como `Da Possibilidade à Experiência`;
+- modelo editorial longitudinal das histórias separado da cadeia específica do Movimento 06;
+- sete Produtos Especializados e papel distinto de Journey;
+- `Organização ≠ Business`;
+- Intelligence como Produto Especializado transversal / Intelligence Layer;
+- `COMPREENDER ≠ DECIDIR`;
+- fronteira entre arquitetura conceitual, futuro wireframe, disponibilidade operacional e GTM;
+- critérios de prova, acessibilidade, internacionalização, fallback, anti-padrões, matriz de aceitação, perguntas de revisão e prompts futuros;
+- ausência de autorização automática de materialização.
 
-> **GKR-UX-HOME-MASTER-001 é a autoridade de consumo vigente. HANDOFF-001 somente pode ser usado como aprofundamento quando reconciliado com o Master e com os documentos especializados posteriores.**
+Regra de consumo vigente:
+
+> **GKR-UX-HOME-MASTER-001 permanece a autoridade de consumo. HANDOFF-001 v0.2.0 é um briefing reconciliado e pode ser usado como aprofundamento de Design futuro dentro da precedência vigente, sem substituir o Master.**
 
 Classificação:
 
-**RISCO DE CONSUMO DOCUMENTAL ATUAL — não é falha da arquitetura.**
+**RESOLVIDO — o risco de consumo documental do handoff anterior foi encerrado.**
 
 ---
 
@@ -633,14 +648,18 @@ Para evitar reintrodução de decisões superadas, utilizar a seguinte regra pr�
 
 12. `GKR-UX-HOME-SYS-001`.
 
+### Handoff
+
+13. `GKR-UX-HOME-HANDOFF-001 v0.2.0` como briefing reconciliado para futura materialização, subordinado ao Master e às autoridades especializadas de seus respectivos domínios.
+
 ### Auditoria
 
-13. `GKR-UX-HOME-AUDIT-001 v0.9.0`;
-14. esta auditoria consolidada para integridade entre as camadas.
+14. `GKR-UX-HOME-AUDIT-001 v0.9.0`;
+15. esta auditoria consolidada para integridade entre as camadas.
 
 Regra:
 
-> **o Master governa consumo; documentos especializados aprofundam; auditorias verificam integridade; nenhum audit reabre sozinho uma decisão convergida.**
+> **o Master governa consumo; documentos especializados aprofundam; o handoff traduz a arquitetura para futura execução de Design; auditorias verificam integridade; nenhum audit ou handoff reabre sozinho uma decisão convergida.**
 
 ---
 
@@ -675,11 +694,11 @@ Permanecem deliberadamente abertos:
 
 - composição adicional além do link `Mapa do Ecossistema`.
 
-### Resíduo documental ainda aberto
+### Resíduos documentais conhecidos neste audit
 
-- reconciliação de `HANDOFF-001` com o Master e os refinamentos posteriores.
+- nenhum resíduo documental permanece aberto entre `RES-01`, `RES-02` e `RES-03`.
 
-Esse resíduo é problema de consumo documental, não lacuna da arquitetura estratégica.
+O fechamento desses resíduos não elimina decisões deliberadamente abertas de copy, Design, operação, GTM ou implementação.
 
 ### Etapas posteriores
 
@@ -706,7 +725,7 @@ Isso significa:
 - não criar novos refinamentos apenas para aumentar detalhamento documental;
 - não reabrir decisões já consolidadas sem novo fundamento;
 - não transformar escolhas futuras de design em novas decisões estratégicas antecipadas;
-- corrigir resíduos documentais quando puderem reintroduzir semântica superada;
+- corrigir novos resíduos documentais somente quando puderem reintroduzir semântica superada;
 - registrar nova exceção somente quando surgir conflito real, nova necessidade de produto ou nova decisão explícita do fundador/governança.
 
 Regra de controle:
@@ -729,8 +748,8 @@ Até essa autorização:
 - nenhuma implementação deve começar;
 - nenhuma decisão de Marketing/GTM deve ser inferida.
 
-A correção do resíduo documental de `HANDOFF-001` pode ocorrer sem constituir autorização de materialização, pois sua finalidade é apenas impedir reintrodução de decisões superadas.
+A reconciliação de `HANDOFF-001 v0.2.0` foi concluída exclusivamente para encerrar o risco de consumo documental e **não constitui autorização de materialização**.
 
 Estado final desta auditoria:
 
-> **ARQUITETURA ESTRATÉGICA CONVERGIDA — AUDITORIA RECONCILIADA — RES-01 RESOLVIDO — HANDOFF-001 AINDA PENDENTE — MATERIALIZAÇÃO NÃO AUTORIZADA.**
+> **ARQUITETURA ESTRATÉGICA CONVERGIDA — AUDITORIA RECONCILIADA — RES-01 / RES-02 / RES-03 RESOLVIDOS — MATERIALIZAÇÃO NÃO AUTORIZADA.**
