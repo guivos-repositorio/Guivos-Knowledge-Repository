@@ -13535,17 +13535,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#regra-adicional-de-controle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Regra adicional de controle
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -13905,6 +13894,8 @@
 <h1 id="auditoria-consolidada-de-integridade-da-arquitetura-da-home-publica">Auditoria Consolidada de Integridade da Arquitetura da Home Pública<a class="headerlink" href="#auditoria-consolidada-de-integridade-da-arquitetura-da-home-publica" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Esta auditoria consolida a leitura arquitetural da Home pública de <code>guivos.com</code> após os refinamentos sucessivos desta frente.</p>
+<p>Nesta versão, o audit foi reconciliado com <code>GKR-UX-HOME-MASTER-001 v1.0.0</code>, com <code>GKR-UX-HOME-AUDIT-001 v0.9.0</code> e com o fechamento do domínio narrativo que atualizou <code>GKR-UX-HOME-NARR-005</code>, <code>GKR-UX-HOME-NARR-001</code> e <code>GKR-UX-HOME-VAL-001</code>.</p>
+<p>O Master é a autoridade de consumo vigente da Home. Esta auditoria verifica integridade entre camadas e não o substitui.</p>
 <p>Seu objetivo não é criar novas seções, wireframe, UI ou Marketing/GTM.</p>
 <p>Ela verifica quatro dimensões:</p>
 <ol>
@@ -13918,7 +13909,7 @@
 <h2 id="2-resultado-executivo">2. Resultado executivo<a class="headerlink" href="#2-resultado-executivo" title="Permanent link">&para;</a></h2>
 <p>Resultado:</p>
 <blockquote>
-<p><strong>NENHUMA CONTRADIÇÃO ESTRUTURAL CRÍTICA FOI IDENTIFICADA NA INTERPRETAÇÃO VIGENTE DA ARQUITETURA DA HOME.</strong></p>
+<p><strong>NENHUMA CONTRADIÇÃO ESTRUTURAL CRÍTICA FOI IDENTIFICADA NA INTERPRETAÇÃO VIGENTE DA ARQUITETURA DA HOME APÓS A RECONCILIAÇÃO NARRATIVA.</strong></p>
 </blockquote>
 <p>A arquitetura atual apresenta coerência entre:</p>
 <ul>
@@ -13926,7 +13917,8 @@
 <li>Hero;</li>
 <li>navegação;</li>
 <li>participantes;</li>
-<li>produtos;</li>
+<li>Produtos Especializados;</li>
+<li>Possibilidade, Mecanismo, eventual Oportunidade real e Experiência;</li>
 <li>sete macroexperiências;</li>
 <li>prova;</li>
 <li>autoridade;</li>
@@ -13934,12 +13926,17 @@
 <li>mobile;</li>
 <li>fronteira com Marketing/GTM.</li>
 </ul>
-<p>Foram identificados <strong>três resíduos documentais de menor precedência</strong>, descritos nesta auditoria, que não alteram a arquitetura vigente porque já possuem refinamentos posteriores explícitos.</p>
+<p>Do inventário histórico de resíduos desta auditoria:</p>
+<ul>
+<li><code>RES-01</code> permanece como resíduo documental em <code>NAV-001</code>;</li>
+<li><code>RES-02</code> foi <strong>resolvido</strong> pela reconciliação de <code>NARR-001</code>;</li>
+<li><code>RES-03</code> permanece como risco de consumo do handoff original, que antecede refinamentos posteriores.</li>
+</ul>
 <p>Conclusão de maturidade:</p>
 <blockquote>
 <p><strong>A arquitetura estratégica da Home está convergida dentro do escopo atual e não necessita de novos refinamentos conceituais isolados antes de uma futura etapa de materialização, salvo nova decisão explícita ou descoberta de contradição real.</strong></p>
 </blockquote>
-<p>Isso não autoriza wireframe, Figma, UI, protótipo, implementação ou merge.</p>
+<p>Isso não autoriza wireframe, Figma, UI, protótipo, implementação ou publicação.</p>
 <hr />
 <h2 id="3-arquitetura-vigente-em-uma-leitura-unica">3. Arquitetura vigente em uma leitura única<a class="headerlink" href="#3-arquitetura-vigente-em-uma-leitura-unica" title="Permanent link">&para;</a></h2>
 <p>A Home deve ser interpretada como três sistemas coordenados:</p>
@@ -13993,17 +13990,17 @@ MACROEXPERIÊNCIA 03 — DESCONEXÃO → CONEXÃO
 
 ↓
 
-MACROEXPERIÊNCIA 04 — DO POSSÍVEL AO VIVIDO + PERTENCIMENTO
-├── Movimento 06 — Do Possível ao Vivido
+MACROEXPERIÊNCIA 04 — DA POSSIBILIDADE À EXPERIÊNCIA + PERTENCIMENTO
+├── Movimento 06 — Da Possibilidade à Experiência
 └── Movimento 07 — Pertencimento
 
 ↓
 
 MACROEXPERIÊNCIA 05 — COERÊNCIA DO ECOSSISTEMA
 └── Movimento 08 — Ecossistema / Produtos
-    ├── Journey — experiência e continuidade
-    ├── Travel / Mall / Media / Business / Ads — manifestações especializadas
-    └── Intelligence — inteligência transversal
+    ├── Journey — experiência e continuidade da jornada
+    ├── Mall / Travel / Business / Media / Ads — Produtos Especializados com responsabilidades próprias
+    └── Intelligence — Produto Especializado transversal de inteligência / Intelligence Layer
 
 ↓
 
@@ -14026,6 +14023,7 @@ RODAPÉ
 <blockquote>
 <p><strong>Onze funções. Sete macroexperiências de referência. Uma única narrativa.</strong></p>
 </blockquote>
+<p>Todos os sete permanecem Produtos Especializados. Essa taxonomia comum não elimina responsabilidades distintas: Journey preserva experiência e continuidade da jornada; Intelligence preserva transversalidade; e os demais Produtos Especializados preservam suas responsabilidades próprias.</p>
 <hr />
 <h2 id="5-auditoria-de-coerencia-posicionamento">5. Auditoria de coerência — posicionamento<a class="headerlink" href="#5-auditoria-de-coerencia-posicionamento" title="Permanent link">&para;</a></h2>
 <h3 id="resultado">Resultado<a class="headerlink" href="#resultado" title="Permanent link">&para;</a></h3>
@@ -14040,7 +14038,7 @@ RODAPÉ
 <li>simplicidade sem superficialidade;</li>
 <li>autonomia sem passividade.</li>
 </ul>
-<p>Nenhum refinamento posterior deslocou a marca para uma interpretação de marketplace, superapp, rede social, plataforma de IA ou portfólio corporativo.</p>
+<p>Nenhum refinamento posterior desloca a marca para uma interpretação de marketplace, superapp, rede social, plataforma de IA ou portfólio corporativo.</p>
 <hr />
 <h2 id="6-auditoria-de-coerencia-header-hero">6. Auditoria de coerência — Header × Hero<a class="headerlink" href="#6-auditoria-de-coerencia-header-hero" title="Permanent link">&para;</a></h2>
 <h3 id="resultado_1">Resultado<a class="headerlink" href="#resultado_1" title="Permanent link">&para;</a></h3>
@@ -14055,20 +14053,19 @@ Hero
 <p><code>Iniciar Jornada</code> pertence ao Header.</p>
 <p>O CTA da Hero pertence à continuidade da própria Home.</p>
 <p>Não existe necessidade estratégica de repetir <code>Iniciar Jornada</code> dentro da Hero.</p>
-<h3 id="regra-adicional-de-controle">Regra adicional de controle<a class="headerlink" href="#regra-adicional-de-controle" title="Permanent link">&para;</a></h3>
-<p>As três camadas semânticas da Hero:</p>
+<p>As três camadas semânticas da Hero são:</p>
 <ol>
 <li>pergunta-mãe;</li>
 <li>amplitude / pertencimento;</li>
-<li>concretização do papel da Guivos;</li>
+<li>concretização do papel da Guivos.</li>
 </ol>
-<p><strong>não significam obrigação de apresentar três blocos textuais longos simultaneamente com o mesmo peso visual.</strong></p>
+<p>A terceira camada vigente deve preservar conexão, pluralidade de participantes, Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências, distinguir Possibilidade de Oportunidade, limitar Oportunidades reais à materialização externa legítima quando fizerem sentido e não prometer resultado.</p>
+<p>Autonomia permanece princípio transversal da Home e possui explicitação própria no Movimento 10; não é requisito adicional exclusivo da terceira camada da Hero.</p>
 <p>Formalização:</p>
 <blockquote>
 <p><strong>camadas semânticas da Hero ≠ três massas de texto simultaneamente dominantes.</strong></p>
 </blockquote>
 <p>O design futuro pode trabalhar hierarquia, ritmo, progressive disclosure e composição, desde que todas as funções semânticas permaneçam compreensíveis.</p>
-<p>Isso é necessário para proteger simplicidade e impacto.</p>
 <hr />
 <h2 id="7-auditoria-de-coerencia-participantes-produtos">7. Auditoria de coerência — participantes × produtos<a class="headerlink" href="#7-auditoria-de-coerencia-participantes-produtos" title="Permanent link">&para;</a></h2>
 <h3 id="resultado_2">Resultado<a class="headerlink" href="#resultado_2" title="Permanent link">&para;</a></h3>
@@ -14077,8 +14074,8 @@ Hero
 <div class="highlight"><pre><span></span><code>Pessoa / Organização / Coletivo
 = quem participa
 
-Journey / Travel / Mall / Media / Business / Intelligence / Ads
-= como o ecossistema ganha forma e capacidade
+Journey / Travel / Mall / Business / Media / Ads / Intelligence
+= Produtos Especializados com responsabilidades próprias
 </code></pre></div>
 <p>Não existe correspondência 1:1.</p>
 <p>Portanto:</p>
@@ -14092,23 +14089,46 @@ Journey / Travel / Mall / Media / Business / Intelligence / Ads
 <hr />
 <h2 id="8-auditoria-de-coerencia-movimento-08">8. Auditoria de coerência — Movimento 08<a class="headerlink" href="#8-auditoria-de-coerencia-movimento-08" title="Permanent link">&para;</a></h2>
 <h3 id="resultado_3">Resultado<a class="headerlink" href="#resultado_3" title="Permanent link">&para;</a></h3>
-<p><strong>COERENTE APÓS OS REFINAMENTOS NARR-002 E NARR-003.</strong></p>
-<p>A leitura correta é:</p>
-<ul>
-<li>Journey — experiência e continuidade;</li>
-<li>Travel, Mall, Media, Business e Ads — manifestações especializadas;</li>
-<li>Intelligence — inteligência transversal.</li>
-</ul>
+<p><strong>COERENTE APÓS A RECONCILIAÇÃO DO DOMÍNIO NARRATIVO.</strong></p>
+<p>A leitura vigente preserva a hierarquia reconciliada do Master:</p>
+<div class="highlight"><pre><span></span><code>GUIVOS
+│
+├── JOURNEY
+│   └── experiência e continuidade da jornada
+│
+├── MALL / TRAVEL / BUSINESS / MEDIA / ADS
+│   └── Produtos Especializados com responsabilidades próprias
+│
+└── INTELLIGENCE
+    └── Produto Especializado transversal de inteligência
+</code></pre></div>
+<p>Os sete permanecem Produtos Especializados, mas o Movimento 08 não os achata em papéis equivalentes.</p>
+<p>Journey preserva experiência e continuidade da jornada e <strong>não deve virar card equivalente por convenção</strong>.</p>
+<p>Business é Produto Especializado B2B e não equivale ao tipo estrutural <code>Organização</code>.</p>
+<p>Intelligence é Produto Especializado transversal / Intelligence Layer, sem deixar de ser Produto Especializado e sem se tornar autoridade decisória totalizante.</p>
+<p>Regras:</p>
+<div class="highlight"><pre><span></span><code>Organização
+≠ Business
+
+Intelligence transversal
+≠ nova classe estrutural
+
+JOURNEY
+≠ CARD EQUIVALENTE POR CONVENÇÃO
+
+COMPREENDER
+≠ DECIDIR
+</code></pre></div>
 <p>O Movimento 08 explica coerência e não replica o launcher.</p>
 <p>Formalização:</p>
 <blockquote>
-<p><strong>launcher responde “onde ir”; Movimento 08 responde “por que isso pertence à mesma Guivos”.</strong></p>
+<p><strong>launcher responde “onde ir”; Movimento 08 responde “por que responsabilidades diferentes pertencem à mesma Guivos”.</strong></p>
 </blockquote>
-<p>A arquitetura rejeita sete cards equivalentes como tradução automática dos sete componentes.</p>
+<p>A arquitetura rejeita sete cards equivalentes como tradução automática dos sete Produtos Especializados.</p>
 <hr />
 <h2 id="9-auditoria-de-redundancia-movimentos-02-06-e-09">9. Auditoria de redundância — Movimentos 02, 06 e 09<a class="headerlink" href="#9-auditoria-de-redundancia-movimentos-02-06-e-09" title="Permanent link">&para;</a></h2>
 <h3 id="resultado_4">Resultado<a class="headerlink" href="#resultado_4" title="Permanent link">&para;</a></h3>
-<p><strong>SEM REDUNDÂNCIA FUNCIONAL APÓS NARR-004.</strong></p>
+<p><strong>SEM REDUNDÂNCIA FUNCIONAL.</strong></p>
 <p>Os três territórios são diferentes:</p>
 <h3 id="movimento-02">Movimento 02<a class="headerlink" href="#movimento-02" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -14117,9 +14137,18 @@ Journey / Travel / Mall / Media / Business / Intelligence / Ads
 <p>Mostra realidade rapidamente.</p>
 <h3 id="movimento-06">Movimento 06<a class="headerlink" href="#movimento-06" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>“Isso pode sair do possível e chegar à experiência.”</strong></p>
+<p><strong>“Uma Possibilidade pode chegar à Experiência por agência e escolha.”</strong></p>
 </blockquote>
-<p>Mostra processo, escolha, experiência e continuidade.</p>
+<p>Sua cadeia de referência é:</p>
+<div class="highlight"><pre><span></span><code>POSSIBILIDADE
+→ MECANISMO
+→ OPORTUNIDADE REAL, quando houver materialização externa legítima
+→ ESCOLHA
+→ EXPERIÊNCIA
+→ CONTRIBUIÇÃO / APRENDIZADO
+→ NOVO MOMENTO
+</code></pre></div>
+<p>Nem toda Possibilidade exige Oportunidade externa e nenhuma etapa implica resultado garantido.</p>
 <h3 id="movimento-09">Movimento 09<a class="headerlink" href="#movimento-09" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>“Há razões para confiar em como a Guivos lida com isso.”</strong></p>
@@ -14130,9 +14159,8 @@ Journey / Travel / Mall / Media / Business / Intelligence / Ads
 <h2 id="10-auditoria-de-complexidade-header">10. Auditoria de complexidade — Header<a class="headerlink" href="#10-auditoria-de-complexidade-header" title="Permanent link">&para;</a></h2>
 <h3 id="resultado_5">Resultado<a class="headerlink" href="#resultado_5" title="Permanent link">&para;</a></h3>
 <p><strong>ARQUITETURA SEMANTICAMENTE JUSTIFICADA, COM DENSIDADE VISUAL A SER CONTROLADA PELO DESIGN.</strong></p>
-<p>O Header possui oito funções conceituais principais.</p>
-<p>Isso seria excessivo se todas fossem tratadas como links textuais de igual peso.</p>
-<p>A própria arquitetura já mitiga esse risco por:</p>
+<p>O Header possui múltiplas funções conceituais que seriam excessivas se tratadas como links textuais de igual peso.</p>
+<p>A própria arquitetura mitiga esse risco por:</p>
 <ul>
 <li>launcher compacto;</li>
 <li>globo;</li>
@@ -14141,25 +14169,17 @@ Journey / Travel / Mall / Media / Business / Intelligence / Ads
 <li>compactação durante o scroll;</li>
 <li>condensação responsiva no mobile.</li>
 </ul>
-<p>Portanto, não existe fundamento arquitetural para remover itens neste momento.</p>
+<p>Portanto, não existe fundamento arquitetural para remover itens apenas por contagem.</p>
 <p>Regra:</p>
 <blockquote>
-<p><strong>inventário do Header ≠ oito elementos de igual peso visual.</strong></p>
+<p><strong>inventário do Header ≠ elementos de igual peso visual.</strong></p>
 </blockquote>
 <hr />
 <h2 id="11-auditoria-de-complexidade-sete-macroexperiencias">11. Auditoria de complexidade — sete macroexperiências<a class="headerlink" href="#11-auditoria-de-complexidade-sete-macroexperiencias" title="Permanent link">&para;</a></h2>
 <h3 id="resultado_6">Resultado<a class="headerlink" href="#resultado_6" title="Permanent link">&para;</a></h3>
 <p><strong>COERENTE, DESDE QUE NÃO SEJAM MATERIALIZADAS COMO SETE BLOCOS PESADOS E AUTOSSUFICIENTES.</strong></p>
 <p>O agrupamento reduz a fragmentação dos onze movimentos.</p>
-<p>Mas o futuro design não deve converter cada macroexperiência em uma seção corporativa com:</p>
-<ul>
-<li>título;</li>
-<li>subtítulo;</li>
-<li>três cards;</li>
-<li>CTA;</li>
-<li>divisor;</li>
-</ul>
-<p>repetidos sete vezes.</p>
+<p>Mas o futuro design não deve converter cada macroexperiência em uma seção corporativa repetitiva com título, subtítulo, cards, CTA e divisor.</p>
 <p>Formalização:</p>
 <blockquote>
 <p><strong>macroexperiência ≠ template de seção.</strong></p>
@@ -14211,7 +14231,7 @@ Journey / Travel / Mall / Media / Business / Intelligence / Ads
 <li>escolha do momento de <code>Iniciar Jornada</code>;</li>
 <li>scroll não bloqueante;</li>
 <li>ausência de urgência artificial;</li>
-<li>Intelligence subordinada à decisão humana;</li>
+<li>Intelligence subordinado à compreensão e sem substituir decisão;</li>
 <li>prova sem causalidade exagerada.</li>
 </ul>
 <p>O Movimento 10 funciona como explicitação de um princípio já vivido ao longo da Home.</p>
@@ -14249,9 +14269,9 @@ Journey / Travel / Mall / Media / Business / Intelligence / Ads
 <p><strong>link Mapa do Ecossistema ≠ definição da página ≠ definição integral do rodapé.</strong></p>
 </blockquote>
 <hr />
-<h1 id="17-residuos-documentais-identificados">17. Resíduos documentais identificados<a class="headerlink" href="#17-residuos-documentais-identificados" title="Permanent link">&para;</a></h1>
+<h1 id="17-residuos-documentais-e-reconciliacoes">17. Resíduos documentais e reconciliações<a class="headerlink" href="#17-residuos-documentais-e-reconciliacoes" title="Permanent link">&para;</a></h1>
 <h2 id="res-01-disponibilidade-operacional-antes-do-wireframe-em-nav-001">RES-01 — disponibilidade operacional antes do wireframe em NAV-001<a class="headerlink" href="#res-01-disponibilidade-operacional-antes-do-wireframe-em-nav-001" title="Permanent link">&para;</a></h2>
-<p><code>GKR-UX-HOME-NAV-001 v0.3.0</code> ainda contém formulação residual segundo a qual a disponibilidade operacional dos destinos deveria ser confirmada antes do wireframe e usa verdade operacional como critério para determinados acessos contextuais.</p>
+<p><code>GKR-UX-HOME-NAV-001 v0.3.0</code> ainda contém formulação segundo a qual a disponibilidade operacional dos destinos deveria ser confirmada antes do wireframe e usa existência/estado público do destino como critério para determinados acessos contextuais.</p>
 <p>Essa formulação é anterior à fronteira consolidada em <code>GKR-UX-HOME-GTM-BOUNDARY-001</code>.</p>
 <p>Interpretação vigente:</p>
 <blockquote>
@@ -14264,74 +14284,68 @@ Journey / Travel / Mall / Media / Business / Intelligence / Ads
 disponibilidade de lançamento
 </code></pre></div>
 <p>Classificação:</p>
-<p><strong>RESÍDUO DOCUMENTAL SUPERADO — não é lacuna arquitetural.</strong></p>
+<p><strong>RESÍDUO DOCUMENTAL ATUAL — não é lacuna arquitetural.</strong></p>
 <hr />
 <h2 id="res-02-descricao-antiga-de-business-em-narr-001">RES-02 — descrição antiga de Business em NARR-001<a class="headerlink" href="#res-02-descricao-antiga-de-business-em-narr-001" title="Permanent link">&para;</a></h2>
-<p>A descrição resumida original do Movimento 08 em <code>GKR-UX-HOME-NARR-001</code> associa Business à participação de Organizações.</p>
-<p>Essa formulação foi refinada e substituída no domínio específico por <code>GKR-UX-HOME-NARR-002</code> e <code>GKR-UX-HOME-NARR-003</code>.</p>
+<p>O audit original registrava que <code>GKR-UX-HOME-NARR-001</code> associava Business à participação de Organizações.</p>
+<p>Esse resíduo foi removido na reconciliação narrativa de 28/08/2026.</p>
 <p>Interpretação vigente:</p>
 <blockquote>
 <p><strong>Organização ≠ Guivos Business.</strong></p>
 </blockquote>
-<p>Guivos Business é produto B2B especializado.</p>
+<p>Guivos Business é Produto Especializado B2B.</p>
 <p>Organização é tipo estrutural de participante.</p>
 <p>Classificação:</p>
-<p><strong>RESÍDUO DOCUMENTAL SUPERADO — não é lacuna arquitetural.</strong></p>
+<p><strong>RESOLVIDO — preservado apenas como histórico desta auditoria.</strong></p>
 <hr />
 <h2 id="res-03-handoff-original-antecede-os-refinamentos-posteriores">RES-03 — handoff original antecede os refinamentos posteriores<a class="headerlink" href="#res-03-handoff-original-antecede-os-refinamentos-posteriores" title="Permanent link">&para;</a></h2>
-<p><code>GKR-UX-HOME-HANDOFF-001 v0.1.0</code> foi criado antes de:</p>
-<ul>
-<li>NARR-002;</li>
-<li>NARR-003;</li>
-<li>NARR-004;</li>
-<li>NARR-005;</li>
-<li>NAV-002;</li>
-<li>NAV-003;</li>
-<li>NAV-004;</li>
-<li>GTM-BOUNDARY-001;</li>
-<li>AUDIT-001 em suas revisões posteriores.</li>
-</ul>
-<p>Ele permanece válido como briefing-base, mas não deve ser utilizado isoladamente como snapshot final da arquitetura.</p>
+<p><code>GKR-UX-HOME-HANDOFF-001 v0.1.0</code> permanece anterior a diversos refinamentos e ainda contém, entre outros, a terceira camada antiga da Hero, o rótulo histórico <code>Do possível ao vivido</code>, a cadeia conceitual anterior e formulações pré-reconciliação sobre produtos.</p>
+<p>Ele permanece útil como briefing-base histórico, mas não deve ser utilizado isoladamente como snapshot final da arquitetura.</p>
 <p>Regra de consumo:</p>
 <blockquote>
-<p><strong>HANDOFF-001 deve ser lido junto aos refinamentos posteriores desta frente. Em conflito específico, prevalece o refinamento posterior do mesmo domínio.</strong></p>
+<p><strong>GKR-UX-HOME-MASTER-001 é a autoridade de consumo vigente. HANDOFF-001 somente pode ser usado como aprofundamento histórico quando reconciliado com o Master e com os documentos especializados posteriores.</strong></p>
 </blockquote>
 <p>Classificação:</p>
-<p><strong>RISCO DE CONSUMO DOCUMENTAL — não é falha da arquitetura.</strong></p>
+<p><strong>RISCO DE CONSUMO DOCUMENTAL ATUAL — não é falha da arquitetura.</strong></p>
 <hr />
 <h2 id="18-precedencia-operacional-de-leitura-desta-frente">18. Precedência operacional de leitura desta frente<a class="headerlink" href="#18-precedencia-operacional-de-leitura-desta-frente" title="Permanent link">&para;</a></h2>
 <p>Para evitar reintrodução de decisões superadas, utilizar a seguinte regra prática:</p>
+<h3 id="autoridade-de-consumo">Autoridade de consumo<a class="headerlink" href="#autoridade-de-consumo" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>GKR-UX-HOME-MASTER-001</code>.</li>
+</ol>
 <h3 id="fundacao-e-contratos">Fundação e contratos<a class="headerlink" href="#fundacao-e-contratos" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Fundação vigente da Guivos;</li>
 <li><code>UXA-020</code>;</li>
 <li><code>UXA-021</code>.</li>
 </ol>
-<h3 id="direcao-da-home">Direção da Home<a class="headerlink" href="#direcao-da-home" title="Permanent link">&para;</a></h3>
+<h3 id="direcao-e-aprofundamentos">Direção e aprofundamentos<a class="headerlink" href="#direcao-e-aprofundamentos" title="Permanent link">&para;</a></h3>
 <ol>
 <li><code>GKR-UX-HOME-001</code>;</li>
-<li><code>GKR-UX-HOME-VAL-001</code>.</li>
-</ol>
-<h3 id="narrativa-especifica">Narrativa específica<a class="headerlink" href="#narrativa-especifica" title="Permanent link">&para;</a></h3>
-<ol>
-<li><code>GKR-UX-HOME-NARR-001</code> como base;</li>
-<li><code>NARR-002</code>, <code>NARR-003</code>, <code>NARR-004</code> e <code>NARR-005</code> prevalecem em seus respectivos domínios específicos.</li>
+<li><code>GKR-UX-HOME-VAL-001</code>;</li>
+<li><code>GKR-UX-HOME-NARR-001</code>;</li>
+<li><code>NARR-002</code>, <code>NARR-003</code>, <code>NARR-004</code> e <code>NARR-005</code> em seus respectivos domínios específicos.</li>
 </ol>
 <h3 id="navegacao">Navegação<a class="headerlink" href="#navegacao" title="Permanent link">&para;</a></h3>
 <ol>
-<li><code>GKR-UX-HOME-NAV-001</code> como base;</li>
-<li><code>NAV-002</code>, <code>NAV-003</code> e <code>NAV-004</code> prevalecem em seus respectivos refinamentos.</li>
+<li><code>GKR-UX-HOME-NAV-001</code> como base histórica;</li>
+<li><code>NAV-002</code>, <code>NAV-003</code> e <code>NAV-004</code> prevalecem em seus refinamentos;</li>
+<li><code>GKR-UX-HOME-GTM-BOUNDARY-001</code> prevalece sobre a formulação residual de disponibilidade operacional de <code>NAV-001</code>.</li>
 </ol>
-<h3 id="sistemas-transversais-e-fronteira">Sistemas transversais e fronteira<a class="headerlink" href="#sistemas-transversais-e-fronteira" title="Permanent link">&para;</a></h3>
+<h3 id="sistemas-transversais">Sistemas transversais<a class="headerlink" href="#sistemas-transversais" title="Permanent link">&para;</a></h3>
 <ol>
-<li><code>GKR-UX-HOME-SYS-001</code>;</li>
-<li><code>GKR-UX-HOME-GTM-BOUNDARY-001</code>.</li>
+<li><code>GKR-UX-HOME-SYS-001</code>.</li>
 </ol>
 <h3 id="auditoria">Auditoria<a class="headerlink" href="#auditoria" title="Permanent link">&para;</a></h3>
 <ol>
-<li><code>GKR-UX-HOME-AUDIT-001</code>;</li>
+<li><code>GKR-UX-HOME-AUDIT-001 v0.9.0</code>;</li>
 <li>esta auditoria consolidada para integridade entre as camadas.</li>
 </ol>
+<p>Regra:</p>
+<blockquote>
+<p><strong>o Master governa consumo; documentos especializados aprofundam; auditorias verificam integridade; nenhum audit reabre sozinho uma decisão convergida.</strong></p>
+</blockquote>
 <hr />
 <h2 id="19-lacunas-reais-restantes">19. Lacunas reais restantes<a class="headerlink" href="#19-lacunas-reais-restantes" title="Permanent link">&para;</a></h2>
 <p>Não foram encontradas lacunas estratégicas críticas que exijam nova arquitetura antes de uma futura materialização.</p>
@@ -14361,6 +14375,12 @@ disponibilidade de lançamento
 <ul>
 <li>composição adicional além do link <code>Mapa do Ecossistema</code>.</li>
 </ul>
+<h3 id="residuos-documentais">Resíduos documentais<a class="headerlink" href="#residuos-documentais" title="Permanent link">&para;</a></h3>
+<ul>
+<li>reconciliação de <code>NAV-001</code> com a fronteira GTM vigente;</li>
+<li>reconciliação de <code>HANDOFF-001</code> com o Master e os refinamentos posteriores.</li>
+</ul>
+<p>Esses resíduos são problemas de consumo documental, não lacunas da arquitetura estratégica.</p>
 <h3 id="etapas-posteriores">Etapas posteriores<a class="headerlink" href="#etapas-posteriores" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Marketing/GTM;</li>
@@ -14374,7 +14394,7 @@ disponibilidade de lançamento
 <p>Esses itens não justificam continuar aumentando a arquitetura conceitual da Home nesta frente.</p>
 <hr />
 <h2 id="20-decisao-de-convergencia">20. Decisão de convergência<a class="headerlink" href="#20-decisao-de-convergencia" title="Permanent link">&para;</a></h2>
-<p>A partir desta auditoria, a recomendação de governança é:</p>
+<p>A recomendação de governança permanece:</p>
 <blockquote>
 <p><strong>tratar a arquitetura estratégica da Home pública como convergida dentro do escopo atual.</strong></p>
 </blockquote>
@@ -14383,6 +14403,7 @@ disponibilidade de lançamento
 <li>não criar novos refinamentos apenas para aumentar detalhamento documental;</li>
 <li>não reabrir decisões já consolidadas sem novo fundamento;</li>
 <li>não transformar escolhas futuras de design em novas decisões estratégicas antecipadas;</li>
+<li>corrigir resíduos documentais quando puderem reintroduzir semântica superada;</li>
 <li>registrar nova exceção somente quando surgir conflito real, nova necessidade de produto ou nova decisão explícita do fundador/governança.</li>
 </ul>
 <p>Regra de controle:</p>
@@ -14391,7 +14412,7 @@ disponibilidade de lançamento
 </blockquote>
 <hr />
 <h2 id="21-gate-para-a-proxima-etapa">21. Gate para a próxima etapa<a class="headerlink" href="#21-gate-para-a-proxima-etapa" title="Permanent link">&para;</a></h2>
-<p>A próxima etapa possível é uma futura exploração de materialização visual/wireframe.</p>
+<p>A próxima etapa de produto possível é uma futura exploração de materialização visual/wireframe.</p>
 <p>Ela somente começa mediante autorização explícita.</p>
 <p>Até essa autorização:</p>
 <ul>
@@ -14401,9 +14422,10 @@ disponibilidade de lançamento
 <li>nenhuma implementação deve começar;</li>
 <li>nenhuma decisão de Marketing/GTM deve ser inferida.</li>
 </ul>
+<p>A correção dos resíduos documentais de <code>NAV-001</code> e <code>HANDOFF-001</code> pode ocorrer sem constituir autorização de materialização, pois sua finalidade é apenas impedir reintrodução de decisões superadas.</p>
 <p>Estado final desta auditoria:</p>
 <blockquote>
-<p><strong>ARQUITETURA ESTRATÉGICA CONVERGIDA — MATERIALIZAÇÃO NÃO AUTORIZADA.</strong></p>
+<p><strong>ARQUITETURA ESTRATÉGICA CONVERGIDA — AUDITORIA RECONCILIADA — MATERIALIZAÇÃO NÃO AUTORIZADA.</strong></p>
 </blockquote>
 
 
