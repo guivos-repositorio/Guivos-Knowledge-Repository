@@ -2,13 +2,14 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.0.0
+version: 3.1.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-27
 normative: true
 maturity: current_truth_under_full_corpus_audit
 related:
   - GKR-FULL-CORPUS-AUDIT-001
+  - GEB-P01
   - GOG-001
   - GKR-BRAND-SIGNATURE-001
   - GKR-BRAND-PUBLIC-AUTHORITY-001
@@ -86,15 +87,38 @@ A auditoria integral foi aberta porque o crescimento do corpus produziu três ri
 
 ## 3. Fundação e identidade da Guivos
 
-A Guivos permanece orientada por sua Fundação, Constituição, princípios permanentes e demais autoridades fundacionais vigentes.
+A Parte I — Fundação foi reconciliada no Lote C da auditoria sem redução do conhecimento validado.
 
-Formulação preservada:
+A leitura fundacional vigente é:
 
-> **A Guivos não transforma pessoas. A Guivos amplia condições, percepção, acesso, conexão e possibilidades para que cada pessoa possa fazer escolhas e viver experiências capazes de contribuir para sua própria transformação.**
+> **A Guivos amplia condições, percepção, acesso, conexão e possibilidades para que Pessoas, Organizações e Coletivos possam compreender melhor seu Momento, reconhecer Próximos Passos e viver experiências capazes de contribuir para sua evolução.**
 
 A direção humana preservada é:
 
 > **Como podemos ajudar os seres humanos a terem uma vida melhor?**
+
+A arquitetura conceitual reconciliada distingue:
+
+```text
+MOMENTO
+→ OBJETIVO / NECESSIDADE, quando houver
+→ PRÓXIMO PASSO
+→ POSSIBILIDADE, quando agregar valor
+→ MECANISMO, quando necessário
+→ OPORTUNIDADE REAL, quando existir
+→ ESCOLHA
+→ EXPERIÊNCIA
+→ CONTRIBUIÇÃO / APRENDIZADO, quando houver evidência
+→ NOVO MOMENTO
+```
+
+Definições preservadas:
+
+> **Possibilidade é um caminho potencial de evolução compatível com um Momento.**
+
+> **Oportunidade é uma materialização concreta de uma Possibilidade, oferecida ou viabilizada por agente legítimo, com condições reais de acesso.**
+
+O fluxo não é obrigatório nem sempre linear. Um Próximo Passo pode não depender de uma Oportunidade externa.
 
 Princípios estruturais:
 
@@ -108,6 +132,12 @@ APOIAR EVOLUÇÃO
 COMPREENDER CONTEXTO
 ≠ ASSUMIR AUTORIDADE SOBRE A PESSOA
 
+OPORTUNIDADE
+≠ ETAPA OBRIGATÓRIA
+
+EXPERIÊNCIA
+≠ IMPACTO COMPROVADO
+
 TECNOLOGIA
 ≠ PRODUTO
 
@@ -117,9 +147,21 @@ ECOSSISTEMA
 
 A Guivos deve continuar sendo percebida como maior do que a soma de seus Produtos Especializados: futuro, possibilidade, simplicidade, confiança, escala e centralidade humana, tecnológica sem ser fria e sofisticada sem ser desnecessariamente complexa.
 
+A Fundação também passa a explicitar a separação:
+
+```text
+VERDADE VIGENTE
+≠ VISÃO FUTURA
+
+TARGET
+≠ IMPLEMENTAÇÃO
+```
+
+A visão de capacidade máxima pode ser documentada, mas deve permanecer classificada como visão/target até possuir evidência de realização.
+
 ## 4. Fundamento Cristão
 
-`GKR-CHRISTIAN-FOUNDATION-001 v1.0.0` permanece autoridade fundacional normativa.
+`GKR-CHRISTIAN-FOUNDATION-001 v1.0.0` permanece autoridade fundacional normativa e foi preservado no Lote C por permanecer semanticamente consistente com as autoridades posteriores.
 
 Princípio central:
 
@@ -181,11 +223,11 @@ Eles não são planos, produtos, personas comerciais nem tipos de conta intercam
 
 A Pessoa permanece centro de sua própria Journey.
 
-A Guivos pode organizar contexto, apoiar compreensão, apresentar possibilidades, oportunidades e Próximos Passos, mas a decisão permanece com a Pessoa.
+A Guivos pode organizar contexto, apoiar compreensão, apresentar Possibilidades, Oportunidades e Próximos Passos, mas a decisão permanece com a Pessoa.
 
 ### 5.2 Organização
 
-Organização é entidade institucional com identidade, autoridade, responsabilidades, recursos, processos, representantes e capacidade de oferecer ou habilitar produtos, serviços, programas, benefícios, suporte, infraestrutura e oportunidades.
+Organização é entidade institucional com identidade, autoridade, responsabilidades, recursos, processos, representantes e capacidade de oferecer ou habilitar produtos, serviços, programas, benefícios, suporte, infraestrutura e Oportunidades.
 
 ```text
 ORGANIZAÇÃO
@@ -438,6 +480,8 @@ POSSIBILIDADE
 → NOVO CONTEXTO
 ```
 
+A reconstrução deverá incorporar também a Fundação reconciliada no Lote C, inclusive a distinção entre Possibilidade, Mecanismo e Oportunidade.
+
 ### 10.2 Home de Organizações e Coletivos
 
 Rebuild necessário porque o master antecede:
@@ -625,7 +669,7 @@ Product Engineering continua pausada antes de `W0-01` e só pode ser reativada p
 
 ## 14. Marca, assinatura e autoridade pública
 
-`GKR-BRAND-SIGNATURE-001 v1.3.0` permanece autoridade verbal institucional.
+`GKR-BRAND-SIGNATURE-001 v1.3.0` permanece autoridade verbal institucional e foi preservado no Lote C por permanecer consistente.
 
 ```text
 GUIVOS — GLOBAL
@@ -663,6 +707,8 @@ GUIVOS
 FALA PESSOAL
 ≠ POSICIONAMENTO INSTITUCIONAL
 ```
+
+`GKR-BRAND-PUBLIC-AUTHORITY-001` também permanece preservado. O registro de propagação derivado não é removido ainda porque continua necessário para a reconstrução da Home Pessoa; sua eventual remoção depende da absorção completa no master futuro.
 
 ## 15. Proteção marcária
 
@@ -733,7 +779,7 @@ A documentação dessas frentes não significa que toda configuração ou public
 
 O RP-002 ampliou o entendimento de Possibilidade, Oportunidade, supply contextual, Organização, Coletivo e método de validação.
 
-Formulações preservadas em Research:
+Formulações preservadas em Research e agora reconciliadas na Fundação:
 
 > **Possibilidade é um caminho potencial de evolução compatível com um Momento.**
 
@@ -880,7 +926,17 @@ CONTROLE PROJETADO
 
 ## 20. Public Canon
 
-`GOG-001 — Guia Oficial da Guivos v5.2.0` permanece a principal superfície institucional classificada como `public-canon` no estado atual documentado.
+`GOG-001 — Guia Oficial da Guivos v5.3.0` é a principal superfície institucional classificada como `public-canon` no estado atual documentado.
+
+No Lote C, o GOG foi reconciliado com Fundação e RP-002 para:
+
+- distinguir Possibilidade, Mecanismo e Oportunidade;
+- remover a leitura de Oportunidade como caminho universal;
+- atualizar o fluxo público da Journey;
+- preservar a separação Guivos × fundador;
+- explicitar Intelligence como Produto Especializado transversal sem reduzi-lo a tecnologia isolada;
+- retirar a contagem física de SVGs como claim de maturidade visual validada;
+- manter separação explícita entre visão, arquitetura, implementação, operação e evidência.
 
 Nenhum texto público pode promover estado superior ao suportado internamente.
 
@@ -900,8 +956,6 @@ FILE
 DESIGN DELIVERY
 ≠ DESIGN APROVADO
 ```
-
-A auditoria verificará se o GOG também precisa de atualização depois que Fundação, Marca, Homes e demais autoridades forem consolidadas.
 
 ## 21. Programa P0–P9
 
@@ -1020,10 +1074,10 @@ A — GOVERNANÇA DO CORPUS
 → CANONICALLY UPDATED
 
 B — ESTADO ATUAL E ROADMAP
-→ IN_PROGRESS
+→ CANONICALLY UPDATED
 
 C — FUNDAÇÃO / MARCA / PUBLIC CANON
-→ PENDING
+→ CANONICALLY UPDATED
 
 D — HOME PRINCIPAL / PESSOA
 → REBUILD_REQUIRED
@@ -1107,23 +1161,26 @@ LUCAS 2:52 NA BIO DO FUNDADOR ≠ COPY INSTITUCIONAL AUTOMÁTICA
 HOME DOCUMENTADA ≠ HOME ATUALMENTE CONSISTENTE
 ARTEFATO FÍSICO ≠ AUTORIDADE VIGENTE
 AUDITORIA DOCUMENTAL ≠ EVIDÊNCIA OPERACIONAL
+CONSOLIDAÇÃO ≠ REDUÇÃO DE CONHECIMENTO
 ```
 
 ## 29. Próximo ato governado
 
-O próximo ato global não é UXA-102, Design, Engineering, filing, implementação ou primeira tela da Pessoa.
+O próximo lote da auditoria é a **reconstrução da Home principal/Pessoa**, confrontando o master antigo com a Fundação reconciliada, Marca, Public Canon, Journey, Research, Domínios de Evolução e demais autoridades aplicáveis.
 
-É concluir a auditoria integral do GKR na ordem governada.
+Isso ainda não autoriza a primeira tela autenticada pós-Home.
 
 ```text
-NÃO INFERIR UXA-102
-NÃO INFERIR WIREFRAME
-NÃO INFERIR DESIGN
-NÃO INFERIR PRODUCT ENGINEERING
-NÃO INFERIR FILING
-NÃO INFERIR PMF
-NÃO INFERIR IMPLEMENTAÇÃO
-NÃO ESCREVER A PRIMEIRA TELA PÓS-HOME DA PESSOA ANTES DO FECHAMENTO DA AUDITORIA
+PRÓXIMO LOTE
+→ D — HOME PRINCIPAL / PESSOA
+
+AINDA BLOQUEADOS
+→ UXA-102
+→ PRIMEIRA TELA PÓS-HOME DA PESSOA
+→ DESIGN AUTOMÁTICO
+→ PRODUCT ENGINEERING
+→ PMF
+→ IMPLEMENTAÇÃO
 ```
 
 Quando a auditoria terminar, este Registro do Estado Atual deverá ser novamente reconciliado com o corpus final limpo antes da autorização de uma nova baseline.
