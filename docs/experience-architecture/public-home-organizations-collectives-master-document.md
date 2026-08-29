@@ -300,6 +300,30 @@ Regra:
 
 ---
 
+## 5. Percepção institucional desejada
+
+A Home O/C deve continuar parecendo parte da mesma marca Guivos.
+
+A percepção desejada permanece:
+
+- futuro;
+- possibilidade;
+- simplicidade;
+- confiança;
+- escala global;
+- sofisticação sem complexidade desnecessária;
+- tecnologia sem frieza;
+- humanidade sem clichê;
+- uma Guivos maior do que a soma dos Produtos Especializados.
+
+Direção criativa compartilhada:
+
+> **Futuro sem ficção. Tecnologia sem frieza. Sofisticação sem elitismo. Escala sem ruído. Humanidade sem clichê.**
+
+A escala visual ou narrativa não deve ser simulada por mapas decorativos, números não sustentados, paredes de logos, stock genérico ou estética tecnológica como substituto de substância.
+
+---
+
 # Movimento 01 — Abrir o horizonte
 
 ## O que podemos tornar possível juntos?
@@ -913,6 +937,8 @@ Comunidades, movimentos, grupos, redes e outras articulações coletivas compat�
 
 **Descobrir como um Coletivo pode participar →**
 
+Os dois caminhos possuem **igual legitimidade conceitual**. A futura composição não deve apresentar um como padrão, superior ou meramente comercial e o outro como secundário.
+
 Esses caminhos são conceituais até que destinos operacionais sejam formalmente autorizados e comprovados.
 
 Eles não implicam, por obrigação:
@@ -947,7 +973,53 @@ Mensagem de fechamento:
 
 ---
 
-## 15. Navegação pública, Hero e hierarquia de ação
+## 15. Sete macroexperiências de referência
+
+Os onze movimentos governam significado. Para ritmo e futura composição, a Home O/C preserva sete macroexperiências próprias:
+
+```text
+MACRO 01 — ABRIR O CAMPO DE POSSIBILIDADES
+→ M01
+
+MACRO 02 — RECONHECER O QUE JÁ EXISTE E PERCEBER A FRAGMENTAÇÃO
+→ M02 + M03
+
+MACRO 03 — ENTENDER A GUIVOS E QUEM PARTICIPA
+→ M04 + M05
+
+MACRO 04 — PERCEBER COMPLEMENTARIDADE E AMPLIAR CONTEXTOS
+→ M06 + M07
+
+MACRO 05 — COMPREENDER VALOR, DIVERSIDADE E ESCALA RESPONSÁVEL
+→ M08
+
+MACRO 06 — ENCONTRAR CONFIANÇA E COMPREENDER AS CAPACIDADES DA GUIVOS
+→ M09 + M10
+
+MACRO 07 — ESCOLHER COMO CONTINUAR PARTICIPANDO
+→ M11
+```
+
+Regras:
+
+```text
+11 MOVIMENTOS
+≠ 11 SEÇÕES VISUAIS OBRIGATÓRIAS
+
+7 MACROEXPERIÊNCIAS
+≠ 7 SEÇÕES TÉCNICAS OBRIGATÓRIAS
+
+AGRUPAR
+≠ COMPRIMIR SIGNIFICADO
+```
+
+As sete macroexperiências são uma referência de continuidade perceptiva, não layout.
+
+Desktop e mobile podem materializá-las de formas diferentes, desde que preservem a mesma progressão de significado.
+
+---
+
+## 16. Navegação pública, Hero e hierarquia de ação
 
 A Home O/C utiliza o **mesmo Header público global da Guivos**. Não cria Header B2B, institucional paralelo ou navegação de parceiro.
 
@@ -966,7 +1038,7 @@ INICIAR JORNADA
 
 Nesta Home, `Organizações e Coletivos` identifica o contexto público atual. A marca Guivos/Home permanece o retorno natural à Home principal.
 
-### 15.1 Launcher
+### 16.1 Launcher
 
 O launcher preserva:
 
@@ -989,7 +1061,7 @@ TRAVEL / ADS / MEDIA / BUSINESS / INTELLIGENCE / MALL
 
 Isso descreve arquitetura de acesso, não disponibilidade operacional.
 
-### 15.2 Hero
+### 16.2 Hero
 
 A pergunta-mãe é:
 
@@ -1020,7 +1092,7 @@ O CTA da Hero não deve, por padrão:
 - abrir formulário comercial;
 - abrir a bifurcação final.
 
-### 15.3 `Iniciar Jornada`
+### 16.3 `Iniciar Jornada`
 
 `Iniciar Jornada` continua sendo a porta própria e persistente do Guivos Journey.
 
@@ -1034,7 +1106,7 @@ INICIAR JORNADA
 
 Um visitante deve conseguir distinguir `iniciar minha Journey` de `descobrir como uma Organização ou Coletivo pode participar`.
 
-### 15.4 Header durante scroll e mobile
+### 16.4 Header durante scroll e mobile
 
 Regra:
 
@@ -1044,9 +1116,32 @@ Pode compactar, mas não deve desaparecer completamente como comportamento padr�
 
 Mobile preserva a mesma arquitetura e hierarquia, mas é uma **solução semântica própria**, não simples empilhamento do desktop.
 
+### 16.5 Rodapé e Mapa do Ecossistema
+
+A arquitetura pública global preserva a existência de um link:
+
+> **Mapa do Ecossistema**
+
+Nesta fase, isso não define:
+
+- a arquitetura da futura página `Mapa do Ecossistema`;
+- a composição integral do rodapé;
+- Central de Ajuda;
+- Trabalhe Conosco;
+- Imprensa;
+- redes sociais;
+- geografia;
+- links legais finais.
+
+```text
+LINK MAPA DO ECOSSISTEMA
+≠ PÁGINA DEFINIDA
+≠ RODAPÉ INTEGRAL DEFINIDO
+```
+
 ---
 
-## 16. Interação pública, autonomia e privacidade
+## 17. Interação pública, autonomia e privacidade
 
 A Home pública deve permitir compreensão sem exigir que o visitante forneça contexto pessoal.
 
@@ -1095,7 +1190,7 @@ Critérios obrigatórios para futura materialização:
 
 ---
 
-## 17. Acessibilidade e robustez
+## 18. Acessibilidade e robustez
 
 A futura materialização deve prever, no mínimo:
 
@@ -1119,7 +1214,7 @@ A narrativa deve permanecer compreensível com animações desabilitadas.
 
 ---
 
-## 18. Regras de identidade, pertencimento e representação
+## 19. Regras de identidade, pertencimento e representação
 
 ### Organização não é sinônimo de empresa
 
@@ -1195,7 +1290,7 @@ PRODUTOS / CAMADAS
 
 ---
 
-## 19. Relações e reciprocidade
+## 20. Relações e reciprocidade
 
 Organizações e Coletivos podem se relacionar, mas a relação é um acordo entre participantes distintos.
 
@@ -1235,7 +1330,7 @@ Patrocínio não compra recomendação orgânica.
 
 ---
 
-## 20. Relevância, supply e comercial
+## 21. Relevância, supply e comercial
 
 A Home deve preservar a distinção fundamental:
 
@@ -1268,11 +1363,33 @@ A Home O/C não é um marketplace que ordena participantes pela capacidade de pa
 
 ---
 
-## 21. Conteúdo, prova e classes de verdade
+## 22. Conteúdo, prova e classes de verdade
 
 Cada movimento precisa provar somente aquilo que afirma.
 
 > **Prova não é decoração de credibilidade; é uma relação verificável entre uma afirmação e aquilo que a sustenta.**
+
+### 22.1 Cinco classes de conteúdo
+
+A Home pode combinar:
+
+1. **institucional permanente** — tese, papel do ecossistema, princípios e definições estáveis;
+2. **evidência real** — Pessoas, Organizações, Coletivos, iniciativas, experiências, Oportunidades e indicadores verificáveis;
+3. **conteúdo editorial** — histórias, entrevistas, vídeos, documentários, conhecimento e acontecimentos governados;
+4. **conteúdo de ecossistema** — explicação de como Journey e Produtos Especializados cumprem responsabilidades distintas;
+5. **navegação e ação** — caminhos para explorar, aprofundar e acessar destinos.
+
+Prioridade conceitual:
+
+```text
+SIGNIFICADO
+→ REALIDADE
+→ CONEXÃO
+→ COMPREENSÃO
+→ AÇÃO
+```
+
+### 22.2 Classes de verdade editorial
 
 A Home deve distinguir internamente pelo menos:
 
@@ -1292,7 +1409,7 @@ O QUE EXISTE
 ≠ O QUE AINDA PODE EXISTIR
 ```
 
-Hierarquia de prova de referência:
+### 22.3 Hierarquia de prova
 
 ```text
 PROVA DIRETA
@@ -1308,6 +1425,8 @@ Quanto maior o claim, maior deve ser a proximidade da evidência.
 Números exigem definição, fonte, período e método compatíveis.
 
 Poucas evidências fortes e verdadeiras são preferíveis a volume artificial.
+
+Um logo isolado não prova impacto, parceria estratégica, participação ativa, resultado ou aderência ao ecossistema.
 
 A Home não deve inventar:
 
@@ -1327,7 +1446,7 @@ A Home não deve inventar:
 
 ---
 
-## 22. Histórias, causalidade e autoridade longitudinal
+## 23. Histórias, causalidade e autoridade longitudinal
 
 Histórias podem apoiar a compreensão quando preservarem, conforme aplicável:
 
@@ -1374,7 +1493,7 @@ A linguagem pública também deve distinguir:
 
 ---
 
-## 23. Guivos Media como supply editorial
+## 24. Guivos Media como supply editorial
 
 Guivos Media pode abastecer a Home O/C, quando aderente e verificável, com:
 
@@ -1413,9 +1532,11 @@ CONTEÚDO ORGÂNICO
 
 Uma Organização não pode comprar aparência de prova institucional orgânica.
 
+O abastecimento editorial não deve transformar a Home em feed infinito, mural de cases, ranking de participantes ou catálogo de quem paga.
+
 ---
 
-## 24. O que a página deve permitir compreender
+## 25. O que a página deve permitir compreender
 
 Ao chegar ao final, uma Organização ou Coletivo deve conseguir responder:
 
@@ -1439,7 +1560,7 @@ Ao chegar ao final, uma Organização ou Coletivo deve conseguir responder:
 
 ---
 
-## 25. O que a página não deve comunicar
+## 26. O que a página não deve comunicar
 
 Evitar como mensagem dominante ou inferência implícita:
 
@@ -1461,13 +1582,25 @@ Evitar como mensagem dominante ou inferência implícita:
 - `patrocínio melhora relevância`;
 - `participar autoriza acesso a dados pessoais`.
 
+Também não deve ensinar que evolução significa, por si só:
+
+- consumir mais;
+- comprar mais;
+- viajar mais;
+- colecionar experiências;
+- acumular pontos;
+- manter streaks;
+- subir em rankings;
+- perseguir produtividade contínua;
+- exibir luxo como prova de vida melhor.
+
 Regra:
 
 > **Organizações e Coletivos não entram na Guivos para adquirir acesso irrestrito a Pessoas. Entram para participar de contextos, relações, supply e journeys de forma legítima, responsável e contextualmente relevante.**
 
 ---
 
-## 26. Contrato semântico final
+## 27. Contrato semântico final
 
 A Home Pública de Organizações e Coletivos será considerada aderente quando:
 
@@ -1491,18 +1624,19 @@ A Home Pública de Organizações e Coletivos será considerada aderente quando:
 18. apresentar Guivos Journey como Experience Layer e não como plano do participante;
 19. apresentar Guivos Intelligence como Produto Especializado transversal / Intelligence Layer com `COMPREENDER ≠ DECIDIR`;
 20. apresentar a Guivos como uma antes de apresentar Produtos Especializados;
-21. preservar o Header global e distinguir Hero exploratória de `Iniciar Jornada`;
-22. manter a Home pública livre de coleta de contexto pessoal necessária apenas para explicá-la;
-23. preservar interação autônoma e acessível;
-24. identificar conteúdo patrocinado e preservar proveniência das histórias;
-25. encerrar em descoberta e participação, não em pressão comercial;
-26. separar a Home pública compartilhada das experiências autenticadas de Organização e Coletivo;
-27. permanecer coerente com a Home Pública principal sem simplesmente replicá-la;
-28. limitar todos os claims à verdade operacional e à evidência disponível.
+21. preservar os onze movimentos e as sete macroexperiências como significado, sem converter contagem em layout obrigatório;
+22. preservar o Header global e distinguir Hero exploratória de `Iniciar Jornada`;
+23. manter a Home pública livre de coleta de contexto pessoal necessária apenas para explicá-la;
+24. preservar interação autônoma e acessível;
+25. identificar conteúdo patrocinado e preservar proveniência das histórias;
+26. encerrar em descoberta e participação, não em pressão comercial;
+27. separar a Home pública compartilhada das experiências autenticadas de Organização e Coletivo;
+28. permanecer coerente com a Home Pública principal sem simplesmente replicá-la;
+29. limitar todos os claims à verdade operacional e à evidência disponível.
 
 ---
 
-## 27. Síntese de controle
+## 28. Síntese de controle
 
 ```text
 O QUE PODEMOS TORNAR POSSÍVEL JUNTOS?
@@ -1526,7 +1660,7 @@ Ideia fundamental:
 
 ---
 
-## 28. Limites de materialização e de checkpoint
+## 29. Limites de materialização e de checkpoint
 
 Esta autoridade encerra-se na arquitetura narrativa, semântica e funcional pública.
 
@@ -1592,13 +1726,13 @@ Uma futura materialização deve ser rejeitada ou revisada se:
 
 ---
 
-## 29. Matriz de conhecimento absorvido
+## 30. Matriz de conhecimento absorvido
 
 | Fonte / família | Conhecimento absorvido neste Master | Estado de consumo |
 |---|---|---|
 | Fundação vigente / `GEB-P01` | Momento, Próximo Passo, Possibilidade, Mecanismo, Oportunidade real, autonomia, evidência | absorvido |
 | Marca vigente | assinatura institucional correta e separação Guivos × fundador | absorvido |
-| `GKR-UX-HOME-MASTER-001` | guardrails públicos transversais, Header, interação, acessibilidade, prova e fronteira protegida | absorvido no que é comum às duas Homes |
+| `GKR-UX-HOME-MASTER-001` | percepção, guardrails públicos transversais, Header, launcher, interação, acessibilidade, prova, rodapé e fronteira protegida | absorvido no que é comum às duas Homes |
 | `GKR-UX-HOME-NARR-003` | `participante ≠ produto`; participantes respondem “quem”, Produtos/capacidades “como” | absorvido |
 | `UXA-014` | definições, autonomia, responsabilidade, evidência e limites de Organização/Coletivo | absorvido no nível público |
 | `UXA-019` | bilateralidade, finalidade, autoridade, recursos, dados, contestação e saída | absorvido no nível público |
@@ -1607,7 +1741,10 @@ Uma futura materialização deve ser rejeitada ou revisada se:
 | `GKR-UX-ORGCOL-AUTH-JOBS-001` | pertencimento ≠ representação; contexto e limites de autoridade | absorvido como princípio; jobs autenticados não importados |
 | `GKR-UX-ORGCOL-AUTH-IA-001` | contexto antes de ação, operação ≠ evidência, comercial ≠ relevância | absorvido como princípio; IA autenticada não importada |
 | `GPA-006` | Intelligence = Produto Especializado transversal / Intelligence Layer; `COMPREENDER ≠ DECIDIR` | absorvido |
-| P1–P4 O/C | macroexperiência, Header/Hero/CTAs, prova e disciplina de handoff | conteúdo público válido absorvido; contratos especializados ainda preservados |
+| `GKR-UX-HOME-OC-NARR-001` | sete macroexperiências próprias O/C | absorvido |
+| `GKR-UX-HOME-OC-NAV-001` | mesmo Header global, Hero exploratória, `Iniciar Jornada` distinto e bifurcação final | absorvido |
+| `GKR-UX-HOME-OC-SYS-001` | classes de conteúdo/verdade, prova proporcional ao claim e fallback honesto | absorvido |
+| `GKR-UX-HOME-OC-HANDOFF-001` | disciplina de significado, acessibilidade e fronteira pública × autenticada | conteúdo válido absorvido; autorização procedimental histórica não governa a auditoria atual |
 | `GKR-UX-HOME-OC-MEDIA-SUPPLY-001` | Media como supply editorial sem transferência de autoridade; patrocínio identificável | absorvido |
 | decisões/Source Locks/Design deliveries anteriores | evidência de checkpoints de construção | não promovidos a autorização atual |
 
@@ -1615,7 +1752,7 @@ Esta matriz não autoriza remoção automática de nenhum arquivo. A remoção f
 
 ---
 
-## 30. Documentos de aprofundamento ainda preservados
+## 31. Documentos de aprofundamento ainda preservados
 
 Enquanto a auditoria não decidir sua função final, permanecem como aprofundamento/evidência, entre outros:
 
@@ -1642,7 +1779,7 @@ A existência desses documentos não reduz a função deste Master como porta de
 
 ---
 
-## 31. Formulação final de controle
+## 32. Formulação final de controle
 
 > **A Home Pública de Organizações e Coletivos será conceitualmente aderente quando uma Organização ou Coletivo reconhece capacidades que já possui, percebe a fragmentação e as barreiras que podem limitar sua contribuição, entende como a Guivos pode ampliar contexto e conexões, reconhece os três participantes e seus limites de autoridade, compreende a diferença entre Possibilidade e Oportunidade real, percebe mecanismos e supply capazes de habilitar experiências, enxerga os nove Domínios sem ser reduzido a eles, entende como valor pode circular sem comprar relevância, encontra fundamentos verificáveis para confiar, compreende Journey, Produtos Especializados e Intelligence em seus papéis corretos, navega sem coerção e termina querendo descobrir como pode participar — sem perder identidade, responsabilidade, autoridade ou autonomia.**
 
