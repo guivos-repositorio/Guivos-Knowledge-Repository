@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
 
+# Trigger after workflow registration.
 jobs:
   restore:
     runs-on: ubuntu-latest
