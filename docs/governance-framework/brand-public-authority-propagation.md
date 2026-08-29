@@ -2,7 +2,7 @@
 id: GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
 title: Reconciliação Transitória da Autoridade Pública da Marca e do Fundador
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-08-29
 depends_on:
