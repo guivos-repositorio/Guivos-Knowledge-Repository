@@ -45,3 +45,5 @@ jobs:
           test "$(git diff --cached --name-only | sort)" = "$expected"
           git commit -m "GKR: sincronizar propagation com estado e Roadmap vigentes"
           git push origin HEAD:agent/gkr-global-audit-lote-d-close-e-next-v1
+
+# trigger: 2026-08-29 final residual sync
