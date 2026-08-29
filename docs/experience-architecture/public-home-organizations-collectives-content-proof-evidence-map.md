@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-SYS-001
 title: Mapa de Conteúdo, Prova e Evidência por Movimento da Home Pública de Organizações e Coletivos
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-11
+last_updated: 2026-08-29
 parent: GKR-UX-HOME-OC-MASTER-001
 depends_on:
   - GKR-UX-HOME-OC-MASTER-001
@@ -16,22 +16,45 @@ depends_on:
   - UXA-014
   - UXA-019
 related:
+  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-AUDIT-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - UXA-015
   - UXA-016
   - UXA-017
   - UXA-018
 normative: false
+maturity: reconciled_content_proof_detail_pre_materialization
 ---
 
 # Mapa de Conteúdo, Prova e Evidência por Movimento da Home Pública de Organizações e Coletivos
 
-## 1. Finalidade
+## 1. Finalidade e função atual
 
-Este documento executa o **P3 da prontidão pré-materialização** da Home Pública de Organizações e Coletivos e resolve em princípio `OC-GAP-03 — Conteúdo, prova e evidência por movimento` identificado por `GKR-UX-HOME-OC-AUDIT-001`.
+Este documento nasceu como o **P3 da prontidão pré-materialização** da Home Pública de Organizações e Coletivos e, naquele checkpoint, resolveu em princípio `OC-GAP-03 — Conteúdo, prova e evidência por movimento` identificado por `GKR-UX-HOME-OC-AUDIT-001`.
 
-Seu objetivo é definir:
+Depois da reconstrução documental de `GKR-UX-HOME-OC-MASTER-001 v1.0.0`, da reconciliação de `GKR-UX-HOME-OC-NARR-001 v0.2.0` e de `GKR-UX-HOME-OC-NAV-001 v0.2.0`, sua função atual é preservar e aprofundar o **contrato especializado de conteúdo, prova e evidência** da Home O/C, sem competir com o Documento Mestre como autoridade de consumo vigente.
+
+Estado de autoridade:
+
+```text
+GKR-UX-HOME-OC-MASTER-001 v1.0.0
+→ autoridade de consumo vigente da Home O/C
+
+GKR-UX-HOME-OC-NARR-001 v0.2.0
+→ detalhe narrativo reconciliado
+
+GKR-UX-HOME-OC-NAV-001 v0.2.0
+→ detalhe especializado reconciliado de navegação / Hero / CTAs
+
+GKR-UX-HOME-OC-SYS-001 v0.2.0
+→ detalhe especializado reconciliado de conteúdo / prova / evidência
+→ não autoriza materialização
+```
+
+Seu objetivo permanece definir:
 
 - qual função editorial predomina em cada um dos onze movimentos;
 - quando a narrativa precisa de evidência real;
@@ -50,10 +73,26 @@ Ele também não cria nem autoriza:
 - SVG;
 - protótipo;
 - UI final;
+- grid ou layout;
+- componente;
 - implementação;
+- publicação;
+- disponibilidade operacional;
 - UXA-102/V5;
-- Engenharia de Produto;
-- publicação da página em produção.
+- retomada de Product Engineering;
+- Marketing/GTM;
+- cadastro ou onboarding;
+- materialização da experiência autenticada de Organização ou Coletivo.
+
+Durante a auditoria integral:
+
+```text
+DETALHE DE CONTEÚDO E PROVA RECONCILIADO
+≠ DESIGN VIGENTE
+≠ WIREFRAME AUTORIZADO
+≠ UI APROVADA
+≠ IMPLEMENTAÇÃO AUTORIZADA
+```
 
 Decisão central:
 
@@ -63,7 +102,7 @@ Decisão central:
 
 ## 2. Princípios herdados da Home Pública principal
 
-A segunda Home pertence à mesma Guivos e herda o sistema transversal `GKR-UX-HOME-SYS-001`.
+A segunda Home pertence à mesma Guivos e herda o sistema transversal `GKR-UX-HOME-SYS-001`, sempre interpretado sob a autoridade atual do Master O/C.
 
 Continuam válidos:
 
@@ -112,7 +151,7 @@ Permanecem proibidos:
 - resultados inventados;
 - geografias não confirmadas apresentadas como presença operacional;
 - capacidades futuras apresentadas como disponíveis;
-- claims de segurança, privacidade, conformidade ou inteligência sem base governada.
+- claims de segurança, privacidade, conformidade ou Intelligence sem base governada.
 
 ### 2.5 Pouca prova real é melhor que muita simulação
 
@@ -126,7 +165,7 @@ A falta temporária de determinada prova não autoriza a criação de uma prova 
 
 ## 3. Classificação obrigatória de verdade editorial
 
-Antes de qualquer conteúdo dinâmico, exemplo, história, métrica ou relação chegar à futura Home, ele deve ser enquadrável internamente em uma das categorias abaixo.
+Antes de qualquer conteúdo dinâmico, exemplo, história, métrica ou relação chegar à Home, ele deve ser enquadrável internamente em uma das categorias abaixo.
 
 ### 3.1 FATO GOVERNADO
 
@@ -135,7 +174,7 @@ Afirmação sustentada pelo Canon, por decisão arquitetural vigente ou por esta
 Exemplos de natureza:
 
 - definição de Pessoa, Organização e Coletivo;
-- arquitetura de produtos vigente;
+- arquitetura de Produtos vigente;
 - princípio `participante ≠ produto`;
 - regra `Organização ≠ Business`;
 - política ou contrato efetivamente governado.
@@ -179,7 +218,7 @@ Regra:
 
 > **Cenário ilustrativo explica possibilidade; não prova que aquela relação aconteceu.**
 
-Uma futura materialização não deve usar nomes, logos, fotografias realistas ou números que façam um cenário ilustrativo parecer um case verdadeiro.
+Uma futura materialização, se autorizada, não deve usar nomes, logos, fotografias realistas ou números que façam um cenário ilustrativo parecer um case verdadeiro.
 
 ### 3.5 ESTADO FUTURO OU CAPACIDADE NÃO DISPONÍVEL
 
@@ -193,17 +232,17 @@ Arquitetura futura não equivale a disponibilidade atual.
 
 ## 4. Regra contra mistura de níveis de verdade
 
-Os cinco níveis acima podem coexistir na mesma Home, mas não podem ser materializados de forma indistinguível.
+Os cinco níveis acima podem coexistir na mesma Home, mas não podem ser apresentados de forma indistinguível.
 
 Evitar:
 
 ```text
 história real
 + cenário ilustrativo
-+ produto futuro
++ Produto futuro
 + métrica projetada
 
-apresentados visualmente como se todos fossem fatos operacionais equivalentes
+apresentados como se todos fossem fatos operacionais equivalentes
 ```
 
 Regra:
@@ -221,8 +260,8 @@ Ela precisa sustentar cinco percepções diferentes:
 1. **capacidades e iniciativas reais já existem no mundo;**
 2. **essas capacidades podem ser complementares sem que a Guivos invente causalidade;**
 3. **valor pode circular entre participantes sem reduzir evolução a volume ou recompensa;**
-4. **há responsabilidade, governança e limites na forma como a Guivos pretende conectar esse ecossistema;**
-5. **existe uma arquitetura coerente de capacidades Guivos por trás da narrativa, sem confundir produto com participante.**
+4. **há responsabilidade, governança e limites na forma como a Guivos conecta ou pretende conectar esse ecossistema, conforme o estado operacional real;**
+5. **existe uma arquitetura coerente de capacidades Guivos por trás da narrativa, sem confundir Produto com participante.**
 
 A prova é distribuída pela narrativa.
 
@@ -235,16 +274,16 @@ Não deve existir uma única seção chamada `Provas`, `Clientes`, `Cases` ou `N
 | Movimento | Função predominante | Necessidade de prova | Conteúdo preferencial |
 |---|---|---|---|
 | 01 — Abrir o horizonte | tese | baixa | institucional permanente |
-| 02 — Reconhecer o que já existe | reconhecimento + realidade | média/alta | evidência real e exemplos reconhecíveis |
-| 03 — Continuidade | hipótese explicativa | média | relações reais quando disponíveis; cenário ilustrativo claramente distinguido quando necessário |
-| 04 — Papel da Guivos | explicação institucional | média | fato governado + arquitetura de atuação |
-| 05 — Quem participa | explicação estrutural | baixa/média | fato governado + diversidade de tipos reais quando útil |
-| 06 — Complementaridade | demonstração relacional | alta | relação documentada ou cenário ilustrativo explicitamente não factual |
-| 07 — Múltiplas dimensões | amplitude contextual | média | repertório real diverso, sem catálogo de categorias |
-| 08 — Valor, diversidade e escala | demonstração de reciprocidade | alta | evidência de valor contextual; métricas apenas quando interpretáveis |
-| 09 — Confiança | autoridade e limites | muito alta | governança, método, fontes, transparência, privacidade, relações e limites verificáveis |
-| 10 — Capacidades da Guivos | explicação de ecossistema | alta para disponibilidade; média para arquitetura | fatos governados + estado operacional correto |
-| 11 — Como participar | navegação e ação | baixa | ação clara, contexto e autonomia |
+| 02 — Tornar capacidades e contribuições reconhecíveis | reconhecimento + realidade | média/alta | evidência real e exemplos reconhecíveis |
+| 03 — Da fragmentação à continuidade | hipótese explicativa | média | relações reais quando disponíveis; cenário ilustrativo claramente distinguido quando necessário |
+| 04 — Explicar o papel da Guivos | explicação institucional | média | fato governado + arquitetura de atuação |
+| 05 — Explicar quem participa | explicação estrutural | baixa/média | fato governado + diversidade de tipos reais quando útil |
+| 06 — Mostrar complementaridade sem fabricar match | demonstração relacional | alta | relação documentada ou cenário ilustrativo explicitamente não factual |
+| 07 — Mostrar os Domínios de Evolução sem transformá-los em taxonomia visual obrigatória | amplitude contextual | média | repertório real diverso + vocabulário canônico JED-001..009 |
+| 08 — Mostrar circulação de valor, supply e escala responsável | demonstração de reciprocidade | alta | evidência de valor contextual; métricas apenas quando interpretáveis |
+| 09 — Construir confiança por autoridade, evidência e proteção | autoridade e limites | muito alta | governança, método, fontes, transparência, privacidade, relações e limites verificáveis |
+| 10 — Materializar o ecossistema sem virar catálogo | explicação de ecossistema | alta para disponibilidade; média para arquitetura | fatos governados + estado operacional correto |
+| 11 — Reabrir o horizonte para participação | navegação e ação | baixa | ação clara, contexto e autonomia |
 
 Esse mapa governa **função**, não layout.
 
@@ -284,6 +323,8 @@ A credibilidade deve vir inicialmente de:
 - ausência de promessa exagerada;
 - coerência com o que será demonstrado depois.
 
+A compreensão da Hero e sua continuidade pública não podem depender de dados pessoais, CNPJ, localização, voz/microfone, câmera, upload, login ou autenticação.
+
 ## Evitar
 
 - parede de logos na Hero;
@@ -299,7 +340,7 @@ A credibilidade deve vir inicialmente de:
 
 ---
 
-# 8. Movimento 02 — Reconhecer o que já existe
+# 8. Movimento 02 — Tornar capacidades e contribuições reconhecíveis
 
 ## Pergunta implícita
 
@@ -309,7 +350,7 @@ A credibilidade deve vir inicialmente de:
 
 Reconhecimento + realidade.
 
-Esse movimento mostra que Organizações e Coletivos já criam conhecimento, oportunidades, experiências, serviços, iniciativas, relações e mobilização.
+Esse movimento mostra que Organizações e Coletivos já criam ou habilitam conhecimento, Oportunidades reais, experiências, serviços, iniciativas, relações, recursos, infraestrutura e mobilização.
 
 A Guivos ainda não precisa ser protagonista.
 
@@ -324,9 +365,9 @@ Quando disponíveis:
 - uma Organização realizando algo concreto;
 - um Coletivo mobilizando algo concreto;
 - conhecimento produzido;
-- oportunidade criada;
+- Oportunidade real criada ou habilitada;
 - experiência realizada;
-- serviço ou iniciativa observável;
+- serviço, recurso, infraestrutura ou iniciativa observável;
 - contexto local ou global real.
 
 ## O que um logo sozinho não prova
@@ -356,11 +397,11 @@ Regra:
 
 ---
 
-# 9. Movimento 03 — Continuidade
+# 9. Movimento 03 — Da fragmentação à continuidade
 
 ## Pergunta implícita
 
-> **“E se esses momentos não precisassem permanecer isolados?”**
+> **“E se aquilo que já existe pudesse ganhar mais contexto e continuidade?”**
 
 ## Função editorial
 
@@ -374,10 +415,11 @@ O movimento apresenta continuidade sem afirmar causalidade garantida.
 
 Uma sequência verdadeira pode demonstrar que:
 
-- uma experiência revelou um interesse;
-- um interesse levou a conhecimento;
-- uma conexão tornou uma oportunidade visível;
-- uma iniciativa encontrou capacidade complementar.
+- uma experiência revelou um novo Momento, interesse ou necessidade;
+- conhecimento ampliou percepção;
+- uma conexão tornou uma Oportunidade real visível;
+- uma iniciativa encontrou capacidade complementar;
+- um Mecanismo ajudou a remover uma barreira ou explicar como uma Possibilidade podia contribuir.
 
 A narrativa deve documentar apenas aquilo que realmente pode ser sustentado.
 
@@ -389,7 +431,7 @@ Quando não houver uma sequência real adequada, pode-se explicar:
 experiência
 → pode abrir contexto para aprendizado
 → que pode tornar uma conexão mais provável
-→ que pode revelar uma oportunidade
+→ que pode revelar uma Possibilidade, um Mecanismo ou uma Oportunidade real
 ```
 
 Mas a natureza ilustrativa precisa ser preservada.
@@ -417,7 +459,7 @@ Preferir:
 
 ---
 
-# 10. Movimento 04 — Papel da Guivos
+# 10. Movimento 04 — Explicar o papel da Guivos
 
 ## Pergunta implícita
 
@@ -433,13 +475,17 @@ O movimento não precisa provar grandeza.
 
 Precisa demonstrar coerência entre a tese e a arquitetura governada.
 
-Pode se apoiar em fatos canônicos sobre o papel da Guivos:
+Pode se apoiar em fatos governados sobre o papel da Guivos:
 
-- conectar participantes;
+- ampliar percepção;
 - organizar contexto;
-- tornar possibilidades mais encontráveis;
+- aproximar participantes e relações legítimas;
+- tornar Possibilidades mais visíveis;
+- tornar Oportunidades reais mais encontráveis quando houver base;
+- ajudar a explicar Mecanismos quando necessário;
 - apoiar continuidade;
 - aproximar capacidades complementares;
+- reduzir barreiras de acesso quando capacidades legítimas permitirem;
 - preservar autonomia.
 
 ## Proteção
@@ -450,15 +496,15 @@ A frase:
 
 > `A Guivos conecta...`
 
-precisa ser materializada de forma compatível com o estágio real do ecossistema no momento da publicação.
+precisa ser comunicada de forma compatível com o estágio real do ecossistema no momento da publicação.
 
 ## Estado de saída
 
-> **“Entendo o papel que a Guivos pretende exercer e ele é diferente de simplesmente intermediar oferta e demanda.”**
+> **“Entendo o papel que a Guivos pode exercer e ele é diferente de simplesmente intermediar oferta e demanda.”**
 
 ---
 
-# 11. Movimento 05 — Quem participa
+# 11. Movimento 05 — Explicar quem participa
 
 ## Pergunta implícita
 
@@ -484,10 +530,11 @@ Exemplos possíveis de natureza organizacional:
 
 - empresa;
 - universidade;
-- órgão público;
+- órgão ou instituição pública;
 - fundação;
 - associação formal;
-- organização social.
+- organização social;
+- entidade religiosa, cultural ou profissional.
 
 Exemplos possíveis de natureza coletiva:
 
@@ -496,7 +543,7 @@ Exemplos possíveis de natureza coletiva:
 - grupo;
 - comunidade compatível com o contrato de Coletivo;
 - articulação territorial;
-- coletivo profissional, esportivo, cultural ou de interesse.
+- coletivo profissional, esportivo, cultural, religioso, de causa, interesse ou prática compartilhada.
 
 ## Regra
 
@@ -504,11 +551,15 @@ Exemplos possíveis de natureza coletiva:
 
 ## Proteções
 
-- `Comunidade` não vira produto;
+- `Comunidade` não vira Produto;
 - comunidade não é automaticamente sinônimo de Coletivo;
 - Organização não equivale a empresa privada;
 - Coletivo não equivale a ONG;
-- papel momentâneo não substitui tipo estrutural.
+- papel momentâneo não substitui tipo estrutural;
+- pertencimento não equivale a representação;
+- representação não equivale a autoridade irrestrita.
+
+Essas distinções são princípios públicos. Seus mecanismos autenticados não pertencem a esta Home.
 
 ## Estado de saída
 
@@ -516,7 +567,7 @@ Exemplos possíveis de natureza coletiva:
 
 ---
 
-# 12. Movimento 06 — Complementaridade
+# 12. Movimento 06 — Mostrar complementaridade sem fabricar match
 
 ## Pergunta implícita
 
@@ -567,13 +618,15 @@ Na ausência de relação real adequada, utilizar **cenário ilustrativo clarame
 
 Exemplo:
 
-> Uma Organização pode possuir conhecimento; um Coletivo pode reunir pessoas interessadas; outra Organização pode possuir uma oportunidade relacionada.
+> Uma Organização pode possuir conhecimento; um Coletivo pode reunir pessoas interessadas; outra Organização pode possuir uma Oportunidade relacionada ou uma capacidade habilitadora.
 
 Esse exemplo explica arquitetura de possibilidade, não prova que a Guivos já realizou essa composição.
 
+Quando útil, `Direct Supply` e `Enabling Supply` podem ajudar a explicar se uma capacidade materializa diretamente uma Possibilidade/Próximo Passo ou remove uma barreira para a experiência principal. Essas classes permanecem explicativas de Research e não viram taxonomia canônica de Produto, participante, menu ou componente.
+
 ## Regra
 
-> **Nunca criar uma falsa parceria para demonstrar complementaridade.**
+> **Nunca criar uma falsa parceria ou um match fabricado para demonstrar complementaridade.**
 
 ## Estado de saída
 
@@ -581,58 +634,85 @@ Esse exemplo explica arquitetura de possibilidade, não prova que a Guivos já r
 
 ---
 
-# 13. Movimento 07 — Múltiplas dimensões
+# 13. Movimento 07 — Mostrar os Domínios de Evolução sem transformá-los em taxonomia visual obrigatória
 
 ## Pergunta implícita
 
-> **“Isso se limita a trabalho, negócios ou causas sociais?”**
+> **“Em quais grandes contextos da Journey essas capacidades e Possibilidades podem ganhar significado?”**
 
 ## Função editorial
 
 Amplitude contextual.
 
+## Fonte de verdade
+
+Os nove **Domínios de Evolução** são o vocabulário canônico do Guivos Journey:
+
+| ID | Domínio |
+|---|---|
+| JED-001 | Saúde e Bem-estar |
+| JED-002 | Trabalho, Carreira e Estudos |
+| JED-003 | Vida Financeira |
+| JED-004 | Empreendedorismo e Projetos |
+| JED-005 | Relacionamentos e Vida Social |
+| JED-006 | Espiritualidade, Propósito e Valores |
+| JED-007 | Viagens, Lazer, Cultura e Novas Experiências |
+| JED-008 | Causas, Voluntariado e Contribuição |
+| JED-009 | Organização e Equilíbrio da Vida |
+
+Eles organizam **sobre o que** uma Journey pode tratar. Não determinam relevância individual e não significam score, diagnóstico, mérito, estágio de evolução ou obrigação de materialização em nove cards.
+
+```text
+DOMÍNIO
+≠ OBJETIVO
+≠ MOMENTO
+≠ PRÓXIMO PASSO
+≠ POSSIBILIDADE
+≠ OPORTUNIDADE
+≠ EXPERIÊNCIA
+≠ EVOLUÇÃO
+≠ SCORE
+```
+
+`Ainda estou descobrindo` permanece estado transversal legítimo quando não há clareza suficiente.
+
+```text
+AINDA ESTOU DESCOBRINDO
+≠ DÉCIMO DOMÍNIO
+```
+
+O mesmo Domínio entre Pessoa, Organização e Coletivo não cria automaticamente match, relevância, autoridade ou compartilhamento de dados.
+
 ## Objeto da prova
 
-Mostrar que evolução e participação podem fazer sentido em diferentes dimensões da vida sem prescrever um destino humano único.
+Mostrar que capacidades, Possibilidades e formas de participação podem fazer sentido em diferentes áreas da vida, atuação coletiva e trajetória institucional, sem prescrever um destino humano único.
 
 ## Conteúdo preferencial
 
-Poucos exemplos diversos e suficientemente distintos podem provar amplitude melhor do que uma lista exaustiva.
+Poucos exemplos reais e suficientemente distintos podem provar amplitude melhor do que uma lista visual exaustiva.
 
-Possíveis contextos:
-
-- trabalho, carreira e estudos;
-- saúde e bem-estar;
-- relações e pertencimento;
-- conhecimento;
-- cultura;
-- espiritualidade e propósito;
-- viagens;
-- empreendedorismo;
-- cidadania;
-- lazer;
-- território.
-
-## Regra editorial
-
-> **Amplitude deve ser percebida pela diversidade de contextos, não por uma taxonomia infinita.**
+A futura Home, se materializada por autorização posterior, não precisa transformar os nove Domínios em nove cards, nove menus ou classificação completa da vida.
 
 ## Cuidados adicionais
 
-Em saúde, finanças, espiritualidade ou outros domínios sensíveis:
+Em saúde, finanças, espiritualidade ou outros contextos sensíveis:
 
 - não prometer resultado;
 - não criar aconselhamento prescritivo na Home;
-- não representar a Guivos como autoridade sobre qual caminho a pessoa deve seguir;
+- não representar a Guivos como autoridade sobre qual caminho a Pessoa deve seguir;
 - distinguir claramente participante, fonte e contexto.
+
+## Regra editorial
+
+> **Os Domínios ampliam vocabulário e contexto; não prescrevem caminho, não fabricam relevância e não obrigam uma taxonomia visual.**
 
 ## Estado de saída
 
-> **“Esse ecossistema não reduz a jornada humana a uma única dimensão.”**
+> **“Consigo visualizar nossa capacidade fazendo sentido em contextos diferentes sem reduzir evolução a uma classificação rígida.”**
 
 ---
 
-# 14. Movimento 08 — Valor, diversidade e escala
+# 14. Movimento 08 — Mostrar circulação de valor, supply e escala responsável
 
 ## Pergunta implícita
 
@@ -655,7 +735,8 @@ Quando existirem:
 - resultado institucional, social ou econômico de uma Organização;
 - colaboração entre participantes;
 - continuidade de uma relação;
-- diversidade real de contextos conectados.
+- diversidade real de contextos conectados;
+- Direct Supply ou Enabling Supply quando essa distinção explicar materialmente a contribuição ou a remoção de barreira.
 
 ## Métricas
 
@@ -667,7 +748,7 @@ Exemplos de perguntas legítimas:
 - em qual período?
 - em qual território?
 - qual definição de participante?
-- qual definição de oportunidade, experiência ou relação?
+- qual definição de Oportunidade, experiência ou relação?
 - qual relação existe entre o número e a afirmação feita?
 
 ## Métricas que não provam evolução sozinhas
@@ -695,7 +776,31 @@ Esses números podem ser operacionalmente úteis, mas não demonstram por si só
 
 Não usar mapas preenchidos, bandeiras ou nomes de países como prova de presença se a presença operacional não existir.
 
-A escala pode ser inicialmente comunicada como **arquitetura capaz de acomodar diversidade e expansão**, desde que não seja confundida com atuação já materializada.
+A escala pode ser comunicada como **arquitetura capaz de acomodar diversidade e expansão**, desde que não seja confundida com atuação já materializada.
+
+## Regras adicionais
+
+```text
+MAIS USUÁRIOS
+≠ MAIS EVOLUÇÃO
+
+MAIS MEMBROS
+≠ COLETIVO MELHOR
+
+MAIS ANÚNCIOS
+≠ ORGANIZAÇÃO MAIS RELEVANTE
+
+MAIS DADOS
+≠ MAIS COMPREENSÃO
+
+MAIS RECEITA
+≠ MAIS IMPACTO
+
+POSIÇÃO COMERCIAL
+≠ RELEVÂNCIA
+```
+
+Participação não deve ser explicada como perseguição a pontos, créditos ou recompensas. Valor pode ser econômico, institucional, humano, social, contextual, educacional ou relacional, conforme a natureza da relação.
 
 ## Regra
 
@@ -707,7 +812,7 @@ A escala pode ser inicialmente comunicada como **arquitetura capaz de acomodar d
 
 ---
 
-# 15. Movimento 09 — Confiança
+# 15. Movimento 09 — Construir confiança por autoridade, evidência e proteção
 
 ## Pergunta implícita
 
@@ -741,7 +846,7 @@ Conforme houver base governada e operacional:
 - fontes;
 - estado de verificação;
 - privacidade e proteção de dados;
-- critérios de uso de inteligência;
+- critérios de uso de Intelligence;
 - identificação de patrocínio ou interesse comercial;
 - mecanismo de contestação;
 - limites da Guivos;
@@ -777,7 +882,7 @@ Não sugerir:
 
 A Home deve poder afirmar, quando governado:
 
-> **Inteligência apoia. Não governa a decisão humana.**
+> **Intelligence apoia compreensão. Não governa a decisão humana.**
 
 E deve tornar possível compreender:
 
@@ -786,8 +891,10 @@ o que sabemos
 o que foi declarado
 o que foi verificado
 o que inferimos
-o que ainda não sabemos
+o que ainda não sabemos ou permanece contestado
 ```
+
+A evidência pública pode explicar princípios de autoridade, finalidade, bilateralidade, proteção, contestação e saída. Ela não deve expor RBAC, menus internos, permissões técnicas, payloads, logs, domínios da IA autenticada ou dados privados para “provar” governança.
 
 ## Estado de saída
 
@@ -795,11 +902,11 @@ o que ainda não sabemos
 
 ---
 
-# 16. Movimento 10 — Capacidades da Guivos
+# 16. Movimento 10 — Materializar o ecossistema sem virar catálogo
 
 ## Pergunta implícita
 
-> **“Existe infraestrutura coerente por trás dessa visão?”**
+> **“Existe uma arquitetura coerente por trás dessa visão?”**
 
 ## Função editorial
 
@@ -807,30 +914,49 @@ Explicação do ecossistema e de suas capacidades.
 
 ## Fonte de verdade
 
-A arquitetura governada permanece:
+A arquitetura governada vigente é:
 
 ```text
 GUIVOS
 
-├── EXPERIÊNCIA E CONTINUIDADE
-│   └── Journey
+├── EXPERIENCE LAYER
+│   └── Guivos Journey
+│       → experiência e continuidade do participante
 │
-├── MANIFESTAÇÕES ESPECIALIZADAS
-│   ├── Travel
-│   ├── Mall
-│   ├── Media
-│   ├── Business
-│   └── Ads
-│
-└── INTELIGÊNCIA TRANSVERSAL
-    └── Intelligence
+└── PRODUTOS ESPECIALIZADOS
+    ├── Guivos Travel
+    ├── Guivos Mall
+    ├── Guivos Media
+    ├── Guivos Business
+    ├── Guivos Ads
+    └── Guivos Intelligence
+        → Produto Especializado transversal
+        → Intelligence Layer do ecossistema
+```
+
+`Guivos Journey` não deve ser tratado como Produto comercial equivalente aos Produtos Especializados.
+
+`Guivos Business` não é “o produto das Organizações”. Uma Organização pode participar do ecossistema sem utilizar ou contratar Business.
+
+`Guivos Intelligence` é o **Produto Especializado transversal / Intelligence Layer**. Sua unidade superior de valor é compreensão útil e contextualizada.
+
+```text
+COMPREENDER
+≠ DECIDIR
+
+INTELLIGENCE
+≠ IA
+≠ LLM
+≠ DASHBOARD
+≠ GRAFO
+≠ AUTORIDADE SOBRE OUTROS PRODUTOS OU PARTICIPANTES
 ```
 
 ## Função da prova
 
-Aqui a prova não é mostrar sete logos de produtos.
+Aqui a prova não é mostrar uma grade de logos de Produtos.
 
-É demonstrar **coerência arquitetural** e, quando a página estiver em produção, **verdade de estado**.
+É demonstrar **coerência arquitetural** e, quando houver publicação futuramente autorizada, **verdade de estado**.
 
 Para cada capacidade apresentada, deve ser possível diferenciar:
 
@@ -844,14 +970,15 @@ Para cada capacidade apresentada, deve ser possível diferenciar:
 
 - Organização não equivale a Business;
 - Pessoa não equivale a Journey;
-- Coletivo não possui produto obrigatório homônimo;
-- Intelligence não é um produto de vigilância;
-- produto futuro não pode parecer funcionalidade disponível;
-- quantidade de produtos não é prova de maturidade.
+- Coletivo não possui Produto obrigatório homônimo;
+- Intelligence não é produto de vigilância nem autoridade sobre participantes;
+- Produto futuro não pode parecer funcionalidade disponível;
+- quantidade de Produtos não é prova de maturidade;
+- topologia conceitual não é obrigação de cards equivalentes.
 
 ## Conteúdo preferencial
 
-Cada nome de produto, quando necessário, deve responder:
+Cada Produto ou camada, quando necessário, deve responder:
 
 > **“O que esta capacidade torna possível dentro da tese que já foi compreendida?”**
 
@@ -865,19 +992,19 @@ Não responder primeiro:
 
 ## Estado de saída
 
-> **“Entendo que existe uma arquitetura única por trás da visão e que os produtos são capacidades da Guivos, não a definição dos participantes.”**
+> **“Entendo que existe uma arquitetura única por trás da visão e que os Produtos são capacidades da Guivos, não a definição dos participantes.”**
 
 ---
 
-# 17. Movimento 11 — Como participar
+# 17. Movimento 11 — Reabrir o horizonte para participação
 
-## Pergunta implícita
+## Pergunta vigente
 
-> **“Qual caminho faz sentido para mim agora?”**
+> **Como podemos continuar daqui?**
 
 ## Função editorial
 
-Navegação e ação.
+Navegação e ação de baixo compromisso.
 
 ## Necessidade de prova
 
@@ -885,20 +1012,46 @@ Baixa.
 
 A narrativa já deve ter construído contexto suficiente.
 
-Esse movimento precisa provar principalmente **clareza e autonomia da ação**.
+Esse movimento precisa provar principalmente **clareza, autonomia e igual legitimidade conceitual dos dois caminhos**.
 
 ## Conteúdo
 
-Dois caminhos equivalentes em legitimidade:
+Dois caminhos conceituais distintos e equivalentes em legitimidade:
 
-- `Descobrir como participar como Organização`;
-- `Descobrir como participar como Coletivo`.
+- **Descobrir como uma Organização pode participar**;
+- **Descobrir como um Coletivo pode participar**.
+
+Arquitetura vigente:
+
+```text
+HOME PÚBLICA — ORGANIZAÇÕES E COLETIVOS
+                ↓
+        narrativa compartilhada
+                ↓
+       M11 — continuidade
+          ↙             ↘
+ ORGANIZAÇÃO            COLETIVO
+     ↓                    ↓
+continuidade          continuidade
+conceitual própria    conceitual própria
+```
+
+Esses caminhos permanecem conceituais até que destinos operacionais sejam formalmente autorizados e comprovados.
 
 ## Regra
 
-O clique não precisa significar cadastro, compra ou contratação.
+O clique não significa, por obrigação:
 
-Ele abre uma jornada específica de compreensão e participação.
+- cadastro;
+- compra;
+- contratação;
+- onboarding;
+- criação de conta institucional;
+- acesso a tela autenticada;
+- transferência para Guivos Business;
+- formulário comercial.
+
+A experiência autenticada posterior, quando vier a ser materializada e autorizada, preservará arquitetura própria. Seus jobs, autoridade, IA, superfícies, menus, RBAC e wireframes não são transportados para esta Home.
 
 ## Evitar
 
@@ -907,19 +1060,18 @@ Ele abre uma jornada específica de compreensão e participação.
 - `Comece a vender`;
 - `Alcance nossos usuários`;
 - CTA de Organização visualmente superior ao de Coletivo sem razão governada;
+- Organização como caminho comercial e Coletivo como caminho social;
 - formulário comercial como única saída.
 
 ## Estado de saída
 
-> **“Entendi onde me encaixo e posso continuar sem ser pressionado a converter.”**
+> **“Entendi como posso aprofundar a participação sem ser pressionado a converter e sem que meu tipo de participante determine um Produto obrigatório.”**
 
 ---
 
 ## 18. Relação entre prova e as sete macroexperiências
 
-O P1 consolidou sete macroexperiências.
-
-A densidade de prova pode evoluir assim:
+`GKR-UX-HOME-OC-NARR-001 v0.2.0` organiza os onze movimentos em sete macroexperiências. Este SYS aprofunda a necessidade de prova dentro delas; não altera o mapa narrativo.
 
 ### Macro 01 — Abrir o campo de possibilidades
 
@@ -951,7 +1103,8 @@ A densidade de prova pode evoluir assim:
 - alta necessidade de honestidade relacional;
 - relação real quando possível;
 - cenário ilustrativo quando necessário;
-- diversidade contextual.
+- Direct/Enabling Supply apenas quando explicativamente úteis;
+- nove Domínios como vocabulário canônico, não taxonomia visual obrigatória.
 
 ### Macro 05 — Compreender valor, diversidade e escala
 
@@ -977,7 +1130,11 @@ A densidade de prova pode evoluir assim:
 **Movimento 11**
 
 - baixa densidade de prova;
-- alta clareza de ação e autonomia.
+- alta clareza de ação, autonomia e igual legitimidade.
+
+Regra:
+
+> **NARR organiza progressão. SYS aprofunda prova. Nenhum dos dois altera sozinho a autoridade do Master vigente.**
 
 ---
 
@@ -1023,7 +1180,9 @@ Para representar uma relação como real, deve haver base para afirmar ao menos:
 
 Regra:
 
-> **Nunca construir visualmente uma parceria que o contrato real não sustenta.**
+> **Nunca construir uma parceria que o contrato real não sustenta.**
+
+A relação, quando bilateral, não cria propriedade sobre Coletivo nem acesso automático aos dados de seus membros.
 
 ---
 
@@ -1033,6 +1192,7 @@ Uma relação paga, patrocinada ou comercial não deve ser usada como prova neut
 
 Quando materialmente relevante, distinguir:
 
+- conteúdo orgânico;
 - conteúdo editorial;
 - participação institucional;
 - parceria;
@@ -1047,13 +1207,15 @@ Regra:
 
 > **Transparência comercial é parte da confiança, não um detalhe jurídico escondido.**
 
+Patrocínio ou posição comercial não compram relevância contextual nem aparência de prova institucional orgânica.
+
 ---
 
 ## 22. Dados, Intelligence e prova
 
 A Home não pode sugerir que a Guivos conhece profundamente Pessoas porque possui grande volume de dados.
 
-Intelligence deve ser explicada como capacidade de apoiar compreensão de contexto de forma responsável.
+Guivos Intelligence deve ser explicada como **Produto Especializado transversal / Intelligence Layer**, capaz de apoiar compreensão de contexto de forma responsável sem governar a decisão humana.
 
 Quando dados forem utilizados como evidência, distinguir:
 
@@ -1063,13 +1225,15 @@ Quando dados forem utilizados como evidência, distinguir:
 - dado agregado;
 - inferência;
 - evidência externa;
-- informação desconhecida.
+- informação desconhecida ou contestada.
 
 Não comunicar que Organizações recebem automaticamente dados de Pessoas ou membros de Coletivos.
 
 Não transformar inferência em fato.
 
 Não transformar precisão estatística em autoridade moral sobre a trajetória humana.
+
+A Home pública pode explicar princípios de dados, evidência e Intelligence; não deve expor dados privados, payloads, logs, permissões, RBAC ou superfícies autenticadas como prova.
 
 ---
 
@@ -1102,7 +1266,7 @@ Possibilidades legítimas incluem:
 
 - identificação de autor;
 - identificação de participante real;
-- identificação de organização responsável por determinada evidência;
+- identificação de Organização responsável por determinada evidência;
 - identificação de relação explicitamente contextualizada.
 
 Não utilizar logos apenas para produzir aparência de grandeza.
@@ -1122,7 +1286,7 @@ Não deve sustentar sozinho grandes afirmações sobre:
 - eficácia;
 - segurança;
 - transformação;
-- inteligência;
+- Intelligence;
 - representatividade.
 
 Quando utilizado, preferir contexto:
@@ -1160,7 +1324,7 @@ Compensar pouca maturidade por meio de:
 - números projetados apresentados como realizados;
 - países não ativados;
 - histórias sintéticas apresentadas como depoimentos;
-- mockups de produto apresentados como disponibilidade;
+- mockups de Produto apresentados como disponibilidade;
 - participantes genéricos chamados de `comunidade Guivos` sem base;
 - afirmações de liderança de mercado.
 
@@ -1196,7 +1360,7 @@ A segunda Home pode combinar três velocidades:
 
 - iniciativas atuais;
 - acontecimentos que justificam atualização;
-- eventos ou oportunidades quando realmente relevantes à narrativa.
+- eventos ou Oportunidades quando realmente relevantes à narrativa.
 
 Regra herdada:
 
@@ -1208,7 +1372,7 @@ A Home não se torna um feed institucional de parceiros ou notícias.
 
 ## 28. Guivos Media como possível fonte editorial
 
-Quando legitimamente autorizado e operacional, Media pode funcionar como memória editorial de evidências e histórias.
+Quando legitimamente autorizado e operacional, Guivos Media pode funcionar como memória e supply editorial de evidências e histórias.
 
 Isso não significa que todo conteúdo de Media seja prova adequada para a Home.
 
@@ -1221,11 +1385,25 @@ Para chegar à Home, o conteúdo precisa cumprir uma função narrativa específ
 - demonstrar autoridade;
 - explicar continuidade.
 
+Relação de autoridade:
+
+```text
+HOME O/C
+→ tese, narrativa, seleção e função da página
+
+GUIVOS MEDIA
+→ origem, integridade, contexto e classificação editorial do conteúdo que produz
+```
+
+Ser personagem de conteúdo não transforma uma entidade em parceira, cliente ou participante ativo da Guivos.
+
+Conteúdo patrocinado deve permanecer claramente identificável e sujeito às autoridades aplicáveis de Media e Ads.
+
 ---
 
 ## 29. Responsividade do significado
 
-Desktop e mobile podem exibir quantidades diferentes de evidência simultaneamente.
+Desktop e mobile podem exibir quantidades diferentes de evidência simultaneamente em uma futura materialização autorizada.
 
 Mas ambos precisam preservar:
 
@@ -1242,13 +1420,15 @@ Regra:
 
 > **Contexto essencial não é detalhe descartável de responsividade.**
 
+Mobile pode reduzir simultaneidade; não pode reduzir significado, verdade ou qualificação da evidência.
+
 ---
 
 ## 30. Progressive disclosure da evidência
 
 Nem todo método, fonte ou detalhe precisa ocupar o primeiro nível visual.
 
-É legítimo trabalhar com:
+É legítimo trabalhar, em eventual materialização autorizada, com:
 
 ```text
 afirmação compreensível
@@ -1260,6 +1440,8 @@ afirmação compreensível
 Desde que a informação essencial não seja escondida de modo enganoso.
 
 A prova pode ser aprofundável; não pode ser opaca.
+
+Essa arquitetura editorial não autoriza agora componente, interação ou layout.
 
 ---
 
@@ -1274,17 +1456,19 @@ Evidência não pode depender exclusivamente de:
 - cor;
 - interação por arraste.
 
-Uma pessoa utilizando leitor de tela, teclado, redução de movimento ou conexão limitada deve continuar entendendo:
+Uma Pessoa utilizando leitor de tela, teclado, redução de movimento ou conexão limitada deve continuar entendendo:
 
 - qual afirmação está sendo feita;
 - qual evidência a sustenta;
 - qual é seu contexto.
 
+Acessibilidade é parte da integridade da prova, não acabamento posterior.
+
 ---
 
 ## 32. Anti-padrões gerais
 
-Rejeitar uma futura materialização se ela utilizar prova para produzir qualquer uma destas leituras:
+Rejeitar uma futura materialização, somente se e quando autorizada, se ela utilizar prova para produzir qualquer uma destas leituras:
 
 ### `Empresas que confiam na Guivos`
 
@@ -1316,7 +1500,15 @@ representado como atuação mundial já existente quando for apenas ambição ou
 
 ### `Case ilustrativo`
 
-materializado de forma que pareça um case real.
+apresentado de forma que pareça um case real.
+
+### `Organização usa Business`
+
+convertendo tipo estrutural de participante em Produto obrigatório.
+
+### `Coletivo = comunidade da Guivos`
+
+criando propriedade, Produto ou pertencimento não governados.
 
 ---
 
@@ -1352,11 +1544,11 @@ Os exemplos ajudam a reconhecer os participantes ou os redefinem de forma estrei
 
 Existe base real para a relação representada?
 
-Se não, ela está claramente apresentada como possibilidade ilustrativa?
+Se não, ela está claramente apresentada como possibilidade ilustrativa e sem fabricar match?
 
 ### Movimento 07
 
-A diversidade está no significado ou apenas na aparência das imagens?
+Os nove Domínios ampliam contexto sem virar score, prescrição, match ou taxonomia visual obrigatória?
 
 ### Movimento 08
 
@@ -1368,11 +1560,11 @@ Há razões verificáveis para confiar ou apenas autodeclaração institucional?
 
 ### Movimento 10
 
-A arquitetura está clara sem transformar produtos em catálogo ou disponibilidade fictícia?
+A arquitetura `Experience Layer / Produtos Especializados / Intelligence Layer` está clara sem transformar Produtos em catálogo ou disponibilidade fictícia?
 
 ### Movimento 11
 
-A ação preserva autonomia ou utiliza toda a prova anterior para pressionar conversão?
+A continuidade preserva autonomia, igual legitimidade entre Organização e Coletivo e destinos ainda conceituais, ou utiliza toda a prova anterior para pressionar conversão?
 
 ---
 
@@ -1384,18 +1576,20 @@ A ação preserva autonomia ou utiliza toda a prova anterior para pressionar con
 | falsa relação | 02, 06, 09 | proveniência e natureza da relação |
 | falsa escala | 08, 10 | métricas contextualizadas + estado operacional |
 | participante = audiência | 06, 08, 11 | agência, reciprocidade e autonomia |
-| produto = participante | 05, 10 | contrato `quem ≠ como` |
+| Produto = participante | 05, 10 | contrato `quem ≠ como` |
 | Intelligence = acesso a Pessoas | 08, 09, 10 | privacidade, finalidade e distinção de dados |
 | prova = logo | 02, 09 | contexto da relação |
 | ilustração = evidência | 03, 06 | classificação editorial explícita |
 | arquitetura = disponibilidade | 04, 10 | estado operacional verificável |
+| Domínio = relevância / match | 06, 07 | contexto + autoridade + ausência de inferência automática |
 | volume = evolução | 08 | métricas de significado e limites |
+| continuidade conceitual = rota operacional | 11 | separar intenção pública de destino autenticado |
 
 ---
 
-## 35. Critério de fechamento do P3
+## 35. Proveniência do antigo P3 e critério atual de integridade
 
-`OC-GAP-03` é considerado resolvido em princípio quando uma futura equipe de Design consegue responder, sem inventar estratégia:
+No checkpoint original de 11/08/2026, `OC-GAP-03` foi considerado **resolvido em princípio** quando uma futura equipe de Design conseguia responder, sem inventar estratégia:
 
 1. qual movimento precisa de prova forte e qual pode funcionar por tese;
 2. o que cada evidência está tentando provar;
@@ -1406,10 +1600,10 @@ A ação preserva autonomia ou utiliza toda a prova anterior para pressionar con
 7. como provar complementaridade sem inventar relações;
 8. como mostrar valor sem transformar volume em evolução;
 9. como demonstrar confiança por governança, método e limites;
-10. como apresentar produtos respeitando verdade operacional;
+10. como apresentar Produtos respeitando verdade operacional;
 11. como operar com poucas provas reais no estágio inicial.
 
-Estado após este documento:
+Naquele checkpoint, a sequência era registrada como:
 
 ```text
 OC-GAP-01 — Macroexperiências
@@ -1425,11 +1619,43 @@ OC-GAP-04 — Handoff específico para Design
 = AINDA ABERTO
 ```
 
+Esse quadro permanece como **proveniência histórica**, não como estado operacional atual.
+
+Depois das reconstruções e reauditorias posteriores:
+
+```text
+P3 / OC-GAP-03
+→ proveniência histórica deste detalhe especializado
+
+P4 / OC-GAP-04
+→ não é próximo passo operacional vigente deste documento
+
+GKR-UX-HOME-OC-MASTER-001 v1.0.0
+→ autoridade de consumo atual
+
+GKR-UX-HOME-OC-NARR-001 v0.2.0
+→ detalhe narrativo reconciliado
+
+GKR-UX-HOME-OC-NAV-001 v0.2.0
+→ detalhe navegacional reconciliado
+
+GKR-UX-HOME-OC-SYS-001 v0.2.0
+→ detalhe de conteúdo e prova reconciliado
+
+AUDITORIA INTEGRAL DO GKR
+→ EM CURSO
+
+MATERIALIZAÇÃO VISUAL NOVA
+→ NÃO AUTORIZADA
+```
+
+O critério atual de integridade do SYS é preservar conhecimento suficiente para que conteúdo, prova e evidência possam ser avaliados sem inventar estratégia, **sem converter essa prontidão documental em permissão de Design**.
+
 ---
 
-## 36. O que permanece aberto para P4
+## 36. Responsabilidades especializadas ainda preservadas fora deste SYS
 
-Este documento não determina:
+Historicamente, o P4 reunia questões como:
 
 - quais trechos do Documento Mestre são copy obrigatória;
 - quais trechos são apenas matéria-prima estratégica;
@@ -1440,27 +1666,33 @@ Este documento não determina:
 - instruções consolidadas para ferramentas generativas;
 - pacote final de fontes que Design deve receber.
 
-Essas responsabilidades pertencem ao **P4 — Handoff específico para Design/UX/UI**.
+Essas questões pertencem hoje aos respectivos artefatos especializados e à história dos checkpoints. Sua existência **não autoriza** produzir ou retomar agora Handoff, wireframe, Figma, SVG, protótipo, UI, UXA-102/V5 ou implementação.
+
+Qualquer futura retomada de materialização exigirá novo ato governado posterior à auditoria integral e reconciliação com o Master e demais autoridades então vigentes.
 
 ---
 
 ## 37. Contrato final de conteúdo e prova
 
-> **A Home Pública de Organizações e Coletivos deve construir credibilidade distribuindo evidência de acordo com a função de cada movimento. Realidade prova que capacidades existem; relações reais ou cenários explicitamente ilustrativos ajudam a compreender complementaridade; métricas só sustentam afirmações quando possuem contexto; governança, proveniência e limites sustentam confiança; arquitetura e estado operacional sustentam os produtos. Em nenhum ponto a Guivos deve substituir ausência de prova por logos, números, histórias, geografias ou relações simuladas.**
+> **A Home Pública de Organizações e Coletivos deve construir credibilidade distribuindo evidência de acordo com a função de cada movimento. Realidade prova que capacidades existem; relações reais ou cenários explicitamente ilustrativos ajudam a compreender complementaridade; métricas só sustentam afirmações quando possuem contexto; governança, proveniência e limites sustentam confiança; arquitetura e estado operacional sustentam Journey, Produtos Especializados e Intelligence em seus papéis corretos. Em nenhum ponto a Guivos deve substituir ausência de prova por logos, números, histórias, geografias, relações ou capacidades simuladas.**
 
 Teste final:
 
 > **Se retirarmos o prestígio visual de marcas, números e efeitos, a afirmação ainda continua verdadeira e demonstrável? Se não continuar, a prova escolhida está mascarando uma lacuna em vez de resolvê-la.**
 
+Teste adicional de fronteira:
+
+> **Se uma prova pública só puder ser compreendida expondo dados privados, RBAC, menus, logs, IA autenticada ou fluxo interno, ela está tentando demonstrar a coisa certa pela superfície errada.**
+
 ---
 
-## 38. Limites desta decisão
+## 38. Limites, estado atual e relação com o Lote E
 
 Este documento:
 
 - não altera os onze movimentos do Documento Mestre;
-- não altera as sete macroexperiências do P1;
-- não altera a arquitetura de Header, Hero e CTAs do P2;
+- não altera as sete macroexperiências reconciliadas do NARR;
+- não altera a arquitetura de Header, Hero e CTAs reconciliada do NAV;
 - não escolhe parceiros, cases, histórias, métricas ou países;
 - não autoriza uso público de nenhuma relação existente;
 - não define política jurídica de consentimento ou licenciamento de conteúdo;
@@ -1470,6 +1702,24 @@ Este documento:
 - não cria protótipo;
 - não cria UI;
 - não inicia UXA-102/V5;
-- não inicia implementação.
+- não retoma Product Engineering;
+- não inicia implementação;
+- não materializa destinos operacionais para Organização ou Coletivo;
+- não importa IA, RBAC, menus, jobs ou superfícies autenticadas para a Home pública.
 
-A próxima etapa governada é o **P4 — Handoff específico para Design/UX/UI**.
+Com a reconciliação desta versão:
+
+- o núcleo de classes de conteúdo, verdade editorial, hierarquia de prova, causalidade, métricas, logos, depoimentos, patrocínio, fallback e verdade operacional permanece preservado;
+- os onze movimentos foram alinhados ao Master v1.0.0 e ao NARR v0.2.0;
+- o Movimento 07 passa a usar os nove Domínios de Evolução canônicos sem obrigação visual;
+- o Movimento 10 usa `Journey = Experience Layer`, Produtos Especializados e `Intelligence = Produto Especializado transversal / Intelligence Layer`;
+- o Movimento 11 usa `Como podemos continuar daqui?` e preserva Organização / Coletivo como continuidades conceituais distintas e de igual legitimidade;
+- a fronteira pública × autenticada foi reforçada sem importar superfícies protegidas;
+- o antigo P3 → P4 permanece história de construção, não sequência operacional vigente;
+- este documento não fecha automaticamente SYS/HANDOFF restantes nem o Lote E global.
+
+Estado desta frente:
+
+> **CONTENT / PROOF / EVIDENCE DETAIL RECONCILIADO — `GKR-UX-HOME-OC-SYS-001 v0.2.0` — PRESERVADO PARA APROFUNDAMENTO — MATERIALIZAÇÃO VISUAL NÃO AUTORIZADA DURANTE A AUDITORIA INTEGRAL.**
+
+Próximos incrementos do Lote E devem ser determinados pela matriz de reconciliação do corpus, não pela antiga sequência de prontidão P3 → P4.
