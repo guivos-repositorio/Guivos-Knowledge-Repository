@@ -438,6 +438,33 @@ Exemplos conceituais, não taxonomia final:
 
 Nenhuma delas representa definição universal de evolução.
 
+#### 11.3.1 Domínios de Evolução — vocabulário, não taxonomia da Home
+
+A Journey reconhece nove Domínios de Evolução:
+
+1. Saúde e Bem-estar;
+2. Trabalho, Carreira e Estudos;
+3. Vida Financeira;
+4. Empreendedorismo e Projetos;
+5. Relacionamentos e Vida Social;
+6. Espiritualidade, Propósito e Valores;
+7. Viagens, Lazer, Cultura e Novas Experiências;
+8. Causas, Voluntariado e Contribuição;
+9. Organização e Equilíbrio da Vida.
+
+`Ainda estou descobrindo` é estado transversal, não décimo domínio.
+
+Na Home pública, os Domínios podem funcionar como **vocabulário opcional de amplitude e cobertura da Journey**, quando necessário. Eles não devem automaticamente virar:
+
+- nove cards;
+- nove categorias da Home;
+- menu principal;
+- diagnóstico da Pessoa;
+- score de equilíbrio;
+- “roda da vida” obrigatória.
+
+A futura materialização deve justificar qualquer uso dos Domínios pelo papel narrativo que cumprem, e não pela existência da taxonomia na Journey.
+
 ### 11.4 Movimento 04 — Desconexão
 
 A pessoa deve compreender gradualmente:
@@ -760,6 +787,8 @@ O visitante deve perceber liberdade de explorar, avançar, voltar ou sair.
 ### 17.5 Interação não pode substituir clareza
 A mensagem central deve continuar compreensível sem animação, vídeo ou interação complexa.
 
+Conteúdo essencial não pode depender de hover, clique, swipe, gesto opcional ou outra interação para ser compreendido. Progressive disclosure pode organizar profundidade, mas nunca compensar falta de clareza.
+
 ### 17.6 CTA compatível com descoberta
 CTAs iniciais privilegiam continuidade e exploração, não urgência comercial artificial.
 
@@ -814,7 +843,8 @@ A futura materialização deve ser concebida desde o início para:
 - responsividade;
 - tradução e internacionalização;
 - alvos de toque adequados;
-- ordem semântica de leitura.
+- ordem semântica de leitura;
+- ausência de dependência exclusiva de hover, clique ou gesto opcional.
 
 Se vídeo não carregar, a tese da Home deve continuar íntegra.
 
@@ -957,7 +987,9 @@ Uma proposta futura deve ser rejeitada ou revista se:
 25. achata Journey em card equivalente por convenção;
 26. usa a cadeia do Movimento 06 como modelo editorial obrigatório para toda história;
 27. bloqueia arquitetura conceitual apenas porque um destino ainda não está lançado;
-28. publica destino indisponível como se estivesse operacional.
+28. publica destino indisponível como se estivesse operacional;
+29. transforma automaticamente os nove Domínios de Evolução em nove cards, categorias da Home, menu, diagnóstico, score ou “roda da vida”;
+30. esconde conteúdo essencial atrás de hover, clique, swipe ou gesto opcional, ou usa interação para compensar falta de clareza.
 
 ---
 
@@ -984,6 +1016,7 @@ Uma proposta futura deve ser rejeitada ou revista se:
 - princípios de movimento;
 - critérios de acessibilidade;
 - inventário preliminar de componentes;
+- tratamento dos Domínios de Evolução, quando utilizados, com justificativa narrativa e sem taxonomia automática;
 - riscos e decisões ainda abertas;
 - tabela de rastreabilidade entre proposta e movimentos/requisitos.
 
@@ -1021,7 +1054,9 @@ Avaliar cada proposta de `0` a `5` em:
 - desejo de descoberta;
 - acessibilidade estrutural;
 - robustez sem vídeo/animação;
+- conteúdo essencial independente de hover, clique ou gesto opcional;
 - potencial de internacionalização;
+- Domínios de Evolução preservados como vocabulário opcional de amplitude, sem materialização automática;
 - Header persistente preservando marca/Home, `Sobre`, `Organizações e Coletivos`, compartilhar, idioma/região, launcher, `Login` e `Iniciar Jornada`;
 - Journey com `Iniciar Jornada` como porta própria e CTA de maior hierarquia no Header;
 - launcher compacto contendo Travel, Ads, Media, Business, Intelligence e Mall, sem Journey;
@@ -1031,7 +1066,7 @@ Avaliar cada proposta de `0` a `5` em:
 - compartilhar permanecendo utilitário;
 - `Login` disponível sem disputar a narrativa;
 - rodapé contendo `Mapa do Ecossistema` somente como link, sem antecipar a página;
-- desktop e mobile preservando a mesma hierarquia semântica e os caminhos essenciais;
+- desktop e mobile preservando a mesma hierarquia semântica e os mesmos caminhos essenciais;
 - distinção entre destino conceitual governado e disponibilidade operacional;
 - verdade operacional nos estados que serão publicados.
 
@@ -1047,6 +1082,8 @@ Nenhuma proposta deve avançar apenas por nota média alta se obtiver menos de `
 - pergunta-mãe e tese preservadas;
 - Possibilidade ≠ Oportunidade;
 - ausência de promessa de resultado;
+- conteúdo essencial independente de interação opcional;
+- limites dos Domínios de Evolução preservados;
 - contrato de navegação vigente preservado;
 - verdade operacional daquilo que será publicado.
 
@@ -1087,6 +1124,8 @@ Antes de aprovar um futuro wireframe, perguntar:
 29. O launcher contém Travel, Ads, Media, Business, Intelligence e Mall de forma compacta e não dominante?
 30. O rodapé mantém `Mapa do Ecossistema` somente como link, sem detalhar a futura página?
 31. Desktop e mobile preservam os mesmos caminhos essenciais e a mesma hierarquia semântica?
+32. Se os nove Domínios de Evolução forem usados, permanecem vocabulário opcional de amplitude ou foram convertidos indevidamente em taxonomia/diagnóstico da Home?
+33. A tese e todo conteúdo essencial permanecem compreensíveis sem hover, clique, swipe ou gesto opcional?
 
 ---
 
@@ -1143,6 +1182,9 @@ SEQUÊNCIA NARRATIVA
 10. Autonomia e Confiança — liberdade, privacidade e ausência de falsa personalização.
 11. Descoberta — continuidade voluntária.
 
+DOMÍNIOS DE EVOLUÇÃO
+A Journey reconhece nove Domínios: Saúde e Bem-estar; Trabalho, Carreira e Estudos; Vida Financeira; Empreendedorismo e Projetos; Relacionamentos e Vida Social; Espiritualidade, Propósito e Valores; Viagens, Lazer, Cultura e Novas Experiências; Causas, Voluntariado e Contribuição; Organização e Equilíbrio da Vida. “Ainda estou descobrindo” é estado transversal, não décimo domínio. Na Home, use os Domínios apenas como vocabulário opcional de amplitude/cobertura quando necessário. Não os transforme automaticamente em nove cards, nove categorias, menu principal, diagnóstico, score de equilíbrio ou “roda da vida”.
+
 MODELO EDITORIAL DAS HISTÓRIAS
 CONTEXTO → POSSIBILIDADE → DECISÃO → EXPERIÊNCIA → CONSEQUÊNCIA → CONTINUIDADE.
 Não torne Mecanismo obrigatório em toda história; a cadeia com Mecanismo é específica do Movimento 06.
@@ -1168,6 +1210,8 @@ NÃO FAZER
 - não confundir Organização com Business;
 - não transformar Intelligence em autoridade totalizante;
 - não confundir Possibilidade com Oportunidade;
+- não materializar automaticamente os nove Domínios como nove cards/categorias, menu, diagnóstico, score ou “roda da vida”;
+- não ocultar conteúdo essencial atrás de hover, clique, swipe ou gesto opcional;
 - não simular escala, usuários, histórias, parceiros, métricas ou disponibilidade inexistentes;
 - não copiar visualmente benchmarks.
 
@@ -1181,7 +1225,7 @@ NAVEGAÇÃO E GTM
 Preserve o contrato semântico de navegação vigente. O Header deve permanecer persistentemente disponível sem dominar a Hero e manter marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher do ecossistema, Login e Iniciar Jornada. Sobre deve permanecer facilmente encontrável; Organizações e Coletivos deve possuir porta clara; compartilhar deve permanecer utilitário; idioma/região deve permanecer disponível de forma compacta e sem poluir o Header; Login deve permanecer disponível sem disputar a narrativa. Iniciar Jornada é o CTA de maior hierarquia no Header e a porta própria da Journey. Journey não integra o launcher. O launcher deve conter Travel, Ads, Media, Business, Intelligence e Mall de forma compacta, acessível e sem dominar a primeira percepção. O rodapé deve preservar Mapa do Ecossistema somente como link, sem antecipar a página de destino; sua composição adicional permanece deliberadamente aberta nesta frente. Desktop e mobile devem preservar a mesma hierarquia semântica e os mesmos caminhos essenciais. Arquitetura conceitual/wireframe não depende de todos os destinos estarem lançados; a versão publicada, porém, nunca pode apresentar destino, CTA ou estado como operacional quando não estiver legitimamente disponível.
 
 UX
-Permita exploração sem cadastro. Use progressive disclosure. Preserve liberdade de avançar, voltar ou sair. Garanta compreensão sem vídeo, sem animação e em baixa conectividade.
+Permita exploração sem cadastro. Use progressive disclosure para organizar profundidade, nunca para esconder a tese essencial. Conteúdo essencial deve permanecer compreensível sem hover, clique, swipe ou gesto opcional; interação não pode compensar falta de clareza. Preserve liberdade de avançar, voltar ou sair. Garanta compreensão sem vídeo, sem animação e em baixa conectividade.
 
 ACESSIBILIDADE
 Planeje teclado, foco, leitores de tela, contraste, legendas, transcrição, redução de movimento, fallback de mídia, responsividade e internacionalização desde o wireframe.
@@ -1211,7 +1255,8 @@ ENTREGUE
 16. decisões abertas;
 17. estados honestos para destinos ainda não ativados;
 18. tabela de rastreabilidade contra os requisitos;
-19. proposta de navegação rastreável ao contrato vigente, cobrindo Header, launcher, Journey, rodapé e equivalência desktop/mobile.
+19. proposta de navegação rastreável ao contrato vigente, cobrindo Header, launcher, Journey, rodapé e equivalência desktop/mobile;
+20. justificativa de qualquer uso dos Domínios de Evolução, demonstrando que não foram convertidos automaticamente em taxonomia/diagnóstico da Home.
 
 CRITÉRIO FINAL
 A solução deve fazer alguém pensar primeiro “existe mais mundo possível aqui”, depois “isso acontece de verdade”, depois “entendo por que a Guivos conecta isso”, depois “continuo livre para escolher”, e somente então “quero descobrir o que existe aqui”.
@@ -1230,9 +1275,11 @@ Mostre Possibilidade antes de produto, prova antes de autodeclaração e mundo r
 
 No Movimento 08, preserve Journey como experiência/continuidade, Mall/Travel/Business/Media/Ads com responsabilidades próprias e Intelligence como Produto Especializado transversal / Intelligence Layer. Todos os sete são Produtos Especializados. Organização não é Business. Intelligence amplia compreensão e não decide pelo participante.
 
+Os nove Domínios de Evolução da Journey são vocabulário opcional de amplitude/cobertura na Home, quando necessário; não os transforme automaticamente em nove cards/categorias, menu, diagnóstico, score ou “roda da vida”. “Ainda estou descobrindo” é estado transversal, não décimo domínio.
+
 Preserve também o contrato de navegação: Header persistentemente disponível com marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher, Login e Iniciar Jornada; Journey fora do launcher e Iniciar Jornada como sua porta própria e CTA de maior hierarquia no Header; launcher compacto com Travel, Ads, Media, Business, Intelligence e Mall; rodapé com Mapa do Ecossistema somente como link; equivalência semântica entre desktop e mobile. Destino conceitual governado não significa disponibilidade operacional.
 
-A sensação deve combinar futuro, possibilidade, pertencimento, humanidade, confiança, simplicidade e escala global. A motivação inicial é descobrir. Não criar marketplace, portal de benefícios, coaching, site de IA, feed infinito ou catálogo de cards. Não prometer transformação nem simular personalização ou disponibilidade operacional. A Guivos amplia o horizonte; o caminho continua sendo do participante.
+Use progressive disclosure sem esconder a tese essencial. Conteúdo essencial deve permanecer compreensível sem hover, clique, swipe ou gesto opcional; interação não pode compensar falta de clareza. A sensação deve combinar futuro, possibilidade, pertencimento, humanidade, confiança, simplicidade e escala global. A motivação inicial é descobrir. Não criar marketplace, portal de benefícios, coaching, site de IA, feed infinito ou catálogo de cards. Não prometer transformação nem simular personalização ou disponibilidade operacional. A Guivos amplia o horizonte; o caminho continua sendo do participante.
 ```
 
 ---
@@ -1276,10 +1323,12 @@ Antes de autorizar materialização, confirmar:
 - Movimento 06 e distinção Possibilidade/Oportunidade estão corretos;
 - modelo editorial continua separado da cadeia específica do Movimento 06;
 - Movimento 08 e hierarquia dos Produtos estão reconciliados;
+- limites dos nove Domínios de Evolução estão preservados, sem taxonomia/diagnóstico automático da Home;
 - Business ≠ Organização;
 - Intelligence preserva `COMPREENDER ≠ DECIDIR`;
 - papel de Guivos Media está delimitado;
 - não houve mudança de contrato funcional da Home;
+- conteúdo essencial permanece compreensível sem hover, clique ou gesto opcional;
 - não existe nova personalização pública autorizada por inferência;
 - disponibilidade real de provas, histórias e métricas está identificada;
 - produtos e nomenclaturas vigentes estão reconciliados;
@@ -1308,14 +1357,16 @@ Se este documento tivesse de ser condensado em regras de controle — sem substi
 8. **Use Da Possibilidade à Experiência sem prometer resultado.**
 9. **Separe o modelo editorial geral da cadeia específica do Movimento 06.**
 10. **Preserve a hierarquia dos Produtos e o papel distinto de Journey.**
-11. **Não confunda Organização com Business.**
-12. **Faça Intelligence compreender, não decidir.**
-13. **Construa autoridade por prova, transparência, consequência e continuidade.**
-14. **Mantenha autonomia e descoberta acima de pressão comercial.**
-15. **Entregue qualidade global sem copiar a identidade de nenhuma referência.**
-16. **Não trate disponibilidade de lançamento como gate da arquitetura conceitual.**
-17. **Nunca publique disponibilidade que não exista.**
-18. **Não use este handoff como autorização automática de materialização.**
+11. **Não transforme os nove Domínios de Evolução em taxonomia ou diagnóstico da Home por convenção.**
+12. **Não confunda Organização com Business.**
+13. **Faça Intelligence compreender, não decidir.**
+14. **Construa autoridade por prova, transparência, consequência e continuidade.**
+15. **Mantenha autonomia e descoberta acima de pressão comercial.**
+16. **Não use interação para compensar falta de clareza nem esconda conteúdo essencial atrás de gesto opcional.**
+17. **Entregue qualidade global sem copiar a identidade de nenhuma referência.**
+18. **Não trate disponibilidade de lançamento como gate da arquitetura conceitual.**
+19. **Nunca publique disponibilidade que não exista.**
+20. **Não use este handoff como autorização automática de materialização.**
 
 ---
 
