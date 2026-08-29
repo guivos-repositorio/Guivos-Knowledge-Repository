@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.1.0** |
+| GKR-STATE-001 | **3.2.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -18,14 +18,15 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
 | Auditoria integral do corpus | **IN_PROGRESS** |
+| Próximo lote da auditoria | **E — HOME ORGANIZAÇÕES E COLETIVOS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
-| Home principal/Pessoa | **REBUILD_REQUIRED** |
+| Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **REBUILD_REQUIRED** |
 | Demais Homes | **AUDIT_PENDING** |
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.1.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
+O [Roadmap 13.2.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
 
 ## Regra de leitura
 
@@ -282,7 +283,7 @@ A auditoria substitui a antiga leitura agregada das oito Homes por avaliação i
 
 | Home | Estado |
 |---|---|
-| Principal / Pessoa | `REBUILD_REQUIRED` |
+| Principal / Pessoa | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 | Organizações e Coletivos | `REBUILD_REQUIRED` |
 | Mall | `AUDIT_PENDING` |
 | Travel | `AUDIT_PENDING` |
@@ -312,8 +313,8 @@ Não estão comprovados ou autorizados apenas pela documentação:
 
 ## Navegação principal durante a auditoria
 
-- [Estado Atual 3.1.0](docs/project/current-state-register.md)
-- [Roadmap 13.1.0](docs/roadmap.md)
+- [Estado Atual 3.2.0](docs/project/current-state-register.md)
+- [Roadmap 13.2.0](docs/roadmap.md)
 - [Auditoria Integral do GKR](docs/project/gkr-full-corpus-audit.md)
 - [Guia Oficial / Public Canon](docs/public/guia-oficial-da-guivos.md)
 - [Fundação](docs/geb/part-01-foundation/index.md)

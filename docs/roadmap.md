@@ -1,10 +1,10 @@
 ---
-id: ROADMAP-13.1.0
+id: ROADMAP-13.2.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.1.0
+version: 13.2.0
 owner: Guivos
-last_updated: 2026-08-27
+last_updated: 2026-08-29
 normative: true
 related:
   - GKR-STATE-001
@@ -29,7 +29,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.1.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.2.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -45,7 +45,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A, B e C estão reconciliados nesta baseline proposta. O próximo lote governado é **D — Home principal / Pessoa**.
+Os Lotes A, B, C e D estão reconciliados no estado vigente. O próximo lote governado é **E — Home Organizações e Coletivos**.
 
 Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Design ou implementação deve ser promovida como consequência automática de trabalho anterior.
 
@@ -54,7 +54,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.1.0** |
+| Estado global | **GKR-STATE-001 v3.2.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -67,8 +67,8 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | RP-002 conceptual readiness | **PASS** |
 | RP-002 methodological readiness | **PASS** |
 | RP-002 operational readiness | **HOLD** |
-| Home principal/Pessoa | **REBUILD_REQUIRED / NEXT LOT** |
-| Home Organizações e Coletivos | **REBUILD_REQUIRED** |
+| Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
+| Home Organizações e Coletivos | **REBUILD_REQUIRED / NEXT LOT** |
 | Demais Homes | **AUDIT_PENDING** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED / ACTIVE** |
@@ -121,9 +121,9 @@ B. ESTADO ATUAL E ROADMAP               [CONCLUÍDO]
 ↓
 C. FUNDAÇÃO / MARCA / PUBLIC CANON      [CONCLUÍDO]
 ↓
-D. HOME PRINCIPAL / PESSOA              [PRÓXIMO]
+D. HOME PRINCIPAL / PESSOA              [CONCLUÍDO]
 ↓
-E. HOME ORGANIZAÇÕES E COLETIVOS
+E. HOME ORGANIZAÇÕES E COLETIVOS          [PRÓXIMO]
 ↓
 F. HOMES DOS PRODUTOS
 ↓
@@ -212,7 +212,7 @@ Objetivos executados:
 - reconciliar PP-11/PP-12 para distinguir verdade vigente de visão/target;
 - preservar `GKR-BRAND-SIGNATURE-001`, `GKR-BRAND-PUBLIC-AUTHORITY-001` e `GKR-CHRISTIAN-FOUNDATION-001` porque permaneceram consistentes;
 - atualizar `GOG-001` para v5.3.0;
-- não remover ainda a propagação de autoridade pública, pois ela continua necessária até a reconstrução da Home Pessoa.
+- manter a propagação de autoridade pública apenas como registro transitório dos resíduos especializados ainda sujeitos a F-010; as correções relacionadas à Home Pessoa já foram absorvidas no Lote D, e eventual remoção exige absorção completa sem perda de conhecimento vigente.
 
 Hierarquia reconciliada:
 
@@ -261,17 +261,23 @@ Filing permanece fora da auditoria documental enquanto não houver autorização
 Estado:
 
 ```text
-REBUILD_REQUIRED
-NEXT_LOT
+COMPLETED
+DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 ```
 
-Motivos já comprovados:
+O Lote D foi fechado documentalmente pela sequência canônica de PRs #342–#349, preservando e reconciliando a narrativa pública da Home principal/Pessoa contra Fundação, Marca, Public Canon, Journey, Research, Domínios de Evolução e Experience Architecture.
 
-- assinatura pessoal do fundador ainda aparece como assinatura complementar institucional no master antigo;
-- rótulo antigo do Movimento 06 permanece no master;
-- o master antecede a Fundação reconciliada do Lote C;
-- a Home precisa refletir a distinção atual entre Possibilidade, Mecanismo e Oportunidade;
-- a Home deve ser confrontada com todas as autoridades posteriores de Fundação, Marca, Journey, Domínios de Evolução, Research, Public Canon e Experience Architecture.
+Conflitos originalmente comprovados e absorvidos:
+
+- `Do possível ao vivido.` deixou de operar como assinatura institucional e permanece no âmbito pessoal/autoral do fundador;
+- Movimento 06 = `Da Possibilidade à Experiência`;
+- `Possibilidade ≠ Oportunidade`, com Mecanismo explicitado quando necessário;
+- nove Domínios de Evolução preservados como vocabulário de amplitude, sem materialização visual automática;
+- participante ≠ produto e Organização ≠ Business;
+- Intelligence preservada como Produto Especializado transversal / Intelligence Layer;
+- fronteira pública × Journey, Header, launcher e hierarquia de CTAs reconciliados;
+- prova, histórias reais, patrocínio identificável, autonomia e acessibilidade protegidos;
+- briefing/handoff subordinado ao Master e às autoridades especializadas.
 
 Movimento 06 vigente:
 
@@ -279,27 +285,20 @@ Movimento 06 vigente:
 DA POSSIBILIDADE À EXPERIÊNCIA
 ```
 
-Função preservada:
+O fechamento de D é exclusivamente documental. Não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, disponibilidade operacional, PMF ou primeira tela autenticada da Pessoa.
+
+Gate preservado:
 
 ```text
-POSSIBILIDADE
-→ ESCOLHA
-→ EXPERIÊNCIA
-→ NOVO CONTEXTO
+HOME PRINCIPAL / PESSOA
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+
+MATERIALIZAÇÃO VISUAL
+→ NOT AUTHORIZED
+
+PRIMEIRA TELA AUTENTICADA DA PESSOA
+→ BLOCKED UNTIL FULL AUDIT CLOSES
 ```
-
-A reconstrução deve preservar toda essência, narrativa, movimentos, exemplos e detalhes ainda válidos da Home; não começa de uma folha em branco.
-
-Gate:
-
-- master atualizado contém toda a narrativa ainda válida;
-- Fundação 0.4/0.3 reconciliada é refletida corretamente;
-- claims públicas sustentadas pelo GOG 5.3.0;
-- assinatura institucional correta;
-- nenhuma frase pessoal do fundador usada como autoridade institucional;
-- relação com a primeira experiência autenticada explicitada sem desenhar a tela ainda;
-- sem dependência de documento de propagação para saber a versão vigente;
-- todo conteúdo único da propagação necessária à Home absorvido antes de eventual remoção futura.
 
 ## 9. Lote E — Home Organizações e Coletivos
 
@@ -307,6 +306,7 @@ Estado:
 
 ```text
 REBUILD_REQUIRED
+NEXT_LOT
 ```
 
 A reconstrução deve incorporar:
@@ -818,9 +818,9 @@ CONSOLIDAÇÃO ≠ REDUÇÃO DE CONHECIMENTO
 
 ## 26. Regra do próximo movimento
 
-Após a integração do Lote C, o próximo movimento é **Lote D — Home principal / Pessoa**.
+Com os Lotes A, B, C e D concluídos no estado vigente, o próximo movimento é **Lote E — Home Organizações e Coletivos**.
 
-Até o fechamento da auditoria:
+Até o fechamento integral da auditoria:
 
 ```text
 NÃO HÁ UXA-102 AUTOMÁTICA
@@ -832,4 +832,4 @@ NÃO HÁ FILING AUTOMÁTICO
 NÃO HÁ PMF AUTOMÁTICO
 ```
 
-A Home Pessoa será reconstruída primeiro; a primeira tela autenticada somente será definida após os gates restantes da auditoria.
+A Home principal/Pessoa permanece `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`. O Lote E reconstrói documentalmente a Home Organizações e Coletivos; a primeira tela autenticada somente será definida após os gates restantes e o fechamento integral da auditoria.
