@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.1.0
+version: 3.2.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-27
+last_updated: 2026-08-29
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.1.0
+→ 3.2.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -169,15 +169,16 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.1.0** |
+| Registro do Estado Atual | **3.2.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
 | Auditoria integral | **IN_PROGRESS** |
+| Próximo lote da auditoria | **E — HOME ORGANIZAÇÕES E COLETIVOS** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
 | Maturidade visual agregada | **não inferir durante recomputação** |
-| Home principal/Pessoa | **REBUILD_REQUIRED** |
+| Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **REBUILD_REQUIRED** |
 
 A auditoria integral pode consolidar ou remover do corpus atual documentos desta família quando o conhecimento vigente tiver sido absorvido e as referências forem reconciliadas. Isso não muda, por si só, os estados funcionais que continuarem sustentados por autoridade vigente.
