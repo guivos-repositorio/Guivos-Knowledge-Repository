@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.2.0
+version: 3.3.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-29
 normative: true
@@ -19,6 +19,10 @@ related:
   - RP-002-PMF-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-HOME-OC-MASTER-001
+  - GKR-UX-HOME-OC-NARR-001
+  - GKR-UX-HOME-OC-NAV-001
+  - GKR-UX-HOME-OC-SYS-001
   - GTM-009
   - GTM-010
   - GTM-011
@@ -58,7 +62,7 @@ ESTADO GLOBAL DO GKR
 → AUDITORIA INTEGRAL EM CURSO
 
 PRÓXIMO LOTE DA AUDITORIA
-→ E — HOME ORGANIZAÇÕES E COLETIVOS
+→ F — HOMES DOS PRODUTOS ESPECIALIZADOS
 
 MARCO FUNCIONAL
 → M7.88
@@ -80,6 +84,9 @@ BASELINE FINAL PÓS-AUDITORIA
 
 PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
 → BLOCKED UNTIL AUDIT CLOSES
+
+MATERIALIZAÇÃO VISUAL DAS HOMES
+→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
 ```
 
 A auditoria integral foi aberta porque o crescimento do corpus produziu três riscos materiais:
@@ -458,7 +465,7 @@ A auditoria passa a classificar cada master pelo conteúdo atual.
 | Home | Estado atual da auditoria |
 |---|---|
 | Principal / Pessoa | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Organizações e Coletivos | `REBUILD_REQUIRED` |
+| Organizações e Coletivos | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 | Mall | `AUDIT_PENDING` |
 | Travel | `AUDIT_PENDING` |
 | Media | `AUDIT_PENDING` |
@@ -500,15 +507,61 @@ O fechamento de D não promove disponibilidade operacional, PMF, lançamento ou 
 
 ### 10.2 Home de Organizações e Coletivos
 
-Rebuild necessário porque o master antecede:
+O Lote E foi concluído documentalmente pela reconstrução do Master e pela reconciliação dos contratos especializados de narrativa, navegação e prova/conteúdo.
 
-- RP-002;
-- aprofundamento de supply/relevância;
-- estado reconciliado O/C;
-- atores, autoridades e jobs;
-- Arquitetura da Informação autenticada;
-- atualizações posteriores de marca e autoridade pública;
-- consolidação dos nove Domínios de Evolução.
+Autoridades atuais:
+
+```text
+GKR-UX-HOME-OC-MASTER-001 v1.0.0
+→ autoridade de consumo vigente
+
+GKR-UX-HOME-OC-NARR-001 v0.2.0
+→ progressão e macroexperiências reconciliadas
+
+GKR-UX-HOME-OC-NAV-001 v0.2.0
+→ Header, Hero, CTAs e fronteiras de navegação reconciliados
+
+GKR-UX-HOME-OC-SYS-001 v0.2.0
+→ conteúdo, prova, evidência e verdade editorial reconciliados
+```
+
+O fechamento absorveu e protegeu, entre outros pontos:
+
+- mesma Guivos, outra perspectiva pública;
+- pergunta-mãe `O que podemos tornar possível juntos?`;
+- Pessoa, Organização e Coletivo como participantes estruturais;
+- `participante ≠ produto`;
+- `Organização ≠ Business`;
+- Journey como **Experience Layer**;
+- Travel, Mall, Media, Business, Ads e Intelligence como **Produtos Especializados**;
+- Intelligence também como **Intelligence Layer / Produto Especializado transversal**;
+- nove Domínios de Evolução como vocabulário canônico, sem autorização de taxonomia visual automática;
+- `Possibilidade ≠ Oportunidade`;
+- `Ainda estou descobrindo ≠ décimo domínio`;
+- confiança pública por autoridade, evidência, transparência, proteção e autonomia;
+- separação entre Home pública e experiência autenticada;
+- M11 como `Como podemos continuar daqui?`;
+- caminhos finais O/C como continuidades conceituais, não destinos operacionais presumidos.
+
+Os documentos P1–P5 específicos da Home permanecem como **proveniência histórica** e não como sequência operacional vigente.
+
+O Source Lock de Design da primeira exploração permanece **evidência de checkpoint não autorizadora**.
+
+Estado:
+
+```text
+HOME O/C
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+
+LOTE E
+→ COMPLETED
+
+WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
+→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
+
+EXPERIÊNCIA AUTENTICADA O/C
+→ NÃO MATERIALIZADA POR ESTE LOTE
+```
 
 ### 10.3 Demais Homes
 
@@ -1076,6 +1129,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 - evidência de atividade efetiva para AIaaS se incluído;
 - implantação real do perfil pessoal do fundador;
 - publicação real de conteúdo do fundador;
+- reativação futura do Design das Homes somente após os gates da auditoria e novo ato governado;
 - UXA-102/V5;
 - Product Engineering.
 
@@ -1099,10 +1153,10 @@ D — HOME PRINCIPAL / PESSOA
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
 E — HOME ORGANIZAÇÕES E COLETIVOS
-→ REBUILD_REQUIRED / NEXT
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION / COMPLETED
 
 F — HOMES DE PRODUTOS
-→ AUDIT_PENDING
+→ AUDIT_PENDING / NEXT
 
 G — JORNADA DA PESSOA
 → PENDING
@@ -1178,23 +1232,26 @@ HOME DOCUMENTADA ≠ HOME ATUALMENTE CONSISTENTE
 ARTEFATO FÍSICO ≠ AUTORIDADE VIGENTE
 AUDITORIA DOCUMENTAL ≠ EVIDÊNCIA OPERACIONAL
 CONSOLIDAÇÃO ≠ REDUÇÃO DE CONHECIMENTO
+HISTÓRICO P1–P5 ≠ SEQUÊNCIA OPERACIONAL ATUAL
+DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 ```
 
 ## 29. Próximo ato governado
 
-O próximo lote da auditoria é **E — Home Organizações e Coletivos**, reconstruindo a autoridade pública O/C contra as autoridades posteriores aplicáveis sem antecipar a experiência autenticada.
+O próximo lote da auditoria é **F — Homes dos Produtos Especializados**.
 
-O fechamento documental da Home principal/Pessoa não autoriza materialização visual nem a primeira tela autenticada pós-Home.
+O fechamento documental das Homes Principal/Pessoa e Organizações/Coletivos não autoriza materialização visual nem a primeira tela autenticada pós-Home.
 
 ```text
 PRÓXIMO LOTE
-→ E — HOME ORGANIZAÇÕES E COLETIVOS
-→ REBUILD_REQUIRED
+→ F — HOMES DOS PRODUTOS ESPECIALIZADOS
+→ AUDIT_PENDING
 
 AINDA BLOQUEADOS
 → UXA-102
 → PRIMEIRA TELA PÓS-HOME DA PESSOA
 → WIREFRAME / FIGMA / UI / PROTÓTIPO
+→ NOVOS SOURCE LOCKS OPERACIONAIS DE DESIGN
 → DESIGN AUTOMÁTICO
 → PRODUCT ENGINEERING
 → PMF
