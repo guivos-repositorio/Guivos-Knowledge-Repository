@@ -1,5 +1,78 @@
 ---
 id: GKR-UX-HOME-OC-GENINPUT-001
+title: Source Lock de Checkpoint — Home Pública — Organizações e Coletivos — Primeira Exploração de Design
+status: active
+version: 1.1.0
+owner: Experience Architecture
+last_updated: 2026-08-29
+parent: GKR-UX-HOMES-GENINPUT-001
+depends_on:
+  - GKR-UX-HOMES-DESIGN-HANDOFF-001
+  - GKR-UX-HOMES-GENINPUT-001
+  - GKR-UX-HOME-OC-MASTER-001
+  - GKR-UX-HOME-OC-MEDIA-SUPPLY-001
+normative: false
+maturity: checkpoint_evidence_non_authorizing
+---
+
+# Source Lock de Checkpoint — Home Pública — Organizações e Coletivos
+
+## 1. Finalidade atual e estado de autoridade
+
+Este documento preserva como **evidência de checkpoint e rastreabilidade** o Source Lock utilizado na primeira exploração de Design da Home Pública — Organizações e Coletivos no checkpoint de 13/08/2026.
+
+Depois da auditoria integral e da reconstrução de `GKR-UX-HOME-OC-MASTER-001 v1.0.0`, o arquivo deixou de possuir função operacional vigente. A autoridade atual é:
+
+```text
+GKR-UX-HOME-OC-MASTER-001 v1.0.0
+→ autoridade de consumo vigente da Home pública O/C
+
+SOURCE LOCK DE 13/08/2026
+→ evidência do pacote de entrada daquela rodada
+→ preserva exatamente o que foi congelado e instruído
+→ permite auditar o que a ferramenta poderia receber naquele checkpoint
+
+SOURCE LOCK DE 13/08/2026
+≠ autorização atual de Design
+≠ autoridade superior ao Master reconciliado
+≠ autorização para novo wireframe
+≠ autorização para Figma
+≠ autorização para UI ou protótipo
+≠ UXA-102 / V5
+≠ retomada de Product Engineering
+```
+
+| Dimensão | Estado atual |
+|---|---|
+| checkpoint original | `main @ 6a4e2b2ea73c90726c3292867fdb71a91e0689db` |
+| função original | Source Lock operacional da primeira exploração |
+| função atual | evidência de checkpoint / rastreabilidade |
+| autoridade normativa atual | **não** |
+| reutilização automática do prompt | **não autorizada** |
+| Master atual da Home | `GKR-UX-HOME-OC-MASTER-001 v1.0.0` |
+| materialização visual nova | **não autorizada durante a auditoria integral** |
+| futura retomada de Design | exige novo ato governado e novo/reconciliado Source Lock após os gates aplicáveis |
+
+Os snapshots externos históricos que incluíram este Source Lock preservam os respectivos checkpoints e não constituem autoridade paralela à `main`.
+
+```text
+RECLASSIFICAR AUTORIDADE
+≠ APAGAR EVIDÊNCIA
+≠ REESCREVER O PACOTE HISTÓRICO
+
+CHECKPOINT SUPERADO
+≠ CONTEÚDO HISTÓRICO SEM VALOR
+```
+
+Para garantir auditabilidade, o registro abaixo reproduz **verbatim** o arquivo que existia antes desta reclassificação. A presença de `normative: true`, instruções de execução, liberdades de Design e próximos passos dentro desse registro descreve exclusivamente o estado daquele checkpoint e **não** recupera autoridade operacional no estado atual.
+
+---
+
+## 2. Arquivo original de 13/08/2026 — preservado verbatim
+
+~~~~markdown
+---
+id: GKR-UX-HOME-OC-GENINPUT-001
 title: Source Lock Operacional — Home Pública — Organizações e Coletivos — Primeira Exploração de Design
 status: active
 version: 1.0.0
@@ -173,3 +246,16 @@ Após seleção humana de um candidato, registrar decisões aceitas, rejeitadas 
 ## 12. Síntese
 
 > **A ferramenta pode explorar como capacidades e participantes se tornam compreensíveis juntos; não pode fabricar prova, parceria, impacto ou transformar esta perspectiva pública em uma landing page B2B.**
+~~~~
+
+---
+
+## 3. Regra de consumo atual
+
+O bloco preservado acima é histórico reproduzido sem alteração. Para o estado atual, prevalecem:
+
+1. `GKR-STATE-001` e `GKR-FULL-CORPUS-AUDIT-001` para o estado global da auditoria;
+2. `GKR-UX-HOME-OC-MASTER-001 v1.0.0` para a verdade narrativa, semântica e funcional atual da Home O/C;
+3. autoridades especializadas vigentes quando o Master as referencia para aprofundamento.
+
+Uma futura retomada de Design deve produzir um **novo ou explicitamente reconciliado Source Lock** a partir do estado pós-auditoria. O pacote histórico acima não deve ser executado automaticamente.
