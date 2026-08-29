@@ -27,6 +27,7 @@ jobs:
           git add -A
           printf '%s\n' '--- staged paths ---'
           git diff --cached --name-only | sort
-          test "$(git diff --cached --name-only | sort)" = $'docs/project/current-state-register.md\ndocs/project/gkr-full-corpus-audit.md'
+          expected=$'.github/scripts/temp_gkr_lot_d_close.py\n.github/workflows/temp-gkr-lot-d-close.yml\ndocs/project/.audit-lote-d-close-e-next-work.md\ndocs/project/current-state-register.md\ndocs/project/gkr-full-corpus-audit.md'
+          test "$(git diff --cached --name-only | sort)" = "$expected"
           git commit -m "docs: fechar Lote D e promover Lote E"
           git push origin HEAD:agent/gkr-global-audit-lote-d-close-e-next-v1
