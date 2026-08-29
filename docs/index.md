@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **3.2.0** |
+| Registro | `GKR-STATE-001` **3.3.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
@@ -53,7 +53,7 @@ O histórico permanece no Git.
 
 ### Estado e direção
 
-- [Registro do Estado Atual 3.2.0](project/current-state-register.md)
+- [Registro do Estado Atual 3.3.0](project/current-state-register.md)
 - [Roadmap 13.3.0](roadmap.md)
 - [Auditoria Integral do GKR](project/gkr-full-corpus-audit.md)
 - [Guia Oficial da Guivos / Public Canon](public/guia-oficial-da-guivos.md)
