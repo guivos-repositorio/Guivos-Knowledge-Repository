@@ -45,3 +45,5 @@ jobs:
           test "$(git diff --cached --name-only | sort)" = "$expected"
           git commit -m "GKR: reconciliar diretivas residuais do fechamento do Lote D"
           git push origin HEAD:agent/gkr-global-audit-lote-d-close-e-next-v1
+
+# trigger: final P1/P2 residue reconciliation
