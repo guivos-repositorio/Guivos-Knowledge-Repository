@@ -724,7 +724,7 @@ FALA PESSOAL
 ≠ POSICIONAMENTO INSTITUCIONAL
 ```
 
-`GKR-BRAND-PUBLIC-AUTHORITY-001` também permanece preservado. O registro de propagação derivado não é removido ainda porque continua necessário para a reconstrução da Home Pessoa; sua eventual remoção depende da absorção completa no master futuro.
+`GKR-BRAND-PUBLIC-AUTHORITY-001` também permanece preservado. O registro de propagação derivado continua transitório e não normativo; as correções relacionadas à Home Pessoa já foram absorvidas no Lote D, e sua permanência ou remoção passa a depender exclusivamente da avaliação dos resíduos especializados sob F-010, com remoção somente após absorção completa e sem perda de conhecimento vigente.
 
 ## 15. Proteção marcária
 

@@ -212,7 +212,7 @@ Objetivos executados:
 - reconciliar PP-11/PP-12 para distinguir verdade vigente de visão/target;
 - preservar `GKR-BRAND-SIGNATURE-001`, `GKR-BRAND-PUBLIC-AUTHORITY-001` e `GKR-CHRISTIAN-FOUNDATION-001` porque permaneceram consistentes;
 - atualizar `GOG-001` para v5.3.0;
-- não remover ainda a propagação de autoridade pública, pois ela continua necessária até a reconstrução da Home Pessoa.
+- manter a propagação de autoridade pública apenas como registro transitório dos resíduos especializados ainda sujeitos a F-010; as correções relacionadas à Home Pessoa já foram absorvidas no Lote D, e eventual remoção exige absorção completa sem perda de conhecimento vigente.
 
 Hierarquia reconciliada:
 
@@ -818,9 +818,9 @@ CONSOLIDAÇÃO ≠ REDUÇÃO DE CONHECIMENTO
 
 ## 26. Regra do próximo movimento
 
-Após a integração do Lote C, o próximo movimento é **Lote D — Home principal / Pessoa**.
+Com os Lotes A, B, C e D concluídos no estado vigente, o próximo movimento é **Lote E — Home Organizações e Coletivos**.
 
-Até o fechamento da auditoria:
+Até o fechamento integral da auditoria:
 
 ```text
 NÃO HÁ UXA-102 AUTOMÁTICA
@@ -832,4 +832,4 @@ NÃO HÁ FILING AUTOMÁTICO
 NÃO HÁ PMF AUTOMÁTICO
 ```
 
-A Home Pessoa será reconstruída primeiro; a primeira tela autenticada somente será definida após os gates restantes da auditoria.
+A Home principal/Pessoa permanece `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`. O Lote E reconstrói documentalmente a Home Organizações e Coletivos; a primeira tela autenticada somente será definida após os gates restantes e o fechamento integral da auditoria.
