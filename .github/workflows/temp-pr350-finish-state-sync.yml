@@ -16,207 +16,24 @@ jobs:
         with:
           ref: agent/gkr-global-audit-lote-d-close-e-next-v1
           fetch-depth: 1
-      - name: Reconcile Lot D closure across current-state surfaces
-        shell: bash
+      - name: Apply audited state synchronization
+        run: python .github/tmp/pr350_final_sync.py
+      - name: Validate repository
         run: |
-          set -euo pipefail
-          python - <<'PY'
-          from pathlib import Path
-
-          def replace_once(path, old, new):
-              p = Path(path)
-              s = p.read_text(encoding='utf-8')
-              n = s.count(old)
-              if n != 1:
-                  raise SystemExit(f'{path}: expected exactly 1 match, found {n}: {old[:100]!r}')
-              p.write_text(s.replace(old, new), encoding='utf-8')
-
-          # GKR-STATE-001 detailed audit state (§26)
-          replace_once(
-              'docs/project/current-state-register.md',
-              'D — HOME PRINCIPAL / PESSOA\n→ REBUILD_REQUIRED\n\nE — HOME ORGANIZAÇÕES E COLETIVOS\n→ REBUILD_REQUIRED',
-              'D — HOME PRINCIPAL / PESSOA\n→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION\n\nE — HOME ORGANIZAÇÕES E COLETIVOS\n→ REBUILD_REQUIRED / NEXT'
-          )
-
-          # GKR-STATE-001 next governed act (§29)
-          old_next = '''## 29. Próximo ato governado
-
-O próximo lote da auditoria é a **reconstrução da Home principal/Pessoa**, confrontando o master antigo com a Fundação reconciliada, Marca, Public Canon, Journey, Research, Domínios de Evolução e demais autoridades aplicáveis.
-
-Isso ainda não autoriza a primeira tela autenticada pós-Home.
-
-```text
-PRÓXIMO LOTE
-→ D — HOME PRINCIPAL / PESSOA
-
-AINDA BLOQUEADOS
-→ UXA-102
-→ PRIMEIRA TELA PÓS-HOME DA PESSOA
-→ DESIGN AUTOMÁTICO
-→ PRODUCT ENGINEERING
-→ PMF
-→ IMPLEMENTAÇÃO
-```
-'''
-          new_next = '''## 29. Próximo ato governado
-
-O próximo lote da auditoria é **E — Home Organizações e Coletivos**, reconstruindo a autoridade pública O/C contra as autoridades posteriores aplicáveis sem antecipar a experiência autenticada.
-
-O fechamento documental da Home principal/Pessoa não autoriza materialização visual nem a primeira tela autenticada pós-Home.
-
-```text
-PRÓXIMO LOTE
-→ E — HOME ORGANIZAÇÕES E COLETIVOS
-→ REBUILD_REQUIRED
-
-AINDA BLOQUEADOS
-→ UXA-102
-→ PRIMEIRA TELA PÓS-HOME DA PESSOA
-→ WIREFRAME / FIGMA / UI / PROTÓTIPO
-→ DESIGN AUTOMÁTICO
-→ PRODUCT ENGINEERING
-→ PMF
-→ IMPLEMENTAÇÃO
-```
-'''
-          replace_once('docs/project/current-state-register.md', old_next, new_next)
-
-          # Landing pages: lower Homes tables
-          for path in ['README.md', 'docs/index.md']:
-              replace_once(
-                  path,
-                  '| Principal / Pessoa | `REBUILD_REQUIRED` |',
-                  '| Principal / Pessoa | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |'
-              )
-
-          # Roadmap: substantive normative transition to 13.2.0 / GKR-STATE 3.2.0
-          replace_once('docs/roadmap.md', 'id: ROADMAP-13.1.0', 'id: ROADMAP-13.2.0')
-          replace_once('docs/roadmap.md', 'version: 13.1.0', 'version: 13.2.0')
-          replace_once('docs/roadmap.md', 'last_updated: 2026-08-27', 'last_updated: 2026-08-29')
-          replace_once('docs/roadmap.md', 'Este roadmap traduz `GKR-STATE-001 v3.1.0` em **frentes governadas de avanço**.', 'Este roadmap traduz `GKR-STATE-001 v3.2.0` em **frentes governadas de avanço**.')
-          replace_once(
-              'docs/roadmap.md',
-              'Os Lotes A, B e C estão reconciliados nesta baseline proposta. O próximo lote governado é **D — Home principal / Pessoa**.',
-              'Os Lotes A, B, C e D estão reconciliados no estado vigente. O próximo lote governado é **E — Home Organizações e Coletivos**.'
-          )
-          replace_once('docs/roadmap.md', '| Estado global | **GKR-STATE-001 v3.1.0** |', '| Estado global | **GKR-STATE-001 v3.2.0** |')
-          replace_once('docs/roadmap.md', '| Home principal/Pessoa | **REBUILD_REQUIRED / NEXT LOT** |', '| Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |')
-          replace_once('docs/roadmap.md', '| Home Organizações e Coletivos | **REBUILD_REQUIRED** |', '| Home Organizações e Coletivos | **REBUILD_REQUIRED / NEXT LOT** |')
-          replace_once(
-              'docs/roadmap.md',
-              'D. HOME PRINCIPAL / PESSOA              [PRÓXIMO]\n↓\nE. HOME ORGANIZAÇÕES E COLETIVOS',
-              'D. HOME PRINCIPAL / PESSOA              [CONCLUÍDO]\n↓\nE. HOME ORGANIZAÇÕES E COLETIVOS          [PRÓXIMO]'
-          )
-
-          p = Path('docs/roadmap.md')
-          s = p.read_text(encoding='utf-8')
-          start = s.index('## 8. Lote D — Home principal / Pessoa')
-          end = s.index('## 9. Lote E — Home Organizações e Coletivos')
-          old_section = s[start:end]
-          new_section = '''## 8. Lote D — Home principal / Pessoa
-
-Estado:
-
-```text
-COMPLETED
-DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
-```
-
-O Lote D foi fechado documentalmente pela sequência canônica de PRs #342–#349, preservando e reconciliando a narrativa pública da Home principal/Pessoa contra Fundação, Marca, Public Canon, Journey, Research, Domínios de Evolução e Experience Architecture.
-
-Conflitos originalmente comprovados e absorvidos:
-
-- `Do possível ao vivido.` deixou de operar como assinatura institucional e permanece no âmbito pessoal/autoral do fundador;
-- Movimento 06 = `Da Possibilidade à Experiência`;
-- `Possibilidade ≠ Oportunidade`, com Mecanismo explicitado quando necessário;
-- nove Domínios de Evolução preservados como vocabulário de amplitude, sem materialização visual automática;
-- participante ≠ produto e Organização ≠ Business;
-- Intelligence preservada como Produto Especializado transversal / Intelligence Layer;
-- fronteira pública × Journey, Header, launcher e hierarquia de CTAs reconciliados;
-- prova, histórias reais, patrocínio identificável, autonomia e acessibilidade protegidos;
-- briefing/handoff subordinado ao Master e às autoridades especializadas.
-
-Movimento 06 vigente:
-
-```text
-DA POSSIBILIDADE À EXPERIÊNCIA
-```
-
-O fechamento de D é exclusivamente documental. Não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, disponibilidade operacional, PMF ou primeira tela autenticada da Pessoa.
-
-Gate preservado:
-
-```text
-HOME PRINCIPAL / PESSOA
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
-
-MATERIALIZAÇÃO VISUAL
-→ NOT AUTHORIZED
-
-PRIMEIRA TELA AUTENTICADA DA PESSOA
-→ BLOCKED UNTIL FULL AUDIT CLOSES
-```
-
-'''
-          p.write_text(s[:start] + new_section + s[end:], encoding='utf-8')
-
-          # Lote E is explicitly next, while remaining rebuild-required.
-          replace_once(
-              'docs/roadmap.md',
-              '## 9. Lote E — Home Organizações e Coletivos\n\nEstado:\n\n```text\nREBUILD_REQUIRED\n```',
-              '## 9. Lote E — Home Organizações e Coletivos\n\nEstado:\n\n```text\nREBUILD_REQUIRED\nNEXT_LOT\n```'
-          )
-
-          # Synchronize current landing-page Roadmap references.
-          for path in ['README.md', 'docs/index.md']:
-              p = Path(path)
-              s = p.read_text(encoding='utf-8')
-              n = s.count('Roadmap 13.1.0')
-              if n != 2:
-                  raise SystemExit(f'{path}: expected exactly 2 Roadmap 13.1.0 refs, found {n}')
-              p.write_text(s.replace('Roadmap 13.1.0', 'Roadmap 13.2.0'), encoding='utf-8')
-
-          # Final stale-state assertions on current surfaces.
-          checks = {
-              'docs/project/current-state-register.md': [
-                  'D — HOME PRINCIPAL / PESSOA\n→ REBUILD_REQUIRED',
-                  '→ D — HOME PRINCIPAL / PESSOA\n\nAINDA BLOQUEADOS',
-                  'O próximo lote da auditoria é a **reconstrução da Home principal/Pessoa**',
-              ],
-              'README.md': ['| Principal / Pessoa | `REBUILD_REQUIRED` |', 'Roadmap 13.1.0'],
-              'docs/index.md': ['| Principal / Pessoa | `REBUILD_REQUIRED` |', 'Roadmap 13.1.0'],
-              'docs/roadmap.md': [
-                  'ROADMAP-13.1.0',
-                  'version: 13.1.0',
-                  'GKR-STATE-001 v3.1.0',
-                  'D. HOME PRINCIPAL / PESSOA              [PRÓXIMO]',
-                  'REBUILD_REQUIRED\nNEXT_LOT\n```\n\nMotivos já comprovados',
-              ],
-          }
-          for path, stale in checks.items():
-              s = Path(path).read_text(encoding='utf-8')
-              for needle in stale:
-                  if needle in s:
-                      raise SystemExit(f'{path}: stale state survived: {needle!r}')
-
-          # Current roadmap version must be referenced by both landing pages.
-          for path in ['README.md', 'docs/index.md']:
-              s = Path(path).read_text(encoding='utf-8')
-              if s.count('Roadmap 13.2.0') != 2:
-                  raise SystemExit(f'{path}: Roadmap 13.2.0 references not synchronized')
-          PY
-
-          rm -f .github/workflows/temp-pr350-finish-state-sync.yml
-          git diff --check
           python scripts/validate_semantic_state.py
           python scripts/validate_gkr.py
           python scripts/validate_legacy_nomenclature.py
+          git diff --check
           mkdocs build --strict --site-dir /tmp/gkr-site
-
+      - name: Commit governed result and remove temporary tooling
+        run: |
+          rm -f .github/tmp/pr350_final_sync.py
+          rm -f .github/workflows/temp-pr350-finish-state-sync.yml
+          git diff --check
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          expected=$'.github/workflows/temp-pr350-finish-state-sync.yml\nREADME.md\ndocs/index.md\ndocs/project/current-state-register.md\ndocs/roadmap.md'
+          expected=$'.github/tmp/pr350_final_sync.py\n.github/workflows/temp-pr350-finish-state-sync.yml\nREADME.md\ndocs/index.md\ndocs/project/current-state-register.md\ndocs/roadmap.md'
           test "$(git diff --cached --name-only | sort)" = "$expected"
           git commit -m "GKR: concluir sincronização do fechamento do Lote D"
           git push origin HEAD:agent/gkr-global-audit-lote-d-close-e-next-v1
