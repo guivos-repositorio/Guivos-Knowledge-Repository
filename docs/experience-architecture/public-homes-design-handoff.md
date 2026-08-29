@@ -2,11 +2,14 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Experience Architecture
-last_updated: 2026-08-20
+last_updated: 2026-08-29
 normative: true
+maturity: design_handoff_method_preserved_operational_authorization_suspended_during_full_corpus_audit
 depends_on:
+  - GKR-STATE-001
+  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
   - GKR-UX-HOME-OC-MASTER-001
@@ -35,6 +38,49 @@ depends_on:
 ---
 
 # Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
+
+## 0. Gate vigente durante a Auditoria Integral do GKR
+
+Este documento preserva o **método canônico de handoff para Design** e a decisão procedimental que, em checkpoints anteriores, autorizou exploração visual externa das Homes.
+
+Durante a **Auditoria Integral do GKR**, sua autorização operacional está suspensa.
+
+```text
+MÉTODO DE HANDOFF
+→ PRESERVADO
+
+AUTORIZAÇÃO OPERACIONAL DE DESIGN
+→ SUSPENSA DURANTE A AUDITORIA INTEGRAL
+
+WIREFRAME / FIGMA / SVG / UX / UI / PROTÓTIPO
+→ NÃO AUTORIZADOS COMO NOVA EXECUÇÃO DURANTE A AUDITORIA
+
+SNAPSHOTS V1–V4 JÁ EMITIDOS
+→ HISTÓRICO PRESERVADO
+→ NÃO SÃO AUTORIZAÇÃO ATUAL
+```
+
+A linguagem das seções históricas abaixo sobre `autorização`, `podem ser executados`, `fluxo recomendado`, `Source Lock` e promoção de outputs descreve o método e o regime procedimental estabelecidos antes do gate atual. Ela não deve ser consumida isoladamente como permissão de execução enquanto `GKR-STATE-001` e `GKR-FULL-CORPUS-AUDIT-001` mantiverem a auditoria aberta.
+
+Uma futura retomada de Design exige, cumulativamente:
+
+1. fechamento dos gates aplicáveis da auditoria integral;
+2. ato humano explícito de reativação;
+3. reconciliação deste Handoff e do Manifesto/Flow vigentes contra o corpus pós-auditoria;
+4. Source Lock novo ou explicitamente reconciliado para a Home e o checkpoint então vigentes.
+
+```text
+HANDOFF CANÔNICO
+≠ AUTORIZAÇÃO PERMANENTE
+
+TEMPLATE DE SOURCE LOCK
+≠ SOURCE LOCK AUTORIZADO
+
+PACOTE HISTÓRICO
+≠ BASELINE VISUAL VIGENTE
+```
+
+---
 
 ## 1. Finalidade
 
@@ -558,8 +604,33 @@ VALIDAÇÃO HUMANA
 
 > **O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração. A validação reconecta forma e significado.**
 
-A versão `1.3.0` incorpora formalmente a Home Pública — Guivos Intelligence ao Handoff comum, elevando a governança de sete para oito Homes sem iniciar Design nem emitir, por este ato isolado, um novo snapshot de entrega.
+A versão `1.3.0` incorporou formalmente a Home Pública — Guivos Intelligence ao Handoff comum, elevando a governança de sete para oito Homes sem iniciar Design nem emitir, por aquele ato isolado, um novo snapshot de entrega.
 
-Estado desta frente:
+Estado histórico daquela frente:
 
 > **HANDOFF DAS OITO HOMES PREPARADO PARA A GERAÇÃO DE ENTREGA V4 — MATERIALIZAÇÃO SOMENTE APÓS O GATE OPERACIONAL DO MANIFESTO/FLUXO VIGENTES — IMPLEMENTAÇÃO NÃO INCLUÍDA.**
+
+---
+
+## 20. Estado vigente sob auditoria integral
+
+No estado atual:
+
+```text
+HANDOFF / MÉTODO
+→ PRESERVADO
+
+AUTORIZAÇÃO OPERACIONAL DE DESIGN
+→ SUSPENSA
+
+MANIFEST / FLOW / GENINPUT
+→ NÃO EXECUTÁVEIS COMO AUTORIZAÇÃO ISOLADA
+
+SNAPSHOTS HISTÓRICOS
+→ PRESERVADOS
+
+NOVA EMISSÃO / NOVA EXPLORAÇÃO
+→ EXIGE NOVO ATO GOVERNADO APÓS OS GATES APLICÁVEIS
+```
+
+Este documento permanece normativo para **como** um handoff futuro deverá ser governado quando reativado. Ele não é, durante a auditoria integral, autorização para iniciar esse handoff.
