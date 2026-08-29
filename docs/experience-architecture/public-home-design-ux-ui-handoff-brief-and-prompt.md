@@ -610,7 +610,7 @@ JOURNEY PROTEGIDA
 → contexto pessoal somente depois da transição governada
 ```
 
-A exploração pública não deve solicitar localização, narrativa ou relato pessoal, upload/arquivo, autenticação avulsa ou qualquer outro dado/contexto pessoal como condição para continuar descobrindo. Também não deve iniciar onboarding autonomamente.
+A exploração pública não deve solicitar localização, narrativa ou relato pessoal, ativar voz/microfone ou câmera, solicitar upload/arquivo, autenticação avulsa ou qualquer outro dado/contexto pessoal como condição para continuar descobrindo. Também não deve iniciar onboarding autonomamente.
 
 Evitar linguagem que transforme a relação inicial em pressão comercial ou que duplique `Iniciar Jornada` como CTA dominante da Hero.
 
@@ -829,7 +829,7 @@ CTAs iniciais privilegiam continuidade e exploração, não urgência comercial 
 
 O CTA da Hero e os CTAs de continuidade pública devem permanecer distintos de `Iniciar Jornada`: a Hero continua a narrativa pública; `Iniciar Jornada` continua sendo a porta própria da Journey no Header. Explorar Possibilidades na Home não pode exigir a entrada na Journey.
 
-Nenhum CTA de exploração pública pode solicitar localização, relato/narrativa pessoal, upload/arquivo, autenticação avulsa ou outro dado/contexto pessoal, nem iniciar onboarding autonomamente. Contexto pessoal pertence à experiência protegida posterior à transição governada de `Iniciar Jornada`.
+Nenhum CTA de exploração pública pode solicitar localização, relato/narrativa pessoal, ativar voz/microfone ou câmera, solicitar upload/arquivo, autenticação avulsa ou outro dado/contexto pessoal, nem iniciar onboarding autonomamente. Contexto pessoal pertence à experiência protegida posterior à transição governada de `Iniciar Jornada`.
 
 ### 17.7 Navegação persistente sem dominância
 O Header deve permanecer disponível sem dominar a Hero. Sem definir layout final, a futura materialização deve preservar o inventário semântico governado por `GKR-UX-HOME-NAV-001`:
@@ -1051,7 +1051,7 @@ Uma proposta futura deve ser rejeitada ou revista se:
 29. transforma automaticamente os nove Domínios de Evolução em nove cards, categorias da Home, menu, diagnóstico, score ou “roda da vida”;
 30. esconde conteúdo essencial atrás de hover, clique, swipe ou gesto opcional, ou usa interação para compensar falta de clareza;
 31. usa `Iniciar Jornada` como CTA dominante da Hero ou torna a descoberta pública dependente da entrada na Journey;
-32. solicita localização, relato/narrativa pessoal, upload/arquivo, autenticação avulsa ou outro dado/contexto pessoal para continuar a exploração pública;
+32. solicita localização, relato/narrativa pessoal, ativa voz/microfone ou câmera, solicita upload/arquivo, autenticação avulsa ou outro dado/contexto pessoal para continuar a exploração pública;
 33. inicia onboarding a partir de CTA público sem a transição governada de `Iniciar Jornada` para a Journey protegida;
 34. apresenta conteúdo patrocinado sem identificação perceptível ou o mistura a conteúdo orgânico/editorial de forma que compre aparência de prova orgânica;
 35. bloqueia scroll, força espera por animação, inicia áudio automaticamente, abre modal não solicitado, simula notificação, move alvo inesperadamente, esconde navegação de forma imprevisível ou usa qualquer dark pattern;
@@ -1075,7 +1075,7 @@ Uma proposta futura deve ser rejeitada ou revista se:
 - comportamento sem vídeo;
 - proposta de CTA por estágio;
 - mapa de papéis dos CTAs distinguindo exploração pública da Home de `Iniciar Jornada` / entrada na Journey;
-- estados de exploração pública sem coleta de contexto pessoal nem onboarding autônomo;
+- estados de exploração pública sem coleta de contexto pessoal, sem ativação de voz/microfone ou câmera, sem upload e sem onboarding autônomo;
 - relação entre Home e Produtos Especializados;
 - representação de Pessoas, Organizações e Coletivos;
 - proposta de navegação;
@@ -1135,7 +1135,7 @@ Avaliar cada proposta de `0` a `5` em:
 - potencial de internacionalização;
 - Domínios de Evolução preservados como vocabulário opcional de amplitude, sem materialização automática;
 - CTA da Hero / exploração pública distinto de `Iniciar Jornada`;
-- exploração pública sem coleta de localização, relato, upload, autenticação ou outro contexto pessoal;
+- exploração pública sem coleta de localização ou relato, sem ativação de voz/microfone ou câmera, sem upload, autenticação ou outro contexto pessoal;
 - onboarding inexistente antes da transição governada para Journey protegida;
 - Header persistente preservando marca/Home, `Sobre`, `Organizações e Coletivos`, compartilhar, idioma/região, launcher, `Login` e `Iniciar Jornada`;
 - Journey com `Iniciar Jornada` como porta própria e CTA de maior hierarquia no Header;
@@ -1171,7 +1171,7 @@ Nenhuma proposta deve avançar apenas por nota média alta se obtiver menos de `
 - conteúdo essencial independente de interação opcional;
 - mobile como solução semântica própria;
 - limites dos Domínios de Evolução preservados;
-- CTA público distinto de `Iniciar Jornada` e livre de coleta de contexto pessoal;
+- CTA público distinto de `Iniciar Jornada` e livre de coleta de contexto pessoal, ativação de voz/microfone ou câmera e upload;
 - onboarding somente após transição governada para Journey protegida;
 - contrato de navegação vigente preservado;
 - verdade operacional daquilo que será publicado.
@@ -1216,7 +1216,7 @@ Antes de aprovar um futuro wireframe, perguntar:
 32. Se os nove Domínios de Evolução forem usados, permanecem vocabulário opcional de amplitude ou foram convertidos indevidamente em taxonomia/diagnóstico da Home?
 33. A tese e todo conteúdo essencial permanecem compreensíveis sem hover, clique, swipe ou gesto opcional?
 34. O CTA da Hero permanece uma porta de descoberta pública distinta de `Iniciar Jornada`?
-35. A pessoa consegue continuar a exploração pública sem informar localização, relato pessoal, upload/arquivo, autenticação ou outro contexto pessoal?
+35. A pessoa consegue continuar a exploração pública sem informar localização ou relato pessoal, sem ativar voz/microfone ou câmera, sem enviar upload/arquivo, sem autenticar-se ou fornecer outro contexto pessoal?
 36. Algum CTA público inicia onboarding ou contexto pessoal antes da transição governada para Journey protegida?
 37. Conteúdo patrocinado permanece claramente identificável e separado de conteúdo orgânico/editorial, sem comprar aparência de prova ou recomendação?
 38. O visitante mantém controle de scroll e ritmo, sem espera forçada, áudio automático, modal não solicitado, notificação simulada, alvo móvel imprevisível ou dark pattern?
@@ -1314,6 +1314,7 @@ NÃO FAZER
 - não ocultar conteúdo essencial atrás de hover, clique, swipe ou gesto opcional;
 - não usar Iniciar Jornada como CTA dominante da Hero nem obrigar entrada na Journey para explorar a Home;
 - não solicitar localização, narrativa/relato pessoal, upload/arquivo, autenticação ou outro contexto pessoal para continuar a descoberta pública;
+- não ativar voz/microfone ou câmera nem solicitar/usar upload para explicar a Guivos ou condicionar a descoberta pública;
 - não iniciar onboarding a partir de CTA público antes da transição governada para Journey protegida;
 - não apresentar conteúdo patrocinado como orgânico/editorial nem omitir sua identificação perceptível;
 - não bloquear scroll, forçar espera por animação, iniciar áudio automaticamente, abrir modal não solicitado, simular notificação, mover alvo inesperadamente, esconder navegação de forma imprevisível ou usar dark patterns;
@@ -1333,7 +1334,7 @@ Preserve o contrato semântico de navegação vigente. O Header deve permanecer 
 CTA PÚBLICO × JOURNEY
 O CTA da Hero pertence à continuidade pública da própria Home e deve ser semanticamente distinto de Iniciar Jornada. Não use Iniciar Jornada como CTA dominante da Hero. Iniciar Jornada permanece no Header como porta própria da Journey e transição governada para experiência protegida. A descoberta pública não depende da entrada na Journey.
 
-A exploração pública deve continuar sem coleta de contexto pessoal: não peça localização, narrativa/relato pessoal, upload/arquivo, autenticação ou outro dado/contexto pessoal e não inicie onboarding autonomamente. Contexto pessoal só começa depois da transição governada para Journey protegida.
+A exploração pública deve continuar sem coleta de contexto pessoal: não peça localização, narrativa/relato pessoal, upload/arquivo, autenticação ou outro dado/contexto pessoal e não inicie onboarding autonomamente. Não ative voz/microfone ou câmera nem solicite/use upload para explicar a Guivos ou condicionar a exploração pública. Contexto pessoal só começa depois da transição governada para Journey protegida.
 
 UX
 Permita exploração sem cadastro. Use progressive disclosure para organizar profundidade, nunca para esconder a tese essencial. Conteúdo essencial deve permanecer compreensível sem hover, clique, swipe ou gesto opcional; interação não pode compensar falta de clareza. Preserve liberdade de avançar, voltar ou sair e controle do próprio ritmo. Scroll não pode ser bloqueado; não force espera por animação; não inicie áudio automaticamente; não abra modais sem solicitação; não simule notificações; não mova alvos inesperadamente; não esconda navegação de forma imprevisível; não use dark patterns. Garanta compreensão sem vídeo, sem animação e em baixa conectividade.
@@ -1368,7 +1369,7 @@ ENTREGUE
 18. tabela de rastreabilidade contra os requisitos;
 19. proposta de navegação rastreável ao contrato vigente, cobrindo Header, launcher, Journey, rodapé e equivalência desktop/mobile;
 20. justificativa de qualquer uso dos Domínios de Evolução, demonstrando que não foram convertidos automaticamente em taxonomia/diagnóstico da Home;
-21. estados de exploração pública sem coleta de contexto pessoal nem onboarding antes da transição governada para Journey protegida;
+21. estados de exploração pública sem coleta de contexto pessoal, sem ativação de voz/microfone ou câmera, sem upload e sem onboarding antes da transição governada para Journey protegida;
 22. estados de identificação perceptível para conteúdo patrocinado e distinção de conteúdo orgânico/editorial.
 
 CRITÉRIO FINAL
@@ -1392,7 +1393,7 @@ Os nove Domínios de Evolução da Journey são vocabulário opcional de amplitu
 
 Preserve também o contrato de navegação: Header persistentemente disponível com marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher, Login e Iniciar Jornada; Journey fora do launcher e Iniciar Jornada como sua porta própria e CTA de maior hierarquia no Header; launcher compacto com Travel, Ads, Media, Business, Intelligence e Mall; Mapa do Ecossistema preservado como link no rodapé sem antecipar sua página, mantendo a composição adicional do rodapé aberta; equivalência semântica entre desktop e mobile, com mobile como solução semântica própria — não simples empilhamento do desktop — favorecendo foco e sequência. Destino conceitual governado não significa disponibilidade operacional.
 
-O CTA da Hero pertence à descoberta pública da própria Home e deve ser distinto de Iniciar Jornada; não use Iniciar Jornada como CTA dominante da Hero nem obrigue entrada na Journey para explorar Possibilidades. A exploração pública deve continuar sem localização, relato/narrativa pessoal, upload/arquivo, autenticação ou outro contexto pessoal e sem iniciar onboarding; contexto pessoal começa somente depois da transição governada para Journey protegida.
+O CTA da Hero pertence à descoberta pública da própria Home e deve ser distinto de Iniciar Jornada; não use Iniciar Jornada como CTA dominante da Hero nem obrigue entrada na Journey para explorar Possibilidades. A exploração pública deve continuar sem localização, relato/narrativa pessoal, upload/arquivo, autenticação ou outro contexto pessoal e sem iniciar onboarding; não ative voz/microfone ou câmera nem solicite/use upload para explicar a Guivos ou condicionar essa exploração. Contexto pessoal começa somente depois da transição governada para Journey protegida.
 
 Conteúdo patrocinado deve ser perceptivelmente identificado e distinguido de conteúdo orgânico/editorial; nunca o apresente como prova orgânica ou recomendação pessoal. Preserve controle do visitante: scroll não bloqueante, sem espera forçada, áudio automático, modal não solicitado, notificação simulada, alvo móvel inesperado ou dark pattern.
 
@@ -1454,7 +1455,7 @@ Antes de autorizar materialização, confirmar:
 - conteúdo patrocinado permanece identificável e distinto de orgânico/editorial;
 - controles de interação preservam scroll normal, ritmo próprio e ausência de espera forçada, áudio automático, modal não solicitado, notificação simulada ou dark pattern;
 - CTA da Hero / exploração pública permanece distinto de `Iniciar Jornada`;
-- exploração pública permanece sem localização, relato/narrativa pessoal, upload/arquivo, autenticação ou outro contexto pessoal;
+- exploração pública permanece sem localização, relato/narrativa pessoal, ativação de voz/microfone ou câmera, upload/arquivo, autenticação ou outro contexto pessoal;
 - onboarding e contexto pessoal só começam depois da transição governada para Journey protegida;
 - não existe nova personalização pública autorizada por inferência;
 - disponibilidade real de provas, histórias e métricas está identificada;
@@ -1494,7 +1495,7 @@ Se este documento tivesse de ser condensado em regras de controle — sem substi
 17. **Preserve scroll, ritmo e controle do visitante; não use dark patterns.**
 18. **Garanta texto ampliado legível e compreensível desde a arquitetura.**
 19. **Mantenha o CTA da Hero como exploração pública distinta de `Iniciar Jornada`.**
-20. **Não colete contexto pessoal nem inicie onboarding durante a descoberta pública.**
+20. **Não colete contexto pessoal, não ative voz/microfone ou câmera, não use upload nem inicie onboarding durante a descoberta pública.**
 21. **Não use interação para compensar falta de clareza nem esconda conteúdo essencial atrás de gesto opcional.**
 22. **Entregue qualidade global sem copiar a identidade de nenhuma referência.**
 23. **Não trate disponibilidade de lançamento como gate da arquitetura conceitual.**
