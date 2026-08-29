@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **3.3.0** |
+| Registro | `GKR-STATE-001` **3.4.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
@@ -18,15 +18,16 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
 | Auditoria integral | **IN_PROGRESS** |
-| Próximo lote da auditoria | **F — HOMES DOS PRODUTOS ESPECIALIZADOS** |
+| Lotes concluídos | **A / B / C / D / E / F** |
+| Próximo bloco da auditoria | **G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
-| Demais Homes | **AUDIT_PENDING / LOT F** |
+| Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.3.0](roadmap.md) governa a sequência atual.
+O [Roadmap 13.4.0](roadmap.md) governa a sequência atual.
 
 ## Por que o repositório está em auditoria
 
@@ -53,9 +54,11 @@ O histórico permanece no Git.
 
 ### Estado e direção
 
-- [Registro do Estado Atual 3.3.0](project/current-state-register.md)
-- [Roadmap 13.3.0](roadmap.md)
+- [Registro do Estado Atual 3.4.0](project/current-state-register.md)
+- [Roadmap 13.4.0](roadmap.md)
 - [Auditoria Integral do GKR](project/gkr-full-corpus-audit.md)
+- [Auditoria do Lote F — Homes Especializadas](project/gkr-specialized-homes-audit.md)
+- [Reconciliação das Homes Especializadas](experience-architecture/public-specialized-homes-reconciliation.md)
 - [Guia Oficial da Guivos / Public Canon](public/guia-oficial-da-guivos.md)
 
 ### Fundação e identidade
@@ -269,6 +272,8 @@ TENDÊNCIA ≠ DESTINO
 PERCEBER ANTES ≠ PREVER O FUTURO
 ```
 
+`GIA-000 v1.6.0` reconhece a Home Intelligence documental existente sem promover Home Source Lock, Design ou implementação.
+
 Neo4j permanece tecnologia de referência, não produção comprovada.
 
 ## Research e RP-002
@@ -294,14 +299,14 @@ Simulação sintética não equivale a PMF.
 |---|---|
 | Principal / Pessoa | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 | Organizações e Coletivos | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Mall | `AUDIT_PENDING / LOT F` |
-| Travel | `AUDIT_PENDING / LOT F` |
-| Media | `AUDIT_PENDING / LOT F` |
-| Ads | `AUDIT_PENDING / LOT F` |
-| Business | `AUDIT_PENDING / LOT F` |
-| Intelligence | `AUDIT_PENDING / LOT F` |
+| Mall | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Travel | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Media | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Ads | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Business | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Intelligence | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 
-A antiga leitura agregada de “oito Homes convergidas” não é usada como maturidade corrente enquanto a auditoria estiver aberta.
+A antiga leitura agregada de “oito Homes convergidas” não é usada como atalho de maturidade. As oito famílias possuem reconciliação documental pré-materialização, mas nenhuma é promovida a implementação, disponibilidade ou Design vigente por isso.
 
 ## Materializações e contagens
 
@@ -319,9 +324,13 @@ Nenhuma nova contagem agregada de maturidade visual será publicada antes da rec
 
 ## Próximo movimento
 
-O próximo movimento é concluir a auditoria integral, não iniciar automaticamente nova UXA, Design ou Engineering.
+O próximo bloco é **G/H/I — Experience Architecture e inventário visual**, não iniciar automaticamente nova UXA, Design ou Engineering.
 
 ```text
+G — JORNADA DA PESSOA
+H — ORGANIZAÇÃO / COLETIVO
+I — REGISTRIES / CATÁLOGOS / SVGs
+
 NÃO INFERIR UXA-102
 NÃO INFERIR WIREFRAME
 NÃO INFERIR DESIGN
