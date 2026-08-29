@@ -1,0 +1,234 @@
+name: Temporary GKR Lot D Closure Patch
+
+on:
+  push:
+    branches:
+      - agent/gkr-global-audit-lote-d-close-e-next-v1
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/gkr-global-audit-lote-d-close-e-next-v1
+          fetch-depth: 0
+
+      - name: Apply governed state reconciliation
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          audit_path = Path('docs/project/gkr-full-corpus-audit.md')
+          state_path = Path('docs/project/current-state-register.md')
+
+          audit = audit_path.read_text(encoding='utf-8')
+          state = state_path.read_text(encoding='utf-8')
+
+          def once(text, old, new, label):
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f'{label}: expected exactly 1 match, found {count}')
+              return text.replace(old, new, 1)
+
+          def regex_once(text, pattern, replacement, label):
+              new_text, count = re.subn(pattern, replacement, text, count=1, flags=re.S)
+              if count != 1:
+                  raise SystemExit(f'{label}: expected exactly 1 regex match, found {count}')
+              return new_text
+
+          # GKR-FULL-CORPUS-AUDIT-001
+          audit = once(audit, 'version: 1.1.0', 'version: 1.2.0', 'audit version')
+          audit = once(audit, 'last_updated: 2026-08-27', 'last_updated: 2026-08-29', 'audit date')
+          audit = once(
+              audit,
+              '| F-003 | Critical | Home principal/Pessoa conflita com assinatura e Movimento 06 vigentes | `REBUILD` | próximo lote |',
+              '| F-003 | Critical | Home principal/Pessoa conflita com assinatura e Movimento 06 vigentes | `REBUILD` | resolvido no Lote D |',
+              'F-003 row',
+          )
+          audit = once(
+              audit,
+              '| F-004 | Major | Home O/C antecede mudanças estruturais posteriores | `REBUILD` | aberto |',
+              '| F-004 | Major | Home O/C antecede mudanças estruturais posteriores | `REBUILD` | próximo lote |',
+              'F-004 row',
+          )
+
+          new_f003 = '''## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
+
+O conflito material originalmente comprovado foi tratado de forma incremental e governada no Lote D, sem abrir materialização visual.
+
+A sequência canônica foi:
+
+- PR #342 — reconstrução de `GKR-UX-HOME-MASTER-001` como autoridade de consumo autocontida;
+- PR #343 — reclassificação de resíduos de autoridade/checkpoint;
+- PR #344 — reconciliação dos artefatos narrativos detalhados;
+- PR #345 — correção do ciclo de dependência documental;
+- PR #346 — reconciliação das autoridades de auditoria da Home;
+- PR #348 — fechamento de `RES-01` em navegação/fronteira GTM;
+- PR #349 — fechamento do último resíduo conhecido `RES-03` em `GKR-UX-HOME-HANDOFF-001`.
+
+O estado reconciliado preserva, entre outros pontos:
+
+```text
+GUIVOS
+→ Possibility, lived.
+→ Possibilidade, vivida.
+→ #PossibilityLived
+
+FUNDADOR
+→ Do possível ao vivido.
+→ assinatura pessoal/autoral
+→ não é assinatura institucional da Guivos
+
+MOVIMENTO 06
+→ Da Possibilidade à Experiência
+
+POSSIBILIDADE
+≠ OPORTUNIDADE
+
+MECANISMO
+→ obrigatório quando necessário na passagem específica
+
+OPORTUNIDADE REAL
+→ condicional à existência de oferta/viabilização concreta e acesso real
+```
+
+O fechamento documental também preserva Header/launcher/CTAs, autonomia, acessibilidade, prova, histórias reais, patrocínio identificável, fronteira pública × Journey protegida, os nove Domínios como vocabulário sem taxonomia visual obrigatória e a separação entre participantes e Produtos.
+
+Conclusão comprovada:
+
+> **Home principal/Pessoa = DOCUMENTALMENTE_RECONCILIADA_PRE_MATERIALIZAÇÃO.**
+
+Esse estado não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, disponibilidade operacional nem a primeira tela autenticada da Pessoa.
+
+'''
+          audit = regex_once(
+              audit,
+              r'## 7\. F-003 — conflito material da Home principal\n.*?(?=## 8\. F-004 — Home de Organizações e Coletivos)',
+              new_f003,
+              'F-003 section',
+          )
+
+          audit = once(
+              audit,
+              '`GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` permanece temporariamente necessário porque ainda contém correções que precisam ser absorvidas no master da Home Pessoa no Lote D.',
+              '`GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` teve as correções de Home absorvidas durante o Lote D; sua função residual passa a ser avaliada sob F-010 antes de qualquer consolidação ou remoção.',
+              'propagation status',
+          )
+          audit = once(
+              audit,
+              '| C — Fundação / Marca / Public Canon | `COMPLETED_IN_BRANCH_PENDING_FINAL_VALIDATION` | Fundação reconciliada/enriquecida + GOG 5.3.0 |',
+              '| C — Fundação / Marca / Public Canon | `COMPLETED` | Fundação reconciliada/enriquecida + GOG 5.3.0 |',
+              'matrix C',
+          )
+          audit = once(
+              audit,
+              '| D — Home principal / Pessoa | `REBUILD_REQUIRED / NEXT` | master reconstruído e enriquecido |',
+              '| D — Home principal / Pessoa | `COMPLETED` | master e resíduos documentais reconciliados; materialização não autorizada |',
+              'matrix D',
+          )
+          audit = once(
+              audit,
+              '| E — Home Organizações e Coletivos | `REBUILD_REQUIRED` | master reconstruído |',
+              '| E — Home Organizações e Coletivos | `REBUILD_REQUIRED / NEXT` | master reconstruído |',
+              'matrix E',
+          )
+          audit = once(
+              audit,
+              'C. Fundação / Marca / Public Canon              [concluído no branch; validar/integrar]\n↓\nD. Home principal / Pessoa                      [próximo]\n↓\nE/F. demais Homes',
+              'C. Fundação / Marca / Public Canon              [concluído]\n↓\nD. Home principal / Pessoa                      [concluído]\n↓\nE. Home Organizações e Coletivos                 [próximo]\n↓\nF. Homes de Produtos',
+              'execution order',
+          )
+          audit = once(
+              audit,
+              'A / B\n→ COMPLETED\n\nC\n→ COMPLETED IN BRANCH / PENDING FINAL VALIDATION AND MERGE\n\nNEXT LOT\n→ D — HOME PRINCIPAL / PESSOA',
+              'A / B / C / D\n→ COMPLETED\n\nNEXT LOT\n→ E — HOME ORGANIZAÇÕES E COLETIVOS',
+              'current state lots',
+          )
+          audit = once(
+              audit,
+              'HOME PRINCIPAL\n→ REBUILD_REQUIRED',
+              'HOME PRINCIPAL\n→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION',
+              'home person state',
+          )
+
+          # GKR-STATE-001
+          state = once(state, 'version: 3.1.0', 'version: 3.2.0', 'state version')
+          state = once(state, 'last_updated: 2026-08-27', 'last_updated: 2026-08-29', 'state date')
+          state = once(
+              state,
+              'ESTADO GLOBAL DO GKR\n→ AUDITORIA INTEGRAL EM CURSO\n\nMARCO FUNCIONAL',
+              'ESTADO GLOBAL DO GKR\n→ AUDITORIA INTEGRAL EM CURSO\n\nPRÓXIMO LOTE DA AUDITORIA\n→ E — HOME ORGANIZAÇÕES E COLETIVOS\n\nMARCO FUNCIONAL',
+              'state executive next lot',
+          )
+          state = once(
+              state,
+              '| Principal / Pessoa | `REBUILD_REQUIRED` |',
+              '| Principal / Pessoa | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |',
+              'state homes table',
+          )
+
+          new_home_person = '''### 10.1 Home principal / Pessoa
+
+O Lote D foi concluído documentalmente pela sequência canônica de PRs #342–#349.
+
+A reconstrução e as reconciliações posteriores absorveram os conflitos conhecidos com Fundação, Marca, Public Canon e Experience Architecture, incluindo:
+
+- separação `Guivos × fundador` e remoção de `Do possível ao vivido.` como assinatura institucional da Home;
+- Movimento 06 = `Da Possibilidade à Experiência`;
+- distinção `Possibilidade ≠ Oportunidade` e presença de Mecanismo quando necessário;
+- nove Domínios de Evolução como vocabulário de amplitude, sem materialização visual automática;
+- separação `participante ≠ produto` e `Organização ≠ Business`;
+- Intelligence como Produto Especializado transversal / Intelligence Layer;
+- fronteira entre exploração pública e Journey protegida;
+- navegação, Header, launcher e hierarquia de CTAs;
+- prova, histórias reais, patrocínio identificável, autonomia e acessibilidade;
+- briefing/handoff subordinado ao Master e às autoridades especializadas.
+
+Estado:
+
+```text
+HOME PRINCIPAL / PESSOA
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+
+WIREframe / FIGMA / UI / PROTÓTIPO / IMPLEMENTAÇÃO
+→ NOT AUTHORIZED BY THIS CLOSURE
+
+PRIMEIRA TELA AUTENTICADA DA PESSOA
+→ BLOCKED UNTIL FULL AUDIT CLOSES
+```
+
+O fechamento de D não promove disponibilidade operacional, PMF, lançamento ou qualquer lote posterior da auditoria.
+
+'''
+          state = regex_once(
+              state,
+              r'### 10\.1 Home principal / Pessoa\n.*?(?=### 10\.2 Home de Organizações e Coletivos)',
+              new_home_person,
+              'state home person subsection',
+          )
+
+          audit_path.write_text(audit, encoding='utf-8')
+          state_path.write_text(state, encoding='utf-8')
+          PY
+
+          rm -f docs/project/.audit-lote-d-close-e-next-work.md
+          rm -f .github/workflows/temp-gkr-lot-d-close.yml
+
+          git diff --check
+          git diff -- docs/project/gkr-full-corpus-audit.md docs/project/current-state-register.md
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+
+          test "$(git diff --cached --name-only | sort)" = $'docs/project/current-state-register.md\ndocs/project/gkr-full-corpus-audit.md'
+
+          git commit -m "docs: fechar Lote D e promover Lote E"
+          git push origin HEAD:agent/gkr-global-audit-lote-d-close-e-next-v1
