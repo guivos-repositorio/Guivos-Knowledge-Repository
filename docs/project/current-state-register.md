@@ -1096,10 +1096,10 @@ C — FUNDAÇÃO / MARCA / PUBLIC CANON
 → CANONICALLY UPDATED
 
 D — HOME PRINCIPAL / PESSOA
-→ REBUILD_REQUIRED
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
 E — HOME ORGANIZAÇÕES E COLETIVOS
-→ REBUILD_REQUIRED
+→ REBUILD_REQUIRED / NEXT
 
 F — HOMES DE PRODUTOS
 → AUDIT_PENDING
@@ -1182,17 +1182,19 @@ CONSOLIDAÇÃO ≠ REDUÇÃO DE CONHECIMENTO
 
 ## 29. Próximo ato governado
 
-O próximo lote da auditoria é a **reconstrução da Home principal/Pessoa**, confrontando o master antigo com a Fundação reconciliada, Marca, Public Canon, Journey, Research, Domínios de Evolução e demais autoridades aplicáveis.
+O próximo lote da auditoria é **E — Home Organizações e Coletivos**, reconstruindo a autoridade pública O/C contra as autoridades posteriores aplicáveis sem antecipar a experiência autenticada.
 
-Isso ainda não autoriza a primeira tela autenticada pós-Home.
+O fechamento documental da Home principal/Pessoa não autoriza materialização visual nem a primeira tela autenticada pós-Home.
 
 ```text
 PRÓXIMO LOTE
-→ D — HOME PRINCIPAL / PESSOA
+→ E — HOME ORGANIZAÇÕES E COLETIVOS
+→ REBUILD_REQUIRED
 
 AINDA BLOQUEADOS
 → UXA-102
 → PRIMEIRA TELA PÓS-HOME DA PESSOA
+→ WIREFRAME / FIGMA / UI / PROTÓTIPO
 → DESIGN AUTOMÁTICO
 → PRODUCT ENGINEERING
 → PMF
