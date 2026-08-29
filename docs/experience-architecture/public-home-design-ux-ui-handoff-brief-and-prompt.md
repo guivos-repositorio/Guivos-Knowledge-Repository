@@ -593,7 +593,26 @@ O CTA final deve ser semanticamente compatível com:
 
 A redação final será definida depois.
 
-Evitar linguagem que transforme a relação inicial em pressão comercial.
+O CTA da Hero e demais CTAs de exploração pública pertencem à continuidade da própria Home. Eles devem permanecer semanticamente distintos de `Iniciar Jornada`, que pertence ao Header como porta própria da Journey e representa uma transição governada para experiência protegida.
+
+```text
+CTA PÚBLICO DA HOME / HERO
+→ descoberta e continuidade pública
+→ sem coleta de contexto pessoal
+→ sem onboarding
+
+INICIAR JORNADA
+→ Header
+→ porta própria da Journey
+→ transição governada
+
+JOURNEY PROTEGIDA
+→ contexto pessoal somente depois da transição governada
+```
+
+A exploração pública não deve solicitar localização, narrativa ou relato pessoal, upload/arquivo, autenticação avulsa ou qualquer outro dado/contexto pessoal como condição para continuar descobrindo. Também não deve iniciar onboarding autonomamente.
+
+Evitar linguagem que transforme a relação inicial em pressão comercial ou que duplique `Iniciar Jornada` como CTA dominante da Hero.
 
 ---
 
@@ -792,6 +811,10 @@ Conteúdo essencial não pode depender de hover, clique, swipe, gesto opcional o
 ### 17.6 CTA compatível com descoberta
 CTAs iniciais privilegiam continuidade e exploração, não urgência comercial artificial.
 
+O CTA da Hero e os CTAs de continuidade pública devem permanecer distintos de `Iniciar Jornada`: a Hero continua a narrativa pública; `Iniciar Jornada` continua sendo a porta própria da Journey no Header. Explorar Possibilidades na Home não pode exigir a entrada na Journey.
+
+Nenhum CTA de exploração pública pode solicitar localização, relato/narrativa pessoal, upload/arquivo, autenticação avulsa ou outro dado/contexto pessoal, nem iniciar onboarding autonomamente. Contexto pessoal pertence à experiência protegida posterior à transição governada de `Iniciar Jornada`.
+
 ### 17.7 Navegação persistente sem dominância
 O Header deve permanecer disponível sem dominar a Hero. Sem definir layout final, a futura materialização deve preservar o inventário semântico governado por `GKR-UX-HOME-NAV-001`:
 
@@ -989,7 +1012,10 @@ Uma proposta futura deve ser rejeitada ou revista se:
 27. bloqueia arquitetura conceitual apenas porque um destino ainda não está lançado;
 28. publica destino indisponível como se estivesse operacional;
 29. transforma automaticamente os nove Domínios de Evolução em nove cards, categorias da Home, menu, diagnóstico, score ou “roda da vida”;
-30. esconde conteúdo essencial atrás de hover, clique, swipe ou gesto opcional, ou usa interação para compensar falta de clareza.
+30. esconde conteúdo essencial atrás de hover, clique, swipe ou gesto opcional, ou usa interação para compensar falta de clareza;
+31. usa `Iniciar Jornada` como CTA dominante da Hero ou torna a descoberta pública dependente da entrada na Journey;
+32. solicita localização, relato/narrativa pessoal, upload/arquivo, autenticação avulsa ou outro dado/contexto pessoal para continuar a exploração pública;
+33. inicia onboarding a partir de CTA público sem a transição governada de `Iniciar Jornada` para a Journey protegida.
 
 ---
 
@@ -1007,6 +1033,8 @@ Uma proposta futura deve ser rejeitada ou revista se:
 - estratégia de Hero;
 - comportamento sem vídeo;
 - proposta de CTA por estágio;
+- mapa de papéis dos CTAs distinguindo exploração pública da Home de `Iniciar Jornada` / entrada na Journey;
+- estados de exploração pública sem coleta de contexto pessoal nem onboarding autônomo;
 - relação entre Home e Produtos Especializados;
 - representação de Pessoas, Organizações e Coletivos;
 - proposta de navegação;
@@ -1057,6 +1085,9 @@ Avaliar cada proposta de `0` a `5` em:
 - conteúdo essencial independente de hover, clique ou gesto opcional;
 - potencial de internacionalização;
 - Domínios de Evolução preservados como vocabulário opcional de amplitude, sem materialização automática;
+- CTA da Hero / exploração pública distinto de `Iniciar Jornada`;
+- exploração pública sem coleta de localização, relato, upload, autenticação ou outro contexto pessoal;
+- onboarding inexistente antes da transição governada para Journey protegida;
 - Header persistente preservando marca/Home, `Sobre`, `Organizações e Coletivos`, compartilhar, idioma/região, launcher, `Login` e `Iniciar Jornada`;
 - Journey com `Iniciar Jornada` como porta própria e CTA de maior hierarquia no Header;
 - launcher compacto contendo Travel, Ads, Media, Business, Intelligence e Mall, sem Journey;
@@ -1065,7 +1096,7 @@ Avaliar cada proposta de `0` a `5` em:
 - idioma/região disponível sem poluir o Header;
 - compartilhar permanecendo utilitário;
 - `Login` disponível sem disputar a narrativa;
-- rodapé contendo `Mapa do Ecossistema` somente como link, sem antecipar a página;
+- rodapé preservando `Mapa do Ecossistema` como link, sem antecipar a página e sem fechar prematuramente a composição adicional;
 - desktop e mobile preservando a mesma hierarquia semântica e os mesmos caminhos essenciais;
 - distinção entre destino conceitual governado e disponibilidade operacional;
 - verdade operacional nos estados que serão publicados.
@@ -1084,6 +1115,8 @@ Nenhuma proposta deve avançar apenas por nota média alta se obtiver menos de `
 - ausência de promessa de resultado;
 - conteúdo essencial independente de interação opcional;
 - limites dos Domínios de Evolução preservados;
+- CTA público distinto de `Iniciar Jornada` e livre de coleta de contexto pessoal;
+- onboarding somente após transição governada para Journey protegida;
 - contrato de navegação vigente preservado;
 - verdade operacional daquilo que será publicado.
 
@@ -1122,10 +1155,13 @@ Antes de aprovar um futuro wireframe, perguntar:
 27. O Header preserva marca/Home, `Sobre`, `Organizações e Coletivos`, compartilhar, idioma/região, launcher, `Login` e `Iniciar Jornada`?
 28. Journey permanece fora do launcher e `Iniciar Jornada` é sua porta própria no Header?
 29. O launcher contém Travel, Ads, Media, Business, Intelligence e Mall de forma compacta e não dominante?
-30. O rodapé mantém `Mapa do Ecossistema` somente como link, sem detalhar a futura página?
+30. O rodapé mantém `Mapa do Ecossistema` como link sem detalhar a futura página nem fechar prematuramente sua composição adicional?
 31. Desktop e mobile preservam os mesmos caminhos essenciais e a mesma hierarquia semântica?
 32. Se os nove Domínios de Evolução forem usados, permanecem vocabulário opcional de amplitude ou foram convertidos indevidamente em taxonomia/diagnóstico da Home?
 33. A tese e todo conteúdo essencial permanecem compreensíveis sem hover, clique, swipe ou gesto opcional?
+34. O CTA da Hero permanece uma porta de descoberta pública distinta de `Iniciar Jornada`?
+35. A pessoa consegue continuar a exploração pública sem informar localização, relato pessoal, upload/arquivo, autenticação ou outro contexto pessoal?
+36. Algum CTA público inicia onboarding ou contexto pessoal antes da transição governada para Journey protegida?
 
 ---
 
@@ -1212,6 +1248,9 @@ NÃO FAZER
 - não confundir Possibilidade com Oportunidade;
 - não materializar automaticamente os nove Domínios como nove cards/categorias, menu, diagnóstico, score ou “roda da vida”;
 - não ocultar conteúdo essencial atrás de hover, clique, swipe ou gesto opcional;
+- não usar Iniciar Jornada como CTA dominante da Hero nem obrigar entrada na Journey para explorar a Home;
+- não solicitar localização, narrativa/relato pessoal, upload/arquivo, autenticação ou outro contexto pessoal para continuar a descoberta pública;
+- não iniciar onboarding a partir de CTA público antes da transição governada para Journey protegida;
 - não simular escala, usuários, histórias, parceiros, métricas ou disponibilidade inexistentes;
 - não copiar visualmente benchmarks.
 
@@ -1223,6 +1262,11 @@ Os sete Produtos Especializados só ganham protagonismo institucional após a te
 
 NAVEGAÇÃO E GTM
 Preserve o contrato semântico de navegação vigente. O Header deve permanecer persistentemente disponível sem dominar a Hero e manter marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher do ecossistema, Login e Iniciar Jornada. Sobre deve permanecer facilmente encontrável; Organizações e Coletivos deve possuir porta clara; compartilhar deve permanecer utilitário; idioma/região deve permanecer disponível de forma compacta e sem poluir o Header; Login deve permanecer disponível sem disputar a narrativa. Iniciar Jornada é o CTA de maior hierarquia no Header e a porta própria da Journey. Journey não integra o launcher. O launcher deve conter Travel, Ads, Media, Business, Intelligence e Mall de forma compacta, acessível e sem dominar a primeira percepção. O rodapé deve preservar Mapa do Ecossistema somente como link, sem antecipar a página de destino; sua composição adicional permanece deliberadamente aberta nesta frente. Desktop e mobile devem preservar a mesma hierarquia semântica e os mesmos caminhos essenciais. Arquitetura conceitual/wireframe não depende de todos os destinos estarem lançados; a versão publicada, porém, nunca pode apresentar destino, CTA ou estado como operacional quando não estiver legitimamente disponível.
+
+CTA PÚBLICO × JOURNEY
+O CTA da Hero pertence à continuidade pública da própria Home e deve ser semanticamente distinto de Iniciar Jornada. Não use Iniciar Jornada como CTA dominante da Hero. Iniciar Jornada permanece no Header como porta própria da Journey e transição governada para experiência protegida. A descoberta pública não depende da entrada na Journey.
+
+A exploração pública deve continuar sem coleta de contexto pessoal: não peça localização, narrativa/relato pessoal, upload/arquivo, autenticação ou outro dado/contexto pessoal e não inicie onboarding autonomamente. Contexto pessoal só começa depois da transição governada para Journey protegida.
 
 UX
 Permita exploração sem cadastro. Use progressive disclosure para organizar profundidade, nunca para esconder a tese essencial. Conteúdo essencial deve permanecer compreensível sem hover, clique, swipe ou gesto opcional; interação não pode compensar falta de clareza. Preserve liberdade de avançar, voltar ou sair. Garanta compreensão sem vídeo, sem animação e em baixa conectividade.
@@ -1246,7 +1290,7 @@ ENTREGUE
 7. slots de prova e histórias;
 8. representação de Pessoas, Organizações e Coletivos;
 9. tratamento do Movimento 08 e responsabilidades dos Produtos;
-10. CTAs coerentes com descoberta/autonomia;
+10. CTAs coerentes com descoberta/autonomia e explicitamente separados entre exploração pública e Iniciar Jornada;
 11. comportamento com e sem vídeo;
 12. princípios de movimento;
 13. estados responsivos;
@@ -1256,7 +1300,8 @@ ENTREGUE
 17. estados honestos para destinos ainda não ativados;
 18. tabela de rastreabilidade contra os requisitos;
 19. proposta de navegação rastreável ao contrato vigente, cobrindo Header, launcher, Journey, rodapé e equivalência desktop/mobile;
-20. justificativa de qualquer uso dos Domínios de Evolução, demonstrando que não foram convertidos automaticamente em taxonomia/diagnóstico da Home.
+20. justificativa de qualquer uso dos Domínios de Evolução, demonstrando que não foram convertidos automaticamente em taxonomia/diagnóstico da Home;
+21. estados de exploração pública sem coleta de contexto pessoal nem onboarding antes da transição governada para Journey protegida.
 
 CRITÉRIO FINAL
 A solução deve fazer alguém pensar primeiro “existe mais mundo possível aqui”, depois “isso acontece de verdade”, depois “entendo por que a Guivos conecta isso”, depois “continuo livre para escolher”, e somente então “quero descobrir o que existe aqui”.
@@ -1277,7 +1322,9 @@ No Movimento 08, preserve Journey como experiência/continuidade, Mall/Travel/Bu
 
 Os nove Domínios de Evolução da Journey são vocabulário opcional de amplitude/cobertura na Home, quando necessário; não os transforme automaticamente em nove cards/categorias, menu, diagnóstico, score ou “roda da vida”. “Ainda estou descobrindo” é estado transversal, não décimo domínio.
 
-Preserve também o contrato de navegação: Header persistentemente disponível com marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher, Login e Iniciar Jornada; Journey fora do launcher e Iniciar Jornada como sua porta própria e CTA de maior hierarquia no Header; launcher compacto com Travel, Ads, Media, Business, Intelligence e Mall; rodapé com Mapa do Ecossistema somente como link; equivalência semântica entre desktop e mobile. Destino conceitual governado não significa disponibilidade operacional.
+Preserve também o contrato de navegação: Header persistentemente disponível com marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher, Login e Iniciar Jornada; Journey fora do launcher e Iniciar Jornada como sua porta própria e CTA de maior hierarquia no Header; launcher compacto com Travel, Ads, Media, Business, Intelligence e Mall; Mapa do Ecossistema preservado como link no rodapé sem antecipar sua página, mantendo a composição adicional do rodapé aberta; equivalência semântica entre desktop e mobile. Destino conceitual governado não significa disponibilidade operacional.
+
+O CTA da Hero pertence à descoberta pública da própria Home e deve ser distinto de Iniciar Jornada; não use Iniciar Jornada como CTA dominante da Hero nem obrigue entrada na Journey para explorar Possibilidades. A exploração pública deve continuar sem localização, relato/narrativa pessoal, upload/arquivo, autenticação ou outro contexto pessoal e sem iniciar onboarding; contexto pessoal começa somente depois da transição governada para Journey protegida.
 
 Use progressive disclosure sem esconder a tese essencial. Conteúdo essencial deve permanecer compreensível sem hover, clique, swipe ou gesto opcional; interação não pode compensar falta de clareza. A sensação deve combinar futuro, possibilidade, pertencimento, humanidade, confiança, simplicidade e escala global. A motivação inicial é descobrir. Não criar marketplace, portal de benefícios, coaching, site de IA, feed infinito ou catálogo de cards. Não prometer transformação nem simular personalização ou disponibilidade operacional. A Guivos amplia o horizonte; o caminho continua sendo do participante.
 ```
@@ -1329,6 +1376,9 @@ Antes de autorizar materialização, confirmar:
 - papel de Guivos Media está delimitado;
 - não houve mudança de contrato funcional da Home;
 - conteúdo essencial permanece compreensível sem hover, clique ou gesto opcional;
+- CTA da Hero / exploração pública permanece distinto de `Iniciar Jornada`;
+- exploração pública permanece sem localização, relato/narrativa pessoal, upload/arquivo, autenticação ou outro contexto pessoal;
+- onboarding e contexto pessoal só começam depois da transição governada para Journey protegida;
 - não existe nova personalização pública autorizada por inferência;
 - disponibilidade real de provas, histórias e métricas está identificada;
 - produtos e nomenclaturas vigentes estão reconciliados;
@@ -1362,11 +1412,13 @@ Se este documento tivesse de ser condensado em regras de controle — sem substi
 13. **Faça Intelligence compreender, não decidir.**
 14. **Construa autoridade por prova, transparência, consequência e continuidade.**
 15. **Mantenha autonomia e descoberta acima de pressão comercial.**
-16. **Não use interação para compensar falta de clareza nem esconda conteúdo essencial atrás de gesto opcional.**
-17. **Entregue qualidade global sem copiar a identidade de nenhuma referência.**
-18. **Não trate disponibilidade de lançamento como gate da arquitetura conceitual.**
-19. **Nunca publique disponibilidade que não exista.**
-20. **Não use este handoff como autorização automática de materialização.**
+16. **Mantenha o CTA da Hero como exploração pública distinta de `Iniciar Jornada`.**
+17. **Não colete contexto pessoal nem inicie onboarding durante a descoberta pública.**
+18. **Não use interação para compensar falta de clareza nem esconda conteúdo essencial atrás de gesto opcional.**
+19. **Entregue qualidade global sem copiar a identidade de nenhuma referência.**
+20. **Não trate disponibilidade de lançamento como gate da arquitetura conceitual.**
+21. **Nunca publique disponibilidade que não exista.**
+22. **Não use este handoff como autorização automática de materialização.**
 
 ---
 
