@@ -13441,6 +13441,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#0-gate-vigente-durante-a-auditoria-integral-do-gkr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. Gate vigente durante a Auditoria Integral do GKR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1-finalidade" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -13565,6 +13576,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="10. Regra final">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estado-vigente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estado vigente
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -13606,6 +13634,26 @@
 
 
 <h1 id="homes-publicas-fluxo-operacional-de-uso-do-pacote-de-design">Homes Públicas — Fluxo Operacional de Uso do Pacote de Design<a class="headerlink" href="#homes-publicas-fluxo-operacional-de-uso-do-pacote-de-design" title="Permanent link">&para;</a></h1>
+<h2 id="0-gate-vigente-durante-a-auditoria-integral-do-gkr">0. Gate vigente durante a Auditoria Integral do GKR<a class="headerlink" href="#0-gate-vigente-durante-a-auditoria-integral-do-gkr" title="Permanent link">&para;</a></h2>
+<p>Este documento preserva o <strong>fluxo operacional histórico</strong> utilizado para consumir os pacotes externos de Design.</p>
+<p>No estado atual, o fluxo está <strong>dormente e não executável como autorização</strong>.</p>
+<div class="highlight"><pre><span></span><code>FLUXO / MÉTODO
+→ PRESERVADO
+
+DOWNLOAD / SOURCE LOCK / PROMPT / FIGMA MAKE / EXPLORAÇÃO
+→ NÃO AUTORIZADOS COMO NOVA EXECUÇÃO DURANTE A AUDITORIA
+
+V1–V4
+→ SNAPSHOTS HISTÓRICOS PRESERVADOS
+</code></pre></div>
+<p>As instruções abaixo continuam úteis como método de uma futura retomada, mas somente poderão voltar a ser executadas após ato humano explícito, reconciliação pós-auditoria do Handoff/Manifest/Flow e emissão ou revalidação de um pacote compatível com o checkpoint então vigente.</p>
+<div class="highlight"><pre><span></span><code>FLUXO DOCUMENTADO
+≠ FLUXO LIBERADO
+
+PACOTE EXISTENTE
+≠ PACOTE ATUALMENTE AUTORIZADO
+</code></pre></div>
+<hr />
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este guia registra como a pessoa responsável por Design, UX e UI deve iniciar o trabalho após receber o pacote externo vigente das <strong>oito Homes públicas da Guivos</strong>.</p>
 <p>Ele é subordinado a <code>GKR-UX-HOMES-DESIGN-DELIVERY-001</code> e <code>GKR-UX-HOMES-DESIGN-HANDOFF-001</code>.</p>
@@ -13645,6 +13693,7 @@ PACOTE DISPONÍVEL PARA DESIGN
 <blockquote>
 <p><strong>SNAPSHOT V4 NÃO EMITIDO — DESIGN V4 NÃO INICIADO POR ESTA PREPARAÇÃO.</strong></p>
 </blockquote>
+<p>Nota histórica: a emissão v4 foi posteriormente materializada e registrada em seu próprio snapshot record. Isso não altera a suspensão operacional vigente durante a auditoria integral.</p>
 <hr />
 <h2 id="3-fluxo-obrigatorio-apos-recebimento-do-pacote">3. Fluxo obrigatório após recebimento do pacote<a class="headerlink" href="#3-fluxo-obrigatorio-apos-recebimento-do-pacote" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>BAIXAR O ZIP DA EMISSÃO VIGENTE
@@ -13776,15 +13825,22 @@ APROVADO PARA HANDOFF DE ENGENHARIA
 <li>v1 permanece snapshot histórico de sua emissão original;</li>
 <li>v2 permanece preservada;</li>
 <li>v3 permanece separada em <code>delivery/design-handoff-v3</code>;</li>
-<li>v4 deve nascer em nova branch/snapshot/ZIP próprios <strong>somente após integração canônica desta preparação e captura do checkpoint pós-merge</strong>.</li>
+<li>v4 possui snapshot histórico próprio registrado e deve ser preservada sem reescrita.</li>
 </ul>
 <p>Não misturar arquivos entre emissões sem reconciliação explícita.</p>
+<p>Nenhuma dessas emissões funciona como autorização atual para nova execução durante a auditoria integral.</p>
 <hr />
 <h2 id="10-regra-final">10. Regra final<a class="headerlink" href="#10-regra-final" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><strong>Baixe a emissão correta, leia a orientação comum, escolha uma Home, mantenha o contexto isolado e só então use o Source Lock + Prompt/GENINPUT como entrada da exploração externa.</strong></p>
 </blockquote>
 <p>O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração; não decidem a arquitetura da Guivos.</p>
+<h3 id="estado-vigente">Estado vigente<a class="headerlink" href="#estado-vigente" title="Permanent link">&para;</a></h3>
+<p>A regra acima permanece o método de consumo quando a frente for reativada.</p>
+<div class="highlight"><pre><span></span><code>AGORA
+→ FLUXO DORMENTE
+→ NENHUMA NOVA EXECUÇÃO AUTORIZADA
+</code></pre></div>
 
 
 
