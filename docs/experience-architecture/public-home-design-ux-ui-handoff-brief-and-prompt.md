@@ -887,6 +887,7 @@ A futura materialização deve ser concebida desde o início para:
 
 - navegação por teclado;
 - leitores de tela;
+- texto ampliado;
 - contraste adequado;
 - foco visível;
 - legendas;
@@ -900,6 +901,8 @@ A futura materialização deve ser concebida desde o início para:
 - alvos de toque adequados;
 - ordem semântica de leitura;
 - ausência de dependência exclusiva de hover, clique ou gesto opcional.
+
+Texto ampliado deve preservar leitura e compreensão, sem exigir tamanhos fixos incompatíveis com a necessidade do visitante.
 
 Se vídeo não carregar, a tese da Home deve continuar íntegra.
 
@@ -1049,7 +1052,8 @@ Uma proposta futura deve ser rejeitada ou revista se:
 32. solicita localização, relato/narrativa pessoal, upload/arquivo, autenticação avulsa ou outro dado/contexto pessoal para continuar a exploração pública;
 33. inicia onboarding a partir de CTA público sem a transição governada de `Iniciar Jornada` para a Journey protegida;
 34. apresenta conteúdo patrocinado sem identificação perceptível ou o mistura a conteúdo orgânico/editorial de forma que compre aparência de prova orgânica;
-35. bloqueia scroll, força espera por animação, inicia áudio automaticamente, abre modal não solicitado, simula notificação, move alvo inesperadamente, esconde navegação de forma imprevisível ou usa qualquer dark pattern.
+35. bloqueia scroll, força espera por animação, inicia áudio automaticamente, abre modal não solicitado, simula notificação, move alvo inesperadamente, esconde navegação de forma imprevisível ou usa qualquer dark pattern;
+36. usa tamanhos de texto fixos que impeçam texto ampliado de permanecer legível e compreensível.
 
 ---
 
@@ -1077,6 +1081,7 @@ Uma proposta futura deve ser rejeitada ou revista se:
 - estados de destino disponível / ainda não ativado sem falsa disponibilidade;
 - estados de identificação e diferenciação entre conteúdo orgânico, editorial e patrocinado;
 - estados de interação que preservem scroll normal, ritmo próprio e ausência de coerção;
+- estados de texto ampliado preservando legibilidade e compreensão;
 - princípios de movimento;
 - critérios de acessibilidade;
 - inventário preliminar de componentes;
@@ -1118,6 +1123,7 @@ Avaliar cada proposta de `0` a `5` em:
 - clareza;
 - desejo de descoberta;
 - acessibilidade estrutural;
+- suporte a texto ampliado preservando legibilidade e compreensão;
 - robustez sem vídeo/animação;
 - conteúdo essencial independente de hover, clique ou gesto opcional;
 - autonomia de interação: scroll não bloqueante, sem espera forçada, áudio automático, modal não solicitado, notificação simulada ou dark pattern;
@@ -1153,6 +1159,7 @@ Nenhuma proposta deve avançar apenas por nota média alta se obtiver menos de `
 - ausência de promessa de resultado;
 - transparência de conteúdo patrocinado;
 - autonomia de interação e ausência de dark patterns;
+- acessibilidade com suporte a texto ampliado;
 - conteúdo essencial independente de interação opcional;
 - limites dos Domínios de Evolução preservados;
 - CTA público distinto de `Iniciar Jornada` e livre de coleta de contexto pessoal;
@@ -1204,6 +1211,7 @@ Antes de aprovar um futuro wireframe, perguntar:
 36. Algum CTA público inicia onboarding ou contexto pessoal antes da transição governada para Journey protegida?
 37. Conteúdo patrocinado permanece claramente identificável e separado de conteúdo orgânico/editorial, sem comprar aparência de prova ou recomendação?
 38. O visitante mantém controle de scroll e ritmo, sem espera forçada, áudio automático, modal não solicitado, notificação simulada, alvo móvel imprevisível ou dark pattern?
+39. Com texto ampliado, a experiência preserva legibilidade, compreensão e acesso ao conteúdo essencial?
 
 ---
 
@@ -1295,6 +1303,7 @@ NÃO FAZER
 - não iniciar onboarding a partir de CTA público antes da transição governada para Journey protegida;
 - não apresentar conteúdo patrocinado como orgânico/editorial nem omitir sua identificação perceptível;
 - não bloquear scroll, forçar espera por animação, iniciar áudio automaticamente, abrir modal não solicitado, simular notificação, mover alvo inesperadamente, esconder navegação de forma imprevisível ou usar dark patterns;
+- não usar tamanhos fixos que impeçam texto ampliado de permanecer legível e compreensível;
 - não simular escala, usuários, histórias, parceiros, métricas ou disponibilidade inexistentes;
 - não copiar visualmente benchmarks.
 
@@ -1316,7 +1325,7 @@ UX
 Permita exploração sem cadastro. Use progressive disclosure para organizar profundidade, nunca para esconder a tese essencial. Conteúdo essencial deve permanecer compreensível sem hover, clique, swipe ou gesto opcional; interação não pode compensar falta de clareza. Preserve liberdade de avançar, voltar ou sair e controle do próprio ritmo. Scroll não pode ser bloqueado; não force espera por animação; não inicie áudio automaticamente; não abra modais sem solicitação; não simule notificações; não mova alvos inesperadamente; não esconda navegação de forma imprevisível; não use dark patterns. Garanta compreensão sem vídeo, sem animação e em baixa conectividade.
 
 ACESSIBILIDADE
-Planeje teclado, foco, leitores de tela, contraste, legendas, transcrição, redução de movimento, fallback de mídia, responsividade e internacionalização desde o wireframe.
+Planeje teclado, foco, leitores de tela, **texto ampliado**, contraste, legendas, transcrição, redução de movimento, fallback de mídia, alvos de toque, responsividade e internacionalização desde o wireframe. Texto ampliado deve preservar legibilidade e compreensão; não dependa de tamanhos fixos incompatíveis com a necessidade do visitante.
 
 BENCHMARK — QUALIDADES A IGUALAR
 Busque ambição narrativa, clareza, simplicidade, segurança visual, sofisticação, consequência antes de funcionalidade, demonstração cedo, coerência, linguagem global e confiança. Use referências globais como evidência comparativa, nunca como identidade a copiar.
@@ -1338,7 +1347,7 @@ ENTREGUE
 11. comportamento com e sem vídeo;
 12. princípios de movimento e controles de ritmo sem scroll bloqueado, espera forçada ou interação coercitiva;
 13. estados responsivos;
-14. acessibilidade;
+14. acessibilidade, incluindo estado de texto ampliado preservando legibilidade e compreensão;
 15. inventário preliminar de componentes;
 16. decisões abertas;
 17. estados honestos para destinos ainda não ativados;
@@ -1372,6 +1381,8 @@ Preserve também o contrato de navegação: Header persistentemente disponível 
 O CTA da Hero pertence à descoberta pública da própria Home e deve ser distinto de Iniciar Jornada; não use Iniciar Jornada como CTA dominante da Hero nem obrigue entrada na Journey para explorar Possibilidades. A exploração pública deve continuar sem localização, relato/narrativa pessoal, upload/arquivo, autenticação ou outro contexto pessoal e sem iniciar onboarding; contexto pessoal começa somente depois da transição governada para Journey protegida.
 
 Conteúdo patrocinado deve ser perceptivelmente identificado e distinguido de conteúdo orgânico/editorial; nunca o apresente como prova orgânica ou recomendação pessoal. Preserve controle do visitante: scroll não bloqueante, sem espera forçada, áudio automático, modal não solicitado, notificação simulada, alvo móvel inesperado ou dark pattern.
+
+Garanta acessibilidade desde a arquitetura: teclado, foco, leitores de tela, **texto ampliado**, contraste, reduced motion, fallback de mídia e alvos de toque. Texto ampliado deve permanecer legível e compreensível.
 
 Use progressive disclosure sem esconder a tese essencial. Conteúdo essencial deve permanecer compreensível sem hover, clique, swipe ou gesto opcional; interação não pode compensar falta de clareza. A sensação deve combinar futuro, possibilidade, pertencimento, humanidade, confiança, simplicidade e escala global. A motivação inicial é descobrir. Não criar marketplace, portal de benefícios, coaching, site de IA, feed infinito ou catálogo de cards. Não prometer transformação nem simular personalização ou disponibilidade operacional. A Guivos amplia o horizonte; o caminho continua sendo do participante.
 ```
@@ -1423,6 +1434,7 @@ Antes de autorizar materialização, confirmar:
 - papel de Guivos Media está delimitado;
 - não houve mudança de contrato funcional da Home;
 - conteúdo essencial permanece compreensível sem hover, clique ou gesto opcional;
+- acessibilidade inclui suporte explícito a texto ampliado com legibilidade e compreensão preservadas;
 - conteúdo patrocinado permanece identificável e distinto de orgânico/editorial;
 - controles de interação preservam scroll normal, ritmo próprio e ausência de espera forçada, áudio automático, modal não solicitado, notificação simulada ou dark pattern;
 - CTA da Hero / exploração pública permanece distinto de `Iniciar Jornada`;
@@ -1463,13 +1475,14 @@ Se este documento tivesse de ser condensado em regras de controle — sem substi
 15. **Mantenha conteúdo patrocinado identificável e separado de orgânico/editorial.**
 16. **Mantenha autonomia e descoberta acima de pressão comercial.**
 17. **Preserve scroll, ritmo e controle do visitante; não use dark patterns.**
-18. **Mantenha o CTA da Hero como exploração pública distinta de `Iniciar Jornada`.**
-19. **Não colete contexto pessoal nem inicie onboarding durante a descoberta pública.**
-20. **Não use interação para compensar falta de clareza nem esconda conteúdo essencial atrás de gesto opcional.**
-21. **Entregue qualidade global sem copiar a identidade de nenhuma referência.**
-22. **Não trate disponibilidade de lançamento como gate da arquitetura conceitual.**
-23. **Nunca publique disponibilidade que não exista.**
-24. **Não use este handoff como autorização automática de materialização.**
+18. **Garanta texto ampliado legível e compreensível desde a arquitetura.**
+19. **Mantenha o CTA da Hero como exploração pública distinta de `Iniciar Jornada`.**
+20. **Não colete contexto pessoal nem inicie onboarding durante a descoberta pública.**
+21. **Não use interação para compensar falta de clareza nem esconda conteúdo essencial atrás de gesto opcional.**
+22. **Entregue qualidade global sem copiar a identidade de nenhuma referência.**
+23. **Não trate disponibilidade de lançamento como gate da arquitetura conceitual.**
+24. **Nunca publique disponibilidade que não exista.**
+25. **Não use este handoff como autorização automática de materialização.**
 
 ---
 
