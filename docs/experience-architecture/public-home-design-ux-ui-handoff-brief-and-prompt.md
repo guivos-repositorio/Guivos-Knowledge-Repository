@@ -696,6 +696,20 @@ Quando possível, mostrar não apenas “o evento”, mas “o que aconteceu dep
 
 Esse modelo gera autoridade superior a depoimentos instantâneos, desde que preserve consentimento, contexto, causalidade, privacidade e direito de retirada aplicável.
 
+### 13.6 Transparência editorial e conteúdo patrocinado
+
+Conteúdo real não se torna prova orgânica apenas porque é verdadeiro. A futura Home deve preservar classificação e identificação perceptível entre:
+
+```text
+CONTEÚDO ORGÂNICO
+≠ CONTEÚDO EDITORIAL
+≠ CONTEÚDO PATROCINADO
+```
+
+Conteúdo patrocinado pode participar da Home quando houver legitimidade editorial e autorização aplicável, mas deve permanecer **identificável como patrocinado** e nunca comprar aparência de prova orgânica, recomendação pessoal ou relevância contextual automática.
+
+A identificação não deve depender apenas de hover, gesto opcional, metadado invisível ou conhecimento prévio do visitante.
+
 ---
 
 ## 14. Guivos Media na futura experiência
@@ -722,6 +736,8 @@ Regra de elegibilidade editorial:
 > **cada conteúdo deve ajudar a provar ou aprofundar Possibilidade, Experiência, conexão, pertencimento, consequência, continuidade ou autoridade.**
 
 Se serve apenas para aumentar volume, não pertence à Home.
+
+Quando houver conteúdo patrocinado, sua origem/classificação deve permanecer perceptível e separada de conteúdo orgânico ou editorial; patrocínio não converte conteúdo em prova automática nem em recomendação pessoal.
 
 Integração técnica Media → Home não é autorizada por este documento.
 
@@ -846,6 +862,22 @@ O rodapé deve preservar um link `Mapa do Ecossistema` ou equivalente posteriorm
 
 ### 17.10 Equivalência desktop/mobile
 Desktop e mobile devem preservar a mesma hierarquia semântica e os mesmos caminhos essenciais. O mobile pode reorganizar a navegação em drawer, grupos progressivos ou solução equivalente, mas não pode eliminar encontrabilidade de produtos essenciais, `Sobre`, `Organizações e Coletivos`, idioma/região, `Login` ou `Iniciar Jornada`.
+
+### 17.11 Autonomia operacional da interação
+
+A futura experiência deve permitir que a pessoa mantenha controle perceptível sobre ritmo e navegação. Portanto:
+
+- scroll permanece normal e não bloqueante;
+- não há espera forçada por animação, vídeo ou transição;
+- mídia opcional pode ser ignorada;
+- não há áudio automático;
+- não há modais não solicitados;
+- não há notificações simuladas;
+- alvos não se movem inesperadamente;
+- navegação não desaparece de forma imprevisível;
+- não há dark patterns, urgência artificial ou interação coercitiva.
+
+Movimento e sofisticação devem ampliar percepção, nunca transformar o visitante em espectador obrigatório.
 
 ---
 
@@ -1015,7 +1047,9 @@ Uma proposta futura deve ser rejeitada ou revista se:
 30. esconde conteúdo essencial atrás de hover, clique, swipe ou gesto opcional, ou usa interação para compensar falta de clareza;
 31. usa `Iniciar Jornada` como CTA dominante da Hero ou torna a descoberta pública dependente da entrada na Journey;
 32. solicita localização, relato/narrativa pessoal, upload/arquivo, autenticação avulsa ou outro dado/contexto pessoal para continuar a exploração pública;
-33. inicia onboarding a partir de CTA público sem a transição governada de `Iniciar Jornada` para a Journey protegida.
+33. inicia onboarding a partir de CTA público sem a transição governada de `Iniciar Jornada` para a Journey protegida;
+34. apresenta conteúdo patrocinado sem identificação perceptível ou o mistura a conteúdo orgânico/editorial de forma que compre aparência de prova orgânica;
+35. bloqueia scroll, força espera por animação, inicia áudio automaticamente, abre modal não solicitado, simula notificação, move alvo inesperadamente, esconde navegação de forma imprevisível ou usa qualquer dark pattern.
 
 ---
 
@@ -1041,6 +1075,8 @@ Uma proposta futura deve ser rejeitada ou revista se:
 - estados responsivos;
 - estados vazios ou sem evidência disponível;
 - estados de destino disponível / ainda não ativado sem falsa disponibilidade;
+- estados de identificação e diferenciação entre conteúdo orgânico, editorial e patrocinado;
+- estados de interação que preservem scroll normal, ritmo próprio e ausência de coerção;
 - princípios de movimento;
 - critérios de acessibilidade;
 - inventário preliminar de componentes;
@@ -1074,6 +1110,7 @@ Avaliar cada proposta de `0` a `5` em:
 - Intelligence transversal sem substituir decisão;
 - autoridade por evidência;
 - modelo editorial com consequência e continuidade;
+- conteúdo patrocinado identificável e distinguível de orgânico/editorial;
 - diferenciação de marketplace/IA/coaching;
 - escala global percebida;
 - humanidade;
@@ -1083,6 +1120,7 @@ Avaliar cada proposta de `0` a `5` em:
 - acessibilidade estrutural;
 - robustez sem vídeo/animação;
 - conteúdo essencial independente de hover, clique ou gesto opcional;
+- autonomia de interação: scroll não bloqueante, sem espera forçada, áudio automático, modal não solicitado, notificação simulada ou dark pattern;
 - potencial de internacionalização;
 - Domínios de Evolução preservados como vocabulário opcional de amplitude, sem materialização automática;
 - CTA da Hero / exploração pública distinto de `Iniciar Jornada`;
@@ -1113,6 +1151,8 @@ Nenhuma proposta deve avançar apenas por nota média alta se obtiver menos de `
 - pergunta-mãe e tese preservadas;
 - Possibilidade ≠ Oportunidade;
 - ausência de promessa de resultado;
+- transparência de conteúdo patrocinado;
+- autonomia de interação e ausência de dark patterns;
 - conteúdo essencial independente de interação opcional;
 - limites dos Domínios de Evolução preservados;
 - CTA público distinto de `Iniciar Jornada` e livre de coleta de contexto pessoal;
@@ -1162,6 +1202,8 @@ Antes de aprovar um futuro wireframe, perguntar:
 34. O CTA da Hero permanece uma porta de descoberta pública distinta de `Iniciar Jornada`?
 35. A pessoa consegue continuar a exploração pública sem informar localização, relato pessoal, upload/arquivo, autenticação ou outro contexto pessoal?
 36. Algum CTA público inicia onboarding ou contexto pessoal antes da transição governada para Journey protegida?
+37. Conteúdo patrocinado permanece claramente identificável e separado de conteúdo orgânico/editorial, sem comprar aparência de prova ou recomendação?
+38. O visitante mantém controle de scroll e ritmo, sem espera forçada, áudio automático, modal não solicitado, notificação simulada, alvo móvel imprevisível ou dark pattern?
 
 ---
 
@@ -1251,11 +1293,13 @@ NÃO FAZER
 - não usar Iniciar Jornada como CTA dominante da Hero nem obrigar entrada na Journey para explorar a Home;
 - não solicitar localização, narrativa/relato pessoal, upload/arquivo, autenticação ou outro contexto pessoal para continuar a descoberta pública;
 - não iniciar onboarding a partir de CTA público antes da transição governada para Journey protegida;
+- não apresentar conteúdo patrocinado como orgânico/editorial nem omitir sua identificação perceptível;
+- não bloquear scroll, forçar espera por animação, iniciar áudio automaticamente, abrir modal não solicitado, simular notificação, mover alvo inesperadamente, esconder navegação de forma imprevisível ou usar dark patterns;
 - não simular escala, usuários, histórias, parceiros, métricas ou disponibilidade inexistentes;
 - não copiar visualmente benchmarks.
 
 CONTEÚDO E PROVA
-Priorize Pessoas reais, histórias reais, Organizações reais, Coletivos reais, experiências reais, conhecimento contextualizado e consequências observáveis. Sempre que possível mostre “o que aconteceu depois”. Guivos Media pode futuramente alimentar slots editoriais, mas a Home não deve virar portal de conteúdo.
+Priorize Pessoas reais, histórias reais, Organizações reais, Coletivos reais, experiências reais, conhecimento contextualizado e consequências observáveis. Sempre que possível mostre “o que aconteceu depois”. Guivos Media pode futuramente alimentar slots editoriais, mas a Home não deve virar portal de conteúdo. Preserve distinção clara entre conteúdo orgânico, editorial e patrocinado. Conteúdo patrocinado deve permanecer identificável e nunca adquirir aparência de prova orgânica, recomendação pessoal ou relevância automática.
 
 PRODUTOS
 Os sete Produtos Especializados só ganham protagonismo institucional após a tese maior estar compreendida. Preserve responsabilidades diferentes. Journey possui experiência e continuidade. Intelligence é transversal sem deixar de ser Produto Especializado. Business não representa automaticamente Organizações.
@@ -1269,7 +1313,7 @@ O CTA da Hero pertence à continuidade pública da própria Home e deve ser sema
 A exploração pública deve continuar sem coleta de contexto pessoal: não peça localização, narrativa/relato pessoal, upload/arquivo, autenticação ou outro dado/contexto pessoal e não inicie onboarding autonomamente. Contexto pessoal só começa depois da transição governada para Journey protegida.
 
 UX
-Permita exploração sem cadastro. Use progressive disclosure para organizar profundidade, nunca para esconder a tese essencial. Conteúdo essencial deve permanecer compreensível sem hover, clique, swipe ou gesto opcional; interação não pode compensar falta de clareza. Preserve liberdade de avançar, voltar ou sair. Garanta compreensão sem vídeo, sem animação e em baixa conectividade.
+Permita exploração sem cadastro. Use progressive disclosure para organizar profundidade, nunca para esconder a tese essencial. Conteúdo essencial deve permanecer compreensível sem hover, clique, swipe ou gesto opcional; interação não pode compensar falta de clareza. Preserve liberdade de avançar, voltar ou sair e controle do próprio ritmo. Scroll não pode ser bloqueado; não force espera por animação; não inicie áudio automaticamente; não abra modais sem solicitação; não simule notificações; não mova alvos inesperadamente; não esconda navegação de forma imprevisível; não use dark patterns. Garanta compreensão sem vídeo, sem animação e em baixa conectividade.
 
 ACESSIBILIDADE
 Planeje teclado, foco, leitores de tela, contraste, legendas, transcrição, redução de movimento, fallback de mídia, responsividade e internacionalização desde o wireframe.
@@ -1287,12 +1331,12 @@ ENTREGUE
 4. racional dos movimentos;
 5. hierarquia de conteúdo;
 6. estratégia da Hero;
-7. slots de prova e histórias;
+7. slots de prova e histórias com classificação orgânico/editorial/patrocinado quando aplicável;
 8. representação de Pessoas, Organizações e Coletivos;
 9. tratamento do Movimento 08 e responsabilidades dos Produtos;
 10. CTAs coerentes com descoberta/autonomia e explicitamente separados entre exploração pública e Iniciar Jornada;
 11. comportamento com e sem vídeo;
-12. princípios de movimento;
+12. princípios de movimento e controles de ritmo sem scroll bloqueado, espera forçada ou interação coercitiva;
 13. estados responsivos;
 14. acessibilidade;
 15. inventário preliminar de componentes;
@@ -1301,7 +1345,8 @@ ENTREGUE
 18. tabela de rastreabilidade contra os requisitos;
 19. proposta de navegação rastreável ao contrato vigente, cobrindo Header, launcher, Journey, rodapé e equivalência desktop/mobile;
 20. justificativa de qualquer uso dos Domínios de Evolução, demonstrando que não foram convertidos automaticamente em taxonomia/diagnóstico da Home;
-21. estados de exploração pública sem coleta de contexto pessoal nem onboarding antes da transição governada para Journey protegida.
+21. estados de exploração pública sem coleta de contexto pessoal nem onboarding antes da transição governada para Journey protegida;
+22. estados de identificação perceptível para conteúdo patrocinado e distinção de conteúdo orgânico/editorial.
 
 CRITÉRIO FINAL
 A solução deve fazer alguém pensar primeiro “existe mais mundo possível aqui”, depois “isso acontece de verdade”, depois “entendo por que a Guivos conecta isso”, depois “continuo livre para escolher”, e somente então “quero descobrir o que existe aqui”.
@@ -1325,6 +1370,8 @@ Os nove Domínios de Evolução da Journey são vocabulário opcional de amplitu
 Preserve também o contrato de navegação: Header persistentemente disponível com marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher, Login e Iniciar Jornada; Journey fora do launcher e Iniciar Jornada como sua porta própria e CTA de maior hierarquia no Header; launcher compacto com Travel, Ads, Media, Business, Intelligence e Mall; Mapa do Ecossistema preservado como link no rodapé sem antecipar sua página, mantendo a composição adicional do rodapé aberta; equivalência semântica entre desktop e mobile. Destino conceitual governado não significa disponibilidade operacional.
 
 O CTA da Hero pertence à descoberta pública da própria Home e deve ser distinto de Iniciar Jornada; não use Iniciar Jornada como CTA dominante da Hero nem obrigue entrada na Journey para explorar Possibilidades. A exploração pública deve continuar sem localização, relato/narrativa pessoal, upload/arquivo, autenticação ou outro contexto pessoal e sem iniciar onboarding; contexto pessoal começa somente depois da transição governada para Journey protegida.
+
+Conteúdo patrocinado deve ser perceptivelmente identificado e distinguido de conteúdo orgânico/editorial; nunca o apresente como prova orgânica ou recomendação pessoal. Preserve controle do visitante: scroll não bloqueante, sem espera forçada, áudio automático, modal não solicitado, notificação simulada, alvo móvel inesperado ou dark pattern.
 
 Use progressive disclosure sem esconder a tese essencial. Conteúdo essencial deve permanecer compreensível sem hover, clique, swipe ou gesto opcional; interação não pode compensar falta de clareza. A sensação deve combinar futuro, possibilidade, pertencimento, humanidade, confiança, simplicidade e escala global. A motivação inicial é descobrir. Não criar marketplace, portal de benefícios, coaching, site de IA, feed infinito ou catálogo de cards. Não prometer transformação nem simular personalização ou disponibilidade operacional. A Guivos amplia o horizonte; o caminho continua sendo do participante.
 ```
@@ -1376,6 +1423,8 @@ Antes de autorizar materialização, confirmar:
 - papel de Guivos Media está delimitado;
 - não houve mudança de contrato funcional da Home;
 - conteúdo essencial permanece compreensível sem hover, clique ou gesto opcional;
+- conteúdo patrocinado permanece identificável e distinto de orgânico/editorial;
+- controles de interação preservam scroll normal, ritmo próprio e ausência de espera forçada, áudio automático, modal não solicitado, notificação simulada ou dark pattern;
 - CTA da Hero / exploração pública permanece distinto de `Iniciar Jornada`;
 - exploração pública permanece sem localização, relato/narrativa pessoal, upload/arquivo, autenticação ou outro contexto pessoal;
 - onboarding e contexto pessoal só começam depois da transição governada para Journey protegida;
@@ -1411,14 +1460,16 @@ Se este documento tivesse de ser condensado em regras de controle — sem substi
 12. **Não confunda Organização com Business.**
 13. **Faça Intelligence compreender, não decidir.**
 14. **Construa autoridade por prova, transparência, consequência e continuidade.**
-15. **Mantenha autonomia e descoberta acima de pressão comercial.**
-16. **Mantenha o CTA da Hero como exploração pública distinta de `Iniciar Jornada`.**
-17. **Não colete contexto pessoal nem inicie onboarding durante a descoberta pública.**
-18. **Não use interação para compensar falta de clareza nem esconda conteúdo essencial atrás de gesto opcional.**
-19. **Entregue qualidade global sem copiar a identidade de nenhuma referência.**
-20. **Não trate disponibilidade de lançamento como gate da arquitetura conceitual.**
-21. **Nunca publique disponibilidade que não exista.**
-22. **Não use este handoff como autorização automática de materialização.**
+15. **Mantenha conteúdo patrocinado identificável e separado de orgânico/editorial.**
+16. **Mantenha autonomia e descoberta acima de pressão comercial.**
+17. **Preserve scroll, ritmo e controle do visitante; não use dark patterns.**
+18. **Mantenha o CTA da Hero como exploração pública distinta de `Iniciar Jornada`.**
+19. **Não colete contexto pessoal nem inicie onboarding durante a descoberta pública.**
+20. **Não use interação para compensar falta de clareza nem esconda conteúdo essencial atrás de gesto opcional.**
+21. **Entregue qualidade global sem copiar a identidade de nenhuma referência.**
+22. **Não trate disponibilidade de lançamento como gate da arquitetura conceitual.**
+23. **Nunca publique disponibilidade que não exista.**
+24. **Não use este handoff como autorização automática de materialização.**
 
 ---
 
