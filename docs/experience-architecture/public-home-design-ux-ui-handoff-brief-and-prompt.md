@@ -764,10 +764,36 @@ A mensagem central deve continuar compreensível sem animação, vídeo ou inter
 CTAs iniciais privilegiam continuidade e exploração, não urgência comercial artificial.
 
 ### 17.7 Navegação persistente sem dominância
-O Header deve permanecer disponível sem permanecer dominante, conforme a arquitetura de navegação vigente.
+O Header deve permanecer disponível sem dominar a Hero. Sem definir layout final, a futura materialização deve preservar o inventário semântico governado por `GKR-UX-HOME-NAV-001`:
+
+- marca / acesso à Home;
+- `Sobre`;
+- `Organizações e Coletivos`;
+- compartilhar como utilitário;
+- idioma/região por controle compacto;
+- launcher do ecossistema;
+- `Login`;
+- `Iniciar Jornada` como CTA de maior hierarquia no Header e porta própria da Journey.
+
+O launcher deve permanecer compacto e conter conceitualmente:
+
+- Travel;
+- Ads;
+- Media;
+- Business;
+- Intelligence;
+- Mall.
+
+Journey pertence ao ecossistema, aparece no Movimento 08 e pode possuir acessos contextuais, mas **não integra o launcher na hipótese vigente**.
 
 ### 17.8 Estado conceitual ≠ disponibilidade operacional
 Um destino pode existir na arquitetura de navegação antes de estar disponível no lançamento. A versão publicada não pode apresentar link, CTA ou estado enganoso.
+
+### 17.9 Rodapé e Mapa do Ecossistema
+O rodapé deve preservar um link `Mapa do Ecossistema` ou equivalente posteriormente validado, sem antecipar, desenhar ou especificar a futura página de destino nesta frente.
+
+### 17.10 Equivalência desktop/mobile
+Desktop e mobile devem preservar a mesma hierarquia semântica e os mesmos caminhos essenciais. O mobile pode reorganizar a navegação em drawer, grupos progressivos ou solução equivalente, mas não pode eliminar encontrabilidade de produtos essenciais, `Sobre`, `Organizações e Coletivos`, idioma/região, `Login` ou `Iniciar Jornada`.
 
 ---
 
@@ -996,6 +1022,17 @@ Avaliar cada proposta de `0` a `5` em:
 - acessibilidade estrutural;
 - robustez sem vídeo/animação;
 - potencial de internacionalização;
+- Header persistente preservando marca/Home, `Sobre`, `Organizações e Coletivos`, compartilhar, idioma/região, launcher, `Login` e `Iniciar Jornada`;
+- Journey com `Iniciar Jornada` como porta própria e CTA de maior hierarquia no Header;
+- launcher compacto contendo Travel, Ads, Media, Business, Intelligence e Mall, sem Journey;
+- produtos do launcher acessíveis sem dominar a primeira percepção;
+- `Sobre` e `Organizações e Coletivos` claramente encontráveis;
+- idioma/região disponível sem poluir o Header;
+- compartilhar permanecendo utilitário;
+- `Login` disponível sem disputar a narrativa;
+- rodapé contendo `Mapa do Ecossistema` somente como link, sem antecipar a página;
+- desktop e mobile preservando a mesma hierarquia semântica e os caminhos essenciais;
+- distinção entre destino conceitual governado e disponibilidade operacional;
 - verdade operacional nos estados que serão publicados.
 
 ### Gate recomendado
@@ -1010,6 +1047,7 @@ Nenhuma proposta deve avançar apenas por nota média alta se obtiver menos de `
 - pergunta-mãe e tese preservadas;
 - Possibilidade ≠ Oportunidade;
 - ausência de promessa de resultado;
+- contrato de navegação vigente preservado;
 - verdade operacional daquilo que será publicado.
 
 ---
@@ -1044,6 +1082,11 @@ Antes de aprovar um futuro wireframe, perguntar:
 24. A cadeia com Mecanismo está corretamente restrita ao Movimento 06, sem virar requisito de toda história?
 25. Algum estado publicado finge disponibilidade que ainda não existe?
 26. Alguma indisponibilidade de lançamento foi usada indevidamente para impedir a arquitetura conceitual?
+27. O Header preserva marca/Home, `Sobre`, `Organizações e Coletivos`, compartilhar, idioma/região, launcher, `Login` e `Iniciar Jornada`?
+28. Journey permanece fora do launcher e `Iniciar Jornada` é sua porta própria no Header?
+29. O launcher contém Travel, Ads, Media, Business, Intelligence e Mall de forma compacta e não dominante?
+30. O rodapé mantém `Mapa do Ecossistema` somente como link, sem detalhar a futura página?
+31. Desktop e mobile preservam os mesmos caminhos essenciais e a mesma hierarquia semântica?
 
 ---
 
@@ -1135,7 +1178,7 @@ PRODUTOS
 Os sete Produtos Especializados só ganham protagonismo institucional após a tese maior estar compreendida. Preserve responsabilidades diferentes. Journey possui experiência e continuidade. Intelligence é transversal sem deixar de ser Produto Especializado. Business não representa automaticamente Organizações.
 
 NAVEGAÇÃO E GTM
-Arquitetura conceitual/wireframe não depende de todos os destinos estarem lançados. A versão publicada, porém, nunca pode apresentar destino, CTA ou estado como operacional quando não estiver legitimamente disponível.
+Preserve o contrato semântico de navegação vigente. O Header deve manter marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher do ecossistema, Login e Iniciar Jornada. Iniciar Jornada é o CTA de maior hierarquia no Header e a porta própria da Journey. Journey não integra o launcher. O launcher deve conter Travel, Ads, Media, Business, Intelligence e Mall de forma compacta, acessível e sem dominar a primeira percepção. O rodapé deve conter somente o link Mapa do Ecossistema, sem antecipar a página de destino. Desktop e mobile devem preservar a mesma hierarquia semântica e os mesmos caminhos essenciais. Arquitetura conceitual/wireframe não depende de todos os destinos estarem lançados; a versão publicada, porém, nunca pode apresentar destino, CTA ou estado como operacional quando não estiver legitimamente disponível.
 
 UX
 Permita exploração sem cadastro. Use progressive disclosure. Preserve liberdade de avançar, voltar ou sair. Garanta compreensão sem vídeo, sem animação e em baixa conectividade.
@@ -1167,7 +1210,8 @@ ENTREGUE
 15. inventário preliminar de componentes;
 16. decisões abertas;
 17. estados honestos para destinos ainda não ativados;
-18. tabela de rastreabilidade contra os requisitos.
+18. tabela de rastreabilidade contra os requisitos;
+19. proposta de navegação rastreável ao contrato vigente, cobrindo Header, launcher, Journey, rodapé e equivalência desktop/mobile.
 
 CRITÉRIO FINAL
 A solução deve fazer alguém pensar primeiro “existe mais mundo possível aqui”, depois “isso acontece de verdade”, depois “entendo por que a Guivos conecta isso”, depois “continuo livre para escolher”, e somente então “quero descobrir o que existe aqui”.
@@ -1185,6 +1229,8 @@ Projete a Home pública da Guivos como entrada para um ecossistema global de Pos
 Mostre Possibilidade antes de produto, prova antes de autodeclaração e mundo real antes de tecnologia. Possibilidade não é sinônimo de Oportunidade. O Movimento 06 é “Da Possibilidade à Experiência” e deve preservar Mecanismo, com Oportunidade real somente quando houver materialização externa legítima; o modelo editorial geral continua Contexto → Possibilidade → Decisão → Experiência → Consequência → Continuidade.
 
 No Movimento 08, preserve Journey como experiência/continuidade, Mall/Travel/Business/Media/Ads com responsabilidades próprias e Intelligence como Produto Especializado transversal / Intelligence Layer. Todos os sete são Produtos Especializados. Organização não é Business. Intelligence amplia compreensão e não decide pelo participante.
+
+Preserve também o contrato de navegação: Header com marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher, Login e Iniciar Jornada; Journey fora do launcher e Iniciar Jornada como sua porta própria; launcher compacto com Travel, Ads, Media, Business, Intelligence e Mall; rodapé com Mapa do Ecossistema somente como link; equivalência semântica entre desktop e mobile. Destino conceitual governado não significa disponibilidade operacional.
 
 A sensação deve combinar futuro, possibilidade, pertencimento, humanidade, confiança, simplicidade e escala global. A motivação inicial é descobrir. Não criar marketplace, portal de benefícios, coaching, site de IA, feed infinito ou catálogo de cards. Não prometer transformação nem simular personalização ou disponibilidade operacional. A Guivos amplia o horizonte; o caminho continua sendo do participante.
 ```
@@ -1237,6 +1283,7 @@ Antes de autorizar materialização, confirmar:
 - não existe nova personalização pública autorizada por inferência;
 - disponibilidade real de provas, histórias e métricas está identificada;
 - produtos e nomenclaturas vigentes estão reconciliados;
+- contrato de navegação vigente foi preservado, incluindo Header, launcher, porta própria da Journey, `Mapa do Ecossistema` no rodapé e equivalência desktop/mobile;
 - fronteira arquitetura × GTM foi respeitada;
 - estados que serão publicados são operacionalmente verdadeiros;
 - escopo da etapa de design está explicitamente autorizado.
