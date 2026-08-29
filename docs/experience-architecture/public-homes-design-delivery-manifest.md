@@ -2,13 +2,17 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 4.0.0
+version: 4.1.0
 owner: Experience Architecture
-last_updated: 2026-08-20
+last_updated: 2026-08-29
 normative: true
+maturity: design_delivery_manifest_preserved_new_emissions_suspended_during_full_corpus_audit
 depends_on:
+  - GKR-STATE-001
+  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
 related:
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
   - GKR-UX-HOME-PERSON-GENINPUT-001
@@ -42,6 +46,45 @@ related:
 ---
 
 # Homes Públicas — Manifesto Canônico de Entrega para Design
+
+## 0. Gate vigente durante a Auditoria Integral do GKR
+
+Este Manifesto preserva o método e a composição documental utilizados nas emissões históricas de Design.
+
+A emissão v4, posteriormente materializada e registrada por `GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001`, permanece um **fato histórico reproduzível de seu checkpoint**. A preparação e a emissão daquele snapshot não constituem autorização atual para reutilizar o pacote, criar nova emissão ou iniciar nova exploração visual.
+
+Durante a Auditoria Integral:
+
+```text
+MANIFESTO / MÉTODO DE ENTREGA
+→ PRESERVADO
+
+SNAPSHOTS V1–V4
+→ PRESERVADOS COMO HISTÓRICO
+
+NOVA EMISSÃO / REEMISSÃO OPERACIONAL
+→ SUSPENSA
+
+ENTREGA PARA DESIGN / FIGMA / WIREFRAME / UI / PROTÓTIPO
+→ NÃO AUTORIZADA COMO NOVA EXECUÇÃO
+```
+
+A linguagem das seções abaixo sobre preparação da v4, próximo ato, liberação do pacote e execução em Design descreve o regime daquele checkpoint e deve ser lida como proveniência operacional.
+
+Uma futura emissão exige novo ato governado após os gates aplicáveis da auditoria, revalidação do corpus então vigente e novo checkpoint reproduzível.
+
+```text
+MANIFESTO EXISTENTE
+≠ PACOTE ATUALMENTE LIBERADO
+
+SNAPSHOT HISTÓRICO
+≠ BASELINE VISUAL VIGENTE
+
+REEMISSÃO
+≠ ATUALIZAÇÃO AUTOMÁTICA
+```
+
+---
 
 ## 1. Finalidade
 
@@ -479,6 +522,28 @@ Esta preparação não executa esse ato.
 
 ## 15. Síntese
 
-A versão `4.0.0` incorpora Guivos Intelligence como oitava Home ao método canônico de entrega, preserva as 25 fontes da v3, acrescenta seis fontes específicas de Intelligence e prepara um snapshot externo de **31 fontes canônicas + 8 guias operacionais = 39 arquivos**.
+A versão `4.0.0` incorporou Guivos Intelligence como oitava Home ao método canônico de entrega, preservou as 25 fontes da v3, acrescentou seis fontes específicas de Intelligence e preparou um snapshot externo de **31 fontes canônicas + 8 guias operacionais = 39 arquivos**.
 
 > **DESIGN DELIVERY V4 PREPARADO — SNAPSHOT V4 NÃO EMITIDO — DESIGN NÃO INICIADO.**
+
+Nota histórica posterior: o snapshot v4 foi efetivamente emitido e possui registro próprio em `GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001`. A frase acima permanece como estado desta versão preparatória no momento em que foi escrita.
+
+---
+
+## 16. Estado vigente sob auditoria integral
+
+```text
+V1–V4
+→ HISTÓRICO PRESERVADO
+
+MANIFESTO
+→ MÉTODO PRESERVADO
+
+NOVA EMISSÃO / REEMISSÃO / LIBERAÇÃO PARA DESIGN
+→ SUSPENSA DURANTE A AUDITORIA INTEGRAL
+
+FUTURA RETOMADA
+→ EXIGE NOVO ATO GOVERNADO + REVALIDAÇÃO PÓS-AUDITORIA
+```
+
+O Manifesto continua normativo para a integridade de uma futura emissão quando reativada; não funciona como autorização de emissão no estado atual.

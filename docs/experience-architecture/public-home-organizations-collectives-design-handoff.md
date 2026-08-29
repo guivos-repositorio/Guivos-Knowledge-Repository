@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-OC-HANDOFF-001
 title: Handoff para Design/UX/UI da Home Pública de Organizações e Coletivos
-status: draft
-version: 0.1.0
+status: superseded
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-11
+last_updated: 2026-08-29
 parent: GKR-UX-HOME-OC-MASTER-001
 depends_on:
   - GKR-UX-HOME-OC-MASTER-001
@@ -14,15 +14,59 @@ depends_on:
   - GKR-UX-HOME-OC-SYS-001
   - GKR-UX-HOME-SYS-001
 related:
+  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOME-HANDOFF-001
   - UXA-014
   - UXA-019
   - UXA-015
   - UXA-016
+superseded_by:
+  - GKR-UX-HOME-OC-MASTER-001
 normative: false
+maturity: historical_p4_design_handoff_provenance_non_authorizing
 ---
 
 # Handoff para Design/UX/UI da Home Pública de Organizações e Coletivos
+
+## 0. Nota de vigência atual — Lote E6 da auditoria integral
+
+Este documento preserva integralmente o **P4 histórico** da sequência de prontidão `P1 → P5` da Home Pública de Organizações e Coletivos.
+
+No estado atual ele é **proveniência de tradução para Design**, não handoff operacional vigente.
+
+```text
+GKR-UX-HOME-OC-MASTER-001 v1.0.0
+→ autoridade de consumo atual
+
+GKR-UX-HOME-OC-NARR-001 v0.2.0
+GKR-UX-HOME-OC-NAV-001 v0.2.0
+GKR-UX-HOME-OC-SYS-001 v0.2.0
+→ detalhes especializados reconciliados
+
+ESTE HANDOFF P4
+→ histórico / proveniência
+→ NÃO autoriza Design
+→ NÃO autoriza wireframe, Figma, SVG, UI ou protótipo
+```
+
+A linguagem abaixo sobre `P4`, `P5`, materialização futura, critérios de wireframe e liberdade de Design descreve **o checkpoint histórico em que este handoff foi produzido**. Ela não reabre uma sequência operacional atual.
+
+Durante a auditoria integral:
+
+```text
+HANDOFF HISTÓRICO
+≠ HANDOFF OPERACIONAL VIGENTE
+
+CRITÉRIO HISTÓRICO DE WIREFRAME
+≠ AUTORIZAÇÃO ATUAL DE WIREFRAME
+
+DESIGN / FIGMA / UI / PROTÓTIPO
+→ NÃO AUTORIZADOS
+```
+
+Em qualquer divergência semântica ou procedimental com o Master reconciliado e o gate global atual, prevalecem as autoridades pós-reconciliação.
+
+---
 
 ## 1. Finalidade
 

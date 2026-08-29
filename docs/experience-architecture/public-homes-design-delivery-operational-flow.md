@@ -2,17 +2,49 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
 title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Experience Architecture
-last_updated: 2026-08-20
+last_updated: 2026-08-29
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
 depends_on:
+  - GKR-STATE-001
+  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
 normative: false
+maturity: historical_operational_flow_preserved_execution_suspended_during_full_corpus_audit
 ---
 
 # Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
+
+## 0. Gate vigente durante a Auditoria Integral do GKR
+
+Este documento preserva o **fluxo operacional histórico** utilizado para consumir os pacotes externos de Design.
+
+No estado atual, o fluxo está **dormente e não executável como autorização**.
+
+```text
+FLUXO / MÉTODO
+→ PRESERVADO
+
+DOWNLOAD / SOURCE LOCK / PROMPT / FIGMA MAKE / EXPLORAÇÃO
+→ NÃO AUTORIZADOS COMO NOVA EXECUÇÃO DURANTE A AUDITORIA
+
+V1–V4
+→ SNAPSHOTS HISTÓRICOS PRESERVADOS
+```
+
+As instruções abaixo continuam úteis como método de uma futura retomada, mas somente poderão voltar a ser executadas após ato humano explícito, reconciliação pós-auditoria do Handoff/Manifest/Flow e emissão ou revalidação de um pacote compatível com o checkpoint então vigente.
+
+```text
+FLUXO DOCUMENTADO
+≠ FLUXO LIBERADO
+
+PACOTE EXISTENTE
+≠ PACOTE ATUALMENTE AUTORIZADO
+```
+
+---
 
 ## 1. Finalidade
 
@@ -62,6 +94,8 @@ PACOTE DISPONÍVEL PARA DESIGN
 Enquanto esse gate não estiver concluído:
 
 > **SNAPSHOT V4 NÃO EMITIDO — DESIGN V4 NÃO INICIADO POR ESTA PREPARAÇÃO.**
+
+Nota histórica: a emissão v4 foi posteriormente materializada e registrada em seu próprio snapshot record. Isso não altera a suspensão operacional vigente durante a auditoria integral.
 
 ---
 
@@ -234,9 +268,11 @@ A ferramenta generativa não possui autoridade para promover seu próprio output
 - v1 permanece snapshot histórico de sua emissão original;
 - v2 permanece preservada;
 - v3 permanece separada em `delivery/design-handoff-v3`;
-- v4 deve nascer em nova branch/snapshot/ZIP próprios **somente após integração canônica desta preparação e captura do checkpoint pós-merge**.
+- v4 possui snapshot histórico próprio registrado e deve ser preservada sem reescrita.
 
 Não misturar arquivos entre emissões sem reconciliação explícita.
+
+Nenhuma dessas emissões funciona como autorização atual para nova execução durante a auditoria integral.
 
 ---
 
@@ -245,3 +281,13 @@ Não misturar arquivos entre emissões sem reconciliação explícita.
 > **Baixe a emissão correta, leia a orientação comum, escolha uma Home, mantenha o contexto isolado e só então use o Source Lock + Prompt/GENINPUT como entrada da exploração externa.**
 
 O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração; não decidem a arquitetura da Guivos.
+
+### Estado vigente
+
+A regra acima permanece o método de consumo quando a frente for reativada.
+
+```text
+AGORA
+→ FLUXO DORMENTE
+→ NENHUMA NOVA EXECUÇÃO AUTORIZADA
+```

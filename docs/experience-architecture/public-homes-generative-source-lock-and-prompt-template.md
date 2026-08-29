@@ -2,11 +2,13 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-13
+last_updated: 2026-08-29
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
 depends_on:
+  - GKR-STATE-001
+  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
 related:
   - GKR-UX-HOME-MASTER-001
@@ -16,9 +18,40 @@ related:
   - GKR-UX-HOME-MEDIA-MASTER-001
   - GPA-005
 normative: true
+maturity: generative_template_preserved_instantiation_suspended_during_full_corpus_audit
 ---
 
 # Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
+
+## 0. Gate vigente durante a Auditoria Integral do GKR
+
+Este documento continua normativo como **template e contrato de integridade** para uma futura execução generativa governada.
+
+Ele não constitui autorização para criar ou executar um Source Lock enquanto a Auditoria Integral estiver aberta.
+
+```text
+TEMPLATE
+→ PRESERVADO
+
+MÉTODO DE SOURCE LOCK
+→ PRESERVADO
+
+NOVA INSTANCIAÇÃO OPERACIONAL
+→ SUSPENSA DURANTE A AUDITORIA
+
+PROMPT / FIGMA MAKE / WIREFRAME / UX / UI / PROTÓTIPO
+→ NÃO AUTORIZADOS COMO NOVA EXECUÇÃO
+```
+
+A regra atual é:
+
+> **TEMPLATE DE EXECUÇÃO ≠ AUTORIZAÇÃO PARA EXECUTAR.**
+
+Source Locks e snapshots históricos permanecem evidência dos checkpoints em que foram emitidos. Uma futura instância exige fechamento dos gates aplicáveis, ato humano explícito de reativação e checkpoint pós-auditoria reconciliado.
+
+As seções abaixo preservam integralmente o método que deverá ser retomado quando houver autorização própria.
+
+---
 
 ## 1. Finalidade
 
@@ -694,6 +727,19 @@ O objetivo não é tornar o processo burocrático. É permitir liberdade visual 
 
 > **A ferramenta pode propor forma. Não pode inventar a Guivos que a forma representa.**
 
-Estado desta frente:
+Estado histórico do método:
 
 > **SOURCE LOCK E PROMPT CONTROLADO DEFINIDOS — PRONTOS PARA INSTANCIAÇÃO POR HOME — NENHUM OUTPUT VISUAL É CANÔNICO POR GERAÇÃO AUTOMÁTICA.**
+
+### Estado vigente
+
+```text
+TEMPLATE
+→ PRONTO E PRESERVADO
+
+INSTANCIAÇÃO POR HOME
+→ SUSPENSA DURANTE A AUDITORIA INTEGRAL
+
+NOVA EXECUÇÃO GENERATIVA DE DESIGN
+→ NÃO AUTORIZADA
+```

@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.2.0
+id: ROADMAP-13.3.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.2.0
+version: 13.3.0
 owner: Guivos
 last_updated: 2026-08-29
 normative: true
@@ -19,6 +19,10 @@ related:
   - RP-002-PMF-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-HOME-OC-MASTER-001
+  - GKR-UX-HOME-OC-NARR-001
+  - GKR-UX-HOME-OC-NAV-001
+  - GKR-UX-HOME-OC-SYS-001
   - GTM-009
   - GTM-010
   - GTM-011
@@ -29,7 +33,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.2.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.3.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -45,7 +49,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A, B, C e D estão reconciliados no estado vigente. O próximo lote governado é **E — Home Organizações e Coletivos**.
+Os Lotes A, B, C, D e E estão reconciliados no estado vigente. O próximo lote governado é **F — Homes dos Produtos Especializados**.
 
 Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Design ou implementação deve ser promovida como consequência automática de trabalho anterior.
 
@@ -54,7 +58,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.2.0** |
+| Estado global | **GKR-STATE-001 v3.3.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -68,11 +72,12 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | RP-002 methodological readiness | **PASS** |
 | RP-002 operational readiness | **HOLD** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
-| Home Organizações e Coletivos | **REBUILD_REQUIRED / NEXT LOT** |
-| Demais Homes | **AUDIT_PENDING** |
+| Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
+| Demais Homes | **AUDIT_PENDING / LOT F** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |
+| Design das Homes | **OPERATIONAL AUTHORIZATION SUSPENDED DURING AUDIT** |
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 
 Nenhuma contagem agregada de wireframes vigentes/validados é afirmada enquanto o inventário visual estiver em reconciliação.
@@ -123,9 +128,9 @@ C. FUNDAÇÃO / MARCA / PUBLIC CANON      [CONCLUÍDO]
 ↓
 D. HOME PRINCIPAL / PESSOA              [CONCLUÍDO]
 ↓
-E. HOME ORGANIZAÇÕES E COLETIVOS          [PRÓXIMO]
+E. HOME ORGANIZAÇÕES E COLETIVOS        [CONCLUÍDO]
 ↓
-F. HOMES DOS PRODUTOS
+F. HOMES DOS PRODUTOS                    [PRÓXIMO]
 ↓
 G. JORNADA DA PESSOA
 ↓
@@ -188,8 +193,8 @@ Objetivos concluídos:
 Estado:
 
 ```text
-GKR-STATE-001 v3.0.0
-→ INTEGRATED AS FIRST AUDIT GLOBAL STATE
+GKR-STATE-001
+→ AUTORIDADE GLOBAL VIGENTE
 
 GLOBAL POST-RP002 ADDENDUM
 → CONTENT ABSORBED
@@ -305,27 +310,74 @@ PRIMEIRA TELA AUTENTICADA DA PESSOA
 Estado:
 
 ```text
-REBUILD_REQUIRED
-NEXT_LOT
+COMPLETED
+DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 ```
 
-A reconstrução deve incorporar:
+O Lote E reconstruiu a autoridade de consumo da Home O/C e reconciliou os detalhes especializados sem antecipar a experiência autenticada.
 
-- `UXA-014`;
-- `UXA-019`;
+Autoridades atuais:
+
+```text
+GKR-UX-HOME-OC-MASTER-001 v1.0.0
+→ autoridade de consumo
+
+GKR-UX-HOME-OC-NARR-001 v0.2.0
+→ progressão / macroexperiências
+
+GKR-UX-HOME-OC-NAV-001 v0.2.0
+→ Header / Hero / CTAs / navegação
+
+GKR-UX-HOME-OC-SYS-001 v0.2.0
+→ conteúdo / prova / evidência / verdade editorial
+```
+
+O lote incorporou e protegeu:
+
+- `UXA-014` e `UXA-019`;
 - Research RP-002 sobre supply e relevância;
 - nove Domínios de Evolução;
-- atores, autoridades e jobs autenticados;
-- Arquitetura da Informação autenticada;
+- atores, autoridades e jobs autenticados sem transportar sua IA para a Home pública;
 - neutralidade econômica;
-- Organização ≠ Business;
-- Coletivo ≠ audiência/canal de marketing;
-- papel de Organizações e Coletivos como agentes capazes de materializar/habilitar oportunidades;
+- `Organização ≠ Business`;
+- `Coletivo ≠ audiência/canal de marketing`;
+- Journey como **Experience Layer**;
+- Travel, Mall, Media, Business, Ads e Intelligence como **Produtos Especializados**;
+- Intelligence também como **Intelligence Layer / Produto Especializado transversal**;
+- `Possibilidade ≠ Oportunidade`;
+- `Ainda estou descobrindo ≠ décimo domínio`;
+- M11 vigente: **Como podemos continuar daqui?**;
+- caminhos finais como continuidades conceituais, não destinos operacionais presumidos;
 - separação entre Home pública e experiência autenticada.
 
-A Home pública não deve antecipar wireframes internos que ainda não existem.
+Fechamento residual E6:
+
+- P1–P5 O/C foram reclassificados como proveniência histórica, não sequência operacional atual;
+- o Source Lock histórico O/C permanece evidência de checkpoint não autorizadora;
+- a autorização operacional do pacote transversal de Design fica suspensa enquanto a auditoria integral estiver aberta;
+- snapshots históricos de Design permanecem preservados como fatos de seus checkpoints.
+
+Gate:
+
+```text
+HOME O/C
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+
+WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
+→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
+
+EXPERIÊNCIA AUTENTICADA O/C
+→ NOT MATERIALIZED BY LOT E
+```
 
 ## 10. Lote F — Homes dos Produtos Especializados
+
+Estado:
+
+```text
+NEXT_LOT
+AUDIT_PENDING
+```
 
 Auditar individualmente:
 
@@ -348,9 +400,11 @@ REBUILD_REQUIRED
 
 Nenhuma Home será mantida ou reescrita apenas por data de criação.
 
+Durante F, os Handoffs, Manifests, snapshots e GENINPUTs antigos podem informar proveniência, mas não autorizam materialização enquanto o gate global permanecer fechado.
+
 ## 11. Lote G — Jornada da Pessoa
 
-Somente depois da Home principal atualizada:
+Somente depois da Home principal atualizada e dos lotes anteriores fechados:
 
 - reconciliar jornada atual da Pessoa;
 - identificar a primeira responsabilidade realmente necessária após a Home;
@@ -814,11 +868,13 @@ ARTEFATO FÍSICO ≠ AUTORIDADE VIGENTE
 DOCUMENTAÇÃO ≠ IMPLEMENTAÇÃO
 SIMULAÇÃO ≠ PMF
 CONSOLIDAÇÃO ≠ REDUÇÃO DE CONHECIMENTO
+P1–P5 HISTÓRICOS ≠ SEQUÊNCIA OPERACIONAL ATUAL
+DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL DURANTE A AUDITORIA
 ```
 
 ## 26. Regra do próximo movimento
 
-Com os Lotes A, B, C e D concluídos no estado vigente, o próximo movimento é **Lote E — Home Organizações e Coletivos**.
+Com os Lotes A, B, C, D e E concluídos no estado vigente, o próximo movimento é **Lote F — Homes dos Produtos Especializados**.
 
 Até o fechamento integral da auditoria:
 
@@ -826,10 +882,11 @@ Até o fechamento integral da auditoria:
 NÃO HÁ UXA-102 AUTOMÁTICA
 NÃO HÁ PRIMEIRA TELA PÓS-HOME AUTOMÁTICA
 NÃO HÁ WIREFRAME AUTENTICADO AUTOMÁTICO
+NÃO HÁ NOVO SOURCE LOCK OPERACIONAL DE DESIGN AUTOMÁTICO
 NÃO HÁ DESIGN AUTOMÁTICO
 NÃO HÁ ENGINEERING AUTOMÁTICA
 NÃO HÁ FILING AUTOMÁTICO
 NÃO HÁ PMF AUTOMÁTICO
 ```
 
-A Home principal/Pessoa permanece `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`. O Lote E reconstrói documentalmente a Home Organizações e Coletivos; a primeira tela autenticada somente será definida após os gates restantes e o fechamento integral da auditoria.
+As Homes Principal/Pessoa e Organizações/Coletivos permanecem `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`. O Lote F audita as Homes dos Produtos Especializados; a primeira tela autenticada somente será definida após os gates restantes e o fechamento integral da auditoria.

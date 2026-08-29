@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-OC-AUDIT-001
 title: Auditoria de Prontidão Pré-Materialização da Home Pública de Organizações e Coletivos
-status: draft
-version: 0.1.0
+status: superseded
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-11
+last_updated: 2026-08-29
 parent: GKR-UX-HOME-OC-MASTER-001
 depends_on:
   - GKR-UX-HOME-OC-MASTER-001
@@ -19,14 +19,61 @@ depends_on:
   - UXA-014
   - UXA-019
 related:
+  - GKR-FULL-CORPUS-AUDIT-001
+  - GKR-UX-HOME-OC-NARR-001
+  - GKR-UX-HOME-OC-NAV-001
+  - GKR-UX-HOME-OC-SYS-001
   - UXA-015
   - UXA-016
   - UXA-017
   - UXA-018
+superseded_by:
+  - GKR-UX-HOME-OC-MASTER-001
 normative: false
+maturity: historical_pre_materialization_readiness_provenance_non_authorizing
 ---
 
 # Auditoria de Prontidão Pré-Materialização da Home Pública de Organizações e Coletivos
+
+## 0. Nota de vigência atual — Lote E6 da auditoria integral
+
+Este documento preserva a auditoria executada no checkpoint histórico que originou a sequência `P1 → P5` da Home Pública de Organizações e Coletivos.
+
+Seu conteúdo abaixo permanece preservado como **proveniência, evidência de raciocínio e rastreabilidade**. Ele não descreve o gate operacional vigente da Home O/C e não deve ser utilizado para reabrir automaticamente a sequência P1–P5, autorizar Design ou inferir materialização.
+
+A autoridade de consumo atual é:
+
+```text
+GKR-UX-HOME-OC-MASTER-001 v1.0.0
+→ verdade narrativa, semântica e funcional vigente da Home O/C
+
+GKR-UX-HOME-OC-NARR-001 v0.2.0
+GKR-UX-HOME-OC-NAV-001 v0.2.0
+GKR-UX-HOME-OC-SYS-001 v0.2.0
+→ detalhes especializados reconciliados
+
+ESTE DOCUMENTO
+→ auditoria histórica que explica por que P1–P5 existiram
+→ NÃO é gate atual
+→ NÃO autoriza wireframe, Figma, SVG, UI, protótipo ou implementação
+```
+
+Durante a auditoria integral:
+
+```text
+P1–P5 HISTÓRICOS
+≠ SEQUÊNCIA OPERACIONAL ATUAL
+
+READINESS HISTÓRICO
+≠ READINESS ATUAL
+
+HANDOFF HISTÓRICO
+≠ AUTORIZAÇÃO DE DESIGN
+```
+
+A topologia, terminologia e estados registrados nas seções históricas abaixo devem ser lidos no contexto daquele checkpoint. Em qualquer divergência com o Master reconciliado e suas autoridades especializadas atuais, prevalece o estado pós-reconciliação.
+
+---
 
 ## 1. Finalidade
 

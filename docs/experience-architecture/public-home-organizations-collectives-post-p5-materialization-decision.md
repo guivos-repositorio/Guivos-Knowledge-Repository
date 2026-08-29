@@ -2,9 +2,9 @@
 id: GKR-HOME-DECISION-NO-WIREFRAME-001
 title: Decisão Pós-P5 — Continuidade da Home de Organizações e Coletivos sem Wireframe
 status: superseded
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
-last_updated: 2026-08-14
+last_updated: 2026-08-29
 depends_on:
   - GKR-UX-PUBLIC-HOME-ORG-COLLECTIVE-001
   - GKR-HOME-P1
@@ -14,43 +14,61 @@ depends_on:
   - GKR-HOME-P5
 related:
   - GKR-STATE-001
-  - ROADMAP-12.77.0
+  - GKR-FULL-CORPUS-AUDIT-001
+  - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - M7.88
   - UXA-101
 superseded_by:
-  - GKR-UX-HOMES-DESIGN-HANDOFF-001
-normative: true
+  - GKR-UX-HOME-OC-MASTER-001
+normative: false
+maturity: historical_post_p5_decision_provenance_non_authorizing
 ---
 
 # Decisão Pós-P5 — Continuidade da Home de Organizações e Coletivos sem Wireframe
 
-## 0. Nota de superação posterior
+## 0. Nota de vigência atual — Lote E6 da auditoria integral
 
-Este documento preserva a decisão humana tomada em 2026-08-12 e continua válido como **registro histórico do estado pós-P5 naquele momento**.
+Este documento preserva duas decisões humanas históricas sucessivas:
 
-Posteriormente, `GKR-UX-HOMES-DESIGN-HANDOFF-001` instituiu uma nova decisão humana para as cinco Homes públicas já convergidas e autorizou proceduralmente a fase de Design, incluindo exploração em Figma Make, arquitetura visual, **wireframe de baixa fidelidade**, UX, UI e prototipação.
+1. em 2026-08-12, a continuidade da Home O/C não utilizaria wireframe como etapa;
+2. em checkpoint posterior, `GKR-UX-HOMES-DESIGN-HANDOFF-001` autorizou proceduralmente uma fase externa de Design para as Homes então tratadas como convergidas.
 
-Por ser autoridade posterior e declarar expressamente que, em conflito com proibições procedimentais anteriores de materialização, o handoff prevalece **somente quanto à autorização da fase de Design**, a proibição de wireframe registrada neste documento está **superada nesse limite específico**.
+Durante a **Auditoria Integral do GKR**, nenhuma dessas decisões históricas funciona como autorização operacional atual da Home O/C.
+
+A autoridade vigente é:
+
+```text
+GKR-UX-HOME-OC-MASTER-001 v1.0.0
+→ autoridade de consumo atual da Home pública O/C
+→ DOCUMENTALMENTE RECONSTRUÍDA PRÉ-MATERIALIZAÇÃO
+
+GKR-FULL-CORPUS-AUDIT-001
++ GKR-STATE-001
+→ governam o gate global vigente
+
+GKR-UX-HOMES-DESIGN-HANDOFF-001
+→ método e decisão procedimental preservados historicamente
+→ autorização operacional SUSPENSA enquanto a auditoria integral estiver aberta
+```
 
 Portanto:
 
 ```text
-DECISÃO PÓS-P5 DE 2026-08-12
-→ permanece como histórico válido
+PÓS-P5 HISTÓRICO
+≠ AUTORIZAÇÃO ATUAL
 
-GKR-UX-HOMES-DESIGN-HANDOFF-001
-→ governa o estado procedimental vigente da fase de Design
-→ wireframe low-fi pode ser explorado para Organizações e Coletivos
+HANDOFF TRANSVERSAL HISTÓRICO
+≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
-SEMÂNTICA / NARRATIVA / PRODUTO / FRONTEIRAS
-→ continuam governados pelo Documento Mestre e contratos vigentes
+WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
+→ NÃO AUTORIZADOS DURANTE A AUDITORIA INTEGRAL
 ```
 
-Esta superação não autoriza Engenharia, implementação, código ou publicação.
+Abaixo permanece preservado o registro histórico da decisão e de sua superação posterior naquele contexto.
 
-## 1. Autoridade e contexto
+## 1. Autoridade e contexto histórico
 
 Este registro formaliza a decisão humana de governança tomada **depois** da conclusão de `GKR-HOME-P5` sobre a continuidade da Home Pública de Organizações e Coletivos.
 
@@ -60,29 +78,30 @@ A decisão humana posterior foi:
 
 > **A continuidade da Home Pública de Organizações e Coletivos não utilizará wireframe como etapa do caminho de materialização.**
 
-Esta decisão é posterior ao P5 e governa o caminho futuro sem reescrever a evidência histórica que levou até ele.
+Esta decisão é posterior ao P5 e preserva o caminho definido naquele checkpoint sem reescrever a evidência histórica que levou até ele.
 
-## 2. Efeito normativo
+Posteriormente, `GKR-UX-HOMES-DESIGN-HANDOFF-001` instituiu nova decisão procedimental para a fase de Design. Essa autorização posterior permanece válida como **fato histórico do checkpoint em que foi emitida**, mas está suspensa como autorização operacional durante a auditoria integral atual.
 
-A partir desta decisão:
+## 2. Efeito histórico da decisão
 
-- `GKR-HOME-P1` a `GKR-HOME-P5` permanecem válidos como evidência, auditoria e fechamento documental da fase de prontidão;
-- o estado de prontidão alcançado por P5 **não** implica autorização de wireframe;
-- wireframe deixa de ser etapa candidata ou padrão para a continuidade desta Home;
-- a próxima forma de materialização, se houver, deverá ser escolhida por **novo ato humano de governança**;
-- esse futuro ato deverá definir um caminho **sem passar por wireframe**;
-- nenhuma UXA nova é criada por esta decisão;
-- `UXA-102/V5` permanece não iniciada;
-- Engenharia de Produto permanece pausada;
-- Figma, protótipo, UI, implementação, código e publicação permanecem não autorizados por este registro.
+Naquele estado:
 
-> **Nota de vigência:** os itens procedimentais acima descrevem o estado estabelecido por esta decisão em 2026-08-12. Para a fase de Design, foram posteriormente superados por `GKR-UX-HOMES-DESIGN-HANDOFF-001` conforme a seção 0. Os demais limites continuam preservados.
+- `GKR-HOME-P1` a `GKR-HOME-P5` permaneciam válidos como evidência, auditoria e fechamento documental da fase de prontidão;
+- o estado de prontidão alcançado por P5 **não** implicava autorização de wireframe;
+- wireframe deixava de ser etapa candidata ou padrão para a continuidade desta Home;
+- a próxima forma de materialização, se houvesse, dependeria de **novo ato humano de governança**;
+- nenhuma UXA nova era criada por esta decisão;
+- `UXA-102/V5` permanecia não iniciada;
+- Engenharia de Produto permanecia pausada;
+- Figma, protótipo, UI, implementação, código e publicação permaneciam não autorizados por este registro.
+
+A autorização procedimental posterior de Design não altera o fato histórico acima e, no estado atual, não prevalece sobre o gate global da auditoria integral.
 
 ## 3. Escopo exato
 
 A decisão aplica-se especificamente à:
 
-**Home Pública de Organizações e Coletivos**, governada pelo documento mestre `GKR-UX-PUBLIC-HOME-ORG-COLLECTIVE-001` e pelos pacotes P1–P5 associados.
+**Home Pública de Organizações e Coletivos**.
 
 Ela não declara que wireframes são proibidos em todo o GKR, não altera retroativamente materializações históricas de outras superfícies e não redefine o método geral de Experience Architecture.
 
@@ -95,7 +114,7 @@ Portanto, esta decisão:
 - não deprecia `UXA-022`;
 - não reclassifica `UXA-022` como erro;
 - não remove nem invalida seu valor histórico no escopo da Main Home;
-- não autoriza sua reutilização como etapa da nova Home de Organizações e Coletivos.
+- não autoriza sua reutilização como etapa da Home de Organizações e Coletivos.
 
 A distinção obrigatória é:
 
@@ -105,31 +124,55 @@ UXA-022 / Main Home
 Home Pública de Organizações e Coletivos / P1–P5
 ```
 
-## 5. Estado após a decisão
+## 5. Estado histórico após a decisão
 
-| Elemento | Estado histórico desta decisão |
+| Elemento | Estado histórico |
 |---|---|
 | P1–P5 | preservados e historicamente válidos |
-| P5 | prontidão documental concluída; não é mandato de wireframe |
-| Wireframe para Home de Organizações e Coletivos | **não seria utilizado como etapa de continuidade; posteriormente superado para a fase de Design por GKR-UX-HOMES-DESIGN-HANDOFF-001** |
-| Próxima forma de materialização | à época, não definida; posteriormente definida proceduralmente pelo handoff de Design |
+| P5 | prontidão documental concluída; não era mandato de wireframe |
+| Wireframe para Home de Organizações e Coletivos | não seria utilizado como etapa naquele checkpoint |
+| Próxima forma de materialização | não definida naquele checkpoint |
 | UXA-102/V5 | não iniciada |
-| Engenharia de Produto | não iniciada/pausada conforme autoridade vigente |
-| Figma/protótipo/UI | à época, não autorizados; posteriormente autorizados somente como fase de Design |
+| Engenharia de Produto | não iniciada/pausada |
+| Figma/protótipo/UI | não autorizados por esta decisão |
 | Implementação/código | não autorizados |
-| Publicação | não autorizada por esta decisão nem pelo handoff de Design |
+| Publicação | não autorizada |
 
-## 6. Próximo ato governado
+Checkpoint posterior:
 
-No estado registrado em 2026-08-12, não existia próxima etapa automática.
+- o Handoff Canônico de Design chegou a autorizar proceduralmente exploração externa;
+- essa autorização posterior é preservada como parte da história;
+- **no estado atual da auditoria integral ela está suspensa e não pode ser consumida como autorização vigente**.
 
-A decisão posterior materializada em `GKR-UX-HOMES-DESIGN-HANDOFF-001` passou a governar o próximo ato procedimental das cinco Homes: exploração de Design controlada por Source Lock, sem autorização de Engenharia ou publicação.
+## 6. Próximo ato governado atual
+
+Não existe próximo ato automático de materialização decorrente deste documento.
+
+A futura retomada de Design para a Home O/C exige cumulativamente:
+
+1. fechamento dos gates globais aplicáveis da auditoria integral;
+2. ato humano explícito de reativação;
+3. reconciliação do Handoff/Manifest/Flow aplicáveis;
+4. novo ou explicitamente reconciliado Source Lock contra a baseline pós-auditoria.
+
+Até lá:
+
+```text
+DESIGN
+→ SUSPENSO COMO AUTORIZAÇÃO OPERACIONAL
+
+WIREFRAME / FIGMA / UI / PROTÓTIPO
+→ NÃO AUTORIZADOS
+
+ENGENHARIA / IMPLEMENTAÇÃO / PUBLICAÇÃO
+→ NÃO AUTORIZADAS
+```
 
 ## 7. Preservação final
 
 ```text
-prontidão para decidir
-≠ autorização para materializar
+prontidão histórica para decidir
+≠ autorização atual para materializar
 ≠ obrigação de usar wireframe
 ≠ protótipo
 ≠ UI
@@ -137,4 +180,4 @@ prontidão para decidir
 ≠ publicação
 ```
 
-Este documento preserva a validade histórica da decisão pós-P5. A autorização procedimental vigente da fase de Design é governada pela autoridade posterior `GKR-UX-HOMES-DESIGN-HANDOFF-001`.
+Este documento preserva a validade histórica das decisões pós-P5 sem competir com o Master reconciliado e com o gate global vigente da auditoria integral.

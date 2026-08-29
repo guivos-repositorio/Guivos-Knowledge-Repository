@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-29
 normative: false
@@ -135,8 +135,8 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-001 | Major | política anterior mantinha histórico/superseded no corpus | `UPDATE` | regra corrigida no Lote A |
 | F-002 | Major | MENU contém arquitetura histórica de construção e alta fragmentação | `REBUILD` | aberto |
 | F-003 | Critical | Home principal/Pessoa conflita com assinatura e Movimento 06 vigentes | `REBUILD` | resolvido no Lote D |
-| F-004 | Major | Home O/C antecede mudanças estruturais posteriores | `REBUILD` | próximo lote |
-| F-005 | Major | Mall, Travel, Media, Ads, Business e Intelligence precisam de auditoria semântica | `HOLD_REVIEW` | aberto |
+| F-004 | Major | Home O/C antecedia mudanças estruturais posteriores | `REBUILD` | resolvido no Lote E |
+| F-005 | Major | Mall, Travel, Media, Ads, Business e Intelligence precisam de auditoria semântica | `HOLD_REVIEW` | próximo lote / aberto |
 | F-006 | Major | UXA-015..018 e SVGs associados continuam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | aberto |
 | F-007 | Major | contagens físicas de SVGs não representam maturidade vigente | `UPDATE` | aberto |
 | F-008 | Major | Estado Atual e Roadmap dependiam de reconciliação posterior | `UPDATE + CONSOLIDATE` | resolvido no Lote B |
@@ -196,21 +196,66 @@ Conclusão comprovada:
 
 Esse estado não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, disponibilidade operacional nem a primeira tela autenticada da Pessoa.
 
-## 8. F-004 — Home de Organizações e Coletivos
+## 8. F-004 — Home de Organizações e Coletivos — resolvido no Lote E
 
-O Documento Mestre vigente antecede, entre outros:
+O Lote E confrontou e reconciliou a Home O/C com:
 
 - RP-002;
-- reconciliação do estado real de Organização/Coletivo;
+- estado real de Organização/Coletivo;
 - atores, autoridades e jobs autenticados;
 - Arquitetura da Informação autenticada;
 - atualizações de marca e autoridade pública;
 - consolidação dos nove Domínios de Evolução;
-- Fundação reconciliada no Lote C.
+- Fundação reconciliada no Lote C;
+- arquitetura atual de Possibilidade, Mecanismo e Oportunidade;
+- topologia atual de Journey, Produtos Especializados e Intelligence.
+
+Autoridades atuais:
+
+```text
+GKR-UX-HOME-OC-MASTER-001 v1.0.0
+→ autoridade de consumo vigente
+
+GKR-UX-HOME-OC-NARR-001 v0.2.0
+→ progressão e macroexperiências reconciliadas
+
+GKR-UX-HOME-OC-NAV-001 v0.2.0
+→ Header, Hero, CTAs e navegação reconciliados
+
+GKR-UX-HOME-OC-SYS-001 v0.2.0
+→ conteúdo, prova, evidência e verdade editorial reconciliados
+```
+
+O fechamento preserva:
+
+- mesma Guivos, outra perspectiva pública;
+- `O que podemos tornar possível juntos?`;
+- Pessoa, Organização e Coletivo como participantes estruturais;
+- `participante ≠ produto`;
+- `Organização ≠ Business`;
+- Journey como **Experience Layer**;
+- Travel, Mall, Media, Business, Ads e Intelligence como **Produtos Especializados**;
+- Intelligence também como **Intelligence Layer / Produto Especializado transversal**;
+- nove Domínios de Evolução sem taxonomia visual automática;
+- `Possibilidade ≠ Oportunidade`;
+- `Ainda estou descobrindo ≠ décimo domínio`;
+- M11 vigente `Como podemos continuar daqui?`;
+- caminhos finais O/C como continuidades conceituais, não destinos operacionais presumidos;
+- separação entre Home pública e experiência autenticada.
+
+O fechamento residual reclassifica P1–P5 O/C como proveniência histórica e suspende a autorização operacional do pacote transversal de Design durante a auditoria integral, preservando snapshots históricos e métodos.
 
 Conclusão comprovada:
 
-> **Home Organizações e Coletivos = REBUILD_REQUIRED.**
+> **Home Organizações e Coletivos = DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION.**
+
+```text
+LOTE E
+→ COMPLETED
+
+WIREFRAME / FIGMA / SVG / UX / UI / PROTÓTIPO
+→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
+```
 
 ## 9. F-005 — demais Homes
 
@@ -396,8 +441,8 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | B — Estado Atual e Roadmap | `COMPLETED` | autoridades globais atuais sem addendum dependente |
 | C — Fundação / Marca / Public Canon | `COMPLETED` | Fundação reconciliada/enriquecida + GOG 5.3.0 |
 | D — Home principal / Pessoa | `COMPLETED` | master e resíduos documentais reconciliados; materialização não autorizada |
-| E — Home Organizações e Coletivos | `REBUILD_REQUIRED / NEXT` | master reconstruído |
-| F — Homes de Produtos | `PENDING` | classificação e correções |
+| E — Home Organizações e Coletivos | `COMPLETED` | master + NARR/NAV/SYS + resíduos documentais reconciliados; materialização não autorizada |
+| F — Homes de Produtos | `NEXT / AUDIT_PENDING` | classificação e correções |
 | G — Jornada da Pessoa | `PENDING` | fluxo vigente consolidado antes da próxima tela |
 | H — Organização / Coletivo | `PENDING` | recentes autoridades integradas e históricos removidos após absorção |
 | I — Registries / Catálogos / SVGs | `PENDING` | inventário e maturidade recomputados |
@@ -421,9 +466,9 @@ C. Fundação / Marca / Public Canon              [concluído]
 ↓
 D. Home principal / Pessoa                      [concluído]
 ↓
-E. Home Organizações e Coletivos                 [próximo]
+E. Home Organizações e Coletivos                [concluído]
 ↓
-F. Homes de Produtos
+F. Homes de Produtos                             [próximo]
 ↓
 G/H/I. Experience Architecture e inventário visual
 ↓
@@ -572,11 +617,11 @@ A auditoria somente pode encerrar quando:
 AUDIT
 → IN_PROGRESS
 
-A / B / C / D
+A / B / C / D / E
 → COMPLETED
 
 NEXT LOT
-→ E — HOME ORGANIZAÇÕES E COLETIVOS
+→ F — HOMES DOS PRODUTOS ESPECIALIZADOS
 
 BASELINE FINAL
 → NOT AUTHORIZED
@@ -588,10 +633,13 @@ HOME PRINCIPAL
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
 HOME ORGANIZAÇÕES E COLETIVOS
-→ REBUILD_REQUIRED
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
 DEMAIS HOMES
 → AUDIT_PENDING
+
+DESIGN DAS HOMES
+→ OPERATIONAL AUTHORIZATION SUSPENDED DURING FULL-CORPUS AUDIT
 
 MENU FINAL
 → NOT YET DESIGNED

@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-OC-AUDIT-002
 title: Reauditoria Final de Prontidão Pré-Materialização da Home Pública de Organizações e Coletivos
-status: draft
-version: 0.1.0
+status: superseded
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-11
+last_updated: 2026-08-29
 parent: GKR-UX-HOME-OC-MASTER-001
 depends_on:
   - GKR-UX-HOME-OC-MASTER-001
@@ -17,16 +17,53 @@ depends_on:
   - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-SYS-001
 related:
+  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOME-AUDIT-001
   - GKR-UX-HOME-AUDIT-002
   - UXA-014
   - UXA-019
   - UXA-015
   - UXA-016
+superseded_by:
+  - GKR-UX-HOME-OC-MASTER-001
 normative: false
+maturity: historical_p5_readiness_provenance_non_authorizing
 ---
 
 # Reauditoria Final de Prontidão Pré-Materialização da Home Pública de Organizações e Coletivos
+
+## 0. Nota de vigência atual — Lote E6 da auditoria integral
+
+Este documento preserva o resultado histórico do **P5** da Home O/C, inclusive o veredito:
+
+> **READY FOR SEPARATE HUMAN DECISION ON CONCEPTUAL WIREFRAME**
+
+Esse resultado permanece correto **para o checkpoint em que foi emitido**. Ele não representa o estado procedimental atual da Home durante a Auditoria Integral do GKR.
+
+A leitura vigente é:
+
+```text
+P5 READY
+→ prontidão histórica daquele checkpoint
+→ evidência de que P1–P4 haviam fechado os gaps daquela sequência
+
+P5 READY
+≠ readiness atual
+≠ autorização atual de Design
+≠ autorização atual de wireframe
+
+GKR-UX-HOME-OC-MASTER-001 v1.0.0
+→ autoridade de consumo atual da Home O/C
+→ DOCUMENTALMENTE RECONSTRUÍDA PRÉ-MATERIALIZAÇÃO
+
+AUDITORIA INTEGRAL
+→ gate global vigente
+→ materialização visual nova NÃO autorizada
+```
+
+As seções abaixo são preservadas como **proveniência histórica da reauditoria P5**. Referências a `READY`, decisão humana sobre wireframe e critérios para materialização futura não devem ser convertidas em próximo passo operacional atual.
+
+---
 
 ## 1. Finalidade
 
