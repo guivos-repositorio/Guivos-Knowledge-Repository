@@ -1382,7 +1382,7 @@ O CTA da Hero pertence à descoberta pública da própria Home e deve ser distin
 
 Conteúdo patrocinado deve ser perceptivelmente identificado e distinguido de conteúdo orgânico/editorial; nunca o apresente como prova orgânica ou recomendação pessoal. Preserve controle do visitante: scroll não bloqueante, sem espera forçada, áudio automático, modal não solicitado, notificação simulada, alvo móvel inesperado ou dark pattern.
 
-Garanta acessibilidade desde a arquitetura: teclado, foco, leitores de tela, **texto ampliado**, contraste, reduced motion, fallback de mídia e alvos de toque. Texto ampliado deve permanecer legível e compreensível.
+Garanta acessibilidade desde a arquitetura: teclado, foco, leitores de tela, **texto ampliado**, contraste, legendas/transcrições quando aplicáveis, reduced motion, fallback de mídia e alvos de toque. Texto ampliado deve permanecer legível e compreensível.
 
 Use progressive disclosure sem esconder a tese essencial. Conteúdo essencial deve permanecer compreensível sem hover, clique, swipe ou gesto opcional; interação não pode compensar falta de clareza. A sensação deve combinar futuro, possibilidade, pertencimento, humanidade, confiança, simplicidade e escala global. A motivação inicial é descobrir. Não criar marketplace, portal de benefícios, coaching, site de IA, feed infinito ou catálogo de cards. Não prometer transformação nem simular personalização ou disponibilidade operacional. A Guivos amplia o horizonte; o caminho continua sendo do participante.
 ```
