@@ -18,15 +18,15 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
 | Auditoria integral | **IN_PROGRESS** |
-| Próximo lote da auditoria | **E — HOME ORGANIZAÇÕES E COLETIVOS** |
+| Próximo lote da auditoria | **F — HOMES DOS PRODUTOS ESPECIALIZADOS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
-| Home Organizações e Coletivos | **REBUILD_REQUIRED** |
-| Demais Homes | **AUDIT_PENDING** |
+| Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
+| Demais Homes | **AUDIT_PENDING / LOT F** |
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.2.0](roadmap.md) governa a sequência atual.
+O [Roadmap 13.3.0](roadmap.md) governa a sequência atual.
 
 ## Por que o repositório está em auditoria
 
@@ -54,7 +54,7 @@ O histórico permanece no Git.
 ### Estado e direção
 
 - [Registro do Estado Atual 3.2.0](project/current-state-register.md)
-- [Roadmap 13.2.0](roadmap.md)
+- [Roadmap 13.3.0](roadmap.md)
 - [Auditoria Integral do GKR](project/gkr-full-corpus-audit.md)
 - [Guia Oficial da Guivos / Public Canon](public/guia-oficial-da-guivos.md)
 
@@ -293,13 +293,13 @@ Simulação sintética não equivale a PMF.
 | Home | Estado na auditoria |
 |---|---|
 | Principal / Pessoa | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Organizações e Coletivos | `REBUILD_REQUIRED` |
-| Mall | `AUDIT_PENDING` |
-| Travel | `AUDIT_PENDING` |
-| Media | `AUDIT_PENDING` |
-| Ads | `AUDIT_PENDING` |
-| Business | `AUDIT_PENDING` |
-| Intelligence | `AUDIT_PENDING` |
+| Organizações e Coletivos | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Mall | `AUDIT_PENDING / LOT F` |
+| Travel | `AUDIT_PENDING / LOT F` |
+| Media | `AUDIT_PENDING / LOT F` |
+| Ads | `AUDIT_PENDING / LOT F` |
+| Business | `AUDIT_PENDING / LOT F` |
+| Intelligence | `AUDIT_PENDING / LOT F` |
 
 A antiga leitura agregada de “oito Homes convergidas” não é usada como maturidade corrente enquanto a auditoria estiver aberta.
 
