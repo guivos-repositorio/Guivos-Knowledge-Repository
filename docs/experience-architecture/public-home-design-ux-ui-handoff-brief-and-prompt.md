@@ -50,7 +50,7 @@ Seu objetivo é permitir que um designer, equipe de produto, agência ou sistema
 - quais emoções e interpretações são desejadas;
 - quais provas devem sustentar a narrativa;
 - qual é a diferença entre Possibilidade, Mecanismo e Oportunidade real;
-- como o Movimento 06 leva da Possibilidade à Experiência sem prometer resultado;
+- como o Movimento 06 pode representar uma passagem da Possibilidade à Experiência sem afirmar que toda Possibilidade chegará a uma Experiência nem prometer resultado;
 - qual deve ser o papel de Pessoas, Organizações e Coletivos;
 - qual deve ser o papel futuro do Guivos Media;
 - quando os Produtos Especializados podem aparecer;
@@ -511,7 +511,7 @@ EXPERIÊNCIA
 ≠ RESULTADO GARANTIDO
 ```
 
-Nem toda Possibilidade exige Oportunidade externa. Mecanismo pode ser conhecimento, relação, recurso, ferramenta ou outra capacidade que apoia a passagem. A narrativa deve distinguir correlação, contribuição e causalidade e nunca afirmar que a Guivos causou toda mudança quando isso não puder ser sustentado.
+Uma Possibilidade pode ou não chegar a uma Experiência. A cadeia acima representa uma passagem possível e governada, não um funil universal, destino inevitável ou progressão garantida. Nem toda Possibilidade exige Oportunidade externa. Mecanismo pode ser conhecimento, relação, recurso, ferramenta ou outra capacidade que apoia a passagem. A narrativa deve distinguir correlação, contribuição e causalidade e nunca afirmar que a Guivos causou toda mudança quando isso não puder ser sustentado.
 
 ### 11.7 Movimento 07 — Pertencimento
 
@@ -854,6 +854,8 @@ O launcher deve permanecer compacto e conter conceitualmente:
 
 Journey pertence ao ecossistema, aparece no Movimento 08 e pode possuir acessos contextuais, mas **não integra o launcher na hipótese vigente**.
 
+Durante o scroll, o Header pode compactar funcionalmente para reduzir ocupação e preservar contraste, mas sua hierarquia semântica e pressão comercial devem permanecer estáveis. `Iniciar Jornada` permanece disponível sem ganhar pressão perceptiva com a profundidade da rolagem: não pode pulsar, crescer para capturar atenção, surgir apenas depois como gatilho de conversão, virar banner sticky, bloquear conteúdo ou repetir-se desnecessariamente em múltiplas posições.
+
 ### 17.8 Estado conceitual ≠ disponibilidade operacional
 Um destino pode existir na arquitetura de navegação antes de estar disponível no lançamento. A versão publicada não pode apresentar link, CTA ou estado enganoso.
 
@@ -1055,7 +1057,9 @@ Uma proposta futura deve ser rejeitada ou revista se:
 33. inicia onboarding a partir de CTA público sem a transição governada de `Iniciar Jornada` para a Journey protegida;
 34. apresenta conteúdo patrocinado sem identificação perceptível ou o mistura a conteúdo orgânico/editorial de forma que compre aparência de prova orgânica;
 35. bloqueia scroll, força espera por animação, inicia áudio automaticamente, abre modal não solicitado, simula notificação, move alvo inesperadamente, esconde navegação de forma imprevisível ou usa qualquer dark pattern;
-36. usa tamanhos de texto fixos que impeçam texto ampliado de permanecer legível e compreensível.
+36. usa tamanhos de texto fixos que impeçam texto ampliado de permanecer legível e compreensível;
+37. trata a chegada da Possibilidade à Experiência como inevitável, universal ou garantida;
+38. aumenta progressivamente a pressão perceptiva/comercial de `Iniciar Jornada` durante o scroll, inclusive por pulso, crescimento, banner sticky, gatilho tardio de conversão, bloqueio ou repetição desnecessária.
 
 ---
 
@@ -1084,6 +1088,7 @@ Uma proposta futura deve ser rejeitada ou revista se:
 - estados de destino disponível / ainda não ativado sem falsa disponibilidade;
 - estados de identificação e diferenciação entre conteúdo orgânico, editorial e patrocinado;
 - estados de interação que preservem scroll normal, ritmo próprio e ausência de coerção;
+- estados do Header durante scroll demonstrando compactação funcional sem aumento da pressão perceptiva/comercial de `Iniciar Jornada`;
 - estados de texto ampliado preservando legibilidade e compreensão;
 - princípios de movimento;
 - critérios de acessibilidade;
@@ -1110,7 +1115,7 @@ Avaliar cada proposta de `0` a `5` em:
 - conexão compreendida;
 - autonomia preservada;
 - Possibilidade ≠ Oportunidade;
-- Movimento 06 coerente e sem promessa;
+- Movimento 06 coerente, condicional quanto à chegada à Experiência e sem promessa;
 - Pessoas / Organizações / Coletivos preservados;
 - produtos subordinados à ideia;
 - Journey com papel distinto;
@@ -1139,6 +1144,7 @@ Avaliar cada proposta de `0` a `5` em:
 - onboarding inexistente antes da transição governada para Journey protegida;
 - Header persistente preservando marca/Home, `Sobre`, `Organizações e Coletivos`, compartilhar, idioma/região, launcher, `Login` e `Iniciar Jornada`;
 - Journey com `Iniciar Jornada` como porta própria e CTA de maior hierarquia no Header;
+- pressão perceptiva/comercial de `Iniciar Jornada` estável durante o scroll, sem escalada por profundidade da página;
 - launcher compacto contendo Travel, Ads, Media, Business, Intelligence e Mall, sem Journey;
 - produtos do launcher acessíveis sem dominar a primeira percepção;
 - `Sobre` e `Organizações e Coletivos` claramente encontráveis;
@@ -1162,11 +1168,13 @@ Nenhuma proposta deve avançar apenas por nota média alta se obtiver menos de `
 - realidade/prova;
 - pergunta-mãe e tese preservadas;
 - Possibilidade ≠ Oportunidade;
+- Movimento 06 sem inevitabilidade entre Possibilidade e Experiência;
 - ausência de promessa de resultado;
 - evolução livre de proxies de consumo, luxo ou produtividade;
 - governança de histórias reais/longitudinais preservada;
 - transparência de conteúdo patrocinado;
 - autonomia de interação e ausência de dark patterns;
+- estabilidade da pressão perceptiva/comercial de `Iniciar Jornada` durante o scroll;
 - acessibilidade com suporte a texto ampliado;
 - conteúdo essencial independente de interação opcional;
 - mobile como solução semântica própria;
@@ -1224,6 +1232,8 @@ Antes de aprovar um futuro wireframe, perguntar:
 40. A proposta evita tratar luxo, consumo, compras, viagens acumuladas, pontos, rankings, streaks ou produtividade como definição ou proxy de evolução?
 41. Histórias reais/longitudinais preservam consentimento/autorização aplicável, privacidade, proveniência, contexto/causalidade correta e direito de correção/retirada quando aplicável?
 42. O mobile é uma solução semântica própria, com foco e sequência, e não simples empilhamento do desktop, sem perder hierarquia ou caminhos essenciais?
+43. O Movimento 06 deixa explícito que uma Possibilidade pode ou não chegar a uma Experiência, sem virar funil ou destino inevitável?
+44. Durante o scroll, `Iniciar Jornada` permanece disponível sem ganhar pressão perceptiva/comercial por pulso, crescimento, banner sticky, gatilho tardio ou repetição desnecessária?
 
 ---
 
@@ -1273,7 +1283,7 @@ SEQUÊNCIA NARRATIVA
 3. Amplitude — mostrar caminhos sem taxonomia rígida.
 4. Desconexão — mostrar fragmentação sem FOMO.
 5. Guivos / Conexão — explicar papel do ecossistema.
-6. Da Possibilidade à Experiência — Possibilidade → Mecanismo → eventual Oportunidade real legítima → escolha → Experiência → contribuição/aprendizado → novo Momento; não é funil obrigatório nem promessa de resultado.
+6. Da Possibilidade à Experiência — Possibilidade → Mecanismo → eventual Oportunidade real legítima → escolha → eventual Experiência → contribuição/aprendizado → novo Momento. Uma Possibilidade pode ou não chegar a uma Experiência; esta é uma passagem possível e governada, não funil universal, destino inevitável nem promessa de resultado.
 7. Pertencimento — Pessoas, Organizações e Coletivos como participantes ativos.
 8. Ecossistema / Produtos — Journey com experiência/continuidade; Mall, Travel, Business, Media e Ads com responsabilidades próprias; Intelligence como Produto Especializado transversal / Intelligence Layer. Todos os sete continuam Produtos Especializados. Organização ≠ Business. COMPREENDER ≠ DECIDIR.
 9. Autoridade — evidência, fonte, contexto e transparência.
@@ -1313,6 +1323,8 @@ NÃO FAZER
 - não materializar automaticamente os nove Domínios como nove cards/categorias, menu, diagnóstico, score ou “roda da vida”;
 - não ocultar conteúdo essencial atrás de hover, clique, swipe ou gesto opcional;
 - não usar Iniciar Jornada como CTA dominante da Hero nem obrigar entrada na Journey para explorar a Home;
+- não transformar o Movimento 06 em passagem inevitável até uma Experiência;
+- não aumentar a pressão perceptiva/comercial de Iniciar Jornada durante o scroll por pulso, crescimento, banner sticky, gatilho tardio de conversão, bloqueio de conteúdo ou repetição desnecessária;
 - não solicitar localização, narrativa/relato pessoal, upload/arquivo, autenticação ou outro contexto pessoal para continuar a descoberta pública;
 - não ativar voz/microfone ou câmera nem solicitar/usar upload para explicar a Guivos ou condicionar a descoberta pública;
 - não iniciar onboarding a partir de CTA público antes da transição governada para Journey protegida;
@@ -1329,7 +1341,7 @@ PRODUTOS
 Os sete Produtos Especializados só ganham protagonismo institucional após a tese maior estar compreendida. Preserve responsabilidades diferentes. Journey possui experiência e continuidade. Intelligence é transversal sem deixar de ser Produto Especializado. Business não representa automaticamente Organizações.
 
 NAVEGAÇÃO E GTM
-Preserve o contrato semântico de navegação vigente. O Header deve permanecer persistentemente disponível sem dominar a Hero e manter marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher do ecossistema, Login e Iniciar Jornada. Sobre deve permanecer facilmente encontrável; Organizações e Coletivos deve possuir porta clara; compartilhar deve permanecer utilitário; idioma/região deve permanecer disponível de forma compacta e sem poluir o Header; Login deve permanecer disponível sem disputar a narrativa. Iniciar Jornada é o CTA de maior hierarquia no Header e a porta própria da Journey. Journey não integra o launcher. O launcher deve conter Travel, Ads, Media, Business, Intelligence e Mall de forma compacta, acessível e sem dominar a primeira percepção. O rodapé deve preservar Mapa do Ecossistema somente como link, sem antecipar a página de destino; sua composição adicional permanece deliberadamente aberta nesta frente. Desktop e mobile devem preservar a mesma hierarquia semântica e os mesmos caminhos essenciais; o mobile deve ser solução semântica própria, não simples empilhamento do desktop, favorecendo foco e sequência sem reduzir a tese. Arquitetura conceitual/wireframe não depende de todos os destinos estarem lançados; a versão publicada, porém, nunca pode apresentar destino, CTA ou estado como operacional quando não estiver legitimamente disponível.
+Preserve o contrato semântico de navegação vigente. O Header deve permanecer persistentemente disponível sem dominar a Hero e manter marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher do ecossistema, Login e Iniciar Jornada. Sobre deve permanecer facilmente encontrável; Organizações e Coletivos deve possuir porta clara; compartilhar deve permanecer utilitário; idioma/região deve permanecer disponível de forma compacta e sem poluir o Header; Login deve permanecer disponível sem disputar a narrativa. Iniciar Jornada é o CTA de maior hierarquia no Header e a porta própria da Journey. Journey não integra o launcher. O launcher deve conter Travel, Ads, Media, Business, Intelligence e Mall de forma compacta, acessível e sem dominar a primeira percepção. Durante o scroll, o Header pode compactar funcionalmente, mas não pode aumentar progressivamente a pressão comercial/perceptiva de Iniciar Jornada; sua disponibilidade permanece persistente sem pulso, crescimento para capturar atenção, banner sticky, surgimento tardio como gatilho de conversão, bloqueio ou repetição desnecessária. O rodapé deve preservar Mapa do Ecossistema somente como link, sem antecipar a página de destino; sua composição adicional permanece deliberadamente aberta nesta frente. Desktop e mobile devem preservar a mesma hierarquia semântica e os mesmos caminhos essenciais; o mobile deve ser solução semântica própria, não simples empilhamento do desktop, favorecendo foco e sequência sem reduzir a tese. Arquitetura conceitual/wireframe não depende de todos os destinos estarem lançados; a versão publicada, porém, nunca pode apresentar destino, CTA ou estado como operacional quando não estiver legitimamente disponível.
 
 CTA PÚBLICO × JOURNEY
 O CTA da Hero pertence à continuidade pública da própria Home e deve ser semanticamente distinto de Iniciar Jornada. Não use Iniciar Jornada como CTA dominante da Hero. Iniciar Jornada permanece no Header como porta própria da Journey e transição governada para experiência protegida. A descoberta pública não depende da entrada na Journey.
@@ -1367,7 +1379,7 @@ ENTREGUE
 16. decisões abertas;
 17. estados honestos para destinos ainda não ativados;
 18. tabela de rastreabilidade contra os requisitos;
-19. proposta de navegação rastreável ao contrato vigente, cobrindo Header, launcher, Journey, rodapé e equivalência desktop/mobile;
+19. proposta de navegação rastreável ao contrato vigente, cobrindo Header, launcher, Journey, rodapé, equivalência desktop/mobile e estabilidade de pressão do CTA durante scroll;
 20. justificativa de qualquer uso dos Domínios de Evolução, demonstrando que não foram convertidos automaticamente em taxonomia/diagnóstico da Home;
 21. estados de exploração pública sem coleta de contexto pessoal, sem ativação de voz/microfone ou câmera, sem upload e sem onboarding antes da transição governada para Journey protegida;
 22. estados de identificação perceptível para conteúdo patrocinado e distinção de conteúdo orgânico/editorial.
@@ -1385,13 +1397,15 @@ A solução deve fazer alguém pensar primeiro “existe mais mundo possível aq
 ```text
 Projete a Home pública da Guivos como entrada para um ecossistema global de Possibilidades humanas e institucionais, não como catálogo de produtos. A pergunta-mãe é “O que se torna possível quando você entra aqui?”. A percepção seguinte deve ser “Um mundo maior de possibilidades passa a fazer parte do seu.” A Guivos conecta Pessoas, Organizações, Coletivos, conhecimento, caminhos e experiências para tornar Possibilidades mais visíveis e aproximar Oportunidades reais quando elas fizerem sentido, preservando autonomia.
 
-Mostre Possibilidade antes de produto, prova antes de autodeclaração e mundo real antes de tecnologia. Possibilidade não é sinônimo de Oportunidade. O Movimento 06 é “Da Possibilidade à Experiência” e deve preservar Mecanismo, com Oportunidade real somente quando houver materialização externa legítima; o modelo editorial geral continua Contexto → Possibilidade → Decisão → Experiência → Consequência → Continuidade. Histórias reais/longitudinais exigem consentimento/autorização aplicável, privacidade, proveniência, contexto, causalidade correta e direito de correção/retirada quando aplicável.
+Não use `Do possível ao vivido.` como assinatura complementar ou segunda assinatura institucional da Home; essa expressão pertence ao território autoral do fundador. Se houver assinatura institucional da Guivos, ela deve seguir a autoridade de Marca vigente.
+
+Mostre Possibilidade antes de produto, prova antes de autodeclaração e mundo real antes de tecnologia. Possibilidade não é sinônimo de Oportunidade. O Movimento 06 é “Da Possibilidade à Experiência” e deve preservar Mecanismo, com Oportunidade real somente quando houver materialização externa legítima. Uma Possibilidade pode ou não chegar a uma Experiência: o Movimento 06 representa uma passagem possível e governada, não funil universal, destino inevitável ou promessa de resultado. O modelo editorial geral continua Contexto → Possibilidade → Decisão → Experiência → Consequência → Continuidade. Histórias reais/longitudinais exigem consentimento/autorização aplicável, privacidade, proveniência, contexto, causalidade correta e direito de correção/retirada quando aplicável.
 
 No Movimento 08, preserve Journey como experiência/continuidade, Mall/Travel/Business/Media/Ads com responsabilidades próprias e Intelligence como Produto Especializado transversal / Intelligence Layer. Todos os sete são Produtos Especializados. Organização não é Business. Intelligence amplia compreensão e não decide pelo participante.
 
 Os nove Domínios de Evolução da Journey são vocabulário opcional de amplitude/cobertura na Home, quando necessário; não os transforme automaticamente em nove cards/categorias, menu, diagnóstico, score ou “roda da vida”. “Ainda estou descobrindo” é estado transversal, não décimo domínio.
 
-Preserve também o contrato de navegação: Header persistentemente disponível com marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher, Login e Iniciar Jornada; Journey fora do launcher e Iniciar Jornada como sua porta própria e CTA de maior hierarquia no Header; launcher compacto com Travel, Ads, Media, Business, Intelligence e Mall; Mapa do Ecossistema preservado como link no rodapé sem antecipar sua página, mantendo a composição adicional do rodapé aberta; equivalência semântica entre desktop e mobile, com mobile como solução semântica própria — não simples empilhamento do desktop — favorecendo foco e sequência. Destino conceitual governado não significa disponibilidade operacional.
+Preserve também o contrato de navegação: Header persistentemente disponível com marca/Home, Sobre, Organizações e Coletivos, compartilhar, idioma/região, launcher, Login e Iniciar Jornada; Journey fora do launcher e Iniciar Jornada como sua porta própria e CTA de maior hierarquia no Header; launcher compacto com Travel, Ads, Media, Business, Intelligence e Mall; Mapa do Ecossistema preservado como link no rodapé sem antecipar sua página, mantendo a composição adicional do rodapé aberta; equivalência semântica entre desktop e mobile, com mobile como solução semântica própria — não simples empilhamento do desktop — favorecendo foco e sequência. Durante o scroll, o Header pode compactar funcionalmente, mas a pressão perceptiva/comercial de Iniciar Jornada não pode aumentar com a profundidade da página: sem pulso, crescimento para capturar atenção, banner sticky, gatilho tardio de conversão, bloqueio ou repetição desnecessária. Destino conceitual governado não significa disponibilidade operacional.
 
 O CTA da Hero pertence à descoberta pública da própria Home e deve ser distinto de Iniciar Jornada; não use Iniciar Jornada como CTA dominante da Hero nem obrigue entrada na Journey para explorar Possibilidades. A exploração pública deve continuar sem localização, relato/narrativa pessoal, upload/arquivo, autenticação ou outro contexto pessoal e sem iniciar onboarding; não ative voz/microfone ou câmera nem solicite/use upload para explicar a Guivos ou condicionar essa exploração. Contexto pessoal começa somente depois da transição governada para Journey protegida.
 
@@ -1437,10 +1451,10 @@ Antes de autorizar materialização, confirmar:
 - existe autorização explícita da fase;
 - pergunta-mãe continua válida;
 - três camadas da Hero estão semanticamente preservadas;
-- assinatura institucional vigente está correta;
+- assinatura institucional vigente está correta e `Do possível ao vivido.` não foi reintroduzido como assinatura da Home;
 - cinco pilares continuam aceitos;
 - sequência narrativa continua aceita;
-- Movimento 06 e distinção Possibilidade/Oportunidade estão corretos;
+- Movimento 06 e distinção Possibilidade/Oportunidade estão corretos, com chegada à Experiência explicitamente condicional;
 - modelo editorial continua separado da cadeia específica do Movimento 06;
 - evolução não está definida ou inferida por luxo, consumo, compras, viagens acumuladas, pontos, rankings, streaks ou produtividade;
 - Movimento 08 e hierarquia dos Produtos estão reconciliados;
@@ -1454,6 +1468,7 @@ Antes de autorizar materialização, confirmar:
 - acessibilidade inclui suporte explícito a texto ampliado com legibilidade e compreensão preservadas;
 - conteúdo patrocinado permanece identificável e distinto de orgânico/editorial;
 - controles de interação preservam scroll normal, ritmo próprio e ausência de espera forçada, áudio automático, modal não solicitado, notificação simulada ou dark pattern;
+- `Iniciar Jornada` permanece persistentemente disponível sem aumento de pressão perceptiva/comercial durante o scroll;
 - CTA da Hero / exploração pública permanece distinto de `Iniciar Jornada`;
 - exploração pública permanece sem localização, relato/narrativa pessoal, ativação de voz/microfone ou câmera, upload/arquivo, autenticação ou outro contexto pessoal;
 - onboarding e contexto pessoal só começam depois da transição governada para Journey protegida;
@@ -1483,7 +1498,7 @@ Se este documento tivesse de ser condensado em regras de controle — sem substi
 5. **Explique a Guivos como conexão, não catálogo.**
 6. **Deixe Pessoas, Organizações e Coletivos serem protagonistas.**
 7. **Preserve Possibilidade ≠ Oportunidade.**
-8. **Use Da Possibilidade à Experiência sem prometer resultado.**
+8. **Use Da Possibilidade à Experiência como passagem possível, sem tornar a Experiência inevitável nem prometer resultado.**
 9. **Separe o modelo editorial geral da cadeia específica do Movimento 06.**
 10. **Preserve a hierarquia dos Produtos e o papel distinto de Journey.**
 11. **Não transforme os nove Domínios de Evolução em taxonomia ou diagnóstico da Home por convenção.**
@@ -1504,6 +1519,7 @@ Se este documento tivesse de ser condensado em regras de controle — sem substi
 26. **Não defina evolução por luxo, consumo, compras, viagens acumuladas, pontos, rankings, streaks ou produtividade.**
 27. **Governe histórias reais/longitudinais com consentimento, privacidade, proveniência, contexto/causalidade correta e direitos aplicáveis de correção/retirada.**
 28. **Trate mobile como solução semântica própria, não simples empilhamento do desktop.**
+29. **Mantenha `Iniciar Jornada` persistentemente disponível sem aumentar sua pressão perceptiva/comercial com o scroll.**
 
 ---
 
