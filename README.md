@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.2.0** |
+| GKR-STATE-001 | **3.3.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -313,7 +313,7 @@ Não estão comprovados ou autorizados apenas pela documentação:
 
 ## Navegação principal durante a auditoria
 
-- [Estado Atual 3.2.0](docs/project/current-state-register.md)
+- [Estado Atual 3.3.0](docs/project/current-state-register.md)
 - [Roadmap 13.3.0](docs/roadmap.md)
 - [Auditoria Integral do GKR](docs/project/gkr-full-corpus-audit.md)
 - [Guia Oficial / Public Canon](docs/public/guia-oficial-da-guivos.md)
