@@ -1,8 +1,8 @@
 ---
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
-status: draft
-version: 0.2.0
+status: active
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-29
 parent: GKR-UX-HOME-MASTER-001
@@ -16,11 +16,11 @@ depends_on:
   - UXA-014
   - UXA-019
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
-  - RP-002-CM-001
 related:
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-BRAND-SIGNATURE-001
   - GKR-BRAND-PUBLIC-AUTHORITY-001
+  - RP-002-CM-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-HOME-OC-NARR-001
@@ -104,6 +104,9 @@ PRODUCT ENGINEERING
 
 PMF
 → NOT VALIDATED
+
+PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
+→ BLOCKED UNTIL AUDIT CLOSES
 ```
 
 A existência de Source Locks, handoffs, snapshots, pacotes generativos ou decisões de Design emitidos em checkpoints anteriores não os promove a baseline visual vigente durante a auditoria.
@@ -207,7 +210,7 @@ Definições de controle:
 
 > **Possibilidade é um caminho potencial de evolução compatível com um Momento.**
 
-> **Oportunidade é uma materialização concreta de uma Possibilidade ou um meio diretamente compatível com um Próximo Passo, oferecido ou viabilizado por agente identificável, com condições reais de acesso.**
+> **Oportunidade é uma materialização concreta de uma Possibilidade, oferecida ou viabilizada por agente legítimo, com condições reais de acesso.**
 
 Portanto:
 
@@ -225,7 +228,7 @@ POPULARIDADE
 ≠ RELEVÂNCIA
 ```
 
-O fluxo não é obrigatório nem sempre linear. Nem toda Possibilidade precisa virar Oportunidade e nem todo Próximo Passo exige oferta externa.
+O fluxo não é obrigatório nem sempre linear. Nem toda Possibilidade precisa virar Oportunidade; nem todo Próximo Passo exige oferta externa; e, quando a intenção já é suficientemente clara, a experiência pode chegar a uma Oportunidade concreta sem precisar expor `Possibilidade` como abstração intermediária.
 
 ### 3.3 Marca e sistema verbal
 
@@ -1683,7 +1686,14 @@ Permanecem bloqueados até autorização explícita posterior ao fechamento dos 
 - onboarding;
 - Marketing/GTM;
 - UXA-102/V5;
+- primeira tela autenticada da Pessoa após a Home;
 - qualquer materialização autenticada de Organização ou Coletivo.
+
+```text
+PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
+→ BLOCKED UNTIL AUDIT CLOSES
+→ NÃO DEFINIR NESTE LOTE
+```
 
 O histórico contém decisões procedimentais diferentes sobre Design e wireframe. Elas pertencem aos respectivos checkpoints.
 
