@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.1.0
+version: 3.2.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-27
+last_updated: 2026-08-29
 normative: true
 maturity: current_truth_under_full_corpus_audit
 related:
@@ -56,6 +56,9 @@ ERA
 
 ESTADO GLOBAL DO GKR
 → AUDITORIA INTEGRAL EM CURSO
+
+PRÓXIMO LOTE DA AUDITORIA
+→ E — HOME ORGANIZAÇÕES E COLETIVOS
 
 MARCO FUNCIONAL
 → M7.88
@@ -454,7 +457,7 @@ A auditoria passa a classificar cada master pelo conteúdo atual.
 
 | Home | Estado atual da auditoria |
 |---|---|
-| Principal / Pessoa | `REBUILD_REQUIRED` |
+| Principal / Pessoa | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 | Organizações e Coletivos | `REBUILD_REQUIRED` |
 | Mall | `AUDIT_PENDING` |
 | Travel | `AUDIT_PENDING` |
@@ -465,22 +468,35 @@ A auditoria passa a classificar cada master pelo conteúdo atual.
 
 ### 10.1 Home principal / Pessoa
 
-Conflito material já comprovado:
+O Lote D foi concluído documentalmente pela sequência canônica de PRs #342–#349.
 
-- o master antigo utiliza `Do possível ao vivido.` como assinatura complementar institucional;
-- essa formulação pertence à autoridade pessoal/autoral do fundador;
-- o rótulo vigente do Movimento 06 é `Da Possibilidade à Experiência`.
+A reconstrução e as reconciliações posteriores absorveram os conflitos conhecidos com Fundação, Marca, Public Canon e Experience Architecture, incluindo:
 
-Função preservada:
+- separação `Guivos × fundador` e remoção de `Do possível ao vivido.` como assinatura institucional da Home;
+- Movimento 06 = `Da Possibilidade à Experiência`;
+- distinção `Possibilidade ≠ Oportunidade` e presença de Mecanismo quando necessário;
+- nove Domínios de Evolução como vocabulário de amplitude, sem materialização visual automática;
+- separação `participante ≠ produto` e `Organização ≠ Business`;
+- Intelligence como Produto Especializado transversal / Intelligence Layer;
+- fronteira entre exploração pública e Journey protegida;
+- navegação, Header, launcher e hierarquia de CTAs;
+- prova, histórias reais, patrocínio identificável, autonomia e acessibilidade;
+- briefing/handoff subordinado ao Master e às autoridades especializadas.
+
+Estado:
 
 ```text
-POSSIBILIDADE
-→ ESCOLHA
-→ EXPERIÊNCIA
-→ NOVO CONTEXTO
+HOME PRINCIPAL / PESSOA
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+
+WIREFRAME / FIGMA / UI / PROTÓTIPO / IMPLEMENTAÇÃO
+→ NOT AUTHORIZED BY THIS CLOSURE
+
+PRIMEIRA TELA AUTENTICADA DA PESSOA
+→ BLOCKED UNTIL FULL AUDIT CLOSES
 ```
 
-A reconstrução deverá incorporar também a Fundação reconciliada no Lote C, inclusive a distinção entre Possibilidade, Mecanismo e Oportunidade.
+O fechamento de D não promove disponibilidade operacional, PMF, lançamento ou qualquer lote posterior da auditoria.
 
 ### 10.2 Home de Organizações e Coletivos
 

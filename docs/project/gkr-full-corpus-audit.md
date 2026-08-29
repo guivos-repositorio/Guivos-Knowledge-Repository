@@ -2,9 +2,9 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-27
+last_updated: 2026-08-29
 normative: false
 maturity: audit_in_progress
 baseline_sha: a05a54071414086456877ee4d0de59c59eefed0a
@@ -134,8 +134,8 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 |---|---|---|---|---|
 | F-001 | Major | política anterior mantinha histórico/superseded no corpus | `UPDATE` | regra corrigida no Lote A |
 | F-002 | Major | MENU contém arquitetura histórica de construção e alta fragmentação | `REBUILD` | aberto |
-| F-003 | Critical | Home principal/Pessoa conflita com assinatura e Movimento 06 vigentes | `REBUILD` | próximo lote |
-| F-004 | Major | Home O/C antecede mudanças estruturais posteriores | `REBUILD` | aberto |
+| F-003 | Critical | Home principal/Pessoa conflita com assinatura e Movimento 06 vigentes | `REBUILD` | resolvido no Lote D |
+| F-004 | Major | Home O/C antecede mudanças estruturais posteriores | `REBUILD` | próximo lote |
 | F-005 | Major | Mall, Travel, Media, Ads, Business e Intelligence precisam de auditoria semântica | `HOLD_REVIEW` | aberto |
 | F-006 | Major | UXA-015..018 e SVGs associados continuam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | aberto |
 | F-007 | Major | contagens físicas de SVGs não representam maturidade vigente | `UPDATE` | aberto |
@@ -148,11 +148,21 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-014 | Major | PP-11 antigo podia confundir visão de capacidade máxima com verdade atual | `UPDATE` | reconciliado no Lote C |
 | F-015 | Major | Public Canon anterior ainda publicava fluxo/definição anterior de Oportunidade | `UPDATE + ENRICH` | reconciliado no Lote C |
 
-## 7. F-003 — conflito material da Home principal
+## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
-O Documento Mestre atual da Home principal ainda usa `Do possível ao vivido.` como assinatura complementar institucional e utiliza `Do Possível ao Vivido` no Movimento 06.
+O conflito material originalmente comprovado foi tratado de forma incremental e governada no Lote D, sem abrir materialização visual.
 
-Autoridades posteriores estabelecem:
+A sequência canônica foi:
+
+- PR #342 — reconstrução de `GKR-UX-HOME-MASTER-001` como autoridade de consumo autocontida;
+- PR #343 — reclassificação de resíduos de autoridade/checkpoint;
+- PR #344 — reconciliação dos artefatos narrativos detalhados;
+- PR #345 — correção do ciclo de dependência documental;
+- PR #346 — reconciliação das autoridades de auditoria da Home;
+- PR #348 — fechamento de `RES-01` em navegação/fronteira GTM;
+- PR #349 — fechamento do último resíduo conhecido `RES-03` em `GKR-UX-HOME-HANDOFF-001`.
+
+O estado reconciliado preserva, entre outros pontos:
 
 ```text
 GUIVOS
@@ -164,28 +174,27 @@ FUNDADOR
 → Do possível ao vivido.
 → assinatura pessoal/autoral
 → não é assinatura institucional da Guivos
-```
 
-O rótulo vigente do Movimento 06 é:
+MOVIMENTO 06
+→ Da Possibilidade à Experiência
 
-```text
-Da Possibilidade à Experiência
-```
-
-A função permanece:
-
-```text
 POSSIBILIDADE
-→ ESCOLHA
-→ EXPERIÊNCIA
-→ NOVO CONTEXTO
+≠ OPORTUNIDADE
+
+MECANISMO
+→ obrigatório quando necessário na passagem específica
+
+OPORTUNIDADE REAL
+→ condicional à existência de oferta/viabilização concreta e acesso real
 ```
 
-A Fundação reconciliada acrescenta uma exigência: a Home precisa distinguir corretamente `Possibilidade`, `Mecanismo` e `Oportunidade`, sem fazer da Oportunidade etapa obrigatória de todo Próximo Passo.
+O fechamento documental também preserva Header/launcher/CTAs, autonomia, acessibilidade, prova, histórias reais, patrocínio identificável, fronteira pública × Journey protegida, os nove Domínios como vocabulário sem taxonomia visual obrigatória e a separação entre participantes e Produtos.
 
 Conclusão comprovada:
 
-> **Home principal/Pessoa = REBUILD_REQUIRED.**
+> **Home principal/Pessoa = DOCUMENTALMENTE_RECONCILIADA_PRE_MATERIALIZAÇÃO.**
+
+Esse estado não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, disponibilidade operacional nem a primeira tela autenticada da Pessoa.
 
 ## 8. F-004 — Home de Organizações e Coletivos
 
@@ -360,7 +369,7 @@ Foram preservados sem reescrita desnecessária por permanecerem consistentes:
 - `GKR-BRAND-PUBLIC-AUTHORITY-001`;
 - `GKR-CHRISTIAN-FOUNDATION-001`.
 
-`GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` permanece temporariamente necessário porque ainda contém correções que precisam ser absorvidas no master da Home Pessoa no Lote D.
+`GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` teve as correções relacionadas à Home Pessoa absorvidas durante o Lote D; sua função residual passa a ser avaliada sob F-010 antes de qualquer consolidação ou remoção.
 
 A hierarquia fundacional reconciliada é:
 
@@ -385,9 +394,9 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 |---|---|---|
 | A — Governança do corpus | `COMPLETED` | regra de verdade vigente + pipeline de remoção + no-loss guardrail |
 | B — Estado Atual e Roadmap | `COMPLETED` | autoridades globais atuais sem addendum dependente |
-| C — Fundação / Marca / Public Canon | `COMPLETED_IN_BRANCH_PENDING_FINAL_VALIDATION` | Fundação reconciliada/enriquecida + GOG 5.3.0 |
-| D — Home principal / Pessoa | `REBUILD_REQUIRED / NEXT` | master reconstruído e enriquecido |
-| E — Home Organizações e Coletivos | `REBUILD_REQUIRED` | master reconstruído |
+| C — Fundação / Marca / Public Canon | `COMPLETED` | Fundação reconciliada/enriquecida + GOG 5.3.0 |
+| D — Home principal / Pessoa | `COMPLETED` | master e resíduos documentais reconciliados; materialização não autorizada |
+| E — Home Organizações e Coletivos | `REBUILD_REQUIRED / NEXT` | master reconstruído |
 | F — Homes de Produtos | `PENDING` | classificação e correções |
 | G — Jornada da Pessoa | `PENDING` | fluxo vigente consolidado antes da próxima tela |
 | H — Organização / Coletivo | `PENDING` | recentes autoridades integradas e históricos removidos após absorção |
@@ -408,11 +417,13 @@ A. governança da verdade vigente                [concluído]
 ↓
 B. autoridades globais                          [concluído]
 ↓
-C. Fundação / Marca / Public Canon              [concluído no branch; validar/integrar]
+C. Fundação / Marca / Public Canon              [concluído]
 ↓
-D. Home principal / Pessoa                      [próximo]
+D. Home principal / Pessoa                      [concluído]
 ↓
-E/F. demais Homes
+E. Home Organizações e Coletivos                 [próximo]
+↓
+F. Homes de Produtos
 ↓
 G/H/I. Experience Architecture e inventário visual
 ↓
@@ -561,14 +572,11 @@ A auditoria somente pode encerrar quando:
 AUDIT
 → IN_PROGRESS
 
-A / B
+A / B / C / D
 → COMPLETED
 
-C
-→ COMPLETED IN BRANCH / PENDING FINAL VALIDATION AND MERGE
-
 NEXT LOT
-→ D — HOME PRINCIPAL / PESSOA
+→ E — HOME ORGANIZAÇÕES E COLETIVOS
 
 BASELINE FINAL
 → NOT AUTHORIZED
@@ -577,7 +585,7 @@ CORPUS CLEANUP
 → NOT YET COMPLETE
 
 HOME PRINCIPAL
-→ REBUILD_REQUIRED
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
 HOME ORGANIZAÇÕES E COLETIVOS
 → REBUILD_REQUIRED
