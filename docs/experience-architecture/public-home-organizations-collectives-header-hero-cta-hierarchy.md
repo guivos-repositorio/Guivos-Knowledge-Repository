@@ -345,7 +345,7 @@ Esses caminhos somente podem existir futuramente quando houver fundamento de pro
 Na Home pública compartilhada, antecipá-los criaria uma leitura incorreta:
 
 ```text
-OrganIZAÇÕES E COLETIVOS
+ORGANIZAÇÕES E COLETIVOS
 =
 público pagador / canal comercial
 ```
