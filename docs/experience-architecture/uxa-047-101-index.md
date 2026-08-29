@@ -174,11 +174,11 @@ Ainda não são canônicos:
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
 | Auditoria integral | **IN_PROGRESS** |
-| Próximo lote da auditoria | **E — HOME ORGANIZAÇÕES E COLETIVOS** |
+| Próximo lote da auditoria | **F — HOMES DOS PRODUTOS ESPECIALIZADOS** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
 | Maturidade visual agregada | **não inferir durante recomputação** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
-| Home Organizações e Coletivos | **REBUILD_REQUIRED** |
+| Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 
 A auditoria integral pode consolidar ou remover do corpus atual documentos desta família quando o conhecimento vigente tiver sido absorvido e as referências forem reconciliadas. Isso não muda, por si só, os estados funcionais que continuarem sustentados por autoridade vigente.
