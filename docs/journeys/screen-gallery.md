@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: active
-version: 0.25.0
+version: 0.26.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-26
+last_updated: 2026-08-30
 related:
   - UXA-005
   - UXA-070
@@ -40,6 +40,7 @@ related:
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
   - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -156,4 +157,4 @@ ARTEFATO FÍSICO PRESERVADO
 ≠ AUTORIDADE VISUAL VIGENTE
 ```
 
-Pessoa, Coletivo e Organização continuam `draft`; a arquitetura principal autenticada e os wireframes principais de Organização e Coletivo permanecem pendentes. V5/UXA-102, D6 e D7 não foram iniciadas e nenhuma implementação técnica é iniciada automaticamente.
+Pessoa, Coletivo e Organização continuam `draft`. Para Organização e Coletivo, Jobs + Arquitetura da Informação autenticada estão definidos documentalmente em estado **pre-surface-map** por `GKR-UX-ORGCOL-AUTH-IA-001`; permanecem pendentes o mapa final de superfícies/estados e os wireframes principais autenticados. V5/UXA-102, D6 e D7 não foram iniciadas e nenhuma implementação técnica é iniciada automaticamente.
