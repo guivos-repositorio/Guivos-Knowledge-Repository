@@ -2,19 +2,19 @@
 id: UXA-095
 title: Materialização Controlada do Início do Participante e Refinamento de TRN-111
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-30
 parent: UXA-000
 depends_on:
-  - UXA-016
-  - UXA-018
   - UXA-056
   - UXA-058
   - UXA-059
   - UXA-093
   - UXA-094
 related:
+  - UXA-096
+  - GKR-UX-ORGCOL-UX-STATE-001
   - GKR-SURF-PER-107
   - GKR-SURF-PER-108
   - GKR-TRN-111
@@ -47,15 +47,16 @@ A iniciativa parte da `main` após UXA-094:
 
 ## 3. Autoridades utilizadas
 
-A materialização deriva de:
+A materialização deriva das autoridades funcionais e de continuidade vigentes naquele incremento:
 
-- UXA-016 e UXA-018: propósito, pertencimento, momento coletivo, ação compartilhada, voluntariedade, governança, autonomia e proteção;
 - UXA-056: contrato do Início do Participante e separação entre vínculo, papel, disponibilidade, presença e autoridade;
 - UXA-058: separação entre síntese do Início, Central de Atualizações e canais especializados;
-- UXA-059: prioridade P0A e orientação mobile-first;
+- UXA-059: prioridade P0A e orientação mobile-first no programa histórico, hoje subordinado às autoridades atuais;
 - UXA-093/094: Central de Atualizações como origem corrente de `TRN-111`.
 
-A referência histórica de UXA-016 não é promovida diretamente: ela continua evidência de autoridade e foi reinterpretada para a arquitetura atual.
+`UXA-016` e `UXA-018` participaram historicamente do raciocínio que originou esta materialização, especialmente em propósito, pertencimento, momento coletivo, ação compartilhada, voluntariedade, governança, autonomia e proteção. Hoje permanecem somente como proveniência histórica `superseded`: não são dependências nem autoridades funcionais vigentes de `PER-108`, e sua remoção futura, se autorizada pelo gate `F-006`, não reduz a maturidade documental já registrada em `UXA-095/096`.
+
+A referência histórica de `UXA-016` deve, portanto, ser lida como evidência de proveniência do raciocínio original, não como evidência de autoridade vigente.
 
 ## 4. Materialização de PER-108
 
