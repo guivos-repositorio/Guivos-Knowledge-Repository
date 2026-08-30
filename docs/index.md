@@ -272,7 +272,7 @@ TENDÊNCIA ≠ DESTINO
 PERCEBER ANTES ≠ PREVER O FUTURO
 ```
 
-`GIA-000 v1.6.0` reconhece a Home Intelligence documental existente sem promover Home Source Lock, Design ou implementação.
+`GIA-000 v1.6.0` reconhece o Documento Mestre e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` como Source Lock ativo/normativo da Home Intelligence. O lock congela fontes e invariantes; não autoriza, por si só, Design, implementação ou publicação.
 
 Neo4j permanece tecnologia de referência, não produção comprovada.
 
