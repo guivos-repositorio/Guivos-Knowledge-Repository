@@ -8,7 +8,7 @@ last_updated: 2026-08-29
 parent: GKR-FULL-CORPUS-AUDIT-001
 depends_on:
   - GKR-STATE-001
-  - ROADMAP-13.3.0
+  - ROADMAP-13.4.0
   - GPA-002
   - GPA-003
   - GPA-004
@@ -65,8 +65,13 @@ AUDITORIA INTEGRAL
 → IN_PROGRESS
 
 LOTE F
-→ DOCUMENTALLY_RECONCILED_IN_PR
-→ NOT YET MERGED
+→ COMPLETED DOCUMENTALLY
+
+HOMES DOS PRODUTOS ESPECIALIZADOS
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+
+PRÓXIMO BLOCO DA AUDITORIA
+→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
 
 UXA-102 / V5
 → NOT_STARTED
@@ -237,7 +242,7 @@ MASTER v1.0.0
 
 ROADMAP-12.79.0 NO FRONTMATTER
 → HISTORICAL DEPENDENCY
-→ SUPERSEDED FOR CURRENT-STATE INTERPRETATION BY ROADMAP-13.3.0
+→ SUPERSEDED FOR CURRENT-STATE INTERPRETATION BY ROADMAP-13.4.0
 ```
 
 A fronteira normativa permanece:
@@ -333,11 +338,11 @@ Qualquer descrição histórica que declare a Home Intelligence como não inicia
 
 ---
 
-## 10. Resultado documental do Lote F na PR
+## 10. Resultado documental do Lote F
 
-Depois desta reconciliação:
+A auditoria das seis Homes partiu do seguinte diagnóstico:
 
-| Home | Diagnóstico inicial | Estado documental reconciliado na PR |
+| Home | Diagnóstico inicial | Estado documental reconciliado |
 |---|---|---|
 | Mall | `UPDATE_REQUIRED` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 | Travel | `UPDATE_REQUIRED` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
@@ -346,31 +351,40 @@ Depois desta reconciliação:
 | Ads | `UPDATE_REQUIRED` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 | Intelligence | `UPDATE_REQUIRED` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 
-Isso significa que as divergências encontradas foram resolvidas **documentalmente dentro da branch do Lote F** sem perda de conhecimento e sem rebuild conceitual.
-
-Ainda não significa que o Lote F esteja concluído no GKR publicado. Para isso permanecem obrigatórios:
-
-1. propagação do fechamento para o instrumento da Auditoria Integral e autoridades globais;
-2. versionamento coerente dos documentos alterados/dependentes;
-3. validações semântica e mecânica no head final;
-4. revisão Codex limpa;
-5. todos os review threads resolvidos;
-6. merge da PR;
-7. verificação pós-merge e publicação.
-
----
-
-## 11. Gate
-
 ```text
-LOTE F NA BRANCH
-→ DOCUMENTALLY_RECONCILED
+CURRENT
+→ 0
 
-LOTE F NA MAIN
-→ NOT YET CLOSED
+UPDATE_REQUIRED
+→ 6
 
 REBUILD_REQUIRED
 → 0
+```
+
+As divergências encontradas foram resolvidas documentalmente sem perda de conhecimento e sem rebuild conceitual. O fechamento do Lote F é consumido pelas autoridades globais `GKR-FULL-CORPUS-AUDIT-001 v1.4.0`, `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`.
+
+Esse fechamento não promove materialização, disponibilidade operacional, PMF, nova UXA ou implementação.
+
+---
+
+## 11. Gate vigente
+
+```text
+LOTE F
+→ COMPLETED DOCUMENTALLY
+
+HOMES DOS PRODUTOS ESPECIALIZADOS
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+
+REBUILD_REQUIRED
+→ 0
+
+AUDITORIA INTEGRAL
+→ IN_PROGRESS
+
+NEXT BLOCK
+→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
 
 DESIGN AUTHORIZATION
 → SUSPENDED DURING FULL-CORPUS AUDIT
@@ -381,6 +395,6 @@ UXA-102 / V5
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
 
-NEXT BLOCK G/H/I
-→ NOT AUTHORIZED UNTIL F CLOSES
+PMF
+→ NOT VALIDATED
 ```
