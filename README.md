@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.4.0** |
+| GKR-STATE-001 | **3.5.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -19,7 +19,9 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | PMF | **NOT VALIDATED** |
 | Auditoria integral do corpus | **IN_PROGRESS** |
 | Lotes concluídos | **A / B / C / D / E / F** |
-| Próximo bloco da auditoria | **G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL** |
+| Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 OPEN** |
+| Próximo gate da auditoria | **DECISÃO DE FECHAMENTO G/H/I CONDICIONADA A F-006** |
+| F-007 | **RESOLVED — semantic/inventory scope** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
@@ -27,7 +29,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.4.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
+O [Roadmap 13.5.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
 
 ## Regra de leitura
 
@@ -163,7 +165,7 @@ A experiência autenticada já possui:
 - fundação funcional;
 - contrato das relações Organização ↔ Coletivo;
 - atores, autoridades e jobs prioritários;
-- Arquitetura da Informação.
+- Arquitetura da Informação autenticada em estado **pre-surface-map**.
 
 Ainda não possui como baseline final:
 
@@ -299,6 +301,25 @@ A reconciliação das seis Homes especializadas é governada por [GKR-UX-SPECIAL
 
 Documento de Home existente não significa automaticamente Home implementada, publicada ou operacional.
 
+## Inventário visual auditado
+
+No snapshot auditado do Bloco I:
+
+- **121 SVGs físicos**;
+- **121 associações físicas**;
+- **34 perfis de rastreabilidade**;
+- **0 duplicatas exatas observadas/provadas por blob SHA**.
+
+```text
+CONTAGEM FÍSICA DE SVGs
+≠ WIREFRAMES VIGENTES
+≠ WIREFRAMES VALIDADOS
+```
+
+Permanecem `NOT_CERTIFIED`: near-duplicates e totais agregados de wireframes vigentes, validados vigentes e pendências visuais.
+
+`F-006` permanece `OPEN / REMOVE_AFTER_ABSORPTION`; nenhum `UXA-015..018` ou SVG associado possui remoção autorizada.
+
 ## Tecnologia e operação
 
 Não estão comprovados ou autorizados apenas pela documentação:
@@ -316,10 +337,46 @@ Não estão comprovados ou autorizados apenas pela documentação:
 - mercado ativo em Portugal;
 - filing das assinaturas sem Human Filing Authorization.
 
+## Próximo gate da auditoria
+
+O Bloco 2 G/H/I foi auditado no limite documental atual. O próximo gate é a **decisão governada de fechamento de G/H/I condicionada a F-006**.
+
+```text
+G
+→ COMPLETED / UPDATE_APPLIED
+
+H
+→ AUDITED / UPDATE_APPLIED
+→ F-006 OPEN
+
+I
+→ AUDITED / UPDATE_APPLIED
+→ F-006 OPEN
+→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+J / K / L / M / N
+→ NOT RELEASED AUTOMATICALLY
+
+O
+→ PENDING / HOLD
+
+Q
+→ BLOCKED
+
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
+
+DESIGN / MATERIALIZATION
+→ NOT AUTHORIZED
+```
+
 ## Navegação principal durante a auditoria
 
-- [Estado Atual 3.4.0](docs/project/current-state-register.md)
-- [Roadmap 13.4.0](docs/roadmap.md)
+- [Estado Atual 3.5.0](docs/project/current-state-register.md)
+- [Roadmap 13.5.0](docs/roadmap.md)
 - [Auditoria Integral do GKR](docs/project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](docs/project/gkr-specialized-homes-audit.md)
 - [Reconciliação das Homes Especializadas](docs/experience-architecture/public-specialized-homes-reconciliation.md)
