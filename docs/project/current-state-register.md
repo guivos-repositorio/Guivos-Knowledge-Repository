@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.4.0
+version: 3.5.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-08-30
 normative: true
 maturity: current_truth_under_full_corpus_audit
 related:
@@ -65,8 +65,16 @@ ERA
 ESTADO GLOBAL DO GKR
 → AUDITORIA INTEGRAL EM CURSO
 
-PRÓXIMO BLOCO DA AUDITORIA
-→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
+BLOCO 2 — G / H / I
+→ G COMPLETED / UPDATE_APPLIED
+→ H AUDITED / UPDATE_APPLIED / F-006 OPEN
+→ I AUDITED / UPDATE_APPLIED / F-006 OPEN
+→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+PRÓXIMO GATE DA AUDITORIA
+→ DECISÃO GOVERNADA DE FECHAMENTO G / H / I
+→ CONDICIONADA AO TRATAMENTO DE F-006
+→ J / K / L / M / N NÃO LIBERADOS AUTOMATICAMENTE
 
 MARCO FUNCIONAL
 → M7.88
@@ -376,7 +384,7 @@ AUTORIDADE DECLARADA
 
 ### 8.3 Arquitetura da Informação
 
-`GKR-UX-ORGCOL-AUTH-IA-001 v1.0.0` está ativo.
+`GKR-UX-ORGCOL-AUTH-IA-001 v1.0.0` está ativo em maturidade `authenticated_information_architecture_defined_pre_surface_map`.
 
 Organização:
 
@@ -422,6 +430,7 @@ Uma proposta existe em branch pré-auditoria, mas permanece congelada e sem auto
 
 Não existem, como baseline vigente final:
 
+- mapa final de superfícies/estados autenticados;
 - wireframe principal autenticado da Organização;
 - wireframe principal autenticado do Coletivo;
 - UI final;
@@ -432,22 +441,35 @@ Não existem, como baseline vigente final:
 
 O corpus ainda contém inventário físico construído em ciclos anteriores, inclusive artefatos que perderam autoridade visual vigente.
 
-A auditoria já confirmou que:
+O snapshot auditado do Bloco I comprova:
+
+- **121 SVGs físicos**;
+- **121 associações físicas**;
+- **34 perfis de rastreabilidade**;
+- **0 duplicatas exatas observadas/provadas por blob SHA**.
+
+A auditoria também confirmou que:
 
 - `UXA-015..018` não sustentam a UX principal autenticada atual de Organização/Coletivo;
 - SVGs associados a essas antigas baselines permanecem fisicamente no repositório;
+- `F-006` permanece `OPEN / REMOVE_AFTER_ABSORPTION`;
+- nenhum `UXA-015..018` ou SVG associado possui remoção autorizada neste estágio;
 - contagem física de SVG não equivale a contagem de wireframes vigentes;
-- a antiga claim agregada `121 validados / 0 pendentes` não pode ser usada como maturidade atual.
-
-Durante a auditoria:
+- a antiga claim agregada `121 validados / 0 pendentes` permanece apenas como proveniência histórica nos instrumentos reconciliados;
+- `F-007` está resolvido no limite semântico/inventário do Bloco I.
 
 ```text
-CONTAGEM FÍSICA LEGADA
-→ INVENTÁRIO A RECONCILIAR
-
-NOVA CONTAGEM DE MATURIDADE
-→ NÃO INFERIDA
+CONTAGEM FÍSICA DE SVGs
+≠ WIREFRAMES VIGENTES
+≠ WIREFRAMES VALIDADOS
 ```
+
+Permanecem `NOT_CERTIFIED`:
+
+- near-duplicates;
+- total agregado de wireframes vigentes;
+- total agregado de wireframes validados vigentes;
+- total agregado de pendências visuais.
 
 Antes de qualquer remoção serão reconciliados:
 
@@ -1214,7 +1236,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.4.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.5.0` está ativo como instrumento temporário de execução.
 
 Estado:
 
@@ -1238,19 +1260,23 @@ F — HOMES DE PRODUTOS
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION / COMPLETED
 
 G — JORNADA DA PESSOA
-→ NEXT / AUDIT_PENDING
+→ COMPLETED / UPDATE_APPLIED
+→ jornada permanece draft; fechamento do bloco não promove sua maturidade
 
 H — ORGANIZAÇÃO / COLETIVO
-→ NEXT / AUDIT_PENDING
+→ AUDITED / UPDATE_APPLIED
+→ F-006 OPEN
 
 I — REGISTRIES / CATÁLOGOS / SVGs
-→ NEXT / AUDIT_PENDING
+→ AUDITED / UPDATE_APPLIED
+→ F-006 OPEN
+→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
 
 J–N — DOMÍNIOS ESPECIALIZADOS
-→ PENDING
+→ PENDING / NOT RELEASED AUTOMATICALLY
 
 O — MENU FINAL
-→ PENDING
+→ PENDING / HOLD
 
 P — AUDITORIA FINAL
 → PENDING
@@ -1258,6 +1284,8 @@ P — AUDITORIA FINAL
 Q — PRIMEIRA TELA PÓS-HOME DA PESSOA
 → BLOCKED
 ```
+
+O fechamento de G/H/I depende de decisão governada sobre `F-006`. A remediação do Bloco 2 não autoriza avançar automaticamente J–N.
 
 ## 27. Regra de navegação final
 
@@ -1318,15 +1346,29 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-O próximo bloco da auditoria é **G / H / I — Experience Architecture e inventário visual**.
-
-O fechamento documental das Homes Principal/Pessoa, Organizações/Coletivos e dos seis Produtos Especializados não autoriza materialização visual nem a primeira tela autenticada pós-Home.
+O Bloco 2 G/H/I foi auditado e remediado no limite documental atual. O próximo ato governado é a **decisão de fechamento de G/H/I condicionada ao tratamento de `F-006`**.
 
 ```text
-PRÓXIMO BLOCO
-→ G — JORNADA DA PESSOA
-→ H — ORGANIZAÇÃO / COLETIVO
-→ I — REGISTRIES / CATÁLOGOS / SVGs
+G
+→ COMPLETED / UPDATE_APPLIED
+
+H
+→ AUDITED / UPDATE_APPLIED
+→ F-006 OPEN
+
+I
+→ AUDITED / UPDATE_APPLIED
+→ F-006 OPEN
+→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+J / K / L / M / N
+→ NOT RELEASED AUTOMATICALLY
+
+O
+→ PENDING / HOLD
+
+Q
+→ BLOCKED
 
 AINDA BLOQUEADOS
 → UXA-102
