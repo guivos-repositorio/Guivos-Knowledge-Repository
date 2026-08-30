@@ -10,6 +10,7 @@ related:
   - GKR-STATE-001
   - ROADMAP-13.4.0
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
+  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
   - GPA-002
   - GPA-003
   - GPA-004
@@ -48,21 +49,23 @@ A avaliação considerou autoridade vigente, coerência interproduto, estado dos
 
 ## 2. Baseline auditada
 
+A baseline abaixo registra o ponto de partida do Lote F, não o estado global posterior à remediação:
+
 ```text
-main
+main inicial do Lote F
 → 5228cac51653ca45682df4f77a48ae216d278c75
 
-GKR-STATE-001
+GKR-STATE-001 na abertura
 → v3.3.0
 
-ROADMAP
+ROADMAP na abertura
 → 13.3.0
 
 A / B / C / D / E
 → COMPLETED
 
 F
-→ IN_PROGRESS
+→ IN_PROGRESS NA ABERTURA
 
 UXA-102 / V5
 → NOT_STARTED
@@ -73,6 +76,8 @@ PRODUCT ENGINEERING
 PMF
 → NOT VALIDATED
 ```
+
+O estado resultante do lote é governado por `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`.
 
 ---
 
@@ -91,6 +96,7 @@ Autoridades e contratos transversais confrontados incluem:
 
 - `GKR-UX-HOME-OC-MASTER-001 v1.0.0`, preservando Organização/Coletivo como participantes estruturais;
 - `GIA-000`, reconciliado no Lote F de `v1.5.0` para `v1.6.0`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`, Source Lock ativo e normativo da Home Intelligence, que congela fontes e invariantes sem autorizar, por si só, Design ou materialização;
 - `GKR-DATA-PRIVACY-CONSENT-001 v0.1.0`, normativo e ainda `proposed`, separando princípio de privacidade, atividade de tratamento, base jurídica, controle projetado, implementação e evidência operacional;
 - RP-002, para `Organization ≠ Business`, `Possibility ≠ Opportunity` e relevância não comprável;
 - família econômica vigente em `docs/economic-model/`, para neutralidade econômica e mecanismos de Pontos/Créditos.
@@ -161,7 +167,7 @@ EMPRESA NO CONTRATO BUSINESS
 
 A Home O/C v1.0.0 confirma a mesma fronteira pelo lado do participante estrutural.
 
-O Master Business preserva a arquitetura conceitual, mas contém `ROADMAP-12.79.0` como dependência de seu checkpoint. Essa referência é histórica e não governa o estado atual, hoje ancorado no Roadmap `13.3.0` enquanto o Lote F permanece em execução.
+O Master Business preserva a arquitetura conceitual, mas contém `ROADMAP-12.79.0` como dependência de seu checkpoint. Essa referência é histórica. Na abertura do Lote F, a autoridade global era `ROADMAP-13.3.0`; após a reconciliação, a interpretação corrente é governada por `ROADMAP-13.4.0`.
 
 ### F-05 — Ads
 
@@ -180,7 +186,21 @@ COMPREENDER
 
 O Master Intelligence v0.1.1 deriva corretamente dessa autoridade e registra arquitetura conceitual completa em 11 movimentos.
 
-A contradição de `GIA-000 v1.5.0`, que ainda tratava a Home Pública como não iniciada, foi corrigida no Lote F por `GIA-000 v1.6.0`. A correção reconhece Product Source Lock integrado e Home documental existente, sem declarar Home Source Lock, Design ou implementação.
+A contradição de `GIA-000 v1.5.0`, que ainda tratava a Home Pública como não iniciada, foi corrigida no Lote F por `GIA-000 v1.6.0`. A reconciliação reconhece:
+
+```text
+PRODUCT SOURCE LOCK
+→ INTEGRADO
+
+HOME INTELLIGENCE
+→ DOCUMENTO MESTRE EXISTENTE
+
+HOME SOURCE LOCK
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+→ ACTIVE / NORMATIVE
+→ CONGELA FONTES E INVARIANTES
+→ NÃO AUTORIZA DESIGN POR SI SÓ
+```
 
 ---
 
@@ -202,16 +222,16 @@ Ela não substitui:
 
 - as GPAs dos produtos;
 - a arquitetura narrativa dos Masters;
-- Source Locks;
+- Source Locks de Produto ou Home;
 - Research;
 - Journey;
 - economia;
 - privacidade;
 - outras autoridades especializadas.
 
-Resultado na branch:
+Resultado reconciliado:
 
-| Home | Diagnóstico inicial | Estado reconciliado na PR |
+| Home | Diagnóstico inicial | Estado reconciliado |
 |---|---|---|
 | Mall | `UPDATE_REQUIRED` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 | Travel | `UPDATE_REQUIRED` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
@@ -253,33 +273,28 @@ PUBLICIDADE PAGA
 PRIVACIDADE DE REFERÊNCIA
 ≠ CONTROLE IMPLEMENTADO
 ≠ EVIDÊNCIA OPERACIONAL
+
+SOURCE LOCK
+≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
 ```
 
 Nenhuma Home pode declarar implementação, disponibilidade, prova ou maturidade superior à evidência existente.
 
 ---
 
-## 8. Validações intermediárias
+## 8. Validações de execução
 
-No head `2bad36e46b6521cf4c21a1849d1410193d2a9e46`, depois da correção de `GIA-000` e antes da autoridade consolidada das seis Homes:
+Durante a execução do Lote F, múltiplos heads intermediários foram submetidos às validações semântica e mecânica e à revisão Codex. Esses registros pertencem à rastreabilidade da PR #361 e ao histórico Git; não definem, isoladamente, o estado corrente da Home.
 
-```text
-GKR Semantic State Validation #712
-→ SUCCESS
-
-GKR Mechanical Validation #971
-→ SUCCESS
-```
-
-Novos gates devem ser executados no head final depois da propagação de fechamento.
+O gate de publicação exige que o head efetivamente mesclado possua validações verdes e nenhum finding de review aberto.
 
 ---
 
-## 9. Gate atual
+## 9. Estado resultante
 
 ```text
-LOTE F NA BRANCH
-→ DOCUMENTALLY_RECONCILED
+LOTE F
+→ COMPLETED DOCUMENTALLY
 
 DIAGNÓSTICO CONSOLIDADO
 → COMPLETE
@@ -291,22 +306,29 @@ REBUILD_REQUIRED
 → 0
 
 RECONCILIAÇÃO DAS SEIS FAMÍLIAS
-→ COMPLETE IN PR
+→ COMPLETE
 
 GIA-000
 → RECONCILED TO v1.6.0
 
+HOME INTELLIGENCE SOURCE LOCK
+→ EXISTS / ACTIVE / NORMATIVE
+→ DOES NOT AUTHORIZE DESIGN BY ITSELF
+
 MATERIALIZAÇÃO VISUAL
-→ NOT AUTHORIZED
+→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
 
-PRINCIPAL REMEDIATION PR
-→ #361 / DRAFT / IN PROGRESS
+PRÓXIMO BLOCO
+→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
 
-LOTE F NA MAIN
-→ NOT YET CLOSED
+UXA-102 / V5
+→ NOT_STARTED
 
-LOTE G/H/I
-→ NOT STARTED
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
+
+PMF
+→ NOT VALIDATED
 ```
 
-O fechamento formal do Lote F ainda depende de propagação para o instrumento global da Auditoria Integral e autoridades de estado, validações no head final, revisão Codex sem finding aberto, merge e verificação pós-merge/publicação.
+O fechamento do Lote F é documental. Não constitui implementação, publicação comercial, disponibilidade operacional, validação de mercado ou autorização de materialização visual.
