@@ -2,13 +2,15 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.3.0
+version: 3.4.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-29
 normative: true
 maturity: current_truth_under_full_corpus_audit
 related:
   - GKR-FULL-CORPUS-AUDIT-001
+  - GKR-SPECIALIZED-HOMES-AUDIT-001
+  - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GEB-P01
   - GOG-001
   - GKR-BRAND-SIGNATURE-001
@@ -16,6 +18,8 @@ related:
   - GKR-CHRISTIAN-FOUNDATION-001
   - GPA-004
   - GPA-006
+  - GIA-000
+  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
   - RP-002-PMF-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
@@ -61,8 +65,8 @@ ERA
 ESTADO GLOBAL DO GKR
 → AUDITORIA INTEGRAL EM CURSO
 
-PRÓXIMO LOTE DA AUDITORIA
-→ F — HOMES DOS PRODUTOS ESPECIALIZADOS
+PRÓXIMO BLOCO DA AUDITORIA
+→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
 
 MARCO FUNCIONAL
 → M7.88
@@ -458,20 +462,20 @@ Antes de qualquer remoção serão reconciliados:
 
 ## 10. Homes públicas — estado de auditoria
 
-A antiga afirmação global de **“8 Homes convergidas documentalmente”** deixa de ser suficiente como estado vigente.
+A antiga afirmação global de **“8 Homes convergidas documentalmente”** deixa de ser usada como atalho de maturidade.
 
-A auditoria passa a classificar cada master pelo conteúdo atual.
+A auditoria classificou os masters pelo conteúdo atual e concluiu documentalmente os lotes D, E e F.
 
 | Home | Estado atual da auditoria |
 |---|---|
 | Principal / Pessoa | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 | Organizações e Coletivos | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Mall | `AUDIT_PENDING` |
-| Travel | `AUDIT_PENDING` |
-| Media | `AUDIT_PENDING` |
-| Ads | `AUDIT_PENDING` |
-| Business | `AUDIT_PENDING` |
-| Intelligence | `AUDIT_PENDING` |
+| Mall | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Travel | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Media | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Ads | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Business | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Intelligence | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 
 ### 10.1 Home principal / Pessoa
 
@@ -563,9 +567,66 @@ EXPERIÊNCIA AUTENTICADA O/C
 → NÃO MATERIALIZADA POR ESTE LOTE
 ```
 
-### 10.3 Demais Homes
+### 10.3 Homes dos Produtos Especializados
 
-Nenhuma das outras seis é classificada como inconsistente apenas por idade. Cada uma será confrontada com sua autoridade de Produto, Fundação, Marca, Economia, Experience Architecture, Privacy/Intelligence e claims atuais.
+O Lote F auditou Mall, Travel, Media, Ads, Business e Intelligence em conjunto.
+
+Diagnóstico inicial:
+
+```text
+CURRENT
+→ 0
+
+UPDATE_REQUIRED
+→ 6
+
+REBUILD_REQUIRED
+→ 0
+```
+
+A remediação foi documental, sem rebuild conceitual. `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.0.0` governa somente estado atual, dependências vigentes, conflitos de continuidade e gates; as GPAs continuam governando os Produtos e os Masters preservam a arquitetura narrativa/funcional.
+
+Preservações:
+
+```text
+PRODUTO ESPECIALIZADO
+≠ PARTICIPANTE
+
+JOURNEY
+= EXPERIENCE LAYER
+
+ORGANIZAÇÃO
+≠ BUSINESS
+
+ADS
+≠ ORGANIZAÇÃO
+
+INTELLIGENCE PRODUTO
++ INTELLIGENCE LAYER
+≠ AUTORIDADE SOBRE OUTROS DOMÍNIOS
+
+PUBLICIDADE PAGA
+≠ RELEVÂNCIA ORGÂNICA
+
+PRIVACIDADE DE REFERÊNCIA
+≠ CONTROLE IMPLEMENTADO
+≠ EVIDÊNCIA OPERACIONAL
+```
+
+A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes, mas não autoriza, por si só, Design, materialização, implementação ou publicação.
+
+Estado:
+
+```text
+LOTE F
+→ COMPLETED DOCUMENTALLY
+
+MALL / TRAVEL / MEDIA / ADS / BUSINESS / INTELLIGENCE
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+
+WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
+→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
+```
 
 ## 11. Guivos Business
 
@@ -699,7 +760,25 @@ PERCEBER ANTES ≠ PREVER O FUTURO
 TECNOLOGIA ≠ PRODUTO
 ```
 
-`GIA-000 v1.5.0` preserva CIE, LPM, GPMA e Intelligence Engines como candidatos técnicos/arquiteturais, não como implementação comprovada.
+`GIA-000 v1.6.0` preserva CIE, LPM, GPMA e Intelligence Engines como candidatos técnicos/arquiteturais, não como implementação comprovada, e reconcilia o estado documental da Home Intelligence v1.
+
+```text
+PRODUCT SOURCE LOCK
+→ INTEGRATED
+
+HOME INTELLIGENCE v1
+→ MASTER EXISTS
+→ CONCEPTUAL ARCHITECTURE COMPLETE
+
+HOME SOURCE LOCK
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+→ ACTIVE / NORMATIVE
+→ FREEZES SOURCES AND INVARIANTS
+→ DOES NOT AUTHORIZE DESIGN BY ITSELF
+
+DESIGN / IMPLEMENTATION
+→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
+```
 
 ## 13. Grafo, dados e tecnologia
 
@@ -1135,7 +1214,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.4.0` está ativo como instrumento temporário de execução.
 
 Estado:
 
@@ -1156,16 +1235,16 @@ E — HOME ORGANIZAÇÕES E COLETIVOS
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION / COMPLETED
 
 F — HOMES DE PRODUTOS
-→ AUDIT_PENDING / NEXT
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION / COMPLETED
 
 G — JORNADA DA PESSOA
-→ PENDING
+→ NEXT / AUDIT_PENDING
 
 H — ORGANIZAÇÃO / COLETIVO
-→ PENDING CLEANUP/RECONCILIATION
+→ NEXT / AUDIT_PENDING
 
 I — REGISTRIES / CATÁLOGOS / SVGs
-→ PENDING
+→ NEXT / AUDIT_PENDING
 
 J–N — DOMÍNIOS ESPECIALIZADOS
 → PENDING
@@ -1228,7 +1307,8 @@ DO POSSÍVEL AO VIVIDO. → FUNDADOR
 POSSIBILITY, LIVED. → GUIVOS
 POSSIBILIDADE, VIVIDA. → GUIVOS
 LUCAS 2:52 NA BIO DO FUNDADOR ≠ COPY INSTITUCIONAL AUTOMÁTICA
-HOME DOCUMENTADA ≠ HOME ATUALMENTE CONSISTENTE
+HOME DOCUMENTADA ≠ HOME IMPLEMENTADA
+SOURCE LOCK ≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
 ARTEFATO FÍSICO ≠ AUTORIDADE VIGENTE
 AUDITORIA DOCUMENTAL ≠ EVIDÊNCIA OPERACIONAL
 CONSOLIDAÇÃO ≠ REDUÇÃO DE CONHECIMENTO
@@ -1238,14 +1318,15 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-O próximo lote da auditoria é **F — Homes dos Produtos Especializados**.
+O próximo bloco da auditoria é **G / H / I — Experience Architecture e inventário visual**.
 
-O fechamento documental das Homes Principal/Pessoa e Organizações/Coletivos não autoriza materialização visual nem a primeira tela autenticada pós-Home.
+O fechamento documental das Homes Principal/Pessoa, Organizações/Coletivos e dos seis Produtos Especializados não autoriza materialização visual nem a primeira tela autenticada pós-Home.
 
 ```text
-PRÓXIMO LOTE
-→ F — HOMES DOS PRODUTOS ESPECIALIZADOS
-→ AUDIT_PENDING
+PRÓXIMO BLOCO
+→ G — JORNADA DA PESSOA
+→ H — ORGANIZAÇÃO / COLETIVO
+→ I — REGISTRIES / CATÁLOGOS / SVGs
 
 AINDA BLOQUEADOS
 → UXA-102

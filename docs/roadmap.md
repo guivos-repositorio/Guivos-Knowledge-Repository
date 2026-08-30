@@ -1,14 +1,16 @@
 ---
-id: ROADMAP-13.3.0
+id: ROADMAP-13.4.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.3.0
+version: 13.4.0
 owner: Guivos
 last_updated: 2026-08-29
 normative: true
 related:
   - GKR-STATE-001
   - GKR-FULL-CORPUS-AUDIT-001
+  - GKR-SPECIALIZED-HOMES-AUDIT-001
+  - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GEB-P01
   - GOG-001
   - GKR-BRAND-SIGNATURE-001
@@ -16,6 +18,8 @@ related:
   - GKR-CHRISTIAN-FOUNDATION-001
   - GPA-004
   - GPA-006
+  - GIA-000
+  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
   - RP-002-PMF-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
@@ -33,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.3.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.4.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -49,7 +53,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A, B, C, D e E estão reconciliados no estado vigente. O próximo lote governado é **F — Homes dos Produtos Especializados**.
+Os Lotes A, B, C, D, E e F estão reconciliados no estado vigente. O próximo bloco governado é **G/H/I — Experience Architecture e inventário visual**.
 
 Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Design ou implementação deve ser promovida como consequência automática de trabalho anterior.
 
@@ -58,7 +62,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.3.0** |
+| Estado global | **GKR-STATE-001 v3.4.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -73,7 +77,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | RP-002 operational readiness | **HOLD** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
-| Demais Homes | **AUDIT_PENDING / LOT F** |
+| Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |
@@ -130,13 +134,13 @@ D. HOME PRINCIPAL / PESSOA              [CONCLUÍDO]
 ↓
 E. HOME ORGANIZAÇÕES E COLETIVOS        [CONCLUÍDO]
 ↓
-F. HOMES DOS PRODUTOS                    [PRÓXIMO]
+F. HOMES DOS PRODUTOS                    [CONCLUÍDO]
 ↓
-G. JORNADA DA PESSOA
+G. JORNADA DA PESSOA                     [PRÓXIMO BLOCO]
 ↓
-H. ORGANIZAÇÃO / COLETIVO
+H. ORGANIZAÇÃO / COLETIVO                [PRÓXIMO BLOCO]
 ↓
-I. REGISTRIES / CATÁLOGOS / SVGs
+I. REGISTRIES / CATÁLOGOS / SVGs         [PRÓXIMO BLOCO]
 ↓
 J. PRODUTOS / ECONOMIA
 ↓
@@ -375,36 +379,90 @@ EXPERIÊNCIA AUTENTICADA O/C
 Estado:
 
 ```text
-NEXT_LOT
-AUDIT_PENDING
+COMPLETED
+DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 ```
 
-Auditar individualmente:
+O Lote F auditou em conjunto Mall, Travel, Media, Ads, Business e Intelligence.
 
-| Home | Autoridades mínimas de confronto |
+Autoridades superiores confrontadas:
+
+| Home | Autoridade de produto |
 |---|---|
-| Mall | GPA-002 + economia/pontos + Journey/handoffs |
-| Travel | GPA-003 + Journey/handoffs + internacionalização quando pertinente |
-| Media | GPA-005 + autoridade editorial + demais Homes |
-| Ads | GPA-007 + neutralidade econômica + supply/relevância + privacy |
-| Business | GPA-004 + Organização ≠ Business + pontos + Intelligence |
-| Intelligence | GPA-006 v2.0.0 + GIA-000 + privacy architecture + Research |
+| Mall | `GPA-002 v1.2.0` |
+| Travel | `GPA-003 v1.3.0` |
+| Media | `GPA-005 v1.2.0` |
+| Ads | `GPA-007 v1.3.0` |
+| Business | `GPA-004 v1.6.0` |
+| Intelligence | `GPA-006 v2.0.0` |
 
-Resultados possíveis:
+Diagnóstico inicial:
 
 ```text
 CURRENT
+→ 0
+
 UPDATE_REQUIRED
+→ 6
+
 REBUILD_REQUIRED
+→ 0
 ```
 
-Nenhuma Home será mantida ou reescrita apenas por data de criação.
+Nenhuma das seis Homes exigiu rebuild conceitual. As divergências eram de propagação documental, estados, dependências e continuidade entre autoridades já válidas.
 
-Durante F, os Handoffs, Manifests, snapshots e GENINPUTs antigos podem informar proveniência, mas não autorizam materialização enquanto o gate global permanecer fechado.
+A evidência consolidada está em `GKR-SPECIALIZED-HOMES-AUDIT-001 v0.2.0`.
+
+A interpretação vigente está em `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.0.0`, cuja precedência é restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando identidade e fronteiras dos Produtos; os Masters continuam preservando a arquitetura narrativa/funcional.
+
+Resultado:
+
+| Home | Estado documental |
+|---|---|
+| Mall | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Travel | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Media | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Ads | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Business | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Intelligence | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+
+O Lote F também corrige `GIA-000` para `v1.6.0`, reconhecendo Product Source Lock integrado, Documento Mestre existente e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` como Source Lock ativo/normativo da Home Intelligence. O Source Lock congela fontes e invariantes e não autoriza, por si só, Design, materialização, implementação ou publicação.
+
+Preservações:
+
+```text
+PRODUTO ESPECIALIZADO
+≠ PARTICIPANTE
+
+JOURNEY
+= EXPERIENCE LAYER
+
+ORGANIZAÇÃO
+≠ BUSINESS
+
+ADS
+≠ ORGANIZAÇÃO
+
+INTELLIGENCE PRODUTO
++ INTELLIGENCE LAYER
+≠ AUTORIDADE SOBRE OUTROS DOMÍNIOS
+
+PUBLICIDADE PAGA
+≠ RELEVÂNCIA ORGÂNICA
+
+PRIVACIDADE DE REFERÊNCIA
+≠ CONTROLE IMPLEMENTADO
+≠ EVIDÊNCIA OPERACIONAL
+
+SOURCE LOCK
+≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
+```
+
+Handoffs, Manifests, snapshots e GENINPUTs preservam proveniência/checkpoint conforme suas autoridades. Source Locks preservam sua função de congelamento de fontes/invariantes nos limites próprios, sem autorização automática de Design durante a Auditoria Integral.
 
 ## 11. Lote G — Jornada da Pessoa
 
-Somente depois da Home principal atualizada e dos lotes anteriores fechados:
+Somente depois das Homes reconciliadas e dos lotes anteriores fechados:
 
 - reconciliar jornada atual da Pessoa;
 - identificar a primeira responsabilidade realmente necessária após a Home;
@@ -592,7 +650,7 @@ Não transformar simulação sintética em evidência humana real.
 
 Product Engineering permanece pausada antes de `W0-01`.
 
-`GPA-006 v2.0.0` continua autoridade do Intelligence.
+`GPA-006 v2.0.0` continua autoridade do Intelligence e `GIA-000 v1.6.0` é a arquitetura de Intelligence reconciliada no estado documental atual. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` permanece Source Lock ativo/normativo da Home, sem equivaler a autorização de Design ou implementação.
 
 ```text
 NEO4J
@@ -863,7 +921,8 @@ DO POSSÍVEL AO VIVIDO. → FUNDADOR
 POSSIBILITY, LIVED. → GUIVOS
 POSSIBILIDADE, VIVIDA. → GUIVOS
 LUCAS 2:52 NA BIO DO FUNDADOR ≠ COPY INSTITUCIONAL AUTOMÁTICA
-HOME DOCUMENTADA ≠ HOME CONSISTENTE APÓS NOVAS AUTORIDADES
+HOME DOCUMENTADA ≠ HOME IMPLEMENTADA
+SOURCE LOCK ≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
 ARTEFATO FÍSICO ≠ AUTORIDADE VIGENTE
 DOCUMENTAÇÃO ≠ IMPLEMENTAÇÃO
 SIMULAÇÃO ≠ PMF
@@ -874,7 +933,7 @@ DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL DURANTE A AUDITORIA
 
 ## 26. Regra do próximo movimento
 
-Com os Lotes A, B, C, D e E concluídos no estado vigente, o próximo movimento é **Lote F — Homes dos Produtos Especializados**.
+Com os Lotes A, B, C, D, E e F concluídos no estado vigente, o próximo movimento é o **Bloco G/H/I — Experience Architecture e inventário visual**.
 
 Até o fechamento integral da auditoria:
 
@@ -889,4 +948,4 @@ NÃO HÁ FILING AUTOMÁTICO
 NÃO HÁ PMF AUTOMÁTICO
 ```
 
-As Homes Principal/Pessoa e Organizações/Coletivos permanecem `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`. O Lote F audita as Homes dos Produtos Especializados; a primeira tela autenticada somente será definida após os gates restantes e o fechamento integral da auditoria.
+As Homes Principal/Pessoa, Organizações/Coletivos e Mall, Travel, Media, Ads, Business e Intelligence permanecem `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`. G/H/I auditam a Journey da Pessoa, a experiência autenticada O/C e o inventário visual/registries; a primeira tela autenticada somente será definida após os gates restantes e o fechamento integral da auditoria.

@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-29
 normative: false
@@ -136,7 +136,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-002 | Major | MENU contém arquitetura histórica de construção e alta fragmentação | `REBUILD` | aberto |
 | F-003 | Critical | Home principal/Pessoa conflita com assinatura e Movimento 06 vigentes | `REBUILD` | resolvido no Lote D |
 | F-004 | Major | Home O/C antecedia mudanças estruturais posteriores | `REBUILD` | resolvido no Lote E |
-| F-005 | Major | Mall, Travel, Media, Ads, Business e Intelligence precisam de auditoria semântica | `HOLD_REVIEW` | próximo lote / aberto |
+| F-005 | Major | Mall, Travel, Media, Ads, Business e Intelligence precisavam de auditoria semântica | `UPDATE` | resolvido documentalmente no Lote F |
 | F-006 | Major | UXA-015..018 e SVGs associados continuam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | aberto |
 | F-007 | Major | contagens físicas de SVGs não representam maturidade vigente | `UPDATE` | aberto |
 | F-008 | Major | Estado Atual e Roadmap dependiam de reconciliação posterior | `UPDATE + CONSOLIDATE` | resolvido no Lote B |
@@ -257,18 +257,90 @@ WIREFRAME / FIGMA / SVG / UX / UI / PROTÓTIPO
 → NOT AUTHORIZED DURING FULL-CORPUS AUDIT
 ```
 
-## 9. F-005 — demais Homes
+## 9. F-005 — Homes dos Produtos Especializados — resolvido documentalmente no Lote F
 
-| Home | Estado de auditoria |
+O Lote F auditou em conjunto as seis Homes especializadas para evitar decisões isoladas que reintroduzissem sobreposição entre Produto, participante, Journey, Ads e Intelligence.
+
+Diagnóstico inicial:
+
+| Home | Resultado inicial |
 |---|---|
-| Mall | `AUDIT_PENDING` |
-| Travel | `AUDIT_PENDING` |
-| Media | `AUDIT_PENDING` |
-| Ads | `AUDIT_PENDING` |
-| Business | `AUDIT_PENDING` |
-| Intelligence | `AUDIT_PENDING` |
+| Mall | `UPDATE_REQUIRED` |
+| Travel | `UPDATE_REQUIRED` |
+| Media | `UPDATE_REQUIRED` |
+| Ads | `UPDATE_REQUIRED` |
+| Business | `UPDATE_REQUIRED` |
+| Intelligence | `UPDATE_REQUIRED` |
 
-Data antiga não prova conflito. Cada Home será comparada com autoridades posteriores antes de receber `KEEP`, `UPDATE` ou `REBUILD`.
+```text
+CURRENT
+→ 0
+
+UPDATE_REQUIRED
+→ 6
+
+REBUILD_REQUIRED
+→ 0
+```
+
+Nenhuma Home exigiu rebuild conceitual. O problema dominante era propagação documental, dependências, estados e continuidade entre autoridades já válidas.
+
+A evidência detalhada está em `GKR-SPECIALIZED-HOMES-AUDIT-001 v0.2.0`.
+
+A interpretação documental vigente das seis famílias foi consolidada em `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.0.0`, com precedência restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando os Produtos e os Masters continuam preservando a arquitetura narrativa/funcional.
+
+Estado reconciliado:
+
+| Home | Estado documental |
+|---|---|
+| Mall | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Travel | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Media | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Ads | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Business | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Intelligence | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+
+Também foi corrigida a contradição material de `GIA-000`: a versão `1.5.0` ainda declarava a Home Intelligence como não iniciada. `GIA-000 v1.6.0` reconhece agora Product Source Lock integrado, Documento Mestre existente e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` como Source Lock ativo/normativo da Home. O lock congela fontes e invariantes e não autoriza, por si só, Design, materialização, implementação ou publicação.
+
+Preservações obrigatórias do Lote F:
+
+```text
+PRODUTO ESPECIALIZADO
+≠ PARTICIPANTE
+
+JOURNEY
+= EXPERIENCE LAYER
+
+ORGANIZAÇÃO
+≠ BUSINESS
+
+ADS
+≠ ORGANIZAÇÃO
+
+INTELLIGENCE PRODUTO
++ INTELLIGENCE LAYER
+≠ AUTORIDADE SOBRE OUTROS DOMÍNIOS
+
+POSSIBILIDADE
+≠ MECANISMO
+≠ OPORTUNIDADE
+
+PUBLICIDADE PAGA
+≠ RELEVÂNCIA ORGÂNICA
+
+PRIVACIDADE DE REFERÊNCIA
+≠ CONTROLE IMPLEMENTADO
+≠ EVIDÊNCIA OPERACIONAL
+
+SOURCE LOCK
+≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
+```
+
+Conclusão documental do Lote F:
+
+> **Mall, Travel, Media, Ads, Business e Intelligence = DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION.**
+
+Esse fechamento é documental e não promove disponibilidade operacional, Design, implementação, PMF ou publicação comercial.
 
 ## 10. F-006/F-007 — artefatos e contagens históricas
 
@@ -442,10 +514,10 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | C — Fundação / Marca / Public Canon | `COMPLETED` | Fundação reconciliada/enriquecida + GOG 5.3.0 |
 | D — Home principal / Pessoa | `COMPLETED` | master e resíduos documentais reconciliados; materialização não autorizada |
 | E — Home Organizações e Coletivos | `COMPLETED` | master + NARR/NAV/SYS + resíduos documentais reconciliados; materialização não autorizada |
-| F — Homes de Produtos | `NEXT / AUDIT_PENDING` | classificação e correções |
-| G — Jornada da Pessoa | `PENDING` | fluxo vigente consolidado antes da próxima tela |
-| H — Organização / Coletivo | `PENDING` | recentes autoridades integradas e históricos removidos após absorção |
-| I — Registries / Catálogos / SVGs | `PENDING` | inventário e maturidade recomputados |
+| F — Homes de Produtos | `COMPLETED` | seis Homes especializadas reconciliadas documentalmente; materialização não autorizada |
+| G — Jornada da Pessoa | `NEXT / AUDIT_PENDING` | fluxo vigente consolidado antes da próxima tela |
+| H — Organização / Coletivo | `NEXT / AUDIT_PENDING` | recentes autoridades integradas e históricos removidos após absorção |
+| I — Registries / Catálogos / SVGs | `NEXT / AUDIT_PENDING` | inventário e maturidade recomputados |
 | J — Produtos / Economia | `PENDING` | masters atuais sem fragmentação |
 | K — Research / RP-002 | `PENDING` | método/evidência preservados; intermediários absorvidos quando possível |
 | L — Tecnologia / Dados / IA | `PENDING` | autoridades atuais e fronteiras claras |
@@ -468,9 +540,9 @@ D. Home principal / Pessoa                      [concluído]
 ↓
 E. Home Organizações e Coletivos                [concluído]
 ↓
-F. Homes de Produtos                             [próximo]
+F. Homes de Produtos                             [concluído]
 ↓
-G/H/I. Experience Architecture e inventário visual
+G/H/I. Experience Architecture e inventário visual [próximo bloco]
 ↓
 J/K/L/M/N. domínios especializados
 ↓
@@ -617,11 +689,11 @@ A auditoria somente pode encerrar quando:
 AUDIT
 → IN_PROGRESS
 
-A / B / C / D / E
+A / B / C / D / E / F
 → COMPLETED
 
-NEXT LOT
-→ F — HOMES DOS PRODUTOS ESPECIALIZADOS
+NEXT BLOCK
+→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
 
 BASELINE FINAL
 → NOT AUTHORIZED
@@ -635,8 +707,8 @@ HOME PRINCIPAL
 HOME ORGANIZAÇÕES E COLETIVOS
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
-DEMAIS HOMES
-→ AUDIT_PENDING
+HOMES DOS PRODUTOS ESPECIALIZADOS
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
 DESIGN DAS HOMES
 → OPERATIONAL AUTHORIZATION SUSPENDED DURING FULL-CORPUS AUDIT

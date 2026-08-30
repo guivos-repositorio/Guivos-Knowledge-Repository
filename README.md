@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.3.0** |
+| GKR-STATE-001 | **3.4.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -18,15 +18,16 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
 | Auditoria integral do corpus | **IN_PROGRESS** |
-| Próximo lote da auditoria | **F — HOMES DOS PRODUTOS ESPECIALIZADOS** |
+| Lotes concluídos | **A / B / C / D / E / F** |
+| Próximo bloco da auditoria | **G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
-| Demais Homes | **AUDIT_PENDING / LOT F** |
+| Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.3.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
+O [Roadmap 13.4.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
 
 ## Regra de leitura
 
@@ -256,6 +257,8 @@ TENDÊNCIA ≠ DESTINO
 PERCEBER ANTES ≠ PREVER O FUTURO
 ```
 
+`GIA-000 v1.6.0` reconhece o Product Source Lock integrado, o Documento Mestre da Home Intelligence e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` como Source Lock ativo/normativo da Home. O Source Lock congela fontes e invariantes; não autoriza, por si só, Design, implementação ou publicação.
+
 Neo4j permanece `reference_selected`, não implementação em produção.
 
 ## Research e RP-002
@@ -279,20 +282,22 @@ Simulações sintéticas não são evidência de PMF.
 
 ## Homes públicas
 
-A auditoria substitui a antiga leitura agregada das oito Homes por avaliação individual:
+A auditoria substitui a antiga leitura agregada das oito Homes por avaliação individual. Os Lotes D, E e F estão documentalmente reconciliados:
 
 | Home | Estado |
 |---|---|
 | Principal / Pessoa | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 | Organizações e Coletivos | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Mall | `AUDIT_PENDING / LOT F` |
-| Travel | `AUDIT_PENDING / LOT F` |
-| Media | `AUDIT_PENDING / LOT F` |
-| Ads | `AUDIT_PENDING / LOT F` |
-| Business | `AUDIT_PENDING / LOT F` |
-| Intelligence | `AUDIT_PENDING / LOT F` |
+| Mall | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Travel | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Media | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Ads | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Business | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Intelligence | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 
-Documento de Home existente não significa automaticamente Home ainda consistente depois de novas autoridades.
+A reconciliação das seis Homes especializadas é governada por [GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001](docs/experience-architecture/public-specialized-homes-reconciliation.md) e não autoriza materialização visual.
+
+Documento de Home existente não significa automaticamente Home implementada, publicada ou operacional.
 
 ## Tecnologia e operação
 
@@ -313,9 +318,11 @@ Não estão comprovados ou autorizados apenas pela documentação:
 
 ## Navegação principal durante a auditoria
 
-- [Estado Atual 3.3.0](docs/project/current-state-register.md)
-- [Roadmap 13.3.0](docs/roadmap.md)
+- [Estado Atual 3.4.0](docs/project/current-state-register.md)
+- [Roadmap 13.4.0](docs/roadmap.md)
 - [Auditoria Integral do GKR](docs/project/gkr-full-corpus-audit.md)
+- [Auditoria do Lote F — Homes Especializadas](docs/project/gkr-specialized-homes-audit.md)
+- [Reconciliação das Homes Especializadas](docs/experience-architecture/public-specialized-homes-reconciliation.md)
 - [Guia Oficial / Public Canon](docs/public/guia-oficial-da-guivos.md)
 - [Fundação](docs/geb/part-01-foundation/index.md)
 - [Arquitetura de Produtos](docs/product-architecture/index.md)

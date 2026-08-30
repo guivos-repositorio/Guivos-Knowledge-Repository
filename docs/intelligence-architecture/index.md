@@ -2,9 +2,9 @@
 id: GIA-000
 title: Guivos Intelligence Architecture
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Guivos
-last_updated: 2026-08-18
+last_updated: 2026-08-29
 related:
   - GPA-006
   - GAI-001
@@ -12,6 +12,9 @@ related:
   - GEA-GRAPH-REFERENCE-001
   - ADR-007
   - GKR-INTELLIGENCE-CONTINUITY-001
+  - GKR-UX-HOME-INTELLIGENCE-MASTER-001
+  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
+  - GKR-SPECIALIZED-HOMES-AUDIT-001
 ---
 
 # Guivos Intelligence Architecture
@@ -305,7 +308,37 @@ Dado autorizado para personalização, analytics ou serving não está automatic
 
 ## Estado
 
-`GPA-006 2.0.0` consolida a arquitetura de produto dos Checkpoints 1–12 e encerra a fase de estruturação conceitual do Produto Especializado antes do Source Lock.
+`GPA-006 2.0.0` consolida a arquitetura de produto dos Checkpoints 1–12. O **Product Source Lock do Guivos Intelligence** está integrado, a **Home Pública do Intelligence v1** possui arquitetura conceitual completa em 11 movimentos e Documento Mestre `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`, e o **Source Lock da Home** existe como `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`, ativo e normativo.
+
+O Source Lock da Home congela as fontes de autoridade para futura materialização. Ele não constitui, por si só, autorização de Design, materialização visual, implementação ou publicação.
+
+Estado governado durante a Auditoria Integral:
+
+```text
+PRODUTO GUIVOS INTELLIGENCE
+→ CONSOLIDADO EM GPA-006 v2.0.0
+
+PRODUCT SOURCE LOCK
+→ INTEGRADO
+
+HOME PÚBLICA INTELLIGENCE v1
+→ ARQUITETURA CONCEITUAL COMPLETA
+→ DOCUMENTO MESTRE EXISTENTE
+
+HOME SOURCE LOCK
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+→ ACTIVE / NORMATIVE
+→ CONGELA FONTES; NÃO AUTORIZA MATERIALIZAÇÃO POR SI SÓ
+
+WIREFRAME / UI / PROTÓTIPO / DESIGN HANDOFF
+→ NÃO AUTORIZADOS DURANTE A AUDITORIA INTEGRAL
+
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
+```
 
 Permanecem abertos ou não evidenciados:
 
@@ -329,4 +362,4 @@ Permanecem abertos ou não evidenciados:
 - explicabilidade operacional;
 - controles de privacidade operacionais.
 
-A próxima etapa de produto é a criação governada do **Source Lock do Guivos Intelligence**, após integração de `GPA-006 2.0.0`. A Home Pública do Intelligence permanece não iniciada.
+A próxima etapa da Home não é automaticamente Design nem implementação. Durante a Auditoria Integral, sua autoridade documental permanece submetida ao `GKR-FULL-CORPUS-AUDIT-001`, ao diagnóstico do Lote F em `GKR-SPECIALIZED-HOMES-AUDIT-001` e ao gate global que mantém materialização visual suspensa.
