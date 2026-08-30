@@ -97,7 +97,7 @@ Para Organização e Coletivo, os perfis históricos continuam úteis para local
 | R21 | COM-004 | campanha | retorno à gestão | reconciliar/revisar | atribuição | UXA-049 |
 | R22 | COM-004 | TRN-301 | TRN-302/305 | pausar/revisar/encerrar | integração com resíduos | UXA-054 |
 | R23 | COM-005 | TRN-305 | conforme estado | retornar/revisar/desfazer/tentar novamente | TRN-305 ponta a ponta permanece parcial | UXA-099 |
-| R24 | COL-002 | representação válida | TRN-112 ou contrato especializado TRN-417 | permanecer/retornar; TRN-418 no contrato de Planos | **arquitetura principal autenticada final pendente** | UXA-087 preserva evidência administrativa local; TRN-112 UXA-090; TRN-417/418 preservam maturidade contratual própria; **não é baseline final da UX principal** |
+| R24 | COL-002 | representação válida | TRN-112 ou contrato especializado TRN-417 | permanecer/retornar; TRN-418 no contrato de Planos | **Jobs + IA autenticada definidos em `pre-surface-map`; mapa final de superfícies + wireframe principal autenticado pendentes** | UXA-087 preserva evidência administrativa local; TRN-112 UXA-090; TRN-417/418 preservam maturidade contratual própria; **não é baseline final da UX principal** |
 | R25 | COL-003 | TRN-105/107/112 | TRN-106/108/109 | voltar/aguardar/interromper | handoffs fechados nos gates | UXA-089/090/092 |
 | R26 | PER-106 | TRN-108 ou acesso recorrente | TRN-110 | trocar categoria/voltar | P0B separado | UXA-092; gatilho revalidado UXA-094 |
 | R27 | PER-107 | TRN-110 ou atualização autorizada | PER-105/PER-106; TRN-111 | retornar/ajustar preferência | P0B separado | UXA-094; versão corrente UXA-096; TRN-111 UXA-096 |
