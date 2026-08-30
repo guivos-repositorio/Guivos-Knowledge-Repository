@@ -300,7 +300,7 @@ Estado reconciliado:
 | Business | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 | Intelligence | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 
-Também foi corrigida a contradição material de `GIA-000`: a versão `1.5.0` ainda declarava a Home Intelligence como não iniciada. `GIA-000 v1.6.0` reconhece agora Product Source Lock integrado e Home documental existente, sem declarar Home Source Lock, Design ou implementação.
+Também foi corrigida a contradição material de `GIA-000`: a versão `1.5.0` ainda declarava a Home Intelligence como não iniciada. `GIA-000 v1.6.0` reconhece agora Product Source Lock integrado, Documento Mestre existente e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` como Source Lock ativo/normativo da Home. O lock congela fontes e invariantes e não autoriza, por si só, Design, materialização, implementação ou publicação.
 
 Preservações obrigatórias do Lote F:
 
@@ -331,13 +331,16 @@ PUBLICIDADE PAGA
 PRIVACIDADE DE REFERÊNCIA
 ≠ CONTROLE IMPLEMENTADO
 ≠ EVIDÊNCIA OPERACIONAL
+
+SOURCE LOCK
+≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
 ```
 
-Conclusão documental na branch do Lote F:
+Conclusão documental do Lote F:
 
 > **Mall, Travel, Media, Ads, Business e Intelligence = DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION.**
 
-O fechamento somente se torna canônico na `main` após validações finais, revisão, merge e verificação pós-merge/publicação.
+Esse fechamento é documental e não promove disponibilidade operacional, Design, implementação, PMF ou publicação comercial.
 
 ## 10. F-006/F-007 — artefatos e contagens históricas
 
