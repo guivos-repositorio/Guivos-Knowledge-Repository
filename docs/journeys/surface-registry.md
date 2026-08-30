@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.23.0
+version: 0.24.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-26
+last_updated: 2026-08-30
 related:
   - UXA-070
   - UXA-080
@@ -36,6 +36,7 @@ related:
   - GKR-JOURNEY-GAPS-001
   - GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
   - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -49,6 +50,8 @@ Este registro atribui identificadores estáveis a superfícies, estados, respons
 A D5-C1 adicionou `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-011 — Meus Próximos Passos` e `GKR-SURF-PER-012 — Minha Evolução` como responsabilidades contratadas. A D5-C2 materializou um SVG low-fidelity para cada uma sem criar novos IDs. A D5-C3 reforma e valida funcionalmente esses três estados-base, mantendo a contagem em 57 IDs e preservando `TRN-008..013` conforme sua autoridade própria.
 
 A reconciliação pós-PR #313/#314 corrige a leitura de Organização e Coletivo: `UXA-015..018` são históricos `superseded`; referências administrativas ou especializadas posteriores não podem ser promovidas por inferência a wireframe principal autenticado final.
+
+Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` já define a Arquitetura da Informação autenticada no estágio **pre-surface-map**. Essa definição documental não materializa o mapa final de superfícies/estados, navegação principal, wireframes, UI, protótipo ou implementação.
 
 ## 2. Convenções
 
@@ -148,7 +151,7 @@ Organização: Conecta · Eleva · Transforma
 Guivos Business: Start · Growth · Scale · Enterprise
 ```
 
-`PER-009`, `COL-002` e `ORG-001` continuam identificadores semânticos possíveis de origem/retorno para contratos de Planos. Isso **não prova materialização visual vigente** dessas origens. A criação de `PER-009` não materializa uma arquitetura completa de Conta; da mesma forma, os contratos de navegação de `COL-002` e `ORG-001` não substituem a futura definição da arquitetura principal autenticada de Coletivo e Organização.
+`PER-009`, `COL-002` e `ORG-001` continuam identificadores semânticos possíveis de origem/retorno para contratos de Planos. Isso **não prova materialização visual vigente** dessas origens. A criação de `PER-009` não materializa uma arquitetura completa de Conta; da mesma forma, os contratos de navegação de `COL-002` e `ORG-001` não substituem a Arquitetura da Informação autenticada já definida por `GKR-UX-ORGCOL-AUTH-IA-001`, nem materializam o mapa final de superfícies/estados ou os wireframes principais de Coletivo e Organização.
 
 A D5-C1 adiciona `PER-010`, `PER-011` e `PER-012` como responsabilidades pessoais especializadas ligadas a Hoje por transições contratadas. A D5-C2 lhes adiciona materialização low-fidelity. A D5-C3 promove somente a maturidade local dessas três superfícies conforme sua autoridade própria.
 
@@ -176,4 +179,4 @@ Guivos Business é produto especializado e não recebe novos IDs neste registro.
 
 ## 7. Estado
 
-O registro permanece `active` como inventário granular. A maturidade deve ser lida por superfície e por escopo de autoridade, nunca pela mera existência física de SVG. Organização e Coletivo permanecem com arquitetura principal autenticada e respectivos wireframes finais **pendentes**.
+O registro permanece `active` como inventário granular. A maturidade deve ser lida por superfície e por escopo de autoridade, nunca pela mera existência física de SVG. Para Organização e Coletivo, Jobs + Arquitetura da Informação autenticada estão definidos documentalmente em estado **pre-surface-map**; permanecem pendentes o mapa final de superfícies/estados e os respectivos wireframes principais autenticados.
