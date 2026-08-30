@@ -2,11 +2,11 @@
 id: GKR-UX-ORGCOL-AUTH-JOBS-001
 title: Organizações e Coletivos — Atores, Autoridades e Jobs Prioritários da Experiência Autenticada
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-27
+last_updated: 2026-08-30
 normative: false
-maturity: authenticated_experience_jobs_defined_pre_information_architecture
+maturity: authenticated_information_architecture_defined_pre_surface_map
 depends_on:
   - GKR-UX-ORGCOL-STATE-001
   - GKR-UX-ORGCOL-UX-STATE-001
@@ -16,6 +16,7 @@ related:
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - RP-002
   - RP-002-OCE-001
   - RP-002-PMF-001
@@ -25,7 +26,9 @@ related:
 
 ## 1. Finalidade
 
-Este documento fecha a etapa imediatamente anterior à **Arquitetura da Informação** da experiência autenticada de Organizações e Coletivos.
+Este documento fechou a etapa imediatamente anterior à **Arquitetura da Informação** da experiência autenticada de Organizações e Coletivos.
+
+Após a validação deste incremento, `GKR-UX-ORGCOL-AUTH-IA-001` definiu a Arquitetura da Informação autenticada no estágio **pre-surface-map**. Este documento permanece `active` como autoridade dos atores, limites e jobs que alimentam essa IA; não volta a classificar a IA como pendente.
 
 Ele reconcilia os fundamentos e contratos vigentes para responder quatro perguntas:
 
@@ -34,7 +37,7 @@ Ele reconcilia os fundamentos e contratos vigentes para responder quatro pergunt
 3. que tipo de autoridade precisa estar explícita;
 4. quais jobs precisam ser suportados antes de decidir navegação, superfícies ou wireframes.
 
-Este documento não define arquitetura da informação, menu, dashboard, tela inicial, componentes, permissões técnicas, RBAC, wireframe, UI ou implementação.
+Este documento não define menu, dashboard, tela inicial, componentes, permissões técnicas, RBAC, wireframe, UI ou implementação. A definição posterior da IA permanece governada por `GKR-UX-ORGCOL-AUTH-IA-001`.
 
 ```text
 ATOR FUNCIONAL
@@ -59,10 +62,11 @@ A frente parte das seguintes autoridades e estados:
 - `UXA-019` define autoridade bilateral, limites, compromissos, recursos, dados, contestação e ciclo de vida das relações Organização ↔ Coletivo;
 - `GKR-JOURNEY-ORGANIZATION-001` preserva a Jornada da Organização em `draft` e maturidades independentes de fluxos especializados;
 - `GKR-JOURNEY-COLLECTIVE-001` preserva a Jornada do Coletivo em `draft` e maturidades independentes de fluxos especializados;
-- `GKR-UX-ORGCOL-UX-STATE-001` declara que a arquitetura da informação e os wireframes principais autenticados ainda não foram definidos;
+- `GKR-UX-ORGCOL-UX-STATE-001` preserva o baseline histórico no qual a arquitetura da informação e os wireframes principais autenticados ainda não estavam definidos;
+- `GKR-UX-ORGCOL-AUTH-IA-001` define a Arquitetura da Informação autenticada de Organização e Coletivo em estado **defined pre-surface-map**, sem materializar wireframes, UI ou implementação;
 - `GKR-UX-ORGCOL-SUPPLY-VALUE-001` fornece Research sobre supply, relevância e papéis sem transformar Research em Canon ou PMF.
 
-A sequência vigente permanece:
+A sequência governada permanece:
 
 ```text
 fundamentos e papéis
@@ -77,6 +81,8 @@ fundamentos e papéis
 → testes
 → handoff técnico
 ```
+
+No estado corrente, atores/autoridades/jobs e Arquitetura da Informação já estão definidos documentalmente; o próximo gap começa no mapa final de superfícies e estados. Nenhuma etapa seguinte é iniciada automaticamente.
 
 ## 3. Unidade de atuação autenticada
 
@@ -551,9 +557,9 @@ A experiência autenticada não deve ser organizada prioritariamente em torno de
 
 Esses sinais podem existir quando legitimamente úteis, mas não substituem propósito, responsabilidade, contexto, evidência ou Próximo Passo.
 
-## 12. Restrições para a próxima Arquitetura da Informação
+## 12. Restrições preservadas pela Arquitetura da Informação
 
-A futura Arquitetura da Informação deverá respeitar, no mínimo:
+A Arquitetura da Informação autenticada vigente, definida por `GKR-UX-ORGCOL-AUTH-IA-001`, preserva no mínimo estas restrições derivadas dos Jobs:
 
 1. contexto ativo e autoridade precisam permanecer reconhecíveis;
 2. Organização e Coletivo não podem compartilhar automaticamente a mesma estrutura apenas por possuírem funções semelhantes;
@@ -566,7 +572,7 @@ A futura Arquitetura da Informação deverá respeitar, no mínimo:
 9. Planos devem permanecer capacidade comercial especializada, não eixo de relevância ou identidade;
 10. a experiência principal não pode ser um dashboard comercial genérico da Organização nem um feed social genérico do Coletivo.
 
-Essas restrições não determinam ainda categorias de menu, sitemap ou superfícies.
+Essas restrições não materializam categorias de menu, surface map final, wireframes ou superfícies.
 
 ## 13. Decisões explicitamente adiadas
 
@@ -592,18 +598,18 @@ Este documento não decide:
 
 Também não reativa `UXA-015..018` e não inicia `UXA-102/V5`.
 
-## 14. Gate para iniciar Arquitetura da Informação
+## 14. Gate histórico de IA e estado corrente
 
-A etapa de Arquitetura da Informação poderá iniciar quando a leitura conjunta confirmar que:
+O gate originalmente registrado para iniciar a Arquitetura da Informação exigia que:
 
-- atores funcionais estão distinguíveis;
-- contexto representado está distinguível;
-- autoridade e limites estão explícitos conceitualmente;
-- jobs estruturais, operacionais, de proteção e bilaterais estão registrados;
-- fluxos especializados existentes estão identificados como inputs, não como UX principal pronta;
-- decisões de tela e navegação continuam não antecipadas.
+- atores funcionais estivessem distinguíveis;
+- contexto representado estivesse distinguível;
+- autoridade e limites estivessem explícitos conceitualmente;
+- jobs estruturais, operacionais, de proteção e bilaterais estivessem registrados;
+- fluxos especializados existentes estivessem identificados como inputs, não como UX principal pronta;
+- decisões de tela e navegação continuassem não antecipadas.
 
-Com este documento:
+Esse gate foi consumido pela definição posterior de `GKR-UX-ORGCOL-AUTH-IA-001`. O estado corrente é:
 
 ```text
 FOUNDATIONS / ROLES
@@ -619,6 +625,9 @@ PRIORITY JOBS
 → DEFINED FOR IA INPUT
 
 AUTHENTICATED INFORMATION ARCHITECTURE
+→ DEFINED PRE-SURFACE-MAP
+
+FINAL SURFACE MAP
 → NOT YET DEFINED
 
 MAIN AUTHENTICATED WIREFRAMES
@@ -633,8 +642,8 @@ PRODUCT ENGINEERING
 
 ## 15. Próximo ato documental permitido
 
-Após validação deste incremento, o próximo ato permitido nesta frente é exclusivamente:
+Após a definição da Arquitetura da Informação autenticada, o próximo ato documental possível nesta frente, somente quando houver autorização específica, é:
 
-> **definir a Arquitetura da Informação autenticada de Organização e Coletivo a partir destes atores, autoridades, jobs e contratos existentes.**
+> **definir o mapa final de superfícies e estados autenticados de Organização e Coletivo a partir da IA, destes atores, autoridades, jobs e contratos existentes.**
 
-Esse próximo ato não deve produzir wireframe, UI, protótipo ou implementação.
+Esse próximo ato não está sendo iniciado por esta reconciliação e não deve produzir wireframe, UI, protótipo ou implementação.
