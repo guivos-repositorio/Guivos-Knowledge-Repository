@@ -19,6 +19,7 @@ related:
   - GPA-004
   - GPA-006
   - GIA-000
+  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
   - RP-002-PMF-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
@@ -612,7 +613,7 @@ PRIVACIDADE DE REFERÊNCIA
 ≠ EVIDÊNCIA OPERACIONAL
 ```
 
-A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`, que reconhece Product Source Lock integrado e a existência documental da Home v1 sem declarar Home Source Lock, Design ou implementação.
+A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes, mas não autoriza, por si só, Design, materialização, implementação ou publicação.
 
 Estado:
 
@@ -770,10 +771,13 @@ HOME INTELLIGENCE v1
 → CONCEPTUAL ARCHITECTURE COMPLETE
 
 HOME SOURCE LOCK
-→ NOT CREATED
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+→ ACTIVE / NORMATIVE
+→ FREEZES SOURCES AND INVARIANTS
+→ DOES NOT AUTHORIZE DESIGN BY ITSELF
 
 DESIGN / IMPLEMENTATION
-→ NOT AUTHORIZED
+→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
 ```
 
 ## 13. Grafo, dados e tecnologia
@@ -1304,6 +1308,7 @@ POSSIBILITY, LIVED. → GUIVOS
 POSSIBILIDADE, VIVIDA. → GUIVOS
 LUCAS 2:52 NA BIO DO FUNDADOR ≠ COPY INSTITUCIONAL AUTOMÁTICA
 HOME DOCUMENTADA ≠ HOME IMPLEMENTADA
+SOURCE LOCK ≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
 ARTEFATO FÍSICO ≠ AUTORIDADE VIGENTE
 AUDITORIA DOCUMENTAL ≠ EVIDÊNCIA OPERACIONAL
 CONSOLIDAÇÃO ≠ REDUÇÃO DE CONHECIMENTO
