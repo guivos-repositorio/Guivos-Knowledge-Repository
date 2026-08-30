@@ -13529,10 +13529,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-f-005-demais-homes" class="md-nav__link">
+  <a href="#9-f-005-homes-dos-produtos-especializados-resolvido-documentalmente-no-lote-f" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. F-005 — demais Homes
+        9. F-005 — Homes dos Produtos Especializados — resolvido documentalmente no Lote F
       
     </span>
   </a>
@@ -13906,9 +13906,9 @@ main inicial da auditoria
 <tr>
 <td>F-005</td>
 <td>Major</td>
-<td>Mall, Travel, Media, Ads, Business e Intelligence precisam de auditoria semântica</td>
-<td><code>HOLD_REVIEW</code></td>
-<td>próximo lote / aberto</td>
+<td>Mall, Travel, Media, Ads, Business e Intelligence precisavam de auditoria semântica</td>
+<td><code>UPDATE</code></td>
+<td>resolvido documentalmente no Lote F</td>
 </tr>
 <tr>
 <td>F-006</td>
@@ -14077,42 +14077,127 @@ GKR-UX-HOME-OC-SYS-001 v0.2.0
 WIREFRAME / FIGMA / SVG / UX / UI / PROTÓTIPO
 → NOT AUTHORIZED DURING FULL-CORPUS AUDIT
 </code></pre></div>
-<h2 id="9-f-005-demais-homes">9. F-005 — demais Homes<a class="headerlink" href="#9-f-005-demais-homes" title="Permanent link">&para;</a></h2>
+<h2 id="9-f-005-homes-dos-produtos-especializados-resolvido-documentalmente-no-lote-f">9. F-005 — Homes dos Produtos Especializados — resolvido documentalmente no Lote F<a class="headerlink" href="#9-f-005-homes-dos-produtos-especializados-resolvido-documentalmente-no-lote-f" title="Permanent link">&para;</a></h2>
+<p>O Lote F auditou em conjunto as seis Homes especializadas para evitar decisões isoladas que reintroduzissem sobreposição entre Produto, participante, Journey, Ads e Intelligence.</p>
+<p>Diagnóstico inicial:</p>
 <table>
 <thead>
 <tr>
 <th>Home</th>
-<th>Estado de auditoria</th>
+<th>Resultado inicial</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Mall</td>
-<td><code>AUDIT_PENDING</code></td>
+<td><code>UPDATE_REQUIRED</code></td>
 </tr>
 <tr>
 <td>Travel</td>
-<td><code>AUDIT_PENDING</code></td>
+<td><code>UPDATE_REQUIRED</code></td>
 </tr>
 <tr>
 <td>Media</td>
-<td><code>AUDIT_PENDING</code></td>
+<td><code>UPDATE_REQUIRED</code></td>
 </tr>
 <tr>
 <td>Ads</td>
-<td><code>AUDIT_PENDING</code></td>
+<td><code>UPDATE_REQUIRED</code></td>
 </tr>
 <tr>
 <td>Business</td>
-<td><code>AUDIT_PENDING</code></td>
+<td><code>UPDATE_REQUIRED</code></td>
 </tr>
 <tr>
 <td>Intelligence</td>
-<td><code>AUDIT_PENDING</code></td>
+<td><code>UPDATE_REQUIRED</code></td>
 </tr>
 </tbody>
 </table>
-<p>Data antiga não prova conflito. Cada Home será comparada com autoridades posteriores antes de receber <code>KEEP</code>, <code>UPDATE</code> ou <code>REBUILD</code>.</p>
+<div class="highlight"><pre><span></span><code>CURRENT
+→ 0
+
+UPDATE_REQUIRED
+→ 6
+
+REBUILD_REQUIRED
+→ 0
+</code></pre></div>
+<p>Nenhuma Home exigiu rebuild conceitual. O problema dominante era propagação documental, dependências, estados e continuidade entre autoridades já válidas.</p>
+<p>A evidência detalhada está em <code>GKR-SPECIALIZED-HOMES-AUDIT-001 v0.2.0</code>.</p>
+<p>A interpretação documental vigente das seis famílias foi consolidada em <code>GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.0.0</code>, com precedência restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando os Produtos e os Masters continuam preservando a arquitetura narrativa/funcional.</p>
+<p>Estado reconciliado:</p>
+<table>
+<thead>
+<tr>
+<th>Home</th>
+<th>Estado documental</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mall</td>
+<td><code>DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION</code></td>
+</tr>
+<tr>
+<td>Travel</td>
+<td><code>DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION</code></td>
+</tr>
+<tr>
+<td>Media</td>
+<td><code>DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION</code></td>
+</tr>
+<tr>
+<td>Ads</td>
+<td><code>DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION</code></td>
+</tr>
+<tr>
+<td>Business</td>
+<td><code>DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION</code></td>
+</tr>
+<tr>
+<td>Intelligence</td>
+<td><code>DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION</code></td>
+</tr>
+</tbody>
+</table>
+<p>Também foi corrigida a contradição material de <code>GIA-000</code>: a versão <code>1.5.0</code> ainda declarava a Home Intelligence como não iniciada. <code>GIA-000 v1.6.0</code> reconhece agora Product Source Lock integrado, Documento Mestre existente e <code>GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0</code> como Source Lock ativo/normativo da Home. O lock congela fontes e invariantes e não autoriza, por si só, Design, materialização, implementação ou publicação.</p>
+<p>Preservações obrigatórias do Lote F:</p>
+<div class="highlight"><pre><span></span><code>PRODUTO ESPECIALIZADO
+≠ PARTICIPANTE
+
+JOURNEY
+= EXPERIENCE LAYER
+
+ORGANIZAÇÃO
+≠ BUSINESS
+
+ADS
+≠ ORGANIZAÇÃO
+
+INTELLIGENCE PRODUTO
++ INTELLIGENCE LAYER
+≠ AUTORIDADE SOBRE OUTROS DOMÍNIOS
+
+POSSIBILIDADE
+≠ MECANISMO
+≠ OPORTUNIDADE
+
+PUBLICIDADE PAGA
+≠ RELEVÂNCIA ORGÂNICA
+
+PRIVACIDADE DE REFERÊNCIA
+≠ CONTROLE IMPLEMENTADO
+≠ EVIDÊNCIA OPERACIONAL
+
+SOURCE LOCK
+≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
+</code></pre></div>
+<p>Conclusão documental do Lote F:</p>
+<blockquote>
+<p><strong>Mall, Travel, Media, Ads, Business e Intelligence = DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION.</strong></p>
+</blockquote>
+<p>Esse fechamento é documental e não promove disponibilidade operacional, Design, implementação, PMF ou publicação comercial.</p>
 <h2 id="10-f-006f-007-artefatos-e-contagens-historicas">10. F-006/F-007 — artefatos e contagens históricas<a class="headerlink" href="#10-f-006f-007-artefatos-e-contagens-historicas" title="Permanent link">&para;</a></h2>
 <p>Exemplos já confirmados de artefatos sem autoridade visual vigente:</p>
 <ul>
@@ -14284,22 +14369,22 @@ AUTORIDADE MESTRE MELHOR
 </tr>
 <tr>
 <td>F — Homes de Produtos</td>
-<td><code>NEXT / AUDIT_PENDING</code></td>
-<td>classificação e correções</td>
+<td><code>COMPLETED</code></td>
+<td>seis Homes especializadas reconciliadas documentalmente; materialização não autorizada</td>
 </tr>
 <tr>
 <td>G — Jornada da Pessoa</td>
-<td><code>PENDING</code></td>
+<td><code>NEXT / AUDIT_PENDING</code></td>
 <td>fluxo vigente consolidado antes da próxima tela</td>
 </tr>
 <tr>
 <td>H — Organização / Coletivo</td>
-<td><code>PENDING</code></td>
+<td><code>NEXT / AUDIT_PENDING</code></td>
 <td>recentes autoridades integradas e históricos removidos após absorção</td>
 </tr>
 <tr>
 <td>I — Registries / Catálogos / SVGs</td>
-<td><code>PENDING</code></td>
+<td><code>NEXT / AUDIT_PENDING</code></td>
 <td>inventário e maturidade recomputados</td>
 </tr>
 <tr>
@@ -14355,9 +14440,9 @@ D. Home principal / Pessoa                      [concluído]
 ↓
 E. Home Organizações e Coletivos                [concluído]
 ↓
-F. Homes de Produtos                             [próximo]
+F. Homes de Produtos                             [concluído]
 ↓
-G/H/I. Experience Architecture e inventário visual
+G/H/I. Experience Architecture e inventário visual [próximo bloco]
 ↓
 J/K/L/M/N. domínios especializados
 ↓
@@ -14488,11 +14573,11 @@ PRODUCT ENGINEERING
 <div class="highlight"><pre><span></span><code>AUDIT
 → IN_PROGRESS
 
-A / B / C / D / E
+A / B / C / D / E / F
 → COMPLETED
 
-NEXT LOT
-→ F — HOMES DOS PRODUTOS ESPECIALIZADOS
+NEXT BLOCK
+→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
 
 BASELINE FINAL
 → NOT AUTHORIZED
@@ -14506,8 +14591,8 @@ HOME PRINCIPAL
 HOME ORGANIZAÇÕES E COLETIVOS
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
-DEMAIS HOMES
-→ AUDIT_PENDING
+HOMES DOS PRODUTOS ESPECIALIZADOS
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
 DESIGN DAS HOMES
 → OPERATIONAL AUTHORIZATION SUSPENDED DURING FULL-CORPUS AUDIT
