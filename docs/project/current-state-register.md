@@ -359,7 +359,7 @@ Permanecem autoridades funcionais:
 
 ### 8.2 Atores, autoridades e jobs
 
-`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.0.0` está ativo e define, antes da arquitetura visual:
+`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.1.0` está ativo e define, antes da arquitetura visual:
 
 - classes funcionais de atores;
 - participante representado;
