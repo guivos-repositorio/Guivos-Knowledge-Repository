@@ -21,6 +21,7 @@ depends_on:
   - GKR-UX-HOME-BUSINESS-MASTER-001
   - GKR-UX-HOME-ADS-MASTER-001
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
+  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 related:
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-HOME-OC-MASTER-001
@@ -47,6 +48,10 @@ GPA DO PRODUTO
 DOCUMENTO MESTRE DA HOME
 → continua governando sua arquitetura narrativa e funcional enquanto não houver conflito com autoridade superior vigente
 
+SOURCE LOCK DA HOME, QUANDO EXISTENTE
+→ congela o pacote de fontes e invariantes nos limites de sua própria autoridade
+→ não autoriza, por si só, Design ou materialização
+
 ESTA AUTORIDADE DE RECONCILIAÇÃO
 → governa somente estado atual, precedência documental, dependências vigentes, conflitos de continuidade e gates do Lote F
 
@@ -54,7 +59,7 @@ GIT
 → preserva a história das versões e dependências anteriores
 ```
 
-Este documento **não substitui** GPA, Master, Source Lock de produto, arquitetura econômica, privacidade, Research, Journey ou qualquer autoridade especializada fora de seu escopo.
+Este documento **não substitui** GPA, Master, Source Lock de produto ou de Home, arquitetura econômica, privacidade, Research, Journey ou qualquer autoridade especializada fora de seu escopo.
 
 ---
 
@@ -85,14 +90,14 @@ PMF
 WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
 → NOT AUTHORIZED
 
-HOME SOURCE LOCK NOVO
+NOVO SOURCE LOCK OU REABERTURA DE SOURCE LOCK
 → NOT AUTHORIZED BY THIS DOCUMENT
 
 PUBLICAÇÃO / DISPONIBILIDADE OPERACIONAL
 → NOT IMPLIED
 ```
 
-Handoffs, Manifests, snapshots, Source Locks e GENINPUTs existentes permanecem evidência de proveniência ou decisões de checkpoints anteriores. Eles não constituem autorização atual de Design durante a Auditoria Integral.
+Handoffs, Manifests, snapshots, Source Locks e GENINPUTs existentes preservam a função que suas próprias autoridades lhes atribuem. Nenhum deles constitui autorização automática de Design durante a Auditoria Integral.
 
 ---
 
@@ -255,7 +260,7 @@ EMPRESA NO CONTRATO BUSINESS
 ≠ NOVO TIPO ESTRUTURAL DE PARTICIPANTE
 ```
 
-Qualquer texto histórico do Master que trate a futura Home do Intelligence como ainda inexistente deve ser interpretado apenas como estado do checkpoint em que foi escrito. A Home Intelligence hoje possui Documento Mestre, embora não possua Home Source Lock, Design ou implementação autorizados.
+Qualquer texto histórico do Master que trate a futura Home do Intelligence como ainda inexistente deve ser interpretado apenas como estado do checkpoint em que foi escrito. A Home Intelligence possui Documento Mestre e Source Lock próprios; isso não autoriza Design, implementação ou disponibilidade operacional.
 
 Pontos Guivos permanecem fora da narrativa pública do Business conforme o próprio Master; sua existência funcional/econômica continua governada pelas autoridades econômicas específicas.
 
@@ -303,6 +308,7 @@ Autoridades principais:
 - `GPA-006 v2.0.0` — autoridade superior do Produto Especializado;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0` — Source Lock do Produto;
 - `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1` — consolidação mestre da Home;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` — Source Lock ativo e normativo da Home;
 - `GIA-000 v1.6.0` — Intelligence Architecture reconciliada no Lote F.
 
 Estado reconciliado:
@@ -319,10 +325,13 @@ HOME INTELLIGENCE v1
 → MASTER EXISTS
 
 HOME SOURCE LOCK
-→ NOT CREATED
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+→ ACTIVE / NORMATIVE
+→ FREEZES SOURCES AND INVARIANTS
+→ DOES NOT AUTHORIZE DESIGN BY ITSELF
 
 DESIGN / UI / PROTOTYPE / IMPLEMENTATION
-→ NOT AUTHORIZED
+→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
 ```
 
 O contrato superior permanece:
@@ -334,7 +343,7 @@ COMPREENDER
 
 Intelligence pode servir outros domínios dentro de autoridade e finalidade permitidas, mas não absorve a autoridade de Journey, Business, Mall, Travel, Media, Ads, Pessoa, Organização ou Coletivo.
 
-Qualquer descrição histórica que declare a Home Intelligence como não iniciada é superada para estado atual por `GIA-000 v1.6.0` e por esta reconciliação.
+Qualquer descrição histórica que declare a Home Intelligence como não iniciada é superada para estado atual por `GIA-000 v1.6.0`, pelo Documento Mestre, pelo Source Lock da Home e por esta reconciliação.
 
 ---
 
