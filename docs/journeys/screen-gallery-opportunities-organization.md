@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITIES-ORGANIZATION-001
 title: Organização e Oportunidades
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-26
+last_updated: 2026-08-30
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
@@ -18,6 +18,8 @@ related:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -30,7 +32,10 @@ normative: false
 
 ```text
 contexto institucional da Organização
-→ arquitetura principal autenticada ainda a definir
+→ atores, autoridades e jobs já definidos
+→ Arquitetura da Informação autenticada definida pre-surface-map
+→ mapa final de superfícies ainda não canônico
+→ wireframe principal autenticado ainda a definir
 → cadastro e ativação institucional de oportunidade
 → mapa de oportunidades
 ↔ lista sincronizada
@@ -50,6 +55,8 @@ UXA-015/017 + SVG de ORG-001
 UXA-008/013 — CADASTRO DE OPORTUNIDADE
 → MATURIDADE PRÓPRIA PRESERVADA
 ```
+
+`GKR-UX-ORGCOL-AUTH-JOBS-001` e `GKR-UX-ORGCOL-AUTH-IA-001` já definem a base funcional e a Arquitetura da Informação autenticada. Isso **não** define mapa final de superfícies, wireframe, UI, protótipo ou implementação.
 
 ## 2. Organização
 
@@ -120,7 +127,7 @@ A continuidade orgânica `publicação → descoberta → Mapa/Lista → Detalhe
 
 Isso **não** valida inscrição, reserva, compra, contratação, disponibilidade, autenticação ou qualquer outro processo executado pelo terceiro depois de `BND-001`. Integrações patrocinadas `TRN-304/306` permanecem parciais.
 
-Também não valida a UX principal autenticada da Organização. Seu próximo avanço continua dependente de papéis/jobs, arquitetura da informação, mapa de superfícies, fluxos/estados e construção de um novo wireframe vigente.
+Também não valida a UX principal autenticada da Organização. Atores, autoridades, jobs e a Arquitetura da Informação autenticada já estão definidos; o gap seguinte começa no **mapa final de superfícies**, seguido por fluxos/estados críticos e construção de um novo wireframe vigente quando autorizado.
 
 O status `active` registra o instrumento de inspeção e não inicia protótipo ou Engenharia de Produto.
 
