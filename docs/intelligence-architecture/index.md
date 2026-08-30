@@ -13,6 +13,7 @@ related:
   - ADR-007
   - GKR-INTELLIGENCE-CONTINUITY-001
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
+  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
 ---
 
@@ -307,9 +308,9 @@ Dado autorizado para personalização, analytics ou serving não está automatic
 
 ## Estado
 
-`GPA-006 2.0.0` consolida a arquitetura de produto dos Checkpoints 1–12. O **Product Source Lock do Guivos Intelligence** já está integrado e a **Home Pública do Intelligence v1** possui arquitetura conceitual completa em 11 movimentos e Documento Mestre `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`.
+`GPA-006 2.0.0` consolida a arquitetura de produto dos Checkpoints 1–12. O **Product Source Lock do Guivos Intelligence** está integrado, a **Home Pública do Intelligence v1** possui arquitetura conceitual completa em 11 movimentos e Documento Mestre `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`, e o **Source Lock da Home** existe como `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`, ativo e normativo.
 
-A existência documental da Home não constitui materialização visual nem disponibilidade operacional.
+O Source Lock da Home congela as fontes de autoridade para futura materialização. Ele não constitui, por si só, autorização de Design, materialização visual, implementação ou publicação.
 
 Estado governado durante a Auditoria Integral:
 
@@ -325,7 +326,9 @@ HOME PÚBLICA INTELLIGENCE v1
 → DOCUMENTO MESTRE EXISTENTE
 
 HOME SOURCE LOCK
-→ NÃO CRIADO
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+→ ACTIVE / NORMATIVE
+→ CONGELA FONTES; NÃO AUTORIZA MATERIALIZAÇÃO POR SI SÓ
 
 WIREFRAME / UI / PROTÓTIPO / DESIGN HANDOFF
 → NÃO AUTORIZADOS DURANTE A AUDITORIA INTEGRAL
@@ -359,4 +362,4 @@ Permanecem abertos ou não evidenciados:
 - explicabilidade operacional;
 - controles de privacidade operacionais.
 
-A próxima etapa da Home não é Design nem implementação. Durante a Auditoria Integral, sua autoridade documental permanece submetida ao `GKR-FULL-CORPUS-AUDIT-001` e ao diagnóstico do Lote F em `GKR-SPECIALIZED-HOMES-AUDIT-001`.
+A próxima etapa da Home não é automaticamente Design nem implementação. Durante a Auditoria Integral, sua autoridade documental permanece submetida ao `GKR-FULL-CORPUS-AUDIT-001`, ao diagnóstico do Lote F em `GKR-SPECIALIZED-HOMES-AUDIT-001` e ao gate global que mantém materialização visual suspensa.
