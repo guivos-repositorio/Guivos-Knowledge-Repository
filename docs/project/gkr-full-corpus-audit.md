@@ -2,9 +2,9 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.4.0
+version: 1.5.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-08-30
 normative: false
 maturity: audit_in_progress
 baseline_sha: a05a54071414086456877ee4d0de59c59eefed0a
@@ -137,11 +137,11 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-003 | Critical | Home principal/Pessoa conflita com assinatura e Movimento 06 vigentes | `REBUILD` | resolvido no Lote D |
 | F-004 | Major | Home O/C antecedia mudanças estruturais posteriores | `REBUILD` | resolvido no Lote E |
 | F-005 | Major | Mall, Travel, Media, Ads, Business e Intelligence precisavam de auditoria semântica | `UPDATE` | resolvido documentalmente no Lote F |
-| F-006 | Major | UXA-015..018 e SVGs associados continuam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | aberto |
-| F-007 | Major | contagens físicas de SVGs não representam maturidade vigente | `UPDATE` | aberto |
+| F-006 | Major | UXA-015..018 e SVGs associados continuam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | **aberto; semântica funcional substancialmente absorvida, cleanup ainda não autorizado** |
+| F-007 | Major | contagens físicas de SVGs não representam maturidade vigente | `UPDATE` | **resolvido no Bloco I; instrumentos centrais separam inventário físico de maturidade** |
 | F-008 | Major | Estado Atual e Roadmap dependiam de reconciliação posterior | `UPDATE + CONSOLIDATE` | resolvido no Lote B |
 | F-009 | Major | autoridades O/C recentes não estavam absorvidas nas autoridades globais | `UPDATE` | absorção global concluída; MENU ainda pendente |
-| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `HOLD_REVIEW` | aberto |
+| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `HOLD_REVIEW` | aberto; overlays pós-313 testados/reconciliados no Bloco H, demais famílias pendentes |
 | F-011 | Critical guardrail | nenhuma consolidação pode perder detalhe material | `KEEP_DETAIL` | regra ativa |
 | F-012 | Gate | primeira tela pós-Home da Pessoa depende do encerramento da auditoria | `BLOCK` | ativo |
 | F-013 | Major | Fundação antiga supercentralizava Oportunidade e antecedia distinção Possibilidade/Mecanismo/Oportunidade | `REBUILD + ENRICH` | reconciliado no Lote C |
@@ -344,27 +344,229 @@ Esse fechamento é documental e não promove disponibilidade operacional, Design
 
 ## 10. F-006/F-007 — artefatos e contagens históricas
 
-Exemplos já confirmados de artefatos sem autoridade visual vigente:
+Exemplos confirmados de artefatos sem autoridade visual vigente:
 
 - `UXA-015`;
 - `UXA-016`;
 - `UXA-017`;
 - `UXA-018`;
-- SVG da antiga Visão Geral da Organização;
-- SVG do antigo Início do Coletivo.
+- `uxa-015-organization-overview-desktop.svg`;
+- `uxa-016-collective-home-mobile.svg`.
+
+O Bloco H recuperou, pelo diff da PR #313, o conteúdo material anterior à supersessão desses quatro documentos.
+
+### F-006 — estado atual
+
+Foi comprovada absorção substancial dos princípios funcionais centrais em `UXA-014`, `UXA-019`, `GKR-UX-ORGCOL-AUTH-JOBS-001` e `GKR-UX-ORGCOL-AUTH-IA-001`, incluindo:
+
+- contexto, autoridade e limites;
+- responsabilidade material;
+- capacidade vinculada a compromissos;
+- oportunidades/atividades subordinadas a propósito e responsabilidade;
+- bilateralidade e autonomia;
+- evidência e prestação de contas;
+- participação voluntária;
+- papéis e governança;
+- proteção, contestação, pausa e saída;
+- Próximos Passos justificados;
+- neutralidade frente a métricas comerciais ou de popularidade.
+
+Não foi promovido automaticamente como verdade atual:
+
+- hierarquia específica da antiga composição de tela;
+- ordem visual dos blocos históricos;
+- linguagem de interface validada apenas naquele objeto superseded;
+- conclusão histórica de validação funcional;
+- estados alternativos detalhados ainda não absorvidos explicitamente por autoridade posterior.
+
+Por isso:
+
+```text
+F-006
+→ OPEN
+→ REMOVE_AFTER_ABSORPTION
+→ NENHUMA REMOÇÃO FÍSICA AUTORIZADA NESTE PONTO
+```
 
 Antes de removê-los:
 
-1. extrair semântica ainda válida;
-2. confirmar absorção em autoridades atuais;
-3. enriquecer a autoridade receptora quando o material antigo trouxer exemplos, estados ou critérios úteis;
-4. corrigir links e dependências;
-5. atualizar catálogo, gallery, registry e traceability;
-6. recomputar contagens;
-7. validar o corpus;
-8. somente então remover os arquivos físicos sem função atual.
+1. classificar cada conteúdo remanescente como `absorvido`, `histórico apenas` ou `ainda não absorvido`;
+2. confirmar ausência de função atual necessária no corpus;
+3. corrigir links e dependências;
+4. atualizar catálogo, gallery, registry e traceability;
+5. recomputar contagens físicas;
+6. validar o corpus no head exato;
+7. somente então remover os arquivos físicos sem função atual.
 
-Nenhuma nova contagem agregada será inferida antes dessa limpeza.
+### F-007 — resolvido no Bloco I
+
+O problema de F-007 não era a existência do número físico `121`, mas seu uso como atalho de maturidade.
+
+Os instrumentos centrais agora preservam explicitamente:
+
+```text
+SVG FÍSICO
+≠ WIREFRAME VIGENTE
+≠ WIREFRAME VALIDADO
+```
+
+Estado comprovado no snapshot auditado do Bloco I:
+
+| Indicador | Resultado |
+|---|---:|
+| SVGs físicos | **121** |
+| associações físicas | **121** |
+| perfis de rastreabilidade | **34** |
+| duplicatas exatas por blob SHA | **0** |
+| near-duplicates | **NOT_CERTIFIED** |
+| total agregado de wireframes vigentes | **NOT_CERTIFIED** |
+| total agregado de wireframes validados vigentes | **NOT_CERTIFIED** |
+| total agregado de pendências visuais | **NOT_CERTIFIED** |
+
+A claim histórica `121 validados / 0 pendentes` permanece somente como snapshot explicitamente `superseded` nos instrumentos que preservam sua proveniência. Ela não é usada como verdade vigente em `GKR-STATE-001`, `README`, `docs/index`, Experience Architecture, Jornadas, catálogo, galeria, matriz ou registro granular.
+
+Conclusão:
+
+> **F-007 = RESOLVED no limite do Bloco I.**
+
+Esse fechamento não cria uma nova contagem agregada de maturidade; ele corrige a semântica e impede que o inventário físico seja usado como maturidade.
+
+## 10.1 Bloco 2 — G/H/I — diagnóstico e remediação
+
+Baseline de execução do bloco:
+
+```text
+main
+→ b5acfaffc57afd2714c44dbe53ecf3faba76fe9e
+
+branch controlada
+→ agent/gkr-global-audit-block-2-ghi-v1
+
+branch pré-auditoria de surface map
+→ agent/gkr-orgcol-authenticated-surface-map-v1
+→ HOLD_REVIEW
+→ NÃO É AUTORIDADE
+```
+
+### G — Jornada da Pessoa
+
+Diagnóstico:
+
+- Jornada da Pessoa permanece `draft` e estruturalmente coerente;
+- não houve prova positiva para `REBUILD`;
+- `handoffs.md` continha uma contradição residual ao declarar `UXA-097` não iniciada;
+- o Registro de Transições já reconhecia `TRN-007` como integral por UXA-097 e `TRN-008..013` como integrais no limite documental por D5-C4B.
+
+Remediação:
+
+- `handoffs.md` reconciliado com UXA-097 e D5-C4B;
+- nenhuma nova superfície, wireframe ou UXA criada.
+
+Resultado:
+
+> **G = COMPLETED / UPDATE_APPLIED.**
+
+### H — Organização / Coletivo
+
+Diagnóstico inicial:
+
+- fundação e relações válidas;
+- atores, autoridades e jobs já definidos em `GKR-UX-ORGCOL-AUTH-JOBS-001`;
+- IA autenticada já definida em `GKR-UX-ORGCOL-AUTH-IA-001`;
+- `GKR-UX-ORGCOL-UX-STATE-001`, porta temática, overlays pós-313, `gaps` e Jornadas O/C ainda continham formulações anteriores que tratavam Jobs/IA como futuros ou usavam “arquitetura principal pendente” de forma ambígua;
+- `UXA-015..018` permanecem superseded;
+- a branch histórica de surface map permanece não canônica.
+
+Remediações aplicadas:
+
+- estado de UX O/C atualizado para reconhecer Jobs + IA;
+- porta temática O/C atualizada;
+- overlay normativo pós-313 atualizado e sua precedência restringida à supersessão histórica;
+- auditoria derivada pós-313 atualizada;
+- `gaps` atualizado para começar a lacuna em surface map/wireframe;
+- Jornada da Organização atualizada sem retirar seu `draft`;
+- Jornada do Coletivo atualizada sem retirar seu `draft`.
+
+Estado correto:
+
+```text
+FOUNDATIONS / RELATIONS
+→ DEFINED
+
+ACTORS / AUTHORITIES / JOBS
+→ DEFINED
+
+AUTHENTICATED INFORMATION ARCHITECTURE
+→ DEFINED PRE-SURFACE-MAP
+
+FINAL SURFACE MAP
+→ NOT DEFINED
+
+MAIN AUTHENTICATED WIREFRAMES
+→ NOT DEFINED
+
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED
+```
+
+Resultado:
+
+> **H = AUDITED / UPDATE_APPLIED / OPEN_FINDING F-006.**
+
+Não há prova para rebuild e não há autorização para surface map, wireframe, UI ou protótipo durante este fechamento.
+
+### I — Registries / Catálogos / SVGs
+
+Diagnóstico:
+
+- inventário físico: 121 SVGs;
+- 121 associações físicas;
+- 34 perfis de rastreabilidade;
+- 0 duplicatas exatas observadas/provadas pela unicidade dos blob SHAs no snapshot auditado;
+- near-duplicates não foram certificados por auditoria visual exaustiva;
+- 121 físicos não podem representar automaticamente wireframes vigentes/validados;
+- `UXA-015/016` continuam com seus dois SVGs físicos históricos.
+
+Remediações:
+
+- `UXA-000` passou a separar inventário físico de maturidade vigente;
+- catálogo, galeria, matriz, registry e Jornadas já preservam ou foram reconciliados para leitura item a item;
+- `gaps` registra a mesma separação;
+- F-007 foi resolvido semanticamente.
+
+Resultado:
+
+> **I = AUDITED / UPDATE_APPLIED / OPEN_FINDING F-006.**
+
+A recomputação física posterior à eventual remoção de `UXA-015..018` e dos dois SVGs somente poderá ocorrer depois do gate de F-006.
+
+### Resultado do Bloco 2
+
+```text
+G
+→ COMPLETED
+
+H
+→ AUDITED / REMEDIATED
+→ F-006 OPEN
+
+I
+→ AUDITED / REMEDIATED
+→ F-006 OPEN
+→ F-007 RESOLVED
+
+REBUILD_REQUIRED
+→ NOT PROVEN
+
+DESIGN
+→ NOT AUTHORIZED
+
+NEXT BLOCK J/K/L/M/N
+→ NOT RELEASED UNTIL G/H/I CLOSURE DECISION
+```
 
 ## 11. F-008 — Estado Atual e Roadmap
 
@@ -418,6 +620,13 @@ A AUTORIDADE RECEPTORA FICARÁ PELO MENOS TÃO RICA QUANTO O CONJUNTO ATUAL?
 ```
 
 Somente depois desse teste definir `KEEP`, `CONSOLIDATE`, `ENRICH`, `REMOVE_AFTER_ABSORPTION` ou `REMOVE`.
+
+No Bloco H, dois membros dessa família foram testados diretamente:
+
+- `GKR-ORGCOL-POST313-RECON-001` — **KEEP + UPDATE**, com função normativa restrita à supersessão pós-313 e prevenção de regressão;
+- `GKR-UX-ORGCOL-DERIVED-AUDIT-001` — **EVIDENCE_KEEP + UPDATE**, como evidência da deriva e de sua normalização.
+
+Isso não encerra F-010 para as demais famílias.
 
 ## 13. Guardrail de detalhe e enriquecimento
 
@@ -515,9 +724,9 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | D — Home principal / Pessoa | `COMPLETED` | master e resíduos documentais reconciliados; materialização não autorizada |
 | E — Home Organizações e Coletivos | `COMPLETED` | master + NARR/NAV/SYS + resíduos documentais reconciliados; materialização não autorizada |
 | F — Homes de Produtos | `COMPLETED` | seis Homes especializadas reconciliadas documentalmente; materialização não autorizada |
-| G — Jornada da Pessoa | `NEXT / AUDIT_PENDING` | fluxo vigente consolidado antes da próxima tela |
-| H — Organização / Coletivo | `NEXT / AUDIT_PENDING` | recentes autoridades integradas e históricos removidos após absorção |
-| I — Registries / Catálogos / SVGs | `NEXT / AUDIT_PENDING` | inventário e maturidade recomputados |
+| G — Jornada da Pessoa | `COMPLETED` | contradição de handoff reconciliada; sem rebuild |
+| H — Organização / Coletivo | `AUDITED / UPDATE_APPLIED / F-006_OPEN` | Jobs + IA propagados; históricos aguardam gate de cleanup |
+| I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_OPEN` | inventário físico provado; F-007 resolvido; cleanup/recontagem posterior condicionados a F-006 |
 | J — Produtos / Economia | `PENDING` | masters atuais sem fragmentação |
 | K — Research / RP-002 | `PENDING` | método/evidência preservados; intermediários absorvidos quando possível |
 | L — Tecnologia / Dados / IA | `PENDING` | autoridades atuais e fronteiras claras |
@@ -542,9 +751,11 @@ E. Home Organizações e Coletivos                [concluído]
 ↓
 F. Homes de Produtos                             [concluído]
 ↓
-G/H/I. Experience Architecture e inventário visual [próximo bloco]
+G. Jornada da Pessoa                             [concluído]
 ↓
-J/K/L/M/N. domínios especializados
+H/I. O/C + inventário visual                     [auditados/remediados; F-006 aberto]
+↓
+J/K/L/M/N. domínios especializados               [não liberados até decisão de fechamento G/H/I]
 ↓
 O. MENU final
 ↓
@@ -689,11 +900,21 @@ A auditoria somente pode encerrar quando:
 AUDIT
 → IN_PROGRESS
 
-A / B / C / D / E / F
+A / B / C / D / E / F / G
 → COMPLETED
 
-NEXT BLOCK
-→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
+H / I
+→ AUDITED / UPDATE_APPLIED
+→ F-006 OPEN
+
+F-007
+→ RESOLVED
+
+NEXT ACTION
+→ CLOSE OR RECLASSIFY F-006 BY POSITIVE ABSORPTION/FUNCTION TEST
+
+NEXT SPECIALIZED BLOCK J/K/L/M/N
+→ NOT RELEASED YET
 
 BASELINE FINAL
 → NOT AUTHORIZED
@@ -712,6 +933,12 @@ HOMES DOS PRODUTOS ESPECIALIZADOS
 
 DESIGN DAS HOMES
 → OPERATIONAL AUTHORIZATION SUSPENDED DURING FULL-CORPUS AUDIT
+
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
 
 MENU FINAL
 → NOT YET DESIGNED
