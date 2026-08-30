@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **3.4.0** |
+| Registro | `GKR-STATE-001` **3.5.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
@@ -19,7 +19,9 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | PMF | **NOT VALIDATED** |
 | Auditoria integral | **IN_PROGRESS** |
 | Lotes concluídos | **A / B / C / D / E / F** |
-| Próximo bloco da auditoria | **G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL** |
+| Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 OPEN** |
+| Próximo gate da auditoria | **DECISÃO DE FECHAMENTO G/H/I CONDICIONADA A F-006** |
+| F-007 | **RESOLVED — semantic/inventory scope** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
@@ -27,7 +29,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.4.0](roadmap.md) governa a sequência atual.
+O [Roadmap 13.5.0](roadmap.md) governa a sequência atual.
 
 ## Por que o repositório está em auditoria
 
@@ -54,8 +56,8 @@ O histórico permanece no Git.
 
 ### Estado e direção
 
-- [Registro do Estado Atual 3.4.0](project/current-state-register.md)
-- [Roadmap 13.4.0](roadmap.md)
+- [Registro do Estado Atual 3.5.0](project/current-state-register.md)
+- [Roadmap 13.5.0](roadmap.md)
 - [Auditoria Integral do GKR](project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](project/gkr-specialized-homes-audit.md)
 - [Reconciliação das Homes Especializadas](experience-architecture/public-specialized-homes-reconciliation.md)
@@ -188,7 +190,7 @@ Já estão definidos:
 - fundação funcional;
 - contrato das relações Organização ↔ Coletivo;
 - atores, autoridades e jobs prioritários;
-- Arquitetura da Informação.
+- Arquitetura da Informação autenticada em estado **pre-surface-map**.
 
 Organização:
 
@@ -310,9 +312,14 @@ A antiga leitura agregada de “oito Homes convergidas” não é usada como ata
 
 ## Materializações e contagens
 
-O corpus ainda contém artefatos físicos de ciclos anteriores. Alguns perderam autoridade vigente e serão removidos depois da absorção do conteúdo útil.
+O corpus ainda contém artefatos físicos de ciclos anteriores. Alguns perderam autoridade vigente e permanecem preservados até que sua absorção material esteja comprovada.
 
-Durante a auditoria:
+No snapshot auditado do Bloco I:
+
+- **121 SVGs físicos**;
+- **121 associações físicas**;
+- **34 perfis de rastreabilidade**;
+- **0 duplicatas exatas observadas/provadas por blob SHA**.
 
 ```text
 SVG FÍSICO
@@ -320,23 +327,49 @@ SVG FÍSICO
 ≠ WIREFRAME VALIDADO
 ```
 
-Nenhuma nova contagem agregada de maturidade visual será publicada antes da recomputação governada.
+Permanecem `NOT_CERTIFIED`:
+
+- near-duplicates;
+- total agregado de wireframes vigentes;
+- total agregado de wireframes validados vigentes;
+- total agregado de pendências visuais.
+
+`F-006` permanece `OPEN / REMOVE_AFTER_ABSORPTION`; nenhum `UXA-015..018` ou SVG associado possui remoção autorizada neste estágio.
 
 ## Próximo movimento
 
-O próximo bloco é **G/H/I — Experience Architecture e inventário visual**, não iniciar automaticamente nova UXA, Design ou Engineering.
+O Bloco 2 G/H/I foi auditado no limite documental atual. O próximo movimento **não** é liberar automaticamente J/K/L/M/N: é a decisão governada de fechamento de G/H/I, condicionada ao tratamento de `F-006`.
 
 ```text
-G — JORNADA DA PESSOA
-H — ORGANIZAÇÃO / COLETIVO
-I — REGISTRIES / CATÁLOGOS / SVGs
+G
+→ COMPLETED / UPDATE_APPLIED
 
-NÃO INFERIR UXA-102
-NÃO INFERIR WIREFRAME
-NÃO INFERIR DESIGN
-NÃO INFERIR PRODUCT ENGINEERING
-NÃO INFERIR PMF
-NÃO ESCREVER A PRIMEIRA TELA PÓS-HOME DA PESSOA ANTES DO FECHAMENTO DA AUDITORIA
+H
+→ AUDITED / UPDATE_APPLIED
+→ F-006 OPEN
+
+I
+→ AUDITED / UPDATE_APPLIED
+→ F-006 OPEN
+→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+J / K / L / M / N
+→ NOT RELEASED AUTOMATICALLY
+
+O
+→ PENDING / HOLD
+
+Q
+→ BLOCKED
+
+UXA-102/V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
+
+DESIGN / MATERIALIZATION
+→ NOT AUTHORIZED
 ```
 
 ## Navegação
