@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-COLLECTIVES-001
 title: Coletivos
 status: active
-version: 0.14.0
+version: 0.15.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-26
+last_updated: 2026-08-30
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
@@ -27,6 +27,8 @@ related:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -52,7 +54,7 @@ explorar e buscar
 → Início do Participante
 ```
 
-A experiência principal autenticada do Coletivo ainda depende de arquitetura da informação e wireframe próprios. A UXA-096 preserva a maturidade da Central e do Início do Participante na perspectiva da Pessoa participante; isso não define a UX administrativa principal do Coletivo.
+A experiência principal autenticada do Coletivo já possui atores/autoridades/jobs e Arquitetura da Informação definidos em estado **pre-surface-map**. Permanecem pendentes o mapa final de superfícies, os fluxos/estados críticos da experiência principal e o wireframe autenticado final. A UXA-096 preserva a maturidade da Central e do Início do Participante na perspectiva da Pessoa participante; isso não define a UX administrativa principal do Coletivo.
 
 ## 2. Descoberta e busca
 
@@ -218,11 +220,17 @@ A referência sintetiza propósito, vínculo atual, papel, momento, ação compa
 
 `GKR-SURF-COL-004` a `GKR-SURF-COL-008` permanecem fora deste pacote. Estados alternativos P0B/P1 também permanecem separados.
 
-Além disso:
+Estado atual da experiência principal autenticada:
 
 ```text
-ARQUITETURA DA INFORMAÇÃO PRINCIPAL DO COLETIVO
-→ PENDENTE
+ATORES / AUTORIDADES / JOBS
+→ DEFINED
+
+ARQUITETURA DA INFORMAÇÃO AUTENTICADA
+→ DEFINED PRE-SURFACE-MAP
+
+MAPA FINAL DE SUPERFÍCIES
+→ PENDENTE / NÃO CANÔNICO
 
 WIREFRAME PRINCIPAL AUTENTICADO DO COLETIVO
 → PENDENTE
@@ -244,7 +252,7 @@ A presença física de 34 SVGs não significa 34 wireframes vigentes ou validado
 
 ## 14. Próximo gate
 
-Os fluxos públicos, de solicitação, participação e gestão especializada preservam as maturidades que possuem por autoridade própria. O próximo gate da **experiência principal autenticada do Coletivo** é anterior ao wireframing: papéis/jobs prioritários → arquitetura da informação → mapa de superfícies → fluxos e estados críticos.
+Os fluxos públicos, de solicitação, participação e gestão especializada preservam as maturidades que possuem por autoridade própria. A experiência principal autenticada já possui papéis/jobs e Arquitetura da Informação definidos; o próximo gate começa em **mapa de superfícies → fluxos e estados críticos → wireframe principal**, somente quando autorizado.
 
 Nenhuma próxima UXA, UI, protótipo ou Engenharia de Produto é iniciada automaticamente.
 
