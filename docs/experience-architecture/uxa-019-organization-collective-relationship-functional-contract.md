@@ -2,9 +2,9 @@
 id: UXA-019
 title: Contrato Funcional das Relações entre Organizações e Coletivos
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-26
+last_updated: 2026-08-30
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -12,11 +12,11 @@ depends_on:
   - UXA-011
   - UXA-011-A1
   - UXA-014
-  - UXA-017
-  - UXA-018
 related:
-  - UXA-015
-  - UXA-016
+  - GKR-UX-ORGCOL-STATE-001
+  - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
 normative: false
 ---
 
