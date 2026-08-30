@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-COLLECTIVE-001
 title: Detalhamento Obrigatório das Superfícies do Coletivo
 status: active
-version: 0.10.0
+version: 0.11.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-26
+last_updated: 2026-08-30
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
 related:
   - UXA-070
@@ -22,6 +22,8 @@ related:
   - UXA-100-A3
   - UXA-100-A4
   - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -34,14 +36,14 @@ Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obri
 
 A reconciliação pós-PR #313/#314 estabelece que `UXA-016/018` e o SVG associado ao antigo início do Coletivo são históricos `superseded`. Materiais posteriores de operação do responsável, solicitações e Planos preservam apenas a maturidade que possuam por autoridade própria e não podem ser promovidos, por inferência, ao status de wireframe principal autenticado final do Coletivo.
 
-A arquitetura de informação e o wireframe principal autenticado do Coletivo permanecem **pendentes**.
+A arquitetura da informação autenticada do Coletivo está definida por `GKR-UX-ORGCOL-AUTH-IA-001` no estágio **pre-surface-map**. O mapa final de superfícies, a navegação materializada e o wireframe principal autenticado do Coletivo permanecem **pendentes**.
 
 ## 2. Campos por identificador
 
 | ID | Artefato canônico e caminho | Versão | Entrada | Decisão principal | Saída | Dados e conteúdos | Gate | Reversibilidade | Supersessão | Continuidade | Lacuna | Observação de escopo |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | GKR-SURF-COL-001 | presença pública sustentada por UXA-056/062/063; `UXA-016/018` permanecem somente como histórico superseded | estado público preservado no recorte próprio; início autenticado final não definido | descoberta/acesso público; entrada protegida depende de arquitetura vigente | consultar presença pública; continuidade autenticada depende do estado atual | descoberta e participação nos fluxos que tenham autoridade própria | identidade, propósito e informações públicas autorizadas | público para consulta; autoridade específica para áreas protegidas | retornar ou encerrar consulta | `UXA-016` e `UXA-018` superseded | continuidade pública preservada por UXA-056/062/063 | **separação final entre presença pública, entrada autenticada e operação interna ainda pendente** | presença pública válida ≠ wireframe principal autenticado do Coletivo |
-| GKR-SURF-COL-002 | UXA-086/087 e navegação UXA-100-A4 permanecem evidência histórica/local de uma superfície administrativa; não são baseline final da experiência principal autenticada | materialização local existente; status de wireframe principal vigente: pendente | acesso protegido com representação válida | compreender contexto operacional no escopo do pacote e acessar capacidades autorizadas | GKR-TRN-112 para solicitações; continuidade de Planos no contrato próprio | identidade, propósito, representação e escopo no limite necessário | representação válida e escopo concedido | permanecer, retornar ou abrir capacidade autorizada | nenhuma supersessão automática de UXA-086/087; **supersedida apenas a inferência de que definem a experiência principal final** | TRN-112 e contratos de Planos preservam maturidade própria, sem provar arquitetura principal vigente | **arquitetura de informação, navegação principal e wireframe autenticado final pendentes** | referência administrativa local ≠ wireframe principal final do Coletivo |
+| GKR-SURF-COL-002 | UXA-086/087 e navegação UXA-100-A4 permanecem evidência histórica/local de uma superfície administrativa; não são baseline final da experiência principal autenticada | materialização local existente; status de wireframe principal vigente: pendente; IA autenticada definida pre-surface-map | acesso protegido com representação válida | compreender contexto operacional no escopo do pacote e acessar capacidades autorizadas | GKR-TRN-112 para solicitações; continuidade de Planos no contrato próprio | identidade, propósito, representação e escopo no limite necessário | representação válida e escopo concedido | permanecer, retornar ou abrir capacidade autorizada | nenhuma supersessão automática de UXA-086/087; **supersedida apenas a inferência de que definem a experiência principal final** | TRN-112 e contratos de Planos preservam maturidade própria, sem provar arquitetura principal vigente | **mapa final de superfícies, navegação principal materializada e wireframe autenticado final pendentes** | referência administrativa local ≠ wireframe principal final do Coletivo; IA definida ≠ wireframe vigente |
 | GKR-SURF-COL-003 | UXA-088 — `docs/experience-architecture/uxa-088-collective-request-management-low-fidelity-wireframes.md`; validação UXA-089; efeitos na Pessoa em UXA-066/067 | materialização 0.2.0; validação 0.1.0 | GKR-TRN-105 ou GKR-TRN-112; resposta adicional via GKR-TRN-107 | analisar solicitação e escolher aguardar, pedir informação, aprovar ou recusar dentro da autoridade | GKR-TRN-106, GKR-TRN-108 ou GKR-TRN-109; permanência na fila quando não houver decisão | dados autorizados da solicitação; estado; referência temporal; critérios previamente apresentados; fundamento; resposta adicional; dados protegidos mínimos quando aplicável | representação válida; finalidade limitada; autoridade específica verificada; confirmação antes de aprovação ou recusa | voltar sem decidir; aguardar; pedir informação; descartar rascunho; interromper por autoridade insuficiente | referências na perspectiva da Pessoa não são supersedidas | superfície validada; handoffs bilaterais governados | demais áreas internas | sete SVGs desktop validados no fluxo especializado; isso não define a UX principal completa |
 | GKR-SURF-COL-004 | ausente; autoridade UXA-059 | indeterminado | vínculo formado | indeterminado | gestão, saída ou contestação | indeterminado | papel e autoridade esperados; não materializados | indeterminado | nenhuma identificada | ausente | continuidade interna | não iniciado pela UXA-100-A4 |
 | GKR-SURF-COL-005 | ausente; autoridade UXA-058/059 | indeterminado | vínculo e autoridade | indeterminado | atualizações aos participantes | indeterminado | papel, audiência e finalidade esperados | indeterminado | nenhuma identificada | ausente | superfície e regras operacionais | não iniciado pela UXA-100-A4 |
@@ -77,8 +79,8 @@ materialização administrativa local
 ≠ baseline final da experiência do Coletivo
 ```
 
-A futura UX principal deverá ser construída a partir dos fundamentos, papéis, jobs, arquitetura da informação e estado vigente.
+A futura UX principal deverá ser construída a partir dos fundamentos, papéis, jobs, arquitetura da informação autenticada e estado vigente.
 
 ## 5. Estado
 
-O detalhamento está `active` 0.10.0. As superfícies especializadas de solicitações e Planos preservam sua maturidade documental própria. A Jornada do Coletivo continua incompleta e `draft`; a arquitetura de informação e o wireframe principal autenticado do Coletivo permanecem **pendentes**.
+O detalhamento está `active` 0.11.0. As superfícies especializadas de solicitações e Planos preservam sua maturidade documental própria. A Jornada do Coletivo continua incompleta e `draft`; a arquitetura da informação autenticada está **definida pre-surface-map**; o mapa final de superfícies, a navegação principal materializada e o wireframe principal autenticado do Coletivo permanecem **pendentes**.
