@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-PERSON-001
 title: Pessoa — Fundação, Entrada, Compreensão e Recorrência
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-30
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
@@ -16,6 +16,7 @@ related:
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
   - GKR-UX-D5-C3-001
+  - GKR-UX-D5-C4B-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -40,7 +41,7 @@ Home pública
 └── Minha Evolução
 ```
 
-A UXA-097 valida `GKR-TRN-007` entre a compreensão inicial e a primeira Tela Hoje. A D5-C3 valida localmente as três superfícies especializadas posteriores, mas `TRN-008..013` permanecem contratadas e ainda não estão validadas ponta a ponta.
+A UXA-097 valida `GKR-TRN-007` entre a compreensão inicial e a primeira Tela Hoje. A D5-C3 valida localmente as três superfícies especializadas posteriores e a D5-C4B promove individualmente `TRN-008..013` para **integralmente validadas no limite documental**. Isso não promove a Jornada da Pessoa além de `draft`, porque outras transições da jornada permanecem parciais e a validação documental não equivale a implementação.
 
 ## 2. Home pública
 
@@ -142,15 +143,15 @@ A primeira variante não presume avanço, mudança anterior, urgência ou preenc
 
 ## 7. Tela Hoje — experiência recorrente
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-008` · origem: `UXA-006` · validação local: `UXA-010`
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-008` · origem: `UXA-006` · validação local: `UXA-010`; handoffs especializados `TRN-008/010/012` integralmente validados documentalmente por D5-C4B
 
 ### `uxa-006-hoje-mobile.svg`
 
 ![](../assets/wireframes/uxa-006-hoje-mobile.svg){ width="320" loading="lazy" }
 
-## 8. Meus Objetivos — D5-C3
+## 8. Meus Objetivos — D5-C3 / D5-C4B
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-010` · materialização: `GKR-UX-D5-C2-001` · **validação/reformulação local: `GKR-UX-D5-C3-001`** · `TRN-008/009` contratadas
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-010` · materialização: `GKR-UX-D5-C2-001` · **validação/reformulação local: `GKR-UX-D5-C3-001`** · `TRN-008/009` **integralmente validadas documentalmente por D5-C4B**
 
 ### `d5-c2-person-objectives-mobile.svg`
 
@@ -158,9 +159,9 @@ A primeira variante não presume avanço, mudança anterior, urgência ou preenc
 
 O estado-base passa a explicitar estado funcional, prioridade declarada, progresso qualitativo, revisão e privacidade. Prioridade e progresso permanecem separados de valor humano.
 
-## 9. Meus Próximos Passos — D5-C3
+## 9. Meus Próximos Passos — D5-C3 / D5-C4B
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-011` · materialização: `GKR-UX-D5-C2-001` · **validação/reformulação local: `GKR-UX-D5-C3-001`** · `TRN-010/011` contratadas
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-011` · materialização: `GKR-UX-D5-C2-001` · **validação/reformulação local: `GKR-UX-D5-C3-001`** · `TRN-010/011` **integralmente validadas documentalmente por D5-C4B**
 
 ### `d5-c2-person-next-steps-mobile.svg`
 
@@ -168,9 +169,9 @@ O estado-base passa a explicitar estado funcional, prioridade declarada, progres
 
 O estado-base distingue `PRONTO` de `PROPOSTO`, torna prontidão/dependência explícitas e usa ações compatíveis com cada estado. Não utiliza streak, obrigação ou urgência artificial.
 
-## 10. Minha Evolução — D5-C3
+## 10. Minha Evolução — D5-C3 / D5-C4B
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-012` · materialização: `GKR-UX-D5-C2-001` · **validação/reformulação local: `GKR-UX-D5-C3-001`** · `TRN-012/013` contratadas
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-012` · materialização: `GKR-UX-D5-C2-001` · **validação/reformulação local: `GKR-UX-D5-C3-001`** · `TRN-012/013` **integralmente validadas documentalmente por D5-C4B**
 
 ### `d5-c2-person-evolution-mobile.svg`
 
@@ -180,9 +181,9 @@ O estado-base explicita período, baseline, direção, natureza inferida da inte
 
 ## 11. Limite
 
-Esta página reúne **23 SVGs**, todos com validação funcional documental vigente. A validação dos três destinos D5-C3 é local e não promove seus handoffs.
+Esta página reúne **23 SVGs**. As superfícies possuem as maturidades locais indicadas por suas autoridades; D5-C4B valida integralmente `TRN-008..013` no limite documental e não transforma essa validação em implementação.
 
-A Home e a Tela Hoje permanecem separadas. `TRN-007` está integralmente validada, mas `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` continuam parciais e `TRN-008..013` permanecem contratadas; portanto a Jornada da Pessoa permanece `draft`.
+A Home e a Tela Hoje permanecem separadas. `TRN-007` e `TRN-008..013` estão integralmente validadas nos limites documentais aplicáveis, mas `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` continuam parciais; portanto a Jornada da Pessoa permanece `draft`.
 
 O status `active` registra o instrumento de inspeção e não inicia protótipo ou Engenharia de Produto.
 
