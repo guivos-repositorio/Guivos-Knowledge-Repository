@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.4.0
+version: 3.5.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-08-30
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.4.0
+→ 3.5.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -35,8 +35,14 @@ PRÓXIMA UXA
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
 
-PRÓXIMO BLOCO DA AUDITORIA
-→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
+BLOCO 2 — G / H / I
+→ G COMPLETED / UPDATE_APPLIED
+→ H AUDITED / UPDATE_APPLIED / F-006 OPEN
+→ I AUDITED / UPDATE_APPLIED / F-006 OPEN
+→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+PRÓXIMO GATE DA AUDITORIA
+→ DECISÃO GOVERNADA DE FECHAMENTO G/H/I CONDICIONADA A F-006
 ```
 
 A presença de uma UXA neste índice significa que o artefato existe e integra a família numerada. Ela **não** prova que todo artefato ou materialização por ela referenciado continuará no corpus após a auditoria.
@@ -88,7 +94,7 @@ A auditoria integral decidirá quais artefatos antigos devem ser absorvidos e re
 - [UXA-072](uxa-072-integrated-journeys-functional-validation-and-reformulation.md)
 - [UXA-073](uxa-073-integrated-journeys-reformulation-navigation-and-synchronization.md)
 - [UXA-074](uxa-074-integrated-journeys-functional-revalidation.md)
-- [UXA-075](uxa-075-integrated-journeys-controlled-promotion-and-post-validation-synchronization.md)
+- [UXA-075](uxa-075-controlled-integrated-journeys-promotion-and-post-validation-synchronization.md)
 - [UXA-076](uxa-076-integrated-journeys-granular-transition-and-surface-registry.md)
 - [UXA-077](uxa-077-granular-registry-functional-validation.md)
 - [UXA-078](uxa-078-controlled-granular-registry-reformulation.md)
@@ -156,7 +162,7 @@ GKR-UX-ORGCOL-AUTH-JOBS-001
 → atores, autoridades e jobs prioritários definidos
 
 GKR-UX-ORGCOL-AUTH-IA-001
-→ Arquitetura da Informação definida
+→ Arquitetura da Informação definida pre-surface-map
 ```
 
 Ainda não são canônicos:
@@ -172,16 +178,20 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.4.0** |
+| Registro do Estado Atual | **3.5.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
 | Auditoria integral | **IN_PROGRESS** |
 | Lotes concluídos | **A / B / C / D / E / F** |
-| Próximo bloco da auditoria | **G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL** |
+| Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey remains draft** |
+| Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 OPEN** |
+| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |
+| Próximo gate | **FECHAMENTO G/H/I CONDICIONADO A F-006** |
+| J/K/L/M/N | **NOT RELEASED AUTOMATICALLY** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
-| Maturidade visual agregada | **não inferir durante recomputação** |
+| Maturidade visual agregada | **NOT_CERTIFIED** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
