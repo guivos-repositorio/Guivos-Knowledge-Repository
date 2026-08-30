@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.4.0
+version: 1.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-30
 related:
@@ -218,26 +218,28 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active`; D5-C4B sincronizada |
+| Jornadas Integradas | `active` 0.41.0; D5-C4B e Bloco 2 sincronizados |
 | Jornada da Pessoa | `draft`; PER-010..012 validados localmente; TRN-008..013 integrais |
-| Jornada do Coletivo | `draft` |
-| Jornada da Organização | `draft` |
-| catálogo integrado | `active`; **121 SVGs físicos**; maturidade agregada vigente não inferida |
+| Jornada do Coletivo | `draft` 0.20.0; Jobs + IA definidos pre-surface-map |
+| Jornada da Organização | `draft` 0.13.0; Jobs + IA definidos pre-surface-map |
+| catálogo integrado | `active` 0.33.0; **121 SVGs físicos**; TRN-008..013 integrais; maturidade agregada vigente não inferida |
 | galeria visual | `active`; inventário físico preservado; antigos resumos `121 validados / 0 pendentes` não constituem claim vigente de maturidade |
-| galeria da Pessoa | `active`; 23 SVGs físicos no recorte |
+| galeria da Pessoa | `active` 0.7.0; 23 SVGs físicos no recorte; D5-C4B propagada |
+| galeria Organização/Oportunidades | `active` 0.6.0; gap principal inicia no surface map |
+| galeria Coletivos | `active` 0.15.0; gap principal inicia no surface map |
 | galeria de Planos | `active` 0.5.0 |
 | matriz por SVG | `active`; **121 associações físicas / 34 perfis**; associação ≠ autoridade vigente |
 | lacunas | `active`; lacuna D5-C de handoffs encerrada no limite documental |
 | registro de superfícies | `active`; 57 IDs; maturidade por item |
 | registro de transições | `active`; 66 transições; TRN-008..013 integrais |
 | detalhamento da Pessoa | `active`; PER-008 recorrente e PER-010..012 com continuidade D5-C validada |
-| D5-A | `active` 1.0.0 |
-| D5-B | `active` 1.0.0 |
+| D5-A | `active` 1.1.0 |
+| D5-B | `active` 1.1.0 |
 | D5-C1 | `active` 1.0.0 |
-| D5-C2 | `active` 1.0.0 |
-| D5-C3 | `active` 1.0.0 |
-| D5-C4A | `active` 1.0.0 |
-| D5-C4B | `active` 1.0.0 |
+| D5-C2 | `active` 1.1.0 |
+| D5-C3 | `active` 1.1.0 |
+| D5-C4A | `active` 1.1.0 |
+| D5-C4B | `active` 1.1.0 |
 
 ## 9. Ressalvas vigentes
 
@@ -279,4 +281,4 @@ D5-A/B/C1/C2/C3/C4A/C4B não consomem nem antecipam V5.
 
 ## 11. Próxima evolução possível
 
-A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
+A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo, sem materializar o surface map. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
