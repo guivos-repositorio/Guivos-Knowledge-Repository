@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-30
 related:
   - PAS-001
   - PAS-001-DOMAIN-MODEL-001
@@ -44,6 +44,7 @@ related:
   - GKR-UX-D5-C4A-001
   - GKR-UX-D5-C4B-001
   - GKR-JOURNEYS-001
+  - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -77,18 +78,36 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 ## 3. Cobertura visual e granular
 
-| Indicador | Resultado |
+As contagens abaixo separam **inventário físico**, **associação documental** e **maturidade vigente**. A existência de um arquivo ou de uma associação não promove automaticamente sua autoridade visual.
+
+```text
+CONTAGEM FÍSICA DE SVGs
+≠ CONTAGEM DE WIREFRAMES VIGENTES
+≠ CONTAGEM DE WIREFRAMES VALIDADOS
+
+ASSOCIAÇÃO SVG → PERFIL
+≠ AUTORIDADE VISUAL VIGENTE
+```
+
+| Indicador | Resultado vigente |
 |---|---:|
-| SVGs canônicos | **121** |
-| associações individuais | **121** |
+| SVGs físicos no inventário | **121** |
+| associações físicas catalogadas | **121** |
 | perfis de rastreabilidade | **34** |
-| com validação funcional vigente | **121** |
-| pendentes de validação específica | **0** |
+| duplicações exatas byte-a-byte observadas no inventário físico | **0** |
+| total canônico visual vigente | **não certificado — recomputação governada em andamento** |
+| total validado visual vigente | **não certificado — recomputação governada em andamento** |
+| total pendente visual vigente | **não certificado — recomputação governada em andamento** |
+| near-duplicates | **não certificado — análise semântica pendente** |
 | superfícies/estados/fronteiras | **57** |
 | transições documentais | **66** |
-| IDs com referência visual | **45 de 57** |
-| responsabilidades sem SVG dedicado | **10** |
+| IDs com referência visual no snapshot físico/associativo | **45 de 57** |
+| responsabilidades sem SVG dedicado no snapshot físico/associativo | **10** |
 | fronteiras sem tela | **2** |
+
+Os `121 SVGs` são uma verdade de **inventário físico**. Eles não podem ser usados como sinônimo de `121 canônicos vigentes`, `121 validados vigentes` ou `0 pendentes` enquanto a recomputação individual de canonicidade, supersessão, referência e maturidade não estiver concluída.
+
+A reconciliação pós-PR #313/#314 já estabelece que `UXA-015..018` e os SVGs associados permanecem como histórico `superseded`, sem autoridade para definir o wireframe principal autenticado de Organização ou Coletivo. Isso impede reutilizar antigas somas agregadas de maturidade como estado atual.
 
 A UXA-100-A4 adiciona `PER-009` como responsabilidade sem SVG e seis handoffs de navegação de Planos.
 
@@ -203,13 +222,13 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 | Jornada da Pessoa | `draft`; PER-010..012 validados localmente; TRN-008..013 integrais |
 | Jornada do Coletivo | `draft` |
 | Jornada da Organização | `draft` |
-| catálogo integrado | `active`; 121 SVGs / 121 validados |
-| galeria visual | `active`; 121 SVGs / 0 pendentes |
-| galeria da Pessoa | `active`; 23 SVGs |
+| catálogo integrado | `active`; **121 SVGs físicos**; maturidade agregada vigente não inferida |
+| galeria visual | `active`; inventário físico preservado; antigos resumos `121 validados / 0 pendentes` não constituem claim vigente de maturidade |
+| galeria da Pessoa | `active`; 23 SVGs físicos no recorte |
 | galeria de Planos | `active` 0.5.0 |
-| matriz por SVG | `active`; 121 associações / 34 perfis |
+| matriz por SVG | `active`; **121 associações físicas / 34 perfis**; associação ≠ autoridade vigente |
 | lacunas | `active`; lacuna D5-C de handoffs encerrada no limite documental |
-| registro de superfícies | `active`; 57 IDs |
+| registro de superfícies | `active`; 57 IDs; maturidade por item |
 | registro de transições | `active`; 66 transições; TRN-008..013 integrais |
 | detalhamento da Pessoa | `active`; PER-008 recorrente e PER-010..012 com continuidade D5-C validada |
 | D5-A | `active` 1.0.0 |
@@ -222,7 +241,10 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 
 ## 9. Ressalvas vigentes
 
-- 10 responsabilidades permanecem sem SVG dedicado, incluindo `PER-009`;
+- `121` descreve o inventário físico de SVGs e não certifica, isoladamente, canonicidade ou validação vigente;
+- a recomputação governada de maturidade visual agregada permanece aberta;
+- artefatos históricos `superseded`, incluindo os associados a `UXA-015..018`, permanecem rastreáveis e não devem ser promovidos por presença física;
+- 10 responsabilidades permanecem sem SVG dedicado no snapshot físico/associativo, incluindo `PER-009`;
 - `TRN-008..013` estão integralmente validadas documentalmente, não implementadas;
 - `TRN-406/407` permanecem contratadas;
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` permanecem parciais;
