@@ -2,15 +2,15 @@
 id: GKR-CANON-MATRIX-UXA-019
 title: Matriz de Consolidação Canônica — Adendo do Contrato Funcional das Relações entre Organizações e Coletivos
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
-last_updated: 2026-07-26
+last_updated: 2026-08-30
 parent: GKR-CANON-MATRIX-001
 depends_on:
   - UXA-014
-  - UXA-017
-  - UXA-018
   - UXA-019
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
 related:
   - M7.19.11
 normative: false
@@ -20,9 +20,13 @@ normative: false
 
 ## 1. Finalidade
 
-Este adendo preserva o detalhamento das decisões consolidadas para relações bilaterais entre Organizações e Coletivos.
+Este adendo preserva o detalhamento das decisões consolidadas para relações bilaterais entre Organizações e Coletivos e registra sua **proveniência histórica**.
 
-## 2. Decisões
+`UXA-017` e `UXA-018` permanecem `superseded` e não constituem dependências nem autoridades funcionais vigentes deste adendo. O contrato atual das relações é `UXA-019`, subordinado à fundação `UXA-014` e às autoridades `GKR-UX-ORGCOL-AUTH-JOBS-001` e `GKR-UX-ORGCOL-AUTH-IA-001`.
+
+As decisões abaixo permanecem como detalhe funcional preservado na medida em que são compatíveis com essas autoridades atuais. Este adendo não restaura autoridade dos artefatos superseded nem autoriza materialização.
+
+## 2. Decisões preservadas
 
 | Tema | Decisão consolidada | Consequência funcional |
 |---|---|---|
@@ -48,7 +52,7 @@ Este adendo preserva o detalhamento das decisões consolidadas para relações b
 | Suspensão urgente | permitir proporcionalmente | risco material pode interromper o escopo durante análise |
 | Encerramento | tornar responsável | dados, recursos, marcas, comunicação e obrigações remanescentes são definidos |
 
-## 3. Cadeia funcional
+## 3. Cadeia funcional preservada
 
 ```text
 participantes distintos
@@ -62,10 +66,16 @@ participantes distintos
 → saída possível e responsável
 ```
 
+A cadeia acima é preservada como detalhe funcional do contrato vigente `UXA-019`; não depende da permanência física de `UXA-017` ou `UXA-018`.
+
 ## 4. Limites
 
 Este adendo não constitui contrato jurídico, não define regras universais internacionais e não cria assinatura eletrônica, protótipo navegável, design visual, teste com usuários, especificação técnica ou desenvolvimento.
 
-## 5. Ordem preservada
+Ele também não reativa `UXA-017` ou `UXA-018`, não restaura sua autoridade e não constitui impedimento documental à eventual remoção física futura desses artefatos caso `F-006` venha a satisfazer todos os gates próprios de cleanup.
 
-Após a integração e nova autorização, o retorno aos Resultados Empresariais e à capacidade de reinvestimento responsável permanece como próxima etapa.
+## 5. Ordem histórica e estado atual
+
+No estágio original, o retorno aos Resultados Empresariais e à capacidade de reinvestimento responsável era apresentado como etapa posterior à integração deste contrato.
+
+Essa sequência permanece apenas como proveniência histórica. O estado corrente de Organização/Coletivo é governado pelas autoridades atuais; Jobs + Arquitetura da Informação autenticada estão definidos em `pre-surface-map`, enquanto mapa final de superfícies e wireframes principais autenticados permanecem pendentes e não são autorizados por este adendo.
