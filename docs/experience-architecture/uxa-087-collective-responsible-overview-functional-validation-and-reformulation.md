@@ -8,7 +8,6 @@ last_updated: 2026-08-07
 parent: UXA-000
 depends_on:
   - UXA-014
-  - UXA-018
   - UXA-056
   - UXA-058
   - UXA-059
@@ -37,17 +36,18 @@ A validação verifica se uma pessoa legitimamente responsável por um Coletivo 
 
 A validação não trata o wireframe como design final, protótipo ou implementação.
 
-## 2. Autoridades utilizadas
+## 2. Autoridades vigentes e proveniência histórica
 
-O gate foi realizado contra:
+O gate foi realizado contra as autoridades vigentes:
 
 - UXA-014 — fundação funcional de Organizações e Coletivos;
-- UXA-018 — validação funcional do Início do Coletivo;
 - UXA-056 — descoberta, perfil público, participação e gestão do Coletivo;
 - UXA-058 — comunicação, origem, autoridade, proteção e reversibilidade das interações;
 - UXA-059 — programa e priorização dos wireframes de Coletivos;
 - UXA-080 — registros granulares promovidos;
 - UXA-086 — contrato e materialização da Visão Geral do Responsável.
+
+A `UXA-018` participou historicamente da validação do antigo Início do Coletivo, mas permanece `superseded` e é preservada aqui somente como proveniência histórica. Ela não constitui dependência nem autoridade funcional vigente da UXA-087.
 
 Também foram considerados os registros vigentes de superfícies, transições e lacunas.
 
