@@ -19,6 +19,7 @@ related:
   - GPA-004
   - GPA-006
   - GIA-000
+  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
   - RP-002-PMF-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
@@ -425,7 +426,7 @@ Resultado:
 | Business | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 | Intelligence | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 
-O Lote F também corrige `GIA-000` para `v1.6.0`, reconhecendo Product Source Lock integrado e Home Intelligence documental existente sem promover Home Source Lock, Design ou implementação.
+O Lote F também corrige `GIA-000` para `v1.6.0`, reconhecendo Product Source Lock integrado, Documento Mestre existente e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` como Source Lock ativo/normativo da Home Intelligence. O Source Lock congela fontes e invariantes e não autoriza, por si só, Design, materialização, implementação ou publicação.
 
 Preservações:
 
@@ -452,9 +453,12 @@ PUBLICIDADE PAGA
 PRIVACIDADE DE REFERÊNCIA
 ≠ CONTROLE IMPLEMENTADO
 ≠ EVIDÊNCIA OPERACIONAL
+
+SOURCE LOCK
+≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
 ```
 
-Handoffs, Manifests, snapshots, Source Locks e GENINPUTs históricos permanecem proveniência e não autorização de materialização durante a Auditoria Integral.
+Handoffs, Manifests, snapshots e GENINPUTs preservam proveniência/checkpoint conforme suas autoridades. Source Locks preservam sua função de congelamento de fontes/invariantes nos limites próprios, sem autorização automática de Design durante a Auditoria Integral.
 
 ## 11. Lote G — Jornada da Pessoa
 
@@ -646,7 +650,7 @@ Não transformar simulação sintética em evidência humana real.
 
 Product Engineering permanece pausada antes de `W0-01`.
 
-`GPA-006 v2.0.0` continua autoridade do Intelligence e `GIA-000 v1.6.0` é a arquitetura de Intelligence reconciliada no estado documental atual.
+`GPA-006 v2.0.0` continua autoridade do Intelligence e `GIA-000 v1.6.0` é a arquitetura de Intelligence reconciliada no estado documental atual. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` permanece Source Lock ativo/normativo da Home, sem equivaler a autorização de Design ou implementação.
 
 ```text
 NEO4J
@@ -918,6 +922,7 @@ POSSIBILITY, LIVED. → GUIVOS
 POSSIBILIDADE, VIVIDA. → GUIVOS
 LUCAS 2:52 NA BIO DO FUNDADOR ≠ COPY INSTITUCIONAL AUTOMÁTICA
 HOME DOCUMENTADA ≠ HOME IMPLEMENTADA
+SOURCE LOCK ≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
 ARTEFATO FÍSICO ≠ AUTORIDADE VIGENTE
 DOCUMENTAÇÃO ≠ IMPLEMENTAÇÃO
 SIMULAÇÃO ≠ PMF
