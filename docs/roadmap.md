@@ -1,10 +1,10 @@
 ---
-id: ROADMAP-13.4.0
+id: ROADMAP-13.5.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.4.0
+version: 13.5.0
 owner: Guivos
-last_updated: 2026-08-29
+last_updated: 2026-08-30
 normative: true
 related:
   - GKR-STATE-001
@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.4.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.5.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -53,7 +53,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A, B, C, D, E e F estão reconciliados no estado vigente. O próximo bloco governado é **G/H/I — Experience Architecture e inventário visual**.
+Os Lotes A, B, C, D, E e F estão reconciliados no estado vigente. O Bloco 2 G/H/I já foi auditado/remediado no limite documental atual: G está `COMPLETED / UPDATE_APPLIED`; H e I estão `AUDITED / UPDATE_APPLIED` com `F-006 OPEN`; F-007 está resolvido no limite semântico/inventário. O próximo gate é a decisão governada de fechamento de G/H/I condicionada ao tratamento de F-006.
 
 Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Design ou implementação deve ser promovida como consequência automática de trabalho anterior.
 
@@ -62,7 +62,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.4.0** |
+| Estado global | **GKR-STATE-001 v3.5.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -78,13 +78,23 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
+| Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; JOURNEY REMAINS DRAFT** |
+| Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 OPEN** |
+| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
-| O/C Arquitetura da Informação | **DEFINED / ACTIVE** |
+| O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |
 | Design das Homes | **OPERATIONAL AUTHORIZATION SUSPENDED DURING AUDIT** |
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 
-Nenhuma contagem agregada de wireframes vigentes/validados é afirmada enquanto o inventário visual estiver em reconciliação.
+Inventário físico comprovado no snapshot auditado do Bloco I:
+
+- 121 SVGs físicos;
+- 121 associações físicas;
+- 34 perfis de rastreabilidade;
+- 0 duplicatas exatas observadas/provadas por blob SHA.
+
+Near-duplicates e contagens agregadas de wireframes vigentes/validados/pendentes permanecem `NOT_CERTIFIED`.
 
 ## 3. Princípio de execução do roadmap
 
@@ -136,30 +146,32 @@ E. HOME ORGANIZAÇÕES E COLETIVOS        [CONCLUÍDO]
 ↓
 F. HOMES DOS PRODUTOS                    [CONCLUÍDO]
 ↓
-G. JORNADA DA PESSOA                     [PRÓXIMO BLOCO]
+G. JORNADA DA PESSOA                     [COMPLETED / UPDATE_APPLIED]
 ↓
-H. ORGANIZAÇÃO / COLETIVO                [PRÓXIMO BLOCO]
+H. ORGANIZAÇÃO / COLETIVO                [AUDITED / UPDATE_APPLIED / F-006 OPEN]
 ↓
-I. REGISTRIES / CATÁLOGOS / SVGs         [PRÓXIMO BLOCO]
+I. REGISTRIES / CATÁLOGOS / SVGs         [AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED]
 ↓
-J. PRODUTOS / ECONOMIA
+GATE. FECHAMENTO G/H/I                   [CONDICIONADO A F-006]
 ↓
-K. RESEARCH / RP-002
+J. PRODUTOS / ECONOMIA                   [PENDING / NOT RELEASED AUTOMATICALLY]
 ↓
-L. TECNOLOGIA / DADOS / IA
+K. RESEARCH / RP-002                     [PENDING / NOT RELEASED AUTOMATICALLY]
 ↓
-M. JURÍDICO / PRIVACIDADE / INSTITUCIONAL
+L. TECNOLOGIA / DADOS / IA               [PENDING / NOT RELEASED AUTOMATICALLY]
 ↓
-N. GTM / PRESENÇA PÚBLICA
+M. JURÍDICO / PRIVACIDADE / INSTITUCIONAL [PENDING / NOT RELEASED AUTOMATICALLY]
 ↓
-O. MENU FINAL / ROTAS MULTIEQUIPE
+N. GTM / PRESENÇA PÚBLICA                [PENDING / NOT RELEASED AUTOMATICALLY]
 ↓
-P. AUDITORIA FINAL DE COMPLETUDE
+O. MENU FINAL / ROTAS MULTIEQUIPE        [PENDING / HOLD]
 ↓
-Q. PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
+P. AUDITORIA FINAL DE COMPLETUDE          [PENDING]
+↓
+Q. PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME [BLOCKED]
 ```
 
-A ordem protege o corpus contra duas falhas: desenhar sobre conceitos antigos e redesenhar navegação antes de saber quais autoridades permanecerão.
+A ordem protege o corpus contra duas falhas: desenhar sobre conceitos antigos e redesenhar navegação antes de saber quais autoridades permanecerão. A conclusão documental de um bloco não libera automaticamente o seguinte quando existir finding governante aberto.
 
 ## 5. Lote A — Governança do corpus
 
@@ -462,23 +474,37 @@ Handoffs, Manifests, snapshots e GENINPUTs preservam proveniência/checkpoint co
 
 ## 11. Lote G — Jornada da Pessoa
 
-Somente depois das Homes reconciliadas e dos lotes anteriores fechados:
+Estado do Bloco 2:
 
-- reconciliar jornada atual da Pessoa;
-- identificar a primeira responsabilidade realmente necessária após a Home;
-- confrontar entrada protegida, compreensão inicial, Tela Hoje e demais superfícies já existentes;
-- eliminar dependência de UXAs substituídas;
-- revisar continuidade e transições;
-- preservar `PER-008..012` e maturidades independentes quando ainda válidas;
-- confirmar se alguma superfície deve ser consolidada, renomeada, absorvida ou removida.
+```text
+COMPLETED / UPDATE_APPLIED
+JOURNEY MATURITY → DRAFT PRESERVED
+```
+
+A auditoria reconciliou a jornada atual da Pessoa no limite documental, incluindo handoffs e estados de transição já suportados pelas autoridades vigentes. O fechamento do bloco G não promove a Jornada da Pessoa além de `draft` e não autoriza a primeira tela autenticada pós-Home.
+
+Preservações:
+
+- `PER-008..012` mantêm suas maturidades independentes;
+- `TRN-007` está integral no limite documental suportado por UXA-097;
+- `TRN-008..013` preservam a integração documental suportada por D5-C4B;
+- transições parciais/locais continuam no estado específico registrado no Transition Registry;
+- nenhuma tela histórica é presumida como primeira responsabilidade pós-Home.
 
 Gate:
 
-> **não escrever a primeira tela pós-Home antes de G e dos lotes dependentes estarem auditados.**
+> **não escrever a primeira tela pós-Home antes do fechamento integral da auditoria e da autorização específica do Lote Q.**
 
 ## 12. Lote H — Organização e Coletivo
 
-Estado atual que deve ser preservado:
+Estado do Bloco 2:
+
+```text
+AUDITED / UPDATE_APPLIED
+F-006 → OPEN / REMOVE_AFTER_ABSORPTION
+```
+
+Estado autenticado preservado:
 
 ```text
 FUNDAÇÃO FUNCIONAL
@@ -491,7 +517,7 @@ ATORES / AUTORIDADES / JOBS
 → DEFINED
 
 AUTHENTICATED INFORMATION ARCHITECTURE
-→ DEFINED
+→ DEFINED PRE-SURFACE-MAP
 
 SURFACE MAP
 → NOT CANONICAL
@@ -500,50 +526,47 @@ MAIN AUTHENTICATED WIREFRAMES
 → NOT DEFINED
 ```
 
-Próximos passos do lote:
+A auditoria atualizou Estado O/C, overlay pós-313, auditoria derivada, Jornadas draft, `gaps` e detalhes obrigatórios do Surface Registry para eliminar a falsa pendência da IA autenticada.
 
-1. absorver conteúdo útil de registros superseded;
-2. remover referências históricas de maturidade;
-3. atualizar jornadas draft;
-4. reconciliar registries;
-5. decidir se a proposta pré-auditoria de mapa de superfícies permanece adequada;
-6. somente depois promover um mapa lógico novo/atualizado;
-7. wireframes continuam etapa posterior.
+`UXA-015..018` permanecem históricos/superseded como autoridade visual e fisicamente preservados. Sua semântica central está substancialmente absorvida nas autoridades atuais, mas `F-006` permanece aberto até prova suficiente de absorção material e ausência de função residual.
+
+Nenhum mapa de superfícies, wireframe, UI, protótipo ou implementação é autorizado por H.
 
 ## 13. Lote I — Registries, catálogos e materializações
 
-Objetivo:
-
-- eliminar artefatos físicos sem função atual;
-- preservar somente materializações vigentes;
-- recomputar contagens a partir do corpus final;
-- fazer cada registry refletir autoridade atual.
-
-Famílias mínimas:
-
-- surface registry;
-- transition registry;
-- screen catalog;
-- galleries;
-- traceability matrices;
-- gaps;
-- SVGs;
-- diagrams.
-
-A antiga claim:
+Estado do Bloco 2:
 
 ```text
-121 validados / 0 pendentes
+AUDITED / UPDATE_APPLIED
+F-006 → OPEN / REMOVE_AFTER_ABSORPTION
+F-007 → RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
 ```
 
-não é válida como maturidade atual.
+Inventário físico comprovado no snapshot auditado:
 
-Até a recomputação:
+- **121 SVGs físicos**;
+- **121 associações físicas**;
+- **34 perfis de rastreabilidade**;
+- **0 duplicatas exatas observadas/provadas por blob SHA**.
+
+Regra vigente:
 
 ```text
-NEW CURRENT VISUAL MATURITY COUNT
-→ NOT ASSERTED
+CONTAGEM FÍSICA DE SVGs
+≠ WIREFRAMES VIGENTES
+≠ WIREFRAMES VALIDADOS
 ```
+
+Permanecem `NOT_CERTIFIED`:
+
+- near-duplicates;
+- total agregado de wireframes vigentes;
+- total agregado de wireframes validados vigentes;
+- total agregado de pendências visuais.
+
+As claims históricas `121 validados / 0 pendentes` foram requalificadas como snapshot/proveniência onde ainda apareciam em autoridades ativas auditadas. Nenhuma nova contagem agregada de maturidade foi inferida.
+
+`F-006` impede cleanup físico de `UXA-015..018` e SVGs associados enquanto a absorção material não estiver comprovada.
 
 ## 14. Lote J — Produtos, planos e economia
 
@@ -739,6 +762,12 @@ PRESENÇA INSTITUCIONAL
 
 O MENU final somente será definido quando o corpus já estiver substancialmente limpo.
 
+Estado atual:
+
+```text
+PENDING / HOLD
+```
+
 Ele deve permitir duas leituras simultâneas:
 
 1. por arquitetura/domínio;
@@ -933,11 +962,30 @@ DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL DURANTE A AUDITORIA
 
 ## 26. Regra do próximo movimento
 
-Com os Lotes A, B, C, D, E e F concluídos no estado vigente, o próximo movimento é o **Bloco G/H/I — Experience Architecture e inventário visual**.
-
-Até o fechamento integral da auditoria:
+Com G/H/I auditados/remediados no limite atual, o próximo movimento é a **decisão governada de fechamento de G/H/I condicionada ao tratamento de F-006**.
 
 ```text
+G
+→ COMPLETED / UPDATE_APPLIED
+
+H
+→ AUDITED / UPDATE_APPLIED
+→ F-006 OPEN
+
+I
+→ AUDITED / UPDATE_APPLIED
+→ F-006 OPEN
+→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+J / K / L / M / N
+→ NOT RELEASED AUTOMATICALLY
+
+O
+→ PENDING / HOLD
+
+Q
+→ BLOCKED
+
 NÃO HÁ UXA-102 AUTOMÁTICA
 NÃO HÁ PRIMEIRA TELA PÓS-HOME AUTOMÁTICA
 NÃO HÁ WIREFRAME AUTENTICADO AUTOMÁTICO
@@ -948,4 +996,4 @@ NÃO HÁ FILING AUTOMÁTICO
 NÃO HÁ PMF AUTOMÁTICO
 ```
 
-As Homes Principal/Pessoa, Organizações/Coletivos e Mall, Travel, Media, Ads, Business e Intelligence permanecem `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`. G/H/I auditam a Journey da Pessoa, a experiência autenticada O/C e o inventário visual/registries; a primeira tela autenticada somente será definida após os gates restantes e o fechamento integral da auditoria.
+As Homes Principal/Pessoa, Organizações/Coletivos e Mall, Travel, Media, Ads, Business e Intelligence permanecem `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`. O tratamento de `F-006` deve ser governado sem falsa limpeza; somente depois do gate de fechamento de G/H/I pode-se decidir a liberação formal dos próximos lotes.
