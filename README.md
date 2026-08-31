@@ -20,7 +20,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Auditoria integral do corpus | **IN_PROGRESS** |
 | Lotes concluídos | **A / B / C / D / E / F** |
 | Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 OPEN** |
-| Próximo gate da auditoria | **DECISÃO DE FECHAMENTO G/H/I CONDICIONADA A F-006** |
+| Próximo gate da auditoria | **AUTORIZAÇÃO HUMANA PARA CLEANUP FÍSICO DE F-006** |
 | F-007 | **RESOLVED — semantic/inventory scope** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
@@ -318,7 +318,7 @@ CONTAGEM FÍSICA DE SVGs
 
 Permanecem `NOT_CERTIFIED`: near-duplicates e totais agregados de wireframes vigentes, validados vigentes e pendências visuais.
 
-`F-006` permanece `OPEN / REMOVE_AFTER_ABSORPTION`; nenhum `UXA-015..018` ou SVG associado possui remoção autorizada.
+`F-006` permanece `OPEN / CLEANUP_ELIGIBILITY_PROVEN / PHYSICAL_REMOVAL_NOT_AUTHORIZED`; nenhum `UXA-015..018` ou SVG associado possui remoção autorizada.
 
 ## Tecnologia e operação
 
@@ -339,7 +339,7 @@ Não estão comprovados ou autorizados apenas pela documentação:
 
 ## Próximo gate da auditoria
 
-O Bloco 2 G/H/I foi auditado no limite documental atual. O próximo gate é a **decisão governada de fechamento de G/H/I condicionada a F-006**.
+O Bloco 2 G/H/I foi auditado no limite documental atual. O próximo gate é obter **autorização humana separada e explícita para o cleanup físico de F-006**. Se autorizada, a remoção/reconciliação, recomputação, validações e review precedem qualquer decisão de fechamento de F-006 e de G/H/I.
 
 ```text
 G
