@@ -517,7 +517,7 @@ A reconstrução e as reconciliações posteriores absorveram os conflitos conhe
 
 - separação `Guivos × fundador` e remoção de `Do possível ao vivido.` como assinatura institucional da Home;
 - Movimento 06 = `Da Possibilidade à Experiência`;
-- distinção `Possibilidade ≠ Oportununidade` e presença de Mecanismo quando necessário;
+- distinção `Possibilidade ≠ Oportunidade` e presença de Mecanismo quando necessário;
 - nove Domínios de Evolução como vocabulário de amplitude, sem materialização visual automática;
 - separação `participante ≠ produto` e `Organização ≠ Business`;
 - Intelligence como Produto Especializado transversal / Intelligence Layer;
