@@ -8,7 +8,7 @@ last_updated: 2026-08-29
 parent: GKR-FULL-CORPUS-AUDIT-001
 depends_on:
   - GKR-STATE-001
-  - ROADMAP-13.4.0
+  - ROADMAP-13.5.0
   - GPA-002
   - GPA-003
   - GPA-004
@@ -75,8 +75,15 @@ LOTE F
 HOMES DOS PRODUTOS ESPECIALIZADOS
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
-PRÓXIMO BLOCO DA AUDITORIA
-→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
+G / H / I
+→ G COMPLETED
+→ H AUDITED / UPDATE_APPLIED / F-006 OPEN
+→ I AUDITED / UPDATE_APPLIED / F-006 OPEN
+→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+PRÓXIMO GATE GOVERNADO
+→ FECHAMENTO FORMAL DE G/H/I CONDICIONADO A F-006
+→ J / K / L / M / N NÃO LIBERADOS AUTOMATICAMENTE
 
 UXA-102 / V5
 → NOT_STARTED
@@ -247,7 +254,14 @@ MASTER v1.0.0
 
 ROADMAP-12.79.0 NO FRONTMATTER
 → HISTORICAL DEPENDENCY
-→ SUPERSEDED FOR CURRENT-STATE INTERPRETATION BY ROADMAP-13.4.0
+→ SUPERSEDED FOR CURRENT-STATE INTERPRETATION
+
+ROADMAP-13.4.0
+→ AUTORIDADE GLOBAL NO FECHAMENTO HISTÓRICO DO LOTE F
+→ PROVENIÊNCIA TEMPORAL
+
+ROADMAP-13.5.0
+→ AUTORIDADE GLOBAL VIGENTE NESTE HEAD
 ```
 
 A fronteira normativa permanece:
@@ -371,7 +385,7 @@ REBUILD_REQUIRED
 → 0
 ```
 
-As divergências encontradas foram resolvidas documentalmente sem perda de conhecimento e sem rebuild conceitual. O fechamento do Lote F é consumido pelas autoridades globais `GKR-FULL-CORPUS-AUDIT-001 v1.4.0`, `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`.
+As divergências encontradas foram resolvidas documentalmente sem perda de conhecimento e sem rebuild conceitual. O fechamento do Lote F foi originalmente consumido por `GKR-FULL-CORPUS-AUDIT-001 v1.4.0`, `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`; essas versões permanecem como **checkpoint histórico do Lote F**. No estado global posterior desta auditoria, prevalecem `GKR-FULL-CORPUS-AUDIT-001 v1.5.0`, `GKR-STATE-001 v3.5.0` e `ROADMAP-13.5.0`.
 
 Esse fechamento não promove materialização, disponibilidade operacional, PMF, nova UXA ou implementação.
 
@@ -392,8 +406,13 @@ REBUILD_REQUIRED
 AUDITORIA INTEGRAL
 → IN_PROGRESS
 
-NEXT BLOCK
-→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
+G / H / I
+→ AUDITADOS / REMEDIADOS
+→ F-006 OPEN
+
+NEXT GOVERNED GATE
+→ FECHAMENTO FORMAL DE G/H/I CONDICIONADO A F-006
+→ J / K / L / M / N NOT RELEASED
 
 DESIGN AUTHORIZATION
 → SUSPENDED DURING FULL-CORPUS AUDIT
