@@ -129,7 +129,7 @@ Os princípios funcionais úteis recuperados desses registros foram absorvidos p
 
 Qualquer futura materialização da UX principal administrativa do Coletivo deverá partir de Jobs + IA autenticada vigentes, passar pelo mapa final de superfícies quando autorizado e não reutilizar o antigo SVG de `UXA-016` como baseline.
 
-Os arquivos históricos permanecem fisicamente preservados enquanto `F-006` estiver aberto, sem autoridade visual vigente.
+Os arquivos históricos permanecem fisicamente preservados enquanto não houver autorização humana separada e explícita para seu cleanup, sem autoridade visual vigente. `F-006` permanece aberto durante eventual remoção e os gates pós-cleanup.
 
 ## 9. Impacto histórico no programa geral
 
