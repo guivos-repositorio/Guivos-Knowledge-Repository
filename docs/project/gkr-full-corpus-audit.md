@@ -375,7 +375,8 @@ Foram absorvidos como semântica funcional e cobertura pré-surface-map, sem pro
 - Próximos Passos justificados;
 - neutralidade frente a métricas comerciais ou de popularidade;
 - estados alternativos materiais da Organização, incluindo ausência de urgência, verificação/autoridade insuficiente, contexto incompleto ou contestado, ausência de oportunidade, capacidade limitada, obrigação vencida, risco, falta de evidência, relação suspensa/encerrada, falha de integração, baixa conectividade e operação internacional;
-- estados alternativos materiais do Coletivo, incluindo criação/ausência de atividade, observação antes de participar, participação pendente ou pausada, ausência de responsável, atividade ajustada/cancelada, conflito de governança, proteção/moderação/acessibilidade, saída de responsável, recurso insuficiente, relação contestada, informação sensível, ausência de evidência, baixa conectividade e encerramento legítimo.
+- estados alternativos materiais do Coletivo, incluindo criação/ausência de atividade, observação antes de participar, participação pendente ou pausada, ausência de responsável, atividade ajustada/cancelada, conflito de governança, proteção/moderação/acessibilidade, saída de responsável, recurso insuficiente, relação contestada, informação sensível, ausência de evidência, baixa conectividade e encerramento legítimo;
+- critérios materiais de aceite de participação preservados no `UXA-018`, agora absorvidos explicitamente em `UXA-056`, incluindo finalidade clara, esforço estimado, prazo real, proteção de recusas e pertencimento, aceite explícito, desistência, permissões/privacidade, fallback quando ninguém aceita e proibição de culpa, ranking ou pressão emocional.
 
 #### Conteúdo histórico apenas
 
@@ -394,7 +395,7 @@ Não são promovidos como verdade atual e permanecem somente como proveniência 
 
 #### Conteúdo ainda não absorvido
 
-> **Nenhum conteúdo funcional material válido e exclusivo foi identificado como ainda não absorvido.**
+> **Após a absorção explícita dos critérios materiais restantes de `UXA-018` em `UXA-056`, nenhum conteúdo funcional material válido e exclusivo foi identificado como ainda não absorvido.**
 
 A auditoria de dependências também reconciliou as referências funcionais ativas encontradas durante os ciclos de review, incluindo `UXA-019`, `UXA-056`, `UXA-057`, `UXA-058`, `UXA-059`, `UXA-070`, `UXA-086`, `UXA-087`, `UXA-095`, `UXA-096`, addenda canônicos, changelog e a autoridade navegacional da Home O/C. Os artefatos `UXA-015..018` deixaram de constar como dependências funcionais necessárias nessas cadeias e passaram a ser, quando ainda citados, proveniência histórica `superseded`.
 
