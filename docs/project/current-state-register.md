@@ -1356,7 +1356,7 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-O Bloco 2 G/H/I foi auditado e remediado no limite documental atual. O próximo ato governado é a **decisão de fechamento de G/H/I condicionada ao tratamento de `F-006`**.
+O Bloco 2 G/H/I foi auditado e remediado no limite documental atual. O próximo ato governado é obter **autorização humana separada e explícita para o cleanup físico de `F-006`**. Se autorizada, a sequência é remoção/reconciliação transacional, recomputação, validações e review no novo head; somente depois desses gates poderá ser decidida a conclusão de `F-006` e o fechamento formal de G/H/I.
 
 ```text
 G
