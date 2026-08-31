@@ -348,7 +348,7 @@ Históricos, addenda e PRs superseded permanecem na trilha Git, mas não compete
 
 Nenhum é automático:
 
-- decisão governada de fechamento do Bloco G/H/I, com `F-006` ainda aberto;
+- autorização humana separada e explícita para cleanup físico de `F-006`; se autorizada, remoção/reconciliação, recomputação, validações e review precedem a decisão de fechamento de `F-006` e do Bloco G/H/I;
 - nova evidência de mercado → VAL;
 - tecnologia/implementação → ADR/GEA/Product Engineering somente mediante autorização própria;
 - filing das assinaturas → Human Filing Authorization;
