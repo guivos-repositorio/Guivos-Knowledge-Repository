@@ -452,11 +452,22 @@ A auditoria também confirmou que:
 
 - `UXA-015..018` não sustentam a UX principal autenticada atual de Organização/Coletivo;
 - SVGs associados a essas antigas baselines permanecem fisicamente no repositório;
-- `F-006` permanece `OPEN / REMOVE_AFTER_ABSORPTION`;
+- `F-006` permanece `OPEN`;
+- a absorção material válida foi aplicada e as dependências funcionais residuais de `UXA-015..018` foram reconciliadas;
+- a elegibilidade documental de cleanup está comprovada, mas não constitui autorização de remoção física;
 - nenhum `UXA-015..018` ou SVG associado possui remoção autorizada neste estágio;
 - contagem física de SVG não equivale a contagem de wireframes vigentes;
 - a antiga claim agregada `121 validados / 0 pendentes` permanece apenas como proveniência histórica nos instrumentos reconciliados;
 - `F-007` está resolvido no limite semântico/inventário do Bloco I.
+
+```text
+F-006
+→ OPEN
+→ ABSORPTION_APPLIED
+→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
+```
 
 ```text
 CONTAGEM FÍSICA DE SVGs
@@ -471,9 +482,8 @@ Permanecem `NOT_CERTIFIED`:
 - total agregado de wireframes validados vigentes;
 - total agregado de pendências visuais.
 
-Antes de qualquer remoção serão reconciliados:
+A elegibilidade documental não altera o inventário físico atual. Em eventual cleanup físico autorizado deverão ser reconciliados:
 
-- conteúdo semântico único;
 - surface registry;
 - transition registry;
 - screen catalog;
@@ -507,7 +517,7 @@ A reconstrução e as reconciliações posteriores absorveram os conflitos conhe
 
 - separação `Guivos × fundador` e remoção de `Do possível ao vivido.` como assinatura institucional da Home;
 - Movimento 06 = `Da Possibilidade à Experiência`;
-- distinção `Possibilidade ≠ Oportunidade` e presença de Mecanismo quando necessário;
+- distinção `Possibilidade ≠ Oportununidade` e presença de Mecanismo quando necessário;
 - nove Domínios de Evolução como vocabulário de amplitude, sem materialização visual automática;
 - separação `participante ≠ produto` e `Organização ≠ Business`;
 - Intelligence como Produto Especializado transversal / Intelligence Layer;
@@ -1360,6 +1370,13 @@ I
 → AUDITED / UPDATE_APPLIED
 → F-006 OPEN
 → F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+F-006
+→ OPEN
+→ ABSORPTION_APPLIED
+→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
 
 J / K / L / M / N
 → NOT RELEASED AUTOMATICALLY
