@@ -189,7 +189,7 @@ Ainda não são canônicos:
 | Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey remains draft** |
 | Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 OPEN** |
 | Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |
-| Próximo gate | **FECHAMENTO G/H/I CONDICIONADO A F-006** |
+| Próximo gate | **AUTORIZAÇÃO HUMANA F-006 → REMOÇÃO/RECONCILIAÇÃO → RECOMPUTAÇÃO → VALIDAÇÕES/REVIEW → DECISÃO DE FECHAMENTO** |
 | J/K/L/M/N | **NOT RELEASED AUTOMATICALLY** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
