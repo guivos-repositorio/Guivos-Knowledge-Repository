@@ -53,7 +53,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A, B, C, D, E e F estão reconciliados no estado vigente. O Bloco 2 G/H/I já foi auditado/remediado no limite documental atual: G está `COMPLETED / UPDATE_APPLIED`; H e I estão `AUDITED / UPDATE_APPLIED` com `F-006 OPEN`; F-007 está resolvido no limite semântico/inventário. O próximo gate é a decisão governada de fechamento de G/H/I condicionada ao tratamento de F-006.
+Os Lotes A, B, C, D, E e F estão reconciliados no estado vigente. O Bloco 2 G/H/I já foi auditado/remediado no limite documental atual: G está `COMPLETED / UPDATE_APPLIED`; H e I estão `AUDITED / UPDATE_APPLIED` com `F-006 OPEN`; F-007 está resolvido no limite semântico/inventário. Em F-006, a absorção material foi aplicada, as dependências funcionais residuais foram reconciliadas e a elegibilidade documental de cleanup foi comprovada; a remoção física continua não autorizada. O próximo gate permanece a decisão governada de fechamento de G/H/I condicionada ao tratamento físico governado de F-006.
 
 Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Design ou implementação deve ser promovida como consequência automática de trabalho anterior.
 
@@ -501,7 +501,12 @@ Estado do Bloco 2:
 
 ```text
 AUDITED / UPDATE_APPLIED
-F-006 → OPEN / REMOVE_AFTER_ABSORPTION
+F-006
+→ OPEN
+→ ABSORPTION_APPLIED
+→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
 ```
 
 Estado autenticado preservado:
@@ -528,7 +533,7 @@ MAIN AUTHENTICATED WIREFRAMES
 
 A auditoria atualizou Estado O/C, overlay pós-313, auditoria derivada, Jornadas draft, `gaps` e detalhes obrigatórios do Surface Registry para eliminar a falsa pendência da IA autenticada.
 
-`UXA-015..018` permanecem históricos/superseded como autoridade visual e fisicamente preservados. Sua semântica central está substancialmente absorvida nas autoridades atuais, mas `F-006` permanece aberto até prova suficiente de absorção material e ausência de função residual.
+`UXA-015..018` permanecem históricos/superseded como autoridade visual e fisicamente preservados. A semântica material válida foi absorvida nas autoridades atuais, incluindo os critérios de aceite de participação de `UXA-018` agora explicitamente preservados em `UXA-056`; as dependências funcionais residuais foram reconciliadas e a elegibilidade documental de cleanup está comprovada. Isso não autoriza remoção física nem altera o inventário atual.
 
 Nenhum mapa de superfícies, wireframe, UI, protótipo ou implementação é autorizado por H.
 
@@ -538,7 +543,12 @@ Estado do Bloco 2:
 
 ```text
 AUDITED / UPDATE_APPLIED
-F-006 → OPEN / REMOVE_AFTER_ABSORPTION
+F-006
+→ OPEN
+→ ABSORPTION_APPLIED
+→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
 F-007 → RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
 ```
 
@@ -566,7 +576,7 @@ Permanecem `NOT_CERTIFIED`:
 
 As claims históricas `121 validados / 0 pendentes` foram requalificadas como snapshot/proveniência onde ainda apareciam em autoridades ativas auditadas. Nenhuma nova contagem agregada de maturidade foi inferida.
 
-`F-006` impede cleanup físico de `UXA-015..018` e SVGs associados enquanto a absorção material não estiver comprovada.
+A elegibilidade de cleanup de `F-006` está comprovada documentalmente, mas os quatro documentos `UXA-015..018` e os dois SVGs associados continuam fisicamente preservados. Qualquer remoção exige autorização humana separada e, se ocorrer, deve reconciliar registries/catalog/gallery/traceability, links e contagens no mesmo ciclo antes de nova validação e review.
 
 ## 14. Lote J — Produtos, planos e economia
 
@@ -962,7 +972,7 @@ DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL DURANTE A AUDITORIA
 
 ## 26. Regra do próximo movimento
 
-Com G/H/I auditados/remediados no limite atual, o próximo movimento é a **decisão governada de fechamento de G/H/I condicionada ao tratamento de F-006**.
+Com G/H/I auditados/remediados no limite atual, o próximo movimento é a **decisão governada de fechamento de G/H/I condicionada ao tratamento físico governado de F-006**.
 
 ```text
 G
@@ -976,6 +986,13 @@ I
 → AUDITED / UPDATE_APPLIED
 → F-006 OPEN
 → F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+F-006
+→ OPEN
+→ ABSORPTION_APPLIED
+→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
 
 J / K / L / M / N
 → NOT RELEASED AUTOMATICALLY
@@ -996,4 +1013,4 @@ NÃO HÁ FILING AUTOMÁTICO
 NÃO HÁ PMF AUTOMÁTICO
 ```
 
-As Homes Principal/Pessoa, Organizações/Coletivos e Mall, Travel, Media, Ads, Business e Intelligence permanecem `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`. O tratamento de `F-006` deve ser governado sem falsa limpeza; somente depois do gate de fechamento de G/H/I pode-se decidir a liberação formal dos próximos lotes.
+As Homes Principal/Pessoa, Organizações/Coletivos e Mall, Travel, Media, Ads, Business e Intelligence permanecem `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`. A elegibilidade documental de `F-006` não autoriza exclusão; somente após autorização humana separada, cleanup físico governado, recontagem, validações e review no novo head poderá haver decisão formal de fechamento de F-006 e de G/H/I.
