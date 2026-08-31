@@ -124,7 +124,7 @@ Eles não constituem:
 
 A auditoria integral preserva a regra adicional:
 
-> **Nenhum artefato histórico será removido antes de provar a absorção de todo conteúdo material ainda válido e reconciliar suas referências.**
+> **Nenhum artefato histórico será removido sem prova de absorção de todo conteúdo material ainda válido e sem autorização humana separada e explícita; se autorizado, o cleanup físico e a reconciliação das referências ocorrerão na mesma transação.**
 
 ## 5. Conteúdo material histórico e absorção atual
 
@@ -159,7 +159,7 @@ Os princípios funcionais centrais permanecem representados nas autoridades atua
 
 Esses elementos aparecem de forma distribuída em `UXA-014`, `UXA-019`, `GKR-UX-ORGCOL-AUTH-JOBS-001` e `GKR-UX-ORGCOL-AUTH-IA-001`.
 
-Entretanto, hierarquias específicas de tela, listas históricas de estados, linguagem de interface e conclusões de validação de `UXA-015..018` **não são promovidas automaticamente a decisões atuais**. Por isso, a remoção física desses artefatos continua condicionada ao fechamento governado de `F-006`.
+Entretanto, hierarquias específicas de tela, listas históricas de estados, linguagem de interface e conclusões de validação de `UXA-015..018` **não são promovidas automaticamente a decisões atuais**. A remoção física desses artefatos continua condicionada a autorização humana separada e explícita. `F-006` permanece aberto durante autorização, cleanup, reconciliação, recomputação, validações e novo review; seu fechamento somente poderá ser decidido depois desses gates.
 
 ## 6. Efeito sobre o Registro do Estado Atual
 
@@ -364,14 +364,14 @@ Estado comprovado do inventário no Bloco I:
 
 `UXA-015..018` e os dois SVGs associados não serão removidos por conveniência de contagem.
 
-Antes de qualquer remoção, a auditoria exige:
+Os gates documentais de classificação do conteúdo material e de ausência de dependência funcional atual estão concluídos. A sequência governada restante é:
 
-1. classificar o conteúdo material histórico em `absorvido`, `histórico apenas` ou `ainda não absorvido`;
-2. confirmar que nenhuma autoridade atual depende do arquivo para compreender verdade vigente;
-3. corrigir links, metadados e dependências;
-4. recomputar catálogo, galeria, matriz e contagens físicas;
-5. validar semanticamente e mecanicamente o head exato;
-6. somente então remover artefatos sem função atual.
+1. obter autorização humana separada e explícita para o cleanup físico;
+2. se autorizado, remover os quatro documentos `UXA-015..018` e os dois SVGs associados e, na mesma transação, reconciliar links, metadados, catálogo, gallery, registry e traceability afetados;
+3. recomputar catálogo, galeria, matriz, associações e contagens físicas sobre a árvore resultante;
+4. validar semanticamente e mecanicamente o novo head exato;
+5. executar nova revisão repo-wide no novo head;
+6. somente depois desses gates decidir o fechamento de `F-006` e o fechamento formal de H/I.
 
 ## 17. Próximo gate válido
 
