@@ -20,7 +20,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Auditoria integral | **IN_PROGRESS** |
 | Lotes concluídos | **A / B / C / D / E / F** |
 | Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 OPEN** |
-| Próximo gate da auditoria | **DECISÃO DE FECHAMENTO G/H/I CONDICIONADA A F-006** |
+| Próximo gate da auditoria | **AUTORIZAÇÃO HUMANA PARA CLEANUP FÍSICO DE F-006** |
 | F-007 | **RESOLVED — semantic/inventory scope** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
@@ -312,7 +312,7 @@ A antiga leitura agregada de “oito Homes convergidas” não é usada como ata
 
 ## Materializações e contagens
 
-O corpus ainda contém artefatos físicos de ciclos anteriores. Alguns perderam autoridade vigente e permanecem preservados até que sua absorção material esteja comprovada.
+O corpus ainda contém artefatos físicos de ciclos anteriores. Alguns perderam autoridade vigente e permanecem preservados enquanto não houver autorização humana separada para seu cleanup físico; a absorção material já comprovada não equivale a autorização de remoção.
 
 No snapshot auditado do Bloco I:
 
@@ -334,11 +334,11 @@ Permanecem `NOT_CERTIFIED`:
 - total agregado de wireframes validados vigentes;
 - total agregado de pendências visuais.
 
-`F-006` permanece `OPEN / REMOVE_AFTER_ABSORPTION`; nenhum `UXA-015..018` ou SVG associado possui remoção autorizada neste estágio.
+`F-006` permanece `OPEN / CLEANUP_ELIGIBILITY_PROVEN / PHYSICAL_REMOVAL_NOT_AUTHORIZED`; nenhum `UXA-015..018` ou SVG associado possui remoção autorizada neste estágio.
 
 ## Próximo movimento
 
-O Bloco 2 G/H/I foi auditado no limite documental atual. O próximo movimento **não** é liberar automaticamente J/K/L/M/N: é a decisão governada de fechamento de G/H/I, condicionada ao tratamento de `F-006`.
+O Bloco 2 G/H/I foi auditado no limite documental atual. O próximo movimento **não** é liberar automaticamente J/K/L/M/N nem decidir o fechamento: é obter autorização humana separada e explícita para o cleanup físico de `F-006`. Se autorizada, remoção/reconciliação, recomputação, validações e review antecedem qualquer decisão de fechamento.
 
 ```text
 G
