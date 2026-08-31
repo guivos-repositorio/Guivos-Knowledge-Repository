@@ -133,7 +133,7 @@ Mapa final de superfícies
 → pendente
 ```
 
-O antigo SVG `uxa-015-organization-overview-desktop.svg` é histórico `superseded` e permanece fisicamente apenas enquanto `F-006` não for fechado.
+O antigo SVG `uxa-015-organization-overview-desktop.svg` é histórico `superseded` e permanece fisicamente enquanto não houver autorização humana separada e explícita para seu cleanup; `F-006` permanece aberto durante eventual remoção e os gates pós-cleanup.
 
 ## 6. Coletivo — estado corrigido
 
