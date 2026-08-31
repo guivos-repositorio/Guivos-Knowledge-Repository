@@ -42,7 +42,9 @@ BLOCO 2 — G / H / I
 → F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
 
 PRÓXIMO GATE DA AUDITORIA
-→ DECISÃO GOVERNADA DE FECHAMENTO G/H/I CONDICIONADA A F-006
+→ AUTORIZAÇÃO HUMANA SEPARADA PARA CLEANUP FÍSICO DE F-006
+→ SE AUTORIZADO: REMOÇÃO / RECONCILIAÇÃO → RECOMPUTAÇÃO → VALIDAÇÕES → REVIEW
+→ SOMENTE DEPOIS: DECISÃO DE FECHAMENTO DE F-006 E G/H/I
 ```
 
 A presença de uma UXA neste índice significa que o artefato existe e integra a família numerada. Ela **não** prova que todo artefato ou materialização por ela referenciado continuará no corpus após a auditoria.
