@@ -268,7 +268,7 @@ Permanece histórico, salvo decisão futura própria:
 
 Consequência:
 
-> **F-006 permanece aberto até que o teste de absorção e função atual permita decidir a remoção física sem perda de conhecimento.**
+> **Os testes de absorção e função atual estão concluídos e a elegibilidade documental de cleanup foi comprovada. `F-006` permanece aberto, e qualquer remoção física continua condicionada a autorização humana separada e explícita.**
 
 ## 11. Gate para normalização e cleanup
 
@@ -278,7 +278,7 @@ Ao atualizar qualquer derivado, a alteração deve:
 2. preservar evidências independentes;
 3. remover `UXA-015..018` como fonte de maturidade vigente;
 4. reconhecer Jobs + IA atuais quando o documento trate da experiência autenticada;
-5. não apagar histórico físico antes do fechamento de `F-006`;
+5. não executar cleanup físico sem autorização humana separada; se autorizado, remover e reconciliar o conjunto físico antes de decidir o fechamento de `F-006`;
 6. separar contagem física de contagem de maturidade;
 7. não promover wireframe pendente por inferência;
 8. manter as Jornadas da Organização e do Coletivo em `draft`;
@@ -300,7 +300,7 @@ NORMALIZAÇÃO DOS DERIVADOS CENTRAIS
 → SUBSTANCIALMENTE CONCLUÍDA
 
 JOBS + IA AUTENTICADA
-→ DEFINIDOS E DEVEM SER PROPAGADOS
+→ DEFINIDOS E PROPAGADOS NAS JORNADAS DRAFT
 
 MAPA FINAL DE SUPERFÍCIES
 → PENDENTE
@@ -309,10 +309,14 @@ WIREFRAMES PRINCIPAIS
 → PENDENTES
 
 F-006
-→ ABERTO
+→ OPEN
+→ ABSORPTION_APPLIED
+→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
 
 F-007
-→ REMEDIADO NOS INSTRUMENTOS CENTRAIS; FECHAMENTO NO MASTER DA AUDITORIA PENDENTE
+→ RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO DO BLOCO I
 ```
 
 A existência de qualquer dívida documental residual não autoriza retornar aos SVGs superseded como baseline.
