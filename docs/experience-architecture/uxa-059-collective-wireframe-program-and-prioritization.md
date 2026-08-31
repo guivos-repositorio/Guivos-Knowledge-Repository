@@ -534,7 +534,7 @@ Se uma futura materialização da UX principal do Coletivo for autorizada, ela d
 - incorporar comunicação e proteção conforme UXA-058;
 - não reutilizar o SVG histórico como baseline ou wireframe vigente.
 
-Os SVGs históricos associados permanecem preservados apenas enquanto `F-006` estiver aberto e não constituem autoridade de design, especificação ou autorização de materialização.
+Os SVGs históricos associados permanecem preservados enquanto não houver autorização humana separada e explícita para seu cleanup e não constituem autoridade de design, especificação ou autorização de materialização. `F-006` permanece aberto durante eventual remoção e os gates pós-cleanup.
 
 ## 18. Relação com Organizações
 
