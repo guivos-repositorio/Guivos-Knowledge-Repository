@@ -287,25 +287,30 @@ Esses elementos podem ser consultados no histórico como evidência de exploraç
 
 ### 11.4 Efeito sobre F-006
 
-Com esta absorção, `UXA-015..018` deixam de ser necessários como fonte vigente para os **estados funcionais** recuperados pela auditoria. Isso **não autoriza sua remoção física automaticamente**.
+Com esta absorção, `UXA-015..018` deixam de ser necessários como fonte vigente para os **estados funcionais** recuperados pela auditoria. A auditoria posterior também concluiu a reconciliação das dependências funcionais ativas encontradas e comprovou a elegibilidade documental de cleanup. Isso **não autoriza sua remoção física automaticamente**.
 
-Antes de qualquer cleanup ainda é obrigatório:
-
-1. confirmar ausência de referências funcionais ativas a `UXA-015..018`;
-2. corrigir dependências, links e instrumentos de rastreabilidade que ainda apontem para eles como autoridade atual;
-3. atualizar catálogo, gallery, registry e traceability no limite necessário;
-4. recomputar as contagens físicas após eventual remoção dos dois SVGs;
-5. validar o corpus no head exato;
-6. preservar a proveniência histórica no Git.
-
-Até a conclusão desses gates:
+Estado vigente:
 
 ```text
 F-006
 → OPEN
 → ABSORPTION_APPLIED
-→ PHYSICAL_REMOVAL_NOT_YET_AUTHORIZED
+→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
 ```
+
+Os gates documentais de absorção material e reconciliação das dependências funcionais já estão concluídos. Antes de qualquer cleanup físico ainda é obrigatório:
+
+1. obter autorização humana separada e explícita para a remoção física;
+2. se autorizada a remoção, reconciliar na mesma transação links, catálogo, gallery, registry e traceability afetados;
+3. recomputar as contagens físicas e associações após a eventual remoção dos dois SVGs;
+4. validar semanticamente e mecanicamente o corpus no novo head exato;
+5. executar nova revisão repo-wide no novo head;
+6. preservar a proveniência histórica no Git;
+7. somente então decidir o fechamento de `F-006` e o fechamento formal de H/I.
+
+Até a conclusão desses passos, os quatro documentos `UXA-015..018` e os SVGs associados permanecem fisicamente preservados e não devem ser tratados como autoridade funcional vigente.
 
 ## 12. Regra final
 
