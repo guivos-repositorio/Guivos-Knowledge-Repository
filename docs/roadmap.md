@@ -53,7 +53,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A, B, C, D, E e F estão reconciliados no estado vigente. O Bloco 2 G/H/I já foi auditado/remediado no limite documental atual: G está `COMPLETED / UPDATE_APPLIED`; H e I estão `AUDITED / UPDATE_APPLIED` com `F-006 OPEN`; F-007 está resolvido no limite semântico/inventário. Em F-006, a absorção material foi aplicada, as dependências funcionais residuais foram reconciliadas e a elegibilidade documental de cleanup foi comprovada; a remoção física continua não autorizada. O próximo gate permanece a decisão governada de fechamento de G/H/I condicionada ao tratamento físico governado de F-006.
+Os Lotes A, B, C, D, E e F estão reconciliados no estado vigente. O Bloco 2 G/H/I já foi auditado/remediado no limite documental atual: G está `COMPLETED / UPDATE_APPLIED`; H e I estão `AUDITED / UPDATE_APPLIED` com `F-006 OPEN`; F-007 está resolvido no limite semântico/inventário. Em F-006, a absorção material foi aplicada, as dependências funcionais residuais foram reconciliadas e a elegibilidade documental de cleanup foi comprovada; a remoção física continua não autorizada. O próximo gate é a autorização humana separada e explícita para o cleanup físico de F-006; somente após eventual remoção/reconciliação, recomputação, validações e review no novo head poderá ocorrer a decisão de fechamento de F-006 e de G/H/I.
 
 Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Design ou implementação deve ser promovida como consequência automática de trabalho anterior.
 
@@ -972,7 +972,7 @@ DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL DURANTE A AUDITORIA
 
 ## 26. Regra do próximo movimento
 
-Com G/H/I auditados/remediados no limite atual, o próximo movimento é a **decisão governada de fechamento de G/H/I condicionada ao tratamento físico governado de F-006**.
+Com G/H/I auditados/remediados no limite atual, o próximo movimento é obter **autorização humana separada e explícita para o cleanup físico de F-006**. Se concedida, ela antecede remoção/reconciliação, recomputação, validações e review; a decisão de fechamento de F-006 e de G/H/I permanece posterior a esses gates.
 
 ```text
 G
