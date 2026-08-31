@@ -137,7 +137,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-003 | Critical | Home principal/Pessoa conflita com assinatura e Movimento 06 vigentes | `REBUILD` | resolvido no Lote D |
 | F-004 | Major | Home O/C antecedia mudanças estruturais posteriores | `REBUILD` | resolvido no Lote E |
 | F-005 | Major | Mall, Travel, Media, Ads, Business e Intelligence precisavam de auditoria semântica | `UPDATE` | resolvido documentalmente no Lote F |
-| F-006 | Major | UXA-015..018 e SVGs associados continuam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | **aberto; semântica funcional substancialmente absorvida, cleanup ainda não autorizado** |
+| F-006 | Major | UXA-015..018 e SVGs associados continuam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | **aberto; absorção aplicada, dependências funcionais reconciliadas e elegibilidade de cleanup comprovada; remoção física ainda não autorizada** |
 | F-007 | Major | contagens físicas de SVGs não representam maturidade vigente | `UPDATE` | **resolvido no Bloco I; instrumentos centrais separam inventário físico de maturidade** |
 | F-008 | Major | Estado Atual e Roadmap dependiam de reconciliação posterior | `UPDATE + CONSOLIDATE` | resolvido no Lote B |
 | F-009 | Major | autoridades O/C recentes não estavam absorvidas nas autoridades globais | `UPDATE` | absorção global concluída; MENU ainda pendente |
@@ -353,11 +353,15 @@ Exemplos confirmados de artefatos sem autoridade visual vigente:
 - `uxa-015-organization-overview-desktop.svg`;
 - `uxa-016-collective-home-mobile.svg`.
 
-O Bloco H recuperou, pelo diff da PR #313, o conteúdo material anterior à supersessão desses quatro documentos.
+O Bloco H recuperou, pelo diff da PR #313 e pela inspeção do histórico Git, o conteúdo material anterior à supersessão desses quatro documentos.
 
 ### F-006 — estado atual
 
-Foi comprovada absorção substancial dos princípios funcionais centrais em `UXA-014`, `UXA-019`, `GKR-UX-ORGCOL-AUTH-JOBS-001` e `GKR-UX-ORGCOL-AUTH-IA-001`, incluindo:
+A classificação governada foi concluída em `GKR-UX-ORGCOL-UX-STATE-001 §11` e confrontada com as autoridades atuais de Organização/Coletivo.
+
+#### Conteúdo absorvido
+
+Foram absorvidos como semântica funcional e cobertura pré-surface-map, sem promover materialização visual:
 
 - contexto, autoridade e limites;
 - responsabilidade material;
@@ -369,34 +373,55 @@ Foi comprovada absorção substancial dos princípios funcionais centrais em `UX
 - papéis e governança;
 - proteção, contestação, pausa e saída;
 - Próximos Passos justificados;
-- neutralidade frente a métricas comerciais ou de popularidade.
+- neutralidade frente a métricas comerciais ou de popularidade;
+- estados alternativos materiais da Organização, incluindo ausência de urgência, verificação/autoridade insuficiente, contexto incompleto ou contestado, ausência de oportunidade, capacidade limitada, obrigação vencida, risco, falta de evidência, relação suspensa/encerrada, falha de integração, baixa conectividade e operação internacional;
+- estados alternativos materiais do Coletivo, incluindo criação/ausência de atividade, observação antes de participar, participação pendente ou pausada, ausência de responsável, atividade ajustada/cancelada, conflito de governança, proteção/moderação/acessibilidade, saída de responsável, recurso insuficiente, relação contestada, informação sensível, ausência de evidência, baixa conectividade e encerramento legítimo.
 
-Não foi promovido automaticamente como verdade atual:
+#### Conteúdo histórico apenas
+
+Não são promovidos como verdade atual e permanecem somente como proveniência Git até eventual cleanup físico:
 
 - hierarquia específica da antiga composição de tela;
 - ordem visual dos blocos históricos;
-- linguagem de interface validada apenas naquele objeto superseded;
-- conclusão histórica de validação funcional;
-- estados alternativos detalhados ainda não absorvidos explicitamente por autoridade posterior.
+- composição desktop/mobile dos dois SVGs;
+- linguagem de interface, labels e copy aprovados apenas naquele objeto superseded;
+- exemplos de cards, controles e chamadas de ação materializados na exploração antiga;
+- decisão histórica de primeiro campo visual;
+- navegação proposta na composição antiga;
+- cenários e exemplos usados somente para validar aqueles wireframes;
+- conclusões históricas de `UXA-017/018` de que as superfícies estavam funcionalmente válidas/reformuladas;
+- qualquer inferência de readiness para protótipo, UI, Design ou Engenharia.
 
-Por isso:
+#### Conteúdo ainda não absorvido
+
+> **Nenhum conteúdo funcional material válido e exclusivo foi identificado como ainda não absorvido.**
+
+A auditoria de dependências também reconciliou as referências funcionais ativas encontradas durante os ciclos de review, incluindo `UXA-019`, `UXA-056`, `UXA-057`, `UXA-058`, `UXA-059`, `UXA-070`, `UXA-086`, `UXA-087`, `UXA-095`, `UXA-096`, addenda canônicos, changelog e a autoridade navegacional da Home O/C. Os artefatos `UXA-015..018` deixaram de constar como dependências funcionais necessárias nessas cadeias e passaram a ser, quando ainda citados, proveniência histórica `superseded`.
+
+Registries, galleries e a matriz de rastreabilidade ainda preservam referências aos dois SVGs porque o inventário físico atual continua sendo 121. Essas referências descrevem **presença física/histórica**, não autoridade funcional. Elas deverão ser removidas ou recalculadas na mesma transação de cleanup físico para que o inventário continue verdadeiro.
+
+A revisão Codex repo-wide solicitada especificamente para testar dependências residuais, propagação e regressões no head exato `84d6f052f56b50e8802a6a4f429c52b49c7c42e4` concluiu sem novo finding Major/P1/P2 e sem novo thread; todos os threads existentes permanecem resolvidos. Os gates desse head estavam verdes antes desta atualização documental: Semantic #789 e Mechanical #1047.
+
+Consequência do teste positivo:
 
 ```text
 F-006
 → OPEN
-→ REMOVE_AFTER_ABSORPTION
-→ NENHUMA REMOÇÃO FÍSICA AUTORIZADA NESTE PONTO
+→ ABSORPTION_APPLIED
+→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
 ```
 
-Antes de removê-los:
+A elegibilidade não equivale a cleanup concluído. Antes de qualquer remoção física ainda é obrigatório:
 
-1. classificar cada conteúdo remanescente como `absorvido`, `histórico apenas` ou `ainda não absorvido`;
-2. confirmar ausência de função atual necessária no corpus;
-3. corrigir links e dependências;
-4. atualizar catálogo, gallery, registry e traceability;
-5. recomputar contagens físicas;
-6. validar o corpus no head exato;
-7. somente então remover os arquivos físicos sem função atual.
+1. obter autorização humana separada e explícita para o cleanup;
+2. executar a remoção dos quatro documentos `UXA-015..018` e dos dois SVGs associados somente dentro dessa autorização;
+3. na mesma transação, reconciliar links históricos, catálogo, gallery, registry e traceability afetados pela ausência física;
+4. recomputar as contagens físicas e associações após a remoção;
+5. executar validação semântica e mecânica no novo head exato;
+6. executar nova revisão repo-wide no novo head;
+7. somente então decidir o fechamento de `F-006` e o fechamento formal de H/I.
 
 ### F-007 — resolvido no Bloco I
 
@@ -485,7 +510,9 @@ Remediações aplicadas:
 - auditoria derivada pós-313 atualizada;
 - `gaps` atualizado para começar a lacuna em surface map/wireframe;
 - Jornada da Organização atualizada sem retirar seu `draft`;
-- Jornada do Coletivo atualizada sem retirar seu `draft`.
+- Jornada do Coletivo atualizada sem retirar seu `draft`;
+- conteúdo material de `UXA-015..018` classificado e absorvido sem reativar materialização;
+- dependências funcionais residuais de `UXA-015..018` reconciliadas nas autoridades ativas encontradas.
 
 Estado correto:
 
@@ -498,6 +525,10 @@ ACTORS / AUTHORITIES / JOBS
 
 AUTHENTICATED INFORMATION ARCHITECTURE
 → DEFINED PRE-SURFACE-MAP
+
+F-006
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
 
 FINAL SURFACE MAP
 → NOT DEFINED
@@ -535,13 +566,14 @@ Remediações:
 - `UXA-000` passou a separar inventário físico de maturidade vigente;
 - catálogo, galeria, matriz, registry e Jornadas já preservam ou foram reconciliados para leitura item a item;
 - `gaps` registra a mesma separação;
-- F-007 foi resolvido semanticamente.
+- F-007 foi resolvido semanticamente;
+- referências residuais aos SVGs históricos foram classificadas como inventário/rastreabilidade e não função vigente.
 
 Resultado:
 
 > **I = AUDITED / UPDATE_APPLIED / OPEN_FINDING F-006.**
 
-A recomputação física posterior à eventual remoção de `UXA-015..018` e dos dois SVGs somente poderá ocorrer depois do gate de F-006.
+A recomputação física posterior à eventual remoção de `UXA-015..018` e dos dois SVGs somente poderá ocorrer depois de autorização humana separada para o cleanup de F-006.
 
 ### Resultado do Bloco 2
 
@@ -557,6 +589,12 @@ I
 → AUDITED / REMEDIATED
 → F-006 OPEN
 → F-007 RESOLVED
+
+F-006 CLEANUP ELIGIBILITY
+→ PROVEN
+
+F-006 PHYSICAL CLEANUP
+→ NOT AUTHORIZED
 
 REBUILD_REQUIRED
 → NOT PROVEN
@@ -725,8 +763,8 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | E — Home Organizações e Coletivos | `COMPLETED` | master + NARR/NAV/SYS + resíduos documentais reconciliados; materialização não autorizada |
 | F — Homes de Produtos | `COMPLETED` | seis Homes especializadas reconciliadas documentalmente; materialização não autorizada |
 | G — Jornada da Pessoa | `COMPLETED` | contradição de handoff reconciliada; sem rebuild |
-| H — Organização / Coletivo | `AUDITED / UPDATE_APPLIED / F-006_OPEN` | Jobs + IA propagados; históricos aguardam gate de cleanup |
-| I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_OPEN` | inventário físico provado; F-007 resolvido; cleanup/recontagem posterior condicionados a F-006 |
+| H — Organização / Coletivo | `AUDITED / UPDATE_APPLIED / F-006_OPEN` | Jobs + IA propagados; F-006 cleanup-eligible, remoção física depende de autorização separada |
+| I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_OPEN` | inventário físico provado; F-007 resolvido; cleanup/recontagem dependem de autorização separada |
 | J — Produtos / Economia | `PENDING` | masters atuais sem fragmentação |
 | K — Research / RP-002 | `PENDING` | método/evidência preservados; intermediários absorvidos quando possível |
 | L — Tecnologia / Dados / IA | `PENDING` | autoridades atuais e fronteiras claras |
@@ -753,7 +791,7 @@ F. Homes de Produtos                             [concluído]
 ↓
 G. Jornada da Pessoa                             [concluído]
 ↓
-H/I. O/C + inventário visual                     [auditados/remediados; F-006 aberto]
+H/I. O/C + inventário visual                     [auditados/remediados; F-006 aberto e cleanup-eligible]
 ↓
 J/K/L/M/N. domínios especializados               [não liberados até decisão de fechamento G/H/I]
 ↓
@@ -907,11 +945,18 @@ H / I
 → AUDITED / UPDATE_APPLIED
 → F-006 OPEN
 
+F-006
+→ ABSORPTION_APPLIED
+→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
+
 F-007
 → RESOLVED
 
 NEXT ACTION
-→ CLOSE OR RECLASSIFY F-006 BY POSITIVE ABSORPTION/FUNCTION TEST
+→ OBTAIN SEPARATE HUMAN AUTHORIZATION FOR F-006 PHYSICAL CLEANUP
+→ THEN RECOMPUTE INVENTORY AND VALIDATE THE NEW EXACT HEAD
 
 NEXT SPECIALIZED BLOCK J/K/L/M/N
 → NOT RELEASED YET
