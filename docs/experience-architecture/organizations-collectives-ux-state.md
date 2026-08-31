@@ -303,14 +303,14 @@ F-006
 Os gates documentais de absorção material e reconciliação das dependências funcionais já estão concluídos. Antes de qualquer cleanup físico ainda é obrigatório:
 
 1. obter autorização humana separada e explícita para a remoção física;
-2. se autorizada a remoção, reconciliar na mesma transação links, catálogo, gallery, registry e traceability afetados;
+2. se autorizada a remoção, remover os quatro documentos `UXA-015..018` e os dois SVGs associados e reconciliar na mesma transação links, catálogo, gallery, registry e traceability afetados;
 3. recomputar as contagens físicas e associações após a eventual remoção dos dois SVGs;
 4. validar semanticamente e mecanicamente o corpus no novo head exato;
 5. executar nova revisão repo-wide no novo head;
 6. preservar a proveniência histórica no Git;
 7. somente então decidir o fechamento de `F-006` e o fechamento formal de H/I.
 
-Até a conclusão desses passos, os quatro documentos `UXA-015..018` e os SVGs associados permanecem fisicamente preservados e não devem ser tratados como autoridade funcional vigente.
+Enquanto não houver autorização humana separada e explícita para o cleanup, os quatro documentos `UXA-015..018` e os SVGs associados permanecem fisicamente preservados e não devem ser tratados como autoridade funcional vigente. Se a autorização for concedida, sua remoção ocorre antes da recomputação, validações, review e decisão de fechamento.
 
 ## 12. Regra final
 
