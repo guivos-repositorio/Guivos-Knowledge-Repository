@@ -330,11 +330,11 @@ A dívida mecânica registrada originalmente após #313 foi substancialmente abs
 | `GKR-JOURNEY-SCREEN-GALLERY-001` | normalizado quanto à separação físico × maturidade |
 | `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` | normalizado; associação ≠ autoridade |
 | `GKR-JOURNEY-SURFACE-REGISTRY-001` | maturidade principal O/C não é inferida dos artefatos superseded |
-| Jornada da Organização | estado visual superseded reconhecido; deve reconhecer explicitamente IA atual no Bloco H |
-| Jornada do Coletivo | estado visual superseded reconhecido; deve reconhecer explicitamente IA atual no Bloco H |
+| Jornada da Organização | normalizada no Bloco H; Jobs + IA atuais reconhecidos; surface map/wireframe principal permanecem pendentes |
+| Jornada do Coletivo | normalizada no Bloco H; Jobs + IA atuais reconhecidos; surface map/wireframe principal permanecem pendentes |
 | porta temática O/C | reconciliada com Jobs + IA no Bloco H |
 
-Esta tabela não encerra `F-006`: a permanência física de `UXA-015..018` e dos SVGs associados continua sujeita ao teste de absorção, referências, função atual e recomputação.
+Esta tabela não encerra `F-006`. Os testes de absorção, referências e função atual estão concluídos, as dependências funcionais ativas foram reconciliadas e a elegibilidade documental de cleanup está comprovada. A permanência física de `UXA-015..018` e dos SVGs associados continua obrigatória enquanto não houver autorização humana separada; se o cleanup for autorizado, remoção, reconciliação dos instrumentos afetados, recomputação, validações e novo review devem ocorrer antes de qualquer decisão de fechamento.
 
 ## 15. Regra para contagens visuais
 
