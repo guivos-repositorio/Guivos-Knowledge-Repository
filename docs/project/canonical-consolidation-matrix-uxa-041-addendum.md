@@ -2,9 +2,9 @@
 id: GKR-CANONICAL-CONSOLIDATION-MATRIX-UXA-041-ADDENDUM
 title: Adendo Canônico — Validação dos Wireframes do Anunciante do Opportunity Boost
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-07-28
+last_updated: 2026-09-01
 depends_on:
   - GKR-STATE-001
   - UXA-038
@@ -22,6 +22,8 @@ normative: false
 ## 1. Finalidade
 
 Este adendo registra a consolidação documental produzida pela validação funcional e reformulação dos cinco wireframes do fluxo do anunciante do Opportunity Boost.
+
+A reconciliação de 2026-09-01 preserva este adendo como registro especializado do incremento original. Declarações abaixo sobre estado proposto, resultante ou canônico, contagens, versões, baselines, pendências, marcos, próximos gates/transições/atos e autorizações futuras são **snapshots históricos do estágio em que o incremento foi integrado**; não representam o estado transversal vigente e não substituem `GKR-STATE-001`, registries ou autoridades de domínio vigentes.
 
 ## 2. Autoridades e responsabilidades
 
