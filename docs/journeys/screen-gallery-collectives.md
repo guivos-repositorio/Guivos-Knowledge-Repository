@@ -250,9 +250,11 @@ VALIDAÇÃO DESSE WIREFRAME PRINCIPAL
 
 A presença física de 34 SVGs não significa 34 wireframes vigentes ou validados da UX do Coletivo.
 
-## 14. Próximo gate
+## 14. Lacuna posterior aos gates de F-006
 
-Os fluxos públicos, de solicitação, participação e gestão especializada preservam as maturidades que possuem por autoridade própria. A experiência principal autenticada já possui papéis/jobs e Arquitetura da Informação definidos; o próximo gate começa em **mapa de superfícies → fluxos e estados críticos → wireframe principal**, somente quando autorizado.
+Os fluxos públicos, de solicitação, participação e gestão especializada preservam as maturidades que possuem por autoridade própria. A experiência principal autenticada já possui papéis/jobs e Arquitetura da Informação definidos. O **mapa final de superfícies → fluxos e estados críticos → wireframe principal** permanece uma lacuna documental posterior e não constitui o próximo gate vigente enquanto `F-006` estiver aberto.
+
+A eventual autorização dessa frente somente poderá ser considerada após a sequência governada de `F-006`: autorização humana separada para cleanup → se autorizada, remoção dos quatro Markdown `UXA-015..018` e dos dois SVGs associados com reconciliação transacional → recomputação da árvore resultante → validações Semantic + Mechanical → review repo-wide → decisão de fechamento de `F-006` e G/H/I.
 
 Nenhuma próxima UXA, UI, protótipo ou Engenharia de Produto é iniciada automaticamente.
 
