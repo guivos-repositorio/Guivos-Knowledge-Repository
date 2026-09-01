@@ -640,10 +640,12 @@ PRODUCT ENGINEERING
 → PAUSED
 ```
 
-## 15. Próximo ato documental permitido
+## 15. Lacuna documental posterior aos gates de F-006
 
-Após a definição da Arquitetura da Informação autenticada, o próximo ato documental possível nesta frente, somente quando houver autorização específica, é:
+Após a definição da Arquitetura da Informação autenticada, o mapa final de superfícies e estados autenticados de Organização e Coletivo permanece uma **lacuna documental posterior**, não o próximo ato governado vigente.
 
-> **definir o mapa final de superfícies e estados autenticados de Organização e Coletivo a partir da IA, destes atores, autoridades, jobs e contratos existentes.**
+Enquanto `F-006` permanecer aberto, a sequência governada prioritária é: autorização humana separada para cleanup → se autorizada, remoção dos quatro Markdown `UXA-015..018` e dos dois SVGs associados com reconciliação transacional → recomputação da árvore resultante → validações Semantic + Mechanical → review repo-wide → decisão de fechamento de `F-006` e G/H/I.
 
-Esse próximo ato não está sendo iniciado por esta reconciliação e não deve produzir wireframe, UI, protótipo ou implementação.
+Somente após esses gates, e mediante nova autorização específica, poderá ser considerada a definição do mapa final de superfícies e estados a partir da IA, destes atores, autoridades, jobs e contratos existentes.
+
+Essa lacuna não está sendo iniciada por esta reconciliação e não deve produzir wireframe, UI, protótipo ou implementação.
