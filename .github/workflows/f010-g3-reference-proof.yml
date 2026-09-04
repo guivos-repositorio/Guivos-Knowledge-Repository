@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TARGET_BRANCH: agent/gkr-global-audit-block-2-ghi-v1
-      TARGET_SHA: 36f5b621f8a87ab06661a003a3d71d06fca13273
-      TARGET_TREE: b57918ceff08cc5a0ca9a3291a86ac5fa1e95385
+      TARGET_SHA: 1041dee00f74b987b70e8f98235630938d060022
+      TARGET_TREE: 3471df7298670d657e5994adf9a55aa17052a6a6
     steps:
       - name: Checkout governed post-cleanup head
         uses: actions/checkout@v4
