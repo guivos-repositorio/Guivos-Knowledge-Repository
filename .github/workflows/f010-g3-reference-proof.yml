@@ -1,263 +1,293 @@
-name: F-010 G3 Reference Proof
+name: F-010 Authorized Cleanup Apply
 
 on:
   pull_request:
     branches:
       - agent/gkr-global-audit-block-2-ghi-v1
-  workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  prove:
-    name: Prove complete F-010 reference scan
+  apply:
+    if: github.event.pull_request.number == 364
+    name: Apply authorized F-010 cleanup atomically
     runs-on: ubuntu-latest
     env:
+      TARGET_BRANCH: agent/gkr-global-audit-block-2-ghi-v1
       TARGET_SHA: 20ac46358f07513830e72745f998cb46ca7d4509
       TARGET_TREE: 58b30bef8c01126c47a4c5f691bfbcfc7c4b44c3
     steps:
-      - name: Checkout full history
+      - name: Checkout governed target branch
         uses: actions/checkout@v4
         with:
+          ref: agent/gkr-global-audit-block-2-ghi-v1
           fetch-depth: 0
 
-      - name: Verify immutable target
+      - name: Guard exact target checkpoint
         shell: bash
         run: |
           set -euo pipefail
-          git cat-file -e "${TARGET_SHA}^{commit}"
-          actual_tree="$(git rev-parse "${TARGET_SHA}^{tree}")"
-          echo "TARGET_SHA=${TARGET_SHA}"
-          echo "EXPECTED_TREE=${TARGET_TREE}"
-          echo "ACTUAL_TREE=${actual_tree}"
-          test "${actual_tree}" = "${TARGET_TREE}"
+          test "$(git rev-parse HEAD)" = "${TARGET_SHA}"
+          test "$(git rev-parse "${TARGET_SHA}^{tree}")" = "${TARGET_TREE}"
+          remote_head="$(git ls-remote origin "refs/heads/${TARGET_BRANCH}" | awk '{print $1}')"
+          echo "REMOTE_HEAD=${remote_head}"
+          test "${remote_head}" = "${TARGET_SHA}"
 
-      - name: Scan every tracked UTF-8 blob in target object
+      - name: Apply closed 31-file transaction
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
-          import hashlib
-          import json
-          import os
-          import re
-          import subprocess
           from pathlib import Path
+          import subprocess
 
-          target_sha = os.environ["TARGET_SHA"]
-          target_tree = os.environ["TARGET_TREE"]
+          TODAY = "2026-09-04"
 
-          candidates = []
-          for n in range(3, 18):
-              nn = f"{n:03d}"
-              stem = f"canonical-consolidation-matrix-cod-{nn}-submission-addendum"
-              candidates.append({
-                  "label": f"COD-{nn}",
-                  "path": f"docs/project/{stem}.md",
-                  "id": f"GKR-CANON-MATRIX-COD-{nn}-SUBMISSION",
-                  "short": f"COD-{nn}",
-              })
-          candidates += [
-              {
-                  "label": "RP-002-PILOT-OPS-REG-001",
-                  "path": "docs/research/RP-002/pilot-operator-and-tool-registry.md",
-                  "id": "RP-002-PILOT-OPS-REG-001",
-                  "short": None,
-              },
-              {
-                  "label": "RP-002-PILOT-NOTICE-CONSENT-001",
-                  "path": "docs/research/RP-002/pilot-participant-privacy-notice-and-consent-draft.md",
-                  "id": "RP-002-PILOT-NOTICE-CONSENT-001",
-                  "short": None,
-              },
+          deletions = [
+              *(f"docs/project/canonical-consolidation-matrix-cod-{n:03d}-submission-addendum.md" for n in range(3, 18)),
+              "docs/research/RP-002/pilot-operator-and-tool-registry.md",
+              "docs/research/RP-002/pilot-participant-privacy-notice-and-consent-draft.md",
           ]
 
-          def run_bytes(*args):
-              return subprocess.check_output(args)
-
-          actual_tree = subprocess.check_output(
-              ["git", "rev-parse", f"{target_sha}^{{tree}}"], text=True
-          ).strip()
-          if actual_tree != target_tree:
-              raise SystemExit(f"TREE_MISMATCH expected={target_tree} actual={actual_tree}")
-
-          raw = run_bytes("git", "ls-tree", "-r", "-z", "--full-tree", target_sha)
-          entries = []
-          for record in raw.split(b"\0"):
-              if not record:
-                  continue
-              meta, path_b = record.split(b"\t", 1)
-              mode, obj_type, obj_sha = meta.decode("ascii").split()
-              path = path_b.decode("utf-8")
-              if obj_type == "blob":
-                  entries.append((path, obj_sha))
-
-          candidate_paths = {c["path"] for c in candidates}
-          hits = []
-          self_hit_lines = 0
-          text_blobs = 0
-          binary_or_non_utf8_blobs = 0
-          total_bytes = 0
-          text_bytes = 0
-          scanned_paths = []
-          skipped_paths = []
-
-          def yaml_contexts(lines):
-              contexts = [None] * len(lines)
-              if not lines or lines[0].strip() != "---":
-                  return contexts
-              active = None
-              in_front = True
-              for i in range(1, len(lines)):
-                  s = lines[i]
-                  if s.strip() == "---":
-                      in_front = False
-                      break
-                  if not in_front:
-                      break
-                  m = re.match(r"^([A-Za-z0-9_-]+)\s*:", s)
-                  if m:
-                      active = m.group(1)
-                  contexts[i] = active
-              return contexts
-
-          def inline_code_at(line, idx):
-              return line[:idx].count("`") % 2 == 1
-
-          for path, obj_sha in entries:
-              data = run_bytes("git", "cat-file", "blob", obj_sha)
-              total_bytes += len(data)
-              if b"\x00" in data:
-                  binary_or_non_utf8_blobs += 1
-                  skipped_paths.append(path)
-                  continue
-              try:
-                  text = data.decode("utf-8")
-              except UnicodeDecodeError:
-                  binary_or_non_utf8_blobs += 1
-                  skipped_paths.append(path)
-                  continue
-
-              text_blobs += 1
-              text_bytes += len(data)
-              scanned_paths.append(path)
-              lines = text.splitlines()
-              yctx = yaml_contexts(lines)
-
-              for cand in candidates:
-                  basename = Path(cand["path"]).name
-                  stem = Path(cand["path"]).stem
-                  pattern_map = {
-                      "A_FULL_PATH": cand["path"],
-                      "B_BASENAME": basename,
-                      "C_STEM": stem,
-                      "D_DOCUMENT_ID": cand["id"],
-                  }
-                  if cand.get("short"):
-                      pattern_map["E_SHORT_IDENTIFIER"] = cand["short"]
-
-                  for lineno, line in enumerate(lines, 1):
-                      matched = []
-                      first_index = None
-                      for kind, pattern in pattern_map.items():
-                          idx = line.find(pattern)
-                          if idx >= 0:
-                              matched.append(kind)
-                              if first_index is None or idx < first_index:
-                                  first_index = idx
-                      if not matched:
-                          continue
-
-                      if path == cand["path"]:
-                          self_hit_lines += 1
-                          continue
-
-                      syntactic = []
-                      ctx = yctx[lineno - 1]
-                      if ctx == "related":
-                          syntactic.append("G_YAML_RELATED")
-                      elif ctx == "depends_on":
-                          syntactic.append("H_YAML_DEPENDS_ON")
-                      elif ctx == "parent":
-                          syntactic.append("I_YAML_PARENT")
-                      elif ctx == "supports":
-                          syntactic.append("J_YAML_SUPPORTS")
-
-                      if "](" in line:
-                          syntactic.append("F_MARKDOWN_LINK_TARGET_POSSIBLE")
-                      if first_index is not None and inline_code_at(line, first_index):
-                          syntactic.append("K_INLINE_CODE")
-                      if path == "mkdocs.yml":
-                          syntactic.append("NAVIGATION_CONFIG")
-                      if not syntactic:
-                          syntactic.append("L_TEXTUAL_PROVENANCE_OR_CONTEXT")
-
-                      hits.append({
-                          "candidate": cand["label"],
-                          "candidate_path": cand["path"],
-                          "path": path,
-                          "line": lineno,
-                          "matched_pattern_kinds": sorted(set(matched)),
-                          "syntactic_context": sorted(set(syntactic)),
-                          "text": line.strip(),
-                      })
-
-          hits.sort(key=lambda h: (h["candidate"], h["path"], h["line"]))
-          summary = {
-              "proof_version": 1,
-              "target_sha": target_sha,
-              "target_tree": target_tree,
-              "candidate_count": len(candidates),
-              "candidate_paths": [c["path"] for c in candidates],
-              "tracked_blob_count": len(entries),
-              "text_blob_count": text_blobs,
-              "binary_or_non_utf8_blob_count": binary_or_non_utf8_blobs,
-              "total_bytes": total_bytes,
-              "text_bytes_scanned": text_bytes,
-              "external_hit_count": len(hits),
-              "self_hit_line_count_excluded": self_hit_lines,
-              "scan_errors": 0,
-              "scanned_path_manifest_sha256": hashlib.sha256(
-                  "\n".join(sorted(scanned_paths)).encode("utf-8")
-              ).hexdigest(),
-              "skipped_paths": sorted(skipped_paths),
+          rp_versions = {
+              "docs/research/RP-002/pilot-documentation-closure-decision.md": ("1.0.0", "1.0.1"),
+              "docs/research/RP-002/pilot-final-legal-privacy-review-checklist.md": ("1.0.0", "1.0.1"),
+              "docs/research/RP-002/pilot-identity-vault-implementation-decision.md": ("1.0.0", "1.0.1"),
+              "docs/research/RP-002/pilot-minimum-stack-options-and-recommendation.md": ("0.1.0", "0.1.1"),
+              "docs/research/RP-002/pilot-minimum-stack-target-decision.md": ("1.1.0", "1.1.1"),
+              "docs/research/RP-002/pilot-notice-consent-flow-decision.md": ("1.0.0", "1.0.1"),
+              "docs/research/RP-002/pilot-openai-api-implementation-decision.md": ("1.0.0", "1.0.1"),
+              "docs/research/RP-002/pilot-operator-and-tool-registry-reconciliation.md": ("1.0.0", "1.0.1"),
+              "docs/research/RP-002/pilot-participant-privacy-notice-and-consent-v0.2.md": ("0.2.0", "0.2.1"),
+              "docs/research/RP-002/pilot-research-base-implementation-decision.md": ("1.0.0", "1.0.1"),
+              "docs/research/RP-002/pilot-search-web-implementation-decision.md": ("1.0.0", "1.0.1"),
           }
 
-          payload = {"summary": summary, "hits": hits}
-          canonical = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
-          proof_sha256 = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
-          payload["summary"]["proof_payload_sha256"] = proof_sha256
+          ops_replace = {
+              "docs/research/RP-002/pilot-documentation-closure-decision.md",
+              "docs/research/RP-002/pilot-final-legal-privacy-review-checklist.md",
+              "docs/research/RP-002/pilot-identity-vault-implementation-decision.md",
+              "docs/research/RP-002/pilot-minimum-stack-options-and-recommendation.md",
+              "docs/research/RP-002/pilot-openai-api-implementation-decision.md",
+              "docs/research/RP-002/pilot-participant-privacy-notice-and-consent-v0.2.md",
+              "docs/research/RP-002/pilot-research-base-implementation-decision.md",
+              "docs/research/RP-002/pilot-search-web-implementation-decision.md",
+          }
+          notice_replace = {
+              "docs/research/RP-002/pilot-minimum-stack-options-and-recommendation.md",
+              "docs/research/RP-002/pilot-minimum-stack-target-decision.md",
+              "docs/research/RP-002/pilot-notice-consent-flow-decision.md",
+          }
+          global_edits = {
+              "docs/project/gkr-full-corpus-audit.md",
+              "docs/project/current-state-register.md",
+              "docs/roadmap.md",
+          }
+          expected_changed = set(deletions) | set(rp_versions) | global_edits
+          if len(deletions) != 17 or len(expected_changed) != 31:
+              raise SystemExit("CLOSED_SET_MISMATCH")
 
-          out_json = "/tmp/f010-g3-proof.json"
-          out_jsonl = "/tmp/f010-g3-hits.jsonl"
-          with open(out_json, "w", encoding="utf-8") as f:
-              json.dump(payload, f, ensure_ascii=False, indent=2, sort_keys=True)
-              f.write("\n")
-          with open(out_jsonl, "w", encoding="utf-8") as f:
-              for hit in hits:
-                  f.write(json.dumps(hit, ensure_ascii=False, sort_keys=True) + "\n")
+          def read(path):
+              return Path(path).read_text(encoding="utf-8")
 
-          print("F010_G3_PROOF_SUMMARY=" + json.dumps(summary, ensure_ascii=False, sort_keys=True))
-          print("F010_G3_HITS_BEGIN")
-          for hit in hits:
-              print(json.dumps(hit, ensure_ascii=False, sort_keys=True))
-          print("F010_G3_HITS_END")
+          def write(path, text):
+              Path(path).write_text(text, encoding="utf-8")
 
-          if len(candidates) != 17:
-              raise SystemExit("CANDIDATE_COUNT_MISMATCH")
-          if summary["scan_errors"] != 0:
-              raise SystemExit("SCAN_ERRORS_PRESENT")
-          if not scanned_paths:
-              raise SystemExit("EMPTY_TEXT_SCAN")
+          def once(text, old, new, label):
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f"EXPECTED_ONE {label} count={count}")
+              return text.replace(old, new, 1)
+
+          def frontmatter(text, path):
+              if not text.startswith("---\n"):
+                  raise SystemExit(f"NO_FRONTMATTER {path}")
+              end = text.find("\n---\n", 4)
+              if end < 0:
+                  raise SystemExit(f"UNCLOSED_FRONTMATTER {path}")
+              return text[:end+1], text[end+1:]
+
+          for path, (old_v, new_v) in rp_versions.items():
+              text = read(path)
+              fm, body = frontmatter(text, path)
+              fm = once(fm, f"version: {old_v}", f"version: {new_v}", f"{path}:version")
+              fm = once(fm, "last_updated: 2026-08-27", f"last_updated: {TODAY}", f"{path}:date")
+              if path in ops_replace:
+                  fm = once(fm, "RP-002-PILOT-OPS-REG-001", "RP-002-PILOT-OPS-REG-002", f"{path}:ops")
+              if path in notice_replace:
+                  fm = once(fm, "RP-002-PILOT-NOTICE-CONSENT-001", "RP-002-PILOT-NOTICE-CONSENT-002", f"{path}:notice")
+              if path.endswith("pilot-operator-and-tool-registry-reconciliation.md"):
+                  fm = once(fm, "  - RP-002-PILOT-OPS-REG-001\n", "", f"{path}:remove-old-related")
+              write(path, fm + body)
+
+          recon = "docs/research/RP-002/pilot-operator-and-tool-registry-reconciliation.md"
+          text = read(recon)
+          text = once(
+              text,
+              "Este documento reconcilia o `RP-002-PILOT-OPS-REG-001` com as decisões documentais posteriores do stack.",
+              "Este documento reconcilia o registro histórico `RP-002-PILOT-OPS-REG-001`, removido do corpus corrente após absorção e preservado no histórico Git, com as decisões documentais posteriores do stack.",
+              "recon:history",
+          )
+          text = once(
+              text,
+              "O registro anterior permanece como histórico do momento em que vários componentes estavam `TBD`. Para o estado documental atual, este documento prevalece quando houver divergência de status-alvo.",
+              "O registro anterior permanece recuperável no histórico Git como evidência do momento em que vários componentes estavam `TBD`. No corpus corrente, este documento é a autoridade documental de reconciliação e prevalece quando houver divergência de status-alvo.",
+              "recon:status",
+          )
+          write(recon, text)
+
+          audit = "docs/project/gkr-full-corpus-audit.md"
+          text = read(audit)
+          text = once(text, "version: 1.5.0", "version: 1.6.0", "audit:version")
+          text = once(text, "last_updated: 2026-08-30", f"last_updated: {TODAY}", "audit:date")
+          text = once(
+              text,
+              "| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `HOLD_REVIEW` | aberto; overlays pós-313 testados/reconciliados no Bloco H, demais famílias pendentes |",
+              "| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `UPDATE + REMOVE_AFTER_ABSORPTION` | **auditoria estrutural concluída; cleanup aplicado no conjunto fechado de 17 artefatos; validação pós-cleanup pendente; não resolvido** |",
+              "audit:f010-row",
+          )
+          text = once(
+              text,
+              "Isso não encerra F-010 para as demais famílias.",
+              """Esse resultado do Bloco H não encerrava F-010 para as demais famílias.
+
+A adjudicação estrutural posterior concluiu a varredura das famílias residuais. Os snapshots e addenda que preservam função documental, evidência ou proveniência permanecem no corpus; o conjunto físico de remoção foi fechado em **17 artefatos** — quinze addenda intermediários de submissão `COD-003..017` e dois intermediários do `RP-002` já absorvidos por autoridades posteriores.
+
+A prova pré-delete foi executada sobre o checkpoint congelado `20ac46358f07513830e72745f998cb46ca7d4509` / tree `58b30bef8c01126c47a4c5f691bfbcfc7c4b44c3`: 1.390 blobs rastreados, 1.388 UTF-8 pesquisáveis, 443 hits externos classificados e **0 `UNCLASSIFIED`**. Os dois blobs não textuais eram archives ZIP históricos. Referências correntes aos intermediários `RP-002` foram reconciliadas com `RP-002-PILOT-OPS-REG-002` e `RP-002-PILOT-NOTICE-CONSENT-002` na mesma transação.
+
+```text
+F-010
+→ STRUCTURAL AUDIT COMPLETE
+→ CLEANUP APPLIED
+→ POST-CLEANUP VALIDATION PENDING
+→ NOT RESOLVED
+
+F-006
+→ NOT TOUCHED BY THIS TRANSACTION
+```
+
+O fechamento de F-010 somente poderá ser adjudicado após recomputação da árvore, verificação de ausência dos 17 artefatos, Semantic, Mechanical e review repo-wide no novo head.""",
+              "audit:f010-section",
+          )
+          write(audit, text)
+
+          state = "docs/project/current-state-register.md"
+          text = read(state)
+          text = once(text, "version: 3.5.0", "version: 3.6.0", "state:version")
+          text = once(text, "last_updated: 2026-08-30", f"last_updated: {TODAY}", "state:date")
+          text = once(
+              text,
+              "→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO\n\nPRÓXIMO GATE DA AUDITORIA",
+              """→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+F-010
+→ STRUCTURAL AUDIT COMPLETE
+→ CLEANUP APPLIED ON CLOSED 17-ARTIFACT SET
+→ POST-CLEANUP VALIDATION PENDING
+→ NOT RESOLVED
+→ DOES NOT AUTHORIZE F-006 OR DOWNSTREAM RELEASE
+
+PRÓXIMO GATE DA AUDITORIA""",
+              "state:f010",
+          )
+          write(state, text)
+
+          roadmap = "docs/roadmap.md"
+          text = read(roadmap)
+          text = once(text, "id: ROADMAP-13.5.0", "id: ROADMAP-13.6.0", "roadmap:id")
+          text = once(text, "version: 13.5.0", "version: 13.6.0", "roadmap:version")
+          text = once(text, "last_updated: 2026-08-30", f"last_updated: {TODAY}", "roadmap:date")
+          text = once(text, "Este roadmap traduz `GKR-STATE-001 v3.5.0`", "Este roadmap traduz `GKR-STATE-001 v3.6.0`", "roadmap:state")
+          anchor = "O próximo gate é a autorização humana separada e explícita para o cleanup físico de F-006; somente após eventual remoção/reconciliação, recomputação, validações e review no novo head poderá ocorrer a decisão de fechamento de F-006 e de G/H/I."
+          text = once(
+              text,
+              anchor,
+              anchor + "\n\nEm trilha independente, `F-010` concluiu a auditoria estrutural e teve cleanup aplicado sobre um conjunto fechado de 17 artefatos. Seu estado é `POST-CLEANUP VALIDATION PENDING / NOT RESOLVED`. Esse ato **não consome nem substitui a autorização separada exigida por F-006**, não libera J/K/L/M/N e não ativa UXA-102, Design/materialização ou Product Engineering.",
+              "roadmap:f010-paragraph",
+          )
+          text = once(
+              text,
+              "| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |",
+              "| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |\n| F-010 — cleanup transversal | **CLEANUP APPLIED / POST-CLEANUP VALIDATION PENDING / NOT RESOLVED** |",
+              "roadmap:f010-row",
+          )
+          write(roadmap, text)
+
+          for path in deletions:
+              p = Path(path)
+              if not p.is_file():
+                  raise SystemExit(f"MISSING_DELETE_CANDIDATE {path}")
+              p.unlink()
+
+          changed = set(subprocess.check_output(["git", "diff", "--name-only"], text=True).splitlines())
+          if changed != expected_changed:
+              raise SystemExit(f"CHANGED_SET_MISMATCH missing={sorted(expected_changed-changed)} extra={sorted(changed-expected_changed)}")
+
+          forbidden_names = {
+              "uxa-015-organization-overview-desktop.svg",
+              "uxa-016-collective-home-mobile.svg",
+          }
+          if any(Path(p).name in forbidden_names or "uxa-015" in Path(p).name or "uxa-016" in Path(p).name or "uxa-017" in Path(p).name or "uxa-018" in Path(p).name for p in changed):
+              raise SystemExit("F006_TOUCHED")
+
+          print(f"CLOSED_TRANSACTION_OK deletions=17 edits=14 total={len(changed)}")
           PY
 
-      - name: Upload proof artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: f010-g3-reference-proof
-          path: |
-            /tmp/f010-g3-proof.json
-            /tmp/f010-g3-hits.jsonl
-          if-no-files-found: error
-          retention-days: 7
+      - name: Validate mutated working tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --quiet -r requirements.txt PyYAML
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          git diff --check
+
+      - name: Commit and verify closed result
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "GKR: aplicar cleanup físico F-010 após prova estrutural"
+          new_sha="$(git rev-parse HEAD)"
+          new_tree="$(git rev-parse HEAD^{tree})"
+          echo "NEW_SHA=${new_sha}"
+          echo "NEW_TREE=${new_tree}"
+
+          changed_count="$(git diff --name-only "${TARGET_SHA}" HEAD | wc -l | tr -d ' ')"
+          test "${changed_count}" = "31"
+
+          for n in $(seq -w 3 17); do
+            test ! -e "docs/project/canonical-consolidation-matrix-cod-0${n}-submission-addendum.md" || exit 1
+          done
+          test ! -e docs/research/RP-002/pilot-operator-and-tool-registry.md
+          test ! -e docs/research/RP-002/pilot-participant-privacy-notice-and-consent-draft.md
+
+          for n in $(seq -w 3 17); do
+            token="GKR-CANON-MATRIX-COD-0${n}-SUBMISSION"
+            if git grep -n -F "${token}" HEAD -- .; then
+              echo "Dangling ${token}"
+              exit 1
+            fi
+          done
+
+          if git grep -n -F "RP-002-PILOT-NOTICE-CONSENT-001" HEAD -- .; then
+            echo "Dangling notice 001"
+            exit 1
+          fi
+
+          ops_hits="$(git grep -n -F "RP-002-PILOT-OPS-REG-001" HEAD -- . || true)"
+          test "$(printf '%s\n' "${ops_hits}" | sed '/^$/d' | wc -l | tr -d ' ')" = "1"
+          printf '%s\n' "${ops_hits}" | grep -F "pilot-operator-and-tool-registry-reconciliation.md"
+          printf '%s\n' "${ops_hits}" | grep -F "histórico Git"
+
+      - name: Reconfirm remote head and push exact commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          remote_head="$(git ls-remote origin "refs/heads/${TARGET_BRANCH}" | awk '{print $1}')"
+          test "${remote_head}" = "${TARGET_SHA}"
+          git push origin "HEAD:refs/heads/${TARGET_BRANCH}"
