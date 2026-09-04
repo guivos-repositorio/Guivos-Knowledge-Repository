@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   apply:
-    if: github.event.pull_request.number == 364
+    if: ${{ github.event.pull_request.number == 364 }}
     name: Apply authorized F-010 cleanup atomically
     runs-on: ubuntu-latest
     env:
@@ -43,13 +43,11 @@ jobs:
           import subprocess
 
           TODAY = "2026-09-04"
-
           deletions = [
               *(f"docs/project/canonical-consolidation-matrix-cod-{n:03d}-submission-addendum.md" for n in range(3, 18)),
               "docs/research/RP-002/pilot-operator-and-tool-registry.md",
               "docs/research/RP-002/pilot-participant-privacy-notice-and-consent-draft.md",
           ]
-
           rp_versions = {
               "docs/research/RP-002/pilot-documentation-closure-decision.md": ("1.0.0", "1.0.1"),
               "docs/research/RP-002/pilot-final-legal-privacy-review-checklist.md": ("1.0.0", "1.0.1"),
@@ -63,7 +61,6 @@ jobs:
               "docs/research/RP-002/pilot-research-base-implementation-decision.md": ("1.0.0", "1.0.1"),
               "docs/research/RP-002/pilot-search-web-implementation-decision.md": ("1.0.0", "1.0.1"),
           }
-
           ops_replace = {
               "docs/research/RP-002/pilot-documentation-closure-decision.md",
               "docs/research/RP-002/pilot-final-legal-privacy-review-checklist.md",
@@ -123,74 +120,25 @@ jobs:
 
           recon = "docs/research/RP-002/pilot-operator-and-tool-registry-reconciliation.md"
           text = read(recon)
-          text = once(
-              text,
-              "Este documento reconcilia o `RP-002-PILOT-OPS-REG-001` com as decisões documentais posteriores do stack.",
-              "Este documento reconcilia o registro histórico `RP-002-PILOT-OPS-REG-001`, removido do corpus corrente após absorção e preservado no histórico Git, com as decisões documentais posteriores do stack.",
-              "recon:history",
-          )
-          text = once(
-              text,
-              "O registro anterior permanece como histórico do momento em que vários componentes estavam `TBD`. Para o estado documental atual, este documento prevalece quando houver divergência de status-alvo.",
-              "O registro anterior permanece recuperável no histórico Git como evidência do momento em que vários componentes estavam `TBD`. No corpus corrente, este documento é a autoridade documental de reconciliação e prevalece quando houver divergência de status-alvo.",
-              "recon:status",
-          )
+          text = once(text, "Este documento reconcilia o `RP-002-PILOT-OPS-REG-001` com as decisões documentais posteriores do stack.", "Este documento reconcilia o registro histórico `RP-002-PILOT-OPS-REG-001`, removido do corpus corrente após absorção e preservado no histórico Git, com as decisões documentais posteriores do stack.", "recon:history")
+          text = once(text, "O registro anterior permanece como histórico do momento em que vários componentes estavam `TBD`. Para o estado documental atual, este documento prevalece quando houver divergência de status-alvo.", "O registro anterior permanece recuperável no histórico Git como evidência do momento em que vários componentes estavam `TBD`. No corpus corrente, este documento é a autoridade documental de reconciliação e prevalece quando houver divergência de status-alvo.", "recon:status")
           write(recon, text)
 
           audit = "docs/project/gkr-full-corpus-audit.md"
           text = read(audit)
           text = once(text, "version: 1.5.0", "version: 1.6.0", "audit:version")
           text = once(text, "last_updated: 2026-08-30", f"last_updated: {TODAY}", "audit:date")
-          text = once(
-              text,
-              "| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `HOLD_REVIEW` | aberto; overlays pós-313 testados/reconciliados no Bloco H, demais famílias pendentes |",
-              "| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `UPDATE + REMOVE_AFTER_ABSORPTION` | **auditoria estrutural concluída; cleanup aplicado no conjunto fechado de 17 artefatos; validação pós-cleanup pendente; não resolvido** |",
-              "audit:f010-row",
-          )
-          text = once(
-              text,
-              "Isso não encerra F-010 para as demais famílias.",
-              """Esse resultado do Bloco H não encerrava F-010 para as demais famílias.
-
-A adjudicação estrutural posterior concluiu a varredura das famílias residuais. Os snapshots e addenda que preservam função documental, evidência ou proveniência permanecem no corpus; o conjunto físico de remoção foi fechado em **17 artefatos** — quinze addenda intermediários de submissão `COD-003..017` e dois intermediários do `RP-002` já absorvidos por autoridades posteriores.
-
-A prova pré-delete foi executada sobre o checkpoint congelado `20ac46358f07513830e72745f998cb46ca7d4509` / tree `58b30bef8c01126c47a4c5f691bfbcfc7c4b44c3`: 1.390 blobs rastreados, 1.388 UTF-8 pesquisáveis, 443 hits externos classificados e **0 `UNCLASSIFIED`**. Os dois blobs não textuais eram archives ZIP históricos. Referências correntes aos intermediários `RP-002` foram reconciliadas com `RP-002-PILOT-OPS-REG-002` e `RP-002-PILOT-NOTICE-CONSENT-002` na mesma transação.
-
-```text
-F-010
-→ STRUCTURAL AUDIT COMPLETE
-→ CLEANUP APPLIED
-→ POST-CLEANUP VALIDATION PENDING
-→ NOT RESOLVED
-
-F-006
-→ NOT TOUCHED BY THIS TRANSACTION
-```
-
-O fechamento de F-010 somente poderá ser adjudicado após recomputação da árvore, verificação de ausência dos 17 artefatos, Semantic, Mechanical e review repo-wide no novo head.""",
-              "audit:f010-section",
-          )
+          text = once(text, "| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `HOLD_REVIEW` | aberto; overlays pós-313 testados/reconciliados no Bloco H, demais famílias pendentes |", "| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `UPDATE + REMOVE_AFTER_ABSORPTION` | **auditoria estrutural concluída; cleanup aplicado no conjunto fechado de 17 artefatos; validação pós-cleanup pendente; não resolvido** |", "audit:f010-row")
+          audit_insert = "Esse resultado do Bloco H não encerrava F-010 para as demais famílias.\n\nA adjudicação estrutural posterior concluiu a varredura das famílias residuais. Os snapshots e addenda que preservam função documental, evidência ou proveniência permanecem no corpus; o conjunto físico de remoção foi fechado em **17 artefatos** — quinze addenda intermediários de submissão `COD-003..017` e dois intermediários do `RP-002` já absorvidos por autoridades posteriores.\n\nA prova pré-delete foi executada sobre o checkpoint congelado `20ac46358f07513830e72745f998cb46ca7d4509` / tree `58b30bef8c01126c47a4c5f691bfbcfc7c4b44c3`: 1.390 blobs rastreados, 1.388 UTF-8 pesquisáveis, 443 hits externos classificados e **0 `UNCLASSIFIED`**. Os dois blobs não textuais eram archives ZIP históricos. Referências correntes aos intermediários `RP-002` foram reconciliadas com `RP-002-PILOT-OPS-REG-002` e `RP-002-PILOT-NOTICE-CONSENT-002` na mesma transação.\n\n```text\nF-010\n→ STRUCTURAL AUDIT COMPLETE\n→ CLEANUP APPLIED\n→ POST-CLEANUP VALIDATION PENDING\n→ NOT RESOLVED\n\nF-006\n→ NOT TOUCHED BY THIS TRANSACTION\n```\n\nO fechamento de F-010 somente poderá ser adjudicado após recomputação da árvore, verificação de ausência dos 17 artefatos, Semantic, Mechanical e review repo-wide no novo head."
+          text = once(text, "Isso não encerra F-010 para as demais famílias.", audit_insert, "audit:f010-section")
           write(audit, text)
 
           state = "docs/project/current-state-register.md"
           text = read(state)
           text = once(text, "version: 3.5.0", "version: 3.6.0", "state:version")
           text = once(text, "last_updated: 2026-08-30", f"last_updated: {TODAY}", "state:date")
-          text = once(
-              text,
-              "→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO\n\nPRÓXIMO GATE DA AUDITORIA",
-              """→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
-
-F-010
-→ STRUCTURAL AUDIT COMPLETE
-→ CLEANUP APPLIED ON CLOSED 17-ARTIFACT SET
-→ POST-CLEANUP VALIDATION PENDING
-→ NOT RESOLVED
-→ DOES NOT AUTHORIZE F-006 OR DOWNSTREAM RELEASE
-
-PRÓXIMO GATE DA AUDITORIA""",
-              "state:f010",
-          )
+          state_new = "→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO\n\nF-010\n→ STRUCTURAL AUDIT COMPLETE\n→ CLEANUP APPLIED ON CLOSED 17-ARTIFACT SET\n→ POST-CLEANUP VALIDATION PENDING\n→ NOT RESOLVED\n→ DOES NOT AUTHORIZE F-006 OR DOWNSTREAM RELEASE\n\nPRÓXIMO GATE DA AUDITORIA"
+          text = once(text, "→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO\n\nPRÓXIMO GATE DA AUDITORIA", state_new, "state:f010")
           write(state, text)
 
           roadmap = "docs/roadmap.md"
@@ -200,18 +148,8 @@ PRÓXIMO GATE DA AUDITORIA""",
           text = once(text, "last_updated: 2026-08-30", f"last_updated: {TODAY}", "roadmap:date")
           text = once(text, "Este roadmap traduz `GKR-STATE-001 v3.5.0`", "Este roadmap traduz `GKR-STATE-001 v3.6.0`", "roadmap:state")
           anchor = "O próximo gate é a autorização humana separada e explícita para o cleanup físico de F-006; somente após eventual remoção/reconciliação, recomputação, validações e review no novo head poderá ocorrer a decisão de fechamento de F-006 e de G/H/I."
-          text = once(
-              text,
-              anchor,
-              anchor + "\n\nEm trilha independente, `F-010` concluiu a auditoria estrutural e teve cleanup aplicado sobre um conjunto fechado de 17 artefatos. Seu estado é `POST-CLEANUP VALIDATION PENDING / NOT RESOLVED`. Esse ato **não consome nem substitui a autorização separada exigida por F-006**, não libera J/K/L/M/N e não ativa UXA-102, Design/materialização ou Product Engineering.",
-              "roadmap:f010-paragraph",
-          )
-          text = once(
-              text,
-              "| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |",
-              "| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |\n| F-010 — cleanup transversal | **CLEANUP APPLIED / POST-CLEANUP VALIDATION PENDING / NOT RESOLVED** |",
-              "roadmap:f010-row",
-          )
+          text = once(text, anchor, anchor + "\n\nEm trilha independente, `F-010` concluiu a auditoria estrutural e teve cleanup aplicado sobre um conjunto fechado de 17 artefatos. Seu estado é `POST-CLEANUP VALIDATION PENDING / NOT RESOLVED`. Esse ato **não consome nem substitui a autorização separada exigida por F-006**, não libera J/K/L/M/N e não ativa UXA-102, Design/materialização ou Product Engineering.", "roadmap:f010-paragraph")
+          text = once(text, "| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |", "| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |\n| F-010 — cleanup transversal | **CLEANUP APPLIED / POST-CLEANUP VALIDATION PENDING / NOT RESOLVED** |", "roadmap:f010-row")
           write(roadmap, text)
 
           for path in deletions:
@@ -223,14 +161,9 @@ PRÓXIMO GATE DA AUDITORIA""",
           changed = set(subprocess.check_output(["git", "diff", "--name-only"], text=True).splitlines())
           if changed != expected_changed:
               raise SystemExit(f"CHANGED_SET_MISMATCH missing={sorted(expected_changed-changed)} extra={sorted(changed-expected_changed)}")
-
-          forbidden_names = {
-              "uxa-015-organization-overview-desktop.svg",
-              "uxa-016-collective-home-mobile.svg",
-          }
+          forbidden_names = {"uxa-015-organization-overview-desktop.svg", "uxa-016-collective-home-mobile.svg"}
           if any(Path(p).name in forbidden_names or "uxa-015" in Path(p).name or "uxa-016" in Path(p).name or "uxa-017" in Path(p).name or "uxa-018" in Path(p).name for p in changed):
               raise SystemExit("F006_TOUCHED")
-
           print(f"CLOSED_TRANSACTION_OK deletions=17 edits=14 total={len(changed)}")
           PY
 
@@ -252,37 +185,35 @@ PRÓXIMO GATE DA AUDITORIA""",
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           git commit -m "GKR: aplicar cleanup físico F-010 após prova estrutural"
-          new_sha="$(git rev-parse HEAD)"
-          new_tree="$(git rev-parse HEAD^{tree})"
-          echo "NEW_SHA=${new_sha}"
-          echo "NEW_TREE=${new_tree}"
-
-          changed_count="$(git diff --name-only "${TARGET_SHA}" HEAD | wc -l | tr -d ' ')"
-          test "${changed_count}" = "31"
-
-          for n in $(seq -w 3 17); do
-            test ! -e "docs/project/canonical-consolidation-matrix-cod-0${n}-submission-addendum.md" || exit 1
-          done
-          test ! -e docs/research/RP-002/pilot-operator-and-tool-registry.md
-          test ! -e docs/research/RP-002/pilot-participant-privacy-notice-and-consent-draft.md
-
-          for n in $(seq -w 3 17); do
-            token="GKR-CANON-MATRIX-COD-0${n}-SUBMISSION"
-            if git grep -n -F "${token}" HEAD -- .; then
-              echo "Dangling ${token}"
-              exit 1
-            fi
-          done
-
-          if git grep -n -F "RP-002-PILOT-NOTICE-CONSENT-001" HEAD -- .; then
-            echo "Dangling notice 001"
-            exit 1
-          fi
-
-          ops_hits="$(git grep -n -F "RP-002-PILOT-OPS-REG-001" HEAD -- . || true)"
-          test "$(printf '%s\n' "${ops_hits}" | sed '/^$/d' | wc -l | tr -d ' ')" = "1"
-          printf '%s\n' "${ops_hits}" | grep -F "pilot-operator-and-tool-registry-reconciliation.md"
-          printf '%s\n' "${ops_hits}" | grep -F "histórico Git"
+          echo "NEW_SHA=$(git rev-parse HEAD)"
+          echo "NEW_TREE=$(git rev-parse HEAD^{tree})"
+          test "$(git diff --name-only "${TARGET_SHA}" HEAD | wc -l | tr -d ' ')" = "31"
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          deleted = [*(f"docs/project/canonical-consolidation-matrix-cod-{n:03d}-submission-addendum.md" for n in range(3,18)), "docs/research/RP-002/pilot-operator-and-tool-registry.md", "docs/research/RP-002/pilot-participant-privacy-notice-and-consent-draft.md"]
+          if any(Path(p).exists() for p in deleted):
+              raise SystemExit("DELETION_CANDIDATE_PRESENT")
+          for n in range(3,18):
+              token = f"GKR-CANON-MATRIX-COD-{n:03d}-SUBMISSION"
+              p = subprocess.run(["git","grep","-n","-F",token,"HEAD","--","."], text=True, capture_output=True)
+              if p.returncode == 0 and p.stdout.strip():
+                  raise SystemExit(f"DANGLING {token}")
+              if p.returncode not in (0,1):
+                  raise SystemExit(f"GREP_ERROR {token}")
+          p = subprocess.run(["git","grep","-n","-F","RP-002-PILOT-NOTICE-CONSENT-001","HEAD","--","."], text=True, capture_output=True)
+          if p.returncode == 0 and p.stdout.strip():
+              raise SystemExit("DANGLING_NOTICE_001")
+          if p.returncode not in (0,1):
+              raise SystemExit("GREP_ERROR_NOTICE")
+          p = subprocess.run(["git","grep","-n","-F","RP-002-PILOT-OPS-REG-001","HEAD","--","."], text=True, capture_output=True)
+          lines = [x for x in p.stdout.splitlines() if x.strip()] if p.returncode == 0 else []
+          if p.returncode not in (0,1):
+              raise SystemExit("GREP_ERROR_OPS")
+          if len(lines) != 1 or "pilot-operator-and-tool-registry-reconciliation.md" not in lines[0] or "histórico Git" not in lines[0]:
+              raise SystemExit(f"OPS_001_PROVENANCE_NOT_EXACT {lines}")
+          print("POST_COMMIT_STRUCTURE_OK")
+          PY
 
       - name: Reconfirm remote head and push exact commit
         shell: bash
