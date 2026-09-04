@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.6.0
+version: 1.7.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-04
 normative: false
@@ -141,7 +141,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-007 | Major | contagens físicas de SVGs não representam maturidade vigente | `UPDATE` | **resolvido no Bloco I; instrumentos centrais separam inventário físico de maturidade** |
 | F-008 | Major | Estado Atual e Roadmap dependiam de reconciliação posterior | `UPDATE + CONSOLIDATE` | resolvido no Lote B |
 | F-009 | Major | autoridades O/C recentes não estavam absorvidas nas autoridades globais | `UPDATE` | absorção global concluída; MENU ainda pendente |
-| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `UPDATE + REMOVE_AFTER_ABSORPTION` | **auditoria estrutural concluída; cleanup aplicado no conjunto fechado de 17 artefatos; validação pós-cleanup pendente; não resolvido** |
+| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `RESOLVED` | **auditoria estrutural, cleanup, validação pós-cleanup e review independente concluídos; Codex indisponível por limite de uso, sem claim `CLEAN`** |
 | F-011 | Critical guardrail | nenhuma consolidação pode perder detalhe material | `KEEP_DETAIL` | regra ativa |
 | F-012 | Gate | primeira tela pós-Home da Pessoa depende do encerramento da auditoria | `BLOCK` | ativo |
 | F-013 | Major | Fundação antiga supercentralizava Oportunidade e antecedia distinção Possibilidade/Mecanismo/Oportunidade | `REBUILD + ENRICH` | reconciliado no Lote C |
@@ -671,18 +671,28 @@ A adjudicação estrutural posterior concluiu a varredura das famílias residuai
 
 A prova pré-delete foi executada sobre o checkpoint congelado `20ac46358f07513830e72745f998cb46ca7d4509` / tree `58b30bef8c01126c47a4c5f691bfbcfc7c4b44c3`: 1.390 blobs rastreados, 1.388 UTF-8 pesquisáveis, 443 hits externos classificados e **0 `UNCLASSIFIED`**. Os dois blobs não textuais eram archives ZIP históricos. Referências correntes aos intermediários `RP-002` foram reconciliadas com `RP-002-PILOT-OPS-REG-002` e `RP-002-PILOT-NOTICE-CONSENT-002` na mesma transação.
 
+O cleanup físico foi aplicado no commit `36f5b621f8a87ab06661a003a3d71d06fca13273`. O review independente pós-cleanup identificou uma única lacuna G6 de granularidade de proveniência no receiver `RP-002-PILOT-OPS-REG-002`; a fonte pública da política de privacidade da Hostinger, as jurisdições explicitadas e a ressalva sobre localização física exata foram absorvidas no commit `1041dee00f74b987b70e8f98235630938d060022`.
+
+No checkpoint remediado `1041dee00f74b987b70e8f98235630938d060022` / tree `3471df7298670d657e5994adf9a55aa17052a6a6`, a prova pós-delete read-only `F-010 Post-Cleanup Reference Proof #12` (`run 33924594719`) confirmou **17/17 artefatos ausentes**, 1.373 arquivos rastreados, 1.371 UTF-8 pesquisáveis e somente 2 hits fortes residuais: uma referência explícita de proveniência histórica ao ID removido e um falso positivo lexical de stem em navegação válida para o receiver reconciliado. Não há dependência funcional, autoridade corrente ou link quebrado para os artefatos removidos.
+
+Os gates do mesmo head retornaram `GKR Semantic State Validation #818 = SUCCESS` e `GKR Mechanical Validation #1076 = SUCCESS`. O review independente do delta terminou sem finding material aberto após a remediação. O review Codex foi solicitado, mas permaneceu **`UNAVAILABLE / NOT RUN` por limite de uso**; nenhuma claim de resultado Codex `CLEAN` é feita.
+
 ```text
 F-010
 → STRUCTURAL AUDIT COMPLETE
 → CLEANUP APPLIED
-→ POST-CLEANUP VALIDATION PENDING
-→ NOT RESOLVED
+→ POST-CLEANUP VALIDATION PASSED
+→ INDEPENDENT REVIEW COMPLETED
+→ OPEN MATERIAL FINDINGS = 0
+→ CODEX REVIEW UNAVAILABLE / NOT RUN (USAGE LIMIT)
+→ RESOLVED
 
 F-006
-→ NOT TOUCHED BY THIS TRANSACTION
+→ NOT TOUCHED BY F-010 CLEANUP/CLOSURE
+→ PHYSICAL REMOVAL NOT AUTHORIZED
 ```
 
-O fechamento de F-010 somente poderá ser adjudicado após recomputação da árvore, verificação de ausência dos 17 artefatos, Semantic, Mechanical e review repo-wide no novo head.
+O fechamento de F-010 é estritamente local ao finding. Ele não fecha F-006, não fecha G/H/I, não libera J/K/L/M/N, não inicia UXA-102/V5, não autoriza Design/materialização e não retoma Product Engineering.
 
 ## 13. Guardrail de detalhe e enriquecimento
 

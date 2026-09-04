@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.6.0** |
+| GKR-STATE-001 | **3.7.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -22,7 +22,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 OPEN** |
 | Próximo gate da auditoria | **AUTORIZAÇÃO HUMANA PARA CLEANUP FÍSICO DE F-006** |
 | F-007 | **RESOLVED — semantic/inventory scope** |
-| F-010 | **CLEANUP APPLIED · POST-CLEANUP VALIDATION PENDING · NOT RESOLVED** |
+| F-010 | **RESOLVED — cleanup e validação pós-cleanup concluídos** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
@@ -30,7 +30,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.6.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
+O [Roadmap 13.7.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
 
 ## Regra de leitura
 
@@ -321,7 +321,7 @@ Permanecem `NOT_CERTIFIED`: near-duplicates e totais agregados de wireframes vig
 
 `F-006` permanece `OPEN / CLEANUP_ELIGIBILITY_PROVEN / PHYSICAL_REMOVAL_NOT_AUTHORIZED`; nenhum `UXA-015..018` ou SVG associado possui remoção autorizada.
 
-`F-010` está em `CLEANUP APPLIED / POST-CLEANUP VALIDATION PENDING / NOT RESOLVED`; esse estado não altera a autorização separada exigida por F-006.
+`F-010` está `RESOLVED` após cleanup, prova pós-delete, validações e review independente; o review Codex permaneceu indisponível por limite de uso, sem claim `CLEAN`. Esse fechamento não altera a autorização separada exigida por F-006.
 
 ## Tecnologia e operação
 
@@ -378,8 +378,8 @@ DESIGN / MATERIALIZATION
 
 ## Navegação principal durante a auditoria
 
-- [Estado Atual 3.6.0](docs/project/current-state-register.md)
-- [Roadmap 13.6.0](docs/roadmap.md)
+- [Estado Atual 3.7.0](docs/project/current-state-register.md)
+- [Roadmap 13.7.0](docs/roadmap.md)
 - [Auditoria Integral do GKR](docs/project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](docs/project/gkr-specialized-homes-audit.md)
 - [Reconciliação das Homes Especializadas](docs/experience-architecture/public-specialized-homes-reconciliation.md)

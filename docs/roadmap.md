@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.6.0
+id: ROADMAP-13.7.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.6.0
+version: 13.7.0
 owner: Guivos
 last_updated: 2026-09-04
 normative: true
@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.6.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.7.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -55,7 +55,7 @@ O programa global vigente é a **Auditoria Integral do Guivos Knowledge Reposito
 
 Os Lotes A, B, C, D, E e F estão reconciliados no estado vigente. O Bloco 2 G/H/I já foi auditado/remediado no limite documental atual: G está `COMPLETED / UPDATE_APPLIED`; H e I estão `AUDITED / UPDATE_APPLIED` com `F-006 OPEN`; F-007 está resolvido no limite semântico/inventário. Em F-006, a absorção material foi aplicada, as dependências funcionais residuais foram reconciliadas e a elegibilidade documental de cleanup foi comprovada; a remoção física continua não autorizada. O próximo gate é a autorização humana separada e explícita para o cleanup físico de F-006; somente após eventual remoção/reconciliação, recomputação, validações e review no novo head poderá ocorrer a decisão de fechamento de F-006 e de G/H/I.
 
-Em trilha independente, `F-010` concluiu a auditoria estrutural e teve cleanup aplicado sobre um conjunto fechado de 17 artefatos. Seu estado é `POST-CLEANUP VALIDATION PENDING / NOT RESOLVED`. Esse ato **não consome nem substitui a autorização separada exigida por F-006**, não libera J/K/L/M/N e não ativa UXA-102, Design/materialização ou Product Engineering.
+Em trilha independente, `F-010` concluiu a auditoria estrutural, teve cleanup aplicado sobre o conjunto fechado de 17 artefatos, passou pela validação pós-cleanup e pelo review independente após a remediação final de absorção. `F-010 = RESOLVED`. O review Codex permaneceu `UNAVAILABLE / NOT RUN` por limite de uso e nenhuma claim `CLEAN` foi inferida. Esse fechamento **não consome nem substitui a autorização separada exigida por F-006**, não libera J/K/L/M/N e não ativa UXA-102, Design/materialização ou Product Engineering.
 
 Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Design ou implementação deve ser promovida como consequência automática de trabalho anterior.
 
@@ -64,7 +64,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.5.0** |
+| Estado global | **GKR-STATE-001 v3.7.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -83,7 +83,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; JOURNEY REMAINS DRAFT** |
 | Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 OPEN** |
 | Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |
-| F-010 — cleanup transversal | **CLEANUP APPLIED / POST-CLEANUP VALIDATION PENDING / NOT RESOLVED** |
+| F-010 — cleanup transversal | **RESOLVED — STRUCTURAL AUDIT / CLEANUP / POST-CLEANUP VALIDATION / INDEPENDENT REVIEW COMPLETE** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |

@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.6.0
+version: 3.7.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-04
 depends_on:
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.6.0
+→ 3.7.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -42,7 +42,7 @@ BLOCO 2 — G / H / I
 → F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
 
 F-010
-→ CLEANUP APPLIED / POST-CLEANUP VALIDATION PENDING / NOT RESOLVED
+→ RESOLVED / CLEANUP + POST-CLEANUP VALIDATION + INDEPENDENT REVIEW COMPLETE
 → F-006 E DOWNSTREAM NÃO LIBERADOS
 
 PRÓXIMO GATE DA AUDITORIA
@@ -184,7 +184,7 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.6.0** |
+| Registro do Estado Atual | **3.7.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
@@ -193,7 +193,7 @@ Ainda não são canônicos:
 | Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey remains draft** |
 | Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 OPEN** |
 | Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |
-| F-010 — cleanup transversal | **CLEANUP APPLIED / POST-CLEANUP VALIDATION PENDING / NOT RESOLVED** |
+| F-010 — cleanup transversal | **RESOLVED — CLEANUP / VALIDATION / INDEPENDENT REVIEW COMPLETE** |
 | Próximo gate | **AUTORIZAÇÃO HUMANA F-006 → REMOÇÃO/RECONCILIAÇÃO → RECOMPUTAÇÃO → VALIDAÇÕES/REVIEW → DECISÃO DE FECHAMENTO** |
 | J/K/L/M/N | **NOT RELEASED AUTOMATICALLY** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
