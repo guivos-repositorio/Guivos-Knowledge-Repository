@@ -1,0 +1,263 @@
+name: F-010 G3 Reference Proof
+
+on:
+  pull_request:
+    branches:
+      - agent/gkr-global-audit-block-2-ghi-v1
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  prove:
+    name: Prove complete F-010 reference scan
+    runs-on: ubuntu-latest
+    env:
+      TARGET_SHA: 20ac46358f07513830e72745f998cb46ca7d4509
+      TARGET_TREE: 58b30bef8c01126c47a4c5f691bfbcfc7c4b44c3
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify immutable target
+        shell: bash
+        run: |
+          set -euo pipefail
+          git cat-file -e "${TARGET_SHA}^{commit}"
+          actual_tree="$(git rev-parse "${TARGET_SHA}^{tree}")"
+          echo "TARGET_SHA=${TARGET_SHA}"
+          echo "EXPECTED_TREE=${TARGET_TREE}"
+          echo "ACTUAL_TREE=${actual_tree}"
+          test "${actual_tree}" = "${TARGET_TREE}"
+
+      - name: Scan every tracked UTF-8 blob in target object
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          import re
+          import subprocess
+          from pathlib import Path
+
+          target_sha = os.environ["TARGET_SHA"]
+          target_tree = os.environ["TARGET_TREE"]
+
+          candidates = []
+          for n in range(3, 18):
+              nn = f"{n:03d}"
+              stem = f"canonical-consolidation-matrix-cod-{nn}-submission-addendum"
+              candidates.append({
+                  "label": f"COD-{nn}",
+                  "path": f"docs/project/{stem}.md",
+                  "id": f"GKR-CANON-MATRIX-COD-{nn}-SUBMISSION",
+                  "short": f"COD-{nn}",
+              })
+          candidates += [
+              {
+                  "label": "RP-002-PILOT-OPS-REG-001",
+                  "path": "docs/research/RP-002/pilot-operator-and-tool-registry.md",
+                  "id": "RP-002-PILOT-OPS-REG-001",
+                  "short": None,
+              },
+              {
+                  "label": "RP-002-PILOT-NOTICE-CONSENT-001",
+                  "path": "docs/research/RP-002/pilot-participant-privacy-notice-and-consent-draft.md",
+                  "id": "RP-002-PILOT-NOTICE-CONSENT-001",
+                  "short": None,
+              },
+          ]
+
+          def run_bytes(*args):
+              return subprocess.check_output(args)
+
+          actual_tree = subprocess.check_output(
+              ["git", "rev-parse", f"{target_sha}^{{tree}}"], text=True
+          ).strip()
+          if actual_tree != target_tree:
+              raise SystemExit(f"TREE_MISMATCH expected={target_tree} actual={actual_tree}")
+
+          raw = run_bytes("git", "ls-tree", "-r", "-z", "--full-tree", target_sha)
+          entries = []
+          for record in raw.split(b"\0"):
+              if not record:
+                  continue
+              meta, path_b = record.split(b"\t", 1)
+              mode, obj_type, obj_sha = meta.decode("ascii").split()
+              path = path_b.decode("utf-8")
+              if obj_type == "blob":
+                  entries.append((path, obj_sha))
+
+          candidate_paths = {c["path"] for c in candidates}
+          hits = []
+          self_hit_lines = 0
+          text_blobs = 0
+          binary_or_non_utf8_blobs = 0
+          total_bytes = 0
+          text_bytes = 0
+          scanned_paths = []
+          skipped_paths = []
+
+          def yaml_contexts(lines):
+              contexts = [None] * len(lines)
+              if not lines or lines[0].strip() != "---":
+                  return contexts
+              active = None
+              in_front = True
+              for i in range(1, len(lines)):
+                  s = lines[i]
+                  if s.strip() == "---":
+                      in_front = False
+                      break
+                  if not in_front:
+                      break
+                  m = re.match(r"^([A-Za-z0-9_-]+)\s*:", s)
+                  if m:
+                      active = m.group(1)
+                  contexts[i] = active
+              return contexts
+
+          def inline_code_at(line, idx):
+              return line[:idx].count("`") % 2 == 1
+
+          for path, obj_sha in entries:
+              data = run_bytes("git", "cat-file", "blob", obj_sha)
+              total_bytes += len(data)
+              if b"\x00" in data:
+                  binary_or_non_utf8_blobs += 1
+                  skipped_paths.append(path)
+                  continue
+              try:
+                  text = data.decode("utf-8")
+              except UnicodeDecodeError:
+                  binary_or_non_utf8_blobs += 1
+                  skipped_paths.append(path)
+                  continue
+
+              text_blobs += 1
+              text_bytes += len(data)
+              scanned_paths.append(path)
+              lines = text.splitlines()
+              yctx = yaml_contexts(lines)
+
+              for cand in candidates:
+                  basename = Path(cand["path"]).name
+                  stem = Path(cand["path"]).stem
+                  pattern_map = {
+                      "A_FULL_PATH": cand["path"],
+                      "B_BASENAME": basename,
+                      "C_STEM": stem,
+                      "D_DOCUMENT_ID": cand["id"],
+                  }
+                  if cand.get("short"):
+                      pattern_map["E_SHORT_IDENTIFIER"] = cand["short"]
+
+                  for lineno, line in enumerate(lines, 1):
+                      matched = []
+                      first_index = None
+                      for kind, pattern in pattern_map.items():
+                          idx = line.find(pattern)
+                          if idx >= 0:
+                              matched.append(kind)
+                              if first_index is None or idx < first_index:
+                                  first_index = idx
+                      if not matched:
+                          continue
+
+                      if path == cand["path"]:
+                          self_hit_lines += 1
+                          continue
+
+                      syntactic = []
+                      ctx = yctx[lineno - 1]
+                      if ctx == "related":
+                          syntactic.append("G_YAML_RELATED")
+                      elif ctx == "depends_on":
+                          syntactic.append("H_YAML_DEPENDS_ON")
+                      elif ctx == "parent":
+                          syntactic.append("I_YAML_PARENT")
+                      elif ctx == "supports":
+                          syntactic.append("J_YAML_SUPPORTS")
+
+                      if "](" in line:
+                          syntactic.append("F_MARKDOWN_LINK_TARGET_POSSIBLE")
+                      if first_index is not None and inline_code_at(line, first_index):
+                          syntactic.append("K_INLINE_CODE")
+                      if path == "mkdocs.yml":
+                          syntactic.append("NAVIGATION_CONFIG")
+                      if not syntactic:
+                          syntactic.append("L_TEXTUAL_PROVENANCE_OR_CONTEXT")
+
+                      hits.append({
+                          "candidate": cand["label"],
+                          "candidate_path": cand["path"],
+                          "path": path,
+                          "line": lineno,
+                          "matched_pattern_kinds": sorted(set(matched)),
+                          "syntactic_context": sorted(set(syntactic)),
+                          "text": line.strip(),
+                      })
+
+          hits.sort(key=lambda h: (h["candidate"], h["path"], h["line"]))
+          summary = {
+              "proof_version": 1,
+              "target_sha": target_sha,
+              "target_tree": target_tree,
+              "candidate_count": len(candidates),
+              "candidate_paths": [c["path"] for c in candidates],
+              "tracked_blob_count": len(entries),
+              "text_blob_count": text_blobs,
+              "binary_or_non_utf8_blob_count": binary_or_non_utf8_blobs,
+              "total_bytes": total_bytes,
+              "text_bytes_scanned": text_bytes,
+              "external_hit_count": len(hits),
+              "self_hit_line_count_excluded": self_hit_lines,
+              "scan_errors": 0,
+              "scanned_path_manifest_sha256": hashlib.sha256(
+                  "\n".join(sorted(scanned_paths)).encode("utf-8")
+              ).hexdigest(),
+              "skipped_paths": sorted(skipped_paths),
+          }
+
+          payload = {"summary": summary, "hits": hits}
+          canonical = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+          proof_sha256 = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+          payload["summary"]["proof_payload_sha256"] = proof_sha256
+
+          out_json = "/tmp/f010-g3-proof.json"
+          out_jsonl = "/tmp/f010-g3-hits.jsonl"
+          with open(out_json, "w", encoding="utf-8") as f:
+              json.dump(payload, f, ensure_ascii=False, indent=2, sort_keys=True)
+              f.write("\n")
+          with open(out_jsonl, "w", encoding="utf-8") as f:
+              for hit in hits:
+                  f.write(json.dumps(hit, ensure_ascii=False, sort_keys=True) + "\n")
+
+          print("F010_G3_PROOF_SUMMARY=" + json.dumps(summary, ensure_ascii=False, sort_keys=True))
+          print("F010_G3_HITS_BEGIN")
+          for hit in hits:
+              print(json.dumps(hit, ensure_ascii=False, sort_keys=True))
+          print("F010_G3_HITS_END")
+
+          if len(candidates) != 17:
+              raise SystemExit("CANDIDATE_COUNT_MISMATCH")
+          if summary["scan_errors"] != 0:
+              raise SystemExit("SCAN_ERRORS_PRESENT")
+          if not scanned_paths:
+              raise SystemExit("EMPTY_TEXT_SCAN")
+          PY
+
+      - name: Upload proof artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: f010-g3-reference-proof
+          path: |
+            /tmp/f010-g3-proof.json
+            /tmp/f010-g3-hits.jsonl
+          if-no-files-found: error
+          retention-days: 7
