@@ -1,4 +1,4 @@
-name: F-010 Post-Cleanup Reference Proof
+name: F-010 Closure Apply
 
 on:
   pull_request:
@@ -6,25 +6,25 @@ on:
       - agent/gkr-global-audit-block-2-ghi-v1
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  proof:
+  close-f010:
     if: ${{ github.event.pull_request.number == 364 }}
-    name: Verify F-010 cleanup on frozen post-cleanup head
+    name: Apply F-010 closure state atomically
     runs-on: ubuntu-latest
     env:
       TARGET_BRANCH: agent/gkr-global-audit-block-2-ghi-v1
       TARGET_SHA: 1041dee00f74b987b70e8f98235630938d060022
       TARGET_TREE: 3471df7298670d657e5994adf9a55aa17052a6a6
     steps:
-      - name: Checkout governed post-cleanup head
+      - name: Checkout governed target branch
         uses: actions/checkout@v4
         with:
           ref: agent/gkr-global-audit-block-2-ghi-v1
           fetch-depth: 0
 
-      - name: Guard exact post-cleanup checkpoint
+      - name: Guard exact reviewed checkpoint
         shell: bash
         run: |
           set -euo pipefail
@@ -34,79 +34,176 @@ jobs:
           echo "REMOTE_HEAD=${remote_head}"
           test "${remote_head}" = "${TARGET_SHA}"
 
-      - name: Verify deletion set and scan strong references
+      - name: Apply closed six-file F-010 closure transaction
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
-          import json
           import subprocess
 
-          deletions = [
-              *(f"docs/project/canonical-consolidation-matrix-cod-{n:03d}-submission-addendum.md" for n in range(3, 18)),
-              "docs/research/RP-002/pilot-operator-and-tool-registry.md",
-              "docs/research/RP-002/pilot-participant-privacy-notice-and-consent-draft.md",
-          ]
-          doc_ids = [
-              *(f"GKR-CANON-MATRIX-COD-{n:03d}-SUBMISSION" for n in range(3, 18)),
-              "RP-002-PILOT-OPS-REG-001",
-              "RP-002-PILOT-NOTICE-CONSENT-001",
-          ]
+          expected = {
+              "README.md",
+              "docs/index.md",
+              "docs/experience-architecture/uxa-047-101-index.md",
+              "docs/project/current-state-register.md",
+              "docs/project/gkr-full-corpus-audit.md",
+              "docs/roadmap.md",
+          }
 
-          tracked = subprocess.check_output(["git", "ls-files", "-z"]).decode().split("\0")
-          tracked = [p for p in tracked if p]
-          tracked_set = set(tracked)
-          present = [p for p in deletions if p in tracked_set]
-          if present:
-              raise SystemExit("DELETION_SET_STILL_PRESENT=" + json.dumps(present, ensure_ascii=False))
+          def read(path):
+              return Path(path).read_text(encoding="utf-8")
 
-          needles = []
-          for p, doc_id in zip(deletions, doc_ids):
-              path = Path(p)
-              needles.extend([
-                  ("full_path", p),
-                  ("basename", path.name),
-                  ("stem", path.stem),
-                  ("document_id", doc_id),
-              ])
+          def write(path, text):
+              Path(path).write_text(text, encoding="utf-8")
 
-          hits = []
-          utf8_files = 0
-          non_utf8 = []
-          for file_path in tracked:
-              raw = Path(file_path).read_bytes()
-              try:
-                  text = raw.decode("utf-8")
-              except UnicodeDecodeError:
-                  non_utf8.append(file_path)
-                  continue
-              utf8_files += 1
-              for kind, needle in needles:
-                  if needle in text:
-                      for lineno, line in enumerate(text.splitlines(), 1):
-                          if needle in line:
-                              hits.append({
-                                  "file": file_path,
-                                  "line": lineno,
-                                  "kind": kind,
-                                  "needle": needle,
-                                  "text": line.strip()[:500],
-                              })
+          def once(text, old, new, label):
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f"EXPECTED_ONE {label} count={count}")
+              return text.replace(old, new, 1)
 
-          print(f"TRACKED_FILES={len(tracked)}")
-          print(f"UTF8_FILES={utf8_files}")
-          print(f"NON_UTF8_FILES={len(non_utf8)}")
-          for p in non_utf8:
-              print(f"NON_UTF8={p}")
-          print("DELETION_SET_ABSENT=17/17")
-          print(f"STRONG_REFERENCE_HITS={len(hits)}")
-          print("HITS_JSON_BEGIN")
-          print(json.dumps(hits, ensure_ascii=False, indent=2))
-          print("HITS_JSON_END")
+          def block(lines):
+              return "\n".join(lines)
+
+          # Current State
+          path = "docs/project/current-state-register.md"
+          text = read(path)
+          text = once(text, "version: 3.6.0", "version: 3.7.0", "state-version")
+          old = block([
+              "F-010",
+              "→ STRUCTURAL AUDIT COMPLETE",
+              "→ CLEANUP APPLIED ON CLOSED 17-ARTIFACT SET",
+              "→ POST-CLEANUP VALIDATION PENDING",
+              "→ NOT RESOLVED",
+              "→ DOES NOT AUTHORIZE F-006 OR DOWNSTREAM RELEASE",
+          ])
+          new = block([
+              "F-010",
+              "→ STRUCTURAL AUDIT COMPLETE",
+              "→ CLEANUP APPLIED ON CLOSED 17-ARTIFACT SET",
+              "→ POST-CLEANUP VALIDATION PASSED",
+              "→ INDEPENDENT REVIEW COMPLETED / NO OPEN MATERIAL FINDING",
+              "→ CODEX REVIEW UNAVAILABLE / NOT RUN (USAGE LIMIT)",
+              "→ RESOLVED",
+              "→ DOES NOT AUTHORIZE F-006 OR DOWNSTREAM RELEASE",
+          ])
+          text = once(text, old, new, "state-f010")
+          write(path, text)
+
+          # Roadmap
+          path = "docs/roadmap.md"
+          text = read(path)
+          text = once(text, "id: ROADMAP-13.6.0", "id: ROADMAP-13.7.0", "roadmap-id")
+          text = once(text, "version: 13.6.0", "version: 13.7.0", "roadmap-version")
+          text = once(text, "Este roadmap traduz `GKR-STATE-001 v3.6.0`", "Este roadmap traduz `GKR-STATE-001 v3.7.0`", "roadmap-state-prose")
+          text = once(text, "| Estado global | **GKR-STATE-001 v3.5.0** |", "| Estado global | **GKR-STATE-001 v3.7.0** |", "roadmap-stale-state-row")
+          old = "Em trilha independente, `F-010` concluiu a auditoria estrutural e teve cleanup aplicado sobre um conjunto fechado de 17 artefatos. Seu estado é `POST-CLEANUP VALIDATION PENDING / NOT RESOLVED`. Esse ato **não consome nem substitui a autorização separada exigida por F-006**, não libera J/K/L/M/N e não ativa UXA-102, Design/materialização ou Product Engineering."
+          new = "Em trilha independente, `F-010` concluiu a auditoria estrutural, teve cleanup aplicado sobre o conjunto fechado de 17 artefatos, passou pela validação pós-cleanup e pelo review independente após a remediação final de absorção. `F-010 = RESOLVED`. O review Codex permaneceu `UNAVAILABLE / NOT RUN` por limite de uso e nenhuma claim `CLEAN` foi inferida. Esse fechamento **não consome nem substitui a autorização separada exigida por F-006**, não libera J/K/L/M/N e não ativa UXA-102, Design/materialização ou Product Engineering."
+          text = once(text, old, new, "roadmap-f010-prose")
+          text = once(
+              text,
+              "| F-010 — cleanup transversal | **CLEANUP APPLIED / POST-CLEANUP VALIDATION PENDING / NOT RESOLVED** |",
+              "| F-010 — cleanup transversal | **RESOLVED — STRUCTURAL AUDIT / CLEANUP / POST-CLEANUP VALIDATION / INDEPENDENT REVIEW COMPLETE** |",
+              "roadmap-f010-row",
+          )
+          write(path, text)
+
+          # Full-corpus audit
+          path = "docs/project/gkr-full-corpus-audit.md"
+          text = read(path)
+          text = once(text, "version: 1.6.0", "version: 1.7.0", "audit-version")
+          old_row = "| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `UPDATE + REMOVE_AFTER_ABSORPTION` | **auditoria estrutural concluída; cleanup aplicado no conjunto fechado de 17 artefatos; validação pós-cleanup pendente; não resolvido** |"
+          new_row = "| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `RESOLVED` | **auditoria estrutural, cleanup, validação pós-cleanup e review independente concluídos; Codex indisponível por limite de uso, sem claim `CLEAN`** |"
+          text = once(text, old_row, new_row, "audit-f010-row")
+          old = block([
+              "```text",
+              "F-010",
+              "→ STRUCTURAL AUDIT COMPLETE",
+              "→ CLEANUP APPLIED",
+              "→ POST-CLEANUP VALIDATION PENDING",
+              "→ NOT RESOLVED",
+              "",
+              "F-006",
+              "→ NOT TOUCHED BY THIS TRANSACTION",
+              "```",
+              "",
+              "O fechamento de F-010 somente poderá ser adjudicado após recomputação da árvore, verificação de ausência dos 17 artefatos, Semantic, Mechanical e review repo-wide no novo head.",
+          ])
+          new = block([
+              "O cleanup físico foi aplicado no commit `36f5b621f8a87ab06661a003a3d71d06fca13273`. O review independente pós-cleanup identificou uma única lacuna G6 de granularidade de proveniência no receiver `RP-002-PILOT-OPS-REG-002`; a fonte pública da política de privacidade da Hostinger, as jurisdições explicitadas e a ressalva sobre localização física exata foram absorvidas no commit `1041dee00f74b987b70e8f98235630938d060022`.",
+              "",
+              "No checkpoint remediado `1041dee00f74b987b70e8f98235630938d060022` / tree `3471df7298670d657e5994adf9a55aa17052a6a6`, a prova pós-delete read-only `F-010 Post-Cleanup Reference Proof #12` (`run 33924594719`) confirmou **17/17 artefatos ausentes**, 1.373 arquivos rastreados, 1.371 UTF-8 pesquisáveis e somente 2 hits fortes residuais: uma referência explícita de proveniência histórica ao ID removido e um falso positivo lexical de stem em navegação válida para o receiver reconciliado. Não há dependência funcional, autoridade corrente ou link quebrado para os artefatos removidos.",
+              "",
+              "Os gates do mesmo head retornaram `GKR Semantic State Validation #818 = SUCCESS` e `GKR Mechanical Validation #1076 = SUCCESS`. O review independente do delta terminou sem finding material aberto após a remediação. O review Codex foi solicitado, mas permaneceu **`UNAVAILABLE / NOT RUN` por limite de uso**; nenhuma claim de resultado Codex `CLEAN` é feita.",
+              "",
+              "```text",
+              "F-010",
+              "→ STRUCTURAL AUDIT COMPLETE",
+              "→ CLEANUP APPLIED",
+              "→ POST-CLEANUP VALIDATION PASSED",
+              "→ INDEPENDENT REVIEW COMPLETED",
+              "→ OPEN MATERIAL FINDINGS = 0",
+              "→ CODEX REVIEW UNAVAILABLE / NOT RUN (USAGE LIMIT)",
+              "→ RESOLVED",
+              "",
+              "F-006",
+              "→ NOT TOUCHED BY F-010 CLEANUP/CLOSURE",
+              "→ PHYSICAL REMOVAL NOT AUTHORIZED",
+              "```",
+              "",
+              "O fechamento de F-010 é estritamente local ao finding. Ele não fecha F-006, não fecha G/H/I, não libera J/K/L/M/N, não inicia UXA-102/V5, não autoriza Design/materialização e não retoma Product Engineering.",
+          ])
+          text = once(text, old, new, "audit-f010-close")
+          write(path, text)
+
+          # README
+          path = "README.md"
+          text = read(path)
+          text = once(text, "| GKR-STATE-001 | **3.6.0** |", "| GKR-STATE-001 | **3.7.0** |", "readme-state-row")
+          text = once(text, "| F-010 | **CLEANUP APPLIED · POST-CLEANUP VALIDATION PENDING · NOT RESOLVED** |", "| F-010 | **RESOLVED — cleanup e validação pós-cleanup concluídos** |", "readme-f010-row")
+          text = text.replace("Roadmap 13.6.0", "Roadmap 13.7.0")
+          text = once(text, "Estado Atual 3.6.0", "Estado Atual 3.7.0", "readme-state-link")
+          text = once(text, "`F-010` está em `CLEANUP APPLIED / POST-CLEANUP VALIDATION PENDING / NOT RESOLVED`; esse estado não altera a autorização separada exigida por F-006.", "`F-010` está `RESOLVED` após cleanup, prova pós-delete, validações e review independente; o review Codex permaneceu indisponível por limite de uso, sem claim `CLEAN`. Esse fechamento não altera a autorização separada exigida por F-006.", "readme-f010-prose")
+          write(path, text)
+
+          # docs/index
+          path = "docs/index.md"
+          text = read(path)
+          text = once(text, "| Registro | `GKR-STATE-001` **3.6.0** |", "| Registro | `GKR-STATE-001` **3.7.0** |", "index-state-row")
+          text = once(text, "| F-010 | **CLEANUP APPLIED · POST-CLEANUP VALIDATION PENDING · NOT RESOLVED** |", "| F-010 | **RESOLVED — cleanup e validação pós-cleanup concluídos** |", "index-f010-row")
+          text = text.replace("Roadmap 13.6.0", "Roadmap 13.7.0")
+          text = once(text, "Registro do Estado Atual 3.6.0", "Registro do Estado Atual 3.7.0", "index-state-link")
+          text = once(text, "`F-010` está em `CLEANUP APPLIED / POST-CLEANUP VALIDATION PENDING / NOT RESOLVED`; esse estado não altera a autorização separada exigida por F-006.", "`F-010` está `RESOLVED` após cleanup, prova pós-delete, validações e review independente; o review Codex permaneceu indisponível por limite de uso, sem claim `CLEAN`. Esse fechamento não altera a autorização separada exigida por F-006.", "index-f010-prose")
+          write(path, text)
+
+          # UXA index / semantic propagation surface
+          path = "docs/experience-architecture/uxa-047-101-index.md"
+          text = read(path)
+          text = once(text, "version: 3.6.0", "version: 3.7.0", "uxa-index-version")
+          text = once(text, "GKR-STATE-001\n→ 3.6.0", "GKR-STATE-001\n→ 3.7.0", "uxa-index-state-block")
+          text = once(text, "→ CLEANUP APPLIED / POST-CLEANUP VALIDATION PENDING / NOT RESOLVED", "→ RESOLVED / CLEANUP + POST-CLEANUP VALIDATION + INDEPENDENT REVIEW COMPLETE", "uxa-index-f010-block")
+          text = once(text, "| Registro do Estado Atual | **3.6.0** |", "| Registro do Estado Atual | **3.7.0** |", "uxa-index-state-row")
+          text = once(text, "| F-010 — cleanup transversal | **CLEANUP APPLIED / POST-CLEANUP VALIDATION PENDING / NOT RESOLVED** |", "| F-010 — cleanup transversal | **RESOLVED — CLEANUP / VALIDATION / INDEPENDENT REVIEW COMPLETE** |", "uxa-index-f010-row")
+          write(path, text)
+
+          changed = set(subprocess.check_output(["git", "diff", "--name-only"], text=True).splitlines())
+          if changed != expected:
+              raise SystemExit(f"CHANGED_SET_MISMATCH missing={sorted(expected-changed)} extra={sorted(changed-expected)}")
+
+          forbidden = [p for p in changed if any(token in p for token in ("uxa-015", "uxa-016", "uxa-017", "uxa-018"))]
+          if forbidden:
+              raise SystemExit(f"F006_TOUCHED {forbidden}")
+
+          for path in expected:
+              text = read(path)
+              if "POST-CLEANUP VALIDATION PENDING" in text:
+                  raise SystemExit(f"STALE_F010_PENDING {path}")
+
+          print("F010_CLOSURE_TRANSACTION_OK files=6")
           PY
 
-      - name: Re-run repository validators read-only
+      - name: Validate closure working tree
         shell: bash
         run: |
           set -euo pipefail
@@ -114,4 +211,26 @@ jobs:
           python scripts/validate_semantic_state.py
           python scripts/validate_gkr.py
           python scripts/validate_legacy_nomenclature.py
-          mkdocs build --strict --site-dir /tmp/f010-post-cleanup-site
+          git diff --check
+          mkdocs build --strict --site-dir /tmp/f010-closure-site
+
+      - name: Commit and verify closure delta
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "GKR: adjudicar fechamento F-010 após validação e review"
+          test "$(git diff --name-only HEAD^ HEAD | wc -l | tr -d ' ')" = "6"
+          echo "NEW_SHA=$(git rev-parse HEAD)"
+          echo "NEW_TREE=$(git rev-parse 'HEAD^{tree}')"
+
+      - name: Reconfirm remote head and push exact closure commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          remote_head="$(git ls-remote origin "refs/heads/${TARGET_BRANCH}" | awk '{print $1}')"
+          echo "REMOTE_HEAD_BEFORE_PUSH=${remote_head}"
+          test "${remote_head}" = "${TARGET_SHA}"
+          git push origin "HEAD:refs/heads/${TARGET_BRANCH}"
