@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.5.0
+version: 3.6.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-04
 normative: true
 maturity: current_truth_under_full_corpus_audit
 related:
@@ -70,6 +70,13 @@ BLOCO 2 — G / H / I
 → H AUDITED / UPDATE_APPLIED / F-006 OPEN
 → I AUDITED / UPDATE_APPLIED / F-006 OPEN
 → F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+F-010
+→ STRUCTURAL AUDIT COMPLETE
+→ CLEANUP APPLIED ON CLOSED 17-ARTIFACT SET
+→ POST-CLEANUP VALIDATION PENDING
+→ NOT RESOLVED
+→ DOES NOT AUTHORIZE F-006 OR DOWNSTREAM RELEASE
 
 PRÓXIMO GATE DA AUDITORIA
 → AUTORIZAÇÃO HUMANA SEPARADA PARA CLEANUP FÍSICO DE F-006

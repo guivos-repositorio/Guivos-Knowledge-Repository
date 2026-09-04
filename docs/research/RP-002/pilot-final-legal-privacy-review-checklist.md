@@ -2,9 +2,9 @@
 id: RP-002-PILOT-FINAL-LEGAL-PRIVACY-REVIEW-001
 title: Piloto — Checklist A12 de Revisão Jurídica e Privacidade Final
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Guivos Research
-last_updated: 2026-08-27
+last_updated: 2026-09-04
 normative: false
 parent: RP-002
 maturity: review_checklist_ready_not_executed
@@ -14,7 +14,7 @@ related:
   - RP-002-PILOT-NOTICE-CONSENT-FLOW-DEC-001
   - RP-002-PILOT-RETENTION-DEC-001
   - RP-002-PILOT-NOTICE-CONSENT-002
-  - RP-002-PILOT-OPS-REG-001
+  - RP-002-PILOT-OPS-REG-002
 ---
 
 # Piloto — Checklist A12 de Revisão Jurídica e Privacidade Final

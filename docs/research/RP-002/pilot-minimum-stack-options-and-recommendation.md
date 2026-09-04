@@ -2,17 +2,17 @@
 id: RP-002-PILOT-STACK-PROP-001
 title: Piloto — Stack Mínimo do Primeiro Dry Run — Opções e Recomendação
 status: draft
-version: 0.1.0
+version: 0.1.1
 owner: Guivos Research
-last_updated: 2026-08-27
+last_updated: 2026-09-04
 normative: false
 parent: RP-002
 maturity: proposed_not_approved
 related:
   - RP-002-PILOT-OP-001
   - RP-002-PILOT-DATA-LAW-001
-  - RP-002-PILOT-OPS-REG-001
-  - RP-002-PILOT-NOTICE-CONSENT-001
+  - RP-002-PILOT-OPS-REG-002
+  - RP-002-PILOT-NOTICE-CONSENT-002
 ---
 
 # Piloto — Stack Mínimo do Primeiro Dry Run — Opções e Recomendação

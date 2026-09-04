@@ -2,9 +2,9 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-04
 normative: false
 maturity: audit_in_progress
 baseline_sha: a05a54071414086456877ee4d0de59c59eefed0a
@@ -141,7 +141,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-007 | Major | contagens físicas de SVGs não representam maturidade vigente | `UPDATE` | **resolvido no Bloco I; instrumentos centrais separam inventário físico de maturidade** |
 | F-008 | Major | Estado Atual e Roadmap dependiam de reconciliação posterior | `UPDATE + CONSOLIDATE` | resolvido no Lote B |
 | F-009 | Major | autoridades O/C recentes não estavam absorvidas nas autoridades globais | `UPDATE` | absorção global concluída; MENU ainda pendente |
-| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `HOLD_REVIEW` | aberto; overlays pós-313 testados/reconciliados no Bloco H, demais famílias pendentes |
+| F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `UPDATE + REMOVE_AFTER_ABSORPTION` | **auditoria estrutural concluída; cleanup aplicado no conjunto fechado de 17 artefatos; validação pós-cleanup pendente; não resolvido** |
 | F-011 | Critical guardrail | nenhuma consolidação pode perder detalhe material | `KEEP_DETAIL` | regra ativa |
 | F-012 | Gate | primeira tela pós-Home da Pessoa depende do encerramento da auditoria | `BLOCK` | ativo |
 | F-013 | Major | Fundação antiga supercentralizava Oportunidade e antecedia distinção Possibilidade/Mecanismo/Oportunidade | `REBUILD + ENRICH` | reconciliado no Lote C |
@@ -665,7 +665,24 @@ No Bloco H, dois membros dessa família foram testados diretamente:
 - `GKR-ORGCOL-POST313-RECON-001` — **KEEP + UPDATE**, com função normativa restrita à supersessão pós-313 e prevenção de regressão;
 - `GKR-UX-ORGCOL-DERIVED-AUDIT-001` — **EVIDENCE_KEEP + UPDATE**, como evidência da deriva e de sua normalização.
 
-Isso não encerra F-010 para as demais famílias.
+Esse resultado do Bloco H não encerrava F-010 para as demais famílias.
+
+A adjudicação estrutural posterior concluiu a varredura das famílias residuais. Os snapshots e addenda que preservam função documental, evidência ou proveniência permanecem no corpus; o conjunto físico de remoção foi fechado em **17 artefatos** — quinze addenda intermediários de submissão `COD-003..017` e dois intermediários do `RP-002` já absorvidos por autoridades posteriores.
+
+A prova pré-delete foi executada sobre o checkpoint congelado `20ac46358f07513830e72745f998cb46ca7d4509` / tree `58b30bef8c01126c47a4c5f691bfbcfc7c4b44c3`: 1.390 blobs rastreados, 1.388 UTF-8 pesquisáveis, 443 hits externos classificados e **0 `UNCLASSIFIED`**. Os dois blobs não textuais eram archives ZIP históricos. Referências correntes aos intermediários `RP-002` foram reconciliadas com `RP-002-PILOT-OPS-REG-002` e `RP-002-PILOT-NOTICE-CONSENT-002` na mesma transação.
+
+```text
+F-010
+→ STRUCTURAL AUDIT COMPLETE
+→ CLEANUP APPLIED
+→ POST-CLEANUP VALIDATION PENDING
+→ NOT RESOLVED
+
+F-006
+→ NOT TOUCHED BY THIS TRANSACTION
+```
+
+O fechamento de F-010 somente poderá ser adjudicado após recomputação da árvore, verificação de ausência dos 17 artefatos, Semantic, Mechanical e review repo-wide no novo head.
 
 ## 13. Guardrail de detalhe e enriquecimento
 

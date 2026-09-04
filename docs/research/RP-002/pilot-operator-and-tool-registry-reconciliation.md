@@ -2,14 +2,13 @@
 id: RP-002-PILOT-OPS-REG-002
 title: Piloto — Reconciliação do Registro de Operadores, Ferramentas e Fluxos
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Guivos Research
-last_updated: 2026-08-27
+last_updated: 2026-09-04
 normative: false
 parent: RP-002
 maturity: documentary_target_registry_reconciled_pre_configuration
 related:
-  - RP-002-PILOT-OPS-REG-001
   - RP-002-PILOT-DOC-CLOSE-001
   - RP-002-PILOT-RESEARCH-MAILBOX-DEC-001
   - RP-002-PILOT-IDENTITY-VAULT-DEC-001
@@ -23,9 +22,9 @@ related:
 
 ## 1. Finalidade
 
-Este documento reconcilia o `RP-002-PILOT-OPS-REG-001` com as decisões documentais posteriores do stack.
+Este documento reconcilia o registro histórico `RP-002-PILOT-OPS-REG-001`, removido do corpus corrente após absorção e preservado no histórico Git, com as decisões documentais posteriores do stack.
 
-O registro anterior permanece como histórico do momento em que vários componentes estavam `TBD`. Para o estado documental atual, este documento prevalece quando houver divergência de status-alvo.
+O registro anterior permanece recuperável no histórico Git como evidência do momento em que vários componentes estavam `TBD`. No corpus corrente, este documento é a autoridade documental de reconciliação e prevalece quando houver divergência de status-alvo.
 
 Regra preservada:
 
