@@ -2,7 +2,7 @@
 id: RP-002-PILOT-OPS-REG-002
 title: Piloto — Reconciliação do Registro de Operadores, Ferramentas e Fluxos
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Guivos Research
 last_updated: 2026-09-04
 normative: false
@@ -94,6 +94,23 @@ O canal de Research passou por teste end-to-end e A1 está em `PASS`. Os canais 
 Fonte pública já registrada no GKR:
 
 <https://www.hostinger.com/br/legal/dpa>
+
+### Proveniência da transferência internacional
+
+A política de privacidade pública da Hostinger registra que informações pessoais podem ser mantidas, processadas ou armazenadas no **Reino Unido, Países Baixos, Lituânia, Chipre e outras jurisdições** quando necessário à prestação dos serviços.
+
+Fonte oficial preservada da verificação documental:
+
+<https://www.hostinger.com/br/legal/politica-de-privacidade>
+
+Essa evidência sustenta a classificação documental:
+
+```text
+INTERNATIONAL TRANSFER
+→ POSSIBLE / MATERIAL
+```
+
+A enumeração de jurisdições é evidência de proveniência da política do fornecedor e **não afirma a localização física exata de uma mensagem ou mailbox individual**.
 
 ## 4. Recrutamento / formulário
 
