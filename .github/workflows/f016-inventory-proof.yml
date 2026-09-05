@@ -1,0 +1,135 @@
+name: F-016 Read-Only Materialization Inventory
+
+on:
+  push:
+    branches:
+      - agent/gkr-f016-inventory-proof-v1
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 549fe10bb7d21eb38961fa9b611e68c53b43f1db
+          fetch-depth: 1
+
+      - name: Build full-corpus F-016 inventory
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import collections, re, subprocess
+
+          target='549fe10bb7d21eb38961fa9b611e68c53b43f1db'
+          actual=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          if actual != target:
+              raise SystemExit(f'WRONG_HEAD={actual}')
+
+          tracked=[x.decode() for x in subprocess.check_output(['git','ls-files','-z']).split(b'\0') if x]
+          text_files=[]
+          for rel in tracked:
+              p=Path(rel)
+              try:
+                  txt=p.read_text(encoding='utf-8')
+              except (UnicodeDecodeError,IsADirectoryError):
+                  continue
+              text_files.append((rel,txt))
+
+          visual_assets=[]
+          for rel in tracked:
+              low=rel.lower()
+              if rel.startswith('docs/assets/') and Path(rel).suffix.lower() in {'.svg','.png','.jpg','.jpeg','.webp','.gif'}:
+                  visual_assets.append(rel)
+
+          wireframe_assets=[x for x in visual_assets if x.startswith('docs/assets/wireframes/')]
+
+          path_terms=('wireframe','mockup','prototype','screen-gallery','screen_gallery','gallery','layout')
+          markdown_path_candidates=[rel for rel,_ in text_files if rel.endswith('.md') and any(t in rel.lower() for t in path_terms)]
+
+          asset_ref_files=[]
+          asset_ref_lines=0
+          term_stats=collections.Counter()
+          scored=[]
+          terms={
+            'wireframe':5,
+            'mockup':5,
+            'prototype':5,
+            'protótipo':5,
+            'low-fidelity':4,
+            'low fidelity':4,
+            'screen gallery':4,
+            'screen-gallery':4,
+            'materialização':3,
+            'materialization':3,
+            'layout':2,
+            'composição visual':2,
+            'visual composition':2,
+          }
+
+          for rel,txt in text_files:
+              low=txt.lower()
+              refs=low.count('docs/assets/wireframes/') + low.count('../assets/wireframes/') + low.count('/assets/wireframes/')
+              if refs:
+                  asset_ref_files.append((rel,refs))
+                  asset_ref_lines += sum(1 for line in low.splitlines() if 'assets/wireframes/' in line)
+              if not rel.endswith('.md'):
+                  continue
+              score=0
+              pathlow=rel.lower()
+              if any(t in pathlow for t in ('wireframe','mockup','prototype','screen-gallery')):
+                  score += 20
+              for term,w in terms.items():
+                  count=low.count(term)
+                  if count:
+                      term_stats[term]+=count
+                      score += min(count,10)*w
+              if refs:
+                  score += min(refs,10)*8
+              if score:
+                  scored.append((score,rel,refs))
+
+          scored.sort(key=lambda x:(-x[0],x[1]))
+          asset_ref_files.sort(key=lambda x:(-x[1],x[0]))
+
+          # Families by first useful stem token after uxa-NNN where possible.
+          families=collections.Counter()
+          for rel in wireframe_assets:
+              stem=Path(rel).stem.lower()
+              m=re.match(r'(uxa-\d+)',stem)
+              families[m.group(1) if m else stem.split('-')[0]] += 1
+
+          dirs=collections.Counter(str(Path(rel).parent) for _,rel,_ in scored)
+
+          print(f'EXACT_HEAD={actual}')
+          print(f'TRACKED_FILES={len(tracked)}')
+          print(f'TEXT_FILES={len(text_files)}')
+          print(f'VISUAL_ASSETS_UNDER_DOCS_ASSETS={len(visual_assets)}')
+          print(f'WIREFRAME_ASSETS={len(wireframe_assets)}')
+          print(f'MARKDOWN_PATH_CANDIDATES={len(markdown_path_candidates)}')
+          print(f'FILES_WITH_WIREFRAME_ASSET_REFS={len(asset_ref_files)}')
+          print(f'WIREFRAME_ASSET_REF_LINES={asset_ref_lines}')
+          print(f'SCORED_MATERIALIZATION_DOCS={len(scored)}')
+          print('--- MARKDOWN_PATH_CANDIDATES ---')
+          for rel in markdown_path_candidates:
+              print(rel)
+          print('--- ASSET_REFERENCE_FILES ---')
+          for rel,n in asset_ref_files:
+              print(f'{n}\t{rel}')
+          print('--- TOP_SCORED_MATERIALIZATION_DOCS ---')
+          for score,rel,refs in scored[:160]:
+              print(f'{score}\trefs={refs}\t{rel}')
+          print('--- SCORED_DOCS_BY_DIRECTORY ---')
+          for d,n in sorted(dirs.items(), key=lambda x:(-x[1],x[0])):
+              print(f'{n}\t{d}')
+          print('--- TERM_COUNTS ---')
+          for term,n in term_stats.most_common():
+              print(f'{n}\t{term}')
+          print('--- WIREFRAME_ASSET_ID_FAMILIES ---')
+          for fam,n in sorted(families.items()):
+              print(f'{fam}\t{n}')
+          PY
