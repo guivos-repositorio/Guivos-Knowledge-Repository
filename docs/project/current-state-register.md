@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.7.0
+version: 3.8.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-04
+last_updated: 2026-09-05
 normative: true
 maturity: current_truth_under_full_corpus_audit
 related:
@@ -434,73 +434,58 @@ ORGANIZAÇÃO ≠ COLETIVO
 
 ### 8.4 Próxima maturidade O/C
 
-O mapa lógico de superfícies e estados **não é canônico ainda**.
+O mapa lógico de superfícies e estados **ainda não é canônico**. Uma proposta pré-auditoria permanece congelada e sem autoridade até ser reavaliada contra o corpus limpo.
 
-Uma proposta existe em branch pré-auditoria, mas permanece congelada e sem autoridade até a auditoria decidir se continua compatível com o corpus limpo.
+A documentação O/C deve evoluir somente no plano funcional:
 
-Não existem, como baseline vigente final:
+- responsabilidades de cada superfície;
+- informação obrigatória e opcional;
+- estados e transições;
+- regras, permissões, proteções e exceções;
+- fluxos e handoffs;
+- critérios de aceitação e restrições.
 
-- mapa final de superfícies/estados autenticados;
-- wireframe principal autenticado da Organização;
-- wireframe principal autenticado do Coletivo;
-- UI final;
-- protótipo final;
-- implementação autenticada correspondente.
+```text
+DOCUMENTAÇÃO
+→ DEFINE O QUE A EXPERIÊNCIA PRECISA SER CAPAZ DE COMUNICAR E FAZER
+
+DESIGN
+→ DEFINE COMO A EXPERIÊNCIA É VISUALMENTE MATERIALIZADA
+```
+
+Wireframe, mockup, protótipo, layout, composição e componentes visuais **não são entregáveis normativos do GKR**. Sua definição pertence exclusivamente a Design. Essa regra não constitui autorização para iniciar Design neste checkpoint.
 
 ## 9. Artefatos visuais e registries
 
-O corpus ainda contém inventário físico construído em ciclos anteriores, inclusive artefatos que perderam autoridade visual vigente.
+O cleanup governado de `F-006` removeu fisicamente os quatro documentos `UXA-015..018` e os dois SVGs associados. A transação foi aplicada no commit `112a1397743a39bb73f930984a8431f808103a08`.
 
-O snapshot auditado do Bloco I comprova:
+Estado comprovado no head de cleanup:
 
-- **121 SVGs físicos**;
-- **121 associações físicas**;
-- **34 perfis de rastreabilidade**;
-- **0 duplicatas exatas observadas/provadas por blob SHA**.
+- **119 SVGs físicos**;
+- **119 associações físicas**;
+- **34 perfis de rastreabilidade estáveis**;
+- `F006_DELETION_SET_ABSENT = 6/6`;
+- `F006_DIRECT_DELETED_FILENAME_HITS = 0`;
+- Semantic State Validation #827 = `SUCCESS`;
+- Mechanical Validation #1085 = `SUCCESS`;
+- F-006 Post-Delete Read-Only Proof #1 = `SUCCESS`;
+- MkDocs strict = `SUCCESS`.
 
-A auditoria também confirmou que:
-
-- `UXA-015..018` não sustentam a UX principal autenticada atual de Organização/Coletivo;
-- SVGs associados a essas antigas baselines permanecem fisicamente no repositório;
-- `F-006` permanece `OPEN`;
-- a absorção material válida foi aplicada e as dependências funcionais residuais de `UXA-015..018` foram reconciliadas;
-- a elegibilidade documental de cleanup está comprovada, mas não constitui autorização de remoção física;
-- nenhum `UXA-015..018` ou SVG associado possui remoção autorizada neste estágio;
-- contagem física de SVG não equivale a contagem de wireframes vigentes;
-- a antiga claim agregada `121 validados / 0 pendentes` permanece apenas como proveniência histórica nos instrumentos reconciliados;
-- `F-007` está resolvido no limite semântico/inventário do Bloco I.
+As **239 menções residuais aos IDs `UXA-015..018`** encontradas pela prova são referências textuais de proveniência/estado histórico a serem lidas sem reativação dos artefatos removidos. Nenhuma referência direta aos seis nomes físicos removidos permanece.
 
 ```text
 F-006
-→ OPEN
-→ ABSORPTION_APPLIED
-→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
+→ STRUCTURAL AUDIT COMPLETE
+→ ABSORPTION APPLIED
+→ ACTIVE FUNCTION DEPENDENCIES RECONCILED
+→ CLEANUP ELIGIBILITY PROVEN
+→ PHYSICAL CLEANUP APPLIED 6/6
+→ POST-CLEANUP VALIDATION PASSED
+→ READ-ONLY PROOF PASSED
+→ RESOLVED
 ```
 
-```text
-CONTAGEM FÍSICA DE SVGs
-≠ WIREFRAMES VIGENTES
-≠ WIREFRAMES VALIDADOS
-```
-
-Permanecem `NOT_CERTIFIED`:
-
-- near-duplicates;
-- total agregado de wireframes vigentes;
-- total agregado de wireframes validados vigentes;
-- total agregado de pendências visuais.
-
-A elegibilidade documental não altera o inventário físico atual. Em eventual cleanup físico autorizado deverão ser reconciliados:
-
-- surface registry;
-- transition registry;
-- screen catalog;
-- galleries;
-- traceability matrices;
-- links;
-- contagens.
+`F-007` permanece resolvido. A contagem de arquivos visuais deixa de ser proxy de maturidade, e `F-016` abre a retirada/reformulação repo-wide de materializações documentais que competem com a autoridade de Design.
 
 ## 10. Homes públicas — estado de auditoria
 

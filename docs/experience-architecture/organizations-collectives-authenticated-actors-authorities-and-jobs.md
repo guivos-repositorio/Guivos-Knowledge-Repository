@@ -644,7 +644,7 @@ PRODUCT ENGINEERING
 
 Após a definição da Arquitetura da Informação autenticada, o mapa final de superfícies e estados autenticados de Organização e Coletivo permanece uma **lacuna documental posterior**, não o próximo ato governado vigente.
 
-Enquanto `F-006` permanecer aberto, a sequência governada prioritária é: autorização humana separada para cleanup → se autorizada, remoção dos quatro Markdown `UXA-015..018` e dos dois SVGs associados com reconciliação transacional → recomputação da árvore resultante → validações Semantic + Mechanical → review repo-wide → decisão de fechamento de `F-006` e G/H/I.
+A sequência governada de `F-006` foi concluída: autorização, cleanup 6/6, reconciliação, validações e prova pós-delete. `F-006` está resolvido. A continuidade desta autoridade permanece funcional e não autoriza materialização visual.
 
 Somente após esses gates, e mediante nova autorização específica, poderá ser considerada a definição do mapa final de superfícies e estados a partir da IA, destes atores, autoridades, jobs e contratos existentes.
 

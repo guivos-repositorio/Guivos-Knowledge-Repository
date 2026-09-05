@@ -51,7 +51,7 @@ normative: false
 
 Esta seção reúne os **119 SVGs físicos remanescentes do inventário visual** para inspeção humana de assertividade, sequência, coerência e cobertura.
 
-Após a reconciliação pós-PR #313/#314, a presença de um SVG na galeria não significa que ele permaneça como wireframe vigente. Em particular, os artefatos associados a `UXA-015..018` são históricos `superseded` e permanecem apenas para rastreabilidade.
+Após o cleanup F-006, os artefatos físicos associados a `UXA-015..018` não existem mais no corpus corrente. Os IDs permanecem somente como proveniência histórica quando citados; nenhuma galeria transfere autoridade visual à documentação.
 
 A D5-C2 adicionou três estados-base low-fidelity para `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução`. A D5-C3 os reforma in-place e os valida funcionalmente no limite local de cada superfície, sem promover automaticamente outras famílias.
 

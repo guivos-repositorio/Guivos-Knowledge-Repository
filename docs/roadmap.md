@@ -1,10 +1,10 @@
 ---
-id: ROADMAP-13.7.0
+id: ROADMAP-13.8.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.7.0
+version: 13.8.0
 owner: Guivos
-last_updated: 2026-09-04
+last_updated: 2026-09-05
 normative: true
 related:
   - GKR-STATE-001
@@ -151,17 +151,17 @@ F. HOMES DOS PRODUTOS                    [CONCLUÍDO]
 ↓
 G. JORNADA DA PESSOA                     [COMPLETED / UPDATE_APPLIED]
 ↓
-H. ORGANIZAÇÃO / COLETIVO                [AUDITED / UPDATE_APPLIED / F-006 OPEN]
+H. ORGANIZAÇÃO / COLETIVO                [AUDITED / UPDATE_APPLIED / F-006 RESOLVED]
 ↓
-I. REGISTRIES / CATÁLOGOS / SVGs         [AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED]
+I. REGISTRIES / CATÁLOGOS / SVGs         [AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED]
 ↓
-GATE. AUTORIZAÇÃO HUMANA CLEANUP F-006   [PENDING]
+F-006 CLEANUP 6/6                        [APPLIED / VALIDATED / RESOLVED]
 ↓
-SE AUTORIZADO: REMOVER UXA-015..018 + antigo ativo visual F-006 de ORG-001 + antigo ativo visual F-006 de COL-001; RECONCILIAR LINKS/CATALOG/GALLERY/REGISTRY/TRACEABILITY NA MESMA TRANSAÇÃO [PENDING]
+F-016 DESMATERIALIZAÇÃO DOCUMENTAL       [OPEN / NEXT PRIORITY]
 ↓
-RECOMPUTAÇÃO / VALIDAÇÕES / REVIEW       [PENDING]
+AUDITAR WIREFRAMES / MATERIALIZATIONS / GALLERIES / MENU / SVGs [PENDING]
 ↓
-DECISÃO DE FECHAMENTO F-006 E G/H/I      [POST-CLEANUP GATES]
+ABSORVER CONTEÚDO FUNCIONAL ÚNICO + REMOVER/REESCREVER MATERIALIZAÇÕES INDEVIDAS [PENDING]
 ↓
 J. PRODUTOS / ECONOMIA                   [PENDING / NOT RELEASED AUTOMATICALLY]
 ↓
@@ -542,7 +542,7 @@ MAIN AUTHENTICATED WIREFRAMES
 
 A auditoria atualizou Estado O/C, overlay pós-313, auditoria derivada, Jornadas draft, `gaps` e detalhes obrigatórios do Surface Registry para eliminar a falsa pendência da IA autenticada.
 
-`UXA-015..018` permanecem históricos/superseded como autoridade visual e fisicamente preservados. A semântica material válida foi absorvida nas autoridades atuais, incluindo os critérios de aceite de participação de `UXA-018` agora explicitamente preservados em `UXA-056`; as dependências funcionais residuais foram reconciliadas e a elegibilidade documental de cleanup está comprovada. Isso não autoriza remoção física nem altera o inventário atual.
+`UXA-015..018` permanecem históricos/superseded como autoridade visual e foram removidos fisicamente do corpus corrente por F-006. A semântica material válida foi absorvida nas autoridades atuais, incluindo os critérios de aceite de participação de `UXA-018` agora explicitamente preservados em `UXA-056`; as dependências funcionais residuais foram reconciliadas e a elegibilidade documental de cleanup está comprovada. Isso não autoriza remoção física nem altera o inventário atual.
 
 Nenhum mapa de superfícies, wireframe, UI, protótipo ou implementação é autorizado por H.
 
@@ -585,7 +585,7 @@ Permanecem `NOT_CERTIFIED`:
 
 As claims históricas `121 validados / 0 pendentes` foram requalificadas como snapshot/proveniência onde ainda apareciam em autoridades ativas auditadas. Nenhuma nova contagem agregada de maturidade foi inferida.
 
-A elegibilidade de cleanup de `F-006` está comprovada documentalmente, mas os quatro documentos `UXA-015..018` e os dois SVGs associados continuam fisicamente preservados. Qualquer remoção exige autorização humana separada e, se ocorrer, deve reconciliar registries/catalog/gallery/traceability, links e contagens no mesmo ciclo antes de nova validação e review.
+O cleanup de `F-006` foi aplicado 6/6 e validado por Semantic #827, Mechanical #1085 e prova read-only pós-delete. `F-006` está resolvido; `F-016` passa a governar a desmaterialização documental repo-wide.
 
 ## 14. Lote J — Produtos, planos e economia
 

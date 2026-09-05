@@ -111,7 +111,7 @@ UXA-017 → superseded
 UXA-018 → superseded
 ```
 
-Os SVGs associados a `UXA-015` e `UXA-016` permanecem fisicamente no repositório por rastreabilidade histórica enquanto a auditoria integral decide seu destino final.
+Os antigos SVGs associados a `UXA-015` e `UXA-016` foram removidos do corpus corrente pelo cleanup governado F-006; a proveniência permanece no histórico Git.
 
 Eles não constituem:
 
@@ -159,7 +159,7 @@ Os princípios funcionais centrais permanecem representados nas autoridades atua
 
 Esses elementos aparecem de forma distribuída em `UXA-014`, `UXA-019`, `GKR-UX-ORGCOL-AUTH-JOBS-001` e `GKR-UX-ORGCOL-AUTH-IA-001`.
 
-Entretanto, hierarquias específicas de tela, listas históricas de estados, linguagem de interface e conclusões de validação de `UXA-015..018` **não são promovidas automaticamente a decisões atuais**. A remoção física desses artefatos continua condicionada a autorização humana separada e explícita. `F-006` permanece aberto durante autorização, cleanup, reconciliação, recomputação, validações e novo review; seu fechamento somente poderá ser decidido depois desses gates.
+Entretanto, hierarquias específicas de tela, listas históricas de estados, linguagem de interface e conclusões de validação de `UXA-015..018` **não são promovidas automaticamente a decisões atuais**. A remoção física foi autorizada e executada por F-006; reconciliação, recomputação, validações e prova pós-delete foram concluídas e F-006 foi posteriormente adjudicado como resolvido.
 
 ## 6. Efeito sobre o Registro do Estado Atual
 
@@ -334,7 +334,7 @@ A dívida mecânica registrada originalmente após #313 foi substancialmente abs
 | Jornada do Coletivo | normalizada no Bloco H; Jobs + IA atuais reconhecidos; surface map/wireframe principal permanecem pendentes |
 | porta temática O/C | reconciliada com Jobs + IA no Bloco H |
 
-Esta tabela não encerra `F-006`. Os testes de absorção, referências e função atual estão concluídos, as dependências funcionais ativas foram reconciliadas e a elegibilidade documental de cleanup está comprovada. A permanência física de `UXA-015..018` e dos SVGs associados continua obrigatória enquanto não houver autorização humana separada; se o cleanup for autorizado, remoção, reconciliação dos instrumentos afetados, recomputação, validações e novo review devem ocorrer antes de qualquer decisão de fechamento.
+Esta tabela não encerra `F-006`. Os testes de absorção, referências e função atual estão concluídos, as dependências funcionais ativas foram reconciliadas e a elegibilidade documental de cleanup está comprovada. O cleanup governado foi autorizado, aplicado 6/6 e validado; a proveniência histórica permanece sem dependência física.
 
 ## 15. Regra para contagens visuais
 
@@ -362,12 +362,12 @@ Estado comprovado do inventário no Bloco I:
 
 ## 16. Gate de remoção dos históricos
 
-`UXA-015..018` e os dois SVGs associados não serão removidos por conveniência de contagem.
+`UXA-015..018` e os dois SVGs associados foram removidos somente após prova de absorção, autorização e cleanup governado — não por conveniência de contagem.
 
 Os gates documentais de classificação do conteúdo material e de ausência de dependência funcional atual estão concluídos. A sequência governada restante é:
 
 1. obter autorização humana separada e explícita para o cleanup físico;
-2. se autorizado, remover os quatro documentos `UXA-015..018` e os dois SVGs associados e, na mesma transação, reconciliar links, metadados, catálogo, gallery, registry e traceability afetados;
+2. etapa concluída: os quatro documentos `UXA-015..018` e os dois SVGs associados foram removidos e os instrumentos afetados foram reconciliados na mesma transação;
 3. recomputar catálogo, galeria, matriz, associações e contagens físicas sobre a árvore resultante;
 4. validar semanticamente e mecanicamente o novo head exato;
 5. executar nova revisão repo-wide no novo head;

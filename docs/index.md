@@ -313,35 +313,23 @@ A antiga leitura agregada de “oito Homes convergidas” não é usada como ata
 
 ## Materializações e contagens
 
-O corpus ainda contém artefatos físicos de ciclos anteriores. Alguns perderam autoridade vigente e permanecem preservados enquanto não houver autorização humana separada para seu cleanup físico; a absorção material já comprovada não equivale a autorização de remoção.
-
-No snapshot auditado do Bloco I:
-
-- **121 SVGs físicos**;
-- **121 associações físicas**;
-- **34 perfis de rastreabilidade**;
-- **0 duplicatas exatas observadas/provadas por blob SHA**.
+O cleanup governado de `F-006` foi aplicado e validado. O corpus corrente passou de 121 para **119 SVGs físicos**, com **119 associações físicas** e **34 perfis de rastreabilidade estáveis**. Os IDs `UXA-015..018` podem permanecer citados somente como proveniência histórica; os seis artefatos governados não existem mais no corpus corrente.
 
 ```text
 SVG FÍSICO
-≠ WIREFRAME VIGENTE
-≠ WIREFRAME VALIDADO
+≠ AUTORIDADE VISUAL
+≠ MATURIDADE DE DESIGN
 ```
 
-Permanecem `NOT_CERTIFIED`:
+`F-006` está `RESOLVED` após cleanup 6/6, reconciliação, Semantic #827, Mechanical #1085 e prova read-only pós-delete.
 
-- near-duplicates;
-- total agregado de wireframes vigentes;
-- total agregado de wireframes validados vigentes;
-- total agregado de pendências visuais.
-
-`F-006` permanece `OPEN / CLEANUP_ELIGIBILITY_PROVEN / PHYSICAL_REMOVAL_NOT_AUTHORIZED`; nenhum `UXA-015..018` ou SVG associado possui remoção autorizada neste estágio.
-
-`F-010` está `RESOLVED` após cleanup, prova pós-delete, validações e review independente; o review Codex permaneceu indisponível por limite de uso, sem claim `CLEAN`. Esse fechamento não altera a autorização separada exigida por F-006.
+`F-010` permanece `RESOLVED`, sem claim de Codex `CLEAN` porque o serviço esteve indisponível por limite de uso.
 
 ## Próximo movimento
 
-O Bloco 2 G/H/I foi auditado no limite documental atual. O próximo movimento **não** é liberar automaticamente J/K/L/M/N nem decidir o fechamento: é obter autorização humana separada e explícita para o cleanup físico de `F-006`. Se autorizada, remoção/reconciliação, recomputação, validações e review antecedem qualquer decisão de fechamento.
+O próximo eixo prioritário é `F-016 — desmaterialização documental repo-wide`. A documentação deve especificar o que uma superfície precisa comunicar, permitir e proteger — conteúdo, estados, regras, fluxos, requisitos e critérios — sem definir composição visual. Wireframes, mockups, protótipos, layout, componentes visuais e materialização final pertencem exclusivamente a Design.
+
+Isso **não** libera automaticamente J/K/L/M/N, `UXA-102/V5`, Design em execução, Product Engineering ou merge da PR #363.
 
 ```text
 G

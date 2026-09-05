@@ -304,24 +304,24 @@ Documento de Home existente não significa automaticamente Home implementada, pu
 
 ## Inventário visual auditado
 
-No snapshot auditado do Bloco I:
+Após o cleanup governado de `F-006`, o inventário corrente contém:
 
-- **121 SVGs físicos**;
-- **121 associações físicas**;
-- **34 perfis de rastreabilidade**;
-- **0 duplicatas exatas observadas/provadas por blob SHA**.
+- **119 SVGs físicos**;
+- **119 associações físicas**;
+- **34 perfis de rastreabilidade estáveis**, incluindo perfis históricos sem ativo físico;
+- **0 duplicatas exatas observadas/provadas por blob SHA** no snapshot auditado anterior, sem nova certificação de near-duplicates.
 
 ```text
 CONTAGEM FÍSICA DE SVGs
-≠ WIREFRAMES VIGENTES
-≠ WIREFRAMES VALIDADOS
+≠ AUTORIDADE VISUAL
+≠ MATURIDADE DE DESIGN
 ```
 
-Permanecem `NOT_CERTIFIED`: near-duplicates e totais agregados de wireframes vigentes, validados vigentes e pendências visuais.
+`F-006` está `RESOLVED`: absorção funcional, cleanup físico 6/6, reconciliação, Semantic #827, Mechanical #1085 e prova read-only pós-delete concluíram com sucesso no head de cleanup. As referências remanescentes a `UXA-015..018` são tratadas como proveniência histórica, não como dependência vigente.
 
-`F-006` permanece `OPEN / CLEANUP_ELIGIBILITY_PROVEN / PHYSICAL_REMOVAL_NOT_AUTHORIZED`; nenhum `UXA-015..018` ou SVG associado possui remoção autorizada.
+`F-010` permanece `RESOLVED`; o review Codex permaneceu indisponível por limite de uso, sem claim `CLEAN`.
 
-`F-010` está `RESOLVED` após cleanup, prova pós-delete, validações e review independente; o review Codex permaneceu indisponível por limite de uso, sem claim `CLEAN`. Esse fechamento não altera a autorização separada exigida por F-006.
+A auditoria abriu `F-016` para desmaterialização documental repo-wide: o GKR define intenção, conteúdo, estados, regras, fluxos, requisitos e critérios; **wireframes, mockups, protótipos, layout e demais decisões visuais pertencem exclusivamente a Design**.
 
 ## Tecnologia e operação
 
