@@ -1,0 +1,78 @@
+name: Downstream Release Audit
+
+on:
+  push:
+    branches:
+      - agent/gkr-downstream-release-audit-v1
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact canonical head
+        uses: actions/checkout@v4
+        with:
+          ref: 3cdb755e8493f837798062e5bd99c4de55e450f1
+          fetch-depth: 1
+
+      - name: Assert canonical head
+        run: |
+          test "$(git rev-parse HEAD)" = "3cdb755e8493f837798062e5bd99c4de55e450f1"
+
+      - name: Scan residual F-016 release blockers
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          roots = [Path('docs'), Path('README.md')]
+          files = []
+          for root in roots:
+              if root.is_dir():
+                  files.extend(root.rglob('*.md'))
+              elif root.exists():
+                  files.append(root)
+
+          patterns = [
+              re.compile(r'F-016\s*$'),
+              re.compile(r'F-016[^\n]{0,120}OPEN', re.I),
+              re.compile(r'REMAINING MARKDOWN', re.I),
+              re.compile(r'CLASSIFY REMAINING MARKDOWN', re.I),
+              re.compile(r'eixo corrente permanece `?F-016`?', re.I),
+              re.compile(r'NEXT F-016', re.I),
+              re.compile(r'F-016.*NEXT PRIORITY', re.I),
+          ]
+
+          hits = []
+          for path in sorted(set(files)):
+              text = path.read_text(encoding='utf-8')
+              lines = text.splitlines()
+              for i, line in enumerate(lines):
+                  if any(p.search(line) for p in patterns):
+                      start = max(0, i-2)
+                      end = min(len(lines), i+10)
+                      context = '\n'.join(f'{j+1}: {lines[j]}' for j in range(start, end))
+                      hits.append((str(path), i+1, context))
+
+          print(f'RESIDUAL_SCAN_HITS={len(hits)}')
+          for path, line, context in hits:
+              print('\n---')
+              print(f'{path}:{line}')
+              print(context)
+
+      - name: Print downstream blocks from normative authorities
+        shell: python
+        run: |
+          from pathlib import Path
+          for p in [Path('docs/project/current-state-register.md'), Path('docs/roadmap.md'), Path('docs/project/gkr-full-corpus-audit.md')]:
+              text = p.read_text(encoding='utf-8')
+              print(f'\n===== {p} =====')
+              for marker in ['J / K / L / M / N', 'J–N', 'Lote J', 'Lote K', 'Lote L', 'Lote M', 'Lote N', 'Próximo ato governado', 'Regra do próximo movimento']:
+                  pos = text.find(marker)
+                  if pos >= 0:
+                      a = max(0, pos-300)
+                      b = min(len(text), pos+1800)
+                      print(text[a:b])
