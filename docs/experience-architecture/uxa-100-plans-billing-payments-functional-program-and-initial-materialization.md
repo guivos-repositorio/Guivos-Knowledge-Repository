@@ -369,7 +369,7 @@ A UXA-100 não presume pró-rata, estorno ou crédito entre ciclos.
 - `uxa-100-collective-plan-incremental-benefits-comparison.svg`;
 - `uxa-100-organization-plan-incremental-benefits-comparison.svg`.
 
-Inspeção: [Planos, Comparação e Cobrança — Galeria Canônica](../journeys/screen-gallery-plans-billing.md).
+Inspeção: Planos, Comparação e Cobrança — Galeria Canônica.
 
 Os nove SVGs permanecem associados aos perfis `R29`, `R30` e `R31`. Nenhum SVG ou perfil adicional é criado para Guivos Business nesta atualização.
 

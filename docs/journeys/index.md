@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.43.0
+version: 0.44.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-05
 related:
@@ -27,8 +27,6 @@ related:
   - UXA-100-A3
   - UXA-100-A4
   - UXA-101
-  - GKR-JOURNEY-SCREEN-GALLERY-001
-  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -53,9 +51,6 @@ A investigação de supply, oportunidades reais e testes de relevância de Organ
 ## 2. Vistas disponíveis
 
 - [Propagação dos Domínios de Evolução nas Jornadas — D4](evolution-domains-d4.md)
-- [Galeria Visual Integrada de Telas](screen-gallery.md)
-- [Planos, Comparação e Cobrança — Galeria Canônica](screen-gallery-plans-billing.md)
-- [Matriz de Rastreabilidade Visual por SVG](screen-gallery-traceability-matrix.md)
 - [Catálogo de Telas](screen-catalog.md)
 - [Jornada da Pessoa](person.md)
 - [Jornada do Coletivo](collective.md)
@@ -107,8 +102,8 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | catálogo integrado | `active` 0.33.0 | **0 SVGs físicos após F-016-A**; contratos textuais preservados; maturidade agregada não inferida |
 | registro de superfícies | `active` | 57 IDs documentais |
 | registro de transições | `active` | 66 transições documentais |
-| galeria visual integrada | `superseded / historical_provenance_only` | camada física removida por F-016-A; sem autoridade visual corrente |
-| matriz por SVG | `superseded / historical_provenance_only` | **0 associações físicas / 34 perfis de proveniência**; sem autoridade visual |
+| antiga galeria visual integrada | `removed_from_current_corpus` | proveniência preservada no histórico Git |
+| antiga matriz por SVG | `removed_from_current_corpus` | associações/perfis recuperáveis no histórico Git |
 | F-016-A | `resolved` | **119/119 SVGs removidos; 0 SVGs físicos; referências vivas reconciliadas; Semantic #832 + Mechanical #1090 + prova pós-delete v2 SUCCESS** |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
@@ -233,8 +228,8 @@ A nomenclatura vigente é:
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs físicos existentes | **121** |
-| associações físicas registradas | **121** |
+| SVGs físicos existentes | **0** |
+| associações físicas registradas | **0** |
 | perfis documentais | **34** |
 | claim agregada anterior `121 validados / 0 pendentes` | **superseded como estado de maturidade vigente** |
 | nova contagem agregada de wireframes vigentes/validados | **não inferida; requer recomputação governada** |
@@ -242,8 +237,8 @@ A nomenclatura vigente é:
 | wireframe principal autenticado do Coletivo | **pendente** |
 | superfícies/estados/fronteiras documentais | **57** |
 | transições documentais | **66** |
-| IDs com referência visual física | **45 de 57** |
-| responsabilidades sem SVG dedicado | **10** |
+| IDs com referência visual física | **0 de 57** |
+| responsabilidades sem SVG dedicado | **métrica histórica; não usada como cobertura corrente após F-016-A** |
 | fronteiras sem tela | **2** |
 
 ```text

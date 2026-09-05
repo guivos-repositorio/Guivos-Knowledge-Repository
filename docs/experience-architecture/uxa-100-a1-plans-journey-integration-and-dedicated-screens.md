@@ -161,7 +161,7 @@ A extensão mantém os mesmos 9 SVGs:
 | comparação incremental | 1 | 1 | 1 | 3 |
 | **Total** | **3** | **3** | **3** | **9** |
 
-Inspeção: [Planos, Comparação e Cobrança — Galeria Candidata](../journeys/screen-gallery-plans-billing.md).
+Inspeção: Planos, Comparação e Cobrança — Galeria Candidata.
 
 A autoridade conceitual desta atualização não altera IDs, quantidade ou associação dos nove ativos.
 

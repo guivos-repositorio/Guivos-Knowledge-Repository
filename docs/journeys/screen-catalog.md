@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.34.0
+version: 0.35.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-05
 related:
@@ -34,9 +34,6 @@ related:
   - GKR-UX-D5-C2-001
   - GKR-UX-D5-C3-001
   - GKR-UX-D5-C4B-001
-  - GKR-JOURNEY-SCREEN-GALLERY-001
-  - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
-  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
@@ -73,9 +70,9 @@ CONTAGEM FÍSICA DE SVGs
 
 A D5-C1 contratou `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução`. A D5-C2 criou um SVG low-fidelity para cada uma dessas responsabilidades sem criar novo ID granular. A D5-C3 reformou in-place e validou funcionalmente os três estados-base. A D5-C4B promoveu individualmente `TRN-008..013` para **integralmente validadas no limite documental**, sem promover implementação técnica ou a Jornada da Pessoa além de `draft`.
 
-## 2. Inventário agregado por família
+## 2. Inventário agregado por família — snapshot histórico pré-F-016-A
 
-A coluna `SVGs` abaixo é **inventário físico**. Ela não é, por si só, indicador de maturidade vigente.
+As contagens `SVGs` abaixo pertencem ao snapshot histórico anterior à desmaterialização física. O inventário físico corrente é **0** e nenhuma contagem histórica constitui autoridade visual vigente.
 
 | Participante ou camada | Família | SVGs físicos | Estado de validação que pode ser afirmado | Continuidade integrada | Lacuna associada |
 |---|---|---:|---|---|---|
@@ -114,8 +111,8 @@ A coluna `SVGs` abaixo é **inventário físico**. Ela não é, por si só, indi
 | superfícies/estados/responsabilidades/fronteiras | **57** | inventário granular; maturidade por item |
 | transições documentais | **66** | maturidade por transição; `TRN-008..013` integrais |
 | catálogo físico | **0 SVGs** | `active` 0.34.0; camada física removida por F-016-A |
-| matriz de rastreabilidade | **0 associações físicas / 34 perfis de proveniência** | sem autoridade visual |
-| galeria visual | **0 SVGs físicos** | documentos de galeria preservados somente como proveniência histórica |
+| perfis históricos de rastreabilidade | **34 perfis históricos** | instrumento de matriz removido; proveniência recuperável no histórico Git |
+| galeria visual histórica | **0 SVGs físicos** | documentos de galeria removidos do corpus corrente; proveniência preservada no histórico Git |
 
 ## 4. Cobertura visual física
 
@@ -180,9 +177,9 @@ A reconciliação pós-PR #313/#314 **não reescreve a história desses snapshot
 
 ## 7. Estado do catálogo
 
-- catálogo físico: `active` 0.33.0;
+- catálogo físico: `active` 0.35.0;
 - inventário físico corrente após F-016-A: **0 SVGs**;
-- matriz física: **0 associações físicas / 34 perfis de proveniência**, sem autoridade visual;
+- antiga matriz visual: removida do corpus corrente; 34 perfis históricos permanecem recuperáveis no histórico Git;
 - resumo `121 SVGs / 121 validados / 0 pendentes`: **superseded como claim de maturidade vigente**;
 - materialização visual da Organização: **autoridade exclusiva de Design; não é requisito documental**;
 - materialização visual do Coletivo: **autoridade exclusiva de Design; não é requisito documental**;

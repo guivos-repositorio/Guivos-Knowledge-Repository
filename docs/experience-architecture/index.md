@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.7.0
+version: 1.8.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-05
 related:
@@ -45,8 +45,6 @@ related:
   - GKR-UX-D5-C4B-001
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
-  - GKR-JOURNEY-SCREEN-GALLERY-001
-  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - M7.88
@@ -210,13 +208,8 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 | Jornada da Pessoa | `draft`; PER-010..012 validados localmente; TRN-008..013 integrais |
 | Jornada do Coletivo | `draft` 0.20.0; Jobs + IA definidos pre-surface-map |
 | Jornada da Organização | `draft` 0.13.0; Jobs + IA definidos pre-surface-map |
-| catálogo integrado | `active` 0.33.0; **121 SVGs físicos**; TRN-008..013 integrais; maturidade agregada vigente não inferida |
-| galeria visual | `active`; inventário físico preservado; antigos resumos `121 validados / 0 pendentes` não constituem claim vigente de maturidade |
-| galeria da Pessoa | `active` 0.7.0; 23 SVGs físicos no recorte; D5-C4B propagada |
-| galeria Organização/Oportunidades | `active` 0.6.0; gap principal inicia no surface map |
-| galeria Coletivos | `active` 0.15.0; gap principal inicia no surface map |
-| galeria de Planos | `active` 0.5.0 |
-| matriz por SVG | `active`; **121 associações físicas / 34 perfis**; associação ≠ autoridade vigente |
+| catálogo integrado | `active` 0.34.0; **0 SVGs físicos após F-016-A**; maturidade funcional preservada por autoridades textuais |
+| proveniência visual histórica | documentos de galeria/matriz removidos do corpus corrente; recuperáveis no histórico Git; sem autoridade visual |
 | lacunas | `active`; lacuna D5-C de handoffs encerrada no limite documental |
 | registro de superfícies | `active`; 57 IDs; maturidade por item |
 | registro de transições | `active`; 66 transições; TRN-008..013 integrais |

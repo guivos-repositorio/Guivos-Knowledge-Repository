@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.11.0
+version: 1.12.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-05
 normative: false
@@ -147,7 +147,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-013 | Major | Fundação antiga supercentralizava Oportunidade e antecedia distinção Possibilidade/Mecanismo/Oportunidade | `REBUILD + ENRICH` | reconciliado no Lote C |
 | F-014 | Major | PP-11 antigo podia confundir visão de capacidade máxima com verdade atual | `UPDATE` | reconciliado no Lote C |
 | F-015 | Major | Public Canon anterior ainda publicava fluxo/definição anterior de Oportunidade | `UPDATE + ENRICH` | reconciliado no Lote C |
-| F-016 | Major | corpus ainda contém documentos de materialização/galeria e linguagem de UI que podem competir com Design; a camada física SVG já foi removida | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — F-016-A cleanup físico 119/119 aplicado; validação pós-cleanup pendente; demais famílias documentais continuam em auditoria** |
+| F-016 | Major | corpus ainda contém documentos de materialização e linguagem de UI que podem competir com Design; camada física SVG e família `screen-gallery*` já foram desmaterializadas após prova de absorção | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — F-016-A RESOLVED; família `screen-gallery*` removida 8/8 após absorção; demais famílias Markdown continuam em auditoria** |
 
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 

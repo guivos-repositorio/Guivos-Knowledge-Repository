@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-DERIVED-AUDIT-001
 title: Organizações e Coletivos — Auditoria de Derivados Pós-313
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-05
 normative: false
@@ -13,8 +13,6 @@ related:
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
-  - GKR-JOURNEY-SCREEN-GALLERY-001
-  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -63,16 +61,16 @@ F-016-A
 |---|---|---|---|
 | `GKR-STATE-001` | `121 SVGs — 121 validados / 0 pendentes` | camada física removida; maturidade não inferida | normalizado |
 | `GKR-JOURNEY-SCREEN-CATALOG-001` | inventário físico 121/119 em checkpoints anteriores | **0 SVGs físicos após F-016-A** | normalizado |
-| `GKR-JOURNEY-SCREEN-GALLERY-001` | leitura agregada de validação | `superseded / historical_provenance_only` | normalizado |
-| `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` | associação visual podia ser lida como vigência | **0 associações físicas / 34 perfis de proveniência** | normalizado |
+| antiga galeria visual integrada | leitura agregada de validação | removida do corpus corrente; proveniência no histórico Git | normalizado |
+| antiga matriz visual | associação visual podia ser lida como vigência | removida do corpus corrente; perfis históricos recuperáveis no Git | normalizado |
 | `GKR-JOURNEY-SURFACE-REGISTRY-001` — `ORG-001` | Visão Geral validada por `UXA-015/017` | responsabilidade conhecida; materialização histórica removida; Design governa futura materialização | normalizado |
 | registro do Coletivo | `UXA-016/018` como evidência da UX principal | não utilizar esses IDs para afirmar wireframe principal vigente | normalizado |
 | Jornada da Organização | Visão Geral = validada | Jobs + IA existem; mapa funcional ainda não canônico; materialização pertence a Design | normalizado |
 | Jornada do Coletivo | `UXA-016/018` como evidência principal | Jobs + IA existem; mapa funcional ainda não canônico; materialização pertence a Design | normalizado |
 
-## 3. Matriz de divergências e estado atual
+## 3A. Snapshot histórico pós-F-006 / pré-F-016-A
 
-| Derivado | Snapshot anterior | Estado correto atual | Situação da normalização |
+| Derivado | Snapshot anterior | Estado registrado naquele checkpoint | Situação naquele checkpoint |
 |---|---|---|---|
 | `GKR-STATE-001` | `121 SVGs — 121 validados / 0 pendentes` | inventário físico ≠ maturidade; Jobs + IA O/C reconhecidos | normalizado |
 | `GKR-JOURNEY-SCREEN-CATALOG-001` | total canônico `121 / 121 validados` | **119 físicos pós-F-006**; maturidade por item; claim antiga superseded | normalizado |
