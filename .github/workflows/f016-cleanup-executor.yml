@@ -1,0 +1,251 @@
+name: F-016 Isolated Cleanup Executor
+
+on:
+  push:
+    branches:
+      - agent/gkr-f016-cleanup-executor-v1
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  BASE_SHA: 72a20d43f12d7efb9c646368ec009828c607924f
+  CANDIDATE_BRANCH: agent/gkr-f016-cleanup-candidate-v1
+  RESULT_BRANCH: agent/gkr-f016-cleanup-result-v1
+
+jobs:
+  prepare:
+    name: Prepare cleanup candidate
+    runs-on: ubuntu-latest
+    outputs:
+      candidate_sha: ${{ steps.commit.outputs.sha }}
+    steps:
+      - name: Checkout isolated executor
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          path: executor
+          fetch-depth: 1
+
+      - name: Checkout immutable canonical base
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BASE_SHA }}
+          path: repo
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: repo/requirements.txt
+
+      - name: Install validation dependencies
+        working-directory: repo
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Assert immutable base
+        working-directory: repo
+        run: |
+          test "$(git rev-parse HEAD)" = "$BASE_SHA"
+          test "$(git rev-parse HEAD^{tree})" = "872185d998a77e3610446a01b4f7f8f376e8b9fb"
+
+      - name: Apply governed F-016 cleanup
+        run: python executor/scripts/f016_cleanup_executor.py prepare repo
+
+      - name: Validate prepared tree
+        working-directory: repo
+        run: |
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          mkdocs build --strict --site-dir /tmp/gkr-site-prepare
+          git diff --check
+          git status --short
+
+      - name: Create candidate commit directly from canonical parent
+        id: commit
+        working-directory: repo
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "gkr-governance-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          tree="$(git write-tree)"
+          commit="$(printf '%s\n' 'GKR: execute adjudicated F-016 documentation dematerialization' | git commit-tree "$tree" -p "$BASE_SHA")"
+          test "$(git rev-parse "$commit^")" = "$BASE_SHA"
+          git push --force origin "$commit:refs/heads/$CANDIDATE_BRANCH"
+          echo "sha=$commit" >> "$GITHUB_OUTPUT"
+          echo "F016_CANDIDATE_SHA=$commit"
+          echo "F016_CANDIDATE_TREE=$tree"
+
+  candidate_proof:
+    name: Independent read-only proof of cleanup candidate
+    needs: prepare
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout isolated executor
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          path: executor
+          fetch-depth: 1
+
+      - name: Checkout candidate commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.prepare.outputs.candidate_sha }}
+          path: repo
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: repo/requirements.txt
+
+      - name: Install validation dependencies
+        working-directory: repo
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Prove cleanup boundary read-only
+        run: python executor/scripts/f016_cleanup_executor.py proof repo
+
+      - name: Re-run canonical validators read-only
+        working-directory: repo
+        run: |
+          test "$(git rev-parse HEAD^)" = "$BASE_SHA"
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          mkdocs build --strict --site-dir /tmp/gkr-site-candidate-proof
+          git diff --check "$BASE_SHA...HEAD"
+          test -z "$(git status --porcelain --untracked-files=no)"
+          test ! -e scripts/f016_cleanup_executor.py
+          test ! -e .github/workflows/f016-cleanup-executor.yml
+          echo "F016_CANDIDATE_READ_ONLY_PROOF=SUCCESS"
+
+  finalize:
+    name: Finalize governed F-016 state
+    needs:
+      - prepare
+      - candidate_proof
+    runs-on: ubuntu-latest
+    outputs:
+      final_sha: ${{ steps.commit.outputs.sha }}
+    steps:
+      - name: Checkout isolated executor
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          path: executor
+          fetch-depth: 1
+
+      - name: Checkout proven cleanup candidate
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.prepare.outputs.candidate_sha }}
+          path: repo
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: repo/requirements.txt
+
+      - name: Install validation dependencies
+        working-directory: repo
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Record F-016 closure only after proof
+        run: python executor/scripts/f016_cleanup_executor.py finalize repo
+
+      - name: Validate exact final tree before commit
+        working-directory: repo
+        run: |
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          mkdocs build --strict --site-dir /tmp/gkr-site-finalize
+          git diff --check
+
+      - name: Create final one-commit transaction from canonical parent
+        id: commit
+        working-directory: repo
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "gkr-governance-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          tree="$(git write-tree)"
+          commit="$(printf '%s\n' 'GKR: resolve F-016 documentation dematerialization' | git commit-tree "$tree" -p "$BASE_SHA")"
+          test "$(git rev-parse "$commit^")" = "$BASE_SHA"
+          git push --force origin "$commit:refs/heads/$RESULT_BRANCH"
+          echo "sha=$commit" >> "$GITHUB_OUTPUT"
+          echo "F016_FINAL_SHA=$commit"
+          echo "F016_FINAL_TREE=$tree"
+
+  final_post_delete_proof:
+    name: Exact-final-head independent post-delete proof
+    needs: finalize
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout isolated executor
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          path: executor
+          fetch-depth: 1
+
+      - name: Checkout exact final result
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.finalize.outputs.final_sha }}
+          path: repo
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: repo/requirements.txt
+
+      - name: Install validation dependencies
+        working-directory: repo
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Exact-head post-delete proof
+        run: python executor/scripts/f016_cleanup_executor.py proof-final repo
+
+      - name: Exact-head validators and clean-tree assertion
+        working-directory: repo
+        run: |
+          test "$(git rev-parse HEAD)" = "${{ needs.finalize.outputs.final_sha }}"
+          test "$(git rev-parse HEAD^)" = "$BASE_SHA"
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          mkdocs build --strict --site-dir /tmp/gkr-site-final-proof
+          git diff --check "$BASE_SHA...HEAD"
+          test -z "$(git status --porcelain --untracked-files=no)"
+          test ! -e scripts/f016_cleanup_executor.py
+          test ! -e .github/workflows/f016-cleanup-executor.yml
+          echo "F016_FINAL_EXACT_HEAD_READ_ONLY_PROOF=SUCCESS"
+          echo "F016_FINAL_SHA=${{ needs.finalize.outputs.final_sha }}"
+          echo "F016_FINAL_TREE=$(git rev-parse HEAD^{tree})"
