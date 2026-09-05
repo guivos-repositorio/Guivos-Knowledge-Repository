@@ -36,12 +36,12 @@ jobs:
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
-          import re, subprocess
+          import re
           physical=list(Path('docs/assets/wireframes').glob('*.svg')) if Path('docs/assets/wireframes').exists() else []
           if physical: raise SystemExit(f'PHYSICAL_SVG_COUNT={len(physical)}')
           required={
             'README.md':['F-016-A','→ RESOLVED','PHYSICAL SVG COUNT = 0'],
-            'docs/index.md':['F-016-A = RESOLVED','0 SVGs físicos'],
+            'docs/index.md':['F-016-A = RESOLVED','SVGs FÍSICOS EM docs/assets/wireframes/','→ 0'],
             'docs/project/current-state-register.md':['version: 3.11.0','INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS','→ RESOLVED'],
             'docs/roadmap.md':['version: 13.11.0','F-016-A | **RESOLVED — PHYSICAL SVG COUNT 0**','Mechanical #1090'],
             'docs/project/gkr-full-corpus-audit.md':['version: 1.11.0','F-016-A — camada física SVG — RESOLVED','POST-DELETE READ-ONLY PROOF V2'],
@@ -52,7 +52,6 @@ jobs:
               text=Path(rel).read_text(encoding='utf-8')
               for token in tokens:
                   if token not in text: raise SystemExit(f'MISSING_TOKEN {rel}: {token}')
-          # No current-authority token may still say F-016-A physical cleanup is unauthorized/pending.
           current_files=['README.md','docs/index.md','docs/project/current-state-register.md','docs/roadmap.md','docs/project/gkr-full-corpus-audit.md','docs/experience-architecture/organizations-collectives-derived-state-audit.md','docs/experience-architecture/public-specialized-homes-reconciliation.md','docs/experience-architecture/uxa-047-101-index.md','docs/experience-architecture/index.md','docs/journeys/index.md','docs/journeys/screen-catalog.md']
           bad=[]
           for rel in current_files:
