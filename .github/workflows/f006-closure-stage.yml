@@ -1,0 +1,168 @@
+name: F-006 Closure Stage
+
+on:
+  push:
+    branches:
+      - agent/gkr-f006-closure-stage-v1
+
+permissions:
+  contents: write
+
+jobs:
+  closure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/gkr-f006-closure-stage-v1
+          fetch-depth: 1
+
+      - name: Reconcile F-006 closure and open repo-wide design-only finding
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          def read(rel): return Path(rel).read_text(encoding='utf-8')
+          def write(rel, text): Path(rel).write_text(text, encoding='utf-8')
+          def must_replace(text, old, new, label, minimum=1):
+              n=text.count(old)
+              if n < minimum:
+                  raise SystemExit(f'PRECONDITION FAILED {label}: expected >= {minimum}, got {n}')
+              return text.replace(old,new)
+
+          # README: current public repository state.
+          rel='README.md'; t=read(rel)
+          start=t.index('## Inventário visual auditado')
+          end=t.index('## Tecnologia e operação')
+          block='''## Inventário visual auditado\n\nApós o cleanup governado de `F-006`, o inventário corrente contém:\n\n- **119 SVGs físicos**;\n- **119 associações físicas**;\n- **34 perfis de rastreabilidade estáveis**, incluindo perfis históricos sem ativo físico;\n- **0 duplicatas exatas observadas/provadas por blob SHA** no snapshot auditado anterior, sem nova certificação de near-duplicates.\n\n```text\nCONTAGEM FÍSICA DE SVGs\n≠ AUTORIDADE VISUAL\n≠ MATURIDADE DE DESIGN\n```\n\n`F-006` está `RESOLVED`: absorção funcional, cleanup físico 6/6, reconciliação, Semantic #827, Mechanical #1085 e prova read-only pós-delete concluíram com sucesso no head de cleanup. As referências remanescentes a `UXA-015..018` são tratadas como proveniência histórica, não como dependência vigente.\n\n`F-010` permanece `RESOLVED`; o review Codex permaneceu indisponível por limite de uso, sem claim `CLEAN`.\n\nA auditoria abriu `F-016` para desmaterialização documental repo-wide: o GKR define intenção, conteúdo, estados, regras, fluxos, requisitos e critérios; **wireframes, mockups, protótipos, layout e demais decisões visuais pertencem exclusivamente a Design**.\n\n'''
+          t=t[:start]+block+t[end:]
+          write(rel,t)
+
+          # docs/index: current navigation landing state.
+          rel='docs/index.md'; t=read(rel)
+          marker='O corpus ainda contém artefatos físicos de ciclos anteriores.'
+          start=t.index(marker)
+          end=t.index('```text\nG\n→ COMPLETED / UPDATE_APPLIED', start)
+          prefix='''O cleanup governado de `F-006` foi aplicado e validado. O corpus corrente passou de 121 para **119 SVGs físicos**, com **119 associações físicas** e **34 perfis de rastreabilidade estáveis**. Os IDs `UXA-015..018` podem permanecer citados somente como proveniência histórica; os seis artefatos governados não existem mais no corpus corrente.\n\n```text\nSVG FÍSICO\n≠ AUTORIDADE VISUAL\n≠ MATURIDADE DE DESIGN\n```\n\n`F-006` está `RESOLVED` após cleanup 6/6, reconciliação, Semantic #827, Mechanical #1085 e prova read-only pós-delete.\n\n`F-010` permanece `RESOLVED`, sem claim de Codex `CLEAN` porque o serviço esteve indisponível por limite de uso.\n\n## Próximo movimento\n\nO próximo eixo prioritário é `F-016 — desmaterialização documental repo-wide`. A documentação deve especificar o que uma superfície precisa comunicar, permitir e proteger — conteúdo, estados, regras, fluxos, requisitos e critérios — sem definir composição visual. Wireframes, mockups, protótipos, layout, componentes visuais e materialização final pertencem exclusivamente a Design.\n\nIsso **não** libera automaticamente J/K/L/M/N, `UXA-102/V5`, Design em execução, Product Engineering ou merge da PR #363.\n\n'''
+          t=t[:start]+prefix+t[end:]
+          write(rel,t)
+
+          # Current-state authority: bump and replace O/C + inventory state.
+          rel='docs/project/current-state-register.md'; t=read(rel)
+          t=must_replace(t,'version: 3.7.0','version: 3.8.0','state version')
+          t=must_replace(t,'last_updated: 2026-09-04','last_updated: 2026-09-05','state date')
+          start=t.index('### 8.4 Próxima maturidade O/C')
+          end=t.index('## 10. Homes públicas — estado de auditoria', start)
+          block='''### 8.4 Próxima maturidade O/C\n\nO mapa lógico de superfícies e estados **ainda não é canônico**. Uma proposta pré-auditoria permanece congelada e sem autoridade até ser reavaliada contra o corpus limpo.\n\nA documentação O/C deve evoluir somente no plano funcional:\n\n- responsabilidades de cada superfície;\n- informação obrigatória e opcional;\n- estados e transições;\n- regras, permissões, proteções e exceções;\n- fluxos e handoffs;\n- critérios de aceitação e restrições.\n\n```text\nDOCUMENTAÇÃO\n→ DEFINE O QUE A EXPERIÊNCIA PRECISA SER CAPAZ DE COMUNICAR E FAZER\n\nDESIGN\n→ DEFINE COMO A EXPERIÊNCIA É VISUALMENTE MATERIALIZADA\n```\n\nWireframe, mockup, protótipo, layout, composição e componentes visuais **não são entregáveis normativos do GKR**. Sua definição pertence exclusivamente a Design. Essa regra não constitui autorização para iniciar Design neste checkpoint.\n\n## 9. Artefatos visuais e registries\n\nO cleanup governado de `F-006` removeu fisicamente os quatro documentos `UXA-015..018` e os dois SVGs associados. A transação foi aplicada no commit `112a1397743a39bb73f930984a8431f808103a08`.\n\nEstado comprovado no head de cleanup:\n\n- **119 SVGs físicos**;\n- **119 associações físicas**;\n- **34 perfis de rastreabilidade estáveis**;\n- `F006_DELETION_SET_ABSENT = 6/6`;\n- `F006_DIRECT_DELETED_FILENAME_HITS = 0`;\n- Semantic State Validation #827 = `SUCCESS`;\n- Mechanical Validation #1085 = `SUCCESS`;\n- F-006 Post-Delete Read-Only Proof #1 = `SUCCESS`;\n- MkDocs strict = `SUCCESS`.\n\nAs **239 menções residuais aos IDs `UXA-015..018`** encontradas pela prova são referências textuais de proveniência/estado histórico a serem lidas sem reativação dos artefatos removidos. Nenhuma referência direta aos seis nomes físicos removidos permanece.\n\n```text\nF-006\n→ STRUCTURAL AUDIT COMPLETE\n→ ABSORPTION APPLIED\n→ ACTIVE FUNCTION DEPENDENCIES RECONCILED\n→ CLEANUP ELIGIBILITY PROVEN\n→ PHYSICAL CLEANUP APPLIED 6/6\n→ POST-CLEANUP VALIDATION PASSED\n→ READ-ONLY PROOF PASSED\n→ RESOLVED\n```\n\n`F-007` permanece resolvido. A contagem de arquivos visuais deixa de ser proxy de maturidade, e `F-016` abre a retirada/reformulação repo-wide de materializações documentais que competem com a autoridade de Design.\n\n'''
+          t=t[:start]+block+t[end:]
+          write(rel,t)
+
+          # Audit authority: bump, resolve F-006, open F-016, reconcile Block 2 summary.
+          rel='docs/project/gkr-full-corpus-audit.md'; t=read(rel)
+          t=must_replace(t,'version: 1.7.0','version: 1.8.0','audit version')
+          t=must_replace(t,'last_updated: 2026-09-04','last_updated: 2026-09-05','audit date')
+          old='| F-006 | Major | UXA-015..018 e SVGs associados continuam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | **aberto; absorção aplicada, dependências funcionais reconciliadas e elegibilidade de cleanup comprovada; remoção física ainda não autorizada** |'
+          new='| F-006 | Major | UXA-015..018 e SVGs associados permaneciam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | **RESOLVED — absorção, cleanup 6/6, reconciliação, validações e prova pós-delete concluídos** |'
+          t=must_replace(t,old,new,'F006 audit row')
+          anchor='| F-015 | Major | Public Canon anterior ainda publicava fluxo/definição anterior de Oportunidade | `UPDATE + ENRICH` | reconciliado no Lote C |'
+          f016=anchor+'\n| F-016 | Major | corpus ainda contém wireframes, materializações, galerias e linguagem de UI que podem competir com Design como autoridade visual | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — desmaterialização documental repo-wide; preservar apenas conteúdo funcional necessário e proveniência legítima** |'
+          t=must_replace(t,anchor,f016,'F016 insert')
+          # Replace Block 2 stale closure section between H status block and section 11.
+          start=t.index('```text\nFOUNDATIONS / RELATIONS\n→ DEFINED')
+          end=t.index('## 11. F-008 — Estado Atual e Roadmap', start)
+          block='''```text\nFOUNDATIONS / RELATIONS\n→ DEFINED\n\nACTORS / AUTHORITIES / JOBS\n→ DEFINED\n\nAUTHENTICATED INFORMATION ARCHITECTURE\n→ DEFINED PRE-SURFACE-MAP\n\nF-006\n→ CLEANUP APPLIED 6/6\n→ POST-CLEANUP VALIDATION PASSED\n→ RESOLVED\n\nFUNCTIONAL SURFACE MAP\n→ NOT YET CANONICAL\n\nVISUAL MATERIALIZATION\n→ DESIGN-ONLY AUTHORITY\n\nUXA-102 / V5\n→ NOT_STARTED\n\nPRODUCT ENGINEERING\n→ PAUSED\n```\n\nResultado de H:\n\n> **H = AUDITED / UPDATE_APPLIED / F-006 RESOLVED.**\n\nA resolução de F-006 não autoriza Design, UI, protótipo ou Engenharia.\n\n### I — Registries / Catálogos / SVGs\n\nEstado pós-cleanup:\n\n- inventário físico: 119 SVGs;\n- 119 associações físicas;\n- 34 perfis de rastreabilidade estáveis;\n- conjunto F-006 ausente 6/6;\n- referências diretas aos seis nomes físicos removidos: 0;\n- F-007 permanece resolvido;\n- maturidade visual não é inferida da presença física de SVGs.\n\nResultado de I:\n\n> **I = AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED.**\n\n### Resultado do Bloco 2\n\n```text\nG\n→ COMPLETED\n\nH\n→ AUDITED / REMEDIATED\n→ F-006 RESOLVED\n\nI\n→ AUDITED / REMEDIATED\n→ F-006 RESOLVED\n→ F-007 RESOLVED\n\nF-006 CLEANUP\n→ APPLIED 6/6\n→ VALIDATED\n\nDESIGN MATERIALIZATION\n→ EXCLUSIVE DESIGN AUTHORITY\n→ EXECUTION NOT AUTHORIZED BY THIS CLOSURE\n\nF-016\n→ OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION\n\nNEXT BLOCK J/K/L/M/N\n→ NOT RELEASED AUTOMATICALLY\n```\n\n'''
+          t=t[:start]+block+t[end:]
+          if '## F-016 — Desmaterialização documental repo-wide' not in t:
+              t += '''\n\n## F-016 — Desmaterialização documental repo-wide\n\nA auditoria estabelece uma nova fronteira estrutural obrigatória:\n\n```text\nGKR\n→ intenção, conteúdo, informação, estados, regras, comportamento, permissões, fluxos, relações, requisitos, restrições, critérios e handoff\n\nDESIGN\n→ composição visual, layout, posicionamento, wireframes, mockups, protótipos, componentes visuais, aparência e materialização final\n```\n\nO corpus ainda expõe artefatos e nomenclatura produzidos em ciclos anteriores — incluindo páginas `low-fidelity-wireframe`, `materialization`, galerias visuais e programas de wireframes. Sua presença física não é automaticamente justificável como documentação normativa.\n\nCada ocorrência deverá ser classificada individualmente como:\n\n- `KEEP_FUNCTIONAL` — manter somente conteúdo funcional que não materializa UI;\n- `REWRITE_FUNCTIONAL` — reescrever retirando decisões visuais e preservando contrato funcional;\n- `REMOVE_AFTER_ABSORPTION` — absorver conteúdo funcional único e remover materialização;\n- `REMOVE` — eliminar quando não houver função corrente nem conteúdo material exclusivo;\n- `HISTORICAL_PROVENANCE_ONLY` — manter apenas quando a evidência histórica possuir função documental real e explícita.\n\nA frente deve incluir `mkdocs.yml`, `docs/assets/wireframes/`, galerias, catálogos e a família UXA, sem assumir que todo SVG ou todo documento histórico é removível.\n\nCritério de encerramento: **o GKR não pode competir com Design na definição de interface**.\n'''
+          write(rel,t)
+
+          # Roadmap: bump and replace execution sequence; F-016 becomes next governed audit front.
+          rel='docs/roadmap.md'; t=read(rel)
+          t=must_replace(t,'id: ROADMAP-13.7.0','id: ROADMAP-13.8.0','roadmap id')
+          t=must_replace(t,'version: 13.7.0','version: 13.8.0','roadmap version')
+          t=must_replace(t,'last_updated: 2026-09-04','last_updated: 2026-09-05','roadmap date')
+          old='''H. ORGANIZAÇÃO / COLETIVO                [AUDITED / UPDATE_APPLIED / F-006 OPEN]\n↓\nI. REGISTRIES / CATÁLOGOS / SVGs         [AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED]\n↓\nGATE. AUTORIZAÇÃO HUMANA CLEANUP F-006   [PENDING]\n↓\nSE AUTORIZADO: REMOVER UXA-015..018 + antigo ativo visual F-006 de ORG-001 + antigo ativo visual F-006 de COL-001; RECONCILIAR LINKS/CATALOG/GALLERY/REGISTRY/TRACEABILITY NA MESMA TRANSAÇÃO [PENDING]\n↓\nRECOMPUTAÇÃO / VALIDAÇÕES / REVIEW       [PENDING]\n↓\nDECISÃO DE FECHAMENTO F-006 E G/H/I      [POST-CLEANUP GATES]'''
+          new='''H. ORGANIZAÇÃO / COLETIVO                [AUDITED / UPDATE_APPLIED / F-006 RESOLVED]\n↓\nI. REGISTRIES / CATÁLOGOS / SVGs         [AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED]\n↓\nF-006 CLEANUP 6/6                        [APPLIED / VALIDATED / RESOLVED]\n↓\nF-016 DESMATERIALIZAÇÃO DOCUMENTAL       [OPEN / NEXT PRIORITY]\n↓\nAUDITAR WIREFRAMES / MATERIALIZATIONS / GALLERIES / MENU / SVGs [PENDING]\n↓\nABSORVER CONTEÚDO FUNCIONAL ÚNICO + REMOVER/REESCREVER MATERIALIZAÇÕES INDEVIDAS [PENDING]'''
+          t=must_replace(t,old,new,'roadmap sequence')
+          t=t.replace('`UXA-015..018` permanecem históricos/superseded como autoridade visual e fisicamente preservados.', '`UXA-015..018` permanecem históricos/superseded como autoridade visual e foram removidos fisicamente do corpus corrente por F-006.')
+          t=t.replace('A elegibilidade de cleanup de `F-006` está comprovada documentalmente, mas os quatro documentos `UXA-015..018` e os dois SVGs associados continuam fisicamente preservados. Qualquer remoção exige autorização humana separada e, se ocorrer, deve reconciliar registries/catalog/gallery/traceability, links e contagens no mesmo ciclo antes de nova validação e review.', 'O cleanup de `F-006` foi aplicado 6/6 e validado por Semantic #827, Mechanical #1085 e prova read-only pós-delete. `F-006` está resolvido; `F-016` passa a governar a desmaterialização documental repo-wide.')
+          write(rel,t)
+
+          # O/C UX state: replace stale F-006 gate with closure and Design-only rule.
+          rel='docs/experience-architecture/organizations-collectives-ux-state.md'; t=read(rel)
+          t=must_replace(t,'version: 1.2.0','version: 1.3.0','ux state version')
+          t=must_replace(t,'last_updated: 2026-08-30','last_updated: 2026-09-05','ux state date')
+          t=t.replace('title: Organizações e Coletivos — Estado de UX e Wireframes','title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design')
+          t=t.replace('# Organizações e Coletivos — Estado de UX e Wireframes','# Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design')
+          start=t.index('### 11.4 Efeito sobre F-006')
+          end=t.index('## 12. Regra final', start)
+          block='''### 11.4 Fechamento de F-006\n\nO conteúdo funcional material válido de `UXA-015..018` foi absorvido nas autoridades posteriores; dependências funcionais ativas foram reconciliadas; a remoção física governada foi autorizada e executada; as contagens e instrumentos afetados foram reconciliados.\n\n```text\nF-006\n→ STRUCTURAL AUDIT COMPLETE\n→ ABSORPTION_APPLIED\n→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED\n→ CLEANUP_ELIGIBILITY_PROVEN\n→ PHYSICAL_CLEANUP_APPLIED_6_OF_6\n→ SEMANTIC_827_SUCCESS\n→ MECHANICAL_1085_SUCCESS\n→ READ_ONLY_POST_DELETE_PROOF_SUCCESS\n→ RESOLVED\n```\n\nA proveniência permanece no histórico Git e em referências textuais explicitamente históricas. Nenhum desses IDs ou antigos ativos pode voltar a operar como baseline visual ou requisito de materialização.\n\n'''
+          t=t[:start]+block+t[end:]
+          t=t.replace('> **Nenhum artefato histórico deve antecipar o estado de maturidade da experiência. Primeiro definimos; depois materializamos; depois validamos.**','> **O GKR define função, conteúdo, estados, regras, fluxos e critérios; Design é a autoridade exclusiva para wireframes, mockups, protótipos, layout e materialização visual. Artefatos históricos não podem antecipar nem restringir essa autoridade.**')
+          write(rel,t)
+
+          # Immediate active registries/galleries: remove false post-cleanup present-tense claims.
+          replacements={
+            'docs/journeys/screen-gallery.md':[
+              ('Após a reconciliação pós-PR #313/#314, a presença de um SVG na galeria não significa que ele permaneça como wireframe vigente. Em particular, os artefatos associados a `UXA-015..018` são históricos `superseded` e permanecem apenas para rastreabilidade.','Após o cleanup F-006, os artefatos físicos associados a `UXA-015..018` não existem mais no corpus corrente. Os IDs permanecem somente como proveniência histórica quando citados; nenhuma galeria transfere autoridade visual à documentação.')],
+            'docs/journeys/screen-gallery-collectives.md':[
+              ('A eventual autorização dessa frente somente poderá ser considerada após a sequência governada de `F-006`: autorização humana separada para cleanup → se autorizada, remoção dos quatro Markdown `UXA-015..018` e dos dois SVGs associados com reconciliação transacional → recomputação da árvore resultante → validações Semantic + Mechanical → review repo-wide → decisão de fechamento de `F-006` e G/H/I.','A sequência governada de `F-006` foi concluída e validada. O trabalho posterior sobre superfícies do Coletivo permanece funcional/documental; qualquer materialização visual pertence exclusivamente a Design e não é autorizada por este fechamento.')],
+            'docs/journeys/surface-registry-organization-details.md':[
+              ('Ele permanece fisicamente no repositório apenas para rastreabilidade e não constitui wireframe vigente, baseline de produto ou autoridade de design da experiência autenticada da Organização.','O ativo físico foi removido por F-006; sua proveniência permanece no histórico Git e não constitui baseline de produto ou autoridade de Design da experiência autenticada da Organização.'),
+              ('wireframe principal autenticado **pendente**','contrato funcional de superfície ainda sujeito à consolidação; materialização visual = Design-only'),
+              ('**mapa final de superfícies, wireframe principal autenticado e matriz visual institucional completa pendentes**','**mapa funcional de superfícies/estados ainda sujeito à consolidação; materialização visual e matriz visual pertencem a Design**')],
+            'docs/journeys/surface-registry.md':[
+              ('`UXA-015`/SVG associado somente como histórico superseded','`UXA-015` removida do corpus corrente; proveniência histórica no Git'),
+              ('**contratado; wireframe principal pendente**','**contratado funcionalmente; materialização visual fora da autoridade documental**')],
+            'docs/experience-architecture/organizations-collectives-authenticated-actors-authorities-and-jobs.md':[
+              ('Enquanto `F-006` permanecer aberto, a sequência governada prioritária é: autorização humana separada para cleanup → se autorizada, remoção dos quatro Markdown `UXA-015..018` e dos dois SVGs associados com reconciliação transacional → recomputação da árvore resultante → validações Semantic + Mechanical → review repo-wide → decisão de fechamento de `F-006` e G/H/I.','A sequência governada de `F-006` foi concluída: autorização, cleanup 6/6, reconciliação, validações e prova pós-delete. `F-006` está resolvido. A continuidade desta autoridade permanece funcional e não autoriza materialização visual.')],
+            'docs/project/post-313-organizations-collectives-state-reconciliation.md':[
+              ('Os SVGs associados a `UXA-015` e `UXA-016` permanecem fisicamente no repositório por rastreabilidade histórica enquanto a auditoria integral decide seu destino final.','Os antigos SVGs associados a `UXA-015` e `UXA-016` foram removidos do corpus corrente pelo cleanup governado F-006; a proveniência permanece no histórico Git.'),
+              ('A remoção física desses artefatos continua condicionada a autorização humana separada e explícita. `F-006` permanece aberto durante autorização, cleanup, reconciliação, recomputação, validações e novo review; seu fechamento somente poderá ser decidido depois desses gates.','A remoção física foi autorizada e executada por F-006; reconciliação, recomputação, validações e prova pós-delete foram concluídas e F-006 foi posteriormente adjudicado como resolvido.'),
+              ('A permanência física de `UXA-015..018` e dos SVGs associados continua obrigatória enquanto não houver autorização humana separada; se o cleanup for autorizado, remoção, reconciliação dos instrumentos afetados, recomputação, validações e novo review devem ocorrer antes de qualquer decisão de fechamento.','O cleanup governado foi autorizado, aplicado 6/6 e validado; a proveniência histórica permanece sem dependência física.'),
+              ('`UXA-015..018` e os dois SVGs associados não serão removidos por conveniência de contagem.','`UXA-015..018` e os dois SVGs associados foram removidos somente após prova de absorção, autorização e cleanup governado — não por conveniência de contagem.'),
+              ('2. se autorizado, remover os quatro documentos `UXA-015..018` e os dois SVGs associados e, na mesma transação, reconciliar links, metadados, catálogo, gallery, registry e traceability afetados;','2. etapa concluída: os quatro documentos `UXA-015..018` e os dois SVGs associados foram removidos e os instrumentos afetados foram reconciliados na mesma transação;')],
+          }
+          for rel,pairs in replacements.items():
+              t=read(rel)
+              for old,new in pairs:
+                  if old in t: t=t.replace(old,new)
+              write(rel,t)
+
+          # Hard assertions for current authorities.
+          current_authorities=['README.md','docs/index.md','docs/project/current-state-register.md','docs/project/gkr-full-corpus-audit.md','docs/roadmap.md','docs/experience-architecture/organizations-collectives-ux-state.md']
+          forbidden=['PHYSICAL_REMOVAL_NOT_AUTHORIZED','remoção física ainda não autorizada','nenhum `UXA-015..018` ou SVG associado possui remoção autorizada','F-006 OPEN']
+          for rel in current_authorities:
+              s=read(rel)
+              for token in forbidden:
+                  if token in s:
+                      raise SystemExit(f'POSTCONDITION FAILED stale F006 token in {rel}: {token}')
+          if '| F-016 | Major |' not in read('docs/project/gkr-full-corpus-audit.md'):
+              raise SystemExit('POSTCONDITION FAILED F-016 missing')
+          print('F006_CLOSURE_AUTHORITIES_RECONCILED=PASS')
+          print('F016_DESIGN_ONLY_FINDING_REGISTERED=PASS')
+          PY
+
+          echo '--- closure diff ---'
+          git status --short
+          git diff --stat
+
+      - name: Validate strict documentation build
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install -q -r requirements.txt
+          mkdocs build --strict
+
+      - name: Commit closure staging delta
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'Guivos'
+          git config user.email 'guivosbrasil@gmail.com'
+          git add README.md docs
+          git commit -m 'GKR: adjudicar F-006 e abrir desmaterialização documental F-016'
+          git push origin HEAD:agent/gkr-f006-closure-stage-v1
