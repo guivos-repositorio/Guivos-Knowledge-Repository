@@ -1,0 +1,87 @@
+name: F-016-A Closure Adjudication Stage
+
+on:
+  push:
+    branches:
+      - agent/gkr-f016a-closure-adjudication-stage-v1
+
+permissions:
+  contents: write
+
+jobs:
+  adjudicate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Apply F-016-A closure adjudication
+        run: python scripts/tmp_f016a_closure_adjudication.py
+      - name: Guard bounded documentation-only delta
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --check
+          test "$(git diff --name-only --diff-filter=D | wc -l | tr -d ' ')" -eq 0
+          test "$(git diff --name-only | grep -Ec '^(README.md|docs/index.md|docs/project/current-state-register.md|docs/roadmap.md|docs/project/gkr-full-corpus-audit.md|docs/experience-architecture/organizations-collectives-derived-state-audit.md|docs/experience-architecture/public-specialized-homes-reconciliation.md|docs/experience-architecture/uxa-047-101-index.md|docs/experience-architecture/index.md|docs/journeys/index.md|docs/journeys/screen-catalog.md|docs/journeys/screen-gallery.md|docs/journeys/screen-gallery-traceability-matrix.md)$')" -eq "$(git diff --name-only | wc -l | tr -d ' ')"
+          echo "CHANGED_FILES=$(git diff --name-only | wc -l | tr -d ' ')"
+          git diff --name-only
+      - name: Prove current F-016-A closure state before validators
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re, subprocess
+          physical=list(Path('docs/assets/wireframes').glob('*.svg')) if Path('docs/assets/wireframes').exists() else []
+          if physical: raise SystemExit(f'PHYSICAL_SVG_COUNT={len(physical)}')
+          required={
+            'README.md':['F-016-A','→ RESOLVED','PHYSICAL SVG COUNT = 0'],
+            'docs/index.md':['F-016-A = RESOLVED','0 SVGs físicos'],
+            'docs/project/current-state-register.md':['version: 3.11.0','INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS','→ RESOLVED'],
+            'docs/roadmap.md':['version: 13.11.0','F-016-A | **RESOLVED — PHYSICAL SVG COUNT 0**','Mechanical #1090'],
+            'docs/project/gkr-full-corpus-audit.md':['version: 1.11.0','F-016-A — camada física SVG — RESOLVED','POST-DELETE READ-ONLY PROOF V2'],
+            'docs/journeys/index.md':['version: 0.43.0','| F-016-A | `resolved` |'],
+            'docs/journeys/screen-catalog.md':['version: 0.34.0','| catálogo físico | **0 SVGs**'],
+          }
+          for rel,tokens in required.items():
+              text=Path(rel).read_text(encoding='utf-8')
+              for token in tokens:
+                  if token not in text: raise SystemExit(f'MISSING_TOKEN {rel}: {token}')
+          # No current-authority token may still say F-016-A physical cleanup is unauthorized/pending.
+          current_files=['README.md','docs/index.md','docs/project/current-state-register.md','docs/roadmap.md','docs/project/gkr-full-corpus-audit.md','docs/experience-architecture/organizations-collectives-derived-state-audit.md','docs/experience-architecture/public-specialized-homes-reconciliation.md','docs/experience-architecture/uxa-047-101-index.md','docs/experience-architecture/index.md','docs/journeys/index.md','docs/journeys/screen-catalog.md']
+          bad=[]
+          for rel in current_files:
+              text=Path(rel).read_text(encoding='utf-8')
+              for pat in [r'F-016-A.{0,180}PHYSICAL_CLEANUP_NOT_AUTHORIZED',r'F-016-A.{0,180}physical cleanup not authorized',r'F-016-A.{0,180}POST-CLEANUP VALIDATION PENDING',r'F-016-A.{0,180}FORMAL CLOSURE PENDING',r'F-016-A.{0,180}validation_in_progress']:
+                  if re.search(pat,text,re.I|re.S): bad.append((rel,pat))
+          if bad:
+              for x in bad: print('BAD_CURRENT_STATE',x)
+              raise SystemExit('STALE_CURRENT_F016A_STATE')
+          print('F016A_CURRENT_CLOSURE_STATE=PASS')
+          PY
+      - name: Install documentation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+      - name: Validate semantic state
+        run: python scripts/validate_semantic_state.py
+      - name: Validate repository structure
+        run: python scripts/validate_gkr.py
+      - name: Validate legacy nomenclature
+        run: python scripts/validate_legacy_nomenclature.py
+      - name: Build MkDocs strict
+        run: mkdocs build --strict --site-dir /tmp/gkr-site
+      - name: Commit validated adjudication candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Guivos"
+          git config user.email "guivosbrasil@gmail.com"
+          git add -A
+          git commit -m "stage: adjudicar fechamento F-016-A [skip ci]"
+          git push origin HEAD:agent/gkr-f016a-closure-adjudication-stage-v1
