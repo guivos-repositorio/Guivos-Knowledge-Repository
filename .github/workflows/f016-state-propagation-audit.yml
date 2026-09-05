@@ -1,0 +1,64 @@
+name: F-016 State Propagation Read-Only Audit
+
+on:
+  push:
+    branches:
+      - agent/gkr-f016-state-propagation-audit-v1
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 549fe10bb7d21eb38961fa9b611e68c53b43f1db
+          fetch-depth: 1
+
+      - name: Locate stale current-state claims after F-006 closure
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re, subprocess
+
+          target='549fe10bb7d21eb38961fa9b611e68c53b43f1db'
+          actual=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          if actual != target:
+              raise SystemExit(f'WRONG_HEAD={actual}')
+
+          tracked=[x.decode() for x in subprocess.check_output(['git','ls-files','-z']).split(b'\0') if x]
+          patterns={
+            'F006_OPEN': re.compile(r'F-006(?:_OPEN|\s+OPEN|\s*→\s*OPEN)', re.I),
+            'F006_AUTH_PENDING': re.compile(r'(?:autoriza.{0,80}F-006|F-006.{0,80}autoriza)', re.I),
+            'F006_PHYSICAL_NOT_AUTH': re.compile(r'F-006.{0,180}(?:PHYSICAL_REMOVAL_NOT_AUTHORIZED|remoção física.{0,40}(?:não autorizada|continua não autorizada))', re.I|re.S),
+            'SVG_121': re.compile(r'121\s+SVG', re.I),
+            'STATE_3_7': re.compile(r'GKR-STATE-001(?:\s+|\s*\|\s*|\s*\n\s*→\s*)v?3\.7\.0', re.I),
+          }
+
+          hits=[]
+          for rel in tracked:
+              p=Path(rel)
+              try:
+                  txt=p.read_text(encoding='utf-8')
+              except (UnicodeDecodeError,IsADirectoryError):
+                  continue
+              for name,pat in patterns.items():
+                  for m in pat.finditer(txt):
+                      line=txt.count('\n',0,m.start())+1
+                      snippet=' '.join(txt[m.start():m.end()].split())[:240]
+                      hits.append((name,rel,line,snippet))
+
+          print(f'EXACT_HEAD={actual}')
+          print(f'TOTAL_STALE_PATTERN_HITS={len(hits)}')
+          by={}
+          for name,rel,line,snip in hits:
+              by.setdefault(name,set()).add(rel)
+              print(f'{name}\t{rel}:{line}\t{snip}')
+          print('--- FILE_COUNTS_BY_PATTERN ---')
+          for name in patterns:
+              print(f'{name}\t{len(by.get(name,set()))}')
+          PY
