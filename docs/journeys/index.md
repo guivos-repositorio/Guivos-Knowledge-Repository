@@ -104,12 +104,12 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | Jornada da Pessoa | `draft` | V4 UXA-101; UXA-102 não iniciada |
 | Jornada do Coletivo | `draft` | Jobs + IA definidos pre-surface-map; mapa final e wireframe principal pendentes |
 | Jornada da Organização | `draft` | Jobs + IA definidos pre-surface-map; mapa final e wireframe principal pendentes |
-| catálogo integrado | `active` 0.33.0 | **119 SVGs físicos pós-F-006**; maturidade agregada não inferida |
+| catálogo integrado | `active` 0.33.0 | **0 SVGs físicos após F-016-A**; contratos textuais preservados; maturidade agregada não inferida |
 | registro de superfícies | `active` | 57 IDs documentais |
 | registro de transições | `active` | 66 transições documentais |
-| galeria visual integrada | `active` | **119 SVGs físicos** como inventário documental; F-016 aberto |
-| matriz por SVG | `active` | **119 associações / 34 perfis estáveis / 32 perfis físicos** |
-| F-016-A | `cleanup_eligible` | 119/119 assets com perfil e referência textual; 32/32 perfis com receiver; physical cleanup not authorized |
+| galeria visual integrada | `superseded / historical_provenance_only` | camada física removida por F-016-A; sem autoridade visual corrente |
+| matriz por SVG | `superseded / historical_provenance_only` | **0 associações físicas / 34 perfis de proveniência**; sem autoridade visual |
+| F-016-A | `physical_cleanup_applied / validation_in_progress` | **119/119 SVGs removidos; 0 SVGs físicos; referências vivas reconciliadas; fechamento formal pendente de prova pós-delete** |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
