@@ -1,0 +1,81 @@
+name: F-016-A Cleanup Reference Classification
+
+on:
+  push:
+    branches:
+      - agent/gkr-f016a-cleanup-stage-v1
+
+permissions:
+  contents: read
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 12d95503ae0c386286fa663438e5cedcae9a4d8d
+          fetch-depth: 1
+      - name: Classify every physical SVG reference
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import collections, re, subprocess
+
+          target='12d95503ae0c386286fa663438e5cedcae9a4d8d'
+          actual=subprocess.check_output(['git','rev-parse','HEAD'], text=True).strip()
+          if actual != target:
+              raise SystemExit(f'WRONG_HEAD={actual}')
+
+          tracked=[x.decode() for x in subprocess.check_output(['git','ls-files','-z']).split(b'\0') if x]
+          assets=sorted(x for x in tracked if x.startswith('docs/assets/wireframes/') and x.endswith('.svg'))
+          if len(assets) != 119:
+              raise SystemExit(f'PHYSICAL_SVG_COUNT={len(assets)} expected 119')
+          basenames={Path(a).name for a in assets}
+
+          cats=collections.Counter()
+          files=collections.defaultdict(collections.Counter)
+          hits=[]
+
+          md_image=re.compile(r'!\[[^\]]*\]\([^\)]*\.svg(?:#[^\)]*)?\)', re.I)
+          md_link=re.compile(r'(?<!!)\[[^\]]*\]\([^\)]*\.svg(?:#[^\)]*)?\)', re.I)
+          html_img=re.compile(r'<(?:img|object|embed)\b[^>]*\.svg[^>]*>', re.I)
+          pathish=re.compile(r'(?:docs/)?assets/wireframes/[^\s)`>"\']+\.svg', re.I)
+
+          for rel in tracked:
+              if rel in assets:
+                  continue
+              p=Path(rel)
+              try:
+                  text=p.read_text(encoding='utf-8')
+              except (UnicodeDecodeError, IsADirectoryError):
+                  continue
+              for lineno,line in enumerate(text.splitlines(),1):
+                  found=[b for b in basenames if b in line]
+                  if not found:
+                      continue
+                  if md_image.search(line): cat='MARKDOWN_IMAGE'
+                  elif html_img.search(line): cat='HTML_VISUAL_EMBED'
+                  elif md_link.search(line): cat='MARKDOWN_LINK'
+                  elif line.lstrip().startswith('|') and line.count('|') >= 2: cat='TABLE_ROW'
+                  elif pathish.search(line): cat='RAW_PATH'
+                  elif line.lstrip().startswith(('-', '*', '+')): cat='LIST_ITEM'
+                  else: cat='PROSE_OR_CODE'
+                  cats[cat]+=1
+                  files[rel][cat]+=1
+                  hits.append((rel,lineno,cat,line.strip()[:400]))
+
+          print(f'EXACT_HEAD={actual}')
+          print(f'PHYSICAL_SVG_ASSETS={len(assets)}')
+          print(f'REFERENCE_LINES={len(hits)}')
+          print('CATEGORY_COUNTS=' + ','.join(f'{k}:{v}' for k,v in sorted(cats.items())))
+          print(f'AFFECTED_FILES={len(files)}')
+          print('--- FILE_SUMMARY ---')
+          for rel in sorted(files):
+              print(rel+'\t'+','.join(f'{k}:{v}' for k,v in sorted(files[rel].items())))
+          print('--- LINE_HITS ---')
+          for rel,lineno,cat,snip in hits:
+              print(f'{rel}:{lineno}\t{cat}\t{snip}')
+          PY
