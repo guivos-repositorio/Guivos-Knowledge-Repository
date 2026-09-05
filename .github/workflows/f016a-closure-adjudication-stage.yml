@@ -1,4 +1,4 @@
-name: F-016 UXA-081-085 Canonical Cleanup Transaction
+name: F-016 UXA-081-085 Post-Delete Read-Only Proof
 
 on:
   push:
@@ -6,33 +6,19 @@ on:
       - agent/gkr-f016a-closure-adjudication-stage-v1
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  canonical-cleanup:
+  post-delete-proof:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout exact authorized canonical head
+      - name: Checkout exact final canonical head read-only
         uses: actions/checkout@v4
         with:
-          ref: 78534bf86acdc5da5f76e558b0df2347e6b5a111
+          ref: 72a20d43f12d7efb9c646368ec009828c607924f
           fetch-depth: 1
 
-      - name: Verify exact immutable input and remote branch
-        shell: bash
-        run: |
-          set -euo pipefail
-          HEAD='78534bf86acdc5da5f76e558b0df2347e6b5a111'
-          TREE='6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4'
-          BRANCH='agent/gkr-global-audit-block-2-ghi-v1'
-          test "$(git rev-parse HEAD)" = "$HEAD"
-          test "$(git rev-parse HEAD^{tree})" = "$TREE"
-          test -z "$(git status --porcelain)"
-          remote_head="$(git ls-remote origin "refs/heads/$BRANCH" | cut -f1)"
-          test "$remote_head" = "$HEAD"
-          echo CANONICAL_REMOTE_INPUT_CONFIRMED=$remote_head
-
-      - name: Apply exact authorized bounded transaction
+      - name: Prove exact immutable input and cleanup closure
         shell: bash
         run: |
           set -euo pipefail
@@ -40,8 +26,8 @@ jobs:
           from pathlib import Path
           import re, subprocess
 
-          HEAD='78534bf86acdc5da5f76e558b0df2347e6b5a111'
-          TREE='6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4'
+          HEAD='72a20d43f12d7efb9c646368ec009828c607924f'
+          TREE='872185d998a77e3610446a01b4f7f8f376e8b9fb'
           targets={f'UXA-{n:03d}' for n in range(81,86)}
           deleted={
             'UXA-081':'docs/experience-architecture/uxa-081-integrated-screen-gallery-and-coverage-audit.md',
@@ -50,135 +36,70 @@ jobs:
             'UXA-084':'docs/experience-architecture/uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md',
             'UXA-085':'docs/experience-architecture/uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md',
           }
-          relations={
-            'docs/experience-architecture/uxa-086-collective-responsible-overview-low-fidelity-wireframe.md': {'UXA-085'},
-            'docs/journeys/screen-catalog.md': {'UXA-085'},
-            'docs/journeys/index.md': {'UXA-085'},
-            'docs/project/uxa-085-pr-checkpoint.md': {'UXA-085'},
-            'docs/project/canonical-consolidation-addenda-index.md': {'UXA-084'},
-            'docs/project/p1-post-uxa084-rebaseline-2026-08-06.md': {'UXA-084'},
-            'docs/project/changelog-uxa-085-2026-08-07.md': {'UXA-085'},
-            'docs/experience-architecture/uxa-047-098-index.md': {'UXA-085'},
-            'docs/experience-architecture/uxa-047-084-index.md': {'UXA-084','UXA-085'},
-            'docs/experience-architecture/uxa-047-085-index.md': {'UXA-085'},
-            'docs/experience-architecture/index.md': {'UXA-085'},
-          }
-          expected_modified=set(relations) | {
-            'docs/experience-architecture/uxa-047-101-index.md',
-            'docs/index.md',
-            'docs/project/gkr-full-corpus-audit.md',
-            'mkdocs.yml',
-            'scripts/validate_semantic_state.py',
-          }
-          expected_deleted=set(deleted.values())
 
           assert subprocess.check_output(['git','rev-parse','HEAD']).decode().strip()==HEAD
           assert subprocess.check_output(['git','rev-parse','HEAD^{tree}']).decode().strip()==TREE
+          assert not subprocess.check_output(['git','status','--porcelain']).decode().strip()
 
-          def remove_frontmatter_tokens(path, tokens):
-              p=Path(path); text=p.read_text(encoding='utf-8')
-              assert text.startswith('---\n')
-              _, fm, body=text.split('---\n',2)
-              lines=fm.splitlines(keepends=True)
-              field=None; removed=[]; out=[]
-              for line in lines:
-                  stripped=line.rstrip('\n')
-                  mk=re.match(r'^([A-Za-z_][A-Za-z0-9_-]*):\s*$',stripped)
-                  if mk:
-                      field=mk.group(1); out.append(line); continue
-                  if re.match(r'^[A-Za-z_][A-Za-z0-9_-]*:',stripped):
-                      field=None; out.append(line); continue
-                  mi=re.match(r'^(\s*)-\s*([^#\s]+)(.*)$',stripped)
-                  if mi and field in {'depends_on','related'}:
-                      token=mi.group(2).strip('"\'')
-                      if token in tokens:
-                          removed.append((field,token)); continue
-                  out.append(line)
-              assert {tok for _,tok in removed}==tokens, (path,removed,tokens)
-              p.write_text('---\n'+''.join(out)+'---\n'+body,encoding='utf-8')
-              return removed
+          absent=sum(not Path(p).exists() for p in deleted.values())
+          assert absent==5
+          print('UXA081_085_FILES_ABSENT=5/5')
 
-          all_removed=[]
-          for path,toks in relations.items():
-              removed=remove_frontmatter_tokens(path,toks)
-              all_removed.extend((path,field,tok) for field,tok in removed)
-          assert sum(1 for _,field,_ in all_removed if field=='depends_on')==1
-          assert sum(1 for _,field,_ in all_removed if field=='related')==11
-          print('STRUCTURAL_DEPENDS_ON_REMOVED=1')
-          print('STRUCTURAL_RELATED_REMOVED=11')
+          # No live Markdown links to deleted files anywhere in the current corpus.
+          basenames={Path(p).name for p in deleted.values()}
+          link_re=re.compile(r'\[[^\]]*\]\(([^)]+)\)')
+          live_links=[]
+          for p in Path('docs').rglob('*.md'):
+              text=p.read_text(encoding='utf-8')
+              for m in link_re.finditer(text):
+                  target=m.group(1).split('#',1)[0].strip()
+                  if Path(target).name in basenames:
+                      live_links.append((str(p),m.group(1)))
+          assert not live_links, live_links
+          print('LIVE_MARKDOWN_LINKS_TO_DELETED_UXA081_085=0')
 
-          link_targets={Path(v).name:k for k,v in deleted.items()}
-          link_removed=0
-          link_re=re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
-          for path in ['docs/experience-architecture/uxa-047-098-index.md','docs/experience-architecture/uxa-047-101-index.md']:
-              p=Path(path); old=p.read_text(encoding='utf-8')
-              for m in link_re.finditer(old):
-                  if Path(m.group(2).split('#',1)[0].strip()).name in link_targets: link_removed+=1
-              p.write_text(link_re.sub(lambda m: m.group(1) if Path(m.group(2).split('#',1)[0].strip()).name in link_targets else m.group(0),old),encoding='utf-8')
-          assert link_removed==10, link_removed
-          print('LIVE_INDEX_LINKS_NEUTRALIZED=10')
+          mk=Path('mkdocs.yml').read_text(encoding='utf-8')
+          nav_hits=[b for b in basenames if b in mk]
+          assert not nav_hits, nav_hits
+          print('MKDOCS_NAV_TO_DELETED_UXA081_085=0')
 
-          mk=Path('mkdocs.yml'); lines=mk.read_text(encoding='utf-8').splitlines(keepends=True)
-          nav_target=deleted['UXA-081'].replace('docs/','')
-          matching=[ln for ln in lines if nav_target in ln]
-          assert len(matching)==1, matching
-          mk.write_text(''.join(ln for ln in lines if nav_target not in ln),encoding='utf-8')
-          print('MKDOCS_UXA081_NAV_REMOVED=1')
-
-          p=Path('docs/index.md'); old=p.read_text(encoding='utf-8')
-          needle='A próxima subfrente é exclusivamente documental: classificar produtores de low-fidelity, documentos de validação/programação, ciclo `UXA-081..085`, galerias e demais materializações sem presumir remoção.'
-          replacement='A próxima subfrente é exclusivamente documental: classificar produtores de low-fidelity, documentos de validação/programação e demais materializações sem presumir remoção.'
-          assert old.count(needle)==1
-          p.write_text(old.replace(needle,replacement),encoding='utf-8')
-          print('DOCS_INDEX_NEXT_SUBFRONT_RECONCILED=PASS')
-
-          p=Path('docs/project/gkr-full-corpus-audit.md'); old=p.read_text(encoding='utf-8')
-          oldrow='| F-016 | Major | corpus ainda contém documentos de materialização e linguagem de UI que podem competir com Design; camada física SVG e família `screen-gallery*` já foram desmaterializadas após prova de absorção | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — F-016-A RESOLVED; família `screen-gallery*` removida 8/8 após absorção; demais famílias Markdown continuam em auditoria** |'
-          newrow='| F-016 | Major | corpus ainda contém documentos de materialização e linguagem de UI que podem competir com Design; camada física SVG, família `screen-gallery*` e ciclo `UXA-081..085` já foram desmaterializados após prova de absorção | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — F-016-A RESOLVED; `screen-gallery*` removida 8/8 e `UXA-081..085` removidos 5/5 após absorção; demais famílias Markdown continuam em auditoria** |'
-          assert old.count('version: 1.12.0')==1 and old.count(oldrow)==1
-          p.write_text(old.replace('version: 1.12.0','version: 1.13.0',1).replace(oldrow,newrow,1),encoding='utf-8')
-          print('F016_AUDIT_RECONCILED=PASS')
-
-          p=Path('scripts/validate_semantic_state.py'); old=p.read_text(encoding='utf-8')
-          needle='''    for number in range(47, 102):\n        path = artifacts.get(number)\n        if path is None:\n            errors.append(f"artefato UXA-{number:03d} ausente")\n        elif path.name not in index_text:\n            errors.append(f"artefato UXA-{number:03d} não indexado: {path.name}")\n'''
-          replacement='''    removed_after_absorption = {\n        81: "uxa-081-integrated-screen-gallery-and-coverage-audit.md",\n        82: "uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md",\n        83: "uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md",\n        84: "uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md",\n        85: "uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md",\n    }\n\n    for number in range(47, 102):\n        path = artifacts.get(number)\n        if number in removed_after_absorption:\n            expected_name = removed_after_absorption[number]\n            if path is not None:\n                errors.append(f"artefato UXA-{number:03d} deveria estar ausente após cleanup governado")\n            if expected_name in index_text:\n                errors.append(f"artefato removido UXA-{number:03d} permanece indexado: {expected_name}")\n            continue\n        if path is None:\n            errors.append(f"artefato UXA-{number:03d} ausente")\n        elif path.name not in index_text:\n            errors.append(f"artefato UXA-{number:03d} não indexado: {path.name}")\n'''
-          assert old.count(needle)==1
-          p.write_text(old.replace(needle,replacement,1),encoding='utf-8')
-          print('SEMANTIC_VALIDATOR_GOVERNED_ABSENCE_RECONCILED=5')
-
-          for ident,path in deleted.items():
-              p=Path(path); assert p.exists(), (ident,path); p.unlink()
-          print('TARGET_DELETIONS=5')
-
-          remaining_dep=[]; remaining_rel=[]
-          for path in subprocess.check_output(['git','ls-files','docs/*.md','docs/**/*.md']).decode().splitlines():
-              p=Path(path)
-              if not p.exists(): continue
+          # No structural depends_on/related references remain.
+          dep=[]; rel=[]
+          for p in Path('docs').rglob('*.md'):
               text=p.read_text(encoding='utf-8')
               if not text.startswith('---\n'): continue
               fm=text.split('---\n',2)[1].splitlines(); field=None
               for line in fm:
-                  mk=re.match(r'^([A-Za-z_][A-Za-z0-9_-]*):\s*$',line)
-                  if mk: field=mk.group(1); continue
+                  mkf=re.match(r'^([A-Za-z_][A-Za-z0-9_-]*):\s*$',line)
+                  if mkf: field=mkf.group(1); continue
                   if re.match(r'^[A-Za-z_][A-Za-z0-9_-]*:',line): field=None; continue
                   mi=re.match(r'^\s*-\s*([^#\s]+)',line)
                   if mi and field in {'depends_on','related'}:
                       tok=mi.group(1).strip('"\'')
-                      if tok in targets: (remaining_dep if field=='depends_on' else remaining_rel).append((path,tok))
-          assert not remaining_dep and not remaining_rel, (remaining_dep,remaining_rel)
-          print('POST_CLEANUP_STRUCTURAL_DEPENDS_ON=0')
-          print('POST_CLEANUP_STRUCTURAL_RELATED=0')
+                      if tok in targets: (dep if field=='depends_on' else rel).append((str(p),tok))
+          assert not dep and not rel, (dep,rel)
+          print('STRUCTURAL_DEPENDS_ON_UXA081_085=0')
+          print('STRUCTURAL_RELATED_UXA081_085=0')
 
-          rows=subprocess.check_output(['git','status','--porcelain']).decode().splitlines()
-          modified={r[3:] for r in rows if r[:2].strip()=='M'}
-          deleted_now={r[3:] for r in rows if r[:2].strip()=='D'}
-          other=[r for r in rows if r[:2].strip() not in {'M','D'}]
-          assert modified==expected_modified, ('modified mismatch',sorted(modified^expected_modified),sorted(modified))
-          assert deleted_now==expected_deleted, ('deleted mismatch',sorted(deleted_now^expected_deleted),sorted(deleted_now))
-          assert not other, other
-          print('EXACT_MODIFIED_COUNT=16')
-          print('EXACT_DELETED_COUNT=5')
-          print('EXACT_CHANGED_PATHS=21')
+          # Validator must explicitly govern the five absences.
+          validator=Path('scripts/validate_semantic_state.py').read_text(encoding='utf-8')
+          for n,b in deleted.items():
+              num=int(n.split('-')[1])
+              assert f'{num}: "{Path(b).name}"' in validator
+          print('SEMANTIC_VALIDATOR_GOVERNED_ABSENCE=5/5')
+
+          audit=Path('docs/project/gkr-full-corpus-audit.md').read_text(encoding='utf-8')
+          assert 'version: 1.13.0' in audit
+          assert '`UXA-081..085` removidos 5/5 após absorção' in audit
+          print('F016_AUDIT_CLOSURE_RECORDED=PASS')
+
+          # Prior physical/gallery cleanup remains closed.
+          assert not list(Path('docs/journeys').glob('screen-gallery*.md'))
+          svg_root=Path('docs/assets/wireframes')
+          svg_count=sum(1 for _ in svg_root.rglob('*.svg')) if svg_root.exists() else 0
+          assert svg_count==0
+          print('SCREEN_GALLERY_FILES_CURRENT=0')
+          print('PHYSICAL_SVG_COUNT=0')
 
           state=Path('docs/project/current-state-register.md').read_text(encoding='utf-8')
           for phrase in [
@@ -190,15 +111,8 @@ jobs:
           ]:
               assert phrase in state
           print('DOWNSTREAM_GUARDRAILS_PRESERVED=PASS')
+          print('F016_UXA081_085_POSTDELETE_STRUCTURAL_PROOF=SUCCESS')
           PY
-
-      - name: Verify exact delta before validation
-        shell: bash
-        run: |
-          set -euo pipefail
-          git diff --stat
-          git diff --name-status
-          git diff --check
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -223,36 +137,11 @@ jobs:
       - name: Build MkDocs strict
         run: mkdocs build --strict --site-dir /tmp/gkr-site
 
-      - name: Commit exact authorized transaction
+      - name: Confirm exact final head tree and clean tracked checkout
         shell: bash
         run: |
           set -euo pipefail
-          BRANCH='agent/gkr-global-audit-block-2-ghi-v1'
-          OLD_HEAD='78534bf86acdc5da5f76e558b0df2347e6b5a111'
-          remote_head="$(git ls-remote origin "refs/heads/$BRANCH" | cut -f1)"
-          test "$remote_head" = "$OLD_HEAD"
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A
-          test "$(git diff --cached --name-only | wc -l | tr -d ' ')" = '21'
-          test "$(git diff --cached --diff-filter=D --name-only | wc -l | tr -d ' ')" = '5'
-          test "$(git diff --cached --diff-filter=M --name-only | wc -l | tr -d ' ')" = '16'
-          git diff --cached --check
-          git commit -m 'GKR: remover UXA-081..085 após prova de absorção'
-          new_head="$(git rev-parse HEAD)"
-          new_tree="$(git rev-parse HEAD^{tree})"
-          test "$(git rev-parse HEAD^)" = "$OLD_HEAD"
-          echo CANONICAL_CLEANUP_COMMIT=$new_head
-          echo CANONICAL_CLEANUP_TREE=$new_tree
-          git push origin "HEAD:refs/heads/$BRANCH"
-
-      - name: Confirm canonical branch advanced only to transaction commit
-        shell: bash
-        run: |
-          set -euo pipefail
-          BRANCH='agent/gkr-global-audit-block-2-ghi-v1'
-          new_head="$(git rev-parse HEAD)"
-          remote_head="$(git ls-remote origin "refs/heads/$BRANCH" | cut -f1)"
-          test "$remote_head" = "$new_head"
-          test -z "$(git status --porcelain)"
-          echo F016_UXA081_085_CANONICAL_CLEANUP_TRANSACTION=SUCCESS
+          test "$(git rev-parse HEAD)" = "72a20d43f12d7efb9c646368ec009828c607924f"
+          test "$(git rev-parse HEAD^{tree})" = "872185d998a77e3610446a01b4f7f8f376e8b9fb"
+          test -z "$(git status --porcelain --untracked-files=no)"
+          echo F016_UXA081_085_POSTDELETE_READ_ONLY=SUCCESS
