@@ -1,0 +1,87 @@
+name: F-006 Semantic Propagation Stage
+
+on:
+  push:
+    branches:
+      - agent/gkr-f006-semantic-sync-stage-v1
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/gkr-f006-semantic-sync-stage-v1
+          fetch-depth: 1
+
+      - name: Reconcile three semantic propagation surfaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+
+          def replace_required(path, replacements):
+              p=Path(path)
+              s=p.read_text(encoding='utf-8')
+              for old,new in replacements:
+                  if old not in s:
+                      raise SystemExit(f'PRECONDITION FAILED {path}: {old}')
+                  s=s.replace(old,new)
+              p.write_text(s,encoding='utf-8')
+
+          replace_required('README.md',[
+            ('| GKR-STATE-001 | **3.7.0** |','| GKR-STATE-001 | **3.8.0** |'),
+            ('| Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 OPEN** |','| Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 RESOLVED** |'),
+            ('| Próximo gate da auditoria | **AUTORIZAÇÃO HUMANA PARA CLEANUP FÍSICO DE F-006** |','| Próximo gate da auditoria | **F-016 — DESMATERIALIZAÇÃO DOCUMENTAL REPO-WIDE** |'),
+            ('O [Roadmap 13.7.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.','O [Roadmap 13.8.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.'),
+          ])
+
+          replace_required('docs/index.md',[
+            ('| Registro | `GKR-STATE-001` **3.7.0** |','| Registro | `GKR-STATE-001` **3.8.0** |'),
+            ('| Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 OPEN** |','| Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 RESOLVED** |'),
+            ('| Próximo gate da auditoria | **AUTORIZAÇÃO HUMANA PARA CLEANUP FÍSICO DE F-006** |','| Próximo gate da auditoria | **F-016 — DESMATERIALIZAÇÃO DOCUMENTAL REPO-WIDE** |'),
+            ('O [Roadmap 13.7.0](roadmap.md) governa a sequência atual.','O [Roadmap 13.8.0](roadmap.md) governa a sequência atual.'),
+          ])
+
+          replace_required('docs/experience-architecture/uxa-047-101-index.md',[
+            ('version: 3.7.0','version: 3.8.0'),
+            ('last_updated: 2026-09-04','last_updated: 2026-09-05'),
+            ('→ 3.7.0','→ 3.8.0'),
+            ('→ H AUDITED / UPDATE_APPLIED / F-006 OPEN','→ H AUDITED / UPDATE_APPLIED / F-006 RESOLVED'),
+            ('→ I AUDITED / UPDATE_APPLIED / F-006 OPEN','→ I AUDITED / UPDATE_APPLIED / F-006 RESOLVED'),
+            ('→ F-006 E DOWNSTREAM NÃO LIBERADOS','→ F-006 RESOLVED; J/K/L/M/N E DEMAIS DOWNSTREAM NÃO LIBERADOS'),
+            ('PRÓXIMO GATE DA AUDITORIA\n→ AUTORIZAÇÃO HUMANA SEPARADA PARA CLEANUP FÍSICO DE F-006\n→ SE AUTORIZADO: REMOÇÃO / RECONCILIAÇÃO → RECOMPUTAÇÃO → VALIDAÇÕES → REVIEW\n→ SOMENTE DEPOIS: DECISÃO DE FECHAMENTO DE F-006 E G/H/I','PRÓXIMO EIXO DA AUDITORIA\n→ F-016 — DESMATERIALIZAÇÃO DOCUMENTAL REPO-WIDE\n→ ABSORVER CONTEÚDO FUNCIONAL ÚNICO\n→ REMOVER OU REESCREVER MATERIALIZAÇÕES QUE COMPETEM COM DESIGN\n→ DESIGN É A AUTORIDADE EXCLUSIVA DA MATERIALIZAÇÃO VISUAL'),
+          ])
+
+          print('SEMANTIC_PROPAGATION_SURFACES=3')
+          PY
+          git status --short
+          git diff --stat
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate semantic state
+        run: python scripts/validate_semantic_state.py
+
+      - name: Validate strict documentation build
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install -q -r requirements.txt
+          mkdocs build --strict
+
+      - name: Commit validated semantic propagation
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'Guivos'
+          git config user.email 'guivosbrasil@gmail.com'
+          git add README.md docs/index.md docs/experience-architecture/uxa-047-101-index.md
+          git commit -m 'GKR: sincronizar propagação semântica do fechamento F-006'
+          git push origin HEAD:agent/gkr-f006-semantic-sync-stage-v1
