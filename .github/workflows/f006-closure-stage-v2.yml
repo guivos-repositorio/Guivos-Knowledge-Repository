@@ -1,0 +1,55 @@
+name: F-006 Closure Stage v2
+
+on:
+  push:
+    branches:
+      - agent/gkr-f006-closure-stage-v1
+
+permissions:
+  contents: write
+
+jobs:
+  closure-v2:
+    if: contains(github.event.head_commit.message, 'refine F-006 closure staging assertion')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/gkr-f006-closure-stage-v1
+          fetch-depth: 1
+
+      - name: Reuse closure transformation with precise assertions
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          src=Path('.github/workflows/f006-closure-stage.yml').read_text(encoding='utf-8')
+          start=src.index("          python - <<'PY'\n") + len("          python - <<'PY'\n")
+          end=src.index("\n          PY\n", start)
+          lines=src[start:end].splitlines()
+          code='\n'.join(line[10:] if line.startswith('          ') else line for line in lines)
+          code=code.replace(",\'F-006 OPEN\'", "")
+          Path('/tmp/f006_closure.py').write_text(code,encoding='utf-8')
+          PY
+          python /tmp/f006_closure.py
+          echo '--- closure diff ---'
+          git status --short
+          git diff --stat
+
+      - name: Validate strict documentation build
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install -q -r requirements.txt
+          mkdocs build --strict
+
+      - name: Commit validated closure delta
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'Guivos'
+          git config user.email 'guivosbrasil@gmail.com'
+          git add README.md docs
+          git commit -m 'GKR: adjudicar F-006 e abrir desmaterialização documental F-016'
+          git push origin HEAD:agent/gkr-f006-closure-stage-v1
