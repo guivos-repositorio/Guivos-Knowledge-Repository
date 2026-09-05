@@ -1,4 +1,4 @@
-name: F-016 Screen Gallery Receiver Proof
+name: F-016 Gallery Second-Order Reference Proof
 
 on:
   push:
@@ -6,322 +6,113 @@ on:
       - agent/gkr-f016a-closure-adjudication-stage-v1
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  receiver-proof:
+  second-order-proof:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout temporary staging branch
-        uses: actions/checkout@v4
-        with:
-          ref: agent/gkr-f016a-closure-adjudication-stage-v1
-          path: stage
-          fetch-depth: 0
-
       - name: Checkout exact canonical PR head read-only
         uses: actions/checkout@v4
         with:
           ref: b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938
-          path: canonical
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Verify exact canonical input
-        working-directory: canonical
         shell: bash
         run: |
           set -euo pipefail
           test "$(git rev-parse HEAD)" = "b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
           test "$(git rev-parse HEAD^{tree})" = "138a24d79e798fc38742a2c2e60a7091abf1d150"
           test -z "$(git status --porcelain)"
-          echo "CANONICAL_HEAD=b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
-          echo "CANONICAL_TREE=138a24d79e798fc38742a2c2e60a7091abf1d150"
 
-      - name: Build deterministic receiver and reference proof
+      - name: Prove second-order references and R01-R34 usage
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
-          import collections
-          import json
-          import re
+          import re, subprocess
 
-          ROOT = Path('canonical')
-          OUT = Path('stage/tmp')
-          OUT.mkdir(parents=True, exist_ok=True)
-          HEAD = 'b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938'
-          TREE = '138a24d79e798fc38742a2c2e60a7091abf1d150'
-
-          GALLERIES = [
-              'docs/journeys/screen-gallery.md',
-              'docs/journeys/screen-gallery-traceability-matrix.md',
-              'docs/journeys/screen-gallery-person.md',
-              'docs/journeys/screen-gallery-opportunities-organization.md',
-              'docs/journeys/screen-gallery-collectives.md',
-              'docs/journeys/screen-gallery-opportunity-boost-exposure.md',
-              'docs/journeys/screen-gallery-opportunity-boost-operations.md',
-              'docs/journeys/screen-gallery-plans-billing.md',
+          galleries = [
+            'docs/journeys/screen-gallery.md',
+            'docs/journeys/screen-gallery-traceability-matrix.md',
+            'docs/journeys/screen-gallery-person.md',
+            'docs/journeys/screen-gallery-opportunities-organization.md',
+            'docs/journeys/screen-gallery-collectives.md',
+            'docs/journeys/screen-gallery-opportunity-boost-exposure.md',
+            'docs/journeys/screen-gallery-opportunity-boost-operations.md',
+            'docs/journeys/screen-gallery-plans-billing.md',
           ]
-          GSET = set(GALLERIES)
-          for rel in GALLERIES:
-              assert (ROOT / rel).is_file(), rel
-
-          text_exts = {'.md', '.yml', '.yaml', '.py', '.sh', '.json', '.toml', '.txt'}
-          tracked = []
-          import subprocess
-          raw = subprocess.check_output(['git', '-C', str(ROOT), 'ls-files', '-z'])
-          for item in raw.decode('utf-8').split('\0'):
-              if not item:
-                  continue
-              p = ROOT / item
-              if p.is_file() and (p.suffix.lower() in text_exts or item == 'mkdocs.yml'):
-                  tracked.append(item)
-          tracked = sorted(set(tracked))
+          gset = set(galleries)
+          text_exts = {'.md','.yml','.yaml','.py','.sh','.json','.toml','.txt'}
+          tracked = subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
           texts = {}
           for rel in tracked:
-              try:
-                  texts[rel] = (ROOT / rel).read_text(encoding='utf-8')
-              except UnicodeDecodeError:
-                  pass
+            if not rel: continue
+            p=Path(rel)
+            if p.is_file() and (p.suffix.lower() in text_exts or rel=='mkdocs.yml'):
+              try: texts[rel]=p.read_text(encoding='utf-8')
+              except UnicodeDecodeError: pass
 
-          def frontmatter(text):
-              if not text.startswith('---\n'):
-                  return {}, []
-              end = text.find('\n---\n', 4)
-              if end < 0:
-                  return {}, []
-              block = text[4:end]
-              scalar = {}
-              lines = block.splitlines()
-              for line in lines:
-                  m = re.match(r'^([A-Za-z0-9_-]+):\s*(.*?)\s*$', line)
-                  if m and m.group(2):
-                      scalar[m.group(1)] = m.group(2).strip().strip('"\'')
-              return scalar, lines
+          def fm(text):
+            out={}
+            if not text.startswith('---\n'): return out
+            end=text.find('\n---\n',4)
+            if end<0: return out
+            for line in text[4:end].splitlines():
+              m=re.match(r'^([A-Za-z0-9_-]+):\s*(.*?)\s*$', line)
+              if m and m.group(2): out[m.group(1)]=m.group(2).strip().strip('"\'')
+            return out
 
-          meta = {}
-          id_index = collections.defaultdict(list)
-          for rel, text in texts.items():
-              if not rel.endswith('.md'):
-                  continue
-              scalar, _ = frontmatter(text)
-              meta[rel] = scalar
-              doc_id = scalar.get('id') or scalar.get('ID')
-              if doc_id:
-                  id_index[doc_id].append(rel)
+          metas={rel:fm(txt) for rel,txt in texts.items() if rel.endswith('.md')}
+          print('=== GALLERY INBOUND REFERENCES ===')
+          for target in galleries:
+            tmeta=metas.get(target,{})
+            docid=tmeta.get('id')
+            base=Path(target).name
+            hits=[]
+            for src,txt in sorted(texts.items()):
+              if src==target: continue
+              for i,line in enumerate(txt.splitlines(),1):
+                reasons=[]
+                if base in line: reasons.append('basename')
+                if docid and docid in line: reasons.append('id')
+                if reasons:
+                  hits.append((src,i,'+'.join(reasons),line.strip()))
+            print(f'TARGET\t{target}\tID={docid}\tINBOUND_LINES={len(hits)}')
+            for src,i,reasons,line in hits:
+              sm=metas.get(src,{})
+              print('INBOUND\t{}\t{}:{}\t{}\tsrc_status={}\tsrc_maturity={}\t{}'.format(
+                target,src,i,reasons,sm.get('status'),sm.get('maturity'),line[:700]))
 
-          id_pat = re.compile(r'\b(?:UXA-\d{3}(?:-[A-Z]\d+)?|GEM-[A-Z0-9-]+|GKR-[A-Z0-9-]+|TRN-\d{3}|BND-\d{3}|(?:PER|COL|ORG|COM)-\d{3})\b')
+          print('=== R01-R34 OUTSIDE TRACEABILITY MATRIX ===')
+          matrix='docs/journeys/screen-gallery-traceability-matrix.md'
+          for n in range(1,35):
+            token=f'R{n:02d}'
+            pat=re.compile(r'(?<![A-Za-z0-9_-])'+re.escape(token)+r'(?![A-Za-z0-9_-])')
+            occ=[]
+            for src,txt in sorted(texts.items()):
+              if src==matrix: continue
+              for i,line in enumerate(txt.splitlines(),1):
+                if pat.search(line): occ.append((src,i,line.strip()))
+            print(f'PROFILE\t{token}\tOUTSIDE_MATRIX={len(occ)}')
+            for src,i,line in occ:
+              sm=metas.get(src,{})
+              print(f'PROFILE_REF\t{token}\t{src}:{i}\tsrc_status={sm.get("status")}\t{line[:700]}')
 
-          def line_hits(text, needle):
-              hits = []
-              for i, line in enumerate(text.splitlines(), 1):
-                  if needle in line:
-                      hits.append({'line': i, 'text': line.strip()[:500]})
-              return hits
+          print('=== CANONICAL REGISTRY DEPENDENCY CHECK ===')
+          for reg in ['docs/journeys/surface-registry.md','docs/journeys/transition-registry.md']:
+            txt=texts[reg]
+            refs=[]
+            for g in galleries:
+              base=Path(g).name
+              docid=metas.get(g,{}).get('id')
+              if base in txt or (docid and docid in txt): refs.append(g)
+            print(f'REGISTRY\t{reg}\tGALLERY_DEPENDENCIES={len(refs)}\t{refs}')
 
-          def non_gallery_mentions(token):
-              out = []
-              for rel, text in texts.items():
-                  if rel in GSET:
-                      continue
-                  hits = line_hits(text, token)
-                  if hits:
-                      out.append({'path': rel, 'hits': hits[:12], 'hit_count': len(hits)})
-              return out
-
-          structural_prefixes = ('.github/', 'scripts/', 'tests/', 'test/', 'tools/')
-          structural_exact = {'mkdocs.yml', 'pyproject.toml'}
-
-          records = []
-          all_gallery_ids = {}
-          for rel in GALLERIES:
-              text = texts[rel]
-              scalar = meta.get(rel, {})
-              doc_id = scalar.get('id') or scalar.get('ID')
-              all_gallery_ids[rel] = doc_id
-              basename = Path(rel).name
-              tokens = sorted(set(id_pat.findall(text)))
-              receiver_candidates = []
-              for token in tokens:
-                  mapped = [p for p in id_index.get(token, []) if p not in GSET]
-                  mentions = non_gallery_mentions(token)
-                  current_mapped = []
-                  for p in mapped:
-                      m = meta.get(p, {})
-                      current_mapped.append({
-                          'path': p,
-                          'status': m.get('status'),
-                          'version': m.get('version'),
-                          'normative': m.get('normative'),
-                          'maturity': m.get('maturity'),
-                      })
-                  receiver_candidates.append({
-                      'token': token,
-                      'frontmatter_id_matches': current_mapped,
-                      'non_gallery_mention_paths': [m['path'] for m in mentions],
-                      'non_gallery_mention_count': len(mentions),
-                  })
-
-              inbound = []
-              structural_inbound = []
-              for src, src_text in texts.items():
-                  if src == rel:
-                      continue
-                  reasons = []
-                  if basename in src_text:
-                      reasons.append('basename')
-                  if doc_id and doc_id in src_text:
-                      reasons.append('document_id')
-                  if reasons:
-                      item = {'path': src, 'reasons': reasons}
-                      inbound.append(item)
-                      if src == 'mkdocs.yml' or src in structural_exact or src.startswith(structural_prefixes):
-                          structural_inbound.append(item)
-
-              records.append({
-                  'path': rel,
-                  'id': doc_id,
-                  'status': scalar.get('status'),
-                  'version': scalar.get('version'),
-                  'normative': scalar.get('normative'),
-                  'maturity': scalar.get('maturity'),
-                  'referenced_tokens': tokens,
-                  'receiver_candidates': receiver_candidates,
-                  'inbound_refs': inbound,
-                  'inbound_ref_count': len(inbound),
-                  'structural_inbound_refs': structural_inbound,
-                  'structural_inbound_ref_count': len(structural_inbound),
-              })
-
-          # Special substantive tokens/claims needing explicit non-gallery receiver evidence.
-          proof_terms = {
-              'plans_billing': [
-                  'UXA-100', 'UXA-100-A1', 'UXA-100-A2', 'UXA-100-A3', 'UXA-100-A4',
-                  'GEM-004-PLAN-TAXONOMY-AUTHORITY-001',
-                  'PER-301', 'PER-302', 'PER-303', 'PER-304',
-                  'COL-301', 'COL-302', 'COL-303', 'COL-304',
-                  'ORG-301', 'ORG-302', 'ORG-303', 'ORG-304',
-                  'TRN-401', 'TRN-406', 'TRN-407', 'TRN-417', 'TRN-418', 'TRN-427', 'TRN-428',
-                  'BND-002',
-              ],
-              'boost_operations': [
-                  'UXA-099', 'GKR-SURF-COM-004', 'GKR-SURF-COM-005',
-                  'UXA-046', 'UXA-047', 'UXA-048', 'UXA-049', 'UXA-053', 'UXA-054', 'UXA-055',
-                  'TRN-304', 'TRN-305', 'TRN-306',
-              ],
-          }
-          special = {}
-          for group, terms in proof_terms.items():
-              special[group] = {}
-              for term in terms:
-                  special[group][term] = non_gallery_mentions(term)
-
-          # Current central registry evidence.
-          central = {}
-          for rel in ['docs/journeys/surface-registry.md', 'docs/journeys/transition-registry.md']:
-              if rel in texts:
-                  scalar = meta.get(rel, {})
-                  central[rel] = {
-                      'id': scalar.get('id'),
-                      'status': scalar.get('status'),
-                      'version': scalar.get('version'),
-                      'normative': scalar.get('normative'),
-                      'gallery_filename_mentions': {
-                          Path(g).name: len(line_hits(texts[rel], Path(g).name)) for g in GALLERIES
-                      },
-                  }
-
-          payload = {
-              'canonical_head': HEAD,
-              'canonical_tree': TREE,
-              'policy': 'read_only_receiver_and_reference_evidence_no_cleanup_authorization',
-              'central_registries': central,
-              'gallery_documents': records,
-              'special_substantive_receiver_evidence': special,
-          }
-          json_path = OUT / 'f016-screen-gallery-receiver-proof-b6dd6c35.json'
-          json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-
-          lines = [
-              '# F-016 screen-gallery receiver proof — read-only evidence', '',
-              f'- canonical head: `{HEAD}`',
-              f'- canonical tree: `{TREE}`',
-              '- policy: **receiver/reference evidence only; no cleanup authorization**', '',
-              '## Per-document reference state', '',
-          ]
-          for r in records:
-              lines += [
-                  f'### `{r["path"]}`',
-                  f'- id: `{r["id"]}`',
-                  f'- status/normative/maturity: `{r["status"]}` / `{r["normative"]}` / `{r["maturity"]}`',
-                  f'- inbound refs outside self: **{r["inbound_ref_count"]}**',
-                  f'- structural inbound refs: **{r["structural_inbound_ref_count"]}**',
-                  f'- referenced authority/state tokens: **{len(r["referenced_tokens"])}**',
-                  '',
-              ]
-              if r['inbound_refs']:
-                  lines.append('Inbound paths:')
-                  for x in r['inbound_refs']:
-                      lines.append(f'- `{x["path"]}` — {", ".join(x["reasons"]) }')
-                  lines.append('')
-              lines.append('Frontmatter-ID receiver matches outside gallery:')
-              any_match = False
-              for c in r['receiver_candidates']:
-                  for m in c['frontmatter_id_matches']:
-                      any_match = True
-                      lines.append(f'- `{c["token"]}` → `{m["path"]}` — status=`{m["status"]}` version=`{m["version"]}` normative=`{m["normative"]}` maturity=`{m["maturity"]}`')
-              if not any_match:
-                  lines.append('- none')
-              lines.append('')
-
-          lines += ['## Specialized receiver occurrence map', '']
-          for group, terms in special.items():
-              lines.append(f'### {group}')
-              for term, matches in terms.items():
-                  paths = [m['path'] for m in matches]
-                  lines.append(f'- `{term}` → {len(paths)} non-gallery path(s): ' + (', '.join(f'`{p}`' for p in paths[:20]) if paths else '**NONE**'))
-              lines.append('')
-
-          md_path = OUT / 'f016-screen-gallery-receiver-proof-b6dd6c35.md'
-          md_path.write_text('\n'.join(lines) + '\n', encoding='utf-8')
-
-          print(f'GALLERY_DOCS={len(records)}')
-          for r in records:
-              print(f'DOC\t{r["path"]}\tinbound={r["inbound_ref_count"]}\tstructural={r["structural_inbound_ref_count"]}\ttokens={len(r["referenced_tokens"])}')
-              exact_receivers = []
-              for c in r['receiver_candidates']:
-                  for m in c['frontmatter_id_matches']:
-                      exact_receivers.append((c['token'], m['path'], m['status']))
-              for token, path, status in exact_receivers:
-                  print(f'RECEIVER\t{token}\t{path}\tstatus={status}')
-          print('SPECIAL_RECEIVER_COUNTS')
-          for group, terms in special.items():
-              for term, matches in terms.items():
-                  print(f'SPECIAL\t{group}\t{term}\tpaths={len(matches)}')
+          assert subprocess.check_output(['git','rev-parse','HEAD']).decode().strip() == 'b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938'
+          assert subprocess.check_output(['git','rev-parse','HEAD^{tree}']).decode().strip() == '138a24d79e798fc38742a2c2e60a7091abf1d150'
+          assert not subprocess.check_output(['git','status','--porcelain']).decode().strip()
+          print('F016_GALLERY_SECOND_ORDER_CANONICAL_READ_ONLY=SUCCESS')
           PY
-
-      - name: Prove canonical checkout remained read-only
-        working-directory: canonical
-        shell: bash
-        run: |
-          set -euo pipefail
-          test -z "$(git status --porcelain)"
-          test "$(git rev-parse HEAD)" = "b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
-          test "$(git rev-parse HEAD^{tree})" = "138a24d79e798fc38742a2c2e60a7091abf1d150"
-          echo "F016_SCREEN_GALLERY_CANONICAL_READ_ONLY=SUCCESS"
-
-      - name: Commit evidence to temporary staging branch only
-        working-directory: stage
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "Guivos"
-          git config user.email "guivosbrasil@gmail.com"
-          git add tmp/f016-screen-gallery-receiver-proof-b6dd6c35.json tmp/f016-screen-gallery-receiver-proof-b6dd6c35.md
-          if git diff --cached --quiet; then
-            echo "EVIDENCE_UNCHANGED"
-            exit 0
-          fi
-          git commit -m "chore: capture F-016 screen-gallery receiver proof [skip ci]"
-          git push origin HEAD:agent/gkr-f016a-closure-adjudication-stage-v1
