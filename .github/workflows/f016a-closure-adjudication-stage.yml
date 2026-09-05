@@ -1,4 +1,4 @@
-name: F-016 UXA-081-085 Cleanup Candidate Proof v3
+name: F-016 UXA-081-085 Canonical Cleanup Transaction
 
 on:
   push:
@@ -6,27 +6,33 @@ on:
       - agent/gkr-f016a-closure-adjudication-stage-v1
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  cleanup-candidate-proof-v3:
+  canonical-cleanup:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout exact canonical head read-only
+      - name: Checkout exact authorized canonical head
         uses: actions/checkout@v4
         with:
           ref: 78534bf86acdc5da5f76e558b0df2347e6b5a111
           fetch-depth: 1
 
-      - name: Verify exact immutable input
+      - name: Verify exact immutable input and remote branch
         shell: bash
         run: |
           set -euo pipefail
-          test "$(git rev-parse HEAD)" = "78534bf86acdc5da5f76e558b0df2347e6b5a111"
-          test "$(git rev-parse HEAD^{tree})" = "6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4"
+          HEAD='78534bf86acdc5da5f76e558b0df2347e6b5a111'
+          TREE='6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4'
+          BRANCH='agent/gkr-global-audit-block-2-ghi-v1'
+          test "$(git rev-parse HEAD)" = "$HEAD"
+          test "$(git rev-parse HEAD^{tree})" = "$TREE"
           test -z "$(git status --porcelain)"
+          remote_head="$(git ls-remote origin "refs/heads/$BRANCH" | cut -f1)"
+          test "$remote_head" = "$HEAD"
+          echo CANONICAL_REMOTE_INPUT_CONFIRMED=$remote_head
 
-      - name: Apply exact bounded candidate including semantic gate reconciliation
+      - name: Apply exact authorized bounded transaction
         shell: bash
         run: |
           set -euo pipefail
@@ -44,7 +50,6 @@ jobs:
             'UXA-084':'docs/experience-architecture/uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md',
             'UXA-085':'docs/experience-architecture/uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md',
           }
-
           relations={
             'docs/experience-architecture/uxa-086-collective-responsible-overview-low-fidelity-wireframe.md': {'UXA-085'},
             'docs/journeys/screen-catalog.md': {'UXA-085'},
@@ -58,7 +63,6 @@ jobs:
             'docs/experience-architecture/uxa-047-085-index.md': {'UXA-085'},
             'docs/experience-architecture/index.md': {'UXA-085'},
           }
-
           expected_modified=set(relations) | {
             'docs/experience-architecture/uxa-047-101-index.md',
             'docs/index.md',
@@ -133,9 +137,8 @@ jobs:
           newrow='| F-016 | Major | corpus ainda contém documentos de materialização e linguagem de UI que podem competir com Design; camada física SVG, família `screen-gallery*` e ciclo `UXA-081..085` já foram desmaterializados após prova de absorção | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — F-016-A RESOLVED; `screen-gallery*` removida 8/8 e `UXA-081..085` removidos 5/5 após absorção; demais famílias Markdown continuam em auditoria** |'
           assert old.count('version: 1.12.0')==1 and old.count(oldrow)==1
           p.write_text(old.replace('version: 1.12.0','version: 1.13.0',1).replace(oldrow,newrow,1),encoding='utf-8')
-          print('F016_AUDIT_CANDIDATE_RECONCILED=PASS')
+          print('F016_AUDIT_RECONCILED=PASS')
 
-          # Reconcile semantic validator narrowly: UXA-081..085 become explicit governed absences.
           p=Path('scripts/validate_semantic_state.py'); old=p.read_text(encoding='utf-8')
           needle='''    for number in range(47, 102):\n        path = artifacts.get(number)\n        if path is None:\n            errors.append(f"artefato UXA-{number:03d} ausente")\n        elif path.name not in index_text:\n            errors.append(f"artefato UXA-{number:03d} não indexado: {path.name}")\n'''
           replacement='''    removed_after_absorption = {\n        81: "uxa-081-integrated-screen-gallery-and-coverage-audit.md",\n        82: "uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md",\n        83: "uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md",\n        84: "uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md",\n        85: "uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md",\n    }\n\n    for number in range(47, 102):\n        path = artifacts.get(number)\n        if number in removed_after_absorption:\n            expected_name = removed_after_absorption[number]\n            if path is not None:\n                errors.append(f"artefato UXA-{number:03d} deveria estar ausente após cleanup governado")\n            if expected_name in index_text:\n                errors.append(f"artefato removido UXA-{number:03d} permanece indexado: {expected_name}")\n            continue\n        if path is None:\n            errors.append(f"artefato UXA-{number:03d} ausente")\n        elif path.name not in index_text:\n            errors.append(f"artefato UXA-{number:03d} não indexado: {path.name}")\n'''
@@ -147,7 +150,6 @@ jobs:
               p=Path(path); assert p.exists(), (ident,path); p.unlink()
           print('TARGET_DELETIONS=5')
 
-          # Structural proof over tracked Markdown frontmatter.
           remaining_dep=[]; remaining_rel=[]
           for path in subprocess.check_output(['git','ls-files','docs/*.md','docs/**/*.md']).decode().splitlines():
               p=Path(path)
@@ -164,8 +166,8 @@ jobs:
                       tok=mi.group(1).strip('"\'')
                       if tok in targets: (remaining_dep if field=='depends_on' else remaining_rel).append((path,tok))
           assert not remaining_dep and not remaining_rel, (remaining_dep,remaining_rel)
-          print('POST_CANDIDATE_STRUCTURAL_DEPENDS_ON=0')
-          print('POST_CANDIDATE_STRUCTURAL_RELATED=0')
+          print('POST_CLEANUP_STRUCTURAL_DEPENDS_ON=0')
+          print('POST_CLEANUP_STRUCTURAL_RELATED=0')
 
           rows=subprocess.check_output(['git','status','--porcelain']).decode().splitlines()
           modified={r[3:] for r in rows if r[:2].strip()=='M'}
@@ -177,7 +179,6 @@ jobs:
           print('EXACT_MODIFIED_COUNT=16')
           print('EXACT_DELETED_COUNT=5')
           print('EXACT_CHANGED_PATHS=21')
-          for r in rows: print('CANDIDATE_STATUS',r,sep='\t')
 
           state=Path('docs/project/current-state-register.md').read_text(encoding='utf-8')
           for phrase in [
@@ -189,18 +190,15 @@ jobs:
           ]:
               assert phrase in state
           print('DOWNSTREAM_GUARDRAILS_PRESERVED=PASS')
-
-          assert subprocess.check_output(['git','rev-parse','HEAD']).decode().strip()==HEAD
-          assert subprocess.check_output(['git','rev-parse','HEAD^{tree}']).decode().strip()==TREE
-          print('F016_UXA081_085_CANDIDATE_APPLIED_EPHEMERALLY=SUCCESS')
           PY
 
-      - name: Show exact candidate diff
+      - name: Verify exact delta before validation
         shell: bash
         run: |
           set -euo pipefail
           git diff --stat
           git diff --name-status
+          git diff --check
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -222,17 +220,39 @@ jobs:
       - name: Validate legacy nomenclature
         run: python scripts/validate_legacy_nomenclature.py
 
-      - name: Validate patch whitespace
-        run: git diff --check
-
       - name: Build MkDocs strict
         run: mkdocs build --strict --site-dir /tmp/gkr-site
 
-      - name: Confirm exact immutable canonical objects
+      - name: Commit exact authorized transaction
         shell: bash
         run: |
           set -euo pipefail
-          test "$(git rev-parse HEAD)" = "78534bf86acdc5da5f76e558b0df2347e6b5a111"
-          test "$(git rev-parse HEAD^{tree})" = "6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4"
-          test -n "$(git status --porcelain --untracked-files=no)"
-          echo F016_UXA081_085_CLEANUP_CANDIDATE_PROOF_V3=SUCCESS
+          BRANCH='agent/gkr-global-audit-block-2-ghi-v1'
+          OLD_HEAD='78534bf86acdc5da5f76e558b0df2347e6b5a111'
+          remote_head="$(git ls-remote origin "refs/heads/$BRANCH" | cut -f1)"
+          test "$remote_head" = "$OLD_HEAD"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          test "$(git diff --cached --name-only | wc -l | tr -d ' ')" = '21'
+          test "$(git diff --cached --diff-filter=D --name-only | wc -l | tr -d ' ')" = '5'
+          test "$(git diff --cached --diff-filter=M --name-only | wc -l | tr -d ' ')" = '16'
+          git diff --cached --check
+          git commit -m 'GKR: remover UXA-081..085 após prova de absorção'
+          new_head="$(git rev-parse HEAD)"
+          new_tree="$(git rev-parse HEAD^{tree})"
+          test "$(git rev-parse HEAD^)" = "$OLD_HEAD"
+          echo CANONICAL_CLEANUP_COMMIT=$new_head
+          echo CANONICAL_CLEANUP_TREE=$new_tree
+          git push origin "HEAD:refs/heads/$BRANCH"
+
+      - name: Confirm canonical branch advanced only to transaction commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          BRANCH='agent/gkr-global-audit-block-2-ghi-v1'
+          new_head="$(git rev-parse HEAD)"
+          remote_head="$(git ls-remote origin "refs/heads/$BRANCH" | cut -f1)"
+          test "$remote_head" = "$new_head"
+          test -z "$(git status --porcelain)"
+          echo F016_UXA081_085_CANONICAL_CLEANUP_TRANSACTION=SUCCESS
