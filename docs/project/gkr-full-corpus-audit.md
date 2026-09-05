@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.8.0
+version: 1.9.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-05
 normative: false
@@ -782,8 +782,8 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | E — Home Organizações e Coletivos | `COMPLETED` | master + NARR/NAV/SYS + resíduos documentais reconciliados; materialização não autorizada |
 | F — Homes de Produtos | `COMPLETED` | seis Homes especializadas reconciliadas documentalmente; materialização não autorizada |
 | G — Jornada da Pessoa | `COMPLETED` | contradição de handoff reconciliada; sem rebuild |
-| H — Organização / Coletivo | `AUDITED / UPDATE_APPLIED / F-006_OPEN` | Jobs + IA propagados; F-006 cleanup-eligible, remoção física depende de autorização separada |
-| I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_OPEN` | inventário físico provado; F-007 resolvido; cleanup/recontagem dependem de autorização separada |
+| H — Organização / Coletivo | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED` | Jobs + IA propagados; cleanup F-006 concluído e validado |
+| I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED / F-007_RESOLVED` | inventário pós-F-006 = 119 SVGs; F-016-A cleanup-eligible, remoção física ainda não autorizada |
 | J — Produtos / Economia | `PENDING` | masters atuais sem fragmentação |
 | K — Research / RP-002 | `PENDING` | método/evidência preservados; intermediários absorvidos quando possível |
 | L — Tecnologia / Dados / IA | `PENDING` | autoridades atuais e fronteiras claras |
@@ -810,9 +810,11 @@ F. Homes de Produtos                             [concluído]
 ↓
 G. Jornada da Pessoa                             [concluído]
 ↓
-H/I. O/C + inventário visual                     [auditados/remediados; F-006 aberto e cleanup-eligible]
+H/I. O/C + inventário visual                     [auditados/remediados; F-006 resolvido]
 ↓
-J/K/L/M/N. domínios especializados               [não liberados até decisão de fechamento G/H/I]
+F-016. desmaterialização documental              [aberta; F-016-A cleanup-eligible / physical cleanup not authorized]
+↓
+J/K/L/M/N. domínios especializados               [não liberados automaticamente]
 ↓
 O. MENU final
 ↓
@@ -962,23 +964,28 @@ A / B / C / D / E / F / G
 
 H / I
 → AUDITED / UPDATE_APPLIED
-→ F-006 OPEN
+→ F-006 RESOLVED
+→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
 
-F-006
-→ ABSORPTION_APPLIED
-→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
+F-016
+→ OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION
+
+F-016-A
+→ PHYSICAL_SVG_ASSETS = 119
+→ STRUCTURAL_INVENTORY_COMPLETE
+→ PHYSICAL_DEPENDENCY_PROOF_PASSED
+→ PHYSICAL_PROFILES = 32
+→ PROFILES_WITH_TEXTUAL_RECEIVER = 32/32
+→ ASSETS_WITH_EXPERIENCE_ARCHITECTURE_REFERENCE = 119/119
+→ RUNTIME_OR_CODE_DEPENDENCIES = 0
+→ REMOVED_F006_IDS_ACCEPTED_AS_RECEIVERS = 0
 → CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
+→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
 
-F-007
-→ RESOLVED
-
-NEXT ACTION
-→ OBTAIN SEPARATE HUMAN AUTHORIZATION FOR F-006 PHYSICAL CLEANUP
-→ IF AUTHORIZED: REMOVE FOUR UXA MARKDOWN FILES AND TWO SVGs + RECONCILE AFFECTED REFERENCES IN THE SAME TRANSACTION
-→ THEN RECOMPUTE INVENTORY ON THE RESULTING TREE
-→ VALIDATE THE NEW EXACT HEAD + RUN REPO-WIDE REVIEW
-→ ONLY THEN DECIDE F-006 AND H/I FORMAL CLOSURE
+NEXT PHYSICAL ACTION
+→ REQUIRES SEPARATE EXPLICIT HUMAN AUTHORIZATION
+→ IF AUTHORIZED: REMOVE EXACT 119 SVGs + RECONCILE PHYSICAL REFERENCES IN SAME TRANSACTION
+→ RECOMPUTE → VALIDATE EXACT HEAD → INDEPENDENT REVIEW
 
 NEXT SPECIALIZED BLOCK J/K/L/M/N
 → NOT RELEASED YET
@@ -989,17 +996,8 @@ BASELINE FINAL
 CORPUS CLEANUP
 → NOT YET COMPLETE
 
-HOME PRINCIPAL
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
-
-HOME ORGANIZAÇÕES E COLETIVOS
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
-
-HOMES DOS PRODUTOS ESPECIALIZADOS
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
-
-DESIGN DAS HOMES
-→ OPERATIONAL AUTHORIZATION SUSPENDED DURING FULL-CORPUS AUDIT
+DESIGN / MATERIALIZATION
+→ NOT AUTHORIZED
 
 UXA-102 / V5
 → NOT_STARTED
@@ -1051,3 +1049,25 @@ Cada ocorrência deverá ser classificada individualmente como:
 A frente deve incluir `mkdocs.yml`, `docs/assets/wireframes/`, galerias, catálogos e a família UXA, sem assumir que todo SVG ou todo documento histórico é removível.
 
 Critério de encerramento: **o GKR não pode competir com Design na definição de interface**.
+
+### F-016-A — camada física de 119 SVGs
+
+Provas read-only no head `549fe10bb7d21eb38961fa9b611e68c53b43f1db`:
+
+- inventário estrutural: run `33967523310`;
+- dependências físicas: run `33967687552`;
+- cobertura semântica de receivers: run `33967781621`.
+
+Resultado consolidado:
+
+```text
+PHYSICAL_SVG_ASSETS = 119
+ASSETS_WITH_PROFILE = 119/119
+PHYSICAL_PROFILES = 32
+PROFILES_WITH_TEXTUAL_RECEIVER = 32/32
+ASSETS_WITH_EXPERIENCE_ARCHITECTURE_REFERENCE = 119/119
+NON_DOCUMENT_REFERENCE_HITS = 0
+REMOVED_F006_IDS_ACCEPTED_AS_RECEIVERS = 0
+```
+
+Adjudicação: **CLEANUP_ELIGIBILITY_PROVEN** para a camada física, condicionada a autorização humana separada e a reconciliação atômica das referências. Nenhum SVG é removido por esta adjudicação.

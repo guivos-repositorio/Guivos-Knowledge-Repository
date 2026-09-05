@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-05
 related:
   - PAS-001
   - PAS-001-DOMAIN-MODEL-001
@@ -78,7 +78,7 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 ## 3. Cobertura visual e granular
 
-As contagens abaixo separam **inventário físico**, **associação documental** e **maturidade vigente**. A existência de um arquivo ou de uma associação não promove automaticamente sua autoridade visual.
+As contagens abaixo separam **inventário físico**, **associação documental** e **maturidade vigente**. A existência de arquivo ou associação não promove autoridade visual.
 
 ```text
 CONTAGEM FÍSICA DE SVGs
@@ -91,31 +91,20 @@ ASSOCIAÇÃO SVG → PERFIL
 
 | Indicador | Resultado vigente |
 |---|---:|
-| SVGs físicos no inventário | **121** |
-| associações físicas catalogadas | **121** |
-| perfis de rastreabilidade | **34** |
-| duplicações exatas byte-a-byte observadas no inventário físico | **0** |
-| total canônico visual vigente | **não certificado — recomputação governada em andamento** |
-| total validado visual vigente | **não certificado — recomputação governada em andamento** |
-| total pendente visual vigente | **não certificado — recomputação governada em andamento** |
-| near-duplicates | **não certificado — análise semântica pendente** |
+| SVGs físicos no inventário pós-F-006 | **119** |
+| associações físicas catalogadas | **119** |
+| perfis de rastreabilidade estáveis | **34** |
+| perfis com associação física atual | **32** |
+| dependências runtime/código dos SVGs | **0** |
+| total canônico visual vigente | **não certificado** |
+| total validado visual vigente | **não certificado** |
+| total pendente visual vigente | **não certificado** |
 | superfícies/estados/fronteiras | **57** |
 | transições documentais | **66** |
-| IDs com referência visual no snapshot físico/associativo | **45 de 57** |
-| responsabilidades sem SVG dedicado no snapshot físico/associativo | **10** |
+| responsabilidades sem SVG dedicado no snapshot | **10** |
 | fronteiras sem tela | **2** |
 
-Os `121 SVGs` são uma verdade de **inventário físico**. Eles não podem ser usados como sinônimo de `121 canônicos vigentes`, `121 validados vigentes` ou `0 pendentes` enquanto a recomputação individual de canonicidade, supersessão, referência e maturidade não estiver concluída.
-
-A reconciliação pós-PR #313/#314 já estabelece que `UXA-015..018` e os SVGs associados permanecem como histórico `superseded`, sem autoridade para definir o wireframe principal autenticado de Organização ou Coletivo. Isso impede reutilizar antigas somas agregadas de maturidade como estado atual.
-
-A UXA-100-A4 adiciona `PER-009` como responsabilidade sem SVG e seis handoffs de navegação de Planos.
-
-A D5-A reforma quatro SVGs de `PER-004`, `PER-007` e `PER-008` para materializar Domínios de Evolução sem criar novo ID.
-
-A D5-B materializa o mesmo eixo em `ORG-002`, `PER-201`, `PER-202` e `PER-203`, também in-place.
-
-A D5-C1 adiciona três responsabilidades (`PER-010..012`) e seis handoffs (`TRN-008..013`) no estado contratado. A D5-C2 adiciona três SVGs low-fidelity e três perfis. A D5-C3 reforma in-place e valida funcionalmente os três SVGs. A D5-C4A reforma e revalida localmente o estado recorrente de `PER-008 — Hoje`, materializa origens visuais inequívocas e governa o contrato semântico dos seis handoffs. A D5-C4B promove individualmente `TRN-008..013` para **integralmente validadas** no limite documental.
+A prova F-016-A confirmou `119/119` assets com referência em Experience Architecture e `32/32` perfis físicos com receiver textual corrente. Isso prova **elegibilidade de cleanup da camada física**, não maturidade visual e não autorização de remoção.
 
 ## 4. Decisões estruturais preservadas
 

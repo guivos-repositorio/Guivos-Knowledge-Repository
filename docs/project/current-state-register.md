@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.8.0
+version: 3.9.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-05
 normative: true
@@ -67,23 +67,39 @@ ESTADO GLOBAL DO GKR
 
 BLOCO 2 — G / H / I
 → G COMPLETED / UPDATE_APPLIED
-→ H AUDITED / UPDATE_APPLIED / F-006 OPEN
-→ I AUDITED / UPDATE_APPLIED / F-006 OPEN
-→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+→ H AUDITED / UPDATE_APPLIED / F-006 RESOLVED
+→ I AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED
 
 F-010
-→ STRUCTURAL AUDIT COMPLETE
-→ CLEANUP APPLIED ON CLOSED 17-ARTIFACT SET
-→ POST-CLEANUP VALIDATION PASSED
-→ INDEPENDENT REVIEW COMPLETED / NO OPEN MATERIAL FINDING
-→ CODEX REVIEW UNAVAILABLE / NOT RUN (USAGE LIMIT)
 → RESOLVED
-→ DOES NOT AUTHORIZE F-006 OR DOWNSTREAM RELEASE
+→ CODEX REVIEW UNAVAILABLE / NOT RUN (USAGE LIMIT)
+→ CLEAN RESULT NOT CLAIMED
 
-PRÓXIMO GATE DA AUDITORIA
-→ AUTORIZAÇÃO HUMANA SEPARADA PARA CLEANUP FÍSICO DE F-006
-→ SE AUTORIZADO: REMOÇÃO / RECONCILIAÇÃO → RECOMPUTAÇÃO → VALIDAÇÕES → REVIEW
-→ SOMENTE DEPOIS: DECISÃO DE FECHAMENTO DE F-006 E G / H / I
+F-006
+→ STRUCTURAL AUDIT COMPLETE
+→ ABSORPTION APPLIED
+→ PHYSICAL CLEANUP APPLIED 6/6
+→ POST-CLEANUP VALIDATION PASSED
+→ INDEPENDENT READ-ONLY PROOF PASSED
+→ RESOLVED
+
+F-016
+→ OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION
+
+F-016-A — PHYSICAL SVG LAYER
+→ 119 PHYSICAL SVGs
+→ STRUCTURAL INVENTORY COMPLETE
+→ DEPENDENCY PROOF PASSED
+→ 32/32 PHYSICAL PROFILES HAVE CURRENT TEXTUAL RECEIVER
+→ 119/119 ASSETS HAVE EXPERIENCE ARCHITECTURE TEXT REFERENCE
+→ RUNTIME/CODE DEPENDENCIES = 0
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
+
+PRÓXIMO GATE FÍSICO
+→ AUTORIZAÇÃO HUMANA SEPARADA E EXPLÍCITA PARA F-016-A
+→ SE AUTORIZADO: REMOVER 119 SVGs + RECONCILIAR REFERÊNCIAS FÍSICAS NA MESMA TRANSAÇÃO
+→ RECOMPUTAR → VALIDAR HEAD EXATO → REVIEW
 → J / K / L / M / N NÃO LIBERADOS AUTOMATICAMENTE
 
 MARCO FUNCIONAL
@@ -1241,7 +1257,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.5.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.9.0` está ativo como instrumento temporário de execução.
 
 Estado:
 
@@ -1266,16 +1282,20 @@ F — HOMES DE PRODUTOS
 
 G — JORNADA DA PESSOA
 → COMPLETED / UPDATE_APPLIED
-→ jornada permanece draft; fechamento do bloco não promove sua maturidade
+→ jornada permanece draft
 
 H — ORGANIZAÇÃO / COLETIVO
-→ AUDITED / UPDATE_APPLIED
-→ F-006 OPEN
+→ AUDITED / UPDATE_APPLIED / F-006 RESOLVED
 
 I — REGISTRIES / CATÁLOGOS / SVGs
-→ AUDITED / UPDATE_APPLIED
-→ F-006 OPEN
-→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+→ AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED
+
+F-016
+→ OPEN
+
+F-016-A
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
 
 J–N — DOMÍNIOS ESPECIALIZADOS
 → PENDING / NOT RELEASED AUTOMATICALLY
@@ -1290,7 +1310,7 @@ Q — PRIMEIRA TELA PÓS-HOME DA PESSOA
 → BLOCKED
 ```
 
-O fechamento de G/H/I depende de decisão governada sobre `F-006`. A remediação do Bloco 2 não autoriza avançar automaticamente J–N.
+O encerramento de `F-006` não libera automaticamente J–N. `F-016` permanece o eixo prioritário de auditoria antes de qualquer liberação posterior.
 
 ## 27. Regra de navegação final
 
@@ -1351,27 +1371,36 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-O Bloco 2 G/H/I foi auditado e remediado no limite documental atual. O próximo ato governado é obter **autorização humana separada e explícita para o cleanup físico de `F-006`**. Se autorizada, a sequência é remoção/reconciliação transacional, recomputação, validações e review no novo head; somente depois desses gates poderá ser decidida a conclusão de `F-006` e o fechamento formal de G/H/I.
+O Bloco 2 G/H/I está auditado/remediado com `F-006 RESOLVED`. O eixo corrente é `F-016`.
+
+A camada física `F-016-A` está **elegível para cleanup**, mas sua remoção ainda exige autorização humana separada e explícita.
 
 ```text
 G
 → COMPLETED / UPDATE_APPLIED
 
-H
+H / I
 → AUDITED / UPDATE_APPLIED
-→ F-006 OPEN
-
-I
-→ AUDITED / UPDATE_APPLIED
-→ F-006 OPEN
+→ F-006 RESOLVED
 → F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
 
-F-006
+F-016
 → OPEN
-→ ABSORPTION_APPLIED
-→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
+
+F-016-A
+→ 119 PHYSICAL SVGs
+→ STRUCTURAL INVENTORY COMPLETE
+→ DEPENDENCY PROOF PASSED
+→ SEMANTIC RECEIVER COVERAGE PASSED
 → CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
+→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
+
+NEXT PHYSICAL GATE
+→ SEPARATE EXPLICIT HUMAN AUTHORIZATION
+→ IF AUTHORIZED: DELETE EXACT 119 SVGs + RECONCILE ALL PHYSICAL REFERENCES ATOMICALLY
+→ RECOMPUTE INVENTORY
+→ SEMANTIC + MECHANICAL VALIDATION
+→ INDEPENDENT REVIEW
 
 J / K / L / M / N
 → NOT RELEASED AUTOMATICALLY
@@ -1392,5 +1421,3 @@ AINDA BLOQUEADOS
 → PMF
 → IMPLEMENTAÇÃO
 ```
-
-Quando a auditoria terminar, este Registro do Estado Atual deverá ser novamente reconciliado com o corpus final limpo antes da autorização de uma nova baseline.
