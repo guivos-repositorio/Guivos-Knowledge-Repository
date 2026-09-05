@@ -31,6 +31,9 @@ normative: false
 
 # Estados Residuais do Opportunity Boost — Wireframes de Baixa Fidelidade
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa estados residuais de continuidade técnica, proteção do inventário orgânico e controles da pessoa que permaneceram explicitamente fora dos pacotes anteriores do Opportunity Boost.
@@ -74,9 +77,7 @@ Denúncia e contestação são dois artefatos independentes. Nenhum deles é reg
 
 ### 4.1 Erro técnico temporário patrocinado
 
-![Erro técnico patrocinado](../assets/wireframes/uxa-055-sponsored-technical-error-mobile.svg)
 
-`docs/assets/wireframes/uxa-055-sponsored-technical-error-mobile.svg`
 
 Demonstra:
 
@@ -89,9 +90,7 @@ Demonstra:
 
 ### 4.2 Falha de atualização do anunciante
 
-![Falha de atualização](../assets/wireframes/uxa-055-advertiser-update-failure-mobile.svg)
 
-`docs/assets/wireframes/uxa-055-advertiser-update-failure-mobile.svg`
 
 Demonstra:
 
@@ -104,9 +103,7 @@ Demonstra:
 
 ### 4.3 Inventário patrocinado indisponível
 
-![Inventário patrocinado indisponível](../assets/wireframes/uxa-055-sponsored-inventory-unavailable-mobile.svg)
 
-`docs/assets/wireframes/uxa-055-sponsored-inventory-unavailable-mobile.svg`
 
 Demonstra:
 
@@ -118,9 +115,7 @@ Demonstra:
 
 ### 4.4 Baixa oferta orgânica
 
-![Baixa oferta orgânica](../assets/wireframes/uxa-055-low-organic-supply-mobile.svg)
 
-`docs/assets/wireframes/uxa-055-low-organic-supply-mobile.svg`
 
 Demonstra:
 
@@ -132,9 +127,7 @@ Demonstra:
 
 ### 4.5 Mostrar menos deste tipo
 
-![Mostrar menos deste tipo](../assets/wireframes/uxa-055-show-less-type-mobile.svg)
 
-`docs/assets/wireframes/uxa-055-show-less-type-mobile.svg`
 
 Demonstra:
 
@@ -147,9 +140,7 @@ Demonstra:
 
 ### 4.6 Desativar oportunidades patrocinadas
 
-![Desativar patrocinados](../assets/wireframes/uxa-055-disable-sponsored-opportunities-mobile.svg)
 
-`docs/assets/wireframes/uxa-055-disable-sponsored-opportunities-mobile.svg`
 
 Demonstra:
 
@@ -162,9 +153,7 @@ Demonstra:
 
 ### 4.7 Ocultar campanha específica
 
-![Ocultar campanha](../assets/wireframes/uxa-055-hide-campaign-mobile.svg)
 
-`docs/assets/wireframes/uxa-055-hide-campaign-mobile.svg`
 
 Demonstra:
 
@@ -177,9 +166,7 @@ Demonstra:
 
 ### 4.8 Revisar e desfazer preferências
 
-![Revisar preferências](../assets/wireframes/uxa-055-review-reverse-preferences-mobile.svg)
 
-`docs/assets/wireframes/uxa-055-review-reverse-preferences-mobile.svg`
 
 Demonstra:
 
@@ -191,9 +178,7 @@ Demonstra:
 
 ### 4.9 Denunciar conteúdo ou informação
 
-![Denunciar conteúdo](../assets/wireframes/uxa-055-report-content-mobile.svg)
 
-`docs/assets/wireframes/uxa-055-report-content-mobile.svg`
 
 Demonstra:
 
@@ -206,9 +191,7 @@ Demonstra:
 
 ### 4.10 Contestar uso indevido de dados
 
-![Contestar uso de dados](../assets/wireframes/uxa-055-contest-data-use-mobile.svg)
 
-`docs/assets/wireframes/uxa-055-contest-data-use-mobile.svg`
 
 Demonstra:
 

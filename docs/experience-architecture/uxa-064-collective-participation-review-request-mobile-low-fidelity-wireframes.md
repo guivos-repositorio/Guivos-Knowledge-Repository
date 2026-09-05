@@ -29,6 +29,9 @@ normative: false
 
 # Wireframes Móveis da Revisão e Solicitação de Participação em Coletivos
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento governa a quarta referência P0A definida pela UXA-059: a revisão e a Solicitação de Participação móvel.

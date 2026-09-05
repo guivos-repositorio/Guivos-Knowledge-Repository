@@ -22,6 +22,9 @@ normative: false
 
 # GKR-UX-D5-C2-001 — Materialização Low-Fidelity das Superfícies de Direção, Movimento e Evolução
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A D5-C2 materializa visualmente, em baixa fidelidade, as três responsabilidades pessoais contratadas pela D5-C1:

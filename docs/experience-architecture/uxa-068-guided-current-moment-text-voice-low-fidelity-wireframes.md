@@ -30,6 +30,9 @@ normative: false
 
 # Wireframes Móveis da Expressão Guiada do Momento Atual por Texto e Voz
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Esta família ajuda a Pessoa a expressar seu **Momento Atual** de forma proporcional, corrigível e compreensível antes da preparação da compreensão inicial da Guivos.
@@ -104,35 +107,27 @@ Uma dimensão poderá permanecer em aberto sem bloquear exploração geral.
 
 ### 6.1 Orientação comum
 
-![Orientação para expressar o Momento Atual](../assets/wireframes/uxa-068-guided-current-moment-orientation-mobile.svg)
 
 ### 6.2 Rascunho guiado por texto
 
-![Rascunho guiado por texto](../assets/wireframes/uxa-068-guided-current-moment-text-draft-mobile.svg)
 
 ### 6.3 Preparação para voz
 
-![Preparação anterior à gravação](../assets/wireframes/uxa-068-guided-current-moment-voice-preparation-mobile.svg)
 
 ### 6.4 Gravação em andamento
 
-![Gravação guiada do Momento Atual](../assets/wireframes/uxa-068-guided-current-moment-voice-recording-mobile.svg)
 
 ### 6.5 Revisão da transcrição
 
-![Revisão da transcrição](../assets/wireframes/uxa-068-guided-current-moment-voice-transcription-review-mobile.svg)
 
 ### 6.6 Pergunta adaptativa
 
-![Pergunta adaptativa](../assets/wireframes/uxa-068-guided-current-moment-adaptive-clarification-mobile.svg)
 
 ### 6.7 Separação de focos
 
-![Separação de focos](../assets/wireframes/uxa-068-guided-current-moment-focus-separation-mobile.svg)
 
 ### 6.8 Síntese estruturada
 
-![Síntese estruturada do Momento Atual](../assets/wireframes/uxa-068-guided-current-moment-structured-summary-mobile.svg)
 
 Todos os arquivos permanecem em baixa fidelidade, com referência móvel de 390 × 844 pixels.
 

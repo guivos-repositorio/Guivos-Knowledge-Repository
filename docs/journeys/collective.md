@@ -44,6 +44,9 @@ normative: false
 
 # Jornada Integrada do Coletivo
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Formação, decisão e continuidade da Pessoa
 
 ```text
@@ -208,9 +211,7 @@ criar atividade/oportunidade
 
 Referência do fluxo especializado de Planos:
 
-![Coletivo — Planos](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
 Regras:
 

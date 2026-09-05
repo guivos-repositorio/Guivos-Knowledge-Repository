@@ -23,6 +23,9 @@ normative: false
 
 # Wireframes de Baixa Fidelidade do Fluxo do Anunciante do Opportunity Boost
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa a referência gráfica reformulada e funcionalmente validada do fluxo pelo qual uma Organização ou um Coletivo elegível configura e envia uma campanha de Opportunity Boost para avaliação.
@@ -78,9 +81,7 @@ O fluxo não altera a posição orgânica da oportunidade e não utiliza compree
 
 ### 4.1 Elegibilidade e gate de entrada
 
-![Elegibilidade reformulada para impulsionamento](../assets/wireframes/uxa-040-opportunity-boost-eligibility-desktop.svg)
 
-`docs/assets/wireframes/uxa-040-opportunity-boost-eligibility-desktop.svg`
 
 Demonstra:
 
@@ -98,9 +99,7 @@ Demonstra:
 
 ### 4.2 Objetivo e critérios de distribuição
 
-![Objetivo e critérios escolhidos](../assets/wireframes/uxa-040-opportunity-boost-objective-audience-desktop.svg)
 
-`docs/assets/wireframes/uxa-040-opportunity-boost-objective-audience-desktop.svg`
 
 Demonstra:
 
@@ -115,9 +114,7 @@ Demonstra:
 
 ### 4.3 Orçamento, duração e estimativa
 
-![Orçamento e base principal coerente](../assets/wireframes/uxa-040-opportunity-boost-budget-schedule-desktop.svg)
 
-`docs/assets/wireframes/uxa-040-opportunity-boost-budget-schedule-desktop.svg`
 
 Demonstra:
 
@@ -134,9 +131,7 @@ Demonstra:
 
 ### 4.4 Prévia e confirmação
 
-![Prévia com primeiro resultado orgânico preservado](../assets/wireframes/uxa-040-opportunity-boost-preview-confirmation-desktop.svg)
 
-`docs/assets/wireframes/uxa-040-opportunity-boost-preview-confirmation-desktop.svg`
 
 Demonstra:
 
@@ -152,9 +147,7 @@ Demonstra:
 
 ### 4.5 Envio para avaliação
 
-![Envio reformulado para avaliação](../assets/wireframes/uxa-040-opportunity-boost-submission-desktop.svg)
 
-`docs/assets/wireframes/uxa-040-opportunity-boost-submission-desktop.svg`
 
 Demonstra:
 

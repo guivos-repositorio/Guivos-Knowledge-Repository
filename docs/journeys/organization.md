@@ -44,6 +44,9 @@ normative: false
 
 # Jornada Integrada da Organização
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Continuidade institucional
 
 ```text
@@ -213,9 +216,7 @@ criar nova oportunidade/programa
 
 Referência do fluxo especializado de Planos:
 
-![Organização — Planos](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
 Regras:
 

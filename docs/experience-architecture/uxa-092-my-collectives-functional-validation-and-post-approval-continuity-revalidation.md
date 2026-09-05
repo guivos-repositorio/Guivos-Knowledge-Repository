@@ -31,6 +31,9 @@ normative: false
 
 # Validação Funcional de Meus Coletivos e Revalidação da Continuidade Pós-Aprovação
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A UXA-092 valida funcionalmente a referência móvel de `GKR-SURF-PER-106 — Meus Coletivos`, revalida o estado aprovado corrente da família `GKR-SURF-PER-105 — Solicitação Pendente` e reexamina `GKR-TRN-108` como uma única continuidade pós-aprovação.

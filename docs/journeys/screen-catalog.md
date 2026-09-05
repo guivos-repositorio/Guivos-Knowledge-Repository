@@ -47,6 +47,9 @@ normative: false
 
 # Catálogo Integrado de Telas
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Regra de leitura
 
 ```text
@@ -178,8 +181,8 @@ A reconciliação pós-PR #313/#314 **não reescreve a história desses snapshot
 ## 7. Estado do catálogo
 
 - catálogo físico: `active` 0.33.0;
-- inventário físico corrente após F-006: **119 SVGs**;
-- matriz física: **119 associações / 34 perfis estáveis**, com R09/R11 preservados apenas como proveniência sem SVG;
+- inventário físico corrente após F-016-A: **0 SVGs**;
+- matriz física: **0 associações físicas / 34 perfis de proveniência**, sem autoridade visual;
 - resumo `121 SVGs / 121 validados / 0 pendentes`: **superseded como claim de maturidade vigente**;
 - materialização visual da Organização: **autoridade exclusiva de Design; não é requisito documental**;
 - materialização visual do Coletivo: **autoridade exclusiva de Design; não é requisito documental**;

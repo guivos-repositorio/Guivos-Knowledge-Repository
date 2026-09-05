@@ -26,6 +26,9 @@ normative: false
 
 # Materialização Controlada da Visão Geral do Responsável do Coletivo
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A UXA-086 materializa exclusivamente a primeira referência de baixa fidelidade de `GKR-SURF-COL-002 — Visão Geral do Responsável`.
@@ -58,9 +61,7 @@ Nenhum dado real ou sensível é utilizado.
 
 ## 3. Wireframe
 
-![Wireframe desktop da Visão Geral do Responsável do Coletivo](../assets/wireframes/uxa-086-collective-responsible-overview-desktop.svg)
 
-[Visualizar o arquivo gráfico vetorial escalável](../assets/wireframes/uxa-086-collective-responsible-overview-desktop.svg)
 
 O wireframe é estrutural e monocromático. Não define identidade visual final, componentes técnicos, comportamento implementado ou prontidão de produto.
 

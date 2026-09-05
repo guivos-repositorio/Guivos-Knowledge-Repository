@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.9.0
+version: 1.10.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-05
 normative: false
@@ -147,7 +147,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-013 | Major | Fundação antiga supercentralizava Oportunidade e antecedia distinção Possibilidade/Mecanismo/Oportunidade | `REBUILD + ENRICH` | reconciliado no Lote C |
 | F-014 | Major | PP-11 antigo podia confundir visão de capacidade máxima com verdade atual | `UPDATE` | reconciliado no Lote C |
 | F-015 | Major | Public Canon anterior ainda publicava fluxo/definição anterior de Oportunidade | `UPDATE + ENRICH` | reconciliado no Lote C |
-| F-016 | Major | corpus ainda contém wireframes, materializações, galerias e linguagem de UI que podem competir com Design como autoridade visual | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — desmaterialização documental repo-wide; preservar apenas conteúdo funcional necessário e proveniência legítima** |
+| F-016 | Major | corpus ainda contém documentos de materialização/galeria e linguagem de UI que podem competir com Design; a camada física SVG já foi removida | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — F-016-A cleanup físico 119/119 aplicado; validação pós-cleanup pendente; demais famílias documentais continuam em auditoria** |
 
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
@@ -1026,7 +1026,7 @@ Quando a auditoria fechar:
 
 ## F-016 — Desmaterialização documental repo-wide
 
-A auditoria estabelece uma nova fronteira estrutural obrigatória:
+A auditoria mantém a fronteira estrutural obrigatória:
 
 ```text
 GKR
@@ -1036,38 +1036,41 @@ DESIGN
 → composição visual, layout, posicionamento, wireframes, mockups, protótipos, componentes visuais, aparência e materialização final
 ```
 
-O corpus ainda expõe artefatos e nomenclatura produzidos em ciclos anteriores — incluindo páginas `low-fidelity-wireframe`, `materialization`, galerias visuais e programas de wireframes. Sua presença física não é automaticamente justificável como documentação normativa.
+### F-016-A — camada física SVG
 
-Cada ocorrência deverá ser classificada individualmente como:
-
-- `KEEP_FUNCTIONAL` — manter somente conteúdo funcional que não materializa UI;
-- `REWRITE_FUNCTIONAL` — reescrever retirando decisões visuais e preservando contrato funcional;
-- `REMOVE_AFTER_ABSORPTION` — absorver conteúdo funcional único e remover materialização;
-- `REMOVE` — eliminar quando não houver função corrente nem conteúdo material exclusivo;
-- `HISTORICAL_PROVENANCE_ONLY` — manter apenas quando a evidência histórica possuir função documental real e explícita.
-
-A frente deve incluir `mkdocs.yml`, `docs/assets/wireframes/`, galerias, catálogos e a família UXA, sem assumir que todo SVG ou todo documento histórico é removível.
-
-Critério de encerramento: **o GKR não pode competir com Design na definição de interface**.
-
-### F-016-A — camada física de 119 SVGs
-
-Provas read-only no head `549fe10bb7d21eb38961fa9b611e68c53b43f1db`:
-
-- inventário estrutural: run `33967523310`;
-- dependências físicas: run `33967687552`;
-- cobertura semântica de receivers: run `33967781621`.
-
-Resultado consolidado:
+A subfrente física teve elegibilidade provada no head pré-delete, recebeu autorização humana separada e teve cleanup aplicado sobre o conjunto fechado de **119 SVGs**.
 
 ```text
-PHYSICAL_SVG_ASSETS = 119
-ASSETS_WITH_PROFILE = 119/119
-PHYSICAL_PROFILES = 32
-PROFILES_WITH_TEXTUAL_RECEIVER = 32/32
-ASSETS_WITH_EXPERIENCE_ARCHITECTURE_REFERENCE = 119/119
-NON_DOCUMENT_REFERENCE_HITS = 0
-REMOVED_F006_IDS_ACCEPTED_AS_RECEIVERS = 0
+PRE-DELETE PHYSICAL SVGs
+→ 119
+
+POST-DELETE PHYSICAL SVGs
+→ 0
+
+EMBEDS / LIVE LINKS TO REMOVED ASSETS
+→ RECONCILED IN SAME TRANSACTION
+
+NOMINAL .svg REFERENCES THAT REMAIN
+→ HISTORICAL PROVENANCE ONLY
+→ QUALIFIED IN ACTIVE DOCUMENTS
+
+POST-CLEANUP VALIDATION
+→ PENDING
+
+F-016-A FORMAL RESOLUTION
+→ NOT YET CLAIMED
 ```
 
-Adjudicação: **CLEANUP_ELIGIBILITY_PROVEN** para a camada física, condicionada a autorização humana separada e a reconciliação atômica das referências. Nenhum SVG é removido por esta adjudicação.
+As galerias e a matriz por SVG permanecem fisicamente como documentos de proveniência `superseded / historical_provenance_only`, sem autoridade visual corrente. Nenhum Markdown foi removido automaticamente por este gate.
+
+### Demais famílias F-016
+
+Documentos `low-fidelity-wireframe`, `materialization`, validações/programas de wireframe, galerias e linguagem de UI continuam sujeitos à classificação individual:
+
+- `KEEP_FUNCTIONAL`;
+- `REWRITE_FUNCTIONAL`;
+- `REMOVE_AFTER_ABSORPTION`;
+- `REMOVE`;
+- `HISTORICAL_PROVENANCE_ONLY`.
+
+Critério de encerramento global: **o GKR não pode competir com Design na definição de interface**.

@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.9.0
+id: ROADMAP-13.10.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.9.0
+version: 13.10.0
 owner: Guivos
 last_updated: 2026-09-05
 normative: true
@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.9.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.10.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -66,7 +66,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.9.0** |
+| Estado global | **GKR-STATE-001 v3.10.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -960,42 +960,24 @@ DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL DURANTE A AUDITORIA
 
 ## 26. Regra do próximo movimento
 
-`F-006` está encerrado. O próximo eixo governado é `F-016`.
-
-A subfrente `F-016-A` atingiu `CLEANUP_ELIGIBILITY_PROVEN` para os 119 SVGs físicos, sem autorização de remoção.
+`F-016-A` consumiu a autorização humana separada e teve o cleanup físico aplicado sobre os **119/119 SVGs**.
 
 ```text
-G
-→ COMPLETED / UPDATE_APPLIED
-
-H / I
-→ AUDITED / UPDATE_APPLIED
-→ F-006 RESOLVED
-→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
-
-F-016
-→ OPEN
-
 F-016-A
-→ STRUCTURAL INVENTORY COMPLETE
-→ DEPENDENCY PROOF PASSED
-→ SEMANTIC RECEIVER COVERAGE PASSED
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
+→ CLEANUP_ELIGIBILITY_PROVEN BEFORE DELETE
+→ HUMAN AUTHORIZATION GRANTED
+→ PHYSICAL CLEANUP APPLIED 119/119
+→ PHYSICAL SVG COUNT = 0
+→ REFERENCE RECONCILIATION APPLIED
+→ POST-CLEANUP VALIDATION PENDING
+→ FORMAL CLOSURE PENDING
 
-NEXT PHYSICAL GATE
-→ SEPARATE EXPLICIT HUMAN AUTHORIZATION
-→ IF AUTHORIZED: EXACT 119 SVG DELETIONS + ATOMIC REFERENCE RECONCILIATION
-→ RECOMPUTE → VALIDATE → REVIEW
-
-J / K / L / M / N
-→ NOT RELEASED AUTOMATICALLY
-
-O
-→ PENDING / HOLD
-
-Q
-→ BLOCKED
+NEXT
+→ RECOMPUTE THE RESULTING TREE
+→ SEMANTIC VALIDATION
+→ MECHANICAL VALIDATION
+→ INDEPENDENT READ-ONLY REVIEW
+→ ONLY THEN ADJUDICATE F-016-A
 ```
 
-Nenhuma Home, UXA-102, Design, protótipo, Engineering, filing ou PMF é iniciada automaticamente por esse estado.
+J/K/L/M/N, `UXA-102/V5`, Design, Product Engineering e merge da PR #363 permanecem bloqueados ou não autorizados.

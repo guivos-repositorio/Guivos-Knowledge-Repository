@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.9.0
+version: 3.10.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-05
 normative: true
@@ -76,37 +76,23 @@ F-010
 → CLEAN RESULT NOT CLAIMED
 
 F-006
-→ STRUCTURAL AUDIT COMPLETE
-→ ABSORPTION APPLIED
-→ PHYSICAL CLEANUP APPLIED 6/6
-→ POST-CLEANUP VALIDATION PASSED
-→ INDEPENDENT READ-ONLY PROOF PASSED
 → RESOLVED
 
 F-016
 → OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION
 
 F-016-A — PHYSICAL SVG LAYER
-→ 119 PHYSICAL SVGs
-→ STRUCTURAL INVENTORY COMPLETE
-→ DEPENDENCY PROOF PASSED
-→ 32/32 PHYSICAL PROFILES HAVE CURRENT TEXTUAL RECEIVER
-→ 119/119 ASSETS HAVE EXPERIENCE ARCHITECTURE TEXT REFERENCE
-→ RUNTIME/CODE DEPENDENCIES = 0
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
+→ PRE-CLEANUP ELIGIBILITY PROVEN
+→ HUMAN PHYSICAL CLEANUP AUTHORIZATION GRANTED
+→ PHYSICAL CLEANUP APPLIED 119/119
+→ PHYSICAL SVG COUNT = 0
+→ EMBEDS / LIVE LINKS RECONCILED
+→ HISTORICAL PROVENANCE PRESERVED
+→ POST-CLEANUP VALIDATION PENDING
+→ FORMAL RESOLUTION NOT YET CLAIMED
 
-PRÓXIMO GATE FÍSICO
-→ AUTORIZAÇÃO HUMANA SEPARADA E EXPLÍCITA PARA F-016-A
-→ SE AUTORIZADO: REMOVER 119 SVGs + RECONCILIAR REFERÊNCIAS FÍSICAS NA MESMA TRANSAÇÃO
-→ RECOMPUTAR → VALIDAR HEAD EXATO → REVIEW
-→ J / K / L / M / N NÃO LIBERADOS AUTOMATICAMENTE
-
-MARCO FUNCIONAL
-→ M7.88
-
-ÚLTIMA UXA FUNCIONAL NUMERADA
-→ UXA-101
+J / K / L / M / N
+→ NOT RELEASED AUTOMATICALLY
 
 UXA-102 / V5
 → NOT_STARTED
@@ -127,11 +113,7 @@ MATERIALIZAÇÃO VISUAL DAS HOMES
 → NOT AUTHORIZED DURING FULL-CORPUS AUDIT
 ```
 
-A auditoria integral foi aberta porque o crescimento do corpus produziu três riscos materiais:
-
-1. autoridades antigas passaram a depender de correções e reconciliações posteriores;
-2. artefatos substituídos permaneceram fisicamente no corpus;
-3. a navegação passou a refletir a história de construção mais do que a verdade operacional necessária às equipes.
+A remoção física de `F-016-A` não promove maturidade funcional, não cria Design e não libera implementação. O próximo gate é validar e revisar o novo head exato antes de qualquer adjudicação formal de fechamento.
 
 ## 3. Fundação e identidade da Guivos
 

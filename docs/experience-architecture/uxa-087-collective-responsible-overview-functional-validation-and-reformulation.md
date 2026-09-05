@@ -26,6 +26,9 @@ normative: false
 
 # Validação Funcional e Reformulação da Visão Geral do Responsável do Coletivo
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A UXA-087 valida funcionalmente a referência materializada pela UXA-086 para `GKR-SURF-COL-002 — Visão Geral do Responsável` e aplica, no mesmo pacote, as correções estritamente necessárias para que a superfície cumpra seu contrato sem antecipar `GKR-SURF-COL-003`.
@@ -129,7 +132,6 @@ O contrato de `GKR-SURF-COL-002` previa permanência, retorno ou escolha de outr
 
 A UXA-087 altera o mesmo arquivo:
 
-`docs/assets/wireframes/uxa-086-collective-responsible-overview-desktop.svg`
 
 Não é criado um novo SVG e não surge um novo ID de superfície.
 

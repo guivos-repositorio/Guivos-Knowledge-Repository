@@ -34,6 +34,9 @@ normative: false
 
 # Materialização Controlada da Gestão de Solicitações do Responsável do Coletivo
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A UXA-088 materializa exclusivamente `GKR-SURF-COL-003 — gestão de solicitações` na perspectiva do responsável do Coletivo.

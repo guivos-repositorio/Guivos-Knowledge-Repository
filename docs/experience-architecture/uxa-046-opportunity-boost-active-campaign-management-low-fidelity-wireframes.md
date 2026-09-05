@@ -27,6 +27,9 @@ normative: false
 
 # Wireframes de Baixa Fidelidade da Gestão da Campanha Ativa do Opportunity Boost
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa a gestão posterior à aprovação de uma campanha do Opportunity Boost.
@@ -86,9 +89,7 @@ Todos os artefatos utilizam baixa fidelidade, dados ilustrativos e rótulos text
 
 ### 5.1 Campanha programada
 
-![Campanha programada](../assets/wireframes/uxa-046-campaign-scheduled-desktop.svg)
 
-`docs/assets/wireframes/uxa-046-campaign-scheduled-desktop.svg`
 
 Demonstra:
 
@@ -105,9 +106,7 @@ Programação não equivale a garantia de início, entrega integral ou uso do or
 
 ### 5.2 Campanha ativa
 
-![Campanha ativa](../assets/wireframes/uxa-046-campaign-active-desktop.svg)
 
-`docs/assets/wireframes/uxa-046-campaign-active-desktop.svg`
 
 Demonstra:
 
@@ -124,9 +123,7 @@ Impressões, cliques e tráfego inválido são indicadores parciais e operaciona
 
 ### 5.3 Campanha limitada
 
-![Campanha limitada](../assets/wireframes/uxa-046-campaign-limited-desktop.svg)
 
-`docs/assets/wireframes/uxa-046-campaign-limited-desktop.svg`
 
 Demonstra:
 
@@ -143,9 +140,7 @@ Demonstra:
 
 ### 5.4 Campanha pausada
 
-![Campanha pausada](../assets/wireframes/uxa-046-campaign-paused-desktop.svg)
 
-`docs/assets/wireframes/uxa-046-campaign-paused-desktop.svg`
 
 Demonstra:
 
@@ -161,9 +156,7 @@ Demonstra:
 
 ### 5.5 Alteração material
 
-![Alteração material](../assets/wireframes/uxa-046-campaign-material-change-desktop.svg)
 
-`docs/assets/wireframes/uxa-046-campaign-material-change-desktop.svg`
 
 Demonstra:
 
@@ -178,9 +171,7 @@ Demonstra:
 
 ### 5.6 Encerramento e cancelamento
 
-![Encerramento e cancelamento](../assets/wireframes/uxa-046-campaign-closure-desktop.svg)
 
-`docs/assets/wireframes/uxa-046-campaign-closure-desktop.svg`
 
 Demonstra:
 
