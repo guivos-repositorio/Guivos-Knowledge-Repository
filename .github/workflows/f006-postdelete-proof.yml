@@ -1,0 +1,97 @@
+name: F-006 Post-Delete Read-Only Proof
+
+on:
+  push:
+    branches:
+      - agent/gkr-f006-postdelete-proof-v1
+
+permissions:
+  contents: read
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 112a1397743a39bb73f930984a8431f808103a08
+          fetch-depth: 1
+
+      - name: Prove exact F-006 cleanup state
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess
+
+          target = '112a1397743a39bb73f930984a8431f808103a08'
+          actual = subprocess.check_output(['git','rev-parse','HEAD'], text=True).strip()
+          if actual != target:
+              raise SystemExit(f'WRONG_HEAD={actual}')
+
+          deletion_set = [
+              'docs/experience-architecture/uxa-015-organization-overview-low-fidelity-wireframe.md',
+              'docs/experience-architecture/uxa-016-collective-home-low-fidelity-wireframe.md',
+              'docs/experience-architecture/uxa-017-organization-overview-functional-validation-and-reformulation.md',
+              'docs/experience-architecture/uxa-018-collective-home-functional-validation-and-reformulation.md',
+              'docs/assets/wireframes/uxa-015-organization-overview-desktop.svg',
+              'docs/assets/wireframes/uxa-016-collective-home-mobile.svg',
+          ]
+          for rel in deletion_set:
+              if Path(rel).exists():
+                  raise SystemExit(f'DELETION_SET_MEMBER_PRESENT={rel}')
+
+          tracked = subprocess.check_output(['git','ls-files','-z']).split(b'\0')
+          tracked = [x.decode() for x in tracked if x]
+          utf8 = []
+          non_utf8 = []
+          for rel in tracked:
+              p = Path(rel)
+              try:
+                  text = p.read_text(encoding='utf-8')
+                  utf8.append((rel,text))
+              except (UnicodeDecodeError, IsADirectoryError):
+                  non_utf8.append(rel)
+
+          forbidden_names = [Path(x).name for x in deletion_set]
+          direct_hits=[]
+          for rel,text in utf8:
+              for token in forbidden_names:
+                  if token in text:
+                      direct_hits.append((rel,token))
+          if direct_hits:
+              print('DIRECT_DELETED_FILENAME_HITS:')
+              for h in direct_hits: print(h)
+              raise SystemExit('DIRECT_DELETED_FILENAME_HITS_NONZERO')
+
+          id_tokens = ['UXA-015','UXA-016','UXA-017','UXA-018']
+          id_hits=[]
+          for rel,text in utf8:
+              for lineno,line in enumerate(text.splitlines(),1):
+                  if any(tok in line for tok in id_tokens):
+                      id_hits.append((rel,lineno,line.strip()))
+
+          svg_count = len(list(Path('docs/assets/wireframes').glob('*.svg')))
+          if svg_count != 119:
+              raise SystemExit(f'WIREFRAME_SVG_COUNT={svg_count}, expected 119')
+
+          print(f'EXACT_HEAD={actual}')
+          print(f'TRACKED_FILES={len(tracked)}')
+          print(f'UTF8_FILES={len(utf8)}')
+          print(f'NON_UTF8_FILES={len(non_utf8)}')
+          for rel in non_utf8: print(f'NON_UTF8={rel}')
+          print('F006_DELETION_SET_ABSENT=6/6')
+          print('F006_DIRECT_DELETED_FILENAME_HITS=0')
+          print(f'F006_RESIDUAL_ID_HITS={len(id_hits)}')
+          for rel,lineno,line in id_hits:
+              print(f'ID_HIT={rel}:{lineno}:{line}')
+          print(f'WIREFRAME_SVG_COUNT={svg_count}')
+          PY
+
+      - name: Confirm strict documentation build
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install -q -r requirements.txt
+          mkdocs build --strict
