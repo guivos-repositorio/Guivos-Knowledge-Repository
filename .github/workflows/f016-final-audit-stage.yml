@@ -1,0 +1,177 @@
+name: F-016 Final Audit Read-Only Evidence
+
+on:
+  push:
+    branches:
+      - agent/gkr-f016-final-audit-stage-v1
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  f016-final-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout immutable canonical head
+        uses: actions/checkout@v4
+        with:
+          ref: 72a20d43f12d7efb9c646368ec009828c607924f
+          fetch-depth: 0
+
+      - name: Verify immutable input
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "CANONICAL_HEAD=$(git rev-parse HEAD)"
+          echo "CANONICAL_TREE=$(git rev-parse HEAD^{tree})"
+          test "$(git rev-parse HEAD)" = "72a20d43f12d7efb9c646368ec009828c607924f"
+          test "$(git rev-parse HEAD^{tree})" = "872185d998a77e3610446a01b4f7f8f376e8b9fb"
+          test -z "$(git status --porcelain)"
+
+      - name: Exhaustive F-016 reference and family inventory
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          ROOT = Path('.')
+          IDS = ['UXA-086','UXA-087','UXA-088','UXA-091','UXA-093','UXA-095']
+          all_files = [p for p in ROOT.rglob('*') if p.is_file() and '.git' not in p.parts]
+          md_files = [p for p in all_files if p.suffix.lower() == '.md']
+
+          def read(p):
+              try:
+                  return p.read_text(encoding='utf-8')
+              except UnicodeDecodeError:
+                  return ''
+
+          def frontmatter(text):
+              if not text.startswith('---\n'):
+                  return ''
+              end = text.find('\n---\n', 4)
+              return text[4:end] if end != -1 else ''
+
+          def fm_scalar(fm, key):
+              m = re.search(rf'(?mi)^\s*{re.escape(key)}\s*:\s*["\']?([^\n"\']+)', fm)
+              return m.group(1).strip() if m else ''
+
+          print('=== SIX-ID DOCUMENTS ===')
+          for uid in IDS:
+              paths = sorted(str(p) for p in md_files if re.search(rf'(?i)(^|[-_/]){uid.lower().replace("uxa-", "uxa-")}(?:[-_.]|$)', str(p)))
+              # filename/path fallback by numeric suffix
+              num = uid.split('-')[1]
+              if not paths:
+                  paths = sorted(str(p) for p in md_files if re.search(rf'(?i)uxa-{num}(?:[-_.]|$)', str(p)))
+              print(f'{uid}_DOC_COUNT={len(paths)}')
+              for path in paths:
+                  text = read(Path(path)); fm = frontmatter(text)
+                  print(f'{uid}_DOC={path}')
+                  for key in ['id','status','type','maturity','authority','supersedes']:
+                      val = fm_scalar(fm,key)
+                      if val:
+                          print(f'  {key}={val}')
+
+          print('=== EXHAUSTIVE OCCURRENCES BY ID ===')
+          totals = {}
+          for uid in IDS:
+              num = uid.split('-')[1]
+              pats = [re.compile(re.escape(uid), re.I), re.compile(rf'uxa-{num}(?=[-_.\s/)`]|$)', re.I)]
+              counts = {k:0 for k in ['STRUCTURAL_DEPENDS_ON','STRUCTURAL_RELATED','MKDOCS_NAV','MARKDOWN_LINK','BODY_OR_PROVENANCE','NON_MARKDOWN']}
+              print(f'--- {uid} ---')
+              for p in all_files:
+                  text = read(p)
+                  if not text:
+                      continue
+                  lines = text.splitlines()
+                  fm = frontmatter(text) if p.suffix.lower()=='.md' else ''
+                  fm_lines = fm.splitlines()
+                  in_dep = in_rel = False
+                  fm_line_classes = {}
+                  for i,line in enumerate(fm_lines,1):
+                      if re.match(r'^\s*depends_on\s*:', line):
+                          in_dep, in_rel = True, False
+                      elif re.match(r'^\s*related\s*:', line):
+                          in_dep, in_rel = False, True
+                      elif re.match(r'^\S[^:]*\s*:', line):
+                          in_dep = in_rel = False
+                      if any(pat.search(line) for pat in pats):
+                          fm_line_classes[i+1] = 'STRUCTURAL_DEPENDS_ON' if in_dep else ('STRUCTURAL_RELATED' if in_rel else None)
+                  for lineno,line in enumerate(lines,1):
+                      if not any(pat.search(line) for pat in pats):
+                          continue
+                      cls = None
+                      if p.name == 'mkdocs.yml':
+                          cls = 'MKDOCS_NAV'
+                      elif p.suffix.lower() != '.md':
+                          cls = 'NON_MARKDOWN'
+                      elif lineno in fm_line_classes and fm_line_classes[lineno]:
+                          cls = fm_line_classes[lineno]
+                      elif re.search(r'\[[^\]]*\]\([^)]*uxa-'+num+r'[^)]*\)', line, re.I):
+                          cls = 'MARKDOWN_LINK'
+                      else:
+                          cls = 'BODY_OR_PROVENANCE'
+                      counts[cls] += 1
+                      print(f'{cls}|{p}:{lineno}|{line[:240]}')
+              totals[uid] = counts
+              for k,v in counts.items(): print(f'{uid}_{k}={v}')
+              print(f'{uid}_TOTAL_OCCURRENCES={sum(counts.values())}')
+
+          print('=== CURRENT LOW-FIDELITY / WIREFRAME PRODUCER FAMILY ===')
+          low = sorted(p for p in md_files if re.search(r'low[-_]fidelity', p.name, re.I))
+          wire = sorted(p for p in md_files if 'wireframe' in p.name.lower())
+          gallery = sorted(p for p in md_files if 'gallery' in p.name.lower())
+          print(f'LOW_FIDELITY_PATH_DOCS={len(low)}')
+          print(f'WIREFRAME_PATH_DOCS={len(wire)}')
+          print(f'GALLERY_PATH_DOCS={len(gallery)}')
+          for p in low:
+              text = read(p); fm = frontmatter(text)
+              refs = len(re.findall(r'assets/wireframes/[^)\s`"\']+\.svg', text, re.I))
+              print('LOW_FIDELITY_DOC|{}|id={}|status={}|type={}|maturity={}|svg_refs={}'.format(
+                  p, fm_scalar(fm,'id'), fm_scalar(fm,'status'), fm_scalar(fm,'type'), fm_scalar(fm,'maturity'), refs))
+
+          print('=== DIRECT PHYSICAL MATERIALIZATION REFERENCES ===')
+          docs_with_svg=[]; svg_refs=0
+          for p in md_files:
+              text=read(p)
+              hits=re.findall(r'assets/wireframes/[^)\s`"\']+\.svg', text, re.I)
+              if hits:
+                  docs_with_svg.append((p,hits)); svg_refs += len(hits)
+          print(f'MD_DOCS_WITH_DIRECT_SVG_REFS={len(docs_with_svg)}')
+          print(f'DIRECT_SVG_REF_COUNT={svg_refs}')
+          for p,hits in docs_with_svg:
+              print(f'SVG_REF_DOC|{p}|count={len(hits)}')
+              for h in sorted(set(hits)):
+                  print(f'  SVG_REF|{h}')
+
+          print('=== PATH MATERIALIZATION UNIVERSE ===')
+          path_candidates = sorted(set(low + wire + gallery))
+          print(f'PATH_MATERIALIZATION_DOCS={len(path_candidates)}')
+          for p in path_candidates:
+              print(f'PATH_CANDIDATE|{p}')
+
+          print('=== SIX-ID SUMMARY ===')
+          for uid in IDS:
+              c=totals[uid]
+              structural=c['STRUCTURAL_DEPENDS_ON']+c['STRUCTURAL_RELATED']+c['MKDOCS_NAV']+c['MARKDOWN_LINK']+c['NON_MARKDOWN']
+              print(f'{uid}_LIVE_OR_STRUCTURAL={structural}')
+              print(f'{uid}_BODY_OR_PROVENANCE={c["BODY_OR_PROVENANCE"]}')
+          print('F016_FINAL_AUDIT_INVENTORY=SUCCESS')
+          PY
+
+      - name: Run canonical validators
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f scripts/validate_semantic_state.py ]; then python scripts/validate_semantic_state.py; fi
+          if [ -f scripts/validate_repository.py ]; then python scripts/validate_repository.py; fi
+          if [ -f scripts/check_legacy_terms.py ]; then python scripts/check_legacy_terms.py; fi
+
+      - name: Verify read-only completion
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -z "$(git status --porcelain)"
+          echo "F016_FINAL_READ_ONLY_PROOF=SUCCESS"
