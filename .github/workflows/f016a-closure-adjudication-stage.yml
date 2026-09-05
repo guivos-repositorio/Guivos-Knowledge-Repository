@@ -1,4 +1,4 @@
-name: F-016 Screen Gallery Post-Delete Read-Only Proof
+name: F-016 UXA-081-085 Read-Only Adjudication
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  post-delete-proof:
+  adjudication-inventory:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout exact canonical head read-only
@@ -26,18 +26,7 @@ jobs:
           test "$(git rev-parse HEAD^{tree})" = "6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4"
           test -z "$(git status --porcelain)"
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
-
-      - name: Install validation dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt PyYAML
-
-      - name: Prove screen-gallery post-delete state and guardrails
+      - name: Inventory exact UXA-081 through UXA-085 documents and references
         shell: bash
         run: |
           set -euo pipefail
@@ -45,93 +34,119 @@ jobs:
           from pathlib import Path
           import re, subprocess
 
-          head='78534bf86acdc5da5f76e558b0df2347e6b5a111'
-          tree='6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4'
-          galleries=[
-            'docs/journeys/screen-gallery.md',
-            'docs/journeys/screen-gallery-traceability-matrix.md',
-            'docs/journeys/screen-gallery-person.md',
-            'docs/journeys/screen-gallery-opportunities-organization.md',
-            'docs/journeys/screen-gallery-collectives.md',
-            'docs/journeys/screen-gallery-opportunity-boost-exposure.md',
-            'docs/journeys/screen-gallery-opportunity-boost-operations.md',
-            'docs/journeys/screen-gallery-plans-billing.md',
-          ]
-          basenames={Path(x).name for x in galleries}
-          ids={
-            'GKR-JOURNEY-SCREEN-GALLERY-001',
-            'GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001',
-            'GKR-JOURNEY-SCREEN-GALLERY-PERSON-001',
-            'GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITIES-ORGANIZATION-001',
-            'GKR-JOURNEY-SCREEN-GALLERY-COLLECTIVES-001',
-            'GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITY-BOOST-EXPOSURE-001',
-            'GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITY-BOOST-OPERATIONS-001',
-            'GKR-JOURNEY-SCREEN-GALLERY-PLANS-001',
-          }
-
-          assert subprocess.check_output(['git','rev-parse','HEAD']).decode().strip()==head
-          assert subprocess.check_output(['git','rev-parse','HEAD^{tree}']).decode().strip()==tree
-          assert all(not Path(x).exists() for x in galleries)
-          print('GALLERY_FILES_ABSENT=8/8')
-
-          link_re=re.compile(r'!?\[[^\]]*\]\(([^)]+)\)')
-          live=[]
+          wanted={f'UXA-{n:03d}' for n in range(81,86)}
+          docs=[]
+          frontmatter={}
           for p in Path('docs').rglob('*.md'):
-            txt=p.read_text(encoding='utf-8')
-            for i,line in enumerate(txt.splitlines(),1):
-              for m in link_re.finditer(line):
-                target=m.group(1).split('#',1)[0].strip()
-                if Path(target).name in basenames:
-                  live.append((str(p),i,line.strip()))
-          assert not live, live
-          print('LIVE_MARKDOWN_LINKS_TO_DELETED_GALLERY=0')
+              text=p.read_text(encoding='utf-8')
+              m=re.search(r'(?m)^id:\s*(UXA-08[1-5])\s*$', text)
+              if m:
+                  ident=m.group(1)
+                  docs.append((ident,p,text))
+                  fm={}
+                  if text.startswith('---\n'):
+                      block=text.split('---\n',2)[1]
+                      for line in block.splitlines():
+                          if ':' in line and not line.startswith((' ','\t','-')):
+                              k,v=line.split(':',1)
+                              fm[k.strip()]=v.strip()
+                  frontmatter[ident]=fm
 
-          mk=Path('mkdocs.yml').read_text(encoding='utf-8')
-          assert not any(name in mk for name in basenames)
-          print('MKDOCS_NAV_TO_DELETED_GALLERY=0')
+          docs.sort(key=lambda x:x[0])
+          found={x[0] for x in docs}
+          assert found==wanted, (found,wanted)
+          assert len(docs)==5, len(docs)
+          print('EXACT_TARGET_COUNT=5')
+          for ident,p,text in docs:
+              fm=frontmatter[ident]
+              print('TARGET',ident,str(p),sep='\t')
+              for key in ['title','status','version','normative','maturity','last_updated']:
+                  print('META',ident,key,fm.get(key,''),sep='\t')
+              heads=[ln.strip() for ln in text.splitlines() if re.match(r'^#{1,4}\s',ln)]
+              print('HEADINGS',ident,' || '.join(heads),sep='\t')
+              svgs=sorted(set(re.findall(r'(?i)(?:\.\./)*assets/wireframes/[^\s)\]"\'>]+\.svg',text)))
+              print('DIRECT_SVG_REFS',ident,len(svgs),';'.join(svgs),sep='\t')
+              gallery_mentions=[ln.strip() for ln in text.splitlines() if 'screen-gallery' in ln.lower()]
+              print('SCREEN_GALLERY_MENTION_LINES',ident,len(gallery_mentions),sep='\t')
+              for ln in gallery_mentions[:20]: print('GALLERY_LINE',ident,ln,sep='\t')
 
-          for reg in ['docs/journeys/surface-registry.md','docs/journeys/transition-registry.md']:
-            txt=Path(reg).read_text(encoding='utf-8')
-            deps=[x for x in basenames if x in txt] + [x for x in ids if x in txt]
-            assert not deps, (reg,deps)
-            print(f'REGISTRY_GALLERY_DEPENDENCIES\t{reg}\t0')
+          target_paths={str(p):ident for ident,p,_ in docs}
+          target_names={p.name:ident for ident,p,_ in docs}
+          id_to_path={ident:str(p) for ident,p,_ in docs}
+          link_re=re.compile(r'!?\[[^\]]*\]\(([^)]+)\)')
 
-          svg_root=Path('docs/assets/wireframes')
-          svg_count=sum(1 for _ in svg_root.rglob('*.svg')) if svg_root.exists() else 0
-          assert svg_count==0, svg_count
-          print('PHYSICAL_SVG_COUNT=0')
+          all_files=list(Path('docs').rglob('*.md'))+[Path('mkdocs.yml')]
+          for ident,p,text in docs:
+              name=p.name
+              print('REF_SCAN_BEGIN',ident,sep='\t')
+              exact_id_hits=[]; filename_hits=[]; live_links=[]; nav_hits=[]
+              for q in all_files:
+                  qtext=q.read_text(encoding='utf-8')
+                  for lineno,line in enumerate(qtext.splitlines(),1):
+                      if q==p: continue
+                      if re.search(rf'(?<![A-Za-z0-9-]){re.escape(ident)}(?![A-Za-z0-9-])',line):
+                          exact_id_hits.append((str(q),lineno,line.strip()))
+                      if name in line:
+                          filename_hits.append((str(q),lineno,line.strip()))
+                      if q.name=='mkdocs.yml' and (ident in line or name in line):
+                          nav_hits.append((str(q),lineno,line.strip()))
+                      if q.suffix=='.md':
+                          for m in link_re.finditer(line):
+                              target=m.group(1).split('#',1)[0].strip()
+                              if Path(target).name==name:
+                                  live_links.append((str(q),lineno,line.strip()))
+              print('EXACT_ID_INBOUND_COUNT',ident,len(exact_id_hits),sep='\t')
+              print('FILENAME_INBOUND_COUNT',ident,len(filename_hits),sep='\t')
+              print('LIVE_LINK_INBOUND_COUNT',ident,len(live_links),sep='\t')
+              print('MKDOCS_NAV_COUNT',ident,len(nav_hits),sep='\t')
+              for kind,rows in [('IDREF',exact_id_hits),('FILEREF',filename_hits),('LIVELINK',live_links),('NAVREF',nav_hits)]:
+                  for row in rows[:80]: print(kind,ident,*row,sep='\t')
+              print('REF_SCAN_END',ident,sep='\t')
 
-          audit=Path('docs/project/gkr-full-corpus-audit.md').read_text(encoding='utf-8')
-          assert 'version: 1.12.0' in audit
-          assert 'família `screen-gallery*` removida 8/8 após absorção' in audit
-          assert '**OPEN — F-016-A RESOLVED;' in audit
-          print('F016_GLOBAL_STATE=OPEN')
-          print('SCREEN_GALLERY_CANONICAL_CLEANUP=8/8')
-
-          state=Path('docs/project/current-state-register.md').read_text(encoding='utf-8')
-          required=[
-            'F-016\n→ OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION',
-            'J / K / L / M / N\n→ NOT RELEASED AUTOMATICALLY',
-            'UXA-102 / V5\n→ NOT_STARTED',
-            'PRODUCT ENGINEERING\n→ PAUSED BEFORE W0-01',
-            'MATERIALIZAÇÃO VISUAL DAS HOMES\n→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT',
+          # Current registries / central authorities direct dependency check.
+          central=[
+              Path('docs/journeys/surface-registry.md'),
+              Path('docs/journeys/transition-registry.md'),
+              Path('docs/experience-architecture/index.md'),
+              Path('docs/journeys/index.md'),
+              Path('docs/journeys/screen-catalog.md'),
+              Path('docs/project/current-state-register.md'),
+              Path('docs/project/gkr-full-corpus-audit.md'),
           ]
-          missing=[x for x in required if x not in state]
-          assert not missing, missing
-          print('DOWNSTREAM_GUARDRAILS_PRESERVED=PASS')
+          for q in central:
+              if not q.exists(): continue
+              qtext=q.read_text(encoding='utf-8')
+              for ident,p,text in docs:
+                  name=p.name
+                  hits=[]
+                  for lineno,line in enumerate(qtext.splitlines(),1):
+                      if re.search(rf'(?<![A-Za-z0-9-]){re.escape(ident)}(?![A-Za-z0-9-])',line) or name in line:
+                          hits.append((lineno,line.strip()))
+                  print('CENTRAL_REF_COUNT',str(q),ident,len(hits),sep='\t')
+                  for lineno,line in hits[:40]: print('CENTRAL_REF',str(q),ident,lineno,line,sep='\t')
+
+          # Candidate semantic receiver IDs: identifiers mentioned by a target that exist as another document frontmatter ID.
+          id_index={}
+          fm_id_re=re.compile(r'(?m)^id:\s*([^\s#]+)\s*$')
+          for q in Path('docs').rglob('*.md'):
+              qt=q.read_text(encoding='utf-8')
+              mm=fm_id_re.search(qt)
+              if mm: id_index.setdefault(mm.group(1),[]).append(str(q))
+          token_re=re.compile(r'\b(?:UXA|GKR(?:-[A-Z0-9]+)*|TRN|BND|PER|COL|ORG)-[A-Z0-9][A-Z0-9.-]*\b')
+          for ident,p,text in docs:
+              toks=sorted(set(token_re.findall(text)))
+              receivers=[]
+              for tok in toks:
+                  for path in id_index.get(tok,[]):
+                      if path!=str(p): receivers.append((tok,path))
+              print('MENTIONED_EXISTING_AUTHORITY_COUNT',ident,len(receivers),sep='\t')
+              for tok,path in receivers[:120]: print('AUTHORITY_CANDIDATE',ident,tok,path,sep='\t')
+
+          assert subprocess.check_output(['git','rev-parse','HEAD']).decode().strip()=='78534bf86acdc5da5f76e558b0df2347e6b5a111'
+          assert subprocess.check_output(['git','rev-parse','HEAD^{tree}']).decode().strip()=='6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4'
+          assert not subprocess.check_output(['git','status','--porcelain','--untracked-files=no']).decode().strip()
+          print('F016_UXA081_085_INVENTORY_READ_ONLY=SUCCESS')
           PY
-
-      - name: Validate semantic state
-        run: python scripts/validate_semantic_state.py
-
-      - name: Validate repository structure links and navigation
-        run: python scripts/validate_gkr.py
-
-      - name: Validate legacy nomenclature
-        run: python scripts/validate_legacy_nomenclature.py
-
-      - name: Build MkDocs strict
-        run: mkdocs build --strict --site-dir /tmp/gkr-site
 
       - name: Confirm exact head tree and clean tracked checkout
         shell: bash
@@ -140,4 +155,4 @@ jobs:
           test "$(git rev-parse HEAD)" = "78534bf86acdc5da5f76e558b0df2347e6b5a111"
           test "$(git rev-parse HEAD^{tree})" = "6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4"
           test -z "$(git status --porcelain --untracked-files=no)"
-          echo F016_SCREEN_GALLERY_POSTDELETE_READ_ONLY=SUCCESS
+          echo F016_UXA081_085_READ_ONLY_INPUT_PRESERVED=SUCCESS
