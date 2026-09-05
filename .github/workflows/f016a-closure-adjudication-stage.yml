@@ -21,6 +21,38 @@ jobs:
           cache: pip
       - name: Apply F-016-A closure adjudication
         run: python scripts/tmp_f016a_closure_adjudication.py
+      - name: Synchronize semantic state surfaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+
+          replacements = {
+              'README.md': [
+                  ('| GKR-STATE-001 | **3.10.0** |', '| GKR-STATE-001 | **3.11.0** |'),
+                  ('[Roadmap 13.10.0]', '[Roadmap 13.11.0]'),
+                  ('[Estado Atual 3.7.0]', '[Estado Atual 3.11.0]'),
+                  ('[Roadmap 13.7.0]', '[Roadmap 13.11.0]'),
+              ],
+              'docs/index.md': [
+                  ('`GKR-STATE-001` **3.10.0**', '`GKR-STATE-001` **3.11.0**'),
+                  ('[Roadmap 13.10.0]', '[Roadmap 13.11.0]'),
+                  ('[Registro do Estado Atual 3.7.0]', '[Registro do Estado Atual 3.11.0]'),
+                  ('[Roadmap 13.7.0]', '[Roadmap 13.11.0]'),
+              ],
+          }
+
+          for rel, pairs in replacements.items():
+              path = Path(rel)
+              text = path.read_text(encoding='utf-8')
+              for old, new in pairs:
+                  count = text.count(old)
+                  if count != 1:
+                      raise SystemExit(f'{rel}: expected exactly one occurrence of {old!r}, found {count}')
+                  text = text.replace(old, new, 1)
+              path.write_text(text, encoding='utf-8')
+          PY
       - name: Guard bounded documentation-only delta
         shell: bash
         run: |
@@ -40,8 +72,8 @@ jobs:
           physical=list(Path('docs/assets/wireframes').glob('*.svg')) if Path('docs/assets/wireframes').exists() else []
           if physical: raise SystemExit(f'PHYSICAL_SVG_COUNT={len(physical)}')
           required={
-            'README.md':['F-016-A','→ RESOLVED','PHYSICAL SVG COUNT = 0'],
-            'docs/index.md':['F-016-A = RESOLVED','SVGs FÍSICOS EM docs/assets/wireframes/','→ 0'],
+            'README.md':['GKR-STATE-001 | **3.11.0**','F-016-A','→ RESOLVED','PHYSICAL SVG COUNT = 0'],
+            'docs/index.md':['GKR-STATE-001` **3.11.0**','F-016-A = RESOLVED','SVGs FÍSICOS EM docs/assets/wireframes/','→ 0'],
             'docs/project/current-state-register.md':['version: 3.11.0','INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS','→ RESOLVED'],
             'docs/roadmap.md':['version: 13.11.0','F-016-A | **RESOLVED — PHYSICAL SVG COUNT 0**','Mechanical #1090'],
             'docs/project/gkr-full-corpus-audit.md':['version: 1.11.0','F-016-A — camada física SVG — RESOLVED','POST-DELETE READ-ONLY PROOF V2'],
