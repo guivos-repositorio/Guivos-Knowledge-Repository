@@ -1,0 +1,140 @@
+name: F-016 SVG Eligibility Read-Only Proof
+
+on:
+  push:
+    branches:
+      - agent/gkr-f016-svg-eligibility-proof-v1
+
+permissions:
+  contents: read
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 549fe10bb7d21eb38961fa9b611e68c53b43f1db
+          fetch-depth: 1
+
+      - name: Prove structural eligibility of physical SVG layer
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import collections, re, subprocess
+
+          target='549fe10bb7d21eb38961fa9b611e68c53b43f1db'
+          actual=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          if actual != target:
+              raise SystemExit(f'WRONG_HEAD={actual}')
+
+          tracked=[x.decode() for x in subprocess.check_output(['git','ls-files','-z']).split(b'\0') if x]
+          assets=sorted(x for x in tracked if x.startswith('docs/assets/wireframes/') and x.endswith('.svg'))
+          if len(assets) != 119:
+              raise SystemExit(f'WIREFRAME_ASSET_COUNT={len(assets)}, expected 119')
+
+          text_files=[]
+          for rel in tracked:
+              if rel in assets:
+                  continue
+              p=Path(rel)
+              try:
+                  txt=p.read_text(encoding='utf-8')
+              except (UnicodeDecodeError,IsADirectoryError):
+                  continue
+              text_files.append((rel,txt))
+
+          matrix=Path('docs/journeys/screen-gallery-traceability-matrix.md').read_text(encoding='utf-8')
+          profile_map={}
+          for line in matrix.splitlines():
+              m=re.match(r"\| `([^`]+\.svg)` \| (R\d+) \|", line.strip())
+              if m:
+                  profile_map[m.group(1)] = m.group(2)
+
+          missing_matrix=[]
+          inbound_counts={}
+          inbound_files={}
+          non_doc_refs=[]
+          unreferenced=[]
+          ref_type_counts=collections.Counter()
+          source_bucket_counts=collections.Counter()
+
+          def bucket(rel):
+              if rel.startswith('docs/experience-architecture/'):
+                  return 'experience-architecture'
+              if rel.startswith('docs/journeys/screen-gallery'):
+                  return 'screen-gallery'
+              if rel.startswith('docs/journeys/'):
+                  return 'journeys-other'
+              if rel.startswith('docs/project/'):
+                  return 'project'
+              if rel == 'mkdocs.yml':
+                  return 'mkdocs'
+              return 'other'
+
+          for asset in assets:
+              base=Path(asset).name
+              if base not in profile_map:
+                  missing_matrix.append(base)
+              hits=[]
+              for rel,txt in text_files:
+                  if base in txt:
+                      hits.append(rel)
+                      ref_type_counts[Path(rel).suffix.lower() or '<none>'] += 1
+                      source_bucket_counts[bucket(rel)] += 1
+                      if not (rel.endswith('.md') or rel.endswith('.yml') or rel.endswith('.yaml')):
+                          non_doc_refs.append((base,rel))
+              inbound_files[base]=sorted(set(hits))
+              inbound_counts[base]=len(set(hits))
+              if not hits:
+                  unreferenced.append(base)
+
+          # Stable profile coverage is a provenance/traceability receiver for each physical asset.
+          if missing_matrix:
+              print('MISSING_FROM_TRACEABILITY_MATRIX:')
+              for x in missing_matrix: print(x)
+              raise SystemExit('TRACEABILITY_PROFILE_COVERAGE_INCOMPLETE')
+
+          # Physical assets must not be runtime/code dependencies.
+          if non_doc_refs:
+              print('NON_DOCUMENT_REFERENCE_HITS:')
+              for x in non_doc_refs: print(x)
+              raise SystemExit('NON_DOCUMENT_DEPENDENCY_PRESENT')
+
+          profiles=collections.Counter(profile_map[Path(a).name] for a in assets)
+          zeros=[a for a in assets if inbound_counts[Path(a).name]==0]
+          only_gallery=[]
+          has_functional_doc=[]
+          for a in assets:
+              base=Path(a).name
+              refs=inbound_files[base]
+              non_gallery=[r for r in refs if not r.startswith('docs/journeys/screen-gallery')]
+              if refs and not non_gallery:
+                  only_gallery.append(base)
+              if any(r.startswith('docs/experience-architecture/') for r in refs):
+                  has_functional_doc.append(base)
+
+          print(f'EXACT_HEAD={actual}')
+          print(f'PHYSICAL_SVG_ASSETS={len(assets)}')
+          print(f'TRACEABILITY_PROFILE_COVERAGE={len(profile_map)}')
+          print(f'ASSETS_MAPPED_TO_PROFILE={len(assets)-len(missing_matrix)}/119')
+          print(f'ASSETS_WITH_ZERO_TEXT_REFERENCES={len(zeros)}')
+          print(f'ASSETS_REFERENCED_ONLY_BY_GALLERY_FAMILY={len(only_gallery)}')
+          print(f'ASSETS_WITH_EXPERIENCE_ARCHITECTURE_REFERENCE={len(has_functional_doc)}')
+          print(f'NON_DOCUMENT_REFERENCE_HITS={len(non_doc_refs)}')
+          print('REFERENCE_FILE_TYPES=' + ','.join(f'{k}:{v}' for k,v in sorted(ref_type_counts.items())))
+          print('REFERENCE_BUCKETS=' + ','.join(f'{k}:{v}' for k,v in sorted(source_bucket_counts.items())))
+          print('--- PROFILE_COUNTS ---')
+          for p,n in sorted(profiles.items(), key=lambda x:int(x[0][1:])):
+              print(f'{p}\t{n}')
+          print('--- ZERO_REFERENCE_ASSETS ---')
+          for x in zeros: print(x)
+          print('--- GALLERY_ONLY_ASSETS ---')
+          for x in only_gallery: print(x)
+          print('--- INBOUND_REFERENCE_COUNT_BY_ASSET ---')
+          for a in assets:
+              base=Path(a).name
+              print(f'{inbound_counts[base]}\t{profile_map[base]}\t{base}')
+          PY
