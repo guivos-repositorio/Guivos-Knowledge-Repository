@@ -19,7 +19,6 @@ related:
   - UXA-069
   - UXA-070
   - UXA-080
-  - UXA-085
   - UXA-090
   - UXA-091
   - UXA-092

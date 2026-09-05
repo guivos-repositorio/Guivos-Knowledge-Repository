@@ -344,7 +344,7 @@ F-016-A
 → LIVE REFERENCES = 0
 ```
 
-A próxima subfrente é exclusivamente documental: classificar produtores de low-fidelity, documentos de validação/programação, ciclo `UXA-081..085`, galerias e demais materializações sem presumir remoção.
+A próxima subfrente é exclusivamente documental: classificar produtores de low-fidelity, documentos de validação/programação e demais materializações sem presumir remoção.
 
 A documentação continua responsável por conteúdo, estados, regras, comportamento, permissões, fluxos, relações, requisitos, restrições, critérios de aceite e handoff. Wireframes, mockups, protótipos, layout, composição e materialização final pertencem exclusivamente a Design.
 

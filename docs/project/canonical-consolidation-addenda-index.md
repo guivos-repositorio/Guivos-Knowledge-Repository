@@ -10,7 +10,6 @@ depends_on:
   - GKR-STATE-001
 related:
   - GKR-SEMANTIC-SYNC-001
-  - UXA-084
 normative: false
 ---
 

@@ -18,7 +18,6 @@ related:
   - GKR-UX-D5-C4B-001
   - UXA-070
   - UXA-080
-  - UXA-085
   - UXA-090
   - UXA-097
   - UXA-098

@@ -107,11 +107,11 @@ A auditoria integral decidirá quais artefatos antigos devem ser absorvidos e re
 - [UXA-078](uxa-078-controlled-granular-registry-reformulation.md)
 - [UXA-079](uxa-079-granular-registry-functional-revalidation.md)
 - [UXA-080](uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md)
-- [UXA-081](uxa-081-integrated-screen-gallery-and-coverage-audit.md)
-- [UXA-082](uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md)
-- [UXA-083](uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md)
-- [UXA-084](uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md)
-- [UXA-085](uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md)
+- UXA-081
+- UXA-082
+- UXA-083
+- UXA-084
+- UXA-085
 
 ## UXA-086 a UXA-096 — continuidade de Coletivos
 
