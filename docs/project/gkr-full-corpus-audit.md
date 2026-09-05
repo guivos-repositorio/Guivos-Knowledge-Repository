@@ -784,7 +784,7 @@ Foram preservados sem reescrita desnecessária por permanecerem consistentes:
 - `GKR-BRAND-PUBLIC-AUTHORITY-001`;
 - `GKR-CHRISTIAN-FOUNDATION-001`.
 
-`GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` teve as correções relacionadas à Home Pessoa absorvidas durante o Lote D; sua função residual passa a ser avaliada sob F-010 antes de qualquer consolidação ou remoção.
+`GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` teve as correções relacionadas à Home Pessoa absorvidas durante o Lote D e foi adjudicado no fechamento de `F-010` como `KEEP TEMPORARILY`: registro transitório, não normativo e parcialmente absorvido, candidato a `REMOVE_AFTER_ABSORPTION` somente quando seus próprios critérios internos forem satisfeitos.
 
 A hierarquia fundacional reconciliada é:
 
@@ -815,7 +815,7 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | F — Homes de Produtos | `COMPLETED` | seis Homes especializadas reconciliadas documentalmente; materialização não autorizada |
 | G — Jornada da Pessoa | `COMPLETED` | contradição de handoff reconciliada; sem rebuild |
 | H — Organização / Coletivo | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED` | Jobs + IA propagados; cleanup F-006 concluído e validado |
-| I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED / F-007_RESOLVED / F-016-A_RESOLVED` | camada SVG removida; inventário físico corrente = 0; demais famílias F-016 continuam abertas |
+| I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED / F-007_RESOLVED / F-016-A_RESOLVED / F-016_RESOLVED` | camada SVG removida; inventário físico corrente = 0; cleanup documental F-016 concluído 26/26 com autoridades/validadores/evidências preservados |
 | J — Produtos / Economia | `PENDING` | masters atuais sem fragmentação |
 | K — Research / RP-002 | `PENDING` | método/evidência preservados; intermediários absorvidos quando possível |
 | L — Tecnologia / Dados / IA | `PENDING` | autoridades atuais e fronteiras claras |
@@ -844,7 +844,7 @@ G. Jornada da Pessoa                             [concluído]
 ↓
 H/I. O/C + inventário visual                     [auditados/remediados; F-006 resolvido]
 ↓
-F-016. desmaterialização documental              [aberta; F-016-A resolved; famílias Markdown pendentes]
+F-016. desmaterialização documental              [RESOLVED; F-016-A resolved; cleanup documental 26/26 + prova pós-delete concluídos]
 ↓
 J/K/L/M/N. domínios especializados               [não liberados automaticamente]
 ↓

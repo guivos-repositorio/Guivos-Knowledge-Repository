@@ -317,7 +317,9 @@ P3-D FINAL
 
 Documento:
 
-- `RP-002-PILOT-NOTICE-CONSENT-002` v0.2.0.
+- `RP-002-PILOT-NOTICE-CONSENT-002` v0.2.1.
+
+`v0.2.0` permanece o checkpoint substantivo originalmente revisado em A11. A revisão `v0.2.1` reconciliou somente metadados de dependência (`RP-002-PILOT-OPS-REG-001` → `RP-002-PILOT-OPS-REG-002`), versão e data, sem alterar o conteúdo participante-facing do Notice; portanto o fechamento documental de A11 continua aplicável à revisão corrente, ainda condicionado a A12 e à reconciliação com a configuração operacional real.
 
 A versão está reconciliada documentalmente com:
 

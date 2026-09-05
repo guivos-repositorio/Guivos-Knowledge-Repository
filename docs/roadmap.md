@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.11.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.12.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -53,7 +53,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` é o eixo prioritário corrente.
+Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. Esse fechamento não libera automaticamente J/K/L/M/N.
 
 `F-016-A` concluiu o ciclo governado: elegibilidade estrutural/semântica, autorização humana separada, cleanup físico 119/119, reconciliação, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. A subfrente está `RESOLVED` e o inventário físico corrente de SVGs é zero.
 
@@ -66,7 +66,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.11.0** |
+| Estado global | **GKR-STATE-001 v3.12.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -80,7 +80,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
 | Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
 | F-010 | **RESOLVED** |
-| F-016 | **OPEN — REPO-WIDE DOCUMENTATION DEMATERIALIZATION** |
+| F-016 | **RESOLVED — AUDIT + ADJUDICATION + CLEANUP 26/26 + POST-DELETE PROOF COMPLETE** |
 | F-016-A | **RESOLVED — PHYSICAL SVG COUNT 0** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
@@ -155,11 +155,9 @@ I. REGISTRIES / CATÁLOGOS / SVGs         [AUDITED / UPDATE_APPLIED / F-006 RESO
 ↓
 F-006 CLEANUP 6/6                        [APPLIED / VALIDATED / RESOLVED]
 ↓
-F-016 DESMATERIALIZAÇÃO DOCUMENTAL       [OPEN / NEXT PRIORITY]
+F-016 DESMATERIALIZAÇÃO DOCUMENTAL       [RESOLVED / 26/26 LEGACY PRODUCERS REMOVED]
 ↓
-AUDITAR WIREFRAMES / MATERIALIZATIONS / GALLERIES / MENU / SVGs [PENDING]
-↓
-ABSORVER CONTEÚDO FUNCIONAL ÚNICO + REMOVER/REESCREVER MATERIALIZAÇÕES INDEVIDAS [PENDING]
+DECISÃO GOVERNADA SOBRE J/K/L/M/N         [NOT RELEASED AUTOMATICALLY]
 ↓
 J. PRODUTOS / ECONOMIA                   [PENDING / NOT RELEASED AUTOMATICALLY]
 ↓
@@ -240,7 +238,7 @@ Objetivos executados:
 - reconciliar PP-11/PP-12 para distinguir verdade vigente de visão/target;
 - preservar `GKR-BRAND-SIGNATURE-001`, `GKR-BRAND-PUBLIC-AUTHORITY-001` e `GKR-CHRISTIAN-FOUNDATION-001` porque permaneceram consistentes;
 - atualizar `GOG-001` para v5.3.0;
-- manter a propagação de autoridade pública apenas como registro transitório dos resíduos especializados ainda sujeitos a F-010; as correções relacionadas à Home Pessoa já foram absorvidas no Lote D, e eventual remoção exige absorção completa sem perda de conhecimento vigente.
+- manter `GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` conforme a adjudicação já concluída em F-010: `KEEP TEMPORARILY`, transitória, não normativa e parcialmente absorvida; eventual remoção futura continua sujeita aos próprios critérios de `REMOVE_AFTER_ABSORPTION`, sem perda de conhecimento vigente.
 
 Hierarquia reconciliada:
 
@@ -543,7 +541,7 @@ Estado do Bloco 2:
 AUDITED / UPDATE_APPLIED
 F-006 → RESOLVED
 F-007 → RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
-F-016 → OPEN
+F-016 → RESOLVED
 F-016-A → RESOLVED
 ```
 
@@ -563,7 +561,7 @@ CONTAGEM FÍSICA DE SVGs
 ≠ WIREFRAMES VALIDADOS
 ```
 
-As famílias Markdown de materialização permanecem sob F-016 e devem ser classificadas individualmente antes de qualquer remoção ou reescrita.
+As famílias Markdown adjudicadas sob F-016 foram classificadas individualmente; o cleanup governado removeu os 26 produtores legados elegíveis após absorção, preservando autoridades, validadores e evidências correntes. Histórico e proveniência permanecem no Git.
 
 ## 14. Lote J — Produtos, planos e economia
 
@@ -959,7 +957,7 @@ DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL DURANTE A AUDITORIA
 
 ## 26. Regra do próximo movimento
 
-`F-016-A` está `RESOLVED`.
+`F-016-A` e `F-016` estão `RESOLVED`.
 
 ```text
 F-016-A
@@ -970,10 +968,17 @@ F-016-A
 → INDEPENDENT READ-ONLY PROOF V2 SUCCESS
 → RESOLVED
 
-NEXT F-016 SUBFRONT
-→ CLASSIFY REMAINING MARKDOWN MATERIALIZATION FAMILIES
-→ KEEP_FUNCTIONAL | REWRITE_FUNCTIONAL | REMOVE_AFTER_ABSORPTION | REMOVE | HISTORICAL_PROVENANCE_ONLY
-→ NO AUTOMATIC MARKDOWN DELETION
+F-016
+→ AUDIT + ADJUDICATION COMPLETE
+→ LEGACY VISUAL PRODUCERS REMOVED 26/26
+→ STRUCTURAL REFERENCES TO REMOVED PRODUCERS = 0
+→ DIRECT REMOVED-SVG PATH REFERENCES = 0
+→ POST-DELETE PROOF = SUCCESS
+→ RESOLVED
+
+NEXT DOWNSTREAM DECISION
+→ J / K / L / M / N REMAIN NOT RELEASED AUTOMATICALLY
+→ REQUIRE SEPARATE GOVERNED RELEASE DECISION
 ```
 
 J/K/L/M/N, `UXA-102/V5`, Design, Product Engineering e merge da PR #363 permanecem bloqueados ou não autorizados.

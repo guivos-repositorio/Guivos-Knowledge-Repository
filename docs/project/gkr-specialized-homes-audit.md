@@ -77,7 +77,7 @@ PMF
 → NOT VALIDATED
 ```
 
-Na integração do Lote F, o estado resultante era consumido por `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`. Essas versões são **proveniência do fechamento daquele lote**, não autoridades globais correntes. No estado posterior desta auditoria, prevalecem `GKR-STATE-001 v3.5.0`, `ROADMAP-13.5.0` e `GKR-FULL-CORPUS-AUDIT-001 v1.5.0`.
+Na integração do Lote F, o estado resultante era consumido por `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`. Essas versões são **proveniência do fechamento daquele lote**, não autoridades globais correntes. Para estado corrente, devem ser consultadas diretamente as revisões vigentes de `GKR-STATE-001`, `ROADMAP` e `GKR-FULL-CORPUS-AUDIT-001`; versões intermediárias posteriores ao Lote F também permanecem checkpoints históricos, não aliases permanentes da verdade atual.
 
 ---
 

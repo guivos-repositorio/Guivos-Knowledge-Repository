@@ -895,7 +895,7 @@ FALA PESSOAL
 ≠ POSICIONAMENTO INSTITUCIONAL
 ```
 
-`GKR-BRAND-PUBLIC-AUTHORITY-001` também permanece preservado. O registro de propagação derivado continua transitório e não normativo; as correções relacionadas à Home Pessoa já foram absorvidas no Lote D, e sua permanência ou remoção passa a depender exclusivamente da avaliação dos resíduos especializados sob F-010, com remoção somente após absorção completa e sem perda de conhecimento vigente.
+`GKR-BRAND-PUBLIC-AUTHORITY-001` também permanece preservado. `GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` foi adjudicado no fechamento de `F-010` como `KEEP TEMPORARILY`: continua transitório, não normativo e parcialmente absorvido, preservando rastreabilidade enquanto seus próprios gates de absorção permanecem aplicáveis. A decisão sob `F-010` está encerrada; eventual remoção futura depende exclusivamente dos critérios internos de `REMOVE_AFTER_ABSORPTION` da própria propagation, sem perda de conhecimento vigente.
 
 ## 15. Proteção marcária
 

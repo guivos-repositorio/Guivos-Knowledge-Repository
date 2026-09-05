@@ -380,7 +380,7 @@ REBUILD_REQUIRED
 → 0
 ```
 
-As divergências encontradas foram resolvidas documentalmente sem perda de conhecimento e sem rebuild conceitual. O fechamento do Lote F foi originalmente consumido por `GKR-FULL-CORPUS-AUDIT-001 v1.4.0`, `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`; essas versões permanecem como **checkpoint histórico do Lote F**. No estado global posterior desta auditoria, prevalecem `GKR-FULL-CORPUS-AUDIT-001 v1.5.0`, `GKR-STATE-001 v3.5.0` e `ROADMAP-13.5.0`.
+As divergências encontradas foram resolvidas documentalmente sem perda de conhecimento e sem rebuild conceitual. O fechamento do Lote F foi originalmente consumido por `GKR-FULL-CORPUS-AUDIT-001 v1.4.0`, `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`; essas versões permanecem como **checkpoint histórico do Lote F**. Para o estado global corrente, devem ser consultadas diretamente as revisões vigentes de `GKR-FULL-CORPUS-AUDIT-001`, `GKR-STATE-001` e `ROADMAP`; revisões intermediárias posteriores ao Lote F não constituem aliases permanentes da verdade atual.
 
 Esse fechamento não promove materialização, disponibilidade operacional, PMF, nova UXA ou implementação.
 
@@ -406,15 +406,17 @@ G / H / I
 → F-006 RESOLVED
 
 F-016
-→ OPEN
+→ RESOLVED
+→ LEGACY VISUAL PRODUCERS REMOVED 26/26
+→ POST-DELETE PROOF COMPLETE
 
 F-016-A
 → RESOLVED
 → PHYSICAL_SVG_COUNT = 0
 
-NEXT F-016 GATE
-→ CLASSIFY REMAINING MARKDOWN MATERIALIZATION FAMILIES
-→ J / K / L / M / N NOT RELEASED
+DOWNSTREAM RELEASE
+→ J / K / L / M / N NOT RELEASED AUTOMATICALLY
+→ REQUIRES SEPARATE GOVERNED DECISION
 
 DESIGN AUTHORIZATION
 → SUSPENDED DURING FULL-CORPUS AUDIT
