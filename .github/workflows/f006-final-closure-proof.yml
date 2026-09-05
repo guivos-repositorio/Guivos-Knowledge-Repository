@@ -1,0 +1,119 @@
+name: F-006 Final Read-Only Closure Proof
+
+on:
+  push:
+    branches:
+      - agent/gkr-f006-final-closure-proof-v1
+
+permissions:
+  contents: read
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 6bd2a17f69b47c3f39cf9b7b5784ac2d7ee110db
+          fetch-depth: 1
+
+      - name: Prove F-006 final closure and F-016 handoff state
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess
+
+          target='6bd2a17f69b47c3f39cf9b7b5784ac2d7ee110db'
+          actual=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          if actual != target:
+              raise SystemExit(f'WRONG_HEAD={actual}')
+
+          deletion_set=[
+            'docs/experience-architecture/uxa-015-organization-overview-low-fidelity-wireframe.md',
+            'docs/experience-architecture/uxa-016-collective-home-low-fidelity-wireframe.md',
+            'docs/experience-architecture/uxa-017-organization-overview-functional-validation-and-reformulation.md',
+            'docs/experience-architecture/uxa-018-collective-home-functional-validation-and-reformulation.md',
+            'docs/assets/wireframes/uxa-015-organization-overview-desktop.svg',
+            'docs/assets/wireframes/uxa-016-collective-home-mobile.svg',
+          ]
+          for rel in deletion_set:
+              if Path(rel).exists():
+                  raise SystemExit(f'DELETION_SET_MEMBER_PRESENT={rel}')
+
+          tracked=subprocess.check_output(['git','ls-files','-z']).split(b'\0')
+          tracked=[x.decode() for x in tracked if x]
+          utf8=[]; non_utf8=[]
+          for rel in tracked:
+              p=Path(rel)
+              try:
+                  utf8.append((rel,p.read_text(encoding='utf-8')))
+              except (UnicodeDecodeError,IsADirectoryError):
+                  non_utf8.append(rel)
+
+          forbidden_names=[Path(x).name for x in deletion_set]
+          direct_hits=[]
+          for rel,text in utf8:
+              for token in forbidden_names:
+                  if token in text:
+                      direct_hits.append((rel,token))
+          if direct_hits:
+              print('DIRECT_DELETED_FILENAME_HITS:')
+              for h in direct_hits: print(h)
+              raise SystemExit('DIRECT_DELETED_FILENAME_HITS_NONZERO')
+
+          svg_count=len(list(Path('docs/assets/wireframes').glob('*.svg')))
+          if svg_count != 119:
+              raise SystemExit(f'WIREFRAME_SVG_COUNT={svg_count}, expected 119')
+
+          checks={
+            'README.md':['`F-006` está `RESOLVED`','**119 SVGs físicos**','`F-016`'],
+            'docs/index.md':['`F-006` está `RESOLVED`','**119 SVGs físicos**','`F-016 — desmaterialização documental repo-wide`'],
+            'docs/project/current-state-register.md':['version: 3.8.0','→ RESOLVED','**119 SVGs físicos**','`F-016` abre'],
+            'docs/project/gkr-full-corpus-audit.md':['version: 1.8.0','**RESOLVED — absorção, cleanup 6/6','| F-016 | Major |','## F-016 — Desmaterialização documental repo-wide'],
+            'docs/roadmap.md':['id: ROADMAP-13.8.0','F-006 CLEANUP 6/6','[APPLIED / VALIDATED / RESOLVED]','F-016 DESMATERIALIZAÇÃO DOCUMENTAL'],
+            'docs/experience-architecture/organizations-collectives-ux-state.md':['version: 1.3.0','### 11.4 Fechamento de F-006','→ RESOLVED','Design é a autoridade exclusiva'],
+          }
+          for rel,tokens in checks.items():
+              s=Path(rel).read_text(encoding='utf-8')
+              for token in tokens:
+                  if token not in s:
+                      raise SystemExit(f'AUTHORITY_ASSERTION_FAILED={rel}::{token}')
+
+          current_claims='\n'.join(Path(rel).read_text(encoding='utf-8') for rel in checks)
+          forbidden_current=[
+            'F-006\n→ OPEN\n→ ABSORPTION_APPLIED',
+            'F-006 PHYSICAL CLEANUP\n→ NOT AUTHORIZED',
+            'F-006 CLEANUP 6/6                        [PENDING]',
+          ]
+          for token in forbidden_current:
+              if token in current_claims:
+                  raise SystemExit(f'STALE_CURRENT_F006_CLAIM={token}')
+
+          id_tokens=['UXA-015','UXA-016','UXA-017','UXA-018']
+          id_hits=[]
+          for rel,text in utf8:
+              for lineno,line in enumerate(text.splitlines(),1):
+                  if any(tok in line for tok in id_tokens):
+                      id_hits.append((rel,lineno,line.strip()))
+
+          print(f'EXACT_HEAD={actual}')
+          print(f'TRACKED_FILES={len(tracked)}')
+          print(f'UTF8_FILES={len(utf8)}')
+          print(f'NON_UTF8_FILES={len(non_utf8)}')
+          for rel in non_utf8: print(f'NON_UTF8={rel}')
+          print('F006_DELETION_SET_ABSENT=6/6')
+          print('F006_DIRECT_DELETED_FILENAME_HITS=0')
+          print(f'F006_RESIDUAL_ID_HITS={len(id_hits)}')
+          print(f'WIREFRAME_SVG_COUNT={svg_count}')
+          print('F006_CURRENT_AUTHORITIES_RESOLVED=PASS')
+          print('F016_DESIGN_ONLY_FINDING_OPEN=PASS')
+          PY
+
+      - name: Confirm strict documentation build
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install -q -r requirements.txt
+          mkdocs build --strict
