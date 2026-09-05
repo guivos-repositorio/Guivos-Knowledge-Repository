@@ -1,0 +1,146 @@
+name: F-016 SVG Semantic Receiver Read-Only Proof
+
+on:
+  push:
+    branches:
+      - agent/gkr-f016-svg-semantic-proof-v1
+
+permissions:
+  contents: read
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 549fe10bb7d21eb38961fa9b611e68c53b43f1db
+          fetch-depth: 1
+
+      - name: Prove semantic receiver coverage for every physical SVG profile
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import collections, re, subprocess
+
+          target='549fe10bb7d21eb38961fa9b611e68c53b43f1db'
+          actual=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          if actual != target:
+              raise SystemExit(f'WRONG_HEAD={actual}')
+
+          tracked=[x.decode() for x in subprocess.check_output(['git','ls-files','-z']).split(b'\0') if x]
+          md=[x for x in tracked if x.endswith('.md')]
+          assets=sorted(x for x in tracked if x.startswith('docs/assets/wireframes/') and x.endswith('.svg'))
+          if len(assets)!=119:
+              raise SystemExit(f'ASSET_COUNT={len(assets)}, expected 119')
+
+          # Build current frontmatter ID index from Markdown corpus.
+          id_to_paths=collections.defaultdict(list)
+          for rel in md:
+              txt=Path(rel).read_text(encoding='utf-8')
+              head='\n'.join(txt.splitlines()[:80])
+              m=re.search(r'(?m)^id:\s*([^\s#]+)', head)
+              if m:
+                  id_to_paths[m.group(1).strip()].append(rel)
+
+          matrix_path='docs/journeys/screen-gallery-traceability-matrix.md'
+          matrix=Path(matrix_path).read_text(encoding='utf-8')
+
+          # Parse profile rows (Rxx) and individual asset mapping.
+          profile_rows={}
+          asset_profile={}
+          for line in matrix.splitlines():
+              s=line.strip()
+              m=re.match(r'\| (R\d+) \| (.*?) \| (.*?) \| (.*?) \| (.*?) \| (.*?) \| (.*?) \|$', s)
+              if m:
+                  profile_rows[m.group(1)]={
+                      'surface':m.group(2),
+                      'entry':m.group(3),
+                      'exit':m.group(4),
+                      'return':m.group(5),
+                      'gap':m.group(6),
+                      'validation':m.group(7),
+                  }
+                  continue
+              m=re.match(r'\| `([^`]+\.svg)` \| (R\d+) \|$', s)
+              if m:
+                  asset_profile[m.group(1)]=m.group(2)
+
+          if len(asset_profile)!=119:
+              raise SystemExit(f'ASSET_PROFILE_ROWS={len(asset_profile)}, expected 119')
+
+          # Extract candidate authority IDs from each profile's validation/current-state cell.
+          # Valid receivers must exist as current Markdown IDs outside gallery files and may not be removed F-006 IDs.
+          removed={'UXA-015','UXA-016','UXA-017','UXA-018'}
+          authority_pat=re.compile(r'\b(?:UXA-\d+(?:-[A-Z0-9]+)?|GKR-[A-Z0-9][A-Z0-9-]*-\d+|GKR-UX-[A-Z0-9-]+-\d+)\b')
+
+          physical_profiles=sorted(set(asset_profile.values()), key=lambda x:int(x[1:]))
+          missing_profiles=[]
+          receiver_map={}
+          unresolved_authority_tokens=collections.defaultdict(list)
+
+          for p in physical_profiles:
+              row=profile_rows.get(p)
+              if not row:
+                  missing_profiles.append((p,'PROFILE_ROW_MISSING'))
+                  continue
+              tokens=[]
+              # Receiver evidence may appear in validation plus gap/entry/exit when maturity moved to newer authorities.
+              for field in ('validation','surface','entry','exit','gap'):
+                  tokens.extend(authority_pat.findall(row[field]))
+              tokens=[t for t in dict.fromkeys(tokens) if t not in removed]
+              valid=[]
+              for tok in tokens:
+                  paths=[x for x in id_to_paths.get(tok,[]) if not x.startswith('docs/journeys/screen-gallery')]
+                  if paths:
+                      valid.append((tok,paths))
+                  else:
+                      unresolved_authority_tokens[p].append(tok)
+              if not valid:
+                  missing_profiles.append((p,row['validation']))
+              receiver_map[p]=valid
+
+          # Every physical asset must additionally be described/referenced by at least one Experience Architecture Markdown.
+          no_exp_ref=[]
+          for asset in assets:
+              base=Path(asset).name
+              found=False
+              for rel in md:
+                  if not rel.startswith('docs/experience-architecture/'):
+                      continue
+                  if base in Path(rel).read_text(encoding='utf-8'):
+                      found=True
+                      break
+              if not found:
+                  no_exp_ref.append(base)
+
+          if missing_profiles:
+              print('PROFILES_WITHOUT_TEXTUAL_RECEIVER:')
+              for x in missing_profiles: print(x)
+              raise SystemExit('SEMANTIC_RECEIVER_COVERAGE_INCOMPLETE')
+          if no_exp_ref:
+              print('ASSETS_WITHOUT_EXPERIENCE_ARCHITECTURE_TEXT_REFERENCE:')
+              for x in no_exp_ref: print(x)
+              raise SystemExit('ASSET_TEXT_DESCRIPTION_COVERAGE_INCOMPLETE')
+
+          print(f'EXACT_HEAD={actual}')
+          print(f'PHYSICAL_SVG_ASSETS={len(assets)}')
+          print(f'PHYSICAL_PROFILES={len(physical_profiles)}')
+          print(f'ASSETS_WITH_PROFILE={len(asset_profile)}/119')
+          print(f'PROFILES_WITH_TEXTUAL_RECEIVER={len(physical_profiles)-len(missing_profiles)}/{len(physical_profiles)}')
+          print(f'ASSETS_WITH_EXPERIENCE_ARCHITECTURE_REFERENCE={len(assets)-len(no_exp_ref)}/119')
+          print('REMOVED_F006_IDS_ACCEPTED_AS_RECEIVERS=0')
+          print('--- PROFILE_RECEIVERS ---')
+          for p in physical_profiles:
+              vals=receiver_map[p]
+              rendered=[]
+              for tok,paths in vals:
+                  rendered.append(tok+'='+','.join(paths))
+              print(p+'\t'+';'.join(rendered))
+          print('--- UNRESOLVED_TOKENS_IGNORED_WHEN_PROFILE_HAS_VALID_RECEIVER ---')
+          for p,toks in sorted(unresolved_authority_tokens.items(), key=lambda x:int(x[0][1:])):
+              if toks:
+                  print(p+'\t'+','.join(dict.fromkeys(toks)))
+          PY
