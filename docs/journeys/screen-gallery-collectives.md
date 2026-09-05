@@ -249,7 +249,7 @@ A presença física de 33 SVGs não transfere autoridade visual à documentaçã
 
 Os fluxos públicos, de solicitação, participação e gestão especializada preservam as maturidades que possuem por autoridade própria. A experiência principal autenticada já possui papéis/jobs e Arquitetura da Informação definidos. O **mapa final de superfícies → fluxos e estados críticos → wireframe principal** permanece uma lacuna documental posterior e não constitui o próximo gate vigente enquanto `F-006` estiver aberto.
 
-A eventual autorização dessa frente somente poderá ser considerada após a sequência governada de `F-006`: autorização humana separada para cleanup → se autorizada, remoção dos quatro Markdown `UXA-015..018` e dos dois SVGs associados com reconciliação transacional → recomputação da árvore resultante → validações Semantic + Mechanical → review repo-wide → decisão de fechamento de `F-006` e G/H/I.
+A sequência governada de `F-006` foi concluída e validada. O trabalho posterior sobre superfícies do Coletivo permanece funcional/documental; qualquer materialização visual pertence exclusivamente a Design e não é autorizada por este fechamento.
 
 Nenhuma próxima UXA, UI, protótipo ou Engenharia de Produto é iniciada automaticamente.
 

@@ -2,9 +2,9 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.7.0
+version: 1.8.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-04
+last_updated: 2026-09-05
 normative: false
 maturity: audit_in_progress
 baseline_sha: a05a54071414086456877ee4d0de59c59eefed0a
@@ -137,7 +137,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-003 | Critical | Home principal/Pessoa conflita com assinatura e Movimento 06 vigentes | `REBUILD` | resolvido no Lote D |
 | F-004 | Major | Home O/C antecedia mudanças estruturais posteriores | `REBUILD` | resolvido no Lote E |
 | F-005 | Major | Mall, Travel, Media, Ads, Business e Intelligence precisavam de auditoria semântica | `UPDATE` | resolvido documentalmente no Lote F |
-| F-006 | Major | UXA-015..018 e SVGs associados continuam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | **aberto; absorção aplicada, dependências funcionais reconciliadas e elegibilidade de cleanup comprovada; remoção física ainda não autorizada** |
+| F-006 | Major | UXA-015..018 e SVGs associados permaneciam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | **RESOLVED — absorção, cleanup 6/6, reconciliação, validações e prova pós-delete concluídos** |
 | F-007 | Major | contagens físicas de SVGs não representam maturidade vigente | `UPDATE` | **resolvido no Bloco I; instrumentos centrais separam inventário físico de maturidade** |
 | F-008 | Major | Estado Atual e Roadmap dependiam de reconciliação posterior | `UPDATE + CONSOLIDATE` | resolvido no Lote B |
 | F-009 | Major | autoridades O/C recentes não estavam absorvidas nas autoridades globais | `UPDATE` | absorção global concluída; MENU ainda pendente |
@@ -147,6 +147,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-013 | Major | Fundação antiga supercentralizava Oportunidade e antecedia distinção Possibilidade/Mecanismo/Oportunidade | `REBUILD + ENRICH` | reconciliado no Lote C |
 | F-014 | Major | PP-11 antigo podia confundir visão de capacidade máxima com verdade atual | `UPDATE` | reconciliado no Lote C |
 | F-015 | Major | Public Canon anterior ainda publicava fluxo/definição anterior de Oportunidade | `UPDATE + ENRICH` | reconciliado no Lote C |
+| F-016 | Major | corpus ainda contém wireframes, materializações, galerias e linguagem de UI que podem competir com Design como autoridade visual | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — desmaterialização documental repo-wide; preservar apenas conteúdo funcional necessário e proveniência legítima** |
 
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
@@ -528,14 +529,15 @@ AUTHENTICATED INFORMATION ARCHITECTURE
 → DEFINED PRE-SURFACE-MAP
 
 F-006
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
+→ CLEANUP APPLIED 6/6
+→ POST-CLEANUP VALIDATION PASSED
+→ RESOLVED
 
-FINAL SURFACE MAP
-→ NOT DEFINED
+FUNCTIONAL SURFACE MAP
+→ NOT YET CANONICAL
 
-MAIN AUTHENTICATED WIREFRAMES
-→ NOT DEFINED
+VISUAL MATERIALIZATION
+→ DESIGN-ONLY AUTHORITY
 
 UXA-102 / V5
 → NOT_STARTED
@@ -544,37 +546,27 @@ PRODUCT ENGINEERING
 → PAUSED
 ```
 
-Resultado:
+Resultado de H:
 
-> **H = AUDITED / UPDATE_APPLIED / OPEN_FINDING F-006.**
+> **H = AUDITED / UPDATE_APPLIED / F-006 RESOLVED.**
 
-Não há prova para rebuild e não há autorização para surface map, wireframe, UI ou protótipo durante este fechamento.
+A resolução de F-006 não autoriza Design, UI, protótipo ou Engenharia.
 
 ### I — Registries / Catálogos / SVGs
 
-Diagnóstico:
+Estado pós-cleanup:
 
-- inventário físico: 121 SVGs;
-- 121 associações físicas;
-- 34 perfis de rastreabilidade;
-- 0 duplicatas exatas observadas/provadas pela unicidade dos blob SHAs no snapshot auditado;
-- near-duplicates não foram certificados por auditoria visual exaustiva;
-- 121 físicos não podem representar automaticamente wireframes vigentes/validados;
-- `UXA-015/016` continuam com seus dois SVGs físicos históricos.
+- inventário físico: 119 SVGs;
+- 119 associações físicas;
+- 34 perfis de rastreabilidade estáveis;
+- conjunto F-006 ausente 6/6;
+- referências diretas aos seis nomes físicos removidos: 0;
+- F-007 permanece resolvido;
+- maturidade visual não é inferida da presença física de SVGs.
 
-Remediações:
+Resultado de I:
 
-- `UXA-000` passou a separar inventário físico de maturidade vigente;
-- catálogo, galeria, matriz, registry e Jornadas já preservam ou foram reconciliados para leitura item a item;
-- `gaps` registra a mesma separação;
-- F-007 foi resolvido semanticamente;
-- referências residuais aos SVGs históricos foram classificadas como inventário/rastreabilidade e não função vigente.
-
-Resultado:
-
-> **I = AUDITED / UPDATE_APPLIED / OPEN_FINDING F-006.**
-
-A recomputação física posterior à eventual remoção de `UXA-015..018` e dos dois SVGs somente poderá ocorrer depois de autorização humana separada para o cleanup de F-006.
+> **I = AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED.**
 
 ### Resultado do Bloco 2
 
@@ -584,27 +576,26 @@ G
 
 H
 → AUDITED / REMEDIATED
-→ F-006 OPEN
+→ F-006 RESOLVED
 
 I
 → AUDITED / REMEDIATED
-→ F-006 OPEN
+→ F-006 RESOLVED
 → F-007 RESOLVED
 
-F-006 CLEANUP ELIGIBILITY
-→ PROVEN
+F-006 CLEANUP
+→ APPLIED 6/6
+→ VALIDATED
 
-F-006 PHYSICAL CLEANUP
-→ NOT AUTHORIZED
+DESIGN MATERIALIZATION
+→ EXCLUSIVE DESIGN AUTHORITY
+→ EXECUTION NOT AUTHORIZED BY THIS CLOSURE
 
-REBUILD_REQUIRED
-→ NOT PROVEN
-
-DESIGN
-→ NOT AUTHORIZED
+F-016
+→ OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION
 
 NEXT BLOCK J/K/L/M/N
-→ NOT RELEASED UNTIL G/H/I CLOSURE DECISION
+→ NOT RELEASED AUTOMATICALLY
 ```
 
 ## 11. F-008 — Estado Atual e Roadmap
@@ -1034,3 +1025,29 @@ Quando a auditoria fechar:
 3. todo conteúdo explicativo ainda útil será absorvido antes de qualquer remoção deste registro;
 4. este registro poderá então ser removido do corpus atual;
 5. seu histórico continuará preservado no Git.
+
+## F-016 — Desmaterialização documental repo-wide
+
+A auditoria estabelece uma nova fronteira estrutural obrigatória:
+
+```text
+GKR
+→ intenção, conteúdo, informação, estados, regras, comportamento, permissões, fluxos, relações, requisitos, restrições, critérios e handoff
+
+DESIGN
+→ composição visual, layout, posicionamento, wireframes, mockups, protótipos, componentes visuais, aparência e materialização final
+```
+
+O corpus ainda expõe artefatos e nomenclatura produzidos em ciclos anteriores — incluindo páginas `low-fidelity-wireframe`, `materialization`, galerias visuais e programas de wireframes. Sua presença física não é automaticamente justificável como documentação normativa.
+
+Cada ocorrência deverá ser classificada individualmente como:
+
+- `KEEP_FUNCTIONAL` — manter somente conteúdo funcional que não materializa UI;
+- `REWRITE_FUNCTIONAL` — reescrever retirando decisões visuais e preservando contrato funcional;
+- `REMOVE_AFTER_ABSORPTION` — absorver conteúdo funcional único e remover materialização;
+- `REMOVE` — eliminar quando não houver função corrente nem conteúdo material exclusivo;
+- `HISTORICAL_PROVENANCE_ONLY` — manter apenas quando a evidência histórica possuir função documental real e explícita.
+
+A frente deve incluir `mkdocs.yml`, `docs/assets/wireframes/`, galerias, catálogos e a família UXA, sem assumir que todo SVG ou todo documento histórico é removível.
+
+Critério de encerramento: **o GKR não pode competir com Design na definição de interface**.

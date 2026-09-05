@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-ORGCOL-UX-STATE-001
-title: Organizações e Coletivos — Estado de UX e Wireframes
+title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-05
 normative: false
 related:
   - GKR-UX-ORGCOL-STATE-001
@@ -14,7 +14,7 @@ related:
   - UXA-019
 ---
 
-# Organizações e Coletivos — Estado de UX e Wireframes
+# Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 
 ## 1. Decisão de estado
 
@@ -285,33 +285,25 @@ Permanecem **históricos apenas**, sem autoridade atual:
 
 Esses elementos podem ser consultados no histórico como evidência de exploração, mas qualquer reutilização futura exigirá nova decisão contra as autoridades então vigentes.
 
-### 11.4 Efeito sobre F-006
+### 11.4 Fechamento de F-006
 
-Com esta absorção, `UXA-015..018` deixam de ser necessários como fonte vigente para os **estados funcionais** recuperados pela auditoria. A auditoria posterior também concluiu a reconciliação das dependências funcionais ativas encontradas e comprovou a elegibilidade documental de cleanup. Isso **não autoriza sua remoção física automaticamente**.
-
-Estado vigente:
+O conteúdo funcional material válido de `UXA-015..018` foi absorvido nas autoridades posteriores; dependências funcionais ativas foram reconciliadas; a remoção física governada foi autorizada e executada; as contagens e instrumentos afetados foram reconciliados.
 
 ```text
 F-006
-→ OPEN
+→ STRUCTURAL AUDIT COMPLETE
 → ABSORPTION_APPLIED
 → ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
 → CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_CLEANUP_APPLIED_AWAITING_POST_DELETE_VALIDATION
+→ PHYSICAL_CLEANUP_APPLIED_6_OF_6
+→ SEMANTIC_827_SUCCESS
+→ MECHANICAL_1085_SUCCESS
+→ READ_ONLY_POST_DELETE_PROOF_SUCCESS
+→ RESOLVED
 ```
 
-Os gates documentais de absorção material e reconciliação das dependências funcionais já estão concluídos. Antes de qualquer cleanup físico ainda é obrigatório:
-
-1. obter autorização humana separada e explícita para a remoção física;
-2. se autorizada a remoção, remover os quatro documentos `UXA-015..018` e os dois SVGs associados e reconciliar na mesma transação links, catálogo, gallery, registry e traceability afetados;
-3. recomputar as contagens físicas e associações após a eventual remoção dos dois SVGs;
-4. validar semanticamente e mecanicamente o corpus no novo head exato;
-5. executar nova revisão repo-wide no novo head;
-6. preservar a proveniência histórica no Git;
-7. somente então decidir o fechamento de `F-006` e o fechamento formal de H/I.
-
-Enquanto não houver autorização humana separada e explícita para o cleanup, os quatro documentos `UXA-015..018` e os SVGs associados permanecem fisicamente preservados e não devem ser tratados como autoridade funcional vigente. Se a autorização for concedida, sua remoção ocorre antes da recomputação, validações, review e decisão de fechamento.
+A proveniência permanece no histórico Git e em referências textuais explicitamente históricas. Nenhum desses IDs ou antigos ativos pode voltar a operar como baseline visual ou requisito de materialização.
 
 ## 12. Regra final
 
-> **Nenhum artefato histórico deve antecipar o estado de maturidade da experiência. Primeiro definimos; depois materializamos; depois validamos.**
+> **O GKR define função, conteúdo, estados, regras, fluxos e critérios; Design é a autoridade exclusiva para wireframes, mockups, protótipos, layout e materialização visual. Artefatos históricos não podem antecipar nem restringir essa autoridade.**
