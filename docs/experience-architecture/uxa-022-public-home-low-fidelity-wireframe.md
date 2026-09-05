@@ -23,6 +23,9 @@ normative: false
 
 # Wireframe de Baixa Fidelidade da Página Inicial Pública da Guivos
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa, em um arquivo gráfico vetorial de baixa fidelidade, a hierarquia funcional aprovada para a **Página Inicial pública da Guivos**.
@@ -46,9 +49,7 @@ O artefato não representa identidade visual, design final, texto definitivo, co
 
 ## 3. Arquivo gráfico vetorial
 
-![Wireframe de baixa fidelidade da Página Inicial pública da Guivos](../assets/wireframes/uxa-022-public-home-desktop.svg)
 
-[Visualizar o arquivo gráfico vetorial escalável](../assets/wireframes/uxa-022-public-home-desktop.svg)
 
 O arquivo utiliza uma dimensão de referência de **1.440 × 2.200 pixels** para verificar densidade, ordem, agrupamento e continuidade vertical em uma página web para computador.
 

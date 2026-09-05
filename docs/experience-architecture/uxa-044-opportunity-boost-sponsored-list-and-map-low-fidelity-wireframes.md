@@ -31,6 +31,9 @@ normative: false
 
 # Wireframes de Baixa Fidelidade dos Estados Patrocinados para Lista e Mapa
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa os estados patrocinados do Opportunity Boost nas superfícies territoriais de Lista e Mapa.
@@ -89,9 +92,7 @@ Todos os artefatos utilizam baixa fidelidade, dados ilustrativos e rótulos text
 
 ### 5.1 Lista patrocinada móvel
 
-![Lista patrocinada móvel reformulada](../assets/wireframes/uxa-044-sponsored-list-mobile.svg)
 
-`docs/assets/wireframes/uxa-044-sponsored-list-mobile.svg`
 
 Demonstra:
 
@@ -108,9 +109,7 @@ Demonstra:
 
 ### 5.2 Lista patrocinada para computador
 
-![Lista patrocinada para computador reformulada](../assets/wireframes/uxa-044-sponsored-list-desktop.svg)
 
-`docs/assets/wireframes/uxa-044-sponsored-list-desktop.svg`
 
 Demonstra:
 
@@ -125,9 +124,7 @@ Demonstra:
 
 ### 5.3 Mapa patrocinado móvel
 
-![Mapa patrocinado móvel reformulado](../assets/wireframes/uxa-044-sponsored-map-mobile.svg)
 
-`docs/assets/wireframes/uxa-044-sponsored-map-mobile.svg`
 
 Demonstra:
 
@@ -145,9 +142,7 @@ Demonstra:
 
 ### 5.4 Mapa patrocinado para computador
 
-![Mapa patrocinado para computador reformulado](../assets/wireframes/uxa-044-sponsored-map-desktop.svg)
 
-`docs/assets/wireframes/uxa-044-sponsored-map-desktop.svg`
 
 Demonstra:
 

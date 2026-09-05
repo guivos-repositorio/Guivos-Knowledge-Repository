@@ -23,6 +23,9 @@ normative: false
 
 # Correção da Ordem Funcional da Primeira Entrada Pessoal
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este adendo corrige a leitura da ordem funcional apresentada no Mapa Inicial de Jornadas e Telas.
@@ -84,7 +87,6 @@ O wireframe da Home já foi elaborado e está registrado como:
 
 Arquivo gráfico vetorial:
 
-`docs/assets/wireframes/uxa-022-public-home-desktop.svg`
 
 A referência atual representa uma página web para computador com dimensão estrutural de 1.440 por 2.200 pixels.
 

@@ -26,6 +26,9 @@ normative: false
 
 # Wireframe Alternativo do Mapa de Oportunidades — Visualização em Lista
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa a visualização em Lista da mesma descoberta territorial governada pelo Mapa de Oportunidades.
@@ -89,11 +92,9 @@ Mudar para a Lista não transporta a pessoa silenciosamente para `Explorar` nem 
 
 ## 4. Artefato visual reformulado
 
-![Wireframe reformulado do Mapa de Oportunidades em visualização de Lista](../assets/wireframes/uxa-028-opportunity-map-list-mobile.svg)
 
 Arquivo vetorial:
 
-`docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`
 
 Dimensão de referência:
 

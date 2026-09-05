@@ -28,6 +28,9 @@ normative: false
 
 # GKR-UX-D5-C4A-001 — Materialização e Contrato Integrado dos Handoffs de Direção, Movimento e Evolução
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A D5-C4A fecha o contrato semântico e a materialização mínima necessários para que os handoffs entre `PER-008 — Hoje` e `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução` possam ser validados posteriormente como ligações ponta a ponta.

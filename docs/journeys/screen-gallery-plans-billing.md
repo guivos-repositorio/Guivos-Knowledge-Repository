@@ -1,10 +1,10 @@
 ---
 id: GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
 title: Planos, Comparação e Cobrança — Galeria Canônica
-status: active
+status: superseded
 version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-09-05
 related:
   - UXA-100
   - UXA-100-A1
@@ -21,9 +21,13 @@ related:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: false
+maturity: historical_provenance_only
 ---
 
 # Planos, Comparação e Cobrança — Galeria Canônica
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
@@ -46,21 +50,15 @@ Superfícies canônicas relacionadas: `PER-301` a `PER-304`. Origem administrati
 
 ### 2.1 Tela dedicada de Planos
 
-![Pessoa — tela dedicada de Planos](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
 
 ### 2.2 Fluxo de plano, cobrança e pagamento
 
-![Pessoa — fluxo de planos e pagamentos](../assets/wireframes/uxa-100-person-plans-payments-flow-board.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-person-plans-payments-flow-board.svg)
 
 ### 2.3 Comparação incremental
 
-![Pessoa — comparação incremental](../assets/wireframes/uxa-100-person-plan-incremental-benefits-comparison.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-person-plan-incremental-benefits-comparison.svg)
 
 ## 3. Coletivo — perfil R30
 
@@ -70,21 +68,15 @@ Taxonomia sincronizada: **Livre · Mobiliza · Impacta · Rede**.
 
 ### 3.1 Tela dedicada de Planos
 
-![Coletivo — tela dedicada de Planos](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
 ### 3.2 Fluxo de plano, cobrança e pagamento
 
-![Coletivo — fluxo de planos e pagamentos](../assets/wireframes/uxa-100-collective-plans-payments-flow-board.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-collective-plans-payments-flow-board.svg)
 
 ### 3.3 Comparação incremental
 
-![Coletivo — comparação incremental](../assets/wireframes/uxa-100-collective-plan-incremental-benefits-comparison.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-collective-plan-incremental-benefits-comparison.svg)
 
 ## 4. Organização — perfil R31
 
@@ -96,21 +88,15 @@ A separação obrigatória é **Organização ≠ Guivos Business** e **Organiza
 
 ### 4.1 Tela dedicada de Planos
 
-![Organização — tela dedicada de Planos](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
 ### 4.2 Fluxo de plano, cobrança e pagamento
 
-![Organização — fluxo de planos e pagamentos](../assets/wireframes/uxa-100-organization-plans-payments-flow-board.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-organization-plans-payments-flow-board.svg)
 
 ### 4.3 Comparação incremental
 
-![Organização — comparação incremental](../assets/wireframes/uxa-100-organization-plan-incremental-benefits-comparison.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-organization-plan-incremental-benefits-comparison.svg)
 
 ## 5. Origens voluntárias e retorno — UXA-100-A4
 

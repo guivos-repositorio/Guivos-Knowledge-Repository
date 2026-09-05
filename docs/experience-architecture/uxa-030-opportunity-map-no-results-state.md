@@ -29,6 +29,9 @@ normative: false
 
 # Wireframe Alternativo do Mapa de Oportunidades — Estado sem Resultados
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa o estado em que uma consulta territorial válida é concluída sem encontrar oportunidades correspondentes à região, busca e filtros vigentes.
@@ -83,11 +86,9 @@ A declaração não significa que não existam oportunidades em toda a cidade, n
 
 ## 4. Artefato visual
 
-![Wireframe alternativo do Mapa de Oportunidades sem resultados](../assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg)
 
 Arquivo vetorial:
 
-`docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`
 
 Dimensão de referência:
 

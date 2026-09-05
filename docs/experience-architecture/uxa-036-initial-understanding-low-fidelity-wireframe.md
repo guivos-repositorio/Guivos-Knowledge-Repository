@@ -30,6 +30,9 @@ normative: false
 
 # Wireframe de Baixa Fidelidade da Compreensão Inicial
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa a referência gráfica móvel da compreensão inicial da jornada pessoal da Guivos, reformulada e validada funcionalmente pela UXA-037.
@@ -74,33 +77,23 @@ A compreensão inicial não poderá ser apresentada como concluída, persistida 
 
 ### 3.1 Processamento visível
 
-![Processamento visível e interrompível](../assets/wireframes/uxa-036-initial-understanding-processing-mobile.svg)
 
-`docs/assets/wireframes/uxa-036-initial-understanding-processing-mobile.svg`
 
 ### 3.2 Compreensão inicial apresentada
 
-![Compreensão inicial apresentada como hipótese](../assets/wireframes/uxa-036-initial-understanding-presentation-mobile.svg)
 
-`docs/assets/wireframes/uxa-036-initial-understanding-presentation-mobile.svg`
 
 ### 3.3 Revisão e correção
 
-![Revisão, correção e limitação da compreensão](../assets/wireframes/uxa-036-initial-understanding-review-mobile.svg)
 
-`docs/assets/wireframes/uxa-036-initial-understanding-review-mobile.svg`
 
 ### 3.4 Persistência, personalização e continuidade
 
-![Decisões separadas sobre persistência e personalização](../assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg)
 
-`docs/assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg`
 
 ### 3.5 Base insuficiente
 
-![Base autorizada insuficiente](../assets/wireframes/uxa-036-initial-understanding-insufficient-basis-mobile.svg)
 
-`docs/assets/wireframes/uxa-036-initial-understanding-insufficient-basis-mobile.svg`
 
 Dimensão de referência dos cinco arquivos:
 

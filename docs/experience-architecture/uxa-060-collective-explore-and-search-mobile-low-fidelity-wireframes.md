@@ -33,6 +33,9 @@ normative: false
 
 # Wireframes Móveis de Explorar Coletivos e Resultados de Busca
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento governa a primeira família móvel de descoberta de Coletivos no programa UXA-059.
@@ -84,33 +87,23 @@ Os dados são fictícios e existem somente para validação estrutural.
 
 ### 4.1 Explorar Coletivos
 
-![Explorar Coletivos](../assets/wireframes/uxa-060-collective-explore-mobile.svg)
 
-`docs/assets/wireframes/uxa-060-collective-explore-mobile.svg`
 
 ### 4.2 Resultados de busca
 
-![Resultados de busca de Coletivos](../assets/wireframes/uxa-060-collective-search-results-mobile.svg)
 
-`docs/assets/wireframes/uxa-060-collective-search-results-mobile.svg`
 
 ### 4.3 Filtros
 
-![Filtros da busca de Coletivos](../assets/wireframes/uxa-060-collective-search-filters-mobile.svg)
 
-`docs/assets/wireframes/uxa-060-collective-search-filters-mobile.svg`
 
 ### 4.4 Sem resultados
 
-![Busca de Coletivos sem resultados](../assets/wireframes/uxa-060-collective-search-no-results-mobile.svg)
 
-`docs/assets/wireframes/uxa-060-collective-search-no-results-mobile.svg`
 
 ### 4.5 Explicação patrocinada
 
-![Explicação da origem patrocinada](../assets/wireframes/uxa-060-collective-discovery-origin-mobile.svg)
 
-`docs/assets/wireframes/uxa-060-collective-discovery-origin-mobile.svg`
 
 ## 5. Canal e dimensão
 

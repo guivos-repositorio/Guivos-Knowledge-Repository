@@ -34,6 +34,9 @@ normative: false
 
 # Wireframe de Baixa Fidelidade do Mapa de Oportunidades — Referência para Computador
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa a referência funcionalmente validada e reformulada do Mapa de Oportunidades para computador.
@@ -66,19 +69,15 @@ A referência para computador não altera a primeira entrada e não transforma o
 
 ### 3.1 Estado com resultados
 
-![Referência reformulada para computador do Mapa com resultados](../assets/wireframes/uxa-032-opportunity-map-desktop.svg)
 
 Arquivo:
 
-`docs/assets/wireframes/uxa-032-opportunity-map-desktop.svg`
 
 ### 3.2 Estado sem resultados
 
-![Referência reformulada para computador do Mapa sem resultados](../assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg)
 
 Arquivo:
 
-`docs/assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg`
 
 Dimensão de referência:
 

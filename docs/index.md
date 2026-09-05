@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **3.9.0** |
+| Registro | `GKR-STATE-001` **3.10.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
@@ -30,7 +30,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.9.0](roadmap.md) governa a sequência atual.
+O [Roadmap 13.10.0](roadmap.md) governa a sequência atual.
 
 ## Por que o repositório está em auditoria
 
@@ -343,8 +343,9 @@ NON-DOCUMENT / RUNTIME DEPENDENCIES
 → 0
 
 F-016-A
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
+→ PHYSICAL CLEANUP APPLIED 119/119
+→ PHYSICAL SVG COUNT = 0
+→ POST-CLEANUP VALIDATION PENDING
 ```
 
 A documentação continua responsável por conteúdo, estados, regras, comportamento, permissões, fluxos, relações, requisitos, restrições, critérios de aceite e handoff. Wireframes, mockups, protótipos, layout, composição e materialização final pertencem exclusivamente a Design.

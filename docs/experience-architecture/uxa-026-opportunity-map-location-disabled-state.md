@@ -21,6 +21,9 @@ normative: false
 
 # Wireframe Alternativo do Mapa de Oportunidades — Localização Desativada
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa o estado alternativo do Mapa de Oportunidades para uso com a localização do dispositivo desativada.
@@ -52,11 +55,9 @@ A localização desativada não bloqueia o Mapa, a Lista, a busca, o Detalhe de 
 
 ## 3. Artefato visual reformulado
 
-![Wireframe reformulado do Mapa de Oportunidades com localização desativada](../assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg)
 
 Arquivo vetorial:
 
-`docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg`
 
 Dimensão de referência:
 

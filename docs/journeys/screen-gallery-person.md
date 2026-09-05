@@ -1,10 +1,10 @@
 ---
 id: GKR-JOURNEY-SCREEN-GALLERY-PERSON-001
 title: Pessoa — Fundação, Entrada, Compreensão e Recorrência
-status: active
+status: superseded
 version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-05
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
@@ -21,9 +21,13 @@ related:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: false
+maturity: historical_provenance_only
 ---
 
 # Pessoa — Fundação, Entrada, Compreensão e Recorrência
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 [← Índice da galeria](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Oportunidades e Organização →](screen-gallery-opportunities-organization.md)
 
@@ -49,7 +53,6 @@ A UXA-097 valida `GKR-TRN-007` entre a compreensão inicial e a primeira Tela Ho
 
 ### `uxa-022-public-home-desktop.svg`
 
-![](../assets/wireframes/uxa-022-public-home-desktop.svg){ width="320" loading="lazy" }
 
 ## 3. Início protegido
 
@@ -57,19 +60,15 @@ A UXA-097 valida `GKR-TRN-007` entre a compreensão inicial e a primeira Tela Ho
 
 ### `uxa-034-protected-entry-access-mobile.svg`
 
-![](../assets/wireframes/uxa-034-protected-entry-access-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-034-protected-entry-explanation-mobile.svg`
 
-![](../assets/wireframes/uxa-034-protected-entry-explanation-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-034-protected-entry-sharing-mobile.svg`
 
-![](../assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-034-protected-entry-review-mobile.svg`
 
-![](../assets/wireframes/uxa-034-protected-entry-review-mobile.svg){ width="320" loading="lazy" }
 
 ## 4. Expressão Guiada do Momento Atual
 
@@ -77,35 +76,27 @@ A UXA-097 valida `GKR-TRN-007` entre a compreensão inicial e a primeira Tela Ho
 
 ### `uxa-068-guided-current-moment-orientation-mobile.svg`
 
-![](../assets/wireframes/uxa-068-guided-current-moment-orientation-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-068-guided-current-moment-text-draft-mobile.svg`
 
-![](../assets/wireframes/uxa-068-guided-current-moment-text-draft-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-068-guided-current-moment-voice-preparation-mobile.svg`
 
-![](../assets/wireframes/uxa-068-guided-current-moment-voice-preparation-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-068-guided-current-moment-voice-recording-mobile.svg`
 
-![](../assets/wireframes/uxa-068-guided-current-moment-voice-recording-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-068-guided-current-moment-voice-transcription-review-mobile.svg`
 
-![](../assets/wireframes/uxa-068-guided-current-moment-voice-transcription-review-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-068-guided-current-moment-focus-separation-mobile.svg`
 
-![](../assets/wireframes/uxa-068-guided-current-moment-focus-separation-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-068-guided-current-moment-adaptive-clarification-mobile.svg`
 
-![](../assets/wireframes/uxa-068-guided-current-moment-adaptive-clarification-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-068-guided-current-moment-structured-summary-mobile.svg`
 
-![](../assets/wireframes/uxa-068-guided-current-moment-structured-summary-mobile.svg){ width="320" loading="lazy" }
 
 ## 5. Compreensão inicial
 
@@ -113,23 +104,18 @@ A UXA-097 valida `GKR-TRN-007` entre a compreensão inicial e a primeira Tela Ho
 
 ### `uxa-036-initial-understanding-processing-mobile.svg`
 
-![](../assets/wireframes/uxa-036-initial-understanding-processing-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-036-initial-understanding-presentation-mobile.svg`
 
-![](../assets/wireframes/uxa-036-initial-understanding-presentation-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-036-initial-understanding-review-mobile.svg`
 
-![](../assets/wireframes/uxa-036-initial-understanding-review-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-036-initial-understanding-decision-mobile.svg`
 
-![](../assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-036-initial-understanding-insufficient-basis-mobile.svg`
 
-![](../assets/wireframes/uxa-036-initial-understanding-insufficient-basis-mobile.svg){ width="320" loading="lazy" }
 
 ## 6. Tela Hoje — primeira entrada
 
@@ -137,7 +123,6 @@ A UXA-097 valida `GKR-TRN-007` entre a compreensão inicial e a primeira Tela Ho
 
 ### `uxa-097-first-today-after-initial-understanding-mobile.svg`
 
-![](../assets/wireframes/uxa-097-first-today-after-initial-understanding-mobile.svg){ width="320" loading="lazy" }
 
 A primeira variante não presume avanço, mudança anterior, urgência ou preenchimento comercial. Sem autorização de personalização, os blocos pessoais são omitidos.
 
@@ -147,7 +132,6 @@ A primeira variante não presume avanço, mudança anterior, urgência ou preenc
 
 ### `uxa-006-hoje-mobile.svg`
 
-![](../assets/wireframes/uxa-006-hoje-mobile.svg){ width="320" loading="lazy" }
 
 ## 8. Meus Objetivos — D5-C3 / D5-C4B
 
@@ -155,7 +139,6 @@ A primeira variante não presume avanço, mudança anterior, urgência ou preenc
 
 ### `d5-c2-person-objectives-mobile.svg`
 
-![](../assets/wireframes/d5-c2-person-objectives-mobile.svg){ width="320" loading="lazy" }
 
 O estado-base passa a explicitar estado funcional, prioridade declarada, progresso qualitativo, revisão e privacidade. Prioridade e progresso permanecem separados de valor humano.
 
@@ -165,7 +148,6 @@ O estado-base passa a explicitar estado funcional, prioridade declarada, progres
 
 ### `d5-c2-person-next-steps-mobile.svg`
 
-![](../assets/wireframes/d5-c2-person-next-steps-mobile.svg){ width="320" loading="lazy" }
 
 O estado-base distingue `PRONTO` de `PROPOSTO`, torna prontidão/dependência explícitas e usa ações compatíveis com cada estado. Não utiliza streak, obrigação ou urgência artificial.
 
@@ -175,7 +157,6 @@ O estado-base distingue `PRONTO` de `PROPOSTO`, torna prontidão/dependência ex
 
 ### `d5-c2-person-evolution-mobile.svg`
 
-![](../assets/wireframes/d5-c2-person-evolution-mobile.svg){ width="320" loading="lazy" }
 
 O estado-base explicita período, baseline, direção, natureza inferida da interpretação, confiança e incerteza, mantendo Área da jornada, Contexto Vivo e aspecto descritivo separados. Não utiliza score, radar, roda da vida, diagnóstico ou avaliação espiritual.
 

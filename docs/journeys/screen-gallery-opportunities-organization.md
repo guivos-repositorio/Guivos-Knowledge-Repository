@@ -1,10 +1,10 @@
 ---
 id: GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITIES-ORGANIZATION-001
 title: Organização e Oportunidades
-status: active
+status: superseded
 version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-05
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
@@ -22,9 +22,13 @@ related:
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
+maturity: historical_provenance_only
 ---
 
 # Organização e Oportunidades
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 [← Pessoa](screen-gallery-person.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Coletivos →](screen-gallery-collectives.md)
 
@@ -68,7 +72,6 @@ UXA-008/013 — CADASTRO DE OPORTUNIDADE
 
 ### `uxa-008-organization-opportunity-registration-desktop.svg`
 
-![](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg){ width="320" loading="lazy" }
 
 O cadastro de oportunidade permanece um fluxo especializado independente e não define a arquitetura completa da Organização.
 
@@ -78,23 +81,18 @@ O cadastro de oportunidade permanece um fluxo especializado independente e não 
 
 ### `uxa-024-opportunity-map-mobile.svg`
 
-![](../assets/wireframes/uxa-024-opportunity-map-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-026-opportunity-map-location-disabled-mobile.svg`
 
-![](../assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-030-opportunity-map-no-results-mobile.svg`
 
-![](../assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-032-opportunity-map-desktop.svg`
 
-![](../assets/wireframes/uxa-032-opportunity-map-desktop.svg){ width="320" loading="lazy" }
 
 ### `uxa-032-opportunity-map-no-results-desktop.svg`
 
-![](../assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg){ width="320" loading="lazy" }
 
 ## 4. Lista de Oportunidades
 
@@ -102,7 +100,6 @@ O cadastro de oportunidade permanece um fluxo especializado independente e não 
 
 ### `uxa-028-opportunity-map-list-mobile.svg`
 
-![](../assets/wireframes/uxa-028-opportunity-map-list-mobile.svg){ width="320" loading="lazy" }
 
 ## 5. Detalhe e revisão consciente de saída
 
@@ -110,7 +107,6 @@ O cadastro de oportunidade permanece um fluxo especializado independente e não 
 
 ### `uxa-007-opportunity-detail-mobile.svg`
 
-![](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg){ width="320" loading="lazy" }
 
 O mesmo SVG mostra dois estados da mesma responsabilidade `PER-203`: o Detalhe e a revisão acionada por `Ver como participar`. A revisão identifica que a próxima etapa é externa, quem responde por ela, o tratamento de dados/contexto, os limites da Guivos e as opções de continuar ou voltar.
 

@@ -29,6 +29,9 @@ normative: false
 
 # Wireframes de Baixa Fidelidade do Relatório Agregado do Opportunity Boost
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa o relatório agregado do Opportunity Boost para computador e aplicativo móvel.
@@ -87,9 +90,7 @@ Todos os artefatos utilizam baixa fidelidade, dados ilustrativos e rótulos text
 
 ### 5.1 Visão geral agregada para computador
 
-![Visão geral agregada para computador](../assets/wireframes/uxa-048-aggregated-report-overview-desktop.svg)
 
-`docs/assets/wireframes/uxa-048-aggregated-report-overview-desktop.svg`
 
 Demonstra:
 
@@ -105,9 +106,7 @@ Demonstra:
 
 ### 5.2 Atribuição candidata e autorrelato para computador
 
-![Atribuição candidata e autorrelato para computador](../assets/wireframes/uxa-048-aggregated-report-attribution-desktop.svg)
 
-`docs/assets/wireframes/uxa-048-aggregated-report-attribution-desktop.svg`
 
 Demonstra:
 
@@ -123,9 +122,7 @@ Demonstra:
 
 ### 5.3 Visão geral agregada móvel
 
-![Visão geral agregada móvel](../assets/wireframes/uxa-048-aggregated-report-overview-mobile.svg)
 
-`docs/assets/wireframes/uxa-048-aggregated-report-overview-mobile.svg`
 
 Demonstra:
 
@@ -140,9 +137,7 @@ Demonstra:
 
 ### 5.4 Reconciliação e ausência de dados móvel
 
-![Reconciliação e ausência de dados móvel](../assets/wireframes/uxa-048-aggregated-report-reconciliation-mobile.svg)
 
-`docs/assets/wireframes/uxa-048-aggregated-report-reconciliation-mobile.svg`
 
 Demonstra:
 

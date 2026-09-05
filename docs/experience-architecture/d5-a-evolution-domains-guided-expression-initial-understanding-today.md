@@ -24,6 +24,9 @@ related:
 
 # GKR-UX-D5-A-001 — Materialização Controlada dos Domínios de Evolução na Jornada Inicial
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Esta frente materializa, na Arquitetura da Experiência, o eixo canônico de **Domínios de Evolução** definido por `PAS-001-DOMAIN-MODEL-001`, exclusivamente nos pontos da jornada inicial em que a área pode apoiar compreensão sem criar classificação obrigatória, score, diagnóstico ou identidade permanente.

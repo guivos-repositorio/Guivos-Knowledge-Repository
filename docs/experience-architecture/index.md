@@ -55,6 +55,9 @@ normative: false
 
 # Arquitetura da Experiência da Guivos
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A Arquitetura da Experiência transforma princípios, capacidades e contratos em experiências compreensíveis para Pessoas, Coletivos e Organizações. Ela governa hierarquia, decisão, continuidade, confirmação, autoridade, privacidade e proteção antes de design final ou implementação.
@@ -78,33 +81,27 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 ## 3. Cobertura visual e granular
 
-As contagens abaixo separam **inventário físico**, **associação documental** e **maturidade vigente**. A existência de arquivo ou associação não promove autoridade visual.
+A camada física de wireframes foi removida do corpus vigente por `F-016-A` após prova estrutural e semântica de absorção.
 
 ```text
-CONTAGEM FÍSICA DE SVGs
-≠ CONTAGEM DE WIREFRAMES VIGENTES
-≠ CONTAGEM DE WIREFRAMES VALIDADOS
+SVGs FÍSICOS EM docs/assets/wireframes/
+→ 0
 
-ASSOCIAÇÃO SVG → PERFIL
-≠ AUTORIDADE VISUAL VIGENTE
+ASSOCIAÇÕES FÍSICAS CORRENTES
+→ 0
+
+PERFIS DE RASTREABILIDADE
+→ 34
+→ preservados apenas como proveniência/semântica
+
+AUTORIDADE VISUAL
+→ DESIGN
+
+AUTORIDADE FUNCIONAL
+→ DOCUMENTAÇÃO TEXTUAL / EXPERIENCE ARCHITECTURE
 ```
 
-| Indicador | Resultado vigente |
-|---|---:|
-| SVGs físicos no inventário pós-F-006 | **119** |
-| associações físicas catalogadas | **119** |
-| perfis de rastreabilidade estáveis | **34** |
-| perfis com associação física atual | **32** |
-| dependências runtime/código dos SVGs | **0** |
-| total canônico visual vigente | **não certificado** |
-| total validado visual vigente | **não certificado** |
-| total pendente visual vigente | **não certificado** |
-| superfícies/estados/fronteiras | **57** |
-| transições documentais | **66** |
-| responsabilidades sem SVG dedicado no snapshot | **10** |
-| fronteiras sem tela | **2** |
-
-A prova F-016-A confirmou `119/119` assets com referência em Experience Architecture e `32/32` perfis físicos com receiver textual corrente. Isso prova **elegibilidade de cleanup da camada física**, não maturidade visual e não autorização de remoção.
+A remoção física não altera por si só maturidade funcional de superfícies, estados ou transições. Nomes `.svg` ainda citados em documentos preservados devem ser lidos exclusivamente como proveniência histórica.
 
 ## 4. Decisões estruturais preservadas
 

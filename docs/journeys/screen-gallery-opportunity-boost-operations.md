@@ -1,10 +1,10 @@
 ---
 id: GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITY-BOOST-OPERATIONS-001
 title: Opportunity Boost — Operação, Relatórios e Resíduos
-status: active
+status: superseded
 version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-09-05
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
@@ -17,9 +17,13 @@ related:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: false
+maturity: historical_provenance_only
 ---
 
 # Opportunity Boost — Operação, Relatórios e Resíduos
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 [← Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md)
 
@@ -38,27 +42,21 @@ campanha configurada
 
 ### `uxa-046-campaign-scheduled-desktop.svg`
 
-![](../assets/wireframes/uxa-046-campaign-scheduled-desktop.svg){ width="320" loading="lazy" }
 
 ### `uxa-046-campaign-active-desktop.svg`
 
-![](../assets/wireframes/uxa-046-campaign-active-desktop.svg){ width="320" loading="lazy" }
 
 ### `uxa-046-campaign-paused-desktop.svg`
 
-![](../assets/wireframes/uxa-046-campaign-paused-desktop.svg){ width="320" loading="lazy" }
 
 ### `uxa-046-campaign-limited-desktop.svg`
 
-![](../assets/wireframes/uxa-046-campaign-limited-desktop.svg){ width="320" loading="lazy" }
 
 ### `uxa-046-campaign-material-change-desktop.svg`
 
-![](../assets/wireframes/uxa-046-campaign-material-change-desktop.svg){ width="320" loading="lazy" }
 
 ### `uxa-046-campaign-closure-desktop.svg`
 
-![](../assets/wireframes/uxa-046-campaign-closure-desktop.svg){ width="320" loading="lazy" }
 
 ## 3. Gestão da campanha — móvel
 
@@ -66,27 +64,21 @@ campanha configurada
 
 ### `uxa-053-campaign-scheduled-mobile.svg`
 
-![](../assets/wireframes/uxa-053-campaign-scheduled-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-053-campaign-active-mobile.svg`
 
-![](../assets/wireframes/uxa-053-campaign-active-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-053-campaign-paused-mobile.svg`
 
-![](../assets/wireframes/uxa-053-campaign-paused-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-053-campaign-limited-mobile.svg`
 
-![](../assets/wireframes/uxa-053-campaign-limited-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-053-campaign-material-change-mobile.svg`
 
-![](../assets/wireframes/uxa-053-campaign-material-change-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-053-campaign-closure-mobile.svg`
 
-![](../assets/wireframes/uxa-053-campaign-closure-mobile.svg){ width="320" loading="lazy" }
 
 ## 4. Relatórios e reconciliação
 
@@ -94,19 +86,15 @@ campanha configurada
 
 ### `uxa-048-aggregated-report-overview-desktop.svg`
 
-![](../assets/wireframes/uxa-048-aggregated-report-overview-desktop.svg){ width="320" loading="lazy" }
 
 ### `uxa-048-aggregated-report-attribution-desktop.svg`
 
-![](../assets/wireframes/uxa-048-aggregated-report-attribution-desktop.svg){ width="320" loading="lazy" }
 
 ### `uxa-048-aggregated-report-overview-mobile.svg`
 
-![](../assets/wireframes/uxa-048-aggregated-report-overview-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-048-aggregated-report-reconciliation-mobile.svg`
 
-![](../assets/wireframes/uxa-048-aggregated-report-reconciliation-mobile.svg){ width="320" loading="lazy" }
 
 ## 5. Estados residuais validados
 
@@ -114,43 +102,33 @@ campanha configurada
 
 ### `uxa-055-sponsored-technical-error-mobile.svg`
 
-![](../assets/wireframes/uxa-055-sponsored-technical-error-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-055-sponsored-inventory-unavailable-mobile.svg`
 
-![](../assets/wireframes/uxa-055-sponsored-inventory-unavailable-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-055-low-organic-supply-mobile.svg`
 
-![](../assets/wireframes/uxa-055-low-organic-supply-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-055-show-less-type-mobile.svg`
 
-![](../assets/wireframes/uxa-055-show-less-type-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-055-hide-campaign-mobile.svg`
 
-![](../assets/wireframes/uxa-055-hide-campaign-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-055-report-content-mobile.svg`
 
-![](../assets/wireframes/uxa-055-report-content-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-055-disable-sponsored-opportunities-mobile.svg`
 
-![](../assets/wireframes/uxa-055-disable-sponsored-opportunities-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-055-review-reverse-preferences-mobile.svg`
 
-![](../assets/wireframes/uxa-055-review-reverse-preferences-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-055-contest-data-use-mobile.svg`
 
-![](../assets/wireframes/uxa-055-contest-data-use-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-055-advertiser-update-failure-mobile.svg`
 
-![](../assets/wireframes/uxa-055-advertiser-update-failure-mobile.svg){ width="320" loading="lazy" }
 
 ## 6. Resultado da UXA-099
 
