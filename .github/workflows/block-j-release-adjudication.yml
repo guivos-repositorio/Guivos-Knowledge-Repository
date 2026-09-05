@@ -1,0 +1,280 @@
+name: Block J Release Adjudication
+
+on:
+  push:
+    branches:
+      - agent/gkr-block-j-release-adjudication-v1
+
+permissions:
+  contents: write
+
+jobs:
+  adjudicate:
+    name: Prepare Block J documentary release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout immutable canonical head
+        uses: actions/checkout@v4
+        with:
+          ref: bb057034f8b560cfacfbd9004422dd5ac187eae9
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install documentation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Assert immutable base
+        run: test "$(git rev-parse HEAD)" = "bb057034f8b560cfacfbd9004422dd5ac187eae9"
+
+      - name: Apply exact release adjudication
+        shell: python
+        run: |
+          from pathlib import Path
+
+          def rx(path, old, new, count=1):
+              p = Path(path)
+              text = p.read_text(encoding='utf-8')
+              actual = text.count(old)
+              if actual != count:
+                  raise SystemExit(f'{path}: expected {count}, found {actual}: {old!r}')
+              p.write_text(text.replace(old, new, count), encoding='utf-8')
+
+          # Current State: publish the release decision while preserving every downstream guardrail.
+          rx(
+              'docs/project/current-state-register.md',
+              'J / K / L / M / N\n→ NOT RELEASED AUTOMATICALLY',
+              'J — PRODUTOS / ECONOMIA\n→ RELEASED FOR DOCUMENTARY AUDIT ONLY\n→ IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION NOT AUTHORIZED\n\nK / L / M / N\n→ PENDING / NOT RELEASED'
+          )
+          rx(
+              'docs/project/current-state-register.md',
+              '`GKR-FULL-CORPUS-AUDIT-001 v1.11.0` está ativo como instrumento temporário de execução.',
+              '`GKR-FULL-CORPUS-AUDIT-001 v1.14.0` está ativo como instrumento temporário de execução.'
+          )
+          rx(
+              'docs/project/current-state-register.md',
+              'J–N\n→ PENDING / NOT RELEASED AUTOMATICALLY',
+              'J\n→ RELEASED FOR DOCUMENTARY AUDIT ONLY\n→ NO IMPLEMENTATION AUTHORIZATION\n\nK / L / M / N\n→ PENDING / NOT RELEASED'
+          )
+          rx(
+              'docs/project/current-state-register.md',
+              'O próximo ato governado é adjudicar separadamente a liberação de J/K/L/M/N, sem iniciar automaticamente qualquer desses blocos.',
+              'A adjudicação downstream libera exclusivamente o Lote J para auditoria documental. K/L/M/N permanecem não liberados; a liberação de J não autoriza implementação, operação comercial, Design, Product Engineering, PMF ou execução de Research/GTM.'
+          )
+          rx(
+              'docs/project/current-state-register.md',
+              'NEXT\n→ EVALUATE J / K / L / M / N UNDER SEPARATE GOVERNED RELEASE\n→ NO AUTOMATIC RELEASE',
+              'NEXT\n→ EXECUTE J — PRODUCTS / ECONOMY DOCUMENTARY AUDIT ONLY\n→ PRESERVE CURRENT AUTHORITIES AND ECONOMIC DISTINCTIONS\n→ K / L / M / N REMAIN NOT RELEASED'
+          )
+          rx(
+              'docs/project/current-state-register.md',
+              'O fechamento de F-016 não autoriza automaticamente J/K/L/M/N, Design, UXA-102/V5, Product Engineering, PMF ou implementação.',
+              'O fechamento de F-016 permitiu somente a adjudicação de downstream. O resultado vigente libera J para auditoria documental e mantém K/L/M/N, Design, UXA-102/V5, Product Engineering, PMF e implementação sem autorização.'
+          )
+
+          # Roadmap: make the execution order unambiguous.
+          rx(
+              'docs/roadmap.md',
+              'Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. Esse fechamento não libera automaticamente J/K/L/M/N.',
+              'Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. A decisão downstream subsequente libera exclusivamente J para auditoria documental; K/L/M/N permanecem não liberados.'
+          )
+          rx(
+              'docs/roadmap.md',
+              '| F-016-A | **RESOLVED — PHYSICAL SVG COUNT 0** |\n| O/C atores, autoridades e jobs |',
+              '| F-016-A | **RESOLVED — PHYSICAL SVG COUNT 0** |\n| Lote J — Produtos / Economia | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |\n| Lotes K / L / M / N | **PENDING / NOT RELEASED** |\n| O/C atores, autoridades e jobs |'
+          )
+          rx(
+              'docs/roadmap.md',
+              'DECISÃO GOVERNADA SOBRE J/K/L/M/N         [NOT RELEASED AUTOMATICALLY]\n↓\nJ. PRODUTOS / ECONOMIA                   [PENDING / NOT RELEASED AUTOMATICALLY]\n↓\nK. RESEARCH / RP-002                     [PENDING / NOT RELEASED AUTOMATICALLY]',
+              'DECISÃO GOVERNADA SOBRE J/K/L/M/N         [J RELEASED DOCUMENTARY-ONLY / K-L-M-N HOLD]\n↓\nJ. PRODUTOS / ECONOMIA                   [RELEASED FOR DOCUMENTARY AUDIT ONLY]\n↓\nK. RESEARCH / RP-002                     [PENDING / NOT RELEASED]'
+          )
+          rx('docs/roadmap.md', 'L. TECNOLOGIA / DADOS / IA               [PENDING / NOT RELEASED AUTOMATICALLY]', 'L. TECNOLOGIA / DADOS / IA               [PENDING / NOT RELEASED]')
+          rx('docs/roadmap.md', 'M. JURÍDICO / PRIVACIDADE / INSTITUCIONAL [PENDING / NOT RELEASED AUTOMATICALLY]', 'M. JURÍDICO / PRIVACIDADE / INSTITUCIONAL [PENDING / NOT RELEASED]')
+          rx('docs/roadmap.md', 'N. GTM / PRESENÇA PÚBLICA                [PENDING / NOT RELEASED AUTOMATICALLY]', 'N. GTM / PRESENÇA PÚBLICA                [PENDING / NOT RELEASED]')
+          rx(
+              'docs/roadmap.md',
+              '## 14. Lote J — Produtos, planos e economia\n\nPreservar e auditar fronteiras entre:',
+              '## 14. Lote J — Produtos, planos e economia\n\nEstado governado:\n\n```text\nJ\n→ RELEASED FOR DOCUMENTARY AUDIT ONLY\n\nIMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION\n→ NOT AUTHORIZED\n\nK / L / M / N\n→ NOT RELEASED\n```\n\nEsta liberação permite somente confrontar, reconciliar, consolidar e enriquecer autoridades documentais existentes no escopo de Produtos/Economia. Ela não autoriza alterar realidade operacional, preços reais, cobrança, contratos, sistemas, PMF ou disponibilidade comercial por inferência.\n\nPreservar e auditar fronteiras entre:'
+          )
+          rx(
+              'docs/roadmap.md',
+              'NEXT DOWNSTREAM DECISION\n→ J / K / L / M / N REMAIN NOT RELEASED AUTOMATICALLY\n→ REQUIRE SEPARATE GOVERNED RELEASE DECISION',
+              'DOWNSTREAM ADJUDICATION\n→ J RELEASED FOR DOCUMENTARY AUDIT ONLY\n→ K / L / M / N REMAIN NOT RELEASED\n→ NEXT EXECUTION = J DOCUMENTARY AUDIT'
+          )
+          rx(
+              'docs/roadmap.md',
+              'J/K/L/M/N, `UXA-102/V5`, Design, Product Engineering e merge da PR #363 permanecem bloqueados ou não autorizados.',
+              'K/L/M/N, `UXA-102/V5`, Design, Product Engineering e merge da PR #363 permanecem bloqueados ou não autorizados. J está liberado somente para auditoria documental.'
+          )
+
+          # Master audit: record the adjudication without starting J itself.
+          rx(
+              'docs/project/gkr-full-corpus-audit.md',
+              '| J — Produtos / Economia | `PENDING` | masters atuais sem fragmentação |',
+              '| J — Produtos / Economia | `RELEASED / DOCUMENTARY_AUDIT_ONLY` | auditar e reconciliar masters atuais sem fragmentação; nenhuma implementação autorizada |'
+          )
+          rx(
+              'docs/project/gkr-full-corpus-audit.md',
+              'J/K/L/M/N. domínios especializados               [não liberados automaticamente]',
+              'J. Produtos / Economia                            [RELEASED / DOCUMENTARY AUDIT ONLY]\n↓\nK/L/M/N. domínios especializados                 [PENDING / NOT RELEASED]'
+          )
+          rx(
+              'docs/project/gkr-full-corpus-audit.md',
+              'NEXT SPECIALIZED BLOCK J/K/L/M/N\n→ NOT RELEASED AUTOMATICALLY\n→ REQUIRE SEPARATE GOVERNED RELEASE DECISION',
+              'DOWNSTREAM RELEASE ADJUDICATION\n→ J RELEASED FOR DOCUMENTARY AUDIT ONLY\n→ K / L / M / N PENDING / NOT RELEASED\n→ J RELEASE DOES NOT AUTHORIZE IMPLEMENTATION / OPERATION'
+          )
+
+      - name: Assert closed three-file boundary
+        run: |
+          expected=$(cat <<'EOF' | sort
+          docs/project/current-state-register.md
+          docs/project/gkr-full-corpus-audit.md
+          docs/roadmap.md
+          EOF
+          )
+          actual=$(git diff --name-only | sort)
+          printf 'EXPECTED:\n%s\nACTUAL:\n%s\n' "$expected" "$actual"
+          test "$actual" = "$expected"
+
+      - name: Prove release invariants
+        shell: python
+        run: |
+          from pathlib import Path
+
+          state = Path('docs/project/current-state-register.md').read_text(encoding='utf-8')
+          roadmap = Path('docs/roadmap.md').read_text(encoding='utf-8')
+          audit = Path('docs/project/gkr-full-corpus-audit.md').read_text(encoding='utf-8')
+
+          required = {
+              'state': [
+                  'J — PRODUTOS / ECONOMIA\n→ RELEASED FOR DOCUMENTARY AUDIT ONLY',
+                  'K / L / M / N\n→ PENDING / NOT RELEASED',
+                  'EXECUTE J — PRODUCTS / ECONOMY DOCUMENTARY AUDIT ONLY',
+                  '`GKR-FULL-CORPUS-AUDIT-001 v1.14.0` está ativo',
+              ],
+              'roadmap': [
+                  '| Lote J — Produtos / Economia | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |',
+                  'J. PRODUTOS / ECONOMIA                   [RELEASED FOR DOCUMENTARY AUDIT ONLY]',
+                  'K. RESEARCH / RP-002                     [PENDING / NOT RELEASED]',
+                  'J\n→ RELEASED FOR DOCUMENTARY AUDIT ONLY',
+              ],
+              'audit': [
+                  '| J — Produtos / Economia | `RELEASED / DOCUMENTARY_AUDIT_ONLY` |',
+                  'J. Produtos / Economia                            [RELEASED / DOCUMENTARY AUDIT ONLY]',
+                  'K/L/M/N. domínios especializados                 [PENDING / NOT RELEASED]',
+              ],
+          }
+          for name, text in [('state',state),('roadmap',roadmap),('audit',audit)]:
+              for token in required[name]:
+                  if token not in text:
+                      raise SystemExit(f'{name} missing invariant: {token}')
+
+          forbidden = [
+              'J. PRODUTOS / ECONOMIA                   [PENDING / NOT RELEASED AUTOMATICALLY]',
+              'J / K / L / M / N REMAIN NOT RELEASED AUTOMATICALLY',
+          ]
+          combined = state + '\n' + roadmap + '\n' + audit
+          for token in forbidden:
+              if token in combined:
+                  raise SystemExit(f'stale downstream token remains: {token}')
+
+          guards = [
+              'UXA-102 / V5\n→ NOT_STARTED',
+              'PRODUCT ENGINEERING\n→ PAUSED BEFORE W0-01',
+              'PMF\n→ NOT VALIDATED',
+          ]
+          for token in guards:
+              if token not in state:
+                  raise SystemExit(f'guardrail lost: {token}')
+
+          print('BLOCK_J_RELEASE_PROOF=SUCCESS')
+
+      - name: Validate prepared tree
+        run: |
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          git diff --check
+          mkdocs build --strict --site-dir /tmp/gkr-site
+
+      - name: Create direct result commit
+        run: |
+          git config user.name "gkr-governance-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/project/current-state-register.md docs/project/gkr-full-corpus-audit.md docs/roadmap.md
+          tree=$(git write-tree)
+          commit=$(printf '%s\n' 'GKR: release Block J for documentary audit' | git commit-tree "$tree" -p bb057034f8b560cfacfbd9004422dd5ac187eae9)
+          git push --force origin "$commit:refs/heads/agent/gkr-block-j-release-result-v1"
+          echo "RESULT_SHA=$commit"
+          echo "RESULT_TREE=$tree"
+
+  prove:
+    name: Exact-result Block J release proof
+    needs: adjudicate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact result
+        uses: actions/checkout@v4
+        with:
+          ref: agent/gkr-block-j-release-result-v1
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install documentation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Prove parent, boundary, and no executor leakage
+        run: |
+          test "$(git rev-parse HEAD^)" = "bb057034f8b560cfacfbd9004422dd5ac187eae9"
+          test ! -e .github/workflows/block-j-release-adjudication.yml
+          changed=$(git diff --name-only HEAD^...HEAD | sort)
+          expected=$(cat <<'EOF' | sort
+          docs/project/current-state-register.md
+          docs/project/gkr-full-corpus-audit.md
+          docs/roadmap.md
+          EOF
+          )
+          printf 'CHANGED:\n%s\n' "$changed"
+          test "$changed" = "$expected"
+
+      - name: Prove exact governed release state
+        shell: python
+        run: |
+          from pathlib import Path
+          state = Path('docs/project/current-state-register.md').read_text(encoding='utf-8')
+          roadmap = Path('docs/roadmap.md').read_text(encoding='utf-8')
+          audit = Path('docs/project/gkr-full-corpus-audit.md').read_text(encoding='utf-8')
+          checks = [
+              ('state J', 'J — PRODUTOS / ECONOMIA\n→ RELEASED FOR DOCUMENTARY AUDIT ONLY' in state),
+              ('state K-N hold', 'K / L / M / N\n→ PENDING / NOT RELEASED' in state),
+              ('roadmap J', 'J. PRODUTOS / ECONOMIA                   [RELEASED FOR DOCUMENTARY AUDIT ONLY]' in roadmap),
+              ('audit J', '| J — Produtos / Economia | `RELEASED / DOCUMENTARY_AUDIT_ONLY` |' in audit),
+              ('UXA guard', 'UXA-102 / V5\n→ NOT_STARTED' in state),
+              ('PE guard', 'PRODUCT ENGINEERING\n→ PAUSED BEFORE W0-01' in state),
+              ('PMF guard', 'PMF\n→ NOT VALIDATED' in state),
+          ]
+          for name, ok in checks:
+              if not ok: raise SystemExit(f'failed: {name}')
+          print('EXACT_BLOCK_J_RELEASE_PROOF=SUCCESS')
+
+      - name: Re-run canonical validators
+        run: |
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          git diff --check HEAD^...HEAD
+          mkdocs build --strict --site-dir /tmp/gkr-site
+          test -z "$(git status --porcelain --untracked-files=no)"
