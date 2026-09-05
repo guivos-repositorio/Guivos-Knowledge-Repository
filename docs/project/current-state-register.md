@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.10.0
+version: 3.11.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-05
 normative: true
@@ -82,14 +82,20 @@ F-016
 → OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION
 
 F-016-A — PHYSICAL SVG LAYER
-→ PRE-CLEANUP ELIGIBILITY PROVEN
+→ PRE-CLEANUP STRUCTURAL + SEMANTIC ELIGIBILITY PROVEN
 → HUMAN PHYSICAL CLEANUP AUTHORIZATION GRANTED
 → PHYSICAL CLEANUP APPLIED 119/119
 → PHYSICAL SVG COUNT = 0
-→ EMBEDS / LIVE LINKS RECONCILED
+→ LIVE EMBEDS / LINKS = 0
 → HISTORICAL PROVENANCE PRESERVED
-→ POST-CLEANUP VALIDATION PENDING
-→ FORMAL RESOLUTION NOT YET CLAIMED
+→ SEMANTIC #832 SUCCESS
+→ MECHANICAL #1090 SUCCESS
+→ INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS
+→ RESOLVED
+
+NEXT F-016 SUBFRONT
+→ CLASSIFY REMAINING MARKDOWN MATERIALIZATION FAMILIES INDIVIDUALLY
+→ NO AUTOMATIC MARKDOWN DELETION
 
 J / K / L / M / N
 → NOT RELEASED AUTOMATICALLY
@@ -113,7 +119,7 @@ MATERIALIZAÇÃO VISUAL DAS HOMES
 → NOT AUTHORIZED DURING FULL-CORPUS AUDIT
 ```
 
-A remoção física de `F-016-A` não promove maturidade funcional, não cria Design e não libera implementação. O próximo gate é validar e revisar o novo head exato antes de qualquer adjudicação formal de fechamento.
+O encerramento de `F-016-A` remove a camada física SVG do GKR, mas não promove maturidade funcional, não cria Design e não libera implementação.
 
 ## 3. Fundação e identidade da Guivos
 
@@ -1239,60 +1245,41 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.9.0` está ativo como instrumento temporário de execução.
-
-Estado:
+`GKR-FULL-CORPUS-AUDIT-001 v1.11.0` está ativo como instrumento temporário de execução.
 
 ```text
-A — GOVERNANÇA DO CORPUS
-→ CANONICALLY UPDATED
+A / B / C / D / E / F / G
+→ COMPLETED
 
-B — ESTADO ATUAL E ROADMAP
-→ CANONICALLY UPDATED
-
-C — FUNDAÇÃO / MARCA / PUBLIC CANON
-→ CANONICALLY UPDATED
-
-D — HOME PRINCIPAL / PESSOA
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
-
-E — HOME ORGANIZAÇÕES E COLETIVOS
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION / COMPLETED
-
-F — HOMES DE PRODUTOS
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION / COMPLETED
-
-G — JORNADA DA PESSOA
-→ COMPLETED / UPDATE_APPLIED
-→ jornada permanece draft
-
-H — ORGANIZAÇÃO / COLETIVO
-→ AUDITED / UPDATE_APPLIED / F-006 RESOLVED
-
-I — REGISTRIES / CATÁLOGOS / SVGs
-→ AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED
+H / I
+→ AUDITED / UPDATE_APPLIED
+→ F-006 RESOLVED
+→ F-007 RESOLVED
 
 F-016
 → OPEN
 
 F-016-A
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
+→ RESOLVED
+→ PHYSICAL SVG COUNT = 0
 
-J–N — DOMÍNIOS ESPECIALIZADOS
+F-016 REMAINING MARKDOWN FAMILIES
+→ CLASSIFICATION / REWRITE / ABSORPTION AUDIT PENDING
+
+J–N
 → PENDING / NOT RELEASED AUTOMATICALLY
 
-O — MENU FINAL
+O
 → PENDING / HOLD
 
-P — AUDITORIA FINAL
+P
 → PENDING
 
-Q — PRIMEIRA TELA PÓS-HOME DA PESSOA
+Q
 → BLOCKED
 ```
 
-O encerramento de `F-006` não libera automaticamente J–N. `F-016` permanece o eixo prioritário de auditoria antes de qualquer liberação posterior.
+O encerramento de `F-016-A` não libera automaticamente J–N. `F-016` permanece o eixo prioritário de auditoria.
 
 ## 27. Regra de navegação final
 
@@ -1353,36 +1340,18 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-O Bloco 2 G/H/I está auditado/remediado com `F-006 RESOLVED`. O eixo corrente é `F-016`.
-
-A camada física `F-016-A` está **elegível para cleanup**, mas sua remoção ainda exige autorização humana separada e explícita.
+O eixo corrente permanece `F-016`, com a camada física `F-016-A` já encerrada.
 
 ```text
-G
-→ COMPLETED / UPDATE_APPLIED
-
-H / I
-→ AUDITED / UPDATE_APPLIED
-→ F-006 RESOLVED
-→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
-
-F-016
-→ OPEN
-
 F-016-A
-→ 119 PHYSICAL SVGs
-→ STRUCTURAL INVENTORY COMPLETE
-→ DEPENDENCY PROOF PASSED
-→ SEMANTIC RECEIVER COVERAGE PASSED
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
+→ RESOLVED
+→ PHYSICAL SVG COUNT = 0
 
-NEXT PHYSICAL GATE
-→ SEPARATE EXPLICIT HUMAN AUTHORIZATION
-→ IF AUTHORIZED: DELETE EXACT 119 SVGs + RECONCILE ALL PHYSICAL REFERENCES ATOMICALLY
-→ RECOMPUTE INVENTORY
-→ SEMANTIC + MECHANICAL VALIDATION
-→ INDEPENDENT REVIEW
+NEXT
+→ CLASSIFY REMAINING MARKDOWN MATERIALIZATION FAMILIES
+→ PRESERVE FUNCTIONAL CONTENT
+→ REWRITE OR ABSORB BEFORE ANY DOCUMENT DELETION
+→ VALIDATE EACH RESULTING HEAD
 
 J / K / L / M / N
 → NOT RELEASED AUTOMATICALLY
@@ -1403,3 +1372,5 @@ AINDA BLOQUEADOS
 → PMF
 → IMPLEMENTAÇÃO
 ```
+
+Nenhuma autorização de cleanup Markdown é inferida do fechamento de F-016-A.

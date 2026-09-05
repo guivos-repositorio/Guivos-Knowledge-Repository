@@ -52,10 +52,23 @@ MAPA FINAL DE SUPERFÍCIES
 WIREFRAMES PRINCIPAIS AUTENTICADOS
 → PENDENTES / AUTORIDADE DE DESIGN
 
-119 SVGs
-→ INVENTÁRIO FÍSICO CORRENTE PÓS-F-006
-→ NÃO É CONTAGEM DE MATURIDADE
+F-016-A
+→ RESOLVED
+→ PHYSICAL SVG COUNT = 0
 ```
+
+## 3. Matriz de divergências e estado atual
+
+| Derivado | Snapshot anterior | Estado correto atual | Situação da normalização |
+|---|---|---|---|
+| `GKR-STATE-001` | `121 SVGs — 121 validados / 0 pendentes` | camada física removida; maturidade não inferida | normalizado |
+| `GKR-JOURNEY-SCREEN-CATALOG-001` | inventário físico 121/119 em checkpoints anteriores | **0 SVGs físicos após F-016-A** | normalizado |
+| `GKR-JOURNEY-SCREEN-GALLERY-001` | leitura agregada de validação | `superseded / historical_provenance_only` | normalizado |
+| `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` | associação visual podia ser lida como vigência | **0 associações físicas / 34 perfis de proveniência** | normalizado |
+| `GKR-JOURNEY-SURFACE-REGISTRY-001` — `ORG-001` | Visão Geral validada por `UXA-015/017` | responsabilidade conhecida; materialização histórica removida; Design governa futura materialização | normalizado |
+| registro do Coletivo | `UXA-016/018` como evidência da UX principal | não utilizar esses IDs para afirmar wireframe principal vigente | normalizado |
+| Jornada da Organização | Visão Geral = validada | Jobs + IA existem; mapa funcional ainda não canônico; materialização pertence a Design | normalizado |
+| Jornada do Coletivo | `UXA-016/018` como evidência principal | Jobs + IA existem; mapa funcional ainda não canônico; materialização pertence a Design | normalizado |
 
 ## 3. Matriz de divergências e estado atual
 
@@ -261,7 +274,7 @@ Permanece histórico, salvo decisão futura própria:
 
 Consequência:
 
-> **Os testes de absorção e função atual estão concluídos e a elegibilidade documental de cleanup foi comprovada. `F-006` permanece aberto, e qualquer remoção física continua condicionada a autorização humana separada e explícita.**
+> **F-006 está resolvido. F-016-A também está resolvido; futuras remoções Markdown dependem de classificação e autorização próprias.**
 
 ## 11. Gate para normalização e cleanup
 
@@ -275,7 +288,7 @@ Após o fechamento de F-006, qualquer derivado deve:
 6. aplicar a fronteira `DOCUMENTAÇÃO ≠ DESIGN` aberta por F-016;
 7. submeter qualquer cleanup físico posterior a autorização humana separada e validações no head exato.
 
-Para `F-016-A`, os 119 SVGs físicos estão `CLEANUP_ELIGIBILITY_PROVEN`, mas `PHYSICAL_CLEANUP_NOT_AUTHORIZED`.
+Para `F-016-A`, o cleanup 119/119 foi aplicado e validado; a contagem física corrente é zero e a subfrente está `RESOLVED`.
 
 ## 12. Autoridade de interpretação
 
@@ -312,9 +325,10 @@ F-016
 → OPEN
 
 F-016-A
-→ 119 SVGs
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
+→ PHYSICAL_CLEANUP_APPLIED_119_OF_119
+→ PHYSICAL_SVG_COUNT_0
+→ POST_DELETE_PROOF_V2_SUCCESS
+→ RESOLVED
 ```
 
 A existência de qualquer dívida documental residual não autoriza retornar a SVGs superseded como baseline nem transforma o inventário físico em autoridade de Design.

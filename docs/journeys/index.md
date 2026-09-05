@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.42.0
+version: 0.43.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-05
 related:
@@ -94,7 +94,7 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.42.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A |
+| visão geral das Jornadas Integradas | `active` 0.43.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A |
 | propagação dos Domínios de Evolução | `active` 1.0.0 | GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001 |
 | D5-A — jornada inicial | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
 | D5-B — Oportunidades | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
@@ -109,7 +109,7 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | registro de transições | `active` | 66 transições documentais |
 | galeria visual integrada | `superseded / historical_provenance_only` | camada física removida por F-016-A; sem autoridade visual corrente |
 | matriz por SVG | `superseded / historical_provenance_only` | **0 associações físicas / 34 perfis de proveniência**; sem autoridade visual |
-| F-016-A | `physical_cleanup_applied / validation_in_progress` | **119/119 SVGs removidos; 0 SVGs físicos; referências vivas reconciliadas; fechamento formal pendente de prova pós-delete** |
+| F-016-A | `resolved` | **119/119 SVGs removidos; 0 SVGs físicos; referências vivas reconciliadas; Semantic #832 + Mechanical #1090 + prova pós-delete v2 SUCCESS** |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
