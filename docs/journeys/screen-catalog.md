@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.33.0
+version: 0.34.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-05
 related:
   - UXA-005
   - UXA-070
@@ -105,7 +105,7 @@ A coluna `SVGs` abaixo é **inventário físico**. Ela não é, por si só, indi
 | Organização | Planos, comparação e cobrança | **3** | **3 validados no fluxo especializado** | contratos de origem/retorno preservam maturidade própria; TRN-421 a 425 locais; TRN-426 parcial | contratação/dimensionamento assistido e cobrança real; origem principal final pendente |
 | camada comercial | Opportunity Boost | 46 | **46 validados no escopo próprio** | parcial | TRN-304/305/306 e integrações específicas |
 | fronteira documental | destinos externos/comerciais | 0 | não aplicável | BND-001 examinada; BND-002 parcial | processo externo posterior; contratação/dimensionamento assistido |
-| **Total físico do catálogo** |  | **119** | **maturidade agregada não pode ser inferida; recomputação governada pendente** |  |  |
+| **Total físico do catálogo** |  | **0** | **camada SVG removida por F-016-A; maturidade funcional preservada por autoridade textual** |  |  |
 
 ## 3. Instrumentos granulares vigentes
 
@@ -113,9 +113,9 @@ A coluna `SVGs` abaixo é **inventário físico**. Ela não é, por si só, indi
 |---|---:|---|
 | superfícies/estados/responsabilidades/fronteiras | **57** | inventário granular; maturidade por item |
 | transições documentais | **66** | maturidade por transição; `TRN-008..013` integrais |
-| catálogo físico | **119 SVGs** | `active` 0.33.0; inclui artefatos históricos superseded |
-| matriz de rastreabilidade | **119 associações físicas / 34 perfis estáveis** | associação ≠ autoridade vigente |
-| galeria visual | **119 SVGs físicos** | resumo global `121 validados / 0 pendentes` superseded como claim de maturidade |
+| catálogo físico | **0 SVGs** | `active` 0.34.0; camada física removida por F-016-A |
+| matriz de rastreabilidade | **0 associações físicas / 34 perfis de proveniência** | sem autoridade visual |
+| galeria visual | **0 SVGs físicos** | documentos de galeria preservados somente como proveniência histórica |
 
 ## 4. Cobertura visual física
 
@@ -126,7 +126,7 @@ A coluna `SVGs` abaixo é **inventário físico**. Ela não é, por si só, indi
 | fronteiras intencionalmente sem tela | **2** |
 | **Total de IDs** | **57** |
 
-Essas contagens descrevem cobertura física/associativa do snapshot e não resolvem a vigência de cada artefato após supersessões posteriores.
+Essas contagens de IDs descrevem o snapshot estrutural/histórico. A camada física SVG corrente é zero após F-016-A.
 
 ## 5. Efeito acumulado D5-C2 → D5-C4B no snapshot histórico e na continuidade
 

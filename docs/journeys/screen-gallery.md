@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: superseded
-version: 0.26.0
+version: 0.27.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-05
 related:
@@ -53,35 +53,26 @@ maturity: historical_provenance_only
 
 ## 1. Finalidade
 
-Esta seção reúne os **119 SVGs físicos remanescentes do inventário visual** para inspeção humana de assertividade, sequência, coerência e cobertura.
+Este documento preserva a **proveniência histórica da galeria que, antes de F-016-A, reunia 119 SVGs físicos** para inspeção humana de sequência, coerência e cobertura.
 
-Após o cleanup F-006, os artefatos físicos associados a `UXA-015..018` não existem mais no corpus corrente. Os IDs permanecem somente como proveniência histórica quando citados; nenhuma galeria transfere autoridade visual à documentação.
-
-A D5-C2 adicionou três estados-base low-fidelity para `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução`. A D5-C3 os reforma in-place e os valida funcionalmente no limite local de cada superfície, sem promover automaticamente outras famílias.
+Após F-016-A, nenhum desses SVGs existe no corpus vigente. O documento permanece somente como `historical_provenance_only`; nomes e contagens abaixo descrevem snapshots anteriores e não arquivos disponíveis.
 
 ## 2. Estado do instrumento
 
-A galeria permanece `active` como instrumento de inspeção. Esse status não significa que as jornadas, os SVGs históricos ou a UX principal de todos os participantes estejam automaticamente aprovados.
+A galeria está `superseded / historical_provenance_only`.
 
-Ressalvas vigentes:
+```text
+SVGs FÍSICOS CORRENTES
+→ 0
 
-- **119 SVGs físicos** permanecem no corpus corrente; os perfis R09/R11 preservam somente proveniência sem ativo F-006;
-- o inventário físico inclui artefatos históricos `superseded`;
-- **121 SVGs físicos ≠ 121 wireframes vigentes ≠ 121 wireframes validados**;
-- o resumo histórico `121 validados / 0 pendentes` está **superseded como claim de maturidade vigente**;
-- uma nova contagem agregada de wireframes vigentes/validados não é inferida sem recomputação governada;
-- o materialização visual da Organização pertence exclusivamente a Design;
-- o materialização visual do Coletivo pertence exclusivamente a Design;
-- fluxos especializados independentes preservam sua maturidade documental quando sustentados por autoridade própria;
-- **10 responsabilidades** permanecem registradas sem SVG dedicado no snapshot estrutural;
-- **duas fronteiras** permanecem corretamente sem tela;
-- `PER-010..012` preservam validação local pela D5-C3;
-- `TRN-406/407` estão contratadas porque `PER-009` ainda não foi materializada;
-- `TRN-417/418` e `TRN-427/428` preservam a maturidade de seus contratos especializados de navegação, sem provar wireframe principal vigente de Coletivo ou Organização;
-- `TRN-205` está validada até `BND-001` pela UXA-101, sem validar o processo externo posterior;
-- `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais;
-- as transições comerciais internas de Planos preservam a maturidade própria do pacote;
-- as transições do trecho governado de Coletivos preservam apenas a maturidade sustentada pelas autoridades vigentes e pelos fluxos independentes.
+AUTORIDADE VISUAL CORRENTE
+→ DESIGN
+
+CONTEÚDO DESTE DOCUMENTO
+→ PROVENIÊNCIA HISTÓRICA
+```
+
+As referências a `121`, `119`, estados low-fidelity e maturidades locais abaixo pertencem aos respectivos checkpoints históricos. Elas não reativam assets, não promovem wireframes e não restringem futura decisão de Design.
 
 ## 3. Instrumentos de inspeção
 

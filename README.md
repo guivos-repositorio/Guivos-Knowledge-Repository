@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.10.0** |
+| GKR-STATE-001 | **3.11.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -30,7 +30,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.10.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
+O [Roadmap 13.11.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
 
 ## Regra de leitura
 
@@ -304,24 +304,27 @@ Documento de Home existente não significa automaticamente Home implementada, pu
 
 ## Inventário visual auditado
 
-Após o cleanup governado de `F-006`, o inventário corrente contém:
+Após `F-016-A`, a camada física de wireframes foi removida do corpus vigente:
 
-- **119 SVGs físicos**;
-- **119 associações físicas**;
-- **34 perfis de rastreabilidade estáveis**, incluindo perfis históricos sem ativo físico;
-- **0 duplicatas exatas observadas/provadas por blob SHA** no snapshot auditado anterior, sem nova certificação de near-duplicates.
+- **0 SVGs físicos** em `docs/assets/wireframes/`;
+- **0 associações físicas correntes**;
+- **34 perfis de rastreabilidade preservados como proveniência/semântica**, sem autoridade visual;
+- **0 embeds ou links vivos** para os assets removidos na prova pós-delete.
 
 ```text
-CONTAGEM FÍSICA DE SVGs
+SVG FÍSICO
 ≠ AUTORIDADE VISUAL
 ≠ MATURIDADE DE DESIGN
+
+AUTORIDADE VISUAL
+→ DESIGN
 ```
 
-`F-006` está `RESOLVED`: absorção funcional, cleanup físico 6/6, reconciliação, Semantic #827, Mechanical #1085 e prova read-only pós-delete concluíram com sucesso no head de cleanup. As referências remanescentes a `UXA-015..018` são tratadas como proveniência histórica, não como dependência vigente.
+`F-006` e `F-010` permanecem `RESOLVED`. O review Codex de F-010 permaneceu indisponível por limite de uso, sem claim `CLEAN`.
 
-`F-010` permanece `RESOLVED`; o review Codex permaneceu indisponível por limite de uso, sem claim `CLEAN`.
+`F-016-A` está `RESOLVED` após elegibilidade estrutural/semântica, autorização humana separada, cleanup 119/119, reconciliação das referências, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2.
 
-A auditoria abriu `F-016` para desmaterialização documental repo-wide: o GKR define intenção, conteúdo, estados, regras, fluxos, requisitos e critérios; **wireframes, mockups, protótipos, layout e demais decisões visuais pertencem exclusivamente a Design**.
+`F-016` global permanece `OPEN`: as famílias Markdown de materialização ainda exigem classificação individual e eventual reescrita/absorção.
 
 ## Tecnologia e operação
 
@@ -342,50 +345,26 @@ Não estão comprovados ou autorizados apenas pela documentação:
 
 ## Próximo gate da auditoria
 
-`F-006` está formalmente `RESOLVED`. O eixo corrente é `F-016 — desmaterialização documental repo-wide`.
-
-A subfrente física `F-016-A` concluiu inventário, prova de dependência e prova semântica de receivers sobre o head `549fe10bb7d21eb38961fa9b611e68c53b43f1db`:
-
-```text
-119/119 SVGs físicos
-→ perfil de rastreabilidade presente
-→ referência textual em Experience Architecture presente
-
-32/32 perfis físicos
-→ pelo menos um receiver textual corrente fora da família de galeria
-
-DEPENDÊNCIA RUNTIME/CÓDIGO
-→ 0
-
-UXA-015..018 REMOVIDOS
-→ 0 aceitos como receiver
-```
-
-Consequência governada:
+`F-016-A` está formalmente `RESOLVED`. A camada física SVG não é mais uma dependência do corpus vigente.
 
 ```text
 F-016-A
-→ STRUCTURAL INVENTORY COMPLETE
-→ PHYSICAL SVG DEPENDENCY PROOF PASSED
-→ SEMANTIC RECEIVER COVERAGE PASSED
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
+→ PRE-CLEANUP STRUCTURAL ELIGIBILITY PROVEN
+→ PRE-CLEANUP SEMANTIC RECEIVER COVERAGE PROVEN
+→ HUMAN PHYSICAL CLEANUP AUTHORIZATION GRANTED
+→ PHYSICAL CLEANUP APPLIED 119/119
+→ PHYSICAL SVG COUNT = 0
+→ LIVE EMBEDS / LINKS RECONCILED
+→ HISTORICAL PROVENANCE PRESERVED
+→ SEMANTIC #832 SUCCESS
+→ MECHANICAL #1090 SUCCESS
+→ INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS
+→ RESOLVED
 ```
 
-Qualquer remoção dos 119 SVGs exige **autorização humana separada e explícita** e, se concedida, deverá reconciliar todas as referências físicas afetadas na mesma transação antes das validações pós-delete.
+O eixo corrente continua sendo `F-016 — desmaterialização documental repo-wide`, agora restrito às famílias documentais remanescentes. Nenhum Markdown é removido por inferência: cada artefato deverá ser classificado como `KEEP_FUNCTIONAL`, `REWRITE_FUNCTIONAL`, `REMOVE_AFTER_ABSORPTION`, `REMOVE` ou `HISTORICAL_PROVENANCE_ONLY`.
 
 ```text
-G
-→ COMPLETED / UPDATE_APPLIED
-
-H / I
-→ AUDITED / UPDATE_APPLIED
-→ F-006 RESOLVED
-→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
-
-F-016
-→ OPEN
-
 J / K / L / M / N
 → NOT RELEASED AUTOMATICALLY
 
@@ -403,12 +382,15 @@ PRODUCT ENGINEERING
 
 DESIGN / MATERIALIZATION
 → NOT AUTHORIZED
+
+MERGE #363
+→ NOT AUTHORIZED
 ```
 
 ## Navegação principal durante a auditoria
 
-- [Estado Atual 3.7.0](docs/project/current-state-register.md)
-- [Roadmap 13.7.0](docs/roadmap.md)
+- [Estado Atual 3.11.0](docs/project/current-state-register.md)
+- [Roadmap 13.11.0](docs/roadmap.md)
 - [Auditoria Integral do GKR](docs/project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](docs/project/gkr-specialized-homes-audit.md)
 - [Reconciliação das Homes Especializadas](docs/experience-architecture/public-specialized-homes-reconciliation.md)

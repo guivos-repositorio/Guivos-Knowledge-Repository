@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **3.10.0** |
+| Registro | `GKR-STATE-001` **3.11.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
@@ -30,7 +30,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.10.0](roadmap.md) governa a sequência atual.
+O [Roadmap 13.11.0](roadmap.md) governa a sequência atual.
 
 ## Por que o repositório está em auditoria
 
@@ -57,8 +57,8 @@ O histórico permanece no Git.
 
 ### Estado e direção
 
-- [Registro do Estado Atual 3.7.0](project/current-state-register.md)
-- [Roadmap 13.7.0](roadmap.md)
+- [Registro do Estado Atual 3.11.0](project/current-state-register.md)
+- [Roadmap 13.11.0](roadmap.md)
 - [Auditoria Integral do GKR](project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](project/gkr-specialized-homes-audit.md)
 - [Reconciliação das Homes Especializadas](experience-architecture/public-specialized-homes-reconciliation.md)
@@ -313,44 +313,42 @@ A antiga leitura agregada de “oito Homes convergidas” não é usada como ata
 
 ## Materializações e contagens
 
-O cleanup governado de `F-006` foi aplicado e validado. O corpus corrente passou de 121 para **119 SVGs físicos**, com **119 associações físicas** e **34 perfis de rastreabilidade estáveis**. Os IDs `UXA-015..018` podem permanecer citados somente como proveniência histórica; os seis artefatos governados não existem mais no corpus corrente.
+`F-006` e `F-016-A` concluíram seus cleanups físicos governados. O estado corrente da camada SVG é:
 
 ```text
-SVG FÍSICO
-≠ AUTORIDADE VISUAL
-≠ MATURIDADE DE DESIGN
+SVGs FÍSICOS EM docs/assets/wireframes/
+→ 0
+
+ASSOCIAÇÕES FÍSICAS CORRENTES
+→ 0
+
+PERFIS DE RASTREABILIDADE
+→ 34
+→ PROVENIÊNCIA / SEMÂNTICA
+→ NÃO AUTORIDADE VISUAL
 ```
 
-`F-006` está `RESOLVED` após cleanup 6/6, reconciliação, Semantic #827, Mechanical #1085 e prova read-only pós-delete.
-
-`F-010` permanece `RESOLVED`, sem claim de Codex `CLEAN` porque o serviço esteve indisponível por limite de uso.
+`F-016-A = RESOLVED` após cleanup 119/119, reconciliação, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. Nomes `.svg` remanescentes em documentos preservados são proveniência histórica qualificada, não arquivos disponíveis.
 
 ## Próximo movimento
 
 O próximo eixo prioritário permanece `F-016 — desmaterialização documental repo-wide`.
 
-A subfrente `F-016-A` provou que os **119 SVGs físicos** possuem cobertura estrutural e textual suficiente para serem considerados **elegíveis para cleanup físico**, sem transformar essa elegibilidade em autorização:
+A subfrente física foi encerrada:
 
 ```text
-119/119 ASSETS
-→ MAPPED TO TRACEABILITY PROFILE
-→ REFERENCED BY EXPERIENCE ARCHITECTURE TEXT
-
-32/32 PHYSICAL PROFILES
-→ CURRENT TEXTUAL RECEIVER PRESENT
-
-NON-DOCUMENT / RUNTIME DEPENDENCIES
-→ 0
-
 F-016-A
-→ PHYSICAL CLEANUP APPLIED 119/119
+→ RESOLVED
+→ 119/119 SVGs REMOVED
 → PHYSICAL SVG COUNT = 0
-→ POST-CLEANUP VALIDATION PENDING
+→ LIVE REFERENCES = 0
 ```
+
+A próxima subfrente é exclusivamente documental: classificar produtores de low-fidelity, documentos de validação/programação, ciclo `UXA-081..085`, galerias e demais materializações sem presumir remoção.
 
 A documentação continua responsável por conteúdo, estados, regras, comportamento, permissões, fluxos, relações, requisitos, restrições, critérios de aceite e handoff. Wireframes, mockups, protótipos, layout, composição e materialização final pertencem exclusivamente a Design.
 
-Isso **não** libera J/K/L/M/N, `UXA-102/V5`, Design em execução, Product Engineering ou merge da PR #363. A remoção física dos 119 SVGs exige autorização humana separada e transação atômica com reconciliação das referências afetadas.
+Isso **não** libera J/K/L/M/N, `UXA-102/V5`, Design em execução, Product Engineering ou merge da PR #363.
 
 ## Navegação
 

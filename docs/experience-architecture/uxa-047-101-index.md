@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.10.0
+version: 3.11.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-05
 depends_on:
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.10.0
+→ 3.11.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -196,7 +196,7 @@ Ainda não são canônicos:
 | Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
 | F-010 — cleanup transversal | **RESOLVED — CLEANUP / VALIDATION / INDEPENDENT REVIEW COMPLETE** |
 | F-016 | **OPEN — REPO-WIDE DOCUMENTATION DEMATERIALIZATION** |
-| F-016-A — camada física SVG | **PHYSICAL CLEANUP APPLIED 119/119 / PHYSICAL SVG COUNT 0 / POST-CLEANUP VALIDATION PENDING** |
+| F-016-A — camada física SVG | **RESOLVED / PHYSICAL CLEANUP 119/119 / PHYSICAL SVG COUNT 0 / POST-DELETE PROOF V2 SUCCESS** |
 | Próximo gate físico | **AUTORIZAÇÃO HUMANA SEPARADA PARA F-016-A; se concedida, cleanup + reconciliação atômica + recomputação + validações/review** |
 | J/K/L/M/N | **NOT RELEASED AUTOMATICALLY** |
 | Product Engineering | **PAUSED BEFORE W0-01** |

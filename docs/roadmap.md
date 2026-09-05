@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.10.0
+id: ROADMAP-13.11.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.10.0
+version: 13.11.0
 owner: Guivos
 last_updated: 2026-09-05
 normative: true
@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.10.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.11.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -55,7 +55,7 @@ O programa global vigente é a **Auditoria Integral do Guivos Knowledge Reposito
 
 Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` é o eixo prioritário corrente.
 
-`F-016-A` provou, no head `549fe10...`, que os 119 SVGs físicos possuem cobertura de rastreabilidade, referência textual e receiver funcional corrente, sem dependência runtime/código. A camada física está `CLEANUP_ELIGIBILITY_PROVEN`, mas **PHYSICAL_CLEANUP_NOT_AUTHORIZED**.
+`F-016-A` concluiu o ciclo governado: elegibilidade estrutural/semântica, autorização humana separada, cleanup físico 119/119, reconciliação, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. A subfrente está `RESOLVED` e o inventário físico corrente de SVGs é zero.
 
 `F-010` permanece `RESOLVED`. O review Codex permaneceu indisponível por limite de uso e nenhuma claim `CLEAN` é inferida.
 
@@ -66,7 +66,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.10.0** |
+| Estado global | **GKR-STATE-001 v3.11.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -81,22 +81,21 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
 | F-010 | **RESOLVED** |
 | F-016 | **OPEN — REPO-WIDE DOCUMENTATION DEMATERIALIZATION** |
-| F-016-A | **119 SVGs / CLEANUP_ELIGIBILITY_PROVEN / PHYSICAL_CLEANUP_NOT_AUTHORIZED** |
+| F-016-A | **RESOLVED — PHYSICAL SVG COUNT 0** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |
 | Design das Homes | **OPERATIONAL AUTHORIZATION SUSPENDED DURING AUDIT** |
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 
-Inventário físico corrente comprovado após F-006:
+Inventário físico corrente após F-016-A:
 
-- **119 SVGs físicos**;
-- **119 associações físicas**;
-- **34 perfis de rastreabilidade estáveis** no instrumento associativo;
-- **32 perfis com associação física atual**;
-- 0 dependências runtime/código dos SVGs.
+- **0 SVGs físicos**;
+- **0 associações físicas correntes**;
+- **34 perfis de rastreabilidade preservados como proveniência/semântica**;
+- **0 embeds/links vivos** para assets removidos.
 
-Contagens agregadas de wireframes vigentes/validados permanecem `NOT_CERTIFIED` e não são inferidas do inventário físico.
+Contagens agregadas de wireframes vigentes/validados permanecem `NOT_CERTIFIED`; ausência de SVG no GKR não constitui maturidade de Design.
 
 ## 3. Princípio de execução do roadmap
 
@@ -545,18 +544,18 @@ AUDITED / UPDATE_APPLIED
 F-006 → RESOLVED
 F-007 → RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
 F-016 → OPEN
-F-016-A → CLEANUP_ELIGIBILITY_PROVEN / PHYSICAL_CLEANUP_NOT_AUTHORIZED
+F-016-A → RESOLVED
 ```
 
-Inventário físico corrente comprovado:
+Inventário físico corrente comprovado após F-016-A:
 
-- **119 SVGs físicos**;
-- **119 associações físicas**;
-- **34 perfis estáveis de rastreabilidade**;
-- **32 perfis com associação física atual**;
-- **0 dependências runtime/código**.
+- **0 SVGs físicos**;
+- **0 associações físicas correntes**;
+- **34 perfis de rastreabilidade preservados como proveniência/semântica**;
+- **0 dependências runtime/código**;
+- **0 embeds/links vivos** para assets removidos.
 
-A prova semântica de F-016-A confirmou receivers textuais correntes para 32/32 perfis físicos e referência em Experience Architecture para 119/119 assets.
+A prova pré-delete confirmou receivers textuais para 32/32 perfis físicos e referência em Experience Architecture para 119/119 assets; a prova pós-delete v2 confirmou ausência física e segurança das referências no head `cde46281a99ac9746fcca11381c3b8e54d284f23`.
 
 ```text
 CONTAGEM FÍSICA DE SVGs
@@ -564,7 +563,7 @@ CONTAGEM FÍSICA DE SVGs
 ≠ WIREFRAMES VALIDADOS
 ```
 
-A remoção física dos 119 SVGs não é autorizada por esta elegibilidade. Se houver autorização humana separada, as referências físicas deverão ser reconciliadas atomicamente e o inventário recomputado no tree resultante.
+As famílias Markdown de materialização permanecem sob F-016 e devem ser classificadas individualmente antes de qualquer remoção ou reescrita.
 
 ## 14. Lote J — Produtos, planos e economia
 
@@ -960,24 +959,21 @@ DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL DURANTE A AUDITORIA
 
 ## 26. Regra do próximo movimento
 
-`F-016-A` consumiu a autorização humana separada e teve o cleanup físico aplicado sobre os **119/119 SVGs**.
+`F-016-A` está `RESOLVED`.
 
 ```text
 F-016-A
-→ CLEANUP_ELIGIBILITY_PROVEN BEFORE DELETE
-→ HUMAN AUTHORIZATION GRANTED
 → PHYSICAL CLEANUP APPLIED 119/119
 → PHYSICAL SVG COUNT = 0
-→ REFERENCE RECONCILIATION APPLIED
-→ POST-CLEANUP VALIDATION PENDING
-→ FORMAL CLOSURE PENDING
+→ SEMANTIC #832 SUCCESS
+→ MECHANICAL #1090 SUCCESS
+→ INDEPENDENT READ-ONLY PROOF V2 SUCCESS
+→ RESOLVED
 
-NEXT
-→ RECOMPUTE THE RESULTING TREE
-→ SEMANTIC VALIDATION
-→ MECHANICAL VALIDATION
-→ INDEPENDENT READ-ONLY REVIEW
-→ ONLY THEN ADJUDICATE F-016-A
+NEXT F-016 SUBFRONT
+→ CLASSIFY REMAINING MARKDOWN MATERIALIZATION FAMILIES
+→ KEEP_FUNCTIONAL | REWRITE_FUNCTIONAL | REMOVE_AFTER_ABSORPTION | REMOVE | HISTORICAL_PROVENANCE_ONLY
+→ NO AUTOMATIC MARKDOWN DELETION
 ```
 
 J/K/L/M/N, `UXA-102/V5`, Design, Product Engineering e merge da PR #363 permanecem bloqueados ou não autorizados.

@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.10.0
+version: 1.11.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-05
 normative: false
@@ -400,22 +400,19 @@ Não são promovidos como verdade atual e permanecem somente como proveniência 
 
 A auditoria de dependências também reconciliou as referências funcionais ativas encontradas durante os ciclos de review, incluindo `UXA-019`, `UXA-056`, `UXA-057`, `UXA-058`, `UXA-059`, `UXA-070`, `UXA-086`, `UXA-087`, `UXA-095`, `UXA-096`, addenda canônicos, changelog e a autoridade navegacional da Home O/C. Os artefatos `UXA-015..018` deixaram de constar como dependências funcionais necessárias nessas cadeias e passaram a ser, quando ainda citados, proveniência histórica `superseded`.
 
-Registries, galleries e a matriz de rastreabilidade ainda preservam referências aos dois SVGs porque o inventário físico atual continua sendo 121. Essas referências descrevem **presença física/histórica**, não autoridade funcional. Elas deverão ser removidas ou recalculadas na mesma transação de cleanup físico para que o inventário continue verdadeiro.
+No checkpoint pré-cleanup de F-006, registries, galleries e a matriz ainda preservavam referências aos dois SVGs e o inventário físico era 121. Esse trecho é **proveniência do estado anterior**; F-006 foi posteriormente executado e resolvido.
 
 A revisão Codex repo-wide solicitada especificamente para testar dependências residuais, propagação e regressões no head exato `84d6f052f56b50e8802a6a4f429c52b49c7c42e4` concluiu sem novo finding Major/P1/P2 e sem novo thread; todos os threads existentes permanecem resolvidos. Os gates desse head estavam verdes antes desta atualização documental: Semantic #789 e Mechanical #1047.
 
-Consequência do teste positivo:
+Consequência naquele checkpoint pré-cleanup:
 
 ```text
 F-006
-→ OPEN
-→ ABSORPTION_APPLIED
-→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
+→ OPEN / CLEANUP_ELIGIBLE / PHYSICAL_REMOVAL_NOT_AUTHORIZED
+→ HISTORICAL CHECKPOINT ONLY
 ```
 
-A elegibilidade não equivale a cleanup concluído. Antes de qualquer remoção física ainda é obrigatório:
+A sequência então exigida — e posteriormente concluída — era:
 
 1. obter autorização humana separada e explícita para o cleanup;
 2. executar a remoção dos quatro documentos `UXA-015..018` e dos dois SVGs associados somente dentro dessa autorização;
@@ -783,7 +780,7 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | F — Homes de Produtos | `COMPLETED` | seis Homes especializadas reconciliadas documentalmente; materialização não autorizada |
 | G — Jornada da Pessoa | `COMPLETED` | contradição de handoff reconciliada; sem rebuild |
 | H — Organização / Coletivo | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED` | Jobs + IA propagados; cleanup F-006 concluído e validado |
-| I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED / F-007_RESOLVED` | inventário pós-F-006 = 119 SVGs; F-016-A cleanup-eligible, remoção física ainda não autorizada |
+| I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED / F-007_RESOLVED / F-016-A_RESOLVED` | camada SVG removida; inventário físico corrente = 0; demais famílias F-016 continuam abertas |
 | J — Produtos / Economia | `PENDING` | masters atuais sem fragmentação |
 | K — Research / RP-002 | `PENDING` | método/evidência preservados; intermediários absorvidos quando possível |
 | L — Tecnologia / Dados / IA | `PENDING` | autoridades atuais e fronteiras claras |
@@ -812,7 +809,7 @@ G. Jornada da Pessoa                             [concluído]
 ↓
 H/I. O/C + inventário visual                     [auditados/remediados; F-006 resolvido]
 ↓
-F-016. desmaterialização documental              [aberta; F-016-A cleanup-eligible / physical cleanup not authorized]
+F-016. desmaterialização documental              [aberta; F-016-A resolved; famílias Markdown pendentes]
 ↓
 J/K/L/M/N. domínios especializados               [não liberados automaticamente]
 ↓
@@ -971,21 +968,19 @@ F-016
 → OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION
 
 F-016-A
-→ PHYSICAL_SVG_ASSETS = 119
-→ STRUCTURAL_INVENTORY_COMPLETE
-→ PHYSICAL_DEPENDENCY_PROOF_PASSED
-→ PHYSICAL_PROFILES = 32
-→ PROFILES_WITH_TEXTUAL_RECEIVER = 32/32
-→ ASSETS_WITH_EXPERIENCE_ARCHITECTURE_REFERENCE = 119/119
-→ RUNTIME_OR_CODE_DEPENDENCIES = 0
-→ REMOVED_F006_IDS_ACCEPTED_AS_RECEIVERS = 0
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
+→ PRE-CLEANUP ELIGIBILITY PROVEN
+→ HUMAN AUTHORIZATION GRANTED
+→ PHYSICAL CLEANUP APPLIED 119/119
+→ PHYSICAL SVG COUNT = 0
+→ LIVE EMBED/LINK HITS = 0
+→ HISTORICAL PROVENANCE PRESERVED
+→ SEMANTIC #832 SUCCESS
+→ MECHANICAL #1090 SUCCESS
+→ INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS
+→ RESOLVED
 
-NEXT PHYSICAL ACTION
-→ REQUIRES SEPARATE EXPLICIT HUMAN AUTHORIZATION
-→ IF AUTHORIZED: REMOVE EXACT 119 SVGs + RECONCILE PHYSICAL REFERENCES IN SAME TRANSACTION
-→ RECOMPUTE → VALIDATE EXACT HEAD → INDEPENDENT REVIEW
+F-016 REMAINING MARKDOWN FAMILIES
+→ CLASSIFICATION / REWRITE / ABSORPTION PENDING
 
 NEXT SPECIALIZED BLOCK J/K/L/M/N
 → NOT RELEASED YET
@@ -1007,9 +1002,6 @@ PRODUCT ENGINEERING
 
 MENU FINAL
 → NOT YET DESIGNED
-
-FIRST PERSON SCREEN AFTER HOME
-→ BLOCKED UNTIL AUDIT CLOSES
 ```
 
 ## 23. Destino deste registro
@@ -1036,9 +1028,7 @@ DESIGN
 → composição visual, layout, posicionamento, wireframes, mockups, protótipos, componentes visuais, aparência e materialização final
 ```
 
-### F-016-A — camada física SVG
-
-A subfrente física teve elegibilidade provada no head pré-delete, recebeu autorização humana separada e teve cleanup aplicado sobre o conjunto fechado de **119 SVGs**.
+### F-016-A — camada física SVG — RESOLVED
 
 ```text
 PRE-DELETE PHYSICAL SVGs
@@ -1047,25 +1037,33 @@ PRE-DELETE PHYSICAL SVGs
 POST-DELETE PHYSICAL SVGs
 → 0
 
-EMBEDS / LIVE LINKS TO REMOVED ASSETS
-→ RECONCILED IN SAME TRANSACTION
+LIVE EMBEDS / LINKS
+→ 0
 
-NOMINAL .svg REFERENCES THAT REMAIN
-→ HISTORICAL PROVENANCE ONLY
-→ QUALIFIED IN ACTIVE DOCUMENTS
+PRE-CLEANUP STRUCTURAL + SEMANTIC ELIGIBILITY
+→ PASS
 
-POST-CLEANUP VALIDATION
-→ PENDING
+HUMAN AUTHORIZATION
+→ GRANTED / CONSUMED
 
-F-016-A FORMAL RESOLUTION
-→ NOT YET CLAIMED
+SEMANTIC #832
+→ SUCCESS
+
+MECHANICAL #1090
+→ SUCCESS
+
+POST-DELETE READ-ONLY PROOF V2
+→ SUCCESS
+
+F-016-A
+→ RESOLVED
 ```
 
-As galerias e a matriz por SVG permanecem fisicamente como documentos de proveniência `superseded / historical_provenance_only`, sem autoridade visual corrente. Nenhum Markdown foi removido automaticamente por este gate.
+Nomes `.svg` preservados em documentos históricos permanecem somente como proveniência. Galerias e matriz por SVG são `superseded / historical_provenance_only`, sem autoridade visual corrente.
 
 ### Demais famílias F-016
 
-Documentos `low-fidelity-wireframe`, `materialization`, validações/programas de wireframe, galerias e linguagem de UI continuam sujeitos à classificação individual:
+Documentos `low-fidelity-wireframe`, `materialization`, validações/programas de wireframe, ciclo de galerias e linguagem de UI continuam sujeitos à classificação individual:
 
 - `KEEP_FUNCTIONAL`;
 - `REWRITE_FUNCTIONAL`;
@@ -1073,4 +1071,4 @@ Documentos `low-fidelity-wireframe`, `materialization`, validações/programas d
 - `REMOVE`;
 - `HISTORICAL_PROVENANCE_ONLY`.
 
-Critério de encerramento global: **o GKR não pode competir com Design na definição de interface**.
+Nenhum Markdown é removido automaticamente pelo fechamento de F-016-A. Critério global: **o GKR não pode competir com Design na definição de interface**.

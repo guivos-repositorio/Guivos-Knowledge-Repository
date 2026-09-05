@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.6.0
+version: 1.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-05
 related:
@@ -102,6 +102,8 @@ AUTORIDADE FUNCIONAL
 ```
 
 A remoção física não altera por si só maturidade funcional de superfícies, estados ou transições. Nomes `.svg` ainda citados em documentos preservados devem ser lidos exclusivamente como proveniência histórica.
+
+`F-016-A = RESOLVED` após Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. `F-016` global permanece aberto para as famílias documentais remanescentes.
 
 ## 4. Decisões estruturais preservadas
 

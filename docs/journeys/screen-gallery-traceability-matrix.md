@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: superseded
-version: 0.26.0
+version: 0.27.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-05
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -120,7 +120,7 @@ Para Organização e Coletivo, os perfis históricos continuam úteis para local
 
 R32–R34 preservam as mesmas associações criadas pela D5-C2 e a validação funcional local da D5-C3. A D5-C4B altera somente a maturidade integrada de `TRN-008..013`; não cria, remove ou remapeia perfil visual.
 
-## 4. Associação individual dos 119 SVGs físicos remanescentes
+## 4. Associação histórica dos 119 SVGs físicos removidos por F-016-A
 
 A associação física foi encerrada por `F-016-A`.
 
