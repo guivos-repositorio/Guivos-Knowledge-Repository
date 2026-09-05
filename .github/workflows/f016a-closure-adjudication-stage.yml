@@ -1,4 +1,4 @@
-name: F-016 UXA-081-085 Cleanup Candidate Proof v2
+name: F-016 UXA-081-085 Cleanup Candidate Proof v3
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  cleanup-candidate-proof-v2:
+  cleanup-candidate-proof-v3:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout exact canonical head read-only
@@ -26,7 +26,7 @@ jobs:
           test "$(git rev-parse HEAD^{tree})" = "6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4"
           test -z "$(git status --porcelain)"
 
-      - name: Apply exact bounded candidate
+      - name: Apply exact bounded candidate including semantic gate reconciliation
         shell: bash
         run: |
           set -euo pipefail
@@ -64,6 +64,7 @@ jobs:
             'docs/index.md',
             'docs/project/gkr-full-corpus-audit.md',
             'mkdocs.yml',
+            'scripts/validate_semantic_state.py',
           }
           expected_deleted=set(deleted.values())
 
@@ -73,7 +74,7 @@ jobs:
           def remove_frontmatter_tokens(path, tokens):
               p=Path(path); text=p.read_text(encoding='utf-8')
               assert text.startswith('---\n')
-              first, fm, body=text.split('---\n',2)
+              _, fm, body=text.split('---\n',2)
               lines=fm.splitlines(keepends=True)
               field=None; removed=[]; out=[]
               for line in lines:
@@ -87,8 +88,7 @@ jobs:
                   if mi and field in {'depends_on','related'}:
                       token=mi.group(2).strip('"\'')
                       if token in tokens:
-                          removed.append((field,token))
-                          continue
+                          removed.append((field,token)); continue
                   out.append(line)
               assert {tok for _,tok in removed}==tokens, (path,removed,tokens)
               p.write_text('---\n'+''.join(out)+'---\n'+body,encoding='utf-8')
@@ -98,68 +98,63 @@ jobs:
           for path,toks in relations.items():
               removed=remove_frontmatter_tokens(path,toks)
               all_removed.extend((path,field,tok) for field,tok in removed)
-          dep_count=sum(1 for _,field,_ in all_removed if field=='depends_on')
-          rel_count=sum(1 for _,field,_ in all_removed if field=='related')
-          assert dep_count==1, dep_count
-          assert rel_count==11, rel_count
+          assert sum(1 for _,field,_ in all_removed if field=='depends_on')==1
+          assert sum(1 for _,field,_ in all_removed if field=='related')==11
           print('STRUCTURAL_DEPENDS_ON_REMOVED=1')
           print('STRUCTURAL_RELATED_REMOVED=11')
 
           link_targets={Path(v).name:k for k,v in deleted.items()}
           link_removed=0
           link_re=re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
-          for path in [
-              'docs/experience-architecture/uxa-047-098-index.md',
-              'docs/experience-architecture/uxa-047-101-index.md',
-          ]:
+          for path in ['docs/experience-architecture/uxa-047-098-index.md','docs/experience-architecture/uxa-047-101-index.md']:
               p=Path(path); old=p.read_text(encoding='utf-8')
-              def repl(m):
-                  nonlocal_holder=None
-                  target=Path(m.group(2).split('#',1)[0].strip()).name
-                  if target in link_targets:
-                      return m.group(1)
-                  return m.group(0)
               for m in link_re.finditer(old):
-                  target=Path(m.group(2).split('#',1)[0].strip()).name
-                  if target in link_targets: link_removed+=1
-              p.write_text(link_re.sub(repl,old),encoding='utf-8')
+                  if Path(m.group(2).split('#',1)[0].strip()).name in link_targets: link_removed+=1
+              p.write_text(link_re.sub(lambda m: m.group(1) if Path(m.group(2).split('#',1)[0].strip()).name in link_targets else m.group(0),old),encoding='utf-8')
           assert link_removed==10, link_removed
           print('LIVE_INDEX_LINKS_NEUTRALIZED=10')
 
           mk=Path('mkdocs.yml'); lines=mk.read_text(encoding='utf-8').splitlines(keepends=True)
-          matching=[ln for ln in lines if deleted['UXA-081'].replace('docs/','') in ln]
+          nav_target=deleted['UXA-081'].replace('docs/','')
+          matching=[ln for ln in lines if nav_target in ln]
           assert len(matching)==1, matching
-          mk.write_text(''.join(ln for ln in lines if deleted['UXA-081'].replace('docs/','') not in ln),encoding='utf-8')
+          mk.write_text(''.join(ln for ln in lines if nav_target not in ln),encoding='utf-8')
           print('MKDOCS_UXA081_NAV_REMOVED=1')
 
           p=Path('docs/index.md'); old=p.read_text(encoding='utf-8')
           needle='A próxima subfrente é exclusivamente documental: classificar produtores de low-fidelity, documentos de validação/programação, ciclo `UXA-081..085`, galerias e demais materializações sem presumir remoção.'
-          repl='A próxima subfrente é exclusivamente documental: classificar produtores de low-fidelity, documentos de validação/programação e demais materializações sem presumir remoção.'
+          replacement='A próxima subfrente é exclusivamente documental: classificar produtores de low-fidelity, documentos de validação/programação e demais materializações sem presumir remoção.'
           assert old.count(needle)==1
-          p.write_text(old.replace(needle,repl),encoding='utf-8')
+          p.write_text(old.replace(needle,replacement),encoding='utf-8')
           print('DOCS_INDEX_NEXT_SUBFRONT_RECONCILED=PASS')
 
           p=Path('docs/project/gkr-full-corpus-audit.md'); old=p.read_text(encoding='utf-8')
           oldrow='| F-016 | Major | corpus ainda contém documentos de materialização e linguagem de UI que podem competir com Design; camada física SVG e família `screen-gallery*` já foram desmaterializadas após prova de absorção | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — F-016-A RESOLVED; família `screen-gallery*` removida 8/8 após absorção; demais famílias Markdown continuam em auditoria** |'
           newrow='| F-016 | Major | corpus ainda contém documentos de materialização e linguagem de UI que podem competir com Design; camada física SVG, família `screen-gallery*` e ciclo `UXA-081..085` já foram desmaterializados após prova de absorção | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — F-016-A RESOLVED; `screen-gallery*` removida 8/8 e `UXA-081..085` removidos 5/5 após absorção; demais famílias Markdown continuam em auditoria** |'
-          assert old.count('version: 1.12.0')==1
-          assert old.count(oldrow)==1
+          assert old.count('version: 1.12.0')==1 and old.count(oldrow)==1
           p.write_text(old.replace('version: 1.12.0','version: 1.13.0',1).replace(oldrow,newrow,1),encoding='utf-8')
           print('F016_AUDIT_CANDIDATE_RECONCILED=PASS')
+
+          # Reconcile semantic validator narrowly: UXA-081..085 become explicit governed absences.
+          p=Path('scripts/validate_semantic_state.py'); old=p.read_text(encoding='utf-8')
+          needle='''    for number in range(47, 102):\n        path = artifacts.get(number)\n        if path is None:\n            errors.append(f"artefato UXA-{number:03d} ausente")\n        elif path.name not in index_text:\n            errors.append(f"artefato UXA-{number:03d} não indexado: {path.name}")\n'''
+          replacement='''    removed_after_absorption = {\n        81: "uxa-081-integrated-screen-gallery-and-coverage-audit.md",\n        82: "uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md",\n        83: "uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md",\n        84: "uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md",\n        85: "uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md",\n    }\n\n    for number in range(47, 102):\n        path = artifacts.get(number)\n        if number in removed_after_absorption:\n            expected_name = removed_after_absorption[number]\n            if path is not None:\n                errors.append(f"artefato UXA-{number:03d} deveria estar ausente após cleanup governado")\n            if expected_name in index_text:\n                errors.append(f"artefato removido UXA-{number:03d} permanece indexado: {expected_name}")\n            continue\n        if path is None:\n            errors.append(f"artefato UXA-{number:03d} ausente")\n        elif path.name not in index_text:\n            errors.append(f"artefato UXA-{number:03d} não indexado: {path.name}")\n'''
+          assert old.count(needle)==1
+          p.write_text(old.replace(needle,replacement,1),encoding='utf-8')
+          print('SEMANTIC_VALIDATOR_GOVERNED_ABSENCE_RECONCILED=5')
 
           for ident,path in deleted.items():
               p=Path(path); assert p.exists(), (ident,path); p.unlink()
           print('TARGET_DELETIONS=5')
 
-          # Post-candidate structural proof: only frontmatter structural references are forbidden.
+          # Structural proof over tracked Markdown frontmatter.
           remaining_dep=[]; remaining_rel=[]
           for path in subprocess.check_output(['git','ls-files','docs/*.md','docs/**/*.md']).decode().splitlines():
               p=Path(path)
               if not p.exists(): continue
               text=p.read_text(encoding='utf-8')
               if not text.startswith('---\n'): continue
-              fm=text.split('---\n',2)[1].splitlines()
-              field=None
+              fm=text.split('---\n',2)[1].splitlines(); field=None
               for line in fm:
                   mk=re.match(r'^([A-Za-z_][A-Za-z0-9_-]*):\s*$',line)
                   if mk: field=mk.group(1); continue
@@ -167,14 +162,11 @@ jobs:
                   mi=re.match(r'^\s*-\s*([^#\s]+)',line)
                   if mi and field in {'depends_on','related'}:
                       tok=mi.group(1).strip('"\'')
-                      if tok in targets:
-                          (remaining_dep if field=='depends_on' else remaining_rel).append((path,tok))
-          assert not remaining_dep, remaining_dep
-          assert not remaining_rel, remaining_rel
+                      if tok in targets: (remaining_dep if field=='depends_on' else remaining_rel).append((path,tok))
+          assert not remaining_dep and not remaining_rel, (remaining_dep,remaining_rel)
           print('POST_CANDIDATE_STRUCTURAL_DEPENDS_ON=0')
           print('POST_CANDIDATE_STRUCTURAL_RELATED=0')
 
-          # Exact bounded delta.
           rows=subprocess.check_output(['git','status','--porcelain']).decode().splitlines()
           modified={r[3:] for r in rows if r[:2].strip()=='M'}
           deleted_now={r[3:] for r in rows if r[:2].strip()=='D'}
@@ -182,9 +174,9 @@ jobs:
           assert modified==expected_modified, ('modified mismatch',sorted(modified^expected_modified),sorted(modified))
           assert deleted_now==expected_deleted, ('deleted mismatch',sorted(deleted_now^expected_deleted),sorted(deleted_now))
           assert not other, other
-          print('EXACT_MODIFIED_COUNT=15')
+          print('EXACT_MODIFIED_COUNT=16')
           print('EXACT_DELETED_COUNT=5')
-          print('EXACT_CHANGED_PATHS=20')
+          print('EXACT_CHANGED_PATHS=21')
           for r in rows: print('CANDIDATE_STATUS',r,sep='\t')
 
           state=Path('docs/project/current-state-register.md').read_text(encoding='utf-8')
@@ -243,4 +235,4 @@ jobs:
           test "$(git rev-parse HEAD)" = "78534bf86acdc5da5f76e558b0df2347e6b5a111"
           test "$(git rev-parse HEAD^{tree})" = "6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4"
           test -n "$(git status --porcelain --untracked-files=no)"
-          echo F016_UXA081_085_CLEANUP_CANDIDATE_PROOF_V2=SUCCESS
+          echo F016_UXA081_085_CLEANUP_CANDIDATE_PROOF_V3=SUCCESS
