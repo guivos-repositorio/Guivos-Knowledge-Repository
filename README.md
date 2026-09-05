@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.7.0** |
+| GKR-STATE-001 | **3.8.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -19,8 +19,8 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | PMF | **NOT VALIDATED** |
 | Auditoria integral do corpus | **IN_PROGRESS** |
 | Lotes concluídos | **A / B / C / D / E / F** |
-| Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 OPEN** |
-| Próximo gate da auditoria | **AUTORIZAÇÃO HUMANA PARA CLEANUP FÍSICO DE F-006** |
+| Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 RESOLVED** |
+| Próximo gate da auditoria | **F-016 — DESMATERIALIZAÇÃO DOCUMENTAL REPO-WIDE** |
 | F-007 | **RESOLVED — semantic/inventory scope** |
 | F-010 | **RESOLVED — cleanup e validação pós-cleanup concluídos** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
@@ -30,7 +30,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.7.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
+O [Roadmap 13.8.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
 
 ## Regra de leitura
 
