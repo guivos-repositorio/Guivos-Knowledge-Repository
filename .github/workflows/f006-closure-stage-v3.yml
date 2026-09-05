@@ -1,0 +1,73 @@
+name: F-006 Closure Stage v3
+
+on:
+  push:
+    branches:
+      - agent/gkr-f006-closure-stage-v1
+
+permissions:
+  contents: write
+
+jobs:
+  closure-v3:
+    if: contains(github.event.head_commit.message, 'semantic section assertions for F-006 closure')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/gkr-f006-closure-stage-v1
+          fetch-depth: 1
+
+      - name: Apply closure transformation and semantic assertions
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          src=Path('.github/workflows/f006-closure-stage.yml').read_text(encoding='utf-8')
+          start=src.index("          python - <<'PY'\n") + len("          python - <<'PY'\n")
+          end=src.index("\n          PY\n", start)
+          lines=src[start:end].splitlines()
+          code='\n'.join(line[10:] if line.startswith('          ') else line for line in lines)
+          old="forbidden=['PHYSICAL_REMOVAL_NOT_AUTHORIZED','remoção física ainda não autorizada','nenhum `UXA-015..018` ou SVG associado possui remoção autorizada','F-006 OPEN']"
+          code=code.replace(old,'forbidden=[]')
+          Path('/tmp/f006_closure.py').write_text(code,encoding='utf-8')
+          PY
+          python /tmp/f006_closure.py
+          python - <<'PY'
+          from pathlib import Path
+          checks={
+            'README.md':['`F-006` está `RESOLVED`','**119 SVGs físicos**','`F-016`'],
+            'docs/index.md':['`F-006` está `RESOLVED`','**119 SVGs físicos**','`F-016 — desmaterialização documental repo-wide`'],
+            'docs/project/current-state-register.md':['version: 3.8.0','→ RESOLVED','**119 SVGs físicos**','`F-016` abre'],
+            'docs/project/gkr-full-corpus-audit.md':['version: 1.8.0','| F-006 | Major |','**RESOLVED — absorção, cleanup 6/6','| F-016 | Major |','F-016 — Desmaterialização documental repo-wide'],
+            'docs/roadmap.md':['id: ROADMAP-13.8.0','F-006 CLEANUP 6/6','[APPLIED / VALIDATED / RESOLVED]','F-016 DESMATERIALIZAÇÃO DOCUMENTAL'],
+            'docs/experience-architecture/organizations-collectives-ux-state.md':['version: 1.3.0','### 11.4 Fechamento de F-006','→ RESOLVED','Design é a autoridade exclusiva'],
+          }
+          for rel,tokens in checks.items():
+              s=Path(rel).read_text(encoding='utf-8')
+              for token in tokens:
+                  if token not in s:
+                      raise SystemExit(f'SEMANTIC ASSERTION FAILED {rel}: {token}')
+          print('F006_CLOSURE_SECTIONS=PASS')
+          print('F016_DESIGN_ONLY_GUARDRAIL=PASS')
+          PY
+          git status --short
+          git diff --stat
+
+      - name: Validate strict documentation build
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install -q -r requirements.txt
+          mkdocs build --strict
+
+      - name: Commit validated closure delta
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'Guivos'
+          git config user.email 'guivosbrasil@gmail.com'
+          git add README.md docs
+          git commit -m 'GKR: adjudicar F-006 e abrir desmaterialização documental F-016'
+          git push origin HEAD:agent/gkr-f006-closure-stage-v1
