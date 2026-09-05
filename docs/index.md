@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **3.8.0** |
+| Registro | `GKR-STATE-001` **3.9.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
@@ -30,7 +30,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.8.0](roadmap.md) governa a sequência atual.
+O [Roadmap 13.9.0](roadmap.md) governa a sequência atual.
 
 ## Por que o repositório está em auditoria
 
@@ -327,41 +327,29 @@ SVG FÍSICO
 
 ## Próximo movimento
 
-O próximo eixo prioritário é `F-016 — desmaterialização documental repo-wide`. A documentação deve especificar o que uma superfície precisa comunicar, permitir e proteger — conteúdo, estados, regras, fluxos, requisitos e critérios — sem definir composição visual. Wireframes, mockups, protótipos, layout, componentes visuais e materialização final pertencem exclusivamente a Design.
+O próximo eixo prioritário permanece `F-016 — desmaterialização documental repo-wide`.
 
-Isso **não** libera automaticamente J/K/L/M/N, `UXA-102/V5`, Design em execução, Product Engineering ou merge da PR #363.
+A subfrente `F-016-A` provou que os **119 SVGs físicos** possuem cobertura estrutural e textual suficiente para serem considerados **elegíveis para cleanup físico**, sem transformar essa elegibilidade em autorização:
 
 ```text
-G
-→ COMPLETED / UPDATE_APPLIED
+119/119 ASSETS
+→ MAPPED TO TRACEABILITY PROFILE
+→ REFERENCED BY EXPERIENCE ARCHITECTURE TEXT
 
-H
-→ AUDITED / UPDATE_APPLIED
-→ F-006 OPEN
+32/32 PHYSICAL PROFILES
+→ CURRENT TEXTUAL RECEIVER PRESENT
 
-I
-→ AUDITED / UPDATE_APPLIED
-→ F-006 OPEN
-→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+NON-DOCUMENT / RUNTIME DEPENDENCIES
+→ 0
 
-J / K / L / M / N
-→ NOT RELEASED AUTOMATICALLY
-
-O
-→ PENDING / HOLD
-
-Q
-→ BLOCKED
-
-UXA-102/V5
-→ NOT_STARTED
-
-PRODUCT ENGINEERING
-→ PAUSED BEFORE W0-01
-
-DESIGN / MATERIALIZATION
-→ NOT AUTHORIZED
+F-016-A
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
 ```
+
+A documentação continua responsável por conteúdo, estados, regras, comportamento, permissões, fluxos, relações, requisitos, restrições, critérios de aceite e handoff. Wireframes, mockups, protótipos, layout, composição e materialização final pertencem exclusivamente a Design.
+
+Isso **não** libera J/K/L/M/N, `UXA-102/V5`, Design em execução, Product Engineering ou merge da PR #363. A remoção física dos 119 SVGs exige autorização humana separada e transação atômica com reconciliação das referências afetadas.
 
 ## Navegação
 

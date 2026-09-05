@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.8.0
+version: 3.9.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-05
 depends_on:
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.8.0
+→ 3.9.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -185,17 +185,19 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.7.0** |
+| Registro do Estado Atual | **3.9.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
 | Auditoria integral | **IN_PROGRESS** |
 | Lotes concluídos | **A / B / C / D / E / F** |
 | Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey remains draft** |
-| Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 OPEN** |
-| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |
+| Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
+| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
 | F-010 — cleanup transversal | **RESOLVED — CLEANUP / VALIDATION / INDEPENDENT REVIEW COMPLETE** |
-| Próximo gate | **AUTORIZAÇÃO HUMANA F-006 → REMOÇÃO/RECONCILIAÇÃO → RECOMPUTAÇÃO → VALIDAÇÕES/REVIEW → DECISÃO DE FECHAMENTO** |
+| F-016 | **OPEN — REPO-WIDE DOCUMENTATION DEMATERIALIZATION** |
+| F-016-A — 119 SVGs físicos | **CLEANUP_ELIGIBILITY_PROVEN / PHYSICAL_CLEANUP_NOT_AUTHORIZED** |
+| Próximo gate físico | **AUTORIZAÇÃO HUMANA SEPARADA PARA F-016-A; se concedida, cleanup + reconciliação atômica + recomputação + validações/review** |
 | J/K/L/M/N | **NOT RELEASED AUTOMATICALLY** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
@@ -204,4 +206,4 @@ Ainda não são canônicos:
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 
-A auditoria integral pode consolidar ou remover do corpus atual documentos desta família quando o conhecimento vigente tiver sido absorvido e as referências forem reconciliadas. Isso não muda, por si só, os estados funcionais que continuarem sustentados por autoridade vigente.
+A auditoria integral pode consolidar ou remover do corpus atual documentos desta família quando o conhecimento vigente tiver sido absorvido e as referências forem reconciliadas. Isso não muda, por si só, os estados funcionais sustentados por autoridades textuais vigentes.

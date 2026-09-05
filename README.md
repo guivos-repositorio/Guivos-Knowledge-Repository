@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.8.0** |
+| GKR-STATE-001 | **3.9.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -30,7 +30,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.8.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
+O [Roadmap 13.9.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
 
 ## Regra de leitura
 
@@ -342,20 +342,49 @@ Não estão comprovados ou autorizados apenas pela documentação:
 
 ## Próximo gate da auditoria
 
-O Bloco 2 G/H/I foi auditado no limite documental atual. O próximo gate é obter **autorização humana separada e explícita para o cleanup físico de F-006**. Se autorizada, a remoção/reconciliação, recomputação, validações e review precedem qualquer decisão de fechamento de F-006 e de G/H/I.
+`F-006` está formalmente `RESOLVED`. O eixo corrente é `F-016 — desmaterialização documental repo-wide`.
+
+A subfrente física `F-016-A` concluiu inventário, prova de dependência e prova semântica de receivers sobre o head `549fe10bb7d21eb38961fa9b611e68c53b43f1db`:
+
+```text
+119/119 SVGs físicos
+→ perfil de rastreabilidade presente
+→ referência textual em Experience Architecture presente
+
+32/32 perfis físicos
+→ pelo menos um receiver textual corrente fora da família de galeria
+
+DEPENDÊNCIA RUNTIME/CÓDIGO
+→ 0
+
+UXA-015..018 REMOVIDOS
+→ 0 aceitos como receiver
+```
+
+Consequência governada:
+
+```text
+F-016-A
+→ STRUCTURAL INVENTORY COMPLETE
+→ PHYSICAL SVG DEPENDENCY PROOF PASSED
+→ SEMANTIC RECEIVER COVERAGE PASSED
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
+```
+
+Qualquer remoção dos 119 SVGs exige **autorização humana separada e explícita** e, se concedida, deverá reconciliar todas as referências físicas afetadas na mesma transação antes das validações pós-delete.
 
 ```text
 G
 → COMPLETED / UPDATE_APPLIED
 
-H
+H / I
 → AUDITED / UPDATE_APPLIED
-→ F-006 OPEN
-
-I
-→ AUDITED / UPDATE_APPLIED
-→ F-006 OPEN
+→ F-006 RESOLVED
 → F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+F-016
+→ OPEN
 
 J / K / L / M / N
 → NOT RELEASED AUTOMATICALLY

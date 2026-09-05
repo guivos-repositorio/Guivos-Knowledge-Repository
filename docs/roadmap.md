@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.8.0
+id: ROADMAP-13.9.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.8.0
+version: 13.9.0
 owner: Guivos
 last_updated: 2026-09-05
 normative: true
@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.7.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.9.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -53,9 +53,11 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A, B, C, D, E e F estão reconciliados no estado vigente. O Bloco 2 G/H/I já foi auditado/remediado no limite documental atual: G está `COMPLETED / UPDATE_APPLIED`; H e I estão `AUDITED / UPDATE_APPLIED` com `F-006 OPEN`; F-007 está resolvido no limite semântico/inventário. Em F-006, a absorção material foi aplicada, as dependências funcionais residuais foram reconciliadas e a elegibilidade documental de cleanup foi comprovada; a remoção física continua não autorizada. O próximo gate é a autorização humana separada e explícita para o cleanup físico de F-006; somente após eventual remoção/reconciliação, recomputação, validações e review no novo head poderá ocorrer a decisão de fechamento de F-006 e de G/H/I.
+Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` é o eixo prioritário corrente.
 
-Em trilha independente, `F-010` concluiu a auditoria estrutural, teve cleanup aplicado sobre o conjunto fechado de 17 artefatos, passou pela validação pós-cleanup e pelo review independente após a remediação final de absorção. `F-010 = RESOLVED`. O review Codex permaneceu `UNAVAILABLE / NOT RUN` por limite de uso e nenhuma claim `CLEAN` foi inferida. Esse fechamento **não consome nem substitui a autorização separada exigida por F-006**, não libera J/K/L/M/N e não ativa UXA-102, Design/materialização ou Product Engineering.
+`F-016-A` provou, no head `549fe10...`, que os 119 SVGs físicos possuem cobertura de rastreabilidade, referência textual e receiver funcional corrente, sem dependência runtime/código. A camada física está `CLEANUP_ELIGIBILITY_PROVEN`, mas **PHYSICAL_CLEANUP_NOT_AUTHORIZED**.
+
+`F-010` permanece `RESOLVED`. O review Codex permaneceu indisponível por limite de uso e nenhuma claim `CLEAN` é inferida.
 
 Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Design ou implementação deve ser promovida como consequência automática de trabalho anterior.
 
@@ -64,7 +66,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.7.0** |
+| Estado global | **GKR-STATE-001 v3.9.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -74,30 +76,27 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | PMF | **NOT VALIDATED** |
 | Fundação | **RECONCILED / ENRICHED IN LOT C** |
 | Public Canon | **GOG-001 v5.3.0** |
-| RP-002 conceptual readiness | **PASS** |
-| RP-002 methodological readiness | **PASS** |
-| RP-002 operational readiness | **HOLD** |
-| Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
-| Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
-| Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; JOURNEY REMAINS DRAFT** |
-| Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 OPEN** |
-| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 OPEN / F-007 RESOLVED** |
-| F-010 — cleanup transversal | **RESOLVED — STRUCTURAL AUDIT / CLEANUP / POST-CLEANUP VALIDATION / INDEPENDENT REVIEW COMPLETE** |
+| Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
+| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
+| F-010 | **RESOLVED** |
+| F-016 | **OPEN — REPO-WIDE DOCUMENTATION DEMATERIALIZATION** |
+| F-016-A | **119 SVGs / CLEANUP_ELIGIBILITY_PROVEN / PHYSICAL_CLEANUP_NOT_AUTHORIZED** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |
 | Design das Homes | **OPERATIONAL AUTHORIZATION SUSPENDED DURING AUDIT** |
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 
-Inventário físico comprovado no snapshot auditado do Bloco I:
+Inventário físico corrente comprovado após F-006:
 
-- 121 SVGs físicos;
-- 121 associações físicas;
-- 34 perfis de rastreabilidade;
-- 0 duplicatas exatas observadas/provadas por blob SHA.
+- **119 SVGs físicos**;
+- **119 associações físicas**;
+- **34 perfis de rastreabilidade estáveis** no instrumento associativo;
+- **32 perfis com associação física atual**;
+- 0 dependências runtime/código dos SVGs.
 
-Near-duplicates e contagens agregadas de wireframes vigentes/validados/pendentes permanecem `NOT_CERTIFIED`.
+Contagens agregadas de wireframes vigentes/validados permanecem `NOT_CERTIFIED` e não são inferidas do inventário físico.
 
 ## 3. Princípio de execução do roadmap
 
@@ -510,12 +509,7 @@ Estado do Bloco 2:
 
 ```text
 AUDITED / UPDATE_APPLIED
-F-006
-→ OPEN
-→ ABSORPTION_APPLIED
-→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
+F-006 → RESOLVED
 ```
 
 Estado autenticado preservado:
@@ -540,11 +534,7 @@ MAIN AUTHENTICATED WIREFRAMES
 → NOT DEFINED
 ```
 
-A auditoria atualizou Estado O/C, overlay pós-313, auditoria derivada, Jornadas draft, `gaps` e detalhes obrigatórios do Surface Registry para eliminar a falsa pendência da IA autenticada.
-
-`UXA-015..018` permanecem históricos/superseded como autoridade visual e foram removidos fisicamente do corpus corrente por F-006. A semântica material válida foi absorvida nas autoridades atuais, incluindo os critérios de aceite de participação de `UXA-018` agora explicitamente preservados em `UXA-056`; as dependências funcionais residuais foram reconciliadas e a elegibilidade documental de cleanup está comprovada. Isso não autoriza remoção física nem altera o inventário atual.
-
-Nenhum mapa de superfícies, wireframe, UI, protótipo ou implementação é autorizado por H.
+`UXA-015..018` e os dois SVGs associados foram removidos pelo cleanup governado F-006 após absorção e validação. Isso não define novos wireframes, não inicia Design e não altera a pendência do mapa final de superfícies.
 
 ## 13. Lote I — Registries, catálogos e materializações
 
@@ -552,23 +542,21 @@ Estado do Bloco 2:
 
 ```text
 AUDITED / UPDATE_APPLIED
-F-006
-→ OPEN
-→ ABSORPTION_APPLIED
-→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
+F-006 → RESOLVED
 F-007 → RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+F-016 → OPEN
+F-016-A → CLEANUP_ELIGIBILITY_PROVEN / PHYSICAL_CLEANUP_NOT_AUTHORIZED
 ```
 
-Inventário físico comprovado no snapshot auditado:
+Inventário físico corrente comprovado:
 
-- **121 SVGs físicos**;
-- **121 associações físicas**;
-- **34 perfis de rastreabilidade**;
-- **0 duplicatas exatas observadas/provadas por blob SHA**.
+- **119 SVGs físicos**;
+- **119 associações físicas**;
+- **34 perfis estáveis de rastreabilidade**;
+- **32 perfis com associação física atual**;
+- **0 dependências runtime/código**.
 
-Regra vigente:
+A prova semântica de F-016-A confirmou receivers textuais correntes para 32/32 perfis físicos e referência em Experience Architecture para 119/119 assets.
 
 ```text
 CONTAGEM FÍSICA DE SVGs
@@ -576,16 +564,7 @@ CONTAGEM FÍSICA DE SVGs
 ≠ WIREFRAMES VALIDADOS
 ```
 
-Permanecem `NOT_CERTIFIED`:
-
-- near-duplicates;
-- total agregado de wireframes vigentes;
-- total agregado de wireframes validados vigentes;
-- total agregado de pendências visuais.
-
-As claims históricas `121 validados / 0 pendentes` foram requalificadas como snapshot/proveniência onde ainda apareciam em autoridades ativas auditadas. Nenhuma nova contagem agregada de maturidade foi inferida.
-
-O cleanup de `F-006` foi aplicado 6/6 e validado por Semantic #827, Mechanical #1085 e prova read-only pós-delete. `F-006` está resolvido; `F-016` passa a governar a desmaterialização documental repo-wide.
+A remoção física dos 119 SVGs não é autorizada por esta elegibilidade. Se houver autorização humana separada, as referências físicas deverão ser reconciliadas atomicamente e o inventário recomputado no tree resultante.
 
 ## 14. Lote J — Produtos, planos e economia
 
@@ -981,27 +960,33 @@ DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL DURANTE A AUDITORIA
 
 ## 26. Regra do próximo movimento
 
-Com G/H/I auditados/remediados no limite atual, o próximo movimento é obter **autorização humana separada e explícita para o cleanup físico de F-006**. Se concedida, ela antecede remoção/reconciliação, recomputação, validações e review; a decisão de fechamento de F-006 e de G/H/I permanece posterior a esses gates.
+`F-006` está encerrado. O próximo eixo governado é `F-016`.
+
+A subfrente `F-016-A` atingiu `CLEANUP_ELIGIBILITY_PROVEN` para os 119 SVGs físicos, sem autorização de remoção.
 
 ```text
 G
 → COMPLETED / UPDATE_APPLIED
 
-H
+H / I
 → AUDITED / UPDATE_APPLIED
-→ F-006 OPEN
-
-I
-→ AUDITED / UPDATE_APPLIED
-→ F-006 OPEN
+→ F-006 RESOLVED
 → F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
 
-F-006
+F-016
 → OPEN
-→ ABSORPTION_APPLIED
-→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
+
+F-016-A
+→ STRUCTURAL INVENTORY COMPLETE
+→ DEPENDENCY PROOF PASSED
+→ SEMANTIC RECEIVER COVERAGE PASSED
 → CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
+→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
+
+NEXT PHYSICAL GATE
+→ SEPARATE EXPLICIT HUMAN AUTHORIZATION
+→ IF AUTHORIZED: EXACT 119 SVG DELETIONS + ATOMIC REFERENCE RECONCILIATION
+→ RECOMPUTE → VALIDATE → REVIEW
 
 J / K / L / M / N
 → NOT RELEASED AUTOMATICALLY
@@ -1011,15 +996,6 @@ O
 
 Q
 → BLOCKED
-
-NÃO HÁ UXA-102 AUTOMÁTICA
-NÃO HÁ PRIMEIRA TELA PÓS-HOME AUTOMÁTICA
-NÃO HÁ WIREFRAME AUTENTICADO AUTOMÁTICO
-NÃO HÁ NOVO SOURCE LOCK OPERACIONAL DE DESIGN AUTOMÁTICO
-NÃO HÁ DESIGN AUTOMÁTICO
-NÃO HÁ ENGINEERING AUTOMÁTICA
-NÃO HÁ FILING AUTOMÁTICO
-NÃO HÁ PMF AUTOMÁTICO
 ```
 
-As Homes Principal/Pessoa, Organizações/Coletivos e Mall, Travel, Media, Ads, Business e Intelligence permanecem `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`. A elegibilidade documental de `F-006` não autoriza exclusão; somente após autorização humana separada, cleanup físico governado, recontagem, validações e review no novo head poderá haver decisão formal de fechamento de F-006 e de G/H/I.
+Nenhuma Home, UXA-102, Design, protótipo, Engineering, filing ou PMF é iniciada automaticamente por esse estado.

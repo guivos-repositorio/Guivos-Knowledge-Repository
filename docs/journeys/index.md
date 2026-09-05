@@ -2,9 +2,9 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.41.0
+version: 0.42.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-05
 related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
@@ -91,30 +91,22 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.41.0 | D4 + D5-C4B + reconciliação pós-313/314 + Bloco 2 G/H |
+| visão geral das Jornadas Integradas | `active` 0.42.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A |
 | propagação dos Domínios de Evolução | `active` 1.0.0 | GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001 |
-| D5-A — jornada inicial | `active` 1.1.0 | materialização in-place; snapshot histórico de maturidade qualificado |
-| D5-B — Oportunidades | `active` 1.1.0 | materialização in-place; snapshot histórico de maturidade qualificado |
+| D5-A — jornada inicial | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
+| D5-B — Oportunidades | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
 | D5-C1 — contrato direção/movimento/evolução | `active` 1.0.0 | três responsabilidades + seis handoffs contratados |
-| D5-C2 — low-fidelity direção/movimento/evolução | `active` 1.1.0 | 3 SVGs materializados; snapshot histórico qualificado |
-| D5-C3 — validação local | `active` 1.1.0 | 3 SVGs reformulados/validados; snapshot histórico qualificado |
-| D5-C4A — contrato/materialização dos handoffs | `active` 1.1.0 | Hoje recorrente reformulado/revalidado; snapshot histórico qualificado |
-| D5-C4B — validação integrada dos handoffs | `active` 1.1.0 | TRN-008..013 integralmente validadas; snapshot histórico qualificado |
+| D5-C2/D5-C3/D5-C4A/D5-C4B | `active` | funções e validações textuais preservadas; materialização física sob F-016 |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita preservada |
-| Jornada da Pessoa | `draft` | D4; D5-C1/C2/C3/C4A/C4B; origem de Planos A4; V4 UXA-101 |
-| Jornada do Coletivo | `draft` 0.20.0 | Jobs + IA definidos pre-surface-map; mapa final e wireframe principal pendentes |
-| Jornada da Organização | `draft` 0.13.0 | Jobs + IA definidos pre-surface-map; mapa final e wireframe principal pendentes |
-| atlas de supply/relevância Org/Col | `active` 1.1.0, não normativo | exemplos globais + simulações + gates; validação humana/PMF pendente |
-| catálogo integrado | `active` 0.33.0 | 121 SVGs físicos; TRN-008..013 integrais; claim agregada antiga de validação superseded |
-| registro de superfícies | `active` | 57 IDs documentais; maturidade por objeto deve ser lida individualmente |
-| registro de transições | `active` | 66 transições documentais; `TRN-008..013` integrais |
-| galeria visual integrada | `active` | 121 SVGs físicos para inspeção; não equivalem a 121 wireframes vigentes |
-| galeria da Pessoa | `active` 0.7.0 | 23 SVGs físicos; D5-C4B propagada |
-| galeria Organização/Oportunidades | `active` 0.6.0 | Jobs + IA reconhecidos; gap inicia no surface map |
-| galeria Coletivos | `active` 0.15.0 | Jobs + IA reconhecidos; gap inicia no surface map |
-| galeria de Planos | `active` | 9 SVGs do fluxo especializado de Planos |
-| matriz por SVG | `active` | 121 associações físicas / 34 perfis; não é prova agregada de vigência |
-| registro de lacunas | `active` | wireframes principais autenticados de Organização e Coletivo pendentes; demais gaps preservados |
+| Jornada da Pessoa | `draft` | V4 UXA-101; UXA-102 não iniciada |
+| Jornada do Coletivo | `draft` | Jobs + IA definidos pre-surface-map; mapa final e wireframe principal pendentes |
+| Jornada da Organização | `draft` | Jobs + IA definidos pre-surface-map; mapa final e wireframe principal pendentes |
+| catálogo integrado | `active` 0.33.0 | **119 SVGs físicos pós-F-006**; maturidade agregada não inferida |
+| registro de superfícies | `active` | 57 IDs documentais |
+| registro de transições | `active` | 66 transições documentais |
+| galeria visual integrada | `active` | **119 SVGs físicos** como inventário documental; F-016 aberto |
+| matriz por SVG | `active` | **119 associações / 34 perfis estáveis / 32 perfis físicos** |
+| F-016-A | `cleanup_eligible` | 119/119 assets com perfil e referência textual; 32/32 perfis com receiver; physical cleanup not authorized |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 

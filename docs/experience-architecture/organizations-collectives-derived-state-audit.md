@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-DERIVED-AUDIT-001
 title: Organizações e Coletivos — Auditoria de Derivados Pós-313
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-05
 normative: false
 related:
   - GKR-ORGCOL-POST313-RECON-001
@@ -35,17 +35,10 @@ A versão 1.1.0 também reconcilia o registro com as autoridades posteriores já
 
 ## 2. Resultado executivo
 
-A deriva original foi:
-
-> documentos anteriores utilizaram `UXA-015..018` como evidência de que as superfícies principais de Organização e Coletivo já estavam materializadas e validadas.
-
-Após a PR #313, isso deixou de ser verdadeiro.
-
-A normalização subsequente corrigiu a maior parte dos derivados centrais. O estado atual é:
-
 ```text
 UXA-015..018
-→ HISTÓRICOS SUPERSEDED
+→ REMOVIDOS DO CORPUS CORRENTE POR F-006
+→ PROVENIÊNCIA PRESERVADA NO HISTÓRICO GIT
 
 JOBS AUTENTICADOS O/C
 → DEFINIDOS
@@ -57,10 +50,10 @@ MAPA FINAL DE SUPERFÍCIES
 → PENDENTE
 
 WIREFRAMES PRINCIPAIS AUTENTICADOS
-→ PENDENTES
+→ PENDENTES / AUTORIDADE DE DESIGN
 
-121 SVGs
-→ INVENTÁRIO FÍSICO
+119 SVGs
+→ INVENTÁRIO FÍSICO CORRENTE PÓS-F-006
 → NÃO É CONTAGEM DE MATURIDADE
 ```
 
@@ -69,9 +62,9 @@ WIREFRAMES PRINCIPAIS AUTENTICADOS
 | Derivado | Snapshot anterior | Estado correto atual | Situação da normalização |
 |---|---|---|---|
 | `GKR-STATE-001` | `121 SVGs — 121 validados / 0 pendentes` | inventário físico ≠ maturidade; Jobs + IA O/C reconhecidos | normalizado |
-| `GKR-JOURNEY-SCREEN-CATALOG-001` | total canônico `121 / 121 validados` | 121 = total físico; maturidade por item; claim antiga superseded | normalizado |
-| `GKR-JOURNEY-SCREEN-GALLERY-001` | leitura agregada de validação | 121 SVGs físicos para inspeção; não 121 wireframes vigentes | normalizado |
-| `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` | associação visual podia ser lida como vigência | 121 associações / 34 perfis; associação ≠ autoridade visual | normalizado |
+| `GKR-JOURNEY-SCREEN-CATALOG-001` | total canônico `121 / 121 validados` | **119 físicos pós-F-006**; maturidade por item; claim antiga superseded | normalizado |
+| `GKR-JOURNEY-SCREEN-GALLERY-001` | leitura agregada de validação | **119 SVGs físicos pós-F-006**; inventário ≠ autoridade visual | normalizado |
+| `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` | associação visual podia ser lida como vigência | **119 associações / 34 perfis estáveis**; associação ≠ autoridade visual | normalizado |
 | `GKR-JOURNEY-SURFACE-REGISTRY-001` — `ORG-001` | Visão Geral validada por `UXA-015/017` | responsabilidade conhecida; materialização histórica superseded; wireframe atual pendente | normalizado no limite de maturidade |
 | registro do Coletivo | `UXA-016/018` como evidência da UX principal | não utilizar esses IDs para afirmar wireframe principal vigente | normalizado no limite de maturidade |
 | Jornada da Organização | Visão Geral = validada | Jobs + IA atuais existem; mapa/wireframe principal pendentes | estado visual corrigido; propagação explícita da IA ainda auditada no Bloco H |
@@ -272,17 +265,17 @@ Consequência:
 
 ## 11. Gate para normalização e cleanup
 
-Ao atualizar qualquer derivado, a alteração deve:
+Após o fechamento de F-006, qualquer derivado deve:
 
-1. manter IDs estáveis quando a responsabilidade continua válida;
-2. preservar evidências independentes;
-3. remover `UXA-015..018` como fonte de maturidade vigente;
-4. reconhecer Jobs + IA atuais quando o documento trate da experiência autenticada;
-5. não executar cleanup físico sem autorização humana separada; se autorizado, remover e reconciliar o conjunto físico antes de decidir o fechamento de `F-006`;
-6. separar contagem física de contagem de maturidade;
-7. não promover wireframe pendente por inferência;
-8. manter as Jornadas da Organização e do Coletivo em `draft`;
-9. submeter o head exato aos gates semântico e mecânico do GKR.
+1. tratar `UXA-015..018` somente como proveniência histórica quando necessário;
+2. reconhecer Jobs + IA atuais para a experiência autenticada;
+3. separar inventário físico de maturidade visual;
+4. não promover wireframe por inferência;
+5. manter as Jornadas da Organização e do Coletivo em `draft`;
+6. aplicar a fronteira `DOCUMENTAÇÃO ≠ DESIGN` aberta por F-016;
+7. submeter qualquer cleanup físico posterior a autorização humana separada e validações no head exato.
+
+Para `F-016-A`, os 119 SVGs físicos estão `CLEANUP_ELIGIBILITY_PROVEN`, mas `PHYSICAL_CLEANUP_NOT_AUTHORIZED`.
 
 ## 12. Autoridade de interpretação
 
@@ -306,17 +299,22 @@ MAPA FINAL DE SUPERFÍCIES
 → PENDENTE
 
 WIREFRAMES PRINCIPAIS
-→ PENDENTES
+→ PENDENTES / DESIGN AUTHORITY
 
 F-006
-→ OPEN
-→ ABSORPTION_APPLIED
-→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
+→ RESOLVED
+→ CLEANUP 6/6 APPLIED AND VALIDATED
 
 F-007
 → RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO DO BLOCO I
+
+F-016
+→ OPEN
+
+F-016-A
+→ 119 SVGs
+→ CLEANUP_ELIGIBILITY_PROVEN
+→ PHYSICAL_CLEANUP_NOT_AUTHORIZED
 ```
 
-A existência de qualquer dívida documental residual não autoriza retornar aos SVGs superseded como baseline.
+A existência de qualquer dívida documental residual não autoriza retornar a SVGs superseded como baseline nem transforma o inventário físico em autoridade de Design.
