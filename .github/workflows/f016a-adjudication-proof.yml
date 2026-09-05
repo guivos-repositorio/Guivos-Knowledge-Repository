@@ -1,0 +1,137 @@
+name: F-016-A Final Adjudication Read-Only Proof
+
+on:
+  push:
+    branches:
+      - agent/gkr-f016a-adjudication-proof-v1
+
+permissions:
+  contents: read
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 12d95503ae0c386286fa663438e5cedcae9a4d8d
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Prove current-authority synchronization and F-016-A eligibility state
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess
+
+          target='12d95503ae0c386286fa663438e5cedcae9a4d8d'
+          actual=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          if actual != target:
+              raise SystemExit(f'WRONG_HEAD={actual}')
+
+          def read(path): return Path(path).read_text(encoding='utf-8')
+          def section(path, heading):
+              text=read(path)
+              marker='## '+heading
+              start=text.find(marker)
+              if start < 0: raise SystemExit(f'MISSING_SECTION={path}::{heading}')
+              end=text.find('\n## ',start+len(marker))
+              if end < 0: end=len(text)
+              return text[start:end]
+
+          # Version propagation.
+          expected={
+            'README.md':['**3.9.0**','Roadmap 13.9.0'],
+            'docs/index.md':['**3.9.0**','Roadmap 13.9.0'],
+            'docs/experience-architecture/uxa-047-101-index.md':['version: 3.9.0','**3.9.0**'],
+            'docs/project/current-state-register.md':['version: 3.9.0'],
+            'docs/project/gkr-full-corpus-audit.md':['version: 1.9.0'],
+            'docs/roadmap.md':['id: ROADMAP-13.9.0','version: 13.9.0'],
+          }
+          for path,tokens in expected.items():
+              text=read(path)
+              for token in tokens:
+                  if token not in text:
+                      raise SystemExit(f'VERSION_PROPAGATION_FAIL={path}::{token}')
+
+          # Current sections only: historical checkpoint text elsewhere may legitimately say F-006 OPEN/121 SVGs.
+          current_sections=[
+            ('README.md','Próximo gate da auditoria'),
+            ('docs/index.md','Próximo movimento'),
+            ('docs/experience-architecture/uxa-047-101-index.md','Estado sincronizado'),
+            ('docs/project/current-state-register.md','2. Estado executivo'),
+            ('docs/project/current-state-register.md','26. Auditoria integral do corpus — estado corrente'),
+            ('docs/project/current-state-register.md','29. Próximo ato governado'),
+            ('docs/project/gkr-full-corpus-audit.md','22. Estado atual'),
+            ('docs/roadmap.md','1. Função'),
+            ('docs/roadmap.md','2. Baseline governada'),
+            ('docs/roadmap.md','12. Lote H — Organização e Coletivo'),
+            ('docs/roadmap.md','13. Lote I — Registries, catálogos e materializações'),
+            ('docs/roadmap.md','26. Regra do próximo movimento'),
+            ('docs/experience-architecture/public-specialized-homes-reconciliation.md','2. Estado global preservado'),
+            ('docs/experience-architecture/public-specialized-homes-reconciliation.md','11. Gate vigente'),
+            ('docs/experience-architecture/organizations-collectives-derived-state-audit.md','2. Resultado executivo'),
+            ('docs/experience-architecture/organizations-collectives-derived-state-audit.md','11. Gate para normalização e cleanup'),
+            ('docs/experience-architecture/organizations-collectives-derived-state-audit.md','13. Estado final desta auditoria derivada'),
+            ('docs/experience-architecture/index.md','3. Cobertura visual e granular'),
+            ('docs/journeys/index.md','4. Estado documental'),
+          ]
+          forbidden=('F-006 OPEN','F-006_OPEN','→ OPEN\n→ ABSORPTION_APPLIED')
+          for path,heading in current_sections:
+              body=section(path,heading)
+              for token in forbidden:
+                  if token in body:
+                      raise SystemExit(f'STALE_CURRENT_F006={path}::{heading}::{token}')
+
+          # Active numeric surfaces must say 119 physical assets, not 121 current.
+          numeric_sections=[
+            ('docs/experience-architecture/index.md','3. Cobertura visual e granular'),
+            ('docs/journeys/index.md','4. Estado documental'),
+            ('docs/project/current-state-register.md','2. Estado executivo'),
+            ('docs/project/gkr-full-corpus-audit.md','22. Estado atual'),
+            ('docs/roadmap.md','2. Baseline governada'),
+            ('docs/roadmap.md','13. Lote I — Registries, catálogos e materializações'),
+          ]
+          for path,heading in numeric_sections:
+              body=section(path,heading)
+              if '119' not in body:
+                  raise SystemExit(f'MISSING_CURRENT_119={path}::{heading}')
+              if '121 SVGs físicos' in body or '**121**' in body:
+                  raise SystemExit(f'STALE_CURRENT_121={path}::{heading}')
+
+          # F-016-A state must be explicit in current authorities.
+          for path in ['README.md','docs/index.md','docs/project/current-state-register.md','docs/project/gkr-full-corpus-audit.md','docs/roadmap.md']:
+              text=read(path)
+              if 'F-016-A' not in text or 'CLEANUP_ELIGIBILITY_PROVEN' not in text or 'PHYSICAL_CLEANUP_NOT_AUTHORIZED' not in text:
+                  raise SystemExit(f'F016A_STATE_INCOMPLETE={path}')
+
+          assets=list(Path('docs/assets/wireframes').glob('*.svg'))
+          if len(assets) != 119:
+              raise SystemExit(f'PHYSICAL_SVG_COUNT={len(assets)}, expected 119')
+
+          print(f'EXACT_HEAD={actual}')
+          print('VERSION_PROPAGATION=PASS')
+          print(f'CURRENT_SECTION_CHECKS={len(current_sections)}')
+          print('STALE_CURRENT_F006_CLAIMS=0')
+          print(f'CURRENT_NUMERIC_SECTION_CHECKS={len(numeric_sections)}')
+          print('CURRENT_PHYSICAL_SVG_COUNT=119')
+          print('F016A_CLEANUP_ELIGIBILITY_STATE=PASS')
+          print('F016A_PHYSICAL_CLEANUP_AUTHORIZED=FALSE')
+          PY
+
+      - name: Install documentation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Validate semantic state
+        run: python scripts/validate_semantic_state.py
+
+      - name: Build MkDocs strict
+        run: mkdocs build --strict --site-dir /tmp/gkr-site
