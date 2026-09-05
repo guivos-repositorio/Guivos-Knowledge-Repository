@@ -25,6 +25,9 @@ normative: false
 
 # Wireframes de Baixa Fidelidade do Cartão Patrocinado e da Explicação do Opportunity Boost
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa as referências de baixa fidelidade do cartão patrocinado e da explicação `Por que estou vendo isto?` para o Opportunity Boost.
@@ -71,9 +74,7 @@ Todos os artefatos utilizam baixa fidelidade e conteúdo ilustrativo.
 
 ### 4.1 Cartão patrocinado móvel
 
-![Cartão patrocinado móvel](../assets/wireframes/uxa-042-sponsored-card-mobile.svg)
 
-`docs/assets/wireframes/uxa-042-sponsored-card-mobile.svg`
 
 Demonstra:
 
@@ -89,9 +90,7 @@ Demonstra:
 
 ### 4.2 Explicação patrocinada móvel
 
-![Explicação patrocinada móvel](../assets/wireframes/uxa-042-sponsored-explanation-mobile.svg)
 
-`docs/assets/wireframes/uxa-042-sponsored-explanation-mobile.svg`
 
 Demonstra:
 
@@ -109,9 +108,7 @@ Demonstra:
 
 ### 4.3 Cartão patrocinado para computador
 
-![Cartão patrocinado para computador](../assets/wireframes/uxa-042-sponsored-card-desktop.svg)
 
-`docs/assets/wireframes/uxa-042-sponsored-card-desktop.svg`
 
 Demonstra:
 
@@ -126,9 +123,7 @@ Demonstra:
 
 ### 4.4 Explicação patrocinada para computador
 
-![Explicação patrocinada para computador](../assets/wireframes/uxa-042-sponsored-explanation-desktop.svg)
 
-`docs/assets/wireframes/uxa-042-sponsored-explanation-desktop.svg`
 
 Demonstra:
 
@@ -144,9 +139,7 @@ Demonstra:
 
 ### 4.5 Cartão móvel do Boost Social Financiado
 
-![Cartão móvel do Boost Social Financiado](../assets/wireframes/uxa-042-social-financed-card-mobile.svg)
 
-`docs/assets/wireframes/uxa-042-social-financed-card-mobile.svg`
 
 Demonstra:
 
@@ -162,9 +155,7 @@ Demonstra:
 
 ### 4.6 Explicação móvel do Boost Social Financiado
 
-![Explicação móvel do Boost Social Financiado](../assets/wireframes/uxa-042-social-financed-explanation-mobile.svg)
 
-`docs/assets/wireframes/uxa-042-social-financed-explanation-mobile.svg`
 
 Demonstra:
 

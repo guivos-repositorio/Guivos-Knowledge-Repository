@@ -2,9 +2,9 @@
 id: UXA-058
 title: Contrato Funcional de Interações, Recomendações e Conexões
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-03
+last_updated: 2026-08-30
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -14,13 +14,14 @@ depends_on:
   - UXA-011
   - UXA-011-A1
   - UXA-014
-  - UXA-016
-  - UXA-018
   - UXA-019
   - UXA-056
   - UXA-057
 related:
   - UXA-005
+  - UXA-095
+  - UXA-096
+  - GKR-UX-ORGCOL-UX-STATE-001
   - M7.60
 normative: false
 ---
@@ -95,7 +96,7 @@ Superfície pessoal consolidada com atualizações de todos os Coletivos, Organi
 
 ### 4.2 Início do participante
 
-Superfície interna de um Coletivo, subordinada ao propósito e ao momento coletivo definidos pelas UXA-016 e UXA-018.
+Superfície interna de um Coletivo cuja semântica funcional vigente de participação e continuidade é regida por `UXA-056` e por este contrato, com materialização e validação posteriores no recorte da Pessoa participante registradas em `UXA-095/096`. `UXA-016` e `UXA-018` permanecem somente como proveniência histórica `superseded` e não são autoridades funcionais vigentes desta superfície.
 
 ### 4.3 Áreas especializadas do Coletivo
 

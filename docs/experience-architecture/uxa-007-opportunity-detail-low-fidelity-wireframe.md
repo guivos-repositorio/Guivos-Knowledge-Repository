@@ -21,6 +21,9 @@ normative: false
 
 # Wireframe de Baixa Fidelidade do Detalhe de Oportunidade (identificador UXA-007)
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 O identificador técnico `UXA-007` serve somente para rastreabilidade. O nome de leitura desta superfície é **Detalhe de Oportunidade**.
 
 Esta versão incorpora a **Presença Companheira e Coerência de Posicionamento da Guivos** e a **Validação Funcional e Reformulação do Detalhe de Oportunidade**.
@@ -33,9 +36,7 @@ A superfície deverá apresentar a oportunidade como meio para um possível Pró
 
 ## 2. Wireframe reformulado
 
-![Wireframe móvel reformulado do Detalhe de Oportunidade](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
 
-[Visualizar o arquivo gráfico vetorial escalável](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
 
 O wireframe permanece monocromático e estrutural. Ele não define identidade visual, componentes técnicos ou comportamento implementado.
 

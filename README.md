@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.4.0** |
+| GKR-STATE-001 | **3.11.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -19,7 +19,10 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | PMF | **NOT VALIDATED** |
 | Auditoria integral do corpus | **IN_PROGRESS** |
 | Lotes concluídos | **A / B / C / D / E / F** |
-| Próximo bloco da auditoria | **G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL** |
+| Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 RESOLVED** |
+| Próximo gate da auditoria | **F-016 — DESMATERIALIZAÇÃO DOCUMENTAL REPO-WIDE** |
+| F-007 | **RESOLVED — semantic/inventory scope** |
+| F-010 | **RESOLVED — cleanup e validação pós-cleanup concluídos** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
@@ -27,7 +30,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.4.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
+O [Roadmap 13.11.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
 
 ## Regra de leitura
 
@@ -163,7 +166,7 @@ A experiência autenticada já possui:
 - fundação funcional;
 - contrato das relações Organização ↔ Coletivo;
 - atores, autoridades e jobs prioritários;
-- Arquitetura da Informação.
+- Arquitetura da Informação autenticada em estado **pre-surface-map**.
 
 Ainda não possui como baseline final:
 
@@ -299,6 +302,30 @@ A reconciliação das seis Homes especializadas é governada por [GKR-UX-SPECIAL
 
 Documento de Home existente não significa automaticamente Home implementada, publicada ou operacional.
 
+## Inventário visual auditado
+
+Após `F-016-A`, a camada física de wireframes foi removida do corpus vigente:
+
+- **0 SVGs físicos** em `docs/assets/wireframes/`;
+- **0 associações físicas correntes**;
+- **34 perfis de rastreabilidade preservados como proveniência/semântica**, sem autoridade visual;
+- **0 embeds ou links vivos** para os assets removidos na prova pós-delete.
+
+```text
+SVG FÍSICO
+≠ AUTORIDADE VISUAL
+≠ MATURIDADE DE DESIGN
+
+AUTORIDADE VISUAL
+→ DESIGN
+```
+
+`F-006` e `F-010` permanecem `RESOLVED`. O review Codex de F-010 permaneceu indisponível por limite de uso, sem claim `CLEAN`.
+
+`F-016-A` está `RESOLVED` após elegibilidade estrutural/semântica, autorização humana separada, cleanup 119/119, reconciliação das referências, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2.
+
+`F-016` global permanece `OPEN`: as famílias Markdown de materialização ainda exigem classificação individual e eventual reescrita/absorção.
+
 ## Tecnologia e operação
 
 Não estão comprovados ou autorizados apenas pela documentação:
@@ -316,10 +343,54 @@ Não estão comprovados ou autorizados apenas pela documentação:
 - mercado ativo em Portugal;
 - filing das assinaturas sem Human Filing Authorization.
 
+## Próximo gate da auditoria
+
+`F-016-A` está formalmente `RESOLVED`. A camada física SVG não é mais uma dependência do corpus vigente.
+
+```text
+F-016-A
+→ PRE-CLEANUP STRUCTURAL ELIGIBILITY PROVEN
+→ PRE-CLEANUP SEMANTIC RECEIVER COVERAGE PROVEN
+→ HUMAN PHYSICAL CLEANUP AUTHORIZATION GRANTED
+→ PHYSICAL CLEANUP APPLIED 119/119
+→ PHYSICAL SVG COUNT = 0
+→ LIVE EMBEDS / LINKS RECONCILED
+→ HISTORICAL PROVENANCE PRESERVED
+→ SEMANTIC #832 SUCCESS
+→ MECHANICAL #1090 SUCCESS
+→ INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS
+→ RESOLVED
+```
+
+O eixo corrente continua sendo `F-016 — desmaterialização documental repo-wide`, agora restrito às famílias documentais remanescentes. Nenhum Markdown é removido por inferência: cada artefato deverá ser classificado como `KEEP_FUNCTIONAL`, `REWRITE_FUNCTIONAL`, `REMOVE_AFTER_ABSORPTION`, `REMOVE` ou `HISTORICAL_PROVENANCE_ONLY`.
+
+```text
+J / K / L / M / N
+→ NOT RELEASED AUTOMATICALLY
+
+O
+→ PENDING / HOLD
+
+Q
+→ BLOCKED
+
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
+
+DESIGN / MATERIALIZATION
+→ NOT AUTHORIZED
+
+MERGE #363
+→ NOT AUTHORIZED
+```
+
 ## Navegação principal durante a auditoria
 
-- [Estado Atual 3.4.0](docs/project/current-state-register.md)
-- [Roadmap 13.4.0](docs/roadmap.md)
+- [Estado Atual 3.11.0](docs/project/current-state-register.md)
+- [Roadmap 13.11.0](docs/roadmap.md)
 - [Auditoria Integral do GKR](docs/project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](docs/project/gkr-specialized-homes-audit.md)
 - [Reconciliação das Homes Especializadas](docs/experience-architecture/public-specialized-homes-reconciliation.md)

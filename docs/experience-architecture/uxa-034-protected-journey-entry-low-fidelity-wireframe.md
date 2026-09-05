@@ -30,6 +30,9 @@ normative: false
 
 # Wireframe de Baixa Fidelidade do Início Protegido da Jornada
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa a referência gráfica móvel do início protegido da jornada pessoal da Guivos, conforme o contrato funcional da UXA-023 e a validação especializada da UXA-035.
@@ -71,27 +74,19 @@ Dados técnicos e de acesso, quando necessários, possuem finalidade separada do
 
 ### 3.1 Estado de explicação
 
-![Explicação do ambiente protegido](../assets/wireframes/uxa-034-protected-entry-explanation-mobile.svg)
 
-`docs/assets/wireframes/uxa-034-protected-entry-explanation-mobile.svg`
 
 ### 3.2 Estado de acesso, quando necessário
 
-![Acesso protegido quando necessário](../assets/wireframes/uxa-034-protected-entry-access-mobile.svg)
 
-`docs/assets/wireframes/uxa-034-protected-entry-access-mobile.svg`
 
 ### 3.3 Estado de escolha e rascunho
 
-![Escolha de modalidade e rascunho mínimo](../assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg)
 
-`docs/assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg`
 
 ### 3.4 Estado de revisão antes do processamento
 
-![Revisão e autorização específica](../assets/wireframes/uxa-034-protected-entry-review-mobile.svg)
 
-`docs/assets/wireframes/uxa-034-protected-entry-review-mobile.svg`
 
 Dimensão de referência:
 

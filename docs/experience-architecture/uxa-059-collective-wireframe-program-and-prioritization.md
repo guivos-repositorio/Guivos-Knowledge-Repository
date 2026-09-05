@@ -2,9 +2,9 @@
 id: UXA-059
 title: Programa e Priorização dos Wireframes de Coletivos
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-03
+last_updated: 2026-08-30
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -14,14 +14,15 @@ depends_on:
   - UXA-011
   - UXA-011-A1
   - UXA-014
-  - UXA-016
-  - UXA-018
   - UXA-019
   - UXA-056
   - UXA-057
   - UXA-058
 related:
   - UXA-060
+  - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - M7.61
 normative: false
 ---
@@ -44,6 +45,33 @@ O programa define:
 - como preservar cobertura contratual sem transformar cada estado em uma tela independente.
 
 A UXA-059 não cria SVG, protótipo, design visual, componente técnico ou implementação.
+
+### 1.1 Estado temporal e precedência vigente
+
+Este programa permanece ativo como **autoridade metodológica e proveniência da frente histórica de wireframes de Coletivos**, preservando os 88 estados contratados e os critérios de decomposição, cobertura e validação que continuam úteis.
+
+Sua antiga sequência de materialização **não constitui autorização vigente**. O estado atual da experiência principal autenticada de Organização/Coletivo é governado pelas autoridades posteriores:
+
+```text
+ATORES / AUTORIDADES / JOBS
+→ DEFINED
+
+AUTHENTICATED INFORMATION ARCHITECTURE
+→ DEFINED PRE-SURFACE-MAP
+
+FINAL SURFACE MAP
+→ NOT DEFINED
+
+MAIN AUTHENTICATED WIREFRAMES
+→ NOT DEFINED
+
+DESIGN / MATERIALIZATION
+→ NOT AUTHORIZED
+```
+
+Assim, toda formulação prospectiva deste documento sobre “materializar”, “próximo incremento” ou “próxima onda” deve ser lida como **método histórico reutilizável apenas se uma futura etapa for novamente autorizada**, e não como autorização operacional atual.
+
+`UXA-016` e `UXA-018` são registros históricos `superseded`; não são dependências nem autoridades funcionais vigentes deste programa.
 
 ## 2. Pergunta do programa
 
@@ -488,22 +516,25 @@ Visão Geral
 
 A visibilidade de cada área dependerá do papel e da autoridade.
 
-## 17. Relação com o Início do Coletivo existente
+## 17. Relação com o Início do Coletivo histórico
 
-As UXA-016 e UXA-018 permanecem referências históricas e funcionais do ambiente interno do participante.
+`UXA-016` e `UXA-018` permanecem **exclusivamente como proveniência histórica `superseded`**. Elas não são referências funcionais vigentes do ambiente interno da Pessoa participante nem da UX principal autenticada administrativa do Coletivo.
 
-A nova materialização deverá:
+Os princípios funcionais úteis recuperados desses registros foram absorvidos pelas autoridades vigentes, enquanto a materialização posterior do **Início do Participante** possui maturidade própria em `UXA-095/096` no recorte da Pessoa participante.
 
+Se uma futura materialização da UX principal do Coletivo for autorizada, ela deverá:
+
+- partir de `GKR-UX-ORGCOL-AUTH-JOBS-001` e `GKR-UX-ORGCOL-AUTH-IA-001`;
 - preservar propósito antes de atividade;
 - manter pertencimento, disponibilidade, papel e autoridade separados;
-- incorporar a Central de Atualizações e os canais especializados sem virar feed;
-- distinguir perfil público, ambiente interno e gestão;
+- incorporar os canais especializados sem virar feed;
+- distinguir perfil público, ambiente interno da Pessoa participante e gestão administrativa do Coletivo;
 - refletir estados de participação da UXA-056;
 - reservar reputação conforme UXA-057;
 - incorporar comunicação e proteção conforme UXA-058;
-- revisar o SVG existente em incremento próprio.
+- não reutilizar o SVG histórico como baseline ou wireframe vigente.
 
-O SVG atual não será apagado ou declarado inválido antes da integração de uma substituição validada.
+Os SVGs históricos associados permanecem preservados enquanto não houver autorização humana separada e explícita para seu cleanup e não constituem autoridade de design, especificação ou autorização de materialização. `F-006` permanece aberto durante eventual remoção e os gates pós-cleanup.
 
 ## 18. Relação com Organizações
 
@@ -673,9 +704,9 @@ Uma superfície terá prioridade maior quando combinar:
 
 Receita, publicidade, popularidade ou facilidade técnica não determinarão a prioridade arquitetural.
 
-## 28. Ordem recomendada dos próximos incrementos
+## 28. Ordem histórica recomendada dos incrementos
 
-Após integração e autorizações separadas, a ordem recomendada será:
+Na integração original da UXA-059, a ordem recomendada era:
 
 1. **UXA-060 — Wireframes Móveis de Explorar Coletivos e Resultados de Busca**;
 2. validação funcional da UXA-060;
@@ -690,20 +721,41 @@ Após integração e autorizações separadas, a ordem recomendada será:
 11. reputação, recomendações, contato e proteção da P2;
 12. validação transversal do percurso completo.
 
-Somente o primeiro incremento recebe identificador antecipado. Os demais serão nomeados e numerados quando autorizados, evitando reservar uma sequência rígida antes da aprendizagem.
+Essa sequência registra **proveniência histórica**. Partes dela foram posteriormente materializadas e validadas por autoridades próprias, inclusive `UXA-095/096`; ela não reserva hoje uma sequência rígida nem autoriza nova materialização.
 
-## 29. Situação após integração
+A retomada futura da UX principal autenticada deve obedecer ao estado vigente `Jobs + IA autenticada definida pre-surface-map`, ao fechamento da auditoria aplicável e a nova autorização humana específica.
 
-Após integração da UXA-059:
+## 29. Situação histórica após a integração e estado atual
 
-- os 88 estados permanecerão contratados;
-- nove referências formarão a espinha dorsal prioritária;
-- nenhum novo wireframe estará materializado;
-- UXA-016 e UXA-018 permanecerão vigentes até reformulação própria;
-- o programa geral UXA-005 reconhecerá a nova frente;
-- a cobertura do Opportunity Boost permanecerá em 46 wireframes;
-- protótipo, teste e Engenharia de Produto permanecerão não iniciados;
-- o próximo pacote recomendado será a UXA-060.
+Na integração original da UXA-059:
+
+- os 88 estados permaneceram contratados;
+- nove referências formavam a espinha dorsal prioritária do programa histórico;
+- nenhum novo wireframe foi materializado naquele incremento;
+- `UXA-016` e `UXA-018` eram então referências existentes, mas hoje estão `superseded` e preservadas apenas como histórico;
+- o programa geral UXA-005 reconheceu a nova frente;
+- a cobertura então registrada do Opportunity Boost permaneceu em 46 wireframes;
+- protótipo, teste e Engenharia de Produto permaneceram não iniciados;
+- UXA-060 foi registrada como próximo pacote recomendado naquele momento.
+
+Estado vigente deste documento:
+
+```text
+88 ESTADOS CONTRATADOS
+→ PRESERVED
+
+UXA-016 / UXA-018
+→ SUPERSEDED / HISTORICAL ONLY
+
+JOBS + AUTHENTICATED IA
+→ DEFINED PRE-SURFACE-MAP
+
+NEW MATERIALIZATION
+→ NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ PAUSED
+```
 
 ## 30. Critérios de aceite
 
@@ -714,7 +766,7 @@ A UXA-059 poderá avançar quando:
 3. nove superfícies principais formarem uma continuidade compreensível;
 4. pessoa e responsável possuírem experiências separadas;
 5. móvel e computador forem escolhidos por responsabilidade;
-6. o Início existente for preservado até substituição validada;
+6. qualquer referência histórica `superseded` permanecer apenas como proveniência e não como baseline vigente;
 7. comunicação não for reduzida a feed ou chat único;
 8. avaliação não anteceder experiência elegível;
 9. contato privado depender de consentimento;
@@ -742,19 +794,33 @@ Este programa não:
 - altera os 46 wireframes do Opportunity Boost;
 - inicia Engenharia de Produto.
 
-## 32. Próximo ato recomendado
+## 32. Recomendação histórica e gate vigente
 
-Após integração e nova autorização separada, o próximo ato recomendado será:
+Na integração original, o próximo ato recomendado era:
 
 > **UXA-060 — Wireframes Móveis de Explorar Coletivos e Resultados de Busca**
 
-Escopo inicial recomendado:
+Seu escopo recomendado naquele momento era:
 
 - Explorar Coletivos;
 - resultados com busca e filtros;
 - busca sem resultados;
 - origem da descoberta e publicidade identificada quando aplicável.
 
-A UXA-060 deverá permanecer em baixa fidelidade, móvel primeiro e sem criar perfil público, participação ou gestão no mesmo incremento.
+Essa recomendação é **histórica**; `UXA-060` e etapas posteriores possuem hoje maturidades próprias e não constituem autorização para retomar a UX principal autenticada.
+
+O gate vigente é:
+
+```text
+CURRENT AUTHORITIES
+→ GKR-UX-ORGCOL-AUTH-JOBS-001
+→ GKR-UX-ORGCOL-AUTH-IA-001
+
+FINAL SURFACE MAP
+→ NOT DEFINED
+
+DESIGN / WIREFRAME / UI / PROTOTYPE
+→ NOT AUTHORIZED
+```
 
 Nenhum ato posterior é iniciado automaticamente.

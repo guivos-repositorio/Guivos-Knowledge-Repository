@@ -8,8 +8,6 @@ last_updated: 2026-08-07
 depends_on:
   - GKR-UXA-047-085-INDEX-001
 related:
-  - UXA-084
-  - UXA-085
   - GKR-STATE-001
 normative: false
 ---

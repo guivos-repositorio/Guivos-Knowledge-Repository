@@ -8,12 +8,10 @@ last_updated: 2026-08-07
 parent: UXA-000
 depends_on:
   - UXA-014
-  - UXA-018
   - UXA-056
   - UXA-058
   - UXA-059
   - UXA-080
-  - UXA-085
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -26,6 +24,9 @@ normative: false
 ---
 
 # Materialização Controlada da Visão Geral do Responsável do Coletivo
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
@@ -59,9 +60,7 @@ Nenhum dado real ou sensível é utilizado.
 
 ## 3. Wireframe
 
-![Wireframe desktop da Visão Geral do Responsável do Coletivo](../assets/wireframes/uxa-086-collective-responsible-overview-desktop.svg)
 
-[Visualizar o arquivo gráfico vetorial escalável](../assets/wireframes/uxa-086-collective-responsible-overview-desktop.svg)
 
 O wireframe é estrutural e monocromático. Não define identidade visual final, componentes técnicos, comportamento implementado ou prontidão de produto.
 

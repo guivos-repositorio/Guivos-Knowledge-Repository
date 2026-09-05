@@ -28,6 +28,9 @@ normative: false
 
 # Validação Funcional da Central de Atualizações e Revalidação de GKR-TRN-110
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A UXA-094 valida funcionalmente a referência móvel vigente de `GKR-SURF-PER-107 — Central de Atualizações` e examina como um único conjunto a continuidade `GKR-TRN-110 — Meus Coletivos → Central de Atualizações`.

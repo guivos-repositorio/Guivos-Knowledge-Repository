@@ -123,7 +123,6 @@ nav:
           - Jornada da Pessoa: journeys/person.md
           - Jornada do Coletivo: journeys/collective.md
           - Jornada da Organização: journeys/organization.md
-          - Galeria Visual de Telas: journeys/screen-gallery.md
           - Catálogo de Telas: journeys/screen-catalog.md
           - Passagens entre Jornadas: journeys/handoffs.md
           - Cenários: journeys/scenarios.md
@@ -178,8 +177,6 @@ nav:
               - Cadastro da Oportunidade — Validação: experience-architecture/uxa-013-organization-opportunity-registration-functional-validation-and-reformulation.md
       - Opportunity Boost:
           - Estado Atual e Inspeção:
-              - Configuração e Exposição: journeys/screen-gallery-opportunity-boost-exposure.md
-              - Operação, Relatórios e Estados Residuais: journeys/screen-gallery-opportunity-boost-operations.md
               - Validação Final dos Estados Residuais: experience-architecture/uxa-099-opportunity-boost-residual-states-functional-validation-and-reformulation.md
           - Contrato Funcional:
               - Experiência Funcional: experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md
@@ -220,7 +217,6 @@ nav:
           - Reformulação dos Registros Granulares: experience-architecture/uxa-078-controlled-granular-registry-reformulation.md
           - Revalidação dos Registros Granulares: experience-architecture/uxa-079-granular-registry-functional-revalidation.md
           - Promoção dos Registros Granulares: experience-architecture/uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md
-          - Galeria Visual e Auditoria de Cobertura: experience-architecture/uxa-081-integrated-screen-gallery-and-coverage-audit.md
 
   - Pesquisa e Validação:
       - Visão Geral: research/index.md

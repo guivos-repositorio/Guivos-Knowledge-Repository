@@ -29,6 +29,9 @@ normative: false
 
 # Materialização Controlada da Central de Atualizações
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A UXA-093 materializa exclusivamente a referência P0A de `GKR-SURF-PER-107 — Central de Atualizações`, preservando a separação entre a central pessoal de triagem e os canais especializados de comunicação do Coletivo.
@@ -67,9 +70,7 @@ Esses estados e superfícies permanecem dívidas P0B/P1/P2 ou dependências post
 
 ## 4. Wireframe principal
 
-![Wireframe móvel da Central de Atualizações](../assets/wireframes/uxa-093-collective-updates-center-mobile.svg)
 
-[Visualizar o arquivo gráfico vetorial escalável](../assets/wireframes/uxa-093-collective-updates-center-mobile.svg)
 
 O wireframe é estrutural e monocromático. Não define identidade visual final, componente técnico, algoritmo implementado, mecanismo real de entrega ou prontidão de produto.
 

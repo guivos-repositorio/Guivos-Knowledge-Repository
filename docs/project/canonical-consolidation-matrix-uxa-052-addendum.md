@@ -2,9 +2,9 @@
 id: GKR-CCM-UXA-052-A1
 title: Adendo da Matriz de Consolidação Canônica — UXA-052
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-02
+last_updated: 2026-09-01
 depends_on:
   - UXA-051
   - UXA-052
@@ -21,6 +21,8 @@ normative: false
 ## 1. Finalidade
 
 Registrar a validação funcional e a reformulação dos cinco wireframes móveis da configuração do anunciante do Opportunity Boost sem criar Resultado Empresarial canônico, política operacional final ou autorização de desenvolvimento.
+
+A reconciliação de 2026-09-01 preserva este adendo como registro especializado do incremento original. Declarações abaixo sobre estado proposto, resultante ou canônico, contagens, versões, baselines, pendências, marcos, próximos gates/transições/atos e autorizações futuras são **snapshots históricos do estágio em que o incremento foi integrado**; não representam o estado transversal vigente e não substituem `GKR-STATE-001`, registries ou autoridades de domínio vigentes.
 
 ## 2. Resultado do incremento
 

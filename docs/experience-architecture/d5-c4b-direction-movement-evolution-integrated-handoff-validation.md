@@ -2,9 +2,9 @@
 id: GKR-UX-D5-C4B-001
 title: Validação Integrada dos Handoffs de Direção, Movimento e Evolução — D5-C4B
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-30
 parent: UXA-000
 depends_on:
   - GKR-UX-D5-C1-001
@@ -254,22 +254,31 @@ A D5-C4B não comprova:
 
 Validação integrada documental ≠ implementação técnica.
 
-## 13. Inventário
+## 13. Inventário — snapshot histórico da D5-C4B
 
-Nenhuma contagem física ou granular muda:
+No fechamento original da D5-C4B, o inventário da frente registrou o seguinte snapshot:
 
-- 121 SVGs;
-- 121 associações;
+- 121 SVGs físicos então tratados como canônicos pela frente;
+- 121 associações físicas;
 - 34 perfis;
-- 121 validações funcionais vigentes de SVG;
-- 0 pendências específicas de SVG;
+- `121 validações funcionais / 0 pendências específicas de SVG` segundo o critério agregado utilizado naquele estágio;
 - 57 superfícies/estados/fronteiras;
 - 66 transições;
 - 45 de 57 IDs com referência visual;
 - 10 responsabilidades sem SVG dedicado;
 - 2 fronteiras sem tela.
 
-A mudança é exclusivamente de maturidade de `TRN-008..013`.
+Esse bloco é **evidência histórica da D5-C4B**, não certificação da maturidade visual vigente do corpus.
+
+A auditoria integral posterior governa a leitura atual e estabelece que:
+
+```text
+CONTAGEM FÍSICA DE SVGs
+≠ WIREFRAMES VIGENTES
+≠ WIREFRAMES VALIDADOS
+```
+
+Assim, o snapshot `121 / 121 / 0` não deve ser promovido a claim corrente de `121 wireframes validados` ou `0 pendências`. A mudança própria da D5-C4B permanece exclusivamente a maturidade documental de `TRN-008..013`.
 
 ## 14. Limites de escopo
 

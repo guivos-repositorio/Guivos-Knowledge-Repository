@@ -14,7 +14,7 @@ related:
   - GKR-STATE-001
   - GKR-KNOWLEDGE-BOARD-001
   - GKR-CANON-MATRIX-001
-  - ROADMAP-13.4.0
+  - ROADMAP-13.5.0
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-NARR-005
@@ -143,7 +143,7 @@ RESÍDUO TEXTUAL ANTIGO
 | `GKR-BRAND-PUBLIC-AUTHORITY-001` | `AUTHORITATIVE` | autoridade humana pública direta |
 | `GKR-BRAND-SIGNATURE-001` | `AUTHORITATIVE` | assinatura institucional direta |
 | `GOG-001 v5.3.0` | `ABSORBED` | separação Guivos × fundador já incorporada |
-| `GKR-STATE-001 v3.4.0` | `ABSORBED` | estado global já incorporado |
+| `GKR-STATE-001 v3.5.0` | `ABSORBED` | estado global já incorporado |
 | `GKR-UX-HOME-MASTER-001 v1.0.0` | `ABSORBED` | Hero e Movimento 06 corrigidos no master |
 | `README.md` / `docs/index.md` | `ABSORBED` | leitura global atualizada |
 | documentos narrativos especializados da Home | `RESIDUAL_RECONCILIATION` | revisar ocorrências antigas sem perder detalhe |

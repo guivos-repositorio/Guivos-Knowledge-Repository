@@ -8,7 +8,7 @@ last_updated: 2026-08-29
 related:
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-STATE-001
-  - ROADMAP-13.4.0
+  - ROADMAP-13.5.0
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
   - GPA-002
@@ -77,7 +77,7 @@ PMF
 → NOT VALIDATED
 ```
 
-O estado resultante do lote é governado por `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`.
+Na integração do Lote F, o estado resultante era consumido por `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`. Essas versões são **proveniência do fechamento daquele lote**, não autoridades globais correntes. No estado posterior desta auditoria, prevalecem `GKR-STATE-001 v3.5.0`, `ROADMAP-13.5.0` e `GKR-FULL-CORPUS-AUDIT-001 v1.5.0`.
 
 ---
 
@@ -167,7 +167,7 @@ EMPRESA NO CONTRATO BUSINESS
 
 A Home O/C v1.0.0 confirma a mesma fronteira pelo lado do participante estrutural.
 
-O Master Business preserva a arquitetura conceitual, mas contém `ROADMAP-12.79.0` como dependência de seu checkpoint. Essa referência é histórica. Na abertura do Lote F, a autoridade global era `ROADMAP-13.3.0`; após a reconciliação, a interpretação corrente é governada por `ROADMAP-13.4.0`.
+O Master Business preserva a arquitetura conceitual, mas contém `ROADMAP-12.79.0` como dependência de seu checkpoint. Essa referência é histórica. Na abertura do Lote F, a autoridade global era `ROADMAP-13.3.0`; no fechamento do lote, a interpretação passou a ser governada por `ROADMAP-13.4.0`. No estado global posterior desta auditoria, `ROADMAP-13.5.0` prevalece; `13.3.0` e `13.4.0` permanecem somente como proveniência temporal do Lote F.
 
 ### F-05 — Ads
 

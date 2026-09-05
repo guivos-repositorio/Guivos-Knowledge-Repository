@@ -17,9 +17,6 @@ depends_on:
   - UXA-012
   - UXA-013
   - UXA-014
-  - UXA-015
-  - UXA-016
-  - UXA-018
   - UXA-019
   - UXA-056
 related:

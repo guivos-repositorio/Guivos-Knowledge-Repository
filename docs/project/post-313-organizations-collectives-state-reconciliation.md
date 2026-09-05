@@ -2,14 +2,16 @@
 id: GKR-ORGCOL-POST313-RECON-001
 title: Reconciliação Transversal Pós-313 — Organizações e Coletivos
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-26
+last_updated: 2026-08-30
 normative: true
 related:
   - GKR-STATE-001
   - GKR-UX-ORGCOL-STATE-001
   - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - UXA-014
   - UXA-019
   - UXA-015
@@ -26,52 +28,77 @@ related:
 
 ## 1. Finalidade
 
-Este registro reconcilia os derivados transversais do GKR após a PR #313, que corrigiu o estado de Organizações e Coletivos e estabeleceu que os wireframes principais da experiência autenticada ainda não foram oficialmente definidos.
+Este registro preserva a reconciliação transversal aberta após a PR #313, que corrigiu o estado de Organizações e Coletivos e estabeleceu que os antigos `UXA-015..018` não constituem autoridade vigente dos wireframes principais autenticados.
 
-A função deste documento é impedir que snapshots anteriores do catálogo de telas, registro de superfícies, jornadas integradas ou registro global sejam interpretados como autoridade superior ao estado corrigido.
+Sua função atual é dupla:
+
+1. preservar a regra normativa de supersessão dos artefatos históricos `UXA-015..018` e impedir regressão de maturidade;
+2. reconciliar essa correção histórica com as autoridades posteriores já integradas de atores, autoridades, jobs e Arquitetura da Informação autenticada.
+
+Este documento não deve congelar o corpus no snapshot imediatamente posterior à PR #313. Autoridades posteriores válidas precisam ser reconhecidas diretamente.
 
 ## 2. Regra de precedência
 
-No escopo de Organizações e Coletivos, quando houver divergência entre um registro derivado anterior e o estado estabelecido pela PR #313, prevalece a seguinte cadeia:
+No escopo de Organizações e Coletivos, a leitura vigente é:
 
 ```text
+GKR-STATE-001 — verdade transversal atual
++
 UXA-014 — fundamentos funcionais
 +
 UXA-019 — relações Organização ↔ Coletivo
 +
-GKR-UX-ORGCOL-STATE-001 — visão geral e estado atual
+GKR-UX-ORGCOL-STATE-001 — visão geral e estado temático atual
 +
 GKR-UX-ORGCOL-UX-STATE-001 — estado de UX e wireframes
++
+GKR-UX-ORGCOL-AUTH-JOBS-001 — atores, autoridades e jobs autenticados
++
+GKR-UX-ORGCOL-AUTH-IA-001 — Arquitetura da Informação autenticada
 ↓
-este registro de reconciliação transversal
+este registro, no limite da supersessão pós-313 e da prevenção de regressão
 ↓
-catálogos, matrizes, jornadas e snapshots derivados anteriores
+catálogos, matrizes, jornadas e snapshots derivados
 ```
 
-Este documento não substitui os fundamentos. Ele corrige somente a leitura de maturidade dos derivados.
+Este registro não substitui as autoridades temáticas posteriores. Sua precedência permanece restrita ao conflito histórico que corrigiu: materialização/validação indevidamente atribuída a `UXA-015..018`.
 
-## 3. Estado vigente dos wireframes principais
+## 3. Estado vigente da experiência autenticada
 
-O estado obrigatório é:
+O estado obrigatório em 2026-08-30 é:
 
 ```text
-Visão geral / início autenticado da Organização
-→ wireframe oficial NÃO DEFINIDO
+ATORES / AUTORIDADES / JOBS AUTENTICADOS
+→ DEFINIDOS DOCUMENTALMENTE
+→ GKR-UX-ORGCOL-AUTH-JOBS-001
 
-Visão geral / início autenticado do Coletivo
-→ wireframe oficial NÃO DEFINIDO
+ARQUITETURA DA INFORMAÇÃO AUTENTICADA
+→ DEFINIDA
+→ MATURIDADE: authenticated_information_architecture_defined_pre_surface_map
+→ GKR-UX-ORGCOL-AUTH-IA-001
 
-Arquitetura final de informação e navegação interna
-→ PENDENTE
+MAPA FINAL DE SUPERFÍCIES E ESTADOS
+→ NÃO DEFINIDO COMO AUTORIDADE VIGENTE
 
-Validação de wireframe principal
+WIREFRAME PRINCIPAL DA ORGANIZAÇÃO
+→ NÃO DEFINIDO
+
+WIREFRAME PRINCIPAL DO COLETIVO
+→ NÃO DEFINIDO
+
+VALIDAÇÃO DE WIREFRAME PRINCIPAL
 → NÃO REALIZADA EM OBJETO VIGENTE
 
-UI / protótipo / teste de usabilidade dessas superfícies
-→ PENDENTE
+UI / PROTÓTIPO / TESTES / HANDOFF TÉCNICO
+→ NÃO DEFINIDOS / NÃO AUTORIZADOS POR ESTA RECONCILIAÇÃO
 ```
 
-A existência de fundamentos, fluxos especializados, telas locais, Planos, cadastro de oportunidades, gestão de solicitações ou Home pública não altera esse estado.
+A existência de IA não equivale a sitemap final, menu visual, mapa de superfícies, wireframe, UI, RBAC técnico ou implementação.
+
+```text
+ARQUITETURA DA INFORMAÇÃO DEFINIDA
+≠ EXPERIÊNCIA VISUAL PRINCIPAL DEFINIDA
+```
 
 ## 4. Registros históricos superseded
 
@@ -84,16 +111,57 @@ UXA-017 → superseded
 UXA-018 → superseded
 ```
 
-Os SVGs associados a UXA-015 e UXA-016 permanecem fisicamente no repositório por rastreabilidade histórica, mas não constituem:
+Os antigos SVGs associados a `UXA-015` e `UXA-016` foram removidos do corpus corrente pelo cleanup governado F-006; a proveniência permanece no histórico Git.
+
+Eles não constituem:
 
 - wireframe oficial vigente;
 - baseline de produto;
 - especificação de UI;
 - referência aprovada para Engenharia;
 - evidência atual de validação funcional;
-- autorização para inferir arquitetura final de navegação.
+- autorização para inferir mapa final de superfícies ou navegação.
 
-## 5. Efeito sobre o Registro do Estado Atual
+A auditoria integral preserva a regra adicional:
+
+> **Nenhum artefato histórico será removido sem prova de absorção de todo conteúdo material ainda válido e sem autorização humana separada e explícita; se autorizado, o cleanup físico e a reconciliação das referências ocorrerão na mesma transação.**
+
+## 5. Conteúdo material histórico e absorção atual
+
+A auditoria do Bloco H recuperou o conteúdo pré-supersessão de `UXA-015..018` pelo diff da PR #313.
+
+Os princípios funcionais centrais permanecem representados nas autoridades atuais, incluindo:
+
+### Organização
+
+- contexto, unidade, papel e autoridade;
+- responsabilidade material atual;
+- capacidade e condições para cumprir compromissos;
+- oportunidades e programas subordinados à responsabilidade institucional;
+- relações e bilateralidade;
+- evidência, limitações e prestação de contas;
+- correção, contestação, pausa e encerramento;
+- Próximos Passos justificáveis;
+- neutralidade diante de métricas comerciais isoladas.
+
+### Coletivo
+
+- propósito compartilhado;
+- pertencimento e participação voluntária;
+- separação entre pertencimento, disponibilidade, responsabilidade e autoridade;
+- atividades subordinadas ao propósito;
+- papéis aceitos legitimamente;
+- governança, moderação, proteção e contestação;
+- recursos e relações sem perda de autonomia;
+- avanço/aprendizado sustentado por evidência;
+- pausa, recusa e saída legítimas;
+- Próximos Passos compatíveis com a governança.
+
+Esses elementos aparecem de forma distribuída em `UXA-014`, `UXA-019`, `GKR-UX-ORGCOL-AUTH-JOBS-001` e `GKR-UX-ORGCOL-AUTH-IA-001`.
+
+Entretanto, hierarquias específicas de tela, listas históricas de estados, linguagem de interface e conclusões de validação de `UXA-015..018` **não são promovidas automaticamente a decisões atuais**. A remoção física foi autorizada e executada por F-006; reconciliação, recomputação, validações e prova pós-delete foram concluídas e F-006 foi posteriormente adjudicado como resolvido.
+
+## 6. Efeito sobre o Registro do Estado Atual
 
 O `GKR-STATE-001` anterior à PR #313 registrava, entre outros snapshots:
 
@@ -101,79 +169,51 @@ O `GKR-STATE-001` anterior à PR #313 registrava, entre outros snapshots:
 SVGs → 121 — 121 validados / 0 pendentes
 ```
 
-Essa formulação deixa de ser válida como claim global de maturidade visual.
+Essa formulação não é válida como claim global de maturidade visual.
 
-A PR #313 não apaga os arquivos físicos. Portanto:
-
-- o inventário físico pode continuar contendo 121 SVGs;
-- dois SVGs associados a `UXA-015` e `UXA-016` são agora referências históricas superseded;
-- o número físico de arquivos não pode mais ser usado como sinônimo de número de wireframes vigentes ou validados;
-- qualquer contagem de “SVGs validados vigentes” deverá ser recalculada a partir do conjunto atual de autoridades, em vez de derivada automaticamente do total físico.
-
-Até essa recomputação, a formulação correta é:
-
-> **O GKR preserva o inventário físico histórico, mas a maturidade visual vigente deve excluir referências superseded e não pode ser resumida por `121/121 validados`.**
-
-## 6. Efeito sobre o Catálogo Integrado de Telas
-
-O `GKR-JOURNEY-SCREEN-CATALOG-001` anterior à PR #313 contém snapshots como:
-
-- `Coletivo | referência inicial | 1 | validado`;
-- `Organização | visão geral e cadastro | 2 | 2 validados`;
-- `Total canônico | 121 | 121 validados; 0 pendentes`.
-
-Esses trechos não podem mais ser interpretados literalmente no escopo corrigido.
-
-Correção de leitura:
-
-### 6.1 Organização
-
-O cadastro de oportunidade e outras superfícies especializadas mantêm sua maturidade própria quando sustentadas por autoridades não superseded.
-
-A antiga Visão Geral da Organização derivada de `UXA-015/017` não é wireframe vigente e não pode ser contabilizada como tela principal validada.
-
-### 6.2 Coletivo
-
-Fluxos especializados posteriores — por exemplo descoberta pública, solicitação, gestão de solicitações, Planos e outras materializações que possuam autoridade própria — preservam sua maturidade local.
-
-A antiga referência geral de `UXA-016/018` não define a experiência autenticada final do Coletivo.
-
-### 6.3 Total agregado
-
-O total físico histórico pode permanecer registrado, mas a coluna de maturidade precisa distinguir pelo menos:
+A verdade vigente separa:
 
 ```text
-vigente e validado
-materializado/local
-pendente
-histórico superseded
+INVENTÁRIO FÍSICO
+≠ AUTORIDADE VISUAL VIGENTE
+≠ MATURIDADE VALIDADA
 ```
 
-O agregado `121 validados / 0 pendentes` fica supersedido como resumo de maturidade.
+O `GKR-STATE-001` atual já reconhece Jobs + IA autenticada e não utiliza `121/121 validados` como estado visual vigente.
 
-## 7. Efeito sobre o Registro Granular de Superfícies
+## 7. Efeito sobre Catálogo, Galeria e Matriz de Rastreabilidade
 
-O `GKR-JOURNEY-SURFACE-REGISTRY-001` anterior à reconciliação utiliza `UXA-015/017` para classificar `GKR-SURF-ORG-001 — Visão Geral da Organização` como validada.
+Os instrumentos ativos foram normalizados para separar inventário físico de maturidade:
 
-Essa classificação fica supersedida.
+- `GKR-JOURNEY-SCREEN-CATALOG-001` registra 121 SVGs como inventário físico e trata a claim antiga como superseded;
+- `GKR-JOURNEY-SCREEN-GALLERY-001` registra 121 SVGs físicos para inspeção, sem convertê-los em 121 wireframes vigentes;
+- `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` registra 121 associações físicas e 34 perfis, com associação ≠ autoridade visual vigente;
+- `GKR-JOURNEY-SURFACE-REGISTRY-001` mantém IDs estáveis e maturidade por objeto.
 
-O estado correto é:
+Para Organização e Coletivo:
+
+- `ORG-001` mantém responsabilidade semântica, mas o antigo `UXA-015/017` não é baseline vigente;
+- `COL-001` mantém rastreabilidade, mas `UXA-016/018` não define a experiência autenticada final;
+- fluxos especializados posteriores preservam apenas sua maturidade própria.
+
+O total físico pode permanecer 121 enquanto os dois SVGs históricos estiverem no corpus. Nenhuma contagem agregada de wireframes vigentes/validados é inferida sem recomputação governada.
+
+## 8. Efeito sobre o Registro Granular de Superfícies
+
+Um identificador estável pode sobreviver à supersessão de uma materialização.
 
 ```text
-GKR-SURF-ORG-001
-→ responsabilidade/superfície institucional conhecida
-→ fundamento funcional existente
-→ wireframe oficial vigente pendente
-→ validação do wireframe oficial pendente
+ID DA SUPERFÍCIE CONTINUA EXISTINDO
+≠ WIREFRAME ANTERIOR CONTINUA VIGENTE
 ```
 
-A superfície conceitual pode continuar existindo como responsabilidade da Jornada sem possuir materialização oficial.
+`GKR-SURF-ORG-001` continua representando uma responsabilidade institucional conhecida, agora apoiada por fundamento, Jobs e IA atuais, sem wireframe principal vigente.
 
-Para o Coletivo, referências que dependam materialmente de `UXA-016/018` devem ser desconsideradas como evidência de wireframe vigente. Evidências independentes, posteriores e específicas preservam sua maturidade local.
+Para Coletivo, IDs e fluxos especializados preservam seus contratos próprios, mas não podem ser usados para inferir a composição final da experiência principal autenticada.
 
-## 8. Efeito sobre a Jornada Integrada da Organização
+## 9. Efeito sobre a Jornada Integrada da Organização
 
-A versão anterior de `GKR-JOURNEY-ORGANIZATION-001` apresenta:
+A versão anterior à reconciliação apresentava:
 
 ```text
 Visão Geral da Organização
@@ -182,42 +222,52 @@ Visão Geral da Organização
 → validação UXA-017
 ```
 
-Esse estado fica supersedido.
+Esse estado foi supersedido.
 
-A leitura vigente passa a ser:
+A leitura atual é:
 
 ```text
-Visão Geral / início autenticado da Organização
-→ responsabilidade funcional conhecida
-→ wireframe oficial pendente
-→ validação do wireframe oficial pendente
-→ jornada geral permanece draft
+FUNDAÇÃO / JOBS / IA
+→ DEFINIDOS DOCUMENTALMENTE
+
+VISÃO GERAL COMO DOMÍNIO DE IA
+→ DEFINIDA SEMANTICAMENTE
+
+MAPA DE SUPERFÍCIES / COMPOSIÇÃO FINAL
+→ PENDENTE
+
+WIREFRAME PRINCIPAL
+→ PENDENTE
+
+VALIDAÇÃO DO WIREFRAME PRINCIPAL
+→ PENDENTE
+
+JORNADA GERAL
+→ DRAFT
 ```
 
-Fluxos independentes como cadastro de oportunidades, descoberta e Planos mantêm sua autoridade própria no escopo em que não dependam da materialização superseded.
+Fluxos independentes como cadastro de oportunidades, descoberta, Opportunity Boost e Planos mantêm autoridade própria no escopo em que não dependam da materialização superseded.
 
-Qualquer integração cuja validação dependa especificamente da antiga composição visual de `UXA-015` deve ser reavaliada quando o wireframe oficial da Organização for construído.
+## 10. Efeito sobre a Jornada Integrada do Coletivo
 
-## 9. Efeito sobre a Jornada Integrada do Coletivo
+A versão anterior utilizava `UXA-016/018` como parte da evidência de presença inicial.
 
-A versão anterior de `GKR-JOURNEY-COLLECTIVE-001` utiliza `UXA-016/018` como parte da evidência de presença inicial.
+A leitura vigente é:
 
-A partir da PR #313:
-
-- `UXA-016/018` não sustentam mais maturidade vigente;
-- superfícies públicas sustentadas por referências independentes, como os fluxos públicos posteriores, mantêm sua maturidade própria;
-- superfícies administrativas especializadas com materializações posteriores preservam validação local quando houver autoridade específica;
-- nenhuma dessas materializações equivale à definição da Home / Início autenticado final do Coletivo;
+- `UXA-016/018` não sustentam maturidade visual vigente;
+- fundamentos, Jobs e IA do Coletivo estão definidos documentalmente;
+- superfícies públicas sustentadas por referências independentes preservam maturidade própria;
+- superfícies administrativas especializadas posteriores preservam validação local quando houver autoridade específica;
+- nenhuma delas equivale à definição do mapa final de superfícies ou do wireframe principal autenticado;
 - a Jornada do Coletivo continua `draft`.
 
-## 10. Wireframe principal ≠ fluxo especializado
+## 11. Wireframe principal ≠ fluxo especializado
 
-A reconciliação preserva uma distinção importante:
+A distinção permanece obrigatória:
 
 ```text
-wireframe principal da experiência autenticada
-≠
-wireframe local de uma capacidade específica
+WIREFRAME PRINCIPAL DA EXPERIÊNCIA AUTENTICADA
+≠ WIREFRAME LOCAL DE CAPACIDADE ESPECÍFICA
 ```
 
 É possível existir materialização local de:
@@ -230,31 +280,38 @@ wireframe local de uma capacidade específica
 - perfil público;
 - descoberta;
 
-sem que exista arquitetura final da Home autenticada, navegação geral e hierarquia completa do participante.
+sem que exista o wireframe principal autenticado final.
 
-Portanto, a PR #313 não invalida automaticamente todo artefato visual ligado a Organização ou Coletivo. Ela invalida a interpretação de que os antigos `UXA-015..018` já resolviam a experiência principal.
+Da mesma forma:
 
-## 11. Estado das transições que dependem de superfícies principais
+```text
+ARQUITETURA DA INFORMAÇÃO
+≠ MAPA FINAL DE SUPERFÍCIES
+≠ WIREFRAME
+```
 
-Transições documentadas em pacotes especializados mantêm sua evidência local, mas não podem ser usadas para afirmar que a arquitetura final da experiência autenticada está fechada.
+## 12. Estado das transições especializadas
+
+Transições documentadas em pacotes especializados mantêm sua evidência local, mas não podem ser usadas para afirmar que a composição final da experiência autenticada está fechada.
 
 Em especial:
 
-- a origem/retorno de Planos da Organização deverá ser revalidada contra o futuro wireframe oficial da Organização se a composição ou navegação mudar;
-- a navegação administrativa local do Coletivo permanece evidência de seus pacotes específicos, mas não determina a arquitetura final do Coletivo;
-- nenhuma transição especializada autoriza inferir menu global, dashboard, Home autenticada ou arquitetura completa.
+- origem/retorno de Planos da Organização preserva o contrato especializado, mas deve ser confrontada com o futuro mapa/wireframe principal quando materializado;
+- navegação administrativa local do Coletivo permanece evidência dos pacotes específicos, sem determinar a arquitetura visual final;
+- nenhuma transição especializada autoriza inferir menu global, dashboard, Home autenticada visual ou implementação completa.
 
-## 12. Estado de maturidade consolidado
+## 13. Estado de maturidade consolidado
 
 | Dimensão | Organização | Coletivo |
 |---|---|---|
 | fundamento funcional | existente | existente |
 | relação entre participantes | existente em conjunto | existente em conjunto |
+| atores, autoridades e jobs | **definidos** | **definidos** |
+| Arquitetura da Informação autenticada | **definida pré-surface-map** | **definida pré-surface-map** |
 | Research de supply / valor | existente | existente |
 | jornada integrada | draft | draft |
 | fluxos especializados | parciais / alguns validados localmente | parciais / vários validados localmente |
-| arquitetura final de informação autenticada | pendente | pendente |
-| mapa final de superfícies | pendente | pendente |
+| mapa final de superfícies | **pendente** | **pendente** |
 | wireframe principal | **pendente** | **pendente** |
 | validação do wireframe principal | **pendente** | **pendente** |
 | UI final | pendente | pendente |
@@ -262,23 +319,91 @@ Em especial:
 | testes de usabilidade | pendente | pendente |
 | handoff técnico da experiência principal | pendente | pendente |
 
-## 13. Próxima sincronização mecânica necessária
+## 14. Estado da normalização direta dos derivados
 
-Os seguintes derivados deverão ser normalizados futuramente para incorporar esta reconciliação diretamente em suas tabelas, sem depender apenas deste overlay:
+A dívida mecânica registrada originalmente após #313 foi substancialmente absorvida pelos instrumentos atuais.
 
-- `GKR-STATE-001`;
-- `GKR-JOURNEY-SCREEN-CATALOG-001`;
-- `GKR-JOURNEY-SURFACE-REGISTRY-001`;
-- detalhamento de superfícies da Organização;
-- detalhamento de superfícies do Coletivo;
-- Jornada Integrada da Organização;
-- Jornada Integrada do Coletivo;
-- galeria/matriz visual, quando seus totais utilizarem maturidade dos artefatos superseded.
+| Derivado | Estado em 2026-08-30 |
+|---|---|
+| `GKR-STATE-001` | normalizado; Jobs + IA reconhecidos |
+| `GKR-JOURNEY-SCREEN-CATALOG-001` | normalizado quanto à separação físico × maturidade |
+| `GKR-JOURNEY-SCREEN-GALLERY-001` | normalizado quanto à separação físico × maturidade |
+| `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` | normalizado; associação ≠ autoridade |
+| `GKR-JOURNEY-SURFACE-REGISTRY-001` | maturidade principal O/C não é inferida dos artefatos superseded |
+| Jornada da Organização | normalizada no Bloco H; Jobs + IA atuais reconhecidos; surface map/wireframe principal permanecem pendentes |
+| Jornada do Coletivo | normalizada no Bloco H; Jobs + IA atuais reconhecidos; surface map/wireframe principal permanecem pendentes |
+| porta temática O/C | reconciliada com Jobs + IA no Bloco H |
 
-Até essa normalização, este documento possui precedência explícita no escopo da divergência.
+Esta tabela não encerra `F-006`. Os testes de absorção, referências e função atual estão concluídos, as dependências funcionais ativas foram reconciliadas e a elegibilidade documental de cleanup está comprovada. O cleanup governado foi autorizado, aplicado 6/6 e validado; a proveniência histórica permanece sem dependência física.
 
-## 14. Regra final
+## 15. Regra para contagens visuais
 
-> **Arquivo físico não é autoridade vigente. Materialização histórica não é wireframe aprovado. Validação antiga não sobrevive à supersessão do objeto que validava.**
+Toda métrica visual deve responder separadamente:
 
-A experiência principal de Organizações e Coletivos somente poderá voltar a ser declarada materializada/validada quando novos wireframes forem definidos, revisados e validados a partir do estado atual.
+1. quantos arquivos/artefatos físicos existem;
+2. quantos artefatos possuem autoridade vigente na maturidade declarada.
+
+Nunca utilizar:
+
+```text
+QUANTIDADE DE SVGs FÍSICOS
+=
+QUANTIDADE DE WIREFRAMES VIGENTES E VALIDADOS
+```
+
+Estado comprovado do inventário no Bloco I:
+
+- SVGs físicos: **121**;
+- associações físicas: **121**;
+- perfis de rastreabilidade: **34**;
+- duplicatas exatas por blob SHA: **0 observadas/provadas no snapshot auditado**;
+- near-duplicates: **não certificados**;
+- total agregado de wireframes vigentes/validados: **não certificado**.
+
+## 16. Gate de remoção dos históricos
+
+`UXA-015..018` e os dois SVGs associados foram removidos somente após prova de absorção, autorização e cleanup governado — não por conveniência de contagem.
+
+Os gates documentais de classificação do conteúdo material e de ausência de dependência funcional atual estão concluídos. A sequência governada restante é:
+
+1. obter autorização humana separada e explícita para o cleanup físico;
+2. etapa concluída: os quatro documentos `UXA-015..018` e os dois SVGs associados foram removidos e os instrumentos afetados foram reconciliados na mesma transação;
+3. recomputar catálogo, galeria, matriz, associações e contagens físicas sobre a árvore resultante;
+4. validar semanticamente e mecanicamente o novo head exato;
+5. executar nova revisão repo-wide no novo head;
+6. somente depois desses gates decidir o fechamento de `F-006` e o fechamento formal de H/I.
+
+## 17. Próximo gate válido
+
+No limite atual da frente O/C:
+
+```text
+FOUNDATIONS / RELATIONS
+→ DEFINED
+
+ACTORS / AUTHORITIES / JOBS
+→ DEFINED
+
+AUTHENTICATED INFORMATION ARCHITECTURE
+→ DEFINED PRE-SURFACE-MAP
+
+FINAL SURFACE MAP
+→ NOT DEFINED / HOLD DURING CURRENT AUDIT DECISION
+
+MAIN AUTHENTICATED WIREFRAMES
+→ NOT DEFINED
+
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED
+```
+
+A branch pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece `HOLD_REVIEW` e não é autoridade.
+
+## 18. Regra final
+
+> **Arquivo físico não é autoridade vigente. Materialização histórica não é wireframe aprovado. Validação antiga não sobrevive à supersessão do objeto que validava. Arquitetura da Informação atual não reativa o wireframe histórico.**
+
+A experiência principal de Organizações e Coletivos somente poderá voltar a ser declarada visualmente materializada/validada quando novos objetos forem definidos, revisados e validados a partir das autoridades atuais e dos gates vigentes.

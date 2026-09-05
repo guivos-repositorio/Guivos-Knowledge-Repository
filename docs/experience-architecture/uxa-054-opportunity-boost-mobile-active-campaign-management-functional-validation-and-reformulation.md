@@ -34,6 +34,9 @@ normative: false
 
 # Validação Funcional e Reformulação da Gestão Móvel da Campanha Ativa do Opportunity Boost
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento valida funcionalmente os seis wireframes móveis criados pela UXA-053 e registra as reformulações necessárias para que o anunciante compreenda programação, atividade, entrega reduzida, pausa, alteração material, cancelamento e estados finais sem interpretar ausência de medição como zero, limitação como atividade normal ou revisão como execução imediata.

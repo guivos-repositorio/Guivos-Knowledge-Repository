@@ -98,8 +98,23 @@ def main() -> int:
         if match:
             artifacts[int(match.group(1))] = path
 
+    removed_after_absorption = {
+        81: "uxa-081-integrated-screen-gallery-and-coverage-audit.md",
+        82: "uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md",
+        83: "uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md",
+        84: "uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md",
+        85: "uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md",
+    }
+
     for number in range(47, 102):
         path = artifacts.get(number)
+        if number in removed_after_absorption:
+            expected_name = removed_after_absorption[number]
+            if path is not None:
+                errors.append(f"artefato UXA-{number:03d} deveria estar ausente após cleanup governado")
+            if expected_name in index_text:
+                errors.append(f"artefato removido UXA-{number:03d} permanece indexado: {expected_name}")
+            continue
         if path is None:
             errors.append(f"artefato UXA-{number:03d} ausente")
         elif path.name not in index_text:

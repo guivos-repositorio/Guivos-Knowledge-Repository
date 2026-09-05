@@ -30,6 +30,9 @@ normative: false
 
 # Validação Funcional Especializada e Reformulação do Wireframe Móvel da Compreensão Inicial
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento valida funcionalmente a referência móvel criada pela UXA-036 e registra as reformulações necessárias para que processamento, hipótese, revisão, decisões e base insuficiente preservem autonomia, explicabilidade e separação de finalidades.

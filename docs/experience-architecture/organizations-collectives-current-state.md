@@ -2,13 +2,15 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.1.2
+version: 1.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-26
+last_updated: 2026-08-30
 normative: false
 related:
   - UXA-014
   - UXA-019
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
@@ -44,6 +46,8 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | definição de Coletivo | definida funcionalmente | `UXA-014` |
 | distinção Organização × Coletivo | definida funcionalmente | `UXA-014` |
 | relações Organização ↔ Coletivo | contrato funcional existente, não normativo | `UXA-019` |
+| atores, autoridades e jobs autenticados | **definidos documentalmente** | `GKR-UX-ORGCOL-AUTH-JOBS-001` |
+| Arquitetura da Informação autenticada | **definida, pré-mapa de superfícies** | `GKR-UX-ORGCOL-AUTH-IA-001` |
 | Jornada da Organização | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-ORGANIZATION-001` |
 | Jornada do Coletivo | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-COLLECTIVE-001` |
 | corpus de oportunidades reais | Research consolidado pré-campo | `RP-002-SUP-001` |
@@ -53,12 +57,25 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | validação com perfis sintéticos | executada metodologicamente; não é PMF | `RP-002-PMF-001` + atlas |
 | validação humana real / PMF | **pendente** | piloto de campo |
 | Home pública de Organizações e Coletivos | possui Documento Mestre próprio | `public-home-organizations-collectives-master-document.md` |
+| mapa final de superfícies autenticadas | **não definido** | pendente |
 | wireframe da experiência autenticada da Organização | **não definido** | pendente |
 | wireframe da experiência autenticada do Coletivo | **não definido** | pendente |
 | validação de wireframe da Organização | **não realizada em objeto vigente** | pendente |
 | validação de wireframe do Coletivo | **não realizada em objeto vigente** | pendente |
 | UI / protótipo autenticado | não definido | pendente |
 | Engenharia da experiência autenticada | não autorizada a partir de wireframe | pendente |
+
+A existência de Arquitetura da Informação não promove automaticamente mapa de superfícies, sitemap final, menu visual, wireframe, UI, RBAC técnico ou implementação.
+
+```text
+JOBS DEFINIDOS
++
+ARQUITETURA DA INFORMAÇÃO DEFINIDA
+≠ MAPA FINAL DE SUPERFÍCIES
+≠ WIREFRAME
+≠ UI
+≠ IMPLEMENTAÇÃO
+```
 
 ## 3. Organização
 
@@ -154,7 +171,94 @@ Princípio central:
 
 > **Apoio, financiamento, patrocínio ou infraestrutura não transferem automaticamente propósito, governança, pertencimento ou autoridade.**
 
-## 7. Jornadas atuais
+## 7. Experiência autenticada — atores, autoridades e jobs
+
+`GKR-UX-ORGCOL-AUTH-JOBS-001` está ativo e define a unidade funcional de atuação autenticada antes de qualquer decisão visual:
+
+```text
+PESSOA AUTENTICADA
++
+PARTICIPANTE REPRESENTADO
++
+CONTEXTO / UNIDADE APLICÁVEL
++
+PAPEL DECLARADO
++
+AUTORIDADE E LIMITES
++
+JOB ATUAL
+```
+
+Para Organização, o documento distingue representante institucional, autoridade de aprovação, responsável operacional/prestação de contas e contraparte autorizada.
+
+Para Coletivo, distingue responsável/representante autorizado, instância de governança, responsável por operação/moderação/proteção, participante e contraparte autorizada.
+
+Preservações:
+
+```text
+MESMA PESSOA
+≠ MESMA AUTORIDADE
+
+PERTENCIMENTO
+≠ REPRESENTAÇÃO
+
+REPRESENTAÇÃO
+≠ APROVAÇÃO IRRESTRITA
+
+JOB PRIORITÁRIO
+≠ ITEM DE MENU
+≠ TELA
+```
+
+Os jobs cobrem contexto, Momento, capacidade, oportunidades/atividades, relações, compromissos, evidência, participação, governança, proteção, contestação, continuidade, Planos contextuais e Próximos Passos justificáveis.
+
+## 8. Arquitetura da Informação autenticada
+
+`GKR-UX-ORGCOL-AUTH-IA-001` está ativo com maturidade `authenticated_information_architecture_defined_pre_surface_map`.
+
+A arquitetura comum preserva cinco camadas lógicas:
+
+```text
+CAMADA 0 — CONTEXTO E AUTORIDADE
+↓
+CAMADA 1 — SÍNTESE DO MOMENTO
+↓
+CAMADA 2 — DOMÍNIOS DE TRABALHO
+↓
+CAMADA 3 — GOVERNANÇA, EVIDÊNCIA E CONTINUIDADE
+↓
+CAMADA 4 — CAPACIDADES ESPECIALIZADAS / CONTEXTUAIS
+```
+
+Organização:
+
+```text
+ORGANIZAÇÃO
+├── Visão Geral
+├── Oportunidades e Programas
+├── Relações
+├── Responsabilidades e Evidências
+├── Organização e Autoridade
+└── Planos e Capacidade [especializado / contextual]
+```
+
+Coletivo:
+
+```text
+COLETIVO
+├── Início
+├── Atividades e Oportunidades
+├── Participação
+├── Governança e Proteção
+├── Relações
+├── Aprendizados e Evidências
+├── Coletivo e Autoridade
+└── Planos e Capacidade [especializado / contextual]
+```
+
+Essa arquitetura agrupa informação e trabalho. Ela não define ainda o mapa final de superfícies, quantidade final de telas, menu visual, wireframe, UI, protótipo, RBAC técnico ou implementação.
+
+## 9. Jornadas atuais
 
 As Jornadas integradas permanecem documentadas em:
 
@@ -163,17 +267,19 @@ As Jornadas integradas permanecem documentadas em:
 
 Ambos os documentos possuem estado `draft`.
 
-Eles ajudam a mapear continuidade, estados e relações do ecossistema, mas **não devem ser interpretados como prova de que a arquitetura de telas autenticadas, wireframes ou UI já foi definida**.
+Eles ajudam a mapear continuidade, estados e relações do ecossistema, mas **não devem ser interpretados como prova de que o mapa final de superfícies, wireframes ou UI já foi definido**.
 
 Qualquer trecho desses documentos que derive maturidade de `UXA-015`, `UXA-016`, `UXA-017` ou `UXA-018` fica subordinado à reconciliação de estado registrada aqui: os wireframes autenticados de Organização e Coletivo ainda não foram oficialmente definidos.
 
-## 8. Organizações e Coletivos no supply
+A existência de Jobs e IA atuais também não reativa `UXA-015..018`.
+
+## 10. Organizações e Coletivos no supply
 
 A investigação `RP-002` ampliou a compreensão sobre Organizações e Coletivos como agentes do supply.
 
 A leitura rica e orientada a exemplos está em [Atlas de Oportunidades, Relevância, Supply e Validação](organizations-collectives-supply-and-value.md). O corpus probatório completo está em [Corpus Real e Supply Ecosystems](../research/RP-002/real-world-supply-corpus.md), e o aprofundamento econômico em [Organizações, Coletivos, Efeito de Rede e Modelo Econômico do Supply](../research/RP-002/organizations-collectives-and-economic-model.md).
 
-### 8.1 Papéis possíveis de Organizações
+### 10.1 Papéis possíveis de Organizações
 
 Research observou papéis como:
 
@@ -192,7 +298,7 @@ Research observou papéis como:
 
 Esses papéis pertencem à relação ou à oportunidade concreta; não substituem a identidade institucional da Organização.
 
-### 8.2 Papéis possíveis de Coletivos
+### 10.2 Papéis possíveis de Coletivos
 
 Research observou papéis como:
 
@@ -209,7 +315,7 @@ Research observou papéis como:
 
 Coletivos podem materializar ou habilitar possibilidades que mercados tradicionais não atendem adequadamente.
 
-### 8.3 Como ler relevância
+### 10.3 Como ler relevância
 
 A investigação preserva:
 
@@ -217,7 +323,7 @@ A investigação preserva:
 
 O mesmo programa pode ter alto fit para uma Pessoa e falhar para outra por horário, território, elegibilidade, custo indireto, carga, risco, acessibilidade ou necessidade de renda. Por isso, o atlas registra tanto oportunidades apresentadas quanto oportunidades legitimamente descartadas.
 
-## 9. Modelo de valor — estado de Research
+## 11. Modelo de valor — estado de Research
 
 A hipótese atual para Organizações é:
 
@@ -229,7 +335,7 @@ A hipótese atual para Coletivos é:
 
 Essas formulações são **Research**, não promessa comercial nem contrato canônico de produto.
 
-## 10. Neutralidade econômica
+## 12. Neutralidade econômica
 
 Permanecem preservadas as seguintes separações:
 
@@ -243,7 +349,7 @@ PUBLICAR MAIS ≠ CONTRIBUIR MAIS
 
 A Guivos pode monetizar infraestrutura, operação, integração, escala, serviços, transações e Intelligence agregada sem vender relevância funcional, dignidade, autoridade ou força de evidência.
 
-## 11. Presença pública
+## 13. Presença pública
 
 A Home pública de Organizações e Coletivos possui construção própria em [Documento Mestre da Home Pública de Organizações e Coletivos](public-home-organizations-collectives-master-document.md).
 
@@ -255,23 +361,25 @@ Essa Home pública não deve ser confundida com:
 - área administrativa;
 - wireframe das jornadas internas.
 
-## 12. Estado de UX
+## 14. Estado de UX
 
 O estado vigente está detalhado em [Organizações e Coletivos — Estado de UX e Wireframes](organizations-collectives-ux-state.md).
 
 Resumo:
 
-> **Ainda não existe wireframe oficialmente definido para a experiência autenticada da Organização nem para a experiência autenticada do Coletivo.**
+> **Atores, autoridades, jobs e Arquitetura da Informação autenticada já estão definidos documentalmente. O mapa final de superfícies e os wireframes principais autenticados de Organização e Coletivo ainda não estão definidos.**
 
-Materiais anteriores que afirmavam o contrário foram reclassificados como registros históricos superseded.
+Materiais anteriores que afirmavam wireframes principais vigentes ou validação vigente foram reclassificados como registros históricos `superseded`.
 
-## 13. Mapa de conhecimento
+## 15. Mapa de conhecimento
 
 | Tema | Documento principal |
 |---|---|
 | definição e fundamento | `UXA-014` |
 | estado mestre | este documento |
 | relações Organização ↔ Coletivo | `UXA-019` |
+| atores, autoridades e jobs autenticados | `GKR-UX-ORGCOL-AUTH-JOBS-001` |
+| Arquitetura da Informação autenticada | `GKR-UX-ORGCOL-AUTH-IA-001` |
 | Jornada da Organização | `journeys/organization.md` |
 | Jornada do Coletivo | `journeys/collective.md` |
 | Home pública | `public-home-organizations-collectives-master-document.md` |
@@ -281,15 +389,20 @@ Materiais anteriores que afirmavam o contrário foram reclassificados como regis
 | supply, rede e modelo econômico — aprofundamento | `RP-002-OCE-001` |
 | estado de UX e wireframes | `GKR-UX-ORGCOL-UX-STATE-001` |
 
-## 14. Próxima sequência legítima para UX autenticada
+## 16. Próxima sequência legítima para UX autenticada
 
-Quando essa frente for retomada, a sequência correta é:
+A frente já concluiu documentalmente:
 
 ```text
-fundamentos e papéis atuais
-→ necessidades e jobs por participante
-→ arquitetura da informação
-→ mapa de superfícies e estados
+fundamentos e papéis
+→ atores, autoridades e jobs prioritários
+→ Arquitetura da Informação
+```
+
+O próximo encadeamento, quando autorizado após os gates aplicáveis da auditoria, começa em:
+
+```text
+mapa de superfícies e estados
 → fluxos prioritários
 → wireframe de baixa fidelidade
 → validação funcional
@@ -299,9 +412,11 @@ fundamentos e papéis atuais
 → handoff técnico
 ```
 
-Nenhuma etapa posterior deve ser presumida antes da anterior estar materialmente definida.
+Nenhuma etapa posterior deve ser presumida antes da anterior estar materialmente definida e autorizada.
 
-## 15. Regra de autoridade desta reconciliação
+A branch pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece apenas `HOLD_REVIEW`; sua existência não transforma o mapa proposto em autoridade vigente.
+
+## 17. Regra de autoridade desta reconciliação
 
 Para o estado atual de Organizações e Coletivos:
 

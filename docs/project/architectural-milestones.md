@@ -2,13 +2,14 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.46.0
+version: 5.47.0
 owner: Guivos
-last_updated: 2026-08-22
+last_updated: 2026-08-30
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.84.0
+  - ROADMAP-13.5.0
+  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-GLOBAL-INTEGRITY-POST300-001
   - GPA-007
   - UXA-070
@@ -48,13 +49,14 @@ normative: false
 
 ## 1. Autoridade
 
-Este registro apresenta a linha de maturidade arquitetural consolidada. O estado oficial permanece em `GKR-STATE-001 v2.43.0`.
+Este registro apresenta a linha de maturidade arquitetural consolidada. O estado oficial permanece em `GKR-STATE-001`; durante a auditoria integral, `GKR-FULL-CORPUS-AUDIT-001` governa o estado dos lotes e dos achados ainda em tratamento.
 
-A versão 5.46.0 preserva integralmente a linha funcional até M7.88 e incorpora a autoridade pública do fundador como frente de marca/governança que não cria novo marco funcional.
+A versão 5.47.0 preserva integralmente a linha funcional até M7.88, mantém a autoridade pública do fundador como frente de marca/governança sem novo marco funcional e reconcilia a leitura do inventário visual com o Bloco I da auditoria.
 
 ```text
 MARCO ANTERIOR ≠ ESTADO CORRENTE
 ATUALIZAÇÃO DA LINHA ≠ APAGAMENTO DO MARCO
+INVENTÁRIO FÍSICO ≠ MATURIDADE VISUAL VIGENTE
 ```
 
 ## 2. Linha de maturidade
@@ -136,38 +138,61 @@ TRN-008..013                         = integralmente validadas documentalmente
 
 Esses avanços permanecem subordinados ao marco M7.88 porque não iniciam nova UXA funcional numerada.
 
-## 6. Inventário corrente
+## 6. Inventário corrente — leitura auditada
+
+O Bloco I da auditoria separa inventário físico de maturidade visual vigente.
 
 | Elemento | Estado |
 |---|---|
-| SVGs | **121** |
-| Validados | **121** |
-| Pendentes | **0** |
-| Associações | **121** |
-| Perfis | **34** |
+| SVGs físicos | **121** |
+| Associações físicas | **121** |
+| Perfis de rastreabilidade | **34** |
+| Duplicatas exatas por blob SHA no snapshot auditado | **0** |
+| Near-duplicates | **NOT_CERTIFIED** |
+| Total agregado de wireframes vigentes | **NOT_CERTIFIED** |
+| Total agregado de wireframes validados vigentes | **NOT_CERTIFIED** |
+| Total agregado de pendências visuais | **NOT_CERTIFIED** |
 | Superfícies/estados/fronteiras | **57** |
 | Transições | **66** |
 
-## 7. Experience Architecture pública
-
-A convergência das oito Homes e o Design Delivery v4 constituem frentes públicas não numeradas e **não criam novo marco funcional**.
-
 ```text
-8 Homes convergidas
-handoff v1.3.0
-Design Delivery v4
-31 fontes + 8 guias
+CONTAGEM FÍSICA DE SVGs
+≠ WIREFRAMES VIGENTES
+≠ WIREFRAMES VALIDADOS
 ```
 
-A reconciliação nominal do Movimento 06 da Home Pública da Pessoa — `Da Possibilidade à Experiência` — preserva sua função semântica e também não cria novo marco funcional.
+O antigo snapshot `121 validados / 0 pendentes` permanece rastreável em seus checkpoints históricos, mas não representa a maturidade visual vigente do corpus.
 
-Nenhum Design, UI ou implementação é produzido automaticamente por esses registros.
+## 7. Experience Architecture pública
+
+As oito famílias de Homes possuem reconciliação documental pré-materialização nos limites dos Lotes D/E/F. Os antigos registros de convergência e o Design Delivery v4 permanecem evidências de seus checkpoints e **não criam novo marco funcional nem autorizam Design atual**.
+
+```text
+Homes
+→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+
+handoff/design delivery histórico
+→ EVIDÊNCIA DE CHECKPOINT
+≠ AUTORIZAÇÃO ATUAL DE DESIGN
+```
+
+Na Home Pública da Pessoa:
+
+```text
+Movimento 06 — Da Possibilidade à Experiência
+→ rótulo vigente
+→ função semântica preservada
+```
+
+`Do Possível ao Vivido` permanece apenas como rótulo histórico anterior nesse contexto e não deve ser materializado como ativo institucional da Home.
+
+`Design Delivery emitido ≠ Design produzido ≠ implementação ≠ publicação`.
 
 ## 8. Business e Intelligence
 
-A ressincronização do Guivos Business (`GPA-004 v1.6.0`) e a convergência do Guivos Intelligence (`GPA-006 v2.0.0`, `GIA-000 v1.5.0`) são autoridades de produto, não novos marcos UXA.
+A ressincronização do Guivos Business (`GPA-004 v1.6.0`) e a convergência documental do Guivos Intelligence (`GPA-006 v2.0.0`, `GIA-000 v1.6.0`) são autoridades de produto, não novos marcos UXA.
 
-Da mesma forma, as Homes Business e Intelligence integram o conjunto de oito Homes sem alterar M7.88.
+Da mesma forma, as Homes Business e Intelligence integram o conjunto reconciliado de Homes sem alterar M7.88.
 
 ## 9. Marca, autoridade pública e fundamento
 

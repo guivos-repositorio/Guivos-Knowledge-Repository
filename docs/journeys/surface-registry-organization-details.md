@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-ORGANIZATION-001
 title: Detalhamento Obrigatório das Superfícies da Organização
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-26
+last_updated: 2026-08-30
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
 related:
   - UXA-070
@@ -18,25 +18,32 @@ related:
   - UXA-100-A3
   - UXA-100-A4
   - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
 
 # Detalhamento Obrigatório das Superfícies da Organização
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens, maturidade ou status das entradas por conta própria.
 
-A reconciliação pós-PR #313/#314 estabelece que o antigo SVG associado a `ORG-001`, produzido no ciclo `UXA-015/017`, é **histórico e superseded**. Ele permanece fisicamente no repositório apenas para rastreabilidade e não constitui wireframe vigente, baseline de produto ou autoridade de design da experiência autenticada da Organização.
+A reconciliação pós-PR #313/#314 estabelece que o antigo SVG associado a `ORG-001`, produzido no ciclo `UXA-015/017`, é **histórico e superseded**. O ativo físico foi removido por F-006; sua proveniência permanece no histórico Git e não constitui baseline de produto ou autoridade de Design da experiência autenticada da Organização.
 
 A UXA-100-A4 preserva contratos e decisões de navegação do fluxo de Planos no limite documental em que tenham autoridade própria, mas não transforma o SVG histórico de `ORG-001` em wireframe vigente.
+
+A arquitetura da informação autenticada da Organização está definida por `GKR-UX-ORGCOL-AUTH-IA-001` no estágio **pre-surface-map**. Isso não define mapa final de superfícies, wireframe principal, UI, protótipo ou implementação.
 
 ## 2. Campos por identificador
 
 | ID | Artefato canônico e caminho | Versão | Entrada | Decisão principal | Saída | Dados e conteúdos | Gate | Reversibilidade | Supersessão | Continuidade | Lacuna | Observação de escopo |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| GKR-SURF-ORG-001 | wireframe principal autenticado **pendente**; `UXA-015/017` e `uxa-015-organization-overview-desktop.svg` permanecem somente como histórico superseded | estado vigente: não definido | identidade e autoridade | responsabilidade institucional ainda depende de arquitetura de informação e wireframe vigentes | contratos especializados podem partir/retornar ao contexto institucional quando sua própria autoridade os sustentar | identidade, unidade, autoridade, compromissos e evidências no limite dos fundamentos vigentes | representação institucional válida | retorno e revisão permanecem requisitos funcionais; materialização final pendente | `UXA-015`, `UXA-017` e SVG associado superseded | `TRN-427/428` preservam seu estado documental próprio, sem provar materialização vigente de ORG-001; TRN-201 preserva maturidade própria | **wireframe principal autenticado, arquitetura de informação e matriz institucional completa pendentes** | Organização permanece participante; não é Guivos Business; contrato de navegação ≠ wireframe vigente |
+| GKR-SURF-ORG-001 | contrato funcional de superfície ainda sujeito à consolidação; materialização visual = Design-only; `UXA-015/017` e `antigo ativo visual F-006 de ORG-001` permanecem somente como histórico superseded | estado visual vigente: não definido; IA autenticada definida pre-surface-map | identidade e autoridade | responsabilidade institucional deve respeitar a IA autenticada vigente; composição visual principal ainda não definida | contratos especializados podem partir/retornar ao contexto institucional quando sua própria autoridade os sustentar | identidade, unidade, autoridade, compromissos e evidências no limite dos fundamentos e da IA vigentes | representação institucional válida | retorno e revisão permanecem requisitos funcionais; materialização final pendente | `UXA-015`, `UXA-017` e SVG associado superseded | `TRN-427/428` preservam seu estado documental próprio, sem provar materialização vigente de ORG-001; TRN-201 preserva maturidade própria | **mapa funcional de superfícies/estados ainda sujeito à consolidação; materialização visual e matriz visual pertencem a Design** | Organização permanece participante; não é Guivos Business; IA definida ≠ wireframe vigente; contrato de navegação ≠ wireframe vigente |
 | GKR-SURF-ORG-002 | UXA-008 — `docs/experience-architecture/uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md` | indeterminado | autoridade institucional | criar, revisar, enviar ou cancelar cadastro | estado institucional de publicação | dados da oportunidade, responsável, disponibilidade, preço, elegibilidade, riscos e relação comercial | autoridade institucional; confirmação antes do envio | editar, salvar rascunho, cancelar ou retirar conforme estado | nenhuma identificada | parcial | integração com descoberta | entrada documental seletiva; não declara jornada completa |
 | GKR-SURF-ORG-003 | UXA-008 — `docs/experience-architecture/uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md` | indeterminado | cadastro revisado e aprovado | ativar, pausar, corrigir ou encerrar dentro do ciclo institucional | distribuição elegível em superfícies de oportunidades | estado institucional, disponibilidade, versão publicada e condições vigentes | autoridade institucional e aprovação aplicável | pausar, corrigir, retirar ou encerrar conforme ciclo | significado anterior dividido pela UXA-078; Detalhe de Oportunidade migra para GKR-SURF-PER-203 | parcial | integração publicação–descoberta | estado institucional protegido; não representa o detalhe percebido pela Pessoa |
 | GKR-SURF-ORG-004 | ausente; autoridade: UXA-019 — `docs/experience-architecture/uxa-019-organization-collective-relationship-functional-contract.md` | indeterminado | decisão institucional | formular, revisar, enviar ou retirar proposta | avaliação pelo Coletivo | finalidade, compromissos, recursos, dados, autonomia e saída | autoridade institucional | retirar, ajustar ou cancelar antes de aceite conforme contrato | nenhuma identificada | ausente | superfície bilateral | entrada documental seletiva; não declara jornada completa |
@@ -82,8 +89,8 @@ SVG histórico de ORG-001
 ≠ validação vigente do wireframe principal
 ```
 
-Qualquer futura materialização da Visão Geral da Organização deverá ser construída a partir dos fundamentos e do estado vigente, e não pela promoção automática do SVG histórico.
+Qualquer futura materialização da Visão Geral da Organização deverá ser construída a partir dos fundamentos, Jobs/autoridades e da arquitetura da informação autenticada vigente, e não pela promoção automática do SVG histórico.
 
 ## 6. Estado
 
-O detalhamento está `active` 0.6.0 como parte integrante do registro. A Jornada da Organização permanece incompleta e `draft`. O wireframe principal autenticado da Organização permanece **pendente**, enquanto fluxos especializados preservam apenas a maturidade que possuam por autoridade própria.
+O detalhamento está `active` 0.7.0 como parte integrante do registro. A Jornada da Organização permanece incompleta e `draft`. A arquitetura da informação autenticada está **definida pre-surface-map**; o mapa final de superfícies e o wireframe principal autenticado da Organização permanecem **pendentes**, enquanto fluxos especializados preservam apenas a maturidade que possuam por autoridade própria.

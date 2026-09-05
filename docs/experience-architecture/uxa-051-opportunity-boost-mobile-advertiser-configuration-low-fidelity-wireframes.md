@@ -27,6 +27,9 @@ normative: false
 
 # Wireframes de Baixa Fidelidade da Configuração Móvel do Anunciante do Opportunity Boost
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa a referência gráfica reformulada e funcionalmente validada da configuração móvel do anunciante do Opportunity Boost em cinco wireframes de baixa fidelidade.
@@ -96,9 +99,7 @@ A redução de espaço não autoriza remover bloqueios, critérios protegidos, c
 
 ### 5.1 Elegibilidade e gate de entrada
 
-![Elegibilidade móvel validada do Opportunity Boost](../assets/wireframes/uxa-051-opportunity-boost-eligibility-mobile.svg)
 
-`docs/assets/wireframes/uxa-051-opportunity-boost-eligibility-mobile.svg`
 
 Demonstra:
 
@@ -113,9 +114,7 @@ Demonstra:
 
 ### 5.2 Objetivo e critérios de distribuição
 
-![Objetivo e critérios móveis validados do Opportunity Boost](../assets/wireframes/uxa-051-opportunity-boost-objective-audience-mobile.svg)
 
-`docs/assets/wireframes/uxa-051-opportunity-boost-objective-audience-mobile.svg`
 
 Demonstra:
 
@@ -132,9 +131,7 @@ Demonstra:
 
 ### 5.3 Orçamento, duração e estimativa
 
-![Orçamento móvel validado do Opportunity Boost](../assets/wireframes/uxa-051-opportunity-boost-budget-schedule-mobile.svg)
 
-`docs/assets/wireframes/uxa-051-opportunity-boost-budget-schedule-mobile.svg`
 
 Demonstra:
 
@@ -151,9 +148,7 @@ Demonstra:
 
 ### 5.4 Prévia e confirmação
 
-![Prévia móvel validada do Opportunity Boost](../assets/wireframes/uxa-051-opportunity-boost-preview-confirmation-mobile.svg)
 
-`docs/assets/wireframes/uxa-051-opportunity-boost-preview-confirmation-mobile.svg`
 
 Demonstra:
 
@@ -170,9 +165,7 @@ Demonstra:
 
 ### 5.5 Envio para avaliação
 
-![Envio móvel validado para avaliação do Opportunity Boost](../assets/wireframes/uxa-051-opportunity-boost-submission-mobile.svg)
 
-`docs/assets/wireframes/uxa-051-opportunity-boost-submission-mobile.svg`
 
 Demonstra:
 

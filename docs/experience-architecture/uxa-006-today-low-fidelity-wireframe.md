@@ -23,6 +23,9 @@ normative: false
 
 # Wireframe de Baixa Fidelidade da Tela Hoje (identificador UXA-006)
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 O identificador técnico `UXA-006` serve somente para rastreabilidade. O nome de leitura desta superfície é **Tela Hoje**.
 
 Esta versão incorpora a **Validação Funcional e Reformulação da Tela Hoje**, o princípio de **Presença Companheira e Coerência de Posicionamento da Guivos** e a nova precedência da **Página Inicial da Guivos e Início da Jornada**.
@@ -53,9 +56,7 @@ Quando a compreensão inicial ainda for insuficiente, a pessoa permanecerá na e
 
 ## 2. Wireframe reformulado
 
-![Wireframe móvel reformulado da Tela Hoje](../assets/wireframes/uxa-006-hoje-mobile.svg)
 
-[Visualizar o arquivo gráfico vetorial escalável](../assets/wireframes/uxa-006-hoje-mobile.svg)
 
 O wireframe permanece monocromático e estrutural. Ele não define cores, tipografia, iconografia ou componentes finais.
 

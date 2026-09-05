@@ -2,9 +2,9 @@
 id: GKR-UX-D5-B-001
 title: Materialização Controlada dos Domínios de Evolução na Camada de Oportunidades
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-30
 parent: UXA-000
 normative: false
 related:
@@ -227,11 +227,11 @@ A D5-B utiliza os ativos já existentes e não cria nova família visual.
 
 O SVG de `ORG-002` atualmente apresenta um passo posterior do wizard e reutiliza `Jornada e contribuição` como resumo. A D5-B governa que a área relacionada integra esse resumo quando declarada, sem alterar a etapa ativa ou criar nova etapa.
 
-## 10. Contagens preservadas
+## 10. Contagens preservadas — snapshot histórico da D5-B
 
-A D5-B preserva:
+No fechamento original da D5-B, a frente registrou como snapshot:
 
-- **118 SVGs canônicos**;
+- **118 SVGs então tratados como canônicos**;
 - **118 associações individuais**;
 - **31 perfis de rastreabilidade**;
 - **54 superfícies/estados/fronteiras**;
@@ -240,7 +240,11 @@ A D5-B preserva:
 - **10 responsabilidades sem SVG dedicado**;
 - **2 fronteiras sem tela**.
 
-Não há novo `PER-*`, `COL-*`, `ORG-*`, `BND-*` ou `TRN-*`.
+Esses números preservam a evidência histórica da D5-B e **não representam o inventário ou a maturidade visual vigente do corpus**.
+
+A leitura atual é governada pela auditoria integral e pelos registries vigentes.
+
+Não houve novo `PER-*`, `COL-*`, `ORG-*`, `BND-*` ou `TRN-*` como efeito próprio da D5-B.
 
 ## 11. Critérios de aceitação
 
@@ -257,7 +261,7 @@ Não há novo `PER-*`, `COL-*`, `ORG-*`, `BND-*` ou `TRN-*`.
 | mesmo domínio não cria recomendação | atendido |
 | domínio sensível não vira segmentação de Ads | atendido |
 | nenhuma nova superfície/transição | atendido |
-| contagens de UX preservadas | atendido |
+| contagens de UX preservadas no snapshot da frente | atendido |
 
 ## 12. Fora do escopo
 

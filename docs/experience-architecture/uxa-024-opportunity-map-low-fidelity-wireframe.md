@@ -25,6 +25,9 @@ normative: false
 
 # Wireframe de Baixa Fidelidade do Mapa de Oportunidades
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento materializa a referência gráfica móvel do Mapa de Oportunidades como superfície própria da navegação recorrente da Guivos.
@@ -57,11 +60,9 @@ A superfície também poderá ser acessada:
 
 ## 3. Artefato visual reformulado
 
-![Wireframe reformulado de baixa fidelidade do Mapa de Oportunidades](../assets/wireframes/uxa-024-opportunity-map-mobile.svg)
 
 Arquivo vetorial:
 
-`docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg`
 
 Dimensão de referência:
 

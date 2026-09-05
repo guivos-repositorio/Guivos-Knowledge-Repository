@@ -30,6 +30,9 @@ normative: false
 
 # Materialização Controlada de Meus Coletivos e Refinamento da Continuidade Pós-Aprovação
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A UXA-091 materializa exclusivamente a referência P0A de `GKR-SURF-PER-106 — Meus Coletivos` e refina a passagem documental entre o resultado aprovado da solicitação em `GKR-SURF-PER-105` e essa nova superfície.
@@ -67,9 +70,7 @@ Não são materializados nesta UXA os estados P0B próprios de:
 
 ## 4. Wireframe principal
 
-![Wireframe móvel de Meus Coletivos](../assets/wireframes/uxa-091-my-collectives-mobile.svg)
 
-[Visualizar o arquivo gráfico vetorial escalável](../assets/wireframes/uxa-091-my-collectives-mobile.svg)
 
 O wireframe é estrutural e monocromático. Não define identidade visual final, componente técnico, consulta implementada ou prontidão de produto.
 

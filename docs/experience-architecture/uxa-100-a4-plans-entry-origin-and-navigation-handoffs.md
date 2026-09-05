@@ -26,6 +26,9 @@ normative: false
 
 # Origens Administrativas e Handoffs de Entrada em Planos
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A UXA-100-A4 fecha exclusivamente a lacuna documental de **origem voluntária para Planos** identificada após a promoção canônica da UXA-100-A3.
@@ -54,7 +57,7 @@ Contudo, não existe no registro granular uma identidade própria para essa resp
 
 `ORG-001 — Visão Geral da Organização` é a superfície inicial do contexto institucional e já possui navegação institucional.
 
-A auditoria encontrou um desvio semântico no SVG `uxa-015-organization-overview-desktop.svg`: o cabeçalho lateral ainda dizia `Guivos Business`, em conflito com a autoridade vigente:
+A auditoria encontrou um desvio semântico no SVG `antigo ativo visual F-006 de ORG-001`: o cabeçalho lateral ainda dizia `Guivos Business`, em conflito com a autoridade vigente:
 
 ```text
 Organização ≠ Guivos Business

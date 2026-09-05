@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.4.0
+version: 3.11.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-05
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.4.0
+→ 3.11.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -35,8 +35,21 @@ PRÓXIMA UXA
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
 
-PRÓXIMO BLOCO DA AUDITORIA
-→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
+BLOCO 2 — G / H / I
+→ G COMPLETED / UPDATE_APPLIED
+→ H AUDITED / UPDATE_APPLIED / F-006 RESOLVED
+→ I AUDITED / UPDATE_APPLIED / F-006 RESOLVED
+→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+F-010
+→ RESOLVED / CLEANUP + POST-CLEANUP VALIDATION + INDEPENDENT REVIEW COMPLETE
+→ F-006 RESOLVED; J/K/L/M/N E DEMAIS DOWNSTREAM NÃO LIBERADOS
+
+PRÓXIMO EIXO DA AUDITORIA
+→ F-016 — DESMATERIALIZAÇÃO DOCUMENTAL REPO-WIDE
+→ ABSORVER CONTEÚDO FUNCIONAL ÚNICO
+→ REMOVER OU REESCREVER MATERIALIZAÇÕES QUE COMPETEM COM DESIGN
+→ DESIGN É A AUTORIDADE EXCLUSIVA DA MATERIALIZAÇÃO VISUAL
 ```
 
 A presença de uma UXA neste índice significa que o artefato existe e integra a família numerada. Ela **não** prova que todo artefato ou materialização por ela referenciado continuará no corpus após a auditoria.
@@ -94,11 +107,11 @@ A auditoria integral decidirá quais artefatos antigos devem ser absorvidos e re
 - [UXA-078](uxa-078-controlled-granular-registry-reformulation.md)
 - [UXA-079](uxa-079-granular-registry-functional-revalidation.md)
 - [UXA-080](uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md)
-- [UXA-081](uxa-081-integrated-screen-gallery-and-coverage-audit.md)
-- [UXA-082](uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md)
-- [UXA-083](uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md)
-- [UXA-084](uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md)
-- [UXA-085](uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md)
+- UXA-081
+- UXA-082
+- UXA-083
+- UXA-084
+- UXA-085
 
 ## UXA-086 a UXA-096 — continuidade de Coletivos
 
@@ -156,7 +169,7 @@ GKR-UX-ORGCOL-AUTH-JOBS-001
 → atores, autoridades e jobs prioritários definidos
 
 GKR-UX-ORGCOL-AUTH-IA-001
-→ Arquitetura da Informação definida
+→ Arquitetura da Informação definida pre-surface-map
 ```
 
 Ainda não são canônicos:
@@ -172,18 +185,25 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.4.0** |
+| Registro do Estado Atual | **3.9.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
 | Auditoria integral | **IN_PROGRESS** |
 | Lotes concluídos | **A / B / C / D / E / F** |
-| Próximo bloco da auditoria | **G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL** |
+| Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey remains draft** |
+| Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
+| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
+| F-010 — cleanup transversal | **RESOLVED — CLEANUP / VALIDATION / INDEPENDENT REVIEW COMPLETE** |
+| F-016 | **OPEN — REPO-WIDE DOCUMENTATION DEMATERIALIZATION** |
+| F-016-A — camada física SVG | **RESOLVED / PHYSICAL CLEANUP 119/119 / PHYSICAL SVG COUNT 0 / POST-DELETE PROOF V2 SUCCESS** |
+| Próximo gate físico | **AUTORIZAÇÃO HUMANA SEPARADA PARA F-016-A; se concedida, cleanup + reconciliação atômica + recomputação + validações/review** |
+| J/K/L/M/N | **NOT RELEASED AUTOMATICALLY** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
-| Maturidade visual agregada | **não inferir durante recomputação** |
+| Maturidade visual agregada | **NOT_CERTIFIED** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 
-A auditoria integral pode consolidar ou remover do corpus atual documentos desta família quando o conhecimento vigente tiver sido absorvido e as referências forem reconciliadas. Isso não muda, por si só, os estados funcionais que continuarem sustentados por autoridade vigente.
+A auditoria integral pode consolidar ou remover do corpus atual documentos desta família quando o conhecimento vigente tiver sido absorvido e as referências forem reconciliadas. Isso não muda, por si só, os estados funcionais sustentados por autoridades textuais vigentes.

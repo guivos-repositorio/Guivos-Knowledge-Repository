@@ -2,9 +2,9 @@
 id: GKR-UX-D5-A-001
 title: Materialização Controlada dos Domínios de Evolução na Jornada Inicial
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-08-30
 parent: UXA-000
 normative: false
 related:
@@ -23,6 +23,9 @@ related:
 ---
 
 # GKR-UX-D5-A-001 — Materialização Controlada dos Domínios de Evolução na Jornada Inicial
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
@@ -260,18 +263,22 @@ A frente reforma quatro SVGs existentes:
 
 Nenhum novo SVG é criado.
 
-## 10. Contagens preservadas
+## 10. Contagens preservadas — snapshot histórico da D5-A
 
-A D5-A preserva:
+No fechamento original da D5-A, a frente registrou como snapshot:
 
-- **118 SVGs canônicos**;
+- **118 SVGs então tratados como canônicos**;
 - **118 associações individuais**;
 - **31 perfis de rastreabilidade**;
 - **54 superfícies/estados/fronteiras**;
 - **60 transições documentais**;
-- `PER-004`, `PER-007` e `PER-008` como IDs vigentes.
+- `PER-004`, `PER-007` e `PER-008` como IDs vigentes naquele recorte.
 
-Não há novo `PER-*`, `COL-*`, `ORG-*`, `BND-*` ou `TRN-*`.
+Esses números preservam a evidência histórica da D5-A e **não representam o inventário ou a maturidade visual vigente do corpus**.
+
+A leitura atual é governada pela auditoria integral e pelos registries vigentes.
+
+Não houve novo `PER-*`, `COL-*`, `ORG-*`, `BND-*` ou `TRN-*` como efeito próprio da D5-A.
 
 ## 11. Critérios de aceitação da D5-A
 
@@ -289,7 +296,7 @@ Não há novo `PER-*`, `COL-*`, `ORG-*`, `BND-*` ou `TRN-*`.
 | JED interno não aparece como rótulo público | atendido |
 | domínio não vira score/diagnóstico/identidade | atendido |
 | nenhuma superfície ou transição nova | atendido |
-| 118 SVGs preservados | atendido |
+| 118 SVGs preservados no snapshot da frente | atendido |
 
 ## 12. Fora do escopo
 

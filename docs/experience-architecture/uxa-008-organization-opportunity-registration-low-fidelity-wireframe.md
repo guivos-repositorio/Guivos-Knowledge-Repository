@@ -23,6 +23,9 @@ normative: false
 
 # Wireframe de Baixa Fidelidade do Cadastro de Oportunidade pela Organização
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 O identificador técnico `UXA-008` serve somente para rastreabilidade. O nome de leitura desta superfície é **Cadastro de Oportunidade pela Organização**.
 
 Esta versão incorpora a **Presença Companheira e Coerência de Posicionamento**, a **Compreensão do Momento, Evidência de Avanço e Explicabilidade do Próximo Passo** e a **Validação Funcional e Reformulação do Cadastro de Oportunidade pela Organização**.
@@ -35,9 +38,7 @@ A superfície não deverá parecer portal genérico de anúncios, formulário co
 
 ## 2. Wireframe reformulado
 
-![Wireframe para computador reformulado do cadastro de oportunidade](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg)
 
-[Visualizar o arquivo gráfico vetorial escalável](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg)
 
 O wireframe representa a etapa **Investimento e condições**, mantendo visível o contexto declarado anteriormente em **Jornada e contribuição**.
 

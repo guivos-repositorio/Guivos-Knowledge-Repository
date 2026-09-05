@@ -2,9 +2,9 @@
 id: UXA-056
 title: Contrato Funcional de Descoberta, Perfil Público e Participação em Coletivos
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-03
+last_updated: 2026-08-30
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -14,8 +14,6 @@ depends_on:
   - UXA-011
   - UXA-011-A1
   - UXA-014
-  - UXA-016
-  - UXA-018
   - UXA-019
   - UXA-024
   - UXA-025
@@ -31,6 +29,8 @@ related:
   - UXA-005
   - UXA-057
   - UXA-058
+  - UXA-095
+  - UXA-096
   - M7.58
 normative: false
 ---
@@ -105,7 +105,7 @@ Deverá apresentar:
 
 ### 4.2 Início do participante
 
-Superfície interna após confirmação do vínculo. A UXA-016 e a UXA-018 permanecem autoridades do Início do Coletivo como experiência interna, não como perfil público universal.
+Superfície interna após confirmação do vínculo. `UXA-016` e `UXA-018` permanecem apenas como proveniência histórica `superseded`; não são autoridades vigentes desta superfície. A materialização e a validação posteriores do Início do Participante possuem maturidade própria em `UXA-095/096`, no recorte da Pessoa participante, e não definem a UX principal autenticada administrativa do Coletivo.
 
 Deverá reunir, conforme permissões:
 
@@ -395,6 +395,29 @@ Disponibilidade poderá ser:
 - pausada.
 
 Recusa, ausência, silêncio, pausa ou baixa frequência não reduzirão automaticamente pertencimento, visibilidade legítima ou reputação.
+
+### 14.1 Critérios de aceite para solicitações de participação
+
+Uma solicitação de participação, colaboração ou responsabilidade somente será funcionalmente válida quando:
+
+- possuir finalidade clara;
+- informar esforço estimado e prazo real;
+- não expuser quem recusou;
+- não ameaçar pertencimento;
+- exigir aceitação explícita;
+- permitir desistência ou devolução legítima da responsabilidade;
+- respeitar permissões e privacidade;
+- possuir alternativa ou fallback caso ninguém aceite;
+- não utilizar culpa, ranking ou pressão emocional.
+
+```text
+PERTENCIMENTO
+≠ DISPONIBILIDADE
+≠ RESPONSABILIDADE ACEITA
+≠ AUTORIDADE
+```
+
+Esses critérios absorvem o conteúdo funcional material válido preservado historicamente em `UXA-018`, que permanece `superseded` e sem autoridade funcional vigente.
 
 ## 15. Contagens públicas
 

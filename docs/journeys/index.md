@@ -2,9 +2,9 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.40.0
+version: 0.44.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-26
+last_updated: 2026-09-05
 related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
@@ -18,7 +18,6 @@ related:
   - GKR-UX-D5-C4B-001
   - UXA-070
   - UXA-080
-  - UXA-085
   - UXA-090
   - UXA-097
   - UXA-098
@@ -27,8 +26,6 @@ related:
   - UXA-100-A3
   - UXA-100-A4
   - UXA-101
-  - GKR-JOURNEY-SCREEN-GALLERY-001
-  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -38,6 +35,9 @@ normative: false
 ---
 
 # Jornadas Integradas
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
@@ -50,9 +50,6 @@ A investigação de supply, oportunidades reais e testes de relevância de Organ
 ## 2. Vistas disponíveis
 
 - [Propagação dos Domínios de Evolução nas Jornadas — D4](evolution-domains-d4.md)
-- [Galeria Visual Integrada de Telas](screen-gallery.md)
-- [Planos, Comparação e Cobrança — Galeria Canônica](screen-gallery-plans-billing.md)
-- [Matriz de Rastreabilidade Visual por SVG](screen-gallery-traceability-matrix.md)
 - [Catálogo de Telas](screen-catalog.md)
 - [Jornada da Pessoa](person.md)
 - [Jornada do Coletivo](collective.md)
@@ -91,27 +88,22 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.40.0 | D4 + D5-C4B + reconciliação pós-313/314 |
+| visão geral das Jornadas Integradas | `active` 0.43.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A |
 | propagação dos Domínios de Evolução | `active` 1.0.0 | GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001 |
-| D5-A — jornada inicial | `active` 1.0.0 | materialização in-place |
-| D5-B — Oportunidades | `active` 1.0.0 | materialização in-place |
+| D5-A — jornada inicial | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
+| D5-B — Oportunidades | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
 | D5-C1 — contrato direção/movimento/evolução | `active` 1.0.0 | três responsabilidades + seis handoffs contratados |
-| D5-C2 — low-fidelity direção/movimento/evolução | `active` 1.0.0 | 3 SVGs materializados |
-| D5-C3 — validação local | `active` 1.0.0 | 3 SVGs reformulados/validados |
-| D5-C4A — contrato/materialização dos handoffs | `active` 1.0.0 | Hoje recorrente reformulado/revalidado; contrato fechado |
-| D5-C4B — validação integrada dos handoffs | `active` 1.0.0 | TRN-008..013 integralmente validadas |
+| D5-C2/D5-C3/D5-C4A/D5-C4B | `active` | funções e validações textuais preservadas; materialização física sob F-016 |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita preservada |
-| Jornada da Pessoa | `draft` | D4; D5-C1/C2/C3/C4A/C4B; origem de Planos A4; V4 UXA-101 |
-| Jornada do Coletivo | `draft` 0.19.0 | arquitetura principal autenticada pendente; fluxos especializados preservam maturidade própria |
-| Jornada da Organização | `draft` 0.12.0 | arquitetura principal autenticada pendente; fluxos especializados preservam maturidade própria |
-| atlas de supply/relevância Org/Col | `active` 1.1.0, não normativo | exemplos globais + simulações + gates; validação humana/PMF pendente |
-| catálogo integrado | `active` | 121 SVGs físicos; claim agregada antiga de validação superseded |
-| registro de superfícies | `active` | 57 IDs documentais; maturidade por objeto deve ser lida individualmente |
-| registro de transições | `active` | 66 transições documentais; maturidade por contrato preservada |
-| galeria visual integrada | `active` | 121 SVGs físicos para inspeção; não equivalem a 121 wireframes vigentes |
-| galeria de Planos | `active` | 9 SVGs do fluxo especializado de Planos |
-| matriz por SVG | `active` | 121 associações físicas / 34 perfis; não é prova agregada de vigência |
-| registro de lacunas | `active` | wireframes principais autenticados de Organização e Coletivo pendentes; demais gaps preservados |
+| Jornada da Pessoa | `draft` | V4 UXA-101; UXA-102 não iniciada |
+| Jornada do Coletivo | `draft` | Jobs + IA definidos pre-surface-map; mapa final e wireframe principal pendentes |
+| Jornada da Organização | `draft` | Jobs + IA definidos pre-surface-map; mapa final e wireframe principal pendentes |
+| catálogo integrado | `active` 0.33.0 | **0 SVGs físicos após F-016-A**; contratos textuais preservados; maturidade agregada não inferida |
+| registro de superfícies | `active` | 57 IDs documentais |
+| registro de transições | `active` | 66 transições documentais |
+| antiga galeria visual integrada | `removed_from_current_corpus` | proveniência preservada no histórico Git |
+| antiga matriz por SVG | `removed_from_current_corpus` | associações/perfis recuperáveis no histórico Git |
+| F-016-A | `resolved` | **119/119 SVGs removidos; 0 SVGs físicos; referências vivas reconciliadas; Semantic #832 + Mechanical #1090 + prova pós-delete v2 SUCCESS** |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -235,8 +227,8 @@ A nomenclatura vigente é:
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs físicos existentes | **121** |
-| associações físicas registradas | **121** |
+| SVGs físicos existentes | **0** |
+| associações físicas registradas | **0** |
 | perfis documentais | **34** |
 | claim agregada anterior `121 validados / 0 pendentes` | **superseded como estado de maturidade vigente** |
 | nova contagem agregada de wireframes vigentes/validados | **não inferida; requer recomputação governada** |
@@ -244,8 +236,8 @@ A nomenclatura vigente é:
 | wireframe principal autenticado do Coletivo | **pendente** |
 | superfícies/estados/fronteiras documentais | **57** |
 | transições documentais | **66** |
-| IDs com referência visual física | **45 de 57** |
-| responsabilidades sem SVG dedicado | **10** |
+| IDs com referência visual física | **0 de 57** |
+| responsabilidades sem SVG dedicado | **métrica histórica; não usada como cobertura corrente após F-016-A** |
 | fronteiras sem tela | **2** |
 
 ```text
@@ -280,7 +272,7 @@ INVENTÁRIO FÍSICO
 
 V1, V2, V3 e V4 estão encerradas nos limites declarados. D4 propaga `JED-001..JED-009`; D5-A e D5-B materializam o eixo em superfícies existentes; D5-C1 contrata `PER-010..012` e `TRN-008..013`; D5-C2 materializa as três superfícies; D5-C3 valida localmente os três SVGs; D5-C4A materializa as origens em Hoje e governa o contrato integrado; D5-C4B promove as seis ligações para integralmente validadas no limite documental.
 
-A reconciliação pós-313/314 corrige separadamente a maturidade da arquitetura principal de Organização e Coletivo: seus wireframes principais autenticados continuam pendentes, ainda que fluxos especializados preservem validações próprias.
+A reconciliação pós-313/314 e o Bloco H preservam Jobs + IA autenticada como definidos em estado pre-surface-map. Os wireframes principais autenticados de Organização e Coletivo continuam pendentes e o gap começa no mapa final de superfícies, ainda que fluxos especializados preservem validações próprias.
 
 O atlas de supply e relevância documenta Research consolidado e simulações, mas não substitui o Dry Run/Piloto com Pessoas reais.
 

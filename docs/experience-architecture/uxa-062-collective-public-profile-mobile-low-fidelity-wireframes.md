@@ -30,6 +30,9 @@ normative: false
 
 # Wireframes Móveis do Perfil Público do Coletivo
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 Este documento governa a terceira referência P0A do programa UXA-059: o Perfil Público móvel do Coletivo.
@@ -62,27 +65,19 @@ Após a UXA-063:
 
 ### 3.1 Entrada aberta
 
-![Perfil público móvel com entrada aberta](../assets/wireframes/uxa-062-collective-public-profile-open-entry-mobile.svg)
 
-`docs/assets/wireframes/uxa-062-collective-public-profile-open-entry-mobile.svg`
 
 ### 3.2 Entrada mediante aprovação
 
-![Perfil público móvel com entrada mediante aprovação](../assets/wireframes/uxa-062-collective-public-profile-approval-entry-mobile.svg)
 
-`docs/assets/wireframes/uxa-062-collective-public-profile-approval-entry-mobile.svg`
 
 ### 3.3 Entradas temporariamente indisponíveis
 
-![Perfil público móvel com entradas temporariamente indisponíveis](../assets/wireframes/uxa-062-collective-public-profile-closed-entry-mobile.svg)
 
-`docs/assets/wireframes/uxa-062-collective-public-profile-closed-entry-mobile.svg`
 
 ### 3.4 Apresentação protegida
 
-![Apresentação móvel protegida de Coletivo](../assets/wireframes/uxa-062-collective-public-profile-protected-mobile.svg)
 
-`docs/assets/wireframes/uxa-062-collective-public-profile-protected-mobile.svg`
 
 ## 4. Canal e dimensões
 
