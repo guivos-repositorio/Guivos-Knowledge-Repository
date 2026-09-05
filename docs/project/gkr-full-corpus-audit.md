@@ -818,7 +818,7 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | G — Jornada da Pessoa | `COMPLETED` | contradição de handoff reconciliada; sem rebuild |
 | H — Organização / Coletivo | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED` | Jobs + IA propagados; cleanup F-006 concluído e validado |
 | I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED / F-007_RESOLVED / F-016-A_RESOLVED / F-016_RESOLVED` | camada SVG removida; inventário físico corrente = 0; cleanup documental F-016 concluído 26/26 com autoridades/validadores/evidências preservados |
-| J — Produtos / Economia | `PENDING` | masters atuais sem fragmentação |
+| J — Produtos / Economia | `RELEASED / DOCUMENTARY_AUDIT_ONLY` | auditar e reconciliar masters atuais sem fragmentação; nenhuma implementação autorizada |
 | K — Research / RP-002 | `PENDING` | método/evidência preservados; intermediários absorvidos quando possível |
 | L — Tecnologia / Dados / IA | `PENDING` | autoridades atuais e fronteiras claras |
 | M — Jurídico / Privacidade / Institucional | `PENDING` | documental e operacional separados corretamente |
@@ -848,7 +848,9 @@ H/I. O/C + inventário visual                     [auditados/remediados; F-006 r
 ↓
 F-016. desmaterialização documental              [RESOLVED; F-016-A resolved; cleanup documental 26/26 + prova pós-delete concluídos]
 ↓
-J/K/L/M/N. domínios especializados               [não liberados automaticamente]
+J. Produtos / Economia                            [RELEASED / DOCUMENTARY AUDIT ONLY]
+↓
+K/L/M/N. domínios especializados                 [PENDING / NOT RELEASED]
 ↓
 O. MENU final
 ↓
@@ -1017,9 +1019,10 @@ F-016-A
 → INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS
 → RESOLVED
 
-NEXT SPECIALIZED BLOCK J/K/L/M/N
-→ NOT RELEASED AUTOMATICALLY
-→ REQUIRE SEPARATE GOVERNED RELEASE DECISION
+DOWNSTREAM RELEASE ADJUDICATION
+→ J RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ K / L / M / N PENDING / NOT RELEASED
+→ J RELEASE DOES NOT AUTHORIZE IMPLEMENTATION / OPERATION
 
 BASELINE FINAL
 → NOT AUTHORIZED

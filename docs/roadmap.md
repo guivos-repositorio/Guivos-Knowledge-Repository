@@ -53,7 +53,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. Esse fechamento não libera automaticamente J/K/L/M/N.
+Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. A decisão downstream subsequente libera exclusivamente J para auditoria documental; K/L/M/N permanecem não liberados.
 
 `F-016-A` concluiu o ciclo governado: elegibilidade estrutural/semântica, autorização humana separada, cleanup físico 119/119, reconciliação, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. A subfrente está `RESOLVED` e o inventário físico corrente de SVGs é zero.
 
@@ -82,6 +82,8 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | F-010 | **RESOLVED** |
 | F-016 | **RESOLVED — AUDIT + ADJUDICATION + CLEANUP 26/26 + POST-DELETE PROOF COMPLETE** |
 | F-016-A | **RESOLVED — PHYSICAL SVG COUNT 0** |
+| Lote J — Produtos / Economia | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
+| Lotes K / L / M / N | **PENDING / NOT RELEASED** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |
@@ -157,17 +159,17 @@ F-006 CLEANUP 6/6                        [APPLIED / VALIDATED / RESOLVED]
 ↓
 F-016 DESMATERIALIZAÇÃO DOCUMENTAL       [RESOLVED / 26/26 LEGACY PRODUCERS REMOVED]
 ↓
-DECISÃO GOVERNADA SOBRE J/K/L/M/N         [NOT RELEASED AUTOMATICALLY]
+DECISÃO GOVERNADA SOBRE J/K/L/M/N         [J RELEASED DOCUMENTARY-ONLY / K-L-M-N HOLD]
 ↓
-J. PRODUTOS / ECONOMIA                   [PENDING / NOT RELEASED AUTOMATICALLY]
+J. PRODUTOS / ECONOMIA                   [RELEASED FOR DOCUMENTARY AUDIT ONLY]
 ↓
-K. RESEARCH / RP-002                     [PENDING / NOT RELEASED AUTOMATICALLY]
+K. RESEARCH / RP-002                     [PENDING / NOT RELEASED]
 ↓
-L. TECNOLOGIA / DADOS / IA               [PENDING / NOT RELEASED AUTOMATICALLY]
+L. TECNOLOGIA / DADOS / IA               [PENDING / NOT RELEASED]
 ↓
-M. JURÍDICO / PRIVACIDADE / INSTITUCIONAL [PENDING / NOT RELEASED AUTOMATICALLY]
+M. JURÍDICO / PRIVACIDADE / INSTITUCIONAL [PENDING / NOT RELEASED]
 ↓
-N. GTM / PRESENÇA PÚBLICA                [PENDING / NOT RELEASED AUTOMATICALLY]
+N. GTM / PRESENÇA PÚBLICA                [PENDING / NOT RELEASED]
 ↓
 O. MENU FINAL / ROTAS MULTIEQUIPE        [PENDING / HOLD]
 ↓
@@ -564,6 +566,21 @@ CONTAGEM FÍSICA DE SVGs
 As famílias Markdown adjudicadas sob F-016 foram classificadas individualmente; o cleanup governado removeu os 26 produtores legados elegíveis após absorção, preservando autoridades, validadores e evidências correntes. Histórico e proveniência permanecem no Git.
 
 ## 14. Lote J — Produtos, planos e economia
+
+Estado governado:
+
+```text
+J
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+
+IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION
+→ NOT AUTHORIZED
+
+K / L / M / N
+→ NOT RELEASED
+```
+
+Esta liberação permite somente confrontar, reconciliar, consolidar e enriquecer autoridades documentais existentes no escopo de Produtos/Economia. Ela não autoriza alterar realidade operacional, preços reais, cobrança, contratos, sistemas, PMF ou disponibilidade comercial por inferência.
 
 Preservar e auditar fronteiras entre:
 
@@ -976,9 +993,10 @@ F-016
 → POST-DELETE PROOF = SUCCESS
 → RESOLVED
 
-NEXT DOWNSTREAM DECISION
-→ J / K / L / M / N REMAIN NOT RELEASED AUTOMATICALLY
-→ REQUIRE SEPARATE GOVERNED RELEASE DECISION
+DOWNSTREAM ADJUDICATION
+→ J RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ K / L / M / N REMAIN NOT RELEASED
+→ NEXT EXECUTION = J DOCUMENTARY AUDIT
 ```
 
-J/K/L/M/N, `UXA-102/V5`, Design, Product Engineering e merge da PR #363 permanecem bloqueados ou não autorizados.
+K/L/M/N, `UXA-102/V5`, Design, Product Engineering e merge da PR #363 permanecem bloqueados ou não autorizados. J está liberado somente para auditoria documental.

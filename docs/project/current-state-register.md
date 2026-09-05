@@ -105,8 +105,12 @@ F-016 CLOSURE
 → CURRENT AUTHORITIES / VALIDATORS / EVIDENCE PRESERVED
 → REINTRODUCTION GUARDS ACTIVE
 
-J / K / L / M / N
-→ NOT RELEASED AUTOMATICALLY
+J — PRODUTOS / ECONOMIA
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION NOT AUTHORIZED
+
+K / L / M / N
+→ PENDING / NOT RELEASED
 
 UXA-102 / V5
 → NOT_STARTED
@@ -1253,7 +1257,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.11.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.14.0` está ativo como instrumento temporário de execução.
 
 ```text
 A / B / C / D / E / F / G
@@ -1274,8 +1278,12 @@ F-016-A
 → RESOLVED
 → PHYSICAL SVG COUNT = 0
 
-J–N
-→ PENDING / NOT RELEASED AUTOMATICALLY
+J
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ NO IMPLEMENTATION AUTHORIZATION
+
+K / L / M / N
+→ PENDING / NOT RELEASED
 
 O
 → PENDING / HOLD
@@ -1348,7 +1356,7 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-O próximo ato governado é adjudicar separadamente a liberação de J/K/L/M/N, sem iniciar automaticamente qualquer desses blocos.
+A adjudicação downstream libera exclusivamente o Lote J para auditoria documental. K/L/M/N permanecem não liberados; a liberação de J não autoriza implementação, operação comercial, Design, Product Engineering, PMF ou execução de Research/GTM.
 
 ```text
 F-016-A
@@ -1361,8 +1369,9 @@ F-016
 → POST-DELETE PROOF SUCCESS
 
 NEXT
-→ EVALUATE J / K / L / M / N UNDER SEPARATE GOVERNED RELEASE
-→ NO AUTOMATIC RELEASE
+→ EXECUTE J — PRODUCTS / ECONOMY DOCUMENTARY AUDIT ONLY
+→ PRESERVE CURRENT AUTHORITIES AND ECONOMIC DISTINCTIONS
+→ K / L / M / N REMAIN NOT RELEASED
 
 O
 → PENDING / HOLD
@@ -1381,4 +1390,4 @@ AINDA BLOQUEADOS
 → IMPLEMENTAÇÃO
 ```
 
-O fechamento de F-016 não autoriza automaticamente J/K/L/M/N, Design, UXA-102/V5, Product Engineering, PMF ou implementação.
+O fechamento de F-016 permitiu somente a adjudicação de downstream. O resultado vigente libera J para auditoria documental e mantém K/L/M/N, Design, UXA-102/V5, Product Engineering, PMF e implementação sem autorização.
