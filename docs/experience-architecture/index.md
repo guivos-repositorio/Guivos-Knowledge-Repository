@@ -12,7 +12,6 @@ related:
   - GLPA-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - UXA-001
-  - UXA-055
   - UXA-056
   - UXA-058
   - UXA-059
@@ -20,11 +19,8 @@ related:
   - UXA-070
   - UXA-080
   - UXA-090
-  - UXA-091
   - UXA-092
-  - UXA-093
   - UXA-094
-  - UXA-095
   - UXA-096
   - UXA-097
   - UXA-098

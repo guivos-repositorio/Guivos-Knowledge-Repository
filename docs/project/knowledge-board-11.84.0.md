@@ -8,10 +8,6 @@ last_updated: 2026-07-26
 related:
   - GKR-STATE-001
   - ROADMAP-11.84.0
-  - UXA-005
-  - UXA-006
-  - UXA-007
-  - UXA-008
   - M7.19.2
 normative: false
 ---

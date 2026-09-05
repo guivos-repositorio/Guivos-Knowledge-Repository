@@ -7,7 +7,6 @@ owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
   - GKR-STATE-001
-  - UXA-093
 related:
   - ROADMAP-12.66.0
   - M7.80

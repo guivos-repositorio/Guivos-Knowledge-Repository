@@ -8,7 +8,6 @@ last_updated: 2026-08-07
 depends_on:
   - GKR-STATE-001
 related:
-  - UXA-088
   - GKR-SURF-COL-003
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - M7.75

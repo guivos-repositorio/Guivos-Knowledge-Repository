@@ -56,7 +56,7 @@ A referência agora demonstra:
 
 - `UXA-029 — Validação Funcional Especializada e Reformulação da Visualização em Lista do Mapa`;
 - UXA-028 atualizada para versão 0.2.0;
-- `docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg` reformulado;
+- `uxa-028-opportunity-map-list-mobile.svg [historical SVG; physical file removed in F-016-A]` reformulado;
 - `GKR-CANON-MATRIX-UXA-029`;
 - este histórico 1.52.0;
 - estado global, roadmap, painel, marcos, programa de wireframes, menu, README e páginas iniciais atualizados.

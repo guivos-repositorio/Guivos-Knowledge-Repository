@@ -11,7 +11,6 @@ depends_on:
   - UXA-058
   - UXA-059
   - UXA-094
-  - UXA-095
 related:
   - GKR-SURF-PER-107
   - GKR-SURF-PER-108

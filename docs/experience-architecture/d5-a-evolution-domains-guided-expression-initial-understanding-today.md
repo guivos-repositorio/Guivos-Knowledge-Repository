@@ -10,12 +10,9 @@ normative: false
 related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001
-  - UXA-006
   - UXA-010
   - UXA-011-A1
-  - UXA-036
   - UXA-037
-  - UXA-068
   - UXA-069
   - UXA-097
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001

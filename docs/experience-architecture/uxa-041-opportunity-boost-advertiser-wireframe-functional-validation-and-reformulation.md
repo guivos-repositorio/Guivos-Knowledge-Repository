@@ -7,11 +7,9 @@ owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-28
 parent: UXA-040
 depends_on:
-  - UXA-005
   - UXA-009
   - UXA-038
   - UXA-039
-  - UXA-040
   - GEM-007-A1
   - GEM-010-A2
 related:

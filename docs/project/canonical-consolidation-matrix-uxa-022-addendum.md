@@ -8,7 +8,6 @@ last_updated: 2026-07-26
 depends_on:
   - GKR-CANON-MATRIX-001
   - UXA-021
-  - UXA-022
 related:
   - GKR-STATE-001
   - ROADMAP-11.97.0

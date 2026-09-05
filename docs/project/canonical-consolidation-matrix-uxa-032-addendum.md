@@ -10,8 +10,6 @@ depends_on:
   - UXA-032
 related:
   - UXA-004
-  - UXA-005
-  - UXA-024
   - UXA-025
   - UXA-026
   - UXA-027
@@ -53,8 +51,8 @@ Ele não altera autoridades normativas de domínio e não cria decisão de tecno
 ## 3. Novos artefatos
 
 - `docs/experience-architecture/uxa-032-opportunity-map-desktop-reference.md`;
-- `docs/assets/wireframes/uxa-032-opportunity-map-desktop.svg`;
-- `docs/assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg`.
+- `uxa-032-opportunity-map-desktop.svg [historical SVG; physical file removed in F-016-A]`;
+- `uxa-032-opportunity-map-no-results-desktop.svg [historical SVG; physical file removed in F-016-A]`.
 
 ## 4. Estado resultante
 

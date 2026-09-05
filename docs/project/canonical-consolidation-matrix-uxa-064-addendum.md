@@ -9,7 +9,6 @@ related:
   - UXA-056
   - UXA-059
   - UXA-063
-  - UXA-064
   - ROADMAP-12.40.0
   - M7.66
 normative: false

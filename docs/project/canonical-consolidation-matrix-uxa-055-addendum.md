@@ -12,7 +12,6 @@ depends_on:
   - UXA-045
   - UXA-049
   - UXA-054
-  - UXA-055
 related:
   - M7.57
 normative: false

@@ -99,22 +99,51 @@ def main() -> int:
             artifacts[int(match.group(1))] = path
 
     removed_after_absorption = {
+        5: "uxa-005-low-fidelity-wireframes.md",
+        6: "uxa-006-today-low-fidelity-wireframe.md",
+        7: "uxa-007-opportunity-detail-low-fidelity-wireframe.md",
+        8: "uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md",
+        22: "uxa-022-public-home-low-fidelity-wireframe.md",
+        24: "uxa-024-opportunity-map-low-fidelity-wireframe.md",
+        34: "uxa-034-protected-journey-entry-low-fidelity-wireframe.md",
+        36: "uxa-036-initial-understanding-low-fidelity-wireframe.md",
+        40: "uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md",
+        42: "uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md",
+        44: "uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md",
+        46: "uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md",
+        48: "uxa-048-opportunity-boost-aggregated-report-low-fidelity-wireframes.md",
+        51: "uxa-051-opportunity-boost-mobile-advertiser-configuration-low-fidelity-wireframes.md",
+        53: "uxa-053-opportunity-boost-mobile-active-campaign-management-low-fidelity-wireframes.md",
+        55: "uxa-055-opportunity-boost-residual-states-low-fidelity-wireframes.md",
+        60: "uxa-060-collective-explore-and-search-mobile-low-fidelity-wireframes.md",
+        62: "uxa-062-collective-public-profile-mobile-low-fidelity-wireframes.md",
+        64: "uxa-064-collective-participation-review-request-mobile-low-fidelity-wireframes.md",
+        66: "uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md",
+        68: "uxa-068-guided-current-moment-text-voice-low-fidelity-wireframes.md",
         81: "uxa-081-integrated-screen-gallery-and-coverage-audit.md",
         82: "uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md",
         83: "uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md",
         84: "uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md",
         85: "uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md",
+        86: "uxa-086-collective-responsible-overview-low-fidelity-wireframe.md",
+        88: "uxa-088-collective-request-management-low-fidelity-wireframes.md",
+        91: "uxa-091-my-collectives-materialization-and-post-approval-continuity-refinement.md",
+        93: "uxa-093-collective-updates-center-materialization.md",
+        95: "uxa-095-participant-home-materialization-and-trn111-refinement.md",
     }
 
-    for number in range(47, 102):
+    for number, expected_name in removed_after_absorption.items():
+        expected_path = UXA_DIR / expected_name
         path = artifacts.get(number)
+        if expected_path.is_file() or path is not None:
+            errors.append(f"artefato UXA-{number:03d} deveria estar ausente após cleanup governado")
+        if expected_name in index_text:
+            errors.append(f"artefato removido UXA-{number:03d} permanece indexado: {expected_name}")
+
+    for number in range(47, 102):
         if number in removed_after_absorption:
-            expected_name = removed_after_absorption[number]
-            if path is not None:
-                errors.append(f"artefato UXA-{number:03d} deveria estar ausente após cleanup governado")
-            if expected_name in index_text:
-                errors.append(f"artefato removido UXA-{number:03d} permanece indexado: {expected_name}")
             continue
+        path = artifacts.get(number)
         if path is None:
             errors.append(f"artefato UXA-{number:03d} ausente")
         elif path.name not in index_text:

@@ -8,14 +8,10 @@ last_updated: 2026-07-26
 parent: GKR-CANON-MATRIX-001
 depends_on:
   - UXA-004
-  - UXA-024
 related:
   - GKR-CANON-MATRIX-UXA-025
   - UXA-002
   - UXA-003-A1
-  - UXA-005
-  - UXA-006
-  - UXA-007
   - UXA-010
   - UXA-012
   - UXA-025

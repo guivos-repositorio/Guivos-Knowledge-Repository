@@ -14,7 +14,6 @@ depends_on:
   - UXA-050
   - UXA-052
   - UXA-054
-  - UXA-055
   - GEM-007-A1
   - GEM-010-A2
 related:

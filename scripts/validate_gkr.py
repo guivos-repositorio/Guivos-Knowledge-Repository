@@ -29,6 +29,7 @@ FRONT_MATTER_DELIMITER = re.compile(r"^---\s*$")
 FENCED_CODE = re.compile(r"```.*?```|~~~.*?~~~", re.DOTALL)
 INLINE_CODE = re.compile(r"`[^`]*`")
 MARKDOWN_LINK = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+F016_SVG_PATH_REFERENCE = re.compile(r"(?i)(?:docs/)?assets/wireframes/[^\s)`\"']+\.svg")
 NAV_TECHNICAL_IDENTIFIER = re.compile(
     r"(?:^|\s)(?:UXA|GEM|GAI|GEF|GEB|GLPA|PAS|UIC|VAL|RP|AV|ADR|GCCM|MS|A2-R\d+)"
     r"-[A-Z0-9][A-Z0-9.-]*(?=\s|$|\s*[—–-])",
@@ -249,6 +250,14 @@ def main() -> int:
         return 1
 
     markdown_files = sorted(DOCS.rglob("*.md"))
+    wireframe_dir = DOCS / "assets" / "wireframes"
+    physical_svgs = sorted(wireframe_dir.glob("*.svg")) if wireframe_dir.is_dir() else []
+    for svg in physical_svgs:
+        fail(errors, f"F-016: SVG físico reintroduzido: {svg.relative_to(ROOT)}")
+    for path in markdown_files:
+        raw = read_utf8(path, errors)
+        if raw is not None and F016_SVG_PATH_REFERENCE.search(raw):
+            fail(errors, f"F-016: referência direta a SVG físico removido: {path.relative_to(ROOT)}")
     ids: dict[str, list[Path]] = defaultdict(list)
     front_matter_count = 0
 

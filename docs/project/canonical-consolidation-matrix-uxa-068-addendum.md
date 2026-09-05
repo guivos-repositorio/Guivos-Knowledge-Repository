@@ -6,9 +6,6 @@ version: 0.2.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-01
 related:
-  - UXA-034
-  - UXA-036
-  - UXA-068
   - UXA-069
   - M7.70
 normative: false

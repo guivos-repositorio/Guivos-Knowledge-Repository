@@ -9,7 +9,6 @@ parent: UXA-000
 depends_on:
   - UXA-001
   - UXA-003
-  - UXA-005
   - UXA-009
   - UXA-011
   - UXA-011-A1
@@ -19,7 +18,6 @@ depends_on:
   - UXA-057
   - UXA-058
 related:
-  - UXA-060
   - GKR-UX-ORGCOL-UX-STATE-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001

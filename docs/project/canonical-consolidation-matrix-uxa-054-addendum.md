@@ -7,7 +7,6 @@ owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-01
 depends_on:
   - GKR-CANONICAL-CONSOLIDATION-MATRIX-UXA-053-ADDENDUM
-  - UXA-053
   - UXA-054
 related:
   - GKR-STATE-001

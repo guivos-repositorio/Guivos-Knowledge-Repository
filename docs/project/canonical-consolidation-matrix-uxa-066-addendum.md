@@ -7,9 +7,7 @@ owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-01
 related:
   - UXA-059
-  - UXA-064
   - UXA-065
-  - UXA-066
   - ROADMAP-12.42.0
   - M7.68
 normative: false

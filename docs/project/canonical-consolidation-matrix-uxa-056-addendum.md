@@ -9,7 +9,6 @@ parent: GKR-CCM-001
 depends_on:
   - UXA-014
   - UXA-019
-  - UXA-024
   - UXA-033
   - UXA-056
   - GKR-UX-ORGCOL-AUTH-JOBS-001

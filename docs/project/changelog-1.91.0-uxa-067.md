@@ -6,7 +6,6 @@ version: 1.91.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-04
 related:
-  - UXA-066
   - UXA-067
   - GKR-CCM-UXA-067-A1
   - GKR-STATE-001

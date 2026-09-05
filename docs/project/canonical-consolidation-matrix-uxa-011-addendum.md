@@ -9,9 +9,6 @@ depends_on:
   - GKR-CANON-MATRIX-001
   - UXA-011
 related:
-  - UXA-006
-  - UXA-007
-  - UXA-008
   - GEB-P01-F01
   - GEB-P01-F02
   - GEB-P01-F03

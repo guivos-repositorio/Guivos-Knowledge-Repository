@@ -8,14 +8,11 @@ last_updated: 2026-07-27
 parent: UXA-024
 depends_on:
   - UXA-004
-  - UXA-005
-  - UXA-024
   - UXA-025
   - UXA-026
   - UXA-027
 related:
   - UXA-002
-  - UXA-007
   - UXA-010
   - UXA-012
   - UXA-020

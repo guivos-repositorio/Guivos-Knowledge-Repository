@@ -8,7 +8,6 @@ last_updated: 2026-07-26
 related:
   - GKR-KNOWLEDGE-BOARD-001
   - ROADMAP-11.86.0
-  - UXA-006
   - UXA-010
   - M7.19.4
 normative: false

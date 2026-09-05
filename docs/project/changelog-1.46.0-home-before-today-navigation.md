@@ -10,11 +10,8 @@ related:
   - UXA-003
   - UXA-003-A1
   - UXA-004
-  - UXA-005
-  - UXA-006
   - UXA-020
   - UXA-021
-  - UXA-022
   - UXA-023
 normative: false
 ---
@@ -64,7 +61,7 @@ Também era necessário esclarecer que o Mapa de Oportunidades não é uma etapa
 O wireframe da Página Inicial pública já existe como:
 
 - documento: UXA-022 — Wireframe de Baixa Fidelidade da Página Inicial Pública da Guivos;
-- arquivo vetorial: `docs/assets/wireframes/uxa-022-public-home-desktop.svg`;
+- arquivo vetorial: `uxa-022-public-home-desktop.svg [historical SVG; physical file removed in F-016-A]`;
 - dimensão de referência: 1.440 por 2.200 pixels;
 - canal: web para computador.
 

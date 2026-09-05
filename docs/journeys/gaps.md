@@ -6,14 +6,10 @@ version: 0.35.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-30
 related:
-  - UXA-055
   - UXA-059
   - UXA-090
-  - UXA-091
   - UXA-092
-  - UXA-093
   - UXA-094
-  - UXA-095
   - UXA-096
   - UXA-097
   - UXA-098
