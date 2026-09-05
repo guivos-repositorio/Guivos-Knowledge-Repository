@@ -1,0 +1,242 @@
+name: F-006 bounded cleanup stage
+
+on:
+  push:
+    branches:
+      - agent/gkr-f006-cleanup-stage-v1
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: agent/gkr-f006-cleanup-stage-v1
+
+      - name: Apply exact F-006 cleanup and reconciliation
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          deletion_set = [
+              'docs/experience-architecture/uxa-015-organization-overview-low-fidelity-wireframe.md',
+              'docs/experience-architecture/uxa-016-collective-home-low-fidelity-wireframe.md',
+              'docs/experience-architecture/uxa-017-organization-overview-functional-validation-and-reformulation.md',
+              'docs/experience-architecture/uxa-018-collective-home-functional-validation-and-reformulation.md',
+              'docs/assets/wireframes/uxa-015-organization-overview-desktop.svg',
+              'docs/assets/wireframes/uxa-016-collective-home-mobile.svg',
+          ]
+          for rel in deletion_set:
+              p = Path(rel)
+              if not p.exists():
+                  raise SystemExit(f'PRECONDITION FAILED: expected governed file missing: {rel}')
+              p.unlink()
+
+          def read(rel):
+              return Path(rel).read_text(encoding='utf-8')
+          def write(rel, text):
+              Path(rel).write_text(text, encoding='utf-8')
+          def must_replace(text, old, new, label, minimum=1):
+              n = text.count(old)
+              if n < minimum:
+                  raise SystemExit(f'PRECONDITION FAILED: {label}: expected >= {minimum}, got {n}')
+              return text.replace(old, new)
+
+          # Organization gallery: remove the deleted image embed while preserving functional provenance.
+          rel = 'docs/journeys/screen-gallery-opportunities-organization.md'
+          t = read(rel)
+          t = must_replace(t, '**Cobertura física:** 2 SVGs', '**Cobertura física:** 1 SVG', 'org gallery physical count')
+          t = must_replace(t,
+              'UXA-015/017 + SVG de ORG-001\n→ HISTÓRICO SUPERSEDED',
+              'UXA-015/017 + antigo SVG de ORG-001\n→ REMOVIDOS DO CORPUS CORRENTE / PROVENIÊNCIA PRESERVADA NO HISTÓRICO GIT',
+              'org provenance marker')
+          pattern = re.compile(r"\n### `uxa-015-organization-overview-desktop\.svg` — histórico superseded\n.*?(?=\n### `uxa-008-organization-opportunity-registration-desktop\.svg`)", re.S)
+          t, n = pattern.subn('\n', t)
+          if n != 1:
+              raise SystemExit(f'PRECONDITION FAILED: org deleted SVG block matches={n}')
+          t = t.replace(
+              '- `GKR-SURF-ORG-001`: wireframe principal autenticado **pendente**; `UXA-015/017` permanecem somente para rastreabilidade histórica;',
+              '- `GKR-SURF-ORG-001`: contrato funcional/IA preservado; `UXA-015/017` e seu antigo SVG foram removidos do corpus corrente; a materialização visual pertence exclusivamente a Design;')
+          t = t.replace(
+              'o gap seguinte começa no **mapa final de superfícies**, seguido por fluxos/estados críticos e construção de um novo wireframe vigente quando autorizado.',
+              'o próximo trabalho documental limita-se a contratos funcionais, fluxos/estados críticos e handoff; a materialização visual pertence exclusivamente a Design.')
+          write(rel, t)
+
+          # Collective gallery: remove the deleted image embed and keep provenance text only.
+          rel = 'docs/journeys/screen-gallery-collectives.md'
+          t = read(rel)
+          pattern = re.compile(r"## 6\. Referência inicial histórica do Coletivo\n.*?(?=\n## 7\. Referência administrativa local do Responsável)", re.S)
+          replacement = '''## 6. Proveniência da referência inicial histórica do Coletivo\n\n`UXA-016/018` e `uxa-016-collective-home-mobile.svg` foram removidos do corpus corrente após prova de absorção e elegibilidade de cleanup de `F-006`. A proveniência permanece no histórico Git; nenhum desses artefatos constitui autoridade visual vigente.\n'''
+          t, n = pattern.subn(replacement, t)
+          if n != 1:
+              raise SystemExit(f'PRECONDITION FAILED: collective deleted SVG block matches={n}')
+          t = must_replace(t, '| SVGs físicos | **34** |', '| SVGs físicos | **33** |', 'collective gallery physical count')
+          t = must_replace(t,
+              '| artefatos históricos superseded explícitos nesta página | **1** (`uxa-016-collective-home-mobile.svg`) |',
+              '| artefatos físicos históricos superseded explícitos nesta página | **0** |',
+              'collective gallery superseded physical row')
+          t = t.replace('A presença física de 34 SVGs não significa 34 wireframes vigentes ou validados da UX do Coletivo.',
+                        'A presença física de 33 SVGs não transfere autoridade visual à documentação; cada ativo remanescente será tratado pela auditoria repo-wide de desmaterialização.')
+          t = t.replace('o wireframe autenticado final.', 'a materialização visual, cuja autoridade pertence exclusivamente a Design.')
+          t = t.replace('o **mapa final de superfícies → fluxos e estados críticos → wireframe principal** permanece uma lacuna documental posterior',
+                        '**contratos de superfícies → fluxos e estados críticos → handoff para Design** permanecem trabalho documental posterior')
+          write(rel, t)
+
+          # Integrated gallery: current physical counts after deleting exactly two SVGs.
+          rel = 'docs/journeys/screen-gallery.md'
+          t = read(rel)
+          t = must_replace(t, 'Esta seção reúne os **121 SVGs físicos do inventário visual**', 'Esta seção reúne os **119 SVGs físicos remanescentes do inventário visual**', 'global gallery opening count')
+          t = must_replace(t, '- **121 SVGs físicos** compartilham **34 perfis de rastreabilidade** no snapshot atual;', '- **119 SVGs físicos** permanecem no corpus corrente; os perfis R09/R11 preservam somente proveniência sem ativo F-006;', 'global gallery current physical bullet')
+          t = must_replace(t, '| 2 | [Organização e Oportunidades](screen-gallery-opportunities-organization.md) | 9 |', '| 2 | [Organização e Oportunidades](screen-gallery-opportunities-organization.md) | 8 |', 'global gallery org route')
+          t = must_replace(t, '| 3 | [Coletivos](screen-gallery-collectives.md) | 34 |', '| 3 | [Coletivos](screen-gallery-collectives.md) | 33 |', 'global gallery collective route')
+          t = must_replace(t, '|  | **Total físico** | **121** |', '|  | **Total físico** | **119** |', 'global gallery route total')
+          t = must_replace(t, '| SVGs físicos existentes e referenciados | **121** |', '| SVGs físicos existentes e referenciados | **119** |', 'global gallery coverage svg')
+          t = must_replace(t, '| associações individuais físicas | **121** |', '| associações individuais físicas | **119** |', 'global gallery coverage associations')
+          t = t.replace('wireframe principal autenticado da Organização permanece **pendente**;', 'materialização visual da Organização pertence exclusivamente a Design;')
+          t = t.replace('wireframe principal autenticado do Coletivo permanece **pendente**;', 'materialização visual do Coletivo pertence exclusivamente a Design;')
+          t = t.replace('seu **wireframe principal autenticado vigente está pendente**;', 'sua materialização visual não é definida pela documentação e pertence exclusivamente a Design;')
+          t = t.replace('seu **wireframe principal final está pendente**.', 'sua materialização visual pertence exclusivamente a Design.')
+          old = '''## 8. Estado após a reconciliação pós-313/314\n\nA recomputação física não é necessária para reconhecer a supersessão: os 121 arquivos podem permanecer no repositório, enquanto a autoridade de parte deles muda.\n\n```text\nARTEFATO FÍSICO PRESERVADO\n+ HISTÓRICO PRESERVADO\n≠ AUTORIDADE VISUAL VIGENTE\n```'''
+          new = '''## 8. Estado após o cleanup F-006\n\nOs dois SVGs F-006 foram removidos do corpus corrente. A proveniência permanece no histórico Git. A auditoria repo-wide passa a aplicar a regra estrutural de que documentação funcional não deve materializar interface.\n\n```text\nDOCUMENTAÇÃO\n→ CONTRATO FUNCIONAL / CONTEÚDO / ESTADOS / REGRAS / CRITÉRIOS\n\nDESIGN\n→ AUTORIDADE EXCLUSIVA DE MATERIALIZAÇÃO VISUAL\n```'''
+          t = must_replace(t, old, new, 'global gallery F006 section')
+          write(rel, t)
+
+          # Traceability matrix: remove exactly two physical associations; retain stable provenance profiles.
+          rel = 'docs/journeys/screen-gallery-traceability-matrix.md'
+          t = read(rel)
+          t = must_replace(t, 'cada um dos **121 SVGs físicos do inventário**', 'cada um dos **119 SVGs físicos remanescentes do inventário**', 'trace matrix opening count')
+          t = t.replace('Os SVGs associados a `UXA-015..018` permanecem nesta matriz por rastreabilidade histórica, mas suas antigas claims de wireframe/validação principal estão `superseded`.',
+                        'Os dois SVGs associados a `UXA-015..018` foram removidos do corpus corrente por `F-006`; R09 e R11 permanecem apenas como perfis estáveis de proveniência sem associação física.')
+          t = t.replace('| R09 | ORG-001 | entrada institucional semântica | TRN-201 ou contrato especializado TRN-427 | cancelar/retornar; TRN-428 no contrato de Planos | **wireframe principal autenticado e matriz institucional pendentes** | `UXA-015/017` superseded; perfil preservado somente para rastreabilidade histórica; TRN-427/428 mantêm maturidade contratual própria |',
+                        '| R09 | ORG-001 | entrada institucional semântica | TRN-201 ou contrato especializado TRN-427 | cancelar/retornar; TRN-428 no contrato de Planos | materialização visual fora da autoridade documental | `UXA-015/017` removidos do corpus corrente; perfil preservado somente como proveniência histórica sem SVG; TRN-427/428 mantêm maturidade contratual própria |')
+          t = t.replace('| R11 | COL-001 | busca ou presença pública; entrada autenticada final pendente | TRN-103 no recorte público aplicável | retornar/sair | **presença pública ≠ UX principal autenticada** | `UXA-016/018` superseded; UXA-063 preserva validação do perfil público no recorte próprio |',
+                        '| R11 | COL-001 | busca ou presença pública; entrada autenticada funcional conforme autoridades vigentes | TRN-103 no recorte público aplicável | retornar/sair | **presença pública ≠ UX principal autenticada** | `UXA-016/018` removidos do corpus corrente; perfil preservado somente como proveniência histórica sem SVG; UXA-063 preserva validação do perfil público no recorte próprio |')
+          for row in [
+              '| `uxa-015-organization-overview-desktop.svg` | R09 |\n',
+              '| `uxa-016-collective-home-mobile.svg` | R11 |\n',
+          ]:
+              if row not in t:
+                  raise SystemExit(f'PRECONDITION FAILED: trace row missing: {row.strip()}')
+              t = t.replace(row, '')
+          t = must_replace(t, '## 4. Associação individual dos 121 SVGs físicos', '## 4. Associação individual dos 119 SVGs físicos remanescentes', 'trace matrix section count')
+          write(rel, t)
+
+          # Catalog: reconcile direct F-006 current physical counts; preserve historical snapshot numbers explicitly.
+          rel = 'docs/journeys/screen-catalog.md'
+          t = read(rel)
+          t = t.replace('`UXA-015..018` e seus SVGs associados permanecem fisicamente no repositório para rastreabilidade, mas são históricos `superseded` e não podem sustentar maturidade atual da experiência autenticada principal de Organização ou Coletivo.',
+                        '`UXA-015..018` e seus dois SVGs associados foram removidos do corpus corrente por `F-006`; sua proveniência permanece no histórico Git e não sustenta autoridade visual vigente.')
+          t = t.replace('| Coletivo | referência inicial histórica | 1 | `UXA-016/018` superseded; artefato físico não é wireframe principal vigente | não utilizável como baseline atual | **wireframe principal autenticado pendente** |',
+                        '| Coletivo | referência inicial histórica | 0 | `UXA-016/018` e SVG removidos do corpus corrente | proveniência somente no histórico Git | materialização visual pertence exclusivamente a Design |')
+          t = t.replace('| Organização | visão geral e cadastro | 2 | **ORG-001 histórico/superseded como wireframe principal; cadastro preserva validação própria por UXA-008/013** | publicação–descoberta preservada; contratos de Planos têm maturidade própria | **mapa de superfícies, wireframe principal autenticado e matriz institucional completa pendentes** |',
+                        '| Organização | visão geral e cadastro | 1 | **materialização histórica de ORG-001 removida; cadastro preserva validação funcional própria por UXA-008/013** | publicação–descoberta preservada; contratos de Planos têm maturidade própria | documentação funcional preservada; materialização visual pertence exclusivamente a Design |')
+          t = must_replace(t, '| **Total físico do catálogo** |  | **121** |', '| **Total físico do catálogo** |  | **119** |', 'catalog total')
+          t = must_replace(t, '| catálogo físico | **121 SVGs** |', '| catálogo físico | **119 SVGs** |', 'catalog instrument physical')
+          t = must_replace(t, '| matriz de rastreabilidade | **121 associações físicas / 34 perfis** |', '| matriz de rastreabilidade | **119 associações físicas / 34 perfis estáveis** |', 'catalog trace instrument')
+          t = must_replace(t, '| galeria visual | **121 SVGs físicos** |', '| galeria visual | **119 SVGs físicos** |', 'catalog gallery instrument')
+          t = t.replace('- catálogo físico: `active` 0.33.0;\n- inventário físico preservado: **121 SVGs**;\n- matriz física: **121 associações / 34 perfis**;',
+                        '- catálogo físico: `active` 0.33.0;\n- inventário físico corrente após F-006: **119 SVGs**;\n- matriz física: **119 associações / 34 perfis estáveis**, com R09/R11 preservados apenas como proveniência sem SVG;')
+          t = t.replace('- wireframe principal autenticado da Organização: **pendente**;\n- wireframe principal autenticado do Coletivo: **pendente**;',
+                        '- materialização visual da Organização: **autoridade exclusiva de Design; não é requisito documental**;\n- materialização visual do Coletivo: **autoridade exclusiva de Design; não é requisito documental**;')
+          write(rel, t)
+
+          # Surface registry: no removed materialization may be described as physically retained/current.
+          rel = 'docs/journeys/surface-registry.md'
+          t = read(rel)
+          substitutions = {
+              '`UXA-016` apenas histórico superseded': 'materialização histórica `UXA-016` removida do corpus corrente; proveniência no Git',
+              '`UXA-018` superseded': '`UXA-018` removida do corpus corrente; proveniência no Git',
+              '`UXA-015` apenas histórico superseded': 'materialização histórica `UXA-015` removida do corpus corrente; proveniência no Git',
+              '`UXA-017` superseded': '`UXA-017` removida do corpus corrente; proveniência no Git',
+          }
+          for old, new in substitutions.items():
+              t = t.replace(old, new)
+          write(rel, t)
+
+          # Experience index: remove direct links to the four deleted Markdown files, but retain historical prose where non-link provenance is useful.
+          rel = 'docs/experience-architecture/index.md'
+          lines = read(rel).splitlines(True)
+          deleted_md_names = {
+              'uxa-015-organization-overview-low-fidelity-wireframe.md',
+              'uxa-016-collective-home-low-fidelity-wireframe.md',
+              'uxa-017-organization-overview-functional-validation-and-reformulation.md',
+              'uxa-018-collective-home-functional-validation-and-reformulation.md',
+          }
+          kept = [line for line in lines if not any(name in line for name in deleted_md_names)]
+          if len(lines) - len(kept) < 4:
+              raise SystemExit(f'PRECONDITION FAILED: experience index removed-link lines={len(lines)-len(kept)}')
+          write(rel, ''.join(kept))
+
+          # Current Org/Collective UX state: cleanup applied, but F-006 remains open until post-cleanup validation/adjudication.
+          rel = 'docs/experience-architecture/organizations-collectives-ux-state.md'
+          t = read(rel)
+          t = t.replace('PHYSICAL_REMOVAL_NOT_AUTHORIZED', 'PHYSICAL_CLEANUP_APPLIED_AWAITING_POST_DELETE_VALIDATION')
+          t = t.replace('PHYSICAL CLEANUP NOT AUTHORIZED', 'PHYSICAL CLEANUP APPLIED — POST-DELETE VALIDATION PENDING')
+          t = t.replace('permanecem fisicamente no repositório', 'foram removidos do corpus corrente; a proveniência permanece no histórico Git')
+          write(rel, t)
+
+          # Hard proof: governed files are gone and no direct path/link to them remains outside Git history.
+          for rel in deletion_set:
+              if Path(rel).exists():
+                  raise SystemExit(f'POSTCONDITION FAILED: governed file still exists: {rel}')
+
+          forbidden_paths = [Path(x).name for x in deletion_set]
+          hits = []
+          for p in Path('.').rglob('*'):
+              if not p.is_file() or '.git' in p.parts:
+                  continue
+              if p.suffix.lower() not in {'.md','.yml','.yaml','.txt','.json','.py','.sh'}:
+                  continue
+              try:
+                  s = p.read_text(encoding='utf-8')
+              except UnicodeDecodeError:
+                  continue
+              for token in forbidden_paths:
+                  if token in s:
+                      hits.append((str(p), token))
+          if hits:
+              print('FORBIDDEN DIRECT PATH HITS:')
+              for h in hits:
+                  print(h)
+              raise SystemExit('POSTCONDITION FAILED: direct path references remain')
+
+          print('F006_DELETION_SET_ABSENT=6/6')
+          print('F006_DIRECT_PATH_REFERENCES=0')
+          print('CURRENT_PHYSICAL_SVG_EXPECTED=119')
+          PY
+
+          echo '--- residual historical ID references (allowed only as provenance/state) ---'
+          grep -RInE 'UXA-01(5|6|7|8)' docs --include='*.md' | head -n 250 || true
+
+          echo '--- staged diff summary ---'
+          git status --short
+          git diff --stat
+
+      - name: Validate bounded deletion set and documentation build
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install -q -r requirements-docs.txt 2>/dev/null || true
+          if command -v mkdocs >/dev/null 2>&1; then
+            mkdocs build --strict
+          else
+            echo 'MKDOCS_NOT_AVAILABLE_AFTER_INSTALL_ATTEMPT'
+          fi
+
+      - name: Commit staged F-006 transaction
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'GKR: aplicar cleanup físico F-006 e reconciliar referências'
+          git push origin HEAD:agent/gkr-f006-cleanup-stage-v1
