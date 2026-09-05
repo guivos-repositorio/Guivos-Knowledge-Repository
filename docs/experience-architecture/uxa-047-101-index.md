@@ -195,9 +195,9 @@ Ainda não são canônicos:
 | Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
 | Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
 | F-010 — cleanup transversal | **RESOLVED — CLEANUP / VALIDATION / INDEPENDENT REVIEW COMPLETE** |
-| F-016 | **OPEN — REPO-WIDE DOCUMENTATION DEMATERIALIZATION** |
+| F-016 | **RESOLVED — AUDIT + ADJUDICATION + CLEANUP 26/26 + POST-DELETE PROOF COMPLETE** |
 | F-016-A — camada física SVG | **RESOLVED / PHYSICAL CLEANUP 119/119 / PHYSICAL SVG COUNT 0 / POST-DELETE PROOF V2 SUCCESS** |
-| Próximo gate físico | **AUTORIZAÇÃO HUMANA SEPARADA PARA F-016-A; se concedida, cleanup + reconciliação atômica + recomputação + validações/review** |
+| Próximo gate governado | **DECISÃO SEPARADA DE LIBERAÇÃO DE J/K/L/M/N; nenhum bloco é liberado automaticamente** |
 | J/K/L/M/N | **NOT RELEASED AUTOMATICALLY** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |

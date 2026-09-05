@@ -1265,14 +1265,14 @@ H / I
 → F-007 RESOLVED
 
 F-016
-→ OPEN
+→ RESOLVED
+→ DOCUMENTATION DEMATERIALIZATION COMPLETE
+→ LEGACY VISUAL PRODUCERS REMOVED 26/26
+→ POST-DELETE PROOF SUCCESS
 
 F-016-A
 → RESOLVED
 → PHYSICAL SVG COUNT = 0
-
-F-016 REMAINING MARKDOWN FAMILIES
-→ CLASSIFICATION / REWRITE / ABSORPTION AUDIT PENDING
 
 J–N
 → PENDING / NOT RELEASED AUTOMATICALLY
@@ -1287,7 +1287,7 @@ Q
 → BLOCKED
 ```
 
-O encerramento de `F-016-A` não libera automaticamente J–N. `F-016` permanece o eixo prioritário de auditoria.
+O encerramento de `F-016-A` e `F-016` não libera automaticamente J–N. A próxima frente depende de decisão governada separada.
 
 ## 27. Regra de navegação final
 
@@ -1348,21 +1348,21 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-O eixo corrente permanece `F-016`, com a camada física `F-016-A` já encerrada.
+O próximo ato governado é adjudicar separadamente a liberação de J/K/L/M/N, sem iniciar automaticamente qualquer desses blocos.
 
 ```text
 F-016-A
 → RESOLVED
 → PHYSICAL SVG COUNT = 0
 
-NEXT
-→ CLASSIFY REMAINING MARKDOWN MATERIALIZATION FAMILIES
-→ PRESERVE FUNCTIONAL CONTENT
-→ REWRITE OR ABSORB BEFORE ANY DOCUMENT DELETION
-→ VALIDATE EACH RESULTING HEAD
+F-016
+→ RESOLVED
+→ LEGACY VISUAL PRODUCERS REMOVED 26/26
+→ POST-DELETE PROOF SUCCESS
 
-J / K / L / M / N
-→ NOT RELEASED AUTOMATICALLY
+NEXT
+→ EVALUATE J / K / L / M / N UNDER SEPARATE GOVERNED RELEASE
+→ NO AUTOMATIC RELEASE
 
 O
 → PENDING / HOLD
@@ -1381,4 +1381,4 @@ AINDA BLOQUEADOS
 → IMPLEMENTAÇÃO
 ```
 
-Nenhuma autorização de cleanup Markdown é inferida do fechamento de F-016-A.
+O fechamento de F-016 não autoriza automaticamente J/K/L/M/N, Design, UXA-102/V5, Product Engineering, PMF ou implementação.

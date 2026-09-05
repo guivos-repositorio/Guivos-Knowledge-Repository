@@ -600,7 +600,9 @@ Resultado de I:
 
 > **I = AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED.**
 
-### Resultado do Bloco 2
+### Resultado do Bloco 2 — checkpoint histórico anterior ao fechamento de F-016
+
+O bloco abaixo preserva o estado no fechamento de G/H/I naquele checkpoint; não representa o estado corrente posterior de F-016.
 
 ```text
 G
@@ -1000,7 +1002,8 @@ H / I
 → F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
 
 F-016
-→ OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION
+→ RESOLVED
+→ AUDIT + ADJUDICATION + CLEANUP 26/26 + POST-DELETE PROOF COMPLETE
 
 F-016-A
 → PRE-CLEANUP ELIGIBILITY PROVEN
@@ -1014,17 +1017,15 @@ F-016-A
 → INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS
 → RESOLVED
 
-F-016 REMAINING MARKDOWN FAMILIES
-→ CLASSIFICATION / REWRITE / ABSORPTION PENDING
-
 NEXT SPECIALIZED BLOCK J/K/L/M/N
-→ NOT RELEASED YET
+→ NOT RELEASED AUTOMATICALLY
+→ REQUIRE SEPARATE GOVERNED RELEASE DECISION
 
 BASELINE FINAL
 → NOT AUTHORIZED
 
-CORPUS CLEANUP
-→ NOT YET COMPLETE
+F-016 CORPUS CLEANUP
+→ COMPLETE IN ITS GOVERNED SCOPE
 
 DESIGN / MATERIALIZATION
 → NOT AUTHORIZED
@@ -1096,14 +1097,18 @@ F-016-A
 
 Nomes `.svg` preservados em documentos históricos permanecem somente como proveniência. Galerias e matriz por SVG são `superseded / historical_provenance_only`, sem autoridade visual corrente.
 
-### Demais famílias F-016
+### Demais famílias F-016 — RESOLVED
 
-Documentos `low-fidelity-wireframe`, `materialization`, validações/programas de wireframe, ciclo de galerias e linguagem de UI continuam sujeitos à classificação individual:
+A classificação individual das famílias Markdown foi concluída. Os 26 produtores visuais legados elegíveis foram removidos somente após absorção; autoridades, validadores e evidências correntes foram preservados ou reconciliados, e a prova pós-delete confirmou ausência de referências estruturais ou caminhos físicos vivos para os produtores removidos.
 
-- `KEEP_FUNCTIONAL`;
-- `REWRITE_FUNCTIONAL`;
-- `REMOVE_AFTER_ABSORPTION`;
-- `REMOVE`;
-- `HISTORICAL_PROVENANCE_ONLY`.
+```text
+F-016
+→ CLASSIFICATION COMPLETE
+→ 26/26 LEGACY VISUAL PRODUCERS REMOVED AFTER ABSORPTION
+→ CURRENT AUTHORITIES / VALIDATORS / EVIDENCE PRESERVED
+→ STRUCTURAL REFERENCES RECONCILED
+→ POST-DELETE PROOF SUCCESS
+→ RESOLVED
+```
 
-Nenhum Markdown é removido automaticamente pelo fechamento de F-016-A. Critério global: **o GKR não pode competir com Design na definição de interface**.
+Não existe família Markdown pendente sob F-016. Qualquer futura remoção documental fora do conjunto adjudicado exige novo fundamento e novo gate; o critério global permanece: **o GKR não pode competir com Design na definição de interface**.

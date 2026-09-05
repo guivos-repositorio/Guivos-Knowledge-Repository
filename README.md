@@ -324,7 +324,7 @@ AUTORIDADE VISUAL
 
 `F-016-A` está `RESOLVED` após elegibilidade estrutural/semântica, autorização humana separada, cleanup 119/119, reconciliação das referências, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2.
 
-`F-016` global permanece `OPEN`: as famílias Markdown de materialização ainda exigem classificação individual e eventual reescrita/absorção.
+`F-016` está `RESOLVED`: a classificação individual foi concluída e o cleanup governado removeu 26/26 produtores visuais legados após absorção, preservando autoridades, validadores, evidências e proveniência necessária.
 
 ## Tecnologia e operação
 
