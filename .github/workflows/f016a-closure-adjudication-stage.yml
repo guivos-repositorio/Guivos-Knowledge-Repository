@@ -1,4 +1,4 @@
-name: F-016 Screen Gallery Cleanup Candidate Proof
+name: F-016 Screen Gallery Canonical Cleanup Transaction
 
 on:
   push:
@@ -6,25 +6,27 @@ on:
       - agent/gkr-f016a-closure-adjudication-stage-v1
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  candidate-proof:
+  canonical-transaction:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout exact canonical PR head
+      - name: Checkout exact authorized canonical head
         uses: actions/checkout@v4
         with:
           ref: b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938
-          fetch-depth: 1
+          fetch-depth: 0
 
-      - name: Verify exact canonical input
+      - name: Verify authorization checkpoint and remote branch
         shell: bash
         run: |
           set -euo pipefail
           test "$(git rev-parse HEAD)" = "b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
           test "$(git rev-parse HEAD^{tree})" = "138a24d79e798fc38742a2c2e60a7091abf1d150"
           test -z "$(git status --porcelain)"
+          remote_sha="$(git ls-remote origin refs/heads/agent/gkr-global-audit-block-2-ghi-v1 | cut -f1)"
+          test "$remote_sha" = "b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -37,7 +39,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt PyYAML
 
-      - name: Apply ephemeral screen-gallery cleanup candidate
+      - name: Apply exact authorized screen-gallery cleanup
         shell: bash
         run: |
           set -euo pipefail
@@ -71,14 +73,12 @@ jobs:
               assert p.is_file(), p
               p.unlink()
 
-          # Remove navigation entries to deleted documents.
           mk = Path('mkdocs.yml')
           lines = mk.read_text(encoding='utf-8').splitlines()
           nav_targets = {str(p).removeprefix('docs/') for p in deleted}
           lines = [line for line in lines if not any(target in line for target in nav_targets)]
           mk.write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
-          # Preserve historical prose while neutralizing live local links to removed files.
           link_re = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
           for p in Path('docs').rglob('*.md'):
               text = p.read_text(encoding='utf-8')
@@ -103,7 +103,6 @@ jobs:
                   out.append(line)
               return '\n'.join(out) + ('\n' if text.endswith('\n') else '')
 
-          # Current Journey index: remove deleted instruments as available views and reconcile current-state rows/counts.
           p='docs/journeys/index.md'
           t=drop_related_ids(read(p))
           t=t.replace('version: 0.43.0','version: 0.44.0',1)
@@ -120,7 +119,6 @@ jobs:
           t=t.replace('| responsabilidades sem SVG dedicado | **10** |','| responsabilidades sem SVG dedicado | **métrica histórica; não usada como cobertura corrente após F-016-A** |')
           write(p,t)
 
-          # Experience Architecture index: remove deleted instruments from current authority list and stale physical claims.
           p='docs/experience-architecture/index.md'
           t=drop_related_ids(read(p))
           t=t.replace('version: 1.7.0','version: 1.8.0',1)
@@ -138,7 +136,6 @@ jobs:
           t='\n'.join(rows)+'\n'
           write(p,t)
 
-          # Active screen catalog: retain functional inventory, but make visual counts explicitly historical and remove current gallery/matrix claims.
           p='docs/journeys/screen-catalog.md'
           t=drop_related_ids(read(p))
           t=t.replace('version: 0.34.0','version: 0.35.0',1)
@@ -156,7 +153,6 @@ jobs:
                       '- antiga galeria visual: removida do corpus corrente; proveniência preservada no histórico Git;')
           write(p,t)
 
-          # Derived-state audit: current references point to Git history after cleanup; old post-F-006 table is explicitly historical.
           p='docs/experience-architecture/organizations-collectives-derived-state-audit.md'
           t=drop_related_ids(read(p))
           t=t.replace('version: 1.2.0','version: 1.3.0',1)
@@ -176,7 +172,6 @@ jobs:
               t=t[:after]+tail
           write(p,t)
 
-          # Audit authority: represent the desired post-cleanup state for this bounded family while F-016 remains open.
           p='docs/project/gkr-full-corpus-audit.md'
           t=read(p)
           t=t.replace('version: 1.11.0','version: 1.12.0',1)
@@ -186,32 +181,57 @@ jobs:
           t=t.replace(old,new,1)
           write(p,t)
 
-          print('CANDIDATE_APPLIED=YES')
-          print('DELETED_DOCS=8')
+          print('AUTHORIZED_CANDIDATE_APPLIED=YES')
           PY
 
-      - name: Prove candidate bounds and no live links to deleted family
+      - name: Prove exact bounded delta
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import subprocess
+          expected = sorted([
+            'docs/experience-architecture/index.md',
+            'docs/experience-architecture/organizations-collectives-derived-state-audit.md',
+            'docs/experience-architecture/uxa-100-a1-plans-journey-integration-and-dedicated-screens.md',
+            'docs/experience-architecture/uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md',
+            'docs/journeys/index.md',
+            'docs/journeys/screen-catalog.md',
+            'docs/journeys/screen-gallery-collectives.md',
+            'docs/journeys/screen-gallery-opportunities-organization.md',
+            'docs/journeys/screen-gallery-opportunity-boost-exposure.md',
+            'docs/journeys/screen-gallery-opportunity-boost-operations.md',
+            'docs/journeys/screen-gallery-person.md',
+            'docs/journeys/screen-gallery-plans-billing.md',
+            'docs/journeys/screen-gallery-traceability-matrix.md',
+            'docs/journeys/screen-gallery.md',
+            'docs/project/gkr-full-corpus-audit.md',
+            'mkdocs.yml',
+          ])
+          actual=sorted(x for x in subprocess.check_output(['git','diff','--name-only']).decode().splitlines() if x)
+          assert actual == expected, (actual, expected)
+          status=subprocess.check_output(['git','diff','--name-status']).decode().splitlines()
+          assert sum(1 for x in status if x.startswith('D\t')) == 8, status
+          assert sum(1 for x in status if x.startswith('M\t')) == 8, status
+          print('EXACT_CHANGED_PATHS=16')
+          print('EXACT_DELETIONS=8')
+          print('EXACT_MODIFICATIONS=8')
+          PY
+          git diff --check
+
+      - name: Prove no live links or nav to deleted family
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
-          import re, subprocess
-
-          deleted = [
-              'docs/journeys/screen-gallery.md',
-              'docs/journeys/screen-gallery-traceability-matrix.md',
-              'docs/journeys/screen-gallery-person.md',
-              'docs/journeys/screen-gallery-opportunities-organization.md',
-              'docs/journeys/screen-gallery-collectives.md',
-              'docs/journeys/screen-gallery-opportunity-boost-exposure.md',
-              'docs/journeys/screen-gallery-opportunity-boost-operations.md',
-              'docs/journeys/screen-gallery-plans-billing.md',
-          ]
-          basenames={Path(x).name for x in deleted}
-          for rel in deleted:
-              assert not Path(rel).exists(), rel
-
+          import re
+          basenames={
+            'screen-gallery.md','screen-gallery-traceability-matrix.md','screen-gallery-person.md',
+            'screen-gallery-opportunities-organization.md','screen-gallery-collectives.md',
+            'screen-gallery-opportunity-boost-exposure.md','screen-gallery-opportunity-boost-operations.md',
+            'screen-gallery-plans-billing.md'
+          }
           live=[]
           link_re=re.compile(r'\[[^\]]+\]\(([^)]+)\)')
           for p in Path('docs').rglob('*.md'):
@@ -222,18 +242,8 @@ jobs:
                       if Path(target).name in basenames:
                           live.append((str(p),i,line.strip()))
           assert not live, live
-
           mk=Path('mkdocs.yml').read_text(encoding='utf-8')
-          for rel in deleted:
-              assert rel.removeprefix('docs/') not in mk
-
-          changed=subprocess.check_output(['git','status','--short']).decode()
-          print('=== CANDIDATE STATUS ===')
-          print(changed)
-          print('=== CANDIDATE DIFF STAT ===')
-          print(subprocess.check_output(['git','diff','--stat']).decode())
-          print('=== CANDIDATE CHANGED PATHS ===')
-          print(subprocess.check_output(['git','diff','--name-status']).decode())
+          assert not any(name in mk for name in basenames)
           print('LIVE_LINKS_TO_DELETED_GALLERY=0')
           print('MKDOCS_NAV_TO_DELETED_GALLERY=0')
           PY
@@ -247,18 +257,19 @@ jobs:
       - name: Validate legacy nomenclature
         run: python scripts/validate_legacy_nomenclature.py
 
-      - name: Check candidate whitespace
-        run: git diff --check
-
       - name: Build MkDocs strict
         run: mkdocs build --strict --site-dir /tmp/gkr-site
 
-      - name: Confirm canonical commit object unchanged and candidate uncommitted
+      - name: Commit and push exact canonical transaction
         shell: bash
         run: |
           set -euo pipefail
-          test "$(git rev-parse HEAD)" = "b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
-          test "$(git rev-parse HEAD^{tree})" = "138a24d79e798fc38742a2c2e60a7091abf1d150"
-          test -n "$(git status --porcelain)"
-          test "$(git log -1 --format=%H)" = "b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
-          echo F016_SCREEN_GALLERY_CANDIDATE_PROOF=SUCCESS
+          remote_sha="$(git ls-remote origin refs/heads/agent/gkr-global-audit-block-2-ghi-v1 | cut -f1)"
+          test "$remote_sha" = "b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
+          git config user.name "Guivos"
+          git config user.email "guivosbrasil@gmail.com"
+          git add -A
+          git commit -m "GKR: remover família screen-gallery após prova de absorção"
+          new_sha="$(git rev-parse HEAD)"
+          git push origin HEAD:refs/heads/agent/gkr-global-audit-block-2-ghi-v1
+          echo "CANONICAL_CLEANUP_COMMIT=$new_sha"
