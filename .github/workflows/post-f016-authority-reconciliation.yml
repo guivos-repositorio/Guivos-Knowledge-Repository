@@ -1,0 +1,170 @@
+name: Post-F-016 Authority Reconciliation
+
+on:
+  push:
+    branches:
+      - agent/gkr-post-f016-authority-reconciliation-v1
+
+permissions:
+  contents: write
+
+env:
+  BASE_SHA: bc5d9b81eee453b0a880f539010fa386a6de9272
+  RESULT_BRANCH: agent/gkr-post-f016-authority-result-v1
+
+jobs:
+  prepare:
+    name: Prepare reconciled authority candidate
+    runs-on: ubuntu-24.04
+    outputs:
+      result_sha: ${{ steps.commit.outputs.result_sha }}
+    steps:
+      - name: Checkout isolated executor
+        uses: actions/checkout@v4
+        with:
+          path: executor
+          fetch-depth: 1
+
+      - name: Checkout immutable PR head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BASE_SHA }}
+          path: repo
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: repo/requirements.txt
+
+      - name: Install documentation dependencies
+        working-directory: repo
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Assert immutable base
+        working-directory: repo
+        run: |
+          test "$(git rev-parse HEAD)" = "$BASE_SHA"
+
+      - name: Apply exact authority reconciliation
+        run: |
+          cp executor/scripts/post_f016_authority_reconciliation.py repo/scripts/__post_f016_authority_reconciliation_tmp.py
+          python repo/scripts/__post_f016_authority_reconciliation_tmp.py
+          rm repo/scripts/__post_f016_authority_reconciliation_tmp.py
+
+      - name: Assert closed change boundary
+        working-directory: repo
+        run: |
+          python - <<'PY'
+          import subprocess
+          expected = {
+              'docs/project/current-state-register.md',
+              'docs/roadmap.md',
+              'docs/project/gkr-full-corpus-audit.md',
+              'docs/project/gkr-specialized-homes-audit.md',
+              'docs/experience-architecture/public-specialized-homes-reconciliation.md',
+              'docs/governance-framework/brand-public-authority-propagation.md',
+              'docs/research/RP-002/pilot-documentation-closure-review.md',
+          }
+          changed = set(subprocess.check_output(['git','diff','--name-only'], text=True).splitlines())
+          print('CHANGED_FILES=', sorted(changed))
+          if changed != expected:
+              raise SystemExit(f'unexpected change boundary: expected={sorted(expected)} got={sorted(changed)}')
+          PY
+
+      - name: Validate prepared tree
+        working-directory: repo
+        run: |
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          git diff --check
+          mkdocs build --strict
+
+      - name: Create result commit directly from immutable PR head
+        id: commit
+        working-directory: repo
+        run: |
+          git config user.name "gkr-governance-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/project/current-state-register.md docs/roadmap.md docs/project/gkr-full-corpus-audit.md docs/project/gkr-specialized-homes-audit.md docs/experience-architecture/public-specialized-homes-reconciliation.md docs/governance-framework/brand-public-authority-propagation.md docs/research/RP-002/pilot-documentation-closure-review.md
+          git commit -m "GKR: reconcile post-F-016 authority drift"
+          test "$(git rev-parse HEAD^)" = "$BASE_SHA"
+          RESULT_SHA="$(git rev-parse HEAD)"
+          echo "result_sha=$RESULT_SHA" >> "$GITHUB_OUTPUT"
+          git push origin "HEAD:refs/heads/$RESULT_BRANCH" --force
+          echo "RESULT_SHA=$RESULT_SHA"
+          echo "RESULT_TREE=$(git rev-parse HEAD^{tree})"
+
+  proof:
+    name: Exact-result read-only proof
+    needs: prepare
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout exact result commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.prepare.outputs.result_sha }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install documentation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Prove exact parent and authority invariants
+        run: |
+          test "$(git rev-parse HEAD^)" = "$BASE_SHA"
+          python - <<'PY'
+          from pathlib import Path
+          state = Path('docs/project/current-state-register.md').read_text(encoding='utf-8')
+          roadmap = Path('docs/roadmap.md').read_text(encoding='utf-8')
+          audit = Path('docs/project/gkr-full-corpus-audit.md').read_text(encoding='utf-8')
+          spec = Path('docs/experience-architecture/public-specialized-homes-reconciliation.md').read_text(encoding='utf-8')
+          closure = Path('docs/research/RP-002/pilot-documentation-closure-review.md').read_text(encoding='utf-8')
+          propagation = Path('docs/governance-framework/brand-public-authority-propagation.md').read_text(encoding='utf-8')
+          required = {
+              'state_f016': ('F-016\n→ RESOLVED', state),
+              'state_f010': ('F-010\n→ RESOLVED', state),
+              'roadmap_state': ('GKR-STATE-001 v3.12.0', roadmap),
+              'roadmap_f016': ('F-016 → RESOLVED', roadmap),
+              'audit_f016': ('F-016_RESOLVED', audit),
+              'specialized_f016': ('F-016\n→ RESOLVED', spec),
+              'notice_021': ('RP-002-PILOT-NOTICE-CONSENT-002` v0.2.1', closure),
+              'f010_adjudication': ('F-010 ADJUDICATION\n→ RESOLVED', propagation),
+          }
+          for name, (needle, text) in required.items():
+              if needle not in text:
+                  raise SystemExit(f'missing invariant {name}: {needle}')
+          forbidden_current = [
+              'F-016 | **OPEN — REPO-WIDE DOCUMENTATION DEMATERIALIZATION**',
+              'NEXT F-016 SUBFRONT',
+              'NEXT F-016 GATE\n→ CLASSIFY REMAINING MARKDOWN MATERIALIZATION FAMILIES',
+              'resíduos especializados ainda sujeitos a F-010',
+          ]
+          current = '\n'.join([state, roadmap, spec])
+          for marker in forbidden_current:
+              if marker in current:
+                  raise SystemExit(f'stale current marker remains: {marker}')
+          print('POST_F016_AUTHORITY_PROOF=SUCCESS')
+          PY
+
+      - name: Re-run canonical validators on exact result
+        run: |
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          git diff "$BASE_SHA" --check
+          mkdocs build --strict
+          test -z "$(git status --porcelain --untracked-files=no)"
