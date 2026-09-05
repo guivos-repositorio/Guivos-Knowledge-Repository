@@ -10,7 +10,6 @@ depends_on:
 related:
   - GKR-UXA-047-093-INDEX-001
   - UXA-092
-  - UXA-093
   - M7.80
 normative: false
 ---

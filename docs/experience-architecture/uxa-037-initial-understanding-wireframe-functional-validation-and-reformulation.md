@@ -9,18 +9,14 @@ parent: UXA-036
 depends_on:
   - UXA-001
   - UXA-003-A1
-  - UXA-005
   - UXA-009
   - UXA-011
   - UXA-011-A1
   - UXA-020
   - UXA-023
-  - UXA-034
   - UXA-035
-  - UXA-036
 related:
   - UXA-002
-  - UXA-006
   - UXA-010
   - PAS-001-CV-VIEW-001
   - PAS-001-OBJ-VIEW-001

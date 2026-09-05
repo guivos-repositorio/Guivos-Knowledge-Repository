@@ -15,7 +15,6 @@ depends_on:
   - UXA-011-A1
   - UXA-014
   - UXA-019
-  - UXA-024
   - UXA-025
   - UXA-026
   - UXA-027
@@ -26,10 +25,8 @@ depends_on:
   - UXA-032
   - UXA-033
 related:
-  - UXA-005
   - UXA-057
   - UXA-058
-  - UXA-095
   - UXA-096
   - M7.58
 normative: false

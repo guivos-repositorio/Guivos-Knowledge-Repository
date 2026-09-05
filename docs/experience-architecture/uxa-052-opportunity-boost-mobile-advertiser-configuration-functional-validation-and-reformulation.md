@@ -7,19 +7,13 @@ owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-02
 parent: UXA-051
 depends_on:
-  - UXA-005
   - UXA-038
   - UXA-039
-  - UXA-040
   - UXA-041
   - UXA-050
-  - UXA-051
   - GEM-007-A1
   - GEM-010-A2
 related:
-  - UXA-042
-  - UXA-046
-  - UXA-048
   - GPA-007
   - M7.54
 normative: false

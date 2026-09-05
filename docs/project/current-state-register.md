@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.11.0
+version: 3.12.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-05
 normative: true
@@ -79,7 +79,12 @@ F-006
 → RESOLVED
 
 F-016
-→ OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION
+→ RESOLVED
+→ AUDIT + ADJUDICATION + IMPLEMENTATION + POST-DELETE PROOF COMPLETE
+→ LEGACY VISUAL PRODUCERS REMOVED
+→ 26/26
+→ DIRECT REMOVED-SVG PATH REFERENCES = 0
+→ PHYSICAL SVG COUNT = 0
 
 F-016-A — PHYSICAL SVG LAYER
 → PRE-CLEANUP STRUCTURAL + SEMANTIC ELIGIBILITY PROVEN
@@ -93,9 +98,12 @@ F-016-A — PHYSICAL SVG LAYER
 → INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS
 → RESOLVED
 
-NEXT F-016 SUBFRONT
-→ CLASSIFY REMAINING MARKDOWN MATERIALIZATION FAMILIES INDIVIDUALLY
-→ NO AUTOMATIC MARKDOWN DELETION
+F-016 CLOSURE
+→ 26 LEGACY VISUAL PRODUCERS REMOVED AFTER ABSORPTION
+→ STRUCTURAL REFERENCES RECONCILED
+→ 23 DIRECT PATH REFERENCES TO REMOVED SVGs NEUTRALIZED
+→ CURRENT AUTHORITIES / VALIDATORS / EVIDENCE PRESERVED
+→ REINTRODUCTION GUARDS ACTIVE
 
 J / K / L / M / N
 → NOT RELEASED AUTOMATICALLY
@@ -119,7 +127,7 @@ MATERIALIZAÇÃO VISUAL DAS HOMES
 → NOT AUTHORIZED DURING FULL-CORPUS AUDIT
 ```
 
-O encerramento de `F-016-A` remove a camada física SVG do GKR, mas não promove maturidade funcional, não cria Design e não libera implementação.
+O encerramento de `F-016` conclui a desmaterialização documental auditada sem promover maturidade funcional, sem criar Design e sem liberar implementação. A história permanece no Git; o corpus vigente preserva autoridades, validadores e evidências necessárias.
 
 ## 3. Fundação e identidade da Guivos
 

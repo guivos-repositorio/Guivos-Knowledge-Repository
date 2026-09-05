@@ -10,15 +10,10 @@ depends_on:
 related:
   - UXA-038
   - UXA-039
-  - UXA-040
   - UXA-041
-  - UXA-042
   - UXA-043
-  - UXA-044
   - UXA-045
-  - UXA-046
   - UXA-047
-  - UXA-048
   - UXA-049
   - M7.52
 normative: false

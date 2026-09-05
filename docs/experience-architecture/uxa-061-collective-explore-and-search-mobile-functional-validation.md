@@ -9,18 +9,13 @@ parent: UXA-060
 depends_on:
   - UXA-001
   - UXA-003
-  - UXA-005
   - UXA-056
   - UXA-058
   - UXA-059
-  - UXA-060
-  - UXA-024
   - UXA-028
   - UXA-030
   - UXA-043
-  - UXA-055
 related:
-  - UXA-062
   - M7.63
 normative: false
 ---

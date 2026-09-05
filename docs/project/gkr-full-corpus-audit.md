@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.13.0
+version: 1.14.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-05
 normative: false
@@ -147,7 +147,42 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-013 | Major | Fundação antiga supercentralizava Oportunidade e antecedia distinção Possibilidade/Mecanismo/Oportunidade | `REBUILD + ENRICH` | reconciliado no Lote C |
 | F-014 | Major | PP-11 antigo podia confundir visão de capacidade máxima com verdade atual | `UPDATE` | reconciliado no Lote C |
 | F-015 | Major | Public Canon anterior ainda publicava fluxo/definição anterior de Oportunidade | `UPDATE + ENRICH` | reconciliado no Lote C |
-| F-016 | Major | corpus ainda contém documentos de materialização e linguagem de UI que podem competir com Design; camada física SVG, família `screen-gallery*` e ciclo `UXA-081..085` já foram desmaterializados após prova de absorção | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — F-016-A RESOLVED; `screen-gallery*` removida 8/8 e `UXA-081..085` removidos 5/5 após absorção; demais famílias Markdown continuam em auditoria** |
+| F-016 | Major | o corpus continha produtores visuais legados e referências estruturais capazes de competir com Design; a auditoria separou produtores removíveis de autoridades, validadores e evidências que devem permanecer | `REMOVE_AFTER_ABSORPTION + REWRITE` | **RESOLVED — cleanup documental 26/26 concluído após absorção; referências estruturais reconciliadas; 23 caminhos de SVG removidos neutralizados; autoridades/validadores/evidências preservados; guards e prova pós-delete concluídos** |
+
+
+### 6.1 Fechamento de F-016 — desmaterialização documental governada
+
+A adjudicação de `F-016` foi implementada somente depois da prova de absorção das famílias legadas. O fechamento preserva a distinção entre histórico Git e verdade documental vigente.
+
+```text
+F-016
+→ RESOLVED
+
+LEGACY VISUAL PRODUCERS
+→ REMOVE_AFTER_ABSORPTION EXECUTED
+→ 26/26 REMOVED
+
+PHYSICAL SVGs
+→ 0
+
+DIRECT PATH REFERENCES TO REMOVED SVGs
+→ 23 IDENTIFIED BEFORE CLEANUP
+→ 0 LIVE/DIRECT PATH REFERENCES AFTER CLEANUP
+
+STRUCTURAL depends_on / related TO REMOVED PRODUCERS
+→ 0 AFTER RECONCILIATION
+
+CURRENT AUTHORITIES / VALIDATORS / EVIDENCE
+→ PRESERVED
+
+REINTRODUCTION GUARDS
+→ ACTIVE IN SEMANTIC + MECHANICAL VALIDATION
+
+POST-DELETE READ-ONLY PROOF
+→ SUCCESS
+```
+
+Este fechamento não autoriza Design, nova materialização, `UXA-102 / V5`, Product Engineering, liberação automática de J/K/L/M/N nem merge da PR #363.
 
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 

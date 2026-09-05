@@ -14,7 +14,6 @@ depends_on:
 related:
   - UXA-002
   - UXA-003
-  - UXA-006
   - UXA-010
   - UXA-011-A1
 normative: false

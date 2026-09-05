@@ -6,7 +6,6 @@ status: active
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-02
 related:
-  - UXA-051
   - GKR-CCM-UXA-051-A1
   - M7.53
 ---

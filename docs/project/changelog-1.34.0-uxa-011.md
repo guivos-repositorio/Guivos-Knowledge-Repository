@@ -7,7 +7,6 @@ owner: Guivos
 last_updated: 2026-07-26
 related:
   - UXA-011
-  - UXA-006
   - GKR-STATE-001
   - ROADMAP-11.87.0
   - M7.19.5

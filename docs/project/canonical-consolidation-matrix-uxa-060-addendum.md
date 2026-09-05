@@ -7,10 +7,8 @@ owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-01
 parent: GKR-CCM-001
 depends_on:
-  - UXA-005
   - UXA-056
   - UXA-059
-  - UXA-060
 related:
   - GKR-STATE-001
   - ROADMAP-12.36.0

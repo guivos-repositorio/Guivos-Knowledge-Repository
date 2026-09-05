@@ -18,7 +18,6 @@ depends_on:
 related:
   - UXA-015
   - UXA-017
-  - UXA-086
   - UXA-087
   - GKR-JOURNEY-GAPS-001
 normative: false

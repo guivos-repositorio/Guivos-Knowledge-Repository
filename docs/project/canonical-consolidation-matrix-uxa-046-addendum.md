@@ -9,14 +9,10 @@ depends_on:
   - GKR-STATE-001
   - UXA-038
   - UXA-039
-  - UXA-040
   - UXA-041
-  - UXA-042
   - UXA-043
-  - UXA-044
   - UXA-045
 related:
-  - UXA-046
   - M7.48
 normative: false
 ---

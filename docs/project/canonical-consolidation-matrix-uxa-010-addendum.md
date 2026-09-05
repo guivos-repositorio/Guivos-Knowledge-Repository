@@ -9,7 +9,6 @@ depends_on:
   - GKR-CANON-MATRIX-001
   - UXA-010
 related:
-  - UXA-006
   - UXA-009
   - ROADMAP-11.86.0
   - M7.19.4

@@ -6,7 +6,6 @@ version: 1.83.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-30
 related:
-  - UXA-005
   - UXA-056
   - UXA-057
   - UXA-058

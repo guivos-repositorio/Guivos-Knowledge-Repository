@@ -7,14 +7,10 @@ owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-01
 parent: GKR-CANONICAL-CONSOLIDATION-MATRIX
 related:
-  - UXA-046
   - UXA-047
-  - UXA-048
   - UXA-049
   - UXA-050
-  - UXA-051
   - UXA-052
-  - UXA-053
   - M7.55
 normative: false
 ---

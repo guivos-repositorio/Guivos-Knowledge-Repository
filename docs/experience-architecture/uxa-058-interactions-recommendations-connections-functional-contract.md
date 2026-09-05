@@ -18,8 +18,6 @@ depends_on:
   - UXA-056
   - UXA-057
 related:
-  - UXA-005
-  - UXA-095
   - UXA-096
   - GKR-UX-ORGCOL-UX-STATE-001
   - M7.60

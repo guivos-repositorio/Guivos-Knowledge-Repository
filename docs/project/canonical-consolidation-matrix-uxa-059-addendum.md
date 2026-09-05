@@ -9,11 +9,9 @@ depends_on:
   - GKR-CANON-MATRIX-001
   - UXA-059
 related:
-  - UXA-005
   - UXA-056
   - UXA-057
   - UXA-058
-  - UXA-095
   - UXA-096
   - GKR-UX-ORGCOL-UX-STATE-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001

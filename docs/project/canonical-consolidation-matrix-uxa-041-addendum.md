@@ -9,7 +9,6 @@ depends_on:
   - GKR-STATE-001
   - UXA-038
   - UXA-039
-  - UXA-040
   - UXA-041
 related:
   - ROADMAP-12.17.0

@@ -7,7 +7,6 @@ owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-30
 parent: GKR-CCM-001
 depends_on:
-  - UXA-007
   - UXA-014
   - UXA-019
   - UXA-056

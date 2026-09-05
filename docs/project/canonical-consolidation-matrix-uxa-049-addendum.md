@@ -7,7 +7,6 @@ owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-01
 depends_on:
   - GKR-STATE-001
-  - UXA-048
 related:
   - UXA-049
   - M7.51

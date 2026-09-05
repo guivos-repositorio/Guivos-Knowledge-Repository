@@ -6,7 +6,6 @@ version: 1.78.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-02
 depends_on:
-  - UXA-053
   - UXA-054
 related:
   - GKR-STATE-001

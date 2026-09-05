@@ -9,7 +9,6 @@ depends_on:
   - GKR-STATE-001
   - UXA-096
 related:
-  - UXA-095
   - GKR-SURF-PER-107
   - GKR-SURF-PER-108
   - GKR-TRN-111
