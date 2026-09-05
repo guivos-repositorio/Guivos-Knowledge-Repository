@@ -66,7 +66,7 @@ CONTAGEM FÍSICA DE SVGs
 ≠ CONTAGEM DE WIREFRAMES VALIDADOS
 ```
 
-`UXA-015..018` e seus SVGs associados permanecem fisicamente no repositório para rastreabilidade, mas são históricos `superseded` e não podem sustentar maturidade atual da experiência autenticada principal de Organização ou Coletivo.
+`UXA-015..018` e seus dois ativos visuais associados foram removidos do corpus corrente por `F-006`; sua proveniência permanece no histórico Git e não sustenta autoridade visual vigente.
 
 A D5-C1 contratou `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução`. A D5-C2 criou um SVG low-fidelity para cada uma dessas responsabilidades sem criar novo ID granular. A D5-C3 reformou in-place e validou funcionalmente os três estados-base. A D5-C4B promoveu individualmente `TRN-008..013` para **integralmente validadas no limite documental**, sem promover implementação técnica ou a Jornada da Pessoa além de `draft`.
 
@@ -94,15 +94,15 @@ A coluna `SVGs` abaixo é **inventário físico**. Ela não é, por si só, indi
 | Pessoa em Coletivos | Meus Coletivos | 1 | validado | TRN-108 e TRN-110 integralmente validadas | P0B separado |
 | Pessoa em Coletivos | Central de Atualizações | 1 | validado | TRN-110 e TRN-111 integralmente validadas | P0B/P1 separados |
 | Pessoa em Coletivos | Início do Participante | 1 | validado por UXA-095/096 no recorte da Pessoa participante; não deriva de UXA-016/018 | TRN-111 integralmente validada | P0B e áreas internas separadas |
-| Coletivo | referência inicial histórica | 1 | `UXA-016/018` superseded; artefato físico não é wireframe principal vigente | não utilizável como baseline atual | **wireframe principal autenticado pendente** |
+| Coletivo | referência inicial histórica | 0 | `UXA-016/018` e ativo visual removidos do corpus corrente | proveniência somente no histórico Git | materialização visual pertence exclusivamente a Design |
 | Coletivo | Visão Geral do Responsável | 1 | UXA-086/087 preservam evidência local do pacote administrativo; **não constituem baseline final da UX principal** | TRN-112 e contratos de Planos preservam maturidade própria | mapa de superfícies e wireframe principal autenticado pendentes |
 | Coletivo | gestão de solicitações | 7 | 7 validados no fluxo especializado | handoffs aplicáveis integralmente validados | operação interna posterior |
 | Coletivo | Planos, comparação e cobrança | **3** | **3 validados no fluxo especializado** | contratos de origem/retorno preservam maturidade própria; TRN-411 a 415 locais; TRN-416 parcial | contratação/dimensionamento assistido e cobrança real; origem principal final pendente |
-| Organização | visão geral e cadastro | 2 | **ORG-001 histórico/superseded como wireframe principal; cadastro preserva validação própria por UXA-008/013** | publicação–descoberta preservada; contratos de Planos têm maturidade própria | **mapa de superfícies, wireframe principal autenticado e matriz institucional completa pendentes** |
+| Organização | visão geral e cadastro | 1 | **materialização histórica de ORG-001 removida; cadastro preserva validação funcional própria por UXA-008/013** | publicação–descoberta preservada; contratos de Planos têm maturidade própria | documentação funcional preservada; materialização visual pertence exclusivamente a Design |
 | Organização | Planos, comparação e cobrança | **3** | **3 validados no fluxo especializado** | contratos de origem/retorno preservam maturidade própria; TRN-421 a 425 locais; TRN-426 parcial | contratação/dimensionamento assistido e cobrança real; origem principal final pendente |
 | camada comercial | Opportunity Boost | 46 | **46 validados no escopo próprio** | parcial | TRN-304/305/306 e integrações específicas |
 | fronteira documental | destinos externos/comerciais | 0 | não aplicável | BND-001 examinada; BND-002 parcial | processo externo posterior; contratação/dimensionamento assistido |
-| **Total físico do catálogo** |  | **121** | **maturidade agregada não pode ser inferida; recomputação governada pendente** |  |  |
+| **Total físico do catálogo** |  | **119** | **maturidade agregada não pode ser inferida; recomputação governada pendente** |  |  |
 
 ## 3. Instrumentos granulares vigentes
 
@@ -110,9 +110,9 @@ A coluna `SVGs` abaixo é **inventário físico**. Ela não é, por si só, indi
 |---|---:|---|
 | superfícies/estados/responsabilidades/fronteiras | **57** | inventário granular; maturidade por item |
 | transições documentais | **66** | maturidade por transição; `TRN-008..013` integrais |
-| catálogo físico | **121 SVGs** | `active` 0.33.0; inclui artefatos históricos superseded |
-| matriz de rastreabilidade | **121 associações físicas / 34 perfis** | associação ≠ autoridade vigente |
-| galeria visual | **121 SVGs físicos** | resumo global `121 validados / 0 pendentes` superseded como claim de maturidade |
+| catálogo físico | **119 SVGs** | `active` 0.33.0; inclui artefatos históricos superseded |
+| matriz de rastreabilidade | **119 associações físicas / 34 perfis estáveis** | associação ≠ autoridade vigente |
+| galeria visual | **119 SVGs físicos** | resumo global `121 validados / 0 pendentes` superseded como claim de maturidade |
 
 ## 4. Cobertura visual física
 
@@ -178,11 +178,11 @@ A reconciliação pós-PR #313/#314 **não reescreve a história desses snapshot
 ## 7. Estado do catálogo
 
 - catálogo físico: `active` 0.33.0;
-- inventário físico preservado: **121 SVGs**;
-- matriz física: **121 associações / 34 perfis**;
+- inventário físico corrente após F-006: **119 SVGs**;
+- matriz física: **119 associações / 34 perfis estáveis**, com R09/R11 preservados apenas como proveniência sem SVG;
 - resumo `121 SVGs / 121 validados / 0 pendentes`: **superseded como claim de maturidade vigente**;
-- wireframe principal autenticado da Organização: **pendente**;
-- wireframe principal autenticado do Coletivo: **pendente**;
+- materialização visual da Organização: **autoridade exclusiva de Design; não é requisito documental**;
+- materialização visual do Coletivo: **autoridade exclusiva de Design; não é requisito documental**;
 - fluxos especializados preservam sua maturidade própria quando sustentados por autoridade independente;
 - `PER-010..012`: permanecem validados localmente pela D5-C3;
 - `TRN-008..013`: **integralmente validadas documentalmente pela D5-C4B**;

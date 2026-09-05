@@ -49,7 +49,7 @@ normative: false
 
 ## 1. Finalidade
 
-Esta seção reúne os **121 SVGs físicos do inventário visual** para inspeção humana de assertividade, sequência, coerência e cobertura.
+Esta seção reúne os **119 SVGs físicos remanescentes do inventário visual** para inspeção humana de assertividade, sequência, coerência e cobertura.
 
 Após a reconciliação pós-PR #313/#314, a presença de um SVG na galeria não significa que ele permaneça como wireframe vigente. Em particular, os artefatos associados a `UXA-015..018` são históricos `superseded` e permanecem apenas para rastreabilidade.
 
@@ -61,13 +61,13 @@ A galeria permanece `active` como instrumento de inspeção. Esse status não si
 
 Ressalvas vigentes:
 
-- **121 SVGs físicos** compartilham **34 perfis de rastreabilidade** no snapshot atual;
+- **119 SVGs físicos** permanecem no corpus corrente; os perfis R09/R11 preservam somente proveniência sem ativo F-006;
 - o inventário físico inclui artefatos históricos `superseded`;
 - **121 SVGs físicos ≠ 121 wireframes vigentes ≠ 121 wireframes validados**;
 - o resumo histórico `121 validados / 0 pendentes` está **superseded como claim de maturidade vigente**;
 - uma nova contagem agregada de wireframes vigentes/validados não é inferida sem recomputação governada;
-- o wireframe principal autenticado da Organização permanece **pendente**;
-- o wireframe principal autenticado do Coletivo permanece **pendente**;
+- o materialização visual da Organização pertence exclusivamente a Design;
+- o materialização visual do Coletivo pertence exclusivamente a Design;
 - fluxos especializados independentes preservam sua maturidade documental quando sustentados por autoridade própria;
 - **10 responsabilidades** permanecem registradas sem SVG dedicado no snapshot estrutural;
 - **duas fronteiras** permanecem corretamente sem tela;
@@ -93,19 +93,19 @@ Ressalvas vigentes:
 | Ordem | Página | SVGs físicos | Continuidade examinada |
 |---:|---|---:|---|
 | 1 | [Pessoa — Fundação, Entrada, Compreensão e Recorrência](screen-gallery-person.md) | **23** | Home → início protegido → expressão → compreensão → primeira Hoje → recorrência → Objetivos/Próximos Passos/Evolução |
-| 2 | [Organização e Oportunidades](screen-gallery-opportunities-organization.md) | 9 | publicação → mapa/lista → detalhe → revisão de saída → fronteira; inclui histórico visual de ORG-001 |
-| 3 | [Coletivos](screen-gallery-collectives.md) | 34 | descoberta → solicitação → gestão → Meus Coletivos → Central → Início; inclui histórico visual superseded |
+| 2 | [Organização e Oportunidades](screen-gallery-opportunities-organization.md) | 8 | publicação → mapa/lista → detalhe → revisão de saída → fronteira; inclui histórico visual de ORG-001 |
+| 3 | [Coletivos](screen-gallery-collectives.md) | 33 | descoberta → solicitação → gestão → Meus Coletivos → Central → Início; inclui histórico visual superseded |
 | 4 | [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | configuração → exposição → retorno orgânico |
 | 5 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | gestão → relatório → estados residuais |
 | 6 | [Planos, Comparação e Cobrança](screen-gallery-plans-billing.md) | **9** | contratos especializados de origem/retorno → plano atual → comparação → contratação/ciclo → resultado/recuperação |
-|  | **Total físico** | **121** | **maturidade agregada requer recomputação governada** |
+|  | **Total físico** | **119** | **maturidade agregada requer recomputação governada** |
 
 ## 5. Cobertura física confirmada
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs físicos existentes e referenciados | **121** |
-| associações individuais físicas | **121** |
+| SVGs físicos existentes e referenciados | **119** |
+| associações individuais físicas | **119** |
 | perfis de rastreabilidade | **34** |
 | wireframes vigentes/validados agregados | **não inferir; recomputação governada pendente** |
 | superfícies/estados/fronteiras | **57** |
@@ -126,8 +126,8 @@ No snapshot estrutural, permanecem sem SVG dedicado:
 
 Além disso, após a reconciliação:
 
-- `GKR-SURF-ORG-001` possui artefato histórico, mas seu **wireframe principal autenticado vigente está pendente**;
-- a experiência principal autenticada do Coletivo possui artefatos históricos/locais, mas seu **wireframe principal final está pendente**.
+- `GKR-SURF-ORG-001` possui artefato histórico, mas sua materialização visual não é definida pela documentação e pertence exclusivamente a Design;
+- a experiência principal autenticada do Coletivo possui artefatos históricos/locais, mas sua materialização visual pertence exclusivamente a Design.
 
 `GKR-SURF-BND-001` e `GKR-SURF-BND-002` permanecem intencionalmente sem tela Guivos. O estado de revisão de saída pertence a `PER-203` e não altera essa regra.
 
@@ -147,14 +147,16 @@ A existência de 121 SVGs físicos não implica que todas as 66 transições, to
 
 O status `active` aprova somente o instrumento documental de inspeção. Não inicia protótipo ou Engenharia de Produto.
 
-## 8. Estado após a reconciliação pós-313/314
+## 8. Estado após o cleanup F-006
 
-A recomputação física não é necessária para reconhecer a supersessão: os 121 arquivos podem permanecer no repositório, enquanto a autoridade de parte deles muda.
+Os dois SVGs F-006 foram removidos do corpus corrente. A proveniência permanece no histórico Git. A auditoria repo-wide passa a aplicar a regra estrutural de que documentação funcional não deve materializar interface.
 
 ```text
-ARTEFATO FÍSICO PRESERVADO
-+ HISTÓRICO PRESERVADO
-≠ AUTORIDADE VISUAL VIGENTE
+DOCUMENTAÇÃO
+→ CONTRATO FUNCIONAL / CONTEÚDO / ESTADOS / REGRAS / CRITÉRIOS
+
+DESIGN
+→ AUTORIDADE EXCLUSIVA DE MATERIALIZAÇÃO VISUAL
 ```
 
 Pessoa, Coletivo e Organização continuam `draft`. Para Organização e Coletivo, Jobs + Arquitetura da Informação autenticada estão definidos documentalmente em estado **pre-surface-map** por `GKR-UX-ORGCOL-AUTH-IA-001`; permanecem pendentes o mapa final de superfícies/estados e os wireframes principais autenticados. V5/UXA-102, D6 e D7 não foram iniciadas e nenhuma implementação técnica é iniciada automaticamente.

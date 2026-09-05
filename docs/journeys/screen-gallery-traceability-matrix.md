@@ -48,7 +48,7 @@ normative: false
 
 ## 1. Finalidade
 
-Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos **121 SVGs físicos do inventário**. Perfis documentais não substituem análise semântica exclusiva de cada estado e não validam automaticamente transições, jornadas ou a vigência atual de um wireframe.
+Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos **119 SVGs físicos remanescentes do inventário**. Perfis documentais não substituem análise semântica exclusiva de cada estado e não validam automaticamente transições, jornadas ou a vigência atual de um wireframe.
 
 Após a reconciliação pós-PR #313/#314:
 
@@ -60,7 +60,7 @@ SVG FÍSICO PRESERVADO
 ≠ WIREFRAME VIGENTE
 ```
 
-Os SVGs associados a `UXA-015..018` permanecem nesta matriz por rastreabilidade histórica, mas suas antigas claims de wireframe/validação principal estão `superseded`.
+Os dois ativos visuais associados a `UXA-015..018` foram removidos do corpus corrente por `F-006`; R09 e R11 permanecem apenas como perfis estáveis de proveniência sem associação física.
 
 ## 2. Estado do instrumento
 
@@ -82,9 +82,9 @@ Para Organização e Coletivo, os perfis históricos continuam úteis para local
 | R06 | PER-201 | TRN-203/304 | TRN-204/210 | voltar/alternar | integração patrocinada parcial | UXA-025/027/031/033; TRN-203/204/210 UXA-098 |
 | R07 | PER-202 | TRN-210/306 | TRN-211 | retornar ao mapa | integração patrocinada parcial | UXA-029; TRN-210/211 UXA-098 |
 | R08 | PER-203 | TRN-204/211 | TRN-205 → BND-001 | voltar ao detalhe; bloquear saída inválida; retorno externo sem presumir resultado | processo externo posterior à fronteira | UXA-012; entradas UXA-098; reformulação, revisão consciente e TRN-205 UXA-101 |
-| R09 | ORG-001 | entrada institucional semântica | TRN-201 ou contrato especializado TRN-427 | cancelar/retornar; TRN-428 no contrato de Planos | **wireframe principal autenticado e matriz institucional pendentes** | `UXA-015/017` superseded; perfil preservado somente para rastreabilidade histórica; TRN-427/428 mantêm maturidade contratual própria |
+| R09 | ORG-001 | entrada institucional semântica | TRN-201 ou contrato especializado TRN-427 | cancelar/retornar; TRN-428 no contrato de Planos | materialização visual fora da autoridade documental | `UXA-015/017` removidos do corpus corrente; perfil preservado somente como proveniência histórica sem SVG; TRN-427/428 mantêm maturidade contratual própria |
 | R10 | ORG-002/003 | TRN-201 | TRN-202/203 | editar/retirar/pausar | ligações institucionais restantes | UXA-013; TRN-203 UXA-098 |
-| R11 | COL-001 | busca ou presença pública; entrada autenticada final pendente | TRN-103 no recorte público aplicável | retornar/sair | **presença pública ≠ UX principal autenticada** | `UXA-016/018` superseded; UXA-063 preserva validação do perfil público no recorte próprio |
+| R11 | COL-001 | busca ou presença pública; entrada autenticada funcional conforme autoridades vigentes | TRN-103 no recorte público aplicável | retornar/sair | **presença pública ≠ UX principal autenticada** | `UXA-016/018` removidos do corpus corrente; perfil preservado somente como proveniência histórica sem SVG; UXA-063 preserva validação do perfil público no recorte próprio |
 | R12 | PER-101/102 | exploração | TRN-101/102 | limpar/voltar/refazer | descoberta → perfil | UXA-061 |
 | R13 | PER-103/COL-001 | TRN-102 | TRN-103 | retornar | solicitação | UXA-063 |
 | R14 | PER-104 | TRN-103 | TRN-104 | cancelar/retornar | handoff | UXA-065 |
@@ -111,7 +111,7 @@ Para Organização e Coletivo, os perfis históricos continuam úteis para local
 
 R32–R34 preservam as mesmas associações criadas pela D5-C2 e a validação funcional local da D5-C3. A D5-C4B altera somente a maturidade integrada de `TRN-008..013`; não cria, remove ou remapeia perfil visual.
 
-## 4. Associação individual dos 121 SVGs físicos
+## 4. Associação individual dos 119 SVGs físicos remanescentes
 
 | SVG | Perfil |
 |---|---|
@@ -145,9 +145,7 @@ R32–R34 preservam as mesmas associações criadas pela D5-C2 e a validação f
 | `uxa-032-opportunity-map-no-results-desktop.svg` | R06 |
 | `uxa-028-opportunity-map-list-mobile.svg` | R07 |
 | `uxa-007-opportunity-detail-mobile.svg` | R08 |
-| `uxa-015-organization-overview-desktop.svg` | R09 |
 | `uxa-008-organization-opportunity-registration-desktop.svg` | R10 |
-| `uxa-016-collective-home-mobile.svg` | R11 |
 | `uxa-060-collective-discovery-origin-mobile.svg` | R12 |
 | `uxa-060-collective-explore-mobile.svg` | R12 |
 | `uxa-060-collective-search-filters-mobile.svg` | R12 |
@@ -240,8 +238,8 @@ R32–R34 preservam as mesmas associações criadas pela D5-C2 e a validação f
 The two historical entries below remain associated only for traceability:
 
 ```text
-uxa-015-organization-overview-desktop.svg → R09 → historical/superseded
-uxa-016-collective-home-mobile.svg        → R11 → historical/superseded
+antigo ativo visual F-006 de ORG-001 → R09 → historical/superseded
+antigo ativo visual F-006 de COL-001        → R11 → historical/superseded
 ```
 
 ## 5. Totais e limites
