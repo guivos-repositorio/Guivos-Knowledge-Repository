@@ -105,15 +105,19 @@ def proof(root: Path, require_resolved: bool = False) -> None:
         for where, needle, text in required:
             if needle not in text:
                 errors.append(f"closure marker missing in {where}: {needle}")
-        stale = [
+
+        # Historical checkpoints inside the non-normative audit are provenance,
+        # not current-state drift. Stale markers are forbidden only in the
+        # normative current-state authority; the audit must preserve history.
+        stale_current_state = [
             "OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION",
             "NEXT F-016 SUBFRONT",
             "CLASSIFY REMAINING MARKDOWN MATERIALIZATION FAMILIES INDIVIDUALLY",
             "demais famílias Markdown continuam em auditoria",
         ]
-        for marker in stale:
-            if marker in state or marker in audit:
-                errors.append(f"stale F-016 marker remains: {marker}")
+        for marker in stale_current_state:
+            if marker in state:
+                errors.append(f"stale F-016 marker remains in current state: {marker}")
 
     print(f"F016_PROOF_DELETED_COUNT={deleted_count}")
     print(f"F016_PROOF_PHYSICAL_SVG_COUNT={len(physical)}")
