@@ -17,7 +17,10 @@ jobs:
           fetch-depth: 0
 
       - name: Apply staged reconciliation
-        run: python scripts/tmp_f016_eligibility_adjudication_stage.py
+        shell: bash
+        run: |
+          sed -i 's/"2. Baseline reconciliada"/"2. Resultado executivo"/' scripts/tmp_f016_eligibility_adjudication_stage.py
+          python scripts/tmp_f016_eligibility_adjudication_stage.py
 
       - uses: actions/setup-python@v5
         with:
