@@ -54,7 +54,7 @@ explorar e buscar
 → Início do Participante
 ```
 
-A experiência principal autenticada do Coletivo já possui atores/autoridades/jobs e Arquitetura da Informação definidos em estado **pre-surface-map**. Permanecem pendentes o mapa final de superfícies, os fluxos/estados críticos da experiência principal e o wireframe autenticado final. A UXA-096 preserva a maturidade da Central e do Início do Participante na perspectiva da Pessoa participante; isso não define a UX administrativa principal do Coletivo.
+A experiência principal autenticada do Coletivo já possui atores/autoridades/jobs e Arquitetura da Informação definidos em estado **pre-surface-map**. Permanecem pendentes o mapa final de superfícies, os fluxos/estados críticos da experiência principal e a materialização visual, cuja autoridade pertence exclusivamente a Design. A UXA-096 preserva a maturidade da Central e do Início do Participante na perspectiva da Pessoa participante; isso não define a UX administrativa principal do Coletivo.
 
 ## 2. Descoberta e busca
 
@@ -142,14 +142,9 @@ O Perfil Público preserva sua maturidade própria. Presença pública ≠ exper
 
 A família preserva validação funcional própria; o estado aprovado corrente foi revalidado pela UXA-092.
 
-## 6. Referência inicial histórica do Coletivo
+## 6. Proveniência da referência inicial histórica do Coletivo
 
-**Cobertura física:** 1 SVG · associação histórica: `GKR-SURF-COL-001` · `UXA-016/018` = **superseded**
-
-### `uxa-016-collective-home-mobile.svg` — histórico superseded
-![](../assets/wireframes/uxa-016-collective-home-mobile.svg){ width="320" loading="lazy" }
-
-> Este SVG permanece somente por rastreabilidade. Não é wireframe vigente, baseline de produto ou validação atual da experiência autenticada do Coletivo.
+`UXA-016/018` e a antiga materialização associada foram removidos do corpus corrente após prova de absorção e elegibilidade de cleanup de `F-006`. A proveniência permanece no histórico Git; nenhum desses artefatos constitui autoridade visual vigente.
 
 ## 7. Referência administrativa local do Responsável
 
@@ -243,12 +238,12 @@ VALIDAÇÃO DESSE WIREFRAME PRINCIPAL
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs físicos | **34** |
-| artefatos históricos superseded explícitos nesta página | **1** (`uxa-016-collective-home-mobile.svg`) |
+| SVGs físicos | **33** |
+| artefatos físicos históricos superseded explícitos nesta página | **0** |
 | maturidade agregada dos 34 SVGs | **não inferir; cada família deve ser lida por autoridade própria** |
 | wireframe principal autenticado do Coletivo | **pendente** |
 
-A presença física de 34 SVGs não significa 34 wireframes vigentes ou validados da UX do Coletivo.
+A presença física de 33 SVGs não transfere autoridade visual à documentação; cada ativo remanescente será tratado pela auditoria repo-wide de desmaterialização.
 
 ## 14. Lacuna posterior aos gates de F-006
 

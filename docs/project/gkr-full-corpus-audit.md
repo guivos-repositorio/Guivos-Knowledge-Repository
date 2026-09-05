@@ -350,8 +350,8 @@ Exemplos confirmados de artefatos sem autoridade visual vigente:
 - `UXA-016`;
 - `UXA-017`;
 - `UXA-018`;
-- `uxa-015-organization-overview-desktop.svg`;
-- `uxa-016-collective-home-mobile.svg`.
+- `antigo ativo visual F-006 de ORG-001`;
+- `antigo ativo visual F-006 de COL-001`.
 
 O Bloco H recuperou, pelo diff da PR #313 e pela inspeção do histórico Git, o conteúdo material anterior à supersessão desses quatro documentos.
 

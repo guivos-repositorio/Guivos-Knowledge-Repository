@@ -133,7 +133,7 @@ Mapa final de superfícies
 → pendente
 ```
 
-O antigo SVG `uxa-015-organization-overview-desktop.svg` é histórico `superseded` e permanece fisicamente enquanto não houver autorização humana separada e explícita para seu cleanup; `F-006` permanece aberto durante eventual remoção e os gates pós-cleanup.
+O antigo SVG `antigo ativo visual F-006 de ORG-001` é histórico `superseded` e permanece fisicamente enquanto não houver autorização humana separada e explícita para seu cleanup; `F-006` permanece aberto durante eventual remoção e os gates pós-cleanup.
 
 ## 6. Coletivo — estado corrigido
 
@@ -170,7 +170,7 @@ Mapa final de superfícies
 → pendente
 ```
 
-O antigo SVG `uxa-016-collective-home-mobile.svg` é histórico `superseded` e não pode ser usado como baseline da experiência autenticada final.
+O antigo SVG `antigo ativo visual F-006 de COL-001` é histórico `superseded` e não pode ser usado como baseline da experiência autenticada final.
 
 ## 7. Regra para contagens visuais
 

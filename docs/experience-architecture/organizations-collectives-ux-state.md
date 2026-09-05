@@ -297,7 +297,7 @@ F-006
 → ABSORPTION_APPLIED
 → ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
 → CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_REMOVAL_NOT_AUTHORIZED
+→ PHYSICAL_CLEANUP_APPLIED_AWAITING_POST_DELETE_VALIDATION
 ```
 
 Os gates documentais de absorção material e reconciliação das dependências funcionais já estão concluídos. Antes de qualquer cleanup físico ainda é obrigatório:

@@ -49,8 +49,8 @@ A UXA-098 valida `GKR-TRN-203`, `204`, `210` e `211`. A UXA-101 valida `GKR-TRN-
 A reconciliação pós-PR #313/#314 separa a UX principal autenticada da Organização do fluxo especializado de oportunidades:
 
 ```text
-UXA-015/017 + SVG de ORG-001
-→ HISTÓRICO SUPERSEDED
+UXA-015/017 + antiga materialização de ORG-001
+→ REMOVIDOS DO CORPUS CORRENTE / PROVENIÊNCIA PRESERVADA NO HISTÓRICO GIT
 
 UXA-008/013 — CADASTRO DE OPORTUNIDADE
 → MATURIDADE PRÓPRIA PRESERVADA
@@ -60,16 +60,11 @@ UXA-008/013 — CADASTRO DE OPORTUNIDADE
 
 ## 2. Organização
 
-**Cobertura física:** 2 SVGs · IDs associados: `GKR-SURF-ORG-001`, `GKR-SURF-ORG-002`, `GKR-SURF-ORG-003`.
+**Cobertura física:** 1 SVG · IDs associados: `GKR-SURF-ORG-001`, `GKR-SURF-ORG-002`, `GKR-SURF-ORG-003`.
 
-- `GKR-SURF-ORG-001`: wireframe principal autenticado **pendente**; `UXA-015/017` permanecem somente para rastreabilidade histórica;
+- `GKR-SURF-ORG-001`: contrato funcional/IA preservado; `UXA-015/017` foram removidos do corpus corrente; a materialização visual pertence exclusivamente a Design;
 - `GKR-SURF-ORG-002/003`: fluxo especializado de cadastro/ativação preserva autoridade `UXA-008/013`, com continuidade de publicação em `UXA-098`.
 
-### `uxa-015-organization-overview-desktop.svg` — histórico superseded
-
-![](../assets/wireframes/uxa-015-organization-overview-desktop.svg){ width="320" loading="lazy" }
-
-> Este SVG permanece na galeria apenas por rastreabilidade. Não é wireframe vigente, baseline de produto ou autoridade de design da experiência autenticada principal da Organização.
 
 ### `uxa-008-organization-opportunity-registration-desktop.svg`
 
@@ -127,7 +122,7 @@ A continuidade orgânica `publicação → descoberta → Mapa/Lista → Detalhe
 
 Isso **não** valida inscrição, reserva, compra, contratação, disponibilidade, autenticação ou qualquer outro processo executado pelo terceiro depois de `BND-001`. Integrações patrocinadas `TRN-304/306` permanecem parciais.
 
-Também não valida a UX principal autenticada da Organização. Atores, autoridades, jobs e a Arquitetura da Informação autenticada já estão definidos; o gap seguinte começa no **mapa final de superfícies**, seguido por fluxos/estados críticos e construção de um novo wireframe vigente quando autorizado.
+Também não valida a UX principal autenticada da Organização. Atores, autoridades, jobs e a Arquitetura da Informação autenticada já estão definidos; o próximo trabalho documental limita-se a contratos funcionais, fluxos/estados críticos e handoff; a materialização visual pertence exclusivamente a Design.
 
 O status `active` registra o instrumento de inspeção e não inicia protótipo ou Engenharia de Produto.
 

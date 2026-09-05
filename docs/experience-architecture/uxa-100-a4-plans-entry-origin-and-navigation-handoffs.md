@@ -54,7 +54,7 @@ Contudo, não existe no registro granular uma identidade própria para essa resp
 
 `ORG-001 — Visão Geral da Organização` é a superfície inicial do contexto institucional e já possui navegação institucional.
 
-A auditoria encontrou um desvio semântico no SVG `uxa-015-organization-overview-desktop.svg`: o cabeçalho lateral ainda dizia `Guivos Business`, em conflito com a autoridade vigente:
+A auditoria encontrou um desvio semântico no SVG `antigo ativo visual F-006 de ORG-001`: o cabeçalho lateral ainda dizia `Guivos Business`, em conflito com a autoridade vigente:
 
 ```text
 Organização ≠ Guivos Business
