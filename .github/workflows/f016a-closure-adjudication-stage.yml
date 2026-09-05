@@ -1,4 +1,4 @@
-name: F-016 Screen Gallery Canonical Cleanup Transaction
+name: F-016 Screen Gallery Post-Delete Read-Only Proof
 
 on:
   push:
@@ -6,27 +6,25 @@ on:
       - agent/gkr-f016a-closure-adjudication-stage-v1
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  canonical-transaction:
+  post-delete-proof:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout exact authorized canonical head
+      - name: Checkout exact canonical head read-only
         uses: actions/checkout@v4
         with:
-          ref: b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938
-          fetch-depth: 0
+          ref: 78534bf86acdc5da5f76e558b0df2347e6b5a111
+          fetch-depth: 1
 
-      - name: Verify authorization checkpoint and remote branch
+      - name: Verify exact immutable input
         shell: bash
         run: |
           set -euo pipefail
-          test "$(git rev-parse HEAD)" = "b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
-          test "$(git rev-parse HEAD^{tree})" = "138a24d79e798fc38742a2c2e60a7091abf1d150"
+          test "$(git rev-parse HEAD)" = "78534bf86acdc5da5f76e558b0df2347e6b5a111"
+          test "$(git rev-parse HEAD^{tree})" = "6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4"
           test -z "$(git status --porcelain)"
-          remote_sha="$(git ls-remote origin refs/heads/agent/gkr-global-audit-block-2-ghi-v1 | cut -f1)"
-          test "$remote_sha" = "b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -39,213 +37,88 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt PyYAML
 
-      - name: Apply exact authorized screen-gallery cleanup
+      - name: Prove screen-gallery post-delete state and guardrails
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
-          import re
+          import re, subprocess
 
-          deleted = [
-              Path('docs/journeys/screen-gallery.md'),
-              Path('docs/journeys/screen-gallery-traceability-matrix.md'),
-              Path('docs/journeys/screen-gallery-person.md'),
-              Path('docs/journeys/screen-gallery-opportunities-organization.md'),
-              Path('docs/journeys/screen-gallery-collectives.md'),
-              Path('docs/journeys/screen-gallery-opportunity-boost-exposure.md'),
-              Path('docs/journeys/screen-gallery-opportunity-boost-operations.md'),
-              Path('docs/journeys/screen-gallery-plans-billing.md'),
-          ]
-          deleted_ids = {
-              'GKR-JOURNEY-SCREEN-GALLERY-001',
-              'GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001',
-              'GKR-JOURNEY-SCREEN-GALLERY-PERSON-001',
-              'GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITIES-ORGANIZATION-001',
-              'GKR-JOURNEY-SCREEN-GALLERY-COLLECTIVES-001',
-              'GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITY-BOOST-EXPOSURE-001',
-              'GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITY-BOOST-OPERATIONS-001',
-              'GKR-JOURNEY-SCREEN-GALLERY-PLANS-001',
-          }
-          basenames = {p.name for p in deleted}
-
-          for p in deleted:
-              assert p.is_file(), p
-              p.unlink()
-
-          mk = Path('mkdocs.yml')
-          lines = mk.read_text(encoding='utf-8').splitlines()
-          nav_targets = {str(p).removeprefix('docs/') for p in deleted}
-          lines = [line for line in lines if not any(target in line for target in nav_targets)]
-          mk.write_text('\n'.join(lines) + '\n', encoding='utf-8')
-
-          link_re = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
-          for p in Path('docs').rglob('*.md'):
-              text = p.read_text(encoding='utf-8')
-              def repl(m):
-                  target = m.group(2).split('#',1)[0].strip()
-                  if Path(target).name in basenames:
-                      return m.group(1)
-                  return m.group(0)
-              new = link_re.sub(repl, text)
-              if new != text:
-                  p.write_text(new, encoding='utf-8')
-
-          def read(path):
-              return Path(path).read_text(encoding='utf-8')
-          def write(path, text):
-              Path(path).write_text(text, encoding='utf-8')
-          def drop_related_ids(text):
-              out=[]
-              for line in text.splitlines():
-                  if line.strip().startswith('- ') and line.strip()[2:] in deleted_ids:
-                      continue
-                  out.append(line)
-              return '\n'.join(out) + ('\n' if text.endswith('\n') else '')
-
-          p='docs/journeys/index.md'
-          t=drop_related_ids(read(p))
-          t=t.replace('version: 0.43.0','version: 0.44.0',1)
-          t='\n'.join(line for line in t.splitlines() if line.strip() not in {
-              '- Galeria Visual Integrada de Telas',
-              '- Planos, Comparação e Cobrança — Galeria Canônica',
-              '- Matriz de Rastreabilidade Visual por SVG',
-          })+'\n'
-          t=re.sub(r'^\| galeria visual integrada \|.*$', '| antiga galeria visual integrada | `removed_from_current_corpus` | proveniência preservada no histórico Git |', t, flags=re.M)
-          t=re.sub(r'^\| matriz por SVG \|.*$', '| antiga matriz por SVG | `removed_from_current_corpus` | associações/perfis recuperáveis no histórico Git |', t, flags=re.M)
-          t=t.replace('| SVGs físicos existentes | **121** |','| SVGs físicos existentes | **0** |')
-          t=t.replace('| associações físicas registradas | **121** |','| associações físicas registradas | **0** |')
-          t=t.replace('| IDs com referência visual física | **45 de 57** |','| IDs com referência visual física | **0 de 57** |')
-          t=t.replace('| responsabilidades sem SVG dedicado | **10** |','| responsabilidades sem SVG dedicado | **métrica histórica; não usada como cobertura corrente após F-016-A** |')
-          write(p,t)
-
-          p='docs/experience-architecture/index.md'
-          t=drop_related_ids(read(p))
-          t=t.replace('version: 1.7.0','version: 1.8.0',1)
-          rows=[]
-          inserted=False
-          for line in t.splitlines():
-              if re.match(r'^\| (galeria visual|galeria da Pessoa|galeria Organização/Oportunidades|galeria Coletivos|galeria de Planos|matriz por SVG) \|', line):
-                  if not inserted:
-                      rows.append('| proveniência visual histórica | documentos de galeria/matriz removidos do corpus corrente; recuperáveis no histórico Git; sem autoridade visual |')
-                      inserted=True
-                  continue
-              if line.startswith('| catálogo integrado |'):
-                  line='| catálogo integrado | `active` 0.34.0; **0 SVGs físicos após F-016-A**; maturidade funcional preservada por autoridades textuais |'
-              rows.append(line)
-          t='\n'.join(rows)+'\n'
-          write(p,t)
-
-          p='docs/journeys/screen-catalog.md'
-          t=drop_related_ids(read(p))
-          t=t.replace('version: 0.34.0','version: 0.35.0',1)
-          t=t.replace('## 2. Inventário agregado por família','## 2. Inventário agregado por família — snapshot histórico pré-F-016-A',1)
-          t=t.replace('A coluna `SVGs` abaixo é **inventário físico**. Ela não é, por si só, indicador de maturidade vigente.',
-                      'As contagens `SVGs` abaixo pertencem ao snapshot histórico anterior à desmaterialização física. O inventário físico corrente é **0** e nenhuma contagem histórica constitui autoridade visual vigente.',1)
-          t=t.replace('| matriz de rastreabilidade | **0 associações físicas / 34 perfis de proveniência** | sem autoridade visual |',
-                      '| perfis históricos de rastreabilidade | **34 perfis históricos** | instrumento de matriz removido; proveniência recuperável no histórico Git |')
-          t=t.replace('| galeria visual | **0 SVGs físicos** | documentos de galeria preservados somente como proveniência histórica |',
-                      '| galeria visual histórica | **0 SVGs físicos** | documentos de galeria removidos do corpus corrente; proveniência preservada no histórico Git |')
-          t=t.replace('- catálogo físico: `active` 0.33.0;','- catálogo físico: `active` 0.35.0;')
-          t=t.replace('- matriz física: **0 associações físicas / 34 perfis de proveniência**, sem autoridade visual;',
-                      '- antiga matriz visual: removida do corpus corrente; 34 perfis históricos permanecem recuperáveis no histórico Git;')
-          t=t.replace('- galeria visual: **0 SVGs físicos** | documentos de galeria preservados somente como proveniência histórica |',
-                      '- antiga galeria visual: removida do corpus corrente; proveniência preservada no histórico Git;')
-          write(p,t)
-
-          p='docs/experience-architecture/organizations-collectives-derived-state-audit.md'
-          t=drop_related_ids(read(p))
-          t=t.replace('version: 1.2.0','version: 1.3.0',1)
-          t=t.replace('| `GKR-JOURNEY-SCREEN-GALLERY-001` | leitura agregada de validação | `superseded / historical_provenance_only` | normalizado |',
-                      '| antiga galeria visual integrada | leitura agregada de validação | removida do corpus corrente; proveniência no histórico Git | normalizado |',1)
-          t=t.replace('| `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` | associação visual podia ser lida como vigência | **0 associações físicas / 34 perfis de proveniência** | normalizado |',
-                      '| antiga matriz visual | associação visual podia ser lida como vigência | removida do corpus corrente; perfis históricos recuperáveis no Git | normalizado |',1)
-          marker='## 3. Matriz de divergências e estado atual'
-          first=t.find(marker)
-          second=t.find(marker, first+1) if first >= 0 else -1
-          if second >= 0:
-              t=t[:second] + '## 3A. Snapshot histórico pós-F-006 / pré-F-016-A' + t[second+len(marker):]
-              after=second + len('## 3A. Snapshot histórico pós-F-006 / pré-F-016-A')
-              tail=t[after:]
-              tail=tail.replace('| Derivado | Snapshot anterior | Estado correto atual | Situação da normalização |',
-                                '| Derivado | Snapshot anterior | Estado registrado naquele checkpoint | Situação naquele checkpoint |',1)
-              t=t[:after]+tail
-          write(p,t)
-
-          p='docs/project/gkr-full-corpus-audit.md'
-          t=read(p)
-          t=t.replace('version: 1.11.0','version: 1.12.0',1)
-          old='| F-016 | Major | corpus ainda contém documentos de materialização/galeria e linguagem de UI que podem competir com Design; a camada física SVG já foi removida | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — F-016-A cleanup físico 119/119 aplicado; validação pós-cleanup pendente; demais famílias documentais continuam em auditoria** |'
-          new='| F-016 | Major | corpus ainda contém documentos de materialização e linguagem de UI que podem competir com Design; camada física SVG e família `screen-gallery*` já foram desmaterializadas após prova de absorção | `REMOVE_AFTER_ABSORPTION + REWRITE` | **OPEN — F-016-A RESOLVED; família `screen-gallery*` removida 8/8 após absorção; demais famílias Markdown continuam em auditoria** |'
-          assert old in t, 'expected F-016 row not found'
-          t=t.replace(old,new,1)
-          write(p,t)
-
-          print('AUTHORIZED_CANDIDATE_APPLIED=YES')
-          PY
-
-      - name: Prove exact bounded delta
-        shell: bash
-        run: |
-          set -euo pipefail
-          python - <<'PY'
-          import subprocess
-          expected = sorted([
-            'docs/experience-architecture/index.md',
-            'docs/experience-architecture/organizations-collectives-derived-state-audit.md',
-            'docs/experience-architecture/uxa-100-a1-plans-journey-integration-and-dedicated-screens.md',
-            'docs/experience-architecture/uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md',
-            'docs/journeys/index.md',
-            'docs/journeys/screen-catalog.md',
-            'docs/journeys/screen-gallery-collectives.md',
+          head='78534bf86acdc5da5f76e558b0df2347e6b5a111'
+          tree='6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4'
+          galleries=[
+            'docs/journeys/screen-gallery.md',
+            'docs/journeys/screen-gallery-traceability-matrix.md',
+            'docs/journeys/screen-gallery-person.md',
             'docs/journeys/screen-gallery-opportunities-organization.md',
+            'docs/journeys/screen-gallery-collectives.md',
             'docs/journeys/screen-gallery-opportunity-boost-exposure.md',
             'docs/journeys/screen-gallery-opportunity-boost-operations.md',
-            'docs/journeys/screen-gallery-person.md',
             'docs/journeys/screen-gallery-plans-billing.md',
-            'docs/journeys/screen-gallery-traceability-matrix.md',
-            'docs/journeys/screen-gallery.md',
-            'docs/project/gkr-full-corpus-audit.md',
-            'mkdocs.yml',
-          ])
-          actual=sorted(x for x in subprocess.check_output(['git','diff','--name-only']).decode().splitlines() if x)
-          assert actual == expected, (actual, expected)
-          status=subprocess.check_output(['git','diff','--name-status']).decode().splitlines()
-          assert sum(1 for x in status if x.startswith('D\t')) == 8, status
-          assert sum(1 for x in status if x.startswith('M\t')) == 8, status
-          print('EXACT_CHANGED_PATHS=16')
-          print('EXACT_DELETIONS=8')
-          print('EXACT_MODIFICATIONS=8')
-          PY
-          git diff --check
-
-      - name: Prove no live links or nav to deleted family
-        shell: bash
-        run: |
-          set -euo pipefail
-          python - <<'PY'
-          from pathlib import Path
-          import re
-          basenames={
-            'screen-gallery.md','screen-gallery-traceability-matrix.md','screen-gallery-person.md',
-            'screen-gallery-opportunities-organization.md','screen-gallery-collectives.md',
-            'screen-gallery-opportunity-boost-exposure.md','screen-gallery-opportunity-boost-operations.md',
-            'screen-gallery-plans-billing.md'
+          ]
+          basenames={Path(x).name for x in galleries}
+          ids={
+            'GKR-JOURNEY-SCREEN-GALLERY-001',
+            'GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001',
+            'GKR-JOURNEY-SCREEN-GALLERY-PERSON-001',
+            'GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITIES-ORGANIZATION-001',
+            'GKR-JOURNEY-SCREEN-GALLERY-COLLECTIVES-001',
+            'GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITY-BOOST-EXPOSURE-001',
+            'GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITY-BOOST-OPERATIONS-001',
+            'GKR-JOURNEY-SCREEN-GALLERY-PLANS-001',
           }
+
+          assert subprocess.check_output(['git','rev-parse','HEAD']).decode().strip()==head
+          assert subprocess.check_output(['git','rev-parse','HEAD^{tree}']).decode().strip()==tree
+          assert all(not Path(x).exists() for x in galleries)
+          print('GALLERY_FILES_ABSENT=8/8')
+
+          link_re=re.compile(r'!?\[[^\]]*\]\(([^)]+)\)')
           live=[]
-          link_re=re.compile(r'\[[^\]]+\]\(([^)]+)\)')
           for p in Path('docs').rglob('*.md'):
-              txt=p.read_text(encoding='utf-8')
-              for i,line in enumerate(txt.splitlines(),1):
-                  for m in link_re.finditer(line):
-                      target=m.group(1).split('#',1)[0].strip()
-                      if Path(target).name in basenames:
-                          live.append((str(p),i,line.strip()))
+            txt=p.read_text(encoding='utf-8')
+            for i,line in enumerate(txt.splitlines(),1):
+              for m in link_re.finditer(line):
+                target=m.group(1).split('#',1)[0].strip()
+                if Path(target).name in basenames:
+                  live.append((str(p),i,line.strip()))
           assert not live, live
+          print('LIVE_MARKDOWN_LINKS_TO_DELETED_GALLERY=0')
+
           mk=Path('mkdocs.yml').read_text(encoding='utf-8')
           assert not any(name in mk for name in basenames)
-          print('LIVE_LINKS_TO_DELETED_GALLERY=0')
           print('MKDOCS_NAV_TO_DELETED_GALLERY=0')
+
+          for reg in ['docs/journeys/surface-registry.md','docs/journeys/transition-registry.md']:
+            txt=Path(reg).read_text(encoding='utf-8')
+            deps=[x for x in basenames if x in txt] + [x for x in ids if x in txt]
+            assert not deps, (reg,deps)
+            print(f'REGISTRY_GALLERY_DEPENDENCIES\t{reg}\t0')
+
+          svg_root=Path('docs/assets/wireframes')
+          svg_count=sum(1 for _ in svg_root.rglob('*.svg')) if svg_root.exists() else 0
+          assert svg_count==0, svg_count
+          print('PHYSICAL_SVG_COUNT=0')
+
+          audit=Path('docs/project/gkr-full-corpus-audit.md').read_text(encoding='utf-8')
+          assert 'version: 1.12.0' in audit
+          assert 'família `screen-gallery*` removida 8/8 após absorção' in audit
+          assert '**OPEN — F-016-A RESOLVED;' in audit
+          print('F016_GLOBAL_STATE=OPEN')
+          print('SCREEN_GALLERY_CANONICAL_CLEANUP=8/8')
+
+          state=Path('docs/project/current-state-register.md').read_text(encoding='utf-8')
+          required=[
+            'F-016\n→ OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION',
+            'J / K / L / M / N\n→ NOT RELEASED AUTOMATICALLY',
+            'UXA-102 / V5\n→ NOT_STARTED',
+            'PRODUCT ENGINEERING\n→ PAUSED BEFORE W0-01',
+            'MATERIALIZAÇÃO VISUAL DAS HOMES\n→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT',
+          ]
+          missing=[x for x in required if x not in state]
+          assert not missing, missing
+          print('DOWNSTREAM_GUARDRAILS_PRESERVED=PASS')
           PY
 
       - name: Validate semantic state
@@ -260,16 +133,11 @@ jobs:
       - name: Build MkDocs strict
         run: mkdocs build --strict --site-dir /tmp/gkr-site
 
-      - name: Commit and push exact canonical transaction
+      - name: Confirm exact head tree and clean tracked checkout
         shell: bash
         run: |
           set -euo pipefail
-          remote_sha="$(git ls-remote origin refs/heads/agent/gkr-global-audit-block-2-ghi-v1 | cut -f1)"
-          test "$remote_sha" = "b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
-          git config user.name "Guivos"
-          git config user.email "guivosbrasil@gmail.com"
-          git add -A
-          git commit -m "GKR: remover família screen-gallery após prova de absorção"
-          new_sha="$(git rev-parse HEAD)"
-          git push origin HEAD:refs/heads/agent/gkr-global-audit-block-2-ghi-v1
-          echo "CANONICAL_CLEANUP_COMMIT=$new_sha"
+          test "$(git rev-parse HEAD)" = "78534bf86acdc5da5f76e558b0df2347e6b5a111"
+          test "$(git rev-parse HEAD^{tree})" = "6ca8bc3f3691a4ba7ac322d96cf43119e293c3d4"
+          test -z "$(git status --porcelain --untracked-files=no)"
+          echo F016_SCREEN_GALLERY_POSTDELETE_READ_ONLY=SUCCESS
