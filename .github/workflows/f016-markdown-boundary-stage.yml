@@ -1,0 +1,98 @@
+name: F-016 Markdown Boundary Read-Only Evidence
+
+on:
+  push:
+    branches:
+      - agent/gkr-f016-final-audit-stage-v1
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  boundary:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 72a20d43f12d7efb9c646368ec009828c607924f
+          fetch-depth: 0
+      - name: Enumerate residual materialization-document boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "72a20d43f12d7efb9c646368ec009828c607924f"
+          test "$(git rev-parse HEAD^{tree})" = "872185d998a77e3610446a01b4f7f8f376e8b9fb"
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          docs = sorted(Path('docs').rglob('*.md'))
+          keywords = re.compile(r'(wireframe|materialization|materialisation|materializa[cç][aã]o|gallery|galeria)', re.I)
+
+          def read(p): return p.read_text(encoding='utf-8')
+          def fm(text):
+              if not text.startswith('---\n'): return ''
+              e=text.find('\n---\n',4); return text[4:e] if e!=-1 else ''
+          def scalar(front,key):
+              m=re.search(rf'(?mi)^\s*{re.escape(key)}\s*:\s*["\']?([^\n"\']+)',front)
+              return m.group(1).strip() if m else ''
+          def boolv(front,key):
+              v=scalar(front,key).lower(); return v if v in ('true','false') else ''
+
+          path_candidates=[]
+          title_candidates=[]
+          explicit_materializers=[]
+          validators=[]
+          programs=[]
+          authorities=[]
+          for p in docs:
+              t=read(p); f=fm(t); title=scalar(f,'title')
+              if keywords.search(p.name): path_candidates.append(p)
+              if keywords.search(title): title_candidates.append(p)
+              intro='\n'.join(t.splitlines()[:100])
+              if re.search(r'(?i)\b(materializa|materializar|materialization)\b', intro) and re.search(r'(?i)(exclusivamente|refer[eê]ncia|wireframe|baixa fidelidade|low-fidelity)', intro): explicit_materializers.append(p)
+              if re.search(r'(?i)(functional validation|valida[cç][aã]o funcional|revalida[cç][aã]o)', title+'\n'+intro): validators.append(p)
+              if re.search(r'(?i)(programa|program|prioriza[cç][aã]o|readiness|auditoria)', title+'\n'+intro): programs.append(p)
+              if boolv(f,'normative')=='true' or boolv(f,'authoritative')=='true': authorities.append(p)
+
+          universe=sorted(set(path_candidates+title_candidates+explicit_materializers))
+          print(f'MARKDOWN_TOTAL={len(docs)}')
+          print(f'PATH_KEYWORD_CANDIDATES={len(path_candidates)}')
+          print(f'TITLE_KEYWORD_CANDIDATES={len(title_candidates)}')
+          print(f'EXPLICIT_MATERIALIZER_SIGNAL={len(set(explicit_materializers))}')
+          print(f'BOUNDARY_UNIVERSE={len(universe)}')
+          print('=== BOUNDARY ===')
+          for p in universe:
+              t=read(p); f=fm(t); title=scalar(f,'title')
+              signals=[]
+              if p in path_candidates: signals.append('PATH')
+              if p in title_candidates: signals.append('TITLE')
+              if p in explicit_materializers: signals.append('MATERIALIZER')
+              if p in validators: signals.append('VALIDATOR')
+              if p in programs: signals.append('PROGRAM_OR_AUDIT')
+              if p in authorities: signals.append('NORMATIVE_OR_AUTHORITATIVE')
+              print('BOUNDARY|{}|id={}|status={}|normative={}|authoritative={}|signals={}|title={}'.format(
+                  p, scalar(f,'id'), scalar(f,'status'), boolv(f,'normative'), boolv(f,'authoritative'), ','.join(signals), title[:120]))
+
+          print('=== CURRENT SVG PATH REFERENCES ===')
+          refs=[]
+          for p in docs:
+              t=read(p)
+              h=re.findall(r'(?i)(?:docs/)?assets/wireframes/[^\s)`"\']+\.svg',t)
+              if h: refs.append((p,h))
+          print(f'SVG_REF_DOCS={len(refs)}')
+          print(f'SVG_REF_OCCURRENCES={sum(len(h) for _,h in refs)}')
+          for p,h in refs: print(f'SVGREF|{p}|count={len(h)}')
+
+          print('=== EXPLICIT CURRENT-BOUNDARY STATEMENTS ===')
+          boundary_terms=re.compile(r'(?i)(not authorized|n[aã]o autorizad|not defined|n[aã]o definido|proveni[eê]ncia hist[oó]rica|historical provenance|n[aã]o constitui.*autoriza[cç][aã]o|does not.*authoriz)')
+          for p in universe:
+              lines=read(p).splitlines()
+              hits=[(i,l.strip()) for i,l in enumerate(lines,1) if boundary_terms.search(l)]
+              if hits:
+                  print(f'BOUNDARY_STATEMENTS|{p}|count={len(hits)}')
+                  for i,l in hits[:8]: print(f'  L{i}|{l[:220]}')
+          print('F016_MARKDOWN_BOUNDARY_PROOF=SUCCESS')
+          PY
+          test -z "$(git status --porcelain)"
