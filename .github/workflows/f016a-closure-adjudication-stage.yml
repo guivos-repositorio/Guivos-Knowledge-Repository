@@ -1,4 +1,4 @@
-name: F-016-A Closure Adjudication Stage
+name: F-016-A Final Closure Read-Only Proof
 
 on:
   push:
@@ -6,113 +6,171 @@ on:
       - agent/gkr-f016a-closure-adjudication-stage-v1
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  adjudicate:
+  prove:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout exact canonical head
+        uses: actions/checkout@v4
         with:
+          ref: b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938
           fetch-depth: 0
+      - name: Verify exact head
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
+          test "$(git rev-parse HEAD^{tree})" = "138a24d79e798fc38742a2c2e60a7091abf1d150"
+          echo "EXACT_HEAD=b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
+          echo "EXACT_TREE=138a24d79e798fc38742a2c2e60a7091abf1d150"
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: pip
-      - name: Apply F-016-A closure adjudication
-        run: python scripts/tmp_f016a_closure_adjudication.py
-      - name: Synchronize semantic state surfaces
-        shell: bash
-        run: |
-          set -euo pipefail
-          python - <<'PY'
-          from pathlib import Path
-
-          replacements = {
-              'README.md': [
-                  ('| GKR-STATE-001 | **3.10.0** |', '| GKR-STATE-001 | **3.11.0** |'),
-                  ('[Roadmap 13.10.0]', '[Roadmap 13.11.0]'),
-                  ('[Estado Atual 3.7.0]', '[Estado Atual 3.11.0]'),
-                  ('[Roadmap 13.7.0]', '[Roadmap 13.11.0]'),
-              ],
-              'docs/index.md': [
-                  ('`GKR-STATE-001` **3.10.0**', '`GKR-STATE-001` **3.11.0**'),
-                  ('[Roadmap 13.10.0]', '[Roadmap 13.11.0]'),
-                  ('[Registro do Estado Atual 3.7.0]', '[Registro do Estado Atual 3.11.0]'),
-                  ('[Roadmap 13.7.0]', '[Roadmap 13.11.0]'),
-              ],
-          }
-
-          for rel, pairs in replacements.items():
-              path = Path(rel)
-              text = path.read_text(encoding='utf-8')
-              for old, new in pairs:
-                  count = text.count(old)
-                  if count != 1:
-                      raise SystemExit(f'{rel}: expected exactly one occurrence of {old!r}, found {count}')
-                  text = text.replace(old, new, 1)
-              path.write_text(text, encoding='utf-8')
-          PY
-      - name: Guard bounded documentation-only delta
-        shell: bash
-        run: |
-          set -euo pipefail
-          git diff --check
-          test "$(git diff --name-only --diff-filter=D | wc -l | tr -d ' ')" -eq 0
-          test "$(git diff --name-only | grep -Ec '^(README.md|docs/index.md|docs/project/current-state-register.md|docs/roadmap.md|docs/project/gkr-full-corpus-audit.md|docs/experience-architecture/organizations-collectives-derived-state-audit.md|docs/experience-architecture/public-specialized-homes-reconciliation.md|docs/experience-architecture/uxa-047-101-index.md|docs/experience-architecture/index.md|docs/journeys/index.md|docs/journeys/screen-catalog.md|docs/journeys/screen-gallery.md|docs/journeys/screen-gallery-traceability-matrix.md)$')" -eq "$(git diff --name-only | wc -l | tr -d ' ')"
-          echo "CHANGED_FILES=$(git diff --name-only | wc -l | tr -d ' ')"
-          git diff --name-only
-      - name: Prove current F-016-A closure state before validators
+      - name: Prove F-016-A structural closure
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
           import re
-          physical=list(Path('docs/assets/wireframes').glob('*.svg')) if Path('docs/assets/wireframes').exists() else []
-          if physical: raise SystemExit(f'PHYSICAL_SVG_COUNT={len(physical)}')
-          required={
-            'README.md':['GKR-STATE-001 | **3.11.0**','F-016-A','→ RESOLVED','PHYSICAL SVG COUNT = 0'],
-            'docs/index.md':['GKR-STATE-001` **3.11.0**','F-016-A = RESOLVED','SVGs FÍSICOS EM docs/assets/wireframes/','→ 0'],
-            'docs/project/current-state-register.md':['version: 3.11.0','INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS','→ RESOLVED'],
-            'docs/roadmap.md':['version: 13.11.0','F-016-A | **RESOLVED — PHYSICAL SVG COUNT 0**','Mechanical #1090'],
-            'docs/project/gkr-full-corpus-audit.md':['version: 1.11.0','F-016-A — camada física SVG — RESOLVED','POST-DELETE READ-ONLY PROOF V2'],
-            'docs/journeys/index.md':['version: 0.43.0','| F-016-A | `resolved` |'],
-            'docs/journeys/screen-catalog.md':['version: 0.34.0','| catálogo físico | **0 SVGs**'],
+
+          root = Path('.')
+          wire = root / 'docs/assets/wireframes'
+          physical = list(wire.rglob('*.svg')) if wire.exists() else []
+          if physical:
+              raise SystemExit(f'PHYSICAL_SVG_COUNT={len(physical)}')
+
+          md_files = list(root.rglob('*.md'))
+          live = []
+          md_link = re.compile(r'!?\[[^\]]*\]\(([^)\n]*?(?:docs/assets/wireframes|assets/wireframes)[^)\n]*?\.svg(?:#[^)\n]*)?)\)', re.I)
+          html_link = re.compile(r'(?:src|href)\s*=\s*["\'][^"\']*(?:docs/assets/wireframes|assets/wireframes)[^"\']*\.svg[^"\']*["\']', re.I)
+          for path in md_files:
+              text = path.read_text(encoding='utf-8')
+              for m in md_link.finditer(text):
+                  live.append((str(path), m.group(0)))
+              for m in html_link.finditer(text):
+                  live.append((str(path), m.group(0)))
+          if live:
+              for row in live[:50]: print('LIVE_SVG_LINK', row)
+              raise SystemExit(f'LIVE_SVG_LINKS={len(live)}')
+
+          required = {
+              'README.md': [
+                  '| GKR-STATE-001 | **3.11.0** |',
+                  '`F-016-A` está `RESOLVED`',
+                  'PHYSICAL SVG COUNT = 0',
+                  'F-016 — desmaterialização documental repo-wide',
+                  'UXA-102 / V5',
+                  '→ NOT_STARTED',
+                  'PRODUCT ENGINEERING',
+                  '→ PAUSED BEFORE W0-01',
+                  'DESIGN / MATERIALIZATION',
+                  '→ NOT AUTHORIZED',
+                  'MERGE #363',
+              ],
+              'docs/index.md': [
+                  '`GKR-STATE-001` **3.11.0**',
+                  '`F-016-A = RESOLVED`',
+                  'SVGs FÍSICOS EM docs/assets/wireframes/',
+                  '→ 0',
+                  'F-016 — desmaterialização documental repo-wide',
+              ],
+              'docs/project/current-state-register.md': [
+                  'version: 3.11.0',
+                  'F-016-A — PHYSICAL SVG LAYER',
+                  '→ PHYSICAL SVG COUNT = 0',
+                  '→ RESOLVED',
+                  'F-016\n→ OPEN / REPO-WIDE DOCUMENTATION DEMATERIALIZATION',
+                  'UXA-102 / V5\n→ NOT_STARTED',
+                  'PRODUCT ENGINEERING\n→ PAUSED BEFORE W0-01',
+              ],
+              'docs/roadmap.md': [
+                  'version: 13.11.0',
+                  '| F-016-A | **RESOLVED — PHYSICAL SVG COUNT 0** |',
+                  'NEXT F-016 SUBFRONT',
+                  'NO AUTOMATIC MARKDOWN DELETION',
+              ],
+              'docs/project/gkr-full-corpus-audit.md': [
+                  'version: 1.11.0',
+                  'F-016-A — camada física SVG — RESOLVED',
+                  'POST-DELETE READ-ONLY PROOF V2',
+              ],
+              'docs/journeys/index.md': [
+                  'version: 0.43.0',
+                  '| F-016-A | `resolved` |',
+              ],
+              'docs/journeys/screen-catalog.md': [
+                  'version: 0.34.0',
+                  '| catálogo físico | **0 SVGs**',
+              ],
+              'docs/journeys/screen-gallery.md': [
+                  'historical_provenance_only',
+              ],
+              'docs/journeys/screen-gallery-traceability-matrix.md': [
+                  'historical_provenance_only',
+              ],
           }
-          for rel,tokens in required.items():
-              text=Path(rel).read_text(encoding='utf-8')
+          for rel, tokens in required.items():
+              text = Path(rel).read_text(encoding='utf-8')
               for token in tokens:
-                  if token not in text: raise SystemExit(f'MISSING_TOKEN {rel}: {token}')
-          current_files=['README.md','docs/index.md','docs/project/current-state-register.md','docs/roadmap.md','docs/project/gkr-full-corpus-audit.md','docs/experience-architecture/organizations-collectives-derived-state-audit.md','docs/experience-architecture/public-specialized-homes-reconciliation.md','docs/experience-architecture/uxa-047-101-index.md','docs/experience-architecture/index.md','docs/journeys/index.md','docs/journeys/screen-catalog.md']
+                  if token not in text:
+                      raise SystemExit(f'MISSING_TOKEN {rel}: {token!r}')
+
+          current_files = [
+              'README.md',
+              'docs/index.md',
+              'docs/project/current-state-register.md',
+              'docs/roadmap.md',
+              'docs/project/gkr-full-corpus-audit.md',
+              'docs/experience-architecture/organizations-collectives-derived-state-audit.md',
+              'docs/experience-architecture/public-specialized-homes-reconciliation.md',
+              'docs/experience-architecture/uxa-047-101-index.md',
+              'docs/experience-architecture/index.md',
+              'docs/journeys/index.md',
+              'docs/journeys/screen-catalog.md',
+          ]
+          stale_patterns = [
+              r'F-016-A.{0,180}PHYSICAL_CLEANUP_NOT_AUTHORIZED',
+              r'F-016-A.{0,180}physical cleanup not authorized',
+              r'F-016-A.{0,180}POST-CLEANUP VALIDATION PENDING',
+              r'F-016-A.{0,180}FORMAL CLOSURE PENDING',
+              r'F-016-A.{0,180}validation_in_progress',
+          ]
           bad=[]
           for rel in current_files:
               text=Path(rel).read_text(encoding='utf-8')
-              for pat in [r'F-016-A.{0,180}PHYSICAL_CLEANUP_NOT_AUTHORIZED',r'F-016-A.{0,180}physical cleanup not authorized',r'F-016-A.{0,180}POST-CLEANUP VALIDATION PENDING',r'F-016-A.{0,180}FORMAL CLOSURE PENDING',r'F-016-A.{0,180}validation_in_progress']:
-                  if re.search(pat,text,re.I|re.S): bad.append((rel,pat))
+              for pat in stale_patterns:
+                  if re.search(pat,text,re.I|re.S):
+                      bad.append((rel,pat))
           if bad:
-              for x in bad: print('BAD_CURRENT_STATE',x)
+              for x in bad: print('STALE_CURRENT_STATE',x)
               raise SystemExit('STALE_CURRENT_F016A_STATE')
-          print('F016A_CURRENT_CLOSURE_STATE=PASS')
+
+          print('PHYSICAL_SVG_COUNT=0')
+          print('LIVE_SVG_LINKS=0')
+          print('CURRENT_AUTHORITY_CLOSURE=PASS')
+          print('HISTORICAL_PROVENANCE_SURFACES=PASS')
+          print('DOWNSTREAM_GUARDRAILS=PASS')
           PY
       - name: Install documentation dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt PyYAML
-      - name: Validate semantic state
+      - name: Validate semantic state independently
         run: python scripts/validate_semantic_state.py
-      - name: Validate repository structure
+      - name: Validate repository structure independently
         run: python scripts/validate_gkr.py
-      - name: Validate legacy nomenclature
+      - name: Validate legacy nomenclature independently
         run: python scripts/validate_legacy_nomenclature.py
-      - name: Build MkDocs strict
-        run: mkdocs build --strict --site-dir /tmp/gkr-site
-      - name: Commit validated adjudication candidate
+      - name: Build MkDocs strict independently
+        run: mkdocs build --strict --site-dir /tmp/gkr-f016a-final-proof-site
+      - name: Prove read-only execution
         shell: bash
         run: |
           set -euo pipefail
-          git config user.name "Guivos"
-          git config user.email "guivosbrasil@gmail.com"
-          git add -A
-          git commit -m "stage: adjudicar fechamento F-016-A [skip ci]"
-          git push origin HEAD:agent/gkr-f016a-closure-adjudication-stage-v1
+          test -z "$(git status --porcelain)"
+          test "$(git rev-parse HEAD)" = "b6dd6c35a3d72049299c4f8f44e7a4ab8cd59938"
+          echo "F016A_FINAL_EXACT_HEAD_READ_ONLY_PROOF=SUCCESS"
