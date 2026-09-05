@@ -1,0 +1,54 @@
+name: F-016-A Closure Propagation Read-Only Audit
+
+on:
+  push:
+    branches:
+      - agent/gkr-f016a-closure-propagation-audit-v1
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: cde46281a99ac9746fcca11381c3b8e54d284f23
+          fetch-depth: 1
+      - name: Locate pre-cleanup F-016-A claims
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re, subprocess, collections
+          target='cde46281a99ac9746fcca11381c3b8e54d284f23'
+          actual=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          if actual != target: raise SystemExit(f'WRONG_HEAD={actual}')
+          tracked=[x.decode() for x in subprocess.check_output(['git','ls-files','-z']).split(b'\0') if x]
+          pats={
+            'SVG119': re.compile(r'119\s+SVG',re.I),
+            'ASSOC119': re.compile(r'119\s+associa',re.I),
+            'PROFILE32_PHYSICAL': re.compile(r'32\s+perfis.{0,80}(?:físic|physical)',re.I),
+            'NOT_AUTHORIZED': re.compile(r'(?:PHYSICAL[_ ]CLEANUP[_ ]NOT[_ ]AUTHORIZED|PHYSICAL_REMOVAL_NOT_AUTHORIZED|physical cleanup not authorized|remoção física.{0,60}não autorizada|remoção física.{0,60}não é autorizada)',re.I),
+            'CLEANUP_ELIGIBLE': re.compile(r'(?:cleanup_eligible|CLEANUP_ELIGIBILITY_PROVEN)',re.I),
+            'VALIDATION_PENDING': re.compile(r'(?:POST-CLEANUP VALIDATION PENDING|validation_in_progress|FORMAL RESOLUTION NOT YET CLAIMED|FORMAL CLOSURE PENDING)',re.I),
+          }
+          hits=[]; by=collections.defaultdict(set)
+          for rel in tracked:
+            p=Path(rel)
+            try: text=p.read_text(encoding='utf-8')
+            except (UnicodeDecodeError,IsADirectoryError): continue
+            for name,pat in pats.items():
+              for m in pat.finditer(text):
+                line=text.count('\n',0,m.start())+1
+                line_text=text.splitlines()[line-1].strip()[:420]
+                hits.append((name,rel,line,line_text)); by[name].add(rel)
+          print(f'EXACT_HEAD={actual}')
+          print(f'TOTAL_PATTERN_HITS={len(hits)}')
+          for name in pats: print(f'{name}_FILES={len(by[name])}')
+          print('--- HITS ---')
+          for name,rel,line,snip in hits:
+            print(f'{name}\t{rel}:{line}\t{snip}')
+          PY
