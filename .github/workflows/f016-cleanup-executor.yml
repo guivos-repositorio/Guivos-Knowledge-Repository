@@ -116,8 +116,8 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt PyYAML
 
-      - name: Prove cleanup boundary read-only
-        run: python executor/scripts/f016_cleanup_executor.py proof repo
+      - name: Prove cleanup boundary read-only with exact YAML semantics
+        run: python executor/scripts/f016_structural_proof_v2.py repo
 
       - name: Re-run canonical validators read-only
         working-directory: repo
@@ -130,6 +130,7 @@ jobs:
           git diff --check "$BASE_SHA...HEAD"
           test -z "$(git status --porcelain --untracked-files=no)"
           test ! -e scripts/f016_cleanup_executor.py
+          test ! -e scripts/f016_structural_proof_v2.py
           test ! -e .github/workflows/f016-cleanup-executor.yml
           echo "F016_CANDIDATE_READ_ONLY_PROOF=SUCCESS"
 
@@ -230,8 +231,8 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt PyYAML
 
-      - name: Exact-head post-delete proof
-        run: python executor/scripts/f016_cleanup_executor.py proof-final repo
+      - name: Exact-head post-delete proof with exact YAML semantics
+        run: python executor/scripts/f016_structural_proof_v2.py repo --require-resolved
 
       - name: Exact-head validators and clean-tree assertion
         working-directory: repo
@@ -245,6 +246,7 @@ jobs:
           git diff --check "$BASE_SHA...HEAD"
           test -z "$(git status --porcelain --untracked-files=no)"
           test ! -e scripts/f016_cleanup_executor.py
+          test ! -e scripts/f016_structural_proof_v2.py
           test ! -e .github/workflows/f016-cleanup-executor.yml
           echo "F016_FINAL_EXACT_HEAD_READ_ONLY_PROOF=SUCCESS"
           echo "F016_FINAL_SHA=${{ needs.finalize.outputs.final_sha }}"
