@@ -1,0 +1,67 @@
+name: F-016-A Post-Delete Journeys Sync Stage
+
+on:
+  push:
+    branches:
+      - agent/gkr-f016a-postdelete-journeys-sync-v1
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Synchronize current Journeys state
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('docs/journeys/index.md')
+          s=p.read_text(encoding='utf-8')
+          replacements={
+            '| catálogo integrado | `active` 0.33.0 | **119 SVGs físicos pós-F-006**; maturidade agregada não inferida |':'| catálogo integrado | `active` 0.33.0 | **0 SVGs físicos após F-016-A**; contratos textuais preservados; maturidade agregada não inferida |',
+            '| galeria visual integrada | `active` | **119 SVGs físicos** como inventário documental; F-016 aberto |':'| galeria visual integrada | `superseded / historical_provenance_only` | camada física removida por F-016-A; sem autoridade visual corrente |',
+            '| matriz por SVG | `active` | **119 associações / 34 perfis estáveis / 32 perfis físicos** |':'| matriz por SVG | `superseded / historical_provenance_only` | **0 associações físicas / 34 perfis de proveniência**; sem autoridade visual |',
+            '| F-016-A | `cleanup_eligible` | 119/119 assets com perfil e referência textual; 32/32 perfis com receiver; physical cleanup not authorized |':'| F-016-A | `physical_cleanup_applied / validation_in_progress` | **119/119 SVGs removidos; 0 SVGs físicos; referências vivas reconciliadas; fechamento formal pendente de prova pós-delete** |',
+          }
+          for old,new in replacements.items():
+              n=s.count(old)
+              if n != 1:
+                  raise SystemExit(f'EXPECTED_EXACT_ROW_ONCE={n}: {old}')
+              s=s.replace(old,new,1)
+          p.write_text(s,encoding='utf-8')
+          print('JOURNEYS_CURRENT_STATE_SYNC=PASS')
+          PY
+          git diff --check
+      - name: Install documentation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+      - name: Validate semantic state
+        run: python scripts/validate_semantic_state.py
+      - name: Validate repository structure
+        run: python scripts/validate_gkr.py
+      - name: Validate legacy nomenclature
+        run: python scripts/validate_legacy_nomenclature.py
+      - name: Build MkDocs strict
+        run: mkdocs build --strict --site-dir /tmp/gkr-site
+      - name: Commit validated one-file remediation
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git diff --name-only | wc -l | tr -d ' ')" -eq 1
+          test "$(git diff --name-only)" = "docs/journeys/index.md"
+          git config user.name "Guivos"
+          git config user.email "guivosbrasil@gmail.com"
+          git add docs/journeys/index.md
+          git commit -m "stage: sincronizar Jornadas após cleanup F-016-A [skip ci]"
+          git push origin HEAD:agent/gkr-f016a-postdelete-journeys-sync-v1
