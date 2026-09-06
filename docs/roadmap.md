@@ -637,7 +637,7 @@ PONTOS
 ≠ PAGAMENTO DE PLANO JOURNEY
 ```
 
-A equivalência econômica já validada permanece preservada; não é reaberta por esta auditoria sem razão objetiva.
+A auditoria encontrou razão objetiva para reabrir documentalmente essa claim: `GPA-004` e seu Portfólio Funcional afirmavam equivalência Pontos ↔ BRL já validada, enquanto `GEM-CLOSURE-REVIEW-001` e `GEM-000` mantêm valor monetário e taxa de conversão sem aprovação. A adjudicação de J classifica o conflito como `REAL_DRIFT` e preserva a decisão histórica de conversa somente como proveniência. No estado vigente, **nenhuma taxa ou valor monetário de Pontos Guivos está aprovado por autoridade econômica temática**, e nenhuma implementação, cobrança ou liquidação é autorizada por esta auditoria.
 
 ## 15. Lote K — Research, VAL e RP-002
 
