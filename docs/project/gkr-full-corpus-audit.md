@@ -148,6 +148,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-014 | Major | PP-11 antigo podia confundir visão de capacidade máxima com verdade atual | `UPDATE` | reconciliado no Lote C |
 | F-015 | Major | Public Canon anterior ainda publicava fluxo/definição anterior de Oportunidade | `UPDATE + ENRICH` | reconciliado no Lote C |
 | F-016 | Major | o corpus continha produtores visuais legados e referências estruturais capazes de competir com Design; a auditoria separou produtores removíveis de autoridades, validadores e evidências que devem permanecer | `REMOVE_AFTER_ABSORPTION + REWRITE` | **RESOLVED — cleanup documental 26/26 concluído após absorção; referências estruturais reconciliadas; 23 caminhos de SVG removidos neutralizados; autoridades/validadores/evidências preservados; guards e prova pós-delete concluídos** |
+| F-017 | Major | autoridades normativas Business afirmavam equivalência Pontos ↔ BRL já validada/vigente sem autoridade econômica temática ou taxa documentada, enquanto autoridades GEM ativas mantinham valor monetário e conversão sem aprovação | `UPDATE + PRESERVE_PROVENANCE` | **RESOLVED NO LOTE J — REAL_DRIFT reconciliado; decisão histórica de conversa preservada como proveniência; nenhuma taxa inventada ou implementação autorizada** |
 
 
 ### 6.1 Fechamento de F-016 — desmaterialização documental governada
@@ -183,6 +184,57 @@ POST-DELETE READ-ONLY PROOF
 ```
 
 Este fechamento não autoriza Design, nova materialização, `UXA-102 / V5`, Product Engineering, liberação automática de J/K/L/M/N nem merge da PR #363.
+
+## 6.2 F-017 — equivalência monetária de Pontos — REAL_DRIFT reconciliado no Lote J
+
+A auditoria documental de J reabriu a claim Pontos ↔ BRL porque surgiu razão objetiva de autoridade. A prova foi executada sobre o `HEAD d35d5628ae9d5323a24b2f9ebabed116b44c2b9a`, sem mutação do alvo.
+
+```text
+READ-ONLY FULL-CORPUS SCAN
+→ run 34001107676
+→ TARGET SHA d35d5628ae9d5323a24b2f9ebabed116b44c2b9a
+→ TARGET TREE 401cdae118f3a456ee189b3f7a29ccd7d80cb55f
+→ MATCHED FILES 31
+→ MATCHED BLOCKS 39
+→ READ_ONLY_SCAN PASS
+```
+
+Evidência material:
+
+- `GEM-005` não define quantidade, valor monetário ou taxa de conversão;
+- `GEM-005-POINTS-CREDITS-POLICY-001` mantém `cash_convertible: false` e `monetary_value_defined: false`;
+- `GEM-CLOSURE-REVIEW-001`, ativo e normativo, declara que pontos não possuem valor monetário aprovado;
+- `GEM-000 v1.3.0` mantém quantidade/valor monetário e taxa de conversão fora do conjunto autorizado;
+- `GPA-004` e `GPA-004-FUNCTIONAL-PORTFOLIO-001`, ambos normativos, afirmavam que a equivalência econômica já estava validada/vigente;
+- `GKR-BUSINESS-CONTINUITY-001` demonstra a proveniência da afirmação em decisões reconciliadas de conversa/PR #271, mas é explicitamente `normative: false` e não constitui autoridade econômica temática;
+- nenhuma autoridade do corpus define uma razão numérica `X pontos = Y reais` ou supersede explicitamente a regra econômica GEM sobre valor/taxa.
+
+Adjudicação:
+
+```text
+CLASSIFICATION
+→ REAL_DRIFT
+
+VALID_COEXISTENCE
+→ REJECTED
+→ “SEM VALOR/TAXA APROVADA” E “EQUIVALÊNCIA JÁ VALIDADA” DISPUTAVAM O MESMO ATRIBUTO ECONÔMICO
+
+HISTORICAL_SUPERSEDED
+→ REJECTED
+→ NÃO EXISTE SUPERSESSÃO ECONÔMICA EXPLÍCITA DA AUTORIDADE GEM
+
+NO-LOSS RECEIVER
+→ GKR-BUSINESS-CONTINUITY-001
+→ PRESERVA A DECISÃO HISTÓRICA COMO PROVENIÊNCIA
+
+CURRENT CANONICAL TRUTH
+→ PONTOS PERMANECEM BENEFÍCIO TRANSACIONAL / CAPACIDADE BUSINESS
+→ VALOR MONETÁRIO / TAXA PONTOS ↔ BRL NÃO ESTÃO APROVADOS NO CORPUS ECONÔMICO VIGENTE
+→ NENHUMA TAXA É INVENTADA POR ESTA AUDITORIA
+→ IMPLEMENTAÇÃO / COBRANÇA / LIQUIDAÇÃO NÃO AUTORIZADAS
+```
+
+A correção é documental e não revoga a existência histórica da decisão de conversa; apenas impede que um checkpoint não normativo funcione como substituto implícito de autoridade econômica. Uma futura equivalência pode ser estabelecida por decisão governada e autoridade econômica específica.
 
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
@@ -1023,6 +1075,11 @@ DOWNSTREAM RELEASE ADJUDICATION
 → J RELEASED FOR DOCUMENTARY AUDIT ONLY
 → K / L / M / N PENDING / NOT RELEASED
 → J RELEASE DOES NOT AUTHORIZE IMPLEMENTATION / OPERATION
+
+J DOCUMENTARY AUDIT
+→ IN_PROGRESS
+→ F-017 POINTS MONETARY-AUTHORITY DRIFT RESOLVED
+→ NEXT J FAMILIES NOT YET ADJUDICATED
 
 BASELINE FINAL
 → NOT AUTHORIZED

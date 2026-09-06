@@ -744,6 +744,19 @@ PONTOS
 
 A empresa financia orçamento; concessão e uso pela Pessoa são eventos distintos.
 
+A auditoria documental do Lote J classificou como `REAL_DRIFT` a claim de que uma equivalência Pontos ↔ BRL já estaria validada como regra vigente. O checkpoint de 2026-08-15 preserva essa decisão como proveniência histórica, mas as autoridades econômicas temáticas correntes não definem nem aprovam valor monetário ou taxa de conversão.
+
+```text
+PONTOS GUIVOS
+→ BENEFÍCIO TRANSACIONAL DO ECOSSISTEMA
+
+EQUIVALÊNCIA PONTOS ↔ BRL
+→ DECISÃO HISTÓRICA PRESERVADA COMO PROVENIÊNCIA
+→ SEM TAXA / VALOR MONETÁRIO APROVADO POR AUTORIDADE ECONÔMICA VIGENTE
+→ NÃO AUTORIZADA PARA IMPLEMENTAÇÃO, COBRANÇA OU LIQUIDAÇÃO
+→ REQUER AUTORIDADE ECONÔMICA ESPECÍFICA PARA VOLTAR A SER REGRA CORRENTE
+```
+
 `VALOR DE IMPACTO LIBERADO ≠ impacto realizado ≠ impacto comprovado`.
 
 Pontos permanecem fora da narrativa pública da Home Business conforme decisão vigente, sem eliminar a capacidade funcional.
