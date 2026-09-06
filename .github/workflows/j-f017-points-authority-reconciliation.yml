@@ -1,0 +1,283 @@
+name: Block J F-017 Points Authority Reconciliation
+
+on:
+  push:
+    branches:
+      - agent/gkr-j-f017-points-authority-reconciliation-v1
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    name: Reconcile F-017 points monetary-authority drift
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout immutable canonical head
+        uses: actions/checkout@v4
+        with:
+          ref: d35d5628ae9d5323a24b2f9ebabed116b44c2b9a
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install documentation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Assert immutable base
+        run: test "$(git rev-parse HEAD)" = "d35d5628ae9d5323a24b2f9ebabed116b44c2b9a"
+
+      - name: Apply exact no-loss F-017 reconciliation
+        shell: python
+        run: |
+          from pathlib import Path
+
+          def rx(path, old, new, count=1):
+              p = Path(path)
+              text = p.read_text(encoding='utf-8')
+              actual = text.count(old)
+              if actual != count:
+                  raise SystemExit(f'{path}: expected {count}, found {actual}: {old!r}')
+              p.write_text(text.replace(old, new, count), encoding='utf-8')
+
+          # GPA-004: preserve Points capability, remove unsupported current monetary-equivalence claim.
+          rx(
+              'docs/product-architecture/business.md',
+              'A equivalência econômica entre pontos e reais já validada no ecossistema permanece preservada e **não é reaberta por esta autoridade**.',
+              'Existe proveniência histórica de uma decisão de equivalência econômica entre pontos e reais registrada no checkpoint não normativo `GKR-BUSINESS-CONTINUITY-001`. A auditoria documental do Lote J, porém, não encontrou no corpus vigente autoridade econômica temática que defina ou aprove valor monetário ou taxa de conversão para os Pontos Guivos. Portanto, **esta autoridade não trata uma equivalência Pontos ↔ BRL como regra econômica canônica vigente ou implementável**. Qualquer reativação dessa equivalência como regra corrente exige autoridade econômica específica e explícita.'
+          )
+          rx(
+              'docs/product-architecture/business.md',
+              'A equivalência econômica já validada entre pontos e reais **não está nesta lista e não deve ser reaberta nesta frente**.',
+              'A equivalência econômica Pontos ↔ BRL permanece **não congelada no corpus vigente**: a decisão histórica de conversa continua preservada como proveniência, mas valor monetário e taxa de conversão exigem autoridade econômica específica antes de implementação, cobrança ou liquidação.'
+          )
+
+          # Functional Portfolio: same current truth, without erasing the historical decision.
+          rx(
+              'docs/product-architecture/business-functional-portfolio.md',
+              'A equivalência econômica `X pontos = Y reais` já validada permanece vigente e **não é reaberta por este documento**.',
+              'A decisão histórica `X pontos = Y reais` permanece recuperável em `GKR-BUSINESS-CONTINUITY-001`, mas esse checkpoint é não normativo. No corpus vigente, nenhuma autoridade econômica temática define ou aprova uma taxa de conversão Pontos ↔ BRL. Assim, **o portfólio não considera essa equivalência uma regra econômica canônica vigente ou implementável**; eventual definição requer autoridade econômica específica.'
+          )
+
+          # Continuity checkpoint: preserve provenance and explicitly demote it from current economic authority.
+          rx(
+              'docs/project/business-continuity-checkpoint-2026-08-15.md',
+              'A relação `X pontos = Y reais` **já possui regra validada/funcionando no ecossistema** e não deve ser rediscutida nesta frente.\n\nO checkpoint apenas preserva essa decisão e impede que futuras retomadas tratem a equivalência como problema ainda não resolvido.',
+              'Na conversa reconciliada em 2026-08-15 e na PR #271, a relação `X pontos = Y reais` foi registrada como decisão já validada/funcionando no ecossistema. **Este registro permanece preservado como proveniência histórica da decisão.**\n\nA auditoria documental posterior do Lote J demonstrou, contudo, que este checkpoint é `normative: false` e que o corpus econômico vigente não contém autoridade temática que defina ou aprove valor monetário ou taxa de conversão para Pontos Guivos; `GEM-CLOSURE-REVIEW-001` mantém explicitamente que pontos não possuem valor monetário aprovado. Portanto, este checkpoint **não pode, por si só, promover a decisão histórica a regra econômica canônica vigente ou implementável**. Uma equivalência Pontos ↔ BRL poderá voltar a ser tratada como regra corrente somente por autoridade econômica específica e explícita.'
+          )
+          rx(
+              'docs/project/business-continuity-checkpoint-2026-08-15.md',
+              'A equivalência econômica `X pontos = Y reais` **não está nesta lista** porque já existe regra validada e não deve ser reaberta nesta frente.',
+              'A equivalência econômica `X pontos = Y reais` permanece registrada como decisão histórica desta continuidade, mas **não está congelada como regra econômica vigente pelo corpus atual**. Valor monetário e taxa de conversão exigem autoridade econômica específica antes de implementação.'
+          )
+
+          # Current State: publish the reconciled current documentary truth.
+          rx(
+              'docs/project/current-state-register.md',
+              'A empresa financia orçamento; concessão e uso pela Pessoa são eventos distintos.\n\n`VALOR DE IMPACTO LIBERADO ≠ impacto realizado ≠ impacto comprovado`.',
+              'A empresa financia orçamento; concessão e uso pela Pessoa são eventos distintos.\n\nA auditoria documental do Lote J classificou como `REAL_DRIFT` a claim de que uma equivalência Pontos ↔ BRL já estaria validada como regra vigente. O checkpoint de 2026-08-15 preserva essa decisão como proveniência histórica, mas as autoridades econômicas temáticas correntes não definem nem aprovam valor monetário ou taxa de conversão.\n\n```text\nPONTOS GUIVOS\n→ BENEFÍCIO TRANSACIONAL DO ECOSSISTEMA\n\nEQUIVALÊNCIA PONTOS ↔ BRL\n→ DECISÃO HISTÓRICA PRESERVADA COMO PROVENIÊNCIA\n→ SEM TAXA / VALOR MONETÁRIO APROVADO POR AUTORIDADE ECONÔMICA VIGENTE\n→ NÃO AUTORIZADA PARA IMPLEMENTAÇÃO, COBRANÇA OU LIQUIDAÇÃO\n→ REQUER AUTORIDADE ECONÔMICA ESPECÍFICA PARA VOLTAR A SER REGRA CORRENTE\n```\n\n`VALOR DE IMPACTO LIBERADO ≠ impacto realizado ≠ impacto comprovado`.'
+          )
+
+          # Roadmap J: objective reason was found; record adjudication and current gate.
+          rx(
+              'docs/roadmap.md',
+              'A equivalência econômica já validada permanece preservada; não é reaberta por esta auditoria sem razão objetiva.',
+              'A auditoria encontrou razão objetiva para reabrir documentalmente essa claim: `GPA-004` e seu Portfólio Funcional afirmavam equivalência Pontos ↔ BRL já validada, enquanto `GEM-CLOSURE-REVIEW-001` e `GEM-000` mantêm valor monetário e taxa de conversão sem aprovação. A adjudicação de J classifica o conflito como `REAL_DRIFT` e preserva a decisão histórica de conversa somente como proveniência. No estado vigente, **nenhuma taxa ou valor monetário de Pontos Guivos está aprovado por autoridade econômica temática**, e nenhuma implementação, cobrança ou liquidação é autorizada por esta auditoria.'
+          )
+
+          # Master audit: register global finding, evidence, classification and no-loss resolution.
+          rx(
+              'docs/project/gkr-full-corpus-audit.md',
+              '| F-016 | Major | o corpus continha produtores visuais legados e referências estruturais capazes de competir com Design; a auditoria separou produtores removíveis de autoridades, validadores e evidências que devem permanecer | `REMOVE_AFTER_ABSORPTION + REWRITE` | **RESOLVED — cleanup documental 26/26 concluído após absorção; referências estruturais reconciliadas; 23 caminhos de SVG removidos neutralizados; autoridades/validadores/evidências preservados; guards e prova pós-delete concluídos** |',
+              '| F-016 | Major | o corpus continha produtores visuais legados e referências estruturais capazes de competir com Design; a auditoria separou produtores removíveis de autoridades, validadores e evidências que devem permanecer | `REMOVE_AFTER_ABSORPTION + REWRITE` | **RESOLVED — cleanup documental 26/26 concluído após absorção; referências estruturais reconciliadas; 23 caminhos de SVG removidos neutralizados; autoridades/validadores/evidências preservados; guards e prova pós-delete concluídos** |\n| F-017 | Major | autoridades normativas Business afirmavam equivalência Pontos ↔ BRL já validada/vigente sem autoridade econômica temática ou taxa documentada, enquanto autoridades GEM ativas mantinham valor monetário e conversão sem aprovação | `UPDATE + PRESERVE_PROVENANCE` | **RESOLVED NO LOTE J — REAL_DRIFT reconciliado; decisão histórica de conversa preservada como proveniência; nenhuma taxa inventada ou implementação autorizada** |'
+          )
+          marker = '## 7. F-003 — Home principal/Pessoa — resolvido no Lote D'
+          section = '''## 6.2 F-017 — equivalência monetária de Pontos — REAL_DRIFT reconciliado no Lote J\n\nA auditoria documental de J reabriu a claim Pontos ↔ BRL porque surgiu razão objetiva de autoridade. A prova foi executada sobre o `HEAD d35d5628ae9d5323a24b2f9ebabed116b44c2b9a`, sem mutação do alvo.\n\n```text\nREAD-ONLY FULL-CORPUS SCAN\n→ run 34001107676\n→ TARGET SHA d35d5628ae9d5323a24b2f9ebabed116b44c2b9a\n→ TARGET TREE 401cdae118f3a456ee189b3f7a29ccd7d80cb55f\n→ MATCHED FILES 31\n→ MATCHED BLOCKS 39\n→ READ_ONLY_SCAN PASS\n```\n\nEvidência material:\n\n- `GEM-005` não define quantidade, valor monetário ou taxa de conversão;\n- `GEM-005-POINTS-CREDITS-POLICY-001` mantém `cash_convertible: false` e `monetary_value_defined: false`;\n- `GEM-CLOSURE-REVIEW-001`, ativo e normativo, declara que pontos não possuem valor monetário aprovado;\n- `GEM-000 v1.3.0` mantém quantidade/valor monetário e taxa de conversão fora do conjunto autorizado;\n- `GPA-004` e `GPA-004-FUNCTIONAL-PORTFOLIO-001`, ambos normativos, afirmavam que a equivalência econômica já estava validada/vigente;\n- `GKR-BUSINESS-CONTINUITY-001` demonstra a proveniência da afirmação em decisões reconciliadas de conversa/PR #271, mas é explicitamente `normative: false` e não constitui autoridade econômica temática;\n- nenhuma autoridade do corpus define uma razão numérica `X pontos = Y reais` ou supersede explicitamente a regra econômica GEM sobre valor/taxa.\n\nAdjudicação:\n\n```text\nCLASSIFICATION\n→ REAL_DRIFT\n\nVALID_COEXISTENCE\n→ REJECTED\n→ “SEM VALOR/TAXA APROVADA” E “EQUIVALÊNCIA JÁ VALIDADA” DISPUTAVAM O MESMO ATRIBUTO ECONÔMICO\n\nHISTORICAL_SUPERSEDED\n→ REJECTED\n→ NÃO EXISTE SUPERSESSÃO ECONÔMICA EXPLÍCITA DA AUTORIDADE GEM\n\nNO-LOSS RECEIVER\n→ GKR-BUSINESS-CONTINUITY-001\n→ PRESERVA A DECISÃO HISTÓRICA COMO PROVENIÊNCIA\n\nCURRENT CANONICAL TRUTH\n→ PONTOS PERMANECEM BENEFÍCIO TRANSACIONAL / CAPACIDADE BUSINESS\n→ VALOR MONETÁRIO / TAXA PONTOS ↔ BRL NÃO ESTÃO APROVADOS NO CORPUS ECONÔMICO VIGENTE\n→ NENHUMA TAXA É INVENTADA POR ESTA AUDITORIA\n→ IMPLEMENTAÇÃO / COBRANÇA / LIQUIDAÇÃO NÃO AUTORIZADAS\n```\n\nA correção é documental e não revoga a existência histórica da decisão de conversa; apenas impede que um checkpoint não normativo funcione como substituto implícito de autoridade econômica. Uma futura equivalência pode ser estabelecida por decisão governada e autoridade econômica específica.\n\n'''
+          p = Path('docs/project/gkr-full-corpus-audit.md')
+          text = p.read_text(encoding='utf-8')
+          if text.count(marker) != 1:
+              raise SystemExit('master audit: section insertion marker mismatch')
+          p.write_text(text.replace(marker, section + marker, 1), encoding='utf-8')
+
+          rx(
+              'docs/project/gkr-full-corpus-audit.md',
+              'DOWNSTREAM RELEASE ADJUDICATION\n→ J RELEASED FOR DOCUMENTARY AUDIT ONLY\n→ K / L / M / N PENDING / NOT RELEASED\n→ J RELEASE DOES NOT AUTHORIZE IMPLEMENTATION / OPERATION',
+              'DOWNSTREAM RELEASE ADJUDICATION\n→ J RELEASED FOR DOCUMENTARY AUDIT ONLY\n→ K / L / M / N PENDING / NOT RELEASED\n→ J RELEASE DOES NOT AUTHORIZE IMPLEMENTATION / OPERATION\n\nJ DOCUMENTARY AUDIT\n→ IN_PROGRESS\n→ F-017 POINTS MONETARY-AUTHORITY DRIFT RESOLVED\n→ NEXT J FAMILIES NOT YET ADJUDICATED'
+          )
+
+      - name: Assert closed six-file boundary
+        run: |
+          expected=$(cat <<'EOF' | sort
+          docs/product-architecture/business.md
+          docs/product-architecture/business-functional-portfolio.md
+          docs/project/business-continuity-checkpoint-2026-08-15.md
+          docs/project/current-state-register.md
+          docs/project/gkr-full-corpus-audit.md
+          docs/roadmap.md
+          EOF
+          )
+          actual=$(git diff --name-only | sort)
+          printf 'EXPECTED:\n%s\nACTUAL:\n%s\n' "$expected" "$actual"
+          test "$actual" = "$expected"
+
+      - name: Prove F-017 authority invariants
+        shell: python
+        run: |
+          from pathlib import Path
+
+          business = Path('docs/product-architecture/business.md').read_text(encoding='utf-8')
+          portfolio = Path('docs/product-architecture/business-functional-portfolio.md').read_text(encoding='utf-8')
+          continuity = Path('docs/project/business-continuity-checkpoint-2026-08-15.md').read_text(encoding='utf-8')
+          state = Path('docs/project/current-state-register.md').read_text(encoding='utf-8')
+          roadmap = Path('docs/roadmap.md').read_text(encoding='utf-8')
+          audit = Path('docs/project/gkr-full-corpus-audit.md').read_text(encoding='utf-8')
+          closure = Path('docs/economic-model/gem-closure-review.md').read_text(encoding='utf-8')
+          gem = Path('docs/economic-model/index.md').read_text(encoding='utf-8')
+          policy = Path('docs/economic-model/gem-005-points-and-credits-policy.md').read_text(encoding='utf-8')
+
+          required = [
+              ('business current truth', 'não trata uma equivalência Pontos ↔ BRL como regra econômica canônica vigente ou implementável' in business),
+              ('portfolio current truth', 'o portfólio não considera essa equivalência uma regra econômica canônica vigente ou implementável' in portfolio),
+              ('provenance preserved', 'permanece preservado como proveniência histórica da decisão' in continuity),
+              ('continuity non-authority', 'não pode, por si só, promover a decisão histórica a regra econômica canônica vigente ou implementável' in continuity),
+              ('state truth', 'SEM TAXA / VALOR MONETÁRIO APROVADO POR AUTORIDADE ECONÔMICA VIGENTE' in state),
+              ('roadmap classification', 'A adjudicação de J classifica o conflito como `REAL_DRIFT`' in roadmap),
+              ('finding registered', '| F-017 | Major |' in audit),
+              ('audit proof', '→ run 34001107676' in audit),
+              ('audit classification', 'CLASSIFICATION\n→ REAL_DRIFT' in audit),
+              ('GEM closure preserved', 'pontos não possuem valor monetário aprovado' in closure),
+              ('GEM index preserved', 'quantidade ou valor monetário de pontos' in gem and 'taxa de conversão' in gem),
+              ('points policy preserved', 'cash_convertible: false' in policy and 'monetary_value_defined: false' in policy),
+          ]
+          for label, ok in required:
+              if not ok:
+                  raise SystemExit(f'failed invariant: {label}')
+
+          stale = [
+              'A equivalência econômica entre pontos e reais já validada no ecossistema permanece preservada',
+              'A equivalência econômica `X pontos = Y reais` já validada permanece vigente',
+              'A equivalência econômica já validada entre pontos e reais **não está nesta lista',
+              'A relação `X pontos = Y reais` **já possui regra validada/funcionando no ecossistema** e não deve ser rediscutida nesta frente.',
+              'A equivalência econômica já validada permanece preservada; não é reaberta por esta auditoria sem razão objetiva.',
+          ]
+          combined = '\n'.join([business, portfolio, continuity, state, roadmap, audit])
+          for token in stale:
+              if token in combined:
+                  raise SystemExit(f'stale current claim remains: {token}')
+
+          # Critical downstream guards must remain unchanged.
+          for token in [
+              'UXA-102 / V5\n→ NOT_STARTED',
+              'PRODUCT ENGINEERING\n→ PAUSED BEFORE W0-01',
+              'PMF\n→ NOT VALIDATED',
+          ]:
+              if token not in state:
+                  raise SystemExit(f'guardrail lost: {token}')
+          if 'K / L / M / N\n→ PENDING / NOT RELEASED' not in roadmap:
+              raise SystemExit('downstream hold lost')
+
+          print('F017_AUTHORITY_RECONCILIATION_PROOF=SUCCESS')
+
+      - name: Validate prepared tree
+        run: |
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          git diff --check
+          mkdocs build --strict --site-dir /tmp/gkr-site
+
+      - name: Create direct result commit
+        run: |
+          git config user.name "gkr-governance-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            docs/product-architecture/business.md \
+            docs/product-architecture/business-functional-portfolio.md \
+            docs/project/business-continuity-checkpoint-2026-08-15.md \
+            docs/project/current-state-register.md \
+            docs/project/gkr-full-corpus-audit.md \
+            docs/roadmap.md
+          tree=$(git write-tree)
+          commit=$(printf '%s\n' 'GKR: reconcile F-017 points monetary authority drift' | git commit-tree "$tree" -p d35d5628ae9d5323a24b2f9ebabed116b44c2b9a)
+          git push --force origin "$commit:refs/heads/agent/gkr-j-f017-points-authority-result-v1"
+          echo "RESULT_SHA=$commit"
+          echo "RESULT_TREE=$tree"
+
+  prove:
+    name: Exact-result F-017 read-only proof
+    needs: reconcile
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact result
+        uses: actions/checkout@v4
+        with:
+          ref: agent/gkr-j-f017-points-authority-result-v1
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install documentation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Prove parent, boundary, and no executor leakage
+        run: |
+          test "$(git rev-parse HEAD^)" = "d35d5628ae9d5323a24b2f9ebabed116b44c2b9a"
+          test ! -e .github/workflows/j-f017-points-authority-reconciliation.yml
+          changed=$(git diff --name-only HEAD^...HEAD | sort)
+          expected=$(cat <<'EOF' | sort
+          docs/product-architecture/business.md
+          docs/product-architecture/business-functional-portfolio.md
+          docs/project/business-continuity-checkpoint-2026-08-15.md
+          docs/project/current-state-register.md
+          docs/project/gkr-full-corpus-audit.md
+          docs/roadmap.md
+          EOF
+          )
+          printf 'CHANGED:\n%s\n' "$changed"
+          test "$changed" = "$expected"
+
+      - name: Re-prove semantic result
+        shell: python
+        run: |
+          from pathlib import Path
+          business = Path('docs/product-architecture/business.md').read_text(encoding='utf-8')
+          portfolio = Path('docs/product-architecture/business-functional-portfolio.md').read_text(encoding='utf-8')
+          continuity = Path('docs/project/business-continuity-checkpoint-2026-08-15.md').read_text(encoding='utf-8')
+          state = Path('docs/project/current-state-register.md').read_text(encoding='utf-8')
+          roadmap = Path('docs/roadmap.md').read_text(encoding='utf-8')
+          audit = Path('docs/project/gkr-full-corpus-audit.md').read_text(encoding='utf-8')
+          checks = [
+              'não trata uma equivalência Pontos ↔ BRL como regra econômica canônica vigente ou implementável' in business,
+              'o portfólio não considera essa equivalência uma regra econômica canônica vigente ou implementável' in portfolio,
+              'permanece preservado como proveniência histórica da decisão' in continuity,
+              'SEM TAXA / VALOR MONETÁRIO APROVADO POR AUTORIDADE ECONÔMICA VIGENTE' in state,
+              'A adjudicação de J classifica o conflito como `REAL_DRIFT`' in roadmap,
+              '| F-017 | Major |' in audit,
+              '→ F-017 POINTS MONETARY-AUTHORITY DRIFT RESOLVED' in audit,
+          ]
+          if not all(checks):
+              raise SystemExit('exact-result semantic proof failed')
+          print('F017_EXACT_RESULT_SEMANTIC_PROOF=SUCCESS')
+
+      - name: Re-run canonical validators on exact result
+        run: |
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          git diff --check HEAD^...HEAD
+          mkdocs build --strict --site-dir /tmp/gkr-site
+          git status --porcelain
+          test -z "$(git status --porcelain)"
+          echo "F017_EXACT_RESULT_PROOF=SUCCESS"
