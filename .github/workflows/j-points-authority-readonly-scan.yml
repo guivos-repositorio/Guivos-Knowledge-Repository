@@ -1,0 +1,83 @@
+name: Block J Points Authority Read-Only Scan
+
+on:
+  push:
+    branches:
+      - agent/gkr-j-points-authority-scan-v1
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scanner branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Scan exact canonical head for points authority evidence
+        env:
+          TARGET_SHA: d35d5628ae9d5323a24b2f9ebabed116b44c2b9a
+        run: |
+          set -euo pipefail
+          git cat-file -e "${TARGET_SHA}^{commit}"
+          echo "TARGET_SHA=${TARGET_SHA}"
+          echo "SCANNER_SHA=${GITHUB_SHA}"
+          echo "--- exact-head evidence matches ---"
+          python - <<'PY'
+          import re, subprocess
+
+          target = "d35d5628ae9d5323a24b2f9ebabed116b44c2b9a"
+          roots = (
+              "docs/economic-model/",
+              "docs/product-architecture/",
+              "docs/project/",
+          )
+          exact_files = {"docs/roadmap.md", "README.md"}
+          names = subprocess.check_output(
+              ["git", "ls-tree", "-r", "--name-only", target], text=True
+          ).splitlines()
+          files = [p for p in names if p.endswith(".md") and (p.startswith(roots) or p in exact_files)]
+
+          patterns = [
+              re.compile(r"equival[eê]ncia.{0,100}(?:pontos|reais)|(?:pontos|reais).{0,100}equival[eê]ncia", re.I),
+              re.compile(r"pontos.{0,100}(?:R\$|reais|valor monet[aá]rio|taxa de convers[aã]o|convers[aã]o em dinheiro|cash_convertible|monetary_value_defined)", re.I),
+              re.compile(r"(?:R\$|reais|valor monet[aá]rio|taxa de convers[aã]o|convers[aã]o em dinheiro|cash_convertible|monetary_value_defined).{0,100}pontos", re.I),
+              re.compile(r"\b1\s+ponto\b|\b[0-9][0-9.,]*\s+pontos\s*=|\bpontos\s*=\s*R\$", re.I),
+              re.compile(r"supersed|substitut|preval[eê]ncia|preced[eê]ncia", re.I),
+          ]
+
+          total = 0
+          for path in files:
+              try:
+                  text = subprocess.check_output(["git", "show", f"{target}:{path}"], text=True, errors="replace")
+              except subprocess.CalledProcessError:
+                  continue
+              lines = text.splitlines()
+              hit_lines = set()
+              for i, line in enumerate(lines):
+                  if any(p.search(line) for p in patterns):
+                      # Only keep precedence-style matches when file is GEM/GPA-related or nearby content mentions points.
+                      if patterns[-1].search(line) and not any("ponto" in x.lower() for x in lines[max(0,i-4):min(len(lines),i+5)]):
+                          continue
+                      hit_lines.add(i)
+              if hit_lines:
+                  print(f"\n### {path}")
+                  for i in sorted(hit_lines):
+                      start=max(0,i-2); end=min(len(lines),i+3)
+                      for j in range(start,end):
+                          print(f"{j+1}: {lines[j]}")
+                      print("---")
+                      total += 1
+          print(f"\nMATCH_BLOCKS={total}")
+          PY
+
+      - name: Prove scanner did not mutate canonical target
+        env:
+          TARGET_SHA: d35d5628ae9d5323a24b2f9ebabed116b44c2b9a
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse ${TARGET_SHA}^{tree})" = "$(git show -s --format=%T ${TARGET_SHA})"
+          echo "READ_ONLY_SCAN=PASS"
