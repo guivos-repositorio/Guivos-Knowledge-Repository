@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.15.0
+version: 1.16.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-06
 normative: false
@@ -150,6 +150,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-016 | Major | o corpus continha produtores visuais legados e referências estruturais capazes de competir com Design; a auditoria separou produtores removíveis de autoridades, validadores e evidências que devem permanecer | `REMOVE_AFTER_ABSORPTION + REWRITE` | **RESOLVED — cleanup documental 26/26 concluído após absorção; referências estruturais reconciliadas; 23 caminhos de SVG removidos neutralizados; autoridades/validadores/evidências preservados; guards e prova pós-delete concluídos** |
 | F-017 | Major | autoridades normativas Business afirmavam equivalência Pontos ↔ BRL já validada/vigente sem autoridade econômica temática ou taxa documentada, enquanto autoridades GEM ativas mantinham valor monetário e conversão sem aprovação | `UPDATE + PRESERVE_PROVENANCE` | **RESOLVED NO LOTE J — REAL_DRIFT reconciliado; decisão histórica de conversa preservada como proveniência; nenhuma taxa inventada ou implementação autorizada** |
 | F-018 | Major | `README.md` e `docs/index.md` publicavam F-016 como próximo gate já após seu fechamento e anunciavam Roadmap 13.12.0 enquanto a autoridade real permanecia 13.11.0 | `UPDATE` | **RESOLVED NA TRANSIÇÃO J→K — entrypoints, Estado Atual, Roadmap e master audit reconciliados na mesma transação** |
+| F-019 | Major | `docs/research/market-validation/STATUS.md` permanecia como `current` e “ponto único” da baseline 1.2.1 / 22 perguntas após `VAL-002 v2.1.0` / 19 perguntas e autoridades posteriores | `REMOVE_AFTER_ABSORPTION` | **REAL_DRIFT — cleanup físico aplicado nesta transação; validação pós-delete pendente** |
 
 ### 6.1 Fechamento de F-016 — desmaterialização documental governada
 
@@ -275,6 +276,82 @@ J
 K
 → RELEASED FOR DOCUMENTARY AUDIT ONLY
 ```
+
+## 6.4 F-019 — marcador `STATUS.md` obsoleto da Validação de Mercado — cleanup aplicado / validação pendente
+
+A auditoria documental do Lote K identificou que `docs/research/market-validation/STATUS.md` continuava se declarando `status: current`, “ponto único de confirmação do estado atual” e baseline `1.2.1` / 22 perguntas, embora as autoridades posteriores e ativas já governassem `VAL-002 v2.1.0` / 19 perguntas.
+
+A prova read-only de elegibilidade confirmou:
+
+```text
+REAL_DRIFT
+→ PROVEN
+
+CURRENT STRUCTURAL CONSUMERS
+→ 0 IDENTIFIED
+
+MENU EXPOSURE
+→ NONE
+
+UNIQUE CURRENT VALID CONTENT
+→ NONE IDENTIFIED
+
+VALID CURRENT CONTENT
+→ ABSORBED BY VAL-001 / VAL-002 / VAL-004 / VAL-005 / VAL-006 / VAL-007 / VAL-009 / VAL-010
+→ AND VAL-RND-2026-001
+
+HISTORICAL PROVENANCE
+→ PRESERVED IN GIT
+
+REMOVE_AFTER_ABSORPTION ELIGIBILITY
+→ PASS
+```
+
+A cronologia também demonstra a supersessão: o último commit do marcador antigo ocorreu em 13/07/2026, enquanto `VAL-002` foi reconstruído e encurtado em 19/07/2026. O marcador antigo não voltou a ser reconciliado após essa mudança.
+
+A autorização humana separada para cleanup físico foi concedida em 06/09/2026. Nesta transação:
+
+```text
+docs/research/market-validation/STATUS.md
+→ PHYSICAL DELETE APPLIED
+
+GKR-FULL-CORPUS-AUDIT-001
+→ UPDATED TO 1.16.0
+
+F-019
+→ REMEDIATION APPLIED
+→ POST-DELETE SEMANTIC / MECHANICAL VALIDATION PENDING
+→ NOT YET RESOLVED
+```
+
+Nenhuma autoridade `VAL-001..010`, rodada `VAL-RND-2026-001`, documento `RP-002`, Estado Atual, Roadmap, entrypoint, MENU ou gate operacional é alterado por esta remediação.
+
+Preservações obrigatórias:
+
+```text
+CURRENT VAL AUTHORITY
+→ VAL-002 v2.1.0 / 19 QUESTIONS
+
+K
+→ DOCUMENTARY AUDIT IN_PROGRESS
+
+OPERATIONAL READINESS
+→ HOLD
+
+PARTICIPANT 001
+→ HOLD
+
+DRY RUN REAL
+→ NOT RELEASED
+
+PMF
+→ NOT VALIDATED
+
+L / M / N
+→ NOT RELEASED
+```
+
+`F-019` somente poderá mudar para `RESOLVED` após prova pós-delete no `HEAD` exato, incluindo ausência física do marcador, ausência de referências correntes ao ID/caminho e sucesso das validações Semantic + Mechanical.
 
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
@@ -911,7 +988,7 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | H — Organização / Coletivo | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED` | Jobs + IA propagados; cleanup F-006 concluído e validado |
 | I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED / F-007_RESOLVED / F-016-A_RESOLVED / F-016_RESOLVED` | camada SVG removida; inventário físico corrente = 0; cleanup documental F-016 concluído 26/26 com autoridades/validadores/evidências preservados |
 | J — Produtos / Economia | `COMPLETED / DOCUMENTARY_AUDIT` | F-017 resolvido; fronteiras de plano/capacidade/budget/entitlement/billing, Ads e impacto adjudicadas sem outro finding material aberto |
-| K — Research / RP-002 | `RELEASED / DOCUMENTARY_AUDIT_ONLY` | método/evidência preservados; intermediários absorvidos quando possível; nenhum gate operacional promovido |
+| K — Research / RP-002 | `RELEASED / DOCUMENTARY_AUDIT_ONLY / IN_PROGRESS` | método/evidência preservados; F-019 cleanup aplicado com validação pós-delete pendente; nenhum gate operacional promovido |
 | L — Tecnologia / Dados / IA | `PENDING / NOT_RELEASED` | autoridades atuais e fronteiras claras |
 | M — Jurídico / Privacidade / Institucional | `PENDING / NOT_RELEASED` | documental e operacional separados corretamente |
 | N — GTM / presença pública | `PENDING / NOT_RELEASED` | autoridades atuais sem duplicação histórica |
@@ -942,7 +1019,7 @@ F-016. desmaterialização documental              [RESOLVED; F-016-A resolved; 
 ↓
 J. Produtos / Economia                            [COMPLETED / DOCUMENTARY AUDIT / F-017 RESOLVED]
 ↓
-K. Research / VAL / RP-002                       [RELEASED / DOCUMENTARY AUDIT ONLY]
+K. Research / VAL / RP-002                       [RELEASED / DOCUMENTARY AUDIT IN_PROGRESS / F-019 CLEANUP APPLIED, VALIDATION PENDING]
 ↓
 L/M/N. domínios especializados                   [PENDING / NOT RELEASED]
 ↓
@@ -1124,6 +1201,13 @@ J DOCUMENTARY AUDIT
 → ADS / OPPORTUNITY BOOST ADJUDICATED
 → IMPACT ADJUDICATED
 → OPEN J-SPECIFIC MATERIAL FINDINGS = 0
+
+K DOCUMENTARY AUDIT
+→ IN_PROGRESS
+→ F-019 REAL_DRIFT PROVEN
+→ F-019 REMOVE_AFTER_ABSORPTION ELIGIBILITY PASS
+→ F-019 PHYSICAL CLEANUP APPLIED
+→ F-019 POST-DELETE VALIDATION PENDING
 
 DOWNSTREAM RELEASE ADJUDICATION
 → K RELEASED FOR DOCUMENTARY AUDIT ONLY
