@@ -1,0 +1,173 @@
+name: Block J F-017 Points Authority Reconciliation V2
+
+on:
+  push:
+    branches:
+      - agent/gkr-j-f017-points-authority-reconciliation-v1
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    name: Reconcile F-017 with corrected invariant
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout staging branch with full history
+        uses: actions/checkout@v4
+        with:
+          ref: agent/gkr-j-f017-points-authority-reconciliation-v1
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Extract proven transformation from V1 executor
+        run: |
+          python - <<'PY'
+          import yaml
+          from pathlib import Path
+          wf = yaml.safe_load(Path('.github/workflows/j-f017-points-authority-reconciliation.yml').read_text(encoding='utf-8'))
+          steps = wf['jobs']['reconcile']['steps']
+          step = next(s for s in steps if s.get('name') == 'Apply exact no-loss F-017 reconciliation')
+          Path('/tmp/f017_reconcile.py').write_text(step['run'], encoding='utf-8')
+          print('TRANSFORMATION_EXTRACTED=PASS')
+          PY
+
+      - name: Reset worktree to immutable canonical base and apply transformation
+        run: |
+          git checkout --detach d35d5628ae9d5323a24b2f9ebabed116b44c2b9a
+          test "$(git rev-parse HEAD)" = "d35d5628ae9d5323a24b2f9ebabed116b44c2b9a"
+          python /tmp/f017_reconcile.py
+
+      - name: Assert exact six-file boundary and corrected invariants
+        run: |
+          expected=$(cat <<'EOF' | sort
+          docs/product-architecture/business.md
+          docs/product-architecture/business-functional-portfolio.md
+          docs/project/business-continuity-checkpoint-2026-08-15.md
+          docs/project/current-state-register.md
+          docs/project/gkr-full-corpus-audit.md
+          docs/roadmap.md
+          EOF
+          )
+          actual=$(git diff --name-only | sort)
+          test "$actual" = "$expected"
+          python - <<'PY'
+          from pathlib import Path
+          b=Path('docs/product-architecture/business.md').read_text(encoding='utf-8')
+          p=Path('docs/product-architecture/business-functional-portfolio.md').read_text(encoding='utf-8')
+          c=Path('docs/project/business-continuity-checkpoint-2026-08-15.md').read_text(encoding='utf-8')
+          s=Path('docs/project/current-state-register.md').read_text(encoding='utf-8')
+          r=Path('docs/roadmap.md').read_text(encoding='utf-8')
+          a=Path('docs/project/gkr-full-corpus-audit.md').read_text(encoding='utf-8')
+          g=Path('docs/economic-model/gem-closure-review.md').read_text(encoding='utf-8')
+          assert 'não trata uma equivalência Pontos ↔ BRL como regra econômica canônica vigente ou implementável' in b
+          assert 'o portfólio não considera essa equivalência uma regra econômica canônica vigente ou implementável' in p
+          assert 'permanece preservado como proveniência histórica da decisão' in c
+          assert 'SEM TAXA / VALOR MONETÁRIO APROVADO POR AUTORIDADE ECONÔMICA VIGENTE' in s
+          assert 'A adjudicação de J classifica o conflito como `REAL_DRIFT`' in r
+          assert '| F-017 | Major |' in a
+          assert 'CLASSIFICATION\n→ REAL_DRIFT' in a
+          assert 'pontos não possuem valor monetário aprovado' in g
+          assert 'K / L / M / N\n→ NOT RELEASED' in r
+          for stale in [
+            'A equivalência econômica entre pontos e reais já validada no ecossistema permanece preservada',
+            'A equivalência econômica `X pontos = Y reais` já validada permanece vigente',
+            'A equivalência econômica já validada entre pontos e reais **não está nesta lista',
+            'A relação `X pontos = Y reais` **já possui regra validada/funcionando no ecossistema** e não deve ser rediscutida nesta frente.',
+            'A equivalência econômica já validada permanece preservada; não é reaberta por esta auditoria sem razão objetiva.',
+          ]:
+            assert stale not in '\n'.join([b,p,c,s,r,a]), stale
+          print('F017_CORRECTED_INVARIANTS=SUCCESS')
+          PY
+
+      - name: Run canonical validators
+        run: |
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          git diff --check
+          mkdocs build --strict --site-dir /tmp/gkr-site
+
+      - name: Create direct result commit
+        run: |
+          git config user.name "gkr-governance-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            docs/product-architecture/business.md \
+            docs/product-architecture/business-functional-portfolio.md \
+            docs/project/business-continuity-checkpoint-2026-08-15.md \
+            docs/project/current-state-register.md \
+            docs/project/gkr-full-corpus-audit.md \
+            docs/roadmap.md
+          tree=$(git write-tree)
+          commit=$(printf '%s\n' 'GKR: reconcile F-017 points monetary authority drift' | git commit-tree "$tree" -p d35d5628ae9d5323a24b2f9ebabed116b44c2b9a)
+          git push --force origin "$commit:refs/heads/agent/gkr-j-f017-points-authority-result-v2"
+          echo "RESULT_SHA=$commit"
+          echo "RESULT_TREE=$tree"
+
+  prove:
+    name: Exact-result F-017 proof V2
+    needs: reconcile
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact result
+        uses: actions/checkout@v4
+        with:
+          ref: agent/gkr-j-f017-points-authority-result-v2
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Prove direct parent, boundary and no executor leakage
+        run: |
+          test "$(git rev-parse HEAD^)" = "d35d5628ae9d5323a24b2f9ebabed116b44c2b9a"
+          test ! -e .github/workflows/j-f017-points-authority-reconciliation.yml
+          test ! -e .github/workflows/j-f017-points-authority-reconciliation-v2.yml
+          changed=$(git diff --name-only HEAD^...HEAD | sort)
+          expected=$(cat <<'EOF' | sort
+          docs/product-architecture/business.md
+          docs/product-architecture/business-functional-portfolio.md
+          docs/project/business-continuity-checkpoint-2026-08-15.md
+          docs/project/current-state-register.md
+          docs/project/gkr-full-corpus-audit.md
+          docs/roadmap.md
+          EOF
+          )
+          test "$changed" = "$expected"
+
+      - name: Re-prove exact semantic state and validators
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          s=Path('docs/project/current-state-register.md').read_text(encoding='utf-8')
+          r=Path('docs/roadmap.md').read_text(encoding='utf-8')
+          a=Path('docs/project/gkr-full-corpus-audit.md').read_text(encoding='utf-8')
+          assert 'SEM TAXA / VALOR MONETÁRIO APROVADO POR AUTORIDADE ECONÔMICA VIGENTE' in s
+          assert 'A adjudicação de J classifica o conflito como `REAL_DRIFT`' in r
+          assert '→ F-017 POINTS MONETARY-AUTHORITY DRIFT RESOLVED' in a
+          print('F017_EXACT_SEMANTIC_PROOF=SUCCESS')
+          PY
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          git diff --check HEAD^...HEAD
+          mkdocs build --strict --site-dir /tmp/gkr-site
+          test -z "$(git status --porcelain)"
+          echo "F017_EXACT_RESULT_PROOF=SUCCESS"
