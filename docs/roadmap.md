@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.12.0
+id: ROADMAP-13.13.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.12.0
+version: 13.13.0
 owner: Guivos
 last_updated: 2026-09-06
 normative: true
@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.13.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.14.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -53,7 +53,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental, `F-017` foi resolvido e a reconciliação de propagação `F-018` foi incorporada às superfícies globais. A decisão downstream subsequente libera exclusivamente K para auditoria documental; L/M/N permanecem não liberados.
+Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. A decisão downstream subsequente libera exclusivamente L — Tecnologia / Dados / IA — para auditoria documental; M/N permanecem não liberados.
 
 `F-016-A` concluiu o ciclo governado: elegibilidade estrutural/semântica, autorização humana separada, cleanup físico 119/119, reconciliação, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. A subfrente está `RESOLVED` e o inventário físico corrente de SVGs é zero.
 
@@ -66,7 +66,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.13.0** |
+| Estado global | **GKR-STATE-001 v3.14.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -84,8 +84,9 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | F-016-A | **RESOLVED — PHYSICAL SVG COUNT 0** |
 | F-018 | **RESOLVED — GLOBAL ENTRYPOINT STATE-PROPAGATION DRIFT** |
 | Lote J — Produtos / Economia | **DOCUMENTARY AUDIT COMPLETED / F-017 RESOLVED** |
-| Lote K — Research / VAL / RP-002 | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
-| Lotes L / M / N | **PENDING / NOT RELEASED** |
+| Lote K — Research / VAL / RP-002 | **DOCUMENTARY AUDIT COMPLETED / F-019 RESOLVED** |
+| Lote L — Tecnologia / Dados / IA | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
+| Lotes M / N | **PENDING / NOT RELEASED** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |
@@ -163,11 +164,11 @@ F-016 DESMATERIALIZAÇÃO DOCUMENTAL       [RESOLVED / 26/26 LEGACY PRODUCERS RE
 ↓
 J. PRODUTOS / ECONOMIA                   [DOCUMENTARY AUDIT COMPLETED / F-017 RESOLVED]
 ↓
-DECISÃO GOVERNADA J → K                 [K RELEASED DOCUMENTARY-ONLY / L-M-N HOLD]
+K. RESEARCH / VAL / RP-002               [DOCUMENTARY AUDIT COMPLETED / F-019 RESOLVED]
 ↓
-K. RESEARCH / VAL / RP-002               [RELEASED FOR DOCUMENTARY AUDIT ONLY]
+DECISÃO GOVERNADA K → L                 [L RELEASED DOCUMENTARY-ONLY / M-N HOLD]
 ↓
-L. TECNOLOGIA / DADOS / IA               [PENDING / NOT RELEASED]
+L. TECNOLOGIA / DADOS / IA               [RELEASED FOR DOCUMENTARY AUDIT ONLY]
 ↓
 M. JURÍDICO / PRIVACIDADE / INSTITUCIONAL [PENDING / NOT RELEASED]
 ↓
@@ -581,9 +582,13 @@ IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION
 → NOT AUTHORIZED
 
 K
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-019 RESOLVED
+
+L
 → RELEASED FOR DOCUMENTARY AUDIT ONLY
 
-L / M / N
+M / N
 → NOT RELEASED
 ```
 
@@ -675,7 +680,9 @@ Estado governado:
 
 ```text
 K
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-019 RESOLVED
+→ NO OPEN K-SPECIFIC MATERIAL FINDING IDENTIFIED
 
 OPERATIONAL IMPLEMENTATION
 → NOT AUTHORIZED
@@ -693,49 +700,76 @@ PMF
 → NOT VALIDATED
 ```
 
-A liberação de K permite somente auditar, confrontar, reconciliar, consolidar e enriquecer autoridades documentais de Research, VAL e RP-002. Ela não autoriza campo real, participante real, dry run, operação, PMF ou qualquer promoção de evidência sintética/simulada a evidência humana.
+A auditoria documental de K reconciliou Research, VAL e RP-002 sem promover método a execução, simulação a evidência humana, survey acceptance a PMF ou fechamento documental a readiness operacional.
 
-Preservar evidência e método que sustentem estado atual; remover somente registros intermediários cuja informação já esteja integralmente absorvida.
-
-RP-002:
+Resultado:
 
 ```text
-CONCEPTUAL READINESS
-→ PASS
+RESEARCH AUTHORITY BOUNDARY
+→ NO_FINDING / VALID_COEXISTENCE
 
-METHODOLOGICAL READINESS
-→ PASS
+SYNTHETIC / SIMULATED EVIDENCE
+→ NOT PROMOTED TO HUMAN EVIDENCE
 
-FIELD KIT v0.1
-→ FROZEN FOR FIRST DRY RUN
+DOCUMENTARY READINESS × OPERATIONAL READINESS
+→ VALID_COEXISTENCE
 
-METHOD / ANALYSIS PLAN
-→ FROZEN v1.0.0
-
-DOCUMENTATION PHASE OF MINIMUM PILOT STACK
-→ CLOSED / PASS DOCUMENTAL
-
-OPERATIONAL IMPLEMENTATION
-→ DEFERRED
-
-OPERATIONAL READINESS
-→ HOLD
-
-PARTICIPANT 001
-→ HOLD
-
-DRY RUN REAL
-→ NOT RELEASED
+VAL THRESHOLDS × RP-002 DRY-RUN THRESHOLDS
+→ DIFFERENT OBJECTS
+→ VALID_COEXISTENCE
 
 PMF
 → NOT VALIDATED
+
+F-019
+→ STALE MARKET-VALIDATION STATUS AUTHORITY
+→ REMOVE_AFTER_ABSORPTION APPLIED
+→ POST-DELETE PROOF SUCCESS
+→ RESOLVED
 ```
 
-Não apagar evidência necessária para esses gates.
+Preservações obrigatórias:
 
-Não transformar simulação sintética em evidência humana real.
+```text
+METHOD DEFINED
+≠ DEPLOYED
+≠ EXECUTED
+≠ RESULT VALIDATED
+
+SYNTHETIC / SIMULATED
+≠ HUMAN / FIELD EVIDENCE
+
+DOCUMENTATION CLOSED
+≠ IMPLEMENTED
+≠ TESTED
+≠ OPERATIONALLY APPROVED
+
+PARTICIPANT RECRUITED
+≠ PARTICIPANT RELEASED
+
+SURVEY ACCEPTANCE
+≠ PMF
+```
+
+Nenhum gate operacional de RP-002 foi liberado pelo fechamento documental de K.
 
 ## 16. Lote L — Tecnologia, dados e IA
+
+Estado governado:
+
+```text
+L
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+
+IMPLEMENTATION / PRODUCTION
+→ NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
+
+M / N
+→ NOT RELEASED
+```
 
 Product Engineering permanece pausada antes de `W0-01`.
 
@@ -745,6 +779,8 @@ Product Engineering permanece pausada antes de `W0-01`.
 NEO4J
 → reference_selected
 ≠ POC
+≠ provisioned
+≠ integrated
 ≠ production
 
 GRAPHRAG
@@ -766,7 +802,11 @@ Auditar:
 - dados;
 - privacy by architecture;
 - diagrams;
-- ADRs e decisões já absorvíveis.
+- ADRs e decisões já absorvíveis;
+- claims de POC, provisionamento, integração e produção;
+- separação entre arquitetura, target, referência tecnológica e implementação observada.
+
+A auditoria de L é documental. Ela não autoriza POC, provisionamento, deploy, acesso a dados reais, criação de pipelines, Product Engineering ou ativação de qualquer tecnologia.
 
 ## 17. Lote M — Jurídico, privacidade e institucional
 
@@ -1028,21 +1068,28 @@ DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL DURANTE A AUDITORIA
 
 ## 26. Regra do próximo movimento
 
-`F-016-A` e `F-016` estão `RESOLVED`. J concluiu sua auditoria documental e a decisão governada J→K libera exclusivamente K para auditoria documental.
+`F-016-A`, `F-016`, `F-017` e `F-019` estão `RESOLVED`. J e K concluíram suas auditorias documentais. A decisão governada K→L libera exclusivamente L para auditoria documental.
 
 ```text
 J
 → DOCUMENTARY AUDIT COMPLETED
 → F-017 RESOLVED
 
-F-018
-→ RESOLVED
-→ GLOBAL ENTRYPOINT STATE-PROPAGATION DRIFT RECONCILED
+K
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-019 RESOLVED
+→ NO OPEN K-SPECIFIC MATERIAL FINDING IDENTIFIED
 
 DOWNSTREAM ADJUDICATION
-→ K RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ L / M / N REMAIN NOT RELEASED
-→ NEXT EXECUTION = K DOCUMENTARY AUDIT
+→ L RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ M / N REMAIN NOT RELEASED
+→ NEXT EXECUTION = L DOCUMENTARY AUDIT
+
+TECHNOLOGY / DATA / AI
+→ IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
+→ PRODUCT ENGINEERING PAUSED BEFORE W0-01
+→ NEO4J REMAINS REFERENCE_SELECTED, NOT PRODUCTION
+→ GRAPHRAG REMAINS CANDIDATE, NOT IMPLEMENTED
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
@@ -1052,4 +1099,4 @@ RESEARCH OPERATIONAL STATES
 → PMF = NOT VALIDATED
 ```
 
-L/M/N, `UXA-102/V5`, Design, Product Engineering e merge da PR #363 permanecem bloqueados ou não autorizados. K está liberado somente para auditoria documental.
+M/N, `UXA-102/V5`, Design, Product Engineering e merge da PR #363 permanecem bloqueados ou não autorizados. L está liberado somente para auditoria documental.

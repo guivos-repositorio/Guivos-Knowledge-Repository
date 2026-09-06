@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.13.0
+version: 3.14.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-06
 normative: true
@@ -109,6 +109,11 @@ F-018
 → RESOLVED
 → GLOBAL ENTRYPOINT STATE-PROPAGATION DRIFT RECONCILED IN J→K TRANSITION
 
+F-019
+→ RESOLVED
+→ STALE MARKET-VALIDATION STATUS AUTHORITY REMOVED AFTER ABSORPTION
+→ POST-DELETE SEMANTIC + MECHANICAL PROOF SUCCESS
+
 J — PRODUTOS / ECONOMIA
 → DOCUMENTARY AUDIT COMPLETED
 → F-017 RESOLVED
@@ -116,14 +121,20 @@ J — PRODUTOS / ECONOMIA
 → IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION NOT AUTHORIZED
 
 K — RESEARCH / VAL / RP-002
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-019 RESOLVED
+→ NO OPEN K-SPECIFIC MATERIAL FINDING IDENTIFIED
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
 → OPERATIONAL READINESS = HOLD
 → PARTICIPANT 001 = HOLD
 → DRY RUN REAL = NOT RELEASED
 → PMF = NOT VALIDATED
 
-L / M / N
+L — TECNOLOGIA / DADOS / IA
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
+
+M / N
 → PENDING / NOT RELEASED
 
 UXA-102 / V5
@@ -1284,7 +1295,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.15.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.17.0` está ativo como instrumento temporário de execução.
 
 ```text
 A / B / C / D / E / F / G
@@ -1311,14 +1322,20 @@ J
 → NO IMPLEMENTATION AUTHORIZATION
 
 K
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-019 RESOLVED
+→ NO OPEN K-SPECIFIC MATERIAL FINDING IDENTIFIED
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
 → OPERATIONAL READINESS = HOLD
 → PARTICIPANT 001 = HOLD
 → DRY RUN REAL = NOT RELEASED
 → PMF = NOT VALIDATED
 
-L / M / N
+L
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
+
+M / N
 → PENDING / NOT RELEASED
 
 O
@@ -1331,7 +1348,7 @@ Q
 → BLOCKED
 ```
 
-A conclusão documental de J e a liberação governada de K não liberam automaticamente L–N nem alteram gates operacionais de Research. A próxima frente documental é K.
+A conclusão documental de K e a liberação governada de L não alteram gates operacionais de Research nem autorizam implementação tecnológica. A próxima frente documental é L.
 
 ## 27. Regra de navegação final
 
@@ -1392,26 +1409,33 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-O Lote J concluiu sua auditoria documental. `F-017` está resolvido e a reconciliação de propagação `F-018` foi incorporada às superfícies globais. A decisão downstream subsequente libera exclusivamente K para auditoria documental. L/M/N permanecem não liberados; a liberação de K não autoriza implementação operacional, participante real, dry run, PMF, Design, Product Engineering ou GTM.
+Os Lotes J e K concluíram suas auditorias documentais. `F-017` e `F-019` estão resolvidos. A decisão downstream subsequente libera exclusivamente L para auditoria documental. M/N permanecem não liberados; a liberação de L não autoriza implementação, produção, Design, Product Engineering, PMF ou merge.
 
 ```text
 J — PRODUTOS / ECONOMIA
 → DOCUMENTARY AUDIT COMPLETED
 → F-017 RESOLVED
 
-F-018
-→ RESOLVED
-→ GLOBAL ENTRYPOINT STATE-PROPAGATION DRIFT RECONCILED
+K — RESEARCH / VAL / RP-002
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-019 RESOLVED
+→ NO OPEN K-SPECIFIC MATERIAL FINDING IDENTIFIED
 
 NEXT
-→ EXECUTE K — RESEARCH / VAL / RP-002 DOCUMENTARY AUDIT ONLY
-→ PRESERVE METHOD, EVIDENCE AND PROVENANCE
-→ DO NOT PROMOTE SYNTHETIC / SIMULATED EVIDENCE TO HUMAN EVIDENCE
-→ OPERATIONAL READINESS REMAINS HOLD
-→ PARTICIPANT 001 REMAINS HOLD
-→ DRY RUN REAL REMAINS NOT RELEASED
+→ EXECUTE L — TECHNOLOGY / DATA / AI DOCUMENTARY AUDIT ONLY
+→ PRESERVE ARCHITECTURE / TECHNOLOGY / IMPLEMENTATION DISTINCTIONS
+→ DO NOT PROMOTE REFERENCE_SELECTED TO POC / PROVISIONED / INTEGRATED / PRODUCTION
+→ DO NOT PROMOTE CANDIDATE TECHNOLOGIES TO IMPLEMENTED
+→ PRODUCT ENGINEERING REMAINS PAUSED BEFORE W0-01
 → PMF REMAINS NOT VALIDATED
-→ L / M / N REMAIN NOT RELEASED
+→ M / N REMAIN NOT RELEASED
+
+RESEARCH OPERATIONAL STATES
+→ OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
+→ OPERATIONAL READINESS = HOLD
+→ PARTICIPANT 001 = HOLD
+→ DRY RUN REAL = NOT RELEASED
+→ PMF = NOT VALIDATED
 
 O
 → PENDING / HOLD
@@ -1427,7 +1451,7 @@ AINDA BLOQUEADOS
 → DESIGN AUTOMÁTICO
 → PRODUCT ENGINEERING
 → PMF
-→ IMPLEMENTAÇÃO
+→ IMPLEMENTAÇÃO / PRODUÇÃO
 ```
 
-A transição J→K é estritamente documental e não altera os estados operacionais de Research nem qualquer gate posterior.
+A transição K→L é estritamente documental e não altera os estados operacionais de Research, tecnologia ou qualquer gate posterior.

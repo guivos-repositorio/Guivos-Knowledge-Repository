@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.13.0
+version: 3.14.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-06
 depends_on:
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.13.0
+→ 3.14.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -56,21 +56,27 @@ J — PRODUTOS / ECONOMIA
 → IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION NOT AUTHORIZED
 
 K — RESEARCH / VAL / RP-002
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-019 RESOLVED
+→ NO OPEN K-SPECIFIC MATERIAL FINDING IDENTIFIED
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
 → OPERATIONAL READINESS = HOLD
 → PARTICIPANT 001 = HOLD
 → DRY RUN REAL = NOT RELEASED
 → PMF = NOT VALIDATED
 
-L / M / N
+L — TECNOLOGIA / DADOS / IA
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
+
+M / N
 → PENDING / NOT RELEASED
 
 PRÓXIMO MOVIMENTO GOVERNADO
-→ K — RESEARCH / VAL / RP-002 — DOCUMENTARY AUDIT ONLY
-→ PRESERVAR MÉTODO, EVIDÊNCIA E PROVENIÊNCIA
-→ NÃO PROMOVER SIMULAÇÃO SINTÉTICA A EVIDÊNCIA HUMANA
-→ NÃO LIBERAR OPERAÇÃO, PARTICIPANT 001 OU PMF
+→ L — TECNOLOGIA / DADOS / IA — DOCUMENTARY AUDIT ONLY
+→ PRESERVAR ARQUITETURA / REFERÊNCIA TECNOLÓGICA / IMPLEMENTAÇÃO COMO ESTADOS DISTINTOS
+→ NÃO PROMOVER REFERENCE_SELECTED A POC / PROVISIONED / INTEGRATED / PRODUCTION
+→ NÃO RETOMAR PRODUCT ENGINEERING
 ```
 
 A presença de uma UXA neste índice significa que o artefato existe e integra a família numerada. Ela **não** prova que todo artefato ou materialização por ela referenciado continuará no corpus após a auditoria.
@@ -206,7 +212,7 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.13.0** |
+| Registro do Estado Atual | **3.14.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
@@ -219,9 +225,10 @@ Ainda não são canônicos:
 | F-016 | **RESOLVED — AUDIT + ADJUDICATION + CLEANUP 26/26 + POST-DELETE PROOF COMPLETE** |
 | F-016-A — camada física SVG | **RESOLVED / PHYSICAL CLEANUP 119/119 / PHYSICAL SVG COUNT 0 / POST-DELETE PROOF V2 SUCCESS** |
 | Lote J — Produtos / Economia | **DOCUMENTARY AUDIT COMPLETED / F-017 RESOLVED** |
-| Lote K — Research / VAL / RP-002 | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
-| Lotes L / M / N | **PENDING / NOT RELEASED** |
-| Próximo movimento governado | **K — RESEARCH / VAL / RP-002 — DOCUMENTARY AUDIT ONLY** |
+| Lote K — Research / VAL / RP-002 | **DOCUMENTARY AUDIT COMPLETED / F-019 RESOLVED** |
+| Lote L — Tecnologia / Dados / IA | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
+| Lotes M / N | **PENDING / NOT RELEASED** |
+| Próximo movimento governado | **L — TECNOLOGIA / DADOS / IA — DOCUMENTARY AUDIT ONLY** |
 | RP-002 Operational Readiness | **HOLD** |
 | Participant 001 | **HOLD** |
 | Dry Run real | **NOT RELEASED** |

@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **3.13.0** |
+| Registro | `GKR-STATE-001` **3.14.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
@@ -21,9 +21,10 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Lotes concluídos | **A / B / C / D / E / F / G** |
 | Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 RESOLVED** |
 | Lote J — Produtos / Economia | **DOCUMENTARY AUDIT COMPLETED · F-017 RESOLVED** |
-| Lote K — Research / VAL / RP-002 | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
-| Lotes L / M / N | **PENDING / NOT RELEASED** |
-| Próximo movimento governado | **K — RESEARCH / VAL / RP-002 — DOCUMENTARY AUDIT ONLY** |
+| Lote K — Research / VAL / RP-002 | **DOCUMENTARY AUDIT COMPLETED · F-019 RESOLVED** |
+| Lote L — Tecnologia / Dados / IA | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
+| Lotes M / N | **PENDING / NOT RELEASED** |
+| Próximo movimento governado | **L — TECNOLOGIA / DADOS / IA — DOCUMENTARY AUDIT ONLY** |
 | F-007 | **RESOLVED — semantic/inventory scope** |
 | F-010 | **RESOLVED — cleanup e validação pós-cleanup concluídos** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
@@ -33,7 +34,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.12.0](roadmap.md) governa a sequência atual.
+O [Roadmap 13.13.0](roadmap.md) governa a sequência atual.
 
 ## Por que o repositório está em auditoria
 
@@ -60,8 +61,8 @@ O histórico permanece no Git.
 
 ### Estado e direção
 
-- [Registro do Estado Atual 3.13.0](project/current-state-register.md)
-- [Roadmap 13.12.0](roadmap.md)
+- [Registro do Estado Atual 3.14.0](project/current-state-register.md)
+- [Roadmap 13.13.0](roadmap.md)
 - [Auditoria Integral do GKR](project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](project/gkr-specialized-homes-audit.md)
 - [Reconciliação das Homes Especializadas](experience-architecture/public-specialized-homes-reconciliation.md)
@@ -299,6 +300,8 @@ PMF → NOT VALIDATED
 
 Simulação sintética não equivale a PMF.
 
+O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`. Esse fechamento não promove evidência sintética a evidência humana, não altera readiness operacional e não libera participante real, Dry Run ou PMF.
+
 ## Homes públicas
 
 | Home | Estado na auditoria |
@@ -335,7 +338,7 @@ PERFIS DE RASTREABILIDADE
 
 ## Próximo movimento
 
-O Lote J concluiu sua auditoria documental. `F-017` foi reconciliado no lote sem inventar taxa Pontos ↔ BRL nem autorizar implementação. O próximo movimento governado é exclusivamente o Lote K — Research / VAL / RP-002 — em auditoria documental.
+Os Lotes J e K concluíram suas auditorias documentais. `F-017` e `F-019` estão resolvidos. A decisão downstream subsequente libera exclusivamente o Lote L — Tecnologia / Dados / IA — para auditoria documental.
 
 ```text
 J — PRODUTOS / ECONOMIA
@@ -344,14 +347,19 @@ J — PRODUTOS / ECONOMIA
 → IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION NOT AUTHORIZED
 
 K — RESEARCH / VAL / RP-002
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-019 RESOLVED
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
 → OPERATIONAL READINESS = HOLD
 → PARTICIPANT 001 = HOLD
 → DRY RUN REAL = NOT RELEASED
 → PMF = NOT VALIDATED
 
-L / M / N
+L — TECNOLOGIA / DADOS / IA
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
+
+M / N
 → PENDING / NOT RELEASED
 
 UXA-102 / V5

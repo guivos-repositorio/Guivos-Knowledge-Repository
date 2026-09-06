@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.13.0** |
+| GKR-STATE-001 | **3.14.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -21,9 +21,10 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Lotes concluídos | **A / B / C / D / E / F / G** |
 | Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 RESOLVED** |
 | Lote J — Produtos / Economia | **DOCUMENTARY AUDIT COMPLETED · F-017 RESOLVED** |
-| Lote K — Research / VAL / RP-002 | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
-| Lotes L / M / N | **PENDING / NOT RELEASED** |
-| Próximo movimento governado | **K — RESEARCH / VAL / RP-002 — DOCUMENTARY AUDIT ONLY** |
+| Lote K — Research / VAL / RP-002 | **DOCUMENTARY AUDIT COMPLETED · F-019 RESOLVED** |
+| Lote L — Tecnologia / Dados / IA | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
+| Lotes M / N | **PENDING / NOT RELEASED** |
+| Próximo movimento governado | **L — TECNOLOGIA / DADOS / IA — DOCUMENTARY AUDIT ONLY** |
 | F-007 | **RESOLVED — semantic/inventory scope** |
 | F-010 | **RESOLVED — cleanup e validação pós-cleanup concluídos** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
@@ -33,7 +34,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.12.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
+O [Roadmap 13.13.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
 
 ## Regra de leitura
 
@@ -286,6 +287,8 @@ PMF → NOT VALIDATED
 
 Simulações sintéticas não são evidência de PMF.
 
+O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`. Nenhum gate operacional de Research foi promovido por esse fechamento.
+
 ## Homes públicas
 
 A auditoria substitui a antiga leitura agregada das oito Homes por avaliação individual. Os Lotes D, E e F estão documentalmente reconciliados:
@@ -348,7 +351,7 @@ Não estão comprovados ou autorizados apenas pela documentação:
 
 ## Próximo movimento governado
 
-O Lote J concluiu sua auditoria documental. O único `REAL_DRIFT` material identificado no lote, `F-017`, foi reconciliado sem inventar taxa Pontos ↔ BRL nem autorizar implementação. A decisão governada subsequente libera exclusivamente o Lote K para auditoria documental.
+Os Lotes J e K concluíram suas auditorias documentais. `F-017` e `F-019` estão resolvidos. A decisão downstream subsequente libera exclusivamente o Lote L para auditoria documental.
 
 ```text
 J — PRODUTOS / ECONOMIA
@@ -357,14 +360,19 @@ J — PRODUTOS / ECONOMIA
 → IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION NOT AUTHORIZED
 
 K — RESEARCH / VAL / RP-002
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-019 RESOLVED
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
 → OPERATIONAL READINESS = HOLD
 → PARTICIPANT 001 = HOLD
 → DRY RUN REAL = NOT RELEASED
 → PMF = NOT VALIDATED
 
-L / M / N
+L — TECNOLOGIA / DADOS / IA
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
+
+M / N
 → PENDING / NOT RELEASED
 
 O
@@ -388,8 +396,8 @@ MERGE #363
 
 ## Navegação principal durante a auditoria
 
-- [Estado Atual 3.13.0](docs/project/current-state-register.md)
-- [Roadmap 13.12.0](docs/roadmap.md)
+- [Estado Atual 3.14.0](docs/project/current-state-register.md)
+- [Roadmap 13.13.0](docs/roadmap.md)
 - [Auditoria Integral do GKR](docs/project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](docs/project/gkr-specialized-homes-audit.md)
 - [Reconciliação das Homes Especializadas](docs/experience-architecture/public-specialized-homes-reconciliation.md)
