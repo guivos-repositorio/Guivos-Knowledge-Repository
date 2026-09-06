@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **3.12.0** |
+| Registro | `GKR-STATE-001` **3.13.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
@@ -18,9 +18,12 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
 | Auditoria integral | **IN_PROGRESS** |
-| Lotes concluídos | **A / B / C / D / E / F** |
+| Lotes concluídos | **A / B / C / D / E / F / G** |
 | Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 RESOLVED** |
-| Próximo gate da auditoria | **F-016 — DESMATERIALIZAÇÃO DOCUMENTAL REPO-WIDE** |
+| Lote J — Produtos / Economia | **DOCUMENTARY AUDIT COMPLETED · F-017 RESOLVED** |
+| Lote K — Research / VAL / RP-002 | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
+| Lotes L / M / N | **PENDING / NOT RELEASED** |
+| Próximo movimento governado | **K — RESEARCH / VAL / RP-002 — DOCUMENTARY AUDIT ONLY** |
 | F-007 | **RESOLVED — semantic/inventory scope** |
 | F-010 | **RESOLVED — cleanup e validação pós-cleanup concluídos** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
@@ -57,7 +60,7 @@ O histórico permanece no Git.
 
 ### Estado e direção
 
-- [Registro do Estado Atual 3.12.0](project/current-state-register.md)
+- [Registro do Estado Atual 3.13.0](project/current-state-register.md)
 - [Roadmap 13.12.0](roadmap.md)
 - [Auditoria Integral do GKR](project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](project/gkr-specialized-homes-audit.md)
@@ -332,23 +335,37 @@ PERFIS DE RASTREABILIDADE
 
 ## Próximo movimento
 
-O próximo eixo prioritário permanece `F-016 — desmaterialização documental repo-wide`.
-
-A subfrente física foi encerrada:
+O Lote J concluiu sua auditoria documental. `F-017` foi reconciliado no lote sem inventar taxa Pontos ↔ BRL nem autorizar implementação. O próximo movimento governado é exclusivamente o Lote K — Research / VAL / RP-002 — em auditoria documental.
 
 ```text
-F-016-A
-→ RESOLVED
-→ 119/119 SVGs REMOVED
-→ PHYSICAL SVG COUNT = 0
-→ LIVE REFERENCES = 0
+J — PRODUTOS / ECONOMIA
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-017 RESOLVED
+→ IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION NOT AUTHORIZED
+
+K — RESEARCH / VAL / RP-002
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
+→ OPERATIONAL READINESS = HOLD
+→ PARTICIPANT 001 = HOLD
+→ DRY RUN REAL = NOT RELEASED
+→ PMF = NOT VALIDATED
+
+L / M / N
+→ PENDING / NOT RELEASED
+
+UXA-102 / V5
+→ NOT_STARTED
+
+DESIGN / MATERIALIZATION
+→ NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
+
+MERGE DA PR #363
+→ NOT AUTHORIZED
 ```
-
-A próxima subfrente é exclusivamente documental: classificar produtores de low-fidelity, documentos de validação/programação e demais materializações sem presumir remoção.
-
-A documentação continua responsável por conteúdo, estados, regras, comportamento, permissões, fluxos, relações, requisitos, restrições, critérios de aceite e handoff. Wireframes, mockups, protótipos, layout, composição e materialização final pertencem exclusivamente a Design.
-
-Isso **não** libera J/K/L/M/N, `UXA-102/V5`, Design em execução, Product Engineering ou merge da PR #363.
 
 ## Navegação
 

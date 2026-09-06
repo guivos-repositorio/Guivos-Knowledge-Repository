@@ -2,9 +2,9 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.14.0
+version: 1.15.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-05
+last_updated: 2026-09-06
 normative: false
 maturity: audit_in_progress
 baseline_sha: a05a54071414086456877ee4d0de59c59eefed0a
@@ -149,7 +149,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-015 | Major | Public Canon anterior ainda publicava fluxo/definição anterior de Oportunidade | `UPDATE + ENRICH` | reconciliado no Lote C |
 | F-016 | Major | o corpus continha produtores visuais legados e referências estruturais capazes de competir com Design; a auditoria separou produtores removíveis de autoridades, validadores e evidências que devem permanecer | `REMOVE_AFTER_ABSORPTION + REWRITE` | **RESOLVED — cleanup documental 26/26 concluído após absorção; referências estruturais reconciliadas; 23 caminhos de SVG removidos neutralizados; autoridades/validadores/evidências preservados; guards e prova pós-delete concluídos** |
 | F-017 | Major | autoridades normativas Business afirmavam equivalência Pontos ↔ BRL já validada/vigente sem autoridade econômica temática ou taxa documentada, enquanto autoridades GEM ativas mantinham valor monetário e conversão sem aprovação | `UPDATE + PRESERVE_PROVENANCE` | **RESOLVED NO LOTE J — REAL_DRIFT reconciliado; decisão histórica de conversa preservada como proveniência; nenhuma taxa inventada ou implementação autorizada** |
-
+| F-018 | Major | `README.md` e `docs/index.md` publicavam F-016 como próximo gate já após seu fechamento e anunciavam Roadmap 13.12.0 enquanto a autoridade real permanecia 13.11.0 | `UPDATE` | **RESOLVED NA TRANSIÇÃO J→K — entrypoints, Estado Atual, Roadmap e master audit reconciliados na mesma transação** |
 
 ### 6.1 Fechamento de F-016 — desmaterialização documental governada
 
@@ -235,6 +235,46 @@ CURRENT CANONICAL TRUTH
 ```
 
 A correção é documental e não revoga a existência histórica da decisão de conversa; apenas impede que um checkpoint não normativo funcione como substituto implícito de autoridade econômica. Uma futura equivalência pode ser estabelecida por decisão governada e autoridade econômica específica.
+
+## 6.3 F-018 — propagação de estado global — REAL_DRIFT reconciliado na transição J→K
+
+O preflight de fechamento de J identificou divergência entre entrypoints e autoridades globais:
+
+```text
+README.md / docs/index.md
+→ PUBLICAVAM NEXT GATE = F-016
+
+F-016
+→ JÁ ESTAVA RESOLVED
+
+README.md / docs/index.md
+→ ANUNCIAVAM ROADMAP 13.12.0
+
+ROADMAP REAL NO HEAD DE ENTRADA
+→ 13.11.0
+```
+
+A divergência foi classificada como `REAL_DRIFT` de propagação de estado, não como finding temático de Produtos/Economia. A remediação mínima foi incorporada à mesma transação governada que fecha J e libera K documentalmente, sem alterar maturidade operacional.
+
+```text
+F-018
+→ RESOLVED
+
+GKR-STATE-001
+→ 3.13.0
+
+ROADMAP
+→ 13.12.0
+
+README / docs/index
+→ ENTRYPOINTS RECONCILED
+
+J
+→ DOCUMENTARY AUDIT COMPLETED
+
+K
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+```
 
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
@@ -870,11 +910,11 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | G — Jornada da Pessoa | `COMPLETED` | contradição de handoff reconciliada; sem rebuild |
 | H — Organização / Coletivo | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED` | Jobs + IA propagados; cleanup F-006 concluído e validado |
 | I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED / F-007_RESOLVED / F-016-A_RESOLVED / F-016_RESOLVED` | camada SVG removida; inventário físico corrente = 0; cleanup documental F-016 concluído 26/26 com autoridades/validadores/evidências preservados |
-| J — Produtos / Economia | `RELEASED / DOCUMENTARY_AUDIT_ONLY` | auditar e reconciliar masters atuais sem fragmentação; nenhuma implementação autorizada |
-| K — Research / RP-002 | `PENDING` | método/evidência preservados; intermediários absorvidos quando possível |
-| L — Tecnologia / Dados / IA | `PENDING` | autoridades atuais e fronteiras claras |
-| M — Jurídico / Privacidade / Institucional | `PENDING` | documental e operacional separados corretamente |
-| N — GTM / presença pública | `PENDING` | autoridades atuais sem duplicação histórica |
+| J — Produtos / Economia | `COMPLETED / DOCUMENTARY_AUDIT` | F-017 resolvido; fronteiras de plano/capacidade/budget/entitlement/billing, Ads e impacto adjudicadas sem outro finding material aberto |
+| K — Research / RP-002 | `RELEASED / DOCUMENTARY_AUDIT_ONLY` | método/evidência preservados; intermediários absorvidos quando possível; nenhum gate operacional promovido |
+| L — Tecnologia / Dados / IA | `PENDING / NOT_RELEASED` | autoridades atuais e fronteiras claras |
+| M — Jurídico / Privacidade / Institucional | `PENDING / NOT_RELEASED` | documental e operacional separados corretamente |
+| N — GTM / presença pública | `PENDING / NOT_RELEASED` | autoridades atuais sem duplicação histórica |
 | O — MENU / rotas por equipe | `PENDING` | navegação final multiequipe |
 | P — Auditoria final | `PENDING` | `PASS` ou `PASS WITH MINOR FINDINGS` |
 | Q — primeira tela pós-Home Pessoa | `BLOCKED` | somente depois de P |
@@ -900,9 +940,11 @@ H/I. O/C + inventário visual                     [auditados/remediados; F-006 r
 ↓
 F-016. desmaterialização documental              [RESOLVED; F-016-A resolved; cleanup documental 26/26 + prova pós-delete concluídos]
 ↓
-J. Produtos / Economia                            [RELEASED / DOCUMENTARY AUDIT ONLY]
+J. Produtos / Economia                            [COMPLETED / DOCUMENTARY AUDIT / F-017 RESOLVED]
 ↓
-K/L/M/N. domínios especializados                 [PENDING / NOT RELEASED]
+K. Research / VAL / RP-002                       [RELEASED / DOCUMENTARY AUDIT ONLY]
+↓
+L/M/N. domínios especializados                   [PENDING / NOT RELEASED]
 ↓
 O. MENU final
 ↓
@@ -1071,15 +1113,29 @@ F-016-A
 → INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS
 → RESOLVED
 
-DOWNSTREAM RELEASE ADJUDICATION
-→ J RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ K / L / M / N PENDING / NOT RELEASED
-→ J RELEASE DOES NOT AUTHORIZE IMPLEMENTATION / OPERATION
+F-018
+→ RESOLVED
+→ GLOBAL ENTRYPOINT STATE-PROPAGATION DRIFT RECONCILED
 
 J DOCUMENTARY AUDIT
-→ IN_PROGRESS
+→ COMPLETED
 → F-017 POINTS MONETARY-AUTHORITY DRIFT RESOLVED
-→ NEXT J FAMILIES NOT YET ADJUDICATED
+→ PLAN / CAPACITY / PREPAID BUDGET / ENTITLEMENT / BILLING ADJUDICATED
+→ ADS / OPPORTUNITY BOOST ADJUDICATED
+→ IMPACT ADJUDICATED
+→ OPEN J-SPECIFIC MATERIAL FINDINGS = 0
+
+DOWNSTREAM RELEASE ADJUDICATION
+→ K RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ L / M / N PENDING / NOT RELEASED
+→ K RELEASE DOES NOT AUTHORIZE IMPLEMENTATION / OPERATION / FIELD
+
+RESEARCH OPERATIONAL STATES
+→ OPERATIONAL IMPLEMENTATION DEFERRED / NOT AUTHORIZED
+→ OPERATIONAL READINESS HOLD
+→ PARTICIPANT 001 HOLD
+→ DRY RUN REAL NOT RELEASED
+→ PMF NOT VALIDATED
 
 BASELINE FINAL
 → NOT AUTHORIZED

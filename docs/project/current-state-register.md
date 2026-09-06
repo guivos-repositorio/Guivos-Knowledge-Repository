@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.12.0
+version: 3.13.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-05
+last_updated: 2026-09-06
 normative: true
 maturity: current_truth_under_full_corpus_audit
 related:
@@ -105,11 +105,25 @@ F-016 CLOSURE
 → CURRENT AUTHORITIES / VALIDATORS / EVIDENCE PRESERVED
 → REINTRODUCTION GUARDS ACTIVE
 
+F-018
+→ RESOLVED
+→ GLOBAL ENTRYPOINT STATE-PROPAGATION DRIFT RECONCILED IN J→K TRANSITION
+
 J — PRODUTOS / ECONOMIA
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-017 RESOLVED
+→ NO OPEN J-SPECIFIC MATERIAL FINDING IDENTIFIED
 → IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION NOT AUTHORIZED
 
-K / L / M / N
+K — RESEARCH / VAL / RP-002
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
+→ OPERATIONAL READINESS = HOLD
+→ PARTICIPANT 001 = HOLD
+→ DRY RUN REAL = NOT RELEASED
+→ PMF = NOT VALIDATED
+
+L / M / N
 → PENDING / NOT RELEASED
 
 UXA-102 / V5
@@ -1270,7 +1284,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.14.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.15.0` está ativo como instrumento temporário de execução.
 
 ```text
 A / B / C / D / E / F / G
@@ -1292,10 +1306,19 @@ F-016-A
 → PHYSICAL SVG COUNT = 0
 
 J
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-017 RESOLVED
 → NO IMPLEMENTATION AUTHORIZATION
 
-K / L / M / N
+K
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
+→ OPERATIONAL READINESS = HOLD
+→ PARTICIPANT 001 = HOLD
+→ DRY RUN REAL = NOT RELEASED
+→ PMF = NOT VALIDATED
+
+L / M / N
 → PENDING / NOT RELEASED
 
 O
@@ -1308,7 +1331,7 @@ Q
 → BLOCKED
 ```
 
-O encerramento de `F-016-A` e `F-016` não libera automaticamente J–N. A próxima frente depende de decisão governada separada.
+A conclusão documental de J e a liberação governada de K não liberam automaticamente L–N nem alteram gates operacionais de Research. A próxima frente documental é K.
 
 ## 27. Regra de navegação final
 
@@ -1369,22 +1392,26 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-A adjudicação downstream libera exclusivamente o Lote J para auditoria documental. K/L/M/N permanecem não liberados; a liberação de J não autoriza implementação, operação comercial, Design, Product Engineering, PMF ou execução de Research/GTM.
+O Lote J concluiu sua auditoria documental. `F-017` está resolvido e a reconciliação de propagação `F-018` foi incorporada às superfícies globais. A decisão downstream subsequente libera exclusivamente K para auditoria documental. L/M/N permanecem não liberados; a liberação de K não autoriza implementação operacional, participante real, dry run, PMF, Design, Product Engineering ou GTM.
 
 ```text
-F-016-A
-→ RESOLVED
-→ PHYSICAL SVG COUNT = 0
+J — PRODUTOS / ECONOMIA
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-017 RESOLVED
 
-F-016
+F-018
 → RESOLVED
-→ LEGACY VISUAL PRODUCERS REMOVED 26/26
-→ POST-DELETE PROOF SUCCESS
+→ GLOBAL ENTRYPOINT STATE-PROPAGATION DRIFT RECONCILED
 
 NEXT
-→ EXECUTE J — PRODUCTS / ECONOMY DOCUMENTARY AUDIT ONLY
-→ PRESERVE CURRENT AUTHORITIES AND ECONOMIC DISTINCTIONS
-→ K / L / M / N REMAIN NOT RELEASED
+→ EXECUTE K — RESEARCH / VAL / RP-002 DOCUMENTARY AUDIT ONLY
+→ PRESERVE METHOD, EVIDENCE AND PROVENANCE
+→ DO NOT PROMOTE SYNTHETIC / SIMULATED EVIDENCE TO HUMAN EVIDENCE
+→ OPERATIONAL READINESS REMAINS HOLD
+→ PARTICIPANT 001 REMAINS HOLD
+→ DRY RUN REAL REMAINS NOT RELEASED
+→ PMF REMAINS NOT VALIDATED
+→ L / M / N REMAIN NOT RELEASED
 
 O
 → PENDING / HOLD
@@ -1403,4 +1430,4 @@ AINDA BLOQUEADOS
 → IMPLEMENTAÇÃO
 ```
 
-O fechamento de F-016 permitiu somente a adjudicação de downstream. O resultado vigente libera J para auditoria documental e mantém K/L/M/N, Design, UXA-102/V5, Product Engineering, PMF e implementação sem autorização.
+A transição J→K é estritamente documental e não altera os estados operacionais de Research nem qualquer gate posterior.

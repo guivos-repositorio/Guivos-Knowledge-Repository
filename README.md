@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.12.0** |
+| GKR-STATE-001 | **3.13.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -18,9 +18,12 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
 | Auditoria integral do corpus | **IN_PROGRESS** |
-| Lotes concluídos | **A / B / C / D / E / F** |
+| Lotes concluídos | **A / B / C / D / E / F / G** |
 | Bloco 2 — G/H/I | **G COMPLETED · H/I AUDITED/REMEDIATED · F-006 RESOLVED** |
-| Próximo gate da auditoria | **F-016 — DESMATERIALIZAÇÃO DOCUMENTAL REPO-WIDE** |
+| Lote J — Produtos / Economia | **DOCUMENTARY AUDIT COMPLETED · F-017 RESOLVED** |
+| Lote K — Research / VAL / RP-002 | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
+| Lotes L / M / N | **PENDING / NOT RELEASED** |
+| Próximo movimento governado | **K — RESEARCH / VAL / RP-002 — DOCUMENTARY AUDIT ONLY** |
 | F-007 | **RESOLVED — semantic/inventory scope** |
 | F-010 | **RESOLVED — cleanup e validação pós-cleanup concluídos** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
@@ -343,30 +346,26 @@ Não estão comprovados ou autorizados apenas pela documentação:
 - mercado ativo em Portugal;
 - filing das assinaturas sem Human Filing Authorization.
 
-## Próximo gate da auditoria
+## Próximo movimento governado
 
-`F-016-A` está formalmente `RESOLVED`. A camada física SVG não é mais uma dependência do corpus vigente.
-
-```text
-F-016-A
-→ PRE-CLEANUP STRUCTURAL ELIGIBILITY PROVEN
-→ PRE-CLEANUP SEMANTIC RECEIVER COVERAGE PROVEN
-→ HUMAN PHYSICAL CLEANUP AUTHORIZATION GRANTED
-→ PHYSICAL CLEANUP APPLIED 119/119
-→ PHYSICAL SVG COUNT = 0
-→ LIVE EMBEDS / LINKS RECONCILED
-→ HISTORICAL PROVENANCE PRESERVED
-→ SEMANTIC #832 SUCCESS
-→ MECHANICAL #1090 SUCCESS
-→ INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS
-→ RESOLVED
-```
-
-O eixo corrente continua sendo `F-016 — desmaterialização documental repo-wide`, agora restrito às famílias documentais remanescentes. Nenhum Markdown é removido por inferência: cada artefato deverá ser classificado como `KEEP_FUNCTIONAL`, `REWRITE_FUNCTIONAL`, `REMOVE_AFTER_ABSORPTION`, `REMOVE` ou `HISTORICAL_PROVENANCE_ONLY`.
+O Lote J concluiu sua auditoria documental. O único `REAL_DRIFT` material identificado no lote, `F-017`, foi reconciliado sem inventar taxa Pontos ↔ BRL nem autorizar implementação. A decisão governada subsequente libera exclusivamente o Lote K para auditoria documental.
 
 ```text
-J / K / L / M / N
-→ NOT RELEASED AUTOMATICALLY
+J — PRODUTOS / ECONOMIA
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-017 RESOLVED
+→ IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION NOT AUTHORIZED
+
+K — RESEARCH / VAL / RP-002
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
+→ OPERATIONAL READINESS = HOLD
+→ PARTICIPANT 001 = HOLD
+→ DRY RUN REAL = NOT RELEASED
+→ PMF = NOT VALIDATED
+
+L / M / N
+→ PENDING / NOT RELEASED
 
 O
 → PENDING / HOLD
@@ -389,7 +388,7 @@ MERGE #363
 
 ## Navegação principal durante a auditoria
 
-- [Estado Atual 3.12.0](docs/project/current-state-register.md)
+- [Estado Atual 3.13.0](docs/project/current-state-register.md)
 - [Roadmap 13.12.0](docs/roadmap.md)
 - [Auditoria Integral do GKR](docs/project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](docs/project/gkr-specialized-homes-audit.md)
