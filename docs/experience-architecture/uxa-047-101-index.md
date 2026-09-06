@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.12.0
+version: 3.13.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-05
+last_updated: 2026-09-06
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.12.0
+→ 3.13.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -43,13 +43,34 @@ BLOCO 2 — G / H / I
 
 F-010
 → RESOLVED / CLEANUP + POST-CLEANUP VALIDATION + INDEPENDENT REVIEW COMPLETE
-→ F-006 RESOLVED; J/K/L/M/N E DEMAIS DOWNSTREAM NÃO LIBERADOS
 
-PRÓXIMO EIXO DA AUDITORIA
-→ F-016 — DESMATERIALIZAÇÃO DOCUMENTAL REPO-WIDE
-→ ABSORVER CONTEÚDO FUNCIONAL ÚNICO
-→ REMOVER OU REESCREVER MATERIALIZAÇÕES QUE COMPETEM COM DESIGN
-→ DESIGN É A AUTORIDADE EXCLUSIVA DA MATERIALIZAÇÃO VISUAL
+F-016
+→ RESOLVED / CLEANUP DOCUMENTAL 26/26 + POST-DELETE PROOF COMPLETE
+
+F-016-A
+→ RESOLVED / PHYSICAL SVG COUNT = 0
+
+J — PRODUTOS / ECONOMIA
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-017 RESOLVED
+→ IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION NOT AUTHORIZED
+
+K — RESEARCH / VAL / RP-002
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
+→ OPERATIONAL READINESS = HOLD
+→ PARTICIPANT 001 = HOLD
+→ DRY RUN REAL = NOT RELEASED
+→ PMF = NOT VALIDATED
+
+L / M / N
+→ PENDING / NOT RELEASED
+
+PRÓXIMO MOVIMENTO GOVERNADO
+→ K — RESEARCH / VAL / RP-002 — DOCUMENTARY AUDIT ONLY
+→ PRESERVAR MÉTODO, EVIDÊNCIA E PROVENIÊNCIA
+→ NÃO PROMOVER SIMULAÇÃO SINTÉTICA A EVIDÊNCIA HUMANA
+→ NÃO LIBERAR OPERAÇÃO, PARTICIPANT 001 OU PMF
 ```
 
 A presença de uma UXA neste índice significa que o artefato existe e integra a família numerada. Ela **não** prova que todo artefato ou materialização por ela referenciado continuará no corpus após a auditoria.
@@ -185,20 +206,25 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.9.0** |
+| Registro do Estado Atual | **3.13.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
 | Auditoria integral | **IN_PROGRESS** |
-| Lotes concluídos | **A / B / C / D / E / F** |
+| Lotes concluídos | **A / B / C / D / E / F / G** |
 | Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey remains draft** |
 | Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
 | Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
 | F-010 — cleanup transversal | **RESOLVED — CLEANUP / VALIDATION / INDEPENDENT REVIEW COMPLETE** |
 | F-016 | **RESOLVED — AUDIT + ADJUDICATION + CLEANUP 26/26 + POST-DELETE PROOF COMPLETE** |
 | F-016-A — camada física SVG | **RESOLVED / PHYSICAL CLEANUP 119/119 / PHYSICAL SVG COUNT 0 / POST-DELETE PROOF V2 SUCCESS** |
-| Próximo gate governado | **DECISÃO SEPARADA DE LIBERAÇÃO DE J/K/L/M/N; nenhum bloco é liberado automaticamente** |
-| J/K/L/M/N | **NOT RELEASED AUTOMATICALLY** |
+| Lote J — Produtos / Economia | **DOCUMENTARY AUDIT COMPLETED / F-017 RESOLVED** |
+| Lote K — Research / VAL / RP-002 | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
+| Lotes L / M / N | **PENDING / NOT RELEASED** |
+| Próximo movimento governado | **K — RESEARCH / VAL / RP-002 — DOCUMENTARY AUDIT ONLY** |
+| RP-002 Operational Readiness | **HOLD** |
+| Participant 001 | **HOLD** |
+| Dry Run real | **NOT RELEASED** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
 | Maturidade visual agregada | **NOT_CERTIFIED** |
