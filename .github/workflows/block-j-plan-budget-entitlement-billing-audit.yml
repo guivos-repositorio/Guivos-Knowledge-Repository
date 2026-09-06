@@ -1,0 +1,144 @@
+name: Block J Plan Budget Entitlement Billing Audit
+
+on:
+  push:
+    branches:
+      - agent/gkr-block-j-plan-budget-entitlement-billing-audit-v1
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: Read-only plan budget entitlement billing corpus audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact canonical head
+        uses: actions/checkout@v4
+        with:
+          ref: 7be010bdf65d858bf2f3557e5bdaec772dbd29a3
+          fetch-depth: 1
+
+      - name: Assert immutable head
+        run: test "$(git rev-parse HEAD)" = "7be010bdf65d858bf2f3557e5bdaec772dbd29a3"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install audit dependencies
+        run: |
+          python -m pip install --upgrade pip >/dev/null
+          python -m pip install -r requirements.txt PyYAML >/dev/null
+
+      - name: Inventory exact J boundary claims
+        shell: python
+        run: |
+          from pathlib import Path
+          import re, yaml, subprocess
+
+          roots = [Path('docs/product-architecture'), Path('docs/economic-model'), Path('docs/experience-architecture'), Path('docs/project'), Path('docs/roadmap.md'), Path('docs/glossary.md')]
+          files=[]
+          for root in roots:
+              if root.is_dir(): files.extend(root.rglob('*.md'))
+              elif root.exists(): files.append(root)
+
+          categories = {
+            'scale_capacity': [r'\bScale\b', r'escala', r'capacidade contratada', r'contracted_capacity', r'capacidade de plano', r'limites? quantitativos?'],
+            'prepaid_budget': [r'or.amento pr.-pago', r'or.amento empresarial', r'pré-carregad', r'precarregad', r'CARREGADO', r'CONCEDIDO', r'DISPON.VEL'],
+            'entitlement': [r'\bentitlement', r'entitlements', r'direito de acesso', r'capacidades inclu.das', r'capacidades exclu.das'],
+            'billing_contracting': [r'\bbilling\b', r'billing eligibility', r'cobran.a', r'contrata..o', r'contrato futuro', r'base.*cobran.a', r'pagamento', r'settlement', r'liquida..o'],
+            'service_model': [r'Self-service', r'Assisted', r'Managed', r'modelo de implementa..o', r'implantação', r'opera..o gerenciada'],
+          }
+
+          def frontmatter(text):
+              if not text.startswith('---\n'): return {}
+              end=text.find('\n---\n',4)
+              if end<0:return {}
+              try:return yaml.safe_load(text[4:end]) or {}
+              except:return {}
+
+          print('J_BOUNDARY_AUDIT_HEAD='+subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+          for category, patterns in categories.items():
+              regs=[re.compile(p,re.I) for p in patterns]
+              hits=[]
+              for path in sorted(set(files)):
+                  text=path.read_text(encoding='utf-8')
+                  matched=[]
+                  for i,line in enumerate(text.splitlines(),1):
+                      if any(r.search(line) for r in regs): matched.append((i,line.strip()))
+                  if matched:
+                      hits.append((path,frontmatter(text),matched))
+              print(f'\n=== {category} FILES={len(hits)} ===')
+              for path,meta,matched in hits:
+                  print(f'FILE {path} | id={meta.get("id")} | status={meta.get("status")} | version={meta.get("version")} | owner={meta.get("owner")} | normative={meta.get("normative")}')
+                  for i,line in matched[:20]: print(f'  {i}: {line}')
+                  if len(matched)>20: print(f'  ... +{len(matched)-20} matches')
+
+      - name: Detect material boundary conflict candidates
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          checks = {
+            'BUSINESS_FINAL_ENTITLEMENT_CLAIMS': [
+              r'Business[^\n]{0,120}entitlements?\s+(?:finais?\s+)?(?:definid|aprovad|vigent|congelad)',
+              r'entitlements?[^\n]{0,120}Business[^\n]{0,80}(?:definid|aprovad|vigent|congelad)',
+            ],
+            'BUDGET_EQUALS_PLAN_CLAIMS': [
+              r'or.amento[^\n]{0,80}(?:é|=)[^\n]{0,40}(?:plano|assinatura)',
+              r'(?:plano|assinatura)[^\n]{0,80}(?:inclui|incorpora)[^\n]{0,80}or.amento pr.-pago',
+            ],
+            'ENTITLEMENT_EQUALS_BILLING_CLAIMS': [
+              r'entitlement[^\n]{0,80}(?:equivale|=)[^\n]{0,40}(?:billing|cobran.a)',
+              r'(?:billing|cobran.a)[^\n]{0,80}(?:autom.tic|obrigat.r)[^\n]{0,80}entitlement',
+            ],
+            'UNLIMITED_CAPACITY_CLAIMS': [
+              r'capacidade ilimitada', r'sem limite[^\n]{0,40}(?:sem contrato|independente.*contrato)'
+            ],
+            'IMPLEMENTATION_EQUALS_CONTRACTING_CLAIMS': [
+              r'(?:Self-service|Assisted|Managed)[^\n]{0,100}(?:forma de cobrança|billing|contrata..o online)',
+              r'contrata..o online[^\n]{0,100}(?:Self-service|Assisted|Managed)'
+            ],
+          }
+          for name,patterns in checks.items():
+              regs=[re.compile(p,re.I) for p in patterns]
+              hits=[]
+              for path in Path('docs').rglob('*.md'):
+                  for i,line in enumerate(path.read_text(encoding='utf-8').splitlines(),1):
+                      if any(r.search(line) for r in regs): hits.append((str(path),i,line.strip()))
+              print(f'{name}={len(hits)}')
+              for p,i,l in hits: print(f'{p}:{i}: {l}')
+
+      - name: Assert known authority clauses
+        shell: python
+        run: |
+          from pathlib import Path
+          checks = {
+            'docs/product-architecture/business.md': [
+              'Preços, limites quantitativos, SLAs e entitlements finais ainda não estão definidos por esta autoridade.',
+              'ORÇAMENTO PRÉ-PAGO DE INCENTIVO',
+              'O orçamento de incentivo **não é a assinatura do plano Business**.',
+            ],
+            'docs/economic-model/gem-004-a1-commercial-plans-pricing-catalog.md': [
+              'Guivos Business permanece Produto Especializado separado',
+              'sem preços ou entitlements criados por este catálogo',
+            ],
+            'docs/economic-model/gem-003-revenue-event-model.md': [
+              'entitlement não equivale a cobrança',
+              'cobrança não equivale a pagamento',
+            ],
+          }
+          for path,needles in checks.items():
+              text=Path(path).read_text(encoding='utf-8')
+              for needle in needles:
+                  if needle not in text: raise SystemExit(f'MISSING_AUTHORITY_CLAUSE {path}: {needle}')
+                  print(f'AUTHORITY_CLAUSE_OK {path}: {needle}')
+
+      - name: Canonical validators read-only
+        run: |
+          python scripts/validate_semantic_state.py
+          python scripts/validate_gkr.py
+          python scripts/validate_legacy_nomenclature.py
+          mkdocs build --strict --site-dir /tmp/gkr-site
