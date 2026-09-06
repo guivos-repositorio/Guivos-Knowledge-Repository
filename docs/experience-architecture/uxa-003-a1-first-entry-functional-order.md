@@ -10,18 +10,18 @@ depends_on:
   - UXA-003
   - UXA-020
   - UXA-021
-  - UXA-022
   - UXA-023
 related:
   - UXA-002
   - UXA-004
-  - UXA-005
-  - UXA-006
   - UXA-010
 normative: false
 ---
 
 # Correção da Ordem Funcional da Primeira Entrada Pessoal
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
@@ -84,7 +84,6 @@ O wireframe da Home já foi elaborado e está registrado como:
 
 Arquivo gráfico vetorial:
 
-`docs/assets/wireframes/uxa-022-public-home-desktop.svg`
 
 A referência atual representa uma página web para computador com dimensão estrutural de 1.440 por 2.200 pixels.
 

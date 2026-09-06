@@ -8,7 +8,6 @@ last_updated: 2026-07-27
 depends_on:
   - UXA-030
 related:
-  - UXA-024
   - UXA-025
   - UXA-028
   - UXA-029
@@ -64,7 +63,7 @@ A referência demonstra:
 ## 5. Artefatos criados ou atualizados
 
 - `UXA-030 — Wireframe Alternativo do Mapa de Oportunidades — Estado sem Resultados`;
-- `docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`;
+- `uxa-030-opportunity-map-no-results-mobile.svg [historical SVG; physical file removed in F-016-A]`;
 - `GKR-CANON-MATRIX-UXA-030`;
 - este histórico 1.53.0;
 - estado global, roadmap, painel, marcos, programa de wireframes, menu, README e páginas iniciais atualizados.

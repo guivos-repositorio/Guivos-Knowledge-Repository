@@ -16,30 +16,22 @@ related:
   - GKR-UX-D5-C4B-001
   - UXA-002
   - UXA-004
-  - UXA-006
-  - UXA-007
   - UXA-010
   - UXA-012
   - UXA-020
   - UXA-023
-  - UXA-024
   - UXA-025
   - UXA-028
   - UXA-029
-  - UXA-036
   - UXA-037
   - UXA-056
   - UXA-058
   - UXA-059
-  - UXA-060
   - UXA-067
   - UXA-069
   - UXA-090
-  - UXA-091
   - UXA-092
-  - UXA-093
   - UXA-094
-  - UXA-095
   - UXA-096
   - UXA-097
   - UXA-098
@@ -53,6 +45,9 @@ normative: false
 ---
 
 # Jornada Integrada da Pessoa
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Início protegido e compreensão inicial
 
@@ -176,7 +171,6 @@ Domínio de Evolução
 
 Área da jornada permanece distinta de dimensão estrutural do Contexto Vivo. Prioridade declarada não representa valor humano, obrigação ou urgência automática.
 
-![Meus Objetivos — D5-C3](../assets/wireframes/d5-c2-person-objectives-mobile.svg)
 
 ### 3.2 PER-011 — Meus Próximos Passos
 
@@ -193,7 +187,6 @@ domínio relacionado
 
 Uma sugestão da Guivos não constitui decisão da Pessoa. Períodos sem Próximos Passos ativos são legítimos.
 
-![Meus Próximos Passos — D5-C3](../assets/wireframes/d5-c2-person-next-steps-mobile.svg)
 
 ### 3.3 PER-012 — Minha Evolução
 
@@ -211,7 +204,6 @@ Domínio de Evolução
 
 `Minha Evolução` não é roda da vida obrigatória, ranking, percentual global da Pessoa, diagnóstico ou avaliação espiritual. Inferência permanece visualmente distinta de fato confirmado.
 
-![Minha Evolução — D5-C3](../assets/wireframes/d5-c2-person-evolution-mobile.svg)
 
 ### 3.4 Papel de Hoje
 
@@ -285,7 +277,6 @@ Regras integradas:
 
 Referência visual revalidada pela UXA-101:
 
-![Detalhe e revisão de saída](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
 
 ## 5. Planos como etapa transversal canônica
 

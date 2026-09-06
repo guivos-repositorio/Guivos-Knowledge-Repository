@@ -7,7 +7,6 @@ owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
-  - UXA-024
   - UXA-025
   - UXA-026
   - UXA-027

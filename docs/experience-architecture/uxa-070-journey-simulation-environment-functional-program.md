@@ -2,9 +2,9 @@
 id: UXA-070
 title: Programa Funcional do Ambiente de Simulação das Jornadas
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-04
+last_updated: 2026-08-30
 parent: UXA-000
 depends_on:
   - PAS-001
@@ -12,40 +12,33 @@ depends_on:
   - UXA-003
   - UXA-003-A1
   - UXA-004
-  - UXA-005
   - UXA-009
   - UXA-011
   - UXA-011-A1
   - UXA-014
-  - UXA-015
-  - UXA-016
-  - UXA-017
-  - UXA-018
   - UXA-019
   - UXA-020
   - UXA-023
-  - UXA-034
   - UXA-035
-  - UXA-036
   - UXA-037
   - UXA-038
   - UXA-050
-  - UXA-055
   - UXA-056
   - UXA-057
   - UXA-058
   - UXA-059
-  - UXA-060
   - UXA-061
-  - UXA-062
   - UXA-063
-  - UXA-064
   - UXA-065
-  - UXA-066
   - UXA-067
-  - UXA-068
   - UXA-069
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
 related:
+  - UXA-015
+  - UXA-016
+  - UXA-017
+  - UXA-018
   - UXA-071
   - M7.72
 normative: false
@@ -62,6 +55,26 @@ O ambiente deverá permitir responder:
 > **Quem participa desta jornada, em qual papel, por quais superfícies passa, qual autoridade governa cada decisão, quais transições existem, qual é a maturidade de cada referência e onde ainda há lacunas?**
 
 A UXA-070 estabelece estrutura, taxonomias, critérios de reutilização e regras de governança. Ela não cria aplicativo, protótipo navegável, motor de simulação, componentes técnicos ou novas telas do produto.
+
+### Regra de leitura após a reconciliação de 2026-08-30
+
+`UXA-015`, `UXA-016`, `UXA-017` e `UXA-018` estão `superseded` e permanecem neste documento somente como **proveniência histórica** quando mencionadas no corpo. Elas não são dependências nem autoridades funcionais vigentes da UXA-070.
+
+O modelo funcional, as taxonomias e as regras de governança deste programa continuam úteis. Entretanto, afirmações temporais deste documento sobre quantidades, materialização, validação, lacunas ou “próximo ato” registram o **snapshot do estágio em que a UXA-070 foi criada** e não devem ser interpretadas como maturidade atual do corpus. Para estado vigente de Organização/Coletivo prevalecem `UXA-014`, `UXA-019`, `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001` e os registries/autoridades atuais.
+
+```text
+JOBS + AUTHENTICATED IA
+→ DEFINED DOCUMENTALLY
+→ PRE-SURFACE-MAP
+
+FINAL SURFACE MAP
+→ PENDING
+
+MAIN AUTHENTICATED WIREFRAMES
+→ PENDING
+```
+
+Nenhuma leitura da UXA-070 reativa baselines `superseded` ou autoriza surface map, wireframe, UI, protótipo ou implementação.
 
 ## 2. Decisão estrutural
 
@@ -132,6 +145,8 @@ A troca de perspectiva deverá modificar apenas o que contratos e autoridades pe
 
 ## 6. Famílias de jornadas inventariadas
 
+As declarações de materialização/validação desta seção são preservadas como snapshot histórico do estágio da UXA-070. O estado vigente deve ser lido nos registries e pacotes de validação atuais.
+
 ### 6.1 Jornada da Pessoa — início, compreensão e continuidade
 
 ```text
@@ -148,13 +163,13 @@ Home pública
 → Tela Hoje e continuidades autorizadas
 ```
 
-Autoridades principais: UXA-020, UXA-023, UXA-034 a UXA-037 e UXA-068 a UXA-069.
+Autoridades principais no estágio registrado: UXA-020, UXA-023, UXA-034 a UXA-037 e UXA-068 a UXA-069.
 
-A família diretamente relacionada ao início protegido possui 17 estados materializados e 17 validados.
+No snapshot original da UXA-070, a família diretamente relacionada ao início protegido registrava 17 estados materializados e 17 validados. Essa contagem não é promovida a maturidade agregada vigente.
 
 ### 6.2 Jornada da Pessoa em Coletivos
 
-A espinha dorsal P0A é:
+A espinha dorsal P0A registrada no programa era:
 
 ```text
 Explorar Coletivos
@@ -167,7 +182,7 @@ Explorar Coletivos
 → Início do Participante
 ```
 
-As cinco primeiras referências estão materializadas e validadas. `Meus Coletivos`, Central de Atualizações e a reformulação do Início do Participante permanecem não iniciados no programa atual.
+No snapshot original, as cinco primeiras referências eram tratadas como materializadas e validadas, enquanto `Meus Coletivos`, Central de Atualizações e a reformulação do Início do Participante eram registradas como não iniciadas. Esses estados são históricos e não substituem a maturidade atual publicada pelas autoridades posteriores.
 
 ### 6.3 Jornada do responsável por Coletivo
 
@@ -184,7 +199,7 @@ representação e autoridade
 → evidências e responsabilidades
 ```
 
-A Visão Geral do Responsável prevista na UXA-059 permanece não iniciada. O ambiente deverá mostrar essa lacuna sem criar uma tela substituta.
+No estágio da UXA-070, a Visão Geral do Responsável prevista na UXA-059 era registrada como não iniciada. Esse estado é **proveniência histórica**; a maturidade posterior deve ser lida nas UXA e registries vigentes e não pode ser regredida por este programa.
 
 ### 6.4 Jornada da Organização
 
@@ -202,7 +217,7 @@ identidade, unidade e autoridade
 → decisões e Próximos Passos justificados
 ```
 
-A Visão Geral da Organização possui referência materializada e validada pelas UXA-015 e UXA-017. Outras superfícies institucionais serão apresentadas conforme artefatos existentes, sem declarar cobertura total quando ela não estiver demonstrada.
+No estágio original da UXA-070, `UXA-015` e `UXA-017` eram usadas como referências materializadas/validadas da Visão Geral da Organização. Ambas estão hoje `superseded`; essa afirmação é preservada somente como **proveniência histórica** e não constitui baseline vigente nem dependência funcional. A experiência autenticada atual é governada pelas autoridades vigentes de Organização/Coletivo; Jobs + IA autenticada estão definidos em `pre-surface-map`, enquanto mapa final de superfícies e wireframes principais autenticados permanecem pendentes.
 
 ### 6.5 Relação entre Organização e Coletivo
 
@@ -231,7 +246,7 @@ Ele será uma camada comercial identificada que poderá aparecer somente onde se
 - publicidade identificada;
 - ausência de compra de reputação ou legitimidade;
 - ausência de autoridade sobre Pessoas ou Coletivos;
-- 46 artefatos materializados, dos quais 36 validados e 10 pendentes.
+- no snapshot original do programa, 46 artefatos materializados, dos quais 36 validados e 10 pendentes; essa contagem é histórica e não representa maturidade agregada vigente.
 
 ## 7. Unidade funcional do ambiente
 
@@ -512,7 +527,9 @@ Uma atualização deverá registrar:
 
 Correções no ambiente não poderão alterar silenciosamente os documentos de origem.
 
-## 20. Cobertura vigente que o programa deverá preservar
+## 20. Cobertura registrada no estágio da UXA-070
+
+No snapshot original do programa, foram registradas as seguintes contagens:
 
 | Família | Materializados | Validados | Pendentes conhecidos |
 |---|---:|---:|---:|
@@ -520,9 +537,9 @@ Correções no ambiente não poderão alterar silenciosamente os documentos de o
 | Coletivos | 22 | 22 | 0 entre os materializados |
 | Opportunity Boost | 46 | 36 | 10 |
 
-As contagens possuem escopos diferentes e não serão somadas como se representassem um único inventário global.
+As contagens possuem escopos diferentes, não serão somadas como um único inventário global e **não representam a maturidade agregada vigente**. O estado atual deve ser obtido dos registries, catálogos e pacotes de validação vigentes.
 
-A Organização possui referências anteriores materializadas e validadas, incluindo sua Visão Geral, mas a UXA-070 não declara cobertura visual institucional completa sem uma matriz específica futura.
+No estágio histórico, a Organização possuía referências anteriores materializadas e validadas, incluindo sua Visão Geral. `UXA-015/017` estão hoje `superseded` e não constituem baseline funcional atual. A UXA-070 não declara cobertura visual institucional completa.
 
 ## 21. Critérios de saída do pacote
 
@@ -558,13 +575,15 @@ A UXA-070 não:
 - resolve lacunas de `Meus Coletivos`;
 - materializa Central de Atualizações, Início do Participante ou Visão Geral do Responsável;
 - altera contratos de Organização, Coletivo ou Opportunity Boost;
-- inicia UXA-071;
-- inicia Engenharia de Produto.
+- inicia UXA-071 por força deste documento;
+- inicia Engenharia de Produto;
+- reativa `UXA-015..018`;
+- autoriza surface map, wireframe principal autenticado, UI, protótipo ou implementação.
 
-## 23. Próxima transição recomendada
+## 23. Próxima transição registrada no estágio histórico
+
+No estágio original, a recomendação era:
 
 **UXA-071 — Materialização Documental do Mapa Integrado de Jornadas e Transições.**
 
-Esse pacote futuro poderá criar a primeira referência estática e inspecionável do ambiente, reutilizando artefatos por referência e demonstrando os cenários mínimos da UXA-070.
-
-A UXA-071 dependerá de autorização separada e ainda não corresponderá a protótipo navegável ou implementação técnica.
+Essa recomendação é **proveniência histórica**, não autorização nem próximo gate vigente. Qualquer continuidade atual deve seguir o Estado Atual/Roadmap e as autoridades vigentes após a auditoria integral.

@@ -2,24 +2,17 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.32.0
+version: 0.35.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-26
+last_updated: 2026-09-05
 related:
-  - UXA-005
   - UXA-070
   - UXA-080
-  - UXA-085
-  - UXA-086
   - UXA-087
-  - UXA-088
   - UXA-089
   - UXA-090
-  - UXA-091
   - UXA-092
-  - UXA-093
   - UXA-094
-  - UXA-095
   - UXA-096
   - UXA-097
   - UXA-098
@@ -33,9 +26,7 @@ related:
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C2-001
   - GKR-UX-D5-C3-001
-  - GKR-JOURNEY-SCREEN-GALLERY-001
-  - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
-  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
+  - GKR-UX-D5-C4B-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
@@ -45,6 +36,9 @@ normative: false
 ---
 
 # Catálogo Integrado de Telas
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Regra de leitura
 
@@ -65,13 +59,13 @@ CONTAGEM FÍSICA DE SVGs
 ≠ CONTAGEM DE WIREFRAMES VALIDADOS
 ```
 
-`UXA-015..018` e seus SVGs associados permanecem fisicamente no repositório para rastreabilidade, mas são históricos `superseded` e não podem sustentar maturidade atual da experiência autenticada principal de Organização ou Coletivo.
+`UXA-015..018` e seus dois ativos visuais associados foram removidos do corpus corrente por `F-006`; sua proveniência permanece no histórico Git e não sustenta autoridade visual vigente.
 
-A D5-C1 contratou `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução`. A D5-C2 criou um SVG low-fidelity para cada uma dessas responsabilidades sem criar novo ID granular e sem promover `TRN-008..013`. A D5-C3 reforma in-place e valida funcionalmente os três estados-base, mantendo as transições contratadas.
+A D5-C1 contratou `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução`. A D5-C2 criou um SVG low-fidelity para cada uma dessas responsabilidades sem criar novo ID granular. A D5-C3 reformou in-place e validou funcionalmente os três estados-base. A D5-C4B promoveu individualmente `TRN-008..013` para **integralmente validadas no limite documental**, sem promover implementação técnica ou a Jornada da Pessoa além de `draft`.
 
-## 2. Inventário agregado por família
+## 2. Inventário agregado por família — snapshot histórico pré-F-016-A
 
-A coluna `SVGs` abaixo é **inventário físico**. Ela não é, por si só, indicador de maturidade vigente.
+As contagens `SVGs` abaixo pertencem ao snapshot histórico anterior à desmaterialização física. O inventário físico corrente é **0** e nenhuma contagem histórica constitui autoridade visual vigente.
 
 | Participante ou camada | Família | SVGs físicos | Estado de validação que pode ser afirmado | Continuidade integrada | Lacuna associada |
 |---|---|---:|---|---|---|
@@ -79,10 +73,10 @@ A coluna `SVGs` abaixo é **inventário físico**. Ela não é, por si só, indi
 | Pessoa | início protegido | 4 | 4 validados | parcial | reconciliação ponta a ponta |
 | Pessoa | expressão guiada | 8 | 8 validados | parcial | integração com inventário |
 | Pessoa | compreensão inicial | 5 | 5 validados | **TRN-007 integralmente validada** | handoffs anteriores ainda parciais |
-| Pessoa | Tela Hoje | 2 | 2 validados | primeira entrada validada; `TRN-008/010/012` contratadas | estados alternativos e handoffs especializados ainda não validados ponta a ponta |
-| Pessoa | Meus Objetivos | **1** | **validado localmente pela D5-C3** | `TRN-008/009` contratadas | validação integrada do handoff |
-| Pessoa | Meus Próximos Passos | **1** | **validado localmente pela D5-C3** | `TRN-010/011` contratadas | validação integrada do handoff |
-| Pessoa | Minha Evolução | **1** | **validado localmente pela D5-C3** | `TRN-012/013` contratadas | estados sensíveis adicionais quando aplicáveis; validação integrada do handoff |
+| Pessoa | Tela Hoje | 2 | 2 validados | primeira entrada validada; `TRN-008/010/012` integralmente validadas documentalmente | estados alternativos preservam maturidade própria; implementação não comprovada |
+| Pessoa | Meus Objetivos | **1** | **validado localmente pela D5-C3** | `TRN-008/009` **integralmente validadas documentalmente pela D5-C4B** | implementação não comprovada |
+| Pessoa | Meus Próximos Passos | **1** | **validado localmente pela D5-C3** | `TRN-010/011` **integralmente validadas documentalmente pela D5-C4B** | implementação não comprovada |
+| Pessoa | Minha Evolução | **1** | **validado localmente pela D5-C3** | `TRN-012/013` **integralmente validadas documentalmente pela D5-C4B** | estados sensíveis adicionais quando aplicáveis; implementação não comprovada |
 | Pessoa | oportunidades orgânicas | 7 | **7 validados; Detalhe revalidado pela UXA-101** | publicação/descoberta, Mapa/Lista/Detalhe e saída até BND-001 integrados | processo externo posterior separado |
 | Pessoa | Conta/Configurações | **0** | sem SVG | TRN-406/407 contratadas | materialização própria de PER-009 somente se necessária |
 | Pessoa | Planos, comparação e cobrança | **3** | **3 validados no pacote próprio** | TRN-401 a 405 locais; origem voluntária contratada | gateway/proration e materialização de PER-009 |
@@ -93,25 +87,25 @@ A coluna `SVGs` abaixo é **inventário físico**. Ela não é, por si só, indi
 | Pessoa em Coletivos | Meus Coletivos | 1 | validado | TRN-108 e TRN-110 integralmente validadas | P0B separado |
 | Pessoa em Coletivos | Central de Atualizações | 1 | validado | TRN-110 e TRN-111 integralmente validadas | P0B/P1 separados |
 | Pessoa em Coletivos | Início do Participante | 1 | validado por UXA-095/096 no recorte da Pessoa participante; não deriva de UXA-016/018 | TRN-111 integralmente validada | P0B e áreas internas separadas |
-| Coletivo | referência inicial histórica | 1 | `UXA-016/018` superseded; artefato físico não é wireframe principal vigente | não utilizável como baseline atual | **wireframe principal autenticado pendente** |
-| Coletivo | Visão Geral do Responsável | 1 | UXA-086/087 preservam evidência local do pacote administrativo; **não constituem baseline final da UX principal** | TRN-112 e contratos de Planos preservam maturidade própria | arquitetura principal autenticada pendente |
+| Coletivo | referência inicial histórica | 0 | `UXA-016/018` e ativo visual removidos do corpus corrente | proveniência somente no histórico Git | materialização visual pertence exclusivamente a Design |
+| Coletivo | Visão Geral do Responsável | 1 | UXA-086/087 preservam evidência local do pacote administrativo; **não constituem baseline final da UX principal** | TRN-112 e contratos de Planos preservam maturidade própria | mapa de superfícies e wireframe principal autenticado pendentes |
 | Coletivo | gestão de solicitações | 7 | 7 validados no fluxo especializado | handoffs aplicáveis integralmente validados | operação interna posterior |
 | Coletivo | Planos, comparação e cobrança | **3** | **3 validados no fluxo especializado** | contratos de origem/retorno preservam maturidade própria; TRN-411 a 415 locais; TRN-416 parcial | contratação/dimensionamento assistido e cobrança real; origem principal final pendente |
-| Organização | visão geral e cadastro | 2 | **ORG-001 histórico/superseded como wireframe principal; cadastro preserva validação própria por UXA-008/013** | publicação–descoberta preservada; contratos de Planos têm maturidade própria | **wireframe principal autenticado e matriz institucional completa pendentes** |
+| Organização | visão geral e cadastro | 1 | **materialização histórica de ORG-001 removida; cadastro preserva validação funcional própria por UXA-008/013** | publicação–descoberta preservada; contratos de Planos têm maturidade própria | documentação funcional preservada; materialização visual pertence exclusivamente a Design |
 | Organização | Planos, comparação e cobrança | **3** | **3 validados no fluxo especializado** | contratos de origem/retorno preservam maturidade própria; TRN-421 a 425 locais; TRN-426 parcial | contratação/dimensionamento assistido e cobrança real; origem principal final pendente |
 | camada comercial | Opportunity Boost | 46 | **46 validados no escopo próprio** | parcial | TRN-304/305/306 e integrações específicas |
 | fronteira documental | destinos externos/comerciais | 0 | não aplicável | BND-001 examinada; BND-002 parcial | processo externo posterior; contratação/dimensionamento assistido |
-| **Total físico do catálogo** |  | **121** | **maturidade agregada não pode ser inferida; recomputação governada pendente** |  |  |
+| **Total físico do catálogo** |  | **0** | **camada SVG removida por F-016-A; maturidade funcional preservada por autoridade textual** |  |  |
 
 ## 3. Instrumentos granulares vigentes
 
 | Registro | Quantidade física | Estado vigente |
 |---|---:|---|
 | superfícies/estados/responsabilidades/fronteiras | **57** | inventário granular; maturidade por item |
-| transições documentais | **66** | maturidade por transição |
-| catálogo físico | **121 SVGs** | `active` 0.32.0; inclui artefatos históricos superseded |
-| matriz de rastreabilidade | **121 associações físicas / 34 perfis** | associação ≠ autoridade vigente |
-| galeria visual | **121 SVGs físicos** | resumo global `121 validados / 0 pendentes` superseded como claim de maturidade |
+| transições documentais | **66** | maturidade por transição; `TRN-008..013` integrais |
+| catálogo físico | **0 SVGs** | `active` 0.34.0; camada física removida por F-016-A |
+| perfis históricos de rastreabilidade | **34 perfis históricos** | instrumento de matriz removido; proveniência recuperável no histórico Git |
+| galeria visual histórica | **0 SVGs físicos** | documentos de galeria removidos do corpus corrente; proveniência preservada no histórico Git |
 
 ## 4. Cobertura visual física
 
@@ -122,9 +116,9 @@ A coluna `SVGs` abaixo é **inventário físico**. Ela não é, por si só, indi
 | fronteiras intencionalmente sem tela | **2** |
 | **Total de IDs** | **57** |
 
-Essas contagens descrevem cobertura física/associativa do snapshot e não resolvem a vigência de cada artefato após supersessões posteriores.
+Essas contagens de IDs descrevem o snapshot estrutural/histórico. A camada física SVG corrente é zero após F-016-A.
 
-## 5. Efeito acumulado D5-C2 → D5-C3 no snapshot histórico
+## 5. Efeito acumulado D5-C2 → D5-C4B no snapshot histórico e na continuidade
 
 D5-C2 alterou o inventário físico:
 
@@ -139,10 +133,12 @@ No momento de D5-C3, o registro declarou:
 - validações funcionais de SVG naquele snapshot: **118 → 121**;
 - pendências específicas daquele snapshot: **3 → 0**;
 - `PER-010`, `PER-011` e `PER-012`: promovidos para **validados localmente**;
-- `TRN-008..013`: permaneceram contratadas;
+- `TRN-008..013`: permaneceram contratadas naquele checkpoint;
 - `PER-009`: permaneceu responsabilidade sem SVG dedicado.
 
-A reconciliação pós-PR #313/#314 **não reescreve a história desse snapshot**, mas supersede seu uso como resumo da maturidade visual atual do repositório, porque `UXA-015..018` deixaram de possuir autoridade vigente.
+Depois, D5-C4B promoveu `TRN-008..013` individualmente para **integralmente validadas no limite documental**. Essa promoção não altera as contagens físicas históricas nem cria implementação.
+
+A reconciliação pós-PR #313/#314 **não reescreve a história desses snapshots**, mas supersede seu uso como resumo da maturidade visual atual do repositório, porque `UXA-015..018` deixaram de possuir autoridade vigente.
 
 ## 6. Separações obrigatórias
 
@@ -152,8 +148,8 @@ A reconciliação pós-PR #313/#314 **não reescreve a história desse snapshot*
 - `PER-011` governa movimentos contextuais, não uma lista coercitiva de tarefas;
 - `PER-012` governa trajetórias de evolução, não roda da vida, ranking ou nota humana;
 - em Minha Evolução, Domínio de Evolução ≠ dimensão estrutural do Contexto Vivo ≠ aspecto descritivo da mudança;
-- validação local de `PER-010..012` ≠ validação integrada de `TRN-008..013`;
-- presença de retorno visual para Hoje ≠ validação dos handoffs;
+- validação local de `PER-010..012` e validação integrada de `TRN-008..013` são maturidades distintas, ambas atualmente documentadas por suas autoridades próprias;
+- presença de retorno visual para Hoje, isoladamente, não teria validado os handoffs; a promoção vigente deriva de D5-C4B;
 - D5-C1/C2/C3 não criam handoff direto entre `PER-010`, `PER-011` e `PER-012`;
 - revisão de saída é estado do mesmo `PER-203`, não nova tela canônica;
 - `BND-001` representa a transferência de autoridade, não o processo do terceiro;
@@ -174,15 +170,15 @@ A reconciliação pós-PR #313/#314 **não reescreve a história desse snapshot*
 
 ## 7. Estado do catálogo
 
-- catálogo físico: `active` 0.32.0;
-- inventário físico preservado: **121 SVGs**;
-- matriz física: **121 associações / 34 perfis**;
+- catálogo físico: `active` 0.35.0;
+- inventário físico corrente após F-016-A: **0 SVGs**;
+- antiga matriz visual: removida do corpus corrente; 34 perfis históricos permanecem recuperáveis no histórico Git;
 - resumo `121 SVGs / 121 validados / 0 pendentes`: **superseded como claim de maturidade vigente**;
-- wireframe principal autenticado da Organização: **pendente**;
-- wireframe principal autenticado do Coletivo: **pendente**;
+- materialização visual da Organização: **autoridade exclusiva de Design; não é requisito documental**;
+- materialização visual do Coletivo: **autoridade exclusiva de Design; não é requisito documental**;
 - fluxos especializados preservam sua maturidade própria quando sustentados por autoridade independente;
 - `PER-010..012`: permanecem validados localmente pela D5-C3;
-- `TRN-008..013`: preservam seu estado documental próprio;
+- `TRN-008..013`: **integralmente validadas documentalmente pela D5-C4B**;
 - jornadas da Pessoa, Coletivo e Organização: `draft`;
 - protótipo e Engenharia de Produto: não iniciados.
 

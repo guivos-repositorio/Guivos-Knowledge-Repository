@@ -7,11 +7,9 @@ owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: UXA-000
 depends_on:
-  - UXA-006
   - UXA-010
   - UXA-011-A1
   - UXA-023
-  - UXA-036
   - UXA-037
   - UXA-096
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -27,6 +25,9 @@ normative: false
 ---
 
 # UXA-097 — Validação Integrada da Continuidade Compreensão Inicial → Tela Hoje
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
@@ -59,7 +60,6 @@ A UXA-097 realiza somente duas alterações visuais.
 
 O SVG existente:
 
-`docs/assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg`
 
 passa a explicitar:
 
@@ -71,7 +71,6 @@ A rota `Excluir compreensão e continuar explorando` permanece fora de `TRN-007`
 
 É criado um novo estado visual dentro do ID existente `PER-008`:
 
-`docs/assets/wireframes/uxa-097-first-today-after-initial-understanding-mobile.svg`
 
 A variante representa a primeira entrada depois das escolhas explícitas da pessoa. Ela não substitui o SVG recorrente `uxa-006-hoje-mobile.svg`.
 

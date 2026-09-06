@@ -2,9 +2,9 @@
 id: GKR-UX-D5-C3-001
 title: Validação Funcional e Reformulação Controlada de Direção, Movimento e Evolução — D5-C3
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-30
 parent: UXA-000
 depends_on:
   - GKR-UX-D5-C1-001
@@ -24,6 +24,8 @@ related:
   - GKR-TRN-011
   - GKR-TRN-012
   - GKR-TRN-013
+  - GKR-FULL-CORPUS-AUDIT-001
+  - GKR-JOURNEY-SCREEN-CATALOG-001
 normative: false
 ---
 
@@ -40,6 +42,8 @@ Escopo:
 - `PER-012 — Minha Evolução`.
 
 A frente não cria nova superfície, novo SVG, novo perfil, nova transição ou novo marco funcional.
+
+A atualização de 2026-08-30 preserva integralmente a validação local de `PER-010..012` e qualifica apenas as contagens agregadas do inventário como **snapshot histórico da D5-C3**, sem convertê-las em maturidade visual vigente do corpus atual.
 
 ## 2. Autoridades confrontadas
 
@@ -248,7 +252,7 @@ Na interface pública:
 
 A D5-C3 não valida integração entre Hoje e as três superfícies.
 
-Permanecem `contratadas`:
+Permanecem `contratadas` no fechamento da D5-C3:
 
 ```text
 TRN-008 — PER-008 → PER-010
@@ -263,23 +267,25 @@ O rótulo visual `‹ Hoje` demonstra somente affordance local de retorno. Ele n
 
 Nenhum handoff direto entre `PER-010`, `PER-011` e `PER-012` é criado.
 
+Autoridades posteriores, especialmente D5-C4B, governam a maturidade atual dessas transições.
+
 ## 10. Maturidade resultante
 
-Após D5-C3:
+No fechamento da D5-C3:
 
 - `PER-010`: SVG materializado e funcionalmente validado localmente;
 - `PER-011`: SVG materializado e funcionalmente validado localmente;
 - `PER-012`: SVG materializado e funcionalmente validado localmente;
-- `TRN-008..013`: continuam contratadas;
-- Jornada da Pessoa: continua `draft`.
+- `TRN-008..013`: continuavam contratadas naquele estágio;
+- Jornada da Pessoa: continuava `draft`.
 
 Validação local de superfície não equivale a continuidade integrada.
 
-## 11. Efeito no inventário
+## 11. Efeito no inventário — snapshot histórico
 
-A D5-C3 não altera inventário físico ou granular:
+A D5-C3 não alterou o inventário físico ou granular então registrado:
 
-- 121 SVGs canônicos;
+- 121 SVGs físicos no snapshot;
 - 121 associações;
 - 34 perfis de rastreabilidade;
 - 57 superfícies/estados/fronteiras;
@@ -288,18 +294,27 @@ A D5-C3 não altera inventário físico ou granular:
 - 10 responsabilidades sem SVG dedicado;
 - 2 fronteiras sem tela.
 
-Ela altera somente a maturidade de validação visual:
+Naquele snapshot, a D5-C3 registrou a seguinte mudança local de maturidade:
 
 ```text
-SVGs funcionalmente validados: 118 → 121
-SVGs pendentes de validação específica: 3 → 0
+SVGs funcionalmente validados no snapshot: 118 → 121
+SVGs pendentes de validação específica no snapshot: 3 → 0
 ```
+
+Após a reconciliação pós-PR #313/#314 e a Auditoria Integral, essa contagem **não representa a maturidade visual vigente do corpus**. Artefatos históricos `superseded` permanecem fisicamente no inventário e a maturidade atual deve ser lida item a item nos instrumentos vigentes.
+
+```text
+SNAPSHOT D5-C3 121 / 121 / 0
+≠ CONTAGEM GLOBAL DE MATURIDADE VIGENTE
+```
+
+A conclusão vigente desta frente permanece restrita à validação local de `PER-010`, `PER-011` e `PER-012`.
 
 ## 12. O que a D5-C3 não autoriza
 
 A frente não autoriza:
 
-- promoção de `TRN-008..013`;
+- promoção automática de `TRN-008..013`;
 - teste de usabilidade ou pesquisa com participantes;
 - protótipo high-fidelity;
 - implementação frontend/backend;
@@ -313,7 +328,7 @@ A frente não autoriza:
 
 ## 13. Gate posterior
 
-A próxima necessidade lógica, caso autorizada separadamente, é auditar e validar a continuidade integrada:
+A próxima necessidade lógica no fechamento original da D5-C3, caso autorizada separadamente, era auditar e validar a continuidade integrada:
 
 ```text
 Hoje ↔ Meus Objetivos
@@ -321,4 +336,4 @@ Hoje ↔ Meus Próximos Passos
 Hoje ↔ Minha Evolução
 ```
 
-Essa eventual frente deverá tratar `TRN-008..013` como objeto próprio de validação e não pode ser presumida pela aprovação local dos três SVGs.
+Essa frente foi posteriormente tratada por D5-C4A/D5-C4B. Nenhuma dessas evoluções reativa a antiga claim agregada `121/121/0` como maturidade vigente.

@@ -8,7 +8,6 @@ last_updated: 2026-08-07
 depends_on:
   - GKR-STATE-001
 related:
-  - UXA-093
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -28,7 +27,7 @@ A UXA-093 materializa `GKR-SURF-PER-107 — Central de Atualizações` como refe
 
 Foi criado exatamente um novo SVG:
 
-- `docs/assets/wireframes/uxa-093-collective-updates-center-mobile.svg`.
+- `uxa-093-collective-updates-center-mobile.svg [historical SVG; physical file removed in F-016-A]`.
 
 Nenhum SVG previamente existente foi reformulado.
 

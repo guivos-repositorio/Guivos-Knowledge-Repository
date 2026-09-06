@@ -7,23 +7,15 @@ owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-02
 parent: UXA-053
 depends_on:
-  - UXA-005
   - UXA-038
   - UXA-039
-  - UXA-040
   - UXA-041
-  - UXA-042
   - UXA-043
-  - UXA-044
   - UXA-045
-  - UXA-046
   - UXA-047
-  - UXA-048
   - UXA-049
   - UXA-050
-  - UXA-051
   - UXA-052
-  - UXA-053
   - GEM-007-A1
   - GEM-010-A2
 related:
@@ -33,6 +25,9 @@ normative: false
 ---
 
 # Validação Funcional e Reformulação da Gestão Móvel da Campanha Ativa do Opportunity Boost
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 

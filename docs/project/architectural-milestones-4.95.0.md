@@ -9,7 +9,6 @@ related:
   - GKR-ARCHITECTURAL-MILESTONES-001
   - GKR-STATE-001
   - ROADMAP-11.97.0
-  - UXA-022
   - M7.23
 normative: false
 ---

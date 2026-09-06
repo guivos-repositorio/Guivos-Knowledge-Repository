@@ -2,13 +2,13 @@
 id: GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
 title: Homes Públicas dos Produtos Especializados — Autoridade de Reconciliação do Lote F
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-05
 parent: GKR-FULL-CORPUS-AUDIT-001
 depends_on:
   - GKR-STATE-001
-  - ROADMAP-13.4.0
+  - ROADMAP-13.5.0
   - GPA-002
   - GPA-003
   - GPA-004
@@ -75,8 +75,22 @@ LOTE F
 HOMES DOS PRODUTOS ESPECIALIZADOS
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
-PRÓXIMO BLOCO DA AUDITORIA
-→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
+G / H / I
+→ G COMPLETED
+→ H AUDITED / UPDATE_APPLIED / F-006 RESOLVED
+→ I AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED
+
+F-016
+→ RESOLVED
+→ LEGACY VISUAL PRODUCERS REMOVED 26/26
+→ POST-DELETE PROOF COMPLETE
+
+F-016-A
+→ RESOLVED
+→ PHYSICAL_SVG_COUNT = 0
+
+J / K / L / M / N
+→ NOT RELEASED AUTOMATICALLY
 
 UXA-102 / V5
 → NOT_STARTED
@@ -89,17 +103,7 @@ PMF
 
 WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
 → NOT AUTHORIZED
-
-NOVO SOURCE LOCK OU REABERTURA DE SOURCE LOCK
-→ NOT AUTHORIZED BY THIS DOCUMENT
-
-PUBLICAÇÃO / DISPONIBILIDADE OPERACIONAL
-→ NOT IMPLIED
 ```
-
-Handoffs, Manifests, snapshots, Source Locks e GENINPUTs existentes preservam a função que suas próprias autoridades lhes atribuem. Nenhum deles constitui autorização automática de Design durante a Auditoria Integral.
-
----
 
 ## 3. Regra transversal das seis Homes
 
@@ -247,7 +251,14 @@ MASTER v1.0.0
 
 ROADMAP-12.79.0 NO FRONTMATTER
 → HISTORICAL DEPENDENCY
-→ SUPERSEDED FOR CURRENT-STATE INTERPRETATION BY ROADMAP-13.4.0
+→ SUPERSEDED FOR CURRENT-STATE INTERPRETATION
+
+ROADMAP-13.4.0
+→ AUTORIDADE GLOBAL NO FECHAMENTO HISTÓRICO DO LOTE F
+→ PROVENIÊNCIA TEMPORAL
+
+ROADMAP-13.5.0
+→ AUTORIDADE GLOBAL VIGENTE NESTE HEAD
 ```
 
 A fronteira normativa permanece:
@@ -371,7 +382,7 @@ REBUILD_REQUIRED
 → 0
 ```
 
-As divergências encontradas foram resolvidas documentalmente sem perda de conhecimento e sem rebuild conceitual. O fechamento do Lote F é consumido pelas autoridades globais `GKR-FULL-CORPUS-AUDIT-001 v1.4.0`, `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`.
+As divergências encontradas foram resolvidas documentalmente sem perda de conhecimento e sem rebuild conceitual. O fechamento do Lote F foi originalmente consumido por `GKR-FULL-CORPUS-AUDIT-001 v1.4.0`, `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`; essas versões permanecem como **checkpoint histórico do Lote F**. Para o estado global corrente, devem ser consultadas diretamente as revisões vigentes de `GKR-FULL-CORPUS-AUDIT-001`, `GKR-STATE-001` e `ROADMAP`; revisões intermediárias posteriores ao Lote F não constituem aliases permanentes da verdade atual.
 
 Esse fechamento não promove materialização, disponibilidade operacional, PMF, nova UXA ou implementação.
 
@@ -392,8 +403,22 @@ REBUILD_REQUIRED
 AUDITORIA INTEGRAL
 → IN_PROGRESS
 
-NEXT BLOCK
-→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
+G / H / I
+→ AUDITADOS / REMEDIADOS
+→ F-006 RESOLVED
+
+F-016
+→ RESOLVED
+→ LEGACY VISUAL PRODUCERS REMOVED 26/26
+→ POST-DELETE PROOF COMPLETE
+
+F-016-A
+→ RESOLVED
+→ PHYSICAL_SVG_COUNT = 0
+
+DOWNSTREAM RELEASE
+→ J / K / L / M / N NOT RELEASED AUTOMATICALLY
+→ REQUIRES SEPARATE GOVERNED DECISION
 
 DESIGN AUTHORIZATION
 → SUSPENDED DURING FULL-CORPUS AUDIT

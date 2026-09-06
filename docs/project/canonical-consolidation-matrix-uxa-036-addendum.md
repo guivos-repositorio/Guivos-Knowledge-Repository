@@ -7,12 +7,10 @@ owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-28
 depends_on:
   - GKR-CANON-MATRIX-001
-  - UXA-036
 related:
   - UXA-011-A1
   - UXA-020
   - UXA-023
-  - UXA-034
   - UXA-035
   - GKR-STATE-001
   - ROADMAP-12.11.0
@@ -47,11 +45,11 @@ Ele não altera autoridades normativas de domínio e não cria decisão de IA, s
 
 ## 3. Novos artefatos
 
-- `docs/experience-architecture/uxa-036-initial-understanding-low-fidelity-wireframe.md`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-processing-mobile.svg`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-presentation-mobile.svg`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-review-mobile.svg`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg`.
+- `docs/experience-architecture/UXA-036 [historical producer removed_after_absorption in F-016]`;
+- `uxa-036-initial-understanding-processing-mobile.svg [historical SVG; physical file removed in F-016-A]`;
+- `uxa-036-initial-understanding-presentation-mobile.svg [historical SVG; physical file removed in F-016-A]`;
+- `uxa-036-initial-understanding-review-mobile.svg [historical SVG; physical file removed in F-016-A]`;
+- `uxa-036-initial-understanding-decision-mobile.svg [historical SVG; physical file removed in F-016-A]`.
 
 ## 4. Estado resultante
 

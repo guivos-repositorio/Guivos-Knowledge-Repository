@@ -180,7 +180,7 @@ EMPRESA CRIA/CONTROLA A JOURNEY
 
 Pontos Guivos são benefício transacional do ecossistema e podem ser concedidos por Programas de Incentivo autorizados.
 
-A equivalência econômica `X pontos = Y reais` já validada permanece vigente e **não é reaberta por este documento**.
+A decisão histórica `X pontos = Y reais` permanece recuperável em `GKR-BUSINESS-CONTINUITY-001`, mas esse checkpoint é não normativo. No corpus vigente, nenhuma autoridade econômica temática define ou aprova uma taxa de conversão Pontos ↔ BRL. Assim, **o portfólio não considera essa equivalência uma regra econômica canônica vigente ou implementável**; eventual definição requer autoridade econômica específica.
 
 ### 6.2 Saldo da pessoa
 

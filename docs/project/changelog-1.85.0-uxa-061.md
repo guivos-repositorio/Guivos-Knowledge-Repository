@@ -6,7 +6,6 @@ version: 1.85.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-03
 related:
-  - UXA-060
   - UXA-061
   - GKR-CCM-UXA-061-A1
   - ROADMAP-12.37.0

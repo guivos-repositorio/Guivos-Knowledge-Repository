@@ -359,9 +359,9 @@ A mecânica detalhada de checkout, estorno, liquidação e tributação permanec
 
 ### 7.8 Equivalência econômica
 
-A relação `X pontos = Y reais` **já possui regra validada/funcionando no ecossistema** e não deve ser rediscutida nesta frente.
+Na conversa reconciliada em 2026-08-15 e na PR #271, a relação `X pontos = Y reais` foi registrada como decisão já validada/funcionando no ecossistema. **Este registro permanece preservado como proveniência histórica da decisão.**
 
-O checkpoint apenas preserva essa decisão e impede que futuras retomadas tratem a equivalência como problema ainda não resolvido.
+A auditoria documental posterior do Lote J demonstrou, contudo, que este checkpoint é `normative: false` e que o corpus econômico vigente não contém autoridade temática que defina ou aprove valor monetário ou taxa de conversão para Pontos Guivos; `GEM-CLOSURE-REVIEW-001` mantém explicitamente que pontos não possuem valor monetário aprovado. Portanto, este checkpoint **não pode, por si só, promover a decisão histórica a regra econômica canônica vigente ou implementável**. Uma equivalência Pontos ↔ BRL poderá voltar a ser tratada como regra corrente somente por autoridade econômica específica e explícita.
 
 ## 8. Expiração e saldos — direção validada, parâmetros ainda não congelados
 
@@ -713,7 +713,7 @@ Os seguintes temas permanecem abertos ou precisam de autoridade específica ante
 - composição exata do resumo mensal Intelligence por plano;
 - arquitetura narrativa convergida, conversão, Documento Mestre e Source Lock da Home Pública do Guivos Business.
 
-A equivalência econômica `X pontos = Y reais` **não está nesta lista** porque já existe regra validada e não deve ser reaberta nesta frente.
+A equivalência econômica `X pontos = Y reais` permanece registrada como decisão histórica desta continuidade, mas **não está congelada como regra econômica vigente pelo corpus atual**. Valor monetário e taxa de conversão exigem autoridade econômica específica antes de implementação.
 
 ## 17. Estado atual da Home Pública do Guivos Business
 

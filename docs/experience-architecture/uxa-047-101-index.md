@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.4.0
+version: 3.13.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-06
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.4.0
+→ 3.13.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -35,8 +35,42 @@ PRÓXIMA UXA
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
 
-PRÓXIMO BLOCO DA AUDITORIA
-→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
+BLOCO 2 — G / H / I
+→ G COMPLETED / UPDATE_APPLIED
+→ H AUDITED / UPDATE_APPLIED / F-006 RESOLVED
+→ I AUDITED / UPDATE_APPLIED / F-006 RESOLVED
+→ F-007 RESOLVED NO LIMITE SEMÂNTICO/INVENTÁRIO
+
+F-010
+→ RESOLVED / CLEANUP + POST-CLEANUP VALIDATION + INDEPENDENT REVIEW COMPLETE
+
+F-016
+→ RESOLVED / CLEANUP DOCUMENTAL 26/26 + POST-DELETE PROOF COMPLETE
+
+F-016-A
+→ RESOLVED / PHYSICAL SVG COUNT = 0
+
+J — PRODUTOS / ECONOMIA
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-017 RESOLVED
+→ IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION NOT AUTHORIZED
+
+K — RESEARCH / VAL / RP-002
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
+→ OPERATIONAL READINESS = HOLD
+→ PARTICIPANT 001 = HOLD
+→ DRY RUN REAL = NOT RELEASED
+→ PMF = NOT VALIDATED
+
+L / M / N
+→ PENDING / NOT RELEASED
+
+PRÓXIMO MOVIMENTO GOVERNADO
+→ K — RESEARCH / VAL / RP-002 — DOCUMENTARY AUDIT ONLY
+→ PRESERVAR MÉTODO, EVIDÊNCIA E PROVENIÊNCIA
+→ NÃO PROMOVER SIMULAÇÃO SINTÉTICA A EVIDÊNCIA HUMANA
+→ NÃO LIBERAR OPERAÇÃO, PARTICIPANT 001 OU PMF
 ```
 
 A presença de uma UXA neste índice significa que o artefato existe e integra a família numerada. Ela **não** prova que todo artefato ou materialização por ela referenciado continuará no corpus após a auditoria.
@@ -55,14 +89,14 @@ A auditoria integral decidirá quais artefatos antigos devem ser absorvidos e re
 ## UXA-047 a UXA-055 — Opportunity Boost
 
 - [UXA-047](uxa-047-opportunity-boost-active-campaign-management-functional-validation-and-reformulation.md)
-- [UXA-048](uxa-048-opportunity-boost-aggregated-report-low-fidelity-wireframes.md)
+- UXA-048 — `UXA-048` [historical producer removed_after_absorption in F-016]
 - [UXA-049](uxa-049-opportunity-boost-aggregated-report-functional-validation-and-reformulation.md)
 - [UXA-050](uxa-050-opportunity-boost-complete-wireframe-set-functional-validation.md)
-- [UXA-051](uxa-051-opportunity-boost-mobile-advertiser-configuration-low-fidelity-wireframes.md)
+- UXA-051 — `UXA-051` [historical producer removed_after_absorption in F-016]
 - [UXA-052](uxa-052-opportunity-boost-mobile-advertiser-configuration-functional-validation-and-reformulation.md)
-- [UXA-053](uxa-053-opportunity-boost-mobile-active-campaign-management-low-fidelity-wireframes.md)
+- UXA-053 — `UXA-053` [historical producer removed_after_absorption in F-016]
 - [UXA-054](uxa-054-opportunity-boost-mobile-active-campaign-management-functional-validation-and-reformulation.md)
-- [UXA-055](uxa-055-opportunity-boost-residual-states-low-fidelity-wireframes.md)
+- UXA-055 — `UXA-055` [historical producer removed_after_absorption in F-016]
 
 ## UXA-056 a UXA-067 — Coletivos
 
@@ -70,18 +104,18 @@ A auditoria integral decidirá quais artefatos antigos devem ser absorvidos e re
 - [UXA-057](uxa-057-evaluation-and-reputation-functional-contract.md)
 - [UXA-058](uxa-058-interactions-recommendations-connections-functional-contract.md)
 - [UXA-059](uxa-059-collective-wireframe-program-and-prioritization.md)
-- [UXA-060](uxa-060-collective-explore-and-search-mobile-low-fidelity-wireframes.md)
+- UXA-060 — `UXA-060` [historical producer removed_after_absorption in F-016]
 - [UXA-061](uxa-061-collective-explore-and-search-mobile-functional-validation.md)
-- [UXA-062](uxa-062-collective-public-profile-mobile-low-fidelity-wireframes.md)
+- UXA-062 — `UXA-062` [historical producer removed_after_absorption in F-016]
 - [UXA-063](uxa-063-collective-public-profile-mobile-functional-validation.md)
-- [UXA-064](uxa-064-collective-participation-review-request-mobile-low-fidelity-wireframes.md)
+- UXA-064 — `UXA-064` [historical producer removed_after_absorption in F-016]
 - [UXA-065](uxa-065-collective-participation-review-request-mobile-functional-validation.md)
-- [UXA-066](uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md)
+- UXA-066 — `UXA-066` [historical producer removed_after_absorption in F-016]
 - [UXA-067](uxa-067-collective-pending-request-mobile-functional-validation.md)
 
 ## UXA-068 a UXA-085 — expressão, jornadas e registries
 
-- [UXA-068](uxa-068-guided-current-moment-text-voice-low-fidelity-wireframes.md)
+- UXA-068 — `UXA-068` [historical producer removed_after_absorption in F-016]
 - [UXA-069](uxa-069-guided-current-moment-functional-validation-and-reformulation.md)
 - [UXA-070](uxa-070-journey-simulation-environment-functional-program.md)
 - [UXA-071](uxa-071-integrated-journeys-map-materialization.md)
@@ -94,24 +128,24 @@ A auditoria integral decidirá quais artefatos antigos devem ser absorvidos e re
 - [UXA-078](uxa-078-controlled-granular-registry-reformulation.md)
 - [UXA-079](uxa-079-granular-registry-functional-revalidation.md)
 - [UXA-080](uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md)
-- [UXA-081](uxa-081-integrated-screen-gallery-and-coverage-audit.md)
-- [UXA-082](uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md)
-- [UXA-083](uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md)
-- [UXA-084](uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md)
-- [UXA-085](uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md)
+- UXA-081
+- UXA-082
+- UXA-083
+- UXA-084
+- UXA-085
 
 ## UXA-086 a UXA-096 — continuidade de Coletivos
 
-- [UXA-086](uxa-086-collective-responsible-overview-low-fidelity-wireframe.md)
+- UXA-086 — `UXA-086` [historical producer removed_after_absorption in F-016]
 - [UXA-087](uxa-087-collective-responsible-overview-functional-validation-and-reformulation.md)
-- [UXA-088](uxa-088-collective-request-management-low-fidelity-wireframes.md)
+- UXA-088 — `UXA-088` [historical producer removed_after_absorption in F-016]
 - [UXA-089](uxa-089-collective-request-management-functional-validation-and-reformulation.md)
 - [UXA-090](uxa-090-integrated-collective-request-handoffs-functional-validation.md)
-- [UXA-091](uxa-091-my-collectives-materialization-and-post-approval-continuity-refinement.md)
+- UXA-091 — `UXA-091` [historical producer removed_after_absorption in F-016]
 - [UXA-092](uxa-092-my-collectives-functional-validation-and-post-approval-continuity-revalidation.md)
-- [UXA-093](uxa-093-collective-updates-center-materialization.md)
+- UXA-093 — `UXA-093` [historical producer removed_after_absorption in F-016]
 - [UXA-094](uxa-094-collective-updates-center-functional-validation-and-trn110-revalidation.md)
-- [UXA-095](uxa-095-participant-home-materialization-and-trn111-refinement.md)
+- UXA-095 — `UXA-095` [historical producer removed_after_absorption in F-016]
 - [UXA-096](uxa-096-participant-home-functional-validation-per107-revalidation-and-trn111-integrated-validation.md)
 
 Os fluxos especializados preservam a maturidade suportada por suas próprias autoridades. Uma materialização administrativa local do Coletivo não constitui automaticamente o wireframe principal autenticado final.
@@ -156,7 +190,7 @@ GKR-UX-ORGCOL-AUTH-JOBS-001
 → atores, autoridades e jobs prioritários definidos
 
 GKR-UX-ORGCOL-AUTH-IA-001
-→ Arquitetura da Informação definida
+→ Arquitetura da Informação definida pre-surface-map
 ```
 
 Ainda não são canônicos:
@@ -172,18 +206,30 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.4.0** |
+| Registro do Estado Atual | **3.13.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
 | Auditoria integral | **IN_PROGRESS** |
-| Lotes concluídos | **A / B / C / D / E / F** |
-| Próximo bloco da auditoria | **G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL** |
+| Lotes concluídos | **A / B / C / D / E / F / G** |
+| Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey remains draft** |
+| Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
+| Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
+| F-010 — cleanup transversal | **RESOLVED — CLEANUP / VALIDATION / INDEPENDENT REVIEW COMPLETE** |
+| F-016 | **RESOLVED — AUDIT + ADJUDICATION + CLEANUP 26/26 + POST-DELETE PROOF COMPLETE** |
+| F-016-A — camada física SVG | **RESOLVED / PHYSICAL CLEANUP 119/119 / PHYSICAL SVG COUNT 0 / POST-DELETE PROOF V2 SUCCESS** |
+| Lote J — Produtos / Economia | **DOCUMENTARY AUDIT COMPLETED / F-017 RESOLVED** |
+| Lote K — Research / VAL / RP-002 | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
+| Lotes L / M / N | **PENDING / NOT RELEASED** |
+| Próximo movimento governado | **K — RESEARCH / VAL / RP-002 — DOCUMENTARY AUDIT ONLY** |
+| RP-002 Operational Readiness | **HOLD** |
+| Participant 001 | **HOLD** |
+| Dry Run real | **NOT RELEASED** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
-| Maturidade visual agregada | **não inferir durante recomputação** |
+| Maturidade visual agregada | **NOT_CERTIFIED** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 
-A auditoria integral pode consolidar ou remover do corpus atual documentos desta família quando o conhecimento vigente tiver sido absorvido e as referências forem reconciliadas. Isso não muda, por si só, os estados funcionais que continuarem sustentados por autoridade vigente.
+A auditoria integral pode consolidar ou remover do corpus atual documentos desta família quando o conhecimento vigente tiver sido absorvido e as referências forem reconciliadas. Isso não muda, por si só, os estados funcionais sustentados por autoridades textuais vigentes.

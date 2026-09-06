@@ -9,7 +9,6 @@ depends_on:
   - GKR-STATE-001
 related:
   - UXA-087
-  - UXA-088
   - GKR-UXA-047-088-INDEX-001
 normative: false
 ---

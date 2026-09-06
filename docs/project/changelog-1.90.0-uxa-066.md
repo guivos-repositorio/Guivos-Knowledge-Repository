@@ -6,7 +6,6 @@ version: 1.90.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-04
 related:
-  - UXA-066
   - ROADMAP-12.42.0
   - M7.68
 normative: false

@@ -2,9 +2,9 @@
 id: GKR-UX-D5-C2-001
 title: Materialização Low-Fidelity das Superfícies de Direção, Movimento e Evolução
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-30
 parent: UXA-000
 related:
   - GKR-UX-D5-C1-001
@@ -21,6 +21,9 @@ normative: false
 ---
 
 # GKR-UX-D5-C2-001 — Materialização Low-Fidelity das Superfícies de Direção, Movimento e Evolução
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
@@ -222,24 +225,34 @@ Ela não examina ainda ponta a ponta:
 
 Portanto, `TRN-008..013` permanecem `contratada`.
 
-## 9. Efeito no inventário
+## 9. Efeito no inventário — snapshot histórico da D5-C2
 
-Após a D5-C2, o inventário proposto da branch passa a:
+No estágio da D5-C2, o inventário proposto da branch registrou:
 
 | Indicador | Antes | D5-C2 |
 |---|---:|---:|
-| SVGs canônicos | 118 | **121** |
-| associações por SVG | 118 | **121** |
+| SVGs então tratados como canônicos pela frente | 118 | **121** |
+| associações físicas por SVG | 118 | **121** |
 | perfis de rastreabilidade | 31 | **34** |
-| SVGs com validação funcional vigente | 118 | **118** |
-| SVGs pendentes de validação específica | 0 | **3** |
+| SVGs com validação funcional segundo o critério daquele estágio | 118 | **118** |
+| SVGs pendentes de validação específica segundo o critério daquele estágio | 0 | **3** |
 | superfícies/estados/fronteiras | 57 | **57** |
 | transições | 66 | **66** |
 | IDs com referência visual | 42/57 | **45/57** |
 | responsabilidades sem SVG dedicado | 13 | **10** |
 | fronteiras sem tela | 2 | **2** |
 
-A adição visual não cria novos IDs de superfície porque `PER-010..012` já foram contratados pela D5-C1.
+Esse quadro preserva o snapshot histórico da frente e **não certifica a maturidade visual vigente do corpus**.
+
+A auditoria integral posterior governa a leitura atual:
+
+```text
+CONTAGEM FÍSICA DE SVGs
+≠ WIREFRAMES VIGENTES
+≠ WIREFRAMES VALIDADOS
+```
+
+A adição visual da D5-C2 não criou novos IDs de superfície porque `PER-010..012` já haviam sido contratados pela D5-C1.
 
 ## 10. Perfis de rastreabilidade candidatos da frente
 

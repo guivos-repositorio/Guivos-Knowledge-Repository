@@ -8,9 +8,7 @@ last_updated: 2026-08-01
 parent: UXA-044
 depends_on:
   - UXA-004
-  - UXA-005
   - UXA-009
-  - UXA-024
   - UXA-025
   - UXA-028
   - UXA-029
@@ -18,9 +16,7 @@ depends_on:
   - UXA-033
   - UXA-038
   - UXA-039
-  - UXA-042
   - UXA-043
-  - UXA-044
   - GEM-007-A1
   - GEM-010-A2
 related:
@@ -30,6 +26,9 @@ normative: false
 ---
 
 # Validação Funcional e Reformulação dos Wireframes dos Estados Patrocinados para Lista e Mapa
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 

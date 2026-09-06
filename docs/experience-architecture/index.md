@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.3.0
+version: 1.8.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-09-05
 related:
   - PAS-001
   - PAS-001-DOMAIN-MODEL-001
@@ -12,20 +12,15 @@ related:
   - GLPA-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - UXA-001
-  - UXA-055
   - UXA-056
   - UXA-058
   - UXA-059
   - UXA-069
   - UXA-070
   - UXA-080
-  - UXA-085
   - UXA-090
-  - UXA-091
   - UXA-092
-  - UXA-093
   - UXA-094
-  - UXA-095
   - UXA-096
   - UXA-097
   - UXA-098
@@ -44,8 +39,7 @@ related:
   - GKR-UX-D5-C4A-001
   - GKR-UX-D5-C4B-001
   - GKR-JOURNEYS-001
-  - GKR-JOURNEY-SCREEN-GALLERY-001
-  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
+  - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - M7.88
@@ -53,6 +47,9 @@ normative: false
 ---
 
 # Arquitetura da Experiência da Guivos
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
@@ -77,26 +74,29 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 ## 3. Cobertura visual e granular
 
-| Indicador | Resultado |
-|---|---:|
-| SVGs canônicos | **121** |
-| associações individuais | **121** |
-| perfis de rastreabilidade | **34** |
-| com validação funcional vigente | **121** |
-| pendentes de validação específica | **0** |
-| superfícies/estados/fronteiras | **57** |
-| transições documentais | **66** |
-| IDs com referência visual | **45 de 57** |
-| responsabilidades sem SVG dedicado | **10** |
-| fronteiras sem tela | **2** |
+A camada física de wireframes foi removida do corpus vigente por `F-016-A` após prova estrutural e semântica de absorção.
 
-A UXA-100-A4 adiciona `PER-009` como responsabilidade sem SVG e seis handoffs de navegação de Planos.
+```text
+SVGs FÍSICOS EM docs/assets/wireframes/
+→ 0
 
-A D5-A reforma quatro SVGs de `PER-004`, `PER-007` e `PER-008` para materializar Domínios de Evolução sem criar novo ID.
+ASSOCIAÇÕES FÍSICAS CORRENTES
+→ 0
 
-A D5-B materializa o mesmo eixo em `ORG-002`, `PER-201`, `PER-202` e `PER-203`, também in-place.
+PERFIS DE RASTREABILIDADE
+→ 34
+→ preservados apenas como proveniência/semântica
 
-A D5-C1 adiciona três responsabilidades (`PER-010..012`) e seis handoffs (`TRN-008..013`) no estado contratado. A D5-C2 adiciona três SVGs low-fidelity e três perfis. A D5-C3 reforma in-place e valida funcionalmente os três SVGs. A D5-C4A reforma e revalida localmente o estado recorrente de `PER-008 — Hoje`, materializa origens visuais inequívocas e governa o contrato semântico dos seis handoffs. A D5-C4B promove individualmente `TRN-008..013` para **integralmente validadas** no limite documental.
+AUTORIDADE VISUAL
+→ DESIGN
+
+AUTORIDADE FUNCIONAL
+→ DOCUMENTAÇÃO TEXTUAL / EXPERIENCE ARCHITECTURE
+```
+
+A remoção física não altera por si só maturidade funcional de superfícies, estados ou transições. Nomes `.svg` ainda citados em documentos preservados devem ser lidos exclusivamente como proveniência histórica.
+
+`F-016-A = RESOLVED` após Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. `F-016` global permanece aberto para as famílias documentais remanescentes.
 
 ## 4. Decisões estruturais preservadas
 
@@ -199,30 +199,30 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active`; D5-C4B sincronizada |
+| Jornadas Integradas | `active` 0.41.0; D5-C4B e Bloco 2 sincronizados |
 | Jornada da Pessoa | `draft`; PER-010..012 validados localmente; TRN-008..013 integrais |
-| Jornada do Coletivo | `draft` |
-| Jornada da Organização | `draft` |
-| catálogo integrado | `active`; 121 SVGs / 121 validados |
-| galeria visual | `active`; 121 SVGs / 0 pendentes |
-| galeria da Pessoa | `active`; 23 SVGs |
-| galeria de Planos | `active` 0.5.0 |
-| matriz por SVG | `active`; 121 associações / 34 perfis |
+| Jornada do Coletivo | `draft` 0.20.0; Jobs + IA definidos pre-surface-map |
+| Jornada da Organização | `draft` 0.13.0; Jobs + IA definidos pre-surface-map |
+| catálogo integrado | `active` 0.34.0; **0 SVGs físicos após F-016-A**; maturidade funcional preservada por autoridades textuais |
+| proveniência visual histórica | documentos de galeria/matriz removidos do corpus corrente; recuperáveis no histórico Git; sem autoridade visual |
 | lacunas | `active`; lacuna D5-C de handoffs encerrada no limite documental |
-| registro de superfícies | `active`; 57 IDs |
+| registro de superfícies | `active`; 57 IDs; maturidade por item |
 | registro de transições | `active`; 66 transições; TRN-008..013 integrais |
 | detalhamento da Pessoa | `active`; PER-008 recorrente e PER-010..012 com continuidade D5-C validada |
-| D5-A | `active` 1.0.0 |
-| D5-B | `active` 1.0.0 |
+| D5-A | `active` 1.1.0 |
+| D5-B | `active` 1.1.0 |
 | D5-C1 | `active` 1.0.0 |
-| D5-C2 | `active` 1.0.0 |
-| D5-C3 | `active` 1.0.0 |
-| D5-C4A | `active` 1.0.0 |
-| D5-C4B | `active` 1.0.0 |
+| D5-C2 | `active` 1.1.0 |
+| D5-C3 | `active` 1.1.0 |
+| D5-C4A | `active` 1.1.0 |
+| D5-C4B | `active` 1.1.0 |
 
 ## 9. Ressalvas vigentes
 
-- 10 responsabilidades permanecem sem SVG dedicado, incluindo `PER-009`;
+- `121` descreve o inventário físico de SVGs e não certifica, isoladamente, canonicidade ou validação vigente;
+- a recomputação governada de maturidade visual agregada permanece aberta;
+- artefatos históricos `superseded`, incluindo os associados a `UXA-015..018`, permanecem rastreáveis e não devem ser promovidos por presença física;
+- 10 responsabilidades permanecem sem SVG dedicado no snapshot físico/associativo, incluindo `PER-009`;
 - `TRN-008..013` estão integralmente validadas documentalmente, não implementadas;
 - `TRN-406/407` permanecem contratadas;
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` permanecem parciais;
@@ -257,4 +257,4 @@ D5-A/B/C1/C2/C3/C4A/C4B não consomem nem antecipam V5.
 
 ## 11. Próxima evolução possível
 
-A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
+A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo, sem materializar o surface map. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.

@@ -22,6 +22,9 @@ normative: false
 
 # Integração de Planos às Jornadas e Telas Dedicadas
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A UXA-100-A1 estende a UXA-100 para inserir **Planos** explicitamente nas jornadas da Pessoa, do Coletivo e da Organização e materializar uma tela dedicada de Planos para cada participante.
@@ -74,9 +77,7 @@ Quando a contratação deixa de ser autonomamente configurável, o handoff exist
 
 Tela dedicada candidata:
 
-![Pessoa — Planos](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
 
 A jornada inclui acesso voluntário por Conta/Configurações, plano atual e consumo da cota personalizada, comparação **Free / Plus / Pro**, ganho incremental e comparação direta, gestão de cobrança/downgrade/cancelamento e entrada contextual a partir de correspondência personalizada adicional após cota Free.
 
@@ -92,9 +93,7 @@ A leitura conceitual é:
 
 Tela dedicada candidata:
 
-![Coletivo — Planos](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
 A jornada inclui acesso pela administração/configurações, plano atual e consumo mensal, comparação **Livre / Mobiliza / Impacta / Rede**, delta incremental e direto, upgrade/downgrade/cancelamento e entrada contextual quando cota/capacidade for atingida.
 
@@ -113,9 +112,7 @@ A nomenclatura anterior Gestão / Impacto / Enterprise fica superada para leitur
 
 Tela dedicada candidata:
 
-![Organização — Planos](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
 A jornada de Organização utiliza **Conecta / Eleva / Transforma**.
 
@@ -164,7 +161,7 @@ A extensão mantém os mesmos 9 SVGs:
 | comparação incremental | 1 | 1 | 1 | 3 |
 | **Total** | **3** | **3** | **3** | **9** |
 
-Inspeção: [Planos, Comparação e Cobrança — Galeria Candidata](../journeys/screen-gallery-plans-billing.md).
+Inspeção: Planos, Comparação e Cobrança — Galeria Candidata.
 
 A autoridade conceitual desta atualização não altera IDs, quantidade ou associação dos nove ativos.
 

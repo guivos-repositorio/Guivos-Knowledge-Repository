@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 3.2.0
+version: 3.3.0
 owner: Guivos
-last_updated: 2026-08-22
+last_updated: 2026-08-30
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-GLOBAL-INTEGRITY-POST300-001
   - GKR-P9-GLOBAL-CONSOLIDATION-001
   - GOG-001
@@ -33,10 +34,11 @@ normative: false
 
 Esta matriz oferece leitura transversal compacta das autoridades correntes. Ela não substitui `GKR-STATE-001` nem a autoridade temática específica.
 
-A edição 3.2.0 sincroniza a matriz com `GKR-STATE-001 v2.43.0`, preservando as linhas válidas da edição 3.1.0 e incorporando a autoridade pública do fundador, sua separação do sistema verbal institucional e a reconciliação nominal da Home Pública.
+A edição 3.3.0 preserva as linhas materiais anteriores, reconcilia referências já atualizadas pelo corpus e separa o inventário físico de SVGs da maturidade visual vigente conforme o Bloco I de `GKR-FULL-CORPUS-AUDIT-001`.
 
 ```text
 ATUALIZAÇÃO DA MATRIZ ≠ APAGAMENTO DE LINHA VÁLIDA
+INVENTÁRIO FÍSICO ≠ MATURIDADE VISUAL VIGENTE
 ```
 
 ## 2. Regras de decisão
@@ -55,19 +57,19 @@ ATUALIZAÇÃO DA MATRIZ ≠ APAGAMENTO DE LINHA VÁLIDA
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE | **2.43.0** |
+| GKR-STATE | **autoridade global vigente sob auditoria integral** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — não iniciada** |
 | Product Engineering | **pausada antes de W0-01** |
-| Public Canon | **GOG-001 5.2.0** |
+| Public Canon | **GOG-001 5.3.0** |
 
 ## 4. Fundação, propósito e participantes
 
 | Elemento | Estado | Autoridade/limite |
 |---|---|---|
-| Essência, propósito, missão e princípios | consolidado | GEA/GEB Foundation |
+| Essência, propósito, missão e princípios | consolidado | GEA/GEB Foundation reconciliada |
 | Fundamento Cristão | **consolidado** | `GKR-CHRISTIAN-FOUNDATION-001 v1.0.0`; uso interno de governança |
 | Evolução com propósito | **consolidado** | princípio fundacional interno |
 | Participantes | consolidado | Pessoa · Coletivo · Organização |
@@ -97,20 +99,33 @@ A presença pública do Fundamento Cristão no GKR não o transforma em Public C
 
 ## 6. Experiência e materialização
 
+O Bloco I da auditoria governa a leitura agregada do inventário visual:
+
 | Elemento | Estado |
 |---|---|
 | Marco funcional | **M7.88** |
 | Última UXA | **UXA-101** |
 | UXA-102/V5 | **não iniciada** |
-| SVGs | **121** |
-| SVGs validados | **121** |
-| SVGs pendentes | **0** |
-| Associações | **121** |
-| Perfis | **34** |
+| SVGs físicos | **121** |
+| Associações físicas | **121** |
+| Perfis de rastreabilidade | **34** |
+| Duplicatas exatas por blob SHA no snapshot auditado | **0** |
+| Near-duplicates | **NOT_CERTIFIED** |
+| Wireframes vigentes — total agregado | **NOT_CERTIFIED** |
+| Wireframes validados vigentes — total agregado | **NOT_CERTIFIED** |
+| Pendências visuais — total agregado | **NOT_CERTIFIED** |
 | Superfícies/estados/fronteiras | **57** |
 | Transições | **66** |
 | Pessoa/Coletivo/Organização | jornadas `draft` |
 | Engenharia de Produto | pausada antes de W0-01 |
+
+```text
+CONTAGEM FÍSICA DE SVGs
+≠ WIREFRAMES VIGENTES
+≠ WIREFRAMES VALIDADOS
+```
+
+O antigo snapshot `121 validados / 0 pendentes` não representa a maturidade visual vigente.
 
 A continuidade especializada `TRN-008..013` permanece integralmente validada no limite documental. V1–V4 continuam encerradas nos limites definidos. `BND-001` permanece fronteira externa; `BND-002` permanece fronteira genérica de contratação/dimensionamento assistido.
 
@@ -118,22 +133,16 @@ A continuidade especializada `TRN-008..013` permanece integralmente validada no 
 
 | Home | Estado |
 |---|---|
-| Pessoa | documentalmente convergida |
-| Organizações e Coletivos | documentalmente convergida |
-| Mall | documentalmente convergida |
-| Travel | documentalmente convergida |
-| Media | documentalmente convergida |
-| Ads | documentalmente convergida |
-| Business | documentalmente convergida |
-| Intelligence | documentalmente convergida |
+| Pessoa | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Organizações e Coletivos | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Mall | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Travel | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Media | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Ads | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Business | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Intelligence | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
 
-Handoff comum:
-
-```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001 = v1.3.0
-GKR-UX-HOMES-DESIGN-DELIVERY-001 = v4.0.0
-snapshot v4 = 31 fontes + 8 guias = 39 arquivos
-```
+Handoff e Design Delivery anteriores permanecem evidência de checkpoint, não autorização operacional atual de Design.
 
 Na Home Pública da Pessoa:
 
@@ -175,7 +184,7 @@ Preços, limites, entitlements e SLA finais continuam dependentes de autoridade 
 
 ```text
 GPA-006 = v2.0.0
-GIA-000 = v1.5.0
+GIA-000 = v1.6.0
 ```
 
 Duas frentes:
@@ -317,7 +326,7 @@ Acesso de usuário, domínio territorial, marca protegida, pesquisa ou prospecç
 
 ## 16. Public Canon
 
-`GOG-001 — Guia Oficial da Guivos v5.2.0` é a tradução institucional pública vigente.
+`GOG-001 — Guia Oficial da Guivos v5.3.0` é a tradução institucional pública vigente.
 
 O Public Canon não pode afirmar como disponível, registrado, implementado ou operacional aquilo que o GKR classifica como candidato, referência, não iniciado ou dependente de evidência.
 
@@ -329,7 +338,7 @@ O Fundamento Cristão permanece fora de promoção automática a Public Canon de
 
 P0–P9 permanece documentalmente consolidado. Isso não significa que objetos de negócio, tecnologia, mercado, jurídico ou operação estejam executados.
 
-`GKR-GLOBAL-INTEGRITY-POST300-001` corrige deriva posterior sem reabrir P0–P9.
+`GKR-GLOBAL-INTEGRITY-POST300-001` permanece evidência de reconciliação histórica; sua leitura corrente é subordinada às autoridades posteriores e à auditoria integral.
 
 `GKR-BRAND-PUBLIC-AUTHORITY-001` e `GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` constituem autoridades temáticas posteriores de marca e representação pública; não criam UXA, marco funcional ou implementação.
 
@@ -339,12 +348,13 @@ Históricos, addenda e PRs superseded permanecem na trilha Git, mas não compete
 
 Nenhum é automático:
 
+- autorização humana separada e explícita para cleanup físico de `F-006`; se autorizada, remoção/reconciliação, recomputação, validações e review precedem a decisão de fechamento de `F-006` e do Bloco G/H/I;
 - nova evidência de mercado → VAL;
-- tecnologia/implementação → ADR/GEA/Product Engineering;
+- tecnologia/implementação → ADR/GEA/Product Engineering somente mediante autorização própria;
 - filing das assinaturas → Human Filing Authorization;
 - implantação do perfil/conteúdo do fundador → gate próprio de presença pública;
 - institucional/jurídico → gates próprios;
 - privacidade/operação → P6/LS/OT;
 - internacionalização → P7/T/PT;
 - experiência funcional → UXA autorizada;
-- Design → decisão humana própria sobre handoff existente.
+- Design → decisão humana própria; não autorizado automaticamente durante a auditoria.

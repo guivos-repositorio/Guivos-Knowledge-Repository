@@ -10,9 +10,7 @@ depends_on:
   - UXA-001
   - UXA-003-A1
   - UXA-004
-  - UXA-005
   - UXA-009
-  - UXA-024
   - UXA-025
   - UXA-026
   - UXA-027
@@ -22,17 +20,18 @@ depends_on:
   - UXA-031
 related:
   - UXA-002
-  - UXA-007
   - UXA-010
   - UXA-012
   - UXA-020
-  - UXA-022
   - UXA-023
   - UXA-033
 normative: false
 ---
 
 # Wireframe de Baixa Fidelidade do Mapa de Oportunidades — Referência para Computador
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
@@ -66,19 +65,15 @@ A referência para computador não altera a primeira entrada e não transforma o
 
 ### 3.1 Estado com resultados
 
-![Referência reformulada para computador do Mapa com resultados](../assets/wireframes/uxa-032-opportunity-map-desktop.svg)
 
 Arquivo:
 
-`docs/assets/wireframes/uxa-032-opportunity-map-desktop.svg`
 
 ### 3.2 Estado sem resultados
 
-![Referência reformulada para computador do Mapa sem resultados](../assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg)
 
 Arquivo:
 
-`docs/assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg`
 
 Dimensão de referência:
 

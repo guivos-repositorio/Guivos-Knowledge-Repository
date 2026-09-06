@@ -16,9 +16,6 @@ depends_on:
   - GEB-P01-F05
   - GEB-P01-F06
 related:
-  - UXA-006
-  - UXA-007
-  - UXA-008
   - UXA-009
   - UXA-010
   - PAS-001

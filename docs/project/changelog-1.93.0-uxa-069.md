@@ -6,7 +6,6 @@ version: 1.93.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-04
 related:
-  - UXA-068
   - UXA-069
   - GKR-STATE-001
   - ROADMAP-12.45.0

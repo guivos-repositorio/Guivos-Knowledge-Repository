@@ -2,9 +2,9 @@
 id: RP-002-PILOT-NOTICE-CONSENT-002
 title: Piloto — Aviso ao Participante e Consentimento v0.2
 status: draft
-version: 0.2.0
+version: 0.2.1
 owner: Guivos Research
-last_updated: 2026-08-27
+last_updated: 2026-09-04
 normative: false
 parent: RP-002
 maturity: final_documentary_target_pending_A12_and_operational_release
@@ -13,7 +13,7 @@ related:
   - RP-002-PILOT-NOTICE-CONSENT-FLOW-DEC-001
   - RP-002-PILOT-DATA-LAW-001
   - RP-002-PILOT-RETENTION-DEC-001
-  - RP-002-PILOT-OPS-REG-001
+  - RP-002-PILOT-OPS-REG-002
   - RP-002-PILOT-OPENAI-API-DEC-001
   - RP-002-PILOT-SEARCH-WEB-DEC-001
 ---

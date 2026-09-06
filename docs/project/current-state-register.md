@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.4.0
+version: 3.13.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-06
 normative: true
 maturity: current_truth_under_full_corpus_audit
 related:
@@ -65,14 +65,66 @@ ERA
 ESTADO GLOBAL DO GKR
 → AUDITORIA INTEGRAL EM CURSO
 
-PRÓXIMO BLOCO DA AUDITORIA
-→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
+BLOCO 2 — G / H / I
+→ G COMPLETED / UPDATE_APPLIED
+→ H AUDITED / UPDATE_APPLIED / F-006 RESOLVED
+→ I AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED
 
-MARCO FUNCIONAL
-→ M7.88
+F-010
+→ RESOLVED
+→ CODEX REVIEW UNAVAILABLE / NOT RUN (USAGE LIMIT)
+→ CLEAN RESULT NOT CLAIMED
 
-ÚLTIMA UXA FUNCIONAL NUMERADA
-→ UXA-101
+F-006
+→ RESOLVED
+
+F-016
+→ RESOLVED
+→ AUDIT + ADJUDICATION + IMPLEMENTATION + POST-DELETE PROOF COMPLETE
+→ LEGACY VISUAL PRODUCERS REMOVED
+→ 26/26
+→ DIRECT REMOVED-SVG PATH REFERENCES = 0
+→ PHYSICAL SVG COUNT = 0
+
+F-016-A — PHYSICAL SVG LAYER
+→ PRE-CLEANUP STRUCTURAL + SEMANTIC ELIGIBILITY PROVEN
+→ HUMAN PHYSICAL CLEANUP AUTHORIZATION GRANTED
+→ PHYSICAL CLEANUP APPLIED 119/119
+→ PHYSICAL SVG COUNT = 0
+→ LIVE EMBEDS / LINKS = 0
+→ HISTORICAL PROVENANCE PRESERVED
+→ SEMANTIC #832 SUCCESS
+→ MECHANICAL #1090 SUCCESS
+→ INDEPENDENT POST-DELETE READ-ONLY PROOF V2 SUCCESS
+→ RESOLVED
+
+F-016 CLOSURE
+→ 26 LEGACY VISUAL PRODUCERS REMOVED AFTER ABSORPTION
+→ STRUCTURAL REFERENCES RECONCILED
+→ 23 DIRECT PATH REFERENCES TO REMOVED SVGs NEUTRALIZED
+→ CURRENT AUTHORITIES / VALIDATORS / EVIDENCE PRESERVED
+→ REINTRODUCTION GUARDS ACTIVE
+
+F-018
+→ RESOLVED
+→ GLOBAL ENTRYPOINT STATE-PROPAGATION DRIFT RECONCILED IN J→K TRANSITION
+
+J — PRODUTOS / ECONOMIA
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-017 RESOLVED
+→ NO OPEN J-SPECIFIC MATERIAL FINDING IDENTIFIED
+→ IMPLEMENTATION / OPERATION / COMMERCIAL EXECUTION NOT AUTHORIZED
+
+K — RESEARCH / VAL / RP-002
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
+→ OPERATIONAL READINESS = HOLD
+→ PARTICIPANT 001 = HOLD
+→ DRY RUN REAL = NOT RELEASED
+→ PMF = NOT VALIDATED
+
+L / M / N
+→ PENDING / NOT RELEASED
 
 UXA-102 / V5
 → NOT_STARTED
@@ -93,11 +145,7 @@ MATERIALIZAÇÃO VISUAL DAS HOMES
 → NOT AUTHORIZED DURING FULL-CORPUS AUDIT
 ```
 
-A auditoria integral foi aberta porque o crescimento do corpus produziu três riscos materiais:
-
-1. autoridades antigas passaram a depender de correções e reconciliações posteriores;
-2. artefatos substituídos permaneceram fisicamente no corpus;
-3. a navegação passou a refletir a história de construção mais do que a verdade operacional necessária às equipes.
+O encerramento de `F-016` conclui a desmaterialização documental auditada sem promover maturidade funcional, sem criar Design e sem liberar implementação. A história permanece no Git; o corpus vigente preserva autoridades, validadores e evidências necessárias.
 
 ## 3. Fundação e identidade da Guivos
 
@@ -351,7 +399,7 @@ Permanecem autoridades funcionais:
 
 ### 8.2 Atores, autoridades e jobs
 
-`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.0.0` está ativo e define, antes da arquitetura visual:
+`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.1.0` está ativo e define, antes da arquitetura visual:
 
 - classes funcionais de atores;
 - participante representado;
@@ -376,7 +424,7 @@ AUTORIDADE DECLARADA
 
 ### 8.3 Arquitetura da Informação
 
-`GKR-UX-ORGCOL-AUTH-IA-001 v1.0.0` está ativo.
+`GKR-UX-ORGCOL-AUTH-IA-001 v1.0.0` está ativo em maturidade `authenticated_information_architecture_defined_pre_surface_map`.
 
 Organização:
 
@@ -416,49 +464,58 @@ ORGANIZAÇÃO ≠ COLETIVO
 
 ### 8.4 Próxima maturidade O/C
 
-O mapa lógico de superfícies e estados **não é canônico ainda**.
+O mapa lógico de superfícies e estados **ainda não é canônico**. Uma proposta pré-auditoria permanece congelada e sem autoridade até ser reavaliada contra o corpus limpo.
 
-Uma proposta existe em branch pré-auditoria, mas permanece congelada e sem autoridade até a auditoria decidir se continua compatível com o corpus limpo.
+A documentação O/C deve evoluir somente no plano funcional:
 
-Não existem, como baseline vigente final:
+- responsabilidades de cada superfície;
+- informação obrigatória e opcional;
+- estados e transições;
+- regras, permissões, proteções e exceções;
+- fluxos e handoffs;
+- critérios de aceitação e restrições.
 
-- wireframe principal autenticado da Organização;
-- wireframe principal autenticado do Coletivo;
-- UI final;
-- protótipo final;
-- implementação autenticada correspondente.
+```text
+DOCUMENTAÇÃO
+→ DEFINE O QUE A EXPERIÊNCIA PRECISA SER CAPAZ DE COMUNICAR E FAZER
+
+DESIGN
+→ DEFINE COMO A EXPERIÊNCIA É VISUALMENTE MATERIALIZADA
+```
+
+Wireframe, mockup, protótipo, layout, composição e componentes visuais **não são entregáveis normativos do GKR**. Sua definição pertence exclusivamente a Design. Essa regra não constitui autorização para iniciar Design neste checkpoint.
 
 ## 9. Artefatos visuais e registries
 
-O corpus ainda contém inventário físico construído em ciclos anteriores, inclusive artefatos que perderam autoridade visual vigente.
+O cleanup governado de `F-006` removeu fisicamente os quatro documentos `UXA-015..018` e os dois SVGs associados. A transação foi aplicada no commit `112a1397743a39bb73f930984a8431f808103a08`.
 
-A auditoria já confirmou que:
+Estado comprovado no head de cleanup:
 
-- `UXA-015..018` não sustentam a UX principal autenticada atual de Organização/Coletivo;
-- SVGs associados a essas antigas baselines permanecem fisicamente no repositório;
-- contagem física de SVG não equivale a contagem de wireframes vigentes;
-- a antiga claim agregada `121 validados / 0 pendentes` não pode ser usada como maturidade atual.
+- **119 SVGs físicos**;
+- **119 associações físicas**;
+- **34 perfis de rastreabilidade estáveis**;
+- `F006_DELETION_SET_ABSENT = 6/6`;
+- `F006_DIRECT_DELETED_FILENAME_HITS = 0`;
+- Semantic State Validation #827 = `SUCCESS`;
+- Mechanical Validation #1085 = `SUCCESS`;
+- F-006 Post-Delete Read-Only Proof #1 = `SUCCESS`;
+- MkDocs strict = `SUCCESS`.
 
-Durante a auditoria:
+As **239 menções residuais aos IDs `UXA-015..018`** encontradas pela prova são referências textuais de proveniência/estado histórico a serem lidas sem reativação dos artefatos removidos. Nenhuma referência direta aos seis nomes físicos removidos permanece.
 
 ```text
-CONTAGEM FÍSICA LEGADA
-→ INVENTÁRIO A RECONCILIAR
-
-NOVA CONTAGEM DE MATURIDADE
-→ NÃO INFERIDA
+F-006
+→ STRUCTURAL AUDIT COMPLETE
+→ ABSORPTION APPLIED
+→ ACTIVE FUNCTION DEPENDENCIES RECONCILED
+→ CLEANUP ELIGIBILITY PROVEN
+→ PHYSICAL CLEANUP APPLIED 6/6
+→ POST-CLEANUP VALIDATION PASSED
+→ READ-ONLY PROOF PASSED
+→ RESOLVED
 ```
 
-Antes de qualquer remoção serão reconciliados:
-
-- conteúdo semântico único;
-- surface registry;
-- transition registry;
-- screen catalog;
-- galleries;
-- traceability matrices;
-- links;
-- contagens.
+`F-007` permanece resolvido. A contagem de arquivos visuais deixa de ser proxy de maturidade, e `F-016` abre a retirada/reformulação repo-wide de materializações documentais que competem com a autoridade de Design.
 
 ## 10. Homes públicas — estado de auditoria
 
@@ -701,6 +758,19 @@ PONTOS
 
 A empresa financia orçamento; concessão e uso pela Pessoa são eventos distintos.
 
+A auditoria documental do Lote J classificou como `REAL_DRIFT` a claim de que uma equivalência Pontos ↔ BRL já estaria validada como regra vigente. O checkpoint de 2026-08-15 preserva essa decisão como proveniência histórica, mas as autoridades econômicas temáticas correntes não definem nem aprovam valor monetário ou taxa de conversão.
+
+```text
+PONTOS GUIVOS
+→ BENEFÍCIO TRANSACIONAL DO ECOSSISTEMA
+
+EQUIVALÊNCIA PONTOS ↔ BRL
+→ DECISÃO HISTÓRICA PRESERVADA COMO PROVENIÊNCIA
+→ SEM TAXA / VALOR MONETÁRIO APROVADO POR AUTORIDADE ECONÔMICA VIGENTE
+→ NÃO AUTORIZADA PARA IMPLEMENTAÇÃO, COBRANÇA OU LIQUIDAÇÃO
+→ REQUER AUTORIDADE ECONÔMICA ESPECÍFICA PARA VOLTAR A SER REGRA CORRENTE
+```
+
 `VALOR DE IMPACTO LIBERADO ≠ impacto realizado ≠ impacto comprovado`.
 
 Pontos permanecem fora da narrativa pública da Home Business conforme decisão vigente, sem eliminar a capacidade funcional.
@@ -856,7 +926,7 @@ FALA PESSOAL
 ≠ POSICIONAMENTO INSTITUCIONAL
 ```
 
-`GKR-BRAND-PUBLIC-AUTHORITY-001` também permanece preservado. O registro de propagação derivado continua transitório e não normativo; as correções relacionadas à Home Pessoa já foram absorvidas no Lote D, e sua permanência ou remoção passa a depender exclusivamente da avaliação dos resíduos especializados sob F-010, com remoção somente após absorção completa e sem perda de conhecimento vigente.
+`GKR-BRAND-PUBLIC-AUTHORITY-001` também permanece preservado. `GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` foi adjudicado no fechamento de `F-010` como `KEEP TEMPORARILY`: continua transitório, não normativo e parcialmente absorvido, preservando rastreabilidade enquanto seus próprios gates de absorção permanecem aplicáveis. A decisão sob `F-010` está encerrada; eventual remoção futura depende exclusivamente dos critérios internos de `REMOVE_AFTER_ABSORPTION` da própria propagation, sem perda de conhecimento vigente.
 
 ## 15. Proteção marcária
 
@@ -1214,50 +1284,54 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.4.0` está ativo como instrumento temporário de execução.
-
-Estado:
+`GKR-FULL-CORPUS-AUDIT-001 v1.15.0` está ativo como instrumento temporário de execução.
 
 ```text
-A — GOVERNANÇA DO CORPUS
-→ CANONICALLY UPDATED
+A / B / C / D / E / F / G
+→ COMPLETED
 
-B — ESTADO ATUAL E ROADMAP
-→ CANONICALLY UPDATED
+H / I
+→ AUDITED / UPDATE_APPLIED
+→ F-006 RESOLVED
+→ F-007 RESOLVED
 
-C — FUNDAÇÃO / MARCA / PUBLIC CANON
-→ CANONICALLY UPDATED
+F-016
+→ RESOLVED
+→ DOCUMENTATION DEMATERIALIZATION COMPLETE
+→ LEGACY VISUAL PRODUCERS REMOVED 26/26
+→ POST-DELETE PROOF SUCCESS
 
-D — HOME PRINCIPAL / PESSOA
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+F-016-A
+→ RESOLVED
+→ PHYSICAL SVG COUNT = 0
 
-E — HOME ORGANIZAÇÕES E COLETIVOS
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION / COMPLETED
+J
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-017 RESOLVED
+→ NO IMPLEMENTATION AUTHORIZATION
 
-F — HOMES DE PRODUTOS
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION / COMPLETED
+K
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
+→ OPERATIONAL READINESS = HOLD
+→ PARTICIPANT 001 = HOLD
+→ DRY RUN REAL = NOT RELEASED
+→ PMF = NOT VALIDATED
 
-G — JORNADA DA PESSOA
-→ NEXT / AUDIT_PENDING
+L / M / N
+→ PENDING / NOT RELEASED
 
-H — ORGANIZAÇÃO / COLETIVO
-→ NEXT / AUDIT_PENDING
+O
+→ PENDING / HOLD
 
-I — REGISTRIES / CATÁLOGOS / SVGs
-→ NEXT / AUDIT_PENDING
-
-J–N — DOMÍNIOS ESPECIALIZADOS
+P
 → PENDING
 
-O — MENU FINAL
-→ PENDING
-
-P — AUDITORIA FINAL
-→ PENDING
-
-Q — PRIMEIRA TELA PÓS-HOME DA PESSOA
+Q
 → BLOCKED
 ```
+
+A conclusão documental de J e a liberação governada de K não liberam automaticamente L–N nem alteram gates operacionais de Research. A próxima frente documental é K.
 
 ## 27. Regra de navegação final
 
@@ -1318,15 +1392,32 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-O próximo bloco da auditoria é **G / H / I — Experience Architecture e inventário visual**.
-
-O fechamento documental das Homes Principal/Pessoa, Organizações/Coletivos e dos seis Produtos Especializados não autoriza materialização visual nem a primeira tela autenticada pós-Home.
+O Lote J concluiu sua auditoria documental. `F-017` está resolvido e a reconciliação de propagação `F-018` foi incorporada às superfícies globais. A decisão downstream subsequente libera exclusivamente K para auditoria documental. L/M/N permanecem não liberados; a liberação de K não autoriza implementação operacional, participante real, dry run, PMF, Design, Product Engineering ou GTM.
 
 ```text
-PRÓXIMO BLOCO
-→ G — JORNADA DA PESSOA
-→ H — ORGANIZAÇÃO / COLETIVO
-→ I — REGISTRIES / CATÁLOGOS / SVGs
+J — PRODUTOS / ECONOMIA
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-017 RESOLVED
+
+F-018
+→ RESOLVED
+→ GLOBAL ENTRYPOINT STATE-PROPAGATION DRIFT RECONCILED
+
+NEXT
+→ EXECUTE K — RESEARCH / VAL / RP-002 DOCUMENTARY AUDIT ONLY
+→ PRESERVE METHOD, EVIDENCE AND PROVENANCE
+→ DO NOT PROMOTE SYNTHETIC / SIMULATED EVIDENCE TO HUMAN EVIDENCE
+→ OPERATIONAL READINESS REMAINS HOLD
+→ PARTICIPANT 001 REMAINS HOLD
+→ DRY RUN REAL REMAINS NOT RELEASED
+→ PMF REMAINS NOT VALIDATED
+→ L / M / N REMAIN NOT RELEASED
+
+O
+→ PENDING / HOLD
+
+Q
+→ BLOCKED
 
 AINDA BLOQUEADOS
 → UXA-102
@@ -1339,4 +1430,4 @@ AINDA BLOQUEADOS
 → IMPLEMENTAÇÃO
 ```
 
-Quando a auditoria terminar, este Registro do Estado Atual deverá ser novamente reconciliado com o corpus final limpo antes da autorização de uma nova baseline.
+A transição J→K é estritamente documental e não altera os estados operacionais de Research nem qualquer gate posterior.

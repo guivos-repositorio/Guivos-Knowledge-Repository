@@ -9,18 +9,14 @@ parent: UXA-036
 depends_on:
   - UXA-001
   - UXA-003-A1
-  - UXA-005
   - UXA-009
   - UXA-011
   - UXA-011-A1
   - UXA-020
   - UXA-023
-  - UXA-034
   - UXA-035
-  - UXA-036
 related:
   - UXA-002
-  - UXA-006
   - UXA-010
   - PAS-001-CV-VIEW-001
   - PAS-001-OBJ-VIEW-001
@@ -29,6 +25,9 @@ normative: false
 ---
 
 # Validação Funcional Especializada e Reformulação do Wireframe Móvel da Compreensão Inicial
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
