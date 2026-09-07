@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.18.0
+version: 3.19.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 normative: true
@@ -153,19 +153,18 @@ M — JURÍDICO / PRIVACIDADE / INSTITUCIONAL
 → OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
 
 N — GTM / PRESENÇA PÚBLICA
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ DOCUMENTARY AUDIT COMPLETED
+→ OPEN N-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
 O
 → PENDING / HOLD
-→ NOT RELEASED BY N RELEASE
 
 NEXT
-→ CONTINUE N DOCUMENTARY AUDIT
-→ READ-ONLY AUTHORITY / STATE RECONCILIATION
-→ DO NOT RELEASE O BY INFERENCE
+→ O RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ O IS NOT RELEASED BY N CLOSURE
 
 UXA-102 / V5
 → NOT_STARTED
@@ -1325,7 +1324,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.23.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.24.0` está ativo como instrumento temporário de execução.
 
 ```text
 A / B / C / D / E / F / G
@@ -1376,15 +1375,10 @@ M
 → OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
 
 N
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ DOCUMENTARY AUDIT COMPLETED
+→ OPEN N-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
-
-NEXT
-→ CONTINUE N DOCUMENTARY AUDIT
-→ READ-ONLY AUTHORITY / STATE RECONCILIATION
-→ DO NOT RELEASE O BY INFERENCE
 
 O
 → PENDING / HOLD
@@ -1394,9 +1388,14 @@ P
 
 Q
 → BLOCKED
+
+NEXT
+→ O RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ O IS NOT RELEASED BY N CLOSURE
 ```
 
-A liberação documental de N decorre de adjudicação de elegibilidade própria. Ela não executa GTM, não ativa Portugal como mercado, não configura/publica perfis, não prova performance de canal e não libera O.
+O fechamento documental de N decorre da auditoria temática read-only e da adjudicação de `CLOSURE ELIGIBILITY = PASS`. Ele não executa GTM, não ativa Portugal como mercado, não configura/publica perfis, não prova performance de canal e não libera O.
 
 ## 27. Regra de navegação final
 
@@ -1457,22 +1456,20 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-A elegibilidade de liberação de N foi adjudicada como `PASS` sobre o `HEAD 0f4becfd65ee34e3de2cd944b1c66abf4f273657`, sem mutação do alvo durante a análise. A liberação canônica é exclusivamente documental e não autoriza execução real de GTM nem libera O.
+A elegibilidade de liberação de N foi adjudicada como `PASS` sobre o `HEAD 0f4becfd65ee34e3de2cd944b1c66abf4f273657`. N foi liberado canonicamente para auditoria documental no commit `5729bcf6aed31b88e98a2ba97465a2868391a93d`; a auditoria temática subsequente concluiu `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`, `F-022 NOT OPENED` e `CLOSURE ELIGIBILITY = PASS`. O fechamento permanece exclusivamente documental e não autoriza execução real de GTM nem libera O.
 
 ```text
 N — GTM / PRESENÇA PÚBLICA
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ DOCUMENTARY AUDIT COMPLETED
+→ OPEN N-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
+→ GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
-MATERIAL BLOCKER TO DOCUMENTARY RELEASE
+MATERIAL BLOCKER TO DOCUMENTARY CLOSURE
 → NONE PROVEN
 
 IMPROPER GTM MATURITY PROMOTION
 → NONE PROVEN
-
-F-022
-→ NOT OPENED
 
 PLANEJAMENTO
 ≠ EXECUÇÃO
@@ -1508,16 +1505,16 @@ PORTUGAL / LISBOA
 
 INSTAGRAM GUIVOS / FUNDADOR
 → DOCUMENTED AUTHORITIES
-→ REAL CONFIGURATION / PUBLICATION NOT AUTHORIZED BY N RELEASE
+→ REAL CONFIGURATION / PUBLICATION NOT AUTHORIZED BY N CLOSURE
 
 O
 → PENDING / HOLD
-→ NOT RELEASED BY N RELEASE
+→ NOT RELEASED BY N CLOSURE
 
 NEXT
-→ CONTINUE N DOCUMENTARY AUDIT
-→ READ-ONLY AUTHORITY / STATE RECONCILIATION
-→ DO NOT RELEASE O BY INFERENCE
+→ O RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ O IS NOT RELEASED BY N CLOSURE
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
@@ -1542,4 +1539,4 @@ AINDA BLOQUEADOS
 → MERGE DA PR #363
 ```
 
-A liberação de N não constitui campanha executada, mercado ativado, perfil configurado, conteúdo publicado, KPI realizado, captação concluída ou validação de PMF.
+O fechamento de N não constitui campanha executada, mercado ativado, perfil configurado, conteúdo publicado, KPI realizado, captação concluída ou validação de PMF.
