@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.20.0
+version: 3.21.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 normative: true
@@ -159,10 +159,10 @@ N — GTM / PRESENÇA PÚBLICA
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
 O — MENU FINAL / ROTAS MULTIEQUIPE
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
-→ F-002 = OPEN / GOVERNING FINDING
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-002 = RESOLVED
+→ MENU REBUILD APPLIED / VALIDATED
+→ OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
 P
 → PENDING / NOT RELEASED
@@ -171,9 +171,8 @@ Q
 → BLOCKED
 
 NEXT
-→ CONTINUE O DOCUMENTARY AUDIT
-→ NAVIGATION / DISCOVERABILITY RECONCILIATION
-→ ADDRESS F-002 UNDER ITS OWN GOVERNED EVIDENCE
+→ P RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
 → DO NOT RELEASE P BY INFERENCE
 
 UXA-102 / V5
@@ -1334,7 +1333,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.25.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.26.0` está ativo como instrumento temporário de execução.
 
 ```text
 A / B / C / D / E / F / G
@@ -1391,10 +1390,12 @@ N
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
 O
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
-→ F-002 = OPEN / GOVERNING FINDING
+→ DOCUMENTARY AUDIT COMPLETED
+→ MENU REBUILD APPLIED
+→ F-002 = RESOLVED
+→ FINAL SEMANTIC #861 = SUCCESS
+→ FINAL MECHANICAL #1119 = SUCCESS
+→ OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
 P
 → PENDING / NOT RELEASED
@@ -1403,21 +1404,37 @@ Q
 → BLOCKED
 
 NEXT
-→ CONTINUE O DOCUMENTARY AUDIT
-→ NAVIGATION / DISCOVERABILITY RECONCILIATION
-→ ADDRESS F-002 UNDER ITS OWN GOVERNED EVIDENCE
+→ P RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
 → DO NOT RELEASE P BY INFERENCE
 ```
 
-A liberação documental de O decorre de adjudicação própria de elegibilidade. Ela não reconstrói o MENU, não altera `mkdocs.yml`, não resolve `F-002`, não libera P e não promove Design, Product Engineering, operação, PMF ou baseline final.
+O fechamento de O registra a reconstrução e a prova pós-remediação do MENU. Ele não libera P, não promove baseline final, Design, Product Engineering, operação, PMF, implementação ou produção.
 
 ## 27. Regra de navegação final
 
-O `mkdocs.yml` atual ainda não representa o destino final da auditoria.
+O `mkdocs.yml` foi reconstruído no Lote O como superfície de descoberta do corpus e validado em modo estrito.
 
-A navegação será reconstruída depois que as autoridades e arquivos remanescentes forem conhecidos.
+A navegação final de O organiza hubs por domínio e rotas de consumo multiequipe sem transformar o MENU em inventário completo de arquivos. Documentos vigentes não precisam estar diretamente listados no MENU para manter autoridade, desde que continuem alcançáveis por hubs, links internos, busca e Git.
 
-Ela deverá permitir acesso eficiente para:
+```text
+MENU
+→ SUPERFÍCIE DE DESCOBERTA
+→ HUBS / AUTORIDADES DE ENTRADA
+→ ROTAS MULTIEQUIPE
+
+NOT_IN_NAV
+≠ PRIVATE
+≠ DEPRECATED
+≠ NON-AUTHORITATIVE
+
+REPOSITORY NAVIGATION
+≠ PRODUCT INFORMATION ARCHITECTURE
+≠ EXPERIENCE NAVIGATION
+≠ UI NAVIGATION
+```
+
+Rotas de consumo reconciliadas atendem:
 
 - liderança / estratégia;
 - marketing;
@@ -1432,7 +1449,9 @@ Ela deverá permitir acesso eficiente para:
 - jurídico / privacidade;
 - internacionalização / operação.
 
-Uma mesma autoridade pode atender várias rotas; o GKR não deve criar cópias paralelas por equipe.
+Uma mesma autoridade pode atender várias rotas; o GKR não cria cópias paralelas por equipe.
+
+A prova final do rebuild ocorreu no `HEAD 2d80c24c31cbe3e9486165369c80fae0775b8fe1`: Semantic #861 e Mechanical #1119 retornaram `SUCCESS`, incluindo links/navegação, nomenclatura, whitespace, MkDocs strict e clean tracked tree.
 
 ## 28. Preservações finais
 
@@ -1470,7 +1489,7 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-A elegibilidade de liberação de O foi adjudicada como `PASS` sobre o `HEAD f30659a91d46c02333afcb9f0eb6449c23e40e73`, sem mutação do alvo durante o preflight. A liberação canônica é exclusivamente documental e autoriza somente a auditoria de navegação/discoverability de O; `F-002` permanece aberto e governante.
+O Lote O foi concluído documentalmente após rebuild do MENU, correção semântica mínima e validação final no `HEAD 2d80c24c31cbe3e9486165369c80fae0775b8fe1`.
 
 ```text
 N — GTM / PRESENÇA PÚBLICA
@@ -1480,22 +1499,37 @@ N — GTM / PRESENÇA PÚBLICA
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
 O — MENU FINAL / ROTAS MULTIEQUIPE
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
-→ F-002 = OPEN / GOVERNING FINDING
+→ DOCUMENTARY AUDIT COMPLETED
+→ MENU REBUILD APPLIED / VALIDATED
+→ F-002 = RESOLVED
+→ OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
-CURRENT MENU
-→ MECHANICALLY VALID
-≠ FINAL INFORMATION ARCHITECTURE
+REBUILD COMMIT
+→ 0be6bc892f5c2df396f445e7b4df6f77540b965a
+
+INITIAL SEMANTIC #860
+→ FAILURE
+→ README / docs/index MISSING REQUIRED GLOBAL STATE MARKERS
+
+INITIAL MECHANICAL #1118
+→ SUCCESS
+
+SEMANTIC REMEDIATION COMMIT
+→ 2d80c24c31cbe3e9486165369c80fae0775b8fe1
+→ README.md + docs/index.md ONLY
+
+FINAL SEMANTIC #861
+→ SUCCESS
+→ run 34168256681
+
+FINAL MECHANICAL #1119
+→ SUCCESS
+→ run 34168256748
 
 REPOSITORY NAVIGATION
 ≠ PRODUCT INFORMATION ARCHITECTURE
 ≠ EXPERIENCE NAVIGATION
 ≠ UI NAVIGATION
-
-mkdocs.yml
-→ UNCHANGED BY O RELEASE
 
 P
 → PENDING / NOT RELEASED
@@ -1504,10 +1538,9 @@ Q
 → BLOCKED
 
 NEXT
-→ CONTINUE O DOCUMENTARY AUDIT
-→ NAVIGATION / DISCOVERABILITY RECONCILIATION
-→ ADDRESS F-002 UNDER ITS OWN GOVERNED EVIDENCE
-→ DO NOT RELEASE P BY INFERENCE
+→ P RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ P IS NOT RELEASED BY O CLOSURE
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
@@ -1532,4 +1565,4 @@ AINDA BLOQUEADOS
 → MERGE DA PR #363
 ```
 
-A liberação de O não reconstrói o MENU, não resolve `F-002`, não altera `mkdocs.yml`, não libera P, não inicia Q e não constitui autorização operacional.
+O fechamento de O não libera P, não inicia Q e não constitui autorização operacional, visual, de implementação, produção ou merge.

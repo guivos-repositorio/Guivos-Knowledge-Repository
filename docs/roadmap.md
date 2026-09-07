@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.19.0
+id: ROADMAP-13.20.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.19.0
+version: 13.20.0
 owner: Guivos
 last_updated: 2026-09-07
 normative: true
@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.20.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.21.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -53,7 +53,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. O Lote M concluiu sua auditoria documental com `OPEN M-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`, sem promover execução jurídica, privacidade operacional ou constituição institucional. O Lote N concluiu sua auditoria documental com `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`, `F-022 NOT OPENED` e sem promover execução de GTM, publicação ou operação de mercado. A elegibilidade de O foi adjudicada como `PASS`, e O está liberado exclusivamente para auditoria documental de navegação/discoverability; `F-002` permanece aberto como finding governante.
+Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. O Lote M concluiu sua auditoria documental com `OPEN M-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`, sem promover execução jurídica, privacidade operacional ou constituição institucional. O Lote N concluiu sua auditoria documental com `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`, `F-022 NOT OPENED` e sem promover execução de GTM, publicação ou operação de mercado. O Lote O concluiu sua auditoria documental após rebuild governado do MENU e prova Semantic + Mechanical; `F-002 = RESOLVED`. O Lote P permanece `PENDING / NOT RELEASED` e seu próximo gate legítimo é uma adjudicação separada de elegibilidade, documental e read-only.
 
 `F-016-A` concluiu o ciclo governado: elegibilidade estrutural/semântica, autorização humana separada, cleanup físico 119/119, reconciliação, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. A subfrente está `RESOLVED` e o inventário físico corrente de SVGs é zero.
 
@@ -66,7 +66,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.20.0** |
+| Estado global | **GKR-STATE-001 v3.21.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -88,7 +88,8 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Lote L — Tecnologia / Dados / IA | **DOCUMENTARY AUDIT COMPLETED / F-020 RESOLVED / F-021 RESOLVED / OPEN L-SPECIFIC MATERIAL FINDINGS = 0** |
 | Lote M — Jurídico / Privacidade / Institucional | **DOCUMENTARY AUDIT COMPLETED / OPEN M-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Lote N — GTM / presença pública | **DOCUMENTARY AUDIT COMPLETED / OPEN N-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
-| Lote O — MENU final / rotas multiequipe | **RELEASED / DOCUMENTARY AUDIT ONLY / IN_PROGRESS / F-002 OPEN** |
+| Lote O — MENU final / rotas multiequipe | **DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED / OPEN O-SPECIFIC MATERIAL FINDINGS = 0** |
+| Lote P — Auditoria final | **PENDING / NOT RELEASED** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |
@@ -188,7 +189,9 @@ ADJUDICAÇÃO DE ELEGIBILIDADE O           [COMPLETED / PASS]
 ↓
 DECISÃO GOVERNADA N → O                  [O RELEASED DOCUMENTARY-ONLY / P HOLD]
 ↓
-O. MENU FINAL / ROTAS MULTIEQUIPE        [IN_PROGRESS / DOCUMENTARY AUDIT ONLY / F-002 OPEN]
+O. MENU FINAL / ROTAS MULTIEQUIPE        [DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED]
+↓
+ADJUDICAÇÃO DE ELEGIBILIDADE P           [NEXT / NOT STARTED]
 ↓
 P. AUDITORIA FINAL DE COMPLETUDE          [PENDING / NOT RELEASED]
 ↓
@@ -1004,25 +1007,23 @@ PRESENÇA INSTITUCIONAL
 
 ## 19. Lote O — MENU final e rotas multiequipe
 
-O MENU final somente será definido quando o corpus já estiver substancialmente limpo.
-
 Estado atual:
 
 ```text
-RELEASE ELIGIBILITY = PASS
-RELEASED FOR DOCUMENTARY AUDIT ONLY
-IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
-F-002 = OPEN / GOVERNING FINDING
+DOCUMENTARY AUDIT COMPLETED
+F-002 = RESOLVED
+MENU REBUILD APPLIED / VALIDATED
+OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 ```
 
-A liberação de O não reconstrói o MENU, não altera `mkdocs.yml` e não resolve `F-002`. O trabalho governado de O deve agora confrontar navegação vigente, discoverability e rotas multiequipe, preservando a distinção entre arquitetura documental do repositório e navegação de Produto/Experiência/UI.
+O Lote O reconstruiu o MENU como superfície de descoberta, substituindo a exposição de uma arquitetura histórica de construção por hubs de domínio e rotas multiequipe. O corpus detalhado não foi removido por sair do MENU: autoridades, evidências e documentos de detalhe continuam acessíveis por hubs, links internos, busca e Git.
 
-Ele deve permitir duas leituras simultâneas:
+Duas leituras coexistem:
 
 1. por arquitetura/domínio;
 2. por necessidade de equipe.
 
-Equipes mínimas:
+Equipes atendidas:
 
 - liderança / estratégia;
 - marketing;
@@ -1037,7 +1038,7 @@ Equipes mínimas:
 - jurídico / privacidade;
 - internacionalização / operação.
 
-Princípio:
+Princípios:
 
 ```text
 ROTA POR EQUIPE
@@ -1045,18 +1046,61 @@ ROTA POR EQUIPE
 
 ROTA POR EQUIPE
 ≠ CÓPIA PARALELA DA VERDADE
+
+NOT_IN_NAV
+≠ PRIVATE
+≠ DEPRECATED
+≠ NON-AUTHORITATIVE
+
+REPOSITORY NAVIGATION
+≠ PRODUCT INFORMATION ARCHITECTURE
+≠ EXPERIENCE NAVIGATION
+≠ UI NAVIGATION
 ```
 
-Remover do MENU final se não houver função atual:
+Evidência de implementação e prova:
 
-- histórico de construção;
-- checkpoints;
-- snapshots intermediários;
-- UXAs superseded;
-- adendos já absorvidos;
-- nomenclatura baseada apenas em ordem de execução antiga.
+```text
+REBUILD COMMIT
+→ 0be6bc892f5c2df396f445e7b4df6f77540b965a
+→ README.md + docs/index.md + mkdocs.yml
+
+INITIAL SEMANTIC #860
+→ FAILURE
+→ ONLY CONFIRMED ISSUE: README / docs/index MISSING REQUIRED GLOBAL STATE MARKERS
+
+INITIAL MECHANICAL #1118
+→ SUCCESS
+
+SEMANTIC REMEDIATION COMMIT
+→ 2d80c24c31cbe3e9486165369c80fae0775b8fe1
+→ README.md + docs/index.md ONLY
+
+FINAL SEMANTIC #861
+→ SUCCESS
+→ run 34168256681
+
+FINAL MECHANICAL #1119
+→ SUCCESS
+→ run 34168256748
+→ LINKS / NAVIGATION PASS
+→ LEGACY NOMENCLATURE PASS
+→ WHITESPACE PASS
+→ MKDOCS STRICT PASS
+→ CLEAN TRACKED TREE PASS
+```
+
+O fechamento documental de O resolve `F-002`. Ele não libera P, não cria baseline final e não autoriza Design, UXA-102/V5, Product Engineering, operação, PMF, implementação ou produção.
 
 ## 20. Lote P — Auditoria final
+
+Estado atual:
+
+```text
+PENDING / NOT RELEASED
+```
+
+Antes de qualquer execução temática de P deve ocorrer adjudicação separada de elegibilidade, documental e read-only. O fechamento de O não constitui essa liberação.
 
 A auditoria final deve verificar:
 
@@ -1218,7 +1262,7 @@ ESPECIFICAÇÃO EDITORIAL ≠ CONTEÚDO PUBLICADO
 
 ## 26. Regra do próximo movimento
 
-`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020` e `F-021` estão `RESOLVED`. J, K, L, M e N concluíram suas auditorias documentais. `F-022` não foi aberto. O está liberado somente para auditoria documental e mantém `F-002` aberto como finding governante.
+`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N e O concluíram suas auditorias documentais. `F-022` não foi aberto. P permanece pendente e não liberado.
 
 ```text
 J
@@ -1250,10 +1294,10 @@ N
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
 O
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
-→ F-002 = OPEN / GOVERNING FINDING
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-002 RESOLVED
+→ MENU REBUILD APPLIED / VALIDATED
+→ OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
 P
 → PENDING / NOT RELEASED
@@ -1262,9 +1306,8 @@ Q
 → BLOCKED
 
 NEXT
-→ CONTINUE O DOCUMENTARY AUDIT
-→ NAVIGATION / DISCOVERABILITY RECONCILIATION
-→ ADDRESS F-002 UNDER ITS OWN GOVERNED EVIDENCE
+→ P RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
 → DO NOT RELEASE P BY INFERENCE
 
 TECHNOLOGY / DATA / AI
@@ -1281,4 +1324,4 @@ RESEARCH OPERATIONAL STATES
 → PMF = NOT VALIDATED
 ```
 
-`UXA-102/V5`, Design, Product Engineering, P e merge da PR #363 permanecem bloqueados ou não autorizados. A liberação de O é estritamente documental e não reconstrói o MENU, não altera `mkdocs.yml` e não resolve `F-002`.
+`UXA-102/V5`, Design, Product Engineering, P e merge da PR #363 permanecem bloqueados ou não autorizados. O fechamento de O é estritamente documental e não libera P por inferência.

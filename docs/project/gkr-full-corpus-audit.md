@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.25.0
+version: 1.26.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 normative: false
@@ -133,14 +133,14 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | ID | Classe | Achado | Ação | Estado |
 |---|---|---|---|---|
 | F-001 | Major | política anterior mantinha histórico/superseded no corpus | `UPDATE` | regra corrigida no Lote A |
-| F-002 | Major | MENU contém arquitetura histórica de construção e alta fragmentação | `REBUILD` | aberto |
+| F-002 | Major | MENU continha arquitetura histórica de construção e alta fragmentação | `REBUILD` | **RESOLVED NO LOTE O — MENU reconstruído para hubs de domínio e rotas multiequipe; Semantic #861 e Mechanical #1119 `SUCCESS`** |
 | F-003 | Critical | Home principal/Pessoa conflita com assinatura e Movimento 06 vigentes | `REBUILD` | resolvido no Lote D |
 | F-004 | Major | Home O/C antecedia mudanças estruturais posteriores | `REBUILD` | resolvido no Lote E |
 | F-005 | Major | Mall, Travel, Media, Ads, Business e Intelligence precisavam de auditoria semântica | `UPDATE` | resolvido documentalmente no Lote F |
 | F-006 | Major | UXA-015..018 e SVGs associados permaneciam fisicamente embora superseded | `REMOVE_AFTER_ABSORPTION` | **RESOLVED — absorção, cleanup 6/6, reconciliação, validações e prova pós-delete concluídos** |
 | F-007 | Major | contagens físicas de SVGs não representam maturidade vigente | `UPDATE` | **resolvido no Bloco I; instrumentos centrais separam inventário físico de maturidade** |
 | F-008 | Major | Estado Atual e Roadmap dependiam de reconciliação posterior | `UPDATE + CONSOLIDATE` | resolvido no Lote B |
-| F-009 | Major | autoridades O/C recentes não estavam absorvidas nas autoridades globais | `UPDATE` | absorção global concluída; MENU ainda pendente |
+| F-009 | Major | autoridades O/C recentes não estavam absorvidas nas autoridades globais | `UPDATE` | **absorção global concluída; navegação multiequipe reconciliada no Lote O** |
 | F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `RESOLVED` | **auditoria estrutural, cleanup, validação pós-cleanup e review independente concluídos; Codex indisponível por limite de uso, sem claim `CLEAN`** |
 | F-011 | Critical guardrail | nenhuma consolidação pode perder detalhe material | `KEEP_DETAIL` | regra ativa |
 | F-012 | Gate | primeira tela pós-Home da Pessoa depende do encerramento da auditoria | `BLOCK` | ativo |
@@ -1211,6 +1211,116 @@ P
 
 Esta liberação não reconstrói o MENU, não altera `mkdocs.yml`, não resolve `F-002`, não libera P, não inicia Q, Design, `UXA-102/V5`, Product Engineering, operação de RP-002, participante real, Dry Run, PMF, implementação, produção ou merge da PR #363.
 
+## 6.14 Fechamento documental do Lote O — MENU final / rotas multiequipe
+
+Após a liberação documental de O, o rebuild governado de navegação foi aplicado sem alterar autoridades temáticas e sem liberar P.
+
+A implementação ocorreu em duas etapas controladas:
+
+```text
+REBUILD COMMIT
+→ 0be6bc892f5c2df396f445e7b4df6f77540b965a
+→ PARENT e942fa1957f3d4c88341d5de6586db0d298e5881
+→ EXACTLY 3 DISCOVERY SURFACES
+→ README.md
+→ docs/index.md
+→ mkdocs.yml
+
+MENU MODEL
+→ DOMAIN HUBS
+→ ENTRY AUTHORITIES
+→ MULTI-TEAM CONSUMPTION ROUTES
+
+CORPUS
+→ DETAILED AUTHORITIES / EVIDENCE / PROVENANCE PRESERVED
+→ ACCESSIBLE BY HUBS / LINKS / SEARCH / GIT
+```
+
+A primeira validação encontrou uma única necessidade de sincronização semântica:
+
+```text
+GKR Semantic State Validation #860
+→ FAILURE
+→ ONLY CONFIRMED ISSUE: README.md / docs/index.md DID NOT DECLARE REQUIRED GLOBAL STATE MARKERS
+
+GKR Mechanical Validation #1118
+→ SUCCESS
+```
+
+A correção foi mínima e não reintroduziu a fragmentação anterior:
+
+```text
+SEMANTIC REMEDIATION COMMIT
+→ 2d80c24c31cbe3e9486165369c80fae0775b8fe1
+→ README.md + docs/index.md ONLY
+→ +11 / -0 EACH
+
+RESTORED GLOBAL MARKERS
+→ GKR-STATE VERSION
+→ M7.88
+→ UXA-101
+→ UXA-102 / V5 NOT_STARTED
+```
+
+Prova final no `HEAD` exato `2d80c24c31cbe3e9486165369c80fae0775b8fe1`:
+
+```text
+GKR Semantic State Validation #861
+→ SUCCESS
+→ run 34168256681
+
+GKR Mechanical Validation #1119
+→ SUCCESS
+→ run 34168256748
+→ FRONT MATTER / IDs / LINKS / NAVIGATION PASS
+→ LEGACY NOMENCLATURE PASS
+→ WHITESPACE PASS
+→ MKDOCS STRICT PASS
+→ CLEAN TRACKED TREE PASS
+```
+
+Adjudicação:
+
+```text
+F-002
+→ REMEDIATION PROVEN
+→ RESOLVED
+
+O — MENU FINAL / ROTAS MULTIEQUIPE
+→ DOCUMENTARY AUDIT COMPLETED
+→ MENU REBUILD APPLIED / VALIDATED
+→ OPEN O-SPECIFIC MATERIAL FINDINGS = 0
+
+P
+→ PENDING / NOT RELEASED
+
+NEXT
+→ P RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ P IS NOT RELEASED BY O CLOSURE
+```
+
+Fronteiras finais de O:
+
+```text
+NOT_IN_NAV
+≠ PRIVATE
+≠ DEPRECATED
+≠ NON-AUTHORITATIVE
+
+ROUTE BY TEAM
+≠ COPIED AUTHORITY
+
+REPOSITORY NAVIGATION
+≠ PRODUCT INFORMATION ARCHITECTURE
+≠ EXPERIENCE NAVIGATION
+≠ UI NAVIGATION
+```
+
+O fechamento canônico de O usa o boundary global de seis superfícies: `README.md`, `docs/index.md`, `docs/project/current-state-register.md`, este master audit, `docs/roadmap.md` e `docs/experience-architecture/uxa-047-101-index.md`. O `mkdocs.yml` já havia sido reconstruído e validado no rebuild; ele não é alterado pela transação canônica de fechamento.
+
+Este fechamento não libera P, não inicia Q, não autoriza Design, `UXA-102/V5`, Product Engineering, operação de RP-002, participante real, Dry Run, PMF, implementação, produção, baseline final ou merge da PR #363.
+
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
 O conflito material originalmente comprovado foi tratado de forma incremental e governada no Lote D, sem abrir materialização visual.
@@ -1850,7 +1960,7 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | L — Tecnologia / Dados / IA | `COMPLETED / DOCUMENTARY_AUDIT / F-020_RESOLVED / F-021_RESOLVED` | autoridades atuais e fronteiras de implementação reconciliadas; `OPEN L-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; nenhuma promoção operacional |
 | M — Jurídico / Privacidade / Institucional | `COMPLETED / DOCUMENTARY_AUDIT` | P5/P6 reconciliados; `OPEN M-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; nenhuma execução jurídica promovida |
 | N — GTM / presença pública | `COMPLETED / DOCUMENTARY_AUDIT` | `GTM-001..011 = KEEP`; fronteiras de presença/internacionalização reconciliadas; `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; nenhuma execução GTM promovida |
-| O — MENU / rotas por equipe | `IN_PROGRESS / DOCUMENTARY_AUDIT_ONLY / F-002_OPEN` | navegação final multiequipe; rebuild governado ainda pendente |
+| O — MENU / rotas por equipe | `COMPLETED / DOCUMENTARY_AUDIT / F-002_RESOLVED` | MENU reconstruído e validado; hubs de domínio e rotas multiequipe reconciliados |
 | P — Auditoria final | `PENDING / NOT_RELEASED` | `PASS` ou `PASS WITH MINOR FINDINGS` |
 | Q — primeira tela pós-Home Pessoa | `BLOCKED` | somente depois de P |
 
@@ -1891,14 +2001,16 @@ N. GTM / presença pública                        [COMPLETED / DOCUMENTARY AUDI
 ↓
 O release eligibility                            [COMPLETED / PASS]
 ↓
-O. MENU final                                    [IN_PROGRESS / DOCUMENTARY AUDIT ONLY / F-002 OPEN]
+O. MENU final                                    [COMPLETED / DOCUMENTARY AUDIT / F-002 RESOLVED]
+↓
+P release eligibility                            [NEXT / NOT STARTED]
 ↓
 P. auditoria final                               [PENDING / NOT RELEASED]
 ↓
 Q. primeira tela da Pessoa                       [BLOCKED]
 ```
 
-O MENU é redesenhado perto do final porque deve refletir o corpus que restar depois da consolidação.
+O MENU foi redesenhado perto do final para refletir o corpus conhecido após as consolidações já executadas.
 
 ## 17. Requisitos da navegação final
 
@@ -2022,7 +2134,7 @@ A auditoria somente pode encerrar quando:
 - [ ] fluxo vigente da Pessoa estiver reconciliado;
 - [ ] fluxo vigente de Organização e Coletivo estiver reconciliado;
 - [ ] produtos e autoridades especializadas estiverem sem fragmentação material aberta;
-- [ ] MENU estiver reorganizado para uso multiequipe;
+- [x] MENU estiver reorganizado para uso multiequipe;
 - [ ] não houver seção histórica necessária para entender o estado atual;
 - [ ] validação semântica final tiver sucesso;
 - [ ] validação mecânica final tiver sucesso;
@@ -2120,10 +2232,12 @@ N DOCUMENTARY AUDIT
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
 O DOCUMENTARY AUDIT
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
-→ F-002 = OPEN / GOVERNING FINDING
+→ COMPLETED
+→ MENU REBUILD APPLIED / VALIDATED
+→ F-002 = RESOLVED
+→ FINAL SEMANTIC #861 = SUCCESS
+→ FINAL MECHANICAL #1119 = SUCCESS
+→ OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
 P
 → PENDING / NOT RELEASED
@@ -2132,9 +2246,8 @@ Q
 → BLOCKED
 
 NEXT
-→ CONTINUE O DOCUMENTARY AUDIT
-→ NAVIGATION / DISCOVERABILITY RECONCILIATION
-→ ADDRESS F-002 UNDER ITS OWN GOVERNED EVIDENCE
+→ P RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
 → DO NOT RELEASE P BY INFERENCE
 
 RESEARCH OPERATIONAL STATES
@@ -2179,8 +2292,8 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
 
 MENU FINAL
-→ AUDIT IN_PROGRESS UNDER O
-→ F-002 OPEN / REBUILD NOT YET EXECUTED
+→ REBUILT / VALIDATED
+→ F-002 RESOLVED
 ```
 
 ## 23. Destino deste registro
