@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.19.0** |
+| GKR-STATE-001 | **3.20.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -25,7 +25,8 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Lote L — Tecnologia / Dados / IA | **DOCUMENTARY AUDIT COMPLETED · F-020/F-021 RESOLVED · OPEN L-SPECIFIC MATERIAL FINDINGS = 0** |
 | Lote M — Jurídico / Privacidade / Institucional | **DOCUMENTARY AUDIT COMPLETED · OPEN M-SPECIFIC MATERIAL FINDINGS = 0 · F-022 NOT OPENED** |
 | Lote N — GTM / presença pública | **DOCUMENTARY AUDIT COMPLETED · OPEN N-SPECIFIC MATERIAL FINDINGS = 0 · F-022 NOT OPENED** |
-| Próximo movimento governado | **O — RELEASE ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY** |
+| Lote O — MENU final / rotas multiequipe | **RELEASED — DOCUMENTARY AUDIT ONLY / IN_PROGRESS · F-002 OPEN** |
+| Próximo movimento governado | **O — DOCUMENTARY AUDIT / NAVIGATION RECONCILIATION · ADDRESS F-002** |
 | F-007 | **RESOLVED — semantic/inventory scope** |
 | F-010 | **RESOLVED — cleanup e validação pós-cleanup concluídos** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
@@ -35,7 +36,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.18.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
+O [Roadmap 13.19.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
 
 ## Regra de leitura
 
@@ -352,7 +353,7 @@ Não estão comprovados ou autorizados apenas pela documentação:
 
 ## Próximo movimento governado
 
-Os Lotes J, K, L, M e N concluíram suas auditorias documentais. N fechou com `OPEN N-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`. Nenhum fechamento documental autoriza execução de GTM, piloto Portugal, configuração/publicação de perfis, operação de mercado, Design, Product Engineering, PMF ou O. O próximo ato é somente adjudicar a elegibilidade de liberação de O em modo documental/read-only.
+Os Lotes J, K, L, M e N concluíram suas auditorias documentais. A elegibilidade de O foi adjudicada como `PASS`, e O está liberado **somente** para auditoria documental de navegação/discoverability. Esta liberação não reconstrói o MENU, não resolve `F-002`, não altera `mkdocs.yml`, não libera P e não autoriza Design, Product Engineering, PMF ou operação.
 
 ```text
 J — PRODUTOS / ECONOMIA
@@ -389,16 +390,22 @@ N — GTM / PRESENÇA PÚBLICA
 → F-022 NOT OPENED
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
-O
-→ PENDING / HOLD
+O — MENU FINAL / ROTAS MULTIEQUIPE
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
+→ F-002 = OPEN / GOVERNING FINDING
+
+P
+→ PENDING / NOT RELEASED
 
 Q
 → BLOCKED
 
 NEXT
-→ O RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ O IS NOT RELEASED BY N CLOSURE
+→ CONTINUE O DOCUMENTARY AUDIT
+→ NAVIGATION / DISCOVERABILITY RECONCILIATION
+→ ADDRESS F-002 UNDER ITS OWN GOVERNED EVIDENCE
 
 UXA-102 / V5
 → NOT_STARTED
@@ -415,8 +422,8 @@ MERGE #363
 
 ## Navegação principal durante a auditoria
 
-- [Estado Atual 3.19.0](docs/project/current-state-register.md)
-- [Roadmap 13.18.0](docs/roadmap.md)
+- [Estado Atual 3.20.0](docs/project/current-state-register.md)
+- [Roadmap 13.19.0](docs/roadmap.md)
 - [Auditoria Integral do GKR](docs/project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](docs/project/gkr-specialized-homes-audit.md)
 - [Reconciliação das Homes Especializadas](docs/experience-architecture/public-specialized-homes-reconciliation.md)
@@ -429,4 +436,4 @@ MERGE #363
 - [Research e Validação](docs/research/market-validation/README.md)
 - [Go-to-Market](docs/go-to-market/index.md)
 
-O `mkdocs.yml` ainda será reconstruído no Lote O da auditoria. Até lá, sua estrutura não deve ser interpretada como arquitetura final da base de conhecimento.
+O `mkdocs.yml` permanece mecanicamente válido, mas ainda será reconstruído durante o Lote O sob `F-002`. Até o fechamento de O, sua estrutura não deve ser interpretada como arquitetura final da base de conhecimento.

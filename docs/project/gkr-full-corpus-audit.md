@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.24.0
+version: 1.25.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 normative: false
@@ -1131,6 +1131,86 @@ O fechamento canônico de N usa somente o boundary global de seis superfícies p
 
 Este registro de fechamento permanece condicionado à validação Semantic + Mechanical no novo `HEAD` exato. O fechamento de N não configura perfil, não publica conteúdo, não executa campanha, não ativa Portugal/Lisboa, não valida KPI, não aprova captação, não prova PMF, não libera O, não inicia Design, `UXA-102/V5`, Product Engineering, implementação, produção ou merge da PR #363.
 
+## 6.13 Elegibilidade e liberação canônica documental do Lote O
+
+Após o fechamento canônico e validado de N no `HEAD f30659a91d46c02333afcb9f0eb6449c23e40e73`, foi executada adjudicação read-only e preflight específico para determinar se O poderia ser liberado para auditoria documental de navegação/discoverability sem antecipar o rebuild do MENU nem a resolução de `F-002`.
+
+Resultado:
+
+```text
+O RELEASE ELIGIBILITY
+→ PASS
+
+DOCUMENTARY AUDITABILITY
+→ PASS
+
+MATERIAL BLOCKER TO DOCUMENTARY RELEASE
+→ NONE PROVEN
+
+F-002
+→ OPEN
+→ GOVERNING FINDING OF O
+→ NOT RESOLVED BY RELEASE
+
+F-022
+→ NOT OPENED
+```
+
+Fronteiras preservadas:
+
+```text
+CURRENT MENU
+→ MECHANICALLY VALID
+≠ FINAL INFORMATION ARCHITECTURE
+
+REPOSITORY NAVIGATION
+≠ PRODUCT INFORMATION ARCHITECTURE
+≠ EXPERIENCE NAVIGATION
+≠ UI NAVIGATION
+
+RELEASE O
+≠ EXECUTE O
+≠ REBUILD MENU
+≠ RESOLVE F-002
+```
+
+Adjudicação canônica:
+
+```text
+O — MENU FINAL / ROTAS MULTIEQUIPE
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
+→ F-002 = OPEN / GOVERNING FINDING
+
+P
+→ PENDING / NOT RELEASED
+
+Q
+→ BLOCKED
+
+NEXT
+→ CONTINUE O DOCUMENTARY AUDIT
+→ NAVIGATION / DISCOVERABILITY RECONCILIATION
+→ ADDRESS F-002 UNDER ITS OWN GOVERNED EVIDENCE
+→ DO NOT RELEASE P BY INFERENCE
+```
+
+A sincronização canônica de O mantém o boundary global de seis superfícies: `README.md`, `docs/index.md`, `docs/project/current-state-register.md`, este master audit, `docs/roadmap.md` e `docs/experience-architecture/uxa-047-101-index.md`.
+
+```text
+mkdocs.yml
+→ UNCHANGED BY O RELEASE
+
+F-002
+→ REMAINS OPEN
+
+P
+→ NOT RELEASED
+```
+
+Esta liberação não reconstrói o MENU, não altera `mkdocs.yml`, não resolve `F-002`, não libera P, não inicia Q, Design, `UXA-102/V5`, Product Engineering, operação de RP-002, participante real, Dry Run, PMF, implementação, produção ou merge da PR #363.
+
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
 O conflito material originalmente comprovado foi tratado de forma incremental e governada no Lote D, sem abrir materialização visual.
@@ -1770,8 +1850,8 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | L — Tecnologia / Dados / IA | `COMPLETED / DOCUMENTARY_AUDIT / F-020_RESOLVED / F-021_RESOLVED` | autoridades atuais e fronteiras de implementação reconciliadas; `OPEN L-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; nenhuma promoção operacional |
 | M — Jurídico / Privacidade / Institucional | `COMPLETED / DOCUMENTARY_AUDIT` | P5/P6 reconciliados; `OPEN M-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; nenhuma execução jurídica promovida |
 | N — GTM / presença pública | `COMPLETED / DOCUMENTARY_AUDIT` | `GTM-001..011 = KEEP`; fronteiras de presença/internacionalização reconciliadas; `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; nenhuma execução GTM promovida |
-| O — MENU / rotas por equipe | `PENDING / HOLD` | navegação final multiequipe |
-| P — Auditoria final | `PENDING` | `PASS` ou `PASS WITH MINOR FINDINGS` |
+| O — MENU / rotas por equipe | `IN_PROGRESS / DOCUMENTARY_AUDIT_ONLY / F-002_OPEN` | navegação final multiequipe; rebuild governado ainda pendente |
+| P — Auditoria final | `PENDING / NOT_RELEASED` | `PASS` ou `PASS WITH MINOR FINDINGS` |
 | Q — primeira tela pós-Home Pessoa | `BLOCKED` | somente depois de P |
 
 ## 16. Ordem de execução
@@ -1809,9 +1889,11 @@ N release eligibility                            [COMPLETED / PASS]
 ↓
 N. GTM / presença pública                        [COMPLETED / DOCUMENTARY AUDIT / OPEN N-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED]
 ↓
-O. MENU final                                    [PENDING / HOLD]
+O release eligibility                            [COMPLETED / PASS]
 ↓
-P. auditoria final                               [PENDING]
+O. MENU final                                    [IN_PROGRESS / DOCUMENTARY AUDIT ONLY / F-002 OPEN]
+↓
+P. auditoria final                               [PENDING / NOT RELEASED]
 ↓
 Q. primeira tela da Pessoa                       [BLOCKED]
 ```
@@ -2037,14 +2119,23 @@ N DOCUMENTARY AUDIT
 → F-022 NOT OPENED
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
-O
-→ PENDING / HOLD
-→ NOT RELEASED BY N CLOSURE
+O DOCUMENTARY AUDIT
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
+→ F-002 = OPEN / GOVERNING FINDING
+
+P
+→ PENDING / NOT RELEASED
+
+Q
+→ BLOCKED
 
 NEXT
-→ O RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ O IS NOT RELEASED BY N CLOSURE
+→ CONTINUE O DOCUMENTARY AUDIT
+→ NAVIGATION / DISCOVERABILITY RECONCILIATION
+→ ADDRESS F-002 UNDER ITS OWN GOVERNED EVIDENCE
+→ DO NOT RELEASE P BY INFERENCE
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION DEFERRED / NOT AUTHORIZED
@@ -2088,7 +2179,8 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
 
 MENU FINAL
-→ NOT YET DESIGNED
+→ AUDIT IN_PROGRESS UNDER O
+→ F-002 OPEN / REBUILD NOT YET EXECUTED
 ```
 
 ## 23. Destino deste registro

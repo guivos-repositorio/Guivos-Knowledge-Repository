@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.19.0
+version: 3.20.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 normative: true
@@ -158,13 +158,23 @@ N — GTM / PRESENÇA PÚBLICA
 → F-022 NOT OPENED
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
-O
-→ PENDING / HOLD
+O — MENU FINAL / ROTAS MULTIEQUIPE
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
+→ F-002 = OPEN / GOVERNING FINDING
+
+P
+→ PENDING / NOT RELEASED
+
+Q
+→ BLOCKED
 
 NEXT
-→ O RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ O IS NOT RELEASED BY N CLOSURE
+→ CONTINUE O DOCUMENTARY AUDIT
+→ NAVIGATION / DISCOVERABILITY RECONCILIATION
+→ ADDRESS F-002 UNDER ITS OWN GOVERNED EVIDENCE
+→ DO NOT RELEASE P BY INFERENCE
 
 UXA-102 / V5
 → NOT_STARTED
@@ -1324,7 +1334,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.24.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.25.0` está ativo como instrumento temporário de execução.
 
 ```text
 A / B / C / D / E / F / G
@@ -1381,21 +1391,25 @@ N
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
 O
-→ PENDING / HOLD
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
+→ F-002 = OPEN / GOVERNING FINDING
 
 P
-→ PENDING
+→ PENDING / NOT RELEASED
 
 Q
 → BLOCKED
 
 NEXT
-→ O RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ O IS NOT RELEASED BY N CLOSURE
+→ CONTINUE O DOCUMENTARY AUDIT
+→ NAVIGATION / DISCOVERABILITY RECONCILIATION
+→ ADDRESS F-002 UNDER ITS OWN GOVERNED EVIDENCE
+→ DO NOT RELEASE P BY INFERENCE
 ```
 
-O fechamento documental de N decorre da auditoria temática read-only e da adjudicação de `CLOSURE ELIGIBILITY = PASS`. Ele não executa GTM, não ativa Portugal como mercado, não configura/publica perfis, não prova performance de canal e não libera O.
+A liberação documental de O decorre de adjudicação própria de elegibilidade. Ela não reconstrói o MENU, não altera `mkdocs.yml`, não resolve `F-002`, não libera P e não promove Design, Product Engineering, operação, PMF ou baseline final.
 
 ## 27. Regra de navegação final
 
@@ -1456,7 +1470,7 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-A elegibilidade de liberação de N foi adjudicada como `PASS` sobre o `HEAD 0f4becfd65ee34e3de2cd944b1c66abf4f273657`. N foi liberado canonicamente para auditoria documental no commit `5729bcf6aed31b88e98a2ba97465a2868391a93d`; a auditoria temática subsequente concluiu `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`, `F-022 NOT OPENED` e `CLOSURE ELIGIBILITY = PASS`. O fechamento permanece exclusivamente documental e não autoriza execução real de GTM nem libera O.
+A elegibilidade de liberação de O foi adjudicada como `PASS` sobre o `HEAD f30659a91d46c02333afcb9f0eb6449c23e40e73`, sem mutação do alvo durante o preflight. A liberação canônica é exclusivamente documental e autoriza somente a auditoria de navegação/discoverability de O; `F-002` permanece aberto e governante.
 
 ```text
 N — GTM / PRESENÇA PÚBLICA
@@ -1465,56 +1479,35 @@ N — GTM / PRESENÇA PÚBLICA
 → F-022 NOT OPENED
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
-MATERIAL BLOCKER TO DOCUMENTARY CLOSURE
-→ NONE PROVEN
+O — MENU FINAL / ROTAS MULTIEQUIPE
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
+→ F-002 = OPEN / GOVERNING FINDING
 
-IMPROPER GTM MATURITY PROMOTION
-→ NONE PROVEN
+CURRENT MENU
+→ MECHANICALLY VALID
+≠ FINAL INFORMATION ARCHITECTURE
 
-PLANEJAMENTO
-≠ EXECUÇÃO
+REPOSITORY NAVIGATION
+≠ PRODUCT INFORMATION ARCHITECTURE
+≠ EXPERIENCE NAVIGATION
+≠ UI NAVIGATION
 
-CANDIDATE TARGET
-≠ COMMITMENT
-≠ RESULTADO REAL
+mkdocs.yml
+→ UNCHANGED BY O RELEASE
 
-CENÁRIO DE CAPTAÇÃO
-≠ CAPTAÇÃO APROVADA
-≠ CAPITAL RECEBIDO
+P
+→ PENDING / NOT RELEASED
 
-VALUATION INTERNA
-≠ PREÇO DE MERCADO
-
-KPI NÃO OBSERVADO
-≠ KPI VALIDADO
-≠ KPI REALIZADO
-
-ARQUITETURA DE PRESENÇA
-≠ PERFIL REAL CONFIGURADO
-
-ESPECIFICAÇÃO EDITORIAL
-≠ CONTEÚDO PUBLICADO
-
-GUIVOS
-≠ FUNDADOR
-
-PORTUGAL / LISBOA
-→ CANDIDATE / PRE-GATE
-→ PILOT LAUNCH NOT AUTHORIZED
-→ ACTIVE MARKET NOT PROVEN
-
-INSTAGRAM GUIVOS / FUNDADOR
-→ DOCUMENTED AUTHORITIES
-→ REAL CONFIGURATION / PUBLICATION NOT AUTHORIZED BY N CLOSURE
-
-O
-→ PENDING / HOLD
-→ NOT RELEASED BY N CLOSURE
+Q
+→ BLOCKED
 
 NEXT
-→ O RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ O IS NOT RELEASED BY N CLOSURE
+→ CONTINUE O DOCUMENTARY AUDIT
+→ NAVIGATION / DISCOVERABILITY RECONCILIATION
+→ ADDRESS F-002 UNDER ITS OWN GOVERNED EVIDENCE
+→ DO NOT RELEASE P BY INFERENCE
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
@@ -1539,4 +1532,4 @@ AINDA BLOQUEADOS
 → MERGE DA PR #363
 ```
 
-O fechamento de N não constitui campanha executada, mercado ativado, perfil configurado, conteúdo publicado, KPI realizado, captação concluída ou validação de PMF.
+A liberação de O não reconstrói o MENU, não resolve `F-002`, não altera `mkdocs.yml`, não libera P, não inicia Q e não constitui autorização operacional.

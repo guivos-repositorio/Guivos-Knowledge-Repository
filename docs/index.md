@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **3.19.0** |
+| Registro | `GKR-STATE-001` **3.20.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última frente funcional numerada | **UXA-101** |
@@ -25,7 +25,8 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Lote L — Tecnologia / Dados / IA | **DOCUMENTARY AUDIT COMPLETED · F-020/F-021 RESOLVED · OPEN L-SPECIFIC MATERIAL FINDINGS = 0** |
 | Lote M — Jurídico / Privacidade / Institucional | **DOCUMENTARY AUDIT COMPLETED · OPEN M-SPECIFIC MATERIAL FINDINGS = 0 · F-022 NOT OPENED** |
 | Lote N — GTM / presença pública | **DOCUMENTARY AUDIT COMPLETED · OPEN N-SPECIFIC MATERIAL FINDINGS = 0 · F-022 NOT OPENED** |
-| Próximo movimento governado | **O — RELEASE ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY** |
+| Lote O — MENU final / rotas multiequipe | **RELEASED — DOCUMENTARY AUDIT ONLY / IN_PROGRESS · F-002 OPEN** |
+| Próximo movimento governado | **O — DOCUMENTARY AUDIT / NAVIGATION RECONCILIATION · ADDRESS F-002** |
 | F-007 | **RESOLVED — semantic/inventory scope** |
 | F-010 | **RESOLVED — cleanup e validação pós-cleanup concluídos** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
@@ -35,7 +36,7 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.18.0](roadmap.md) governa a sequência atual.
+O [Roadmap 13.19.0](roadmap.md) governa a sequência atual.
 
 ## Por que o repositório está em auditoria
 
@@ -62,8 +63,8 @@ O histórico permanece no Git.
 
 ### Estado e direção
 
-- [Registro do Estado Atual 3.19.0](project/current-state-register.md)
-- [Roadmap 13.18.0](roadmap.md)
+- [Registro do Estado Atual 3.20.0](project/current-state-register.md)
+- [Roadmap 13.19.0](roadmap.md)
 - [Auditoria Integral do GKR](project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](project/gkr-specialized-homes-audit.md)
 - [Reconciliação das Homes Especializadas](experience-architecture/public-specialized-homes-reconciliation.md)
@@ -339,7 +340,7 @@ PERFIS DE RASTREABILIDADE
 
 ## Próximo movimento
 
-Os Lotes J, K, L, M e N concluíram suas auditorias documentais. N fechou com `OPEN N-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`. O Lote O permanece `PENDING / HOLD`; seu próximo gate é somente a adjudicação de elegibilidade documental/read-only.
+Os Lotes J, K, L, M e N concluíram suas auditorias documentais. A elegibilidade de O foi adjudicada como `PASS`, e O está liberado exclusivamente para auditoria documental de navegação/discoverability. `F-002` permanece aberto como finding governante; esta liberação não altera `mkdocs.yml`, não reconstrói o MENU e não libera P.
 
 ```text
 J — PRODUTOS / ECONOMIA
@@ -376,13 +377,22 @@ N — GTM / PRESENÇA PÚBLICA
 → F-022 NOT OPENED
 → GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
-O
-→ PENDING / HOLD
+O — MENU FINAL / ROTAS MULTIEQUIPE
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / NAVIGATION-DISCOVERABILITY RECONCILIATION
+→ F-002 = OPEN / GOVERNING FINDING
+
+P
+→ PENDING / NOT RELEASED
+
+Q
+→ BLOCKED
 
 NEXT
-→ O RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ O IS NOT RELEASED BY N CLOSURE
+→ CONTINUE O DOCUMENTARY AUDIT
+→ NAVIGATION / DISCOVERABILITY RECONCILIATION
+→ ADDRESS F-002 UNDER ITS OWN GOVERNED EVIDENCE
 
 UXA-102 / V5
 → NOT_STARTED
@@ -399,6 +409,6 @@ MERGE DA PR #363
 
 ## Navegação
 
-O MENU atual também está sob auditoria e será reconstruído para uso multiequipe depois que o corpus final estiver definido.
+O MENU atual também está sob auditoria e será reconstruído para uso multiequipe durante O, sob o finding `F-002`.
 
 A futura navegação deverá ser eficiente para liderança, marketing, publicidade, comercial, produto, UX, Design, desenvolvimento, dados/Intelligence, Research, jurídico/privacidade e operação/internacionalização sem duplicar autoridades.
