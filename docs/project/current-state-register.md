@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.16.0
+version: 3.17.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 normative: true
@@ -147,17 +147,18 @@ L — TECNOLOGIA / DADOS / IA
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
 
 M — JURÍDICO / PRIVACIDADE / INSTITUCIONAL
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ DOCUMENTARY AUDIT COMPLETED
+→ OPEN M-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
 → OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
-
-NEXT
-→ CONTINUE M DOCUMENTARY AUDIT
-→ READ-ONLY AUTHORITY / STATE RECONCILIATION
-→ DO NOT RELEASE N BY INFERENCE
 
 N
 → PENDING / NOT RELEASED
+
+NEXT
+→ N RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ N IS NOT RELEASED BY M CLOSURE
 
 UXA-102 / V5
 → NOT_STARTED
@@ -1317,7 +1318,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.21.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.22.0` está ativo como instrumento temporário de execução.
 
 ```text
 A / B / C / D / E / F / G
@@ -1362,13 +1363,18 @@ L
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
 
 M
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ DOCUMENTARY AUDIT COMPLETED
+→ OPEN M-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
 → OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
 
 N
 → PENDING / NOT RELEASED
+
+NEXT
+→ N RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ N IS NOT RELEASED BY M CLOSURE
 
 O
 → PENDING / HOLD
@@ -1380,7 +1386,7 @@ Q
 → BLOCKED
 ```
 
-A elegibilidade de M foi adjudicada como `PASS` e sua liberação canônica é exclusivamente documental/read-only. Isso não altera gates operacionais de Research, tecnologia, jurídico, privacidade, institucional ou filing, e não libera N.
+O fechamento documental de M preserva P5/P6 no limite de autoridade documental, mantém evidências operacionais específicas do RP-002 restritas ao próprio escopo, não constitui revisão jurídica profissional ou conformidade operacional, não autoriza filing e não libera N.
 
 ## 27. Regra de navegação final
 
@@ -1441,31 +1447,35 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-Os Lotes J, K e L concluíram suas auditorias documentais. `F-017`, `F-019`, `F-020` e `F-021` estão resolvidos. Nenhum finding material específico de L permanece aberto; `F-022` não foi aberto. A elegibilidade de M foi adjudicada como `PASS` no `HEAD 85344ad69204d77f6df56a829038e71bbb6746d1` e M está liberado exclusivamente para auditoria documental/read-only.
+Os Lotes J, K, L e M concluíram suas auditorias documentais. A auditoria de M foi concluída sobre o `HEAD 3e481c428a204e79221e32b7b1f1935cb14ee0ad`, sem finding material específico de M comprovado; `F-022` não foi aberto. O fechamento de M não libera N.
 
 ```text
 M — JURÍDICO / PRIVACIDADE / INSTITUCIONAL
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ DOCUMENTARY AUDIT COMPLETED
+→ OPEN M-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
+→ OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
 
-CORE AUDIT BOUNDARY
-→ P5 INSTITUTIONAL / LEGAL
-→ P6 PRIVACY / LEGAL TRUTH
+P5 / P6
+→ DOCUMENTARY AUTHORITY BOUNDARY RECONCILED
+→ TEMPORAL RP-002 PRIVACY EVIDENCE = VALID_COEXISTENCE
 
 P7 / CROSS-BORDER
 → LATERAL / BOUNDARY EVIDENCE ONLY DURING M
-→ GTM-007 IS NOT ADJUDICATED BY THIS RELEASE
+→ GTM-007 WAS NOT ADJUDICATED
 → N IS NOT RELEASED
 
 FILING
 → REQUIRES SEPARATE HUMAN FILING AUTHORIZATION
-→ NO GRU / PROTOCOL / FILING AUTHORIZED BY M RELEASE
-
-F-022
-→ NOT OPENED AT M RELEASE
+→ NO GRU / PROTOCOL / FILING AUTHORIZED BY M CLOSURE
 
 N
 → PENDING / NOT RELEASED
+
+NEXT
+→ N RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ N IS NOT RELEASED BY M CLOSURE
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
@@ -1490,4 +1500,4 @@ AINDA BLOQUEADOS
 → MERGE DA PR #363
 ```
 
-A liberação de M não constitui revisão jurídica profissional, não constitui entidade, não aprova tratamento de dados, não publica Termos/Política, não prova conformidade operacional e não autoriza operação.
+O fechamento de M não constitui revisão jurídica profissional, não constitui entidade, não aprova tratamento de dados, não publica Termos/Política, não prova conformidade operacional e não autoriza operação.

@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.16.0
+version: 3.17.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 depends_on:
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.16.0
+→ 3.17.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -74,16 +74,17 @@ L — TECNOLOGIA / DADOS / IA
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
 
 M — JURÍDICO / PRIVACIDADE / INSTITUCIONAL
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ DOCUMENTARY AUDIT COMPLETED
+→ OPEN M-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
 → OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
 
 N — GTM / PRESENÇA PÚBLICA
 → PENDING / NOT RELEASED
 
 PRÓXIMO MOVIMENTO GOVERNADO
-→ CONTINUE M DOCUMENTARY AUDIT — READ-ONLY AUTHORITY / STATE RECONCILIATION
-→ NÃO LIBERAR N POR INFERÊNCIA
+→ N RELEASE ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY
+→ N NÃO É LIBERADO PELO FECHAMENTO DE M
 → PRESERVAR DOCUMENTAÇÃO / IMPLEMENTAÇÃO / OPERAÇÃO COMO ESTADOS DISTINTOS
 → NÃO PROMOVER PRIVACIDADE DE REFERÊNCIA A CONTROLE OPERACIONAL
 → NÃO RETOMAR PRODUCT ENGINEERING
@@ -222,7 +223,7 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.16.0** |
+| Registro do Estado Atual | **3.17.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
@@ -237,9 +238,9 @@ Ainda não são canônicos:
 | Lote J — Produtos / Economia | **DOCUMENTARY AUDIT COMPLETED / F-017 RESOLVED** |
 | Lote K — Research / VAL / RP-002 | **DOCUMENTARY AUDIT COMPLETED / F-019 RESOLVED** |
 | Lote L — Tecnologia / Dados / IA | **DOCUMENTARY AUDIT COMPLETED / F-020 RESOLVED / F-021 RESOLVED / OPEN L-SPECIFIC MATERIAL FINDINGS = 0** |
-| Lote M — Jurídico / Privacidade / Institucional | **RELEASED / DOCUMENTARY AUDIT ONLY / READ-ONLY** |
+| Lote M — Jurídico / Privacidade / Institucional | **DOCUMENTARY AUDIT COMPLETED / OPEN M-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Lote N — GTM / presença pública | **PENDING / NOT RELEASED** |
-| Próximo movimento governado | **M DOCUMENTARY AUDIT — READ-ONLY AUTHORITY / STATE RECONCILIATION** |
+| Próximo movimento governado | **N RELEASE ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY** |
 | RP-002 Operational Readiness | **HOLD** |
 | Participant 001 | **HOLD** |
 | Dry Run real | **NOT RELEASED** |
