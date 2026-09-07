@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.22.0
+version: 1.23.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 normative: false
@@ -911,6 +911,106 @@ O fechamento canônico de M usa somente o boundary global de seis superfícies j
 
 Este registro de fechamento permanece condicionado à validação Semantic + Mechanical no novo `HEAD` exato. O fechamento de M não constitui revisão jurídica profissional, conformidade LGPD global, constituição de entidade, publicação de superfície legal, autorização de tratamento, filing, Design, `UXA-102/V5`, Product Engineering, Participant 001, Dry Run, PMF, implementação, produção ou merge da PR #363.
 
+## 6.11 Elegibilidade e liberação canônica documental do Lote N
+
+Após o fechamento canônico e validado de M no `HEAD 0f4becfd65ee34e3de2cd944b1c66abf4f273657`, foi executada adjudicação read-only específica para determinar se N poderia ser liberado para auditoria documental sem antecipar execução de GTM, presença pública, internacionalização ou O.
+
+Escopo confrontado:
+
+```text
+docs/go-to-market/index.md
+GTM-001..011
+Marca / Public Canon como boundary lateral
+papel público do fundador como boundary lateral
+estado global vigente
+```
+
+Resultado:
+
+```text
+N RELEASE ELIGIBILITY
+→ PASS
+
+DOCUMENTARY AUDITABILITY
+→ PASS
+
+CURRENT MATERIAL BLOCKER TO DOCUMENTARY RELEASE
+→ NONE PROVEN
+
+IMPROPER GTM MATURITY PROMOTION
+→ NONE PROVEN
+
+F-022
+→ NOT OPENED
+```
+
+Fronteiras preservadas:
+
+```text
+GTM-001..006
+→ PLANNING / TARGET BASELINES
+→ DRAFT / SUPPORTING
+→ DO NOT PROMOTE TARGET TO REALIZED RESULT
+
+GTM-007
+→ INTERNATIONALIZATION GOVERNANCE
+→ PORTUGAL = T1_candidate
+→ ACTIVE MARKET NOT PROVEN
+
+GTM-008
+→ PORTUGAL PILOT PRE-GATE
+→ launch_authorized = false
+→ REVIEW_REQUIRED
+→ LISBOA ≠ ACTIVE MARKET
+
+GTM-009
+→ INSTITUTIONAL PRESENCE ARCHITECTURE / GOVERNANCE
+→ NOT PROOF OF REAL EXECUTION
+
+GTM-010
+→ FOUNDER INSTAGRAM MASTER SPEC
+→ SPECIFICATION ≠ CREATION / CONFIGURATION / PUBLICATION
+
+GTM-011
+→ OPERATIONAL SPECIFICATION
+→ DEFAULT = NOT_EXECUTED
+→ CONFIGURED / PUBLISHED / VALIDATED REQUIRE OWN EVIDENCE
+```
+
+Guardrails:
+
+```text
+PLANEJAMENTO ≠ EXECUÇÃO
+CANDIDATE TARGET ≠ COMMITMENT ≠ RESULTADO REAL
+CENÁRIO DE CAPTAÇÃO ≠ CAPTAÇÃO APROVADA ≠ CAPITAL RECEBIDO
+VALUATION INTERNA ≠ PREÇO DE MERCADO
+KPI NÃO OBSERVADO ≠ KPI VALIDADO ≠ KPI REALIZADO
+ARQUITETURA DE PRESENÇA ≠ PERFIL REAL CONFIGURADO
+ESPECIFICAÇÃO EDITORIAL ≠ CONTEÚDO PUBLICADO
+GUIVOS ≠ FUNDADOR
+```
+
+Adjudicação canônica:
+
+```text
+N
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
+
+O
+→ PENDING / HOLD
+→ NOT RELEASED BY N RELEASE
+
+F-022
+→ NOT OPENED AT RELEASE
+```
+
+A sincronização canônica de N mantém o boundary global de seis superfícies: `README.md`, `docs/index.md`, `docs/project/current-state-register.md`, este master audit, `docs/roadmap.md` e `docs/experience-architecture/uxa-047-101-index.md`. Nenhuma autoridade GTM temática, `mkdocs.yml`, superfície de Design ou autoridade operacional é modificada por essa transação.
+
+Esta liberação não configura perfil, não publica conteúdo, não executa campanha, não ativa Portugal/Lisboa, não valida KPI, não aprova captação, não prova PMF, não libera O, não inicia Design, `UXA-102/V5`, Product Engineering, implementação, produção ou merge da PR #363.
+
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
 O conflito material originalmente comprovado foi tratado de forma incremental e governada no Lote D, sem abrir materialização visual.
@@ -1548,9 +1648,9 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | J — Produtos / Economia | `COMPLETED / DOCUMENTARY_AUDIT` | F-017 resolvido; fronteiras de plano/capacidade/budget/entitlement/billing, Ads e impacto adjudicadas sem outro finding material aberto |
 | K — Research / RP-002 | `COMPLETED / DOCUMENTARY_AUDIT / F-019_RESOLVED` | método/evidência preservados; nenhum gate operacional promovido; nenhum finding K específico material aberto |
 | L — Tecnologia / Dados / IA | `COMPLETED / DOCUMENTARY_AUDIT / F-020_RESOLVED / F-021_RESOLVED` | autoridades atuais e fronteiras de implementação reconciliadas; `OPEN L-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; nenhuma promoção operacional |
-| M — Jurídico / Privacidade / Institucional | `COMPLETED / DOCUMENTARY_AUDIT` | P5/P6 reconciliados; `OPEN M-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; N não liberado |
-| N — GTM / presença pública | `PENDING / NOT_RELEASED` | autoridades atuais sem duplicação histórica |
-| O — MENU / rotas por equipe | `PENDING` | navegação final multiequipe |
+| M — Jurídico / Privacidade / Institucional | `COMPLETED / DOCUMENTARY_AUDIT` | P5/P6 reconciliados; `OPEN M-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; nenhuma execução jurídica promovida |
+| N — GTM / presença pública | `IN_PROGRESS / DOCUMENTARY_AUDIT_ONLY / READ_ONLY` | autoridades atuais, GTM-001..011, presença institucional/fundador e histórico confrontados sem promover execução real |
+| O — MENU / rotas por equipe | `PENDING / HOLD` | navegação final multiequipe |
 | P — Auditoria final | `PENDING` | `PASS` ou `PASS WITH MINOR FINDINGS` |
 | Q — primeira tela pós-Home Pessoa | `BLOCKED` | somente depois de P |
 
@@ -1585,15 +1685,15 @@ M release eligibility                            [COMPLETED / PASS]
 ↓
 M. Jurídico / Privacidade / Institucional        [COMPLETED / DOCUMENTARY AUDIT / OPEN M-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED]
 ↓
-N release eligibility                            [NEXT / DOCUMENTARY READ-ONLY]
+N release eligibility                            [COMPLETED / PASS]
 ↓
-N. GTM / presença pública                        [PENDING / NOT RELEASED]
+N. GTM / presença pública                        [IN_PROGRESS / DOCUMENTARY AUDIT ONLY / READ-ONLY]
 ↓
-O. MENU final
+O. MENU final                                    [PENDING / HOLD]
 ↓
-P. auditoria final
+P. auditoria final                               [PENDING]
 ↓
-Q. primeira tela da Pessoa
+Q. primeira tela da Pessoa                       [BLOCKED]
 ```
 
 O MENU é redesenhado perto do final porque deve refletir o corpus que restar depois da consolidação.
@@ -1806,13 +1906,22 @@ M DOCUMENTARY AUDIT
 → F-022 NOT OPENED
 → OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
 
-N
-→ PENDING / NOT RELEASED
+N DOCUMENTARY AUDIT
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ MATERIAL BLOCKER TO DOCUMENTARY RELEASE = NONE PROVEN
+→ IMPROPER GTM MATURITY PROMOTION = NONE PROVEN
+→ GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
+
+O
+→ PENDING / HOLD
+→ NOT RELEASED BY N RELEASE
 
 NEXT
-→ N RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ N IS NOT RELEASED BY M CLOSURE
+→ CONTINUE N DOCUMENTARY AUDIT
+→ READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ DO NOT RELEASE O BY INFERENCE
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION DEFERRED / NOT AUTHORIZED
@@ -1833,6 +1942,12 @@ LEGAL / PRIVACY / INSTITUTIONAL OPERATIONAL STATES
 → NO PRIVACY CONTROL PROMOTED TO PRODUCTION
 → NO LEGAL SURFACE PUBLICATION AUTHORIZED
 → FILING REQUIRES SEPARATE HUMAN AUTHORIZATION
+
+GTM / PUBLIC PRESENCE OPERATIONAL STATES
+→ NO GTM EXECUTION AUTHORIZED BY N RELEASE
+→ PORTUGAL REMAINS CANDIDATE / PRE-GATE
+→ NO PROFILE CONFIGURATION OR CONTENT PUBLICATION AUTHORIZED
+→ NO MARKET KPI PROMOTED TO REALIZED
 
 BASELINE FINAL
 → NOT AUTHORIZED

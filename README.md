@@ -10,7 +10,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **3.17.0** |
+| GKR-STATE-001 | **3.18.0** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
@@ -24,8 +24,8 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Lote K — Research / VAL / RP-002 | **DOCUMENTARY AUDIT COMPLETED · F-019 RESOLVED** |
 | Lote L — Tecnologia / Dados / IA | **DOCUMENTARY AUDIT COMPLETED · F-020/F-021 RESOLVED · OPEN L-SPECIFIC MATERIAL FINDINGS = 0** |
 | Lote M — Jurídico / Privacidade / Institucional | **DOCUMENTARY AUDIT COMPLETED · OPEN M-SPECIFIC MATERIAL FINDINGS = 0 · F-022 NOT OPENED** |
-| Lote N — GTM / presença pública | **PENDING / NOT RELEASED** |
-| Próximo movimento governado | **N — RELEASE ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY** |
+| Lote N — GTM / presença pública | **RELEASED — DOCUMENTARY AUDIT ONLY / READ-ONLY** |
+| Próximo movimento governado | **N — DOCUMENTARY AUDIT — READ-ONLY AUTHORITY / STATE RECONCILIATION** |
 | F-007 | **RESOLVED — semantic/inventory scope** |
 | F-010 | **RESOLVED — cleanup e validação pós-cleanup concluídos** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
@@ -35,7 +35,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
 | Public Canon atual | **GOG-001 v5.3.0** |
 
-O [Roadmap 13.16.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
+O [Roadmap 13.17.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
 
 ## Regra de leitura
 
@@ -352,7 +352,7 @@ Não estão comprovados ou autorizados apenas pela documentação:
 
 ## Próximo movimento governado
 
-Os Lotes J, K, L e M concluíram suas auditorias documentais. M fechou com `OPEN M-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`. Nenhum fechamento documental autoriza operação jurídica, privacidade em produção, constituição de entidade, filing, Design, Product Engineering ou N. O próximo ato é somente adjudicar a elegibilidade de liberação de N em modo documental/read-only.
+Os Lotes J, K, L e M concluíram suas auditorias documentais. A elegibilidade de N foi adjudicada como `PASS`, e N está liberado **somente** para auditoria documental/read-only. A liberação não autoriza execução de GTM, piloto Portugal, configuração/publicação de perfis, operação de mercado, Design, Product Engineering, PMF ou O.
 
 ```text
 J — PRODUTOS / ECONOMIA
@@ -384,18 +384,22 @@ M — JURÍDICO / PRIVACIDADE / INSTITUCIONAL
 → OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
 
 N — GTM / PRESENÇA PÚBLICA
-→ PENDING / NOT RELEASED
-
-NEXT
-→ N RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ N IS NOT RELEASED BY M CLOSURE
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
 
 O
 → PENDING / HOLD
+→ NOT RELEASED BY N RELEASE
 
 Q
 → BLOCKED
+
+NEXT
+→ CONTINUE N DOCUMENTARY AUDIT
+→ READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ DO NOT RELEASE O BY INFERENCE
 
 UXA-102 / V5
 → NOT_STARTED
@@ -412,8 +416,8 @@ MERGE #363
 
 ## Navegação principal durante a auditoria
 
-- [Estado Atual 3.17.0](docs/project/current-state-register.md)
-- [Roadmap 13.16.0](docs/roadmap.md)
+- [Estado Atual 3.18.0](docs/project/current-state-register.md)
+- [Roadmap 13.17.0](docs/roadmap.md)
 - [Auditoria Integral do GKR](docs/project/gkr-full-corpus-audit.md)
 - [Auditoria do Lote F — Homes Especializadas](docs/project/gkr-specialized-homes-audit.md)
 - [Reconciliação das Homes Especializadas](docs/experience-architecture/public-specialized-homes-reconciliation.md)
