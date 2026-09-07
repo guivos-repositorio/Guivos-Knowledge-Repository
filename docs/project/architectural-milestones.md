@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.47.0
+version: 5.48.0
 owner: Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-06
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-13.5.0
+  - ROADMAP-13.13.0
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-GLOBAL-INTEGRITY-POST300-001
   - GPA-007
@@ -51,7 +51,7 @@ normative: false
 
 Este registro apresenta a linha de maturidade arquitetural consolidada. O estado oficial permanece em `GKR-STATE-001`; durante a auditoria integral, `GKR-FULL-CORPUS-AUDIT-001` governa o estado dos lotes e dos achados ainda em tratamento.
 
-A versão 5.47.0 preserva integralmente a linha funcional até M7.88, mantém a autoridade pública do fundador como frente de marca/governança sem novo marco funcional e reconcilia a leitura do inventário visual com o Bloco I da auditoria.
+A versão 5.48.0 preserva integralmente a linha funcional até M7.88, mantém a autoridade pública do fundador como frente de marca/governança sem novo marco funcional e reconcilia a leitura do inventário visual com o estado pós-`F-016-A` / `F-016`.
 
 ```text
 MARCO ANTERIOR ≠ ESTADO CORRENTE
@@ -140,15 +140,15 @@ Esses avanços permanecem subordinados ao marco M7.88 porque não iniciam nova U
 
 ## 6. Inventário corrente — leitura auditada
 
-O Bloco I da auditoria separa inventário físico de maturidade visual vigente.
+O Bloco I da auditoria separa inventário físico de maturidade visual vigente. Após `F-016-A` e `F-016`, a camada física de SVGs foi removida do corpus corrente, com proveniência histórica preservada no Git.
 
 | Elemento | Estado |
 |---|---|
-| SVGs físicos | **121** |
-| Associações físicas | **121** |
-| Perfis de rastreabilidade | **34** |
-| Duplicatas exatas por blob SHA no snapshot auditado | **0** |
-| Near-duplicates | **NOT_CERTIFIED** |
+| SVGs físicos | **0** |
+| Associações físicas correntes | **0** |
+| Perfis de rastreabilidade | **34 — preservados como proveniência/semântica** |
+| Embeds/links vivos para assets removidos | **0** |
+| Near-duplicates físicos correntes | **0 — não existem SVGs físicos correntes para comparação** |
 | Total agregado de wireframes vigentes | **NOT_CERTIFIED** |
 | Total agregado de wireframes validados vigentes | **NOT_CERTIFIED** |
 | Total agregado de pendências visuais | **NOT_CERTIFIED** |
@@ -161,7 +161,7 @@ CONTAGEM FÍSICA DE SVGs
 ≠ WIREFRAMES VALIDADOS
 ```
 
-O antigo snapshot `121 validados / 0 pendentes` permanece rastreável em seus checkpoints históricos, mas não representa a maturidade visual vigente do corpus.
+O antigo snapshot `121 validados / 0 pendentes` permanece rastreável em seus checkpoints históricos, mas não representa nem o inventário físico nem a maturidade visual vigente do corpus. A ausência física de SVGs também não certifica maturidade de Design.
 
 ## 7. Experience Architecture pública
 
