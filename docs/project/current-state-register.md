@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.15.0
+version: 3.16.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 normative: true
@@ -146,12 +146,17 @@ L — TECNOLOGIA / DADOS / IA
 → F-022 NOT OPENED
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
 
-NEXT
-→ M RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ M IS NOT RELEASED BY L CLOSURE
+M — JURÍDICO / PRIVACIDADE / INSTITUCIONAL
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
 
-M / N
+NEXT
+→ CONTINUE M DOCUMENTARY AUDIT
+→ READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ DO NOT RELEASE N BY INFERENCE
+
+N
 → PENDING / NOT RELEASED
 
 UXA-102 / V5
@@ -1312,7 +1317,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.20.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.21.0` está ativo como instrumento temporário de execução.
 
 ```text
 A / B / C / D / E / F / G
@@ -1356,7 +1361,13 @@ L
 → F-022 NOT OPENED
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
 
-M / N
+M
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
+
+N
 → PENDING / NOT RELEASED
 
 O
@@ -1369,7 +1380,7 @@ Q
 → BLOCKED
 ```
 
-A conclusão documental de L não altera gates operacionais de Research nem autoriza implementação tecnológica. M/N permanecem não liberados; o próximo ato governado é somente a adjudicação de elegibilidade de liberação de M.
+A elegibilidade de M foi adjudicada como `PASS` e sua liberação canônica é exclusivamente documental/read-only. Isso não altera gates operacionais de Research, tecnologia, jurídico, privacidade, institucional ou filing, e não libera N.
 
 ## 27. Regra de navegação final
 
@@ -1430,33 +1441,31 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-Os Lotes J, K e L concluíram suas auditorias documentais. `F-017`, `F-019`, `F-020` e `F-021` estão resolvidos. Nenhum finding material específico de L permanece aberto; `F-022` não foi aberto. M/N permanecem não liberados.
+Os Lotes J, K e L concluíram suas auditorias documentais. `F-017`, `F-019`, `F-020` e `F-021` estão resolvidos. Nenhum finding material específico de L permanece aberto; `F-022` não foi aberto. A elegibilidade de M foi adjudicada como `PASS` no `HEAD 85344ad69204d77f6df56a829038e71bbb6746d1` e M está liberado exclusivamente para auditoria documental/read-only.
 
 ```text
-J — PRODUTOS / ECONOMIA
-→ DOCUMENTARY AUDIT COMPLETED
-→ F-017 RESOLVED
+M — JURÍDICO / PRIVACIDADE / INSTITUCIONAL
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
 
-K — RESEARCH / VAL / RP-002
-→ DOCUMENTARY AUDIT COMPLETED
-→ F-019 RESOLVED
-→ NO OPEN K-SPECIFIC MATERIAL FINDING IDENTIFIED
+CORE AUDIT BOUNDARY
+→ P5 INSTITUTIONAL / LEGAL
+→ P6 PRIVACY / LEGAL TRUTH
 
-L — TECHNOLOGY / DATA / AI
-→ DOCUMENTARY AUDIT COMPLETED
-→ F-020 RESOLVED
-→ F-021 RESOLVED
-→ OPEN L-SPECIFIC MATERIAL FINDINGS = 0
-→ F-022 NOT OPENED
+P7 / CROSS-BORDER
+→ LATERAL / BOUNDARY EVIDENCE ONLY DURING M
+→ GTM-007 IS NOT ADJUDICATED BY THIS RELEASE
+→ N IS NOT RELEASED
 
-NEXT
-→ ADJUDICATE M RELEASE ELIGIBILITY
-→ DOCUMENTARY / READ-ONLY ONLY
-→ DO NOT RELEASE M BY INFERENCE
-→ N REMAINS NOT RELEASED
-→ PRESERVE ARCHITECTURE / TECHNOLOGY / IMPLEMENTATION DISTINCTIONS
-→ PRODUCT ENGINEERING REMAINS PAUSED BEFORE W0-01
-→ PMF REMAINS NOT VALIDATED
+FILING
+→ REQUIRES SEPARATE HUMAN FILING AUTHORIZATION
+→ NO GRU / PROTOCOL / FILING AUTHORIZED BY M RELEASE
+
+F-022
+→ NOT OPENED AT M RELEASE
+
+N
+→ PENDING / NOT RELEASED
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
@@ -1465,11 +1474,9 @@ RESEARCH OPERATIONAL STATES
 → DRY RUN REAL = NOT RELEASED
 → PMF = NOT VALIDATED
 
-O
-→ PENDING / HOLD
-
-Q
-→ BLOCKED
+TECHNOLOGY / PRODUCT ENGINEERING
+→ IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
+→ PRODUCT ENGINEERING PAUSED BEFORE W0-01
 
 AINDA BLOQUEADOS
 → UXA-102
@@ -1480,6 +1487,7 @@ AINDA BLOQUEADOS
 → PRODUCT ENGINEERING
 → PMF
 → IMPLEMENTAÇÃO / PRODUÇÃO
+→ MERGE DA PR #363
 ```
 
-O fechamento de L é estritamente documental e não altera os estados operacionais de Research, tecnologia ou qualquer gate posterior.
+A liberação de M não constitui revisão jurídica profissional, não constitui entidade, não aprova tratamento de dados, não publica Termos/Política, não prova conformidade operacional e não autoriza operação.

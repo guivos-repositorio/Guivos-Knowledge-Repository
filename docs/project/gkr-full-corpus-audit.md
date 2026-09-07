@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.20.0
+version: 1.21.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 normative: false
@@ -726,6 +726,90 @@ A transação canônica de fechamento de L sincroniza somente as seis superfíci
 
 Este registro de fechamento permanece condicionado à validação Semantic + Mechanical do novo `HEAD` exato. O fechamento de L, ainda que validado, não libera M/N, não inicia Design, `UXA-102/V5`, Product Engineering, operação de RP-002, participante real, Dry Run, PMF, implementação, produção ou merge da PR #363.
 
+## 6.9 Elegibilidade e liberação canônica documental do Lote M
+
+Após o fechamento canônico e validado de L no `HEAD 85344ad69204d77f6df56a829038e71bbb6746d1`, foi executada adjudicação read-only específica para determinar se M poderia ser liberado sem antecipar operação jurídica, privacidade implementada ou N.
+
+Escopo confrontado no preflight:
+
+```text
+P5 — INSTITUTIONAL / LEGAL
+→ institutional-and-legal-architecture
+→ institutional-and-legal-architecture-index
+→ institutional-legal-evidence-and-formation-gates
+→ fundacao-guivos-institutional-concept-and-legal-status
+
+P6 — PRIVACY / LEGAL TRUTH
+→ data-privacy-and-consent-governance
+→ legal-surface-evidence-and-publication-gates
+→ operational-and-legal-truth-registry
+→ operational-privacy-and-legal-truth-index
+```
+
+Resultado:
+
+```text
+M RELEASE ELIGIBILITY
+→ PASS
+
+P5 / P6
+→ AUDITABLE DOCUMENTALLY
+→ DO NOT REQUIRE OPERATION TO BE AUDITED
+
+DOCUMENTATION / OPERATION BOUNDARY
+→ EXPLICITLY GOVERNED
+
+ACEITE CONTRATUAL
+≠ CONSENTIMENTO LGPD
+
+POLÍTICA EM DRAFT
+≠ POLÍTICA PUBLICADA
+
+ARQUITETURA DE PRIVACIDADE
+≠ CONTROLE IMPLEMENTADO
+≠ EVIDÊNCIA OPERACIONAL
+
+CONCEITO INSTITUCIONAL
+≠ FORMA JURÍDICA
+≠ ENTIDADE CONSTITUÍDA
+≠ OPERAÇÃO REAL
+```
+
+Boundary lateral:
+
+```text
+P7 / INTERNATIONAL / CROSS-BORDER
+→ MAY BE READ AS BOUNDARY EVIDENCE
+→ DEPENDS ON GTM-007
+→ MUST NOT FORCE GTM-007 ADJUDICATION DURING M
+→ MUST NOT RELEASE N
+
+TRADEMARK FILING
+→ SEPARATE HUMAN FILING AUTHORIZATION REQUIRED
+→ M RELEASE DOES NOT AUTHORIZE GRU / PROTOCOL / FILING
+```
+
+`F-022` não foi aberto no preflight de liberação. Isso não equivale a afirmar que a auditoria completa de M já encontrou zero findings; a auditoria temática de M apenas começa após a liberação.
+
+Adjudicação canônica:
+
+```text
+M
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
+
+N
+→ PENDING / NOT RELEASED
+
+F-022
+→ NOT OPENED AT RELEASE
+```
+
+A sincronização canônica de M mantém o mesmo boundary global de seis superfícies exigido pela política e pelo validator de estado: `README.md`, `docs/index.md`, `docs/project/current-state-register.md`, este master audit, `docs/roadmap.md` e `docs/experience-architecture/uxa-047-101-index.md`.
+
+Esta liberação não constitui revisão jurídica profissional, não constitui entidade, não aprova tratamento de dados, não publica Termos/Política, não prova conformidade operacional, não autoriza filing, não inicia Design, `UXA-102/V5`, Product Engineering, operação de RP-002, participante real, Dry Run, PMF, implementação, produção ou merge da PR #363.
+
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
 O conflito material originalmente comprovado foi tratado de forma incremental e governada no Lote D, sem abrir materialização visual.
@@ -1363,7 +1447,7 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | J — Produtos / Economia | `COMPLETED / DOCUMENTARY_AUDIT` | F-017 resolvido; fronteiras de plano/capacidade/budget/entitlement/billing, Ads e impacto adjudicadas sem outro finding material aberto |
 | K — Research / RP-002 | `COMPLETED / DOCUMENTARY_AUDIT / F-019_RESOLVED` | método/evidência preservados; nenhum gate operacional promovido; nenhum finding K específico material aberto |
 | L — Tecnologia / Dados / IA | `COMPLETED / DOCUMENTARY_AUDIT / F-020_RESOLVED / F-021_RESOLVED` | autoridades atuais e fronteiras de implementação reconciliadas; `OPEN L-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; nenhuma promoção operacional |
-| M — Jurídico / Privacidade / Institucional | `PENDING / NOT_RELEASED` | documental e operacional separados corretamente |
+| M — Jurídico / Privacidade / Institucional | `IN_PROGRESS / DOCUMENTARY_AUDIT_ONLY` | P5/P6 auditados com documentação e operação separadas; N não liberado por boundary P7 |
 | N — GTM / presença pública | `PENDING / NOT_RELEASED` | autoridades atuais sem duplicação histórica |
 | O — MENU / rotas por equipe | `PENDING` | navegação final multiequipe |
 | P — Auditoria final | `PENDING` | `PASS` ou `PASS WITH MINOR FINDINGS` |
@@ -1396,7 +1480,11 @@ K. Research / VAL / RP-002                       [COMPLETED / DOCUMENTARY AUDIT 
 ↓
 L. Tecnologia / Dados / IA                       [COMPLETED / DOCUMENTARY AUDIT / F-020 RESOLVED / F-021 RESOLVED]
 ↓
-M/N. domínios especializados                     [PENDING / NOT RELEASED]
+M release eligibility                            [COMPLETED / PASS]
+↓
+M. Jurídico / Privacidade / Institucional        [IN_PROGRESS / DOCUMENTARY AUDIT ONLY]
+↓
+N. GTM / presença pública                        [PENDING / NOT RELEASED]
 ↓
 O. MENU final
 ↓
@@ -1604,10 +1692,14 @@ L DOCUMENTARY AUDIT
 → F-022 NOT OPENED
 → IMPLEMENTATION / PRODUCTION REMAIN NOT AUTHORIZED
 
-DOWNSTREAM RELEASE ADJUDICATION
-→ M / N PENDING / NOT RELEASED
-→ NEXT = M RELEASE ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY
-→ L CLOSURE DOES NOT RELEASE M
+M RELEASE ELIGIBILITY
+→ PASS
+→ M RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ F-022 NOT OPENED AT RELEASE
+
+N
+→ PENDING / NOT RELEASED
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION DEFERRED / NOT AUTHORIZED
@@ -1621,6 +1713,13 @@ TECHNOLOGY OPERATIONAL STATES
 → NEO4J REFERENCE_SELECTED ≠ PRODUCTION
 → GRAPHRAG CANDIDATE ≠ IMPLEMENTED
 → NO IMPLEMENTATION / PRODUCTION AUTHORIZED BY L CLOSURE
+
+LEGAL / PRIVACY / INSTITUTIONAL OPERATIONAL STATES
+→ NO LEGAL EXECUTION AUTHORIZED BY M RELEASE
+→ NO ENTITY CONSTITUTION AUTHORIZED
+→ NO PRIVACY CONTROL PROMOTED TO PRODUCTION
+→ NO LEGAL SURFACE PUBLICATION AUTHORIZED
+→ FILING REQUIRES SEPARATE HUMAN AUTHORIZATION
 
 BASELINE FINAL
 → NOT AUTHORIZED

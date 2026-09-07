@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.14.0
+id: ROADMAP-13.15.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.14.0
+version: 13.15.0
 owner: Guivos
 last_updated: 2026-09-07
 normative: true
@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.15.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.16.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -53,7 +53,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. M/N permanecem não liberados; o próximo ato governado é somente a adjudicação da elegibilidade de liberação de M.
+Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. A elegibilidade de M foi adjudicada como `PASS`; M está liberado somente para auditoria documental/read-only. N permanece não liberado; o próximo ato governado é continuar M no limite documental.
 
 `F-016-A` concluiu o ciclo governado: elegibilidade estrutural/semântica, autorização humana separada, cleanup físico 119/119, reconciliação, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. A subfrente está `RESOLVED` e o inventário físico corrente de SVGs é zero.
 
@@ -66,7 +66,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.15.0** |
+| Estado global | **GKR-STATE-001 v3.16.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -86,7 +86,8 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Lote J — Produtos / Economia | **DOCUMENTARY AUDIT COMPLETED / F-017 RESOLVED** |
 | Lote K — Research / VAL / RP-002 | **DOCUMENTARY AUDIT COMPLETED / F-019 RESOLVED** |
 | Lote L — Tecnologia / Dados / IA | **DOCUMENTARY AUDIT COMPLETED / F-020 RESOLVED / F-021 RESOLVED / OPEN L-SPECIFIC MATERIAL FINDINGS = 0** |
-| Lotes M / N | **PENDING / NOT RELEASED** |
+| Lote M — Jurídico / Privacidade / Institucional | **RELEASED / DOCUMENTARY AUDIT ONLY / READ-ONLY** |
+| Lote N — GTM / presença pública | **PENDING / NOT RELEASED** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |
@@ -170,9 +171,11 @@ DECISÃO GOVERNADA K → L                  [L RELEASED DOCUMENTARY-ONLY / M-N H
 ↓
 L. TECNOLOGIA / DADOS / IA               [DOCUMENTARY AUDIT COMPLETED / F-020 RESOLVED / F-021 RESOLVED]
 ↓
-ADJUDICAÇÃO DE ELEGIBILIDADE M           [NEXT / M NOT RELEASED]
+ADJUDICAÇÃO DE ELEGIBILIDADE M           [COMPLETED / PASS]
 ↓
-M. JURÍDICO / PRIVACIDADE / INSTITUCIONAL [PENDING / NOT RELEASED]
+DECISÃO GOVERNADA L → M                  [M RELEASED DOCUMENTARY-ONLY / N HOLD]
+↓
+M. JURÍDICO / PRIVACIDADE / INSTITUCIONAL [IN_PROGRESS / DOCUMENTARY AUDIT ONLY]
 ↓
 N. GTM / PRESENÇA PÚBLICA                [PENDING / NOT RELEASED]
 ↓
@@ -592,7 +595,10 @@ L
 → F-020 RESOLVED
 → F-021 RESOLVED
 
-M / N
+M
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+
+N
 → NOT RELEASED
 ```
 
@@ -775,7 +781,10 @@ IMPLEMENTATION / PRODUCTION
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
 
-M / N
+M
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+
+N
 → NOT RELEASED
 ```
 
@@ -827,19 +836,32 @@ F-022
 
 `GCCM-001` não foi artificialmente incorporado a L: sua natureza é de Core Capability / Enterprise Architecture, permanece independente de tecnologia e pode ser adjudicado no domínio correto sem funcionar como autoridade tecnológica concorrente.
 
-O fechamento de L é documental. Ele não autoriza POC, provisionamento, deploy, acesso a dados reais, criação de pipelines, Product Engineering ou ativação de qualquer tecnologia. Também não libera M/N.
+O fechamento de L é documental. Ele não autoriza POC, provisionamento, deploy, acesso a dados reais, criação de pipelines, Product Engineering ou ativação de qualquer tecnologia. A liberação posterior de M continua igualmente restrita ao limite documental.
 
 ## 17. Lote M — Jurídico, privacidade e institucional
 
 Estado atual:
 
 ```text
-PENDING / NOT RELEASED
+RELEASED / DOCUMENTARY AUDIT ONLY / READ-ONLY
 ```
 
-O próximo ato governado não é executar M automaticamente, mas adjudicar se M está elegível para liberação documental/read-only.
+A elegibilidade de M foi adjudicada como `PASS`. A auditoria pode confrontar as autoridades P5/P6 sem confundir documentação com operação e sem promover estados jurídicos, regulatórios, de privacidade ou compliance por inferência.
 
-Quando e somente se liberado, auditar sem confundir documentação e operação.
+Boundary principal:
+
+```text
+P5 — INSTITUTIONAL / LEGAL
+→ AUDITABLE IN M
+
+P6 — PRIVACY / LEGAL TRUTH
+→ AUDITABLE IN M
+
+P7 — INTERNATIONAL / CROSS-BORDER
+→ LATERAL / BOUNDARY EVIDENCE ONLY
+→ MUST NOT FORCE GTM-007 ADJUDICATION
+→ MUST NOT RELEASE N
+```
 
 Preservações:
 
@@ -852,6 +874,11 @@ ARQUITETURA DE PRIVACIDADE
 
 POLÍTICA EM DRAFT
 ≠ POLÍTICA PUBLICADA
+
+CONCEITO INSTITUCIONAL
+≠ FORMA JURÍDICA
+≠ ENTIDADE CONSTITUÍDA
+≠ OPERAÇÃO REAL
 ```
 
 RP-002 mantém, conforme autoridades próprias:
@@ -867,7 +894,15 @@ Os demais gates operacionais continuam conforme evidência específica.
 
 `Fundação Guivos` continua conceito institucional social validado e nome de trabalho, não entidade jurídica automaticamente constituída.
 
+Filing permanece gate paralelo e exige **Human Filing Authorization** separada. A liberação de M não autoriza GRU, protocolo, registro ou gasto.
+
 ## 18. Lote N — GTM e presença pública
+
+Estado atual:
+
+```text
+PENDING / NOT RELEASED
+```
 
 Autoridades vigentes:
 
@@ -875,7 +910,7 @@ Autoridades vigentes:
 - `GTM-010` — Instagram do Fundador — Especificação Mestre;
 - `GTM-011` — Instagram do Fundador — Especificação Operacional.
 
-Auditar GTM-001..008 e demais registros para identificar:
+Quando N for separadamente liberado, auditar GTM-001..008 e demais registros para identificar:
 
 - autoridade ainda própria;
 - conteúdo absorvível;
@@ -1093,11 +1128,14 @@ SIMULAÇÃO ≠ PMF
 CONSOLIDAÇÃO ≠ REDUÇÃO DE CONHECIMENTO
 P1–P5 HISTÓRICOS ≠ SEQUÊNCIA OPERACIONAL ATUAL
 DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL DURANTE A AUDITORIA
+ACEITE CONTRATUAL ≠ CONSENTIMENTO LGPD
+POLÍTICA PUBLICADA ≠ CONFORMIDADE OPERACIONAL COMPROVADA
+CONCEITO INSTITUCIONAL ≠ ENTIDADE CONSTITUÍDA
 ```
 
 ## 26. Regra do próximo movimento
 
-`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020` e `F-021` estão `RESOLVED`. J, K e L concluíram suas auditorias documentais. `F-022` não foi aberto.
+`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020` e `F-021` estão `RESOLVED`. J, K e L concluíram suas auditorias documentais. `F-022` não foi aberto. A elegibilidade de M foi adjudicada como `PASS` e M foi liberado apenas para auditoria documental/read-only.
 
 ```text
 J
@@ -1116,11 +1154,13 @@ L
 → OPEN L-SPECIFIC MATERIAL FINDINGS = 0
 → F-022 NOT OPENED
 
-DOWNSTREAM ADJUDICATION
-→ NEXT = M RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ M REMAINS NOT RELEASED UNTIL SEPARATE ADJUDICATION
-→ N REMAINS NOT RELEASED
+M
+→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ IN_PROGRESS / READ-ONLY AUTHORITY / STATE RECONCILIATION
+→ OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
+
+N
+→ PENDING / NOT RELEASED
 
 TECHNOLOGY / DATA / AI
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
@@ -1136,4 +1176,4 @@ RESEARCH OPERATIONAL STATES
 → PMF = NOT VALIDATED
 ```
 
-M/N, `UXA-102/V5`, Design, Product Engineering e merge da PR #363 permanecem bloqueados ou não autorizados. O fechamento de L é estritamente documental.
+`UXA-102/V5`, Design, Product Engineering, N e merge da PR #363 permanecem bloqueados ou não autorizados. A liberação de M é estritamente documental e não constitui operação jurídica, privacidade implementada, publicação legal ou filing.
