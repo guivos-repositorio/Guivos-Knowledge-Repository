@@ -12,6 +12,17 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 - [Guia Oficial da Guivos](public/index.md) — entrada para o Public Canon;
 - [Glossário](glossary.md) — vocabulário transversal.
 
+## Estado semântico sincronizado
+
+A leitura de estado continua subordinada ao [Registro do Estado Atual](project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
+
+```text
+GKR-STATE-001 3.20.0
+M7.88
+ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
+PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
+```
+
 ## Como esta base é organizada
 
 O MENU foi desenhado para descoberta por **assunto e função**, não para reproduzir cada arquivo do corpus.

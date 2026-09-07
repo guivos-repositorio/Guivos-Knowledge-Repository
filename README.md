@@ -13,6 +13,17 @@ Antes de usar qualquer documento isolado, consulte:
 - [Auditoria Integral do Corpus](docs/project/gkr-full-corpus-audit.md) — instrumento temporário da auditoria em curso;
 - [Guia Oficial da Guivos](docs/public/index.md) — entrada para o Public Canon.
 
+## Estado semântico sincronizado
+
+A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
+
+```text
+GKR-STATE-001 3.20.0
+M7.88
+ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
+PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
+```
+
 ## Como navegar
 
 O MENU principal é uma **superfície de descoberta**, não um inventário completo do corpus.
