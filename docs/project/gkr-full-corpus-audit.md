@@ -2,9 +2,9 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.18.0
+version: 1.19.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-06
+last_updated: 2026-09-07
 normative: false
 maturity: audit_in_progress
 baseline_sha: a05a54071414086456877ee4d0de59c59eefed0a
@@ -152,6 +152,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-018 | Major | `README.md` e `docs/index.md` publicavam F-016 como próximo gate já após seu fechamento e anunciavam Roadmap 13.12.0 enquanto a autoridade real permanecia 13.11.0 | `UPDATE` | **RESOLVED NA TRANSIÇÃO J→K — entrypoints, Estado Atual, Roadmap e master audit reconciliados na mesma transação** |
 | F-019 | Major | `docs/research/market-validation/STATUS.md` permanecia como `current` e “ponto único” da baseline 1.2.1 / 22 perguntas após `VAL-002 v2.1.0` / 19 perguntas e autoridades posteriores | `REMOVE_AFTER_ABSORPTION` | **RESOLVED — cleanup físico aplicado; marcador ausente no `HEAD 965322aa082090f11e5d1e4c896e0558e858141b`; Semantic #847 e Mechanical #1105 `SUCCESS`; proveniência histórica preservada** |
 | F-020 | Major | superfícies arquiteturais correntes propagavam estado obsoleto: Marcos Arquiteturais ainda publicava 121 SVGs/121 associações físicas após F-016-A/F-016 e GEA-000 ainda tratava A2-R03 como frente ativa, portfólio especializado como pendente de rebaseline e Intelligence como não rebaselineado | `UPDATE` | **RESOLVED NO LOTE L — duas superfícies reconciliadas no commit cb6ff56ebed2f1b3c3ef230b014f4d83f6555ac9; Semantic #850 e Mechanical #1108 `SUCCESS`; nenhuma implementação ou maturidade operacional promovida** |
+| F-021 | Major | `UXA-000` publicava simultaneamente inventário físico corrente `0/0` e, sob “Ressalvas vigentes”, o snapshot `121` como inventário físico, além de manter F-016 como aberto e ausências de SVG como condição corrente após a desmaterialização integral | `UPDATE` | **RESOLVED NO LOTE L — Experience Architecture reconciliada no commit 9589658c5b35638053178164710986f780554039; Semantic #852 e Mechanical #1110 `SUCCESS`; maturidade funcional e autoridade de Design preservadas** |
 
 ### 6.1 Fechamento de F-016 — desmaterialização documental governada
 
@@ -559,6 +560,70 @@ F-020
 ```
 
 O fechamento é estritamente documental. Ele não fecha o Lote L, não libera M/N, não autoriza Neo4j/GraphRAG/Power BI em produção, não inicia Design, `UXA-102/V5`, Product Engineering, campo de RP-002, PMF ou merge da PR #363.
+
+## 6.7 F-021 — estado visual corrente da Experience Architecture — RESOLVED
+
+A continuidade da auditoria documental de L identificou `REAL_DRIFT` em `UXA-000`: a mesma autoridade declarava no §3 inventário físico corrente `0 SVGs / 0 associações`, mas mantinha no §9, sob “Ressalvas vigentes”, o snapshot `121` como inventário físico e a contagem de 10 responsabilidades sem SVG como condição corrente. Também mantinha `F-016` global como aberto após seu fechamento.
+
+```text
+SURFACE
+→ docs/experience-architecture/index.md
+→ UXA-000
+
+CONFLICTS PROVEN
+→ CURRENT PHYSICAL INVENTORY = 0 / 0
+→ “RESSALVAS VIGENTES” STILL PUBLISHED 121 AS PHYSICAL INVENTORY
+→ 10 RESPONSIBILITIES WITHOUT SVG STILL PRESENTED AS CURRENT PHYSICAL CONDITION
+→ PER-009 “SEM SVG” STILL READ AS CURRENT PHYSICAL CONDITION
+→ F-016 STILL DECLARED OPEN
+```
+
+A remediação preservou integralmente a maturidade funcional, os registros de D5, transições, responsabilidades, proveniência histórica e autoridade exclusiva de Design sobre materialização visual. Somente as formulações temporais/físicas foram reconciliadas:
+
+```text
+PARENT
+→ cc347cb3e0fc37d164219e6840a6666e53ff6c37
+
+REMEDIATION HEAD
+→ 9589658c5b35638053178164710986f780554039
+
+BOUNDARY
+→ EXACTLY 1 FILE
+→ docs/experience-architecture/index.md
+
+UXA-000
+→ 1.8.0 → 1.8.1
+
+CURRENT PHYSICAL INVENTORY
+→ 0 SVGs
+→ 0 ASSOCIATIONS
+
+121 / 10 RESPONSIBILITIES WITHOUT SVG / PER-009 WITHOUT SVG
+→ HISTORICAL SNAPSHOT / PROVENANCE ONLY
+
+F-016
+→ RESOLVED
+```
+
+Prova pós-remediação no mesmo `HEAD`:
+
+```text
+GKR Semantic State Validation #852
+→ SUCCESS
+→ run 34078113718
+
+GKR Mechanical Validation #1110
+→ SUCCESS
+→ run 34078113733
+
+F-021
+→ REAL_DRIFT PROVEN
+→ REMEDIATION APPLIED
+→ POST-REMEDIATION PROOF SUCCESS
+→ RESOLVED
+```
+
+O fechamento é estritamente documental. Ele não altera maturidade funcional, não cria déficit visual corrente a partir da ausência física de SVGs, não autoriza Design, nova materialização, `UXA-102/V5`, Product Engineering, implementação, produção, PMF, liberação de M/N ou merge da PR #363.
 
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
@@ -1196,7 +1261,7 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | I — Registries / Catálogos / SVGs | `AUDITED / UPDATE_APPLIED / F-006_RESOLVED / F-007_RESOLVED / F-016-A_RESOLVED / F-016_RESOLVED` | camada SVG removida; inventário físico corrente = 0; cleanup documental F-016 concluído 26/26 com autoridades/validadores/evidências preservados |
 | J — Produtos / Economia | `COMPLETED / DOCUMENTARY_AUDIT` | F-017 resolvido; fronteiras de plano/capacidade/budget/entitlement/billing, Ads e impacto adjudicadas sem outro finding material aberto |
 | K — Research / RP-002 | `COMPLETED / DOCUMENTARY_AUDIT / F-019_RESOLVED` | método/evidência preservados; nenhum gate operacional promovido; nenhum finding K específico material aberto |
-| L — Tecnologia / Dados / IA | `IN_PROGRESS / DOCUMENTARY_AUDIT_ONLY / F-020_RESOLVED` | autoridades atuais, fronteiras de implementação e função corrente dos artefatos técnicos; F-020 reconciliado sem promoção operacional |
+| L — Tecnologia / Dados / IA | `IN_PROGRESS / DOCUMENTARY_AUDIT_ONLY / F-020_RESOLVED / F-021_RESOLVED` | autoridades atuais, fronteiras de implementação e função corrente dos artefatos técnicos; F-020/F-021 reconciliados sem promoção operacional |
 | M — Jurídico / Privacidade / Institucional | `PENDING / NOT_RELEASED` | documental e operacional separados corretamente |
 | N — GTM / presença pública | `PENDING / NOT_RELEASED` | autoridades atuais sem duplicação histórica |
 | O — MENU / rotas por equipe | `PENDING` | navegação final multiequipe |
@@ -1228,7 +1293,7 @@ J. Produtos / Economia                           [COMPLETED / DOCUMENTARY AUDIT 
 ↓
 K. Research / VAL / RP-002                       [COMPLETED / DOCUMENTARY AUDIT / F-019 RESOLVED]
 ↓
-L. Tecnologia / Dados / IA                       [IN_PROGRESS / DOCUMENTARY_AUDIT_ONLY / F-020 RESOLVED]
+L. Tecnologia / Dados / IA                       [IN_PROGRESS / DOCUMENTARY_AUDIT_ONLY / F-020 RESOLVED / F-021 RESOLVED]
 ↓
 M/N. domínios especializados                     [PENDING / NOT RELEASED]
 ↓
@@ -1427,6 +1492,11 @@ L DOCUMENTARY AUDIT
 → F-020 SEMANTIC #850 SUCCESS
 → F-020 MECHANICAL #1108 SUCCESS
 → F-020 RESOLVED
+→ F-021 REAL_DRIFT PROVEN
+→ F-021 REMEDIATION APPLIED AT 9589658c5b35638053178164710986f780554039
+→ F-021 SEMANTIC #852 SUCCESS
+→ F-021 MECHANICAL #1110 SUCCESS
+→ F-021 RESOLVED
 → IMPLEMENTATION / PRODUCTION REMAIN NOT AUTHORIZED
 
 DOWNSTREAM RELEASE ADJUDICATION
