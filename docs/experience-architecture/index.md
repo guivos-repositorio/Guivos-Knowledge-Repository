@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.8.0
+version: 1.8.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-05
+last_updated: 2026-09-06
 related:
   - PAS-001
   - PAS-001-DOMAIN-MODEL-001
@@ -96,7 +96,7 @@ AUTORIDADE FUNCIONAL
 
 A remoção física não altera por si só maturidade funcional de superfícies, estados ou transições. Nomes `.svg` ainda citados em documentos preservados devem ser lidos exclusivamente como proveniência histórica.
 
-`F-016-A = RESOLVED` após Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. `F-016` global permanece aberto para as famílias documentais remanescentes.
+`F-016-A = RESOLVED` após Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. `F-016 = RESOLVED` após adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete, sem autorização automática de nova materialização.
 
 ## 4. Decisões estruturais preservadas
 
@@ -189,7 +189,7 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 
 ## 6. Resultado da UXA-100-A4 preservado
 
-[UXA-100-A4](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md) continua governando `PER-009`, `TRN-406/407`, `TRN-417/418` e `TRN-427/428`. `PER-009` permanece sem SVG; cobrança real, entitlement e processo posterior a `BND-002` continuam fora do escopo.
+[UXA-100-A4](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md) continua governando `PER-009`, `TRN-406/407`, `TRN-417/418` e `TRN-427/428`. No snapshot físico anterior, `PER-009` não possuía SVG dedicado; após `F-016-A`, toda a camada física foi removida e essa ausência específica permanece somente como proveniência histórica. Cobrança real, entitlement e processo posterior a `BND-002` continuam fora do escopo.
 
 ## 7. Resultado da UXA-101 preservado
 
@@ -219,10 +219,10 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 
 ## 9. Ressalvas vigentes
 
-- `121` descreve o inventário físico de SVGs e não certifica, isoladamente, canonicidade ou validação vigente;
+- o inventário físico corrente é `0 SVGs / 0 associações`; `121` pertence exclusivamente ao snapshot histórico anterior à desmaterialização e não representa inventário ou maturidade vigente;
 - a recomputação governada de maturidade visual agregada permanece aberta;
-- artefatos históricos `superseded`, incluindo os associados a `UXA-015..018`, permanecem rastreáveis e não devem ser promovidos por presença física;
-- 10 responsabilidades permanecem sem SVG dedicado no snapshot físico/associativo, incluindo `PER-009`;
+- artefatos históricos `superseded`, incluindo os associados a `UXA-015..018`, permanecem recuperáveis no histórico Git e não devem ser promovidos a autoridade corrente;
+- o snapshot físico/associativo anterior registrava 10 responsabilidades sem SVG dedicado, incluindo `PER-009`; essa contagem é proveniência histórica e não constitui déficit visual corrente após a remoção integral da camada física;
 - `TRN-008..013` estão integralmente validadas documentalmente, não implementadas;
 - `TRN-406/407` permanecem contratadas;
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` permanecem parciais;
