@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.14.0
+version: 3.15.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-06
+last_updated: 2026-09-07
 normative: true
 maturity: current_truth_under_full_corpus_audit
 related:
@@ -114,6 +114,14 @@ F-019
 → STALE MARKET-VALIDATION STATUS AUTHORITY REMOVED AFTER ABSORPTION
 → POST-DELETE SEMANTIC + MECHANICAL PROOF SUCCESS
 
+F-020
+→ RESOLVED
+→ ARCHITECTURAL CURRENT-STATE PROPAGATION DRIFT RECONCILED
+
+F-021
+→ RESOLVED
+→ EXPERIENCE ARCHITECTURE CURRENT VISUAL-STATE DRIFT RECONCILED
+
 J — PRODUTOS / ECONOMIA
 → DOCUMENTARY AUDIT COMPLETED
 → F-017 RESOLVED
@@ -131,8 +139,17 @@ K — RESEARCH / VAL / RP-002
 → PMF = NOT VALIDATED
 
 L — TECNOLOGIA / DADOS / IA
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-020 RESOLVED
+→ F-021 RESOLVED
+→ OPEN L-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
+
+NEXT
+→ M RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ M IS NOT RELEASED BY L CLOSURE
 
 M / N
 → PENDING / NOT RELEASED
@@ -1295,7 +1312,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.17.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.20.0` está ativo como instrumento temporário de execução.
 
 ```text
 A / B / C / D / E / F / G
@@ -1332,7 +1349,11 @@ K
 → PMF = NOT VALIDATED
 
 L
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-020 RESOLVED
+→ F-021 RESOLVED
+→ OPEN L-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
 
 M / N
@@ -1348,7 +1369,7 @@ Q
 → BLOCKED
 ```
 
-A conclusão documental de K e a liberação governada de L não alteram gates operacionais de Research nem autorizam implementação tecnológica. A próxima frente documental é L.
+A conclusão documental de L não altera gates operacionais de Research nem autoriza implementação tecnológica. M/N permanecem não liberados; o próximo ato governado é somente a adjudicação de elegibilidade de liberação de M.
 
 ## 27. Regra de navegação final
 
@@ -1409,7 +1430,7 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-Os Lotes J e K concluíram suas auditorias documentais. `F-017` e `F-019` estão resolvidos. A decisão downstream subsequente libera exclusivamente L para auditoria documental. M/N permanecem não liberados; a liberação de L não autoriza implementação, produção, Design, Product Engineering, PMF ou merge.
+Os Lotes J, K e L concluíram suas auditorias documentais. `F-017`, `F-019`, `F-020` e `F-021` estão resolvidos. Nenhum finding material específico de L permanece aberto; `F-022` não foi aberto. M/N permanecem não liberados.
 
 ```text
 J — PRODUTOS / ECONOMIA
@@ -1421,14 +1442,21 @@ K — RESEARCH / VAL / RP-002
 → F-019 RESOLVED
 → NO OPEN K-SPECIFIC MATERIAL FINDING IDENTIFIED
 
+L — TECHNOLOGY / DATA / AI
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-020 RESOLVED
+→ F-021 RESOLVED
+→ OPEN L-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
+
 NEXT
-→ EXECUTE L — TECHNOLOGY / DATA / AI DOCUMENTARY AUDIT ONLY
+→ ADJUDICATE M RELEASE ELIGIBILITY
+→ DOCUMENTARY / READ-ONLY ONLY
+→ DO NOT RELEASE M BY INFERENCE
+→ N REMAINS NOT RELEASED
 → PRESERVE ARCHITECTURE / TECHNOLOGY / IMPLEMENTATION DISTINCTIONS
-→ DO NOT PROMOTE REFERENCE_SELECTED TO POC / PROVISIONED / INTEGRATED / PRODUCTION
-→ DO NOT PROMOTE CANDIDATE TECHNOLOGIES TO IMPLEMENTED
 → PRODUCT ENGINEERING REMAINS PAUSED BEFORE W0-01
 → PMF REMAINS NOT VALIDATED
-→ M / N REMAIN NOT RELEASED
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
@@ -1454,4 +1482,4 @@ AINDA BLOQUEADOS
 → IMPLEMENTAÇÃO / PRODUÇÃO
 ```
 
-A transição K→L é estritamente documental e não altera os estados operacionais de Research, tecnologia ou qualquer gate posterior.
+O fechamento de L é estritamente documental e não altera os estados operacionais de Research, tecnologia ou qualquer gate posterior.

@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.14.0
+version: 3.15.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-06
+last_updated: 2026-09-07
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.14.0
+→ 3.15.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -66,14 +66,19 @@ K — RESEARCH / VAL / RP-002
 → PMF = NOT VALIDATED
 
 L — TECNOLOGIA / DADOS / IA
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-020 RESOLVED
+→ F-021 RESOLVED
+→ OPEN L-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
 
 M / N
 → PENDING / NOT RELEASED
 
 PRÓXIMO MOVIMENTO GOVERNADO
-→ L — TECNOLOGIA / DADOS / IA — DOCUMENTARY AUDIT ONLY
+→ M RELEASE ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY
+→ M NÃO É LIBERADO PELO FECHAMENTO DE L
 → PRESERVAR ARQUITETURA / REFERÊNCIA TECNOLÓGICA / IMPLEMENTAÇÃO COMO ESTADOS DISTINTOS
 → NÃO PROMOVER REFERENCE_SELECTED A POC / PROVISIONED / INTEGRATED / PRODUCTION
 → NÃO RETOMAR PRODUCT ENGINEERING
@@ -212,7 +217,7 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.14.0** |
+| Registro do Estado Atual | **3.15.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
@@ -226,9 +231,9 @@ Ainda não são canônicos:
 | F-016-A — camada física SVG | **RESOLVED / PHYSICAL CLEANUP 119/119 / PHYSICAL SVG COUNT 0 / POST-DELETE PROOF V2 SUCCESS** |
 | Lote J — Produtos / Economia | **DOCUMENTARY AUDIT COMPLETED / F-017 RESOLVED** |
 | Lote K — Research / VAL / RP-002 | **DOCUMENTARY AUDIT COMPLETED / F-019 RESOLVED** |
-| Lote L — Tecnologia / Dados / IA | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
+| Lote L — Tecnologia / Dados / IA | **DOCUMENTARY AUDIT COMPLETED / F-020 RESOLVED / F-021 RESOLVED / OPEN L-SPECIFIC MATERIAL FINDINGS = 0** |
 | Lotes M / N | **PENDING / NOT RELEASED** |
-| Próximo movimento governado | **L — TECNOLOGIA / DADOS / IA — DOCUMENTARY AUDIT ONLY** |
+| Próximo movimento governado | **M RELEASE ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY** |
 | RP-002 Operational Readiness | **HOLD** |
 | Participant 001 | **HOLD** |
 | Dry Run real | **NOT RELEASED** |

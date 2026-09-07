@@ -1,10 +1,10 @@
 ---
-id: ROADMAP-13.13.0
+id: ROADMAP-13.14.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.13.0
+version: 13.14.0
 owner: Guivos
-last_updated: 2026-09-06
+last_updated: 2026-09-07
 normative: true
 related:
   - GKR-STATE-001
@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.14.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.15.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -53,7 +53,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. A decisão downstream subsequente libera exclusivamente L — Tecnologia / Dados / IA — para auditoria documental; M/N permanecem não liberados.
+Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. M/N permanecem não liberados; o próximo ato governado é somente a adjudicação da elegibilidade de liberação de M.
 
 `F-016-A` concluiu o ciclo governado: elegibilidade estrutural/semântica, autorização humana separada, cleanup físico 119/119, reconciliação, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. A subfrente está `RESOLVED` e o inventário físico corrente de SVGs é zero.
 
@@ -66,7 +66,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.14.0** |
+| Estado global | **GKR-STATE-001 v3.15.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -85,7 +85,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | F-018 | **RESOLVED — GLOBAL ENTRYPOINT STATE-PROPAGATION DRIFT** |
 | Lote J — Produtos / Economia | **DOCUMENTARY AUDIT COMPLETED / F-017 RESOLVED** |
 | Lote K — Research / VAL / RP-002 | **DOCUMENTARY AUDIT COMPLETED / F-019 RESOLVED** |
-| Lote L — Tecnologia / Dados / IA | **RELEASED FOR DOCUMENTARY AUDIT ONLY** |
+| Lote L — Tecnologia / Dados / IA | **DOCUMENTARY AUDIT COMPLETED / F-020 RESOLVED / F-021 RESOLVED / OPEN L-SPECIFIC MATERIAL FINDINGS = 0** |
 | Lotes M / N | **PENDING / NOT RELEASED** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
@@ -166,9 +166,11 @@ J. PRODUTOS / ECONOMIA                   [DOCUMENTARY AUDIT COMPLETED / F-017 RE
 ↓
 K. RESEARCH / VAL / RP-002               [DOCUMENTARY AUDIT COMPLETED / F-019 RESOLVED]
 ↓
-DECISÃO GOVERNADA K → L                 [L RELEASED DOCUMENTARY-ONLY / M-N HOLD]
+DECISÃO GOVERNADA K → L                  [L RELEASED DOCUMENTARY-ONLY / M-N HOLD]
 ↓
-L. TECNOLOGIA / DADOS / IA               [RELEASED FOR DOCUMENTARY AUDIT ONLY]
+L. TECNOLOGIA / DADOS / IA               [DOCUMENTARY AUDIT COMPLETED / F-020 RESOLVED / F-021 RESOLVED]
+↓
+ADJUDICAÇÃO DE ELEGIBILIDADE M           [NEXT / M NOT RELEASED]
 ↓
 M. JURÍDICO / PRIVACIDADE / INSTITUCIONAL [PENDING / NOT RELEASED]
 ↓
@@ -586,7 +588,9 @@ K
 → F-019 RESOLVED
 
 L
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-020 RESOLVED
+→ F-021 RESOLVED
 
 M / N
 → NOT RELEASED
@@ -759,7 +763,11 @@ Estado governado:
 
 ```text
 L
-→ RELEASED FOR DOCUMENTARY AUDIT ONLY
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-020 RESOLVED
+→ F-021 RESOLVED
+→ OPEN L-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
 
 IMPLEMENTATION / PRODUCTION
 → NOT AUTHORIZED
@@ -771,11 +779,18 @@ M / N
 → NOT RELEASED
 ```
 
-Product Engineering permanece pausada antes de `W0-01`.
+A auditoria documental de L confrontou ADRs, Intelligence Architecture, Enterprise Architecture, Graph Reference, governança de dados e as superfícies laterais de produto do Guivos Intelligence. A hierarquia de autoridade permaneceu coerente e não houve promoção indevida de arquitetura ou referência tecnológica para implementação ou produção.
 
-`GPA-006 v2.0.0` continua autoridade do Intelligence e `GIA-000 v1.6.0` é a arquitetura de Intelligence reconciliada no estado documental atual. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` permanece Source Lock ativo/normativo da Home, sem equivaler a autorização de Design ou implementação.
+Resultado consolidado:
 
 ```text
+ADR AUTHORITY BOUNDARY
+→ CONSISTENT
+
+GIA / GEA / GPA
+→ VALID_COEXISTENCE
+→ NO CURRENT TECHNOLOGY AUTHORITY CONFLICT PROVEN
+
 NEO4J
 → reference_selected
 ≠ POC
@@ -784,33 +799,47 @@ NEO4J
 ≠ production
 
 GRAPHRAG
-→ candidate
+→ candidate / reference_pattern
 ≠ implemented
+
+GDS
+→ NOT OPERATIONALLY EVIDENCED
 
 POWER BI
 → possible consumer
 ≠ source of truth
+→ integration not implemented
+
+PHYSICAL DATA MODEL
+→ NOT STARTED
+
+PHYSICAL ONTOLOGY
+→ NOT STARTED
+
+AI STACK / MLOPS / SERVING
+→ NOT OPERATIONALLY DEFINED
+
+F-022
+→ NOT OPENED
 ```
 
-Auditar:
+`GPA-006 v2.0.0` continua autoridade do produto; `GIA-000 v1.6.0` continua arquitetura de Intelligence; `GEA-GRAPH-REFERENCE-001` permanece referência arquitetural; `ADR-007` mantém Neo4j apenas como referência primária. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` permanece Source Lock ativo/normativo da Home, sem equivaler a autorização de Design ou implementação.
 
-- duplicações entre GEA/GIA/GPA;
-- modelos de grafo;
-- tecnologia de referência;
-- IA e Guivos.ai;
-- analytics;
-- dados;
-- privacy by architecture;
-- diagrams;
-- ADRs e decisões já absorvíveis;
-- claims de POC, provisionamento, integração e produção;
-- separação entre arquitetura, target, referência tecnológica e implementação observada.
+`GCCM-001` não foi artificialmente incorporado a L: sua natureza é de Core Capability / Enterprise Architecture, permanece independente de tecnologia e pode ser adjudicado no domínio correto sem funcionar como autoridade tecnológica concorrente.
 
-A auditoria de L é documental. Ela não autoriza POC, provisionamento, deploy, acesso a dados reais, criação de pipelines, Product Engineering ou ativação de qualquer tecnologia.
+O fechamento de L é documental. Ele não autoriza POC, provisionamento, deploy, acesso a dados reais, criação de pipelines, Product Engineering ou ativação de qualquer tecnologia. Também não libera M/N.
 
 ## 17. Lote M — Jurídico, privacidade e institucional
 
-Auditar sem confundir documentação e operação.
+Estado atual:
+
+```text
+PENDING / NOT RELEASED
+```
+
+O próximo ato governado não é executar M automaticamente, mas adjudicar se M está elegível para liberação documental/read-only.
+
+Quando e somente se liberado, auditar sem confundir documentação e operação.
 
 Preservações:
 
@@ -1068,7 +1097,7 @@ DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL DURANTE A AUDITORIA
 
 ## 26. Regra do próximo movimento
 
-`F-016-A`, `F-016`, `F-017` e `F-019` estão `RESOLVED`. J e K concluíram suas auditorias documentais. A decisão governada K→L libera exclusivamente L para auditoria documental.
+`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020` e `F-021` estão `RESOLVED`. J, K e L concluíram suas auditorias documentais. `F-022` não foi aberto.
 
 ```text
 J
@@ -1080,10 +1109,18 @@ K
 → F-019 RESOLVED
 → NO OPEN K-SPECIFIC MATERIAL FINDING IDENTIFIED
 
+L
+→ DOCUMENTARY AUDIT COMPLETED
+→ F-020 RESOLVED
+→ F-021 RESOLVED
+→ OPEN L-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
+
 DOWNSTREAM ADJUDICATION
-→ L RELEASED FOR DOCUMENTARY AUDIT ONLY
-→ M / N REMAIN NOT RELEASED
-→ NEXT EXECUTION = L DOCUMENTARY AUDIT
+→ NEXT = M RELEASE ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ M REMAINS NOT RELEASED UNTIL SEPARATE ADJUDICATION
+→ N REMAINS NOT RELEASED
 
 TECHNOLOGY / DATA / AI
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
@@ -1099,4 +1136,4 @@ RESEARCH OPERATIONAL STATES
 → PMF = NOT VALIDATED
 ```
 
-M/N, `UXA-102/V5`, Design, Product Engineering e merge da PR #363 permanecem bloqueados ou não autorizados. L está liberado somente para auditoria documental.
+M/N, `UXA-102/V5`, Design, Product Engineering e merge da PR #363 permanecem bloqueados ou não autorizados. O fechamento de L é estritamente documental.
