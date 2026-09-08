@@ -2,7 +2,7 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.26.0
+version: 1.27.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 normative: false
@@ -1321,6 +1321,77 @@ O fechamento canônico de O usa o boundary global de seis superfícies: `README.
 
 Este fechamento não libera P, não inicia Q, não autoriza Design, `UXA-102/V5`, Product Engineering, operação de RP-002, participante real, Dry Run, PMF, implementação, produção, baseline final ou merge da PR #363.
 
+## 6.15 Elegibilidade e liberação canônica documental do Lote P
+
+Após o fechamento canônico e validado de O no `HEAD 16d4c2b8a8a2bb3e7805a60a646f2f07a8b2fdcb`, foi executada adjudicação read-only específica para determinar se P poderia ser liberado para a auditoria final de completude sem antecipar seu resultado, baseline final ou Q.
+
+Resultado da adjudicação:
+
+```text
+P RELEASE ELIGIBILITY
+→ PASS
+
+DOCUMENTARY AUDITABILITY
+→ PASS
+
+CURRENT MATERIAL BLOCKER TO P RELEASE
+→ NONE PROVEN
+
+F-022
+→ NOT OPENED
+```
+
+Escopo autorizado para P:
+
+```text
+AUTHORITY
+OBSOLESCENCE
+FRAGMENTATION
+COMPLETENESS
+REFERENCES
+COUNTS
+HOMES
+PUBLIC CANON
+MENU
+TEAM ROUTES
+FINAL SEMANTIC VALIDATION
+FINAL MECHANICAL VALIDATION
+```
+
+Adjudicação canônica de release:
+
+```text
+P — AUDITORIA FINAL DE COMPLETUDE
+→ RELEASED FOR FINAL COMPLETENESS AUDIT ONLY
+→ IN_PROGRESS
+→ DOCUMENTARY / READ-ONLY
+→ REPO-WIDE COMPLETENESS VERIFICATION
+
+Q
+→ BLOCKED
+
+BASELINE FINAL
+→ NOT AUTHORIZED
+```
+
+Fronteiras obrigatórias:
+
+```text
+P RELEASE
+≠ P PASS
+≠ AUDIT CLOSED
+≠ FINAL BASELINE
+≠ Q RELEASE
+
+DOCUMENTARY COMPLETENESS
+≠ IMPLEMENTATION
+≠ OPERATIONAL READINESS
+```
+
+A sincronização canônica de P mantém o boundary global de seis superfícies: `README.md`, `docs/index.md`, `docs/project/current-state-register.md`, este master audit, `docs/roadmap.md` e `docs/experience-architecture/uxa-047-101-index.md`. Ela não altera `mkdocs.yml`, autoridades temáticas, superfícies de Design ou autoridades operacionais.
+
+Este registro de release permanece condicionado à validação Semantic + Mechanical do novo `HEAD` exato. A liberação de P não encerra a auditoria, não autoriza baseline final, não libera Q, não inicia Design, `UXA-102/V5`, Product Engineering, operação de RP-002, participante real, Dry Run, PMF, implementação, produção ou merge da PR #363.
+
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
 O conflito material originalmente comprovado foi tratado de forma incremental e governada no Lote D, sem abrir materialização visual.
@@ -1961,7 +2032,7 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | M — Jurídico / Privacidade / Institucional | `COMPLETED / DOCUMENTARY_AUDIT` | P5/P6 reconciliados; `OPEN M-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; nenhuma execução jurídica promovida |
 | N — GTM / presença pública | `COMPLETED / DOCUMENTARY_AUDIT` | `GTM-001..011 = KEEP`; fronteiras de presença/internacionalização reconciliadas; `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; nenhuma execução GTM promovida |
 | O — MENU / rotas por equipe | `COMPLETED / DOCUMENTARY_AUDIT / F-002_RESOLVED` | MENU reconstruído e validado; hubs de domínio e rotas multiequipe reconciliados |
-| P — Auditoria final | `PENDING / NOT_RELEASED` | `PASS` ou `PASS WITH MINOR FINDINGS` |
+| P — Auditoria final | `IN_PROGRESS / FINAL_COMPLETENESS_AUDIT_ONLY` | `PASS`, `PASS WITH MINOR FINDINGS` ou `FAIL` |
 | Q — primeira tela pós-Home Pessoa | `BLOCKED` | somente depois de P |
 
 ## 16. Ordem de execução
@@ -2003,9 +2074,9 @@ O release eligibility                            [COMPLETED / PASS]
 ↓
 O. MENU final                                    [COMPLETED / DOCUMENTARY AUDIT / F-002 RESOLVED]
 ↓
-P release eligibility                            [NEXT / NOT STARTED]
+P release eligibility                            [COMPLETED / PASS]
 ↓
-P. auditoria final                               [PENDING / NOT RELEASED]
+P. auditoria final                               [IN_PROGRESS / DOCUMENTARY / READ-ONLY]
 ↓
 Q. primeira tela da Pessoa                       [BLOCKED]
 ```
@@ -2239,16 +2310,18 @@ O DOCUMENTARY AUDIT
 → FINAL MECHANICAL #1119 = SUCCESS
 → OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
-P
-→ PENDING / NOT RELEASED
+P — FINAL COMPLETENESS AUDIT
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR FINAL COMPLETENESS AUDIT ONLY
+→ IN_PROGRESS / DOCUMENTARY / READ-ONLY
 
 Q
 → BLOCKED
 
 NEXT
-→ P RELEASE ELIGIBILITY ADJUDICATION
+→ EXECUTE P — FINAL COMPLETENESS AUDIT
 → DOCUMENTARY / READ-ONLY
-→ DO NOT RELEASE P BY INFERENCE
+→ DO NOT RELEASE Q BY INFERENCE
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION DEFERRED / NOT AUTHORIZED

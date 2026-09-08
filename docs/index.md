@@ -17,13 +17,13 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 A leitura de estado continua subordinada ao [Registro do Estado Atual](project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.21.0
+GKR-STATE-001 3.22.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
 LOTE O → DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED
-LOTE P → PENDING / NOT RELEASED
-PRÓXIMO GATE → P RELEASE ELIGIBILITY ADJUDICATION / READ-ONLY
+LOTE P → RELEASE ELIGIBILITY = PASS / RELEASED FOR FINAL COMPLETENESS AUDIT ONLY / IN_PROGRESS
+PRÓXIMO GATE → EXECUTE P FINAL COMPLETENESS AUDIT / READ-ONLY
 ```
 
 ## Como esta base é organizada

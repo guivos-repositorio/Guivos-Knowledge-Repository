@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.21.0
+version: 3.22.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 depends_on:
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.21.0
+→ 3.22.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -91,13 +91,15 @@ O — MENU FINAL / ROTAS MULTIEQUIPE
 → MENU REBUILD APPLIED / VALIDATED
 → OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
-P
-→ PENDING / NOT RELEASED
+P — AUDITORIA FINAL DE COMPLETUDE
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR FINAL COMPLETENESS AUDIT ONLY
+→ IN_PROGRESS / READ-ONLY REPO-WIDE VERIFICATION
 
 PRÓXIMO MOVIMENTO GOVERNADO
-→ P RELEASE ELIGIBILITY ADJUDICATION
+→ EXECUTE P — FINAL COMPLETENESS AUDIT
 → DOCUMENTARY / READ-ONLY
-→ NÃO LIBERAR P POR INFERÊNCIA
+→ NÃO LIBERAR Q POR INFERÊNCIA
 → PRESERVAR DOCUMENTAÇÃO / IMPLEMENTAÇÃO / OPERAÇÃO COMO ESTADOS DISTINTOS
 → NÃO RETOMAR PRODUCT ENGINEERING
 ```
@@ -235,7 +237,7 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.21.0** |
+| Registro do Estado Atual | **3.22.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
@@ -253,8 +255,8 @@ Ainda não são canônicos:
 | Lote M — Jurídico / Privacidade / Institucional | **DOCUMENTARY AUDIT COMPLETED / OPEN M-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Lote N — GTM / presença pública | **DOCUMENTARY AUDIT COMPLETED / OPEN N-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Lote O — MENU final / rotas multiequipe | **DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED / OPEN O-SPECIFIC MATERIAL FINDINGS = 0** |
-| Lote P — Auditoria final | **PENDING / NOT RELEASED** |
-| Próximo movimento governado | **P RELEASE ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY** |
+| Lote P — Auditoria final | **RELEASED / FINAL COMPLETENESS AUDIT ONLY / IN_PROGRESS** |
+| Próximo movimento governado | **EXECUTE P — FINAL COMPLETENESS AUDIT / DOCUMENTARY / READ-ONLY** |
 | RP-002 Operational Readiness | **HOLD** |
 | Participant 001 | **HOLD** |
 | Dry Run real | **NOT RELEASED** |

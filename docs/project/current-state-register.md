@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.21.0
+version: 3.22.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-07
 normative: true
@@ -164,16 +164,18 @@ O — MENU FINAL / ROTAS MULTIEQUIPE
 → MENU REBUILD APPLIED / VALIDATED
 → OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
-P
-→ PENDING / NOT RELEASED
+P — AUDITORIA FINAL DE COMPLETUDE
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR FINAL COMPLETENESS AUDIT ONLY
+→ IN_PROGRESS / READ-ONLY REPO-WIDE COMPLETENESS VERIFICATION
 
 Q
 → BLOCKED
 
 NEXT
-→ P RELEASE ELIGIBILITY ADJUDICATION
+→ EXECUTE P — FINAL COMPLETENESS AUDIT
 → DOCUMENTARY / READ-ONLY
-→ DO NOT RELEASE P BY INFERENCE
+→ DO NOT RELEASE Q BY INFERENCE
 
 UXA-102 / V5
 → NOT_STARTED
@@ -1333,7 +1335,7 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.26.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.27.0` está ativo como instrumento temporário de execução.
 
 ```text
 A / B / C / D / E / F / G
@@ -1398,18 +1400,20 @@ O
 → OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
 P
-→ PENDING / NOT RELEASED
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR FINAL COMPLETENESS AUDIT ONLY
+→ IN_PROGRESS / READ-ONLY REPO-WIDE COMPLETENESS VERIFICATION
 
 Q
 → BLOCKED
 
 NEXT
-→ P RELEASE ELIGIBILITY ADJUDICATION
+→ EXECUTE P — FINAL COMPLETENESS AUDIT
 → DOCUMENTARY / READ-ONLY
-→ DO NOT RELEASE P BY INFERENCE
+→ DO NOT RELEASE Q BY INFERENCE
 ```
 
-O fechamento de O registra a reconstrução e a prova pós-remediação do MENU. Ele não libera P, não promove baseline final, Design, Product Engineering, operação, PMF, implementação ou produção.
+A liberação de P é estritamente documental e autoriza somente a auditoria final de completude do corpus. Ela não encerra a auditoria, não autoriza baseline final, não libera Q, não inicia Design, Product Engineering, operação, PMF, implementação ou produção.
 
 ## 27. Regra de navegação final
 
@@ -1489,7 +1493,7 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-O Lote O foi concluído documentalmente após rebuild do MENU, correção semântica mínima e validação final no `HEAD 2d80c24c31cbe3e9486165369c80fae0775b8fe1`.
+A elegibilidade de P foi adjudicada como `PASS` sobre o `HEAD 16d4c2b8a8a2bb3e7805a60a646f2f07a8b2fdcb`. P está liberado exclusivamente para a auditoria final de completude, em modo documental e read-only.
 
 ```text
 N — GTM / PRESENÇA PÚBLICA
@@ -1531,16 +1535,18 @@ REPOSITORY NAVIGATION
 ≠ EXPERIENCE NAVIGATION
 ≠ UI NAVIGATION
 
-P
-→ PENDING / NOT RELEASED
+P — AUDITORIA FINAL DE COMPLETUDE
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR FINAL COMPLETENESS AUDIT ONLY
+→ IN_PROGRESS / READ-ONLY
 
 Q
 → BLOCKED
 
 NEXT
-→ P RELEASE ELIGIBILITY ADJUDICATION
+→ EXECUTE P — FINAL COMPLETENESS AUDIT
 → DOCUMENTARY / READ-ONLY
-→ P IS NOT RELEASED BY O CLOSURE
+→ Q IS NOT RELEASED BY P RELEASE
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
@@ -1562,7 +1568,8 @@ AINDA BLOQUEADOS
 → PRODUCT ENGINEERING
 → PMF
 → IMPLEMENTAÇÃO / PRODUÇÃO
+→ BASELINE FINAL
 → MERGE DA PR #363
 ```
 
-O fechamento de O não libera P, não inicia Q e não constitui autorização operacional, visual, de implementação, produção ou merge.
+A liberação de P não encerra a auditoria, não libera Q e não constitui autorização operacional, visual, de implementação, produção, baseline final ou merge.

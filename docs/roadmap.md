@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.20.0
+id: ROADMAP-13.21.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.20.0
+version: 13.21.0
 owner: Guivos
 last_updated: 2026-09-07
 normative: true
@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.21.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.22.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -53,7 +53,7 @@ ROADMAP
 
 O programa global vigente é a **Auditoria Integral do Guivos Knowledge Repository**.
 
-Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. O Lote M concluiu sua auditoria documental com `OPEN M-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`, sem promover execução jurídica, privacidade operacional ou constituição institucional. O Lote N concluiu sua auditoria documental com `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`, `F-022 NOT OPENED` e sem promover execução de GTM, publicação ou operação de mercado. O Lote O concluiu sua auditoria documental após rebuild governado do MENU e prova Semantic + Mechanical; `F-002 = RESOLVED`. O Lote P permanece `PENDING / NOT RELEASED` e seu próximo gate legítimo é uma adjudicação separada de elegibilidade, documental e read-only.
+Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. O Lote M concluiu sua auditoria documental com `OPEN M-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`, sem promover execução jurídica, privacidade operacional ou constituição institucional. O Lote N concluiu sua auditoria documental com `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`, `F-022 NOT OPENED` e sem promover execução de GTM, publicação ou operação de mercado. O Lote O concluiu sua auditoria documental após rebuild governado do MENU e prova Semantic + Mechanical; `F-002 = RESOLVED`. A elegibilidade de P foi adjudicada como `PASS`, e o Lote P está liberado exclusivamente para a auditoria final de completude, documental e read-only. Q permanece bloqueado.
 
 `F-016-A` concluiu o ciclo governado: elegibilidade estrutural/semântica, autorização humana separada, cleanup físico 119/119, reconciliação, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. A subfrente está `RESOLVED` e o inventário físico corrente de SVGs é zero.
 
@@ -66,7 +66,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.21.0** |
+| Estado global | **GKR-STATE-001 v3.22.0** |
 | Auditoria integral | **IN_PROGRESS** |
 | Baseline final pós-auditoria | **NOT AUTHORIZED** |
 | Marco funcional | **M7.88** |
@@ -89,7 +89,7 @@ Enquanto a auditoria estiver aberta, nenhuma nova UX principal, wireframe, Desig
 | Lote M — Jurídico / Privacidade / Institucional | **DOCUMENTARY AUDIT COMPLETED / OPEN M-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Lote N — GTM / presença pública | **DOCUMENTARY AUDIT COMPLETED / OPEN N-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Lote O — MENU final / rotas multiequipe | **DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED / OPEN O-SPECIFIC MATERIAL FINDINGS = 0** |
-| Lote P — Auditoria final | **PENDING / NOT RELEASED** |
+| Lote P — Auditoria final | **RELEASE ELIGIBILITY PASS / RELEASED FOR FINAL COMPLETENESS AUDIT ONLY / IN_PROGRESS** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |
@@ -191,9 +191,11 @@ DECISÃO GOVERNADA N → O                  [O RELEASED DOCUMENTARY-ONLY / P HOL
 ↓
 O. MENU FINAL / ROTAS MULTIEQUIPE        [DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED]
 ↓
-ADJUDICAÇÃO DE ELEGIBILIDADE P           [NEXT / NOT STARTED]
+ADJUDICAÇÃO DE ELEGIBILIDADE P           [COMPLETED / PASS]
 ↓
-P. AUDITORIA FINAL DE COMPLETUDE          [PENDING / NOT RELEASED]
+DECISÃO GOVERNADA O → P                  [P RELEASED FINAL-COMPLETENESS-AUDIT-ONLY / Q BLOCKED]
+↓
+P. AUDITORIA FINAL DE COMPLETUDE          [IN_PROGRESS / DOCUMENTARY / READ-ONLY]
 ↓
 Q. PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME [BLOCKED]
 ```
@@ -297,7 +299,6 @@ Lucas 2:52 na bio do fundador
 
 POSSIBILIDADE
 ≠ OPORTUNIDADE
-
 EXPERIÊNCIA
 ≠ IMPACTO COMPROVADO
 ```
@@ -1097,10 +1098,12 @@ O fechamento documental de O resolve `F-002`. Ele não libera P, não cria basel
 Estado atual:
 
 ```text
-PENDING / NOT RELEASED
+RELEASE ELIGIBILITY = PASS
+RELEASED FOR FINAL COMPLETENESS AUDIT ONLY
+IN_PROGRESS / DOCUMENTARY / READ-ONLY
 ```
 
-Antes de qualquer execução temática de P deve ocorrer adjudicação separada de elegibilidade, documental e read-only. O fechamento de O não constitui essa liberação.
+A adjudicação separada de elegibilidade foi concluída como `PASS` sobre o `HEAD 16d4c2b8a8a2bb3e7805a60a646f2f07a8b2fdcb`. A liberação de P autoriza somente a auditoria final de completude do corpus; não constitui resultado `PASS`, fechamento da auditoria, baseline final ou liberação de Q.
 
 A auditoria final deve verificar:
 
@@ -1262,7 +1265,7 @@ ESPECIFICAÇÃO EDITORIAL ≠ CONTEÚDO PUBLICADO
 
 ## 26. Regra do próximo movimento
 
-`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N e O concluíram suas auditorias documentais. `F-022` não foi aberto. P permanece pendente e não liberado.
+`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N e O concluíram suas auditorias documentais. `F-022` não foi aberto. P está liberado exclusivamente para a auditoria final de completude e permanece `IN_PROGRESS`; Q continua bloqueado.
 
 ```text
 J
@@ -1300,15 +1303,17 @@ O
 → OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
 P
-→ PENDING / NOT RELEASED
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR FINAL COMPLETENESS AUDIT ONLY
+→ IN_PROGRESS / DOCUMENTARY / READ-ONLY
 
 Q
 → BLOCKED
 
 NEXT
-→ P RELEASE ELIGIBILITY ADJUDICATION
+→ EXECUTE P — FINAL COMPLETENESS AUDIT
 → DOCUMENTARY / READ-ONLY
-→ DO NOT RELEASE P BY INFERENCE
+→ DO NOT RELEASE Q BY INFERENCE
 
 TECHNOLOGY / DATA / AI
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
@@ -1324,4 +1329,4 @@ RESEARCH OPERATIONAL STATES
 → PMF = NOT VALIDATED
 ```
 
-`UXA-102/V5`, Design, Product Engineering, P e merge da PR #363 permanecem bloqueados ou não autorizados. O fechamento de O é estritamente documental e não libera P por inferência.
+`UXA-102/V5`, Design, Product Engineering, Q, baseline final e merge da PR #363 permanecem bloqueados ou não autorizados. A liberação de P é estritamente documental e não encerra a auditoria por inferência.
