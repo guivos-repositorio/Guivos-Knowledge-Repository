@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.28.0
+version: 3.29.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-09
 depends_on:
@@ -13,6 +13,8 @@ related:
   - GKR-UX-PER002-MAT-ELIGIBILITY-001
   - GKR-UX-PER002-DESIGN-AUTH-001
   - GKR-UX-PER002-DESIGN-DELIVERY-001
+  - GKR-UX-PER002-DESIGN-VALIDATION-001
+  - GKR-UX-PER002-HIFI-ELIGIBILITY-001
 normative: false
 ---
 
@@ -24,7 +26,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.28.0
+→ 3.29.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -145,12 +147,32 @@ Q DESIGN DELIVERY
 → AUTHORITY = GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0
 → COMPOSITION = 4 PRIMARY FRAMES + 3 VARIANTS
 → AUTHORIZED COVERAGE = 7 / 7 MATERIALIZED
-→ FUNCTIONAL VALIDATION = NOT_STARTED
+
+Q LOW-FIDELITY FUNCTIONAL VALIDATION
+→ PASS / CANONICALLY CONSOLIDATED
+→ VALIDATOR = GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0
+→ AUTHORIZED COVERAGE = 7 / 7 PASS
+→ BOUNDARY ACCEPTANCE = 10 / 10 PASS
+→ MINIMUM FUNCTIONAL REQUIREMENTS = 12 / 12 PASS
+→ MATERIAL FINDINGS = 0
+→ BLOCKING FINDINGS = 0
+→ REFORMULATION REQUIRED = NO
+→ CURRENT LOW-FIDELITY DESIGN REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
+→ TRN-001 / TRN-002 UNCHANGED
+
+Q POST-VALIDATION NEXT-STAGE ELIGIBILITY
+→ PASS
+→ AUTHORITY = GKR-UX-PER002-HIFI-ELIGIBILITY-001 v1.0.0
+→ NEXT ELIGIBLE STAGE = EXPLICIT PER-002 HIGH-FIDELITY DESIGN AUTHORIZATION DECISION
+→ HIGH-FIDELITY AUTHORIZATION = NOT_GRANTED
+→ HIGH-FIDELITY EXECUTION = NOT_STARTED
+→ PROTOTYPE = NOT_AUTHORIZED
+→ SOURCE LOCK = NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE
 → UXA-102/V5 REMAINS NOT_STARTED
 
 PRÓXIMO MOVIMENTO GOVERNADO
-→ PER-002 LOW-FIDELITY FUNCTIONAL VALIDATION
-→ VALIDAR A ENTREGA CONTRA O BOUNDARY CONGELADO, A AUTORIZAÇÃO, UXA-020, UXA-023 E REGISTRIES VIGENTES
+→ EXPLICIT PER-002 HIGH-FIDELITY DESIGN AUTHORIZATION DECISION
+→ NÃO EXECUTAR HIGH-FIDELITY SEM AUTORIZAÇÃO SEPARADA
 → NÃO INICIAR UXA-102/V5 POR INFERÊNCIA
 → NÃO RETOMAR PRODUCT ENGINEERING
 ```
@@ -174,9 +196,16 @@ DESIGN AUTHORIZATION
 
 DESIGN DELIVERY
 ≠ VISUAL MATURITY PROMOTION
+
+FUNCTIONAL VALIDATION PASS
+≠ HIGH-FIDELITY AUTHORIZATION
+
+HIGH-FIDELITY ELIGIBILITY
+≠ HIGH-FIDELITY AUTHORIZATION
+≠ EXECUTION
 ```
 
-A auditoria integral encerrou a verificação do corpus sem converter maturidade documental em maturidade visual. A adjudicação de materialização de Q estabeleceu que `PER-002` possui contrato funcional suficiente para materialização low-fidelity; a autorização governada liberou essa execução e a primeira entrega agora existe em `GKR-UX-PER002-DESIGN-DELIVERY-001`. Nenhuma maturidade visual validada é inferida antes da validação funcional própria da entrega.
+A auditoria integral encerrou a verificação do corpus sem converter maturidade documental em maturidade visual. A adjudicação de materialização de Q estabeleceu que `PER-002` possui contrato funcional suficiente para materialização low-fidelity; a autorização governada liberou essa execução, a entrega existe em `GKR-UX-PER002-DESIGN-DELIVERY-001` e sua validação funcional concluiu `PASS` em `GKR-UX-PER002-DESIGN-VALIDATION-001`. A referência corrente low-fidelity é o pacote entrega+validator. A elegibilidade high-fidelity também concluiu `PASS`, sem autorizar sua execução ou alterar a maturidade agregada do corpus.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -298,7 +327,7 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.28.0** |
+| Registro do Estado Atual | **3.29.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
@@ -324,20 +353,27 @@ Ainda não são canônicos:
 | Materialization target | **PER-002 — ENTRADA PROTEGIDA / LOW-FIDELITY FUNCTIONAL** |
 | Design handoff boundary | **GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN** |
 | Design authorization | **GRANTED / GKR-UX-PER002-DESIGN-AUTH-001 / PER-002 LOW-FIDELITY ONLY** |
-| Design delivery | **EXECUTED / GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0 / PENDING FUNCTIONAL VALIDATION** |
+| Design delivery | **EXECUTED / GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0** |
 | Design delivery composition | **4 PRIMARY FRAMES + 3 VARIANTS / 7 OF 7 AUTHORIZED AREAS** |
+| Functional validation | **PASS / GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0 / 0 MATERIAL FINDINGS** |
+| Current low-fidelity Design reference | **DELIVERY v0.1.0 + VALIDATION v1.0.0** |
+| High-fidelity eligibility | **PASS / GKR-UX-PER002-HIFI-ELIGIBILITY-001 v1.0.0** |
+| High-fidelity authorization | **NOT_GRANTED** |
+| High-fidelity execution | **NOT_STARTED** |
+| Prototype | **NOT_AUTHORIZED** |
+| Source Lock pós-validação | **NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE** |
 | Primeira responsabilidade autenticada pós-Home | **AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA** |
 | Primeira superfície distinta downstream | **PER-003 — ESCOLHA DE MODALIDADE** |
 | Nova superfície / novo PER-ID | **NOT REQUIRED / NOT CREATED** |
-| Próximo movimento governado | **PER-002 LOW-FIDELITY FUNCTIONAL VALIDATION / NO UXA-102 BY INFERENCE** |
+| Próximo movimento governado | **EXPLICIT PER-002 HIGH-FIDELITY DESIGN AUTHORIZATION DECISION / NO UXA-102 BY INFERENCE** |
 | RP-002 Operational Readiness | **HOLD** |
 | Participant 001 | **HOLD** |
 | Dry Run real | **NOT RELEASED** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
-| Maturidade visual agregada | **NOT_CERTIFIED / NÃO INFERIDA A PARTIR DA ENTREGA** |
+| Maturidade visual agregada | **NOT_CERTIFIED / NÃO INFERIDA DA VALIDAÇÃO LOCAL** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 
-A entrega low-fidelity funcional de `PER-002` torna o contrato inspecionável, mas não promove maturidade de transição, validação visual, implementação, operação, PMF ou `UXA-102/V5`. O próximo gate é sua validação funcional governada.
+A entrega low-fidelity funcional de `PER-002` foi validada no boundary autorizado e passa a ser referência corrente low-fidelity quando lida com seu validator. Isso não promove maturidade de transição, maturidade visual agregada, implementação, operação, PMF ou `UXA-102/V5`. O próximo gate é exclusivamente a decisão explícita de autorização high-fidelity de `PER-002`.
