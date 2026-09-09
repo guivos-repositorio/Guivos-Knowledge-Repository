@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.24.0
+version: 3.25.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-08
 depends_on:
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.24.0
+→ 3.25.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -108,19 +108,28 @@ FINAL BASELINE PÓS-AUDITORIA
 → SHA 15f4d69f63cd760718dce7903224673aac4f540a
 → IMMUTABLE REFERENCE FOR Q DOCUMENTARY DEFINITION
 
-Q — PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
+Q — PRIMEIRA RESPONSABILIDADE AUTENTICADA DA PESSOA APÓS A HOME
 → RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
-→ FIRST AUTHENTICATED RESPONSIBILITY / SURFACE NOT YET DEFINED
+→ FUNCTIONAL DEFINITION = PASS / CANONICALLY CONSOLIDATED
+→ FIRST AUTHENTICATED RESPONSIBILITY = AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
+→ AUTHENTICATION = INTERNAL GATE / STATE WITHIN PER-002
+→ AUTHENTICATION COMPLETION ≠ PER-002 COMPLETION
+→ AUTHENTICATION ≠ MATERIAL PROCESSING AUTHORIZATION
+→ FIRST DISTINCT DOWNSTREAM REGISTERED SURFACE = PER-003 — ESCOLHA DE MODALIDADE
+→ NEW SURFACE / NEW PER-ID NOT REQUIRED BY CURRENT EVIDENCE
+→ PER-008 / TELA HOJE = DOWNSTREAM / NOT FIRST AUTHENTICATED RESPONSIBILITY
+→ EXISTING-RELATIONSHIP LOGIN = RESUMPTIVE PATH / NOT FORCED INTO FIRST-ENTRY ONBOARDING
+→ TRN-001 = PARTIAL / UNCHANGED
+→ TRN-002 = LOCALLY VALIDATED / UNCHANGED
 → UXA-102/V5 REMAINS NOT_STARTED
 → DESIGN / WIREFRAME / UI / PROTOTYPE NOT AUTHORIZED
 
 PRÓXIMO MOVIMENTO GOVERNADO
-→ Q FUNCTIONAL DEFINITION
-→ DOCUMENTARY / READ-ONLY AUTHORITY RECONCILIATION
-→ NÃO PRESUMIR TELA HOJE OU QUALQUER TELA HISTÓRICA
-→ PRESERVAR DOCUMENTAÇÃO / IMPLEMENTAÇÃO / OPERAÇÃO COMO ESTADOS DISTINTOS
+→ Q MATERIALIZATION ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ DETERMINAR SE / QUAL MATERIALIZAÇÃO É JUSTIFICADA PELA FRONTEIRA FUNCIONAL DE PER-002
 → NÃO INICIAR DESIGN
+→ NÃO INICIAR UXA-102/V5 POR INFERÊNCIA
 → NÃO RETOMAR PRODUCT ENGINEERING
 ```
 
@@ -257,7 +266,7 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.24.0** |
+| Registro do Estado Atual | **3.25.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
@@ -278,9 +287,11 @@ Ainda não são canônicos:
 | Lote O — MENU final / rotas multiequipe | **DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED / OPEN O-SPECIFIC MATERIAL FINDINGS = 0** |
 | Lote P — Auditoria final | **COMPLETED / PASS / OPEN P-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Q release eligibility | **PASS** |
-| Q | **RELEASED FOR DOCUMENTARY DEFINITION ONLY** |
-| Primeira tela autenticada pós-Home | **NOT DEFINED** |
-| Próximo movimento governado | **Q FUNCTIONAL DEFINITION — DOCUMENTARY / READ-ONLY / NO DESIGN** |
+| Q functional definition | **PASS / CANONICALLY CONSOLIDATED** |
+| Primeira responsabilidade autenticada pós-Home | **AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA** |
+| Primeira superfície distinta downstream | **PER-003 — ESCOLHA DE MODALIDADE** |
+| Nova superfície / novo PER-ID | **NOT REQUIRED BY CURRENT EVIDENCE** |
+| Próximo movimento governado | **Q MATERIALIZATION ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY / NO DESIGN** |
 | RP-002 Operational Readiness | **HOLD** |
 | Participant 001 | **HOLD** |
 | Dry Run real | **NOT RELEASED** |
@@ -291,4 +302,4 @@ Ainda não são canônicos:
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 
-A captura da baseline final e a liberação documental de Q não promovem, por si só, maturidade funcional, Design, implementação, operação, PMF ou UXA-102/V5. Os estados funcionais permanecem sustentados por suas autoridades textuais vigentes.
+A captura da baseline final e a consolidação documental da definição funcional de Q não promovem, por si só, maturidade de transição, Design, implementação, operação, PMF ou UXA-102/V5. Os estados funcionais permanecem sustentados por suas autoridades textuais vigentes.

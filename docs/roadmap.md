@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.23.0
+id: ROADMAP-13.24.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.23.0
+version: 13.24.0
 owner: Guivos
 last_updated: 2026-09-08
 normative: true
@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.24.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.25.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -51,7 +51,7 @@ ROADMAP
 ≠ REGISTRO HISTÓRICO
 ```
 
-A **Auditoria Integral do Guivos Knowledge Repository** foi concluída com resultado `PASS`: 23 de 23 checkpoints governados encerrados. A adjudicação de elegibilidade de Q também foi concluída como `PASS`, a baseline final pós-auditoria foi capturada no `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e Q foi liberado somente para definição documental da primeira responsabilidade autenticada da Pessoa após a Home.
+A **Auditoria Integral do Guivos Knowledge Repository** foi concluída com resultado `PASS`: 23 de 23 checkpoints governados encerrados. A adjudicação de elegibilidade de Q também foi concluída como `PASS`, a baseline final pós-auditoria foi capturada no `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e Q foi liberado para definição documental. Essa definição funcional foi posteriormente concluída e consolidada: a primeira responsabilidade autenticada é a continuação autenticada de `PER-002 — Entrada protegida`, sem criação de nova superfície; `PER-003 — Escolha de modalidade` é a primeira superfície registrada distinta downstream.
 
 Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. O Lote M concluiu sua auditoria documental com `OPEN M-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`, sem promover execução jurídica, privacidade operacional ou constituição institucional. O Lote N concluiu sua auditoria documental com `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`, `F-022 NOT OPENED` e sem promover execução de GTM, publicação ou operação de mercado. O Lote O concluiu sua auditoria documental após rebuild governado do MENU e prova Semantic + Mechanical; `F-002 = RESOLVED`. O Lote P concluiu a auditoria final de completude com `PASS`, recomputação de contagens físicas e maturidade documental, `OPEN P-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`.
 
@@ -59,19 +59,21 @@ Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite docume
 
 `F-010` permanece `RESOLVED`. O review Codex permaneceu indisponível por limite de uso e nenhuma claim `CLEAN` é inferida.
 
-A captura da baseline final e a liberação documental de Q não promovem automaticamente wireframe, Design, UXA-102/V5 ou implementação. Qualquer avanço visual ou técnico exige gate e autorização próprios.
+A captura da baseline final, a liberação documental de Q e sua definição funcional não promovem automaticamente wireframe, Design, UXA-102/V5 ou implementação. Qualquer avanço visual ou técnico exige gate e autorização próprios.
 
 ## 2. Baseline governada
 
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.24.0** |
+| Estado global | **GKR-STATE-001 v3.25.0** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
 | Baseline final pós-auditoria | **CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a** |
 | Q release eligibility | **PASS** |
-| Q | **RELEASED FOR DOCUMENTARY DEFINITION ONLY** |
-| Primeira tela autenticada pós-Home da Pessoa | **NOT DEFINED** |
+| Q functional definition | **PASS / CANONICALLY CONSOLIDATED** |
+| Primeira responsabilidade autenticada pós-Home | **AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA** |
+| Primeira superfície distinta downstream | **PER-003 — ESCOLHA DE MODALIDADE** |
+| Nova superfície / novo PER-ID | **NOT REQUIRED BY CURRENT EVIDENCE** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | UXA-102/V5 | **NOT_STARTED** |
@@ -96,7 +98,7 @@ A captura da baseline final e a liberação documental de Q não promovem automa
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |
-| Design das Homes | **NOT AUTHORIZED BY P CLOSURE OR Q RELEASE / REQUIRES SEPARATE GOVERNED ACT** |
+| Design das Homes | **NOT AUTHORIZED BY P CLOSURE, Q RELEASE OR Q FUNCTIONAL DEFINITION / REQUIRES SEPARATE GOVERNED ACT** |
 
 Inventário físico corrente após F-016-A:
 
@@ -226,10 +228,12 @@ ADJUDICAÇÃO DE ELEGIBILIDADE Q           [COMPLETED / PASS]
 ↓
 BASELINE FINAL PÓS-AUDITORIA             [CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a]
 ↓
-Q. PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME [RELEASED FOR DOCUMENTARY DEFINITION ONLY / NOT YET DEFINED]
+Q. DEFINIÇÃO FUNCIONAL                   [COMPLETED / PASS / CANONICALLY CONSOLIDATED]
+↓
+Q MATERIALIZATION ELIGIBILITY            [NEXT / DOCUMENTARY / READ-ONLY / NO DESIGN]
 ```
 
-A ordem protege o corpus contra duas falhas: desenhar sobre conceitos antigos e presumir uma tela histórica como resposta. A liberação de Q não autoriza Design nem implementação.
+A ordem protege o corpus contra duas falhas: desenhar sobre conceitos antigos e presumir uma tela histórica como resposta. A definição funcional de Q não autoriza Design nem implementação.
 
 ## 5. Lote A — Governança do corpus
 
@@ -363,9 +367,9 @@ Movimento 06 vigente:
 DA POSSIBILIDADE À EXPERIÊNCIA
 ```
 
-O fechamento de D é exclusivamente documental. Não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, disponibilidade operacional, PMF ou primeira tela autenticada da Pessoa.
+O fechamento de D é exclusivamente documental. Não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, disponibilidade operacional, PMF ou materialização da fronteira autenticada da Pessoa.
 
-Gate vigente pós-baseline/Q release:
+Gate vigente pós-Q functional definition:
 
 ```text
 HOME PRINCIPAL / PESSOA
@@ -374,14 +378,17 @@ HOME PRINCIPAL / PESSOA
 FINAL BASELINE
 → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
 
-Q
-→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
+Q FUNCTIONAL DEFINITION
+→ PASS / CANONICALLY CONSOLIDATED
 
-PRIMEIRA TELA AUTENTICADA DA PESSOA
-→ NOT DEFINED
+FIRST AUTHENTICATED RESPONSIBILITY
+→ AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
+
+FIRST DISTINCT DOWNSTREAM SURFACE
+→ PER-003 — ESCOLHA DE MODALIDADE
 
 MATERIALIZAÇÃO VISUAL
-→ NOT AUTHORIZED BY Q RELEASE
+→ NOT AUTHORIZED BY Q FUNCTIONAL DEFINITION
 → REQUIRES SEPARATE GOVERNED ACT
 ```
 
@@ -546,7 +553,7 @@ COMPLETED / UPDATE_APPLIED
 JOURNEY MATURITY → DRAFT PRESERVED
 ```
 
-A auditoria reconciliou a jornada atual da Pessoa no limite documental, incluindo handoffs e estados de transição já suportados pelas autoridades vigentes. O fechamento do bloco G não promove a Jornada da Pessoa além de `draft` e não seleciona a primeira tela autenticada pós-Home.
+A auditoria reconciliou a jornada atual da Pessoa no limite documental, incluindo handoffs e estados de transição já suportados pelas autoridades vigentes. O fechamento do bloco G não promove a Jornada da Pessoa além de `draft` e não selecionou uma tela histórica como primeira responsabilidade pós-Home.
 
 Preservações:
 
@@ -558,7 +565,7 @@ Preservações:
 
 Gate vigente:
 
-> **Q e a baseline final agora permitem apenas a definição documental da primeira responsabilidade autenticada; Design, wireframe, UXA-102/V5 e implementação continuam sujeitos a autorização própria.**
+> **Q definiu documentalmente a primeira responsabilidade autenticada como continuação autenticada de `PER-002`, preservando `TRN-001` parcial e `TRN-002` localmente validada. Materialização, Design, wireframe, UXA-102/V5 e implementação continuam sujeitos a autorização própria.**
 
 ## 12. Lote H — Organização e Coletivo
 
@@ -1185,45 +1192,87 @@ PASS
 
 O fechamento de P não autorizou por si só a baseline final nem liberou Q automaticamente. Esses atos ocorreram posteriormente por adjudicação e autorização próprias.
 
-## 21. Lote Q — Primeira tela autenticada da Pessoa após a Home
+## 21. Lote Q — Primeira responsabilidade autenticada da Pessoa após a Home
 
 Estado atual:
 
 ```text
-Q RELEASE ELIGIBILITY → PASS
-FINAL BASELINE → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
-Q → RELEASED FOR DOCUMENTARY DEFINITION ONLY
-FIRST AUTHENTICATED RESPONSIBILITY / SURFACE → NOT DEFINED
-UXA-102 / V5 → NOT_STARTED
-DESIGN → NOT AUTHORIZED
+Q RELEASE ELIGIBILITY
+→ PASS
+
+FINAL BASELINE
+→ CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
+
+Q FUNCTIONAL DEFINITION
+→ PASS / CANONICALLY CONSOLIDATED
+
+FIRST AUTHENTICATED RESPONSIBILITY
+→ AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
+
+AUTHENTICATION
+→ INTERNAL GATE / STATE WITHIN PER-002
+→ AUTHENTICATION COMPLETION ≠ PER-002 COMPLETION
+→ AUTHENTICATION ≠ MATERIAL PROCESSING AUTHORIZATION
+
+FIRST DISTINCT DOWNSTREAM REGISTERED SURFACE
+→ PER-003 — ESCOLHA DE MODALIDADE
+
+NEW SURFACE / NEW PER-ID
+→ NOT REQUIRED BY CURRENT EVIDENCE
+
+PER-008 / TELA HOJE
+→ DOWNSTREAM
+→ NOT FIRST AUTHENTICATED RESPONSIBILITY
+
+TRN-001
+→ PARTIAL / UNCHANGED
+
+TRN-002
+→ LOCALLY VALIDATED / UNCHANGED
+
+UXA-102 / V5
+→ NOT_STARTED
+
+DESIGN
+→ NOT AUTHORIZED
 ```
 
-A adjudicação read-only comprovou que Q pode iniciar definição documental sem presumir uma tela histórica. A baseline final pós-auditoria é o `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, capturado como referência imutável para esta frente.
+A adjudicação read-only de Q concluiu que a autenticação é um gate/estado interno de `PER-002`, não um evento que cria automaticamente uma nova superfície ou encerra a responsabilidade de entrada protegida. Após autenticar, a Pessoa continua em `PER-002` para receber contexto protegido, finalidades, privacidade, controles, alternativas e reversibilidade compatíveis; somente então o handoff legítimo para `PER-003` pode ocorrer.
 
-Q deve começar pela determinação funcional do problema e da primeira responsabilidade real. Não se presume que a resposta seja a Tela Hoje, `PER-008`, UXA-097 ou qualquer outro objeto pré-existente.
+A definição preserva um segundo caminho distinto da Home: `Login` para uma Pessoa com relação existente é rota de retomada e não deve ser forçada para o onboarding de primeira entrada.
 
-Processo governado:
+Processo governado consolidado:
 
 ```text
-HOME PESSOA FINAL / BASELINE CAPTURED
-→ INTENÇÃO DE ENTRADA
-→ CONTEXTO / AUTORIDADE / PRIVACIDADE NECESSÁRIOS
-→ PRIMEIRA RESPONSABILIDADE REAL
-→ ESCOPO FUNCIONAL DA SUPERFÍCIE
-→ ESTADOS
-→ FLUXOS DE ENTRADA E SAÍDA
-→ CRITÉRIOS / HANDOFFS / REVERSIBILIDADE
-→ SOMENTE DEPOIS: GATE SEPARADO PARA DESIGN / MATERIALIZAÇÃO, SE NECESSÁRIO
+HOME PÚBLICA
+→ DECISÃO VOLUNTÁRIA DE INICIAR
+→ PER-002 / ENTRADA PROTEGIDA PRÉ-AUTH
+→ EXPLICAÇÃO DO AMBIENTE E ALTERNATIVAS
+→ AUTENTICAÇÃO / CRIAÇÃO / RECUPERAÇÃO
+→ CONTINUAÇÃO AUTENTICADA DE PER-002
+→ FINALIDADES / PRIVACIDADE / CONTROLES
+→ CONDIÇÃO LEGÍTIMA DE SAÍDA
+→ TRN-002
+→ PER-003 / ESCOLHA DE MODALIDADE
 ```
 
 ```text
-Q RELEASE
-≠ TELA DEFINIDA
+Q FUNCTIONAL DEFINITION
+≠ NOVA TELA POR INFERÊNCIA
 ≠ TELA HOJE SELECIONADA
 ≠ UXA-102 INICIADA
 ≠ WIREFRAME
 ≠ DESIGN
 ≠ PRODUCT ENGINEERING
+```
+
+Próximo gate:
+
+```text
+Q MATERIALIZATION ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ DETERMINAR SE / QUAL MATERIALIZAÇÃO É JUSTIFICADA PELA FRONTEIRA FUNCIONAL DE PER-002
+→ NÃO INICIAR DESIGN
 ```
 
 ## 22. Marca e filing — gates paralelos, não prioritários
@@ -1334,7 +1383,7 @@ ESPECIFICAÇÃO EDITORIAL ≠ CONTEÚDO PUBLICADO
 
 ## 26. Regra do próximo movimento
 
-`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N, O e P concluíram suas auditorias documentais. `F-022` não foi aberto. A auditoria integral está `COMPLETED / PASS / 23 OF 23`. Q foi adjudicado como elegível, a baseline final foi capturada e Q está liberado somente para definição documental.
+`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N, O e P concluíram suas auditorias documentais. `F-022` não foi aberto. A auditoria integral está `COMPLETED / PASS / 23 OF 23`. Q foi adjudicado como elegível, a baseline final foi capturada e a definição funcional foi concluída e consolidada.
 
 ```text
 J
@@ -1391,14 +1440,19 @@ FINAL BASELINE
 Q RELEASE ELIGIBILITY
 → PASS
 
-Q
-→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
-→ FIRST AUTHENTICATED RESPONSIBILITY / SURFACE NOT DEFINED
+Q FUNCTIONAL DEFINITION
+→ PASS / CANONICALLY CONSOLIDATED
+→ FIRST AUTHENTICATED RESPONSIBILITY = AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
+→ AUTHENTICATION = INTERNAL GATE / STATE WITHIN PER-002
+→ FIRST DISTINCT DOWNSTREAM SURFACE = PER-003 — ESCOLHA DE MODALIDADE
+→ NEW SURFACE / NEW PER-ID NOT REQUIRED BY CURRENT EVIDENCE
+→ PER-008 / TELA HOJE = DOWNSTREAM
+→ TRN-001 PARTIAL / UNCHANGED
+→ TRN-002 LOCALLY VALIDATED / UNCHANGED
 
 NEXT
-→ Q FUNCTIONAL DEFINITION
-→ DOCUMENTARY / READ-ONLY AUTHORITY RECONCILIATION
-→ DO NOT PRESUME TELA HOJE OR ANY HISTORICAL SCREEN
+→ Q MATERIALIZATION ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
 → DO NOT START DESIGN / UXA-102 / PRODUCT ENGINEERING
 
 TECHNOLOGY / DATA / AI
@@ -1415,4 +1469,4 @@ RESEARCH OPERATIONAL STATES
 → PMF = NOT VALIDATED
 ```
 
-`UXA-102/V5`, Design, Product Engineering, PMF, implementação, produção e merge da PR #363 permanecem não iniciados ou não autorizados. Q pode avançar apenas em definição documental até novo gate próprio.
+`UXA-102/V5`, Design, Product Engineering, PMF, implementação, produção e merge da PR #363 permanecem não iniciados ou não autorizados. O próximo ato é somente a adjudicação read-only de elegibilidade de materialização de Q.

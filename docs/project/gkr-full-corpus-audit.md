@@ -2,11 +2,11 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.29.0
+version: 1.30.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-08
 normative: false
-maturity: audit_completed_pass_post_baseline_q_released
+maturity: audit_completed_pass_post_q_functional_definition_consolidated
 baseline_sha: a05a54071414086456877ee4d0de59c59eefed0a
 final_baseline_sha: 15f4d69f63cd760718dce7903224673aac4f540a
 ---
@@ -164,7 +164,7 @@ Nenhuma remoção é executada antes de verificar conteúdo único, evidência e
 | F-009 | Major | autoridades O/C recentes não estavam absorvidas nas autoridades globais | `UPDATE` | **absorção global concluída; navegação multiequipe reconciliada no Lote O** |
 | F-010 | Major | checkpoints, snapshots, propagations e reconciliações precisam de teste de função atual | `RESOLVED` | **auditoria estrutural, cleanup, validação pós-cleanup e review independente concluídos; Codex indisponível por limite de uso, sem claim `CLEAN`** |
 | F-011 | Critical guardrail | nenhuma consolidação pode perder detalhe material | `KEEP_DETAIL` | regra ativa |
-| F-012 | Gate | primeira tela pós-Home da Pessoa depende do encerramento da auditoria | `BLOCK` | **pré-requisito de auditoria satisfeito por P; Q release eligibility = PASS; baseline final capturada em `15f4d69f...`; Q liberado somente para definição documental; materialização continua sujeita a gate próprio** |
+| F-012 | Gate | primeira tela pós-Home da Pessoa depende do encerramento da auditoria | `BLOCK` | **pré-requisito de auditoria satisfeito por P; Q release eligibility = PASS; baseline final capturada em `15f4d69f...`; Q functional definition = PASS / canonically consolidated; primeira responsabilidade autenticada = continuação autenticada de PER-002; materialização continua sujeita a gate próprio** |
 | F-013 | Major | Fundação antiga supercentralizava Oportunidade e antecedia distinção Possibilidade/Mecanismo/Oportunidade | `REBUILD + ENRICH` | reconciliado no Lote C |
 | F-014 | Major | PP-11 antigo podia confundir visão de capacidade máxima com verdade atual | `UPDATE` | reconciliado no Lote C |
 | F-015 | Major | Public Canon anterior ainda publicava fluxo/definição anterior de Oportunidade | `UPDATE + ENRICH` | reconciliado no Lote C |
@@ -1638,6 +1638,114 @@ DESIGN ARTIFACTS
 
 A baseline final permanece `15f4d69f...` mesmo que a transação de propagação produza um novo `HEAD`: o novo commit registra a decisão pós-auditoria e não substitui o objeto auditado capturado.
 
+## 6.18 Consolidação canônica da definição funcional de Q
+
+Após a liberação documental de Q no `HEAD 2ba1efbb8757a7a5e74fa6e8c298ab901cae17bf`, a definição funcional foi concluída por reconciliação read-only das autoridades vigentes da Home, Jornada, Surface Registry, Surface Details e Transition Registry, sem criar nova UXA, novo `PER-ID`, materialização ou implementação.
+
+A decisão separa responsabilidade funcional, gate de autenticação e superfície registrada:
+
+```text
+HOME PÚBLICA
+→ DECISÃO VOLUNTÁRIA DE INICIAR
+→ PER-002 — ENTRADA PROTEGIDA / PRE-AUTH
+→ EXPLICAÇÃO DO AMBIENTE E ALTERNATIVAS
+→ AUTENTICAÇÃO / CRIAÇÃO / RECUPERAÇÃO
+→ CONTINUAÇÃO AUTENTICADA DE PER-002
+→ FINALIDADES / PRIVACIDADE / CONTROLES / REVERSIBILIDADE
+→ CONDIÇÃO LEGÍTIMA DE SAÍDA
+→ TRN-002
+→ PER-003 — ESCOLHA DE MODALIDADE
+```
+
+Adjudicação:
+
+```text
+Q FUNCTIONAL DEFINITION
+→ PASS
+→ CANONICALLY CONSOLIDATED
+
+FIRST AUTHENTICATED RESPONSIBILITY
+→ AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
+
+AUTHENTICATION
+→ INTERNAL GATE / STATE WITHIN PER-002
+→ AUTHENTICATION COMPLETION ≠ PER-002 COMPLETION
+→ AUTHENTICATION ≠ MATERIAL PROCESSING AUTHORIZATION
+
+FIRST DISTINCT DOWNSTREAM REGISTERED SURFACE
+→ PER-003 — ESCOLHA DE MODALIDADE
+
+NEW SURFACE / NEW PER-ID
+→ NOT REQUIRED BY CURRENT EVIDENCE
+
+PER-008 / TELA HOJE
+→ DOWNSTREAM
+→ NOT FIRST AUTHENTICATED RESPONSIBILITY
+
+EXISTING-RELATIONSHIP LOGIN
+→ RESUMPTIVE PATH
+→ NOT FORCED INTO FIRST-ENTRY ONBOARDING
+
+TRN-001
+→ PARTIAL / UNCHANGED
+
+TRN-002
+→ LOCALLY VALIDATED / UNCHANGED
+```
+
+A autenticação concluída não encerra `PER-002` automaticamente. O estado autenticado de `PER-002` continua responsável por tornar compreensíveis o ambiente protegido, as finalidades relevantes, a autoridade, a privacidade, os controles, alternativas e a possibilidade de interromper ou retornar antes de qualquer processamento material ou handoff legítimo para `PER-003`.
+
+A definição também impede duas promoções indevidas:
+
+```text
+AUTHENTICATED CONTINUATION OF PER-002
+≠ NEW SCREEN REQUIRED BY DEFINITION ALONE
+
+PER-003 AS FIRST DISTINCT DOWNSTREAM SURFACE
+≠ TRN-002 PROMOTED TO INTEGRALLY VALIDATED
+```
+
+A baseline final pós-auditoria permanece imutável em `15f4d69f63cd760718dce7903224673aac4f540a`; esta consolidação registra verdade derivada pós-baseline e não redefine o objeto auditado.
+
+Boundary da transação canônica de consolidação:
+
+1. `README.md`;
+2. `docs/index.md`;
+3. `docs/project/current-state-register.md`;
+4. este master audit;
+5. `docs/roadmap.md`;
+6. `docs/experience-architecture/uxa-047-101-index.md`;
+7. `docs/experience-architecture/public-home-master-document.md`.
+
+```text
+JOURNEY THEMATIC AUTHORITIES
+→ UNCHANGED
+
+SURFACE / TRANSITION REGISTRIES
+→ UNCHANGED
+
+mkdocs.yml
+→ UNCHANGED
+
+UXA-102 / V5
+→ NOT_STARTED
+
+DESIGN / WIREFRAME / FIGMA / UI / PROTOTYPE
+→ NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
+```
+
+Próximo ato governado:
+
+```text
+Q MATERIALIZATION ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ DETERMINE WHETHER / WHAT MATERIALIZATION IS WARRANTED FROM THE DEFINED PER-002 BOUNDARY
+→ DO NOT START DESIGN
+```
+
 ## 7. F-003 — Home principal/Pessoa — resolvido no Lote D
 
 O conflito material originalmente comprovado foi tratado de forma incremental e governada no Lote D, sem abrir materialização visual.
@@ -1684,7 +1792,7 @@ Conclusão comprovada:
 
 > **Home principal/Pessoa = DOCUMENTALMENTE_RECONCILIADA_PRE_MATERIALIZAÇÃO.**
 
-Esse estado não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, disponibilidade operacional nem, por si só, a primeira tela autenticada da Pessoa. Q está liberado apenas para definição documental conforme §6.17.
+Esse estado não autoriza wireframe, Figma, UI, protótipo, implementação, publicação ou disponibilidade operacional. A fronteira funcional pós-Home foi definida posteriormente em Q conforme §6.18, mas sua materialização continua dependente de gate separado.
 
 ## 8. F-004 — Home de Organizações e Coletivos — resolvido no Lote E
 
@@ -2280,7 +2388,7 @@ O Public Canon passa a `GOG-001 v5.3.0` e publica essa distinção sem promover 
 | N — GTM / presença pública | `COMPLETED / DOCUMENTARY_AUDIT` | `GTM-001..011 = KEEP`; fronteiras de presença/internacionalização reconciliadas; `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`; `F-022 NOT OPENED`; nenhuma execução GTM promovida |
 | O — MENU / rotas por equipe | `COMPLETED / DOCUMENTARY_AUDIT / F-002_RESOLVED` | MENU reconstruído e validado; hubs de domínio e rotas multiequipe reconciliados |
 | P — Auditoria final | `COMPLETED / PASS / FINAL_COMPLETENESS_AUDIT` | completude repo-wide confirmada; 23/23 checkpoints concluídos |
-| Q — primeira tela pós-Home Pessoa | `RELEASED / DOCUMENTARY_DEFINITION_ONLY` | elegibilidade PASS; baseline final capturada; primeira responsabilidade ainda não definida; nenhum Design autorizado |
+| Q — primeira responsabilidade autenticada pós-Home Pessoa | `FUNCTIONAL_DEFINITION_PASS / CANONICALLY_CONSOLIDATED` | continuação autenticada de `PER-002` definida; `PER-003` = primeira superfície distinta downstream; materialização não autorizada |
 
 ## 16. Ordem de execução
 
@@ -2331,7 +2439,9 @@ Q release eligibility                            [COMPLETED / PASS]
 ↓
 FINAL BASELINE                                   [CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a]
 ↓
-Q. primeira tela da Pessoa                       [RELEASED FOR DOCUMENTARY DEFINITION ONLY / NOT YET DEFINED]
+Q. definição funcional                           [COMPLETED / PASS / CANONICALLY CONSOLIDATED]
+↓
+Q materialization eligibility                    [NEXT / DOCUMENTARY / READ-ONLY / NO DESIGN]
 ```
 
 O MENU foi redesenhado perto do final para refletir o corpus conhecido após as consolidações executadas.
@@ -2420,13 +2530,13 @@ PRODUCT ENGINEERING
 
 Esses estados mudam somente por autoridade/evidência própria.
 
-## 20. Gate para a primeira tela da Pessoa
+## 20. Gate para a primeira responsabilidade autenticada da Pessoa
 
-O pré-requisito de auditoria foi satisfeito por P. A adjudicação de elegibilidade de Q concluiu `PASS`, a baseline final foi capturada e Q foi liberado **somente para definição documental**.
+O pré-requisito de auditoria foi satisfeito por P. A adjudicação de elegibilidade de Q concluiu `PASS`, a baseline final foi capturada e a definição funcional de Q foi concluída e consolidada.
 
 Ainda não iniciar automaticamente:
 
-- materialização final da primeira tela;
+- materialização da responsabilidade autenticada;
 - novo wireframe;
 - nova UXA numerada;
 - UI;
@@ -2443,7 +2553,7 @@ Os requisitos de auditoria satisfeitos por P permanecem:
 6. MENU final reconciliado;
 7. auditoria final sem Critical/Major relacionado ao fluxo.
 
-Estado pós-Q-release:
+Estado pós-Q-functional-definition:
 
 ```text
 Q RELEASE ELIGIBILITY
@@ -2452,17 +2562,36 @@ Q RELEASE ELIGIBILITY
 FINAL BASELINE
 → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
 
-Q
-→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
+Q FUNCTIONAL DEFINITION
+→ PASS / CANONICALLY CONSOLIDATED
 
-FIRST AUTHENTICATED RESPONSIBILITY / SURFACE
-→ NOT DEFINED
+FIRST AUTHENTICATED RESPONSIBILITY
+→ AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
+
+AUTHENTICATION
+→ INTERNAL GATE / STATE WITHIN PER-002
+→ AUTHENTICATION COMPLETION ≠ PER-002 COMPLETION
+→ AUTHENTICATION ≠ MATERIAL PROCESSING AUTHORIZATION
+
+FIRST DISTINCT DOWNSTREAM REGISTERED SURFACE
+→ PER-003 — ESCOLHA DE MODALIDADE
+
+NEW SURFACE / NEW PER-ID
+→ NOT REQUIRED BY CURRENT EVIDENCE
+
+TRN-001
+→ PARTIAL / UNCHANGED
+
+TRN-002
+→ LOCALLY VALIDATED / UNCHANGED
 
 NEXT
-→ FUNCTIONAL DEFINITION BEFORE MATERIALIZATION
+→ Q MATERIALIZATION ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
+→ DO NOT START DESIGN
 ```
 
-Q deve primeiro determinar documentalmente intenção de entrada, contexto/autoridade/privacidade necessários, primeira responsabilidade real, escopo, estados, entrada/saída, reversibilidade e handoffs. Somente depois poderá existir gate separado para materialização, caso necessário.
+A próxima decisão deve determinar se e qual materialização é justificada pela fronteira funcional já definida. Essa adjudicação não inicia Design por si só.
 
 ## 21. Gate de fechamento da auditoria
 
@@ -2615,15 +2744,22 @@ FINAL BASELINE
 → AUTHORIZED / CAPTURED
 → 15f4d69f63cd760718dce7903224673aac4f540a
 
-Q
-→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
-→ FIRST AUTHENTICATED RESPONSIBILITY / SURFACE NOT DEFINED
-→ TELA HOJE NOT PRESUMED
-→ HISTORICAL SCREEN NOT PRESUMED
+Q FUNCTIONAL DEFINITION
+→ PASS / CANONICALLY CONSOLIDATED
+→ FIRST AUTHENTICATED RESPONSIBILITY = AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
+→ AUTHENTICATION = INTERNAL GATE / STATE WITHIN PER-002
+→ AUTHENTICATION COMPLETION ≠ PER-002 COMPLETION
+→ AUTHENTICATION ≠ MATERIAL PROCESSING AUTHORIZATION
+→ FIRST DISTINCT DOWNSTREAM SURFACE = PER-003 — ESCOLHA DE MODALIDADE
+→ NEW SURFACE / NEW PER-ID NOT REQUIRED BY CURRENT EVIDENCE
+→ PER-008 / TELA HOJE = DOWNSTREAM / NOT FIRST AUTHENTICATED RESPONSIBILITY
+→ EXISTING-RELATIONSHIP LOGIN = RESUMPTIVE PATH
+→ TRN-001 = PARTIAL / UNCHANGED
+→ TRN-002 = LOCALLY VALIDATED / UNCHANGED
 
 NEXT
-→ Q FUNCTIONAL DEFINITION
-→ DOCUMENTARY / READ-ONLY AUTHORITY RECONCILIATION
+→ Q MATERIALIZATION ELIGIBILITY ADJUDICATION
+→ DOCUMENTARY / READ-ONLY
 → DO NOT START DESIGN
 
 RESEARCH OPERATIONAL STATES
@@ -2653,7 +2789,7 @@ GTM / PUBLIC PRESENCE OPERATIONAL STATES
 → NO MARKET KPI PROMOTED TO REALIZED
 
 DESIGN / MATERIALIZATION
-→ NOT AUTHORIZED BY Q RELEASE
+→ NOT AUTHORIZED BY Q FUNCTIONAL DEFINITION
 
 UXA-102 / V5
 → NOT_STARTED
@@ -2668,7 +2804,7 @@ MENU FINAL
 
 ## 23. Destino deste registro
 
-A auditoria integral foi fechada com `PASS`. Este arquivo permanece no corpus como registro de fechamento e da transição pós-auditoria para baseline final/Q enquanto sua eventual absorção/remoção não for adjudicada separadamente.
+A auditoria integral foi fechada com `PASS`. Este arquivo permanece no corpus como registro de fechamento, da transição pós-auditoria para baseline final/Q e da consolidação posterior da definição funcional de Q enquanto sua eventual absorção/remoção não for adjudicada separadamente.
 
 Para eventual remoção futura:
 
@@ -2678,7 +2814,7 @@ Para eventual remoção futura:
 4. somente então este registro poderá ser classificado para remoção do corpus atual;
 5. seu histórico continuará preservado no Git.
 
-Nenhuma remoção deste registro é autorizada por P ou pela liberação documental de Q.
+Nenhuma remoção deste registro é autorizada por P, pela liberação documental de Q ou pela consolidação funcional de Q.
 
 ## F-016 — Desmaterialização documental repo-wide
 
