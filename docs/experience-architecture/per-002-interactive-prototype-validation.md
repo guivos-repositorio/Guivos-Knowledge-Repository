@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-PER002-PROTOTYPE-VALIDATION-001
 title: PER-002 — Validação Governada do Protótipo Interativo de Design
-status: active
-version: 1.0.0
+status: superseded
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-09
 normative: false
-maturity: interactive_prototype_validation_pass
+maturity: historical_pre_review_interactive_prototype_validation
 depends_on:
   - GKR-UX-PER002-PROTOTYPE-DELIVERY-001
   - GKR-UX-PER002-PROTOTYPE-AUTH-001
@@ -17,6 +17,7 @@ depends_on:
   - UXA-020
   - UXA-023
 related:
+  - GKR-UX-PER002-PROTOTYPE-REVALIDATION-001
   - GKR-STATE-001
   - PER-002
   - PER-003
@@ -29,16 +30,23 @@ related:
 
 ## 1. Finalidade
 
-Esta autoridade registra a validação governada e separada da entrega `GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0` e do artefato `docs/assets/prototypes/per-002-interactive-prototype.html`.
+Esta autoridade preserva como evidência histórica o ato governado de validação da entrega `GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0` e do artefato `docs/assets/prototypes/per-002-interactive-prototype.html` no checkpoint anterior à revisão Codex que posteriormente encontrou dois findings `P2`.
 
-A validação verifica somente se o protótipo executado permanece dentro do boundary funcional congelado de `PER-002 — Entrada protegida`, preserva a referência high-fidelity validada e torna inspecionáveis os caminhos autorizados sem converter Design em implementação.
+O `PASS` registrado abaixo descreve exclusivamente o resultado daquele ato pré-review. Ele deixou de ser suficiente como fechamento final quando a revisão posterior encontrou regressões de interação e, por isso, esta autoridade foi reclassificada como `superseded`. A conclusão corrente do protótipo é governada por `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0`, após remediação dos findings.
+
+A validação verificou somente se o protótipo executado permanecia dentro do boundary funcional congelado de `PER-002 — Entrada protegida`, preservava a referência high-fidelity validada e tornava inspecionáveis os caminhos autorizados sem converter Design em implementação.
 
 ```text
 PROTOTYPE EXECUTION
 → EXECUTED
 
-PROTOTYPE VALIDATION
+ORIGINAL PROTOTYPE VALIDATION
 → PERFORMED AS SEPARATE GOVERNED ACT
+→ HISTORICAL PRE-CODEX-REVIEW EVIDENCE
+→ SUPERSEDED AS FINAL CURRENT CLOSURE
+
+CURRENT FINAL CONCLUSION
+→ GOVERNED BY GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0
 
 VALIDATION NATURE
 → STATIC / INTERACTION-LOGIC / DESIGN-INSPECTION REVIEW
@@ -46,30 +54,34 @@ VALIDATION NATURE
 → NO PRODUCTION CERTIFICATION
 ```
 
-## 2. Resultado
+## 2. Resultado histórico do checkpoint pré-review
 
 ```text
-PER-002 INTERACTIVE PROTOTYPE VALIDATION
-→ PASS
+PER-002 INTERACTIVE PROTOTYPE VALIDATION — PRE-REVIEW CHECKPOINT
+→ PASS AT THAT CHECKPOINT
 
 TARGET
 → GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
 → docs/assets/prototypes/per-002-interactive-prototype.html
 
 VALIDATION CRITERIA
-→ 16 / 16 PASS
+→ 16 / 16 PASS AT THAT CHECKPOINT
 
-MATERIAL FINDINGS
+MATERIAL FINDINGS OBSERVED BY THIS ACT
 → 0
 
-BLOCKING FINDINGS
+BLOCKING FINDINGS OBSERVED BY THIS ACT
 → 0
 
-REFORMULATION REQUIRED
+REFORMULATION REQUIRED BY THIS ACT
 → NO
+
+LATER CODEX REVIEW
+→ FOUND 2 P2
+→ THIS PASS IS NOT THE CURRENT FINAL CLOSURE
 ```
 
-O `PASS` vale exclusivamente para o protótipo como artefato interativo de inspeção de Design. Não constitui validação de produto implementado, autenticação real, segurança operacional, acessibilidade de produção, usabilidade com pessoas, consentimento, processamento, PMF ou prontidão de Engineering.
+O `PASS` vale exclusivamente como registro histórico do protótipo inspecionado naquele checkpoint. Não constitui a conclusão corrente pós-review nem validação de produto implementado, autenticação real, segurança operacional, acessibilidade de produção, usabilidade com pessoas, consentimento, processamento, PMF ou prontidão de Engineering.
 
 ## 3. Matriz de validação
 
@@ -93,13 +105,15 @@ O `PASS` vale exclusivamente para o protótipo como artefato interativo de inspe
 | Source Lock, UXA-102/V5, Engineering e produção permanecem fora do escopo | PASS | entrega + artefato + boundary final |
 
 ```text
-VALIDATION CRITERIA
+HISTORICAL VALIDATION CRITERIA AT PRE-REVIEW CHECKPOINT
 → 16 / 16 PASS
 ```
 
+A matriz acima permanece como evidência do ato histórico e não substitui a revalidação pós-review corrente.
+
 ## 4. Cobertura interativa
 
-A cobertura observada é:
+A cobertura observada naquele ato foi:
 
 ```text
 FRAME 01 — ORIENTAÇÃO PROTEGIDA / PRÉ-AUTH
@@ -142,7 +156,7 @@ PER-003 BOUNDARY
 ```
 
 ```text
-AUTHORIZED COVERAGE
+AUTHORIZED COVERAGE OBSERVED AT PRE-REVIEW CHECKPOINT
 → 7 / 7 PASS
 
 COVERAGE
@@ -152,11 +166,11 @@ COVERAGE
 
 ## 5. N1 — compreensão não inferida
 
-O protótipo não usa clique, avanço, autenticação simulada ou conclusão como prova de compreensão.
+O protótipo não usava clique, avanço, autenticação simulada ou conclusão como prova de compreensão.
 
-O dialog informativo contém a ação de interface `Entendi o que foi apresentado`, acompanhada de nota explícita de que essa ação não constitui prova de compreensão humana.
+O dialog informativo continha a ação de interface `Entendi o que foi apresentado`, acompanhada de nota explícita de que essa ação não constituía prova de compreensão humana.
 
-O Frame 04 registra somente fatos de interface:
+O Frame 04 registrava somente fatos de interface:
 
 - contexto apresentado;
 - acesso concluído ou já válido em nível simulado;
@@ -174,14 +188,14 @@ COMPLETED INTERACTION
 ≠ UNDERSTOOD
 
 N1
-→ PASS
+→ PASS AT PRE-REVIEW CHECKPOINT
 ```
 
 ## 6. N2 — finalidade, autenticação e processamento
 
-O protótipo preserva repetidamente que entrar/criar conta não autoriza análise nem personalização e que cada uso material futuro exige finalidade e explicação aplicáveis antes do processamento correspondente.
+O protótipo preservava repetidamente que entrar/criar conta não autorizava análise nem personalização e que cada uso material futuro exigia finalidade e explicação aplicáveis antes do processamento correspondente.
 
-Não existem:
+Não existiam:
 
 - checkbox de consentimento omnibus;
 - autorização pré-selecionada;
@@ -199,12 +213,12 @@ AUTHENTICATION SIMULATION
 ≠ MATERIAL PROCESSING AUTHORIZATION
 
 N2
-→ PASS
+→ PASS AT PRE-REVIEW CHECKPOINT
 ```
 
 ## 7. Autonomia e reversibilidade
 
-Os caminhos de não continuidade permanecem alcançáveis nos estados aplicáveis:
+Os caminhos de não continuidade observados permaneciam alcançáveis nos estados aplicáveis:
 
 - voltar;
 - recuperar acesso;
@@ -216,19 +230,19 @@ Os caminhos de não continuidade permanecem alcançáveis nos estados aplicávei
 - sair por agora;
 - retornar à entrada protegida.
 
-Nenhum caminho de saída é bloqueado por estado `disabled`, countdown, urgência artificial ou penalização visual material.
+Nenhum caminho de saída era bloqueado por estado `disabled`, countdown, urgência artificial ou penalização visual material.
 
 ```text
 AUTONOMY / REVERSIBILITY
-→ PASS
+→ PASS AT PRE-REVIEW CHECKPOINT
 
-DARK PATTERN MATERIAL FINDING
+DARK PATTERN MATERIAL FINDING OBSERVED BY THIS ACT
 → NONE
 ```
 
 ## 8. Teclado, foco e semântica de interação
 
-O artefato representa:
+O artefato representava:
 
 - elementos `button` e `input` nativos;
 - anel `focus-visible` de 3 px com offset;
@@ -240,22 +254,24 @@ O artefato representa:
 
 ```text
 KEYBOARD / FOCUS REPRESENTATION
-→ PASS AT PROTOTYPE INSPECTION LEVEL
+→ PASS RECORDED AT PRE-REVIEW PROTOTYPE INSPECTION LEVEL
+→ LATER CODEX REVIEW IDENTIFIED A P2 IN ACCESS-MODE SEMANTICS
+→ REMEDIATION / CURRENT CONCLUSION GOVERNED BY GKR-UX-PER002-PROTOTYPE-REVALIDATION-001
 
 PASS
 ≠ WCAG PRODUCTION CERTIFICATION
 ≠ ASSISTIVE-TECH FIELD TEST
 ```
 
-A alternância `Entrar / Criar conta` permanece acessível por controles de botão no fluxo de teclado do protótipo. Esta validação não transforma a representação em componente de produção certificado.
+A alternância `Entrar / Criar conta` foi inicialmente considerada acessível neste ato. A revisão Codex posterior identificou que a semântica anunciada como tabs excedia o comportamento implementado; essa deficiência foi posteriormente remediada e revalidada sob a autoridade pós-review corrente.
 
 ## 9. Responsividade
 
-O CSS preserva a coluna semântica e modifica apenas apresentação local em viewport estreito. A Variante C usa `dialog` central em telas maiores e representação inferior em mobile, sem criar nova superfície.
+O CSS preservava a coluna semântica e modificava apenas apresentação local em viewport estreito. A Variante C usava `dialog` central em telas maiores e representação inferior em mobile, sem criar nova superfície.
 
 ```text
 RESPONSIVE BEHAVIOR
-→ PASS AT DESIGN-PROTOTYPE LEVEL
+→ PASS AT PRE-REVIEW DESIGN-PROTOTYPE LEVEL
 
 SEMANTIC ORDER
 → PRESERVED
@@ -266,7 +282,7 @@ RIGHTS / ALTERNATIVES
 
 ## 10. Dados e tecnologia
 
-A inspeção do artefato não encontrou dependências externas nem mecanismos de comunicação/persistência.
+A inspeção do artefato naquele checkpoint não encontrou dependências externas nem mecanismos de comunicação/persistência.
 
 ```text
 CONTENT
@@ -291,11 +307,11 @@ REAL CREDENTIAL VALIDATION
 → NONE
 ```
 
-HTML/CSS/JavaScript continuam classificados somente como mecanismo da entrega de prototipação e não como escolha de stack de Product Engineering.
+HTML/CSS/JavaScript continuavam classificados somente como mecanismo da entrega de prototipação e não como escolha de stack de Product Engineering.
 
 ## 11. Handoff e maturidade de transições
 
-O CTA final leva somente a uma parada de boundary explicitamente identificada como `PER-003` fora do escopo.
+O CTA final levava somente a uma parada de boundary explicitamente identificada como `PER-003` fora do escopo.
 
 ```text
 TRN-002 CLICKABLE REPRESENTATION
@@ -314,24 +330,28 @@ PROTOTYPE VALIDATION
 ≠ TRANSITION MATURITY PROMOTION
 ```
 
-## 12. Findings
+## 12. Findings observados neste ato histórico
 
 ```text
-MATERIAL FINDINGS
+MATERIAL FINDINGS OBSERVED BY THIS PRE-REVIEW ACT
 → 0
 
-BLOCKING FINDINGS
+BLOCKING FINDINGS OBSERVED BY THIS PRE-REVIEW ACT
 → 0
 
-NON-BLOCKING REFORMULATION REQUIRED
+NON-BLOCKING REFORMULATION REQUIRED BY THIS PRE-REVIEW ACT
 → NO
+
+LATER CODEX REVIEW
+→ 2 P2 IDENTIFIED
+→ REMEDIATED AFTER THIS ACT
 ```
 
-A validação não identifica regressão material que exija nova execução antes do fechamento deste gate.
+Esta seção não declara ausência corrente de findings após review; a conclusão corrente pertence à revalidação pós-review.
 
-## 13. Limites do PASS
+## 13. Limites do PASS histórico
 
-Este `PASS` não autoriza nem comprova:
+Este `PASS` histórico não autoriza nem comprova:
 
 - Source Lock;
 - `UXA-102/V5`;
@@ -350,23 +370,28 @@ Este `PASS` não autoriza nem comprova:
 - operação;
 - merge da PR #363.
 
-## 14. Estado após validação
+## 14. Estado do ato histórico e deferência corrente
 
 ```text
 PER-002 INTERACTIVE PROTOTYPE EXECUTION
 → EXECUTED
 → GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
 
-PER-002 INTERACTIVE PROTOTYPE VALIDATION
-→ PASS
+ORIGINAL PER-002 INTERACTIVE PROTOTYPE VALIDATION
 → GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.0
-→ 16 / 16 CRITERIA PASS
-→ MATERIAL FINDINGS = 0
-→ BLOCKING FINDINGS = 0
-→ REFORMULATION REQUIRED = NO
+→ HISTORICAL PRE-CODEX-REVIEW VALIDATION ACT
+→ SUPERSEDED AS FINAL CURRENT CLOSURE
 
 CURRENT PER-002 INTERACTIVE DESIGN REFERENCE
-→ DELIVERY v0.1.0 + VALIDATION v1.0.0
+→ GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
++
+→ GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.0 AS HISTORICAL PRE-REVIEW EVIDENCE
++
+→ GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 AS CURRENT POST-REVIEW CONCLUSION
+
+FINAL CURRENT CONCLUSION
+→ POST-REVIEW REVALIDATION PASS
+→ GOVERNED BY GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0
 
 SOURCE LOCK
 → NOT_CREATED
@@ -394,13 +419,15 @@ PR #363 MERGE
 
 ## 15. Próximo limite legítimo
 
-A cadeia autorizada de Design de `PER-002` alcança neste ponto uma referência interativa validada. Nenhum próximo estágio é liberado automaticamente.
+Este validator não é mais a autoridade de fechamento corrente da cadeia de protótipo. Ele preserva somente a evidência histórica do checkpoint pré-review e defere integralmente a conclusão atual para `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0`.
 
 ```text
-PER-002 DESIGN / PROTOTYPE CHAIN
-→ LOW-FIDELITY VALIDATED
-→ HIGH-FIDELITY VALIDATED
-→ INTERACTIVE PROTOTYPE VALIDATED
+THIS AUTHORITY
+→ HISTORICAL PRE-REVIEW VALIDATION EVIDENCE
+→ SUPERSEDED AS FINAL CURRENT CLOSURE
+
+CURRENT POST-REVIEW CONCLUSION
+→ GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0
 
 SOURCE LOCK
 → NOT WARRANTED BY CURRENT EVIDENCE
@@ -418,4 +445,4 @@ NEXT AUTOMATIC EXECUTION
 → NONE
 ```
 
-O fechamento deste validator encerra somente a validação governada do protótipo interativo de `PER-002`; fases posteriores exigem autoridade própria.
+A preservação deste documento mantém a proveniência do ato inicial sem permitir que ele seja usado para contornar a revalidação pós-review corrente.
