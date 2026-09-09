@@ -18,7 +18,7 @@ Antes de usar qualquer documento isolado, consulte:
 A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.32.0
+GKR-STATE-001 3.33.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -43,8 +43,16 @@ HIGH-FIDELITY DESIGN VALIDATION → PASS / GKR-UX-PER002-HIFI-VALIDATION-001 v1.
 CURRENT HIGH-FIDELITY DESIGN REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
 INTERACTIVE PROTOTYPE ELIGIBILITY → PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
 INTERACTIVE PROTOTYPE AUTHORIZATION → GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0
-INTERACTIVE PROTOTYPE EXECUTION → AUTHORIZED / NOT_STARTED
-PRÓXIMO GATE → PER-002 INTERACTIVE PROTOTYPE EXECUTION / NO SOURCE LOCK, UXA-102 OR ENGINEERING BY INFERENCE
+INTERACTIVE PROTOTYPE EXECUTION → EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
+ORIGINAL PROTOTYPE VALIDATION → HISTORICAL PRE-REVIEW EVIDENCE / GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / SUPERSEDED
+CODEX PROTOTYPE REVIEW → 2 P2 INTERACTION FINDINGS / REMEDIATED / THREADS RESOLVED
+POST-REVIEW PROTOTYPE REVALIDATION → PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS
+CURRENT INTERACTIVE DESIGN REFERENCE → DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0
+FINAL INTERACTIVE CONCLUSION → POST-REVIEW REVALIDATION PASS
+NEXT AUTOMATIC EXECUTION → NONE
+SOURCE LOCK → NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
+UXA-102 / V5 → NOT_STARTED
+PRODUCT ENGINEERING → PAUSED BEFORE W0-01
 ```
 
 ## Como navegar
@@ -142,6 +150,9 @@ ORGANIZAÇÃO
 - [PER-002 — Validação Governada da Entrega High-Fidelity](docs/experience-architecture/per-002-high-fidelity-design-validation.md)
 - [PER-002 — Elegibilidade Pós-Validação para Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-eligibility.md)
 - [PER-002 — Autorização Governada de Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-authorization.md)
+- [PER-002 — Entrega do Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-delivery.md)
+- [PER-002 — Validação Pré-Review do Protótipo Interativo — Evidência Histórica](docs/experience-architecture/per-002-interactive-prototype-validation.md)
+- [PER-002 — Revalidação Pós-Review do Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-post-review-revalidation.md)
 
 ### Research e Validação
 
@@ -210,7 +221,7 @@ As equipes não recebem cópias próprias de autoridades. Elas entram no mesmo c
 | Publicidade / Ads | Arquitetura de Produtos · Modelo Econômico · Go-to-Market |
 | Comercial | Estratégia de Negócio · Produtos · Economia · GTM |
 | Produto | Arquitetura de Produtos · Experience Architecture · Jornadas |
-| UX / Design | Experience Architecture · Jornadas · PER-002 Handoff · Design Authorization · Design Delivery · Functional Validation · High-Fidelity Eligibility · High-Fidelity Authorization · High-Fidelity Delivery · High-Fidelity Validation · Prototype Eligibility · Prototype Authorization · Estado Atual |
+| UX / Design | Experience Architecture · Jornadas · PER-002 Handoff · Design Authorization · Design Delivery · Functional Validation · High-Fidelity Eligibility · High-Fidelity Authorization · High-Fidelity Delivery · High-Fidelity Validation · Prototype Eligibility · Prototype Authorization · Prototype Delivery · Historical Prototype Validation · Post-Review Prototype Revalidation · Estado Atual |
 | Desenvolvimento | Produtos · Experience Architecture · Arquitetura Corporativa |
 | Dados / Intelligence | Intelligence · Arquitetura Corporativa · Research |
 | Research | Research · RP-001 · RP-002 · Privacidade |
@@ -236,6 +247,7 @@ HIGH-FIDELITY DELIVERY ≠ HIGH-FIDELITY VALIDATION
 HIGH-FIDELITY VALIDATION PASS ≠ PROTOTYPE AUTHORIZATION
 PROTOTYPE ELIGIBILITY ≠ PROTOTYPE AUTHORIZATION ≠ PROTOTYPE EXECUTION
 PROTOTYPE AUTHORIZATION ≠ PROTOTYPE EXECUTION ≠ PROTOTYPE VALIDATION
+PROTOTYPE VALIDATION PRE-REVIEW ≠ CURRENT POST-REVIEW CONCLUSION
 ```
 
 Para qualquer afirmação de estado, prevalece o [Registro do Estado Atual](docs/project/current-state-register.md).
