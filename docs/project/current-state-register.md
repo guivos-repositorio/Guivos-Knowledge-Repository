@@ -2,11 +2,11 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.31.0
+version: 3.32.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-09
 normative: true
-maturity: current_truth_post_q_per002_high_fidelity_validation_and_prototype_eligibility_pre_authorization
+maturity: current_truth_post_q_per002_interactive_prototype_authorization_pre_execution
 related:
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
@@ -36,6 +36,7 @@ related:
   - GKR-UX-PER002-HIFI-DELIVERY-001
   - GKR-UX-PER002-HIFI-VALIDATION-001
   - GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001
+  - GKR-UX-PER002-PROTOTYPE-AUTH-001
   - GTM-009
   - GTM-010
   - GTM-011
@@ -63,7 +64,7 @@ GKR VIGENTE
 → sem depender de versões substituídas para ser compreendido
 ```
 
-A auditoria integral do corpus foi concluída com resultado `PASS`. A baseline final pós-auditoria permanece capturada no `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`. Q concluiu e consolidou documentalmente a definição funcional da primeira responsabilidade autenticada da Pessoa após a Home: ela é a continuação autenticada de `PER-002 — Entrada protegida`, não uma nova superfície inferida. A adjudicação posterior de elegibilidade de materialização também concluiu `PASS`: uma materialização low-fidelity funcional de `PER-002` é justificada, sem novo `PER-ID`, e seu boundary de handoff está congelado em `GKR-UX-PER002-MAT-ELIGIBILITY-001`. A decisão governada separada `GKR-UX-PER002-DESIGN-AUTH-001` concedeu autorização de Design exclusivamente para essa materialização. A primeira entrega low-fidelity foi executada em `GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0`, com quatro frames principais e três variantes cobrindo 7/7 áreas autorizadas. A validação documental/visual posterior concluiu `PASS`, registrada em `GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0`, sem finding material ou bloqueador e sem reformulação requerida. A entrega validada passa a ser a referência corrente low-fidelity de Design de `PER-002` quando lida com seu validator. A adjudicação pós-validação `GKR-UX-PER002-HIFI-ELIGIBILITY-001 v1.0.0` concluiu `PASS` para high-fidelity, e `GKR-UX-PER002-HIFI-AUTH-001 v1.0.0` concedeu autorização de Design high-fidelity exclusivamente para `PER-002`. A execução high-fidelity foi concluída em `GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0`; a validação governada subsequente concluiu `PASS` em `GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0`, com 15/15 critérios aprovados, 0 findings materiais, 0 bloqueadores e nenhuma reformulação requerida. O pacote entrega+validator passa a ser a referência corrente high-fidelity de Design de `PER-002`, sem promover seus tokens locais a Design System global ou UI de produção. A adjudicação pós-validação `GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0` concluiu `PASS` somente para elegibilidade de um gate posterior de protótipo interativo. A autorização de protótipo permanece `NOT_GRANTED`; Source Lock permanece não criado e não requerido pela evidência atual; `UXA-102/V5` e Product Engineering permanecem não iniciados/pausados.
+A auditoria integral do corpus foi concluída com resultado `PASS`. A baseline final pós-auditoria permanece capturada no `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`. Q concluiu e consolidou documentalmente a definição funcional da primeira responsabilidade autenticada da Pessoa após a Home: ela é a continuação autenticada de `PER-002 — Entrada protegida`, não uma nova superfície inferida. A adjudicação posterior de elegibilidade de materialização também concluiu `PASS`: uma materialização low-fidelity funcional de `PER-002` é justificada, sem novo `PER-ID`, e seu boundary de handoff está congelado em `GKR-UX-PER002-MAT-ELIGIBILITY-001`. A decisão governada separada `GKR-UX-PER002-DESIGN-AUTH-001` concedeu autorização de Design exclusivamente para essa materialização. A primeira entrega low-fidelity foi executada em `GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0`, com quatro frames principais e três variantes cobrindo 7/7 áreas autorizadas. A validação documental/visual posterior concluiu `PASS`, registrada em `GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0`, sem finding material ou bloqueador e sem reformulação requerida. A entrega validada passa a ser a referência corrente low-fidelity de Design de `PER-002` quando lida com seu validator. A adjudicação pós-validação `GKR-UX-PER002-HIFI-ELIGIBILITY-001 v1.0.0` concluiu `PASS` para high-fidelity, e `GKR-UX-PER002-HIFI-AUTH-001 v1.0.0` concedeu autorização de Design high-fidelity exclusivamente para `PER-002`. A execução high-fidelity foi concluída em `GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0`; a validação governada subsequente concluiu `PASS` em `GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0`, com 15/15 critérios aprovados, 0 findings materiais, 0 bloqueadores e nenhuma reformulação requerida. O pacote entrega+validator passa a ser a referência corrente high-fidelity de Design de `PER-002`, sem promover seus tokens locais a Design System global ou UI de produção. A adjudicação pós-validação `GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0` concluiu `PASS`, e a decisão separada `GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0` concedeu autorização explícita apenas para execução posterior de um protótipo interativo simulado de Design de `PER-002`. A execução permanece `NOT_STARTED`; Source Lock permanece não criado e não autorizado por inferência; `UXA-102/V5` e Product Engineering permanecem não iniciados/pausados.
 
 ## 2. Estado executivo
 
@@ -273,19 +274,26 @@ Q — HIGH-FIDELITY DESIGN VALIDATION
 Q — INTERACTIVE PROTOTYPE ELIGIBILITY
 → PASS
 → AUTHORITY = GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
-→ PROTOTYPE AUTHORIZATION = NOT_GRANTED
-→ PROTOTYPE EXECUTION = NOT_STARTED
+
+Q — INTERACTIVE PROTOTYPE AUTHORIZATION
+→ GRANTED / CANONICALLY RECORDED
+→ AUTHORITY = GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0
+→ AUTHORIZED TARGET = PER-002 ONLY
+→ AUTHORIZED NATURE = INTERACTIVE DESIGN INSPECTION ARTIFACT / SIMULATED INTERACTION ONLY
+→ PROTOTYPE EXECUTION = AUTHORIZED / NOT_STARTED
 → SOURCE LOCK = NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
 → UXA-102 / V5 = NOT_STARTED
 → PRODUCT ENGINEERING = PAUSED BEFORE W0-01
 → TRN-001 / TRN-002 = UNCHANGED
 
 NEXT
-→ EXPLICIT PER-002 INTERACTIVE PROTOTYPE AUTHORIZATION DECISION
-→ DO NOT CREATE PROTOTYPE BEFORE AUTHORIZATION
+→ PER-002 INTERACTIVE PROTOTYPE EXECUTION
+→ USE SYNTHETIC / FICTIONAL / DESIGN-SAFE CONTENT ONLY
 → DO NOT CREATE SOURCE LOCK BY INFERENCE
+→ DO NOT EXPAND TO PER-003 BEYOND HANDOFF
 → DO NOT START UXA-102/V5 BY INFERENCE
 → DO NOT RETAKE PRODUCT ENGINEERING
+→ DO NOT USE REAL DATA OR TEST WITH REAL PARTICIPANTS
 
 UXA-102 / V5
 → NOT_STARTED
@@ -317,12 +325,13 @@ PRIMEIRA RESPONSABILIDADE AUTENTICADA DA PESSOA APÓS A HOME
 → HIGH-FIDELITY DESIGN VALIDATION = PASS
 → CURRENT HIGH-FIDELITY DESIGN REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
 → INTERACTIVE PROTOTYPE ELIGIBILITY = PASS
-→ INTERACTIVE PROTOTYPE AUTHORIZATION = NOT_GRANTED
+→ INTERACTIVE PROTOTYPE AUTHORIZATION = GRANTED
+→ INTERACTIVE PROTOTYPE EXECUTION = AUTHORIZED / NOT_STARTED
 
 MATERIALIZAÇÃO VISUAL DAS HOMES
 → NOT AUTHORIZED BY P CLOSURE, Q RELEASE OR Q FUNCTIONAL DEFINITION
 → REQUIRES SEPARATE GOVERNED ACT
-→ PER-002-SPECIFIC DESIGN / VALIDATION / PROTOTYPE ELIGIBILITY DOES NOT AUTHORIZE HOME MATERIALIZATION
+→ PER-002-SPECIFIC DESIGN / VALIDATION / PROTOTYPE AUTHORIZATION DOES NOT AUTHORIZE HOME MATERIALIZATION
 ```
 
 O fechamento de `F-016` conclui a desmaterialização documental auditada sem promover maturidade funcional, sem criar Design e sem liberar implementação. A história permanece no Git; o corpus vigente preserva autoridades, validadores e evidências necessárias.
@@ -559,7 +568,7 @@ PER-001 — HOME PÚBLICA
 
 A autenticação concluída não encerra `PER-002` automaticamente e não autoriza processamento material. `PER-003` é a primeira superfície registrada distinta downstream após o fechamento legítimo dessa responsabilidade. `PER-008 — Tela Hoje` permanece downstream e não é a primeira responsabilidade autenticada.
 
-A adjudicação de materialização de Q concluiu `PASS` e congelou em `GKR-UX-PER002-MAT-ELIGIBILITY-001` o boundary funcional da materialização low-fidelity de `PER-002`. A autorização governada separada `GKR-UX-PER002-DESIGN-AUTH-001` liberou somente essa execução. A primeira entrega foi executada em `GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0`: quatro frames principais — orientação protegida, gate de acesso, continuação autenticada/controles e handoff ready — mais três variantes — sessão já autenticada, recuperação/restrição/falha e saída/exploração sem personalização. O pacote cobre 7/7 áreas autorizadas sem criar nova superfície, novo `PER-ID`, restaurar `UXA-034`, materializar `PER-003` além do handoff ou iniciar `UXA-102/V5`. `GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0` validou funcionalmente a entrega com `PASS`, 0 findings materiais, 0 findings bloqueadores e nenhuma reformulação requerida. O pacote entrega+validator passa a ser a referência corrente low-fidelity funcionalmente validada de `PER-002`; isso não certifica maturidade visual agregada. A adjudicação pós-validação `GKR-UX-PER002-HIFI-ELIGIBILITY-001 v1.0.0` concluiu `PASS`, e `GKR-UX-PER002-HIFI-AUTH-001 v1.0.0` concedeu autorização explícita para refinamento high-fidelity de `PER-002` dentro do mesmo boundary. A entrega high-fidelity foi executada em `GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0`, preservando 4 frames + 3 variantes e 7/7 áreas, com tokens visuais locais explicitamente não globais. `GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0` concluiu `PASS` em nível de especificação, com 15/15 critérios, 0 findings materiais, 0 bloqueadores e nenhuma reformulação. O pacote entrega+validator é a referência corrente high-fidelity de `PER-002`. A adjudicação `GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0` concluiu `PASS` apenas para elegibilidade de uma decisão futura de autorização de protótipo interativo; protótipo não está autorizado nem iniciado.
+A adjudicação de materialização de Q concluiu `PASS` e congelou em `GKR-UX-PER002-MAT-ELIGIBILITY-001` o boundary funcional da materialização low-fidelity de `PER-002`. A autorização governada separada `GKR-UX-PER002-DESIGN-AUTH-001` liberou somente essa execução. A primeira entrega foi executada em `GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0`: quatro frames principais — orientação protegida, gate de acesso, continuação autenticada/controles e handoff ready — mais três variantes — sessão já autenticada, recuperação/restrição/falha e saída/exploração sem personalização. O pacote cobre 7/7 áreas autorizadas sem criar nova superfície, novo `PER-ID`, restaurar `UXA-034`, materializar `PER-003` além do handoff ou iniciar `UXA-102/V5`. `GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0` validou funcionalmente a entrega com `PASS`, 0 findings materiais, 0 findings bloqueadores e nenhuma reformulação requerida. O pacote entrega+validator passa a ser a referência corrente low-fidelity funcionalmente validada de `PER-002`; isso não certifica maturidade visual agregada. A adjudicação pós-validação `GKR-UX-PER002-HIFI-ELIGIBILITY-001 v1.0.0` concluiu `PASS`, e `GKR-UX-PER002-HIFI-AUTH-001 v1.0.0` concedeu autorização explícita para refinamento high-fidelity de `PER-002` dentro do mesmo boundary. A entrega high-fidelity foi executada em `GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0`, preservando 4 frames + 3 variantes e 7/7 áreas, com tokens visuais locais explicitamente não globais. `GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0` concluiu `PASS` em nível de especificação, com 15/15 critérios, 0 findings materiais, 0 bloqueadores e nenhuma reformulação. O pacote entrega+validator é a referência corrente high-fidelity de `PER-002`. A adjudicação `GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0` concluiu `PASS`, e `GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0` concedeu autorização explícita para uma execução posterior e separada de protótipo interativo simulado de `PER-002`. Essa execução continua `NOT_STARTED` e não cria Source Lock, nova superfície, novo `PER-ID`, implementação ou liberação de Engineering.
 
 Duas notas anti-regressão acompanham qualquer próximo estágio: conteúdo exibido ou interação concluída não prova compreensão; e explicação genérica de finalidades futuras ou clique em protótipo não autoriza processamento material futuro. Cada finalidade material continua exigindo disclosure/controle/autorização aplicáveis antes do processamento correspondente.
 
@@ -826,8 +835,11 @@ PER-002 HIGH-FIDELITY
 → DELIVERY EXECUTED / GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0
 → VALIDATION PASS / GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0
 → CURRENT HIGH-FIDELITY DESIGN REFERENCE = DELIVERY + VALIDATION
-→ PROTOTYPE ELIGIBILITY PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
-→ PROTOTYPE AUTHORIZATION NOT_GRANTED
+
+PER-002 INTERACTIVE PROTOTYPE
+→ ELIGIBILITY PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
+→ AUTHORIZATION GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0
+→ EXECUTION AUTHORIZED / NOT_STARTED
 
 HOME MATERIALIZATION
 → NOT AUTHORIZED BY THE PER-002-SPECIFIC DESIGN DECISIONS
@@ -1453,6 +1465,10 @@ FUNCTIONALLY VALIDATED LOW-FIDELITY
 VALIDATED HIGH-FIDELITY DESIGN REFERENCE
 ≠ INTERACTIVE PROTOTYPE
 ≠ IMPLEMENTED UI
+
+PROTOTYPE AUTHORIZATION
+≠ PROTOTYPE EXECUTION
+≠ IMPLEMENTATION
 ```
 
 ## 21. Programa P0–P9
@@ -1558,14 +1574,14 @@ Após o fechamento da auditoria integral e a captura da baseline final, permanec
 - evidência de atividade efetiva para AIaaS se incluído;
 - implantação real do perfil pessoal do fundador;
 - publicação real de conteúdo do fundador;
-- decisão explícita de autorização de protótipo interativo de `PER-002`;
-- eventual protótipo somente se posteriormente autorizado;
+- execução governada do protótipo interativo de `PER-002`;
+- eventual validação do protótipo somente após sua execução;
 - UXA-102/V5;
 - Product Engineering.
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.30.0` registra a auditoria integral concluída com resultado `PASS`, a captura da baseline final, a liberação documental de Q e a consolidação canônica posterior de sua definição funcional. Os gates específicos posteriores de `PER-002` — materialização, autorização low-fidelity, entrega, validação, elegibilidade high-fidelity, autorização high-fidelity, entrega high-fidelity, validação high-fidelity e elegibilidade de protótipo — ocorreram depois desse registro histórico e estão consolidados no Estado Atual pelas respectivas autoridades.
+`GKR-FULL-CORPUS-AUDIT-001 v1.30.0` registra a auditoria integral concluída com resultado `PASS`, a captura da baseline final, a liberação documental de Q e a consolidação canônica posterior de sua definição funcional. Os gates específicos posteriores de `PER-002` — materialização, autorização low-fidelity, entrega, validação, elegibilidade high-fidelity, autorização high-fidelity, entrega high-fidelity, validação high-fidelity, elegibilidade de protótipo e autorização de protótipo — ocorreram depois desse registro histórico e estão consolidados no Estado Atual pelas respectivas autoridades.
 
 ```text
 A / B / C / D / E / F / G
@@ -1677,18 +1693,18 @@ Q — HIGH-FIDELITY
 → VALIDATION = PASS / GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0
 → CURRENT REFERENCE = DELIVERY + VALIDATION
 
-Q — INTERACTIVE PROTOTYPE ELIGIBILITY
-→ PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
-→ AUTHORIZATION = NOT_GRANTED
-→ EXECUTION = NOT_STARTED
-→ SOURCE LOCK = NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE
+Q — INTERACTIVE PROTOTYPE
+→ ELIGIBILITY = PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
+→ AUTHORIZATION = GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0
+→ EXECUTION = AUTHORIZED / NOT_STARTED
+→ SOURCE LOCK = NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
 
 NEXT
-→ EXPLICIT PER-002 INTERACTIVE PROTOTYPE AUTHORIZATION DECISION
-→ DO NOT CREATE PROTOTYPE OR START UXA-102 / PRODUCT ENGINEERING BY INFERENCE
+→ PER-002 INTERACTIVE PROTOTYPE EXECUTION
+→ DO NOT CREATE SOURCE LOCK OR START UXA-102 / PRODUCT ENGINEERING BY INFERENCE
 ```
 
-O fechamento de P encerrou a auditoria integral no limite documental. A cadeia específica posterior de `PER-002` avançou somente por gates explícitos e separados. A referência high-fidelity validada existe, mas não constitui protótipo, Source Lock, implementação, produção ou liberação de Product Engineering.
+O fechamento de P encerrou a auditoria integral no limite documental. A cadeia específica posterior de `PER-002` avançou somente por gates explícitos e separados. A referência high-fidelity validada e a autorização de protótipo existem, mas não constituem execução do protótipo, Source Lock, implementação, produção ou liberação de Product Engineering.
 
 ## 27. Regra de navegação final
 
@@ -1772,6 +1788,7 @@ HIGH-FIDELITY AUTHORIZATION ≠ HIGH-FIDELITY EXECUTION ≠ PROTOTYPE
 HIGH-FIDELITY DELIVERY ≠ HIGH-FIDELITY VALIDATION
 HIGH-FIDELITY VALIDATION PASS ≠ PROTOTYPE AUTHORIZATION
 PROTOTYPE ELIGIBILITY ≠ PROTOTYPE AUTHORIZATION ≠ PROTOTYPE EXECUTION
+PROTOTYPE AUTHORIZATION ≠ PROTOTYPE EXECUTION ≠ PROTOTYPE VALIDATION
 PROTOTYPE ≠ IMPLEMENTED PRODUCT ≠ REAL AUTHENTICATION ≠ REAL DATA PROCESSING
 DISPLAYED ≠ UNDERSTOOD
 CLICKED ≠ UNDERSTOOD
@@ -1780,7 +1797,7 @@ GENERIC PURPOSE EXPLANATION ≠ FUTURE PROCESSING AUTHORIZATION
 
 ## 29. Próximo ato governado
 
-P foi concluído com resultado `PASS`, a adjudicação de elegibilidade de Q foi concluída como `PASS` sobre o `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e esse mesmo `HEAD` foi capturado como baseline final pós-auditoria. A definição funcional de Q foi posteriormente concluída e consolidada sem alterar essa baseline imutável. A adjudicação documental de elegibilidade de materialização também foi concluída como `PASS` e seu boundary canônico foi congelado em `GKR-UX-PER002-MAT-ELIGIBILITY-001`. A cadeia posterior avançou por gates separados: autorização low-fidelity, entrega low-fidelity, validação low-fidelity, elegibilidade high-fidelity, autorização high-fidelity, entrega high-fidelity e validação high-fidelity. `GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0` registra o `PASS` high-fidelity; `GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0` conclui que um protótipo interativo é elegível para **uma decisão separada de autorização**, sem autorizá-lo neste checkpoint.
+P foi concluído com resultado `PASS`, a adjudicação de elegibilidade de Q foi concluída como `PASS` sobre o `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e esse mesmo `HEAD` foi capturado como baseline final pós-auditoria. A definição funcional de Q foi posteriormente concluída e consolidada sem alterar essa baseline imutável. A adjudicação documental de elegibilidade de materialização também foi concluída como `PASS` e seu boundary canônico foi congelado em `GKR-UX-PER002-MAT-ELIGIBILITY-001`. A cadeia posterior avançou por gates separados: autorização low-fidelity, entrega low-fidelity, validação low-fidelity, elegibilidade high-fidelity, autorização high-fidelity, entrega high-fidelity, validação high-fidelity, elegibilidade de protótipo e autorização explícita de protótipo. `GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0` concede somente autorização para uma execução posterior e separada de protótipo interativo simulado de `PER-002`; essa execução ainda não ocorreu.
 
 ```text
 P — AUDITORIA FINAL DE COMPLETUDE
@@ -1835,16 +1852,19 @@ Q — HIGH-FIDELITY
 → VALIDATION = PASS / GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0
 → CURRENT REFERENCE = DELIVERY + VALIDATION
 
-Q — INTERACTIVE PROTOTYPE ELIGIBILITY
-→ PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
-→ AUTHORIZATION = NOT_GRANTED
-→ EXECUTION = NOT_STARTED
-→ SOURCE LOCK = NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE
+Q — INTERACTIVE PROTOTYPE
+→ ELIGIBILITY = PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
+→ AUTHORIZATION = GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0
+→ EXECUTION = AUTHORIZED / NOT_STARTED
+→ SOURCE LOCK = NOT_CREATED / NOT_AUTHORIZED BY INFERENCE
 
 NEXT
-→ EXPLICIT PER-002 INTERACTIVE PROTOTYPE AUTHORIZATION DECISION
-→ DO NOT CREATE PROTOTYPE OR SOURCE LOCK BY INFERENCE
+→ PER-002 INTERACTIVE PROTOTYPE EXECUTION
+→ SYNTHETIC / FICTIONAL / DESIGN-SAFE CONTENT ONLY
+→ DO NOT CREATE SOURCE LOCK BY INFERENCE
+→ DO NOT EXPAND TO PER-003 BEYOND HANDOFF
 → DO NOT START UXA-102 / PRODUCT ENGINEERING BY INFERENCE
+→ DO NOT USE REAL DATA OR TEST WITH REAL PARTICIPANTS
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
@@ -1857,16 +1877,15 @@ TECHNOLOGY / PRODUCT ENGINEERING
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
 → PRODUCT ENGINEERING PAUSED BEFORE W0-01
 
-AINDA NÃO AUTORIZADOS / NÃO INICIADOS
-→ INTERACTIVE PROTOTYPE AUTHORIZATION
-→ INTERACTIVE PROTOTYPE EXECUTION
-→ SOURCE LOCK VISUAL POR INFERÊNCIA
-→ UXA-102 / V5
-→ MATERIALIZATION OUTSIDE PER-002 AUTHORIZED BOUNDARY
-→ PRODUCT ENGINEERING
-→ PMF
-→ IMPLEMENTAÇÃO / PRODUÇÃO
-→ MERGE DA PR #363
+AINDA NÃO INICIADOS / NÃO AUTORIZADOS ALÉM DO BOUNDARY
+→ INTERACTIVE PROTOTYPE EXECUTION = AUTHORIZED / NOT_STARTED
+→ SOURCE LOCK VISUAL POR INFERÊNCIA = NOT_AUTHORIZED
+→ UXA-102 / V5 = NOT_STARTED
+→ MATERIALIZATION OUTSIDE PER-002 AUTHORIZED BOUNDARY = NOT_AUTHORIZED
+→ PRODUCT ENGINEERING = NOT_AUTHORIZED TO RESUME
+→ PMF = NOT VALIDATED
+→ IMPLEMENTAÇÃO / PRODUÇÃO = NOT_AUTHORIZED
+→ MERGE DA PR #363 = NOT_AUTHORIZED
 ```
 
-O `PASS` de elegibilidade para protótipo fecha somente a adjudicação de possibilidade do próximo estágio. A decisão explícita de autorização de protótipo interativo é o próximo gate; nenhum protótipo, Source Lock, UXA-102/V5, Product Engineering, implementação, produção ou merge é liberado por esta consolidação.
+A autorização de protótipo encerra somente o gate decisório. O próximo ato governado é a execução do protótipo interativo de `PER-002` dentro do boundary congelado e da referência high-fidelity validada; nenhum Source Lock, UXA-102/V5, Product Engineering, implementação, produção, teste com participantes reais ou merge é liberado por esta consolidação.
