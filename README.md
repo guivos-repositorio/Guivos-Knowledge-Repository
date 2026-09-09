@@ -18,7 +18,7 @@ Antes de usar qualquer documento isolado, consulte:
 A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.25.0
+GKR-STATE-001 3.26.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -27,9 +27,12 @@ LOTE P → FINAL COMPLETENESS AUDIT = PASS / COMPLETED
 AUDITORIA INTEGRAL → COMPLETED / PASS / 23 OF 23
 FINAL BASELINE → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
 Q → FUNCTIONAL DEFINITION = PASS / CANONICALLY CONSOLIDATED
+Q MATERIALIZATION ELIGIBILITY → PASS / CANONICALLY CONSOLIDATED
 FIRST AUTHENTICATED RESPONSIBILITY → AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
 FIRST DISTINCT DOWNSTREAM SURFACE → PER-003 — ESCOLHA DE MODALIDADE
-PRÓXIMO GATE → Q MATERIALIZATION ELIGIBILITY ADJUDICATION / DOCUMENTARY / READ-ONLY / NO DESIGN
+DESIGN HANDOFF BOUNDARY → GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN
+DESIGN → NOT AUTHORIZED
+PRÓXIMO GATE → EXPLICIT DESIGN AUTHORIZATION DECISION / PER-002 LOW-FIDELITY ONLY / NO UXA-102 BY INFERENCE
 ```
 
 ## Como navegar
@@ -117,6 +120,7 @@ ORGANIZAÇÃO
 - [Home Principal / Pessoa](docs/experience-architecture/public-home-master-document.md)
 - [Home de Organizações e Coletivos](docs/experience-architecture/public-home-organizations-collectives-master-document.md)
 - [Homes dos Produtos Especializados](docs/experience-architecture/public-specialized-homes-reconciliation.md)
+- [PER-002 — Elegibilidade de Materialização e Handoff para Design](docs/experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md)
 
 ### Research e Validação
 
@@ -201,6 +205,7 @@ DOCUMENTADO ≠ IMPLEMENTADO ≠ TESTADO ≠ APROVADO OPERACIONALMENTE
 HOME DOCUMENTADA ≠ HOME IMPLEMENTADA
 SOURCE LOCK ≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
 AUDITORIA DOCUMENTAL ≠ EVIDÊNCIA OPERACIONAL
+DESIGN HANDOFF BOUNDARY ≠ DESIGN AUTHORIZATION
 ```
 
 Para qualquer afirmação de estado, prevalece o [Registro do Estado Atual](docs/project/current-state-register.md).

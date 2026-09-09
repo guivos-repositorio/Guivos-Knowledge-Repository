@@ -2,14 +2,15 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.25.0
+version: 3.26.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-08
+last_updated: 2026-09-09
 depends_on:
   - GKR-STATE-001
   - UXA-101
 related:
   - M7.88
+  - GKR-UX-PER002-MAT-ELIGIBILITY-001
 normative: false
 ---
 
@@ -21,7 +22,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.25.0
+→ 3.26.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -106,7 +107,7 @@ AUDITORIA INTEGRAL
 FINAL BASELINE PÓS-AUDITORIA
 → CAPTURED
 → SHA 15f4d69f63cd760718dce7903224673aac4f540a
-→ IMMUTABLE REFERENCE FOR Q DOCUMENTARY DEFINITION
+→ IMMUTABLE REFERENCE FOR Q
 
 Q — PRIMEIRA RESPONSABILIDADE AUTENTICADA DA PESSOA APÓS A HOME
 → RELEASE ELIGIBILITY = PASS
@@ -121,14 +122,22 @@ Q — PRIMEIRA RESPONSABILIDADE AUTENTICADA DA PESSOA APÓS A HOME
 → EXISTING-RELATIONSHIP LOGIN = RESUMPTIVE PATH / NOT FORCED INTO FIRST-ENTRY ONBOARDING
 → TRN-001 = PARTIAL / UNCHANGED
 → TRN-002 = LOCALLY VALIDATED / UNCHANGED
+
+Q MATERIALIZATION ELIGIBILITY
+→ PASS / CANONICALLY CONSOLIDATED
+→ MATERIALIZATION WARRANTED = YES
+→ TARGET = PER-002 — ENTRADA PROTEGIDA
+→ MATERIALIZATION NATURE = LOW-FIDELITY / FUNCTIONAL / EXISTING RESPONSIBILITY ONLY
+→ DESIGN HANDOFF BOUNDARY = GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN
+→ NEW SURFACE = NO
+→ NEW PER-ID = NO
+→ HISTORICAL VISUAL RESTORATION = NOT WARRANTED
 → UXA-102/V5 REMAINS NOT_STARTED
 → DESIGN / WIREFRAME / UI / PROTOTYPE NOT AUTHORIZED
 
 PRÓXIMO MOVIMENTO GOVERNADO
-→ Q MATERIALIZATION ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ DETERMINAR SE / QUAL MATERIALIZAÇÃO É JUSTIFICADA PELA FRONTEIRA FUNCIONAL DE PER-002
-→ NÃO INICIAR DESIGN
+→ EXPLICIT DESIGN AUTHORIZATION DECISION
+→ IF AUTHORIZED: LOW-FIDELITY FUNCTIONAL MATERIALIZATION OF PER-002 ONLY
 → NÃO INICIAR UXA-102/V5 POR INFERÊNCIA
 → NÃO RETOMAR PRODUCT ENGINEERING
 ```
@@ -142,9 +151,12 @@ INDEXADO
 ARTEFATO FÍSICO
 ≠ WIREFRAME VIGENTE
 ≠ IMPLEMENTAÇÃO
+
+DESIGN HANDOFF BOUNDARY
+≠ DESIGN AUTHORIZATION
 ```
 
-A auditoria integral encerrou a verificação do corpus sem converter maturidade documental em maturidade visual. Nenhuma nova contagem agregada de wireframes vigentes/validados é inferida; a autoridade visual permanece em Design.
+A auditoria integral encerrou a verificação do corpus sem converter maturidade documental em maturidade visual. A adjudicação de materialização de Q também não promove maturidade visual: ela somente estabelece que `PER-002` possui contrato funcional suficiente para futura materialização low-fidelity, se Design for autorizado por ato separado.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -266,7 +278,7 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.25.0** |
+| Registro do Estado Atual | **3.26.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
@@ -288,10 +300,14 @@ Ainda não são canônicos:
 | Lote P — Auditoria final | **COMPLETED / PASS / OPEN P-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Q release eligibility | **PASS** |
 | Q functional definition | **PASS / CANONICALLY CONSOLIDATED** |
+| Q materialization eligibility | **PASS / CANONICALLY CONSOLIDATED** |
+| Materialization target | **PER-002 — ENTRADA PROTEGIDA / LOW-FIDELITY FUNCTIONAL** |
+| Design handoff boundary | **GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN** |
 | Primeira responsabilidade autenticada pós-Home | **AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA** |
 | Primeira superfície distinta downstream | **PER-003 — ESCOLHA DE MODALIDADE** |
 | Nova superfície / novo PER-ID | **NOT REQUIRED BY CURRENT EVIDENCE** |
-| Próximo movimento governado | **Q MATERIALIZATION ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY / NO DESIGN** |
+| Design | **NOT AUTHORIZED / ELIGIBLE FOR SEPARATE AUTHORIZATION DECISION** |
+| Próximo movimento governado | **EXPLICIT DESIGN AUTHORIZATION DECISION — PER-002 LOW-FIDELITY ONLY / NO UXA-102 BY INFERENCE** |
 | RP-002 Operational Readiness | **HOLD** |
 | Participant 001 | **HOLD** |
 | Dry Run real | **NOT RELEASED** |
@@ -302,4 +318,4 @@ Ainda não são canônicos:
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 
-A captura da baseline final e a consolidação documental da definição funcional de Q não promovem, por si só, maturidade de transição, Design, implementação, operação, PMF ou UXA-102/V5. Os estados funcionais permanecem sustentados por suas autoridades textuais vigentes.
+A captura da baseline final, a consolidação funcional de Q e o `PASS` de elegibilidade de materialização não promovem, por si só, maturidade de transição, Design, implementação, operação, PMF ou UXA-102/V5. Os estados funcionais permanecem sustentados por suas autoridades textuais vigentes.

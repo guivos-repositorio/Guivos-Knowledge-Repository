@@ -17,7 +17,7 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 A leitura de estado continua subordinada ao [Registro do Estado Atual](project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.25.0
+GKR-STATE-001 3.26.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -26,9 +26,12 @@ LOTE P → FINAL COMPLETENESS AUDIT = PASS / COMPLETED
 AUDITORIA INTEGRAL → COMPLETED / PASS / 23 OF 23
 FINAL BASELINE → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
 Q → FUNCTIONAL DEFINITION = PASS / CANONICALLY CONSOLIDATED
+Q MATERIALIZATION ELIGIBILITY → PASS / CANONICALLY CONSOLIDATED
 FIRST AUTHENTICATED RESPONSIBILITY → AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
 FIRST DISTINCT DOWNSTREAM SURFACE → PER-003 — ESCOLHA DE MODALIDADE
-PRÓXIMO GATE → Q MATERIALIZATION ELIGIBILITY ADJUDICATION / DOCUMENTARY / READ-ONLY / NO DESIGN
+DESIGN HANDOFF BOUNDARY → GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN
+DESIGN → NOT AUTHORIZED
+PRÓXIMO GATE → EXPLICIT DESIGN AUTHORIZATION DECISION / PER-002 LOW-FIDELITY ONLY / NO UXA-102 BY INFERENCE
 ```
 
 ## Como esta base é organizada
@@ -116,6 +119,7 @@ ORGANIZAÇÃO
 - [Home Principal / Pessoa](experience-architecture/public-home-master-document.md)
 - [Home de Organizações e Coletivos](experience-architecture/public-home-organizations-collectives-master-document.md)
 - [Homes dos Produtos Especializados](experience-architecture/public-specialized-homes-reconciliation.md)
+- [PER-002 — Elegibilidade de Materialização e Handoff para Design](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md)
 
 A navegação do repositório não deve ser confundida com a arquitetura de informação de produto, Journey, experiência autenticada ou UI.
 
@@ -206,7 +210,7 @@ As rotas abaixo são **atalhos de consumo**. Elas não criam cópias, autoridade
 | Publicidade / Ads | [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
 | Comercial | [Estratégia de Negócio](business-architecture/index.md) · [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
 | Produto | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) |
-| UX / Design | [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) · [Estado Atual](project/current-state-register.md) |
+| UX / Design | [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) · [PER-002 Handoff](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md) · [Estado Atual](project/current-state-register.md) |
 | Desenvolvimento | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Arquitetura Corporativa](enterprise-architecture/index.md) |
 | Dados / Intelligence | [Intelligence](intelligence-architecture/index.md) · [Arquitetura Corporativa](enterprise-architecture/index.md) · [Research](research/index.md) |
 | Research | [Research](research/index.md) · [RP-001](research/RP-001/index.md) · [RP-002](research/RP-002/index.md) · [Privacidade](governance-framework/operational-privacy-and-legal-truth-index.md) |
@@ -228,6 +232,9 @@ HOME DOCUMENTADA
 
 SOURCE LOCK
 ≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
+
+DESIGN HANDOFF BOUNDARY
+≠ DESIGN AUTHORIZATION
 
 AUDITORIA DOCUMENTAL
 ≠ EVIDÊNCIA OPERACIONAL

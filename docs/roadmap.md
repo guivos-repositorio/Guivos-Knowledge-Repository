@@ -1,10 +1,10 @@
 ---
-id: ROADMAP-13.24.0
+id: ROADMAP-13.25.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.24.0
+version: 13.25.0
 owner: Guivos
-last_updated: 2026-09-08
+last_updated: 2026-09-09
 normative: true
 related:
   - GKR-STATE-001
@@ -27,6 +27,7 @@ related:
   - GKR-UX-HOME-OC-NARR-001
   - GKR-UX-HOME-OC-NAV-001
   - GKR-UX-HOME-OC-SYS-001
+  - GKR-UX-PER002-MAT-ELIGIBILITY-001
   - GTM-009
   - GTM-010
   - GTM-011
@@ -37,7 +38,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.25.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.26.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -51,7 +52,7 @@ ROADMAP
 ≠ REGISTRO HISTÓRICO
 ```
 
-A **Auditoria Integral do Guivos Knowledge Repository** foi concluída com resultado `PASS`: 23 de 23 checkpoints governados encerrados. A adjudicação de elegibilidade de Q também foi concluída como `PASS`, a baseline final pós-auditoria foi capturada no `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e Q foi liberado para definição documental. Essa definição funcional foi posteriormente concluída e consolidada: a primeira responsabilidade autenticada é a continuação autenticada de `PER-002 — Entrada protegida`, sem criação de nova superfície; `PER-003 — Escolha de modalidade` é a primeira superfície registrada distinta downstream.
+A **Auditoria Integral do Guivos Knowledge Repository** foi concluída com resultado `PASS`: 23 de 23 checkpoints governados encerrados. A adjudicação de elegibilidade de Q também foi concluída como `PASS`, a baseline final pós-auditoria foi capturada no `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e Q foi liberado para definição documental. Essa definição funcional foi posteriormente concluída e consolidada: a primeira responsabilidade autenticada é a continuação autenticada de `PER-002 — Entrada protegida`, sem criação de nova superfície; `PER-003 — Escolha de modalidade` é a primeira superfície registrada distinta downstream. A adjudicação subsequente de elegibilidade de materialização também concluiu `PASS`: uma materialização low-fidelity funcional de `PER-002` é justificada, o boundary está congelado em `GKR-UX-PER002-MAT-ELIGIBILITY-001`, e Design continua dependente de autorização explícita separada.
 
 Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. O Lote M concluiu sua auditoria documental com `OPEN M-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`, sem promover execução jurídica, privacidade operacional ou constituição institucional. O Lote N concluiu sua auditoria documental com `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`, `F-022 NOT OPENED` e sem promover execução de GTM, publicação ou operação de mercado. O Lote O concluiu sua auditoria documental após rebuild governado do MENU e prova Semantic + Mechanical; `F-002 = RESOLVED`. O Lote P concluiu a auditoria final de completude com `PASS`, recomputação de contagens físicas e maturidade documental, `OPEN P-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`.
 
@@ -59,21 +60,25 @@ Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite docume
 
 `F-010` permanece `RESOLVED`. O review Codex permaneceu indisponível por limite de uso e nenhuma claim `CLEAN` é inferida.
 
-A captura da baseline final, a liberação documental de Q e sua definição funcional não promovem automaticamente wireframe, Design, UXA-102/V5 ou implementação. Qualquer avanço visual ou técnico exige gate e autorização próprios.
+A captura da baseline final, a liberação documental de Q, sua definição funcional e a elegibilidade de materialização não promovem automaticamente wireframe, Design, UXA-102/V5 ou implementação. Qualquer avanço visual ou técnico exige gate e autorização próprios.
 
 ## 2. Baseline governada
 
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.25.0** |
+| Estado global | **GKR-STATE-001 v3.26.0** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
 | Baseline final pós-auditoria | **CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a** |
 | Q release eligibility | **PASS** |
 | Q functional definition | **PASS / CANONICALLY CONSOLIDATED** |
+| Q materialization eligibility | **PASS / CANONICALLY CONSOLIDATED** |
 | Primeira responsabilidade autenticada pós-Home | **AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA** |
 | Primeira superfície distinta downstream | **PER-003 — ESCOLHA DE MODALIDADE** |
+| Materialization target | **PER-002 — LOW-FIDELITY / FUNCTIONAL / EXISTING RESPONSIBILITY ONLY** |
+| Design handoff boundary | **GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN** |
 | Nova superfície / novo PER-ID | **NOT REQUIRED BY CURRENT EVIDENCE** |
+| Design | **NOT AUTHORIZED / ELIGIBLE ONLY FOR SEPARATE EXPLICIT AUTHORIZATION DECISION** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | UXA-102/V5 | **NOT_STARTED** |
@@ -230,10 +235,12 @@ BASELINE FINAL PÓS-AUDITORIA             [CAPTURED @ 15f4d69f63cd760718dce79032
 ↓
 Q. DEFINIÇÃO FUNCIONAL                   [COMPLETED / PASS / CANONICALLY CONSOLIDATED]
 ↓
-Q MATERIALIZATION ELIGIBILITY            [NEXT / DOCUMENTARY / READ-ONLY / NO DESIGN]
+Q MATERIALIZATION ELIGIBILITY            [COMPLETED / PASS / CANONICALLY CONSOLIDATED]
+↓
+DESIGN AUTHORIZATION DECISION            [NEXT / EXPLICIT GOVERNED GATE / NOT YET GRANTED]
 ```
 
-A ordem protege o corpus contra duas falhas: desenhar sobre conceitos antigos e presumir uma tela histórica como resposta. A definição funcional de Q não autoriza Design nem implementação.
+A ordem protege o corpus contra duas falhas: desenhar sobre conceitos antigos e presumir uma tela histórica como resposta. A elegibilidade de materialização de Q prepara um boundary de handoff, mas não autoriza Design nem implementação.
 
 ## 5. Lote A — Governança do corpus
 
@@ -369,7 +376,7 @@ DA POSSIBILIDADE À EXPERIÊNCIA
 
 O fechamento de D é exclusivamente documental. Não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, disponibilidade operacional, PMF ou materialização da fronteira autenticada da Pessoa.
 
-Gate vigente pós-Q functional definition:
+Gate vigente pós-Q:
 
 ```text
 HOME PRINCIPAL / PESSOA
@@ -387,9 +394,16 @@ FIRST AUTHENTICATED RESPONSIBILITY
 FIRST DISTINCT DOWNSTREAM SURFACE
 → PER-003 — ESCOLHA DE MODALIDADE
 
-MATERIALIZAÇÃO VISUAL
-→ NOT AUTHORIZED BY Q FUNCTIONAL DEFINITION
-→ REQUIRES SEPARATE GOVERNED ACT
+PER-002 MATERIALIZATION ELIGIBILITY
+→ PASS / CANONICALLY CONSOLIDATED
+→ LOW-FIDELITY FUNCTIONAL MATERIALIZATION WARRANTED
+
+DESIGN HANDOFF
+→ GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN
+
+DESIGN
+→ NOT AUTHORIZED
+→ REQUIRES SEPARATE EXPLICIT DECISION
 ```
 
 ## 9. Lote E — Home Organizações e Coletivos
@@ -565,7 +579,7 @@ Preservações:
 
 Gate vigente:
 
-> **Q definiu documentalmente a primeira responsabilidade autenticada como continuação autenticada de `PER-002`, preservando `TRN-001` parcial e `TRN-002` localmente validada. Materialização, Design, wireframe, UXA-102/V5 e implementação continuam sujeitos a autorização própria.**
+> **Q definiu documentalmente a primeira responsabilidade autenticada como continuação autenticada de `PER-002`, preservando `TRN-001` parcial e `TRN-002` localmente validada. A adjudicação de materialização concluiu `PASS` e congelou o boundary low-fidelity funcional em `GKR-UX-PER002-MAT-ELIGIBILITY-001`, mas Design, UXA-102/V5 e implementação continuam sujeitos a autorização própria.**
 
 ## 12. Lote H — Organização e Coletivo
 
@@ -1230,6 +1244,24 @@ TRN-001
 TRN-002
 → LOCALLY VALIDATED / UNCHANGED
 
+Q MATERIALIZATION ELIGIBILITY
+→ PASS / CANONICALLY CONSOLIDATED
+
+MATERIALIZATION WARRANTED
+→ YES
+
+TARGET
+→ PER-002 — ENTRADA PROTEGIDA
+
+MATERIALIZATION NATURE
+→ LOW-FIDELITY / FUNCTIONAL / EXISTING RESPONSIBILITY ONLY
+
+DESIGN HANDOFF BOUNDARY
+→ GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN
+
+HISTORICAL VISUAL RESTORATION
+→ NOT WARRANTED
+
 UXA-102 / V5
 → NOT_STARTED
 
@@ -1256,23 +1288,27 @@ HOME PÚBLICA
 → PER-003 / ESCOLHA DE MODALIDADE
 ```
 
+A adjudicação de materialização concluiu que esse contrato já é suficiente para uma futura materialização low-fidelity funcional sem usar Design para redescobrir a arquitetura. O boundary congelado exige representar, conforme o estado aplicável: orientação pré-auth, gate de autenticação, continuação autenticada, alternativas/reversibilidade e condição de `HANDOFF READY`. Esses elementos permanecem estados/variantes da mesma responsabilidade `PER-002`, não novos `PER-ID`s.
+
+`UXA-034` pode contribuir proveniência e contrato funcional absorvido, mas o produtor visual removido não é restaurado nem se torna baseline visual corrente. Nenhuma autoridade visual de `UXA-035` é promovida por inferência. `TRN-001` e `TRN-002` mantêm suas maturidades atuais.
+
 ```text
-Q FUNCTIONAL DEFINITION
-≠ NOVA TELA POR INFERÊNCIA
-≠ TELA HOJE SELECIONADA
+Q MATERIALIZATION ELIGIBILITY
+≠ DESIGN AUTHORIZATION
 ≠ UXA-102 INICIADA
-≠ WIREFRAME
-≠ DESIGN
+≠ WIREFRAME CRIADO
+≠ HISTORICAL VISUAL RESTORATION
 ≠ PRODUCT ENGINEERING
 ```
 
 Próximo gate:
 
 ```text
-Q MATERIALIZATION ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ DETERMINAR SE / QUAL MATERIALIZAÇÃO É JUSTIFICADA PELA FRONTEIRA FUNCIONAL DE PER-002
-→ NÃO INICIAR DESIGN
+EXPLICIT DESIGN AUTHORIZATION DECISION
+→ IF AUTHORIZED: LOW-FIDELITY FUNCTIONAL MATERIALIZATION OF PER-002 ONLY
+→ USE GKR-UX-PER002-MAT-ELIGIBILITY-001 AS THE FROZEN HANDOFF BOUNDARY
+→ DO NOT START UXA-102/V5 BY INFERENCE
+→ DO NOT RETAKE PRODUCT ENGINEERING
 ```
 
 ## 22. Marca e filing — gates paralelos, não prioritários
@@ -1372,6 +1408,7 @@ SIMULAÇÃO ≠ PMF
 CONSOLIDAÇÃO ≠ REDUÇÃO DE CONHECIMENTO
 P1–P5 HISTÓRICOS ≠ SEQUÊNCIA OPERACIONAL ATUAL
 DESIGN HANDOFF / MANIFEST / FLOW ≠ AUTORIZAÇÃO ATUAL
+DESIGN HANDOFF BOUNDARY ≠ DESIGN AUTHORIZATION
 ACEITE CONTRATUAL ≠ CONSENTIMENTO LGPD
 POLÍTICA PUBLICADA ≠ CONFORMIDADE OPERACIONAL COMPROVADA
 CONCEITO INSTITUCIONAL ≠ ENTIDADE CONSTITUÍDA
@@ -1383,7 +1420,7 @@ ESPECIFICAÇÃO EDITORIAL ≠ CONTEÚDO PUBLICADO
 
 ## 26. Regra do próximo movimento
 
-`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N, O e P concluíram suas auditorias documentais. `F-022` não foi aberto. A auditoria integral está `COMPLETED / PASS / 23 OF 23`. Q foi adjudicado como elegível, a baseline final foi capturada e a definição funcional foi concluída e consolidada.
+`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N, O e P concluíram suas auditorias documentais. `F-022` não foi aberto. A auditoria integral está `COMPLETED / PASS / 23 OF 23`. Q foi adjudicado como elegível, a baseline final foi capturada, a definição funcional foi concluída e consolidada e a elegibilidade de materialização de `PER-002` foi concluída como `PASS` com boundary de handoff congelado.
 
 ```text
 J
@@ -1450,10 +1487,20 @@ Q FUNCTIONAL DEFINITION
 → TRN-001 PARTIAL / UNCHANGED
 → TRN-002 LOCALLY VALIDATED / UNCHANGED
 
+Q MATERIALIZATION ELIGIBILITY
+→ PASS / CANONICALLY CONSOLIDATED
+→ MATERIALIZATION WARRANTED = YES
+→ TARGET = PER-002 — ENTRADA PROTEGIDA
+→ MATERIALIZATION NATURE = LOW-FIDELITY / FUNCTIONAL / EXISTING RESPONSIBILITY ONLY
+→ DESIGN HANDOFF BOUNDARY = GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN
+→ NEW SURFACE / NEW PER-ID = NO
+→ HISTORICAL VISUAL RESTORATION = NOT WARRANTED
+→ DESIGN = NOT AUTHORIZED
+
 NEXT
-→ Q MATERIALIZATION ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ DO NOT START DESIGN / UXA-102 / PRODUCT ENGINEERING
+→ EXPLICIT DESIGN AUTHORIZATION DECISION
+→ IF AUTHORIZED: LOW-FIDELITY FUNCTIONAL MATERIALIZATION OF PER-002 ONLY
+→ DO NOT START UXA-102 / PRODUCT ENGINEERING BY INFERENCE
 
 TECHNOLOGY / DATA / AI
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
@@ -1469,4 +1516,4 @@ RESEARCH OPERATIONAL STATES
 → PMF = NOT VALIDATED
 ```
 
-`UXA-102/V5`, Design, Product Engineering, PMF, implementação, produção e merge da PR #363 permanecem não iniciados ou não autorizados. O próximo ato é somente a adjudicação read-only de elegibilidade de materialização de Q.
+`UXA-102/V5`, Design, Product Engineering, PMF, implementação, produção e merge da PR #363 permanecem não iniciados ou não autorizados. O próximo ato é somente a decisão explícita de autorização de Design para o boundary low-fidelity funcional de `PER-002`; nenhuma materialização é iniciada por esta consolidação.
