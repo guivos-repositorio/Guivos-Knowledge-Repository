@@ -18,15 +18,16 @@ Antes de usar qualquer documento isolado, consulte:
 A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.23.0
+GKR-STATE-001 3.24.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
 LOTE O → DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED
 LOTE P → FINAL COMPLETENESS AUDIT = PASS / COMPLETED
 AUDITORIA INTEGRAL → COMPLETED / PASS / 23 OF 23
-Q → BLOCKED / NOT RELEASED
-PRÓXIMO GATE → Q RELEASE ELIGIBILITY ADJUDICATION / READ-ONLY
+FINAL BASELINE → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
+Q → RELEASED FOR DOCUMENTARY DEFINITION ONLY
+PRÓXIMO GATE → Q FUNCTIONAL DEFINITION / DOCUMENTARY / READ-ONLY / NO DESIGN
 ```
 
 ## Como navegar

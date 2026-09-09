@@ -2,11 +2,11 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.23.0
+version: 3.24.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-08
 normative: true
-maturity: current_truth_post_full_corpus_audit_pre_final_baseline
+maturity: current_truth_post_full_corpus_audit_final_baseline_captured_q_released
 related:
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
@@ -54,7 +54,7 @@ GKR VIGENTE
 → sem depender de versões substituídas para ser compreendido
 ```
 
-A auditoria integral do corpus foi concluída com resultado `PASS`. Este registro continua explicitando lacunas, limites e gates que permanecem abertos por dependerem de autoridade própria, baseline final, implementação, operação ou evidência real. Nenhum item é promovido por inferência.
+A auditoria integral do corpus foi concluída com resultado `PASS`. A baseline final pós-auditoria foi capturada no `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e Q foi liberado somente para definição documental da primeira responsabilidade autenticada da Pessoa após a Home. Nenhum item visual, técnico, operacional ou de maturidade é promovido por inferência.
 
 ## 2. Estado executivo
 
@@ -65,7 +65,7 @@ ERA
 ESTADO GLOBAL DO GKR
 → AUDITORIA INTEGRAL COMPLETED / PASS
 → 23 OF 23 GOVERNED CHECKPOINTS COMPLETED
-→ FINAL BASELINE NOT CAPTURED
+→ FINAL BASELINE CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
 
 BLOCO 2 — G / H / I
 → G COMPLETED / UPDATE_APPLIED
@@ -176,13 +176,23 @@ P — AUDITORIA FINAL DE COMPLETUDE
 → OPEN P-SPECIFIC MATERIAL FINDINGS = 0
 → F-022 NOT OPENED
 
+Q RELEASE ELIGIBILITY
+→ PASS
+→ DOCUMENTARY AUDITABILITY = PASS
+→ CURRENT MATERIAL BLOCKER TO Q RELEASE = NONE PROVEN
+→ F-022 NOT OPENED
+
 Q
-→ BLOCKED / NOT RELEASED
+→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
+→ FIRST AUTHENTICATED RESPONSIBILITY / SURFACE NOT YET DEFINED
+→ DO NOT PRESUME TELA HOJE OR ANY HISTORICAL SCREEN
 
 NEXT
-→ Q RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ DO NOT RELEASE Q BY INFERENCE
+→ Q FUNCTIONAL DEFINITION
+→ DOCUMENTARY / READ-ONLY AUTHORITY RECONCILIATION
+→ DEFINE FIRST REAL RESPONSIBILITY / SCOPE / STATES / ENTRY / EXIT / AUTHORITY / PRIVACY / HANDOFFS
+→ DO NOT START DESIGN
+→ DO NOT START UXA-102/V5 BY INFERENCE
 
 UXA-102 / V5
 → NOT_STARTED
@@ -194,13 +204,17 @@ PMF
 → NOT VALIDATED
 
 BASELINE FINAL PÓS-AUDITORIA
-→ NOT AUTHORIZED / NOT CAPTURED
+→ AUTHORIZED / CAPTURED
+→ SHA 15f4d69f63cd760718dce7903224673aac4f540a
+→ IMMUTABLE REFERENCE FOR Q DOCUMENTARY DEFINITION
 
 PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
-→ BLOCKED PENDING Q / FINAL BASELINE / SEPARATE GOVERNED AUTHORIZATION
+→ NOT DEFINED
+→ Q RELEASED FOR DOCUMENTARY DEFINITION ONLY
+→ MATERIALIZATION REQUIRES SEPARATE GOVERNED AUTHORIZATION
 
 MATERIALIZAÇÃO VISUAL DAS HOMES
-→ NOT AUTHORIZED BY P CLOSURE
+→ NOT AUTHORIZED BY P CLOSURE OR Q RELEASE
 → REQUIRES SEPARATE GOVERNED ACT
 ```
 
@@ -443,7 +457,7 @@ MINHA EVOLUÇÃO
 ≠ RODA DA VIDA OBRIGATÓRIA
 ```
 
-A primeira tela autenticada após a Home permanece **bloqueada**. O fechamento de P não inicia Q, não captura a baseline final e não autoriza automaticamente UXA-102/V5, Design ou Product Engineering.
+A primeira tela autenticada após a Home **ainda não está definida**. Q está liberado somente para sua definição documental e funcional sobre a baseline final capturada; essa liberação não seleciona `PER-008`, não inicia `UXA-102/V5`, não autoriza Design e não retoma Product Engineering.
 
 ## 8. Organizações e Coletivos — experiência autenticada
 
@@ -649,10 +663,17 @@ HOME PRINCIPAL / PESSOA
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
 WIREFRAME / FIGMA / UI / PROTÓTIPO / IMPLEMENTAÇÃO
-→ NOT AUTHORIZED BY P CLOSURE
+→ NOT AUTHORIZED BY P CLOSURE OR Q RELEASE
+
+FINAL BASELINE
+→ CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
+
+Q
+→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
 
 PRIMEIRA TELA AUTENTICADA DA PESSOA
-→ BLOCKED PENDING Q / FINAL BASELINE / SEPARATE GOVERNED AUTHORIZATION
+→ NOT DEFINED
+→ MATERIALIZATION REQUIRES SEPARATE GOVERNED AUTHORIZATION
 ```
 
 O fechamento de D não promove disponibilidade operacional, PMF, lançamento ou qualquer lote posterior da auditoria.
@@ -1351,7 +1372,7 @@ MÉTODO DEFINIDO
 
 ## 25. Dívidas e gates reais ainda abertos
 
-Após o fechamento da auditoria integral, permanecem abertos quando dependentes de realidade, baseline final ou autoridade própria:
+Após o fechamento da auditoria integral e a captura da baseline final, permanecem abertos quando dependentes de realidade, definição funcional, Design, implementação, operação ou autoridade própria:
 
 - validação B2C real;
 - PMF e disposição a pagar;
@@ -1372,14 +1393,14 @@ Após o fechamento da auditoria integral, permanecem abertos quando dependentes 
 - evidência de atividade efetiva para AIaaS se incluído;
 - implantação real do perfil pessoal do fundador;
 - publicação real de conteúdo do fundador;
-- Q — elegibilidade, liberação e captura da baseline final;
-- reativação futura do Design das Homes somente por novo ato governado próprio;
+- Q — definição funcional da primeira responsabilidade autenticada pós-Home, sem presumir tela histórica;
+- autorização futura de Design somente por ato governado próprio;
 - UXA-102/V5;
 - Product Engineering.
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.28.0` registra a auditoria integral concluída com resultado `PASS`.
+`GKR-FULL-CORPUS-AUDIT-001 v1.29.0` registra a auditoria integral concluída com resultado `PASS` e a decisão pós-auditoria de captura da baseline final e liberação documental de Q.
 
 ```text
 A / B / C / D / E / F / G
@@ -1457,16 +1478,24 @@ AUDITORIA INTEGRAL
 → COMPLETED / PASS
 → 23 OF 23 GOVERNED CHECKPOINTS COMPLETED
 
+FINAL BASELINE
+→ CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
+
+Q RELEASE ELIGIBILITY
+→ PASS
+
 Q
-→ BLOCKED / NOT RELEASED
+→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
+→ FIRST AUTHENTICATED RESPONSIBILITY / SURFACE NOT YET DEFINED
 
 NEXT
-→ Q RELEASE ELIGIBILITY ADJUDICATION
+→ Q FUNCTIONAL DEFINITION
 → DOCUMENTARY / READ-ONLY
-→ DO NOT RELEASE Q BY INFERENCE
+→ DO NOT PRESUME TELA HOJE OR ANY HISTORICAL SCREEN
+→ DO NOT START DESIGN / UXA-102 / PRODUCT ENGINEERING BY INFERENCE
 ```
 
-O fechamento de P encerra a auditoria integral no limite documental. Não autoriza baseline final, não libera Q, não inicia Design, Product Engineering, operação, PMF, implementação ou produção.
+O fechamento de P encerrou a auditoria integral no limite documental. A captura posterior da baseline final e a liberação documental de Q não autorizam Design, Product Engineering, operação, PMF, implementação ou produção.
 
 ## 27. Regra de navegação final
 
@@ -1546,7 +1575,7 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-P foi concluído com resultado `PASS` após a auditoria final de completude read-only sobre o `HEAD efab08ec436404a5389bc27e0051c6b48d9a4b45`. A recomputação final separou contagem física, maturidade funcional/documental e autoridade visual sem reabrir `F-007`.
+P foi concluído com resultado `PASS`, a adjudicação de elegibilidade de Q foi concluída como `PASS` sobre o `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e esse mesmo `HEAD` foi capturado como baseline final pós-auditoria. Q está liberado somente para definição documental da primeira responsabilidade autenticada após a Home.
 
 ```text
 P — AUDITORIA FINAL DE COMPLETUDE
@@ -1563,13 +1592,25 @@ AUDITORIA INTEGRAL
 → COMPLETED / PASS
 → 23 OF 23 GOVERNED CHECKPOINTS COMPLETED
 
+FINAL BASELINE
+→ AUTHORIZED / CAPTURED
+→ 15f4d69f63cd760718dce7903224673aac4f540a
+
+Q RELEASE ELIGIBILITY
+→ PASS
+→ CURRENT MATERIAL BLOCKER = NONE PROVEN
+
 Q
-→ BLOCKED / NOT RELEASED
+→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
+→ FIRST AUTHENTICATED RESPONSIBILITY / SURFACE NOT DEFINED
+→ TELA HOJE NOT PRESUMED
+→ HISTORICAL SCREEN NOT PRESUMED
 
 NEXT
-→ Q RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ Q IS NOT RELEASED BY P CLOSURE
+→ Q FUNCTIONAL DEFINITION
+→ DOCUMENTARY / READ-ONLY AUTHORITY RECONCILIATION
+→ DEFINE RESPONSIBILITY / SCOPE / STATES / ENTRY / EXIT / AUTHORITY / PRIVACY / HANDOFFS
+→ DO NOT START DESIGN
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
@@ -1582,17 +1623,15 @@ TECHNOLOGY / PRODUCT ENGINEERING
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
 → PRODUCT ENGINEERING PAUSED BEFORE W0-01
 
-AINDA BLOQUEADOS
-→ Q / FINAL BASELINE
-→ UXA-102
-→ PRIMEIRA TELA PÓS-HOME DA PESSOA
+AINDA NÃO AUTORIZADOS / NÃO INICIADOS
+→ UXA-102 / V5
 → WIREFRAME / FIGMA / UI / PROTÓTIPO
 → NOVOS SOURCE LOCKS OPERACIONAIS DE DESIGN
-→ DESIGN AUTOMÁTICO
+→ DESIGN
 → PRODUCT ENGINEERING
 → PMF
 → IMPLEMENTAÇÃO / PRODUÇÃO
 → MERGE DA PR #363
 ```
 
-O fechamento de P encerra a auditoria integral, mas não libera Q e não constitui autorização operacional, visual, de implementação, produção, baseline final ou merge.
+A captura da baseline final e a liberação documental de Q não constituem autorização operacional, visual, de implementação, produção, UXA-102/V5 ou merge.

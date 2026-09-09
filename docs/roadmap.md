@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.22.0
+id: ROADMAP-13.23.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.22.0
+version: 13.23.0
 owner: Guivos
 last_updated: 2026-09-08
 normative: true
@@ -37,7 +37,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.23.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.24.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -51,7 +51,7 @@ ROADMAP
 ≠ REGISTRO HISTÓRICO
 ```
 
-A **Auditoria Integral do Guivos Knowledge Repository** foi concluída com resultado `PASS`: 23 de 23 checkpoints governados encerrados. O próximo movimento governado é exclusivamente a adjudicação de elegibilidade de Q para baseline final; Q não é liberado por inferência.
+A **Auditoria Integral do Guivos Knowledge Repository** foi concluída com resultado `PASS`: 23 de 23 checkpoints governados encerrados. A adjudicação de elegibilidade de Q também foi concluída como `PASS`, a baseline final pós-auditoria foi capturada no `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e Q foi liberado somente para definição documental da primeira responsabilidade autenticada da Pessoa após a Home.
 
 Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. O Lote M concluiu sua auditoria documental com `OPEN M-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`, sem promover execução jurídica, privacidade operacional ou constituição institucional. O Lote N concluiu sua auditoria documental com `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`, `F-022 NOT OPENED` e sem promover execução de GTM, publicação ou operação de mercado. O Lote O concluiu sua auditoria documental após rebuild governado do MENU e prova Semantic + Mechanical; `F-002 = RESOLVED`. O Lote P concluiu a auditoria final de completude com `PASS`, recomputação de contagens físicas e maturidade documental, `OPEN P-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`.
 
@@ -59,17 +59,19 @@ Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite docume
 
 `F-010` permanece `RESOLVED`. O review Codex permaneceu indisponível por limite de uso e nenhuma claim `CLEAN` é inferida.
 
-O fechamento da auditoria não promove automaticamente nova UX principal, wireframe, Design ou implementação. Qualquer avanço exige gate e autorização próprios.
+A captura da baseline final e a liberação documental de Q não promovem automaticamente wireframe, Design, UXA-102/V5 ou implementação. Qualquer avanço visual ou técnico exige gate e autorização próprios.
 
 ## 2. Baseline governada
 
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.23.0** |
+| Estado global | **GKR-STATE-001 v3.24.0** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
-| Baseline final pós-auditoria | **NOT AUTHORIZED / NOT CAPTURED** |
-| Q | **BLOCKED / NOT RELEASED** |
+| Baseline final pós-auditoria | **CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a** |
+| Q release eligibility | **PASS** |
+| Q | **RELEASED FOR DOCUMENTARY DEFINITION ONLY** |
+| Primeira tela autenticada pós-Home da Pessoa | **NOT DEFINED** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | UXA-102/V5 | **NOT_STARTED** |
@@ -94,8 +96,7 @@ O fechamento da auditoria não promove automaticamente nova UX principal, wirefr
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
 | O/C mapa de superfícies | **NOT CANONICAL** |
-| Design das Homes | **NOT AUTHORIZED BY P CLOSURE / REQUIRES SEPARATE GOVERNED ACT** |
-| Primeira tela autenticada pós-Home da Pessoa | **BLOCKED PENDING Q / FINAL BASELINE / SEPARATE GOVERNED AUTHORIZATION** |
+| Design das Homes | **NOT AUTHORIZED BY P CLOSURE OR Q RELEASE / REQUIRES SEPARATE GOVERNED ACT** |
 
 Inventário físico corrente após F-016-A:
 
@@ -160,7 +161,7 @@ GKR
 
 ## 4. Programa prioritário — Auditoria Integral do GKR
 
-A auditoria integral foi concluída. O gate seguinte não é continuação automática do programa; é adjudicação própria de Q.
+A auditoria integral foi concluída. Q é uma frente pós-auditoria governada por baseline final capturada e por autorização própria.
 
 Sequência governada:
 
@@ -217,16 +218,18 @@ ADJUDICAÇÃO DE ELEGIBILIDADE P           [COMPLETED / PASS]
 ↓
 DECISÃO GOVERNADA O → P                  [P RELEASED FINAL-COMPLETENESS-AUDIT-ONLY / Q BLOCKED]
 ↓
-P. AUDITORIA FINAL DE COMPLETUDE          [COMPLETED / PASS / DOCUMENTARY / READ-ONLY]
+P. AUDITORIA FINAL DE COMPLETUDE         [COMPLETED / PASS / DOCUMENTARY / READ-ONLY]
 ↓
-AUDITORIA INTEGRAL                        [COMPLETED / PASS / 23 OF 23]
+AUDITORIA INTEGRAL                       [COMPLETED / PASS / 23 OF 23]
 ↓
-ADJUDICAÇÃO DE ELEGIBILIDADE Q            [NEXT / DOCUMENTARY / READ-ONLY]
+ADJUDICAÇÃO DE ELEGIBILIDADE Q           [COMPLETED / PASS]
 ↓
-Q. PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME [BLOCKED / NOT RELEASED]
+BASELINE FINAL PÓS-AUDITORIA             [CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a]
+↓
+Q. PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME [RELEASED FOR DOCUMENTARY DEFINITION ONLY / NOT YET DEFINED]
 ```
 
-A ordem protege o corpus contra duas falhas: desenhar sobre conceitos antigos e redesenhar navegação antes de saber quais autoridades permanecerão. A conclusão de P não libera automaticamente Q.
+A ordem protege o corpus contra duas falhas: desenhar sobre conceitos antigos e presumir uma tela histórica como resposta. A liberação de Q não autoriza Design nem implementação.
 
 ## 5. Lote A — Governança do corpus
 
@@ -362,18 +365,24 @@ DA POSSIBILIDADE À EXPERIÊNCIA
 
 O fechamento de D é exclusivamente documental. Não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, disponibilidade operacional, PMF ou primeira tela autenticada da Pessoa.
 
-Gate preservado após P:
+Gate vigente pós-baseline/Q release:
 
 ```text
 HOME PRINCIPAL / PESSOA
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
-MATERIALIZAÇÃO VISUAL
-→ NOT AUTHORIZED BY P CLOSURE
-→ REQUIRES SEPARATE GOVERNED ACT
+FINAL BASELINE
+→ CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
+
+Q
+→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
 
 PRIMEIRA TELA AUTENTICADA DA PESSOA
-→ BLOCKED PENDING Q / FINAL BASELINE / SEPARATE GOVERNED AUTHORIZATION
+→ NOT DEFINED
+
+MATERIALIZAÇÃO VISUAL
+→ NOT AUTHORIZED BY Q RELEASE
+→ REQUIRES SEPARATE GOVERNED ACT
 ```
 
 ## 9. Lote E — Home Organizações e Coletivos
@@ -537,7 +546,7 @@ COMPLETED / UPDATE_APPLIED
 JOURNEY MATURITY → DRAFT PRESERVED
 ```
 
-A auditoria reconciliou a jornada atual da Pessoa no limite documental, incluindo handoffs e estados de transição já suportados pelas autoridades vigentes. O fechamento do bloco G não promove a Jornada da Pessoa além de `draft` e não autoriza a primeira tela autenticada pós-Home.
+A auditoria reconciliou a jornada atual da Pessoa no limite documental, incluindo handoffs e estados de transição já suportados pelas autoridades vigentes. O fechamento do bloco G não promove a Jornada da Pessoa além de `draft` e não seleciona a primeira tela autenticada pós-Home.
 
 Preservações:
 
@@ -547,9 +556,9 @@ Preservações:
 - transições parciais/locais continuam no estado específico registrado no Transition Registry;
 - nenhuma tela histórica é presumida como primeira responsabilidade pós-Home.
 
-Gate:
+Gate vigente:
 
-> **não escrever a primeira tela pós-Home sem Q, baseline final e autorização específica própria.**
+> **Q e a baseline final agora permitem apenas a definição documental da primeira responsabilidade autenticada; Design, wireframe, UXA-102/V5 e implementação continuam sujeitos a autorização própria.**
 
 ## 12. Lote H — Organização e Coletivo
 
@@ -1174,37 +1183,48 @@ Resultado:
 PASS
 ```
 
-O fechamento de P não autoriza a baseline final nem libera Q automaticamente.
+O fechamento de P não autorizou por si só a baseline final nem liberou Q automaticamente. Esses atos ocorreram posteriormente por adjudicação e autorização próprias.
 
 ## 21. Lote Q — Primeira tela autenticada da Pessoa após a Home
 
 Estado atual:
 
 ```text
-BLOCKED / NOT RELEASED
-FINAL BASELINE → NOT AUTHORIZED / NOT CAPTURED
+Q RELEASE ELIGIBILITY → PASS
+FINAL BASELINE → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
+Q → RELEASED FOR DOCUMENTARY DEFINITION ONLY
+FIRST AUTHENTICATED RESPONSIBILITY / SURFACE → NOT DEFINED
+UXA-102 / V5 → NOT_STARTED
+DESIGN → NOT AUTHORIZED
 ```
 
-O próximo ato legítimo é a **adjudicação de elegibilidade de Q**, documental e read-only. Somente após eventual liberação e captura governada da baseline final poderá ser decidida a execução da primeira tela.
+A adjudicação read-only comprovou que Q pode iniciar definição documental sem presumir uma tela histórica. A baseline final pós-auditoria é o `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, capturado como referência imutável para esta frente.
 
-Não será presumido agora que a resposta é uma tela histórica, a Tela Hoje ou qualquer outro objeto pré-existente.
+Q deve começar pela determinação funcional do problema e da primeira responsabilidade real. Não se presume que a resposta seja a Tela Hoje, `PER-008`, UXA-097 ou qualquer outro objeto pré-existente.
 
-Quando e se Q for liberado por ato próprio, o processo previsto permanece:
+Processo governado:
 
 ```text
-HOME PESSOA FINAL
+HOME PESSOA FINAL / BASELINE CAPTURED
 → INTENÇÃO DE ENTRADA
 → CONTEXTO / AUTORIDADE / PRIVACIDADE NECESSÁRIOS
 → PRIMEIRA RESPONSABILIDADE REAL
-→ ESCOPO DA SUPERFÍCIE
+→ ESCOPO FUNCIONAL DA SUPERFÍCIE
 → ESTADOS
 → FLUXOS DE ENTRADA E SAÍDA
-→ WIREFRAME LOW-FIDELITY
-→ VALIDAÇÃO
-→ UI / PROTÓTIPO SOMENTE DEPOIS
+→ CRITÉRIOS / HANDOFFS / REVERSIBILIDADE
+→ SOMENTE DEPOIS: GATE SEPARADO PARA DESIGN / MATERIALIZAÇÃO, SE NECESSÁRIO
 ```
 
-Nenhuma etapa acima é iniciada por P.
+```text
+Q RELEASE
+≠ TELA DEFINIDA
+≠ TELA HOJE SELECIONADA
+≠ UXA-102 INICIADA
+≠ WIREFRAME
+≠ DESIGN
+≠ PRODUCT ENGINEERING
+```
 
 ## 22. Marca e filing — gates paralelos, não prioritários
 
@@ -1314,7 +1334,7 @@ ESPECIFICAÇÃO EDITORIAL ≠ CONTEÚDO PUBLICADO
 
 ## 26. Regra do próximo movimento
 
-`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N, O e P concluíram suas auditorias documentais. `F-022` não foi aberto. A auditoria integral está `COMPLETED / PASS / 23 OF 23`. Q continua bloqueado e ainda não possui release próprio.
+`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N, O e P concluíram suas auditorias documentais. `F-022` não foi aberto. A auditoria integral está `COMPLETED / PASS / 23 OF 23`. Q foi adjudicado como elegível, a baseline final foi capturada e Q está liberado somente para definição documental.
 
 ```text
 J
@@ -1365,13 +1385,21 @@ AUDITORIA INTEGRAL
 → 23 / 23
 → 100%
 
+FINAL BASELINE
+→ CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
+
+Q RELEASE ELIGIBILITY
+→ PASS
+
 Q
-→ BLOCKED / NOT RELEASED
+→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
+→ FIRST AUTHENTICATED RESPONSIBILITY / SURFACE NOT DEFINED
 
 NEXT
-→ Q RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ DO NOT RELEASE Q BY INFERENCE
+→ Q FUNCTIONAL DEFINITION
+→ DOCUMENTARY / READ-ONLY AUTHORITY RECONCILIATION
+→ DO NOT PRESUME TELA HOJE OR ANY HISTORICAL SCREEN
+→ DO NOT START DESIGN / UXA-102 / PRODUCT ENGINEERING
 
 TECHNOLOGY / DATA / AI
 → IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
@@ -1387,4 +1415,4 @@ RESEARCH OPERATIONAL STATES
 → PMF = NOT VALIDATED
 ```
 
-`UXA-102/V5`, Design, Product Engineering, Q, baseline final e merge da PR #363 permanecem bloqueados ou não autorizados. O fechamento de P encerra a auditoria integral, mas não promove nenhum desses estados por inferência.
+`UXA-102/V5`, Design, Product Engineering, PMF, implementação, produção e merge da PR #363 permanecem não iniciados ou não autorizados. Q pode avançar apenas em definição documental até novo gate próprio.

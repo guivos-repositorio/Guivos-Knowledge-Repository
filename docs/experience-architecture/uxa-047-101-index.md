@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.23.0
+version: 3.24.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-08
 depends_on:
@@ -21,7 +21,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.23.0
+→ 3.24.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -103,14 +103,24 @@ AUDITORIA INTEGRAL
 → COMPLETED / PASS
 → 23 OF 23 GOVERNED CHECKPOINTS COMPLETED
 
-Q
-→ BLOCKED / NOT RELEASED
+FINAL BASELINE PÓS-AUDITORIA
+→ CAPTURED
+→ SHA 15f4d69f63cd760718dce7903224673aac4f540a
+→ IMMUTABLE REFERENCE FOR Q DOCUMENTARY DEFINITION
+
+Q — PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
+→ RELEASE ELIGIBILITY = PASS
+→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
+→ FIRST AUTHENTICATED RESPONSIBILITY / SURFACE NOT YET DEFINED
+→ UXA-102/V5 REMAINS NOT_STARTED
+→ DESIGN / WIREFRAME / UI / PROTOTYPE NOT AUTHORIZED
 
 PRÓXIMO MOVIMENTO GOVERNADO
-→ Q RELEASE ELIGIBILITY ADJUDICATION
-→ DOCUMENTARY / READ-ONLY
-→ NÃO LIBERAR Q POR INFERÊNCIA
+→ Q FUNCTIONAL DEFINITION
+→ DOCUMENTARY / READ-ONLY AUTHORITY RECONCILIATION
+→ NÃO PRESUMIR TELA HOJE OU QUALQUER TELA HISTÓRICA
 → PRESERVAR DOCUMENTAÇÃO / IMPLEMENTAÇÃO / OPERAÇÃO COMO ESTADOS DISTINTOS
+→ NÃO INICIAR DESIGN
 → NÃO RETOMAR PRODUCT ENGINEERING
 ```
 
@@ -247,11 +257,12 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.23.0** |
+| Registro do Estado Atual | **3.24.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
+| Baseline final pós-auditoria | **CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a** |
 | Lotes concluídos | **A / B / C / D / E / F / G** |
 | Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey remains draft** |
 | Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
@@ -266,8 +277,10 @@ Ainda não são canônicos:
 | Lote N — GTM / presença pública | **DOCUMENTARY AUDIT COMPLETED / OPEN N-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Lote O — MENU final / rotas multiequipe | **DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED / OPEN O-SPECIFIC MATERIAL FINDINGS = 0** |
 | Lote P — Auditoria final | **COMPLETED / PASS / OPEN P-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
-| Próximo movimento governado | **Q RELEASE ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY** |
-| Q | **BLOCKED / NOT RELEASED** |
+| Q release eligibility | **PASS** |
+| Q | **RELEASED FOR DOCUMENTARY DEFINITION ONLY** |
+| Primeira tela autenticada pós-Home | **NOT DEFINED** |
+| Próximo movimento governado | **Q FUNCTIONAL DEFINITION — DOCUMENTARY / READ-ONLY / NO DESIGN** |
 | RP-002 Operational Readiness | **HOLD** |
 | Participant 001 | **HOLD** |
 | Dry Run real | **NOT RELEASED** |
@@ -278,4 +291,4 @@ Ainda não são canônicos:
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 
-O fechamento da auditoria integral não promove, por si só, maturidade funcional, Design, implementação, operação, PMF, baseline final ou Q. Os estados funcionais permanecem sustentados por suas autoridades textuais vigentes.
+A captura da baseline final e a liberação documental de Q não promovem, por si só, maturidade funcional, Design, implementação, operação, PMF ou UXA-102/V5. Os estados funcionais permanecem sustentados por suas autoridades textuais vigentes.

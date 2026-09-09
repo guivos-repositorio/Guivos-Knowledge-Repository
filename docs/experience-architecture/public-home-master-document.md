@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-27
+last_updated: 2026-09-08
 normative: false
 maturity: reconciled_architecture_pre_materialization
 depends_on:
@@ -45,7 +45,7 @@ Ele existe para que liderança, Brand, Marketing, Produto, Experience Architectu
 
 Regra de consumo:
 
-> **Para compreender o estado atual da Home Pública — Pessoa, comece por este documento. Os artefatos especializados permanecem como aprofundamento e evidência de decisões específicas enquanto a auditoria integral não concluir sua absorção ou permanência.**
+> **Para compreender o estado atual da Home Pública — Pessoa, comece por este documento. Os artefatos especializados permanecem como aprofundamento e evidência de decisões específicas enquanto mantiverem função própria e até eventual absorção/remoção ser adjudicada separadamente.**
 
 Este master:
 
@@ -80,8 +80,16 @@ HOME PRINCIPAL / PESSOA
 MATERIALIZAÇÃO VISUAL NOVA
 → NÃO AUTORIZADA POR ESTE DOCUMENTO
 
+FINAL BASELINE PÓS-AUDITORIA
+→ CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
+
+Q
+→ RELEASED FOR DOCUMENTARY DEFINITION ONLY
+
 PRIMEIRA TELA AUTENTICADA APÓS A HOME
-→ BLOQUEADA ATÉ O FECHAMENTO DA AUDITORIA INTEGRAL
+→ NOT DEFINED
+→ NÃO PRESUMIR TELA HOJE OU QUALQUER TELA HISTÓRICA
+→ DESIGN / WIREFRAME / UI / PROTÓTIPO NÃO AUTORIZADOS POR Q RELEASE
 
 UXA-102 / V5
 → NOT_STARTED
@@ -93,7 +101,7 @@ PMF
 → NOT VALIDATED
 ```
 
-A existência de Source Locks, snapshots, wireframes, Design deliveries ou explorações anteriores não promove seu conteúdo a baseline visual atual durante a auditoria.
+A existência de Source Locks, snapshots, wireframes, Design deliveries ou explorações anteriores não promove seu conteúdo a baseline visual atual.
 
 ```text
 DOCUMENTO DE DESIGN EXISTENTE
@@ -1044,14 +1052,19 @@ A transição para a Journey deve permanecer consciente.
 
 Este master **não define qual será a primeira tela autenticada final após a Home**.
 
-Durante a auditoria:
+Após o fechamento da auditoria integral e a captura da baseline final:
 
 ```text
 HOME PÚBLICA RECONCILIADA
 ≠ PRIMEIRA TELA AUTENTICADA DEFINIDA
+
+Q RELEASED FOR DOCUMENTARY DEFINITION
+≠ TELA HOJE SELECIONADA
+≠ UXA-102 INICIADA
+≠ DESIGN AUTORIZADO
 ```
 
-`UXA-020`, `UXA-023` e demais autoridades de entrada protegida permanecem fontes funcionais em seus limites, mas o fluxo completo será reavaliado no Lote G antes de qualquer nova tela.
+`UXA-020`, `UXA-023` e as autoridades vigentes da Jornada permanecem fontes funcionais em seus limites. Q foi liberado somente para determinar documentalmente a primeira responsabilidade real, seu escopo funcional, estados, entradas, saídas, autoridade, privacidade e handoffs, sem presumir uma tela histórica e sem iniciar materialização visual.
 
 ---
 
@@ -1223,7 +1236,7 @@ Ainda pertencem a gates posteriores:
 - implementação;
 - primeira tela autenticada após a Home.
 
-A auditoria não deve preencher esses itens por conveniência.
+A liberação documental de Q não deve preencher itens visuais ou operacionais por conveniência.
 
 ---
 
@@ -1284,7 +1297,7 @@ Esta matriz **não autoriza remoção automática das fontes**. A remoção fís
 - [Benchmark e diferenciação](public-home-benchmark-and-differentiation-evidence.md)
 - [Comparativo de Hero](public-home-guivos-vs-global-hero-comparative.md)
 
-A auditoria integral decidirá posteriormente quais desses documentos mantêm função própria e quais poderão ser removidos **somente após absorção integral comprovada**.
+O fechamento da auditoria integral manteve esses documentos no corpus. Qualquer futura remoção poderá ocorrer **somente após absorção integral comprovada, análise de função atual, referências e evidência**, sob gate separado.
 
 ---
 
@@ -1324,4 +1337,4 @@ HOME PÚBLICA
 
 Estado desta versão:
 
-> **MASTER RECONCILIADO COM AS AUTORIDADES VIGENTES — CONTEÚDO PRESERVADO E ENRIQUECIDO — MATERIALIZAÇÃO NOVA NÃO AUTORIZADA POR ESTE DOCUMENTO.**
+> **MASTER RECONCILIADO COM AS AUTORIDADES VIGENTES — CONTEÚDO PRESERVADO E ENRIQUECIDO — Q LIBERADO SOMENTE PARA DEFINIÇÃO DOCUMENTAL DA PRIMEIRA RESPONSABILIDADE AUTENTICADA — MATERIALIZAÇÃO NOVA NÃO AUTORIZADA POR ESTE DOCUMENTO.**
