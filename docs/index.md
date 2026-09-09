@@ -17,7 +17,7 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 A leitura de estado continua subordinada ao [Registro do Estado Atual](project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.27.0
+GKR-STATE-001 3.28.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -31,8 +31,10 @@ FIRST AUTHENTICATED RESPONSIBILITY → AUTHENTICATED CONTINUATION OF PER-002 —
 FIRST DISTINCT DOWNSTREAM SURFACE → PER-003 — ESCOLHA DE MODALIDADE
 DESIGN HANDOFF BOUNDARY → GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN
 PER-002 LOW-FIDELITY DESIGN AUTHORIZATION → GRANTED / GKR-UX-PER002-DESIGN-AUTH-001
-DESIGN EXECUTION → NOT_STARTED
-PRÓXIMO GATE → EXECUTE PER-002 LOW-FIDELITY FUNCTIONAL DESIGN / NO UXA-102 BY INFERENCE
+PER-002 DESIGN DELIVERY → EXECUTED / GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0
+DESIGN DELIVERY COVERAGE → 4 PRIMARY FRAMES + 3 VARIANTS / 7 OF 7 AUTHORIZED AREAS
+FUNCTIONAL VALIDATION → NOT_STARTED
+PRÓXIMO GATE → PER-002 LOW-FIDELITY FUNCTIONAL VALIDATION / NO UXA-102 BY INFERENCE
 ```
 
 ## Como esta base é organizada
@@ -122,6 +124,7 @@ ORGANIZAÇÃO
 - [Homes dos Produtos Especializados](experience-architecture/public-specialized-homes-reconciliation.md)
 - [PER-002 — Elegibilidade de Materialização e Handoff para Design](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md)
 - [PER-002 — Autorização Governada de Design Low-Fidelity](experience-architecture/per-002-design-authorization.md)
+- [PER-002 — Materialização Low-Fidelity Funcional de Design](experience-architecture/per-002-low-fidelity-design-delivery.md)
 
 A navegação do repositório não deve ser confundida com a arquitetura de informação de produto, Journey, experiência autenticada ou UI.
 
@@ -212,7 +215,7 @@ As rotas abaixo são **atalhos de consumo**. Elas não criam cópias, autoridade
 | Publicidade / Ads | [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
 | Comercial | [Estratégia de Negócio](business-architecture/index.md) · [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
 | Produto | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) |
-| UX / Design | [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) · [PER-002 Handoff](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md) · [PER-002 Design Authorization](experience-architecture/per-002-design-authorization.md) · [Estado Atual](project/current-state-register.md) |
+| UX / Design | [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) · [PER-002 Handoff](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md) · [PER-002 Design Authorization](experience-architecture/per-002-design-authorization.md) · [PER-002 Design Delivery](experience-architecture/per-002-low-fidelity-design-delivery.md) · [Estado Atual](project/current-state-register.md) |
 | Desenvolvimento | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Arquitetura Corporativa](enterprise-architecture/index.md) |
 | Dados / Intelligence | [Intelligence](intelligence-architecture/index.md) · [Arquitetura Corporativa](enterprise-architecture/index.md) · [Research](research/index.md) |
 | Research | [Research](research/index.md) · [RP-001](research/RP-001/index.md) · [RP-002](research/RP-002/index.md) · [Privacidade](governance-framework/operational-privacy-and-legal-truth-index.md) |
@@ -241,6 +244,9 @@ DESIGN HANDOFF BOUNDARY
 DESIGN AUTHORIZATION
 ≠ DESIGN DELIVERY
 ≠ FUNCTIONAL VALIDATION
+
+DESIGN DELIVERY
+≠ VISUAL MATURITY PROMOTION
 
 AUDITORIA DOCUMENTAL
 ≠ EVIDÊNCIA OPERACIONAL

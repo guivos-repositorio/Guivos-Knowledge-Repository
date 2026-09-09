@@ -18,7 +18,7 @@ Antes de usar qualquer documento isolado, consulte:
 A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.27.0
+GKR-STATE-001 3.28.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -32,8 +32,10 @@ FIRST AUTHENTICATED RESPONSIBILITY → AUTHENTICATED CONTINUATION OF PER-002 —
 FIRST DISTINCT DOWNSTREAM SURFACE → PER-003 — ESCOLHA DE MODALIDADE
 DESIGN HANDOFF BOUNDARY → GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN
 PER-002 LOW-FIDELITY DESIGN AUTHORIZATION → GRANTED / GKR-UX-PER002-DESIGN-AUTH-001
-DESIGN EXECUTION → NOT_STARTED
-PRÓXIMO GATE → EXECUTE PER-002 LOW-FIDELITY FUNCTIONAL DESIGN / NO UXA-102 BY INFERENCE
+PER-002 DESIGN DELIVERY → EXECUTED / GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0
+DESIGN DELIVERY COVERAGE → 4 PRIMARY FRAMES + 3 VARIANTS / 7 OF 7 AUTHORIZED AREAS
+FUNCTIONAL VALIDATION → NOT_STARTED
+PRÓXIMO GATE → PER-002 LOW-FIDELITY FUNCTIONAL VALIDATION / NO UXA-102 BY INFERENCE
 ```
 
 ## Como navegar
@@ -123,6 +125,7 @@ ORGANIZAÇÃO
 - [Homes dos Produtos Especializados](docs/experience-architecture/public-specialized-homes-reconciliation.md)
 - [PER-002 — Elegibilidade de Materialização e Handoff para Design](docs/experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md)
 - [PER-002 — Autorização Governada de Design Low-Fidelity](docs/experience-architecture/per-002-design-authorization.md)
+- [PER-002 — Materialização Low-Fidelity Funcional de Design](docs/experience-architecture/per-002-low-fidelity-design-delivery.md)
 
 ### Research e Validação
 
@@ -191,7 +194,7 @@ As equipes não recebem cópias próprias de autoridades. Elas entram no mesmo c
 | Publicidade / Ads | Arquitetura de Produtos · Modelo Econômico · Go-to-Market |
 | Comercial | Estratégia de Negócio · Produtos · Economia · GTM |
 | Produto | Arquitetura de Produtos · Experience Architecture · Jornadas |
-| UX / Design | Experience Architecture · Jornadas · Estado Atual |
+| UX / Design | Experience Architecture · Jornadas · PER-002 Handoff · PER-002 Design Authorization · PER-002 Design Delivery · Estado Atual |
 | Desenvolvimento | Produtos · Experience Architecture · Arquitetura Corporativa |
 | Dados / Intelligence | Intelligence · Arquitetura Corporativa · Research |
 | Research | Research · RP-001 · RP-002 · Privacidade |
@@ -209,6 +212,7 @@ SOURCE LOCK ≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
 AUDITORIA DOCUMENTAL ≠ EVIDÊNCIA OPERACIONAL
 DESIGN HANDOFF BOUNDARY ≠ DESIGN AUTHORIZATION
 DESIGN AUTHORIZATION ≠ DESIGN DELIVERY ≠ FUNCTIONAL VALIDATION
+DESIGN DELIVERY ≠ VISUAL MATURITY PROMOTION
 ```
 
 Para qualquer afirmação de estado, prevalece o [Registro do Estado Atual](docs/project/current-state-register.md).
