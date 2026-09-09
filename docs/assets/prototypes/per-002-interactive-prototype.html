@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PER-002 — Protótipo interativo de Design</title>
+  <style>
+    :root{
+      --canvas:#F7F8FC;--surface:#FFFFFF;--text:#15161A;--muted:#626A78;--border:#E2E6EC;
+      --accent:#5B5CE2;--accent-strong:#4849C2;--accent-soft:#EEF0FF;--focus:#7C83FF;
+      --success:#177A56;--success-soft:#ECF8F3;--danger:#B42318;--danger-soft:#FFF1F0;
+      --shadow:0 8px 30px rgba(21,22,26,.08);--radius-card:20px;--radius-control:14px;
+    }
+    *{box-sizing:border-box}
+    html{background:var(--canvas);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    body{margin:0;min-height:100vh;background:var(--canvas)}
+    button,input{font:inherit}
+    button,a,input{outline:none}
+    button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+    button{min-height:44px}
+    .prototype-banner{background:#15161A;color:#fff;padding:10px 20px;font-size:13px;line-height:18px;text-align:center}
+    .prototype-banner strong{font-weight:700}
+    .shell{width:min(100%,608px);margin:0 auto;padding:24px}
+    .context-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:10px 0 32px}
+    .brand{font-size:16px;font-weight:800;letter-spacing:.08em}
+    .context{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:14px;font-weight:600}
+    .shield{width:26px;height:26px;border:1px solid var(--border);border-radius:999px;display:grid;place-items:center;background:var(--surface)}
+    .panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);box-shadow:var(--shadow);padding:28px}
+    .eyebrow{font-size:13px;line-height:18px;font-weight:700;color:var(--accent);letter-spacing:.04em;text-transform:uppercase;margin:0 0 10px}
+    h1{font-size:32px;line-height:38px;font-weight:600;letter-spacing:-.025em;margin:0 0 14px}
+    h2{font-size:24px;line-height:30px;font-weight:600;margin:0 0 10px}
+    p{font-size:16px;line-height:24px;margin:0;color:var(--muted)}
+    .stack{display:grid;gap:16px;margin-top:24px}
+    .info{padding:18px;border-radius:16px;background:var(--accent-soft);display:grid;gap:4px}
+    .info strong,.control-card strong{font-size:15px;line-height:22px}
+    .info span,.control-card span{font-size:14px;line-height:20px;color:var(--muted)}
+    .support{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+    .support li{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:22px}
+    .support li::before{content:"✓";color:var(--success);font-weight:800}
+    .actions{display:grid;gap:12px;margin-top:26px}
+    .btn{width:100%;border-radius:var(--radius-control);min-height:52px;padding:14px 18px;font-weight:700;font-size:16px;line-height:20px;cursor:pointer;border:1px solid transparent}
+    .btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent-strong)}
+    .btn-secondary{background:var(--surface);color:var(--text);border-color:var(--border)}
+    .text-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-top:16px}
+    .link-btn{background:transparent;border:0;color:var(--text);padding:10px 4px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;min-height:44px}
+    .link-btn.muted{color:var(--muted)}
+    .mode-tabs{display:grid;grid-template-columns:1fr 1fr;padding:4px;background:var(--canvas);border:1px solid var(--border);border-radius:16px;gap:4px}
+    .mode-tabs button{border:0;border-radius:12px;background:transparent;color:var(--muted);font-weight:700;cursor:pointer}
+    .mode-tabs button[aria-selected="true"]{background:var(--surface);color:var(--text);box-shadow:0 2px 10px rgba(21,22,26,.06)}
+    label{font-size:14px;line-height:20px;font-weight:700;display:grid;gap:8px}
+    input{height:52px;border:1px solid var(--border);border-radius:var(--radius-control);padding:0 14px;background:var(--surface);color:var(--text)}
+    input::placeholder{color:#8B93A1}
+    .privacy-note{font-size:13px;line-height:18px;color:var(--muted);padding:14px 0 0;border-top:1px solid var(--border)}
+    .status-pill{display:inline-flex;align-items:center;gap:8px;width:max-content;max-width:100%;padding:8px 12px;border-radius:999px;background:var(--success-soft);color:var(--success);font-size:13px;font-weight:700;margin-bottom:16px}
+    .status-pill::before{content:"●";font-size:9px}
+    .error-card{padding:18px;border-radius:16px;background:var(--danger-soft);display:grid;gap:5px}
+    .error-card strong{color:var(--text)}.error-card span{font-size:14px;line-height:20px;color:var(--muted)}
+    .controls-grid{display:grid;gap:12px}.control-card{padding:18px;border:1px solid var(--border);border-radius:16px;display:grid;gap:4px}
+    .readiness{display:grid;gap:10px;margin:0;padding:0;list-style:none}.readiness li{font-size:14px;line-height:20px;display:flex;gap:10px}.readiness li::before{content:"✓";font-weight:800;color:var(--success)}
+    .handoff{padding:18px;border:1px dashed #A9AEEB;background:#F8F8FF;border-radius:16px;text-align:center;display:grid;gap:8px}.handoff strong{font-size:16px}.handoff span{font-size:14px;line-height:20px;color:var(--muted)}
+    .inspection{margin-top:18px;border-top:1px solid var(--border);padding-top:16px}
+    .inspection summary{cursor:pointer;color:var(--muted);font-size:13px;font-weight:700;min-height:44px;display:flex;align-items:center}
+    .inspection-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.inspection-grid button{font-size:13px;border:1px solid var(--border);background:var(--surface);border-radius:12px;cursor:pointer;color:var(--text)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    dialog{border:0;border-radius:22px;padding:0;width:min(calc(100% - 32px),520px);box-shadow:0 24px 80px rgba(21,22,26,.22);color:var(--text)}
+    dialog::backdrop{background:rgba(21,22,26,.42)}
+    .dialog-body{padding:26px;background:var(--surface)}
+    .dialog-body .actions{margin-top:22px}
+    .boundary{background:var(--accent-soft)}
+    [hidden]{display:none!important}
+    @media(max-width:540px){
+      .shell{padding:18px 18px 28px}.context-header{margin-top:6px;margin-bottom:22px}.panel{padding:22px 20px;border-radius:18px;box-shadow:none}
+      h1{font-size:32px;line-height:38px}.inspection-grid{grid-template-columns:1fr}.text-actions{display:grid;justify-items:center;gap:0}
+      dialog{align-self:end;margin-bottom:0;border-radius:22px 22px 0 0;width:100%;max-width:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="prototype-banner" role="note"><strong>Protótipo de Design — PER-002.</strong> Interações simuladas, conteúdo sintético, sem autenticação, processamento, persistência ou dados reais.</div>
+  <main class="shell" id="app">
+    <header class="context-header">
+      <div class="brand">GUIVOS</div>
+      <div class="context"><span class="shield" aria-hidden="true">◇</span><span>Entrada protegida</span></div>
+    </header>
+
+    <section class="panel" id="frame-1" aria-labelledby="f1-title">
+      <p class="eyebrow">Antes de começar</p>
+      <h1 id="f1-title">Saiba o que muda ao entrar.</h1>
+      <p>Você está saindo do ambiente público e entrando em uma área protegida da Guivos. Aqui, você decide quando compartilhar informações sobre sua jornada.</p>
+      <div class="stack">
+        <div class="info"><strong>Este passo não solicita seu relato pessoal.</strong><span>Entrar ou criar conta não autoriza análise nem personalização.</span></div>
+        <ul class="support">
+          <li>Conheça o processo antes de entrar</li><li>Revise seus controles antes de compartilhar algo</li><li>Volte ou explore sem personalização quando quiser</li>
+        </ul>
+      </div>
+      <div class="actions"><button class="btn btn-primary" data-go="frame-2">Continuar</button><button class="btn btn-secondary" data-info="process">Como funciona</button></div>
+      <div class="text-actions"><button class="link-btn" data-exit>Explorar sem personalização</button><button class="link-btn muted" data-home>Voltar para a Home</button></div>
+    </section>
+
+    <section class="panel" id="frame-2" aria-labelledby="f2-title" hidden>
+      <p class="eyebrow">Acesso</p><h1 id="f2-title">Entre para continuar.</h1>
+      <p>O acesso vincula esta etapa a você. Isso não autoriza o uso do que você vier a compartilhar.</p>
+      <div class="stack">
+        <div class="mode-tabs" role="tablist" aria-label="Modo de acesso"><button role="tab" aria-selected="true" data-mode="entrar">Entrar</button><button role="tab" aria-selected="false" data-mode="criar">Criar conta</button></div>
+        <label>Identificação<input autocomplete="off" spellcheck="false" placeholder="Identificação simulada" aria-describedby="synthetic-note"></label>
+        <label>Credencial<input type="password" autocomplete="off" placeholder="Credencial simulada" aria-describedby="synthetic-note"></label>
+        <p class="privacy-note" id="synthetic-note">Campos funcionais simulados. Nenhuma credencial é enviada, validada ou armazenada. O acesso não inicia análise da sua jornada.</p>
+      </div>
+      <div class="actions"><button class="btn btn-primary" data-auth>Continuar</button></div>
+      <div class="text-actions"><button class="link-btn" data-failure>Recuperar acesso</button><button class="link-btn muted" data-go="frame-1">Voltar</button><button class="link-btn muted" data-exit>Explorar sem personalização</button></div>
+      <details class="inspection"><summary>Inspecionar variantes simuladas</summary><div class="inspection-grid"><button data-session>Simular sessão já ativa</button><button data-failure>Simular falha / recuperação</button></div></details>
+    </section>
+
+    <section class="panel" id="variant-b" aria-labelledby="vb-title" hidden>
+      <p class="eyebrow">Acesso protegido</p><h1 id="vb-title">Não foi possível concluir o acesso.</h1>
+      <p>Você pode tentar novamente ou escolher outro caminho. Esta tentativa não inicia sua jornada material.</p>
+      <div class="stack"><div class="error-card"><strong>Não conseguimos concluir esta etapa.</strong><span>Revise os dados ou use uma opção de recuperação disponível.</span></div></div>
+      <div class="actions"><button class="btn btn-primary" data-go="frame-2">Tentar novamente</button><button class="btn btn-secondary" data-go="frame-2">Recuperar acesso</button></div>
+      <div class="text-actions"><button class="link-btn" data-go="frame-2">Usar outra forma de acesso, se disponível</button><button class="link-btn muted" data-go="frame-1">Voltar à entrada protegida</button><button class="link-btn muted" data-exit>Explorar sem personalização</button></div>
+    </section>
+
+    <section class="panel" id="frame-3" aria-labelledby="f3-title" hidden>
+      <div class="status-pill" id="session-pill" hidden>Sessão ativa</div>
+      <p class="eyebrow">Seus controles</p><h1 id="f3-title">Você continua no controle.</h1>
+      <p id="frame3-copy">Antes de seguir, veja o que esta entrada significa — e o que ela ainda não autoriza.</p>
+      <div class="stack controls-grid">
+        <div class="control-card"><strong>O que você compartilha</strong><span>Só quando você decidir.</span></div>
+        <div class="control-card"><strong>Como pode ser usado</strong><span>Cada uso relevante deverá ser explicado antes de acontecer.</span></div>
+        <div class="control-card"><strong>Seus controles</strong><span>Revisar, corrigir, limitar, retirar ou interromper quando aplicável.</span></div>
+        <div class="info"><strong>Entrar não é autorização de processamento.</strong><span>Entrar não autoriza, por si só, análise ou personalização do que você vier a compartilhar.</span></div>
+      </div>
+      <div class="actions"><button class="btn btn-primary" data-go="frame-4">Continuar</button></div>
+      <div class="text-actions"><button class="link-btn" data-info="privacy">Ver detalhes de privacidade</button><button class="link-btn muted" data-exit>Sair por agora</button><button class="link-btn muted" data-exit>Explorar sem personalização</button></div>
+    </section>
+
+    <section class="panel" id="frame-4" aria-labelledby="f4-title" hidden>
+      <p class="eyebrow">Próximo passo</p><h1 id="f4-title">Sua entrada está preparada.</h1>
+      <p>Você já viu como esta entrada funciona e quais controles permanecem com você. O próximo passo abre a escolha de como começar.</p>
+      <div class="stack">
+        <ul class="readiness"><li>Contexto da entrada apresentado</li><li>Acesso concluído ou já válido</li><li>Controles e alternativas apresentados</li><li>Nenhum relato é solicitado nesta etapa</li></ul>
+        <div class="handoff"><strong>Próximo: escolha de modalidade</strong><span>Handoff de boundary para PER-003. O conteúdo interno de PER-003 não faz parte deste protótipo.</span></div>
+      </div>
+      <div class="actions"><button class="btn btn-primary" data-handoff>Escolher como quero começar</button></div>
+      <div class="text-actions"><button class="link-btn" data-go="frame-3">Revisar privacidade e controles</button><button class="link-btn muted" data-exit>Sair por agora</button></div>
+    </section>
+
+    <section class="panel boundary" id="per003-boundary" aria-labelledby="boundary-title" hidden>
+      <p class="eyebrow">Fim do escopo PER-002</p><h1 id="boundary-title">Handoff para PER-003.</h1>
+      <p>Este ponto demonstra apenas o destino legítimo da transição <strong>TRN-002</strong>. As modalidades, estados e conteúdo interno de <strong>PER-003 — Escolha de modalidade</strong> não são materializados.</p>
+      <div class="stack"><div class="info"><strong>Boundary preservado</strong><span>Protótipo encerrado. Nenhum dado foi enviado, processado ou persistido.</span></div></div>
+      <div class="actions"><button class="btn btn-secondary" data-go="frame-4">Voltar ao handoff ready</button></div>
+    </section>
+  </main>
+
+  <dialog id="exit-dialog" aria-labelledby="exit-title">
+    <div class="dialog-body"><p class="eyebrow">Alternativas</p><h2 id="exit-title">Como você quer continuar?</h2><p>Você não precisa concluir agora.</p>
+      <div class="actions"><button class="btn btn-primary" data-boundary="explore">Explorar sem personalização</button><button class="btn btn-secondary" data-boundary="home">Voltar para a Home</button><button class="btn btn-secondary" data-boundary="pause">Pausar por agora</button></div>
+      <div class="text-actions"><button class="link-btn" data-close-dialog>Continuar na entrada protegida</button></div>
+    </div>
+  </dialog>
+
+  <dialog id="info-dialog" aria-labelledby="info-title"><div class="dialog-body"><p class="eyebrow">Informação</p><h2 id="info-title">Como esta entrada funciona</h2><p id="info-copy">Este protótipo apresenta contexto, um gate de acesso simulado, controles e o handoff legítimo. Ele não solicita relato pessoal e não autoriza processamento futuro.</p><div class="actions"><button class="btn btn-primary" data-close-info>Entendi o que foi apresentado</button></div><p class="privacy-note">A frase acima registra apenas uma ação de interface no protótipo; não constitui prova de compreensão humana.</p></div></dialog>
+
+  <dialog id="boundary-dialog" aria-labelledby="out-title"><div class="dialog-body"><p class="eyebrow">Fora do escopo PER-002</p><h2 id="out-title">Boundary de navegação.</h2><p id="out-copy">Esta alternativa é preservada como direito de saída, mas seu destino não é materializado neste protótipo.</p><div class="actions"><button class="btn btn-primary" data-close-boundary>Voltar ao protótipo</button></div></div></dialog>
+
+  <div class="sr-only" aria-live="polite" id="live"></div>
+  <script>
+    (()=>{
+      'use strict';
+      const views=[...document.querySelectorAll('main > section.panel')];
+      const live=document.getElementById('live');
+      const exitDialog=document.getElementById('exit-dialog');
+      const infoDialog=document.getElementById('info-dialog');
+      const boundaryDialog=document.getElementById('boundary-dialog');
+      const sessionPill=document.getElementById('session-pill');
+      const frame3Copy=document.getElementById('frame3-copy');
+      let current='frame-1';
+
+      function show(id,{session=false}={}){
+        views.forEach(v=>v.hidden=v.id!==id);current=id;
+        if(id==='frame-3'){
+          sessionPill.hidden=!session;
+          frame3Copy.textContent=session
+            ?'Seu acesso já está válido. Você continua nesta entrada para revisar contexto e controles antes de qualquer compartilhamento material.'
+            :'Antes de seguir, veja o que esta entrada significa — e o que ela ainda não autoriza.';
+        }
+        const target=document.getElementById(id);const focusable=target.querySelector('h1,h2,button,input');
+        if(focusable){focusable.setAttribute('tabindex','-1');focusable.focus({preventScroll:true});focusable.removeAttribute('tabindex')}
+        live.textContent='Estado simulado: '+id.replaceAll('-',' ');
+        window.scrollTo({top:0,behavior:'auto'});
+      }
+
+      document.addEventListener('click',e=>{
+        const go=e.target.closest('[data-go]');if(go){show(go.dataset.go);return}
+        if(e.target.closest('[data-auth]')){show('frame-3');return}
+        if(e.target.closest('[data-session]')){show('frame-3',{session:true});return}
+        if(e.target.closest('[data-failure]')){show('variant-b');return}
+        if(e.target.closest('[data-exit]')){exitDialog.showModal();return}
+        if(e.target.closest('[data-home]')){document.getElementById('out-copy').textContent='Voltar para a Home é uma alternativa legítima. A Home não é materializada neste protótipo de PER-002.';boundaryDialog.showModal();return}
+        const info=e.target.closest('[data-info]');if(info){
+          document.getElementById('info-title').textContent=info.dataset.info==='privacy'?'Privacidade e controles':'Como esta entrada funciona';
+          document.getElementById('info-copy').textContent=info.dataset.info==='privacy'
+            ?'Você decide quando compartilhar. Cada uso material futuro precisa de finalidade e explicação aplicáveis antes do processamento correspondente. Este protótipo não registra consentimento.'
+            :'Este protótipo apresenta contexto, um gate de acesso simulado, controles e o handoff legítimo. Ele não solicita relato pessoal e não autoriza processamento futuro.';
+          infoDialog.showModal();return
+        }
+        if(e.target.closest('[data-handoff]')){show('per003-boundary');return}
+        if(e.target.closest('[data-close-dialog]')){exitDialog.close();return}
+        if(e.target.closest('[data-close-info]')){infoDialog.close();return}
+        if(e.target.closest('[data-close-boundary]')){boundaryDialog.close();return}
+        const boundary=e.target.closest('[data-boundary]');if(boundary){
+          exitDialog.close();
+          const labels={explore:'Explorar sem personalização',home:'Voltar para a Home',pause:'Pausar por agora'};
+          document.getElementById('out-copy').textContent=labels[boundary.dataset.boundary]+' é uma alternativa legítima. O destino e qualquer persistência técnica ficam fora do escopo desta simulação.';
+          boundaryDialog.showModal();return
+        }
+        const tab=e.target.closest('[data-mode]');if(tab){document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-selected',String(b===tab)));live.textContent='Modo de acesso simulado: '+tab.textContent;return}
+      });
+
+      document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',e=>e.preventDefault()));
+      window.addEventListener('beforeunload',()=>{});
+      show(current);
+    })();
+  </script>
+</body>
+</html>
