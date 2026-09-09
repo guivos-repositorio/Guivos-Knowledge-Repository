@@ -18,7 +18,7 @@ Antes de usar qualquer documento isolado, consulte:
 A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.30.0
+GKR-STATE-001 3.31.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -38,8 +38,12 @@ FUNCTIONAL VALIDATION → PASS / GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0
 CURRENT LOW-FIDELITY DESIGN REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
 HIGH-FIDELITY DESIGN ELIGIBILITY → PASS / GKR-UX-PER002-HIFI-ELIGIBILITY-001 v1.0.0
 HIGH-FIDELITY DESIGN AUTHORIZATION → GRANTED / GKR-UX-PER002-HIFI-AUTH-001 v1.0.0
-HIGH-FIDELITY DESIGN EXECUTION → NOT_STARTED
-PRÓXIMO GATE → PER-002 HIGH-FIDELITY DESIGN EXECUTION / NO PROTOTYPE OR UXA-102 BY INFERENCE
+HIGH-FIDELITY DESIGN DELIVERY → EXECUTED / GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0
+HIGH-FIDELITY DESIGN VALIDATION → PASS / GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0
+CURRENT HIGH-FIDELITY DESIGN REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
+INTERACTIVE PROTOTYPE ELIGIBILITY → PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
+INTERACTIVE PROTOTYPE AUTHORIZATION → NOT_GRANTED
+PRÓXIMO GATE → EXPLICIT PER-002 INTERACTIVE PROTOTYPE AUTHORIZATION DECISION / NO UXA-102 OR ENGINEERING BY INFERENCE
 ```
 
 ## Como navegar
@@ -133,6 +137,9 @@ ORGANIZAÇÃO
 - [PER-002 — Validação Funcional da Materialização Low-Fidelity](docs/experience-architecture/per-002-low-fidelity-functional-validation.md)
 - [PER-002 — Elegibilidade Pós-Validação para Design High-Fidelity](docs/experience-architecture/per-002-high-fidelity-design-eligibility.md)
 - [PER-002 — Autorização Governada de Design High-Fidelity](docs/experience-architecture/per-002-high-fidelity-design-authorization.md)
+- [PER-002 — Entrega High-Fidelity de Design](docs/experience-architecture/per-002-high-fidelity-design-delivery.md)
+- [PER-002 — Validação Governada da Entrega High-Fidelity](docs/experience-architecture/per-002-high-fidelity-design-validation.md)
+- [PER-002 — Elegibilidade Pós-Validação para Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-eligibility.md)
 
 ### Research e Validação
 
@@ -201,7 +208,7 @@ As equipes não recebem cópias próprias de autoridades. Elas entram no mesmo c
 | Publicidade / Ads | Arquitetura de Produtos · Modelo Econômico · Go-to-Market |
 | Comercial | Estratégia de Negócio · Produtos · Economia · GTM |
 | Produto | Arquitetura de Produtos · Experience Architecture · Jornadas |
-| UX / Design | Experience Architecture · Jornadas · PER-002 Handoff · Design Authorization · Design Delivery · Functional Validation · High-Fidelity Eligibility · High-Fidelity Authorization · Estado Atual |
+| UX / Design | Experience Architecture · Jornadas · PER-002 Handoff · Design Authorization · Design Delivery · Functional Validation · High-Fidelity Eligibility · High-Fidelity Authorization · High-Fidelity Delivery · High-Fidelity Validation · Prototype Eligibility · Estado Atual |
 | Desenvolvimento | Produtos · Experience Architecture · Arquitetura Corporativa |
 | Dados / Intelligence | Intelligence · Arquitetura Corporativa · Research |
 | Research | Research · RP-001 · RP-002 · Privacidade |
@@ -223,6 +230,9 @@ DESIGN DELIVERY ≠ VISUAL MATURITY PROMOTION
 FUNCTIONAL VALIDATION PASS ≠ HIGH-FIDELITY AUTHORIZATION
 HIGH-FIDELITY ELIGIBILITY ≠ HIGH-FIDELITY AUTHORIZATION ≠ EXECUTION
 HIGH-FIDELITY AUTHORIZATION ≠ HIGH-FIDELITY EXECUTION ≠ PROTOTYPE
+HIGH-FIDELITY DELIVERY ≠ HIGH-FIDELITY VALIDATION
+HIGH-FIDELITY VALIDATION PASS ≠ PROTOTYPE AUTHORIZATION
+PROTOTYPE ELIGIBILITY ≠ PROTOTYPE AUTHORIZATION ≠ PROTOTYPE EXECUTION
 ```
 
 Para qualquer afirmação de estado, prevalece o [Registro do Estado Atual](docs/project/current-state-register.md).
