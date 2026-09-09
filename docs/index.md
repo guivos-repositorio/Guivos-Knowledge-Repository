@@ -17,7 +17,7 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 A leitura de estado continua subordinada ao [Registro do Estado Atual](project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.31.0
+GKR-STATE-001 3.32.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -41,8 +41,9 @@ HIGH-FIDELITY DESIGN DELIVERY → EXECUTED / GKR-UX-PER002-HIFI-DELIVERY-001 v0.
 HIGH-FIDELITY DESIGN VALIDATION → PASS / GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0
 CURRENT HIGH-FIDELITY DESIGN REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
 INTERACTIVE PROTOTYPE ELIGIBILITY → PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
-INTERACTIVE PROTOTYPE AUTHORIZATION → NOT_GRANTED
-PRÓXIMO GATE → EXPLICIT PER-002 INTERACTIVE PROTOTYPE AUTHORIZATION DECISION / NO UXA-102 OR ENGINEERING BY INFERENCE
+INTERACTIVE PROTOTYPE AUTHORIZATION → GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0
+INTERACTIVE PROTOTYPE EXECUTION → AUTHORIZED / NOT_STARTED
+PRÓXIMO GATE → PER-002 INTERACTIVE PROTOTYPE EXECUTION / NO SOURCE LOCK, UXA-102 OR ENGINEERING BY INFERENCE
 ```
 
 ## Como esta base é organizada
@@ -139,6 +140,7 @@ ORGANIZAÇÃO
 - [PER-002 — Entrega High-Fidelity de Design](experience-architecture/per-002-high-fidelity-design-delivery.md)
 - [PER-002 — Validação Governada da Entrega High-Fidelity](experience-architecture/per-002-high-fidelity-design-validation.md)
 - [PER-002 — Elegibilidade Pós-Validação para Protótipo Interativo](experience-architecture/per-002-interactive-prototype-eligibility.md)
+- [PER-002 — Autorização Governada de Protótipo Interativo](experience-architecture/per-002-interactive-prototype-authorization.md)
 
 A navegação do repositório não deve ser confundida com a arquitetura de informação de produto, Journey, experiência autenticada ou UI.
 
@@ -229,7 +231,7 @@ As rotas abaixo são **atalhos de consumo**. Elas não criam cópias, autoridade
 | Publicidade / Ads | [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
 | Comercial | [Estratégia de Negócio](business-architecture/index.md) · [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
 | Produto | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) |
-| UX / Design | [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) · [PER-002 Handoff](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md) · [Design Authorization](experience-architecture/per-002-design-authorization.md) · [Design Delivery](experience-architecture/per-002-low-fidelity-design-delivery.md) · [Functional Validation](experience-architecture/per-002-low-fidelity-functional-validation.md) · [High-Fidelity Eligibility](experience-architecture/per-002-high-fidelity-design-eligibility.md) · [High-Fidelity Authorization](experience-architecture/per-002-high-fidelity-design-authorization.md) · [High-Fidelity Delivery](experience-architecture/per-002-high-fidelity-design-delivery.md) · [High-Fidelity Validation](experience-architecture/per-002-high-fidelity-design-validation.md) · [Prototype Eligibility](experience-architecture/per-002-interactive-prototype-eligibility.md) · [Estado Atual](project/current-state-register.md) |
+| UX / Design | [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) · [PER-002 Handoff](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md) · [Design Authorization](experience-architecture/per-002-design-authorization.md) · [Design Delivery](experience-architecture/per-002-low-fidelity-design-delivery.md) · [Functional Validation](experience-architecture/per-002-low-fidelity-functional-validation.md) · [High-Fidelity Eligibility](experience-architecture/per-002-high-fidelity-design-eligibility.md) · [High-Fidelity Authorization](experience-architecture/per-002-high-fidelity-design-authorization.md) · [High-Fidelity Delivery](experience-architecture/per-002-high-fidelity-design-delivery.md) · [High-Fidelity Validation](experience-architecture/per-002-high-fidelity-design-validation.md) · [Prototype Eligibility](experience-architecture/per-002-interactive-prototype-eligibility.md) · [Prototype Authorization](experience-architecture/per-002-interactive-prototype-authorization.md) · [Estado Atual](project/current-state-register.md) |
 | Desenvolvimento | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Arquitetura Corporativa](enterprise-architecture/index.md) |
 | Dados / Intelligence | [Intelligence](intelligence-architecture/index.md) · [Arquitetura Corporativa](enterprise-architecture/index.md) · [Research](research/index.md) |
 | Research | [Research](research/index.md) · [RP-001](research/RP-001/index.md) · [RP-002](research/RP-002/index.md) · [Privacidade](governance-framework/operational-privacy-and-legal-truth-index.md) |
@@ -282,6 +284,10 @@ HIGH-FIDELITY VALIDATION PASS
 PROTOTYPE ELIGIBILITY
 ≠ PROTOTYPE AUTHORIZATION
 ≠ PROTOTYPE EXECUTION
+
+PROTOTYPE AUTHORIZATION
+≠ PROTOTYPE EXECUTION
+≠ PROTOTYPE VALIDATION
 
 AUDITORIA DOCUMENTAL
 ≠ EVIDÊNCIA OPERACIONAL
