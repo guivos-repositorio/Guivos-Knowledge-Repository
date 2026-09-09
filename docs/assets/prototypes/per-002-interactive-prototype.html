@@ -46,7 +46,7 @@
     .link-btn.muted{color:var(--muted)}
     .mode-tabs{display:grid;grid-template-columns:1fr 1fr;padding:4px;background:var(--canvas);border:1px solid var(--border);border-radius:16px;gap:4px}
     .mode-tabs button{border:0;border-radius:12px;background:transparent;color:var(--muted);font-weight:700;cursor:pointer}
-    .mode-tabs button[aria-selected="true"]{background:var(--surface);color:var(--text);box-shadow:0 2px 10px rgba(21,22,26,.06)}
+    .mode-tabs button[aria-pressed="true"]{background:var(--surface);color:var(--text);box-shadow:0 2px 10px rgba(21,22,26,.06)}
     label{font-size:14px;line-height:20px;font-weight:700;display:grid;gap:8px}
     input{height:52px;border:1px solid var(--border);border-radius:var(--radius-control);padding:0 14px;background:var(--surface);color:var(--text)}
     input::placeholder{color:#8B93A1}
@@ -101,7 +101,7 @@
       <p class="eyebrow">Acesso</p><h1 id="f2-title">Entre para continuar.</h1>
       <p>O acesso vincula esta etapa a você. Isso não autoriza o uso do que você vier a compartilhar.</p>
       <div class="stack">
-        <div class="mode-tabs" role="tablist" aria-label="Modo de acesso"><button role="tab" aria-selected="true" data-mode="entrar">Entrar</button><button role="tab" aria-selected="false" data-mode="criar">Criar conta</button></div>
+        <div class="mode-tabs" role="group" aria-label="Modo de acesso"><button type="button" aria-pressed="true" data-mode="entrar">Entrar</button><button type="button" aria-pressed="false" data-mode="criar">Criar conta</button></div>
         <label>Identificação<input autocomplete="off" spellcheck="false" placeholder="Identificação simulada" aria-describedby="synthetic-note"></label>
         <label>Credencial<input type="password" autocomplete="off" placeholder="Credencial simulada" aria-describedby="synthetic-note"></label>
         <p class="privacy-note" id="synthetic-note">Campos funcionais simulados. Nenhuma credencial é enviada, validada ou armazenada. O acesso não inicia análise da sua jornada.</p>
@@ -175,12 +175,15 @@
       const sessionPill=document.getElementById('session-pill');
       const frame3Copy=document.getElementById('frame3-copy');
       let current='frame-1';
+      let simulatedSessionActive=false;
 
-      function show(id,{session=false}={}){
+      function show(id,{session}={}){
         views.forEach(v=>v.hidden=v.id!==id);current=id;
         if(id==='frame-3'){
-          sessionPill.hidden=!session;
-          frame3Copy.textContent=session
+          const sessionState=session ?? simulatedSessionActive;
+          simulatedSessionActive=sessionState;
+          sessionPill.hidden=!sessionState;
+          frame3Copy.textContent=sessionState
             ?'Seu acesso já está válido. Você continua nesta entrada para revisar contexto e controles antes de qualquer compartilhamento material.'
             :'Antes de seguir, veja o que esta entrada significa — e o que ela ainda não autoriza.';
         }
@@ -192,8 +195,8 @@
 
       document.addEventListener('click',e=>{
         const go=e.target.closest('[data-go]');if(go){show(go.dataset.go);return}
-        if(e.target.closest('[data-auth]')){show('frame-3');return}
-        if(e.target.closest('[data-session]')){show('frame-3',{session:true});return}
+        if(e.target.closest('[data-auth]')){simulatedSessionActive=false;show('frame-3',{session:false});return}
+        if(e.target.closest('[data-session]')){simulatedSessionActive=true;show('frame-3',{session:true});return}
         if(e.target.closest('[data-failure]')){show('variant-b');return}
         if(e.target.closest('[data-exit]')){exitDialog.showModal();return}
         if(e.target.closest('[data-home]')){document.getElementById('out-copy').textContent='Voltar para a Home é uma alternativa legítima. A Home não é materializada neste protótipo de PER-002.';boundaryDialog.showModal();return}
@@ -214,7 +217,7 @@
           document.getElementById('out-copy').textContent=labels[boundary.dataset.boundary]+' é uma alternativa legítima. O destino e qualquer persistência técnica ficam fora do escopo desta simulação.';
           boundaryDialog.showModal();return
         }
-        const tab=e.target.closest('[data-mode]');if(tab){document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-selected',String(b===tab)));live.textContent='Modo de acesso simulado: '+tab.textContent;return}
+        const mode=e.target.closest('[data-mode]');if(mode){document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b===mode)));live.textContent='Modo de acesso simulado: '+mode.textContent;return}
       });
 
       document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',e=>e.preventDefault()));
