@@ -2,11 +2,11 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.22.0
+version: 3.23.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-07
+last_updated: 2026-09-08
 normative: true
-maturity: current_truth_under_full_corpus_audit
+maturity: current_truth_post_full_corpus_audit_pre_final_baseline
 related:
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
@@ -54,7 +54,7 @@ GKR VIGENTE
 → sem depender de versões substituídas para ser compreendido
 ```
 
-Durante a auditoria integral do corpus, este registro também explicita lacunas e conflitos ainda abertos. Um item em auditoria não é promovido por inferência.
+A auditoria integral do corpus foi concluída com resultado `PASS`. Este registro continua explicitando lacunas, limites e gates que permanecem abertos por dependerem de autoridade própria, baseline final, implementação, operação ou evidência real. Nenhum item é promovido por inferência.
 
 ## 2. Estado executivo
 
@@ -63,7 +63,9 @@ ERA
 → GE-2 — KNOWLEDGE
 
 ESTADO GLOBAL DO GKR
-→ AUDITORIA INTEGRAL EM CURSO
+→ AUDITORIA INTEGRAL COMPLETED / PASS
+→ 23 OF 23 GOVERNED CHECKPOINTS COMPLETED
+→ FINAL BASELINE NOT CAPTURED
 
 BLOCO 2 — G / H / I
 → G COMPLETED / UPDATE_APPLIED
@@ -165,15 +167,20 @@ O — MENU FINAL / ROTAS MULTIEQUIPE
 → OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
 P — AUDITORIA FINAL DE COMPLETUDE
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR FINAL COMPLETENESS AUDIT ONLY
-→ IN_PROGRESS / READ-ONLY REPO-WIDE COMPLETENESS VERIFICATION
+→ FINAL RESULT = PASS
+→ COMPLETED / DOCUMENTARY / READ-ONLY
+→ PHYSICAL COUNTS RECOMPUTED = 0 SVGs / 0 ASSOCIATIONS
+→ FUNCTIONAL MATURITY RECOMPUTED = 57/57 SURFACE-LEVEL OBJECTS CLASSIFIED
+→ TRANSITION MATURITY RECOMPUTED = 66/66 TRANSITIONS CLASSIFIED
+→ AGGREGATE VISUAL WIREFRAME MATURITY = NOT_CERTIFIED / NOT INFERRED
+→ OPEN P-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
 
 Q
-→ BLOCKED
+→ BLOCKED / NOT RELEASED
 
 NEXT
-→ EXECUTE P — FINAL COMPLETENESS AUDIT
+→ Q RELEASE ELIGIBILITY ADJUDICATION
 → DOCUMENTARY / READ-ONLY
 → DO NOT RELEASE Q BY INFERENCE
 
@@ -187,16 +194,17 @@ PMF
 → NOT VALIDATED
 
 BASELINE FINAL PÓS-AUDITORIA
-→ NOT AUTHORIZED
+→ NOT AUTHORIZED / NOT CAPTURED
 
 PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
-→ BLOCKED UNTIL AUDIT CLOSES
+→ BLOCKED PENDING Q / FINAL BASELINE / SEPARATE GOVERNED AUTHORIZATION
 
 MATERIALIZAÇÃO VISUAL DAS HOMES
-→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
+→ NOT AUTHORIZED BY P CLOSURE
+→ REQUIRES SEPARATE GOVERNED ACT
 ```
 
-O encerramento de `F-016` conclui a desmaterialização documental auditada sem promover maturidade funcional, sem criar Design e sem liberar implementação. A história permanece no Git; o corpus vigente preserva autoridades, validadores e evidências necessárias.
+O fechamento de `F-016` conclui a desmaterialização documental auditada sem promover maturidade funcional, sem criar Design e sem liberar implementação. A história permanece no Git; o corpus vigente preserva autoridades, validadores e evidências necessárias.
 
 ## 3. Fundação e identidade da Guivos
 
@@ -435,7 +443,7 @@ MINHA EVOLUÇÃO
 ≠ RODA DA VIDA OBRIGATÓRIA
 ```
 
-A primeira tela autenticada após a Home **não será escrita durante a auditoria**. O fluxo da Pessoa será reavaliado somente depois que a Home principal, registries, artefatos substituídos e MENU estiverem reconciliados.
+A primeira tela autenticada após a Home permanece **bloqueada**. O fechamento de P não inicia Q, não captura a baseline final e não autoriza automaticamente UXA-102/V5, Design ou Product Engineering.
 
 ## 8. Organizações e Coletivos — experiência autenticada
 
@@ -515,7 +523,7 @@ ORGANIZAÇÃO ≠ COLETIVO
 
 ### 8.4 Próxima maturidade O/C
 
-O mapa lógico de superfícies e estados **ainda não é canônico**. Uma proposta pré-auditoria permanece congelada e sem autoridade até ser reavaliada contra o corpus limpo.
+O mapa lógico de superfícies e estados **ainda não é canônico**. A proposta pré-auditoria permanece congelada e sem autoridade; o fechamento documental da auditoria não a promove por inferência.
 
 A documentação O/C deve evoluir somente no plano funcional:
 
@@ -534,7 +542,7 @@ DESIGN
 → DEFINE COMO A EXPERIÊNCIA É VISUALMENTE MATERIALIZADA
 ```
 
-Wireframe, mockup, protótipo, layout, composição e componentes visuais **não são entregáveis normativos do GKR**. Sua definição pertence exclusivamente a Design. Essa regra não constitui autorização para iniciar Design neste checkpoint.
+Wireframe, mockup, protótipo, layout, composição e componentes visuais **não são entregáveis normativos do GKR**. Sua definição pertence exclusivamente a Design. O fechamento de P não constitui autorização para iniciar Design.
 
 ## 9. Artefatos visuais e registries
 
@@ -566,7 +574,39 @@ F-006
 → RESOLVED
 ```
 
-`F-007` permanece resolvido. A contagem de arquivos visuais deixa de ser proxy de maturidade, e `F-016` abre a retirada/reformulação repo-wide de materializações documentais que competem com a autoridade de Design.
+`F-007` permanece resolvido. A contagem de arquivos visuais deixa de ser proxy de maturidade. `F-016` encerrou a retirada/reformulação repo-wide de materializações documentais que competiam com a autoridade de Design.
+
+Recomputação final de P:
+
+```text
+PHYSICAL SVGs
+→ 0
+
+CURRENT PHYSICAL ASSOCIATIONS
+→ 0
+
+SURFACE-LEVEL OBJECTS
+→ 57 / 57 CLASSIFIED
+→ 41 VALIDADO
+→ 7 CONTRATADO
+→ 3 PARCIAL
+→ 3 PROGRAMADO
+→ 1 INDETERMINADO
+→ 1 MATERIALIZADO
+→ 1 EXAMINADO
+
+TRANSITIONS
+→ 66 / 66 CLASSIFIED
+→ 24 INTEGRALMENTE VALIDADAS
+→ 20 LOCALMENTE VALIDADAS
+→ 15 PARCIAIS
+→ 7 CONTRATADAS
+
+AGGREGATE VISUAL WIREFRAME MATURITY
+→ NOT_CERTIFIED
+→ NOT INFERRED FROM DOCUMENTARY MATURITY
+→ DESIGN AUTHORITY PRESERVED
+```
 
 ## 10. Homes públicas — estado de auditoria
 
@@ -609,10 +649,10 @@ HOME PRINCIPAL / PESSOA
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
 WIREFRAME / FIGMA / UI / PROTÓTIPO / IMPLEMENTAÇÃO
-→ NOT AUTHORIZED BY THIS CLOSURE
+→ NOT AUTHORIZED BY P CLOSURE
 
 PRIMEIRA TELA AUTENTICADA DA PESSOA
-→ BLOCKED UNTIL FULL AUDIT CLOSES
+→ BLOCKED PENDING Q / FINAL BASELINE / SEPARATE GOVERNED AUTHORIZATION
 ```
 
 O fechamento de D não promove disponibilidade operacional, PMF, lançamento ou qualquer lote posterior da auditoria.
@@ -669,7 +709,8 @@ LOTE E
 → COMPLETED
 
 WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
-→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
+→ NOT AUTHORIZED BY P CLOSURE
+→ REQUIRES SEPARATE GOVERNED ACT
 
 EXPERIÊNCIA AUTENTICADA O/C
 → NÃO MATERIALIZADA POR ESTE LOTE
@@ -733,7 +774,8 @@ MALL / TRAVEL / MEDIA / ADS / BUSINESS / INTELLIGENCE
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
 WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
-→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
+→ NOT AUTHORIZED BY P CLOSURE
+→ REQUIRES SEPARATE GOVERNED ACT
 ```
 
 ## 11. Guivos Business
@@ -898,7 +940,8 @@ HOME SOURCE LOCK
 → DOES NOT AUTHORIZE DESIGN BY ITSELF
 
 DESIGN / IMPLEMENTATION
-→ NOT AUTHORIZED DURING FULL-CORPUS AUDIT
+→ NOT AUTHORIZED BY P CLOSURE
+→ REQUIRES SEPARATE GOVERNED ACT
 ```
 
 ## 13. Grafo, dados e tecnologia
@@ -1151,7 +1194,7 @@ A1 Research Mailbox possui PASS documental/operacional nos limites explicitament
 
 Identity Vault e demais componentes que exigem configuração física continuam sem prova operacional quando não executados.
 
-A auditoria do corpus não reabre a decisão de adiar a implantação.
+O fechamento da auditoria integral do corpus não reabre a decisão de adiar a implantação.
 
 ## 19. Privacidade e direitos
 
@@ -1238,7 +1281,7 @@ P0–P9 DOCUMENTALMENTE CONSOLIDADO
 ≠ OPERAÇÃO JURÍDICA/FISCAL CONCLUÍDA
 ```
 
-A auditoria pode remover documentos históricos do programa depois de absorver o conhecimento vigente, sem reabrir automaticamente as decisões de domínio.
+O fechamento da auditoria preserva o conhecimento vigente e o histórico Git; eventual cleanup futuro permanece sujeito à mesma regra de absorção sem perda e não reabre automaticamente decisões de domínio.
 
 ## 22. Fundação Guivos e institucional
 
@@ -1308,7 +1351,7 @@ MÉTODO DEFINIDO
 
 ## 25. Dívidas e gates reais ainda abertos
 
-Além da auditoria integral do corpus, permanecem abertos quando dependentes de realidade ou autoridade própria:
+Após o fechamento da auditoria integral, permanecem abertos quando dependentes de realidade, baseline final ou autoridade própria:
 
 - validação B2C real;
 - PMF e disposição a pagar;
@@ -1329,13 +1372,14 @@ Além da auditoria integral do corpus, permanecem abertos quando dependentes de 
 - evidência de atividade efetiva para AIaaS se incluído;
 - implantação real do perfil pessoal do fundador;
 - publicação real de conteúdo do fundador;
-- reativação futura do Design das Homes somente após os gates da auditoria e novo ato governado;
+- Q — elegibilidade, liberação e captura da baseline final;
+- reativação futura do Design das Homes somente por novo ato governado próprio;
 - UXA-102/V5;
 - Product Engineering.
 
 ## 26. Auditoria integral do corpus — estado corrente
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.27.0` está ativo como instrumento temporário de execução.
+`GKR-FULL-CORPUS-AUDIT-001 v1.28.0` registra a auditoria integral concluída com resultado `PASS`.
 
 ```text
 A / B / C / D / E / F / G
@@ -1400,20 +1444,29 @@ O
 → OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
 P
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR FINAL COMPLETENESS AUDIT ONLY
-→ IN_PROGRESS / READ-ONLY REPO-WIDE COMPLETENESS VERIFICATION
+→ FINAL RESULT = PASS
+→ COMPLETED / DOCUMENTARY / READ-ONLY
+→ PHYSICAL COUNTS = 0 SVGs / 0 ASSOCIATIONS
+→ 57 / 57 SURFACE-LEVEL OBJECTS CLASSIFIED
+→ 66 / 66 TRANSITIONS CLASSIFIED
+→ AGGREGATE VISUAL WIREFRAME MATURITY = NOT_CERTIFIED / NOT INFERRED
+→ OPEN P-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
+
+AUDITORIA INTEGRAL
+→ COMPLETED / PASS
+→ 23 OF 23 GOVERNED CHECKPOINTS COMPLETED
 
 Q
-→ BLOCKED
+→ BLOCKED / NOT RELEASED
 
 NEXT
-→ EXECUTE P — FINAL COMPLETENESS AUDIT
+→ Q RELEASE ELIGIBILITY ADJUDICATION
 → DOCUMENTARY / READ-ONLY
 → DO NOT RELEASE Q BY INFERENCE
 ```
 
-A liberação de P é estritamente documental e autoriza somente a auditoria final de completude do corpus. Ela não encerra a auditoria, não autoriza baseline final, não libera Q, não inicia Design, Product Engineering, operação, PMF, implementação ou produção.
+O fechamento de P encerra a auditoria integral no limite documental. Não autoriza baseline final, não libera Q, não inicia Design, Product Engineering, operação, PMF, implementação ou produção.
 
 ## 27. Regra de navegação final
 
@@ -1493,60 +1546,30 @@ DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 
 ## 29. Próximo ato governado
 
-A elegibilidade de P foi adjudicada como `PASS` sobre o `HEAD 16d4c2b8a8a2bb3e7805a60a646f2f07a8b2fdcb`. P está liberado exclusivamente para a auditoria final de completude, em modo documental e read-only.
+P foi concluído com resultado `PASS` após a auditoria final de completude read-only sobre o `HEAD efab08ec436404a5389bc27e0051c6b48d9a4b45`. A recomputação final separou contagem física, maturidade funcional/documental e autoridade visual sem reabrir `F-007`.
 
 ```text
-N — GTM / PRESENÇA PÚBLICA
-→ DOCUMENTARY AUDIT COMPLETED
-→ OPEN N-SPECIFIC MATERIAL FINDINGS = 0
-→ F-022 NOT OPENED
-→ GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
-
-O — MENU FINAL / ROTAS MULTIEQUIPE
-→ DOCUMENTARY AUDIT COMPLETED
-→ MENU REBUILD APPLIED / VALIDATED
-→ F-002 = RESOLVED
-→ OPEN O-SPECIFIC MATERIAL FINDINGS = 0
-
-REBUILD COMMIT
-→ 0be6bc892f5c2df396f445e7b4df6f77540b965a
-
-INITIAL SEMANTIC #860
-→ FAILURE
-→ README / docs/index MISSING REQUIRED GLOBAL STATE MARKERS
-
-INITIAL MECHANICAL #1118
-→ SUCCESS
-
-SEMANTIC REMEDIATION COMMIT
-→ 2d80c24c31cbe3e9486165369c80fae0775b8fe1
-→ README.md + docs/index.md ONLY
-
-FINAL SEMANTIC #861
-→ SUCCESS
-→ run 34168256681
-
-FINAL MECHANICAL #1119
-→ SUCCESS
-→ run 34168256748
-
-REPOSITORY NAVIGATION
-≠ PRODUCT INFORMATION ARCHITECTURE
-≠ EXPERIENCE NAVIGATION
-≠ UI NAVIGATION
-
 P — AUDITORIA FINAL DE COMPLETUDE
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR FINAL COMPLETENESS AUDIT ONLY
-→ IN_PROGRESS / READ-ONLY
+→ FINAL RESULT = PASS
+→ COMPLETED / DOCUMENTARY / READ-ONLY
+→ PHYSICAL COUNTS RECOMPUTED = 0 SVGs / 0 ASSOCIATIONS
+→ SURFACE-LEVEL MATURITY RECOMPUTED = 57 / 57 CLASSIFIED
+→ TRANSITION MATURITY RECOMPUTED = 66 / 66 CLASSIFIED
+→ AGGREGATE VISUAL WIREFRAME MATURITY = NOT_CERTIFIED / NOT INFERRED
+→ OPEN P-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
+
+AUDITORIA INTEGRAL
+→ COMPLETED / PASS
+→ 23 OF 23 GOVERNED CHECKPOINTS COMPLETED
 
 Q
-→ BLOCKED
+→ BLOCKED / NOT RELEASED
 
 NEXT
-→ EXECUTE P — FINAL COMPLETENESS AUDIT
+→ Q RELEASE ELIGIBILITY ADJUDICATION
 → DOCUMENTARY / READ-ONLY
-→ Q IS NOT RELEASED BY P RELEASE
+→ Q IS NOT RELEASED BY P CLOSURE
 
 RESEARCH OPERATIONAL STATES
 → OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
@@ -1560,6 +1583,7 @@ TECHNOLOGY / PRODUCT ENGINEERING
 → PRODUCT ENGINEERING PAUSED BEFORE W0-01
 
 AINDA BLOQUEADOS
+→ Q / FINAL BASELINE
 → UXA-102
 → PRIMEIRA TELA PÓS-HOME DA PESSOA
 → WIREFRAME / FIGMA / UI / PROTÓTIPO
@@ -1568,8 +1592,7 @@ AINDA BLOQUEADOS
 → PRODUCT ENGINEERING
 → PMF
 → IMPLEMENTAÇÃO / PRODUÇÃO
-→ BASELINE FINAL
 → MERGE DA PR #363
 ```
 
-A liberação de P não encerra a auditoria, não libera Q e não constitui autorização operacional, visual, de implementação, produção, baseline final ou merge.
+O fechamento de P encerra a auditoria integral, mas não libera Q e não constitui autorização operacional, visual, de implementação, produção, baseline final ou merge.

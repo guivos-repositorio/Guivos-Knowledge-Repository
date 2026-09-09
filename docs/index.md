@@ -8,7 +8,7 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 
 - [Estado Atual do Repositório](project/current-state-register.md) — o que pode ser afirmado hoje;
 - [Roadmap](roadmap.md) — sequência governada de evolução;
-- [Auditoria Integral do Corpus](project/gkr-full-corpus-audit.md) — estado e método da auditoria em curso;
+- [Auditoria Integral do Corpus](project/gkr-full-corpus-audit.md) — registro da auditoria integral concluída e dos gates finais;
 - [Guia Oficial da Guivos](public/index.md) — entrada para o Public Canon;
 - [Glossário](glossary.md) — vocabulário transversal.
 
@@ -17,13 +17,15 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 A leitura de estado continua subordinada ao [Registro do Estado Atual](project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.22.0
+GKR-STATE-001 3.23.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
 LOTE O → DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED
-LOTE P → RELEASE ELIGIBILITY = PASS / RELEASED FOR FINAL COMPLETENESS AUDIT ONLY / IN_PROGRESS
-PRÓXIMO GATE → EXECUTE P FINAL COMPLETENESS AUDIT / READ-ONLY
+LOTE P → FINAL COMPLETENESS AUDIT = PASS / COMPLETED
+AUDITORIA INTEGRAL → COMPLETED / PASS / 23 OF 23
+Q → BLOCKED / NOT RELEASED
+PRÓXIMO GATE → Q RELEASE ELIGIBILITY ADJUDICATION / READ-ONLY
 ```
 
 ## Como esta base é organizada

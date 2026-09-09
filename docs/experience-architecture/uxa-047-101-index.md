@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.22.0
+version: 3.23.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-07
+last_updated: 2026-09-08
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -15,13 +15,13 @@ normative: false
 
 # Índice Vigente das Frentes UXA-047 a UXA-101
 
-Este índice mantém a descoberta das frentes funcionais numeradas que permanecem fisicamente no corpus durante a auditoria integral.
+Este índice mantém a descoberta das frentes funcionais numeradas que permanecem fisicamente no corpus após o fechamento documental da auditoria integral.
 
 Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.22.0
+→ 3.23.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -92,19 +92,29 @@ O — MENU FINAL / ROTAS MULTIEQUIPE
 → OPEN O-SPECIFIC MATERIAL FINDINGS = 0
 
 P — AUDITORIA FINAL DE COMPLETUDE
-→ RELEASE ELIGIBILITY = PASS
-→ RELEASED FOR FINAL COMPLETENESS AUDIT ONLY
-→ IN_PROGRESS / READ-ONLY REPO-WIDE VERIFICATION
+→ FINAL RESULT = PASS
+→ COMPLETED / DOCUMENTARY / READ-ONLY
+→ PHYSICAL COUNTS RECOMPUTED = 0 SVGs / 0 ASSOCIATIONS
+→ FUNCTIONAL MATURITY RECOMPUTED = 57/57 SURFACE-LEVEL OBJECTS + 66/66 TRANSITIONS CLASSIFIED
+→ OPEN P-SPECIFIC MATERIAL FINDINGS = 0
+→ F-022 NOT OPENED
+
+AUDITORIA INTEGRAL
+→ COMPLETED / PASS
+→ 23 OF 23 GOVERNED CHECKPOINTS COMPLETED
+
+Q
+→ BLOCKED / NOT RELEASED
 
 PRÓXIMO MOVIMENTO GOVERNADO
-→ EXECUTE P — FINAL COMPLETENESS AUDIT
+→ Q RELEASE ELIGIBILITY ADJUDICATION
 → DOCUMENTARY / READ-ONLY
 → NÃO LIBERAR Q POR INFERÊNCIA
 → PRESERVAR DOCUMENTAÇÃO / IMPLEMENTAÇÃO / OPERAÇÃO COMO ESTADOS DISTINTOS
 → NÃO RETOMAR PRODUCT ENGINEERING
 ```
 
-A presença de uma UXA neste índice significa que o artefato existe e integra a família numerada. Ela **não** prova que todo artefato ou materialização por ela referenciado continuará no corpus após a auditoria.
+A presença de uma UXA neste índice significa que o artefato existe e integra a família numerada. Ela **não** prova que todo artefato ou materialização por ela referenciado possua autoridade visual ou implementação corrente.
 
 ```text
 INDEXADO
@@ -115,7 +125,7 @@ ARTEFATO FÍSICO
 ≠ IMPLEMENTAÇÃO
 ```
 
-A auditoria integral decidirá quais artefatos antigos devem ser absorvidos e removidos. Enquanto isso, nenhuma nova contagem agregada de maturidade visual é inferida.
+A auditoria integral encerrou a verificação do corpus sem converter maturidade documental em maturidade visual. Nenhuma nova contagem agregada de wireframes vigentes/validados é inferida; a autoridade visual permanece em Design.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -210,7 +220,7 @@ O Journey também possui frentes não numeradas que não alteram o marco M7.88 n
 - D5-C4A — contrato de handoff com Hoje recorrente;
 - D5-C4B — validação documental integrada de `TRN-008..013`.
 
-Essas frentes permanecem sujeitas à auditoria do corpus quanto à necessidade de manter todos os artefatos intermediários separadamente.
+Essas frentes permanecem submetidas às autoridades vigentes e aos guardrails preservados após o fechamento da auditoria.
 
 ## Organizações e Coletivos — avanço posterior
 
@@ -237,11 +247,11 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.22.0** |
+| Registro do Estado Atual | **3.23.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
-| Auditoria integral | **IN_PROGRESS** |
+| Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
 | Lotes concluídos | **A / B / C / D / E / F / G** |
 | Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey remains draft** |
 | Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
@@ -255,16 +265,17 @@ Ainda não são canônicos:
 | Lote M — Jurídico / Privacidade / Institucional | **DOCUMENTARY AUDIT COMPLETED / OPEN M-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Lote N — GTM / presença pública | **DOCUMENTARY AUDIT COMPLETED / OPEN N-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Lote O — MENU final / rotas multiequipe | **DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED / OPEN O-SPECIFIC MATERIAL FINDINGS = 0** |
-| Lote P — Auditoria final | **RELEASED / FINAL COMPLETENESS AUDIT ONLY / IN_PROGRESS** |
-| Próximo movimento governado | **EXECUTE P — FINAL COMPLETENESS AUDIT / DOCUMENTARY / READ-ONLY** |
+| Lote P — Auditoria final | **COMPLETED / PASS / OPEN P-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
+| Próximo movimento governado | **Q RELEASE ELIGIBILITY ADJUDICATION — DOCUMENTARY / READ-ONLY** |
+| Q | **BLOCKED / NOT RELEASED** |
 | RP-002 Operational Readiness | **HOLD** |
 | Participant 001 | **HOLD** |
 | Dry Run real | **NOT RELEASED** |
 | Product Engineering | **PAUSED BEFORE W0-01** |
 | PMF | **NOT VALIDATED** |
-| Maturidade visual agregada | **NOT_CERTIFIED** |
+| Maturidade visual agregada | **NOT_CERTIFIED / NÃO INFERIDA A PARTIR DE MATURIDADE DOCUMENTAL** |
 | Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 
-A auditoria integral pode consolidar ou remover do corpus atual documentos desta família quando o conhecimento vigente tiver sido absorvido e as referências forem reconciliadas. Isso não muda, por si só, os estados funcionais sustentados por autoridades textuais vigentes.
+O fechamento da auditoria integral não promove, por si só, maturidade funcional, Design, implementação, operação, PMF, baseline final ou Q. Os estados funcionais permanecem sustentados por suas autoridades textuais vigentes.
