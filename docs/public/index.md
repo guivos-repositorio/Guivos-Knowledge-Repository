@@ -2,9 +2,9 @@
 id: GPD-000
 title: Documentação Pública da Guivos
 status: active
-version: 4.2.0
+version: 4.3.0
 owner: Guivos
-last_updated: 2026-08-22
+last_updated: 2026-09-09
 related:
   - GOG-001
   - GKR-STATE-001
@@ -22,11 +22,11 @@ Este domínio contém a tradução institucional pública das autoridades vigent
 
 ## Public Canon vigente
 
-- [GOG-001 — Guia Oficial da Guivos](guia-oficial-da-guivos.md) — **versão 5.2.0**.
+- [GOG-001 — Guia Oficial da Guivos](guia-oficial-da-guivos.md) — **versão 5.3.0**.
 
 `GOG-001` é a única superfície deste domínio classificada como `public-canon`.
 
-## O que a edição 5.2.0 consolida
+## O que o Public Canon vigente consolida
 
 - Pessoa, Coletivo e Organização como três participantes estruturais;
 - sete Produtos Especializados: Journey, Mall, Travel, Business, Media, Intelligence e Ads;
@@ -105,4 +105,4 @@ Lucas 2:52 integra deliberadamente a bio pública pessoal do fundador por autori
 
 O marco funcional documental permanece **M7.88 / UXA-101**. UXA-102/V5 não foi iniciada e Engenharia de Produto permanece pausada antes de W0-01.
 
-A publicação do Guia 5.2.0 não afirma que toda arquitetura documentada esteja implementada ou em produção.
+A publicação do Guia Oficial vigente não afirma que toda arquitetura documentada esteja implementada ou em produção.
