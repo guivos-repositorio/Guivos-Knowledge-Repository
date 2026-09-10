@@ -58,6 +58,8 @@ markdown_extensions:
 # O menu principal é uma superfície de descoberta, não um inventário do corpus.
 # Autoridades e evidências de detalhe permanecem preservadas e acessíveis por
 # hubs, links internos, busca e histórico sem serem duplicadas no menu.
+# Documentos `superseded` permanecem preservados no corpus, mas não devem ser
+# promovidos como destinos primários de navegação sem justificativa explícita.
 not_in_nav: |
   *
 
