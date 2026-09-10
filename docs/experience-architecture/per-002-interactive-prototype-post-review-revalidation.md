@@ -29,16 +29,20 @@ related:
 
 Esta autoridade revalida o protótipo interativo de Design de `PER-002 — Entrada protegida` após revisão Codex do `HEAD dafa961697699dbc3ccc0f77b9ec3008b125702a` ter identificado dois findings `P2` no artefato interativo.
 
-Ela não apaga a evidência histórica de `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.0`. O `PASS` daquele ato deixou de ser suficiente como fechamento final assim que a revisão posterior encontrou regressões de interação. A conclusão corrente passa a depender desta revalidação pós-remediação.
+Ela não apaga a evidência histórica do ato originalmente publicado como `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.0`. O `PASS` daquele ato deixou de ser suficiente como fechamento final assim que a revisão posterior encontrou regressões de interação. O documento histórico correspondente foi posteriormente reclassificado como `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / superseded`; a conclusão corrente passa a depender desta revalidação pós-remediação.
 
 ```text
 ORIGINAL PROTOTYPE DELIVERY
 → GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
 
-ORIGINAL VALIDATION
+ORIGINAL VALIDATION ACT
 → GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.0
-→ HISTORICAL PRE-CODEX-REVIEW VALIDATION ACT
+→ HISTORICAL PRE-CODEX-REVIEW VALIDATION CHECKPOINT
 → NOT SUFFICIENT AS FINAL CLOSURE AFTER P2 FINDINGS
+
+CURRENT PUBLISHED HISTORICAL VALIDATION AUTHORITY
+→ GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1
+→ SUPERSEDED / HISTORICAL PRE-REVIEW EVIDENCE
 
 CODEX REVIEWED HEAD
 → dafa961697699dbc3ccc0f77b9ec3008b125702a
@@ -133,7 +137,7 @@ Nenhum documento funcional, registry, transição, Home, Source Lock, `UXA-102/V
 
 ## 5. Revalidação integral
 
-Os demais critérios de `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.0` não foram alterados pelo delta e foram relidos contra o artefato remediado.
+Os demais critérios do ato histórico `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.0` não foram alterados pelo delta e foram relidos contra o artefato remediado. A autoridade histórica atualmente publicada para esse ato é `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / superseded`.
 
 ```text
 PER-002 INTERACTIVE PROTOTYPE POST-REVIEW REVALIDATION
@@ -198,15 +202,19 @@ IMPLEMENTATION / PRODUCTION
 
 ## 7. Referência interativa corrente
 
-A referência corrente deve ser lida como cadeia de entrega + validação + revalidação pós-review:
+A referência corrente deve ser lida como cadeia de entrega + autoridade histórica de validação + revalidação pós-review:
 
 ```text
 CURRENT PER-002 INTERACTIVE DESIGN REFERENCE
 → GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
 +
-→ GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.0
+→ GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / HISTORICAL PRE-REVIEW / SUPERSEDED
 +
 → GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0
+
+ORIGINAL VALIDATION CHECKPOINT
+→ v1.0.0
+→ PRESERVED AS THE VERSION OF THE ORIGINAL PRE-REVIEW ACT
 
 FINAL CURRENT CONCLUSION
 → POST-REVIEW REVALIDATION PASS
@@ -214,15 +222,30 @@ FINAL CURRENT CONCLUSION
 
 A revalidação não promove o protótipo a produto implementado e não altera maturidades funcionais.
 
-## 8. Próximo gate
+## 8. Propagação pós-Q e próximo limite
 
-Depois de checks do repositório e revisão do `HEAD` remediado, o único trabalho restante desta cadeia é sincronizar a verdade corrente nos entrypoints/autoridades globais que ainda publicam `PROTOTYPE EXECUTION = NOT_STARTED`.
+A propagação canônica pós-Q que esta revalidação anteriormente apresentava como próximo gate foi posteriormente executada e validada. As autoridades globais e entrypoints passaram a publicar a execução do protótipo, a autoridade histórica de validação `v1.0.1`, esta revalidação e a ausência de execução automática subsequente.
 
 ```text
-NEXT IF REVALIDATION HEAD PASSES REPOSITORY GATES
-→ CANONICAL POST-Q STATE PROPAGATION
+CANONICAL POST-Q STATE PROPAGATION
+→ COMPLETED
+→ COMMIT d629682ff64f0064c584f177927a2fc89b0d6246
 
-PROPAGATION
+GKR-STATE-001
+→ v3.33.0
+
+ROADMAP
+→ ROADMAP-13.32.0 / v13.32.0
+
+README / DOCS INDEX / UXA INDEX
+→ SYNCHRONIZED
+
+NEXT AUTOMATIC EXECUTION
+→ NONE
+```
+
+```text
+PROPAGATION COMPLETED
 ≠ NEW DESIGN STAGE
 ≠ SOURCE LOCK
 ≠ UXA-102 RELEASE
