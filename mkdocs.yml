@@ -120,7 +120,6 @@ nav:
 
   - Governança do GKR:
       - Auditoria Integral do Corpus: project/gkr-full-corpus-audit.md
-      - Painel de Conhecimento: project/knowledge-board.md
       - Framework de Auditoria Arquitetural: governance-framework/architectural-audit-framework.md
       - Consolidação do Conhecimento Arquitetural: governance-framework/architectural-knowledge-consolidation-pipeline.md
       - GKR como Fonte Única da Verdade: adr/ADR-001-gkr-as-source-of-truth.md
