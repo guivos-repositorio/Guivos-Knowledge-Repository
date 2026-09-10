@@ -65,7 +65,7 @@ nav:
   - Início: index.md
 
   - Comece por aqui:
-      - Guia Oficial da Guivos: public/index.md
+      - Guia Oficial da Guivos: public/guia-oficial-da-guivos.md
       - Estado Atual do Repositório: project/current-state-register.md
       - Roadmap: roadmap.md
       - Glossário: glossary.md
