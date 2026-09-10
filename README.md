@@ -11,7 +11,7 @@ Antes de usar qualquer documento isolado, consulte:
 - [Estado Atual do Repositório](docs/project/current-state-register.md) — autoridade transversal sobre o que pode ser afirmado hoje;
 - [Roadmap](docs/roadmap.md) — sequência governada de evolução;
 - [Auditoria Integral do Corpus](docs/project/gkr-full-corpus-audit.md) — instrumento e registro da auditoria integral concluída;
-- [Guia Oficial da Guivos](docs/public/index.md) — entrada para o Public Canon.
+- [Guia Oficial da Guivos](docs/public/guia-oficial-da-guivos.md) — Public Canon vigente.
 
 ## Estado semântico sincronizado
 
@@ -204,7 +204,6 @@ ESTRATÉGIA INTERNACIONAL
 ### Governança do GKR
 
 - [Auditoria Integral do Corpus](docs/project/gkr-full-corpus-audit.md)
-- [Painel de Conhecimento](docs/project/knowledge-board.md)
 - [Framework de Auditoria Arquitetural](docs/governance-framework/architectural-audit-framework.md)
 - [Consolidação do Conhecimento Arquitetural](docs/governance-framework/architectural-knowledge-consolidation-pipeline.md)
 - [GKR como Fonte Única da Verdade](docs/adr/ADR-001-gkr-as-source-of-truth.md)
