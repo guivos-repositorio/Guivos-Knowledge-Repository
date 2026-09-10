@@ -9,7 +9,7 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 - [Estado Atual do Repositório](project/current-state-register.md) — o que pode ser afirmado hoje;
 - [Roadmap](roadmap.md) — sequência governada de evolução;
 - [Auditoria Integral do Corpus](project/gkr-full-corpus-audit.md) — registro da auditoria integral concluída e dos gates finais;
-- [Guia Oficial da Guivos](public/index.md) — entrada para o Public Canon;
+- [Guia Oficial da Guivos](public/guia-oficial-da-guivos.md) — Public Canon vigente;
 - [Glossário](glossary.md) — vocabulário transversal.
 
 ## Estado semântico sincronizado
@@ -225,7 +225,6 @@ ESTRATÉGIA INTERNACIONAL
 ## Governança do GKR
 
 - [Auditoria Integral do Corpus](project/gkr-full-corpus-audit.md)
-- [Painel de Conhecimento](project/knowledge-board.md)
 - [Framework de Auditoria Arquitetural](governance-framework/architectural-audit-framework.md)
 - [Consolidação do Conhecimento Arquitetural](governance-framework/architectural-knowledge-consolidation-pipeline.md)
 - [GKR como Fonte Única da Verdade](adr/ADR-001-gkr-as-source-of-truth.md)
@@ -238,7 +237,7 @@ As rotas abaixo são **atalhos de consumo**. Elas não criam cópias, autoridade
 | Equipe / necessidade | Comece por |
 |---|---|
 | Liderança / estratégia | [Estado Atual](project/current-state-register.md) · [Roadmap](roadmap.md) · [Estratégia de Negócio](business-architecture/index.md) · [Modelo Econômico](economic-model/index.md) |
-| Marketing / marca | [Marca e Ativos Digitais](governance-framework/brand-and-digital-assets-index.md) · [Guia Oficial](public/index.md) · [GTM](go-to-market/index.md) |
+| Marketing / marca | [Marca e Ativos Digitais](governance-framework/brand-and-digital-assets-index.md) · [Guia Oficial](public/guia-oficial-da-guivos.md) · [GTM](go-to-market/index.md) |
 | Publicidade / Ads | [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
 | Comercial | [Estratégia de Negócio](business-architecture/index.md) · [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
 | Produto | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) |
