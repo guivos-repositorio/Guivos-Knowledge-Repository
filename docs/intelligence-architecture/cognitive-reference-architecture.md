@@ -2,7 +2,7 @@
 id: GIA-COG-001
 title: Cognitive Reference Architecture
 status: draft
-version: 0.1.0
+version: 0.1.1
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-10
 related:
@@ -59,7 +59,11 @@ Esta arquitetura preserva os princípios de `GAI-001` e das autoridades relacion
 7. inferência não se torna fato por repetição, confiança algorítmica ou conveniência;
 8. ausência de evidência suficiente pode produzir ausência legítima de conclusão;
 9. proveniência, temporalidade e autoridade devem permanecer rastreáveis;
-10. tecnologia amplia capacidade, não autoridade.
+10. tecnologia amplia capacidade, não autoridade;
+11. **privacidade e finalidade** limitam quais dados podem ser usados, para qual finalidade e por qual consumidor;
+12. **não substituição de especialistas**: Intelligence apoia compreensão e decisão, mas não absorve autoridade profissional ou institucional especializada;
+13. **controle de vieses**: dados, fontes, modelos, relações e outputs devem poder ser avaliados quanto a discriminação, distorção e generalizações indevidas;
+14. **neutralidade de relevância**: pagamento, comissão, patrocínio, margem, estoque ou interesse comercial não criam autoridade para redefinir silenciosamente relevância pessoal.
 
 ## 4. Escopo
 
@@ -68,7 +72,7 @@ O documento define, em nível de referência:
 - fluxo cognitivo lógico;
 - contratos entre contexto, evidência, processamento, fusão, assurance e serving;
 - fronteiras de autoridade antes e depois do processamento;
-- distinção epistemológica entre observação, declaração, inferência, estimativa, predição e recomendação;
+- taxonomia de inputs preservada de `GPA-006` e distinção entre natureza da informação, estado epistemológico/derivacional e natureza de output;
 - proveniência e temporalidade;
 - incerteza, confiança e suficiência de evidência;
 - condições de elegibilidade para processamento;
@@ -308,23 +312,50 @@ RECUPERADO
 ≠ VERDADE ABSOLUTA
 ```
 
-## 15. Estados epistemológicos
+## 15. Taxonomia de inputs e estados epistemológicos
 
-A arquitetura deve manter distinção explícita entre naturezas diferentes de informação.
+A arquitetura deve preservar separadamente **a natureza da informação de entrada**, **seu estado epistemológico/derivacional** e **a natureza de outputs produzidos**.
+
+### 15.1 Natureza dos inputs
+
+A taxonomia de inputs definida por `GPA-006` permanece obrigatória:
 
 ```text
 DECLARADO
 ≠ OBSERVADO
-≠ CURADO / VALIDADO
+≠ OPERACIONAL
+≠ CALCULADO
 ≠ INFERIDO
-≠ ESTIMADO
 ≠ PREDITO
-≠ RECOMENDADO
+≠ AGREGADO
+≠ CONHECIMENTO EXTERNO / GOVERNADO
 ```
 
-Uma transformação cognitiva pode mudar o estado de uma representação somente quando houver regra e evidência para isso.
+Essas classes descrevem a natureza da informação e não devem ser substituídas por estados de validação ou por tipos de output.
 
-Inferência nunca deve ser silenciosamente reclassificada como observação ou fato.
+### 15.2 Estados epistemológicos e derivacionais
+
+Uma informação ou resultado pode, adicionalmente e conforme regras próprias, carregar qualificadores como:
+
+```text
+CURADO / VALIDADO
+HIPÓTESE
+ESTIMADO
+CONTESTADO
+INCERTO
+SUPERADO
+EXPIRADO
+```
+
+Esses qualificadores não substituem a natureza original do input.
+
+### 15.3 Natureza de output
+
+Resultados como recomendação, explicação, insight, possibilidade ou alerta pertencem à taxonomia de outputs e não devem ser confundidos com a natureza da informação de origem.
+
+Uma transformação cognitiva pode alterar ou derivar uma representação somente quando houver regra, evidência e proveniência suficientes para isso.
+
+Inferência nunca deve ser silenciosamente reclassificada como observação, declaração ou fato.
 
 ## 16. Cognitive Processing
 
@@ -349,11 +380,26 @@ Pode combinar, em atos futuros e conforme evidência de Engenharia:
 
 A lista não define serviços ou engines obrigatórios.
 
+Qualquer ranking, matching, recomendação ou avaliação de relevância deve preservar neutralidade de autoridade:
+
+```text
+PAGAMENTO
+COMISSÃO
+PATROCÍNIO
+MARGEM
+ESTOQUE
+INTERESSE COMERCIAL
+≠ RELEVÂNCIA PESSOAL
+```
+
+Quando algum fator comercial puder legitimamente participar de um output, sua participação deve permanecer identificável e não pode ser apresentada como pertinência pessoal neutra.
+
 ## 17. Normalized Cognitive Results
 
 Resultados intermediários devem ser normalizados semanticamente antes da fusão para que possam carregar, de forma comparável:
 
-- natureza do resultado;
+- natureza do input ou resultado;
+- estado epistemológico/derivacional;
 - evidências utilizadas;
 - proveniência;
 - temporalidade;
@@ -387,6 +433,24 @@ MAIOR QUANTIDADE DE SINAIS
 
 A fusão não deve fabricar consenso quando a evidência é insuficiente ou contraditória.
 
+### 18.1 Precedência de autoridade da Pessoa
+
+Em questões de **intenção, preferência, objetivo e significado pessoal** cuja autoridade pertença à própria Pessoa, uma declaração legítima e vigente da Pessoa possui precedência sobre inferência incompatível.
+
+```text
+DECLARAÇÃO LEGÍTIMA DA PESSOA
+> INFERÊNCIA INCOMPATÍVEL
+```
+
+Nesses casos, a inferência incompatível não pode sobrescrever silenciosamente a declaração. Ela deve ser descartada, degradada, preservada como conflito, submetida a confirmação ou tratada por outro mecanismo governado compatível com a finalidade.
+
+Essa precedência não autoriza reescrever fatos operacionais ou eventos efetivamente observados:
+
+```text
+AUTORIDADE SOBRE SIGNIFICADO PESSOAL
+≠ AUTORIDADE PARA ALTERAR EVENTO OPERACIONAL VALIDADO
+```
+
 ## 19. Correlação e causalidade
 
 A arquitetura deve preservar explicitamente:
@@ -415,7 +479,9 @@ O assurance pode considerar, em nível lógico:
 - incerteza;
 - conflitos;
 - adequação metodológica;
-- sensibilidade do impacto.
+- sensibilidade do impacto;
+- risco de vieses, discriminação ou generalização indevida;
+- necessidade de autoridade profissional ou institucional especializada.
 
 O estado de assurance não deve ser reduzido obrigatoriamente a um único score numérico.
 
@@ -446,7 +512,9 @@ Pode assumir formas como:
 - alerta;
 - síntese.
 
-Todo output relevante deve manter rastreabilidade suficiente para distinguir o que foi conhecido, inferido, calculado, estimado ou recomendado.
+Todo output relevante deve manter rastreabilidade suficiente para distinguir o que foi conhecido, declarado, observado, calculado, inferido, estimado, predito ou recomendado.
+
+Em domínios que dependam legitimamente de profissionais ou instituições especializadas, o output deve permanecer apoio à compreensão e não ser apresentado como substituto automático da autoridade competente.
 
 ## 22. Explicabilidade proporcional
 
@@ -487,6 +555,32 @@ INTELLIGENCE PODE COMPREENDER MAIS
 DO QUE PODE REVELAR
 ```
 
+### 23.1 Invariante Pessoa → Business
+
+Para contextos originados na Journey individual, a arquitetura deve preservar a assimetria definida em `GPA-006`:
+
+```text
+BUSINESS / EMPRESA
+→ PODE RECEBER COMPREENSÃO POPULACIONAL AGREGADA E PROTEGIDA
+
+BUSINESS / EMPRESA
+→ NÃO RECEBE, POR INFERÊNCIA DE ENTITLEMENT OU PAGAMENTO,
+  A INTIMIDADE INDIVIDUAL DA JOURNEY
+```
+
+```text
+ENTITLEMENT
+≠ AUTORIDADE
+
+EMPRESA FINANCIA JOURNEY
+≠ EMPRESA POSSUI JOURNEY
+
+PLANO SUPERIOR
+≠ MENOS PRIVACIDADE
+```
+
+Nenhum gate genérico de serving pode ser interpretado como permissão para converter contexto individual protegido em perfil empresarial individual, score humano, vulnerabilidade inferida, objetivo pessoal identificável ou explicação individual de pertinência.
+
 ## 24. Consumer Projection
 
 Consumer Projection transforma o Intelligence Output em uma projeção adequada ao consumidor autorizado sem alterar indevidamente seu significado.
@@ -503,6 +597,20 @@ Pode envolver:
 - tradução para linguagem compatível com o consumidor.
 
 A projeção não cria autoridade nova e não deve esconder incerteza material.
+
+### 24.1 Minimização do handoff interproduto
+
+Quando Intelligence entrega um resultado a outro produto ou domínio, deve transferir apenas o menor contexto suficiente para a finalidade autorizada.
+
+```text
+OUTPUT AUTORIZADO
+≠ DATASET DE ORIGEM
+
+TRANSFERIR RESULTADO
+≠ TRANSFERIR TODO O CONTEXTO QUE O PRODUZIU
+```
+
+A projeção deve preservar significado, proveniência necessária e limitações sem transformar o handoff em acesso indireto a dados que o consumidor não possui autoridade para receber.
 
 ## 25. Intelligence Serving
 
@@ -522,17 +630,18 @@ DECISÃO
 → PERMANECE COM A AUTORIDADE LEGÍTIMA
 ```
 
-A Intelligence pode recomendar, explicar, estimar ou alertar. Não absorve, por esse fato, a responsabilidade decisória.
+A Intelligence pode recomendar, explicar, estimar ou alertar. Não absorve, por esse fato, a responsabilidade decisória, profissional ou institucional.
 
 ## 27. Proveniência e rastreabilidade
 
 A arquitetura deve permitir reconstruir, em nível proporcional ao risco e impacto:
 
 - origem das evidências;
+- natureza original dos inputs;
+- estados epistemológicos/derivacionais relevantes;
 - contexto relevante;
 - transformações aplicadas;
 - métodos envolvidos;
-- estados epistemológicos;
 - temporalidade;
 - conflitos conhecidos;
 - assurance;
@@ -575,7 +684,8 @@ Estados legítimos incluem:
 - alta incerteza;
 - conteúdo restrito;
 - output não elegível para disclosure;
-- impossibilidade de explicar com nível adequado.
+- impossibilidade de explicar com nível adequado;
+- necessidade de autoridade especializada não satisfeita.
 
 A ausência de conclusão pode ser o comportamento correto.
 
@@ -634,7 +744,7 @@ A GIA-COG não absorve essas responsabilidades.
 
 ## 34. Relação com Governance
 
-Governance continua responsável por definir e evoluir regras de finalidade, autoridade, proteção, privacidade, risco, compliance e uso aceitável.
+Governance continua responsável por definir e evoluir regras de finalidade, autoridade, proteção, privacidade, risco, compliance, vieses, uso aceitável e limites de compartilhamento.
 
 A arquitetura cognitiva executa dentro dessas restrições; não as cria por conveniência técnica.
 
@@ -676,7 +786,7 @@ A existência do namespace não autoriza criação automática de documentos.
 
 ```text
 GIA-COG-001
-→ DRAFT v0.1.0
+→ DRAFT v0.1.1
 → CONCEPTUAL / REFERENCE LEVEL
 → NON-CANONICAL UNTIL REVIEW/PROMOTION
 
@@ -698,18 +808,23 @@ PROVIDERS / MODELS / STACK
 O próximo passo governado é:
 
 ```text
-GIA-COG-001-REV-01
-→ SEMANTIC MASTER-DOCUMENT REVIEW
+GIA-COG-001-REV-02
+→ SEMANTIC REVALIDATION
 ```
 
-A revisão deverá verificar, no mínimo:
+A revalidação deverá verificar, no mínimo:
 
+- fechamento dos seis findings da `REV-01`;
 - coerência com `GPA-006`;
-- coerência com `GAI-001`;
+- coerência com `GAI-001` e `GAI-002`;
 - ownership e autoridade;
 - fronteiras entre compreensão e decisão;
 - fronteiras entre cognição e governança;
-- semântica de evidência, fato, inferência e predição;
+- taxonomia de inputs e estados epistemológicos;
+- precedência da autoridade legítima da Pessoa;
+- assimetria Pessoa → Business;
+- neutralidade comercial;
+- minimização de handoff;
 - contexto e temporalidade;
 - correlação e causalidade;
 - explicabilidade;
@@ -719,9 +834,8 @@ A revisão deverá verificar, no mínimo:
 - neutralidade tecnológica;
 - ausência de vazamento para implementação;
 - ausência de expansão indevida de autoridade;
-- consistência interna;
-- lacunas, redundâncias e ambiguidades.
+- consistência interna.
 
 ## 40. Estado
 
-**Draft v0.1.0 concluído e persistido para revisão semântica. Não canônico; não implementado; não operacional; não produtivo.**
+**Draft v0.1.1 remediado após `GIA-COG-001-REV-01` e persistido para revalidação semântica. Não canônico; não implementado; não operacional; não produtivo.**
