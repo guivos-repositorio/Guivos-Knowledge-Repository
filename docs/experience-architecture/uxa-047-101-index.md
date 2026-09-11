@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.33.0
+version: 3.34.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-09
+last_updated: 2026-09-10
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -34,7 +34,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.33.0
+→ 3.34.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -319,7 +319,7 @@ A auditoria integral encerrou a verificação do corpus sem converter maturidade
 - [UXA-049](uxa-049-opportunity-boost-aggregated-report-functional-validation-and-reformulation.md)
 - [UXA-050](uxa-050-opportunity-boost-complete-wireframe-set-functional-validation.md)
 - UXA-051 — `UXA-051` [historical producer removed_after_absorption in F-016]
-- [UXA-052](uxa-052-opportunity-boost-mobile-advertiser-configuration-functional-validation-and-reformulation.md)
+- [UXA-052](uxa-052-opportunity-boost-mobile-advertiser-configuration-functional-validation.md)
 - UXA-053 — `UXA-053` [historical producer removed_after_absorption in F-016]
 - [UXA-054](uxa-054-opportunity-boost-mobile-active-campaign-management-functional-validation-and-reformulation.md)
 - UXA-055 — `UXA-055` [historical producer removed_after_absorption in F-016]
@@ -432,7 +432,7 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.33.0** |
+| Registro do Estado Atual | **3.34.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
