@@ -319,7 +319,7 @@ A auditoria integral encerrou a verificação do corpus sem converter maturidade
 - [UXA-049](uxa-049-opportunity-boost-aggregated-report-functional-validation-and-reformulation.md)
 - [UXA-050](uxa-050-opportunity-boost-complete-wireframe-set-functional-validation.md)
 - UXA-051 — `UXA-051` [historical producer removed_after_absorption in F-016]
-- [UXA-052](uxa-052-opportunity-boost-mobile-advertiser-configuration-functional-validation.md)
+- [UXA-052](uxa-052-opportunity-boost-mobile-advertiser-configuration-functional-validation-and-reformulation.md)
 - UXA-053 — `UXA-053` [historical producer removed_after_absorption in F-016]
 - [UXA-054](uxa-054-opportunity-boost-mobile-active-campaign-management-functional-validation-and-reformulation.md)
 - UXA-055 — `UXA-055` [historical producer removed_after_absorption in F-016]
