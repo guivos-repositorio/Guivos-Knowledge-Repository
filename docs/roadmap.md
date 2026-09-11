@@ -1,10 +1,10 @@
 ---
-id: ROADMAP-13.32.0
+id: ROADMAP-13.33.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.32.0
+version: 13.33.0
 owner: Guivos
-last_updated: 2026-09-09
+last_updated: 2026-09-10
 normative: true
 related:
   - GKR-STATE-001
@@ -19,6 +19,8 @@ related:
   - GPA-004
   - GPA-006
   - GIA-000
+  - GIA-COG-001
+  - ADR-008
   - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
   - RP-002-PMF-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
@@ -50,7 +52,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.33.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.34.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -66,20 +68,24 @@ ROADMAP
 
 A **Auditoria Integral do Guivos Knowledge Repository** foi concluída com resultado `PASS`: 23 de 23 checkpoints governados encerrados. A adjudicação de elegibilidade de Q também foi concluída como `PASS`, a baseline final pós-auditoria foi capturada no `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e Q foi liberado para definição documental. Essa definição funcional foi posteriormente concluída e consolidada: a primeira responsabilidade autenticada é a continuação autenticada de `PER-002 — Entrada protegida`, sem criação de nova superfície; `PER-003 — Escolha de modalidade` é a primeira superfície registrada distinta downstream. A adjudicação de elegibilidade de materialização concluiu `PASS`, com boundary congelado em `GKR-UX-PER002-MAT-ELIGIBILITY-001`. O ciclo low-fidelity foi autorizado, executado e validado com `PASS`. A elegibilidade high-fidelity foi adjudicada como `PASS`, sua autorização foi concedida, a entrega high-fidelity foi executada em `GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0` e a validação governada subsequente concluiu `PASS` em `GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0`, com 15/15 critérios aprovados, 0 findings materiais, 0 bloqueadores e nenhuma reformulação requerida. Essa entrega+validator passa a ser a referência corrente high-fidelity de Design de `PER-002`, sem promover tokens locais a Design System global. A adjudicação `GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0` concluiu `PASS`; a decisão governada separada `GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0` concedeu autorização explícita apenas para um protótipo interativo simulado de Design de `PER-002`. A execução foi concluída em `GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0`. O ato original de validação foi preservado como evidência histórica pré-review em `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1` e está `superseded` como fechamento corrente. A revisão Codex identificou dois findings `P2` de interação; ambos foram remediados e seus threads resolvidos. A revalidação governada pós-review `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0` concluiu `PASS`, com 16/16 critérios após remediação, 0 findings materiais, 0 bloqueadores, 0 P2 de interação abertos e nenhuma reformulação requerida. A referência interativa corrente é Delivery v0.1.0 + Validation histórica v1.0.1 + Revalidation v1.0.0. Não há próxima execução automática liberada.
 
+A frente posterior da **Cognitive Reference Architecture** também concluiu seu ciclo governado no limite documental. `ADR-008` aprovou placement e ownership sob a GIA; `GIA-COG-001 v0.1.1` passou por revisão semântica, remediação, revalidação e gate de promoção e é agora a arquitetura cognitiva de referência vigente, `active / normative`. Essa promoção não libera `GIA-COG-002..008`, arquitetura física, modelo físico, ontologia física, provedores/modelos/stack, dados reais, Product Engineering, operação ou produção.
+
 Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. O Lote M concluiu sua auditoria documental com `OPEN M-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`, sem promover execução jurídica, privacidade operacional ou constituição institucional. O Lote N concluiu sua auditoria documental com `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`, `F-022 NOT OPENED` e sem promover execução de GTM, publicação ou operação de mercado. O Lote O concluiu sua auditoria documental após rebuild governado do MENU e prova Semantic + Mechanical; `F-002 = RESOLVED`. O Lote P concluiu a auditoria final de completude com `PASS`, recomputação de contagens físicas e maturidade documental, `OPEN P-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`.
 
 `F-016-A` concluiu o ciclo governado: elegibilidade estrutural/semântica, autorização humana separada, cleanup físico 119/119, reconciliação, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. A subfrente está `RESOLVED` e o inventário físico corrente de SVGs é zero.
 
 `F-010` permanece `RESOLVED`. O review Codex permaneceu indisponível por limite de uso e nenhuma claim `CLEAN` é inferida.
 
-O fechamento pós-review do protótipo de `PER-002` não autoriza Source Lock, UXA-102/V5, Product Engineering, implementação, produção ou testes com participantes reais. Nenhum próximo avanço é liberado automaticamente; qualquer nova frente depende de ato governado próprio.
+O fechamento pós-review do protótipo de `PER-002` e a promoção canônica de `GIA-COG-001` não autorizam Source Lock adicional, UXA-102/V5, Product Engineering, implementação, produção ou testes com participantes reais. Nenhum próximo avanço é liberado automaticamente; qualquer nova frente depende de ato governado próprio.
 
 ## 2. Baseline governada
 
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.33.0** |
+| Estado global | **GKR-STATE-001 v3.34.0** |
+| Cognitive Reference Architecture | **GIA-COG-001 v0.1.1 / ACTIVE / NORMATIVE / CONCEPTUAL-REFERENCE** |
+| Família GIA-COG-002..008 | **RESERVED / NOT MATERIALIZED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
 | Baseline final pós-auditoria | **CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a** |
 | Q release eligibility | **PASS** |
@@ -200,7 +206,7 @@ GKR
 
 ## 4. Programa prioritário — Auditoria Integral do GKR
 
-A auditoria integral foi concluída. Q é uma frente pós-auditoria governada por baseline final capturada e por autorização própria.
+A auditoria integral foi concluída. Q é uma frente pós-auditoria governada por baseline final capturada e por autorização própria. A frente `GIA-COG-001` é uma evolução arquitetural posterior e separada: sua promoção canônica não altera a baseline histórica nem reabre os lotes da auditoria.
 
 Sequência governada:
 
@@ -930,6 +936,11 @@ L
 → OPEN L-SPECIFIC MATERIAL FINDINGS = 0
 → F-022 NOT OPENED
 
+GIA-COG-001
+→ v0.1.1 / ACTIVE / NORMATIVE
+→ CURRENT COGNITIVE REFERENCE ARCHITECTURE
+→ CONCEPTUAL / REFERENCE LEVEL
+
 IMPLEMENTATION / PRODUCTION
 → NOT AUTHORIZED
 
@@ -947,7 +958,7 @@ N
 → F-022 NOT OPENED
 ```
 
-A auditoria documental de L confrontou ADRs, Intelligence Architecture, Enterprise Architecture, Graph Reference, governança de dados e as superfícies laterais de produto do Guivos Intelligence. A hierarquia de autoridade permaneceu coerente e não houve promoção indevida de arquitetura ou referência tecnológica para implementação ou produção.
+A auditoria documental de L confrontou ADRs, Intelligence Architecture, Enterprise Architecture, Graph Reference, governança de dados e as superfícies laterais de produto do Guivos Intelligence. A hierarquia de autoridade permaneceu coerente e não houve promoção indevida de arquitetura ou referência tecnológica para implementação ou produção. A promoção posterior de `GIA-COG-001` atualiza a autoridade cognitiva vigente sem alterar esse fechamento histórico nem liberar realização física.
 
 Resultado consolidado:
 
@@ -991,7 +1002,16 @@ F-022
 → NOT OPENED
 ```
 
-`GPA-006 v2.0.0` continua autoridade do produto; `GIA-000 v1.6.0` continua arquitetura de Intelligence; `GEA-GRAPH-REFERENCE-001` permanece referência arquitetural; `ADR-007` mantém Neo4j apenas como referência primária. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` permanece Source Lock ativo/normativo da Home, sem equivaler a autorização de Design ou implementação.
+`GPA-006 v2.0.0` continua autoridade do produto; `GIA-000 v1.7.0` é a arquitetura vigente de Intelligence e reconhece `GIA-COG-001 v0.1.1` como Cognitive Reference Architecture ativa/normativa; `GEA-GRAPH-REFERENCE-001` permanece referência arquitetural; `ADR-007` mantém Neo4j apenas como referência primária. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` permanece Source Lock ativo/normativo da Home, sem equivaler a autorização de Design ou implementação.
+
+```text
+GIA-COG-001 ACTIVE / NORMATIVE
+≠ GIA-COG-002..008 AUTHORIZED
+≠ PHYSICAL ARCHITECTURE
+≠ REAL DATA
+≠ IMPLEMENTATION
+≠ PRODUCTION
+```
 
 `GCCM-001` não foi artificialmente incorporado a L: sua natureza é de Core Capability / Enterprise Architecture, permanece independente de tecnologia e pode ser adjudicado no domínio correto sem funcionar como autoridade tecnológica concorrente.
 
@@ -1489,6 +1509,45 @@ REAL DATA / REAL PARTICIPANTS / PRODUCTION
 → NOT AUTHORIZED
 ```
 
+### 21.1 Cognitive Reference Architecture — promoção canônica
+
+Esta frente arquitetural é posterior e separada do Lote Q. Ela não reclassifica a maturidade de Design nem altera os gates de Product Engineering.
+
+```text
+ADR-008
+→ APPROVED
+→ GIA OWNERSHIP / GIA-COG-* NAMESPACE
+
+GIA-COG-001-REV-01
+→ REVISION REQUIRED
+
+GIA-COG-001-REM-01
+→ 6 / 6 FINDINGS REMEDIATED
+
+GIA-COG-001-REV-02
+→ PASS
+→ 0 OPEN MATERIAL FINDINGS
+
+GIA-COG-001-PROM-01
+→ CANONICAL PROMOTION ELIGIBILITY = PASS
+
+GIA-COG-001-PROM-02
+→ CANONICAL PROMOTION EXECUTED
+
+GIA-COG-001 v0.1.1
+→ ACTIVE / NORMATIVE
+→ CURRENT COGNITIVE REFERENCE ARCHITECTURE
+→ CONCEPTUAL / REFERENCE LEVEL
+
+GIA-COG-002..008
+→ RESERVED / NOT MATERIALIZED
+
+PHYSICAL ARCHITECTURE / REAL DATA / IMPLEMENTATION / PRODUCTION
+→ NOT AUTHORIZED
+```
+
+A promoção torna `GIA-COG-001` autoridade arquitetural vigente, não implementação. Qualquer especialização futura da família, componente físico, modelo, fornecedor, stack ou processamento real depende de necessidade material e gate próprio.
+
 ## 22. Marca e filing — gates paralelos, não prioritários
 
 Autoridade institucional:
@@ -1573,6 +1632,8 @@ GraphRAG = candidate ≠ implementation
 Power BI = consumidor possível ≠ fonte de verdade
 Guivos.ai ≠ Guivos Intelligence
 PERCEBER ANTES ≠ PREVER O FUTURO
+ACTIVE / NORMATIVE REFERENCE ARCHITECTURE ≠ IMPLEMENTATION AUTHORIZATION
+GIA-COG-001 ACTIVE / NORMATIVE ≠ GIA-COG-002..008 AUTHORIZED
 GUIVOS ≠ FUNDADOR
 DO POSSÍVEL AO VIVIDO. → FUNDADOR
 POSSIBILITY, LIVED. → GUIVOS
@@ -1613,7 +1674,7 @@ ESPECIFICAÇÃO EDITORIAL ≠ CONTEÚDO PUBLICADO
 
 ## 26. Regra do próximo movimento
 
-`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N, O e P concluíram suas auditorias documentais. `F-022` não foi aberto. A auditoria integral está `COMPLETED / PASS / 23 OF 23`. Q foi adjudicado como elegível, a baseline final foi capturada, a definição funcional foi concluída e consolidada e `PER-002` avançou por gates separados até uma referência interativa pós-review revalidada. O protótipo foi elegível, autorizado, executado, validado no checkpoint pré-review, revisado pelo Codex, remediado e revalidado com `PASS`. O validator original permanece como evidência histórica `superseded`; a conclusão corrente é governada pela revalidação pós-review.
+`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N, O e P concluíram suas auditorias documentais. `F-022` não foi aberto. A auditoria integral está `COMPLETED / PASS / 23 OF 23`. Q foi adjudicado como elegível, a baseline final foi capturada, a definição funcional foi concluída e consolidada e `PER-002` avançou por gates separados até uma referência interativa pós-review revalidada. O protótipo foi elegível, autorizado, executado, validado no checkpoint pré-review, revisado pelo Codex, remediado e revalidado com `PASS`. O validator original permanece como evidência histórica `superseded`; a conclusão corrente é governada pela revalidação pós-review. A frente `GIA-COG-001` também completou seu ciclo documental: placement/ownership por `ADR-008`, revisão, remediação, revalidação e promoção canônica. `GIA-COG-001 v0.1.1` é agora a arquitetura cognitiva de referência vigente, sem liberar especializações ou implementação.
 
 ```text
 AUDITORIA INTEGRAL
@@ -1657,6 +1718,14 @@ Q INTERACTIVE PROTOTYPE
 → FINAL CURRENT CONCLUSION = POST-REVIEW REVALIDATION PASS
 → SOURCE LOCK = NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
 
+COGNITIVE REFERENCE ARCHITECTURE
+→ GIA-COG-001 v0.1.1 = ACTIVE / NORMATIVE
+→ REV-02 = PASS / 0 OPEN MATERIAL FINDINGS
+→ PROM-01 = PASS
+→ PROM-02 = EXECUTED
+→ GIA-COG-002..008 = RESERVED / NOT MATERIALIZED
+→ PHYSICAL ARCHITECTURE / REAL DATA / IMPLEMENTATION / PRODUCTION = NOT AUTHORIZED
+
 NEXT AUTOMATIC EXECUTION
 → NONE
 
@@ -1674,4 +1743,4 @@ RESEARCH OPERATIONAL STATES
 → PMF = NOT VALIDATED
 ```
 
-`UXA-102/V5`, Product Engineering, PMF, implementação, produção, testes com participantes reais e merge da PR #363 permanecem não iniciados ou não autorizados. A cadeia interativa de `PER-002` está fechada pós-review no limite de Design; qualquer avanço posterior exige ato governado próprio.
+`GIA-COG-002..008`, `UXA-102/V5`, Product Engineering, PMF, implementação, produção, testes com participantes reais e merge da PR #363 permanecem não iniciados ou não autorizados. A cadeia interativa de `PER-002` está fechada pós-review no limite de Design e `GIA-COG-001` está fechada no limite de arquitetura conceitual/de referência; qualquer avanço posterior exige ato governado próprio.

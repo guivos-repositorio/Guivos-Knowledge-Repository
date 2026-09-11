@@ -1,10 +1,12 @@
 ---
 id: GIA-COG-001
 title: Cognitive Reference Architecture
-status: draft
+status: active
 version: 0.1.1
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-10
+normative: true
+maturity: conceptual_reference_architecture_active
 related:
   - GPA-006
   - GIA-000
@@ -17,7 +19,7 @@ related:
 
 # GIA-COG-001 — Cognitive Reference Architecture
 
-> **Estado documental:** draft conceitual de referência. Este documento não é implementação, não comprova operação e não autoriza produção, provedores, credenciais, APIs físicas ou uso de dados reais.
+> **Estado documental:** arquitetura cognitiva de referência ativa e normativa, em nível conceitual/lógico. Este documento não é implementação, não comprova operação e não autoriza produção, provedores, credenciais, APIs físicas ou uso de dados reais.
 
 ## 1. Propósito
 
@@ -786,9 +788,9 @@ A existência do namespace não autoriza criação automática de documentos.
 
 ```text
 GIA-COG-001
-→ DRAFT v0.1.1
+→ ACTIVE / NORMATIVE v0.1.1
+→ CURRENT COGNITIVE REFERENCE ARCHITECTURE
 → CONCEPTUAL / REFERENCE LEVEL
-→ NON-CANONICAL UNTIL REVIEW/PROMOTION
 
 IMPLEMENTATION
 → NOT AUTHORIZED
@@ -803,39 +805,35 @@ PROVIDERS / MODELS / STACK
 → NOT SELECTED BY THIS DOCUMENT
 ```
 
-## 39. Próximo gate
+## 39. Promoção canônica
 
-O próximo passo governado é:
+O ciclo governado do Documento Mestre foi concluído:
 
 ```text
+GIA-COG-001-REV-01
+→ REVISION REQUIRED
+
+GIA-COG-001-REM-01
+→ 6 / 6 FINDINGS REMEDIATED
+
 GIA-COG-001-REV-02
-→ SEMANTIC REVALIDATION
+→ PASS
+→ 0 OPEN MATERIAL FINDINGS
+
+GIA-COG-001-PROM-01
+→ CANONICAL PROMOTION ELIGIBILITY = PASS
+
+GIA-COG-001-PROM-02
+→ CANONICAL PROMOTION EXECUTED
 ```
 
-A revalidação deverá verificar, no mínimo:
+A promoção estabelece esta arquitetura como referência cognitiva vigente. Ela não libera por inferência qualquer documento `GIA-COG-002..008`, arquitetura física, modelo físico de dados, ontologia física, fornecedor, modelo, stack, dado real, Product Engineering, operação ou produção.
 
-- fechamento dos seis findings da `REV-01`;
-- coerência com `GPA-006`;
-- coerência com `GAI-001` e `GAI-002`;
-- ownership e autoridade;
-- fronteiras entre compreensão e decisão;
-- fronteiras entre cognição e governança;
-- taxonomia de inputs e estados epistemológicos;
-- precedência da autoridade legítima da Pessoa;
-- assimetria Pessoa → Business;
-- neutralidade comercial;
-- minimização de handoff;
-- contexto e temporalidade;
-- correlação e causalidade;
-- explicabilidade;
-- autonomia humana;
-- proveniência;
-- maturidade;
-- neutralidade tecnológica;
-- ausência de vazamento para implementação;
-- ausência de expansão indevida de autoridade;
-- consistência interna.
+```text
+ACTIVE / NORMATIVE REFERENCE ARCHITECTURE
+≠ IMPLEMENTATION AUTHORIZATION
+```
 
 ## 40. Estado
 
-**Draft v0.1.1 remediado após `GIA-COG-001-REV-01` e persistido para revalidação semântica. Não canônico; não implementado; não operacional; não produtivo.**
+**GIA-COG-001 v0.1.1 é a Cognitive Reference Architecture vigente, ativa e normativa da Guivos Intelligence Architecture. Permanece conceitual/de referência; não implementada, não operacional e não produtiva.**
