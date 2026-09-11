@@ -21,6 +21,28 @@ CONTROL_PATHS = [
 ]
 STALE = ("M7.48", "M7.0 —", "GKR-STATE-001 1.99.0", "GKR-STATE-001 1.0.2", "UXA-071, não iniciada")
 
+F016_HISTORICAL_PARENT_ALLOWLIST = {
+    26: 24,
+    28: 24,
+    30: 24,
+    32: 24,
+    35: 34,
+    37: 36,
+    41: 40,
+    43: 42,
+    45: 44,
+    47: 46,
+    49: 48,
+    52: 51,
+    54: 53,
+    61: 60,
+    63: 5,
+    65: 5,
+    67: 5,
+    69: 68,
+    99: 55,
+}
+
 
 def read(path: Path) -> str:
     if not path.is_file():
@@ -140,6 +162,52 @@ def main() -> int:
         if expected_name in index_text:
             errors.append(f"artefato removido UXA-{number:03d} permanece indexado: {expected_name}")
 
+    for child, expected_parent in sorted(F016_HISTORICAL_PARENT_ALLOWLIST.items()):
+        path = artifacts.get(child)
+        if path is None:
+            errors.append(f"F-016: consumidor histórico UXA-{child:03d} ausente")
+            continue
+        try:
+            child_front = fm(read(path))
+        except ValueError as exc:
+            errors.append(f"F-016: UXA-{child:03d}: {exc}")
+            continue
+        parent_match = re.search(r"(?m)^parent:\s*UXA-(\d{3})\s*$", child_front)
+        if not parent_match:
+            errors.append(
+                f"F-016: UXA-{child:03d} perdeu parent histórico UXA-{expected_parent:03d} adjudicado"
+            )
+            continue
+        actual_parent = int(parent_match.group(1))
+        if actual_parent != expected_parent:
+            errors.append(
+                f"F-016: UXA-{child:03d} parent histórico divergente: "
+                f"UXA-{actual_parent:03d} != UXA-{expected_parent:03d}"
+            )
+
+    for child, path in sorted(artifacts.items()):
+        try:
+            child_front = fm(read(path))
+        except ValueError:
+            continue
+        parent_match = re.search(r"(?m)^parent:\s*UXA-(\d{3})\s*$", child_front)
+        if not parent_match:
+            continue
+        parent = int(parent_match.group(1))
+        if parent not in removed_after_absorption:
+            continue
+        expected_parent = F016_HISTORICAL_PARENT_ALLOWLIST.get(child)
+        if expected_parent is None:
+            errors.append(
+                f"F-016: parent para produtor removido não adjudicado: "
+                f"UXA-{child:03d} -> UXA-{parent:03d}"
+            )
+        elif parent != expected_parent:
+            errors.append(
+                f"F-016: parent para produtor removido fora da allowlist: "
+                f"UXA-{child:03d} -> UXA-{parent:03d}"
+            )
+
     for number in range(47, 102):
         if number in removed_after_absorption:
             continue
@@ -162,6 +230,7 @@ def main() -> int:
     print("GKR semantic state validation: PASS")
     print(f"state={version} milestone={milestone} latest={latest} next={next_uxa}")
     print(f"uxa_artifacts={len(artifacts)} surfaces={len(surfaces)}")
+    print(f"f016_historical_parent_edges={len(F016_HISTORICAL_PARENT_ALLOWLIST)}")
     return 0
 
 
