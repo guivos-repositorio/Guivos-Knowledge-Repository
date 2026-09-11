@@ -2,11 +2,11 @@
 id: GKR-F016-PARENT-REF-REM-001
 title: Remediação das referências parent residuais de F-016
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-11
 normative: false
-maturity: remediation_record_partial_automation_blocked
+maturity: remediation_record_guard_persisted
 related:
   - GKR-FULL-CORPUS-AUDIT-001
 ---
@@ -15,9 +15,9 @@ related:
 
 ## 1. Finalidade
 
-Registrar a adjudicação de `F-016-PARENT-REF-REM-01` sobre as referências `parent:` que permanecem em consumidores/validadores correntes depois da remoção física dos produtores visuais legados de F-016.
+Registrar a adjudicação de `F-016-PARENT-REF-REM-01` sobre as referências `parent:` que permanecem em consumidores/validadores correntes depois da remoção física dos produtores visuais legados de F-016 e registrar o guard automático posterior `F-016-PARENT-REF-GUARD-01`.
 
-Este registro não cria nova autoridade de produto, Experience Architecture, Design ou implementação. Ele documenta exclusivamente a classificação das arestas residuais e os limites da remediação executável no checkpoint.
+Este registro não cria nova autoridade de produto, Experience Architecture, Design ou implementação. Ele documenta exclusivamente a classificação das arestas residuais, sua proteção automática e os limites desta remediação.
 
 ## 2. Checkpoint reconciliado
 
@@ -31,7 +31,7 @@ BASE / MAIN
 → b5acfaffc57afd2714c44dbe53ecf3faba76fe9e
 → UNCHANGED
 
-HEAD DE ENTRADA
+HEAD DE ENTRADA DA REMEDIAÇÃO
 → e0aea7ff5f2e424f70c273f2f8c80f399ce12e20
 
 SEMANTIC #901
@@ -42,6 +42,19 @@ MECHANICAL #1157
 ```
 
 O commit `e0aea7ff...` apenas reconciliou o caminho de `UXA-052` no índice e não alterou a adjudicação de F-016.
+
+A adjudicação foi inicialmente persistida no commit:
+
+```text
+85a028723c86fe28da967068b076ed0e273ab96e
+→ GKR: record F-016 historical parent adjudication
+
+Semantic #902
+→ SUCCESS
+
+Mechanical #1158
+→ SUCCESS
+```
 
 ## 3. Adjudicação
 
@@ -101,7 +114,7 @@ PARENT → REMOVED F-016 PRODUCER
 
 ANY OTHER PARENT → REMOVED F-016 PRODUCER
 → NOT ADJUDICATED
-→ MUST FAIL GOVERNED REVIEW
+→ MUST FAIL SEMANTIC VALIDATION
 ```
 
 ## 5. Relação com as dependências vigentes
@@ -118,16 +131,25 @@ HISTORICAL parent
 
 Nenhum novo `parent` foi inventado e nenhuma autoridade corrente foi promovida para substituir artificialmente os produtores removidos.
 
-## 6. Guard automático — estado do checkpoint
+## 6. Guard automático
 
-Foi tentada a persistência de uma allowlist fechada em `scripts/validate_semantic_state.py`, destinada a:
+`F-016-PARENT-REF-GUARD-01` foi persistido em:
 
-1. aceitar somente os 19 pares adjudicados;
-2. tratar esses pares exclusivamente como proveniência histórica;
-3. falhar qualquer nova aresta `parent:` para produtor removido fora da allowlist;
-4. provar que os 19 pares esperados não foram silenciosamente alterados.
+```text
+ffdbd4ab3bdb31fa84ab20f5acc8171d9f0cdcca
+→ GKR: guard F-016 historical parent references
+```
 
-As duas formas de escrita disponibilizadas pelo conector para o arquivo de código foram bloqueadas pelas configurações de segurança antes de qualquer commit ou alteração de branch.
+O guard em `scripts/validate_semantic_state.py` mantém uma allowlist fechada com os mesmos 19 pares adjudicados e executa duas provas complementares:
+
+1. cada consumidor histórico esperado deve continuar presente e manter exatamente o `parent` adjudicado;
+2. qualquer `parent:` corrente que aponte para um produtor removido por F-016 deve pertencer exatamente à allowlist; caso contrário, a validação semântica falha.
+
+A saída de sucesso também publica a quantidade esperada:
+
+```text
+f016_historical_parent_edges=19
+```
 
 Portanto:
 
@@ -136,17 +158,17 @@ SEMANTIC ADJUDICATION
 → COMPLETED
 
 CORPUS RECORD
-→ PERSISTED BY THIS REMEDIATION RECORD
+→ PERSISTED
 
 AUTOMATED PARENT-EDGE GUARD
-→ NOT PERSISTED
-→ BLOCKED BY CONNECTOR SECURITY
+→ PERSISTED
 
-CLAIM OF FULL AUTOMATED CLOSURE
-→ NOT ALLOWED
+CLOSED ALLOWLIST
+→ 19 / 19
+
+NEW UNADJUDICATED parent → REMOVED F-016 PRODUCER
+→ SEMANTIC FAILURE
 ```
-
-Esse bloqueio não deve ser contornado por uma escrita menos governada.
 
 ## 7. Limites preservados
 
@@ -167,16 +189,22 @@ Esta remediação não autoriza:
 
 ```text
 F-016-PARENT-REF-REM-01
-→ SEMANTIC ADJUDICATION COMPLETED
+→ COMPLETED
 → 19 / 19 EDGES CLASSIFIED
 → HISTORICAL PROVENANCE ONLY
 
-AUTOMATED GUARD
-→ BLOCKED / NOT PERSISTED
+F-016-PARENT-REF-GUARD-01
+→ EXECUTED
+→ EXACT CLOSED ALLOWLIST PERSISTED
 
-FOLLOW-UP REQUIRED
-→ F-016-PARENT-REF-GUARD-01
-→ persist exact closed allowlist in semantic validation when a governed code-write path is available
+STRUCTURAL CURRENT DEPENDENCY TO REMOVED PRODUCERS
+→ NOT CREATED
+
+HISTORICAL GENEALOGY
+→ PRESERVED
+
+NEXT AUTOMATIC EXECUTION
+→ NONE
 ```
 
-Até esse follow-up, nenhuma nova aresta `parent:` para produtor removido deve ser aceita por inferência.
+A conclusão desta etapa não resolve por inferência thread de review, não declara Codex final limpo e não autoriza merge da PR #363.
