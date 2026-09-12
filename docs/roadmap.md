@@ -1,10 +1,10 @@
 ---
-id: ROADMAP-13.33.0
+id: ROADMAP-13.33.1
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.33.0
+version: 13.33.1
 owner: Guivos
-last_updated: 2026-09-10
+last_updated: 2026-09-12
 normative: true
 related:
   - GKR-STATE-001
@@ -52,7 +52,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.34.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.34.1` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -83,7 +83,7 @@ O fechamento pós-review do protótipo de `PER-002` e a promoção canônica de 
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.34.0** |
+| Estado global | **GKR-STATE-001 v3.34.1** |
 | Cognitive Reference Architecture | **GIA-COG-001 v0.1.1 / ACTIVE / NORMATIVE / CONCEPTUAL-REFERENCE** |
 | Família GIA-COG-002..008 | **RESERVED / NOT MATERIALIZED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
@@ -595,7 +595,7 @@ Nenhuma das seis Homes exigiu rebuild conceitual. As divergências eram de propa
 
 A evidência consolidada está em `GKR-SPECIALIZED-HOMES-AUDIT-001 v0.2.0`.
 
-A interpretação vigente está em `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.0.0`, cuja precedência é restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando identidade e fronteiras dos Produtos; os Masters continuam preservando a arquitetura narrativa/funcional.
+A interpretação vigente está em `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.3`, cuja precedência é restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando identidade e fronteiras dos Produtos; os Masters continuam preservando a arquitetura narrativa/funcional.
 
 Resultado:
 

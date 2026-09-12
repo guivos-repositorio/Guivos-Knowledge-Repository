@@ -2,9 +2,9 @@
 id: GKR-FULL-CORPUS-AUDIT-001
 title: Auditoria Integral do Guivos Knowledge Repository
 status: active
-version: 1.30.0
+version: 1.30.1
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-08
+last_updated: 2026-09-12
 normative: false
 maturity: audit_completed_pass_post_q_functional_definition_consolidated
 baseline_sha: a05a54071414086456877ee4d0de59c59eefed0a
@@ -1886,7 +1886,7 @@ Nenhuma Home exigiu rebuild conceitual. O problema dominante era propagação do
 
 A evidência detalhada está em `GKR-SPECIALIZED-HOMES-AUDIT-001 v0.2.0`.
 
-A interpretação documental vigente das seis famílias foi consolidada em `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.0.0`, com precedência restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando os Produtos e os Masters continuam preservando a arquitetura narrativa/funcional.
+A interpretação documental vigente das seis famílias foi consolidada em `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.3`, com precedência restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando os Produtos e os Masters continuam preservando a arquitetura narrativa/funcional.
 
 Estado reconciliado:
 

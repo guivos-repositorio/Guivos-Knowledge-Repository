@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.34.0
+version: 3.34.1
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-10
+last_updated: 2026-09-12
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
@@ -978,7 +978,7 @@ REBUILD_REQUIRED
 → 0
 ```
 
-A remediação foi documental, sem rebuild conceitual. `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.0.0` governa somente estado atual, dependências vigentes, conflitos de continuidade e gates; as GPAs continuam governando os Produtos e os Masters preservam a arquitetura narrativa/funcional.
+A remediação foi documental, sem rebuild conceitual. `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.3` governa somente estado atual, dependências vigentes, conflitos de continuidade e gates; as GPAs continuam governando os Produtos e os Masters preservam a arquitetura narrativa/funcional.
 
 Preservações:
 

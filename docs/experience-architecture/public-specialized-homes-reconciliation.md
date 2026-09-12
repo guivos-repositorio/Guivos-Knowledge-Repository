@@ -2,13 +2,13 @@
 id: GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
 title: Homes Públicas dos Produtos Especializados — Autoridade de Reconciliação do Lote F
 status: active
-version: 1.1.2
+version: 1.1.3
 owner: Guivos
 last_updated: 2026-09-12
 parent: GKR-FULL-CORPUS-AUDIT-001
 depends_on:
   - GKR-STATE-001
-  - ROADMAP-13.33.0
+  - ROADMAP-13.33.1
   - GPA-002
   - GPA-003
   - GPA-004
@@ -107,7 +107,7 @@ WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
 → NOT AUTHORIZED
 ```
 
-`AUDITORIA INTEGRAL → IN_PROGRESS` e `J / K / L / M / N → NOT RELEASED AUTOMATICALLY` são fatos históricos daquele checkpoint. Para o estado global corrente devem ser consultadas as revisões vigentes de `GKR-STATE-001` e `ROADMAP-13.33.0`: a auditoria integral e os lotes J–N já foram concluídos no programa, e `NEXT AUTOMATIC EXECUTION = NONE` permanece a regra corrente. Esta reclassificação histórica não altera o estado documental das seis Homes nem libera qualquer etapa downstream.
+`AUDITORIA INTEGRAL → IN_PROGRESS` e `J / K / L / M / N → NOT RELEASED AUTOMATICALLY` são fatos históricos daquele checkpoint. Para o estado global corrente devem ser consultadas as revisões vigentes de `GKR-STATE-001` e `ROADMAP-13.33.1`: a auditoria integral e os lotes J–N já foram concluídos no programa, e `NEXT AUTOMATIC EXECUTION = NONE` permanece a regra corrente. Esta reclassificação histórica não altera o estado documental das seis Homes nem libera qualquer etapa downstream.
 
 ## 3. Regra transversal das seis Homes
 
@@ -266,8 +266,8 @@ ROADMAP-13.5.0
 → NÃO É AUTORIDADE GLOBAL VIGENTE
 
 AUTORIDADES GLOBAIS VIGENTES NESTE HEAD
-→ GKR-STATE-001 v3.34.0
-→ ROADMAP-13.33.0
+→ GKR-STATE-001 v3.34.1
+→ ROADMAP-13.33.1
 ```
 
 A fronteira normativa permanece:
@@ -444,4 +444,4 @@ PMF
 → NOT VALIDATED
 ```
 
-Para o gate corrente, esta autoridade defere explicitamente às revisões vigentes de `GKR-STATE-001` e `ROADMAP-13.33.0`. J–N já foram concluídos no programa; `NEXT AUTOMATIC EXECUTION = NONE`; `UXA-102/V5` permanece `NOT_STARTED`; Product Engineering permanece `PAUSED BEFORE W0-01`; nenhum Source Lock, implementação, produção, operação, participante real ou merge é autorizado por esta autoridade.
+Para o gate corrente, esta autoridade defere explicitamente às revisões vigentes de `GKR-STATE-001` e `ROADMAP-13.33.1`. J–N já foram concluídos no programa; `NEXT AUTOMATIC EXECUTION = NONE`; `UXA-102/V5` permanece `NOT_STARTED`; Product Engineering permanece `PAUSED BEFORE W0-01`; nenhum Source Lock, implementação, produção, operação, participante real ou merge é autorizado por esta autoridade.
