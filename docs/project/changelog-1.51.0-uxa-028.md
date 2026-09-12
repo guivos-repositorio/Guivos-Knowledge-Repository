@@ -22,7 +22,7 @@ Este incremento cria o primeiro wireframe móvel da visualização em Lista dent
 ## 2. Artefatos criados
 
 - `UXA-028 — Wireframe Alternativo do Mapa de Oportunidades — Visualização em Lista`;
-- `docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`;
+- `uxa-028-opportunity-map-list-mobile.svg [historical SVG; physical file removed in F-016-A]`;
 - `GKR-CANON-MATRIX-UXA-028`;
 - este histórico 1.51.0.
 

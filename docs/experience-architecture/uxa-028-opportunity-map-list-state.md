@@ -8,14 +8,11 @@ last_updated: 2026-07-27
 parent: UXA-024
 depends_on:
   - UXA-004
-  - UXA-005
-  - UXA-024
   - UXA-025
   - UXA-026
   - UXA-027
 related:
   - UXA-002
-  - UXA-007
   - UXA-010
   - UXA-012
   - UXA-020
@@ -25,6 +22,9 @@ normative: false
 ---
 
 # Wireframe Alternativo do Mapa de Oportunidades — Visualização em Lista
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
@@ -89,11 +89,9 @@ Mudar para a Lista não transporta a pessoa silenciosamente para `Explorar` nem 
 
 ## 4. Artefato visual reformulado
 
-![Wireframe reformulado do Mapa de Oportunidades em visualização de Lista](../assets/wireframes/uxa-028-opportunity-map-list-mobile.svg)
 
 Arquivo vetorial:
 
-`docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`
 
 Dimensão de referência:
 

@@ -2,9 +2,9 @@
 id: GKR-CCM-OPPORTUNITY-BOOST-A1
 title: Adendo de Consolidação Canônica — Opportunity Boost
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-07-28
+last_updated: 2026-09-01
 depends_on:
   - GKR-STATE-001
   - GPA-007
@@ -23,6 +23,8 @@ normative: false
 ## 1. Finalidade
 
 Registrar a rastreabilidade documental da primeira definição do Opportunity Boost.
+
+A reconciliação de 2026-09-01 preserva este adendo como registro especializado do incremento original. Declarações abaixo sobre estado proposto, resultante ou canônico, contagens, versões, baselines, pendências, marcos, próximos gates/transições/atos e autorizações futuras são **snapshots históricos do estágio em que o incremento foi integrado**; não representam o estado transversal vigente e não substituem `GKR-STATE-001`, registries ou autoridades de domínio vigentes.
 
 ## 2. Elementos consolidados
 

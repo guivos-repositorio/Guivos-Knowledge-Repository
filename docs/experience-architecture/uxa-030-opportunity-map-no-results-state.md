@@ -8,8 +8,6 @@ last_updated: 2026-07-27
 parent: UXA-024
 depends_on:
   - UXA-004
-  - UXA-005
-  - UXA-024
   - UXA-025
   - UXA-026
   - UXA-027
@@ -17,7 +15,6 @@ depends_on:
   - UXA-029
 related:
   - UXA-002
-  - UXA-007
   - UXA-010
   - UXA-011-A1
   - UXA-012
@@ -28,6 +25,9 @@ normative: false
 ---
 
 # Wireframe Alternativo do Mapa de Oportunidades — Estado sem Resultados
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
@@ -83,11 +83,9 @@ A declaração não significa que não existam oportunidades em toda a cidade, n
 
 ## 4. Artefato visual
 
-![Wireframe alternativo do Mapa de Oportunidades sem resultados](../assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg)
 
 Arquivo vetorial:
 
-`docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`
 
 Dimensão de referência:
 

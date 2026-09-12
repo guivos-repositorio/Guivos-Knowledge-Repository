@@ -7,7 +7,6 @@ owner: Guivos
 last_updated: 2026-07-26
 related:
   - GKR-ARCHITECTURAL-MILESTONES-001
-  - UXA-008
   - UXA-013
   - M7.19.7
 normative: false

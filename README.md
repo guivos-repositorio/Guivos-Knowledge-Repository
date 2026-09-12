@@ -4,99 +4,107 @@ O **Guivos Knowledge Repository** é a fonte oficial, versionada e governada do 
 
 > **O Git preserva a história. O GKR publicado preserva a verdade atual.**
 
-## Estado vigente
+## Leitura obrigatória
 
-A autoridade transversal é o [Registro do Estado Atual](docs/project/current-state-register.md).
+Antes de usar qualquer documento isolado, consulte:
 
-| Elemento | Estado |
-|---|---|
-| GKR-STATE-001 | **3.4.0** |
-| Era | **GE-2 — Knowledge** |
-| Marco funcional | **M7.88** |
-| Última UXA funcional numerada | **UXA-101** |
-| Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
-| Product Engineering | **PAUSED BEFORE W0-01** |
-| PMF | **NOT VALIDATED** |
-| Auditoria integral do corpus | **IN_PROGRESS** |
-| Lotes concluídos | **A / B / C / D / E / F** |
-| Próximo bloco da auditoria | **G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL** |
-| Baseline final pós-auditoria | **NOT AUTHORIZED** |
-| Home principal/Pessoa | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
-| Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
-| Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
-| Primeira tela autenticada pós-Home da Pessoa | **BLOCKED UNTIL AUDIT CLOSES** |
-| Public Canon atual | **GOG-001 v5.3.0** |
+- [Estado Atual do Repositório](docs/project/current-state-register.md) — autoridade transversal sobre o que pode ser afirmado hoje;
+- [Roadmap](docs/roadmap.md) — sequência governada de evolução;
+- [Auditoria Integral do Corpus](docs/project/gkr-full-corpus-audit.md) — instrumento e registro da auditoria integral concluída;
+- [Guia Oficial da Guivos](docs/public/guia-oficial-da-guivos.md) — Public Canon vigente.
 
-O [Roadmap 13.4.0](docs/roadmap.md) governa a sequência da auditoria e dos próximos gates.
+## Estado semântico sincronizado
 
-## Regra de leitura
-
-O repositório está em auditoria integral para eliminar fragmentação, corrigir autoridades defasadas e remover do corpus atual documentos e artefatos que perderam função.
-
-Durante a auditoria:
+A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-ARTEFATO ANTIGO
-→ verificar conteúdo ainda válido
-→ absorver na autoridade atual
-→ corrigir referências
-→ validar
-→ remover do corpus se não houver função atual
-→ histórico continua disponível no Git
+GKR-STATE-001 3.34.1
+M7.88
+ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
+PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
+LOTE O → DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED
+LOTE P → FINAL COMPLETENESS AUDIT = PASS / COMPLETED
+AUDITORIA INTEGRAL → COMPLETED / PASS / 23 OF 23
+FINAL BASELINE → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
+Q → FUNCTIONAL DEFINITION = PASS / CANONICALLY CONSOLIDATED
+Q MATERIALIZATION ELIGIBILITY → PASS / CANONICALLY CONSOLIDATED
+FIRST AUTHENTICATED RESPONSIBILITY → AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
+FIRST DISTINCT DOWNSTREAM SURFACE → PER-003 — ESCOLHA DE MODALIDADE
+DESIGN HANDOFF BOUNDARY → GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN
+PER-002 LOW-FIDELITY DESIGN AUTHORIZATION → GRANTED / GKR-UX-PER002-DESIGN-AUTH-001
+PER-002 DESIGN DELIVERY → EXECUTED / GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0
+DESIGN DELIVERY COVERAGE → 4 PRIMARY FRAMES + 3 VARIANTS / 7 OF 7 AUTHORIZED AREAS
+FUNCTIONAL VALIDATION → PASS / GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0
+CURRENT LOW-FIDELITY DESIGN REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
+HIGH-FIDELITY DESIGN ELIGIBILITY → PASS / GKR-UX-PER002-HIFI-ELIGIBILITY-001 v1.0.0
+HIGH-FIDELITY DESIGN AUTHORIZATION → GRANTED / GKR-UX-PER002-HIFI-AUTH-001 v1.0.0
+HIGH-FIDELITY DESIGN DELIVERY → EXECUTED / GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0
+HIGH-FIDELITY DESIGN VALIDATION → PASS / GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0
+CURRENT HIGH-FIDELITY DESIGN REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
+INTERACTIVE PROTOTYPE ELIGIBILITY → PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
+INTERACTIVE PROTOTYPE AUTHORIZATION → GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0
+INTERACTIVE PROTOTYPE EXECUTION → EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
+ORIGINAL PROTOTYPE VALIDATION → HISTORICAL PRE-REVIEW EVIDENCE / GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / SUPERSEDED
+CODEX PROTOTYPE REVIEW → 2 P2 INTERACTION FINDINGS / REMEDIATED / THREADS RESOLVED
+POST-REVIEW PROTOTYPE REVALIDATION → PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS
+CURRENT INTERACTIVE DESIGN REFERENCE → DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0
+FINAL INTERACTIVE CONCLUSION → POST-REVIEW REVALIDATION PASS
+GIA-COG-001 → ACTIVE / NORMATIVE / CURRENT COGNITIVE REFERENCE ARCHITECTURE / v0.1.1
+NEXT AUTOMATIC EXECUTION → NONE
+SOURCE LOCK → NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
+UXA-102 / V5 → NOT_STARTED
+PRODUCT ENGINEERING → PAUSED BEFORE W0-01
 ```
+
+## Como navegar
+
+O MENU principal é uma **superfície de descoberta**, não um inventário completo do corpus.
 
 ```text
-CONSOLIDAR
-≠ RESUMIR
+MENU
+→ orienta por assunto e função
+→ aponta para hubs e autoridades de entrada
 
-LIMPAR O CORPUS
-≠ PERDER CONHECIMENTO
+CORPUS
+→ preserva autoridades, evidências e documentos de detalhe
+→ continua acessível por hubs, links internos, busca e Git
 ```
 
-## Fundamentos
-
-A Guivos preserva como direção humana:
-
-> **Como podemos ajudar os seres humanos a terem uma vida melhor?**
-
-A Guivos não transforma pessoas. Seu papel é ampliar condições, percepção, acesso, conexão e possibilidades para que cada pessoa possa fazer escolhas e viver experiências capazes de contribuir para sua própria transformação.
-
-O [Fundamento Cristão e Doutrina de Propósito](docs/christian-foundation/index.md) preserva:
-
-> **Evolução com propósito.**
-
-A presença dessa autoridade no GKR não a transforma automaticamente em campanha, copy comercial ou Public Canon religioso.
-
-## Marca e autoridade pública
-
-Autoridade institucional:
+A ausência de um documento específico no MENU não reduz sua autoridade nem implica remoção do corpus.
 
 ```text
-Possibility, lived.      → assinatura global da Guivos
-Possibilidade, vivida.   → versão PT da Guivos
-#PossibilityLived        → hashtag global
+NOT_IN_NAV
+≠ PRIVATE
+≠ DEPRECATED
+≠ NON-AUTHORITATIVE
+
+DOCUMENTED
+≠ IMPLEMENTED
+≠ TESTED
+≠ OPERATIONALLY APPROVED
 ```
 
-Autoridade pessoal do fundador:
+## Domínios principais
 
-```text
-Do possível ao vivido.
-→ assinatura pessoal/autoral do fundador
-→ não é assinatura institucional da Guivos
-```
+### Fundação e Marca
 
-```text
-GUIVOS ≠ FUNDADOR
-FALA PESSOAL ≠ POSICIONAMENTO INSTITUCIONAL
-```
-
-Referências:
-
-- [Assinatura de Marca e Sistema Verbal](docs/governance-framework/brand-signature-and-verbal-system.md)
-- [Autoridade Pública da Marca e Papel do Fundador](docs/governance-framework/brand-public-authority-and-founder-role.md)
+- [Fundamentos da Guivos](docs/geb/index.md)
+- [Fundamento Cristão](docs/christian-foundation/index.md)
+- [Framework de Evolução](docs/evolution-framework/index.md)
 - [Marca, Naming e Ativos Digitais](docs/governance-framework/brand-and-digital-assets-index.md)
+- [Marca, Fundador e Autoridade Pública](docs/governance-framework/brand-public-authority-and-founder-role.md)
 
-## Participantes estruturais
+```text
+GUIVOS
+≠ FUNDADOR
+
+FALA PESSOAL
+≠ POSICIONAMENTO INSTITUCIONAL
+```
+
+### Participantes
+
+O ecossistema preserva três participantes estruturais:
 
 ```text
 PESSOA
@@ -104,232 +112,148 @@ ORGANIZAÇÃO
 COLETIVO
 ```
 
-Participante estrutural não é Produto Especializado.
+Entradas:
+
+- [Pessoa](docs/journeys/person.md)
+- [Organização](docs/journeys/organization.md)
+- [Coletivo](docs/journeys/collective.md)
+- [Organizações e Coletivos — Estado Atual](docs/experience-architecture/organizations-collectives-current-state.md)
+
+### Produtos e Economia
+
+- [Arquitetura de Produtos](docs/product-architecture/index.md)
+- [Modelo Econômico](docs/economic-model/index.md)
+- [Estratégia de Negócio](docs/business-architecture/index.md)
 
 ```text
+PARTICIPANTE
+≠ PRODUTO ESPECIALIZADO
+
 ORGANIZAÇÃO
 ≠ GUIVOS BUSINESS
 ≠ GUIVOS ADS
-
-COLETIVO
-≠ AUDIÊNCIA
-≠ CANAL DE MARKETING
 ```
 
-## Produtos Especializados
+### Experiência e Journey
 
-- Guivos Journey;
-- Guivos Mall;
-- Guivos Travel;
-- Guivos Business;
-- Guivos Media;
-- Guivos Intelligence;
-- Guivos Ads.
-
-Produtos podem cooperar sem perder identidade ou autoridade próprias.
-
-## Journey
-
-O Journey possui nove Domínios de Evolução canônicos:
-
-1. Saúde e Bem-estar;
-2. Trabalho, Carreira e Estudos;
-3. Vida Financeira;
-4. Empreendedorismo e Projetos;
-5. Relacionamentos e Vida Social;
-6. Espiritualidade, Propósito e Valores;
-7. Viagens, Lazer, Cultura e Novas Experiências;
-8. Causas, Voluntariado e Contribuição;
-9. Organização e Equilíbrio da Vida.
-
-`Ainda estou descobrindo` é estado transversal legítimo e **não** um décimo domínio.
-
-Na experiência autenticada da Pessoa, permanecem reconhecidas responsabilidades como:
-
-```text
-PER-008 — Hoje
-PER-009 — Conta e configurações
-PER-010 — Meus Objetivos
-PER-011 — Meus Próximos Passos
-PER-012 — Minha Evolução
-```
-
-A primeira tela após a Home será definida somente depois do fechamento da auditoria integral.
-
-## Organizações e Coletivos
-
-A experiência autenticada já possui:
-
-- fundação funcional;
-- contrato das relações Organização ↔ Coletivo;
-- atores, autoridades e jobs prioritários;
-- Arquitetura da Informação.
-
-Ainda não possui como baseline final:
-
-- mapa canônico de superfícies pós-auditoria;
-- wireframe principal autenticado da Organização;
-- wireframe principal autenticado do Coletivo;
-- UI;
-- protótipo;
-- implementação correspondente.
-
-A Arquitetura da Informação vigente preserva:
-
-```text
-ORGANIZAÇÃO
-├── Visão Geral
-├── Oportunidades e Programas
-├── Relações
-├── Responsabilidades e Evidências
-├── Organização e Autoridade
-└── Planos e Capacidade [especializado/contextual]
-```
-
-```text
-COLETIVO
-├── Início
-├── Atividades e Oportunidades
-├── Participação
-├── Governança e Proteção
-├── Relações
-├── Aprendizados e Evidências
-├── Coletivo e Autoridade
-└── Planos e Capacidade [especializado/contextual]
-```
-
-## Guivos Business
-
-Autoridade superior: [GPA-004 — Guivos Business](docs/product-architecture/business.md).
-
-Ofertas principais:
-
-```text
-PROGRAMAS DE INCENTIVO
-+
-GUIVOS JOURNEY CUSTEADO PELA EMPRESA
-```
-
-Planos Business:
-
-```text
-Start · Growth · Scale · Enterprise
-```
-
-Modelo de implementação/operação:
-
-```text
-Self-service
-Com apoio do suporte
-Gerenciado
-```
-
-```text
-OFERTA ≠ PLANO ≠ ESCALA ≠ ORÇAMENTO ≠ MODELO DE IMPLEMENTAÇÃO
-```
-
-Pontos são capacidade econômica governada e não compram evolução, pertinência, prioridade ou recomendação.
-
-## Guivos Intelligence
-
-Autoridade superior: [GPA-006 — Guivos Intelligence v2.0.0](docs/product-architecture/intelligence.md).
-
-Unidade de valor:
-
-> **compreensão útil e contextualizada**
-
-Duas frentes:
-
-```text
-Pessoa / Journey
-Business / População
-```
-
-Guardrails:
-
-```text
-COMPREENDER ≠ DECIDIR
-CONHECER ≠ UTILIZAR ≠ COMPARTILHAR
-PERSONALIZAR ≠ EXPOR
-INFERÊNCIA ≠ FATO
-SINAL ≠ CERTEZA
-TENDÊNCIA ≠ DESTINO
-PERCEBER ANTES ≠ PREVER O FUTURO
-```
-
-`GIA-000 v1.6.0` reconhece o Product Source Lock integrado, o Documento Mestre da Home Intelligence e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` como Source Lock ativo/normativo da Home. O Source Lock congela fontes e invariantes; não autoriza, por si só, Design, implementação ou publicação.
-
-Neo4j permanece `reference_selected`, não implementação em produção.
-
-## Research e RP-002
-
-Estado vigente:
-
-```text
-CONCEPTUAL READINESS → PASS
-METHODOLOGICAL READINESS → PASS
-FIELD KIT v0.1 → FROZEN FOR FIRST DRY RUN
-METHOD / ANALYSIS PLAN → FROZEN v1.0.0
-DOCUMENTATION PHASE OF MINIMUM PILOT STACK → CLOSED / PASS DOCUMENTAL
-OPERATIONAL IMPLEMENTATION → DEFERRED
-OPERATIONAL READINESS → HOLD
-PARTICIPANT 001 → HOLD
-DRY RUN REAL → NOT RELEASED
-PMF → NOT VALIDATED
-```
-
-Simulações sintéticas não são evidência de PMF.
-
-## Homes públicas
-
-A auditoria substitui a antiga leitura agregada das oito Homes por avaliação individual. Os Lotes D, E e F estão documentalmente reconciliados:
-
-| Home | Estado |
-|---|---|
-| Principal / Pessoa | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Organizações e Coletivos | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Mall | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Travel | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Media | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Ads | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Business | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Intelligence | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-
-A reconciliação das seis Homes especializadas é governada por [GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001](docs/experience-architecture/public-specialized-homes-reconciliation.md) e não autoriza materialização visual.
-
-Documento de Home existente não significa automaticamente Home implementada, publicada ou operacional.
-
-## Tecnologia e operação
-
-Não estão comprovados ou autorizados apenas pela documentação:
-
-- UXA-102/V5;
-- retomada de Product Engineering;
-- produção Neo4j/GraphRAG/GDS;
-- ontologia física final;
-- MLOps e APIs operacionais;
-- Power BI integrado ao Intelligence em produção;
-- Design/UI/protótipo das Homes;
-- PMF;
-- cobrança real/gateway;
-- Fundação Guivos juridicamente constituída;
-- mercado ativo em Portugal;
-- filing das assinaturas sem Human Filing Authorization.
-
-## Navegação principal durante a auditoria
-
-- [Estado Atual 3.4.0](docs/project/current-state-register.md)
-- [Roadmap 13.4.0](docs/roadmap.md)
-- [Auditoria Integral do GKR](docs/project/gkr-full-corpus-audit.md)
-- [Auditoria do Lote F — Homes Especializadas](docs/project/gkr-specialized-homes-audit.md)
-- [Reconciliação das Homes Especializadas](docs/experience-architecture/public-specialized-homes-reconciliation.md)
-- [Guia Oficial / Public Canon](docs/public/guia-oficial-da-guivos.md)
-- [Fundação](docs/geb/part-01-foundation/index.md)
-- [Arquitetura de Produtos](docs/product-architecture/index.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
-- [Jornadas](docs/journeys/index.md)
-- [Modelo Econômico](docs/economic-model/index.md)
-- [Research e Validação](docs/research/market-validation/README.md)
-- [Go-to-Market](docs/go-to-market/index.md)
+- [Jornadas Integradas](docs/journeys/index.md)
+- [Home Principal / Pessoa](docs/experience-architecture/public-home-master-document.md)
+- [Home de Organizações e Coletivos](docs/experience-architecture/public-home-organizations-collectives-master-document.md)
+- [Homes dos Produtos Especializados](docs/experience-architecture/public-specialized-homes-reconciliation.md)
+- [PER-002 — Elegibilidade de Materialização e Handoff para Design](docs/experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md)
+- [PER-002 — Autorização Governada de Design Low-Fidelity](docs/experience-architecture/per-002-design-authorization.md)
+- [PER-002 — Materialização Low-Fidelity Funcional de Design](docs/experience-architecture/per-002-low-fidelity-design-delivery.md)
+- [PER-002 — Validação Funcional da Materialização Low-Fidelity](docs/experience-architecture/per-002-low-fidelity-functional-validation.md)
+- [PER-002 — Elegibilidade Pós-Validação para Design High-Fidelity](docs/experience-architecture/per-002-high-fidelity-design-eligibility.md)
+- [PER-002 — Autorização Governada de Design High-Fidelity](docs/experience-architecture/per-002-high-fidelity-design-authorization.md)
+- [PER-002 — Entrega High-Fidelity de Design](docs/experience-architecture/per-002-high-fidelity-design-delivery.md)
+- [PER-002 — Validação Governada da Entrega High-Fidelity](docs/experience-architecture/per-002-high-fidelity-design-validation.md)
+- [PER-002 — Elegibilidade Pós-Validação para Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-eligibility.md)
+- [PER-002 — Autorização Governada de Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-authorization.md)
+- [PER-002 — Entrega do Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-delivery.md)
+- [PER-002 — Validação Pré-Review do Protótipo Interativo — Evidência Histórica](docs/experience-architecture/per-002-interactive-prototype-validation.md)
+- [PER-002 — Revalidação Pós-Review do Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-post-review-revalidation.md)
 
-O `mkdocs.yml` ainda será reconstruído no Lote O da auditoria. Até lá, sua estrutura não deve ser interpretada como arquitetura final da base de conhecimento.
+### Research e Validação
+
+- [Research](docs/research/index.md)
+- [Validação de Mercado](docs/research/market-validation/README.md)
+- [Pesquisa do Ecossistema](docs/research/RP-001/index.md)
+- [Possibilidades, Oportunidades e Supply](docs/research/RP-002/index.md)
+
+```text
+MÉTODO DEFINIDO
+≠ EVIDÊNCIA REAL
+≠ PMF
+```
+
+### Dados, Intelligence e Tecnologia
+
+- [Arquitetura Corporativa](docs/enterprise-architecture/index.md)
+- [Intelligence e IA](docs/intelligence-architecture/index.md)
+- [Neo4j como Tecnologia Primária de Referência](docs/adr/ADR-007-neo4j-primary-graph-reference.md)
+
+```text
+REFERENCE_SELECTED
+≠ POC
+≠ PROVISIONED
+≠ INTEGRATED
+≠ PRODUCTION
+
+ACTIVE / NORMATIVE REFERENCE ARCHITECTURE
+≠ IMPLEMENTATION
+≠ OPERATION
+≠ PRODUCTION
+```
+
+### Jurídico, Privacidade e Institucional
+
+- [Arquitetura Institucional e Jurídica](docs/governance-framework/institutional-and-legal-architecture-index.md)
+- [Privacidade e Verdade Operacional](docs/governance-framework/operational-privacy-and-legal-truth-index.md)
+- [Fundação Guivos — Conceito e Estado Jurídico](docs/governance-framework/fundacao-guivos-institutional-concept-and-legal-status.md)
+- [Proteção Marcária — Autorização de Filing](docs/governance-framework/trademark-brazil-signature-filing-authorization-package.md)
+
+### GTM e Internacionalização
+
+- [Go-to-Market](docs/go-to-market/index.md)
+- [Internacionalização e Governança Territorial](docs/go-to-market/gtm-007-internationalization-and-territorial-governance.md)
+- [Piloto Portugal — Gates de Prontidão](docs/go-to-market/gtm-008-portugal-pilot-readiness-gates.md)
+- [Operações Internacionais e Cross-Border](docs/governance-framework/international-operations-and-cross-border-readiness.md)
+
+```text
+ESTRATÉGIA INTERNACIONAL
+≠ AUTORIZAÇÃO TERRITORIAL
+≠ OPERAÇÃO INTERNACIONAL COMPROVADA
+```
+
+### Governança do GKR
+
+- [Auditoria Integral do Corpus](docs/project/gkr-full-corpus-audit.md)
+- [Framework de Auditoria Arquitetural](docs/governance-framework/architectural-audit-framework.md)
+- [Consolidação do Conhecimento Arquitetural](docs/governance-framework/architectural-knowledge-consolidation-pipeline.md)
+- [GKR como Fonte Única da Verdade](docs/adr/ADR-001-gkr-as-source-of-truth.md)
+- [Arquitetura de Conhecimento da Guivos](docs/adr/ADR-006-guivos-knowledge-architecture.md)
+
+## Rotas por equipe
+
+As equipes não recebem cópias próprias de autoridades. Elas entram no mesmo corpus por rotas diferentes:
+
+| Necessidade | Entradas recomendadas |
+|---|---|
+| Liderança / estratégia | Estado Atual · Roadmap · Estratégia de Negócio · Modelo Econômico |
+| Marketing / marca | Marca e Ativos Digitais · Guia Oficial · Go-to-Market |
+| Publicidade / Ads | Arquitetura de Produtos · Modelo Econômico · Go-to-Market |
+| Comercial | Estratégia de Negócio · Produtos · Economia · GTM |
+| Produto | Arquitetura de Produtos · Experience Architecture · Jornadas |
+| UX / Design | Experience Architecture · Jornadas · PER-002 Handoff · Design Authorization · Design Delivery · Functional Validation · High-Fidelity Eligibility · High-Fidelity Authorization · High-Fidelity Delivery · High-Fidelity Validation · Prototype Eligibility · Prototype Authorization · Prototype Delivery · Historical Prototype Validation · Post-Review Prototype Revalidation · Estado Atual |
+| Desenvolvimento | Produtos · Experience Architecture · Arquitetura Corporativa |
+| Dados / Intelligence | Intelligence · Arquitetura Corporativa · Research |
+| Research | Research · RP-001 · RP-002 · Privacidade |
+| Jurídico / privacidade | Arquitetura Institucional e Jurídica · Verdade Operacional |
+| Internacionalização / operação | GTM · Internacionalização · Cross-Border Readiness |
+
+## Guardrail de maturidade
+
+Nenhuma rota de navegação promove o estado de uma frente.
+
+```text
+DOCUMENTADO ≠ IMPLEMENTADO ≠ TESTADO ≠ APROVADO OPERACIONALMENTE
+HOME DOCUMENTADA ≠ HOME IMPLEMENTADA
+SOURCE LOCK ≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
+AUDITORIA DOCUMENTAL ≠ EVIDÊNCIA OPERACIONAL
+ACTIVE / NORMATIVE REFERENCE ARCHITECTURE ≠ IMPLEMENTATION AUTHORIZATION
+DESIGN HANDOFF BOUNDARY ≠ DESIGN AUTHORIZATION
+DESIGN AUTHORIZATION ≠ DESIGN DELIVERY ≠ FUNCTIONAL VALIDATION
+DESIGN DELIVERY ≠ VISUAL MATURITY PROMOTION
+FUNCTIONAL VALIDATION PASS ≠ HIGH-FIDELITY AUTHORIZATION
+HIGH-FIDELITY ELIGIBILITY ≠ HIGH-FIDELITY AUTHORIZATION ≠ EXECUTION
+HIGH-FIDELITY AUTHORIZATION ≠ HIGH-FIDELITY EXECUTION ≠ PROTOTYPE
+HIGH-FIDELITY DELIVERY ≠ HIGH-FIDELITY VALIDATION
+HIGH-FIDELITY VALIDATION PASS ≠ PROTOTYPE AUTHORIZATION
+PROTOTYPE ELIGIBILITY ≠ PROTOTYPE AUTHORIZATION ≠ PROTOTYPE EXECUTION
+PROTOTYPE AUTHORIZATION ≠ PROTOTYPE EXECUTION ≠ PROTOTYPE VALIDATION
+PROTOTYPE VALIDATION PRE-REVIEW ≠ CURRENT POST-REVIEW CONCLUSION
+```
+
+Para qualquer afirmação de estado, prevalece o [Registro do Estado Atual](docs/project/current-state-register.md).

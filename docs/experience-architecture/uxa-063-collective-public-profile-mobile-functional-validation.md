@@ -9,7 +9,6 @@ parent: UXA-005
 depends_on:
   - UXA-001
   - UXA-003
-  - UXA-005
   - UXA-009
   - UXA-011
   - UXA-011-A1
@@ -19,11 +18,8 @@ depends_on:
   - UXA-057
   - UXA-058
   - UXA-059
-  - UXA-060
   - UXA-061
-  - UXA-062
 related:
-  - UXA-064
   - M7.65
 normative: false
 ---

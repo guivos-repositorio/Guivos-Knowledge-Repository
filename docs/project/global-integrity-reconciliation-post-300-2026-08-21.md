@@ -1,10 +1,10 @@
 ---
 id: GKR-GLOBAL-INTEGRITY-POST300-001
-title: Reconciliação Global de Integridade pós-PR #300
+title: Reconciliação Global de Integridade pós-PR #300 — Registro de Snapshot
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-08-21
+last_updated: 2026-08-30
 depends_on:
   - GKR-STATE-001
 related:
@@ -21,17 +21,28 @@ related:
   - GKR-CHRISTIAN-FOUNDATION-001
   - GKR-CHRISTIAN-FOUNDATION-BIBLICAL-INDEX-001
   - GOG-001
+  - GKR-FULL-CORPUS-AUDIT-001
   - M7.88
 normative: false
 ---
 
-# Reconciliação Global de Integridade pós-PR #300
+# Reconciliação Global de Integridade pós-PR #300 — Registro de Snapshot
 
 ## 1. Finalidade
 
-Este registro documenta a auditoria transversal executada após a integração da PR #300 e governa a correção de deriva entre autoridades temáticas vigentes e superfícies globais/derivadas do Guivos Knowledge Repository.
+Este registro documenta a auditoria transversal executada após a integração da PR #300 e a correção de deriva então realizada entre autoridades temáticas e superfícies globais/derivadas do Guivos Knowledge Repository.
 
-A auditoria concluiu:
+Ele permanece `active` como **registro probatório daquele snapshot de reconciliação**, não como autoridade do estado corrente. O estado atual é governado por `GKR-STATE-001` e pela Auditoria Integral vigente.
+
+```text
+SNAPSHOT PÓS-300
+≠ ESTADO CORRENTE
+
+CONTAGEM REGISTRADA NO SNAPSHOT
+≠ MATURIDADE VISUAL VIGENTE
+```
+
+A auditoria daquele momento concluiu:
 
 ```text
 DECISÃO CANÔNICA VALIDADA PERDIDA = NÃO IDENTIFICADA
@@ -53,20 +64,22 @@ próxima UXA            = UXA-102/V5 — NOT_STARTED
 Product Engineering    = PAUSED_BEFORE_W0-01
 ```
 
-## 3. Decisões preservadas
+Essas referências descrevem a baseline histórica auditada em 21/08/2026.
 
-A reconciliação preserva integralmente:
+## 3. Decisões preservadas no snapshot
+
+A reconciliação preservou integralmente, naquele ponto:
 
 - Pessoa, Coletivo e Organização como participantes estruturais;
 - Journey, Mall, Travel, Business, Media, Intelligence e Ads como sete Produtos Especializados;
 - `Organização ≠ Guivos Business`;
 - taxonomia vigente dos planos;
 - 9 Domínios de Evolução + `Ainda estou descobrindo`;
-- 121 SVGs validados, 121 associações, 34 perfis, 57 superfícies/estados/fronteiras e 66 transições;
-- M7.88 e UXA-101 como fechamento funcional vigente;
-- oito Homes documentalmente convergidas e Design Delivery v4 sem Design automaticamente produzido;
+- o snapshot então registrado de **121 SVGs funcionalmente validados, 121 associações, 34 perfis, 57 superfícies/estados/fronteiras e 66 transições**;
+- M7.88 e UXA-101 como fechamento funcional vigente naquele ponto;
+- oito Homes documentalmente convergidas e Design Delivery v4 sem Design automaticamente produzido naquele snapshot;
 - `GPA-004 v1.6.0` e as duas ofertas principais do Guivos Business;
-- `GPA-006 v2.0.0`, `GIA-000 v1.5.0` e a cadeia pública da Home Guivos Intelligence;
+- `GPA-006 v2.0.0`, `GIA-000 v1.5.0` e a cadeia pública da Home Guivos Intelligence naquele snapshot;
 - Neo4j como `reference_selected`, não produção comprovada;
 - `GKR-BRAND-SIGNATURE-001` e a assinatura `Possibility, lived.`;
 - `Possibilidade, vivida.`, `#PossibilityLived` e `Do possível ao vivido.` em seus papéis governados;
@@ -76,9 +89,16 @@ A reconciliação preserva integralmente:
 - `GKR-CHRISTIAN-FOUNDATION-001 v1.0.0`, `Evolução com propósito`, essência cristã e base bíblica convergente;
 - `primary_use: internal_governance`, `classification: public`, `authority_profile: public_foundational` e reutilização externa não automática.
 
+A claim histórica dos **121 SVGs funcionalmente validados** foi posteriormente supersedida como resumo da maturidade visual vigente após a reconciliação de Organização/Coletivo e a Auditoria Integral. Ela permanece aqui somente para preservar o estado que este registro efetivamente auditou.
+
+```text
+121 SVGs VALIDADOS NO SNAPSHOT PÓS-300
+≠ 121 WIREFRAMES VIGENTES/VALIDADOS NO CORPUS ATUAL
+```
+
 ## 4. Derivas identificadas
 
-Foram identificadas as seguintes classes de deriva:
+Foram identificadas as seguintes classes de deriva naquele ciclo:
 
 1. `GKR-STATE-001` não representava ainda, no snapshot global, toda a cadeia recente de assinatura/proteção marcária;
 2. `ROADMAP` antecedia as últimas frentes de marca e Fundamento Cristão;
@@ -99,9 +119,9 @@ RESOLVER REVIEW DE EXECUÇÃO ≠ DESFAZER CLEAR/FILE
 MELHORAR NAVEGAÇÃO ≠ PROMOVER DOUTRINA A PUBLIC CANON
 ```
 
-## 6. Marca e filing — estado reconciliado
+## 6. Marca e filing — estado reconciliado naquele snapshot
 
-A assinatura e o filing permanecem separados:
+A assinatura e o filing permaneciam separados:
 
 ```text
 Possibility, lived.      = canonical
@@ -118,19 +138,19 @@ signature_filed          = false
 signature_registered     = false
 ```
 
-`FILE` permanece decisão estratégica de depósito. A execução continua dependente de Human Filing Authorization e dos gates factuais imediatamente anteriores ao protocolo.
+`FILE` permanecia decisão estratégica de depósito. A execução continuava dependente de Human Filing Authorization e dos gates factuais imediatamente anteriores ao protocolo.
 
 ### 6.1 Evidência de clearance
 
-A evidência informada pelo titular recebe referência documental explícita e tratamento `reference_only`, preservando origem, data, escopo de busca e conclusão sem copiar material externo para o corpus público quando não necessário.
+A evidência informada pelo titular recebia referência documental explícita e tratamento `reference_only`, preservando origem, data, escopo de busca e conclusão sem copiar material externo para o corpus público quando não necessário.
 
 ### 6.2 AIaaS
 
-A decisão de manter classe 42 permanece. `AIaaS` somente pode integrar a especificação executada se houver evidência compatível da atividade efetiva/objeto aplicável no gate de autorização/protocolo. Sem essa evidência, o item não deve ser incluído silenciosamente.
+A decisão de manter classe 42 permanecia. `AIaaS` somente poderia integrar a especificação executada se houvesse evidência compatível da atividade efetiva/objeto aplicável no gate de autorização/protocolo. Sem essa evidência, o item não deveria ser incluído silenciosamente.
 
-Essa proteção não reabre a classe 42 nem a decisão `FILE`.
+Essa proteção não reabria a classe 42 nem a decisão `FILE`.
 
-## 7. Fundamento Cristão — estado reconciliado
+## 7. Fundamento Cristão — estado reconciliado naquele snapshot
 
 ```text
 GKR-CHRISTIAN-FOUNDATION-001 = integrated / active foundational authority
@@ -141,7 +161,7 @@ authority_profile            = public_foundational
 external_reuse_automatic     = false
 ```
 
-As passagens fundamentais permanecem:
+As passagens fundamentais permaneciam:
 
 - Lucas 2:52;
 - Efésios 4:15;
@@ -161,7 +181,7 @@ DESPERTAR
 → APROXIMAR-SE DE DEUS
 ```
 
-A melhoria de encontrabilidade no menu não transforma essa autoridade em copy comercial, Public Canon ou exposição religiosa obrigatória.
+A melhoria de encontrabilidade no menu não transformava essa autoridade em copy comercial, Public Canon ou exposição religiosa obrigatória.
 
 ## 8. Limites
 
@@ -181,7 +201,7 @@ Esta reconciliação não:
 
 ## 9. Resultado esperado
 
-Ao término da reconciliação, as superfícies globais do GKR devem voltar a apontar para a mesma realidade:
+Ao término daquela reconciliação, as superfícies globais do GKR deveriam voltar a apontar para a mesma realidade:
 
 ```text
 UMA AUTORIDADE TEMÁTICA VIGENTE
@@ -190,3 +210,5 @@ UMA AUTORIDADE TEMÁTICA VIGENTE
 → HISTÓRICO PRESERVADO
 → PRÓXIMOS GATES SEM INFERÊNCIA AUTOMÁTICA
 ```
+
+A aplicação atual dessa regra pertence às autoridades vigentes e à Auditoria Integral, não a este snapshot histórico isolado.

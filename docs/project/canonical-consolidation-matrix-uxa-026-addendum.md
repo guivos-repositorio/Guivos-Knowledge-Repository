@@ -7,11 +7,9 @@ owner: Guivos
 last_updated: 2026-07-26
 parent: GKR-CANON-MATRIX-001
 depends_on:
-  - UXA-024
   - UXA-025
   - UXA-026
 related:
-  - UXA-005
   - M7.27
 normative: false
 ---

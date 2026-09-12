@@ -6,7 +6,6 @@ version: 1.60.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-28
 depends_on:
-  - UXA-036
   - UXA-037
 related:
   - GKR-STATE-001
@@ -24,7 +23,7 @@ Validação funcional especializada e reformulação do wireframe móvel da comp
 ## 2. Artefatos criados
 
 - `docs/experience-architecture/uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-insufficient-basis-mobile.svg`;
+- `uxa-036-initial-understanding-insufficient-basis-mobile.svg [historical SVG; physical file removed in F-016-A]`;
 - `docs/project/canonical-consolidation-matrix-uxa-037-addendum.md`;
 - este histórico.
 

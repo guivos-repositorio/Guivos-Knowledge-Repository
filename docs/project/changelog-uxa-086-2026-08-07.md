@@ -6,7 +6,6 @@ version: 1.0.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
-  - UXA-086
   - GKR-STATE-001
 related:
   - GKR-JOURNEY-SCREEN-GALLERY-001

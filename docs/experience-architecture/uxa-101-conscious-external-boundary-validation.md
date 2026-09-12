@@ -7,7 +7,6 @@ owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 depends_on:
   - UXA-004
-  - UXA-007
   - UXA-012
   - UXA-059
   - UXA-098
@@ -23,6 +22,9 @@ normative: false
 ---
 
 # UXA-101 — Validação da Saída Consciente para Fronteira Externa de Oportunidades
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Objetivo
 
@@ -127,7 +129,7 @@ Retornar posteriormente à Guivos:
 
 ## 7. Materialização visual reformulada
 
-O ativo `docs/assets/wireframes/uxa-007-opportunity-detail-mobile.svg` é reformulado nesta frente para incluir, no mesmo artefato e sob a mesma responsabilidade `PER-203`, o estado acionado por **“Ver como participar”**.
+O ativo `uxa-007-opportunity-detail-mobile.svg [historical SVG; physical file removed in F-016-A]` é reformulado nesta frente para incluir, no mesmo artefato e sob a mesma responsabilidade `PER-203`, o estado acionado por **“Ver como participar”**.
 
 A reformulação explicita:
 

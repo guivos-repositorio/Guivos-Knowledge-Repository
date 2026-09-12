@@ -6,7 +6,6 @@ version: 1.33.0
 owner: Guivos
 last_updated: 2026-07-26
 related:
-  - UXA-006
   - UXA-010
   - ROADMAP-11.86.0
   - GKR-STATE-001

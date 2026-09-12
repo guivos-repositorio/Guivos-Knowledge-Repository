@@ -2,23 +2,18 @@
 id: GKR-CCM-UXA-050-A1
 title: Adendo da Matriz de Consolidação Canônica — UXA-050
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-02
+last_updated: 2026-09-01
 depends_on:
   - UXA-050
 related:
   - UXA-038
   - UXA-039
-  - UXA-040
   - UXA-041
-  - UXA-042
   - UXA-043
-  - UXA-044
   - UXA-045
-  - UXA-046
   - UXA-047
-  - UXA-048
   - UXA-049
   - M7.52
 normative: false
@@ -29,6 +24,8 @@ normative: false
 ## 1. Finalidade
 
 Registrar a consolidação transversal do conjunto completo de wireframes do Opportunity Boost sem criar Resultado Empresarial canônico, política operacional final ou autorização de desenvolvimento.
+
+A reconciliação de 2026-09-01 preserva este adendo como registro especializado do incremento original. Declarações abaixo sobre estado proposto, resultante ou canônico, contagens, versões, baselines, pendências, marcos, próximos gates/transições/atos e autorizações futuras são **snapshots históricos do estágio em que o incremento foi integrado**; não representam o estado transversal vigente e não substituem `GKR-STATE-001`, registries ou autoridades de domínio vigentes.
 
 ## 2. Resultado do incremento
 

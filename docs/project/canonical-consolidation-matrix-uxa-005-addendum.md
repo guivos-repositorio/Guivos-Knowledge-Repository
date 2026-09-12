@@ -7,10 +7,6 @@ owner: Guivos
 last_updated: 2026-07-26
 related:
   - GKR-CANON-MATRIX-001
-  - UXA-005
-  - UXA-006
-  - UXA-007
-  - UXA-008
   - M7.19.2
 normative: false
 ---

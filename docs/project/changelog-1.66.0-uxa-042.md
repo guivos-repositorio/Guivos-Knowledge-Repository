@@ -5,8 +5,6 @@ status: active
 version: 1.66.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-29
-depends_on:
-  - UXA-042
 related:
   - GKR-STATE-001
   - ROADMAP-12.18.0

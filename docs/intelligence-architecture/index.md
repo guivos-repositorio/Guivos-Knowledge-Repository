@@ -2,13 +2,15 @@
 id: GIA-000
 title: Guivos Intelligence Architecture
 status: active
-version: 1.6.0
+version: 1.7.0
 owner: Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-10
 related:
   - GPA-006
   - GAI-001
   - GAI-002
+  - GIA-COG-001
+  - ADR-008
   - GEA-GRAPH-REFERENCE-001
   - ADR-007
   - GKR-INTELLIGENCE-CONTINUITY-001
@@ -25,6 +27,8 @@ Este domínio reúne os modelos arquiteturais que orientam como a Guivos realiza
 
 - [GAI-001 — Guivos Artificial Intelligence Knowledge Model](knowledge-model.md)
 - [GAI-002 — Manifesto da Inteligência do Ecossistema Guivos](manifesto.md)
+- [GIA-COG-001 — Cognitive Reference Architecture](cognitive-reference-architecture.md)
+- [ADR-008 — Subordinação e ownership da Cognitive Reference Architecture](../adr/ADR-008-cognitive-reference-architecture-placement-and-ownership.md)
 
 ## Expressão oficial
 
@@ -36,7 +40,7 @@ Ela descreve uma inteligência transversal que interpreta um ecossistema vivo de
 
 `GPA-006 — Guivos Intelligence 2.0.0` governa a **identidade e a autoridade de produto**.
 
-`GIA-000`, `GAI-001` e `GAI-002` governam princípios e arquiteturas responsáveis por realizar as capacidades do produto sem redefinir seu significado.
+`GIA-000`, `GAI-001`, `GAI-002` e `GIA-COG-001` governam princípios e arquiteturas responsáveis por realizar as capacidades do produto sem redefinir seu significado. `GIA-COG-001` é a arquitetura cognitiva de referência vigente, subordinada à GIA conforme `ADR-008`.
 
 `GEA-GRAPH-REFERENCE-001` governa a arquitetura de referência para grafo e tecnologias relacionadas.
 
@@ -44,12 +48,15 @@ Ela descreve uma inteligência transversal que interpreta um ecossistema vivo de
 flowchart TD
     P[GPA-006 — Produto]
     A[GIA / GAI — Intelligence Architecture]
+    C[GIA-COG-001 — Cognitive Reference Architecture]
     G[GEA-GRAPH-REFERENCE-001 — Graph Architecture]
     E[Engineering]
     T[Tecnologias]
 
     P --> A
+    A --> C
     P --> G
+    C --> E
     A --> E
     G --> E
     E --> T
@@ -65,6 +72,10 @@ GIA-000 / GAI-001 / GAI-002
 = como a Intelligence Architecture organiza contexto, conhecimento,
   aprendizagem, princípios e responsabilidades técnicas
 
+GIA-COG-001
+= arquitetura cognitiva lógica de referência vigente,
+  subordinada à GIA e sem equivaler a implementação
+
 GEA-GRAPH-REFERENCE-001
 = arquitetura de referência para grafo e mecanismos relacionados
 
@@ -79,6 +90,25 @@ A tecnologia não pode redefinir autoridade de produto.
 > **A tecnologia amplia a capacidade do Intelligence. Não amplia sua autoridade.**
 
 A Intelligence Architecture deve preservar autonomia humana, finalidade, minimização, proveniência, temporalidade, explicabilidade, incerteza, proteção e autoridade definidos em `GPA-006`.
+
+## Cognitive Reference Architecture
+
+`GIA-COG-001 v0.1.1` é a **Cognitive Reference Architecture vigente, ativa e normativa** da Guivos Intelligence Architecture.
+
+Ela organiza, em nível lógico e tecnologicamente neutro, o fluxo cognitivo entre request, contexto de representação, finalidade/autoridade/sensibilidade, elegibilidade pré-processamento, contexto e evidência, processamento, normalização, fusão, assurance, output, disclosure, projeção ao consumidor, serving e decisão humana ou do domínio responsável.
+
+Preservações estruturais:
+
+```text
+COMPREENDER ≠ DECIDIR
+PROCESSING AUTHORIZED ≠ DISCLOSURE AUTHORIZED
+INFERÊNCIA ≠ FATO
+CORRELAÇÃO ≠ CAUSALIDADE
+OUTPUT AUTORIZADO ≠ DATASET DE ORIGEM
+ENTITLEMENT ≠ AUTORIDADE
+```
+
+A promoção canônica de `GIA-COG-001` não autoriza `GIA-COG-002..008`, arquitetura física, modelo físico de dados, ontologia física, provedores/modelos/stack, uso de dados reais, Product Engineering, operação ou produção.
 
 ## Relação com as camadas
 
@@ -308,15 +338,24 @@ Dado autorizado para personalização, analytics ou serving não está automatic
 
 ## Estado
 
-`GPA-006 2.0.0` consolida a arquitetura de produto dos Checkpoints 1–12. O **Product Source Lock do Guivos Intelligence** está integrado, a **Home Pública do Intelligence v1** possui arquitetura conceitual completa em 11 movimentos e Documento Mestre `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`, e o **Source Lock da Home** existe como `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`, ativo e normativo.
+`GPA-006 2.0.0` consolida a arquitetura de produto dos Checkpoints 1–12. `GIA-COG-001 v0.1.1` é a Cognitive Reference Architecture vigente, ativa e normativa, subordinada à GIA por `ADR-008`. O **Product Source Lock do Guivos Intelligence** está integrado, a **Home Pública do Intelligence v1** possui arquitetura conceitual completa em 11 movimentos e Documento Mestre `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`, e o **Source Lock da Home** existe como `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`, ativo e normativo.
 
 O Source Lock da Home congela as fontes de autoridade para futura materialização. Ele não constitui, por si só, autorização de Design, materialização visual, implementação ou publicação.
 
-Estado governado durante a Auditoria Integral:
+Estado governado:
 
 ```text
 PRODUTO GUIVOS INTELLIGENCE
 → CONSOLIDADO EM GPA-006 v2.0.0
+
+COGNITIVE REFERENCE ARCHITECTURE
+→ GIA-COG-001 v0.1.1
+→ ACTIVE / NORMATIVE
+→ CONCEPTUAL / REFERENCE LEVEL
+→ IMPLEMENTATION / REAL DATA / PRODUCTION NOT AUTHORIZED
+
+GIA-COG-002..008
+→ RESERVED / NOT MATERIALIZED
 
 PRODUCT SOURCE LOCK
 → INTEGRADO
@@ -346,6 +385,7 @@ Permanecem abertos ou não evidenciados:
 - LPM físico;
 - GPMA;
 - família física de Intelligence Engines;
+- `GIA-COG-002..008`;
 - ontologia lógica completa;
 - ontologia física;
 - modelo físico de dados;
@@ -362,4 +402,4 @@ Permanecem abertos ou não evidenciados:
 - explicabilidade operacional;
 - controles de privacidade operacionais.
 
-A próxima etapa da Home não é automaticamente Design nem implementação. Durante a Auditoria Integral, sua autoridade documental permanece submetida ao `GKR-FULL-CORPUS-AUDIT-001`, ao diagnóstico do Lote F em `GKR-SPECIALIZED-HOMES-AUDIT-001` e ao gate global que mantém materialização visual suspensa.
+A promoção canônica de `GIA-COG-001` não constitui autorização de Design, Product Engineering, implementação ou produção. Qualquer realização física permanece sujeita a gate próprio.

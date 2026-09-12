@@ -2,9 +2,9 @@
 id: GKR-UX-D5-C4A-001
 title: Materialização e Contrato Integrado dos Handoffs de Direção, Movimento e Evolução — D5-C4A
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-08-30
 parent: UXA-000
 depends_on:
   - GKR-UX-D5-C1-001
@@ -21,10 +21,15 @@ related:
   - GKR-TRN-011
   - GKR-TRN-012
   - GKR-TRN-013
+  - GKR-FULL-CORPUS-AUDIT-001
+  - GKR-JOURNEY-SCREEN-CATALOG-001
 normative: false
 ---
 
 # GKR-UX-D5-C4A-001 — Materialização e Contrato Integrado dos Handoffs de Direção, Movimento e Evolução
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 
@@ -40,6 +45,8 @@ A frente:
 
 A D5-C4A **não promove `TRN-008..013`**. As seis transições continuam `contratadas` até validação integrada posterior.
 
+A atualização de 2026-08-30 preserva o contrato funcional deste documento e corrige somente a leitura de uma antiga claim agregada de maturidade visual. Contagens registradas aqui como snapshot histórico não substituem os instrumentos atuais de catálogo, galeria, traceability ou auditoria.
+
 ## 2. Escopo físico e granular
 
 A frente não cria:
@@ -51,9 +58,9 @@ A frente não cria:
 - nova UXA numerada;
 - implementação técnica.
 
-A baseline permanece:
+Na data da D5-C4A, o snapshot físico/documental registrava:
 
-- 121 SVGs canônicos;
+- 121 SVGs físicos no inventário;
 - 121 associações;
 - 34 perfis;
 - 57 superfícies/estados/fronteiras;
@@ -61,6 +68,13 @@ A baseline permanece:
 - 45 de 57 IDs com referência visual;
 - 10 responsabilidades sem SVG dedicado;
 - 2 fronteiras sem tela.
+
+Essas contagens descrevem o snapshot físico/associativo daquele momento. Após a reconciliação pós-PR #313/#314 e a Auditoria Integral, elas **não** podem ser usadas como sinônimo de quantidade de wireframes vigentes ou validados.
+
+```text
+CONTAGEM FÍSICA DO SNAPSHOT
+≠ MATURIDADE VISUAL VIGENTE
+```
 
 O SVG recorrente `uxa-006-hoje-mobile.svg` é reformulado e revalidado localmente. A primeira variante de Hoje (`uxa-097-first-today-after-initial-understanding-mobile.svg`) permanece inalterada porque sua responsabilidade é orientar a primeira entrada sem sobrecarga. Os handoffs especializados são disponibilidade do estado recorrente quando aplicáveis, não obrigação da primeira entrada.
 
@@ -276,7 +290,17 @@ O estado recorrente de Hoje é revalidado localmente porque a reformulação:
 - clarifica que o passo aberto é o item atualmente mostrado;
 - preserva Hoje como síntese recorrente.
 
-Essa revalidação mantém o inventário em **121 SVGs funcionalmente validados / 0 pendentes**.
+No snapshot histórico da D5-C4A, os instrumentos então vigentes registravam **121 SVGs / 121 funcionalmente validados / 0 pendentes**. Essa formulação foi posteriormente supersedida como claim global de maturidade após a reconciliação de Organização/Coletivo e a Auditoria Integral.
+
+A conclusão que permanece vigente deste documento é apenas:
+
+> **`PER-008` recorrente foi reformulado e revalidado localmente no limite da D5-C4A.**
+
+```text
+REVALIDAÇÃO LOCAL DE PER-008
+≠ REVALIDAÇÃO DOS 121 SVGs
+≠ CONTAGEM GLOBAL DE MATURIDADE VIGENTE
+```
 
 Ela não constitui validação ponta a ponta das seis transições.
 
@@ -298,10 +322,12 @@ TRN-012 — contratada
 TRN-013 — contratada
 ```
 
+Os estados das transições acima descrevem o fechamento da D5-C4A naquele momento; autoridades posteriores, especialmente D5-C4B, governam promoções subsequentes.
+
 ## 13. Gate posterior
 
-A próxima frente lógica, se autorizada separadamente, é **D5-C4B — validação integrada dos seis handoffs**.
+A próxima frente lógica no fechamento original da D5-C4A era **D5-C4B — validação integrada dos seis handoffs**.
 
-A D5-C4B deverá decidir individualmente se cada `TRN-008..013` possui evidência suficiente para promoção, sem assumir que as seis devem receber a mesma maturidade.
+A D5-C4B deveria decidir individualmente se cada `TRN-008..013` possuía evidência suficiente para promoção, sem assumir que as seis deveriam receber a mesma maturidade.
 
-D5-C4A não inicia D5-C4B, UXA-102/V5, D6, D7 ou Engenharia de Produto.
+D5-C4A não iniciou D5-C4B, UXA-102/V5, D6, D7 ou Engenharia de Produto. Autoridades posteriores registram a execução efetiva de D5-C4B.

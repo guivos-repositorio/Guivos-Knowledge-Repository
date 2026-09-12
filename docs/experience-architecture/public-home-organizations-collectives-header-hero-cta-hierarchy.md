@@ -771,30 +771,36 @@ Também deverá preservar:
 
 ---
 
-## 29. Relação com UXA-015 e UXA-016
+## 29. Relação histórica com UXA-015 e UXA-016 e fronteira vigente
 
-Os wireframes autenticados de Organização e Coletivo não governam o Header desta Home pública.
+No checkpoint em que este contrato navegacional foi originalmente escrito, `UXA-015` e `UXA-016` eram usadas como referências dos ambientes autenticados de Organização e Coletivo. Ambas estão hoje **`superseded`** e permanecem apenas como proveniência histórica; não são dependências, autoridades funcionais vigentes nem baselines necessárias deste documento.
 
-Portanto:
+O contraste semântico preservado continua válido sem depender fisicamente desses artefatos:
 
 ```text
 Header público da Guivos
 ≠
-Header da Visão Geral da Organização
+Header / navegação de ambiente autenticado da Organização
 ≠
-Header do Início do Coletivo
+Header / navegação de ambiente autenticado do Coletivo
 ```
 
-A página pública ainda não possui autoridade representada, unidade selecionada, papel autenticado ou governança operacional ativa.
+A Home pública não possui autoridade representada, unidade selecionada, papel autenticado ou governança operacional ativa.
 
-Esses estados somente pertencem aos ambientes autenticados apropriados.
+Os estados autenticados atuais são governados pelas autoridades vigentes de Organização/Coletivo, incluindo `UXA-014`, `UXA-019`, Jobs e Arquitetura da Informação autenticada. Jobs + IA estão definidos documentalmente em `pre-surface-map`; mapa final de superfícies e wireframes principais autenticados permanecem pendentes.
 
 ```text
+UXA-015 / UXA-016
+→ PROVENIÊNCIA HISTÓRICA SUPERSEDED
+→ NÃO GOVERNAM O ESTADO AUTENTICADO ATUAL
+
 VERDADE PÚBLICA SOBRE AUTORIDADE
 ≠ ARQUITETURA DA INFORMAÇÃO AUTENTICADA
 ≠ RBAC
 ≠ MENU INTERNO
 ```
+
+Esta distinção não autoriza materialização do ambiente autenticado e não declara elegibilidade de cleanup físico por si só.
 
 ---
 

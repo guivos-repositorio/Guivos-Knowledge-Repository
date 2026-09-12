@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.0
+version: 1.0.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-27
+last_updated: 2026-09-08
 normative: false
 maturity: reconciled_architecture_pre_materialization
 depends_on:
@@ -45,7 +45,7 @@ Ele existe para que liderança, Brand, Marketing, Produto, Experience Architectu
 
 Regra de consumo:
 
-> **Para compreender o estado atual da Home Pública — Pessoa, comece por este documento. Os artefatos especializados permanecem como aprofundamento e evidência de decisões específicas enquanto a auditoria integral não concluir sua absorção ou permanência.**
+> **Para compreender o estado atual da Home Pública — Pessoa, comece por este documento. Os artefatos especializados permanecem como aprofundamento e evidência de decisões específicas enquanto mantiverem função própria e até eventual absorção/remoção ser adjudicada separadamente.**
 
 Este master:
 
@@ -54,7 +54,7 @@ Este master:
 - corrige formulações superadas sem apagar seu histórico no Git;
 - distingue verdade vigente de materialização futura;
 - não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, campanha ou lançamento;
-- não define a primeira tela autenticada após a Home.
+- consome a fronteira funcional de Q sem definir sua materialização visual.
 
 ```text
 MASTER VIGENTE
@@ -80,8 +80,20 @@ HOME PRINCIPAL / PESSOA
 MATERIALIZAÇÃO VISUAL NOVA
 → NÃO AUTORIZADA POR ESTE DOCUMENTO
 
-PRIMEIRA TELA AUTENTICADA APÓS A HOME
-→ BLOQUEADA ATÉ O FECHAMENTO DA AUDITORIA INTEGRAL
+FINAL BASELINE PÓS-AUDITORIA
+→ CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
+
+Q — FUNCTIONAL DEFINITION
+→ PASS / CANONICALLY CONSOLIDATED
+
+PRIMEIRA RESPONSABILIDADE AUTENTICADA APÓS A HOME
+→ AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
+→ AUTENTICAÇÃO = GATE / ESTADO INTERNO DE PER-002
+→ CONCLUSÃO DA AUTENTICAÇÃO ≠ CONCLUSÃO DE PER-002
+→ PRIMEIRA SUPERFÍCIE DISTINTA DOWNSTREAM = PER-003 — ESCOLHA DE MODALIDADE
+→ NOVA SUPERFÍCIE / NOVO PER-ID NÃO EXIGIDOS PELA EVIDÊNCIA ATUAL
+→ PER-008 / TELA HOJE = DOWNSTREAM / NÃO É A PRIMEIRA RESPONSABILIDADE AUTENTICADA
+→ DESIGN / WIREFRAME / UI / PROTÓTIPO NÃO AUTORIZADOS POR Q
 
 UXA-102 / V5
 → NOT_STARTED
@@ -93,7 +105,7 @@ PMF
 → NOT VALIDATED
 ```
 
-A existência de Source Locks, snapshots, wireframes, Design deliveries ou explorações anteriores não promove seu conteúdo a baseline visual atual durante a auditoria.
+A existência de Source Locks, snapshots, wireframes, Design deliveries ou explorações anteriores não promove seu conteúdo a baseline visual atual.
 
 ```text
 DOCUMENTO DE DESIGN EXISTENTE
@@ -1042,16 +1054,51 @@ A Home:
 
 A transição para a Journey deve permanecer consciente.
 
-Este master **não define qual será a primeira tela autenticada final após a Home**.
+Este master **consome a fronteira funcional definida por Q, mas não define sua materialização visual**.
 
-Durante a auditoria:
+Após o fechamento da auditoria integral, a captura da baseline final e a consolidação de Q:
 
 ```text
 HOME PÚBLICA RECONCILIADA
-≠ PRIMEIRA TELA AUTENTICADA DEFINIDA
+→ PER-002 — ENTRADA PROTEGIDA
+
+PER-002
+→ PODE COMEÇAR ANTES DA AUTENTICAÇÃO
+→ EXPLICA AMBIENTE / ALTERNATIVAS
+→ NÃO INICIA COLETA AUTOMÁTICA
+
+AUTENTICAÇÃO
+→ GATE / ESTADO INTERNO DE PER-002
+→ NÃO ENCERRA PER-002 AUTOMATICAMENTE
+→ NÃO AUTORIZA PROCESSAMENTO MATERIAL
+
+PRIMEIRA RESPONSABILIDADE AUTENTICADA
+→ AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
+→ FINALIDADES / PRIVACIDADE / CONTROLES
+→ ALTERNATIVAS / REVERSIBILIDADE
+
+PRIMEIRA SUPERFÍCIE REGISTRADA DISTINTA DOWNSTREAM
+→ PER-003 — ESCOLHA DE MODALIDADE
+
+NOVA SUPERFÍCIE / NOVO PER-ID
+→ NOT REQUIRED BY CURRENT EVIDENCE
+
+PER-008 / TELA HOJE
+→ DOWNSTREAM
+→ NOT FIRST AUTHENTICATED RESPONSIBILITY
+
+LOGIN DE RELAÇÃO EXISTENTE
+→ ROTA DE RETOMADA
+→ NÃO FORÇA ONBOARDING DE PRIMEIRA ENTRADA
+
+Q FUNCTIONAL DEFINITION
+≠ UXA-102 INICIADA
+≠ WIREFRAME
+≠ DESIGN AUTORIZADO
+≠ IMPLEMENTAÇÃO
 ```
 
-`UXA-020`, `UXA-023` e demais autoridades de entrada protegida permanecem fontes funcionais em seus limites, mas o fluxo completo será reavaliado no Lote G antes de qualquer nova tela.
+`UXA-020`, `UXA-023` e as autoridades vigentes da Jornada permanecem fontes funcionais em seus limites. A definição de Q preserva `TRN-001` como parcial e `TRN-002` como localmente validada; ela não promove maturidade de transição. Qualquer materialização futura da fronteira autenticada de `PER-002` exige adjudicação e autorização governadas próprias.
 
 ---
 
@@ -1197,7 +1244,7 @@ Rejeitar ou revisar se a proposta:
 - depende de animação para transmitir significado;
 - parece marketplace, dashboard, feed ou landing page SaaS genérica;
 - infere disponibilidade operacional ou estratégia de lançamento;
-- desenha ou pressupõe a primeira tela autenticada final.
+- contradiz a fronteira funcional de Q ou materializa a responsabilidade autenticada sem gate próprio.
 
 ---
 
@@ -1221,9 +1268,9 @@ Ainda pertencem a gates posteriores:
 - disponibilidade operacional;
 - estratégia de lançamento;
 - implementação;
-- primeira tela autenticada após a Home.
+- eventual materialização visual da fronteira autenticada de `PER-002` e de suas continuidades, se autorizada por gate próprio.
 
-A auditoria não deve preencher esses itens por conveniência.
+A definição funcional de Q não deve preencher itens visuais ou operacionais por conveniência.
 
 ---
 
@@ -1284,7 +1331,7 @@ Esta matriz **não autoriza remoção automática das fontes**. A remoção fís
 - [Benchmark e diferenciação](public-home-benchmark-and-differentiation-evidence.md)
 - [Comparativo de Hero](public-home-guivos-vs-global-hero-comparative.md)
 
-A auditoria integral decidirá posteriormente quais desses documentos mantêm função própria e quais poderão ser removidos **somente após absorção integral comprovada**.
+O fechamento da auditoria integral manteve esses documentos no corpus. Qualquer futura remoção poderá ocorrer **somente após absorção integral comprovada, análise de função atual, referências e evidência**, sob gate separado.
 
 ---
 
@@ -1319,9 +1366,9 @@ HOME PÚBLICA
 ≠ PERSONALIZAR SEM BASE
 ≠ PROMETER
 ≠ PRESSIONAR
-≠ DEFINIR A PRIMEIRA TELA AUTENTICADA
+≠ MATERIALIZAR POR INFERÊNCIA A RESPONSABILIDADE AUTENTICADA
 ```
 
 Estado desta versão:
 
-> **MASTER RECONCILIADO COM AS AUTORIDADES VIGENTES — CONTEÚDO PRESERVADO E ENRIQUECIDO — MATERIALIZAÇÃO NOVA NÃO AUTORIZADA POR ESTE DOCUMENTO.**
+> **MASTER RECONCILIADO COM AS AUTORIDADES VIGENTES — CONTEÚDO PRESERVADO E ENRIQUECIDO — Q FUNCTIONAL DEFINITION CONSOLIDATED: PRIMEIRA RESPONSABILIDADE AUTENTICADA = CONTINUAÇÃO AUTENTICADA DE PER-002 / PRIMEIRA SUPERFÍCIE DISTINTA DOWNSTREAM = PER-003 — MATERIALIZAÇÃO NOVA NÃO AUTORIZADA POR ESTE DOCUMENTO.**

@@ -2,9 +2,9 @@
 id: RP-002-PILOT-RESEARCH-BASE-DEC-001
 title: Piloto — Decisão de Implementação do A4 Research Base
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Guivos Research
-last_updated: 2026-08-27
+last_updated: 2026-09-04
 normative: false
 parent: RP-002
 maturity: implementation_target_approved_pre_configuration
@@ -14,7 +14,7 @@ related:
   - RP-002-PILOT-IDENTITY-VAULT-DEC-001
   - RP-002-PILOT-OP-001
   - RP-002-PILOT-DATA-LAW-001
-  - RP-002-PILOT-OPS-REG-001
+  - RP-002-PILOT-OPS-REG-002
 ---
 
 # Piloto — Decisão de Implementação do A4 Research Base

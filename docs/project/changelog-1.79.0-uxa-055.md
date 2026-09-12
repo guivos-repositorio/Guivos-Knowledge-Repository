@@ -6,7 +6,6 @@ version: 1.79.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-03
 related:
-  - UXA-055
   - GKR-CCM-UXA-055-A1
   - M7.57
 normative: false

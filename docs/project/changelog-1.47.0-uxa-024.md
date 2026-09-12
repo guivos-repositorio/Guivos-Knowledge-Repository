@@ -8,8 +8,6 @@ last_updated: 2026-07-26
 related:
   - UXA-000
   - UXA-004
-  - UXA-005
-  - UXA-024
   - GKR-CANON-MATRIX-UXA-024
   - ROADMAP-11.99.0
   - M7.25
@@ -21,7 +19,7 @@ normative: false
 ## Criado
 
 - UXA-024 — Wireframe de Baixa Fidelidade do Mapa de Oportunidades;
-- arquivo vetorial `docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg`;
+- arquivo vetorial `uxa-024-opportunity-map-mobile.svg [historical SVG; physical file removed in F-016-A]`;
 - adendo da Matriz de Consolidação Canônica para UXA-024;
 - marco M7.25 — Wireframe Móvel do Mapa de Oportunidades Criado.
 

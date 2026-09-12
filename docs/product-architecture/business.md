@@ -200,7 +200,7 @@ mais pontos
 mais evolução
 ```
 
-A equivalência econômica entre pontos e reais já validada no ecossistema permanece preservada e **não é reaberta por esta autoridade**.
+Existe proveniência histórica de uma decisão de equivalência econômica entre pontos e reais registrada no checkpoint não normativo `GKR-BUSINESS-CONTINUITY-001`. A auditoria documental do Lote J, porém, não encontrou no corpus vigente autoridade econômica temática que defina ou aprove valor monetário ou taxa de conversão para os Pontos Guivos. Portanto, **esta autoridade não trata uma equivalência Pontos ↔ BRL como regra econômica canônica vigente ou implementável**. Qualquer reativação dessa equivalência como regra corrente exige autoridade econômica específica e explícita.
 
 ### 6.1 Saldo da pessoa
 
@@ -592,7 +592,7 @@ Permanecem dependentes de autoridade específica antes de implementação ou pub
 - composição exata do resumo recorrente de Intelligence por plano;
 - arquitetura convergida da Home Pública do Guivos Business.
 
-A equivalência econômica já validada entre pontos e reais **não está nesta lista e não deve ser reaberta nesta frente**.
+A equivalência econômica Pontos ↔ BRL permanece **não congelada no corpus vigente**: a decisão histórica de conversa continua preservada como proveniência, mas valor monetário e taxa de conversão exigem autoridade econômica específica antes de implementação, cobrança ou liquidação.
 
 ## 18. Autoridade complementar e continuidade
 

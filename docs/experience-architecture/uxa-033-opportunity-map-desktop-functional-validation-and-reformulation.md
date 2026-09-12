@@ -10,10 +10,8 @@ depends_on:
   - UXA-001
   - UXA-003-A1
   - UXA-004
-  - UXA-005
   - UXA-009
   - UXA-011-A1
-  - UXA-024
   - UXA-025
   - UXA-026
   - UXA-027
@@ -24,12 +22,9 @@ depends_on:
   - UXA-032
 related:
   - UXA-002
-  - UXA-006
-  - UXA-007
   - UXA-010
   - UXA-012
   - UXA-020
-  - UXA-022
   - UXA-023
 normative: true
 ---

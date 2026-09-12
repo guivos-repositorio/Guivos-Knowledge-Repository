@@ -10,12 +10,9 @@ depends_on:
   - UXA-014
   - UXA-056
   - UXA-059
-  - UXA-066
   - UXA-067
-  - UXA-088
   - UXA-089
   - UXA-090
-  - UXA-091
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -30,6 +27,9 @@ normative: false
 ---
 
 # Validação Funcional de Meus Coletivos e Revalidação da Continuidade Pós-Aprovação
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 

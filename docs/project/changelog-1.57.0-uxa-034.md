@@ -7,7 +7,6 @@ owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-27
 related:
   - UXA-023
-  - UXA-034
   - GKR-CANON-MATRIX-UXA-034
   - GKR-STATE-001
   - ROADMAP-12.9.0

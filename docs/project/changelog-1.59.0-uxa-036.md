@@ -6,7 +6,6 @@ version: 1.59.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-28
 related:
-  - UXA-036
   - GKR-CANON-MATRIX-UXA-036
   - GKR-STATE-001
   - ROADMAP-12.11.0

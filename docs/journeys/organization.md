@@ -2,28 +2,24 @@
 id: GKR-JOURNEY-ORGANIZATION-001
 title: Jornada Integrada da Organização
 status: draft
-version: 0.12.0
+version: 0.13.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-26
+last_updated: 2026-08-30
 related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
   - GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001
   - UXA-004
-  - UXA-007
-  - UXA-008
   - UXA-012
   - UXA-013
   - UXA-014
   - UXA-015
   - UXA-017
   - UXA-019
-  - UXA-024
   - UXA-025
   - UXA-028
   - UXA-029
   - UXA-038
-  - UXA-055
   - UXA-072
   - UXA-073
   - UXA-074
@@ -36,17 +32,23 @@ related:
   - UXA-100-A4
   - UXA-101
   - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
 
 # Jornada Integrada da Organização
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Continuidade institucional
 
 ```text
 identidade, unidade e autoridade
-→ visão geral institucional ainda a materializar em arquitetura vigente
+→ Visão Geral definida semanticamente na Arquitetura da Informação
+→ mapa de superfícies / composição visual ainda pendentes
 → responsabilidade material atual
 → oportunidades e programas
 → relações com Coletivos e Organizações
@@ -57,17 +59,18 @@ identidade, unidade e autoridade
 
 | Etapa | Maturidade primária | Autoridade contratual | Referência materializada | Evidência de validação | Continuidade integrada |
 |---|---|---|---|---|---|
-| fundação institucional | contratado | UXA-014 | — | — | não examinada |
-| Visão Geral da Organização | **contratado; wireframe principal pendente** | UXA-014 | `UXA-015`/SVG associado apenas como histórico `superseded` | `UXA-017` superseded; sem validação vigente do wireframe principal | contratos especializados preservam maturidade própria; arquitetura geral pendente |
-| responsabilidade material atual | contratado | UXA-014 | arquitetura final pendente | — | parcial/indeterminada até definição da experiência principal |
+| fundação institucional | definido funcionalmente | UXA-014 | — | — | input dos Jobs/IA |
+| contexto, atores e autoridade | **definidos documentalmente** | GKR-UX-ORGCOL-AUTH-JOBS-001 | — | — | input da IA autenticada |
+| Visão Geral da Organização | **domínio de IA definido; mapa/wireframe principal pendentes** | UXA-014; GKR-UX-ORGCOL-AUTH-JOBS-001; GKR-UX-ORGCOL-AUTH-IA-001 | `UXA-015`/SVG associado apenas como histórico `superseded` | `UXA-017` superseded; sem validação vigente do wireframe principal | contratos especializados preservam maturidade própria; composição final pendente |
+| responsabilidade material atual | **definida semanticamente na IA; materialização pendente** | UXA-014; GKR-UX-ORGCOL-AUTH-JOBS-001; GKR-UX-ORGCOL-AUTH-IA-001 | — | — | parcial/indeterminada até definição do mapa/fluxos principais |
 | cadastro de oportunidades | validado no fluxo especializado | UXA-004 | UXA-008 | UXA-013 | publicação → descoberta validada por UXA-098 |
 | descoberta Mapa/Lista e detalhe | validado | UXA-004 | UXA-024; UXA-028; UXA-007 | UXA-025; UXA-029; UXA-012; UXA-101 no recorte de saída | TRN-203/204/210/211 por UXA-098; TRN-205 até BND-001 por UXA-101 |
-| relação Organização–Coletivo | contratado | UXA-019 | — | — | ausente |
+| relação Organização–Coletivo | contratado | UXA-019; GKR-UX-ORGCOL-AUTH-JOBS-001; GKR-UX-ORGCOL-AUTH-IA-001 | — | — | contrato bilateral existente; materialização ausente |
 | patrocínio e Opportunity Boost | materializado | UXA-038 | UXA-040 a UXA-055 | UXA-041 a UXA-055; residual UXA-099 | parcial |
 | Planos e cobrança | canonicamente registrado no fluxo especializado | GEM-004 / UXA-100-A3/A4 | 3 SVGs do pacote / 4 superfícies | UXA-100-A2/A3/A4 no escopo próprio | contratos de origem/retorno preservados; transições internas locais; BND-002 parcial |
-| evidências e resultados institucionais | indeterminado | referências dispersas | matriz integrada ausente | — | não examinada |
+| evidências e resultados institucionais | **domínio de IA definido; integração/materialização incompletas** | GKR-UX-ORGCOL-AUTH-JOBS-001; GKR-UX-ORGCOL-AUTH-IA-001 | — | — | não validada ponta a ponta |
 
-A validação de um fluxo especializado não equivale à definição ou validação da arquitetura principal autenticada da Organização.
+A validação de um fluxo especializado não equivale à definição ou validação do mapa de superfícies, do wireframe principal autenticado ou da Jornada completa da Organização.
 
 ```text
 CONTRATO DE NAVEGAÇÃO
@@ -75,6 +78,10 @@ CONTRATO DE NAVEGAÇÃO
 
 FLUXO ESPECIALIZADO VALIDADO
 ≠ JORNADA INSTITUCIONAL COMPLETA VALIDADA
+
+ARQUITETURA DA INFORMAÇÃO DEFINIDA
+≠ MAPA DE SUPERFÍCIES
+≠ WIREFRAME
 ```
 
 `UXA-015` e `UXA-017` permanecem relacionados apenas para rastreabilidade histórica e não são autoridade vigente de design.
@@ -139,7 +146,7 @@ Regras desta vista:
 - domínio não mede legitimidade, reputação, impacto ou maturidade institucional;
 - patrocínio, Opportunity Boost ou plano pago não compram prioridade funcional;
 - `domain_link` permanece semântico e pode ser `0..n`;
-- D4 não cria superfície, SVG, transição ou implementação; a materialização experiencial permanece D5.
+- D4 não cria superfície, SVG, transição ou implementação; sua propagação permanece documental até materialização própria quando autorizada.
 
 ## 3. Publicação → descoberta validada
 
@@ -205,9 +212,7 @@ criar nova oportunidade/programa
 
 Referência do fluxo especializado de Planos:
 
-![Organização — Planos](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
 Regras:
 
@@ -245,7 +250,7 @@ rascunho
 
 | Campo | Organização | Coletivo | Estado da integração |
 |---|---|---|---|
-| autoridade | representante institucional autorizado | responsável autorizado pelo Coletivo | contratada pela UXA-019 |
+| autoridade | representante institucional autorizado | responsável autorizado pelo Coletivo | contratada pela UXA-019 e reconciliada nos Jobs |
 | superfície de proposta | não materializada especificamente | não materializada especificamente | ausente |
 | avaliação e negociação | contratada | contratada | não materializada |
 | aprovação bilateral | contratada | contratada | não validada |
@@ -253,6 +258,8 @@ rascunho
 | saída, pausa e encerramento | contratada | contratada | não materializada |
 
 A relação preserva finalidade, compromissos, recursos, autonomia, dados, contestação e saída. Apoio ou patrocínio não concede propriedade, direção ou acesso irrestrito a dados.
+
+A IA atual já inclui `Relações` como domínio institucional, mas não materializa por si só os fluxos bilaterais acima.
 
 ## 7. Limites de visibilidade
 
@@ -272,21 +279,23 @@ A relação preserva finalidade, compromissos, recursos, autonomia, dados, conte
 
 Esta vista permanece `draft` porque:
 
-- **a arquitetura da informação e o wireframe principal autenticado da Organização ainda não foram definidos**;
+- **a Arquitetura da Informação autenticada está definida, mas o mapa final de superfícies e o wireframe principal autenticado da Organização ainda não foram definidos**;
 - `UXA-015/017` permanecem históricos `superseded`;
 - a relação Organização–Coletivo não possui materialização bilateral específica;
-- a matriz institucional completa ainda não existe;
+- a matriz institucional completa ainda não existe como experiência materializada/validada;
 - `TRN-201` permanece parcial e `TRN-202` preserva sua maturidade própria;
 - integrações patrocinadas com Mapa/Lista (`TRN-304`/`TRN-306`) permanecem parciais;
 - as transições comerciais internas de Planos continuam locais e `TRN-426` permanece parcial;
 - cobrança real, gateway e processo assistido posterior a `BND-002` não foram implementados/validados ponta a ponta;
-- os Domínios de Evolução foram propagados documentalmente por D4, mas ainda não foram materializados/validados como UX; isso permanece D5;
-- evidências e resultados institucionais continuam sem matriz integrada.
+- os Domínios de Evolução foram propagados documentalmente por D4, sem promover automaticamente materialização própria nesta jornada;
+- evidências e resultados institucionais possuem domínio de IA, mas continuam sem integração/materialização ponta a ponta validada.
 
 `TRN-205` deixa de ser pendência desta vista: UXA-101 a valida até `BND-001`, sem promover a jornada institucional completa.
 
 ## 9. Estado da frente
 
-A Organização mantém publicação/descoberta validada pela UXA-098, saída consciente até `BND-001` validada pela UXA-101 e o fluxo especializado de Planos com sua maturidade documental própria. A taxonomia vigente de planos é `Conecta · Eleva · Transforma`; Guivos Business permanece produto separado. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista, sem iniciar D5.
+A Organização mantém publicação/descoberta validada pela UXA-098, saída consciente até `BND-001` validada pela UXA-101 e o fluxo especializado de Planos com sua maturidade documental própria. A taxonomia vigente de planos é `Conecta · Eleva · Transforma`; Guivos Business permanece produto separado. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista.
 
-O próximo avanço da experiência principal autenticada deve partir dos fundamentos, papéis/jobs, arquitetura da informação e mapa de superfícies vigentes — **não do SVG histórico de UXA-015**. Nenhuma próxima UXA é iniciada automaticamente.
+A frente principal autenticada já possui fundamentos, atores/autoridades/jobs e Arquitetura da Informação. O próximo nível lógico é o **mapa de superfícies e estados**, seguido de fluxos e wireframes quando autorizado — **não o SVG histórico de UXA-015**.
+
+Nenhuma próxima UXA, Design ou Product Engineering é iniciada automaticamente. A branch pré-auditoria de surface map permanece `HOLD_REVIEW` e sem autoridade vigente.

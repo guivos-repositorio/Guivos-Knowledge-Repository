@@ -2,14 +2,13 @@
 id: RP-002-PILOT-OPS-REG-002
 title: Piloto — Reconciliação do Registro de Operadores, Ferramentas e Fluxos
 status: active
-version: 1.0.0
+version: 1.0.2
 owner: Guivos Research
-last_updated: 2026-08-27
+last_updated: 2026-09-04
 normative: false
 parent: RP-002
 maturity: documentary_target_registry_reconciled_pre_configuration
 related:
-  - RP-002-PILOT-OPS-REG-001
   - RP-002-PILOT-DOC-CLOSE-001
   - RP-002-PILOT-RESEARCH-MAILBOX-DEC-001
   - RP-002-PILOT-IDENTITY-VAULT-DEC-001
@@ -23,9 +22,9 @@ related:
 
 ## 1. Finalidade
 
-Este documento reconcilia o `RP-002-PILOT-OPS-REG-001` com as decisões documentais posteriores do stack.
+Este documento reconcilia o registro histórico `RP-002-PILOT-OPS-REG-001`, removido do corpus corrente após absorção e preservado no histórico Git, com as decisões documentais posteriores do stack.
 
-O registro anterior permanece como histórico do momento em que vários componentes estavam `TBD`. Para o estado documental atual, este documento prevalece quando houver divergência de status-alvo.
+O registro anterior permanece recuperável no histórico Git como evidência do momento em que vários componentes estavam `TBD`. No corpus corrente, este documento é a autoridade documental de reconciliação e prevalece quando houver divergência de status-alvo.
 
 Regra preservada:
 
@@ -95,6 +94,23 @@ O canal de Research passou por teste end-to-end e A1 está em `PASS`. Os canais 
 Fonte pública já registrada no GKR:
 
 <https://www.hostinger.com/br/legal/dpa>
+
+### Proveniência da transferência internacional
+
+A política de privacidade pública da Hostinger registra que informações pessoais podem ser mantidas, processadas ou armazenadas no **Reino Unido, Países Baixos, Lituânia, Chipre e outras jurisdições** quando necessário à prestação dos serviços.
+
+Fonte oficial preservada da verificação documental:
+
+<https://www.hostinger.com/br/legal/politica-de-privacidade>
+
+Essa evidência sustenta a classificação documental:
+
+```text
+INTERNATIONAL TRANSFER
+→ POSSIBLE / MATERIAL
+```
+
+A enumeração de jurisdições é evidência de proveniência da política do fornecedor e **não afirma a localização física exata de uma mensagem ou mailbox individual**.
 
 ## 4. Recrutamento / formulário
 

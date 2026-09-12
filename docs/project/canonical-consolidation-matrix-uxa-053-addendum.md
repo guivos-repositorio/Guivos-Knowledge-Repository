@@ -2,19 +2,15 @@
 id: GKR-CANONICAL-CONSOLIDATION-MATRIX-UXA-053-ADDENDUM
 title: Adendo de Consolidação Canônica — UXA-053
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-02
+last_updated: 2026-09-01
 parent: GKR-CANONICAL-CONSOLIDATION-MATRIX
 related:
-  - UXA-046
   - UXA-047
-  - UXA-048
   - UXA-049
   - UXA-050
-  - UXA-051
   - UXA-052
-  - UXA-053
   - M7.55
 normative: false
 ---
@@ -26,6 +22,8 @@ normative: false
 Este adendo registra o efeito documental da materialização móvel da gestão da campanha ativa do Opportunity Boost.
 
 O incremento cria seis wireframes móveis sem alterar a autoridade funcional das referências para computador nem converter materialização em validação funcional, protótipo ou implementação.
+
+A reconciliação de 2026-09-01 preserva este adendo como registro especializado do incremento original. Declarações abaixo sobre estado proposto, resultante ou canônico, contagens, versões, baselines, pendências, marcos, próximos gates/transições/atos e autorizações futuras são **snapshots históricos do estágio em que o incremento foi integrado**; não representam o estado transversal vigente e não substituem `GKR-STATE-001`, registries ou autoridades de domínio vigentes.
 
 ## 2. Objetos consolidados
 

@@ -8,13 +8,10 @@ last_updated: 2026-07-29
 parent: UXA-042
 depends_on:
   - UXA-004
-  - UXA-005
   - UXA-009
   - UXA-038
   - UXA-039
-  - UXA-040
   - UXA-041
-  - UXA-042
   - GEM-007-A1
   - GEM-010-A2
 related:
@@ -24,6 +21,9 @@ normative: false
 ---
 
 # Validação Funcional e Reformulação dos Wireframes do Cartão Patrocinado e da Explicação do Opportunity Boost
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 

@@ -16,7 +16,6 @@ depends_on:
   - GEB-P01-F06
   - GPA-005
 related:
-  - UXA-022
   - GOG-001
 normative: false
 ---

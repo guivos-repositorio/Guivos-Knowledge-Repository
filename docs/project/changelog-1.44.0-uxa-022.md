@@ -9,9 +9,7 @@ related:
   - GKR-STATE-001
   - ROADMAP-11.97.0
   - UXA-000
-  - UXA-005
   - UXA-021
-  - UXA-022
   - GKR-CANON-MATRIX-UXA-022
   - M7.23
 normative: false

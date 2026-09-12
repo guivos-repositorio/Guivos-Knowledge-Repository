@@ -6,7 +6,6 @@ version: 1.35.0
 owner: Guivos
 last_updated: 2026-07-26
 related:
-  - UXA-007
   - UXA-011
   - UXA-011-A1
   - UXA-012

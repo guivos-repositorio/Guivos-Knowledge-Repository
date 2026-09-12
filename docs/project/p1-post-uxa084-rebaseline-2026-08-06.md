@@ -13,7 +13,6 @@ related:
   - GKR-UXA-047-084-INDEX-001
   - GKR-CHANGELOG-INDEX-001
   - GKR-CANON-ADDENDA-INDEX-001
-  - UXA-084
 normative: false
 ---
 

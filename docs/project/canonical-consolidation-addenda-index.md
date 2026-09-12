@@ -2,15 +2,14 @@
 id: GKR-CANON-ADDENDA-INDEX-001
 title: Índice dos Adendos da Matriz de Consolidação Canônica
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-06
+last_updated: 2026-08-30
 depends_on:
   - GKR-CANON-MATRIX-001
   - GKR-STATE-001
 related:
   - GKR-SEMANTIC-SYNC-001
-  - UXA-084
 normative: false
 ---
 
@@ -22,11 +21,13 @@ Este índice torna descobríveis os adendos posteriores ao checkpoint da Matriz 
 
 Ele não funde adendos, não recompila a matriz central, não altera decisões anteriores e não cria autoridade autônoma.
 
+A descoberta de um adendo por este índice **não confere vigência funcional às autoridades históricas citadas em seu corpo**. Quando um adendo preserva artefatos `superseded` como proveniência, prevalecem a classificação e as autoridades vigentes declaradas no próprio adendo e em `GKR-STATE-001`.
+
 ## 2. Regra de precedência
 
 ```text
 autoridade normativa de domínio
-→ adendo especializado do pacote
+→ adendo especializado do pacote, no limite de sua função vigente
 → Matriz de Consolidação Canônica central para decisões já consolidadas
 → este índice para descoberta e navegação
 ```
@@ -69,11 +70,15 @@ autoridade normativa de domínio
 - [UXA-066](canonical-consolidation-matrix-uxa-066-addendum.md)
 - [UXA-067](canonical-consolidation-matrix-uxa-067-addendum.md)
 
+Os adendos de `UXA-056`, `UXA-057` e `UXA-058` preservam `UXA-015..018` somente como proveniência histórica quando aplicável; a descoberta por este índice não reativa essas baselines.
+
 ## 5. Expressão guiada e preparação das jornadas integradas
 
 - [UXA-068](canonical-consolidation-matrix-uxa-068-addendum.md)
 - [UXA-069](canonical-consolidation-matrix-uxa-069-addendum.md)
 - [UXA-070](canonical-consolidation-matrix-uxa-070-addendum.md)
+
+O adendo de `UXA-070` preserva suas contagens, versões propostas e estados temporais como snapshot histórico do incremento; o estado vigente é governado por `GKR-STATE-001` e autoridades atuais.
 
 As UXA-071 a UXA-084 possuem autoridades próprias e não são declaradas por este índice como adendos absorvidos pela matriz central.
 
@@ -82,11 +87,11 @@ As UXA-071 a UXA-084 possuem autoridades próprias e não são declaradas por es
 | Camada | Estado |
 |---|---|
 | Matriz central | preservada no checkpoint vigente do arquivo central |
-| adendos UXA-039 a UXA-070 | preservados como documentos especializados |
+| adendos UXA-039 a UXA-070 | preservados como documentos especializados, sujeitos à precedência vigente |
 | índice de descoberta | ativo |
-| recompilação integral | não executada |
-| estado transversal | `GKR-STATE-001` 2.10.0; M7.72 |
-| última frente integrada | UXA-084 |
+| recompilação integral | não executada por este índice |
+| estado transversal atual | governado por `GKR-STATE-001`; este índice não publica versão/maturidade global própria |
+| marco histórico do estágio original | UXA-084 / M7.72, somente como proveniência temporal da criação do índice |
 
 ## 7. Consolidação futura
 

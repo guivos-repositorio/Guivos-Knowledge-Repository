@@ -2,14 +2,13 @@
 id: GKR-CANONICAL-CONSOLIDATION-MATRIX-UXA-048-ADDENDUM
 title: Adendo Canônico — UXA-048
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-01
+last_updated: 2026-09-01
 depends_on:
   - GKR-STATE-001
   - UXA-047
 related:
-  - UXA-048
   - M7.50
 normative: false
 ---
@@ -19,6 +18,8 @@ normative: false
 ## 1. Finalidade
 
 Este adendo registra a consolidação proposta da materialização do relatório agregado do Opportunity Boost.
+
+A reconciliação de 2026-09-01 preserva este adendo como registro especializado do incremento original. Declarações abaixo sobre estado proposto, resultante ou canônico, contagens, versões, baselines, pendências, marcos, próximos gates/transições/atos e autorizações futuras são **snapshots históricos do estágio em que o incremento foi integrado**; não representam o estado transversal vigente e não substituem `GKR-STATE-001`, registries ou autoridades de domínio vigentes.
 
 ## 2. Autoridades preservadas
 

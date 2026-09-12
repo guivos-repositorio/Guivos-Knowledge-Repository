@@ -8,7 +8,6 @@ last_updated: 2026-08-07
 depends_on:
   - GKR-STATE-001
 related:
-  - UXA-093
   - UXA-094
   - M7.81
 normative: false

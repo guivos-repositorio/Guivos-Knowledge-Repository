@@ -6,7 +6,6 @@ version: 1.58.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-27
 related:
-  - UXA-034
   - UXA-035
   - GKR-CANON-MATRIX-UXA-035
   - GKR-STATE-001

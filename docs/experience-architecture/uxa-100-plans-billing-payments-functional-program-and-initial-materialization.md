@@ -29,6 +29,9 @@ normative: false
 
 # Programa Funcional, Materialização, Validação e Promoção de Planos, Cobrança e Pagamentos
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A UXA-100 estrutura, materializa, valida e registra canonicamente a experiência documental de **planos, comparação de benefícios, cobrança, pagamento e ciclo de vida comercial** para os participantes já materializados nesta frente:
@@ -239,7 +242,6 @@ Devem permanecer acessíveis: `Explorar oportunidades públicas`, `Ver no Mapa` 
 - `PER-304` — resultado/recuperação;
 - `TRN-401` a `TRN-405` — localmente validadas.
 
-![Pessoa — Planos](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
 
 ## 11. Coletivo
 
@@ -267,7 +269,6 @@ Antes do downgrade, o Coletivo trata publicações pagas/gratuitas, administrado
 - `TRN-411` a `TRN-415` — localmente validadas;
 - `TRN-416` — parcial até materialização do processo posterior a `BND-002`.
 
-![Coletivo — Planos](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
 ## 12. Organização
 
@@ -305,7 +306,6 @@ Antes do downgrade, seleciona unidades, administradores, publicações e Coletiv
 - `TRN-421` a `TRN-425` — localmente validadas;
 - `TRN-426` — parcial até materialização do processo posterior a `BND-002`.
 
-![Organização — Planos](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
 ## 13. Guivos Business
 
@@ -369,7 +369,7 @@ A UXA-100 não presume pró-rata, estorno ou crédito entre ciclos.
 - `uxa-100-collective-plan-incremental-benefits-comparison.svg`;
 - `uxa-100-organization-plan-incremental-benefits-comparison.svg`.
 
-Inspeção: [Planos, Comparação e Cobrança — Galeria Canônica](../journeys/screen-gallery-plans-billing.md).
+Inspeção: Planos, Comparação e Cobrança — Galeria Canônica.
 
 Os nove SVGs permanecem associados aos perfis `R29`, `R30` e `R31`. Nenhum SVG ou perfil adicional é criado para Guivos Business nesta atualização.
 

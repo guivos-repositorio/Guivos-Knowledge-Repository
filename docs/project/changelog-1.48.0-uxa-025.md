@@ -6,7 +6,6 @@ version: 1.48.0
 owner: Guivos
 last_updated: 2026-07-26
 related:
-  - UXA-024
   - UXA-025
   - GKR-CANON-MATRIX-UXA-025
   - M7.26

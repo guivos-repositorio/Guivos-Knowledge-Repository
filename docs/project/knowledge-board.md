@@ -1,14 +1,15 @@
 ---
 id: GKR-KNOWLEDGE-BOARD-001
-title: Painel de Conhecimento
-status: active
-version: 12.84.0
+title: Registro Histórico — Painel de Conhecimento 12.84.0
+status: superseded
+version: 12.85.0
 owner: Guivos
-last_updated: 2026-08-22
+last_updated: 2026-08-30
 depends_on:
   - GKR-STATE-001
 related:
   - ROADMAP-12.84.0
+  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-GLOBAL-INTEGRITY-POST300-001
   - GPA-004
   - GPA-006
@@ -29,36 +30,60 @@ related:
 normative: false
 ---
 
-# Painel de Conhecimento
+# Registro Histórico — Painel de Conhecimento 12.84.0
 
-## 1. Autoridade
+## 1. Autoridade e estado deste arquivo
 
-Este painel resume o portfólio vigente. O estado oficial é declarado por `GKR-STATE-001 v2.43.0`.
+Este arquivo preserva o **snapshot histórico do Painel de Conhecimento 12.84.0**. Ele foi reclassificado como `superseded` durante o Bloco I da Auditoria Integral porque deixou de representar com segurança o portfólio vigente.
 
-A versão 12.84.0 preserva o estado funcional da versão 12.83.0 e incorpora a autoridade pública do fundador, a separação entre assinatura pessoal e institucional e a reconciliação nominal da Home Pública.
+A autoridade atual é `GKR-STATE-001`. O estado corrente da auditoria é governado também por `GKR-FULL-CORPUS-AUDIT-001`.
+
+Todo o conteúdo abaixo deve ser lido como **proveniência histórica do snapshot de 22/08/2026**, inclusive referências a versões, próximos atos, Design Delivery, oito Homes e contagens visuais.
+
+Em particular:
 
 ```text
+121 SVGs / 121 validados / 0 pendentes
+→ SNAPSHOT HISTÓRICO
+→ NÃO É CLAIM DE MATURIDADE VIGENTE
+
+8 HOMES CONVERGIDAS
+→ SNAPSHOT HISTÓRICO
+→ NÃO É ATALHO DE MATURIDADE VIGENTE
+
+GKR-STATE-001 v2.43.0
+ROADMAP-12.84.0
+GOG-001 5.2.0
+GIA-000 v1.5.0
+→ REFERÊNCIAS DO SNAPSHOT
+→ NÃO SUBSTITUEM AS AUTORIDADES ATUAIS
+```
+
+```text
+PAINEL HISTÓRICO
+≠ ESTADO CORRENTE
+
 PAINEL ATUALIZADO ≠ APAGAMENTO DO CHECKPOINT ANTERIOR
 ```
 
-## 2. Estado global
+## 2. Snapshot global preservado — não vigente como estado atual
 
-| Elemento | Estado | Referência |
+| Elemento | Estado no snapshot | Referência do snapshot |
 |---|---|---|
 | Era | GE-2 — Knowledge | GKR-STATE-001 |
 | Marco | **M7.88** | UXA-101 |
 | Última UXA | **UXA-101** | Experience Architecture |
 | Próxima UXA | **UXA-102/V5 — não iniciada** | fila funcional |
 | Engenharia de Produto | **pausada antes de W0-01** | Engineering Handoff |
-| SVGs | **121 / 121 validados / 0 pendentes** | registros de jornada |
+| SVGs | **121 / 121 validados / 0 pendentes — snapshot histórico, não maturidade vigente** | registros de jornada |
 | Associações | **121** | matriz por SVG |
 | Perfis | **34** | matriz por SVG |
 | Superfícies/estados/fronteiras | **57** | registro granular |
 | Transições | **66** | registro granular |
-| Homes públicas | **8 convergidas** | Design Handoff |
+| Homes públicas | **8 convergidas — snapshot histórico** | Design Handoff |
 | Design Delivery | **v4 — 39 arquivos externos** | snapshot v4 |
 | Autoridade pública humana | **Guilherme Oliveira — Founder of Guivos** | GKR-BRAND-PUBLIC-AUTHORITY-001 |
-| Public Canon | **GOG-001 5.2.0** | documentação pública |
+| Public Canon | **GOG-001 5.2.0 — snapshot histórico** | documentação pública |
 
 ## 3. Participantes e produtos
 
@@ -88,7 +113,7 @@ Intelligence ≠ Business
 
 ## 4. Journey
 
-Baseline de evolução:
+Baseline de evolução registrada no snapshot:
 
 - 9 Domínios de Evolução canônicos;
 - `Ainda estou descobrindo` como estado transversal;
@@ -97,9 +122,11 @@ Baseline de evolução:
 - UXA-101 encerra V4 até `BND-001`;
 - UXA-102/V5 permanece não iniciada.
 
-## 5. Homes e Design
+A contagem visual agregada do snapshot não deve ser usada para inferir maturidade atual de wireframes.
 
-Oito Homes convergidas:
+## 5. Homes e Design no snapshot
+
+O snapshot registrava oito Homes convergidas:
 
 1. Pessoa;
 2. Organizações e Coletivos;
@@ -111,22 +138,24 @@ Oito Homes convergidas:
 8. Intelligence.
 
 ```text
-HANDOFF v1.3.0 = ativo
-DESIGN DELIVERY v4 = emitido
+HANDOFF v1.3.0 = ativo no snapshot
+DESIGN DELIVERY v4 = emitido no snapshot
 DESIGN PRODUZIDO AUTOMATICAMENTE = não
 ```
 
-Na Home Pública da Pessoa:
+A auditoria integral posterior substitui a leitura agregada das oito Homes por avaliação individual e não autoriza materialização visual por inferência deste snapshot.
+
+Na Home Pública da Pessoa, o snapshot registrava:
 
 ```text
 Movimento 06 — Da Possibilidade à Experiência
-= rótulo vigente
+= rótulo vigente no snapshot
 
 função
 = possibilidade → escolha → experiência → novo contexto
 ```
 
-A alteração é nominal e não reabre a arquitetura narrativa.
+A alteração registrada era nominal e não reabria a arquitetura narrativa naquele checkpoint.
 
 ## 6. Business
 
@@ -146,20 +175,20 @@ custeio da Journey ≠ controle da Journey
 Pontos ≠ evolução
 ```
 
-Gaps permanecem em preços/limites/entitlements/SLA finais, regras econômicas restantes e arquitetura técnica onde ainda não houver autoridade posterior.
+Gaps permaneciam em preços/limites/entitlements/SLA finais, regras econômicas restantes e arquitetura técnica onde ainda não houvesse autoridade posterior.
 
 ## 7. Intelligence
 
-`GPA-006 v2.0.0` + `GIA-000 v1.5.0`.
+O snapshot referenciava `GPA-006 v2.0.0` + `GIA-000 v1.5.0`.
 
 Duas frentes:
 
 - Pessoa / Journey;
 - Business / População.
 
-Neo4j permanece `reference_selected`, não produção comprovada.
+Neo4j permanecia `reference_selected`, não produção comprovada.
 
-A Home Intelligence está convergida documentalmente e incluída no snapshot v4; nenhum Design foi produzido por essa convergência.
+A Home Intelligence era registrada como convergida documentalmente e incluída no snapshot v4; nenhum Design foi produzido por essa convergência. Autoridades posteriores devem ser usadas para o estado atual.
 
 ## 8. Marca, autoridade pública e proteção marcária
 
@@ -200,7 +229,7 @@ filing_authorized = false
 
 AIaaS é item condicional das aplicações de classe 42 e depende de evidência de atividade efetiva/objeto compatível antes de inclusão no protocolo.
 
-Próximo gate marcário: **Human Filing Authorization**.
+Próximo gate marcário registrado no snapshot: **Human Filing Authorization**.
 
 ## 9. Fundamento Cristão
 
@@ -220,7 +249,7 @@ A presença de Lucas 2:52 na bio pessoal do fundador não reduz essa base conver
 
 ## 10. Mercado, jurídico e operação
 
-Permanecem dependentes de evidência real:
+No snapshot, permaneciam dependentes de evidência real:
 
 - PMF e disposição a pagar;
 - resultados reais de VAL;
@@ -278,9 +307,9 @@ As seguintes proteções do programa anterior permanecem válidas salvo autorida
 - convite não cria vínculo;
 - evento futuro não é garantia de implementação.
 
-## 13. Próximos atos possíveis
+## 13. Próximos atos registrados no snapshot
 
-O painel não cria uma fila automática.
+Este registro não cria uma fila atual. O snapshot preservava:
 
 ```text
 EVIDÊNCIA → VAL
@@ -296,11 +325,13 @@ DESIGN → decisão humana própria
 IMPLEMENTAÇÃO → Product Engineering explicitamente reativada
 ```
 
+Para próximos atos vigentes, consultar `GKR-STATE-001`, `GKR-FULL-CORPUS-AUDIT-001` e o Roadmap atual.
+
 ## 14. Regra de preservação
 
 ```text
 GKR-STATE-001 = autoridade do estado
-PAINEL = resumo operacional
+PAINEL = snapshot histórico superseded
 PAINEL ≠ fonte paralela
 CHECKPOINT HISTÓRICO ≠ ESTADO CORRENTE
 SÍNTESE ≠ APAGAMENTO DE AUTORIDADE

@@ -2,9 +2,9 @@
 id: RP-002-PILOT-STACK-DEC-001
 title: Piloto — Decisão da Arquitetura-Alvo do Primeiro Dry Run
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Guivos Research
-last_updated: 2026-08-27
+last_updated: 2026-09-04
 normative: false
 parent: RP-002
 maturity: operational_target_partially_configured
@@ -13,7 +13,7 @@ related:
   - RP-002-PILOT-OP-001
   - RP-002-PILOT-DATA-LAW-001
   - RP-002-PILOT-PRIV-001
-  - RP-002-PILOT-NOTICE-CONSENT-001
+  - RP-002-PILOT-NOTICE-CONSENT-002
   - RP-002-PILOT-RESEARCH-MAILBOX-DEC-001
   - RP-002-PILOT-RESEARCH-MAILBOX-TEST-001
 ---

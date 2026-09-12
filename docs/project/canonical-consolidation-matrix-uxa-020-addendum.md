@@ -10,8 +10,6 @@ related:
   - UXA-000
   - UXA-001
   - UXA-002
-  - UXA-005
-  - UXA-006
   - UXA-010
   - UXA-011-A1
   - UXA-020

@@ -2,13 +2,13 @@
 id: GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
 title: Homes Públicas dos Produtos Especializados — Autoridade de Reconciliação do Lote F
 status: active
-version: 1.0.0
+version: 1.1.3
 owner: Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-12
 parent: GKR-FULL-CORPUS-AUDIT-001
 depends_on:
   - GKR-STATE-001
-  - ROADMAP-13.4.0
+  - ROADMAP-13.33.1
   - GPA-002
   - GPA-003
   - GPA-004
@@ -63,7 +63,9 @@ Este documento **não substitui** GPA, Master, Source Lock de produto ou de Home
 
 ---
 
-## 2. Estado global preservado
+## 2. Checkpoint histórico do Lote F — estado global no momento da reconciliação
+
+O quadro abaixo é preservado como **snapshot histórico do momento de reconciliação do Lote F**. Ele não representa o estado global vigente do programa e não deve ser usado para reabrir, bloquear ou repetir etapas posteriormente concluídas.
 
 ```text
 AUDITORIA INTEGRAL
@@ -75,8 +77,22 @@ LOTE F
 HOMES DOS PRODUTOS ESPECIALIZADOS
 → DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
 
-PRÓXIMO BLOCO DA AUDITORIA
-→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
+G / H / I
+→ G COMPLETED
+→ H AUDITED / UPDATE_APPLIED / F-006 RESOLVED
+→ I AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED
+
+F-016
+→ RESOLVED
+→ LEGACY VISUAL PRODUCERS REMOVED 26/26
+→ POST-DELETE PROOF COMPLETE
+
+F-016-A
+→ RESOLVED
+→ PHYSICAL_SVG_COUNT = 0
+
+J / K / L / M / N
+→ NOT RELEASED AUTOMATICALLY
 
 UXA-102 / V5
 → NOT_STARTED
@@ -89,17 +105,9 @@ PMF
 
 WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
 → NOT AUTHORIZED
-
-NOVO SOURCE LOCK OU REABERTURA DE SOURCE LOCK
-→ NOT AUTHORIZED BY THIS DOCUMENT
-
-PUBLICAÇÃO / DISPONIBILIDADE OPERACIONAL
-→ NOT IMPLIED
 ```
 
-Handoffs, Manifests, snapshots, Source Locks e GENINPUTs existentes preservam a função que suas próprias autoridades lhes atribuem. Nenhum deles constitui autorização automática de Design durante a Auditoria Integral.
-
----
+`AUDITORIA INTEGRAL → IN_PROGRESS` e `J / K / L / M / N → NOT RELEASED AUTOMATICALLY` são fatos históricos daquele checkpoint. Para o estado global corrente devem ser consultadas as revisões vigentes de `GKR-STATE-001` e `ROADMAP-13.33.1`: a auditoria integral e os lotes J–N já foram concluídos no programa, e `NEXT AUTOMATIC EXECUTION = NONE` permanece a regra corrente. Esta reclassificação histórica não altera o estado documental das seis Homes nem libera qualquer etapa downstream.
 
 ## 3. Regra transversal das seis Homes
 
@@ -247,7 +255,19 @@ MASTER v1.0.0
 
 ROADMAP-12.79.0 NO FRONTMATTER
 → HISTORICAL DEPENDENCY
-→ SUPERSEDED FOR CURRENT-STATE INTERPRETATION BY ROADMAP-13.4.0
+→ SUPERSEDED FOR CURRENT-STATE INTERPRETATION
+
+ROADMAP-13.4.0
+→ AUTORIDADE GLOBAL NO FECHAMENTO HISTÓRICO DO LOTE F
+→ PROVENIÊNCIA TEMPORAL
+
+ROADMAP-13.5.0
+→ CHECKPOINT INTERMEDIÁRIO HISTÓRICO
+→ NÃO É AUTORIDADE GLOBAL VIGENTE
+
+AUTORIDADES GLOBAIS VIGENTES NESTE HEAD
+→ GKR-STATE-001 v3.34.1
+→ ROADMAP-13.33.1
 ```
 
 A fronteira normativa permanece:
@@ -309,7 +329,7 @@ Autoridades principais:
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0` — Source Lock do Produto;
 - `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1` — consolidação mestre da Home;
 - `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` — Source Lock ativo e normativo da Home;
-- `GIA-000 v1.6.0` — Intelligence Architecture reconciliada no Lote F.
+- `GIA-000 v1.6.0` — revisão consumida no checkpoint histórico do Lote F; o estado corrente deve resolver a revisão vigente de `GIA-000`.
 
 Estado reconciliado:
 
@@ -343,7 +363,7 @@ COMPREENDER
 
 Intelligence pode servir outros domínios dentro de autoridade e finalidade permitidas, mas não absorve a autoridade de Journey, Business, Mall, Travel, Media, Ads, Pessoa, Organização ou Coletivo.
 
-Qualquer descrição histórica que declare a Home Intelligence como não iniciada é superada para estado atual por `GIA-000 v1.6.0`, pelo Documento Mestre, pelo Source Lock da Home e por esta reconciliação.
+Qualquer descrição histórica que declare a Home Intelligence como não iniciada é superada para estado atual pelo Documento Mestre, pelo Source Lock da Home, por esta reconciliação e pela revisão vigente de `GIA-000`; `GIA-000 v1.6.0` permanece apenas como revisão consumida no checkpoint histórico do Lote F.
 
 ---
 
@@ -371,13 +391,15 @@ REBUILD_REQUIRED
 → 0
 ```
 
-As divergências encontradas foram resolvidas documentalmente sem perda de conhecimento e sem rebuild conceitual. O fechamento do Lote F é consumido pelas autoridades globais `GKR-FULL-CORPUS-AUDIT-001 v1.4.0`, `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`.
+As divergências encontradas foram resolvidas documentalmente sem perda de conhecimento e sem rebuild conceitual. O fechamento do Lote F foi originalmente consumido por `GKR-FULL-CORPUS-AUDIT-001 v1.4.0`, `GKR-STATE-001 v3.4.0` e `ROADMAP-13.4.0`; essas versões permanecem como **checkpoint histórico do Lote F**. Para o estado global corrente, devem ser consultadas diretamente as revisões vigentes de `GKR-FULL-CORPUS-AUDIT-001`, `GKR-STATE-001` e `ROADMAP`; revisões intermediárias posteriores ao Lote F não constituem aliases permanentes da verdade atual.
 
 Esse fechamento não promove materialização, disponibilidade operacional, PMF, nova UXA ou implementação.
 
 ---
 
-## 11. Gate vigente
+## 11. Checkpoint histórico do gate do Lote F
+
+O quadro abaixo registra o gate tal como existia no fechamento documental do Lote F. Ele é preservado como proveniência temporal e **não constitui o gate atual do programa**.
 
 ```text
 LOTE F
@@ -392,8 +414,22 @@ REBUILD_REQUIRED
 AUDITORIA INTEGRAL
 → IN_PROGRESS
 
-NEXT BLOCK
-→ G / H / I — EXPERIENCE ARCHITECTURE E INVENTÁRIO VISUAL
+G / H / I
+→ AUDITADOS / REMEDIADOS
+→ F-006 RESOLVED
+
+F-016
+→ RESOLVED
+→ LEGACY VISUAL PRODUCERS REMOVED 26/26
+→ POST-DELETE PROOF COMPLETE
+
+F-016-A
+→ RESOLVED
+→ PHYSICAL_SVG_COUNT = 0
+
+DOWNSTREAM RELEASE
+→ J / K / L / M / N NOT RELEASED AUTOMATICALLY
+→ REQUIRES SEPARATE GOVERNED DECISION
 
 DESIGN AUTHORIZATION
 → SUSPENDED DURING FULL-CORPUS AUDIT
@@ -407,3 +443,5 @@ PRODUCT ENGINEERING
 PMF
 → NOT VALIDATED
 ```
+
+Para o gate corrente, esta autoridade defere explicitamente às revisões vigentes de `GKR-STATE-001` e `ROADMAP-13.33.1`. J–N já foram concluídos no programa; `NEXT AUTOMATIC EXECUTION = NONE`; `UXA-102/V5` permanece `NOT_STARTED`; Product Engineering permanece `PAUSED BEFORE W0-01`; nenhum Source Lock, implementação, produção, operação, participante real ou merge é autorizado por esta autoridade.

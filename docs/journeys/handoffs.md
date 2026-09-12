@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-HANDOFFS-001
 title: Handoffs entre Participantes
 status: active
-version: 0.10.0
+version: 0.11.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-30
 related:
   - UXA-019
   - UXA-056
@@ -12,10 +12,10 @@ related:
   - UXA-059
   - UXA-090
   - UXA-092
-  - UXA-093
   - UXA-094
-  - UXA-095
   - UXA-096
+  - UXA-097
+  - GKR-UX-D5-C4B-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: false
 ---
@@ -73,6 +73,8 @@ Oito handoffs do trecho de Coletivos estão integralmente validados: `TRN-105`, 
 
 Validação integral documental não equivale a implementação técnica.
 
-## 6. Próxima frente
+## 6. Continuidade posterior
 
-A próxima priorização deverá partir das lacunas remanescentes. **UXA-097 não foi iniciada.**
+A UXA-097 foi concluída e valida integralmente `TRN-007 — PER-007 → PER-008` no limite documental. A D5-C4B também promove `TRN-008..013` para integralmente validadas no limite documental.
+
+O estado atual das demais transições deve ser lido no `GKR-JOURNEY-TRANSITION-REGISTRY-001`. Este documento permanece uma vista específica de handoffs entre participantes e não substitui o registro granular de transições.

@@ -14,7 +14,6 @@ depends_on:
   - UXA-050
   - UXA-052
   - UXA-054
-  - UXA-055
   - GEM-007-A1
   - GEM-010-A2
 related:
@@ -24,6 +23,9 @@ normative: false
 ---
 
 # Validação Funcional e Reformulação dos Dez Estados Residuais do Opportunity Boost
+
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
 
 ## 1. Finalidade
 

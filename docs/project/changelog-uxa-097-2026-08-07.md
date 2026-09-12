@@ -9,9 +9,7 @@ depends_on:
   - UXA-097
   - GKR-STATE-001
 related:
-  - UXA-006
   - UXA-010
-  - UXA-036
   - UXA-037
   - GKR-TRN-007
   - M7.84

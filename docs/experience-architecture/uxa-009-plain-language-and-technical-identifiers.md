@@ -8,10 +8,6 @@ last_updated: 2026-07-26
 parent: UXA-000
 related:
   - UXA-001
-  - UXA-005
-  - UXA-006
-  - UXA-007
-  - UXA-008
   - GKR-STATE-001
 normative: true
 ---

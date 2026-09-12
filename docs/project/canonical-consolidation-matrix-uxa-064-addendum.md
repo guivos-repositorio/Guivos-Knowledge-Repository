@@ -2,14 +2,13 @@
 id: GKR-CANONICAL-CONSOLIDATION-UXA-064
 title: Matriz de Consolidação Canônica — Adendo UXA-064
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-04
+last_updated: 2026-09-01
 related:
   - UXA-056
   - UXA-059
   - UXA-063
-  - UXA-064
   - ROADMAP-12.40.0
   - M7.66
 normative: false
@@ -20,6 +19,8 @@ normative: false
 ## 1. Finalidade
 
 Este adendo registra as alterações propostas pela UXA-064 sem converter wireframe, texto de baixa fidelidade ou hipótese de consentimento em decisão canônica de Produto, Jurídico, Privacidade ou Engenharia.
+
+A reconciliação de 2026-09-01 preserva este adendo como registro especializado do incremento original. Declarações abaixo sobre estado proposto, resultante ou canônico, contagens, versões, baselines, pendências, marcos, próximos gates/transições/atos e autorizações futuras são **snapshots históricos do estágio em que o incremento foi integrado**; não representam o estado transversal vigente e não substituem `GKR-STATE-001`, registries ou autoridades de domínio vigentes.
 
 ## 2. Alterações propostas
 

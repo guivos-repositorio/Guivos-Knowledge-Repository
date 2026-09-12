@@ -2,15 +2,15 @@
 id: RP-002-PILOT-NOTICE-CONSENT-FLOW-DEC-001
 title: Piloto — Decisão do Fluxo A2 Notice e Consentimento
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Guivos Research
-last_updated: 2026-08-27
+last_updated: 2026-09-04
 normative: false
 parent: RP-002
 maturity: flow_target_approved_pre_execution
 related:
   - RP-002-PILOT-DOC-CLOSE-001
-  - RP-002-PILOT-NOTICE-CONSENT-001
+  - RP-002-PILOT-NOTICE-CONSENT-002
   - RP-002-PILOT-RESEARCH-MAILBOX-DEC-001
   - RP-002-PILOT-DATA-LAW-001
   - RP-002-PILOT-CTRL-DEC-001

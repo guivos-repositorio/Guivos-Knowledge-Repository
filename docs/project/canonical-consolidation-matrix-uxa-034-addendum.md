@@ -7,15 +7,12 @@ owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-CANON-MATRIX-001
-  - UXA-034
 related:
   - UXA-001
-  - UXA-005
   - UXA-009
   - UXA-011-A1
   - UXA-020
   - UXA-021
-  - UXA-022
   - UXA-023
   - GKR-STATE-001
   - ROADMAP-12.9.0
@@ -51,11 +48,11 @@ Ele materializa o contrato funcional já validado pela UXA-023 sem criar decisã
 
 ## 3. Novos artefatos
 
-- `docs/experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe.md`;
-- `docs/assets/wireframes/uxa-034-protected-entry-explanation-mobile.svg`;
-- `docs/assets/wireframes/uxa-034-protected-entry-access-mobile.svg`;
-- `docs/assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg`;
-- `docs/assets/wireframes/uxa-034-protected-entry-review-mobile.svg`.
+- `docs/experience-architecture/UXA-034 [historical producer removed_after_absorption in F-016]`;
+- `uxa-034-protected-entry-explanation-mobile.svg [historical SVG; physical file removed in F-016-A]`;
+- `uxa-034-protected-entry-access-mobile.svg [historical SVG; physical file removed in F-016-A]`;
+- `uxa-034-protected-entry-sharing-mobile.svg [historical SVG; physical file removed in F-016-A]`;
+- `uxa-034-protected-entry-review-mobile.svg [historical SVG; physical file removed in F-016-A]`.
 
 ## 4. Estado resultante
 

@@ -8,12 +8,10 @@ last_updated: 2026-08-07
 parent: UXA-000
 depends_on:
   - UXA-014
-  - UXA-018
   - UXA-056
   - UXA-058
   - UXA-059
   - UXA-080
-  - UXA-086
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -27,6 +25,9 @@ normative: false
 
 # Validação Funcional e Reformulação da Visão Geral do Responsável do Coletivo
 
+> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
+
+
 ## 1. Finalidade
 
 A UXA-087 valida funcionalmente a referência materializada pela UXA-086 para `GKR-SURF-COL-002 — Visão Geral do Responsável` e aplica, no mesmo pacote, as correções estritamente necessárias para que a superfície cumpra seu contrato sem antecipar `GKR-SURF-COL-003`.
@@ -37,17 +38,18 @@ A validação verifica se uma pessoa legitimamente responsável por um Coletivo 
 
 A validação não trata o wireframe como design final, protótipo ou implementação.
 
-## 2. Autoridades utilizadas
+## 2. Autoridades vigentes e proveniência histórica
 
-O gate foi realizado contra:
+O gate foi realizado contra as autoridades vigentes:
 
 - UXA-014 — fundação funcional de Organizações e Coletivos;
-- UXA-018 — validação funcional do Início do Coletivo;
 - UXA-056 — descoberta, perfil público, participação e gestão do Coletivo;
 - UXA-058 — comunicação, origem, autoridade, proteção e reversibilidade das interações;
 - UXA-059 — programa e priorização dos wireframes de Coletivos;
 - UXA-080 — registros granulares promovidos;
 - UXA-086 — contrato e materialização da Visão Geral do Responsável.
+
+A `UXA-018` participou historicamente da validação do antigo Início do Coletivo, mas permanece `superseded` e é preservada aqui somente como proveniência histórica. Ela não constitui dependência nem autoridade funcional vigente da UXA-087.
 
 Também foram considerados os registros vigentes de superfícies, transições e lacunas.
 
@@ -129,7 +131,6 @@ O contrato de `GKR-SURF-COL-002` previa permanência, retorno ou escolha de outr
 
 A UXA-087 altera o mesmo arquivo:
 
-`docs/assets/wireframes/uxa-086-collective-responsible-overview-desktop.svg`
 
 Não é criado um novo SVG e não surge um novo ID de superfície.
 

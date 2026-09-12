@@ -55,7 +55,7 @@ A referência agora demonstra:
 
 - `UXA-031 — Validação Funcional Especializada e Reformulação do Estado do Mapa sem Resultados`;
 - UXA-030 atualizada para versão 0.2.0;
-- `docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg` reformulado;
+- `uxa-030-opportunity-map-no-results-mobile.svg [historical SVG; physical file removed in F-016-A]` reformulado;
 - `GKR-CANON-MATRIX-UXA-031`;
 - este histórico 1.54.0;
 - estado global, roadmap, painel, marcos, programa de wireframes, menu, README e páginas iniciais atualizados.

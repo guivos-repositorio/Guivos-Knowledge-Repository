@@ -6,7 +6,6 @@ version: 1.64.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-28
 related:
-  - UXA-040
   - GKR-STATE-001
   - ROADMAP-12.16.0
   - M7.42
@@ -21,7 +20,7 @@ Registrar a criação da primeira referência visual de baixa fidelidade do flux
 
 ## 2. Criado
 
-- `docs/experience-architecture/uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md`;
+- `docs/experience-architecture/UXA-040 [historical producer removed_after_absorption in F-016]`;
 - cinco arquivos vetoriais em `docs/assets/wireframes/`;
 - `docs/project/canonical-consolidation-matrix-uxa-040-addendum.md`;
 - este histórico.

@@ -12,7 +12,6 @@ related:
   - UXA-011-A1
   - UXA-020
   - UXA-023
-  - UXA-034
   - GKR-STATE-001
   - ROADMAP-12.10.0
   - M7.36
@@ -48,11 +47,11 @@ Ele não altera autoridades normativas de domínio e não cria decisão de tecno
 
 ## 3. Artefatos reformulados
 
-- `docs/experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe.md`;
-- `docs/assets/wireframes/uxa-034-protected-entry-explanation-mobile.svg`;
-- `docs/assets/wireframes/uxa-034-protected-entry-access-mobile.svg`;
-- `docs/assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg`;
-- `docs/assets/wireframes/uxa-034-protected-entry-review-mobile.svg`.
+- `docs/experience-architecture/UXA-034 [historical producer removed_after_absorption in F-016]`;
+- `uxa-034-protected-entry-explanation-mobile.svg [historical SVG; physical file removed in F-016-A]`;
+- `uxa-034-protected-entry-access-mobile.svg [historical SVG; physical file removed in F-016-A]`;
+- `uxa-034-protected-entry-sharing-mobile.svg [historical SVG; physical file removed in F-016-A]`;
+- `uxa-034-protected-entry-review-mobile.svg [historical SVG; physical file removed in F-016-A]`.
 
 Novo registro:
 

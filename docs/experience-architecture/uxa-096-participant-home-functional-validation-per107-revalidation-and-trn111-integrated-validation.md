@@ -7,13 +7,10 @@ owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: UXA-000
 depends_on:
-  - UXA-016
-  - UXA-018
   - UXA-056
   - UXA-058
   - UXA-059
   - UXA-094
-  - UXA-095
 related:
   - GKR-SURF-PER-107
   - GKR-SURF-PER-108
