@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-NAV-001
 title: Hierarquia entre Header, Hero e CTAs da Home Pública de Organizações e Coletivos
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-12
 parent: GKR-UX-HOME-OC-MASTER-001
 depends_on:
   - GKR-UX-HOME-OC-MASTER-001
@@ -18,6 +18,7 @@ related:
   - GKR-UX-HOME-HANDOFF-001
   - UXA-014
   - UXA-019
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
 normative: false
 maturity: reconciled_navigation_detail_pre_materialization
 ---
@@ -787,7 +788,7 @@ Header / navegação de ambiente autenticado do Coletivo
 
 A Home pública não possui autoridade representada, unidade selecionada, papel autenticado ou governança operacional ativa.
 
-Os estados autenticados atuais são governados pelas autoridades vigentes de Organização/Coletivo, incluindo `UXA-014`, `UXA-019`, Jobs e Arquitetura da Informação autenticada. Jobs + IA estão definidos documentalmente em `pre-surface-map`; mapa final de superfícies e wireframes principais autenticados permanecem pendentes.
+Os estados autenticados atuais são governados pelas autoridades vigentes de Organização/Coletivo, incluindo `UXA-014`, `UXA-019`, Jobs e Arquitetura da Informação autenticada. Jobs + IA estão definidos documentalmente em `pre-surface-map`; o Surface Map lógico-documental autenticado está `DEFINED / CANONICAL DOCUMENTARY` em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`. O State Map, os fluxos prioritários, a navegação materializada e os wireframes principais autenticados permanecem pendentes/não materializados.
 
 ```text
 UXA-015 / UXA-016
