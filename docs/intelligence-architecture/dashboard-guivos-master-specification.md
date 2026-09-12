@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
 title: Dashboard Guivos — Documento Mestre de Especificação Analítica e Handoff Replit
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
@@ -25,7 +25,7 @@ related:
 
 Este documento é o **Anexo A** de `GKR-INTELLIGENCE-DASHBOARD-KPI-001` e governa, em nível documental pré-implementação, o **Dashboard Guivos**.
 
-O Dashboard Guivos é a superfície analítica interna de visão transversal do ecossistema e da empresa Guivos. Seu objetivo é permitir compreensão executiva e operacional sobre crescimento, participantes, Journey, oportunidades, relações, produtos, economia, território, qualidade e demais dimensões legitimamente disponíveis.
+O Dashboard Guivos é a superfície analítica interna de visão transversal do ecossistema e da empresa Guivos. Seu objetivo é permitir compreensão executiva e operacional sobre crescimento, participantes, Journey, oportunidades, relações, produtos, economia, território, Ads em nível resumido, qualidade e demais dimensões legitimamente disponíveis.
 
 Ele não é:
 
@@ -71,7 +71,7 @@ ECONOMIC KPIs
 → REQUIRE COMPOSITION WITH GEM-009
 ```
 
-Este documento define o que o dashboard deverá ser capaz de representar quando os respectivos contratos, fontes e gates estiverem autorizados. Ele não declara que todos os dados ou produtos já existem operacionalmente.
+Este documento define o que o dashboard deverá ser capaz de representar quando os respectivos contratos, fontes e gates estiverem autorizados. Ele não declara que todos os dados, eventos, relações ou produtos já existem operacionalmente.
 
 ---
 
@@ -103,13 +103,13 @@ DATA / INTELLIGENCE ACCESS
 ≠ DISCLOSURE IRRESTRITO
 ```
 
-Qualquer acesso individualizado excepcional deve possuir finalidade, autoridade e trilha própria; ele não deve ser inferido da existência deste dashboard.
+Qualquer acesso individualizado excepcional deve possuir finalidade, autoridade e trilha próprias; ele não deve ser inferido da existência deste dashboard.
 
 ---
 
 ## 4. Arquitetura funcional do dashboard
 
-O Dashboard Guivos deve ser organizado em dez áreas analíticas principais:
+O Dashboard Guivos deve ser organizado em **onze áreas analíticas principais**:
 
 1. Visão Executiva;
 2. População e Participantes;
@@ -120,9 +120,10 @@ O Dashboard Guivos deve ser organizado em dez áreas analíticas principais:
 7. Produtos e Adoção;
 8. Economia e Planos;
 9. Território e Demografia;
-10. Qualidade, Freshness e Governança do Dado.
+10. Ads / Opportunity Boost — resumo interno;
+11. Qualidade, Freshness e Governança do Dado.
 
-Uma área pode permanecer parcialmente indisponível enquanto seus contratos não estiverem prontos.
+Uma área pode permanecer parcial ou integralmente indisponível enquanto seus contratos não estiverem prontos.
 
 ```text
 SEÇÃO DOCUMENTADA
@@ -131,7 +132,7 @@ SEÇÃO DOCUMENTADA
 
 ---
 
-## 5. Convenções de KPI
+## 5. Convenções de KPI e status
 
 Prefixo deste master:
 
@@ -152,34 +153,54 @@ Famílias iniciais:
 - `ADS` — resumo Ads / Opportunity Boost;
 - `DQ` — data quality, freshness e governança.
 
-Os IDs deste documento identificam contratos analíticos candidatos/definidos documentalmente. Um ID não significa implementação.
+Os IDs identificam contratos analíticos candidatos. Um ID não significa implementação.
+
+### 5.1 Vocabulário de status
+
+Este documento usa exclusivamente o vocabulário do master global:
+
+| Status | Semântica |
+|---|---|
+| `proposed` | necessidade/definição candidata ainda incompleta; não build-ready |
+| `source_pending` | definição lógica suficientemente delimitada para continuar, mas source/data contract ou equivalente ainda impede readiness |
+| `defined` | contrato mínimo transversal documentalmente preenchido; ainda não significa implementação autorizada |
+| `approved-equivalent` | autoridade especializada aplicável fornece estado equivalente aceito pelo gate governado |
+
+Regras:
+
+```text
+PROPOSED
+→ NÃO IMPLEMENTAR COMO KPI CANÔNICO
+
+SOURCE_PENDING
+→ NÃO IMPLEMENTAR COM DADO REAL
+
+DEFINED
+→ AINDA REQUER CONTRATOS DE DOMÍNIO + BUILD AUTHORIZATION
+```
+
+Na versão `v0.1.1`, **nenhum KPI deste catálogo é declarado `defined` ou `approved-equivalent` por inferência**.
 
 ---
 
 ## 6. Família POP — População e participantes
 
-### 6.1 Catálogo
-
-| ID | Indicador | Definição lógica | Unidade | Status |
-|---|---|---|---|---|
-| GUV-KPI-POP-001 | Pessoas cadastradas | `COUNT(DISTINCT person_id)` no universo válido corrente | pessoas | DEFINED DOCUMENTARILY |
-| GUV-KPI-POP-002 | Novas Pessoas | Pessoas cuja criação válida ocorreu no período | pessoas/período | DEFINED DOCUMENTARILY |
-| GUV-KPI-POP-003 | Pessoas ativas | Pessoas com ≥1 evento pertencente ao `ACTIVITY_EVENT_SET` aprovado dentro da janela | pessoas | SOURCE/EVENT-SET PENDING |
-| GUV-KPI-POP-004 | Pessoas inativas | Pessoas elegíveis sem evento qualificante na janela de atividade | pessoas | SOURCE/EVENT-SET PENDING |
-| GUV-KPI-POP-005 | Taxa de ativação de Pessoas | Pessoas que atingiram o evento de ativação / Pessoas elegíveis para ativação | % | ACTIVATION EVENT PENDING |
-| GUV-KPI-POP-006 | Crescimento líquido de Pessoas | novas Pessoas válidas − saídas/desativações válidas no período | pessoas/período | EXIT RULE PENDING |
-| GUV-KPI-POP-007 | Organizações cadastradas | `COUNT(DISTINCT organization_id)` válido | organizações | DEFINED DOCUMENTARILY |
-| GUV-KPI-POP-008 | Organizações ativas | Organizações com atividade qualificante segundo contrato próprio | organizações | ACTIVITY RULE PENDING |
-| GUV-KPI-POP-009 | Coletivos cadastrados | `COUNT(DISTINCT collective_id)` válido | coletivos | DEFINED DOCUMENTARILY |
-| GUV-KPI-POP-010 | Coletivos ativos | Coletivos com atividade qualificante segundo contrato próprio | coletivos | ACTIVITY RULE PENDING |
-| GUV-KPI-POP-011 | Mix de participantes | participação percentual de Pessoa / Organização / Coletivo no universo aplicável | % | DEFINED DOCUMENTARILY |
-| GUV-KPI-POP-012 | Taxa de reativação | entidades previamente inativas que retornaram a atividade / inativas elegíveis | % | REACTIVATION RULE PENDING |
-
-### 6.2 Regra crítica de atividade
+| ID | Indicador | Definição lógica candidata | Unidade | Status | Dependência / gate principal |
+|---|---|---|---|---|---|
+| GUV-KPI-POP-001 | Pessoas cadastradas | contagem distinta da entidade Pessoa no universo válido corrente | pessoas | source_pending | participant source + validade/exclusões |
+| GUV-KPI-POP-002 | Novas Pessoas | Pessoas cuja criação válida ocorreu no período | pessoas/período | source_pending | participant source + temporal contract |
+| GUV-KPI-POP-003 | Pessoas ativas | Pessoas com ≥1 evento do `ACTIVITY_EVENT_SET` aprovado na janela | pessoas | proposed | activity event set + janela + source |
+| GUV-KPI-POP-004 | Pessoas inativas | Pessoas elegíveis sem evento qualificante na janela | pessoas | proposed | activity/inactivity contract |
+| GUV-KPI-POP-005 | Taxa de ativação de Pessoas | Pessoas que atingiram ativação / Pessoas elegíveis | % | proposed | activation event + denominator |
+| GUV-KPI-POP-006 | Crescimento líquido de Pessoas | novas Pessoas válidas − saídas/desativações válidas | pessoas/período | proposed | exit/deactivation contract |
+| GUV-KPI-POP-007 | Organizações cadastradas | contagem distinta de Organizações válidas | organizações | source_pending | organization source + validade |
+| GUV-KPI-POP-008 | Organizações ativas | Organizações com atividade qualificante | organizações | proposed | organization activity contract |
+| GUV-KPI-POP-009 | Coletivos cadastrados | contagem distinta de Coletivos válidos | coletivos | source_pending | collective source + validade |
+| GUV-KPI-POP-010 | Coletivos ativos | Coletivos com atividade qualificante | coletivos | proposed | collective activity contract |
+| GUV-KPI-POP-011 | Mix de participantes | distribuição Pessoa / Organização / Coletivo no universo aplicável | % | source_pending | sources + denominator + scope |
+| GUV-KPI-POP-012 | Taxa de reativação | entidades previamente inativas que retornam / inativas elegíveis | % | proposed | reactivation contract |
 
 O Replit **não pode decidir sozinho** o que significa `ativo`.
-
-Antes da implementação de POP-003, 004, 008, 010 e 012 deve existir um contrato explícito de eventos qualificantes, por tipo de participante.
 
 ```text
 LOGIN
@@ -193,20 +214,20 @@ CADASTRO EXISTENTE
 
 ## 7. Família ENG — Aquisição, ativação e retenção
 
-| ID | Indicador | Definição lógica | Unidade | Status |
-|---|---|---|---|---|
-| GUV-KPI-ENG-001 | Conclusão de cadastro | cadastros concluídos / cadastros iniciados | % | EVENT CONTRACT PENDING |
-| GUV-KPI-ENG-002 | Tempo até ativação | tempo entre elegibilidade inicial e evento de ativação | tempo | ACTIVATION EVENT PENDING |
-| GUV-KPI-ENG-003 | WAU | Pessoas únicas ativas em janela móvel de 7 dias | pessoas | ACTIVITY EVENT SET PENDING |
-| GUV-KPI-ENG-004 | MAU | Pessoas únicas ativas em janela móvel de 30 dias | pessoas | ACTIVITY EVENT SET PENDING |
-| GUV-KPI-ENG-005 | Stickiness WAU/MAU | `WAU / MAU` | razão/% | DEPENDS ENG-003/004 |
-| GUV-KPI-ENG-006 | Retenção D7 | coorte ativada com atividade qualificante na janela D7 / coorte ativada | % | COHORT CONTRACT PENDING |
-| GUV-KPI-ENG-007 | Retenção D30 | coorte ativada com atividade qualificante na janela D30 / coorte ativada | % | COHORT CONTRACT PENDING |
-| GUV-KPI-ENG-008 | Retenção D90 | coorte ativada com atividade qualificante na janela D90 / coorte ativada | % | COHORT CONTRACT PENDING |
-| GUV-KPI-ENG-009 | Taxa de reengajamento | inativos elegíveis que retornam no período / inativos elegíveis | % | RULE PENDING |
-| GUV-KPI-ENG-010 | Origem de aquisição | distribuição de novos participantes por source/medium/campaign autorizado | distribuição | ATTRIBUTION CONTRACT PENDING |
+| ID | Indicador | Definição lógica candidata | Unidade | Status | Dependência / gate principal |
+|---|---|---|---|---|---|
+| GUV-KPI-ENG-001 | Conclusão de cadastro | cadastros concluídos / cadastros iniciados | % | proposed | event contract + denominator |
+| GUV-KPI-ENG-002 | Tempo até ativação | tempo entre elegibilidade inicial e evento de ativação | tempo | proposed | activation event |
+| GUV-KPI-ENG-003 | WAU | Pessoas únicas ativas em janela móvel de 7 dias | pessoas | proposed | activity event set |
+| GUV-KPI-ENG-004 | MAU | Pessoas únicas ativas em janela móvel de 30 dias | pessoas | proposed | activity event set |
+| GUV-KPI-ENG-005 | Stickiness WAU/MAU | `WAU / MAU` | razão/% | proposed | ENG-003/004 definidos |
+| GUV-KPI-ENG-006 | Retenção D7 | coorte ativada com atividade qualificante na janela D7 / coorte ativada | % | proposed | cohort + activity contract |
+| GUV-KPI-ENG-007 | Retenção D30 | coorte ativada com atividade qualificante na janela D30 / coorte ativada | % | proposed | cohort + activity contract |
+| GUV-KPI-ENG-008 | Retenção D90 | coorte ativada com atividade qualificante na janela D90 / coorte ativada | % | proposed | cohort + activity contract |
+| GUV-KPI-ENG-009 | Taxa de reengajamento | inativos elegíveis que retornam / inativos elegíveis | % | proposed | inactivity + reengagement contract |
+| GUV-KPI-ENG-010 | Origem de aquisição | distribuição de novos participantes por source/medium/campaign autorizado | distribuição | proposed | attribution contract |
 
-`Churn` não deve ser usado como sinônimo universal de inatividade. Somente usar churn quando existir relação ou contrato em que cancelamento/abandono seja semanticamente definido.
+`Churn` não deve ser usado como sinônimo universal de inatividade. Somente usar churn quando cancelamento/abandono possuir definição própria.
 
 ---
 
@@ -214,19 +235,19 @@ CADASTRO EXISTENTE
 
 Este conjunto deve preservar a centralidade humana e evitar transformar evolução em score universal.
 
-| ID | Indicador | Definição lógica | Unidade | Status |
-|---|---|---|---|---|
-| GUV-KPI-JNY-001 | Pessoas com Journey iniciada | Pessoas com evento legítimo de início de Journey | pessoas | EVENT CONTRACT PENDING |
-| GUV-KPI-JNY-002 | Pessoas com Momento atualizado | Pessoas com atualização válida de Momento no período | pessoas | SOURCE CONTRACT PENDING |
-| GUV-KPI-JNY-003 | Objetivos ativos | objetivos em estado válido `active` | objetivos | STATE CONTRACT PENDING |
-| GUV-KPI-JNY-004 | Próximos Passos ativos | próximos passos em estado válido ativo | próximos passos | STATE CONTRACT PENDING |
-| GUV-KPI-JNY-005 | Próximos Passos concluídos | próximos passos concluídos no período | próximos passos | STATE CONTRACT PENDING |
-| GUV-KPI-JNY-006 | Taxa de conclusão de Próximos Passos | próximos passos concluídos / próximos passos elegíveis | % | DENOMINATOR CONTRACT PENDING |
-| GUV-KPI-JNY-007 | Experiências iniciadas | experiências com início válido | experiências | EVENT CONTRACT PENDING |
-| GUV-KPI-JNY-008 | Experiências concluídas | experiências com conclusão válida | experiências | EVENT CONTRACT PENDING |
-| GUV-KPI-JNY-009 | Evidências registradas | evidências válidas registradas no período | evidências | SOURCE CONTRACT PENDING |
-| GUV-KPI-JNY-010 | Distribuição por Domínio de Evolução | distribuição autorizada pelos nove `JED-*` | distribuição | DEFINED DOCUMENTARILY |
-| GUV-KPI-JNY-011 | Participação recorrente | Pessoas com participação qualificante em ≥2 períodos definidos | pessoas/% | WINDOW CONTRACT PENDING |
+| ID | Indicador | Definição lógica candidata | Unidade | Status | Dependência / gate principal |
+|---|---|---|---|---|---|
+| GUV-KPI-JNY-001 | Pessoas com Journey iniciada | Pessoas com evento legítimo de início de Journey | pessoas | proposed | event contract |
+| GUV-KPI-JNY-002 | Pessoas com Momento atualizado | Pessoas com atualização válida de Momento no período | pessoas | proposed | Moment source + validity |
+| GUV-KPI-JNY-003 | Objetivos ativos | objetivos em estado válido ativo | objetivos | proposed | objective state contract |
+| GUV-KPI-JNY-004 | Próximos Passos ativos | próximos passos em estado válido ativo | próximos passos | proposed | state contract |
+| GUV-KPI-JNY-005 | Próximos Passos concluídos | próximos passos concluídos no período | próximos passos | proposed | completion event contract |
+| GUV-KPI-JNY-006 | Taxa de conclusão de Próximos Passos | concluídos / próximos passos elegíveis | % | proposed | denominator + exclusions |
+| GUV-KPI-JNY-007 | Experiências iniciadas | experiências com início válido | experiências | proposed | event contract |
+| GUV-KPI-JNY-008 | Experiências concluídas | experiências com conclusão válida | experiências | proposed | event contract |
+| GUV-KPI-JNY-009 | Evidências registradas | evidências válidas registradas | evidências | proposed | evidence validity/source |
+| GUV-KPI-JNY-010 | Distribuição por Domínio de Evolução | distribuição autorizada pelos nove `JED-*` | distribuição | source_pending | domain mapping + source/disclosure |
+| GUV-KPI-JNY-011 | Participação recorrente | Pessoas com participação qualificante em ≥2 períodos definidos | pessoas/% | proposed | recurrence/window contract |
 
 Guardrails:
 
@@ -245,27 +266,27 @@ EXPERIÊNCIA CONCLUÍDA
 
 ## 9. Família OPP — Oportunidades e supply
 
-| ID | Indicador | Definição lógica | Unidade | Status |
-|---|---|---|---|---|
-| GUV-KPI-OPP-001 | Oportunidades criadas | oportunidades válidas criadas no período | oportunidades | DEFINED DOCUMENTARILY |
-| GUV-KPI-OPP-002 | Oportunidades publicadas | oportunidades que atingiram estado publicado | oportunidades | STATE CONTRACT PENDING |
-| GUV-KPI-OPP-003 | Oportunidades ativas | oportunidades no estado ativo segundo contrato | oportunidades | STATE CONTRACT PENDING |
-| GUV-KPI-OPP-004 | Oportunidades encerradas | oportunidades encerradas no período | oportunidades | STATE CONTRACT PENDING |
-| GUV-KPI-OPP-005 | Visualizações | eventos válidos de visualização | eventos | EVENT CONTRACT PENDING |
-| GUV-KPI-OPP-006 | Interesses / salvamentos | eventos válidos de interesse | eventos/pessoas | EVENT CONTRACT PENDING |
-| GUV-KPI-OPP-007 | Inscrições / aplicações | inscrições válidas associadas a oportunidades | inscrições | EVENT CONTRACT PENDING |
-| GUV-KPI-OPP-008 | Compras / vendas | transações válidas atribuídas a oportunidades | transações | ECONOMIC CONTRACT REQUIRED |
-| GUV-KPI-OPP-009 | Participações iniciadas | participações válidas iniciadas | participações | EVENT CONTRACT PENDING |
-| GUV-KPI-OPP-010 | Participações concluídas | participações concluídas | participações | EVENT CONTRACT PENDING |
-| GUV-KPI-OPP-011 | Conversão view → interesse | Pessoas com interesse / Pessoas com view elegível | % | FUNNEL CONTRACT PENDING |
-| GUV-KPI-OPP-012 | Conversão interesse → inscrição | inscrições / interesses elegíveis | % | FUNNEL CONTRACT PENDING |
-| GUV-KPI-OPP-013 | Conversão inscrição → transação | transações / inscrições elegíveis | % | ECONOMIC + FUNNEL CONTRACT PENDING |
-| GUV-KPI-OPP-014 | Conversão transação → participação | participações iniciadas / transações elegíveis | % | EVENT CONTRACT PENDING |
-| GUV-KPI-OPP-015 | Conclusão de participação | participações concluídas / iniciadas elegíveis | % | EVENT CONTRACT PENDING |
-| GUV-KPI-OPP-016 | Taxa de preenchimento | capacidade efetivamente ocupada / capacidade disponibilizada | % | CAPACITY CONTRACT PENDING |
-| GUV-KPI-OPP-017 | Tempo até primeiro engajamento | tempo publicação → primeiro evento qualificante | tempo | EVENT CONTRACT PENDING |
-| GUV-KPI-OPP-018 | Supply por Domínio | oportunidades ativas por `JED-*` | distribuição | DOMAIN MAPPING REQUIRED |
-| GUV-KPI-OPP-019 | Supply por território | oportunidades ativas por geografia autorizada | distribuição | GEO CONTRACT REQUIRED |
+| ID | Indicador | Definição lógica candidata | Unidade | Status | Dependência / gate principal |
+|---|---|---|---|---|---|
+| GUV-KPI-OPP-001 | Oportunidades criadas | oportunidades válidas criadas no período | oportunidades | source_pending | opportunity source + validity |
+| GUV-KPI-OPP-002 | Oportunidades publicadas | oportunidades que atingiram estado publicado | oportunidades | proposed | state contract |
+| GUV-KPI-OPP-003 | Oportunidades ativas | oportunidades no estado ativo | oportunidades | proposed | active-state contract |
+| GUV-KPI-OPP-004 | Oportunidades encerradas | oportunidades encerradas no período | oportunidades | proposed | closed-state contract |
+| GUV-KPI-OPP-005 | Visualizações | eventos válidos de visualização | eventos | proposed | event contract |
+| GUV-KPI-OPP-006 | Interesses / salvamentos | eventos válidos de interesse | eventos/pessoas | proposed | event contract |
+| GUV-KPI-OPP-007 | Inscrições / aplicações | inscrições válidas associadas a oportunidades | inscrições | proposed | event/status contract |
+| GUV-KPI-OPP-008 | Compras / vendas | transações válidas atribuídas a oportunidades | transações | proposed | GEM-009 + transaction/attribution |
+| GUV-KPI-OPP-009 | Participações iniciadas | participações válidas iniciadas | participações | proposed | participation contract |
+| GUV-KPI-OPP-010 | Participações concluídas | participações concluídas | participações | proposed | completion contract |
+| GUV-KPI-OPP-011 | Conversão view → interesse | Pessoas com interesse / Pessoas com view elegível | % | proposed | funnel population rules |
+| GUV-KPI-OPP-012 | Conversão interesse → inscrição | inscrições / interesses elegíveis | % | proposed | funnel population rules |
+| GUV-KPI-OPP-013 | Conversão inscrição → transação | transações / inscrições elegíveis | % | proposed | GEM-009 + attribution |
+| GUV-KPI-OPP-014 | Conversão transação → participação | participações iniciadas / transações elegíveis | % | proposed | transaction + participation contract |
+| GUV-KPI-OPP-015 | Conclusão de participação | participações concluídas / iniciadas elegíveis | % | proposed | participation contract |
+| GUV-KPI-OPP-016 | Taxa de preenchimento | capacidade ocupada / capacidade disponibilizada | % | proposed | capacity contract |
+| GUV-KPI-OPP-017 | Tempo até primeiro engajamento | publicação → primeiro evento qualificante | tempo | proposed | event contract |
+| GUV-KPI-OPP-018 | Supply por Domínio | oportunidades ativas por `JED-*` | distribuição | proposed | state + domain mapping |
+| GUV-KPI-OPP-019 | Supply por território | oportunidades ativas por geografia autorizada | distribuição | proposed | geography/disclosure contract |
 
 `Venda`, `inscrição`, `participação` e `conclusão` são eventos distintos e não devem ser colapsados.
 
@@ -273,18 +294,14 @@ EXPERIÊNCIA CONCLUÍDA
 
 ## 10. Família REL — Relações e Graph Analytics
 
-### 10.1 Indicadores relacionais básicos
-
-| ID | Indicador | Definição lógica | Unidade | Status |
-|---|---|---|---|---|
-| GUV-KPI-REL-001 | Relações Pessoa ↔ Organização | relações válidas correntes desse tipo | relações | RELATION CONTRACT PENDING |
-| GUV-KPI-REL-002 | Relações Pessoa ↔ Coletivo | relações válidas correntes desse tipo | relações | RELATION CONTRACT PENDING |
-| GUV-KPI-REL-003 | Relações Organização ↔ Coletivo | relações válidas correntes desse tipo | relações | RELATION CONTRACT PENDING |
-| GUV-KPI-REL-004 | Novas relações | relações iniciadas no período | relações/período | RELATION CONTRACT PENDING |
-| GUV-KPI-REL-005 | Relações ativas | relações que satisfazem regra de atividade/validade | relações | ACTIVE RELATION RULE PENDING |
-| GUV-KPI-REL-006 | Participantes conectados | participantes com ≥1 relação válida / participantes elegíveis | % | GRAPH CONTRACT PENDING |
-
-### 10.2 Graph Analytics avançado
+| ID | Indicador | Definição lógica candidata | Unidade | Status | Dependência / gate principal |
+|---|---|---|---|---|---|
+| GUV-KPI-REL-001 | Relações Pessoa ↔ Organização | relações válidas correntes desse tipo | relações | proposed | relation contract |
+| GUV-KPI-REL-002 | Relações Pessoa ↔ Coletivo | relações válidas correntes desse tipo | relações | proposed | relation contract |
+| GUV-KPI-REL-003 | Relações Organização ↔ Coletivo | relações válidas correntes desse tipo | relações | proposed | relation contract |
+| GUV-KPI-REL-004 | Novas relações | relações iniciadas no período | relações/período | proposed | relation lifecycle |
+| GUV-KPI-REL-005 | Relações ativas | relações que satisfazem regra de atividade/validade | relações | proposed | active relation rule |
+| GUV-KPI-REL-006 | Participantes conectados | participantes com ≥1 relação válida / participantes elegíveis | % | proposed | graph/relation contract |
 
 Métricas como densidade, centralidade, comunidades, caminhos, padrões de conexão e isolated-node rate permanecem:
 
@@ -302,14 +319,14 @@ Nenhuma centralidade deve ser apresentada como importância humana, reputação 
 
 Produtos Especializados e Experience Layer devem continuar semanticamente distintos.
 
-| ID | Indicador | Definição lógica | Unidade | Status |
-|---|---|---|---|---|
-| GUV-KPI-PRD-001 | Usuários ativos por produto | usuários únicos com evento qualificante por produto | usuários | ACTIVITY CONTRACT PENDING |
-| GUV-KPI-PRD-002 | Adoção por produto | usuários que adotaram produto / população elegível | % | ADOPTION EVENT PENDING |
-| GUV-KPI-PRD-003 | Uso cross-product | usuários com atividade qualificante em ≥2 produtos no período | usuários/% | EVENT CONTRACT PENDING |
-| GUV-KPI-PRD-004 | Distribuição de uso do ecossistema | participação relativa de atividade por produto/camada | distribuição | EVENT CONTRACT PENDING |
+| ID | Indicador | Definição lógica candidata | Unidade | Status | Dependência / gate principal |
+|---|---|---|---|---|---|
+| GUV-KPI-PRD-001 | Usuários ativos por produto | usuários únicos com evento qualificante por produto | usuários | proposed | product activity contract |
+| GUV-KPI-PRD-002 | Adoção por produto | usuários que adotaram produto / população elegível | % | proposed | adoption event + denominator |
+| GUV-KPI-PRD-003 | Uso cross-product | usuários ativos em ≥2 produtos no período | usuários/% | proposed | product activity contracts |
+| GUV-KPI-PRD-004 | Distribuição de uso do ecossistema | participação relativa de atividade por produto/camada | distribuição | proposed | event normalization contract |
 
-A lista de produtos/camadas consumida por este dashboard deve vir das autoridades correntes do GKR, não ser hard-coded como verdade eterna no Replit.
+A lista de produtos/camadas deve vir das autoridades correntes do GKR, não ser hard-coded como verdade eterna no Replit.
 
 ---
 
@@ -317,20 +334,20 @@ A lista de produtos/camadas consumida por este dashboard deve vir das autoridade
 
 Todos os KPIs desta seção exigem composição com `GEM-009-MEASUREMENT-CONTRACT-001` e demais autoridades econômicas aplicáveis.
 
-| ID | Indicador | Definição lógica candidata | Unidade | Status |
-|---|---|---|---|---|
-| GUV-KPI-ECO-001 | Planos vendidos | contratos/assinaturas válidas iniciadas no período | quantidade | GEM-009 REQUIRED |
-| GUV-KPI-ECO-002 | Planos ativos | relações de plano ativas na data de referência | quantidade | GEM-009 REQUIRED |
-| GUV-KPI-ECO-003 | Novas assinaturas | novas relações pagas válidas no período | quantidade | GEM-009 REQUIRED |
-| GUV-KPI-ECO-004 | Cancelamentos | cancelamentos válidos no período | quantidade | GEM-009 REQUIRED |
-| GUV-KPI-ECO-005 | Receita | receita reconhecida segundo contrato econômico aplicável | moeda | GEM-009 REQUIRED |
-| GUV-KPI-ECO-006 | MRR | receita mensal recorrente conforme contrato econômico | moeda/mês | GEM-009 REQUIRED |
-| GUV-KPI-ECO-007 | ARR | anualização autorizada de receita recorrente | moeda/ano | GEM-009 REQUIRED |
-| GUV-KPI-ECO-008 | Receita média por relação | receita aplicável / relações pagas elegíveis | moeda | GEM-009 REQUIRED |
-| GUV-KPI-ECO-009 | Valor transacionado de oportunidades | soma de transações elegíveis associadas a oportunidades | moeda | GEM-009 REQUIRED |
-| GUV-KPI-ECO-010 | Taxa de reembolso | valor ou transações reembolsadas / base elegível | % | GEM-009 REQUIRED |
-| GUV-KPI-ECO-011 | Mix de planos | distribuição de relações ativas por plano | % | GEM-009 REQUIRED |
-| GUV-KPI-ECO-012 | Receita por produto | receita atribuível por Produto Especializado | moeda/distribuição | GEM-009 + ATTRIBUTION REQUIRED |
+| ID | Indicador | Definição lógica candidata | Unidade | Status | Dependência / gate principal |
+|---|---|---|---|---|---|
+| GUV-KPI-ECO-001 | Planos vendidos | contratos/assinaturas válidas iniciadas no período | quantidade | proposed | GEM-009 + plan lifecycle |
+| GUV-KPI-ECO-002 | Planos ativos | relações de plano ativas na referência | quantidade | proposed | GEM-009 + active contract |
+| GUV-KPI-ECO-003 | Novas assinaturas | novas relações pagas válidas no período | quantidade | proposed | GEM-009 |
+| GUV-KPI-ECO-004 | Cancelamentos | cancelamentos válidos no período | quantidade | proposed | GEM-009 + cancellation contract |
+| GUV-KPI-ECO-005 | Receita | receita reconhecida segundo contrato econômico aplicável | moeda | proposed | GEM-009 + recognition rules |
+| GUV-KPI-ECO-006 | MRR | receita mensal recorrente conforme contrato econômico | moeda/mês | proposed | GEM-009 |
+| GUV-KPI-ECO-007 | ARR | anualização autorizada de receita recorrente | moeda/ano | proposed | GEM-009 |
+| GUV-KPI-ECO-008 | Receita média por relação | receita aplicável / relações pagas elegíveis | moeda | proposed | GEM-009 + denominator |
+| GUV-KPI-ECO-009 | Valor transacionado de oportunidades | soma de transações elegíveis associadas a oportunidades | moeda | proposed | GEM-009 + attribution |
+| GUV-KPI-ECO-010 | Taxa de reembolso | reembolsos / base elegível definida | % | proposed | GEM-009 + denominator |
+| GUV-KPI-ECO-011 | Mix de planos | distribuição de relações ativas por plano | % | proposed | GEM-009 + plan taxonomy |
+| GUV-KPI-ECO-012 | Receita por produto | receita atribuível por Produto Especializado | moeda/distribuição | proposed | GEM-009 + attribution |
 
 Nenhuma equivalência Pontos ↔ moeda deve ser inferida neste dashboard.
 
@@ -340,16 +357,14 @@ Nenhuma equivalência Pontos ↔ moeda deve ser inferida neste dashboard.
 
 Todas as leituras devem respeitar minimização, thresholds e finalidade.
 
-| ID | Indicador | Definição lógica | Unidade | Status |
-|---|---|---|---|---|
-| GUV-KPI-GEO-001 | Pessoas por território | Pessoas agregadas por geografia autorizada | distribuição | DISCLOSURE CONTRACT REQUIRED |
-| GUV-KPI-GEO-002 | Organizações por território | Organizações agregadas por geografia | distribuição | GEO CONTRACT REQUIRED |
-| GUV-KPI-GEO-003 | Coletivos por território | Coletivos agregados por geografia | distribuição | GEO CONTRACT REQUIRED |
-| GUV-KPI-GEO-004 | Oportunidades por território | oportunidades por geografia | distribuição | GEO CONTRACT REQUIRED |
-| GUV-KPI-GEO-005 | Distribuição demográfica autorizada | população agregada por dimensão legitimamente disponível | distribuição | PRIVACY/DATA CONTRACT REQUIRED |
-| GUV-KPI-GEO-006 | Completude geográfica | registros elegíveis com geografia utilizável / registros elegíveis | % | SOURCE CONTRACT REQUIRED |
-
-Regras:
+| ID | Indicador | Definição lógica candidata | Unidade | Status | Dependência / gate principal |
+|---|---|---|---|---|---|
+| GUV-KPI-GEO-001 | Pessoas por território | Pessoas agregadas por geografia autorizada | distribuição | proposed | disclosure + geography contract |
+| GUV-KPI-GEO-002 | Organizações por território | Organizações agregadas por geografia | distribuição | proposed | geography contract |
+| GUV-KPI-GEO-003 | Coletivos por território | Coletivos agregados por geografia | distribuição | proposed | geography contract |
+| GUV-KPI-GEO-004 | Oportunidades por território | oportunidades por geografia | distribuição | proposed | opportunity + geography contract |
+| GUV-KPI-GEO-005 | Distribuição demográfica autorizada | população agregada por dimensão legítima | distribuição | proposed | privacy/data/disclosure contract |
+| GUV-KPI-GEO-006 | Completude geográfica | registros elegíveis com geografia utilizável / registros elegíveis | % | proposed | source + usability rule |
 
 ```text
 MAPA
@@ -363,44 +378,47 @@ DADO GEOGRÁFICO DISPONÍVEL
 
 ## 14. Família ADS — Resumo Ads / Opportunity Boost
 
-Esta área é apenas um resumo interno de alto nível. O detalhamento deverá pertencer ao futuro master específico de Ads / Opportunity Boost.
+Esta é uma **área analítica principal de resumo interno**, mas o detalhamento deverá pertencer ao futuro master específico de Ads / Opportunity Boost.
 
-| ID | Indicador | Status |
-|---|---|---|
-| GUV-KPI-ADS-001 | campanhas ativas | DEPENDS ON ADS MASTER |
-| GUV-KPI-ADS-002 | investimento | DEPENDS ON ADS + ECONOMIC CONTRACT |
-| GUV-KPI-ADS-003 | impressões | DEPENDS ON ADS MASTER |
-| GUV-KPI-ADS-004 | cliques | DEPENDS ON ADS MASTER |
-| GUV-KPI-ADS-005 | conversões | DEPENDS ON ATTRIBUTION CONTRACT |
-| GUV-KPI-ADS-006 | CTR | DEPENDS ON ADS MASTER |
-| GUV-KPI-ADS-007 | CPA | DEPENDS ON ADS + ECONOMIC CONTRACT |
-| GUV-KPI-ADS-008 | ROAS | DEPENDS ON ATTRIBUTION + ECONOMIC CONTRACT |
+| ID | Indicador | Definição candidata | Status | Dependência / gate principal |
+|---|---|---|---|---|
+| GUV-KPI-ADS-001 | Campanhas ativas | campanhas em estado ativo válido | proposed | Ads master + campaign state |
+| GUV-KPI-ADS-002 | Investimento | valor elegível de spend no período | proposed | Ads master + GEM-009/economic contract |
+| GUV-KPI-ADS-003 | Impressões | eventos válidos de impressão | proposed | Ads master + event contract |
+| GUV-KPI-ADS-004 | Cliques | eventos válidos de clique | proposed | Ads master + event contract |
+| GUV-KPI-ADS-005 | Conversões | eventos de conversão atribuídos conforme contrato | proposed | attribution contract |
+| GUV-KPI-ADS-006 | CTR | cliques elegíveis / impressões elegíveis | proposed | Ads master + denominator rules |
+| GUV-KPI-ADS-007 | CPA | spend elegível / aquisições/conversões elegíveis | proposed | Ads + attribution + economic contract |
+| GUV-KPI-ADS-008 | ROAS | retorno atribuível / spend elegível | proposed | attribution + economic contract |
 
 ```text
 BOOSTED PERFORMANCE
 ≠ IMPACTO CAUSAL COMPROVADO
+
+CORRELAÇÃO
+≠ CAUSALIDADE
 ```
 
 ---
 
 ## 15. Família DQ — Qualidade, freshness e governança
 
-| ID | Indicador | Definição lógica | Unidade | Status |
-|---|---|---|---|---|
-| GUV-KPI-DQ-001 | Freshness compliance | datasets/contratos dentro do SLA de atualização / datasets monitorados | % | SLA CONTRACT PENDING |
-| GUV-KPI-DQ-002 | Completude de campos críticos | campos críticos preenchidos / campos críticos esperados | % | DATA CONTRACT PENDING |
-| GUV-KPI-DQ-003 | Taxa de duplicidade | registros duplicados confirmados / registros avaliados | % | DATA QUALITY CONTRACT PENDING |
-| GUV-KPI-DQ-004 | Indicadores indisponíveis | KPIs esperados sem dado utilizável na janela | quantidade | DEFINED DOCUMENTARILY |
-| GUV-KPI-DQ-005 | Supressões de disclosure | células/segmentos ocultados por regra de proteção | quantidade | DISCLOSURE ENGINE PENDING |
-| GUV-KPI-DQ-006 | KPIs com fonte vencida | KPIs cujo freshness ultrapassou limite contratado | quantidade | SOURCE CONTRACT PENDING |
+| ID | Indicador | Definição lógica candidata | Unidade | Status | Dependência / gate principal |
+|---|---|---|---|---|---|
+| GUV-KPI-DQ-001 | Freshness compliance | datasets/contratos dentro do SLA / datasets monitorados | % | proposed | SLA/source contract |
+| GUV-KPI-DQ-002 | Completude de campos críticos | campos críticos preenchidos / esperados | % | proposed | data contract |
+| GUV-KPI-DQ-003 | Taxa de duplicidade | duplicados confirmados / registros avaliados | % | proposed | data quality contract |
+| GUV-KPI-DQ-004 | Indicadores indisponíveis | KPIs esperados sem dado utilizável na janela | quantidade | proposed | expected registry + availability rules |
+| GUV-KPI-DQ-005 | Supressões de disclosure | células/segmentos ocultados por proteção | quantidade | proposed | disclosure policy/engine |
+| GUV-KPI-DQ-006 | KPIs com fonte vencida | KPIs cujo freshness ultrapassou limite | quantidade | proposed | freshness contract |
 
-Esses indicadores existem para qualificar confiança na leitura, não para criar aparência de precisão onde o dado é insuficiente.
+Esses indicadores qualificam confiança na leitura; não devem criar aparência de precisão onde o dado é insuficiente.
 
 ---
 
 ## 16. Filtros globais
 
-Filtros candidatos do Dashboard Guivos:
+Filtros candidatos:
 
 - período;
 - comparação de período;
@@ -412,22 +430,18 @@ Filtros candidatos do Dashboard Guivos:
 - plano, quando economicamente definido;
 - source / medium / campaign quando houver attribution contract;
 - estado de atividade;
-- Organização / Coletivo somente para usuários cuja autoridade permita esse recorte.
-
-Regra:
+- Organização / Coletivo somente quando a autoridade permitir o recorte.
 
 ```text
 FILTRO DISPONÍVEL NA UI
 → DEVE SER SUBCONJUNTO DO ACCESS SCOPE
 ```
 
-O cliente não pode ampliar escopo enviando filtros arbitrários ao backend/serving layer.
+O cliente não pode ampliar escopo enviando filtros arbitrários ao serving/backend.
 
 ---
 
 ## 17. Drill-down
-
-Níveis semânticos candidatos:
 
 ```text
 N0 — ECOSSISTEMA
@@ -436,7 +450,7 @@ N0 — ECOSSISTEMA
 → N3 — OBJETO OPERACIONAL AUTORIZADO
 ```
 
-Pessoa individual não é nível padrão de drill-down deste dashboard.
+Pessoa individual não é nível padrão de drill-down.
 
 Qualquer drill-down individual futuro exige autoridade separada e finalidade específica.
 
@@ -471,8 +485,6 @@ Regras:
 
 ## 19. Estados obrigatórios
 
-Cada bloco/KPI deve suportar:
-
 ```text
 LOADING
 NO_DATA
@@ -491,7 +503,7 @@ AVAILABLE
 
 ## 20. Data contracts lógicos esperados
 
-Sem definir schema físico, o Dashboard Guivos deverá conseguir consumir contratos lógicos equivalentes a:
+Sem definir schema físico, o Dashboard Guivos deverá poder consumir contratos lógicos equivalentes a:
 
 - Participant Aggregate;
 - Participant Activity Aggregate;
@@ -528,32 +540,33 @@ Cada payload deverá carregar, quando aplicável:
 
 ## 21. Orientação específica para a AI do Replit
 
-Quando a construção for autorizada, a AI do Replit deverá seguir estas instruções:
+Quando a construção for autorizada, a AI do Replit deverá:
 
 1. **não inventar métricas, fórmulas, tabelas, bancos ou permissões**;
 2. usar `metric_id` como chave estável e não o label visual;
-3. manter fórmulas fora dos componentes visuais quando o cálculo pertencer ao serving/analytics layer;
+3. manter cálculos fora do componente visual quando pertencerem ao serving/analytics layer;
 4. tratar filtros como restrição adicional, nunca como ampliação de acesso;
 5. não confiar em `participant_id`, tenant ou role enviados somente pelo cliente;
-6. não conectar diretamente o browser a bancos de origem;
-7. não armazenar credenciais ou secrets no frontend;
+6. não conectar diretamente o browser aos bancos de origem;
+7. não armazenar credenciais/secrets no frontend;
 8. separar mock adapters de real adapters;
-9. exibir versão/freshness/proveniência quando a especificação exigir;
-10. implementar estados `NO_DATA`, `INSUFFICIENT_DATA`, `SUPPRESSED_BY_POLICY` e `SOURCE_DELAYED` separadamente;
-11. impedir exportação quando o contrato do KPI não permitir;
+9. exibir versão/freshness/proveniência quando exigido;
+10. implementar `NO_DATA`, `INSUFFICIENT_DATA`, `SUPPRESSED_BY_POLICY` e `SOURCE_DELAYED` separadamente;
+11. impedir exportação quando o contrato não permitir;
 12. não habilitar drill-down para Pessoa por conveniência;
-13. preservar timezone e janela temporal do contrato;
-14. não inferir causalidade em tooltips, labels ou summaries;
-15. não traduzir `inferido` para `fato` na copy;
-16. registrar a versão deste master consumida na build;
-17. deixar componentes bloqueados/TBD claramente identificados em ambiente de mock;
-18. não promover mock data como dado real.
+13. preservar timezone e janela temporal;
+14. não inferir causalidade em labels, tooltips ou summaries;
+15. não traduzir `inferido` para `fato`;
+16. registrar a versão deste master usada na build;
+17. manter componentes bloqueados/TBD claramente identificados em ambiente mock;
+18. não promover mock data como dado real;
+19. aceitar como build-ready apenas KPIs com status `defined` ou `approved-equivalent` **e** todos os contratos/gates aplicáveis satisfeitos.
 
 ---
 
 ## 22. Estrutura funcional sugerida para futura construção
 
-Sem definir layout visual, a ordem semântica recomendada é:
+Sem definir layout visual:
 
 ```text
 DASHBOARD GUIVOS
@@ -564,29 +577,29 @@ DASHBOARD GUIVOS
 → access scope
 
 2. EXECUTIVE OVERVIEW
-→ Pessoas / Organizações / Coletivos
-→ atividade / ativação / retenção
-→ oportunidades
-→ economia quando autorizada
 
-3. GROWTH & ENGAGEMENT
+3. POPULATION & PARTICIPANTS
 
-4. JOURNEY & EXPERIENCES
+4. GROWTH & ENGAGEMENT
 
-5. OPPORTUNITIES & SUPPLY
+5. JOURNEY & EXPERIENCES
 
-6. RELATIONSHIPS & ECOSYSTEM
+6. OPPORTUNITIES & SUPPLY
 
-7. PRODUCTS
+7. RELATIONSHIPS & ECOSYSTEM
 
-8. ECONOMY
+8. PRODUCTS
 
-9. TERRITORY / DEMOGRAPHY
+9. ECONOMY
 
-10. ADS SUMMARY
+10. TERRITORY / DEMOGRAPHY
 
-11. DATA QUALITY / GOVERNANCE
+11. ADS SUMMARY
+
+12. DATA QUALITY / GOVERNANCE
 ```
+
+`CONTEXTO` é moldura operacional da leitura; as **onze áreas analíticas** são os itens 2–12.
 
 A ordem pode ser refinada por Design futuro sem alterar o significado dos contratos.
 
@@ -594,10 +607,11 @@ A ordem pode ser refinada por Design futuro sem alterar o significado dos contra
 
 ## 23. Critérios de aceite documental para futuro handoff
 
-Antes de declarar este dashboard `READY FOR BUILD`, deve existir prova de que:
+Antes de declarar qualquer release `READY FOR BUILD`:
 
 ```text
-[ ] cada KPI incluído na build possui status compatível
+[ ] cada KPI selecionado = defined OU approved-equivalent
+[ ] todas as dependências/gates do KPI estão satisfeitas
 [ ] população e período estão definidos
 [ ] access scope está definido
 [ ] source/data contract está definido
@@ -615,13 +629,15 @@ Antes de declarar este dashboard `READY FOR BUILD`, deve existir prova de que:
 [ ] Design/build authorization foi emitida pelo gate aplicável
 ```
 
+`proposed` e `source_pending` **não são estados suficientes para build canônico**.
+
 ---
 
 ## 24. Testes mínimos para futura implementação
 
 A implementação, quando autorizada, deverá provar pelo menos:
 
-1. nenhum usuário recebe dado fora do seu access scope;
+1. nenhum usuário recebe dado fora do access scope;
 2. alterar parâmetros de cliente não amplia acesso;
 3. totais reconciliam com o contrato do KPI;
 4. filtros preservam população e denominadores corretos;
@@ -633,7 +649,7 @@ A implementação, quando autorizada, deverá provar pelo menos:
 10. drill-down respeita autoridade;
 11. proveniência é rastreável;
 12. Graph/Intelligence outputs preservam natureza e explicabilidade;
-13. mock data não pode aparecer como produção;
+13. mock data não aparece como produção;
 14. métricas econômicas usam contratos econômicos vigentes;
 15. nenhum texto automático afirma causalidade sem evidência adequada.
 
@@ -671,11 +687,11 @@ REPLIT IMPLEMENTATION
 
 ## 26. Handoff futuro
 
-Quando autorizado, o pacote de construção do Dashboard Guivos deverá incluir:
+Quando autorizado, o pacote de construção deverá incluir:
 
 1. `GKR-INTELLIGENCE-DASHBOARD-KPI-001` vigente;
 2. este documento vigente;
-3. registry dos KPI IDs selecionados para a release;
+3. registry dos KPI IDs selecionados;
 4. contratos individuais correspondentes;
 5. data/serving contracts;
 6. access/disclosure matrix;
@@ -690,7 +706,7 @@ Quando autorizado, o pacote de construção do Dashboard Guivos deverá incluir:
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
-→ v0.1.0
+→ v0.1.1
 → ACTIVE
 → ANNEX A OF GKR-INTELLIGENCE-DASHBOARD-KPI-001
 → GOVERNED PRE-IMPLEMENTATION DASHBOARD MASTER
@@ -698,9 +714,15 @@ GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
 DASHBOARD GUIVOS
 → SCOPE + KPI FAMILIES + ACCESS + INTEGRATION + REPLIT HANDOFF SPECIFIED DOCUMENTARILY
 
+ANALYTICAL AREAS
+→ 11
+
+KPI STATUS VOCABULARY
+→ ALIGNED WITH GLOBAL MASTER
+
 KPI IMPLEMENTATION READINESS
-→ MIXED
-→ INDIVIDUAL STATUS PER KPI
+→ NONE CLAIMED BY INFERENCE
+→ PROPOSED / SOURCE_PENDING ITEMS REMAIN NOT BUILD-READY
 
 REAL DATA / BACKEND / TECHNICAL RBAC / PRODUCTION
 → NOT AUTHORIZED
