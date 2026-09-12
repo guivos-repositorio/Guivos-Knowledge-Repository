@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.1
+version: 0.2.2
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
@@ -447,6 +447,7 @@ flowchart LR
 
     S --> A
     S --> G
+    S --> I
     A --> K
     G --> K
     G --> I
@@ -455,6 +456,8 @@ flowchart LR
     V --> R
     R --> U
 ```
+
+As fontes autorizadas podem alimentar Analytics, Graph e/ou Intelligence conforme finalidade e autoridade aplicáveis. **Graph não é pré-requisito universal para um output de Intelligence.**
 
 O desenho é lógico. Ele não determina topologia física, banco específico, API, serviço, linguagem ou infraestrutura.
 
@@ -657,7 +660,7 @@ Cada anexo deve ser construído e revisado individualmente para permitir evoluç
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.1
+→ v0.2.2
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
