@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
 title: Dashboard Guivos — Documento Mestre de Especificação Analítica e Handoff Replit
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
@@ -179,7 +179,7 @@ DEFINED
 → AINDA REQUER CONTRATOS DE DOMÍNIO + BUILD AUTHORIZATION
 ```
 
-Na versão `v0.1.1`, **nenhum KPI deste catálogo é declarado `defined` ou `approved-equivalent` por inferência**.
+Na versão `v0.1.2`, **nenhum KPI deste catálogo é declarado `defined` ou `approved-equivalent` por inferência**.
 
 ---
 
@@ -281,14 +281,14 @@ EXPERIÊNCIA CONCLUÍDA
 | GUV-KPI-OPP-011 | Conversão view → interesse | Pessoas com interesse / Pessoas com view elegível | % | proposed | funnel population rules |
 | GUV-KPI-OPP-012 | Conversão interesse → inscrição | inscrições / interesses elegíveis | % | proposed | funnel population rules |
 | GUV-KPI-OPP-013 | Conversão inscrição → transação | transações / inscrições elegíveis | % | proposed | GEM-009 + attribution |
-| GUV-KPI-OPP-014 | Conversão transação → participação | participações iniciadas / transações elegíveis | % | proposed | transaction + participation contract |
+| GUV-KPI-OPP-014 | Conversão transação → participação | participações iniciadas / transações elegíveis | % | proposed | GEM-009 + transaction eligibility + participation contract |
 | GUV-KPI-OPP-015 | Conclusão de participação | participações concluídas / iniciadas elegíveis | % | proposed | participation contract |
 | GUV-KPI-OPP-016 | Taxa de preenchimento | capacidade ocupada / capacidade disponibilizada | % | proposed | capacity contract |
 | GUV-KPI-OPP-017 | Tempo até primeiro engajamento | publicação → primeiro evento qualificante | tempo | proposed | event contract |
 | GUV-KPI-OPP-018 | Supply por Domínio | oportunidades ativas por `JED-*` | distribuição | proposed | state + domain mapping |
 | GUV-KPI-OPP-019 | Supply por território | oportunidades ativas por geografia autorizada | distribuição | proposed | geography/disclosure contract |
 
-`Venda`, `inscrição`, `participação` e `conclusão` são eventos distintos e não devem ser colapsados.
+`Venda`, `transação`, `inscrição`, `participação` e `conclusão` são eventos distintos e não devem ser colapsados. Qualquer KPI cujo denominador dependa de transação elegível deve compor com o contrato econômico aplicável.
 
 ---
 
@@ -706,7 +706,7 @@ Quando autorizado, o pacote de construção deverá incluir:
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
-→ v0.1.1
+→ v0.1.2
 → ACTIVE
 → ANNEX A OF GKR-INTELLIGENCE-DASHBOARD-KPI-001
 → GOVERNED PRE-IMPLEMENTATION DASHBOARD MASTER
@@ -719,6 +719,9 @@ ANALYTICAL AREAS
 
 KPI STATUS VOCABULARY
 → ALIGNED WITH GLOBAL MASTER
+
+TRANSACTION-BASED FUNNEL KPIs
+→ REQUIRE APPLICABLE ECONOMIC CONTRACT WHEN TRANSACTION ELIGIBILITY IS MATERIAL
 
 KPI IMPLEMENTATION READINESS
 → NONE CLAIMED BY INFERENCE
