@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
 title: Dashboard Guivos — Documento Mestre de Especificação Analítica e Handoff Replit
 status: active
-version: 0.1.2
+version: 0.1.3
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
@@ -179,7 +179,7 @@ DEFINED
 → AINDA REQUER CONTRATOS DE DOMÍNIO + BUILD AUTHORIZATION
 ```
 
-Na versão `v0.1.2`, **nenhum KPI deste catálogo é declarado `defined` ou `approved-equivalent` por inferência**.
+Na versão `v0.1.3`, **nenhum KPI deste catálogo é declarado `defined` ou `approved-equivalent` por inferência**.
 
 ---
 
@@ -199,6 +199,24 @@ Na versão `v0.1.2`, **nenhum KPI deste catálogo é declarado `defined` ou `app
 | GUV-KPI-POP-010 | Coletivos ativos | Coletivos com atividade qualificante | coletivos | proposed | collective activity contract |
 | GUV-KPI-POP-011 | Mix de participantes | distribuição Pessoa / Organização / Coletivo no universo aplicável | % | source_pending | sources + denominator + scope |
 | GUV-KPI-POP-012 | Taxa de reativação | entidades previamente inativas que retornam / inativas elegíveis | % | proposed | reactivation contract |
+
+### 6.1 Necessidade candidata preservada — escolhas / declarações das Pessoas
+
+O inventário global preserva como necessidade candidata a possibilidade de leituras relacionadas a **escolhas e declarações das Pessoas**. Este Anexo A mantém essa necessidade como proveniência de escopo, sem promovê-la a KPI, data contract ou autorização de disclosure.
+
+```text
+ESCOLHAS / DECLARAÇÕES DAS PESSOAS
+→ CANDIDATE NEED PRESERVED
+→ BLOCKED / NOT BUILD-READY
+→ KPI ID = NOT ASSIGNED
+→ FORMULA = NOT ADJUDICATED
+→ SOURCE = NOT ADJUDICATED
+→ POPULATION / DENOMINATOR = NOT ADJUDICATED
+→ ACCESS / DISCLOSURE = NOT ADJUDICATED
+→ REPLIT MUST NOT INFER IMPLEMENTATION
+```
+
+Qualquer futura materialização deverá ser precedida pela adjudicação das autoridades aplicáveis de Pessoa, Journey, Privacidade e Dados, incluindo finalidade, natureza da evidência, população, granularidade, retenção e disclosure.
 
 O Replit **não pode decidir sozinho** o que significa `ativo`.
 
@@ -246,8 +264,10 @@ Este conjunto deve preservar a centralidade humana e evitar transformar evoluç�
 | GUV-KPI-JNY-007 | Experiências iniciadas | experiências com início válido | experiências | proposed | event contract |
 | GUV-KPI-JNY-008 | Experiências concluídas | experiências com conclusão válida | experiências | proposed | event contract |
 | GUV-KPI-JNY-009 | Evidências registradas | evidências válidas registradas | evidências | proposed | evidence validity/source |
-| GUV-KPI-JNY-010 | Distribuição por Domínio de Evolução | distribuição autorizada pelos nove `JED-*` | distribuição | source_pending | domain mapping + source/disclosure |
+| GUV-KPI-JNY-010 | Distribuição por Domínio de Evolução | distribuição candidata por Domínio de Evolução, incluindo estados não mapeados/sem domínio conforme autoridade vigente | distribuição | proposed | buckets + population + denominator + null/unmapped treatment + source/disclosure |
 | GUV-KPI-JNY-011 | Participação recorrente | Pessoas com participação qualificante em ≥2 períodos definidos | pessoas/% | proposed | recurrence/window contract |
+
+Para `GUV-KPI-JNY-010`, a futura adjudicação dos buckets deve preservar explicitamente, conforme as autoridades vigentes, os nove `JED-*`, **`Ainda estou descobrindo`**, `other_unmapped` e `null / sem domínio associado`. Esta versão não define o denominador, a forma de agregação, o tratamento de `null`, a ordem dos buckets ou o disclosure; por isso o KPI permanece `proposed`.
 
 Guardrails:
 
@@ -676,6 +696,11 @@ REAL DATA
 PERSON-LEVEL INTERNAL EXPLORER
 → NOT AUTHORIZED BY THIS MASTER
 
+CHOICES / DECLARATIONS ANALYTICS
+→ CANDIDATE NEED PRESERVED
+→ KPI / FORMULA / SOURCE / DISCLOSURE / DATA CONTRACT NOT ADJUDICATED
+→ NOT BUILD-READY
+
 FINAL VISUAL DESIGN
 → NOT AUTHORIZED BY THIS MASTER
 
@@ -706,7 +731,7 @@ Quando autorizado, o pacote de construção deverá incluir:
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
-→ v0.1.2
+→ v0.1.3
 → ACTIVE
 → ANNEX A OF GKR-INTELLIGENCE-DASHBOARD-KPI-001
 → GOVERNED PRE-IMPLEMENTATION DASHBOARD MASTER
@@ -719,6 +744,14 @@ ANALYTICAL AREAS
 
 KPI STATUS VOCABULARY
 → ALIGNED WITH GLOBAL MASTER
+
+CHOICES / DECLARATIONS OF PERSONS
+→ CANDIDATE NEED PRESERVED
+→ BLOCKED / NOT BUILD-READY
+
+JNY-010 DOMAIN DISTRIBUTION
+→ PROPOSED
+→ MUST PRESERVE JED-* + DISCOVERY / UNMAPPED / NULL STATES UNTIL FORMAL ADJUDICATION
 
 TRANSACTION-BASED FUNNEL KPIs
 → REQUIRE APPLICABLE ECONOMIC CONTRACT WHEN TRANSACTION ELIGIBILITY IS MATERIAL
