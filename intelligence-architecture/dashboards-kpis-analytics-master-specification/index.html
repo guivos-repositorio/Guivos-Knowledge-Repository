@@ -8,7 +8,7 @@
 <meta content="Base oficial de conhecimento e arquitetura da Guivos" name="description"/>
 <meta content="Guivos" name="author"/>
 <link href="../" rel="prev"/>
-<link href="../../adr/ADR-007-neo4j-primary-graph-reference/" rel="next"/>
+<link href="../dashboard-guivos-master-specification/" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.7" name="generator"/>
 <title>Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção - Guivos Knowledge Repository</title>
@@ -716,13 +716,36 @@
 <span class="md-status md-status--active"></span>
 </a>
 </li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_8_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Dashboards, KPIs e Analytics
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_8_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Dashboards, KPIs e Analytics
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
     
   
-    Dashboards, KPIs e Analytics
+    Documento Mestre
   
 
     
@@ -734,7 +757,7 @@
 <span class="md-ellipsis">
     
   
-    Dashboards, KPIs e Analytics
+    Documento Mestre
   
 
     
@@ -757,83 +780,136 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#2-estado-e-limite-desta-especificacao">
+<a class="md-nav__link" href="#2-arquitetura-documental-da-familia">
 <span class="md-ellipsis">
       
-        2. Estado e limite desta especificação
+        2. Arquitetura documental da família
       
     </span>
 </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3-principio-arquitetural">
-<span class="md-ellipsis">
-      
-        3. Princípio arquitetural
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#4-inventario-candidato-inicial-de-dashboards">
-<span class="md-ellipsis">
-      
-        4. Inventário candidato inicial de dashboards
-      
-    </span>
-</a>
-<nav aria-label="4. Inventário candidato inicial de dashboards" class="md-nav">
+<nav aria-label="2. Arquitetura documental da família" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#41-dashboard-guivos">
+<a class="md-nav__link" href="#21-registry-documental">
 <span class="md-ellipsis">
       
-        4.1 Dashboard Guivos
+        2.1 Registry documental
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#42-dashboard-guivos-business">
+<a class="md-nav__link" href="#22-inventario-candidato-preservado-da-frente-original">
 <span class="md-ellipsis">
       
-        4.2 Dashboard Guivos Business
+        2.2 Inventário candidato preservado da frente original
+      
+    </span>
+</a>
+<nav aria-label="2.2 Inventário candidato preservado da frente original" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dashboard-guivos">
+<span class="md-ellipsis">
+      
+        Dashboard Guivos
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#43-dashboard-organizacoes">
+<a class="md-nav__link" href="#dashboard-guivos-business">
 <span class="md-ellipsis">
       
-        4.3 Dashboard Organizações
+        Dashboard Guivos Business
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#44-dashboard-coletivos">
+<a class="md-nav__link" href="#dashboard-organizacao">
 <span class="md-ellipsis">
       
-        4.4 Dashboard Coletivos
+        Dashboard Organização
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#45-dashboard-pessoa">
+<a class="md-nav__link" href="#dashboard-coletivo">
 <span class="md-ellipsis">
       
-        4.5 Dashboard Pessoa
+        Dashboard Coletivo
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#46-ads-opportunity-boost-analytics">
+<a class="md-nav__link" href="#dashboard-pessoa">
 <span class="md-ellipsis">
       
-        4.6 Ads / Opportunity Boost Analytics
+        Dashboard Pessoa
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ads-opportunity-boost-analytics">
+<span class="md-ellipsis">
+      
+        Ads / Opportunity Boost Analytics
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-estado-e-limites">
+<span class="md-ellipsis">
+      
+        3. Estado e limites
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-principio-arquitetural">
+<span class="md-ellipsis">
+      
+        4. Princípio arquitetural
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-modelo-transversal-de-acesso">
+<span class="md-ellipsis">
+      
+        5. Modelo transversal de acesso
+      
+    </span>
+</a>
+<nav aria-label="5. Modelo transversal de acesso" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#51-principios">
+<span class="md-ellipsis">
+      
+        5.1 Princípios
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#52-classes-funcionais-de-consumo">
+<span class="md-ellipsis">
+      
+        5.2 Classes funcionais de consumo
       
     </span>
 </a>
@@ -842,65 +918,65 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#5-envelope-minimo-transversal-do-contrato-de-kpi">
+<a class="md-nav__link" href="#6-envelope-minimo-do-contrato-de-kpi">
 <span class="md-ellipsis">
       
-        5. Envelope mínimo transversal do contrato de KPI
+        6. Envelope mínimo do contrato de KPI
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#6-requisitos-transversais-dos-dashboards">
+<a class="md-nav__link" href="#7-requisitos-transversais-de-dados-e-leitura">
 <span class="md-ellipsis">
       
-        6. Requisitos transversais dos dashboards
+        7. Requisitos transversais de dados e leitura
       
     </span>
 </a>
-<nav aria-label="6. Requisitos transversais dos dashboards" class="md-nav">
+<nav aria-label="7. Requisitos transversais de dados e leitura" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#61-temporalidade">
+<a class="md-nav__link" href="#71-temporalidade">
 <span class="md-ellipsis">
       
-        6.1 Temporalidade
+        7.1 Temporalidade
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#62-granularidade">
+<a class="md-nav__link" href="#72-granularidade">
 <span class="md-ellipsis">
       
-        6.2 Granularidade
+        7.2 Granularidade
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#63-proveniencia">
+<a class="md-nav__link" href="#73-proveniencia">
 <span class="md-ellipsis">
       
-        6.3 Proveniência
+        7.3 Proveniência
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#64-privacidade-e-disclosure">
+<a class="md-nav__link" href="#74-privacidade-e-disclosure">
 <span class="md-ellipsis">
       
-        6.4 Privacidade e disclosure
+        7.4 Privacidade e disclosure
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#65-explicabilidade">
+<a class="md-nav__link" href="#75-explicabilidade">
 <span class="md-ellipsis">
       
-        6.5 Explicabilidade
+        7.5 Explicabilidade
       
     </span>
 </a>
@@ -909,29 +985,20 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#7-mapa-de-ferramentas-leitura-governada-da-tabela-de-arquitetura">
+<a class="md-nav__link" href="#8-arquitetura-logica-de-integracao">
 <span class="md-ellipsis">
       
-        7. Mapa de ferramentas — leitura governada da tabela de arquitetura
+        8. Arquitetura lógica de integração
       
     </span>
 </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#8-pacote-de-handoff-para-replit">
-<span class="md-ellipsis">
-      
-        8. Pacote de handoff para Replit
-      
-    </span>
-</a>
-<nav aria-label="8. Pacote de handoff para Replit" class="md-nav">
+<nav aria-label="8. Arquitetura lógica de integração" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#81-instrucao-de-construcao">
+<a class="md-nav__link" href="#81-mapa-de-ferramentas-leitura-governada-da-tabela-de-arquitetura">
 <span class="md-ellipsis">
       
-        8.1 Instrução de construção
+        8.1 Mapa de ferramentas — leitura governada da tabela de arquitetura
       
     </span>
 </a>
@@ -940,39 +1007,73 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#9-arquitetura-logica-de-consumo">
+<a class="md-nav__link" href="#9-requisitos-comuns-de-um-dashboard-especializado">
 <span class="md-ellipsis">
       
-        9. Arquitetura lógica de consumo
+        9. Requisitos comuns de um dashboard especializado
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#10-definition-of-ready-para-materializacao-de-um-kpi">
+<a class="md-nav__link" href="#10-contrato-de-construcao-para-replit">
 <span class="md-ellipsis">
       
-        10. Definition of Ready para materialização de um KPI
+        10. Contrato de construção para Replit
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#11-proximas-especificacoes-necessarias">
+<a class="md-nav__link" href="#11-definition-of-ready-de-um-kpi">
 <span class="md-ellipsis">
       
-        11. Próximas especificações necessárias
+        11. Definition of Ready de um KPI
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#12-estado-final-desta-versao">
+<a class="md-nav__link" href="#12-handoff-entre-os-masters">
 <span class="md-ellipsis">
       
-        12. Estado final desta versão
+        12. Handoff entre os masters
       
     </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13-proximas-unidades-documentais">
+<span class="md-ellipsis">
+      
+        13. Próximas unidades documentais
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#14-estado-final-desta-versao">
+<span class="md-ellipsis">
+      
+        14. Estado final desta versão
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dashboard-guivos-master-specification/">
+<span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — Documento Mestre
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
 </a>
 </li>
 </ul>
@@ -1276,83 +1377,136 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#2-estado-e-limite-desta-especificacao">
+<a class="md-nav__link" href="#2-arquitetura-documental-da-familia">
 <span class="md-ellipsis">
       
-        2. Estado e limite desta especificação
+        2. Arquitetura documental da família
       
     </span>
 </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3-principio-arquitetural">
-<span class="md-ellipsis">
-      
-        3. Princípio arquitetural
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#4-inventario-candidato-inicial-de-dashboards">
-<span class="md-ellipsis">
-      
-        4. Inventário candidato inicial de dashboards
-      
-    </span>
-</a>
-<nav aria-label="4. Inventário candidato inicial de dashboards" class="md-nav">
+<nav aria-label="2. Arquitetura documental da família" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#41-dashboard-guivos">
+<a class="md-nav__link" href="#21-registry-documental">
 <span class="md-ellipsis">
       
-        4.1 Dashboard Guivos
+        2.1 Registry documental
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#42-dashboard-guivos-business">
+<a class="md-nav__link" href="#22-inventario-candidato-preservado-da-frente-original">
 <span class="md-ellipsis">
       
-        4.2 Dashboard Guivos Business
+        2.2 Inventário candidato preservado da frente original
+      
+    </span>
+</a>
+<nav aria-label="2.2 Inventário candidato preservado da frente original" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dashboard-guivos">
+<span class="md-ellipsis">
+      
+        Dashboard Guivos
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#43-dashboard-organizacoes">
+<a class="md-nav__link" href="#dashboard-guivos-business">
 <span class="md-ellipsis">
       
-        4.3 Dashboard Organizações
+        Dashboard Guivos Business
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#44-dashboard-coletivos">
+<a class="md-nav__link" href="#dashboard-organizacao">
 <span class="md-ellipsis">
       
-        4.4 Dashboard Coletivos
+        Dashboard Organização
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#45-dashboard-pessoa">
+<a class="md-nav__link" href="#dashboard-coletivo">
 <span class="md-ellipsis">
       
-        4.5 Dashboard Pessoa
+        Dashboard Coletivo
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#46-ads-opportunity-boost-analytics">
+<a class="md-nav__link" href="#dashboard-pessoa">
 <span class="md-ellipsis">
       
-        4.6 Ads / Opportunity Boost Analytics
+        Dashboard Pessoa
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ads-opportunity-boost-analytics">
+<span class="md-ellipsis">
+      
+        Ads / Opportunity Boost Analytics
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-estado-e-limites">
+<span class="md-ellipsis">
+      
+        3. Estado e limites
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-principio-arquitetural">
+<span class="md-ellipsis">
+      
+        4. Princípio arquitetural
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-modelo-transversal-de-acesso">
+<span class="md-ellipsis">
+      
+        5. Modelo transversal de acesso
+      
+    </span>
+</a>
+<nav aria-label="5. Modelo transversal de acesso" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#51-principios">
+<span class="md-ellipsis">
+      
+        5.1 Princípios
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#52-classes-funcionais-de-consumo">
+<span class="md-ellipsis">
+      
+        5.2 Classes funcionais de consumo
       
     </span>
 </a>
@@ -1361,65 +1515,65 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#5-envelope-minimo-transversal-do-contrato-de-kpi">
+<a class="md-nav__link" href="#6-envelope-minimo-do-contrato-de-kpi">
 <span class="md-ellipsis">
       
-        5. Envelope mínimo transversal do contrato de KPI
+        6. Envelope mínimo do contrato de KPI
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#6-requisitos-transversais-dos-dashboards">
+<a class="md-nav__link" href="#7-requisitos-transversais-de-dados-e-leitura">
 <span class="md-ellipsis">
       
-        6. Requisitos transversais dos dashboards
+        7. Requisitos transversais de dados e leitura
       
     </span>
 </a>
-<nav aria-label="6. Requisitos transversais dos dashboards" class="md-nav">
+<nav aria-label="7. Requisitos transversais de dados e leitura" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#61-temporalidade">
+<a class="md-nav__link" href="#71-temporalidade">
 <span class="md-ellipsis">
       
-        6.1 Temporalidade
+        7.1 Temporalidade
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#62-granularidade">
+<a class="md-nav__link" href="#72-granularidade">
 <span class="md-ellipsis">
       
-        6.2 Granularidade
+        7.2 Granularidade
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#63-proveniencia">
+<a class="md-nav__link" href="#73-proveniencia">
 <span class="md-ellipsis">
       
-        6.3 Proveniência
+        7.3 Proveniência
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#64-privacidade-e-disclosure">
+<a class="md-nav__link" href="#74-privacidade-e-disclosure">
 <span class="md-ellipsis">
       
-        6.4 Privacidade e disclosure
+        7.4 Privacidade e disclosure
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#65-explicabilidade">
+<a class="md-nav__link" href="#75-explicabilidade">
 <span class="md-ellipsis">
       
-        6.5 Explicabilidade
+        7.5 Explicabilidade
       
     </span>
 </a>
@@ -1428,29 +1582,20 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#7-mapa-de-ferramentas-leitura-governada-da-tabela-de-arquitetura">
+<a class="md-nav__link" href="#8-arquitetura-logica-de-integracao">
 <span class="md-ellipsis">
       
-        7. Mapa de ferramentas — leitura governada da tabela de arquitetura
+        8. Arquitetura lógica de integração
       
     </span>
 </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#8-pacote-de-handoff-para-replit">
-<span class="md-ellipsis">
-      
-        8. Pacote de handoff para Replit
-      
-    </span>
-</a>
-<nav aria-label="8. Pacote de handoff para Replit" class="md-nav">
+<nav aria-label="8. Arquitetura lógica de integração" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#81-instrucao-de-construcao">
+<a class="md-nav__link" href="#81-mapa-de-ferramentas-leitura-governada-da-tabela-de-arquitetura">
 <span class="md-ellipsis">
       
-        8.1 Instrução de construção
+        8.1 Mapa de ferramentas — leitura governada da tabela de arquitetura
       
     </span>
 </a>
@@ -1459,37 +1604,55 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#9-arquitetura-logica-de-consumo">
+<a class="md-nav__link" href="#9-requisitos-comuns-de-um-dashboard-especializado">
 <span class="md-ellipsis">
       
-        9. Arquitetura lógica de consumo
+        9. Requisitos comuns de um dashboard especializado
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#10-definition-of-ready-para-materializacao-de-um-kpi">
+<a class="md-nav__link" href="#10-contrato-de-construcao-para-replit">
 <span class="md-ellipsis">
       
-        10. Definition of Ready para materialização de um KPI
+        10. Contrato de construção para Replit
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#11-proximas-especificacoes-necessarias">
+<a class="md-nav__link" href="#11-definition-of-ready-de-um-kpi">
 <span class="md-ellipsis">
       
-        11. Próximas especificações necessárias
+        11. Definition of Ready de um KPI
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#12-estado-final-desta-versao">
+<a class="md-nav__link" href="#12-handoff-entre-os-masters">
 <span class="md-ellipsis">
       
-        12. Estado final desta versão
+        12. Handoff entre os masters
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13-proximas-unidades-documentais">
+<span class="md-ellipsis">
+      
+        13. Próximas unidades documentais
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#14-estado-final-desta-versao">
+<span class="md-ellipsis">
+      
+        14. Estado final desta versão
       
     </span>
 </a>
@@ -1511,60 +1674,180 @@
 </a>
 <h1 id="dashboards-kpis-e-analytics-documento-mestre-de-especificacao-para-construcao">Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção<a class="headerlink" href="#dashboards-kpis-e-analytics-documento-mestre-de-especificacao-para-construcao" title="Permanent link">¶</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">¶</a></h2>
-<p>Este documento é a <strong>porta de entrada governada para a especificação de dashboards, KPIs e superfícies analíticas da Guivos</strong>.</p>
-<p>Ele existe para organizar o que deverá ser entregue futuramente a uma superfície de construção — inicialmente indicada como <strong>Replit</strong> — sem obrigar Engenharia, Design ou fornecedores a reconstruir definições a partir de conversas, tabelas isoladas ou inferências.</p>
+<p>Este documento é a <strong>autoridade documental mestre, pré-implementação, para a família de dashboards, KPIs e superfícies analíticas da Guivos</strong>.</p>
+<p>Ele organiza o que deverá ser entregue futuramente a uma superfície de construção — inicialmente indicada como <strong>Replit</strong> — sem obrigar Engenharia, Design ou fornecedores a reconstruir significado, fórmulas, acesso ou contexto a partir de conversas, tabelas isoladas ou inferências.</p>
 <p>Regra de consumo:</p>
 <blockquote>
-<p><strong>Para construir um dashboard ou KPI da Guivos, comece por este documento e pelos contratos específicos de métricas que vierem a ser aprovados. A ferramenta de construção materializa a especificação; ela não define a verdade do indicador.</strong></p>
+<p><strong>Para construir qualquer dashboard da Guivos, comece por este master global e, em seguida, consuma o master especializado correspondente. A ferramenta materializa a especificação; ela não define a verdade do indicador.</strong></p>
 </blockquote>
 <p>Este master:</p>
 <ul>
-<li>registra, como <strong>input não canônico</strong>, o inventário candidato de dashboards indicado pela tabela fornecida para esta frente;</li>
-<li>classifica esses dashboards, campos e recortes como <strong>candidatos/provisórios e não aprovados</strong> até adjudicação pelas autoridades de domínio aplicáveis;</li>
-<li>define a separação entre fonte de verdade, cálculo, analytics, serving e visualização;</li>
-<li>define um envelope mínimo transversal de contrato de KPI antes de sua implementação, sem substituir contratos canônicos de domínio aplicáveis;</li>
-<li>preserva as autoridades de produto, Intelligence, Graph, Platform, Privacidade, Economia e Governança;</li>
-<li>prepara um pacote de handoff utilizável no Replit ou em outra ferramenta futura;</li>
-<li><strong>não autoriza</strong>, por si só, uso de dados reais, integração física, backend, persistência, produção ou publicação.</li>
+<li>preserva a tabela original desta frente como <strong>proveniência de trabalho</strong>, não como autoridade canônica;</li>
+<li>governa regras comuns à família de dashboards;</li>
+<li>define a arquitetura master global + masters especializados;</li>
+<li>preserva o inventário candidato inicial de necessidades analíticas;</li>
+<li>define o envelope mínimo de contrato de KPI;</li>
+<li>define o modelo transversal de acesso e disclosure;</li>
+<li>define a cadeia lógica de dados, Graph, Intelligence, serving e Replit;</li>
+<li>define requisitos mínimos de handoff, qualidade, exceção e aceite;</li>
+<li>preserva autoridades especializadas de Produto, Journey, Business, Ads, Economia, Privacidade, Graph, Intelligence e Governança;</li>
+<li><strong>não autoriza</strong>, por si só, dados reais, integração física, backend, persistência, produção, publicação ou acesso irrestrito a dados individuais.</li>
 </ul>
-<p>A tabela recebida nesta frente é <strong>proveniência de trabalho</strong>, não autoridade canônica do GKR. Em qualquer conflito, prevalece a autoridade corrente do domínio correspondente.</p>
 <hr/>
-<h2 id="2-estado-e-limite-desta-especificacao">2. Estado e limite desta especificação<a class="headerlink" href="#2-estado-e-limite-desta-especificacao" title="Permanent link">¶</a></h2>
-<div class="highlight"><pre><span></span><code>DOCUMENTO MESTRE
+<h2 id="2-arquitetura-documental-da-familia">2. Arquitetura documental da família<a class="headerlink" href="#2-arquitetura-documental-da-familia" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001
+→ MASTER GLOBAL
+→ regras comuns
+→ inventário / contexto transversal
+→ KPI contract envelope
+→ access / disclosure
+→ integração lógica
+→ handoff Replit
+
+MASTERS ESPECIALIZADOS
+→ um documento por dashboard / participante / grupo analítico
+→ escopo próprio
+→ catálogo próprio de KPIs e indicadores
+→ filtros / dimensões / drill-down
+→ acesso específico
+→ fontes e integrações aplicáveis
+→ instruções de construção
+→ critérios de aceite
+</code></pre></div>
+<p>Regra estrutural:</p>
+<div class="highlight"><pre><span></span><code>MASTER GLOBAL
+≠ SOMA DOS KPIs DE CADA DASHBOARD
+
+MASTER ESPECIALIZADO
+≠ NOVA SOURCE OF TRUTH
+≠ AUTORIZAÇÃO AUTOMÁTICA DE IMPLEMENTAÇÃO
+</code></pre></div>
+<h3 id="21-registry-documental">2.1 Registry documental<a class="headerlink" href="#21-registry-documental" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Anexo</th>
+<th>Documento</th>
+<th>Estado nesta versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001</code> — Dashboard Guivos</td>
+<td>MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Dashboard Guivos Business</td>
+<td>RESERVED / NOT MATERIALIZED</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Dashboard Organização</td>
+<td>RESERVED / NOT MATERIALIZED</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Dashboard Coletivo</td>
+<td>RESERVED / NOT MATERIALIZED</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Dashboard Pessoa</td>
+<td>RESERVED / NOT MATERIALIZED</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Ads / Opportunity Boost Analytics</td>
+<td>RESERVED / NOT MATERIALIZED</td>
+</tr>
+</tbody>
+</table>
+<p><code>RESERVED</code> significa somente posição documental planejada. Não cria autoridade, superfície operacional ou implementação.</p>
+<h3 id="22-inventario-candidato-preservado-da-frente-original">2.2 Inventário candidato preservado da frente original<a class="headerlink" href="#22-inventario-candidato-preservado-da-frente-original" title="Permanent link">¶</a></h3>
+<p>A tabela fornecida para esta frente identificou seis necessidades analíticas. Elas permanecem <strong>input/proveniência de trabalho</strong> até sua adjudicação individual.</p>
+<h4 id="dashboard-guivos">Dashboard Guivos<a class="headerlink" href="#dashboard-guivos" title="Permanent link">¶</a></h4>
+<p>Finalidade candidata original: visão transversal do ecossistema e da empresa Guivos, incluindo, quando legitimamente definidos e disponíveis:</p>
+<ul>
+<li>Pessoas;</li>
+<li>Organizações;</li>
+<li>Coletivos;</li>
+<li>escolhas/declarações das Pessoas;</li>
+<li>oportunidades;</li>
+<li>dados demográficos;</li>
+<li>dados geográficos;</li>
+<li>vendas de planos;</li>
+<li>cadastros ativos/inativos;</li>
+<li>demais indicadores transversais autorizados.</li>
+</ul>
+<p>Esse escopo foi aprofundado documentalmente no Anexo A sem autorizar dados reais ou implementação.</p>
+<h4 id="dashboard-guivos-business">Dashboard Guivos Business<a class="headerlink" href="#dashboard-guivos-business" title="Permanent link">¶</a></h4>
+<p>Finalidade candidata original: KPIs do Guivos Business conforme a população legitimamente abrangida por cada relação Business, incluindo tendências, evolução temporal, distribuições e comparações permitidas.</p>
+<div class="highlight"><pre><span></span><code>BUSINESS
+→ PODE CONSUMIR LEITURA POPULACIONAL AUTORIZADA
+→ NÃO RECEBE POR PADRÃO UM "INTELLIGENCE POR PESSOA"
+→ NÃO HERDA CONTEXTO PRIVADO INDIVIDUAL
+</code></pre></div>
+<h4 id="dashboard-organizacao">Dashboard Organização<a class="headerlink" href="#dashboard-organizacao" title="Permanent link">¶</a></h4>
+<p>Finalidade candidata original: leitura quantitativa da própria atuação da Organização e da população/relações sob autoridade aplicável, incluindo oportunidades, vendas, demografia, geografia e cadastros quando legitimamente definidos.</p>
+<p>Estado preservado:</p>
+<div class="highlight"><pre><span></span><code>MASTER ESPECIALIZADO
+→ RESERVED / NOT MATERIALIZED
+
+DOCUMENTAÇÃO DESTA NECESSIDADE
+≠ HOME AUTENTICADA DEFINIDA
+≠ DASHBOARD OPERACIONAL IMPLEMENTADO
+</code></pre></div>
+<h4 id="dashboard-coletivo">Dashboard Coletivo<a class="headerlink" href="#dashboard-coletivo" title="Permanent link">¶</a></h4>
+<p>Finalidade candidata original: leitura quantitativa de participação e atuação do Coletivo, incluindo Pessoas relacionadas, oportunidades, inscrições/participações, demografia, geografia e cadastros quando autorizados.</p>
+<p><code>Reputação</code> permanece bloqueada até possuir definição, fórmula, finalidade, autoridade de leitura, contestação e governança próprias.</p>
+<h4 id="dashboard-pessoa">Dashboard Pessoa<a class="headerlink" href="#dashboard-pessoa" title="Permanent link">¶</a></h4>
+<p>Finalidade candidata original: oferecer compreensão individual autorizada da própria trajetória, históricos, contextos, evolução, participações, relações, eventos e outputs de Graph Analytics/Intelligence quando legitimamente autorizados e explicáveis.</p>
+<div class="highlight"><pre><span></span><code>DECLARADO ≠ OBSERVADO ≠ CALCULADO ≠ INFERIDO ≠ PREDITO
+</code></pre></div>
+<h4 id="ads-opportunity-boost-analytics">Ads / Opportunity Boost Analytics<a class="headerlink" href="#ads-opportunity-boost-analytics" title="Permanent link">¶</a></h4>
+<p>Necessidade candidata original: dados de anúncios e Opportunity Boost do anunciante.</p>
+<p>Nesta versão global:</p>
+<div class="highlight"><pre><span></span><code>NECESSIDADE
+→ PRESERVADA
+
+MASTER ESPECIALIZADO
+→ RESERVED / NOT MATERIALIZED
+
+KPIs / FÓRMULAS / ATTRIBUTION / TOOLING
+→ A DEFINIR POR ATO PRÓPRIO
+</code></pre></div>
+<hr/>
+<h2 id="3-estado-e-limites">3. Estado e limites<a class="headerlink" href="#3-estado-e-limites" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code>DOCUMENTO MESTRE GLOBAL
 → ACTIVE
 → PRE-IMPLEMENTATION SPECIFICATION
-→ NÃO NORMATIVO SOBRE FÓRMULAS AINDA NÃO ADJUDICADAS
-
-INVENTÁRIO DE DASHBOARDS
-→ CANDIDATE / PROVISIONAL INPUT
-→ UNAPPROVED UNTIL DOMAIN ADJUDICATION
-→ NÃO DEFINE SUPERFÍCIE, ESCOPO DE PRODUTO OU CAMPO POR INFERÊNCIA
-→ NÃO SOBRESCREVE AUTORIDADES DE ESTADO CORRENTES
-
-CONTRATOS MATEMÁTICOS DE KPIs
-→ AINDA DEVEM SER DEFINIDOS INDIVIDUALMENTE
-→ DEVEM COMPOR COM CONTRATOS CANÔNICOS DE DOMÍNIO QUANDO APLICÁVEIS
+→ NÃO NORMATIVO SOBRE FÓRMULAS NÃO ADJUDICADAS
 
 REPLIT
 → TARGET INICIAL DE MATERIALIZAÇÃO / CONSTRUÇÃO
 → NÃO SOURCE OF TRUTH
+→ NÃO DEFINE KPI
+→ NÃO DEFINE AUTORIDADE
 
 REAL DATA / REAL INTEGRATIONS / PRODUCTION
 → NÃO AUTORIZADOS POR ESTE DOCUMENTO
-</code></pre></div>
-<p>A presença de uma ferramenta ou tecnologia neste documento indica <strong>papel pretendido, candidato ou de referência</strong>, conforme o caso. Não constitui prova de provisionamento, integração, operação ou produção.</p>
-<p>Regra de precedência adicional:</p>
-<div class="highlight"><pre><span></span><code>AUTORIDADE CORRENTE DO DOMÍNIO
-→ PREVALECE
 
-INVENTÁRIO CANDIDATO DESTE MASTER
-→ NÃO PODE PROMOVER COMO DEFINIDO O QUE A AUTORIDADE CORRENTE MANTÉM NÃO DEFINIDO
+DASHBOARD DOCUMENTADO
+≠ DASHBOARD IMPLEMENTADO
+≠ DASHBOARD PUBLICADO
+≠ DADO REAL CONECTADO
 </code></pre></div>
+<p>Quando uma autoridade de domínio mantiver uma superfície, relação, métrica ou capacidade como não definida, este master e seus anexos devem preservar esse estado.</p>
+<p>A existência futura dos masters de Organização e Coletivo <strong>não deverá ser interpretada como materialização de Home autenticada, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
 <hr/>
-<h2 id="3-principio-arquitetural">3. Princípio arquitetural<a class="headerlink" href="#3-principio-arquitetural" title="Permanent link">¶</a></h2>
-<p>A cadeia de autoridade deve permanecer:</p>
+<h2 id="4-principio-arquitetural">4. Princípio arquitetural<a class="headerlink" href="#4-principio-arquitetural" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code>GKR / PRODUTO / GOVERNANÇA
 → define significado, finalidade, autoridade e limites
+
+MASTER ESPECIALIZADO DO DASHBOARD
+→ define escopo de consumo e catálogo analítico pretendido
 
 CONTRATO DO KPI
 → define pergunta, fórmula, população, unidade, granularidade e fonte autorizada
@@ -1576,10 +1859,10 @@ SERVING / API / DATA CONTRACT
 → entrega o resultado na forma autorizada
 
 REPLIT / OUTRA SUPERFÍCIE
-→ materializa dashboard, componentes, filtros e visualizações
+→ materializa componentes, filtros, estados e visualizações
 
 USUÁRIO AUTORIZADO
-→ consome a leitura pertinente à sua autoridade
+→ consome somente o recorte permitido por sua autoridade
 </code></pre></div>
 <p>Invariantes:</p>
 <div class="highlight"><pre><span></span><code>DASHBOARD ≠ SOURCE OF TRUTH
@@ -1589,164 +1872,98 @@ FERRAMENTA ≠ AUTORIDADE
 OUTPUT AUTORIZADO ≠ DATASET DE ORIGEM
 AGREGADO ≠ AUTOMATICAMENTE SEGURO
 AUTORIDADE PARA PERSONALIZAR ≠ AUTORIDADE PARA COMPARTILHAR
+ACESSO INTERNO ≠ ACESSO IRRESTRITO
 CORRELAÇÃO ≠ CAUSALIDADE
 INFERÊNCIA ≠ FATO
+COMPREENDER ≠ DECIDIR
 </code></pre></div>
 <hr/>
-<h2 id="4-inventario-candidato-inicial-de-dashboards">4. Inventário candidato inicial de dashboards<a class="headerlink" href="#4-inventario-candidato-inicial-de-dashboards" title="Permanent link">¶</a></h2>
-<p>A tabela fornecida para esta frente identifica seis necessidades/superfícies candidatas de análise. Ela não possui, neste master, identificador governado próprio e <strong>não é elevada a autoridade canônica</strong>. Os itens abaixo são somente <strong>escopos candidatos de trabalho</strong>, ainda não aprovados como superfície, escopo de produto ou contrato matemático.</p>
-<p>Estado transversal desta seção:</p>
-<div class="highlight"><pre><span></span><code>SURFACES / FIELDS BELOW
-→ CANDIDATE
-→ PROVISIONAL
-→ UNAPPROVED
-→ TBD PENDING DOMAIN ADJUDICATION
-
-LISTED HERE
-≠ DEFINED
-≠ APPROVED PRODUCT SCOPE
-≠ AUTHORIZED IMPLEMENTATION
+<h2 id="5-modelo-transversal-de-acesso">5. Modelo transversal de acesso<a class="headerlink" href="#5-modelo-transversal-de-acesso" title="Permanent link">¶</a></h2>
+<p>O acesso a um dashboard ou métrica não deve ser decidido somente por uma <code>role</code> técnica.</p>
+<div class="highlight"><pre><span></span><code>IDENTIDADE AUTENTICADA
++
+TIPO DE PARTICIPANTE / GRUPO
++
+PAPEL FUNCIONAL
++
+TENANT / PARTICIPANT SCOPE
++
+RELAÇÃO LEGÍTIMA
++
+FINALIDADE
++
+SENSIBILIDADE DO DADO
++
+AUTORIDADE DE DISCLOSURE
+=
+ESCOPO MÁXIMO DE LEITURA
 </code></pre></div>
-<p>Quando uma autoridade corrente de domínio mantiver uma superfície como não definida, este master preserva esse estado. Em particular, <code>GKR-UX-ORGCOL-UX-STATE-001</code> estabelece que <strong>dashboard da Organização</strong>, <strong>Home autenticada da Organização</strong> e <strong>Home autenticada do Coletivo</strong> não podem ser inferidos como definidos. Este documento não altera essa conclusão.</p>
-<h3 id="41-dashboard-guivos">4.1 Dashboard Guivos<a class="headerlink" href="#41-dashboard-guivos" title="Permanent link">¶</a></h3>
-<p><strong>Finalidade candidata:</strong> visão transversal do ecossistema e da empresa Guivos.</p>
-<p>Estado:</p>
-<div class="highlight"><pre><span></span><code>CANDIDATE SCOPE
-→ UNAPPROVED
-→ TBD PENDING DOMAIN ADJUDICATION
-</code></pre></div>
-<p>Escopo candidato indicado:</p>
+<h3 id="51-principios">5.1 Princípios<a class="headerlink" href="#51-principios" title="Permanent link">¶</a></h3>
 <ul>
-<li>quantidade de Pessoas;</li>
-<li>quantidade de Coletivos;</li>
-<li>quantidade de Organizações;</li>
-<li>escolhas ou declarações estáticas registradas das Pessoas, quando legitimamente aplicáveis;</li>
-<li>oportunidades;</li>
-<li>dados demográficos;</li>
-<li>dados geográficos;</li>
-<li>quantidades de vendas de cada plano;</li>
-<li>cadastros ativos e inativos;</li>
-<li>demais indicadores transversais que venham a ser formalmente aprovados.</li>
+<li>um usuário pode possuir mais de um contexto legítimo, mas cada acesso deve operar no contexto selecionado;</li>
+<li>Organização não herda dados de outra Organização;</li>
+<li>Coletivo não herda dados de outro Coletivo;</li>
+<li>uma relação Business não dá acesso automático ao contexto privado de uma Pessoa;</li>
+<li>acesso interno da Guivos continua sujeito à finalidade, necessidade e classificação do dado;</li>
+<li>service accounts e integrações recebem apenas o mínimo necessário;</li>
+<li>filtros e drill-down respeitam a mesma política de acesso do indicador principal;</li>
+<li>exportação não pode ampliar disclosure.</li>
 </ul>
-<p>Limite:</p>
-<blockquote>
-<p><strong>Acesso interno da Guivos não equivale a autorização irrestrita para exposição ou combinação de dados individuais.</strong></p>
-</blockquote>
-<h3 id="42-dashboard-guivos-business">4.2 Dashboard Guivos Business<a class="headerlink" href="#42-dashboard-guivos-business" title="Permanent link">¶</a></h3>
-<p><strong>Finalidade candidata:</strong> disponibilizar KPIs do Guivos Business de acordo com a população legitimamente abrangida por cada relação Business.</p>
-<p>Estado:</p>
-<div class="highlight"><pre><span></span><code>CANDIDATE SCOPE
-→ UNAPPROVED
-→ TBD PENDING BUSINESS / DATA / PRIVACY ADJUDICATION
-</code></pre></div>
-<p>Escopo candidato indicado:</p>
-<ul>
-<li>KPIs populacionais autorizados;</li>
-<li>tendências;</li>
-<li>evolução temporal;</li>
-<li>distribuições e comparações permitidas;</li>
-<li>leituras agregadas e protegidas pertinentes ao domínio Business.</li>
-</ul>
-<p>Regra estrutural:</p>
-<div class="highlight"><pre><span></span><code>BUSINESS
-→ consome leitura populacional autorizada
-→ não recebe por padrão um "Intelligence por pessoa"
-→ não herda automaticamente acesso ao contexto privado individual
-</code></pre></div>
-<h3 id="43-dashboard-organizacoes">4.3 Dashboard Organizações<a class="headerlink" href="#43-dashboard-organizacoes" title="Permanent link">¶</a></h3>
-<p><strong>Finalidade candidata:</strong> oferecer à Organização leitura quantitativa de sua atuação e da população sob autoridade aplicável.</p>
-<p>Estado governado nesta versão:</p>
-<div class="highlight"><pre><span></span><code>CANDIDATE SCOPE
-→ UNAPPROVED
-→ TBD PENDING DOMAIN ADJUDICATION
-
-CURRENT O/C AUTHORITY
-→ DASHBOARD DA ORGANIZAÇÃO = NÃO DEFINIDO
-→ ESTE MASTER NÃO ALTERA ESSE ESTADO
-</code></pre></div>
-<p>Escopo candidato indicado:</p>
-<ul>
-<li>quantidade de Pessoas relacionadas dentro do escopo autorizado;</li>
-<li>oportunidades;</li>
-<li>dados demográficos;</li>
-<li>dados geográficos;</li>
-<li>quantidade de vendas de oportunidades;</li>
-<li>cadastros ativos e inativos;</li>
-<li>evolução temporal desses indicadores quando houver contrato aprovado.</li>
-</ul>
-<h3 id="44-dashboard-coletivos">4.4 Dashboard Coletivos<a class="headerlink" href="#44-dashboard-coletivos" title="Permanent link">¶</a></h3>
-<p><strong>Finalidade candidata:</strong> oferecer ao Coletivo leitura quantitativa de sua atuação e participação.</p>
-<p>Estado:</p>
-<div class="highlight"><pre><span></span><code>CANDIDATE SCOPE
-→ UNAPPROVED
-→ TBD PENDING DOMAIN ADJUDICATION
-→ NÃO MATERIALIZA HOME AUTENTICADA DO COLETIVO
-</code></pre></div>
-<p>Escopo candidato indicado:</p>
-<ul>
-<li>quantidade de Pessoas relacionadas dentro do escopo autorizado;</li>
-<li>oportunidades;</li>
-<li>dados demográficos;</li>
-<li>dados geográficos;</li>
-<li>quantidade de vendas de oportunidades;</li>
-<li>inscrições ou participações;</li>
-<li>reputação, somente quando o conceito, cálculo e autoridade estiverem formalmente definidos;</li>
-<li>cadastros ativos e inativos;</li>
-<li>evolução temporal desses indicadores quando houver contrato aprovado.</li>
-</ul>
-<h3 id="45-dashboard-pessoa">4.5 Dashboard Pessoa<a class="headerlink" href="#45-dashboard-pessoa" title="Permanent link">¶</a></h3>
-<p><strong>Finalidade candidata:</strong> oferecer compreensão individual autorizada sobre a própria trajetória da Pessoa.</p>
-<p>Estado:</p>
-<div class="highlight"><pre><span></span><code>CANDIDATE SCOPE
-→ UNAPPROVED
-→ TBD PENDING PERSON / JOURNEY / INTELLIGENCE ADJUDICATION
-</code></pre></div>
-<p>Escopo candidato indicado:</p>
-<ul>
-<li>históricos;</li>
-<li>contextos;</li>
-<li>evolução;</li>
-<li>participações;</li>
-<li>relações e eventos pertinentes;</li>
-<li>outputs analíticos ou de Graph Analytics quando legitimamente autorizados e explicáveis.</li>
-</ul>
-<p>O dashboard da Pessoa não deve promover inferência a fato nem ocultar proveniência quando a natureza do resultado exigir explicação.</p>
-<div class="highlight"><pre><span></span><code>DECLARADO ≠ OBSERVADO ≠ CALCULADO ≠ INFERIDO ≠ PREDITO
-</code></pre></div>
-<h3 id="46-ads-opportunity-boost-analytics">4.6 Ads / Opportunity Boost Analytics<a class="headerlink" href="#46-ads-opportunity-boost-analytics" title="Permanent link">¶</a></h3>
-<p>A tabela indica uma necessidade candidata de dashboard para <strong>dados de anúncios e Opportunity Boost do anunciante</strong>, mas mantém a tecnologia correspondente como <strong>A DEFINIR</strong>.</p>
-<p>Estado:</p>
-<div class="highlight"><pre><span></span><code>NECESSIDADE ANALÍTICA CANDIDATA
-→ IDENTIFICADA COMO INPUT
-→ NÃO APROVADA COMO ESCOPO CANÔNICO
-
-ESCOPO FUNCIONAL DETALHADO
-→ A DEFINIR
-
-KPIs
-→ A DEFINIR
-
-TECNOLOGIA / SUPERFÍCIE
-→ A DEFINIR
-</code></pre></div>
-<p>Nenhum KPI, fórmula, fonte ou ferramenta deve ser inventado por inferência nesta frente.</p>
+<h3 id="52-classes-funcionais-de-consumo">5.2 Classes funcionais de consumo<a class="headerlink" href="#52-classes-funcionais-de-consumo" title="Permanent link">¶</a></h3>
+<p>As classes abaixo são funcionais e <strong>não constituem RBAC técnico implementado</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Classe</th>
+<th>Escopo conceitual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guivos — visão executiva</td>
+<td>visão transversal agregada necessária à governança</td>
+</tr>
+<tr>
+<td>Guivos — operação/domínio</td>
+<td>recorte operacional sob responsabilidade</td>
+</tr>
+<tr>
+<td>Guivos — Data/Intelligence</td>
+<td>dados necessários à finalidade analítica autorizada</td>
+</tr>
+<tr>
+<td>Guivos — Financeiro/Economia</td>
+<td>métricas econômicas autorizadas e auditáveis</td>
+</tr>
+<tr>
+<td>Business</td>
+<td>população e relação Business legitimamente abrangidas</td>
+</tr>
+<tr>
+<td>Organização</td>
+<td>dados próprios e relações sob sua autoridade</td>
+</tr>
+<tr>
+<td>Coletivo</td>
+<td>dados próprios e relações sob sua autoridade</td>
+</tr>
+<tr>
+<td>Pessoa</td>
+<td>próprios dados, Journey, históricos e outputs autorizados</td>
+</tr>
+<tr>
+<td>Anunciante</td>
+<td>próprias campanhas / Opportunity Boost e agregados autorizados</td>
+</tr>
+<tr>
+<td>Replit / service account</td>
+<td>somente payloads necessários à renderização autorizada</td>
+</tr>
+</tbody>
+</table>
 <hr/>
-<h2 id="5-envelope-minimo-transversal-do-contrato-de-kpi">5. Envelope mínimo transversal do contrato de KPI<a class="headerlink" href="#5-envelope-minimo-transversal-do-contrato-de-kpi" title="Permanent link">¶</a></h2>
-<p>Nenhum KPI deve ser considerado pronto para implementação somente porque seu nome foi citado em uma tabela, mockup ou conversa.</p>
-<p>Os campos abaixo constituem um <strong>envelope mínimo cross-domain</strong>. Eles não substituem contratos canônicos especializados. Quando um KPI pertencer a um domínio que possua contrato próprio, o KPI deverá satisfazer <strong>cumulativamente</strong> este envelope e o contrato de domínio aplicável.</p>
-<p>Regra de composição:</p>
-<div class="highlight"><pre><span></span><code>CROSS-DOMAIN MINIMUM
-+ APPLICABLE DOMAIN CONTRACT
-= REQUIRED CONTRACT FOR READINESS
-
-ECONOMIC KPI
-→ MUST COMPOSE WITH GEM-009-MEASUREMENT-CONTRACT-001
-→ GEM-009 RETAINS ITS OWN STATUS / MATURITY / AUTHORITY
-
-MINIMUM ENVELOPE ALONE
-≠ SUFFICIENT WHEN A DOMAIN CONTRACT APPLIES
-</code></pre></div>
-<p>Para indicadores econômicos — incluindo vendas de planos, vendas de oportunidades, receita, sustentabilidade econômica ou métricas equivalentes — <code>GEM-009-MEASUREMENT-CONTRACT-001</code> deve ser identificado e composto na versão/status aplicável. Este master não promove <code>GEM-009-MEASUREMENT-CONTRACT-001</code> além de seu próprio estado documental.</p>
+<h2 id="6-envelope-minimo-do-contrato-de-kpi">6. Envelope mínimo do contrato de KPI<a class="headerlink" href="#6-envelope-minimo-do-contrato-de-kpi" title="Permanent link">¶</a></h2>
+<p>Nenhum KPI está pronto para implementação apenas porque seu nome aparece em tabela, conversa, planilha ou mockup.</p>
 <p>Cada KPI deverá possuir, no mínimo:</p>
 <table>
 <thead>
@@ -1765,22 +1982,22 @@ MINIMUM ENVELOPE ALONE
 <tr>
 <td>Nome</td>
 <td>obrigatória</td>
-<td>nome humano do indicador</td>
+<td>nome humano</td>
 </tr>
 <tr>
 <td>Pergunta que responde</td>
 <td>obrigatória</td>
-<td>decisão/compreensão suportada</td>
+<td>compreensão/decisão suportada</td>
 </tr>
 <tr>
 <td>Família / tipo</td>
 <td>obrigatória</td>
-<td>classificação do indicador</td>
+<td>classificação</td>
 </tr>
 <tr>
 <td>Dashboard consumidor</td>
 <td>obrigatória</td>
-<td>superfície onde aparece</td>
+<td>superfície consumidora</td>
 </tr>
 <tr>
 <td>Público autorizado</td>
@@ -1795,7 +2012,7 @@ MINIMUM ENVELOPE ALONE
 <tr>
 <td>Unidade de análise</td>
 <td>obrigatória</td>
-<td>entidade/evento elementar calculado</td>
+<td>entidade/evento elementar</td>
 </tr>
 <tr>
 <td>Fórmula</td>
@@ -1815,17 +2032,17 @@ MINIMUM ENVELOPE ALONE
 <tr>
 <td>Unidade</td>
 <td>obrigatória</td>
-<td>número, %, R$, tempo, índice etc.</td>
+<td>número, %, moeda, tempo, índice etc.</td>
 </tr>
 <tr>
 <td>Direcionalidade</td>
-<td>obrigatória quando aplicável</td>
+<td>quando aplicável</td>
 <td>maior/melhor, menor/melhor, faixa, contextual ou guardrail</td>
 </tr>
 <tr>
 <td>Exclusões</td>
 <td>obrigatória</td>
-<td>o que explicitamente não entra no cálculo</td>
+<td>o que não entra</td>
 </tr>
 <tr>
 <td>Janela temporal</td>
@@ -1835,7 +2052,7 @@ MINIMUM ENVELOPE ALONE
 <tr>
 <td>Base de comparação</td>
 <td>quando aplicável</td>
-<td>baseline/período/grupo de referência</td>
+<td>baseline / período / grupo</td>
 </tr>
 <tr>
 <td>Granularidade</td>
@@ -1845,7 +2062,7 @@ MINIMUM ENVELOPE ALONE
 <tr>
 <td>Dimensões / segmentos</td>
 <td>quando aplicável</td>
-<td>cortes analíticos permitidos</td>
+<td>cortes autorizados</td>
 </tr>
 <tr>
 <td>Filtros</td>
@@ -1855,12 +2072,12 @@ MINIMUM ENVELOPE ALONE
 <tr>
 <td>Fonte de verdade / fontes</td>
 <td>obrigatória</td>
-<td>origem autorizada do dado</td>
+<td>origem autorizada</td>
 </tr>
 <tr>
 <td>Natureza da evidência</td>
 <td>obrigatória</td>
-<td>direta, declarada, derivada, estimada, proxy, modelada etc.</td>
+<td>declarada, observada, operacional, calculada, inferida, predita, estimada, proxy etc.</td>
 </tr>
 <tr>
 <td>Freshness / atualização</td>
@@ -1870,12 +2087,12 @@ MINIMUM ENVELOPE ALONE
 <tr>
 <td>Quality checks</td>
 <td>obrigatória</td>
-<td>verificações mínimas de qualidade</td>
+<td>verificações mínimas</td>
 </tr>
 <tr>
 <td>Sensibilidade / access class</td>
 <td>obrigatória</td>
-<td>classificação de proteção e acesso</td>
+<td>classificação de proteção</td>
 </tr>
 <tr>
 <td>Accountable owner</td>
@@ -1890,7 +2107,7 @@ MINIMUM ENVELOPE ALONE
 <tr>
 <td>Review cadence</td>
 <td>quando aplicável</td>
-<td>cadência de revisão do indicador</td>
+<td>cadência de revisão</td>
 </tr>
 <tr>
 <td>Retention rule</td>
@@ -1905,7 +2122,7 @@ MINIMUM ENVELOPE ALONE
 <tr>
 <td>Regra de agregação</td>
 <td>quando aplicável</td>
-<td>como compor populações</td>
+<td>forma de composição</td>
 </tr>
 <tr>
 <td>Threshold de proteção</td>
@@ -1915,7 +2132,7 @@ MINIMUM ENVELOPE ALONE
 <tr>
 <td>Tratamento de nulos</td>
 <td>obrigatória</td>
-<td>regra de ausência de dado</td>
+<td>regra para ausência</td>
 </tr>
 <tr>
 <td>Proveniência</td>
@@ -1930,17 +2147,17 @@ MINIMUM ENVELOPE ALONE
 <tr>
 <td>Claims proibidos</td>
 <td>obrigatória</td>
-<td>interpretações que o KPI não sustenta</td>
+<td>interpretações não sustentadas</td>
 </tr>
 <tr>
 <td>Confounders</td>
 <td>quando aplicável</td>
-<td>fatores que podem distorcer a leitura</td>
+<td>fatores de distorção</td>
 </tr>
 <tr>
 <td>Incerteza</td>
-<td>obrigatória quando material</td>
-<td>limites/intervalos/qualificação</td>
+<td>quando material</td>
+<td>limites / intervalos / qualificação</td>
 </tr>
 <tr>
 <td>Validações aplicáveis</td>
@@ -1948,9 +2165,9 @@ MINIMUM ENVELOPE ALONE
 <td>conceptual, data, financial, accounting, legal/privacy/security conforme domínio</td>
 </tr>
 <tr>
-<td>Visualização</td>
+<td>Visualização semântica</td>
 <td>obrigatória antes do handoff</td>
-<td>forma esperada de exibição</td>
+<td>forma esperada de leitura</td>
 </tr>
 <tr>
 <td>Critério de aceite</td>
@@ -1960,225 +2177,242 @@ MINIMUM ENVELOPE ALONE
 <tr>
 <td>Status</td>
 <td>obrigatória</td>
-<td>proposed / defined / source_pending / approved-equivalent conforme autoridade aplicável</td>
+<td>proposed / defined / source_pending / approved-equivalent</td>
 </tr>
 <tr>
-<td>Contrato(s) de domínio aplicável(is)</td>
+<td>Contratos de domínio</td>
 <td>obrigatória</td>
-<td>autoridades especializadas que devem ser compostas</td>
+<td>autoridades especializadas aplicáveis</td>
 </tr>
 </tbody>
 </table>
-<p>Exemplo de lacuna que deve bloquear implementação:</p>
+<p>Regra de composição:</p>
+<div class="highlight"><pre><span></span><code>CROSS-DOMAIN MINIMUM
++ APPLICABLE DOMAIN CONTRACT
+= REQUIRED CONTRACT FOR READINESS
+</code></pre></div>
+<p>Indicadores econômicos — incluindo vendas de planos, vendas de oportunidades, receita ou métricas equivalentes — devem compor com <code>GEM-009-MEASUREMENT-CONTRACT-001</code> na versão/status aplicável. Este master não promove o estado de <code>GEM-009</code>.</p>
+<p>Exemplo de bloqueio:</p>
 <div class="highlight"><pre><span></span><code>"USUÁRIOS ATIVOS"
-→ janela temporal não definida
-→ evento de atividade não definido
+→ janela não definida
+→ evento qualificante não definido
 → população não definida
-→ fórmula não definida
-→ fonte de verdade não definida
+→ source of truth não definida
 
 RESULTADO
 → NÃO IMPLEMENTAR COMO KPI CANÔNICO
 </code></pre></div>
-<p>Exemplo econômico:</p>
-<div class="highlight"><pre><span></span><code>"VENDAS DE PLANOS"
-→ NOME PRESENTE NO INVENTÁRIO CANDIDATO
-→ GEM-009-MEASUREMENT-CONTRACT-001 APLICÁVEL
-
-SE directionality / exclusions / owners / claims / confounders / uncertainty / validation states NÃO ESTÃO RESOLVIDOS
-→ KPI NÃO ESTÁ READY
-</code></pre></div>
 <hr/>
-<h2 id="6-requisitos-transversais-dos-dashboards">6. Requisitos transversais dos dashboards<a class="headerlink" href="#6-requisitos-transversais-dos-dashboards" title="Permanent link">¶</a></h2>
-<h3 id="61-temporalidade">6.1 Temporalidade<a class="headerlink" href="#61-temporalidade" title="Permanent link">¶</a></h3>
-<p>Todo KPI temporal deve explicitar período e janela de cálculo.</p>
+<h2 id="7-requisitos-transversais-de-dados-e-leitura">7. Requisitos transversais de dados e leitura<a class="headerlink" href="#7-requisitos-transversais-de-dados-e-leitura" title="Permanent link">¶</a></h2>
+<h3 id="71-temporalidade">7.1 Temporalidade<a class="headerlink" href="#71-temporalidade" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code>TOTAL ATUAL
+≠ NOVOS NO PERÍODO
 ≠ ATIVOS 7D
 ≠ ATIVOS 30D
 ≠ MÊS CORRENTE
 ≠ ACUMULADO HISTÓRICO
 </code></pre></div>
-<h3 id="62-granularidade">6.2 Granularidade<a class="headerlink" href="#62-granularidade" title="Permanent link">¶</a></h3>
-<p>A visualização deve usar a menor granularidade necessária para a finalidade autorizada, não a maior granularidade tecnicamente disponível.</p>
-<h3 id="63-proveniencia">6.3 Proveniência<a class="headerlink" href="#63-proveniencia" title="Permanent link">¶</a></h3>
-<p>O usuário e os responsáveis pela operação devem conseguir distinguir, conforme aplicável:</p>
-<ul>
-<li>dado declarado;</li>
-<li>dado observado;</li>
-<li>dado operacional;</li>
-<li>dado calculado;</li>
-<li>inferência;</li>
-<li>predição;</li>
-<li>agregado;</li>
-<li>conhecimento externo;</li>
-<li>dado governado.</li>
-</ul>
-<h3 id="64-privacidade-e-disclosure">6.4 Privacidade e disclosure<a class="headerlink" href="#64-privacidade-e-disclosure" title="Permanent link">¶</a></h3>
-<p>A capacidade técnica de cruzar dados não cria autorização para fazê-lo.</p>
-<p>Especialmente para Business, Organizações e Coletivos, devem ser definidos antes de produção:</p>
+<p>Cada KPI temporal deve explicitar janela, timezone aplicável e regra de fechamento.</p>
+<h3 id="72-granularidade">7.2 Granularidade<a class="headerlink" href="#72-granularidade" title="Permanent link">¶</a></h3>
+<p>A superfície deve expor a menor granularidade necessária à finalidade autorizada, não a maior disponível tecnicamente.</p>
+<h3 id="73-proveniencia">7.3 Proveniência<a class="headerlink" href="#73-proveniencia" title="Permanent link">¶</a></h3>
+<p>Quando materialmente relevante, a leitura deve distinguir:</p>
+<div class="highlight"><pre><span></span><code>DECLARADO
+≠ OBSERVADO
+≠ OPERACIONAL
+≠ CALCULADO
+≠ INFERIDO
+≠ PREDITO
+≠ AGREGADO
+≠ CONHECIMENTO EXTERNO
+≠ CONHECIMENTO GOVERNADO
+</code></pre></div>
+<p><code>CONHECIMENTO EXTERNO</code> e <code>CONHECIMENTO GOVERNADO</code> são naturezas distintas: o primeiro provém de fora do corpus/contexto governado da Guivos; o segundo deriva de conhecimento interno ou de referência submetido à governança aplicável. Nenhum dos dois é sinônimo de dado pessoal observado.</p>
+<h3 id="74-privacidade-e-disclosure">7.4 Privacidade e disclosure<a class="headerlink" href="#74-privacidade-e-disclosure" title="Permanent link">¶</a></h3>
+<p>Antes de produção devem existir, quando aplicáveis:</p>
 <ul>
 <li>population scope;</li>
 <li>thresholds mínimos;</li>
 <li>supressão de células pequenas;</li>
 <li>regras de segmentação;</li>
 <li>controles de acesso;</li>
+<li>finalidade legítima;</li>
 <li>retenção;</li>
 <li>rastreabilidade;</li>
-<li>finalidade legítima de uso.</li>
+<li>regras de exportação;</li>
+<li>regras de drill-down.</li>
 </ul>
-<h3 id="65-explicabilidade">6.5 Explicabilidade<a class="headerlink" href="#65-explicabilidade" title="Permanent link">¶</a></h3>
+<h3 id="75-explicabilidade">7.5 Explicabilidade<a class="headerlink" href="#75-explicabilidade" title="Permanent link">¶</a></h3>
 <p>Quanto maior o impacto potencial de uma leitura, recomendação, score, tendência ou inferência, maior deve ser a explicabilidade exigida.</p>
 <hr/>
-<h2 id="7-mapa-de-ferramentas-leitura-governada-da-tabela-de-arquitetura">7. Mapa de ferramentas — leitura governada da tabela de arquitetura<a class="headerlink" href="#7-mapa-de-ferramentas-leitura-governada-da-tabela-de-arquitetura" title="Permanent link">¶</a></h2>
-<p>Este quadro preserva os papéis indicados na tabela de entrada <strong>como input não canônico de arquitetura</strong>, sem promovê-los indevidamente a implementação comprovada ou decisão final de stack.</p>
+<h2 id="8-arquitetura-logica-de-integracao">8. Arquitetura lógica de integração<a class="headerlink" href="#8-arquitetura-logica-de-integracao" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    S[Sources autorizadas]
+    A[Analytics / Aggregation]
+    G[Graph / Graph Analytics]
+    I[Guivos Intelligence]
+    K[Contrato do KPI]
+    V[Serving / API / Data Contract]
+    R[Replit / Dashboard]
+    U[Usuário autorizado]
+
+    S --&gt; A
+    S --&gt; G
+    S --&gt; I
+    A --&gt; K
+    G --&gt; K
+    G --&gt; I
+    I --&gt; K
+    K --&gt; V
+    V --&gt; R
+    R --&gt; U
+</code></pre>
+<p>As fontes autorizadas podem alimentar Analytics, Graph e/ou Intelligence conforme finalidade e autoridade aplicáveis. <strong>Graph não é pré-requisito universal para um output de Intelligence.</strong></p>
+<p>O desenho é lógico. Ele não determina topologia física, banco específico, API, serviço, linguagem ou infraestrutura.</p>
+<h3 id="81-mapa-de-ferramentas-leitura-governada-da-tabela-de-arquitetura">8.1 Mapa de ferramentas — leitura governada da tabela de arquitetura<a class="headerlink" href="#81-mapa-de-ferramentas-leitura-governada-da-tabela-de-arquitetura" title="Permanent link">¶</a></h3>
 <table>
 <thead>
 <tr>
 <th>Ferramenta / família</th>
-<th>Papel indicado</th>
-<th>Estado governado neste master</th>
+<th>Papel indicado nesta frente</th>
+<th>Estado governado</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Neo4j</td>
 <td>banco de dados grafo / memória; Graph Analytics</td>
-<td>tecnologia primária de referência para grafo; não prova provisionamento ou produção</td>
+<td>tecnologia primária de referência para grafo; não prova provisionamento/produção</td>
 </tr>
 <tr>
 <td>GPT</td>
-<td>IA e inteligência do ecossistema</td>
-<td>candidato de provedor/modelo; não selecionado por este documento</td>
+<td>IA/inteligência do ecossistema</td>
+<td>candidato de provedor/modelo; não selecionado por este master</td>
 </tr>
 <tr>
 <td>Anthropic</td>
-<td>IA e inteligência do ecossistema</td>
-<td>candidato de provedor/modelo; não selecionado por este documento</td>
+<td>IA/inteligência do ecossistema</td>
+<td>candidato de provedor/modelo; não selecionado por este master</td>
 </tr>
 <tr>
 <td>Gemini</td>
-<td>IA e inteligência do ecossistema</td>
-<td>candidato de provedor/modelo; não selecionado por este documento</td>
+<td>IA/inteligência do ecossistema</td>
+<td>candidato de provedor/modelo; não selecionado por este master</td>
 </tr>
 <tr>
 <td>Replit</td>
-<td>construção de fluxos, retorno de compreensão e dashboards</td>
+<td>construção de fluxos e dashboards</td>
 <td>target inicial de materialização; não source of truth</td>
 </tr>
 <tr>
 <td>Hostinger</td>
-<td>armazenamento/bancos operacionais indicados na tabela</td>
-<td>papel pretendido sujeito a arquitetura física e contratos de dados futuros</td>
+<td>armazenamento/bancos operacionais indicados no input</td>
+<td>papel pretendido sujeito a arquitetura física e data contracts futuros</td>
 </tr>
 <tr>
 <td>Figma</td>
 <td>Design System</td>
-<td>fonte de Design quando a etapa de Design estiver autorizada; não backend nem fonte de KPI</td>
+<td>fonte de Design quando autorizado; não backend nem fonte de KPI</td>
 </tr>
 <tr>
 <td>A definir</td>
-<td>fontes de pesquisa, central de ajuda e dashboard Ads/Opportunity Boost</td>
+<td>fontes de pesquisa / central de ajuda / elementos adicionais</td>
 <td>decisão futura necessária</td>
 </tr>
 </tbody>
 </table>
-<p>Regras adicionais:</p>
 <div class="highlight"><pre><span></span><code>NEO4J = REFERENCE_SELECTED
-≠ NEO4J PROVISIONADO
+≠ PROVISIONADO
 ≠ GRAPH ANALYTICS OPERACIONAL
 
 GPT / ANTHROPIC / GEMINI
 → ALTERNATIVAS IDENTIFICADAS
-→ PROVEDOR NÃO SELECIONADO NESTE MASTER
+→ NÃO SELECIONADAS POR ESTE MASTER
 
 HOSTINGER
-→ PAPEL INDICADO NA TABELA
-→ NÃO SE TORNA AUTOMATICAMENTE SOURCE OF TRUTH DE TODO DADO
-
-FIGMA
-→ DESIGN SYSTEM
-→ NÃO DEFINE MÉTRICA
+→ PAPEL INDICADO NO INPUT
+→ NÃO É AUTOMATICAMENTE SOURCE OF TRUTH DE TODO DADO
 
 REPLIT
 → MATERIALIZA ESPECIFICAÇÃO
-→ NÃO INVENTA FÓRMULA, AUTORIDADE OU FONTE DE DADO
+→ NÃO INVENTA FÓRMULA, AUTORIDADE OU FONTE
 </code></pre></div>
 <hr/>
-<h2 id="8-pacote-de-handoff-para-replit">8. Pacote de handoff para Replit<a class="headerlink" href="#8-pacote-de-handoff-para-replit" title="Permanent link">¶</a></h2>
-<p>Quando a etapa de construção for explicitamente autorizada, o pacote entregue ao Replit deverá conter:</p>
+<h2 id="9-requisitos-comuns-de-um-dashboard-especializado">9. Requisitos comuns de um dashboard especializado<a class="headerlink" href="#9-requisitos-comuns-de-um-dashboard-especializado" title="Permanent link">¶</a></h2>
+<p>Cada master especializado deve definir, quando aplicável:</p>
 <ol>
-<li>este Documento Mestre na versão vigente;</li>
-<li>contratos aprovados dos KPIs que serão materializados;</li>
-<li>contratos canônicos de domínio aplicáveis a cada KPI;</li>
-<li>contrato de dados ou interface autorizada para cada indicador;</li>
+<li>objetivo e público consumidor;</li>
+<li>escopo e não escopo;</li>
+<li>catálogo de KPIs/indicadores;</li>
+<li>entidades e populações;</li>
+<li>filtros globais e locais;</li>
+<li>dimensões e segmentações;</li>
+<li>períodos e comparações;</li>
+<li>drill-down permitido;</li>
+<li>exportação permitida/proibida;</li>
+<li>access/disclosure por grupo;</li>
+<li>fontes e integrações lógicas;</li>
+<li>estados de loading, vazio, dado insuficiente, erro e indisponibilidade;</li>
+<li>qualidade/freshness;</li>
+<li>semantic visualization contract;</li>
+<li>critérios de aceite;</li>
+<li>instruções específicas para o Replit;</li>
+<li>itens bloqueados/TBD;</li>
+<li>versão da especificação usada na construção.</li>
+</ol>
+<hr/>
+<h2 id="10-contrato-de-construcao-para-replit">10. Contrato de construção para Replit<a class="headerlink" href="#10-contrato-de-construcao-para-replit" title="Permanent link">¶</a></h2>
+<p>Quando uma etapa de construção for explicitamente autorizada, o pacote entregue ao Replit deverá conter:</p>
+<ol>
+<li>este master global vigente;</li>
+<li>master especializado correspondente;</li>
+<li>contratos aprovados/suficientemente definidos dos KPIs selecionados;</li>
+<li>contratos canônicos de domínio aplicáveis;</li>
+<li>data/serving contracts autorizados;</li>
 <li>regras de autenticação, autorização e perfis de acesso;</li>
 <li>regras de privacidade, agregação e disclosure;</li>
-<li>Design System e especificações visuais aprovadas quando disponíveis;</li>
-<li>estados vazios, loading, erro, indisponibilidade e dado insuficiente;</li>
-<li>critérios objetivos de aceite;</li>
-<li>indicação clara de dados mock versus dados reais;</li>
-<li>registro da versão da especificação usada na construção.</li>
+<li>Design System/especificações visuais quando autorizados;</li>
+<li>estados de exceção;</li>
+<li>critérios de aceite;</li>
+<li>indicação clara de <code>mock data</code> versus <code>real data</code>;</li>
+<li>versão do pacote usado na build.</li>
 </ol>
-<h3 id="81-instrucao-de-construcao">8.1 Instrução de construção<a class="headerlink" href="#81-instrucao-de-construcao" title="Permanent link">¶</a></h3>
-<p>A ferramenta de construção deverá obedecer:</p>
+<p>Instrução obrigatória:</p>
 <div class="highlight"><pre><span></span><code>SE KPI ESTÁ COMPLETO E APROVADO
 + CONTRATOS DE DOMÍNIO APLICÁVEIS ESTÃO SATISFEITOS
-→ implementar conforme contrato
+→ IMPLEMENTAR CONFORME CONTRATO
 
 SE FÓRMULA ESTÁ AUSENTE
-→ marcar como BLOCKED / TBD
-→ não inventar
+→ BLOCKED / TBD
+→ NÃO INVENTAR
 
 SE SOURCE OF TRUTH ESTÁ AUSENTE
-→ marcar como BLOCKED / TBD
-→ não selecionar banco por conveniência
+→ BLOCKED / TBD
+→ NÃO ESCOLHER BANCO POR CONVENIÊNCIA
 
 SE AUTORIDADE DE ACESSO ESTÁ AUSENTE
-→ não expor o dado
+→ NÃO EXPOR
 
-SE ESCOPO DE DASHBOARD É APENAS CANDIDATO / UNAPPROVED
-→ não tratar como escopo de produto aprovado
-
-SE CONTRATO CANÔNICO DE DOMÍNIO APLICÁVEL NÃO ESTÁ SATISFEITO
-→ marcar como BLOCKED / TBD
-→ não declarar KPI READY
+SE ESCOPO AINDA É APENAS CANDIDATO
+→ NÃO TRATAR COMO PRODUTO IMPLEMENTADO
 
 SE APENAS MOCK DATA ESTÁ AUTORIZADO
-→ manter separação explícita entre mock e integração real
+→ SEPARAR MOCK DE INTEGRAÇÃO REAL
 
 SE OUTPUT É INFERIDO / PREDITO
-→ preservar natureza, confiança e explicabilidade aplicáveis
+→ PRESERVAR NATUREZA, CONFIANÇA E EXPLICABILIDADE
+
+SE HOUVER DRILL-DOWN
+→ NÃO AMPLIAR A AUTORIDADE DO USUÁRIO
 </code></pre></div>
 <hr/>
-<h2 id="9-arquitetura-logica-de-consumo">9. Arquitetura lógica de consumo<a class="headerlink" href="#9-arquitetura-logica-de-consumo" title="Permanent link">¶</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    S[Sources autorizadas]
-    G[Graph / Analytics]
-    I[Guivos Intelligence]
-    C[Contrato de KPI]
-    V[Serving / Data Contract]
-    R[Replit / Dashboard]
-    U[Usuário autorizado]
-
-    S --&gt; G
-    S --&gt; I
-    G --&gt; I
-    G --&gt; C
-    I --&gt; C
-    C --&gt; V
-    V --&gt; R
-    R --&gt; U
-</code></pre>
-<p>O desenho é lógico. Ele não determina topologia física, banco específico, API, serviço, linguagem ou infraestrutura.</p>
-<hr/>
-<h2 id="10-definition-of-ready-para-materializacao-de-um-kpi">10. Definition of Ready para materialização de um KPI<a class="headerlink" href="#10-definition-of-ready-para-materializacao-de-um-kpi" title="Permanent link">¶</a></h2>
-<p>Um KPI somente deve avançar para implementação quando:</p>
+<h2 id="11-definition-of-ready-de-um-kpi">11. Definition of Ready de um KPI<a class="headerlink" href="#11-definition-of-ready-de-um-kpi" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code>[ ] KPI ID definido
-[ ] pergunta de negócio/compreensão definida
-[ ] família / tipo definido
+[ ] pergunta definida
+[ ] família/tipo definido
 [ ] população e unidade de análise definidas
 [ ] fórmula definida
-[ ] numerador / denominador definidos quando aplicáveis
+[ ] numerador/denominador definidos quando aplicáveis
 [ ] unidade definida
 [ ] direcionalidade definida quando aplicável
 [ ] exclusões explicitadas
@@ -2187,104 +2421,100 @@ SE OUTPUT É INFERIDO / PREDITO
 [ ] granularidade definida
 [ ] source of truth / fontes definidas e autorizadas
 [ ] natureza da evidência definida
-[ ] regra de freshness definida
+[ ] freshness definida
 [ ] quality checks definidos
-[ ] sensibilidade / access class classificada
+[ ] sensibilidade / access class definida
 [ ] público autorizado definido
 [ ] accountable owner definido
 [ ] calculation owner definido
-[ ] regras de agregação/disclosure definidas
+[ ] review cadence definida quando aplicável
+[ ] retention rule definida quando aplicável
+[ ] regra de agregação/disclosure definida quando aplicável
 [ ] tratamento de nulos definido
 [ ] proveniência definida
-[ ] supported claims definidos
-[ ] prohibited claims definidos
+[ ] supported / prohibited claims definidos
 [ ] confounders registrados quando aplicáveis
 [ ] incerteza qualificada quando material
-[ ] contrato(s) canônico(s) de domínio aplicável(is) identificado(s)
-[ ] requisitos do(s) contrato(s) de domínio aplicável(is) satisfeitos no seu próprio estado de governança
-[ ] validações aplicáveis registradas (conceptual / data / financial / accounting / legal-privacy-security conforme domínio)
-[ ] visualização aprovada ou suficientemente especificada
+[ ] validações aplicáveis registradas
+[ ] contratos de domínio aplicáveis identificados e satisfeitos
+[ ] visualização semântica especificada
 [ ] estados de exceção definidos
 [ ] critérios de aceite definidos
-[ ] superfície consumidora adjudicada / aprovada para o escopo em questão
+[ ] superfície consumidora documentalmente adjudicada
 [ ] implementação explicitamente autorizada pelo gate aplicável
 </code></pre></div>
-<p>Para KPI econômico, a checklist acima <strong>não está completa</strong> sem a composição aplicável com <code>GEM-009-MEASUREMENT-CONTRACT-001</code>.</p>
-<p>Falha em qualquer item material mantém o KPI em especificação, não em implementação canônica.</p>
+<p>Falha material mantém o KPI em especificação, não em implementação canônica.</p>
 <hr/>
-<h2 id="11-proximas-especificacoes-necessarias">11. Próximas especificações necessárias<a class="headerlink" href="#11-proximas-especificacoes-necessarias" title="Permanent link">¶</a></h2>
-<p>Este master cria a estrutura, mas não substitui o trabalho de definição métrica nem a adjudicação das superfícies candidatas.</p>
-<p>Próximas famílias possíveis, somente quando individualmente autorizadas e materialmente necessárias:</p>
-<ul>
-<li>adjudicação de cada dashboard candidato por sua autoridade de domínio;</li>
-<li>catálogo/registry de KPIs;</li>
-<li>contratos específicos dos KPIs do Dashboard Guivos;</li>
-<li>contratos específicos dos KPIs do Guivos Business;</li>
-<li>contratos específicos dos KPIs de Organizações;</li>
-<li>contratos específicos dos KPIs de Coletivos;</li>
-<li>contratos específicos das leituras da Pessoa;</li>
-<li>definição funcional e analítica de Ads / Opportunity Boost;</li>
-<li>contratos de dados e serving;</li>
-<li>specification de access control e disclosure;</li>
-<li>specification visual/handoff de Design.</li>
-</ul>
-<p>A existência desta lista <strong>não materializa nem autoriza automaticamente</strong> novos documentos, integrações ou etapas.</p>
+<h2 id="12-handoff-entre-os-masters">12. Handoff entre os masters<a class="headerlink" href="#12-handoff-entre-os-masters" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code>MASTER GLOBAL
+→ MASTER ESPECIALIZADO
+→ KPI CATALOG / CONTRACTS
+→ ACCESS + DISCLOSURE
+→ DATA / SERVING CONTRACTS
+→ DESIGN SPEC, QUANDO AUTORIZADO
+→ BUILD HANDOFF
+→ IMPLEMENTATION AUTHORIZATION, QUANDO HOUVER
+</code></pre></div>
+<p>Não existe autorização automática entre etapas.</p>
 <hr/>
-<h2 id="12-estado-final-desta-versao">12. Estado final desta versão<a class="headerlink" href="#12-estado-final-desta-versao" title="Permanent link">¶</a></h2>
+<h2 id="13-proximas-unidades-documentais">13. Próximas unidades documentais<a class="headerlink" href="#13-proximas-unidades-documentais" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code>ANEXO A — DASHBOARD GUIVOS
+→ MATERIALIZED DOCUMENTARILY
+
+ANEXO B — BUSINESS
+→ RESERVED / NOT MATERIALIZED
+
+ANEXO C — ORGANIZAÇÃO
+→ RESERVED / NOT MATERIALIZED
+
+ANEXO D — COLETIVO
+→ RESERVED / NOT MATERIALIZED
+
+ANEXO E — PESSOA
+→ RESERVED / NOT MATERIALIZED
+
+ANEXO F — ADS / OPPORTUNITY BOOST
+→ RESERVED / NOT MATERIALIZED
+</code></pre></div>
+<p>Cada anexo deve ser construído e revisado individualmente para permitir evolução pontual sem reabrir desnecessariamente os demais.</p>
+<hr/>
+<h2 id="14-estado-final-desta-versao">14. Estado final desta versão<a class="headerlink" href="#14-estado-final-desta-versao" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.1.1
+→ v0.2.3
 → ACTIVE
-→ GOVERNED PRE-IMPLEMENTATION MASTER SPECIFICATION
+→ MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
+
+KNOWLEDGE FROM v0.1.1
+→ PRESERVED / RECONCILED
 
 SOURCE TABLE / ARCHITECTURE INPUT
-→ WORKING PROVENANCE ONLY
+→ WORKING PROVENANCE
 → NOT CANONICAL AUTHORITY
 
-DASHBOARD GUIVOS
-→ CANDIDATE SCOPE CAPTURED
-→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
+PROVENANCE TAXONOMY
+→ EXTERNAL KNOWLEDGE + GOVERNED KNOWLEDGE PRESERVED AS DISTINCT NATURES
 
-DASHBOARD GUIVOS BUSINESS
-→ CANDIDATE SCOPE CAPTURED
-→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
+REPLIT HANDOFF ARCHITECTURE
+→ DEFINED DOCUMENTARILY
 
-DASHBOARD ORGANIZAÇÕES
-→ CANDIDATE SCOPE CAPTURED
-→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
-→ CURRENT O/C AUTHORITY STILL SAYS DASHBOARD DA ORGANIZAÇÃO = NÃO DEFINIDO
+ACCESS MODEL
+→ DEFINED AT FUNCTIONAL / POLICY LEVEL
+→ TECHNICAL RBAC NOT IMPLEMENTED
 
-DASHBOARD COLETIVOS
-→ CANDIDATE SCOPE CAPTURED
-→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
-→ DOES NOT MATERIALIZE AUTHENTICATED COLLECTIVE HOME
+KPI CONTRACT ENVELOPE
+→ PRESERVED + EXTENDED
 
-DASHBOARD PESSOA
-→ CANDIDATE SCOPE CAPTURED
-→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
+DASHBOARD GUIVOS MASTER
+→ GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
+→ MATERIALIZED DOCUMENTARILY AS ANNEX A
 
-ADS / OPPORTUNITY BOOST ANALYTICS
-→ CANDIDATE NEED CAPTURED
-→ UNAPPROVED
-→ DETAILED SCOPE / KPIs / TOOLING TO DEFINE
-
-REPLIT HANDOFF STRUCTURE
-→ DEFINED AS PRE-IMPLEMENTATION STRUCTURE
-
-KPI CONTRACT TEMPLATE
-→ CROSS-DOMAIN MINIMUM ENVELOPE
-→ MUST COMPOSE WITH APPLICABLE DOMAIN CONTRACTS
-
-ECONOMIC KPIs
-→ MUST COMPOSE WITH GEM-009-MEASUREMENT-CONTRACT-001 WHEN APPLICABLE
-→ THIS MASTER DOES NOT PROMOTE GEM-009 STATUS / MATURITY
-
-KPI FORMULAS
-→ NOT DEFINED BY INFERENCE
+OTHER SPECIALIZED MASTERS
+→ RESERVED / NOT MATERIALIZED
 
 REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
-→ NOT AUTHORIZED BY THIS DOCUMENT
+→ NOT AUTHORIZED
 
-MERGE DA PR #363
+DESIGN / UI IMPLEMENTATION
 → NOT AUTHORIZED BY THIS DOCUMENT
 </code></pre></div>
 </article>
