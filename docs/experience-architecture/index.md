@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.8.1
+version: 1.8.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-06
+last_updated: 2026-09-12
 related:
   - PAS-001
   - PAS-001-DOMAIN-MODEL-001
@@ -42,6 +42,7 @@ related:
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - M7.88
 normative: false
 ---
@@ -199,14 +200,15 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active` 0.41.0; D5-C4B e Bloco 2 sincronizados |
+| Jornadas Integradas | `active` 0.45.0; Jobs + IA + Surface Map lógico-documental O/C reconciliados |
 | Jornada da Pessoa | `draft`; PER-010..012 validados localmente; TRN-008..013 integrais |
-| Jornada do Coletivo | `draft` 0.20.0; Jobs + IA definidos pre-surface-map |
-| Jornada da Organização | `draft` 0.13.0; Jobs + IA definidos pre-surface-map |
-| catálogo integrado | `active` 0.34.0; **0 SVGs físicos após F-016-A**; maturidade funcional preservada por autoridades textuais |
+| Jornada do Coletivo | `draft` 0.21.0; Jobs + IA definidos e Surface Map lógico-documental canônico; state map/fluxos/navegação/wireframe principal pendentes |
+| Jornada da Organização | `draft` 0.14.0; Jobs + IA definidos e Surface Map lógico-documental canônico; state map/fluxos/navegação/wireframe principal pendentes |
+| mapa lógico autenticado O/C | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY**; não materializa state map, navegação ou wireframes |
+| catálogo integrado | `active` 0.36.0; **0 SVGs físicos após F-016-A**; maturidade funcional preservada por autoridades textuais |
 | proveniência visual histórica | documentos de galeria/matriz removidos do corpus corrente; recuperáveis no histórico Git; sem autoridade visual |
-| lacunas | `active`; lacuna D5-C de handoffs encerrada no limite documental |
-| registro de superfícies | `active`; 57 IDs; maturidade por item |
+| lacunas | `active` 0.36.0; Surface Map O/C removido da fila; state map + fluxos prioritários + wireframes permanecem pendentes |
+| registro de superfícies | `active` 0.25.0; 57 IDs; maturidade por item; crosswalk O/C sem promoção automática |
 | registro de transições | `active`; 66 transições; TRN-008..013 integrais |
 | detalhamento da Pessoa | `active`; PER-008 recorrente e PER-010..012 com continuidade D5-C validada |
 | D5-A | `active` 1.1.0 |
@@ -257,4 +259,4 @@ D5-A/B/C1/C2/C3/C4A/C4B não consomem nem antecipam V5.
 
 ## 11. Próxima evolução possível
 
-A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo, sem materializar o surface map. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
+A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo e o `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` materializou o **Surface Map lógico-documental canônico**. O **State Map**, os fluxos prioritários da experiência principal, a navegação materializada e os wireframes permanecem pendentes e exigem autorização própria. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
