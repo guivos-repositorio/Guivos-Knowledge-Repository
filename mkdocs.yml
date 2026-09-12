@@ -106,6 +106,7 @@ nav:
   - Dados, Intelligence e Tecnologia:
       - Arquitetura Corporativa: enterprise-architecture/index.md
       - Intelligence e IA: intelligence-architecture/index.md
+      - Dashboards, KPIs e Analytics: intelligence-architecture/dashboards-kpis-analytics-master-specification.md
       - Tecnologia de Grafo: adr/ADR-007-neo4j-primary-graph-reference.md
 
   - Jurídico, Privacidade e Institucional:
