@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-UXA-019
 title: Matriz de Consolidação Canônica — Adendo do Contrato Funcional das Relações entre Organizações e Coletivos
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-12
 parent: GKR-CANON-MATRIX-001
 depends_on:
   - UXA-014
@@ -13,6 +13,7 @@ depends_on:
   - GKR-UX-ORGCOL-AUTH-IA-001
 related:
   - M7.19.11
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
 normative: false
 ---
 
@@ -78,4 +79,4 @@ Ele também não reativa `UXA-017` ou `UXA-018`, não restaura sua autoridade e 
 
 No estágio original, o retorno aos Resultados Empresariais e à capacidade de reinvestimento responsável era apresentado como etapa posterior à integração deste contrato.
 
-Essa sequência permanece apenas como proveniência histórica. O estado corrente de Organização/Coletivo é governado pelas autoridades atuais; Jobs + Arquitetura da Informação autenticada estão definidos em `pre-surface-map`, enquanto mapa final de superfícies e wireframes principais autenticados permanecem pendentes e não são autorizados por este adendo.
+Essa sequência permanece apenas como proveniência histórica. O estado corrente de Organização/Coletivo é governado pelas autoridades atuais; Jobs + Arquitetura da Informação autenticada estão definidos, e o Surface Map lógico-documental autenticado está **definido/canônico** em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`. O State Map, os fluxos prioritários, a navegação materializada e os wireframes principais autenticados permanecem pendentes/não materializados e não são autorizados por este adendo.
