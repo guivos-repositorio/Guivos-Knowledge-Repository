@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-DERIVED-AUDIT-001
 title: Organizações e Coletivos — Auditoria de Derivados Pós-313
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-05
+last_updated: 2026-09-12
 normative: false
 related:
   - GKR-ORGCOL-POST313-RECON-001
@@ -12,6 +12,7 @@ related:
   - GKR-UX-ORGCOL-UX-STATE-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-ORGANIZATION-001
@@ -26,10 +27,11 @@ Esta auditoria registra a deriva transversal identificada após a PR #313 e acom
 
 Ela não cria nova arquitetura funcional, não define wireframes e não altera a maturidade de artefatos independentes que possuam autoridade própria.
 
-A versão 1.1.0 também reconcilia o registro com as autoridades posteriores já integradas:
+A versão 1.4.0 também reconcilia o registro com as autoridades posteriores já integradas:
 
 - `GKR-UX-ORGCOL-AUTH-JOBS-001` — atores, autoridades e jobs autenticados;
-- `GKR-UX-ORGCOL-AUTH-IA-001` — Arquitetura da Informação autenticada definida pré-surface-map.
+- `GKR-UX-ORGCOL-AUTH-IA-001` — Arquitetura da Informação autenticada definida pré-surface-map;
+- `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` — Surface Map lógico-documental autenticado definido e canônico.
 
 ## 2. Resultado executivo
 
@@ -44,8 +46,11 @@ JOBS AUTENTICADOS O/C
 ARQUITETURA DA INFORMAÇÃO AUTENTICADA O/C
 → DEFINIDA PRÉ-SURFACE-MAP
 
-MAPA FINAL DE SUPERFÍCIES
-→ PENDENTE
+SURFACE MAP LÓGICO-DOCUMENTAL O/C
+→ DEFINIDO / CANÔNICO
+
+STATE MAP / NAVEGAÇÃO MATERIALIZADA
+→ PENDENTES / NÃO MATERIALIZADOS
 
 WIREFRAMES PRINCIPAIS AUTENTICADOS
 → PENDENTES / AUTORIDADE DE DESIGN
@@ -65,8 +70,8 @@ F-016-A
 | antiga matriz visual | associação visual podia ser lida como vigência | removida do corpus corrente; perfis históricos recuperáveis no Git | normalizado |
 | `GKR-JOURNEY-SURFACE-REGISTRY-001` — `ORG-001` | Visão Geral validada por `UXA-015/017` | responsabilidade conhecida; materialização histórica removida; Design governa futura materialização | normalizado |
 | registro do Coletivo | `UXA-016/018` como evidência da UX principal | não utilizar esses IDs para afirmar wireframe principal vigente | normalizado |
-| Jornada da Organização | Visão Geral = validada | Jobs + IA existem; mapa funcional ainda não canônico; materialização pertence a Design | normalizado |
-| Jornada do Coletivo | `UXA-016/018` como evidência principal | Jobs + IA existem; mapa funcional ainda não canônico; materialização pertence a Design | normalizado |
+| Jornada da Organização | Visão Geral = validada | Jobs + IA + Surface Map lógico-documental existem; state map/composição visual/wireframe permanecem pendentes | normalizado |
+| Jornada do Coletivo | `UXA-016/018` como evidência principal | Jobs + IA + Surface Map lógico-documental existem; state map/navegação materializada/wireframe permanecem pendentes | normalizado |
 
 ## 3A. Snapshot histórico pós-F-006 / pré-F-016-A
 
@@ -101,6 +106,7 @@ Permanecem no estado próprio, conforme suas autoridades específicas:
 - relações de `UXA-019`;
 - atores, autoridades e jobs de `GKR-UX-ORGCOL-AUTH-JOBS-001`;
 - Arquitetura da Informação de `GKR-UX-ORGCOL-AUTH-IA-001`;
+- Surface Map lógico-documental de `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`;
 - Research `RP-002`.
 
 Validação local de um fluxo especializado não fecha a experiência principal do participante.
@@ -119,6 +125,9 @@ Atores / autoridades / jobs
 Arquitetura da Informação
 → definida pré-surface-map
 
+Surface Map lógico-documental
+→ definido / canônico
+
 Cadastro / publicação de oportunidades
 → possui materializações próprias
 
@@ -130,11 +139,12 @@ Relação com Coletivos
 
 Visão Geral
 → domínio de IA definido semanticamente
-→ mapa/composição final pendentes
+→ reconciliada no Surface Map lógico-documental
+→ state map/composição visual pendentes
 → wireframe principal autenticado pendente
 
-Mapa final de superfícies
-→ pendente
+State map / navegação materializada
+→ pendentes
 ```
 
 O antigo SVG `antigo ativo visual F-006 de ORG-001` é histórico `superseded` e permanece fisicamente enquanto não houver autorização humana separada e explícita para seu cleanup; `F-006` permanece aberto durante eventual remoção e os gates pós-cleanup.
@@ -153,6 +163,9 @@ Atores / autoridades / jobs
 Arquitetura da Informação
 → definida pré-surface-map
 
+Surface Map lógico-documental
+→ definido / canônico
+
 Descoberta e perfil público
 → possuem evidências independentes em seus pacotes
 
@@ -167,11 +180,12 @@ Relações institucionais
 
 Início
 → domínio de IA definido semanticamente
-→ mapa/composição final pendentes
+→ reconciliado no Surface Map lógico-documental
+→ state map/composição visual pendentes
 → wireframe principal autenticado pendente
 
-Mapa final de superfícies
-→ pendente
+State map / navegação materializada
+→ pendentes
 ```
 
 O antigo SVG `antigo ativo visual F-006 de COL-001` é histórico `superseded` e não pode ser usado como baseline da experiência autenticada final.
@@ -232,13 +246,14 @@ Jornadas `draft` podem conter responsabilidades e relações conhecidas sem poss
 A leitura atual deve distinguir:
 
 - `definido semanticamente` para domínios e responsabilidades sustentados por Jobs/IA;
+- `definido/canônico` para a topologia lógica sustentada pelo Surface Map vigente;
 - `contratado` para responsabilidades/ligação sem validação funcional visual suficiente;
 - `materializado` somente quando houver referência vigente;
 - `validado` somente quando o objeto vigente tiver sido efetivamente validado;
 - `local` para validação limitada a pacote especializado;
 - `superseded` para referências históricas sem autoridade atual.
 
-A existência da IA atual não permite reativar a conclusão visual de `UXA-015..018`.
+A existência da IA e do Surface Map atuais não permite reativar a conclusão visual de `UXA-015..018`.
 
 ## 10. Conteúdo material de UXA-015..018
 
@@ -279,7 +294,7 @@ Consequência:
 Após o fechamento de F-006, qualquer derivado deve:
 
 1. tratar `UXA-015..018` somente como proveniência histórica quando necessário;
-2. reconhecer Jobs + IA atuais para a experiência autenticada;
+2. reconhecer Jobs + IA + Surface Map atuais para a experiência autenticada;
 3. separar inventário físico de maturidade visual;
 4. não promover wireframe por inferência;
 5. manter as Jornadas da Organização e do Coletivo em `draft`;
@@ -292,7 +307,7 @@ Para `F-016-A`, o cleanup 119/119 foi aplicado e validado; a contagem física co
 
 Para divergências de supersessão pós-313, consultar o registro normativo `GKR-ORGCOL-POST313-RECON-001`.
 
-Para o estado atual mais amplo, prevalecem `GKR-STATE-001`, `GKR-UX-ORGCOL-STATE-001`, `GKR-UX-ORGCOL-UX-STATE-001`, `GKR-UX-ORGCOL-AUTH-JOBS-001` e `GKR-UX-ORGCOL-AUTH-IA-001` em seus respectivos escopos.
+Para o estado atual mais amplo, prevalecem `GKR-STATE-001`, `GKR-UX-ORGCOL-STATE-001`, `GKR-UX-ORGCOL-UX-STATE-001`, `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001` e `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` em seus respectivos escopos.
 
 ## 13. Estado final desta auditoria derivada
 
@@ -306,8 +321,11 @@ NORMALIZAÇÃO DOS DERIVADOS CENTRAIS
 JOBS + IA AUTENTICADA
 → DEFINIDOS E PROPAGADOS NAS JORNADAS DRAFT
 
-MAPA FINAL DE SUPERFÍCIES
-→ PENDENTE
+SURFACE MAP LÓGICO-DOCUMENTAL O/C
+→ DEFINIDO / CANÔNICO
+
+STATE MAP / NAVEGAÇÃO MATERIALIZADA
+→ PENDENTES / NÃO MATERIALIZADOS
 
 WIREFRAMES PRINCIPAIS
 → PENDENTES / DESIGN AUTHORITY

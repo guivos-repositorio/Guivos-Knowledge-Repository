@@ -2,15 +2,16 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-12
 normative: false
 related:
   - UXA-014
   - UXA-019
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
@@ -47,7 +48,8 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | distinção Organização × Coletivo | definida funcionalmente | `UXA-014` |
 | relações Organização ↔ Coletivo | contrato funcional existente, não normativo | `UXA-019` |
 | atores, autoridades e jobs autenticados | **definidos documentalmente** | `GKR-UX-ORGCOL-AUTH-JOBS-001` |
-| Arquitetura da Informação autenticada | **definida, pré-mapa de superfícies** | `GKR-UX-ORGCOL-AUTH-IA-001` |
+| Arquitetura da Informação autenticada | **definida** | `GKR-UX-ORGCOL-AUTH-IA-001` |
+| mapa lógico de superfícies autenticadas | **definido documentalmente** | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` |
 | Jornada da Organização | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-ORGANIZATION-001` |
 | Jornada do Coletivo | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-COLLECTIVE-001` |
 | corpus de oportunidades reais | Research consolidado pré-campo | `RP-002-SUP-001` |
@@ -57,7 +59,6 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | validação com perfis sintéticos | executada metodologicamente; não é PMF | `RP-002-PMF-001` + atlas |
 | validação humana real / PMF | **pendente** | piloto de campo |
 | Home pública de Organizações e Coletivos | possui Documento Mestre próprio | `public-home-organizations-collectives-master-document.md` |
-| mapa final de superfícies autenticadas | **não definido** | pendente |
 | wireframe da experiência autenticada da Organização | **não definido** | pendente |
 | wireframe da experiência autenticada do Coletivo | **não definido** | pendente |
 | validação de wireframe da Organização | **não realizada em objeto vigente** | pendente |
@@ -65,13 +66,16 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | UI / protótipo autenticado | não definido | pendente |
 | Engenharia da experiência autenticada | não autorizada a partir de wireframe | pendente |
 
-A existência de Arquitetura da Informação não promove automaticamente mapa de superfícies, sitemap final, menu visual, wireframe, UI, RBAC técnico ou implementação.
+A existência de Jobs, Arquitetura da Informação e mapa lógico de superfícies não promove automaticamente mapa de estados, fluxos, sitemap técnico, menu visual, wireframe, UI, RBAC técnico ou implementação.
 
 ```text
 JOBS DEFINIDOS
 +
 ARQUITETURA DA INFORMAÇÃO DEFINIDA
-≠ MAPA FINAL DE SUPERFÍCIES
++
+MAPA LÓGICO DE SUPERFÍCIES DEFINIDO
+≠ MAPA DE ESTADOS
+≠ FLUXOS
 ≠ WIREFRAME
 ≠ UI
 ≠ IMPLEMENTAÇÃO
@@ -214,9 +218,9 @@ Os jobs cobrem contexto, Momento, capacidade, oportunidades/atividades, relaçõ
 
 ## 8. Arquitetura da Informação autenticada
 
-`GKR-UX-ORGCOL-AUTH-IA-001` está ativo com maturidade `authenticated_information_architecture_defined_pre_surface_map`.
+`GKR-UX-ORGCOL-AUTH-IA-001` está ativo e estabelece as cinco camadas lógicas da experiência autenticada.
 
-A arquitetura comum preserva cinco camadas lógicas:
+A arquitetura comum preserva:
 
 ```text
 CAMADA 0 — CONTEXTO E AUTORIDADE
@@ -256,7 +260,7 @@ COLETIVO
 └── Planos e Capacidade [especializado / contextual]
 ```
 
-Essa arquitetura agrupa informação e trabalho. Ela não define ainda o mapa final de superfícies, quantidade final de telas, menu visual, wireframe, UI, protótipo, RBAC técnico ou implementação.
+A IA agrupa informação e trabalho; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` materializa esses domínios como superfícies lógicas autenticadas. Nenhum dos dois documentos define mapa de estados, fluxos, quantidade final de telas, menu visual, wireframe, UI, protótipo, RBAC técnico ou implementação.
 
 ## 9. Jornadas atuais
 
@@ -267,11 +271,11 @@ As Jornadas integradas permanecem documentadas em:
 
 Ambos os documentos possuem estado `draft`.
 
-Eles ajudam a mapear continuidade, estados e relações do ecossistema, mas **não devem ser interpretados como prova de que o mapa final de superfícies, wireframes ou UI já foi definido**.
+Eles ajudam a mapear continuidade, estados e relações do ecossistema, mas **não devem ser interpretados como prova de que wireframes ou UI já foram definidos**.
 
 Qualquer trecho desses documentos que derive maturidade de `UXA-015`, `UXA-016`, `UXA-017` ou `UXA-018` fica subordinado à reconciliação de estado registrada aqui: os wireframes autenticados de Organização e Coletivo ainda não foram oficialmente definidos.
 
-A existência de Jobs e IA atuais também não reativa `UXA-015..018`.
+A existência de Jobs, IA e mapa de superfícies atuais também não reativa `UXA-015..018`.
 
 ## 10. Organizações e Coletivos no supply
 
@@ -367,7 +371,7 @@ O estado vigente está detalhado em [Organizações e Coletivos — Estado de UX
 
 Resumo:
 
-> **Atores, autoridades, jobs e Arquitetura da Informação autenticada já estão definidos documentalmente. O mapa final de superfícies e os wireframes principais autenticados de Organização e Coletivo ainda não estão definidos.**
+> **Atores, autoridades, jobs, Arquitetura da Informação e mapa lógico de superfícies autenticadas já estão definidos documentalmente. Estados, fluxos prioritários e wireframes principais autenticados de Organização e Coletivo não são materializados por esta etapa.**
 
 Materiais anteriores que afirmavam wireframes principais vigentes ou validação vigente foram reclassificados como registros históricos `superseded`.
 
@@ -380,6 +384,7 @@ Materiais anteriores que afirmavam wireframes principais vigentes ou validação
 | relações Organização ↔ Coletivo | `UXA-019` |
 | atores, autoridades e jobs autenticados | `GKR-UX-ORGCOL-AUTH-JOBS-001` |
 | Arquitetura da Informação autenticada | `GKR-UX-ORGCOL-AUTH-IA-001` |
+| mapa de superfícies autenticadas | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` |
 | Jornada da Organização | `journeys/organization.md` |
 | Jornada do Coletivo | `journeys/collective.md` |
 | Home pública | `public-home-organizations-collectives-master-document.md` |
@@ -397,12 +402,13 @@ A frente já concluiu documentalmente:
 fundamentos e papéis
 → atores, autoridades e jobs prioritários
 → Arquitetura da Informação
+→ mapa lógico de superfícies autenticadas
 ```
 
-O próximo encadeamento, quando autorizado após os gates aplicáveis da auditoria, começa em:
+Este commit **não autoriza nem materializa** a continuação. Permanecem deliberadamente diferidos para gates posteriores:
 
 ```text
-mapa de superfícies e estados
+estados
 → fluxos prioritários
 → wireframe de baixa fidelidade
 → validação funcional
@@ -412,9 +418,9 @@ mapa de superfícies e estados
 → handoff técnico
 ```
 
-Nenhuma etapa posterior deve ser presumida antes da anterior estar materialmente definida e autorizada.
+Nenhuma etapa posterior deve ser presumida antes de autorização governada específica.
 
-A branch pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece apenas `HOLD_REVIEW`; sua existência não transforma o mapa proposto em autoridade vigente.
+A branch pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece apenas `HOLD_REVIEW`; sua existência não transforma estados, fluxos, wireframes ou decisões nela materializados em autoridade vigente.
 
 ## 17. Regra de autoridade desta reconciliação
 
@@ -425,3 +431,5 @@ Para o estado atual de Organizações e Coletivos:
 Isso não apaga o histórico; apenas impede que materializações prematuras sejam confundidas com decisão vigente.
 
 O atlas de supply e relevância possui função diferente: ele preserva Research, exemplos e método para tornar compreensível o universo de oportunidades. Ele **não** promove wireframes, matching, PMF ou implementação a estado superior.
+
+A autoridade de `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` passa a integrar o estado canônico somente após revisão e merge governados da branch que a introduz; até lá, permanece candidata em PR draft.

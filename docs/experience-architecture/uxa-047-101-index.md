@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.34.1
+version: 3.35.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-12
 depends_on:
@@ -10,6 +10,7 @@ depends_on:
   - UXA-101
 related:
   - M7.88
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-PER002-MAT-ELIGIBILITY-001
   - GKR-UX-PER002-DESIGN-AUTH-001
   - GKR-UX-PER002-DESIGN-DELIVERY-001
@@ -34,7 +35,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.34.1
+→ 3.35.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -416,23 +417,37 @@ GKR-UX-ORGCOL-AUTH-JOBS-001
 → atores, autoridades e jobs prioritários definidos
 
 GKR-UX-ORGCOL-AUTH-IA-001
-→ Arquitetura da Informação definida pre-surface-map
+→ Arquitetura da Informação definida em seu próprio limite pre-surface-map
+
+GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ mapa lógico-documental canônico definido
+→ IDs estáveis GKR-SURF-* preservados por crosswalk
 ```
 
-Ainda não são canônicos:
+Permanecem não materializados ou não iniciados:
 
-- mapa final de superfícies pós-auditoria;
+- mapa de estados;
+- fluxos prioritários;
 - wireframe principal da Organização;
 - wireframe principal do Coletivo;
 - UI;
 - protótipo;
 - implementação.
 
+```text
+SURFACE MAP DOCUMENTARY DEFINED
+≠ STATE MAP
+≠ FLOW
+≠ WIREFRAME
+≠ UI
+≠ IMPLEMENTATION
+```
+
 ## Estado sincronizado
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.34.1** |
+| Registro do Estado Atual | **3.35.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
@@ -442,6 +457,10 @@ Ainda não são canônicos:
 | Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey remains draft** |
 | Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
 | Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
+| O/C Surface Map autenticado | **DEFINED / CANONICAL DOCUMENTARY / GKR-SURF-* CROSSWALK PRESERVED** |
+| O/C state map | **NOT MATERIALIZED** |
+| O/C fluxos prioritários | **NOT MATERIALIZED** |
+| O/C wireframes autenticados | **NOT STARTED** |
 | F-010 — cleanup transversal | **RESOLVED — CLEANUP / VALIDATION / INDEPENDENT REVIEW COMPLETE** |
 | F-016 | **RESOLVED — AUDIT + ADJUDICATION + CLEANUP 26/26 + POST-DELETE PROOF COMPLETE** |
 | F-016-A — camada física SVG | **RESOLVED / PHYSICAL CLEANUP 119/119 / PHYSICAL SVG COUNT 0 / POST-DELETE PROOF V2 SUCCESS** |
