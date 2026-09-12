@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.2
+version: 0.2.3
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
@@ -409,7 +409,10 @@ DECLARADO
 ≠ PREDITO
 ≠ AGREGADO
 ≠ CONHECIMENTO EXTERNO
+≠ CONHECIMENTO GOVERNADO
 ```
+
+`CONHECIMENTO EXTERNO` e `CONHECIMENTO GOVERNADO` são naturezas distintas: o primeiro provém de fora do corpus/contexto governado da Guivos; o segundo deriva de conhecimento interno ou de referência submetido à governança aplicável. Nenhum dos dois é sinônimo de dado pessoal observado.
 
 ### 7.4 Privacidade e disclosure
 
@@ -660,7 +663,7 @@ Cada anexo deve ser construído e revisado individualmente para permitir evoluç
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.2
+→ v0.2.3
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -670,6 +673,9 @@ KNOWLEDGE FROM v0.1.1
 SOURCE TABLE / ARCHITECTURE INPUT
 → WORKING PROVENANCE
 → NOT CANONICAL AUTHORITY
+
+PROVENANCE TAXONOMY
+→ EXTERNAL KNOWLEDGE + GOVERNED KNOWLEDGE PRESERVED AS DISTINCT NATURES
 
 REPLIT HANDOFF ARCHITECTURE
 → DEFINED DOCUMENTARILY
