@@ -2,13 +2,13 @@
 id: GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
 title: Homes Públicas dos Produtos Especializados — Autoridade de Reconciliação do Lote F
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Guivos
-last_updated: 2026-09-05
+last_updated: 2026-09-11
 parent: GKR-FULL-CORPUS-AUDIT-001
 depends_on:
   - GKR-STATE-001
-  - ROADMAP-13.5.0
+  - ROADMAP-13.33.0
   - GPA-002
   - GPA-003
   - GPA-004
@@ -258,7 +258,12 @@ ROADMAP-13.4.0
 → PROVENIÊNCIA TEMPORAL
 
 ROADMAP-13.5.0
-→ AUTORIDADE GLOBAL VIGENTE NESTE HEAD
+→ CHECKPOINT INTERMEDIÁRIO HISTÓRICO
+→ NÃO É AUTORIDADE GLOBAL VIGENTE
+
+AUTORIDADES GLOBAIS VIGENTES NESTE HEAD
+→ GKR-STATE-001 v3.34.0
+→ ROADMAP-13.33.0
 ```
 
 A fronteira normativa permanece:
