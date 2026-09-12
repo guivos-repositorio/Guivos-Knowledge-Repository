@@ -19,7 +19,7 @@ related:
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
-  - GKR-INTEL-DASH-KPI-ANALYTICS-MASTER-001
+  - GKR-INTELLIGENCE-DASHBOARD-KPI-001
 ---
 
 # Organizações e Coletivos — Mapa de Superfícies da Experiência Autenticada
@@ -426,7 +426,7 @@ As transições permanecem sob autoridade própria do `GKR-JOURNEY-TRANSITION-RE
 
 ## 11. Limite com Dashboards, KPIs e Analytics
 
-`GKR-INTEL-DASH-KPI-ANALYTICS-MASTER-001` permanece a autoridade mestre do handoff analítico, inclusive para futura implementação no Replit.
+`GKR-INTELLIGENCE-DASHBOARD-KPI-001` permanece a autoridade mestre do handoff analítico, inclusive para futura implementação no Replit.
 
 Este Surface Map não define:
 
