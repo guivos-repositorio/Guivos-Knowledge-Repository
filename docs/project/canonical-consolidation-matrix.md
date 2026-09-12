@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 3.3.0
+version: 3.4.0
 owner: Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-12
 depends_on:
   - GKR-STATE-001
 related:
@@ -34,7 +34,7 @@ normative: false
 
 Esta matriz oferece leitura transversal compacta das autoridades correntes. Ela não substitui `GKR-STATE-001` nem a autoridade temática específica.
 
-A edição 3.3.0 preserva as linhas materiais anteriores, reconcilia referências já atualizadas pelo corpus e separa o inventário físico de SVGs da maturidade visual vigente conforme o Bloco I de `GKR-FULL-CORPUS-AUDIT-001`.
+A edição 3.4.0 preserva as linhas materiais anteriores, sincroniza o fechamento pós-auditoria de `F-006`/H/I e o inventário físico corrente, e incorpora a revisão vigente da Guivos Intelligence Architecture com sua arquitetura cognitiva de referência.
 
 ```text
 ATUALIZAÇÃO DA MATRIZ ≠ APAGAMENTO DE LINHA VÁLIDA
@@ -57,7 +57,7 @@ INVENTÁRIO FÍSICO ≠ MATURIDADE VISUAL VIGENTE
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE | **autoridade global vigente sob auditoria integral** |
+| GKR-STATE | **autoridade global vigente; auditoria integral concluída com PASS** |
 | Era | **GE-2 — Knowledge** |
 | Marco funcional | **M7.88** |
 | Última UXA | **UXA-101** |
@@ -99,17 +99,17 @@ A presença pública do Fundamento Cristão no GKR não o transforma em Public C
 
 ## 6. Experiência e materialização
 
-O Bloco I da auditoria governa a leitura agregada do inventário visual:
+O Bloco I da auditoria governa a leitura agregada do inventário visual; após os cleanups governados e as recomputações pós-delete, o inventário físico corrente é zero:
 
 | Elemento | Estado |
 |---|---|
 | Marco funcional | **M7.88** |
 | Última UXA | **UXA-101** |
 | UXA-102/V5 | **não iniciada** |
-| SVGs físicos | **121** |
-| Associações físicas | **121** |
-| Perfis de rastreabilidade | **34** |
-| Duplicatas exatas por blob SHA no snapshot auditado | **0** |
+| SVGs físicos — corrente | **0** |
+| Associações físicas — corrente | **0** |
+| Perfis de rastreabilidade — snapshot auditado anterior | **34** |
+| Duplicatas exatas por blob SHA no snapshot auditado anterior | **0** |
 | Near-duplicates | **NOT_CERTIFIED** |
 | Wireframes vigentes — total agregado | **NOT_CERTIFIED** |
 | Wireframes validados vigentes — total agregado | **NOT_CERTIFIED** |
@@ -125,7 +125,7 @@ CONTAGEM FÍSICA DE SVGs
 ≠ WIREFRAMES VALIDADOS
 ```
 
-O antigo snapshot `121 validados / 0 pendentes` não representa a maturidade visual vigente.
+O antigo snapshot `121 validados / 0 pendentes` não representa a maturidade visual vigente. As contagens físicas históricas anteriores ao cleanup permanecem apenas como proveniência de auditoria; não são o inventário físico corrente.
 
 A continuidade especializada `TRN-008..013` permanece integralmente validada no limite documental. V1–V4 continuam encerradas nos limites definidos. `BND-001` permanece fronteira externa; `BND-002` permanece fronteira genérica de contratação/dimensionamento assistido.
 
@@ -347,9 +347,12 @@ Históricos, addenda e PRs superseded permanecem na trilha Git, mas não compete
 
 ## 18. Próximos gates possíveis
 
-Nenhum é automático:
+Nenhum é automático.
 
-- autorização humana separada e explícita para cleanup físico de `F-006`; se autorizada, remoção/reconciliação, recomputação, validações e review precedem a decisão de fechamento de `F-006` e do Bloco G/H/I;
+O antigo gate de cleanup físico de `F-006` é **checkpoint histórico concluído**: `F-006 = RESOLVED`, H/I estão encerrados no limite documental e o inventário físico corrente foi recomputado em `0 SVGs / 0 associações`. Autorização, remoção, recomputação, validações e decisão de fechamento dessa frente não constituem mais próximos gates vigentes.
+
+Permanecem como possibilidades dependentes de atos governados próprios:
+
 - nova evidência de mercado → VAL;
 - tecnologia/implementação → ADR/GEA/Product Engineering somente mediante autorização própria;
 - filing das assinaturas → Human Filing Authorization;
@@ -358,4 +361,4 @@ Nenhum é automático:
 - privacidade/operação → P6/LS/OT;
 - internacionalização → P7/T/PT;
 - experiência funcional → UXA autorizada;
-- Design → decisão humana própria; não autorizado automaticamente durante a auditoria.
+- Design → decisão humana própria; não autorizado automaticamente pela conclusão documental anterior.

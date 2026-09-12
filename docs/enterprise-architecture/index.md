@@ -2,9 +2,9 @@
 id: GEA-000
 title: Guivos Enterprise Architecture
 status: consolidated
-version: 1.11.0
+version: 1.12.0
 owner: Guivos
-last_updated: 2026-09-06
+last_updated: 2026-09-12
 related_adrs:
   - ADR-003
   - ADR-004
