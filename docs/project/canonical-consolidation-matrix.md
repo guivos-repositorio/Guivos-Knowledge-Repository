@@ -184,7 +184,8 @@ Preços, limites, entitlements e SLA finais continuam dependentes de autoridade 
 
 ```text
 GPA-006 = v2.0.0
-GIA-000 = v1.6.0
+GIA-000 = v1.7.0
+GIA-COG-001 = v0.1.1 / ACTIVE / NORMATIVE / CONCEPTUAL-REFERENCE
 ```
 
 Duas frentes:
