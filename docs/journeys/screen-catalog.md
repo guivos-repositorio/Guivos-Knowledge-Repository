@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.35.0
+version: 0.36.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-05
+last_updated: 2026-09-12
 related:
   - UXA-070
   - UXA-080
@@ -31,6 +31,7 @@ related:
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
   - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -88,10 +89,10 @@ As contagens `SVGs` abaixo pertencem ao snapshot histórico anterior à desmater
 | Pessoa em Coletivos | Central de Atualizações | 1 | validado | TRN-110 e TRN-111 integralmente validadas | P0B/P1 separados |
 | Pessoa em Coletivos | Início do Participante | 1 | validado por UXA-095/096 no recorte da Pessoa participante; não deriva de UXA-016/018 | TRN-111 integralmente validada | P0B e áreas internas separadas |
 | Coletivo | referência inicial histórica | 0 | `UXA-016/018` e ativo visual removidos do corpus corrente | proveniência somente no histórico Git | materialização visual pertence exclusivamente a Design |
-| Coletivo | Visão Geral do Responsável | 1 | UXA-086/087 preservam evidência local do pacote administrativo; **não constituem baseline final da UX principal** | TRN-112 e contratos de Planos preservam maturidade própria | mapa de superfícies e wireframe principal autenticado pendentes |
+| Coletivo | Visão Geral do Responsável | 1 | UXA-086/087 preservam evidência local do pacote administrativo; **não constituem baseline final da UX principal** | TRN-112 e contratos de Planos preservam maturidade própria | Surface Map lógico-documental canônico definido; state map, navegação materializada e wireframe principal autenticado pendentes |
 | Coletivo | gestão de solicitações | 7 | 7 validados no fluxo especializado | handoffs aplicáveis integralmente validados | operação interna posterior |
 | Coletivo | Planos, comparação e cobrança | **3** | **3 validados no fluxo especializado** | contratos de origem/retorno preservam maturidade própria; TRN-411 a 415 locais; TRN-416 parcial | contratação/dimensionamento assistido e cobrança real; origem principal final pendente |
-| Organização | visão geral e cadastro | 1 | **materialização histórica de ORG-001 removida; cadastro preserva validação funcional própria por UXA-008/013** | publicação–descoberta preservada; contratos de Planos têm maturidade própria | documentação funcional preservada; materialização visual pertence exclusivamente a Design |
+| Organização | visão geral e cadastro | 1 | **materialização histórica de ORG-001 removida; cadastro preserva validação funcional própria por UXA-008/013** | publicação–descoberta preservada; contratos de Planos têm maturidade própria | Surface Map lógico-documental canônico definido; state map/composição visual/wireframe principal pendentes; materialização visual pertence exclusivamente a Design |
 | Organização | Planos, comparação e cobrança | **3** | **3 validados no fluxo especializado** | contratos de origem/retorno preservam maturidade própria; TRN-421 a 425 locais; TRN-426 parcial | contratação/dimensionamento assistido e cobrança real; origem principal final pendente |
 | camada comercial | Opportunity Boost | 46 | **46 validados no escopo próprio** | parcial | TRN-304/305/306 e integrações específicas |
 | fronteira documental | destinos externos/comerciais | 0 | não aplicável | BND-001 examinada; BND-002 parcial | processo externo posterior; contratação/dimensionamento assistido |
@@ -103,7 +104,7 @@ As contagens `SVGs` abaixo pertencem ao snapshot histórico anterior à desmater
 |---|---:|---|
 | superfícies/estados/responsabilidades/fronteiras | **57** | inventário granular; maturidade por item |
 | transições documentais | **66** | maturidade por transição; `TRN-008..013` integrais |
-| catálogo físico | **0 SVGs** | `active` 0.34.0; camada física removida por F-016-A |
+| catálogo físico | **0 SVGs** | `active` 0.36.0; camada física removida por F-016-A |
 | perfis históricos de rastreabilidade | **34 perfis históricos** | instrumento de matriz removido; proveniência recuperável no histórico Git |
 | galeria visual histórica | **0 SVGs físicos** | documentos de galeria removidos do corpus corrente; proveniência preservada no histórico Git |
 
@@ -170,10 +171,12 @@ A reconciliação pós-PR #313/#314 **não reescreve a história desses snapshot
 
 ## 7. Estado do catálogo
 
-- catálogo físico: `active` 0.35.0;
+- catálogo físico: `active` 0.36.0;
 - inventário físico corrente após F-016-A: **0 SVGs**;
 - antiga matriz visual: removida do corpus corrente; 34 perfis históricos permanecem recuperáveis no histórico Git;
 - resumo `121 SVGs / 121 validados / 0 pendentes`: **superseded como claim de maturidade vigente**;
+- Surface Map lógico-documental O/C: **definido/canônico por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`**;
+- state map / navegação materializada O/C: **pendentes / não materializados**;
 - materialização visual da Organização: **autoridade exclusiva de Design; não é requisito documental**;
 - materialização visual do Coletivo: **autoridade exclusiva de Design; não é requisito documental**;
 - fluxos especializados preservam sua maturidade própria quando sustentados por autoridade independente;
