@@ -2,9 +2,9 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.44.0
+version: 0.45.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-05
+last_updated: 2026-09-12
 related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
@@ -29,6 +29,7 @@ related:
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
   - RP-002
 normative: false
@@ -88,7 +89,7 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.43.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A |
+| visão geral das Jornadas Integradas | `active` 0.45.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A + Surface Map O/C |
 | propagação dos Domínios de Evolução | `active` 1.0.0 | GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001 |
 | D5-A — jornada inicial | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
 | D5-B — Oportunidades | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
@@ -96,10 +97,10 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | D5-C2/D5-C3/D5-C4A/D5-C4B | `active` | funções e validações textuais preservadas; materialização física sob F-016 |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita preservada |
 | Jornada da Pessoa | `draft` | V4 UXA-101; UXA-102 não iniciada |
-| Jornada do Coletivo | `draft` | Jobs + IA definidos pre-surface-map; mapa final e wireframe principal pendentes |
-| Jornada da Organização | `draft` | Jobs + IA definidos pre-surface-map; mapa final e wireframe principal pendentes |
+| Jornada do Coletivo | `draft` | Jobs + IA + Surface Map definidos documentalmente; state map/fluxos e wireframe principal pendentes |
+| Jornada da Organização | `draft` | Jobs + IA + Surface Map definidos documentalmente; state map/fluxos e wireframe principal pendentes |
 | catálogo integrado | `active` 0.33.0 | **0 SVGs físicos após F-016-A**; contratos textuais preservados; maturidade agregada não inferida |
-| registro de superfícies | `active` | 57 IDs documentais |
+| registro de superfícies | `active` 0.25.0 | 57 IDs documentais; Surface Map O/C reconciliado sem promoção individual |
 | registro de transições | `active` | 66 transições documentais |
 | antiga galeria visual integrada | `removed_from_current_corpus` | proveniência preservada no histórico Git |
 | antiga matriz por SVG | `removed_from_current_corpus` | associações/perfis recuperáveis no histórico Git |
@@ -272,7 +273,7 @@ INVENTÁRIO FÍSICO
 
 V1, V2, V3 e V4 estão encerradas nos limites declarados. D4 propaga `JED-001..JED-009`; D5-A e D5-B materializam o eixo em superfícies existentes; D5-C1 contrata `PER-010..012` e `TRN-008..013`; D5-C2 materializa as três superfícies; D5-C3 valida localmente os três SVGs; D5-C4A materializa as origens em Hoje e governa o contrato integrado; D5-C4B promove as seis ligações para integralmente validadas no limite documental.
 
-A reconciliação pós-313/314 e o Bloco H preservam Jobs + IA autenticada como definidos em estado pre-surface-map. Os wireframes principais autenticados de Organização e Coletivo continuam pendentes e o gap começa no mapa final de superfícies, ainda que fluxos especializados preservem validações próprias.
+A reconciliação pós-313/314 e o Bloco H preservam Jobs + IA autenticada como definidos em seus limites próprios. `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define posteriormente o mapa lógico-documental canônico de Organização e Coletivo. Permanecem pendentes o mapa de estados, os fluxos prioritários ainda não materializados e os wireframes principais autenticados, ainda que fluxos especializados preservem validações próprias.
 
 O atlas de supply e relevância documenta Research consolidado e simulações, mas não substitui o Dry Run/Piloto com Pessoas reais.
 
