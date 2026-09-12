@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-11
 normative: false
@@ -17,6 +17,7 @@ depends_on:
 related:
   - GEA-GRAPH-REFERENCE-001
   - GKR-STATE-001
+  - GEM-009-MEASUREMENT-CONTRACT-001
 ---
 
 # Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
@@ -33,12 +34,15 @@ Regra de consumo:
 
 Este master:
 
-- consolida o inventário inicial de dashboards indicado pela tabela de arquitetura desta frente;
+- registra, como **input não canônico**, o inventário candidato de dashboards indicado pela tabela fornecida para esta frente;
+- classifica esses dashboards, campos e recortes como **candidatos/provisórios e não aprovados** até adjudicação pelas autoridades de domínio aplicáveis;
 - define a separação entre fonte de verdade, cálculo, analytics, serving e visualização;
-- define o contrato mínimo obrigatório de cada KPI antes de sua implementação;
-- preserva as autoridades de produto, Intelligence, Graph, Platform, Privacidade e Governança;
+- define um envelope mínimo transversal de contrato de KPI antes de sua implementação, sem substituir contratos canônicos de domínio aplicáveis;
+- preserva as autoridades de produto, Intelligence, Graph, Platform, Privacidade, Economia e Governança;
 - prepara um pacote de handoff utilizável no Replit ou em outra ferramenta futura;
 - **não autoriza**, por si só, uso de dados reais, integração física, backend, persistência, produção ou publicação.
+
+A tabela recebida nesta frente é **proveniência de trabalho**, não autoridade canônica do GKR. Em qualquer conflito, prevalece a autoridade corrente do domínio correspondente.
 
 ---
 
@@ -51,10 +55,14 @@ DOCUMENTO MESTRE
 → NÃO NORMATIVO SOBRE FÓRMULAS AINDA NÃO ADJUDICADAS
 
 INVENTÁRIO DE DASHBOARDS
-→ BASELINE IDENTIFICADA
+→ CANDIDATE / PROVISIONAL INPUT
+→ UNAPPROVED UNTIL DOMAIN ADJUDICATION
+→ NÃO DEFINE SUPERFÍCIE, ESCOPO DE PRODUTO OU CAMPO POR INFERÊNCIA
+→ NÃO SOBRESCREVE AUTORIDADES DE ESTADO CORRENTES
 
 CONTRATOS MATEMÁTICOS DE KPIs
 → AINDA DEVEM SER DEFINIDOS INDIVIDUALMENTE
+→ DEVEM COMPOR COM CONTRATOS CANÔNICOS DE DOMÍNIO QUANDO APLICÁVEIS
 
 REPLIT
 → TARGET INICIAL DE MATERIALIZAÇÃO / CONSTRUÇÃO
@@ -65,6 +73,16 @@ REAL DATA / REAL INTEGRATIONS / PRODUCTION
 ```
 
 A presença de uma ferramenta ou tecnologia neste documento indica **papel pretendido, candidato ou de referência**, conforme o caso. Não constitui prova de provisionamento, integração, operação ou produção.
+
+Regra de precedência adicional:
+
+```text
+AUTORIDADE CORRENTE DO DOMÍNIO
+→ PREVALECE
+
+INVENTÁRIO CANDIDATO DESTE MASTER
+→ NÃO PODE PROMOVER COMO DEFINIDO O QUE A AUTORIDADE CORRENTE MANTÉM NÃO DEFINIDO
+```
 
 ---
 
@@ -108,15 +126,40 @@ INFERÊNCIA ≠ FATO
 
 ---
 
-## 4. Inventário inicial de dashboards
+## 4. Inventário candidato inicial de dashboards
 
-A tabela de arquitetura fornecida para esta frente identifica seis superfícies de análise. Os itens abaixo são **escopos iniciais**, ainda não equivalentes a contratos matemáticos completos.
+A tabela fornecida para esta frente identifica seis necessidades/superfícies candidatas de análise. Ela não possui, neste master, identificador governado próprio e **não é elevada a autoridade canônica**. Os itens abaixo são somente **escopos candidatos de trabalho**, ainda não aprovados como superfície, escopo de produto ou contrato matemático.
+
+Estado transversal desta seção:
+
+```text
+SURFACES / FIELDS BELOW
+→ CANDIDATE
+→ PROVISIONAL
+→ UNAPPROVED
+→ TBD PENDING DOMAIN ADJUDICATION
+
+LISTED HERE
+≠ DEFINED
+≠ APPROVED PRODUCT SCOPE
+≠ AUTHORIZED IMPLEMENTATION
+```
+
+Quando uma autoridade corrente de domínio mantiver uma superfície como não definida, este master preserva esse estado. Em particular, `GKR-UX-ORGCOL-UX-STATE-001` estabelece que **dashboard da Organização**, **Home autenticada da Organização** e **Home autenticada do Coletivo** não podem ser inferidos como definidos. Este documento não altera essa conclusão.
 
 ### 4.1 Dashboard Guivos
 
-**Finalidade inicial:** visão transversal do ecossistema e da empresa Guivos.
+**Finalidade candidata:** visão transversal do ecossistema e da empresa Guivos.
 
-Escopo indicado:
+Estado:
+
+```text
+CANDIDATE SCOPE
+→ UNAPPROVED
+→ TBD PENDING DOMAIN ADJUDICATION
+```
+
+Escopo candidato indicado:
 
 - quantidade de Pessoas;
 - quantidade de Coletivos;
@@ -135,9 +178,17 @@ Limite:
 
 ### 4.2 Dashboard Guivos Business
 
-**Finalidade inicial:** disponibilizar KPIs do Guivos Business de acordo com a população legitimamente abrangida por cada relação Business.
+**Finalidade candidata:** disponibilizar KPIs do Guivos Business de acordo com a população legitimamente abrangida por cada relação Business.
 
-Escopo indicado:
+Estado:
+
+```text
+CANDIDATE SCOPE
+→ UNAPPROVED
+→ TBD PENDING BUSINESS / DATA / PRIVACY ADJUDICATION
+```
+
+Escopo candidato indicado:
 
 - KPIs populacionais autorizados;
 - tendências;
@@ -156,9 +207,21 @@ BUSINESS
 
 ### 4.3 Dashboard Organizações
 
-**Finalidade inicial:** oferecer à Organização leitura quantitativa de sua atuação e da população sob autoridade aplicável.
+**Finalidade candidata:** oferecer à Organização leitura quantitativa de sua atuação e da população sob autoridade aplicável.
 
-Escopo indicado:
+Estado governado nesta versão:
+
+```text
+CANDIDATE SCOPE
+→ UNAPPROVED
+→ TBD PENDING DOMAIN ADJUDICATION
+
+CURRENT O/C AUTHORITY
+→ DASHBOARD DA ORGANIZAÇÃO = NÃO DEFINIDO
+→ ESTE MASTER NÃO ALTERA ESSE ESTADO
+```
+
+Escopo candidato indicado:
 
 - quantidade de Pessoas relacionadas dentro do escopo autorizado;
 - oportunidades;
@@ -170,9 +233,18 @@ Escopo indicado:
 
 ### 4.4 Dashboard Coletivos
 
-**Finalidade inicial:** oferecer ao Coletivo leitura quantitativa de sua atuação e participação.
+**Finalidade candidata:** oferecer ao Coletivo leitura quantitativa de sua atuação e participação.
 
-Escopo indicado:
+Estado:
+
+```text
+CANDIDATE SCOPE
+→ UNAPPROVED
+→ TBD PENDING DOMAIN ADJUDICATION
+→ NÃO MATERIALIZA HOME AUTENTICADA DO COLETIVO
+```
+
+Escopo candidato indicado:
 
 - quantidade de Pessoas relacionadas dentro do escopo autorizado;
 - oportunidades;
@@ -186,9 +258,17 @@ Escopo indicado:
 
 ### 4.5 Dashboard Pessoa
 
-**Finalidade inicial:** oferecer compreensão individual autorizada sobre a própria trajetória da Pessoa.
+**Finalidade candidata:** oferecer compreensão individual autorizada sobre a própria trajetória da Pessoa.
 
-Escopo indicado:
+Estado:
+
+```text
+CANDIDATE SCOPE
+→ UNAPPROVED
+→ TBD PENDING PERSON / JOURNEY / INTELLIGENCE ADJUDICATION
+```
+
+Escopo candidato indicado:
 
 - históricos;
 - contextos;
@@ -205,13 +285,14 @@ DECLARADO ≠ OBSERVADO ≠ CALCULADO ≠ INFERIDO ≠ PREDITO
 
 ### 4.6 Ads / Opportunity Boost Analytics
 
-A tabela indica uma necessidade de dashboard para **dados de anúncios e Opportunity Boost do anunciante**, mas mantém a tecnologia correspondente como **A DEFINIR**.
+A tabela indica uma necessidade candidata de dashboard para **dados de anúncios e Opportunity Boost do anunciante**, mas mantém a tecnologia correspondente como **A DEFINIR**.
 
 Estado:
 
 ```text
-NECESSIDADE ANALÍTICA
-→ IDENTIFICADA
+NECESSIDADE ANALÍTICA CANDIDATA
+→ IDENTIFICADA COMO INPUT
+→ NÃO APROVADA COMO ESCOPO CANÔNICO
 
 ESCOPO FUNCIONAL DETALHADO
 → A DEFINIR
@@ -227,9 +308,28 @@ Nenhum KPI, fórmula, fonte ou ferramenta deve ser inventado por inferência nes
 
 ---
 
-## 5. Contrato obrigatório de cada KPI
+## 5. Envelope mínimo transversal do contrato de KPI
 
 Nenhum KPI deve ser considerado pronto para implementação somente porque seu nome foi citado em uma tabela, mockup ou conversa.
+
+Os campos abaixo constituem um **envelope mínimo cross-domain**. Eles não substituem contratos canônicos especializados. Quando um KPI pertencer a um domínio que possua contrato próprio, o KPI deverá satisfazer **cumulativamente** este envelope e o contrato de domínio aplicável.
+
+Regra de composição:
+
+```text
+CROSS-DOMAIN MINIMUM
++ APPLICABLE DOMAIN CONTRACT
+= REQUIRED CONTRACT FOR READINESS
+
+ECONOMIC KPI
+→ MUST COMPOSE WITH GEM-009-MEASUREMENT-CONTRACT-001
+→ GEM-009 RETAINS ITS OWN STATUS / MATURITY / AUTHORITY
+
+MINIMUM ENVELOPE ALONE
+≠ SUFFICIENT WHEN A DOMAIN CONTRACT APPLIES
+```
+
+Para indicadores econômicos — incluindo vendas de planos, vendas de oportunidades, receita, sustentabilidade econômica ou métricas equivalentes — `GEM-009-MEASUREMENT-CONTRACT-001` deve ser identificado e composto na versão/status aplicável. Este master não promove `GEM-009-MEASUREMENT-CONTRACT-001` além de seu próprio estado documental.
 
 Cada KPI deverá possuir, no mínimo:
 
@@ -238,27 +338,45 @@ Cada KPI deverá possuir, no mínimo:
 | KPI ID | obrigatória | identificador estável |
 | Nome | obrigatória | nome humano do indicador |
 | Pergunta que responde | obrigatória | decisão/compreensão suportada |
+| Família / tipo | obrigatória | classificação do indicador |
 | Dashboard consumidor | obrigatória | superfície onde aparece |
 | Público autorizado | obrigatória | quem pode consumir |
 | Entidade / população | obrigatória | universo medido |
+| Unidade de análise | obrigatória | entidade/evento elementar calculado |
 | Fórmula | obrigatória | definição matemática/lógica |
 | Numerador | quando aplicável | componente superior |
 | Denominador | quando aplicável | base da razão/taxa |
 | Unidade | obrigatória | número, %, R$, tempo, índice etc. |
+| Direcionalidade | obrigatória quando aplicável | maior/melhor, menor/melhor, faixa, contextual ou guardrail |
+| Exclusões | obrigatória | o que explicitamente não entra no cálculo |
 | Janela temporal | obrigatória | período de observação |
+| Base de comparação | quando aplicável | baseline/período/grupo de referência |
 | Granularidade | obrigatória | pessoa, evento, dia, mês, população etc. |
-| Dimensões | quando aplicável | cortes analíticos permitidos |
+| Dimensões / segmentos | quando aplicável | cortes analíticos permitidos |
 | Filtros | quando aplicável | filtros autorizados |
-| Fonte de verdade | obrigatória | origem autorizada do dado |
+| Fonte de verdade / fontes | obrigatória | origem autorizada do dado |
+| Natureza da evidência | obrigatória | direta, declarada, derivada, estimada, proxy, modelada etc. |
 | Freshness / atualização | obrigatória | frequência e atraso aceitável |
-| Sensibilidade | obrigatória | classificação de proteção |
+| Quality checks | obrigatória | verificações mínimas de qualidade |
+| Sensibilidade / access class | obrigatória | classificação de proteção e acesso |
+| Accountable owner | obrigatória antes de operação | responsável pelo significado/uso |
+| Calculation owner | obrigatória antes de operação | responsável pelo cálculo |
+| Review cadence | quando aplicável | cadência de revisão do indicador |
+| Retention rule | quando aplicável | retenção pertinente |
+| Change log | obrigatória quando operacional | rastreabilidade de alterações |
 | Regra de agregação | quando aplicável | como compor populações |
 | Threshold de proteção | quando aplicável | mínimo para exposição agregada |
 | Tratamento de nulos | obrigatória | regra de ausência de dado |
 | Proveniência | obrigatória | origem e transformação |
+| Claims suportados | obrigatória | interpretações permitidas |
+| Claims proibidos | obrigatória | interpretações que o KPI não sustenta |
+| Confounders | quando aplicável | fatores que podem distorcer a leitura |
+| Incerteza | obrigatória quando material | limites/intervalos/qualificação |
+| Validações aplicáveis | obrigatória | conceptual, data, financial, accounting, legal/privacy/security conforme domínio |
 | Visualização | obrigatória antes do handoff | forma esperada de exibição |
 | Critério de aceite | obrigatória | condição objetiva de validação |
-| Status | obrigatória | draft / approved / deprecated etc. |
+| Status | obrigatória | proposed / defined / source_pending / approved-equivalent conforme autoridade aplicável |
+| Contrato(s) de domínio aplicável(is) | obrigatória | autoridades especializadas que devem ser compostas |
 
 Exemplo de lacuna que deve bloquear implementação:
 
@@ -272,6 +390,17 @@ Exemplo de lacuna que deve bloquear implementação:
 
 RESULTADO
 → NÃO IMPLEMENTAR COMO KPI CANÔNICO
+```
+
+Exemplo econômico:
+
+```text
+"VENDAS DE PLANOS"
+→ NOME PRESENTE NO INVENTÁRIO CANDIDATO
+→ GEM-009-MEASUREMENT-CONTRACT-001 APLICÁVEL
+
+SE directionality / exclusions / owners / claims / confounders / uncertainty / validation states NÃO ESTÃO RESOLVIDOS
+→ KPI NÃO ESTÁ READY
 ```
 
 ---
@@ -331,7 +460,7 @@ Quanto maior o impacto potencial de uma leitura, recomendação, score, tendênc
 
 ## 7. Mapa de ferramentas — leitura governada da tabela de arquitetura
 
-Este quadro preserva os papéis indicados na tabela de entrada sem promovê-los indevidamente a implementação comprovada.
+Este quadro preserva os papéis indicados na tabela de entrada **como input não canônico de arquitetura**, sem promovê-los indevidamente a implementação comprovada ou decisão final de stack.
 
 | Ferramenta / família | Papel indicado | Estado governado neste master |
 |---|---|---|
@@ -376,14 +505,15 @@ Quando a etapa de construção for explicitamente autorizada, o pacote entregue 
 
 1. este Documento Mestre na versão vigente;
 2. contratos aprovados dos KPIs que serão materializados;
-3. contrato de dados ou interface autorizada para cada indicador;
-4. regras de autenticação, autorização e perfis de acesso;
-5. regras de privacidade, agregação e disclosure;
-6. Design System e especificações visuais aprovadas quando disponíveis;
-7. estados vazios, loading, erro, indisponibilidade e dado insuficiente;
-8. critérios objetivos de aceite;
-9. indicação clara de dados mock versus dados reais;
-10. registro da versão da especificação usada na construção.
+3. contratos canônicos de domínio aplicáveis a cada KPI;
+4. contrato de dados ou interface autorizada para cada indicador;
+5. regras de autenticação, autorização e perfis de acesso;
+6. regras de privacidade, agregação e disclosure;
+7. Design System e especificações visuais aprovadas quando disponíveis;
+8. estados vazios, loading, erro, indisponibilidade e dado insuficiente;
+9. critérios objetivos de aceite;
+10. indicação clara de dados mock versus dados reais;
+11. registro da versão da especificação usada na construção.
 
 ### 8.1 Instrução de construção
 
@@ -391,6 +521,7 @@ A ferramenta de construção deverá obedecer:
 
 ```text
 SE KPI ESTÁ COMPLETO E APROVADO
++ CONTRATOS DE DOMÍNIO APLICÁVEIS ESTÃO SATISFEITOS
 → implementar conforme contrato
 
 SE FÓRMULA ESTÁ AUSENTE
@@ -403,6 +534,13 @@ SE SOURCE OF TRUTH ESTÁ AUSENTE
 
 SE AUTORIDADE DE ACESSO ESTÁ AUSENTE
 → não expor o dado
+
+SE ESCOPO DE DASHBOARD É APENAS CANDIDATO / UNAPPROVED
+→ não tratar como escopo de produto aprovado
+
+SE CONTRATO CANÔNICO DE DOMÍNIO APLICÁVEL NÃO ESTÁ SATISFEITO
+→ marcar como BLOCKED / TBD
+→ não declarar KPI READY
 
 SE APENAS MOCK DATA ESTÁ AUTORIZADO
 → manter separação explícita entre mock e integração real
@@ -446,21 +584,42 @@ Um KPI somente deve avançar para implementação quando:
 ```text
 [ ] KPI ID definido
 [ ] pergunta de negócio/compreensão definida
-[ ] população definida
+[ ] família / tipo definido
+[ ] população e unidade de análise definidas
 [ ] fórmula definida
+[ ] numerador / denominador definidos quando aplicáveis
 [ ] unidade definida
+[ ] direcionalidade definida quando aplicável
+[ ] exclusões explicitadas
 [ ] janela temporal definida
+[ ] base de comparação definida quando aplicável
 [ ] granularidade definida
-[ ] source of truth definida e autorizada
+[ ] source of truth / fontes definidas e autorizadas
+[ ] natureza da evidência definida
 [ ] regra de freshness definida
-[ ] sensibilidade classificada
+[ ] quality checks definidos
+[ ] sensibilidade / access class classificada
 [ ] público autorizado definido
+[ ] accountable owner definido
+[ ] calculation owner definido
 [ ] regras de agregação/disclosure definidas
+[ ] tratamento de nulos definido
+[ ] proveniência definida
+[ ] supported claims definidos
+[ ] prohibited claims definidos
+[ ] confounders registrados quando aplicáveis
+[ ] incerteza qualificada quando material
+[ ] contrato(s) canônico(s) de domínio aplicável(is) identificado(s)
+[ ] requisitos do(s) contrato(s) de domínio aplicável(is) satisfeitos no seu próprio estado de governança
+[ ] validações aplicáveis registradas (conceptual / data / financial / accounting / legal-privacy-security conforme domínio)
 [ ] visualização aprovada ou suficientemente especificada
 [ ] estados de exceção definidos
 [ ] critérios de aceite definidos
+[ ] superfície consumidora adjudicada / aprovada para o escopo em questão
 [ ] implementação explicitamente autorizada pelo gate aplicável
 ```
+
+Para KPI econômico, a checklist acima **não está completa** sem a composição aplicável com `GEM-009-MEASUREMENT-CONTRACT-001`.
 
 Falha em qualquer item material mantém o KPI em especificação, não em implementação canônica.
 
@@ -468,10 +627,11 @@ Falha em qualquer item material mantém o KPI em especificação, não em implem
 
 ## 11. Próximas especificações necessárias
 
-Este master cria a estrutura, mas não substitui o trabalho de definição métrica.
+Este master cria a estrutura, mas não substitui o trabalho de definição métrica nem a adjudicação das superfícies candidatas.
 
 Próximas famílias possíveis, somente quando individualmente autorizadas e materialmente necessárias:
 
+- adjudicação de cada dashboard candidato por sua autoridade de domínio;
 - catálogo/registry de KPIs;
 - contratos específicos dos KPIs do Dashboard Guivos;
 - contratos específicos dos KPIs do Guivos Business;
@@ -491,34 +651,51 @@ A existência desta lista **não materializa nem autoriza automaticamente** novo
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.1.0
+→ v0.1.1
 → ACTIVE
 → GOVERNED PRE-IMPLEMENTATION MASTER SPECIFICATION
 
+SOURCE TABLE / ARCHITECTURE INPUT
+→ WORKING PROVENANCE ONLY
+→ NOT CANONICAL AUTHORITY
+
 DASHBOARD GUIVOS
-→ INITIAL SCOPE IDENTIFIED
+→ CANDIDATE SCOPE CAPTURED
+→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
 
 DASHBOARD GUIVOS BUSINESS
-→ INITIAL SCOPE IDENTIFIED
+→ CANDIDATE SCOPE CAPTURED
+→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
 
 DASHBOARD ORGANIZAÇÕES
-→ INITIAL SCOPE IDENTIFIED
+→ CANDIDATE SCOPE CAPTURED
+→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
+→ CURRENT O/C AUTHORITY STILL SAYS DASHBOARD DA ORGANIZAÇÃO = NÃO DEFINIDO
 
 DASHBOARD COLETIVOS
-→ INITIAL SCOPE IDENTIFIED
+→ CANDIDATE SCOPE CAPTURED
+→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
+→ DOES NOT MATERIALIZE AUTHENTICATED COLLECTIVE HOME
 
 DASHBOARD PESSOA
-→ INITIAL SCOPE IDENTIFIED
+→ CANDIDATE SCOPE CAPTURED
+→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
 
 ADS / OPPORTUNITY BOOST ANALYTICS
-→ NEED IDENTIFIED
+→ CANDIDATE NEED CAPTURED
+→ UNAPPROVED
 → DETAILED SCOPE / KPIs / TOOLING TO DEFINE
 
 REPLIT HANDOFF STRUCTURE
-→ DEFINED
+→ DEFINED AS PRE-IMPLEMENTATION STRUCTURE
 
 KPI CONTRACT TEMPLATE
-→ DEFINED
+→ CROSS-DOMAIN MINIMUM ENVELOPE
+→ MUST COMPOSE WITH APPLICABLE DOMAIN CONTRACTS
+
+ECONOMIC KPIs
+→ MUST COMPOSE WITH GEM-009-MEASUREMENT-CONTRACT-001 WHEN APPLICABLE
+→ THIS MASTER DOES NOT PROMOTE GEM-009 STATUS / MATURITY
 
 KPI FORMULAS
 → NOT DEFINED BY INFERENCE
