@@ -1,0 +1,3994 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
+      
+      
+        <meta name="author" content="Guivos">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>PER-002 — Entrega High-Fidelity de Design - Guivos Knowledge Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <style>
+    /*
+      A navegação pública do GKR é organizada por grandes assuntos.
+      Somente o primeiro nível recebe maior hierarquia tipográfica;
+      documentos e subgrupos permanecem visualmente secundários.
+    */
+    .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+    .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-top: 0.35rem;
+    }
+
+    .md-nav--primary > .md-nav__list > .md-nav__item--section + .md-nav__item--section {
+      margin-top: 0.2rem;
+    }
+
+    .gkr-page-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 1rem;
+    }
+
+    .gkr-page-print {
+      cursor: pointer;
+    }
+
+    @media print {
+      .gkr-page-actions,
+      .md-header,
+      .md-tabs,
+      .md-sidebar,
+      .md-footer,
+      .md-top,
+      .md-dialog,
+      .md-content__button {
+        display: none !important;
+      }
+
+      .md-main__inner,
+      .md-content,
+      .md-content__inner {
+        margin: 0 !important;
+        max-width: none !important;
+      }
+    }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#per-002-entrega-high-fidelity-de-design" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PER-002 — Entrega High-Fidelity de Design
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guivos Knowledge Repository
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comece por aqui
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Comece por aqui
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/guia-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--public-canon"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/current-state-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estado Atual do Repositório
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação e Marca
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundação e Marca
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos da Guivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../christian-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamento Cristão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolution-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolução do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-and-digital-assets-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Naming e Ativos Digitais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-public-authority-and-founder-role/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Fundador e Autoridade Pública
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Participantes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Participantes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/person/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/collective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coletivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-current-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Estado Atual
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Produtos e Economia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Produtos e Economia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Econômico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estratégia de Negócio
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiência e Journey
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiência e Journey
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura da Experiência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornadas Integradas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Principal / Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-organizations-collectives-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home de Organizações e Coletivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-specialized-homes-reconciliation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes dos Produtos Especializados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research e Validação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research e Validação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pesquisa do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-002/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Possibilidades, Oportunidades e Supply
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dados, Intelligence e Tecnologia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dados, Intelligence e Tecnologia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Corporativa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intelligence e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboards-kpis-analytics-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboards, KPIs e Analytics
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-007-neo4j-primary-graph-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tecnologia de Grafo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jurídico, Privacidade e Institucional
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jurídico, Privacidade e Institucional
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/institutional-and-legal-architecture-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Institucional e Jurídica
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/operational-privacy-and-legal-truth-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacidade e Verdade Operacional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/fundacao-guivos-institutional-concept-and-legal-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação Guivos — Conceito e Estado Jurídico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/trademark-brazil-signature-filing-authorization-package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proteção Marcária — Autorização de Filing
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GTM e Internacionalização
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GTM e Internacionalização
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go-to-Market
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-007-internationalization-and-territorial-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Internacionalização e Governança Territorial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-008-portugal-pilot-readiness-gates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Piloto Portugal — Gates de Prontidão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/international-operations-and-cross-border-readiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operações Internacionais e Cross-Border
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governança do GKR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governança do GKR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/gkr-full-corpus-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auditoria Integral do Corpus
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-audit-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framework de Auditoria Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Consolidação do Conhecimento Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-001-gkr-as-source-of-truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKR como Fonte Única da Verdade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-006-guivos-knowledge-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Conhecimento da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualizar / Imprimir GKR Completo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade-da-entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade da entrega
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-boundary-preservado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Boundary preservado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-direcao-visual-consumida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Direção visual consumida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-design-system-local-da-entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Design System local da entrega
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Design System local da entrega">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-cores-locais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Cores locais
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-tipografia-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Tipografia local
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-escala-espacial-e-geometria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Escala espacial e geometria
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-estrutura-responsiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Estrutura responsiva
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-componentes-locais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Componentes locais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Componentes locais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-header-de-contexto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Header de contexto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-status-pill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Status pill
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-primary-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Primary action
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-secondary-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Secondary action
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-text-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 Text action
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-information-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 Information card
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-error-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7 Error card
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-frame-01-orientacao-protegida-pre-auth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Frame 01 — Orientação protegida / pré-auth
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Frame 01 — Orientação protegida / pré-auth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-hierarquia-high-fidelity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Hierarquia high-fidelity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-decisao-visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Decisão visual
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-frame-02-gate-de-acesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Frame 02 — Gate de acesso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Frame 02 — Gate de acesso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-hierarquia-high-fidelity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Hierarquia high-fidelity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-estados-de-campo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Estados de campo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-variante-a-sessao-ja-autenticada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Variante A — Sessão já autenticada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-variante-b-recuperacao-restricao-falha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Variante B — Recuperação / restrição / falha
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Variante B — Recuperação / restrição / falha">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-hierarquia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 Hierarquia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-guardrails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Guardrails
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-frame-03-continuacao-autenticada-controles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Frame 03 — Continuação autenticada / controles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Frame 03 — Continuação autenticada / controles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-hierarquia-high-fidelity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 Hierarquia high-fidelity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-n2-preservada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 N2 preservada
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-variante-c-sair-interromper-explorar-sem-personalizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Variante C — Sair / interromper / explorar sem personalização
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Variante C — Sair / interromper / explorar sem personalização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-hierarquia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 Hierarquia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-frame-04-handoff-ready" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Frame 04 — Handoff ready
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Frame 04 — Handoff ready">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-correcao-explicita-de-n1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 Correção explícita de N1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133-hierarquia-high-fidelity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 Hierarquia high-fidelity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#134-handoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.4 Handoff
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-sistema-de-icones-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Sistema de ícones local
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-estados-de-foco-feedback-e-erro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Estados de foco, feedback e erro
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. Estados de foco, feedback e erro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151-focus-visible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.1 Focus visible
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.2 Feedback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.3 Disabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-acessibilidade-projetada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Acessibilidade projetada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-motion-e-microinteracoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Motion e microinterações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-working-copy-e-autoridade-verbal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Working copy e autoridade verbal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-matriz-de-cobertura-high-fidelity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Matriz de cobertura high-fidelity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-criterios-que-deverao-ser-validados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Critérios que deverão ser validados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-evidencia-historica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Evidência histórica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-o-que-esta-entrega-nao-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. O que esta entrega não é
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-resultado-da-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Resultado da execução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-proximo-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Próximo gate
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+    <div class="gkr-page-actions">
+      <button
+        type="button"
+        class="md-button gkr-page-print"
+        onclick="window.print()"
+        aria-label="Imprimir somente este assunto"
+      >
+        Imprimir este assunto
+      </button>
+    </div>
+  
+  
+                  
+
+
+  
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/experience-architecture/per-002-high-fidelity-design-delivery.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="per-002-entrega-high-fidelity-de-design">PER-002 — Entrega High-Fidelity de Design<a class="headerlink" href="#per-002-entrega-high-fidelity-de-design" title="Permanent link">&para;</a></h1>
+<h2 id="1-finalidade-da-entrega">1. Finalidade da entrega<a class="headerlink" href="#1-finalidade-da-entrega" title="Permanent link">&para;</a></h2>
+<p>Esta entrega executa a autorização <code>GKR-UX-PER002-HIFI-AUTH-001 v1.0.0</code> e refina visualmente, em alta fidelidade de Design, a responsabilidade existente <code>PER-002 — Entrada protegida</code>.</p>
+<p>Ela consome obrigatoriamente:</p>
+<ul>
+<li>a referência low-fidelity funcionalmente validada <code>GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0</code> + <code>GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0</code>;</li>
+<li>o boundary funcional congelado em <code>GKR-UX-PER002-MAT-ELIGIBILITY-001</code>;</li>
+<li>as notas anti-regressão <code>N1</code> e <code>N2</code>;</li>
+<li>a direção institucional vigente da Home principal/Pessoa;</li>
+<li>as autoridades funcionais correntes de Experience Architecture.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>HIGH-FIDELITY DESIGN AUTHORIZATION
+→ GRANTED
+
+HIGH-FIDELITY DESIGN DELIVERY
+→ EXECUTED
+→ PER-002 ONLY
+→ EXISTING RESPONSIBILITY ONLY
+
+DELIVERY VERSION
+→ 0.1.0
+
+HIGH-FIDELITY DESIGN VALIDATION
+→ NOT_YET_PERFORMED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
+
+SOURCE LOCK
+→ NOT_CREATED
+
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
+</code></pre></div>
+<p>Esta entrega é <strong>não normativa</strong>. Ela governa a proposta visual high-fidelity submetida à validação; não substitui as autoridades funcionais textuais e não constitui UI de produção.</p>
+<h2 id="2-boundary-preservado">2. Boundary preservado<a class="headerlink" href="#2-boundary-preservado" title="Permanent link">&para;</a></h2>
+<p>A arquitetura validada permanece inalterada:</p>
+<div class="highlight"><pre><span></span><code>PER-002
+├─ FRAME 01 — ORIENTAÇÃO PROTEGIDA / PRÉ-AUTH
+├─ FRAME 02 — GATE DE ACESSO
+│  ├─ VARIANTE A — SESSÃO JÁ AUTENTICADA
+│  └─ VARIANTE B — RECUPERAÇÃO / RESTRIÇÃO / FALHA
+├─ FRAME 03 — CONTINUAÇÃO AUTENTICADA / CONTROLES
+├─ VARIANTE C — SAIR / INTERROMPER / EXPLORAR SEM PERSONALIZAÇÃO
+└─ FRAME 04 — HANDOFF READY
+                 ↓
+               TRN-002
+                 ↓
+               PER-003
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>AUTHENTICATION
+→ INTERNAL GATE / STATE WITHIN PER-002
+
+AUTHENTICATION COMPLETED
+≠ PER-002 COMPLETED
+
+LOGIN / ACCOUNT CREATION
+≠ MATERIAL PROCESSING AUTHORIZATION
+
+EXISTING-RELATIONSHIP LOGIN
+→ RESUMPTIVE PATH
+→ NOT FORCED INTO FIRST-ENTRY ONBOARDING
+
+PER-003
+→ DOWNSTREAM HANDOFF ONLY
+
+PER-008
+→ DOWNSTREAM
+
+NEW SURFACE / NEW PER-ID
+→ NOT CREATED
+</code></pre></div>
+<p>A alta fidelidade altera tratamento visual, hierarquia, componentes e working copy, mas não altera a arquitetura funcional.</p>
+<h2 id="3-direcao-visual-consumida">3. Direção visual consumida<a class="headerlink" href="#3-direcao-visual-consumida" title="Permanent link">&para;</a></h2>
+<p>A direção institucional aplicável permanece:</p>
+<blockquote>
+<p><strong>Futuro sem ficção. Tecnologia sem frieza. Sofisticação sem elitismo. Escala sem ruído. Humanidade sem clichê.</strong></p>
+</blockquote>
+<p>A tradução local para <code>PER-002</code> é:</p>
+<div class="highlight"><pre><span></span><code>CALMA
+→ espaço e baixa densidade visual
+
+CONFIANÇA
+→ hierarquia nítida + proteção explicável
+
+FUTURO
+→ geometria limpa + acento cromático contemporâneo
+
+HUMANIDADE
+→ linguagem direta + ausência de alarmismo
+
+AUTONOMIA
+→ alternativas visíveis sem punição visual
+
+PROTEÇÃO
+→ sinalização contextual sem estética de ameaça
+</code></pre></div>
+<p>A entrega evita estética de dashboard corporativo, excesso de gradientes, “cyber security”, cadeados dominantes, dramatização de risco e gamificação de consentimento.</p>
+<h2 id="4-design-system-local-da-entrega">4. Design System local da entrega<a class="headerlink" href="#4-design-system-local-da-entrega" title="Permanent link">&para;</a></h2>
+<p>Não existe inferência de Design System global da Guivos. Os tokens abaixo são <strong>locais desta entrega <code>PER-002</code></strong> e permanecem sujeitos à validação posterior.</p>
+<h3 id="41-cores-locais">4.1 Cores locais<a class="headerlink" href="#41-cores-locais" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Token local</th>
+<th>Valor</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>canvas</code></td>
+<td><code>#F7F8FC</code></td>
+<td>fundo principal</td>
+</tr>
+<tr>
+<td><code>surface</code></td>
+<td><code>#FFFFFF</code></td>
+<td>cartões, campos e superfícies elevadas</td>
+</tr>
+<tr>
+<td><code>text-primary</code></td>
+<td><code>#15161A</code></td>
+<td>títulos e texto principal</td>
+</tr>
+<tr>
+<td><code>text-secondary</code></td>
+<td><code>#626A78</code></td>
+<td>apoio e explicações</td>
+</tr>
+<tr>
+<td><code>border</code></td>
+<td><code>#E2E6EC</code></td>
+<td>divisores e contornos</td>
+</tr>
+<tr>
+<td><code>accent</code></td>
+<td><code>#5B5CE2</code></td>
+<td>CTA primário e foco de marca local</td>
+</tr>
+<tr>
+<td><code>accent-strong</code></td>
+<td><code>#4849C2</code></td>
+<td>estado pressionado/ênfase</td>
+</tr>
+<tr>
+<td><code>accent-soft</code></td>
+<td><code>#EEF0FF</code></td>
+<td>status e apoio contextual</td>
+</tr>
+<tr>
+<td><code>focus</code></td>
+<td><code>#7C83FF</code></td>
+<td>anel de foco visível</td>
+</tr>
+<tr>
+<td><code>success</code></td>
+<td><code>#177A56</code></td>
+<td>confirmação/status positivo</td>
+</tr>
+<tr>
+<td><code>success-soft</code></td>
+<td><code>#ECF8F3</code></td>
+<td>fundo de status positivo</td>
+</tr>
+<tr>
+<td><code>danger</code></td>
+<td><code>#B42318</code></td>
+<td>erro material</td>
+</tr>
+<tr>
+<td><code>danger-soft</code></td>
+<td><code>#FFF1F0</code></td>
+<td>fundo de erro</td>
+</tr>
+</tbody>
+</table>
+<p>Esses valores não constituem autoridade cromática institucional para outras superfícies.</p>
+<h3 id="42-tipografia-local">4.2 Tipografia local<a class="headerlink" href="#42-tipografia-local" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>WORKING TYPEFACE
+→ Inter
+→ fallback: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
+
+DISPLAY / H1 MOBILE
+→ 32 / 38
+→ weight 600
+
+H2
+→ 24 / 30
+→ weight 600
+
+BODY
+→ 16 / 24
+→ weight 400
+
+BODY STRONG
+→ 16 / 24
+→ weight 600
+
+LABEL
+→ 14 / 20
+→ weight 600
+
+CAPTION
+→ 13 / 18
+→ weight 500
+
+BUTTON
+→ 16 / 20
+→ weight 600
+</code></pre></div>
+<p>A tipografia é decisão local de Design para esta entrega e não substitui eventual sistema tipográfico global futuro.</p>
+<h3 id="43-escala-espacial-e-geometria">4.3 Escala espacial e geometria<a class="headerlink" href="#43-escala-espacial-e-geometria" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>BASE SPACING UNIT
+→ 4 px
+
+MOBILE PAGE PADDING
+→ 24 px
+
+SECTION GAP
+→ 24–32 px
+
+CARD PADDING
+→ 20 px
+
+FIELD HEIGHT
+→ 52 px
+
+PRIMARY BUTTON HEIGHT
+→ 52 px
+
+MINIMUM INTERACTIVE TARGET
+→ 44 × 44 px
+
+CARD RADIUS
+→ 20 px
+
+CONTROL RADIUS
+→ 14 px
+
+PILL RADIUS
+→ 999 px
+
+MAX CONTENT WIDTH DESKTOP
+→ 560 px
+</code></pre></div>
+<p>Sombras são discretas e usadas apenas quando necessárias para separar superfície de canvas:</p>
+<div class="highlight"><pre><span></span><code>shadow-soft
+→ 0 8px 30px rgba(21, 22, 26, 0.08)
+</code></pre></div>
+<h2 id="5-estrutura-responsiva">5. Estrutura responsiva<a class="headerlink" href="#5-estrutura-responsiva" title="Permanent link">&para;</a></h2>
+<p>A referência primária continua <strong>mobile-first</strong>.</p>
+<div class="highlight"><pre><span></span><code>MOBILE REFERENCE
+→ 390 × 844
+
+TABLET REFERENCE
+→ 768 px viewport
+
+DESKTOP REFERENCE
+→ 1440 px viewport
+</code></pre></div>
+<p>Comportamento:</p>
+<ul>
+<li>mobile: conteúdo em coluna única, largura total menos 24 px por lado;</li>
+<li>tablet: conteúdo centralizado, largura máxima aproximada de 560 px;</li>
+<li>desktop: conteúdo centralizado em coluna de 560 px, com canvas respirado e sem sidebar;</li>
+<li>elementos de decisão permanecem na mesma ordem semântica em todas as larguras;</li>
+<li>alternativas não são escondidas em menu secundário apenas para “limpar” a tela;</li>
+<li>nenhum breakpoint altera o boundary funcional.</li>
+</ul>
+<h2 id="6-componentes-locais">6. Componentes locais<a class="headerlink" href="#6-componentes-locais" title="Permanent link">&para;</a></h2>
+<h3 id="61-header-de-contexto">6.1 Header de contexto<a class="headerlink" href="#61-header-de-contexto" title="Permanent link">&para;</a></h3>
+<p>Composição:</p>
+<div class="highlight"><pre><span></span><code>GUIVOS
+Entrada protegida
+[ícone discreto de proteção contextual]
+</code></pre></div>
+<p>O ícone é apoio semântico, não selo de segurança comprovada.</p>
+<h3 id="62-status-pill">6.2 Status pill<a class="headerlink" href="#62-status-pill" title="Permanent link">&para;</a></h3>
+<p>Usos:</p>
+<ul>
+<li><code>Entrada protegida</code>;</li>
+<li><code>Sessão ativa</code>;</li>
+<li><code>Acesso não concluído</code> quando necessário.</li>
+</ul>
+<p>Status não deve ser comunicado somente por cor.</p>
+<h3 id="63-primary-action">6.3 Primary action<a class="headerlink" href="#63-primary-action" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>BACKGROUND
+→ accent
+
+TEXT
+→ white
+
+HEIGHT
+→ 52 px
+
+RADIUS
+→ 14 px
+
+WIDTH MOBILE
+→ 100%
+</code></pre></div>
+<p>Estados visuais projetados:</p>
+<ul>
+<li>default;</li>
+<li>hover quando aplicável;</li>
+<li>pressed;</li>
+<li>focus-visible;</li>
+<li>disabled apenas quando houver motivo funcional real;</li>
+<li>loading somente como estado visual futuro, sem comportamento implementado nesta entrega.</li>
+</ul>
+<h3 id="64-secondary-action">6.4 Secondary action<a class="headerlink" href="#64-secondary-action" title="Permanent link">&para;</a></h3>
+<p>Botão de superfície branca com borda <code>border</code>, texto <code>text-primary</code> e mesma altura do primário quando a decisão exigir peso próximo.</p>
+<h3 id="65-text-action">6.5 Text action<a class="headerlink" href="#65-text-action" title="Permanent link">&para;</a></h3>
+<p>Ações como <code>Voltar</code>, <code>Sair por agora</code>, <code>Explorar sem personalização</code> e <code>Recuperar acesso</code> usam affordance textual visível, com área interativa mínima preservada.</p>
+<h3 id="66-information-card">6.6 Information card<a class="headerlink" href="#66-information-card" title="Permanent link">&para;</a></h3>
+<p>Cartão informativo de fundo <code>accent-soft</code> ou neutro, ícone + título curto + explicação. Não utiliza checkbox para comunicar informação.</p>
+<h3 id="67-error-card">6.7 Error card<a class="headerlink" href="#67-error-card" title="Permanent link">&para;</a></h3>
+<p>Fundo <code>danger-soft</code>, texto principal neutro e detalhe/ícone de erro em <code>danger</code>. O erro explica o próximo caminho possível sem expor existência de conta ou dado sensível.</p>
+<h2 id="7-frame-01-orientacao-protegida-pre-auth">7. Frame 01 — Orientação protegida / pré-auth<a class="headerlink" href="#7-frame-01-orientacao-protegida-pre-auth" title="Permanent link">&para;</a></h2>
+<h3 id="71-objetivo">7.1 Objetivo<a class="headerlink" href="#71-objetivo" title="Permanent link">&para;</a></h3>
+<p>Deixar inequívoco que a Pessoa saiu do ambiente público, explicar o que muda e oferecer alternativas antes de solicitar autenticação.</p>
+<h3 id="72-hierarquia-high-fidelity">7.2 Hierarquia high-fidelity<a class="headerlink" href="#72-hierarquia-high-fidelity" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>HEADER
+→ GUIVOS
+→ Entrada protegida
+
+EYEBROW
+→ Antes de começar
+
+H1
+→ Saiba o que muda ao entrar.
+
+BODY
+→ Você está saindo do ambiente público e entrando em uma área protegida da Guivos. Aqui, você decide quando compartilhar informações sobre sua jornada.
+
+INFORMATION CARD
+→ Este passo não solicita seu relato pessoal.
+→ Entrar ou criar conta não autoriza análise nem personalização.
+
+SUPPORT LIST
+→ Conheça o processo antes de entrar
+→ Revise seus controles antes de compartilhar algo
+→ Volte ou explore sem personalização quando quiser
+
+PRIMARY CTA
+→ Continuar
+
+SECONDARY
+→ Como funciona
+
+ALTERNATIVES
+→ Explorar sem personalização
+→ Voltar para a Home
+</code></pre></div>
+<h3 id="73-decisao-visual">7.3 Decisão visual<a class="headerlink" href="#73-decisao-visual" title="Permanent link">&para;</a></h3>
+<ul>
+<li>H1 ocupa no máximo três linhas em 390 px;</li>
+<li>informação de proteção fica em card de baixo contraste, não banner de alerta;</li>
+<li>CTA primário aparece após o contexto, nunca antes;</li>
+<li>alternativas permanecem visíveis abaixo do CTA sem redução extrema de contraste;</li>
+<li>nenhum campo, upload, gravação ou pedido de dado pessoal aparece neste frame.</li>
+</ul>
+<h2 id="8-frame-02-gate-de-acesso">8. Frame 02 — Gate de acesso<a class="headerlink" href="#8-frame-02-gate-de-acesso" title="Permanent link">&para;</a></h2>
+<h3 id="81-objetivo">8.1 Objetivo<a class="headerlink" href="#81-objetivo" title="Permanent link">&para;</a></h3>
+<p>Permitir autenticação/criação/recuperação como gate interno de <code>PER-002</code>, sem converter credencial em autorização de processamento.</p>
+<h3 id="82-hierarquia-high-fidelity">8.2 Hierarquia high-fidelity<a class="headerlink" href="#82-hierarquia-high-fidelity" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>HEADER
+→ GUIVOS
+→ Entrada protegida
+
+EYEBROW
+→ Acesso
+
+H1
+→ Entre para continuar.
+
+BODY
+→ O acesso vincula esta etapa a você. Isso não autoriza o uso do que você vier a compartilhar.
+
+ACCESS MODE CONTROL
+→ Entrar
+→ Criar conta
+
+AUTH CONTROL SLOT 01
+→ Identificação
+
+AUTH CONTROL SLOT 02
+→ Credencial
+
+PRIMARY CTA
+→ Continuar
+
+TEXT ACTION
+→ Recuperar acesso
+
+PRIVACY NOTE
+→ O acesso não inicia análise da sua jornada.
+
+ALTERNATIVES
+→ Voltar
+→ Explorar sem personalização
+</code></pre></div>
+<p><code>Identificação</code> e <code>Credencial</code> permanecem nomes funcionais de slot. Esta entrega não define e-mail, telefone, senha, biometria, passkey, provedor externo ou tecnologia concreta de autenticação.</p>
+<h3 id="83-estados-de-campo">8.3 Estados de campo<a class="headerlink" href="#83-estados-de-campo" title="Permanent link">&para;</a></h3>
+<p>Visualmente previstos:</p>
+<div class="highlight"><pre><span></span><code>DEFAULT
+FOCUS
+FILLED
+ERROR
+DISABLED — SOMENTE SE HOUVER MOTIVO FUNCIONAL
+</code></pre></div>
+<p>Erro deve aparecer abaixo do campo ou em card contextual; cor nunca é o único sinal.</p>
+<h2 id="9-variante-a-sessao-ja-autenticada">9. Variante A — Sessão já autenticada<a class="headerlink" href="#9-variante-a-sessao-ja-autenticada" title="Permanent link">&para;</a></h2>
+<p>O Frame 02 é omitido quando a sessão válida já satisfaz legitimamente o gate.</p>
+<p>No topo do Frame 03 aparece um status discreto:</p>
+<div class="highlight"><pre><span></span><code>STATUS PILL
+→ Sessão ativa
+
+SUPPORT COPY
+→ Seu acesso já está válido. Você continua nesta entrada para revisar contexto e controles antes de qualquer compartilhamento material.
+</code></pre></div>
+<p>Não há tela de “login concluído”, celebração ou sucesso artificial.</p>
+<h2 id="10-variante-b-recuperacao-restricao-falha">10. Variante B — Recuperação / restrição / falha<a class="headerlink" href="#10-variante-b-recuperacao-restricao-falha" title="Permanent link">&para;</a></h2>
+<h3 id="101-hierarquia">10.1 Hierarquia<a class="headerlink" href="#101-hierarquia" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>EYEBROW
+→ Acesso protegido
+
+H1
+→ Não foi possível concluir o acesso.
+
+BODY
+→ Você pode tentar novamente ou escolher outro caminho. Esta tentativa não inicia sua jornada material.
+
+ERROR CARD
+→ Não conseguimos concluir esta etapa.
+→ Revise os dados ou use uma opção de recuperação disponível.
+
+PRIMARY CTA
+→ Tentar novamente
+
+SECONDARY / TEXT ACTIONS
+→ Recuperar acesso
+→ Usar outra forma de acesso, se disponível
+→ Voltar à entrada protegida
+→ Explorar sem personalização
+</code></pre></div>
+<h3 id="102-guardrails">10.2 Guardrails<a class="headerlink" href="#102-guardrails" title="Permanent link">&para;</a></h3>
+<ul>
+<li>não revelar se determinada identificação possui conta;</li>
+<li>não expor motivo sensível de restrição sem necessidade;</li>
+<li>não transformar recuperação em onboarding novo;</li>
+<li>preservar saída e alternativa sem personalização;</li>
+<li>não usar vermelho como estado dominante de toda a superfície.</li>
+</ul>
+<h2 id="11-frame-03-continuacao-autenticada-controles">11. Frame 03 — Continuação autenticada / controles<a class="headerlink" href="#11-frame-03-continuacao-autenticada-controles" title="Permanent link">&para;</a></h2>
+<h3 id="111-objetivo">11.1 Objetivo<a class="headerlink" href="#111-objetivo" title="Permanent link">&para;</a></h3>
+<p>Confirmar contexto protegido e tornar finalidades, privacidade, controles e reversibilidade compreensíveis antes do handoff.</p>
+<h3 id="112-hierarquia-high-fidelity">11.2 Hierarquia high-fidelity<a class="headerlink" href="#112-hierarquia-high-fidelity" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>HEADER
+→ GUIVOS
+→ Entrada protegida
+
+EYEBROW
+→ Seus controles
+
+H1
+→ Você continua no controle.
+
+BODY
+→ Antes de seguir, veja o que esta entrada significa — e o que ela ainda não autoriza.
+
+CONTROL CARD 01
+→ O que você compartilha
+→ Só quando você decidir.
+
+CONTROL CARD 02
+→ Como pode ser usado
+→ Cada uso relevante deverá ser explicado antes de acontecer.
+
+CONTROL CARD 03
+→ Seus controles
+→ Revisar, corrigir, limitar, retirar ou interromper quando aplicável.
+
+INFORMATION NOTE
+→ Entrar não autoriza, por si só, análise ou personalização do que você vier a compartilhar.
+
+PRIMARY CTA
+→ Continuar
+
+TEXT ACTION
+→ Ver detalhes de privacidade
+
+ALTERNATIVES
+→ Sair por agora
+→ Explorar sem personalização
+</code></pre></div>
+<h3 id="113-n2-preservada">11.3 N2 preservada<a class="headerlink" href="#113-n2-preservada" title="Permanent link">&para;</a></h3>
+<p>Não existe:</p>
+<ul>
+<li><code>Aceito tudo</code>;</li>
+<li>consentimento omnibus;</li>
+<li>checkbox pré-selecionado;</li>
+<li>autorização material antecipada;</li>
+<li>copy que converta explicação genérica em permissão futura.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>GENERIC PURPOSE EXPLANATION
+≠ FUTURE PROCESSING AUTHORIZATION
+</code></pre></div>
+<h2 id="12-variante-c-sair-interromper-explorar-sem-personalizacao">12. Variante C — Sair / interromper / explorar sem personalização<a class="headerlink" href="#12-variante-c-sair-interromper-explorar-sem-personalizacao" title="Permanent link">&para;</a></h2>
+<p>A variante é tratada como <strong>bottom sheet em mobile</strong> e <strong>dialog central em desktop</strong>, sem criar nova superfície canônica.</p>
+<h3 id="121-hierarquia">12.1 Hierarquia<a class="headerlink" href="#121-hierarquia" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>TITLE
+→ Como você quer continuar?
+
+BODY
+→ Você não precisa concluir agora.
+
+PRIMARY ALTERNATIVE
+→ Explorar sem personalização
+
+SECONDARY ALTERNATIVE
+→ Voltar para a Home
+
+TERTIARY
+→ Pausar por agora
+
+RETURN ACTION
+→ Continuar na entrada protegida
+</code></pre></div>
+<p>A ação <code>Pausar por agora</code> representa intenção de interrupção e não define persistência técnica.</p>
+<h2 id="13-frame-04-handoff-ready">13. Frame 04 — Handoff ready<a class="headerlink" href="#13-frame-04-handoff-ready" title="Permanent link">&para;</a></h2>
+<h3 id="131-objetivo">13.1 Objetivo<a class="headerlink" href="#131-objetivo" title="Permanent link">&para;</a></h3>
+<p>Mostrar que as responsabilidades de entrada foram apresentadas e que a próxima ação leva a <code>PER-003</code>, sem inferir compreensão silenciosa e sem desenhar as modalidades de <code>PER-003</code>.</p>
+<h3 id="132-correcao-explicita-de-n1">13.2 Correção explícita de N1<a class="headerlink" href="#132-correcao-explicita-de-n1" title="Permanent link">&para;</a></h3>
+<p>A working copy low-fidelity <code>ambiente protegido compreendido</code> não é promovida para high-fidelity como prova de compreensão.</p>
+<p>Ela é substituída por fatos de interface verificáveis:</p>
+<div class="highlight"><pre><span></span><code>DISPLAYED
+≠ UNDERSTOOD
+</code></pre></div>
+<h3 id="133-hierarquia-high-fidelity">13.3 Hierarquia high-fidelity<a class="headerlink" href="#133-hierarquia-high-fidelity" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>HEADER
+→ GUIVOS
+→ Entrada protegida
+
+EYEBROW
+→ Próximo passo
+
+H1
+→ Sua entrada está preparada.
+
+BODY
+→ Você já viu como esta entrada funciona e quais controles permanecem com você. O próximo passo abre a escolha de como começar.
+
+READINESS LIST
+→ Contexto da entrada apresentado
+→ Acesso concluído ou já válido
+→ Controles e alternativas apresentados
+→ Nenhum relato é solicitado nesta etapa
+
+PRIMARY CTA
+→ Escolher como quero começar
+
+TEXT ACTIONS
+→ Revisar privacidade e controles
+→ Sair por agora
+
+HANDOFF LABEL
+→ Próximo: escolha de modalidade
+</code></pre></div>
+<p><code>Sua entrada está preparada</code> significa somente que as condições de interface deste boundary foram apresentadas; não significa que a Pessoa compreendeu, consentiu com usos futuros ou concluiu <code>PER-003</code>.</p>
+<h3 id="134-handoff">13.4 Handoff<a class="headerlink" href="#134-handoff" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>PRIMARY CTA
+→ TRN-002
+→ PER-003
+
+THIS DELIVERY
+→ DOES NOT MATERIALIZE PER-003 OPTIONS
+→ DOES NOT DEFINE TEXT / VOICE / FILE / OTHER MODALITIES
+</code></pre></div>
+<h2 id="14-sistema-de-icones-local">14. Sistema de ícones local<a class="headerlink" href="#14-sistema-de-icones-local" title="Permanent link">&para;</a></h2>
+<p>A entrega utiliza ícones lineares simples, espessura visual consistente e significado sempre acompanhado por texto quando material.</p>
+<p>Famílias semânticas permitidas:</p>
+<ul>
+<li>proteção/contexto;</li>
+<li>informação;</li>
+<li>conta/acesso;</li>
+<li>recuperação;</li>
+<li>privacidade/controle;</li>
+<li>voltar/sair;</li>
+<li>confirmação factual;</li>
+<li>próximo passo.</li>
+</ul>
+<p>Ícone não pode funcionar como selo de conformidade, garantia de segurança ou prova de autorização.</p>
+<h2 id="15-estados-de-foco-feedback-e-erro">15. Estados de foco, feedback e erro<a class="headerlink" href="#15-estados-de-foco-feedback-e-erro" title="Permanent link">&para;</a></h2>
+<h3 id="151-focus-visible">15.1 Focus visible<a class="headerlink" href="#151-focus-visible" title="Permanent link">&para;</a></h3>
+<p>Todos os controles interativos recebem anel perceptível:</p>
+<div class="highlight"><pre><span></span><code>outline
+→ 3 px focus
+→ offset 2 px
+</code></pre></div>
+<h3 id="152-feedback">15.2 Feedback<a class="headerlink" href="#152-feedback" title="Permanent link">&para;</a></h3>
+<p>Feedback de ação deve ser textual + visual. Não depender exclusivamente de animação, cor, vibração ou som.</p>
+<h3 id="153-disabled">15.3 Disabled<a class="headerlink" href="#153-disabled" title="Permanent link">&para;</a></h3>
+<p>Estado disabled não é usado para coercivamente impedir saída ou alternativa. Quando possível, explicar por que uma ação primária ainda não pode prosseguir.</p>
+<h2 id="16-acessibilidade-projetada">16. Acessibilidade projetada<a class="headerlink" href="#16-acessibilidade-projetada" title="Permanent link">&para;</a></h2>
+<p>A entrega high-fidelity adota como requisitos de validação:</p>
+<ul>
+<li>contraste de texto/controle orientado a WCAG AA;</li>
+<li>foco visível;</li>
+<li>alvos interativos de pelo menos 44 × 44 px;</li>
+<li>ordem semântica equivalente à ordem visual;</li>
+<li>nenhuma informação material apenas por cor;</li>
+<li>labels persistentes para campos;</li>
+<li>mensagens de erro associáveis ao controle correspondente;</li>
+<li>escala de texto sem perda de conteúdo essencial;</li>
+<li>alternativas e saída acessíveis por teclado quando aplicável;</li>
+<li>headings hierárquicos consistentes;</li>
+<li>linguagem simples e não coerciva.</li>
+</ul>
+<p>Esses itens são <strong>requisitos de Design submetidos à validação</strong>; não constituem evidência de acessibilidade implementada ou testada em produção.</p>
+<h2 id="17-motion-e-microinteracoes">17. Motion e microinterações<a class="headerlink" href="#17-motion-e-microinteracoes" title="Permanent link">&para;</a></h2>
+<p>Nenhuma motion spec executável é autorizada nesta entrega.</p>
+<div class="highlight"><pre><span></span><code>MOTION DIRECTION
+→ QUIET / OPTIONAL / NON-BLOCKING
+
+MOTION IMPLEMENTATION
+→ NOT_AUTHORIZED
+</code></pre></div>
+<p>Se motion for proposta posteriormente, não poderá:</p>
+<ul>
+<li>retardar saída;</li>
+<li>esconder alternativa;</li>
+<li>simular segurança;</li>
+<li>criar urgência;</li>
+<li>transformar autenticação em celebração de consentimento;</li>
+<li>inferir compreensão.</li>
+</ul>
+<h2 id="18-working-copy-e-autoridade-verbal">18. Working copy e autoridade verbal<a class="headerlink" href="#18-working-copy-e-autoridade-verbal" title="Permanent link">&para;</a></h2>
+<p>A copy desta entrega é high-fidelity de Design/UX Writing em nível de proposta, mas continua não publicada.</p>
+<p>Ela preserva:</p>
+<div class="highlight"><pre><span></span><code>GUIVOS
+≠ FUNDADOR
+
+Possibility, lived.
+→ assinatura institucional
+→ não é necessária dentro de PER-002 por padrão
+
+Do possível ao vivido.
+→ NÃO utilizar em PER-002
+</code></pre></div>
+<p>A interface prioriza clareza funcional sobre repetição de assinatura de marca.</p>
+<h2 id="19-matriz-de-cobertura-high-fidelity">19. Matriz de cobertura high-fidelity<a class="headerlink" href="#19-matriz-de-cobertura-high-fidelity" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Área autorizada</th>
+<th>High-fidelity</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>orientação protegida / pré-auth</td>
+<td>materializada</td>
+<td>Frame 01</td>
+</tr>
+<tr>
+<td>autenticação quando necessária</td>
+<td>materializada</td>
+<td>Frame 02</td>
+</tr>
+<tr>
+<td>sessão já autenticada</td>
+<td>materializada</td>
+<td>Variante A</td>
+</tr>
+<tr>
+<td>continuação autenticada</td>
+<td>materializada</td>
+<td>Frame 03</td>
+</tr>
+<tr>
+<td>recuperação / restrição / falha</td>
+<td>materializada</td>
+<td>Variante B</td>
+</tr>
+<tr>
+<td>sair / interromper / alternativa</td>
+<td>materializada</td>
+<td>Variante C + ações persistentes</td>
+</tr>
+<tr>
+<td>handoff legítimo</td>
+<td>materializada</td>
+<td>Frame 04</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>HIGH-FIDELITY AUTHORIZED COVERAGE
+→ 7 / 7 MATERIALIZED
+</code></pre></div>
+<p>Cobertura não equivale a validação.</p>
+<h2 id="20-criterios-que-deverao-ser-validados">20. Critérios que deverão ser validados<a class="headerlink" href="#20-criterios-que-deverao-ser-validados" title="Permanent link">&para;</a></h2>
+<p>A validação posterior deverá verificar pelo menos:</p>
+<ol>
+<li>integridade das 7 áreas;</li>
+<li>manutenção de <code>PER-002</code> como única responsabilidade;</li>
+<li>autenticação como gate interno;</li>
+<li>ausência de inferência de consentimento/processamento;</li>
+<li>preservação de N1;</li>
+<li>preservação de N2;</li>
+<li>autonomia/reversibilidade perceptíveis;</li>
+<li><code>PER-003</code> apenas como handoff;</li>
+<li>ausência de expansão para <code>PER-008</code>;</li>
+<li>coerência entre mobile/tablet/desktop;</li>
+<li>contraste/foco/legibilidade no nível de especificação;</li>
+<li>ausência de dark patterns;</li>
+<li>ausência de restauração visual histórica;</li>
+<li>ausência de Source Lock por inferência;</li>
+<li>ausência de UXA-102/Engineering/implementação.</li>
+</ol>
+<h2 id="21-evidencia-historica">21. Evidência histórica<a class="headerlink" href="#21-evidencia-historica" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>UXA-034
+→ HISTORICAL PRODUCER REMOVED
+→ NOT RESTORED
+→ NOT COPIED AS CURRENT APPEARANCE
+
+UXA-035
+→ MAY INFORM FUNCTIONAL / ANTI-REGRESSION VALIDATION
+→ DOES NOT DEFINE CURRENT APPEARANCE
+</code></pre></div>
+<p>Nenhum SVG histórico foi restaurado.</p>
+<h2 id="22-o-que-esta-entrega-nao-e">22. O que esta entrega não é<a class="headerlink" href="#22-o-que-esta-entrega-nao-e" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>HIGH-FIDELITY DELIVERY
+≠ FUNCTIONAL / VISUAL VALIDATION
+≠ PRODUCTION UI
+≠ INTERACTIVE PROTOTYPE
+≠ SOURCE LOCK
+≠ DESIGN SYSTEM GLOBAL
+≠ IMPLEMENTATION
+≠ OPERATION
+</code></pre></div>
+<p>Esta entrega não autoriza:</p>
+<ul>
+<li>nova superfície ou novo <code>PER-ID</code>;</li>
+<li>materialização detalhada de <code>PER-003</code>;</li>
+<li>materialização de <code>PER-008</code>;</li>
+<li>Design das Homes;</li>
+<li>protótipo interativo;</li>
+<li>Source Lock visual;</li>
+<li><code>UXA-102/V5</code>;</li>
+<li>Product Engineering;</li>
+<li>implementação;</li>
+<li>produção;</li>
+<li>merge da PR #363.</li>
+</ul>
+<h2 id="23-resultado-da-execucao">23. Resultado da execução<a class="headerlink" href="#23-resultado-da-execucao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>PER-002 HIGH-FIDELITY DESIGN EXECUTION
+→ EXECUTED
+
+DELIVERY
+→ GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0
+
+COMPOSITION
+→ 4 PRIMARY FRAMES + 3 VARIANTS
+
+HIGH-FIDELITY COVERAGE
+→ 7 / 7 MATERIALIZED
+
+LOCAL VISUAL TOKENS
+→ DEFINED FOR THIS DELIVERY
+→ NOT GLOBAL BRAND / DESIGN SYSTEM AUTHORITY
+
+N1
+→ PRESERVED / EXPLICITLY REFORMULATED IN FRAME 04
+
+N2
+→ PRESERVED
+
+HIGH-FIDELITY DESIGN VALIDATION
+→ NOT_STARTED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
+
+SOURCE LOCK
+→ NOT_CREATED
+
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01
+
+IMPLEMENTATION / PRODUCTION
+→ NOT_AUTHORIZED
+
+PR #363 MERGE
+→ NOT_AUTHORIZED
+</code></pre></div>
+<h2 id="24-proximo-gate">24. Próximo gate<a class="headerlink" href="#24-proximo-gate" title="Permanent link">&para;</a></h2>
+<p>O próximo ato legítimo é uma <strong>validação governada da entrega high-fidelity de <code>PER-002</code></strong>.</p>
+<div class="highlight"><pre><span></span><code>NEXT
+→ PER-002 HIGH-FIDELITY DESIGN VALIDATION
+
+VALIDATION TARGET
+→ GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0
+
+MUST CHECK
+→ FUNCTIONAL BOUNDARY
+→ 7 / 7 COVERAGE
+→ N1 / N2
+→ VISUAL HIERARCHY
+→ ACCESSIBILITY SPECIFICATION
+→ AUTONOMY / REVERSIBILITY
+→ NO DARK PATTERN
+→ NO DOWNSTREAM EXPANSION
+
+DO NOT YET
+→ CREATE PROTOTYPE
+→ CREATE SOURCE LOCK BY INFERENCE
+→ START UXA-102/V5
+→ RESUME PRODUCT ENGINEERING
+→ IMPLEMENT
+→ MERGE PR #363
+</code></pre></div>
+<p>A validação high-fidelity deverá ser um ato separado. Esta entrega encerra somente a execução autorizada de Design.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>

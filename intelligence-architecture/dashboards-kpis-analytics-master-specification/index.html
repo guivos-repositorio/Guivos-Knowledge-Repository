@@ -1,0 +1,2324 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Base oficial de conhecimento e arquitetura da Guivos" name="description"/>
+<meta content="Guivos" name="author"/>
+<link href="../" rel="prev"/>
+<link href="../../adr/ADR-007-neo4j-primary-graph-reference/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.7" name="generator"/>
+<title>Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção - Guivos Knowledge Repository</title>
+<link href="../../assets/stylesheets/main.ec1eaa64.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../css/print-site.css" rel="stylesheet"/>
+<link href="../../css/print-site-material.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<style>
+    /*
+      A navegação pública do GKR é organizada por grandes assuntos.
+      Somente o primeiro nível recebe maior hierarquia tipográfica;
+      documentos e subgrupos permanecem visualmente secundários.
+    */
+    .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+    .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-top: 0.35rem;
+    }
+
+    .md-nav--primary > .md-nav__list > .md-nav__item--section + .md-nav__item--section {
+      margin-top: 0.2rem;
+    }
+
+    .gkr-page-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 1rem;
+    }
+
+    .gkr-page-print {
+      cursor: pointer;
+    }
+
+    @media print {
+      .gkr-page-actions,
+      .md-header,
+      .md-tabs,
+      .md-sidebar,
+      .md-footer,
+      .md-top,
+      .md-dialog,
+      .md-content__button {
+        display: none !important;
+      }
+
+      .md-main__inner,
+      .md-content,
+      .md-content__inner {
+        margin: 0 !important;
+        max-width: none !important;
+      }
+    }
+  </style>
+</head>
+<body data-md-color-accent="blue" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#dashboards-kpis-e-analytics-documento-mestre-de-especificacao-para-construcao">
+          Pular para conteúdo
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Cabeçalho" class="md-header__inner md-grid">
+<a aria-label="Guivos Knowledge Repository" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Guivos Knowledge Repository">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-hidden="true" class="md-option" data-md-color-accent="blue" data-md-color-media="" data-md-color-primary="black" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Buscar" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Buscar" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Pesquisar" class="md-search__options">
+<button aria-label="Limpar" class="md-search__icon md-icon" tabindex="-1" title="Limpar" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navegação" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Guivos Knowledge Repository" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Guivos Knowledge Repository">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    Guivos Knowledge Repository
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Comece por aqui
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Comece por aqui
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../public/guia-oficial-da-guivos/">
+<span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+<span class="md-status md-status--public-canon"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/current-state-register/">
+<span class="md-ellipsis">
+    
+  
+    Estado Atual do Repositório
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../roadmap/">
+<span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../glossary/">
+<span class="md-ellipsis">
+    
+  
+    Glossário
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Fundação e Marca
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundação e Marca
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/">
+<span class="md-ellipsis">
+    
+  
+    Fundamentos da Guivos
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../christian-foundation/">
+<span class="md-ellipsis">
+    
+  
+    Fundamento Cristão
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../evolution-framework/">
+<span class="md-ellipsis">
+    
+  
+    Evolução do Ecossistema
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/brand-and-digital-assets-index/">
+<span class="md-ellipsis">
+    
+  
+    Marca, Naming e Ativos Digitais
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/brand-public-authority-and-founder-role/">
+<span class="md-ellipsis">
+    
+  
+    Marca, Fundador e Autoridade Pública
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Participantes
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Participantes
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../journeys/person/">
+<span class="md-ellipsis">
+    
+  
+    Pessoa
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../journeys/organization/">
+<span class="md-ellipsis">
+    
+  
+    Organização
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../journeys/collective/">
+<span class="md-ellipsis">
+    
+  
+    Coletivo
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../experience-architecture/organizations-collectives-current-state/">
+<span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Estado Atual
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Produtos e Economia
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Produtos e Economia
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../product-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../economic-model/">
+<span class="md-ellipsis">
+    
+  
+    Modelo Econômico
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Estratégia de Negócio
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Experiência e Journey
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiência e Journey
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../experience-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Arquitetura da Experiência
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../journeys/">
+<span class="md-ellipsis">
+    
+  
+    Jornadas Integradas
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../experience-architecture/public-home-master-document/">
+<span class="md-ellipsis">
+    
+  
+    Home Principal / Pessoa
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../experience-architecture/public-home-organizations-collectives-master-document/">
+<span class="md-ellipsis">
+    
+  
+    Home de Organizações e Coletivos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../experience-architecture/public-specialized-homes-reconciliation/">
+<span class="md-ellipsis">
+    
+  
+    Homes dos Produtos Especializados
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Research e Validação
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Research e Validação
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/">
+<span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/market-validation/">
+<span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/">
+<span class="md-ellipsis">
+    
+  
+    Pesquisa do Ecossistema
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-002/">
+<span class="md-ellipsis">
+    
+  
+    Possibilidades, Oportunidades e Supply
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Dados, Intelligence e Tecnologia
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Dados, Intelligence e Tecnologia
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../enterprise-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Arquitetura Corporativa
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    
+  
+    Intelligence e IA
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    Dashboards, KPIs e Analytics
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    
+  
+    Dashboards, KPIs e Analytics
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-finalidade">
+<span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-estado-e-limite-desta-especificacao">
+<span class="md-ellipsis">
+      
+        2. Estado e limite desta especificação
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-principio-arquitetural">
+<span class="md-ellipsis">
+      
+        3. Princípio arquitetural
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-inventario-candidato-inicial-de-dashboards">
+<span class="md-ellipsis">
+      
+        4. Inventário candidato inicial de dashboards
+      
+    </span>
+</a>
+<nav aria-label="4. Inventário candidato inicial de dashboards" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#41-dashboard-guivos">
+<span class="md-ellipsis">
+      
+        4.1 Dashboard Guivos
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42-dashboard-guivos-business">
+<span class="md-ellipsis">
+      
+        4.2 Dashboard Guivos Business
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#43-dashboard-organizacoes">
+<span class="md-ellipsis">
+      
+        4.3 Dashboard Organizações
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#44-dashboard-coletivos">
+<span class="md-ellipsis">
+      
+        4.4 Dashboard Coletivos
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#45-dashboard-pessoa">
+<span class="md-ellipsis">
+      
+        4.5 Dashboard Pessoa
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#46-ads-opportunity-boost-analytics">
+<span class="md-ellipsis">
+      
+        4.6 Ads / Opportunity Boost Analytics
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-envelope-minimo-transversal-do-contrato-de-kpi">
+<span class="md-ellipsis">
+      
+        5. Envelope mínimo transversal do contrato de KPI
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-requisitos-transversais-dos-dashboards">
+<span class="md-ellipsis">
+      
+        6. Requisitos transversais dos dashboards
+      
+    </span>
+</a>
+<nav aria-label="6. Requisitos transversais dos dashboards" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#61-temporalidade">
+<span class="md-ellipsis">
+      
+        6.1 Temporalidade
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#62-granularidade">
+<span class="md-ellipsis">
+      
+        6.2 Granularidade
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#63-proveniencia">
+<span class="md-ellipsis">
+      
+        6.3 Proveniência
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#64-privacidade-e-disclosure">
+<span class="md-ellipsis">
+      
+        6.4 Privacidade e disclosure
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#65-explicabilidade">
+<span class="md-ellipsis">
+      
+        6.5 Explicabilidade
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7-mapa-de-ferramentas-leitura-governada-da-tabela-de-arquitetura">
+<span class="md-ellipsis">
+      
+        7. Mapa de ferramentas — leitura governada da tabela de arquitetura
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#8-pacote-de-handoff-para-replit">
+<span class="md-ellipsis">
+      
+        8. Pacote de handoff para Replit
+      
+    </span>
+</a>
+<nav aria-label="8. Pacote de handoff para Replit" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81-instrucao-de-construcao">
+<span class="md-ellipsis">
+      
+        8.1 Instrução de construção
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#9-arquitetura-logica-de-consumo">
+<span class="md-ellipsis">
+      
+        9. Arquitetura lógica de consumo
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#10-definition-of-ready-para-materializacao-de-um-kpi">
+<span class="md-ellipsis">
+      
+        10. Definition of Ready para materialização de um KPI
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-proximas-especificacoes-necessarias">
+<span class="md-ellipsis">
+      
+        11. Próximas especificações necessárias
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12-estado-final-desta-versao">
+<span class="md-ellipsis">
+      
+        12. Estado final desta versão
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-007-neo4j-primary-graph-reference/">
+<span class="md-ellipsis">
+    
+  
+    Tecnologia de Grafo
+  
+
+    
+  </span>
+<span class="md-status md-status--approved"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Jurídico, Privacidade e Institucional
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Jurídico, Privacidade e Institucional
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/institutional-and-legal-architecture-index/">
+<span class="md-ellipsis">
+    
+  
+    Arquitetura Institucional e Jurídica
+  
+
+    
+  </span>
+<span class="md-status md-status--proposed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/operational-privacy-and-legal-truth-index/">
+<span class="md-ellipsis">
+    
+  
+    Privacidade e Verdade Operacional
+  
+
+    
+  </span>
+<span class="md-status md-status--proposed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/fundacao-guivos-institutional-concept-and-legal-status/">
+<span class="md-ellipsis">
+    
+  
+    Fundação Guivos — Conceito e Estado Jurídico
+  
+
+    
+  </span>
+<span class="md-status md-status--proposed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/trademark-brazil-signature-filing-authorization-package/">
+<span class="md-ellipsis">
+    
+  
+    Proteção Marcária — Autorização de Filing
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    GTM e Internacionalização
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    GTM e Internacionalização
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../go-to-market/">
+<span class="md-ellipsis">
+    
+  
+    Go-to-Market
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../go-to-market/gtm-007-internationalization-and-territorial-governance/">
+<span class="md-ellipsis">
+    
+  
+    Internacionalização e Governança Territorial
+  
+
+    
+  </span>
+<span class="md-status md-status--proposed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../go-to-market/gtm-008-portugal-pilot-readiness-gates/">
+<span class="md-ellipsis">
+    
+  
+    Piloto Portugal — Gates de Prontidão
+  
+
+    
+  </span>
+<span class="md-status md-status--proposed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/international-operations-and-cross-border-readiness/">
+<span class="md-ellipsis">
+    
+  
+    Operações Internacionais e Cross-Border
+  
+
+    
+  </span>
+<span class="md-status md-status--proposed"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Governança do GKR
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Governança do GKR
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/gkr-full-corpus-audit/">
+<span class="md-ellipsis">
+    
+  
+    Auditoria Integral do Corpus
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/architectural-audit-framework/">
+<span class="md-ellipsis">
+    
+  
+    Framework de Auditoria Arquitetural
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/architectural-knowledge-consolidation-pipeline/">
+<span class="md-ellipsis">
+    
+  
+    Consolidação do Conhecimento Arquitetural
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-001-gkr-as-source-of-truth/">
+<span class="md-ellipsis">
+    
+  
+    GKR como Fonte Única da Verdade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-006-guivos-knowledge-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Arquitetura de Conhecimento da Guivos
+  
+
+    
+  </span>
+<span class="md-status md-status--approved"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../print_page/">
+<span class="md-ellipsis">
+    
+  
+    Visualizar / Imprimir GKR Completo
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-finalidade">
+<span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-estado-e-limite-desta-especificacao">
+<span class="md-ellipsis">
+      
+        2. Estado e limite desta especificação
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-principio-arquitetural">
+<span class="md-ellipsis">
+      
+        3. Princípio arquitetural
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-inventario-candidato-inicial-de-dashboards">
+<span class="md-ellipsis">
+      
+        4. Inventário candidato inicial de dashboards
+      
+    </span>
+</a>
+<nav aria-label="4. Inventário candidato inicial de dashboards" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#41-dashboard-guivos">
+<span class="md-ellipsis">
+      
+        4.1 Dashboard Guivos
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42-dashboard-guivos-business">
+<span class="md-ellipsis">
+      
+        4.2 Dashboard Guivos Business
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#43-dashboard-organizacoes">
+<span class="md-ellipsis">
+      
+        4.3 Dashboard Organizações
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#44-dashboard-coletivos">
+<span class="md-ellipsis">
+      
+        4.4 Dashboard Coletivos
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#45-dashboard-pessoa">
+<span class="md-ellipsis">
+      
+        4.5 Dashboard Pessoa
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#46-ads-opportunity-boost-analytics">
+<span class="md-ellipsis">
+      
+        4.6 Ads / Opportunity Boost Analytics
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-envelope-minimo-transversal-do-contrato-de-kpi">
+<span class="md-ellipsis">
+      
+        5. Envelope mínimo transversal do contrato de KPI
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-requisitos-transversais-dos-dashboards">
+<span class="md-ellipsis">
+      
+        6. Requisitos transversais dos dashboards
+      
+    </span>
+</a>
+<nav aria-label="6. Requisitos transversais dos dashboards" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#61-temporalidade">
+<span class="md-ellipsis">
+      
+        6.1 Temporalidade
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#62-granularidade">
+<span class="md-ellipsis">
+      
+        6.2 Granularidade
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#63-proveniencia">
+<span class="md-ellipsis">
+      
+        6.3 Proveniência
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#64-privacidade-e-disclosure">
+<span class="md-ellipsis">
+      
+        6.4 Privacidade e disclosure
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#65-explicabilidade">
+<span class="md-ellipsis">
+      
+        6.5 Explicabilidade
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7-mapa-de-ferramentas-leitura-governada-da-tabela-de-arquitetura">
+<span class="md-ellipsis">
+      
+        7. Mapa de ferramentas — leitura governada da tabela de arquitetura
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#8-pacote-de-handoff-para-replit">
+<span class="md-ellipsis">
+      
+        8. Pacote de handoff para Replit
+      
+    </span>
+</a>
+<nav aria-label="8. Pacote de handoff para Replit" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81-instrucao-de-construcao">
+<span class="md-ellipsis">
+      
+        8.1 Instrução de construção
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#9-arquitetura-logica-de-consumo">
+<span class="md-ellipsis">
+      
+        9. Arquitetura lógica de consumo
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#10-definition-of-ready-para-materializacao-de-um-kpi">
+<span class="md-ellipsis">
+      
+        10. Definition of Ready para materialização de um KPI
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-proximas-especificacoes-necessarias">
+<span class="md-ellipsis">
+      
+        11. Próximas especificações necessárias
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12-estado-final-desta-versao">
+<span class="md-ellipsis">
+      
+        12. Estado final desta versão
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="gkr-page-actions">
+<button aria-label="Imprimir somente este assunto" class="md-button gkr-page-print" onclick="window.print()" type="button">
+        Imprimir este assunto
+      </button>
+</div>
+<a class="md-content__button md-icon" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/intelligence-architecture/dashboards-kpis-analytics-master-specification.md" rel="edit" title="Editar esta página">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+</a>
+<h1 id="dashboards-kpis-e-analytics-documento-mestre-de-especificacao-para-construcao">Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção<a class="headerlink" href="#dashboards-kpis-e-analytics-documento-mestre-de-especificacao-para-construcao" title="Permanent link">¶</a></h1>
+<h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">¶</a></h2>
+<p>Este documento é a <strong>porta de entrada governada para a especificação de dashboards, KPIs e superfícies analíticas da Guivos</strong>.</p>
+<p>Ele existe para organizar o que deverá ser entregue futuramente a uma superfície de construção — inicialmente indicada como <strong>Replit</strong> — sem obrigar Engenharia, Design ou fornecedores a reconstruir definições a partir de conversas, tabelas isoladas ou inferências.</p>
+<p>Regra de consumo:</p>
+<blockquote>
+<p><strong>Para construir um dashboard ou KPI da Guivos, comece por este documento e pelos contratos específicos de métricas que vierem a ser aprovados. A ferramenta de construção materializa a especificação; ela não define a verdade do indicador.</strong></p>
+</blockquote>
+<p>Este master:</p>
+<ul>
+<li>registra, como <strong>input não canônico</strong>, o inventário candidato de dashboards indicado pela tabela fornecida para esta frente;</li>
+<li>classifica esses dashboards, campos e recortes como <strong>candidatos/provisórios e não aprovados</strong> até adjudicação pelas autoridades de domínio aplicáveis;</li>
+<li>define a separação entre fonte de verdade, cálculo, analytics, serving e visualização;</li>
+<li>define um envelope mínimo transversal de contrato de KPI antes de sua implementação, sem substituir contratos canônicos de domínio aplicáveis;</li>
+<li>preserva as autoridades de produto, Intelligence, Graph, Platform, Privacidade, Economia e Governança;</li>
+<li>prepara um pacote de handoff utilizável no Replit ou em outra ferramenta futura;</li>
+<li><strong>não autoriza</strong>, por si só, uso de dados reais, integração física, backend, persistência, produção ou publicação.</li>
+</ul>
+<p>A tabela recebida nesta frente é <strong>proveniência de trabalho</strong>, não autoridade canônica do GKR. Em qualquer conflito, prevalece a autoridade corrente do domínio correspondente.</p>
+<hr/>
+<h2 id="2-estado-e-limite-desta-especificacao">2. Estado e limite desta especificação<a class="headerlink" href="#2-estado-e-limite-desta-especificacao" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code>DOCUMENTO MESTRE
+→ ACTIVE
+→ PRE-IMPLEMENTATION SPECIFICATION
+→ NÃO NORMATIVO SOBRE FÓRMULAS AINDA NÃO ADJUDICADAS
+
+INVENTÁRIO DE DASHBOARDS
+→ CANDIDATE / PROVISIONAL INPUT
+→ UNAPPROVED UNTIL DOMAIN ADJUDICATION
+→ NÃO DEFINE SUPERFÍCIE, ESCOPO DE PRODUTO OU CAMPO POR INFERÊNCIA
+→ NÃO SOBRESCREVE AUTORIDADES DE ESTADO CORRENTES
+
+CONTRATOS MATEMÁTICOS DE KPIs
+→ AINDA DEVEM SER DEFINIDOS INDIVIDUALMENTE
+→ DEVEM COMPOR COM CONTRATOS CANÔNICOS DE DOMÍNIO QUANDO APLICÁVEIS
+
+REPLIT
+→ TARGET INICIAL DE MATERIALIZAÇÃO / CONSTRUÇÃO
+→ NÃO SOURCE OF TRUTH
+
+REAL DATA / REAL INTEGRATIONS / PRODUCTION
+→ NÃO AUTORIZADOS POR ESTE DOCUMENTO
+</code></pre></div>
+<p>A presença de uma ferramenta ou tecnologia neste documento indica <strong>papel pretendido, candidato ou de referência</strong>, conforme o caso. Não constitui prova de provisionamento, integração, operação ou produção.</p>
+<p>Regra de precedência adicional:</p>
+<div class="highlight"><pre><span></span><code>AUTORIDADE CORRENTE DO DOMÍNIO
+→ PREVALECE
+
+INVENTÁRIO CANDIDATO DESTE MASTER
+→ NÃO PODE PROMOVER COMO DEFINIDO O QUE A AUTORIDADE CORRENTE MANTÉM NÃO DEFINIDO
+</code></pre></div>
+<hr/>
+<h2 id="3-principio-arquitetural">3. Princípio arquitetural<a class="headerlink" href="#3-principio-arquitetural" title="Permanent link">¶</a></h2>
+<p>A cadeia de autoridade deve permanecer:</p>
+<div class="highlight"><pre><span></span><code>GKR / PRODUTO / GOVERNANÇA
+→ define significado, finalidade, autoridade e limites
+
+CONTRATO DO KPI
+→ define pergunta, fórmula, população, unidade, granularidade e fonte autorizada
+
+DADOS / GRAPH / INTELLIGENCE / ANALYTICS
+→ produzem ou disponibilizam inputs e outputs autorizados
+
+SERVING / API / DATA CONTRACT
+→ entrega o resultado na forma autorizada
+
+REPLIT / OUTRA SUPERFÍCIE
+→ materializa dashboard, componentes, filtros e visualizações
+
+USUÁRIO AUTORIZADO
+→ consome a leitura pertinente à sua autoridade
+</code></pre></div>
+<p>Invariantes:</p>
+<div class="highlight"><pre><span></span><code>DASHBOARD ≠ SOURCE OF TRUTH
+VISUALIZAÇÃO ≠ DEFINIÇÃO DO KPI
+FERRAMENTA ≠ PRODUTO
+FERRAMENTA ≠ AUTORIDADE
+OUTPUT AUTORIZADO ≠ DATASET DE ORIGEM
+AGREGADO ≠ AUTOMATICAMENTE SEGURO
+AUTORIDADE PARA PERSONALIZAR ≠ AUTORIDADE PARA COMPARTILHAR
+CORRELAÇÃO ≠ CAUSALIDADE
+INFERÊNCIA ≠ FATO
+</code></pre></div>
+<hr/>
+<h2 id="4-inventario-candidato-inicial-de-dashboards">4. Inventário candidato inicial de dashboards<a class="headerlink" href="#4-inventario-candidato-inicial-de-dashboards" title="Permanent link">¶</a></h2>
+<p>A tabela fornecida para esta frente identifica seis necessidades/superfícies candidatas de análise. Ela não possui, neste master, identificador governado próprio e <strong>não é elevada a autoridade canônica</strong>. Os itens abaixo são somente <strong>escopos candidatos de trabalho</strong>, ainda não aprovados como superfície, escopo de produto ou contrato matemático.</p>
+<p>Estado transversal desta seção:</p>
+<div class="highlight"><pre><span></span><code>SURFACES / FIELDS BELOW
+→ CANDIDATE
+→ PROVISIONAL
+→ UNAPPROVED
+→ TBD PENDING DOMAIN ADJUDICATION
+
+LISTED HERE
+≠ DEFINED
+≠ APPROVED PRODUCT SCOPE
+≠ AUTHORIZED IMPLEMENTATION
+</code></pre></div>
+<p>Quando uma autoridade corrente de domínio mantiver uma superfície como não definida, este master preserva esse estado. Em particular, <code>GKR-UX-ORGCOL-UX-STATE-001</code> estabelece que <strong>dashboard da Organização</strong>, <strong>Home autenticada da Organização</strong> e <strong>Home autenticada do Coletivo</strong> não podem ser inferidos como definidos. Este documento não altera essa conclusão.</p>
+<h3 id="41-dashboard-guivos">4.1 Dashboard Guivos<a class="headerlink" href="#41-dashboard-guivos" title="Permanent link">¶</a></h3>
+<p><strong>Finalidade candidata:</strong> visão transversal do ecossistema e da empresa Guivos.</p>
+<p>Estado:</p>
+<div class="highlight"><pre><span></span><code>CANDIDATE SCOPE
+→ UNAPPROVED
+→ TBD PENDING DOMAIN ADJUDICATION
+</code></pre></div>
+<p>Escopo candidato indicado:</p>
+<ul>
+<li>quantidade de Pessoas;</li>
+<li>quantidade de Coletivos;</li>
+<li>quantidade de Organizações;</li>
+<li>escolhas ou declarações estáticas registradas das Pessoas, quando legitimamente aplicáveis;</li>
+<li>oportunidades;</li>
+<li>dados demográficos;</li>
+<li>dados geográficos;</li>
+<li>quantidades de vendas de cada plano;</li>
+<li>cadastros ativos e inativos;</li>
+<li>demais indicadores transversais que venham a ser formalmente aprovados.</li>
+</ul>
+<p>Limite:</p>
+<blockquote>
+<p><strong>Acesso interno da Guivos não equivale a autorização irrestrita para exposição ou combinação de dados individuais.</strong></p>
+</blockquote>
+<h3 id="42-dashboard-guivos-business">4.2 Dashboard Guivos Business<a class="headerlink" href="#42-dashboard-guivos-business" title="Permanent link">¶</a></h3>
+<p><strong>Finalidade candidata:</strong> disponibilizar KPIs do Guivos Business de acordo com a população legitimamente abrangida por cada relação Business.</p>
+<p>Estado:</p>
+<div class="highlight"><pre><span></span><code>CANDIDATE SCOPE
+→ UNAPPROVED
+→ TBD PENDING BUSINESS / DATA / PRIVACY ADJUDICATION
+</code></pre></div>
+<p>Escopo candidato indicado:</p>
+<ul>
+<li>KPIs populacionais autorizados;</li>
+<li>tendências;</li>
+<li>evolução temporal;</li>
+<li>distribuições e comparações permitidas;</li>
+<li>leituras agregadas e protegidas pertinentes ao domínio Business.</li>
+</ul>
+<p>Regra estrutural:</p>
+<div class="highlight"><pre><span></span><code>BUSINESS
+→ consome leitura populacional autorizada
+→ não recebe por padrão um "Intelligence por pessoa"
+→ não herda automaticamente acesso ao contexto privado individual
+</code></pre></div>
+<h3 id="43-dashboard-organizacoes">4.3 Dashboard Organizações<a class="headerlink" href="#43-dashboard-organizacoes" title="Permanent link">¶</a></h3>
+<p><strong>Finalidade candidata:</strong> oferecer à Organização leitura quantitativa de sua atuação e da população sob autoridade aplicável.</p>
+<p>Estado governado nesta versão:</p>
+<div class="highlight"><pre><span></span><code>CANDIDATE SCOPE
+→ UNAPPROVED
+→ TBD PENDING DOMAIN ADJUDICATION
+
+CURRENT O/C AUTHORITY
+→ DASHBOARD DA ORGANIZAÇÃO = NÃO DEFINIDO
+→ ESTE MASTER NÃO ALTERA ESSE ESTADO
+</code></pre></div>
+<p>Escopo candidato indicado:</p>
+<ul>
+<li>quantidade de Pessoas relacionadas dentro do escopo autorizado;</li>
+<li>oportunidades;</li>
+<li>dados demográficos;</li>
+<li>dados geográficos;</li>
+<li>quantidade de vendas de oportunidades;</li>
+<li>cadastros ativos e inativos;</li>
+<li>evolução temporal desses indicadores quando houver contrato aprovado.</li>
+</ul>
+<h3 id="44-dashboard-coletivos">4.4 Dashboard Coletivos<a class="headerlink" href="#44-dashboard-coletivos" title="Permanent link">¶</a></h3>
+<p><strong>Finalidade candidata:</strong> oferecer ao Coletivo leitura quantitativa de sua atuação e participação.</p>
+<p>Estado:</p>
+<div class="highlight"><pre><span></span><code>CANDIDATE SCOPE
+→ UNAPPROVED
+→ TBD PENDING DOMAIN ADJUDICATION
+→ NÃO MATERIALIZA HOME AUTENTICADA DO COLETIVO
+</code></pre></div>
+<p>Escopo candidato indicado:</p>
+<ul>
+<li>quantidade de Pessoas relacionadas dentro do escopo autorizado;</li>
+<li>oportunidades;</li>
+<li>dados demográficos;</li>
+<li>dados geográficos;</li>
+<li>quantidade de vendas de oportunidades;</li>
+<li>inscrições ou participações;</li>
+<li>reputação, somente quando o conceito, cálculo e autoridade estiverem formalmente definidos;</li>
+<li>cadastros ativos e inativos;</li>
+<li>evolução temporal desses indicadores quando houver contrato aprovado.</li>
+</ul>
+<h3 id="45-dashboard-pessoa">4.5 Dashboard Pessoa<a class="headerlink" href="#45-dashboard-pessoa" title="Permanent link">¶</a></h3>
+<p><strong>Finalidade candidata:</strong> oferecer compreensão individual autorizada sobre a própria trajetória da Pessoa.</p>
+<p>Estado:</p>
+<div class="highlight"><pre><span></span><code>CANDIDATE SCOPE
+→ UNAPPROVED
+→ TBD PENDING PERSON / JOURNEY / INTELLIGENCE ADJUDICATION
+</code></pre></div>
+<p>Escopo candidato indicado:</p>
+<ul>
+<li>históricos;</li>
+<li>contextos;</li>
+<li>evolução;</li>
+<li>participações;</li>
+<li>relações e eventos pertinentes;</li>
+<li>outputs analíticos ou de Graph Analytics quando legitimamente autorizados e explicáveis.</li>
+</ul>
+<p>O dashboard da Pessoa não deve promover inferência a fato nem ocultar proveniência quando a natureza do resultado exigir explicação.</p>
+<div class="highlight"><pre><span></span><code>DECLARADO ≠ OBSERVADO ≠ CALCULADO ≠ INFERIDO ≠ PREDITO
+</code></pre></div>
+<h3 id="46-ads-opportunity-boost-analytics">4.6 Ads / Opportunity Boost Analytics<a class="headerlink" href="#46-ads-opportunity-boost-analytics" title="Permanent link">¶</a></h3>
+<p>A tabela indica uma necessidade candidata de dashboard para <strong>dados de anúncios e Opportunity Boost do anunciante</strong>, mas mantém a tecnologia correspondente como <strong>A DEFINIR</strong>.</p>
+<p>Estado:</p>
+<div class="highlight"><pre><span></span><code>NECESSIDADE ANALÍTICA CANDIDATA
+→ IDENTIFICADA COMO INPUT
+→ NÃO APROVADA COMO ESCOPO CANÔNICO
+
+ESCOPO FUNCIONAL DETALHADO
+→ A DEFINIR
+
+KPIs
+→ A DEFINIR
+
+TECNOLOGIA / SUPERFÍCIE
+→ A DEFINIR
+</code></pre></div>
+<p>Nenhum KPI, fórmula, fonte ou ferramenta deve ser inventado por inferência nesta frente.</p>
+<hr/>
+<h2 id="5-envelope-minimo-transversal-do-contrato-de-kpi">5. Envelope mínimo transversal do contrato de KPI<a class="headerlink" href="#5-envelope-minimo-transversal-do-contrato-de-kpi" title="Permanent link">¶</a></h2>
+<p>Nenhum KPI deve ser considerado pronto para implementação somente porque seu nome foi citado em uma tabela, mockup ou conversa.</p>
+<p>Os campos abaixo constituem um <strong>envelope mínimo cross-domain</strong>. Eles não substituem contratos canônicos especializados. Quando um KPI pertencer a um domínio que possua contrato próprio, o KPI deverá satisfazer <strong>cumulativamente</strong> este envelope e o contrato de domínio aplicável.</p>
+<p>Regra de composição:</p>
+<div class="highlight"><pre><span></span><code>CROSS-DOMAIN MINIMUM
++ APPLICABLE DOMAIN CONTRACT
+= REQUIRED CONTRACT FOR READINESS
+
+ECONOMIC KPI
+→ MUST COMPOSE WITH GEM-009-MEASUREMENT-CONTRACT-001
+→ GEM-009 RETAINS ITS OWN STATUS / MATURITY / AUTHORITY
+
+MINIMUM ENVELOPE ALONE
+≠ SUFFICIENT WHEN A DOMAIN CONTRACT APPLIES
+</code></pre></div>
+<p>Para indicadores econômicos — incluindo vendas de planos, vendas de oportunidades, receita, sustentabilidade econômica ou métricas equivalentes — <code>GEM-009-MEASUREMENT-CONTRACT-001</code> deve ser identificado e composto na versão/status aplicável. Este master não promove <code>GEM-009-MEASUREMENT-CONTRACT-001</code> além de seu próprio estado documental.</p>
+<p>Cada KPI deverá possuir, no mínimo:</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Obrigatoriedade</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KPI ID</td>
+<td>obrigatória</td>
+<td>identificador estável</td>
+</tr>
+<tr>
+<td>Nome</td>
+<td>obrigatória</td>
+<td>nome humano do indicador</td>
+</tr>
+<tr>
+<td>Pergunta que responde</td>
+<td>obrigatória</td>
+<td>decisão/compreensão suportada</td>
+</tr>
+<tr>
+<td>Família / tipo</td>
+<td>obrigatória</td>
+<td>classificação do indicador</td>
+</tr>
+<tr>
+<td>Dashboard consumidor</td>
+<td>obrigatória</td>
+<td>superfície onde aparece</td>
+</tr>
+<tr>
+<td>Público autorizado</td>
+<td>obrigatória</td>
+<td>quem pode consumir</td>
+</tr>
+<tr>
+<td>Entidade / população</td>
+<td>obrigatória</td>
+<td>universo medido</td>
+</tr>
+<tr>
+<td>Unidade de análise</td>
+<td>obrigatória</td>
+<td>entidade/evento elementar calculado</td>
+</tr>
+<tr>
+<td>Fórmula</td>
+<td>obrigatória</td>
+<td>definição matemática/lógica</td>
+</tr>
+<tr>
+<td>Numerador</td>
+<td>quando aplicável</td>
+<td>componente superior</td>
+</tr>
+<tr>
+<td>Denominador</td>
+<td>quando aplicável</td>
+<td>base da razão/taxa</td>
+</tr>
+<tr>
+<td>Unidade</td>
+<td>obrigatória</td>
+<td>número, %, R$, tempo, índice etc.</td>
+</tr>
+<tr>
+<td>Direcionalidade</td>
+<td>obrigatória quando aplicável</td>
+<td>maior/melhor, menor/melhor, faixa, contextual ou guardrail</td>
+</tr>
+<tr>
+<td>Exclusões</td>
+<td>obrigatória</td>
+<td>o que explicitamente não entra no cálculo</td>
+</tr>
+<tr>
+<td>Janela temporal</td>
+<td>obrigatória</td>
+<td>período de observação</td>
+</tr>
+<tr>
+<td>Base de comparação</td>
+<td>quando aplicável</td>
+<td>baseline/período/grupo de referência</td>
+</tr>
+<tr>
+<td>Granularidade</td>
+<td>obrigatória</td>
+<td>pessoa, evento, dia, mês, população etc.</td>
+</tr>
+<tr>
+<td>Dimensões / segmentos</td>
+<td>quando aplicável</td>
+<td>cortes analíticos permitidos</td>
+</tr>
+<tr>
+<td>Filtros</td>
+<td>quando aplicável</td>
+<td>filtros autorizados</td>
+</tr>
+<tr>
+<td>Fonte de verdade / fontes</td>
+<td>obrigatória</td>
+<td>origem autorizada do dado</td>
+</tr>
+<tr>
+<td>Natureza da evidência</td>
+<td>obrigatória</td>
+<td>direta, declarada, derivada, estimada, proxy, modelada etc.</td>
+</tr>
+<tr>
+<td>Freshness / atualização</td>
+<td>obrigatória</td>
+<td>frequência e atraso aceitável</td>
+</tr>
+<tr>
+<td>Quality checks</td>
+<td>obrigatória</td>
+<td>verificações mínimas de qualidade</td>
+</tr>
+<tr>
+<td>Sensibilidade / access class</td>
+<td>obrigatória</td>
+<td>classificação de proteção e acesso</td>
+</tr>
+<tr>
+<td>Accountable owner</td>
+<td>obrigatória antes de operação</td>
+<td>responsável pelo significado/uso</td>
+</tr>
+<tr>
+<td>Calculation owner</td>
+<td>obrigatória antes de operação</td>
+<td>responsável pelo cálculo</td>
+</tr>
+<tr>
+<td>Review cadence</td>
+<td>quando aplicável</td>
+<td>cadência de revisão do indicador</td>
+</tr>
+<tr>
+<td>Retention rule</td>
+<td>quando aplicável</td>
+<td>retenção pertinente</td>
+</tr>
+<tr>
+<td>Change log</td>
+<td>obrigatória quando operacional</td>
+<td>rastreabilidade de alterações</td>
+</tr>
+<tr>
+<td>Regra de agregação</td>
+<td>quando aplicável</td>
+<td>como compor populações</td>
+</tr>
+<tr>
+<td>Threshold de proteção</td>
+<td>quando aplicável</td>
+<td>mínimo para exposição agregada</td>
+</tr>
+<tr>
+<td>Tratamento de nulos</td>
+<td>obrigatória</td>
+<td>regra de ausência de dado</td>
+</tr>
+<tr>
+<td>Proveniência</td>
+<td>obrigatória</td>
+<td>origem e transformação</td>
+</tr>
+<tr>
+<td>Claims suportados</td>
+<td>obrigatória</td>
+<td>interpretações permitidas</td>
+</tr>
+<tr>
+<td>Claims proibidos</td>
+<td>obrigatória</td>
+<td>interpretações que o KPI não sustenta</td>
+</tr>
+<tr>
+<td>Confounders</td>
+<td>quando aplicável</td>
+<td>fatores que podem distorcer a leitura</td>
+</tr>
+<tr>
+<td>Incerteza</td>
+<td>obrigatória quando material</td>
+<td>limites/intervalos/qualificação</td>
+</tr>
+<tr>
+<td>Validações aplicáveis</td>
+<td>obrigatória</td>
+<td>conceptual, data, financial, accounting, legal/privacy/security conforme domínio</td>
+</tr>
+<tr>
+<td>Visualização</td>
+<td>obrigatória antes do handoff</td>
+<td>forma esperada de exibição</td>
+</tr>
+<tr>
+<td>Critério de aceite</td>
+<td>obrigatória</td>
+<td>condição objetiva de validação</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>obrigatória</td>
+<td>proposed / defined / source_pending / approved-equivalent conforme autoridade aplicável</td>
+</tr>
+<tr>
+<td>Contrato(s) de domínio aplicável(is)</td>
+<td>obrigatória</td>
+<td>autoridades especializadas que devem ser compostas</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo de lacuna que deve bloquear implementação:</p>
+<div class="highlight"><pre><span></span><code>"USUÁRIOS ATIVOS"
+→ janela temporal não definida
+→ evento de atividade não definido
+→ população não definida
+→ fórmula não definida
+→ fonte de verdade não definida
+
+RESULTADO
+→ NÃO IMPLEMENTAR COMO KPI CANÔNICO
+</code></pre></div>
+<p>Exemplo econômico:</p>
+<div class="highlight"><pre><span></span><code>"VENDAS DE PLANOS"
+→ NOME PRESENTE NO INVENTÁRIO CANDIDATO
+→ GEM-009-MEASUREMENT-CONTRACT-001 APLICÁVEL
+
+SE directionality / exclusions / owners / claims / confounders / uncertainty / validation states NÃO ESTÃO RESOLVIDOS
+→ KPI NÃO ESTÁ READY
+</code></pre></div>
+<hr/>
+<h2 id="6-requisitos-transversais-dos-dashboards">6. Requisitos transversais dos dashboards<a class="headerlink" href="#6-requisitos-transversais-dos-dashboards" title="Permanent link">¶</a></h2>
+<h3 id="61-temporalidade">6.1 Temporalidade<a class="headerlink" href="#61-temporalidade" title="Permanent link">¶</a></h3>
+<p>Todo KPI temporal deve explicitar período e janela de cálculo.</p>
+<div class="highlight"><pre><span></span><code>TOTAL ATUAL
+≠ ATIVOS 7D
+≠ ATIVOS 30D
+≠ MÊS CORRENTE
+≠ ACUMULADO HISTÓRICO
+</code></pre></div>
+<h3 id="62-granularidade">6.2 Granularidade<a class="headerlink" href="#62-granularidade" title="Permanent link">¶</a></h3>
+<p>A visualização deve usar a menor granularidade necessária para a finalidade autorizada, não a maior granularidade tecnicamente disponível.</p>
+<h3 id="63-proveniencia">6.3 Proveniência<a class="headerlink" href="#63-proveniencia" title="Permanent link">¶</a></h3>
+<p>O usuário e os responsáveis pela operação devem conseguir distinguir, conforme aplicável:</p>
+<ul>
+<li>dado declarado;</li>
+<li>dado observado;</li>
+<li>dado operacional;</li>
+<li>dado calculado;</li>
+<li>inferência;</li>
+<li>predição;</li>
+<li>agregado;</li>
+<li>conhecimento externo;</li>
+<li>dado governado.</li>
+</ul>
+<h3 id="64-privacidade-e-disclosure">6.4 Privacidade e disclosure<a class="headerlink" href="#64-privacidade-e-disclosure" title="Permanent link">¶</a></h3>
+<p>A capacidade técnica de cruzar dados não cria autorização para fazê-lo.</p>
+<p>Especialmente para Business, Organizações e Coletivos, devem ser definidos antes de produção:</p>
+<ul>
+<li>population scope;</li>
+<li>thresholds mínimos;</li>
+<li>supressão de células pequenas;</li>
+<li>regras de segmentação;</li>
+<li>controles de acesso;</li>
+<li>retenção;</li>
+<li>rastreabilidade;</li>
+<li>finalidade legítima de uso.</li>
+</ul>
+<h3 id="65-explicabilidade">6.5 Explicabilidade<a class="headerlink" href="#65-explicabilidade" title="Permanent link">¶</a></h3>
+<p>Quanto maior o impacto potencial de uma leitura, recomendação, score, tendência ou inferência, maior deve ser a explicabilidade exigida.</p>
+<hr/>
+<h2 id="7-mapa-de-ferramentas-leitura-governada-da-tabela-de-arquitetura">7. Mapa de ferramentas — leitura governada da tabela de arquitetura<a class="headerlink" href="#7-mapa-de-ferramentas-leitura-governada-da-tabela-de-arquitetura" title="Permanent link">¶</a></h2>
+<p>Este quadro preserva os papéis indicados na tabela de entrada <strong>como input não canônico de arquitetura</strong>, sem promovê-los indevidamente a implementação comprovada ou decisão final de stack.</p>
+<table>
+<thead>
+<tr>
+<th>Ferramenta / família</th>
+<th>Papel indicado</th>
+<th>Estado governado neste master</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Neo4j</td>
+<td>banco de dados grafo / memória; Graph Analytics</td>
+<td>tecnologia primária de referência para grafo; não prova provisionamento ou produção</td>
+</tr>
+<tr>
+<td>GPT</td>
+<td>IA e inteligência do ecossistema</td>
+<td>candidato de provedor/modelo; não selecionado por este documento</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td>IA e inteligência do ecossistema</td>
+<td>candidato de provedor/modelo; não selecionado por este documento</td>
+</tr>
+<tr>
+<td>Gemini</td>
+<td>IA e inteligência do ecossistema</td>
+<td>candidato de provedor/modelo; não selecionado por este documento</td>
+</tr>
+<tr>
+<td>Replit</td>
+<td>construção de fluxos, retorno de compreensão e dashboards</td>
+<td>target inicial de materialização; não source of truth</td>
+</tr>
+<tr>
+<td>Hostinger</td>
+<td>armazenamento/bancos operacionais indicados na tabela</td>
+<td>papel pretendido sujeito a arquitetura física e contratos de dados futuros</td>
+</tr>
+<tr>
+<td>Figma</td>
+<td>Design System</td>
+<td>fonte de Design quando a etapa de Design estiver autorizada; não backend nem fonte de KPI</td>
+</tr>
+<tr>
+<td>A definir</td>
+<td>fontes de pesquisa, central de ajuda e dashboard Ads/Opportunity Boost</td>
+<td>decisão futura necessária</td>
+</tr>
+</tbody>
+</table>
+<p>Regras adicionais:</p>
+<div class="highlight"><pre><span></span><code>NEO4J = REFERENCE_SELECTED
+≠ NEO4J PROVISIONADO
+≠ GRAPH ANALYTICS OPERACIONAL
+
+GPT / ANTHROPIC / GEMINI
+→ ALTERNATIVAS IDENTIFICADAS
+→ PROVEDOR NÃO SELECIONADO NESTE MASTER
+
+HOSTINGER
+→ PAPEL INDICADO NA TABELA
+→ NÃO SE TORNA AUTOMATICAMENTE SOURCE OF TRUTH DE TODO DADO
+
+FIGMA
+→ DESIGN SYSTEM
+→ NÃO DEFINE MÉTRICA
+
+REPLIT
+→ MATERIALIZA ESPECIFICAÇÃO
+→ NÃO INVENTA FÓRMULA, AUTORIDADE OU FONTE DE DADO
+</code></pre></div>
+<hr/>
+<h2 id="8-pacote-de-handoff-para-replit">8. Pacote de handoff para Replit<a class="headerlink" href="#8-pacote-de-handoff-para-replit" title="Permanent link">¶</a></h2>
+<p>Quando a etapa de construção for explicitamente autorizada, o pacote entregue ao Replit deverá conter:</p>
+<ol>
+<li>este Documento Mestre na versão vigente;</li>
+<li>contratos aprovados dos KPIs que serão materializados;</li>
+<li>contratos canônicos de domínio aplicáveis a cada KPI;</li>
+<li>contrato de dados ou interface autorizada para cada indicador;</li>
+<li>regras de autenticação, autorização e perfis de acesso;</li>
+<li>regras de privacidade, agregação e disclosure;</li>
+<li>Design System e especificações visuais aprovadas quando disponíveis;</li>
+<li>estados vazios, loading, erro, indisponibilidade e dado insuficiente;</li>
+<li>critérios objetivos de aceite;</li>
+<li>indicação clara de dados mock versus dados reais;</li>
+<li>registro da versão da especificação usada na construção.</li>
+</ol>
+<h3 id="81-instrucao-de-construcao">8.1 Instrução de construção<a class="headerlink" href="#81-instrucao-de-construcao" title="Permanent link">¶</a></h3>
+<p>A ferramenta de construção deverá obedecer:</p>
+<div class="highlight"><pre><span></span><code>SE KPI ESTÁ COMPLETO E APROVADO
++ CONTRATOS DE DOMÍNIO APLICÁVEIS ESTÃO SATISFEITOS
+→ implementar conforme contrato
+
+SE FÓRMULA ESTÁ AUSENTE
+→ marcar como BLOCKED / TBD
+→ não inventar
+
+SE SOURCE OF TRUTH ESTÁ AUSENTE
+→ marcar como BLOCKED / TBD
+→ não selecionar banco por conveniência
+
+SE AUTORIDADE DE ACESSO ESTÁ AUSENTE
+→ não expor o dado
+
+SE ESCOPO DE DASHBOARD É APENAS CANDIDATO / UNAPPROVED
+→ não tratar como escopo de produto aprovado
+
+SE CONTRATO CANÔNICO DE DOMÍNIO APLICÁVEL NÃO ESTÁ SATISFEITO
+→ marcar como BLOCKED / TBD
+→ não declarar KPI READY
+
+SE APENAS MOCK DATA ESTÁ AUTORIZADO
+→ manter separação explícita entre mock e integração real
+
+SE OUTPUT É INFERIDO / PREDITO
+→ preservar natureza, confiança e explicabilidade aplicáveis
+</code></pre></div>
+<hr/>
+<h2 id="9-arquitetura-logica-de-consumo">9. Arquitetura lógica de consumo<a class="headerlink" href="#9-arquitetura-logica-de-consumo" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    S[Sources autorizadas]
+    G[Graph / Analytics]
+    I[Guivos Intelligence]
+    C[Contrato de KPI]
+    V[Serving / Data Contract]
+    R[Replit / Dashboard]
+    U[Usuário autorizado]
+
+    S --&gt; G
+    S --&gt; I
+    G --&gt; I
+    G --&gt; C
+    I --&gt; C
+    C --&gt; V
+    V --&gt; R
+    R --&gt; U
+</code></pre>
+<p>O desenho é lógico. Ele não determina topologia física, banco específico, API, serviço, linguagem ou infraestrutura.</p>
+<hr/>
+<h2 id="10-definition-of-ready-para-materializacao-de-um-kpi">10. Definition of Ready para materialização de um KPI<a class="headerlink" href="#10-definition-of-ready-para-materializacao-de-um-kpi" title="Permanent link">¶</a></h2>
+<p>Um KPI somente deve avançar para implementação quando:</p>
+<div class="highlight"><pre><span></span><code>[ ] KPI ID definido
+[ ] pergunta de negócio/compreensão definida
+[ ] família / tipo definido
+[ ] população e unidade de análise definidas
+[ ] fórmula definida
+[ ] numerador / denominador definidos quando aplicáveis
+[ ] unidade definida
+[ ] direcionalidade definida quando aplicável
+[ ] exclusões explicitadas
+[ ] janela temporal definida
+[ ] base de comparação definida quando aplicável
+[ ] granularidade definida
+[ ] source of truth / fontes definidas e autorizadas
+[ ] natureza da evidência definida
+[ ] regra de freshness definida
+[ ] quality checks definidos
+[ ] sensibilidade / access class classificada
+[ ] público autorizado definido
+[ ] accountable owner definido
+[ ] calculation owner definido
+[ ] regras de agregação/disclosure definidas
+[ ] tratamento de nulos definido
+[ ] proveniência definida
+[ ] supported claims definidos
+[ ] prohibited claims definidos
+[ ] confounders registrados quando aplicáveis
+[ ] incerteza qualificada quando material
+[ ] contrato(s) canônico(s) de domínio aplicável(is) identificado(s)
+[ ] requisitos do(s) contrato(s) de domínio aplicável(is) satisfeitos no seu próprio estado de governança
+[ ] validações aplicáveis registradas (conceptual / data / financial / accounting / legal-privacy-security conforme domínio)
+[ ] visualização aprovada ou suficientemente especificada
+[ ] estados de exceção definidos
+[ ] critérios de aceite definidos
+[ ] superfície consumidora adjudicada / aprovada para o escopo em questão
+[ ] implementação explicitamente autorizada pelo gate aplicável
+</code></pre></div>
+<p>Para KPI econômico, a checklist acima <strong>não está completa</strong> sem a composição aplicável com <code>GEM-009-MEASUREMENT-CONTRACT-001</code>.</p>
+<p>Falha em qualquer item material mantém o KPI em especificação, não em implementação canônica.</p>
+<hr/>
+<h2 id="11-proximas-especificacoes-necessarias">11. Próximas especificações necessárias<a class="headerlink" href="#11-proximas-especificacoes-necessarias" title="Permanent link">¶</a></h2>
+<p>Este master cria a estrutura, mas não substitui o trabalho de definição métrica nem a adjudicação das superfícies candidatas.</p>
+<p>Próximas famílias possíveis, somente quando individualmente autorizadas e materialmente necessárias:</p>
+<ul>
+<li>adjudicação de cada dashboard candidato por sua autoridade de domínio;</li>
+<li>catálogo/registry de KPIs;</li>
+<li>contratos específicos dos KPIs do Dashboard Guivos;</li>
+<li>contratos específicos dos KPIs do Guivos Business;</li>
+<li>contratos específicos dos KPIs de Organizações;</li>
+<li>contratos específicos dos KPIs de Coletivos;</li>
+<li>contratos específicos das leituras da Pessoa;</li>
+<li>definição funcional e analítica de Ads / Opportunity Boost;</li>
+<li>contratos de dados e serving;</li>
+<li>specification de access control e disclosure;</li>
+<li>specification visual/handoff de Design.</li>
+</ul>
+<p>A existência desta lista <strong>não materializa nem autoriza automaticamente</strong> novos documentos, integrações ou etapas.</p>
+<hr/>
+<h2 id="12-estado-final-desta-versao">12. Estado final desta versão<a class="headerlink" href="#12-estado-final-desta-versao" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001
+→ v0.1.1
+→ ACTIVE
+→ GOVERNED PRE-IMPLEMENTATION MASTER SPECIFICATION
+
+SOURCE TABLE / ARCHITECTURE INPUT
+→ WORKING PROVENANCE ONLY
+→ NOT CANONICAL AUTHORITY
+
+DASHBOARD GUIVOS
+→ CANDIDATE SCOPE CAPTURED
+→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
+
+DASHBOARD GUIVOS BUSINESS
+→ CANDIDATE SCOPE CAPTURED
+→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
+
+DASHBOARD ORGANIZAÇÕES
+→ CANDIDATE SCOPE CAPTURED
+→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
+→ CURRENT O/C AUTHORITY STILL SAYS DASHBOARD DA ORGANIZAÇÃO = NÃO DEFINIDO
+
+DASHBOARD COLETIVOS
+→ CANDIDATE SCOPE CAPTURED
+→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
+→ DOES NOT MATERIALIZE AUTHENTICATED COLLECTIVE HOME
+
+DASHBOARD PESSOA
+→ CANDIDATE SCOPE CAPTURED
+→ UNAPPROVED / TBD PENDING DOMAIN ADJUDICATION
+
+ADS / OPPORTUNITY BOOST ANALYTICS
+→ CANDIDATE NEED CAPTURED
+→ UNAPPROVED
+→ DETAILED SCOPE / KPIs / TOOLING TO DEFINE
+
+REPLIT HANDOFF STRUCTURE
+→ DEFINED AS PRE-IMPLEMENTATION STRUCTURE
+
+KPI CONTRACT TEMPLATE
+→ CROSS-DOMAIN MINIMUM ENVELOPE
+→ MUST COMPOSE WITH APPLICABLE DOMAIN CONTRACTS
+
+ECONOMIC KPIs
+→ MUST COMPOSE WITH GEM-009-MEASUREMENT-CONTRACT-001 WHEN APPLICABLE
+→ THIS MASTER DOES NOT PROMOTE GEM-009 STATUS / MATURITY
+
+KPI FORMULAS
+→ NOT DEFINED BY INFERENCE
+
+REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
+→ NOT AUTHORIZED BY THIS DOCUMENT
+
+MERGE DA PR #363
+→ NOT AUTHORIZED BY THIS DOCUMENT
+</code></pre></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Voltar para o topo
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../js/print-site.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+window.mermaidConfig = {default: {
+    startOnLoad: false
+}};</script></body>
+</html>

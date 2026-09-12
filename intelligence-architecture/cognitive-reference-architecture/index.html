@@ -1,0 +1,3678 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
+      
+      
+        <meta name="author" content="Guivos">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Cognitive Reference Architecture - Guivos Knowledge Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <style>
+    /*
+      A navegação pública do GKR é organizada por grandes assuntos.
+      Somente o primeiro nível recebe maior hierarquia tipográfica;
+      documentos e subgrupos permanecem visualmente secundários.
+    */
+    .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+    .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-top: 0.35rem;
+    }
+
+    .md-nav--primary > .md-nav__list > .md-nav__item--section + .md-nav__item--section {
+      margin-top: 0.2rem;
+    }
+
+    .gkr-page-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 1rem;
+    }
+
+    .gkr-page-print {
+      cursor: pointer;
+    }
+
+    @media print {
+      .gkr-page-actions,
+      .md-header,
+      .md-tabs,
+      .md-sidebar,
+      .md-footer,
+      .md-top,
+      .md-dialog,
+      .md-content__button {
+        display: none !important;
+      }
+
+      .md-main__inner,
+      .md-content,
+      .md-content__inner {
+        margin: 0 !important;
+        max-width: none !important;
+      }
+    }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gia-cog-001-cognitive-reference-architecture" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cognitive Reference Architecture
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guivos Knowledge Repository
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comece por aqui
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Comece por aqui
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/guia-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--public-canon"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/current-state-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estado Atual do Repositório
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação e Marca
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundação e Marca
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos da Guivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../christian-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamento Cristão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolution-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolução do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-and-digital-assets-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Naming e Ativos Digitais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-public-authority-and-founder-role/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Fundador e Autoridade Pública
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Participantes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Participantes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/person/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/collective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coletivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/organizations-collectives-current-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Estado Atual
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Produtos e Economia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Produtos e Economia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Econômico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estratégia de Negócio
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiência e Journey
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiência e Journey
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura da Experiência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornadas Integradas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/public-home-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Principal / Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/public-home-organizations-collectives-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home de Organizações e Coletivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/public-specialized-homes-reconciliation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes dos Produtos Especializados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research e Validação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research e Validação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pesquisa do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-002/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Possibilidades, Oportunidades e Supply
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dados, Intelligence e Tecnologia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dados, Intelligence e Tecnologia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Corporativa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intelligence e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboards-kpis-analytics-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboards, KPIs e Analytics
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-007-neo4j-primary-graph-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tecnologia de Grafo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jurídico, Privacidade e Institucional
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jurídico, Privacidade e Institucional
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/institutional-and-legal-architecture-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Institucional e Jurídica
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/operational-privacy-and-legal-truth-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacidade e Verdade Operacional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/fundacao-guivos-institutional-concept-and-legal-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação Guivos — Conceito e Estado Jurídico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/trademark-brazil-signature-filing-authorization-package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proteção Marcária — Autorização de Filing
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GTM e Internacionalização
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GTM e Internacionalização
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go-to-Market
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-007-internationalization-and-territorial-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Internacionalização e Governança Territorial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-008-portugal-pilot-readiness-gates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Piloto Portugal — Gates de Prontidão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/international-operations-and-cross-border-readiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operações Internacionais e Cross-Border
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governança do GKR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governança do GKR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/gkr-full-corpus-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auditoria Integral do Corpus
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-audit-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framework de Auditoria Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Consolidação do Conhecimento Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-001-gkr-as-source-of-truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKR como Fonte Única da Verdade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-006-guivos-knowledge-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Conhecimento da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualizar / Imprimir GKR Completo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Propósito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-autoridade-superior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Autoridade superior
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-principios-obrigatorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Princípios obrigatórios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Escopo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fora-do-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Fora do escopo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-posicao-arquitetural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Posição arquitetural
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-fluxo-cognitivo-mestre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Fluxo cognitivo mestre
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-request-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Request / Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-actor-representation-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Actor / Representation Context
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-purpose-authority-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Purpose / Authority / Sensitivity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-pre-processing-eligibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Pre-processing Eligibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-authorized-cognitive-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Authorized Cognitive Request
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-cognitive-context-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Cognitive Context Package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-cognitive-evidence-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Cognitive Evidence Package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-taxonomia-de-inputs-e-estados-epistemologicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Taxonomia de inputs e estados epistemológicos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. Taxonomia de inputs e estados epistemológicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151-natureza-dos-inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.1 Natureza dos inputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-estados-epistemologicos-e-derivacionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.2 Estados epistemológicos e derivacionais
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-natureza-de-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.3 Natureza de output
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-cognitive-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Cognitive Processing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-normalized-cognitive-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Normalized Cognitive Results
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-cognitive-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Cognitive Fusion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="18. Cognitive Fusion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#181-precedencia-de-autoridade-da-pessoa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.1 Precedência de autoridade da Pessoa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-correlacao-e-causalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Correlação e causalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-cognitive-assurance-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Cognitive Assurance State
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-intelligence-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Intelligence Output
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-explicabilidade-proporcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Explicabilidade proporcional
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-post-processing-serving-disclosure-eligibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Post-processing Serving / Disclosure Eligibility
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="23. Post-processing Serving / Disclosure Eligibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-invariante-pessoa-business" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.1 Invariante Pessoa → Business
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-consumer-projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Consumer Projection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="24. Consumer Projection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-minimizacao-do-handoff-interproduto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24.1 Minimização do handoff interproduto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-intelligence-serving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. Intelligence Serving
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-human-responsible-domain-decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        26. Human / Responsible Domain Decision
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-proveniencia-e-rastreabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27. Proveniência e rastreabilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-temporalidade-e-atualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28. Temporalidade e atualização
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-falhas-insuficiencia-e-abstencao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        29. Falhas, insuficiência e abstenção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#30-relacao-com-knowledge-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        30. Relação com Knowledge Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-relacao-com-graph-reference-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        31. Relação com Graph Reference Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-relacao-com-data-e-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        32. Relação com Data e Analytics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-relacao-com-platform-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        33. Relação com Platform Layer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-relacao-com-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        34. Relação com Governance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-relacao-com-technology-engineering-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        35. Relação com Technology / Engineering Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-relacao-com-intelligence-engines-candidatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        36. Relação com Intelligence Engines candidatos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#37-familia-gia-cog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        37. Família GIA-COG
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#38-estado-de-maturidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        38. Estado de maturidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#39-promocao-canonica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        39. Promoção canônica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#40-estado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        40. Estado
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+    <div class="gkr-page-actions">
+      <button
+        type="button"
+        class="md-button gkr-page-print"
+        onclick="window.print()"
+        aria-label="Imprimir somente este assunto"
+      >
+        Imprimir este assunto
+      </button>
+    </div>
+  
+  
+                  
+
+
+  
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/intelligence-architecture/cognitive-reference-architecture.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="gia-cog-001-cognitive-reference-architecture">GIA-COG-001 — Cognitive Reference Architecture<a class="headerlink" href="#gia-cog-001-cognitive-reference-architecture" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Estado documental:</strong> arquitetura cognitiva de referência ativa e normativa, em nível conceitual/lógico. Este documento não é implementação, não comprova operação e não autoriza produção, provedores, credenciais, APIs físicas ou uso de dados reais.</p>
+</blockquote>
+<h2 id="1-proposito">1. Propósito<a class="headerlink" href="#1-proposito" title="Permanent link">&para;</a></h2>
+<p>Definir a arquitetura cognitiva de referência subordinada ao Guivos Intelligence para organizar, em nível lógico e tecnológico-neutro, como dados autorizados, conhecimento, evidências, contexto e relações podem ser transformados em <strong>compreensão útil e contextualizada</strong> sem transferir para a Intelligence autoridade que pertence à Pessoa, a Organizações, a Coletivos ou a outros domínios responsáveis.</p>
+<p>A arquitetura existe para responder à pergunta:</p>
+<blockquote>
+<p><strong>Como a Guivos pode produzir compreensão útil, contextualizada, explicável e governada sem confundir compreensão com decisão, inferência com fato ou capacidade técnica com autoridade?</strong></p>
+</blockquote>
+<h2 id="2-autoridade-superior">2. Autoridade superior<a class="headerlink" href="#2-autoridade-superior" title="Permanent link">&para;</a></h2>
+<p><code>GPA-006</code> permanece a autoridade de produto.</p>
+<div class="highlight"><pre><span></span><code>GUIVOS INTELLIGENCE
+→ produto transversal / Intelligence Layer
+→ transforma dados autorizados, conhecimento, evidências, contexto e relações
+→ em compreensão útil
+
+UNIDADE SUPERIOR DE VALOR
+→ compreensão útil e contextualizada
+
+COMPREENDER
+≠ DECIDIR
+</code></pre></div>
+<p>A Cognitive Reference Architecture não redefine o produto. Ela organiza uma referência lógica para realizar suas capacidades dentro das autoridades vigentes.</p>
+<h2 id="3-principios-obrigatorios">3. Princípios obrigatórios<a class="headerlink" href="#3-principios-obrigatorios" title="Permanent link">&para;</a></h2>
+<p>Esta arquitetura preserva os princípios de <code>GAI-001</code> e das autoridades relacionadas:</p>
+<ol>
+<li><strong>evidência antes de afirmação</strong>;</li>
+<li><strong>contexto antes de recomendação</strong>;</li>
+<li><strong>atualização contínua</strong>;</li>
+<li><strong>explicabilidade proporcional à complexidade e ao impacto</strong>;</li>
+<li><strong>autonomia humana preservada</strong>;</li>
+<li><strong>correlação não implica causalidade</strong>;</li>
+<li>inferência não se torna fato por repetição, confiança algorítmica ou conveniência;</li>
+<li>ausência de evidência suficiente pode produzir ausência legítima de conclusão;</li>
+<li>proveniência, temporalidade e autoridade devem permanecer rastreáveis;</li>
+<li>tecnologia amplia capacidade, não autoridade;</li>
+<li><strong>privacidade e finalidade</strong> limitam quais dados podem ser usados, para qual finalidade e por qual consumidor;</li>
+<li><strong>não substituição de especialistas</strong>: Intelligence apoia compreensão e decisão, mas não absorve autoridade profissional ou institucional especializada;</li>
+<li><strong>controle de vieses</strong>: dados, fontes, modelos, relações e outputs devem poder ser avaliados quanto a discriminação, distorção e generalizações indevidas;</li>
+<li><strong>neutralidade de relevância</strong>: pagamento, comissão, patrocínio, margem, estoque ou interesse comercial não criam autoridade para redefinir silenciosamente relevância pessoal.</li>
+</ol>
+<h2 id="4-escopo">4. Escopo<a class="headerlink" href="#4-escopo" title="Permanent link">&para;</a></h2>
+<p>O documento define, em nível de referência:</p>
+<ul>
+<li>fluxo cognitivo lógico;</li>
+<li>contratos entre contexto, evidência, processamento, fusão, assurance e serving;</li>
+<li>fronteiras de autoridade antes e depois do processamento;</li>
+<li>taxonomia de inputs preservada de <code>GPA-006</code> e distinção entre natureza da informação, estado epistemológico/derivacional e natureza de output;</li>
+<li>proveniência e temporalidade;</li>
+<li>incerteza, confiança e suficiência de evidência;</li>
+<li>condições de elegibilidade para processamento;</li>
+<li>condições de elegibilidade para serving e disclosure;</li>
+<li>relação com Knowledge, Graph, Data/Analytics, Platform, Governance e Engineering;</li>
+<li>relação com capacidades candidatas da Intelligence Layer.</li>
+</ul>
+<h2 id="5-fora-do-escopo">5. Fora do escopo<a class="headerlink" href="#5-fora-do-escopo" title="Permanent link">&para;</a></h2>
+<p>Este documento não define nem autoriza:</p>
+<div class="highlight"><pre><span></span><code>MODELO FÍSICO DE DADOS
+ONTOLOGIA FÍSICA
+MICROSSERVIÇOS
+APIs FÍSICAS
+EVENT BUS
+MLOPS
+MODEL SERVING
+PROVEDOR DE IA
+LLM ESPECÍFICO
+VECTOR DATABASE
+NEO4J PROVISIONADO
+GRAPHRAG IMPLEMENTADO
+CREDENCIAIS / API KEYS
+DADOS REAIS
+TREINAMENTO COM DADOS REAIS
+OPERAÇÃO
+PRODUÇÃO
+</code></pre></div>
+<p>A decomposição lógica aqui descrita também não implica decomposição física 1:1.</p>
+<h2 id="6-posicao-arquitetural">6. Posição arquitetural<a class="headerlink" href="#6-posicao-arquitetural" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GPA-006
+→ produto / proposta de valor / autoridade funcional
+
+GIA-000 / GAI
+→ Intelligence Architecture / princípios
+
+GIA-COG-001
+→ arquitetura cognitiva lógica de referência
+
+KNOWLEDGE ARCHITECTURE
+→ conhecimento, fontes, evidência, canon e autoridade de conhecimento
+
+GRAPH REFERENCE ARCHITECTURE
+→ relações e mecanismos de grafo dentro de sua própria autoridade
+
+DATA / ANALYTICS
+→ dados, métricas, análises e sinais governados
+
+PLATFORM LAYER
+→ identidade, permissões, segurança, persistência, integrações e rastreabilidade
+
+GOVERNANCE
+→ finalidade, autoridade, proteção, políticas e controles
+
+TECHNOLOGY / ENGINEERING
+→ realização física
+</code></pre></div>
+<p>Portanto:</p>
+<div class="highlight"><pre><span></span><code>GIA-COG
+≠ GEA PEER
+≠ GKA
+≠ GRAPH ARCHITECTURE
+≠ PRODUCT AUTHORITY
+≠ PLATFORM LAYER
+≠ ENGINEERING
+≠ GOVERNANCE
+</code></pre></div>
+<h2 id="7-fluxo-cognitivo-mestre">7. Fluxo cognitivo mestre<a class="headerlink" href="#7-fluxo-cognitivo-mestre" title="Permanent link">&para;</a></h2>
+<p>O fluxo lógico de referência é:</p>
+<div class="highlight"><pre><span></span><code>REQUEST / TRIGGER
+→ ACTOR / REPRESENTATION CONTEXT
+→ PURPOSE / AUTHORITY / SENSITIVITY
+→ PRE-PROCESSING ELIGIBILITY
+→ AUTHORIZED COGNITIVE REQUEST
+→ COGNITIVE CONTEXT PACKAGE
+  + COGNITIVE EVIDENCE PACKAGE
+→ COGNITIVE PROCESSING
+→ NORMALIZED COGNITIVE RESULTS
+→ COGNITIVE FUSION
+→ COGNITIVE ASSURANCE STATE
+→ INTELLIGENCE OUTPUT
+→ POST-PROCESSING SERVING / DISCLOSURE ELIGIBILITY
+→ CONSUMER PROJECTION
+→ INTELLIGENCE SERVING
+→ AUTHORIZED CONSUMER
+→ HUMAN / RESPONSIBLE DOMAIN DECISION
+</code></pre></div>
+<p>Regra estrutural:</p>
+<div class="highlight"><pre><span></span><code>PROCESSING AUTHORIZED
+≠ DISCLOSURE AUTHORIZED
+</code></pre></div>
+<p>A autorização para compreender ou processar não concede automaticamente autorização para expor, servir ou revelar o resultado a qualquer consumidor.</p>
+<h2 id="8-request-trigger">8. Request / Trigger<a class="headerlink" href="#8-request-trigger" title="Permanent link">&para;</a></h2>
+<p>Um fluxo cognitivo começa por um pedido ou gatilho legitimamente reconhecido.</p>
+<p>O request deve ser interpretável dentro de:</p>
+<ul>
+<li>um ator ou domínio responsável;</li>
+<li>uma finalidade;</li>
+<li>uma autoridade aplicável;</li>
+<li>um contexto temporal;</li>
+<li>uma sensibilidade;</li>
+<li>um consumidor ou classe de consumidores esperados, quando conhecida.</li>
+</ul>
+<p>A existência de um trigger técnico não constitui, por si só, autorização cognitiva.</p>
+<h2 id="9-actor-representation-context">9. Actor / Representation Context<a class="headerlink" href="#9-actor-representation-context" title="Permanent link">&para;</a></h2>
+<p>A arquitetura deve saber <strong>para quem</strong>, <strong>sobre quem</strong>, <strong>em nome de quem</strong> ou <strong>em qual domínio</strong> está operando.</p>
+<p>Representação não deve ser reduzida a identidade técnica.</p>
+<p>Pode envolver, conforme autoridade aplicável:</p>
+<ul>
+<li>Pessoa;</li>
+<li>Organização;</li>
+<li>Coletivo;</li>
+<li>produto especializado;</li>
+<li>processo autorizado;</li>
+<li>contexto populacional agregado;</li>
+<li>outra autoridade formalmente reconhecida.</li>
+</ul>
+<p>A representação deve preservar fronteiras entre o sujeito compreendido e o consumidor do resultado.</p>
+<h2 id="10-purpose-authority-sensitivity">10. Purpose / Authority / Sensitivity<a class="headerlink" href="#10-purpose-authority-sensitivity" title="Permanent link">&para;</a></h2>
+<p>Antes do processamento, o sistema cognitivo deve determinar a finalidade e a autoridade aplicáveis e identificar restrições de sensibilidade.</p>
+<div class="highlight"><pre><span></span><code>CAPACIDADE DE PROCESSAR
+≠ FINALIDADE LEGÍTIMA
+≠ AUTORIDADE DE USO
+</code></pre></div>
+<p>A finalidade limita tanto as entradas elegíveis quanto os outputs permitidos.</p>
+<h2 id="11-pre-processing-eligibility">11. Pre-processing Eligibility<a class="headerlink" href="#11-pre-processing-eligibility" title="Permanent link">&para;</a></h2>
+<p>O gate de elegibilidade pré-processamento determina se o request pode entrar no fluxo cognitivo.</p>
+<p>Deve considerar, conforme aplicável:</p>
+<ul>
+<li>finalidade válida;</li>
+<li>autoridade suficiente;</li>
+<li>permissões;</li>
+<li>minimização;</li>
+<li>sensibilidade;</li>
+<li>qualidade mínima;</li>
+<li>proveniência disponível;</li>
+<li>temporalidade;</li>
+<li>restrições de uso;</li>
+<li>necessidade de confirmação ou consentimento;</li>
+<li>incompatibilidades entre fontes ou autoridades.</li>
+</ul>
+<p>Resultado possível:</p>
+<div class="highlight"><pre><span></span><code>ELIGIBLE
+CONDITIONALLY_ELIGIBLE
+INSUFFICIENT_AUTHORITY
+INSUFFICIENT_EVIDENCE
+INSUFFICIENT_CONTEXT
+RESTRICTED
+NOT_ELIGIBLE
+</code></pre></div>
+<p>Esses estados são lógicos de referência, não enums físicos obrigatórios.</p>
+<h2 id="12-authorized-cognitive-request">12. Authorized Cognitive Request<a class="headerlink" href="#12-authorized-cognitive-request" title="Permanent link">&para;</a></h2>
+<p>Somente após o gate pré-processamento o request torna-se um <strong>Authorized Cognitive Request</strong>.</p>
+<p>Esse objeto lógico deve carregar informação suficiente para impedir que o processamento perca o contexto de finalidade e autoridade que o tornou elegível.</p>
+<h2 id="13-cognitive-context-package">13. Cognitive Context Package<a class="headerlink" href="#13-cognitive-context-package" title="Permanent link">&para;</a></h2>
+<p>O Cognitive Context Package reúne o contexto necessário para interpretar corretamente o request.</p>
+<p>Pode incluir, quando autorizado:</p>
+<ul>
+<li>contexto atual;</li>
+<li>contexto histórico relevante;</li>
+<li>relações governadas;</li>
+<li>objetivos ou intenções aplicáveis;</li>
+<li>restrições;</li>
+<li>preferências;</li>
+<li>estado temporal;</li>
+<li>domínio e papel do ator;</li>
+<li>contexto populacional permitido;</li>
+<li>regras de interpretação.</li>
+</ul>
+<p>O pacote não é um “super perfil” nem um cadastro universal.</p>
+<p>Ele representa apenas o contexto necessário e autorizado para a finalidade corrente.</p>
+<h2 id="14-cognitive-evidence-package">14. Cognitive Evidence Package<a class="headerlink" href="#14-cognitive-evidence-package" title="Permanent link">&para;</a></h2>
+<p>O Cognitive Evidence Package reúne evidências utilizáveis para o processamento preservando, conforme aplicável:</p>
+<ul>
+<li>fonte;</li>
+<li>tipo de evidência;</li>
+<li>autoridade;</li>
+<li>proveniência;</li>
+<li>temporalidade;</li>
+<li>qualidade;</li>
+<li>confiança;</li>
+<li>escopo;</li>
+<li>limitações;</li>
+<li>conflitos;</li>
+<li>validade e possibilidade de revisão.</li>
+</ul>
+<p>O pacote não transforma automaticamente conteúdo recuperado em fato verdadeiro.</p>
+<div class="highlight"><pre><span></span><code>RECUPERADO
+≠ VALIDADO
+≠ CANÔNICO
+≠ VERDADE ABSOLUTA
+</code></pre></div>
+<h2 id="15-taxonomia-de-inputs-e-estados-epistemologicos">15. Taxonomia de inputs e estados epistemológicos<a class="headerlink" href="#15-taxonomia-de-inputs-e-estados-epistemologicos" title="Permanent link">&para;</a></h2>
+<p>A arquitetura deve preservar separadamente <strong>a natureza da informação de entrada</strong>, <strong>seu estado epistemológico/derivacional</strong> e <strong>a natureza de outputs produzidos</strong>.</p>
+<h3 id="151-natureza-dos-inputs">15.1 Natureza dos inputs<a class="headerlink" href="#151-natureza-dos-inputs" title="Permanent link">&para;</a></h3>
+<p>A taxonomia de inputs definida por <code>GPA-006</code> permanece obrigatória:</p>
+<div class="highlight"><pre><span></span><code>DECLARADO
+≠ OBSERVADO
+≠ OPERACIONAL
+≠ CALCULADO
+≠ INFERIDO
+≠ PREDITO
+≠ AGREGADO
+≠ CONHECIMENTO EXTERNO / GOVERNADO
+</code></pre></div>
+<p>Essas classes descrevem a natureza da informação e não devem ser substituídas por estados de validação ou por tipos de output.</p>
+<h3 id="152-estados-epistemologicos-e-derivacionais">15.2 Estados epistemológicos e derivacionais<a class="headerlink" href="#152-estados-epistemologicos-e-derivacionais" title="Permanent link">&para;</a></h3>
+<p>Uma informação ou resultado pode, adicionalmente e conforme regras próprias, carregar qualificadores como:</p>
+<div class="highlight"><pre><span></span><code>CURADO / VALIDADO
+HIPÓTESE
+ESTIMADO
+CONTESTADO
+INCERTO
+SUPERADO
+EXPIRADO
+</code></pre></div>
+<p>Esses qualificadores não substituem a natureza original do input.</p>
+<h3 id="153-natureza-de-output">15.3 Natureza de output<a class="headerlink" href="#153-natureza-de-output" title="Permanent link">&para;</a></h3>
+<p>Resultados como recomendação, explicação, insight, possibilidade ou alerta pertencem à taxonomia de outputs e não devem ser confundidos com a natureza da informação de origem.</p>
+<p>Uma transformação cognitiva pode alterar ou derivar uma representação somente quando houver regra, evidência e proveniência suficientes para isso.</p>
+<p>Inferência nunca deve ser silenciosamente reclassificada como observação, declaração ou fato.</p>
+<h2 id="16-cognitive-processing">16. Cognitive Processing<a class="headerlink" href="#16-cognitive-processing" title="Permanent link">&para;</a></h2>
+<p>Cognitive Processing representa o conjunto lógico de operações autorizadas que podem contribuir para a compreensão.</p>
+<p>Pode combinar, em atos futuros e conforme evidência de Engenharia:</p>
+<ul>
+<li>recuperação de conhecimento;</li>
+<li>interpretação contextual;</li>
+<li>classificação;</li>
+<li>extração;</li>
+<li>comparação;</li>
+<li>análise estatística;</li>
+<li>análise relacional;</li>
+<li>matching;</li>
+<li>ranking contextual;</li>
+<li>síntese;</li>
+<li>estimativa;</li>
+<li>predição;</li>
+<li>recomendação;</li>
+<li>explicação.</li>
+</ul>
+<p>A lista não define serviços ou engines obrigatórios.</p>
+<p>Qualquer ranking, matching, recomendação ou avaliação de relevância deve preservar neutralidade de autoridade:</p>
+<div class="highlight"><pre><span></span><code>PAGAMENTO
+COMISSÃO
+PATROCÍNIO
+MARGEM
+ESTOQUE
+INTERESSE COMERCIAL
+≠ RELEVÂNCIA PESSOAL
+</code></pre></div>
+<p>Quando algum fator comercial puder legitimamente participar de um output, sua participação deve permanecer identificável e não pode ser apresentada como pertinência pessoal neutra.</p>
+<h2 id="17-normalized-cognitive-results">17. Normalized Cognitive Results<a class="headerlink" href="#17-normalized-cognitive-results" title="Permanent link">&para;</a></h2>
+<p>Resultados intermediários devem ser normalizados semanticamente antes da fusão para que possam carregar, de forma comparável:</p>
+<ul>
+<li>natureza do input ou resultado;</li>
+<li>estado epistemológico/derivacional;</li>
+<li>evidências utilizadas;</li>
+<li>proveniência;</li>
+<li>temporalidade;</li>
+<li>nível de confiança ou incerteza;</li>
+<li>limitações;</li>
+<li>escopo de validade;</li>
+<li>finalidade;</li>
+<li>autoridade de uso.</li>
+</ul>
+<p>A normalização não elimina divergências entre fontes ou métodos.</p>
+<h2 id="18-cognitive-fusion">18. Cognitive Fusion<a class="headerlink" href="#18-cognitive-fusion" title="Permanent link">&para;</a></h2>
+<p>Cognitive Fusion combina resultados compatíveis sem apagar divergências materiais.</p>
+<p>A fusão deve poder representar:</p>
+<ul>
+<li>concordância;</li>
+<li>conflito;</li>
+<li>complementaridade;</li>
+<li>lacunas;</li>
+<li>dependência entre evidências;</li>
+<li>diferença temporal;</li>
+<li>diferença de autoridade;</li>
+<li>diferença de confiança.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>MAIOR QUANTIDADE DE SINAIS
+≠ MAIOR VERDADE
+</code></pre></div>
+<p>A fusão não deve fabricar consenso quando a evidência é insuficiente ou contraditória.</p>
+<h3 id="181-precedencia-de-autoridade-da-pessoa">18.1 Precedência de autoridade da Pessoa<a class="headerlink" href="#181-precedencia-de-autoridade-da-pessoa" title="Permanent link">&para;</a></h3>
+<p>Em questões de <strong>intenção, preferência, objetivo e significado pessoal</strong> cuja autoridade pertença à própria Pessoa, uma declaração legítima e vigente da Pessoa possui precedência sobre inferência incompatível.</p>
+<div class="highlight"><pre><span></span><code>DECLARAÇÃO LEGÍTIMA DA PESSOA
+&gt; INFERÊNCIA INCOMPATÍVEL
+</code></pre></div>
+<p>Nesses casos, a inferência incompatível não pode sobrescrever silenciosamente a declaração. Ela deve ser descartada, degradada, preservada como conflito, submetida a confirmação ou tratada por outro mecanismo governado compatível com a finalidade.</p>
+<p>Essa precedência não autoriza reescrever fatos operacionais ou eventos efetivamente observados:</p>
+<div class="highlight"><pre><span></span><code>AUTORIDADE SOBRE SIGNIFICADO PESSOAL
+≠ AUTORIDADE PARA ALTERAR EVENTO OPERACIONAL VALIDADO
+</code></pre></div>
+<h2 id="19-correlacao-e-causalidade">19. Correlação e causalidade<a class="headerlink" href="#19-correlacao-e-causalidade" title="Permanent link">&para;</a></h2>
+<p>A arquitetura deve preservar explicitamente:</p>
+<div class="highlight"><pre><span></span><code>CORRELAÇÃO
+≠ CAUSALIDADE
+</code></pre></div>
+<p>Padrões, similaridades, centralidades, sequências temporais ou associações estatísticas não autorizam afirmação causal por si só.</p>
+<p>Qualquer claim causal exige evidência e método compatíveis com esse nível de afirmação.</p>
+<h2 id="20-cognitive-assurance-state">20. Cognitive Assurance State<a class="headerlink" href="#20-cognitive-assurance-state" title="Permanent link">&para;</a></h2>
+<p>Antes da emissão de um Intelligence Output, o resultado deve possuir um estado de assurance suficiente para comunicar sua robustez e suas limitações.</p>
+<p>O assurance pode considerar, em nível lógico:</p>
+<ul>
+<li>suficiência de evidência;</li>
+<li>qualidade;</li>
+<li>consistência;</li>
+<li>atualidade;</li>
+<li>proveniência;</li>
+<li>cobertura contextual;</li>
+<li>incerteza;</li>
+<li>conflitos;</li>
+<li>adequação metodológica;</li>
+<li>sensibilidade do impacto;</li>
+<li>risco de vieses, discriminação ou generalização indevida;</li>
+<li>necessidade de autoridade profissional ou institucional especializada.</li>
+</ul>
+<p>O estado de assurance não deve ser reduzido obrigatoriamente a um único score numérico.</p>
+<p>Quando não houver base suficiente, o estado correto pode ser:</p>
+<div class="highlight"><pre><span></span><code>NO_RELIABLE_CONCLUSION
+</code></pre></div>
+<p>ou equivalente lógico.</p>
+<h2 id="21-intelligence-output">21. Intelligence Output<a class="headerlink" href="#21-intelligence-output" title="Permanent link">&para;</a></h2>
+<p>O Intelligence Output é o produto cognitivo governado resultante do fluxo, ainda anterior à decisão humana ou do domínio responsável.</p>
+<p>Pode assumir formas como:</p>
+<ul>
+<li>compreensão contextual;</li>
+<li>insight;</li>
+<li>análise;</li>
+<li>hipótese;</li>
+<li>possibilidade identificada;</li>
+<li>recomendação;</li>
+<li>explicação;</li>
+<li>estimativa;</li>
+<li>previsão;</li>
+<li>tendência;</li>
+<li>alerta;</li>
+<li>síntese.</li>
+</ul>
+<p>Todo output relevante deve manter rastreabilidade suficiente para distinguir o que foi conhecido, declarado, observado, calculado, inferido, estimado, predito ou recomendado.</p>
+<p>Em domínios que dependam legitimamente de profissionais ou instituições especializadas, o output deve permanecer apoio à compreensão e não ser apresentado como substituto automático da autoridade competente.</p>
+<h2 id="22-explicabilidade-proporcional">22. Explicabilidade proporcional<a class="headerlink" href="#22-explicabilidade-proporcional" title="Permanent link">&para;</a></h2>
+<p>A explicabilidade deve ser proporcional:</p>
+<ul>
+<li>à complexidade do processamento;</li>
+<li>à incerteza;</li>
+<li>à sensibilidade;</li>
+<li>ao impacto potencial;</li>
+<li>ao consumidor;</li>
+<li>ao uso pretendido.</li>
+</ul>
+<p>Explicar não significa necessariamente revelar detalhes técnicos internos irrelevantes. Significa tornar compreensíveis, na medida adequada, a base, a natureza, as limitações e o grau de confiança do resultado.</p>
+<h2 id="23-post-processing-serving-disclosure-eligibility">23. Post-processing Serving / Disclosure Eligibility<a class="headerlink" href="#23-post-processing-serving-disclosure-eligibility" title="Permanent link">&para;</a></h2>
+<p>Depois que um Intelligence Output existe, um novo gate deve decidir se ele pode ser servido ao consumidor pretendido.</p>
+<p>Esse gate é independente da autorização que permitiu o processamento.</p>
+<p>Deve verificar, conforme aplicável:</p>
+<ul>
+<li>autoridade do consumidor;</li>
+<li>finalidade;</li>
+<li>granularidade;</li>
+<li>sensibilidade;</li>
+<li>minimização;</li>
+<li>agregação necessária;</li>
+<li>risco de reidentificação;</li>
+<li>proteção populacional;</li>
+<li>restrições contratuais;</li>
+<li>restrições de origem;</li>
+<li>necessidade de explicação;</li>
+<li>adequação do canal.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>INTELLIGENCE PODE COMPREENDER MAIS
+DO QUE PODE REVELAR
+</code></pre></div>
+<h3 id="231-invariante-pessoa-business">23.1 Invariante Pessoa → Business<a class="headerlink" href="#231-invariante-pessoa-business" title="Permanent link">&para;</a></h3>
+<p>Para contextos originados na Journey individual, a arquitetura deve preservar a assimetria definida em <code>GPA-006</code>:</p>
+<div class="highlight"><pre><span></span><code>BUSINESS / EMPRESA
+→ PODE RECEBER COMPREENSÃO POPULACIONAL AGREGADA E PROTEGIDA
+
+BUSINESS / EMPRESA
+→ NÃO RECEBE, POR INFERÊNCIA DE ENTITLEMENT OU PAGAMENTO,
+  A INTIMIDADE INDIVIDUAL DA JOURNEY
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>ENTITLEMENT
+≠ AUTORIDADE
+
+EMPRESA FINANCIA JOURNEY
+≠ EMPRESA POSSUI JOURNEY
+
+PLANO SUPERIOR
+≠ MENOS PRIVACIDADE
+</code></pre></div>
+<p>Nenhum gate genérico de serving pode ser interpretado como permissão para converter contexto individual protegido em perfil empresarial individual, score humano, vulnerabilidade inferida, objetivo pessoal identificável ou explicação individual de pertinência.</p>
+<h2 id="24-consumer-projection">24. Consumer Projection<a class="headerlink" href="#24-consumer-projection" title="Permanent link">&para;</a></h2>
+<p>Consumer Projection transforma o Intelligence Output em uma projeção adequada ao consumidor autorizado sem alterar indevidamente seu significado.</p>
+<p>Pode envolver:</p>
+<ul>
+<li>redução de granularidade;</li>
+<li>agregação;</li>
+<li>supressão;</li>
+<li>contextualização;</li>
+<li>explicação;</li>
+<li>seleção de atributos;</li>
+<li>adaptação de formato;</li>
+<li>tradução para linguagem compatível com o consumidor.</li>
+</ul>
+<p>A projeção não cria autoridade nova e não deve esconder incerteza material.</p>
+<h3 id="241-minimizacao-do-handoff-interproduto">24.1 Minimização do handoff interproduto<a class="headerlink" href="#241-minimizacao-do-handoff-interproduto" title="Permanent link">&para;</a></h3>
+<p>Quando Intelligence entrega um resultado a outro produto ou domínio, deve transferir apenas o menor contexto suficiente para a finalidade autorizada.</p>
+<div class="highlight"><pre><span></span><code>OUTPUT AUTORIZADO
+≠ DATASET DE ORIGEM
+
+TRANSFERIR RESULTADO
+≠ TRANSFERIR TODO O CONTEXTO QUE O PRODUZIU
+</code></pre></div>
+<p>A projeção deve preservar significado, proveniência necessária e limitações sem transformar o handoff em acesso indireto a dados que o consumidor não possui autoridade para receber.</p>
+<h2 id="25-intelligence-serving">25. Intelligence Serving<a class="headerlink" href="#25-intelligence-serving" title="Permanent link">&para;</a></h2>
+<p>Intelligence Serving entrega a projeção autorizada ao consumidor correto, no momento, canal, granularidade e forma permitidos.</p>
+<p>Possíveis mecanismos físicos futuros — APIs, eventos, dashboards, relatórios, alertas ou interfaces conversacionais — permanecem decisões de Engenharia e não são definidos por este documento.</p>
+<h2 id="26-human-responsible-domain-decision">26. Human / Responsible Domain Decision<a class="headerlink" href="#26-human-responsible-domain-decision" title="Permanent link">&para;</a></h2>
+<p>O fluxo cognitivo termina antes da decisão que pertence a uma Pessoa ou a um domínio responsável.</p>
+<div class="highlight"><pre><span></span><code>INTELLIGENCE OUTPUT
+→ APOIA
+
+DECISÃO
+→ PERMANECE COM A AUTORIDADE LEGÍTIMA
+</code></pre></div>
+<p>A Intelligence pode recomendar, explicar, estimar ou alertar. Não absorve, por esse fato, a responsabilidade decisória, profissional ou institucional.</p>
+<h2 id="27-proveniencia-e-rastreabilidade">27. Proveniência e rastreabilidade<a class="headerlink" href="#27-proveniencia-e-rastreabilidade" title="Permanent link">&para;</a></h2>
+<p>A arquitetura deve permitir reconstruir, em nível proporcional ao risco e impacto:</p>
+<ul>
+<li>origem das evidências;</li>
+<li>natureza original dos inputs;</li>
+<li>estados epistemológicos/derivacionais relevantes;</li>
+<li>contexto relevante;</li>
+<li>transformações aplicadas;</li>
+<li>métodos envolvidos;</li>
+<li>temporalidade;</li>
+<li>conflitos conhecidos;</li>
+<li>assurance;</li>
+<li>regras de serving/disclosure.</li>
+</ul>
+<p>Rastreabilidade não implica retenção ilimitada. Persistência e retenção permanecem submetidas à Platform Layer e à Governança aplicável.</p>
+<h2 id="28-temporalidade-e-atualizacao">28. Temporalidade e atualização<a class="headerlink" href="#28-temporalidade-e-atualizacao" title="Permanent link">&para;</a></h2>
+<p>Compreensão útil é temporal.</p>
+<p>Um output válido em um momento pode deixar de ser aplicável quando contexto, evidência, autoridade ou finalidade mudarem.</p>
+<p>A arquitetura deve admitir:</p>
+<ul>
+<li>validade temporal;</li>
+<li>expiração;</li>
+<li>revisão;</li>
+<li>substituição;</li>
+<li>contestação;</li>
+<li>recomputação quando autorizada;</li>
+<li>preservação de proveniência histórica quando necessária.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>ATUALIZAÇÃO CONTÍNUA
+≠ RETENÇÃO INFINITA
+≠ REPROCESSAMENTO IRRESTRITO
+</code></pre></div>
+<h2 id="29-falhas-insuficiencia-e-abstencao">29. Falhas, insuficiência e abstenção<a class="headerlink" href="#29-falhas-insuficiencia-e-abstencao" title="Permanent link">&para;</a></h2>
+<p>O sistema cognitivo deve poder não concluir.</p>
+<p>Estados legítimos incluem:</p>
+<ul>
+<li>evidência insuficiente;</li>
+<li>contexto insuficiente;</li>
+<li>conflito não resolvido;</li>
+<li>autoridade insuficiente;</li>
+<li>alta incerteza;</li>
+<li>conteúdo restrito;</li>
+<li>output não elegível para disclosure;</li>
+<li>impossibilidade de explicar com nível adequado;</li>
+<li>necessidade de autoridade especializada não satisfeita.</li>
+</ul>
+<p>A ausência de conclusão pode ser o comportamento correto.</p>
+<h2 id="30-relacao-com-knowledge-architecture">30. Relação com Knowledge Architecture<a class="headerlink" href="#30-relacao-com-knowledge-architecture" title="Permanent link">&para;</a></h2>
+<p>Knowledge Architecture governa o significado, as fontes, a autoridade, a validade e o ciclo de vida do conhecimento conforme seus próprios contratos.</p>
+<p>A Cognitive Reference Architecture pode consumir conhecimento autorizado, mas não pode promover automaticamente uma síntese cognitiva a Canon.</p>
+<div class="highlight"><pre><span></span><code>COGNITIVE OUTPUT
+≠ KNOWLEDGE CANON
+</code></pre></div>
+<h2 id="31-relacao-com-graph-reference-architecture">31. Relação com Graph Reference Architecture<a class="headerlink" href="#31-relacao-com-graph-reference-architecture" title="Permanent link">&para;</a></h2>
+<p>Grafo pode fornecer contexto relacional e mecanismos de recuperação ou análise estrutural.</p>
+<p><code>GEA-GRAPH-REFERENCE-001</code> e <code>ADR-007</code> mantêm autoridade sobre arquitetura e tecnologia de referência para grafo.</p>
+<div class="highlight"><pre><span></span><code>GRAPH
+→ PODE CONTRIBUIR PARA COMPREENSÃO
+
+GRAPH
+≠ COGNITION
+≠ GUIVOS INTELLIGENCE
+</code></pre></div>
+<p>Neo4j permanece tecnologia primária de referência para grafo; este documento não afirma provisionamento, POC ou operação.</p>
+<h2 id="32-relacao-com-data-e-analytics">32. Relação com Data e Analytics<a class="headerlink" href="#32-relacao-com-data-e-analytics" title="Permanent link">&para;</a></h2>
+<p>Data e Analytics podem produzir sinais, medidas, agregações e padrões para o fluxo cognitivo.</p>
+<p>A arquitetura cognitiva não deve transformar métrica em verdade nem indicador em decisão.</p>
+<p>Analytics deve preservar método, recorte, qualidade, população, temporalidade e limitações necessárias à interpretação.</p>
+<h2 id="33-relacao-com-platform-layer">33. Relação com Platform Layer<a class="headerlink" href="#33-relacao-com-platform-layer" title="Permanent link">&para;</a></h2>
+<p>A Platform Layer sustenta capacidades necessárias para execução futura, incluindo:</p>
+<ul>
+<li>identidade;</li>
+<li>autenticação;</li>
+<li>autorização;</li>
+<li>políticas;</li>
+<li>segurança;</li>
+<li>persistência;</li>
+<li>integração;</li>
+<li>auditoria;</li>
+<li>rastreabilidade;</li>
+<li>observabilidade técnica.</li>
+</ul>
+<p>A GIA-COG não absorve essas responsabilidades.</p>
+<h2 id="34-relacao-com-governance">34. Relação com Governance<a class="headerlink" href="#34-relacao-com-governance" title="Permanent link">&para;</a></h2>
+<p>Governance continua responsável por definir e evoluir regras de finalidade, autoridade, proteção, privacidade, risco, compliance, vieses, uso aceitável e limites de compartilhamento.</p>
+<p>A arquitetura cognitiva executa dentro dessas restrições; não as cria por conveniência técnica.</p>
+<h2 id="35-relacao-com-technology-engineering-architecture">35. Relação com Technology / Engineering Architecture<a class="headerlink" href="#35-relacao-com-technology-engineering-architecture" title="Permanent link">&para;</a></h2>
+<p>Engineering decidirá, em etapas próprias e quando autorizada, como materializar os contratos lógicos.</p>
+<p>Pode consolidar, dividir ou substituir componentes candidatos desde que preserve as semânticas e fronteiras aprovadas.</p>
+<div class="highlight"><pre><span></span><code>CAMADA LÓGICA
+≠ SERVIÇO OBRIGATÓRIO
+≠ MICROSSERVIÇO OBRIGATÓRIO
+≠ MODELO OBRIGATÓRIO
+</code></pre></div>
+<h2 id="36-relacao-com-intelligence-engines-candidatos">36. Relação com Intelligence Engines candidatos<a class="headerlink" href="#36-relacao-com-intelligence-engines-candidatos" title="Permanent link">&para;</a></h2>
+<p>Context, Recommendation, Matching, Learning, Prediction, Trust e Knowledge Intelligence Engines permanecem responsabilidades ou candidatos conceituais.</p>
+<p>Este documento não os promove a componentes físicos obrigatórios.</p>
+<p>Qualquer engine futuro deverá obedecer ao fluxo de elegibilidade, evidência, assurance, disclosure e serving aplicável.</p>
+<h2 id="37-familia-gia-cog">37. Família GIA-COG<a class="headerlink" href="#37-familia-gia-cog" title="Permanent link">&para;</a></h2>
+<p><code>GIA-COG-001</code> é o Documento Mestre.</p>
+<p>Uma família futura <code>GIA-COG-002..008</code> poderá especializar partes da arquitetura apenas mediante necessidade material e autorização própria.</p>
+<div class="highlight"><pre><span></span><code>GIA-COG-002..008
+→ RESERVED / NOT MATERIALIZED
+</code></pre></div>
+<p>A existência do namespace não autoriza criação automática de documentos.</p>
+<h2 id="38-estado-de-maturidade">38. Estado de maturidade<a class="headerlink" href="#38-estado-de-maturidade" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GIA-COG-001
+→ ACTIVE / NORMATIVE v0.1.1
+→ CURRENT COGNITIVE REFERENCE ARCHITECTURE
+→ CONCEPTUAL / REFERENCE LEVEL
+
+IMPLEMENTATION
+→ NOT AUTHORIZED
+
+PRODUCTION
+→ NOT AUTHORIZED
+
+REAL DATA
+→ NOT AUTHORIZED BY THIS DOCUMENT
+
+PROVIDERS / MODELS / STACK
+→ NOT SELECTED BY THIS DOCUMENT
+</code></pre></div>
+<h2 id="39-promocao-canonica">39. Promoção canônica<a class="headerlink" href="#39-promocao-canonica" title="Permanent link">&para;</a></h2>
+<p>O ciclo governado do Documento Mestre foi concluído:</p>
+<div class="highlight"><pre><span></span><code>GIA-COG-001-REV-01
+→ REVISION REQUIRED
+
+GIA-COG-001-REM-01
+→ 6 / 6 FINDINGS REMEDIATED
+
+GIA-COG-001-REV-02
+→ PASS
+→ 0 OPEN MATERIAL FINDINGS
+
+GIA-COG-001-PROM-01
+→ CANONICAL PROMOTION ELIGIBILITY = PASS
+
+GIA-COG-001-PROM-02
+→ CANONICAL PROMOTION EXECUTED
+</code></pre></div>
+<p>A promoção estabelece esta arquitetura como referência cognitiva vigente. Ela não libera por inferência qualquer documento <code>GIA-COG-002..008</code>, arquitetura física, modelo físico de dados, ontologia física, fornecedor, modelo, stack, dado real, Product Engineering, operação ou produção.</p>
+<div class="highlight"><pre><span></span><code>ACTIVE / NORMATIVE REFERENCE ARCHITECTURE
+≠ IMPLEMENTATION AUTHORIZATION
+</code></pre></div>
+<h2 id="40-estado">40. Estado<a class="headerlink" href="#40-estado" title="Permanent link">&para;</a></h2>
+<p><strong>GIA-COG-001 v0.1.1 é a Cognitive Reference Architecture vigente, ativa e normativa da Guivos Intelligence Architecture. Permanece conceitual/de referência; não implementada, não operacional e não produtiva.</strong></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
