@@ -2,9 +2,9 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.6
+version: 0.2.7
 owner: Guivos Intelligence Architecture
-last_updated: 2026-09-12
+last_updated: 2026-09-13
 normative: false
 maturity: governed_multi_dashboard_pre_implementation_master_specification
 depends_on:
@@ -22,6 +22,7 @@ related:
   - GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
   - GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
   - GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
+  - GKR-INTELLIGENCE-DASHBOARD-PERSON-001
 ---
 
 # Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
@@ -93,7 +94,7 @@ MASTER ESPECIALIZADO
 | B | `GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001` — Dashboard Guivos Business | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
 | C | `GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001` — Dashboard Organização | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
 | D | `GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001` — Dashboard Coletivo | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
-| E | Dashboard Pessoa | RESERVED / NOT MATERIALIZED |
+| E | `GKR-INTELLIGENCE-DASHBOARD-PERSON-001` — Dashboard Pessoa | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
 | F | Ads / Opportunity Boost Analytics | RESERVED / NOT MATERIALIZED |
 
 `RESERVED` significa somente posição documental planejada. Não cria autoridade, superfície operacional ou implementação.
@@ -171,6 +172,15 @@ Finalidade candidata original: oferecer compreensão individual autorizada da pr
 DECLARADO ≠ OBSERVADO ≠ CALCULADO ≠ INFERIDO ≠ PREDITO
 ```
 
+Esse escopo foi aprofundado documentalmente no Anexo E sem autorizar dados reais, implementação, redefinição de `Hoje`, `Meus Objetivos`, `Meus Próximos Passos` ou `Minha Evolução`, nem disclosure a terceiros além da autoridade aplicável.
+
+```text
+DOCUMENTAÇÃO DO ANEXO E
+≠ HOJE / MEUS OBJETIVOS / MEUS PRÓXIMOS PASSOS / MINHA EVOLUÇÃO
+≠ SURFACE MAP / STATE MAP
+≠ DASHBOARD OPERACIONAL IMPLEMENTADO
+```
+
 #### Ads / Opportunity Boost Analytics
 
 Necessidade candidata original: dados de anúncios e Opportunity Boost do anunciante.
@@ -215,7 +225,7 @@ DASHBOARD DOCUMENTADO
 
 Quando uma autoridade de domínio mantiver uma superfície, relação, métrica ou capacidade como não definida, este master e seus anexos devem preservar esse estado.
 
-A existência dos masters de Organização e Coletivo **não deve ser interpretada como materialização de Home/Início autenticado, Surface Map, State Map, navegação, wireframe ou implementação desses participantes**.
+A existência dos masters de Organização, Coletivo e Pessoa **não deve ser interpretada como materialização de Home/Início/Hoje autenticado, Surface Map, State Map, navegação, wireframe ou implementação desses participantes**.
 
 ---
 
@@ -664,7 +674,7 @@ ANEXO D — COLETIVO
 → MATERIALIZED DOCUMENTARILY
 
 ANEXO E — PESSOA
-→ RESERVED / NOT MATERIALIZED
+→ MATERIALIZED DOCUMENTARILY
 
 ANEXO F — ADS / OPPORTUNITY BOOST
 → RESERVED / NOT MATERIALIZED
@@ -678,7 +688,7 @@ Cada anexo deve ser construído e revisado individualmente para permitir evoluç
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.6
+→ v0.2.7
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -718,7 +728,11 @@ DASHBOARD COLLECTIVE MASTER
 → GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
 → MATERIALIZED DOCUMENTARILY AS ANNEX D
 
-ANNEXES E / F
+DASHBOARD PERSON MASTER
+→ GKR-INTELLIGENCE-DASHBOARD-PERSON-001
+→ MATERIALIZED DOCUMENTARILY AS ANNEX E
+
+ANNEX F
 → RESERVED / NOT MATERIALIZED
 
 REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
