@@ -1,7 +1,7 @@
 ---
 id: GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-REGISTRY-001
 status: active
-version: 0.1.2
+version: 0.1.3
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
@@ -15,8 +15,10 @@ depends_on:
 
 Materializados nesta versão:
 
-- `GUV-KPI-POP-001` → record `proposed / NOT_READY`;
-- `GUV-KPI-POP-002` → record `proposed / NOT_READY`.
+| KPI | Contract record | Contract version | Record status | Readiness |
+|---|---|---:|---|---|
+| `GUV-KPI-POP-001` | [`guv-kpi-pop-001.md`](guv-kpi-pop-001.md) | `0.1.0` | `proposed` | `NOT_READY` |
+| `GUV-KPI-POP-002` | [`guv-kpi-pop-002.md`](guv-kpi-pop-002.md) | `0.1.0` | `proposed` | `NOT_READY` |
 
 ## Conflito de status
 
