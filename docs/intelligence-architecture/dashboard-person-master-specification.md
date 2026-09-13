@@ -476,23 +476,41 @@ Esta família cobre somente outputs autorizados para consumo pela própria Pesso
 |---|---|---|---|---|---|
 | PER-KPI-INT-001 | Outputs de Intelligence disponíveis | outputs autorizados, vigentes e servíveis à Pessoa no recorte | outputs | proposed | serving/disclosure eligibility + source |
 | PER-KPI-INT-002 | Outputs por natureza | distribuição por natureza governada, como explicação, insight, possibilidade, recomendação ou alerta | distribuição | proposed | output taxonomy + source |
-| PER-KPI-INT-003 | Outputs por natureza epistemológica | distribuição segundo a natureza preservada dos inputs/resultados | distribuição | proposed | epistemic taxonomy + provenance |
+| PER-KPI-INT-003 | Outputs por natureza do input/resultado | distribuição segundo a natureza preservada dos inputs/resultados, sem convertê-la em estado epistemológico/derivacional | distribuição | proposed | input/result nature taxonomy + provenance |
 | PER-KPI-INT-004 | Outputs com confiança/incerteza qualificada | outputs materiais com confiança, incerteza e limitações devidamente qualificadas | outputs | proposed | assurance contract |
 | PER-KPI-INT-005 | Outputs contestados/em revisão | outputs sob contestação, revisão ou confirmação necessária | outputs | proposed | contestation lifecycle |
 | PER-KPI-INT-006 | Outputs superados/expirados | outputs que perderam vigência ou foram substituídos segundo regra governada | outputs | proposed | validity/expiry contract |
 
-Naturezas de informação permanecem separadas:
+Os três eixos permanecem separados e não podem ser colapsados por visualização, filtro ou implementação:
 
 ```text
-DECLARADO
-≠ OBSERVADO
-≠ OPERACIONAL
-≠ CALCULADO
-≠ INFERIDO
-≠ PREDITO
-≠ AGREGADO
-≠ CONHECIMENTO EXTERNO / GOVERNADO
+NATUREZA DO INPUT / RESULTADO
+→ DECLARADO
+→ OBSERVADO
+→ OPERACIONAL
+→ CALCULADO
+→ INFERIDO
+→ PREDITO
+→ AGREGADO
+→ CONHECIMENTO EXTERNO / GOVERNADO
+
+ESTADO EPISTEMOLÓGICO / DERIVACIONAL
+→ VALIDADO
+→ HIPÓTESE
+→ CONTESTADO
+→ INCERTO
+→ SUPERADO
+→ EXPIRADO
+
+NATUREZA DO OUTPUT
+→ EXPLICAÇÃO
+→ INSIGHT
+→ POSSIBILIDADE
+→ RECOMENDAÇÃO
+→ ALERTA
 ```
+
+`PER-KPI-INT-002` organiza natureza do output. `PER-KPI-INT-003` organiza natureza do input/resultado. O estado epistemológico/derivacional permanece campo separado, preservado nos contratos e metadados aplicáveis; este draft não o converte em sinônimo de nenhum dos outros dois eixos.
 
 E também:
 
@@ -612,7 +630,8 @@ Filtros somente podem restringir e organizar o escopo autorizado:
 - trajetória/estado de leitura legitimamente definido;
 - relação/participação/experiência;
 - natureza de evidência;
-- natureza epistemológica;
+- natureza do input/resultado;
+- estado epistemológico/derivacional;
 - natureza de output de Intelligence;
 - confiança/incerteza quando material;
 - estado de contestação/revisão;
@@ -622,7 +641,7 @@ Filtros somente podem restringir e organizar o escopo autorizado:
 FILTRO
 → SUBCONJUNTO DO ACCESS SCOPE
 → NUNCA AMPLIA DISCLOSURE
-→ NUNCA MUDA A NATUREZA EPISTEMOLÓGICA DO DADO
+→ NUNCA CONFUNDE NATUREZA DO INPUT/RESULTADO, ESTADO EPISTEMOLÓGICO/DERIVACIONAL OU NATUREZA DO OUTPUT
 ```
 
 Filtro por domínio não transforma domínio em identidade ou prioridade.
@@ -772,20 +791,21 @@ Quando houver autorização formal de build, a ferramenta deverá:
 9. não converter conclusão de objetivo/passo em prova de evolução;
 10. preservar mudança ≠ melhora e correlação ≠ causalidade;
 11. distinguir declarado, observado, operacional, calculado, inferido, predito, agregado e conhecimento externo/governado;
-12. preservar inferência ≠ fato e recomendação ≠ decisão;
-13. manter confiança, incerteza, limitações e contestação quando materiais;
-14. aplicar precedência da declaração legítima da Pessoa sobre inferência incompatível em significado pessoal;
-15. não usar fator comercial para redefinir relevância pessoal;
-16. tratar filtros como restrição adicional;
-17. validar escopo no serving/backend, não somente no cliente;
-18. separar mock adapters de real adapters;
-19. preservar `NO_DATA`, `INSUFFICIENT_DATA`, `INSUFFICIENT_EVIDENCE`, `SUPPRESSED_BY_POLICY`, `UNDER_REVIEW`, `CONTESTED`, `NOT_ENTITLED` e `SOURCE_DELAYED`;
-20. preservar versão, temporalidade, freshness e proveniência;
-21. não hard-code preços ou entitlements não congelados;
-22. não implementar compartilhamento com Organização, Coletivo, Business ou terceiro por conveniência;
-23. não expor dados privados de contraparte em drill-down relacional;
-24. não transformar histórico em placar de produtividade pessoal;
-25. registrar a versão deste master usada na build.
+12. preservar separadamente o estado epistemológico/derivacional e a natureza do output, sem colapsá-los com a natureza do input/resultado;
+13. preservar inferência ≠ fato e recomendação ≠ decisão;
+14. manter confiança, incerteza, limitações e contestação quando materiais;
+15. aplicar precedência da declaração legítima da Pessoa sobre inferência incompatível em significado pessoal;
+16. não usar fator comercial para redefinir relevância pessoal;
+17. tratar filtros como restrição adicional;
+18. validar escopo no serving/backend, não somente no cliente;
+19. separar mock adapters de real adapters;
+20. preservar `NO_DATA`, `INSUFFICIENT_DATA`, `INSUFFICIENT_EVIDENCE`, `SUPPRESSED_BY_POLICY`, `UNDER_REVIEW`, `CONTESTED`, `NOT_ENTITLED` e `SOURCE_DELAYED`;
+21. preservar versão, temporalidade, freshness e proveniência;
+22. não hard-code preços ou entitlements não congelados;
+23. não implementar compartilhamento com Organização, Coletivo, Business ou terceiro por conveniência;
+24. não expor dados privados de contraparte em drill-down relacional;
+25. não transformar histórico em placar de produtividade pessoal;
+26. registrar a versão deste master usada na build.
 
 ---
 
