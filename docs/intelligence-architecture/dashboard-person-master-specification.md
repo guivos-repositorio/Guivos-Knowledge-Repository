@@ -492,7 +492,8 @@ NATUREZA DO INPUT / RESULTADO
 → INFERIDO
 → PREDITO
 → AGREGADO
-→ CONHECIMENTO EXTERNO / GOVERNADO
+→ CONHECIMENTO EXTERNO
+→ CONHECIMENTO GOVERNADO
 
 ESTADO EPISTEMOLÓGICO / DERIVACIONAL
 → VALIDADO
@@ -509,6 +510,8 @@ NATUREZA DO OUTPUT
 → RECOMENDAÇÃO
 → ALERTA
 ```
+
+`CONHECIMENTO EXTERNO` e `CONHECIMENTO GOVERNADO` permanecem naturezas distintas de input/resultado porque possuem proveniências distintas; nenhum deles é sinônimo de dado pessoal observado.
 
 `PER-KPI-INT-002` organiza natureza do output. `PER-KPI-INT-003` organiza natureza do input/resultado. O estado epistemológico/derivacional permanece campo separado, preservado nos contratos e metadados aplicáveis; este draft não o converte em sinônimo de nenhum dos outros dois eixos.
 
@@ -790,7 +793,7 @@ Quando houver autorização formal de build, a ferramenta deverá:
 8. distinguir `PROPOSTO` de aceito/decidido em Próximos Passos;
 9. não converter conclusão de objetivo/passo em prova de evolução;
 10. preservar mudança ≠ melhora e correlação ≠ causalidade;
-11. distinguir declarado, observado, operacional, calculado, inferido, predito, agregado e conhecimento externo/governado;
+11. distinguir declarado, observado, operacional, calculado, inferido, predito, agregado, conhecimento externo e conhecimento governado como naturezas distintas;
 12. preservar separadamente o estado epistemológico/derivacional e a natureza do output, sem colapsá-los com a natureza do input/resultado;
 13. preservar inferência ≠ fato e recomendação ≠ decisão;
 14. manter confiança, incerteza, limitações e contestação quando materiais;
