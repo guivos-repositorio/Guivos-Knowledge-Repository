@@ -96,6 +96,12 @@ nav:
       - Home Principal / Pessoa: experience-architecture/public-home-master-document.md
       - Home de Organizações e Coletivos: experience-architecture/public-home-organizations-collectives-master-document.md
       - Homes dos Produtos Especializados: experience-architecture/public-specialized-homes-reconciliation.md
+      - Home Guivos Mall: experience-architecture/public-home-mall-master-document.md
+      - Home Guivos Travel: experience-architecture/public-home-travel-master-document.md
+      - Home Guivos Media: experience-architecture/public-home-media-master-document.md
+      - Home Guivos Business: experience-architecture/public-home-business-master-document.md
+      - Home Guivos Ads: experience-architecture/public-home-ads-master-document.md
+      - Home Guivos Intelligence: experience-architecture/public-home-intelligence-master-document.md
 
   - Research e Validação:
       - Research: research/index.md
