@@ -252,7 +252,7 @@ A autoridade vigente permite leitura administrativa agregada de utilização efe
 |---|---|---|---|---|---|
 | BUS-KPI-PTS-001 | Pontos concedidos | quantidade de Pontos Guivos validamente concedidos pelo programa | pontos | proposed | points grant contract + source |
 | BUS-KPI-PTS-002 | Pontos efetivamente utilizados | quantidade de Pontos Guivos do recorte aplicável efetivamente utilizados em possibilidades elegíveis | pontos | proposed | usage attribution + source |
-| BUS-KPI-PTS-003 | Distribuição de utilização | participação dos pontos efetivamente utilizados entre Mall, Travel e Journey | % | source_pending | usage source + attribution + disclosure |
+| BUS-KPI-PTS-003 | Distribuição de utilização | participação dos pontos efetivamente utilizados entre Mall, Travel e Journey | % | proposed | usage source + attribution + disclosure |
 | BUS-KPI-PTS-004 | Utilização por período | pontos efetivamente utilizados por janela temporal autorizada | pontos/período | proposed | temporal + attribution contract |
 
 Para `BUS-KPI-PTS-003`, o denominador conceitual é **somente pontos efetivamente utilizados**. Pontos guardados ou expirados não entram nesse denominador. O resultado exibido deve fechar 100% entre as categorias autorizadas.
@@ -587,7 +587,7 @@ KPI FAMILIES
 
 KPI IMPLEMENTATION READINESS
 → NONE CLAIMED BY INFERENCE
-→ ALL CURRENT KPIs = proposed OR source_pending
+→ ALL CURRENT KPIs = proposed
 → ALL = NOT_READY
 
 BUSINESS POPULATION
