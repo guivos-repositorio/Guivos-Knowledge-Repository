@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.4
+version: 0.2.5
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
@@ -20,6 +20,7 @@ related:
   - GEM-009-MEASUREMENT-CONTRACT-001
   - GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
   - GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
+  - GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
 ---
 
 # Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
@@ -89,7 +90,7 @@ MASTER ESPECIALIZADO
 |---|---|---|
 | A | `GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001` — Dashboard Guivos | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
 | B | `GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001` — Dashboard Guivos Business | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
-| C | Dashboard Organização | RESERVED / NOT MATERIALIZED |
+| C | `GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001` — Dashboard Organização | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
 | D | Dashboard Coletivo | RESERVED / NOT MATERIALIZED |
 | E | Dashboard Pessoa | RESERVED / NOT MATERIALIZED |
 | F | Ads / Opportunity Boost Analytics | RESERVED / NOT MATERIALIZED |
@@ -134,14 +135,12 @@ Esse escopo foi aprofundado documentalmente no Anexo B sem autorizar dados reais
 
 Finalidade candidata original: leitura quantitativa da própria atuação da Organização e da população/relações sob autoridade aplicável, incluindo oportunidades, vendas, demografia, geografia e cadastros quando legitimamente definidos.
 
-Estado preservado:
+Esse escopo foi aprofundado documentalmente no Anexo C sem autorizar dados reais, implementação, materialização da Home autenticada ou acesso individual além da autoridade aplicável.
 
 ```text
-MASTER ESPECIALIZADO
-→ RESERVED / NOT MATERIALIZED
-
-DOCUMENTAÇÃO DESTA NECESSIDADE
+DOCUMENTAÇÃO DO ANEXO C
 ≠ HOME AUTENTICADA DEFINIDA
+≠ SURFACE MAP / STATE MAP
 ≠ DASHBOARD OPERACIONAL IMPLEMENTADO
 ```
 
@@ -203,7 +202,7 @@ DASHBOARD DOCUMENTADO
 
 Quando uma autoridade de domínio mantiver uma superfície, relação, métrica ou capacidade como não definida, este master e seus anexos devem preservar esse estado.
 
-A existência futura dos masters de Organização e Coletivo **não deverá ser interpretada como materialização de Home autenticada, Surface Map, State Map, navegação, wireframe ou implementação desses participantes**.
+A existência do master de Organização e a futura existência do master de Coletivo **não deverão ser interpretadas como materialização de Home autenticada, Surface Map, State Map, navegação, wireframe ou implementação desses participantes**.
 
 ---
 
@@ -646,7 +645,7 @@ ANEXO B — BUSINESS
 → MATERIALIZED DOCUMENTARILY
 
 ANEXO C — ORGANIZAÇÃO
-→ RESERVED / NOT MATERIALIZED
+→ MATERIALIZED DOCUMENTARILY
 
 ANEXO D — COLETIVO
 → RESERVED / NOT MATERIALIZED
@@ -666,7 +665,7 @@ Cada anexo deve ser construído e revisado individualmente para permitir evoluç
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.4
+→ v0.2.5
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -698,7 +697,11 @@ DASHBOARD GUIVOS BUSINESS MASTER
 → GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
 → MATERIALIZED DOCUMENTARILY AS ANNEX B
 
-ANNEXES C / D / E / F
+DASHBOARD ORGANIZATION MASTER
+→ GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
+→ MATERIALIZED DOCUMENTARILY AS ANNEX C
+
+ANNEXES D / E / F
 → RESERVED / NOT MATERIALIZED
 
 REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
