@@ -1927,6 +1927,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intelligence-architecture/dashboard-collective-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Coletivo — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3162,6 +3197,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#intelligence-architecture-dashboard-collective-master-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.7 Dashboard Coletivo — Documento Mestre
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3903,6 +3949,17 @@
     <span class="md-ellipsis">
       
         8.3.6 Dashboard Organização — Documento Mestre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intelligence-architecture-dashboard-collective-master-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.7 Dashboard Coletivo — Documento Mestre
       
     </span>
   </a>
@@ -18807,8 +18864,8 @@ MASTER ESPECIALIZADO
 </tr>
 <tr>
 <td>D</td>
-<td>Dashboard Coletivo</td>
-<td>RESERVED / NOT MATERIALIZED</td>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001</code> — Dashboard Coletivo</td>
+<td>MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER</td>
 </tr>
 <tr>
 <td>E</td>
@@ -18858,7 +18915,16 @@ MASTER ESPECIALIZADO
 </code></pre></div>
 <h4 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-dashboard-coletivo">Dashboard Coletivo<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-dashboard-coletivo" title="Permanent link">&para;</a></h4>
 <p>Finalidade candidata original: leitura quantitativa de participação e atuação do Coletivo, incluindo Pessoas relacionadas, oportunidades, inscrições/participações, demografia, geografia e cadastros quando autorizados.</p>
+<p>Esse escopo foi aprofundado documentalmente no Anexo D sem autorizar dados reais, implementação, materialização do Início autenticado ou acesso individual além da autoridade aplicável. <code>Inscrições</code> e <code>cadastros</code> permanecem proveniências candidatas separadas e bloqueadas até contrato semântico próprio; não são automaticamente solicitação, conta técnica, vínculo, pertencimento ou participação.</p>
 <p><code>Reputação</code> permanece bloqueada até possuir definição, fórmula, finalidade, autoridade de leitura, contestação e governança próprias.</p>
+<div class="highlight"><pre><span></span><code>DOCUMENTAÇÃO DO ANEXO D
+≠ INÍCIO AUTENTICADO DEFINIDO
+≠ SURFACE MAP / STATE MAP
+≠ DASHBOARD OPERACIONAL IMPLEMENTADO
+
+REPUTAÇÃO
+→ BLOCKED / NOT DEFINED
+</code></pre></div>
 <h4 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-dashboard-pessoa">Dashboard Pessoa<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-dashboard-pessoa" title="Permanent link">&para;</a></h4>
 <p>Finalidade candidata original: oferecer compreensão individual autorizada da própria trajetória, históricos, contextos, evolução, participações, relações, eventos e outputs de Graph Analytics/Intelligence quando legitimamente autorizados e explicáveis.</p>
 <div class="highlight"><pre><span></span><code>DECLARADO ≠ OBSERVADO ≠ CALCULADO ≠ INFERIDO ≠ PREDITO
@@ -18897,7 +18963,7 @@ DASHBOARD DOCUMENTADO
 ≠ DADO REAL CONECTADO
 </code></pre></div>
 <p>Quando uma autoridade de domínio mantiver uma superfície, relação, métrica ou capacidade como não definida, este master e seus anexos devem preservar esse estado.</p>
-<p>A existência do master de Organização e a futura existência do master de Coletivo <strong>não deverão ser interpretadas como materialização de Home autenticada, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
+<p>A existência dos masters de Organização e Coletivo <strong>não deve ser interpretada como materialização de Home/Início autenticado, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
 <hr />
 <h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-4-principio-arquitetural">4. Princípio arquitetural<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-4-principio-arquitetural" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>GKR / PRODUTO / GOVERNANÇA
@@ -19525,7 +19591,7 @@ ANEXO C — ORGANIZAÇÃO
 → MATERIALIZED DOCUMENTARILY
 
 ANEXO D — COLETIVO
-→ RESERVED / NOT MATERIALIZED
+→ MATERIALIZED DOCUMENTARILY
 
 ANEXO E — PESSOA
 → RESERVED / NOT MATERIALIZED
@@ -19537,7 +19603,7 @@ ANEXO F — ADS / OPPORTUNITY BOOST
 <hr />
 <h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-14-estado-final-desta-versao">14. Estado final desta versão<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-14-estado-final-desta-versao" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.5
+→ v0.2.6
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -19573,7 +19639,11 @@ DASHBOARD ORGANIZATION MASTER
 → GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
 → MATERIALIZED DOCUMENTARILY AS ANNEX C
 
-ANNEXES D / E / F
+DASHBOARD COLLECTIVE MASTER
+→ GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
+→ MATERIALIZED DOCUMENTARILY AS ANNEX D
+
+ANNEXES E / F
 → RESERVED / NOT MATERIALIZED
 
 REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
@@ -23268,7 +23338,1084 @@ REPLIT BUILD
 ANNEX D / E / F
 → UNCHANGED / NOT MATERIALIZED BY THIS DOCUMENT
 </code></pre></div>
-<p>A materialização documental deste master não autoriza dados reais, implementação, produção, ampliação de disclosure ou promoção automática de qualquer KPI além de seu status governado.</p></section></section><section class="print-page" id="adr-adr-007-neo4j-primary-graph-reference" heading-number="8.4"><h1 id="adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo">ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo" title="Permanent link">&para;</a></h1>
+<p>A materialização documental deste master não autoriza dados reais, implementação, produção, ampliação de disclosure ou promoção automática de qualquer KPI além de seu status governado.</p></section><section class="print-page" id="intelligence-architecture-dashboard-collective-master-specification" heading-number="8.3.7"><h1 id="intelligence-architecture-dashboard-collective-master-specification-dashboard-coletivo-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Coletivo — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-dashboard-coletivo-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento é o <strong>Anexo D</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Coletivo</strong>.</p>
+<p>Seu objetivo é consolidar, antes de qualquer implementação, o recorte analítico legítimo da atuação de um Coletivo, de suas atividades, participações, vínculos, decisões, relações, evidências e capacidades dentro das autoridades vigentes.</p>
+<p>O Dashboard Coletivo deve apoiar compreensão coletiva sem converter Pessoas em recursos do Coletivo, sem transformar participação em obrigação, sem confundir popularidade com avanço e sem produzir reputação por inferência.</p>
+<p>Regra central:</p>
+<blockquote>
+<p><strong>O Coletivo pode compreender sua própria atuação, participação autorizada, governança, relações, aprendizados, evidências e capacidade; ele não recebe autoridade geral sobre a Journey, identidade, evolução ou contexto privado das Pessoas participantes.</strong></p>
+</blockquote>
+<p>Este master não redefine a experiência autenticada principal do Coletivo, não cria Início, menu, Surface Map, State Map, wireframe, RBAC técnico ou implementação.</p>
+<div class="highlight"><pre><span></span><code>DASHBOARD COLETIVO
+≠ INÍCIO AUTENTICADO DO COLETIVO
+≠ SURFACE MAP
+≠ STATE MAP
+≠ REDE SOCIAL GENÉRICA
+≠ GUIVOS BUSINESS
+≠ ADS
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-2-autoridades-de-dominio-e-precedencia">2. Autoridades de domínio e precedência<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-2-autoridades-de-dominio-e-precedencia" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Autoridade</th>
+<th>Papel neste master</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code></td>
+<td>envelope transversal de KPI, acesso, disclosure e handoff</td>
+</tr>
+<tr>
+<td><code>GKR-UX-ORGCOL-AUTH-JOBS-001</code></td>
+<td>atores, autoridade, limites e jobs autenticados do Coletivo</td>
+</tr>
+<tr>
+<td><code>GKR-UX-ORGCOL-AUTH-IA-001</code></td>
+<td>domínios de informação e separação entre síntese, atividade, participação, governança, relações, evidência e capacidade</td>
+</tr>
+<tr>
+<td><code>GKR-JOURNEY-COLLECTIVE-001</code></td>
+<td>continuidade integrada e maturidade dos fluxos especializados do Coletivo</td>
+</tr>
+<tr>
+<td><code>UXA-014</code></td>
+<td>fundamento funcional de Organização e Coletivo</td>
+</tr>
+<tr>
+<td><code>UXA-019</code></td>
+<td>autoridade bilateral e ciclo de relações Organização ↔ Coletivo</td>
+</tr>
+<tr>
+<td><code>GAI-001 / GAI-002 / GIA-COG-001</code></td>
+<td>evidência, natureza de afirmações, explicabilidade e <code>COMPREENDER ≠ DECIDIR</code></td>
+</tr>
+<tr>
+<td><code>GEM-009-MEASUREMENT-CONTRACT-001</code></td>
+<td>composição obrigatória caso métricas econômicas venham a ser introduzidas</td>
+</tr>
+<tr>
+<td><code>UXA-100 / A3 / A4</code></td>
+<td>fluxo especializado de Planos e capacidade do Coletivo</td>
+</tr>
+</tbody>
+</table>
+<p>Em caso de conflito, este master preserva a autoridade especializada mais restritiva e mantém o indicador bloqueado até adjudicação própria.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-3-estado-e-boundary">3. Estado e boundary<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-3-estado-e-boundary" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
+→ ACTIVE
+→ PRE-IMPLEMENTATION DASHBOARD MASTER
+
+COLETIVO
+→ PARTICIPANT TYPE
+→ COLETIVO ≠ ORGANIZAÇÃO
+→ COLETIVO ≠ GUIVOS BUSINESS
+
+DASHBOARD COLETIVO
+→ ANALYTICAL CONSUMPTION SURFACE
+→ NOT SOURCE OF TRUTH
+→ NOT AUTHENTICATED START SURFACE
+→ NOT OPERATIONAL SYSTEM OF RECORD
+
+REAL DATA CONNECTION
+→ NOT AUTHORIZED BY THIS DOCUMENT
+
+REPLIT BUILD
+→ NOT AUTHORIZED BY THIS DOCUMENT
+→ HANDOFF SPECIFICATION ONLY
+
+PERSON-LEVEL PRIVATE CONTEXT
+→ NOT PART OF DEFAULT COLLECTIVE DISCLOSURE
+
+PERSONAL JOURNEY
+→ NOT DISCLOSED TO COLLECTIVE BY DEFAULT
+</code></pre></div>
+<p>Pertencimento, participação, papel aceito, moderação, representação e autoridade permanecem conceitos distintos.</p>
+<div class="highlight"><pre><span></span><code>PARTICIPANTE
+≠ ADMINISTRADOR
+≠ MODERADOR
+≠ REPRESENTANTE
+
+PERTENCIMENTO
+≠ AUTORIDADE
+
+PARTICIPAÇÃO
+≠ OBRIGAÇÃO PERMANENTE
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-4-relacao-com-a-experiencia-autenticada-do-coletivo">4. Relação com a experiência autenticada do Coletivo<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-4-relacao-com-a-experiencia-autenticada-do-coletivo" title="Permanent link">&para;</a></h2>
+<p>A Arquitetura da Informação autenticada organiza o Coletivo em sete domínios principais e uma capacidade comercial contextual:</p>
+<div class="highlight"><pre><span></span><code>Início
+Atividades e Oportunidades
+Participação
+Governança e Proteção
+Relações
+Aprendizados e Evidências
+Coletivo e Autoridade
+Planos e Capacidade [especializado / contextual]
+</code></pre></div>
+<p>Este Dashboard não substitui esses domínios.</p>
+<p>O <code>Início</code> autenticado deve sintetizar propósito, Momento coletivo, atenção material, decisões abertas e Próximos Passos. Ele não deve ser reduzido a painel de números, feed, ranking ou placar de popularidade.</p>
+<div class="highlight"><pre><span></span><code>SÍNTESE DO MOMENTO COLETIVO
+≠ DASHBOARD
+
+DASHBOARD
+→ PODE APOIAR COM LEITURAS ANALÍTICAS AUTORIZADAS
+→ NÃO DEFINE O MOMENTO COLETIVO SOZINHO
+</code></pre></div>
+<p>A existência deste master não promove mapa de superfícies, estados, fluxos principais, wireframes ou implementação da experiência autenticada.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-5-areas-analiticas-candidatas">5. Áreas analíticas candidatas<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-5-areas-analiticas-candidatas" title="Permanent link">&para;</a></h2>
+<p>O Dashboard Coletivo é organizado em <strong>nove áreas analíticas</strong>:</p>
+<ol>
+<li>Visão Analítica Coletiva;</li>
+<li>Atividades e Oportunidades;</li>
+<li>Participação e Vínculos;</li>
+<li>Governança, Decisões e Proteção;</li>
+<li>Relações Institucionais;</li>
+<li>Aprendizados, Evidências e Resultados;</li>
+<li>Planos e Capacidade;</li>
+<li>Território e Demografia Autorizados;</li>
+<li>Qualidade, Freshness, Privacidade e Governança do Dado.</li>
+</ol>
+<p>A área de Visão Analítica Coletiva compõe leituras das famílias governadas neste master. Ela não constitui família KPI autônoma.</p>
+<div class="highlight"><pre><span></span><code>ÁREA DOCUMENTADA
+≠ KPI DEFINIDO
+≠ DADO DISPONÍVEL
+≠ DISCLOSURE AUTORIZADO
+≠ IMPLEMENTAÇÃO AUTORIZADA
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-6-classes-funcionais-de-consumo">6. Classes funcionais de consumo<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-6-classes-funcionais-de-consumo" title="Permanent link">&para;</a></h2>
+<p>As classes abaixo são conceituais e não constituem RBAC técnico implementado:</p>
+<table>
+<thead>
+<tr>
+<th>Classe funcional</th>
+<th>Escopo candidato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coletivo — visão coletiva</td>
+<td>agregados do próprio Coletivo e objetos sob sua autoridade</td>
+</tr>
+<tr>
+<td>Coletivo — operação</td>
+<td>atividades, oportunidades, participação e relações sob escopo legítimo</td>
+</tr>
+<tr>
+<td>Coletivo — governança/proteção</td>
+<td>decisões, consultas, contestação e proteção estritamente necessárias ao papel autorizado</td>
+</tr>
+<tr>
+<td>Coletivo — aprendizados/prestação de contas</td>
+<td>evidências, aprendizados e resultados permitidos</td>
+</tr>
+<tr>
+<td>Coletivo — capacidade/comercial</td>
+<td>plano vigente, capacidade e eventos de plano autorizados</td>
+</tr>
+<tr>
+<td>Coletivo — Data/BI</td>
+<td>exportações ou APIs do próprio recorte quando autorizadas</td>
+</tr>
+<tr>
+<td>Guivos — operação/suporte</td>
+<td>dados necessários à finalidade operacional autorizada</td>
+</tr>
+<tr>
+<td>Guivos — Intelligence/Data</td>
+<td>inputs e outputs necessários à finalidade analítica autorizada</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>SER RESPONSÁVEL PELO COLETIVO
+≠ ACESSO A TODO DADO DO COLETIVO
+
+PERTENCER AO COLETIVO
+≠ ACESSO A DADOS DE OUTROS PARTICIPANTES
+
+DADO AGREGADO
+≠ AUTOMATICAMENTE SEGURO PARA DISCLOSURE
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-7-vocabulario-de-kpi-e-readiness">7. Vocabulário de KPI e readiness<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-7-vocabulario-de-kpi-e-readiness" title="Permanent link">&para;</a></h2>
+<p>Prefixo deste master:</p>
+<div class="highlight"><pre><span></span><code>COL-KPI-&lt;FAMÍLIA&gt;-NNN
+</code></pre></div>
+<p>Famílias iniciais:</p>
+<ul>
+<li><code>ACT</code> — atividades e oportunidades;</li>
+<li><code>PAR</code> — participação, solicitações e vínculos;</li>
+<li><code>GOV</code> — governança, decisões e proteção;</li>
+<li><code>REL</code> — relações institucionais;</li>
+<li><code>EVD</code> — aprendizados, evidências e resultados;</li>
+<li><code>CAP</code> — planos e capacidade;</li>
+<li><code>GEO</code> — território e demografia autorizados;</li>
+<li><code>DQ</code> — qualidade, freshness, privacidade e governança.</li>
+</ul>
+<p>A <strong>Visão Analítica Coletiva</strong> compõe indicadores dessas famílias e não cria namespace próprio nesta versão.</p>
+<p>Estados usados:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>proposed</code></td>
+<td>significado ou contrato ainda incompleto; não build-ready</td>
+</tr>
+<tr>
+<td><code>source_pending</code></td>
+<td>semântica fechada o suficiente, mas source/data contract ainda bloqueia readiness</td>
+</tr>
+<tr>
+<td><code>defined</code></td>
+<td>contrato documental mínimo completo; ainda requer gates de domínio e build</td>
+</tr>
+<tr>
+<td><code>approved-equivalent</code></td>
+<td>autoridade especializada fornece estado equivalente aceito pelo gate</td>
+</tr>
+</tbody>
+</table>
+<p>Nesta versão, <strong>todos os KPIs candidatos permanecem <code>proposed / NOT_READY</code></strong>.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-8-reputacao-bloqueio-explicito">8. Reputação — bloqueio explícito<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-8-reputacao-bloqueio-explicito" title="Permanent link">&para;</a></h2>
+<p>O master global preserva <code>Reputação</code> como conceito ainda não definido para este dashboard.</p>
+<p>Consequentemente:</p>
+<div class="highlight"><pre><span></span><code>REPUTAÇÃO
+→ BLOCKED
+→ NOT A KPI FAMILY
+→ NO FORMULA
+→ NO SCORE
+→ NO RANKING
+→ NO AUTOMATIC DERIVATION FROM ACTIVITY OR PARTICIPATION
+</code></pre></div>
+<p>Qualquer futura métrica de reputação exigirá, por ato próprio e antes de materialização:</p>
+<ul>
+<li>definição semântica;</li>
+<li>finalidade legítima;</li>
+<li>fórmula;</li>
+<li>população e unidade de análise;</li>
+<li>autoridade de leitura;</li>
+<li>contestação e correção;</li>
+<li>riscos de incentivo e discriminação;</li>
+<li>proteção contra retaliação;</li>
+<li>governança e responsável;</li>
+<li>critérios de validade e expiração;</li>
+<li>explicabilidade proporcional.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>MAIS MEMBROS
+≠ MAIOR REPUTAÇÃO
+
+MAIS ATIVIDADE
+≠ MAIOR REPUTAÇÃO
+
+MAIS PUBLICAÇÕES
+≠ MAIOR REPUTAÇÃO
+
+PAUSA / RECUSA / SAÍDA
+≠ REPUTAÇÃO NEGATIVA
+</code></pre></div>
+<p>Este master não cria <code>COL-KPI-REP-*</code>.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-9-familia-act-atividades-e-oportunidades">9. Família ACT — Atividades e Oportunidades<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-9-familia-act-atividades-e-oportunidades" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COL-KPI-ACT-001</td>
+<td>Atividades válidas</td>
+<td>atividades do Coletivo em estados válidos dentro do recorte autorizado</td>
+<td>atividades</td>
+<td>proposed</td>
+<td>activity taxonomy + lifecycle + source</td>
+</tr>
+<tr>
+<td>COL-KPI-ACT-002</td>
+<td>Atividades ativas</td>
+<td>atividades em estado ativo válido na janela</td>
+<td>atividades</td>
+<td>proposed</td>
+<td>active-state + temporal contract</td>
+</tr>
+<tr>
+<td>COL-KPI-ACT-003</td>
+<td>Atividades concluídas no período</td>
+<td>atividades com conclusão operacional válida no período</td>
+<td>atividades/período</td>
+<td>proposed</td>
+<td>completion event + window</td>
+</tr>
+<tr>
+<td>COL-KPI-ACT-004</td>
+<td>Oportunidades válidas</td>
+<td>oportunidades do Coletivo em estados válidos</td>
+<td>oportunidades</td>
+<td>proposed</td>
+<td>opportunity state + source</td>
+</tr>
+<tr>
+<td>COL-KPI-ACT-005</td>
+<td>Oportunidades ativas</td>
+<td>oportunidades em estado ativo válido na janela</td>
+<td>oportunidades</td>
+<td>proposed</td>
+<td>active-state + temporal contract</td>
+</tr>
+<tr>
+<td>COL-KPI-ACT-006</td>
+<td>Distribuição por Domínio de Evolução</td>
+<td>distribuição autorizada de atividades/oportunidades por <code>JED-*</code> aplicável</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>domain-link semantics + denominator</td>
+</tr>
+</tbody>
+</table>
+<p>Regras:</p>
+<div class="highlight"><pre><span></span><code>ATIVIDADE REALIZADA
+≠ RESULTADO
+≠ IMPACTO
+
+ATIVIDADE EM JED-*
+≠ PARTICIPANTE CLASSIFICADO NESSE DOMÍNIO
+
+PUBLICAÇÃO
+≠ DISTRIBUIÇÃO GARANTIDA
+≠ RELEVÂNCIA
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-10-familia-par-participacao-solicitacoes-e-vinculos">10. Família PAR — Participação, solicitações e vínculos<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-10-familia-par-participacao-solicitacoes-e-vinculos" title="Permanent link">&para;</a></h2>
+<p>Esta família mede somente relações de participação legitimamente vinculadas ao Coletivo.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COL-KPI-PAR-001</td>
+<td>Solicitações válidas</td>
+<td>solicitações de participação válidas no recorte autorizado</td>
+<td>solicitações</td>
+<td>proposed</td>
+<td>request lifecycle + source</td>
+</tr>
+<tr>
+<td>COL-KPI-PAR-002</td>
+<td>Solicitações abertas</td>
+<td>solicitações ainda abertas em estado válido</td>
+<td>solicitações</td>
+<td>proposed</td>
+<td>open-state contract</td>
+</tr>
+<tr>
+<td>COL-KPI-PAR-003</td>
+<td>Vínculos ativos</td>
+<td>vínculos de pertencimento em estado ativo válido</td>
+<td>vínculos</td>
+<td>proposed</td>
+<td>belonging lifecycle + source</td>
+</tr>
+<tr>
+<td>COL-KPI-PAR-004</td>
+<td>Participantes únicos</td>
+<td>Pessoas distintas com vínculo/participação válida segundo contrato aplicável</td>
+<td>pessoas</td>
+<td>proposed</td>
+<td>population + purpose + disclosure</td>
+</tr>
+<tr>
+<td>COL-KPI-PAR-005</td>
+<td>Participações válidas</td>
+<td>eventos de participação válidos no período e finalidade autorizada</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>participation taxonomy + source</td>
+</tr>
+<tr>
+<td>COL-KPI-PAR-006</td>
+<td>Pausas e saídas no período</td>
+<td>eventos legítimos de pausa/saída sem valoração reputacional</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>pause/exit semantics + temporal contract</td>
+</tr>
+<tr>
+<td>COL-KPI-PAR-007</td>
+<td>Papéis aceitos por classe</td>
+<td>distribuição agregada de papéis voluntariamente aceitos quando legítima e segura</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>role semantics + disclosure</td>
+</tr>
+</tbody>
+</table>
+<p>Regras:</p>
+<div class="highlight"><pre><span></span><code>SOLICITAÇÃO
+≠ PERTENCIMENTO
+
+PERTENCIMENTO
+≠ FUNÇÃO
+≠ MODERAÇÃO
+≠ REPRESENTAÇÃO
+
+PARTICIPAÇÃO
+≠ CONSENTIMENTO PARA TODO USO DE DADO
+
+PAUSA / SAÍDA
+→ NÃO É FALHA POR PADRÃO
+</code></pre></div>
+<p>Pessoa individual não é nível padrão de drill-down deste dashboard.</p>
+<h3 id="intelligence-architecture-dashboard-collective-master-specification-proveniencia-candidata-preservada-inscricoes-e-cadastros">Proveniência candidata preservada — inscrições e cadastros<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-proveniencia-candidata-preservada-inscricoes-e-cadastros" title="Permanent link">&para;</a></h3>
+<p>O master global preserva <code>inscrições</code> e <code>cadastros</code> como necessidades candidatas originais. Neste Anexo D, ambos permanecem conceitos <strong>separados e BLOCKED</strong> até contrato semântico próprio que defina finalidade, população, unidade de análise, lifecycle e source.</p>
+<div class="highlight"><pre><span></span><code>INSCRIÇÃO
+≠ SOLICITAÇÃO
+≠ CONTA TÉCNICA
+≠ VÍNCULO
+≠ PERTENCIMENTO
+≠ PARTICIPAÇÃO
+
+CADASTRO
+≠ SOLICITAÇÃO
+≠ CONTA TÉCNICA
+≠ VÍNCULO
+≠ PERTENCIMENTO
+≠ PARTICIPAÇÃO
+</code></pre></div>
+<p>Nesta versão, <code>inscrições</code> e <code>cadastros</code> <strong>não criam nem mapeiam automaticamente qualquer <code>COL-KPI-PAR-*</code></strong>. Uma futura materialização exige adjudicação própria antes de integrar o catálogo analítico.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-11-familia-gov-governanca-decisoes-e-protecao">11. Família GOV — Governança, decisões e proteção<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-11-familia-gov-governanca-decisoes-e-protecao" title="Permanent link">&para;</a></h2>
+<p>Esta família exige proteção reforçada porque pode envolver decisões, conflitos, moderação, contestação e segurança.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COL-KPI-GOV-001</td>
+<td>Decisões abertas</td>
+<td>decisões coletivas formalmente abertas segundo a regra de governança aplicável</td>
+<td>decisões</td>
+<td>proposed</td>
+<td>decision/governance contract</td>
+</tr>
+<tr>
+<td>COL-KPI-GOV-002</td>
+<td>Consultas abertas</td>
+<td>consultas legitimamente abertas e ainda vigentes</td>
+<td>consultas</td>
+<td>proposed</td>
+<td>consultation semantics + authority</td>
+</tr>
+<tr>
+<td>COL-KPI-GOV-003</td>
+<td>Decisões concluídas</td>
+<td>decisões com encerramento válido no período</td>
+<td>decisões/período</td>
+<td>proposed</td>
+<td>decision lifecycle + temporal contract</td>
+</tr>
+<tr>
+<td>COL-KPI-GOV-004</td>
+<td>Contestações/revisões abertas</td>
+<td>processos de contestação ou revisão materialmente abertos</td>
+<td>processos</td>
+<td>proposed</td>
+<td>contestation semantics + restricted disclosure</td>
+</tr>
+<tr>
+<td>COL-KPI-GOV-005</td>
+<td>Casos de proteção/moderação abertos</td>
+<td>casos legitimamente classificados e acessíveis somente ao papel autorizado</td>
+<td>casos</td>
+<td>proposed</td>
+<td>protection taxonomy + sensitivity + access</td>
+</tr>
+<tr>
+<td>COL-KPI-GOV-006</td>
+<td>Casos revisados/encerrados</td>
+<td>casos concluídos segundo processo governado</td>
+<td>casos/período</td>
+<td>proposed</td>
+<td>lifecycle + evidence + restricted disclosure</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>CONSULTA
+≠ VOTAÇÃO UNIVERSAL
+≠ OBRIGAÇÃO DE RESPOSTA
+
+ACESSO TÉCNICO
+≠ AUTORIDADE DE GOVERNANÇA
+
+CONTAGEM DE CASOS DE PROTEÇÃO
+≠ DISCLOSURE AUTOMATICAMENTE SEGURO
+</code></pre></div>
+<p>Nenhum destes indicadores autoriza exposição de denúncia, conflito, vulnerabilidade ou identidade de Pessoa além do mínimo necessário à finalidade e autoridade aplicáveis.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-12-familia-rel-relacoes-institucionais">12. Família REL — Relações institucionais<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-12-familia-rel-relacoes-institucionais" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COL-KPI-REL-001</td>
+<td>Relações ativas</td>
+<td>relações institucionais do Coletivo em estado ativo válido</td>
+<td>relações</td>
+<td>proposed</td>
+<td>UXA-019 + lifecycle/source</td>
+</tr>
+<tr>
+<td>COL-KPI-REL-002</td>
+<td>Relações por contraparte/tipo</td>
+<td>distribuição agregada por classe legitimamente definida</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>taxonomy + disclosure</td>
+</tr>
+<tr>
+<td>COL-KPI-REL-003</td>
+<td>Propostas de relação abertas</td>
+<td>propostas bilaterais ainda abertas em estado válido</td>
+<td>propostas</td>
+<td>proposed</td>
+<td>bilateral state contract</td>
+</tr>
+<tr>
+<td>COL-KPI-REL-004</td>
+<td>Relações em revisão</td>
+<td>relações com revisão material válida em andamento</td>
+<td>relações</td>
+<td>proposed</td>
+<td>review-state contract</td>
+</tr>
+<tr>
+<td>COL-KPI-REL-005</td>
+<td>Relações pausadas/encerradas no período</td>
+<td>eventos válidos de pausa/encerramento</td>
+<td>relações/período</td>
+<td>proposed</td>
+<td>lifecycle + temporal contract</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>APOIO
+≠ PROPRIEDADE
+
+PATROCÍNIO
+≠ GOVERNO
+
+INFRAESTRUTURA
+≠ AUTORIDADE SOBRE PERTENCIMENTO
+</code></pre></div>
+<p>Quantificar uma relação não transfere ao patrocinador, Organização ou contraparte autoridade sobre a governança interna do Coletivo.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-13-familia-evd-aprendizados-evidencias-e-resultados">13. Família EVD — Aprendizados, evidências e resultados<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-13-familia-evd-aprendizados-evidencias-e-resultados" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COL-KPI-EVD-001</td>
+<td>Aprendizados registrados</td>
+<td>aprendizados coletivos válidos e documentados no recorte autorizado</td>
+<td>aprendizados</td>
+<td>proposed</td>
+<td>learning semantics + source</td>
+</tr>
+<tr>
+<td>COL-KPI-EVD-002</td>
+<td>Evidências registradas</td>
+<td>evidências coletivas válidas associadas ao recorte</td>
+<td>evidências</td>
+<td>proposed</td>
+<td>evidence validity + source</td>
+</tr>
+<tr>
+<td>COL-KPI-EVD-003</td>
+<td>Contribuições registradas</td>
+<td>contribuições legitimamente registradas sem ranking automático de Pessoas</td>
+<td>contribuições</td>
+<td>proposed</td>
+<td>contribution semantics + source</td>
+</tr>
+<tr>
+<td>COL-KPI-EVD-004</td>
+<td>Resultados autorizados</td>
+<td>resultados com definição e evidência suficientes para a afirmação permitida</td>
+<td>resultados</td>
+<td>proposed</td>
+<td>claim/evidence contract</td>
+</tr>
+<tr>
+<td>COL-KPI-EVD-005</td>
+<td>Itens sem evidência suficiente</td>
+<td>objetos cuja afirmação pretendida não possui evidência suficiente</td>
+<td>itens</td>
+<td>proposed</td>
+<td>evidence sufficiency contract</td>
+</tr>
+<tr>
+<td>COL-KPI-EVD-006</td>
+<td>Revisões/correções de evidência</td>
+<td>eventos de revisão ou correção materialmente válidos</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>provenance + correction lifecycle</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>MAIS MEMBROS
+≠ MAIS AVANÇO
+
+MAIS PUBLICAÇÕES
+≠ MAIS CONTRIBUIÇÃO
+
+ATIVIDADE
+≠ RESULTADO
+
+RESULTADO
+≠ IMPACTO
+
+CORRELAÇÃO
+≠ CAUSALIDADE
+</code></pre></div>
+<p>Nenhuma métrica desta família cria score universal de impacto, reputação, legitimidade ou valor de Pessoa.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-14-familia-cap-planos-e-capacidade">14. Família CAP — Planos e capacidade<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-14-familia-cap-planos-e-capacidade" title="Permanent link">&para;</a></h2>
+<p>O Coletivo possui fluxo especializado de Planos com taxonomia <code>Livre / Mobiliza / Impacta / Rede</code>.</p>
+<p>O nome comercial <code>Impacta</code> não constitui prova de impacto produzido.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COL-KPI-CAP-001</td>
+<td>Plano coletivo vigente</td>
+<td>classificação do plano vigente quando contratualmente confirmada</td>
+<td>categoria</td>
+<td>proposed</td>
+<td>plan source + entitlement contract</td>
+</tr>
+<tr>
+<td>COL-KPI-CAP-002</td>
+<td>Uso de capacidade</td>
+<td>uso da capacidade definida pelo plano no ciclo aplicável</td>
+<td>unidade/%</td>
+<td>proposed</td>
+<td>entitlement + cycle + source</td>
+</tr>
+<tr>
+<td>COL-KPI-CAP-003</td>
+<td>Capacidade disponível</td>
+<td>capacidade ainda disponível conforme contrato de plano</td>
+<td>unidade/%</td>
+<td>proposed</td>
+<td>entitlement + balance semantics</td>
+</tr>
+<tr>
+<td>COL-KPI-CAP-004</td>
+<td>Eventos de alteração de plano</td>
+<td>upgrades/downgrades/cancelamentos confirmados no período</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>plan lifecycle + source</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>PLANO PAGO
+≠ RELEVÂNCIA
+≠ LEGITIMIDADE
+≠ AUTORIDADE
+≠ IMPACTO
+≠ ACESSO AO CONTEXTO PESSOAL
+
+PLANO "IMPACTA"
+≠ IMPACTO COMPROVADO
+</code></pre></div>
+<p>Preço, entitlement, quota ou benefício não congelado não pode ser inventado pelo dashboard.</p>
+<p>Qualquer métrica monetária futura relacionada a plano, apoio, patrocínio ou outra relação econômica deve compor com <code>GEM-009-MEASUREMENT-CONTRACT-001</code> e com o contrato de domínio aplicável.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-15-familia-geo-territorio-e-demografia-autorizados">15. Família GEO — território e demografia autorizados<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-15-familia-geo-territorio-e-demografia-autorizados" title="Permanent link">&para;</a></h2>
+<p>Leituras territoriais e demográficas devem operar por minimização e proteção contra reidentificação.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COL-KPI-GEO-001</td>
+<td>Distribuição territorial autorizada</td>
+<td>distribuição agregada de participação/vínculos por recorte territorial legítimo</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>geography source + disclosure threshold</td>
+</tr>
+<tr>
+<td>COL-KPI-GEO-002</td>
+<td>Cobertura territorial de atividades</td>
+<td>distribuição das atividades/oportunidades por território aplicável</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>object geography semantics</td>
+</tr>
+<tr>
+<td>COL-KPI-GEO-003</td>
+<td>Perfil demográfico agregado autorizado</td>
+<td>distribuição agregada apenas de atributos permitidos para finalidade legítima</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>privacy + purpose + thresholds + source</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>DEMOGRAFIA DISPONÍVEL
+≠ DEMOGRAFIA NECESSÁRIA
+≠ DEMOGRAFIA EXIBÍVEL
+
+SEGMENTO PEQUENO
+→ PODE EXIGIR SUPRESSÃO
+</code></pre></div>
+<p>O Coletivo não recebe dados demográficos individuais por padrão por meio deste dashboard.</p>
+<p>Domínio de Evolução de uma atividade não pode ser usado para inferir atributo sensível ou classificação pessoal dos participantes.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-16-familia-dq-qualidade-freshness-privacidade-e-governanca">16. Família DQ — qualidade, freshness, privacidade e governança<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-16-familia-dq-qualidade-freshness-privacidade-e-governanca" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COL-KPI-DQ-001</td>
+<td>Freshness compliance</td>
+<td>contratos/datasets dentro do SLA / monitorados</td>
+<td>%</td>
+<td>proposed</td>
+<td>freshness/SLA contract</td>
+</tr>
+<tr>
+<td>COL-KPI-DQ-002</td>
+<td>Indicadores indisponíveis</td>
+<td>KPIs esperados sem dado utilizável</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>registry + availability rules</td>
+</tr>
+<tr>
+<td>COL-KPI-DQ-003</td>
+<td>Supressões de disclosure</td>
+<td>células/segmentos protegidos por política</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>disclosure policy</td>
+</tr>
+<tr>
+<td>COL-KPI-DQ-004</td>
+<td>Eventos rejeitados</td>
+<td>eventos coletivos rejeitados por validação</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>validation taxonomy</td>
+</tr>
+<tr>
+<td>COL-KPI-DQ-005</td>
+<td>Completude de proveniência</td>
+<td>outputs com proveniência suficiente / outputs avaliados</td>
+<td>%</td>
+<td>proposed</td>
+<td>provenance contract</td>
+</tr>
+</tbody>
+</table>
+<p>Qualidade qualifica confiança; não deve fabricar aparência de precisão.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-17-filtros-candidatos">17. Filtros candidatos<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-17-filtros-candidatos" title="Permanent link">&para;</a></h2>
+<p>Filtros somente podem restringir o escopo autorizado:</p>
+<ul>
+<li>período e comparação de período;</li>
+<li>atividade/oportunidade;</li>
+<li>estado do objeto;</li>
+<li>tipo de participação/vínculo quando legítimo;</li>
+<li>papel aceito agregado quando disclosure permitir;</li>
+<li>classe de decisão/processo de governança;</li>
+<li>relação/contraparte quando disclosure permitir;</li>
+<li>Domínio de Evolução da atividade quando legitimamente aplicável;</li>
+<li>território autorizado;</li>
+<li>plano/ciclo de capacidade;</li>
+<li>natureza de evidência;</li>
+<li>classe de resultado.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>FILTRO
+→ SUBCONJUNTO DO ACCESS SCOPE
+→ NUNCA AMPLIA DISCLOSURE
+</code></pre></div>
+<p>Filtros de proteção, moderação, contestação ou identidade exigem proteção adicional e não são automaticamente disponíveis para toda pessoa responsável pelo Coletivo.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-18-drill-down">18. Drill-down<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-18-drill-down" title="Permanent link">&para;</a></h2>
+<p>Estrutura candidata:</p>
+<div class="highlight"><pre><span></span><code>N0 — COLETIVO AUTORIZADO
+→ N1 — FAMÍLIA ANALÍTICA
+→ N2 — OBJETO / PERÍODO / SEGMENTO AUTORIZADO
+→ N3 — OBJETO OPERACIONAL / RELAÇÃO / PROCESSO AUTORIZADO
+</code></pre></div>
+<p>Pessoa individual não é nível padrão de drill-down.</p>
+<p>A identificação excepcional de Pessoa exige finalidade, autoridade, minimização, sensibilidade e trilha próprias fora da inferência automática deste master.</p>
+<div class="highlight"><pre><span></span><code>AGREGADO DE PARTICIPAÇÃO
+→ NÃO CRIA DIREITO DE ABRIR JOURNEY INDIVIDUAL
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-19-estados-obrigatorios-de-visualizacao">19. Estados obrigatórios de visualização<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-19-estados-obrigatorios-de-visualizacao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>LOADING
+NO_DATA
+INSUFFICIENT_DATA
+SUPPRESSED_BY_POLICY
+SOURCE_DELAYED
+NOT_ENTITLED
+ERROR
+AVAILABLE
+</code></pre></div>
+<p><code>0</code> não substitui <code>NO_DATA</code>.</p>
+<p><code>NOT_ENTITLED</code> não significa erro técnico.</p>
+<p><code>SUPPRESSED_BY_POLICY</code> não deve ser mascarado como ausência de ocorrência.</p>
+<p>Em famílias sensíveis, a própria existência de um dado pode exigir tratamento de disclosure antes de indicar quantidade.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-20-contratos-logicos-esperados">20. Contratos lógicos esperados<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-20-contratos-logicos-esperados" title="Permanent link">&para;</a></h2>
+<p>Sem definir schema físico, o Dashboard Coletivo poderá futuramente consumir contratos equivalentes a:</p>
+<ul>
+<li>Collective Aggregate;</li>
+<li>Activity / Opportunity Aggregate;</li>
+<li>Participation Request Aggregate;</li>
+<li>Membership / Link Aggregate;</li>
+<li>Participation Aggregate;</li>
+<li>Governance Decision / Consultation Aggregate;</li>
+<li>Protection / Moderation Status Aggregate;</li>
+<li>Institutional Relationship Aggregate;</li>
+<li>Learning / Evidence / Authorized Result Aggregate;</li>
+<li>Plan / Capacity Aggregate;</li>
+<li>Geography / Demography Aggregate;</li>
+<li>Data Quality / Freshness Status.</li>
+</ul>
+<p>Cada payload deve carregar, quando aplicável, <code>metric_id</code>, período, valor, unidade, population scope, source version, freshness, natureza da evidência, access class, suppression state, proveniência e confidence/uncertainty quando material.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-21-integracoes-e-minimizacao">21. Integrações e minimização<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-21-integracoes-e-minimizacao" title="Permanent link">&para;</a></h2>
+<p>O dashboard não pressupõe ingestão integral de bases de membros, mensageria, sistemas externos, CRM, ERP ou fontes de terceiros.</p>
+<div class="highlight"><pre><span></span><code>SOURCE AUTORIZADA
+→ EVENTO / AGREGADO MÍNIMO NECESSÁRIO
+→ CONTRATO DO KPI
+→ SERVING AUTORIZADO
+→ DASHBOARD COLETIVO
+</code></pre></div>
+<p>Exportação estruturada/API para ferramentas analíticas externas depende de entitlement, contrato de dados, segurança, finalidade e escopo específicos.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-22-orientacao-futura-para-replit">22. Orientação futura para Replit<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-22-orientacao-futura-para-replit" title="Permanent link">&para;</a></h2>
+<p>Quando houver autorização formal de build, a ferramenta deverá:</p>
+<ol>
+<li>não inventar KPI, fórmula, preço, entitlement, threshold, source, schema ou permissão;</li>
+<li>usar <code>COL-KPI-*</code> como identificadores estáveis, não labels visuais;</li>
+<li>bloquear KPIs <code>proposed</code> e <code>source_pending</code> para consumo canônico com dado real;</li>
+<li>preservar Coletivo ≠ Organização e Coletivo ≠ Guivos Business;</li>
+<li>não transformar Dashboard em Início autenticado, feed ou rede social genérica;</li>
+<li>não criar <code>COL-KPI-REP-*</code>, ranking ou reputação por inferência;</li>
+<li>não criar score universal de impacto, legitimidade, contribuição ou valor de Pessoa;</li>
+<li>não expor Journey individual;</li>
+<li>não converter pertencimento em papel ou autoridade;</li>
+<li>não inferir causalidade de correlações;</li>
+<li>separar atividade, participação, aprendizado, evidência, resultado e impacto;</li>
+<li>tratar filtros como restrição adicional;</li>
+<li>validar escopo no serving/backend, não somente no cliente;</li>
+<li>separar mock adapters de real adapters;</li>
+<li>preservar <code>NO_DATA</code>, <code>INSUFFICIENT_DATA</code>, <code>SUPPRESSED_BY_POLICY</code>, <code>NOT_ENTITLED</code> e <code>SOURCE_DELAYED</code>;</li>
+<li>preservar versão, freshness e proveniência;</li>
+<li>não hard-code preços ou entitlements não congelados;</li>
+<li>não converter plano pago em relevância, legitimidade ou impacto;</li>
+<li>não implementar exportação individual por conveniência;</li>
+<li>preservar proteção e não retaliação em dados de contestação/moderação;</li>
+<li>registrar a versão deste master usada na build.</li>
+</ol>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-23-criterios-de-aceite-para-futuro-handoff">23. Critérios de aceite para futuro handoff<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-23-criterios-de-aceite-para-futuro-handoff" title="Permanent link">&para;</a></h2>
+<p>Antes de qualquer release <code>READY FOR BUILD</code>:</p>
+<div class="highlight"><pre><span></span><code>[ ] KPI selecionado = defined OU approved-equivalent
+[ ] pergunta/finalidade fechadas
+[ ] população/elegibilidade definidas
+[ ] fórmula e componentes definidos
+[ ] janela temporal/granularidade definidas
+[ ] source/data contract definido
+[ ] access/disclosure definido
+[ ] thresholds de proteção definidos quando aplicáveis
+[ ] filtros/drill-down definidos
+[ ] null/zero/no-data definidos
+[ ] freshness/quality checks definidos
+[ ] governança/proteção possui acesso e sensibilidade específicos
+[ ] relações preservam bilateralidade e autonomia
+[ ] participação preserva voluntariedade
+[ ] Journey individual permanece protegida
+[ ] natureza da evidência e claims permitidos estão definidos
+[ ] reputação permanece bloqueada salvo autoridade própria posterior
+[ ] métricas econômicas, se houver, compõem com GEM-009
+[ ] Design/build authorization foi emitida
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-24-itens-explicitamente-bloqueados-nesta-versao">24. Itens explicitamente bloqueados nesta versão<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-24-itens-explicitamente-bloqueados-nesta-versao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>REAL DATA
+→ NOT AUTHORIZED
+
+BACKEND / API FÍSICA
+→ NOT DEFINED HERE
+
+TECHNICAL RBAC
+→ NOT IMPLEMENTED
+
+AUTHENTICATED START / SURFACE MAP / STATE MAP
+→ NOT DEFINED BY THIS DOCUMENT
+
+FINAL VISUAL DESIGN
+→ NOT AUTHORIZED
+
+REPLIT BUILD
+→ NOT AUTHORIZED
+
+PERSON-LEVEL JOURNEY DISCLOSURE
+→ NOT AUTHORIZED
+
+REPUTATION KPI / SCORE / RANKING
+→ BLOCKED / NOT DEFINED
+
+UNIVERSAL IMPACT / LEGITIMACY / CONTRIBUTION SCORE
+→ NOT AUTHORIZED
+
+CROSS-COLLECTIVE ACCESS
+→ NOT AUTHORIZED
+
+GUIVOS BUSINESS ANALYTICS
+→ OUTSIDE THIS MASTER
+→ ANNEX B REMAINS SEPARATE
+
+ORGANIZATION ANALYTICS
+→ OUTSIDE THIS MASTER
+→ ANNEX C REMAINS SEPARATE
+
+ADS ANALYTICS
+→ OUTSIDE THIS MASTER
+→ ANNEX F REMAINS SEPARATE
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-collective-master-specification-25-estado-final-desta-versao">25. Estado final desta versão<a class="headerlink" href="#intelligence-architecture-dashboard-collective-master-specification-25-estado-final-desta-versao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
+→ v0.1.1
+→ ACTIVE
+→ ANNEX D PRE-IMPLEMENTATION MASTER
+
+AUTHENTICATED EXPERIENCE AUTHORITIES
+→ GKR-UX-ORGCOL-AUTH-JOBS-001 + GKR-UX-ORGCOL-AUTH-IA-001 PRESERVED
+
+ANALYTICAL AREAS
+→ 9
+
+KPI FAMILIES
+→ ACT / PAR / GOV / REL / EVD / CAP / GEO / DQ
+
+REPUTATION
+→ BLOCKED
+→ NO KPI FAMILY MATERIALIZED
+
+KPI IMPLEMENTATION READINESS
+→ NONE CLAIMED BY INFERENCE
+→ ALL CURRENT KPIs = proposed
+→ ALL = NOT_READY
+
+COLLECTIVE POPULATION
+→ ONLY OWN / LEGITIMATELY AUTHORIZED RELATIONS, PARTICIPATIONS AND POPULATIONS
+
+PERSON PRIVATE CONTEXT / INDIVIDUAL JOURNEY
+→ NOT DEFAULT COLLECTIVE DISCLOSURE
+
+COLLECTIVE AUTHENTICATED START / SURFACE MAP / STATE MAP
+→ NOT MATERIALIZED BY THIS DOCUMENT
+
+REAL DATA / BACKEND / API / TECHNICAL RBAC / PRODUCTION
+→ NOT AUTHORIZED
+
+REPLIT BUILD
+→ NOT AUTHORIZED
+
+ANNEX E / F
+→ UNCHANGED / NOT MATERIALIZED BY THIS DOCUMENT
+</code></pre></div>
+<p>A materialização documental deste master não autoriza dados reais, implementação, produção, ampliação de disclosure, reputação, score/ranking ou promoção automática de qualquer KPI além de seu status governado.</p></section></section><section class="print-page" id="adr-adr-007-neo4j-primary-graph-reference" heading-number="8.4"><h1 id="adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo">ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo" title="Permanent link">&para;</a></h1>
 <h2 id="adr-adr-007-neo4j-primary-graph-reference-contexto">Contexto<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-contexto" title="Permanent link">&para;</a></h2>
 <p>A Guivos concebe dados, contexto, conhecimento e relações como ativos que precisam preservar significado, proveniência, autoridade e conexões entre Pessoas, Coletivos, Organizações, oportunidades, produtos, evidências e demais objetos governados.</p>
 <p>Nas discussões arquiteturais anteriores, Neo4j e Amazon Neptune foram comparados como alternativas para a camada de grafo. A decisão validada foi seguir com <strong>Neo4j</strong> como referência primária, sem transformar essa escolha em afirmação de implantação.</p>
@@ -29217,6 +30364,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 .print-site-enumerate-headings #intelligence-architecture-dashboard-guivos-business-master-specification > h1:before { content: '8.3.5 ' }
 
 .print-site-enumerate-headings #intelligence-architecture-dashboard-organization-master-specification > h1:before { content: '8.3.6 ' }
+
+.print-site-enumerate-headings #intelligence-architecture-dashboard-collective-master-specification > h1:before { content: '8.3.7 ' }
 
 .print-site-enumerate-headings #adr-adr-007-neo4j-primary-graph-reference > h1:before { content: '8.4 ' }
 

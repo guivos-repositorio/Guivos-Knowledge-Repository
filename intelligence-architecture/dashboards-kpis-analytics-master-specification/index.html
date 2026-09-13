@@ -1128,6 +1128,19 @@
 <span class="md-status md-status--active"></span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dashboard-collective-master-specification/">
+<span class="md-ellipsis">
+    
+  
+    Dashboard Coletivo — Documento Mestre
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1801,8 +1814,8 @@ MASTER ESPECIALIZADO
 </tr>
 <tr>
 <td>D</td>
-<td>Dashboard Coletivo</td>
-<td>RESERVED / NOT MATERIALIZED</td>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001</code> — Dashboard Coletivo</td>
+<td>MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER</td>
 </tr>
 <tr>
 <td>E</td>
@@ -1852,7 +1865,16 @@ MASTER ESPECIALIZADO
 </code></pre></div>
 <h4 id="dashboard-coletivo">Dashboard Coletivo<a class="headerlink" href="#dashboard-coletivo" title="Permanent link">¶</a></h4>
 <p>Finalidade candidata original: leitura quantitativa de participação e atuação do Coletivo, incluindo Pessoas relacionadas, oportunidades, inscrições/participações, demografia, geografia e cadastros quando autorizados.</p>
+<p>Esse escopo foi aprofundado documentalmente no Anexo D sem autorizar dados reais, implementação, materialização do Início autenticado ou acesso individual além da autoridade aplicável. <code>Inscrições</code> e <code>cadastros</code> permanecem proveniências candidatas separadas e bloqueadas até contrato semântico próprio; não são automaticamente solicitação, conta técnica, vínculo, pertencimento ou participação.</p>
 <p><code>Reputação</code> permanece bloqueada até possuir definição, fórmula, finalidade, autoridade de leitura, contestação e governança próprias.</p>
+<div class="highlight"><pre><span></span><code>DOCUMENTAÇÃO DO ANEXO D
+≠ INÍCIO AUTENTICADO DEFINIDO
+≠ SURFACE MAP / STATE MAP
+≠ DASHBOARD OPERACIONAL IMPLEMENTADO
+
+REPUTAÇÃO
+→ BLOCKED / NOT DEFINED
+</code></pre></div>
 <h4 id="dashboard-pessoa">Dashboard Pessoa<a class="headerlink" href="#dashboard-pessoa" title="Permanent link">¶</a></h4>
 <p>Finalidade candidata original: oferecer compreensão individual autorizada da própria trajetória, históricos, contextos, evolução, participações, relações, eventos e outputs de Graph Analytics/Intelligence quando legitimamente autorizados e explicáveis.</p>
 <div class="highlight"><pre><span></span><code>DECLARADO ≠ OBSERVADO ≠ CALCULADO ≠ INFERIDO ≠ PREDITO
@@ -1891,7 +1913,7 @@ DASHBOARD DOCUMENTADO
 ≠ DADO REAL CONECTADO
 </code></pre></div>
 <p>Quando uma autoridade de domínio mantiver uma superfície, relação, métrica ou capacidade como não definida, este master e seus anexos devem preservar esse estado.</p>
-<p>A existência do master de Organização e a futura existência do master de Coletivo <strong>não deverão ser interpretadas como materialização de Home autenticada, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
+<p>A existência dos masters de Organização e Coletivo <strong>não deve ser interpretada como materialização de Home/Início autenticado, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
 <hr/>
 <h2 id="4-principio-arquitetural">4. Princípio arquitetural<a class="headerlink" href="#4-principio-arquitetural" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code>GKR / PRODUTO / GOVERNANÇA
@@ -2519,7 +2541,7 @@ ANEXO C — ORGANIZAÇÃO
 → MATERIALIZED DOCUMENTARILY
 
 ANEXO D — COLETIVO
-→ RESERVED / NOT MATERIALIZED
+→ MATERIALIZED DOCUMENTARILY
 
 ANEXO E — PESSOA
 → RESERVED / NOT MATERIALIZED
@@ -2531,7 +2553,7 @@ ANEXO F — ADS / OPPORTUNITY BOOST
 <hr/>
 <h2 id="14-estado-final-desta-versao">14. Estado final desta versão<a class="headerlink" href="#14-estado-final-desta-versao" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.5
+→ v0.2.6
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -2567,7 +2589,11 @@ DASHBOARD ORGANIZATION MASTER
 → GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
 → MATERIALIZED DOCUMENTARILY AS ANNEX C
 
-ANNEXES D / E / F
+DASHBOARD COLLECTIVE MASTER
+→ GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
+→ MATERIALIZED DOCUMENTARILY AS ANNEX D
+
+ANNEXES E / F
 → RESERVED / NOT MATERIALIZED
 
 REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
