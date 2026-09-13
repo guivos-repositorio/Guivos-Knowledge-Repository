@@ -113,6 +113,7 @@ nav:
           - Dashboard Guivos — KPI Registry: intelligence-architecture/dashboard-guivos-kpi-registry.md
           - Dashboard Guivos Business — Documento Mestre: intelligence-architecture/dashboard-guivos-business-master-specification.md
           - Dashboard Organização — Documento Mestre: intelligence-architecture/dashboard-organization-master-specification.md
+          - Dashboard Coletivo — Documento Mestre: intelligence-architecture/dashboard-collective-master-specification.md
       - Tecnologia de Grafo: adr/ADR-007-neo4j-primary-graph-reference.md
 
   - Jurídico, Privacidade e Institucional:
