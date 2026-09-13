@@ -1962,6 +1962,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intelligence-architecture/dashboard-person-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Pessoa — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3208,6 +3243,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#intelligence-architecture-dashboard-person-master-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.8 Dashboard Pessoa — Documento Mestre
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3960,6 +4006,17 @@
     <span class="md-ellipsis">
       
         8.3.7 Dashboard Coletivo — Documento Mestre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intelligence-architecture-dashboard-person-master-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.8 Dashboard Pessoa — Documento Mestre
       
     </span>
   </a>
@@ -18869,8 +18926,8 @@ MASTER ESPECIALIZADO
 </tr>
 <tr>
 <td>E</td>
-<td>Dashboard Pessoa</td>
-<td>RESERVED / NOT MATERIALIZED</td>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-PERSON-001</code> — Dashboard Pessoa</td>
+<td>MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER</td>
 </tr>
 <tr>
 <td>F</td>
@@ -18929,6 +18986,12 @@ REPUTAÇÃO
 <p>Finalidade candidata original: oferecer compreensão individual autorizada da própria trajetória, históricos, contextos, evolução, participações, relações, eventos e outputs de Graph Analytics/Intelligence quando legitimamente autorizados e explicáveis.</p>
 <div class="highlight"><pre><span></span><code>DECLARADO ≠ OBSERVADO ≠ CALCULADO ≠ INFERIDO ≠ PREDITO
 </code></pre></div>
+<p>Esse escopo foi aprofundado documentalmente no Anexo E sem autorizar dados reais, implementação, redefinição de <code>Hoje</code>, <code>Meus Objetivos</code>, <code>Meus Próximos Passos</code> ou <code>Minha Evolução</code>, nem disclosure a terceiros além da autoridade aplicável.</p>
+<div class="highlight"><pre><span></span><code>DOCUMENTAÇÃO DO ANEXO E
+≠ HOJE / MEUS OBJETIVOS / MEUS PRÓXIMOS PASSOS / MINHA EVOLUÇÃO
+≠ SURFACE MAP / STATE MAP
+≠ DASHBOARD OPERACIONAL IMPLEMENTADO
+</code></pre></div>
 <h4 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-ads-opportunity-boost-analytics">Ads / Opportunity Boost Analytics<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-ads-opportunity-boost-analytics" title="Permanent link">&para;</a></h4>
 <p>Necessidade candidata original: dados de anúncios e Opportunity Boost do anunciante.</p>
 <p>Nesta versão global:</p>
@@ -18963,7 +19026,7 @@ DASHBOARD DOCUMENTADO
 ≠ DADO REAL CONECTADO
 </code></pre></div>
 <p>Quando uma autoridade de domínio mantiver uma superfície, relação, métrica ou capacidade como não definida, este master e seus anexos devem preservar esse estado.</p>
-<p>A existência dos masters de Organização e Coletivo <strong>não deve ser interpretada como materialização de Home/Início autenticado, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
+<p>A existência dos masters de Organização, Coletivo e Pessoa <strong>não deve ser interpretada como materialização de Home/Início/Hoje autenticado, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
 <hr />
 <h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-4-principio-arquitetural">4. Princípio arquitetural<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-4-principio-arquitetural" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>GKR / PRODUTO / GOVERNANÇA
@@ -19594,7 +19657,7 @@ ANEXO D — COLETIVO
 → MATERIALIZED DOCUMENTARILY
 
 ANEXO E — PESSOA
-→ RESERVED / NOT MATERIALIZED
+→ MATERIALIZED DOCUMENTARILY
 
 ANEXO F — ADS / OPPORTUNITY BOOST
 → RESERVED / NOT MATERIALIZED
@@ -19603,7 +19666,7 @@ ANEXO F — ADS / OPPORTUNITY BOOST
 <hr />
 <h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-14-estado-final-desta-versao">14. Estado final desta versão<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-14-estado-final-desta-versao" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.6
+→ v0.2.7
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -19643,7 +19706,11 @@ DASHBOARD COLLECTIVE MASTER
 → GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
 → MATERIALIZED DOCUMENTARILY AS ANNEX D
 
-ANNEXES E / F
+DASHBOARD PERSON MASTER
+→ GKR-INTELLIGENCE-DASHBOARD-PERSON-001
+→ MATERIALIZED DOCUMENTARILY AS ANNEX E
+
+ANNEX F
 → RESERVED / NOT MATERIALIZED
 
 REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
@@ -24415,7 +24482,1242 @@ REPLIT BUILD
 ANNEX E / F
 → UNCHANGED / NOT MATERIALIZED BY THIS DOCUMENT
 </code></pre></div>
-<p>A materialização documental deste master não autoriza dados reais, implementação, produção, ampliação de disclosure, reputação, score/ranking ou promoção automática de qualquer KPI além de seu status governado.</p></section></section><section class="print-page" id="adr-adr-007-neo4j-primary-graph-reference" heading-number="8.4"><h1 id="adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo">ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo" title="Permanent link">&para;</a></h1>
+<p>A materialização documental deste master não autoriza dados reais, implementação, produção, ampliação de disclosure, reputação, score/ranking ou promoção automática de qualquer KPI além de seu status governado.</p></section><section class="print-page" id="intelligence-architecture-dashboard-person-master-specification" heading-number="8.3.8"><h1 id="intelligence-architecture-dashboard-person-master-specification-dashboard-pessoa-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Pessoa — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-dashboard-pessoa-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
+<h2 id="intelligence-architecture-dashboard-person-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento é o <strong>Anexo E</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Pessoa</strong>.</p>
+<p>Seu objetivo é consolidar, antes de qualquer implementação, o recorte analítico legítimo pelo qual uma Pessoa pode compreender <strong>seus próprios dados autorizados, sua Journey, seus históricos, contextos, objetivos, movimentos, trajetórias, participações, relações, eventos e outputs autorizados de Analytics, Graph e Guivos Intelligence</strong>.</p>
+<p>O Dashboard Pessoa deve apoiar compreensão individual sem converter a Pessoa em score, perfil determinístico, diagnóstico, ranking, produto comercial ou objeto de decisão automatizada.</p>
+<p>Regra central:</p>
+<blockquote>
+<p><strong>A Pessoa pode compreender e revisar sua própria trajetória e os outputs legitimamente produzidos sobre ela ou para ela; o dashboard não recebe autoridade para definir quem a Pessoa é, qual deve ser sua prioridade, se houve evolução, qual decisão deve tomar ou qual significado pessoal deve aceitar.</strong></p>
+</blockquote>
+<p>Este master não redefine a experiência autenticada principal da Pessoa, não substitui <code>Hoje</code>, <code>Meus Objetivos</code>, <code>Meus Próximos Passos</code> ou <code>Minha Evolução</code>, não cria menu, Surface Map, State Map, wireframe, RBAC técnico ou implementação.</p>
+<div class="highlight"><pre><span></span><code>DASHBOARD PESSOA
+≠ HOJE
+≠ MEUS OBJETIVOS
+≠ MEUS PRÓXIMOS PASSOS
+≠ MINHA EVOLUÇÃO
+≠ JOURNEY DA PESSOA
+≠ GRAPH
+≠ GUIVOS INTELLIGENCE
+≠ DIAGNÓSTICO
+≠ DECISÃO AUTOMATIZADA
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-2-autoridades-de-dominio-e-precedencia">2. Autoridades de domínio e precedência<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-2-autoridades-de-dominio-e-precedencia" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Autoridade</th>
+<th>Papel neste master</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code></td>
+<td>envelope transversal de KPI, acesso, disclosure e handoff</td>
+</tr>
+<tr>
+<td><code>GKR-JOURNEY-PERSON-001</code></td>
+<td>continuidade integrada da Journey da Pessoa e limites das superfícies existentes</td>
+</tr>
+<tr>
+<td><code>GKR-UX-D5-A-001</code></td>
+<td>materialização controlada dos Domínios de Evolução, confirmação, revisabilidade e sensibilidade</td>
+</tr>
+<tr>
+<td><code>GKR-UX-D5-C1-001</code></td>
+<td>responsabilidades próprias de <code>Meus Objetivos</code>, <code>Meus Próximos Passos</code> e <code>Minha Evolução</code></td>
+</tr>
+<tr>
+<td><code>PAS-001-DOMAIN-MODEL-001</code></td>
+<td>semântica canônica dos Domínios de Evolução</td>
+</tr>
+<tr>
+<td><code>PAS-001-DOMAIN-RECON-001</code></td>
+<td>reconciliação entre Domínio, Contexto Vivo e aspectos descritivos</td>
+</tr>
+<tr>
+<td><code>GAI-001 / GAI-002 / GIA-COG-001</code></td>
+<td>evidência, natureza de afirmações, autonomia humana, explicabilidade, proveniência e <code>COMPREENDER ≠ DECIDIR</code></td>
+</tr>
+<tr>
+<td><code>UXA-097 / UXA-098</code></td>
+<td>compreensão inicial, Hoje, descoberta de oportunidades e saída consciente</td>
+</tr>
+<tr>
+<td><code>UXA-100 / A1 / A2 / A3 / A4</code></td>
+<td>fluxo especializado de Planos da Pessoa</td>
+</tr>
+</tbody>
+</table>
+<p>Em caso de conflito, este master preserva a autoridade especializada mais restritiva e mantém a métrica ou leitura bloqueada até adjudicação própria.</p>
+<p>Para intenção, preferência, objetivo e significado pessoal, aplica-se a precedência governada pela arquitetura cognitiva:</p>
+<div class="highlight"><pre><span></span><code>DECLARAÇÃO LEGÍTIMA E VIGENTE DA PESSOA
+&gt; INFERÊNCIA INCOMPATÍVEL
+</code></pre></div>
+<p>Essa precedência não reescreve evento operacional validado, mas impede que uma inferência substitua silenciosamente o significado pessoal declarado.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-3-estado-e-boundary">3. Estado e boundary<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-3-estado-e-boundary" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-PERSON-001
+→ ACTIVE v0.1.2
+→ PRE-IMPLEMENTATION DASHBOARD MASTER
+
+PESSOA
+→ PARTICIPANT TYPE
+→ SUJEITO PRIMÁRIO DE SUA PRÓPRIA JOURNEY
+
+DASHBOARD PESSOA
+→ ANALYTICAL CONSUMPTION SURFACE
+→ NOT SOURCE OF TRUTH
+→ NOT AUTHENTICATED HOME / TODAY SURFACE
+→ NOT OPERATIONAL SYSTEM OF RECORD
+→ NOT A HUMAN EVALUATION ENGINE
+
+REAL DATA CONNECTION
+→ NOT AUTHORIZED BY THIS DOCUMENT
+
+REPLIT BUILD
+→ NOT AUTHORIZED BY THIS DOCUMENT
+→ HANDOFF SPECIFICATION ONLY
+
+PROCESSING AUTHORIZED
+≠ DISCLOSURE AUTHORIZED
+
+SELF-SERVICE ANALYTICS
+≠ UNRESTRICTED ACCESS TO EVERY DATASET KNOWN BY GUIVOS
+</code></pre></div>
+<p>O fato de a Pessoa ser o sujeito da leitura não transforma dados de terceiros, Organizações, Coletivos ou relações bilaterais em informação automaticamente exibível.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-4-relacao-com-a-experiencia-autenticada-da-pessoa">4. Relação com a experiência autenticada da Pessoa<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-4-relacao-com-a-experiencia-autenticada-da-pessoa" title="Permanent link">&para;</a></h2>
+<p>A Journey vigente distingue responsabilidades especializadas:</p>
+<div class="highlight"><pre><span></span><code>PER-008 — Hoje
+→ síntese recorrente
+
+PER-010 — Meus Objetivos
+→ direção e controle de objetivos
+
+PER-011 — Meus Próximos Passos
+→ movimentos contextuais e seu controle
+
+PER-012 — Minha Evolução
+→ trajetórias, mudanças, continuidades, evidências e interpretações
+</code></pre></div>
+<p>O Dashboard Pessoa não substitui nenhuma dessas responsabilidades.</p>
+<div class="highlight"><pre><span></span><code>HOJE
+→ SINTETIZA O MOMENTO E CONTINUIDADES RELEVANTES
+
+MEUS OBJETIVOS
+→ GOVERNA OBJETIVOS
+
+MEUS PRÓXIMOS PASSOS
+→ GOVERNA MOVIMENTOS CONTEXTUAIS
+
+MINHA EVOLUÇÃO
+→ GOVERNA TRAJETÓRIAS E INTERPRETAÇÕES
+
+DASHBOARD PESSOA
+→ PODE APOIAR COM LEITURAS ANALÍTICAS AUTORIZADAS
+→ NÃO REDEFINE AS RESPONSABILIDADES ACIMA
+</code></pre></div>
+<p>A existência deste master não cria nova Home autenticada, não transforma <code>Hoje</code> em dashboard e não promove novas superfícies ou transições.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-5-areas-analiticas-candidatas">5. Áreas analíticas candidatas<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-5-areas-analiticas-candidatas" title="Permanent link">&para;</a></h2>
+<p>O Dashboard Pessoa é organizado em <strong>nove áreas analíticas</strong>:</p>
+<ol>
+<li>Visão Analítica Pessoal;</li>
+<li>Contexto e Domínios da Journey;</li>
+<li>Objetivos e Direções;</li>
+<li>Próximos Passos e Movimento;</li>
+<li>Evolução e Trajetórias;</li>
+<li>Participações, Relações e Experiências;</li>
+<li>Intelligence, Graph e Explicabilidade;</li>
+<li>Planos e Capacidade;</li>
+<li>Qualidade, Freshness, Privacidade e Governança do Dado.</li>
+</ol>
+<p>A área de <strong>Visão Analítica Pessoal</strong> compõe leituras das famílias governadas neste master. Ela não constitui família KPI autônoma.</p>
+<p>Históricos e eventos são tratados como <strong>dimensão temporal transversal</strong> e não criam família KPI própria nesta versão.</p>
+<div class="highlight"><pre><span></span><code>ÁREA DOCUMENTADA
+≠ KPI DEFINIDO
+≠ DADO DISPONÍVEL
+≠ AFIRMAÇÃO VERDADEIRA
+≠ RECOMENDAÇÃO OBRIGATÓRIA
+≠ IMPLEMENTAÇÃO AUTORIZADA
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-6-classes-funcionais-de-consumo">6. Classes funcionais de consumo<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-6-classes-funcionais-de-consumo" title="Permanent link">&para;</a></h2>
+<p>As classes abaixo são conceituais e não constituem RBAC técnico implementado:</p>
+<table>
+<thead>
+<tr>
+<th>Classe funcional</th>
+<th>Escopo candidato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pessoa — visão própria</td>
+<td>leituras dos próprios dados, Journey, históricos e outputs autorizados</td>
+</tr>
+<tr>
+<td>Pessoa — revisão e controle</td>
+<td>contestação, revisão, confirmação, retirada ou correção quando a autoridade permitir</td>
+</tr>
+<tr>
+<td>Pessoa — exportação própria</td>
+<td>exportações do próprio recorte quando finalidade, segurança e contrato permitirem</td>
+</tr>
+<tr>
+<td>Guivos — suporte</td>
+<td>dados estritamente necessários à finalidade legítima de suporte</td>
+</tr>
+<tr>
+<td>Guivos — Intelligence/Data</td>
+<td>inputs e outputs necessários à finalidade analítica autorizada</td>
+</tr>
+<tr>
+<td>Service account / Replit</td>
+<td>somente payloads necessários à renderização autorizada</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>SER A PRÓPRIA PESSOA
+≠ ACESSO AUTOMÁTICO A DADOS PRIVADOS DE TERCEIROS
+
+DADO SOBRE UMA RELAÇÃO
+≠ DADO EXCLUSIVAMENTE DA PESSOA
+
+OUTPUT SOBRE A PESSOA
+≠ DIREITO AUTOMÁTICO DE COMPARTILHAMENTO COM TERCEIROS
+
+PROCESSAMENTO INTERNO AUTORIZADO
+≠ DISCLOSURE IRRESTRITO
+</code></pre></div>
+<p>Organização, Coletivo, Business ou anunciante não herdam acesso a este dashboard ou a seus detalhes por possuírem relação com a Pessoa.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-7-vocabulario-de-kpi-e-readiness">7. Vocabulário de KPI e readiness<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-7-vocabulario-de-kpi-e-readiness" title="Permanent link">&para;</a></h2>
+<p>Prefixo deste master:</p>
+<div class="highlight"><pre><span></span><code>PER-KPI-&lt;FAMÍLIA&gt;-NNN
+</code></pre></div>
+<p>Famílias iniciais:</p>
+<ul>
+<li><code>CTX</code> — contexto e Domínios da Journey;</li>
+<li><code>OBJ</code> — objetivos e direções;</li>
+<li><code>MOV</code> — Próximos Passos e movimento;</li>
+<li><code>EVO</code> — evolução e trajetórias;</li>
+<li><code>REL</code> — participações, relações e experiências;</li>
+<li><code>INT</code> — outputs autorizados de Intelligence, Graph e Analytics;</li>
+<li><code>CAP</code> — planos e capacidade;</li>
+<li><code>DQ</code> — qualidade, freshness, privacidade e governança.</li>
+</ul>
+<p>A <strong>Visão Analítica Pessoal</strong> compõe indicadores dessas famílias e não cria namespace próprio nesta versão.</p>
+<p>Estados usados:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>proposed</code></td>
+<td>significado ou contrato ainda incompleto; não build-ready</td>
+</tr>
+<tr>
+<td><code>source_pending</code></td>
+<td>semântica fechada o suficiente, mas source/data contract ainda bloqueia readiness</td>
+</tr>
+<tr>
+<td><code>defined</code></td>
+<td>contrato documental mínimo completo; ainda requer gates de domínio e build</td>
+</tr>
+<tr>
+<td><code>approved-equivalent</code></td>
+<td>autoridade especializada fornece estado equivalente aceito pelo gate</td>
+</tr>
+</tbody>
+</table>
+<p>Nesta versão, <strong>todos os KPIs candidatos permanecem <code>proposed / NOT_READY</code></strong>.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-8-proibicao-de-score-humano-global">8. Proibição de score humano global<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-8-proibicao-de-score-humano-global" title="Permanent link">&para;</a></h2>
+<p>Nenhuma família deste master pode ser combinada por conveniência para fabricar um valor global da Pessoa.</p>
+<div class="highlight"><pre><span></span><code>PESSOA
+≠ SCORE
+≠ RANKING
+≠ PERCENTUAL GLOBAL DE EVOLUÇÃO
+≠ ÍNDICE UNIVERSAL DE SUCESSO
+≠ DIAGNÓSTICO
+≠ PERFIL DETERMINÍSTICO
+≠ AVALIAÇÃO ESPIRITUAL
+≠ PERFIL COMERCIAL DE VULNERABILIDADE
+</code></pre></div>
+<p>Também permanecem inválidas as equivalências:</p>
+<div class="highlight"><pre><span></span><code>MAIS OBJETIVOS CONCLUÍDOS
+≠ MAIOR VALOR HUMANO
+
+MAIS PRÓXIMOS PASSOS EXECUTADOS
+≠ MAIOR EVOLUÇÃO
+
+MAIS PARTICIPAÇÃO
+≠ MELHOR TRAJETÓRIA
+
+MAIS OUTPUTS DE INTELLIGENCE
+≠ MELHOR COMPREENSÃO
+
+MAIS DOMÍNIOS ATIVOS
+≠ VIDA MAIS COMPLETA
+</code></pre></div>
+<p>Qualquer futura pontuação especializada exigirá autoridade própria, finalidade legítima, fórmula, validação, riscos, contestação, explicabilidade e limitação de claims. Este documento não autoriza nenhuma.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-9-familia-ctx-contexto-e-dominios-da-journey">9. Família CTX — Contexto e Domínios da Journey<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-9-familia-ctx-contexto-e-dominios-da-journey" title="Permanent link">&para;</a></h2>
+<p>Esta família mede somente aspectos que possam apoiar a Pessoa a compreender o contexto autorizado de sua própria Journey.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER-KPI-CTX-001</td>
+<td>Domínios confirmados vigentes</td>
+<td><code>domain_link</code> legitimamente confirmados e vigentes para os objetos autorizados</td>
+<td>vínculos</td>
+<td>proposed</td>
+<td>domain semantics + confirmation + source</td>
+</tr>
+<tr>
+<td>PER-KPI-CTX-002</td>
+<td>Domínios candidatos em revisão</td>
+<td>sugestões de domínio ainda não confirmadas pela Pessoa</td>
+<td>vínculos</td>
+<td>proposed</td>
+<td>candidate-state + purpose + source</td>
+</tr>
+<tr>
+<td>PER-KPI-CTX-003</td>
+<td>Revisões de domínio no período</td>
+<td>eventos legítimos de confirmação, rejeição, adição, retirada ou revisão</td>
+<td>eventos/período</td>
+<td>proposed</td>
+<td>lifecycle + temporal contract</td>
+</tr>
+<tr>
+<td>PER-KPI-CTX-004</td>
+<td>Contextos sem classificação de domínio</td>
+<td>objetos legitimamente mantidos sem <code>domain_link</code> confirmado</td>
+<td>objetos</td>
+<td>proposed</td>
+<td>population + no-classification state</td>
+</tr>
+<tr>
+<td>PER-KPI-CTX-005</td>
+<td>Distribuição própria por domínio</td>
+<td>distribuição de objetos autorizados da própria Journey por domínio confirmado</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>denominator + sensitivity + purpose</td>
+</tr>
+</tbody>
+</table>
+<p>Regras:</p>
+<div class="highlight"><pre><span></span><code>DOMÍNIO CANDIDATO
+≠ DOMÍNIO CONFIRMADO
+
+DOMÍNIO CONFIRMADO
+≠ IDENTIDADE
+≠ DIAGNÓSTICO
+≠ PRIORIDADE
+≠ OBJETIVO
+≠ EVOLUÇÃO
+≠ RELEVÂNCIA AUTOMÁTICA
+
+SEM DOMÍNIO CONFIRMADO
+→ ESTADO LEGÍTIMO
+</code></pre></div>
+<p>A quantidade de domínios não possui direcionalidade de valor.</p>
+<p>Saúde, espiritualidade, finanças e outros contextos sensíveis exigem finalidade, minimização e proteção próprias mesmo quando a própria Pessoa é o consumidor.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-10-familia-obj-objetivos-e-direcoes">10. Família OBJ — Objetivos e Direções<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-10-familia-obj-objetivos-e-direcoes" title="Permanent link">&para;</a></h2>
+<p>Esta família não redefine <code>PER-010 — Meus Objetivos</code> e não cria objetivo pela observação analítica.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER-KPI-OBJ-001</td>
+<td>Objetivos válidos</td>
+<td>objetivos próprios em estados semanticamente válidos</td>
+<td>objetivos</td>
+<td>proposed</td>
+<td>objective lifecycle + source</td>
+</tr>
+<tr>
+<td>PER-KPI-OBJ-002</td>
+<td>Objetivos ativos</td>
+<td>objetivos em estado ativo válido na janela</td>
+<td>objetivos</td>
+<td>proposed</td>
+<td>active-state contract</td>
+</tr>
+<tr>
+<td>PER-KPI-OBJ-003</td>
+<td>Objetivos em revisão/pausa</td>
+<td>objetivos legitimamente em revisão ou pausa</td>
+<td>objetivos</td>
+<td>proposed</td>
+<td>review/pause semantics</td>
+</tr>
+<tr>
+<td>PER-KPI-OBJ-004</td>
+<td>Encerramentos no período</td>
+<td>eventos de conclusão, retirada ou outro encerramento legitimamente diferenciado</td>
+<td>eventos/período</td>
+<td>proposed</td>
+<td>closure taxonomy + temporal contract</td>
+</tr>
+<tr>
+<td>PER-KPI-OBJ-005</td>
+<td>Objetivos com critérios explicitados</td>
+<td>objetivos com critérios de sucesso legitimamente registrados</td>
+<td>objetivos</td>
+<td>proposed</td>
+<td>criteria semantics + source</td>
+</tr>
+<tr>
+<td>PER-KPI-OBJ-006</td>
+<td>Objetivos com evidências associadas</td>
+<td>objetivos com evidências válidas associadas ao recorte autorizado</td>
+<td>objetivos</td>
+<td>proposed</td>
+<td>evidence contract + source</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>OBJETIVO ATIVO
+≠ PRIORIDADE AUTOMÁTICA
+
+OBJETIVO CONCLUÍDO
+≠ PROVA DE EVOLUÇÃO GLOBAL
+
+OBJETIVO RETIRADO
+≠ FALHA
+
+PRIORIDADE DECLARADA
+≠ VALOR HUMANO
+≠ OBRIGAÇÃO
+≠ URGÊNCIA AUTOMÁTICA
+</code></pre></div>
+<p>Este master não cria percentual automático de progresso.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-11-familia-mov-proximos-passos-e-movimento">11. Família MOV — Próximos Passos e Movimento<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-11-familia-mov-proximos-passos-e-movimento" title="Permanent link">&para;</a></h2>
+<p>Esta família não substitui <code>PER-011 — Meus Próximos Passos</code> e não transforma sugestão em decisão.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER-KPI-MOV-001</td>
+<td>Próximos Passos válidos</td>
+<td>movimentos próprios em estados semanticamente válidos</td>
+<td>passos</td>
+<td>proposed</td>
+<td>next-step lifecycle + source</td>
+</tr>
+<tr>
+<td>PER-KPI-MOV-002</td>
+<td>Próximos Passos prontos</td>
+<td>passos em estado <code>PRONTO</code> ou equivalente governado</td>
+<td>passos</td>
+<td>proposed</td>
+<td>readiness semantics</td>
+</tr>
+<tr>
+<td>PER-KPI-MOV-003</td>
+<td>Propostas em revisão</td>
+<td>propostas ainda não aceitas/confirmadas pela Pessoa</td>
+<td>propostas</td>
+<td>proposed</td>
+<td>proposal-state + source</td>
+</tr>
+<tr>
+<td>PER-KPI-MOV-004</td>
+<td>Passos bloqueados ou pausados</td>
+<td>movimentos legitimamente bloqueados ou pausados</td>
+<td>passos</td>
+<td>proposed</td>
+<td>blocked/pause semantics</td>
+</tr>
+<tr>
+<td>PER-KPI-MOV-005</td>
+<td>Eventos de conclusão no período</td>
+<td>conclusões operacionais válidas no período</td>
+<td>eventos/período</td>
+<td>proposed</td>
+<td>completion event + temporal contract</td>
+</tr>
+<tr>
+<td>PER-KPI-MOV-006</td>
+<td>Dependências abertas</td>
+<td>dependências materialmente abertas segundo contrato aplicável</td>
+<td>dependências</td>
+<td>proposed</td>
+<td>dependency semantics + source</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>PROPOSTO
+≠ ACEITO
+≠ DECIDIDO
+
+PRONTO
+≠ OBRIGATÓRIO
+≠ URGENTE
+
+CONCLUÍDO
+≠ EVOLUÇÃO COMPROVADA
+
+BLOQUEADO / PAUSADO
+≠ FALHA
+</code></pre></div>
+<p>Períodos sem Próximos Passos ativos permanecem legítimos.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-12-familia-evo-evolucao-e-trajetorias">12. Família EVO — Evolução e Trajetórias<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-12-familia-evo-evolucao-e-trajetorias" title="Permanent link">&para;</a></h2>
+<p>Esta família deve preservar integralmente o limite de <code>PER-012 — Minha Evolução</code>.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER-KPI-EVO-001</td>
+<td>Trajetórias em acompanhamento</td>
+<td>trajetórias próprias legitimamente abertas para acompanhamento</td>
+<td>trajetórias</td>
+<td>proposed</td>
+<td>trajectory semantics + source</td>
+</tr>
+<tr>
+<td>PER-KPI-EVO-002</td>
+<td>Leituras de trajetória por estado</td>
+<td>distribuição por estados legitimamente definidos, como estabilidade, manutenção, oscilação, recuperação ou reorientação quando aplicáveis</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>state taxonomy + evidence</td>
+</tr>
+<tr>
+<td>PER-KPI-EVO-003</td>
+<td>Trajetórias com baseline definido</td>
+<td>trajetórias cujo baseline está explicitamente definido e válido</td>
+<td>trajetórias</td>
+<td>proposed</td>
+<td>baseline contract</td>
+</tr>
+<tr>
+<td>PER-KPI-EVO-004</td>
+<td>Leituras com evidência suficiente</td>
+<td>interpretações de trajetória que atendem ao contrato de evidência aplicável</td>
+<td>leituras</td>
+<td>proposed</td>
+<td>evidence sufficiency</td>
+</tr>
+<tr>
+<td>PER-KPI-EVO-005</td>
+<td>Leituras contestadas/em revisão</td>
+<td>interpretações legitimamente contestadas ou em revisão</td>
+<td>leituras</td>
+<td>proposed</td>
+<td>contestation/review lifecycle</td>
+</tr>
+<tr>
+<td>PER-KPI-EVO-006</td>
+<td>Revisões/correções no período</td>
+<td>eventos válidos de revisão, correção ou substituição de interpretação</td>
+<td>eventos/período</td>
+<td>proposed</td>
+<td>provenance + temporal contract</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>TRAJETÓRIA
+≠ SCORE
+
+MUDANÇA
+≠ MELHORA
+
+ESTABILIDADE
+≠ AUSÊNCIA DE VALOR
+
+REGRESSÃO, QUANDO LEGITIMAMENTE DEFINIDA
+≠ FALHA HUMANA
+
+CORRELAÇÃO
+≠ CAUSALIDADE
+</code></pre></div>
+<p>Ausência de mudança ou de evolução reconhecida permanece estado legítimo.</p>
+<p>Qualquer interpretação inferida deve permanecer distinguível de fato confirmado e carregar confiança, incerteza, evidência, limitações e possibilidade de contestação quando material.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-13-familia-rel-participacoes-relacoes-e-experiencias">13. Família REL — Participações, relações e experiências<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-13-familia-rel-participacoes-relacoes-e-experiencias" title="Permanent link">&para;</a></h2>
+<p>Esta família organiza somente relações e eventos legitimamente pertencentes ao recorte autorizado da própria Pessoa.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER-KPI-REL-001</td>
+<td>Relações próprias ativas</td>
+<td>relações legitimamente vinculadas à Pessoa e em estado ativo válido</td>
+<td>relações</td>
+<td>proposed</td>
+<td>relationship semantics + source</td>
+</tr>
+<tr>
+<td>PER-KPI-REL-002</td>
+<td>Participações válidas</td>
+<td>participações próprias legitimamente registradas</td>
+<td>participações</td>
+<td>proposed</td>
+<td>participation taxonomy + source</td>
+</tr>
+<tr>
+<td>PER-KPI-REL-003</td>
+<td>Experiências registradas</td>
+<td>experiências próprias com registro válido para a finalidade autorizada</td>
+<td>experiências</td>
+<td>proposed</td>
+<td>experience semantics + source</td>
+</tr>
+<tr>
+<td>PER-KPI-REL-004</td>
+<td>Eventos de entrada, pausa ou saída</td>
+<td>eventos de relação/participação legitimamente diferenciados</td>
+<td>eventos/período</td>
+<td>proposed</td>
+<td>lifecycle + temporal contract</td>
+</tr>
+<tr>
+<td>PER-KPI-REL-005</td>
+<td>Relações por classe autorizada</td>
+<td>distribuição própria por classes sem revelar dados privados de contrapartes</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>taxonomy + disclosure</td>
+</tr>
+<tr>
+<td>PER-KPI-REL-006</td>
+<td>Resultados externos confirmados</td>
+<td>resultados externos somente quando houver confirmação e source legitimamente autorizado</td>
+<td>resultados</td>
+<td>proposed</td>
+<td>external authority + confirmation + source</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>ABRIR DETALHE DE OPORTUNIDADE
+≠ INTERESSE
+≠ INSCRIÇÃO
+≠ PARTICIPAÇÃO
+≠ EVOLUÇÃO
+
+SAIR PARA AUTORIDADE EXTERNA
+≠ RESULTADO EXTERNO CONFIRMADO
+
+PARTICIPAÇÃO
+≠ OBRIGAÇÃO PERMANENTE
+
+PAUSA / SAÍDA
+≠ FALHA
+</code></pre></div>
+<p>Uma relação pode conter informações de terceiros. O Dashboard Pessoa não pode converter automaticamente o registro relacional em acesso a conteúdo privado da contraparte.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-14-familia-int-intelligence-graph-e-analytics">14. Família INT — Intelligence, Graph e Analytics<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-14-familia-int-intelligence-graph-e-analytics" title="Permanent link">&para;</a></h2>
+<p>Esta família cobre somente outputs autorizados para consumo pela própria Pessoa.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER-KPI-INT-001</td>
+<td>Outputs de Intelligence disponíveis</td>
+<td>outputs autorizados, vigentes e servíveis à Pessoa no recorte</td>
+<td>outputs</td>
+<td>proposed</td>
+<td>serving/disclosure eligibility + source</td>
+</tr>
+<tr>
+<td>PER-KPI-INT-002</td>
+<td>Outputs por natureza</td>
+<td>distribuição por natureza governada, como explicação, insight, possibilidade, recomendação ou alerta</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>output taxonomy + source</td>
+</tr>
+<tr>
+<td>PER-KPI-INT-003</td>
+<td>Outputs por natureza do input/resultado</td>
+<td>distribuição segundo a natureza preservada dos inputs/resultados, sem convertê-la em estado epistemológico/derivacional</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>input/result nature taxonomy + provenance</td>
+</tr>
+<tr>
+<td>PER-KPI-INT-004</td>
+<td>Outputs com confiança/incerteza qualificada</td>
+<td>outputs materiais com confiança, incerteza e limitações devidamente qualificadas</td>
+<td>outputs</td>
+<td>proposed</td>
+<td>assurance contract</td>
+</tr>
+<tr>
+<td>PER-KPI-INT-005</td>
+<td>Outputs contestados/em revisão</td>
+<td>outputs sob contestação, revisão ou confirmação necessária</td>
+<td>outputs</td>
+<td>proposed</td>
+<td>contestation lifecycle</td>
+</tr>
+<tr>
+<td>PER-KPI-INT-006</td>
+<td>Outputs superados/expirados</td>
+<td>outputs que perderam vigência ou foram substituídos segundo regra governada</td>
+<td>outputs</td>
+<td>proposed</td>
+<td>validity/expiry contract</td>
+</tr>
+</tbody>
+</table>
+<p>Os três eixos permanecem separados e não podem ser colapsados por visualização, filtro ou implementação:</p>
+<div class="highlight"><pre><span></span><code>NATUREZA DO INPUT / RESULTADO
+→ DECLARADO
+→ OBSERVADO
+→ OPERACIONAL
+→ CALCULADO
+→ INFERIDO
+→ PREDITO
+→ AGREGADO
+→ CONHECIMENTO EXTERNO
+→ CONHECIMENTO GOVERNADO
+
+ESTADO EPISTEMOLÓGICO / DERIVACIONAL
+→ VALIDADO
+→ HIPÓTESE
+→ CONTESTADO
+→ INCERTO
+→ SUPERADO
+→ EXPIRADO
+
+NATUREZA DO OUTPUT
+→ EXPLICAÇÃO
+→ INSIGHT
+→ POSSIBILIDADE
+→ RECOMENDAÇÃO
+→ ALERTA
+</code></pre></div>
+<p><code>CONHECIMENTO EXTERNO</code> e <code>CONHECIMENTO GOVERNADO</code> permanecem naturezas distintas de input/resultado porque possuem proveniências distintas; nenhum deles é sinônimo de dado pessoal observado.</p>
+<p><code>PER-KPI-INT-002</code> organiza natureza do output. <code>PER-KPI-INT-003</code> organiza natureza do input/resultado. O estado epistemológico/derivacional permanece campo separado, preservado nos contratos e metadados aplicáveis; este master não o converte em sinônimo de nenhum dos outros dois eixos.</p>
+<p>E também:</p>
+<div class="highlight"><pre><span></span><code>INFERÊNCIA
+≠ FATO
+
+RECOMENDAÇÃO
+≠ DECISÃO
+
+POSSIBILIDADE
+≠ PREVISÃO GARANTIDA
+
+PREDIÇÃO
+≠ DESTINO
+
+GRAPH RELATIONSHIP
+≠ CAUSALIDADE
+
+MAIOR QUANTIDADE DE SINAIS
+≠ MAIOR VERDADE
+</code></pre></div>
+<p><code>Graph</code>, <code>Analytics</code> e <code>Intelligence</code> podem contribuir para compreensão, mas nenhum deles recebe autoridade para substituir uma declaração legítima da Pessoa sobre intenção, preferência, objetivo ou significado pessoal.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-15-familia-cap-planos-e-capacidade">15. Família CAP — Planos e capacidade<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-15-familia-cap-planos-e-capacidade" title="Permanent link">&para;</a></h2>
+<p>Planos são uma etapa transversal da Journey, mas não alteram autoridade, relevância ou valor da Pessoa.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER-KPI-CAP-001</td>
+<td>Plano vigente</td>
+<td>classificação do plano vigente quando contratualmente confirmada</td>
+<td>categoria</td>
+<td>proposed</td>
+<td>plan source + entitlement contract</td>
+</tr>
+<tr>
+<td>PER-KPI-CAP-002</td>
+<td>Uso de capacidade</td>
+<td>uso de capacidade definida pelo plano no ciclo aplicável</td>
+<td>unidade/%</td>
+<td>proposed</td>
+<td>entitlement + cycle + source</td>
+</tr>
+<tr>
+<td>PER-KPI-CAP-003</td>
+<td>Capacidade disponível</td>
+<td>capacidade ainda disponível conforme contrato de plano</td>
+<td>unidade/%</td>
+<td>proposed</td>
+<td>entitlement + balance semantics</td>
+</tr>
+<tr>
+<td>PER-KPI-CAP-004</td>
+<td>Eventos de alteração de plano</td>
+<td>upgrades, downgrades, cancelamentos ou outros eventos confirmados no período</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>plan lifecycle + source</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>PLANO PAGO
+≠ RELEVÂNCIA
+≠ CONFIANÇA
+≠ PRIORIDADE
+≠ AUTORIDADE
+≠ GARANTIA DE EVOLUÇÃO
+≠ CONSENTIMENTO AMPLIADO
+</code></pre></div>
+<p>Preço, entitlement, quota ou benefício não congelado não pode ser inventado pelo dashboard.</p>
+<p><code>NOT_ENTITLED</code> pode descrever indisponibilidade de uma capacidade comercial, mas nunca deve ser utilizado para negar silenciosamente direitos de privacidade, revisão, correção ou acesso que pertençam à Pessoa por autoridade superior aplicável.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-16-familia-dq-qualidade-freshness-privacidade-e-governanca">16. Família DQ — qualidade, freshness, privacidade e governança<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-16-familia-dq-qualidade-freshness-privacidade-e-governanca" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER-KPI-DQ-001</td>
+<td>Freshness compliance</td>
+<td>contratos/datasets dentro da freshness governada / monitorados</td>
+<td>%</td>
+<td>proposed</td>
+<td>freshness contract</td>
+</tr>
+<tr>
+<td>PER-KPI-DQ-002</td>
+<td>Indicadores indisponíveis</td>
+<td>KPIs esperados sem dado utilizável</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>registry + availability rules</td>
+</tr>
+<tr>
+<td>PER-KPI-DQ-003</td>
+<td>Supressões de disclosure</td>
+<td>leituras protegidas ou indisponíveis por política/finalidade</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>disclosure policy</td>
+</tr>
+<tr>
+<td>PER-KPI-DQ-004</td>
+<td>Completude de proveniência</td>
+<td>outputs com proveniência suficiente / outputs avaliados</td>
+<td>%</td>
+<td>proposed</td>
+<td>provenance contract</td>
+</tr>
+<tr>
+<td>PER-KPI-DQ-005</td>
+<td>Leituras com evidência insuficiente</td>
+<td>afirmações ou interpretações que não atingem suficiência mínima</td>
+<td>leituras</td>
+<td>proposed</td>
+<td>evidence sufficiency</td>
+</tr>
+<tr>
+<td>PER-KPI-DQ-006</td>
+<td>Conflitos de fonte não resolvidos</td>
+<td>leituras com divergência material ainda não reconciliada</td>
+<td>leituras</td>
+<td>proposed</td>
+<td>conflict semantics + authority</td>
+</tr>
+</tbody>
+</table>
+<p>Qualidade qualifica confiança; não fabrica certeza.</p>
+<div class="highlight"><pre><span></span><code>AUSÊNCIA DE EVIDÊNCIA SUFICIENTE
+→ PODE PRODUZIR AUSÊNCIA LEGÍTIMA DE CONCLUSÃO
+
+DADO MAIS RECENTE
+≠ DADO AUTOMATICAMENTE MAIS VERDADEIRO
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-17-historicos-e-eventos-como-dimensao-transversal">17. Históricos e eventos como dimensão transversal<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-17-historicos-e-eventos-como-dimensao-transversal" title="Permanent link">&para;</a></h2>
+<p>O inventário original preserva históricos e eventos como necessidade analítica da Pessoa.</p>
+<p>Nesta versão:</p>
+<div class="highlight"><pre><span></span><code>HISTÓRICO
+→ DIMENSÃO TEMPORAL TRANSVERSAL
+→ NOT A KPI FAMILY
+
+EVENTO
+→ UNIDADE QUE EXIGE SEMÂNTICA PRÓPRIA
+→ NÃO É AUTOMATICAMENTE PROGRESSO, EVOLUÇÃO OU RESULTADO
+</code></pre></div>
+<p>Histórico pode atravessar objetivos, passos, trajetórias, relações, participações, outputs e plano, desde que cada evento preserve:</p>
+<ul>
+<li>natureza;</li>
+<li>timestamp/período;</li>
+<li>source;</li>
+<li>autoridade;</li>
+<li>proveniência;</li>
+<li>validade;</li>
+<li>correções/supersessões quando aplicáveis.</li>
+</ul>
+<p>A ausência de evento em uma janela não deve ser interpretada automaticamente como estagnação, abandono ou falha.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-18-filtros-candidatos">18. Filtros candidatos<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-18-filtros-candidatos" title="Permanent link">&para;</a></h2>
+<p>Filtros somente podem restringir e organizar o escopo autorizado:</p>
+<ul>
+<li>período e comparação de período;</li>
+<li>Domínio de Evolução confirmado quando aplicável;</li>
+<li>natureza do objeto;</li>
+<li>estado de objetivo;</li>
+<li>estado de Próximo Passo;</li>
+<li>trajetória/estado de leitura legitimamente definido;</li>
+<li>relação/participação/experiência;</li>
+<li>natureza de evidência;</li>
+<li>natureza do input/resultado;</li>
+<li>estado epistemológico/derivacional;</li>
+<li>natureza de output de Intelligence;</li>
+<li>confiança/incerteza quando material;</li>
+<li>estado de contestação/revisão;</li>
+<li>plano/ciclo de capacidade.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>FILTRO
+→ SUBCONJUNTO DO ACCESS SCOPE
+→ NUNCA AMPLIA DISCLOSURE
+→ NUNCA CONFUNDE NATUREZA DO INPUT/RESULTADO, ESTADO EPISTEMOLÓGICO/DERIVACIONAL OU NATUREZA DO OUTPUT
+</code></pre></div>
+<p>Filtro por domínio não transforma domínio em identidade ou prioridade.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-19-drill-down">19. Drill-down<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-19-drill-down" title="Permanent link">&para;</a></h2>
+<p>Estrutura candidata:</p>
+<div class="highlight"><pre><span></span><code>N0 — PESSOA AUTORIZADA / PRÓPRIO RECORTE
+→ N1 — FAMÍLIA ANALÍTICA
+→ N2 — OBJETO / PERÍODO / DOMÍNIO / ESTADO AUTORIZADO
+→ N3 — PRÓPRIO OBJETO / EVENTO / EVIDÊNCIA / OUTPUT AUTORIZADO
+</code></pre></div>
+<p>O nível de detalhe não pode ampliar a autoridade.</p>
+<div class="highlight"><pre><span></span><code>DADO AGREGADO PRÓPRIO
+→ NÃO CRIA ACESSO A DADO PRIVADO DA CONTRAPARTE
+
+RELAÇÃO COM ORGANIZAÇÃO / COLETIVO / BUSINESS
+→ NÃO CRIA ACESSO AO CONTEXTO PRIVADO DO OUTRO PARTICIPANTE
+</code></pre></div>
+<p>Drill-down em inferência, predição ou interpretação deve preservar explicabilidade, evidência, confiança, incerteza, limitações e contestação quando aplicáveis.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-20-estados-obrigatorios-de-visualizacao">20. Estados obrigatórios de visualização<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-20-estados-obrigatorios-de-visualizacao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>LOADING
+NO_DATA
+INSUFFICIENT_DATA
+INSUFFICIENT_EVIDENCE
+SUPPRESSED_BY_POLICY
+SOURCE_DELAYED
+UNDER_REVIEW
+CONTESTED
+NOT_ENTITLED
+ERROR
+AVAILABLE
+</code></pre></div>
+<p><code>0</code> não substitui <code>NO_DATA</code>.</p>
+<p><code>NO_DATA</code> não significa ausência de trajetória, valor, esforço ou evolução.</p>
+<p><code>INSUFFICIENT_EVIDENCE</code> não deve ser renderizado como conclusão negativa.</p>
+<p><code>CONTESTED</code> e <code>UNDER_REVIEW</code> não devem ser mascarados como leitura final.</p>
+<p><code>NOT_ENTITLED</code> descreve capacidade comercial quando aplicável e não substitui autoridade legal, de privacidade ou de governança superior.</p>
+<p><code>SUPPRESSED_BY_POLICY</code> não deve revelar por inferência o conteúdo protegido.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-21-contratos-logicos-esperados">21. Contratos lógicos esperados<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-21-contratos-logicos-esperados" title="Permanent link">&para;</a></h2>
+<p>Sem definir schema físico, o Dashboard Pessoa poderá futuramente consumir contratos equivalentes a:</p>
+<ul>
+<li>Person Journey Context Projection;</li>
+<li>Domain Link Projection;</li>
+<li>Objective Aggregate / Projection;</li>
+<li>Next Step Aggregate / Projection;</li>
+<li>Evolution / Trajectory Projection;</li>
+<li>Participation / Relationship / Experience Projection;</li>
+<li>Authorized Intelligence Output Projection;</li>
+<li>Authorized Graph / Analytics Output Projection;</li>
+<li>Plan / Capacity Projection;</li>
+<li>Data Quality / Freshness / Provenance Status.</li>
+</ul>
+<p>Esses contratos não constituem um <code>super perfil</code> universal da Pessoa.</p>
+<div class="highlight"><pre><span></span><code>CONTEXT PACKAGE
+→ PURPOSE-LIMITED
+→ MINIMIZED
+→ AUTHORIZED
+
+CONTEXT PACKAGE
+≠ UNIVERSAL PERSON PROFILE
+</code></pre></div>
+<p>Cada payload deve carregar, quando aplicável:</p>
+<ul>
+<li><code>metric_id</code> ou identificador do output;</li>
+<li>período e temporalidade;</li>
+<li>valor/unidade quando existir;</li>
+<li>population/object scope;</li>
+<li>source/version;</li>
+<li>natureza do input/resultado;</li>
+<li>natureza do output quando aplicável;</li>
+<li>estado epistemológico/derivacional;</li>
+<li>proveniência;</li>
+<li>freshness;</li>
+<li>sensibilidade/access class;</li>
+<li>confidence/uncertainty quando material;</li>
+<li>suppression/review/contest state;</li>
+<li>claims permitidos e limitações quando aplicáveis.</li>
+</ul>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-22-privacidade-controle-e-disclosure">22. Privacidade, controle e disclosure<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-22-privacidade-controle-e-disclosure" title="Permanent link">&para;</a></h2>
+<p>O Dashboard Pessoa opera sob privacidade por finalidade e minimização.</p>
+<p>A própria Pessoa deve possuir os controles governados que forem aplicáveis ao tipo de dado ou output, incluindo confirmação, revisão, contestação, retirada ou correção quando a autoridade especializada permitir.</p>
+<div class="highlight"><pre><span></span><code>AUTORIDADE PARA PERSONALIZAR
+≠ AUTORIDADE PARA COMPARTILHAR
+
+AUTORIDADE PARA PROCESSAR
+≠ AUTORIDADE PARA DISCLOSURE
+
+COMPARTILHAMENTO ANTERIOR
+≠ CONSENTIMENTO PERMANENTE
+
+RELAÇÃO INSTITUCIONAL
+≠ ACESSO À JOURNEY PRIVADA
+</code></pre></div>
+<p>Nenhuma Organização, Coletivo, relação Business, anunciante, parceiro ou terceiro recebe este recorte por padrão.</p>
+<p>Qualquer compartilhamento futuro exige contrato próprio de finalidade, escopo, sensibilidade, temporalidade, revogação e autoridade.</p>
+<p>A existência de contexto sensível não autoriza segmentação comercial, publicidade comportamental ou exploração de vulnerabilidade por inferência.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-23-orientacao-futura-para-replit">23. Orientação futura para Replit<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-23-orientacao-futura-para-replit" title="Permanent link">&para;</a></h2>
+<p>Quando houver autorização formal de build, a ferramenta deverá:</p>
+<ol>
+<li>não inventar KPI, fórmula, preço, entitlement, threshold, source, schema ou permissão;</li>
+<li>usar <code>PER-KPI-*</code> como identificadores estáveis, não labels visuais;</li>
+<li>bloquear KPIs <code>proposed</code> e <code>source_pending</code> para consumo canônico com dado real;</li>
+<li>preservar Dashboard Pessoa ≠ Hoje ≠ Meus Objetivos ≠ Meus Próximos Passos ≠ Minha Evolução;</li>
+<li>não criar score global, ranking, percentual universal de evolução, diagnóstico ou perfil determinístico;</li>
+<li>preservar Domínio de Evolução ≠ identidade ≠ prioridade ≠ objetivo ≠ progresso;</li>
+<li>distinguir candidato de confirmado;</li>
+<li>distinguir <code>PROPOSTO</code> de aceito/decidido em Próximos Passos;</li>
+<li>não converter conclusão de objetivo/passo em prova de evolução;</li>
+<li>preservar mudança ≠ melhora e correlação ≠ causalidade;</li>
+<li>distinguir declarado, observado, operacional, calculado, inferido, predito, agregado, conhecimento externo e conhecimento governado como naturezas distintas;</li>
+<li>preservar separadamente o estado epistemológico/derivacional e a natureza do output, sem colapsá-los com a natureza do input/resultado;</li>
+<li>preservar inferência ≠ fato e recomendação ≠ decisão;</li>
+<li>manter confiança, incerteza, limitações e contestação quando materiais;</li>
+<li>aplicar precedência da declaração legítima da Pessoa sobre inferência incompatível em significado pessoal;</li>
+<li>não usar fator comercial para redefinir relevância pessoal;</li>
+<li>tratar filtros como restrição adicional;</li>
+<li>validar escopo no serving/backend, não somente no cliente;</li>
+<li>separar mock adapters de real adapters;</li>
+<li>preservar <code>NO_DATA</code>, <code>INSUFFICIENT_DATA</code>, <code>INSUFFICIENT_EVIDENCE</code>, <code>SUPPRESSED_BY_POLICY</code>, <code>UNDER_REVIEW</code>, <code>CONTESTED</code>, <code>NOT_ENTITLED</code> e <code>SOURCE_DELAYED</code>;</li>
+<li>preservar versão, temporalidade, freshness e proveniência;</li>
+<li>não hard-code preços ou entitlements não congelados;</li>
+<li>não implementar compartilhamento com Organização, Coletivo, Business ou terceiro por conveniência;</li>
+<li>não expor dados privados de contraparte em drill-down relacional;</li>
+<li>não transformar histórico em placar de produtividade pessoal;</li>
+<li>registrar a versão deste master usada na build.</li>
+</ol>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-24-criterios-de-aceite-para-futuro-handoff">24. Critérios de aceite para futuro handoff<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-24-criterios-de-aceite-para-futuro-handoff" title="Permanent link">&para;</a></h2>
+<p>Antes de qualquer release <code>READY FOR BUILD</code>:</p>
+<div class="highlight"><pre><span></span><code>[ ] KPI selecionado = defined OU approved-equivalent
+[ ] pergunta/finalidade fechadas
+[ ] população/objeto definidos
+[ ] fórmula e componentes definidos
+[ ] janela temporal/granularidade definidas
+[ ] source/data contract definido
+[ ] natureza do input/resultado definida
+[ ] natureza do output definida quando aplicável
+[ ] estado epistemológico/derivacional preservado
+[ ] access/disclosure definido
+[ ] sensibilidade/minimização definidas
+[ ] filtros/drill-down definidos
+[ ] null/zero/no-data definidos
+[ ] freshness/quality checks definidos
+[ ] proveniência definida
+[ ] confidence/uncertainty definidos quando materiais
+[ ] contestação/revisão definida quando aplicável
+[ ] precedência da autoridade da Pessoa preservada
+[ ] relações não ampliam disclosure da contraparte
+[ ] claims suportados/proibidos definidos
+[ ] contratos de domínio aplicáveis satisfeitos
+[ ] Design/build authorization foi emitida
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-25-itens-explicitamente-bloqueados-nesta-versao">25. Itens explicitamente bloqueados nesta versão<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-25-itens-explicitamente-bloqueados-nesta-versao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>REAL DATA
+→ NOT AUTHORIZED
+
+BACKEND / API FÍSICA
+→ NOT DEFINED HERE
+
+TECHNICAL RBAC
+→ NOT IMPLEMENTED
+
+AUTHENTICATED HOME / TODAY / SURFACE MAP / STATE MAP
+→ NOT DEFINED BY THIS DOCUMENT
+
+FINAL VISUAL DESIGN
+→ NOT AUTHORIZED
+
+REPLIT BUILD
+→ NOT AUTHORIZED
+
+UNIVERSAL PERSON SCORE / RANKING
+→ NOT AUTHORIZED
+
+GLOBAL EVOLUTION PERCENTAGE
+→ NOT AUTHORIZED
+
+MEDICAL / PSYCHOLOGICAL DIAGNOSIS
+→ NOT AUTHORIZED
+
+SPIRITUAL EVALUATION
+→ NOT AUTHORIZED
+
+DETERMINISTIC PERSON PROFILE
+→ NOT AUTHORIZED
+
+COMMERCIAL VULNERABILITY PROFILE
+→ NOT AUTHORIZED
+
+AUTOMATED PRIORITY / URGENCY / HUMAN DECISION
+→ NOT AUTHORIZED
+
+CROSS-PERSON RANKING / COMPARISON
+→ NOT AUTHORIZED BY THIS MASTER
+
+ORGANIZATION / COLLECTIVE / BUSINESS ACCESS TO PRIVATE PERSON JOURNEY
+→ NOT AUTHORIZED
+
+BEHAVIORAL ADVERTISING FROM SENSITIVE JOURNEY CONTEXT
+→ NOT AUTHORIZED
+
+PROFESSIONAL OR INSTITUTIONAL AUTHORITY REPLACEMENT
+→ NOT AUTHORIZED
+
+ADS ANALYTICS
+→ OUTSIDE THIS MASTER
+→ ANNEX F REMAINS SEPARATE
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-person-master-specification-26-estado-final-desta-versao">26. Estado final desta versão<a class="headerlink" href="#intelligence-architecture-dashboard-person-master-specification-26-estado-final-desta-versao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-PERSON-001
+→ ACTIVE v0.1.2
+→ ANNEX E PRE-IMPLEMENTATION MASTER
+
+PERSON JOURNEY AUTHORITY
+→ GKR-JOURNEY-PERSON-001 PRESERVED
+
+DIRECTION / MOVEMENT / EVOLUTION AUTHORITIES
+→ GKR-UX-D5-C1-001 + SPECIALIZED CONTRACTS PRESERVED
+
+ANALYTICAL AREAS
+→ 9
+
+KPI FAMILIES
+→ CTX / OBJ / MOV / EVO / REL / INT / CAP / DQ
+
+HISTORY / EVENTS
+→ CROSS-CUTTING TEMPORAL DIMENSION
+→ NO AUTONOMOUS KPI FAMILY
+
+PERSON GLOBAL SCORE
+→ BLOCKED / NOT MATERIALIZED
+
+KPI IMPLEMENTATION READINESS
+→ NONE CLAIMED BY INFERENCE
+→ ALL CURRENT KPIs = proposed
+→ ALL = NOT_READY
+
+PERSON AUTHORITY
+→ OWN AUTHORIZED DATA / JOURNEY / OUTPUTS
+→ MEANING-PERSONAL DECLARATION PRECEDENCE PRESERVED
+
+THIRD-PARTY PRIVATE DATA
+→ NOT AUTOMATICALLY DISCLOSED
+
+PROCESSING AUTHORIZED
+≠ DISCLOSURE AUTHORIZED
+
+REAL DATA / BACKEND / API / TECHNICAL RBAC / PRODUCTION
+→ NOT AUTHORIZED
+
+REPLIT BUILD
+→ NOT AUTHORIZED
+
+ANNEX F
+→ UNCHANGED / NOT MATERIALIZED BY THIS DOCUMENT
+</code></pre></div>
+<p>A materialização documental deste master não autoriza dados reais, implementação, produção, disclosure adicional a terceiros ou promoção automática de KPI.</p></section></section><section class="print-page" id="adr-adr-007-neo4j-primary-graph-reference" heading-number="8.4"><h1 id="adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo">ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo" title="Permanent link">&para;</a></h1>
 <h2 id="adr-adr-007-neo4j-primary-graph-reference-contexto">Contexto<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-contexto" title="Permanent link">&para;</a></h2>
 <p>A Guivos concebe dados, contexto, conhecimento e relações como ativos que precisam preservar significado, proveniência, autoridade e conexões entre Pessoas, Coletivos, Organizações, oportunidades, produtos, evidências e demais objetos governados.</p>
 <p>Nas discussões arquiteturais anteriores, Neo4j e Amazon Neptune foram comparados como alternativas para a camada de grafo. A decisão validada foi seguir com <strong>Neo4j</strong> como referência primária, sem transformar essa escolha em afirmação de implantação.</p>
@@ -30366,6 +31668,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 .print-site-enumerate-headings #intelligence-architecture-dashboard-organization-master-specification > h1:before { content: '8.3.6 ' }
 
 .print-site-enumerate-headings #intelligence-architecture-dashboard-collective-master-specification > h1:before { content: '8.3.7 ' }
+
+.print-site-enumerate-headings #intelligence-architecture-dashboard-person-master-specification > h1:before { content: '8.3.8 ' }
 
 .print-site-enumerate-headings #adr-adr-007-neo4j-primary-graph-reference > h1:before { content: '8.4 ' }
 

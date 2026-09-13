@@ -1141,6 +1141,19 @@
 <span class="md-status md-status--active"></span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dashboard-person-master-specification/">
+<span class="md-ellipsis">
+    
+  
+    Dashboard Pessoa — Documento Mestre
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1819,8 +1832,8 @@ MASTER ESPECIALIZADO
 </tr>
 <tr>
 <td>E</td>
-<td>Dashboard Pessoa</td>
-<td>RESERVED / NOT MATERIALIZED</td>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-PERSON-001</code> — Dashboard Pessoa</td>
+<td>MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER</td>
 </tr>
 <tr>
 <td>F</td>
@@ -1879,6 +1892,12 @@ REPUTAÇÃO
 <p>Finalidade candidata original: oferecer compreensão individual autorizada da própria trajetória, históricos, contextos, evolução, participações, relações, eventos e outputs de Graph Analytics/Intelligence quando legitimamente autorizados e explicáveis.</p>
 <div class="highlight"><pre><span></span><code>DECLARADO ≠ OBSERVADO ≠ CALCULADO ≠ INFERIDO ≠ PREDITO
 </code></pre></div>
+<p>Esse escopo foi aprofundado documentalmente no Anexo E sem autorizar dados reais, implementação, redefinição de <code>Hoje</code>, <code>Meus Objetivos</code>, <code>Meus Próximos Passos</code> ou <code>Minha Evolução</code>, nem disclosure a terceiros além da autoridade aplicável.</p>
+<div class="highlight"><pre><span></span><code>DOCUMENTAÇÃO DO ANEXO E
+≠ HOJE / MEUS OBJETIVOS / MEUS PRÓXIMOS PASSOS / MINHA EVOLUÇÃO
+≠ SURFACE MAP / STATE MAP
+≠ DASHBOARD OPERACIONAL IMPLEMENTADO
+</code></pre></div>
 <h4 id="ads-opportunity-boost-analytics">Ads / Opportunity Boost Analytics<a class="headerlink" href="#ads-opportunity-boost-analytics" title="Permanent link">¶</a></h4>
 <p>Necessidade candidata original: dados de anúncios e Opportunity Boost do anunciante.</p>
 <p>Nesta versão global:</p>
@@ -1913,7 +1932,7 @@ DASHBOARD DOCUMENTADO
 ≠ DADO REAL CONECTADO
 </code></pre></div>
 <p>Quando uma autoridade de domínio mantiver uma superfície, relação, métrica ou capacidade como não definida, este master e seus anexos devem preservar esse estado.</p>
-<p>A existência dos masters de Organização e Coletivo <strong>não deve ser interpretada como materialização de Home/Início autenticado, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
+<p>A existência dos masters de Organização, Coletivo e Pessoa <strong>não deve ser interpretada como materialização de Home/Início/Hoje autenticado, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
 <hr/>
 <h2 id="4-principio-arquitetural">4. Princípio arquitetural<a class="headerlink" href="#4-principio-arquitetural" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code>GKR / PRODUTO / GOVERNANÇA
@@ -2544,7 +2563,7 @@ ANEXO D — COLETIVO
 → MATERIALIZED DOCUMENTARILY
 
 ANEXO E — PESSOA
-→ RESERVED / NOT MATERIALIZED
+→ MATERIALIZED DOCUMENTARILY
 
 ANEXO F — ADS / OPPORTUNITY BOOST
 → RESERVED / NOT MATERIALIZED
@@ -2553,7 +2572,7 @@ ANEXO F — ADS / OPPORTUNITY BOOST
 <hr/>
 <h2 id="14-estado-final-desta-versao">14. Estado final desta versão<a class="headerlink" href="#14-estado-final-desta-versao" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.6
+→ v0.2.7
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -2593,7 +2612,11 @@ DASHBOARD COLLECTIVE MASTER
 → GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
 → MATERIALIZED DOCUMENTARILY AS ANNEX D
 
-ANNEXES E / F
+DASHBOARD PERSON MASTER
+→ GKR-INTELLIGENCE-DASHBOARD-PERSON-001
+→ MATERIALIZED DOCUMENTARILY AS ANNEX E
+
+ANNEX F
 → RESERVED / NOT MATERIALIZED
 
 REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
