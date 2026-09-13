@@ -111,6 +111,7 @@ nav:
           - KPI Contract Standard: intelligence-architecture/kpi-contract-standard.md
           - Dashboard Guivos — Documento Mestre: intelligence-architecture/dashboard-guivos-master-specification.md
           - Dashboard Guivos — KPI Registry: intelligence-architecture/dashboard-guivos-kpi-registry.md
+          - Dashboard Guivos Business — Documento Mestre: intelligence-architecture/dashboard-guivos-business-master-specification.md
       - Tecnologia de Grafo: adr/ADR-007-neo4j-primary-graph-reference.md
 
   - Jurídico, Privacidade e Institucional:
