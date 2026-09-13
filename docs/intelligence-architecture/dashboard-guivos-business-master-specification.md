@@ -1,12 +1,12 @@
 ---
 id: GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
 title: Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit
-status: draft
-version: 0.1.0
+status: active
+version: 0.1.1
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
-maturity: governed_candidate_pre_implementation_dashboard_master
+maturity: governed_pre_implementation_dashboard_master
 depends_on:
   - GKR-INTELLIGENCE-DASHBOARD-KPI-001
   - GPA-004
@@ -26,7 +26,7 @@ related:
 
 ## 1. Finalidade
 
-Este documento constitui o **draft governado do Anexo B** de `GKR-INTELLIGENCE-DASHBOARD-KPI-001` para o **Dashboard Guivos Business**.
+Este documento é o **Anexo B** de `GKR-INTELLIGENCE-DASHBOARD-KPI-001` e governa, em nível documental pré-implementação, o **Dashboard Guivos Business**.
 
 Seu objetivo é consolidar, antes de qualquer implementação, o recorte analítico legítimo do produto especializado B2B Guivos Business a partir das autoridades correntes do GKR.
 
@@ -64,8 +64,8 @@ Em caso de conflito, este master não redefine a autoridade especializada. Ele d
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
-→ DRAFT v0.1.0
-→ CANDIDATE PRE-IMPLEMENTATION DASHBOARD MASTER
+→ ACTIVE
+→ PRE-IMPLEMENTATION DASHBOARD MASTER
 
 GUIVOS BUSINESS
 → PRODUCT SPECIALIZED B2B
@@ -100,7 +100,7 @@ A existência de uma relação Business não concede à empresa acesso irrestrit
 
 ## 4. Escopo funcional do Dashboard Business
 
-O dashboard candidato é organizado em **nove áreas analíticas**:
+O dashboard é organizado em **nove áreas analíticas**:
 
 1. Visão Executiva da Relação Business;
 2. Programas de Incentivo;
@@ -572,9 +572,9 @@ ADS ANALYTICS
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
-→ DRAFT v0.1.0
-→ ANNEX B CANDIDATE MASTER
-→ PRE-IMPLEMENTATION
+→ v0.1.1
+→ ACTIVE
+→ ANNEX B PRE-IMPLEMENTATION MASTER
 
 DOMAIN AUTHORITIES
 → GPA-004 + GPA-004-FUNCTIONAL-PORTFOLIO-001 PRESERVED
@@ -606,4 +606,4 @@ ANNEX C / D / E / F
 → UNCHANGED / NOT MATERIALIZED BY THIS DOCUMENT
 ```
 
-A promoção deste draft para master materializado exige reconciliação explícita do registry do master global, validação semântica/mecânica e review governado da PR correspondente.
+A materialização documental deste master não autoriza dados reais, implementação, produção, ampliação de disclosure ou promoção automática de qualquer KPI além de seu status governado.
