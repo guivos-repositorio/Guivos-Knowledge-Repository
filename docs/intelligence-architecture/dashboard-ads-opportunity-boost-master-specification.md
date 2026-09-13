@@ -23,6 +23,7 @@ related:
   - RF-07
   - RF-09
   - UXA-038
+  - GKR-UX-HOME-ADS-MASTER-001
 ---
 
 # Dashboard Ads / Opportunity Boost — Documento Mestre de Especificação Analítica e Handoff Replit
@@ -31,7 +32,7 @@ related:
 
 Este documento constitui o **draft governado do Anexo F** de `GKR-INTELLIGENCE-DASHBOARD-KPI-001` para **Ads / Opportunity Boost Analytics**.
 
-Seu objetivo é consolidar, antes de qualquer implementação, o recorte analítico legítimo pelo qual um anunciante autorizado e as funções internas competentes da Guivos poderão compreender **campanhas e objetos patrocinados, entrega em inventário autorizado, eventos válidos, Opportunity Boost, orçamento e reconciliação, outcomes legitimamente instrumentados, agregados permitidos, qualidade, antifraude, freshness e proveniência**.
+Seu objetivo é consolidar, antes de qualquer implementação, o recorte analítico legítimo pelo qual um anunciante autorizado e as funções internas competentes da Guivos poderão compreender **campanhas e objetos patrocinados, entrega em inventário autorizado, eventos válidos, Opportunity Boost, orçamento e reconciliação, outcomes legitimamente instrumentados, resultados declarados explicitamente identificados como autorrelato, agregados permitidos, qualidade, antifraude, freshness e proveniência**.
 
 O dashboard deve apoiar mensuração comercial responsável sem transformar pagamento em relevância orgânica, evento em resultado, correlação em causalidade, participante em lead vendável ou contexto pessoal protegido em matéria-prima publicitária.
 
@@ -62,6 +63,8 @@ ADS / OPPORTUNITY BOOST ANALYTICS
 |---|---|
 | `GKR-INTELLIGENCE-DASHBOARD-KPI-001` | envelope transversal de KPI, acesso, disclosure e handoff |
 | `GPA-007` | autoridade de Produto Guivos Ads, seus limites e relação com superfícies anfitriãs |
+| `GKR-UX-HOME-ADS-MASTER-001` | governa exclusivamente a Home Pública Ads v1 e seus limites narrativos/comerciais; não define Ads Analytics |
+| `UXA-038` | contrato funcional do Opportunity Boost, incluindo estados, controles e relatório do anunciante |
 | `GEM-007-ADS-ECONOMIC-ROLE-001` | papel econômico de Ads, eventos econômicos candidatos, riscos e guardrails |
 | `GEM-007-A1` | contrato econômico e entre produtos do Opportunity Boost |
 | `GEM-010-A2` | baseline candidata de preços, orçamento e mensuração; não autoriza oferta pública ou faturamento |
@@ -81,7 +84,20 @@ DOCUMENTO DRAFT DE ATTRIBUTION
 ≠ MODELO DE ATTRIBUTION DEFINIDO
 ```
 
-A referência de `GPA-007` a `GKR-UX-HOME-ADS-MASTER-001` é preservada como referência de autoridade da Home, mas este master não infere conteúdo adicional de documento não materializado/localizado nesta frente.
+`GKR-UX-HOME-ADS-MASTER-001` está materializado em `docs/experience-architecture/public-home-ads-master-document.md` e governa exclusivamente a **Home Pública do Guivos Ads v1**, voltada à descoberta e qualificação comercial. Este Anexo F governa um recorte analítico distinto e não redefine a Home, sua narrativa, conversão ou futura implementação.
+
+```text
+HOME PÚBLICA ADS
+→ DESCOBERTA / EXPLICAÇÃO / QUALIFICAÇÃO COMERCIAL
+
+ADS ANALYTICS
+→ CONSUMO ANALÍTICO AUTORIZADO
+
+HOME ADS
+≠ DASHBOARD ADS
+≠ CAMPAIGN MANAGER
+≠ CHECKOUT
+```
 
 ---
 
@@ -156,7 +172,7 @@ Ads / Opportunity Boost Analytics é organizado em **dez áreas analíticas**:
 4. Eventos e Ações Válidas;
 5. Opportunity Boost;
 6. Orçamento e Reconciliação Econômica;
-7. Outcomes Instrumentados;
+7. Outcomes Instrumentados e Resultados Declarados;
 8. Público Permitido e Disclosure;
 9. Qualidade, Tráfego Inválido e Antifraude;
 10. Qualidade do Dado, Freshness, Proveniência e Limitações.
@@ -221,7 +237,7 @@ Famílias iniciais:
 - `EVT` — eventos e ações válidas;
 - `BST` — Opportunity Boost;
 - `FIN` — orçamento e reconciliação econômica;
-- `OUT` — outcomes legitimamente instrumentados;
+- `OUT` — outcomes instrumentados e resultados declarados;
 - `AUD` — público permitido, segmentação e disclosure agregado;
 - `QF` — qualidade, tráfego inválido e antifraude;
 - `DQ` — qualidade do dado, freshness, proveniência e governança.
@@ -308,7 +324,7 @@ PAGAMENTO
 
 ## 10. Família DEL — Entrega e inventário patrocinado
 
-Esta família separa entrega técnica, validade e visibilidade.
+Esta família separa entrega técnica, validade, visibilidade e frequência.
 
 | ID | Indicador candidato | Definição candidata | Unidade | Status | Gate principal |
 |---|---|---|---|---|---|
@@ -318,6 +334,7 @@ Esta família separa entrega técnica, validade e visibilidade.
 | ADS-KPI-DEL-004 | Alcance estimado agregado | pessoas/dispositivos únicos estimados sem exposição individual | estimativa agregada | proposed | identity resolution + privacy + methodology |
 | ADS-KPI-DEL-005 | Entrega por superfície anfitriã | distribuição da entrega patrocinada entre superfícies autorizadas | distribuição | proposed | surface taxonomy + serving source |
 | ADS-KPI-DEL-006 | Unidades patrocinadas entregues | quantidade de unidades de inventário patrocinado legitimamente servidas | unidades | proposed | inventory contract + source |
+| ADS-KPI-DEL-007 | Frequência média | média de exposições válidas no recorte autorizado, preservando que população/unidade única, janela e metodologia ainda exigem contrato próprio | média | proposed | frequency definition + unique-unit methodology + window + source |
 
 ```text
 IMPRESSÃO SERVIDA
@@ -329,7 +346,13 @@ IMPRESSÃO SERVIDA
 
 ALCANCE ESTIMADO
 ≠ PESSOAS IDENTIFICADAS PARA O ANUNCIANTE
+
+FREQUÊNCIA MÉDIA
+≠ LIMITE DE FREQUÊNCIA DEFINIDO
+≠ GARANTIA DE ALCANCE
 ```
+
+`UXA-038` exige que o relatório do anunciante preserve `frequência média` e que repetição excessiva seja controlada por limite de frequência por campanha e superfície. Este master preserva a necessidade analítica, mas **não inventa** população única, fórmula, janela, threshold ou source: esses elementos permanecem gates para definição futura do KPI.
 
 A densidade candidata citada em `GEM-007-A1` não é promovida por este master a threshold operacional ou KPI aprovado.
 
@@ -434,9 +457,9 @@ CPM, CPC, faixas de orçamento, taxa de serviço, tributos e margens permanecem 
 
 ---
 
-## 14. Família OUT — Outcomes instrumentados
+## 14. Família OUT — Outcomes instrumentados e resultados declarados
 
-Esta família preserva outcome observado como objeto distinto de attribution e impacto.
+Esta família preserva outcome observado como objeto distinto de attribution e impacto e mantém **resultado declarado pelo anunciante** como evidência/autorreporte explicitamente separado de evento instrumentado.
 
 | ID | Indicador candidato | Definição candidata | Unidade | Status | Gate principal |
 |---|---|---|---|---|---|
@@ -444,10 +467,18 @@ Esta família preserva outcome observado como objeto distinto de attribution e i
 | ADS-KPI-OUT-002 | Outcomes por tipo autorizado | distribuição agregada segundo taxonomia de outcome legitimamente definida | distribuição | proposed | outcome taxonomy + disclosure |
 | ADS-KPI-OUT-003 | Outcomes confirmados | outcomes cuja confirmação atende ao contrato de evidência aplicável | outcomes | proposed | confirmation + evidence |
 | ADS-KPI-OUT-004 | Outcomes não resolvidos | eventos finais cuja relação, confirmação ou responsabilidade permanece não resolvida | outcomes | proposed | unresolved-state contract |
+| ADS-KPI-OUT-005 | Resultados declarados pelo anunciante | resultados fornecidos pelo anunciante, preservados como autorrelato com origem explícita e sem reclassificação como evento instrumentado | declarações | proposed | declared-evidence semantics + provenance + review/disclosure |
 
 ```text
 OUTCOME OBSERVADO
 ≠ OUTCOME ATRIBUÍDO A ADS
+≠ CAUSALIDADE
+≠ IMPACTO
+
+RESULTADO DECLARADO PELO ANUNCIANTE
+≠ OUTCOME INSTRUMENTADO
+≠ RESULTADO CONFIRMADO PELA GUIVOS
+≠ ATTRIBUTION
 ≠ CAUSALIDADE
 ≠ IMPACTO
 
@@ -456,6 +487,8 @@ CONTRATAÇÃO
 ≠ ENTREGA
 ≠ IMPACTO
 ```
+
+`UXA-038` exige que o relatório preserve uma seção de **Resultado declarado**, identificada explicitamente como autorrelato e distinguível de evento instrumentado. O autorrelato pode ser armazenado e exibido quando legitimamente autorizado, mas não ganha, por existir, status de outcome instrumentado, confirmação, attribution ou causalidade.
 
 Nenhum outcome pode receber crédito causal de Ads sem modelo de attribution futuramente adjudicado.
 
@@ -635,7 +668,8 @@ Filtros somente restringem o recorte já autorizado:
 - estado de reconciliação;
 - status de validade/qualidade;
 - source/freshness;
-- outcome autorizado.
+- outcome autorizado;
+- natureza de evidência (`instrumentado` / `declarado`) quando aplicável.
 
 ```text
 FILTRO
@@ -715,6 +749,7 @@ Sem definir schema físico, a superfície poderá futuramente consumir contratos
 - Opportunity Boost Projection;
 - Budget / Reconciliation Projection;
 - Authorized Outcome Projection;
+- Advertiser Declared Result Projection;
 - Allowed Audience Aggregate;
 - Invalid Traffic / Antifraud Status;
 - Data Quality / Freshness / Provenance Status.
@@ -738,6 +773,8 @@ Cada payload deverá carregar, quando aplicável:
 - confidence/uncertainty quando material;
 - claims permitidos e limitações;
 - status de attribution quando aplicável, preservando `unresolved`/`not_attributable` sem inventar modelo.
+
+Para resultado declarado pelo anunciante, o payload deverá preservar explicitamente a origem `advertiser_declared` ou equivalente governado, sem convertê-la em instrumentação da Guivos, confirmação independente ou attribution.
 
 ---
 
@@ -809,23 +846,26 @@ Quando houver autorização formal de build, a ferramenta deverá:
 5. separar orgânico de patrocinado em todos os contratos e visualizações;
 6. não transformar pagamento em relevância, recomendação, confiança ou impacto;
 7. distinguir impressão servida, válida e visível;
-8. distinguir clique, interesse, inscrição, contratação, outcome e impacto;
-9. distinguir evento bruto, válido, faturável e outcome;
-10. não criar modelo de attribution, janela, first-touch, last-touch, multi-touch, pesos, percentual ou algoritmo;
-11. preservar `ATTRIBUTION = BLOCKED` enquanto a autoridade não for adjudicada;
-12. não congelar os valores candidatos de `GEM-010-A2` como tabela de preço vigente;
-13. preservar orçamento ≠ receita e evento faturável ≠ receita contábil automática;
-14. não expor listas individuais de visualizadores, clickers ou participantes ao anunciante por conveniência;
-15. não usar contexto pessoal protegido ou inferência sensível para segmentação;
-16. aplicar thresholds/supressões quando definidos pela política futura;
-17. validar scope e disclosure no serving/backend, não apenas no cliente;
-18. separar mock adapters de real adapters;
-19. preservar estados `NO_DATA`, `INSUFFICIENT_DATA`, `INSUFFICIENT_EVIDENCE`, `SUPPRESSED_BY_POLICY`, `UNDER_REVIEW`, `RECONCILIATION_PENDING`, `NOT_ENTITLED` e `SOURCE_DELAYED`;
-20. preservar versão, temporalidade, freshness, proveniência e validade;
-21. não transformar sinal antifraude em conclusão de culpa;
-22. manter superfície anfitriã como autoridade de contexto, segurança, acessibilidade e densidade;
-23. não implementar campaign creation, media buying ou checkout a partir deste master;
-24. registrar a versão deste master usada na build.
+8. preservar frequência média como leitura candidata sem inventar fórmula, unidade única, janela ou limite de frequência;
+9. distinguir clique, interesse, inscrição, contratação, outcome e impacto;
+10. distinguir resultado declarado/autorreporte de outcome instrumentado, confirmação, attribution, causalidade e impacto;
+11. distinguir evento bruto, válido, faturável e outcome;
+12. não criar modelo de attribution, janela, first-touch, last-touch, multi-touch, pesos, percentual ou algoritmo;
+13. preservar `ATTRIBUTION = BLOCKED` enquanto a autoridade não for adjudicada;
+14. não congelar os valores candidatos de `GEM-010-A2` como tabela de preço vigente;
+15. preservar orçamento ≠ receita e evento faturável ≠ receita contábil automática;
+16. não expor listas individuais de visualizadores, clickers ou participantes ao anunciante por conveniência;
+17. não usar contexto pessoal protegido ou inferência sensível para segmentação;
+18. aplicar thresholds/supressões quando definidos pela política futura;
+19. validar scope e disclosure no serving/backend, não apenas no cliente;
+20. separar mock adapters de real adapters;
+21. preservar estados `NO_DATA`, `INSUFFICIENT_DATA`, `INSUFFICIENT_EVIDENCE`, `SUPPRESSED_BY_POLICY`, `UNDER_REVIEW`, `RECONCILIATION_PENDING`, `NOT_ENTITLED` e `SOURCE_DELAYED`;
+22. preservar versão, temporalidade, freshness, proveniência e validade;
+23. não transformar sinal antifraude em conclusão de culpa;
+24. manter superfície anfitriã como autoridade de contexto, segurança, acessibilidade e densidade;
+25. não implementar campaign creation, media buying ou checkout a partir deste master;
+26. não usar este master para redefinir ou materializar a Home Pública Ads;
+27. registrar a versão deste master usada na build.
 
 ---
 
@@ -842,6 +882,7 @@ Antes de qualquer release `READY FOR BUILD`:
 [ ] source/data contract definido
 [ ] natureza de evento/evidência definida
 [ ] validade/faturabilidade separadas quando aplicáveis
+[ ] resultado declarado distinguido de evento instrumentado quando aplicável
 [ ] access/disclosure definido
 [ ] agregação/supressão definidas
 [ ] filtros/drill-down definidos
@@ -930,6 +971,10 @@ ANALYTICAL AREAS
 KPI FAMILIES
 → CAM / DEL / EVT / BST / FIN / OUT / AUD / QF / DQ
 
+CURRENT KPI CANDIDATES
+→ 50
+→ ALL proposed / NOT_READY
+
 ATTRIBUTION
 → BLOCKED / MODEL NOT DEFINED
 → NO KPI FAMILY MATERIALIZED
@@ -946,6 +991,10 @@ KPI IMPLEMENTATION READINESS
 ADVERTISER AUTHORITY
 → OWN CAMPAIGNS / BOOSTS / BUDGET / AUTHORIZED AGGREGATES
 → NO DEFAULT ACCESS TO PRIVATE PERSON DATA
+
+HOME ADS AUTHORITY
+→ GKR-UX-HOME-ADS-MASTER-001 PRESERVED
+→ HOME ADS ≠ ADS ANALYTICS
 
 ORGANIC RELEVANCE
 → PRESERVED OUTSIDE PAYMENT
