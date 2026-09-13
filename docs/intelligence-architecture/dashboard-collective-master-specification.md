@@ -1,12 +1,12 @@
 ---
 id: GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
 title: Dashboard Coletivo — Documento Mestre de Especificação Analítica e Handoff Replit
-status: draft
-version: 0.1.0
+status: active
+version: 0.1.1
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
-maturity: governed_candidate_pre_implementation_dashboard_master
+maturity: governed_pre_implementation_dashboard_master
 depends_on:
   - GKR-INTELLIGENCE-DASHBOARD-KPI-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
@@ -28,7 +28,7 @@ related:
 
 ## 1. Finalidade
 
-Este documento constitui o **draft governado do Anexo D** de `GKR-INTELLIGENCE-DASHBOARD-KPI-001` para o **Dashboard Coletivo**.
+Este documento é o **Anexo D** de `GKR-INTELLIGENCE-DASHBOARD-KPI-001` e governa, em nível documental pré-implementação, o **Dashboard Coletivo**.
 
 Seu objetivo é consolidar, antes de qualquer implementação, o recorte analítico legítimo da atuação de um Coletivo, de suas atividades, participações, vínculos, decisões, relações, evidências e capacidades dentro das autoridades vigentes.
 
@@ -74,8 +74,8 @@ Em caso de conflito, este master preserva a autoridade especializada mais restri
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
-→ DRAFT v0.1.0
-→ CANDIDATE PRE-IMPLEMENTATION DASHBOARD MASTER
+→ ACTIVE
+→ PRE-IMPLEMENTATION DASHBOARD MASTER
 
 COLETIVO
 → PARTICIPANT TYPE
@@ -283,7 +283,7 @@ PAUSA / RECUSA / SAÍDA
 ≠ REPUTAÇÃO NEGATIVA
 ```
 
-Este draft não cria `COL-KPI-REP-*`.
+Este master não cria `COL-KPI-REP-*`.
 
 ---
 
@@ -746,9 +746,9 @@ ADS ANALYTICS
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
-→ DRAFT v0.1.0
-→ ANNEX D CANDIDATE MASTER
-→ PRE-IMPLEMENTATION
+→ v0.1.1
+→ ACTIVE
+→ ANNEX D PRE-IMPLEMENTATION MASTER
 
 AUTHENTICATED EXPERIENCE AUTHORITIES
 → GKR-UX-ORGCOL-AUTH-JOBS-001 + GKR-UX-ORGCOL-AUTH-IA-001 PRESERVED
@@ -787,4 +787,4 @@ ANNEX E / F
 → UNCHANGED / NOT MATERIALIZED BY THIS DOCUMENT
 ```
 
-A promoção deste draft para master materializado exige reconciliação explícita do registry do master global, validação semântica/mecânica e review governado da PR correspondente.
+A materialização documental deste master não autoriza dados reais, implementação, produção, ampliação de disclosure, reputação, score/ranking ou promoção automática de qualquer KPI além de seu status governado.
