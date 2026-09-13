@@ -84,6 +84,7 @@ nav:
       - Organização: journeys/organization.md
       - Coletivo: journeys/collective.md
       - Organizações e Coletivos — Estado Atual: experience-architecture/organizations-collectives-current-state.md
+      - Organizações e Coletivos — Mapa de Superfícies Autenticadas: experience-architecture/organizations-collectives-authenticated-surface-map.md
 
   - Produtos e Economia:
       - Arquitetura de Produtos: product-architecture/index.md

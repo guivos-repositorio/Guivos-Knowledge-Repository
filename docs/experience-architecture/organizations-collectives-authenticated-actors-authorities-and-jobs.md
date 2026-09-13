@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-JOBS-001
 title: Organizações e Coletivos — Atores, Autoridades e Jobs Prioritários da Experiência Autenticada
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-12
 normative: false
 maturity: authenticated_information_architecture_defined_pre_surface_map
 depends_on:
@@ -17,6 +17,7 @@ related:
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
   - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - RP-002
   - RP-002-OCE-001
   - RP-002-PMF-001
@@ -28,7 +29,7 @@ related:
 
 Este documento fechou a etapa imediatamente anterior à **Arquitetura da Informação** da experiência autenticada de Organizações e Coletivos.
 
-Após a validação deste incremento, `GKR-UX-ORGCOL-AUTH-IA-001` definiu a Arquitetura da Informação autenticada no estágio **pre-surface-map**. Este documento permanece `active` como autoridade dos atores, limites e jobs que alimentam essa IA; não volta a classificar a IA como pendente.
+Após a validação deste incremento, `GKR-UX-ORGCOL-AUTH-IA-001` definiu a Arquitetura da Informação autenticada no estágio **pre-surface-map**. Essa maturidade permanece própria deste artefato e da IA naquele momento documental. Posteriormente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` consumiu esses inputs e definiu o **Surface Map lógico-documental canônico**. Este documento permanece `active` como autoridade dos atores, limites e jobs; não reclassifica a IA nem o Surface Map como pendentes.
 
 Ele reconcilia os fundamentos e contratos vigentes para responder quatro perguntas:
 
@@ -37,7 +38,7 @@ Ele reconcilia os fundamentos e contratos vigentes para responder quatro pergunt
 3. que tipo de autoridade precisa estar explícita;
 4. quais jobs precisam ser suportados antes de decidir navegação, superfícies ou wireframes.
 
-Este documento não define menu, dashboard, tela inicial, componentes, permissões técnicas, RBAC, wireframe, UI ou implementação. A definição posterior da IA permanece governada por `GKR-UX-ORGCOL-AUTH-IA-001`.
+Este documento não define menu, dashboard, tela inicial, componentes, permissões técnicas, RBAC, wireframe, UI ou implementação. A IA permanece governada por `GKR-UX-ORGCOL-AUTH-IA-001` e o Surface Map lógico-documental posterior por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`.
 
 ```text
 ATOR FUNCIONAL
@@ -63,16 +64,18 @@ A frente parte das seguintes autoridades e estados:
 - `GKR-JOURNEY-ORGANIZATION-001` preserva a Jornada da Organização em `draft` e maturidades independentes de fluxos especializados;
 - `GKR-JOURNEY-COLLECTIVE-001` preserva a Jornada do Coletivo em `draft` e maturidades independentes de fluxos especializados;
 - `GKR-UX-ORGCOL-UX-STATE-001` preserva o baseline histórico no qual a arquitetura da informação e os wireframes principais autenticados ainda não estavam definidos;
-- `GKR-UX-ORGCOL-AUTH-IA-001` define a Arquitetura da Informação autenticada de Organização e Coletivo em estado **defined pre-surface-map**, sem materializar wireframes, UI ou implementação;
+- `GKR-UX-ORGCOL-AUTH-IA-001` define a Arquitetura da Informação autenticada de Organização e Coletivo em sua maturidade própria **defined pre-surface-map**, sem materializar wireframes, UI ou implementação;
+- `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define posteriormente o **Surface Map lógico-documental canônico**, sem materializar State Map, navegação visual, wireframes, UI ou implementação;
 - `GKR-UX-ORGCOL-SUPPLY-VALUE-001` fornece Research sobre supply, relevância e papéis sem transformar Research em Canon ou PMF.
 
-A sequência governada permanece:
+A sequência governada corrente é:
 
 ```text
 fundamentos e papéis
 → atores, autoridades e jobs prioritários
 → arquitetura da informação
-→ mapa de superfícies e estados
+→ Surface Map lógico-documental
+→ State Map
 → fluxos prioritários
 → wireframes de baixa fidelidade
 → validação funcional
@@ -82,7 +85,7 @@ fundamentos e papéis
 → handoff técnico
 ```
 
-No estado corrente, atores/autoridades/jobs e Arquitetura da Informação já estão definidos documentalmente; o próximo gap começa no mapa final de superfícies e estados. Nenhuma etapa seguinte é iniciada automaticamente.
+No estado corrente, atores/autoridades/jobs, Arquitetura da Informação e Surface Map lógico-documental já estão definidos. O próximo gap documental começa no **State Map**, seguido de fluxos prioritários, navegação materializada e wireframes, todos dependentes de autorização própria. Nenhuma etapa seguinte é iniciada automaticamente.
 
 ## 3. Unidade de atuação autenticada
 
@@ -572,7 +575,7 @@ A Arquitetura da Informação autenticada vigente, definida por `GKR-UX-ORGCOL-A
 9. Planos devem permanecer capacidade comercial especializada, não eixo de relevância ou identidade;
 10. a experiência principal não pode ser um dashboard comercial genérico da Organização nem um feed social genérico do Coletivo.
 
-Essas restrições não materializam categorias de menu, surface map final, wireframes ou superfícies.
+No escopo original deste artefato, essas restrições não materializavam categorias de menu, Surface Map ou wireframes. Posteriormente, o Surface Map lógico-documental foi definido por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, sem promover State Map, navegação visual ou wireframes.
 
 ## 13. Decisões explicitamente adiadas
 
@@ -596,7 +599,7 @@ Este documento não decide:
 - protótipo;
 - implementação.
 
-Também não reativa `UXA-015..018` e não inicia `UXA-102/V5`.
+A definição posterior do Surface Map não converte essas decisões em decisões deste artefato e não reativa `UXA-015..018` nem inicia `UXA-102/V5`.
 
 ## 14. Gate histórico de IA e estado corrente
 
@@ -609,7 +612,7 @@ O gate originalmente registrado para iniciar a Arquitetura da Informação exigi
 - fluxos especializados existentes estivessem identificados como inputs, não como UX principal pronta;
 - decisões de tela e navegação continuassem não antecipadas.
 
-Esse gate foi consumido pela definição posterior de `GKR-UX-ORGCOL-AUTH-IA-001`. O estado corrente é:
+Esse gate foi consumido pela definição posterior de `GKR-UX-ORGCOL-AUTH-IA-001`, e os inputs desta autoridade foram depois consumidos por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`. O estado corrente é:
 
 ```text
 FOUNDATIONS / ROLES
@@ -626,9 +629,19 @@ PRIORITY JOBS
 
 AUTHENTICATED INFORMATION ARCHITECTURE
 → DEFINED PRE-SURFACE-MAP
+→ INPUT CONSUMED BY CANONICAL SURFACE MAP
 
-FINAL SURFACE MAP
-→ NOT YET DEFINED
+SURFACE MAP
+→ DEFINED / CANONICAL DOCUMENTARY
+
+STATE MAP
+→ NOT MATERIALIZED
+
+PRIORITY FLOWS
+→ NOT MATERIALIZED AS MAIN AUTHENTICATED EXPERIENCE
+
+MATERIALIZED NAVIGATION
+→ NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
 → NOT YET DEFINED
@@ -637,15 +650,15 @@ UXA-102 / V5
 → NOT STARTED
 
 PRODUCT ENGINEERING
-→ PAUSED
+→ PAUSED / NOT RELEASED
 ```
 
 ## 15. Lacuna documental posterior aos gates de F-006
 
-Após a definição da Arquitetura da Informação autenticada, o mapa final de superfícies e estados autenticados de Organização e Coletivo permanece uma **lacuna documental posterior**, não o próximo ato governado vigente.
+Após a definição da Arquitetura da Informação autenticada, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` fechou a lacuna do **Surface Map lógico-documental**. A maturidade `pre-surface-map` deste artefato continua descrevendo seu próprio estágio de produção e não o estado global corrente.
 
 A sequência governada de `F-006` foi concluída: autorização, cleanup 6/6, reconciliação, validações e prova pós-delete. `F-006` está resolvido. A continuidade desta autoridade permanece funcional e não autoriza materialização visual.
 
-Somente após esses gates, e mediante nova autorização específica, poderá ser considerada a definição do mapa final de superfícies e estados a partir da IA, destes atores, autoridades, jobs e contratos existentes.
+As lacunas posteriores correntes são **State Map, fluxos prioritários da experiência principal, navegação materializada e wireframes**. Cada uma exige autorização específica e não é iniciada por esta reconciliação.
 
-Essa lacuna não está sendo iniciada por esta reconciliação e não deve produzir wireframe, UI, protótipo ou implementação.
+Nenhuma dessas lacunas deve produzir, por inferência, UI, protótipo ou implementação; Design/UI/protótipo permanecem não autorizados e Product Engineering permanece não liberada.

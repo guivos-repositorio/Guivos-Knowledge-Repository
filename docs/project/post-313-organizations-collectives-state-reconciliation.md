@@ -2,9 +2,9 @@
 id: GKR-ORGCOL-POST313-RECON-001
 title: Reconciliação Transversal Pós-313 — Organizações e Coletivos
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-12
 normative: true
 related:
   - GKR-STATE-001
@@ -12,6 +12,7 @@ related:
   - GKR-UX-ORGCOL-UX-STATE-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - UXA-014
   - UXA-019
   - UXA-015
@@ -33,7 +34,7 @@ Este registro preserva a reconciliação transversal aberta após a PR #313, que
 Sua função atual é dupla:
 
 1. preservar a regra normativa de supersessão dos artefatos históricos `UXA-015..018` e impedir regressão de maturidade;
-2. reconciliar essa correção histórica com as autoridades posteriores já integradas de atores, autoridades, jobs e Arquitetura da Informação autenticada.
+2. reconciliar essa correção histórica com as autoridades posteriores já integradas de atores, autoridades, jobs, Arquitetura da Informação autenticada e Surface Map lógico-documental canônico.
 
 Este documento não deve congelar o corpus no snapshot imediatamente posterior à PR #313. Autoridades posteriores válidas precisam ser reconhecidas diretamente.
 
@@ -55,6 +56,8 @@ GKR-UX-ORGCOL-UX-STATE-001 — estado de UX e wireframes
 GKR-UX-ORGCOL-AUTH-JOBS-001 — atores, autoridades e jobs autenticados
 +
 GKR-UX-ORGCOL-AUTH-IA-001 — Arquitetura da Informação autenticada
++
+GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 — Surface Map lógico-documental canônico
 ↓
 este registro, no limite da supersessão pós-313 e da prevenção de regressão
 ↓
@@ -65,7 +68,7 @@ Este registro não substitui as autoridades temáticas posteriores. Sua precedê
 
 ## 3. Estado vigente da experiência autenticada
 
-O estado obrigatório em 2026-08-30 é:
+O estado obrigatório em 2026-09-12 é:
 
 ```text
 ATORES / AUTORIDADES / JOBS AUTENTICADOS
@@ -77,8 +80,12 @@ ARQUITETURA DA INFORMAÇÃO AUTENTICADA
 → MATURIDADE: authenticated_information_architecture_defined_pre_surface_map
 → GKR-UX-ORGCOL-AUTH-IA-001
 
-MAPA FINAL DE SUPERFÍCIES E ESTADOS
-→ NÃO DEFINIDO COMO AUTORIDADE VIGENTE
+SURFACE MAP LÓGICO-DOCUMENTAL AUTENTICADO
+→ DEFINIDO / CANÔNICO
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+
+MAPA DE ESTADOS / FLUXOS PRIORITÁRIOS / NAVEGAÇÃO MATERIALIZADA
+→ NÃO MATERIALIZADOS
 
 WIREFRAME PRINCIPAL DA ORGANIZAÇÃO
 → NÃO DEFINIDO
@@ -93,11 +100,13 @@ UI / PROTÓTIPO / TESTES / HANDOFF TÉCNICO
 → NÃO DEFINIDOS / NÃO AUTORIZADOS POR ESTA RECONCILIAÇÃO
 ```
 
-A existência de IA não equivale a sitemap final, menu visual, mapa de superfícies, wireframe, UI, RBAC técnico ou implementação.
+A existência de IA, isoladamente, não equivale a sitemap técnico, menu visual, Surface Map, wireframe, UI, RBAC técnico ou implementação. O Surface Map vigente é definido por autoridade posterior própria e também não equivale a materialização visual.
 
 ```text
-ARQUITETURA DA INFORMAÇÃO DEFINIDA
+SURFACE MAP LÓGICO-DOCUMENTAL DEFINIDO
 ≠ EXPERIÊNCIA VISUAL PRINCIPAL DEFINIDA
+≠ MAPA DE ESTADOS
+≠ WIREFRAME
 ```
 
 ## 4. Registros históricos superseded
@@ -120,7 +129,7 @@ Eles não constituem:
 - especificação de UI;
 - referência aprovada para Engenharia;
 - evidência atual de validação funcional;
-- autorização para inferir mapa final de superfícies ou navegação.
+- autorização para inferir Surface Map canônico, mapa de estados ou navegação materializada.
 
 A auditoria integral preserva a regra adicional:
 
@@ -157,7 +166,7 @@ Os princípios funcionais centrais permanecem representados nas autoridades atua
 - pausa, recusa e saída legítimas;
 - Próximos Passos compatíveis com a governança.
 
-Esses elementos aparecem de forma distribuída em `UXA-014`, `UXA-019`, `GKR-UX-ORGCOL-AUTH-JOBS-001` e `GKR-UX-ORGCOL-AUTH-IA-001`.
+Esses elementos aparecem de forma distribuída em `UXA-014`, `UXA-019`, `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001` e, na topologia autenticada vigente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`.
 
 Entretanto, hierarquias específicas de tela, listas históricas de estados, linguagem de interface e conclusões de validação de `UXA-015..018` **não são promovidas automaticamente a decisões atuais**. A remoção física foi autorizada e executada por F-006; reconciliação, recomputação, validações e prova pós-delete foram concluídas e F-006 foi posteriormente adjudicado como resolvido.
 
@@ -179,7 +188,7 @@ INVENTÁRIO FÍSICO
 ≠ MATURIDADE VALIDADA
 ```
 
-O `GKR-STATE-001` atual já reconhece Jobs + IA autenticada e não utiliza `121/121 validados` como estado visual vigente.
+O `GKR-STATE-001` atual já reconhece Jobs + IA + Surface Map autenticados e não utiliza `121/121 validados` como estado visual vigente.
 
 ## 7. Efeito sobre Catálogo, Galeria e Matriz de Rastreabilidade
 
@@ -207,9 +216,9 @@ ID DA SUPERFÍCIE CONTINUA EXISTINDO
 ≠ WIREFRAME ANTERIOR CONTINUA VIGENTE
 ```
 
-`GKR-SURF-ORG-001` continua representando uma responsabilidade institucional conhecida, agora apoiada por fundamento, Jobs e IA atuais, sem wireframe principal vigente.
+`GKR-SURF-ORG-001` continua representando uma responsabilidade institucional conhecida, agora apoiada por fundamento, Jobs, IA e pelo Surface Map atuais, sem wireframe principal vigente.
 
-Para Coletivo, IDs e fluxos especializados preservam seus contratos próprios, mas não podem ser usados para inferir a composição final da experiência principal autenticada.
+Para Coletivo, IDs e fluxos especializados preservam seus contratos próprios, mas não podem ser usados para inferir a composição visual final da experiência principal autenticada além do que o Surface Map canônico autoriza documentalmente.
 
 ## 9. Efeito sobre a Jornada Integrada da Organização
 
@@ -233,8 +242,11 @@ FUNDAÇÃO / JOBS / IA
 VISÃO GERAL COMO DOMÍNIO DE IA
 → DEFINIDA SEMANTICAMENTE
 
-MAPA DE SUPERFÍCIES / COMPOSIÇÃO FINAL
-→ PENDENTE
+SURFACE MAP LÓGICO-DOCUMENTAL
+→ DEFINIDO / CANÔNICO
+
+MAPA DE ESTADOS / FLUXOS PRIORITÁRIOS / COMPOSIÇÃO VISUAL
+→ PENDENTES
 
 WIREFRAME PRINCIPAL
 → PENDENTE
@@ -256,9 +268,10 @@ A leitura vigente é:
 
 - `UXA-016/018` não sustentam maturidade visual vigente;
 - fundamentos, Jobs e IA do Coletivo estão definidos documentalmente;
+- `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o Surface Map lógico-documental canônico;
 - superfícies públicas sustentadas por referências independentes preservam maturidade própria;
 - superfícies administrativas especializadas posteriores preservam validação local quando houver autoridade específica;
-- nenhuma delas equivale à definição do mapa final de superfícies ou do wireframe principal autenticado;
+- nenhuma delas substitui o Surface Map canônico nem equivale à materialização do mapa de estados, da navegação principal ou do wireframe autenticado;
 - a Jornada do Coletivo continua `draft`.
 
 ## 11. Wireframe principal ≠ fluxo especializado
@@ -285,18 +298,18 @@ sem que exista o wireframe principal autenticado final.
 Da mesma forma:
 
 ```text
-ARQUITETURA DA INFORMAÇÃO
-≠ MAPA FINAL DE SUPERFÍCIES
+SURFACE MAP LÓGICO-DOCUMENTAL DEFINIDO
+≠ MAPA DE ESTADOS
 ≠ WIREFRAME
 ```
 
 ## 12. Estado das transições especializadas
 
-Transições documentadas em pacotes especializados mantêm sua evidência local, mas não podem ser usadas para afirmar que a composição final da experiência autenticada está fechada.
+Transições documentadas em pacotes especializados mantêm sua evidência local, mas não podem ser usadas para afirmar que a composição visual final da experiência autenticada está fechada.
 
 Em especial:
 
-- origem/retorno de Planos da Organização preserva o contrato especializado, mas deve ser confrontada com o futuro mapa/wireframe principal quando materializado;
+- origem/retorno de Planos da Organização preserva o contrato especializado, mas deve ser confrontada com o mapa de estados, os fluxos e o futuro wireframe principal quando materializados;
 - navegação administrativa local do Coletivo permanece evidência dos pacotes específicos, sem determinar a arquitetura visual final;
 - nenhuma transição especializada autoriza inferir menu global, dashboard, Home autenticada visual ou implementação completa.
 
@@ -308,10 +321,12 @@ Em especial:
 | relação entre participantes | existente em conjunto | existente em conjunto |
 | atores, autoridades e jobs | **definidos** | **definidos** |
 | Arquitetura da Informação autenticada | **definida pré-surface-map** | **definida pré-surface-map** |
+| Surface Map lógico-documental autenticado | **definido / canônico** | **definido / canônico** |
+| mapa de estados / fluxos prioritários | **pendente** | **pendente** |
 | Research de supply / valor | existente | existente |
 | jornada integrada | draft | draft |
 | fluxos especializados | parciais / alguns validados localmente | parciais / vários validados localmente |
-| mapa final de superfícies | **pendente** | **pendente** |
+| navegação principal materializada | **pendente** | **pendente** |
 | wireframe principal | **pendente** | **pendente** |
 | validação do wireframe principal | **pendente** | **pendente** |
 | UI final | pendente | pendente |
@@ -323,16 +338,16 @@ Em especial:
 
 A dívida mecânica registrada originalmente após #313 foi substancialmente absorvida pelos instrumentos atuais.
 
-| Derivado | Estado em 2026-08-30 |
+| Derivado | Estado em 2026-09-12 |
 |---|---|
-| `GKR-STATE-001` | normalizado; Jobs + IA reconhecidos |
+| `GKR-STATE-001` | normalizado; Jobs + IA + Surface Map reconhecidos |
 | `GKR-JOURNEY-SCREEN-CATALOG-001` | normalizado quanto à separação físico × maturidade |
 | `GKR-JOURNEY-SCREEN-GALLERY-001` | normalizado quanto à separação físico × maturidade |
 | `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` | normalizado; associação ≠ autoridade |
-| `GKR-JOURNEY-SURFACE-REGISTRY-001` | maturidade principal O/C não é inferida dos artefatos superseded |
-| Jornada da Organização | normalizada no Bloco H; Jobs + IA atuais reconhecidos; surface map/wireframe principal permanecem pendentes |
-| Jornada do Coletivo | normalizada no Bloco H; Jobs + IA atuais reconhecidos; surface map/wireframe principal permanecem pendentes |
-| porta temática O/C | reconciliada com Jobs + IA no Bloco H |
+| `GKR-JOURNEY-SURFACE-REGISTRY-001` | Surface Map O/C reconhecido; maturidade individual não é inferida dos artefatos superseded |
+| Jornada da Organização | Jobs + IA + Surface Map atuais reconhecidos; mapa de estados/wireframe principal permanecem pendentes |
+| Jornada do Coletivo | Jobs + IA + Surface Map atuais reconhecidos; mapa de estados/navegação/wireframe principal permanecem pendentes |
+| porta temática O/C | reconciliada com Jobs + IA + Surface Map |
 
 Esta tabela não encerra `F-006`. Os testes de absorção, referências e função atual estão concluídos, as dependências funcionais ativas foram reconciliadas e a elegibilidade documental de cleanup está comprovada. O cleanup governado foi autorizado, aplicado 6/6 e validado; a proveniência histórica permanece sem dependência física.
 
@@ -387,8 +402,11 @@ ACTORS / AUTHORITIES / JOBS
 AUTHENTICATED INFORMATION ARCHITECTURE
 → DEFINED PRE-SURFACE-MAP
 
-FINAL SURFACE MAP
-→ NOT DEFINED / HOLD DURING CURRENT AUDIT DECISION
+AUTHENTICATED LOGICAL SURFACE MAP
+→ DEFINED / CANONICAL DOCUMENTARY
+
+STATE MAP / PRIORITY FLOWS / MATERIALIZED NAVIGATION
+→ NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
 → NOT DEFINED
@@ -404,6 +422,6 @@ A branch pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanec
 
 ## 18. Regra final
 
-> **Arquivo físico não é autoridade vigente. Materialização histórica não é wireframe aprovado. Validação antiga não sobrevive à supersessão do objeto que validava. Arquitetura da Informação atual não reativa o wireframe histórico.**
+> **Arquivo físico não é autoridade vigente. Materialização histórica não é wireframe aprovado. Validação antiga não sobrevive à supersessão do objeto que validava. Arquitetura da Informação atual não reativa o wireframe histórico. Surface Map lógico-documental canônico não equivale a materialização visual, mapa de estados ou wireframe.**
 
 A experiência principal de Organizações e Coletivos somente poderá voltar a ser declarada visualmente materializada/validada quando novos objetos forem definidos, revisados e validados a partir das autoridades atuais e dos gates vigentes.
