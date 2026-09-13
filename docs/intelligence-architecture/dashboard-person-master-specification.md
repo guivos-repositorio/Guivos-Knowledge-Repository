@@ -1,12 +1,12 @@
 ---
 id: GKR-INTELLIGENCE-DASHBOARD-PERSON-001
 title: Dashboard Pessoa — Documento Mestre de Especificação Analítica e Handoff Replit
-status: draft
-version: 0.1.0
+status: active
+version: 0.1.1
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-13
 normative: false
-maturity: governed_candidate_pre_implementation_dashboard_master
+maturity: governed_pre_implementation_dashboard_master
 depends_on:
   - GKR-INTELLIGENCE-DASHBOARD-KPI-001
   - GKR-JOURNEY-PERSON-001
@@ -31,7 +31,7 @@ related:
 
 ## 1. Finalidade
 
-Este documento constitui o **draft governado do Anexo E** de `GKR-INTELLIGENCE-DASHBOARD-KPI-001` para o **Dashboard Pessoa**.
+Este documento é o **Anexo E** de `GKR-INTELLIGENCE-DASHBOARD-KPI-001` e governa, em nível documental pré-implementação, o **Dashboard Pessoa**.
 
 Seu objetivo é consolidar, antes de qualquer implementação, o recorte analítico legítimo pelo qual uma Pessoa pode compreender **seus próprios dados autorizados, sua Journey, seus históricos, contextos, objetivos, movimentos, trajetórias, participações, relações, eventos e outputs autorizados de Analytics, Graph e Guivos Intelligence**.
 
@@ -89,8 +89,8 @@ Essa precedência não reescreve evento operacional validado, mas impede que uma
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-PERSON-001
-→ DRAFT v0.1.0
-→ CANDIDATE PRE-IMPLEMENTATION DASHBOARD MASTER
+→ ACTIVE v0.1.1
+→ PRE-IMPLEMENTATION DASHBOARD MASTER
 
 PESSOA
 → PARTICIPANT TYPE
@@ -907,9 +907,8 @@ ADS ANALYTICS
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-PERSON-001
-→ DRAFT v0.1.0
-→ ANNEX E CANDIDATE MASTER
-→ PRE-IMPLEMENTATION
+→ ACTIVE v0.1.1
+→ ANNEX E PRE-IMPLEMENTATION MASTER
 
 PERSON JOURNEY AUTHORITY
 → GKR-JOURNEY-PERSON-001 PRESERVED
@@ -955,4 +954,4 @@ ANNEX F
 → UNCHANGED / NOT MATERIALIZED BY THIS DOCUMENT
 ```
 
-A promoção deste draft para master materializado exige reconciliação explícita do registry do master global, validação semântica/mecânica e review governado da PR correspondente.
+A materialização documental deste master não autoriza dados reais, implementação, produção, disclosure adicional a terceiros ou promoção automática de KPI.
