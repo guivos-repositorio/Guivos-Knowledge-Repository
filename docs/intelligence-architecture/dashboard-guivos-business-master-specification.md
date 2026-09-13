@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
 title: Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
@@ -165,7 +165,6 @@ BUS-KPI-<FAMÍLIA>-NNN
 
 Famílias iniciais:
 
-- `EXE` — visão executiva;
 - `PRG` — programas e campanhas;
 - `PAR` — participação e eventos;
 - `BUD` — orçamento, concessões e benefícios;
@@ -174,6 +173,8 @@ Famílias iniciais:
 - `INT` — Intelligence agregado;
 - `COM` — contrato, plano, funil e continuidade;
 - `DQ` — qualidade, freshness e governança.
+
+A **Visão Executiva da Relação Business** não constitui família KPI autônoma nesta versão. Ela compõe leituras autorizadas a partir das famílias governadas acima e não cria namespace `BUS-KPI-EXE-*`.
 
 Estados usados:
 
@@ -572,7 +573,7 @@ ADS ANALYTICS
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
-→ v0.1.1
+→ v0.1.2
 → ACTIVE
 → ANNEX B PRE-IMPLEMENTATION MASTER
 
