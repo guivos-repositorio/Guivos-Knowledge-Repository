@@ -1892,6 +1892,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intelligence-architecture/dashboard-organization-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Organização — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3116,6 +3151,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#intelligence-architecture-dashboard-organization-master-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.6 Dashboard Organização — Documento Mestre
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3846,6 +3892,17 @@
     <span class="md-ellipsis">
       
         8.3.5 Dashboard Guivos Business — Documento Mestre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intelligence-architecture-dashboard-organization-master-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.6 Dashboard Organização — Documento Mestre
       
     </span>
   </a>
@@ -18745,8 +18802,8 @@ MASTER ESPECIALIZADO
 </tr>
 <tr>
 <td>C</td>
-<td>Dashboard Organização</td>
-<td>RESERVED / NOT MATERIALIZED</td>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001</code> — Dashboard Organização</td>
+<td>MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER</td>
 </tr>
 <tr>
 <td>D</td>
@@ -18793,12 +18850,10 @@ MASTER ESPECIALIZADO
 <p>Esse escopo foi aprofundado documentalmente no Anexo B sem autorizar dados reais, implementação ou acesso individual além da autoridade aplicável.</p>
 <h4 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-dashboard-organizacao">Dashboard Organização<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-dashboard-organizacao" title="Permanent link">&para;</a></h4>
 <p>Finalidade candidata original: leitura quantitativa da própria atuação da Organização e da população/relações sob autoridade aplicável, incluindo oportunidades, vendas, demografia, geografia e cadastros quando legitimamente definidos.</p>
-<p>Estado preservado:</p>
-<div class="highlight"><pre><span></span><code>MASTER ESPECIALIZADO
-→ RESERVED / NOT MATERIALIZED
-
-DOCUMENTAÇÃO DESTA NECESSIDADE
+<p>Esse escopo foi aprofundado documentalmente no Anexo C sem autorizar dados reais, implementação, materialização da Home autenticada ou acesso individual além da autoridade aplicável.</p>
+<div class="highlight"><pre><span></span><code>DOCUMENTAÇÃO DO ANEXO C
 ≠ HOME AUTENTICADA DEFINIDA
+≠ SURFACE MAP / STATE MAP
 ≠ DASHBOARD OPERACIONAL IMPLEMENTADO
 </code></pre></div>
 <h4 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-dashboard-coletivo">Dashboard Coletivo<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-dashboard-coletivo" title="Permanent link">&para;</a></h4>
@@ -18842,7 +18897,7 @@ DASHBOARD DOCUMENTADO
 ≠ DADO REAL CONECTADO
 </code></pre></div>
 <p>Quando uma autoridade de domínio mantiver uma superfície, relação, métrica ou capacidade como não definida, este master e seus anexos devem preservar esse estado.</p>
-<p>A existência futura dos masters de Organização e Coletivo <strong>não deverá ser interpretada como materialização de Home autenticada, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
+<p>A existência do master de Organização e a futura existência do master de Coletivo <strong>não deverão ser interpretadas como materialização de Home autenticada, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
 <hr />
 <h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-4-principio-arquitetural">4. Princípio arquitetural<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-4-principio-arquitetural" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>GKR / PRODUTO / GOVERNANÇA
@@ -19467,7 +19522,7 @@ ANEXO B — BUSINESS
 → MATERIALIZED DOCUMENTARILY
 
 ANEXO C — ORGANIZAÇÃO
-→ RESERVED / NOT MATERIALIZED
+→ MATERIALIZED DOCUMENTARILY
 
 ANEXO D — COLETIVO
 → RESERVED / NOT MATERIALIZED
@@ -19482,7 +19537,7 @@ ANEXO F — ADS / OPPORTUNITY BOOST
 <hr />
 <h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-14-estado-final-desta-versao">14. Estado final desta versão<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-14-estado-final-desta-versao" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.4
+→ v0.2.5
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -19514,7 +19569,11 @@ DASHBOARD GUIVOS BUSINESS MASTER
 → GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
 → MATERIALIZED DOCUMENTARILY AS ANNEX B
 
-ANNEXES C / D / E / F
+DASHBOARD ORGANIZATION MASTER
+→ GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
+→ MATERIALIZED DOCUMENTARILY AS ANNEX C
+
+ANNEXES D / E / F
 → RESERVED / NOT MATERIALIZED
 
 REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
@@ -22287,6 +22346,926 @@ REPLIT BUILD
 → NOT AUTHORIZED
 
 ANNEX C / D / E / F
+→ UNCHANGED / NOT MATERIALIZED BY THIS DOCUMENT
+</code></pre></div>
+<p>A materialização documental deste master não autoriza dados reais, implementação, produção, ampliação de disclosure ou promoção automática de qualquer KPI além de seu status governado.</p></section><section class="print-page" id="intelligence-architecture-dashboard-organization-master-specification" heading-number="8.3.6"><h1 id="intelligence-architecture-dashboard-organization-master-specification-dashboard-organizacao-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Organização — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-dashboard-organizacao-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento é o <strong>Anexo C</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Organização</strong>.</p>
+<p>Seu objetivo é consolidar, antes de qualquer implementação, o recorte analítico legítimo da própria atuação de uma Organização e das populações, objetos e relações sobre os quais exista autoridade aplicável.</p>
+<p>O Dashboard Organização deve permitir compreensão quantitativa e contextual da atuação institucional sem transformar a Organização em proprietária da Journey, do contexto privado ou da evolução individual das Pessoas.</p>
+<p>Regra central:</p>
+<blockquote>
+<p><strong>A Organização pode compreender sua própria atuação, oportunidades, programas, relações, responsabilidades, capacidade, participação agregada autorizada, evidências e resultados sustentados; ela não recebe autoridade geral sobre Pessoas nem acesso automático ao contexto individual.</strong></p>
+</blockquote>
+<p>Este master não redefine a experiência autenticada principal da Organização, não cria Home, menu, Surface Map, State Map, wireframe, RBAC técnico ou implementação.</p>
+<div class="highlight"><pre><span></span><code>DASHBOARD ORGANIZAÇÃO
+≠ HOME AUTENTICADA DA ORGANIZAÇÃO
+≠ VISÃO GERAL DA IA AUTENTICADA
+≠ SURFACE MAP
+≠ GUIVOS BUSINESS
+≠ ADS
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-2-autoridades-de-dominio-e-precedencia">2. Autoridades de domínio e precedência<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-2-autoridades-de-dominio-e-precedencia" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Autoridade</th>
+<th>Papel neste master</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code></td>
+<td>envelope transversal de KPI, acesso, disclosure e handoff</td>
+</tr>
+<tr>
+<td><code>GKR-UX-ORGCOL-AUTH-JOBS-001</code></td>
+<td>atores funcionais, autoridade, limites e jobs autenticados da Organização</td>
+</tr>
+<tr>
+<td><code>GKR-UX-ORGCOL-AUTH-IA-001</code></td>
+<td>domínios de informação e separação entre síntese, operação, evidência e capacidade comercial</td>
+</tr>
+<tr>
+<td><code>GKR-JOURNEY-ORGANIZATION-001</code></td>
+<td>continuidade integrada e maturidade dos fluxos especializados da Organização</td>
+</tr>
+<tr>
+<td><code>UXA-014</code></td>
+<td>fundamento funcional da Organização</td>
+</tr>
+<tr>
+<td><code>UXA-019</code></td>
+<td>autoridade bilateral e ciclo de relações Organização ↔ Coletivo</td>
+</tr>
+<tr>
+<td><code>GAI-001 / GAI-002 / GIA-COG-001</code></td>
+<td>evidência, natureza de afirmações, explicabilidade e <code>COMPREENDER ≠ DECIDIR</code></td>
+</tr>
+<tr>
+<td><code>GEM-009-MEASUREMENT-CONTRACT-001</code></td>
+<td>composição obrigatória para métricas econômicas quando aplicável</td>
+</tr>
+<tr>
+<td><code>UXA-100 / A3 / A4</code></td>
+<td>fluxo especializado de Planos e capacidade institucional</td>
+</tr>
+</tbody>
+</table>
+<p>Em caso de conflito, este master preserva a autoridade especializada mais restritiva e mantém o KPI bloqueado até adjudicação própria.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-3-estado-e-boundary">3. Estado e boundary<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-3-estado-e-boundary" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
+→ ACTIVE
+→ PRE-IMPLEMENTATION DASHBOARD MASTER
+
+ORGANIZAÇÃO
+→ PARTICIPANT TYPE
+→ ORGANIZAÇÃO ≠ GUIVOS BUSINESS
+→ ORGANIZAÇÃO ≠ COLETIVO
+
+DASHBOARD ORGANIZAÇÃO
+→ ANALYTICAL CONSUMPTION SURFACE
+→ NOT SOURCE OF TRUTH
+→ NOT AUTHENTICATED HOME
+→ NOT OPERATIONAL SYSTEM OF RECORD
+
+REAL DATA CONNECTION
+→ NOT AUTHORIZED BY THIS DOCUMENT
+
+REPLIT BUILD
+→ NOT AUTHORIZED BY THIS DOCUMENT
+→ HANDOFF SPECIFICATION ONLY
+
+PERSON-LEVEL PRIVATE CONTEXT
+→ NOT PART OF DEFAULT ORGANIZATION DISCLOSURE
+
+JOURNEY INDIVIDUAL
+→ NOT DISCLOSED TO ORGANIZATION BY DEFAULT
+</code></pre></div>
+<p>A representação institucional, o pertencimento ou a existência de uma relação com uma Pessoa não concedem acesso automático a histórico, objetivos, Momento, vulnerabilidades, inferências ou demais contexto pessoal protegido.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-4-relacao-com-a-experiencia-autenticada-da-organizacao">4. Relação com a experiência autenticada da Organização<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-4-relacao-com-a-experiencia-autenticada-da-organizacao" title="Permanent link">&para;</a></h2>
+<p>A Arquitetura da Informação autenticada organiza a Organização em cinco domínios principais e uma capacidade comercial contextual:</p>
+<div class="highlight"><pre><span></span><code>Visão Geral
+Oportunidades e Programas
+Relações
+Responsabilidades e Evidências
+Organização e Autoridade
+Planos e Capacidade [especializado / contextual]
+</code></pre></div>
+<p>Este Dashboard não substitui esses domínios.</p>
+<p>A <code>Visão Geral</code> autenticada deve sintetizar Momento, atenção material, responsabilidades e Próximos Passos. Ela não deve ser reduzida a um painel de números.</p>
+<div class="highlight"><pre><span></span><code>SÍNTESE DO MOMENTO
+≠ DASHBOARD
+
+DASHBOARD
+→ PODE APOIAR COM LEITURAS ANALÍTICAS AUTORIZADAS
+→ NÃO DEFINE O MOMENTO INSTITUCIONAL SOZINHO
+</code></pre></div>
+<p>A existência deste master não promove mapa de superfícies, estados, fluxos principais, wireframes ou implementação da experiência autenticada.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-5-areas-analiticas-candidatas">5. Áreas analíticas candidatas<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-5-areas-analiticas-candidatas" title="Permanent link">&para;</a></h2>
+<p>O Dashboard Organização é organizado em <strong>oito áreas analíticas</strong>:</p>
+<ol>
+<li>Visão Analítica da Atuação;</li>
+<li>Oportunidades e Programas;</li>
+<li>Participação e Cadastros Autorizados;</li>
+<li>Relações Institucionais;</li>
+<li>Responsabilidades, Evidências e Resultados;</li>
+<li>Economia, Vendas e Transações Autorizadas;</li>
+<li>Planos, Capacidade, Território e Demografia Autorizados;</li>
+<li>Qualidade, Freshness, Privacidade e Governança do Dado.</li>
+</ol>
+<p>A área de Visão Analítica compõe leituras das famílias governadas neste master. Ela não constitui família KPI autônoma.</p>
+<div class="highlight"><pre><span></span><code>ÁREA DOCUMENTADA
+≠ KPI DEFINIDO
+≠ DADO DISPONÍVEL
+≠ ACESSO AUTORIZADO
+≠ IMPLEMENTAÇÃO AUTORIZADA
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-6-classes-funcionais-de-consumo">6. Classes funcionais de consumo<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-6-classes-funcionais-de-consumo" title="Permanent link">&para;</a></h2>
+<p>As classes abaixo são conceituais e não constituem RBAC técnico implementado:</p>
+<table>
+<thead>
+<tr>
+<th>Classe funcional</th>
+<th>Escopo candidato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organização — visão institucional</td>
+<td>agregados da própria Organização/unidade e objetos sob autoridade</td>
+</tr>
+<tr>
+<td>Organização — operação</td>
+<td>oportunidades, programas, relações e responsabilidades sob seu escopo</td>
+</tr>
+<tr>
+<td>Organização — prestação de contas</td>
+<td>evidências, compromissos, riscos e resultados permitidos</td>
+</tr>
+<tr>
+<td>Organização — capacidade/comercial</td>
+<td>plano atual, capacidade e eventos econômicos autorizados</td>
+</tr>
+<tr>
+<td>Organização — Data/BI</td>
+<td>exportações ou APIs do próprio recorte quando autorizadas</td>
+</tr>
+<tr>
+<td>Guivos — operação/suporte</td>
+<td>dados necessários à finalidade operacional autorizada</td>
+</tr>
+<tr>
+<td>Guivos — Intelligence/Data</td>
+<td>inputs e outputs necessários à finalidade analítica autorizada</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>SER REPRESENTANTE DA ORGANIZAÇÃO
+≠ ACESSO A TODO DADO DA ORGANIZAÇÃO
+
+RELAÇÃO COM PESSOA
+≠ ACESSO À JOURNEY DA PESSOA
+
+DADO AGREGADO
+≠ AUTOMATICAMENTE SEGURO PARA DISCLOSURE
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-7-vocabulario-de-kpi-e-readiness">7. Vocabulário de KPI e readiness<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-7-vocabulario-de-kpi-e-readiness" title="Permanent link">&para;</a></h2>
+<p>Prefixo deste master:</p>
+<div class="highlight"><pre><span></span><code>ORG-KPI-&lt;FAMÍLIA&gt;-NNN
+</code></pre></div>
+<p>Famílias iniciais:</p>
+<ul>
+<li><code>OPP</code> — oportunidades e programas;</li>
+<li><code>PAR</code> — participação, inscrições e cadastros autorizados;</li>
+<li><code>REL</code> — relações institucionais;</li>
+<li><code>EVD</code> — responsabilidades, evidências e resultados;</li>
+<li><code>ECO</code> — economia, vendas e transações autorizadas;</li>
+<li><code>CAP</code> — planos e capacidade;</li>
+<li><code>GEO</code> — território e demografia autorizados;</li>
+<li><code>DQ</code> — qualidade, freshness, privacidade e governança.</li>
+</ul>
+<p>A <strong>Visão Analítica da Atuação</strong> compõe indicadores dessas famílias e não cria namespace próprio nesta versão.</p>
+<p>Estados usados:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>proposed</code></td>
+<td>significado ou contrato ainda incompleto; não build-ready</td>
+</tr>
+<tr>
+<td><code>source_pending</code></td>
+<td>semântica fechada o suficiente, mas source/data contract ainda bloqueia readiness</td>
+</tr>
+<tr>
+<td><code>defined</code></td>
+<td>contrato documental mínimo completo; ainda requer gates de domínio e build</td>
+</tr>
+<tr>
+<td><code>approved-equivalent</code></td>
+<td>autoridade especializada fornece estado equivalente aceito pelo gate</td>
+</tr>
+</tbody>
+</table>
+<p>Nesta versão, <strong>todos os KPIs candidatos permanecem <code>proposed / NOT_READY</code></strong>.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-8-familia-opp-oportunidades-e-programas">8. Família OPP — Oportunidades e Programas<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-8-familia-opp-oportunidades-e-programas" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-OPP-001</td>
+<td>Oportunidades válidas</td>
+<td>oportunidades da Organização em estados válidos dentro do recorte autorizado</td>
+<td>oportunidades</td>
+<td>proposed</td>
+<td>lifecycle/state + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-OPP-002</td>
+<td>Oportunidades ativas</td>
+<td>oportunidades em estado ativo válido na janela</td>
+<td>oportunidades</td>
+<td>proposed</td>
+<td>active-state + temporal contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-OPP-003</td>
+<td>Oportunidades publicadas no período</td>
+<td>oportunidades com publicação válida no período</td>
+<td>oportunidades/período</td>
+<td>proposed</td>
+<td>publication event + window</td>
+</tr>
+<tr>
+<td>ORG-KPI-OPP-004</td>
+<td>Oportunidades encerradas</td>
+<td>oportunidades encerradas validamente no período</td>
+<td>oportunidades/período</td>
+<td>proposed</td>
+<td>close-state + temporal contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-OPP-005</td>
+<td>Programas/iniciativas ativos</td>
+<td>programas ou iniciativas institucionais em estado ativo válido</td>
+<td>programas</td>
+<td>proposed</td>
+<td>taxonomy + lifecycle + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-OPP-006</td>
+<td>Distribuição por Domínio de Evolução</td>
+<td>distribuição autorizada dos objetos institucionais por <code>JED-*</code> aplicável</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>domain-link semantics + denominator</td>
+</tr>
+</tbody>
+</table>
+<p>Regras:</p>
+<div class="highlight"><pre><span></span><code>OPORTUNIDADE PUBLICADA
+≠ DISTRIBUIÇÃO GARANTIDA
+≠ RELEVÂNCIA
+≠ IMPACTO
+
+DOMÍNIO DE EVOLUÇÃO
+≠ CONDIÇÃO DA ORGANIZAÇÃO
+≠ SEGMENTO COMERCIAL AUTOMÁTICO
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-9-familia-par-participacao-inscricoes-e-cadastros-autorizados">9. Família PAR — Participação, inscrições e cadastros autorizados<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-9-familia-par-participacao-inscricoes-e-cadastros-autorizados" title="Permanent link">&para;</a></h2>
+<p>Esta família mede somente relações de participação legitimamente vinculadas aos objetos da Organização.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-PAR-001</td>
+<td>Pessoas elegíveis</td>
+<td>Pessoas incluídas legitimamente no universo elegível de um objeto institucional</td>
+<td>pessoas</td>
+<td>proposed</td>
+<td>eligibility + authority + disclosure</td>
+</tr>
+<tr>
+<td>ORG-KPI-PAR-002</td>
+<td>Inscrições/participações válidas</td>
+<td>inscrições ou participações válidas no recorte</td>
+<td>eventos/pessoas</td>
+<td>proposed</td>
+<td>participation taxonomy + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-PAR-003</td>
+<td>Participantes únicos</td>
+<td>Pessoas distintas com participação válida no período</td>
+<td>pessoas</td>
+<td>proposed</td>
+<td>population + event + disclosure</td>
+</tr>
+<tr>
+<td>ORG-KPI-PAR-004</td>
+<td>Taxa de participação</td>
+<td>participantes únicos / elegíveis segundo contrato específico</td>
+<td>%</td>
+<td>proposed</td>
+<td>numerator + denominator + exclusions</td>
+</tr>
+<tr>
+<td>ORG-KPI-PAR-005</td>
+<td>Participação por oportunidade/programa</td>
+<td>distribuição agregada de participação pelos objetos autorizados</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>scope + disclosure</td>
+</tr>
+<tr>
+<td>ORG-KPI-PAR-006</td>
+<td>Cadastros válidos relacionados</td>
+<td>cadastros ou vínculos operacionais validamente atribuíveis ao objeto institucional</td>
+<td>registros</td>
+<td>proposed</td>
+<td>cadastro semantics + source + purpose</td>
+</tr>
+</tbody>
+</table>
+<p><code>Cadastro</code> não significa automaticamente conta técnica, usuário ativo, membro, empregado ou participante. Cada uso exige definição própria.</p>
+<p>Pessoa individual não é nível padrão de drill-down deste dashboard.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-10-familia-rel-relacoes-institucionais">10. Família REL — Relações institucionais<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-10-familia-rel-relacoes-institucionais" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-REL-001</td>
+<td>Relações ativas</td>
+<td>relações institucionais em estado ativo válido sob autoridade da Organização</td>
+<td>relações</td>
+<td>proposed</td>
+<td>UXA-019 + lifecycle/source</td>
+</tr>
+<tr>
+<td>ORG-KPI-REL-002</td>
+<td>Relações por contraparte/tipo</td>
+<td>distribuição agregada por classe de relação legitimamente definida</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>taxonomy + disclosure</td>
+</tr>
+<tr>
+<td>ORG-KPI-REL-003</td>
+<td>Propostas de relação abertas</td>
+<td>propostas ainda abertas em estado válido</td>
+<td>propostas</td>
+<td>proposed</td>
+<td>bilateral state contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-REL-004</td>
+<td>Relações em revisão</td>
+<td>relações com revisão material válida em andamento</td>
+<td>relações</td>
+<td>proposed</td>
+<td>review-state contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-REL-005</td>
+<td>Relações pausadas/encerradas no período</td>
+<td>eventos válidos de pausa/encerramento</td>
+<td>relações/período</td>
+<td>proposed</td>
+<td>lifecycle + temporal contract</td>
+</tr>
+</tbody>
+</table>
+<p>A relação permanece bilateral. Quantificar a relação não transfere à Organização autoridade da contraparte.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-11-familia-evd-responsabilidades-evidencias-e-resultados">11. Família EVD — Responsabilidades, evidências e resultados<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-11-familia-evd-responsabilidades-evidencias-e-resultados" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-EVD-001</td>
+<td>Responsabilidades abertas</td>
+<td>responsabilidades materiais válidas ainda não encerradas</td>
+<td>responsabilidades</td>
+<td>proposed</td>
+<td>responsibility state/source</td>
+</tr>
+<tr>
+<td>ORG-KPI-EVD-002</td>
+<td>Responsabilidades vencendo</td>
+<td>responsabilidades elegíveis dentro de janela de vencimento definida</td>
+<td>responsabilidades</td>
+<td>proposed</td>
+<td>due-date/window contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-EVD-003</td>
+<td>Compromissos concluídos</td>
+<td>compromissos com conclusão válida no período</td>
+<td>compromissos</td>
+<td>proposed</td>
+<td>completion semantics + evidence</td>
+</tr>
+<tr>
+<td>ORG-KPI-EVD-004</td>
+<td>Evidências registradas</td>
+<td>evidências institucionais válidas associadas ao recorte</td>
+<td>evidências</td>
+<td>proposed</td>
+<td>evidence validity + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-EVD-005</td>
+<td>Resultados autorizados</td>
+<td>resultados que possuem definição e evidência suficientes para a afirmação permitida</td>
+<td>resultados</td>
+<td>proposed</td>
+<td>claim/evidence contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-EVD-006</td>
+<td>Itens sem evidência suficiente</td>
+<td>objetos cuja afirmação pretendida não possui evidência suficiente</td>
+<td>itens</td>
+<td>proposed</td>
+<td>evidence sufficiency contract</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>ATIVIDADE
+≠ RESULTADO
+
+RESULTADO
+≠ IMPACTO
+
+CORRELAÇÃO
+≠ CAUSALIDADE
+
+AUSÊNCIA DE EVIDÊNCIA
+→ PODE E DEVE SER DECLARADA QUANDO MATERIAL
+</code></pre></div>
+<p>Nenhuma métrica deste master autoriza score universal de impacto, reputação ou legitimidade.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-12-familia-eco-economia-vendas-e-transacoes-autorizadas">12. Família ECO — Economia, vendas e transações autorizadas<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-12-familia-eco-economia-vendas-e-transacoes-autorizadas" title="Permanent link">&para;</a></h2>
+<p>O inventário original preserva <code>vendas</code> como necessidade candidata. As autoridades correntes não sustentam uma definição universal de <code>venda</code> para toda Organização.</p>
+<p>Consequentemente:</p>
+<div class="highlight"><pre><span></span><code>VENDAS
+→ CANDIDATE NEED PRESERVED
+→ MEANING MUST BE DEFINED BY APPLICABLE DOMAIN CONTRACT
+→ GEM-009 REQUIRED WHEN ECONOMIC
+→ NO UNIVERSAL SALES KPI BY INFERENCE
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-ECO-001</td>
+<td>Transações econômicas autorizadas</td>
+<td>eventos econômicos válidos atribuíveis ao escopo institucional autorizado</td>
+<td>transações</td>
+<td>proposed</td>
+<td>domain semantics + GEM-009 + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-ECO-002</td>
+<td>Valor econômico autorizado</td>
+<td>valor reconhecido segundo contrato econômico aplicável</td>
+<td>moeda/unidade econômica</td>
+<td>proposed</td>
+<td>GEM-009 + recognition rule</td>
+</tr>
+<tr>
+<td>ORG-KPI-ECO-003</td>
+<td>Vendas elegíveis</td>
+<td>eventos classificados como venda somente quando contrato especializado definir esse significado</td>
+<td>vendas</td>
+<td>proposed</td>
+<td>sales semantics + GEM-009 + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-ECO-004</td>
+<td>Valor de vendas elegíveis</td>
+<td>valor associado às vendas elegíveis quando contratualmente definido</td>
+<td>moeda</td>
+<td>proposed</td>
+<td>ECO-003 + GEM-009</td>
+</tr>
+</tbody>
+</table>
+<p>Não usar receita, GMV, venda, booking, cobrança ou caixa como sinônimos sem contrato explícito.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-13-familia-cap-planos-e-capacidade">13. Família CAP — Planos e capacidade<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-13-familia-cap-planos-e-capacidade" title="Permanent link">&para;</a></h2>
+<p>A Organização possui fluxo especializado de Planos com taxonomia <code>Conecta / Eleva / Transforma</code>. Guivos Business permanece produto separado.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-CAP-001</td>
+<td>Plano institucional vigente</td>
+<td>classificação do plano vigente quando contratualmente confirmada</td>
+<td>categoria</td>
+<td>proposed</td>
+<td>plan source + entitlement contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-CAP-002</td>
+<td>Uso de capacidade</td>
+<td>uso de capacidade definida pelo plano no ciclo aplicável</td>
+<td>unidade/%</td>
+<td>proposed</td>
+<td>entitlement + cycle + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-CAP-003</td>
+<td>Capacidade disponível</td>
+<td>capacidade ainda disponível conforme contrato de plano</td>
+<td>unidade/%</td>
+<td>proposed</td>
+<td>entitlement + balance semantics</td>
+</tr>
+<tr>
+<td>ORG-KPI-CAP-004</td>
+<td>Eventos de alteração de plano</td>
+<td>upgrades/downgrades/cancelamentos confirmados no período</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>plan lifecycle + source</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>PLANO
+≠ RELEVÂNCIA
+≠ LEGITIMIDADE
+≠ AUTORIDADE
+≠ ACESSO AO CONTEXTO PESSOAL
+
+ORGANIZAÇÃO TRANSFORMA
+≠ GUIVOS BUSINESS ENTERPRISE
+</code></pre></div>
+<p>Preço ou entitlement não congelado não pode ser inventado pelo dashboard.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-14-familia-geo-territorio-e-demografia-autorizados">14. Família GEO — território e demografia autorizados<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-14-familia-geo-territorio-e-demografia-autorizados" title="Permanent link">&para;</a></h2>
+<p>Leituras territoriais e demográficas devem operar por minimização e proteção contra reidentificação.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-GEO-001</td>
+<td>Distribuição territorial autorizada</td>
+<td>distribuição de população/participação autorizada por recorte territorial legítimo</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>geography source + disclosure threshold</td>
+</tr>
+<tr>
+<td>ORG-KPI-GEO-002</td>
+<td>Cobertura territorial de oportunidades</td>
+<td>distribuição dos objetos institucionais por território aplicável</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>object geography semantics</td>
+</tr>
+<tr>
+<td>ORG-KPI-GEO-003</td>
+<td>Perfil demográfico agregado autorizado</td>
+<td>distribuição agregada apenas de atributos permitidos para finalidade legítima</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>privacy + purpose + thresholds + source</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>DEMOGRAFIA DISPONÍVEL
+≠ DEMOGRAFIA NECESSÁRIA
+≠ DEMOGRAFIA EXIBÍVEL
+
+SEGMENTO PEQUENO
+→ PODE EXIGIR SUPRESSÃO
+</code></pre></div>
+<p>A Organização não recebe dados demográficos individuais por padrão por meio deste dashboard.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-15-familia-dq-qualidade-freshness-privacidade-e-governanca">15. Família DQ — qualidade, freshness, privacidade e governança<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-15-familia-dq-qualidade-freshness-privacidade-e-governanca" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-DQ-001</td>
+<td>Freshness compliance</td>
+<td>contratos/datasets dentro do SLA / monitorados</td>
+<td>%</td>
+<td>proposed</td>
+<td>freshness/SLA contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-DQ-002</td>
+<td>Indicadores indisponíveis</td>
+<td>KPIs esperados sem dado utilizável</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>registry + availability rules</td>
+</tr>
+<tr>
+<td>ORG-KPI-DQ-003</td>
+<td>Supressões de disclosure</td>
+<td>células/segmentos protegidos por política</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>disclosure policy</td>
+</tr>
+<tr>
+<td>ORG-KPI-DQ-004</td>
+<td>Eventos rejeitados</td>
+<td>eventos institucionais rejeitados por validação</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>validation taxonomy</td>
+</tr>
+<tr>
+<td>ORG-KPI-DQ-005</td>
+<td>Completude de proveniência</td>
+<td>outputs com proveniência suficiente / outputs avaliados</td>
+<td>%</td>
+<td>proposed</td>
+<td>provenance contract</td>
+</tr>
+</tbody>
+</table>
+<p>Qualidade qualifica confiança; não deve fabricar aparência de precisão.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-16-filtros-candidatos">16. Filtros candidatos<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-16-filtros-candidatos" title="Permanent link">&para;</a></h2>
+<p>Filtros somente podem restringir o escopo autorizado:</p>
+<ul>
+<li>período e comparação de período;</li>
+<li>unidade/contexto institucional;</li>
+<li>oportunidade;</li>
+<li>programa/iniciativa;</li>
+<li>estado do objeto;</li>
+<li>Domínio de Evolução quando legitimamente aplicável;</li>
+<li>relação/contraparte quando disclosure permitir;</li>
+<li>território autorizado;</li>
+<li>plano/ciclo de capacidade;</li>
+<li>natureza de evidência;</li>
+<li>classe de resultado.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>FILTRO
+→ SUBCONJUNTO DO ACCESS SCOPE
+→ NUNCA AMPLIA DISCLOSURE
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-17-drill-down">17. Drill-down<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-17-drill-down" title="Permanent link">&para;</a></h2>
+<p>Estrutura candidata:</p>
+<div class="highlight"><pre><span></span><code>N0 — ORGANIZAÇÃO / UNIDADE AUTORIZADA
+→ N1 — FAMÍLIA ANALÍTICA
+→ N2 — OBJETO / PERÍODO / SEGMENTO AUTORIZADO
+→ N3 — OBJETO OPERACIONAL OU RELAÇÃO AUTORIZADA
+</code></pre></div>
+<p>Pessoa individual não é nível padrão de drill-down.</p>
+<p>A identificação excepcional de Pessoa exige finalidade, autoridade, minimização e trilha próprias fora da inferência automática deste master.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-18-estados-obrigatorios-de-visualizacao">18. Estados obrigatórios de visualização<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-18-estados-obrigatorios-de-visualizacao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>LOADING
+NO_DATA
+INSUFFICIENT_DATA
+SUPPRESSED_BY_POLICY
+SOURCE_DELAYED
+NOT_ENTITLED
+ERROR
+AVAILABLE
+</code></pre></div>
+<p><code>0</code> não substitui <code>NO_DATA</code>.</p>
+<p><code>NOT_ENTITLED</code> não significa erro técnico.</p>
+<p><code>SUPPRESSED_BY_POLICY</code> não deve ser mascarado como ausência de ocorrência.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-19-contratos-logicos-esperados">19. Contratos lógicos esperados<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-19-contratos-logicos-esperados" title="Permanent link">&para;</a></h2>
+<p>Sem definir schema físico, o Dashboard Organização poderá futuramente consumir contratos equivalentes a:</p>
+<ul>
+<li>Organization / Unit Aggregate;</li>
+<li>Opportunity Aggregate;</li>
+<li>Program / Initiative Aggregate;</li>
+<li>Eligible Population Aggregate;</li>
+<li>Participation / Registration Aggregate;</li>
+<li>Institutional Relationship Aggregate;</li>
+<li>Responsibility / Commitment Aggregate;</li>
+<li>Evidence / Authorized Result Aggregate;</li>
+<li>Economic Event Aggregate;</li>
+<li>Plan / Capacity Aggregate;</li>
+<li>Geography / Demography Aggregate;</li>
+<li>Data Quality / Freshness Status.</li>
+</ul>
+<p>Cada payload deve carregar, quando aplicável, <code>metric_id</code>, período, valor, unidade, population scope, source version, freshness, natureza da evidência, access class, suppression state, proveniência e confidence/uncertainty quando material.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-20-integracoes-e-minimizacao">20. Integrações e minimização<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-20-integracoes-e-minimizacao" title="Permanent link">&para;</a></h2>
+<p>O dashboard não pressupõe ingestão integral de HRIS, ERP, CRM, folha, bases de membros ou sistemas externos.</p>
+<div class="highlight"><pre><span></span><code>SOURCE AUTORIZADA
+→ EVENTO / AGREGADO MÍNIMO NECESSÁRIO
+→ CONTRATO DO KPI
+→ SERVING AUTORIZADO
+→ DASHBOARD ORGANIZAÇÃO
+</code></pre></div>
+<p>Exportação estruturada/API para ferramentas analíticas externas depende de entitlement, contrato de dados, segurança, finalidade e escopo específicos.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-21-orientacao-futura-para-replit">21. Orientação futura para Replit<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-21-orientacao-futura-para-replit" title="Permanent link">&para;</a></h2>
+<p>Quando houver autorização formal de build, a ferramenta deverá:</p>
+<ol>
+<li>não inventar KPI, fórmula, preço, entitlement, threshold, source, schema ou permissão;</li>
+<li>usar <code>ORG-KPI-*</code> como identificadores estáveis, não labels visuais;</li>
+<li>bloquear KPIs <code>proposed</code> e <code>source_pending</code> para consumo canônico com dado real;</li>
+<li>preservar Organização ≠ Guivos Business e Organização ≠ Coletivo;</li>
+<li>não transformar Dashboard em Home autenticada ou Visão Geral da IA;</li>
+<li>não criar score universal de impacto, reputação, legitimidade ou evolução;</li>
+<li>não expor Journey individual;</li>
+<li>não inferir causalidade de correlações;</li>
+<li>separar atividade, evidência, resultado e impacto;</li>
+<li>tratar filtros como restrição adicional;</li>
+<li>validar escopo no serving/backend, não somente no cliente;</li>
+<li>separar mock adapters de real adapters;</li>
+<li>preservar <code>NO_DATA</code>, <code>INSUFFICIENT_DATA</code>, <code>SUPPRESSED_BY_POLICY</code>, <code>NOT_ENTITLED</code> e <code>SOURCE_DELAYED</code>;</li>
+<li>preservar versão, freshness e proveniência;</li>
+<li>não hard-code preços ou entitlements não congelados;</li>
+<li>não converter plano pago em relevância ou autoridade;</li>
+<li>não implementar exportação individual por conveniência;</li>
+<li>registrar a versão deste master usada na build.</li>
+</ol>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-22-criterios-de-aceite-para-futuro-handoff">22. Critérios de aceite para futuro handoff<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-22-criterios-de-aceite-para-futuro-handoff" title="Permanent link">&para;</a></h2>
+<p>Antes de qualquer release <code>READY FOR BUILD</code>:</p>
+<div class="highlight"><pre><span></span><code>[ ] KPI selecionado = defined OU approved-equivalent
+[ ] pergunta/finalidade fechadas
+[ ] população/elegibilidade definidas
+[ ] fórmula e componentes definidos
+[ ] janela temporal/granularidade definidas
+[ ] source/data contract definido
+[ ] access/disclosure definido
+[ ] thresholds de proteção definidos quando aplicáveis
+[ ] filtros/drill-down definidos
+[ ] null/zero/no-data definidos
+[ ] freshness/quality checks definidos
+[ ] métricas econômicas compõem com GEM-009
+[ ] relações preservam bilateralidade
+[ ] Journey individual permanece protegida
+[ ] natureza da evidência e claims permitidos estão definidos
+[ ] Design/build authorization foi emitida
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-23-itens-explicitamente-bloqueados-nesta-versao">23. Itens explicitamente bloqueados nesta versão<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-23-itens-explicitamente-bloqueados-nesta-versao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>REAL DATA
+→ NOT AUTHORIZED
+
+BACKEND / API FÍSICA
+→ NOT DEFINED HERE
+
+TECHNICAL RBAC
+→ NOT IMPLEMENTED
+
+AUTHENTICATED HOME / SURFACE MAP / STATE MAP
+→ NOT DEFINED BY THIS DOCUMENT
+
+FINAL VISUAL DESIGN
+→ NOT AUTHORIZED
+
+REPLIT BUILD
+→ NOT AUTHORIZED
+
+PERSON-LEVEL JOURNEY DISCLOSURE
+→ NOT AUTHORIZED
+
+UNIVERSAL IMPACT / REPUTATION SCORE
+→ NOT AUTHORIZED
+
+CROSS-ORGANIZATION ACCESS
+→ NOT AUTHORIZED
+
+GUIVOS BUSINESS ANALYTICS
+→ OUTSIDE THIS MASTER
+→ ANNEX B REMAINS SEPARATE
+
+ADS ANALYTICS
+→ OUTSIDE THIS MASTER
+→ ANNEX F REMAINS SEPARATE
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-organization-master-specification-24-estado-final-desta-versao">24. Estado final desta versão<a class="headerlink" href="#intelligence-architecture-dashboard-organization-master-specification-24-estado-final-desta-versao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
+→ v0.1.1
+→ ACTIVE
+→ ANNEX C PRE-IMPLEMENTATION MASTER
+
+AUTHENTICATED EXPERIENCE AUTHORITIES
+→ GKR-UX-ORGCOL-AUTH-JOBS-001 + GKR-UX-ORGCOL-AUTH-IA-001 PRESERVED
+
+ANALYTICAL AREAS
+→ 8
+
+KPI FAMILIES
+→ OPP / PAR / REL / EVD / ECO / CAP / GEO / DQ
+
+KPI IMPLEMENTATION READINESS
+→ NONE CLAIMED BY INFERENCE
+→ ALL CURRENT KPIs = proposed
+→ ALL = NOT_READY
+
+ORGANIZATION POPULATION
+→ ONLY OWN / LEGITIMATELY AUTHORIZED RELATIONS AND POPULATIONS
+
+PERSON PRIVATE CONTEXT / INDIVIDUAL JOURNEY
+→ NOT DEFAULT ORGANIZATION DISCLOSURE
+
+ORGANIZATION AUTHENTICATED HOME / SURFACE MAP / STATE MAP
+→ NOT MATERIALIZED BY THIS DOCUMENT
+
+REAL DATA / BACKEND / API / TECHNICAL RBAC / PRODUCTION
+→ NOT AUTHORIZED
+
+REPLIT BUILD
+→ NOT AUTHORIZED
+
+ANNEX D / E / F
 → UNCHANGED / NOT MATERIALIZED BY THIS DOCUMENT
 </code></pre></div>
 <p>A materialização documental deste master não autoriza dados reais, implementação, produção, ampliação de disclosure ou promoção automática de qualquer KPI além de seu status governado.</p></section></section><section class="print-page" id="adr-adr-007-neo4j-primary-graph-reference" heading-number="8.4"><h1 id="adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo">ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo" title="Permanent link">&para;</a></h1>
@@ -28236,6 +29215,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 .print-site-enumerate-headings #intelligence-architecture-dashboard-guivos-kpi-registry > h1:before { content: '8.3.4 ' }
 
 .print-site-enumerate-headings #intelligence-architecture-dashboard-guivos-business-master-specification > h1:before { content: '8.3.5 ' }
+
+.print-site-enumerate-headings #intelligence-architecture-dashboard-organization-master-specification > h1:before { content: '8.3.6 ' }
 
 .print-site-enumerate-headings #adr-adr-007-neo4j-primary-graph-reference > h1:before { content: '8.4 ' }
 

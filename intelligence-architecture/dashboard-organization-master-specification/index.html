@@ -1,0 +1,4269 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
+      
+      
+        <meta name="author" content="Guivos">
+      
+      
+      
+        <link rel="prev" href="../dashboard-guivos-business-master-specification/">
+      
+      
+        <link rel="next" href="../../adr/ADR-007-neo4j-primary-graph-reference/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Dashboard Organização — Documento Mestre de Especificação Analítica e Handoff Replit - Guivos Knowledge Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <style>
+    /*
+      A navegação pública do GKR é organizada por grandes assuntos.
+      Somente o primeiro nível recebe maior hierarquia tipográfica;
+      documentos e subgrupos permanecem visualmente secundários.
+    */
+    .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+    .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-top: 0.35rem;
+    }
+
+    .md-nav--primary > .md-nav__list > .md-nav__item--section + .md-nav__item--section {
+      margin-top: 0.2rem;
+    }
+
+    .gkr-page-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 1rem;
+    }
+
+    .gkr-page-print {
+      cursor: pointer;
+    }
+
+    @media print {
+      .gkr-page-actions,
+      .md-header,
+      .md-tabs,
+      .md-sidebar,
+      .md-footer,
+      .md-top,
+      .md-dialog,
+      .md-content__button {
+        display: none !important;
+      }
+
+      .md-main__inner,
+      .md-content,
+      .md-content__inner {
+        margin: 0 !important;
+        max-width: none !important;
+      }
+    }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dashboard-organizacao-documento-mestre-de-especificacao-analitica-e-handoff-replit" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dashboard Organização — Documento Mestre de Especificação Analítica e Handoff Replit
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guivos Knowledge Repository
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comece por aqui
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Comece por aqui
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/guia-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--public-canon"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/current-state-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estado Atual do Repositório
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação e Marca
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundação e Marca
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos da Guivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../christian-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamento Cristão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolution-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolução do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-and-digital-assets-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Naming e Ativos Digitais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-public-authority-and-founder-role/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Fundador e Autoridade Pública
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Participantes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Participantes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/person/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/collective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coletivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/organizations-collectives-current-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Estado Atual
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Produtos e Economia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Produtos e Economia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Econômico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estratégia de Negócio
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiência e Journey
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiência e Journey
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura da Experiência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornadas Integradas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/public-home-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Principal / Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/public-home-organizations-collectives-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home de Organizações e Coletivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/public-specialized-homes-reconciliation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes dos Produtos Especializados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research e Validação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research e Validação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pesquisa do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-002/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Possibilidades, Oportunidades e Supply
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dados, Intelligence e Tecnologia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dados, Intelligence e Tecnologia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Corporativa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intelligence e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboards, KPIs e Analytics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dashboards, KPIs e Analytics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboards-kpis-analytics-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kpi-contract-standard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KPI Contract Standard
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboard-guivos-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboard-guivos-kpi-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — KPI Registry
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboard-guivos-business-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos Business — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Organização — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Organização — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-autoridades-de-dominio-e-precedencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Autoridades de domínio e precedência
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-estado-e-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Estado e boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-relacao-com-a-experiencia-autenticada-da-organizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Relação com a experiência autenticada da Organização
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-areas-analiticas-candidatas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Áreas analíticas candidatas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-classes-funcionais-de-consumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Classes funcionais de consumo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-vocabulario-de-kpi-e-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Vocabulário de KPI e readiness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-familia-opp-oportunidades-e-programas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Família OPP — Oportunidades e Programas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-familia-par-participacao-inscricoes-e-cadastros-autorizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Família PAR — Participação, inscrições e cadastros autorizados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-familia-rel-relacoes-institucionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Família REL — Relações institucionais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-familia-evd-responsabilidades-evidencias-e-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Família EVD — Responsabilidades, evidências e resultados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-familia-eco-economia-vendas-e-transacoes-autorizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Família ECO — Economia, vendas e transações autorizadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-familia-cap-planos-e-capacidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Família CAP — Planos e capacidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-familia-geo-territorio-e-demografia-autorizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Família GEO — território e demografia autorizados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-familia-dq-qualidade-freshness-privacidade-e-governanca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Família DQ — qualidade, freshness, privacidade e governança
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-filtros-candidatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Filtros candidatos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-drill-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Drill-down
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-estados-obrigatorios-de-visualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Estados obrigatórios de visualização
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-contratos-logicos-esperados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Contratos lógicos esperados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-integracoes-e-minimizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Integrações e minimização
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-orientacao-futura-para-replit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Orientação futura para Replit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-criterios-de-aceite-para-futuro-handoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Critérios de aceite para futuro handoff
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-itens-explicitamente-bloqueados-nesta-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Itens explicitamente bloqueados nesta versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-estado-final-desta-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Estado final desta versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-007-neo4j-primary-graph-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tecnologia de Grafo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jurídico, Privacidade e Institucional
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jurídico, Privacidade e Institucional
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/institutional-and-legal-architecture-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Institucional e Jurídica
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/operational-privacy-and-legal-truth-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacidade e Verdade Operacional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/fundacao-guivos-institutional-concept-and-legal-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação Guivos — Conceito e Estado Jurídico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/trademark-brazil-signature-filing-authorization-package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proteção Marcária — Autorização de Filing
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GTM e Internacionalização
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GTM e Internacionalização
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go-to-Market
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-007-internationalization-and-territorial-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Internacionalização e Governança Territorial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-008-portugal-pilot-readiness-gates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Piloto Portugal — Gates de Prontidão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/international-operations-and-cross-border-readiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operações Internacionais e Cross-Border
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governança do GKR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governança do GKR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/gkr-full-corpus-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auditoria Integral do Corpus
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-audit-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framework de Auditoria Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Consolidação do Conhecimento Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-001-gkr-as-source-of-truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKR como Fonte Única da Verdade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-006-guivos-knowledge-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Conhecimento da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualizar / Imprimir GKR Completo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-autoridades-de-dominio-e-precedencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Autoridades de domínio e precedência
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-estado-e-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Estado e boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-relacao-com-a-experiencia-autenticada-da-organizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Relação com a experiência autenticada da Organização
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-areas-analiticas-candidatas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Áreas analíticas candidatas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-classes-funcionais-de-consumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Classes funcionais de consumo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-vocabulario-de-kpi-e-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Vocabulário de KPI e readiness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-familia-opp-oportunidades-e-programas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Família OPP — Oportunidades e Programas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-familia-par-participacao-inscricoes-e-cadastros-autorizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Família PAR — Participação, inscrições e cadastros autorizados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-familia-rel-relacoes-institucionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Família REL — Relações institucionais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-familia-evd-responsabilidades-evidencias-e-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Família EVD — Responsabilidades, evidências e resultados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-familia-eco-economia-vendas-e-transacoes-autorizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Família ECO — Economia, vendas e transações autorizadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-familia-cap-planos-e-capacidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Família CAP — Planos e capacidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-familia-geo-territorio-e-demografia-autorizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Família GEO — território e demografia autorizados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-familia-dq-qualidade-freshness-privacidade-e-governanca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Família DQ — qualidade, freshness, privacidade e governança
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-filtros-candidatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Filtros candidatos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-drill-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Drill-down
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-estados-obrigatorios-de-visualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Estados obrigatórios de visualização
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-contratos-logicos-esperados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Contratos lógicos esperados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-integracoes-e-minimizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Integrações e minimização
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-orientacao-futura-para-replit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Orientação futura para Replit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-criterios-de-aceite-para-futuro-handoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Critérios de aceite para futuro handoff
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-itens-explicitamente-bloqueados-nesta-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Itens explicitamente bloqueados nesta versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-estado-final-desta-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Estado final desta versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+    <div class="gkr-page-actions">
+      <button
+        type="button"
+        class="md-button gkr-page-print"
+        onclick="window.print()"
+        aria-label="Imprimir somente este assunto"
+      >
+        Imprimir este assunto
+      </button>
+    </div>
+  
+  
+                  
+
+
+  
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/intelligence-architecture/dashboard-organization-master-specification.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="dashboard-organizacao-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Organização — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#dashboard-organizacao-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
+<h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento é o <strong>Anexo C</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Organização</strong>.</p>
+<p>Seu objetivo é consolidar, antes de qualquer implementação, o recorte analítico legítimo da própria atuação de uma Organização e das populações, objetos e relações sobre os quais exista autoridade aplicável.</p>
+<p>O Dashboard Organização deve permitir compreensão quantitativa e contextual da atuação institucional sem transformar a Organização em proprietária da Journey, do contexto privado ou da evolução individual das Pessoas.</p>
+<p>Regra central:</p>
+<blockquote>
+<p><strong>A Organização pode compreender sua própria atuação, oportunidades, programas, relações, responsabilidades, capacidade, participação agregada autorizada, evidências e resultados sustentados; ela não recebe autoridade geral sobre Pessoas nem acesso automático ao contexto individual.</strong></p>
+</blockquote>
+<p>Este master não redefine a experiência autenticada principal da Organização, não cria Home, menu, Surface Map, State Map, wireframe, RBAC técnico ou implementação.</p>
+<div class="highlight"><pre><span></span><code>DASHBOARD ORGANIZAÇÃO
+≠ HOME AUTENTICADA DA ORGANIZAÇÃO
+≠ VISÃO GERAL DA IA AUTENTICADA
+≠ SURFACE MAP
+≠ GUIVOS BUSINESS
+≠ ADS
+</code></pre></div>
+<hr />
+<h2 id="2-autoridades-de-dominio-e-precedencia">2. Autoridades de domínio e precedência<a class="headerlink" href="#2-autoridades-de-dominio-e-precedencia" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Autoridade</th>
+<th>Papel neste master</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code></td>
+<td>envelope transversal de KPI, acesso, disclosure e handoff</td>
+</tr>
+<tr>
+<td><code>GKR-UX-ORGCOL-AUTH-JOBS-001</code></td>
+<td>atores funcionais, autoridade, limites e jobs autenticados da Organização</td>
+</tr>
+<tr>
+<td><code>GKR-UX-ORGCOL-AUTH-IA-001</code></td>
+<td>domínios de informação e separação entre síntese, operação, evidência e capacidade comercial</td>
+</tr>
+<tr>
+<td><code>GKR-JOURNEY-ORGANIZATION-001</code></td>
+<td>continuidade integrada e maturidade dos fluxos especializados da Organização</td>
+</tr>
+<tr>
+<td><code>UXA-014</code></td>
+<td>fundamento funcional da Organização</td>
+</tr>
+<tr>
+<td><code>UXA-019</code></td>
+<td>autoridade bilateral e ciclo de relações Organização ↔ Coletivo</td>
+</tr>
+<tr>
+<td><code>GAI-001 / GAI-002 / GIA-COG-001</code></td>
+<td>evidência, natureza de afirmações, explicabilidade e <code>COMPREENDER ≠ DECIDIR</code></td>
+</tr>
+<tr>
+<td><code>GEM-009-MEASUREMENT-CONTRACT-001</code></td>
+<td>composição obrigatória para métricas econômicas quando aplicável</td>
+</tr>
+<tr>
+<td><code>UXA-100 / A3 / A4</code></td>
+<td>fluxo especializado de Planos e capacidade institucional</td>
+</tr>
+</tbody>
+</table>
+<p>Em caso de conflito, este master preserva a autoridade especializada mais restritiva e mantém o KPI bloqueado até adjudicação própria.</p>
+<hr />
+<h2 id="3-estado-e-boundary">3. Estado e boundary<a class="headerlink" href="#3-estado-e-boundary" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
+→ ACTIVE
+→ PRE-IMPLEMENTATION DASHBOARD MASTER
+
+ORGANIZAÇÃO
+→ PARTICIPANT TYPE
+→ ORGANIZAÇÃO ≠ GUIVOS BUSINESS
+→ ORGANIZAÇÃO ≠ COLETIVO
+
+DASHBOARD ORGANIZAÇÃO
+→ ANALYTICAL CONSUMPTION SURFACE
+→ NOT SOURCE OF TRUTH
+→ NOT AUTHENTICATED HOME
+→ NOT OPERATIONAL SYSTEM OF RECORD
+
+REAL DATA CONNECTION
+→ NOT AUTHORIZED BY THIS DOCUMENT
+
+REPLIT BUILD
+→ NOT AUTHORIZED BY THIS DOCUMENT
+→ HANDOFF SPECIFICATION ONLY
+
+PERSON-LEVEL PRIVATE CONTEXT
+→ NOT PART OF DEFAULT ORGANIZATION DISCLOSURE
+
+JOURNEY INDIVIDUAL
+→ NOT DISCLOSED TO ORGANIZATION BY DEFAULT
+</code></pre></div>
+<p>A representação institucional, o pertencimento ou a existência de uma relação com uma Pessoa não concedem acesso automático a histórico, objetivos, Momento, vulnerabilidades, inferências ou demais contexto pessoal protegido.</p>
+<hr />
+<h2 id="4-relacao-com-a-experiencia-autenticada-da-organizacao">4. Relação com a experiência autenticada da Organização<a class="headerlink" href="#4-relacao-com-a-experiencia-autenticada-da-organizacao" title="Permanent link">&para;</a></h2>
+<p>A Arquitetura da Informação autenticada organiza a Organização em cinco domínios principais e uma capacidade comercial contextual:</p>
+<div class="highlight"><pre><span></span><code>Visão Geral
+Oportunidades e Programas
+Relações
+Responsabilidades e Evidências
+Organização e Autoridade
+Planos e Capacidade [especializado / contextual]
+</code></pre></div>
+<p>Este Dashboard não substitui esses domínios.</p>
+<p>A <code>Visão Geral</code> autenticada deve sintetizar Momento, atenção material, responsabilidades e Próximos Passos. Ela não deve ser reduzida a um painel de números.</p>
+<div class="highlight"><pre><span></span><code>SÍNTESE DO MOMENTO
+≠ DASHBOARD
+
+DASHBOARD
+→ PODE APOIAR COM LEITURAS ANALÍTICAS AUTORIZADAS
+→ NÃO DEFINE O MOMENTO INSTITUCIONAL SOZINHO
+</code></pre></div>
+<p>A existência deste master não promove mapa de superfícies, estados, fluxos principais, wireframes ou implementação da experiência autenticada.</p>
+<hr />
+<h2 id="5-areas-analiticas-candidatas">5. Áreas analíticas candidatas<a class="headerlink" href="#5-areas-analiticas-candidatas" title="Permanent link">&para;</a></h2>
+<p>O Dashboard Organização é organizado em <strong>oito áreas analíticas</strong>:</p>
+<ol>
+<li>Visão Analítica da Atuação;</li>
+<li>Oportunidades e Programas;</li>
+<li>Participação e Cadastros Autorizados;</li>
+<li>Relações Institucionais;</li>
+<li>Responsabilidades, Evidências e Resultados;</li>
+<li>Economia, Vendas e Transações Autorizadas;</li>
+<li>Planos, Capacidade, Território e Demografia Autorizados;</li>
+<li>Qualidade, Freshness, Privacidade e Governança do Dado.</li>
+</ol>
+<p>A área de Visão Analítica compõe leituras das famílias governadas neste master. Ela não constitui família KPI autônoma.</p>
+<div class="highlight"><pre><span></span><code>ÁREA DOCUMENTADA
+≠ KPI DEFINIDO
+≠ DADO DISPONÍVEL
+≠ ACESSO AUTORIZADO
+≠ IMPLEMENTAÇÃO AUTORIZADA
+</code></pre></div>
+<hr />
+<h2 id="6-classes-funcionais-de-consumo">6. Classes funcionais de consumo<a class="headerlink" href="#6-classes-funcionais-de-consumo" title="Permanent link">&para;</a></h2>
+<p>As classes abaixo são conceituais e não constituem RBAC técnico implementado:</p>
+<table>
+<thead>
+<tr>
+<th>Classe funcional</th>
+<th>Escopo candidato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organização — visão institucional</td>
+<td>agregados da própria Organização/unidade e objetos sob autoridade</td>
+</tr>
+<tr>
+<td>Organização — operação</td>
+<td>oportunidades, programas, relações e responsabilidades sob seu escopo</td>
+</tr>
+<tr>
+<td>Organização — prestação de contas</td>
+<td>evidências, compromissos, riscos e resultados permitidos</td>
+</tr>
+<tr>
+<td>Organização — capacidade/comercial</td>
+<td>plano atual, capacidade e eventos econômicos autorizados</td>
+</tr>
+<tr>
+<td>Organização — Data/BI</td>
+<td>exportações ou APIs do próprio recorte quando autorizadas</td>
+</tr>
+<tr>
+<td>Guivos — operação/suporte</td>
+<td>dados necessários à finalidade operacional autorizada</td>
+</tr>
+<tr>
+<td>Guivos — Intelligence/Data</td>
+<td>inputs e outputs necessários à finalidade analítica autorizada</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>SER REPRESENTANTE DA ORGANIZAÇÃO
+≠ ACESSO A TODO DADO DA ORGANIZAÇÃO
+
+RELAÇÃO COM PESSOA
+≠ ACESSO À JOURNEY DA PESSOA
+
+DADO AGREGADO
+≠ AUTOMATICAMENTE SEGURO PARA DISCLOSURE
+</code></pre></div>
+<hr />
+<h2 id="7-vocabulario-de-kpi-e-readiness">7. Vocabulário de KPI e readiness<a class="headerlink" href="#7-vocabulario-de-kpi-e-readiness" title="Permanent link">&para;</a></h2>
+<p>Prefixo deste master:</p>
+<div class="highlight"><pre><span></span><code>ORG-KPI-&lt;FAMÍLIA&gt;-NNN
+</code></pre></div>
+<p>Famílias iniciais:</p>
+<ul>
+<li><code>OPP</code> — oportunidades e programas;</li>
+<li><code>PAR</code> — participação, inscrições e cadastros autorizados;</li>
+<li><code>REL</code> — relações institucionais;</li>
+<li><code>EVD</code> — responsabilidades, evidências e resultados;</li>
+<li><code>ECO</code> — economia, vendas e transações autorizadas;</li>
+<li><code>CAP</code> — planos e capacidade;</li>
+<li><code>GEO</code> — território e demografia autorizados;</li>
+<li><code>DQ</code> — qualidade, freshness, privacidade e governança.</li>
+</ul>
+<p>A <strong>Visão Analítica da Atuação</strong> compõe indicadores dessas famílias e não cria namespace próprio nesta versão.</p>
+<p>Estados usados:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>proposed</code></td>
+<td>significado ou contrato ainda incompleto; não build-ready</td>
+</tr>
+<tr>
+<td><code>source_pending</code></td>
+<td>semântica fechada o suficiente, mas source/data contract ainda bloqueia readiness</td>
+</tr>
+<tr>
+<td><code>defined</code></td>
+<td>contrato documental mínimo completo; ainda requer gates de domínio e build</td>
+</tr>
+<tr>
+<td><code>approved-equivalent</code></td>
+<td>autoridade especializada fornece estado equivalente aceito pelo gate</td>
+</tr>
+</tbody>
+</table>
+<p>Nesta versão, <strong>todos os KPIs candidatos permanecem <code>proposed / NOT_READY</code></strong>.</p>
+<hr />
+<h2 id="8-familia-opp-oportunidades-e-programas">8. Família OPP — Oportunidades e Programas<a class="headerlink" href="#8-familia-opp-oportunidades-e-programas" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-OPP-001</td>
+<td>Oportunidades válidas</td>
+<td>oportunidades da Organização em estados válidos dentro do recorte autorizado</td>
+<td>oportunidades</td>
+<td>proposed</td>
+<td>lifecycle/state + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-OPP-002</td>
+<td>Oportunidades ativas</td>
+<td>oportunidades em estado ativo válido na janela</td>
+<td>oportunidades</td>
+<td>proposed</td>
+<td>active-state + temporal contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-OPP-003</td>
+<td>Oportunidades publicadas no período</td>
+<td>oportunidades com publicação válida no período</td>
+<td>oportunidades/período</td>
+<td>proposed</td>
+<td>publication event + window</td>
+</tr>
+<tr>
+<td>ORG-KPI-OPP-004</td>
+<td>Oportunidades encerradas</td>
+<td>oportunidades encerradas validamente no período</td>
+<td>oportunidades/período</td>
+<td>proposed</td>
+<td>close-state + temporal contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-OPP-005</td>
+<td>Programas/iniciativas ativos</td>
+<td>programas ou iniciativas institucionais em estado ativo válido</td>
+<td>programas</td>
+<td>proposed</td>
+<td>taxonomy + lifecycle + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-OPP-006</td>
+<td>Distribuição por Domínio de Evolução</td>
+<td>distribuição autorizada dos objetos institucionais por <code>JED-*</code> aplicável</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>domain-link semantics + denominator</td>
+</tr>
+</tbody>
+</table>
+<p>Regras:</p>
+<div class="highlight"><pre><span></span><code>OPORTUNIDADE PUBLICADA
+≠ DISTRIBUIÇÃO GARANTIDA
+≠ RELEVÂNCIA
+≠ IMPACTO
+
+DOMÍNIO DE EVOLUÇÃO
+≠ CONDIÇÃO DA ORGANIZAÇÃO
+≠ SEGMENTO COMERCIAL AUTOMÁTICO
+</code></pre></div>
+<hr />
+<h2 id="9-familia-par-participacao-inscricoes-e-cadastros-autorizados">9. Família PAR — Participação, inscrições e cadastros autorizados<a class="headerlink" href="#9-familia-par-participacao-inscricoes-e-cadastros-autorizados" title="Permanent link">&para;</a></h2>
+<p>Esta família mede somente relações de participação legitimamente vinculadas aos objetos da Organização.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-PAR-001</td>
+<td>Pessoas elegíveis</td>
+<td>Pessoas incluídas legitimamente no universo elegível de um objeto institucional</td>
+<td>pessoas</td>
+<td>proposed</td>
+<td>eligibility + authority + disclosure</td>
+</tr>
+<tr>
+<td>ORG-KPI-PAR-002</td>
+<td>Inscrições/participações válidas</td>
+<td>inscrições ou participações válidas no recorte</td>
+<td>eventos/pessoas</td>
+<td>proposed</td>
+<td>participation taxonomy + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-PAR-003</td>
+<td>Participantes únicos</td>
+<td>Pessoas distintas com participação válida no período</td>
+<td>pessoas</td>
+<td>proposed</td>
+<td>population + event + disclosure</td>
+</tr>
+<tr>
+<td>ORG-KPI-PAR-004</td>
+<td>Taxa de participação</td>
+<td>participantes únicos / elegíveis segundo contrato específico</td>
+<td>%</td>
+<td>proposed</td>
+<td>numerator + denominator + exclusions</td>
+</tr>
+<tr>
+<td>ORG-KPI-PAR-005</td>
+<td>Participação por oportunidade/programa</td>
+<td>distribuição agregada de participação pelos objetos autorizados</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>scope + disclosure</td>
+</tr>
+<tr>
+<td>ORG-KPI-PAR-006</td>
+<td>Cadastros válidos relacionados</td>
+<td>cadastros ou vínculos operacionais validamente atribuíveis ao objeto institucional</td>
+<td>registros</td>
+<td>proposed</td>
+<td>cadastro semantics + source + purpose</td>
+</tr>
+</tbody>
+</table>
+<p><code>Cadastro</code> não significa automaticamente conta técnica, usuário ativo, membro, empregado ou participante. Cada uso exige definição própria.</p>
+<p>Pessoa individual não é nível padrão de drill-down deste dashboard.</p>
+<hr />
+<h2 id="10-familia-rel-relacoes-institucionais">10. Família REL — Relações institucionais<a class="headerlink" href="#10-familia-rel-relacoes-institucionais" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-REL-001</td>
+<td>Relações ativas</td>
+<td>relações institucionais em estado ativo válido sob autoridade da Organização</td>
+<td>relações</td>
+<td>proposed</td>
+<td>UXA-019 + lifecycle/source</td>
+</tr>
+<tr>
+<td>ORG-KPI-REL-002</td>
+<td>Relações por contraparte/tipo</td>
+<td>distribuição agregada por classe de relação legitimamente definida</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>taxonomy + disclosure</td>
+</tr>
+<tr>
+<td>ORG-KPI-REL-003</td>
+<td>Propostas de relação abertas</td>
+<td>propostas ainda abertas em estado válido</td>
+<td>propostas</td>
+<td>proposed</td>
+<td>bilateral state contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-REL-004</td>
+<td>Relações em revisão</td>
+<td>relações com revisão material válida em andamento</td>
+<td>relações</td>
+<td>proposed</td>
+<td>review-state contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-REL-005</td>
+<td>Relações pausadas/encerradas no período</td>
+<td>eventos válidos de pausa/encerramento</td>
+<td>relações/período</td>
+<td>proposed</td>
+<td>lifecycle + temporal contract</td>
+</tr>
+</tbody>
+</table>
+<p>A relação permanece bilateral. Quantificar a relação não transfere à Organização autoridade da contraparte.</p>
+<hr />
+<h2 id="11-familia-evd-responsabilidades-evidencias-e-resultados">11. Família EVD — Responsabilidades, evidências e resultados<a class="headerlink" href="#11-familia-evd-responsabilidades-evidencias-e-resultados" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-EVD-001</td>
+<td>Responsabilidades abertas</td>
+<td>responsabilidades materiais válidas ainda não encerradas</td>
+<td>responsabilidades</td>
+<td>proposed</td>
+<td>responsibility state/source</td>
+</tr>
+<tr>
+<td>ORG-KPI-EVD-002</td>
+<td>Responsabilidades vencendo</td>
+<td>responsabilidades elegíveis dentro de janela de vencimento definida</td>
+<td>responsabilidades</td>
+<td>proposed</td>
+<td>due-date/window contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-EVD-003</td>
+<td>Compromissos concluídos</td>
+<td>compromissos com conclusão válida no período</td>
+<td>compromissos</td>
+<td>proposed</td>
+<td>completion semantics + evidence</td>
+</tr>
+<tr>
+<td>ORG-KPI-EVD-004</td>
+<td>Evidências registradas</td>
+<td>evidências institucionais válidas associadas ao recorte</td>
+<td>evidências</td>
+<td>proposed</td>
+<td>evidence validity + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-EVD-005</td>
+<td>Resultados autorizados</td>
+<td>resultados que possuem definição e evidência suficientes para a afirmação permitida</td>
+<td>resultados</td>
+<td>proposed</td>
+<td>claim/evidence contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-EVD-006</td>
+<td>Itens sem evidência suficiente</td>
+<td>objetos cuja afirmação pretendida não possui evidência suficiente</td>
+<td>itens</td>
+<td>proposed</td>
+<td>evidence sufficiency contract</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>ATIVIDADE
+≠ RESULTADO
+
+RESULTADO
+≠ IMPACTO
+
+CORRELAÇÃO
+≠ CAUSALIDADE
+
+AUSÊNCIA DE EVIDÊNCIA
+→ PODE E DEVE SER DECLARADA QUANDO MATERIAL
+</code></pre></div>
+<p>Nenhuma métrica deste master autoriza score universal de impacto, reputação ou legitimidade.</p>
+<hr />
+<h2 id="12-familia-eco-economia-vendas-e-transacoes-autorizadas">12. Família ECO — Economia, vendas e transações autorizadas<a class="headerlink" href="#12-familia-eco-economia-vendas-e-transacoes-autorizadas" title="Permanent link">&para;</a></h2>
+<p>O inventário original preserva <code>vendas</code> como necessidade candidata. As autoridades correntes não sustentam uma definição universal de <code>venda</code> para toda Organização.</p>
+<p>Consequentemente:</p>
+<div class="highlight"><pre><span></span><code>VENDAS
+→ CANDIDATE NEED PRESERVED
+→ MEANING MUST BE DEFINED BY APPLICABLE DOMAIN CONTRACT
+→ GEM-009 REQUIRED WHEN ECONOMIC
+→ NO UNIVERSAL SALES KPI BY INFERENCE
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-ECO-001</td>
+<td>Transações econômicas autorizadas</td>
+<td>eventos econômicos válidos atribuíveis ao escopo institucional autorizado</td>
+<td>transações</td>
+<td>proposed</td>
+<td>domain semantics + GEM-009 + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-ECO-002</td>
+<td>Valor econômico autorizado</td>
+<td>valor reconhecido segundo contrato econômico aplicável</td>
+<td>moeda/unidade econômica</td>
+<td>proposed</td>
+<td>GEM-009 + recognition rule</td>
+</tr>
+<tr>
+<td>ORG-KPI-ECO-003</td>
+<td>Vendas elegíveis</td>
+<td>eventos classificados como venda somente quando contrato especializado definir esse significado</td>
+<td>vendas</td>
+<td>proposed</td>
+<td>sales semantics + GEM-009 + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-ECO-004</td>
+<td>Valor de vendas elegíveis</td>
+<td>valor associado às vendas elegíveis quando contratualmente definido</td>
+<td>moeda</td>
+<td>proposed</td>
+<td>ECO-003 + GEM-009</td>
+</tr>
+</tbody>
+</table>
+<p>Não usar receita, GMV, venda, booking, cobrança ou caixa como sinônimos sem contrato explícito.</p>
+<hr />
+<h2 id="13-familia-cap-planos-e-capacidade">13. Família CAP — Planos e capacidade<a class="headerlink" href="#13-familia-cap-planos-e-capacidade" title="Permanent link">&para;</a></h2>
+<p>A Organização possui fluxo especializado de Planos com taxonomia <code>Conecta / Eleva / Transforma</code>. Guivos Business permanece produto separado.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-CAP-001</td>
+<td>Plano institucional vigente</td>
+<td>classificação do plano vigente quando contratualmente confirmada</td>
+<td>categoria</td>
+<td>proposed</td>
+<td>plan source + entitlement contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-CAP-002</td>
+<td>Uso de capacidade</td>
+<td>uso de capacidade definida pelo plano no ciclo aplicável</td>
+<td>unidade/%</td>
+<td>proposed</td>
+<td>entitlement + cycle + source</td>
+</tr>
+<tr>
+<td>ORG-KPI-CAP-003</td>
+<td>Capacidade disponível</td>
+<td>capacidade ainda disponível conforme contrato de plano</td>
+<td>unidade/%</td>
+<td>proposed</td>
+<td>entitlement + balance semantics</td>
+</tr>
+<tr>
+<td>ORG-KPI-CAP-004</td>
+<td>Eventos de alteração de plano</td>
+<td>upgrades/downgrades/cancelamentos confirmados no período</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>plan lifecycle + source</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>PLANO
+≠ RELEVÂNCIA
+≠ LEGITIMIDADE
+≠ AUTORIDADE
+≠ ACESSO AO CONTEXTO PESSOAL
+
+ORGANIZAÇÃO TRANSFORMA
+≠ GUIVOS BUSINESS ENTERPRISE
+</code></pre></div>
+<p>Preço ou entitlement não congelado não pode ser inventado pelo dashboard.</p>
+<hr />
+<h2 id="14-familia-geo-territorio-e-demografia-autorizados">14. Família GEO — território e demografia autorizados<a class="headerlink" href="#14-familia-geo-territorio-e-demografia-autorizados" title="Permanent link">&para;</a></h2>
+<p>Leituras territoriais e demográficas devem operar por minimização e proteção contra reidentificação.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-GEO-001</td>
+<td>Distribuição territorial autorizada</td>
+<td>distribuição de população/participação autorizada por recorte territorial legítimo</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>geography source + disclosure threshold</td>
+</tr>
+<tr>
+<td>ORG-KPI-GEO-002</td>
+<td>Cobertura territorial de oportunidades</td>
+<td>distribuição dos objetos institucionais por território aplicável</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>object geography semantics</td>
+</tr>
+<tr>
+<td>ORG-KPI-GEO-003</td>
+<td>Perfil demográfico agregado autorizado</td>
+<td>distribuição agregada apenas de atributos permitidos para finalidade legítima</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>privacy + purpose + thresholds + source</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>DEMOGRAFIA DISPONÍVEL
+≠ DEMOGRAFIA NECESSÁRIA
+≠ DEMOGRAFIA EXIBÍVEL
+
+SEGMENTO PEQUENO
+→ PODE EXIGIR SUPRESSÃO
+</code></pre></div>
+<p>A Organização não recebe dados demográficos individuais por padrão por meio deste dashboard.</p>
+<hr />
+<h2 id="15-familia-dq-qualidade-freshness-privacidade-e-governanca">15. Família DQ — qualidade, freshness, privacidade e governança<a class="headerlink" href="#15-familia-dq-qualidade-freshness-privacidade-e-governanca" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORG-KPI-DQ-001</td>
+<td>Freshness compliance</td>
+<td>contratos/datasets dentro do SLA / monitorados</td>
+<td>%</td>
+<td>proposed</td>
+<td>freshness/SLA contract</td>
+</tr>
+<tr>
+<td>ORG-KPI-DQ-002</td>
+<td>Indicadores indisponíveis</td>
+<td>KPIs esperados sem dado utilizável</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>registry + availability rules</td>
+</tr>
+<tr>
+<td>ORG-KPI-DQ-003</td>
+<td>Supressões de disclosure</td>
+<td>células/segmentos protegidos por política</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>disclosure policy</td>
+</tr>
+<tr>
+<td>ORG-KPI-DQ-004</td>
+<td>Eventos rejeitados</td>
+<td>eventos institucionais rejeitados por validação</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>validation taxonomy</td>
+</tr>
+<tr>
+<td>ORG-KPI-DQ-005</td>
+<td>Completude de proveniência</td>
+<td>outputs com proveniência suficiente / outputs avaliados</td>
+<td>%</td>
+<td>proposed</td>
+<td>provenance contract</td>
+</tr>
+</tbody>
+</table>
+<p>Qualidade qualifica confiança; não deve fabricar aparência de precisão.</p>
+<hr />
+<h2 id="16-filtros-candidatos">16. Filtros candidatos<a class="headerlink" href="#16-filtros-candidatos" title="Permanent link">&para;</a></h2>
+<p>Filtros somente podem restringir o escopo autorizado:</p>
+<ul>
+<li>período e comparação de período;</li>
+<li>unidade/contexto institucional;</li>
+<li>oportunidade;</li>
+<li>programa/iniciativa;</li>
+<li>estado do objeto;</li>
+<li>Domínio de Evolução quando legitimamente aplicável;</li>
+<li>relação/contraparte quando disclosure permitir;</li>
+<li>território autorizado;</li>
+<li>plano/ciclo de capacidade;</li>
+<li>natureza de evidência;</li>
+<li>classe de resultado.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>FILTRO
+→ SUBCONJUNTO DO ACCESS SCOPE
+→ NUNCA AMPLIA DISCLOSURE
+</code></pre></div>
+<hr />
+<h2 id="17-drill-down">17. Drill-down<a class="headerlink" href="#17-drill-down" title="Permanent link">&para;</a></h2>
+<p>Estrutura candidata:</p>
+<div class="highlight"><pre><span></span><code>N0 — ORGANIZAÇÃO / UNIDADE AUTORIZADA
+→ N1 — FAMÍLIA ANALÍTICA
+→ N2 — OBJETO / PERÍODO / SEGMENTO AUTORIZADO
+→ N3 — OBJETO OPERACIONAL OU RELAÇÃO AUTORIZADA
+</code></pre></div>
+<p>Pessoa individual não é nível padrão de drill-down.</p>
+<p>A identificação excepcional de Pessoa exige finalidade, autoridade, minimização e trilha próprias fora da inferência automática deste master.</p>
+<hr />
+<h2 id="18-estados-obrigatorios-de-visualizacao">18. Estados obrigatórios de visualização<a class="headerlink" href="#18-estados-obrigatorios-de-visualizacao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>LOADING
+NO_DATA
+INSUFFICIENT_DATA
+SUPPRESSED_BY_POLICY
+SOURCE_DELAYED
+NOT_ENTITLED
+ERROR
+AVAILABLE
+</code></pre></div>
+<p><code>0</code> não substitui <code>NO_DATA</code>.</p>
+<p><code>NOT_ENTITLED</code> não significa erro técnico.</p>
+<p><code>SUPPRESSED_BY_POLICY</code> não deve ser mascarado como ausência de ocorrência.</p>
+<hr />
+<h2 id="19-contratos-logicos-esperados">19. Contratos lógicos esperados<a class="headerlink" href="#19-contratos-logicos-esperados" title="Permanent link">&para;</a></h2>
+<p>Sem definir schema físico, o Dashboard Organização poderá futuramente consumir contratos equivalentes a:</p>
+<ul>
+<li>Organization / Unit Aggregate;</li>
+<li>Opportunity Aggregate;</li>
+<li>Program / Initiative Aggregate;</li>
+<li>Eligible Population Aggregate;</li>
+<li>Participation / Registration Aggregate;</li>
+<li>Institutional Relationship Aggregate;</li>
+<li>Responsibility / Commitment Aggregate;</li>
+<li>Evidence / Authorized Result Aggregate;</li>
+<li>Economic Event Aggregate;</li>
+<li>Plan / Capacity Aggregate;</li>
+<li>Geography / Demography Aggregate;</li>
+<li>Data Quality / Freshness Status.</li>
+</ul>
+<p>Cada payload deve carregar, quando aplicável, <code>metric_id</code>, período, valor, unidade, population scope, source version, freshness, natureza da evidência, access class, suppression state, proveniência e confidence/uncertainty quando material.</p>
+<hr />
+<h2 id="20-integracoes-e-minimizacao">20. Integrações e minimização<a class="headerlink" href="#20-integracoes-e-minimizacao" title="Permanent link">&para;</a></h2>
+<p>O dashboard não pressupõe ingestão integral de HRIS, ERP, CRM, folha, bases de membros ou sistemas externos.</p>
+<div class="highlight"><pre><span></span><code>SOURCE AUTORIZADA
+→ EVENTO / AGREGADO MÍNIMO NECESSÁRIO
+→ CONTRATO DO KPI
+→ SERVING AUTORIZADO
+→ DASHBOARD ORGANIZAÇÃO
+</code></pre></div>
+<p>Exportação estruturada/API para ferramentas analíticas externas depende de entitlement, contrato de dados, segurança, finalidade e escopo específicos.</p>
+<hr />
+<h2 id="21-orientacao-futura-para-replit">21. Orientação futura para Replit<a class="headerlink" href="#21-orientacao-futura-para-replit" title="Permanent link">&para;</a></h2>
+<p>Quando houver autorização formal de build, a ferramenta deverá:</p>
+<ol>
+<li>não inventar KPI, fórmula, preço, entitlement, threshold, source, schema ou permissão;</li>
+<li>usar <code>ORG-KPI-*</code> como identificadores estáveis, não labels visuais;</li>
+<li>bloquear KPIs <code>proposed</code> e <code>source_pending</code> para consumo canônico com dado real;</li>
+<li>preservar Organização ≠ Guivos Business e Organização ≠ Coletivo;</li>
+<li>não transformar Dashboard em Home autenticada ou Visão Geral da IA;</li>
+<li>não criar score universal de impacto, reputação, legitimidade ou evolução;</li>
+<li>não expor Journey individual;</li>
+<li>não inferir causalidade de correlações;</li>
+<li>separar atividade, evidência, resultado e impacto;</li>
+<li>tratar filtros como restrição adicional;</li>
+<li>validar escopo no serving/backend, não somente no cliente;</li>
+<li>separar mock adapters de real adapters;</li>
+<li>preservar <code>NO_DATA</code>, <code>INSUFFICIENT_DATA</code>, <code>SUPPRESSED_BY_POLICY</code>, <code>NOT_ENTITLED</code> e <code>SOURCE_DELAYED</code>;</li>
+<li>preservar versão, freshness e proveniência;</li>
+<li>não hard-code preços ou entitlements não congelados;</li>
+<li>não converter plano pago em relevância ou autoridade;</li>
+<li>não implementar exportação individual por conveniência;</li>
+<li>registrar a versão deste master usada na build.</li>
+</ol>
+<hr />
+<h2 id="22-criterios-de-aceite-para-futuro-handoff">22. Critérios de aceite para futuro handoff<a class="headerlink" href="#22-criterios-de-aceite-para-futuro-handoff" title="Permanent link">&para;</a></h2>
+<p>Antes de qualquer release <code>READY FOR BUILD</code>:</p>
+<div class="highlight"><pre><span></span><code>[ ] KPI selecionado = defined OU approved-equivalent
+[ ] pergunta/finalidade fechadas
+[ ] população/elegibilidade definidas
+[ ] fórmula e componentes definidos
+[ ] janela temporal/granularidade definidas
+[ ] source/data contract definido
+[ ] access/disclosure definido
+[ ] thresholds de proteção definidos quando aplicáveis
+[ ] filtros/drill-down definidos
+[ ] null/zero/no-data definidos
+[ ] freshness/quality checks definidos
+[ ] métricas econômicas compõem com GEM-009
+[ ] relações preservam bilateralidade
+[ ] Journey individual permanece protegida
+[ ] natureza da evidência e claims permitidos estão definidos
+[ ] Design/build authorization foi emitida
+</code></pre></div>
+<hr />
+<h2 id="23-itens-explicitamente-bloqueados-nesta-versao">23. Itens explicitamente bloqueados nesta versão<a class="headerlink" href="#23-itens-explicitamente-bloqueados-nesta-versao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>REAL DATA
+→ NOT AUTHORIZED
+
+BACKEND / API FÍSICA
+→ NOT DEFINED HERE
+
+TECHNICAL RBAC
+→ NOT IMPLEMENTED
+
+AUTHENTICATED HOME / SURFACE MAP / STATE MAP
+→ NOT DEFINED BY THIS DOCUMENT
+
+FINAL VISUAL DESIGN
+→ NOT AUTHORIZED
+
+REPLIT BUILD
+→ NOT AUTHORIZED
+
+PERSON-LEVEL JOURNEY DISCLOSURE
+→ NOT AUTHORIZED
+
+UNIVERSAL IMPACT / REPUTATION SCORE
+→ NOT AUTHORIZED
+
+CROSS-ORGANIZATION ACCESS
+→ NOT AUTHORIZED
+
+GUIVOS BUSINESS ANALYTICS
+→ OUTSIDE THIS MASTER
+→ ANNEX B REMAINS SEPARATE
+
+ADS ANALYTICS
+→ OUTSIDE THIS MASTER
+→ ANNEX F REMAINS SEPARATE
+</code></pre></div>
+<hr />
+<h2 id="24-estado-final-desta-versao">24. Estado final desta versão<a class="headerlink" href="#24-estado-final-desta-versao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
+→ v0.1.1
+→ ACTIVE
+→ ANNEX C PRE-IMPLEMENTATION MASTER
+
+AUTHENTICATED EXPERIENCE AUTHORITIES
+→ GKR-UX-ORGCOL-AUTH-JOBS-001 + GKR-UX-ORGCOL-AUTH-IA-001 PRESERVED
+
+ANALYTICAL AREAS
+→ 8
+
+KPI FAMILIES
+→ OPP / PAR / REL / EVD / ECO / CAP / GEO / DQ
+
+KPI IMPLEMENTATION READINESS
+→ NONE CLAIMED BY INFERENCE
+→ ALL CURRENT KPIs = proposed
+→ ALL = NOT_READY
+
+ORGANIZATION POPULATION
+→ ONLY OWN / LEGITIMATELY AUTHORIZED RELATIONS AND POPULATIONS
+
+PERSON PRIVATE CONTEXT / INDIVIDUAL JOURNEY
+→ NOT DEFAULT ORGANIZATION DISCLOSURE
+
+ORGANIZATION AUTHENTICATED HOME / SURFACE MAP / STATE MAP
+→ NOT MATERIALIZED BY THIS DOCUMENT
+
+REAL DATA / BACKEND / API / TECHNICAL RBAC / PRODUCTION
+→ NOT AUTHORIZED
+
+REPLIT BUILD
+→ NOT AUTHORIZED
+
+ANNEX D / E / F
+→ UNCHANGED / NOT MATERIALIZED BY THIS DOCUMENT
+</code></pre></div>
+<p>A materialização documental deste master não autoriza dados reais, implementação, produção, ampliação de disclosure ou promoção automática de qualquer KPI além de seu status governado.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>

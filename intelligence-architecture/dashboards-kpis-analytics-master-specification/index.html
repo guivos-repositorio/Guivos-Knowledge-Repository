@@ -1115,6 +1115,19 @@
 <span class="md-status md-status--active"></span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dashboard-organization-master-specification/">
+<span class="md-ellipsis">
+    
+  
+    Dashboard Organização — Documento Mestre
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1783,8 +1796,8 @@ MASTER ESPECIALIZADO
 </tr>
 <tr>
 <td>C</td>
-<td>Dashboard Organização</td>
-<td>RESERVED / NOT MATERIALIZED</td>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001</code> — Dashboard Organização</td>
+<td>MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER</td>
 </tr>
 <tr>
 <td>D</td>
@@ -1831,12 +1844,10 @@ MASTER ESPECIALIZADO
 <p>Esse escopo foi aprofundado documentalmente no Anexo B sem autorizar dados reais, implementação ou acesso individual além da autoridade aplicável.</p>
 <h4 id="dashboard-organizacao">Dashboard Organização<a class="headerlink" href="#dashboard-organizacao" title="Permanent link">¶</a></h4>
 <p>Finalidade candidata original: leitura quantitativa da própria atuação da Organização e da população/relações sob autoridade aplicável, incluindo oportunidades, vendas, demografia, geografia e cadastros quando legitimamente definidos.</p>
-<p>Estado preservado:</p>
-<div class="highlight"><pre><span></span><code>MASTER ESPECIALIZADO
-→ RESERVED / NOT MATERIALIZED
-
-DOCUMENTAÇÃO DESTA NECESSIDADE
+<p>Esse escopo foi aprofundado documentalmente no Anexo C sem autorizar dados reais, implementação, materialização da Home autenticada ou acesso individual além da autoridade aplicável.</p>
+<div class="highlight"><pre><span></span><code>DOCUMENTAÇÃO DO ANEXO C
 ≠ HOME AUTENTICADA DEFINIDA
+≠ SURFACE MAP / STATE MAP
 ≠ DASHBOARD OPERACIONAL IMPLEMENTADO
 </code></pre></div>
 <h4 id="dashboard-coletivo">Dashboard Coletivo<a class="headerlink" href="#dashboard-coletivo" title="Permanent link">¶</a></h4>
@@ -1880,7 +1891,7 @@ DASHBOARD DOCUMENTADO
 ≠ DADO REAL CONECTADO
 </code></pre></div>
 <p>Quando uma autoridade de domínio mantiver uma superfície, relação, métrica ou capacidade como não definida, este master e seus anexos devem preservar esse estado.</p>
-<p>A existência futura dos masters de Organização e Coletivo <strong>não deverá ser interpretada como materialização de Home autenticada, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
+<p>A existência do master de Organização e a futura existência do master de Coletivo <strong>não deverão ser interpretadas como materialização de Home autenticada, Surface Map, State Map, navegação, wireframe ou implementação desses participantes</strong>.</p>
 <hr/>
 <h2 id="4-principio-arquitetural">4. Princípio arquitetural<a class="headerlink" href="#4-principio-arquitetural" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code>GKR / PRODUTO / GOVERNANÇA
@@ -2505,7 +2516,7 @@ ANEXO B — BUSINESS
 → MATERIALIZED DOCUMENTARILY
 
 ANEXO C — ORGANIZAÇÃO
-→ RESERVED / NOT MATERIALIZED
+→ MATERIALIZED DOCUMENTARILY
 
 ANEXO D — COLETIVO
 → RESERVED / NOT MATERIALIZED
@@ -2520,7 +2531,7 @@ ANEXO F — ADS / OPPORTUNITY BOOST
 <hr/>
 <h2 id="14-estado-final-desta-versao">14. Estado final desta versão<a class="headerlink" href="#14-estado-final-desta-versao" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.4
+→ v0.2.5
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -2552,7 +2563,11 @@ DASHBOARD GUIVOS BUSINESS MASTER
 → GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
 → MATERIALIZED DOCUMENTARILY AS ANNEX B
 
-ANNEXES C / D / E / F
+DASHBOARD ORGANIZATION MASTER
+→ GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
+→ MATERIALIZED DOCUMENTARILY AS ANNEX C
+
+ANNEXES D / E / F
 → RESERVED / NOT MATERIALIZED
 
 REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
