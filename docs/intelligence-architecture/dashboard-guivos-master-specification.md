@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
 title: Dashboard Guivos — Documento Mestre de Especificação Analítica e Handoff Replit
 status: active
-version: 0.1.3
+version: 0.1.4
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
@@ -17,6 +17,7 @@ depends_on:
   - GEM-009-MEASUREMENT-CONTRACT-001
 related:
   - GEA-GRAPH-REFERENCE-001
+  - GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001
 ---
 
 # Dashboard Guivos — Documento Mestre de Especificação Analítica e Handoff Replit
@@ -179,7 +180,27 @@ DEFINED
 → AINDA REQUER CONTRATOS DE DOMÍNIO + BUILD AUTHORIZATION
 ```
 
-Na versão `v0.1.3`, **nenhum KPI deste catálogo é declarado `defined` ou `approved-equivalent` por inferência**.
+Na versão `v0.1.4`, **nenhum KPI deste catálogo é declarado `defined` ou `approved-equivalent` por inferência**.
+
+### 5.2 Absorção da reconciliação de status
+
+A adjudicação registrada em `GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001` foi formalmente absorvida por esta versão do Documento Mestre.
+
+```text
+SEMANTICS INCOMPLETE
+→ proposed
+
+SEMANTICS CLOSED + SOURCE BLOCKED
+→ source_pending
+
+STATUS RECONCILIATION
+→ ABSORBED INTO THIS MASTER
+→ 6 KPI IDS = proposed / NOT_READY
+```
+
+Para `GUV-KPI-POP-001`, `GUV-KPI-POP-002`, `GUV-KPI-POP-007`, `GUV-KPI-POP-009`, `GUV-KPI-POP-011` e `GUV-KPI-OPP-001`, permanecem blockers semânticos anteriores à simples resolução de source/data contract; portanto, o status governado é `proposed` e a readiness permanece `NOT_READY`.
+
+Esta absorção altera apenas o campo `status` desses seis IDs. Ela **não** adjudica fórmula, source, população, regras temporais, elegibilidade/validade, denominador, disclosure, serving, real data ou autorização de build.
 
 ---
 
@@ -187,17 +208,17 @@ Na versão `v0.1.3`, **nenhum KPI deste catálogo é declarado `defined` ou `app
 
 | ID | Indicador | Definição lógica candidata | Unidade | Status | Dependência / gate principal |
 |---|---|---|---|---|---|
-| GUV-KPI-POP-001 | Pessoas cadastradas | contagem distinta da entidade Pessoa no universo válido corrente | pessoas | source_pending | participant source + validade/exclusões |
-| GUV-KPI-POP-002 | Novas Pessoas | Pessoas cuja criação válida ocorreu no período | pessoas/período | source_pending | participant source + temporal contract |
+| GUV-KPI-POP-001 | Pessoas cadastradas | contagem distinta da entidade Pessoa no universo válido corrente | pessoas | proposed | participant source + validade/exclusões |
+| GUV-KPI-POP-002 | Novas Pessoas | Pessoas cuja criação válida ocorreu no período | pessoas/período | proposed | participant source + temporal contract |
 | GUV-KPI-POP-003 | Pessoas ativas | Pessoas com ≥1 evento do `ACTIVITY_EVENT_SET` aprovado na janela | pessoas | proposed | activity event set + janela + source |
 | GUV-KPI-POP-004 | Pessoas inativas | Pessoas elegíveis sem evento qualificante na janela | pessoas | proposed | activity/inactivity contract |
 | GUV-KPI-POP-005 | Taxa de ativação de Pessoas | Pessoas que atingiram ativação / Pessoas elegíveis | % | proposed | activation event + denominator |
 | GUV-KPI-POP-006 | Crescimento líquido de Pessoas | novas Pessoas válidas − saídas/desativações válidas | pessoas/período | proposed | exit/deactivation contract |
-| GUV-KPI-POP-007 | Organizações cadastradas | contagem distinta de Organizações válidas | organizações | source_pending | organization source + validade |
+| GUV-KPI-POP-007 | Organizações cadastradas | contagem distinta de Organizações válidas | organizações | proposed | organization source + validade |
 | GUV-KPI-POP-008 | Organizações ativas | Organizações com atividade qualificante | organizações | proposed | organization activity contract |
-| GUV-KPI-POP-009 | Coletivos cadastrados | contagem distinta de Coletivos válidos | coletivos | source_pending | collective source + validade |
+| GUV-KPI-POP-009 | Coletivos cadastrados | contagem distinta de Coletivos válidos | coletivos | proposed | collective source + validade |
 | GUV-KPI-POP-010 | Coletivos ativos | Coletivos com atividade qualificante | coletivos | proposed | collective activity contract |
-| GUV-KPI-POP-011 | Mix de participantes | distribuição Pessoa / Organização / Coletivo no universo aplicável | % | source_pending | sources + denominator + scope |
+| GUV-KPI-POP-011 | Mix de participantes | distribuição Pessoa / Organização / Coletivo no universo aplicável | % | proposed | sources + denominator + scope |
 | GUV-KPI-POP-012 | Taxa de reativação | entidades previamente inativas que retornam / inativas elegíveis | % | proposed | reactivation contract |
 
 ### 6.1 Necessidade candidata preservada — escolhas / declarações das Pessoas
@@ -288,7 +309,7 @@ EXPERIÊNCIA CONCLUÍDA
 
 | ID | Indicador | Definição lógica candidata | Unidade | Status | Dependência / gate principal |
 |---|---|---|---|---|---|
-| GUV-KPI-OPP-001 | Oportunidades criadas | oportunidades válidas criadas no período | oportunidades | source_pending | opportunity source + validity |
+| GUV-KPI-OPP-001 | Oportunidades criadas | oportunidades válidas criadas no período | oportunidades | proposed | opportunity source + validity |
 | GUV-KPI-OPP-002 | Oportunidades publicadas | oportunidades que atingiram estado publicado | oportunidades | proposed | state contract |
 | GUV-KPI-OPP-003 | Oportunidades ativas | oportunidades no estado ativo | oportunidades | proposed | active-state contract |
 | GUV-KPI-OPP-004 | Oportunidades encerradas | oportunidades encerradas no período | oportunidades | proposed | closed-state contract |
@@ -731,7 +752,7 @@ Quando autorizado, o pacote de construção deverá incluir:
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
-→ v0.1.3
+→ v0.1.4
 → ACTIVE
 → ANNEX A OF GKR-INTELLIGENCE-DASHBOARD-KPI-001
 → GOVERNED PRE-IMPLEMENTATION DASHBOARD MASTER
@@ -744,6 +765,10 @@ ANALYTICAL AREAS
 
 KPI STATUS VOCABULARY
 → ALIGNED WITH GLOBAL MASTER
+
+STATUS RECONCILIATION
+→ GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001 ABSORBED
+→ POP-001 / POP-002 / POP-007 / POP-009 / POP-011 / OPP-001 = proposed / NOT_READY
 
 CHOICES / DECLARATIONS OF PERSONS
 → CANDIDATE NEED PRESERVED
