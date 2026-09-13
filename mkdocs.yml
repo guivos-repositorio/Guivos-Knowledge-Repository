@@ -115,6 +115,7 @@ nav:
           - Dashboard Organização — Documento Mestre: intelligence-architecture/dashboard-organization-master-specification.md
           - Dashboard Coletivo — Documento Mestre: intelligence-architecture/dashboard-collective-master-specification.md
           - Dashboard Pessoa — Documento Mestre: intelligence-architecture/dashboard-person-master-specification.md
+          - Dashboard Ads / Opportunity Boost — Documento Mestre: intelligence-architecture/dashboard-ads-opportunity-boost-master-specification.md
       - Tecnologia de Grafo: adr/ADR-007-neo4j-primary-graph-reference.md
 
   - Jurídico, Privacidade e Institucional:

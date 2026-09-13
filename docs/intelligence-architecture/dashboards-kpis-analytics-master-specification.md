@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.7
+version: 0.2.8
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-13
 normative: false
@@ -23,6 +23,7 @@ related:
   - GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
   - GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
   - GKR-INTELLIGENCE-DASHBOARD-PERSON-001
+  - GKR-INTELLIGENCE-DASHBOARD-ADS-001
 ---
 
 # Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
@@ -95,9 +96,9 @@ MASTER ESPECIALIZADO
 | C | `GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001` — Dashboard Organização | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
 | D | `GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001` — Dashboard Coletivo | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
 | E | `GKR-INTELLIGENCE-DASHBOARD-PERSON-001` — Dashboard Pessoa | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
-| F | Ads / Opportunity Boost Analytics | RESERVED / NOT MATERIALIZED |
+| F | `GKR-INTELLIGENCE-DASHBOARD-ADS-001` — Ads / Opportunity Boost Analytics | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
 
-`RESERVED` significa somente posição documental planejada. Não cria autoridade, superfície operacional ou implementação.
+`MATERIALIZED DOCUMENTARILY` indica autoridade documental pré-implementação materializada; não cria, por si só, superfície operacional, dado real ou implementação.
 
 ### 2.2 Inventário candidato preservado da frente original
 
@@ -185,17 +186,27 @@ DOCUMENTAÇÃO DO ANEXO E
 
 Necessidade candidata original: dados de anúncios e Opportunity Boost do anunciante.
 
-Nesta versão global:
+Esse escopo foi aprofundado documentalmente no Anexo F sem autorizar dados reais, implementação, pricing operacional, attribution, campaign manager, checkout, billing ledger ou acesso individual à Journey da Pessoa.
 
 ```text
-NECESSIDADE
-→ PRESERVADA
-
 MASTER ESPECIALIZADO
-→ RESERVED / NOT MATERIALIZED
+→ GKR-INTELLIGENCE-DASHBOARD-ADS-001
+→ MATERIALIZED DOCUMENTARILY
 
-KPIs / FÓRMULAS / ATTRIBUTION / TOOLING
-→ A DEFINIR POR ATO PRÓPRIO
+CURRENT KPI CANDIDATES
+→ 50
+→ ALL proposed / NOT_READY
+
+ATTRIBUTION
+→ BLOCKED / MODEL NOT DEFINED
+→ NO ADS-KPI-ATT-* MATERIALIZED
+
+DOCUMENTAÇÃO DO ANEXO F
+≠ HOME ADS
+≠ CAMPAIGN MANAGER
+≠ CHECKOUT
+≠ BILLING LEDGER
+≠ IMPLEMENTAÇÃO AUTORIZADA
 ```
 
 ---
@@ -677,7 +688,7 @@ ANEXO E — PESSOA
 → MATERIALIZED DOCUMENTARILY
 
 ANEXO F — ADS / OPPORTUNITY BOOST
-→ RESERVED / NOT MATERIALIZED
+→ MATERIALIZED DOCUMENTARILY
 ```
 
 Cada anexo deve ser construído e revisado individualmente para permitir evolução pontual sem reabrir desnecessariamente os demais.
@@ -688,7 +699,7 @@ Cada anexo deve ser construído e revisado individualmente para permitir evoluç
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.7
+→ v0.2.8
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -732,8 +743,9 @@ DASHBOARD PERSON MASTER
 → GKR-INTELLIGENCE-DASHBOARD-PERSON-001
 → MATERIALIZED DOCUMENTARILY AS ANNEX E
 
-ANNEX F
-→ RESERVED / NOT MATERIALIZED
+DASHBOARD ADS / OPPORTUNITY BOOST MASTER
+→ GKR-INTELLIGENCE-DASHBOARD-ADS-001
+→ MATERIALIZED DOCUMENTARILY AS ANNEX F
 
 REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
 → NOT AUTHORIZED
