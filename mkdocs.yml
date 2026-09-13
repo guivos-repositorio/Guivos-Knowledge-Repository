@@ -108,7 +108,9 @@ nav:
       - Intelligence e IA: intelligence-architecture/index.md
       - Dashboards, KPIs e Analytics:
           - Documento Mestre: intelligence-architecture/dashboards-kpis-analytics-master-specification.md
+          - KPI Contract Standard: intelligence-architecture/kpi-contract-standard.md
           - Dashboard Guivos — Documento Mestre: intelligence-architecture/dashboard-guivos-master-specification.md
+          - Dashboard Guivos — KPI Registry: intelligence-architecture/dashboard-guivos-kpi-registry.md
       - Tecnologia de Grafo: adr/ADR-007-neo4j-primary-graph-reference.md
 
   - Jurídico, Privacidade e Institucional:
