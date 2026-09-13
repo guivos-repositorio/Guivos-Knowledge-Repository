@@ -349,6 +349,28 @@ PAUSA / SAÍDA
 
 Pessoa individual não é nível padrão de drill-down deste dashboard.
 
+### Proveniência candidata preservada — inscrições e cadastros
+
+O master global preserva `inscrições` e `cadastros` como necessidades candidatas originais. Neste Anexo D, ambos permanecem conceitos **separados e BLOCKED** até contrato semântico próprio que defina finalidade, população, unidade de análise, lifecycle e source.
+
+```text
+INSCRIÇÃO
+≠ SOLICITAÇÃO
+≠ CONTA TÉCNICA
+≠ VÍNCULO
+≠ PERTENCIMENTO
+≠ PARTICIPAÇÃO
+
+CADASTRO
+≠ SOLICITAÇÃO
+≠ CONTA TÉCNICA
+≠ VÍNCULO
+≠ PERTENCIMENTO
+≠ PARTICIPAÇÃO
+```
+
+Nesta versão, `inscrições` e `cadastros` **não criam nem mapeiam automaticamente qualquer `COL-KPI-PAR-*`**. Uma futura materialização exige adjudicação própria antes de integrar o catálogo analítico.
+
 ---
 
 ## 11. Família GOV — Governança, decisões e proteção
