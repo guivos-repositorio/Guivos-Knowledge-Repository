@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-PERSON-001
 title: Dashboard Pessoa — Documento Mestre de Especificação Analítica e Handoff Replit
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-13
 normative: false
@@ -89,7 +89,7 @@ Essa precedência não reescreve evento operacional validado, mas impede que uma
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-PERSON-001
-→ ACTIVE v0.1.1
+→ ACTIVE v0.1.2
 → PRE-IMPLEMENTATION DASHBOARD MASTER
 
 PESSOA
@@ -513,7 +513,7 @@ NATUREZA DO OUTPUT
 
 `CONHECIMENTO EXTERNO` e `CONHECIMENTO GOVERNADO` permanecem naturezas distintas de input/resultado porque possuem proveniências distintas; nenhum deles é sinônimo de dado pessoal observado.
 
-`PER-KPI-INT-002` organiza natureza do output. `PER-KPI-INT-003` organiza natureza do input/resultado. O estado epistemológico/derivacional permanece campo separado, preservado nos contratos e metadados aplicáveis; este draft não o converte em sinônimo de nenhum dos outros dois eixos.
+`PER-KPI-INT-002` organiza natureza do output. `PER-KPI-INT-003` organiza natureza do input/resultado. O estado epistemológico/derivacional permanece campo separado, preservado nos contratos e metadados aplicáveis; este master não o converte em sinônimo de nenhum dos outros dois eixos.
 
 E também:
 
@@ -740,7 +740,8 @@ Cada payload deve carregar, quando aplicável:
 - valor/unidade quando existir;
 - population/object scope;
 - source/version;
-- natureza da informação;
+- natureza do input/resultado;
+- natureza do output quando aplicável;
 - estado epistemológico/derivacional;
 - proveniência;
 - freshness;
@@ -823,7 +824,8 @@ Antes de qualquer release `READY FOR BUILD`:
 [ ] fórmula e componentes definidos
 [ ] janela temporal/granularidade definidas
 [ ] source/data contract definido
-[ ] natureza da informação definida
+[ ] natureza do input/resultado definida
+[ ] natureza do output definida quando aplicável
 [ ] estado epistemológico/derivacional preservado
 [ ] access/disclosure definido
 [ ] sensibilidade/minimização definidas
@@ -907,7 +909,7 @@ ADS ANALYTICS
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-PERSON-001
-→ ACTIVE v0.1.1
+→ ACTIVE v0.1.2
 → ANNEX E PRE-IMPLEMENTATION MASTER
 
 PERSON JOURNEY AUTHORITY
