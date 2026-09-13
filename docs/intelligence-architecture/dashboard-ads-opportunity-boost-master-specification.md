@@ -1,12 +1,12 @@
 ---
 id: GKR-INTELLIGENCE-DASHBOARD-ADS-001
 title: Dashboard Ads / Opportunity Boost — Documento Mestre de Especificação Analítica e Handoff Replit
-status: draft
-version: 0.1.0
+status: active
+version: 0.1.1
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-13
 normative: false
-maturity: governed_candidate_pre_implementation_dashboard_master
+maturity: governed_pre_implementation_dashboard_master
 depends_on:
   - GKR-INTELLIGENCE-DASHBOARD-KPI-001
   - GPA-007
@@ -30,7 +30,7 @@ related:
 
 ## 1. Finalidade
 
-Este documento constitui o **draft governado do Anexo F** de `GKR-INTELLIGENCE-DASHBOARD-KPI-001` para **Ads / Opportunity Boost Analytics**.
+Este documento é o **Anexo F materializado** de `GKR-INTELLIGENCE-DASHBOARD-KPI-001` para **Ads / Opportunity Boost Analytics** e governa seu recorte analítico em nível documental pré-implementação.
 
 Seu objetivo é consolidar, antes de qualquer implementação, o recorte analítico legítimo pelo qual um anunciante autorizado e as funções internas competentes da Guivos poderão compreender **campanhas e objetos patrocinados, entrega em inventário autorizado, eventos válidos, Opportunity Boost, orçamento e reconciliação, outcomes legitimamente instrumentados, resultados declarados explicitamente identificados como autorrelato, agregados permitidos, qualidade, antifraude, freshness e proveniência**.
 
@@ -105,8 +105,8 @@ HOME ADS
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-ADS-001
-→ DRAFT v0.1.0
-→ CANDIDATE PRE-IMPLEMENTATION DASHBOARD MASTER
+→ ACTIVE v0.1.1
+→ PRE-IMPLEMENTATION DASHBOARD MASTER
 
 GUIVOS ADS
 → SERVICE LAYER PRODUCT
@@ -961,8 +961,8 @@ INDIVIDUAL VIEWER / CLICKER LIST BY CONVENIENCE
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-ADS-001
-→ DRAFT v0.1.0
-→ ANNEX F CANDIDATE MASTER
+→ ACTIVE v0.1.1
+→ ANNEX F MATERIALIZED MASTER
 → PRE-IMPLEMENTATION
 
 ANALYTICAL AREAS
@@ -1006,4 +1006,4 @@ REPLIT BUILD
 → NOT AUTHORIZED
 ```
 
-A promoção deste draft para master materializado exige reconciliação explícita do registry do master global, validação semântica/mecânica e review governado da PR correspondente.
+A materialização documental deste master não autoriza implementação, dados reais, pricing operacional, attribution, Design/UI, backend/API, RBAC técnico, produção ou Replit build; qualquer avanço permanece sujeito aos gates próprios.
