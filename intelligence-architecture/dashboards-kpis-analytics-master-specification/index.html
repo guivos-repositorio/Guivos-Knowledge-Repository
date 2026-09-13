@@ -1154,6 +1154,19 @@
 <span class="md-status md-status--active"></span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dashboard-ads-opportunity-boost-master-specification/">
+<span class="md-ellipsis">
+    
+  
+    Dashboard Ads / Opportunity Boost — Documento Mestre
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1837,12 +1850,12 @@ MASTER ESPECIALIZADO
 </tr>
 <tr>
 <td>F</td>
-<td>Ads / Opportunity Boost Analytics</td>
-<td>RESERVED / NOT MATERIALIZED</td>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-ADS-001</code> — Ads / Opportunity Boost Analytics</td>
+<td>MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER</td>
 </tr>
 </tbody>
 </table>
-<p><code>RESERVED</code> significa somente posição documental planejada. Não cria autoridade, superfície operacional ou implementação.</p>
+<p><code>MATERIALIZED DOCUMENTARILY</code> indica autoridade documental pré-implementação materializada; não cria, por si só, superfície operacional, dado real ou implementação.</p>
 <h3 id="22-inventario-candidato-preservado-da-frente-original">2.2 Inventário candidato preservado da frente original<a class="headerlink" href="#22-inventario-candidato-preservado-da-frente-original" title="Permanent link">¶</a></h3>
 <p>A tabela fornecida para esta frente identificou seis necessidades analíticas. Elas permanecem <strong>input/proveniência de trabalho</strong> até sua adjudicação individual.</p>
 <h4 id="dashboard-guivos">Dashboard Guivos<a class="headerlink" href="#dashboard-guivos" title="Permanent link">¶</a></h4>
@@ -1900,15 +1913,25 @@ REPUTAÇÃO
 </code></pre></div>
 <h4 id="ads-opportunity-boost-analytics">Ads / Opportunity Boost Analytics<a class="headerlink" href="#ads-opportunity-boost-analytics" title="Permanent link">¶</a></h4>
 <p>Necessidade candidata original: dados de anúncios e Opportunity Boost do anunciante.</p>
-<p>Nesta versão global:</p>
-<div class="highlight"><pre><span></span><code>NECESSIDADE
-→ PRESERVADA
+<p>Esse escopo foi aprofundado documentalmente no Anexo F sem autorizar dados reais, implementação, pricing operacional, attribution, campaign manager, checkout, billing ledger ou acesso individual à Journey da Pessoa.</p>
+<div class="highlight"><pre><span></span><code>MASTER ESPECIALIZADO
+→ GKR-INTELLIGENCE-DASHBOARD-ADS-001
+→ MATERIALIZED DOCUMENTARILY
 
-MASTER ESPECIALIZADO
-→ RESERVED / NOT MATERIALIZED
+CURRENT KPI CANDIDATES
+→ 50
+→ ALL proposed / NOT_READY
 
-KPIs / FÓRMULAS / ATTRIBUTION / TOOLING
-→ A DEFINIR POR ATO PRÓPRIO
+ATTRIBUTION
+→ BLOCKED / MODEL NOT DEFINED
+→ NO ADS-KPI-ATT-* MATERIALIZED
+
+DOCUMENTAÇÃO DO ANEXO F
+≠ HOME ADS
+≠ CAMPAIGN MANAGER
+≠ CHECKOUT
+≠ BILLING LEDGER
+≠ IMPLEMENTAÇÃO AUTORIZADA
 </code></pre></div>
 <hr/>
 <h2 id="3-estado-e-limites">3. Estado e limites<a class="headerlink" href="#3-estado-e-limites" title="Permanent link">¶</a></h2>
@@ -2566,13 +2589,13 @@ ANEXO E — PESSOA
 → MATERIALIZED DOCUMENTARILY
 
 ANEXO F — ADS / OPPORTUNITY BOOST
-→ RESERVED / NOT MATERIALIZED
+→ MATERIALIZED DOCUMENTARILY
 </code></pre></div>
 <p>Cada anexo deve ser construído e revisado individualmente para permitir evolução pontual sem reabrir desnecessariamente os demais.</p>
 <hr/>
 <h2 id="14-estado-final-desta-versao">14. Estado final desta versão<a class="headerlink" href="#14-estado-final-desta-versao" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.7
+→ v0.2.8
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -2616,8 +2639,9 @@ DASHBOARD PERSON MASTER
 → GKR-INTELLIGENCE-DASHBOARD-PERSON-001
 → MATERIALIZED DOCUMENTARILY AS ANNEX E
 
-ANNEX F
-→ RESERVED / NOT MATERIALIZED
+DASHBOARD ADS / OPPORTUNITY BOOST MASTER
+→ GKR-INTELLIGENCE-DASHBOARD-ADS-001
+→ MATERIALIZED DOCUMENTARILY AS ANNEX F
 
 REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
 → NOT AUTHORIZED

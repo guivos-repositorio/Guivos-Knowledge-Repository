@@ -1,0 +1,4902 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
+      
+      
+        <meta name="author" content="Guivos">
+      
+      
+      
+        <link rel="prev" href="../dashboard-person-master-specification/">
+      
+      
+        <link rel="next" href="../../adr/ADR-007-neo4j-primary-graph-reference/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Dashboard Ads / Opportunity Boost — Documento Mestre de Especificação Analítica e Handoff Replit - Guivos Knowledge Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <style>
+    /*
+      A navegação pública do GKR é organizada por grandes assuntos.
+      Somente o primeiro nível recebe maior hierarquia tipográfica;
+      documentos e subgrupos permanecem visualmente secundários.
+    */
+    .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+    .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-top: 0.35rem;
+    }
+
+    .md-nav--primary > .md-nav__list > .md-nav__item--section + .md-nav__item--section {
+      margin-top: 0.2rem;
+    }
+
+    .gkr-page-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 1rem;
+    }
+
+    .gkr-page-print {
+      cursor: pointer;
+    }
+
+    @media print {
+      .gkr-page-actions,
+      .md-header,
+      .md-tabs,
+      .md-sidebar,
+      .md-footer,
+      .md-top,
+      .md-dialog,
+      .md-content__button {
+        display: none !important;
+      }
+
+      .md-main__inner,
+      .md-content,
+      .md-content__inner {
+        margin: 0 !important;
+        max-width: none !important;
+      }
+    }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dashboard-ads-opportunity-boost-documento-mestre-de-especificacao-analitica-e-handoff-replit" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dashboard Ads / Opportunity Boost — Documento Mestre de Especificação Analítica e Handoff Replit
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guivos Knowledge Repository
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comece por aqui
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Comece por aqui
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/guia-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--public-canon"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/current-state-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estado Atual do Repositório
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação e Marca
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundação e Marca
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos da Guivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../christian-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamento Cristão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolution-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolução do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-and-digital-assets-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Naming e Ativos Digitais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-public-authority-and-founder-role/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Fundador e Autoridade Pública
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Participantes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Participantes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/person/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/collective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coletivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/organizations-collectives-current-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Estado Atual
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Produtos e Economia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Produtos e Economia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Econômico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estratégia de Negócio
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiência e Journey
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiência e Journey
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura da Experiência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornadas Integradas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/public-home-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Principal / Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/public-home-organizations-collectives-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home de Organizações e Coletivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/public-specialized-homes-reconciliation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes dos Produtos Especializados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research e Validação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research e Validação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pesquisa do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-002/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Possibilidades, Oportunidades e Supply
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dados, Intelligence e Tecnologia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dados, Intelligence e Tecnologia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Corporativa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intelligence e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboards, KPIs e Analytics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dashboards, KPIs e Analytics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboards-kpis-analytics-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kpi-contract-standard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KPI Contract Standard
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboard-guivos-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboard-guivos-kpi-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — KPI Registry
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboard-guivos-business-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos Business — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboard-organization-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Organização — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboard-collective-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Coletivo — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboard-person-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Pessoa — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Ads / Opportunity Boost — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Ads / Opportunity Boost — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-autoridades-de-dominio-e-precedencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Autoridades de domínio e precedência
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-estado-e-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Estado e boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-separacao-entre-organico-patrocinado-e-mensuracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Separação entre orgânico, patrocinado e mensuração
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-areas-analiticas-candidatas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Áreas analíticas candidatas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-classes-funcionais-de-consumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Classes funcionais de consumo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-vocabulario-de-kpi-e-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Vocabulário de KPI e readiness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-attribution-explicitamente-bloqueada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Attribution explicitamente bloqueada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-familia-cam-campanhas-e-objetos-patrocinados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Família CAM — Campanhas e objetos patrocinados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-familia-del-entrega-e-inventario-patrocinado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Família DEL — Entrega e inventário patrocinado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-familia-evt-eventos-e-acoes-validas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Família EVT — Eventos e ações válidas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-familia-bst-opportunity-boost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Família BST — Opportunity Boost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-familia-fin-orcamento-e-reconciliacao-economica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Família FIN — Orçamento e reconciliação econômica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-familia-out-outcomes-instrumentados-e-resultados-declarados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Família OUT — Outcomes instrumentados e resultados declarados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-familia-aud-publico-permitido-segmentacao-e-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Família AUD — Público permitido, segmentação e disclosure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-familia-qf-qualidade-trafego-invalido-e-antifraude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Família QF — Qualidade, tráfego inválido e antifraude
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-familia-dq-qualidade-do-dado-freshness-proveniencia-e-governanca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Família DQ — Qualidade do dado, freshness, proveniência e governança
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-eventos-conversao-e-faturabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Eventos, conversão e faturabilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-pricing-budget-e-billing-limites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Pricing, budget e billing — limites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-filtros-candidatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Filtros candidatos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-drill-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Drill-down
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-estados-obrigatorios-de-visualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Estados obrigatórios de visualização
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-contratos-logicos-esperados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Contratos lógicos esperados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-privacidade-segmentacao-e-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Privacidade, segmentação e disclosure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-relacao-com-guivos-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. Relação com Guivos Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-orientacao-futura-para-replit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        26. Orientação futura para Replit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-criterios-de-aceite-para-futuro-handoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27. Critérios de aceite para futuro handoff
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-itens-explicitamente-bloqueados-nesta-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28. Itens explicitamente bloqueados nesta versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-estado-final-desta-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        29. Estado final desta versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-007-neo4j-primary-graph-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tecnologia de Grafo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jurídico, Privacidade e Institucional
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jurídico, Privacidade e Institucional
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/institutional-and-legal-architecture-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Institucional e Jurídica
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/operational-privacy-and-legal-truth-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacidade e Verdade Operacional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/fundacao-guivos-institutional-concept-and-legal-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação Guivos — Conceito e Estado Jurídico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/trademark-brazil-signature-filing-authorization-package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proteção Marcária — Autorização de Filing
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GTM e Internacionalização
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GTM e Internacionalização
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go-to-Market
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-007-internationalization-and-territorial-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Internacionalização e Governança Territorial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-008-portugal-pilot-readiness-gates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Piloto Portugal — Gates de Prontidão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/international-operations-and-cross-border-readiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operações Internacionais e Cross-Border
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governança do GKR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governança do GKR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/gkr-full-corpus-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auditoria Integral do Corpus
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-audit-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framework de Auditoria Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Consolidação do Conhecimento Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-001-gkr-as-source-of-truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKR como Fonte Única da Verdade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-006-guivos-knowledge-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Conhecimento da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualizar / Imprimir GKR Completo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-autoridades-de-dominio-e-precedencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Autoridades de domínio e precedência
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-estado-e-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Estado e boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-separacao-entre-organico-patrocinado-e-mensuracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Separação entre orgânico, patrocinado e mensuração
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-areas-analiticas-candidatas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Áreas analíticas candidatas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-classes-funcionais-de-consumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Classes funcionais de consumo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-vocabulario-de-kpi-e-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Vocabulário de KPI e readiness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-attribution-explicitamente-bloqueada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Attribution explicitamente bloqueada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-familia-cam-campanhas-e-objetos-patrocinados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Família CAM — Campanhas e objetos patrocinados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-familia-del-entrega-e-inventario-patrocinado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Família DEL — Entrega e inventário patrocinado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-familia-evt-eventos-e-acoes-validas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Família EVT — Eventos e ações válidas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-familia-bst-opportunity-boost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Família BST — Opportunity Boost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-familia-fin-orcamento-e-reconciliacao-economica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Família FIN — Orçamento e reconciliação econômica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-familia-out-outcomes-instrumentados-e-resultados-declarados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Família OUT — Outcomes instrumentados e resultados declarados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-familia-aud-publico-permitido-segmentacao-e-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Família AUD — Público permitido, segmentação e disclosure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-familia-qf-qualidade-trafego-invalido-e-antifraude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Família QF — Qualidade, tráfego inválido e antifraude
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-familia-dq-qualidade-do-dado-freshness-proveniencia-e-governanca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Família DQ — Qualidade do dado, freshness, proveniência e governança
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-eventos-conversao-e-faturabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Eventos, conversão e faturabilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-pricing-budget-e-billing-limites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Pricing, budget e billing — limites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-filtros-candidatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Filtros candidatos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-drill-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Drill-down
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-estados-obrigatorios-de-visualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Estados obrigatórios de visualização
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-contratos-logicos-esperados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Contratos lógicos esperados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-privacidade-segmentacao-e-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Privacidade, segmentação e disclosure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-relacao-com-guivos-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. Relação com Guivos Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-orientacao-futura-para-replit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        26. Orientação futura para Replit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-criterios-de-aceite-para-futuro-handoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27. Critérios de aceite para futuro handoff
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-itens-explicitamente-bloqueados-nesta-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28. Itens explicitamente bloqueados nesta versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-estado-final-desta-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        29. Estado final desta versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+    <div class="gkr-page-actions">
+      <button
+        type="button"
+        class="md-button gkr-page-print"
+        onclick="window.print()"
+        aria-label="Imprimir somente este assunto"
+      >
+        Imprimir este assunto
+      </button>
+    </div>
+  
+  
+                  
+
+
+  
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/intelligence-architecture/dashboard-ads-opportunity-boost-master-specification.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="dashboard-ads-opportunity-boost-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Ads / Opportunity Boost — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#dashboard-ads-opportunity-boost-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
+<h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento é o <strong>Anexo F materializado</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> para <strong>Ads / Opportunity Boost Analytics</strong> e governa seu recorte analítico em nível documental pré-implementação.</p>
+<p>Seu objetivo é consolidar, antes de qualquer implementação, o recorte analítico legítimo pelo qual um anunciante autorizado e as funções internas competentes da Guivos poderão compreender <strong>campanhas e objetos patrocinados, entrega em inventário autorizado, eventos válidos, Opportunity Boost, orçamento e reconciliação, outcomes legitimamente instrumentados, resultados declarados explicitamente identificados como autorrelato, agregados permitidos, qualidade, antifraude, freshness e proveniência</strong>.</p>
+<p>O dashboard deve apoiar mensuração comercial responsável sem transformar pagamento em relevância orgânica, evento em resultado, correlação em causalidade, participante em lead vendável ou contexto pessoal protegido em matéria-prima publicitária.</p>
+<p>Regra central:</p>
+<blockquote>
+<p><strong>Ads pode medir a entrega comercial legitimamente autorizada e os eventos que seu contrato sustenta; não pode comprar relevância orgânica, inferir causalidade sem evidência, ampliar disclosure do participante ou prometer resultado que a mensuração não suporta.</strong></p>
+</blockquote>
+<p>Este master não cria Home Ads, checkout, campaign manager, buying console, inventário operacional, regra de bidding, modelo de attribution, tabela pública de preços, cobrança real, backend, API, RBAC técnico, Design/UI ou implementação.</p>
+<div class="highlight"><pre><span></span><code>ADS / OPPORTUNITY BOOST ANALYTICS
+≠ GUIVOS ADS HOME
+≠ CAMPAIGN MANAGER
+≠ MEDIA BUYING CONSOLE
+≠ CHECKOUT
+≠ ORGANIC RANKING
+≠ PERSONAL RECOMMENDATION
+≠ PERSON INTELLIGENCE
+≠ SOURCE OF TRUTH
+≠ ATTRIBUTION MODEL
+</code></pre></div>
+<hr />
+<h2 id="2-autoridades-de-dominio-e-precedencia">2. Autoridades de domínio e precedência<a class="headerlink" href="#2-autoridades-de-dominio-e-precedencia" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Autoridade</th>
+<th>Papel neste master</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code></td>
+<td>envelope transversal de KPI, acesso, disclosure e handoff</td>
+</tr>
+<tr>
+<td><code>GPA-007</code></td>
+<td>autoridade de Produto Guivos Ads, seus limites e relação com superfícies anfitriãs</td>
+</tr>
+<tr>
+<td><code>GKR-UX-HOME-ADS-MASTER-001</code></td>
+<td>governa exclusivamente a Home Pública Ads v1 e seus limites narrativos/comerciais; não define Ads Analytics</td>
+</tr>
+<tr>
+<td><code>UXA-038</code></td>
+<td>contrato funcional do Opportunity Boost, incluindo estados, controles e relatório do anunciante</td>
+</tr>
+<tr>
+<td><code>GEM-007-ADS-ECONOMIC-ROLE-001</code></td>
+<td>papel econômico de Ads, eventos econômicos candidatos, riscos e guardrails</td>
+</tr>
+<tr>
+<td><code>GEM-007-A1</code></td>
+<td>contrato econômico e entre produtos do Opportunity Boost</td>
+</tr>
+<tr>
+<td><code>GEM-010-A2</code></td>
+<td>baseline candidata de preços, orçamento e mensuração; não autoriza oferta pública ou faturamento</td>
+</tr>
+<tr>
+<td><code>GEM-009-MEASUREMENT-CONTRACT-001</code></td>
+<td>contrato mínimo de métrica econômica; permanece autoridade em estado <code>draft</code></td>
+</tr>
+<tr>
+<td><code>GEM-007-CROSS-PRODUCT-VALUE-ATTRIBUTION-001</code></td>
+<td>princípios de attribution e limites; modelo/janela/pesos/algoritmo continuam não definidos</td>
+</tr>
+<tr>
+<td><code>GAI-001 / GAI-002 / GIA-COG-001</code></td>
+<td>evidência, proveniência, incerteza, explicabilidade e <code>COMPREENDER ≠ DECIDIR</code></td>
+</tr>
+</tbody>
+</table>
+<p>Em caso de conflito, prevalece a autoridade especializada mais restritiva. O fato de um documento econômico conter parâmetro candidato não converte esse parâmetro em preço vigente, fórmula aprovada, source disponível ou regra operacional.</p>
+<div class="highlight"><pre><span></span><code>PARÂMETRO CANDIDATO
+≠ PREÇO VIGENTE
+≠ FATURAMENTO AUTORIZADO
+≠ REGRA OPERACIONAL APROVADA
+
+DOCUMENTO DRAFT DE ATTRIBUTION
+≠ MODELO DE ATTRIBUTION DEFINIDO
+</code></pre></div>
+<p><code>GKR-UX-HOME-ADS-MASTER-001</code> está materializado em <code>docs/experience-architecture/public-home-ads-master-document.md</code> e governa exclusivamente a <strong>Home Pública do Guivos Ads v1</strong>, voltada à descoberta e qualificação comercial. Este Anexo F governa um recorte analítico distinto e não redefine a Home, sua narrativa, conversão ou futura implementação.</p>
+<div class="highlight"><pre><span></span><code>HOME PÚBLICA ADS
+→ DESCOBERTA / EXPLICAÇÃO / QUALIFICAÇÃO COMERCIAL
+
+ADS ANALYTICS
+→ CONSUMO ANALÍTICO AUTORIZADO
+
+HOME ADS
+≠ DASHBOARD ADS
+≠ CAMPAIGN MANAGER
+≠ CHECKOUT
+</code></pre></div>
+<hr />
+<h2 id="3-estado-e-boundary">3. Estado e boundary<a class="headerlink" href="#3-estado-e-boundary" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-ADS-001
+→ ACTIVE v0.1.1
+→ PRE-IMPLEMENTATION DASHBOARD MASTER
+
+GUIVOS ADS
+→ SERVICE LAYER PRODUCT
+→ COMMERCIAL AUTHORITY OVER AUTHORIZED AD RELATION / INVENTORY / MEASUREMENT
+→ NOT AUTHORITY OVER HOST PRODUCT ORGANIC MEANING
+
+DASHBOARD ADS
+→ ANALYTICAL CONSUMPTION SURFACE
+→ NOT SOURCE OF TRUTH
+→ NOT CAMPAIGN OPERATION SYSTEM
+→ NOT BILLING LEDGER
+→ NOT ATTRIBUTION ENGINE
+
+REAL DATA CONNECTION
+→ NOT AUTHORIZED BY THIS DOCUMENT
+
+REPLIT BUILD
+→ NOT AUTHORIZED BY THIS DOCUMENT
+→ HANDOFF SPECIFICATION ONLY
+
+PROCESSING AUTHORIZED
+≠ DISCLOSURE AUTHORIZED
+
+ADVERTISER RELATIONSHIP
+≠ ACCESS TO PRIVATE PERSON JOURNEY
+</code></pre></div>
+<hr />
+<h2 id="4-separacao-entre-organico-patrocinado-e-mensuracao">4. Separação entre orgânico, patrocinado e mensuração<a class="headerlink" href="#4-separacao-entre-organico-patrocinado-e-mensuracao" title="Permanent link">&para;</a></h2>
+<p>A autoridade vigente exige separação explícita entre relevância orgânica e distribuição paga.</p>
+<div class="highlight"><pre><span></span><code>PAGAMENTO
+≠ RELEVÂNCIA ORGÂNICA
+≠ RECOMENDAÇÃO
+≠ PRÓXIMO PASSO
+≠ QUALIDADE
+≠ CONFIANÇA
+≠ IMPACTO
+
+INVENTÁRIO PATROCINADO
+≠ RANKING ORGÂNICO
+
+EXPOSIÇÃO PATROCINADA
+≠ PERTINÊNCIA PESSOAL
+</code></pre></div>
+<p>A superfície anfitriã preserva autoridade sobre contexto, segurança, acessibilidade, densidade, controles e finalidade funcional. Ads governa a relação comercial publicitária, o inventário autorizado, a identificação e a mensuração comercial compatível.</p>
+<p>Este dashboard não pode usar performance paga para reescrever métricas orgânicas nem apresentar posição patrocinada como recomendação da Guivos.</p>
+<hr />
+<h2 id="5-areas-analiticas-candidatas">5. Áreas analíticas candidatas<a class="headerlink" href="#5-areas-analiticas-candidatas" title="Permanent link">&para;</a></h2>
+<p>Ads / Opportunity Boost Analytics é organizado em <strong>dez áreas analíticas</strong>:</p>
+<ol>
+<li>Visão Analítica do Anunciante;</li>
+<li>Campanhas e Objetos Patrocinados;</li>
+<li>Entrega e Inventário Patrocinado;</li>
+<li>Eventos e Ações Válidas;</li>
+<li>Opportunity Boost;</li>
+<li>Orçamento e Reconciliação Econômica;</li>
+<li>Outcomes Instrumentados e Resultados Declarados;</li>
+<li>Público Permitido e Disclosure;</li>
+<li>Qualidade, Tráfego Inválido e Antifraude;</li>
+<li>Qualidade do Dado, Freshness, Proveniência e Limitações.</li>
+</ol>
+<p>A <strong>Visão Analítica do Anunciante</strong> compõe leituras das famílias governadas e não constitui namespace KPI autônomo.</p>
+<p><code>Attribution</code> permanece tema transversal <strong>bloqueado</strong> nesta versão e não cria família KPI própria.</p>
+<div class="highlight"><pre><span></span><code>ÁREA DOCUMENTADA
+≠ KPI DEFINED
+≠ DADO DISPONÍVEL
+≠ FATURAMENTO
+≠ RESULTADO COMPROVADO
+≠ CAUSALIDADE
+≠ IMPLEMENTAÇÃO AUTORIZADA
+</code></pre></div>
+<hr />
+<h2 id="6-classes-funcionais-de-consumo">6. Classes funcionais de consumo<a class="headerlink" href="#6-classes-funcionais-de-consumo" title="Permanent link">&para;</a></h2>
+<p>As classes são conceituais e não constituem RBAC técnico implementado:</p>
+<table>
+<thead>
+<tr>
+<th>Classe funcional</th>
+<th>Escopo candidato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anunciante — visão própria</td>
+<td>campanhas, Boosts, orçamento, entrega, eventos e agregados próprios autorizados</td>
+</tr>
+<tr>
+<td>Organização / Coletivo anunciante</td>
+<td>somente o recorte publicitário legitimamente vinculado ao participante e à oportunidade</td>
+</tr>
+<tr>
+<td>Guivos Ads — operação</td>
+<td>recorte necessário à operação, qualidade, reconciliação e suporte publicitário</td>
+</tr>
+<tr>
+<td>Guivos — Financeiro/Economia</td>
+<td>métricas econômicas autorizadas e auditáveis conforme contrato aplicável</td>
+</tr>
+<tr>
+<td>Guivos — Intelligence/Data</td>
+<td>inputs e outputs necessários à mensuração, antifraude e análise autorizadas</td>
+</tr>
+<tr>
+<td>Superfície anfitriã</td>
+<td>somente leituras necessárias ao seu contexto, segurança e governança quando houver autoridade</td>
+</tr>
+<tr>
+<td>Service account / Replit</td>
+<td>somente payloads necessários à renderização autorizada</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>ANUNCIANTE
+≠ ACESSO A LISTA DE VISUALIZADORES
+≠ ACESSO A RELATO PESSOAL
+≠ ACESSO A MOMENTO ATUAL
+≠ ACESSO A PRÓXIMO PASSO
+≠ ACESSO A MENSAGEM PRIVADA
+≠ ACESSO A INFERÊNCIA SENSÍVEL
+
+DADO SOBRE CAMPANHA
+≠ DIREITO AUTOMÁTICO A DADO INDIVIDUAL DO PARTICIPANTE
+</code></pre></div>
+<hr />
+<h2 id="7-vocabulario-de-kpi-e-readiness">7. Vocabulário de KPI e readiness<a class="headerlink" href="#7-vocabulario-de-kpi-e-readiness" title="Permanent link">&para;</a></h2>
+<p>Prefixo deste master:</p>
+<div class="highlight"><pre><span></span><code>ADS-KPI-&lt;FAMÍLIA&gt;-NNN
+</code></pre></div>
+<p>Famílias iniciais:</p>
+<ul>
+<li><code>CAM</code> — campanhas e objetos patrocinados;</li>
+<li><code>DEL</code> — entrega e inventário patrocinado;</li>
+<li><code>EVT</code> — eventos e ações válidas;</li>
+<li><code>BST</code> — Opportunity Boost;</li>
+<li><code>FIN</code> — orçamento e reconciliação econômica;</li>
+<li><code>OUT</code> — outcomes instrumentados e resultados declarados;</li>
+<li><code>AUD</code> — público permitido, segmentação e disclosure agregado;</li>
+<li><code>QF</code> — qualidade, tráfego inválido e antifraude;</li>
+<li><code>DQ</code> — qualidade do dado, freshness, proveniência e governança.</li>
+</ul>
+<p>Estados:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>proposed</code></td>
+<td>significado/contrato incompleto; não build-ready</td>
+</tr>
+<tr>
+<td><code>source_pending</code></td>
+<td>semântica suficiente, mas source/data contract bloqueia readiness</td>
+</tr>
+<tr>
+<td><code>defined</code></td>
+<td>contrato documental mínimo completo; ainda exige demais gates</td>
+</tr>
+<tr>
+<td><code>approved-equivalent</code></td>
+<td>autoridade especializada fornece estado equivalente aceito pelo gate</td>
+</tr>
+</tbody>
+</table>
+<p>Nesta versão, <strong>todos os KPIs candidatos permanecem <code>proposed / NOT_READY</code></strong>.</p>
+<hr />
+<h2 id="8-attribution-explicitamente-bloqueada">8. Attribution explicitamente bloqueada<a class="headerlink" href="#8-attribution-explicitamente-bloqueada" title="Permanent link">&para;</a></h2>
+<p><code>GEM-007-CROSS-PRODUCT-VALUE-ATTRIBUTION-001</code> define princípios e estados conceituais, mas não define janela, first-touch, last-touch, multi-touch, pesos, percentual, algoritmo ou regra contábil.</p>
+<p><code>GEM-010-A2</code> registra uma baseline candidata de attribution por clique para validação, sem transformar essa hipótese em modelo canônico vigente.</p>
+<p>Portanto:</p>
+<div class="highlight"><pre><span></span><code>ATTRIBUTION
+→ BLOCKED / MODEL NOT DEFINED
+→ NO CANONICAL WINDOW
+→ NO FIRST-TOUCH RULE
+→ NO LAST-TOUCH RULE
+→ NO MULTI-TOUCH MODEL
+→ NO WEIGHTS
+→ NO PERCENTAGE
+→ NO ALGORITHM
+→ NO ACCOUNTING RULE
+
+ADS-KPI-ATT-*
+→ NOT CREATED IN THIS VERSION
+</code></pre></div>
+<p>Estados conceituais como <code>direct</code>, <code>assisted</code>, <code>shared</code>, <code>unresolved</code> e <code>not_attributable</code> podem ser preservados como vocabulário futuro, mas não autorizam cálculo.</p>
+<div class="highlight"><pre><span></span><code>ASSOCIAÇÃO TEMPORAL
+≠ ATTRIBUTION VALIDADA
+
+ATTRIBUTION
+≠ CAUSALIDADE
+
+CLIQUES / IMPRESSÕES / EXPOSIÇÃO
+≠ CRÉDITO CAUSAL
+</code></pre></div>
+<hr />
+<h2 id="9-familia-cam-campanhas-e-objetos-patrocinados">9. Família CAM — Campanhas e objetos patrocinados<a class="headerlink" href="#9-familia-cam-campanhas-e-objetos-patrocinados" title="Permanent link">&para;</a></h2>
+<p>Esta família organiza apenas objetos publicitários legitimamente reconhecidos pelo contrato futuro.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADS-KPI-CAM-001</td>
+<td>Campanhas válidas</td>
+<td>campanhas em estados semanticamente válidos no recorte autorizado</td>
+<td>campanhas</td>
+<td>proposed</td>
+<td>campaign lifecycle + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-CAM-002</td>
+<td>Campanhas ativas</td>
+<td>campanhas em estado ativo válido na janela</td>
+<td>campanhas</td>
+<td>proposed</td>
+<td>active-state contract</td>
+</tr>
+<tr>
+<td>ADS-KPI-CAM-003</td>
+<td>Campanhas por estado</td>
+<td>distribuição pelas classes governadas do lifecycle aplicável</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>lifecycle taxonomy</td>
+</tr>
+<tr>
+<td>ADS-KPI-CAM-004</td>
+<td>Objetos patrocinados válidos</td>
+<td>oportunidades, ofertas, conteúdos ou outros objetos aprovados para relação publicitária</td>
+<td>objetos</td>
+<td>proposed</td>
+<td>object eligibility + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-CAM-005</td>
+<td>Eventos de lifecycle no período</td>
+<td>aprovação, programação, pausa, limitação, suspensão, conclusão, cancelamento ou reconciliação conforme autoridade aplicável</td>
+<td>eventos/período</td>
+<td>proposed</td>
+<td>event semantics + temporal contract</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>CAMPANHA CADASTRADA
+≠ CAMPANHA APROVADA
+≠ CAMPANHA ATIVA
+
+OBJETO APROVADO NO PRODUTO ANFITRIÃO
+≠ CAMPANHA ADS AUTOMATICAMENTE APROVADA
+
+PAGAMENTO
+≠ ADMISSÃO
+≠ VERIFICAÇÃO
+≠ MODERAÇÃO
+</code></pre></div>
+<hr />
+<h2 id="10-familia-del-entrega-e-inventario-patrocinado">10. Família DEL — Entrega e inventário patrocinado<a class="headerlink" href="#10-familia-del-entrega-e-inventario-patrocinado" title="Permanent link">&para;</a></h2>
+<p>Esta família separa entrega técnica, validade, visibilidade e frequência.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADS-KPI-DEL-001</td>
+<td>Impressões servidas</td>
+<td>unidades tecnicamente entregues segundo contrato futuro</td>
+<td>impressões</td>
+<td>proposed</td>
+<td>instrumentation + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-DEL-002</td>
+<td>Impressões válidas</td>
+<td>entregas após remoção de tráfego/eventos inválidos</td>
+<td>impressões</td>
+<td>proposed</td>
+<td>validity contract + antifraud</td>
+</tr>
+<tr>
+<td>ADS-KPI-DEL-003</td>
+<td>Impressões visíveis</td>
+<td>unidades que atendem critério de visibilidade aplicável</td>
+<td>impressões</td>
+<td>proposed</td>
+<td>viewability definition + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-DEL-004</td>
+<td>Alcance estimado agregado</td>
+<td>pessoas/dispositivos únicos estimados sem exposição individual</td>
+<td>estimativa agregada</td>
+<td>proposed</td>
+<td>identity resolution + privacy + methodology</td>
+</tr>
+<tr>
+<td>ADS-KPI-DEL-005</td>
+<td>Entrega por superfície anfitriã</td>
+<td>distribuição da entrega patrocinada entre superfícies autorizadas</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>surface taxonomy + serving source</td>
+</tr>
+<tr>
+<td>ADS-KPI-DEL-006</td>
+<td>Unidades patrocinadas entregues</td>
+<td>quantidade de unidades de inventário patrocinado legitimamente servidas</td>
+<td>unidades</td>
+<td>proposed</td>
+<td>inventory contract + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-DEL-007</td>
+<td>Frequência média</td>
+<td>média de exposições válidas no recorte autorizado, preservando que população/unidade única, janela e metodologia ainda exigem contrato próprio</td>
+<td>média</td>
+<td>proposed</td>
+<td>frequency definition + unique-unit methodology + window + source</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>IMPRESSÃO SERVIDA
+≠ IMPRESSÃO VÁLIDA
+≠ IMPRESSÃO VISÍVEL
+≠ ATENÇÃO
+≠ INTERESSE
+≠ RESULTADO
+
+ALCANCE ESTIMADO
+≠ PESSOAS IDENTIFICADAS PARA O ANUNCIANTE
+
+FREQUÊNCIA MÉDIA
+≠ LIMITE DE FREQUÊNCIA DEFINIDO
+≠ GARANTIA DE ALCANCE
+</code></pre></div>
+<p><code>UXA-038</code> exige que o relatório do anunciante preserve <code>frequência média</code> e que repetição excessiva seja controlada por limite de frequência por campanha e superfície. Este master preserva a necessidade analítica, mas <strong>não inventa</strong> população única, fórmula, janela, threshold ou source: esses elementos permanecem gates para definição futura do KPI.</p>
+<p>A densidade candidata citada em <code>GEM-007-A1</code> não é promovida por este master a threshold operacional ou KPI aprovado.</p>
+<hr />
+<h2 id="11-familia-evt-eventos-e-acoes-validas">11. Família EVT — Eventos e ações válidas<a class="headerlink" href="#11-familia-evt-eventos-e-acoes-validas" title="Permanent link">&para;</a></h2>
+<p>Os eventos abaixo preservam a distinção entre exposição, interação, declaração e fluxo posterior.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADS-KPI-EVT-001</td>
+<td>Cliques válidos</td>
+<td>interações não fraudulentas que abrem destino legítimo</td>
+<td>cliques</td>
+<td>proposed</td>
+<td>click validity + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-EVT-002</td>
+<td>Visualizações de detalhe</td>
+<td>aberturas válidas do detalhe do objeto promovido</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>event contract + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-EVT-003</td>
+<td>Salvamentos válidos</td>
+<td>salvamentos por ação afirmativa quando legitimamente instrumentados</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>event semantics + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-EVT-004</td>
+<td>Interesses declarados</td>
+<td>declarações explícitas de interesse no fluxo autorizado</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>declared-event semantics + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-EVT-005</td>
+<td>Inícios de inscrição</td>
+<td>início legítimo de fluxo de inscrição quando instrumentado</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>registration-start contract + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-EVT-006</td>
+<td>Contratações instrumentadas</td>
+<td>eventos de contratação somente quando legitimamente instrumentados e confirmados</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>transaction authority + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-EVT-007</td>
+<td>Distribuição de ações válidas</td>
+<td>composição agregada dos tipos de ação válida permitidos</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>event taxonomy + denominator</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>CLIQUE
+≠ INTENÇÃO
+
+DETALHE VISUALIZADO
+≠ INTERESSE
+
+SALVAMENTO
+≠ INSCRIÇÃO
+
+INTERESSE DECLARADO
+≠ CONTRATAÇÃO
+
+INÍCIO DE INSCRIÇÃO
+≠ PARTICIPAÇÃO
+≠ RESULTADO
+
+EVENTO VÁLIDO
+≠ EVENTO FATURÁVEL SEM CONTRATO
+</code></pre></div>
+<hr />
+<h2 id="12-familia-bst-opportunity-boost">12. Família BST — Opportunity Boost<a class="headerlink" href="#12-familia-bst-opportunity-boost" title="Permanent link">&para;</a></h2>
+<p>Opportunity Boost é mecanismo especializado de Ads e não representa toda a identidade do produto.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADS-KPI-BST-001</td>
+<td>Boosts válidos</td>
+<td>campanhas Opportunity Boost em estados semanticamente válidos</td>
+<td>boosts</td>
+<td>proposed</td>
+<td>GEM-007-A1 lifecycle + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-BST-002</td>
+<td>Boosts ativos</td>
+<td>Boosts em estado ativo válido</td>
+<td>boosts</td>
+<td>proposed</td>
+<td>active-state + eligibility</td>
+</tr>
+<tr>
+<td>ADS-KPI-BST-003</td>
+<td>Boosts pausados/limitados/suspensos</td>
+<td>Boosts interrompidos pelos estados governados correspondentes</td>
+<td>boosts</td>
+<td>proposed</td>
+<td>lifecycle + reason taxonomy</td>
+</tr>
+<tr>
+<td>ADS-KPI-BST-004</td>
+<td>Boosts concluídos e reconciliados</td>
+<td>Boosts que atingiram encerramento e reconciliação legitimamente registrados</td>
+<td>boosts</td>
+<td>proposed</td>
+<td>reconciliation contract</td>
+</tr>
+<tr>
+<td>ADS-KPI-BST-005</td>
+<td>Boosts por motivo de interrupção</td>
+<td>distribuição agregada dos motivos autorizados de pausa/limitação/suspensão</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>reason taxonomy + disclosure</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>BOOST
+≠ ORGÂNICO
+≠ RECOMENDAÇÃO
+≠ GARANTIA DE ALCANCE
+≠ GARANTIA DE INSCRIÇÃO
+≠ GARANTIA DE RESULTADO
+
+ELEGIBILIDADE PARA BOOST
+≠ GARANTIA DE INVENTÁRIO
+≠ AUTORIZAÇÃO AUTOMÁTICA DE COBRANÇA
+</code></pre></div>
+<p>Entitlements de Organização permanecem subordinados à reconciliação específica prevista em <code>GEM-007-A1</code>.</p>
+<hr />
+<h2 id="13-familia-fin-orcamento-e-reconciliacao-economica">13. Família FIN — Orçamento e reconciliação econômica<a class="headerlink" href="#13-familia-fin-orcamento-e-reconciliacao-economica" title="Permanent link">&para;</a></h2>
+<p>Esta família não transforma parâmetros candidatos de <code>GEM-010-A2</code> em tabela pública ou preço vigente.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADS-KPI-FIN-001</td>
+<td>Orçamento autorizado</td>
+<td>valor legitimamente autorizado para a campanha segundo contrato aplicável</td>
+<td>moeda</td>
+<td>proposed</td>
+<td>economic contract + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-FIN-002</td>
+<td>Orçamento consumido reconciliável</td>
+<td>valor associado a entrega/eventos elegíveis antes da reconciliação final, conforme regra aprovada futura</td>
+<td>moeda</td>
+<td>proposed</td>
+<td>billing basis + GEM-009 + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-FIN-003</td>
+<td>Saldo remanescente</td>
+<td>diferença legitimamente calculada entre orçamento autorizado e consumo reconciliável/reconciliado</td>
+<td>moeda</td>
+<td>proposed</td>
+<td>formula + reconciliation source</td>
+</tr>
+<tr>
+<td>ADS-KPI-FIN-004</td>
+<td>Créditos/compensações registrados</td>
+<td>créditos, devoluções ou compensações com fonte e finalidade preservadas</td>
+<td>moeda/eventos</td>
+<td>proposed</td>
+<td>credit/refund taxonomy + accounting</td>
+</tr>
+<tr>
+<td>ADS-KPI-FIN-005</td>
+<td>Campanhas com reconciliação pendente</td>
+<td>campanhas encerradas que ainda não possuem reconciliação econômica concluída</td>
+<td>campanhas</td>
+<td>proposed</td>
+<td>reconciliation lifecycle + source</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>ORÇAMENTO AUTORIZADO
+≠ RECEITA
+
+ORÇAMENTO CONSUMIDO
+≠ RECEITA RECONHECIDA
+
+EVENTO VÁLIDO
+≠ EVENTO FATURÁVEL
+
+EVENTO FATURÁVEL
+≠ RECEITA CONTÁBIL AUTOMÁTICA
+
+CRÉDITO
+≠ PONTOS GUIVOS
+</code></pre></div>
+<p>CPM, CPC, faixas de orçamento, taxa de serviço, tributos e margens permanecem sujeitos às autoridades econômicas e seus gates. Este master não os congela.</p>
+<hr />
+<h2 id="14-familia-out-outcomes-instrumentados-e-resultados-declarados">14. Família OUT — Outcomes instrumentados e resultados declarados<a class="headerlink" href="#14-familia-out-outcomes-instrumentados-e-resultados-declarados" title="Permanent link">&para;</a></h2>
+<p>Esta família preserva outcome observado como objeto distinto de attribution e impacto e mantém <strong>resultado declarado pelo anunciante</strong> como evidência/autorreporte explicitamente separado de evento instrumentado.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADS-KPI-OUT-001</td>
+<td>Outcomes finais instrumentados</td>
+<td>eventos finais legitimamente instrumentados pelo produto responsável</td>
+<td>outcomes</td>
+<td>proposed</td>
+<td>outcome semantics + source authority</td>
+</tr>
+<tr>
+<td>ADS-KPI-OUT-002</td>
+<td>Outcomes por tipo autorizado</td>
+<td>distribuição agregada segundo taxonomia de outcome legitimamente definida</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>outcome taxonomy + disclosure</td>
+</tr>
+<tr>
+<td>ADS-KPI-OUT-003</td>
+<td>Outcomes confirmados</td>
+<td>outcomes cuja confirmação atende ao contrato de evidência aplicável</td>
+<td>outcomes</td>
+<td>proposed</td>
+<td>confirmation + evidence</td>
+</tr>
+<tr>
+<td>ADS-KPI-OUT-004</td>
+<td>Outcomes não resolvidos</td>
+<td>eventos finais cuja relação, confirmação ou responsabilidade permanece não resolvida</td>
+<td>outcomes</td>
+<td>proposed</td>
+<td>unresolved-state contract</td>
+</tr>
+<tr>
+<td>ADS-KPI-OUT-005</td>
+<td>Resultados declarados pelo anunciante</td>
+<td>resultados fornecidos pelo anunciante, preservados como autorrelato com origem explícita e sem reclassificação como evento instrumentado</td>
+<td>declarações</td>
+<td>proposed</td>
+<td>declared-evidence semantics + provenance + review/disclosure</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>OUTCOME OBSERVADO
+≠ OUTCOME ATRIBUÍDO A ADS
+≠ CAUSALIDADE
+≠ IMPACTO
+
+RESULTADO DECLARADO PELO ANUNCIANTE
+≠ OUTCOME INSTRUMENTADO
+≠ RESULTADO CONFIRMADO PELA GUIVOS
+≠ ATTRIBUTION
+≠ CAUSALIDADE
+≠ IMPACTO
+
+CONTRATAÇÃO
+≠ SATISFAÇÃO
+≠ ENTREGA
+≠ IMPACTO
+</code></pre></div>
+<p><code>UXA-038</code> exige que o relatório preserve uma seção de <strong>Resultado declarado</strong>, identificada explicitamente como autorrelato e distinguível de evento instrumentado. O autorrelato pode ser armazenado e exibido quando legitimamente autorizado, mas não ganha, por existir, status de outcome instrumentado, confirmação, attribution ou causalidade.</p>
+<p>Nenhum outcome pode receber crédito causal de Ads sem modelo de attribution futuramente adjudicado.</p>
+<hr />
+<h2 id="15-familia-aud-publico-permitido-segmentacao-e-disclosure">15. Família AUD — Público permitido, segmentação e disclosure<a class="headerlink" href="#15-familia-aud-publico-permitido-segmentacao-e-disclosure" title="Permanent link">&para;</a></h2>
+<p>Esta família serve à auditoria do uso de critérios autorizados e à leitura agregada; não cria listas individuais para anunciantes.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADS-KPI-AUD-001</td>
+<td>Entrega por critério permitido</td>
+<td>distribuição agregada da entrega segundo critérios publicitários autorizados</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>allowed-segmentation taxonomy + privacy</td>
+</tr>
+<tr>
+<td>ADS-KPI-AUD-002</td>
+<td>Entrega geográfica agregada</td>
+<td>distribuição territorial somente no nível permitido e protegido</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>geography + threshold + reidentification controls</td>
+</tr>
+<tr>
+<td>ADS-KPI-AUD-003</td>
+<td>Entrega por idioma/modalidade/categoria</td>
+<td>agregados segundo dimensões objetivas permitidas</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>taxonomy + minimum population</td>
+</tr>
+<tr>
+<td>ADS-KPI-AUD-004</td>
+<td>Segmentos suprimidos por política</td>
+<td>quantidade de recortes não expostos por finalidade, sensibilidade ou threshold</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>disclosure policy + audit source</td>
+</tr>
+</tbody>
+</table>
+<p>São proibidos como matéria-prima publicitária nesta baseline:</p>
+<ul>
+<li>relato pessoal protegido;</li>
+<li>compreensão inicial;</li>
+<li>Momento Atual;</li>
+<li>avanço ou Próximo Passo individual;</li>
+<li>inferências sensíveis ou vulnerabilidade;</li>
+<li>mensagens privadas;</li>
+<li>histórico sensível de localização;</li>
+<li>pontuações opacas;</li>
+<li>listas individuais entregues ao anunciante.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>SEGMENTO PERMITIDO
+≠ PERFIL INDIVIDUAL
+
+AGREGADO
+≠ AUTOMATICAMENTE SEGURO
+
+PROCESSAMENTO PARA ENTREGA
+≠ DISCLOSURE AO ANUNCIANTE
+</code></pre></div>
+<hr />
+<h2 id="16-familia-qf-qualidade-trafego-invalido-e-antifraude">16. Família QF — Qualidade, tráfego inválido e antifraude<a class="headerlink" href="#16-familia-qf-qualidade-trafego-invalido-e-antifraude" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADS-KPI-QF-001</td>
+<td>Eventos invalidados</td>
+<td>eventos removidos por regra legítima de validade/antifraude</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>invalid-event taxonomy + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-QF-002</td>
+<td>Cliques invalidados</td>
+<td>cliques classificados como não válidos segundo contrato futuro</td>
+<td>cliques</td>
+<td>proposed</td>
+<td>fraud/validity rule + auditability</td>
+</tr>
+<tr>
+<td>ADS-KPI-QF-003</td>
+<td>Impressões invalidadas</td>
+<td>impressões que não atendem ao contrato de validade aplicável</td>
+<td>impressões</td>
+<td>proposed</td>
+<td>validity/viewability contract</td>
+</tr>
+<tr>
+<td>ADS-KPI-QF-004</td>
+<td>Casos antifraude em revisão</td>
+<td>casos operacionais abertos sob processo autorizado de investigação</td>
+<td>casos</td>
+<td>proposed</td>
+<td>antifraud lifecycle + access</td>
+</tr>
+<tr>
+<td>ADS-KPI-QF-005</td>
+<td>Campanhas afetadas por qualidade/política</td>
+<td>campanhas pausadas, limitadas ou suspensas por razão governada</td>
+<td>campanhas</td>
+<td>proposed</td>
+<td>reason taxonomy + source</td>
+</tr>
+<tr>
+<td>ADS-KPI-QF-006</td>
+<td>Entrega após condição inválida detectada</td>
+<td>eventos potencialmente ocorridos após encerramento, indisponibilidade ou limite, sujeitos a reconciliação</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>timing + source integrity + reconciliation</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>TRÁFEGO INVÁLIDO
+≠ PARTICIPANTE INVÁLIDO
+
+SINAL DE FRAUDE
+≠ CULPA CONFIRMADA
+
+CASO EM REVISÃO
+≠ CONCLUSÃO
+</code></pre></div>
+<p>Antifraude pode usar inteligência operacional autorizada, mas não cria autorização para explorar contexto pessoal protegido.</p>
+<hr />
+<h2 id="17-familia-dq-qualidade-do-dado-freshness-proveniencia-e-governanca">17. Família DQ — Qualidade do dado, freshness, proveniência e governança<a class="headerlink" href="#17-familia-dq-qualidade-do-dado-freshness-proveniencia-e-governanca" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador candidato</th>
+<th>Definição candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADS-KPI-DQ-001</td>
+<td>Freshness compliance</td>
+<td>contratos/datasets dentro da freshness governada / monitorados</td>
+<td>%</td>
+<td>proposed</td>
+<td>freshness contract</td>
+</tr>
+<tr>
+<td>ADS-KPI-DQ-002</td>
+<td>Indicadores indisponíveis</td>
+<td>KPIs esperados sem dado utilizável</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>registry + availability rules</td>
+</tr>
+<tr>
+<td>ADS-KPI-DQ-003</td>
+<td>Completude de proveniência</td>
+<td>leituras com proveniência suficiente / leituras avaliadas</td>
+<td>%</td>
+<td>proposed</td>
+<td>provenance contract</td>
+</tr>
+<tr>
+<td>ADS-KPI-DQ-004</td>
+<td>Conflitos de fonte não resolvidos</td>
+<td>leituras com divergência material de origem/transformação</td>
+<td>leituras</td>
+<td>proposed</td>
+<td>source conflict + authority</td>
+</tr>
+<tr>
+<td>ADS-KPI-DQ-005</td>
+<td>Supressões de disclosure</td>
+<td>leituras protegidas ou indisponíveis por política/finalidade</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>disclosure policy</td>
+</tr>
+<tr>
+<td>ADS-KPI-DQ-006</td>
+<td>Reconciliações de dado pendentes</td>
+<td>campanhas/eventos cuja consistência ainda exige reconciliação</td>
+<td>itens</td>
+<td>proposed</td>
+<td>reconciliation lifecycle</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>0
+≠ NO_DATA
+
+DADO MAIS RECENTE
+≠ DADO AUTOMATICAMENTE MAIS VERDADEIRO
+
+AUSÊNCIA DE EVIDÊNCIA
+≠ RESULTADO NEGATIVO
+</code></pre></div>
+<hr />
+<h2 id="18-eventos-conversao-e-faturabilidade">18. Eventos, conversão e faturabilidade<a class="headerlink" href="#18-eventos-conversao-e-faturabilidade" title="Permanent link">&para;</a></h2>
+<p>A arquitetura deve preservar quatro conceitos separados:</p>
+<div class="highlight"><pre><span></span><code>EVENTO BRUTO
+→ registro técnico ainda não qualificado
+
+EVENTO VÁLIDO
+→ atende ao contrato de validade aplicável
+
+EVENTO FATURÁVEL
+→ atende adicionalmente à base econômica aprovada
+
+OUTCOME
+→ evento/estado final definido pelo produto responsável
+</code></pre></div>
+<p>Nenhuma equivalência é automática.</p>
+<div class="highlight"><pre><span></span><code>EVENTO BRUTO
+≠ EVENTO VÁLIDO
+
+EVENTO VÁLIDO
+≠ EVENTO FATURÁVEL
+
+EVENTO FATURÁVEL
+≠ OUTCOME
+
+OUTCOME
+≠ IMPACTO
+</code></pre></div>
+<p>O termo <code>conversão</code> somente poderá ser usado quando o evento final, a instrumentação, a janela aplicável e os claims permitidos estiverem explicitamente definidos. Enquanto attribution continuar bloqueada, <code>conversão atribuível</code> não pode ser promovida por conveniência a KPI canônico deste master.</p>
+<hr />
+<h2 id="19-pricing-budget-e-billing-limites">19. Pricing, budget e billing — limites<a class="headerlink" href="#19-pricing-budget-e-billing-limites" title="Permanent link">&para;</a></h2>
+<p><code>GEM-010-A2</code> contém faixas e bases <strong>candidatas</strong> de validação.</p>
+<p>Este master preserva, mas não operacionaliza:</p>
+<ul>
+<li>orçamento mínimo candidato;</li>
+<li>duração candidata;</li>
+<li>CPM candidato;</li>
+<li>CPC candidato;</li>
+<li>serviço gerenciado com taxa <code>TBD</code>;</li>
+<li>limites/avisos candidatos;</li>
+<li>créditos futuros;</li>
+<li>regras futuras de devolução/compensação.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>CANDIDATE CPM / CPC
+≠ APPROVED PRICE
+
+CANDIDATE BUDGET RANGE
+≠ PRODUCT OFFER
+
+BUDGET ANALYTICS
+≠ BILLING LEDGER
+
+DASHBOARD
+≠ ACCOUNTING AUTHORITY
+</code></pre></div>
+<p>Métricas econômicas futuras deverão compor com <code>GEM-009-MEASUREMENT-CONTRACT-001</code> na versão e no status aplicáveis, além das validações jurídica, fiscal, contábil, financeira, privacidade e segurança pertinentes.</p>
+<hr />
+<h2 id="20-filtros-candidatos">20. Filtros candidatos<a class="headerlink" href="#20-filtros-candidatos" title="Permanent link">&para;</a></h2>
+<p>Filtros somente restringem o recorte já autorizado:</p>
+<ul>
+<li>período e comparação de período;</li>
+<li>campanha;</li>
+<li>objeto patrocinado;</li>
+<li>estado de campanha;</li>
+<li>Opportunity Boost;</li>
+<li>estado de Boost;</li>
+<li>superfície anfitriã;</li>
+<li>tipo de inventário patrocinado;</li>
+<li>tipo de evento válido;</li>
+<li>região/idioma/modalidade/categoria quando permitidos;</li>
+<li>estado de reconciliação;</li>
+<li>status de validade/qualidade;</li>
+<li>source/freshness;</li>
+<li>outcome autorizado;</li>
+<li>natureza de evidência (<code>instrumentado</code> / <code>declarado</code>) quando aplicável.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>FILTRO
+→ SUBCONJUNTO DO ACCESS SCOPE
+→ NUNCA AMPLIA DISCLOSURE
+→ NUNCA CONVERTE SEGMENTAÇÃO EM PERFIL INDIVIDUAL
+</code></pre></div>
+<p>Não haverá filtro por contexto pessoal protegido, vulnerabilidade, Momento Atual, Próximo Passo individual ou inferência sensível.</p>
+<hr />
+<h2 id="21-drill-down">21. Drill-down<a class="headerlink" href="#21-drill-down" title="Permanent link">&para;</a></h2>
+<p>Estrutura candidata:</p>
+<div class="highlight"><pre><span></span><code>N0 — ANUNCIANTE / ESCOPO ADS AUTORIZADO
+→ N1 — FAMÍLIA ANALÍTICA
+→ N2 — CAMPANHA / BOOST / OBJETO / PERÍODO / SUPERFÍCIE / SEGMENTO AUTORIZADO
+→ N3 — EVENTO AGREGADO / ESTADO / EVIDÊNCIA / RECONCILIAÇÃO AUTORIZADA
+</code></pre></div>
+<p>O drill-down não cria direito de abrir Pessoa individual.</p>
+<div class="highlight"><pre><span></span><code>AGREGADO DE CAMPANHA
+≠ LISTA DE PESSOAS
+
+CLIQUE / INTERESSE / INSCRIÇÃO AGREGADA
+≠ LEAD INDIVIDUAL VENDÁVEL
+
+RELAÇÃO PUBLICITÁRIA
+≠ ACESSO À JOURNEY PRIVADA
+</code></pre></div>
+<p>Exceções de identificação necessárias a transações ou fluxos legítimos pertencem ao contrato do produto responsável e não são concedidas por este dashboard.</p>
+<hr />
+<h2 id="22-estados-obrigatorios-de-visualizacao">22. Estados obrigatórios de visualização<a class="headerlink" href="#22-estados-obrigatorios-de-visualizacao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>LOADING
+NO_DATA
+INSUFFICIENT_DATA
+INSUFFICIENT_EVIDENCE
+SUPPRESSED_BY_POLICY
+SOURCE_DELAYED
+UNDER_REVIEW
+RECONCILIATION_PENDING
+NOT_ENTITLED
+ERROR
+AVAILABLE
+</code></pre></div>
+<p><code>0</code> não substitui <code>NO_DATA</code>.</p>
+<p><code>INSUFFICIENT_EVIDENCE</code> não deve ser renderizado como baixa performance confirmada.</p>
+<p><code>UNDER_REVIEW</code> não deve aparecer como fraude confirmada.</p>
+<p><code>RECONCILIATION_PENDING</code> não deve aparecer como receita final ou saldo definitivamente devido.</p>
+<p><code>NOT_ENTITLED</code> descreve capacidade comercial quando aplicável e não cria autorização de cobrança nem retira direitos superiores de privacidade, contestação ou correção.</p>
+<hr />
+<h2 id="23-contratos-logicos-esperados">23. Contratos lógicos esperados<a class="headerlink" href="#23-contratos-logicos-esperados" title="Permanent link">&para;</a></h2>
+<p>Sem definir schema físico, a superfície poderá futuramente consumir contratos equivalentes a:</p>
+<ul>
+<li>Advertiser Scope Projection;</li>
+<li>Campaign / Sponsored Object Projection;</li>
+<li>Sponsored Delivery Aggregate;</li>
+<li>Valid Event Aggregate;</li>
+<li>Opportunity Boost Projection;</li>
+<li>Budget / Reconciliation Projection;</li>
+<li>Authorized Outcome Projection;</li>
+<li>Advertiser Declared Result Projection;</li>
+<li>Allowed Audience Aggregate;</li>
+<li>Invalid Traffic / Antifraud Status;</li>
+<li>Data Quality / Freshness / Provenance Status.</li>
+</ul>
+<p>Não existe <code>Person Advertising Profile</code> universal autorizado por este master.</p>
+<p>Cada payload deverá carregar, quando aplicável:</p>
+<ul>
+<li>identificador do KPI/output;</li>
+<li>período e temporalidade;</li>
+<li>advertiser/campaign/object scope;</li>
+<li>valor/unidade quando existir;</li>
+<li>source/version;</li>
+<li>natureza do evento ou evidência;</li>
+<li>estado de validade;</li>
+<li>estado econômico/reconciliação quando aplicável;</li>
+<li>proveniência;</li>
+<li>freshness;</li>
+<li>sensibilidade/access class;</li>
+<li>aggregation/disclosure state;</li>
+<li>confidence/uncertainty quando material;</li>
+<li>claims permitidos e limitações;</li>
+<li>status de attribution quando aplicável, preservando <code>unresolved</code>/<code>not_attributable</code> sem inventar modelo.</li>
+</ul>
+<p>Para resultado declarado pelo anunciante, o payload deverá preservar explicitamente a origem <code>advertiser_declared</code> ou equivalente governado, sem convertê-la em instrumentação da Guivos, confirmação independente ou attribution.</p>
+<hr />
+<h2 id="24-privacidade-segmentacao-e-disclosure">24. Privacidade, segmentação e disclosure<a class="headerlink" href="#24-privacidade-segmentacao-e-disclosure" title="Permanent link">&para;</a></h2>
+<p>O dashboard opera sob finalidade, minimização, necessidade e proteção contra reidentificação.</p>
+<div class="highlight"><pre><span></span><code>AUTORIDADE PARA ENTREGAR ANÚNCIO
+≠ AUTORIDADE PARA REVELAR IDENTIDADE
+
+AUTORIDADE PARA MEDIR AGREGADO
+≠ AUTORIDADE PARA ENTREGAR LISTA INDIVIDUAL
+
+AUTORIDADE PARA PROCESSAR ANTIFRAUDE
+≠ AUTORIDADE PARA EXPLORAR CONTEXTO PESSOAL
+
+SEGMENTAÇÃO PERMITIDA
+≠ VIGILÂNCIA
+</code></pre></div>
+<p>A Pessoa não será reduzida a conversão, lead, score de propensão ou vulnerabilidade por conveniência analítica.</p>
+<p>Qualquer futura personalização publicitária deverá possuir autoridade própria, finalidade legítima, categorias permitidas, categorias proibidas, explicabilidade proporcional, minimização, controles e consentimentos/base legal quando aplicáveis.</p>
+<hr />
+<h2 id="25-relacao-com-guivos-intelligence">25. Relação com Guivos Intelligence<a class="headerlink" href="#25-relacao-com-guivos-intelligence" title="Permanent link">&para;</a></h2>
+<p>Guivos Intelligence poderá apoiar, quando legitimamente autorizado:</p>
+<ul>
+<li>interpretação de intenção comercial declarada;</li>
+<li>classificação/roteamento de leads comerciais do próprio anunciante;</li>
+<li>identificação de contexto comercial potencial;</li>
+<li>mensuração agregada;</li>
+<li>antifraude;</li>
+<li>enriquecimento operacional autorizado;</li>
+<li>análise de demanda;</li>
+<li>identificação de oportunidades futuras de produto Ads.</li>
+</ul>
+<p>Mas:</p>
+<div class="highlight"><pre><span></span><code>INTELLIGENCE PARA ADS
+≠ PERSON INTELLIGENCE PARA O ANUNCIANTE
+
+INFERÊNCIA COMERCIAL
+≠ FATO
+
+SINAL ANTIFRAUDE
+≠ CULPA
+
+RECOMENDAÇÃO DE OPERAÇÃO ADS
+≠ RECOMENDAÇÃO PESSOAL AO PARTICIPANTE
+</code></pre></div>
+<p>Outputs de Intelligence usados em análise devem preservar natureza, estado epistemológico/derivacional, confiança, incerteza, proveniência e limitações quando materiais.</p>
+<hr />
+<h2 id="26-orientacao-futura-para-replit">26. Orientação futura para Replit<a class="headerlink" href="#26-orientacao-futura-para-replit" title="Permanent link">&para;</a></h2>
+<p>Quando houver autorização formal de build, a ferramenta deverá:</p>
+<ol>
+<li>não inventar KPI, fórmula, preço, CPM, CPC, budget threshold, entitlement, source, schema ou permissão;</li>
+<li>usar <code>ADS-KPI-*</code> como IDs estáveis e não como labels visuais;</li>
+<li>bloquear KPIs <code>proposed</code> e <code>source_pending</code> para consumo canônico com dado real;</li>
+<li>preservar Ads Analytics ≠ Ads Home ≠ campaign manager ≠ checkout ≠ billing ledger;</li>
+<li>separar orgânico de patrocinado em todos os contratos e visualizações;</li>
+<li>não transformar pagamento em relevância, recomendação, confiança ou impacto;</li>
+<li>distinguir impressão servida, válida e visível;</li>
+<li>preservar frequência média como leitura candidata sem inventar fórmula, unidade única, janela ou limite de frequência;</li>
+<li>distinguir clique, interesse, inscrição, contratação, outcome e impacto;</li>
+<li>distinguir resultado declarado/autorreporte de outcome instrumentado, confirmação, attribution, causalidade e impacto;</li>
+<li>distinguir evento bruto, válido, faturável e outcome;</li>
+<li>não criar modelo de attribution, janela, first-touch, last-touch, multi-touch, pesos, percentual ou algoritmo;</li>
+<li>preservar <code>ATTRIBUTION = BLOCKED</code> enquanto a autoridade não for adjudicada;</li>
+<li>não congelar os valores candidatos de <code>GEM-010-A2</code> como tabela de preço vigente;</li>
+<li>preservar orçamento ≠ receita e evento faturável ≠ receita contábil automática;</li>
+<li>não expor listas individuais de visualizadores, clickers ou participantes ao anunciante por conveniência;</li>
+<li>não usar contexto pessoal protegido ou inferência sensível para segmentação;</li>
+<li>aplicar thresholds/supressões quando definidos pela política futura;</li>
+<li>validar scope e disclosure no serving/backend, não apenas no cliente;</li>
+<li>separar mock adapters de real adapters;</li>
+<li>preservar estados <code>NO_DATA</code>, <code>INSUFFICIENT_DATA</code>, <code>INSUFFICIENT_EVIDENCE</code>, <code>SUPPRESSED_BY_POLICY</code>, <code>UNDER_REVIEW</code>, <code>RECONCILIATION_PENDING</code>, <code>NOT_ENTITLED</code> e <code>SOURCE_DELAYED</code>;</li>
+<li>preservar versão, temporalidade, freshness, proveniência e validade;</li>
+<li>não transformar sinal antifraude em conclusão de culpa;</li>
+<li>manter superfície anfitriã como autoridade de contexto, segurança, acessibilidade e densidade;</li>
+<li>não implementar campaign creation, media buying ou checkout a partir deste master;</li>
+<li>não usar este master para redefinir ou materializar a Home Pública Ads;</li>
+<li>registrar a versão deste master usada na build.</li>
+</ol>
+<hr />
+<h2 id="27-criterios-de-aceite-para-futuro-handoff">27. Critérios de aceite para futuro handoff<a class="headerlink" href="#27-criterios-de-aceite-para-futuro-handoff" title="Permanent link">&para;</a></h2>
+<p>Antes de qualquer release <code>READY FOR BUILD</code>:</p>
+<div class="highlight"><pre><span></span><code>[ ] KPI selecionado = defined OU approved-equivalent
+[ ] pergunta/finalidade fechadas
+[ ] população/objeto definidos
+[ ] fórmula e componentes definidos
+[ ] janela temporal/granularidade definidas
+[ ] source/data contract definido
+[ ] natureza de evento/evidência definida
+[ ] validade/faturabilidade separadas quando aplicáveis
+[ ] resultado declarado distinguido de evento instrumentado quando aplicável
+[ ] access/disclosure definido
+[ ] agregação/supressão definidas
+[ ] filtros/drill-down definidos
+[ ] null/zero/no-data definidos
+[ ] freshness/quality checks definidos
+[ ] proveniência definida
+[ ] reconciliation semantics definidas quando aplicáveis
+[ ] claims suportados/proibidos definidos
+[ ] atribuição permanece bloqueada OU possui ato próprio posterior válido
+[ ] pricing/billing possui autoridade própria vigente quando aplicável
+[ ] contratos de domínio aplicáveis satisfeitos
+[ ] validações econômica/financeira/contábil/jurídica/privacidade/segurança satisfeitas quando aplicáveis
+[ ] Design/build authorization foi emitida
+</code></pre></div>
+<hr />
+<h2 id="28-itens-explicitamente-bloqueados-nesta-versao">28. Itens explicitamente bloqueados nesta versão<a class="headerlink" href="#28-itens-explicitamente-bloqueados-nesta-versao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>REAL DATA
+→ NOT AUTHORIZED
+
+BACKEND / API FÍSICA
+→ NOT DEFINED HERE
+
+TECHNICAL RBAC
+→ NOT IMPLEMENTED
+
+ADS HOME / CAMPAIGN MANAGER / BUYING CONSOLE
+→ NOT DEFINED BY THIS DOCUMENT
+
+CHECKOUT / BILLING / ACCOUNTING LEDGER
+→ NOT AUTHORIZED
+
+FINAL VISUAL DESIGN
+→ NOT AUTHORIZED
+
+REPLIT BUILD
+→ NOT AUTHORIZED
+
+FINAL PRICING / CPM / CPC / SERVICE FEE
+→ NOT APPROVED BY THIS MASTER
+
+LIVE INVENTORY / BIDDING / AUCTION
+→ NOT DEFINED
+
+ATTRIBUTION MODEL
+→ BLOCKED / NOT DEFINED
+
+ADS-KPI-ATT-*
+→ NOT CREATED
+
+CAUSAL IMPACT CLAIMS
+→ NOT AUTHORIZED
+
+ORGANIC RANKING INFLUENCE BY PAYMENT
+→ PROHIBITED
+
+PERSON NEXT STEP / PERSONAL RECOMMENDATION INFLUENCE BY PAYMENT
+→ PROHIBITED
+
+SENSITIVE TARGETING / VULNERABILITY EXPLOITATION
+→ PROHIBITED
+
+ADVERTISER ACCESS TO PRIVATE PERSON JOURNEY
+→ NOT AUTHORIZED
+
+INDIVIDUAL VIEWER / CLICKER LIST BY CONVENIENCE
+→ NOT AUTHORIZED
+</code></pre></div>
+<hr />
+<h2 id="29-estado-final-desta-versao">29. Estado final desta versão<a class="headerlink" href="#29-estado-final-desta-versao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-ADS-001
+→ ACTIVE v0.1.1
+→ ANNEX F MATERIALIZED MASTER
+→ PRE-IMPLEMENTATION
+
+ANALYTICAL AREAS
+→ 10
+
+KPI FAMILIES
+→ CAM / DEL / EVT / BST / FIN / OUT / AUD / QF / DQ
+
+CURRENT KPI CANDIDATES
+→ 50
+→ ALL proposed / NOT_READY
+
+ATTRIBUTION
+→ BLOCKED / MODEL NOT DEFINED
+→ NO KPI FAMILY MATERIALIZED
+
+PRICING / BILLING PARAMETERS
+→ CANDIDATE AUTHORITY PRESERVED
+→ NOT PROMOTED TO OPERATIONAL TRUTH
+
+KPI IMPLEMENTATION READINESS
+→ NONE CLAIMED BY INFERENCE
+→ ALL CURRENT KPIs = proposed
+→ ALL = NOT_READY
+
+ADVERTISER AUTHORITY
+→ OWN CAMPAIGNS / BOOSTS / BUDGET / AUTHORIZED AGGREGATES
+→ NO DEFAULT ACCESS TO PRIVATE PERSON DATA
+
+HOME ADS AUTHORITY
+→ GKR-UX-HOME-ADS-MASTER-001 PRESERVED
+→ HOME ADS ≠ ADS ANALYTICS
+
+ORGANIC RELEVANCE
+→ PRESERVED OUTSIDE PAYMENT
+
+REAL DATA / BACKEND / API / TECHNICAL RBAC / PRODUCTION
+→ NOT AUTHORIZED
+
+REPLIT BUILD
+→ NOT AUTHORIZED
+</code></pre></div>
+<p>A materialização documental deste master não autoriza implementação, dados reais, pricing operacional, attribution, Design/UI, backend/API, RBAC técnico, produção ou Replit build; qualquer avanço permanece sujeito aos gates próprios.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
