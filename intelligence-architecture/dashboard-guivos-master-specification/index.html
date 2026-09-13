@@ -1936,6 +1936,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#52-absorcao-da-reconciliacao-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Absorção da reconciliação de status
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3039,6 +3050,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#52-absorcao-da-reconciliacao-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Absorção da reconciliação de status
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3512,7 +3534,21 @@ SOURCE_PENDING
 DEFINED
 → AINDA REQUER CONTRATOS DE DOMÍNIO + BUILD AUTHORIZATION
 </code></pre></div>
-<p>Na versão <code>v0.1.3</code>, <strong>nenhum KPI deste catálogo é declarado <code>defined</code> ou <code>approved-equivalent</code> por inferência</strong>.</p>
+<p>Na versão <code>v0.1.4</code>, <strong>nenhum KPI deste catálogo é declarado <code>defined</code> ou <code>approved-equivalent</code> por inferência</strong>.</p>
+<h3 id="52-absorcao-da-reconciliacao-de-status">5.2 Absorção da reconciliação de status<a class="headerlink" href="#52-absorcao-da-reconciliacao-de-status" title="Permanent link">&para;</a></h3>
+<p>A adjudicação registrada em <code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001</code> foi formalmente absorvida por esta versão do Documento Mestre.</p>
+<div class="highlight"><pre><span></span><code>SEMANTICS INCOMPLETE
+→ proposed
+
+SEMANTICS CLOSED + SOURCE BLOCKED
+→ source_pending
+
+STATUS RECONCILIATION
+→ ABSORBED INTO THIS MASTER
+→ 6 KPI IDS = proposed / NOT_READY
+</code></pre></div>
+<p>Para <code>GUV-KPI-POP-001</code>, <code>GUV-KPI-POP-002</code>, <code>GUV-KPI-POP-007</code>, <code>GUV-KPI-POP-009</code>, <code>GUV-KPI-POP-011</code> e <code>GUV-KPI-OPP-001</code>, permanecem blockers semânticos anteriores à simples resolução de source/data contract; portanto, o status governado é <code>proposed</code> e a readiness permanece <code>NOT_READY</code>.</p>
+<p>Esta absorção altera apenas o campo <code>status</code> desses seis IDs. Ela <strong>não</strong> adjudica fórmula, source, população, regras temporais, elegibilidade/validade, denominador, disclosure, serving, real data ou autorização de build.</p>
 <hr />
 <h2 id="6-familia-pop-populacao-e-participantes">6. Família POP — População e participantes<a class="headerlink" href="#6-familia-pop-populacao-e-participantes" title="Permanent link">&para;</a></h2>
 <table>
@@ -3532,7 +3568,7 @@ DEFINED
 <td>Pessoas cadastradas</td>
 <td>contagem distinta da entidade Pessoa no universo válido corrente</td>
 <td>pessoas</td>
-<td>source_pending</td>
+<td>proposed</td>
 <td>participant source + validade/exclusões</td>
 </tr>
 <tr>
@@ -3540,7 +3576,7 @@ DEFINED
 <td>Novas Pessoas</td>
 <td>Pessoas cuja criação válida ocorreu no período</td>
 <td>pessoas/período</td>
-<td>source_pending</td>
+<td>proposed</td>
 <td>participant source + temporal contract</td>
 </tr>
 <tr>
@@ -3580,7 +3616,7 @@ DEFINED
 <td>Organizações cadastradas</td>
 <td>contagem distinta de Organizações válidas</td>
 <td>organizações</td>
-<td>source_pending</td>
+<td>proposed</td>
 <td>organization source + validade</td>
 </tr>
 <tr>
@@ -3596,7 +3632,7 @@ DEFINED
 <td>Coletivos cadastrados</td>
 <td>contagem distinta de Coletivos válidos</td>
 <td>coletivos</td>
-<td>source_pending</td>
+<td>proposed</td>
 <td>collective source + validade</td>
 </tr>
 <tr>
@@ -3612,7 +3648,7 @@ DEFINED
 <td>Mix de participantes</td>
 <td>distribuição Pessoa / Organização / Coletivo no universo aplicável</td>
 <td>%</td>
-<td>source_pending</td>
+<td>proposed</td>
 <td>sources + denominator + scope</td>
 </tr>
 <tr>
@@ -3877,7 +3913,7 @@ EXPERIÊNCIA CONCLUÍDA
 <td>Oportunidades criadas</td>
 <td>oportunidades válidas criadas no período</td>
 <td>oportunidades</td>
-<td>source_pending</td>
+<td>proposed</td>
 <td>opportunity source + validity</td>
 </tr>
 <tr>
@@ -4758,7 +4794,7 @@ REPLIT IMPLEMENTATION
 <hr />
 <h2 id="27-estado-final">27. Estado final<a class="headerlink" href="#27-estado-final" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
-→ v0.1.3
+→ v0.1.4
 → ACTIVE
 → ANNEX A OF GKR-INTELLIGENCE-DASHBOARD-KPI-001
 → GOVERNED PRE-IMPLEMENTATION DASHBOARD MASTER
@@ -4771,6 +4807,10 @@ ANALYTICAL AREAS
 
 KPI STATUS VOCABULARY
 → ALIGNED WITH GLOBAL MASTER
+
+STATUS RECONCILIATION
+→ GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001 ABSORBED
+→ POP-001 / POP-002 / POP-007 / POP-009 / POP-011 / OPP-001 = proposed / NOT_READY
 
 CHOICES / DECLARATIONS OF PERSONS
 → CANDIDATE NEED PRESERVED

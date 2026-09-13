@@ -1905,10 +1905,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#status-reconciliation" class="md-nav__link">
+  <a href="#status-canonico-apos-absorcao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Status reconciliation
+        Status canônico após absorção
       
     </span>
   </a>
@@ -2653,10 +2653,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#status-reconciliation" class="md-nav__link">
+  <a href="#status-canonico-apos-absorcao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Status reconciliation
+        Status canônico após absorção
       
     </span>
   </a>
@@ -2729,13 +2729,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="status-reconciliation">Status reconciliation<a class="headerlink" href="#status-reconciliation" title="Permanent link">&para;</a></h2>
-<p><a href="../dashboard-guivos-kpi-status-reconciliation/"><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001</code></a> adjudica o campo <code>status</code> dos seis IDs abaixo:</p>
+<h2 id="status-canonico-apos-absorcao">Status canônico após absorção<a class="headerlink" href="#status-canonico-apos-absorcao" title="Permanent link">&para;</a></h2>
+<p><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001 v0.1.4</code> absorve a adjudicação anteriormente registrada em <a href="../dashboard-guivos-kpi-status-reconciliation/"><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001</code></a>. O Documento Mestre volta a ser a autoridade direta para o campo <code>status</code> dos seis IDs abaixo.</p>
 <table>
 <thead>
 <tr>
 <th>KPI</th>
 <th>Status</th>
+<th>Readiness</th>
 <th>Record</th>
 </tr>
 </thead>
@@ -2743,40 +2744,52 @@
 <tr>
 <td><code>GUV-KPI-POP-001</code></td>
 <td><code>proposed</code></td>
+<td><code>NOT_READY</code></td>
 <td>materialized</td>
 </tr>
 <tr>
 <td><code>GUV-KPI-POP-002</code></td>
 <td><code>proposed</code></td>
+<td><code>NOT_READY</code></td>
 <td>materialized</td>
 </tr>
 <tr>
 <td><code>GUV-KPI-POP-007</code></td>
 <td><code>proposed</code></td>
+<td><code>NOT_READY</code></td>
 <td>not materialized</td>
 </tr>
 <tr>
 <td><code>GUV-KPI-POP-009</code></td>
 <td><code>proposed</code></td>
+<td><code>NOT_READY</code></td>
 <td>not materialized</td>
 </tr>
 <tr>
 <td><code>GUV-KPI-POP-011</code></td>
 <td><code>proposed</code></td>
+<td><code>NOT_READY</code></td>
 <td>not materialized</td>
 </tr>
 <tr>
 <td><code>GUV-KPI-OPP-001</code></td>
 <td><code>proposed</code></td>
+<td><code>NOT_READY</code></td>
 <td>not materialized</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre><span></span><code>STATUS RECONCILIATION → ADJUDICATED
-ALL 6 → proposed / NOT_READY
-REAL DATA / SERVING / API / REPLIT BUILD → NOT AUTHORIZED
+<div class="highlight"><pre><span></span><code>STATUS RECONCILIATION
+→ ABSORBED INTO SPECIALIZED MASTER
+
+REGISTRY
+→ INDEX / TRACEABILITY
+→ NOT SOURCE OF TRUTH
+
+REAL DATA / SERVING / API / REPLIT BUILD
+→ NOT AUTHORIZED
 </code></pre></div>
-<p>Até absorção formal por versão posterior do master, a reconciliação prevalece somente sobre o campo <code>status</code> desses seis IDs.</p>
+<p>O documento de reconciliação permanece apenas como proveniência histórica da adjudicação. <code>POP-007</code>, <code>POP-009</code>, <code>POP-011</code> e <code>OPP-001</code> ainda exigem materialização individual futura.</p>
 
 
 

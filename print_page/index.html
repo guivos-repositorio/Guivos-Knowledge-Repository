@@ -19867,7 +19867,21 @@ SOURCE_PENDING
 DEFINED
 → AINDA REQUER CONTRATOS DE DOMÍNIO + BUILD AUTHORIZATION
 </code></pre></div>
-<p>Na versão <code>v0.1.3</code>, <strong>nenhum KPI deste catálogo é declarado <code>defined</code> ou <code>approved-equivalent</code> por inferência</strong>.</p>
+<p>Na versão <code>v0.1.4</code>, <strong>nenhum KPI deste catálogo é declarado <code>defined</code> ou <code>approved-equivalent</code> por inferência</strong>.</p>
+<h3 id="intelligence-architecture-dashboard-guivos-master-specification-52-absorcao-da-reconciliacao-de-status">5.2 Absorção da reconciliação de status<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-52-absorcao-da-reconciliacao-de-status" title="Permanent link">&para;</a></h3>
+<p>A adjudicação registrada em <code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001</code> foi formalmente absorvida por esta versão do Documento Mestre.</p>
+<div class="highlight"><pre><span></span><code>SEMANTICS INCOMPLETE
+→ proposed
+
+SEMANTICS CLOSED + SOURCE BLOCKED
+→ source_pending
+
+STATUS RECONCILIATION
+→ ABSORBED INTO THIS MASTER
+→ 6 KPI IDS = proposed / NOT_READY
+</code></pre></div>
+<p>Para <code>GUV-KPI-POP-001</code>, <code>GUV-KPI-POP-002</code>, <code>GUV-KPI-POP-007</code>, <code>GUV-KPI-POP-009</code>, <code>GUV-KPI-POP-011</code> e <code>GUV-KPI-OPP-001</code>, permanecem blockers semânticos anteriores à simples resolução de source/data contract; portanto, o status governado é <code>proposed</code> e a readiness permanece <code>NOT_READY</code>.</p>
+<p>Esta absorção altera apenas o campo <code>status</code> desses seis IDs. Ela <strong>não</strong> adjudica fórmula, source, população, regras temporais, elegibilidade/validade, denominador, disclosure, serving, real data ou autorização de build.</p>
 <hr />
 <h2 id="intelligence-architecture-dashboard-guivos-master-specification-6-familia-pop-populacao-e-participantes">6. Família POP — População e participantes<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-6-familia-pop-populacao-e-participantes" title="Permanent link">&para;</a></h2>
 <table>
@@ -19887,7 +19901,7 @@ DEFINED
 <td>Pessoas cadastradas</td>
 <td>contagem distinta da entidade Pessoa no universo válido corrente</td>
 <td>pessoas</td>
-<td>source_pending</td>
+<td>proposed</td>
 <td>participant source + validade/exclusões</td>
 </tr>
 <tr>
@@ -19895,7 +19909,7 @@ DEFINED
 <td>Novas Pessoas</td>
 <td>Pessoas cuja criação válida ocorreu no período</td>
 <td>pessoas/período</td>
-<td>source_pending</td>
+<td>proposed</td>
 <td>participant source + temporal contract</td>
 </tr>
 <tr>
@@ -19935,7 +19949,7 @@ DEFINED
 <td>Organizações cadastradas</td>
 <td>contagem distinta de Organizações válidas</td>
 <td>organizações</td>
-<td>source_pending</td>
+<td>proposed</td>
 <td>organization source + validade</td>
 </tr>
 <tr>
@@ -19951,7 +19965,7 @@ DEFINED
 <td>Coletivos cadastrados</td>
 <td>contagem distinta de Coletivos válidos</td>
 <td>coletivos</td>
-<td>source_pending</td>
+<td>proposed</td>
 <td>collective source + validade</td>
 </tr>
 <tr>
@@ -19967,7 +19981,7 @@ DEFINED
 <td>Mix de participantes</td>
 <td>distribuição Pessoa / Organização / Coletivo no universo aplicável</td>
 <td>%</td>
-<td>source_pending</td>
+<td>proposed</td>
 <td>sources + denominator + scope</td>
 </tr>
 <tr>
@@ -20232,7 +20246,7 @@ EXPERIÊNCIA CONCLUÍDA
 <td>Oportunidades criadas</td>
 <td>oportunidades válidas criadas no período</td>
 <td>oportunidades</td>
-<td>source_pending</td>
+<td>proposed</td>
 <td>opportunity source + validity</td>
 </tr>
 <tr>
@@ -21113,7 +21127,7 @@ REPLIT IMPLEMENTATION
 <hr />
 <h2 id="intelligence-architecture-dashboard-guivos-master-specification-27-estado-final">27. Estado final<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-27-estado-final" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
-→ v0.1.3
+→ v0.1.4
 → ACTIVE
 → ANNEX A OF GKR-INTELLIGENCE-DASHBOARD-KPI-001
 → GOVERNED PRE-IMPLEMENTATION DASHBOARD MASTER
@@ -21126,6 +21140,10 @@ ANALYTICAL AREAS
 
 KPI STATUS VOCABULARY
 → ALIGNED WITH GLOBAL MASTER
+
+STATUS RECONCILIATION
+→ GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001 ABSORBED
+→ POP-001 / POP-002 / POP-007 / POP-009 / POP-011 / OPP-001 = proposed / NOT_READY
 
 CHOICES / DECLARATIONS OF PERSONS
 → CANDIDATE NEED PRESERVED
@@ -21178,13 +21196,14 @@ NEXT SPECIALIZED MASTER
 </tr>
 </tbody>
 </table>
-<h2 id="intelligence-architecture-dashboard-guivos-kpi-registry-status-reconciliation">Status reconciliation<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-kpi-registry-status-reconciliation" title="Permanent link">&para;</a></h2>
-<p><a href="#intelligence-architecture-dashboard-guivos-kpi-status-reconciliation"><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001</code></a> adjudica o campo <code>status</code> dos seis IDs abaixo:</p>
+<h2 id="intelligence-architecture-dashboard-guivos-kpi-registry-status-canonico-apos-absorcao">Status canônico após absorção<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-kpi-registry-status-canonico-apos-absorcao" title="Permanent link">&para;</a></h2>
+<p><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001 v0.1.4</code> absorve a adjudicação anteriormente registrada em <a href="#intelligence-architecture-dashboard-guivos-kpi-status-reconciliation"><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001</code></a>. O Documento Mestre volta a ser a autoridade direta para o campo <code>status</code> dos seis IDs abaixo.</p>
 <table>
 <thead>
 <tr>
 <th>KPI</th>
 <th>Status</th>
+<th>Readiness</th>
 <th>Record</th>
 </tr>
 </thead>
@@ -21192,40 +21211,52 @@ NEXT SPECIALIZED MASTER
 <tr>
 <td><code>GUV-KPI-POP-001</code></td>
 <td><code>proposed</code></td>
+<td><code>NOT_READY</code></td>
 <td>materialized</td>
 </tr>
 <tr>
 <td><code>GUV-KPI-POP-002</code></td>
 <td><code>proposed</code></td>
+<td><code>NOT_READY</code></td>
 <td>materialized</td>
 </tr>
 <tr>
 <td><code>GUV-KPI-POP-007</code></td>
 <td><code>proposed</code></td>
+<td><code>NOT_READY</code></td>
 <td>not materialized</td>
 </tr>
 <tr>
 <td><code>GUV-KPI-POP-009</code></td>
 <td><code>proposed</code></td>
+<td><code>NOT_READY</code></td>
 <td>not materialized</td>
 </tr>
 <tr>
 <td><code>GUV-KPI-POP-011</code></td>
 <td><code>proposed</code></td>
+<td><code>NOT_READY</code></td>
 <td>not materialized</td>
 </tr>
 <tr>
 <td><code>GUV-KPI-OPP-001</code></td>
 <td><code>proposed</code></td>
+<td><code>NOT_READY</code></td>
 <td>not materialized</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre><span></span><code>STATUS RECONCILIATION → ADJUDICATED
-ALL 6 → proposed / NOT_READY
-REAL DATA / SERVING / API / REPLIT BUILD → NOT AUTHORIZED
+<div class="highlight"><pre><span></span><code>STATUS RECONCILIATION
+→ ABSORBED INTO SPECIALIZED MASTER
+
+REGISTRY
+→ INDEX / TRACEABILITY
+→ NOT SOURCE OF TRUTH
+
+REAL DATA / SERVING / API / REPLIT BUILD
+→ NOT AUTHORIZED
 </code></pre></div>
-<p>Até absorção formal por versão posterior do master, a reconciliação prevalece somente sobre o campo <code>status</code> desses seis IDs.</p></section></section><section class="print-page" id="adr-adr-007-neo4j-primary-graph-reference" heading-number="8.4"><h1 id="adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo">ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo" title="Permanent link">&para;</a></h1>
+<p>O documento de reconciliação permanece apenas como proveniência histórica da adjudicação. <code>POP-007</code>, <code>POP-009</code>, <code>POP-011</code> e <code>OPP-001</code> ainda exigem materialização individual futura.</p></section></section><section class="print-page" id="adr-adr-007-neo4j-primary-graph-reference" heading-number="8.4"><h1 id="adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo">ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo" title="Permanent link">&para;</a></h1>
 <h2 id="adr-adr-007-neo4j-primary-graph-reference-contexto">Contexto<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-contexto" title="Permanent link">&para;</a></h2>
 <p>A Guivos concebe dados, contexto, conhecimento e relações como ativos que precisam preservar significado, proveniência, autoridade e conexões entre Pessoas, Coletivos, Organizações, oportunidades, produtos, evidências e demais objetos governados.</p>
 <p>Nas discussões arquiteturais anteriores, Neo4j e Amazon Neptune foram comparados como alternativas para a camada de grafo. A decisão validada foi seguir com <strong>Neo4j</strong> como referência primária, sem transformar essa escolha em afirmação de implantação.</p>
