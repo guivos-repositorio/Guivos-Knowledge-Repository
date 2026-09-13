@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.3
+version: 0.2.4
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
@@ -19,6 +19,7 @@ related:
   - GKR-STATE-001
   - GEM-009-MEASUREMENT-CONTRACT-001
   - GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
+  - GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
 ---
 
 # Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
@@ -87,7 +88,7 @@ MASTER ESPECIALIZADO
 | Anexo | Documento | Estado nesta versão |
 |---|---|---|
 | A | `GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001` — Dashboard Guivos | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
-| B | Dashboard Guivos Business | RESERVED / NOT MATERIALIZED |
+| B | `GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001` — Dashboard Guivos Business | MATERIALIZED DOCUMENTARILY / PRE-IMPLEMENTATION MASTER |
 | C | Dashboard Organização | RESERVED / NOT MATERIALIZED |
 | D | Dashboard Coletivo | RESERVED / NOT MATERIALIZED |
 | E | Dashboard Pessoa | RESERVED / NOT MATERIALIZED |
@@ -126,6 +127,8 @@ BUSINESS
 → NÃO RECEBE POR PADRÃO UM "INTELLIGENCE POR PESSOA"
 → NÃO HERDA CONTEXTO PRIVADO INDIVIDUAL
 ```
+
+Esse escopo foi aprofundado documentalmente no Anexo B sem autorizar dados reais, implementação ou acesso individual além da autoridade aplicável.
 
 #### Dashboard Organização
 
@@ -640,7 +643,7 @@ ANEXO A — DASHBOARD GUIVOS
 → MATERIALIZED DOCUMENTARILY
 
 ANEXO B — BUSINESS
-→ RESERVED / NOT MATERIALIZED
+→ MATERIALIZED DOCUMENTARILY
 
 ANEXO C — ORGANIZAÇÃO
 → RESERVED / NOT MATERIALIZED
@@ -663,7 +666,7 @@ Cada anexo deve ser construído e revisado individualmente para permitir evoluç
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.3
+→ v0.2.4
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -691,7 +694,11 @@ DASHBOARD GUIVOS MASTER
 → GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
 → MATERIALIZED DOCUMENTARILY AS ANNEX A
 
-OTHER SPECIALIZED MASTERS
+DASHBOARD GUIVOS BUSINESS MASTER
+→ GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
+→ MATERIALIZED DOCUMENTARILY AS ANNEX B
+
+ANNEXES C / D / E / F
 → RESERVED / NOT MATERIALIZED
 
 REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
