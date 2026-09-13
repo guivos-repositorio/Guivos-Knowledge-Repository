@@ -21151,14 +21151,13 @@ REPLIT BUILD
 NEXT SPECIALIZED MASTER
 → REQUIRES SEPARATE GOVERNED ACT
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-kpi-registry" heading-number="8.3.4"><h1 id="intelligence-architecture-dashboard-guivos-kpi-registry-dashboard-guivos-kpi-registry">Dashboard Guivos — KPI Registry<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-kpi-registry-dashboard-guivos-kpi-registry" title="Permanent link">&para;</a></h1>
-<p>Materializados nesta versão:</p>
 <table>
 <thead>
 <tr>
 <th>KPI</th>
 <th>Contract record</th>
-<th style="text-align: right;">Contract version</th>
-<th>Record status</th>
+<th style="text-align: right;">Version</th>
+<th>Status</th>
 <th>Readiness</th>
 </tr>
 </thead>
@@ -21179,15 +21178,54 @@ NEXT SPECIALIZED MASTER
 </tr>
 </tbody>
 </table>
-<h2 id="intelligence-architecture-dashboard-guivos-kpi-registry-conflito-de-status">Conflito de status<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-kpi-registry-conflito-de-status" title="Permanent link">&para;</a></h2>
-<p>O master especializado vigente classifica <code>POP-001</code>, <code>POP-002</code>, <code>POP-007</code>, <code>POP-009</code>, <code>POP-011</code> e <code>OPP-001</code> como <code>source_pending</code>. O novo standard identifica blockers semânticos nesses itens.</p>
-<div class="highlight"><pre><span></span><code>STATUS RECONCILIATION
-→ NOT ADJUDICATED
-→ THIS REGISTRY DOES NOT OVERRIDE THE ACTIVE MASTER
-→ SEPARATE GOVERNED ACT REQUIRED
+<h2 id="intelligence-architecture-dashboard-guivos-kpi-registry-status-reconciliation">Status reconciliation<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-kpi-registry-status-reconciliation" title="Permanent link">&para;</a></h2>
+<p><a href="#intelligence-architecture-dashboard-guivos-kpi-status-reconciliation"><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001</code></a> adjudica o campo <code>status</code> dos seis IDs abaixo:</p>
+<table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Status</th>
+<th>Record</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUV-KPI-POP-001</code></td>
+<td><code>proposed</code></td>
+<td>materialized</td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-002</code></td>
+<td><code>proposed</code></td>
+<td>materialized</td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-007</code></td>
+<td><code>proposed</code></td>
+<td>not materialized</td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-009</code></td>
+<td><code>proposed</code></td>
+<td>not materialized</td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-011</code></td>
+<td><code>proposed</code></td>
+<td>not materialized</td>
+</tr>
+<tr>
+<td><code>GUV-KPI-OPP-001</code></td>
+<td><code>proposed</code></td>
+<td>not materialized</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>STATUS RECONCILIATION → ADJUDICATED
+ALL 6 → proposed / NOT_READY
+REAL DATA / SERVING / API / REPLIT BUILD → NOT AUTHORIZED
 </code></pre></div>
-<p>Até a reconciliação, a divergência não autoriza promoção, dado real ou build.</p>
-<p><code>POP-007</code> e <code>POP-009</code> ainda não possuem record individual.</p></section></section><section class="print-page" id="adr-adr-007-neo4j-primary-graph-reference" heading-number="8.4"><h1 id="adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo">ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo" title="Permanent link">&para;</a></h1>
+<p>Até absorção formal por versão posterior do master, a reconciliação prevalece somente sobre o campo <code>status</code> desses seis IDs.</p></section></section><section class="print-page" id="adr-adr-007-neo4j-primary-graph-reference" heading-number="8.4"><h1 id="adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo">ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo" title="Permanent link">&para;</a></h1>
 <h2 id="adr-adr-007-neo4j-primary-graph-reference-contexto">Contexto<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-contexto" title="Permanent link">&para;</a></h2>
 <p>A Guivos concebe dados, contexto, conhecimento e relações como ativos que precisam preservar significado, proveniência, autoridade e conexões entre Pessoas, Coletivos, Organizações, oportunidades, produtos, evidências e demais objetos governados.</p>
 <p>Nas discussões arquiteturais anteriores, Neo4j e Amazon Neptune foram comparados como alternativas para a camada de grafo. A decisão validada foi seguir com <strong>Neo4j</strong> como referência primária, sem transformar essa escolha em afirmação de implantação.</p>
