@@ -1,8 +1,7 @@
 ---
 id: GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-REGISTRY-001
-title: Dashboard Guivos — Registry de Contratos de KPI
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Guivos Intelligence Architecture
 last_updated: 2026-09-12
 normative: false
@@ -12,21 +11,24 @@ depends_on:
   - GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
 ---
 
-# Dashboard Guivos — Registry de Contratos de KPI
+# Dashboard Guivos — KPI Registry
 
-Este registry registra somente contratos efetivamente materializados.
+Materializados nesta versão:
 
-| KPI | Contract record | Status | Readiness |
-|---|---|---|---|
-| `GUV-KPI-POP-001` | `guv-kpi-pop-001.md` | proposed | NOT_READY |
-| `GUV-KPI-POP-002` | `guv-kpi-pop-002.md` | proposed | NOT_READY |
+- `GUV-KPI-POP-001` → record `proposed / NOT_READY`;
+- `GUV-KPI-POP-002` → record `proposed / NOT_READY`.
 
-A aplicação de `GKR-INTELLIGENCE-KPI-CONTRACT-001` também identifica blockers semânticos nos itens antes marcados `source_pending`: `POP-001`, `POP-002`, `POP-007`, `POP-009`, `POP-011` e `OPP-001`. Até fechamento desses blockers, nenhum deve ser tratado como build-ready.
+## Conflito de status
+
+O master especializado vigente classifica `POP-001`, `POP-002`, `POP-007`, `POP-009`, `POP-011` e `OPP-001` como `source_pending`. O novo standard identifica blockers semânticos nesses itens.
 
 ```text
-POP-007 / POP-009
-→ CONTRACT RECORD NOT MATERIALIZED
-
-REAL DATA / SERVING / REPLIT BUILD
-→ NOT AUTHORIZED
+STATUS RECONCILIATION
+→ NOT ADJUDICATED
+→ THIS REGISTRY DOES NOT OVERRIDE THE ACTIVE MASTER
+→ SEPARATE GOVERNED ACT REQUIRED
 ```
+
+Até a reconciliação, a divergência não autoriza promoção, dado real ou build.
+
+`POP-007` e `POP-009` ainda não possuem record individual.
