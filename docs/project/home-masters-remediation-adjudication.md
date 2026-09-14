@@ -2,7 +2,7 @@
 id: GKR-HOME-MASTERS-REMEDIATION-001
 title: Home Masters — Adjudicação de Remediação
 status: active
-version: 1.2.0
+version: 1.2.1
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-13
 normative: true
@@ -48,18 +48,25 @@ HISTORICAL MATURITY SIGNAL
 
 ## 2. Inventário canônico da frente
 
-A auditoria repo-wide reconhece exatamente oito Homes com Documento Mestre próprio. Para cada uma, o inventário registra a versão e o `status` físicos do Master e a maturidade governada usada para interpretação corrente.
+A auditoria repo-wide reconhece exatamente oito Homes com Documento Mestre próprio. A tabela separa metadado físico do Master e maturidade governada corrente.
 
-| Home | ID mestre | Path | Versão | Status do Master | Maturidade governada / interpretação corrente |
+| Home | ID mestre | Path | Versão | Status físico | Maturidade governada corrente |
 |---|---|---|---|---|---|
-| Home Pública Principal / Pessoa | `GKR-UX-HOME-MASTER-001` | `docs/experience-architecture/public-home-master-document.md` | `1.0.2` | `active` | `reconciled_architecture_pre_materialization` |
-| Home Pública — Organizações e Coletivos | `GKR-UX-HOME-OC-MASTER-001` | `docs/experience-architecture/public-home-organizations-collectives-master-document.md` | `1.0.0` | `active` | `documentally_rebuilt_pre_materialization`; o sufixo histórico `under_full_corpus_audit` no frontmatter não reabre a auditoria já encerrada pelo estado global vigente |
-| Guivos Mall | `GKR-UX-HOME-MALL-MASTER-001` | `docs/experience-architecture/public-home-mall-master-document.md` | `1.0.0` | `draft` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`; `draft` = sinal histórico de maturidade |
-| Guivos Travel | `GKR-UX-HOME-TRAVEL-MASTER-001` | `docs/experience-architecture/public-home-travel-master-document.md` | `1.0.0` | `draft` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`; `draft` = sinal histórico de maturidade |
-| Guivos Media | `GKR-UX-HOME-MEDIA-MASTER-001` | `docs/experience-architecture/public-home-media-master-document.md` | `1.0.0` | `draft` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`; `draft` = sinal histórico de maturidade |
-| Guivos Business | `GKR-UX-HOME-BUSINESS-MASTER-001` | `docs/experience-architecture/public-home-business-master-document.md` | `1.0.0` | `active` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`; dependências temporais antigas não governam estado corrente |
-| Guivos Ads | `GKR-UX-HOME-ADS-MASTER-001` | `docs/experience-architecture/public-home-ads-master-document.md` | `1.0.0` | `draft` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`; `draft` = sinal histórico de maturidade |
-| Guivos Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001` | `docs/experience-architecture/public-home-intelligence-master-document.md` | `0.1.1` | `draft` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION`; arquitetura conceitual completa, Master existente e Home Source Lock `v1.0.0` ativo/normativo |
+| Home Pública Principal / Pessoa | `GKR-UX-HOME-MASTER-001` | `docs/experience-architecture/public-home-master-document.md` | `1.0.2` | `active` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Home Pública — Organizações e Coletivos | `GKR-UX-HOME-OC-MASTER-001` | `docs/experience-architecture/public-home-organizations-collectives-master-document.md` | `1.0.0` | `active` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Guivos Mall | `GKR-UX-HOME-MALL-MASTER-001` | `docs/experience-architecture/public-home-mall-master-document.md` | `1.0.0` | `draft` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Guivos Travel | `GKR-UX-HOME-TRAVEL-MASTER-001` | `docs/experience-architecture/public-home-travel-master-document.md` | `1.0.0` | `draft` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Guivos Media | `GKR-UX-HOME-MEDIA-MASTER-001` | `docs/experience-architecture/public-home-media-master-document.md` | `1.0.0` | `draft` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Guivos Business | `GKR-UX-HOME-BUSINESS-MASTER-001` | `docs/experience-architecture/public-home-business-master-document.md` | `1.0.0` | `active` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Guivos Ads | `GKR-UX-HOME-ADS-MASTER-001` | `docs/experience-architecture/public-home-ads-master-document.md` | `1.0.0` | `draft` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Guivos Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001` | `docs/experience-architecture/public-home-intelligence-master-document.md` | `0.1.1` | `draft` | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+
+A maturidade governada corrente das oito Homes acima é estabelecida por `GKR-STATE-001`. Metadados históricos mais específicos nos Masters permanecem como proveniência e não substituem o estado corrente. Em particular:
+
+- Pessoa mantém `maturity: reconciled_architecture_pre_materialization` no frontmatter do Master;
+- O/C mantém `maturity: documentally_rebuilt_pre_materialization_under_full_corpus_audit` no frontmatter do Master;
+- os `status: draft` de Mall, Travel, Media e Ads permanecem sinais históricos de maturidade conforme `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001`;
+- Intelligence mantém Master `v0.1.1` e Home Source Lock `v1.0.0` ativo/normativo.
 
 Limites do inventário:
 
@@ -83,9 +90,7 @@ A individualização dos oito Masters no `mkdocs.yml` já está comprovada e nã
 
 ## 3. Guivos Mall — contrato determinístico de handoff
 
-`GKR-UX-HOME-MALL-MASTER-001` permanece a autoridade narrativa e funcional principal da Home Mall. Seu `status: draft` é preservado como sinal histórico de maturidade conforme `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001`.
-
-Este contrato não cria layout ou implementação. Ele torna explícitas as regras necessárias para que Design/UX, prototipação, AI e desenvolvimento futuro consigam consumir o Master sem preencher lacunas por inferência.
+`GKR-UX-HOME-MALL-MASTER-001` permanece a autoridade narrativa e funcional principal da Home Mall. Este contrato não cria layout ou implementação; apenas torna explícitas as regras necessárias para consumo determinístico do Master.
 
 ### 3.1 Estados semânticos obrigatórios
 
@@ -102,26 +107,26 @@ MALL-HS-03 — COMMERCIAL_DATA_UNAVAILABLE_OR_ERROR
 
 MALL-HS-04 — CAMPAIGN_ACTIVE
 → campanha pode alterar camada comercial temporária
-→ não redefine a pergunta-mãe nem transforma promoção em identidade permanente da Home
+→ não redefine pergunta-mãe nem transforma promoção em identidade permanente
 
 MALL-HS-05 — PERSONALIZATION_AUTHORIZED
 → “recomendado para você” exige base legítima, finalidade e regras aplicáveis
 → sem essa base, usar descoberta/curadoria geral sem alegar personalização
 
 MALL-HS-06 — SPONSORED_EXPOSURE
-→ exposição paga deve permanecer identificada como patrocinada
-→ não pode assumir aparência de recomendação orgânica
+→ exposição paga permanece identificada
+→ não assume aparência de recomendação orgânica
 ```
 
 ### 3.2 Comportamentos e interações
 
 1. `Shopping` e `Gift Cards` permanecem portas distintas e atuais do Mall.
-2. Busca direta deve continuar disponível conceitualmente para quem já sabe o que procura; sua implementação não é definida por este contrato.
-3. Um produto/oferta exibido pode iniciar outra experiência, mas detalhe, Perfil, Carrinho, Checkout, pedido e pós-compra começam fora da Home.
-4. O saldo global da Pessoa pertence ao contexto de conta/Perfil; preço em pontos pertence à oferta elegível.
-5. `Programa de Pontos` e `Gift Card Guivos` permanecem semanticamente distintos.
+2. Busca direta permanece conceitualmente disponível para quem já sabe o que procura; sua implementação não é definida aqui.
+3. Produto/oferta exibido pode iniciar outra experiência, mas detalhe, Perfil, Carrinho, Checkout, pedido e pós-compra começam fora da Home.
+4. Saldo global da Pessoa pertence ao contexto de conta/Perfil; preço em pontos pertence à oferta elegível.
+5. `Programa de Pontos` e `Gift Card Guivos` permanecem distintos.
 6. Recomendação, destaque, oferta e patrocínio não podem ser fundidos.
-7. Campanha comercial não pode eliminar a camada permanente de significado e confiança.
+7. Campanha comercial não elimina a camada permanente de significado e confiança.
 
 ### 3.3 Navegação governada
 
@@ -153,31 +158,31 @@ A existência conceitual desses acessos não prova rota, URL, componente, dispon
 É proibido inferir ou fabricar:
 
 - catálogo, estoque, preço, desconto, disponibilidade ou elegibilidade;
-- parceiro institucional a partir da mera presença de uma marca/oferta;
-- pagamento híbrido `dinheiro + pontos`, taxa de conversão ou regra econômica não autorizada;
+- parceiro institucional a partir da mera presença de marca/oferta;
+- pagamento híbrido, taxa de conversão ou regra econômica não autorizada;
 - mecânica de Perfil, Carrinho, Checkout ou página de produto;
 - recomendação personalizada sem base, finalidade e autoridade aplicáveis;
 - escala, liderança, segurança ou melhor preço sem evidência;
-- decisão visual final a partir da existência deste contrato.
+- decisão visual final a partir deste contrato.
 
 ### 3.5 Critérios objetivos de aceite — Mall
 
 Um artefato derivado é semanticamente aceitável somente se:
 
-1. preserva a pergunta-mãe e a progressão em onze movimentos sem convertê-los obrigatoriamente em onze seções visuais;
+1. preserva a pergunta-mãe e a progressão em onze movimentos sem obrigar onze seções visuais;
 2. mantém `Mall = capacidade da Guivos`, não marca/ecossistema independente;
-3. permite descoberta e acesso direto sem exigir percurso narrativo obrigatório;
+3. permite descoberta e acesso direto sem percurso narrativo obrigatório;
 4. preserva `Home ≠ páginas internas`;
 5. separa destaque, recomendação, oferta e patrocínio;
 6. exibe dados comerciais somente quando sustentados;
 7. não cria regra econômica ou estado operacional inexistente;
-8. preserva autonomia da Pessoa e ausência de pressão/manipulação como regra;
-9. mantém os estados `MALL-HS-01..06` semanticamente distinguíveis;
-10. não trata este handoff como autorização de Design, UI, protótipo ou implementação.
+8. preserva autonomia da Pessoa e ausência de manipulação como regra;
+9. mantém `MALL-HS-01..06` semanticamente distinguíveis;
+10. não trata handoff como autorização de Design, UI, protótipo ou implementação.
 
 ## 4. Guivos Travel — contrato determinístico de handoff
 
-`GKR-UX-HOME-TRAVEL-MASTER-001` permanece a autoridade narrativa e funcional principal da Home Travel. Seu `status: draft` permanece sinal histórico de maturidade, não bloqueio nem autorização automática de execução.
+`GKR-UX-HOME-TRAVEL-MASTER-001` permanece a autoridade narrativa e funcional principal da Home Travel. Este contrato complementa o Master sem congelar UI ou implementação.
 
 ### 4.1 Estados semânticos obrigatórios
 
@@ -191,29 +196,29 @@ TRAVEL-HS-02 — OPERATIONAL_SERVICE
 
 TRAVEL-HS-03 — DESTINATION_OR_EXPERIENCE_PROVEN
 → destino, imagem, experiência ou contexto apresentado como real deve possuir lastro real
-→ imagem inspiracional não pode simular disponibilidade operacional
+→ imagem inspiracional não simula disponibilidade operacional
 
 TRAVEL-HS-04 — OFFER_DATA_AVAILABLE
-→ preço, pontos, condição ou disponibilidade específica só podem aparecer quando sustentados pela oferta aplicável
+→ preço, pontos, condição ou disponibilidade específica só aparecem quando sustentados pela oferta aplicável
 
 TRAVEL-HS-05 — OFFER_DATA_UNAVAILABLE_OR_ERROR
-→ ausência, erro ou indisponibilidade não podem ser convertidos em tarifa, vaga, disponibilidade, parceiro ou condição fictícios
+→ ausência, erro ou indisponibilidade não se convertem em tarifa, vaga, disponibilidade, parceiro ou condição fictícios
 → tratamento visual/copy de fallback permanece TBD para Design/implementação
 
 TRAVEL-HS-06 — CAMPAIGN_OR_SPONSORED
-→ campanha é camada temporária e patrocínio deve permanecer identificado
-→ nenhuma das duas condições compra relevância orgânica nem redefine o Hero permanente
+→ campanha é camada temporária e patrocínio permanece identificado
+→ nenhuma dessas condições compra relevância orgânica nem redefine o Hero permanente
 ```
 
 ### 4.2 Comportamentos e interações
 
 1. A Pessoa pode começar por descoberta/inspiração ou por acesso direto a serviço.
-2. A narrativa não pode obrigar quem já sabe o que procura a percorrer todos os movimentos antes de avançar.
-3. `Serviços`, `Destinos` e `Experiências` são territórios conceituais distintos; nomenclatura/implementação final permanecem fora deste contrato.
+2. A narrativa não pode obrigar quem sabe o que procura a percorrer todos os movimentos antes de avançar.
+3. `Serviços`, `Destinos` e `Experiências` permanecem territórios conceituais distintos.
 4. Os nove serviços podem ser organizados pela lógica da viagem sem se tornarem nove produtos desconectados.
-5. Relacionar vários serviços a uma mesma viagem não cria contratação conjunta obrigatória.
+5. Relacionar serviços a uma mesma viagem não cria contratação conjunta obrigatória.
 6. Destino e experiência permanecem conceitos diferentes.
-7. Preço monetário e preço em pontos só aparecem quando efetivamente elegíveis; saldo global pertence ao contexto de conta/Perfil.
+7. Preço monetário e preço em pontos só aparecem quando elegíveis; saldo global pertence ao contexto de conta/Perfil.
 8. Resultado de busca, detalhe, reserva, passageiro, pagamento, voucher, checkout e pós-venda começam fora da Home.
 
 ### 4.3 Navegação governada
@@ -242,7 +247,7 @@ PERFIL
 → comportamento interno fora do escopo da Home
 ```
 
-Os CTAs finais (`Explorar destinos`, `Encontrar hospedagem`, `Ver experiências`, `Conhecer todos os serviços`) expressam destinos semânticos; não congelam rota, URL ou componente.
+Os CTAs finais do Master expressam destinos semânticos; não congelam rota, URL ou componente.
 
 ### 4.4 Contrato para AI e desenvolvimento futuro
 
@@ -252,7 +257,7 @@ Os CTAs finais (`Explorar destinos`, `Encontrar hospedagem`, `Ver experiências`
 - tarifa, disponibilidade, elegibilidade, data, inventário ou condição comercial sem fonte aplicável;
 - cobertura mundial, liderança ou escala sem evidência;
 - pagamento híbrido, taxa de conversão ou regra econômica não autorizada;
-- reserva, checkout, emissão, cancelamento, reembolso, voucher ou pós-venda não definidos pelo Master;
+- reserva, checkout, emissão, cancelamento, reembolso, voucher ou pós-venda não definidos;
 - recomendação/personalização sem base, finalidade e autoridade aplicáveis;
 - obrigação de bundle entre serviços;
 - causalidade ou promessa de transformação por viajar.
@@ -269,8 +274,8 @@ Um artefato derivado é semanticamente aceitável somente se:
 6. usa somente destinos, imagens, experiências, ofertas e condições sustentados;
 7. mantém páginas internas e fluxos de reserva fora do escopo da Home;
 8. não obriga contratação conjunta de serviços relacionados;
-9. mantém os estados `TRAVEL-HS-01..06` semanticamente distinguíveis;
-10. não trata este handoff como autorização de Design, UI, protótipo ou implementação.
+9. mantém `TRAVEL-HS-01..06` semanticamente distinguíveis;
+10. não trata handoff como autorização de Design, UI, protótipo ou implementação.
 
 ## 5. Business
 
@@ -326,6 +331,7 @@ C1 — REPO-WIDE INVENTORY
 
 C2 — MASTER / ID / PATH / VERSION / STATUS / MATURITY
 → PASS IN THIS DOCUMENTARY DELTA
+→ GOVERNED MATURITY ALIGNED TO GKR-STATE-001 FOR ALL 8 HOMES
 → REQUIRES C9 REVALIDATION ON THE NEW HEAD
 
 C3 — PUBLIC × AUTHENTICATED × OTHER SURFACES
@@ -368,12 +374,21 @@ MAIN
 
 A PR #365 permanece frente independente em HOLD. No início desta remediação, seu HEAD continuava `3a946a2c2ae840d6ac6f5dba91242479d46db2e5`, divergindo do `main` acima com `ahead_by = 29` e `behind_by = 61`.
 
-A primeira revisão independente da PR #377 no HEAD `7eb25a694795d469371865289357de42cf958845` encontrou dois P1:
+Histórico de revisão da PR #377:
 
-1. C2 sem versão/status/maturidade 8/8;
-2. C5 sem contratos determinísticos suficientes para Mall e Travel.
+```text
+REVIEW 1 @ 7eb25a694795d469371865289357de42cf958845
+→ P1 C2 — INVENTORY MISSING VERSION / STATUS / MATURITY
+→ P1 C5 — MALL / TRAVEL CONTRACTS INSUFFICIENT
+→ REMEDIATED
 
-Ambos são remediados por esta revisão. O fechamento formal continua condicionado à repetição dos gates no novo HEAD:
+REVIEW 2 @ b51e7e1bb21383d1933553f8953e5532a474fcff
+→ C5 FINDING CLEARED
+→ P1 C2 — PESSOA / O-C GOVERNED MATURITY NOT ALIGNED TO GKR-STATE-001
+→ REMEDIATED BY THIS REVISION
+```
+
+O fechamento formal continua condicionado à repetição dos gates no novo HEAD:
 
 ```text
 SEMANTIC VALIDATION ON EXACT FINAL HEAD
