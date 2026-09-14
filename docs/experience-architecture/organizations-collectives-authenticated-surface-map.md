@@ -314,6 +314,7 @@ PARTICIPAÇÃO
 
 Crosswalk vigente:
 
+- `GKR-SURF-COL-005` — comunicação oficial, quando relacionada a decisão ou governança;
 - `GKR-SURF-COL-006` — no recorte de decisões;
 - `GKR-SURF-COL-007` — proteção e moderação.
 
@@ -396,7 +397,7 @@ Esta capacidade **não** é uma função genérica de planejamento do Coletivo.
 | Coletivo — Início | `GKR-SURF-COL-002` | preservado; `COL-001` permanece fronteira/presença pública separada |
 | Coletivo — Atividades e Oportunidades | `GKR-SURF-COL-006` | preservado; sem ID novo por inferência |
 | Coletivo — Participação | `GKR-SURF-COL-003..005` | preservados; superfícies da Pessoa permanecem separadas |
-| Coletivo — Governança e Proteção | `GKR-SURF-COL-006`, `GKR-SURF-COL-007` | responsabilidades distintas preservadas |
+| Coletivo — Governança e Proteção | `GKR-SURF-COL-005`, `GKR-SURF-COL-006`, `GKR-SURF-COL-007` | responsabilidades distintas preservadas; `COL-005` somente no recorte de comunicação oficial ligada a decisão/governança |
 | Coletivo — Relações | `GKR-SURF-COL-008` | preservado |
 | Coletivo — Aprendizados e Evidências | sem ID dedicado | nenhum ID criado; requisito transversal |
 | Coletivo — Coletivo e Autoridade | `GKR-SURF-COL-002` parcialmente; sem ID exclusivo | nenhum ID novo; autoridade transversal |
