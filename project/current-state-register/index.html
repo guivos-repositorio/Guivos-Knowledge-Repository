@@ -983,6 +983,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#30-home-masters-changeset-formal-de-fechamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        30. Home Masters — changeset formal de fechamento
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1866,6 +1877,41 @@
     
   
     Homes dos Produtos Especializados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home-masters-remediation-adjudication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Masters — Adjudicação de Remediação
   
 
     
@@ -4008,6 +4054,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#30-home-masters-changeset-formal-de-fechamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        30. Home Masters — changeset formal de fechamento
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4906,7 +4963,7 @@ UPDATE_REQUIRED
 REBUILD_REQUIRED
 → 0
 </code></pre></div>
-<p>A remediação foi documental, sem rebuild conceitual. <code>GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.3</code> governa somente estado atual, dependências vigentes, conflitos de continuidade e gates; as GPAs continuam governando os Produtos e os Masters preservam a arquitetura narrativa/funcional.</p>
+<p>A remediação foi documental, sem rebuild conceitual. <code>GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.4</code> governa somente estado atual, dependências vigentes, conflitos de continuidade e gates; as GPAs continuam governando os Produtos e os Masters preservam a arquitetura narrativa/funcional.</p>
 <p>Preservações:</p>
 <div class="highlight"><pre><span></span><code>PRODUTO ESPECIALIZADO
 ≠ PARTICIPANTE
@@ -5782,6 +5839,46 @@ AINDA NÃO INICIADOS / NÃO AUTORIZADOS ALÉM DO BOUNDARY
 → MERGE DA PR #363 = NOT_AUTHORIZED
 </code></pre></div>
 <p>A cadeia interativa de <code>PER-002</code> alcançou fechamento pós-review validado e <code>GIA-COG-001</code> alcançou promoção canônica no limite arquitetural conceitual/de referência, mas nenhum desses fechamentos libera automaticamente estágio físico, operacional ou de produto. Qualquer Source Lock adicional, <code>GIA-COG-002..008</code>, UXA-102/V5, Product Engineering, implementação, produção, teste com participantes reais ou merge exige ato governado próprio.</p>
+<h2 id="30-home-masters-changeset-formal-de-fechamento">30. Home Masters — changeset formal de fechamento<a class="headerlink" href="#30-home-masters-changeset-formal-de-fechamento" title="Permanent link">&para;</a></h2>
+<p>A frente Home Masters comprovou elegibilidade para fechamento no HEAD <code>39277f305fced32ce351c113ab7e7d5d7cc76242</code>, com <code>C1–C10 = PASS</code>, Semantic #991 <code>SUCCESS</code>, Mechanical #1236 <code>SUCCESS</code>, quarto review Codex sem finding material e zero threads de review abertos.</p>
+<p><code>GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0</code> e <code>GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0</code> registram a prova e o changeset de fechamento.</p>
+<div class="highlight"><pre><span></span><code>HOME MASTERS FORMAL CLOSURE CHANGESET
+→ DOCUMENTALLY COMPLETE IN PR #377
+
+HOME MASTERS INTEGRATION STATE IN MAIN
+→ IF THIS CHANGESET IS ABSENT FROM MAIN: PENDING GOVERNED MERGE OF PR #377
+→ IF THIS CHANGESET IS PRESENT IN MAIN: CONCLUDED / GOVERNED / INTEGRATED
+
+HOME MASTERS FRONT IN MAIN
+→ MUST NOT BE CLAIMED AS INTEGRATED WHILE THIS CHANGESET IS ABSENT FROM MAIN
+</code></pre></div>
+<p>A atualização desta autoridade para <code>v3.35.0</code> integra o changeset de fechamento. Enquanto este changeset estiver ausente do <code>main</code>, essa atualização não constitui integração. A decisão governada de merge exige que o HEAD final da PR #377 repita Semantic + Mechanical + revisão independente antes de qualquer integração.</p>
+<p>A fila posterior permanece bloqueada:</p>
+<div class="highlight"><pre><span></span><code>PR #365
+→ OPEN / DRAFT / NOT MERGED / HOLD
+→ HEAD 3a946a2c2ae840d6ac6f5dba91242479d46db2e5
+→ RECONCILIATION ONLY AFTER GOVERNED HOME-MASTERS INTEGRATION
+→ NO BLIND REBASE / MERGE
+
+O/C STATE MAP
+→ NOT RELEASED
+
+O/C PRIORITY FLOWS
+→ NOT RELEASED
+
+O/C NAVIGATION MATERIALIZATION
+→ NOT RELEASED
+
+O/C AUTHENTICATED WIREFRAMES
+→ NOT RELEASED
+
+DESIGN / UI / PROTOTYPE
+→ NOT RELEASED BY HOME-MASTERS CLOSURE
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
+</code></pre></div>
+<p>O primeiro ato após eventual merge governado da PR #377 é reconfirmar o <code>main</code> real e, somente então, reconciliar a PR #365 contra essa base.</p>
 
 
 

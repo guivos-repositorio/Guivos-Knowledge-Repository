@@ -1341,6 +1341,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../home-masters-remediation-adjudication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Masters — Adjudicação de Remediação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../experience-architecture/public-home-mall-master-document/" class="md-nav__link">
         
   
@@ -3086,6 +3121,56 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#7-adjudicacao-formal-de-fechamento-2026-09-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Adjudicação formal de fechamento — 2026-09-13
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Adjudicação formal de fechamento — 2026-09-13">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-fechamento-documental-integracao-em-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Fechamento documental ≠ integração em main
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-estado-fisico-da-fila-preservada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Estado físico da fila preservada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-downstream-permanece-bloqueado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Downstream permanece bloqueado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3284,6 +3369,82 @@ THEN
 → FIRST TARGET = PR #365
 </code></pre></div>
 <p>Qualquer alteração futura da fila deve ser reconciliada com o estado real do GitHub antes da execução.</p>
+<h2 id="7-adjudicacao-formal-de-fechamento-2026-09-13">7. Adjudicação formal de fechamento — 2026-09-13<a class="headerlink" href="#7-adjudicacao-formal-de-fechamento-2026-09-13" title="Permanent link">&para;</a></h2>
+<p>A elegibilidade para fechamento da frente foi comprovada no HEAD exato:</p>
+<div class="highlight"><pre><span></span><code>ELIGIBILITY HEAD
+→ 39277f305fced32ce351c113ab7e7d5d7cc76242
+
+C1–C10
+→ PASS
+
+SEMANTIC #991
+→ SUCCESS
+
+MECHANICAL #1236
+→ SUCCESS
+
+INDEPENDENT CODEX REVIEW
+→ DIDN'T FIND ANY MAJOR ISSUES
+→ REVIEWED COMMIT 39277f305f
+
+OPEN REVIEW THREADS
+→ 0
+</code></pre></div>
+<p>O terceiro review anterior havia identificado um P1 de discoverability da adjudicação de remediação. O finding foi aceito, remediado pela exposição de <code>GKR-HOME-MASTERS-REMEDIATION-001</code> no <code>mkdocs.yml</code> e revalidado no quarto review limpo acima.</p>
+<h3 id="71-fechamento-documental-integracao-em-main">7.1 Fechamento documental ≠ integração em <code>main</code><a class="headerlink" href="#71-fechamento-documental-integracao-em-main" title="Permanent link">&para;</a></h3>
+<p>Este documento registra o changeset formal de fechamento, mas não antecipa sua eficácia no <code>main</code>.</p>
+<div class="highlight"><pre><span></span><code>FORMAL CLOSURE CHANGESET PREPARED
+→ YES
+
+HOME MASTERS INTEGRATION STATE IN MAIN
+→ IF THIS CHANGESET IS ABSENT FROM MAIN: PENDING GOVERNED MERGE OF PR #377
+→ IF THIS CHANGESET IS PRESENT IN MAIN: CONCLUDED / GOVERNED / INTEGRATED
+
+HOME MASTERS FRONT IN MAIN
+→ MUST NOT BE CLAIMED AS INTEGRATED WHILE THIS CHANGESET IS ABSENT FROM MAIN
+</code></pre></div>
+<p>Qualquer novo HEAD gerado pelo pacote formal de fechamento deve repetir Semantic + Mechanical + revisão independente antes de qualquer decisão de merge.</p>
+<h3 id="72-estado-fisico-da-fila-preservada">7.2 Estado físico da fila preservada<a class="headerlink" href="#72-estado-fisico-da-fila-preservada" title="Permanent link">&para;</a></h3>
+<p>Na reconfirmação realizada durante o fechamento:</p>
+<div class="highlight"><pre><span></span><code>PR #365
+→ OPEN / DRAFT / NOT MERGED
+→ HOLD
+
+HEAD
+→ 3a946a2c2ae840d6ac6f5dba91242479d46db2e5
+
+REFERENCE MAIN
+→ 830b3f204a9e8e74aa65f73fb1fc68f5f228fade
+
+COMPARE REFERENCE MAIN → PR #365 HEAD
+→ DIVERGED
+→ ahead_by = 29
+→ behind_by = 61
+</code></pre></div>
+<p>Após eventual merge governado da PR #377, o primeiro ato da fila é reconfirmar o <code>main</code> real e reconciliar a PR #365 contra essa base, sem rebase ou merge cego.</p>
+<h3 id="73-downstream-permanece-bloqueado">7.3 Downstream permanece bloqueado<a class="headerlink" href="#73-downstream-permanece-bloqueado" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>PR #365 RESUME
+→ NOT RELEASED BEFORE HOME-MASTERS INTEGRATION
+
+O/C STATE MAP
+→ NOT RELEASED
+
+O/C PRIORITY FLOWS
+→ NOT RELEASED
+
+O/C NAVIGATION MATERIALIZATION
+→ NOT RELEASED
+
+O/C AUTHENTICATED WIREFRAMES
+→ NOT RELEASED
+
+DESIGN / UI / PROTOTYPE
+→ NOT RELEASED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
+</code></pre></div>
+<p>Nenhuma dessas frentes é liberada pelo simples fato de C1–C10 terem passado no HEAD de elegibilidade.</p>
 
 
 
