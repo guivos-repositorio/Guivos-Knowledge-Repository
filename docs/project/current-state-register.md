@@ -2,15 +2,17 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.34.1
+version: 3.35.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-12
+last_updated: 2026-09-13
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
+  - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
+  - GKR-HOME-MASTERS-REMEDIATION-001
   - GEB-P01
   - GOG-001
   - GKR-BRAND-SIGNATURE-001
@@ -978,7 +980,7 @@ REBUILD_REQUIRED
 → 0
 ```
 
-A remediação foi documental, sem rebuild conceitual. `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.3` governa somente estado atual, dependências vigentes, conflitos de continuidade e gates; as GPAs continuam governando os Produtos e os Masters preservam a arquitetura narrativa/funcional.
+A remediação foi documental, sem rebuild conceitual. `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.4` governa somente estado atual, dependências vigentes, conflitos de continuidade e gates; as GPAs continuam governando os Produtos e os Masters preservam a arquitetura narrativa/funcional.
 
 Preservações:
 
@@ -1990,3 +1992,53 @@ AINDA NÃO INICIADOS / NÃO AUTORIZADOS ALÉM DO BOUNDARY
 ```
 
 A cadeia interativa de `PER-002` alcançou fechamento pós-review validado e `GIA-COG-001` alcançou promoção canônica no limite arquitetural conceitual/de referência, mas nenhum desses fechamentos libera automaticamente estágio físico, operacional ou de produto. Qualquer Source Lock adicional, `GIA-COG-002..008`, UXA-102/V5, Product Engineering, implementação, produção, teste com participantes reais ou merge exige ato governado próprio.
+
+## 30. Home Masters — changeset formal de fechamento
+
+A frente Home Masters comprovou elegibilidade para fechamento no HEAD `39277f305fced32ce351c113ab7e7d5d7cc76242`, com `C1–C10 = PASS`, Semantic #991 `SUCCESS`, Mechanical #1236 `SUCCESS`, quarto review Codex sem finding material e zero threads de review abertos.
+
+`GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0` e `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0` registram a prova e o changeset de fechamento.
+
+```text
+HOME MASTERS FORMAL CLOSURE CHANGESET
+→ DOCUMENTALLY COMPLETE IN PR #377
+
+HOME MASTERS INTEGRATION STATE IN MAIN
+→ IF THIS CHANGESET IS ABSENT FROM MAIN: PENDING GOVERNED MERGE OF PR #377
+→ IF THIS CHANGESET IS PRESENT IN MAIN: CONCLUDED / GOVERNED / INTEGRATED
+
+HOME MASTERS FRONT IN MAIN
+→ MUST NOT BE CLAIMED AS INTEGRATED WHILE THIS CHANGESET IS ABSENT FROM MAIN
+```
+
+A atualização desta autoridade para `v3.35.0` integra o changeset de fechamento. Enquanto este changeset estiver ausente do `main`, essa atualização não constitui integração. A decisão governada de merge exige que o HEAD final da PR #377 repita Semantic + Mechanical + revisão independente antes de qualquer integração.
+
+A fila posterior permanece bloqueada:
+
+```text
+PR #365
+→ OPEN / DRAFT / NOT MERGED / HOLD
+→ HEAD 3a946a2c2ae840d6ac6f5dba91242479d46db2e5
+→ RECONCILIATION ONLY AFTER GOVERNED HOME-MASTERS INTEGRATION
+→ NO BLIND REBASE / MERGE
+
+O/C STATE MAP
+→ NOT RELEASED
+
+O/C PRIORITY FLOWS
+→ NOT RELEASED
+
+O/C NAVIGATION MATERIALIZATION
+→ NOT RELEASED
+
+O/C AUTHENTICATED WIREFRAMES
+→ NOT RELEASED
+
+DESIGN / UI / PROTOTYPE
+→ NOT RELEASED BY HOME-MASTERS CLOSURE
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
+```
+
+O primeiro ato após eventual merge governado da PR #377 é reconfirmar o `main` real e, somente então, reconciliar a PR #365 contra essa base.

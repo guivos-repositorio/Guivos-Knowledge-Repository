@@ -1,16 +1,18 @@
 ---
-id: ROADMAP-13.33.1
+id: ROADMAP-13.34.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.33.1
+version: 13.34.0
 owner: Guivos
-last_updated: 2026-09-12
+last_updated: 2026-09-13
 normative: true
 related:
   - GKR-STATE-001
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
+  - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
+  - GKR-HOME-MASTERS-REMEDIATION-001
   - GEB-P01
   - GOG-001
   - GKR-BRAND-SIGNATURE-001
@@ -52,7 +54,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.34.1` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.35.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -83,7 +85,7 @@ O fechamento pós-review do protótipo de `PER-002` e a promoção canônica de 
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.34.1** |
+| Estado global | **GKR-STATE-001 v3.35.0** |
 | Cognitive Reference Architecture | **GIA-COG-001 v0.1.1 / ACTIVE / NORMATIVE / CONCEPTUAL-REFERENCE** |
 | Família GIA-COG-002..008 | **RESERVED / NOT MATERIALIZED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
@@ -595,7 +597,7 @@ Nenhuma das seis Homes exigiu rebuild conceitual. As divergências eram de propa
 
 A evidência consolidada está em `GKR-SPECIALIZED-HOMES-AUDIT-001 v0.2.0`.
 
-A interpretação vigente está em `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.3`, cuja precedência é restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando identidade e fronteiras dos Produtos; os Masters continuam preservando a arquitetura narrativa/funcional.
+A interpretação vigente está em `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.4`, cuja precedência é restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando identidade e fronteiras dos Produtos; os Masters continuam preservando a arquitetura narrativa/funcional.
 
 Resultado:
 
@@ -1744,3 +1746,53 @@ RESEARCH OPERATIONAL STATES
 ```
 
 `GIA-COG-002..008`, `UXA-102/V5`, Product Engineering, PMF, implementação, produção, testes com participantes reais e merge da PR #363 permanecem não iniciados ou não autorizados. A cadeia interativa de `PER-002` está fechada pós-review no limite de Design e `GIA-COG-001` está fechada no limite de arquitetura conceitual/de referência; qualquer avanço posterior exige ato governado próprio.
+
+## 27. Home Masters — fechamento formal e fila pós-merge
+
+A frente Home Masters comprovou elegibilidade de fechamento no HEAD `39277f305fced32ce351c113ab7e7d5d7cc76242`, com `C1–C10 = PASS`, Semantic #991 `SUCCESS`, Mechanical #1236 `SUCCESS`, revisão Codex independente sem finding material e zero threads abertos.
+
+O pacote formal de fechamento está documentado por `GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0`, `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0` e `GKR-STATE-001 v3.35.0`.
+
+```text
+HOME MASTERS FORMAL CLOSURE CHANGESET
+→ DOCUMENTALLY COMPLETE IN PR #377
+
+HOME MASTERS INTEGRATION STATE IN MAIN
+→ IF THIS CHANGESET IS ABSENT FROM MAIN: PENDING GOVERNED MERGE OF PR #377
+→ IF THIS CHANGESET IS PRESENT IN MAIN: CONCLUDED / GOVERNED / INTEGRATED
+
+HOME MASTERS FRONT IN MAIN
+→ MUST NOT BE CLAIMED AS INTEGRATED WHILE THIS CHANGESET IS ABSENT FROM MAIN
+```
+
+O HEAD final do changeset de fechamento deve repetir Semantic + Mechanical + revisão independente antes de qualquer decisão de merge. O `PASS` do HEAD de elegibilidade `39277f...` não é automaticamente herdado por commits posteriores.
+
+A fila permanece bloqueada até integração governada da PR #377:
+
+```text
+PR #365
+→ OPEN / DRAFT / NOT MERGED / HOLD
+→ HEAD 3a946a2c2ae840d6ac6f5dba91242479d46db2e5
+→ RECONCILE ONLY AFTER GOVERNED HOME-MASTERS INTEGRATION
+→ NO BLIND REBASE / MERGE
+
+O/C STATE MAP
+→ NOT RELEASED
+
+O/C PRIORITY FLOWS
+→ NOT RELEASED
+
+O/C NAVIGATION MATERIALIZATION
+→ NOT RELEASED
+
+O/C AUTHENTICATED WIREFRAMES
+→ NOT RELEASED
+
+DESIGN / UI / PROTOTYPE
+→ NOT RELEASED BY HOME-MASTERS CLOSURE
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
+```
+
+Após eventual merge governado da PR #377, o primeiro ato é reconfirmar o `main` real e somente então reconciliar a PR #365 contra essa base.
