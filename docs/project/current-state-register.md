@@ -980,7 +980,7 @@ REBUILD_REQUIRED
 → 0
 ```
 
-A remediação foi documental, sem rebuild conceitual. `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.3` governa somente estado atual, dependências vigentes, conflitos de continuidade e gates; as GPAs continuam governando os Produtos e os Masters preservam a arquitetura narrativa/funcional.
+A remediação foi documental, sem rebuild conceitual. `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.4` governa somente estado atual, dependências vigentes, conflitos de continuidade e gates; as GPAs continuam governando os Produtos e os Masters preservam a arquitetura narrativa/funcional.
 
 Preservações:
 
