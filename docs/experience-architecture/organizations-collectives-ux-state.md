@@ -2,14 +2,15 @@
 id: GKR-UX-ORGCOL-UX-STATE-001
 title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-05
+last_updated: 2026-09-12
 normative: false
 related:
   - GKR-UX-ORGCOL-STATE-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - UXA-014
   - UXA-019
 ---
@@ -34,7 +35,7 @@ Isso vale para, no mínimo:
 - UI final;
 - testes de usabilidade dessas superfícies.
 
-Atores, papéis, autoridades, jobs prioritários e a Arquitetura da Informação autenticada já foram definidos documentalmente em instrumentos posteriores. Esse avanço **não equivale** a mapa final de superfícies, wireframe, UI, protótipo ou implementação.
+Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação e o mapa lógico de superfícies autenticadas já foram definidos documentalmente em instrumentos próprios. Esse avanço **não equivale** a estados, fluxos, wireframe, UI, protótipo ou implementação.
 
 ## 2. O que já existe e pode alimentar a futura UX
 
@@ -45,13 +46,14 @@ Já existem insumos e autoridades documentais relevantes:
 - `UXA-014` — fundação funcional de Organizações e Coletivos;
 - `UXA-019` — contrato funcional das relações Organização ↔ Coletivo;
 - `GKR-UX-ORGCOL-AUTH-JOBS-001` — atores, papéis, autoridades e jobs prioritários da experiência autenticada;
-- `GKR-UX-ORGCOL-AUTH-IA-001` — Arquitetura da Informação autenticada definida em estado pré-mapa de superfícies;
+- `GKR-UX-ORGCOL-AUTH-IA-001` — Arquitetura da Informação autenticada;
+- `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` — mapa lógico de superfícies autenticadas, em estado pré-estados / pré-fluxos / pré-wireframes;
 - Jornadas integradas da Organização e do Coletivo em estado `draft`;
 - contratos de oportunidades, publicação, descoberta e relações;
 - Documento Mestre da Home pública de Organizações e Coletivos;
 - `RP-002` — Research sobre supply, papéis, rede, valor e modelo econômico.
 
-Esses materiais são **inputs para a construção futura da UX**, não wireframes implícitos. A definição documental de Jobs e IA não autoriza inferir mapa final de superfícies ou decisões visuais.
+Esses materiais são **inputs para a construção futura da UX**, não wireframes implícitos. A definição documental de Jobs, IA e Surface Map não autoriza inferir estados, fluxos ou decisões visuais.
 
 ## 3. Correção dos registros anteriores
 
@@ -77,7 +79,7 @@ Os SVGs associados permanecem apenas como histórico técnico no repositório e 
 
 ## 4. O que não pode ser inferido
 
-Não é permitido concluir, a partir de material histórico ou da IA documental já definida, que já estejam definidos:
+Não é permitido concluir, a partir de material histórico, da IA documental ou do mapa lógico de superfícies, que já estejam definidos:
 
 - dashboard da Organização;
 - Home autenticada da Organização;
@@ -96,9 +98,9 @@ Não é permitido concluir, a partir de material histórico ou da IA documental 
 - componentes reutilizáveis;
 - padrões visuais.
 
-## 5. Separação entre arquitetura funcional, IA e wireframe
+## 5. Separação entre arquitetura funcional, IA, mapa de superfícies e wireframe
 
-Uma arquitetura funcional e uma Arquitetura da Informação podem afirmar que a experiência precisa preservar:
+Uma arquitetura funcional, uma Arquitetura da Informação e um mapa lógico de superfícies podem afirmar que a experiência precisa preservar:
 
 - autoridade;
 - autonomia;
@@ -123,7 +125,7 @@ onde cada elemento aparece
 → com qual linguagem visual
 ```
 
-Essas decisões pertencem às etapas posteriores de mapa de superfícies, arquitetura de experiência e wireframing ainda pendentes.
+Essas decisões pertencem às etapas posteriores de estados, fluxos e wireframing ainda pendentes.
 
 ## 6. Sequência obrigatória quando a frente avançar
 
@@ -131,9 +133,9 @@ A construção deverá continuar do estado documental vigente, e não dos SVGs h
 
 1. fundamentos, Research e jornadas vigentes — reconciliados documentalmente;
 2. atores, papéis, autoridades e jobs prioritários — definidos em `GKR-UX-ORGCOL-AUTH-JOBS-001`;
-3. Arquitetura da Informação — definida em `GKR-UX-ORGCOL-AUTH-IA-001`, em estado pré-mapa de superfícies;
-4. definir e validar documentalmente o mapa de superfícies;
-5. definir fluxos prioritários e estados críticos;
+3. Arquitetura da Informação — definida em `GKR-UX-ORGCOL-AUTH-IA-001`;
+4. mapa lógico de superfícies — definido documentalmente em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`;
+5. definir fluxos prioritários e estados críticos **somente quando essa frente estiver autorizada**;
 6. construir wireframes de baixa fidelidade **somente quando essa materialização estiver autorizada**;
 7. validar funcionalmente os wireframes reais;
 8. reformular quando necessário;
@@ -196,8 +198,9 @@ São superfícies e problemas distintos.
 | Research de supply/valor | existente | existente |
 | jornada integrada | draft | draft |
 | atores, papéis, autoridades e jobs | **definidos documentalmente** | **definidos documentalmente** |
-| arquitetura de informação autenticada | **definida — pré-mapa de superfícies** | **definida — pré-mapa de superfícies** |
-| mapa final de superfícies | pendente | pendente |
+| arquitetura de informação autenticada | **definida** | **definida** |
+| mapa lógico de superfícies autenticadas | **definido documentalmente** | **definido documentalmente** |
+| estados e fluxos prioritários | **pendentes** | **pendentes** |
 | wireframe | **pendente** | **pendente** |
 | validação de wireframe | **pendente** | **pendente** |
 | UI | pendente | pendente |
@@ -213,7 +216,7 @@ A regra de absorção é:
 
 ```text
 ESTADO FUNCIONAL NECESSÁRIO
-→ PODE SER PRESERVADO COMO REQUISITO PRÉ-SURFACE-MAP
+→ PODE SER PRESERVADO COMO REQUISITO DE COBERTURA PARA SURFACE MAP E ETAPAS POSTERIORES
 
 COMPOSIÇÃO / ORDEM VISUAL / COPY / CONTROLE HISTÓRICO
 → NÃO É PROMOVIDO A DECISÃO ATUAL

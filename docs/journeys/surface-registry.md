@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.24.0
+version: 0.25.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-12
 related:
   - UXA-070
   - UXA-080
@@ -32,6 +32,7 @@ related:
   - GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
   - GKR-UX-ORGCOL-UX-STATE-001
   - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -49,7 +50,7 @@ A D5-C1 adicionou `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-011 — M
 
 A reconciliação pós-PR #313/#314 corrige a leitura de Organização e Coletivo: `UXA-015..018` são históricos `superseded`; referências administrativas ou especializadas posteriores não podem ser promovidas por inferência a wireframe principal autenticado final.
 
-Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` já define a Arquitetura da Informação autenticada no estágio **pre-surface-map**. Essa definição documental não materializa o mapa final de superfícies/estados, navegação principal, wireframes, UI, protótipo ou implementação.
+Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` preserva sua maturidade própria **pre-surface-map**, enquanto `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define posteriormente o mapa lógico-documental canônico de superfícies. Essa progressão não materializa mapa de estados, fluxos prioritários, navegação principal, wireframes, UI, protótipo ou implementação e não promove a maturidade individual dos `GKR-SURF-*`.
 
 ## 2. Convenções
 
@@ -119,7 +120,7 @@ A contagem de IDs permanece estrutural. Ela não implica que todos estejam mater
 | GKR-SURF-COL-302 | revisão de contratação do Coletivo | responsável financeiro autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-303 | gestão de downgrade e cancelamento do Coletivo | responsável autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-304 | resultado e recuperação de plano/cobrança do Coletivo | responsável autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
-| GKR-SURF-ORG-001 | Visão Geral da Organização | representante | protegido | **contratado funcionalmente; materialização visual fora da autoridade documental** | UXA-014; contratos especializados posteriores conforme seu escopo | `UXA-015` removida do corpus corrente; proveniência histórica no Git | `UXA-017` removida do corpus corrente; proveniência no Git; **sem validação vigente do wireframe principal** | [Organização](surface-registry-organization-details.md) |
+| GKR-SURF-ORG-001 | Visão Geral da Organização | representante | protegido | **contratado funcionalmente; materialização visual fora da autoridade documental** | UXA-014; contratos especializados posteriores conforme seu escopo | `UXA-015` removida do corpus corrente; proveniência histórica no Git | `UXA-017` removida do corpus corrente; proveniência histórica no Git; **sem validação vigente do wireframe principal** | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-002 | cadastro de oportunidade | representante | protegido | validado | UXA-004 | UXA-008 | UXA-013 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-003 | oportunidade aprovada/ativa | representante | protegido | validado | UXA-004 | UXA-008 | UXA-013; integração UXA-098 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-004 | proposta de relação com Coletivo | representante | protegido | contratado | UXA-019 | — | — | [Organização](surface-registry-organization-details.md) |
@@ -149,7 +150,7 @@ Organização: Conecta · Eleva · Transforma
 Guivos Business: Start · Growth · Scale · Enterprise
 ```
 
-`PER-009`, `COL-002` e `ORG-001` continuam identificadores semânticos possíveis de origem/retorno para contratos de Planos. Isso **não prova materialização visual vigente** dessas origens. A criação de `PER-009` não materializa uma arquitetura completa de Conta; da mesma forma, os contratos de navegação de `COL-002` e `ORG-001` não substituem a Arquitetura da Informação autenticada já definida por `GKR-UX-ORGCOL-AUTH-IA-001`, nem materializam o mapa final de superfícies/estados ou os wireframes principais de Coletivo e Organização.
+`PER-009`, `COL-002` e `ORG-001` continuam identificadores semânticos possíveis de origem/retorno para contratos de Planos. Isso **não prova materialização visual vigente** dessas origens. A criação de `PER-009` não materializa uma arquitetura completa de Conta; da mesma forma, os contratos de navegação de `COL-002` e `ORG-001` não substituem a Arquitetura da Informação autenticada já definida por `GKR-UX-ORGCOL-AUTH-IA-001`, nem o mapa lógico-documental canônico definido por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, nem materializam mapa de estados ou wireframes principais de Coletivo e Organização.
 
 A D5-C1 adiciona `PER-010`, `PER-011` e `PER-012` como responsabilidades pessoais especializadas ligadas a Hoje por transições contratadas. A D5-C2 lhes adiciona materialização low-fidelity. A D5-C3 promove somente a maturidade local dessas três superfícies conforme sua autoridade própria.
 
@@ -177,4 +178,4 @@ Guivos Business é produto especializado e não recebe novos IDs neste registro.
 
 ## 7. Estado
 
-O registro permanece `active` como inventário granular. A maturidade deve ser lida por superfície e por escopo de autoridade, nunca pela mera existência física de SVG. Para Organização e Coletivo, Jobs + Arquitetura da Informação autenticada estão definidos documentalmente em estado **pre-surface-map**; permanecem pendentes o mapa final de superfícies/estados e os respectivos wireframes principais autenticados.
+O registro permanece `active` como inventário granular. A maturidade deve ser lida por superfície e por escopo de autoridade, nunca pela mera existência física de SVG. Para Organização e Coletivo, Jobs e Arquitetura da Informação permanecem definidos em seus limites próprios; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o mapa lógico-documental canônico de superfícies. Permanecem pendentes o mapa de estados, os fluxos prioritários ainda não materializados e os respectivos wireframes principais autenticados.
