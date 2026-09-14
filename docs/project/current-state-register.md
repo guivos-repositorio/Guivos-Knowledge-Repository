@@ -676,7 +676,7 @@ Permanecem autoridades funcionais:
 
 ### 8.2 Atores, autoridades e jobs
 
-`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.1.0` está ativo e define, antes da arquitetura visual:
+`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.2.0` está ativo e define, antes da arquitetura visual:
 
 - classes funcionais de atores;
 - participante representado;
@@ -701,7 +701,7 @@ AUTORIDADE DECLARADA
 
 ### 8.3 Arquitetura da Informação
 
-`GKR-UX-ORGCOL-AUTH-IA-001 v1.0.0` está ativo em maturidade `authenticated_information_architecture_defined_pre_surface_map`. Essa maturidade descreve o limite próprio da autoridade de IA; a progressão documental posterior está registrada no Surface Map canônico.
+`GKR-UX-ORGCOL-AUTH-IA-001 v1.1.0` está ativo em maturidade `authenticated_information_architecture_defined_pre_surface_map`. Essa maturidade descreve o limite próprio da autoridade de IA; a progressão documental posterior está registrada no Surface Map canônico.
 
 Organização:
 
