@@ -2003,17 +2003,15 @@ A frente Home Masters comprovou elegibilidade para fechamento no HEAD `39277f305
 HOME MASTERS FORMAL CLOSURE CHANGESET
 → DOCUMENTALLY COMPLETE IN PR #377
 
-EFFECT IN CURRENT MAIN
-→ PENDING GOVERNED MERGE OF PR #377
+HOME MASTERS INTEGRATION STATE IN MAIN
+→ IF THIS CHANGESET IS ABSENT FROM MAIN: PENDING GOVERNED MERGE OF PR #377
+→ IF THIS CHANGESET IS PRESENT IN MAIN: CONCLUDED / GOVERNED / INTEGRATED
 
 HOME MASTERS FRONT IN MAIN
-→ MUST NOT BE CLAIMED AS INTEGRATED BEFORE MERGE
-
-AFTER GOVERNED MERGE OF CLEAN FINAL HEAD
-→ CONCLUDED / GOVERNED / INTEGRATED
+→ MUST NOT BE CLAIMED AS INTEGRATED WHILE THIS CHANGESET IS ABSENT FROM MAIN
 ```
 
-A atualização desta autoridade para `v3.35.0` faz parte do changeset de fechamento e não constitui, sozinha, integração no `main`. O HEAD final da PR #377 deve repetir Semantic + Mechanical + revisão independente antes de qualquer decisão de merge.
+A atualização desta autoridade para `v3.35.0` integra o changeset de fechamento. Enquanto este changeset estiver ausente do `main`, essa atualização não constitui integração. A decisão governada de merge exige que o HEAD final da PR #377 repita Semantic + Mechanical + revisão independente antes de qualquer integração.
 
 A fila posterior permanece bloqueada:
 
