@@ -2,7 +2,7 @@
 id: GKR-HOME-MASTERS-REMEDIATION-001
 title: Home Masters — Adjudicação de Remediação
 status: active
-version: 1.2.1
+version: 1.3.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-13
 normative: true
@@ -323,16 +323,17 @@ Nenhuma remediação estrutural adicional é necessária para Pessoa, O/C, Media
 
 Media e Ads já possuem linguagem suficiente de handoff, aceite e limites. Pessoa e O/C permanecem sem gap arquitetural provado.
 
-## 8. Estado C1–C10 após esta remediação documental
+## 8. Estado C1–C10 no HEAD de elegibilidade
+
+A remediação documental foi integralmente revalidada no HEAD `39277f305fced32ce351c113ab7e7d5d7cc76242`.
 
 ```text
 C1 — REPO-WIDE INVENTORY
 → PASS
 
 C2 — MASTER / ID / PATH / VERSION / STATUS / MATURITY
-→ PASS IN THIS DOCUMENTARY DELTA
+→ PASS
 → GOVERNED MATURITY ALIGNED TO GKR-STATE-001 FOR ALL 8 HOMES
-→ REQUIRES C9 REVALIDATION ON THE NEW HEAD
 
 C3 — PUBLIC × AUTHENTICATED × OTHER SURFACES
 → PASS
@@ -341,9 +342,9 @@ C4 — INDIVIDUALIZATION IN MENU
 → PASS
 
 C5 — HANDOFF SUFFICIENCY
-→ PASS IN THIS DOCUMENTARY DELTA
+→ PASS
 → MALL + TRAVEL CONTRACTS EXPLICITLY SUPPLIED
-→ REQUIRES C9 REVALIDATION ON THE NEW HEAD
+→ REMEDIATION DISCOVERABLE VIA MKDOCS NAVIGATION
 
 C6 — NEW MASTER ONLY IF PROVEN
 → PASS
@@ -351,11 +352,16 @@ C6 — NEW MASTER ONLY IF PROVEN
 C7 — AUTHORITY PRECEDENCE
 → PASS
 
-C8 — SEMANTIC + MECHANICAL ON EXACT FINAL HEAD
-→ PENDING RERUN AFTER THIS REMEDIATION
+C8 — SEMANTIC + MECHANICAL ON EXACT ELIGIBILITY HEAD
+→ PASS
+→ SEMANTIC #991 = SUCCESS
+→ MECHANICAL #1236 = SUCCESS
 
-C9 — INDEPENDENT GOVERNED REVIEW ON EXACT FINAL HEAD
-→ PENDING REREVIEW AFTER P1 REMEDIATION
+C9 — INDEPENDENT GOVERNED REVIEW ON EXACT ELIGIBILITY HEAD
+→ PASS
+→ CODEX = DIDN'T FIND ANY MAJOR ISSUES
+→ REVIEWED COMMIT = 39277f305f
+→ OPEN REVIEW THREADS = 0
 
 C10 — ZERO IMPLEMENTATION INFERENCE
 → PASS
@@ -363,7 +369,7 @@ C10 — ZERO IMPLEMENTATION INFERENCE
 
 Esta adjudicação prevalece somente para o inventário de fechamento, o significado de handoff, os contratos complementares de Mall/Travel e os estados temporais explicitamente normalizados acima. Ela não substitui a arquitetura semântica dos Masters.
 
-## 9. Estado governado e gates restantes
+## 9. Histórico de revisão e remediação
 
 Base física no início desta remediação:
 
@@ -374,8 +380,6 @@ MAIN
 
 A PR #365 permanece frente independente em HOLD. No início desta remediação, seu HEAD continuava `3a946a2c2ae840d6ac6f5dba91242479d46db2e5`, divergindo do `main` acima com `ahead_by = 29` e `behind_by = 61`.
 
-Histórico de revisão da PR #377:
-
 ```text
 REVIEW 1 @ 7eb25a694795d469371865289357de42cf958845
 → P1 C2 — INVENTORY MISSING VERSION / STATUS / MATURITY
@@ -385,24 +389,76 @@ REVIEW 1 @ 7eb25a694795d469371865289357de42cf958845
 REVIEW 2 @ b51e7e1bb21383d1933553f8953e5532a474fcff
 → C5 FINDING CLEARED
 → P1 C2 — PESSOA / O-C GOVERNED MATURITY NOT ALIGNED TO GKR-STATE-001
-→ REMEDIATED BY THIS REVISION
+→ REMEDIATED @ 3d4357c12d9d3fea7ae69b84efe13769ca2902b1
+
+REVIEW 3 @ 3d4357c12d9d3fea7ae69b84efe13769ca2902b1
+→ P1 C5 — REMEDIATION CONTRACT NOT DISCOVERABLE FROM CANONICAL NAVIGATION
+→ ACCEPTED
+→ REMEDIATED BY MKDOCS NAVIGATION EXPOSURE
+→ NEW HEAD 39277f305fced32ce351c113ab7e7d5d7cc76242
+
+REVIEW 4 @ 39277f305fced32ce351c113ab7e7d5d7cc76242
+→ DIDN'T FIND ANY MAJOR ISSUES
+→ C9 PASS
 ```
 
-O fechamento formal continua condicionado à repetição dos gates no novo HEAD:
+## 10. Formal closure changeset × integração em `main`
+
+O HEAD `39277f...` comprova a elegibilidade de fechamento. Alterações documentais posteriores que formalizam esse fechamento criam novo HEAD e, por isso, **não herdam automaticamente C8/C9**.
 
 ```text
-SEMANTIC VALIDATION ON EXACT FINAL HEAD
-→ REQUIRED
+ELIGIBILITY HEAD 39277f...
+→ C1–C10 PASS
 
-MECHANICAL VALIDATION ON EXACT FINAL HEAD
-→ REQUIRED
+FORMAL CLOSURE CHANGESET
+→ IN PROGRESS IN PR #377
 
-INDEPENDENT GOVERNED REREVIEW ON EXACT FINAL HEAD
-→ REQUIRED
+PR #377 MERGED
+→ NO
 
-UNTIL CLEAN
-→ HOME MASTERS FRONT NOT FORMALLY CLOSED
-→ PR #365 REMAINS HOLD
-→ DESIGN NOT RELEASED
-→ PRODUCT ENGINEERING NOT RELEASED
+CURRENT MAIN
+→ HOME MASTERS NOT YET INTEGRATED
+
+AFTER GOVERNED MERGE OF A CLEAN FINAL CLOSURE HEAD
+→ HOME MASTERS FRONT = CONCLUDED / GOVERNED / INTEGRATED
 ```
+
+Antes de qualquer merge do changeset final de fechamento, o HEAD final deve repetir:
+
+```text
+SEMANTIC VALIDATION ON EXACT FINAL CLOSURE HEAD
+→ REQUIRED
+
+MECHANICAL VALIDATION ON EXACT FINAL CLOSURE HEAD
+→ REQUIRED
+
+INDEPENDENT GOVERNED REVIEW ON EXACT FINAL CLOSURE HEAD
+→ REQUIRED
+```
+
+Até que esses três gates estejam limpos no mesmo HEAD:
+
+```text
+PR #365
+→ REMAINS OPEN / DRAFT / NOT MERGED / HOLD
+
+O/C STATE MAP
+→ NOT RELEASED
+
+O/C PRIORITY FLOWS
+→ NOT RELEASED
+
+O/C NAVIGATION MATERIALIZATION
+→ NOT RELEASED
+
+O/C AUTHENTICATED WIREFRAMES
+→ NOT RELEASED
+
+DESIGN / UI / PROTOTYPE
+→ NOT RELEASED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
+```
+
+Após eventual merge governado da PR #377, o primeiro ato é reconfirmar o `main` real e somente então reconciliar a PR #365, sem rebase ou merge cego.
