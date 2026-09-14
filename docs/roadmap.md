@@ -597,7 +597,7 @@ Nenhuma das seis Homes exigiu rebuild conceitual. As divergências eram de propa
 
 A evidência consolidada está em `GKR-SPECIALIZED-HOMES-AUDIT-001 v0.2.0`.
 
-A interpretação vigente está em `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.3`, cuja precedência é restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando identidade e fronteiras dos Produtos; os Masters continuam preservando a arquitetura narrativa/funcional.
+A interpretação vigente está em `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.4`, cuja precedência é restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando identidade e fronteiras dos Produtos; os Masters continuam preservando a arquitetura narrativa/funcional.
 
 Resultado:
 
