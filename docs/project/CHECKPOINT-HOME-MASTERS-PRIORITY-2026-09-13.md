@@ -2,13 +2,14 @@
 id: GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
 title: Checkpoint de Prioridade — Documentos Mestres das Homes e Fila de Retomada
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-13
 normative: false
 maturity: execution_continuity_checkpoint
 related:
   - GKR-STATE-001
+  - GKR-HOME-MASTERS-REMEDIATION-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-INTELLIGENCE-DASHBOARD-KPI-001
@@ -210,3 +211,100 @@ THEN
 ```
 
 Qualquer alteração futura da fila deve ser reconciliada com o estado real do GitHub antes da execução.
+
+## 7. Adjudicação formal de fechamento — 2026-09-13
+
+A elegibilidade para fechamento da frente foi comprovada no HEAD exato:
+
+```text
+ELIGIBILITY HEAD
+→ 39277f305fced32ce351c113ab7e7d5d7cc76242
+
+C1–C10
+→ PASS
+
+SEMANTIC #991
+→ SUCCESS
+
+MECHANICAL #1236
+→ SUCCESS
+
+INDEPENDENT CODEX REVIEW
+→ DIDN'T FIND ANY MAJOR ISSUES
+→ REVIEWED COMMIT 39277f305f
+
+OPEN REVIEW THREADS
+→ 0
+```
+
+O terceiro review anterior havia identificado um P1 de discoverability da adjudicação de remediação. O finding foi aceito, remediado pela exposição de `GKR-HOME-MASTERS-REMEDIATION-001` no `mkdocs.yml` e revalidado no quarto review limpo acima.
+
+### 7.1 Fechamento documental ≠ integração em `main`
+
+Este documento registra o changeset formal de fechamento, mas não antecipa sua eficácia no `main`.
+
+```text
+FORMAL CLOSURE CHANGESET PREPARED
+→ YES
+
+PR #377 MERGED
+→ NO
+
+HOME MASTERS FRONT IN CURRENT MAIN
+→ NOT YET CONCLUDED / GOVERNED / INTEGRATED
+
+HOME MASTERS FRONT AFTER GOVERNED MERGE OF PR #377
+→ CONCLUDED / GOVERNED / INTEGRATED
+```
+
+Qualquer novo HEAD gerado pelo pacote formal de fechamento deve repetir Semantic + Mechanical + revisão independente antes de qualquer decisão de merge.
+
+### 7.2 Estado físico da fila preservada
+
+Na reconfirmação realizada durante o fechamento:
+
+```text
+PR #365
+→ OPEN / DRAFT / NOT MERGED
+→ HOLD
+
+HEAD
+→ 3a946a2c2ae840d6ac6f5dba91242479d46db2e5
+
+REFERENCE MAIN
+→ 830b3f204a9e8e74aa65f73fb1fc68f5f228fade
+
+COMPARE REFERENCE MAIN → PR #365 HEAD
+→ DIVERGED
+→ ahead_by = 29
+→ behind_by = 61
+```
+
+Após eventual merge governado da PR #377, o primeiro ato da fila é reconfirmar o `main` real e reconciliar a PR #365 contra essa base, sem rebase ou merge cego.
+
+### 7.3 Downstream permanece bloqueado
+
+```text
+PR #365 RESUME
+→ NOT RELEASED BEFORE HOME-MASTERS INTEGRATION
+
+O/C STATE MAP
+→ NOT RELEASED
+
+O/C PRIORITY FLOWS
+→ NOT RELEASED
+
+O/C NAVIGATION MATERIALIZATION
+→ NOT RELEASED
+
+O/C AUTHENTICATED WIREFRAMES
+→ NOT RELEASED
+
+DESIGN / UI / PROTOTYPE
+→ NOT RELEASED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
+```
+
+Nenhuma dessas frentes é liberada pelo simples fato de C1–C10 terem passado no HEAD de elegibilidade.
