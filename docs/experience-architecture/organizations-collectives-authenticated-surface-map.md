@@ -322,11 +322,12 @@ Uma mesma entrada estável pode participar de mais de um domínio lógico sem se
 
 ### 7.5 Relações
 
-**Função:** concentrar relações do Coletivo com Organizações, outros Coletivos ou contrapartes, preservando autonomia e autoridade bilateral.
+**Função:** concentrar relações do Coletivo com Organizações e outros Coletivos, preservando autonomia e autoridade bilateral.
 
 Crosswalk vigente:
 
-- `GKR-SURF-COL-008` — relações institucionais.
+- `GKR-SURF-COL-008` — relação Organização–Coletivo, no escopo estável definido por `UXA-019`;
+- relações Coletivo–Coletivo permanecem sem ID estável dedicado nesta frente; a lacuna é explícita e não autoriza ampliar semanticamente `GKR-SURF-COL-008`.
 
 ```text
 APOIO
@@ -398,7 +399,7 @@ Esta capacidade **não** é uma função genérica de planejamento do Coletivo.
 | Coletivo — Atividades e Oportunidades | `GKR-SURF-COL-006` | preservado; sem ID novo por inferência |
 | Coletivo — Participação | `GKR-SURF-COL-003..005` | preservados; superfícies da Pessoa permanecem separadas |
 | Coletivo — Governança e Proteção | `GKR-SURF-COL-005`, `GKR-SURF-COL-006`, `GKR-SURF-COL-007` | responsabilidades distintas preservadas; `COL-005` somente no recorte de comunicação oficial ligada a decisão/governança |
-| Coletivo — Relações | `GKR-SURF-COL-008` | preservado |
+| Coletivo — Relações | `GKR-SURF-COL-008` para Organização–Coletivo; sem ID dedicado para Coletivo–Coletivo | `COL-008` preservado no escopo de `UXA-019`; lacuna explícita para relações Coletivo–Coletivo |
 | Coletivo — Aprendizados e Evidências | sem ID dedicado | nenhum ID criado; requisito transversal |
 | Coletivo — Coletivo e Autoridade | `GKR-SURF-COL-002` parcialmente; sem ID exclusivo | nenhum ID novo; autoridade transversal |
 | Coletivo — Planos e Capacidade comercial | `GKR-SURF-COL-301..304`, `GKR-SURF-BND-002` | fluxo especializado separado |
