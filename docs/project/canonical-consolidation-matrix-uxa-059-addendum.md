@@ -16,6 +16,7 @@ related:
   - GKR-UX-ORGCOL-UX-STATE-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-STATE-001
   - ROADMAP-12.35.0
   - M7.61
@@ -30,7 +31,7 @@ Este adendo registra o impacto documental da UXA-059 sobre a ordem de materializ
 
 A UXA-059 organiza contratos já integrados. Ela não altera o conteúdo funcional das UXA-056, UXA-057 e UXA-058, não cria wireframes e não inicia implementação.
 
-A reconciliação de 2026-08-30 preserva este adendo como **proveniência da ordem histórica de materialização e de seus guardrails metodológicos**. Essa ordem não constitui autorização vigente de Design ou materialização. O estado atual da experiência principal autenticada é governado por `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001` e `GKR-UX-ORGCOL-UX-STATE-001`.
+A reconciliação de 2026-08-30 preserva este adendo como **proveniência da ordem histórica de materialização e de seus guardrails metodológicos**. Essa ordem não constitui autorização vigente de Design ou materialização. O estado atual da experiência principal autenticada é governado por `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001`, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` e `GKR-UX-ORGCOL-UX-STATE-001`.
 
 ## 2. Autoridade introduzida
 
@@ -62,13 +63,14 @@ Esses critérios continuam preservados como método/proveniência. Qualquer uso 
 | avaliação e reputação | UXA-057 |
 | interações, recomendações e conexões | UXA-058 |
 | atores, autoridades e jobs da UX principal autenticada | GKR-UX-ORGCOL-AUTH-JOBS-001 |
-| Arquitetura da Informação autenticada | GKR-UX-ORGCOL-AUTH-IA-001 — definida pre-surface-map |
+| Arquitetura da Informação autenticada | GKR-UX-ORGCOL-AUTH-IA-001 — definida documentalmente; maturidade própria permanece `pre-surface-map` |
+| Surface Map autenticado | GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0 — definido / canônico documental |
 | estado de UX/wireframes O/C | GKR-UX-ORGCOL-UX-STATE-001 |
 | Opportunity Boost | UXA-038 a UXA-055 |
 | Resultados Empresariais | BA-STR-002; COD-018 |
 | Modelo Econômico | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
 
-A UXA-059 não substitui as autoridades funcionais atuais. Ela preserva a metodologia histórica de coordenação sem antecipar o mapa final de superfícies ou a materialização principal autenticada.
+A UXA-059 não substitui as autoridades funcionais atuais. Ela preserva a metodologia histórica de coordenação sem redefinir o Surface Map canônico nem autorizar State Map, fluxos prioritários ou materialização principal autenticada.
 
 ## 4. Cobertura consolidada
 
@@ -125,7 +127,7 @@ Essa regra metodológica não autoriza a criação de SVGs enquanto Design/mater
 
 Os princípios funcionais úteis recuperados desses registros foram absorvidos pelas autoridades vigentes. A materialização/validação posterior do **Início do Participante** possui maturidade própria em `UXA-095/096` no recorte da Pessoa participante.
 
-Qualquer futura materialização da UX principal administrativa do Coletivo deverá partir de Jobs + IA autenticada vigentes, passar pelo mapa final de superfícies quando autorizado e não reutilizar o antigo SVG de `UXA-016` como baseline.
+Qualquer futura materialização da UX principal administrativa do Coletivo deverá partir de Jobs + IA autenticada vigentes e do Surface Map canônico `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, sem reutilizar o antigo SVG de `UXA-016` como baseline e sem inferir State Map, fluxo, wireframe ou Design por decorrência.
 
 Os arquivos históricos permanecem fisicamente preservados enquanto não houver autorização humana separada e explícita para seu cleanup, sem autoridade visual vigente. `F-006` permanece aberto durante eventual remoção e os gates pós-cleanup.
 
@@ -174,7 +176,7 @@ A UXA-059 não altera:
 - produção;
 - estado da Engenharia de Produto.
 
-A reconciliação atual também não altera contagens físicas, não remove arquivos e não inicia surface map, wireframe, UI ou implementação.
+A reconciliação atual também não altera contagens físicas, não remove arquivos e não inicia State Map, fluxos prioritários, wireframe, UI, protótipo ou implementação. O Surface Map autenticado é governado separadamente por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`.
 
 ## 12. Estado de maturidade
 
@@ -200,15 +202,20 @@ AUTHENTICATED O/C JOBS
 → DEFINED
 
 AUTHENTICATED O/C IA
-→ DEFINED PRE-SURFACE-MAP
+→ DEFINED DOCUMENTALLY
+→ IA MATURITY REMAINS PRE-SURFACE-MAP BY OWN SCOPE
 
-FINAL SURFACE MAP
-→ NOT DEFINED
+AUTHENTICATED SURFACE MAP
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+
+STATE MAP / PRIORITY FLOWS
+→ NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
-→ NOT DEFINED
+→ NOT STARTED
 
-DESIGN / MATERIALIZATION
+DESIGN / UI / PROTOTYPE
 → NOT AUTHORIZED
 
 PRODUCT ENGINEERING
@@ -231,12 +238,19 @@ O gate vigente permanece:
 CURRENT AUTHORITIES
 → GKR-UX-ORGCOL-AUTH-JOBS-001
 → GKR-UX-ORGCOL-AUTH-IA-001
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 → GKR-UX-ORGCOL-UX-STATE-001
 
-FINAL SURFACE MAP
-→ NOT DEFINED
+AUTHENTICATED SURFACE MAP
+→ DEFINED / CANONICAL DOCUMENTARY
 
-WIREFRAME / UI / PROTOTYPE / IMPLEMENTATION
+STATE MAP / PRIORITY FLOWS
+→ NOT MATERIALIZED
+
+MAIN AUTHENTICATED WIREFRAMES
+→ NOT STARTED
+
+DESIGN / UI / PROTOTYPE / IMPLEMENTATION
 → NOT AUTHORIZED
 ```
 
