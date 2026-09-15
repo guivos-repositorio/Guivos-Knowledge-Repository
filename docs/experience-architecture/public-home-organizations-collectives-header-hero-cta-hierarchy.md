@@ -49,7 +49,7 @@ Estado de autoridade:
 GKR-UX-HOME-OC-MASTER-001 v1.0.0
 → autoridade de consumo vigente da Home O/C
 
-GKR-UX-HOME-OC-NAV-001 v0.2.0
+GKR-UX-HOME-OC-NAV-001 v0.3.0
 → detalhe especializado reconciliado de navegação / Hero / CTAs
 → não autoriza materialização
 ```
@@ -907,7 +907,7 @@ GKR-UX-HOME-OC-MASTER-001 v1.0.0
 GKR-UX-HOME-OC-NARR-001 v0.2.0
 → detalhe narrativo reconciliado
 
-GKR-UX-HOME-OC-NAV-001 v0.2.0
+GKR-UX-HOME-OC-NAV-001 v0.3.0
 → detalhe navegacional reconciliado
 
 AUDITORIA INTEGRAL DO GKR
