@@ -170,13 +170,14 @@ OPORTUNIDADE PUBLICADA
 
 ### 5.3 Relações
 
-**Função:** concentrar relações institucionais com finalidade, autoridade, compromissos, recursos, dados ou responsabilidades materialmente relevantes.
+**Função:** concentrar relações da Organização com Coletivos e outras Organizações, com finalidade, autoridade, compromissos, recursos, dados ou responsabilidades materialmente relevantes.
 
 Crosswalk vigente:
 
-- `GKR-SURF-ORG-004` — proposta de relação com Coletivo;
-- `GKR-SURF-ORG-005` — avaliação e negociação bilateral;
-- `GKR-SURF-ORG-006` — relação ativa e revisão.
+- `GKR-SURF-ORG-004` — proposta de relação Organização–Coletivo, no escopo estável definido por `UXA-019`;
+- `GKR-SURF-ORG-005` — avaliação e negociação da relação Organização–Coletivo, no escopo estável definido por `UXA-019`;
+- `GKR-SURF-ORG-006` — relação Organização–Coletivo ativa e revisão, no escopo estável definido por `UXA-019`;
+- relações Organização–Organização permanecem sem ID estável dedicado nesta frente; a lacuna é explícita e não autoriza ampliar semanticamente `GKR-SURF-ORG-004..006`.
 
 Essas entradas permanecem objetos distintos. A relação não transfere automaticamente autoridade sobre a contraparte.
 
@@ -391,7 +392,7 @@ Esta capacidade **não** é uma função genérica de planejamento do Coletivo.
 |---|---|---|
 | Organização — Visão Geral | `GKR-SURF-ORG-001` | preservado |
 | Organização — Oportunidades e Programas | `GKR-SURF-ORG-002`, `GKR-SURF-ORG-003` | preservados e separados |
-| Organização — Relações | `GKR-SURF-ORG-004..006` | preservados e separados |
+| Organização — Relações | `GKR-SURF-ORG-004..006` para Organização–Coletivo; sem ID dedicado para Organização–Organização | `ORG-004..006` preservados no escopo de `UXA-019`; lacuna explícita para relações Organização–Organização |
 | Organização — Responsabilidades e Evidências | `GKR-SURF-ORG-007` | preservado; maturidade não promovida |
 | Organização — Organização e Autoridade | sem ID dedicado | nenhum ID criado; requisito transversal |
 | Organização — Planos e Capacidade comercial | `GKR-SURF-ORG-301..304`, `GKR-SURF-BND-002` | fluxo especializado separado |
