@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-UXA-017
 title: Matriz de Consolidação Canônica — Adendo da Validação Funcional da Visão Geral da Organização
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-12
 parent: GKR-CANON-MATRIX-001
 depends_on:
   - UXA-014
@@ -13,6 +13,7 @@ depends_on:
   - GKR-UX-ORGCOL-AUTH-IA-001
 related:
   - M7.19.9
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
 normative: false
 ---
 
@@ -70,4 +71,4 @@ Ele também não reativa `UXA-015` ou `UXA-017`, não restaura sua autoridade e 
 
 No estágio original, a validação funcional do Início do Coletivo era apresentada como etapa seguinte, com relações entre Organizações e Coletivos e Resultados Empresariais em sequência posterior.
 
-Essa ordem permanece apenas como proveniência histórica. No estado vigente, Jobs + Arquitetura da Informação autenticada já estão definidos em `pre-surface-map`; mapa final de superfícies e wireframes principais autenticados permanecem pendentes e não são autorizados por este adendo.
+Essa ordem permanece apenas como proveniência histórica. No estado vigente, Jobs + Arquitetura da Informação autenticada estão definidos; o Surface Map lógico-documental autenticado está **definido/canônico** em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`. O State Map, os fluxos prioritários, a navegação materializada e os wireframes principais autenticados permanecem pendentes/não materializados e não são autorizados por este adendo.

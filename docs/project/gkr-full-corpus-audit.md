@@ -1817,7 +1817,7 @@ GKR-UX-HOME-OC-MASTER-001 v1.0.0
 GKR-UX-HOME-OC-NARR-001 v0.2.0
 → progressão e macroexperiências reconciliadas
 
-GKR-UX-HOME-OC-NAV-001 v0.2.0
+GKR-UX-HOME-OC-NAV-001 v0.3.0
 → Header, Hero, CTAs e navegação reconciliados
 
 GKR-UX-HOME-OC-SYS-001 v0.2.0
@@ -1886,7 +1886,7 @@ Nenhuma Home exigiu rebuild conceitual. O problema dominante era propagação do
 
 A evidência detalhada está em `GKR-SPECIALIZED-HOMES-AUDIT-001 v0.2.0`.
 
-A interpretação documental vigente das seis famílias foi consolidada em `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.4`, com precedência restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando os Produtos e os Masters continuam preservando a arquitetura narrativa/funcional.
+A interpretação documental vigente das seis famílias foi consolidada em `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.5`, com precedência restrita a estado atual, dependências vigentes, conflitos de continuidade e gates. As GPAs continuam governando os Produtos e os Masters continuam preservando a arquitetura narrativa/funcional.
 
 Estado reconciliado:
 

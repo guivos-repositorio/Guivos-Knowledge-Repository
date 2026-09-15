@@ -148,7 +148,7 @@ O incremento não criou:
 - tecnologia;
 - implementação.
 
-O registro histórico também não autoriza agora surface map, wireframe, UI, protótipo, implementação ou avanço da Product Engineering.
+O registro histórico também não é a autoridade do Surface Map hoje canônico e não autoriza State Map, fluxos prioritários, wireframe, UI, protótipo, implementação ou avanço da Product Engineering.
 
 ## 10. Próximo ato recomendado naquele estágio
 
@@ -156,4 +156,4 @@ Naquele estágio, após integração e nova autorização, era recomendado:
 
 > UXA-060 — Wireframes Móveis de Explorar Coletivos e Resultados de Busca.
 
-Essa recomendação é histórica e não constitui próximo gate vigente. O estado atual da experiência principal autenticada é governado pelas autoridades atuais de Jobs + IA em `pre-surface-map`, com mapa final de superfícies e wireframes principais autenticados ainda pendentes e sem autorização automática.
+Essa recomendação é histórica e não constitui próximo gate vigente. O estado atual da experiência principal autenticada é governado por Jobs + IA, cujas maturidades próprias permanecem `pre-surface-map`, e por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, já definido como Surface Map canônico documental. State Map e fluxos prioritários permanecem não materializados; wireframes principais autenticados permanecem não iniciados, sem autorização automática de Design, UI, protótipo ou implementação.

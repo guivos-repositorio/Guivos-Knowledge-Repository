@@ -2,14 +2,15 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.35.0
+version: 3.36.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-13
+last_updated: 2026-09-14
 depends_on:
   - GKR-STATE-001
   - UXA-101
 related:
   - M7.88
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-PER002-MAT-ELIGIBILITY-001
   - GKR-UX-PER002-DESIGN-AUTH-001
   - GKR-UX-PER002-DESIGN-DELIVERY-001
@@ -34,7 +35,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.35.0
+→ 3.36.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -417,11 +418,18 @@ GKR-UX-ORGCOL-AUTH-JOBS-001
 
 GKR-UX-ORGCOL-AUTH-IA-001
 → Arquitetura da Informação definida pre-surface-map
+
+GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ mapa lógico-documental canônico das superfícies autenticadas O/C
+→ stable GKR-SURF-* IDs preservados por crosswalk
+→ não cria namespace paralelo
 ```
 
-Ainda não são canônicos:
+O Surface Map é canônico em nível lógico-documental. Permanecem pendentes e não podem ser inferidos a partir dele:
 
-- mapa final de superfícies pós-auditoria;
+- State Map autenticado O/C;
+- fluxos prioritários O/C;
+- materialização de navegação;
 - wireframe principal da Organização;
 - wireframe principal do Coletivo;
 - UI;
@@ -432,10 +440,15 @@ Ainda não são canônicos:
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.35.0** |
+| Registro do Estado Atual | **3.36.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
+| O/C Authenticated Surface Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0** |
+| O/C State Map | **NOT MATERIALIZED** |
+| O/C Priority Flows | **NOT MATERIALIZED** |
+| O/C Navigation Materialization | **NOT MATERIALIZED** |
+| O/C Authenticated Wireframes | **NOT STARTED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
 | Baseline final pós-auditoria | **CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a** |
 | Lotes concluídos | **A / B / C / D / E / F / G** |

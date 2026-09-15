@@ -21,6 +21,7 @@ related:
   - GKR-UX-ORGCOL-UX-STATE-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - M7.61
 normative: false
 ---
@@ -55,13 +56,18 @@ ATORES / AUTORIDADES / JOBS
 → DEFINED
 
 AUTHENTICATED INFORMATION ARCHITECTURE
-→ DEFINED PRE-SURFACE-MAP
+→ DEFINED DOCUMENTALLY
+→ IA MATURITY REMAINS PRE-SURFACE-MAP BY OWN SCOPE
 
-FINAL SURFACE MAP
-→ NOT DEFINED
+AUTHENTICATED SURFACE MAP
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+
+STATE MAP / PRIORITY FLOWS
+→ NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
-→ NOT DEFINED
+→ NOT STARTED
 
 DESIGN / MATERIALIZATION
 → NOT AUTHORIZED
@@ -522,7 +528,7 @@ Os princípios funcionais úteis recuperados desses registros foram absorvidos p
 
 Se uma futura materialização da UX principal do Coletivo for autorizada, ela deverá:
 
-- partir de `GKR-UX-ORGCOL-AUTH-JOBS-001` e `GKR-UX-ORGCOL-AUTH-IA-001`;
+- partir de `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001` e do Surface Map canônico `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`;
 - preservar propósito antes de atividade;
 - manter pertencimento, disponibilidade, papel e autoridade separados;
 - incorporar os canais especializados sem virar feed;
@@ -721,7 +727,7 @@ Na integração original da UXA-059, a ordem recomendada era:
 
 Essa sequência registra **proveniência histórica**. Partes dela foram posteriormente materializadas e validadas por autoridades próprias, inclusive `UXA-095/096`; ela não reserva hoje uma sequência rígida nem autoriza nova materialização.
 
-A retomada futura da UX principal autenticada deve obedecer ao estado vigente `Jobs + IA autenticada definida pre-surface-map`, ao fechamento da auditoria aplicável e a nova autorização humana específica.
+A retomada futura da UX principal autenticada deve obedecer a Jobs + IA vigentes em suas maturidades próprias, ao Surface Map canônico `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, ao fechamento da auditoria aplicável e a nova autorização humana específica, sem inferir State Map, fluxo ou wireframe.
 
 ## 29. Situação histórica após a integração e estado atual
 
@@ -746,7 +752,18 @@ UXA-016 / UXA-018
 → SUPERSEDED / HISTORICAL ONLY
 
 JOBS + AUTHENTICATED IA
-→ DEFINED PRE-SURFACE-MAP
+→ DEFINED DOCUMENTALLY
+→ IA MATURITY REMAINS PRE-SURFACE-MAP BY OWN SCOPE
+
+AUTHENTICATED SURFACE MAP
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+
+STATE MAP / PRIORITY FLOWS
+→ NOT MATERIALIZED
+
+MAIN AUTHENTICATED WIREFRAMES
+→ NOT STARTED
 
 NEW MATERIALIZATION
 → NOT AUTHORIZED
@@ -813,11 +830,18 @@ O gate vigente é:
 CURRENT AUTHORITIES
 → GKR-UX-ORGCOL-AUTH-JOBS-001
 → GKR-UX-ORGCOL-AUTH-IA-001
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 
-FINAL SURFACE MAP
-→ NOT DEFINED
+AUTHENTICATED SURFACE MAP
+→ DEFINED / CANONICAL DOCUMENTARY
 
-DESIGN / WIREFRAME / UI / PROTOTYPE
+STATE MAP / PRIORITY FLOWS
+→ NOT MATERIALIZED
+
+MAIN AUTHENTICATED WIREFRAMES
+→ NOT STARTED
+
+DESIGN / UI / PROTOTYPE / IMPLEMENTATION
 → NOT AUTHORIZED
 ```
 

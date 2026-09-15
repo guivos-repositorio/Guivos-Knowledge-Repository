@@ -65,16 +65,20 @@ O modelo funcional, as taxonomias e as regras de governança deste programa cont
 ```text
 JOBS + AUTHENTICATED IA
 → DEFINED DOCUMENTALLY
-→ PRE-SURFACE-MAP
+→ IA MATURITY REMAINS PRE-SURFACE-MAP BY OWN SCOPE
 
-FINAL SURFACE MAP
-→ PENDING
+AUTHENTICATED SURFACE MAP
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+
+STATE MAP
+→ NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
-→ PENDING
+→ NOT STARTED
 ```
 
-Nenhuma leitura da UXA-070 reativa baselines `superseded` ou autoriza surface map, wireframe, UI, protótipo ou implementação.
+Nenhuma leitura da UXA-070 reativa baselines `superseded` ou autoriza State Map, wireframe, UI, protótipo ou implementação.
 
 ## 2. Decisão estrutural
 
@@ -217,7 +221,7 @@ identidade, unidade e autoridade
 → decisões e Próximos Passos justificados
 ```
 
-No estágio original da UXA-070, `UXA-015` e `UXA-017` eram usadas como referências materializadas/validadas da Visão Geral da Organização. Ambas estão hoje `superseded`; essa afirmação é preservada somente como **proveniência histórica** e não constitui baseline vigente nem dependência funcional. A experiência autenticada atual é governada pelas autoridades vigentes de Organização/Coletivo; Jobs + IA autenticada estão definidos em `pre-surface-map`, enquanto mapa final de superfícies e wireframes principais autenticados permanecem pendentes.
+No estágio original da UXA-070, `UXA-015` e `UXA-017` eram usadas como referências materializadas/validadas da Visão Geral da Organização. Ambas estão hoje `superseded`; essa afirmação é preservada somente como **proveniência histórica** e não constitui baseline vigente nem dependência funcional. A experiência autenticada atual é governada pelas autoridades vigentes de Organização/Coletivo; Jobs + IA autenticada permanecem definidas em sua maturidade própria `pre-surface-map`, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o Surface Map lógico-documental canônico, e State Map / wireframes principais autenticados permanecem não materializados/não iniciados.
 
 ### 6.5 Relação entre Organização e Coletivo
 

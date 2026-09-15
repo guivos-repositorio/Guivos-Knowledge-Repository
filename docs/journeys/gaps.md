@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.35.0
+version: 0.36.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-12
 related:
   - UXA-059
   - UXA-090
@@ -31,6 +31,7 @@ related:
   - GKR-UX-ORGCOL-UX-STATE-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -41,12 +42,12 @@ normative: false
 
 Este documento é observacional e não promocional. A D5-C1 fechou a identidade arquitetural de `Meus Objetivos`, `Meus Próximos Passos` e `Minha Evolução`; a D5-C2 fechou a ausência visual do estado-base; a D5-C3 fechou a validação funcional local dos três SVGs; a D5-C4A fechou a ausência de origem visual inequívoca no estado recorrente de Hoje e governou o contrato semântico; a D5-C4B fecha a **lacuna específica de validação integrada de `TRN-008..013`** no limite documental.
 
-A reconciliação pós-PR #313/#314 revelou lacunas da experiência principal autenticada de Organização e Coletivo que haviam sido ocultadas por artefatos prematuros. Posteriormente, `GKR-UX-ORGCOL-AUTH-JOBS-001` fechou documentalmente atores, autoridades e jobs, e `GKR-UX-ORGCOL-AUTH-IA-001` definiu a Arquitetura da Informação pré-surface-map.
+A reconciliação pós-PR #313/#314 revelou lacunas da experiência principal autenticada de Organização e Coletivo que haviam sido ocultadas por artefatos prematuros. Posteriormente, `GKR-UX-ORGCOL-AUTH-JOBS-001` fechou documentalmente atores, autoridades e jobs, `GKR-UX-ORGCOL-AUTH-IA-001` definiu a Arquitetura da Informação em seu limite pre-surface-map e `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` definiu o mapa lógico-documental canônico de superfícies.
 
 As lacunas principais vigentes são, portanto:
 
-- mapa de superfícies/estados + wireframe principal autenticado da Organização;
-- mapa de superfícies/estados + wireframe principal autenticado do Coletivo.
+- mapa de estados + fluxos prioritários + wireframe principal autenticado da Organização;
+- mapa de estados + fluxos prioritários + wireframe principal autenticado do Coletivo.
 
 `UXA-015..018` permanecem históricos `superseded`. Estados sensíveis/alternativos específicos, V5/UXA-102, D6, D7, cobrança real e demais frentes continuam separadas.
 
@@ -54,7 +55,10 @@ As lacunas principais vigentes são, portanto:
 JOBS + IA AUTENTICADA
 → DEFINIDOS
 
-MAPA DE SUPERFÍCIES + WIREFRAMES PRINCIPAIS
+MAPA LÓGICO DE SUPERFÍCIES
+→ DEFINED / CANONICAL DOCUMENTARY
+
+MAPA DE ESTADOS + FLUXOS PRIORITÁRIOS + WIREFRAMES PRINCIPAIS
 → PENDENTES
 ```
 
@@ -116,15 +120,15 @@ CONTRATO DE ORIGEM/RETORNO DE PLANOS
 
 | Lacuna | IDs relacionados | Estado visual | Estado funcional | Continuidade remanescente |
 |---|---|---|---|---|
-| mapa/wireframe principal autenticado do Coletivo | COL-001/COL-002 e áreas internas | **pendente; UXA-016/018 superseded; UXA-086/087 apenas evidência administrativa local** | fundamentos + jobs + IA existentes | mapa de superfícies → fluxos/estados → wireframe → validação |
-| Visão administrativa local → gestão de solicitações | COL-002; TRN-112; COL-003 | origem local + fluxo especializado materializado | TRN-112 preserva maturidade documental própria | integração final deverá ser revista contra o futuro mapa/wireframe principal |
+| state map/fluxos/wireframe principal autenticado do Coletivo | COL-001/COL-002 e áreas internas | **wireframe pendente; UXA-016/018 superseded; UXA-086/087 apenas evidência administrativa local** | fundamentos + jobs + IA + Surface Map existentes | mapa de estados → fluxos prioritários → wireframe → validação |
+| Visão administrativa local → gestão de solicitações | COL-002; TRN-112; COL-003 | origem local + fluxo especializado materializado | TRN-112 preserva maturidade documental própria | integração final deverá ser revista contra o mapa canônico e o futuro wireframe principal |
 | solicitação ↔ operação responsável | PER-105; TRN-105/106/107/109; COL-003 | materializados | integralmente validada | aprovação fechada em TRN-108 |
 | continuidade pós-aprovação | PER-105; TRN-108; PER-106 | materializados | integralmente validada | nenhuma nesta ligação |
 | Meus Coletivos → Central | PER-106; TRN-110; PER-107 | materializados | integralmente validada | nenhuma nesta ligação |
 | Central → Início do Participante | PER-107; TRN-111; PER-108 | materializados | integralmente validada no recorte da Pessoa participante | estados P0B e áreas internas separados |
-| contexto administrativo → Planos → contexto administrativo | COL-002; TRN-417/418; COL-301 | pacote especializado materializado | TRN-417/418 preservam maturidade do contrato especializado | integração final deverá ser revista contra o futuro mapa/wireframe principal |
+| contexto administrativo → Planos → contexto administrativo | COL-002; TRN-417/418; COL-301 | pacote especializado materializado | TRN-417/418 preservam maturidade do contrato especializado | integração final deverá ser revista contra o mapa canônico e o futuro wireframe principal |
 
-A Arquitetura da Informação do Coletivo já está definida em `GKR-UX-ORGCOL-AUTH-IA-001`; ela não fecha as lacunas visuais acima.
+A Arquitetura da Informação do Coletivo está definida em `GKR-UX-ORGCOL-AUTH-IA-001` e o Surface Map lógico-documental está definido em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`; nenhum deles fecha as lacunas de estados, fluxos ou materialização visual acima.
 
 ## 7. Fila por dependência
 
@@ -135,11 +139,11 @@ A fila não autoriza execução automática.
 | P0B | Meus Coletivos | PER-106 | P0A validado | ativo próprio quando decisão/proteção justificar |
 | P0B | Central | PER-107 | P0A validado | vazio, excesso de volume e baixa conectividade |
 | P0B | Início do Participante | PER-108 | P0A validado | mudança material de decisão/proteção |
-| UX principal | Coletivo autenticado | COL-001/COL-002; COL-004 a 008 | **wireframe principal pendente** | **Jobs + IA concluídos** → mapa de superfícies → fluxos → wireframe → validação |
-| UX principal | Organização autenticada | ORG-001; ORG-004 a 007 | **wireframe principal pendente** | **Jobs + IA concluídos** → mapa de superfícies → fluxos → wireframe → validação |
+| UX principal | Coletivo autenticado | COL-001/COL-002; COL-004 a 008 | **wireframe principal pendente** | **Jobs + IA + Surface Map concluídos documentalmente** → mapa de estados → fluxos prioritários → wireframe → validação |
+| UX principal | Organização autenticada | ORG-001; ORG-004 a 007 | **wireframe principal pendente** | **Jobs + IA + Surface Map concluídos documentalmente** → mapa de estados → fluxos prioritários → wireframe → validação |
 | operação interna | Coletivo | COL-004 a 007; TRN-113 | sem SVGs dedicados | programa, materialização e validação |
 | bilateral | Organização–Coletivo | ORG-004 a 006; COL-008 | sem SVGs | materialização e validação bilateral |
-| institucional | matriz completa | ORG-001; ORG-007 | cobertura parcial; ORG-001 histórico não é baseline | mapa/fluxos e validação futura sob autoridade vigente |
+| institucional | matriz completa | ORG-001; ORG-007 | cobertura parcial; ORG-001 histórico não é baseline | state map/fluxos e validação futura sob autoridade vigente |
 | Conta | Conta/Configurações | PER-009; TRN-406/407 | sem SVG | materializar se arquitetura exigir |
 | comercial | contratação assistida | BND-002; TRN-416/426 | fronteira registrada | contrato comercial/operacional suficiente |
 | patrocinado | integração orgânico–patrocinado | TRN-304/305/306 | materializados parcialmente | validação ponta a ponta específica |
@@ -161,11 +165,14 @@ A lacuna D5-C de `TRN-008..013` não integra mais esta fila após D5-C4B.
 | D5-C3 | validação/reformulação local | PER-010..012 validados | concluído localmente |
 | D5-C4A | origens + contrato dos handoffs | Hoje recorrente reformulado/revalidado | concluído sem promoção |
 | D5-C4B — encerrado | validação integrada de TRN-008..013 | **6 transições integralmente validadas** | GKR-UX-D5-C4B-001 |
-| ORGCOL-IA — encerrado documentalmente | atores/jobs + Arquitetura da Informação | **definidos pré-surface-map** | `GKR-UX-ORGCOL-AUTH-JOBS-001` + `GKR-UX-ORGCOL-AUTH-IA-001` |
-| ORGCOL-UX | UX principal de Organização e Coletivo | **mapa de superfícies e wireframes principais pendentes** | sequência governada posterior; não autorizada automaticamente |
+| ORGCOL-IA — encerrado documentalmente | atores/jobs + Arquitetura da Informação | **definidos no limite próprio pre-surface-map** | `GKR-UX-ORGCOL-AUTH-JOBS-001` + `GKR-UX-ORGCOL-AUTH-IA-001` |
+| ORGCOL-SURFACE-MAP — encerrado documentalmente | mapa lógico de superfícies O/C | **DEFINED / CANONICAL DOCUMENTARY** | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` |
+| ORGCOL-UX | UX principal de Organização e Coletivo | **state map, fluxos e wireframes principais pendentes** | sequência governada posterior; não autorizada automaticamente |
 | V5 | erros, retornos e interrupções | cobertura dispersa | **não iniciada** |
 
 ## 9. Baseline após reconciliação pós-313/314 e Bloco I
+
+Esta seção preserva a baseline histórica do checkpoint indicado pelo título; ela não deve ser lida como inventário físico corrente após F-016-A nem como estado O/C posterior ao Surface Map.
 
 - SVGs físicos no inventário: **121**;
 - associações físicas: **121**;
@@ -185,8 +192,9 @@ A lacuna D5-C de `TRN-008..013` não integra mais esta fila após D5-C4B.
 - `TRN-417/418` e `TRN-427/428` preservam maturidade de contratos especializados, sem provar wireframes principais vigentes;
 - `TRN-406/407` contratadas;
 - atores/autoridades/jobs O/C: **definidos**;
-- Arquitetura da Informação autenticada O/C: **definida pré-surface-map**;
-- mapa final de superfícies O/C: **pendente**;
+- Arquitetura da Informação autenticada O/C: **definida no limite próprio pre-surface-map**;
+- mapa lógico de superfícies O/C: **definido posteriormente / canonical documentary / `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`**;
+- mapa de estados e fluxos prioritários O/C: **pendentes**;
 - wireframe principal autenticado da Organização: **pendente**;
 - wireframe principal autenticado do Coletivo: **pendente**;
 - nenhuma implementação técnica criada.
@@ -206,20 +214,21 @@ A lacuna D5-C de `TRN-008..013` não integra mais esta fila após D5-C4B.
 - plano pago não compra relevância, confiança, impacto, legitimidade ou evolução;
 - existência física de SVG não equivale a vigência;
 - fluxo especializado validado não equivale a jornada principal validada;
-- Arquitetura da Informação definida não equivale a mapa de superfícies, wireframe, UI ou implementação.
+- Arquitetura da Informação definida não equivale a mapa de superfícies, wireframe, UI ou implementação;
+- Surface Map definido não equivale a mapa de estados, fluxo, wireframe, UI ou implementação.
 
 ## 11. Próximo ato possível
 
-A D5-C4B encerra a lacuna específica dos seis handoffs pessoais. Para Organização e Coletivo, fundamentos, atores/autoridades/jobs e Arquitetura da Informação já estão definidos documentalmente.
+A D5-C4B encerra a lacuna específica dos seis handoffs pessoais. Para Organização e Coletivo, fundamentos, atores/autoridades/jobs, Arquitetura da Informação e mapa lógico de superfícies já estão definidos documentalmente.
 
-A lacuna seguinte começa no **mapa de superfícies e estados**, mas sua existência como próximo nível lógico não autoriza executá-lo automaticamente durante a auditoria.
+A lacuna seguinte começa no **mapa de estados e nos fluxos prioritários**, mas sua existência como próximo nível lógico não os autoriza automaticamente.
 
 Isso não inicia automaticamente V5/UXA-102, D6, D7, Design, Product Engineering ou qualquer outra lacuna.
 
 Quando essa frente for autorizada após os gates aplicáveis, a continuidade será:
 
 ```text
-mapa de superfícies e estados
+mapa de estados
 → fluxos prioritários
 → wireframes
 → validação

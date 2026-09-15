@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-IA-001
 title: Organizações e Coletivos — Arquitetura da Informação da Experiência Autenticada
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-27
+last_updated: 2026-09-12
 normative: false
 maturity: authenticated_information_architecture_defined_pre_surface_map
 depends_on:
@@ -17,6 +17,7 @@ related:
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - UXA-100-A3
   - UXA-100-A4
 ---
@@ -25,9 +26,9 @@ related:
 
 ## 1. Finalidade
 
-Este documento define a **Arquitetura da Informação** da futura experiência autenticada de Organização e Coletivo.
+Este documento define a **Arquitetura da Informação** da experiência autenticada de Organização e Coletivo.
 
-Ele transforma os atores, limites de autoridade e jobs já reconciliados em uma estrutura coerente de informação, sem antecipar o mapa final de superfícies, wireframes, UI ou implementação.
+Ele transforma os atores, limites de autoridade e jobs já reconciliados em uma estrutura coerente de informação. Em seu estágio original `pre-surface-map`, não antecipava o mapa final de superfícies, wireframes, UI ou implementação. Posteriormente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` consumiu esta IA como input e definiu o **Surface Map lógico-documental canônico**, sem alterar a maturidade própria deste artefato nem materializar State Map, navegação visual, wireframes, UI ou implementação.
 
 A pergunta desta etapa é:
 
@@ -132,7 +133,7 @@ Inclui capacidades que devem ser acessíveis quando necessárias, mas não podem
 
 ## 4. Regra de contexto persistente
 
-A IA deverá preservar a noção de **contexto ativo** em qualquer futuro mapa de superfícies.
+A IA deverá preservar a noção de **contexto ativo** em qualquer materialização posterior.
 
 Contexto ativo significa a combinação relevante de:
 
@@ -836,9 +837,9 @@ Não deve convergir para:
 - painel de engajamento compulsório;
 - ferramenta de captura comercial da comunidade.
 
-## 29. Estados transversais que a futura IA materializada precisa suportar
+## 29. Estados transversais que uma materialização posterior precisa suportar
 
-Sem definir ainda superfícies, o mapa seguinte deverá conseguir acomodar estados como:
+Sem definir ainda o State Map, a continuidade posterior deverá conseguir acomodar estados como:
 
 - sem atenção material;
 - informação incompleta;
@@ -855,11 +856,11 @@ Sem definir ainda superfícies, o mapa seguinte deverá conseguir acomodar estad
 - baixa conectividade quando relevante;
 - operação internacional quando legítima.
 
-Esses estados não exigem necessariamente telas próprias.
+Esses estados não exigem necessariamente telas próprias e não são materializados por este artefato nem pelo Surface Map lógico-documental.
 
 ## 30. Critérios de qualidade da IA
 
-A arquitetura pode ser considerada definida para avançar ao mapa de superfícies quando:
+No gate original `pre-surface-map`, a arquitetura podia ser considerada definida para avançar ao mapa de superfícies quando:
 
 1. contexto e autoridade precedem ação;
 2. Organização possui agrupamentos próprios coerentes com sua responsabilidade institucional;
@@ -871,6 +872,8 @@ A arquitetura pode ser considerada definida para avançar ao mapa de superfície
 8. Produtos Especializados não são absorvidos pela identidade do participante;
 9. síntese não se torna fonte paralela de verdade;
 10. decisões de tela, layout, componente e RBAC permanecem adiadas.
+
+Esses critérios foram posteriormente consumidos pela definição de `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`; sua satisfação não promove State Map, fluxos, navegação visual, wireframes ou implementação.
 
 ## 31. Decisões explicitamente adiadas
 
@@ -893,9 +896,9 @@ Este documento não define:
 - protótipo;
 - implementação.
 
-Também não reativa `UXA-015..018`, não inicia `UXA-102/V5` e não reativa Product Engineering.
+Também não reativa `UXA-015..018`, não inicia `UXA-102/V5` e não reativa Product Engineering. A definição posterior do Surface Map lógico-documental não altera essas fronteiras.
 
-## 32. Estado após esta definição
+## 32. Estado após esta definição e reconciliação posterior
 
 ```text
 FOUNDATIONS / ROLES
@@ -905,13 +908,20 @@ FUNCTIONAL ACTORS / AUTHORITIES / JOBS
 → DEFINED
 
 AUTHENTICATED INFORMATION ARCHITECTURE
-→ DEFINED FOR SURFACE-MAP INPUT
+→ DEFINED PRE-SURFACE-MAP
+→ CONSUMED AS INPUT BY CANONICAL SURFACE MAP
 
-SURFACE / STATE MAP
-→ NOT YET DEFINED
+SURFACE MAP
+→ DEFINED / CANONICAL DOCUMENTARY
+
+STATE MAP
+→ NOT MATERIALIZED
 
 PRIORITY FLOWS
-→ NOT YET DEFINED AS MAIN AUTHENTICATED EXPERIENCE
+→ NOT MATERIALIZED AS MAIN AUTHENTICATED EXPERIENCE
+
+MATERIALIZED NAVIGATION
+→ NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
 → NOT YET DEFINED
@@ -920,13 +930,13 @@ UXA-102 / V5
 → NOT STARTED
 
 PRODUCT ENGINEERING
-→ PAUSED
+→ PAUSED / NOT RELEASED
 ```
 
-## 33. Próximo ato documental permitido
+## 33. Fronteira documental corrente
 
-Após validação deste incremento, o próximo ato permitido nesta frente é:
+O antigo próximo ato deste artefato — materializar o mapa lógico de superfícies — foi consumido posteriormente por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`.
 
-> **materializar o mapa lógico de superfícies e estados da experiência autenticada de Organização e Coletivo, preservando os IDs e fluxos especializados já existentes e sem produzir wireframes.**
+A continuidade documental possível começa agora em **State Map** e, depois, em fluxos prioritários, navegação materializada e wireframes, sempre mediante autorização específica e separada.
 
-O mapa deverá decidir quais responsabilidades de IA exigem superfície própria, quais podem coexistir e como os estados se conectam, sem antecipar composição visual.
+Esta reconciliação não inicia nenhuma dessas etapas, não altera os IDs/maturidades `GKR-SURF-*` e não autoriza Design, UI, protótipo ou Product Engineering.
