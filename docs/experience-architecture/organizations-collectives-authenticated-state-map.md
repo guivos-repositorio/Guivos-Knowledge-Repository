@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-AUTH-STATE-MAP-001
 title: Organizações e Coletivos — Mapa de Estados da Experiência Autenticada
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-15
 normative: false
@@ -83,7 +83,7 @@ Os rótulos de estado abaixo são vocabulário funcional desta autoridade, não 
 
 ## 3. Modelo de estado
 
-Um estado funcional descreve uma condição relevante de um contexto, objeto, responsabilidade ou relação que muda o que pode ser compreendido, decidido ou realizado legitimamente.
+Um estado funcional descreve uma condição relevante de um contexto, objeto, responsabilidade, informação ou relação que muda o que pode ser compreendido, decidido ou realizado legitimamente.
 
 Os estados são **componíveis**. Uma mesma superfície pode, por exemplo, estar simultaneamente:
 
@@ -107,6 +107,8 @@ COEXISTÊNCIA DE ESTADOS
 ≠ TRANSIÇÃO AUTOMÁTICA
 ```
 
+Estados de um objeto especializado não são automaticamente estados do domínio inteiro. Uma superfície de síntese pode referenciar um estado pertencente a outro objeto sem se tornar sua nova fonte de verdade.
+
 ## 4. Famílias transversais de estado
 
 ### 4.1 Contexto e autoridade
@@ -123,6 +125,8 @@ Estados funcionais mínimos:
 - **responsável ausente ou não atribuído** — nenhuma pessoa legitimamente responsável está disponível para a responsabilidade necessária;
 - **autoridade contestada** — existe disputa material sobre representação, aprovação ou responsabilidade;
 - **autoridade encerrada ou expirada** — a relação que sustentava a atuação não está mais vigente.
+
+Mudança de contexto deve reavaliar participante, unidade, papel, autoridade e objeto aplicável; não transporta silenciosamente permissão, dado, decisão pendente ou contexto protegido.
 
 ```text
 ACESSO AO CONTEXTO
@@ -143,21 +147,40 @@ Estados funcionais mínimos:
 - **pausado** — continuidade temporariamente interrompida sem equivaler a encerramento;
 - **encerrado com responsabilidades remanescentes** — o ciclo principal terminou, mas obrigações, evidências, dados ou deveres ainda precisam ser preservados.
 
-### 4.3 Evidência e compreensão
+### 4.3 Proveniência, evidência e compreensão
 
-Estados epistemológicos mínimos:
+A experiência deve distinguir a natureza epistemológica da informação e a suficiência da evidência. São dimensões relacionadas, mas não idênticas.
+
+Estados de proveniência/compreensão mínimos:
+
+- **confirmada no limite da autoridade aplicável** — informação sustentada pela fonte ou participante legitimamente competente para confirmá-la;
+- **externa** — informação proveniente de fonte externa identificável, sem ser convertida automaticamente em verdade própria da Guivos;
+- **inferida** — interpretação ou inferência identificada como tal, com limites proporcionais;
+- **desconhecida** — informação material ainda não conhecida ou não disponível;
+- **contestada** — informação ou interpretação material possui divergência legítima registrada;
+- **desatualizada ou materialmente incerta** — existe informação, mas sua atualidade ou confiabilidade não sustenta uso silencioso como estado corrente.
+
+Estados de evidência mínimos:
 
 - **evidência suficiente para a afirmação permitida**;
 - **evidência ausente**;
 - **evidência insuficiente**;
 - **evidência conflitante**;
 - **evidência contestada**;
-- **fonte indisponível**;
-- **informação desatualizada ou materialmente incerta**.
+- **fonte indisponível**.
 
-Esses estados não autorizam inferir causalidade, impacto ou conclusão positiva por ausência de sinal contrário.
+Uma informação confirmada pode ainda não possuir evidência suficiente para uma afirmação de resultado ou impacto. Uma inferência pode ser útil sem ser tratada como fato confirmado.
 
 ```text
+CONFIRMADO
+≠ IMPACTO COMPROVADO
+
+INFERIDO
+≠ FATO
+
+DESCONHECIDO
+≠ ZERO
+
 SEM EVIDÊNCIA
 ≠ SEM RESULTADO
 
@@ -178,6 +201,8 @@ Estados mínimos:
 - **decisão contestada** — decisão ou fundamento está sob contestação legítima;
 - **conflito de governança** — não existe consenso/autoridade suficiente para tratar a decisão como pacificada;
 - **revisão necessária** — decisão, relação ou condição precisa ser reavaliada antes da continuidade.
+
+Contestação, denúncia ou pedido de revisão não podem produzir retaliação automática nem desaparecer por simples alteração visual de estado.
 
 ### 4.5 Capacidade e disponibilidade
 
@@ -207,12 +232,13 @@ A Visão Geral deve conseguir sintetizar, sem se transformar em dashboard total,
 - compromisso ou obrigação material atrasada;
 - risco material ou urgente;
 - capacidade limitada, atingida ou esgotada;
+- informação material desconhecida, inferida ou contestada;
 - evidência insuficiente para reconhecer avanço, resultado ou conclusão;
 - fonte ou integração indisponível;
 - baixa conectividade;
 - operação legítima em múltiplos países, idiomas ou moedas.
 
-Este domínio sintetiza estados pertencentes a outras responsabilidades sem absorver seus objetos.
+Este domínio sintetiza estados pertencentes a outras responsabilidades sem absorver seus objetos nem duplicar suas fontes de verdade.
 
 ### 5.2 Oportunidades e Programas — `GKR-SURF-ORG-002..003`
 
@@ -225,7 +251,7 @@ Estados funcionais mínimos:
 - objeto pausado;
 - objeto expirado ou encerrado;
 - capacidade de publicação limitada ou atingida;
-- informação material incompleta, conflitante ou desatualizada;
+- informação material incompleta, conflitante, contestada ou desatualizada;
 - distribuição/descoberta indisponível sem transformar indisponibilidade em conclusão sobre relevância.
 
 O lifecycle detalhado permanece subordinado às autoridades especializadas e às transições já registradas, incluindo `GKR-TRN-201..203` quando aplicáveis.
@@ -237,21 +263,30 @@ ATIVO
 ≠ IMPACTANTE
 ```
 
-### 5.3 Relações
+### 5.3 Relações — Organização–Coletivo sob `UXA-019`
 
-Escopo estável coberto por `GKR-SURF-ORG-004..006`:
+O escopo estável coberto por `GKR-SURF-ORG-004..006` é exclusivamente Organização–Coletivo. O State Map preserva o lifecycle contratual de `UXA-019` sem transformá-lo em fluxo materializado:
 
-- relação Organização–Coletivo proposta ou em avaliação sob `UXA-019`;
-- negociação/revisão bilateral em curso;
-- aprovação bilateral aplicável;
-- relação ativa;
-- relação pausada;
-- relação suspensa;
-- relação contestada;
-- relação em revisão;
-- relação encerrada com responsabilidades remanescentes.
+- **rascunho** — ainda não cria compromisso, divulgação ou acesso a dados;
+- **proposta** — finalidade, escopo, recursos, dados, responsabilidades e condições estão apresentados para análise;
+- **avaliação bilateral** — cada participante verifica autoridade, capacidade, riscos e coerência;
+- **negociação** — alterações materiais permanecem visíveis e dependem de nova confirmação quando aplicável;
+- **aguardando informação** — falta informação material necessária à avaliação ou continuidade;
+- **aguardando consentimento/aprovação** — falta manifestação legítima de autoridade aplicável;
+- **aprovada pelas autoridades** — as duas autoridades legítimas aprovaram o mesmo escopo, sem equivaler ainda a qualquer efeito técnico não governado;
+- **ativa** — somente o escopo aprovado pode ser executado;
+- **em revisão** — compromissos, evidências, riscos, contexto e vontade de continuidade estão sendo reavaliados;
+- **renovada ou ajustada** — continuidade/alteração foi legitimamente aprovada segundo o contrato aplicável;
+- **pausada** — atividades definidas estão temporariamente interrompidas sem apagar histórico ou proteção;
+- **bloqueada por proteção ou privacidade** — condição material impede ativação ou continuidade no limite afetado;
+- **contestada** — divergência legítima exige análise, fundamento e possibilidade de revisão;
+- **suspensa preventivamente** — interrupção proporcional e revisável diante de risco material;
+- **expirada** — prazo/condição de vigência terminou sem autorizar renovação automática;
+- **encerrada com responsabilidades remanescentes** — a relação terminou, preservando obrigações legítimas de dados, recursos, comunicação, proteção ou auditoria.
 
-`GKR-SURF-ORG-004..006` permanecem estritamente no escopo Organização–Coletivo. Relações Organização–Organização continuam como lacuna sem ID estável dedicado nesta frente.
+Estados como denúncia, alteração material ou risco podem coexistir com o lifecycle e exigir revisão sem criar automaticamente uma nova transição.
+
+`GKR-SURF-ORG-004..006` permanecem estritamente no escopo Organização–Coletivo. Relações Organização–Organização continuam como lacuna sem ID estável dedicado; esta frente reconhece a existência do domínio prevista pela IA, mas **não aplica `UXA-019` nem inventa um lifecycle específico para Organização–Organização**.
 
 Este mapa não altera `GKR-TRN-206..209`, que preservam maturidade própria no Transition Registry.
 
@@ -279,6 +314,7 @@ Estados mínimos:
 
 - identidade/contexto institucional suficientemente estabelecidos;
 - contexto institucional incompleto;
+- verificação aplicável pendente, quando houver autoridade própria para essa condição;
 - representação válida;
 - representação insuficiente para a ação;
 - aprovação adicional necessária;
@@ -290,7 +326,7 @@ A ausência de ID dedicado não autoriza fundir este domínio com configuração
 
 ## 6. Organização — capacidade comercial especializada
 
-`GKR-SURF-ORG-301..304` e `GKR-SURF-BND-002` mantêm seus estados próprios sob `UXA-100/A2/A3/A4`, `GEM-004` e `GKR-JOURNEY-TRANSITION-REGISTRY-001`.
+`GKR-SURF-ORG-301..304` e `GKR-SURF-BND-002` preservam suas semânticas especializadas sob `UXA-100/A2/A3/A4`, `GEM-004-PLAN-TAXONOMY-AUTHORITY-001` e `GKR-JOURNEY-TRANSITION-REGISTRY-001`.
 
 Esta frente apenas preserva que:
 
@@ -317,6 +353,7 @@ Estados funcionais mínimos:
 - conflito de governança que afeta continuidade;
 - proteção/moderação/acessibilidade exigindo atenção;
 - relação externa contestada ou suspensa;
+- informação material desconhecida, inferida ou contestada;
 - evidência insuficiente para reconhecer avanço/aprendizado;
 - baixa conectividade ou dependência indisponível.
 
@@ -372,25 +409,40 @@ Estados funcionais mínimos:
 - revisão necessária antes da continuidade;
 - condição resolvida sem apagar histórico material necessário.
 
-### 7.5 Relações
+### 7.5 Relações — Organização–Coletivo sob `UXA-019`
 
-Para `GKR-SURF-COL-008`, exclusivamente no escopo Organização–Coletivo sob `UXA-019`:
+Para `GKR-SURF-COL-008`, exclusivamente no escopo Organização–Coletivo, aplica-se o mesmo objeto bilateral e o mesmo lifecycle contratual descrito em `UXA-019` e na seção 5.3 desta autoridade:
 
-- proposta/avaliação bilateral;
-- negociação/revisão em curso;
-- relação ativa;
-- relação pausada;
-- relação suspensa;
-- relação contestada;
-- relação em revisão;
-- relação encerrada com responsabilidades remanescentes.
+- rascunho;
+- proposta;
+- avaliação bilateral;
+- negociação;
+- aguardando informação;
+- aguardando consentimento/aprovação;
+- aprovada pelas autoridades;
+- ativa;
+- em revisão;
+- renovada ou ajustada;
+- pausada;
+- bloqueada por proteção ou privacidade;
+- contestada;
+- suspensa preventivamente;
+- expirada;
+- encerrada com responsabilidades remanescentes.
 
-Relações Coletivo–Coletivo permanecem sem ID estável dedicado nesta frente. O mapa reconhece a condição funcional, mas não amplia `GKR-SURF-COL-008`.
+A perspectiva do Coletivo não pode apagar a autoridade, os limites ou a versão materialmente relevante da Organização, e a perspectiva da Organização não pode apagar a autonomia e a governança do Coletivo.
+
+Relações Coletivo–Coletivo permanecem sem ID estável dedicado nesta frente. A IA reconhece o domínio, mas esta autoridade **não amplia `GKR-SURF-COL-008`, não aplica `UXA-019` por analogia e não inventa lifecycle específico para Coletivo–Coletivo**.
 
 ### 7.6 Aprendizados e Evidências — sem ID dedicado
 
 Estados mínimos:
 
+- informação confirmada no limite permitido;
+- informação externa identificada;
+- informação inferida;
+- informação desconhecida;
+- informação contestada;
 - evidência suficiente para a afirmação permitida;
 - evidência ausente;
 - evidência insuficiente;
@@ -418,19 +470,22 @@ Estados mínimos:
 
 ## 8. Coletivo — capacidade comercial especializada
 
-`GKR-SURF-COL-301..304` e `GKR-SURF-BND-002` preservam seus estados e transições especializados.
+`GKR-SURF-COL-301..304` e `GKR-SURF-BND-002` preservam suas semânticas especializadas e transições próprias.
 
 Esta frente não promove `GKR-TRN-411..418` e não redefine a taxonomia `Livre · Mobiliza · Impacta · Rede`.
 
 Planos podem alterar capacidade contratada, mas não pertencimento, legitimidade, governança, relevância ou impacto.
 
-## 9. Estados de ausência, bloqueio e indisponibilidade
+## 9. Estados de ausência, bloqueio, visibilidade e indisponibilidade
 
 Toda futura materialização deverá distinguir semanticamente pelo menos:
 
 ```text
 NÃO EXISTE
 ≠ EXISTE, MAS ESTÁ VAZIO
+≠ EXISTE, MAS É DESCONHECIDO
+≠ EXISTE, MAS É INFERIDO
+≠ EXISTE, MAS É CONTESTADO
 ≠ EXISTE, MAS NÃO É VISÍVEL AO ATOR ATUAL
 ≠ EXISTE, MAS ESTÁ BLOQUEADO
 ≠ EXISTE, MAS A FONTE ESTÁ INDISPONÍVEL
@@ -446,6 +501,7 @@ Estados reversíveis não devem produzir efeitos irreversíveis por simples visu
 Preservações:
 
 - abrir um contexto não concede autoridade;
+- trocar de contexto não transporta silenciosamente autoridade ou dado protegido;
 - abrir uma relação não a aceita;
 - visualizar uma solicitação não a aprova;
 - revisar uma oportunidade não a publica;
@@ -454,7 +510,8 @@ Preservações:
 - retornar de Planos não altera capacidade;
 - ausência de dado não confirma inexistência funcional;
 - indisponibilidade técnica não equivale a falha do participante;
-- contestação não pode ser apagada por mudança visual de estado.
+- contestação não pode ser apagada por mudança visual de estado;
+- encerramento não apaga evidências ou responsabilidades cuja retenção seja legitimamente necessária.
 
 ## 11. Relação com o Transition Registry
 
@@ -466,6 +523,7 @@ Este mapa:
 - **não altera** origem/destino de transição existente;
 - **não promove** estado de validação de transição;
 - pode apontar uma condição como necessária sem declarar o caminho para alcançá-la;
+- preserva contratos especializados já existentes;
 - deixa novos fluxos para ato governado posterior de Priority Flows.
 
 ```text
@@ -475,6 +533,8 @@ ESTADO CONHECIDO
 TRANSIÇÃO EXISTENTE
 ≠ FLUXO PRIORITÁRIO COMPLETO
 ```
+
+A sequência textual de lifecycle registrada em `UXA-019` é um contrato funcional do objeto bilateral; sua reprodução como cobertura de estados nesta autoridade **não promove `GKR-TRN-206..209` nem declara cada seta como transição materializada**.
 
 ## 12. Relação com Intelligence, Dashboards, KPIs e Analytics
 
@@ -496,7 +556,21 @@ O State Map não define:
 
 Um estado funcional pode exigir compreensão ou evidência sem se converter em métrica visual.
 
-## 13. Gate documental desta autoridade candidata
+## 13. Critérios de suficiência do State Map
+
+Este State Map somente poderá ser candidato a promoção documental quando, cumulativamente:
+
+1. cobrir as famílias transversais necessárias de contexto/autoridade, operação, proveniência/evidência, proteção/governança e capacidade/disponibilidade;
+2. mapear as condições materiais de todos os domínios autenticados definidos no Surface Map sem inventar IDs;
+3. preservar a perspectiva da Pessoa separada das superfícies operacionais de Organização/Coletivo;
+4. preservar os lifecycles especializados já governados sem substituir suas autoridades;
+5. manter explícitas as lacunas Organização–Organização e Coletivo–Coletivo sem transportar `UXA-019` por analogia;
+6. preservar estados de ausência, bloqueio, contestação, proteção e indisponibilidade;
+7. não criar nem promover transições;
+8. manter Priority Flows, wireframes, Design/UI e Engenharia fechados;
+9. passar validação semântica, mecânica e revisão independente no HEAD candidato exato.
+
+## 14. Gate documental desta autoridade candidata
 
 Se esta autoridade for posteriormente revisada e promovida, a sequência governada passará a ser:
 
@@ -536,7 +610,7 @@ MAPA DE ESTADOS
 → NOT MATERIALIZED
 ```
 
-## 14. Próximo gate após eventual promoção
+## 15. Próximo gate após eventual promoção
 
 A eventual promoção deste State Map **não autoriza automaticamente fluxos prioritários**.
 
