@@ -105,4 +105,4 @@ No estágio original, eram candidatos:
 3. wireframes de descoberta, perfil público, participação, Meus Coletivos e gestão;
 4. validação funcional posterior.
 
-Essa sequência é **proveniência histórica**, não o próximo gate vigente. `UXA-057` e `UXA-058` já possuem contratos próprios; Jobs + IA autenticada estão definidos em `pre-surface-map`. Mapa final de superfícies e wireframes principais autenticados permanecem pendentes e exigem autorização separada.
+Essa sequência é **proveniência histórica**, não o próximo gate vigente. `UXA-057` e `UXA-058` já possuem contratos próprios; Jobs + IA autenticada permanecem definidas em sua maturidade própria `pre-surface-map`, e `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` já define o **Surface Map lógico-documental canônico**. State Map, fluxos prioritários e wireframes principais autenticados permanecem não materializados/não iniciados e exigem ato governado separado.
