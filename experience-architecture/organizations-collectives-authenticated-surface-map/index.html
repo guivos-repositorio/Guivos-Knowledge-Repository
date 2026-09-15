@@ -1,0 +1,4330 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
+      
+      
+        <meta name="author" content="Guivos">
+      
+      
+      
+        <link rel="prev" href="../organizations-collectives-current-state/">
+      
+      
+        <link rel="next" href="../../product-architecture/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Organizações e Coletivos — Mapa de Superfícies da Experiência Autenticada - Guivos Knowledge Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <style>
+    /*
+      A navegação pública do GKR é organizada por grandes assuntos.
+      Somente o primeiro nível recebe maior hierarquia tipográfica;
+      documentos e subgrupos permanecem visualmente secundários.
+    */
+    .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+    .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-top: 0.35rem;
+    }
+
+    .md-nav--primary > .md-nav__list > .md-nav__item--section + .md-nav__item--section {
+      margin-top: 0.2rem;
+    }
+
+    .gkr-page-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 1rem;
+    }
+
+    .gkr-page-print {
+      cursor: pointer;
+    }
+
+    @media print {
+      .gkr-page-actions,
+      .md-header,
+      .md-tabs,
+      .md-sidebar,
+      .md-footer,
+      .md-top,
+      .md-dialog,
+      .md-content__button {
+        display: none !important;
+      }
+
+      .md-main__inner,
+      .md-content,
+      .md-content__inner {
+        margin: 0 !important;
+        max-width: none !important;
+      }
+    }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#organizacoes-e-coletivos-mapa-de-superficies-da-experiencia-autenticada" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Organizações e Coletivos — Mapa de Superfícies da Experiência Autenticada
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guivos Knowledge Repository
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comece por aqui
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Comece por aqui
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/guia-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--public-canon"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/current-state-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estado Atual do Repositório
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação e Marca
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundação e Marca
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos da Guivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../christian-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamento Cristão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolution-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolução do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-and-digital-assets-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Naming e Ativos Digitais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-public-authority-and-founder-role/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Fundador e Autoridade Pública
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Participantes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Participantes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/person/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/collective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coletivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-current-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Estado Atual
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Mapa de Superfícies Autenticadas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Mapa de Superfícies Autenticadas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-autoridade-e-regra-de-identidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Autoridade e regra de identidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-o-que-e-uma-superficie-logica-nesta-autoridade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. O que é uma superfície lógica nesta autoridade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-modelo-de-contexto-autenticado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Modelo de contexto autenticado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-organizacao-mapa-logico-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Organização — mapa lógico principal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Organização — mapa lógico principal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Visão Geral
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-oportunidades-e-programas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Oportunidades e Programas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-relacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Relações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-responsabilidades-e-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Responsabilidades e Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-organizacao-e-autoridade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Organização e Autoridade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-organizacao-capacidade-comercial-especializada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Organização — capacidade comercial especializada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Organização — capacidade comercial especializada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planos-e-capacidade-comercial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planos e Capacidade comercial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-coletivo-mapa-logico-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Coletivo — mapa lógico principal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Coletivo — mapa lógico principal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-inicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Início
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-atividades-e-oportunidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Atividades e Oportunidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-participacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Participação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-governanca-e-protecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Governança e Proteção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-relacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 Relações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-aprendizados-e-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6 Aprendizados e Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#77-coletivo-e-autoridade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7 Coletivo e Autoridade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-coletivo-capacidade-comercial-especializada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Coletivo — capacidade comercial especializada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Coletivo — capacidade comercial especializada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planos-e-capacidade-comercial_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planos e Capacidade comercial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-matriz-consolidada-de-crosswalk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Matriz consolidada de crosswalk
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-relacoes-entre-superficies-sem-materializar-fluxo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Relações entre superfícies sem materializar fluxo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-limite-com-dashboards-kpis-e-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Limite com Dashboards, KPIs e Analytics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-separacao-da-home-publica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Separação da Home pública
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-estado-documental-apos-este-mapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Estado documental após este mapa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-proximo-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Próximo gate
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Produtos e Economia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Produtos e Economia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Econômico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estratégia de Negócio
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiência e Journey
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiência e Journey
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura da Experiência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornadas Integradas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Principal / Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-organizations-collectives-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home de Organizações e Coletivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-specialized-homes-reconciliation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes dos Produtos Especializados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/home-masters-remediation-adjudication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Masters — Adjudicação de Remediação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-mall-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Mall
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-travel-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Travel
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-media-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Media
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-business-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Business
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-ads-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Ads
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-intelligence-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Intelligence
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research e Validação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research e Validação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pesquisa do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-002/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Possibilidades, Oportunidades e Supply
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dados, Intelligence e Tecnologia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dados, Intelligence e Tecnologia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Corporativa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intelligence e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboards, KPIs e Analytics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dashboards, KPIs e Analytics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboards-kpis-analytics-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/kpi-contract-standard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KPI Contract Standard
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-guivos-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-guivos-kpi-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — KPI Registry
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-guivos-business-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos Business — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-organization-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Organização — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-collective-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Coletivo — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-person-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Pessoa — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-ads-opportunity-boost-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Ads / Opportunity Boost — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-007-neo4j-primary-graph-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tecnologia de Grafo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jurídico, Privacidade e Institucional
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jurídico, Privacidade e Institucional
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/institutional-and-legal-architecture-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Institucional e Jurídica
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/operational-privacy-and-legal-truth-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacidade e Verdade Operacional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/fundacao-guivos-institutional-concept-and-legal-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação Guivos — Conceito e Estado Jurídico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/trademark-brazil-signature-filing-authorization-package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proteção Marcária — Autorização de Filing
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GTM e Internacionalização
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GTM e Internacionalização
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go-to-Market
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-007-internationalization-and-territorial-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Internacionalização e Governança Territorial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-008-portugal-pilot-readiness-gates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Piloto Portugal — Gates de Prontidão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/international-operations-and-cross-border-readiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operações Internacionais e Cross-Border
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governança do GKR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governança do GKR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/gkr-full-corpus-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auditoria Integral do Corpus
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-audit-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framework de Auditoria Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Consolidação do Conhecimento Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-001-gkr-as-source-of-truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKR como Fonte Única da Verdade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-006-guivos-knowledge-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Conhecimento da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualizar / Imprimir GKR Completo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-autoridade-e-regra-de-identidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Autoridade e regra de identidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-o-que-e-uma-superficie-logica-nesta-autoridade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. O que é uma superfície lógica nesta autoridade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-modelo-de-contexto-autenticado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Modelo de contexto autenticado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-organizacao-mapa-logico-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Organização — mapa lógico principal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Organização — mapa lógico principal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Visão Geral
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-oportunidades-e-programas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Oportunidades e Programas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-relacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Relações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-responsabilidades-e-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Responsabilidades e Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-organizacao-e-autoridade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Organização e Autoridade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-organizacao-capacidade-comercial-especializada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Organização — capacidade comercial especializada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Organização — capacidade comercial especializada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planos-e-capacidade-comercial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planos e Capacidade comercial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-coletivo-mapa-logico-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Coletivo — mapa lógico principal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Coletivo — mapa lógico principal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-inicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Início
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-atividades-e-oportunidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Atividades e Oportunidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-participacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Participação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-governanca-e-protecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Governança e Proteção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-relacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 Relações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-aprendizados-e-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6 Aprendizados e Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#77-coletivo-e-autoridade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7 Coletivo e Autoridade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-coletivo-capacidade-comercial-especializada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Coletivo — capacidade comercial especializada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Coletivo — capacidade comercial especializada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planos-e-capacidade-comercial_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planos e Capacidade comercial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-matriz-consolidada-de-crosswalk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Matriz consolidada de crosswalk
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-relacoes-entre-superficies-sem-materializar-fluxo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Relações entre superfícies sem materializar fluxo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-limite-com-dashboards-kpis-e-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Limite com Dashboards, KPIs e Analytics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-separacao-da-home-publica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Separação da Home pública
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-estado-documental-apos-este-mapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Estado documental após este mapa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-proximo-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Próximo gate
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+    <div class="gkr-page-actions">
+      <button
+        type="button"
+        class="md-button gkr-page-print"
+        onclick="window.print()"
+        aria-label="Imprimir somente este assunto"
+      >
+        Imprimir este assunto
+      </button>
+    </div>
+  
+  
+                  
+
+
+  
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/experience-architecture/organizations-collectives-authenticated-surface-map.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="organizacoes-e-coletivos-mapa-de-superficies-da-experiencia-autenticada">Organizações e Coletivos — Mapa de Superfícies da Experiência Autenticada<a class="headerlink" href="#organizacoes-e-coletivos-mapa-de-superficies-da-experiencia-autenticada" title="Permanent link">&para;</a></h1>
+<h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento define o <strong>mapa lógico de superfícies autenticadas</strong> de Organização e Coletivo a partir da Arquitetura da Informação vigente e o reconcilia com o inventário estável já registrado em <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code>.</p>
+<p>Ele responde à pergunta:</p>
+<blockquote>
+<p><strong>Quais áreas lógicas de trabalho precisam existir para que uma pessoa autenticada atue no contexto de uma Organização ou de um Coletivo sem misturar contexto, autoridade, operação, governança, evidência e capacidades comerciais especializadas?</strong></p>
+</blockquote>
+<p>Esta etapa materializa o mapa lógico de superfícies. Ela <strong>não</strong> materializa estados, transições, fluxos, wireframes, UI, permissões técnicas ou implementação.</p>
+<div class="highlight"><pre><span></span><code>JOBS AUTENTICADOS
++
+ARQUITETURA DA INFORMAÇÃO
++
+REGISTRO ESTÁVEL DE SUPERFÍCIES
+↓
+MAPA LÓGICO DE SUPERFÍCIES
+
+MAPA DE SUPERFÍCIES
+≠ MAPA DE ESTADOS
+≠ FLUXO
+≠ ROTA / URL
+≠ MENU VISUAL
+≠ WIREFRAME
+≠ UI
+≠ RBAC TÉCNICO
+≠ IMPLEMENTAÇÃO
+</code></pre></div>
+<h2 id="2-autoridade-e-regra-de-identidade">2. Autoridade e regra de identidade<a class="headerlink" href="#2-autoridade-e-regra-de-identidade" title="Permanent link">&para;</a></h2>
+<p>Este mapa deriva principalmente de:</p>
+<ol>
+<li><code>GKR-UX-ORGCOL-AUTH-IA-001</code> — camadas, domínios e limites da experiência autenticada;</li>
+<li><code>GKR-UX-ORGCOL-AUTH-JOBS-001</code> — atores, autoridade e jobs que justificam os domínios;</li>
+<li><code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> — identificadores estáveis, maturidade registrada e fronteiras documentais já existentes;</li>
+<li><code>GKR-UX-ORGCOL-STATE-001</code> e <code>GKR-UX-ORGCOL-UX-STATE-001</code> — estado vigente e limites de maturidade;</li>
+<li><code>UXA-014</code> e <code>UXA-019</code> — distinção estrutural entre Organização e Coletivo e limites de suas relações.</li>
+</ol>
+<p>Regra central:</p>
+<blockquote>
+<p><strong>Este documento não cria um segundo namespace de superfícies. Quando já existe um <code>GKR-SURF-*</code>, ele é preservado. Quando não existe um identificador dedicado, a lacuna permanece explícita e nenhum ID é inventado por esta frente.</strong></p>
+</blockquote>
+<p>Consequentemente, códigos locais como <code>ORG-Sxx</code> e <code>COL-Sxx</code> <strong>não são usados</strong>.</p>
+<p>A existência de um ID no registro também não significa que sua materialização ou validação esteja concluída. A maturidade de cada entrada continua sendo a registrada em <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> e em suas autoridades de origem.</p>
+<h2 id="3-o-que-e-uma-superficie-logica-nesta-autoridade">3. O que é uma superfície lógica nesta autoridade<a class="headerlink" href="#3-o-que-e-uma-superficie-logica-nesta-autoridade" title="Permanent link">&para;</a></h2>
+<p>Neste documento, <strong>superfície lógica</strong> é uma área coerente de compreensão e trabalho pertencente ao contexto autenticado.</p>
+<p>Uma superfície lógica:</p>
+<ul>
+<li>possui responsabilidade semântica própria;</li>
+<li>agrupa objetos e ações do mesmo domínio;</li>
+<li>preserva participante, contexto, papel e autoridade aplicáveis;</li>
+<li>pode corresponder a uma ou mais entradas estáveis já registradas;</li>
+<li>pode depender de capacidades especializadas que permanecem separadas;</li>
+<li>não promove a maturidade das entradas <code>GKR-SURF-*</code> relacionadas.</li>
+</ul>
+<p>Uma superfície lógica não é, por definição:</p>
+<ul>
+<li>URL ou rota técnica;</li>
+<li>item obrigatório de menu;</li>
+<li>aba, drawer ou componente;</li>
+<li>tela única;</li>
+<li>permissão;</li>
+<li>papel de negócio;</li>
+<li>estado de interface;</li>
+<li>autorização de Design ou Engenharia.</li>
+</ul>
+<h2 id="4-modelo-de-contexto-autenticado">4. Modelo de contexto autenticado<a class="headerlink" href="#4-modelo-de-contexto-autenticado" title="Permanent link">&para;</a></h2>
+<p>A Pessoa autenticada permanece o agente humano. Organização e Coletivo são contextos distintos nos quais essa Pessoa pode atuar somente quando existe relação e autoridade aplicáveis.</p>
+<div class="highlight"><pre><span></span><code>PESSOA AUTENTICADA
+↓
+CONTEXTO ATIVO
+├── ORGANIZAÇÃO
+└── COLETIVO
+</code></pre></div>
+<p>A mudança de contexto não concede privilégio.</p>
+<div class="highlight"><pre><span></span><code>ACESSAR UM CONTEXTO
+≠ RECEBER AUTORIDADE
+
+PERTENCER
+≠ REPRESENTAR
+≠ APROVAR
+≠ ADMINISTRAR
+</code></pre></div>
+<p>O mapa define <strong>onde uma responsabilidade pertence</strong>. As autoridades funcionais definem <strong>se, como e até onde</strong> determinada pessoa pode atuar.</p>
+<h2 id="5-organizacao-mapa-logico-principal">5. Organização — mapa lógico principal<a class="headerlink" href="#5-organizacao-mapa-logico-principal" title="Permanent link">&para;</a></h2>
+<p>A Arquitetura da Informação define cinco domínios principais para a Organização:</p>
+<div class="highlight"><pre><span></span><code>ORGANIZAÇÃO
+├── Visão Geral
+├── Oportunidades e Programas
+├── Relações
+├── Responsabilidades e Evidências
+└── Organização e Autoridade
+
+CAPACIDADE ESPECIALIZADA / CONTEXTUAL
+└── Planos e Capacidade comercial
+</code></pre></div>
+<p><code>Planos e Capacidade</code> não é promovido a sexta superfície principal. Ele permanece capacidade comercial especializada/contextual com fluxos próprios já registrados.</p>
+<h3 id="51-visao-geral">5.1 Visão Geral<a class="headerlink" href="#51-visao-geral" title="Permanent link">&para;</a></h3>
+<p><strong>Função:</strong> orientar a pessoa sobre o contexto institucional ativo e sintetizar o que exige atenção agora, sem se transformar em painel administrativo total.</p>
+<p>Crosswalk vigente:</p>
+<ul>
+<li><code>GKR-SURF-ORG-001</code> — Visão Geral da Organização.</li>
+</ul>
+<p>A maturidade de <code>GKR-SURF-ORG-001</code> permanece a do registro central; este mapa não declara wireframe principal validado.</p>
+<h3 id="52-oportunidades-e-programas">5.2 Oportunidades e Programas<a class="headerlink" href="#52-oportunidades-e-programas" title="Permanent link">&para;</a></h3>
+<p><strong>Função:</strong> concentrar o trabalho relacionado ao que a Organização oferece, publica, opera ou habilita legitimamente.</p>
+<p>Crosswalk vigente:</p>
+<ul>
+<li><code>GKR-SURF-ORG-002</code> — cadastro de oportunidade;</li>
+<li><code>GKR-SURF-ORG-003</code> — oportunidade aprovada/ativa.</li>
+</ul>
+<p>As duas entradas continuam separadas no registro. Este domínio lógico não as funde e não transforma publicação em relevância, distribuição ou impacto.</p>
+<div class="highlight"><pre><span></span><code>OPORTUNIDADE PUBLICADA
+≠ DISTRIBUIÇÃO GARANTIDA
+≠ RELEVÂNCIA
+≠ IMPACTO
+</code></pre></div>
+<h3 id="53-relacoes">5.3 Relações<a class="headerlink" href="#53-relacoes" title="Permanent link">&para;</a></h3>
+<p><strong>Função:</strong> concentrar relações da Organização com Coletivos e outras Organizações, com finalidade, autoridade, compromissos, recursos, dados ou responsabilidades materialmente relevantes.</p>
+<p>Crosswalk vigente:</p>
+<ul>
+<li><code>GKR-SURF-ORG-004</code> — proposta de relação Organização–Coletivo, no escopo estável definido por <code>UXA-019</code>;</li>
+<li><code>GKR-SURF-ORG-005</code> — avaliação e negociação da relação Organização–Coletivo, no escopo estável definido por <code>UXA-019</code>;</li>
+<li><code>GKR-SURF-ORG-006</code> — relação Organização–Coletivo ativa e revisão, no escopo estável definido por <code>UXA-019</code>;</li>
+<li>relações Organização–Organização permanecem sem ID estável dedicado nesta frente; a lacuna é explícita e não autoriza ampliar semanticamente <code>GKR-SURF-ORG-004..006</code>.</li>
+</ul>
+<p>Essas entradas permanecem objetos distintos. A relação não transfere automaticamente autoridade sobre a contraparte.</p>
+<h3 id="54-responsabilidades-e-evidencias">5.4 Responsabilidades e Evidências<a class="headerlink" href="#54-responsabilidades-e-evidencias" title="Permanent link">&para;</a></h3>
+<p><strong>Função:</strong> localizar responsabilidades, compromissos, resultados autorizados e evidências sem confundir atividade, resultado e impacto.</p>
+<p>Crosswalk vigente:</p>
+<ul>
+<li><code>GKR-SURF-ORG-007</code> — resultados e evidências institucionais.</li>
+</ul>
+<p>A entrada permanece com a maturidade registrada no inventário central. Este mapa não completa por inferência campos ainda indeterminados.</p>
+<div class="highlight"><pre><span></span><code>ATIVIDADE
+≠ RESULTADO
+
+RESULTADO
+≠ IMPACTO
+
+CORRELAÇÃO
+≠ CAUSALIDADE
+</code></pre></div>
+<h3 id="55-organizacao-e-autoridade">5.5 Organização e Autoridade<a class="headerlink" href="#55-organizacao-e-autoridade" title="Permanent link">&para;</a></h3>
+<p><strong>Função:</strong> preservar identidade institucional, unidade/contexto, papel, representação, autoridade, limites e necessidade de aprovação adicional.</p>
+<p>O registro estável <strong>não possui atualmente um <code>GKR-SURF-ORG-*</code> dedicado exclusivamente a este domínio</strong>. Portanto:</p>
+<ul>
+<li>nenhum novo ID é criado nesta frente;</li>
+<li>autoridade continua requisito transversal das superfícies registradas;</li>
+<li>eventual criação futura de identificador exige governança própria do registro central;</li>
+<li>ausência de ID dedicado não autoriza fundir autoridade com configuração técnica ou RBAC.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>REPRESENTAÇÃO
+≠ APROVAÇÃO IRRESTRITA
+
+CONTEXTO ORGANIZAÇÃO
+≠ PAPEL ADMINISTRATIVO
+</code></pre></div>
+<h2 id="6-organizacao-capacidade-comercial-especializada">6. Organização — capacidade comercial especializada<a class="headerlink" href="#6-organizacao-capacidade-comercial-especializada" title="Permanent link">&para;</a></h2>
+<h3 id="planos-e-capacidade-comercial">Planos e Capacidade comercial<a class="headerlink" href="#planos-e-capacidade-comercial" title="Permanent link">&para;</a></h3>
+<p>A IA classifica esta capacidade como <strong>especializada/contextual</strong>. O fluxo canônico já existe e preserva a taxonomia:</p>
+<div class="highlight"><pre><span></span><code>Conecta · Eleva · Transforma
+</code></pre></div>
+<p>Crosswalk estável:</p>
+<ul>
+<li><code>GKR-SURF-ORG-301</code> — Planos e comparação da Organização;</li>
+<li><code>GKR-SURF-ORG-302</code> — revisão de contratação da Organização;</li>
+<li><code>GKR-SURF-ORG-303</code> — gestão de downgrade e cancelamento da Organização;</li>
+<li><code>GKR-SURF-ORG-304</code> — resultado e recuperação de plano/cobrança da Organização;</li>
+<li><code>GKR-SURF-BND-002</code> — fronteira de contratação/dimensionamento assistido quando necessária.</li>
+</ul>
+<p>Esta capacidade deve ser acessível quando a pessoa busca capacidade comercial ou atinge limite legítimo e deve permitir retorno ao contexto anterior quando não houver contratação confirmada.</p>
+<p>Ela <strong>não</strong> é uma capacidade genérica de planejamento institucional e não pode ser usada para inventar uma nova função de planejamento.</p>
+<div class="highlight"><pre><span></span><code>PLANO
+≠ IDENTIDADE DA ORGANIZAÇÃO
+≠ RELEVÂNCIA
+≠ AUTORIDADE
+≠ EVIDÊNCIA
+</code></pre></div>
+<h2 id="7-coletivo-mapa-logico-principal">7. Coletivo — mapa lógico principal<a class="headerlink" href="#7-coletivo-mapa-logico-principal" title="Permanent link">&para;</a></h2>
+<p>A Arquitetura da Informação define sete domínios principais para o Coletivo:</p>
+<div class="highlight"><pre><span></span><code>COLETIVO
+├── Início
+├── Atividades e Oportunidades
+├── Participação
+├── Governança e Proteção
+├── Relações
+├── Aprendizados e Evidências
+└── Coletivo e Autoridade
+
+CAPACIDADE ESPECIALIZADA / CONTEXTUAL
+└── Planos e Capacidade comercial
+</code></pre></div>
+<p><code>Planos e Capacidade</code> não é promovido a oitava superfície principal. Ele permanece capacidade comercial especializada/contextual.</p>
+<h3 id="71-inicio">7.1 Início<a class="headerlink" href="#71-inicio" title="Permanent link">&para;</a></h3>
+<p><strong>Função:</strong> orientar a pessoa autorizada sobre o contexto coletivo ativo, o Momento e a atenção material.</p>
+<p>Crosswalk vigente:</p>
+<ul>
+<li><code>GKR-SURF-COL-002</code> — Visão Geral do Responsável.</li>
+</ul>
+<p><code>GKR-SURF-COL-001</code> permanece entrada/presença pública parcialmente consolidada e <strong>não é absorvida</strong> pela experiência autenticada principal. Sua perspectiva e maturidade continuam registradas separadamente.</p>
+<h3 id="72-atividades-e-oportunidades">7.2 Atividades e Oportunidades<a class="headerlink" href="#72-atividades-e-oportunidades" title="Permanent link">&para;</a></h3>
+<p><strong>Função:</strong> concentrar atividades, consultas, decisões e oportunidades legitimamente relacionadas ao trabalho do Coletivo.</p>
+<p>Crosswalk vigente:</p>
+<ul>
+<li><code>GKR-SURF-COL-006</code> — atividades, consultas e decisões.</li>
+</ul>
+<p>O mapa não inventa um novo ID apenas para “oportunidades”. Quando uma oportunidade utilizar fluxos especializados existentes, esses fluxos mantêm sua própria autoridade e identidade.</p>
+<h3 id="73-participacao">7.3 Participação<a class="headerlink" href="#73-participacao" title="Permanent link">&para;</a></h3>
+<p><strong>Função:</strong> concentrar entrada, vínculos e continuidade da participação sob regras de voluntariedade, proteção e autoridade.</p>
+<p>Crosswalk vigente:</p>
+<ul>
+<li><code>GKR-SURF-COL-003</code> — gestão de solicitações;</li>
+<li><code>GKR-SURF-COL-004</code> — participantes e vínculos;</li>
+<li><code>GKR-SURF-COL-005</code> — comunicação oficial, quando vinculada à continuidade operacional da participação.</li>
+</ul>
+<p>As superfícies da perspectiva da Pessoa <code>GKR-SURF-PER-103..108</code> permanecem <strong>separadas</strong> e não são absorvidas pelo contexto operacional do Coletivo.</p>
+<div class="highlight"><pre><span></span><code>PARTICIPAÇÃO
+≠ REPRESENTAÇÃO
+≠ ADMINISTRAÇÃO
+</code></pre></div>
+<h3 id="74-governanca-e-protecao">7.4 Governança e Proteção<a class="headerlink" href="#74-governanca-e-protecao" title="Permanent link">&para;</a></h3>
+<p><strong>Função:</strong> concentrar decisões coletivas, proteção, moderação, contestação e continuidade quando legitimamente aplicáveis.</p>
+<p>Crosswalk vigente:</p>
+<ul>
+<li><code>GKR-SURF-COL-005</code> — comunicação oficial, quando relacionada a decisão ou governança;</li>
+<li><code>GKR-SURF-COL-006</code> — no recorte de decisões;</li>
+<li><code>GKR-SURF-COL-007</code> — proteção e moderação.</li>
+</ul>
+<p>Uma mesma entrada estável pode participar de mais de um domínio lógico sem ser duplicada.</p>
+<h3 id="75-relacoes">7.5 Relações<a class="headerlink" href="#75-relacoes" title="Permanent link">&para;</a></h3>
+<p><strong>Função:</strong> concentrar relações do Coletivo com Organizações e outros Coletivos, preservando autonomia e autoridade bilateral.</p>
+<p>Crosswalk vigente:</p>
+<ul>
+<li><code>GKR-SURF-COL-008</code> — relação Organização–Coletivo, no escopo estável definido por <code>UXA-019</code>;</li>
+<li>relações Coletivo–Coletivo permanecem sem ID estável dedicado nesta frente; a lacuna é explícita e não autoriza ampliar semanticamente <code>GKR-SURF-COL-008</code>.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>APOIO
+≠ POSSE
+≠ CONTROLE
+≠ TRANSFERÊNCIA DE GOVERNANÇA
+</code></pre></div>
+<h3 id="76-aprendizados-e-evidencias">7.6 Aprendizados e Evidências<a class="headerlink" href="#76-aprendizados-e-evidencias" title="Permanent link">&para;</a></h3>
+<p><strong>Função:</strong> permitir compreensão sobre o que ocorreu, o que pode ser sustentado por evidência e quais incertezas permanecem.</p>
+<p>O registro estável <strong>não possui atualmente um <code>GKR-SURF-COL-*</code> dedicado exclusivamente a este domínio</strong>. Portanto:</p>
+<ul>
+<li>nenhum ID é criado nesta frente;</li>
+<li>evidência continua requisito transversal nos objetos responsáveis;</li>
+<li>ausência de evidência deve permanecer declarável;</li>
+<li>eventual ID dedicado dependerá de governança futura do registro central.</li>
+</ul>
+<h3 id="77-coletivo-e-autoridade">7.7 Coletivo e Autoridade<a class="headerlink" href="#77-coletivo-e-autoridade" title="Permanent link">&para;</a></h3>
+<p><strong>Função:</strong> preservar identidade do Coletivo, propósito, governança, papéis, representação e limites de autoridade.</p>
+<p><code>GKR-SURF-COL-002</code> contém parte do contexto de autoridade na visão geral do responsável, mas <strong>não é reclassificado aqui como superfície exclusiva de autoridade</strong>.</p>
+<p>Não existe hoje um ID estável dedicado exclusivamente a este domínio. Nenhum novo ID é criado.</p>
+<div class="highlight"><pre><span></span><code>PERTENCIMENTO
+≠ REPRESENTAÇÃO
+
+REPRESENTAÇÃO
+≠ AUTORIDADE IRRESTRITA
+</code></pre></div>
+<h2 id="8-coletivo-capacidade-comercial-especializada">8. Coletivo — capacidade comercial especializada<a class="headerlink" href="#8-coletivo-capacidade-comercial-especializada" title="Permanent link">&para;</a></h2>
+<h3 id="planos-e-capacidade-comercial_1">Planos e Capacidade comercial<a class="headerlink" href="#planos-e-capacidade-comercial_1" title="Permanent link">&para;</a></h3>
+<p>A IA classifica esta capacidade como <strong>especializada/contextual</strong> e preserva a taxonomia:</p>
+<div class="highlight"><pre><span></span><code>Livre · Mobiliza · Impacta · Rede
+</code></pre></div>
+<p>Crosswalk estável:</p>
+<ul>
+<li><code>GKR-SURF-COL-301</code> — Planos e comparação do Coletivo;</li>
+<li><code>GKR-SURF-COL-302</code> — revisão de contratação do Coletivo;</li>
+<li><code>GKR-SURF-COL-303</code> — gestão de downgrade e cancelamento do Coletivo;</li>
+<li><code>GKR-SURF-COL-304</code> — resultado e recuperação de plano/cobrança do Coletivo;</li>
+<li><code>GKR-SURF-BND-002</code> — fronteira de contratação/dimensionamento assistido quando necessária.</li>
+</ul>
+<p>O acesso é contextual quando houver necessidade legítima de capacidade comercial ou consulta explícita. Nenhuma contratação converte a experiência em funil de upsell nem altera pertencimento, legitimidade, relevância ou impacto.</p>
+<p>Esta capacidade <strong>não</strong> é uma função genérica de planejamento do Coletivo.</p>
+<h2 id="9-matriz-consolidada-de-crosswalk">9. Matriz consolidada de crosswalk<a class="headerlink" href="#9-matriz-consolidada-de-crosswalk" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Domínio lógico</th>
+<th>IDs estáveis relacionados</th>
+<th>Tratamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organização — Visão Geral</td>
+<td><code>GKR-SURF-ORG-001</code></td>
+<td>preservado</td>
+</tr>
+<tr>
+<td>Organização — Oportunidades e Programas</td>
+<td><code>GKR-SURF-ORG-002</code>, <code>GKR-SURF-ORG-003</code></td>
+<td>preservados e separados</td>
+</tr>
+<tr>
+<td>Organização — Relações</td>
+<td><code>GKR-SURF-ORG-004..006</code> para Organização–Coletivo; sem ID dedicado para Organização–Organização</td>
+<td><code>ORG-004..006</code> preservados no escopo de <code>UXA-019</code>; lacuna explícita para relações Organização–Organização</td>
+</tr>
+<tr>
+<td>Organização — Responsabilidades e Evidências</td>
+<td><code>GKR-SURF-ORG-007</code></td>
+<td>preservado; maturidade não promovida</td>
+</tr>
+<tr>
+<td>Organização — Organização e Autoridade</td>
+<td>sem ID dedicado</td>
+<td>nenhum ID criado; requisito transversal</td>
+</tr>
+<tr>
+<td>Organização — Planos e Capacidade comercial</td>
+<td><code>GKR-SURF-ORG-301..304</code>, <code>GKR-SURF-BND-002</code></td>
+<td>fluxo especializado separado</td>
+</tr>
+<tr>
+<td>Coletivo — Início</td>
+<td><code>GKR-SURF-COL-002</code></td>
+<td>preservado; <code>COL-001</code> permanece fronteira/presença pública separada</td>
+</tr>
+<tr>
+<td>Coletivo — Atividades e Oportunidades</td>
+<td><code>GKR-SURF-COL-006</code></td>
+<td>preservado; sem ID novo por inferência</td>
+</tr>
+<tr>
+<td>Coletivo — Participação</td>
+<td><code>GKR-SURF-COL-003..005</code></td>
+<td>preservados; superfícies da Pessoa permanecem separadas</td>
+</tr>
+<tr>
+<td>Coletivo — Governança e Proteção</td>
+<td><code>GKR-SURF-COL-005</code>, <code>GKR-SURF-COL-006</code>, <code>GKR-SURF-COL-007</code></td>
+<td>responsabilidades distintas preservadas; <code>COL-005</code> somente no recorte de comunicação oficial ligada a decisão/governança</td>
+</tr>
+<tr>
+<td>Coletivo — Relações</td>
+<td><code>GKR-SURF-COL-008</code> para Organização–Coletivo; sem ID dedicado para Coletivo–Coletivo</td>
+<td><code>COL-008</code> preservado no escopo de <code>UXA-019</code>; lacuna explícita para relações Coletivo–Coletivo</td>
+</tr>
+<tr>
+<td>Coletivo — Aprendizados e Evidências</td>
+<td>sem ID dedicado</td>
+<td>nenhum ID criado; requisito transversal</td>
+</tr>
+<tr>
+<td>Coletivo — Coletivo e Autoridade</td>
+<td><code>GKR-SURF-COL-002</code> parcialmente; sem ID exclusivo</td>
+<td>nenhum ID novo; autoridade transversal</td>
+</tr>
+<tr>
+<td>Coletivo — Planos e Capacidade comercial</td>
+<td><code>GKR-SURF-COL-301..304</code>, <code>GKR-SURF-BND-002</code></td>
+<td>fluxo especializado separado</td>
+</tr>
+</tbody>
+</table>
+<p>A tabela é um <strong>crosswalk semântico</strong>, não uma alteração do registro central. O <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> continua sendo a autoridade para IDs e maturidade individual.</p>
+<h2 id="10-relacoes-entre-superficies-sem-materializar-fluxo">10. Relações entre superfícies sem materializar fluxo<a class="headerlink" href="#10-relacoes-entre-superficies-sem-materializar-fluxo" title="Permanent link">&para;</a></h2>
+<p>Este mapa reconhece dependências sem declarar transições como definidas.</p>
+<p>Exemplos de relação conceitual:</p>
+<ul>
+<li>Visão Geral referencia objetos de outros domínios sem duplicá-los;</li>
+<li>Oportunidades e Programas podem gerar responsabilidades e evidências;</li>
+<li>Relações podem gerar compromissos e revisões;</li>
+<li>Participação pode exigir governança e proteção;</li>
+<li>capacidades comerciais especializadas devem retornar ao contexto anterior conforme suas autoridades próprias.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>RELAÇÃO ENTRE DOMÍNIOS
+≠ TRANSIÇÃO DEFINIDA
+≠ FLUXO DEFINIDO
+</code></pre></div>
+<p>As transições permanecem sob autoridade própria do <code>GKR-JOURNEY-TRANSITION-REGISTRY-001</code> e de futuros atos documentais autorizados.</p>
+<h2 id="11-limite-com-dashboards-kpis-e-analytics">11. Limite com Dashboards, KPIs e Analytics<a class="headerlink" href="#11-limite-com-dashboards-kpis-e-analytics" title="Permanent link">&para;</a></h2>
+<p><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> permanece a autoridade mestre do handoff analítico, inclusive para futura implementação no Replit.</p>
+<p>Este Surface Map não define:</p>
+<ul>
+<li>dashboards;</li>
+<li>KPIs;</li>
+<li>fórmulas;</li>
+<li>gráficos;</li>
+<li>badges;</li>
+<li>thresholds;</li>
+<li>insights;</li>
+<li>recomendações;</li>
+<li>níveis de confiança;</li>
+<li>permissões analíticas;</li>
+<li>comportamento fail-closed.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>SUPERFÍCIE AUTENTICADA
+≠ DASHBOARD
+
+DOMÍNIO DE TRABALHO
+≠ KPI
+
+SÍNTESE DO MOMENTO
+≠ PAINEL DE MÉTRICAS
+</code></pre></div>
+<h2 id="12-separacao-da-home-publica">12. Separação da Home pública<a class="headerlink" href="#12-separacao-da-home-publica" title="Permanent link">&para;</a></h2>
+<p>A Home pública de Organizações e Coletivos possui autoridade documental própria.</p>
+<div class="highlight"><pre><span></span><code>HOME PÚBLICA
+→ aquisição / posicionamento / entrada pública
+
+SURFACE MAP AUTENTICADO
+→ organização lógica do trabalho sob contexto e autoridade
+</code></pre></div>
+<p>Nenhum elemento da Home pública é promovido por inferência para a experiência autenticada.</p>
+<h2 id="13-estado-documental-apos-este-mapa">13. Estado documental após este mapa<a class="headerlink" href="#13-estado-documental-apos-este-mapa" title="Permanent link">&para;</a></h2>
+<p>Com esta autoridade, a sequência fica:</p>
+<div class="highlight"><pre><span></span><code>FUNDAMENTOS E PAPÉIS
+→ DEFINED
+
+ATORES / AUTORIDADE / JOBS
+→ DEFINED
+
+ARQUITETURA DA INFORMAÇÃO
+→ DEFINED
+
+MAPA LÓGICO DE SUPERFÍCIES
+→ DEFINED
+
+MAPA DE ESTADOS
+→ NOT MATERIALIZED
+
+FLUXOS PRIORITÁRIOS
+→ NOT MATERIALIZED
+
+WIREFRAMES
+→ NOT STARTED
+
+UI / PROTÓTIPO
+→ NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+</code></pre></div>
+<p>A palavra <code>DEFINED</code> neste documento significa <strong>definição documental do mapa lógico</strong>, não materialização visual, implementação nem promoção automática da maturidade de qualquer <code>GKR-SURF-*</code> individual.</p>
+<h2 id="14-proximo-gate">14. Próximo gate<a class="headerlink" href="#14-proximo-gate" title="Permanent link">&para;</a></h2>
+<p>Este documento não autoriza automaticamente a etapa seguinte.</p>
+<p>Quando houver autorização específica, o próximo ato elegível poderá trabalhar <strong>estados críticos e fluxos prioritários</strong> sobre este mapa, respeitando:</p>
+<ul>
+<li>IDs estáveis do registro central;</li>
+<li>maturidade individual já registrada;</li>
+<li>fluxos especializados existentes;</li>
+<li>autoridade e proteção;</li>
+<li>reversibilidade;</li>
+<li>estados de ausência, bloqueio, contestação e indisponibilidade;</li>
+<li>separação entre semântica funcional e Design.</li>
+</ul>
+<p>Até nova autorização:</p>
+<div class="highlight"><pre><span></span><code>STATES
+→ NOT MATERIALIZED
+
+FLOWS
+→ NOT MATERIALIZED
+
+WIREFRAMES
+→ NOT STARTED
+
+DESIGN / UI
+→ NOT AUTHORIZED
+
+IMPLEMENTATION
+→ NOT AUTHORIZED
+</code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
