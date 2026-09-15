@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-AUTH-STATE-MAP-001
 title: Organizações e Coletivos — Mapa de Estados da Experiência Autenticada
 status: draft
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-15
 normative: false
@@ -278,6 +278,7 @@ Lifecycle principal:
 - **aprovada pelas autoridades** — as duas autoridades legítimas aprovaram o mesmo escopo, sem equivaler ainda a qualquer efeito técnico não governado;
 - **ativa** — somente o escopo aprovado pode ser executado;
 - **em revisão** — compromissos, evidências, riscos, contexto e vontade de continuidade estão sendo reavaliados;
+- **alteração material pendente** — existe proposta de mudança material ainda não reavaliada e aprovada bilateralmente; o escopo já aprovado permanece o único efetivo até nova confirmação legítima;
 - **renovada ou ajustada** — continuidade/alteração foi legitimamente aprovada segundo o contrato aplicável;
 - **pausada** — atividades definidas estão temporariamente interrompidas sem apagar histórico ou proteção;
 - **bloqueada por proteção ou privacidade** — condição material impede ativação ou continuidade no limite afetado;
@@ -448,6 +449,7 @@ Lifecycle principal:
 - aprovada pelas autoridades;
 - ativa;
 - em revisão;
+- alteração material pendente;
 - renovada ou ajustada;
 - pausada;
 - bloqueada por proteção ou privacidade;
@@ -456,6 +458,8 @@ Lifecycle principal:
 - expirada;
 - encerrada;
 - encerrada com responsabilidades remanescentes.
+
+Na perspectiva do Coletivo, **alteração material pendente** mantém o escopo vigente anterior como único escopo efetivo até reavaliação e nova aprovação bilateral; a edição proposta não produz efeito unilateral.
 
 Condições alternativas obrigatórias do mesmo objeto bilateral, visíveis na perspectiva do Coletivo quando autorizadas e materialmente relevantes:
 
