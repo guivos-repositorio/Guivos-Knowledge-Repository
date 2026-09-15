@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-AUTH-STATE-MAP-001
 title: Organizações e Coletivos — Mapa de Estados da Experiência Autenticada
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-15
 normative: false
@@ -284,7 +284,8 @@ Lifecycle principal:
 - **contestada** — divergência legítima exige análise, fundamento e possibilidade de revisão;
 - **suspensa preventivamente** — interrupção proporcional e revisável diante de risco material;
 - **expirada** — prazo/condição de vigência terminou sem autorizar renovação automática;
-- **encerrada com responsabilidades remanescentes** — a relação terminou, preservando obrigações legítimas de dados, recursos, comunicação, proteção ou auditoria.
+- **encerrada** — a relação foi finalizada e o plano de transição aplicável foi executado, sem pressupor responsabilidades remanescentes;
+- **encerrada com responsabilidades remanescentes** — a relação terminou, mas permanecem obrigações legítimas de dados, recursos, comunicação, proteção ou auditoria.
 
 Além do lifecycle principal, `UXA-019 §23` exige preservar condições alternativas materiais. Elas são ortogonais ao lifecycle e podem coexistir com ele sem significar transição automática:
 
@@ -453,6 +454,7 @@ Lifecycle principal:
 - contestada;
 - suspensa preventivamente;
 - expirada;
+- encerrada;
 - encerrada com responsabilidades remanescentes.
 
 Condições alternativas obrigatórias do mesmo objeto bilateral, visíveis na perspectiva do Coletivo quando autorizadas e materialmente relevantes:
