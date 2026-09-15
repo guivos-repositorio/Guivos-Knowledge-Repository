@@ -130,4 +130,4 @@ O adendo não:
 
 No estágio original, o próximo ato candidato era definir a ordem de materialização dos wireframes das UXA-056, UXA-057 e UXA-058, separando experiências da pessoa e do responsável.
 
-Essa recomendação é **proveniência histórica**, não o próximo gate vigente. Jobs + IA autenticada estão definidos em `pre-surface-map`; mapa final de superfícies e wireframes principais autenticados permanecem pendentes e exigem autorização separada.
+Essa recomendação é **proveniência histórica**, não o próximo gate vigente. Jobs + IA autenticada permanecem definidas em sua maturidade própria `pre-surface-map`, e `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` já define o **Surface Map lógico-documental canônico**. State Map, fluxos prioritários e wireframes principais autenticados permanecem não materializados/não iniciados e exigem ato governado separado.
