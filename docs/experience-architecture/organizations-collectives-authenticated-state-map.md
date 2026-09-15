@@ -340,7 +340,6 @@ Este mapa não inventa lifecycle detalhado nem transição para oportunidade do 
 
 Estados mínimos no contexto operacional do Coletivo:
 
-- observação sem vínculo, quando aplicável pela perspectiva da Pessoa;
 - solicitação de entrada/participação pendente;
 - informação adicional necessária;
 - vínculo de participação ativo;
@@ -350,7 +349,9 @@ Estados mínimos no contexto operacional do Coletivo:
 - comunicação oficial disponível ao público autorizado;
 - comunicação/informação protegida por autoridade, privacidade ou finalidade.
 
-As superfícies da Pessoa `GKR-SURF-PER-103..108` permanecem separadas. O State Map do Coletivo não as absorve.
+A condição **pessoa observando antes de participar** permanece cobertura funcional válida absorvida de `GKR-UX-ORGCOL-UX-STATE-001`, mas pertence à perspectiva da Pessoa e às superfícies `GKR-SURF-PER-103..108`; ela não é reclassificada como estado interno de `COL-003..005`.
+
+As superfícies da Pessoa `GKR-SURF-PER-103..108` permanecem separadas e não são absorvidas pelo contexto operacional do Coletivo.
 
 As transições `GKR-TRN-101..113` mantêm maturidade própria e não são promovidas por este documento.
 
