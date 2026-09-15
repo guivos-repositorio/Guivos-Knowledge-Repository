@@ -955,7 +955,7 @@ GKR-UX-HOME-OC-MASTER-001 v1.0.0
 GKR-UX-HOME-OC-NARR-001 v0.2.0
 → progressão e macroexperiências reconciliadas
 
-GKR-UX-HOME-OC-NAV-001 v0.2.0
+GKR-UX-HOME-OC-NAV-001 v0.3.0
 → Header, Hero, CTAs e fronteiras de navegação reconciliados
 
 GKR-UX-HOME-OC-SYS-001 v0.2.0
