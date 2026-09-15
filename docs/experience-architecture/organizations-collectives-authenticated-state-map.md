@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-AUTH-STATE-MAP-001
 title: Organizações e Coletivos — Mapa de Estados da Experiência Autenticada
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-15
 normative: false
@@ -265,7 +265,9 @@ ATIVO
 
 ### 5.3 Relações — Organização–Coletivo sob `UXA-019`
 
-O escopo estável coberto por `GKR-SURF-ORG-004..006` é exclusivamente Organização–Coletivo. O State Map preserva o lifecycle contratual de `UXA-019` sem transformá-lo em fluxo materializado:
+O escopo estável coberto por `GKR-SURF-ORG-004..006` é exclusivamente Organização–Coletivo. O State Map preserva o lifecycle contratual de `UXA-019` sem transformá-lo em fluxo materializado.
+
+Lifecycle principal:
 
 - **rascunho** — ainda não cria compromisso, divulgação ou acesso a dados;
 - **proposta** — finalidade, escopo, recursos, dados, responsabilidades e condições estão apresentados para análise;
@@ -284,7 +286,28 @@ O escopo estável coberto por `GKR-SURF-ORG-004..006` é exclusivamente Organiza
 - **expirada** — prazo/condição de vigência terminou sem autorizar renovação automática;
 - **encerrada com responsabilidades remanescentes** — a relação terminou, preservando obrigações legítimas de dados, recursos, comunicação, proteção ou auditoria.
 
-Estados como denúncia, alteração material ou risco podem coexistir com o lifecycle e exigir revisão sem criar automaticamente uma nova transição.
+Além do lifecycle principal, `UXA-019 §23` exige preservar condições alternativas materiais. Elas são ortogonais ao lifecycle e podem coexistir com ele sem significar transição automática:
+
+- **proposta recusada**;
+- **autoridade insuficiente**;
+- **aprovação divergente entre as partes**;
+- **relação ativa sem atenção material**;
+- **compromisso atrasado**;
+- **recurso indisponível**;
+- **dado ou consentimento ausente**;
+- **conflito de interesse**;
+- **uso de marca contestado**;
+- **relação comercial não declarada**;
+- **risco de perda de autonomia**;
+- **denúncia em análise**;
+- **suspensão urgente**;
+- **renovação pendente**;
+- **encerramento solicitado por uma das partes**;
+- **baixa conectividade**;
+- **operação internacional**;
+- **informação sensível protegida**.
+
+Essas condições preservam diferenças de autoridade, consentimento, proteção, influência, reversibilidade e responsabilidade que não podem ser colapsadas em rótulos genéricos como “contestado”, “em revisão” ou “suspenso”.
 
 `GKR-SURF-ORG-004..006` permanecem estritamente no escopo Organização–Coletivo. Relações Organização–Organização continuam como lacuna sem ID estável dedicado; esta frente reconhece a existência do domínio prevista pela IA, mas **não aplica `UXA-019` nem inventa um lifecycle específico para Organização–Organização**.
 
@@ -411,7 +434,9 @@ Estados funcionais mínimos:
 
 ### 7.5 Relações — Organização–Coletivo sob `UXA-019`
 
-Para `GKR-SURF-COL-008`, exclusivamente no escopo Organização–Coletivo, aplica-se o mesmo objeto bilateral e o mesmo lifecycle contratual descrito em `UXA-019` e na seção 5.3 desta autoridade:
+Para `GKR-SURF-COL-008`, exclusivamente no escopo Organização–Coletivo, aplica-se o mesmo objeto bilateral e o mesmo lifecycle contratual descrito em `UXA-019` e na seção 5.3 desta autoridade.
+
+Lifecycle principal:
 
 - rascunho;
 - proposta;
@@ -429,6 +454,27 @@ Para `GKR-SURF-COL-008`, exclusivamente no escopo Organização–Coletivo, apli
 - suspensa preventivamente;
 - expirada;
 - encerrada com responsabilidades remanescentes.
+
+Condições alternativas obrigatórias do mesmo objeto bilateral, visíveis na perspectiva do Coletivo quando autorizadas e materialmente relevantes:
+
+- proposta recusada;
+- autoridade insuficiente;
+- aprovação divergente entre as partes;
+- relação ativa sem atenção material;
+- compromisso atrasado;
+- recurso indisponível;
+- dado ou consentimento ausente;
+- conflito de interesse;
+- uso de marca contestado;
+- relação comercial não declarada;
+- risco de perda de autonomia;
+- denúncia em análise;
+- suspensão urgente;
+- renovação pendente;
+- encerramento solicitado por uma das partes;
+- baixa conectividade;
+- operação internacional;
+- informação sensível protegida.
 
 A perspectiva do Coletivo não pode apagar a autoridade, os limites ou a versão materialmente relevante da Organização, e a perspectiva da Organização não pode apagar a autonomia e a governança do Coletivo.
 
@@ -534,7 +580,7 @@ TRANSIÇÃO EXISTENTE
 ≠ FLUXO PRIORITÁRIO COMPLETO
 ```
 
-A sequência textual de lifecycle registrada em `UXA-019` é um contrato funcional do objeto bilateral; sua reprodução como cobertura de estados nesta autoridade **não promove `GKR-TRN-206..209` nem declara cada seta como transição materializada**.
+A sequência textual de lifecycle registrada em `UXA-019` e os estados alternativos obrigatórios de sua seção 23 são contratos funcionais do objeto bilateral; sua reprodução como cobertura de estados nesta autoridade **não promove `GKR-TRN-206..209`, não declara cada mudança de condição como transição materializada e não amplia `UXA-019` para relações que ele não governa**.
 
 ## 12. Relação com Intelligence, Dashboards, KPIs e Analytics
 
@@ -563,9 +609,9 @@ Este State Map somente poderá ser candidato a promoção documental quando, cum
 1. cobrir as famílias transversais necessárias de contexto/autoridade, operação, proveniência/evidência, proteção/governança e capacidade/disponibilidade;
 2. mapear as condições materiais de todos os domínios autenticados definidos no Surface Map sem inventar IDs;
 3. preservar a perspectiva da Pessoa separada das superfícies operacionais de Organização/Coletivo;
-4. preservar os lifecycles especializados já governados sem substituir suas autoridades;
+4. preservar os lifecycles e estados alternativos especializados já governados sem substituir suas autoridades;
 5. manter explícitas as lacunas Organização–Organização e Coletivo–Coletivo sem transportar `UXA-019` por analogia;
-6. preservar estados de ausência, bloqueio, contestação, proteção e indisponibilidade;
+6. preservar estados de ausência, bloqueio, contestação, proteção, influência e indisponibilidade;
 7. não criar nem promover transições;
 8. manter Priority Flows, wireframes, Design/UI e Engenharia fechados;
 9. passar validação semântica, mecânica e revisão independente no HEAD candidato exato.
