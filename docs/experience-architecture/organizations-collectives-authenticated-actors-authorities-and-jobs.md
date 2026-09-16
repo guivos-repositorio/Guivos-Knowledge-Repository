@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-JOBS-001
 title: Organizações e Coletivos — Atores, Autoridades e Jobs Prioritários da Experiência Autenticada
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-12
+last_updated: 2026-09-16
 normative: false
 maturity: authenticated_information_architecture_defined_pre_surface_map
 depends_on:
@@ -18,6 +18,7 @@ related:
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - RP-002
   - RP-002-OCE-001
   - RP-002-PMF-001
@@ -29,7 +30,7 @@ related:
 
 Este documento fechou a etapa imediatamente anterior à **Arquitetura da Informação** da experiência autenticada de Organizações e Coletivos.
 
-Após a validação deste incremento, `GKR-UX-ORGCOL-AUTH-IA-001` definiu a Arquitetura da Informação autenticada no estágio **pre-surface-map**. Essa maturidade permanece própria deste artefato e da IA naquele momento documental. Posteriormente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` consumiu esses inputs e definiu o **Surface Map lógico-documental canônico**. Este documento permanece `active` como autoridade dos atores, limites e jobs; não reclassifica a IA nem o Surface Map como pendentes.
+Após a validação deste incremento, `GKR-UX-ORGCOL-AUTH-IA-001` definiu a Arquitetura da Informação autenticada no estágio **pre-surface-map**. Essa maturidade permanece própria deste artefato e da IA naquele momento documental. Posteriormente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` consumiu esses inputs e definiu o **Surface Map lógico-documental canônico**; em ato governado ainda posterior, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu o **State Map funcional canônico**. Este documento permanece `active` como autoridade dos atores, limites e jobs; não reclassifica IA, Surface Map ou State Map como pendentes.
 
 Ele reconcilia os fundamentos e contratos vigentes para responder quatro perguntas:
 
@@ -38,7 +39,7 @@ Ele reconcilia os fundamentos e contratos vigentes para responder quatro pergunt
 3. que tipo de autoridade precisa estar explícita;
 4. quais jobs precisam ser suportados antes de decidir navegação, superfícies ou wireframes.
 
-Este documento não define menu, dashboard, tela inicial, componentes, permissões técnicas, RBAC, wireframe, UI ou implementação. A IA permanece governada por `GKR-UX-ORGCOL-AUTH-IA-001` e o Surface Map lógico-documental posterior por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`.
+Este documento não define menu, dashboard, tela inicial, componentes, permissões técnicas, RBAC, wireframe, UI ou implementação. A IA permanece governada por `GKR-UX-ORGCOL-AUTH-IA-001`, o Surface Map lógico-documental por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` e o State Map funcional por `GKR-UX-ORGCOL-AUTH-STATE-MAP-001`.
 
 ```text
 ATOR FUNCIONAL
@@ -65,7 +66,8 @@ A frente parte das seguintes autoridades e estados:
 - `GKR-JOURNEY-COLLECTIVE-001` preserva a Jornada do Coletivo em `draft` e maturidades independentes de fluxos especializados;
 - `GKR-UX-ORGCOL-UX-STATE-001` preserva o baseline histórico no qual a arquitetura da informação e os wireframes principais autenticados ainda não estavam definidos;
 - `GKR-UX-ORGCOL-AUTH-IA-001` define a Arquitetura da Informação autenticada de Organização e Coletivo em sua maturidade própria **defined pre-surface-map**, sem materializar wireframes, UI ou implementação;
-- `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define posteriormente o **Surface Map lógico-documental canônico**, sem materializar State Map, navegação visual, wireframes, UI ou implementação;
+- `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` definiu posteriormente o **Surface Map lógico-documental canônico**; naquele ato, não materializou State Map, navegação visual, wireframes, UI ou implementação;
+- `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu posteriormente, em ato governado separado, o **State Map funcional canônico**, sem materializar Priority Flows, navegação, wireframes, UI ou implementação e sem promover `GKR-TRN-*`;
 - `GKR-UX-ORGCOL-SUPPLY-VALUE-001` fornece Research sobre supply, relevância e papéis sem transformar Research em Canon ou PMF.
 
 A sequência governada corrente é:
@@ -85,7 +87,7 @@ fundamentos e papéis
 → handoff técnico
 ```
 
-No estado corrente, atores/autoridades/jobs, Arquitetura da Informação e Surface Map lógico-documental já estão definidos. O próximo gap documental começa no **State Map**, seguido de fluxos prioritários, navegação materializada e wireframes, todos dependentes de autorização própria. Nenhuma etapa seguinte é iniciada automaticamente.
+No estado corrente, atores/autoridades/jobs, Arquitetura da Informação, Surface Map lógico-documental e State Map funcional já estão definidos. O próximo gap documental começa em **Priority Flows**, seguido de navegação materializada e wireframes, todos dependentes de autorização própria. Nenhuma etapa seguinte é iniciada automaticamente.
 
 ## 3. Unidade de atuação autenticada
 
@@ -575,7 +577,7 @@ A Arquitetura da Informação autenticada vigente, definida por `GKR-UX-ORGCOL-A
 9. Planos devem permanecer capacidade comercial especializada, não eixo de relevância ou identidade;
 10. a experiência principal não pode ser um dashboard comercial genérico da Organização nem um feed social genérico do Coletivo.
 
-No escopo original deste artefato, essas restrições não materializavam categorias de menu, Surface Map ou wireframes. Posteriormente, o Surface Map lógico-documental foi definido por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, sem promover State Map, navegação visual ou wireframes.
+No escopo original deste artefato, essas restrições não materializavam categorias de menu, Surface Map ou wireframes. Posteriormente, o Surface Map lógico-documental foi definido por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`; naquele ato, não houve promoção do State Map, navegação visual ou wireframes. Em ato governado separado e posterior, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu o State Map funcional sem promover Priority Flows, navegação materializada ou wireframes.
 
 ## 13. Decisões explicitamente adiadas
 
@@ -599,7 +601,7 @@ Este documento não decide:
 - protótipo;
 - implementação.
 
-A definição posterior do Surface Map não converte essas decisões em decisões deste artefato e não reativa `UXA-015..018` nem inicia `UXA-102/V5`.
+As definições posteriores do Surface Map e do State Map não convertem essas decisões em decisões deste artefato e não reativam `UXA-015..018` nem iniciam `UXA-102/V5`.
 
 ## 14. Gate histórico de IA e estado corrente
 
@@ -634,8 +636,9 @@ AUTHENTICATED INFORMATION ARCHITECTURE
 SURFACE MAP
 → DEFINED / CANONICAL DOCUMENTARY
 
-STATE MAP
-→ NOT MATERIALIZED
+AUTHENTICATED STATE MAP
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 PRIORITY FLOWS
 → NOT MATERIALIZED AS MAIN AUTHENTICATED EXPERIENCE
@@ -644,7 +647,7 @@ MATERIALIZED NAVIGATION
 → NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
-→ NOT YET DEFINED
+→ NOT STARTED
 
 UXA-102 / V5
 → NOT STARTED
@@ -655,10 +658,10 @@ PRODUCT ENGINEERING
 
 ## 15. Lacuna documental posterior aos gates de F-006
 
-Após a definição da Arquitetura da Informação autenticada, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` fechou a lacuna do **Surface Map lógico-documental**. A maturidade `pre-surface-map` deste artefato continua descrevendo seu próprio estágio de produção e não o estado global corrente.
+Após a definição da Arquitetura da Informação autenticada, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` fechou a lacuna do **Surface Map lógico-documental**. Em ato governado posterior, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` fechou a lacuna do **State Map funcional**. A maturidade `pre-surface-map` deste artefato continua descrevendo seu próprio estágio de produção e não o estado global corrente.
 
 A sequência governada de `F-006` foi concluída: autorização, cleanup 6/6, reconciliação, validações e prova pós-delete. `F-006` está resolvido. A continuidade desta autoridade permanece funcional e não autoriza materialização visual.
 
-As lacunas posteriores correntes são **State Map, fluxos prioritários da experiência principal, navegação materializada e wireframes**. Cada uma exige autorização específica e não é iniciada por esta reconciliação.
+As lacunas posteriores correntes são **Priority Flows da experiência principal, navegação materializada e wireframes autenticados**. Cada uma exige autorização específica e não é iniciada por esta reconciliação.
 
 Nenhuma dessas lacunas deve produzir, por inferência, UI, protótipo ou implementação; Design/UI/protótipo permanecem não autorizados e Product Engineering permanece não liberada.
