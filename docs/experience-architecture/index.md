@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.8.2
+version: 1.9.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-12
+last_updated: 2026-09-15
 related:
   - PAS-001
   - PAS-001-DOMAIN-MODEL-001
@@ -43,6 +43,7 @@ related:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - M7.88
 normative: false
 ---
@@ -147,9 +148,11 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C3 — validação funcional e reformulação dos três SVGs
 → D5-C4A — origens visuais em Hoje + contrato integrado dos seis handoffs
 → D5-C4B — validação integrada individual e promoção de TRN-008..013
+→ O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
+→ O/C State Map — DEFINED / CANONICAL DOCUMENTARY
 ```
 
-D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada.
+D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada. A definição documental do State Map O/C não altera esse estado.
 
 ### 5.1 D5-A
 
@@ -200,16 +203,17 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active` 0.45.0; Jobs + IA + Surface Map lógico-documental O/C reconciliados |
+| Jornadas Integradas | `active` 0.46.0; Jobs + IA + Surface Map + State Map O/C reconciliados |
 | Jornada da Pessoa | `draft`; PER-010..012 validados localmente; TRN-008..013 integrais |
-| Jornada do Coletivo | `draft` 0.21.0; Jobs + IA definidos e Surface Map lógico-documental canônico; state map/fluxos/navegação/wireframe principal pendentes |
-| Jornada da Organização | `draft` 0.14.0; Jobs + IA definidos e Surface Map lógico-documental canônico; state map/fluxos/navegação/wireframe principal pendentes |
-| mapa lógico autenticado O/C | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY**; não materializa state map, navegação ou wireframes |
+| Jornada do Coletivo | `draft` 0.22.0; Jobs + IA + Surface Map + State Map definidos; Priority Flows/navegação/wireframe principal pendentes |
+| Jornada da Organização | `draft` 0.15.0; Jobs + IA + Surface Map + State Map definidos; Priority Flows/navegação/wireframe principal pendentes |
+| mapa lógico autenticado O/C | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY** |
+| mapa de estados autenticado O/C | `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY**; não cria/promove `GKR-TRN-*` nem materializa Priority Flows |
 | catálogo integrado | `active` 0.36.0; **0 SVGs físicos após F-016-A**; maturidade funcional preservada por autoridades textuais |
 | proveniência visual histórica | documentos de galeria/matriz removidos do corpus corrente; recuperáveis no histórico Git; sem autoridade visual |
-| lacunas | `active` 0.36.0; Surface Map O/C removido da fila; state map + fluxos prioritários + wireframes permanecem pendentes |
+| lacunas | `active` 0.37.0; Surface Map + State Map O/C removidos da fila; Priority Flows + wireframes permanecem pendentes |
 | registro de superfícies | `active` 0.25.0; 57 IDs; maturidade por item; crosswalk O/C sem promoção automática |
-| registro de transições | `active`; 66 transições; TRN-008..013 integrais |
+| registro de transições | `active`; 66 transições; State Map não promove maturidade por inferência |
 | detalhamento da Pessoa | `active`; PER-008 recorrente e PER-010..012 com continuidade D5-C validada |
 | D5-A | `active` 1.1.0 |
 | D5-B | `active` 1.1.0 |
@@ -252,11 +256,14 @@ V1 — encerrada pela UXA-097
 → D5-C3 — três superfícies reformuladas e validadas localmente
 → D5-C4A — Hoje recorrente reformulado/revalidado + contrato dos seis handoffs
 → D5-C4B — seis handoffs integralmente validados no limite documental
+→ O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
+→ O/C State Map — DEFINED / CANONICAL DOCUMENTARY
+→ O/C Priority Flows — NOT MATERIALIZED / REQUIRES SEPARATE AUTHORIZATION
 → V5 — pendente e não iniciada
 ```
 
-D5-A/B/C1/C2/C3/C4A/C4B não consomem nem antecipam V5.
+D5-A/B/C1/C2/C3/C4A/C4B e a frente documental O/C não consomem nem antecipam V5.
 
 ## 11. Próxima evolução possível
 
-A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo e o `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` materializou o **Surface Map lógico-documental canônico**. O **State Map**, os fluxos prioritários da experiência principal, a navegação materializada e os wireframes permanecem pendentes e exigem autorização própria. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
+A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o **Surface Map lógico-documental canônico** e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` define o **State Map funcional canônico documental**. Os **Priority Flows**, a navegação materializada e os wireframes permanecem pendentes e exigem autorização própria. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
