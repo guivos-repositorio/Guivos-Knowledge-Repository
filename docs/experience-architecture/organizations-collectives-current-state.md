@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.3.0
+version: 1.3.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-12
+last_updated: 2026-09-15
 normative: false
 related:
   - UXA-014
@@ -432,4 +432,4 @@ Isso não apaga o histórico; apenas impede que materializações prematuras sej
 
 O atlas de supply e relevância possui função diferente: ele preserva Research, exemplos e método para tornar compreensível o universo de oportunidades. Ele **não** promove wireframes, matching, PMF ou implementação a estado superior.
 
-A autoridade de `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` passa a integrar o estado canônico somente após revisão e merge governados da branch que a introduz; até lá, permanece candidata em PR draft.
+`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` já integra o estado canônico após revisão governada e merge da PR #379. Essa canonicidade do Surface Map não promove o State Map candidato da PR #380, fluxos prioritários, wireframes, Design/UI ou implementação.
