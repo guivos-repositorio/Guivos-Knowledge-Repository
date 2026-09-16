@@ -2,9 +2,9 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.45.0
+version: 0.46.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-12
+last_updated: 2026-09-15
 related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
@@ -30,6 +30,7 @@ related:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
   - RP-002
 normative: false
@@ -79,17 +80,19 @@ UXA-097 — compreensão inicial → primeira Tela Hoje
 → D5-C3 — três estados-base reformulados e validados localmente
 → D5-C4A — origens visuais em Hoje + contrato integrado dos handoffs
 → D5-C4B — validação integrada individual de TRN-008..013
+→ O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
+→ O/C State Map — DEFINED / CANONICAL DOCUMENTARY
 ```
 
-D4 e D5 são frentes não numeradas no programa UXA. Nenhuma delas altera a última frente funcional numerada: UXA-101 continua vigente, e UXA-102/V5 permanece não iniciada.
+D4 e D5 são frentes não numeradas no programa UXA. A definição documental de Surface Map e State Map O/C também não altera a última frente funcional numerada: UXA-101 continua vigente, e UXA-102/V5 permanece não iniciada.
 
-Nenhuma etapa autoriza automaticamente a seguinte.
+Nenhuma etapa autoriza automaticamente a seguinte. Para O/C, o próximo gate separado é Priority Flows.
 
 ## 4. Estado documental
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.45.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A + Surface Map O/C |
+| visão geral das Jornadas Integradas | `active` 0.46.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A + Surface Map/State Map O/C |
 | propagação dos Domínios de Evolução | `active` 1.0.0 | GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001 |
 | D5-A — jornada inicial | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
 | D5-B — Oportunidades | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
@@ -97,11 +100,13 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | D5-C2/D5-C3/D5-C4A/D5-C4B | `active` | funções e validações textuais preservadas; materialização física sob F-016 |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita preservada |
 | Jornada da Pessoa | `draft` | V4 UXA-101; UXA-102 não iniciada |
-| Jornada do Coletivo | `draft` | Jobs + IA + Surface Map definidos documentalmente; state map/fluxos e wireframe principal pendentes |
-| Jornada da Organização | `draft` | Jobs + IA + Surface Map definidos documentalmente; state map/fluxos e wireframe principal pendentes |
+| Jornada do Coletivo | `draft` | Jobs + IA + Surface Map + State Map definidos documentalmente; Priority Flows/wireframe principal pendentes |
+| Jornada da Organização | `draft` | Jobs + IA + Surface Map + State Map definidos documentalmente; Priority Flows/wireframe principal pendentes |
 | catálogo integrado | `active` 0.33.0 | **0 SVGs físicos após F-016-A**; contratos textuais preservados; maturidade agregada não inferida |
 | registro de superfícies | `active` 0.25.0 | 57 IDs documentais; Surface Map O/C reconciliado sem promoção individual |
-| registro de transições | `active` | 66 transições documentais |
+| registro de transições | `active` | 66 transições documentais; State Map não promove maturidade individual |
+| O/C Surface Map | `active` 1.0.0 | topologia lógico-documental canônica |
+| O/C State Map | `active` 1.0.0 | estados funcionais canônicos documentais; Priority Flows não materializados |
 | antiga galeria visual integrada | `removed_from_current_corpus` | proveniência preservada no histórico Git |
 | antiga matriz por SVG | `removed_from_current_corpus` | associações/perfis recuperáveis no histórico Git |
 | F-016-A | `resolved` | **119/119 SVGs removidos; 0 SVGs físicos; referências vivas reconciliadas; Semantic #832 + Mechanical #1090 + prova pós-delete v2 SUCCESS** |
@@ -249,15 +254,9 @@ INVENTÁRIO FÍSICO
 
 ## 10. Separações obrigatórias
 
-- Domínio de Evolução não equivale a tela, objetivo, score ou prova de evolução;
-- dimensão estrutural do Contexto Vivo não equivale a Domínio de Evolução;
-- aspecto descritivo da mudança não equivale a Domínio de Evolução;
-- mesmo domínio entre participantes não equivale a match automático;
-- `PER-010..012` validados localmente não equivalem a produto implementado;
-- `TRN-008..013` integralmente validadas documentalmente não equivalem a continuidade implementada;
-- contexto de navegação não amplia consentimento, prioridade, progresso ou autoridade;
-- Planos canonicamente registrado não equivale a checkout implementado;
-- navegar para Planos não equivale a contratar;
+- Domínio de Evolução não equivale a tela materializada;
+- responsabilidade documentada não equivale a wireframe;
+- State Map definido não equivale a Priority Flow;
 - contrato de navegação especializado não equivale a wireframe principal vigente;
 - Organização ≠ Guivos Business;
 - Organização Transforma ≠ Guivos Business Enterprise;
@@ -273,7 +272,7 @@ INVENTÁRIO FÍSICO
 
 V1, V2, V3 e V4 estão encerradas nos limites declarados. D4 propaga `JED-001..JED-009`; D5-A e D5-B materializam o eixo em superfícies existentes; D5-C1 contrata `PER-010..012` e `TRN-008..013`; D5-C2 materializa as três superfícies; D5-C3 valida localmente os três SVGs; D5-C4A materializa as origens em Hoje e governa o contrato integrado; D5-C4B promove as seis ligações para integralmente validadas no limite documental.
 
-A reconciliação pós-313/314 e o Bloco H preservam Jobs + IA autenticada como definidos em seus limites próprios. `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define posteriormente o mapa lógico-documental canônico de Organização e Coletivo. Permanecem pendentes o mapa de estados, os fluxos prioritários ainda não materializados e os wireframes principais autenticados, ainda que fluxos especializados preservem validações próprias.
+A reconciliação pós-313/314 e o Bloco H preservam Jobs + IA autenticada como definidos em seus limites próprios. `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o mapa lógico-documental canônico de Organização e Coletivo e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` define o mapa funcional de estados autenticados. Permanecem pendentes os Priority Flows ainda não materializados e os wireframes principais autenticados, ainda que fluxos especializados preservem validações próprias.
 
 O atlas de supply e relevância documenta Research consolidado e simulações, mas não substitui o Dry Run/Piloto com Pessoas reais.
 
