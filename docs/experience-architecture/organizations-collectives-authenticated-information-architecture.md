@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-IA-001
 title: Organizações e Coletivos — Arquitetura da Informação da Experiência Autenticada
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-12
+last_updated: 2026-09-16
 normative: false
 maturity: authenticated_information_architecture_defined_pre_surface_map
 depends_on:
@@ -18,6 +18,7 @@ related:
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - UXA-100-A3
   - UXA-100-A4
 ---
@@ -28,7 +29,7 @@ related:
 
 Este documento define a **Arquitetura da Informação** da experiência autenticada de Organização e Coletivo.
 
-Ele transforma os atores, limites de autoridade e jobs já reconciliados em uma estrutura coerente de informação. Em seu estágio original `pre-surface-map`, não antecipava o mapa final de superfícies, wireframes, UI ou implementação. Posteriormente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` consumiu esta IA como input e definiu o **Surface Map lógico-documental canônico**, sem alterar a maturidade própria deste artefato nem materializar State Map, navegação visual, wireframes, UI ou implementação.
+Ele transforma os atores, limites de autoridade e jobs já reconciliados em uma estrutura coerente de informação. Em seu estágio original `pre-surface-map`, não antecipava o mapa final de superfícies, estados, wireframes, UI ou implementação. Posteriormente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` consumiu esta IA como input e definiu o **Surface Map lógico-documental canônico**; depois, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu o **State Map documental canônico**. Essas definições não alteram a maturidade própria deste artefato nem materializam Priority Flows, navegação visual, wireframes, UI ou implementação.
 
 A pergunta desta etapa é:
 
@@ -839,7 +840,7 @@ Não deve convergir para:
 
 ## 29. Estados transversais que uma materialização posterior precisa suportar
 
-Sem definir ainda o State Map, a continuidade posterior deverá conseguir acomodar estados como:
+No estágio original desta IA, ainda sem um State Map definido, a continuidade posterior precisava conseguir acomodar estados como:
 
 - sem atenção material;
 - informação incompleta;
@@ -856,7 +857,11 @@ Sem definir ainda o State Map, a continuidade posterior deverá conseguir acomod
 - baixa conectividade quando relevante;
 - operação internacional quando legítima.
 
-Esses estados não exigem necessariamente telas próprias e não são materializados por este artefato nem pelo Surface Map lógico-documental.
+Essa enumeração é preservada como proveniência do requisito preexistente, não como State Map paralelo. `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` consumiu posteriormente essa necessidade e definiu o State Map documental canônico, preservando autoridades especializadas, limites epistemológicos e lacunas explícitas.
+
+Esses estados não exigem necessariamente telas próprias. Sua definição documental não cria IDs estáveis adicionais, não promove `GKR-TRN-*` e não materializa Priority Flows, navegação, wireframes, UI ou implementação.
+
+`UXA-019` permanece restrito às relações Organização ↔ Coletivo; nenhuma condição é transportada por analogia para relações Organização–Organização ou Coletivo–Coletivo.
 
 ## 30. Critérios de qualidade da IA
 
@@ -873,7 +878,7 @@ No gate original `pre-surface-map`, a arquitetura podia ser considerada definida
 9. síntese não se torna fonte paralela de verdade;
 10. decisões de tela, layout, componente e RBAC permanecem adiadas.
 
-Esses critérios foram posteriormente consumidos pela definição de `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`; sua satisfação não promove State Map, fluxos, navegação visual, wireframes ou implementação.
+Esses critérios foram posteriormente consumidos pela definição de `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` e, no nível seguinte, por `GKR-UX-ORGCOL-AUTH-STATE-MAP-001`. Sua satisfação não promove Priority Flows, navegação visual, wireframes ou implementação.
 
 ## 31. Decisões explicitamente adiadas
 
@@ -896,7 +901,7 @@ Este documento não define:
 - protótipo;
 - implementação.
 
-Também não reativa `UXA-015..018`, não inicia `UXA-102/V5` e não reativa Product Engineering. A definição posterior do Surface Map lógico-documental não altera essas fronteiras.
+Também não reativa `UXA-015..018`, não inicia `UXA-102/V5` e não reativa Product Engineering. As definições documentais posteriores do Surface Map e do State Map não alteram essas fronteiras.
 
 ## 32. Estado após esta definição e reconciliação posterior
 
@@ -915,10 +920,10 @@ SURFACE MAP
 → DEFINED / CANONICAL DOCUMENTARY
 
 STATE MAP
-→ NOT MATERIALIZED
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 PRIORITY FLOWS
-→ NOT MATERIALIZED AS MAIN AUTHENTICATED EXPERIENCE
+→ NOT MATERIALIZED
 
 MATERIALIZED NAVIGATION
 → NOT MATERIALIZED
@@ -930,13 +935,17 @@ UXA-102 / V5
 → NOT STARTED
 
 PRODUCT ENGINEERING
-→ PAUSED / NOT RELEASED
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
 ## 33. Fronteira documental corrente
 
-O antigo próximo ato deste artefato — materializar o mapa lógico de superfícies — foi consumido posteriormente por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`.
+O antigo próximo ato deste artefato — definir o mapa lógico de superfícies — foi consumido posteriormente por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`. O nível documental seguinte — definir o mapa de estados — foi consumido por `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`.
 
-A continuidade documental possível começa agora em **State Map** e, depois, em fluxos prioritários, navegação materializada e wireframes, sempre mediante autorização específica e separada.
+A continuidade documental possível começa agora em **Priority Flows** e, depois, em navegação materializada e wireframes, sempre mediante autorização específica e separada.
 
-Esta reconciliação não inicia nenhuma dessas etapas, não altera os IDs/maturidades `GKR-SURF-*` e não autoriza Design, UI, protótipo ou Product Engineering.
+```text
+STATE MAP DEFINED ≠ GKR-TRN-* PROMOTED ≠ MATERIALIZED NAVIGATION
+```
+
+Esta reconciliação não inicia nenhuma etapa downstream, não altera os IDs/maturidades `GKR-SURF-*`, não promove `GKR-TRN-*` e não autoriza Design, UI, protótipo ou Product Engineering.
