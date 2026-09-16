@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.3.1
+version: 1.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-15
 normative: false
@@ -12,6 +12,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
@@ -50,6 +51,7 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | atores, autoridades e jobs autenticados | **definidos documentalmente** | `GKR-UX-ORGCOL-AUTH-JOBS-001` |
 | Arquitetura da Informação autenticada | **definida** | `GKR-UX-ORGCOL-AUTH-IA-001` |
 | mapa lógico de superfícies autenticadas | **definido documentalmente** | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` |
+| mapa funcional de estados autenticados | **definido documentalmente** | `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` |
 | Jornada da Organização | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-ORGANIZATION-001` |
 | Jornada do Coletivo | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-COLLECTIVE-001` |
 | corpus de oportunidades reais | Research consolidado pré-campo | `RP-002-SUP-001` |
@@ -66,7 +68,7 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | UI / protótipo autenticado | não definido | pendente |
 | Engenharia da experiência autenticada | não autorizada a partir de wireframe | pendente |
 
-A existência de Jobs, Arquitetura da Informação e mapa lógico de superfícies não promove automaticamente mapa de estados, fluxos, sitemap técnico, menu visual, wireframe, UI, RBAC técnico ou implementação.
+A existência de Jobs, Arquitetura da Informação, mapa lógico de superfícies e mapa funcional de estados não promove automaticamente fluxos, sitemap técnico, menu visual, wireframe, UI, RBAC técnico ou implementação.
 
 ```text
 JOBS DEFINIDOS
@@ -74,7 +76,8 @@ JOBS DEFINIDOS
 ARQUITETURA DA INFORMAÇÃO DEFINIDA
 +
 MAPA LÓGICO DE SUPERFÍCIES DEFINIDO
-≠ MAPA DE ESTADOS
++
+MAPA DE ESTADOS DEFINIDO
 ≠ FLUXOS
 ≠ WIREFRAME
 ≠ UI
@@ -260,7 +263,7 @@ COLETIVO
 └── Planos e Capacidade [especializado / contextual]
 ```
 
-A IA agrupa informação e trabalho; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` materializa esses domínios como superfícies lógicas autenticadas. Nenhum dos dois documentos define mapa de estados, fluxos, quantidade final de telas, menu visual, wireframe, UI, protótipo, RBAC técnico ou implementação.
+A IA agrupa informação e trabalho; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` materializa esses domínios como superfícies lógicas autenticadas; `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` define as condições funcionais que essas responsabilidades precisam preservar. Nenhuma dessas autoridades define fluxos prioritários, quantidade final de telas, menu visual, wireframe, UI, protótipo, RBAC técnico ou implementação.
 
 ## 9. Jornadas atuais
 
@@ -275,7 +278,7 @@ Eles ajudam a mapear continuidade, estados e relações do ecossistema, mas **n�
 
 Qualquer trecho desses documentos que derive maturidade de `UXA-015`, `UXA-016`, `UXA-017` ou `UXA-018` fica subordinado à reconciliação de estado registrada aqui: os wireframes autenticados de Organização e Coletivo ainda não foram oficialmente definidos.
 
-A existência de Jobs, IA e mapa de superfícies atuais também não reativa `UXA-015..018`.
+A existência de Jobs, IA, mapa de superfícies e State Map atuais também não reativa `UXA-015..018`.
 
 ## 10. Organizações e Coletivos no supply
 
@@ -371,7 +374,7 @@ O estado vigente está detalhado em [Organizações e Coletivos — Estado de UX
 
 Resumo:
 
-> **Atores, autoridades, jobs, Arquitetura da Informação e mapa lógico de superfícies autenticadas já estão definidos documentalmente. Estados, fluxos prioritários e wireframes principais autenticados de Organização e Coletivo não são materializados por esta etapa.**
+> **Atores, autoridades, jobs, Arquitetura da Informação, mapa lógico de superfícies e mapa funcional de estados autenticados já estão definidos documentalmente. Fluxos prioritários e wireframes principais autenticados de Organização e Coletivo não são materializados por esta etapa.**
 
 Materiais anteriores que afirmavam wireframes principais vigentes ou validação vigente foram reclassificados como registros históricos `superseded`.
 
@@ -385,6 +388,7 @@ Materiais anteriores que afirmavam wireframes principais vigentes ou validação
 | atores, autoridades e jobs autenticados | `GKR-UX-ORGCOL-AUTH-JOBS-001` |
 | Arquitetura da Informação autenticada | `GKR-UX-ORGCOL-AUTH-IA-001` |
 | mapa de superfícies autenticadas | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` |
+| mapa de estados autenticados | `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` |
 | Jornada da Organização | `journeys/organization.md` |
 | Jornada do Coletivo | `journeys/collective.md` |
 | Home pública | `public-home-organizations-collectives-master-document.md` |
@@ -403,13 +407,13 @@ fundamentos e papéis
 → atores, autoridades e jobs prioritários
 → Arquitetura da Informação
 → mapa lógico de superfícies autenticadas
+→ mapa funcional de estados autenticados
 ```
 
 Este commit **não autoriza nem materializa** a continuação. Permanecem deliberadamente diferidos para gates posteriores:
 
 ```text
-estados
-→ fluxos prioritários
+fluxos prioritários
 → wireframe de baixa fidelidade
 → validação funcional
 → UI
@@ -432,4 +436,4 @@ Isso não apaga o histórico; apenas impede que materializações prematuras sej
 
 O atlas de supply e relevância possui função diferente: ele preserva Research, exemplos e método para tornar compreensível o universo de oportunidades. Ele **não** promove wireframes, matching, PMF ou implementação a estado superior.
 
-`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` já integra o estado canônico após revisão governada e merge da PR #379. Essa canonicidade do Surface Map não promove o State Map candidato da PR #380, fluxos prioritários, wireframes, Design/UI ou implementação.
+`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` compõem a autoridade documental definida desta revisão. Essa definição não materializa fluxos prioritários, wireframes, Design/UI ou implementação.
