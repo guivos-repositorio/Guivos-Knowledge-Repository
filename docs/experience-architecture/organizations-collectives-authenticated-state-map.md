@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-ORGCOL-AUTH-STATE-MAP-001
 title: Organizações e Coletivos — Mapa de Estados da Experiência Autenticada
-status: draft
-version: 0.5.0
+status: active
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-15
 normative: false
-maturity: authenticated_state_map_draft_pre_priority_flows_wireframes
+maturity: authenticated_state_map_defined_pre_priority_flows_wireframes
 depends_on:
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-IA-001
@@ -28,7 +28,7 @@ related:
 
 ## 1. Finalidade
 
-Este documento candidata o **mapa funcional de estados** da experiência autenticada de Organização e Coletivo a partir do Surface Map canônico, dos contratos de autoridade, das Jornadas e dos registries já vigentes.
+Este documento define o **mapa funcional de estados** da experiência autenticada de Organização e Coletivo a partir do Surface Map canônico, dos contratos de autoridade, das Jornadas e dos registries já vigentes.
 
 Ele responde à pergunta:
 
@@ -608,9 +608,9 @@ O State Map não define:
 
 Um estado funcional pode exigir compreensão ou evidência sem se converter em métrica visual.
 
-## 13. Critérios de suficiência do State Map
+## 13. Critérios de suficiência consumidos na promoção documental
 
-Este State Map somente poderá ser candidato a promoção documental quando, cumulativamente:
+A promoção documental desta autoridade foi adjudicada após o cumprimento cumulativo dos seguintes critérios:
 
 1. cobrir as famílias transversais necessárias de contexto/autoridade, operação, proveniência/evidência, proteção/governança e capacidade/disponibilidade;
 2. mapear as condições materiais de todos os domínios autenticados definidos no Surface Map sem inventar IDs;
@@ -620,11 +620,13 @@ Este State Map somente poderá ser candidato a promoção documental quando, cum
 6. preservar estados de ausência, bloqueio, contestação, proteção, influência e indisponibilidade;
 7. não criar nem promover transições;
 8. manter Priority Flows, wireframes, Design/UI e Engenharia fechados;
-9. passar validação semântica, mecânica e revisão independente no HEAD candidato exato.
+9. passar validação semântica, mecânica e revisão independente no HEAD de promoção exato.
 
-## 14. Gate documental desta autoridade candidata
+O atendimento desses critérios promove este documento somente ao estado **DEFINED / CANONICAL DOCUMENTARY**; não promove fluxos, superfícies individuais, transições ou materialização visual.
 
-Se esta autoridade for posteriormente revisada e promovida, a sequência governada passará a ser:
+## 14. Estado documental desta autoridade
+
+Após revisão independente, validações semântica e mecânica e autorização humana específica, a sequência governada é:
 
 ```text
 FUNDAMENTOS E PAPÉIS
@@ -640,7 +642,7 @@ MAPA LÓGICO DE SUPERFÍCIES
 → DEFINED / CANONICAL DOCUMENTARY
 
 MAPA DE ESTADOS
-→ DEFINED DOCUMENTARY
+→ DEFINED / CANONICAL DOCUMENTARY
 
 FLUXOS PRIORITÁRIOS
 → NOT MATERIALIZED
@@ -655,16 +657,11 @@ PRODUCT ENGINEERING
 → NOT RELEASED
 ```
 
-Enquanto este documento estiver `draft`, o estado canônico global continua:
+A promoção desta autoridade não altera por inferência a maturidade individual dos `GKR-SURF-*` nem dos `GKR-TRN-*`.
 
-```text
-MAPA DE ESTADOS
-→ NOT MATERIALIZED
-```
+## 15. Próximo gate após promoção
 
-## 15. Próximo gate após eventual promoção
-
-A eventual promoção deste State Map **não autoriza automaticamente fluxos prioritários**.
+A promoção deste State Map **não autoriza automaticamente fluxos prioritários**.
 
 O próximo ato governado separado deverá selecionar e definir somente os fluxos prioritários necessários, reconciliando:
 
