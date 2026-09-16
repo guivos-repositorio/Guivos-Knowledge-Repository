@@ -2,15 +2,16 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.36.0
+version: 3.37.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-14
+last_updated: 2026-09-15
 depends_on:
   - GKR-STATE-001
   - UXA-101
 related:
   - M7.88
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-PER002-MAT-ELIGIBILITY-001
   - GKR-UX-PER002-DESIGN-AUTH-001
   - GKR-UX-PER002-DESIGN-DELIVERY-001
@@ -35,7 +36,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.36.0
+→ 3.37.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -48,6 +49,18 @@ PRÓXIMA UXA
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
+
+O/C AUTHENTICATED SURFACE MAP
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+
+O/C AUTHENTICATED STATE MAP
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+
+O/C PRIORITY FLOWS
+→ NOT MATERIALIZED
+→ REQUIRES SEPARATE AUTHORIZATION
 
 BLOCO 2 — G / H / I
 → G COMPLETED / UPDATE_APPLIED
@@ -423,12 +436,16 @@ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 → mapa lógico-documental canônico das superfícies autenticadas O/C
 → stable GKR-SURF-* IDs preservados por crosswalk
 → não cria namespace paralelo
+
+GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ mapa funcional canônico documental dos estados autenticados O/C
+→ não cria namespace estável de estados
+→ não cria nem promove GKR-TRN-*
 ```
 
-O Surface Map é canônico em nível lógico-documental. Permanecem pendentes e não podem ser inferidos a partir dele:
+Surface Map e State Map são canônicos em nível documental. Permanecem pendentes e não podem ser inferidos a partir deles:
 
-- State Map autenticado O/C;
-- fluxos prioritários O/C;
+- Priority Flows O/C;
 - materialização de navegação;
 - wireframe principal da Organização;
 - wireframe principal do Coletivo;
@@ -440,13 +457,13 @@ O Surface Map é canônico em nível lógico-documental. Permanecem pendentes e 
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.36.0** |
+| Registro do Estado Atual | **3.37.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
 | O/C Authenticated Surface Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0** |
-| O/C State Map | **NOT MATERIALIZED** |
-| O/C Priority Flows | **NOT MATERIALIZED** |
+| O/C Authenticated State Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0** |
+| O/C Priority Flows | **NOT MATERIALIZED / SEPARATE AUTHORIZATION REQUIRED** |
 | O/C Navigation Materialization | **NOT MATERIALIZED** |
 | O/C Authenticated Wireframes | **NOT STARTED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
