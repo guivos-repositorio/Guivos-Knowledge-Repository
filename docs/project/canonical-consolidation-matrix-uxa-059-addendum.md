@@ -31,7 +31,7 @@ Este adendo registra o impacto documental da UXA-059 sobre a ordem de materializ
 
 A UXA-059 organiza contratos já integrados. Ela não altera o conteúdo funcional das UXA-056, UXA-057 e UXA-058, não cria wireframes e não inicia implementação.
 
-A reconciliação de 2026-08-30 preserva este adendo como **proveniência da ordem histórica de materialização e de seus guardrails metodológicos**. Essa ordem não constitui autorização vigente de Design ou materialização. O estado atual da experiência principal autenticada é governado por `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001`, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` e `GKR-UX-ORGCOL-UX-STATE-001`.
+A reconciliação de 2026-08-30 preserva este adendo como **proveniência da ordem histórica de materialização e de seus guardrails metodológicos**. Essa ordem não constitui autorização vigente de Design ou materialização. O estado atual da experiência principal autenticada é governado por `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001`, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` e `GKR-UX-ORGCOL-UX-STATE-001`.
 
 ## 2. Autoridade introduzida
 
@@ -209,7 +209,11 @@ AUTHENTICATED SURFACE MAP
 → GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 → DEFINED / CANONICAL DOCUMENTARY
 
-STATE MAP / PRIORITY FLOWS
+AUTHENTICATED STATE MAP
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+PRIORITY FLOWS / NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
@@ -219,7 +223,7 @@ DESIGN / UI / PROTOTYPE
 → NOT AUTHORIZED
 
 PRODUCT ENGINEERING
-→ PAUSED BEFORE W0-01
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
 ## 13. Recomendação histórica e gate atual
@@ -239,12 +243,16 @@ CURRENT AUTHORITIES
 → GKR-UX-ORGCOL-AUTH-JOBS-001
 → GKR-UX-ORGCOL-AUTH-IA-001
 → GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
 → GKR-UX-ORGCOL-UX-STATE-001
 
 AUTHENTICATED SURFACE MAP
 → DEFINED / CANONICAL DOCUMENTARY
 
-STATE MAP / PRIORITY FLOWS
+AUTHENTICATED STATE MAP
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+PRIORITY FLOWS / NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
@@ -252,6 +260,9 @@ MAIN AUTHENTICATED WIREFRAMES
 
 DESIGN / UI / PROTOTYPE / IMPLEMENTATION
 → NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
 Nenhum ato posterior é iniciado automaticamente.

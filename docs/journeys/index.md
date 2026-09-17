@@ -103,7 +103,7 @@ Nenhuma etapa autoriza automaticamente a seguinte. Para O/C, o próximo gate sep
 | Jornada do Coletivo | `draft` | Jobs + IA + Surface Map + State Map definidos documentalmente; Priority Flows/wireframe principal pendentes |
 | Jornada da Organização | `draft` | Jobs + IA + Surface Map + State Map definidos documentalmente; Priority Flows/wireframe principal pendentes |
 | catálogo integrado | `active` 0.33.0 | **0 SVGs físicos após F-016-A**; contratos textuais preservados; maturidade agregada não inferida |
-| registro de superfícies | `active` 0.25.0 | 57 IDs documentais; Surface Map O/C reconciliado sem promoção individual |
+| registro de superfícies | `active` 0.26.0 | 57 IDs documentais; Surface Map O/C reconciliado sem promoção individual |
 | registro de transições | `active` | 66 transições documentais; State Map não promove maturidade individual |
 | O/C Surface Map | `active` 1.0.0 | topologia lógico-documental canônica |
 | O/C State Map | `active` 1.0.0 | estados funcionais canônicos documentais; Priority Flows não materializados |
