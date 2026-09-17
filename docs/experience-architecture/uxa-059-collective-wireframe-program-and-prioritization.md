@@ -22,6 +22,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - M7.61
 normative: false
 ---
@@ -63,14 +64,24 @@ AUTHENTICATED SURFACE MAP
 → GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 → DEFINED / CANONICAL DOCUMENTARY
 
-STATE MAP / PRIORITY FLOWS
+AUTHENTICATED STATE MAP
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+PRIORITY FLOWS
+→ NOT MATERIALIZED
+
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
 → NOT STARTED
 
-DESIGN / MATERIALIZATION
+DESIGN / UI / PROTOTYPE
 → NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
 Assim, toda formulação prospectiva deste documento sobre “materializar”, “próximo incremento” ou “próxima onda” deve ser lida como **método histórico reutilizável apenas se uma futura etapa for novamente autorizada**, e não como autorização operacional atual.
@@ -528,7 +539,7 @@ Os princípios funcionais úteis recuperados desses registros foram absorvidos p
 
 Se uma futura materialização da UX principal do Coletivo for autorizada, ela deverá:
 
-- partir de `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001` e do Surface Map canônico `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`;
+- partir de `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001`, do Surface Map canônico `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` e do State Map canônico `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`;
 - preservar propósito antes de atividade;
 - manter pertencimento, disponibilidade, papel e autoridade separados;
 - incorporar os canais especializados sem virar feed;
@@ -727,7 +738,7 @@ Na integração original da UXA-059, a ordem recomendada era:
 
 Essa sequência registra **proveniência histórica**. Partes dela foram posteriormente materializadas e validadas por autoridades próprias, inclusive `UXA-095/096`; ela não reserva hoje uma sequência rígida nem autoriza nova materialização.
 
-A retomada futura da UX principal autenticada deve obedecer a Jobs + IA vigentes em suas maturidades próprias, ao Surface Map canônico `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, ao fechamento da auditoria aplicável e a nova autorização humana específica, sem inferir State Map, fluxo ou wireframe.
+A retomada futura da UX principal autenticada deve obedecer a Jobs + IA vigentes em suas maturidades próprias, ao Surface Map canônico `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, ao State Map canônico `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`, ao fechamento da auditoria aplicável e a nova autorização humana específica, sem inferir Priority Flows, navegação materializada ou wireframe.
 
 ## 29. Situação histórica após a integração e estado atual
 
@@ -759,17 +770,24 @@ AUTHENTICATED SURFACE MAP
 → GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 → DEFINED / CANONICAL DOCUMENTARY
 
-STATE MAP / PRIORITY FLOWS
+AUTHENTICATED STATE MAP
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+PRIORITY FLOWS
+→ NOT MATERIALIZED
+
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
 → NOT STARTED
 
-NEW MATERIALIZATION
+DESIGN / UI / PROTOTYPE
 → NOT AUTHORIZED
 
 PRODUCT ENGINEERING
-→ PAUSED
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
 ## 30. Critérios de aceite
@@ -831,11 +849,18 @@ CURRENT AUTHORITIES
 → GKR-UX-ORGCOL-AUTH-JOBS-001
 → GKR-UX-ORGCOL-AUTH-IA-001
 → GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
 
 AUTHENTICATED SURFACE MAP
 → DEFINED / CANONICAL DOCUMENTARY
 
-STATE MAP / PRIORITY FLOWS
+AUTHENTICATED STATE MAP
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+PRIORITY FLOWS
+→ NOT MATERIALIZED
+
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
@@ -843,6 +868,9 @@ MAIN AUTHENTICATED WIREFRAMES
 
 DESIGN / UI / PROTOTYPE / IMPLEMENTATION
 → NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
 Nenhum ato posterior é iniciado automaticamente.

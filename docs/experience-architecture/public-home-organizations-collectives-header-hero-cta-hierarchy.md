@@ -788,7 +788,7 @@ Header / navegação de ambiente autenticado do Coletivo
 
 A Home pública não possui autoridade representada, unidade selecionada, papel autenticado ou governança operacional ativa.
 
-Os estados autenticados atuais são governados pelas autoridades vigentes de Organização/Coletivo, incluindo `UXA-014`, `UXA-019`, Jobs e Arquitetura da Informação autenticada. Jobs + IA estão definidos documentalmente em `pre-surface-map`; o Surface Map lógico-documental autenticado está `DEFINED / CANONICAL DOCUMENTARY` em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`. O State Map, os fluxos prioritários, a navegação materializada e os wireframes principais autenticados permanecem pendentes/não materializados.
+Os estados autenticados atuais são governados pelas autoridades vigentes de Organização/Coletivo, incluindo `UXA-014`, `UXA-019`, Jobs e Arquitetura da Informação autenticada. Jobs + IA estão definidos documentalmente em `pre-surface-map`; o Surface Map lógico-documental autenticado está `DEFINED / CANONICAL DOCUMENTARY` em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` está `ACTIVE / DEFINED / CANONICAL DOCUMENTARY`. Os Priority Flows e a navegação materializada permanecem `NOT MATERIALIZED`; os wireframes principais autenticados permanecem `NOT STARTED`; Design/UI/protótipo permanecem `NOT AUTHORIZED`; Product Engineering permanece `PAUSED BEFORE W0-01 / NOT RELEASED`.
 
 ```text
 UXA-015 / UXA-016

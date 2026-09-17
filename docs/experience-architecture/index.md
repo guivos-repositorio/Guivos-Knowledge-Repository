@@ -209,10 +209,10 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 | Jornada da Organização | `draft` 0.15.0; Jobs + IA + Surface Map + State Map definidos; Priority Flows/navegação/wireframe principal pendentes |
 | mapa lógico autenticado O/C | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY** |
 | mapa de estados autenticado O/C | `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY**; não cria/promove `GKR-TRN-*` nem materializa Priority Flows |
-| catálogo integrado | `active` 0.36.0; **0 SVGs físicos após F-016-A**; maturidade funcional preservada por autoridades textuais |
+| catálogo integrado | `active` 0.37.0; **0 SVGs físicos após F-016-A**; maturidade funcional preservada por autoridades textuais |
 | proveniência visual histórica | documentos de galeria/matriz removidos do corpus corrente; recuperáveis no histórico Git; sem autoridade visual |
 | lacunas | `active` 0.37.0; Surface Map + State Map O/C removidos da fila; Priority Flows + wireframes permanecem pendentes |
-| registro de superfícies | `active` 0.25.0; 57 IDs; maturidade por item; crosswalk O/C sem promoção automática |
+| registro de superfícies | `active` 0.26.0; 57 IDs; maturidade por item; crosswalk O/C sem promoção automática |
 | registro de transições | `active`; 66 transições; State Map não promove maturidade por inferência |
 | detalhamento da Pessoa | `active`; PER-008 recorrente e PER-010..012 com continuidade D5-C validada |
 | D5-A | `active` 1.1.0 |
