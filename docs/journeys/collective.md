@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: draft
-version: 0.22.0
+version: 0.23.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-15
+last_updated: 2026-09-18
 related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
@@ -34,6 +34,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -60,7 +61,7 @@ presença pública
 |---|---|---|---|
 | presença pública e descoberta | validado no recorte público | UXA-060/061/062/063; `UXA-016/018` apenas como histórico superseded | parcial entre famílias |
 | solicitação | validado | UXA-064/065/066/067 | handoffs bilaterais posteriores validados nos gates |
-| referência administrativa do responsável | evidência local do pacote, **não baseline final da UX principal** | UXA-086/087 | contratos especializados preservam maturidade própria; Surface Map + State Map definidos; wireframe principal pendente |
+| referência administrativa do responsável | evidência local do pacote, **não baseline final da UX principal** | UXA-086/087 | contratos especializados preservam maturidade própria; Surface Map + State Map + Priority Flows definidos; wireframe principal pendente |
 | gestão de solicitações do responsável | validado no fluxo especializado | UXA-088/089/090/092 | handoffs bilaterais governados no escopo próprio |
 | aprovação → Meus Coletivos | validado | UXA-090/091/092 | TRN-108 integral |
 | Meus Coletivos → Central | validado | UXA-092/093/094/096 | TRN-110 integral |
@@ -79,7 +80,8 @@ representação e autoridade
 → Arquitetura da Informação definida
 → Surface Map lógico-documental canônico definido
 → State Map funcional canônico documental definido
-→ Priority Flows / navegação materializada / composição principal ainda pendentes
+→ Priority Flows canônicos definidos documentalmente
+→ navegação materializada / composição principal ainda pendentes
 → gestão de solicitações
 → participantes e vínculos
 → comunicação oficial
@@ -101,7 +103,7 @@ Coletivo e Autoridade
 Planos e Capacidade [especializado/contextual]
 ```
 
-`COL-003` mantém validação no fluxo especializado de gestão de solicitações. `COL-002` conserva evidência administrativa local e contratos de navegação que tenham autoridade própria, mas **não é tratado como wireframe principal autenticado final**. `COL-004` a `COL-008` permanecem programadas/contratadas ou parcialmente cobertas e devem ser reconciliadas futuramente contra Surface Map, State Map e os Priority Flows vigentes, não contra os SVGs superseded.
+`COL-003` mantém validação no fluxo especializado de gestão de solicitações. `COL-002` conserva evidência administrativa local e contratos de navegação que tenham autoridade própria, mas **não é tratado como wireframe principal autenticado final**. `COL-004` a `COL-008` permanecem programadas/contratadas ou parcialmente cobertas e devem ser reconciliadas futuramente contra Surface Map, State Map e Priority Flows vigentes, não contra os SVGs superseded.
 
 ```text
 MATERIALIZAÇÃO ADMINISTRATIVA LOCAL
@@ -111,10 +113,8 @@ MATERIALIZAÇÃO ADMINISTRATIVA LOCAL
 FLUXO ESPECIALIZADO VALIDADO
 ≠ JORNADA DO COLETIVO COMPLETA VALIDADA
 
-SURFACE MAP LÓGICO-DOCUMENTAL DEFINIDO
-+
-STATE MAP FUNCIONAL DEFINIDO
-≠ PRIORITY FLOWS MATERIALIZADOS
+SURFACE MAP + STATE MAP + PRIORITY FLOWS DOCUMENTAIS DEFINIDOS
+≠ NAVEGAÇÃO MATERIALIZADA
 ≠ WIREFRAME
 ```
 
@@ -270,13 +270,13 @@ A Arquitetura da Informação principal do Coletivo é definida por `GKR-UX-ORGC
 - estado canônico mais recente prevalece sobre estado visual obsoleto;
 - mesmo domínio entre participantes não transfere contexto pessoal ou autoridade;
 - contrato de navegação especializado não define automaticamente a UX principal;
-- Surface Map + State Map definidos não equivalem a Priority Flows, wireframe ou UI.
+- Surface Map + State Map + Priority Flows definidos documentalmente não equivalem a navegação materializada, wireframe ou UI.
 
 ## 8. Estado da vista
 
 Esta vista permanece `draft` porque:
 
-- **a Arquitetura da Informação autenticada, o Surface Map lógico-documental canônico e o State Map funcional canônico documental estão definidos, mas os Priority Flows, a navegação principal materializada e o wireframe principal autenticado do Coletivo ainda não foram definidos**;
+- **a Arquitetura da Informação autenticada, o Surface Map, o State Map e os Priority Flows estão definidos documentalmente; a navegação principal materializada e o wireframe principal autenticado do Coletivo ainda não foram definidos**;
 - `UXA-016/018` permanecem históricos `superseded`;
 - `COL-002` possui evidência administrativa local, mas não é baseline final da experiência principal;
 - participantes, comunicação e demais áreas do responsável continuam incompletos em materialização/validação;
@@ -291,6 +291,6 @@ Esta vista permanece `draft` porque:
 
 A taxonomia vigente de planos permanece `Livre · Mobiliza · Impacta · Rede`. Os fluxos públicos, de participação, gestão de solicitações e Planos preservam suas maturidades próprias quando suportados por autoridade independente. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista.
 
-A frente principal autenticada já possui fundamentos, atores/autoridades/jobs, Arquitetura da Informação, Surface Map lógico-documental canônico e State Map funcional canônico documental. O próximo nível lógico são os **Priority Flows**, seguidos de wireframes quando autorizados — **não o SVG histórico de UXA-016 nem a promoção automática de uma referência administrativa local**.
+A frente principal autenticada já possui fundamentos, atores/autoridades/jobs, Arquitetura da Informação, Surface Map, State Map e Priority Flows canônicos documentais. O próximo nível lógico é a **Navigation Materialization**, seguida de wireframes quando autorizados — **não o SVG histórico de UXA-016 nem a promoção automática de uma referência administrativa local**.
 
 Nenhuma próxima UXA, Design ou Product Engineering é iniciada automaticamente. A branch pré-auditoria de surface map permanece `HOLD_REVIEW` e sem autoridade vigente.

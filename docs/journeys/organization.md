@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-ORGANIZATION-001
 title: Jornada Integrada da Organização
 status: draft
-version: 0.15.0
+version: 0.16.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-15
+last_updated: 2026-09-18
 related:
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
@@ -36,6 +36,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -52,7 +53,8 @@ identidade, unidade e autoridade
 → Visão Geral definida semanticamente na Arquitetura da Informação
 → Surface Map lógico-documental canônico definido
 → State Map funcional canônico documental definido
-→ Priority Flows / composição visual ainda pendentes
+→ Priority Flows canônicos definidos documentalmente
+→ navegação materializada / composição visual ainda pendentes
 → responsabilidade material atual
 → oportunidades e programas
 → relações com Coletivos e Organizações
@@ -65,8 +67,8 @@ identidade, unidade e autoridade
 |---|---|---|---|---|---|
 | fundação institucional | definido funcionalmente | UXA-014 | — | — | input dos Jobs/IA |
 | contexto, atores e autoridade | **definidos documentalmente** | GKR-UX-ORGCOL-AUTH-JOBS-001 | — | — | input da IA autenticada |
-| Visão Geral da Organização | **domínio de IA + Surface Map + State Map definidos; wireframe principal pendente** | UXA-014; GKR-UX-ORGCOL-AUTH-JOBS-001; GKR-UX-ORGCOL-AUTH-IA-001; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | `UXA-015`/SVG associado apenas como histórico `superseded` | `UXA-017` superseded; sem validação vigente do wireframe principal | contratos especializados preservam maturidade própria; Priority Flows/composição visual final pendentes |
-| responsabilidade material atual | **definida semanticamente na IA, reconciliada no Surface Map e coberta pelo State Map; materialização pendente** | UXA-014; GKR-UX-ORGCOL-AUTH-JOBS-001; GKR-UX-ORGCOL-AUTH-IA-001; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | — | — | parcial/indeterminada até definição dos Priority Flows |
+| Visão Geral da Organização | **domínio de IA + Surface Map + State Map + Priority Flows definidos; wireframe principal pendente** | UXA-014; GKR-UX-ORGCOL-AUTH-JOBS-001; GKR-UX-ORGCOL-AUTH-IA-001; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001; GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 | `UXA-015`/SVG associado apenas como histórico `superseded` | `UXA-017` superseded; sem validação vigente do wireframe principal | contratos especializados preservam maturidade própria; Priority Flows definidos; navegação/composição visual final pendentes |
+| responsabilidade material atual | **definida semanticamente na IA, reconciliada no Surface Map/State Map/Priority Flows; materialização pendente** | UXA-014; GKR-UX-ORGCOL-AUTH-JOBS-001; GKR-UX-ORGCOL-AUTH-IA-001; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | — | — | parcial/indeterminada; Priority Flows definidos não promovem maturidade nem materializam navegação |
 | cadastro de oportunidades | validado no fluxo especializado | UXA-004 | UXA-008 | UXA-013 | publicação → descoberta validada por UXA-098 |
 | descoberta Mapa/Lista e detalhe | validado | UXA-004 | UXA-024; UXA-028; UXA-007 | UXA-025; UXA-029; UXA-012; UXA-101 no recorte de saída | TRN-203/204/210/211 por UXA-098; TRN-205 até BND-001 por UXA-101 |
 | relação Organização–Coletivo | contratado e estados funcionais cobertos | UXA-019; GKR-UX-ORGCOL-AUTH-JOBS-001; GKR-UX-ORGCOL-AUTH-IA-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | — | — | contrato bilateral existente; materialização ausente |
@@ -83,10 +85,8 @@ CONTRATO DE NAVEGAÇÃO
 FLUXO ESPECIALIZADO VALIDADO
 ≠ JORNADA INSTITUCIONAL COMPLETA VALIDADA
 
-SURFACE MAP LÓGICO-DOCUMENTAL DEFINIDO
-+
-STATE MAP FUNCIONAL DEFINIDO
-≠ PRIORITY FLOWS MATERIALIZADOS
+SURFACE MAP + STATE MAP + PRIORITY FLOWS DOCUMENTAIS DEFINIDOS
+≠ NAVEGAÇÃO MATERIALIZADA
 ≠ WIREFRAME
 ```
 
@@ -285,7 +285,7 @@ A IA e o State Map atuais já cobrem `Relações` como domínio e condições fu
 
 Esta vista permanece `draft` porque:
 
-- **a Arquitetura da Informação autenticada, o Surface Map lógico-documental canônico e o State Map funcional canônico documental estão definidos, mas os Priority Flows e o wireframe principal autenticado da Organização ainda não foram definidos**;
+- **a Arquitetura da Informação autenticada, o Surface Map, o State Map e os Priority Flows estão definidos documentalmente; a navegação materializada e o wireframe principal autenticado da Organização ainda não foram definidos**;
 - `UXA-015/017` permanecem históricos `superseded`;
 - a relação Organização–Coletivo não possui materialização bilateral específica;
 - a matriz institucional completa ainda não existe como experiência materializada/validada;
@@ -302,6 +302,6 @@ Esta vista permanece `draft` porque:
 
 A Organização mantém publicação/descoberta validada pela UXA-098, saída consciente até `BND-001` validada pela UXA-101 e o fluxo especializado de Planos com sua maturidade documental própria. A taxonomia vigente de planos é `Conecta · Eleva · Transforma`; Guivos Business permanece produto separado. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista.
 
-A frente principal autenticada já possui fundamentos, atores/autoridades/jobs, Arquitetura da Informação, Surface Map lógico-documental canônico e State Map funcional canônico documental. O próximo nível lógico são os **Priority Flows**, seguidos de wireframes quando autorizados — **não o SVG histórico de UXA-015**.
+A frente principal autenticada já possui fundamentos, atores/autoridades/jobs, Arquitetura da Informação, Surface Map, State Map e Priority Flows canônicos documentais. O próximo nível lógico é a **Navigation Materialization**, seguida de wireframes quando autorizados — **não o SVG histórico de UXA-015**.
 
 Nenhuma próxima UXA, Design ou Product Engineering é iniciada automaticamente. A branch pré-auditoria de surface map permanece `HOLD_REVIEW` e sem autoridade vigente.

@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-JOBS-001
 title: Organizações e Coletivos — Atores, Autoridades e Jobs Prioritários da Experiência Autenticada
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-16
+last_updated: 2026-09-18
 normative: false
 maturity: authenticated_information_architecture_defined_pre_surface_map
 depends_on:
@@ -19,6 +19,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - RP-002
   - RP-002-OCE-001
   - RP-002-PMF-001
@@ -30,7 +31,7 @@ related:
 
 Este documento fechou a etapa imediatamente anterior à **Arquitetura da Informação** da experiência autenticada de Organizações e Coletivos.
 
-Após a validação deste incremento, `GKR-UX-ORGCOL-AUTH-IA-001` definiu a Arquitetura da Informação autenticada no estágio **pre-surface-map**. Essa maturidade permanece própria deste artefato e da IA naquele momento documental. Posteriormente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` consumiu esses inputs e definiu o **Surface Map lógico-documental canônico**; em ato governado ainda posterior, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu o **State Map funcional canônico**. Este documento permanece `active` como autoridade dos atores, limites e jobs; não reclassifica IA, Surface Map ou State Map como pendentes.
+Após a validação deste incremento, `GKR-UX-ORGCOL-AUTH-IA-001` definiu a Arquitetura da Informação autenticada no estágio **pre-surface-map**. Essa maturidade permanece própria deste artefato e da IA naquele momento documental. Posteriormente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` consumiu esses inputs e definiu o **Surface Map lógico-documental canônico**; em ato governado ainda posterior, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu o **State Map funcional canônico**; depois, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` definiu os **Priority Flows canônicos documentais**. Este documento permanece `active` como autoridade dos atores, limites e jobs; não reclassifica IA, Surface Map ou State Map como pendentes.
 
 Ele reconcilia os fundamentos e contratos vigentes para responder quatro perguntas:
 
@@ -67,7 +68,8 @@ A frente parte das seguintes autoridades e estados:
 - `GKR-UX-ORGCOL-UX-STATE-001` preserva o baseline histórico no qual a arquitetura da informação e os wireframes principais autenticados ainda não estavam definidos;
 - `GKR-UX-ORGCOL-AUTH-IA-001` define a Arquitetura da Informação autenticada de Organização e Coletivo em sua maturidade própria **defined pre-surface-map**, sem materializar wireframes, UI ou implementação;
 - `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` definiu posteriormente o **Surface Map lógico-documental canônico**; naquele ato, não materializou State Map, navegação visual, wireframes, UI ou implementação;
-- `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu posteriormente, em ato governado separado, o **State Map funcional canônico**, sem materializar Priority Flows, navegação, wireframes, UI ou implementação e sem promover `GKR-TRN-*`;
+- `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu posteriormente, em ato governado separado, o **State Map funcional canônico**; naquele ato não materializou Priority Flows, navegação, wireframes, UI ou implementação e não promoveu `GKR-TRN-*`;
+- `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` definiu posteriormente os **Priority Flows canônicos documentais**, sem criar/promover `GKR-TRN-*`, sem materializar navegação e sem iniciar wireframes;
 - `GKR-UX-ORGCOL-SUPPLY-VALUE-001` fornece Research sobre supply, relevância e papéis sem transformar Research em Canon ou PMF.
 
 A sequência governada corrente é:
@@ -87,7 +89,7 @@ fundamentos e papéis
 → handoff técnico
 ```
 
-No estado corrente, atores/autoridades/jobs, Arquitetura da Informação, Surface Map lógico-documental e State Map funcional já estão definidos. O próximo gap documental começa em **Priority Flows**, seguido de navegação materializada e wireframes, todos dependentes de autorização própria. Nenhuma etapa seguinte é iniciada automaticamente.
+No estado corrente, atores/autoridades/jobs, Arquitetura da Informação, Surface Map, State Map e Priority Flows já estão definidos documentalmente. O próximo gap começa em **Navigation Materialization**, seguido de wireframes, ambos dependentes de autorização própria. Nenhuma etapa seguinte é iniciada automaticamente.
 
 ## 3. Unidade de atuação autenticada
 
@@ -640,8 +642,9 @@ AUTHENTICATED STATE MAP
 → GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
-PRIORITY FLOWS
-→ NOT MATERIALIZED AS MAIN AUTHENTICATED EXPERIENCE
+AUTHENTICATED PRIORITY FLOWS
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 MATERIALIZED NAVIGATION
 → NOT MATERIALIZED
@@ -662,6 +665,6 @@ Após a definição da Arquitetura da Informação autenticada, `GKR-UX-ORGCOL-A
 
 A sequência governada de `F-006` foi concluída: autorização, cleanup 6/6, reconciliação, validações e prova pós-delete. `F-006` está resolvido. A continuidade desta autoridade permanece funcional e não autoriza materialização visual.
 
-As lacunas posteriores correntes são **Priority Flows da experiência principal, navegação materializada e wireframes autenticados**. Cada uma exige autorização específica e não é iniciada por esta reconciliação.
+As lacunas posteriores correntes são **Navigation Materialization e wireframes autenticados**. Cada uma exige autorização específica e não é iniciada por esta reconciliação.
 
 Nenhuma dessas lacunas deve produzir, por inferência, UI, protótipo ou implementação; Design/UI/protótipo permanecem não autorizados e Product Engineering permanece não liberada.

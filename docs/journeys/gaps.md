@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.37.0
+version: 0.38.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-15
+last_updated: 2026-09-18
 related:
   - UXA-059
   - UXA-090
@@ -33,6 +33,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -47,8 +48,8 @@ A reconciliação pós-PR #313/#314 revelou lacunas da experiência principal au
 
 As lacunas principais vigentes são, portanto:
 
-- Priority Flows + wireframe principal autenticado da Organização;
-- Priority Flows + wireframe principal autenticado do Coletivo.
+- Navigation Materialization + wireframe principal autenticado da Organização;
+- Navigation Materialization + wireframe principal autenticado do Coletivo.
 
 `UXA-015..018` permanecem históricos `superseded`. Estados sensíveis/alternativos específicos, V5/UXA-102, D6, D7, cobrança real e demais frentes continuam separadas.
 
@@ -62,7 +63,7 @@ MAPA LÓGICO DE SUPERFÍCIES
 MAPA FUNCIONAL DE ESTADOS
 → DEFINED / CANONICAL DOCUMENTARY
 
-PRIORITY FLOWS + WIREFRAMES PRINCIPAIS
+NAVIGATION MATERIALIZATION + WIREFRAMES PRINCIPAIS
 → PENDENTES / NÃO MATERIALIZADOS
 ```
 
@@ -124,7 +125,7 @@ CONTRATO DE ORIGEM/RETORNO DE PLANOS
 
 | Lacuna | IDs relacionados | Estado visual | Estado funcional | Continuidade remanescente |
 |---|---|---|---|---|
-| Priority Flows / wireframe principal autenticado do Coletivo | COL-001/COL-002 e áreas internas | **wireframe pendente; UXA-016/018 superseded; UXA-086/087 apenas evidência administrativa local** | fundamentos + jobs + IA + Surface Map + State Map existentes | Priority Flows → wireframe → validação |
+| Navigation Materialization / wireframe principal autenticado do Coletivo | COL-001/COL-002 e áreas internas | **wireframe pendente; UXA-016/018 superseded; UXA-086/087 apenas evidência administrativa local** | fundamentos + jobs + IA + Surface Map + State Map + Priority Flows existentes | Navigation Materialization → wireframe → validação |
 | Visão administrativa local → gestão de solicitações | COL-002; TRN-112; COL-003 | origem local + fluxo especializado materializado | TRN-112 preserva maturidade documental própria | integração final deverá ser revista contra as autoridades canônicas e o futuro wireframe principal |
 | solicitação ↔ operação responsável | PER-105; TRN-105/106/107/109; COL-003 | materializados | integralmente validada | aprovação fechada em TRN-108 |
 | continuidade pós-aprovação | PER-105; TRN-108; PER-106 | materializados | integralmente validada | nenhuma nesta ligação |
@@ -132,7 +133,7 @@ CONTRATO DE ORIGEM/RETORNO DE PLANOS
 | Central → Início do Participante | PER-107; TRN-111; PER-108 | materializados | integralmente validada no recorte da Pessoa participante | estados P0B e áreas internas separados |
 | contexto administrativo → Planos → contexto administrativo | COL-002; TRN-417/418; COL-301 | pacote especializado materializado | TRN-417/418 preservam maturidade do contrato especializado | integração final deverá ser revista contra as autoridades canônicas e o futuro wireframe principal |
 
-A Arquitetura da Informação do Coletivo está definida em `GKR-UX-ORGCOL-AUTH-IA-001`, o Surface Map lógico-documental em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` e o State Map funcional em `GKR-UX-ORGCOL-AUTH-STATE-MAP-001`; nenhum deles materializa Priority Flows ou a experiência visual principal.
+A Arquitetura da Informação do Coletivo está definida em `GKR-UX-ORGCOL-AUTH-IA-001`, o Surface Map lógico-documental em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` e o State Map funcional em `GKR-UX-ORGCOL-AUTH-STATE-MAP-001`; essas autoridades, somadas aos Priority Flows canônicos, não materializam navegação nem a experiência visual principal.
 
 ## 7. Fila por dependência
 
@@ -143,11 +144,11 @@ A fila não autoriza execução automática.
 | P0B | Meus Coletivos | PER-106 | P0A validado | ativo próprio quando decisão/proteção justificar |
 | P0B | Central | PER-107 | P0A validado | vazio, excesso de volume e baixa conectividade |
 | P0B | Início do Participante | PER-108 | P0A validado | mudança material de decisão/proteção |
-| UX principal | Coletivo autenticado | COL-001/COL-002; COL-004 a 008 | **wireframe principal pendente** | **Jobs + IA + Surface Map + State Map concluídos documentalmente** → Priority Flows → wireframe → validação |
+| UX principal | Coletivo autenticado | COL-001/COL-002; COL-004 a 008 | **wireframe principal pendente** | **Jobs + IA + Surface Map + State Map + Priority Flows concluídos documentalmente** → Navigation Materialization → wireframe → validação |
 | UX principal | Organização autenticada | ORG-001; ORG-004 a 007 | **wireframe principal pendente** | **Jobs + IA + Surface Map + State Map concluídos documentalmente** → Priority Flows → wireframe → validação |
 | operação interna | Coletivo | COL-004 a 007; TRN-113 | sem SVGs dedicados | programa, materialização e validação |
-| bilateral | Organização–Coletivo | ORG-004 a 006; COL-008 | sem SVGs | Priority Flows/materialização e validação bilateral |
-| institucional | matriz completa | ORG-001; ORG-007 | cobertura parcial; ORG-001 histórico não é baseline | Priority Flows e validação futura sob autoridade vigente |
+| bilateral | Organização–Coletivo | ORG-004 a 006; COL-008 | sem SVGs | Navigation Materialization e validação bilateral |
+| institucional | matriz completa | ORG-001; ORG-007 | cobertura parcial; ORG-001 histórico não é baseline | Navigation Materialization e validação futura sob autoridade vigente |
 | Conta | Conta/Configurações | PER-009; TRN-406/407 | sem SVG | materializar se arquitetura exigir |
 | comercial | contratação assistida | BND-002; TRN-416/426 | fronteira registrada | contrato comercial/operacional suficiente |
 | patrocinado | integração orgânico–patrocinado | TRN-304/305/306 | materializados parcialmente | validação ponta a ponta específica |
@@ -170,13 +171,13 @@ A lacuna D5-C de `TRN-008..013` não integra mais esta fila após D5-C4B.
 | D5-C4A | contrato origem recorrente Hoje | concluído | autoridade documental |
 | D5-C4B | integração TRN-008..013 | concluída | validação documental integrada |
 | O/C — State Map | mapa funcional de estados autenticados | **definido / canônico documental** | GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0 |
-| O/C — próximo gate | Priority Flows | **não materializados** | autorização governada separada |
+| O/C — próximo gate | Navigation Materialization | **não materializada** | autorização governada separada |
 
 ## 9. Próximo nível lógico
 
 A D5-C4B encerra a lacuna específica dos seis handoffs pessoais. Para Organização e Coletivo, fundamentos, atores/autoridades/jobs, Arquitetura da Informação, mapa lógico de superfícies e mapa funcional de estados já estão definidos documentalmente.
 
-A lacuna seguinte começa nos **Priority Flows**, mas sua existência como próximo nível lógico não os autoriza automaticamente.
+Os **Priority Flows** foram definidos documentalmente. A lacuna seguinte começa em **Navigation Materialization**, cuja posição como próximo nível lógico não a autoriza automaticamente.
 
 Isso não inicia automaticamente V5/UXA-102, D6, D7, Design, Product Engineering ou qualquer outra lacuna.
 

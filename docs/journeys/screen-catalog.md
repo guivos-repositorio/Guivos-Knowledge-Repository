@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.37.0
+version: 0.38.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-16
+last_updated: 2026-09-18
 related:
   - UXA-070
   - UXA-080
@@ -33,6 +33,7 @@ related:
   - GKR-UX-ORGCOL-UX-STATE-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -90,10 +91,10 @@ As contagens `SVGs` abaixo pertencem ao snapshot histórico anterior à desmater
 | Pessoa em Coletivos | Central de Atualizações | 1 | validado | TRN-110 e TRN-111 integralmente validadas | P0B/P1 separados |
 | Pessoa em Coletivos | Início do Participante | 1 | validado por UXA-095/096 no recorte da Pessoa participante; não deriva de UXA-016/018 | TRN-111 integralmente validada | P0B e áreas internas separadas |
 | Coletivo | referência inicial histórica | 0 | `UXA-016/018` e ativo visual removidos do corpus corrente | proveniência somente no histórico Git | materialização visual pertence exclusivamente a Design |
-| Coletivo | Visão Geral do Responsável | 1 | UXA-086/087 preservam evidência local do pacote administrativo; **não constituem baseline final da UX principal** | TRN-112 e contratos de Planos preservam maturidade própria | Surface Map e State Map lógico-funcionais canônicos definidos; Priority Flows, navegação materializada e wireframe principal autenticado pendentes |
+| Coletivo | Visão Geral do Responsável | 1 | UXA-086/087 preservam evidência local do pacote administrativo; **não constituem baseline final da UX principal** | TRN-112 e contratos de Planos preservam maturidade própria | Surface Map, State Map e Priority Flows canônicos definidos; navegação materializada e wireframe principal autenticado pendentes |
 | Coletivo | gestão de solicitações | 7 | 7 validados no fluxo especializado | handoffs aplicáveis integralmente validados | operação interna posterior |
 | Coletivo | Planos, comparação e cobrança | **3** | **3 validados no fluxo especializado** | contratos de origem/retorno preservam maturidade própria; TRN-411 a 415 locais; TRN-416 parcial | contratação/dimensionamento assistido e cobrança real; origem principal final pendente |
-| Organização | visão geral e cadastro | 1 | **materialização histórica de ORG-001 removida; cadastro preserva validação funcional própria por UXA-008/013** | publicação–descoberta preservada; contratos de Planos têm maturidade própria | Surface Map e State Map lógico-funcionais canônicos definidos; Priority Flows/composição visual/wireframe principal pendentes; materialização visual pertence exclusivamente a Design |
+| Organização | visão geral e cadastro | 1 | **materialização histórica de ORG-001 removida; cadastro preserva validação funcional própria por UXA-008/013** | publicação–descoberta preservada; contratos de Planos têm maturidade própria | Surface Map, State Map e Priority Flows canônicos definidos; navegação/composição visual/wireframe principal pendentes; materialização visual pertence exclusivamente a Design |
 | Organização | Planos, comparação e cobrança | **3** | **3 validados no fluxo especializado** | contratos de origem/retorno preservam maturidade própria; TRN-421 a 425 locais; TRN-426 parcial | contratação/dimensionamento assistido e cobrança real; origem principal final pendente |
 | camada comercial | Opportunity Boost | 46 | **46 validados no escopo próprio** | parcial | TRN-304/305/306 e integrações específicas |
 | fronteira documental | destinos externos/comerciais | 0 | não aplicável | BND-001 examinada; BND-002 parcial | processo externo posterior; contratação/dimensionamento assistido |
@@ -178,7 +179,8 @@ A reconciliação pós-PR #313/#314 **não reescreve a história desses snapshot
 - resumo `121 SVGs / 121 validados / 0 pendentes`: **superseded como claim de maturidade vigente**;
 - Surface Map lógico-documental O/C: **definido/canônico por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`**;
 - State Map funcional O/C: **definido/canônico por `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`**;
-- Priority Flows / navegação materializada O/C: **pendentes / não materializados**;
+- Priority Flows O/C: **DEFINED / CANONICAL DOCUMENTARY**;
+- navegação materializada O/C: **pendente / não materializada**;
 - wireframes principais autenticados O/C: **não iniciados**;
 - materialização visual da Organização: **autoridade exclusiva de Design; não é requisito documental**;
 - materialização visual do Coletivo: **autoridade exclusiva de Design; não é requisito documental**;

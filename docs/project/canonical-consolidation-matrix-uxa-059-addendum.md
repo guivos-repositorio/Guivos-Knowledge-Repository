@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-UXA-059
 title: Adendo de Consolidação Canônica — UXA-059
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-18
 depends_on:
   - GKR-CANON-MATRIX-001
   - UXA-059
@@ -65,6 +65,8 @@ Esses critérios continuam preservados como método/proveniência. Qualquer uso 
 | atores, autoridades e jobs da UX principal autenticada | GKR-UX-ORGCOL-AUTH-JOBS-001 |
 | Arquitetura da Informação autenticada | GKR-UX-ORGCOL-AUTH-IA-001 — definida documentalmente; maturidade própria permanece `pre-surface-map` |
 | Surface Map autenticado | GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0 — definido / canônico documental |
+| State Map autenticado | GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0 — definido / canônico documental |
+| Priority Flows autenticados | GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0 — definidos / canônicos documentais |
 | estado de UX/wireframes O/C | GKR-UX-ORGCOL-UX-STATE-001 |
 | Opportunity Boost | UXA-038 a UXA-055 |
 | Resultados Empresariais | BA-STR-002; COD-018 |
@@ -127,7 +129,7 @@ Essa regra metodológica não autoriza a criação de SVGs enquanto Design/mater
 
 Os princípios funcionais úteis recuperados desses registros foram absorvidos pelas autoridades vigentes. A materialização/validação posterior do **Início do Participante** possui maturidade própria em `UXA-095/096` no recorte da Pessoa participante.
 
-Qualquer futura materialização da UX principal administrativa do Coletivo deverá partir de Jobs + IA autenticada vigentes e do Surface Map canônico `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, sem reutilizar o antigo SVG de `UXA-016` como baseline e sem inferir State Map, fluxo, wireframe ou Design por decorrência.
+Qualquer futura materialização da UX principal administrativa do Coletivo deverá partir de Jobs + IA autenticada vigentes, do Surface Map canônico `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, do State Map canônico `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` e dos Priority Flows canônicos `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`, sem reutilizar o antigo SVG de `UXA-016` como baseline e sem inferir navegação materializada, wireframe ou Design por decorrência.
 
 Os arquivos históricos permanecem fisicamente preservados enquanto não houver autorização humana separada e explícita para seu cleanup, sem autoridade visual vigente. `F-006` permanece aberto durante eventual remoção e os gates pós-cleanup.
 
@@ -213,7 +215,11 @@ AUTHENTICATED STATE MAP
 → GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
-PRIORITY FLOWS / NAVIGATION MATERIALIZATION
+PRIORITY FLOWS
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
@@ -244,6 +250,7 @@ CURRENT AUTHORITIES
 → GKR-UX-ORGCOL-AUTH-IA-001
 → GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 → GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
 → GKR-UX-ORGCOL-UX-STATE-001
 
 AUTHENTICATED SURFACE MAP
@@ -252,7 +259,11 @@ AUTHENTICATED SURFACE MAP
 AUTHENTICATED STATE MAP
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
-PRIORITY FLOWS / NAVIGATION MATERIALIZATION
+PRIORITY FLOWS
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES

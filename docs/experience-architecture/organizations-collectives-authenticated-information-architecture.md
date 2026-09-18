@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-IA-001
 title: Organizações e Coletivos — Arquitetura da Informação da Experiência Autenticada
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-16
+last_updated: 2026-09-18
 normative: false
 maturity: authenticated_information_architecture_defined_pre_surface_map
 depends_on:
@@ -19,6 +19,7 @@ related:
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - UXA-100-A3
   - UXA-100-A4
 ---
@@ -29,7 +30,7 @@ related:
 
 Este documento define a **Arquitetura da Informação** da experiência autenticada de Organização e Coletivo.
 
-Ele transforma os atores, limites de autoridade e jobs já reconciliados em uma estrutura coerente de informação. Em seu estágio original `pre-surface-map`, não antecipava o mapa final de superfícies, estados, wireframes, UI ou implementação. Posteriormente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` consumiu esta IA como input e definiu o **Surface Map lógico-documental canônico**; depois, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu o **State Map documental canônico**. Essas definições não alteram a maturidade própria deste artefato nem materializam Priority Flows, navegação visual, wireframes, UI ou implementação.
+Ele transforma os atores, limites de autoridade e jobs já reconciliados em uma estrutura coerente de informação. Em seu estágio original `pre-surface-map`, não antecipava o mapa final de superfícies, estados, wireframes, UI ou implementação. Posteriormente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` consumiu esta IA como input e definiu o **Surface Map lógico-documental canônico**; depois, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu o **State Map documental canônico** e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` definiu os **Priority Flows canônicos documentais**. Essas definições não alteram a maturidade própria deste artefato nem materializam navegação visual, wireframes, UI ou implementação.
 
 A pergunta desta etapa é:
 
@@ -923,7 +924,8 @@ STATE MAP
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 PRIORITY FLOWS
-→ NOT MATERIALIZED
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 MATERIALIZED NAVIGATION
 → NOT MATERIALIZED
@@ -942,7 +944,7 @@ PRODUCT ENGINEERING
 
 O antigo próximo ato deste artefato — definir o mapa lógico de superfícies — foi consumido posteriormente por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`. O nível documental seguinte — definir o mapa de estados — foi consumido por `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`.
 
-A continuidade documental possível começa agora em **Priority Flows** e, depois, em navegação materializada e wireframes, sempre mediante autorização específica e separada.
+Os Priority Flows foram definidos posteriormente por `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`. A continuidade possível começa agora em **Navigation Materialization** e, depois, em wireframes, sempre mediante autorização específica e separada.
 
 ```text
 STATE MAP DEFINED ≠ GKR-TRN-* PROMOTED ≠ MATERIALIZED NAVIGATION

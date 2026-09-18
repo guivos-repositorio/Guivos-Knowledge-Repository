@@ -2,9 +2,9 @@
 id: UXA-059
 title: Programa e Priorização dos Wireframes de Coletivos
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-18
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -23,6 +23,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - M7.61
 normative: false
 ---
@@ -69,7 +70,8 @@ AUTHENTICATED STATE MAP
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 PRIORITY FLOWS
-→ NOT MATERIALIZED
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
@@ -738,7 +740,7 @@ Na integração original da UXA-059, a ordem recomendada era:
 
 Essa sequência registra **proveniência histórica**. Partes dela foram posteriormente materializadas e validadas por autoridades próprias, inclusive `UXA-095/096`; ela não reserva hoje uma sequência rígida nem autoriza nova materialização.
 
-A retomada futura da UX principal autenticada deve obedecer a Jobs + IA vigentes em suas maturidades próprias, ao Surface Map canônico `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, ao State Map canônico `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`, ao fechamento da auditoria aplicável e a nova autorização humana específica, sem inferir Priority Flows, navegação materializada ou wireframe.
+A retomada futura da UX principal autenticada deve obedecer a Jobs + IA vigentes em suas maturidades próprias, ao Surface Map canônico `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, ao State Map canônico `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`, aos Priority Flows canônicos `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`, ao fechamento da auditoria aplicável e a nova autorização humana específica, sem inferir navegação materializada ou wireframe.
 
 ## 29. Situação histórica após a integração e estado atual
 
@@ -775,7 +777,8 @@ AUTHENTICATED STATE MAP
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 PRIORITY FLOWS
-→ NOT MATERIALIZED
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
@@ -850,6 +853,7 @@ CURRENT AUTHORITIES
 → GKR-UX-ORGCOL-AUTH-IA-001
 → GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 → GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
 
 AUTHENTICATED SURFACE MAP
 → DEFINED / CANONICAL DOCUMENTARY
@@ -858,7 +862,8 @@ AUTHENTICATED STATE MAP
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 PRIORITY FLOWS
-→ NOT MATERIALIZED
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED

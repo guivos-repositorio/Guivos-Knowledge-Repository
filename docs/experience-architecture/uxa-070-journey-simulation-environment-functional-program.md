@@ -2,9 +2,9 @@
 id: UXA-070
 title: Programa Funcional do Ambiente de Simulação das Jornadas
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-18
 parent: UXA-000
 depends_on:
   - PAS-001
@@ -42,6 +42,7 @@ related:
   - UXA-071
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - M7.72
 normative: false
 ---
@@ -62,7 +63,7 @@ A UXA-070 estabelece estrutura, taxonomias, critérios de reutilização e regra
 
 `UXA-015`, `UXA-016`, `UXA-017` e `UXA-018` estão `superseded` e permanecem neste documento somente como **proveniência histórica** quando mencionadas no corpo. Elas não são dependências nem autoridades funcionais vigentes da UXA-070.
 
-O modelo funcional, as taxonomias e as regras de governança deste programa continuam úteis. Entretanto, afirmações temporais deste documento sobre quantidades, materialização, validação, lacunas ou “próximo ato” registram o **snapshot do estágio em que a UXA-070 foi criada** e não devem ser interpretadas como maturidade atual do corpus. Para estado vigente de Organização/Coletivo prevalecem `UXA-014`, `UXA-019`, `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001`, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` e os registries/autoridades atuais.
+O modelo funcional, as taxonomias e as regras de governança deste programa continuam úteis. Entretanto, afirmações temporais deste documento sobre quantidades, materialização, validação, lacunas ou “próximo ato” registram o **snapshot do estágio em que a UXA-070 foi criada** e não devem ser interpretadas como maturidade atual do corpus. Para estado vigente de Organização/Coletivo prevalecem `UXA-014`, `UXA-019`, `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001`, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001` e os registries/autoridades atuais.
 
 ```text
 JOBS + AUTHENTICATED IA
@@ -78,7 +79,8 @@ AUTHENTICATED STATE MAP
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 PRIORITY FLOWS
-→ NOT MATERIALIZED
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
@@ -93,7 +95,7 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
-Nenhuma leitura da UXA-070 reativa baselines `superseded` ou autoriza Priority Flows, navegação materializada, wireframe, UI, protótipo ou implementação.
+Nenhuma leitura da UXA-070 reativa baselines `superseded` ou autoriza navegação materializada, wireframe, UI, protótipo ou implementação; os Priority Flows correntes são governados separadamente por `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`.
 
 ## 2. Decisão estrutural
 
@@ -236,7 +238,7 @@ identidade, unidade e autoridade
 → decisões e Próximos Passos justificados
 ```
 
-No estágio original da UXA-070, `UXA-015` e `UXA-017` eram usadas como referências materializadas/validadas da Visão Geral da Organização. Ambas estão hoje `superseded`; essa afirmação é preservada somente como **proveniência histórica** e não constitui baseline vigente nem dependência funcional. A experiência autenticada atual é governada pelas autoridades vigentes de Organização/Coletivo; Jobs + IA autenticada permanecem definidas em sua maturidade própria `pre-surface-map`; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o Surface Map lógico-documental canônico; `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` está `ACTIVE / DEFINED / CANONICAL DOCUMENTARY`. Priority Flows e navegação materializada permanecem `NOT MATERIALIZED`; os wireframes principais autenticados permanecem `NOT STARTED`; Design/UI/protótipo permanecem `NOT AUTHORIZED`; Product Engineering permanece `PAUSED BEFORE W0-01 / NOT RELEASED`.
+No estágio original da UXA-070, `UXA-015` e `UXA-017` eram usadas como referências materializadas/validadas da Visão Geral da Organização. Ambas estão hoje `superseded`; essa afirmação é preservada somente como **proveniência histórica** e não constitui baseline vigente nem dependência funcional. A experiência autenticada atual é governada pelas autoridades vigentes de Organização/Coletivo; Jobs + IA autenticada permanecem definidas em sua maturidade própria `pre-surface-map`; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o Surface Map lógico-documental canônico; `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` estão `ACTIVE / DEFINED / CANONICAL DOCUMENTARY`. A navegação materializada permanece `NOT MATERIALIZED`; os wireframes principais autenticados permanecem `NOT STARTED`; Design/UI/protótipo permanecem `NOT AUTHORIZED`; Product Engineering permanece `PAUSED BEFORE W0-01 / NOT RELEASED`.
 
 ### 6.5 Relação entre Organização e Coletivo
 

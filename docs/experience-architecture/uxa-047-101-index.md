@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.37.0
+version: 3.38.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-15
+last_updated: 2026-09-18
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -12,6 +12,7 @@ related:
   - M7.88
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-UX-PER002-MAT-ELIGIBILITY-001
   - GKR-UX-PER002-DESIGN-AUTH-001
   - GKR-UX-PER002-DESIGN-DELIVERY-001
@@ -36,7 +37,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.37.0
+→ 3.38.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -59,7 +60,8 @@ O/C AUTHENTICATED STATE MAP
 → DEFINED / CANONICAL DOCUMENTARY
 
 O/C PRIORITY FLOWS
-→ NOT MATERIALIZED
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
 → REQUIRES SEPARATE AUTHORIZATION
 
 BLOCO 2 — G / H / I
@@ -445,7 +447,7 @@ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
 
 Surface Map e State Map são canônicos em nível documental. Permanecem pendentes e não podem ser inferidos a partir deles:
 
-- Priority Flows O/C;
+- Navigation Materialization O/C;
 - materialização de navegação;
 - wireframe principal da Organização;
 - wireframe principal do Coletivo;
@@ -457,13 +459,13 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.37.0** |
+| Registro do Estado Atual | **3.38.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
 | O/C Authenticated Surface Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0** |
 | O/C Authenticated State Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0** |
-| O/C Priority Flows | **NOT MATERIALIZED / SEPARATE AUTHORIZATION REQUIRED** |
+| O/C Priority Flows | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** |
 | O/C Navigation Materialization | **NOT MATERIALIZED** |
 | O/C Authenticated Wireframes | **NOT STARTED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
