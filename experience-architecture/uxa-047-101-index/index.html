@@ -971,6 +971,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-authenticated-state-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Mapa de Estados Autenticados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3181,7 +3216,7 @@
 <p>Este índice mantém a descoberta das frentes funcionais numeradas que permanecem fisicamente no corpus após o fechamento documental da auditoria integral.</p>
 <p>Estado transversal sincronizado:</p>
 <div class="highlight"><pre><span></span><code>GKR-STATE-001
-→ 3.36.0
+→ 3.37.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -3194,6 +3229,18 @@ PRÓXIMA UXA
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
+
+O/C AUTHENTICATED SURFACE MAP
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+
+O/C AUTHENTICATED STATE MAP
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+
+O/C PRIORITY FLOWS
+→ NOT MATERIALIZED
+→ REQUIRES SEPARATE AUTHORIZATION
 
 BLOCO 2 — G / H / I
 → G COMPLETED / UPDATE_APPLIED
@@ -3557,11 +3604,15 @@ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 → mapa lógico-documental canônico das superfícies autenticadas O/C
 → stable GKR-SURF-* IDs preservados por crosswalk
 → não cria namespace paralelo
+
+GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ mapa funcional canônico documental dos estados autenticados O/C
+→ não cria namespace estável de estados
+→ não cria nem promove GKR-TRN-*
 </code></pre></div>
-<p>O Surface Map é canônico em nível lógico-documental. Permanecem pendentes e não podem ser inferidos a partir dele:</p>
+<p>Surface Map e State Map são canônicos em nível documental. Permanecem pendentes e não podem ser inferidos a partir deles:</p>
 <ul>
-<li>State Map autenticado O/C;</li>
-<li>fluxos prioritários O/C;</li>
+<li>Priority Flows O/C;</li>
 <li>materialização de navegação;</li>
 <li>wireframe principal da Organização;</li>
 <li>wireframe principal do Coletivo;</li>
@@ -3580,7 +3631,7 @@ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 <tbody>
 <tr>
 <td>Registro do Estado Atual</td>
-<td><strong>3.36.0</strong></td>
+<td><strong>3.37.0</strong></td>
 </tr>
 <tr>
 <td>Marco funcional</td>
@@ -3599,12 +3650,12 @@ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 <td><strong>DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0</strong></td>
 </tr>
 <tr>
-<td>O/C State Map</td>
-<td><strong>NOT MATERIALIZED</strong></td>
+<td>O/C Authenticated State Map</td>
+<td><strong>DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0</strong></td>
 </tr>
 <tr>
 <td>O/C Priority Flows</td>
-<td><strong>NOT MATERIALIZED</strong></td>
+<td><strong>NOT MATERIALIZED / SEPARATE AUTHORIZATION REQUIRED</strong></td>
 </tr>
 <tr>
 <td>O/C Navigation Materialization</td>

@@ -971,6 +971,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/organizations-collectives-authenticated-state-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Mapa de Estados Autenticados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3304,7 +3339,7 @@
 <p>Sua função atual é dupla:</p>
 <ol>
 <li>preservar a regra normativa de supersessão dos artefatos históricos <code>UXA-015..018</code> e impedir regressão de maturidade;</li>
-<li>reconciliar essa correção histórica com as autoridades posteriores já integradas de atores, autoridades, jobs, Arquitetura da Informação autenticada e Surface Map lógico-documental canônico.</li>
+<li>reconciliar essa correção histórica com as autoridades posteriores já integradas de atores, autoridades, jobs, Arquitetura da Informação autenticada, Surface Map lógico-documental canônico e State Map funcional documental.</li>
 </ol>
 <p>Este documento não deve congelar o corpus no snapshot imediatamente posterior à PR #313. Autoridades posteriores válidas precisam ser reconhecidas diretamente.</p>
 <h2 id="2-regra-de-precedencia">2. Regra de precedência<a class="headerlink" href="#2-regra-de-precedencia" title="Permanent link">&para;</a></h2>
@@ -3324,6 +3359,8 @@ GKR-UX-ORGCOL-AUTH-JOBS-001 — atores, autoridades e jobs autenticados
 GKR-UX-ORGCOL-AUTH-IA-001 — Arquitetura da Informação autenticada
 +
 GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 — Surface Map lógico-documental canônico
++
+GKR-UX-ORGCOL-AUTH-STATE-MAP-001 — State Map funcional canônico documental
 ↓
 este registro, no limite da supersessão pós-313 e da prevenção de regressão
 ↓
@@ -3331,21 +3368,24 @@ catálogos, matrizes, jornadas e snapshots derivados
 </code></pre></div>
 <p>Este registro não substitui as autoridades temáticas posteriores. Sua precedência permanece restrita ao conflito histórico que corrigiu: materialização/validação indevidamente atribuída a <code>UXA-015..018</code>.</p>
 <h2 id="3-estado-vigente-da-experiencia-autenticada">3. Estado vigente da experiência autenticada<a class="headerlink" href="#3-estado-vigente-da-experiencia-autenticada" title="Permanent link">&para;</a></h2>
-<p>O estado obrigatório em 2026-09-12 é:</p>
+<p>O estado obrigatório em 2026-09-15 é:</p>
 <div class="highlight"><pre><span></span><code>ATORES / AUTORIDADES / JOBS AUTENTICADOS
 → DEFINIDOS DOCUMENTALMENTE
 → GKR-UX-ORGCOL-AUTH-JOBS-001
 
 ARQUITETURA DA INFORMAÇÃO AUTENTICADA
 → DEFINIDA
-→ MATURIDADE: authenticated_information_architecture_defined_pre_surface_map
 → GKR-UX-ORGCOL-AUTH-IA-001
 
 SURFACE MAP LÓGICO-DOCUMENTAL AUTENTICADO
 → DEFINIDO / CANÔNICO
 → GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 
-MAPA DE ESTADOS / FLUXOS PRIORITÁRIOS / NAVEGAÇÃO MATERIALIZADA
+STATE MAP FUNCIONAL AUTENTICADO
+→ DEFINIDO / CANÔNICO DOCUMENTAL
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+
+PRIORITY FLOWS / NAVEGAÇÃO MATERIALIZADA
 → NÃO MATERIALIZADOS
 
 WIREFRAME PRINCIPAL DA ORGANIZAÇÃO
@@ -3360,10 +3400,12 @@ VALIDAÇÃO DE WIREFRAME PRINCIPAL
 UI / PROTÓTIPO / TESTES / HANDOFF TÉCNICO
 → NÃO DEFINIDOS / NÃO AUTORIZADOS POR ESTA RECONCILIAÇÃO
 </code></pre></div>
-<p>A existência de IA, isoladamente, não equivale a sitemap técnico, menu visual, Surface Map, wireframe, UI, RBAC técnico ou implementação. O Surface Map vigente é definido por autoridade posterior própria e também não equivale a materialização visual.</p>
+<p>A existência de IA, isoladamente, não equivale a sitemap técnico, menu visual, Surface Map, wireframe, UI, RBAC técnico ou implementação. O Surface Map e o State Map vigentes são definidos por autoridades próprias e também não equivalem a materialização visual.</p>
 <div class="highlight"><pre><span></span><code>SURFACE MAP LÓGICO-DOCUMENTAL DEFINIDO
++
+STATE MAP FUNCIONAL DEFINIDO
 ≠ EXPERIÊNCIA VISUAL PRINCIPAL DEFINIDA
-≠ MAPA DE ESTADOS
+≠ PRIORITY FLOWS MATERIALIZADOS
 ≠ WIREFRAME
 </code></pre></div>
 <h2 id="4-registros-historicos-superseded">4. Registros históricos superseded<a class="headerlink" href="#4-registros-historicos-superseded" title="Permanent link">&para;</a></h2>
@@ -3381,7 +3423,7 @@ UXA-018 → superseded
 <li>especificação de UI;</li>
 <li>referência aprovada para Engenharia;</li>
 <li>evidência atual de validação funcional;</li>
-<li>autorização para inferir Surface Map canônico, mapa de estados ou navegação materializada.</li>
+<li>autorização para inferir Surface Map canônico, State Map, Priority Flows ou navegação materializada.</li>
 </ul>
 <p>A auditoria integral preserva a regra adicional:</p>
 <blockquote>
@@ -3415,8 +3457,8 @@ UXA-018 → superseded
 <li>pausa, recusa e saída legítimas;</li>
 <li>Próximos Passos compatíveis com a governança.</li>
 </ul>
-<p>Esses elementos aparecem de forma distribuída em <code>UXA-014</code>, <code>UXA-019</code>, <code>GKR-UX-ORGCOL-AUTH-JOBS-001</code>, <code>GKR-UX-ORGCOL-AUTH-IA-001</code> e, na topologia autenticada vigente, <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001</code>.</p>
-<p>Entretanto, hierarquias específicas de tela, listas históricas de estados, linguagem de interface e conclusões de validação de <code>UXA-015..018</code> <strong>não são promovidas automaticamente a decisões atuais</strong>. A remoção física foi autorizada e executada por F-006; reconciliação, recomputação, validações e prova pós-delete foram concluídas e F-006 foi posteriormente adjudicado como resolvido.</p>
+<p>Esses elementos aparecem de forma distribuída em <code>UXA-014</code>, <code>UXA-019</code>, <code>GKR-UX-ORGCOL-AUTH-JOBS-001</code>, <code>GKR-UX-ORGCOL-AUTH-IA-001</code>, <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001</code> e <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001</code>.</p>
+<p>Entretanto, hierarquias específicas de tela, linguagem de interface e conclusões de validação de <code>UXA-015..018</code> <strong>não são promovidas automaticamente a decisões atuais</strong>. A remoção física foi autorizada e executada por F-006; reconciliação, recomputação, validações e prova pós-delete foram concluídas e F-006 foi posteriormente adjudicado como resolvido.</p>
 <h2 id="6-efeito-sobre-o-registro-do-estado-atual">6. Efeito sobre o Registro do Estado Atual<a class="headerlink" href="#6-efeito-sobre-o-registro-do-estado-atual" title="Permanent link">&para;</a></h2>
 <p>O <code>GKR-STATE-001</code> anterior à PR #313 registrava, entre outros snapshots:</p>
 <div class="highlight"><pre><span></span><code>SVGs → 121 — 121 validados / 0 pendentes
@@ -3427,14 +3469,14 @@ UXA-018 → superseded
 ≠ AUTORIDADE VISUAL VIGENTE
 ≠ MATURIDADE VALIDADA
 </code></pre></div>
-<p>O <code>GKR-STATE-001</code> atual já reconhece Jobs + IA + Surface Map autenticados e não utiliza <code>121/121 validados</code> como estado visual vigente.</p>
+<p>O <code>GKR-STATE-001</code> atual reconhece Jobs + IA + Surface Map + State Map autenticados e não utiliza <code>121/121 validados</code> como estado visual vigente.</p>
 <h2 id="7-efeito-sobre-catalogo-galeria-e-matriz-de-rastreabilidade">7. Efeito sobre Catálogo, Galeria e Matriz de Rastreabilidade<a class="headerlink" href="#7-efeito-sobre-catalogo-galeria-e-matriz-de-rastreabilidade" title="Permanent link">&para;</a></h2>
-<p>Os instrumentos ativos foram normalizados para separar inventário físico de maturidade:</p>
+<p>Os instrumentos correntes foram normalizados para separar o snapshot histórico pré-F-016-A do inventário físico pós-cleanup:</p>
 <ul>
-<li><code>GKR-JOURNEY-SCREEN-CATALOG-001</code> registra 121 SVGs como inventário físico e trata a claim antiga como superseded;</li>
-<li><code>GKR-JOURNEY-SCREEN-GALLERY-001</code> registra 121 SVGs físicos para inspeção, sem convertê-los em 121 wireframes vigentes;</li>
-<li><code>GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001</code> registra 121 associações físicas e 34 perfis, com associação ≠ autoridade visual vigente;</li>
-<li><code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> mantém IDs estáveis e maturidade por objeto.</li>
+<li><code>GKR-JOURNEY-SCREEN-CATALOG-001</code> preserva a contagem histórica de 121 apenas como snapshot pré-F-016-A e registra <strong>0 SVGs físicos correntes</strong>;</li>
+<li><code>GKR-JOURNEY-SCREEN-GALLERY-001</code> foi removido do corpus corrente; sua proveniência permanece recuperável no histórico Git;</li>
+<li><code>GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001</code> foi removido do corpus corrente; os <strong>34 perfis históricos de rastreabilidade</strong> permanecem preservados como proveniência/semântica, sem associações físicas correntes;</li>
+<li><code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> mantém IDs estáveis e maturidade por objeto, sem reintroduzir a camada física removida.</li>
 </ul>
 <p>Para Organização e Coletivo:</p>
 <ul>
@@ -3442,14 +3484,14 @@ UXA-018 → superseded
 <li><code>COL-001</code> mantém rastreabilidade, mas <code>UXA-016/018</code> não define a experiência autenticada final;</li>
 <li>fluxos especializados posteriores preservam apenas sua maturidade própria.</li>
 </ul>
-<p>O total físico pode permanecer 121 enquanto os dois SVGs históricos estiverem no corpus. Nenhuma contagem agregada de wireframes vigentes/validados é inferida sem recomputação governada.</p>
+<p>Após F-016-A, o inventário físico corrente é <strong>0 SVGs / 0 associações físicas correntes</strong>. O valor histórico de 121 permanece somente como proveniência do snapshot pré-desmaterialização. Nenhuma contagem agregada de wireframes vigentes/validados é inferida sem recomputação governada.</p>
 <h2 id="8-efeito-sobre-o-registro-granular-de-superficies">8. Efeito sobre o Registro Granular de Superfícies<a class="headerlink" href="#8-efeito-sobre-o-registro-granular-de-superficies" title="Permanent link">&para;</a></h2>
 <p>Um identificador estável pode sobreviver à supersessão de uma materialização.</p>
 <div class="highlight"><pre><span></span><code>ID DA SUPERFÍCIE CONTINUA EXISTINDO
 ≠ WIREFRAME ANTERIOR CONTINUA VIGENTE
 </code></pre></div>
-<p><code>GKR-SURF-ORG-001</code> continua representando uma responsabilidade institucional conhecida, agora apoiada por fundamento, Jobs, IA e pelo Surface Map atuais, sem wireframe principal vigente.</p>
-<p>Para Coletivo, IDs e fluxos especializados preservam seus contratos próprios, mas não podem ser usados para inferir a composição visual final da experiência principal autenticada além do que o Surface Map canônico autoriza documentalmente.</p>
+<p><code>GKR-SURF-ORG-001</code> continua representando uma responsabilidade institucional conhecida, agora apoiada por fundamento, Jobs, IA, Surface Map e State Map atuais, sem wireframe principal vigente.</p>
+<p>Para Coletivo, IDs e fluxos especializados preservam seus contratos próprios, mas não podem ser usados para inferir a composição visual final da experiência principal autenticada além do que Surface Map e State Map autorizam documentalmente.</p>
 <h2 id="9-efeito-sobre-a-jornada-integrada-da-organizacao">9. Efeito sobre a Jornada Integrada da Organização<a class="headerlink" href="#9-efeito-sobre-a-jornada-integrada-da-organizacao" title="Permanent link">&para;</a></h2>
 <p>A versão anterior à reconciliação apresentava:</p>
 <div class="highlight"><pre><span></span><code>Visão Geral da Organização
@@ -3468,8 +3510,11 @@ VISÃO GERAL COMO DOMÍNIO DE IA
 SURFACE MAP LÓGICO-DOCUMENTAL
 → DEFINIDO / CANÔNICO
 
-MAPA DE ESTADOS / FLUXOS PRIORITÁRIOS / COMPOSIÇÃO VISUAL
-→ PENDENTES
+STATE MAP FUNCIONAL
+→ DEFINIDO / CANÔNICO DOCUMENTAL
+
+PRIORITY FLOWS / COMPOSIÇÃO VISUAL
+→ PENDENTES / NÃO MATERIALIZADOS
 
 WIREFRAME PRINCIPAL
 → PENDENTE
@@ -3488,9 +3533,10 @@ JORNADA GERAL
 <li><code>UXA-016/018</code> não sustentam maturidade visual vigente;</li>
 <li>fundamentos, Jobs e IA do Coletivo estão definidos documentalmente;</li>
 <li><code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0</code> define o Surface Map lógico-documental canônico;</li>
+<li><code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0</code> define o State Map funcional canônico documental;</li>
 <li>superfícies públicas sustentadas por referências independentes preservam maturidade própria;</li>
 <li>superfícies administrativas especializadas posteriores preservam validação local quando houver autoridade específica;</li>
-<li>nenhuma delas substitui o Surface Map canônico nem equivale à materialização do mapa de estados, da navegação principal ou do wireframe autenticado;</li>
+<li>nenhuma delas substitui as autoridades canônicas nem equivale à materialização de Priority Flows, navegação principal ou wireframe autenticado;</li>
 <li>a Jornada do Coletivo continua <code>draft</code>.</li>
 </ul>
 <h2 id="11-wireframe-principal-fluxo-especializado">11. Wireframe principal ≠ fluxo especializado<a class="headerlink" href="#11-wireframe-principal-fluxo-especializado" title="Permanent link">&para;</a></h2>
@@ -3511,14 +3557,16 @@ JORNADA GERAL
 <p>sem que exista o wireframe principal autenticado final.</p>
 <p>Da mesma forma:</p>
 <div class="highlight"><pre><span></span><code>SURFACE MAP LÓGICO-DOCUMENTAL DEFINIDO
-≠ MAPA DE ESTADOS
++
+STATE MAP FUNCIONAL DEFINIDO
+≠ PRIORITY FLOWS MATERIALIZADOS
 ≠ WIREFRAME
 </code></pre></div>
 <h2 id="12-estado-das-transicoes-especializadas">12. Estado das transições especializadas<a class="headerlink" href="#12-estado-das-transicoes-especializadas" title="Permanent link">&para;</a></h2>
 <p>Transições documentadas em pacotes especializados mantêm sua evidência local, mas não podem ser usadas para afirmar que a composição visual final da experiência autenticada está fechada.</p>
 <p>Em especial:</p>
 <ul>
-<li>origem/retorno de Planos da Organização preserva o contrato especializado, mas deve ser confrontada com o mapa de estados, os fluxos e o futuro wireframe principal quando materializados;</li>
+<li>origem/retorno de Planos da Organização preserva o contrato especializado, mas deve ser confrontada com o State Map, os Priority Flows e o futuro wireframe principal quando materializados;</li>
 <li>navegação administrativa local do Coletivo permanece evidência dos pacotes específicos, sem determinar a arquitetura visual final;</li>
 <li>nenhuma transição especializada autoriza inferir menu global, dashboard, Home autenticada visual ou implementação completa.</li>
 </ul>
@@ -3549,8 +3597,8 @@ JORNADA GERAL
 </tr>
 <tr>
 <td>Arquitetura da Informação autenticada</td>
-<td><strong>definida pré-surface-map</strong></td>
-<td><strong>definida pré-surface-map</strong></td>
+<td><strong>definida</strong></td>
+<td><strong>definida</strong></td>
 </tr>
 <tr>
 <td>Surface Map lógico-documental autenticado</td>
@@ -3558,9 +3606,14 @@ JORNADA GERAL
 <td><strong>definido / canônico</strong></td>
 </tr>
 <tr>
-<td>mapa de estados / fluxos prioritários</td>
-<td><strong>pendente</strong></td>
-<td><strong>pendente</strong></td>
+<td>State Map funcional autenticado</td>
+<td><strong>definido / canônico documental</strong></td>
+<td><strong>definido / canônico documental</strong></td>
+</tr>
+<tr>
+<td>Priority Flows</td>
+<td><strong>pendentes / não materializados</strong></td>
+<td><strong>pendentes / não materializados</strong></td>
 </tr>
 <tr>
 <td>Research de supply / valor</td>
@@ -3620,41 +3673,41 @@ JORNADA GERAL
 <thead>
 <tr>
 <th>Derivado</th>
-<th>Estado em 2026-09-12</th>
+<th>Estado em 2026-09-15</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>GKR-STATE-001</code></td>
-<td>normalizado; Jobs + IA + Surface Map reconhecidos</td>
+<td>normalizado; Jobs + IA + Surface Map + State Map reconhecidos</td>
 </tr>
 <tr>
 <td><code>GKR-JOURNEY-SCREEN-CATALOG-001</code></td>
-<td>normalizado quanto à separação físico × maturidade</td>
+<td>normalizado pós-F-016-A; snapshot histórico preservado e inventário físico corrente = 0</td>
 </tr>
 <tr>
 <td><code>GKR-JOURNEY-SCREEN-GALLERY-001</code></td>
-<td>normalizado quanto à separação físico × maturidade</td>
+<td>removido do corpus corrente; proveniência preservada no histórico Git</td>
 </tr>
 <tr>
 <td><code>GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001</code></td>
-<td>normalizado; associação ≠ autoridade</td>
+<td>removido do corpus corrente; 34 perfis históricos preservados como proveniência/semântica</td>
 </tr>
 <tr>
 <td><code>GKR-JOURNEY-SURFACE-REGISTRY-001</code></td>
-<td>Surface Map O/C reconhecido; maturidade individual não é inferida dos artefatos superseded</td>
+<td>Surface Map + State Map O/C reconhecidos; maturidade individual não é inferida dos artefatos superseded</td>
 </tr>
 <tr>
 <td>Jornada da Organização</td>
-<td>Jobs + IA + Surface Map atuais reconhecidos; mapa de estados/wireframe principal permanecem pendentes</td>
+<td>Jobs + IA + Surface Map + State Map reconhecidos; Priority Flows/wireframe principal permanecem pendentes</td>
 </tr>
 <tr>
 <td>Jornada do Coletivo</td>
-<td>Jobs + IA + Surface Map atuais reconhecidos; mapa de estados/navegação/wireframe principal permanecem pendentes</td>
+<td>Jobs + IA + Surface Map + State Map reconhecidos; Priority Flows/navegação/wireframe principal permanecem pendentes</td>
 </tr>
 <tr>
 <td>porta temática O/C</td>
-<td>reconciliada com Jobs + IA + Surface Map</td>
+<td>reconciliada com Jobs + IA + Surface Map + State Map</td>
 </tr>
 </tbody>
 </table>
@@ -3670,25 +3723,32 @@ JORNADA GERAL
 =
 QUANTIDADE DE WIREFRAMES VIGENTES E VALIDADOS
 </code></pre></div>
-<p>Estado comprovado do inventário no Bloco I:</p>
+<p>Snapshot histórico comprovado no Bloco I, anterior à desmaterialização F-016-A:</p>
 <ul>
 <li>SVGs físicos: <strong>121</strong>;</li>
 <li>associações físicas: <strong>121</strong>;</li>
 <li>perfis de rastreabilidade: <strong>34</strong>;</li>
-<li>duplicatas exatas por blob SHA: <strong>0 observadas/provadas no snapshot auditado</strong>;</li>
+<li>duplicatas exatas por blob SHA: <strong>0 observadas/provadas naquele snapshot auditado</strong>;</li>
 <li>near-duplicates: <strong>não certificados</strong>;</li>
 <li>total agregado de wireframes vigentes/validados: <strong>não certificado</strong>.</li>
 </ul>
+<p>Estado físico corrente pós-F-016-A:</p>
+<ul>
+<li>SVGs físicos: <strong>0</strong>;</li>
+<li>associações físicas correntes: <strong>0</strong>;</li>
+<li>perfis históricos de rastreabilidade preservados como proveniência/semântica: <strong>34</strong>;</li>
+<li>galeria e matriz físicas: <strong>removidas do corpus corrente</strong>.</li>
+</ul>
 <h2 id="16-gate-de-remocao-dos-historicos">16. Gate de remoção dos históricos<a class="headerlink" href="#16-gate-de-remocao-dos-historicos" title="Permanent link">&para;</a></h2>
 <p><code>UXA-015..018</code> e os dois SVGs associados foram removidos somente após prova de absorção, autorização e cleanup governado — não por conveniência de contagem.</p>
-<p>Os gates documentais de classificação do conteúdo material e de ausência de dependência funcional atual estão concluídos. A sequência governada restante é:</p>
+<p>Os gates documentais e físicos desta frente foram concluídos em sequência governada:</p>
 <ol>
-<li>obter autorização humana separada e explícita para o cleanup físico;</li>
-<li>etapa concluída: os quatro documentos <code>UXA-015..018</code> e os dois SVGs associados foram removidos e os instrumentos afetados foram reconciliados na mesma transação;</li>
-<li>recomputar catálogo, galeria, matriz, associações e contagens físicas sobre a árvore resultante;</li>
-<li>validar semanticamente e mecanicamente o novo head exato;</li>
-<li>executar nova revisão repo-wide no novo head;</li>
-<li>somente depois desses gates decidir o fechamento de <code>F-006</code> e o fechamento formal de H/I.</li>
+<li>a elegibilidade de cleanup foi provada por absorção do conteúdo material e ausência de dependência funcional atual;</li>
+<li>a autorização humana separada para o cleanup físico foi concedida;</li>
+<li>os quatro documentos <code>UXA-015..018</code> e os dois SVGs associados foram removidos, com reconciliação dos consumidores afetados;</li>
+<li>catálogo e contagens foram recomputados sobre a árvore pós-cleanup, resultando em <strong>0 SVGs / 0 associações físicas correntes</strong> e preservação de <strong>34 perfis históricos</strong> como proveniência/semântica;</li>
+<li>validações semântica, mecânica e prova pós-delete foram concluídas;</li>
+<li><code>F-006</code> foi adjudicado como <strong>RESOLVED</strong>, sem reativar wireframes, Design ou qualquer downstream.</li>
 </ol>
 <h2 id="17-proximo-gate-valido">17. Próximo gate válido<a class="headerlink" href="#17-proximo-gate-valido" title="Permanent link">&para;</a></h2>
 <p>No limite atual da frente O/C:</p>
@@ -3699,12 +3759,15 @@ ACTORS / AUTHORITIES / JOBS
 → DEFINED
 
 AUTHENTICATED INFORMATION ARCHITECTURE
-→ DEFINED PRE-SURFACE-MAP
+→ DEFINED
 
 AUTHENTICATED LOGICAL SURFACE MAP
 → DEFINED / CANONICAL DOCUMENTARY
 
-STATE MAP / PRIORITY FLOWS / MATERIALIZED NAVIGATION
+AUTHENTICATED STATE MAP
+→ DEFINED / CANONICAL DOCUMENTARY
+
+PRIORITY FLOWS / MATERIALIZED NAVIGATION
 → NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
@@ -3719,7 +3782,7 @@ PRODUCT ENGINEERING
 <p>A branch pré-auditoria <code>agent/gkr-orgcol-authenticated-surface-map-v1</code> permanece <code>HOLD_REVIEW</code> e não é autoridade.</p>
 <h2 id="18-regra-final">18. Regra final<a class="headerlink" href="#18-regra-final" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p><strong>Arquivo físico não é autoridade vigente. Materialização histórica não é wireframe aprovado. Validação antiga não sobrevive à supersessão do objeto que validava. Arquitetura da Informação atual não reativa o wireframe histórico. Surface Map lógico-documental canônico não equivale a materialização visual, mapa de estados ou wireframe.</strong></p>
+<p><strong>Arquivo físico não é autoridade vigente. Materialização histórica não é wireframe aprovado. Validação antiga não sobrevive à supersessão do objeto que validava. Arquitetura da Informação atual não reativa o wireframe histórico. Surface Map e State Map canônicos não equivalem a Priority Flows, materialização visual ou wireframe.</strong></p>
 </blockquote>
 <p>A experiência principal de Organizações e Coletivos somente poderá voltar a ser declarada visualmente materializada/validada quando novos objetos forem definidos, revisados e validados a partir das autoridades atuais e dos gates vigentes.</p>
 

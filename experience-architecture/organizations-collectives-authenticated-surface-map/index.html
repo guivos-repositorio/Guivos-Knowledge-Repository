@@ -16,7 +16,7 @@
         <link rel="prev" href="../organizations-collectives-current-state/">
       
       
-        <link rel="next" href="../../product-architecture/">
+        <link rel="next" href="../organizations-collectives-authenticated-state-map/">
       
       
         
@@ -1358,6 +1358,41 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-authenticated-state-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Mapa de Estados Autenticados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
     </li>
   
 
@@ -4202,7 +4237,7 @@ SURFACE MAP AUTENTICADO
 </code></pre></div>
 <p>Nenhum elemento da Home pública é promovido por inferência para a experiência autenticada.</p>
 <h2 id="13-estado-documental-apos-este-mapa">13. Estado documental após este mapa<a class="headerlink" href="#13-estado-documental-apos-este-mapa" title="Permanent link">&para;</a></h2>
-<p>Com esta autoridade, a sequência fica:</p>
+<p>Com esta autoridade e com a autoridade posterior do State Map vigente, a sequência corrente fica:</p>
 <div class="highlight"><pre><span></span><code>FUNDAMENTOS E PAPÉIS
 → DEFINED
 
@@ -4213,12 +4248,15 @@ ARQUITETURA DA INFORMAÇÃO
 → DEFINED
 
 MAPA LÓGICO DE SUPERFÍCIES
-→ DEFINED
+→ DEFINED / CANONICAL DOCUMENTARY
 
 MAPA DE ESTADOS
-→ NOT MATERIALIZED
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 FLUXOS PRIORITÁRIOS
+→ NOT MATERIALIZED
+
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 WIREFRAMES
@@ -4228,12 +4266,12 @@ UI / PROTÓTIPO
 → NOT AUTHORIZED
 
 PRODUCT ENGINEERING
-→ NOT RELEASED
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 </code></pre></div>
-<p>A palavra <code>DEFINED</code> neste documento significa <strong>definição documental do mapa lógico</strong>, não materialização visual, implementação nem promoção automática da maturidade de qualquer <code>GKR-SURF-*</code> individual.</p>
+<p>A palavra <code>DEFINED</code> neste documento significa <strong>definição documental</strong>, não materialização visual, implementação nem promoção automática da maturidade de qualquer <code>GKR-SURF-*</code> ou <code>GKR-TRN-*</code> individual.</p>
 <h2 id="14-proximo-gate">14. Próximo gate<a class="headerlink" href="#14-proximo-gate" title="Permanent link">&para;</a></h2>
 <p>Este documento não autoriza automaticamente a etapa seguinte.</p>
-<p>Quando houver autorização específica, o próximo ato elegível poderá trabalhar <strong>estados críticos e fluxos prioritários</strong> sobre este mapa, respeitando:</p>
+<p>Quando houver autorização específica, o próximo ato elegível poderá trabalhar <strong>fluxos prioritários</strong> sobre o Surface Map e o State Map já definidos documentalmente, respeitando:</p>
 <ul>
 <li>IDs estáveis do registro central;</li>
 <li>maturidade individual já registrada;</li>
@@ -4244,10 +4282,13 @@ PRODUCT ENGINEERING
 <li>separação entre semântica funcional e Design.</li>
 </ul>
 <p>Até nova autorização:</p>
-<div class="highlight"><pre><span></span><code>STATES
+<div class="highlight"><pre><span></span><code>STATE MAP
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+PRIORITY FLOWS
 → NOT MATERIALIZED
 
-FLOWS
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 WIREFRAMES
@@ -4258,6 +4299,9 @@ DESIGN / UI
 
 IMPLEMENTATION
 → NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 </code></pre></div>
 
 
