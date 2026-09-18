@@ -96,7 +96,7 @@ Nenhuma etapa autoriza automaticamente a seguinte. Para O/C, Priority Flows já 
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.46.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A + Surface Map/State Map O/C |
+| visão geral das Jornadas Integradas | `active` 0.48.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A + Jobs/IA + Surface Map/State Map/Priority Flows O/C |
 | propagação dos Domínios de Evolução | `active` 1.0.0 | GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001 |
 | D5-A — jornada inicial | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
 | D5-B — Oportunidades | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
