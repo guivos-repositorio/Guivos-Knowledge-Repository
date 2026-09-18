@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-DERIVED-AUDIT-001
 title: Organizações e Coletivos — Auditoria de Derivados Pós-313
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-15
+last_updated: 2026-09-18
 normative: false
 related:
   - GKR-ORGCOL-POST313-RECON-001
@@ -14,6 +14,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-ORGANIZATION-001
@@ -54,8 +55,12 @@ SURFACE MAP LÓGICO-DOCUMENTAL O/C
 STATE MAP FUNCIONAL O/C
 → DEFINIDO / CANÔNICO DOCUMENTAL
 
-PRIORITY FLOWS / NAVEGAÇÃO MATERIALIZADA
-→ PENDENTES / NÃO MATERIALIZADOS
+PRIORITY FLOWS
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ DEFINIDOS / CANÔNICOS DOCUMENTAIS
+
+NAVEGAÇÃO MATERIALIZADA
+→ PENDENTE / NÃO MATERIALIZADA
 
 WIREFRAMES PRINCIPAIS AUTENTICADOS
 → PENDENTES / AUTORIDADE DE DESIGN
@@ -75,8 +80,8 @@ F-016-A
 | antiga matriz visual | associação visual podia ser lida como vigência | removida do corpus corrente; perfis históricos recuperáveis no Git | normalizado |
 | `GKR-JOURNEY-SURFACE-REGISTRY-001` — `ORG-001` | Visão Geral validada por `UXA-015/017` | responsabilidade conhecida; materialização histórica removida; Design governa futura materialização | normalizado |
 | registro do Coletivo | `UXA-016/018` como evidência da UX principal | não utilizar esses IDs para afirmar wireframe principal vigente | normalizado |
-| Jornada da Organização | Visão Geral = validada | Jobs + IA + Surface Map + State Map existem; Priority Flows/composição visual/wireframe permanecem pendentes | normalizado |
-| Jornada do Coletivo | `UXA-016/018` como evidência principal | Jobs + IA + Surface Map + State Map existem; Priority Flows/navegação materializada/wireframe permanecem pendentes | normalizado |
+| Jornada da Organização | Visão Geral = validada | Jobs + IA + Surface Map + State Map + Priority Flows existem; navegação/composição visual/wireframe permanecem pendentes | normalizado |
+| Jornada do Coletivo | `UXA-016/018` como evidência principal | Jobs + IA + Surface Map + State Map + Priority Flows existem; navegação materializada/wireframe permanecem pendentes | normalizado |
 
 ## 3A. Snapshot histórico pós-F-006 / pré-F-016-A
 
