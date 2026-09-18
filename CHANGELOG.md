@@ -1,6 +1,26 @@
 # Changelog
 
-Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
+Este arquivo preserva o **changelog editorial legado até a versão 0.58.0**.
+
+A partir da evolução da governança do GKR, o histórico completo posterior é preservado pelo Git, PRs, reviews e checkpoints governados. Para estado vigente e sequência de avanço, prevalecem:
+
+- [GKR-STATE-001 — Registro do Estado Atual](docs/project/current-state-register.md);
+- [Roadmap Arquitetural](docs/roadmap.md);
+- histórico Git e Pull Requests do repositório.
+
+```text
+CHANGELOG LEGADO
+≠ ESTADO ATUAL
+≠ HISTÓRICO COMPLETO PÓS-0.58.0
+
+GIT / PRs
+→ PRESERVAM HISTÓRICO COMPLETO POSTERIOR
+
+GKR-STATE + ROADMAP
+→ PRESERVAM VERDADE ATUAL E PRÓXIMOS GATES
+```
+
+A atualização global de 18/09/2026 não reconstrói retroativamente entradas ausentes entre 0.58.0 e o estado atual, evitando fabricar uma cronologia incompleta como se fosse exaustiva.
 
 
 ## 0.58.0 — PAS-001 Final Capability Map
