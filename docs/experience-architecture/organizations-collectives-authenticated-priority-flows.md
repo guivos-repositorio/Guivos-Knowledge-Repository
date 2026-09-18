@@ -29,7 +29,7 @@ related:
 
 ## 1. Finalidade
 
-Este documento é o **draft documental dos fluxos prioritários** da experiência autenticada de Organização e Coletivo.
+Este documento é a **autoridade canônica documental dos fluxos prioritários** da experiência autenticada de Organização e Coletivo.
 
 Ele parte das autoridades já definidas de atores, autoridade, jobs, Arquitetura da Informação, Surface Map e State Map para responder:
 
@@ -209,7 +209,7 @@ Estados mínimos que precisam ser suportados:
 - capacidade limitada ou atingida;
 - proteção requerida.
 
-Nenhum novo `GKR-TRN-*` é declarado para esta espinha principal no draft.
+Nenhum novo `GKR-TRN-*` é declarado para esta espinha principal nesta autoridade.
 
 ## 7. Organização — Oportunidade ou programa legítimo
 
@@ -388,7 +388,7 @@ Transições preservadas:
 - `GKR-TRN-109` — `COL-003 → PER-105`;
 - `GKR-TRN-112` — `COL-002 → COL-003`.
 
-Essas transições mantêm sua maturidade própria. A continuidade pós-aprovação `COL-003 → COL-004` é reconhecida pelo Surface Map, mas **não possui transição estável declarada**. Quando a continuidade exige comunicação oficial a participantes autorizados, `GKR-TRN-113 — COL-004 → COL-005` já existe como transição **contratada** e mantém essa maturidade sem promoção neste draft.
+Essas transições mantêm sua maturidade própria. A continuidade pós-aprovação `COL-003 → COL-004` é reconhecida pelo Surface Map, mas **não possui transição estável declarada**. Quando a continuidade exige comunicação oficial a participantes autorizados, `GKR-TRN-113 — COL-004 → COL-005` já existe como transição **contratada** e mantém essa maturidade sem promoção nesta autoridade.
 
 Preservações:
 
@@ -435,7 +435,7 @@ APRENDIZADO / EVIDÊNCIA
 REVISÃO OU ENCERRAMENTO
 ```
 
-Este draft não cria transições estáveis para preencher lacunas entre essas condições.
+Esta autoridade não cria transições estáveis para preencher lacunas entre essas condições.
 
 Preservações:
 
@@ -521,7 +521,7 @@ RESULTADO AINDA NÃO CONFIRMADO QUANDO APLICÁVEL
 REVISÃO / CONTESTAÇÃO / ATUALIZAÇÃO
 ```
 
-O draft não cria superfície ou transição para eliminar essa lacuna.
+Esta autoridade não cria superfície ou transição para eliminar essa lacuna.
 
 ## 14. Fluxo bilateral prioritário — Organização ↔ Coletivo
 
@@ -548,7 +548,7 @@ GKR-SURF-ORG-006
 Maturidade corrente:
 
 - `GKR-TRN-206..209` = contratadas;
-- este draft não promove nenhuma delas.
+- esta autoridade não promove nenhuma delas.
 
 ### Lifecycle funcional
 
@@ -797,7 +797,7 @@ Esta matriz demonstra cobertura funcional sem transformar ausência de autoridad
 
 ### Organização
 
-| Job | Cobertura neste draft | Estado |
+| Job | Cobertura nesta autoridade | Estado |
 |---|---|---|
 | `ORG-J01` — contexto institucional | §6 | coberto no limite documental |
 | `ORG-J02` — Momento e atenção material | §6 | coberto no limite documental |
@@ -811,7 +811,7 @@ Esta matriz demonstra cobertura funcional sem transformar ausência de autoridad
 
 ### Coletivo
 
-| Job | Cobertura neste draft | Estado |
+| Job | Cobertura nesta autoridade | Estado |
 |---|---|---|
 | `COL-J01` — contexto coletivo | §9 | coberto no limite documental |
 | `COL-J02` — Momento e atenção material | §9 | coberto no limite documental |
@@ -827,7 +827,7 @@ Esta matriz demonstra cobertura funcional sem transformar ausência de autoridad
 
 ### Jobs bilaterais Organização ↔ Coletivo
 
-| Job | Cobertura neste draft | Estado |
+| Job | Cobertura nesta autoridade | Estado |
 |---|---|---|
 | `BIL-J01` — propor relação com finalidade/escopo | §14 | coberto |
 | `BIL-J02` — avaliar autoridade, capacidade, riscos e condições | §14 | coberto |
@@ -853,7 +853,7 @@ COL-J07
 
 ## 20. Matriz inicial de reconciliação com o Transition Registry
 
-| Fluxo funcional | Superfícies / objetos principais | Transições conhecidas | Tratamento neste draft |
+| Fluxo funcional | Superfícies / objetos principais | Transições conhecidas | Tratamento nesta autoridade |
 |---|---|---|---|
 | Organização — contexto e Momento | `ORG-001` + objetos referenciados | nenhuma espinha principal estável declarada | lacuna preservada; não criar ID |
 | Organização — oportunidade/programa | `ORG-002..003` | `TRN-201..203` | reutilizar; sem promoção |
@@ -871,7 +871,7 @@ A matriz não certifica completude do Transition Registry e não cria maturidade
 
 ## 21. Decisões explicitamente adiadas
 
-Este draft não define:
+Esta autoridade não define:
 
 - sitemap final;
 - menu;
