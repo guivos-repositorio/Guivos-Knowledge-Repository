@@ -91,8 +91,12 @@ STATE MAP FUNCIONAL AUTENTICADO
 → DEFINIDO / CANÔNICO DOCUMENTAL
 → GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
 
-PRIORITY FLOWS / NAVEGAÇÃO MATERIALIZADA
-→ NÃO MATERIALIZADOS
+PRIORITY FLOWS
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ DEFINIDOS / CANÔNICOS DOCUMENTAIS
+
+NAVEGAÇÃO MATERIALIZADA
+→ NÃO MATERIALIZADA
 
 WIREFRAME PRINCIPAL DA ORGANIZAÇÃO
 → NÃO DEFINIDO
@@ -107,7 +111,7 @@ UI / PROTÓTIPO / TESTES / HANDOFF TÉCNICO
 → NÃO DEFINIDOS / NÃO AUTORIZADOS POR ESTA RECONCILIAÇÃO
 ```
 
-A existência de IA, isoladamente, não equivale a sitemap técnico, menu visual, Surface Map, wireframe, UI, RBAC técnico ou implementação. O Surface Map e o State Map vigentes são definidos por autoridades próprias e também não equivalem a materialização visual.
+A existência de IA, isoladamente, não equivale a sitemap técnico, menu visual, Surface Map, wireframe, UI, RBAC técnico ou implementação. Surface Map, State Map e Priority Flows vigentes são definidos por autoridades próprias e também não equivalem a navegação materializada ou materialização visual.
 
 ```text
 SURFACE MAP LÓGICO-DOCUMENTAL DEFINIDO
@@ -257,8 +261,12 @@ SURFACE MAP LÓGICO-DOCUMENTAL
 STATE MAP FUNCIONAL
 → DEFINIDO / CANÔNICO DOCUMENTAL
 
-PRIORITY FLOWS / COMPOSIÇÃO VISUAL
-→ PENDENTES / NÃO MATERIALIZADOS
+PRIORITY FLOWS
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ DEFINIDOS / CANÔNICOS DOCUMENTAIS
+
+NAVEGAÇÃO / COMPOSIÇÃO VISUAL
+→ PENDENTES / NÃO MATERIALIZADAS
 
 WIREFRAME PRINCIPAL
 → PENDENTE
