@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
 title: Organizações e Coletivos — Fluxos Prioritários da Experiência Autenticada
-status: draft
-version: 0.1.0
+status: active
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
-maturity: authenticated_priority_flows_draft_pre_navigation_wireframes
+maturity: authenticated_priority_flows_defined_pre_navigation_wireframes
 depends_on:
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
@@ -61,7 +61,7 @@ PRIORITY FLOW
 ≠ IMPLEMENTAÇÃO
 ```
 
-Esta revisão é `draft v0.1.0`. Ela **não promove** a frente a `DEFINED / CANONICAL DOCUMENTARY`.
+Esta autoridade foi promovida em ato governado separado após `DRAFT SUFFICIENCY = PASS / 13 OF 13`. A promoção é exclusivamente documental e não materializa navegação, wireframes, UI ou implementação.
 
 ## 2. Regra de autoridade e identidade
 
@@ -899,9 +899,9 @@ Este draft não define:
 
 Também não inicia `UXA-102/V5` nem Product Engineering.
 
-## 22. Critérios propostos de suficiência para futura promoção documental
+## 22. Critérios de suficiência consumidos na promoção documental
 
-Uma revisão futura só poderá considerar esta autoridade elegível a `DEFINED / CANONICAL DOCUMENTARY` se, no mínimo:
+A promoção documental desta autoridade consumiu cumulativamente os seguintes critérios:
 
 1. os fluxos selecionados cobrirem os jobs estruturais e de núcleo sem transformar capacidades especializadas em eixo principal;
 2. cada fluxo explicitar contexto, autoridade, objeto, estados relevantes, alternativas, retorno e fronteira;
@@ -917,13 +917,12 @@ Uma revisão futura só poderá considerar esta autoridade elegível a `DEFINED 
 12. navegação materializada, wireframes, Design/UI e Product Engineering continuem fechados;
 13. validação semântica, mecânica e revisão independente concluam sem finding material no HEAD candidato.
 
-## 23. Estado desta revisão
+## 23. Estado desta autoridade
 
 ```text
 GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
-→ DRAFT v0.1.0
-→ NOT CANONICAL
-→ NOT PROMOTED
+→ ACTIVE v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
 
 SURFACE MAP
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
@@ -932,7 +931,7 @@ STATE MAP
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 PRIORITY FLOWS
-→ DRAFT / UNDER SEMANTIC REVIEW
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED / NOT RELEASED
@@ -950,13 +949,12 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
-## 24. Próximo gate
+## 24. Próximo gate após promoção
 
-O próximo gate desta frente é **revisão semântica do draft**.
+O próximo gate governado elegível é **Navigation Materialization**, ainda não autorizado.
 
-Nenhum ato deste draft autoriza automaticamente:
+A promoção documental desta autoridade não autoriza automaticamente:
 
-- promoção a canônico;
 - navegação materializada;
 - wireframes;
 - Design/UI;
@@ -964,4 +962,4 @@ Nenhum ato deste draft autoriza automaticamente:
 - implementação;
 - Product Engineering.
 
-A promoção documental, se futuramente considerada elegível, deverá ocorrer por ato governado separado.
+Qualquer materialização de navegação deverá ocorrer por ato governado separado, preservando os IDs/maturidades dos registries, as lacunas explícitas, autoridade, reversibilidade, proteção e os limites desta autoridade.
