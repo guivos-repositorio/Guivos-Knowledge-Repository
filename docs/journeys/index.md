@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.47.0
+version: 0.48.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 related:
@@ -29,6 +29,8 @@ related:
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
@@ -94,7 +96,7 @@ Nenhuma etapa autoriza automaticamente a seguinte. Para O/C, Priority Flows já 
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.46.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A + Surface Map/State Map O/C |
+| visão geral das Jornadas Integradas | `active` 0.48.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A + Jobs/IA + Surface Map/State Map/Priority Flows O/C |
 | propagação dos Domínios de Evolução | `active` 1.0.0 | GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001 |
 | D5-A — jornada inicial | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
 | D5-B — Oportunidades | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |

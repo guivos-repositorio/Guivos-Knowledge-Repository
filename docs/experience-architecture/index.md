@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.10.0
+version: 1.11.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 related:
@@ -42,6 +42,8 @@ related:
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
@@ -204,10 +206,12 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active` 0.46.0; Jobs + IA + Surface Map + State Map O/C reconciliados |
+| Jornadas Integradas | `active` 0.48.0; Jobs + IA + Surface Map + State Map + Priority Flows O/C reconciliados |
 | Jornada da Pessoa | `draft`; PER-010..012 validados localmente; TRN-008..013 integrais |
 | Jornada do Coletivo | `draft` 0.23.0; Jobs + IA + Surface Map + State Map + Priority Flows definidos; navegação/wireframe principal pendentes |
 | Jornada da Organização | `draft` 0.16.0; Jobs + IA + Surface Map + State Map + Priority Flows definidos; navegação/wireframe principal pendentes |
+| atores, autoridades e jobs autenticados O/C | `GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.0`; **ACTIVE / DEFINED** |
+| Arquitetura da Informação autenticada O/C | `GKR-UX-ORGCOL-AUTH-IA-001 v1.3.0`; **ACTIVE / DEFINED PRE-SURFACE-MAP** |
 | mapa lógico autenticado O/C | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY** |
 | mapa de estados autenticado O/C | `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY**; não cria/promove `GKR-TRN-*` nem materializa Priority Flows |
 | fluxos prioritários autenticados O/C | `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY**; não cria/promove `GKR-TRN-*` nem materializa navegação |

@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.38.0
+version: 3.39.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-18
 normative: true
@@ -30,6 +30,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
+  - GKR-GLOBAL-UPDATE-2026-09-18-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-OC-NARR-001
   - GKR-UX-HOME-OC-NAV-001
@@ -122,10 +123,16 @@ O/C AUTHENTICATED WIREFRAMES
 → NOT STARTED
 
 DESIGN / UI / PROTOTYPE
-→ NOT AUTHORIZED BY O/C STATE-MAP PROMOTION
+→ NOT AUTHORIZED / NOT RELEASED FOR O/C AUTHENTICATED EXPERIENCE
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
+
+GKR GLOBAL UPDATE — 2026-09-18
+→ CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
+→ GKR-GLOBAL-UPDATE-2026-09-18-001
+→ FUNCTIONAL ADVANCEMENT PAUSED BY HUMAN INSTRUCTION
+→ NAVIGATION MATERIALIZATION NOT AUTHORIZED
 
 BLOCO 2 — G / H / I
 → G COMPLETED / UPDATE_APPLIED
@@ -698,7 +705,7 @@ Permanecem autoridades funcionais:
 
 ### 8.2 Atores, autoridades e jobs
 
-`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.2.0` está ativo e define, antes da arquitetura visual:
+`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.0` está ativo e define, antes da arquitetura visual:
 
 - classes funcionais de atores;
 - participante representado;
@@ -723,7 +730,7 @@ AUTORIDADE DECLARADA
 
 ### 8.3 Arquitetura da Informação
 
-`GKR-UX-ORGCOL-AUTH-IA-001 v1.1.0` está ativo em maturidade `authenticated_information_architecture_defined_pre_surface_map`. Essa maturidade descreve o limite próprio da autoridade de IA; a progressão documental posterior está registrada no Surface Map canônico.
+`GKR-UX-ORGCOL-AUTH-IA-001 v1.3.0` está ativo em maturidade `authenticated_information_architecture_defined_pre_surface_map`. Essa maturidade descreve o limite próprio da autoridade de IA; a progressão documental posterior está registrada no Surface Map canônico.
 
 Organização:
 

@@ -18,7 +18,7 @@ Antes de usar qualquer documento isolado, consulte:
 A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.38.0
+GKR-STATE-001 3.39.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -55,6 +55,8 @@ O/C AUTHENTICATED STATE MAP → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
 O/C PRIORITY FLOWS → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
 O/C NAVIGATION → NOT MATERIALIZED / SEPARATE AUTHORIZATION REQUIRED
 O/C AUTHENTICATED WIREFRAMES → NOT STARTED
+GKR GLOBAL UPDATE → CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
+FUNCTIONAL ADVANCEMENT → PAUSED BY HUMAN INSTRUCTION
 NEXT AUTOMATIC EXECUTION → NONE
 SOURCE LOCK → NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
 UXA-102 / V5 → NOT_STARTED
@@ -123,6 +125,11 @@ Entradas:
 - [Organização](docs/journeys/organization.md)
 - [Coletivo](docs/journeys/collective.md)
 - [Organizações e Coletivos — Estado Atual](docs/experience-architecture/organizations-collectives-current-state.md)
+- [O/C — Atores, Autoridades e Jobs](docs/experience-architecture/organizations-collectives-authenticated-actors-authorities-and-jobs.md)
+- [O/C — Arquitetura da Informação](docs/experience-architecture/organizations-collectives-authenticated-information-architecture.md)
+- [O/C — Mapa de Superfícies Autenticadas](docs/experience-architecture/organizations-collectives-authenticated-surface-map.md)
+- [O/C — Mapa de Estados Autenticados](docs/experience-architecture/organizations-collectives-authenticated-state-map.md)
+- [O/C — Fluxos Prioritários Autenticados](docs/experience-architecture/organizations-collectives-authenticated-priority-flows.md)
 
 ### Produtos e Economia
 

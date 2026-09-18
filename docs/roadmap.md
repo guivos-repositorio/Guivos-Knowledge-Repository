@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.37.0
+id: ROADMAP-13.38.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.37.0
+version: 13.38.0
 owner: Guivos
 last_updated: 2026-09-18
 normative: true
@@ -30,6 +30,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
+  - GKR-GLOBAL-UPDATE-2026-09-18-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-OC-NARR-001
   - GKR-UX-HOME-OC-NAV-001
@@ -57,7 +58,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.38.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.39.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -77,6 +78,8 @@ A frente posterior da **Cognitive Reference Architecture** também concluiu seu 
 
 A frente posterior de Organizações e Coletivos também avançou por atos governados próprios. `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` está definido como mapa lógico-documental canônico das superfícies autenticadas O/C, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` como mapa funcional canônico de estados e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` como autoridade canônica documental dos fluxos prioritários. A promoção dos Priority Flows não cria novos `GKR-TRN-*`, não promove maturidades registradas e não materializa navegação. Surface Map + State Map + Priority Flows não liberam wireframes, Design, UI, protótipo ou Product Engineering.
 
+A atualização global do GKR de 18/09/2026 sincroniza as autoridades correntes, entrypoints, hubs e MENU sem abrir nova frente funcional. Durante esse ciclo, o avanço para `Navigation Materialization` permanece explicitamente pausado por instrução humana; `NEXT AUTOMATIC EXECUTION = NONE` continua válido.
+
 Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. O Lote M concluiu sua auditoria documental com `OPEN M-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`, sem promover execução jurídica, privacidade operacional ou constituição institucional. O Lote N concluiu sua auditoria documental com `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`, `F-022 NOT OPENED` e sem promover execução de GTM, publicação ou operação de mercado. O Lote O concluiu sua auditoria documental após rebuild governado do MENU e prova Semantic + Mechanical; `F-002 = RESOLVED`. O Lote P concluiu a auditoria final de completude com `PASS`, recomputação de contagens físicas e maturidade documental, `OPEN P-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`.
 
 `F-016-A` concluiu o ciclo governado: elegibilidade estrutural/semântica, autorização humana separada, cleanup físico 119/119, reconciliação, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. A subfrente está `RESOLVED` e o inventário físico corrente de SVGs é zero.
@@ -90,7 +93,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.38.0** |
+| Estado global | **GKR-STATE-001 v3.39.0** |
 | Cognitive Reference Architecture | **GIA-COG-001 v0.1.1 / ACTIVE / NORMATIVE / CONCEPTUAL-REFERENCE** |
 | Família GIA-COG-002..008 | **RESERVED / NOT MATERIALIZED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
@@ -143,13 +146,14 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | Lote N — GTM / presença pública | **DOCUMENTARY AUDIT COMPLETED / OPEN N-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Lote O — MENU final / rotas multiequipe | **DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED / OPEN O-SPECIFIC MATERIAL FINDINGS = 0** |
 | Lote P — Auditoria final | **COMPLETED / PASS / OPEN P-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
-| O/C atores, autoridades e jobs | **DEFINED / ACTIVE** |
-| O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE** |
+| O/C atores, autoridades e jobs | **DEFINED / ACTIVE / GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.0** |
+| O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE / GKR-UX-ORGCOL-AUTH-IA-001 v1.3.0** |
 | O/C mapa lógico de superfícies | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0** |
 | O/C mapa de estados | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0** |
 | O/C fluxos prioritários | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0** |
 | O/C navegação materializada | **NOT MATERIALIZED** |
 | O/C wireframes autenticados | **NOT STARTED** |
+| GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / FUNCTIONAL ADVANCEMENT PAUSED** |
 | Design das Homes / O/C autenticado | **NOT AUTHORIZED; PER-002-SPECIFIC DESIGN WORK DOES NOT RELEASE O/C OR HOME MATERIALIZATION** |
 
 Inventário físico corrente após F-016-A:
@@ -217,7 +221,7 @@ GKR
 
 ## 4. Programa prioritário — Auditoria Integral do GKR
 
-A auditoria integral foi concluída. Q é uma frente pós-auditoria governada por baseline final capturada e por autorização própria. A frente `GIA-COG-001` é uma evolução arquitetural posterior e separada: sua promoção canônica não altera a baseline histórica nem reabre os lotes da auditoria. As definições posteriores do Surface Map e do State Map O/C também são atos documentais separados e não reabrem H/I nem promovem maturidade visual, transições ou navegação materializada.
+A auditoria integral foi concluída. Q é uma frente pós-auditoria governada por baseline final capturada e por autorização própria. A frente `GIA-COG-001` é uma evolução arquitetural posterior e separada: sua promoção canônica não altera a baseline histórica nem reabre os lotes da auditoria. As definições posteriores do Surface Map, do State Map e dos Priority Flows O/C também são atos documentais separados e não reabrem H/I nem promovem maturidade visual, transições ou navegação materializada.
 
 Sequência governada:
 
@@ -1820,7 +1824,7 @@ RESEARCH OPERATIONAL STATES
 
 A frente Home Masters comprovou elegibilidade de fechamento no HEAD `39277f305fced32ce351c113ab7e7d5d7cc76242`, com `C1–C10 = PASS`, Semantic #991 `SUCCESS`, Mechanical #1236 `SUCCESS`, revisão Codex independente sem finding material e zero threads abertos.
 
-O pacote formal de fechamento foi documentado por `GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0`, `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0` e `GKR-STATE-001 v3.35.0`. Essas referências permanecem como proveniência do fechamento Home Masters; não substituem o estado global corrente `GKR-STATE-001 v3.38.0`.
+O pacote formal de fechamento foi documentado por `GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0`, `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0` e `GKR-STATE-001 v3.35.0`. Essas referências permanecem como proveniência do fechamento Home Masters; não substituem o estado global corrente `GKR-STATE-001 v3.39.0`.
 
 O changeset final da PR #377 passou novamente por Semantic + Mechanical + revisão independente antes do merge governado. A integração foi concluída em `main` pelo merge commit `b39b9427affd350651caa7efbb34f99e374f6709`.
 
