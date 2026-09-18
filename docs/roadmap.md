@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.38.0
+id: ROADMAP-13.39.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.38.0
+version: 13.39.0
 owner: Guivos
 last_updated: 2026-09-18
 normative: true
@@ -30,6 +30,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
+  - GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
   - GKR-GLOBAL-UPDATE-2026-09-18-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-OC-NARR-001
@@ -58,7 +59,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.39.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.40.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -76,9 +77,9 @@ A **Auditoria Integral do Guivos Knowledge Repository** foi concluída com resul
 
 A frente posterior da **Cognitive Reference Architecture** também concluiu seu ciclo governado no limite documental. `ADR-008` aprovou placement e ownership sob a GIA; `GIA-COG-001 v0.1.1` passou por revisão semântica, remediação, revalidação e gate de promoção e é agora a arquitetura cognitiva de referência vigente, `active / normative`. Essa promoção não libera `GIA-COG-002..008`, arquitetura física, modelo físico, ontologia física, provedores/modelos/stack, dados reais, Product Engineering, operação ou produção.
 
-A frente posterior de Organizações e Coletivos também avançou por atos governados próprios. `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` está definido como mapa lógico-documental canônico das superfícies autenticadas O/C, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` como mapa funcional canônico de estados e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` como autoridade canônica documental dos fluxos prioritários. A promoção dos Priority Flows não cria novos `GKR-TRN-*`, não promove maturidades registradas e não materializa navegação. Surface Map + State Map + Priority Flows não liberam wireframes, Design, UI, protótipo ou Product Engineering.
+A frente posterior de Organizações e Coletivos também avançou por atos governados próprios. `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` está definido como mapa lógico-documental canônico das superfícies autenticadas O/C, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` como mapa funcional canônico de estados e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` como autoridade canônica documental dos fluxos prioritários. `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0` está promovido como `PASS / ACTIVE / CANONICAL ELIGIBILITY ADJUDICATION`. Essa promoção não cria novos `GKR-SURF-*` ou `GKR-TRN-*`, não promove maturidades registradas e não autoriza Navigation Materialization, wireframes, Design, UI, protótipo ou Product Engineering.
 
-A atualização global do GKR de 18/09/2026 sincroniza as autoridades correntes, entrypoints, hubs e MENU sem abrir nova frente funcional. Durante esse ciclo, o avanço para `Navigation Materialization` permanece explicitamente pausado por instrução humana; `NEXT AUTOMATIC EXECUTION = NONE` continua válido.
+A atualização global do GKR de 18/09/2026 sincronizou as autoridades correntes, entrypoints, hubs e MENU durante uma pausa funcional. Após sua integração, a retomada funcional foi autorizada e consumida exclusivamente para adjudicar a elegibilidade de Navigation Materialization. Essa elegibilidade está agora promovida como `PASS`; a execução de Navigation Materialization permanece dependente de autorização humana separada e `NEXT AUTOMATIC EXECUTION = NONE` continua válido.
 
 Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com `F-006 RESOLVED` e `F-007 RESOLVED`. `F-016` também está `RESOLVED` após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com `F-017 RESOLVED`. O Lote K concluiu sua auditoria documental com `F-019 RESOLVED`, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com `F-020` e `F-021` resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. O Lote M concluiu sua auditoria documental com `OPEN M-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`, sem promover execução jurídica, privacidade operacional ou constituição institucional. O Lote N concluiu sua auditoria documental com `OPEN N-SPECIFIC MATERIAL FINDINGS = 0`, `F-022 NOT OPENED` e sem promover execução de GTM, publicação ou operação de mercado. O Lote O concluiu sua auditoria documental após rebuild governado do MENU e prova Semantic + Mechanical; `F-002 = RESOLVED`. O Lote P concluiu a auditoria final de completude com `PASS`, recomputação de contagens físicas e maturidade documental, `OPEN P-SPECIFIC MATERIAL FINDINGS = 0` e `F-022 NOT OPENED`.
 
@@ -93,7 +94,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.39.0** |
+| Estado global | **GKR-STATE-001 v3.40.0** |
 | Cognitive Reference Architecture | **GIA-COG-001 v0.1.1 / ACTIVE / NORMATIVE / CONCEPTUAL-REFERENCE** |
 | Família GIA-COG-002..008 | **RESERVED / NOT MATERIALIZED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
@@ -151,9 +152,10 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | O/C mapa lógico de superfícies | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0** |
 | O/C mapa de estados | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0** |
 | O/C fluxos prioritários | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0** |
-| O/C navegação materializada | **NOT MATERIALIZED** |
+| O/C elegibilidade de Navigation Materialization | **PASS / ACTIVE / CANONICAL / GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0** |
+| O/C navegação materializada | **NOT MATERIALIZED / NOT AUTHORIZED** |
 | O/C wireframes autenticados | **NOT STARTED** |
-| GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / FUNCTIONAL ADVANCEMENT PAUSED** |
+| GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION** |
 | Design das Homes / O/C autenticado | **NOT AUTHORIZED; PER-002-SPECIFIC DESIGN WORK DOES NOT RELEASE O/C OR HOME MATERIALIZATION** |
 
 Inventário físico corrente após F-016-A:
@@ -725,8 +727,13 @@ AUTHENTICATED PRIORITY FLOWS
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 → NO NEW GKR-TRN-* CREATED OR PROMOTED
 
+NAVIGATION MATERIALIZATION ELIGIBILITY
+→ GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0
+→ PASS / ACTIVE / CANONICAL
+→ MATERIAL BLOCKER PROVEN = NONE
+
 NAVIGATION MATERIALIZATION
-→ NOT MATERIALIZED
+→ NOT AUTHORIZED / NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
 → NOT STARTED
@@ -741,7 +748,7 @@ PRODUCT ENGINEERING
 
 `UXA-015..018` e os dois SVGs associados foram removidos pelo cleanup governado F-006 após absorção e validação. Esse cleanup histórico não definiu as autoridades posteriores. As definições subsequentes ocorreram por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001`, sem reativar artefatos removidos, criar/promover transições por inferência, materializar navegação, wireframes ou Design.
 
-O próximo avanço O/C, se autorizado em ato separado, é **Navigation Materialization** e deve partir de Surface Map + State Map + Priority Flows canônicos, das autoridades especializadas e dos registries estáveis; não deve restaurar propostas pré-auditoria nem inferir wireframes ou materialização visual.
+A elegibilidade de **Navigation Materialization** foi promovida como `PASS`. O próximo ato O/C é exclusivamente a **autorização humana separada da Navigation Materialization**. Se autorizada, a execução deverá partir de Surface Map + State Map + Priority Flows canônicos, da adjudicação de elegibilidade, das autoridades especializadas e dos registries estáveis; não deverá restaurar propostas pré-auditoria nem inferir wireframes ou materialização visual.
 
 ## 13. Lote I — Registries, catálogos e materializações
 
@@ -1824,7 +1831,7 @@ RESEARCH OPERATIONAL STATES
 
 A frente Home Masters comprovou elegibilidade de fechamento no HEAD `39277f305fced32ce351c113ab7e7d5d7cc76242`, com `C1–C10 = PASS`, Semantic #991 `SUCCESS`, Mechanical #1236 `SUCCESS`, revisão Codex independente sem finding material e zero threads abertos.
 
-O pacote formal de fechamento foi documentado por `GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0`, `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0` e `GKR-STATE-001 v3.35.0`. Essas referências permanecem como proveniência do fechamento Home Masters; não substituem o estado global corrente `GKR-STATE-001 v3.39.0`.
+O pacote formal de fechamento foi documentado por `GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0`, `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0` e `GKR-STATE-001 v3.35.0`. Essas referências permanecem como proveniência do fechamento Home Masters; não substituem o estado global corrente `GKR-STATE-001 v3.40.0`.
 
 O changeset final da PR #377 passou novamente por Semantic + Mechanical + revisão independente antes do merge governado. A integração foi concluída em `main` pelo merge commit `b39b9427affd350651caa7efbb34f99e374f6709`.
 
@@ -1871,4 +1878,4 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
-Qualquer avanço posterior à promoção documental dos Priority Flows deve partir das autoridades correntes e exigir ato governado próprio. Surface Map + State Map + Priority Flows não autorizam, por inferência, navegação materializada, wireframes, Design, UI, protótipo ou Product Engineering.
+A elegibilidade de Navigation Materialization foi promovida canonicamente após Priority Flows. O próximo avanço exige autorização humana própria para a materialização. Surface Map + State Map + Priority Flows + eligibility PASS não autorizam, por inferência, navegação materializada, wireframes, Design, UI, protótipo ou Product Engineering.
