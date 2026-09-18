@@ -372,6 +372,10 @@ GKR-SURF-COL-003 — GESTÃO DE SOLICITAÇÕES
 └── RECUSAR
 ↓
 VÍNCULO DA PESSOA QUANDO APROVADO
+↓
+GKR-SURF-COL-004 — PARTICIPANTES E VÍNCULOS [CONTINUIDADE LÓGICA; TRANSIÇÃO ESTÁVEL NÃO DECLARADA]
+↓
+GKR-SURF-COL-005 — COMUNICAÇÃO OFICIAL QUANDO APLICÁVEL À CONTINUIDADE DA PARTICIPAÇÃO
 ```
 
 Transições preservadas:
@@ -383,7 +387,7 @@ Transições preservadas:
 - `GKR-TRN-109` — `COL-003 → PER-105`;
 - `GKR-TRN-112` — `COL-002 → COL-003`.
 
-Essas transições mantêm sua maturidade própria.
+Essas transições mantêm sua maturidade própria. A continuidade pós-aprovação até `COL-004` e, quando aplicável, `COL-005` é reconhecida pelo Surface Map, mas **não possui neste draft uma transição estável nova ou inferida**.
 
 Preservações:
 
@@ -779,9 +783,9 @@ MUDANÇA DE CONTEXTO
 | Organização — oportunidade/programa | `ORG-002..003` | `TRN-201..203` | reutilizar; sem promoção |
 | Organização — evidência/prestação de contas | `ORG-007` | sem transição dedicada conhecida | lacuna preservada |
 | Coletivo — contexto e Momento | `COL-002` + objetos referenciados | nenhuma espinha principal estável declarada | lacuna preservada |
-| Coletivo — participação | `COL-003` + `PER-105/106` | `TRN-105..109`, `TRN-112` | reutilizar; sem promoção |
+| Coletivo — participação | `COL-003..005` + `PER-105/106` | `TRN-105..109`, `TRN-112`; continuidade `COL-003 → COL-004/005` sem novo ID | reutilizar o existente; preservar lacuna |
 | Coletivo — atividade/oportunidade | `COL-006` | sem cadeia estável completa conhecida | lacuna preservada |
-| Coletivo — governança/comunicação | `COL-004..007` | `TRN-113` no recorte conhecido | reutilizar; sem promoção |
+| Coletivo — governança/comunicação/proteção | `COL-005..007` | `TRN-113` no recorte conhecido | reutilizar; sem promoção |
 | Coletivo — aprendizados/evidências | domínio lógico sem ID exclusivo | sem transição dedicada conhecida | lacuna preservada |
 | Relação Organização ↔ Coletivo | `ORG-004..006`, `COL-008` | `TRN-206..209` | reutilizar como contratadas; sem promoção |
 | Planos do Coletivo | `COL-002 ↔ COL-301` | `TRN-417/418` | conexão especializada já validada |
