@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
 title: Organizações e Coletivos — Mapa de Superfícies da Experiência Autenticada
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-12
+last_updated: 2026-09-18
 normative: false
 maturity: authenticated_surface_map_defined_pre_state_flow_wireframe
 depends_on:
@@ -491,7 +491,8 @@ MAPA DE ESTADOS
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 FLUXOS PRIORITÁRIOS
-→ NOT MATERIALIZED
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
@@ -512,7 +513,7 @@ A palavra `DEFINED` neste documento significa **definição documental**, não m
 
 Este documento não autoriza automaticamente a etapa seguinte.
 
-Quando houver autorização específica, o próximo ato elegível poderá trabalhar **fluxos prioritários** sobre o Surface Map e o State Map já definidos documentalmente, respeitando:
+Em ato governado posterior, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` definiu os **Priority Flows** sobre o Surface Map e o State Map, respeitando:
 
 - IDs estáveis do registro central;
 - maturidade individual já registrada;
@@ -522,6 +523,8 @@ Quando houver autorização específica, o próximo ato elegível poderá trabal
 - estados de ausência, bloqueio, contestação e indisponibilidade;
 - separação entre semântica funcional e Design.
 
+O próximo gate corrente é **Navigation Materialization**, ainda dependente de autorização específica.
+
 Até nova autorização:
 
 ```text
@@ -529,7 +532,7 @@ STATE MAP
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 PRIORITY FLOWS
-→ NOT MATERIALIZED
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
