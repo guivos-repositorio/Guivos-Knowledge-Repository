@@ -790,7 +790,67 @@ MUDANÇA DE CONTEXTO
 → REVALIDA AUTORIDADE
 ```
 
-## 19. Matriz inicial de reconciliação com o Transition Registry
+## 19. Matriz de cobertura dos Jobs prioritários
+
+Esta matriz demonstra cobertura funcional sem transformar ausência de autoridade em falsa completude.
+
+### Organização
+
+| Job | Cobertura neste draft | Estado |
+|---|---|---|
+| `ORG-J01` — contexto institucional | §6 | coberto no limite documental |
+| `ORG-J02` — Momento e atenção material | §6 | coberto no limite documental |
+| `ORG-J03` — identidade, capacidade, condições e responsabilidades | §6 + §15 | coberto funcionalmente; sem nova transição |
+| `ORG-J04` — oportunidades e programas | §7 | coberto com reutilização de `TRN-201..203` |
+| `ORG-J05` — relações com Coletivos e Organizações | §14 | **parcial**: Organização↔Coletivo coberto por `UXA-019`; Organização↔Organização permanece lacuna explícita |
+| `ORG-J06` — compromissos, evidências e resultados | §8 + §14 | coberto no limite documental; sem fabricar impacto |
+| `ORG-J07` — capacidade comercial e Planos | §16.1 | conexão especializada preservada; não é eixo principal |
+| `ORG-J08` — corrigir, contestar, revisar, pausar ou encerrar | §14 + §15 | coberto transversalmente |
+| `ORG-J09` — Próximo Passo e autoridade | §5 + §6 | coberto como orientação contextual, não obrigação |
+
+### Coletivo
+
+| Job | Cobertura neste draft | Estado |
+|---|---|---|
+| `COL-J01` — contexto coletivo | §9 | coberto no limite documental |
+| `COL-J02` — Momento e atenção material | §9 | coberto no limite documental |
+| `COL-J03` — atividades, ações, recursos e necessidades | §11 | coberto funcionalmente; lacunas de transição preservadas |
+| `COL-J04` — participação, solicitações, papéis e vínculos | §10 | coberto com fluxos existentes e lacuna pós-aprovação explícita |
+| `COL-J05` — decisões, comunicação, moderação e proteção | §12 | coberto no limite documental |
+| `COL-J06` — oportunidades ou atividades legítimas | §11 | coberto funcionalmente |
+| `COL-J07` — relações com Organizações e outros Coletivos | §14 | **parcial**: Organização↔Coletivo coberto por `UXA-019`; Coletivo↔Coletivo permanece lacuna explícita |
+| `COL-J08` — avanço, aprendizado e evidências | §13 | coberto no limite documental; domínio sem ID exclusivo preservado |
+| `COL-J09` — capacidade e Planos | §16.1 | conexão especializada preservada; não é eixo principal |
+| `COL-J10` — corrigir, contestar, revisar, pausar ou encerrar | §14 + §15 | coberto transversalmente |
+| `COL-J11` — Próximo Passo e decisão/autoridade | §5 + §9 | coberto como orientação justificável |
+
+### Jobs bilaterais Organização ↔ Coletivo
+
+| Job | Cobertura neste draft | Estado |
+|---|---|---|
+| `BIL-J01` — propor relação com finalidade/escopo | §14 | coberto |
+| `BIL-J02` — avaliar autoridade, capacidade, riscos e condições | §14 | coberto |
+| `BIL-J03` — negociar alterações materiais | §14 | coberto com reavaliação e nova aprovação |
+| `BIL-J04` — aprovar o mesmo escopo pelas duas autoridades | §14 | coberto; aprovação ≠ ativação automática |
+| `BIL-J05` — acompanhar compromissos e evidências | §14 + §8/§13 conforme a perspectiva | coberto no limite de evidência permitida |
+| `BIL-J06` — revisar, contestar, pausar ou encerrar | §14 + §15 | coberto |
+
+Consequentemente:
+
+```text
+COBERTURA DE JOB
+≠ COMPLETUDE DE REGISTRY
+
+ORG-J05
+→ ORGANIZAÇÃO↔COLETIVO COBERTO
+→ ORGANIZAÇÃO↔ORGANIZAÇÃO = GAP EXPLÍCITO
+
+COL-J07
+→ COLETIVO↔ORGANIZAÇÃO COBERTO
+→ COLETIVO↔COLETIVO = GAP EXPLÍCITO
+```
+
+## 20. Matriz inicial de reconciliação com o Transition Registry
 
 | Fluxo funcional | Superfícies / objetos principais | Transições conhecidas | Tratamento neste draft |
 |---|---|---|---|
@@ -808,7 +868,7 @@ MUDANÇA DE CONTEXTO
 
 A matriz não certifica completude do Transition Registry e não cria maturidade nova.
 
-## 20. Decisões explicitamente adiadas
+## 21. Decisões explicitamente adiadas
 
 Este draft não define:
 
@@ -838,7 +898,7 @@ Este draft não define:
 
 Também não inicia `UXA-102/V5` nem Product Engineering.
 
-## 21. Critérios propostos de suficiência para futura promoção documental
+## 22. Critérios propostos de suficiência para futura promoção documental
 
 Uma revisão futura só poderá considerar esta autoridade elegível a `DEFINED / CANONICAL DOCUMENTARY` se, no mínimo:
 
@@ -856,7 +916,7 @@ Uma revisão futura só poderá considerar esta autoridade elegível a `DEFINED 
 12. navegação materializada, wireframes, Design/UI e Product Engineering continuem fechados;
 13. validação semântica, mecânica e revisão independente concluam sem finding material no HEAD candidato.
 
-## 22. Estado desta revisão
+## 23. Estado desta revisão
 
 ```text
 GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
@@ -889,7 +949,7 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
-## 23. Próximo gate
+## 24. Próximo gate
 
 O próximo gate desta frente é **revisão semântica do draft**.
 
