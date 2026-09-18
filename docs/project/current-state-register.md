@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.36.0
+version: 3.37.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-14
+last_updated: 2026-09-15
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
@@ -28,6 +28,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-OC-NARR-001
   - GKR-UX-HOME-OC-NAV-001
@@ -76,7 +77,7 @@ A auditoria integral do corpus foi concluída com resultado `PASS`. A baseline f
 
 A frente posterior da Cognitive Reference Architecture também foi concluída em seu limite documental: `ADR-008` aprovou placement e ownership sob a GIA; `GIA-COG-001 v0.1.1` passou por revisão, remediação, revalidação semântica e gate de promoção e é agora a **Cognitive Reference Architecture vigente, ativa e normativa**. Essa promoção não autoriza `GIA-COG-002..008`, arquitetura física, dados reais, implementação, operação ou produção.
 
-A frente documental posterior de Organizações e Coletivos também avançou por gate próprio: `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` é agora o **mapa lógico-documental canônico das superfícies autenticadas O/C**, reconciliado com `GKR-JOURNEY-SURFACE-REGISTRY-001` e sem criar namespace paralelo. Essa definição não promove a maturidade individual dos `GKR-SURF-*`, não materializa mapa de estados ou fluxos, não inicia wireframes e não libera Design, UI, protótipo ou Product Engineering.
+A frente documental posterior de Organizações e Coletivos também avançou por gates próprios: `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` é o **mapa lógico-documental canônico das superfícies autenticadas O/C** e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` é o **mapa funcional canônico documental dos estados autenticados O/C**. Ambos preservam os IDs e autoridades existentes sem criar namespaces paralelos. Essas definições não promovem a maturidade individual dos `GKR-SURF-*` ou `GKR-TRN-*`, não materializam Priority Flows ou navegação, não iniciam wireframes e não liberam Design, UI, protótipo ou Product Engineering.
 
 ## 2. Estado executivo
 
@@ -100,10 +101,25 @@ O/C AUTHENTICATED SURFACE MAP
 → GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 → DEFINED / CANONICAL DOCUMENTARY
 → STABLE GKR-SURF-* IDS PRESERVED BY CROSSWALK
-→ STATE MAP / FLOWS NOT MATERIALIZED
-→ WIREFRAMES NOT STARTED
-→ DESIGN / UI / PROTOTYPE NOT AUTHORIZED
-→ PRODUCT ENGINEERING NOT RELEASED
+
+O/C AUTHENTICATED STATE MAP
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+→ NO PARALLEL STATE NAMESPACE
+→ NO GKR-TRN-* CREATED OR PROMOTED
+
+O/C PRIORITY FLOWS / NAVIGATION MATERIALIZATION
+→ NOT MATERIALIZED
+→ REQUIRES SEPARATE GOVERNED AUTHORIZATION
+
+O/C AUTHENTICATED WIREFRAMES
+→ NOT STARTED
+
+DESIGN / UI / PROTOTYPE
+→ NOT AUTHORIZED BY O/C STATE-MAP PROMOTION
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 
 BLOCO 2 — G / H / I
 → G COMPLETED / UPDATE_APPLIED
@@ -751,16 +767,34 @@ O mapa:
 - mantém explícitas as lacunas em que ainda não existe ID dedicado, sem inventar identificadores;
 - não promove por inferência a maturidade individual das superfícies registradas.
 
+### 8.5 Mapa funcional de estados — estado canônico documental
+
+`GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` está ativo como **mapa funcional canônico documental dos estados autenticados** de Organização e Coletivo.
+
+Ele:
+
+- organiza estados funcionais transversais de contexto/autoridade, operação/atenção, proveniência/evidência/compreensão, proteção/governança/contestação e capacidade/disponibilidade;
+- preserva `ORG-004..006` e `COL-008` exclusivamente para Organização–Coletivo sob `UXA-019`;
+- mantém Organização–Organização e Coletivo–Coletivo como lacunas explícitas sem ID dedicado;
+- preserva a perspectiva da Pessoa separada das superfícies operacionais do Coletivo;
+- não cria namespace estável de estados;
+- não cria nem promove `GKR-TRN-*`;
+- não redefine estados especializados de Planos nem suas autoridades.
+
 Estado governado:
 
 ```text
 O/C MAPA LÓGICO DE SUPERFÍCIES
 → DEFINED / CANONICAL DOCUMENTARY
 
-MAPA DE ESTADOS
-→ NOT MATERIALIZED
+O/C MAPA FUNCIONAL DE ESTADOS
+→ DEFINED / CANONICAL DOCUMENTARY
 
-FLUXOS PRIORITÁRIOS
+PRIORITY FLOWS
+→ NOT MATERIALIZED
+→ REQUIRES SEPARATE GOVERNED AUTHORIZATION
+
+NAVEGAÇÃO MATERIALIZADA
 → NOT MATERIALIZED
 
 WIREFRAMES AUTENTICADOS
@@ -776,11 +810,11 @@ PRODUCT ENGINEERING
 
 A antiga proposta pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece somente `HOLD_REVIEW` e não é autoridade vigente.
 
-A documentação O/C pode avançar para estados críticos e fluxos prioritários **somente mediante novo ato governado específico**. A existência do Surface Map não autoriza materialização visual, wireframe, menu interno final, rota técnica, RBAC técnico, implementação ou Engenharia.
+A documentação O/C pode avançar para Priority Flows **somente mediante novo ato governado específico**. A existência do Surface Map e do State Map não autoriza materialização visual, wireframe, menu interno final, rota técnica, RBAC técnico, implementação ou Engenharia.
 
 ```text
 DOCUMENTAÇÃO
-→ DEFINE RESPONSABILIDADES E FRONTEIRAS SEMÂNTICAS
+→ DEFINE RESPONSABILIDADES, ESTADOS E FRONTEIRAS SEMÂNTICAS
 
 DESIGN
 → DEFINE COMO A EXPERIÊNCIA É VISUALMENTE MATERIALIZADA
@@ -999,7 +1033,9 @@ WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
 
 EXPERIÊNCIA AUTENTICADA O/C
 → SURFACE MAP DOCUMENTARY DEFINED
-→ STATE MAP / FLOWS / WIREFRAMES NOT MATERIALIZED / NOT STARTED
+→ STATE MAP DOCUMENTARY DEFINED
+→ PRIORITY FLOWS / NAVIGATION MATERIALIZATION = NOT MATERIALIZED
+→ WIREFRAMES = NOT STARTED
 ```
 
 ### 10.3 Homes dos Produtos Especializados
@@ -1690,8 +1726,8 @@ Após o fechamento da auditoria integral e a captura da baseline final, permanec
 - evidência de atividade efetiva para AIaaS se incluído;
 - implantação real do perfil pessoal do fundador;
 - publicação real de conteúdo do fundador;
-- estados críticos e fluxos prioritários O/C, somente mediante ato governado próprio;
-- wireframes autenticados O/C, ainda não iniciados;
+- Priority Flows O/C, somente mediante ato governado próprio;
+- navegação materializada e wireframes autenticados O/C, ainda não iniciados;
 - UXA-102/V5;
 - Product Engineering.
 
@@ -1832,17 +1868,29 @@ COGNITIVE REFERENCE ARCHITECTURE
 O/C AUTHENTICATED SURFACE MAP
 → GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 → DEFINED / CANONICAL DOCUMENTARY
-→ STATE MAP / FLOWS = NOT MATERIALIZED
-→ WIREFRAMES = NOT STARTED
-→ DESIGN / UI / PROTOTYPE = NOT AUTHORIZED
-→ PRODUCT ENGINEERING = NOT RELEASED
+
+O/C AUTHENTICATED STATE MAP
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+
+O/C PRIORITY FLOWS / NAVIGATION
+→ NOT MATERIALIZED
+
+O/C WIREFRAMES
+→ NOT STARTED
+
+DESIGN / UI / PROTOTYPE
+→ NOT AUTHORIZED BY O/C DOCUMENTARY PROMOTION
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 
 NEXT AUTOMATIC EXECUTION
 → NONE
 → DO NOT CREATE SOURCE LOCK OR START UXA-102 / PRODUCT ENGINEERING BY INFERENCE
 ```
 
-O fechamento de P encerrou a auditoria integral no limite documental. A cadeia específica posterior de `PER-002` avançou somente por gates explícitos e separados até uma referência interativa pós-review revalidada. A promoção canônica posterior de `GIA-COG-001` estabelece somente uma autoridade arquitetural cognitiva conceitual/de referência. O Surface Map O/C posterior estabelece somente um mapa lógico-documental canônico das responsabilidades autenticadas. Nenhum desses atos constitui implementação, produção ou liberação de Product Engineering.
+O fechamento de P encerrou a auditoria integral no limite documental. A cadeia específica posterior de `PER-002` avançou somente por gates explícitos e separados até uma referência interativa pós-review revalidada. A promoção canônica posterior de `GIA-COG-001` estabelece somente uma autoridade arquitetural cognitiva conceitual/de referência. Surface Map e State Map O/C estabelecem somente autoridades documentais canônicas das responsabilidades e estados funcionais. Nenhum desses atos constitui implementação, produção ou liberação de Product Engineering.
 
 ## 27. Regra de navegação final
 
@@ -1886,7 +1934,7 @@ Uma mesma autoridade pode atender várias rotas; o GKR não cria cópias paralel
 
 A prova final do rebuild ocorreu no `HEAD 2d80c24c31cbe3e9486165369c80fae0775b8fe1`: Semantic #861 e Mechanical #1119 retornaram `SUCCESS`, incluindo links/navegação, nomenclatura, whitespace, MkDocs strict e clean tracked tree.
 
-## 28. Preservações finais
+## 28. Preservações finais e regra de não inferência
 
 ```text
 ORGANIZAÇÃO ≠ GUIVOS BUSINESS ≠ GUIVOS ADS
@@ -1934,12 +1982,92 @@ PROTOTYPE ≠ IMPLEMENTED PRODUCT ≠ REAL AUTHENTICATION ≠ REAL DATA PROCESSI
 DISPLAYED ≠ UNDERSTOOD
 CLICKED ≠ UNDERSTOOD
 GENERIC PURPOSE EXPLANATION ≠ FUTURE PROCESSING AUTHORIZATION
-O/C SURFACE MAP DOCUMENTARY DEFINED ≠ STATE MAP ≠ FLOW ≠ WIREFRAME ≠ UI ≠ IMPLEMENTATION
-```
 
+AUDIT COMPLETE
+≠ PRODUTO IMPLEMENTADO
+≠ PMF VALIDADO
+≠ TECNOLOGIA EM PRODUÇÃO
+
+P PASS
+≠ Q EXECUTADO AUTOMATICAMENTE
+
+Q RELEASE ELIGIBILITY PASS
+≠ Q FUNCTIONAL DEFINITION COMPLETED AUTOMATICAMENTE
+
+Q FUNCTIONAL DEFINITION PASS
+≠ MATERIALIZATION AUTHORIZED
+
+MATERIALIZATION ELIGIBILITY PASS
+≠ DESIGN AUTHORIZATION
+
+DESIGN AUTHORIZATION GRANTED
+≠ DESIGN DELIVERY
+
+DESIGN DELIVERY EXECUTED
+≠ FUNCTIONAL VALIDATION PASS
+
+FUNCTIONAL VALIDATION PASS
+≠ HIGH-FIDELITY AUTHORIZATION
+
+HIGH-FIDELITY ELIGIBILITY PASS
+≠ HIGH-FIDELITY AUTHORIZATION
+≠ EXECUTION
+
+HIGH-FIDELITY AUTHORIZATION GRANTED
+≠ HIGH-FIDELITY EXECUTION
+
+HIGH-FIDELITY DELIVERY EXECUTED
+≠ HIGH-FIDELITY VALIDATION PASS
+
+HIGH-FIDELITY VALIDATION PASS
+≠ PROTOTYPE AUTHORIZATION
+
+PROTOTYPE ELIGIBILITY PASS
+≠ PROTOTYPE AUTHORIZATION
+≠ PROTOTYPE EXECUTION
+
+PROTOTYPE AUTHORIZATION GRANTED
+≠ PROTOTYPE EXECUTION
+
+PROTOTYPE EXECUTION
+≠ PROTOTYPE VALIDATION
+≠ IMPLEMENTATION
+
+PROTOTYPE VALIDATION PRE-REVIEW
+≠ CURRENT POST-REVIEW CONCLUSION
+
+PROTOTYPE
+≠ IMPLEMENTED PRODUCT
+≠ REAL AUTHENTICATION
+≠ REAL DATA PROCESSING
+
+DISPLAYED
+≠ UNDERSTOOD
+
+CLICKED
+≠ UNDERSTOOD
+
+GENERIC PURPOSE EXPLANATION
+≠ FUTURE PROCESSING AUTHORIZATION
+
+GIA-COG-001 ACTIVE / NORMATIVE
+≠ GIA-COG-002..008 AUTHORIZED
+≠ IMPLEMENTATION AUTHORIZED
+
+O/C SURFACE MAP + STATE MAP DOCUMENTARY DEFINED
+≠ PRIORITY FLOWS
+≠ WIREFRAME
+≠ UI
+≠ IMPLEMENTATION
+
+STATE MAP DEFINED
+≠ GKR-TRN-* PROMOTED
+≠ GKR-SURF-* PROMOTED BY INFERENCE
+≠ MATERIALIZED NAVIGATION
+```
 ## 29. Próximo ato governado
 
-P foi concluído com resultado `PASS`, a adjudicação de elegibilidade de Q foi concluída como `PASS` sobre o `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e esse mesmo `HEAD` foi capturado como baseline final pós-auditoria. A definição funcional de Q foi posteriormente concluída e consolidada sem alterar essa baseline imutável. A adjudicação documental de elegibilidade de materialização também foi concluída como `PASS` e seu boundary canônico foi congelado em `GKR-UX-PER002-MAT-ELIGIBILITY-001`. A cadeia posterior avançou por gates separados: autorização low-fidelity, entrega low-fidelity, validação low-fidelity, elegibilidade high-fidelity, autorização high-fidelity, entrega high-fidelity, validação high-fidelity, elegibilidade de protótipo, autorização explícita de protótipo, execução do protótipo, validação inicial, revisão Codex, remediação e revalidação pós-review. O validator original foi preservado como evidência histórica `superseded` em `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1`; a conclusão corrente é governada por `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 = PASS`. A frente `GIA-COG-001` também completou seu ciclo documental por revisão, remediação, revalidação e promoção canônica, tornando-se arquitetura cognitiva vigente `active / normative`. A frente O/C posterior definiu documentalmente o mapa lógico de superfícies, sem liberar estados, fluxos, Design ou Engenharia. Nenhum estágio posterior é liberado automaticamente.
+P foi concluído com resultado `PASS`, a adjudicação de elegibilidade de Q foi concluída como `PASS` sobre o `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e esse mesmo `HEAD` foi capturado como baseline final pós-auditoria. A definição funcional de Q foi posteriormente concluída e consolidada sem alterar essa baseline imutável. A adjudicação documental de elegibilidade de materialização também foi concluída como `PASS` e seu boundary canônico foi congelado em `GKR-UX-PER002-MAT-ELIGIBILITY-001`. A cadeia posterior avançou por gates separados: autorização low-fidelity, entrega low-fidelity, validação low-fidelity, elegibilidade high-fidelity, autorização high-fidelity, entrega high-fidelity, validação high-fidelity, elegibilidade de protótipo, autorização explícita de protótipo, execução do protótipo, validação inicial, revisão Codex, remediação e revalidação pós-review. O validator original foi preservado como evidência histórica `superseded` em `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1`; a conclusão corrente é governada por `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 = PASS`. A frente `GIA-COG-001` também completou seu ciclo documental por revisão, remediação, revalidação e promoção canônica, tornando-se arquitetura cognitiva vigente `active / normative`. A frente O/C posterior definiu documentalmente o mapa lógico de superfícies e o mapa funcional de estados; Priority Flows, materialização de navegação, wireframes, Design e Engenharia permanecem fechados. Nenhum estágio posterior é liberado automaticamente.
 
 ```text
 P — AUDITORIA FINAL DE COMPLETUDE
@@ -2019,12 +2147,23 @@ COGNITIVE REFERENCE ARCHITECTURE
 O/C AUTHENTICATED SURFACE MAP
 → GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 → DEFINED / CANONICAL DOCUMENTARY
-→ STABLE GKR-SURF-* IDS PRESERVED
-→ STATE MAP = NOT MATERIALIZED
-→ FLOWS = NOT MATERIALIZED
-→ WIREFRAMES = NOT STARTED
-→ DESIGN / UI / PROTOTYPE = NOT AUTHORIZED
-→ PRODUCT ENGINEERING = PAUSED BEFORE W0-01 / NOT RELEASED
+
+O/C AUTHENTICATED STATE MAP
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+
+O/C PRIORITY FLOWS / NAVIGATION
+→ NOT MATERIALIZED
+→ REQUIRES SEPARATE GOVERNED AUTHORIZATION
+
+O/C AUTHENTICATED WIREFRAMES
+→ NOT STARTED
+
+DESIGN / UI / PROTOTYPE
+→ NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 
 NEXT AUTOMATIC EXECUTION
 → NONE
@@ -2045,13 +2184,13 @@ AINDA NÃO INICIADOS / NÃO AUTORIZADOS ALÉM DO BOUNDARY
 → SOURCE LOCK VISUAL POR INFERÊNCIA = NOT_AUTHORIZED
 → UXA-102 / V5 = NOT_STARTED
 → MATERIALIZATION OUTSIDE PER-002 AUTHORIZED BOUNDARY = NOT_AUTHORIZED
-→ O/C STATE MAP / FLOWS / WIREFRAMES = NOT MATERIALIZED / NOT STARTED
+→ O/C PRIORITY FLOWS / NAVIGATION / WIREFRAMES = NOT MATERIALIZED / NOT STARTED
 → PRODUCT ENGINEERING = NOT_AUTHORIZED TO RESUME
 → PMF = NOT VALIDATED
 → IMPLEMENTAÇÃO / PRODUÇÃO = NOT_AUTHORIZED
 ```
 
-A cadeia interativa de `PER-002` alcançou fechamento pós-review validado, `GIA-COG-001` alcançou promoção canônica no limite arquitetural conceitual/de referência e o Surface Map O/C alcançou definição canônica no limite lógico-documental. Nenhum desses fechamentos libera automaticamente estágio físico, operacional ou de produto. Qualquer Source Lock adicional, `GIA-COG-002..008`, UXA-102/V5, estados/fluxos/wireframes O/C, Product Engineering, implementação, produção, teste com participantes reais ou dados reais exige ato governado próprio.
+A cadeia interativa de `PER-002` alcançou fechamento pós-review validado, `GIA-COG-001` alcançou promoção canônica no limite arquitetural conceitual/de referência e Surface Map + State Map O/C alcançaram definição canônica no limite documental. Nenhum desses fechamentos libera automaticamente estágio físico, operacional ou de produto. Qualquer Source Lock adicional, `GIA-COG-002..008`, UXA-102/V5, Priority Flows/navegação/wireframes O/C, Product Engineering, implementação, produção, teste com participantes reais ou dados reais exige ato governado próprio.
 
 ## 30. Home Masters — changeset formal de fechamento
 
@@ -2071,7 +2210,7 @@ HOME MASTERS FRONT IN MAIN
 → MUST NOT BE CLAIMED AS INTEGRATED WHILE THIS CHANGESET IS ABSENT FROM MAIN
 ```
 
-A revisão `v3.35.0` desta autoridade integrou o changeset de fechamento de Home Masters. A revisão `v3.36.0` é a promoção documental posterior do Surface Map O/C e não altera a prova, a proveniência ou os gates do fechamento Home Masters.
+A revisão `v3.35.0` desta autoridade integrou o changeset de fechamento de Home Masters. A revisão `v3.36.0` promoveu documentalmente o Surface Map O/C. A revisão `v3.37.0` promove o State Map O/C ao estado `DEFINED / CANONICAL DOCUMENTARY`, sem alterar a prova, a proveniência ou os gates do fechamento Home Masters.
 
 A PR histórica #365 permanece preservada como candidato anterior não mesclado; sua reconciliação é realizada por branch limpa sobre o `main` posterior, sem rebase ou merge cego. Os gates downstream continuam independentes:
 
@@ -2082,22 +2221,22 @@ PR #365
 → HISTORICAL CANDIDATE / NO BLIND REBASE OR MERGE
 
 O/C STATE MAP
-→ NOT RELEASED
+→ DEFINED / CANONICAL DOCUMENTARY IN THIS PROMOTION CHANGESET
 
 O/C PRIORITY FLOWS
-→ NOT RELEASED
+→ NOT RELEASED / NOT MATERIALIZED
 
 O/C NAVIGATION MATERIALIZATION
-→ NOT RELEASED
+→ NOT RELEASED / NOT MATERIALIZED
 
 O/C AUTHENTICATED WIREFRAMES
-→ NOT RELEASED
+→ NOT RELEASED / NOT STARTED
 
 DESIGN / UI / PROTOTYPE
-→ NOT RELEASED BY HOME-MASTERS CLOSURE OR SURFACE-MAP DEFINITION
+→ NOT RELEASED BY HOME-MASTERS CLOSURE, SURFACE-MAP DEFINITION OR STATE-MAP PROMOTION
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
-O avanço posterior ao fechamento Home Masters limita-se, nesta revisão, à definição lógico-documental do Surface Map O/C; nenhuma etapa downstream é liberada automaticamente.
+O avanço posterior ao fechamento Home Masters limita-se, nesta revisão, às definições documentais de Surface Map e State Map O/C; nenhuma etapa downstream é liberada automaticamente.

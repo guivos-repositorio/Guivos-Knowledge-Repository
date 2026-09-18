@@ -2,15 +2,16 @@
 id: GKR-UX-ORGCOL-UX-STATE-001
 title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.4.0
+version: 1.5.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-12
+last_updated: 2026-09-15
 normative: false
 related:
   - GKR-UX-ORGCOL-STATE-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - UXA-014
   - UXA-019
 ---
@@ -35,7 +36,7 @@ Isso vale para, no mínimo:
 - UI final;
 - testes de usabilidade dessas superfícies.
 
-Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação e o mapa lógico de superfícies autenticadas já foram definidos documentalmente em instrumentos próprios. Esse avanço **não equivale** a estados, fluxos, wireframe, UI, protótipo ou implementação.
+Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação, mapa lógico de superfícies e mapa funcional de estados autenticados já foram definidos documentalmente em instrumentos próprios. Esse avanço **não equivale** a Priority Flows, wireframe, UI, protótipo ou implementação.
 
 ## 2. O que já existe e pode alimentar a futura UX
 
@@ -47,13 +48,14 @@ Já existem insumos e autoridades documentais relevantes:
 - `UXA-019` — contrato funcional das relações Organização ↔ Coletivo;
 - `GKR-UX-ORGCOL-AUTH-JOBS-001` — atores, papéis, autoridades e jobs prioritários da experiência autenticada;
 - `GKR-UX-ORGCOL-AUTH-IA-001` — Arquitetura da Informação autenticada;
-- `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` — mapa lógico de superfícies autenticadas, em estado pré-estados / pré-fluxos / pré-wireframes;
+- `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` — mapa lógico de superfícies autenticadas definido documentalmente;
+- `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` — mapa funcional de estados autenticados definido documentalmente;
 - Jornadas integradas da Organização e do Coletivo em estado `draft`;
 - contratos de oportunidades, publicação, descoberta e relações;
 - Documento Mestre da Home pública de Organizações e Coletivos;
 - `RP-002` — Research sobre supply, papéis, rede, valor e modelo econômico.
 
-Esses materiais são **inputs para a construção futura da UX**, não wireframes implícitos. A definição documental de Jobs, IA e Surface Map não autoriza inferir estados, fluxos ou decisões visuais.
+Esses materiais são **inputs para a construção futura da UX**, não wireframes implícitos. A definição documental de Jobs, IA, Surface Map e State Map não autoriza inferir Priority Flows ou decisões visuais.
 
 ## 3. Correção dos registros anteriores
 
@@ -79,7 +81,7 @@ Os SVGs associados permanecem apenas como histórico técnico no repositório e 
 
 ## 4. O que não pode ser inferido
 
-Não é permitido concluir, a partir de material histórico, da IA documental ou do mapa lógico de superfícies, que já estejam definidos:
+Não é permitido concluir, a partir de material histórico, da IA documental, do mapa lógico de superfícies ou do State Map, que já estejam definidos:
 
 - dashboard da Organização;
 - Home autenticada da Organização;
@@ -98,9 +100,9 @@ Não é permitido concluir, a partir de material histórico, da IA documental ou
 - componentes reutilizáveis;
 - padrões visuais.
 
-## 5. Separação entre arquitetura funcional, IA, mapa de superfícies e wireframe
+## 5. Separação entre arquitetura funcional, IA, mapa de superfícies, State Map e wireframe
 
-Uma arquitetura funcional, uma Arquitetura da Informação e um mapa lógico de superfícies podem afirmar que a experiência precisa preservar:
+Uma arquitetura funcional, uma Arquitetura da Informação, um mapa lógico de superfícies e um mapa funcional de estados podem afirmar que a experiência precisa preservar:
 
 - autoridade;
 - autonomia;
@@ -125,7 +127,7 @@ onde cada elemento aparece
 → com qual linguagem visual
 ```
 
-Essas decisões pertencem às etapas posteriores de estados, fluxos e wireframing ainda pendentes.
+Essas decisões pertencem às etapas posteriores de Priority Flows e wireframing ainda pendentes.
 
 ## 6. Sequência obrigatória quando a frente avançar
 
@@ -135,14 +137,15 @@ A construção deverá continuar do estado documental vigente, e não dos SVGs h
 2. atores, papéis, autoridades e jobs prioritários — definidos em `GKR-UX-ORGCOL-AUTH-JOBS-001`;
 3. Arquitetura da Informação — definida em `GKR-UX-ORGCOL-AUTH-IA-001`;
 4. mapa lógico de superfícies — definido documentalmente em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`;
-5. definir fluxos prioritários e estados críticos **somente quando essa frente estiver autorizada**;
-6. construir wireframes de baixa fidelidade **somente quando essa materialização estiver autorizada**;
-7. validar funcionalmente os wireframes reais;
-8. reformular quando necessário;
-9. avançar para UI somente quando autorizado;
-10. construir protótipo somente quando autorizado;
-11. testar com Pessoas / representantes reais;
-12. somente depois preparar handoff técnico.
+5. mapa funcional de estados — definido documentalmente em `GKR-UX-ORGCOL-AUTH-STATE-MAP-001`;
+6. definir Priority Flows **somente quando essa frente estiver autorizada**;
+7. construir wireframes de baixa fidelidade **somente quando essa materialização estiver autorizada**;
+8. validar funcionalmente os wireframes reais;
+9. reformular quando necessário;
+10. avançar para UI somente quando autorizado;
+11. construir protótipo somente quando autorizado;
+12. testar com Pessoas / representantes reais;
+13. somente depois preparar handoff técnico.
 
 Nenhuma etapa concluída autoriza automaticamente a seguinte.
 
@@ -200,7 +203,8 @@ São superfícies e problemas distintos.
 | atores, papéis, autoridades e jobs | **definidos documentalmente** | **definidos documentalmente** |
 | arquitetura de informação autenticada | **definida** | **definida** |
 | mapa lógico de superfícies autenticadas | **definido documentalmente** | **definido documentalmente** |
-| estados e fluxos prioritários | **pendentes** | **pendentes** |
+| mapa funcional de estados autenticados | **definido documentalmente** | **definido documentalmente** |
+| Priority Flows | **pendentes / não materializados** | **pendentes / não materializados** |
 | wireframe | **pendente** | **pendente** |
 | validação de wireframe | **pendente** | **pendente** |
 | UI | pendente | pendente |
@@ -216,7 +220,7 @@ A regra de absorção é:
 
 ```text
 ESTADO FUNCIONAL NECESSÁRIO
-→ PODE SER PRESERVADO COMO REQUISITO DE COBERTURA PARA SURFACE MAP E ETAPAS POSTERIORES
+→ PRESERVADO COMO REQUISITO DE COBERTURA NO STATE MAP E PARA ETAPAS POSTERIORES
 
 COMPOSIÇÃO / ORDEM VISUAL / COPY / CONTROLE HISTÓRICO
 → NÃO É PROMOVIDO A DECISÃO ATUAL
@@ -245,7 +249,7 @@ Os estados abaixo ficam absorvidos como **cobertura funcional**, sem definir tel
 - baixa conectividade quando relevante;
 - operação legítima em múltiplos países, idiomas ou moedas.
 
-Esses estados se conectam às autoridades atuais de contexto/autoridade, atenção derivada, oportunidades, relações, responsabilidades/evidências e estados transversais da IA. A enumeração acima fecha lacunas de cobertura sem determinar materialização.
+Esses estados se conectam às autoridades atuais de contexto/autoridade, atenção derivada, oportunidades, relações, responsabilidades/evidências e estados transversais da IA e do State Map. A enumeração acima fecha lacunas de cobertura sem determinar materialização.
 
 ### 11.2 Coletivo — estados que a futura materialização deverá poder acomodar
 
@@ -271,6 +275,8 @@ Os estados abaixo ficam absorvidos como **cobertura funcional**, sem definir tel
 - Coletivo em processo legítimo de encerramento, com responsabilidades remanescentes quando aplicável.
 
 Esses estados se conectam às autoridades atuais de participação, governança/proteção, relações, aprendizados/evidências, atividade e contexto/autoridade. A enumeração acima preserva a cobertura funcional sem reativar o antigo wireframe.
+
+A condição de pessoa observando antes de participar permanece na perspectiva da Pessoa e não é reclassificada como estado operacional interno do Coletivo.
 
 ### 11.3 Conteúdo dos históricos que permanece apenas como proveniência
 
@@ -309,4 +315,4 @@ A proveniência permanece no histórico Git e em referências textuais explicita
 
 ## 12. Regra final
 
-> **O GKR define função, conteúdo, estados, regras, fluxos e critérios; Design é a autoridade exclusiva para wireframes, mockups, protótipos, layout e materialização visual. Artefatos históricos não podem antecipar nem restringir essa autoridade.**
+> **O GKR define função, conteúdo, estados, regras e critérios; Priority Flows exigem ato governado próprio; Design é a autoridade exclusiva para wireframes, mockups, protótipos, layout e materialização visual. Artefatos históricos não podem antecipar nem restringir essa autoridade.**

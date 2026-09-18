@@ -40,6 +40,8 @@ related:
   - UXA-017
   - UXA-018
   - UXA-071
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - M7.72
 normative: false
 ---
@@ -60,7 +62,7 @@ A UXA-070 estabelece estrutura, taxonomias, critérios de reutilização e regra
 
 `UXA-015`, `UXA-016`, `UXA-017` e `UXA-018` estão `superseded` e permanecem neste documento somente como **proveniência histórica** quando mencionadas no corpo. Elas não são dependências nem autoridades funcionais vigentes da UXA-070.
 
-O modelo funcional, as taxonomias e as regras de governança deste programa continuam úteis. Entretanto, afirmações temporais deste documento sobre quantidades, materialização, validação, lacunas ou “próximo ato” registram o **snapshot do estágio em que a UXA-070 foi criada** e não devem ser interpretadas como maturidade atual do corpus. Para estado vigente de Organização/Coletivo prevalecem `UXA-014`, `UXA-019`, `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001` e os registries/autoridades atuais.
+O modelo funcional, as taxonomias e as regras de governança deste programa continuam úteis. Entretanto, afirmações temporais deste documento sobre quantidades, materialização, validação, lacunas ou “próximo ato” registram o **snapshot do estágio em que a UXA-070 foi criada** e não devem ser interpretadas como maturidade atual do corpus. Para estado vigente de Organização/Coletivo prevalecem `UXA-014`, `UXA-019`, `GKR-UX-ORGCOL-AUTH-JOBS-001`, `GKR-UX-ORGCOL-AUTH-IA-001`, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` e os registries/autoridades atuais.
 
 ```text
 JOBS + AUTHENTICATED IA
@@ -71,14 +73,27 @@ AUTHENTICATED SURFACE MAP
 → GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
 → DEFINED / CANONICAL DOCUMENTARY
 
-STATE MAP
+AUTHENTICATED STATE MAP
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+PRIORITY FLOWS
+→ NOT MATERIALIZED
+
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
 → NOT STARTED
+
+DESIGN / UI / PROTOTYPE
+→ NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
-Nenhuma leitura da UXA-070 reativa baselines `superseded` ou autoriza State Map, wireframe, UI, protótipo ou implementação.
+Nenhuma leitura da UXA-070 reativa baselines `superseded` ou autoriza Priority Flows, navegação materializada, wireframe, UI, protótipo ou implementação.
 
 ## 2. Decisão estrutural
 
@@ -221,7 +236,7 @@ identidade, unidade e autoridade
 → decisões e Próximos Passos justificados
 ```
 
-No estágio original da UXA-070, `UXA-015` e `UXA-017` eram usadas como referências materializadas/validadas da Visão Geral da Organização. Ambas estão hoje `superseded`; essa afirmação é preservada somente como **proveniência histórica** e não constitui baseline vigente nem dependência funcional. A experiência autenticada atual é governada pelas autoridades vigentes de Organização/Coletivo; Jobs + IA autenticada permanecem definidas em sua maturidade própria `pre-surface-map`, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o Surface Map lógico-documental canônico, e State Map / wireframes principais autenticados permanecem não materializados/não iniciados.
+No estágio original da UXA-070, `UXA-015` e `UXA-017` eram usadas como referências materializadas/validadas da Visão Geral da Organização. Ambas estão hoje `superseded`; essa afirmação é preservada somente como **proveniência histórica** e não constitui baseline vigente nem dependência funcional. A experiência autenticada atual é governada pelas autoridades vigentes de Organização/Coletivo; Jobs + IA autenticada permanecem definidas em sua maturidade própria `pre-surface-map`; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o Surface Map lógico-documental canônico; `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` está `ACTIVE / DEFINED / CANONICAL DOCUMENTARY`. Priority Flows e navegação materializada permanecem `NOT MATERIALIZED`; os wireframes principais autenticados permanecem `NOT STARTED`; Design/UI/protótipo permanecem `NOT AUTHORIZED`; Product Engineering permanece `PAUSED BEFORE W0-01 / NOT RELEASED`.
 
 ### 6.5 Relação entre Organização e Coletivo
 

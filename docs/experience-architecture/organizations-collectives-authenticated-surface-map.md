@@ -472,7 +472,7 @@ Nenhum elemento da Home pública é promovido por inferência para a experiênci
 
 ## 13. Estado documental após este mapa
 
-Com esta autoridade, a sequência fica:
+Com esta autoridade e com a autoridade posterior do State Map vigente, a sequência corrente fica:
 
 ```text
 FUNDAMENTOS E PAPÉIS
@@ -485,12 +485,15 @@ ARQUITETURA DA INFORMAÇÃO
 → DEFINED
 
 MAPA LÓGICO DE SUPERFÍCIES
-→ DEFINED
+→ DEFINED / CANONICAL DOCUMENTARY
 
 MAPA DE ESTADOS
-→ NOT MATERIALIZED
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 FLUXOS PRIORITÁRIOS
+→ NOT MATERIALIZED
+
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 WIREFRAMES
@@ -500,16 +503,16 @@ UI / PROTÓTIPO
 → NOT AUTHORIZED
 
 PRODUCT ENGINEERING
-→ NOT RELEASED
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
-A palavra `DEFINED` neste documento significa **definição documental do mapa lógico**, não materialização visual, implementação nem promoção automática da maturidade de qualquer `GKR-SURF-*` individual.
+A palavra `DEFINED` neste documento significa **definição documental**, não materialização visual, implementação nem promoção automática da maturidade de qualquer `GKR-SURF-*` ou `GKR-TRN-*` individual.
 
 ## 14. Próximo gate
 
 Este documento não autoriza automaticamente a etapa seguinte.
 
-Quando houver autorização específica, o próximo ato elegível poderá trabalhar **estados críticos e fluxos prioritários** sobre este mapa, respeitando:
+Quando houver autorização específica, o próximo ato elegível poderá trabalhar **fluxos prioritários** sobre o Surface Map e o State Map já definidos documentalmente, respeitando:
 
 - IDs estáveis do registro central;
 - maturidade individual já registrada;
@@ -522,10 +525,13 @@ Quando houver autorização específica, o próximo ato elegível poderá trabal
 Até nova autorização:
 
 ```text
-STATES
+STATE MAP
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+PRIORITY FLOWS
 → NOT MATERIALIZED
 
-FLOWS
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 WIREFRAMES
@@ -536,4 +542,7 @@ DESIGN / UI
 
 IMPLEMENTATION
 → NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
 ```
