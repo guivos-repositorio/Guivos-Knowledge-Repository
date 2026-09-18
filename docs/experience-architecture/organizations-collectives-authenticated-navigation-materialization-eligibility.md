@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
 title: Organizações e Coletivos — Elegibilidade para Materialização da Navegação Autenticada
-status: draft
-version: 0.1.0
+status: active
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
-maturity: authenticated_navigation_materialization_eligibility_candidate
+maturity: authenticated_navigation_materialization_eligibility_pass
 depends_on:
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
 related:
@@ -25,6 +25,8 @@ related:
 ## 1. Finalidade
 
 Este documento adjudica se existe **base documental suficiente para autorizar, em ato humano separado, a materialização da navegação autenticada de Organizações e Coletivos**.
+
+A adjudicação foi promovida canonicamente após `DRAFT SUFFICIENCY = PASS`, Semantic #1125 `SUCCESS`, Mechanical #1363 `SUCCESS`, revisão read-only sem finding material e autorização humana explícita. A promoção estabelece a elegibilidade como verdade corrente; ela não autoriza a execução da etapa seguinte.
 
 Ele não materializa a navegação.
 
@@ -379,13 +381,14 @@ Wireframes autenticados continuam `NOT STARTED`. Navigation Materialization deve
 
 **Classificação:** não bloqueante.
 
-## 8. Conclusão draft de elegibilidade
+## 8. Conclusão canônica de elegibilidade
 
 A cadeia documental vigente contém informação suficiente para que uma futura frente separada materialize a navegação **sem precisar inventar a arquitetura funcional primeiro**.
 
 ```text
 NAVIGATION MATERIALIZATION ELIGIBILITY
-→ DRAFT PASS
+→ PASS
+→ ACTIVE / CANONICAL ELIGIBILITY ADJUDICATION
 
 DOCUMENTARY PREREQUISITES
 → SUFFICIENT
@@ -406,7 +409,7 @@ AUTHENTICATED WIREFRAMES REQUIRED BEFORE NAVIGATION MATERIALIZATION
 → NO
 ```
 
-O resultado `DRAFT PASS` significa apenas que existe base suficiente para solicitar uma **autorização humana separada** de Navigation Materialization depois de revisão e validação deste documento.
+O resultado `PASS` significa que existe base documental suficiente para solicitar uma **autorização humana separada** de Navigation Materialization. A promoção desta adjudicação não concede essa autorização.
 
 ```text
 ELIGIBILITY PASS
@@ -415,7 +418,7 @@ ELIGIBILITY PASS
 
 ## 9. Boundary de uma eventual autorização
 
-Se esta elegibilidade for promovida após review, uma autorização posterior de Navigation Materialization poderá permitir exclusivamente a definição documental de:
+Com esta elegibilidade promovida, uma autorização posterior de Navigation Materialization poderá permitir exclusivamente a definição documental de:
 
 - topologia principal e contextual;
 - hierarquia de acesso;
@@ -442,9 +445,9 @@ Continuarão fora do escopo:
 - produção;
 - testes com participantes reais.
 
-## 10. Critérios de promoção desta adjudicação
+## 10. Critérios consumidos na promoção desta adjudicação
 
-Este documento somente poderá ser promovido de `draft` se:
+A promoção canônica consumiu cumulativamente os seguintes critérios:
 
 1. nenhuma autoridade corrente contradisser NME-01..13;
 2. a matriz de suficiência permanecer suportada pelas versões correntes;
@@ -464,15 +467,16 @@ Este documento somente poderá ser promovido de `draft` se:
 
 ```text
 GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
-→ DRAFT v0.1.0
+→ ACTIVE v1.0.0
 → NORMATIVE = FALSE
 
 FUNCTIONAL ADVANCEMENT
-→ RESUMED FOR THIS GOVERNED ELIGIBILITY FRONT
+→ RESUMED BY HUMAN AUTHORIZATION
+→ ELIGIBILITY FRONT COMPLETED
 
 NAVIGATION MATERIALIZATION ELIGIBILITY
-→ DRAFT PASS
-→ PENDING REVIEW / VALIDATION
+→ PASS
+→ CANONICALLY PROMOTED / ACTIVE
 
 NAVIGATION MATERIALIZATION
 → NOT AUTHORIZED
