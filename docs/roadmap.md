@@ -1820,7 +1820,7 @@ RESEARCH OPERATIONAL STATES
 
 A frente Home Masters comprovou elegibilidade de fechamento no HEAD `39277f305fced32ce351c113ab7e7d5d7cc76242`, com `C1–C10 = PASS`, Semantic #991 `SUCCESS`, Mechanical #1236 `SUCCESS`, revisão Codex independente sem finding material e zero threads abertos.
 
-O pacote formal de fechamento foi documentado por `GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0`, `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0` e `GKR-STATE-001 v3.35.0`. Essas referências permanecem como proveniência do fechamento Home Masters; não substituem o estado global corrente `GKR-STATE-001 v3.37.0`.
+O pacote formal de fechamento foi documentado por `GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0`, `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0` e `GKR-STATE-001 v3.35.0`. Essas referências permanecem como proveniência do fechamento Home Masters; não substituem o estado global corrente `GKR-STATE-001 v3.38.0`.
 
 O changeset final da PR #377 passou novamente por Semantic + Mechanical + revisão independente antes do merge governado. A integração foi concluída em `main` pelo merge commit `b39b9427affd350651caa7efbb34f99e374f6709`.
 
