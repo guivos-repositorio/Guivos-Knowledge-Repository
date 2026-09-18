@@ -207,7 +207,7 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 | Jornadas Integradas | `active` 0.46.0; Jobs + IA + Surface Map + State Map O/C reconciliados |
 | Jornada da Pessoa | `draft`; PER-010..012 validados localmente; TRN-008..013 integrais |
 | Jornada do Coletivo | `draft` 0.22.0; Jobs + IA + Surface Map + State Map + Priority Flows definidos; navegação/wireframe principal pendentes |
-| Jornada da Organização | `draft` 0.15.0; Jobs + IA + Surface Map + State Map definidos; Priority Flows/navegação/wireframe principal pendentes |
+| Jornada da Organização | `draft` 0.15.0; Jobs + IA + Surface Map + State Map + Priority Flows definidos; navegação/wireframe principal pendentes |
 | mapa lógico autenticado O/C | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY** |
 | mapa de estados autenticado O/C | `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY**; não cria/promove `GKR-TRN-*` nem materializa Priority Flows |
 | fluxos prioritários autenticados O/C | `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY**; não cria/promove `GKR-TRN-*` nem materializa navegação |
