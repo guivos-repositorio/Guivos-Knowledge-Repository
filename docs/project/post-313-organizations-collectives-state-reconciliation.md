@@ -200,12 +200,12 @@ O `GKR-STATE-001` atual reconhece Jobs + IA + Surface Map + State Map autenticad
 
 ## 7. Efeito sobre Catálogo, Galeria e Matriz de Rastreabilidade
 
-Os instrumentos ativos foram normalizados para separar inventário físico de maturidade:
+Os instrumentos correntes foram normalizados para separar o snapshot histórico pré-F-016-A do inventário físico pós-cleanup:
 
-- `GKR-JOURNEY-SCREEN-CATALOG-001` registra 121 SVGs como inventário físico e trata a claim antiga como superseded;
-- `GKR-JOURNEY-SCREEN-GALLERY-001` registra 121 SVGs físicos para inspeção, sem convertê-los em 121 wireframes vigentes;
-- `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` registra 121 associações físicas e 34 perfis, com associação ≠ autoridade visual vigente;
-- `GKR-JOURNEY-SURFACE-REGISTRY-001` mantém IDs estáveis e maturidade por objeto.
+- `GKR-JOURNEY-SCREEN-CATALOG-001` preserva a contagem histórica de 121 apenas como snapshot pré-F-016-A e registra **0 SVGs físicos correntes**;
+- `GKR-JOURNEY-SCREEN-GALLERY-001` foi removido do corpus corrente; sua proveniência permanece recuperável no histórico Git;
+- `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` foi removido do corpus corrente; os **34 perfis históricos de rastreabilidade** permanecem preservados como proveniência/semântica, sem associações físicas correntes;
+- `GKR-JOURNEY-SURFACE-REGISTRY-001` mantém IDs estáveis e maturidade por objeto, sem reintroduzir a camada física removida.
 
 Para Organização e Coletivo:
 
@@ -213,7 +213,7 @@ Para Organização e Coletivo:
 - `COL-001` mantém rastreabilidade, mas `UXA-016/018` não define a experiência autenticada final;
 - fluxos especializados posteriores preservam apenas sua maturidade própria.
 
-O total físico pode permanecer 121 enquanto os dois SVGs históricos estiverem no corpus. Nenhuma contagem agregada de wireframes vigentes/validados é inferida sem recomputação governada.
+Após F-016-A, o inventário físico corrente é **0 SVGs / 0 associações físicas correntes**. O valor histórico de 121 permanece somente como proveniência do snapshot pré-desmaterialização. Nenhuma contagem agregada de wireframes vigentes/validados é inferida sem recomputação governada.
 
 ## 8. Efeito sobre o Registro Granular de Superfícies
 
@@ -356,10 +356,10 @@ A dívida mecânica registrada originalmente após #313 foi substancialmente abs
 | Derivado | Estado em 2026-09-15 |
 |---|---|
 | `GKR-STATE-001` | normalizado; Jobs + IA + Surface Map + State Map reconhecidos |
-| `GKR-JOURNEY-SCREEN-CATALOG-001` | normalizado quanto à separação físico × maturidade |
-| `GKR-JOURNEY-SCREEN-GALLERY-001` | normalizado quanto à separação físico × maturidade |
-| `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` | normalizado; associação ≠ autoridade |
-| `GKR-JOURNEY-SURFACE-REGISTRY-001` | Surface Map O/C reconhecido; maturidade individual não é inferida dos artefatos superseded |
+| `GKR-JOURNEY-SCREEN-CATALOG-001` | normalizado pós-F-016-A; snapshot histórico preservado e inventário físico corrente = 0 |
+| `GKR-JOURNEY-SCREEN-GALLERY-001` | removido do corpus corrente; proveniência preservada no histórico Git |
+| `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` | removido do corpus corrente; 34 perfis históricos preservados como proveniência/semântica |
+| `GKR-JOURNEY-SURFACE-REGISTRY-001` | Surface Map + State Map O/C reconhecidos; maturidade individual não é inferida dos artefatos superseded |
 | Jornada da Organização | Jobs + IA + Surface Map + State Map reconhecidos; Priority Flows/wireframe principal permanecem pendentes |
 | Jornada do Coletivo | Jobs + IA + Surface Map + State Map reconhecidos; Priority Flows/navegação/wireframe principal permanecem pendentes |
 | porta temática O/C | reconciliada com Jobs + IA + Surface Map + State Map |
@@ -381,27 +381,34 @@ QUANTIDADE DE SVGs FÍSICOS
 QUANTIDADE DE WIREFRAMES VIGENTES E VALIDADOS
 ```
 
-Estado comprovado do inventário no Bloco I:
+Snapshot histórico comprovado no Bloco I, anterior à desmaterialização F-016-A:
 
 - SVGs físicos: **121**;
 - associações físicas: **121**;
 - perfis de rastreabilidade: **34**;
-- duplicatas exatas por blob SHA: **0 observadas/provadas no snapshot auditado**;
+- duplicatas exatas por blob SHA: **0 observadas/provadas naquele snapshot auditado**;
 - near-duplicates: **não certificados**;
 - total agregado de wireframes vigentes/validados: **não certificado**.
+
+Estado físico corrente pós-F-016-A:
+
+- SVGs físicos: **0**;
+- associações físicas correntes: **0**;
+- perfis históricos de rastreabilidade preservados como proveniência/semântica: **34**;
+- galeria e matriz físicas: **removidas do corpus corrente**.
 
 ## 16. Gate de remoção dos históricos
 
 `UXA-015..018` e os dois SVGs associados foram removidos somente após prova de absorção, autorização e cleanup governado — não por conveniência de contagem.
 
-Os gates documentais de classificação do conteúdo material e de ausência de dependência funcional atual estão concluídos. A sequência governada restante é:
+Os gates documentais e físicos desta frente foram concluídos em sequência governada:
 
-1. obter autorização humana separada e explícita para o cleanup físico;
-2. etapa concluída: os quatro documentos `UXA-015..018` e os dois SVGs associados foram removidos e os instrumentos afetados foram reconciliados na mesma transação;
-3. recomputar catálogo, galeria, matriz, associações e contagens físicas sobre a árvore resultante;
-4. validar semanticamente e mecanicamente o novo head exato;
-5. executar nova revisão repo-wide no novo head;
-6. somente depois desses gates decidir o fechamento de `F-006` e o fechamento formal de H/I.
+1. a elegibilidade de cleanup foi provada por absorção do conteúdo material e ausência de dependência funcional atual;
+2. a autorização humana separada para o cleanup físico foi concedida;
+3. os quatro documentos `UXA-015..018` e os dois SVGs associados foram removidos, com reconciliação dos consumidores afetados;
+4. catálogo e contagens foram recomputados sobre a árvore pós-cleanup, resultando em **0 SVGs / 0 associações físicas correntes** e preservação de **34 perfis históricos** como proveniência/semântica;
+5. validações semântica, mecânica e prova pós-delete foram concluídas;
+6. `F-006` foi adjudicado como **RESOLVED**, sem reativar wireframes, Design ou qualquer downstream.
 
 ## 17. Próximo gate válido
 
