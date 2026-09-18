@@ -2,9 +2,9 @@
 id: GKR-ORGCOL-POST313-RECON-001
 title: Reconciliação Transversal Pós-313 — Organizações e Coletivos
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-15
+last_updated: 2026-09-18
 normative: true
 related:
   - GKR-STATE-001
@@ -14,6 +14,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - UXA-014
   - UXA-019
   - UXA-015
@@ -323,7 +324,7 @@ Transições documentadas em pacotes especializados mantêm sua evidência local
 
 Em especial:
 
-- origem/retorno de Planos da Organização preserva o contrato especializado, mas deve ser confrontada com o State Map, os Priority Flows e o futuro wireframe principal quando materializados;
+- origem/retorno de Planos da Organização preserva o contrato especializado, mas deve ser confrontada com o State Map e os Priority Flows canônicos e, futuramente, com a navegação/wireframe principal quando materializados;
 - navegação administrativa local do Coletivo permanece evidência dos pacotes específicos, sem determinar a arquitetura visual final;
 - nenhuma transição especializada autoriza inferir menu global, dashboard, Home autenticada visual ou implementação completa.
 
@@ -337,7 +338,7 @@ Em especial:
 | Arquitetura da Informação autenticada | **definida** | **definida** |
 | Surface Map lógico-documental autenticado | **definido / canônico** | **definido / canônico** |
 | State Map funcional autenticado | **definido / canônico documental** | **definido / canônico documental** |
-| Priority Flows | **pendentes / não materializados** | **pendentes / não materializados** |
+| Priority Flows | **definidos / canônicos documentais** | **definidos / canônicos documentais** |
 | Research de supply / valor | existente | existente |
 | jornada integrada | draft | draft |
 | fluxos especializados | parciais / alguns validados localmente | parciais / vários validados localmente |
@@ -355,14 +356,14 @@ A dívida mecânica registrada originalmente após #313 foi substancialmente abs
 
 | Derivado | Estado em 2026-09-15 |
 |---|---|
-| `GKR-STATE-001` | normalizado; Jobs + IA + Surface Map + State Map reconhecidos |
+| `GKR-STATE-001` | normalizado; Jobs + IA + Surface Map + State Map + Priority Flows reconhecidos |
 | `GKR-JOURNEY-SCREEN-CATALOG-001` | normalizado pós-F-016-A; snapshot histórico preservado e inventário físico corrente = 0 |
 | `GKR-JOURNEY-SCREEN-GALLERY-001` | removido do corpus corrente; proveniência preservada no histórico Git |
 | `GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001` | removido do corpus corrente; 34 perfis históricos preservados como proveniência/semântica |
-| `GKR-JOURNEY-SURFACE-REGISTRY-001` | Surface Map + State Map O/C reconhecidos; maturidade individual não é inferida dos artefatos superseded |
-| Jornada da Organização | Jobs + IA + Surface Map + State Map reconhecidos; Priority Flows/wireframe principal permanecem pendentes |
-| Jornada do Coletivo | Jobs + IA + Surface Map + State Map reconhecidos; Priority Flows/navegação/wireframe principal permanecem pendentes |
-| porta temática O/C | reconciliada com Jobs + IA + Surface Map + State Map |
+| `GKR-JOURNEY-SURFACE-REGISTRY-001` | Surface Map + State Map + Priority Flows O/C reconhecidos; maturidade individual não é inferida dos artefatos superseded |
+| Jornada da Organização | Jobs + IA + Surface Map + State Map + Priority Flows reconhecidos; navegação/wireframe principal permanecem pendentes |
+| Jornada do Coletivo | Jobs + IA + Surface Map + State Map + Priority Flows reconhecidos; navegação/wireframe principal permanecem pendentes |
+| porta temática O/C | reconciliada com Jobs + IA + Surface Map + State Map + Priority Flows |
 
 Esta tabela não encerra `F-006`. Os testes de absorção, referências e função atual estão concluídos, as dependências funcionais ativas foram reconciliadas e a elegibilidade documental de cleanup está comprovada. O cleanup governado foi autorizado, aplicado 6/6 e validado; a proveniência histórica permanece sem dependência física.
 
@@ -430,7 +431,11 @@ AUTHENTICATED LOGICAL SURFACE MAP
 AUTHENTICATED STATE MAP
 → DEFINED / CANONICAL DOCUMENTARY
 
-PRIORITY FLOWS / MATERIALIZED NAVIGATION
+PRIORITY FLOWS
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+
+MATERIALIZED NAVIGATION
 → NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
@@ -447,6 +452,6 @@ A branch pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanec
 
 ## 18. Regra final
 
-> **Arquivo físico não é autoridade vigente. Materialização histórica não é wireframe aprovado. Validação antiga não sobrevive à supersessão do objeto que validava. Arquitetura da Informação atual não reativa o wireframe histórico. Surface Map e State Map canônicos não equivalem a Priority Flows, materialização visual ou wireframe.**
+> **Arquivo físico não é autoridade vigente. Materialização histórica não é wireframe aprovado. Validação antiga não sobrevive à supersessão do objeto que validava. Arquitetura da Informação atual não reativa o wireframe histórico. Surface Map, State Map e Priority Flows canônicos não equivalem a navegação materializada, materialização visual ou wireframe.**
 
 A experiência principal de Organizações e Coletivos somente poderá voltar a ser declarada visualmente materializada/validada quando novos objetos forem definidos, revisados e validados a partir das autoridades atuais e dos gates vigentes.
