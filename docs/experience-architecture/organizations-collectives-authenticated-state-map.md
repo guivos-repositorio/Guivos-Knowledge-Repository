@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-STATE-MAP-001
 title: Organizações e Coletivos — Mapa de Estados da Experiência Autenticada
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-15
+last_updated: 2026-09-18
 normative: false
 maturity: authenticated_state_map_defined_pre_priority_flows_wireframes
 depends_on:
@@ -576,7 +576,7 @@ Este mapa:
 - **não promove** estado de validação de transição;
 - pode apontar uma condição como necessária sem declarar o caminho para alcançá-la;
 - preserva contratos especializados já existentes;
-- deixa novos fluxos para ato governado posterior de Priority Flows.
+- no ato original deixou novos fluxos para ato governado posterior; essa etapa foi posteriormente definida por `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`.
 
 ```text
 ESTADO CONHECIDO
@@ -645,6 +645,10 @@ MAPA DE ESTADOS
 → DEFINED / CANONICAL DOCUMENTARY
 
 FLUXOS PRIORITÁRIOS
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 WIREFRAMES
@@ -661,9 +665,9 @@ A promoção desta autoridade não altera por inferência a maturidade individua
 
 ## 15. Próximo gate após promoção
 
-A promoção deste State Map **não autoriza automaticamente fluxos prioritários**.
+A promoção deste State Map **não autorizou automaticamente fluxos prioritários**. Eles foram definidos somente depois, por ato governado separado em `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`.
 
-O próximo ato governado separado deverá selecionar e definir somente os fluxos prioritários necessários, reconciliando:
+O ato governado posterior de Priority Flows reconciliou:
 
 - estados definidos;
 - `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
@@ -675,10 +679,15 @@ O próximo ato governado separado deverá selecionar e definir somente os fluxos
 - proteção e não retaliação;
 - retorno e interrupção.
 
+O próximo gate corrente após essa definição posterior é **Navigation Materialization**, ainda não autorizado.
+
 Até autorização específica posterior:
 
 ```text
 PRIORITY FLOWS
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 WIREFRAMES
