@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.47.0
+version: 0.48.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 related:
@@ -29,6 +29,8 @@ related:
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
