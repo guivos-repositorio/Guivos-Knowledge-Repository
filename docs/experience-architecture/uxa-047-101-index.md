@@ -37,7 +37,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.37.0
+→ 3.38.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -459,7 +459,7 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.37.0** |
+| Registro do Estado Atual | **3.38.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
