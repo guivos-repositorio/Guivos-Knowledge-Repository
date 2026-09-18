@@ -164,7 +164,7 @@ Guivos Business é produto especializado e não recebe novos IDs neste registro.
 - total de IDs permanece **57**;
 - `PER-010`, `PER-011` e `PER-012` preservam sua materialização e validação local pela D5-C3;
 - `PER-009` permanece contratado e sem SVG dedicado;
-- inventário físico de SVGs permanece **121**, incluindo artefatos históricos superseded;
+- inventário físico corrente de SVGs permanece **0** após F-016-A; o valor histórico de **121** pertence ao snapshot pré-desmaterialização e permanece apenas como proveniência;
 - a antiga conclusão agregada `121 validados / 0 pendentes` **não é mais vigente**;
 - uma nova contagem de wireframes vigentes/validados **não é inferida** sem recomputação governada;
 - `PER-203` permanece validada no recorte de saída externa;
