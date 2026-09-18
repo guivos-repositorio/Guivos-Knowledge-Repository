@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-UXA-018
 title: Matriz de Consolidação Canônica — Adendo da Validação Funcional do Início do Coletivo
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Guivos
-last_updated: 2026-09-12
+last_updated: 2026-09-18
 parent: GKR-CANON-MATRIX-001
 depends_on:
   - UXA-014
@@ -74,4 +74,4 @@ Ele também não reativa `UXA-016` ou `UXA-018`, não restaura sua autoridade e 
 
 No estágio original, o detalhamento das relações entre Organizações e Coletivos era apresentado como etapa seguinte, com Resultados Empresariais em sequência posterior.
 
-Essa ordem permanece apenas como proveniência histórica. No estado vigente, Jobs + Arquitetura da Informação autenticada estão definidos; o Surface Map lógico-documental autenticado está **definido/canônico** em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` está **ACTIVE / DEFINED / CANONICAL DOCUMENTARY**. Os Priority Flows e a navegação materializada permanecem `NOT MATERIALIZED`; os wireframes principais autenticados permanecem `NOT STARTED`; Design/UI/protótipo permanecem `NOT AUTHORIZED`; Product Engineering permanece `PAUSED BEFORE W0-01 / NOT RELEASED`. Nenhuma dessas etapas downstream é autorizada por este adendo.
+Essa ordem permanece apenas como proveniência histórica. No estado vigente, Jobs + Arquitetura da Informação autenticada estão definidos; o Surface Map lógico-documental autenticado está **definido/canônico** em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` está **ACTIVE / DEFINED / CANONICAL DOCUMENTARY**. `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` está **ACTIVE / DEFINED / CANONICAL DOCUMENTARY**; a navegação materializada permanece `NOT MATERIALIZED`; os wireframes principais autenticados permanecem `NOT STARTED`; Design/UI/protótipo permanecem `NOT AUTHORIZED`; Product Engineering permanece `PAUSED BEFORE W0-01 / NOT RELEASED`. Nenhuma dessas etapas downstream é autorizada por este adendo.
