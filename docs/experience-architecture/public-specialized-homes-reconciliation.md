@@ -2,7 +2,7 @@
 id: GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
 title: Homes Públicas dos Produtos Especializados — Autoridade de Reconciliação do Lote F
 status: active
-version: 1.1.7
+version: 1.1.8
 owner: Guivos
 last_updated: 2026-09-18
 parent: GKR-FULL-CORPUS-AUDIT-001
