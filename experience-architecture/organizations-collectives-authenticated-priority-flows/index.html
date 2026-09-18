@@ -1,0 +1,5311 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
+      
+      
+        <meta name="author" content="Guivos">
+      
+      
+      
+        <link rel="prev" href="../organizations-collectives-authenticated-state-map/">
+      
+      
+        <link rel="next" href="../../product-architecture/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Organizações e Coletivos — Fluxos Prioritários da Experiência Autenticada - Guivos Knowledge Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <style>
+    /*
+      A navegação pública do GKR é organizada por grandes assuntos.
+      Somente o primeiro nível recebe maior hierarquia tipográfica;
+      documentos e subgrupos permanecem visualmente secundários.
+    */
+    .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+    .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-top: 0.35rem;
+    }
+
+    .md-nav--primary > .md-nav__list > .md-nav__item--section + .md-nav__item--section {
+      margin-top: 0.2rem;
+    }
+
+    .gkr-page-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 1rem;
+    }
+
+    .gkr-page-print {
+      cursor: pointer;
+    }
+
+    @media print {
+      .gkr-page-actions,
+      .md-header,
+      .md-tabs,
+      .md-sidebar,
+      .md-footer,
+      .md-top,
+      .md-dialog,
+      .md-content__button {
+        display: none !important;
+      }
+
+      .md-main__inner,
+      .md-content,
+      .md-content__inner {
+        margin: 0 !important;
+        max-width: none !important;
+      }
+    }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#organizacoes-e-coletivos-fluxos-prioritarios-da-experiencia-autenticada" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Organizações e Coletivos — Fluxos Prioritários da Experiência Autenticada
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guivos Knowledge Repository
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comece por aqui
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Comece por aqui
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/guia-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--public-canon"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/current-state-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estado Atual do Repositório
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação e Marca
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundação e Marca
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos da Guivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../christian-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamento Cristão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolution-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolução do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-and-digital-assets-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Naming e Ativos Digitais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-public-authority-and-founder-role/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Fundador e Autoridade Pública
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Participantes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Participantes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/person/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/collective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coletivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-current-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Estado Atual
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-authenticated-surface-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Mapa de Superfícies Autenticadas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-authenticated-state-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Mapa de Estados Autenticados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Fluxos Prioritários Autenticados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Fluxos Prioritários Autenticados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-regra-de-autoridade-e-identidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Regra de autoridade e identidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-o-que-torna-um-fluxo-prioritario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. O que torna um fluxo prioritário
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-contrato-minimo-de-qualquer-priority-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Contrato mínimo de qualquer Priority Flow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-espinha-dorsal-transversal-contexto-momento-objeto-proximo-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Espinha dorsal transversal — contexto → Momento → objeto → Próximo Passo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-organizacao-contexto-momento-e-responsabilidade-atual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Organização — Contexto, Momento e responsabilidade atual
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Organização — Contexto, Momento e responsabilidade atual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-organizacao-oportunidade-ou-programa-legitimo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Organização — Oportunidade ou programa legítimo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Organização — Oportunidade ou programa legítimo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-organizacao-responsabilidades-evidencias-e-prestacao-de-contas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Organização — Responsabilidades, evidências e prestação de contas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Organização — Responsabilidades, evidências e prestação de contas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-coletivo-contexto-inicio-e-momento-coletivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Coletivo — Contexto, Início e Momento coletivo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Coletivo — Contexto, Início e Momento coletivo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-coletivo-participacao-solicitacao-vinculo-e-papel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Coletivo — Participação, solicitação, vínculo e papel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Coletivo — Participação, solicitação, vínculo e papel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-coletivo-atividade-oportunidade-e-coordenacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Coletivo — Atividade, oportunidade e coordenação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Coletivo — Atividade, oportunidade e coordenação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-coletivo-governanca-comunicacao-e-protecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Coletivo — Governança, comunicação e proteção
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Coletivo — Governança, comunicação e proteção">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-coletivo-aprendizados-evidencias-e-prestacao-de-contas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Coletivo — Aprendizados, evidências e prestação de contas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Coletivo — Aprendizados, evidências e prestação de contas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-fluxo-bilateral-prioritario-organizacao-coletivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Fluxo bilateral prioritário — Organização ↔ Coletivo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Fluxo bilateral prioritário — Organização ↔ Coletivo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lifecycle-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lifecycle funcional
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alteracao-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alteração material
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estados-alternativos-obrigatorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estados alternativos obrigatórios
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-fluxo-transversal-de-correcao-contestacao-pausa-e-saida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Fluxo transversal de correção, contestação, pausa e saída
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-conexoes-com-fluxos-especializados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Conexões com fluxos especializados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16. Conexões com fluxos especializados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#161-planos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.1 Planos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#162-descoberta-publica-de-oportunidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.2 Descoberta pública de oportunidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#163-intelligence-ads-business-journey-mall-travel-e-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.3 Intelligence, Ads, Business, Journey, Mall, Travel e Media
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-ausencia-bloqueio-e-indisponibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Ausência, bloqueio e indisponibilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-retorno-interrupcao-concorrencia-e-idempotencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Retorno, interrupção, concorrência e idempotência
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-matriz-de-cobertura-dos-jobs-prioritarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Matriz de cobertura dos Jobs prioritários
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19. Matriz de cobertura dos Jobs prioritários">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organização
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coletivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coletivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jobs-bilaterais-organizacao-coletivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jobs bilaterais Organização ↔ Coletivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-matriz-inicial-de-reconciliacao-com-o-transition-registry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Matriz inicial de reconciliação com o Transition Registry
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-decisoes-explicitamente-adiadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Decisões explicitamente adiadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-criterios-de-suficiencia-consumidos-na-promocao-documental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Critérios de suficiência consumidos na promoção documental
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-estado-desta-autoridade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Estado desta autoridade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-proximo-gate-apos-promocao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Próximo gate após promoção
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Produtos e Economia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Produtos e Economia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Econômico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estratégia de Negócio
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiência e Journey
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiência e Journey
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura da Experiência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornadas Integradas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Principal / Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-organizations-collectives-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home de Organizações e Coletivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-specialized-homes-reconciliation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes dos Produtos Especializados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/home-masters-remediation-adjudication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Masters — Adjudicação de Remediação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-mall-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Mall
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-travel-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Travel
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-media-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Media
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-business-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Business
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-ads-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Ads
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-intelligence-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Intelligence
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research e Validação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research e Validação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pesquisa do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-002/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Possibilidades, Oportunidades e Supply
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dados, Intelligence e Tecnologia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dados, Intelligence e Tecnologia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Corporativa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intelligence e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboards, KPIs e Analytics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dashboards, KPIs e Analytics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboards-kpis-analytics-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/kpi-contract-standard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KPI Contract Standard
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-guivos-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-guivos-kpi-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — KPI Registry
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-guivos-business-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos Business — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-organization-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Organização — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-collective-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Coletivo — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-person-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Pessoa — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-ads-opportunity-boost-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Ads / Opportunity Boost — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-007-neo4j-primary-graph-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tecnologia de Grafo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jurídico, Privacidade e Institucional
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jurídico, Privacidade e Institucional
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/institutional-and-legal-architecture-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Institucional e Jurídica
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/operational-privacy-and-legal-truth-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacidade e Verdade Operacional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/fundacao-guivos-institutional-concept-and-legal-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação Guivos — Conceito e Estado Jurídico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/trademark-brazil-signature-filing-authorization-package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proteção Marcária — Autorização de Filing
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GTM e Internacionalização
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GTM e Internacionalização
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go-to-Market
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-007-internationalization-and-territorial-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Internacionalização e Governança Territorial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-008-portugal-pilot-readiness-gates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Piloto Portugal — Gates de Prontidão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/international-operations-and-cross-border-readiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operações Internacionais e Cross-Border
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governança do GKR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governança do GKR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/gkr-full-corpus-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auditoria Integral do Corpus
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-audit-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framework de Auditoria Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Consolidação do Conhecimento Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-001-gkr-as-source-of-truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKR como Fonte Única da Verdade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-006-guivos-knowledge-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Conhecimento da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualizar / Imprimir GKR Completo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-regra-de-autoridade-e-identidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Regra de autoridade e identidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-o-que-torna-um-fluxo-prioritario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. O que torna um fluxo prioritário
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-contrato-minimo-de-qualquer-priority-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Contrato mínimo de qualquer Priority Flow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-espinha-dorsal-transversal-contexto-momento-objeto-proximo-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Espinha dorsal transversal — contexto → Momento → objeto → Próximo Passo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-organizacao-contexto-momento-e-responsabilidade-atual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Organização — Contexto, Momento e responsabilidade atual
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Organização — Contexto, Momento e responsabilidade atual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-organizacao-oportunidade-ou-programa-legitimo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Organização — Oportunidade ou programa legítimo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Organização — Oportunidade ou programa legítimo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-organizacao-responsabilidades-evidencias-e-prestacao-de-contas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Organização — Responsabilidades, evidências e prestação de contas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Organização — Responsabilidades, evidências e prestação de contas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-coletivo-contexto-inicio-e-momento-coletivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Coletivo — Contexto, Início e Momento coletivo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Coletivo — Contexto, Início e Momento coletivo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-coletivo-participacao-solicitacao-vinculo-e-papel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Coletivo — Participação, solicitação, vínculo e papel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Coletivo — Participação, solicitação, vínculo e papel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-coletivo-atividade-oportunidade-e-coordenacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Coletivo — Atividade, oportunidade e coordenação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Coletivo — Atividade, oportunidade e coordenação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-coletivo-governanca-comunicacao-e-protecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Coletivo — Governança, comunicação e proteção
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Coletivo — Governança, comunicação e proteção">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-coletivo-aprendizados-evidencias-e-prestacao-de-contas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Coletivo — Aprendizados, evidências e prestação de contas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Coletivo — Aprendizados, evidências e prestação de contas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-fluxo-bilateral-prioritario-organizacao-coletivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Fluxo bilateral prioritário — Organização ↔ Coletivo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Fluxo bilateral prioritário — Organização ↔ Coletivo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalidade_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lifecycle-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lifecycle funcional
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alteracao-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alteração material
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estados-alternativos-obrigatorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estados alternativos obrigatórios
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-fluxo-transversal-de-correcao-contestacao-pausa-e-saida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Fluxo transversal de correção, contestação, pausa e saída
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-conexoes-com-fluxos-especializados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Conexões com fluxos especializados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16. Conexões com fluxos especializados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#161-planos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.1 Planos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#162-descoberta-publica-de-oportunidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.2 Descoberta pública de oportunidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#163-intelligence-ads-business-journey-mall-travel-e-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.3 Intelligence, Ads, Business, Journey, Mall, Travel e Media
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-ausencia-bloqueio-e-indisponibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Ausência, bloqueio e indisponibilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-retorno-interrupcao-concorrencia-e-idempotencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Retorno, interrupção, concorrência e idempotência
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-matriz-de-cobertura-dos-jobs-prioritarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Matriz de cobertura dos Jobs prioritários
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19. Matriz de cobertura dos Jobs prioritários">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organização
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coletivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coletivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jobs-bilaterais-organizacao-coletivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jobs bilaterais Organização ↔ Coletivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-matriz-inicial-de-reconciliacao-com-o-transition-registry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Matriz inicial de reconciliação com o Transition Registry
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-decisoes-explicitamente-adiadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Decisões explicitamente adiadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-criterios-de-suficiencia-consumidos-na-promocao-documental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Critérios de suficiência consumidos na promoção documental
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-estado-desta-autoridade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Estado desta autoridade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-proximo-gate-apos-promocao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Próximo gate após promoção
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+    <div class="gkr-page-actions">
+      <button
+        type="button"
+        class="md-button gkr-page-print"
+        onclick="window.print()"
+        aria-label="Imprimir somente este assunto"
+      >
+        Imprimir este assunto
+      </button>
+    </div>
+  
+  
+                  
+
+
+  
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/experience-architecture/organizations-collectives-authenticated-priority-flows.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="organizacoes-e-coletivos-fluxos-prioritarios-da-experiencia-autenticada">Organizações e Coletivos — Fluxos Prioritários da Experiência Autenticada<a class="headerlink" href="#organizacoes-e-coletivos-fluxos-prioritarios-da-experiencia-autenticada" title="Permanent link">&para;</a></h1>
+<h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento é o <strong>draft documental dos fluxos prioritários</strong> da experiência autenticada de Organização e Coletivo.</p>
+<p>Ele parte das autoridades já definidas de atores, autoridade, jobs, Arquitetura da Informação, Surface Map e State Map para responder:</p>
+<blockquote>
+<p><strong>Quais continuidades funcionais ponta a ponta precisam ser compreensíveis e governadas antes de qualquer materialização de navegação, wireframe, UI ou implementação?</strong></p>
+</blockquote>
+<p>Um Priority Flow organiza uma continuidade funcional legítima entre contexto, objeto, estado, autoridade, ação e retorno. Ele não é sequência visual de telas.</p>
+<div class="highlight"><pre><span></span><code>ATORES / AUTORIDADE / JOBS
++
+ARQUITETURA DA INFORMAÇÃO
++
+SURFACE MAP
++
+STATE MAP
++
+TRANSIÇÕES JÁ REGISTRADAS
+↓
+PRIORITY FLOWS
+
+PRIORITY FLOW
+≠ MENU
+≠ SITEMAP
+≠ ROTA / URL
+≠ SEQUÊNCIA FIXA DE TELAS
+≠ WIREFRAME
+≠ UI
+≠ RBAC TÉCNICO
+≠ IMPLEMENTAÇÃO
+</code></pre></div>
+<p>Esta autoridade foi promovida em ato governado separado após <code>DRAFT SUFFICIENCY = PASS / 13 OF 13</code>. A promoção é exclusivamente documental e não materializa navegação, wireframes, UI ou implementação.</p>
+<h2 id="2-regra-de-autoridade-e-identidade">2. Regra de autoridade e identidade<a class="headerlink" href="#2-regra-de-autoridade-e-identidade" title="Permanent link">&para;</a></h2>
+<p>Os fluxos desta autoridade devem reutilizar as identidades já existentes.</p>
+<p>Regras obrigatórias:</p>
+<ol>
+<li><code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> permanece autoridade dos IDs estáveis de superfícies;</li>
+<li><code>GKR-JOURNEY-TRANSITION-REGISTRY-001</code> permanece autoridade dos IDs e maturidades de transições;</li>
+<li>este documento <strong>não cria novos <code>GKR-TRN-*</code></strong>;</li>
+<li>este documento <strong>não promove</strong> a maturidade de transições existentes;</li>
+<li>relação conceitual entre domínios não é convertida silenciosamente em transição;</li>
+<li>lacuna de identidade permanece lacuna explícita;</li>
+<li><code>UXA-019</code> continua restrito a relações Organização ↔ Coletivo;</li>
+<li>nenhuma sequência aqui transporta <code>ORG-004..006</code> para Organização–Organização;</li>
+<li>nenhuma sequência aqui transporta <code>COL-008</code> para Coletivo–Coletivo.</li>
+</ol>
+<p>Rótulos de seções deste documento são nomes funcionais de fluxos, não IDs estáveis de registry.</p>
+<h2 id="3-o-que-torna-um-fluxo-prioritario">3. O que torna um fluxo prioritário<a class="headerlink" href="#3-o-que-torna-um-fluxo-prioritario" title="Permanent link">&para;</a></h2>
+<p>Um fluxo é prioritário quando cumpre cumulativamente os seguintes critérios:</p>
+<ul>
+<li>sustenta um job estrutural, de núcleo operacional, governança/proteção ou prestação de contas;</li>
+<li>cruza estados materiais que alteram o que pode ser legitimamente compreendido ou realizado;</li>
+<li>exige preservação explícita de contexto e autoridade;</li>
+<li>possui impacto direto sobre continuidade, responsabilidade, proteção ou autonomia;</li>
+<li>precisa acomodar ausência, bloqueio, contestação, indisponibilidade ou interrupção;</li>
+<li>não pode ser substituído por uma capacidade comercial especializada;</li>
+<li>é necessário para que a futura navegação principal seja definida sem inventar tela primeiro.</li>
+</ul>
+<p>Fluxos especializados já existentes podem ser conectados aos Priority Flows, mas não são reclassificados como núcleo principal apenas porque possuem materialização ou maturidade maior.</p>
+<h2 id="4-contrato-minimo-de-qualquer-priority-flow">4. Contrato mínimo de qualquer Priority Flow<a class="headerlink" href="#4-contrato-minimo-de-qualquer-priority-flow" title="Permanent link">&para;</a></h2>
+<p>Todo fluxo prioritário precisa declarar ou preservar:</p>
+<ol>
+<li><strong>contexto ativo</strong> — Organização ou Coletivo, unidade quando aplicável e escopo;</li>
+<li><strong>ator e autoridade</strong> — quem pode compreender, propor, aprovar, executar, contestar ou encerrar;</li>
+<li><strong>objeto canônico</strong> — qual objeto possui o estado e a fonte de verdade;</li>
+<li><strong>estado de entrada</strong> — condição material que justifica a continuidade;</li>
+<li><strong>ação legítima</strong> — ação permitida no limite da autoridade;</li>
+<li><strong>condições alternativas</strong> — ausência, bloqueio, contestação, risco, indisponibilidade e proteção;</li>
+<li><strong>efeitos proibidos</strong> — o que navegar ou agir não pode inferir;</li>
+<li><strong>retorno/interrupção</strong> — como sair, cancelar ou retomar sem mutação silenciosa;</li>
+<li><strong>reversibilidade proporcional</strong> — quando a ação deve poder ser revista, pausada ou contestada;</li>
+<li><strong>proveniência e evidência</strong> — o que sustenta afirmações e decisões;</li>
+<li><strong>relação com o Transition Registry</strong> — transições existentes, lacunas ou ausência deliberada de ID;</li>
+<li><strong>fronteira de autoridade</strong> — quando a Guivos ou o participante deixa de controlar o próximo estágio.</li>
+</ol>
+<h2 id="5-espinha-dorsal-transversal-contexto-momento-objeto-proximo-passo">5. Espinha dorsal transversal — contexto → Momento → objeto → Próximo Passo<a class="headerlink" href="#5-espinha-dorsal-transversal-contexto-momento-objeto-proximo-passo" title="Permanent link">&para;</a></h2>
+<p>Organização e Coletivo compartilham uma continuidade estrutural, sem exigir paridade artificial de navegação:</p>
+<div class="highlight"><pre><span></span><code>PESSOA AUTENTICADA
+↓
+CONTEXTO ATIVO
+↓
+AUTORIDADE REVALIDADA
+↓
+MOMENTO / ATENÇÃO MATERIAL
+↓
+OBJETO CANÔNICO QUE ORIGINA A ATENÇÃO
+↓
+COMPREENSÃO DO ESTADO
+↓
+PRÓXIMO PASSO POSSÍVEL
+↓
+AUTORIDADE NECESSÁRIA
+↓
+AÇÃO OU DECISÃO LEGÍTIMA
+↓
+OBJETO CANÔNICO ATUALIZADO
+↓
+SÍNTESE RECONSULTADA
+</code></pre></div>
+<p>Essa espinha dorsal <strong>não declara transições de navegação</strong> entre Visão Geral/Início e todos os demais domínios.</p>
+<div class="highlight"><pre><span></span><code>ATENÇÃO
+→ VISTA DERIVADA
+
+PRÓXIMO PASSO
+→ ORIENTAÇÃO CONTEXTUAL
+
+ATENÇÃO
+≠ NOVO OBJETO
+
+PRÓXIMO PASSO
+≠ AUTORIDADE
+≠ OBRIGAÇÃO AUTOMÁTICA
+</code></pre></div>
+<p>Mudança de contexto exige revalidação de autoridade e não transporta silenciosamente:</p>
+<ul>
+<li>permissões;</li>
+<li>decisão pendente;</li>
+<li>informação protegida;</li>
+<li>filtros;</li>
+<li>contraparte;</li>
+<li>dados pessoais;</li>
+<li>ação iniciada em outro contexto.</li>
+</ul>
+<h2 id="6-organizacao-contexto-momento-e-responsabilidade-atual">6. Organização — Contexto, Momento e responsabilidade atual<a class="headerlink" href="#6-organizacao-contexto-momento-e-responsabilidade-atual" title="Permanent link">&para;</a></h2>
+<h3 id="finalidade">Finalidade<a class="headerlink" href="#finalidade" title="Permanent link">&para;</a></h3>
+<p>Suportar principalmente <code>ORG-J01</code>, <code>ORG-J02</code>, <code>ORG-J03</code> e <code>ORG-J09</code>.</p>
+<p>A continuidade funcional esperada é:</p>
+<div class="highlight"><pre><span></span><code>ORGANIZAÇÃO / UNIDADE ATIVA
+↓
+PAPEL E AUTORIDADE
+↓
+VISÃO GERAL / GKR-SURF-ORG-001
+↓
+MOMENTO INSTITUCIONAL
+↓
+ATENÇÃO MATERIAL IDENTIFICADA
+↓
+OBJETO DE ORIGEM
+↓
+ESTADO + EVIDÊNCIA / INCERTEZA
+↓
+AÇÃO POSSÍVEL OU NECESSIDADE DE OUTRA AUTORIDADE
+</code></pre></div>
+<p>Estados mínimos que precisam ser suportados:</p>
+<ul>
+<li>contexto válido;</li>
+<li>contexto incompleto;</li>
+<li>autoridade válida;</li>
+<li>autoridade insuficiente;</li>
+<li>aprovação adicional necessária;</li>
+<li>responsável ausente;</li>
+<li>operação regular;</li>
+<li>atenção necessária;</li>
+<li>atenção urgente;</li>
+<li>bloqueado;</li>
+<li>informação desconhecida, inferida, contestada ou desatualizada;</li>
+<li>capacidade limitada ou atingida;</li>
+<li>proteção requerida.</li>
+</ul>
+<p>Nenhum novo <code>GKR-TRN-*</code> é declarado para esta espinha principal no draft.</p>
+<h2 id="7-organizacao-oportunidade-ou-programa-legitimo">7. Organização — Oportunidade ou programa legítimo<a class="headerlink" href="#7-organizacao-oportunidade-ou-programa-legitimo" title="Permanent link">&para;</a></h2>
+<h3 id="finalidade_1">Finalidade<a class="headerlink" href="#finalidade_1" title="Permanent link">&para;</a></h3>
+<p>Suportar <code>ORG-J04</code> sem reconstruir o fluxo especializado já existente.</p>
+<p>Continuidade principal:</p>
+<div class="highlight"><pre><span></span><code>CONTEXTO INSTITUCIONAL VÁLIDO
+↓
+NECESSIDADE / OBJETIVO / PROGRAMA
+↓
+DADOS E CONDIÇÕES MATERIAIS
+↓
+GKR-SURF-ORG-002 — CADASTRO
+↓
+REVISÃO / CORREÇÃO / AUTORIDADE APLICÁVEL
+↓
+GKR-SURF-ORG-003 — APROVADA / ATIVA
+↓
+ELEGÍVEL À DESCOBERTA
+↓
+ACOMPANHAMENTO DE RESPONSABILIDADES / EVIDÊNCIAS
+↓
+REVISÃO, PAUSA, EXPIRAÇÃO OU ENCERRAMENTO
+</code></pre></div>
+<p>Transições existentes preservadas:</p>
+<ul>
+<li><code>GKR-TRN-201</code> — <code>ORG-001 → ORG-002</code> — parcial;</li>
+<li><code>GKR-TRN-202</code> — <code>ORG-002 → ORG-003</code> — localmente validada;</li>
+<li><code>GKR-TRN-203</code> — <code>ORG-003 → PER-201</code> — integralmente validada no recorte de ativação → descoberta.</li>
+</ul>
+<p>A maturidade acima <strong>não é alterada</strong> por este documento.</p>
+<p>Preservações:</p>
+<ul>
+<li>publicação ≠ distribuição;</li>
+<li>distribuição ≠ relevância;</li>
+<li>relevância ≠ impacto;</li>
+<li>patrocínio ≠ prioridade orgânica;</li>
+<li>ausência de evidência ≠ ausência de resultado;</li>
+<li>pausa/expiração/encerramento prevalecem sobre representações anteriores.</li>
+</ul>
+<h2 id="8-organizacao-responsabilidades-evidencias-e-prestacao-de-contas">8. Organização — Responsabilidades, evidências e prestação de contas<a class="headerlink" href="#8-organizacao-responsabilidades-evidencias-e-prestacao-de-contas" title="Permanent link">&para;</a></h2>
+<h3 id="finalidade_2">Finalidade<a class="headerlink" href="#finalidade_2" title="Permanent link">&para;</a></h3>
+<p>Suportar <code>ORG-J06</code> e a parte correspondente de <code>ORG-J08</code>.</p>
+<p>Superfície principal conhecida:</p>
+<ul>
+<li><code>GKR-SURF-ORG-007</code> — resultados e evidências institucionais — maturidade indeterminada.</li>
+</ul>
+<p>Continuidade funcional:</p>
+<div class="highlight"><pre><span></span><code>RESPONSABILIDADE / COMPROMISSO
+↓
+ESTADO DE EXECUÇÃO
+↓
+EVIDÊNCIA DISPONÍVEL / AUSENTE / INSUFICIENTE / CONFLITANTE
+↓
+INTERPRETAÇÃO PROPORCIONAL
+↓
+RESULTADO QUE PODE SER AFIRMADO
+↓
+LIMITAÇÕES / FATORES EXTERNOS
+↓
+REVISÃO / CORREÇÃO / CONTESTAÇÃO
+</code></pre></div>
+<p>Invariantes:</p>
+<div class="highlight"><pre><span></span><code>ATIVIDADE
+≠ RESULTADO
+
+RESULTADO
+≠ IMPACTO COMPROVADO
+
+CONFIRMED
+≠ IMPACT PROVEN
+
+INFERRED
+≠ FACT
+
+UNKNOWN
+≠ ZERO
+
+NO EVIDENCE
+≠ NO RESULT
+
+CORRELATION
+≠ CAUSATION
+</code></pre></div>
+<p>Nenhuma transição nova é inferida para <code>ORG-007</code>.</p>
+<h2 id="9-coletivo-contexto-inicio-e-momento-coletivo">9. Coletivo — Contexto, Início e Momento coletivo<a class="headerlink" href="#9-coletivo-contexto-inicio-e-momento-coletivo" title="Permanent link">&para;</a></h2>
+<h3 id="finalidade_3">Finalidade<a class="headerlink" href="#finalidade_3" title="Permanent link">&para;</a></h3>
+<p>Suportar <code>COL-J01</code>, <code>COL-J02</code> e <code>COL-J11</code>.</p>
+<p>Continuidade:</p>
+<div class="highlight"><pre><span></span><code>COLETIVO ATIVO
+↓
+PROPÓSITO + PAPEL + REGRA DE GOVERNANÇA
+↓
+GKR-SURF-COL-002 — INÍCIO / CONTEXTO DO RESPONSÁVEL
+↓
+MOMENTO COLETIVO
+↓
+ATENÇÃO MATERIAL
+↓
+OBJETO DE ORIGEM
+↓
+ESTADO + AUTORIDADE / DECISÃO COLETIVA NECESSÁRIA
+↓
+PRÓXIMO PASSO JUSTIFICÁVEL
+</code></pre></div>
+<p>A existência de <code>COL-002</code> e dos contratos especializados associados não promove o antigo material administrativo a wireframe principal autenticado final.</p>
+<p>Estados mínimos:</p>
+<ul>
+<li>contexto válido/incompleto;</li>
+<li>autoridade válida/insuficiente;</li>
+<li>decisão coletiva necessária;</li>
+<li>atenção necessária/urgente;</li>
+<li>bloqueio;</li>
+<li>proteção requerida;</li>
+<li>contestação;</li>
+<li>capacidade limitada;</li>
+<li>informação material desconhecida.</li>
+</ul>
+<p>Nenhuma nova transição principal é declarada.</p>
+<h2 id="10-coletivo-participacao-solicitacao-vinculo-e-papel">10. Coletivo — Participação, solicitação, vínculo e papel<a class="headerlink" href="#10-coletivo-participacao-solicitacao-vinculo-e-papel" title="Permanent link">&para;</a></h2>
+<h3 id="finalidade_4">Finalidade<a class="headerlink" href="#finalidade_4" title="Permanent link">&para;</a></h3>
+<p>Suportar <code>COL-J04</code> integrando o fluxo especializado existente sem transformar a perspectiva da Pessoa em estado operacional do Coletivo.</p>
+<p>Continuidade bilateral já conhecida:</p>
+<div class="highlight"><pre><span></span><code>SOLICITAÇÃO DA PESSOA
+↓
+MESMO OBJETO LÓGICO DISPONIBILIZADO AO RESPONSÁVEL
+↓
+GKR-SURF-COL-003 — GESTÃO DE SOLICITAÇÕES
+├── PEDIR INFORMAÇÃO ADICIONAL
+├── APROVAR
+└── RECUSAR
+↓
+VÍNCULO DA PESSOA QUANDO APROVADO
+↓
+GKR-SURF-COL-004 — PARTICIPANTES E VÍNCULOS
+[COL-003 → COL-004 = CONTINUIDADE LÓGICA; TRANSIÇÃO ESTÁVEL NÃO DECLARADA]
+↓ GKR-TRN-113 QUANDO HOUVER COMUNICAÇÃO OFICIAL A PARTICIPANTES AUTORIZADOS
+GKR-SURF-COL-005 — COMUNICAÇÃO OFICIAL QUANDO APLICÁVEL À CONTINUIDADE DA PARTICIPAÇÃO
+</code></pre></div>
+<p>Transições preservadas:</p>
+<ul>
+<li><code>GKR-TRN-105</code> — <code>PER-105 → COL-003</code>;</li>
+<li><code>GKR-TRN-106</code> — <code>COL-003 → PER-105</code>;</li>
+<li><code>GKR-TRN-107</code> — <code>PER-105 → COL-003</code>;</li>
+<li><code>GKR-TRN-108</code> — <code>COL-003 → PER-106</code>;</li>
+<li><code>GKR-TRN-109</code> — <code>COL-003 → PER-105</code>;</li>
+<li><code>GKR-TRN-112</code> — <code>COL-002 → COL-003</code>.</li>
+</ul>
+<p>Essas transições mantêm sua maturidade própria. A continuidade pós-aprovação <code>COL-003 → COL-004</code> é reconhecida pelo Surface Map, mas <strong>não possui transição estável declarada</strong>. Quando a continuidade exige comunicação oficial a participantes autorizados, <code>GKR-TRN-113 — COL-004 → COL-005</code> já existe como transição <strong>contratada</strong> e mantém essa maturidade sem promoção neste draft.</p>
+<p>Preservações:</p>
+<div class="highlight"><pre><span></span><code>PERTENCER
+≠ REPRESENTAR
+≠ MODERAR
+≠ APROVAR
+≠ ADMINISTRAR
+
+APROVAR VÍNCULO
+≠ CONCEDER AUTORIDADE OPERACIONAL IRRESTRITA
+</code></pre></div>
+<p>A perspectiva da Pessoa continua governada pelas superfícies <code>PER-*</code> correspondentes.</p>
+<h2 id="11-coletivo-atividade-oportunidade-e-coordenacao">11. Coletivo — Atividade, oportunidade e coordenação<a class="headerlink" href="#11-coletivo-atividade-oportunidade-e-coordenacao" title="Permanent link">&para;</a></h2>
+<h3 id="finalidade_5">Finalidade<a class="headerlink" href="#finalidade_5" title="Permanent link">&para;</a></h3>
+<p>Suportar <code>COL-J03</code> e <code>COL-J06</code>.</p>
+<p>Superfície principal conhecida:</p>
+<ul>
+<li><code>GKR-SURF-COL-006</code> — atividades e oportunidades.</li>
+</ul>
+<p>Continuidade funcional:</p>
+<div class="highlight"><pre><span></span><code>PROPÓSITO / NECESSIDADE COLETIVA
+↓
+ATIVIDADE / OPORTUNIDADE
+↓
+AUTORIDADE OU DECISÃO APLICÁVEL
+↓
+RECURSOS / CAPACIDADE / RESPONSÁVEL QUANDO LEGÍTIMO
+↓
+EXECUÇÃO
+↓
+ESTADO / BLOQUEIO / PAUSA
+↓
+APRENDIZADO / EVIDÊNCIA
+↓
+REVISÃO OU ENCERRAMENTO
+</code></pre></div>
+<p>Este draft não cria transições estáveis para preencher lacunas entre essas condições.</p>
+<p>Preservações:</p>
+<ul>
+<li>necessidade coletiva ≠ obrigação individual;</li>
+<li>participação ≠ impacto;</li>
+<li>popularidade ≠ relevância;</li>
+<li>volume ≠ valor;</li>
+<li>plano pago ≠ prioridade;</li>
+<li>baixa participação ≠ fracasso sem contexto/evidência.</li>
+</ul>
+<h2 id="12-coletivo-governanca-comunicacao-e-protecao">12. Coletivo — Governança, comunicação e proteção<a class="headerlink" href="#12-coletivo-governanca-comunicacao-e-protecao" title="Permanent link">&para;</a></h2>
+<h3 id="finalidade_6">Finalidade<a class="headerlink" href="#finalidade_6" title="Permanent link">&para;</a></h3>
+<p>Suportar <code>COL-J05</code> e <code>COL-J10</code>.</p>
+<p>Superfícies relacionadas:</p>
+<ul>
+<li><code>GKR-SURF-COL-005</code>;</li>
+<li><code>GKR-SURF-COL-006</code>;</li>
+<li><code>GKR-SURF-COL-007</code>.</li>
+</ul>
+<p>Continuidade funcional:</p>
+<div class="highlight"><pre><span></span><code>OBJETO / DECISÃO / CONDIÇÃO MATERIAL
+↓
+REGRA DE GOVERNANÇA APLICÁVEL
+↓
+AUTORIDADE / INSTÂNCIA LEGÍTIMA
+↓
+CONSULTA OU DECISÃO QUANDO APLICÁVEL
+↓
+COMUNICAÇÃO OFICIAL PROPORCIONAL
+↓
+EXECUÇÃO / PROTEÇÃO / MODERAÇÃO
+↓
+REVISÃO / CONTESTAÇÃO / NÃO RETALIAÇÃO
+</code></pre></div>
+<p>Transição existente relevante:</p>
+<ul>
+<li><code>GKR-TRN-113</code> — <code>COL-004 → COL-005</code> — contratada.</li>
+</ul>
+<p>Este documento não promove <code>TRN-113</code> e não declara transições adicionais.</p>
+<p>Estados alternativos obrigatórios incluem:</p>
+<ul>
+<li>decisão contestada;</li>
+<li>conflito de governança;</li>
+<li>proteção requerida;</li>
+<li>conteúdo/informação protegida;</li>
+<li>revisão necessária;</li>
+<li>suspensão proporcional;</li>
+<li>responsável ausente;</li>
+<li>autoridade insuficiente.</li>
+</ul>
+<h2 id="13-coletivo-aprendizados-evidencias-e-prestacao-de-contas">13. Coletivo — Aprendizados, evidências e prestação de contas<a class="headerlink" href="#13-coletivo-aprendizados-evidencias-e-prestacao-de-contas" title="Permanent link">&para;</a></h2>
+<h3 id="finalidade_7">Finalidade<a class="headerlink" href="#finalidade_7" title="Permanent link">&para;</a></h3>
+<p>Suportar <code>COL-J08</code>.</p>
+<p>O Surface Map reconhece o domínio lógico <strong>Aprendizados e Evidências</strong>, mas não existe ID exclusivo dedicado no registro corrente.</p>
+<p>Essa ausência permanece explícita.</p>
+<p>Continuidade funcional:</p>
+<div class="highlight"><pre><span></span><code>ATIVIDADE / AÇÃO / EXPERIÊNCIA COLETIVA
+↓
+REGISTRO LEGÍTIMO
+↓
+EVIDÊNCIA / LIMITAÇÃO
+↓
+APRENDIZADO
+↓
+CONTRIBUIÇÃO QUE PODE SER SUSTENTADA
+↓
+RESULTADO AINDA NÃO CONFIRMADO QUANDO APLICÁVEL
+↓
+REVISÃO / CONTESTAÇÃO / ATUALIZAÇÃO
+</code></pre></div>
+<p>O draft não cria superfície ou transição para eliminar essa lacuna.</p>
+<h2 id="14-fluxo-bilateral-prioritario-organizacao-coletivo">14. Fluxo bilateral prioritário — Organização ↔ Coletivo<a class="headerlink" href="#14-fluxo-bilateral-prioritario-organizacao-coletivo" title="Permanent link">&para;</a></h2>
+<h3 id="finalidade_8">Finalidade<a class="headerlink" href="#finalidade_8" title="Permanent link">&para;</a></h3>
+<p>Este é o fluxo compartilhado governado por <code>UXA-019</code> e pelos jobs <code>BIL-J01..06</code>.</p>
+<p>Ele se aplica <strong>somente a Organização ↔ Coletivo</strong>.</p>
+<p>Superfícies e transições estáveis existentes:</p>
+<div class="highlight"><pre><span></span><code>GKR-SURF-ORG-004
+↓ GKR-TRN-206
+GKR-SURF-COL-008
+↓ GKR-TRN-207
+GKR-SURF-ORG-005
+↓ GKR-TRN-208
+GKR-SURF-ORG-006
+↓ GKR-TRN-209
+GKR-SURF-ORG-006
+</code></pre></div>
+<p>Maturidade corrente:</p>
+<ul>
+<li><code>GKR-TRN-206..209</code> = contratadas;</li>
+<li>este draft não promove nenhuma delas.</li>
+</ul>
+<h3 id="lifecycle-funcional">Lifecycle funcional<a class="headerlink" href="#lifecycle-funcional" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>RASCUNHO
+↓
+PROPOSTA
+↓
+AVALIAÇÃO BILATERAL
+↓
+NEGOCIAÇÃO
+↓
+AGUARDANDO INFORMAÇÃO QUANDO APLICÁVEL
+↓
+AGUARDANDO CONSENTIMENTO/APROVAÇÃO QUANDO APLICÁVEL
+↓
+APROVADA PELAS AUTORIDADES
+↓
+[ATIVA SOMENTE QUANDO AS CONDIÇÕES GOVERNADAS DE ATIVAÇÃO ESTIVEREM SATISFEITAS]
+↓
+ATIVA
+↓
+EM REVISÃO
+├── RENOVADA OU AJUSTADA
+├── ALTERAÇÃO MATERIAL PENDENTE
+├── PAUSADA
+├── BLOQUEADA POR PROTEÇÃO OU PRIVACIDADE
+├── CONTESTADA
+├── SUSPENSA PREVENTIVAMENTE
+├── EXPIRADA
+├── ENCERRADA
+└── ENCERRADA COM RESPONSABILIDADES REMANESCENTES
+</code></pre></div>
+<p>A sequência acima organiza condições funcionais. Ela não declara uma transição estável para cada mudança de estado.</p>
+<div class="highlight"><pre><span></span><code>APROVADA PELAS AUTORIDADES
+≠ EFEITO TÉCNICO AUTOMÁTICO
+≠ ATIVAÇÃO AUTOMÁTICA
+
+ATIVA
+→ SOMENTE O ESCOPO LEGITIMAMENTE APROVADO PODE SER EXECUTADO
+</code></pre></div>
+<h3 id="alteracao-material">Alteração material<a class="headerlink" href="#alteracao-material" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ALTERAÇÃO MATERIAL PROPOSTA
+↓
+NOVA AVALIAÇÃO BILATERAL
+↓
+NOVA APROVAÇÃO LEGÍTIMA
+↓
+NOVO ESCOPO EFETIVO
+
+ATÉ A NOVA APROVAÇÃO:
+ESCOPO ANTERIOR APROVADO
+→ CONTINUA SENDO O ÚNICO ESCOPO EFETIVO
+</code></pre></div>
+<h3 id="estados-alternativos-obrigatorios">Estados alternativos obrigatórios<a class="headerlink" href="#estados-alternativos-obrigatorios" title="Permanent link">&para;</a></h3>
+<p>O fluxo precisa preservar:</p>
+<ul>
+<li>proposta recusada;</li>
+<li>autoridade insuficiente;</li>
+<li>aprovação divergente entre as partes;</li>
+<li>relação ativa sem atenção material;</li>
+<li>compromisso atrasado;</li>
+<li>recurso indisponível;</li>
+<li>dado ou consentimento ausente;</li>
+<li>conflito de interesse;</li>
+<li>uso de marca contestado;</li>
+<li>relação comercial não declarada;</li>
+<li>risco de perda de autonomia;</li>
+<li>denúncia em análise;</li>
+<li>suspensão urgente;</li>
+<li>renovação pendente;</li>
+<li>encerramento solicitado por uma das partes;</li>
+<li>baixa conectividade;</li>
+<li>operação internacional;</li>
+<li>informação sensível protegida.</li>
+</ul>
+<h2 id="15-fluxo-transversal-de-correcao-contestacao-pausa-e-saida">15. Fluxo transversal de correção, contestação, pausa e saída<a class="headerlink" href="#15-fluxo-transversal-de-correcao-contestacao-pausa-e-saida" title="Permanent link">&para;</a></h2>
+<p>Correção e saída não são telas isoladas nem exceções tardias.</p>
+<p>Esse fluxo transversal suporta <code>ORG-J08</code>, <code>COL-J10</code> e <code>BIL-J06</code>.</p>
+<div class="highlight"><pre><span></span><code>INFORMAÇÃO / DECISÃO / RELAÇÃO / EVIDÊNCIA
+↓
+PROBLEMA, MUDANÇA OU CONTESTAÇÃO IDENTIFICADA
+↓
+AUTORIDADE E FONTE REAVALIADAS
+↓
+CORREÇÃO / REVISÃO / CONTESTAÇÃO
+├── CONTINUIDADE AJUSTADA
+├── PAUSA
+├── PROTEÇÃO / SUSPENSÃO
+└── ENCERRAMENTO
+↓
+RESPONSABILIDADES REMANESCENTES PRESERVADAS
+</code></pre></div>
+<p>Invariantes:</p>
+<ul>
+<li>contestação não pode ser apagada por mudança de interface;</li>
+<li>pausa ≠ encerramento;</li>
+<li>encerramento ≠ apagamento automático;</li>
+<li>proteção ≠ punição;</li>
+<li>denúncia ≠ culpa comprovada;</li>
+<li>revisão ≠ aprovação automática;</li>
+<li>reversão não pode apagar trilha legítima de decisão;</li>
+<li>não retaliação deve ser preservada quando aplicável.</li>
+</ul>
+<h2 id="16-conexoes-com-fluxos-especializados">16. Conexões com fluxos especializados<a class="headerlink" href="#16-conexoes-com-fluxos-especializados" title="Permanent link">&para;</a></h2>
+<h3 id="161-planos">16.1 Planos<a class="headerlink" href="#161-planos" title="Permanent link">&para;</a></h3>
+<p>Planos permanecem capacidade especializada/contextual.</p>
+<p>Transições existentes:</p>
+<ul>
+<li>Coletivo: <code>GKR-TRN-417/418</code> entre <code>COL-002</code> e <code>COL-301</code>;</li>
+<li>Organização: <code>GKR-TRN-427/428</code> entre <code>ORG-001</code> e <code>ORG-301</code>.</li>
+</ul>
+<p>Regras:</p>
+<div class="highlight"><pre><span></span><code>ABRIR PLANOS
+≠ SELECIONAR PLANO
+≠ CONTRATAR
+≠ COBRAR
+≠ ALTERAR ENTITLEMENT
+
+RETORNAR DE PLANOS
+≠ CANCELAR
+≠ ALTERAR CAPACIDADE
+</code></pre></div>
+<p>As famílias <code>TRN-411..416</code> e <code>TRN-421..426</code> preservam maturidades próprias e não são promovidas por esta frente.</p>
+<h3 id="162-descoberta-publica-de-oportunidades">16.2 Descoberta pública de oportunidades<a class="headerlink" href="#162-descoberta-publica-de-oportunidades" title="Permanent link">&para;</a></h3>
+<p><code>GKR-TRN-203</code> conecta oportunidade institucional ativa à elegibilidade de descoberta pela Pessoa.</p>
+<p>As transições <code>TRN-204</code>, <code>TRN-210</code>, <code>TRN-211</code> e <code>TRN-205</code> pertencem à continuidade da Pessoa até <code>BND-001</code>.</p>
+<p>A experiência autenticada da Organização pode acompanhar o estado autorizado da oportunidade, mas não absorve a jornada pessoal nem recebe autoridade sobre relevância individual.</p>
+<h3 id="163-intelligence-ads-business-journey-mall-travel-e-media">16.3 Intelligence, Ads, Business, Journey, Mall, Travel e Media<a class="headerlink" href="#163-intelligence-ads-business-journey-mall-travel-e-media" title="Permanent link">&para;</a></h3>
+<p>Produtos Especializados podem apoiar ou receber handoffs quando existir autoridade própria, mas não se tornam o eixo dos Priority Flows.</p>
+<div class="highlight"><pre><span></span><code>ORGANIZAÇÃO
+≠ GUIVOS BUSINESS
+
+COLETIVO
+≠ PRODUTO ESPECIALIZADO
+
+INTELLIGENCE
+→ PODE APOIAR COMPREENSÃO
+
+INTELLIGENCE
+≠ AUTORIDADE DE DECISÃO
+
+ADS / PATROCÍNIO
+≠ RELEVÂNCIA ORGÂNICA
+</code></pre></div>
+<h2 id="17-ausencia-bloqueio-e-indisponibilidade">17. Ausência, bloqueio e indisponibilidade<a class="headerlink" href="#17-ausencia-bloqueio-e-indisponibilidade" title="Permanent link">&para;</a></h2>
+<p>Nenhum Priority Flow pode ser definido apenas pelo happy path.</p>
+<p>Cobertura mínima:</p>
+<ul>
+<li>informação material incompleta;</li>
+<li>fonte indisponível;</li>
+<li>autoridade insuficiente;</li>
+<li>aprovação adicional necessária;</li>
+<li>responsável ausente;</li>
+<li>contraparte aguardada;</li>
+<li>recurso indisponível;</li>
+<li>capacidade atingida;</li>
+<li>dependência externa indisponível;</li>
+<li>operação degradada;</li>
+<li>baixa conectividade;</li>
+<li>proteção/privacidade bloqueando ação;</li>
+<li>decisão ou evidência contestada;</li>
+<li>conflito de governança;</li>
+<li>alteração material pendente;</li>
+<li>risco urgente;</li>
+<li>expiração;</li>
+<li>encerramento com responsabilidades remanescentes.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>AUSÊNCIA DE DADO
+≠ ZERO
+
+INDISPONIBILIDADE TÉCNICA
+≠ FALHA DO PARTICIPANTE
+
+BLOQUEIO
+≠ RECUSA
+
+AGUARDANDO
+≠ APROVADO
+
+CONTESTADO
+≠ INVÁLIDO POR DEFINIÇÃO
+</code></pre></div>
+<h2 id="18-retorno-interrupcao-concorrencia-e-idempotencia">18. Retorno, interrupção, concorrência e idempotência<a class="headerlink" href="#18-retorno-interrupcao-concorrencia-e-idempotencia" title="Permanent link">&para;</a></h2>
+<p>Materialização futura dos fluxos deverá preservar:</p>
+<ul>
+<li>retorno ao contexto de origem quando legítimo;</li>
+<li>cancelamento sem mutação silenciosa;</li>
+<li>reconsulta do objeto canônico após retorno;</li>
+<li>proteção contra duplicação por retry;</li>
+<li>revalidação de autoridade após intervalo ou mudança de contexto;</li>
+<li>tratamento explícito de atualização concorrente;</li>
+<li>não transporte de formulário/decisão incompleta entre contextos;</li>
+<li>fallback proporcional quando destino ou dependência estiver indisponível.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>NAVEGAR
+≠ CONFIRMAR
+
+VOLTAR
+≠ DESFAZER AUTOMATICAMENTE
+
+RECARREGAR / RETRY
+≠ DUPLICAR EFEITO
+
+MUDANÇA DE CONTEXTO
+→ REVALIDA AUTORIDADE
+</code></pre></div>
+<h2 id="19-matriz-de-cobertura-dos-jobs-prioritarios">19. Matriz de cobertura dos Jobs prioritários<a class="headerlink" href="#19-matriz-de-cobertura-dos-jobs-prioritarios" title="Permanent link">&para;</a></h2>
+<p>Esta matriz demonstra cobertura funcional sem transformar ausência de autoridade em falsa completude.</p>
+<h3 id="organizacao">Organização<a class="headerlink" href="#organizacao" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Job</th>
+<th>Cobertura neste draft</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ORG-J01</code> — contexto institucional</td>
+<td>§6</td>
+<td>coberto no limite documental</td>
+</tr>
+<tr>
+<td><code>ORG-J02</code> — Momento e atenção material</td>
+<td>§6</td>
+<td>coberto no limite documental</td>
+</tr>
+<tr>
+<td><code>ORG-J03</code> — identidade, capacidade, condições e responsabilidades</td>
+<td>§6 + §15</td>
+<td>coberto funcionalmente; sem nova transição</td>
+</tr>
+<tr>
+<td><code>ORG-J04</code> — oportunidades e programas</td>
+<td>§7</td>
+<td>coberto com reutilização de <code>TRN-201..203</code></td>
+</tr>
+<tr>
+<td><code>ORG-J05</code> — relações com Coletivos e Organizações</td>
+<td>§14</td>
+<td><strong>parcial</strong>: Organização↔Coletivo coberto por <code>UXA-019</code>; Organização↔Organização permanece lacuna explícita</td>
+</tr>
+<tr>
+<td><code>ORG-J06</code> — compromissos, evidências e resultados</td>
+<td>§8 + §14</td>
+<td>coberto no limite documental; sem fabricar impacto</td>
+</tr>
+<tr>
+<td><code>ORG-J07</code> — capacidade comercial e Planos</td>
+<td>§16.1</td>
+<td>conexão especializada preservada; não é eixo principal</td>
+</tr>
+<tr>
+<td><code>ORG-J08</code> — corrigir, contestar, revisar, pausar ou encerrar</td>
+<td>§14 + §15</td>
+<td>coberto transversalmente</td>
+</tr>
+<tr>
+<td><code>ORG-J09</code> — Próximo Passo e autoridade</td>
+<td>§5 + §6</td>
+<td>coberto como orientação contextual, não obrigação</td>
+</tr>
+</tbody>
+</table>
+<h3 id="coletivo">Coletivo<a class="headerlink" href="#coletivo" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Job</th>
+<th>Cobertura neste draft</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>COL-J01</code> — contexto coletivo</td>
+<td>§9</td>
+<td>coberto no limite documental</td>
+</tr>
+<tr>
+<td><code>COL-J02</code> — Momento e atenção material</td>
+<td>§9</td>
+<td>coberto no limite documental</td>
+</tr>
+<tr>
+<td><code>COL-J03</code> — atividades, ações, recursos e necessidades</td>
+<td>§11</td>
+<td>coberto funcionalmente; lacunas de transição preservadas</td>
+</tr>
+<tr>
+<td><code>COL-J04</code> — participação, solicitações, papéis e vínculos</td>
+<td>§10</td>
+<td>coberto com fluxos existentes e lacuna pós-aprovação explícita</td>
+</tr>
+<tr>
+<td><code>COL-J05</code> — decisões, comunicação, moderação e proteção</td>
+<td>§12</td>
+<td>coberto no limite documental</td>
+</tr>
+<tr>
+<td><code>COL-J06</code> — oportunidades ou atividades legítimas</td>
+<td>§11</td>
+<td>coberto funcionalmente</td>
+</tr>
+<tr>
+<td><code>COL-J07</code> — relações com Organizações e outros Coletivos</td>
+<td>§14</td>
+<td><strong>parcial</strong>: Organização↔Coletivo coberto por <code>UXA-019</code>; Coletivo↔Coletivo permanece lacuna explícita</td>
+</tr>
+<tr>
+<td><code>COL-J08</code> — avanço, aprendizado e evidências</td>
+<td>§13</td>
+<td>coberto no limite documental; domínio sem ID exclusivo preservado</td>
+</tr>
+<tr>
+<td><code>COL-J09</code> — capacidade e Planos</td>
+<td>§16.1</td>
+<td>conexão especializada preservada; não é eixo principal</td>
+</tr>
+<tr>
+<td><code>COL-J10</code> — corrigir, contestar, revisar, pausar ou encerrar</td>
+<td>§14 + §15</td>
+<td>coberto transversalmente</td>
+</tr>
+<tr>
+<td><code>COL-J11</code> — Próximo Passo e decisão/autoridade</td>
+<td>§5 + §9</td>
+<td>coberto como orientação justificável</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jobs-bilaterais-organizacao-coletivo">Jobs bilaterais Organização ↔ Coletivo<a class="headerlink" href="#jobs-bilaterais-organizacao-coletivo" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Job</th>
+<th>Cobertura neste draft</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BIL-J01</code> — propor relação com finalidade/escopo</td>
+<td>§14</td>
+<td>coberto</td>
+</tr>
+<tr>
+<td><code>BIL-J02</code> — avaliar autoridade, capacidade, riscos e condições</td>
+<td>§14</td>
+<td>coberto</td>
+</tr>
+<tr>
+<td><code>BIL-J03</code> — negociar alterações materiais</td>
+<td>§14</td>
+<td>coberto com reavaliação e nova aprovação</td>
+</tr>
+<tr>
+<td><code>BIL-J04</code> — aprovar o mesmo escopo pelas duas autoridades</td>
+<td>§14</td>
+<td>coberto; aprovação ≠ ativação automática</td>
+</tr>
+<tr>
+<td><code>BIL-J05</code> — acompanhar compromissos e evidências</td>
+<td>§14 + §8/§13 conforme a perspectiva</td>
+<td>coberto no limite de evidência permitida</td>
+</tr>
+<tr>
+<td><code>BIL-J06</code> — revisar, contestar, pausar ou encerrar</td>
+<td>§14 + §15</td>
+<td>coberto</td>
+</tr>
+</tbody>
+</table>
+<p>Consequentemente:</p>
+<div class="highlight"><pre><span></span><code>COBERTURA DE JOB
+≠ COMPLETUDE DE REGISTRY
+
+ORG-J05
+→ ORGANIZAÇÃO↔COLETIVO COBERTO
+→ ORGANIZAÇÃO↔ORGANIZAÇÃO = GAP EXPLÍCITO
+
+COL-J07
+→ COLETIVO↔ORGANIZAÇÃO COBERTO
+→ COLETIVO↔COLETIVO = GAP EXPLÍCITO
+</code></pre></div>
+<h2 id="20-matriz-inicial-de-reconciliacao-com-o-transition-registry">20. Matriz inicial de reconciliação com o Transition Registry<a class="headerlink" href="#20-matriz-inicial-de-reconciliacao-com-o-transition-registry" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Fluxo funcional</th>
+<th>Superfícies / objetos principais</th>
+<th>Transições conhecidas</th>
+<th>Tratamento neste draft</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organização — contexto e Momento</td>
+<td><code>ORG-001</code> + objetos referenciados</td>
+<td>nenhuma espinha principal estável declarada</td>
+<td>lacuna preservada; não criar ID</td>
+</tr>
+<tr>
+<td>Organização — oportunidade/programa</td>
+<td><code>ORG-002..003</code></td>
+<td><code>TRN-201..203</code></td>
+<td>reutilizar; sem promoção</td>
+</tr>
+<tr>
+<td>Organização — evidência/prestação de contas</td>
+<td><code>ORG-007</code></td>
+<td>sem transição dedicada conhecida</td>
+<td>lacuna preservada</td>
+</tr>
+<tr>
+<td>Coletivo — contexto e Momento</td>
+<td><code>COL-002</code> + objetos referenciados</td>
+<td>nenhuma espinha principal estável declarada</td>
+<td>lacuna preservada</td>
+</tr>
+<tr>
+<td>Coletivo — participação</td>
+<td><code>COL-003..005</code> + <code>PER-105/106</code></td>
+<td><code>TRN-105..109</code>, <code>TRN-112</code>; <code>COL-003 → COL-004</code> sem ID; <code>TRN-113</code> para <code>COL-004 → COL-005</code> no recorte de comunicação</td>
+<td>reutilizar o existente; preservar somente a lacuna real</td>
+</tr>
+<tr>
+<td>Coletivo — atividade/oportunidade</td>
+<td><code>COL-006</code></td>
+<td>sem cadeia estável completa conhecida</td>
+<td>lacuna preservada</td>
+</tr>
+<tr>
+<td>Coletivo — governança/comunicação/proteção</td>
+<td><code>COL-005..007</code></td>
+<td><code>TRN-113</code> no recorte conhecido</td>
+<td>reutilizar; sem promoção</td>
+</tr>
+<tr>
+<td>Coletivo — aprendizados/evidências</td>
+<td>domínio lógico sem ID exclusivo</td>
+<td>sem transição dedicada conhecida</td>
+<td>lacuna preservada</td>
+</tr>
+<tr>
+<td>Relação Organização ↔ Coletivo</td>
+<td><code>ORG-004..006</code>, <code>COL-008</code></td>
+<td><code>TRN-206..209</code></td>
+<td>reutilizar como contratadas; sem promoção</td>
+</tr>
+<tr>
+<td>Planos do Coletivo</td>
+<td><code>COL-002 ↔ COL-301</code></td>
+<td><code>TRN-417/418</code></td>
+<td>conexão especializada já validada</td>
+</tr>
+<tr>
+<td>Planos da Organização</td>
+<td><code>ORG-001 ↔ ORG-301</code></td>
+<td><code>TRN-427/428</code></td>
+<td>conexão especializada já validada</td>
+</tr>
+</tbody>
+</table>
+<p>A matriz não certifica completude do Transition Registry e não cria maturidade nova.</p>
+<h2 id="21-decisoes-explicitamente-adiadas">21. Decisões explicitamente adiadas<a class="headerlink" href="#21-decisoes-explicitamente-adiadas" title="Permanent link">&para;</a></h2>
+<p>Este draft não define:</p>
+<ul>
+<li>sitemap final;</li>
+<li>menu;</li>
+<li>ordem visual de navegação;</li>
+<li>quantidade de telas;</li>
+<li>URLs ou rotas;</li>
+<li>novo <code>GKR-SURF-*</code>;</li>
+<li>novo <code>GKR-TRN-*</code>;</li>
+<li>wireframe;</li>
+<li>layout;</li>
+<li>componente;</li>
+<li>copy final;</li>
+<li>desktop/mobile;</li>
+<li>responsive behavior;</li>
+<li>notificação final;</li>
+<li>busca/filtro final;</li>
+<li>RBAC técnico;</li>
+<li>Design System;</li>
+<li>UI;</li>
+<li>protótipo;</li>
+<li>implementação;</li>
+<li>integração técnica;</li>
+<li>produção;</li>
+<li>testes com participantes reais.</li>
+</ul>
+<p>Também não inicia <code>UXA-102/V5</code> nem Product Engineering.</p>
+<h2 id="22-criterios-de-suficiencia-consumidos-na-promocao-documental">22. Critérios de suficiência consumidos na promoção documental<a class="headerlink" href="#22-criterios-de-suficiencia-consumidos-na-promocao-documental" title="Permanent link">&para;</a></h2>
+<p>A promoção documental desta autoridade consumiu cumulativamente os seguintes critérios:</p>
+<ol>
+<li>os fluxos selecionados cobrirem os jobs estruturais e de núcleo sem transformar capacidades especializadas em eixo principal;</li>
+<li>cada fluxo explicitar contexto, autoridade, objeto, estados relevantes, alternativas, retorno e fronteira;</li>
+<li>o fluxo bilateral cobrir lifecycle, alteração material, contestação, proteção e encerramento com responsabilidades remanescentes;</li>
+<li>as perspectivas de Pessoa, Organização e Coletivo permanecerem separadas;</li>
+<li>todas as referências a <code>GKR-TRN-*</code> preservarem origem, destino e maturidade vigentes;</li>
+<li>nenhuma lacuna seja preenchida por ID inventado;</li>
+<li>Organização–Organização e Coletivo–Coletivo permaneçam lacunas explícitas onde não houver autoridade própria;</li>
+<li>Planos e Produtos Especializados permaneçam especializados/contextuais;</li>
+<li>ausência, bloqueio, contestação e indisponibilidade tenham tratamento explícito;</li>
+<li>reversibilidade, interrupção, concorrência e idempotência sejam preservadas;</li>
+<li>evidência e impacto permaneçam semanticamente separados;</li>
+<li>navegação materializada, wireframes, Design/UI e Product Engineering continuem fechados;</li>
+<li>validação semântica, mecânica e revisão independente concluam sem finding material no HEAD candidato.</li>
+</ol>
+<h2 id="23-estado-desta-autoridade">23. Estado desta autoridade<a class="headerlink" href="#23-estado-desta-autoridade" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
+→ ACTIVE v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
+
+SURFACE MAP
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+STATE MAP
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+PRIORITY FLOWS
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+NAVIGATION MATERIALIZATION
+→ NOT MATERIALIZED / NOT RELEASED
+
+AUTHENTICATED WIREFRAMES
+→ NOT STARTED / NOT RELEASED
+
+DESIGN / UI / PROTOTYPE
+→ NOT AUTHORIZED
+
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
+</code></pre></div>
+<h2 id="24-proximo-gate-apos-promocao">24. Próximo gate após promoção<a class="headerlink" href="#24-proximo-gate-apos-promocao" title="Permanent link">&para;</a></h2>
+<p>O próximo gate governado elegível é <strong>Navigation Materialization</strong>, ainda não autorizado.</p>
+<p>A promoção documental desta autoridade não autoriza automaticamente:</p>
+<ul>
+<li>navegação materializada;</li>
+<li>wireframes;</li>
+<li>Design/UI;</li>
+<li>protótipo;</li>
+<li>implementação;</li>
+<li>Product Engineering.</li>
+</ul>
+<p>Qualquer materialização de navegação deverá ocorrer por ato governado separado, preservando os IDs/maturidades dos registries, as lacunas explícitas, autoridade, reversibilidade, proteção e os limites desta autoridade.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>

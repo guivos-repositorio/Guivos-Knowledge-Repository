@@ -1006,6 +1006,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/organizations-collectives-authenticated-priority-flows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Fluxos Prioritários Autenticados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3212,8 +3247,8 @@
 <p>A reconciliação pós-PR #313/#314 revelou lacunas da experiência principal autenticada de Organização e Coletivo que haviam sido ocultadas por artefatos prematuros. Posteriormente, <code>GKR-UX-ORGCOL-AUTH-JOBS-001</code> fechou documentalmente atores, autoridades e jobs, <code>GKR-UX-ORGCOL-AUTH-IA-001</code> definiu a Arquitetura da Informação, <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0</code> definiu o mapa lógico-documental canônico de superfícies e <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0</code> definiu o mapa funcional de estados autenticados.</p>
 <p>As lacunas principais vigentes são, portanto:</p>
 <ul>
-<li>Priority Flows + wireframe principal autenticado da Organização;</li>
-<li>Priority Flows + wireframe principal autenticado do Coletivo.</li>
+<li>Navigation Materialization + wireframe principal autenticado da Organização;</li>
+<li>Navigation Materialization + wireframe principal autenticado do Coletivo.</li>
 </ul>
 <p><code>UXA-015..018</code> permanecem históricos <code>superseded</code>. Estados sensíveis/alternativos específicos, V5/UXA-102, D6, D7, cobrança real e demais frentes continuam separadas.</p>
 <div class="highlight"><pre><span></span><code>JOBS + IA AUTENTICADA
@@ -3225,7 +3260,7 @@ MAPA LÓGICO DE SUPERFÍCIES
 MAPA FUNCIONAL DE ESTADOS
 → DEFINED / CANONICAL DOCUMENTARY
 
-PRIORITY FLOWS + WIREFRAMES PRINCIPAIS
+NAVIGATION MATERIALIZATION + WIREFRAMES PRINCIPAIS
 → PENDENTES / NÃO MATERIALIZADOS
 </code></pre></div>
 <h2 id="2-gates-pessoais">2. Gates pessoais<a class="headerlink" href="#2-gates-pessoais" title="Permanent link">&para;</a></h2>
@@ -3464,11 +3499,11 @@ PRIORITY FLOWS + WIREFRAMES PRINCIPAIS
 </thead>
 <tbody>
 <tr>
-<td>Priority Flows / wireframe principal autenticado do Coletivo</td>
+<td>Navigation Materialization / wireframe principal autenticado do Coletivo</td>
 <td>COL-001/COL-002 e áreas internas</td>
 <td><strong>wireframe pendente; UXA-016/018 superseded; UXA-086/087 apenas evidência administrativa local</strong></td>
-<td>fundamentos + jobs + IA + Surface Map + State Map existentes</td>
-<td>Priority Flows → wireframe → validação</td>
+<td>fundamentos + jobs + IA + Surface Map + State Map + Priority Flows existentes</td>
+<td>Navigation Materialization → wireframe → validação</td>
 </tr>
 <tr>
 <td>Visão administrativa local → gestão de solicitações</td>
@@ -3514,7 +3549,7 @@ PRIORITY FLOWS + WIREFRAMES PRINCIPAIS
 </tr>
 </tbody>
 </table>
-<p>A Arquitetura da Informação do Coletivo está definida em <code>GKR-UX-ORGCOL-AUTH-IA-001</code>, o Surface Map lógico-documental em <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001</code> e o State Map funcional em <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001</code>; nenhum deles materializa Priority Flows ou a experiência visual principal.</p>
+<p>A Arquitetura da Informação do Coletivo está definida em <code>GKR-UX-ORGCOL-AUTH-IA-001</code>, o Surface Map lógico-documental em <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001</code> e o State Map funcional em <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001</code>; essas autoridades, somadas aos Priority Flows canônicos, não materializam navegação nem a experiência visual principal.</p>
 <h2 id="7-fila-por-dependencia">7. Fila por dependência<a class="headerlink" href="#7-fila-por-dependencia" title="Permanent link">&para;</a></h2>
 <p>A fila não autoriza execução automática.</p>
 <table>
@@ -3554,7 +3589,7 @@ PRIORITY FLOWS + WIREFRAMES PRINCIPAIS
 <td>Coletivo autenticado</td>
 <td>COL-001/COL-002; COL-004 a 008</td>
 <td><strong>wireframe principal pendente</strong></td>
-<td><strong>Jobs + IA + Surface Map + State Map concluídos documentalmente</strong> → Priority Flows → wireframe → validação</td>
+<td><strong>Jobs + IA + Surface Map + State Map + Priority Flows concluídos documentalmente</strong> → Navigation Materialization → wireframe → validação</td>
 </tr>
 <tr>
 <td>UX principal</td>
@@ -3575,14 +3610,14 @@ PRIORITY FLOWS + WIREFRAMES PRINCIPAIS
 <td>Organização–Coletivo</td>
 <td>ORG-004 a 006; COL-008</td>
 <td>sem SVGs</td>
-<td>Priority Flows/materialização e validação bilateral</td>
+<td>Navigation Materialization e validação bilateral</td>
 </tr>
 <tr>
 <td>institucional</td>
 <td>matriz completa</td>
 <td>ORG-001; ORG-007</td>
 <td>cobertura parcial; ORG-001 histórico não é baseline</td>
-<td>Priority Flows e validação futura sob autoridade vigente</td>
+<td>Navigation Materialization e validação futura sob autoridade vigente</td>
 </tr>
 <tr>
 <td>Conta</td>
@@ -3693,15 +3728,15 @@ PRIORITY FLOWS + WIREFRAMES PRINCIPAIS
 </tr>
 <tr>
 <td style="text-align: right;">O/C — próximo gate</td>
-<td>Priority Flows</td>
-<td><strong>não materializados</strong></td>
+<td>Navigation Materialization</td>
+<td><strong>não materializada</strong></td>
 <td>autorização governada separada</td>
 </tr>
 </tbody>
 </table>
 <h2 id="9-proximo-nivel-logico">9. Próximo nível lógico<a class="headerlink" href="#9-proximo-nivel-logico" title="Permanent link">&para;</a></h2>
 <p>A D5-C4B encerra a lacuna específica dos seis handoffs pessoais. Para Organização e Coletivo, fundamentos, atores/autoridades/jobs, Arquitetura da Informação, mapa lógico de superfícies e mapa funcional de estados já estão definidos documentalmente.</p>
-<p>A lacuna seguinte começa nos <strong>Priority Flows</strong>, mas sua existência como próximo nível lógico não os autoriza automaticamente.</p>
+<p>Os <strong>Priority Flows</strong> foram definidos documentalmente. A lacuna seguinte começa em <strong>Navigation Materialization</strong>, cuja posição como próximo nível lógico não a autoriza automaticamente.</p>
 <p>Isso não inicia automaticamente V5/UXA-102, D6, D7, Design, Product Engineering ou qualquer outra lacuna.</p>
 <p>Quando essa frente for separadamente autorizada após os gates aplicáveis, a continuidade será:</p>
 <div class="highlight"><pre><span></span><code>Priority Flows

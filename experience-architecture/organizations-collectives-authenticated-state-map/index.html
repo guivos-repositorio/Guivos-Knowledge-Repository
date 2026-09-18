@@ -16,7 +16,7 @@
         <link rel="prev" href="../organizations-collectives-authenticated-surface-map/">
       
       
-        <link rel="next" href="../../product-architecture/">
+        <link rel="next" href="../organizations-collectives-authenticated-priority-flows/">
       
       
         
@@ -1431,6 +1431,41 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-authenticated-priority-flows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Fluxos Prioritários Autenticados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
     </li>
   
 
@@ -4378,7 +4413,7 @@ CORRELAÇÃO
 <li><strong>não promove</strong> estado de validação de transição;</li>
 <li>pode apontar uma condição como necessária sem declarar o caminho para alcançá-la;</li>
 <li>preserva contratos especializados já existentes;</li>
-<li>deixa novos fluxos para ato governado posterior de Priority Flows.</li>
+<li>no ato original deixou novos fluxos para ato governado posterior; essa etapa foi posteriormente definida por <code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0</code>.</li>
 </ul>
 <div class="highlight"><pre><span></span><code>ESTADO CONHECIDO
 ≠ TRANSIÇÃO DEFINIDA
@@ -4436,6 +4471,10 @@ MAPA DE ESTADOS
 → DEFINED / CANONICAL DOCUMENTARY
 
 FLUXOS PRIORITÁRIOS
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 WIREFRAMES
@@ -4449,8 +4488,8 @@ PRODUCT ENGINEERING
 </code></pre></div>
 <p>A promoção desta autoridade não altera por inferência a maturidade individual dos <code>GKR-SURF-*</code> nem dos <code>GKR-TRN-*</code>.</p>
 <h2 id="15-proximo-gate-apos-promocao">15. Próximo gate após promoção<a class="headerlink" href="#15-proximo-gate-apos-promocao" title="Permanent link">&para;</a></h2>
-<p>A promoção deste State Map <strong>não autoriza automaticamente fluxos prioritários</strong>.</p>
-<p>O próximo ato governado separado deverá selecionar e definir somente os fluxos prioritários necessários, reconciliando:</p>
+<p>A promoção deste State Map <strong>não autorizou automaticamente fluxos prioritários</strong>. Eles foram definidos somente depois, por ato governado separado em <code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0</code>.</p>
+<p>O ato governado posterior de Priority Flows reconciliou:</p>
 <ul>
 <li>estados definidos;</li>
 <li><code>GKR-JOURNEY-TRANSITION-REGISTRY-001</code>;</li>
@@ -4462,8 +4501,12 @@ PRODUCT ENGINEERING
 <li>proteção e não retaliação;</li>
 <li>retorno e interrupção.</li>
 </ul>
+<p>O próximo gate corrente após essa definição posterior é <strong>Navigation Materialization</strong>, ainda não autorizado.</p>
 <p>Até autorização específica posterior:</p>
 <div class="highlight"><pre><span></span><code>PRIORITY FLOWS
+→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
+
+NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
 WIREFRAMES
