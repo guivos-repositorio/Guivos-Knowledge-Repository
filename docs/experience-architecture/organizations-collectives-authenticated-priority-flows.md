@@ -560,9 +560,13 @@ AVALIAÇÃO BILATERAL
 ↓
 NEGOCIAÇÃO
 ↓
-AGUARDANDO INFORMAÇÃO / APROVAÇÃO QUANDO APLICÁVEL
+AGUARDANDO INFORMAÇÃO QUANDO APLICÁVEL
+↓
+AGUARDANDO CONSENTIMENTO / APROVAÇÃO QUANDO APLICÁVEL
 ↓
 APROVADA PELAS AUTORIDADES
+↓
+[ATIVA SOMENTE QUANDO AS CONDIÇÕES GOVERNADAS DE ATIVAÇÃO ESTIVEREM SATISFEITAS]
 ↓
 ATIVA
 ↓
@@ -570,6 +574,7 @@ REVISÃO
 ├── RENOVADA / AJUSTADA
 ├── ALTERAÇÃO MATERIAL PENDENTE
 ├── PAUSADA
+├── BLOQUEADA POR PROTEÇÃO OU PRIVACIDADE
 ├── CONTESTADA
 ├── SUSPENSA PREVENTIVAMENTE
 ├── EXPIRADA
@@ -578,6 +583,15 @@ REVISÃO
 ```
 
 A sequência acima organiza condições funcionais. Ela não declara uma transição estável para cada mudança de estado.
+
+```text
+APROVADA PELAS AUTORIDADES
+≠ EFEITO TÉCNICO AUTOMÁTICO
+≠ ATIVAÇÃO AUTOMÁTICA
+
+ATIVA
+→ SOMENTE O ESCOPO LEGITIMAMENTE APROVADO PODE SER EXECUTADO
+```
 
 ### Alteração material
 
@@ -602,6 +616,7 @@ O fluxo precisa preservar:
 - proposta recusada;
 - autoridade insuficiente;
 - aprovação divergente;
+- relação ativa sem atenção material;
 - compromisso atrasado;
 - recurso indisponível;
 - dado ou consentimento ausente;
