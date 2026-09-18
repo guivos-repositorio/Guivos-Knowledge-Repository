@@ -562,7 +562,7 @@ NEGOCIAÇÃO
 ↓
 AGUARDANDO INFORMAÇÃO QUANDO APLICÁVEL
 ↓
-AGUARDANDO CONSENTIMENTO / APROVAÇÃO QUANDO APLICÁVEL
+AGUARDANDO CONSENTIMENTO/APROVAÇÃO QUANDO APLICÁVEL
 ↓
 APROVADA PELAS AUTORIDADES
 ↓
@@ -570,8 +570,8 @@ APROVADA PELAS AUTORIDADES
 ↓
 ATIVA
 ↓
-REVISÃO
-├── RENOVADA / AJUSTADA
+EM REVISÃO
+├── RENOVADA OU AJUSTADA
 ├── ALTERAÇÃO MATERIAL PENDENTE
 ├── PAUSADA
 ├── BLOQUEADA POR PROTEÇÃO OU PRIVACIDADE
@@ -615,7 +615,7 @@ O fluxo precisa preservar:
 
 - proposta recusada;
 - autoridade insuficiente;
-- aprovação divergente;
+- aprovação divergente entre as partes;
 - relação ativa sem atenção material;
 - compromisso atrasado;
 - recurso indisponível;
@@ -627,7 +627,7 @@ O fluxo precisa preservar:
 - denúncia em análise;
 - suspensão urgente;
 - renovação pendente;
-- encerramento solicitado unilateralmente;
+- encerramento solicitado por uma das partes;
 - baixa conectividade;
 - operação internacional;
 - informação sensível protegida.
