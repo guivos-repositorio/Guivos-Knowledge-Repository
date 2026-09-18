@@ -157,8 +157,11 @@ Visão Geral
 → estados funcionais cobertos pelo State Map
 → composição visual / wireframe principal autenticado pendentes
 
-Priority Flows / navegação materializada
-→ pendentes / não materializados
+Priority Flows
+→ definidos / canônicos documentais
+
+Navegação materializada
+→ pendente / não materializada
 ```
 
 O antigo SVG `antigo ativo visual F-006 de ORG-001` é histórico `superseded` e permanece fisicamente enquanto não houver autorização humana separada e explícita para seu cleanup; `F-006` permanece aberto durante eventual remoção e os gates pós-cleanup.
@@ -201,8 +204,11 @@ Início
 → estados funcionais cobertos pelo State Map
 → composição visual / wireframe principal autenticado pendentes
 
-Priority Flows / navegação materializada
-→ pendentes / não materializados
+Priority Flows
+→ definidos / canônicos documentais
+
+Navegação materializada
+→ pendente / não materializada
 ```
 
 O antigo SVG `antigo ativo visual F-006 de COL-001` é histórico `superseded` e não pode ser usado como baseline da experiência autenticada final.
@@ -345,8 +351,12 @@ SURFACE MAP LÓGICO-DOCUMENTAL O/C
 STATE MAP FUNCIONAL O/C
 → DEFINIDO / CANÔNICO DOCUMENTAL
 
-PRIORITY FLOWS / NAVEGAÇÃO MATERIALIZADA
-→ PENDENTES / NÃO MATERIALIZADOS
+PRIORITY FLOWS
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ DEFINIDOS / CANÔNICOS DOCUMENTAIS
+
+NAVEGAÇÃO MATERIALIZADA
+→ PENDENTE / NÃO MATERIALIZADA
 
 WIREFRAMES PRINCIPAIS
 → PENDENTES / DESIGN AUTHORITY
