@@ -103,7 +103,7 @@ Nenhuma etapa autoriza automaticamente a seguinte. Para O/C, Priority Flows já 
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita preservada |
 | Jornada da Pessoa | `draft` | V4 UXA-101; UXA-102 não iniciada |
 | Jornada do Coletivo | `draft` | Jobs + IA + Surface Map + State Map + Priority Flows definidos documentalmente; navegação/wireframe principal pendentes |
-| Jornada da Organização | `draft` | Jobs + IA + Surface Map + State Map definidos documentalmente; Priority Flows/wireframe principal pendentes |
+| Jornada da Organização | `draft` | Jobs + IA + Surface Map + State Map + Priority Flows definidos documentalmente; navegação/wireframe principal pendentes |
 | catálogo integrado | `active` 0.33.0 | **0 SVGs físicos após F-016-A**; contratos textuais preservados; maturidade agregada não inferida |
 | registro de superfícies | `active` 0.26.0 | 57 IDs documentais; Surface Map O/C reconciliado sem promoção individual |
 | registro de transições | `active` | 66 transições documentais; State Map não promove maturidade individual |
