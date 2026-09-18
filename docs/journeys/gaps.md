@@ -125,7 +125,7 @@ CONTRATO DE ORIGEM/RETORNO DE PLANOS
 
 | Lacuna | IDs relacionados | Estado visual | Estado funcional | Continuidade remanescente |
 |---|---|---|---|---|
-| Priority Flows / wireframe principal autenticado do Coletivo | COL-001/COL-002 e áreas internas | **wireframe pendente; UXA-016/018 superseded; UXA-086/087 apenas evidência administrativa local** | fundamentos + jobs + IA + Surface Map + State Map existentes | Priority Flows → wireframe → validação |
+| Navigation Materialization / wireframe principal autenticado do Coletivo | COL-001/COL-002 e áreas internas | **wireframe pendente; UXA-016/018 superseded; UXA-086/087 apenas evidência administrativa local** | fundamentos + jobs + IA + Surface Map + State Map + Priority Flows existentes | Navigation Materialization → wireframe → validação |
 | Visão administrativa local → gestão de solicitações | COL-002; TRN-112; COL-003 | origem local + fluxo especializado materializado | TRN-112 preserva maturidade documental própria | integração final deverá ser revista contra as autoridades canônicas e o futuro wireframe principal |
 | solicitação ↔ operação responsável | PER-105; TRN-105/106/107/109; COL-003 | materializados | integralmente validada | aprovação fechada em TRN-108 |
 | continuidade pós-aprovação | PER-105; TRN-108; PER-106 | materializados | integralmente validada | nenhuma nesta ligação |
