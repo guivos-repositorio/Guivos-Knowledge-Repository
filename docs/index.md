@@ -17,7 +17,7 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 A leitura de estado continua subordinada ao [Registro do Estado Atual](project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.38.0
+GKR-STATE-001 3.39.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -54,6 +54,8 @@ O/C AUTHENTICATED STATE MAP → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
 O/C PRIORITY FLOWS → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
 O/C NAVIGATION → NOT MATERIALIZED / SEPARATE AUTHORIZATION REQUIRED
 O/C AUTHENTICATED WIREFRAMES → NOT STARTED
+GKR GLOBAL UPDATE → CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
+FUNCTIONAL ADVANCEMENT → PAUSED BY HUMAN INSTRUCTION
 NEXT AUTOMATIC EXECUTION → NONE
 SOURCE LOCK → NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
 UXA-102 / V5 → NOT_STARTED
@@ -120,6 +122,11 @@ Entradas:
 - [Organização](journeys/organization.md)
 - [Coletivo](journeys/collective.md)
 - [Organizações e Coletivos — Estado Atual](experience-architecture/organizations-collectives-current-state.md)
+- [O/C — Atores, Autoridades e Jobs](experience-architecture/organizations-collectives-authenticated-actors-authorities-and-jobs.md)
+- [O/C — Arquitetura da Informação](experience-architecture/organizations-collectives-authenticated-information-architecture.md)
+- [O/C — Mapa de Superfícies Autenticadas](experience-architecture/organizations-collectives-authenticated-surface-map.md)
+- [O/C — Mapa de Estados Autenticados](experience-architecture/organizations-collectives-authenticated-state-map.md)
+- [O/C — Fluxos Prioritários Autenticados](experience-architecture/organizations-collectives-authenticated-priority-flows.md)
 
 ```text
 PARTICIPANTE ESTRUTURAL
@@ -316,7 +323,7 @@ PROTOTYPE AUTHORIZATION
 PROTOTYPE VALIDATION PRE-REVIEW
 ≠ CURRENT POST-REVIEW CONCLUSION
 
-O/C SURFACE MAP + STATE MAP DEFINED
+O/C SURFACE MAP + STATE MAP + PRIORITY FLOWS DEFINED
 ≠ MATERIALIZED NAVIGATION
 ≠ WIREFRAME
 ≠ UI
