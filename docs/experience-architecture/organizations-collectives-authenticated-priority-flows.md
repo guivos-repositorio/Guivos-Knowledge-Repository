@@ -373,8 +373,9 @@ GKR-SURF-COL-003 — GESTÃO DE SOLICITAÇÕES
 ↓
 VÍNCULO DA PESSOA QUANDO APROVADO
 ↓
-GKR-SURF-COL-004 — PARTICIPANTES E VÍNCULOS [CONTINUIDADE LÓGICA; TRANSIÇÃO ESTÁVEL NÃO DECLARADA]
-↓
+GKR-SURF-COL-004 — PARTICIPANTES E VÍNCULOS
+[COL-003 → COL-004 = CONTINUIDADE LÓGICA; TRANSIÇÃO ESTÁVEL NÃO DECLARADA]
+↓ GKR-TRN-113 QUANDO HOUVER COMUNICAÇÃO OFICIAL A PARTICIPANTES AUTORIZADOS
 GKR-SURF-COL-005 — COMUNICAÇÃO OFICIAL QUANDO APLICÁVEL À CONTINUIDADE DA PARTICIPAÇÃO
 ```
 
@@ -387,7 +388,7 @@ Transições preservadas:
 - `GKR-TRN-109` — `COL-003 → PER-105`;
 - `GKR-TRN-112` — `COL-002 → COL-003`.
 
-Essas transições mantêm sua maturidade própria. A continuidade pós-aprovação até `COL-004` e, quando aplicável, `COL-005` é reconhecida pelo Surface Map, mas **não possui neste draft uma transição estável nova ou inferida**.
+Essas transições mantêm sua maturidade própria. A continuidade pós-aprovação `COL-003 → COL-004` é reconhecida pelo Surface Map, mas **não possui transição estável declarada**. Quando a continuidade exige comunicação oficial a participantes autorizados, `GKR-TRN-113 — COL-004 → COL-005` já existe como transição **contratada** e mantém essa maturidade sem promoção neste draft.
 
 Preservações:
 
@@ -858,7 +859,7 @@ COL-J07
 | Organização — oportunidade/programa | `ORG-002..003` | `TRN-201..203` | reutilizar; sem promoção |
 | Organização — evidência/prestação de contas | `ORG-007` | sem transição dedicada conhecida | lacuna preservada |
 | Coletivo — contexto e Momento | `COL-002` + objetos referenciados | nenhuma espinha principal estável declarada | lacuna preservada |
-| Coletivo — participação | `COL-003..005` + `PER-105/106` | `TRN-105..109`, `TRN-112`; continuidade `COL-003 → COL-004/005` sem novo ID | reutilizar o existente; preservar lacuna |
+| Coletivo — participação | `COL-003..005` + `PER-105/106` | `TRN-105..109`, `TRN-112`; `COL-003 → COL-004` sem ID; `TRN-113` para `COL-004 → COL-005` no recorte de comunicação | reutilizar o existente; preservar somente a lacuna real |
 | Coletivo — atividade/oportunidade | `COL-006` | sem cadeia estável completa conhecida | lacuna preservada |
 | Coletivo — governança/comunicação/proteção | `COL-005..007` | `TRN-113` no recorte conhecido | reutilizar; sem promoção |
 | Coletivo — aprendizados/evidências | domínio lógico sem ID exclusivo | sem transição dedicada conhecida | lacuna preservada |
