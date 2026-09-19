@@ -18,7 +18,7 @@ Antes de usar qualquer documento isolado, consulte:
 A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.43.0
+GKR-STATE-001 3.44.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -60,8 +60,10 @@ O/C LOW-FIDELITY WIREFRAME AUTHORIZATION → GRANTED / v1.0.0
 O/C LOW-FIDELITY WIREFRAME DELIVERY → EXECUTED / v0.1.0
 O/C LOW-FIDELITY FUNCTIONAL VALIDATION → PASS / v1.0.0
 O/C CURRENT LOW-FIDELITY REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
+O/C HIGH-FIDELITY ELIGIBILITY → PASS / v1.0.0
+O/C HIGH-FIDELITY DESIGN AUTHORIZATION → NOT_GRANTED
 GKR GLOBAL UPDATE → CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
-FUNCTIONAL ADVANCEMENT → LOW-FIDELITY CYCLE CLOSED / HIGH-FIDELITY NOT AUTHORIZED
+FUNCTIONAL ADVANCEMENT → HIGH-FIDELITY ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED
 NEXT AUTOMATIC EXECUTION → NONE
 SOURCE LOCK → NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
 UXA-102 / V5 → NOT_STARTED
@@ -174,6 +176,7 @@ ORGANIZAÇÃO
 - [O/C — Autorização Governada de Wireframes Low-Fidelity](docs/experience-architecture/organizations-collectives-authenticated-wireframe-authorization.md)
 - [O/C — Entrega de Wireframes Autenticados Low-Fidelity](docs/experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md)
 - [O/C — Validação Funcional dos Wireframes Autenticados Low-Fidelity](docs/experience-architecture/organizations-collectives-authenticated-low-fidelity-functional-validation.md)
+- [O/C — Elegibilidade Pós-Validação para Design High-Fidelity](docs/experience-architecture/organizations-collectives-authenticated-high-fidelity-eligibility.md)
 
 ### Research e Validação
 
