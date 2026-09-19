@@ -225,3 +225,26 @@ UXA-102 / V5
 ## 11. Próximo movimento legítimo
 
 O próximo movimento permitido é a execução externa de Design, uma Home por vez, iniciando pela leitura do `LEIA-PRIMEIRO`, autoridades comuns e fontes específicas. A designer cria manualmente e pode, se desejar, usar sistemas de IA como apoio. Nenhum arquivo Figma gerado pelo GKR é requisito de entrada. Toda direção proposta segue para revisão humana antes da produção final.
+## 12. Reabertura documental pós-release
+
+Após o release original, a Guivos decidiu retornar à preparação documental antes do início do trabalho definitivo da designer.
+
+```text
+V5 RELEASE DECISION
+→ PRESERVED AS HISTORICAL GOVERNED ACT
+
+CURRENT DOCUMENTATION FRONT
+→ DESIGNER / AI READINESS REMEDIATION
+
+V6 PACKAGE
+→ NOT_EMITTED
+
+V6 DESIGNER HANDOFF
+→ HOLD
+→ REQUIRES ZERO MATERIAL FINDINGS
+→ REQUIRES SNAPSHOT V6
+→ REQUIRES NEW EXPLICIT HUMAN ACT
+```
+
+Consequentemente, esta autoridade não deve ser usada para inferir execução imediata sobre um pacote v6 ainda não emitido. A designer permanece livre para criar manualmente; o que está suspenso é apenas o **handoff definitivo do novo pacote enquanto a documentação está sendo endurecida**.
+
