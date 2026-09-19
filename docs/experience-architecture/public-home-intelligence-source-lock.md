@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Intelligence
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
@@ -13,6 +13,11 @@ depends_on:
   - GPA-006
   - GKR-UX-HOMES-OUTCOME-001
   - GKR-STATE-001
+related:
+  - GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
+  - GKR-UX-HOMES-DESIGN-HANDOFF-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
 normative: true
 ---
 
@@ -505,19 +510,16 @@ O Source Lock não congela:
 - microcopy que não altere significado;
 - ordem interna de exemplos dentro de um mesmo movimento.
 
-Essas liberdades só se tornam executáveis após Handoff/Design explicitamente autorizado.
+Essas liberdades pertencem à futura designer externa. O Handoff e o Design Production Release comuns já existem; o início operacional está postergado até o `PASS` da auditoria final de prontidão das fontes.
 
-## 16. O que este Source Lock não autoriza
+## 16. O que este Source Lock não autoriza por si só
 
-A integração deste artefato não autoriza automaticamente:
+A existência deste artefato, isoladamente, não autoriza:
 
-- atualização do Handoff Canônico;
-- Design;
-- Figma Make;
-- ferramenta generativa;
-- wireframe;
-- UI;
-- protótipo;
+- criação ou alteração silenciosa de Handoff comum;
+- início operacional da designer sem os gates correntes;
+- execução visual pelo GKR/ChatGPT;
+- uso de AI como substituta da designer ou como autoridade;
 - implementação front-end ou back-end;
 - publicação comercial;
 - Marketing/GTM;
@@ -526,23 +528,39 @@ A integração deste artefato não autoriza automaticamente:
 - promoção silenciosa de maturidade técnica;
 - alteração de `GKR-STATE-001` ou Roadmap sem sincronização transversal autorizada.
 
-## 17. Critérios para o próximo gate
+O Design Production Release comum foi concedido por autoridade posterior. A decisão humana corrente apenas **posterga o início da designer** até o fechamento da auditoria documental.
 
-Antes de iniciar Design, o futuro Handoff deve preservar:
+## 17. Gate corrente
 
-- o pacote de fontes deste Source Lock;
+O Handoff específico e o Handoff comum já existem. Antes do início operacional da designer, a frente corrente deve confirmar que o pacote preserva:
+
+- as fontes deste Source Lock;
 - a arquitetura em onze movimentos;
-- a copy pública vigente;
+- a copy pública vigente e o status de cada formulação;
 - os CTAs congelados;
 - as duas frentes e suas autoridades;
 - `M03 ≠ M10`;
 - `M04 ≠ M05`;
 - papel subordinado de Graph/IA;
 - exemplos analíticos como demonstração, não prova;
-- todos os guardrails de privacidade, causalidade, previsão e autonomia.
+- todos os guardrails de privacidade, causalidade, previsão e autonomia;
+- liberdade visual sem obrigatoriedade de dashboard, grafo ou estética tecnológica.
 
-Próximo ponto elegível após a integração deste Source Lock:
+```text
+HOME SOURCE LOCK
+→ ACTIVE
 
-> **Handoff controlado da Home Pública Guivos Intelligence v1 para Design**, mediante autorização separada.
+HOME DESIGN HANDOFF
+→ ACTIVE
 
-Nenhuma etapa autoriza automaticamente a seguinte.
+COMMON DESIGN PRODUCTION RELEASE
+→ GRANTED
+
+FINAL SOURCE READINESS AUDIT
+→ IN_PROGRESS
+
+EXTERNAL DESIGNER START
+→ DEFERRED UNTIL PASS
+```
+
+Nenhuma dessas etapas autoriza Product Engineering automaticamente.
