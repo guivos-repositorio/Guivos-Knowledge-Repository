@@ -330,7 +330,7 @@ Desde que preservados os contratos da Home, Design pode explorar:
 
 Estas liberdades são deliberadamente amplas. Não existe requisito prévio de paleta, fonte, estilo fotográfico, sistema de ilustração, estética de ícones ou template visual comum imposto pelo GKR. A coerência entre as oito Homes deve resultar da qualidade da solução escolhida e dos princípios comuns da Guivos, sem transformar as páginas no mesmo template.
 
-Tom de voz, headlines de apoio, microcopy e formulações editoriais não congeladas também podem ser propostas por Design/Content Design. Até aprovação humana, esse material deve permanecer classificado como `CONTENT CANDIDATE` e não pode introduzir promessa, dado, disponibilidade ou claim não sustentado.
+Tom de voz, headlines de apoio, microcopy e formulações editoriais não congeladas também podem ser propostas por Design/Content Design. Até aprovação humana, esse material deve permanecer classificado como `CONTENT_CANDIDATE` e não pode introduzir promessa, dado, disponibilidade ou claim não sustentado.
 > **Movimento narrativo é contrato de progressão. Seção visual é decisão de Design.**
 
 ---
