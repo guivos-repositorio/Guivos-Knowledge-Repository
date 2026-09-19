@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-MEDIA-MASTER-001
 title: Home Pública — Guivos Media — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-08-13
 parents:
@@ -213,3 +213,54 @@ PROVOCAR → DAR SIGNIFICADO → MOSTRAR → PERMITIR ESCOLHER → CURAR
 Estado:
 
 > **ARQUITETURA CONCEITUAL E FUNCIONAL DA HOME V1 CONVERGIDA — DOCUMENTO PREPARADO PARA HANDOFF; PROTÓTIPO VISUAL NÃO INCLUÍDO NESTE ESCOPO.**
+
+---
+
+## 12. Privacidade, autoridade editorial e dados reais
+
+Conteúdo, curadoria e continuidade não autorizam exposição indevida de contexto pessoal protegido.
+
+A Home pode usar contexto editorial e sinais autorizados para descoberta, mas não deve:
+
+- fingir conhecer interesses pessoais sem base;
+- apresentar conteúdo geral como recomendação pessoal;
+- usar história, pessoa, imagem ou depoimento sem origem/autorização aplicável;
+- converter patrocínio em aparência de prova orgânica;
+- expor dado pessoal para aumentar atratividade editorial.
+
+Exigem fonte real ou autorização aplicável:
+
+- pessoa;
+- autor;
+- entrevista;
+- história;
+- imagem documental;
+- vídeo;
+- data;
+- local;
+- parceria;
+- patrocínio;
+- propriedade editorial apresentada como existente;
+- métrica de audiência;
+- resultado.
+
+Placeholder pode testar composição, mas deve permanecer claramente provisório.
+
+## 13. Contrato de entrada para Design
+
+A designer recebe ampla liberdade para criar identidade editorial, hierarquia, tipografia, ritmo, mídia, composição, busca, navegação, motion e microinterações.
+
+```text
+EDITORIAL TRUTH
+→ GKR / MEDIA AUTHORITY
+
+VISUAL EXPRESSION
+→ DESIGNER
+
+AI
+→ OPTIONAL SUPPORT
+```
+
+A experiência deve funcionar em desktop, tablet e mobile, preservando acessibilidade, performance e significado mesmo sem motion ou mídia rica.
+
+Questões de lineup, conteúdo de lançamento, propriedades ainda não materializadas e assets finais permanecem abertas e não devem ser inventadas como realidade.
