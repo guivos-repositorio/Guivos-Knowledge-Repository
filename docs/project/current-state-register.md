@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.41.0
+version: 3.42.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-18
 normative: true
@@ -32,6 +32,8 @@ related:
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-GLOBAL-UPDATE-2026-09-18-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-OC-NARR-001
@@ -81,7 +83,7 @@ A auditoria integral do corpus foi concluída com resultado `PASS`. A baseline f
 
 A frente posterior da Cognitive Reference Architecture também foi concluída em seu limite documental: `ADR-008` aprovou placement e ownership sob a GIA; `GIA-COG-001 v0.1.1` passou por revisão, remediação, revalidação semântica e gate de promoção e é agora a **Cognitive Reference Architecture vigente, ativa e normativa**. Essa promoção não autoriza `GIA-COG-002..008`, arquitetura física, dados reais, implementação, operação ou produção.
 
-A frente documental posterior de Organizações e Coletivos também avançou por gates próprios: `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` é o **mapa lógico-documental canônico das superfícies autenticadas O/C**, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` é o **mapa funcional canônico documental dos estados autenticados O/C**, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` é a **autoridade canônica documental dos fluxos prioritários autenticados O/C** e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` é a **Navigation Materialization canônica documental**. A adjudicação `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0` permanece como boundary de elegibilidade consumido. A materialização preserva os registries existentes sem criar IDs paralelos ou promover maturidade por inferência e não inicia wireframes, Design, UI, protótipo ou Product Engineering.
+A frente documental posterior de Organizações e Coletivos avançou por gates próprios até a Navigation Materialization canônica `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. A autorização governada subsequente `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0` liberou exclusivamente os wireframes autenticados low-fidelity, e a primeira entrega foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0`. Essa entrega existe como candidata visual low-fidelity e ainda exige validação funcional governada; não é referência visual validada, não cria novos IDs, não promove transitions e não libera high-fidelity UI, protótipo ou Product Engineering.
 
 ## 2. Estado executivo
 
@@ -128,10 +130,13 @@ O/C AUTHENTICATED NAVIGATION MATERIALIZATION
 → PRODUCT MENU VISUAL NOT DEFINED
 → NO NEW GKR-SURF-* / GKR-TRN-*
 
-O/C AUTHENTICATED WIREFRAMES
-→ NOT STARTED
+O/C AUTHENTICATED LOW-FIDELITY WIREFRAMES
+→ AUTHORIZATION = GRANTED / GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0
+→ DELIVERY = EXECUTED / GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0
+→ FUNCTIONAL VALIDATION = NOT_STARTED
+→ VALIDATED VISUAL REFERENCE = NONE
 
-DESIGN / UI / PROTOTYPE
+HIGH-FIDELITY UI / PROTOTYPE
 → NOT AUTHORIZED / NOT RELEASED FOR O/C AUTHENTICATED EXPERIENCE
 
 PRODUCT ENGINEERING
@@ -2237,7 +2242,8 @@ AINDA NÃO INICIADOS / NÃO AUTORIZADOS ALÉM DO BOUNDARY
 → O/C PRIORITY FLOWS = DEFINED / CANONICAL DOCUMENTARY
 → O/C NAVIGATION MATERIALIZATION ELIGIBILITY = PASS / CANONICAL / v1.0.0
 → O/C NAVIGATION MATERIALIZATION = DEFINED / CANONICAL DOCUMENTARY / v1.0.0
-→ O/C AUTHENTICATED WIREFRAMES = NOT STARTED / NOT RELEASED
+→ O/C LOW-FIDELITY WIREFRAME AUTHORIZATION = GRANTED
+→ O/C LOW-FIDELITY WIREFRAME DELIVERY = EXECUTED / VALIDATION PENDING
 → PRODUCT ENGINEERING = NOT_AUTHORIZED TO RESUME
 → PMF = NOT VALIDATED
 → IMPLEMENTAÇÃO / PRODUÇÃO = NOT_AUTHORIZED
@@ -2263,7 +2269,7 @@ HOME MASTERS FRONT IN MAIN
 → MUST NOT BE CLAIMED AS INTEGRATED WHILE THIS CHANGESET IS ABSENT FROM MAIN
 ```
 
-A revisão `v3.35.0` desta autoridade integrou o changeset de fechamento de Home Masters. A revisão `v3.36.0` promoveu documentalmente o Surface Map O/C. A revisão `v3.37.0` promoveu o State Map O/C, a revisão `v3.38.0` promoveu os Priority Flows O/C, a revisão `v3.39.0` sincronizou globalmente o GKR, a revisão `v3.40.0` promoveu a elegibilidade de Navigation Materialization e a revisão `v3.41.0` promove a própria Navigation Materialization como autoridade canônica documental pré-wireframe.
+A revisão `v3.35.0` desta autoridade integrou o changeset de fechamento de Home Masters. A revisão `v3.36.0` promoveu documentalmente o Surface Map O/C. A revisão `v3.37.0` promoveu o State Map O/C, a revisão `v3.38.0` promoveu os Priority Flows O/C, a revisão `v3.39.0` sincronizou globalmente o GKR, a revisão `v3.40.0` promoveu a elegibilidade de Navigation Materialization, a revisão `v3.41.0` promoveu a própria Navigation Materialization e a revisão `v3.42.0` registra autorização + primeira entrega low-fidelity O/C com validação ainda pendente.
 
 A PR histórica #365 permanece preservada como candidato anterior não mesclado; sua reconciliação é realizada por branch limpa sobre o `main` posterior, sem rebase ou merge cego. Os gates downstream continuam independentes:
 
