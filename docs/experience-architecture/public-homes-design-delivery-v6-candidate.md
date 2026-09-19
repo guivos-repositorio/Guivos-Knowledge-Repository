@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
 title: Homes Públicas — Pacote v6 Candidato para Designer e IA Opcional
 status: draft
-version: 0.2.10
+version: 0.2.11
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -65,7 +65,7 @@ MARKDOWN
 → PRIMARY HUMAN + AI SOURCE FORMAT
 ```
 
-## 3. Composição candidata — 27 fontes canônicas
+## 3. Composição candidata — 29 fontes canônicas
 
 ### 3.1 Fontes comuns
 
@@ -118,8 +118,10 @@ MARKDOWN
 23. `docs/experience-architecture/public-home-intelligence-design-handoff.md` — `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.6`;
 24. `docs/experience-architecture/public-home-intelligence-source-lock.md` — `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.5`;
 25. `docs/experience-architecture/public-home-intelligence-master-document.md` — `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5`;
-26. `docs/product-architecture/intelligence-product-source-lock.md` — `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1`;
-27. `docs/product-architecture/intelligence.md` — `GPA-006 v2.0.1`.
+26. `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md` — `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1`;
+27. `docs/experience-architecture/public-homes-value-outcome-principle.md` — `GKR-UX-HOMES-OUTCOME-001 v1.0.0`;
+28. `docs/product-architecture/intelligence-product-source-lock.md` — `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1`;
+29. `docs/product-architecture/intelligence.md` — `GPA-006 v2.0.1`.
 
 ## 4. Oito guias de consumo v6
 
@@ -178,16 +180,16 @@ COMMON SOURCES
 → 5
 
 HOME-SPECIFIC UNIQUE SOURCES
-→ 22
+→ 24
 
 CANONICAL SOURCES TOTAL
-→ 27
+→ 29
 
 READ-FIRST GUIDES
 → 8
 
 TOTAL EXTERNAL FILES
-→ 35
+→ 37
 ```
 
 ## 7. Regra de consumo humano
@@ -260,7 +262,7 @@ Mudança criativa feita pela designer sem alterar contrato semântico não exige
 O v6 somente se torna elegível para snapshot após:
 
 - C1–C15 = PASS para 8/8 Homes;
-- 27/27 fontes existentes;
+- 29/29 fontes existentes;
 - ID/versão/path reconciliados;
 - Semantic Validation = SUCCESS;
 - Mechanical Validation = SUCCESS;
