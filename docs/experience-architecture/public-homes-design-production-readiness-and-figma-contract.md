@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.1.5
+version: 1.2.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -143,14 +143,16 @@ Decisão: toda informação não consolidada deve usar uma das classes da seçã
 
 Reclassificação humana: **não é gap**. É liberdade deliberada de Design.
 
-## 6. Pacote fonte v5 por Home
+## 6. Pacote fonte corrente / candidato v6 por Home
 
 Quatro autoridades comuns acompanham todas as Homes:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.1`;
-2. `GKR-UX-HOMES-GENINPUT-001 v2.1.5`;
-3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.1.4`;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.1`.
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001`;
+2. `GKR-UX-HOMES-GENINPUT-001`;
+3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001` — este documento;
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001`.
+
+As versões exatas do conjunto corrente são fixadas em `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001`. O snapshot v5 permanece histórico e suas versões emitidas são preservadas por `GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001` e pelo Manifesto na seção histórica correspondente.
 
 Fontes específicas:
 
@@ -163,10 +165,10 @@ Fontes específicas:
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### Mall
-- `GKR-UX-HOME-MALL-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.1.0`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
 
-Contrato corrente que o Source Lock v5 deve explicitar:
+Contrato corrente que o guia/Source Lock v6 deve explicitar:
 - `MALL-HS-01 BASELINE_PUBLIC` — tese, pergunta-mãe, identidade Guivos e descoberta são base permanente;
 - `MALL-HS-02 COMMERCIAL_DATA_AVAILABLE` — produto/oferta/preço/pontos/marca/parceiro somente com fonte aplicável;
 - `MALL-HS-03 COMMERCIAL_DATA_UNAVAILABLE_OR_ERROR` — ausência não pode virar oferta, estoque, preço ou parceria fictícia;
@@ -175,10 +177,10 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 - `MALL-HS-06 SPONSORED_EXPOSURE` — exposição paga permanece identificada e não se disfarça de relevância orgânica.
 
 ### Travel
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.1`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
 
-Contrato corrente que o Source Lock v5 deve explicitar:
+Contrato corrente que o guia/Source Lock v6 deve explicitar:
 - `TRAVEL-HS-01 BASELINE_PUBLIC` — pergunta-mãe, identidade Guivos, inspiração e acesso a serviços são a base;
 - `TRAVEL-HS-02 OPERATIONAL_SERVICE` — serviços governados podem ser apresentados sem inferir disponibilidade universal;
 - `TRAVEL-HS-03 DESTINATION_OR_EXPERIENCE_PROVEN` — destino/imagem/experiência apresentados como reais exigem lastro;
@@ -196,7 +198,7 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 
 ### Business
 - `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.0`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.1`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
 - `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0`;
 - `GPA-004 v1.6.0`.
@@ -204,7 +206,7 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 ### Intelligence
 - `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0`;
 - `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.0`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0`;
 - `GPA-006 v2.0.0`.
 
