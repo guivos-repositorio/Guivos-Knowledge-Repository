@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-TRAVEL-MASTER-001
 title: Home Pública — Guivos Travel — Documento Mestre
 status: draft
-version: 1.1.0
+version: 1.1.1
 owner: Experience Architecture
-last_updated: 2026-08-13
+last_updated: 2026-09-19
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-003
@@ -325,7 +325,7 @@ Direção de título:
 
 # Descubra para onde ir.
 
-Esta deve ser uma das áreas visualmente mais fortes da Home.
+Este movimento possui **alta importância narrativa** porque torna inspiração, realidade do destino e possibilidade de viagem imediatamente compreensíveis. A forma, intensidade e linguagem visual usadas para expressar essa importância pertencem integralmente à designer.
 
 A descoberta deve privilegiar:
 
