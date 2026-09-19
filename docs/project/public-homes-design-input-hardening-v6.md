@@ -2,11 +2,11 @@
 id: GKR-HOMES-DESIGN-INPUT-HARDENING-V6-001
 title: Homes Públicas — Auditoria e Hardening do Pacote de Entrada para Design v6
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: false
-maturity: remediation_in_progress
+maturity: remediation_applied_pre_validation
 depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -313,3 +313,176 @@ Esta frente não autoriza:
 - GTM;
 - implementação;
 - criação de dados, parceiros, cases ou métricas não sustentados.
+
+---
+
+## 8. Estado de remediação aplicado
+
+Os findings DH-001..DH-010 receberam remediação documental no candidato atual.
+
+```text
+DH-001 TOOL-CENTRIC FLOW
+→ REMEDIATED
+
+DH-002 MASTER ASYMMETRY
+→ REMEDIATED
+
+DH-003 RESPONSIVE / ACCESSIBILITY
+→ REMEDIATED
+
+DH-004 AUTONOMY / PRIVACY
+→ REMEDIATED
+
+DH-005 HEADER / NAVIGATION
+→ REMEDIATED
+
+DH-006 INFORMATION CLASSES
+→ REMEDIATED
+
+DH-007 MASTER STATUS
+→ REMEDIATED
+→ 8 / 8 ACTIVE
+
+DH-008 BUSINESS VISUAL OVERCONSTRAINT
+→ REMEDIATED
+→ DASHBOARD / KPI / GRAPH = DESIGN_HYPOTHESIS
+
+DH-009 CREATIVE FREEDOM
+→ REMEDIATED / EXPLICIT 8 OF 8
+
+DH-010 HUMAN-FIRST / AI-COMPATIBLE
+→ REMEDIATED
+```
+
+## 9. Prova de completude dos Masters
+
+Matriz aplicada a todas as oito Homes:
+
+```text
+ROLE / PURPOSE
+QUESTION OR OPENING PRINCIPLE
+THESIS
+NAVIGATION
+CTA
+NARRATIVE
+PROOF / EVIDENCE
+AUTONOMY
+PRIVACY / AUTHORITY
+ACCESSIBILITY
+MOBILE / RESPONSIVENESS
+CREATIVE FREEDOM
+REAL DATA BOUNDARY
+OPEN QUESTIONS
+OPTIONAL AI CONSUMPTION
+```
+
+Resultado:
+
+```text
+PESSOA
+→ PASS
+
+ORGANIZAÇÕES E COLETIVOS
+→ PASS
+
+MALL
+→ PASS
+
+TRAVEL
+→ PASS
+
+MEDIA
+→ PASS
+
+ADS
+→ PASS
+
+BUSINESS
+→ PASS
+
+INTELLIGENCE
+→ PASS
+
+TOTAL
+→ 8 / 8 PASS
+```
+
+Todos os oito Masters estão:
+
+```text
+status = active
+maturity = design_input_ready_human_first_ai_optional
+```
+
+## 10. Prova do Manifesto v6
+
+As 26 fontes declaradas em `GKR-UX-HOMES-DESIGN-DELIVERY-001 v6.0.0` foram verificadas no candidato.
+
+```text
+FILES FOUND
+→ 26 / 26
+
+ID MATCH
+→ 26 / 26
+
+VERSION MATCH
+→ 26 / 26
+```
+
+O snapshot v5 permanece inalterado.
+
+## 11. Guias human-first
+
+`GKR-HOMES-DESIGN-INPUT-V6-GUIDES-001 v1.0.0` define integralmente os oito blueprints de `LEIA-PRIMEIRO`.
+
+```text
+GUIDE BLUEPRINTS
+→ 8 / 8 COMPLETE
+
+PRIMARY CONSUMER
+→ HUMAN DESIGNER
+
+AI APPENDIX
+→ OPTIONAL
+
+POST-MERGE SHAs
+→ DELIBERATELY PENDING
+→ MUST BE FILLED ONLY AT SNAPSHOT EMISSION
+```
+
+## 12. Estado pré-validação
+
+```text
+CONTENT HARDENING
+→ APPLIED
+
+8 / 8 MASTERS
+→ DESIGN-INPUT-READY CANDIDATE
+
+26 / 26 MANIFEST SOURCES
+→ ID / VERSION / PATH VERIFIED
+
+8 / 8 GUIDE BLUEPRINTS
+→ COMPLETE
+
+COMMON AUTHORITIES
+→ HUMAN-FIRST / AI-OPTIONAL / TOOL-AGNOSTIC
+
+V6 SNAPSHOT
+→ NOT_EMITTED
+
+SEMANTIC VALIDATION
+→ PENDING
+
+MECHANICAL VALIDATION
+→ PENDING
+
+INDEPENDENT REVIEW
+→ PENDING
+
+MAIN
+→ UNCHANGED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+```
