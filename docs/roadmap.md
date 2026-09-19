@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.6
+id: ROADMAP-13.47.7
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.6
+version: 13.47.7
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -572,7 +572,7 @@ Fechamento residual E6:
 
 - P1–P5 O/C foram reclassificados como proveniência histórica, não sequência operacional atual;
 - o Source Lock histórico O/C permanece evidência de checkpoint não autorizadora;
-- o pacote transversal de Design permanece não autorizado por P e exige ato governado próprio;
+- o bloqueio de Design herdado de P foi superado pelo release comum posterior; a produção externa das Homes públicas está liberada para a designer, sem liberar implementação ou experiência autenticada;
 - snapshots históricos de Design permanecem preservados como fatos de seus checkpoints.
 
 Gate:
@@ -581,12 +581,12 @@ Gate:
 HOME O/C
 → DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 
-WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
-→ NOT AUTHORIZED BY P CLOSURE
-→ REQUIRES SEPARATE GOVERNED ACT
+PUBLIC HOME WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
+→ GRANTED FOR EXTERNAL DESIGNER BY COMMON RELEASE
 
 EXPERIÊNCIA AUTENTICADA O/C
 → NOT MATERIALIZED BY LOT E
+→ AUTHENTICATED HIGH-FIDELITY REMAINS SEPARATELY GOVERNED
 ```
 
 ## 10. Lote F — Homes dos Produtos Especializados
@@ -1078,7 +1078,7 @@ F-022
 → NOT OPENED
 ```
 
-`GPA-006 v2.0.0` continua autoridade do produto; `GIA-000 v1.7.0` é a arquitetura vigente de Intelligence e reconhece `GIA-COG-001 v0.1.1` como Cognitive Reference Architecture ativa/normativa; `GEA-GRAPH-REFERENCE-001` permanece referência arquitetural; `ADR-007` mantém Neo4j apenas como referência primária. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.3` permanece Source Lock ativo/normativo da Home; sua autoridade semântica não equivale, por si só, a autorização de implementação. O Design externo é regido pelas autoridades comuns posteriores.
+`GPA-006 v2.0.0` continua autoridade do produto; `GIA-000 v1.7.0` é a arquitetura vigente de Intelligence e reconhece `GIA-COG-001 v0.1.1` como Cognitive Reference Architecture ativa/normativa; `GEA-GRAPH-REFERENCE-001` permanece referência arquitetural; `ADR-007` mantém Neo4j apenas como referência primária. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.4` permanece Source Lock ativo/normativo da Home; sua autoridade semântica não equivale, por si só, a autorização de implementação. O Design externo é regido pelas autoridades comuns posteriores.
 
 ```text
 GIA-COG-001 ACTIVE / NORMATIVE
