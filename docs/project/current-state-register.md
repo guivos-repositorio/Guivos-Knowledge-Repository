@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.45.0
+version: 3.46.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -10,6 +10,7 @@ maturity: current_truth_gia_cog_001_active_normative
 related:
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
@@ -2371,12 +2372,14 @@ SEMANTIC / FUNCTIONAL TRUTH
 → GKR-GOVERNED
 ```
 
-O pacote histórico v4 permanece reproduzível, porém superado para nova contratação. O Manifesto v5 prepara uma emissão pós-merge baseada em 26 fontes canônicas atuais e oito `LEIA-PRIMEIRO / SOURCE LOCK` operacionais.
+O pacote histórico v4 permanece reproduzível, porém superado para nova contratação. O snapshot v5 foi emitido a partir da `main` pós-PR #390 com 26 fontes canônicas atuais e oito `LEIA-PRIMEIRO / SOURCE LOCK` operacionais.
 
 Fluxo obrigatório:
 
 ```text
 V5 SNAPSHOT
+→ EMITTED / MATERIALIZED / VALIDATED
+→ DESIGN PRODUCTION RELEASE HUMANO
 → FIGMA MAKE / EXPLORAÇÃO
 → REVISÃO HUMANA
 → DIREÇÃO CRIATIVA APROVADA
@@ -2388,10 +2391,15 @@ Estado:
 
 ```text
 DESIGN PRODUCTION READINESS DOCUMENTATION
-→ PREPARED IN CURRENT CHANGESET
+→ INTEGRATED / ACTIVE
 
 V5 SNAPSHOT
-→ PENDING POST-MERGE EMISSION
+→ EMITTED / MATERIALIZED / VALIDATED
+→ branch delivery/design-handoff-v5
+→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
+→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
+→ 26 CANONICAL SOURCES + 8 GUIDES = 34 FILES
+→ 26 / 26 CANONICAL BLOBS BYTE-PRESERVED
 
 FIGMA MAKE
 → NOT RELEASED
