@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -31,8 +31,9 @@ related:
   - GKR-UX-HOME-SYS-001
   - journeys/organization.md
   - journeys/collective.md
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 normative: false
-maturity: documentally_rebuilt_pre_materialization_under_full_corpus_audit
+maturity: source_ready_for_external_design_manual_first_ai_optional
 ---
 
 # Home Pública — Organizações e Coletivos
@@ -1663,55 +1664,56 @@ Ideia fundamental:
 
 ---
 
-## 29. Limites de materialização e de checkpoint
+## 29. Limites de Design, materialização e checkpoint
 
 Esta autoridade encerra-se na arquitetura narrativa, semântica e funcional pública.
 
-Permanecem bloqueados até autorização explícita posterior ao fechamento dos gates aplicáveis:
+A remediação `SOURCE_READY` atual não produz tela, wireframe, Figma, UI, protótipo, identidade visual ou implementação dentro do GKR. Ela prepara fontes suficientes para que a designer crie externamente com liberdade.
 
-- wireframe;
-- Figma;
-- SVG;
-- protótipo;
+```text
+GKR
+→ SIGNIFICADO / FUNÇÃO / LIMITES / VERDADE
+
+DESIGNER
+→ EXPRESSÃO VISUAL / CRIATIVA
+
+IA
+→ APOIO OPCIONAL
+
+MATERIALIZAÇÃO AUTENTICADA O/C
+→ FRENTE SEPARADA
+→ NÃO É LIBERADA POR ESTA HOME PÚBLICA
+```
+
+Permanecem fora da autoridade semântica deste Master e sob decisão de Design:
+
 - grid e layout;
 - tipografia;
 - fotografia e vídeo finais;
 - sistema visual;
 - componentes;
 - microinterações;
-- implementação;
+- breakpoints;
+- tratamento visual da bifurcação;
+- quantidade física de seções;
+- direção de arte;
+- linguagem gráfica.
+
+Permanecem sob gates operacionais ou de produto próprios:
+
 - disponibilidade operacional;
 - preços ou planos;
 - cadastro;
 - onboarding;
 - Marketing/GTM;
 - UXA-102/V5;
-- primeira tela autenticada da Pessoa após a Home;
-- qualquer materialização autenticada de Organização ou Coletivo.
+- experiência autenticada de Organização ou Coletivo;
+- Product Engineering;
+- implementação e publicação.
 
-```text
-PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
-→ BLOCKED UNTIL AUDIT CLOSES
-→ NÃO DEFINIR NESTE LOTE
-```
+O histórico contém decisões procedimentais diferentes sobre Design e wireframe. Elas pertencem aos respectivos checkpoints e não impõem direção visual à designer atual.
 
-O histórico contém decisões procedimentais diferentes sobre Design e wireframe. Elas pertencem aos respectivos checkpoints.
-
-Durante a auditoria integral vigente:
-
-```text
-HANDOFF ANTIGO
-SOURCE LOCK ANTIGO
-PACOTE GENERATIVO ANTIGO
-SNAPSHOT ANTIGO
-DECISÃO DE DESIGN DE CHECKPOINT ANTERIOR
-
-≠ AUTORIZAÇÃO ATUAL DE MATERIALIZAÇÃO
-```
-
-Qualquer futura retomada de Design exige novo ato governado e reconciliação com este Master e com o estado pós-auditoria.
-
-Uma futura materialização deve ser rejeitada ou revisada se:
+Uma futura solução deve ser rejeitada ou revisada se:
 
 - começar por catálogo de Produtos;
 - parecer landing page SaaS convencional;
@@ -1811,4 +1813,325 @@ HOME O/C
 
 Estado deste documento:
 
-> **DOCUMENTO MESTRE RECONSTRUÍDO DOCUMENTALMENTE — MATERIALIZAÇÃO NÃO AUTORIZADA; AUDITORIA INTEGRAL AINDA EM CURSO.**
+> **DOCUMENTO MESTRE RECONCILIADO E SOURCE_READY PARA CONSUMO EXTERNO DE DESIGN — CRIAÇÃO MANUAL DA DESIGNER / IA OPCIONAL — EXPERIÊNCIA AUTENTICADA O/C E PRODUCT ENGINEERING PERMANECEM EM GATES SEPARADOS.**
+
+---
+
+## 33. Prontidão documental para Designer e IA
+
+Esta revisão fecha a auditoria de suficiência da **Home Pública — Organizações e Coletivos** para consumo externo de Design.
+
+### 33.1 Resultado da auditoria
+
+```text
+HOME ORGANIZAÇÕES E COLETIVOS
+→ SOURCE_READY = PASS
+
+MASTER
+→ GKR-UX-HOME-OC-MASTER-001 v1.1.0
+
+MEDIA RECONCILIATION
+→ GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.1
+
+MATERIAL DOCUMENT GAPS
+→ 0
+
+UNRESOLVED SEMANTIC CONFLICTS
+→ 0
+
+VISUAL IDENTITY PRE-IMPOSED
+→ 0
+
+MANUAL DESIGNER PATH
+→ COMPLETE
+
+OPTIONAL AI PATH
+→ COMPLETE THROUGH COMMON SOURCE LOCK / BRIEF
+```
+
+A auditoria corrigiu os rótulos abreviados dos Movimentos 02, 03, 06, 08 e 09 no contrato pós-Media para que correspondam exatamente ao Master.
+
+### 33.2 Evidência de suficiência
+
+| Critério | Evidência no Master | Estado |
+|---|---|---|
+| identidade, papel e fronteiras | §§ 2–5 | PASS |
+| tese e 11 movimentos | Movimentos 01–11 | PASS |
+| sete macroexperiências | § 15 | PASS |
+| Header / Hero / Journey / bifurcação | § 16 | PASS |
+| autonomia / privacidade | § 17 | PASS |
+| acessibilidade / robustez | § 18 | PASS |
+| identidade e representação | § 19 | PASS |
+| reciprocidade e bilateralidade | § 20 | PASS |
+| relevância / supply / comercial | § 21 | PASS |
+| conteúdo / verdade / prova | § 22 | PASS |
+| histórias / causalidade | § 23 | PASS |
+| Media supply | § 24 | PASS |
+| compreensão esperada | § 25 | PASS |
+| claims proibidos | § 26 | PASS |
+| contrato semântico | § 27 | PASS |
+| limites de Design / gates | § 29 | PASS |
+| autoridade de fontes | §§ 30–32 | PASS |
+
+### 33.3 Condições que a solução deve tolerar
+
+#### Condição pública base
+
+- visitante ainda não escolheu entre Organização e Coletivo;
+- narrativa compartilhada vem antes da bifurcação;
+- nenhuma coleta de CNPJ, localização ou contexto pessoal é necessária para compreender;
+- Hero permanece exploratória;
+- `Iniciar Jornada` continua porta própria do Journey.
+
+#### Continuidade como Organização
+
+- caminho final possui igual legitimidade conceitual ao caminho de Coletivo;
+- não implica Business;
+- não implica contratação, plano, cadastro ou onboarding;
+- destino operacional só deve ser representado como existente quando formalmente autorizado.
+
+#### Continuidade como Coletivo
+
+- caminho final possui igual legitimidade conceitual ao caminho de Organização;
+- Coletivo não é produto, canal ou comunidade proprietária da Guivos;
+- não implica onboarding imediato;
+- governança e pertencimento não são transferidos por apoio ou patrocínio.
+
+#### Destino operacional ainda não disponível
+
+- manter a continuidade como possibilidade conceitual;
+- não inventar formulário, plano, fluxo ou disponibilidade;
+- não transformar questão futura em dead end visual enganoso.
+
+#### Evidência real disponível
+
+- mostrar contexto, fonte e função da evidência;
+- preservar distinções entre capacidade declarada, verificada, atividade, experiência, resultado e impacto.
+
+#### Evidência não disponível
+
+- arquitetura deve funcionar sem logos, métricas, cases ou depoimentos fictícios;
+- cenário ilustrativo deve permanecer claramente distinto de evidência real.
+
+#### Conteúdo patrocinado
+
+- deve permanecer identificável;
+- patrocínio não melhora relevância orgânica;
+- posição comercial não compra autoridade nem prioridade na Journey.
+
+#### Mídia rica indisponível / baixa conectividade / reduced motion
+
+- significado essencial permanece completo;
+- Hero funciona sem mídia rica;
+- nenhuma informação essencial depende de hover, swipe, animação ou gesto complexo.
+
+#### Idioma / região desconhecidos
+
+- nenhuma localização é inferida;
+- preferência pode ser oferecida como utilidade pública;
+- layout deve tolerar internacionalização.
+
+### 33.4 Matriz operacional específica de O/C
+
+#### CANONICAL
+
+- pergunta-mãe: **“O que podemos tornar possível juntos?”**;
+- possibilidade antes de Produto;
+- Organização e Coletivo são participantes estruturais distintos;
+- Pessoa, Organização e Coletivo preservam autoridades próprias;
+- Organização ≠ Business;
+- Coletivo ≠ produto Guivos;
+- narrativa compartilhada antecede a bifurcação;
+- 11 movimentos e 7 macroexperiências preservam significado, não contagem visual;
+- Journey possui porta própria em `Iniciar Jornada`;
+- relevância é contextual e não comprável;
+- supply Direct/Enabling é modelo explicativo, não taxonomia obrigatória de UI;
+- nove Domínios são vocabulário, não score;
+- relações O/C preservam bilateralidade, finalidade, autoridade, dados e saída;
+- patrocínio ≠ relevância;
+- Intelligence compreende e não decide;
+- Home pública ≠ experiência autenticada;
+- os dois caminhos finais têm igual legitimidade conceitual.
+
+#### DESIGN_CREATIVE
+
+A designer possui liberdade para criar:
+
+- identidade visual;
+- tipografia;
+- paleta;
+- fotografia;
+- vídeo;
+- ilustração;
+- iconografia;
+- composição;
+- grid;
+- ritmo;
+- respiro;
+- motion;
+- componentes;
+- linguagem gráfica;
+- atmosfera;
+- direção de arte;
+- forma visual da complementaridade;
+- forma visual de supply e relações;
+- representação da bifurcação Organização/Coletivo;
+- solução desktop/mobile;
+- progressive disclosure;
+- copy não congelada.
+
+#### CONTENT_CANDIDATE
+
+- CTA exploratório final da Hero;
+- supporting copy;
+- labels;
+- microcopy;
+- headlines de apoio;
+- formulações de continuidade;
+- copy do rodapé e destinos ainda não congelados.
+
+#### DESIGN_HYPOTHESIS
+
+- formas de expressar capacidades e fragmentação;
+- visualização de relações e complementaridade;
+- agrupamento físico dos 11 movimentos;
+- representação dos sete macroagrupamentos;
+- exposição dos nove Domínios sem taxonomia rígida;
+- solução visual de supply;
+- formas de mostrar valor e reciprocidade;
+- maneiras de representar confiança/evidência;
+- tratamento da bifurcação final sem hierarquia;
+- navegação, densidade e responsividade.
+
+#### PROTOTYPE_PLACEHOLDER
+
+- Organização;
+- Coletivo;
+- iniciativa;
+- história;
+- evidência;
+- oportunidade;
+- recurso;
+- infraestrutura;
+- relação;
+- mídia;
+- conteúdo editorial;
+- cenário comercial ilustrativo.
+
+Placeholder nunca deve aparentar parceria, operação ou resultado real.
+
+#### REAL_DATA_REQUIRED
+
+- identidade real de Organização/Coletivo;
+- relação real;
+- parceria;
+- cliente;
+- iniciativa;
+- oportunidade;
+- disponibilidade;
+- território;
+- métrica;
+- impacto;
+- depoimento;
+- integração;
+- patrocínio;
+- capacidade operacional;
+- destino autenticado disponível.
+
+#### OPEN_QUESTION
+
+- copy final;
+- composição completa do rodapé;
+- destinos operacionais finais de Organização e Coletivo;
+- disponibilidade concreta de onboarding/cadastro;
+- conteúdo vivo de lançamento;
+- participantes/cases/evidências a selecionar;
+- estratégia operacional de lançamento.
+
+Esses itens não bloqueiam Design desde que a solução tolere ausência/substituição e não invente operação.
+
+#### PROHIBITED_INFERENCE
+
+Não criar ou insinuar:
+
+- Organização = Business;
+- Coletivo = comunidade Guivos;
+- Coletivo = produto;
+- Organização = empresa apenas;
+- match automático;
+- relevância universal;
+- relevância comprável;
+- patrocínio = prioridade;
+- parceria fictícia;
+- acesso irrestrito a Pessoas ou dados;
+- consentimento coletivo substituindo consentimento individual quando necessário;
+- impacto causal sem evidência;
+- números ou escala inventados;
+- CNPJ/localização como requisito para compreender a Home;
+- CTA comercial dominante na Hero;
+- bifurcação antes da narrativa compartilhada;
+- um caminho superior ao outro;
+- experiência autenticada importada para a Home pública;
+- Intelligence decidindo pelos participantes.
+
+### 33.5 Brief mínimo para a designer
+
+Antes de criar, a designer deve conseguir responder:
+
+1. por que Organizações e Coletivos compartilham uma Home pública;
+2. qual é a pergunta-mãe;
+3. por que a narrativa é compartilhada antes da bifurcação;
+4. como Organização e Coletivo diferem sem hierarquia;
+5. quais são os 11 movimentos;
+6. como Possibilidade, Mecanismo e Oportunidade se distinguem;
+7. o que Direct Supply e Enabling Supply significam e o que não significam;
+8. como os nove Domínios podem aparecer sem virar score/taxonomia rígida;
+9. como relevância, comercial e patrocínio se distinguem;
+10. quais provas/fatos exigem fonte;
+11. como a Home pública se separa da experiência autenticada;
+12. como Hero, Header, Journey e bifurcação final se relacionam;
+13. o que é livre para criação;
+14. o que é proibido inferir;
+15. como a experiência funciona sem mídia rica, motion ou dados reais de prova.
+
+### 33.6 Uso opcional de IA
+
+Se a designer usar IA, aplicar `GKR-UX-HOMES-GENINPUT-001` como Source Lock + brief/prompt opcional.
+
+O contexto inicial deve conter apenas:
+
+1. autoridades comuns vigentes;
+2. este Master;
+3. `GKR-UX-HOME-OC-MEDIA-SUPPLY-001`;
+4. autoridades O/C adicionais somente quando uma dúvida concreta exigir;
+5. matriz operacional desta seção;
+6. objetivo explícito.
+
+Não carregar automaticamente a IA autenticada O/C ou documentos específicos de outras Homes como se fossem requisitos da Home pública.
+
+### 33.7 Fechamento
+
+```text
+HOME ORGANIZAÇÕES E COLETIVOS
+→ SOURCE_READY = PASS
+
+DESIGNER
+→ CAN START FROM DOCUMENTATION AFTER GLOBAL PACKAGE RELEASE
+
+AI
+→ OPTIONAL
+
+FIGMA MAKE
+→ NOT REQUIRED
+
+VISUAL DIRECTION
+→ DESIGN-OWNED
+
+AUTHENTICATED O/C HIFI
+→ SEPARATE GATE / NOT RELEASED HERE
+
+MATERIAL SEMANTIC GAP
+→ 0
+```
+
+Este `PASS` não emite o novo pacote global nem autoriza Product Engineering.
