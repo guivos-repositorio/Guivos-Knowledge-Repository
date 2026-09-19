@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 title: Homes Públicas — Remediação de Prontidão Documental para Designer e IA
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: source_readiness_remediation_in_progress
+maturity: source_readiness_remediation_in_progress_person_pass
 depends_on:
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-GENINPUT-001
@@ -16,7 +16,6 @@ depends_on:
 related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-HOME-MASTERS-REMEDIATION-001
-normative: false
 ---
 
 # Homes Públicas — Remediação de Prontidão Documental para Designer e IA
@@ -340,7 +339,28 @@ NEW EXTERNAL SNAPSHOT
 11. validar navegação, IDs, versões e fontes;
 12. emitir novo pacote somente após gate humano separado.
 
-## 10. Estado
+## 10. Progresso por Home
+
+| Home | Estado | Finding material aberto |
+|---|---|---:|
+| Pessoa | **SOURCE_READY / PASS** | 0 |
+| Organizações e Coletivos | UNDER_AUDIT | — |
+| Mall | NOT_YET_AUDITED | — |
+| Travel | NOT_YET_AUDITED | — |
+| Media | NOT_YET_AUDITED | — |
+| Ads | NOT_YET_AUDITED | — |
+| Business | NOT_YET_AUDITED | — |
+| Intelligence | NOT_YET_AUDITED | — |
+
+Home Pessoa foi fechada após:
+- reconciliação do Movimento 06 no contrato pós-Media;
+- explicitação de condições/fallbacks;
+- matriz operacional específica;
+- brief mínimo para designer;
+- contrato de uso opcional de IA;
+- confirmação de zero gap semântico material.
+
+## 11. Estado
 
 ```text
 SOURCE READINESS REMEDIATION
