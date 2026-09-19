@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 status: active
-version: 2.0.1
+version: 2.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -25,14 +25,14 @@ related:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GPA-006
 normative: true
-maturity: post_audit_eight_home_generative_template_release_granted_pre_execution
+maturity: post_audit_eight_home_ai_optional_source_lock
 ---
 
 # Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 
 ## 0. Gate pós-auditoria
 
-A Auditoria Integral está concluída. Este template volta a ser a autoridade comum para construir os inputs generativos das oito Homes, subordinado ao Handoff e ao contrato de prontidão de produção.
+A Auditoria Integral está concluída. Este template governa apenas o uso opcional de sistemas de IA sobre as oito Homes, subordinado ao Handoff, ao contrato de prontidão e ao pacote-fonte. A designer pode criar manualmente sem utilizar este fluxo.
 
 ```text
 TEMPLATE
@@ -44,9 +44,10 @@ V4 HISTORICAL SOURCE LOCKS
 V5 OPERATIONAL SOURCE LOCK
 → EMITTED / 8 OF 8 / FROZEN WITH SNAPSHOT V5
 
-FIGMA MAKE / GENERATIVE EXECUTION
-→ DESIGN PRODUCTION RELEASE GRANTED
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+AI-ASSISTED USE
+→ OPTIONAL
+→ NOT A REQUIRED DESIGN STAGE
+→ OUTPUT NON-CANONICAL
 ```
 
 A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode completar lacunas de verdade factual ou arquitetura por inferência.
@@ -55,7 +56,7 @@ A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode compl
 
 ## 1. Finalidade
 
-Este documento transforma o controle semântico estabelecido por `GKR-UX-HOMES-DESIGN-HANDOFF-001` em um procedimento operacional reutilizável para exploração de Design com ferramentas generativas.
+Este documento transforma o controle semântico estabelecido por `GKR-UX-HOMES-DESIGN-HANDOFF-001` em um procedimento opcional e reutilizável para consumo por sistemas de IA.
 
 Ele define:
 
@@ -81,20 +82,20 @@ GKR-UX-HOMES-DESIGN-HANDOFF-001
 → governa a fase de Design, o pacote de fontes, as liberdades e as fronteiras
 
 GKR-UX-HOMES-GENINPUT-001
-→ governa como uma execução generativa é preparada, registrada e validada
+→ governa como um uso opcional de IA é preparado, registrado e validado
 ```
 
 Este documento não substitui o handoff nem resume os Documentos Mestres.
 
 Ele operacionaliza o princípio:
 
-> **O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração. A validação reconecta forma e significado.**
+> **O GKR governa o significado. A designer governa a materialização visual. Sistemas de IA podem ampliar a exploração, sem se tornarem etapa obrigatória.**
 
 ---
 
 ## 3. Unidade de execução governada
 
-Cada uso relevante de Figma Make ou ferramenta generativa deve ser tratado como uma **execução identificável**.
+Quando a designer ou outra equipe optar por usar um sistema de IA de forma relevante, esse uso deve ser tratável como uma **execução identificável**.
 
 Uma execução possui:
 
@@ -333,8 +334,8 @@ O prompt deve informar explicitamente à ferramenta que as fontes possuem funç�
 1. AUTORIDADES COMUNS
 → Handoff = processo e boundary da fase
 → GENINPUT = método de Source Lock / prompt / classes
-→ Readiness = contrato de produção e aceite Figma
-→ Operational Flow = sequência Figma Make → aprovação → Figma definitivo → aceite
+→ Readiness = contrato de produção, consumo documental e aceite
+→ Operational Flow = leitura → criação manual pela designer → revisão → refinamento/aceite; IA opcional
 
 2. SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE DA HOME, QUANDO EXISTIR
 → congela decisões próprias daquela Home dentro de sua autoridade
@@ -792,7 +793,8 @@ TEMPLATE
 V5 PER-HOME SOURCE LOCKS
 → EMITTED / 8 OF 8 / FROZEN IN delivery/design-handoff-v5
 
-GENERATIVE EXECUTION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-→ RELEASE AUTHORITY = GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+AI-ASSISTED USE
+→ OPTIONAL / NOT A GOVERNED GATE
+→ SAME SOURCE OF TRUTH AS THE DESIGNER
+→ RELEASE AUTHORITY = GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 ```
