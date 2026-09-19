@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
 title: Handoff Canônico para Design — Home Pública — Guivos Intelligence
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
@@ -542,39 +542,44 @@ Qualquer futura proposta de wireframe, UI ou protótipo deve ser rejeitada ou co
 - [ ] não inventa maturidade, integração, benchmark, métrica ou caso real;
 - [ ] não transforma Intelligence em dashboard, IA ou produto tecnológico isolado.
 
-## 18. Próximo gate — GENINPUT Intelligence
+## 18. Consumo corrente por Design
 
-Com este Handoff integrado, o próximo artefato elegível é o **GENINPUT Intelligence**, em pacote separado.
+O estado posterior já possui Source Lock, Handoff e input operacional. Para a próxima entrega, este documento integra o pacote designer-led das oito Homes.
 
 ```text
 HOME SOURCE LOCK
-→ HANDOFF CANÔNICO PARA DESIGN
-→ GENINPUT INTELLIGENCE
-→ MATERIALIZAÇÃO CONTROLADA
+→ HANDOFF CANÔNICO
+→ LEIA-PRIMEIRO / SOURCE LOCK DA EMISSÃO
+→ DESIGNER HUMANA
+→ OPTIONAL AI ASSISTANCE
+→ HUMAN REVIEW
 ```
 
-O GENINPUT deve traduzir este contrato para o formato operacional necessário à ferramenta ou etapa de Design escolhida, sem criar nova autoridade semântica.
+A designer não precisa utilizar GENINPUT nem ferramenta generativa. Quando IA for usada, o input operacional apenas traduz este contrato; não redefine a Home.
 
 Invariante:
 
-> **GENINPUT TRADUZ O HANDOFF ≠ REDEFINE A HOME**
+> **INPUT OPERACIONAL TRADUZ O HANDOFF ≠ REDEFINE A HOME**
 
-O GENINPUT **não integra este Handoff** e deve ser tratado em PR separada.
+### Acessibilidade e robustez
 
-## 19. O que a integração deste Handoff não inicia automaticamente
+A solução deve preservar compreensão e autonomia em desktop e mobile sem depender exclusivamente de animação, hover, vídeo, cor isolada, visualização complexa ou alta conectividade.
 
-A integração deste documento não inicia automaticamente:
+Quando houver gráficos, relações ou representações analíticas, informação essencial deve possuir alternativa textual/compreensível e não depender apenas de cor, posição ou movimento.
 
-- GENINPUT;
-- execução em Figma Make ou outra ferramenta generativa;
-- wireframe;
-- UI;
-- protótipo;
+Esses requisitos não congelam composição nem linguagem visual.
+
+## 19. Limites preservados
+
+Este Handoff e o Design Production Release posterior não autorizam automaticamente:
+
+- UI final aceita;
 - implementação front-end ou back-end;
 - publicação;
 - Marketing/GTM;
 - pricing;
 - mudança de maturidade técnica;
-- sincronização transversal de `GKR-STATE-001` ou Roadmap.
+- uso de dados reais não autorizados;
+- promoção de hipótese visual a regra de produto.
 
-Cada etapa posterior exige o gate e a autorização correspondentes.
+Cada etapa posterior permanece sujeita ao gate aplicável e à revisão humana.
