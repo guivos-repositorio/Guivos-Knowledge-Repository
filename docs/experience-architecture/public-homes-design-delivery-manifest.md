@@ -23,7 +23,7 @@ related:
 
 ## 1. Finalidade
 
-Este Manifesto define o pacote externo v5 emitido para a futura frente de Design, preservando o snapshot materializado e os gates posteriores de autorização.
+Este Manifesto define o pacote externo v5 emitido para a frente de Design agora liberada, preservando o snapshot materializado e os gates posteriores internos de direção e aceite.
 
 O snapshot v4 permanece histórico e reproduzível, mas não é pacote atual porque seu checkpoint foi superado.
 
