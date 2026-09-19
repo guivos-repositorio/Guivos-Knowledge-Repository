@@ -4,7 +4,7 @@ title: Home Pública — Organizações e Coletivos — Documento Mestre de Arqu
 status: active
 version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -32,7 +32,7 @@ related:
   - journeys/organization.md
   - journeys/collective.md
 normative: false
-maturity: documentally_rebuilt_pre_materialization_under_full_corpus_audit
+maturity: design_input_ready_human_first_ai_optional
 ---
 
 # Home Pública — Organizações e Coletivos
