@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.17.0
+version: 1.18.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-19
 related:
@@ -160,7 +160,8 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C4B — validação integrada individual e promoção de TRN-008..013
 → O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C State Map — DEFINED / CANONICAL DOCUMENTARY
-→ Public Homes Design Production Readiness — PREPARED / V5 SNAPSHOT PENDING / DESIGN RELEASE NOT_GRANTED
+→ Public Homes Design Production Readiness — ACTIVE / V5 SNAPSHOT EMITTED / DESIGN RELEASE NOT_GRANTED
+→ Public Homes Design Handoff v5 Snapshot — delivery/design-handoff-v5 / 34 FILES / 26/26 BYTE-PRESERVED
 ```
 
 D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada. A definição documental do State Map O/C não altera esse estado.
@@ -297,3 +298,7 @@ D5-A/B/C1/C2/C3/C4A/C4B e a frente documental O/C não consomem nem antecipam V5
 ## 11. Próxima evolução possível
 
 A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o **Surface Map lógico-documental canônico** e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` define o **State Map funcional canônico documental**. Os **Priority Flows** estão definidos documentalmente em `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`; a elegibilidade de Navigation Materialization está `PASS` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0`; e a própria Navigation Materialization está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os Authenticated Wireframes low-fidelity foram autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O pacote Delivery + Validation é a referência corrente low-fidelity O/C. A adjudicação `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0` conclui `PASS`; o próximo gate possível é somente uma decisão humana separada de autorização high-fidelity. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
+
+### Public Homes — Design Handoff v5 Snapshot
+
+[GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001](public-homes-design-delivery-v5-snapshot-record.md) registra a emissão externa reproduzível v5 das oito Homes, com 26 fontes canônicas byte-preservadas, oito guias operacionais e `DESIGN PRODUCTION RELEASE = NOT_GRANTED`.
