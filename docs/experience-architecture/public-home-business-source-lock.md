@@ -765,7 +765,7 @@ A produção externa de Design deve sinalizar essas lacunas quando materialmente
 O regime corrente das oito Homes é governado pelas autoridades comuns posteriores a este Source Lock histórico:
 
 ```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.1
+GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.2
 → DESIGNER-FIRST
 → 8 / 8 HOMES
 
@@ -789,7 +789,7 @@ Este Source Lock não concede sozinho Design Release nem implementação. Ele fu
 
 No candidato v6, o conjunto específico do Business deve usar:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.1` como autoridade comum de handoff;
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.2` como autoridade comum de handoff;
 2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — versão exata fixada pelo candidato/snapshot;
 3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
