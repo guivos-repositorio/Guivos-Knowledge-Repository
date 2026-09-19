@@ -3584,7 +3584,7 @@
 </ul>
 <h2 id="estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="project/current-state-register/">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
-<div class="highlight"><pre><span></span><code>GKR-STATE-001 3.43.0
+<div class="highlight"><pre><span></span><code>GKR-STATE-001 3.44.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -3626,8 +3626,10 @@ O/C LOW-FIDELITY WIREFRAME AUTHORIZATION → GRANTED / v1.0.0
 O/C LOW-FIDELITY WIREFRAME DELIVERY → EXECUTED / v0.1.0
 O/C LOW-FIDELITY FUNCTIONAL VALIDATION → PASS / v1.0.0
 O/C CURRENT LOW-FIDELITY REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
+O/C HIGH-FIDELITY ELIGIBILITY → PASS / v1.0.0
+O/C HIGH-FIDELITY DESIGN AUTHORIZATION → NOT_GRANTED
 GKR GLOBAL UPDATE → CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
-FUNCTIONAL ADVANCEMENT → LOW-FIDELITY CYCLE CLOSED / HIGH-FIDELITY NOT AUTHORIZED
+FUNCTIONAL ADVANCEMENT → HIGH-FIDELITY ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED
 NEXT AUTOMATIC EXECUTION → NONE
 SOURCE LOCK → NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
 UXA-102 / V5 → NOT_STARTED
@@ -3721,6 +3723,7 @@ COLETIVO
 <li><a href="experience-architecture/organizations-collectives-authenticated-wireframe-authorization/">O/C — Autorização Governada de Wireframes Low-Fidelity</a></li>
 <li><a href="experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery/">O/C — Entrega de Wireframes Autenticados Low-Fidelity</a></li>
 <li><a href="experience-architecture/organizations-collectives-authenticated-low-fidelity-functional-validation/">O/C — Validação Funcional dos Wireframes Autenticados Low-Fidelity</a></li>
+<li><a href="experience-architecture/organizations-collectives-authenticated-high-fidelity-eligibility/">O/C — Elegibilidade Pós-Validação para Design High-Fidelity</a></li>
 </ul>
 <p>A navegação do repositório não deve ser confundida com a arquitetura de informação de produto, Journey, experiência autenticada ou UI.</p>
 <div class="highlight"><pre><span></span><code>REPOSITORY NAVIGATION
