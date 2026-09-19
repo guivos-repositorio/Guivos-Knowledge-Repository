@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
@@ -668,9 +668,9 @@ A GUIVOS TORNA ESSA CAPACIDADE OPERÁVEL
 ESCALA GLOBAL
 ```
 
-## 23. Liberdades futuras de Design
+## 23. Liberdades de Design
 
-Somente após autorização procedimental específica para incluir Business na fase de Design, poderão ser explorados:
+A autorização posterior das Homes públicas inclui Business no handoff externo. Dentro das invariantes deste Source Lock, a designer pode explorar:
 
 - grid;
 - composição;
@@ -688,9 +688,11 @@ Somente após autorização procedimental específica para incluir Business na f
 - responsividade desktop/mobile;
 - microinterações e motion conceituais;
 - tipografia provisória;
-- iconografia.
+- iconografia;
+- soluções de acessibilidade e robustez;
+- alternativas distintas para desktop, tablet e mobile.
 
-Essas liberdades não podem alterar significado, autoridade ou promessas congeladas neste Source Lock.
+Essas liberdades não podem alterar significado, autoridade ou promessas congeladas neste Source Lock. Acessibilidade e robustez não devem ser usadas como justificativa para prescrever uma estética única.
 
 ## 24. Proibições de inferência
 
@@ -732,9 +734,9 @@ Não transformar exemplos em capacidades vigentes.
 Quando houver autorização de Design, poderão ser utilizados rótulos explícitos, por exemplo:
 
 - `[EMPRESA — EXEMPLO NÃO REAL]`;
-- `[DASHBOARD INTELLIGENCE — CONCEITUAL]`;
-- `[KPI — EXEMPLO / NÃO REAL]`;
-- `[GRÁFICO — DADO ILUSTRATIVO]`;
+- `[REPRESENTAÇÃO INTELLIGENCE — CONCEITUAL]`;
+- `[INDICADOR — EXEMPLO / NÃO REAL]`, se aplicável;
+- `[VISUALIZAÇÃO — DADO ILUSTRATIVO]`, se aplicável;
 - `[PREÇO — A DEFINIR]`;
 - `[LIMITE DO PLANO — A DEFINIR]`;
 - `[MOEDA — CONFORME MERCADO]`;
@@ -762,45 +764,41 @@ Continuam fora deste Source Lock:
 - países suportados;
 - regras fiscais e tributárias;
 - arquitetura técnica do checkout/contratação;
-- URL e Documento Mestre da futura Home Guivos Intelligence;
-- dashboard final e KPIs exatos do Intelligence;
+- URL pública/roteamento final do Guivos Intelligence, quando ainda não formalizados;
+- dados, indicadores e métricas reais do Intelligence;
 - direção visual final da Home Business.
 
 A materialização futura deve sinalizar essas lacunas, não resolvê-las por inferência.
 
-## 27. Bloqueio procedimental de Design
+## 27. Estado procedimental corrente
 
-O handoff canônico vigente `GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.1.0 cobre explicitamente seis Homes:
-
-1. Pessoa;
-2. Organizações e Coletivos;
-3. Mall;
-4. Travel;
-5. Media;
-6. Ads.
-
-**Guivos Business ainda não está incluído nessa autorização.**
-
-Consequência:
+O handoff canônico e o Design Production Release posteriores passaram a cobrir as oito Homes públicas, incluindo Business.
 
 ```text
 SOURCE LOCK BUSINESS
-→ PODE SER CONGELADO
+→ ACTIVE
+
+PUBLIC HOMES DESIGN PRODUCTION RELEASE
+→ GRANTED
 
 DESIGN BUSINESS
-→ AINDA NÃO AUTORIZADO
+→ EXTERNAL / DESIGNER-LED
+→ AI OPTIONAL
 
-FERRAMENTA GENERATIVA
-→ AINDA NÃO DEVE RECEBER EXECUÇÃO OPERACIONAL PARA BUSINESS
+V6 DEFINITIVE HANDOFF
+→ HOLD UNTIL DOCUMENTATION READINESS CLOSES
+
+IMPLEMENTATION
+→ NOT AUTHORIZED
 ```
 
-Este Source Lock não amplia silenciosamente o escopo do handoff canônico.
+O release de Design não amplia autoridade de produto, economia, pricing, privacidade ou implementação.
 
-## 28. Pacote futuro de handoff do Business
+## 28. Pacote de handoff do Business
 
-Quando houver autorização explícita para Design, o pacote mínimo recomendado será:
+O pacote mínimo de consumo é:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` em versão que inclua Guivos Business;
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` vigente;
 2. este Source Lock;
 3. `GKR-UX-HOME-BUSINESS-MASTER-001`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002`;
