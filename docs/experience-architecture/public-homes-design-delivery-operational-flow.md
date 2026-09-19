@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
 title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 status: active
-version: 2.0.0
+version: 2.0.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -11,8 +11,10 @@ depends_on:
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
+related:
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 normative: false
-maturity: post_audit_v5_operational_flow_pre_release
+maturity: post_audit_v5_operational_flow_release_granted_pre_execution
 ---
 
 # Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
@@ -23,11 +25,13 @@ Este fluxo governa como a designer deve consumir o pacote v5, usar Figma Make pa
 
 ## 2. Gate de início
 
-Não iniciar execução enquanto faltar qualquer item:
+O gate de início foi satisfeito. A execução pode começar somente dentro deste fluxo, porque coexistem:
 
 - snapshot v5 materializado e validado;
 - Source Lock operacional da Home;
-- Design Production Release humano explícito.
+- `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0 = GRANTED`.
+
+A autorização de início não elimina os gates internos de revisão humana, direção criativa aprovada e aceite final.
 
 ## 3. Isolamento de contexto
 
@@ -125,4 +129,4 @@ Uma melhoria puramente criativa que não altera contrato pode ocorrer dentro do 
 
 ## 10. Estado
 
-`FLOW v2 READY / EXECUTION NOT RELEASED UNTIL V5 SNAPSHOT + HUMAN DESIGN PRODUCTION RELEASE`.
+`FLOW v2.0.1 READY / DESIGN PRODUCTION RELEASE GRANTED / FIGMA MAKE AUTHORIZED TO EXECUTE / NOT_STARTED / FINAL FIGMA REQUIRES HUMAN DIRECTION APPROVAL`.
