@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.2.6
+version: 2.2.7
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -286,7 +286,7 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-OC-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
+- `GKR-UX-HOME-OC-MASTER-001 v1.0.2` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
 
 ### 6.3 Home Pública — Guivos Mall
@@ -300,7 +300,7 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.1` — `docs/experience-architecture/public-home-travel-master-document.md`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.2` — `docs/experience-architecture/public-home-travel-master-document.md`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
 
 ### 6.5 Home Pública — Guivos Media
@@ -321,10 +321,10 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.2` — `docs/experience-architecture/public-home-business-source-lock.md`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.2` — `docs/experience-architecture/public-home-business-master-document.md`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.3` — `docs/experience-architecture/public-home-business-source-lock.md`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` — `docs/experience-architecture/public-home-business-master-document.md`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.1` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.2` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.6.0` — `docs/product-architecture/business.md`.
 
 ### 6.8 Home Pública — Guivos Intelligence
