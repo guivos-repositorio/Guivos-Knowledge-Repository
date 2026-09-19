@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-UX-STATE-001
 title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.7.0
+version: 1.8.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
@@ -14,6 +14,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
+  - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
   - UXA-014
   - UXA-019
 ---
@@ -38,7 +39,7 @@ Isso vale para, no mínimo:
 - UI final;
 - testes de usabilidade dessas superfícies.
 
-Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados e Priority Flows autenticados já foram definidos documentalmente em instrumentos próprios. A elegibilidade de Navigation Materialization também foi promovida como `PASS` em autoridade própria. Esse avanço **não equivale** a navegação materializada, wireframe, UI, protótipo ou implementação.
+Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados, Priority Flows e Navigation Materialization autenticada já foram definidos documentalmente em instrumentos próprios. A Navigation Materialization canônica está em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Esse avanço **não equivale** a wireframe, UI, protótipo ou implementação.
 
 ## 2. O que já existe e pode alimentar a futura UX
 
@@ -58,7 +59,7 @@ Já existem insumos e autoridades documentais relevantes:
 - Documento Mestre da Home pública de Organizações e Coletivos;
 - `RP-002` — Research sobre supply, papéis, rede, valor e modelo econômico.
 
-Esses materiais são **inputs para a construção futura da UX**, não wireframes implícitos. Jobs, IA, Surface Map, State Map e Priority Flows, somados à elegibilidade `PASS`, não autorizam inferir navegação materializada ou decisões visuais.
+Esses materiais são **inputs para a construção futura da UX**, não wireframes implícitos. Jobs, IA, Surface Map, State Map, Priority Flows, elegibilidade e Navigation Materialization canônica não autorizam inferir decisões visuais.
 
 ## 3. Correção dos registros anteriores
 
@@ -143,8 +144,8 @@ A construção deverá continuar do estado documental vigente, e não dos SVGs h
 5. mapa funcional de estados — definido documentalmente em `GKR-UX-ORGCOL-AUTH-STATE-MAP-001`;
 6. Priority Flows — definidos documentalmente em `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001`;
 7. elegibilidade de Navigation Materialization — `PASS / ACTIVE / CANONICAL` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001`;
-8. materializar navegação **somente mediante autorização humana separada**;
-9. construir wireframes de baixa fidelidade **somente quando essa materialização estiver concluída e o wireframing estiver autorizado**;
+8. Navigation Materialization — `DEFINED / CANONICAL DOCUMENTARY` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`;
+9. construir wireframes de baixa fidelidade **somente mediante autorização humana separada**;
 10. validar funcionalmente os wireframes reais;
 11. reformular quando necessário;
 12. avançar para UI somente quando autorizado;
@@ -211,7 +212,7 @@ São superfícies e problemas distintos.
 | mapa funcional de estados autenticados | **definido documentalmente** | **definido documentalmente** |
 | Priority Flows | **definidos documentalmente** | **definidos documentalmente** |
 | Navigation Materialization Eligibility | **PASS / ACTIVE / CANONICAL** | **PASS / ACTIVE / CANONICAL** |
-| Navigation Materialization | **não autorizada / não materializada** | **não autorizada / não materializada** |
+| Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** |
 | wireframe | **pendente** | **pendente** |
 | validação de wireframe | **pendente** | **pendente** |
 | UI | pendente | pendente |
@@ -322,4 +323,4 @@ A proveniência permanece no histórico Git e em referências textuais explicita
 
 ## 12. Regra final
 
-> **O GKR define função, conteúdo, estados, regras, critérios e Priority Flows documentais; a elegibilidade de Navigation Materialization está `PASS`, mas a materialização continua exigindo autorização humana própria; Design permanece a autoridade exclusiva para wireframes, mockups, protótipos, layout e materialização visual. Artefatos históricos não podem antecipar nem restringir essa autoridade.**
+> **O GKR define função, conteúdo, estados, regras, critérios, Priority Flows e Navigation Materialization documentais. `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` é a autoridade canônica pré-wireframe; Design permanece a autoridade exclusiva para wireframes, mockups, protótipos, layout e materialização visual, todos ainda não liberados. Artefatos históricos não podem antecipar nem restringir essa autoridade.**
