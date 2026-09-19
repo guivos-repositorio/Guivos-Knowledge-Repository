@@ -207,30 +207,27 @@ O contexto de Business permanece deliberadamente mais amplo. Usar somente o paco
 
 Intelligence possui cadeia específica já convergida e deve ser materializado sem ser confundido com tecnologia, dashboard ou mecanismo de decisão.
 
-Ordem operacional específica:
+Ordem operacional específica no pacote v5:
 
 ```text
-N0 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
-     → congela a Home para materialização
+N0 — LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL V5
+     → fixa checkpoint, fontes, prompt e estado EXPLORAÇÃO
 
-N1 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
-     → traduz o Source Lock em contrato de Design
+N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+     → congela significado e invariantes da Home
 
-N2 — GKR-UX-HOME-INTELLIGENCE-GENINPUT-001 v1.0.0
-     → fixa o input operacional da primeira exploração
+N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
+     → traduz a Home para o contrato de Design
 
 N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
-     + GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1
-     → preservam narrativa, copy e função dos onze movimentos
+     → preserva narrativa, copy e função pública
 
 N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
      + GPA-006 v2.0.0
      → governam significado e limites superiores do produto
-
-TRANSVERSAL — GKR-UX-HOMES-OUTCOME-001 v1.0.0
 ```
 
-Para a ferramenta de Design, o pacote direto pode permanecer compacto conforme o GENINPUT. As autoridades superiores continuam válidas por referência e devem ser consultadas quando houver dúvida material.
+O GENINPUT histórico de Intelligence permanece como proveniência de uma primeira exploração e não integra o input operacional do v5. Autoridades narrativas superiores continuam válidas por referência e devem ser consultadas quando houver dúvida material.
 
 ---
 
