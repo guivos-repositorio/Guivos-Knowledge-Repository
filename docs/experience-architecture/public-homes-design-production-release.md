@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 title: Homes Públicas — Autorização Governada de Design Production Release
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
-maturity: design_production_release_granted_pre_execution
+maturity: design_production_release_granted_external_designer_start_deferred_for_source_hardening
 depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -17,64 +17,77 @@ depends_on:
 related:
   - GKR-STATE-001
   - GKR-HOME-MASTERS-REMEDIATION-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
 ---
 
 # Homes Públicas — Autorização Governada de Design Production Release
 
 ## 1. Finalidade
 
-Esta autoridade registra o ato humano explícito que encerra o gate de pré-release das oito Homes públicas e libera o início da fase externa de Design sobre o snapshot v5 já emitido, materializado e validado.
+Esta autoridade registra o ato humano explícito que concedeu o Design Production Release das oito Homes públicas e sua posterior reconciliação operacional.
 
-A decisão é deliberadamente separada da emissão do snapshot:
+O release continua válido como autorização para a futura produção externa de Design. A decisão humana posterior de 19/09/2026, contudo, determina que o GKR/ChatGPT **não produzirá arquivos, protótipos ou direção visual no Figma** e que o início operacional da designer fica temporariamente postergado até o fechamento da auditoria final de prontidão das fontes.
 
 ```text
-SNAPSHOT EMISSION
-→ COMPLETED
-
 DESIGN PRODUCTION RELEASE
 → GRANTED
 
-AUTHORIZATION
-≠ EXECUTION
-≠ DIRECTION APPROVAL
-≠ FINAL FIGMA ACCEPTANCE
-≠ IMPLEMENTATION
+GKR / CHATGPT VISUAL EXECUTION
+→ OUT OF SCOPE
+→ NO FIGMA FILE CREATION
+→ NO VISUAL PROTOTYPING
+
+EXTERNAL DESIGNER START
+→ DEFERRED BY HUMAN DECISION
+→ UNTIL FINAL SOURCE READINESS PASS
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
 ```
 
-## 2. Decisão governada
+## 2. Targets autorizados
+
+O release abrange:
+
+- Home Pessoa;
+- Home Organizações e Coletivos;
+- Home Mall;
+- Home Travel;
+- Home Media;
+- Home Ads;
+- Home Business;
+- Home Intelligence.
+
+A autorização não cria uma direção visual comum, não prescreve identidade visual e não torna nenhuma ferramenta generativa obrigatória.
+
+## 3. Papel do GKR, da designer e de sistemas de AI
 
 ```text
-PUBLIC HOMES DESIGN PRODUCTION RELEASE
-→ GRANTED
+GKR
+→ SIGNIFICADO / FUNÇÃO / LIMITES / VERDADE / FONTES / RASTREABILIDADE
 
-AUTHORITY
-→ GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+DESIGNER
+→ EXPRESSÃO VISUAL / CRIATIVA
+→ CRIAÇÃO MANUAL DO FIGMA
+→ AUTONOMIA SOBRE TIPOGRAFIA / PALETA / IMAGEM / COMPOSIÇÃO / GRID / MOTION / LINGUAGEM VISUAL
 
-AUTHORIZED TARGETS
-→ HOME PESSOA
-→ HOME ORGANIZAÇÕES E COLETIVOS
-→ HOME MALL
-→ HOME TRAVEL
-→ HOME MEDIA
-→ HOME ADS
-→ HOME BUSINESS
-→ HOME INTELLIGENCE
+SISTEMAS DE AI
+→ APOIO OPCIONAL À CRIAÇÃO
+→ CONSUMO DO PACOTE DOCUMENTAL
+→ SEM AUTORIDADE ARQUITETURAL
+→ SEM PROMOÇÃO AUTOMÁTICA DE OUTPUT A VERDADE
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ AUTHORIZED TO EXECUTE
-→ NOT_STARTED
-
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED BY THIS ACT
-→ REQUIRES HUMAN DIRECTION APPROVAL
+GKR / CHATGPT
+→ NÃO PRODUZ FIGMA
+→ NÃO SE TORNA CO-DESIGNER VISUAL
 ```
 
-O release concede permissão para iniciar a exploração e materialização de Design conforme o fluxo governado. Ele não executa Design neste mesmo checkpoint.
+Ferramentas de AI podem ser utilizadas pela designer ou pela Guivos como apoio de exploração, conteúdo candidato, síntese ou ideação, desde que o Source Lock e as classes operacionais sejam preservados.
 
-## 3. Evidência de entrada
+## 4. Evidência histórica de entrada
 
 ```text
-ORIGIN MAIN FOR SNAPSHOT
+ORIGIN MAIN FOR V5 SNAPSHOT
 → aa1b524c20f6707d007208222ba8581af097c38d
 
 SNAPSHOT BRANCH
@@ -96,100 +109,141 @@ CANONICAL BLOB PRESERVATION
 → MISMATCHES = 0
 ```
 
-## 4. Regra de congelamento do snapshot
+## 5. Estado do snapshot v5 após a decisão atual
 
-Este ato não reescreve `delivery/design-handoff-v5`.
+O snapshot v5 permanece imutável e reproduzível como registro histórico do pacote então liberado.
 
 ```text
-SNAPSHOT V5
+V5
 → FROZEN / UNCHANGED
+→ HISTORICAL FOR NEW DESIGN START AFTER THIS SOURCE-HARDENING FRONT
 
-RELEASE AUTHORITY
-→ POST-SNAPSHOT GOVERNANCE RECORD
-→ SUPPLEMENTS THE PACKAGE
-→ DOES NOT MUTATE CANONICAL SOURCE BLOBS
+MUTATION OF V5
+→ PROHIBITED
+
+NEXT CURRENT PACKAGE
+→ V6 CANDIDATE
+→ NOT_EMITTED
+→ DEPENDS ON FINAL SOURCE READINESS PASS
 ```
-
-Os documentos congelados podem registrar que o release ainda não havia sido concedido no instante da emissão. Este documento é o ato posterior que satisfaz aquele gate temporal, sem alterar as verdades semânticas do pacote.
-
-## 5. Fonte operacional de cada Home
-
-A execução deve trabalhar uma Home por vez e consumir:
-
-1. `00-COMUM`;
-2. o `00-LEIA-PRIMEIRO` da Home;
-3. somente as fontes específicas daquela Home;
-4. esta autoridade de release como prova do gate temporal satisfeito.
-
-As oito classes operacionais continuam obrigatórias: `CANONICAL`, `DESIGN_CREATIVE`, `CONTENT_CANDIDATE`, `DESIGN_HYPOTHESIS`, `PROTOTYPE_PLACEHOLDER`, `REAL_DATA_REQUIRED`, `OPEN_QUESTION` e `PROHIBITED_INFERENCE`.
 
 ## 6. Liberdade criativa preservada
 
-O release não transforma estética em contrato canônico. Identidade visual, tipografia, paleta, imagens, composição, grid, iconografia, motion, aparência de componentes, linguagem gráfica, atmosfera e copy/tom não congelados permanecem Design-owned dentro das fronteiras semânticas.
+Identidade visual, tipografia, paleta, imagens, fotografia, ilustração, iconografia, composição, grid, ritmo, motion, aparência de componentes, linguagem gráfica, atmosfera e copy/tom não congelados permanecem Design-owned.
 
 ```text
-GKR
-→ SIGNIFICADO / FUNÇÃO / LIMITES / VERDADE
-
-DESIGN
-→ EXPRESSÃO VISUAL / CRIATIVA
-
 DESIGN FREEDOM
 ≠ PRODUCT REDEFINITION
 ≠ FACTUAL INVENTION
+≠ CLAIM WITHOUT EVIDENCE
 ```
 
-## 7. Execução inicialmente liberada
+A ausência de definição visual prévia não é finding de prontidão.
+
+## 7. Classes operacionais preservadas
+
+Continuam obrigatórias:
+
+- `CANONICAL`;
+- `DESIGN_CREATIVE`;
+- `CONTENT_CANDIDATE`;
+- `DESIGN_HYPOTHESIS`;
+- `PROTOTYPE_PLACEHOLDER`;
+- `REAL_DATA_REQUIRED`;
+- `OPEN_QUESTION`;
+- `PROHIBITED_INFERENCE`.
+
+Essas classes devem ser compreensíveis por designer humana e por sistemas de AI, sem exigir interpretação do histórico do repositório.
+
+## 8. Gate documental reaberto
+
+A frente corrente é `GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001`.
+
+Ela deve comprovar:
 
 ```text
-FIGMA MAKE / EQUIVALENT GENERATIVE TOOL
-→ EXPLORAÇÃO / PROTÓTIPO
-→ NON-CANONICAL OUTPUT
-→ HUMAN REVIEW REQUIRED
+8 / 8 HOMES
+→ AUDITED
+
+P0
+→ 0 OPEN
+
+P1
+→ 0 OPEN
+
+DESIGNER CONSUMABILITY
+→ PASS
+
+AI CONSUMABILITY
+→ PASS
+
+V6 SOURCE PACKAGE ELIGIBILITY
+→ PASS
 ```
 
-Nenhuma saída automática se torna canônica por ter sido gerada.
+Até esse fechamento, a Guivos não inicia o serviço definitivo da designer por esta frente.
 
-## 8. Gate humano de direção permanece obrigatório
+## 9. Gate humano posterior de Design
+
+Quando a designer iniciar, o processo visual permanece externo ao GKR. Revisões e aceite humano continuam necessários para confirmar aderência semântica e a conclusão contratual do serviço, mas o GKR não exige uma ferramenta generativa nem produz uma exploração visual intermediária própria.
 
 ```text
-FIGMA MAKE / EXPLORATION
+SOURCE PACKAGE V6 PASS
 ↓
-HUMAN REVIEW
+EXTERNAL DESIGNER
 ↓
-DIRECTION APPROVED
+CREATIVE PRODUCTION
 ↓
-FINAL FIGMA PRODUCTION
+HUMAN REVIEW / ACCEPTANCE
+↓
+SEPARATE IMPLEMENTATION GATE
 ```
 
-DESIGN PRODUCTION RELEASE não equivale a aprovação final de direção nem a aceite final do Figma.
+## 10. Limites explícitos
 
-## 9. Limites explícitos
+Este ato não autoriza:
 
-Este ato não autoriza Product Engineering, frontend/backend, publicação, deploy, nova arquitetura de produto, nova funcionalidade não governada, alteração de modelo econômico, Marketing/GTM, Research com participantes reais, claims não sustentados, promoção de `GKR-SURF-*`/`GKR-TRN-*`, `UXA-102/V5` ou high-fidelity da experiência autenticada O/C por inferência.
+- Product Engineering;
+- frontend/backend;
+- publicação/deploy;
+- nova arquitetura de produto;
+- funcionalidade não governada;
+- alteração de modelo econômico;
+- GTM/publicação;
+- Research com participantes reais;
+- claims, preços, parceiros, métricas, resultados ou disponibilidade sem fonte;
+- promoção de `GKR-SURF-*`/`GKR-TRN-*`;
+- `UXA-102/V5`;
+- high-fidelity autenticado O/C por inferência.
 
 ```text
 PUBLIC HOME O/C DESIGN RELEASE
 ≠ O/C AUTHENTICATED HIGH-FIDELITY AUTHORIZATION
 ```
 
-## 10. Estado após a autorização
+## 11. Estado vigente
 
 ```text
-V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED / FROZEN
-
 DESIGN PRODUCTION RELEASE
 → GRANTED
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+SOURCE READINESS HARDENING
+→ IN_PROGRESS
 
-HUMAN DIRECTION APPROVAL
-→ NOT_YET_PERFORMED
+EXTERNAL DESIGNER START
+→ DEFERRED UNTIL PASS
 
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED
+GKR / CHATGPT FIGMA EXECUTION
+→ NOT TO BE PERFORMED
+
+AI SUPPORT FOR DESIGN
+→ OPTIONAL / SOURCE-BOUND
+
+V5
+→ FROZEN / HISTORICAL FOR NEW START
+
+V6
+→ NOT_EMITTED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -198,6 +252,8 @@ UXA-102 / V5
 → NOT_STARTED
 ```
 
-## 11. Próximo movimento legítimo
+## 12. Próximo movimento legítimo
 
-O próximo movimento permitido é a execução externa de Design, uma Home por vez, iniciando pela leitura do `LEIA-PRIMEIRO`, autoridades comuns e fontes específicas, seguida de Figma Make/exploração e revisão humana.
+O próximo movimento legítimo é concluir a auditoria documental das oito Homes e das autoridades comuns, corrigir qualquer finding material e adjudicar elegibilidade de um novo pacote v6.
+
+Nenhuma criação ou edição de arquivo Figma faz parte desta frente.
