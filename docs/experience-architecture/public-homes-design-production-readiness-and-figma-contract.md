@@ -101,7 +101,7 @@ Decisão: reconciliar os quatro documentos para estado pós-auditoria.
 
 ### F-03 — template ainda descrevia cinco Homes
 
-Decisão: `GKR-UX-HOMES-GENINPUT-001 v2.0.0` cobre as oito Homes.
+Decisão: `GKR-UX-HOMES-GENINPUT-001 v2.1.0` cobre as oito Homes.
 
 ### F-04 — Source Locks operacionais apontavam checkpoints antigos
 
@@ -125,23 +125,23 @@ Reclassificação humana: **não é gap**. É liberdade deliberada de Design.
 
 Quatro autoridades comuns acompanham todas as Homes:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.5.0`;
-2. `GKR-UX-HOMES-GENINPUT-001 v2.0.0`;
-3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0`;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v2.0.0`.
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.0`;
+2. `GKR-UX-HOMES-GENINPUT-001 v2.1.0`;
+3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.1.0`;
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.0`.
 
 Fontes específicas:
 
 ### Pessoa
-- `GKR-UX-HOME-MASTER-001 v1.0.2`;
+- `GKR-UX-HOME-MASTER-001 v1.1.0`;
 - `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### Organizações e Coletivos
-- `GKR-UX-HOME-OC-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-OC-MASTER-001 v1.1.0`;
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### Mall
-- `GKR-UX-HOME-MALL-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.1.0`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
 
 Contrato corrente que o Source Lock v5 deve explicitar:
@@ -153,7 +153,7 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 - `MALL-HS-06 SPONSORED_EXPOSURE` — exposição paga permanece identificada e não se disfarça de relevância orgânica.
 
 ### Travel
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.0`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
 
 Contrato corrente que o Source Lock v5 deve explicitar:
@@ -165,16 +165,16 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 - `TRAVEL-HS-06 CAMPAIGN_OR_SPONSORED` — campanha é temporária e patrocínio permanece identificado.
 
 ### Media
-- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.1.0`;
 - `GPA-005 v1.2.0`.
 
 ### Ads
-- `GKR-UX-HOME-ADS-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-ADS-MASTER-001 v1.1.0`;
 - `GPA-007 v1.3.0`.
 
 ### Business
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.0`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.0`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
 - `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0`;
 - `GPA-004 v1.6.0`.
@@ -182,11 +182,11 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 ### Intelligence
 - `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0`;
 - `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.0`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0`;
 - `GPA-006 v2.0.0`.
 
-O snapshot v5 deve capturar todas as fontes do mesmo commit canônico pós-merge e registrar seus SHAs.
+O snapshot v5 permanece histórico. O próximo pacote externo somente poderá ser emitido como v6 após fechamento desta frente, captura do commit canônico e validação exata das fontes vigentes.
 
 ### 6.9 Fechamento de fontes do candidato
 
@@ -517,7 +517,7 @@ ZERO FINDING MATERIAL ABERTO
 ATO HUMANO EXPLÍCITO DE DESIGN PRODUCTION RELEASE
 ```
 
-O gate humano foi posteriormente satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`. A autorização libera o início da fase de Design, sem antecipar os gates internos de direção criativa, aceite final ou implementação.
+O gate humano foi posteriormente satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0`. A autorização libera o início da fase de Design, sem antecipar os gates internos de direção criativa, aceite final ou implementação.
 
 ## 16. Estado
 
@@ -532,7 +532,7 @@ V5 SNAPSHOT
 → EMITTED / MATERIALIZED / VALIDATED
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
 
 DESIGNER-LED CREATION
 → AUTHORIZED
