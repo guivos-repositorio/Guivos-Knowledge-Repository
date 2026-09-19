@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
 status: draft
-version: 0.2.3
+version: 0.2.4
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -52,7 +52,7 @@ GKR-UX-HOME-INTELLIGENCE-MASTER-001
 → versão corrente definida no frontmatter e pinada pelo candidato/snapshot
 ```
 
-Este documento ainda **não é o Home Source Lock**.
+Este documento é o Master semântico da Home e deve ser consumido em conjunto com o Home Source Lock vigente. Ele não substitui o Source Lock.
 
 ## 2. Estado governado
 
@@ -76,10 +76,22 @@ DOCUMENTO MESTRE
 → CURRENT VERSION IN FRONTMATTER
 
 HOME SOURCE LOCK
-→ NÃO CRIADO
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
+→ EXISTS / ACTIVE
+→ EXACT VERSION PINNED BY CURRENT DELIVERY CANDIDATE
 
-WIREFRAME / UI / PROTÓTIPO / DESIGN HANDOFF
-→ NÃO INICIADOS NESTE FLUXO
+DESIGN HANDOFF
+→ GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
+→ EXISTS / ACTIVE
+
+PUBLIC HOME DESIGN PRODUCTION
+→ GRANTED FOR EXTERNAL DESIGNER
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
 ```
 
 ## 3. Definição superior preservada
@@ -684,14 +696,13 @@ BUSINESS
 
 ## 17. O que este Documento Mestre não autoriza
 
-A criação deste documento não autoriza automaticamente:
+Este documento não libera por si só implementação, integração técnica, publicação comercial, pricing ou criação de autoridades novas por inferência.
 
-- criação de novo Home Source Lock por inferência;
-- wireframe;
-- UI;
-- protótipo;
-- Figma;
-- prompt generativo de Design;
+A produção externa de Design da Home Intelligence — incluindo wireframe, UI, protótipo e Figma — já está autorizada pelo release comum vigente. IA permanece opcional e sob controle da designer.
+
+Continuam não autorizados por inferência:
+
+- criação de novo Home Source Lock;
 - implementação front-end;
 - integração técnica;
 - publicação comercial;
