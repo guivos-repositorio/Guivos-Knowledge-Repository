@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -150,7 +150,7 @@ Quatro autoridades comuns acompanham todas as Homes:
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.0`;
 2. `GKR-UX-HOMES-GENINPUT-001 v2.1.0`;
 3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.1.0`;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.0`.
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.1`.
 
 Fontes específicas:
 
@@ -187,11 +187,11 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 - `TRAVEL-HS-06 CAMPAIGN_OR_SPONSORED` — campanha é temporária e patrocínio permanece identificado.
 
 ### Media
-- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1`;
 - `GPA-005 v1.2.0`.
 
 ### Ads
-- `GKR-UX-HOME-ADS-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.1`;
 - `GPA-007 v1.3.0`.
 
 ### Business
