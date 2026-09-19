@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
 depends_on:
   - GKR-UX-HOME-BUSINESS-MASTER-001
@@ -58,7 +58,7 @@ CHECKPOINT DO GKR
 main @ 41dd34ca7f2a22776b8eea57d99ef1b77db82969
 
 DOCUMENTO MESTRE
-GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0
+GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.0
 
 CONVERSÃO VIGENTE
 GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0
@@ -400,22 +400,31 @@ Supporting copy de referência:
 
 > **Visualize participação, recorrência, utilização, interesses agregados e movimentos ao longo do tempo para compreender cada vez melhor suas iniciativas dentro da Guivos.**
 
-### Direção visual congelada
+### Requisito semântico congelado; expressão visual livre
 
-A futura materialização deve demonstrar Intelligence prioritariamente de forma visual, podendo utilizar representações de:
+A futura materialização deve tornar **tangível e compreensível** o valor do Intelligence.
 
-- dashboard;
-- KPIs;
+Podem ser exploradas, entre outras possibilidades:
+
+- relações visuais;
+- séries temporais;
 - gráficos;
-- evolução temporal;
-- participação;
-- utilização;
-- recorrência;
-- tendências;
-- interesses agregados;
-- movimentos e distribuições.
+- indicadores;
+- comparações;
+- padrões;
+- narrativas de mudança;
+- outras soluções criadas pela designer.
 
-Essas representações não autorizam métricas, números ou layout final inventados como reais.
+```text
+VALOR DO INTELLIGENCE TANGÍVEL
+→ CANONICAL
+
+DASHBOARD / KPI / GRÁFICO / SÉRIE TEMPORAL
+→ DESIGN_HYPOTHESIS
+→ NÃO OBRIGAÇÃO VISUAL
+```
+
+Nenhuma representação autoriza métricas, números ou resultados inventados como reais.
 
 ### CTA congelado
 
@@ -662,9 +671,9 @@ A GUIVOS TORNA ESSA CAPACIDADE OPERÁVEL
 ESCALA GLOBAL
 ```
 
-## 23. Liberdades futuras de Design
+## 23. Liberdades de Design
 
-Somente após autorização procedimental específica para incluir Business na fase de Design, poderão ser explorados:
+O Design Production Release das Homes públicas já foi concedido. Podem ser explorados:
 
 - grid;
 - composição;
@@ -721,9 +730,9 @@ Não inventar como vigentes:
 
 Não transformar exemplos em capacidades vigentes.
 
-## 25. Placeholders permitidos em futura exploração
+## 25. Placeholders permitidos
 
-Quando houver autorização de Design, poderão ser utilizados rótulos explícitos, por exemplo:
+Podem ser utilizados rótulos explícitos, por exemplo:
 
 - `[EMPRESA — EXEMPLO NÃO REAL]`;
 - `[DASHBOARD INTELLIGENCE — CONCEITUAL]`;
@@ -762,37 +771,29 @@ Continuam fora deste Source Lock:
 
 A materialização futura deve sinalizar essas lacunas, não resolvê-las por inferência.
 
-## 27. Bloqueio procedimental de Design
+## 27. Estado procedimental de Design
 
-O handoff canônico vigente `GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.1.0 cobre explicitamente seis Homes:
-
-1. Pessoa;
-2. Organizações e Coletivos;
-3. Mall;
-4. Travel;
-5. Media;
-6. Ads.
-
-**Guivos Business ainda não está incluído nessa autorização.**
-
-Consequência:
+Business integra o Handoff comum e o Design Production Release vigente.
 
 ```text
-SOURCE LOCK BUSINESS
-→ PODE SER CONGELADO
-
 DESIGN BUSINESS
-→ AINDA NÃO AUTORIZADO
+→ AUTHORIZED EXTERNALLY
 
-FERRAMENTA GENERATIVA
-→ AINDA NÃO DEVE RECEBER EXECUÇÃO OPERACIONAL PARA BUSINESS
+CREATION
+→ DESIGNER-LED / MANUAL-FIRST
+
+AI
+→ OPTIONAL
+
+THIS SOURCE LOCK
+→ GOVERNS TRUTH / DOES NOT DEFINE VISUAL IDENTITY
 ```
 
-Este Source Lock não amplia silenciosamente o escopo do handoff canônico.
+A existência desta autorização não libera Product Engineering nem implementação.
 
-## 28. Pacote futuro de handoff do Business
+## 28. Pacote de handoff do Business
 
-Quando houver autorização explícita para Design, o pacote mínimo recomendado será:
+O pacote mínimo recomendado é:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` em versão que inclua Guivos Business;
 2. este Source Lock;
@@ -816,7 +817,7 @@ Antes de qualquer futura materialização, confirmar:
 - Benefícios não reapareceram como movimento separado?;
 - Pontos permanecem fora da Home?;
 - ecossistema é apresentado pela vida da pessoa antes dos produtos?;
-- Intelligence é visual e positivo sem inventar métricas reais?;
+- Intelligence é tangível e compreensível sem impor dashboard/KPI/gráfico e sem inventar métricas reais?;
 - CTA `Conheça o Guivos Intelligence` foi preservado?;
 - Start, Growth, Scale e Enterprise permanecem comparáveis sem entitlements inventados?;
 - o configurador aparece como mais do que calculadora de preço?;
