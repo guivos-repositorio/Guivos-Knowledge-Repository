@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 title: Homes Públicas — Autorização Governada de Design Production Release
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
-maturity: design_production_release_granted_pre_execution
+maturity: design_production_release_granted_designer_first
 depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -60,16 +60,18 @@ AUTHORIZED TARGETS
 → HOME BUSINESS
 → HOME INTELLIGENCE
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ AUTHORIZED TO EXECUTE
-→ NOT_STARTED
+DESIGNER MANUAL CREATION
+→ AUTHORIZED / EXTERNAL DESIGNER-OWNED
 
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED BY THIS ACT
-→ REQUIRES HUMAN DIRECTION APPROVAL
+AI SUPPORT
+→ OPTIONAL / NON-CANONICAL / NOT A REQUIRED STAGE
+
+FINAL DESIGN PRODUCTION
+→ DESIGNER-OWNED
+→ SUBJECT TO HUMAN REVIEW AND ACCEPTANCE
 ```
 
-O release concede permissão para iniciar a exploração e materialização de Design conforme o fluxo governado. Ele não executa Design neste mesmo checkpoint.
+O release concede permissão para a designer iniciar a criação manual conforme o pacote governado. Ele não obriga prototipação por IA nem materializa Design dentro do GKR.
 
 ## 3. Evidência de entrada
 
@@ -142,10 +144,10 @@ DESIGN FREEDOM
 ## 7. Execução inicialmente liberada
 
 ```text
-FIGMA MAKE / EQUIVALENT GENERATIVE TOOL
-→ EXPLORAÇÃO / PROTÓTIPO
+AI / GENERATIVE TOOL
+→ OPTIONAL SUPPORT ONLY
 → NON-CANONICAL OUTPUT
-→ HUMAN REVIEW REQUIRED
+→ MAY BE IGNORED OR REPLACED BY THE DESIGNER
 ```
 
 Nenhuma saída automática se torna canônica por ter sido gerada.
@@ -153,16 +155,16 @@ Nenhuma saída automática se torna canônica por ter sido gerada.
 ## 8. Gate humano de direção permanece obrigatório
 
 ```text
-FIGMA MAKE / EXPLORATION
+DESIGNER MANUAL CREATION
 ↓
 HUMAN REVIEW
 ↓
-DIRECTION APPROVED
+DIRECTION / SOLUTION APPROVED
 ↓
-FINAL FIGMA PRODUCTION
+DESIGNER REFINEMENT / FINAL DELIVERY
 ```
 
-DESIGN PRODUCTION RELEASE não equivale a aprovação final de direção nem a aceite final do Figma.
+DESIGN PRODUCTION RELEASE não equivale a aprovação final de direção nem a aceite final da entrega de Design.
 
 ## 9. Limites explícitos
 
