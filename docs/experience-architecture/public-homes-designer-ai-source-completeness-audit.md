@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: source_completeness_reaudit_in_progress
+maturity: source_completeness_candidate_pass_exact_head_validation_pending
 depends_on:
   - GKR-STATE-001
   - GKR-HOME-MASTERS-REMEDIATION-001
@@ -131,7 +131,7 @@ Uma Home somente pode ser considerada pronta para entrega à designer quando seu
 
 ## 6. Findings iniciais comprovados
 
-### F-DS-001 — fluxo comum excessivamente dependente de Figma Make — P1
+### F-DS-001 — fluxo comum excessivamente dependente de ferramenta generativa — RESOLVED
 
 As autoridades correntes descrevem Figma Make como Fase B obrigatória / próximo movimento. Isso conflita com a decisão humana atual.
 
@@ -149,7 +149,7 @@ FIGMA MAKE
 → NOT A GOVERNED REQUIRED PHASE
 ```
 
-### F-DS-002 — release corrente registra execução Figma como próximo movimento — P1
+### F-DS-002 — release corrente registrava execução gerativa como próximo movimento — RESOLVED
 
 `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0` deve preservar o release já concedido, mas atualizar o método permitido:
 
@@ -167,7 +167,7 @@ AI USE
 → OPTIONAL / DESIGNER-CONTROLLED
 ```
 
-### F-DS-003 — Mall / Travel dependem de contrato determinístico externo ao Master — P1
+### F-DS-003 — Mall / Travel dependiam de contrato determinístico externo ao Master — RESOLVED
 
 A auditoria anterior precisou adicionar em `GKR-HOME-MASTERS-REMEDIATION-001`:
 
@@ -181,7 +181,7 @@ Essas regras são necessárias ao consumo de Design/IA, mas não integram os res
 
 A remediação preferida é **absorção semântica nos Masters Mall e Travel**, preservando a adjudicação histórica como proveniência.
 
-### F-DS-004 — Business / Intelligence dependem de normalização temporal externa — P1
+### F-DS-004 — Business / Intelligence dependiam de normalização temporal externa — RESOLVED
 
 A adjudicação anterior normalizou:
 
@@ -192,7 +192,7 @@ A adjudicação anterior normalizou:
 
 A verdade corrente deve estar nos documentos de consumo, não depender de leitura da adjudicação histórica.
 
-### F-DS-005 — guias v5 são tool-specific — P2
+### F-DS-005 — guias v5 são tool-specific — RESOLVED FOR V6 CONTRACT
 
 Os oito `LEIA-PRIMEIRO` v5 foram emitidos com “prompt inicial para Figma Make”.
 
@@ -266,27 +266,133 @@ DESIGN FREEDOM
 ≠ FACTUAL INVENTION
 ```
 
-## 9. Estado inicial
+## 9. Resultado da reauditoria C1–C15
+
+A reauditoria foi executada sobre o **pacote combinado** de cada Home:
 
 ```text
-C1–C15 FINAL AUDIT
-→ IN PROGRESS
+AUTORIDADES COMUNS CANDIDATAS
++
+MASTER
++
+FONTES ESPECÍFICAS DA HOME
+```
+
+Resultado:
+
+| Home | C1–C15 |
+|---|---|
+| Pessoa | PASS |
+| Organizações e Coletivos | PASS |
+| Mall | PASS |
+| Travel | PASS |
+| Media | PASS |
+| Ads | PASS |
+| Business | PASS |
+| Intelligence | PASS |
+
+```text
+HOMES
+→ 8 / 8
+
+CRITERIA PER HOME
+→ 15 / 15
+
+PACKAGE-LEVEL STRUCTURAL COMPLETENESS
+→ 120 / 120 PASS
+
+OPEN MATERIAL SOURCE-COMPLETENESS FINDINGS
+→ 0
+```
+
+Esse resultado comprova completude estrutural/semântica do candidato. Ele ainda precisa ser revalidado no HEAD exato pelos gates automáticos e por revisão independente.
+
+## 10. Remediações aplicadas
+
+### F-DS-001 — RESOLVED
+
+O Operational Flow foi promovido para modelo:
+
+```text
+DESIGNER-FIRST
+→ MANUAL FIRST-CLASS
+
+AI
+→ OPTIONAL
+
+TOOL-SPECIFIC GENERATIVE GATE
+→ REMOVED
+```
+
+### F-DS-002 — RESOLVED
+
+O Design Production Release permanece `GRANTED`, porém agora libera produção externa pela designer sem exigir execução visual pelo GKR.
+
+### F-DS-003 — RESOLVED
+
+`GKR-UX-HOME-MALL-MASTER-001 v1.1.0` e `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.0` absorvem:
+
+- estados semânticos;
+- comportamentos;
+- navegação;
+- contrato para IA;
+- critérios objetivos de aceite;
+- liberdade criativa.
+
+A adjudicação histórica permanece proveniência; não é mais necessária para reconstruir essas regras.
+
+### F-DS-004 — RESOLVED
+
+`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.0` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.0` foram temporalmente reconciliados com os Source Locks já existentes.
+
+### F-DS-005 — RESOLVED FOR V6 CONTRACT
+
+O template comum foi promovido para:
+
+```text
+GKR-UX-HOMES-GENINPUT-001 v2.1.0
+→ TOOL-NEUTRAL
+→ AI OPTIONAL
+→ MANUAL DESIGN DOES NOT REQUIRE GENERATIVE EXECUTION RECORD
+```
+
+Os guias v5 permanecem congelados como snapshot histórico. Os guias v6 serão emitidos com linguagem designer-first / AI-optional.
+
+### F-DS-006 — CLOSED / ABANDONED
+
+O artefato Figma experimental anterior permanece fora do corpus, sem autoridade e sem função no handoff.
+
+## 11. Estado candidato
+
+```text
+C1–C15
+→ CANDIDATE PASS
+→ 8 / 8 HOMES
+→ 120 / 120
 
 OPEN MATERIAL FINDINGS
-→ F-DS-001 P1
-→ F-DS-002 P1
-→ F-DS-003 P1
-→ F-DS-004 P1
-→ F-DS-005 P2
+→ 0
 
-F-DS-006
-→ CLOSED / ABANDONED
+DESIGNER CREATIVE FREEDOM
+→ PRESERVED
 
-V6 PACKAGE
-→ NOT YET ELIGIBLE
+GKR-CREATED FIGMA
+→ DISCONTINUED
 
-FIGMA EXECUTION BY GKR
-→ STOPPED
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+V5 SNAPSHOT
+→ FROZEN / HISTORICAL
+
+V6 PACKAGE DEFINITION
+→ NEXT
+
+SEMANTIC / MECHANICAL
+→ REQUIRED ON EXACT FINAL HEAD
+
+INDEPENDENT REVIEW
+→ REQUIRED ON EXACT FINAL HEAD
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
