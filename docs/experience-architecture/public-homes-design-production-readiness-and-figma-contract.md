@@ -385,7 +385,7 @@ Regras de integridade:
 - logos de terceiros exigem relação/autorização aplicável;
 - preço, avaliação, número de usuários, disponibilidade e resultados não podem ser inventados;
 - conteúdo gerado para protótipo deve ser reconhecível internamente como candidato ou placeholder;
-- no Figma final, assets externos devem possuir origem/licença ou condição de uso registrada;
+- na entrega final, assets externos devem possuir origem/licença ou condição de uso registrada;
 - mídia essencial deve possuir fallback e não pode carregar sozinha o significado da página.
 
 ## 10. Criação humana e uso opcional de IA
