@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
 status: draft
-version: 0.2.4
+version: 0.2.5
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -35,10 +35,10 @@ Este Documento Mestre deriva de autoridades superiores e **não as substitui**.
 Ordem de autoridade:
 
 ```text
-GPA-006 v2.0.0
+GPA-006 v2.0.1
 → autoridade superior do produto
 
-GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
+GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
 → porta de entrada normativa para a Home
 
 GKR-UX-HOMES-OUTCOME-001 v1.0.0
@@ -58,7 +58,7 @@ Este documento é o Master semântico da Home e deve ser consumido em conjunto c
 
 ```text
 PRODUTO GUIVOS INTELLIGENCE
-→ CONSOLIDADO EM GPA-006 v2.0.0
+→ CONSOLIDADO EM GPA-006 v2.0.1
 
 PRODUCT SOURCE LOCK
 → INTEGRADO
@@ -96,7 +96,7 @@ PRODUCT ENGINEERING
 
 ## 3. Definição superior preservada
 
-A autoridade de produto permanece em `GPA-006 2.0.0`:
+A autoridade de produto permanece em `GPA-006 2.0.1`:
 
 > **Guivos Intelligence é o Produto Especializado transversal da Guivos e a Intelligence Layer do ecossistema, responsável por transformar dados autorizados, conhecimento, evidências, contextos e relações em compreensão útil, insights, análises, possibilidades e recomendações explicáveis, ampliando a capacidade de Pessoas, Organizações e produtos tomarem melhores decisões dentro de suas próprias autoridades.**
 
@@ -743,10 +743,10 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 → exact version pinned by the current delivery candidate
 → HOME SOURCE PACKAGE / INVARIANT FREEZE
 
-GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
+GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
 → PRODUCT SOURCE LOCK
 
-GPA-006 v2.0.0
+GPA-006 v2.0.1
 → PRODUCT AUTHORITY
 
 COMPREENDER ≠ DECIDIR
