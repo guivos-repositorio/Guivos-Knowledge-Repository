@@ -5259,7 +5259,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </ul>
 <h2 id="index-estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#index-estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="#project-current-state-register">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
-<div class="highlight"><pre><span></span><code>GKR-STATE-001 3.45.0
+<div class="highlight"><pre><span></span><code>GKR-STATE-001 3.46.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -5303,7 +5303,7 @@ O/C LOW-FIDELITY FUNCTIONAL VALIDATION → PASS / v1.0.0
 O/C CURRENT LOW-FIDELITY REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
 O/C HIGH-FIDELITY ELIGIBILITY → PASS / v1.0.0
 O/C HIGH-FIDELITY DESIGN AUTHORIZATION → NOT_GRANTED
-PUBLIC HOMES DESIGN PRODUCTION READINESS → PREPARED / V5 SNAPSHOT PENDING
+PUBLIC HOMES DESIGN PRODUCTION READINESS → ACTIVE / V5 SNAPSHOT EMITTED / DESIGN RELEASE NOT_GRANTED
 PUBLIC HOMES DESIGN PRODUCTION RELEASE → NOT_GRANTED
 VISUAL IDENTITY PRE-LOCK → NOT REQUIRED / DESIGN-OWNED
 GKR GLOBAL UPDATE → CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
@@ -8129,9 +8129,11 @@ TOM DE VOZ / COPY NÃO CONGELADA
 SEMANTIC / FUNCTIONAL TRUTH
 → GKR-GOVERNED
 </code></pre></div>
-<p>O pacote histórico v4 permanece reproduzível, porém superado para nova contratação. O Manifesto v5 prepara uma emissão pós-merge baseada em 26 fontes canônicas atuais e oito <code>LEIA-PRIMEIRO / SOURCE LOCK</code> operacionais.</p>
+<p>O pacote histórico v4 permanece reproduzível, porém superado para nova contratação. O snapshot v5 foi emitido a partir da <code>main</code> pós-PR #390 com 26 fontes canônicas atuais e oito <code>LEIA-PRIMEIRO / SOURCE LOCK</code> operacionais.</p>
 <p>Fluxo obrigatório:</p>
 <div class="highlight"><pre><span></span><code>V5 SNAPSHOT
+→ EMITTED / MATERIALIZED / VALIDATED
+→ DESIGN PRODUCTION RELEASE HUMANO
 → FIGMA MAKE / EXPLORAÇÃO
 → REVISÃO HUMANA
 → DIREÇÃO CRIATIVA APROVADA
@@ -8140,10 +8142,15 @@ SEMANTIC / FUNCTIONAL TRUTH
 </code></pre></div>
 <p>Estado:</p>
 <div class="highlight"><pre><span></span><code>DESIGN PRODUCTION READINESS DOCUMENTATION
-→ PREPARED IN CURRENT CHANGESET
+→ INTEGRATED / ACTIVE
 
 V5 SNAPSHOT
-→ PENDING POST-MERGE EMISSION
+→ EMITTED / MATERIALIZED / VALIDATED
+→ branch delivery/design-handoff-v5
+→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
+→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
+→ 26 CANONICAL SOURCES + 8 GUIDES = 34 FILES
+→ 26 / 26 CANONICAL BLOBS BYTE-PRESERVED
 
 FIGMA MAKE
 → NOT RELEASED
@@ -10008,16 +10015,22 @@ HUMAN GATE
 <li>capturar <code>main</code> pós-merge;</li>
 <li>revalidar 26/26 fontes;</li>
 <li>gerar oito Source Locks operacionais;</li>
-<li>materializar snapshot externo v5;</li>
-<li>validar isolamento e reproduzibilidade;</li>
-<li>Semantic + Mechanical no HEAD aplicável;</li>
+<li>materializar snapshot externo v5 — CONCLUÍDO;</li>
+<li>validar isolamento e reproduzibilidade — CONCLUÍDO;</li>
+<li>registrar snapshot v5 na autoridade corrente — EM CURSO NESTA FRENTE;</li>
+<li>Semantic + Mechanical no HEAD de registro;</li>
 <li>revisão independente;</li>
-<li>adjudicar findings;</li>
+<li>adjudicar findings, se houver;</li>
 <li>ato humano explícito de Design Production Release;</li>
 <li>somente então iniciar Figma Make / prototipação de Design.</li>
 </ol>
 <div class="highlight"><pre><span></span><code>V5 SNAPSHOT
-→ PENDING
+→ EMITTED / MATERIALIZED / VALIDATED
+→ delivery/design-handoff-v5
+→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
+→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
+→ 34 FILES
+→ 26 / 26 CANONICAL BLOBS MATCH
 
 DESIGN PRODUCTION RELEASE
 → NOT_GRANTED
@@ -18965,7 +18978,8 @@ AUTORIDADE FUNCIONAL
 → D5-C4B — validação integrada individual e promoção de TRN-008..013
 → O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C State Map — DEFINED / CANONICAL DOCUMENTARY
-→ Public Homes Design Production Readiness — PREPARED / V5 SNAPSHOT PENDING / DESIGN RELEASE NOT_GRANTED
+→ Public Homes Design Production Readiness — ACTIVE / V5 SNAPSHOT EMITTED / DESIGN RELEASE NOT_GRANTED
+→ Public Homes Design Handoff v5 Snapshot — delivery/design-handoff-v5 / 34 FILES / 26/26 BYTE-PRESERVED
 </code></pre></div>
 <p>D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada. A definição documental do State Map O/C não altera esse estado.</p>
 <h3 id="experience-architecture-51-d5-a">5.1 D5-A<a class="headerlink" href="#experience-architecture-51-d5-a" title="Permanent link">&para;</a></h3>
@@ -19172,7 +19186,9 @@ AUTORIDADE FUNCIONAL
 </code></pre></div>
 <p>D5-A/B/C1/C2/C3/C4A/C4B e a frente documental O/C não consomem nem antecipam V5.</p>
 <h2 id="experience-architecture-11-proxima-evolucao-possivel">11. Próxima evolução possível<a class="headerlink" href="#experience-architecture-11-proxima-evolucao-possivel" title="Permanent link">&para;</a></h2>
-<p>A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo; <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0</code> define o <strong>Surface Map lógico-documental canônico</strong> e <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0</code> define o <strong>State Map funcional canônico documental</strong>. Os <strong>Priority Flows</strong> estão definidos documentalmente em <code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0</code>; a elegibilidade de Navigation Materialization está <code>PASS</code> em <code>GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0</code>; e a própria Navigation Materialization está definida canonicamente em <code>GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0</code>. Os Authenticated Wireframes low-fidelity foram autorizados, entregues e funcionalmente validados com <code>PASS</code> em <code>GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0</code>. O pacote Delivery + Validation é a referência corrente low-fidelity O/C. A adjudicação <code>GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0</code> conclui <code>PASS</code>; o próximo gate possível é somente uma decisão humana separada de autorização high-fidelity. D6, D7, materialização de <code>PER-009</code>, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.</p></section><section class="print-page" id="journeys" heading-number="6.2"><h1 id="journeys-jornadas-integradas">Jornadas Integradas<a class="headerlink" href="#journeys-jornadas-integradas" title="Permanent link">&para;</a></h1>
+<p>A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo; <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0</code> define o <strong>Surface Map lógico-documental canônico</strong> e <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0</code> define o <strong>State Map funcional canônico documental</strong>. Os <strong>Priority Flows</strong> estão definidos documentalmente em <code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0</code>; a elegibilidade de Navigation Materialization está <code>PASS</code> em <code>GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0</code>; e a própria Navigation Materialization está definida canonicamente em <code>GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0</code>. Os Authenticated Wireframes low-fidelity foram autorizados, entregues e funcionalmente validados com <code>PASS</code> em <code>GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0</code>. O pacote Delivery + Validation é a referência corrente low-fidelity O/C. A adjudicação <code>GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0</code> conclui <code>PASS</code>; o próximo gate possível é somente uma decisão humana separada de autorização high-fidelity. D6, D7, materialização de <code>PER-009</code>, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.</p>
+<h3 id="experience-architecture-public-homes-design-handoff-v5-snapshot">Public Homes — Design Handoff v5 Snapshot<a class="headerlink" href="#experience-architecture-public-homes-design-handoff-v5-snapshot" title="Permanent link">&para;</a></h3>
+<p><a href="#experience-architecture-public-homes-design-delivery-v5-snapshot-record">GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001</a> registra a emissão externa reproduzível v5 das oito Homes, com 26 fontes canônicas byte-preservadas, oito guias operacionais e <code>DESIGN PRODUCTION RELEASE = NOT_GRANTED</code>.</p></section><section class="print-page" id="journeys" heading-number="6.2"><h1 id="journeys-jornadas-integradas">Jornadas Integradas<a class="headerlink" href="#journeys-jornadas-integradas" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p><strong>F-016-A — desmaterialização física.</strong> Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome <code>.svg</code> remanescente neste documento é <strong>proveniência histórica</strong>, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.</p>
 </blockquote>
@@ -24154,7 +24170,7 @@ FINAL FIGMA PRODUCTION
 → NOT YET RELEASED
 </code></pre></div></section><section class="print-page" id="experience-architecture-public-homes-design-delivery-manifest" heading-number="6.9"><h1 id="experience-architecture-public-homes-design-delivery-manifest-homes-publicas-manifesto-canonico-de-entrega-para-design">Homes Públicas — Manifesto Canônico de Entrega para Design<a class="headerlink" href="#experience-architecture-public-homes-design-delivery-manifest-homes-publicas-manifesto-canonico-de-entrega-para-design" title="Permanent link">&para;</a></h1>
 <h2 id="experience-architecture-public-homes-design-delivery-manifest-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-public-homes-design-delivery-manifest-1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este Manifesto define o pacote externo v5 que será entregue à frente de Design depois da integração e validação desta remediação.</p>
+<p>Este Manifesto define o pacote externo v5 emitido para a futura frente de Design, preservando o snapshot materializado e os gates posteriores de autorização.</p>
 <p>O snapshot v4 permanece histórico e reproduzível, mas não é pacote atual porque seu checkpoint foi superado.</p>
 <h2 id="experience-architecture-public-homes-design-delivery-manifest-2-principio-do-v5">2. Princípio do v5<a class="headerlink" href="#experience-architecture-public-homes-design-delivery-manifest-2-principio-do-v5" title="Permanent link">&para;</a></h2>
 <p>O v5 elimina GENINPUTs operacionais de checkpoints superados do pacote de produção. Em seu lugar, cada Home recebe um <code>LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL</code> gerado no momento da emissão a partir das autoridades pós-auditoria.</p>
@@ -24214,7 +24230,7 @@ FINAL FIGMA PRODUCTION
 <li><code>docs/product-architecture/intelligence.md</code> — <code>GPA-006 v2.0.0</code>.</li>
 </ol>
 <h2 id="experience-architecture-public-homes-design-delivery-manifest-4-oito-guias-operacionais">4. Oito guias operacionais<a class="headerlink" href="#experience-architecture-public-homes-design-delivery-manifest-4-oito-guias-operacionais" title="Permanent link">&para;</a></h2>
-<p>A emissão v5 deve gerar oito arquivos adicionais <code>00-LEIA-PRIMEIRO.md</code>, um por Home. Cada guia funciona como Source Lock operacional daquele snapshot e deve conter:</p>
+<p>A emissão v5 gerou oito arquivos adicionais <code>00-LEIA-PRIMEIRO.md</code>, um por Home. Cada guia funciona como Source Lock operacional daquele snapshot e deve conter:</p>
 <ul>
 <li>Home e objetivo;</li>
 <li>commit canônico de origem;</li>
@@ -24233,7 +24249,7 @@ FINAL FIGMA PRODUCTION
 <p>Os 26 arquivos canônicos devem reutilizar os blobs do mesmo checkpoint pós-merge. Os oito guias podem ser materializados especificamente para a emissão.</p>
 <p>Contagem planejada: <code>26 FONTES CANÔNICAS + 8 GUIAS = 34 ARQUIVOS EXTERNOS</code>.</p>
 <h3 id="experience-architecture-public-homes-design-delivery-manifest-51-integridade-formato-e-transporte">5.1 Integridade, formato e transporte<a class="headerlink" href="#experience-architecture-public-homes-design-delivery-manifest-51-integridade-formato-e-transporte" title="Permanent link">&para;</a></h3>
-<p>A emissão v5 deve preservar as seguintes regras:</p>
+<p>A emissão v5 preserva as seguintes regras:</p>
 <ol>
 <li>os 26 documentos canônicos são extraídos do <strong>mesmo commit pós-merge</strong>;</li>
 <li>seus conteúdos são reutilizados sem resumo, reescrita ou adaptação para caber no pacote;</li>
@@ -24294,23 +24310,25 @@ FONTES ESPECÍFICAS DA HOME
 </ul>
 <p>Referências adicionais entram somente para resolver dúvida concreta e permanecem <code>INSPIRATION_ONLY</code> ou fonte adicional explicitamente declarada, conforme sua natureza.</p>
 <h2 id="experience-architecture-public-homes-design-delivery-manifest-8-gate-de-emissao">8. Gate de emissão<a class="headerlink" href="#experience-architecture-public-homes-design-delivery-manifest-8-gate-de-emissao" title="Permanent link">&para;</a></h2>
-<p>Somente após merge deste changeset:</p>
+<p>O gate de emissão foi executado e validado:</p>
 <ol>
-<li>capturar <code>main</code> pós-merge;</li>
-<li>confirmar 26/26 fontes, IDs e versões;</li>
-<li>confirmar que todos os blobs canônicos pertencem ao mesmo checkpoint;</li>
-<li>gerar oito Source Locks operacionais / <code>LEIA-PRIMEIRO</code>;</li>
-<li>materializar branch/snapshot v5;</li>
-<li>validar estrutura, isolamento e reproduzibilidade;</li>
-<li>registrar snapshot em autoridade própria;</li>
-<li>somente então avaliar <code>DESIGN PRODUCTION RELEASE</code>.</li>
+<li><code>main</code> pós-merge capturada em <code>aa1b524c20f6707d007208222ba8581af097c38d</code>;</li>
+<li>26/26 fontes, IDs e versões confirmados;</li>
+<li>26/26 blobs canônicos confirmados no mesmo checkpoint;</li>
+<li>oito Source Locks operacionais / <code>LEIA-PRIMEIRO</code> gerados;</li>
+<li><code>delivery/design-handoff-v5</code> materializada;</li>
+<li>estrutura, isolamento e reproduzibilidade validados;</li>
+<li>snapshot registrado em <code>GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001</code>.</li>
 </ol>
+<p>O único gate posterior restante nesta cadeia é uma decisão humana separada sobre <code>DESIGN PRODUCTION RELEASE</code>.</p>
 <h2 id="experience-architecture-public-homes-design-delivery-manifest-9-estado">9. Estado<a class="headerlink" href="#experience-architecture-public-homes-design-delivery-manifest-9-estado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>V5
-→ PREPARED
+→ EMITTED / MATERIALIZED / VALIDATED
 
 SNAPSHOT
-→ PENDING
+→ delivery/design-handoff-v5
+→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
+→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
 
 DESIGN PRODUCTION RELEASE
 → NOT_GRANTED
