@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-ADS-MASTER-001
 title: Home Pública — Guivos Ads — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-14
+last_updated: 2026-09-19
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-007
@@ -507,7 +507,7 @@ Pode ser:
 - mais concreta;
 - orientada a objetivos;
 - baseada em demonstrações de superfícies;
-- visualmente tecnológica sem parecer dashboard adtech;
+- capaz de comunicar a natureza tecnológica e contextual do produto sem exigir estética tecnológica específica, dashboard adtech ou qualquer linguagem visual predeterminada;
 - simples o suficiente para que um anunciante compreenda a oportunidade sem conhecer a taxonomia interna da Guivos.
 
 **Mesma marca não significa mesma arquitetura narrativa.**
