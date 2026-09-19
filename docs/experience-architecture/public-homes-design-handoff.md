@@ -61,7 +61,7 @@ V5 SNAPSHOT / PACOTE EXTERNO
 → EMITTED / MATERIALIZED / VALIDATED
 ```
 
-As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito registrado em `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`.
+As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito registrado em `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0`.
 
 ### 0.1 Liberdade criativa protegida
 
@@ -88,7 +88,7 @@ HUMAN APPROVAL
 
 ### 0.2 Correção de precedência — designer-first / IA opcional
 
-A decisão humana de 2026-09-19 estabelece a seguinte precedência sobre qualquer formulação histórica deste documento que possa sugerir Figma Make como etapa obrigatória:
+A decisão humana de 2026-09-19 estabelece a seguinte precedência sobre qualquer formulação histórica deste documento que possa sugerir uma ferramenta generativa específica como etapa obrigatória:
 
 ```text
 DESIGNER
@@ -662,9 +662,9 @@ HANDOFF / MÉTODO
 VISUAL IDENTITY
 → DESIGN-OWNED / NOT CANONICALLY PRE-LOCKED
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ METHOD DEFINED
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+EXTERNAL DESIGNER CREATION
+→ MANUAL FIRST-CLASS
+→ AI OPTIONAL / DESIGNER-CONTROLLED
 
 FINAL DESIGN PRODUCTION
 → DESIGNER-OWNED / SUBJECT TO HUMAN ACCEPTANCE
