@@ -99,6 +99,54 @@ Os 25 arquivos canônicos devem reutilizar os blobs do mesmo checkpoint pós-mer
 
 Contagem planejada: `25 FONTES CANÔNICAS + 8 GUIAS = 33 ARQUIVOS EXTERNOS`.
 
+### 5.1 Integridade, formato e transporte
+
+A emissão v5 deve preservar as seguintes regras:
+
+1. os 25 documentos canônicos são extraídos do **mesmo commit pós-merge**;
+2. seus conteúdos são reutilizados sem resumo, reescrita ou adaptação para caber no pacote;
+3. IDs, versões e conteúdo interno não mudam por causa do nome externo do arquivo;
+4. os oito `LEIA-PRIMEIRO` são artefatos operacionais da emissão e não reescrevem as autoridades que listam;
+5. o snapshot deve registrar commit de origem, commit/tree da emissão e relação reproduzível entre ambos;
+6. `delivery/design-handoff-v5` deve permanecer separada de v1–v4;
+7. v1–v4 permanecem snapshots históricos imutáveis e não são reescritos para representar v5;
+8. Markdown (`.md`) é o formato primário para leitura humana e input de IA;
+9. PDF pode existir como conveniência de leitura humana, mas não substitui Markdown como fonte;
+10. ZIP pode ser gerado como embalagem de transferência, mas não constitui autoridade canônica;
+11. qualquer ZIP deve derivar exclusivamente do snapshot v5 validado e preservar sua estrutura;
+12. em divergência entre ZIP e snapshot Git, prevalece o snapshot Git registrado;
+13. nenhum arquivo de outra Home é misturado no diretório de execução de uma Home por conveniência;
+14. nenhuma referência externa passa a integrar as 25 fontes canônicas sem nova adjudicação.
+
+```text
+SNAPSHOT GIT V5
+→ REPRODUCIBLE AUTHORITY OF THE EXTERNAL PACKAGE
+
+ZIP
+→ TRANSFER CONVENIENCE ONLY
+
+PDF
+→ HUMAN READING AID ONLY
+
+MARKDOWN
+→ PRIMARY SOURCE FORMAT
+```
+
+### 5.2 Mudança de fonte após a emissão
+
+Se qualquer uma das 25 fontes sofrer mudança depois do snapshot, classificar o impacto.
+
+```text
+NON-MATERIAL CHANGE
+→ MAY PRESERVE SNAPSHOT AFTER RECORDED REVIEW
+
+MATERIAL CHANGE TO MEANING / INVARIANT / COPY LOCK / SOURCE PACKAGE / PROMPT / ACCEPTANCE
+→ AFFECTED HOME PACKAGE INVALIDATED FOR NEW EXECUTION
+→ REISSUE / REVALIDATE BEFORE CONTINUING
+```
+
+Uma alteração criativa no Figma que não modifica o contrato do GKR não exige reemissão do pacote fonte.
+
 ## 6. Regra para ferramentas generativas
 
 Não carregar documentos específicos de múltiplas Homes na mesma execução. A identidade visual é livre; fatos e arquitetura não são.
