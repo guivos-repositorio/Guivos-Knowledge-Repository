@@ -1396,7 +1396,7 @@ VISUAL IDENTITY
 
 ### 39.2 Dados reais, placeholders e questões abertas
 
-Pessoa, Organização, Coletivo, parceiro, métrica, case, depoimento, país, resultado, disponibilidade ou prova apresentados como reais exigem fonte aplicável.
+`REAL_DATA_REQUIRED` — Pessoa, Organização, Coletivo, parceiro, métrica, case, depoimento, país, resultado, disponibilidade ou prova apresentados como reais exigem fonte aplicável.
 
 Histórias, imagens e evidências provisórias podem ser usadas somente como placeholder claramente identificado.
 
