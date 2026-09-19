@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 5.0.1
+version: 5.0.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: design_delivery_v5_snapshot_emitted_release_not_granted
+maturity: design_delivery_v5_release_granted_pre_execution
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -16,6 +16,7 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 ---
 
 # Homes Públicas — Manifesto Canônico de Entrega para Design
@@ -199,7 +200,7 @@ O gate de emissão foi executado e validado:
 6. estrutura, isolamento e reproduzibilidade validados;
 7. snapshot registrado em `GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001`.
 
-O único gate posterior restante nesta cadeia é uma decisão humana separada sobre `DESIGN PRODUCTION RELEASE`.
+O gate humano posterior foi satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`. O snapshot permanece congelado; a nova autoridade libera seu uso para a fase de Design sem reescrever o pacote.
 
 ## 9. Estado
 
@@ -213,8 +214,11 @@ SNAPSHOT
 → tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
 
 DESIGN PRODUCTION RELEASE
-→ NOT_GRANTED
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 
-FIGMA MAKE / FINAL FIGMA
-→ NOT_RELEASED
+FIGMA MAKE
+→ AUTHORIZED TO EXECUTE / NOT_STARTED
+
+FINAL FIGMA
+→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
 ```
