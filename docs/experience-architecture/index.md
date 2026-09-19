@@ -2,10 +2,12 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.0
+version: 1.20.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-19
 related:
+  - GKR-UX-HOMES-DESIGN-V6-AUDIT-001
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
   - PAS-001
   - PAS-001-DOMAIN-MODEL-001
   - PAS-001-DOMAIN-RECON-001
@@ -161,8 +163,8 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C4B — validação integrada individual e promoção de TRN-008..013
 → O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C State Map — DEFINED / CANONICAL DOCUMENTARY
-→ Public Homes Design Production Readiness — ACTIVE / V5 SNAPSHOT EMITTED / DESIGN RELEASE GRANTED
-→ Public Homes Design Production Release — GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ Public Homes Design Handoff — V6 TOOL-NEUTRAL REMEDIATION / V5 HISTORICAL
+→ Public Homes Design Production Release — HUMAN DECISION PRESERVED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
 → Public Homes Design Handoff v5 Snapshot — delivery/design-handoff-v5 / 34 FILES / 26/26 BYTE-PRESERVED
 ```
 
@@ -305,6 +307,10 @@ A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. 
 
 [GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001](public-homes-design-delivery-v5-snapshot-record.md) registra a emissão externa reproduzível v5 das oito Homes, com 26 fontes canônicas byte-preservadas e oito guias operacionais. O registro preserva que **a emissão isoladamente** não concedeu Design Release.
 
+### Public Homes — Design Consumption Contract
+
+[GKR-UX-HOMES-DESIGN-CONSUMPTION-001](public-homes-design-consumption-contract.md) define o modelo tool-neutral para designer + IA opcional e exclui materialização Figma pelo GKR.
+
 ### Public Homes — Design Production Release
 
-[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) registra o ato humano posterior que concede `DESIGN PRODUCTION RELEASE = GRANTED`, libera Figma Make/exploração para execução e preserva o gate humano de direção antes do Figma definitivo.
+[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) preserva o ato humano de release. A interpretação corrente é tool-neutral: a designer é autora da expressão visual, IA é opcional e o GKR não materializa Figma.

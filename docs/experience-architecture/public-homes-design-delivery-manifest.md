@@ -13,6 +13,7 @@ depends_on:
   - GKR-UX-HOMES-GENINPUT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 related:
+  - GKR-UX-HOMES-DESIGN-V6-AUDIT-001
   - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
@@ -45,38 +46,38 @@ A ausência de identidade visual canônica é deliberada: estética e sistema vi
 
 ### 3.2 Pessoa
 
-5. `docs/experience-architecture/public-home-master-document.md` — `GKR-UX-HOME-MASTER-001 v1.0.2`;
+5. `docs/experience-architecture/public-home-master-document.md` — `GKR-UX-HOME-MASTER-001 v1.1.0`;
 6. `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md` — `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### 3.3 Organizações e Coletivos
 
-7. `docs/experience-architecture/public-home-organizations-collectives-master-document.md` — `GKR-UX-HOME-OC-MASTER-001 v1.0.0`;
+7. `docs/experience-architecture/public-home-organizations-collectives-master-document.md` — `GKR-UX-HOME-OC-MASTER-001 v1.1.0`;
 8. `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md` — `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### 3.4 Mall
 
-9. `docs/experience-architecture/public-home-mall-master-document.md` — `GKR-UX-HOME-MALL-MASTER-001 v1.0.0`;
+9. `docs/experience-architecture/public-home-mall-master-document.md` — `GKR-UX-HOME-MALL-MASTER-001 v1.0.1`;
 10. `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md` — `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### 3.5 Travel
 
-11. `docs/experience-architecture/public-home-travel-master-document.md` — `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0`;
+11. `docs/experience-architecture/public-home-travel-master-document.md` — `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.1`;
 12. `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md` — `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### 3.6 Media
 
-13. `docs/experience-architecture/public-home-media-master-document.md` — `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0`;
+13. `docs/experience-architecture/public-home-media-master-document.md` — `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1`;
 14. `docs/product-architecture/media.md` — `GPA-005 v1.2.0`.
 
 ### 3.7 Ads
 
-15. `docs/experience-architecture/public-home-ads-master-document.md` — `GKR-UX-HOME-ADS-MASTER-001 v1.0.0`;
+15. `docs/experience-architecture/public-home-ads-master-document.md` — `GKR-UX-HOME-ADS-MASTER-001 v1.0.1`;
 16. `docs/product-architecture/ads.md` — `GPA-007 v1.3.0`.
 
 ### 3.8 Business
 
 17. `docs/experience-architecture/public-home-business-source-lock.md` — `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0`;
-18. `docs/experience-architecture/public-home-business-master-document.md` — `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0`;
+18. `docs/experience-architecture/public-home-business-master-document.md` — `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.0`;
 19. `docs/experience-architecture/public-home-business-conversion-authority-v2.md` — `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
 20. `docs/experience-architecture/public-home-business-authority-contracts.md` — `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0`;
 21. `docs/product-architecture/business.md` — `GPA-004 v1.6.0`.
@@ -85,25 +86,26 @@ A ausência de identidade visual canônica é deliberada: estética e sistema vi
 
 22. `docs/experience-architecture/public-home-intelligence-design-handoff.md` — `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0`;
 23. `docs/experience-architecture/public-home-intelligence-source-lock.md` — `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`;
-24. `docs/experience-architecture/public-home-intelligence-master-document.md` — `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`;
+24. `docs/experience-architecture/public-home-intelligence-master-document.md` — `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.0`;
 25. `docs/product-architecture/intelligence-product-source-lock.md` — `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0`;
 26. `docs/product-architecture/intelligence.md` — `GPA-006 v2.0.0`.
 
-## 4. Oito guias operacionais
+## 4. Oito guias operacionais v6
 
-A emissão v5 gerou oito arquivos adicionais `00-LEIA-PRIMEIRO.md`, um por Home. Cada guia funciona como Source Lock operacional daquele snapshot e deve conter:
+A emissão v6 gerará oito arquivos `00-LEIA-PRIMEIRO.md`, um por Home.
+
+Cada guia será tool-neutral e deverá conter:
 
 - Home e objetivo;
-- commit canônico de origem;
-- lista exata de fontes e SHAs;
-- ordem de leitura;
-- invariantes específicos;
-- liberdades criativas;
-- matriz das oito classes operacionais de informação;
-- proibições de inferência;
-- prompt inicial para Figma Make;
-- estado inicial `EXPLORAÇÃO / NÃO CANÔNICA`;
-- checklist de autoauditoria.
+- checkpoint do pacote;
+- fontes e versões;
+- ordem de autoridade;
+- matriz `CANONICAL / DESIGN_CREATIVE / CONTENT_CANDIDATE / DESIGN_HYPOTHESIS / PROTOTYPE_PLACEHOLDER / REAL_DATA_REQUIRED / OPEN_QUESTION / PROHIBITED_INFERENCE`;
+- dados/assets reais necessários;
+- referências históricas excluídas como autoridade;
+- declaração explícita de que a designer pode criar manualmente e que IA é opcional.
+
+Os guias não conterão prompt obrigatório de Figma Make nem instrução de criação de arquivo.
 
 ## 5. Estrutura externa
 

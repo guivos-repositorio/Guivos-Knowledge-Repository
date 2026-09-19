@@ -2,12 +2,14 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.47.0
+version: 3.48.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
+  - GKR-UX-HOMES-DESIGN-V6-AUDIT-001
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
@@ -2337,79 +2339,69 @@ PRODUCT ENGINEERING
 ```
 
 O avanço posterior ao fechamento Home Masters inclui, nesta revisão, a promoção canônica de Navigation Materialization após Surface Map, State Map, Priority Flows e sua elegibilidade O/C. Authenticated Wireframes, Design/UI, protótipo e Product Engineering continuam não liberados automaticamente.
-## 31. Homes públicas — Design Production Readiness
+## 31. Homes públicas — Handoff v6 tool-neutral em remediação
 
-A frente anterior de high-fidelity autenticado O/C permanece preservada no gate já alcançado, mas sua execução continua não autorizada. A prioridade temporária passa a ser garantir que as oito Homes públicas possam ser contratadas e produzidas em Figma sem lacunas documentais materiais.
+A frente pública de Design foi corrigida para o modelo aprovado: GKR como fonte documental, designer como autora da expressão visual e IA como apoio opcional.
 
-Baseline física de início:
+A frente autenticada O/C high-fidelity continua separada e não é liberada por esta remediação.
 
 ```text
-MAIN
-→ fada353688e26047a8eb8f45a8de67af0aa9b3d0
+GKR-UX-HOMES-DESIGN-CONSUMPTION-001
+→ v1.0.0 / TOOL-NEUTRAL
 
-O/C HIGH-FIDELITY ELIGIBILITY
-→ PASS
+GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
+→ v2.0.0 / UNDER V6 REMEDIATION
 
-O/C HIGH-FIDELITY DESIGN AUTHORIZATION
-→ NOT_GRANTED
+GKR-UX-HOMES-DESIGN-HANDOFF-001
+→ v2.0.0
+
+GKR-UX-HOMES-GENINPUT-001
+→ v3.0.0 / OPTIONAL AI
+
+GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
+→ v3.0.0
+
+GKR-UX-HOMES-DESIGN-DELIVERY-001
+→ v6.0.0 / V6 CANDIDATE
 ```
 
-`GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.1` formaliza o critério de prontidão corrente e registra o gate de release já satisfeito pela autoridade própria.
-
-Decisão humana incorporada:
+Decisão humana preservada:
 
 ```text
 IDENTIDADE VISUAL CANÔNICA PRÉVIA
 → NOT REQUIRED
 
-TIPOGRAFIA / PALETA / IMAGENS / LINGUAGEM GRÁFICA / ATMOSFERA
-→ DESIGN-OWNED
+DESIGNER
+→ PRIMARY CREATIVE AUTHOR
 
-TOM DE VOZ / COPY NÃO CONGELADA
-→ DESIGN / CONTENT CANDIDATE
-→ HUMAN APPROVAL REQUIRED BEFORE FINALIZATION
+TIPOGRAFIA / PALETA / IMAGENS / COMPOSIÇÃO / GRID / MOTION / COMPONENTES
+→ DESIGN-OWNED
 
 SEMANTIC / FUNCTIONAL TRUTH
 → GKR-GOVERNED
+
+AI
+→ OPTIONAL SUPPORT
+
+GKR FIGMA MATERIALIZATION
+→ OUT OF PROCESS
 ```
 
-O pacote histórico v4 permanece reproduzível, porém superado para nova contratação. O snapshot v5 foi emitido a partir da `main` pós-PR #390 com 26 fontes canônicas atuais e oito `LEIA-PRIMEIRO / SOURCE LOCK` operacionais.
-
-Fluxo obrigatório:
+O snapshot v5 permanece congelado como histórico. A emissão corrente pretendida é v6 e ainda depende de validação, revisão, merge e captura do `main` pós-merge.
 
 ```text
 V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
-→ DESIGN PRODUCTION RELEASE GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
-→ FIGMA MAKE / EXPLORAÇÃO
-→ REVISÃO HUMANA
-→ DIREÇÃO CRIATIVA APROVADA
-→ FIGMA DEFINITIVO
-→ ACEITE FINAL
-```
-
-Estado:
-
-```text
-DESIGN PRODUCTION READINESS DOCUMENTATION
-→ INTEGRATED / ACTIVE
-
-V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
-→ branch delivery/design-handoff-v5
+→ HISTORICAL / FROZEN
+→ delivery/design-handoff-v5
 → commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
 → tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
-→ 26 CANONICAL SOURCES + 8 GUIDES = 34 FILES
-→ 26 / 26 CANONICAL BLOBS BYTE-PRESERVED
 
-FIGMA MAKE
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+V6 SNAPSHOT
+→ NOT YET EMITTED
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ HUMAN DECISION PRESERVED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
+→ CURRENT PACKAGE MUST BE VALIDLY ISSUED BEFORE DELIVERY
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
