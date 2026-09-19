@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-TRAVEL-MASTER-001
 title: Home Pública — Guivos Travel — Documento Mestre
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Experience Architecture
 maturity: master_reconciled_for_designer_handoff
 last_updated: 2026-09-19
@@ -835,6 +835,28 @@ Síntese pública:
 Expressão complementar:
 
 > **Descubra lugares. Encontre experiências. Viaje quando fizer sentido.**
+
+
+## Liberdade de Design, responsividade e robustez
+
+Este Documento Mestre governa significado, função, verdade comercial e fronteiras; **não governa identidade visual**.
+
+A designer pode definir livremente tipografia, paleta, fotografia, ilustração, iconografia, grid, composição, ritmo, motion, componentes, microinterações e linguagem gráfica, desde que preserve as invariantes desta Home.
+
+```text
+DESKTOP / TABLET / MOBILE
+→ MESMA VERDADE SEMÂNTICA
+→ MATERIALIZAÇÕES PODEM SER DIFERENTES
+
+RESPONSIVIDADE
+→ NÃO SIGNIFICA APENAS EMPILHAR O DESKTOP
+
+ACESSIBILIDADE / ROBUSTEZ
+→ SIGNIFICADO E AÇÃO ESSENCIAL DEVEM SOBREVIVER
+→ SEM DEPENDÊNCIA EXCLUSIVA DE HOVER / MOTION / VÍDEO / ALTA CONECTIVIDADE
+```
+
+Ausência de identidade visual pré-congelada é liberdade deliberada, não lacuna documental.
 
 ## 39. Estado de prontidão
 
