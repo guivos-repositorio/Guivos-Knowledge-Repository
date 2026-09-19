@@ -56,13 +56,13 @@ DESIGN PRODUCTION READINESS
 → GOVERNADO POR GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
 
 V5 SNAPSHOT / PACOTE EXTERNO
 → EMITTED / MATERIALIZED / VALIDATED
 ```
 
-As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito registrado em `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`.
+As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito registrado em `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0`.
 
 ### 0.1 Liberdade criativa protegida
 
