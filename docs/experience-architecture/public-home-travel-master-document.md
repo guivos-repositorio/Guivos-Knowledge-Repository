@@ -876,7 +876,7 @@ Nenhum significado essencial pode depender exclusivamente de vídeo, hover, mapa
 
 ### 40.3 Dados reais, mídia e placeholders
 
-Destino, imagem documental, experiência, tarifa, data, vaga, fornecedor, parceiro, condição comercial e disponibilidade apresentados como reais exigem lastro.
+`REAL_DATA_REQUIRED` — destino, imagem documental, experiência, tarifa, data, vaga, fornecedor, parceiro, condição comercial e disponibilidade apresentados como reais exigem lastro.
 
 Imagem conceitual pode ser usada como linguagem criativa, mas não como prova de operação.
 
@@ -893,4 +893,3 @@ Fotografia, vídeo, ilustração, mapa, tipografia, paleta, composição, navega
 Mapa, busca, cards, hero de imagem e carrossel são hipóteses, não requisitos.
 
 IA é opcional e consome a mesma verdade documental.
-
