@@ -66,7 +66,20 @@ Revisar:
 
 Registrar o que foi aceito, rejeitado e o que precisa ser resolvido.
 
-Sem aprovação humana da direção, não iniciar construção definitiva.
+A aprovação da direção deve deixar um registro mínimo contendo:
+
+- Home;
+- versão/link ou identificador inequívoco do protótipo avaliado;
+- data;
+- responsável humano pela aprovação;
+- direção selecionada;
+- decisões criativas aceitas;
+- conteúdo candidato aprovado/rejeitado;
+- placeholders e dados reais ainda necessários;
+- questões abertas não bloqueadoras;
+- status final `DIREÇÃO APROVADA`.
+
+Sem esse registro e sem aprovação humana da direção, não iniciar construção definitiva.
 
 ## 7. Fase D — Figma definitivo
 
@@ -79,6 +92,20 @@ Essas foundations são consequência do Design, não baseline pré-imposta.
 ## 8. Fase E — aceite final
 
 Executar o checklist de `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001`, incluindo continuidade de fontes/plugins/assets, controle do arquivo pela Guivos e revisão integrada das oito Homes.
+
+O aceite final deve registrar, no mínimo:
+
+- Home(s) entregues;
+- arquivo Figma e versão avaliada;
+- data;
+- responsável humano pelo aceite;
+- checklist de produção concluído;
+- assets/fontes/plugins/licenças entregues ou documentados;
+- pendências inexistentes ou explicitamente classificadas como não bloqueadoras;
+- confirmação de controle/acesso da Guivos aos arquivos essenciais;
+- status `FIGMA FINAL ACEITO`.
+
+A conclusão operacional do serviço de Design deve ocorrer **depois** desse aceite. Condições financeiras e jurídicas permanecem no instrumento contratual aplicável, mas o GKR não considera a entrega concluída antes de `FIGMA FINAL ACEITO`.
 
 Estados:
 
