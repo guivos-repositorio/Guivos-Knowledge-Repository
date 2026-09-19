@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-TRAVEL-MASTER-001
 title: Home Pública — Guivos Travel — Documento Mestre
 status: draft
-version: 1.1.2
+version: 1.1.3
 owner: Experience Architecture
 last_updated: 2026-09-19
 parents:
@@ -27,7 +27,7 @@ A Home do Travel é uma apresentação pública especializada de uma capacidade 
 
 Este documento governa **somente a Home do Guivos Travel**.
 
-Ele não materializa wireframe, UI, protótipo, frontend, backend ou implementação e não autoriza automaticamente nenhuma dessas etapas.
+Este Master não cria por si só implementação ou publicação. A produção externa de Design da Home Travel — incluindo wireframe, UI e protótipo — está autorizada pelo release comum vigente e permanece sob autoria criativa da designer.
 
 Também não governa páginas internas de resultados, hotel, voo, pacote, experiência, reserva, passageiro, pagamento, voucher, perfil, checkout ou pós-venda.
 
