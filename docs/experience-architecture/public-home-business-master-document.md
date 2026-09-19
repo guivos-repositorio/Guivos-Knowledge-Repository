@@ -673,11 +673,11 @@ Este Documento Mestre não:
 
 ---
 
-## 29. Contrato de entrada para Design
+## 28. Contrato de entrada para Design
 
 Este Master deve poder ser consumido diretamente pela designer junto às autoridades comuns, sem exigir reconstrução informal do histórico.
 
-### 29.1 Navegação pública e Header
+### 28.1 Navegação pública e Header
 
 A Home Business deve permitir acesso claro à Guivos e às rotas públicas relevantes sem transformar a navegação global em catálogo.
 
@@ -688,7 +688,7 @@ A solução de Header, menus, launcher, sticky behavior e arquitetura visual per
 - a navegação não introduza disponibilidade ou função não governada;
 - CTAs comerciais da Home permaneçam distinguíveis de navegação global.
 
-### 29.2 Responsividade e acessibilidade
+### 28.2 Responsividade e acessibilidade
 
 ```text
 MESMA VERDADE
@@ -711,7 +711,7 @@ A solução deve considerar desde a concepção:
 - expansão de texto e internacionalização;
 - ausência de dependência de hover para significado essencial.
 
-### 29.3 Conteúdo, prova e dados reais
+### 28.3 Conteúdo, prova e dados reais
 
 Exigem fonte real antes de apresentação factual:
 
@@ -729,13 +729,13 @@ Exigem fonte real antes de apresentação factual:
 
 Placeholder pode testar composição, mas deve permanecer reconhecível como provisório.
 
-### 29.4 Questões abertas
+### 28.4 Questões abertas
 
 Detalhes comerciais ainda não congelados devem ser tratados como `OPEN_QUESTION` ou `REAL_DATA_REQUIRED`, não como licença para completar o produto por inferência.
 
 A solução deve tolerar substituição de conteúdo e valores sem reconstrução estrutural.
 
-### 29.5 Liberdade criativa
+### 28.5 Liberdade criativa
 
 A designer pode definir livremente:
 
@@ -762,10 +762,25 @@ DESIGN FREEDOM
 IA, quando utilizada, é apoio opcional e consome a mesma verdade documental.
 
 
-## 28. Próximo estágio
+## 29. Estado de consumo
 
-Com este Documento Mestre validado, a próxima etapa governada é:
+O Source Lock do Business já existe e permanece autoridade complementar.
 
-> **SOURCE LOCK — HOME GUIVOS BUSINESS**
+Este Master v1.1.0 passa a ser a autoridade narrativa e de entrada para Design dentro do pacote vigente.
 
-O Source Lock deverá congelar a fonte pública aprovada para implementação e Design, sem reabrir decisões já consolidadas salvo nova autorização explícita.
+```text
+MASTER
+→ DESIGN INPUT READY CANDIDATE
+
+SOURCE LOCK
+→ COMPLEMENTARY / ACTIVE
+
+DESIGN
+→ EXTERNAL / DESIGNER-LED
+
+AI
+→ OPTIONAL
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+```
