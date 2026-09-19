@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-29
 parent: GKR-UX-HOME-MASTER-001
@@ -1812,3 +1812,27 @@ HOME O/C
 Estado deste documento:
 
 > **DOCUMENTO MESTRE RECONSTRUÍDO DOCUMENTALMENTE — MATERIALIZAÇÃO NÃO AUTORIZADA; AUDITORIA INTEGRAL AINDA EM CURSO.**
+
+---
+
+## 33. Contrato explícito de entrada para Design
+
+A designer deve conseguir compreender a Home O/C a partir deste Master e das autoridades comuns sem reconstruir decisões históricas.
+
+### 33.1 Liberdade criativa
+
+Pertencem à designer: identidade visual, tipografia, paleta, imagem, composição, grid, ritmo, mídia, motion, componentes, representação das relações, solução da bifurcação final e comportamento responsivo.
+
+A bifurcação Organização/Coletivo deve preservar equivalência de dignidade e distinção de autoridade, sem impor forma visual específica.
+
+### 33.2 Dados reais, placeholders e questões abertas
+
+Identidade, iniciativa, parceria, relação, métrica, prova, história e capacidade apresentadas como reais exigem fonte.
+
+Placeholders podem testar forma, mas não podem criar parceria, relevância, reciprocidade ou autoridade fictícias.
+
+Copy final, rodapé e disponibilidade concreta dos destinos posteriores permanecem abertas quando não governadas.
+
+### 33.3 Uso de IA
+
+IA é apoio opcional e recebe a mesma verdade documental. Ela não pode resolver silenciosamente autoridade, bilateralidade, elegibilidade, relevância ou bifurcação institucional.
