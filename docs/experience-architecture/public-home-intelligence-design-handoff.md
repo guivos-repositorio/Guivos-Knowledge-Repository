@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
 title: Handoff Canônico para Design — Home Pública — Guivos Intelligence
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
@@ -49,9 +49,9 @@ Este Handoff **não é**:
 - implementação;
 - autorização de publicação.
 
-## 2. Base exata do Handoff
+## 2. Base de origem e reconciliação corrente
 
-Este Handoff foi preparado a partir do estado reconciliado:
+A base abaixo registra a proveniência histórica de criação deste Handoff:
 
 ```text
 main
@@ -67,7 +67,7 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
 → normative: true
 ```
 
-O Handoff não altera a autoridade superior congelada nesse estado.
+O Handoff preserva essa proveniência, mas seu consumo corrente é reconciliado pelas autoridades posteriores e pelo candidato v6.
 
 ## 3. Cadeia de autoridade
 
@@ -75,11 +75,11 @@ Para Design, aplicar a seguinte ordem:
 
 ```text
 NÍVEL 0
-GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.0
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.2
 → governa narrativa pública, copy e fronteiras da Home
 
 NÍVEL 2
@@ -542,39 +542,35 @@ Qualquer futura proposta de wireframe, UI ou protótipo deve ser rejeitada ou co
 - [ ] não inventa maturidade, integração, benchmark, métrica ou caso real;
 - [ ] não transforma Intelligence em dashboard, IA ou produto tecnológico isolado.
 
-## 18. Próximo gate — GENINPUT Intelligence
+## 18. Consumo corrente — designer-first / IA opcional
 
-Com este Handoff integrado, o próximo artefato elegível é o **GENINPUT Intelligence**, em pacote separado.
+O Handoff específico é consumido dentro do contrato comum das oito Homes.
 
 ```text
 HOME SOURCE LOCK
-→ HANDOFF CANÔNICO PARA DESIGN
-→ GENINPUT INTELLIGENCE
-→ MATERIALIZAÇÃO CONTROLADA
+→ HANDOFF ESPECÍFICO
+→ PACOTE V6 DA HOME
+→ DESIGNER HUMANA COMO AUTORA CRIATIVA
+→ IA OPCIONAL SOB CONTROLE DA DESIGNER
 ```
 
-O GENINPUT deve traduzir este contrato para o formato operacional necessário à ferramenta ou etapa de Design escolhida, sem criar nova autoridade semântica.
+`GKR-UX-HOMES-GENINPUT-001` pode traduzir este contrato para consumo por IA quando a designer optar por utilizá-la. Essa tradução não cria nova autoridade semântica e não é etapa obrigatória.
 
 Invariante:
 
-> **GENINPUT TRADUZ O HANDOFF ≠ REDEFINE A HOME**
+> **IA PODE APOIAR O HANDOFF ≠ REDEFINIR A HOME ≠ SUBSTITUIR A DESIGNER**
 
-O GENINPUT **não integra este Handoff** e deve ser tratado em PR separada.
+## 19. Limites do Handoff
 
-## 19. O que a integração deste Handoff não inicia automaticamente
+Este Handoff não autoriza automaticamente:
 
-A integração deste documento não inicia automaticamente:
-
-- GENINPUT;
-- execução em Figma Make ou outra ferramenta generativa;
-- wireframe;
-- UI;
-- protótipo;
 - implementação front-end ou back-end;
+- Product Engineering;
 - publicação;
 - Marketing/GTM;
 - pricing;
 - mudança de maturidade técnica;
-- sincronização transversal de `GKR-STATE-001` ou Roadmap.
+- sincronização transversal de `GKR-STATE-001` ou Roadmap;
+- novos claims, capacidades, integrações ou provas não sustentados.
 
-Cada etapa posterior exige o gate e a autorização correspondentes.
+A criação de Design ocorre externamente pela designer dentro do release comum vigente. O GKR não cria, edita ou avança arquivos Figma e não exige execução generativa.
