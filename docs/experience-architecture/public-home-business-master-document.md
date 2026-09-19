@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-08-16
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
@@ -361,22 +361,31 @@ A Home deve comunicar positivamente aquilo que o Intelligence entrega.
 
 As limitações de causalidade, dados internos empresariais, privacidade e individualidade continuam normativamente preservadas por `GKR-UX-HOME-BUSINESS-AUTHORITY-001`, mas não precisam dominar a copy pública.
 
-## 15. Direção visual obrigatória para o futuro Design
+## 15. Requisito semântico para tornar Intelligence tangível
 
-O Movimento Intelligence deve ser prioritariamente demonstrado por uma representação visual do produto, incluindo conceitos como:
+O Movimento Intelligence precisa tornar **compreensível e tangível** o valor que a capacidade produz, sem reduzir o produto a uma interface específica.
 
-- dashboard;
-- KPIs;
+A designer possui liberdade para decidir como materializar essa compreensão. Exemplos possíveis, não obrigatórios:
+
+- relações visuais;
+- séries temporais;
 - gráficos;
-- evolução temporal;
-- participação;
-- utilização;
-- recorrência;
-- tendências;
-- interesses agregados;
-- movimentos e distribuições.
+- indicadores;
+- comparações;
+- padrões;
+- narrativas de mudança;
+- outras formas originais de representar contexto e compreensão.
 
-O Documento Mestre não congela o dashboard final, métricas exatas ou layout.
+```text
+TORNAR O VALOR TANGÍVEL
+→ CANONICAL
+
+DASHBOARD / KPI / GRÁFICO / SÉRIE TEMPORAL
+→ DESIGN_HYPOTHESIS
+→ NÃO OBRIGAÇÃO VISUAL
+```
+
+Nenhuma representação autoriza métricas, números, tendências ou resultados fictícios como reais.
 
 ## 16. CTA para Guivos Intelligence
 
@@ -660,6 +669,98 @@ Este Documento Mestre não:
 - define disponibilidade concreta por país/moeda;
 - cria Source Lock;
 - autoriza Design.
+
+
+---
+
+## 29. Contrato de entrada para Design
+
+Este Master deve poder ser consumido diretamente pela designer junto às autoridades comuns, sem exigir reconstrução informal do histórico.
+
+### 29.1 Navegação pública e Header
+
+A Home Business deve permitir acesso claro à Guivos e às rotas públicas relevantes sem transformar a navegação global em catálogo.
+
+A solução de Header, menus, launcher, sticky behavior e arquitetura visual permanece decisão de Design, desde que:
+
+- Business seja inequivocamente reconhecível como Produto Especializado da Guivos;
+- Login/Journey/produtos não ganhem papel incompatível com suas autoridades;
+- a navegação não introduza disponibilidade ou função não governada;
+- CTAs comerciais da Home permaneçam distinguíveis de navegação global.
+
+### 29.2 Responsividade e acessibilidade
+
+```text
+MESMA VERDADE
+→ DESKTOP / TABLET / MOBILE
+
+RESPONSIVIDADE
+→ PRESERVAR HIERARQUIA E SIGNIFICADO
+→ NÃO APENAS EMPILHAR DESKTOP
+```
+
+A solução deve considerar desde a concepção:
+
+- contraste;
+- foco e teclado;
+- touch targets;
+- texto ampliado;
+- ordem semântica;
+- reduced motion;
+- mídia com alternativa adequada;
+- expansão de texto e internacionalização;
+- ausência de dependência de hover para significado essencial.
+
+### 29.3 Conteúdo, prova e dados reais
+
+Exigem fonte real antes de apresentação factual:
+
+- preços;
+- limites de plano;
+- SLA;
+- entitlement;
+- integrações;
+- disponibilidade por país/moeda;
+- cases;
+- métricas;
+- resultados;
+- parceiros/clientes;
+- condições comerciais.
+
+Placeholder pode testar composição, mas deve permanecer reconhecível como provisório.
+
+### 29.4 Questões abertas
+
+Detalhes comerciais ainda não congelados devem ser tratados como `OPEN_QUESTION` ou `REAL_DATA_REQUIRED`, não como licença para completar o produto por inferência.
+
+A solução deve tolerar substituição de conteúdo e valores sem reconstrução estrutural.
+
+### 29.5 Liberdade criativa
+
+A designer pode definir livremente:
+
+- tipografia;
+- paleta;
+- imagem;
+- ilustração;
+- composição;
+- grid;
+- densidade;
+- motion;
+- componentes;
+- representação dos planos;
+- configuração comercial;
+- expressão visual do Intelligence;
+- comportamento responsivo.
+
+```text
+DESIGN FREEDOM
+≠ PRODUCT REDEFINITION
+≠ FACTUAL INVENTION
+```
+
+IA, quando utilizada, é apoio opcional e consome a mesma verdade documental.
+
 
 ## 28. Próximo estágio
 
