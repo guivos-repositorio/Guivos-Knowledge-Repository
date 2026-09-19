@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-19
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
 depends_on:
   - GKR-UX-HOME-BUSINESS-NARRATIVE-001
@@ -658,13 +658,55 @@ Este Documento Mestre não:
 - define SLA;
 - congela entitlements;
 - define disponibilidade concreta por país/moeda;
-- cria Source Lock;
+- não substitui o Source Lock vigente;
 - autoriza Design.
 
-## 28. Próximo estágio
+## 28. Estado corrente de handoff
 
-Com este Documento Mestre validado, a próxima etapa governada é:
+O estado temporal anterior foi superado pela criação e integração do Source Lock da Home Business.
 
-> **SOURCE LOCK — HOME GUIVOS BUSINESS**
+```text
+GKR-UX-HOME-BUSINESS-MASTER-001
+→ CANONICAL DOCUMENTARY HANDOFF INPUT
 
-O Source Lock deverá congelar a fonte pública aprovada para implementação e Design, sem reabrir decisões já consolidadas salvo nova autorização explícita.
+GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0
+→ EXISTS / ACTIVE WITHIN ITS SCOPE
+
+MASTER
+→ NARRATIVE / SEMANTIC / FUNCTIONAL AUTHORITY
+
+SOURCE LOCK
+→ SOURCE PACKAGE / INVARIANT FREEZE
+
+MASTER
+≠ SOURCE LOCK
+
+MASTER + SOURCE LOCK
+≠ VISUAL DIRECTION
+≠ IMPLEMENTATION RELEASE
+```
+
+Para criação da Home Business, a designer deve consumir o pacote vigente definido pelo Manifesto de entrega, incluindo as autoridades complementares de conversão, autoridade e Produto.
+
+### 28.1 Liberdade de Design
+
+```text
+DESIGNER
+→ CREATIVE AUTHOR
+→ MAY WORK MANUALLY
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+GKR
+→ DOES NOT CREATE FIGMA
+→ DOES NOT DEFINE VISUAL IDENTITY IN ADVANCE
+```
+
+A designer pode criar tipografia, paleta, composição, imagem, grid, componentes, motion, atmosfera e direção visual, desde que preserve as fronteiras deste Master e das autoridades Business vigentes.
+
+### 28.2 Critério de consumo
+
+Nenhuma leitura deste documento deve reabrir como “próxima etapa” a criação do Source Lock já existente.
+
+A próxima frente documental aplicável às Homes é a reauditoria de completude das fontes e eventual emissão de pacote posterior ao v5.
