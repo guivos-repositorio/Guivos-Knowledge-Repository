@@ -1065,8 +1065,8 @@ EXPERIÊNCIA AUTENTICADA O/C
 → SURFACE MAP DOCUMENTARY DEFINED
 → STATE MAP DOCUMENTARY DEFINED
 → PRIORITY FLOWS = DEFINED / CANONICAL DOCUMENTARY
-→ NAVIGATION MATERIALIZATION = NOT MATERIALIZED
-→ WIREFRAMES = NOT STARTED
+→ NAVIGATION MATERIALIZATION = DEFINED / CANONICAL DOCUMENTARY / v1.0.0
+→ WIREFRAMES = NOT STARTED / NOT RELEASED
 ```
 
 ### 10.3 Homes dos Produtos Especializados
@@ -1757,8 +1757,8 @@ Após o fechamento da auditoria integral e a captura da baseline final, permanec
 - evidência de atividade efetiva para AIaaS se incluído;
 - implantação real do perfil pessoal do fundador;
 - publicação real de conteúdo do fundador;
-- Navigation Materialization O/C, somente mediante ato governado próprio;
-- navegação materializada e wireframes autenticados O/C, ainda não iniciados;
+- Authenticated Wireframes O/C, somente mediante ato governado próprio;
+- Design/UI/protótipo O/C, ainda não iniciados/não liberados;
 - UXA-102/V5;
 - Product Engineering.
 
