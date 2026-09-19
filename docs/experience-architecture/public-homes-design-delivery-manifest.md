@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 5.1.0
+version: 5.1.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -66,12 +66,12 @@ A ausência de identidade visual canônica não é lacuna: estética e sistema v
 
 ### 3.6 Media
 
-13. `docs/experience-architecture/public-home-media-master-document.md` — `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0`;
+13. `docs/experience-architecture/public-home-media-master-document.md` — `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1`;
 14. `docs/product-architecture/media.md` — `GPA-005 v1.2.0`.
 
 ### 3.7 Ads
 
-15. `docs/experience-architecture/public-home-ads-master-document.md` — `GKR-UX-HOME-ADS-MASTER-001 v1.0.0`;
+15. `docs/experience-architecture/public-home-ads-master-document.md` — `GKR-UX-HOME-ADS-MASTER-001 v1.0.1`;
 16. `docs/product-architecture/ads.md` — `GPA-007 v1.3.0`.
 
 ### 3.8 Business
