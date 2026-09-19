@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.6.1
+version: 1.6.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -246,17 +246,17 @@ Ordem operacional específica no pacote v5:
 N0 — LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL V5
      → fixa checkpoint, fontes, prompt e estado EXPLORAÇÃO
 
-N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.5
      → congela significado e invariantes da Home
 
-N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
+N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.6
      → traduz a Home para o contrato de Design
 
 N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
      → preserva narrativa, copy e função pública
 
-N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
-     + GPA-006 v2.0.0
+N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
+     + GPA-006 v2.0.1
      → governam significado e limites superiores do produto
 ```
 
