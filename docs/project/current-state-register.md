@@ -1144,7 +1144,7 @@ PRIVACIDADE DE REFERÊNCIA
 ≠ EVIDÊNCIA OPERACIONAL
 ```
 
-A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.4` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes e não constitui, por si só, release operacional. A produção externa de Design da Home pública é regida pelo release comum posterior; implementação e publicação permanecem separadas.
+A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.5` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes e não constitui, por si só, release operacional. A produção externa de Design da Home pública é regida pelo release comum posterior; implementação e publicação permanecem separadas.
 
 Estado:
 
