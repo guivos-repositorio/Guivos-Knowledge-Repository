@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 title: Homes Públicas — Autorização Governada de Design Production Release
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
-maturity: design_production_release_granted_pre_execution
+maturity: design_production_release_granted_document_source_v6_finalization
 depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -23,22 +23,26 @@ related:
 
 ## 1. Finalidade
 
-Esta autoridade registra o ato humano explícito que encerra o gate de pré-release das oito Homes públicas e libera o início da fase externa de Design sobre o snapshot v5 já emitido, materializado e validado.
+Esta autoridade preserva o ato humano que concedeu `DESIGN PRODUCTION RELEASE` para as oito Homes públicas e corrige o modelo operacional de consumo da documentação.
 
-A decisão é deliberadamente separada da emissão do snapshot:
+A autorização é para **trabalho externo de Design conduzido pela designer humana**, a partir das fontes governadas do GKR.
 
 ```text
-SNAPSHOT EMISSION
-→ COMPLETED
+GKR
+→ SIGNIFICADO / FUNÇÃO / LIMITES / VERDADE / FONTES
 
-DESIGN PRODUCTION RELEASE
-→ GRANTED
+DESIGNER
+→ AUTORIA CRIATIVA
+→ CRIAÇÃO MANUAL E CURADORIA DA ENTREGA NO FIGMA
+→ DECISÃO VISUAL DENTRO DOS LIMITES SEMÂNTICOS
 
-AUTHORIZATION
-≠ EXECUTION
-≠ DIRECTION APPROVAL
-≠ FINAL FIGMA ACCEPTANCE
-≠ IMPLEMENTATION
+SISTEMAS DE IA
+→ APOIO OPCIONAL
+→ LEITURA / SÍNTESE / IDEAÇÃO / ALTERNATIVAS / COPY CANDIDATA / ASSETS CANDIDATOS
+→ SEM AUTORIDADE CANÔNICA
+
+GKR OU IA → MATERIALIZAÇÃO DIRETA DO ARQUIVO OFICIAL NO FIGMA
+→ FORA DO FLUXO APROVADO
 ```
 
 ## 2. Decisão governada
@@ -46,9 +50,6 @@ AUTHORIZATION
 ```text
 PUBLIC HOMES DESIGN PRODUCTION RELEASE
 → GRANTED
-
-AUTHORITY
-→ GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 
 AUTHORIZED TARGETS
 → HOME PESSOA
@@ -60,18 +61,22 @@ AUTHORIZED TARGETS
 → HOME BUSINESS
 → HOME INTELLIGENCE
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ AUTHORIZED TO EXECUTE
-→ NOT_STARTED
+HUMAN DESIGNER
+→ PRIMARY CREATIVE EXECUTOR
 
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED BY THIS ACT
-→ REQUIRES HUMAN DIRECTION APPROVAL
+AI SUPPORT
+→ OPTIONAL / NON-AUTHORITATIVE
+
+OFFICIAL FIGMA FILE
+→ MANUALLY CREATED / CURATED BY DESIGNER
+
+DIRECT AI-TO-FIGMA EXECUTION BY GKR WORKFLOW
+→ NOT PART OF THE APPROVED PROCESS
 ```
 
-O release concede permissão para iniciar a exploração e materialização de Design conforme o fluxo governado. Ele não executa Design neste mesmo checkpoint.
+## 3. Evidência histórica de entrada
 
-## 3. Evidência de entrada
+O snapshot v5 permanece reproduzível e congelado:
 
 ```text
 ORIGIN MAIN FOR SNAPSHOT
@@ -85,86 +90,70 @@ SNAPSHOT COMMIT
 
 SNAPSHOT TREE
 → 67bacb135166e7f3e85bfb4c52602ba89a515a1e
-
-PACKAGE
-→ 34 FILES
-→ 26 CANONICAL SOURCES
-→ 8 PER-HOME LEIA-PRIMEIRO / SOURCE LOCK GUIDES
-
-CANONICAL BLOB PRESERVATION
-→ 26 / 26 EXACT MATCH
-→ MISMATCHES = 0
 ```
 
-## 4. Regra de congelamento do snapshot
+O v5 não é reescrito. Sua hipótese operacional de Figma Make passa a ser **histórica e superada** para novas entregas.
 
-Este ato não reescreve `delivery/design-handoff-v5`.
+## 4. Fonte operacional futura
 
-```text
-SNAPSHOT V5
-→ FROZEN / UNCHANGED
-
-RELEASE AUTHORITY
-→ POST-SNAPSHOT GOVERNANCE RECORD
-→ SUPPLEMENTS THE PACKAGE
-→ DOES NOT MUTATE CANONICAL SOURCE BLOBS
-```
-
-Os documentos congelados podem registrar que o release ainda não havia sido concedido no instante da emissão. Este documento é o ato posterior que satisfaz aquele gate temporal, sem alterar as verdades semânticas do pacote.
-
-## 5. Fonte operacional de cada Home
-
-A execução deve trabalhar uma Home por vez e consumir:
+A próxima emissão externa deverá ser v6 e trabalhar uma Home por vez com:
 
 1. `00-COMUM`;
-2. o `00-LEIA-PRIMEIRO` da Home;
-3. somente as fontes específicas daquela Home;
-4. esta autoridade de release como prova do gate temporal satisfeito.
+2. `00-LEIA-PRIMEIRO` da Home;
+3. fontes específicas daquela Home;
+4. esta autoridade de release;
+5. matriz explícita das oito classes operacionais.
 
-As oito classes operacionais continuam obrigatórias: `CANONICAL`, `DESIGN_CREATIVE`, `CONTENT_CANDIDATE`, `DESIGN_HYPOTHESIS`, `PROTOTYPE_PLACEHOLDER`, `REAL_DATA_REQUIRED`, `OPEN_QUESTION` e `PROHIBITED_INFERENCE`.
+As classes permanecem: `CANONICAL`, `DESIGN_CREATIVE`, `CONTENT_CANDIDATE`, `DESIGN_HYPOTHESIS`, `PROTOTYPE_PLACEHOLDER`, `REAL_DATA_REQUIRED`, `OPEN_QUESTION` e `PROHIBITED_INFERENCE`.
 
-## 6. Liberdade criativa preservada
+## 5. Liberdade criativa preservada
 
-O release não transforma estética em contrato canônico. Identidade visual, tipografia, paleta, imagens, composição, grid, iconografia, motion, aparência de componentes, linguagem gráfica, atmosfera e copy/tom não congelados permanecem Design-owned dentro das fronteiras semânticas.
+Identidade visual, tipografia, paleta, imagens, composição, grid, iconografia, motion, aparência de componentes, linguagem gráfica, atmosfera e copy/tom não congelados permanecem sob autoria da designer.
+
+Nenhum documento v6 deverá criar brand book visual implícito.
 
 ```text
-GKR
-→ SIGNIFICADO / FUNÇÃO / LIMITES / VERDADE
-
-DESIGN
-→ EXPRESSÃO VISUAL / CRIATIVA
-
 DESIGN FREEDOM
 ≠ PRODUCT REDEFINITION
 ≠ FACTUAL INVENTION
+≠ CLAIM WITHOUT EVIDENCE
 ```
 
-## 7. Execução inicialmente liberada
+## 6. Uso de sistemas de IA
+
+A designer pode utilizar sistemas de IA quando isso ampliar qualidade ou velocidade, inclusive para estudar e sintetizar fontes, testar alternativas, propor `CONTENT_CANDIDATE`, gerar referências/assets candidatos e verificar consistência contra o Source Lock.
+
+Toda saída de IA permanece proposta. A designer é responsável por selecionar, revisar, adaptar ou rejeitar.
 
 ```text
-FIGMA MAKE / EQUIVALENT GENERATIVE TOOL
-→ EXPLORAÇÃO / PROTÓTIPO
-→ NON-CANONICAL OUTPUT
-→ HUMAN REVIEW REQUIRED
+AI OUTPUT
+→ CANDIDATE / ASSISTIVE
+
+AI OUTPUT
+≠ CANONICAL TRUTH
+≠ DESIGN APPROVAL
+≠ OFFICIAL FIGMA DELIVERY
 ```
 
-Nenhuma saída automática se torna canônica por ter sido gerada.
-
-## 8. Gate humano de direção permanece obrigatório
+## 7. Gate de direção e entrega final
 
 ```text
-FIGMA MAKE / EXPLORATION
+DOCUMENTARY SOURCE PACKAGE V6
 ↓
-HUMAN REVIEW
+DESIGNER STUDY
 ↓
-DIRECTION APPROVED
+OPTIONAL AI ASSISTANCE
 ↓
-FINAL FIGMA PRODUCTION
+MANUAL / HUMAN-CURATED DESIGN EXPLORATION
+↓
+HUMAN DIRECTION REVIEW
+↓
+DESIGNER FINALIZATION IN FIGMA
+↓
+FINAL HUMAN ACCEPTANCE
 ```
 
-DESIGN PRODUCTION RELEASE não equivale a aprovação final de direção nem a aceite final do Figma.
-
-## 9. Limites explícitos
+## 8. Limites explícitos
 
 Este ato não autoriza Product Engineering, frontend/backend, publicação, deploy, nova arquitetura de produto, nova funcionalidade não governada, alteração de modelo econômico, Marketing/GTM, Research com participantes reais, claims não sustentados, promoção de `GKR-SURF-*`/`GKR-TRN-*`, `UXA-102/V5` ou high-fidelity da experiência autenticada O/C por inferência.
 
@@ -173,23 +162,26 @@ PUBLIC HOME O/C DESIGN RELEASE
 ≠ O/C AUTHENTICATED HIGH-FIDELITY AUTHORIZATION
 ```
 
-## 10. Estado após a autorização
+## 9. Estado corrente
 
 ```text
 V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED / FROZEN
+→ FROZEN / HISTORICAL FOR NEW EXECUTION
 
 DESIGN PRODUCTION RELEASE
 → GRANTED
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+DOCUMENTARY SOURCE V6
+→ UNDER FINALIZATION
 
-HUMAN DIRECTION APPROVAL
-→ NOT_YET_PERFORMED
+EXTERNAL DESIGN EXECUTION
+→ HOLD UNTIL V6 SNAPSHOT IS EMITTED AND VALIDATED
 
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED
+AI SUPPORT
+→ OPTIONAL / NON-AUTHORITATIVE
+
+DIRECT GKR/AI FIGMA MATERIALIZATION
+→ OUT_OF_SCOPE
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -198,6 +190,6 @@ UXA-102 / V5
 → NOT_STARTED
 ```
 
-## 11. Próximo movimento legítimo
+## 10. Próximo movimento legítimo
 
-O próximo movimento permitido é a execução externa de Design, uma Home por vez, iniciando pela leitura do `LEIA-PRIMEIRO`, autoridades comuns e fontes específicas, seguida de Figma Make/exploração e revisão humana.
+Concluir, revisar, validar e emitir o **pacote documental v6** para a designer e para sistemas de IA de apoio. Nenhum arquivo de Design precisa ser criado pelo GKR para satisfazer esse gate.

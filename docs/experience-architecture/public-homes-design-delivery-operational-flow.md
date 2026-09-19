@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
 title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 status: active
-version: 2.0.1
+version: 3.0.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -14,119 +14,92 @@ depends_on:
 related:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 normative: false
-maturity: post_audit_v5_operational_flow_release_granted_pre_execution
+maturity: v6_manual_designer_ai_assisted_flow_candidate
 ---
 
 # Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 
 ## 1. Finalidade
 
-Este fluxo governa como a designer deve consumir o pacote v5, usar Figma Make para prototipação e somente depois construir o Figma definitivo.
+Este fluxo governa como a **designer humana** consome o pacote documental das oito Homes e produz a solução visual com liberdade criativa.
+
+Figma é ferramenta da designer. Sistemas de IA são apoio opcional. O GKR não cria nem governa diretamente o arquivo oficial de Design.
 
 ## 2. Gate de início
 
-O gate de início foi satisfeito. A execução pode começar somente dentro deste fluxo, porque coexistem:
-
-- snapshot v5 materializado e validado;
-- Source Lock operacional da Home;
-- `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0 = GRANTED`.
-
-A autorização de início não elimina os gates internos de revisão humana, direção criativa aprovada e aceite final.
+`DESIGN PRODUCTION RELEASE` permanece concedido, mas a execução externa fica em `HOLD` até a emissão e validação do snapshot v6.
 
 ## 3. Isolamento de contexto
 
-Trabalhar uma Home por vez. Carregar `00-COMUM`, o `00-LEIA-PRIMEIRO` da Home e somente suas fontes específicas.
+Trabalhar uma Home por vez.
 
-## 4. Fase A — compreensão humana
+```text
+00-COMUM
++
+00-LEIA-PRIMEIRO DA HOME
++
+FONTES ESPECÍFICAS DA HOME
+```
 
-Antes de gerar:
+## 4. Fase A — compreensão humana obrigatória
 
-1. ler o guia da Home;
-2. ler Handoff e contrato de prontidão;
-3. ler Master/autoridades específicas;
-4. identificar `CANONICAL`, `DESIGN_CREATIVE`, `CONTENT_CANDIDATE`, `DESIGN_HYPOTHESIS`, `PROTOTYPE_PLACEHOLDER`, `REAL_DATA_REQUIRED`, `OPEN_QUESTION` e `PROHIBITED_INFERENCE`.
+A designer deve ler o guia, as autoridades comuns e as fontes específicas; distinguir as oito classes operacionais; e registrar dúvidas materiais antes de transformar ausência documental em solução visual.
 
-## 5. Fase B — Figma Make / protótipo exploratório
+## 5. Fase B — apoio opcional de IA
 
-A ferramenta recebe ampla liberdade visual e nenhum direito de redefinir a Guivos.
+IA pode apoiar síntese, comparação de fontes, ideação, alternativas, Content Design candidato, referências/assets candidatos e autoauditoria.
 
-Output: `EXPLORAÇÃO / NÃO CANÔNICA`.
+IA não é etapa obrigatória e não recebe autoridade para definir produto, preencher lacuna factual, promover hipótese, aprovar direção ou tornar seu output o arquivo oficial.
 
-A designer pode iterar, combinar ou rejeitar propostas da ferramenta.
+## 6. Fase C — exploração de Design pela designer
 
-## 6. Fase C — revisão humana obrigatória
+A designer cria e organiza manualmente ou cura conscientemente a solução em suas ferramentas de trabalho.
 
-Revisar:
+Ela pode usar IA, plugins e recursos criativos de sua escolha, desde que preserve contratos, identifique placeholders, não apresente ficção como realidade e mantenha acessibilidade e responsividade.
 
-- fidelidade semântica;
-- clareza e experiência;
-- criatividade/originalidade;
-- conteúdo candidato;
-- responsividade;
-- acessibilidade;
-- estados;
-- dados/provas;
-- hipóteses introduzidas.
+Output: `DESIGN EXPLORATION / HUMAN-CURATED / NON-CANONICAL`.
 
-Registrar o que foi aceito, rejeitado e o que precisa ser resolvido.
+## 7. Fase D — revisão humana de direção
 
-A aprovação da direção deve deixar um registro mínimo contendo:
+Revisar fidelidade semântica, clareza, criatividade, hierarquia, conteúdo candidato, desktop/mobile, acessibilidade, estados, dados/provas e hipóteses introduzidas.
 
-- Home;
-- versão/link ou identificador inequívoco do protótipo avaliado;
-- data;
-- responsável humano pela aprovação;
-- direção selecionada;
-- decisões criativas aceitas;
-- conteúdo candidato aprovado/rejeitado;
-- placeholders e dados reais ainda necessários;
-- questões abertas não bloqueadoras;
-- status final `DIREÇÃO APROVADA`.
+Sem aprovação humana da direção, não iniciar finalização contratual.
 
-Sem esse registro e sem aprovação humana da direção, não iniciar construção definitiva.
+## 8. Fase E — finalização pela designer
 
-## 7. Fase D — Figma definitivo
+A direção aprovada é refinada pela designer no Figma ou ferramenta contratada.
 
-A direção aprovada pode ser refinada livremente pela designer, preservando contratos. Alteração material da direção aprovada — como conceito de Hero, linguagem visual, arquitetura de navegação, composição global ou mudança equivalente — retorna ao gate humano antes do aceite final.
+Tipografia, cores, estilos, componentes, assets, estados, comportamento responsivo e motion necessários à consistência são documentados como consequência do Design, não como baseline estética pré-imposta pelo GKR.
 
-A solução criativa aprovada deve ser documentada no arquivo: tipografia, cores, estilos, componentes, assets e regras necessárias para consistência e handoff.
+## 9. Fase F — aceite final
 
-Essas foundations são consequência do Design, não baseline pré-imposta.
+O aceite humano verifica o checklist de `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001`.
 
-## 8. Fase E — aceite final
+```text
+FINAL DESIGN ACCEPTED
+≠ IMPLEMENTATION
+≠ PRODUCT ENGINEERING RELEASE
+```
 
-Executar o checklist de `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001`, incluindo continuidade de fontes/plugins/assets, controle do arquivo pela Guivos e revisão integrada das oito Homes.
+## 10. Regra de mudança
 
-O aceite final deve registrar, no mínimo:
+Mudança semântica material após o snapshot interrompe a Home afetada até reconciliação documental. Refinamento puramente criativo permanece sob autonomia da designer.
 
-- Home(s) entregues;
-- arquivo Figma e versão avaliada;
-- data;
-- responsável humano pelo aceite;
-- checklist de produção concluído;
-- assets/fontes/plugins/licenças entregues ou documentados;
-- pendências inexistentes ou explicitamente classificadas como não bloqueadoras;
-- confirmação de controle/acesso da Guivos aos arquivos essenciais;
-- status `FIGMA FINAL ACEITO`.
+## 11. Estado
 
-A conclusão operacional do serviço de Design deve ocorrer **depois** desse aceite. Condições financeiras e jurídicas permanecem no instrumento contratual aplicável, mas o GKR não considera a entrega concluída antes de `FIGMA FINAL ACEITO`.
+```text
+FLOW v3.0.0
+→ CANDIDATE FOR V6
 
-Estados:
+PRIMARY EXECUTOR
+→ HUMAN DESIGNER
 
-- `EXPLORAÇÃO`;
-- `PROTÓTIPO CANDIDATO`;
-- `DIREÇÃO APROVADA`;
-- `FIGMA FINAL CANDIDATO`;
-- `FIGMA FINAL ACEITO`.
+AI
+→ OPTIONAL ASSISTANCE
 
-`FIGMA FINAL ACEITO` não equivale a implementação, produção ou Product Engineering.
+OFFICIAL FIGMA
+→ DESIGNER-CREATED / DESIGNER-CURATED
 
-## 9. Regra de mudança após aprovação
-
-Se uma decisão semântica mudar depois do Source Lock, interromper a Home afetada, reconciliar o impacto e emitir novo checkpoint quando material.
-
-Uma melhoria puramente criativa que não altera contrato pode ocorrer dentro do processo de Design e ser consolidada no Figma final.
-
-## 10. Estado
-
-`FLOW v2.0.1 READY / DESIGN PRODUCTION RELEASE GRANTED / FIGMA MAKE AUTHORIZED TO EXECUTE / NOT_STARTED / FINAL FIGMA REQUIRES HUMAN DIRECTION APPROVAL`.
+DIRECT GKR/AI FIGMA MATERIALIZATION
+→ OUT_OF_SCOPE
+```

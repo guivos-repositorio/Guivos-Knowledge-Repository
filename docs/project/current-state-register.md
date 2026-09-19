@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.47.0
+version: 3.48.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -2337,24 +2337,11 @@ PRODUCT ENGINEERING
 ```
 
 O avanço posterior ao fechamento Home Masters inclui, nesta revisão, a promoção canônica de Navigation Materialization após Surface Map, State Map, Priority Flows e sua elegibilidade O/C. Authenticated Wireframes, Design/UI, protótipo e Product Engineering continuam não liberados automaticamente.
-## 31. Homes públicas — Design Production Readiness
+## 31. Homes públicas — Design Source Readiness v6
 
-A frente anterior de high-fidelity autenticado O/C permanece preservada no gate já alcançado, mas sua execução continua não autorizada. A prioridade temporária passa a ser garantir que as oito Homes públicas possam ser contratadas e produzidas em Figma sem lacunas documentais materiais.
+A frente anterior de high-fidelity autenticado O/C permanece preservada no gate já alcançado e continua separada. A prioridade temporária é deixar as oito Homes públicas **documentalmente completas** para a designer humana e para sistemas de IA de apoio, sem impor identidade visual e sem materialização direta de Figma pelo GKR.
 
-Baseline física de início:
-
-```text
-MAIN
-→ fada353688e26047a8eb8f45a8de67af0aa9b3d0
-
-O/C HIGH-FIDELITY ELIGIBILITY
-→ PASS
-
-O/C HIGH-FIDELITY DESIGN AUTHORIZATION
-→ NOT_GRANTED
-```
-
-`GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.1` formaliza o critério de prontidão corrente e registra o gate de release já satisfeito pela autoridade própria.
+`GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v2.0.0` formaliza o critério corrente.
 
 Decisão humana incorporada:
 
@@ -2365,51 +2352,63 @@ IDENTIDADE VISUAL CANÔNICA PRÉVIA
 TIPOGRAFIA / PALETA / IMAGENS / LINGUAGEM GRÁFICA / ATMOSFERA
 → DESIGN-OWNED
 
-TOM DE VOZ / COPY NÃO CONGELADA
-→ DESIGN / CONTENT CANDIDATE
-→ HUMAN APPROVAL REQUIRED BEFORE FINALIZATION
-
 SEMANTIC / FUNCTIONAL TRUTH
 → GKR-GOVERNED
+
+DESIGNER
+→ PRIMARY CREATIVE EXECUTOR
+
+AI
+→ OPTIONAL / NON-AUTHORITATIVE SUPPORT
+
+DIRECT GKR/AI FIGMA MATERIALIZATION
+→ OUT_OF_SCOPE
 ```
 
-O pacote histórico v4 permanece reproduzível, porém superado para nova contratação. O snapshot v5 foi emitido a partir da `main` pós-PR #390 com 26 fontes canônicas atuais e oito `LEIA-PRIMEIRO / SOURCE LOCK` operacionais.
+O snapshot v5 permanece congelado e reproduzível, mas sua hipótese operacional de Figma Make é histórica para novas entregas.
 
-Fluxo obrigatório:
+Fluxo corrente:
 
 ```text
-V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
-→ DESIGN PRODUCTION RELEASE GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
-→ FIGMA MAKE / EXPLORAÇÃO
-→ REVISÃO HUMANA
-→ DIREÇÃO CRIATIVA APROVADA
-→ FIGMA DEFINITIVO
-→ ACEITE FINAL
+V6 DOCUMENTARY SOURCE
+→ FINALIZE / REVIEW / VALIDATE
+↓
+V6 SNAPSHOT
+→ EMIT / VALIDATE
+↓
+DESIGNER STUDY
+↓
+OPTIONAL AI SUPPORT
+↓
+HUMAN-CURATED DESIGN
+↓
+HUMAN DIRECTION REVIEW
+↓
+DESIGNER FINALIZATION
+↓
+FINAL HUMAN ACCEPTANCE
 ```
 
 Estado:
 
 ```text
-DESIGN PRODUCTION READINESS DOCUMENTATION
-→ INTEGRATED / ACTIVE
-
 V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
-→ branch delivery/design-handoff-v5
-→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
-→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
-→ 26 CANONICAL SOURCES + 8 GUIDES = 34 FILES
-→ 26 / 26 CANONICAL BLOBS BYTE-PRESERVED
+→ FROZEN / HISTORICAL FOR NEW EXECUTION
 
-FIGMA MAKE
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+V6 DOCUMENTARY SOURCE
+→ UNDER FINALIZATION
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
+
+EXTERNAL DESIGN EXECUTION
+→ HOLD UNTIL V6 SNAPSHOT
+
+AI SUPPORT
+→ OPTIONAL / NON-AUTHORITATIVE
+
+OFFICIAL FIGMA
+→ DESIGNER-CREATED / DESIGNER-CURATED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
