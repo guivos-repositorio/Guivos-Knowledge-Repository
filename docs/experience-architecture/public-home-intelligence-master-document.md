@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
 status: draft
-version: 0.1.1
+version: 0.2.0
 owner: Experience Architecture
 last_updated: 2026-08-19
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -730,3 +730,48 @@ flowchart TD
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
+
+---
+
+## 20. Contrato de entrada para Design
+
+### 20.1 Navegação pública e acesso
+
+A Home própria do Intelligence deve permanecer claramente subordinada à Guivos como Produto Especializado.
+
+A designer pode definir Header, menu, launcher, sticky behavior e arquitetura visual, desde que não apresente Intelligence como camada soberana do ecossistema nem confunda acesso público com experiência protegida.
+
+### 20.2 Responsividade e acessibilidade
+
+Relações, padrões, mudanças, proveniência, incerteza e explicabilidade precisam continuar compreensíveis em desktop, tablet e mobile.
+
+A solução deve considerar contraste, teclado/foco, touch targets, texto ampliado, reduced motion, alternativas textuais para visualizações, ordem semântica e independência de hover/animação para significado essencial.
+
+### 20.3 Liberdade criativa
+
+Não existe obrigação visual de dashboard, grafo, chatbot, cérebro digital, HUD, rede neural ou estética tecnológica.
+
+A designer pode escolher livremente tipografia, cor, composição, imagem, ilustração, visualização, motion, componentes e metáforas visuais, desde que preserve:
+
+```text
+COMPREENSÃO ÚTIL E CONTEXTUALIZADA
+COMPREENDER ≠ DECIDIR
+CORRELAÇÃO ≠ CAUSALIDADE
+SINAL ≠ CERTEZA
+PERCEBER ANTES ≠ PREVER O FUTURO
+```
+
+### 20.4 Dados, exemplos e placeholders
+
+Métricas, acurácia, integrações, cases, resultados, tecnologias operacionais e capacidades apresentadas como existentes exigem fonte real.
+
+Exemplos conceituais podem demonstrar um tipo de leitura, desde que permaneçam explicitamente ilustrativos.
+
+### 20.5 Questões abertas
+
+Expressão visual, exemplos finais, assets e escolhas de interação permanecem abertos para Design. Essas aberturas não autorizam inventar performance, tecnologia, disponibilidade ou acesso a dados.
+
+### 20.6 IA no processo de Design
+
+IA pode ser usada opcionalmente pela designer como ferramenta de exploração. O uso de IA para criar a Home não altera o papel público do Guivos Intelligence nem transforma a ferramenta usada pela designer em autoridade de produto.
+
