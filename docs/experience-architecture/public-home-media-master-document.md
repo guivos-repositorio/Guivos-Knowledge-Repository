@@ -220,6 +220,8 @@ Estado:
 
 Conteúdo, curadoria e continuidade não autorizam exposição indevida de contexto pessoal protegido.
 
+A autonomia da pessoa deve ser preservada: descobrir, aprofundar, continuar ou sair não pode depender de falsa personalização, coerção editorial ou inferência opaca.
+
 A Home pode usar contexto editorial e sinais autorizados para descoberta, mas não deve:
 
 - fingir conhecer interesses pessoais sem base;
@@ -248,7 +250,7 @@ Placeholder pode testar composição, mas deve permanecer claramente provisório
 
 ## 13. Contrato de entrada para Design
 
-A designer recebe ampla liberdade para criar identidade editorial, hierarquia, tipografia, ritmo, mídia, composição, busca, navegação, motion e microinterações.
+A designer recebe **liberdade criativa** ampla para criar identidade editorial, hierarquia, tipografia, ritmo, mídia, composição, busca, navegação, motion e microinterações.
 
 ```text
 EDITORIAL TRUTH
