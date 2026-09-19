@@ -1764,8 +1764,8 @@ Após o fechamento da auditoria integral e a captura da baseline final, permanec
 - evidência de atividade efetiva para AIaaS se incluído;
 - implantação real do perfil pessoal do fundador;
 - publicação real de conteúdo do fundador;
-- Authenticated Wireframes O/C, somente mediante ato governado próprio;
-- Design/UI/protótipo O/C, ainda não iniciados/não liberados;
+- elegibilidade high-fidelity O/C, somente mediante adjudicação governada própria;
+- high-fidelity UI/protótipo O/C, ainda não autorizados/não liberados;
 - UXA-102/V5;
 - Product Engineering.
 
@@ -2303,11 +2303,11 @@ O/C AUTHENTICATED NAVIGATION MATERIALIZATION
 → DEFINED / CANONICAL DOCUMENTARY
 → PRODUCT MENU VISUAL NOT DEFINED
 
-O/C AUTHENTICATED WIREFRAMES
-→ NOT RELEASED / NOT STARTED
+O/C LOW-FIDELITY WIREFRAMES
+→ DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS
 
-DESIGN / UI / PROTOTYPE
-→ NOT RELEASED BY HOME-MASTERS CLOSURE, SURFACE-MAP/STATE-MAP/PRIORITY-FLOWS DOCUMENTARY PROMOTION
+HIGH-FIDELITY UI / PROTOTYPE
+→ NOT RELEASED BY HOME-MASTERS CLOSURE, SURFACE-MAP/STATE-MAP/PRIORITY-FLOWS DOCUMENTARY PROMOTION OR LOW-FIDELITY VALIDATION
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
