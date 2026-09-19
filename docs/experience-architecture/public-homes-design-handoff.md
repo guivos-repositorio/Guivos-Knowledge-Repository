@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.5.1
+version: 1.6.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: post_audit_design_handoff_release_granted_pre_execution
+maturity: designer_first_handoff_source_hardening_in_progress
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -36,13 +36,14 @@ depends_on:
   - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
   - GPA-006
   - GKR-UX-HOMES-OUTCOME-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
 ---
 
 # Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 
 ## 0. Estado pós-auditoria e gate de produção
 
-A Auditoria Integral do GKR está concluída com `PASS`. O método de handoff permanece vigente, mas esta revisão separa explicitamente **prontidão documental** de **liberação operacional para a contratação/produção definitiva no Figma**.
+A Auditoria Integral do GKR está concluída com `PASS`. O método de handoff permanece vigente, mas esta revisão separa explicitamente **prontidão documental**, **consumo por designer/AI** e **produção visual externa**. O GKR não cria arquivos Figma nem produz direção visual.
 
 ```text
 AUDITORIA INTEGRAL
@@ -67,7 +68,7 @@ As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível
 
 O GKR **não congela identidade visual canônica** para estas Homes. A designer pode criar, com originalidade e autonomia, tipografia, paleta, imagens, ilustração, iconografia, grid, ritmo, composição, atmosfera, motion, linguagem gráfica, tratamento de componentes e tom de voz/copy não congelada.
 
-Essas escolhas são **output de Design**, não pré-condição documental. Depois que uma direção for aprovada no gate de protótipo, a solução escolhida deve ser documentada no próprio Figma para garantir consistência e handoff.
+Essas escolhas são **output de Design**, não pré-condição documental. A designer pode documentá-las no próprio Figma e demais entregáveis do serviço para garantir consistência e handoff, sem depender de um protótipo gerado previamente por AI.
 
 A liberdade criativa não autoriza alterar significado, papéis de produto, nomenclatura oficial, assinatura institucional quando utilizada, claims factuais, regras econômicas, disponibilidade, dados, parceiros, causalidade, privacidade ou demais contratos governados.
 
@@ -78,11 +79,15 @@ SEMANTIC / FUNCTIONAL TRUTH
 VISUAL / CREATIVE EXPRESSION
 → DESIGN
 
-GENERATIVE TOOL
-→ EXPLORATION INSTRUMENT
+AI / GENERATIVE TOOL
+→ OPTIONAL CREATIVE SUPPORT
+→ NO ARCHITECTURAL AUTHORITY
+
+HUMAN DESIGNER
+→ OWNS VISUAL CREATION
 
 HUMAN APPROVAL
-→ SELECTS THE DIRECTION
+→ VALIDATES DELIVERY / SEMANTIC ADHERENCE
 ```
 
 ---
@@ -110,8 +115,12 @@ Este documento **não desenha as páginas** e não determina solução visual fi
 GKR
 → define significado, função, narrativa, fronteiras, Source Locks e invariantes
 
-DESIGN / FIGMA MAKE / FERRAMENTA EQUIVALENTE
-→ produz exploração visual fora desta frente canônica
+DESIGNER
+→ produz manualmente a solução visual fora desta frente canônica
+
+SISTEMAS DE AI
+→ podem apoiar a criação a critério da designer/Guivos
+→ não são gate obrigatório e não criam autoridade
 
 VALIDAÇÃO HUMANA
 → confronta forma e significado contra o GKR
@@ -132,17 +141,17 @@ A execução somente fica liberada quando coexistirem:
 3. gates de validação sem finding material aberto;
 4. ato humano explícito de `DESIGN PRODUCTION RELEASE = GRANTED`.
 
-Depois desse release, podem ser executados:
+Depois do fechamento da auditoria final de prontidão das fontes e da emissão do pacote vigente, a designer poderá executar:
 
-- exploração em Figma Make e ferramentas equivalentes;
 - arquitetura visual;
-- wireframes de baixa fidelidade;
+- wireframes de baixa fidelidade, se fizerem parte do método escolhido;
 - exploração de UX e direção visual;
 - UI de alta fidelidade;
 - protótipos de navegação e interação;
 - estudos responsivos desktop e mobile;
 - validação das soluções contra os contratos do GKR;
-- construção do Figma definitivo dentro da direção humana aprovada.
+- construção manual do Figma e demais entregáveis contratados;
+- uso opcional de sistemas de AI como apoio criativo, sem transferência de autoridade.
 
 O release de Design não autoriza automaticamente:
 
@@ -158,7 +167,7 @@ O release de Design não autoriza automaticamente:
 
 Regra:
 
-> **O Handoff governa COMO materializar. O Source Lock governa COM QUAIS verdades. O Design Production Release humano governa QUANDO iniciar.**
+> **O Handoff governa como consumir as fontes. O Source Lock governa com quais verdades. A designer governa a expressão visual. A Guivos governa os gates humanos de início e aceite.**
 
 Documentos Mestres, contratos e Source Locks continuam governando o que não pode ser semanticamente perdido durante a materialização.
 
@@ -168,9 +177,9 @@ A existência deste documento, isoladamente, não significa que um snapshot de e
 
 ## 3. Princípio central
 
-> **Ferramentas generativas são instrumentos de exploração e materialização, não fontes de decisão sobre a arquitetura das Homes.**
+> **Sistemas de AI são instrumentos opcionais de apoio, não fontes de decisão sobre a arquitetura das Homes.**
 
-Uma solução visual produzida por IA, Figma Make, plugin, template, benchmark ou referência externa não se torna canônica por ter sido gerada. Somente após validação humana contra o GKR uma direção pode ser promovida.
+Uma solução, copy, imagem ou hipótese produzida por AI, plugin, template, benchmark ou referência externa não se torna canônica por ter sido gerada. A designer permanece responsável pela criação visual e a validação humana confronta qualquer decisão material contra o GKR.
 
 ---
 
@@ -525,7 +534,9 @@ FONTES CANÔNICAS ISOLADAS
 ↓
 SOURCE LOCK / HANDOFF / GENINPUT ESPECÍFICOS
 ↓
-OUTPUT = EXPLORAÇÃO
+DESIGNER / OPTIONAL AI SUPPORT
+↓
+OUTPUT DE DESIGN
 ↓
 VALIDAÇÃO HUMANA
 ```
@@ -553,7 +564,7 @@ APROVADO PARA HANDOFF DE ENGENHARIA
 → somente após decisão específica posterior
 ```
 
-Nenhum output generativo nasce `canônico` ou `aprovado`.
+Nenhum output de AI ou hipótese de Design nasce `canônico` ou `aprovado` por sua origem.
 
 ---
 
@@ -579,7 +590,7 @@ O processo está alinhado quando:
 
 1. Design inicia sem reconstruir o histórico completo do GKR;
 2. cada Home possui suas fontes obrigatórias identificadas;
-3. a ferramenta recebe fontes governadas, não corpus indiscriminado;
+3. designer e sistemas de AI recebem fontes governadas, não corpus indiscriminado;
 4. decisão canônica e hipótese de Design permanecem distintas;
 5. as oito Homes pertencem à mesma Guivos sem virar o mesmo template;
 6. nenhum produto, feature, dado, prova ou promessa é inventado para preencher layout;
@@ -618,7 +629,7 @@ VALIDAÇÃO HUMANA
 
 ## 19. Síntese
 
-> **O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração. A validação reconecta forma e significado.**
+> **O GKR governa o significado. A designer governa a materialização visual. Sistemas de AI podem apoiar a criação. A validação humana reconecta forma e significado.**
 
 A versão `1.3.0` incorporou formalmente a Home Pública — Guivos Intelligence ao Handoff comum, elevando a governança de sete para oito Homes sem iniciar Design nem emitir, por aquele ato isolado, um novo snapshot de entrega.
 
@@ -640,15 +651,24 @@ HANDOFF / MÉTODO
 VISUAL IDENTITY
 → DESIGN-OWNED / NOT CANONICALLY PRE-LOCKED
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ METHOD DEFINED
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+SOURCE READINESS HARDENING
+→ IN_PROGRESS
+→ GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
 
-FINAL FIGMA PRODUCTION
-→ SUBJECT TO PROTOTYPE APPROVAL + FINAL ACCEPTANCE CONTRACT
+EXTERNAL DESIGNER START
+→ DEFERRED UNTIL PASS
+
+AI SUPPORT
+→ OPTIONAL / SOURCE-BOUND
+
+GKR / CHATGPT FIGMA EXECUTION
+→ NOT TO BE PERFORMED
+
+FINAL DESIGN DELIVERY
+→ SUBJECT TO HUMAN ACCEPTANCE CONTRACT
 
 IMPLEMENTATION / PRODUCTION
 → NOT RELEASED BY THIS HANDOFF
 ```
 
-Este documento governa **como** o handoff deve ocorrer. A liberação efetiva foi concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0` sobre o pacote v5 já emitido e validado.
+Este documento governa **como** o handoff deve ocorrer. O release permanece concedido, mas a decisão humana atual posterga o início externo da designer até o `PASS` da auditoria final de prontidão e a emissão do pacote corrente subsequente ao v5.
