@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-MALL-MASTER-001
 title: Home Pública — Guivos Mall — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-08-12
 parents:
@@ -803,3 +803,52 @@ Ele:
 - não autoriza wireframe, protótipo, UI ou implementação.
 
 Qualquer materialização posterior requer decisão própria e não decorre automaticamente da existência deste documento.
+
+---
+
+## 35. Contrato de entrada para Design
+
+### 35.1 Responsividade e acessibilidade
+
+A Home deve preservar descoberta, comércio, confiança e distinção entre Shopping/Gift Cards em desktop, tablet e mobile.
+
+Mobile não é desktop empilhado. A solução deve considerar contraste, foco, teclado, touch targets, texto ampliado, ordem semântica, reduced motion, mídia responsiva e ausência de dependência de hover para significado essencial.
+
+### 35.2 Autonomia, privacidade e personalização
+
+Descoberta geral pode existir sem conhecimento pessoal.
+
+Recomendação personalizada somente pode ser apresentada quando houver base e autoridade aplicáveis.
+
+```text
+DESCOBERTA / CURADORIA GERAL
+→ PODE EXISTIR SEM PERSONALIZAÇÃO
+
+RECOMENDAÇÃO PESSOAL
+→ EXIGE BASE / AUTORIDADE
+
+PATROCINADO
+→ IDENTIFICADO
+
+DESTAQUE
+→ NÃO IMPLICA RECOMENDAÇÃO PESSOAL
+```
+
+A Home não deve pressionar consumo, usar urgência artificial ou presumir Momento pessoal.
+
+### 35.3 Dados reais, placeholders e questões abertas
+
+Exigem fonte real: preço, preço em pontos, estoque, elegibilidade, desconto, avaliação, marca/parceiro, disponibilidade e campanha.
+
+Placeholder pode testar layout, desde que não pareça oferta vigente.
+
+Catálogo vivo, campanhas e condições futuras são `OPEN_QUESTION` ou `REAL_DATA_REQUIRED`, não decisões que Design deva inventar.
+
+### 35.4 Liberdade criativa
+
+Identidade visual, tipografia, cor, produto em cena, fotografia, composição, grid, ritmo, componentes, motion e solução responsiva pertencem à designer.
+
+Cards, grids, carrosséis e vitrines são opções, não arquitetura obrigatória.
+
+IA é opcional e consome a mesma verdade documental.
+
