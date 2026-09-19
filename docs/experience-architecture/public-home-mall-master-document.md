@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-MALL-MASTER-001
 title: Home Pública — Guivos Mall — Documento Mestre
-status: draft
-version: 1.0.0
+status: active
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-12
+last_updated: 2026-09-19
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-002
@@ -14,6 +14,9 @@ related:
   - GPA-003
   - GPA-004
   - GEM-005
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
+normative: false
+maturity: source_ready_for_external_design_manual_first_ai_optional
 ---
 
 # Home Pública — Guivos Mall — Documento Mestre
@@ -582,7 +585,7 @@ O Gift Card Guivos não deve ser apresentado como pontos, evolução, gamificaç
 
 Este documento não presume regras específicas de valor, resgate, validade, transferência ou cobertura do Gift Card que não estejam autorizadas em produto próprio.
 
-## 24. Movimento 10 — Prova
+## 24. Movimento 10 — Prova — faceta de evidência
 
 A Home precisa demonstrar que o Mall é concreto, não apenas afirmar que ele existe.
 
@@ -618,7 +621,7 @@ A presença de produtos de uma marca no catálogo não autoriza a Guivos a apres
 
 Essa distinção é parte da política de confiança e precisão da Home.
 
-## 26. Movimento 10 — Confiança
+## 26. Movimento 10 — Confiança — faceta de proteção
 
 Direção:
 
@@ -803,3 +806,392 @@ Ele:
 - não autoriza wireframe, protótipo, UI ou implementação.
 
 Qualquer materialização posterior requer decisão própria e não decorre automaticamente da existência deste documento.
+
+---
+
+## 35. Prontidão documental para Designer e IA
+
+Esta revisão fecha a auditoria de suficiência da **Home Pública — Guivos Mall** para consumo externo de Design.
+
+### 35.1 Resultado da auditoria
+
+```text
+HOME MALL
+→ SOURCE_READY = PASS
+
+MASTER
+→ GKR-UX-HOME-MALL-MASTER-001 v1.1.0
+
+PRODUCT AUTHORITY
+→ GPA-002 v1.2.0
+
+MEDIA RECONCILIATION
+→ GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0
+
+MATERIAL DOCUMENT GAPS
+→ 0
+
+UNRESOLVED SEMANTIC CONFLICTS
+→ 0
+
+VISUAL IDENTITY PRE-IMPOSED
+→ 0
+
+MANUAL DESIGNER PATH
+→ COMPLETE
+
+OPTIONAL AI PATH
+→ COMPLETE THROUGH COMMON SOURCE LOCK / BRIEF
+```
+
+A auditoria esclareceu que o **Movimento 10 — Prova e Confiança** possui duas facetas complementares no Master — evidência e proteção — sem criar um 12º movimento.
+
+### 35.2 Evidência de suficiência
+
+| Critério | Evidência | Estado |
+|---|---|---|
+| papel / premissa / relação Guivos × Mall | §§ 1–4 | PASS |
+| pergunta-mãe / Hero / CTAs | §§ 5–6 | PASS |
+| Header e fronteiras | §§ 7–8 | PASS |
+| 11 movimentos | §§ 9–30 | PASS |
+| Shopping / categorias | §§ 14–15 | PASS |
+| preço / pontos / Business | §§ 16–17 + GPA-002 | PASS |
+| personalidade / campanhas | §§ 18–19 | PASS |
+| relevância / personalização | § 20 | PASS |
+| destaque / recomendação / oferta / publicidade | § 21 | PASS |
+| Gift Cards | §§ 22–23 | PASS |
+| prova / marcas / confiança | §§ 24–27 | PASS |
+| escala sem claim | § 28 | PASS |
+| ecossistema / saída | §§ 29–30 | PASS |
+| anti-padrões / páginas internas | §§ 31–32 | PASS |
+| tese / autoridade | §§ 33–34 | PASS |
+| Media editorial | GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 | PASS |
+
+### 35.3 Condições e estados que a solução deve tolerar
+
+#### Visitante sem sessão autenticada
+
+- nenhuma informação de saldo de pontos deve ser presumida;
+- nenhuma personalização deve ser apresentada como `Recomendado para você` sem base legítima;
+- descoberta, busca, Shopping e Gift Cards podem permanecer compreensíveis no nível público;
+- Perfil pode funcionar como acesso global, sem inventar conteúdo de conta.
+
+#### Pessoa autenticada com saldo disponível
+
+- saldo pertence ao componente global de conta/perfil quando essa capacidade existir;
+- cards/ofertas mostram custo específico, não repetem saldo global;
+- existência de saldo não implica elegibilidade de toda oferta.
+
+#### Oferta somente em dinheiro
+
+- exibir somente preço monetário;
+- não criar equivalência em pontos por estimativa;
+- não sugerir que pontos poderão ser usados depois.
+
+#### Oferta elegível em pontos
+
+- mostrar pontos somente quando a elegibilidade for real;
+- não inferir pagamento híbrido;
+- não inferir taxa de conversão;
+- não transformar pontos em indicador de evolução.
+
+#### Oferta indisponível
+
+- a solução deve tolerar indisponibilidade, retirada, ausência de estoque ou término de condição;
+- não manter preço, desconto ou CTA de compra como se a oferta estivesse disponível;
+- a Home deve continuar coerente quando itens mudarem.
+
+#### Campanha ativa
+
+- campanha pode alterar camada comercial;
+- não substitui a identidade permanente do Mall;
+- urgência só pode refletir condição verdadeira.
+
+#### Sem campanha ativa
+
+- a Home continua completa sem banner promocional, desconto ou sazonalidade.
+
+#### Conteúdo em destaque
+
+- destaque pode ser curadoria geral;
+- não deve parecer personalização quando não for.
+
+#### Recomendação contextual
+
+- só usar `Recomendado para você` quando existir base legítima, regras aplicáveis e consentimento quando necessário;
+- contexto protegido da Journey não vira gatilho comercial irrestrito.
+
+#### Patrocinado
+
+- exposição paga deve permanecer identificada;
+- não pode adquirir aparência de recomendação orgânica;
+- remuneração não determina relevância.
+
+#### Marca disponível
+
+- presença no catálogo não equivale a parceria institucional.
+
+#### Parceiro real
+
+- somente pode ser apresentado como parceiro quando a relação formal estiver sustentada.
+
+#### Gift Card de terceiro
+
+- nome, marca, cobertura, disponibilidade, valor e condições exigem fonte real;
+- exemplos conhecidos não devem ser convertidos automaticamente em inventário vigente.
+
+#### Gift Card Guivos
+
+- preservar presente + possibilidade + autonomia;
+- não confundir com pontos;
+- regras de valor, resgate, validade, transferência e cobertura permanecem fora deste Master quando não governadas.
+
+#### Mídia / imagem ausente
+
+- produto, oferta ou conteúdo editorial deve possuir fallback que preserve compreensão;
+- imagem não pode carregar sozinha preço, condição, patrocínio ou natureza da oferta.
+
+#### Baixa conectividade / reduced motion
+
+- entendimento essencial não depende de animação, vídeo, hover ou carrossel automático;
+- motion pode enriquecer, não governar significado.
+
+#### Mobile
+
+- mesma arquitetura semântica, menor simultaneidade;
+- busca, portas Shopping/Gift Cards, distinções comerciais e CTAs devem permanecer compreensíveis;
+- mobile não deve ser mero empilhamento do desktop.
+
+#### Idioma / país / moeda
+
+- solução deve tolerar expansão de texto;
+- moeda, preço, disponibilidade, catálogo e condição comercial só podem refletir contexto realmente suportado;
+- escala global aspiracional não autoriza afirmar presença operacional.
+
+### 35.4 Acessibilidade e robustez
+
+A solução deve prever:
+
+- navegação por teclado;
+- foco visível;
+- leitores de tela;
+- contraste adequado;
+- texto ampliado;
+- alvos de toque adequados;
+- informação comercial não dependente só de cor;
+- preço anterior/atual ou desconto com leitura inequívoca;
+- labels de oferta/patrocínio acessíveis;
+- reduced motion;
+- fallback de mídia;
+- nenhuma dependência exclusiva de hover;
+- internacionalização;
+- comportamento robusto com títulos, marcas e preços de comprimentos variados.
+
+### 35.5 Matriz operacional específica do Mall
+
+#### CANONICAL
+
+- Mall é produto especializado da Guivos, não a Guivos transformada em e-commerce;
+- pergunta-mãe: **“O que pode fazer parte do seu próximo momento?”**;
+- descoberta + comércio + confiança;
+- Hero permanente não dominada por promoção;
+- duas portas atuais: Shopping e Gift Cards;
+- 11 movimentos;
+- Movimento 10 = Prova e Confiança, detalhado em duas facetas;
+- preço monetário e pontos apenas quando realmente disponíveis;
+- saldo da Pessoa ≠ preço da oferta;
+- pontos ≠ evolução;
+- Programa de Pontos ≠ Gift Card Guivos;
+- destaque ≠ recomendação ≠ oferta ≠ patrocinado;
+- marca disponível ≠ parceiro;
+- patrocínio ≠ relevância;
+- Mall pertence ao ecossistema maior;
+- páginas de produto, Perfil, Carrinho e Checkout ficam fora do escopo da Home.
+
+#### DESIGN_CREATIVE
+
+A designer pode criar livremente:
+
+- identidade visual;
+- tipografia;
+- paleta;
+- imagem;
+- fotografia;
+- vídeo;
+- ilustração;
+- iconografia;
+- composição;
+- grid;
+- ritmo;
+- densidade;
+- componentes;
+- cards;
+- navegação comercial;
+- motion;
+- campanhas visuais;
+- organização das categorias;
+- forma de apresentar Shopping/Gift Cards;
+- tratamento de ofertas;
+- solução desktop/mobile;
+- direção de arte;
+- linguagem gráfica.
+
+#### CONTENT_CANDIDATE
+
+- supporting copy;
+- labels comerciais não congelados;
+- headlines de seção;
+- CTA secundário;
+- microcopy;
+- copy sazonal;
+- formulações editoriais fornecidas pelo Media.
+
+#### DESIGN_HYPOTHESIS
+
+- formas de descoberta;
+- estrutura de categorias;
+- densidade comercial;
+- agrupamento de ofertas;
+- apresentação de Shopping/Gift Cards;
+- modos de expor preço e pontos;
+- tratamento visual de recomendação/destaque/patrocínio;
+- ritmo entre inspiração e comércio;
+- composição de campanhas;
+- organização responsiva.
+
+Hipótese visual não pode alterar elegibilidade, preço, estoque, disponibilidade, patrocínio ou natureza da recomendação.
+
+#### PROTOTYPE_PLACEHOLDER
+
+- produto;
+- preço;
+- desconto;
+- pontos;
+- marca;
+- campanha;
+- Gift Card;
+- imagem;
+- fornecedor;
+- avaliação;
+- recomendação;
+- conteúdo editorial.
+
+Placeholder deve parecer provisório internamente e nunca prova de operação.
+
+#### REAL_DATA_REQUIRED
+
+- produto realmente disponível;
+- preço;
+- preço em pontos;
+- desconto;
+- validade;
+- estoque/disponibilidade;
+- marca;
+- parceiro;
+- fornecedor;
+- Gift Card;
+- cobertura;
+- moeda;
+- país;
+- avaliação;
+- campanha;
+- patrocínio;
+- recomendação personalizada;
+- integração;
+- condição comercial.
+
+#### OPEN_QUESTION
+
+- catálogo vivo;
+- inventário de lançamento;
+- campanhas;
+- preços reais;
+- Gift Cards disponíveis;
+- parceiros;
+- fornecedores;
+- condições comerciais;
+- expansão geográfica;
+- mecânicas econômicas ainda não formalizadas.
+
+Esses itens não bloqueiam Design desde que componentes tolerem substituição/ausência e não apresentem placeholders como realidade.
+
+#### PROHIBITED_INFERENCE
+
+Não inventar ou insinuar:
+
+- estoque;
+- preço;
+- taxa de conversão ponto/dinheiro;
+- pagamento híbrido;
+- regra de expiração/transferência de pontos;
+- parceiro por simples presença de marca;
+- Gift Card disponível sem fonte;
+- cobertura global;
+- personalização sem base;
+- `Recomendado para você` sem contexto legítimo;
+- patrocínio como relevância orgânica;
+- melhor preço / maior marketplace / 100% seguro sem prova;
+- desconto fictício;
+- urgência artificial;
+- pontos como evolução;
+- Gift Card Guivos como pontos;
+- catálogo genérico desconectado do propósito;
+- Travel absorvido pelo Mall;
+- página interna materializada dentro da Home por inferência.
+
+### 35.6 Brief mínimo para a designer
+
+Antes de criar, a designer deve conseguir responder:
+
+1. qual o papel do Mall dentro da Guivos;
+2. qual é a pergunta-mãe;
+3. por que Hero permanente ≠ campanha;
+4. quais são as duas portas atuais;
+5. quais são os 11 movimentos;
+6. como preço monetário e pontos funcionam no nível da Home;
+7. por que saldo ≠ preço;
+8. como destaque, recomendação, oferta e patrocínio se distinguem;
+9. como marca disponível difere de parceiro;
+10. o que pertence à Home e o que começa nas páginas internas;
+11. quais fatos comerciais exigem dado real;
+12. quais estados de indisponibilidade devem ser tolerados;
+13. o que é livre para criação;
+14. o que é proibido inferir;
+15. como a solução funciona em mobile, reduced motion e baixa conectividade.
+
+### 35.7 Uso opcional de IA
+
+Se a designer usar IA, o contexto deve incluir:
+
+1. autoridades comuns vigentes;
+2. `GPA-002`;
+3. este Master;
+4. `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001`;
+5. matriz operacional desta seção;
+6. objetivo explícito.
+
+`GEM-007-MALL-ECONOMIC-ROLE-001` pode ser consultado para contexto econômico, mas permanece `draft` e não autoriza transformar eventos, receitas candidatas ou responsabilidades futuras em operação pública vigente.
+
+### 35.8 Fechamento
+
+```text
+HOME MALL
+→ SOURCE_READY = PASS
+
+DESIGNER
+→ CAN START FROM DOCUMENTATION AFTER GLOBAL PACKAGE RELEASE
+
+AI
+→ OPTIONAL
+
+FIGMA MAKE
+→ NOT REQUIRED
+
+VISUAL DIRECTION
+→ DESIGN-OWNED
+
+MATERIAL SEMANTIC GAP
+→ 0
+```
+
+Este `PASS` é documental. Não valida estoque, pricing, operação comercial, PMF, implementação ou disponibilidade real.
