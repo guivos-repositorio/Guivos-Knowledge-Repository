@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.48.7
+version: 3.48.8
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -1036,7 +1036,7 @@ O Lote E foi concluído documentalmente pela reconstrução do Master e pela rec
 Autoridades atuais:
 
 ```text
-GKR-UX-HOME-OC-MASTER-001 v1.0.0
+GKR-UX-HOME-OC-MASTER-001 v1.0.1
 → autoridade de consumo vigente
 
 GKR-UX-HOME-OC-NARR-001 v0.2.0
