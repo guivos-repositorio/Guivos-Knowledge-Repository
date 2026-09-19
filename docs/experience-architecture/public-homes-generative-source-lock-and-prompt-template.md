@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 status: active
-version: 2.0.1
+version: 2.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -25,7 +25,7 @@ related:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GPA-006
 normative: true
-maturity: post_audit_eight_home_generative_template_release_granted_pre_execution
+maturity: designer_first_optional_ai_tool_neutral_template
 ---
 
 # Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
@@ -44,18 +44,36 @@ V4 HISTORICAL SOURCE LOCKS
 V5 OPERATIONAL SOURCE LOCK
 → EMITTED / 8 OF 8 / FROZEN WITH SNAPSHOT V5
 
-FIGMA MAKE / GENERATIVE EXECUTION
+EXTERNAL DESIGNER PRODUCTION
 → DESIGN PRODUCTION RELEASE GRANTED
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+
+AI-ASSISTED EXECUTION
+→ OPTIONAL / DESIGNER-CONTROLLED
 ```
 
 A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode completar lacunas de verdade factual ou arquitetura por inferência.
+
+
+### 0.1 Uso manual não depende deste template
+
+```text
+DESIGNER WORKING MANUALLY
+→ MAY CONSUME MASTER + RELATED SOURCES DIRECTLY
+→ DOES NOT REQUIRE AI EXECUTION RECORD
+
+DESIGNER USING AI
+→ USE THIS SOURCE LOCK / PROMPT METHOD
+
+AI
+→ OPTIONAL
+→ NEVER REQUIRED FOR DESIGN RELEASE
+```
 
 ---
 
 ## 1. Finalidade
 
-Este documento transforma o controle semântico estabelecido por `GKR-UX-HOMES-DESIGN-HANDOFF-001` em um procedimento operacional reutilizável para exploração de Design com ferramentas generativas.
+Este documento transforma o controle semântico estabelecido por `GKR-UX-HOMES-DESIGN-HANDOFF-001` em um procedimento operacional reutilizável **quando a designer optar por usar sistemas de IA ou ferramentas generativas**.
 
 Ele define:
 
@@ -81,7 +99,7 @@ GKR-UX-HOMES-DESIGN-HANDOFF-001
 → governa a fase de Design, o pacote de fontes, as liberdades e as fronteiras
 
 GKR-UX-HOMES-GENINPUT-001
-→ governa como uma execução generativa é preparada, registrada e validada
+→ governa como um uso opcional de IA é preparado, registrado e validado
 ```
 
 Este documento não substitui o handoff nem resume os Documentos Mestres.
@@ -94,7 +112,7 @@ Ele operacionaliza o princípio:
 
 ## 3. Unidade de execução governada
 
-Cada uso relevante de Figma Make ou ferramenta generativa deve ser tratado como uma **execução identificável**.
+Cada uso relevante de IA ou ferramenta generativa escolhido pela designer deve ser tratado como uma **execução identificável**.
 
 Uma execução possui:
 
@@ -114,7 +132,7 @@ REGISTRO DE HIPÓTESES
 VALIDAÇÃO HUMANA
 ```
 
-Não existe uma execução governada quando apenas se envia uma instrução genérica como:
+Quando IA for utilizada, não existe uma execução adequadamente governada quando apenas se envia uma instrução genérica como:
 
 > “Crie a Home da Guivos.”
 
@@ -185,8 +203,8 @@ source_lock:
     placeholder_rules: "<regras específicas>"
 
   tool:
-    name: "<ferramenta utilizada>"
-    purpose: "exploração e materialização"
+    name: "<ferramenta de IA utilizada, se houver>"
+    purpose: "<apoio opcional à exploração>"
 
   expected_output_status: "EXPLORAÇÃO"
 ```
@@ -248,10 +266,10 @@ A execução deve utilizar somente o pacote correspondente à Home em trabalho, 
 
 Todas as oito Homes recebem exatamente estas quatro autoridades comuns do Manifesto v5:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.5.0` — `docs/experience-architecture/public-homes-design-handoff.md`;
-2. `GKR-UX-HOMES-GENINPUT-001 v2.0.0` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
-3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v2.0.0` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`.
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.0` — `docs/experience-architecture/public-homes-design-handoff.md`;
+2. `GKR-UX-HOMES-GENINPUT-001 v2.1.0` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
+3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.1.0` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.0` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`.
 
 Essas quatro fontes comuns não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso de IA, sequência de execução e critérios de produção/aceite.
 
@@ -323,7 +341,7 @@ Os antigos GENINPUTs de checkpoints superados não entram como autoridade operac
 
 ## 7. Ordem de autoridade dentro do input
 
-O prompt deve informar explicitamente à ferramenta que as fontes possuem funções diferentes.
+Quando IA for utilizada, o prompt deve informar explicitamente à ferramenta que as fontes possuem funções diferentes.
 
 ```text
 0. LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL DA EMISSÃO
@@ -333,8 +351,8 @@ O prompt deve informar explicitamente à ferramenta que as fontes possuem funç�
 1. AUTORIDADES COMUNS
 → Handoff = processo e boundary da fase
 → GENINPUT = método de Source Lock / prompt / classes
-→ Readiness = contrato de produção e aceite Figma
-→ Operational Flow = sequência Figma Make → aprovação → Figma definitivo → aceite
+→ Readiness = contrato de produção e aceite de Design
+→ Operational Flow = compreensão → criação da designer → IA opcional → autoauditoria → revisão humana → entrega
 
 2. SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE DA HOME, QUANDO EXISTIR
 → congela decisões próprias daquela Home dentro de sua autoridade
@@ -414,10 +432,10 @@ Imagens podem ser selecionadas, produzidas ou geradas criativamente. Quando uma 
 O bloco abaixo é o **template canônico de montagem do prompt**. Ele deve ser preenchido para cada execução; não deve ser usado com campos vazios quando esses campos forem relevantes.
 
 ```text
-Você está apoiando uma exploração de Design para a Guivos.
+Você está apoiando opcionalmente a designer em uma exploração de Design para a Guivos.
 
 PAPEL DA FERRAMENTA
-Você é instrumento de exploração e materialização. Você não possui autoridade para redefinir arquitetura de produto, narrativa, posicionamento, taxonomia, operação ou decisões canônicas da Guivos.
+Você é um instrumento opcional de apoio à exploração. Você não possui autoridade para redefinir arquitetura de produto, narrativa, posicionamento, taxonomia, operação ou decisões canônicas da Guivos.
 
 HOME EM TRABALHO
 [HOME]
@@ -475,8 +493,8 @@ Quando precisar de placeholder, deixe claro que é provisório e não o transfor
 
 Se uma questão aberta for necessária para materializar a solução, trate a escolha como HIPÓTESE DE DESIGN identificada. Não a apresente como decisão canônica.
 
-ENTREGÁVEL
-[DESCREVER O ARTEFATO ESPERADO: mapa de página, wireframe, alternativa de arquitetura visual, UI, protótipo etc.]
+ENTREGÁVEL DE APOIO
+[DESCREVER O QUE A IA DEVE PRODUZIR PARA APOIAR A DESIGNER; NÃO PRESUMA QUE A IA PRODUZIRÁ O ARTEFATO FINAL]
 
 REQUISITOS DE QUALIDADE
 - preservar a função narrativa dos movimentos sem obrigação de transformá-los em blocos equivalentes;
@@ -495,8 +513,8 @@ Ao concluir a proposta, identifique separadamente:
 5. lacunas ou conflitos encontrados;
 6. qualquer ponto que exija validação humana antes de avançar.
 
-STATUS DO OUTPUT
-EXPLORAÇÃO — não canônico e não aprovado para implementação.
+STATUS DO OUTPUT DE IA
+PROPOSTA / EXPLORAÇÃO — não canônica, não aprovada e subordinada à designer.
 ```
 
 ---
