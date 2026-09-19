@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-V6-AUDIT-001
 title: Homes Públicas — Auditoria de Remediação Tool-Neutral para Design v6
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -141,7 +141,33 @@ INTELLIGENCE
 → REVIEWED / TOOL-NEUTRAL
 ```
 
-## 5. Boundary
+## 5. Candidate source-closure proof
+
+Validação executada sobre o candidato `8e7e4b5e51b2830ef84d26e715f5b7381daaf30b`:
+
+```text
+MANIFEST V6 CANONICAL SOURCES
+→ 27
+
+PATH EXISTS
+→ 27 / 27
+
+DECLARED ID × REAL ID
+→ 27 / 27 MATCH
+
+DECLARED VERSION × REAL VERSION
+→ 27 / 27 MATCH
+
+MISMATCHES
+→ 0
+
+V5 SNAPSHOT MUTATION
+→ NONE
+```
+
+Esta prova valida o candidato documental. Como a emissão v6 deve partir da `main` pós-merge, a mesma prova de path/ID/version/blob deverá ser repetida naquele checkpoint antes da materialização do snapshot.
+
+## 6. Boundary
 
 Esta auditoria não materializa o pacote v6 e não declara validação final antes dos gates automáticos e independentes.
 
@@ -165,7 +191,7 @@ FIGMA WRITE
 → OUT OF PROCESS
 ```
 
-## 6. Critério de fechamento
+## 7. Critério de fechamento
 
 A frente só pode ser fechada depois de:
 
