@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 title: Homes Públicas — Remediação de Prontidão Documental para Designer e IA
 status: draft
-version: 0.5.0
+version: 0.6.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: source_readiness_remediation_in_progress_person_oc_mall_travel_pass
+maturity: source_readiness_remediation_in_progress_person_oc_mall_travel_media_pass
 depends_on:
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-GENINPUT-001
@@ -347,8 +347,8 @@ NEW EXTERNAL SNAPSHOT
 | Organizações e Coletivos | **SOURCE_READY / PASS** | 0 |
 | Mall | **SOURCE_READY / PASS** | 0 |
 | Travel | **SOURCE_READY / PASS** | 0 |
-| Media | UNDER_AUDIT | — |
-| Ads | NOT_YET_AUDITED | — |
+| Media | **SOURCE_READY / PASS** | 0 |
+| Ads | UNDER_AUDIT | — |
 | Business | NOT_YET_AUDITED | — |
 | Intelligence | NOT_YET_AUDITED | — |
 
@@ -385,6 +385,15 @@ Home Travel foi fechada após:
 - matriz operacional e brief para designer/IA;
 - confirmação de zero gap semântico material.
 
+
+Home Media foi fechada após:
+- confirmação contra GPA-005 v1.2.0;
+- estados inicial/crescimento/maduro;
+- contratos de conteúdo-base/derivados, patrocinado e continuidade contextual;
+- direitos/assets como REAL_DATA_REQUIRED;
+- acessibilidade/performance/mobile/fallback;
+- matriz operacional e brief para designer/IA;
+- confirmação de zero gap semântico material.
 ## 11. Estado
 
 ```text
