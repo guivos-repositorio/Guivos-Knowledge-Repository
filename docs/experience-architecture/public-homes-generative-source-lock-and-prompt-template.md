@@ -245,13 +245,14 @@ A execução deve utilizar somente o pacote correspondente à Home em trabalho, 
 
 ### 6.0 Fontes comuns obrigatórias
 
-Todas as oito Homes recebem exatamente estas três autoridades comuns do Manifesto v5:
+Todas as oito Homes recebem exatamente estas quatro autoridades comuns do Manifesto v5:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.5.0` — `docs/experience-architecture/public-homes-design-handoff.md`;
 2. `GKR-UX-HOMES-GENINPUT-001 v2.0.0` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
-3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`.
+3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v2.0.0` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`.
 
-Essas três fontes comuns não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso de IA e critérios de produção/aceite.
+Essas quatro fontes comuns não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso de IA, sequência de execução e critérios de produção/aceite.
 
 ### 6.1 Home Pública — Pessoa
 
@@ -332,6 +333,7 @@ O prompt deve informar explicitamente à ferramenta que as fontes possuem funç�
 → Handoff = processo e boundary da fase
 → GENINPUT = método de Source Lock / prompt / classes
 → Readiness = contrato de produção e aceite Figma
+→ Operational Flow = sequência Figma Make → aprovação → Figma definitivo → aceite
 
 2. SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE DA HOME, QUANDO EXISTIR
 → congela decisões próprias daquela Home dentro de sua autoridade
