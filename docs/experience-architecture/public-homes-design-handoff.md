@@ -121,11 +121,18 @@ Portanto, a atualização deste handoff **não cria mapa de página, wireframe, 
 
 ---
 
-## 2. Autorização da fase de Design
+## 2. Regime da fase de Design
 
-Este Handoff constitui a autoridade procedimental comum para materialização externa das oito Homes, **desde que a Home também possua o pacote operacional vigente exigido pelo Manifesto de Entrega**.
+Este Handoff constitui a **autoridade procedimental comum** para materialização externa das oito Homes. Ele define como a fase deve operar, mas **não concede sozinho o Design Production Release**.
 
-Quando o gate operacional estiver completo, podem ser executados:
+A execução somente fica liberada quando coexistirem:
+
+1. pacote v5 materializado e reproduzível;
+2. Source Lock operacional da Home no checkpoint da emissão;
+3. gates de validação sem finding material aberto;
+4. ato humano explícito de `DESIGN PRODUCTION RELEASE = GRANTED`.
+
+Depois desse release, podem ser executados:
 
 - exploração em Figma Make e ferramentas equivalentes;
 - arquitetura visual;
@@ -134,9 +141,10 @@ Quando o gate operacional estiver completo, podem ser executados:
 - UI de alta fidelidade;
 - protótipos de navegação e interação;
 - estudos responsivos desktop e mobile;
-- validação das soluções contra os contratos do GKR.
+- validação das soluções contra os contratos do GKR;
+- construção do Figma definitivo dentro da direção humana aprovada.
 
-Esta autorização não autoriza automaticamente:
+O release de Design não autoriza automaticamente:
 
 - desenvolvimento frontend ou backend;
 - publicação em produção;
@@ -150,9 +158,11 @@ Esta autorização não autoriza automaticamente:
 
 Regra:
 
-> **O handoff autoriza materializar externamente. Os Documentos Mestres, contratos e Source Locks continuam governando o que não pode ser semanticamente perdido durante a materialização.**
+> **O Handoff governa COMO materializar. O Source Lock governa COM QUAIS verdades. O Design Production Release humano governa QUANDO iniciar.**
 
-A existência deste documento, isoladamente, também **não significa que um snapshot de entrega já foi emitido ou validado**.
+Documentos Mestres, contratos e Source Locks continuam governando o que não pode ser semanticamente perdido durante a materialização.
+
+A existência deste documento, isoladamente, não significa que um snapshot de entrega já foi emitido, validado ou liberado.
 
 ---
 
