@@ -248,7 +248,7 @@ A execução deve utilizar somente o pacote correspondente à Home em trabalho, 
 Todas as oito Homes recebem exatamente estas três autoridades comuns do Manifesto v5:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.5.0` — `docs/experience-architecture/public-homes-design-handoff.md`;
-2. `GKR-UX-HOMES-GENINPUT-001 v2.0.0` — este documento;
+2. `GKR-UX-HOMES-GENINPUT-001 v2.0.0` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
 3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`.
 
 Essas três fontes comuns não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso de IA e critérios de produção/aceite.
