@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.1.1
+version: 1.1.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -383,7 +383,7 @@ A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOUR
 
 Uma informação classificada como `OPEN_QUESTION`, `REAL_DATA_REQUIRED` ou `PROTOTYPE_PLACEHOLDER` não exige retrabalho posterior de Design quando sua variabilidade é previsível.
 
-Por isso, o Figma final deve testar envelopes realistas de conteúdo, incluindo quando aplicável:
+Por isso, o artefato final de Design deve ser validado com envelopes realistas de conteúdo, incluindo quando aplicável:
 
 - títulos curtos e longos;
 - traduções com expansão de texto;
@@ -481,9 +481,9 @@ PERSONALIDADE DIFERENTE
 
 A coerência pode emergir de qualidade, princípios, interação, linguagem e sistema criado pela designer. Não é necessário forçar mesmas cores, mesmos blocos ou mesma composição.
 
-## 13. Critérios de aceite do protótipo
+## 13. Critérios de aceite da direção/protótipo
 
-Antes de iniciar o Figma definitivo:
+Antes de consolidar o artefato final de Design:
 
 - zero divergência material de significado;
 - nenhum produto/participante confundido;
@@ -493,7 +493,7 @@ Antes de iniciar o Figma definitivo:
 - copy candidata relevante foi aprovada ou marcada para substituição;
 - questões abertas possuem destino explícito.
 
-## 14. Critérios de aceite do Figma final
+## 14. Critérios de aceite do Design final
 
 A entrega pode ser aceita quando:
 
@@ -514,7 +514,7 @@ A entrega pode ser aceita quando:
 15. existe registro formal do aceite final com versão do arquivo, responsável, assets/licenças e controle dos arquivos essenciais pela Guivos.
 
 ```text
-FIGMA FINAL CANDIDATO
+FINAL DESIGN CANDIDATO
 ≠ SERVIÇO CONCLUÍDO
 
 FINAL DESIGN ACCEPTED
@@ -550,7 +550,7 @@ ZERO FINDING MATERIAL ABERTO
 ATO HUMANO EXPLÍCITO DE DESIGN PRODUCTION RELEASE
 ```
 
-O gate humano foi posteriormente satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`. A autorização libera o início da fase de Design, sem antecipar os gates internos de direção criativa, Figma final ou implementação.
+O gate humano foi posteriormente satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`. A autorização libera o início da fase de Design, sem antecipar os gates internos de direção criativa, aceite final de Design ou implementação.
 
 ## 16. Estado
 
