@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.18.0
+version: 1.19.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-19
 related:
@@ -54,6 +54,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - M7.88
 normative: false
 ---
@@ -160,7 +161,8 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C4B — validação integrada individual e promoção de TRN-008..013
 → O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C State Map — DEFINED / CANONICAL DOCUMENTARY
-→ Public Homes Design Production Readiness — ACTIVE / V5 SNAPSHOT EMITTED / DESIGN RELEASE NOT_GRANTED
+→ Public Homes Design Production Readiness — ACTIVE / V5 SNAPSHOT EMITTED / DESIGN RELEASE GRANTED
+→ Public Homes Design Production Release — GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 → Public Homes Design Handoff v5 Snapshot — delivery/design-handoff-v5 / 34 FILES / 26/26 BYTE-PRESERVED
 ```
 
@@ -301,4 +303,8 @@ A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. 
 
 ### Public Homes — Design Handoff v5 Snapshot
 
-[GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001](public-homes-design-delivery-v5-snapshot-record.md) registra a emissão externa reproduzível v5 das oito Homes, com 26 fontes canônicas byte-preservadas, oito guias operacionais e `DESIGN PRODUCTION RELEASE = NOT_GRANTED`.
+[GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001](public-homes-design-delivery-v5-snapshot-record.md) registra a emissão externa reproduzível v5 das oito Homes, com 26 fontes canônicas byte-preservadas e oito guias operacionais. O registro preserva que **a emissão isoladamente** não concedeu Design Release.
+
+### Public Homes — Design Production Release
+
+[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) registra o ato humano posterior que concede `DESIGN PRODUCTION RELEASE = GRANTED`, libera Figma Make/exploração para execução e preserva o gate humano de direção antes do Figma definitivo.
