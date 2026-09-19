@@ -79,7 +79,7 @@ Objetivo do lock:
 Para qualquer futura materialização da Home Business, o pacote inicial de autoridade deve ser restrito a:
 
 1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — este Source Lock;
-2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.0.0 — `docs/experience-architecture/public-home-business-master-document.md`;
+2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.0 — `docs/experience-architecture/public-home-business-master-document.md`;
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002` v1.0.0 — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.0 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 5. `GPA-004` v1.6.0 — arquitetura funcional vigente do Guivos Business.
