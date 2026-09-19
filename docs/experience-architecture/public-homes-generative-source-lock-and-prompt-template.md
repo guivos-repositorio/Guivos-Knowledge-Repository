@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 status: active
-version: 2.0.1
+version: 2.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -12,6 +12,7 @@ depends_on:
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
 related:
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-MALL-MASTER-001
@@ -25,7 +26,7 @@ related:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GPA-006
 normative: true
-maturity: post_audit_eight_home_generative_template_release_granted_pre_execution
+maturity: ai_optional_source_consumption_template_hardening_in_progress
 ---
 
 # Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
@@ -44,9 +45,12 @@ V4 HISTORICAL SOURCE LOCKS
 V5 OPERATIONAL SOURCE LOCK
 → EMITTED / 8 OF 8 / FROZEN WITH SNAPSHOT V5
 
-FIGMA MAKE / GENERATIVE EXECUTION
-→ DESIGN PRODUCTION RELEASE GRANTED
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+AI SUPPORT FOR DESIGN
+→ OPTIONAL / SOURCE-BOUND
+→ NOT A MANDATORY GATE
+
+GKR / CHATGPT FIGMA EXECUTION
+→ NOT TO BE PERFORMED
 ```
 
 A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode completar lacunas de verdade factual ou arquitetura por inferência.
@@ -55,7 +59,7 @@ A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode compl
 
 ## 1. Finalidade
 
-Este documento transforma o controle semântico estabelecido por `GKR-UX-HOMES-DESIGN-HANDOFF-001` em um procedimento operacional reutilizável para exploração de Design com ferramentas generativas.
+Este documento transforma o controle semântico estabelecido por `GKR-UX-HOMES-DESIGN-HANDOFF-001` em um procedimento reutilizável para **consumo opcional por sistemas de AI** que apoiem Design, Content Design, síntese, ideação ou autoauditoria.
 
 Ele define:
 
@@ -81,20 +85,20 @@ GKR-UX-HOMES-DESIGN-HANDOFF-001
 → governa a fase de Design, o pacote de fontes, as liberdades e as fronteiras
 
 GKR-UX-HOMES-GENINPUT-001
-→ governa como uma execução generativa é preparada, registrada e validada
+→ governa como um uso relevante de AI pode receber fontes, limites, classes e instruções controladas
 ```
 
 Este documento não substitui o handoff nem resume os Documentos Mestres.
 
 Ele operacionaliza o princípio:
 
-> **O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração. A validação reconecta forma e significado.**
+> **O GKR governa o significado. A designer governa a materialização visual. Sistemas de AI podem apoiar a criação sem receber autoridade. A validação humana reconecta forma e significado.**
 
 ---
 
 ## 3. Unidade de execução governada
 
-Cada uso relevante de Figma Make ou ferramenta generativa deve ser tratado como uma **execução identificável**.
+Quando um sistema de AI for usado de forma material para apoiar uma Home, esse uso deve ser tratável como uma **execução identificável** para fins de rastreabilidade. Usar AI não é obrigatório para a designer.
 
 Uma execução possui:
 
@@ -333,8 +337,8 @@ O prompt deve informar explicitamente à ferramenta que as fontes possuem funç�
 1. AUTORIDADES COMUNS
 → Handoff = processo e boundary da fase
 → GENINPUT = método de Source Lock / prompt / classes
-→ Readiness = contrato de produção e aceite Figma
-→ Operational Flow = sequência Figma Make → aprovação → Figma definitivo → aceite
+→ Readiness = contrato de consumo das fontes, qualidade e aceite da entrega externa
+→ Operational Flow = preparação documental → designer → AI opcional → revisão/aceite
 
 2. SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE DA HOME, QUANDO EXISTIR
 → congela decisões próprias daquela Home dentro de sua autoridade
@@ -414,10 +418,10 @@ Imagens podem ser selecionadas, produzidas ou geradas criativamente. Quando uma 
 O bloco abaixo é o **template canônico de montagem do prompt**. Ele deve ser preenchido para cada execução; não deve ser usado com campos vazios quando esses campos forem relevantes.
 
 ```text
-Você está apoiando uma exploração de Design para a Guivos.
+Você está apoiando a designer ou a Guivos em uma atividade criativa/documental para uma Home pública.
 
 PAPEL DA FERRAMENTA
-Você é instrumento de exploração e materialização. Você não possui autoridade para redefinir arquitetura de produto, narrativa, posicionamento, taxonomia, operação ou decisões canônicas da Guivos.
+Você é instrumento opcional de apoio. Você não é a designer responsável e não possui autoridade para redefinir arquitetura de produto, narrativa, posicionamento, taxonomia, operação ou decisões canônicas da Guivos.
 
 HOME EM TRABALHO
 [HOME]
@@ -475,8 +479,8 @@ Quando precisar de placeholder, deixe claro que é provisório e não o transfor
 
 Se uma questão aberta for necessária para materializar a solução, trate a escolha como HIPÓTESE DE DESIGN identificada. Não a apresente como decisão canônica.
 
-ENTREGÁVEL
-[DESCREVER O ARTEFATO ESPERADO: mapa de página, wireframe, alternativa de arquitetura visual, UI, protótipo etc.]
+ENTREGÁVEL / APOIO ESPERADO
+[DESCREVER O QUE A AI DEVE PRODUZIR: síntese, alternativas de copy, hipóteses, mapa de página, crítica, autoauditoria, sugestões visuais ou outro apoio. A criação visual final permanece responsabilidade da designer.]
 
 REQUISITOS DE QUALIDADE
 - preservar a função narrativa dos movimentos sem obrigação de transformá-los em blocos equivalentes;
@@ -627,8 +631,8 @@ A ferramenta não deve resolver definitivamente uma lacuna estrutural apenas por
 Uma hipótese visual ou funcional só pode deixar de ser hipótese por decisão explícita.
 
 ```text
-OUTPUT GENERATIVO
-→ EXPLORAÇÃO
+OUTPUT DE AI, QUANDO HOUVER
+→ CANDIDATO / HIPÓTESE / PLACEHOLDER CONFORME O CASO
 
 seleção humana
 → CANDIDATO
@@ -646,7 +650,7 @@ posterior autorização
 → APROVADO PARA HANDOFF DE ENGENHARIA
 ```
 
-O arquivo do Figma ou a existência de uma tela refinada não altera sozinho o estado arquitetural.
+Um arquivo Figma, uma tela refinada ou qualquer output de AI não altera sozinho o estado arquitetural.
 
 ---
 
@@ -691,9 +695,9 @@ Pequenas iterações visuais dentro da mesma hipótese podem permanecer sob o me
 
 ---
 
-## 17. Critérios de aceite antes de gerar
+## 17. Critérios antes de usar AI
 
-Uma execução está pronta para ferramenta generativa quando:
+Quando AI for utilizada, o contexto está pronto quando:
 
 1. a Home está identificada;
 2. a fase está identificada;
@@ -708,13 +712,13 @@ Uma execução está pronta para ferramenta generativa quando:
 11. questões abertas estão registradas;
 12. o output começa classificado como `EXPLORAÇÃO`.
 
-Se esses itens não puderem ser preenchidos, a execução deve ser tratada como exploração não governada e não pode alimentar decisões oficiais sem reconciliação posterior.
+Se esses itens não puderem ser preenchidos, o uso de AI deve ser tratado como apoio não governado e não pode alimentar decisões oficiais sem reconciliação posterior. A designer pode continuar seu trabalho manual sem AI, desde que as fontes humanas estejam completas.
 
 ---
 
-## 18. Critérios de aceite depois de gerar
+## 18. Critérios depois de usar AI
 
-Antes de promover um output a `CANDIDATO`, verificar:
+Antes de promover um output de AI a `CANDIDATO`, verificar:
 
 1. a pergunta-mãe foi preservada quando aplicável;
 2. o papel da Home não mudou;
@@ -735,7 +739,7 @@ Antes de promover um output a `CANDIDATO`, verificar:
 
 Este template deve ser adotado por novas Homes depois que seus próprios documentos de autoridade forem convergidos.
 
-A inclusão de uma nova Home não ocorre porque existe um pedido de geração visual.
+A inclusão de uma nova Home não ocorre porque existe um pedido de geração visual ou uso de AI.
 
 A ordem permanece:
 
@@ -748,11 +752,11 @@ HANDOFF AUTORIZADO
 ↓
 SOURCE LOCK
 ↓
-PROMPT CONTROLADO
+DESIGNER
 ↓
-EXPLORAÇÃO GENERATIVA
+AI OPCIONAL COM PROMPT CONTROLADO
 ↓
-VALIDAÇÃO
+VALIDAÇÃO HUMANA
 ```
 
 ---
@@ -792,7 +796,14 @@ TEMPLATE
 V5 PER-HOME SOURCE LOCKS
 → EMITTED / 8 OF 8 / FROZEN IN delivery/design-handoff-v5
 
-GENERATIVE EXECUTION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-→ RELEASE AUTHORITY = GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+AI SUPPORT
+→ OPTIONAL / SOURCE-BOUND
+→ NOT A DESIGN GATE
+
+SOURCE READINESS HARDENING
+→ IN_PROGRESS
+→ GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
+
+GKR / CHATGPT FIGMA EXECUTION
+→ NOT TO BE PERFORMED
 ```
