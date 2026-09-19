@@ -156,7 +156,7 @@ OUTPUT AUTOMÁTICO
 → NON-CANONICAL UNTIL HUMAN REVIEW
 ```
 
-O GKR não exige Figma Make, nem qualquer ferramenta generativa específica. A designer pode criar integralmente de forma manual. Se utilizar IA, a IA deve consumir o mesmo pacote governado e não recebe autoridade adicional.
+O GKR não exige qualquer ferramenta generativa específica. A designer pode criar integralmente de forma manual. Se utilizar IA, a IA deve consumir o mesmo pacote governado e não recebe autoridade adicional.
 
 ## 8. Gate humano de direção permanece obrigatório
 
