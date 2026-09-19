@@ -195,14 +195,137 @@ Output inicial obrigatório: `EXPLORAÇÃO / NÃO CANÔNICA`.
 
 ## 8. Classes obrigatórias de informação
 
-- `CANONICAL` — deve ser preservado;
-- `DESIGN CREATIVE` — pode ser criado livremente pela designer;
-- `CONTENT CANDIDATE` — copy/tom proposto, sujeito a aprovação humana;
-- `PROTOTYPE PLACEHOLDER` — permitido para testar estrutura; nunca pode parecer fato real;
-- `REAL DATA REQUIRED` — preço, disponibilidade, case, parceiro, métrica, depoimento ou prova que exige fonte;
-- `PROHIBITED INFERENCE` — não pode ser criado para preencher layout.
+Toda informação relevante usada por humano, Figma Make ou ferramenta equivalente deve estar tratável em uma destas oito classes:
 
-Nenhuma lacuna deve ser silenciosamente convertida em realidade.
+- `CANONICAL` — decisão governada que deve ser preservada;
+- `DESIGN_CREATIVE` — campo deliberadamente aberto à criação da designer;
+- `CONTENT_CANDIDATE` — copy, tom, label ou formulação editorial proposta e sujeita a aprovação humana;
+- `DESIGN_HYPOTHESIS` — solução criada para testar uma interpretação de Design sem se tornar decisão da Guivos;
+- `PROTOTYPE_PLACEHOLDER` — conteúdo provisório usado para testar hierarquia, volume, ritmo ou comportamento;
+- `REAL_DATA_REQUIRED` — informação factual que exige fonte real antes de poder ser tratada como verdade pública;
+- `OPEN_QUESTION` — decisão ainda não necessária ou não governada, com destino explícito;
+- `PROHIBITED_INFERENCE` — conteúdo, regra ou claim que não pode ser criado para preencher a solução.
+
+Nenhum item pode mudar de classe silenciosamente. Em especial:
+
+```text
+CONTENT_CANDIDATE
+≠ CANONICAL UNTIL HUMAN APPROVAL
+
+DESIGN_HYPOTHESIS
+≠ PRODUCT DECISION
+
+PROTOTYPE_PLACEHOLDER
+≠ PUBLIC TRUTH
+
+REAL_DATA_REQUIRED
+≠ LICENSE TO INVENT
+
+OPEN_QUESTION
+≠ DESIGN BLOCKER BY DEFAULT
+```
+
+### 8.1 Matriz operacional das oito Homes
+
+A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOURCE LOCK` v5 deverá tornar explícita.
+
+#### Pessoa
+
+- `CANONICAL` — papel institucional da Home; pergunta-mãe **“O que se torna possível quando você entra aqui?”**; possibilidade antes de produto; 11 movimentos; distinção participante × produto; Journey com porta própria; ausência de falsa personalização; autonomia, prova e confiança.
+- `DESIGN_CREATIVE` — identidade visual, tipografia, cor, imagem, composição, motion, componentes, agrupamento físico e solução responsiva.
+- `CONTENT_CANDIDATE` — terceira camada de concretização da Hero, CTA exploratório e microcopy não congelada.
+- `PROTOTYPE_PLACEHOLDER` — histórias, imagens, conteúdo editorial e evidências ainda não selecionadas, sempre identificadas internamente como provisórias.
+- `REAL_DATA_REQUIRED` — qualquer pessoa, organização, coletivo, parceiro, métrica, case, depoimento, país atendido, resultado ou prova apresentada como real.
+- `OPEN_QUESTION` — copy pública final, composição integral do rodapé, disponibilidade operacional e decisões de lançamento; não bloqueiam Design quando a solução tolera sua substituição.
+- `PROHIBITED_INFERENCE` — Momento pessoal presumido na Home pública, escala inventada, causalidade exagerada, produto antes da tese, `Organização = Business` ou Intelligence decidindo pela Pessoa.
+
+#### Organizações e Coletivos
+
+- `CANONICAL` — pergunta-mãe **“O que podemos tornar possível juntos?”**; Organização e Coletivo como participantes distintos; narrativa compartilhada antes da bifurcação final; 11 movimentos e 7 macroexperiências como significado, não layout; Header global; relevância contextual; autoridade, proteção, bilateralidade e evidência.
+- `DESIGN_CREATIVE` — expressão visual, ritmo, mídia, composição, sistema gráfico, componentes e modo de representar a bifurcação final sem hierarquia indevida.
+- `CONTENT_CANDIDATE` — CTA exploratório da Hero e copy de apoio não congelada.
+- `PROTOTYPE_PLACEHOLDER` — Organização, Coletivo, iniciativa, história e evidência ainda não selecionados.
+- `REAL_DATA_REQUIRED` — identidade e relação real de Organizações/Coletivos, métricas, parcerias, iniciativas e provas apresentadas como existentes.
+- `OPEN_QUESTION` — copy final, composição completa do rodapé e disponibilidade concreta dos destinos posteriores.
+- `PROHIBITED_INFERENCE` — `Organização = Business`, Coletivo = comunidade da Guivos, relevância comprável, parceria fictícia, CTA comercial dominante na abertura ou coleta prematura de dados institucionais/pessoais.
+
+#### Guivos Mall
+
+- `CANONICAL` — pergunta-mãe **“O que pode fazer parte do seu próximo momento?”**; Shopping e Gift Cards como portas distintas; descoberta + comércio + confiança; Hero permanente não dominado por promoção; `MALL-HS-01..06`; separação entre oferta, recomendação, destaque e patrocínio.
+- `DESIGN_CREATIVE` — composição comercial, direção de arte, visual de produtos, ritmo, navegação, cards ou alternativas que preservem o contrato.
+- `CONTENT_CANDIDATE` — copy de apoio e labels comerciais não congelados.
+- `PROTOTYPE_PLACEHOLDER` — produtos, preços, marcas, campanhas e conteúdos usados apenas para testar layout, claramente marcados no arquivo.
+- `REAL_DATA_REQUIRED` — preço, preço em pontos, estoque, elegibilidade, desconto, marca/parceiro institucional, avaliação, disponibilidade e campanha apresentados como reais.
+- `OPEN_QUESTION` — catálogo vivo, campanhas e condições comerciais futuras; a solução final deve suportar variação sem redesenho.
+- `PROHIBITED_INFERENCE` — inventar estoque/preço, converter presença de marca em parceria, simular recomendação personalizada, fundir pontos com Gift Card ou mascarar mídia paga como relevância orgânica.
+
+#### Guivos Travel
+
+- `CANONICAL` — pergunta-mãe **“Até onde o seu próximo momento pode levar você?”**; inspiração + operação real + acesso direto; serviços, destinos e experiências como territórios distintos; Hero permanente não dominado por oferta; `TRAVEL-HS-01..06`.
+- `DESIGN_CREATIVE` — fotografia, vídeo, mapas, composição, ritmo, navegação e modo de organizar os serviços sem transformá-los em nove produtos desconectados.
+- `CONTENT_CANDIDATE` — copy de apoio, labels e CTAs não congelados.
+- `PROTOTYPE_PLACEHOLDER` — destinos, imagens, tarifas, experiências e conteúdos usados para teste, desde que explicitamente provisórios.
+- `REAL_DATA_REQUIRED` — destino/oferta realmente disponível, tarifa, data, vaga, fornecedor, parceiro, condição comercial e experiência apresentada como real.
+- `OPEN_QUESTION` — inventário, tarifa e disponibilidade futuros; o Design deve tolerar substituição e indisponibilidade sem retrabalho estrutural.
+- `PROHIBITED_INFERENCE` — destino fictício apresentado como operado, cobertura mundial não comprovada, bundle obrigatório, parceria presumida ou patrocínio disfarçado de recomendação orgânica.
+
+#### Guivos Media
+
+- `CANONICAL` — tese editorial; pergunta-mãe **“O que você pode descobrir quando vê além do que já conhece?”**; curadoria antes de cronologia; 11 movimentos; descoberta antes de classificação; Media ≠ Blog/portal/feed/streaming.
+- `DESIGN_CREATIVE` — direção editorial, tipografia, imagem, vídeo, ritmo, navegação, busca, motion e maneira de dar hierarquia ao conteúdo.
+- `CONTENT_CANDIDATE` — headlines, labels e formulações editoriais não congeladas.
+- `PROTOTYPE_PLACEHOLDER` — conteúdo de destaque, história, autor, imagem e vídeo usados para testar composição.
+- `REAL_DATA_REQUIRED` — conteúdo, autor, pessoa, história, direitos de mídia, patrocínio, data ou relação apresentados como reais.
+- `OPEN_QUESTION` — lineup editorial e conteúdo vivo de lançamento; não bloqueiam a arquitetura se os slots forem robustos.
+- `PROHIBITED_INFERENCE` — história fictícia apresentada como real, feed cronológico como identidade, conteúdo patrocinado sem identificação ou formato transformado em arquitetura do produto.
+
+#### Guivos Ads
+
+- `CANONICAL` — tese contexto-first; 7 movimentos; capacidade financeira ≠ elegibilidade; autoridade da superfície anfitriã; publicidade identificada; qualificação progressiva; contexto pessoal protegido fora da comercialização.
+- `DESIGN_CREATIVE` — expressão B2B, visualização de contextos, interação da qualificação, mídia, composição e linguagem visual.
+- `CONTENT_CANDIDATE` — headline, apoio e microcopy de conversão quando não congelados.
+- `PROTOTYPE_PLACEHOLDER` — marca, campanha, formato, investimento e cenário comercial ilustrativos, sem aparência de operação vigente.
+- `REAL_DATA_REQUIRED` — preço, CPM/CPC, alcance, inventário, performance, case, marca/parceiro e disponibilidade comercial apresentados como reais.
+- `OPEN_QUESTION` — catálogo futuro de formatos, pricing e capacidade operacional por superfície.
+- `PROHIBITED_INFERENCE` — compra de relevância pessoal, segmentação por contexto pessoal protegido, performance inventada, CPM/CPC como promessa ou autoridade Ads sobre conteúdo/experiência do produto anfitrião.
+
+#### Guivos Business
+
+- `CANONICAL` — Source Lock Business; pergunta-mãe **“O que sua empresa pode tornar possível para as pessoas?”**; 10 movimentos; quatro planos; exclusão pública de Pontos Guivos; autonomia da Pessoa; contratação/configuração online como direção; CTA e demais itens explicitamente congelados no Source Lock.
+- `DESIGN_CREATIVE` — identidade visual, composição, agrupamento dos movimentos, representação dos planos, configurador, visualização de Intelligence e responsividade dentro do Source Lock.
+- `CONTENT_CANDIDATE` — supporting copy e formulações não classificadas como congeladas.
+- `PROTOTYPE_PLACEHOLDER` — preços, limites, entitlements, integrações e exemplos de configuração usados somente para teste.
+- `REAL_DATA_REQUIRED` — preço final, limite de plano, SLA, entitlement, integração, disponibilidade por país/moeda, case, métrica ou condição comercial real.
+- `OPEN_QUESTION` — detalhes comerciais ainda não formalizados; componentes devem tolerar valores e comprimentos reais sem redesenho.
+- `PROHIBITED_INFERENCE` — inventar pricing/limites/SLA, transformar Business em software de RH/LMS/plataforma de pontos ou fazer a empresa decidir a evolução da Pessoa.
+
+#### Guivos Intelligence
+
+- `CANONICAL` — Home Source Lock e Handoff específicos; unidade de valor = compreensão útil e contextualizada; `COMPREENDER ≠ DECIDIR`; 11 movimentos; assimetria Pessoa/Journey × Business/população; copy e CTAs semanticamente congelados conforme o Home Source Lock.
+- `DESIGN_CREATIVE` — forma visual de tornar relações, contexto, temporalidade, evidência e explicabilidade compreensíveis, sem obrigação de dashboard, grafo ou estética tecnológica específica.
+- `CONTENT_CANDIDATE` — somente microajustes/editorial não congelado dentro dos limites expressos pelo Source Lock.
+- `PROTOTYPE_PLACEHOLDER` — exemplos analíticos e dados conceituais claramente marcados como ilustrativos.
+- `REAL_DATA_REQUIRED` — métrica, resultado, acurácia, case, integração, tecnologia operacional, dado ou capacidade apresentada como existente.
+- `OPEN_QUESTION` — expressão visual e exemplos finais; não autorizam inventar tecnologia ou performance.
+- `PROHIBITED_INFERENCE` — Intelligence = chatbot/dashboard/Neo4j/IA decisora, previsão determinística, causalidade sem evidência, certeza a partir de tendência ou exposição de contexto pessoal protegido.
+
+### 8.2 Regra de não bloqueio por conteúdo variável
+
+Uma informação classificada como `OPEN_QUESTION`, `REAL_DATA_REQUIRED` ou `PROTOTYPE_PLACEHOLDER` não exige retrabalho posterior de Design quando sua variabilidade é previsível.
+
+Por isso, o Figma final deve testar envelopes realistas de conteúdo, incluindo quando aplicável:
+
+- títulos curtos e longos;
+- traduções com expansão de texto;
+- valores monetários e em pontos com diferentes comprimentos;
+- presença e ausência de imagem;
+- presença e ausência de preço/oferta;
+- estados de indisponibilidade;
+- cards/listas com diferentes quantidades;
+- labels de patrocínio/proveniência;
+- conteúdos sem prova disponível.
+
+A substituição posterior de conteúdo ou dado dentro desses envelopes deve ser possível **sem reconstrução da arquitetura visual**.
 
 ## 9. Conteúdo, imagem e mídia
 
@@ -254,6 +377,8 @@ Cada Home entregue deve possuir:
 - arquivo e bibliotecas essenciais acessíveis sob controle da Guivos, sem dependência exclusiva da conta pessoal da designer após o aceite;
 - source assets editáveis ou origem reutilizável entregues quando forem necessários para manutenção futura;
 - documentação das escolhas criativas aprovadas: cores, tipografia, estilos, componentes e demais foundations criadas pela designer;
+- registro de placeholders e conteúdo variável, indicando classe, origem esperada e condição de substituição;
+- componentes e layouts testados com envelopes realistas de conteúdo para que preço, tradução, ausência de mídia, indisponibilidade ou troca de copy não exijam redesenho estrutural;
 - acessibilidade considerada desde a solução: contraste, foco, teclado, texto ampliado, reduced motion, touch targets, mídia e ordem semântica;
 - internacionalização tolerando expansão/contração de texto;
 - nenhuma dependência de hover ou motion para entendimento essencial.
