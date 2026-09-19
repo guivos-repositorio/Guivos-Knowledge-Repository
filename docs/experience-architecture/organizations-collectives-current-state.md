@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.7.0
+version: 1.8.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
@@ -64,10 +64,10 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | validação com perfis sintéticos | executada metodologicamente; não é PMF | `RP-002-PMF-001` + atlas |
 | validação humana real / PMF | **pendente** | piloto de campo |
 | Home pública de Organizações e Coletivos | possui Documento Mestre próprio | `public-home-organizations-collectives-master-document.md` |
-| wireframe da experiência autenticada da Organização | **não definido** | pendente |
-| wireframe da experiência autenticada do Coletivo | **não definido** | pendente |
-| validação de wireframe da Organização | **não realizada em objeto vigente** | pendente |
-| validação de wireframe do Coletivo | **não realizada em objeto vigente** | pendente |
+| wireframe low-fidelity da experiência autenticada da Organização | **entrega v0.1.0 executada** | validação funcional pendente |
+| wireframe low-fidelity da experiência autenticada do Coletivo | **entrega v0.1.0 executada** | validação funcional pendente |
+| validação de wireframe da Organização | **não realizada sobre a entrega corrente** | pendente |
+| validação de wireframe do Coletivo | **não realizada sobre a entrega corrente** | pendente |
 | UI / protótipo autenticado | não definido | pendente |
 | Engenharia da experiência autenticada | não autorizada a partir de wireframe | pendente |
 
@@ -377,7 +377,7 @@ O estado vigente está detalhado em [Organizações e Coletivos — Estado de UX
 
 Resumo:
 
-> **Atores, autoridades, jobs, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados, Priority Flows e Navigation Materialization autenticada já estão definidos canonicamente no limite documental. Os wireframes principais permanecem `NOT STARTED / NOT RELEASED`.**
+> **A cadeia documental canônica O/C está definida e a primeira entrega de Authenticated Wireframes low-fidelity foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0`. A entrega ainda não foi funcionalmente validada e não é referência visual aprovada.**
 
 Materiais anteriores que afirmavam wireframes principais vigentes ou validação vigente foram reclassificados como registros históricos `superseded`.
 
@@ -395,6 +395,8 @@ Materiais anteriores que afirmavam wireframes principais vigentes ou validação
 | fluxos prioritários autenticados | `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001` |
 | elegibilidade de Navigation Materialization | `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001` |
 | Navigation Materialization autenticada | `GKR-UX-ORGCOL-AUTH-NAV-MAT-001` |
+| autorização de wireframes low-fidelity | `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001` |
+| entrega de wireframes low-fidelity | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001` |
 | Jornada da Organização | `journeys/organization.md` |
 | Jornada do Coletivo | `journeys/collective.md` |
 | Home pública | `public-home-organizations-collectives-master-document.md` |
@@ -422,9 +424,8 @@ fundamentos e papéis
 Este commit **não autoriza nem materializa** a continuação. Permanecem deliberadamente diferidos para gates posteriores:
 
 ```text
-Authenticated Wireframes / low-fidelity
-→ validação funcional
-→ validação funcional
+Authenticated Wireframes / low-fidelity — DELIVERY EXECUTED
+→ validação funcional — NEXT GOVERNED GATE
 → UI
 → protótipo
 → testes
