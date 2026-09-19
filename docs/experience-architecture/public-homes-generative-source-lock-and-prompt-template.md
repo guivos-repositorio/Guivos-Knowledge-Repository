@@ -277,47 +277,47 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-MALL-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-mall-master-document.md`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-mall-master-document.md`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md`.
 
 ### 6.4 Home Pública — Guivos Travel
 
 Fontes específicas:
 
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-travel-master-document.md`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-travel-master-document.md`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
 
 ### 6.5 Home Pública — Guivos Media
 
 Fontes específicas:
 
-- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-media-master-document.md`;
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-media-master-document.md`;
 - `GPA-005 v1.2.0` — `docs/product-architecture/media.md`.
 
 ### 6.6 Home Pública — Guivos Ads
 
 Fontes específicas:
 
-- `GKR-UX-HOME-ADS-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-ads-master-document.md`;
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-ads-master-document.md`;
 - `GPA-007 v1.3.0` — `docs/product-architecture/ads.md`.
 
 ### 6.7 Home Pública — Guivos Business
 
 Fontes específicas:
 
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0` — `docs/experience-architecture/public-home-business-source-lock.md`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-business-master-document.md`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.0` — `docs/experience-architecture/public-home-business-source-lock.md`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-business-master-document.md`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.1` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.6.0` — `docs/product-architecture/business.md`.
 
 ### 6.8 Home Pública — Guivos Intelligence
 
 Fontes específicas:
 
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.0` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.0` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.2` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0` — `docs/product-architecture/intelligence-product-source-lock.md`;
 - `GPA-006 v2.0.0` — `docs/product-architecture/intelligence.md`.
 
