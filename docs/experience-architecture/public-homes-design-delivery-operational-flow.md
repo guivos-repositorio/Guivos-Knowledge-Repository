@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
 title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 status: active
-version: 2.0.1
+version: 2.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -19,6 +19,35 @@ maturity: post_audit_v5_operational_flow_release_granted_pre_execution
 
 # Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 
+
+## Fluxo operacional corrente — designer-led
+
+```text
+GKR PACKAGE
+↓
+DESIGNER READS LEIA-PRIMEIRO + MASTER + SOURCES
+↓
+MANUAL DESIGN CREATION
+↓
+OPTIONAL AI ASSISTANCE, IF THE DESIGNER CHOOSES
+↓
+HUMAN REVIEW
+↓
+DIRECTION APPROVAL
+↓
+FINAL DESIGN PRODUCTION
+```
+
+Regras:
+
+- criação manual é suficiente;
+- IA não é gate nem requisito;
+- Figma é ferramenta externa de produção, não autoridade do GKR;
+- o GKR não produz exploração visual obrigatória antes da designer;
+- identidade visual, composição e expressão permanecem Design-owned;
+- referências visuais anteriores são opcionais e não canônicas;
+- qualquer linguagem posterior deste documento centrada em Figma Make deve ser interpretada como variante opcional do passo `OPTIONAL AI ASSISTANCE`.
+
 ## 1. Finalidade
 
 Este fluxo governa como a designer deve consumir o pacote v5, usar Figma Make para prototipação e somente depois construir o Figma definitivo.
@@ -29,7 +58,7 @@ O gate de início foi satisfeito. A execução pode começar somente dentro dest
 
 - snapshot v5 materializado e validado;
 - Source Lock operacional da Home;
-- `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0 = GRANTED`.
+- `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0 = GRANTED`.
 
 A autorização de início não elimina os gates internos de revisão humana, direção criativa aprovada e aceite final.
 

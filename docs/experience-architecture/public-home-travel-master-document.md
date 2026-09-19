@@ -1,10 +1,11 @@
 ---
 id: GKR-UX-HOME-TRAVEL-MASTER-001
 title: Home Pública — Guivos Travel — Documento Mestre
-status: draft
-version: 1.0.0
+status: active
+version: 1.0.2
 owner: Experience Architecture
-last_updated: 2026-08-13
+maturity: master_reconciled_for_designer_handoff
+last_updated: 2026-09-19
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-003
@@ -835,12 +836,34 @@ Expressão complementar:
 
 > **Descubra lugares. Encontre experiências. Viaje quando fizer sentido.**
 
+
+## Liberdade de Design, responsividade e robustez
+
+Este Documento Mestre governa significado, função, verdade comercial e fronteiras; **não governa identidade visual**.
+
+A designer pode definir livremente tipografia, paleta, fotografia, ilustração, iconografia, grid, composição, ritmo, motion, componentes, microinterações e linguagem gráfica, desde que preserve as invariantes desta Home.
+
+```text
+DESKTOP / TABLET / MOBILE
+→ MESMA VERDADE SEMÂNTICA
+→ MATERIALIZAÇÕES PODEM SER DIFERENTES
+
+RESPONSIVIDADE
+→ NÃO SIGNIFICA APENAS EMPILHAR O DESKTOP
+
+ACESSIBILIDADE / ROBUSTEZ
+→ SIGNIFICADO E AÇÃO ESSENCIAL DEVEM SOBREVIVER
+→ SEM DEPENDÊNCIA EXCLUSIVA DE HOVER / MOTION / VÍDEO / ALTA CONECTIVIDADE
+```
+
+Ausência de identidade visual pré-congelada é liberdade deliberada, não lacuna documental.
+
 ## 39. Estado de prontidão
 
-A arquitetura conceitual desta Home está convergida para registro documental.
+A arquitetura conceitual desta Home está convergida e permanece governada por este Documento Mestre.
 
-Não há, neste documento, autorização para wireframe ou materialização visual.
+Este documento, isoladamente, não autoriza implementação. A autorização posterior de Design das Homes públicas é governada por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`.
 
 Estado:
 
-> **ARQUITETURA CONCEITUAL CONVERGIDA — REGISTRADA COMO DOCUMENTO MESTRE; MATERIALIZAÇÃO VISUAL NÃO AUTORIZADA.**
+> **ARQUITETURA CONCEITUAL CONVERGIDA — MASTER ATIVO / PRONTO PARA HANDOFF EXTERNO DESIGNER-LED; IMPLEMENTAÇÃO NÃO AUTORIZADA.**

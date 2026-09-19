@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.0.0
+version: 1.0.3
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-19
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
 depends_on:
   - GKR-UX-HOME-BUSINESS-NARRATIVE-001
@@ -28,11 +28,11 @@ Ele reúne em uma única arquitetura pública:
 - os contratos de autoridade;
 - a expressão comercial;
 - a conversão global;
-- os movimentos que deverão orientar o futuro Source Lock e Design.
+- os movimentos que orientam o Source Lock vigente e a futura criação externa de Design.
 
 Este documento **não é**:
 
-- Source Lock;
+- substituto do Source Lock vigente;
 - wireframe;
 - UI;
 - protótipo;
@@ -47,8 +47,10 @@ ARQUITETURA NARRATIVA      → CONVERGIDA
 CONTRATOS DE AUTORIDADE    → CONVERGIDOS
 CONVERSÃO GLOBAL           → CONVERGIDA / REFINADA
 DOCUMENTO MESTRE           → CONVERGIDO NESTE DOCUMENTO
-SOURCE LOCK                → PRÓXIMA ETAPA
-DESIGN                     → NÃO AUTORIZADO
+SOURCE LOCK                → GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0 / ACTIVE
+DESIGN PRODUCTION RELEASE  → GRANTED POR AUTORIDADE POSTERIOR
+EXECUÇÃO DE DESIGN         → EXTERNA / DESIGNER-LED / IA OPCIONAL
+IMPLEMENTAÇÃO              → NÃO AUTORIZADA POR ESTE DOCUMENTO
 ```
 
 ## 2. Precedência deste Documento Mestre
@@ -361,22 +363,27 @@ A Home deve comunicar positivamente aquilo que o Intelligence entrega.
 
 As limitações de causalidade, dados internos empresariais, privacidade e individualidade continuam normativamente preservadas por `GKR-UX-HOME-BUSINESS-AUTHORITY-001`, mas não precisam dominar a copy pública.
 
-## 15. Direção visual obrigatória para o futuro Design
+## 15. Responsabilidade semântica do Movimento Intelligence no Design
 
-O Movimento Intelligence deve ser prioritariamente demonstrado por uma representação visual do produto, incluindo conceitos como:
+O Movimento Intelligence deve **tornar perceptível o valor da compreensão**, sem prescrever uma forma visual específica.
 
-- dashboard;
-- KPIs;
-- gráficos;
-- evolução temporal;
-- participação;
-- utilização;
-- recorrência;
-- tendências;
-- interesses agregados;
-- movimentos e distribuições.
+A designer possui liberdade para decidir se isso será expresso por narrativa, comparação, composição editorial, visualização de dados conceitual, relações, temporalidade, motion, imagem, abstração, componentes ou outra solução original.
 
-O Documento Mestre não congela o dashboard final, métricas exatas ou layout.
+Elementos como indicadores, KPIs, gráficos, séries temporais, participação, utilização, recorrência, tendências, interesses agregados, movimentos e distribuições são **possibilidades de materialização**, não requisitos visuais e não constituem um dashboard obrigatório.
+
+```text
+VALOR A COMUNICAR
+→ COMPREENSÃO DE MOVIMENTOS / PADRÕES / CONTEXTO
+
+FORMA VISUAL
+→ DESIGNER-OWNED
+
+DASHBOARD / KPI / GRÁFICO
+→ OPTIONAL DESIGN HYPOTHESIS
+→ NOT CANONICAL VISUAL REQUIREMENT
+```
+
+O Documento Mestre não congela dashboard, componente, visualização, métrica exata, estética ou layout.
 
 ## 16. CTA para Guivos Intelligence
 
@@ -658,13 +665,38 @@ Este Documento Mestre não:
 - define SLA;
 - congela entitlements;
 - define disponibilidade concreta por país/moeda;
-- cria Source Lock;
-- autoriza Design.
+- substitui o Source Lock vigente;
+- autoriza implementação, publicação ou operação comercial por si só.
 
-## 28. Próximo estágio
+## 28. Estado posterior e consumo por Design
 
-Com este Documento Mestre validado, a próxima etapa governada é:
+O Source Lock da Home Business já existe e permanece a autoridade de congelamento da fonte:
 
-> **SOURCE LOCK — HOME GUIVOS BUSINESS**
+> **GKR-UX-HOME-BUSINESS-SOURCELOCK-001**
 
-O Source Lock deverá congelar a fonte pública aprovada para implementação e Design, sem reabrir decisões já consolidadas salvo nova autorização explícita.
+A autorização posterior das Homes públicas permite o handoff externo de Design, subordinado ao pacote vigente e à revisão humana.
+
+```text
+MASTER
+→ SIGNIFICADO / NARRATIVA / RESPONSABILIDADES
+
+SOURCE LOCK
+→ FONTE CONGELADA / LIMITES / OPEN QUESTIONS
+
+DESIGNER
+→ FORMA VISUAL / EXPRESSÃO CRIATIVA
+
+IA
+→ APOIO OPCIONAL / MESMAS FONTES
+
+IMPLEMENTAÇÃO
+→ NÃO AUTORIZADA
+```
+
+### Robustez, responsividade e acessibilidade
+
+A materialização deve funcionar em desktop e mobile com soluções próprias; responsividade não significa apenas empilhar o desktop.
+
+Significado, navegação e ações essenciais não podem depender exclusivamente de hover, motion, vídeo, cor isolada ou alta conectividade. A futura solução deve preservar hierarquia compreensível, contraste adequado, leitura textual e caminhos operáveis por diferentes modos de interação.
+
+Esses requisitos são funcionais e de robustez; não congelam estética, componentes ou identidade visual.

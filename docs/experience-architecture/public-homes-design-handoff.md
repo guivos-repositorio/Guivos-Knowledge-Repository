@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.5.1
+version: 1.6.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -40,6 +40,32 @@ depends_on:
 
 # Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 
+
+## Modelo de execução corrente — designer-led / tool-agnostic
+
+Este handoff governa **o que a designer precisa compreender**, não qual ferramenta deve usar.
+
+```text
+GKR
+→ SIGNIFICADO / FUNÇÃO / LIMITES / FONTES / VERDADE
+
+DESIGNER HUMANA
+→ CRIAÇÃO MANUAL COMO CAMINHO PADRÃO
+→ TOTAL LIBERDADE VISUAL DENTRO DOS GUARDRAILS
+
+SISTEMAS DE IA
+→ APOIO OPCIONAL
+→ MESMAS FONTES / MESMOS LIMITES
+
+FIGMA / OUTRAS FERRAMENTAS
+→ AMBIENTE EXTERNO
+→ NÃO SÃO AUTORIDADE SEMÂNTICA
+```
+
+Qualquer referência histórica neste documento a `Figma Make`, ferramenta generativa ou prototipação automática deve ser lida como **opção operacional**, nunca como requisito de execução. O GKR não precisa produzir arquivo Figma, wireframe ou exploração visual para que a designer inicie o trabalho.
+
+Arquivos visuais anteriores podem ser consultados como referência, mas não definem identidade visual canônica nem baseline obrigatória das novas Homes.
+
 ## 0. Estado pós-auditoria e gate de produção
 
 A Auditoria Integral do GKR está concluída com `PASS`. O método de handoff permanece vigente, mas esta revisão separa explicitamente **prontidão documental** de **liberação operacional para a contratação/produção definitiva no Figma**.
@@ -55,13 +81,13 @@ DESIGN PRODUCTION READINESS
 → GOVERNADO POR GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
 
 V5 SNAPSHOT / PACOTE EXTERNO
 → EMITTED / MATERIALIZED / VALIDATED
 ```
 
-As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito registrado em `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`.
+As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito registrado em `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0`.
 
 ### 0.1 Liberdade criativa protegida
 
@@ -223,13 +249,13 @@ Ordem operacional específica no pacote v5:
 N0 — LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL V5
      → fixa checkpoint, fontes, prompt e estado EXPLORAÇÃO
 
-N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.1
      → congela significado e invariantes da Home
 
 N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
      → traduz a Home para o contrato de Design
 
-N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
+N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v1.0.0
      → preserva narrativa, copy e função pública
 
 N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
@@ -651,4 +677,4 @@ IMPLEMENTATION / PRODUCTION
 → NOT RELEASED BY THIS HANDOFF
 ```
 
-Este documento governa **como** o handoff deve ocorrer. A liberação efetiva foi concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0` sobre o pacote v5 já emitido e validado.
+Este documento governa **como** o handoff deve ocorrer. A liberação efetiva foi concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0` sobre o pacote v5 já emitido e validado.

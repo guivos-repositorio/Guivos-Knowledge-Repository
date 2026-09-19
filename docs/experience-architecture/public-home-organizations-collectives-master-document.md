@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -32,7 +32,7 @@ related:
   - journeys/organization.md
   - journeys/collective.md
 normative: false
-maturity: documentally_rebuilt_pre_materialization_under_full_corpus_audit
+maturity: documentally_reconciled_designer_handoff_ready_candidate
 ---
 
 # Home Pública — Organizações e Coletivos
@@ -88,28 +88,31 @@ Estado desta frente:
 
 ```text
 HOME O/C
-→ DOCUMENTALMENTE RECONSTRUÍDA PRÉ-MATERIALIZAÇÃO
+→ DOCUMENTALMENTE RECONCILIADA
 
 AUDITORIA INTEGRAL
-→ EM CURSO
+→ COMPLETED / PASS
 
-MATERIALIZAÇÃO VISUAL NOVA
-→ NÃO AUTORIZADA
+PUBLIC HOMES DESIGN PRODUCTION RELEASE
+→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+→ EXTERNAL DESIGNER-LED CREATION AUTHORIZED
+→ THIS MASTER DOES NOT ITSELF AUTHORIZE IMPLEMENTATION
+
+AUTHENTICATED O/C HIGH-FIDELITY
+→ SEPARATE GOVERNED GATE
+→ NOT GRANTED BY PUBLIC HOME RELEASE
 
 UXA-102 / V5
 → NOT_STARTED
 
 PRODUCT ENGINEERING
-→ PAUSED BEFORE W0-01
+→ PAUSED / NOT RELEASED
 
 PMF
 → NOT VALIDATED
-
-PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
-→ BLOCKED UNTIL AUDIT CLOSES
 ```
 
-A existência de Source Locks, handoffs, snapshots, pacotes generativos ou decisões de Design emitidos em checkpoints anteriores não os promove a baseline visual vigente durante a auditoria.
+A existência de Source Locks, handoffs, snapshots, pacotes generativos ou decisões de Design emitidos em checkpoints anteriores não os promove automaticamente a baseline visual vigente. A criação externa atual deve consumir o pacote governado corrente e preservar a liberdade criativa da designer.
 
 ```text
 ARTEFATO DE DESIGN EXISTENTE
