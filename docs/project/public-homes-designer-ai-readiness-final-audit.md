@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGNER-AI-READINESS-AUDIT-001
 title: Homes Públicas — Auditoria Final de Prontidão para Designer e Sistemas de IA
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: false
-maturity: remediation_in_progress
+maturity: first_remediation_cycle_completed
 depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -150,13 +150,13 @@ Uma Home somente pode ser declarada pronta para entrega definitiva à designer/I
 
 ## 7. Findings abertos
 
-### DR-001 — contrato excessivamente centrado em Figma Make
+### DR-001 — contrato excessivamente centrado em Figma Make — REMEDIATED IN CANDIDATE
 
 As autoridades comuns ainda descrevem `Figma Make` como caminho operacional principal.
 
 **Decisão de remediação:** tornar o contrato **designer-led e tool-agnostic**. IA é apoio opcional; Figma é ambiente externo escolhido pela designer.
 
-### DR-002 — Master O/C carrega estado temporal superado
+### DR-002 — Master O/C carrega estado temporal superado — REMEDIATED IN CANDIDATE
 
 O Master O/C ainda registra:
 
@@ -166,7 +166,7 @@ O Master O/C ainda registra:
 
 **Remediação necessária:** preservar o conteúdo semântico e reconciliar apenas o estado temporal.
 
-### DR-003 — Master Business carrega progressão superada
+### DR-003 — Master Business carrega progressão superada — REMEDIATED IN CANDIDATE
 
 O Master Business ainda registra:
 
@@ -182,7 +182,7 @@ Entretanto `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` existe e o Design Production Re
 
 **Remediação necessária:** reconciliar estado e precedência sem alterar narrativa aprovada.
 
-### DR-004 — Master Intelligence carrega progressão superada
+### DR-004 — Master Intelligence carrega progressão superada — REMEDIATED IN CANDIDATE
 
 O Master Intelligence ainda registra:
 
@@ -198,7 +198,7 @@ Entretanto `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001` e handoff específico exist
 
 **Remediação necessária:** reconciliar o estado temporal, preservando `COMPREENDER ≠ DECIDIR` e toda a arquitetura em 11 movimentos.
 
-### DR-005 — Masters consumidos como fonte permanecem `draft`
+### DR-005 — Masters consumidos como fonte permanecem `draft` — REMEDIATED IN CANDIDATE / REVIEW REQUIRED
 
 Mall, Travel, Media, Ads e Intelligence possuem Masters ainda marcados como `draft`.
 
@@ -346,15 +346,24 @@ Esta frente não autoriza:
 AUDIT
 → OPEN
 
-MATERIAL FINDINGS
-→ DR-001..DR-010
+DR-001..DR-004
+→ REMEDIATED IN CANDIDATE
 
-REMEDIATION
-→ IN PROGRESS
+DR-005
+→ CANDIDATE PROMOTION APPLIED
+→ INDEPENDENT REVIEW REQUIRED
+
+DR-006..DR-010
+→ OPEN / PARTIALLY ADDRESSED
+
+V6 MANIFEST
+→ CANDIDATE / NOT_EMITTED
 
 FINAL DESIGNER / AI READINESS
 → NOT YET CLAIMED
 
 NEXT
-→ REMEDIATE COMMON CONTRACT + MASTER TEMPORAL DRIFT
+→ VALIDATE CANDIDATE
+→ CLOSE RESIDUAL DOCUMENT GAPS
+→ PREPARE HUMAN-FIRST / AI-OPTIONAL V6 GUIDES
 ```
