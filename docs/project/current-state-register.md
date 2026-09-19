@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.48.1
+version: 3.48.2
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -2397,6 +2397,7 @@ Remediações materiais do candidato:
 - Mall Master → v1.1.0 com contrato determinístico absorvido;
 - Travel Master → v1.1.1 com contrato determinístico absorvido;
 - Business Master → v1.1.1 temporalmente reconciliado;
+- Business Source Lock → v1.1.0 reconciliado para designer-first / IA opcional;
 - Intelligence Master → v0.2.0 temporalmente reconciliado;
 - artefato Figma experimental anterior → `ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE`.
 
