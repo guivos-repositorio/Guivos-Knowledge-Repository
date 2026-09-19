@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 title: Homes Públicas — Autorização Governada de Design Production Release
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
-maturity: design_production_release_granted_pre_execution
+maturity: design_production_release_granted_tool_neutral_v6_remediation
 depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -15,6 +15,7 @@ depends_on:
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-GENINPUT-001
 related:
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
   - GKR-STATE-001
   - GKR-HOME-MASTERS-REMEDIATION-001
 ---
@@ -23,22 +24,17 @@ related:
 
 ## 1. Finalidade
 
-Esta autoridade registra o ato humano explícito que encerra o gate de pré-release das oito Homes públicas e libera o início da fase externa de Design sobre o snapshot v5 já emitido, materializado e validado.
-
-A decisão é deliberadamente separada da emissão do snapshot:
+Esta autoridade preserva o ato humano que liberou a frente externa de Design. A decisão não obriga ferramenta, protótipo intermediário ou processo generativo e deve ser interpretada junto de `GKR-UX-HOMES-DESIGN-CONSUMPTION-001`.
 
 ```text
-SNAPSHOT EMISSION
-→ COMPLETED
-
 DESIGN PRODUCTION RELEASE
 → GRANTED
-
-AUTHORIZATION
-≠ EXECUTION
-≠ DIRECTION APPROVAL
-≠ FINAL FIGMA ACCEPTANCE
-≠ IMPLEMENTATION
+GKR FIGMA MATERIALIZATION
+→ OUT OF PROCESS
+V5
+→ HISTORICAL / FROZEN
+CURRENT DELIVERY TARGET
+→ V6 TOOL-NEUTRAL
 ```
 
 ## 2. Decisão governada
@@ -46,10 +42,6 @@ AUTHORIZATION
 ```text
 PUBLIC HOMES DESIGN PRODUCTION RELEASE
 → GRANTED
-
-AUTHORITY
-→ GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
-
 AUTHORIZED TARGETS
 → HOME PESSOA
 → HOME ORGANIZAÇÕES E COLETIVOS
@@ -59,17 +51,13 @@ AUTHORIZED TARGETS
 → HOME ADS
 → HOME BUSINESS
 → HOME INTELLIGENCE
-
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ AUTHORIZED TO EXECUTE
-→ NOT_STARTED
-
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED BY THIS ACT
-→ REQUIRES HUMAN DIRECTION APPROVAL
+DESIGNER
+→ PRIMARY CREATIVE AUTHOR AFTER CURRENT PACKAGE IS VALIDLY ISSUED
+AI
+→ OPTIONAL SUPPORT
+GKR-CREATED FIGMA / GENERATIVE PROTOTYPE
+→ NOT PART OF THE APPROVED PROCESS
 ```
-
-O release concede permissão para iniciar a exploração e materialização de Design conforme o fluxo governado. Ele não executa Design neste mesmo checkpoint.
 
 ## 3. Evidência de entrada
 
@@ -139,30 +127,13 @@ DESIGN FREEDOM
 ≠ FACTUAL INVENTION
 ```
 
-## 7. Execução inicialmente liberada
+## 7. Uso externo liberado
 
-```text
-FIGMA MAKE / EQUIVALENT GENERATIVE TOOL
-→ EXPLORAÇÃO / PROTÓTIPO
-→ NON-CANONICAL OUTPUT
-→ HUMAN REVIEW REQUIRED
-```
+O release permite o consumo externo das fontes governadas pela designer. Ela pode trabalhar manualmente e usar IA se considerar útil. Nenhuma saída automática é exigida.
 
-Nenhuma saída automática se torna canônica por ter sido gerada.
+## 8. Aprovação humana da entrega
 
-## 8. Gate humano de direção permanece obrigatório
-
-```text
-FIGMA MAKE / EXPLORATION
-↓
-HUMAN REVIEW
-↓
-DIRECTION APPROVED
-↓
-FINAL FIGMA PRODUCTION
-```
-
-DESIGN PRODUCTION RELEASE não equivale a aprovação final de direção nem a aceite final do Figma.
+Aprovação de direção visual, qualidade estética e aceite comercial pertencem ao processo humano/contratual. O GKR não cria um gate de protótipo obrigatório; revisão semântica limita-se a significado, função, boundaries e verdade.
 
 ## 9. Limites explícitos
 
@@ -177,27 +148,25 @@ PUBLIC HOME O/C DESIGN RELEASE
 
 ```text
 V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED / FROZEN
-
+→ HISTORICAL / FROZEN
 DESIGN PRODUCTION RELEASE
 → GRANTED
-
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-
-HUMAN DIRECTION APPROVAL
-→ NOT_YET_PERFORMED
-
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED
-
+V6 PACKAGE
+→ UNDER REMEDIATION / NOT YET EMITTED
+GKR FIGMA MATERIALIZATION
+→ OUT OF PROCESS
+DESIGNER
+→ PRIMARY CREATIVE AUTHOR
+AI
+→ OPTIONAL SUPPORT
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
-
 UXA-102 / V5
 → NOT_STARTED
 ```
 
 ## 11. Próximo movimento legítimo
 
-O próximo movimento permitido é a execução externa de Design, uma Home por vez, iniciando pela leitura do `LEIA-PRIMEIRO`, autoridades comuns e fontes específicas, seguida de Figma Make/exploração e revisão humana.
+Concluir a remediação documental v6, validar as oito Homes, mesclar a autoridade corrente e somente então emitir o pacote tool-neutral para a designer.
+
+Nenhum arquivo Figma será criado ou editado pelo GKR durante essa sequência.

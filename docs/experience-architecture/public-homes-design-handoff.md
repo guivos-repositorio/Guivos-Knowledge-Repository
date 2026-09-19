@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
-title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
+title: Homes Públicas — Handoff Canônico para Designer e Sistemas de IA de Apoio
 status: active
-version: 1.5.1
+version: 2.0.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: post_audit_design_handoff_release_granted_pre_execution
+maturity: v6_tool_neutral_designer_ai_handoff
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -36,56 +36,26 @@ depends_on:
   - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
   - GPA-006
   - GKR-UX-HOMES-OUTCOME-001
+related:
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
 ---
 
-# Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
+# Homes Públicas — Handoff Canônico para Designer e Sistemas de IA de Apoio
 
-## 0. Estado pós-auditoria e gate de produção
+## 0. Estado pós-auditoria e modelo corrente
 
-A Auditoria Integral do GKR está concluída com `PASS`. O método de handoff permanece vigente, mas esta revisão separa explicitamente **prontidão documental** de **liberação operacional para a contratação/produção definitiva no Figma**.
-
-```text
-AUDITORIA INTEGRAL
-→ COMPLETED / PASS
-
-HANDOFF CANÔNICO
-→ RECONCILIADO PÓS-AUDITORIA
-
-DESIGN PRODUCTION READINESS
-→ GOVERNADO POR GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
-
-DESIGN PRODUCTION RELEASE
-→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
-
-V5 SNAPSHOT / PACOTE EXTERNO
-→ EMITTED / MATERIALIZED / VALIDATED
-```
-
-As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito registrado em `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`.
-
-### 0.1 Liberdade criativa protegida
-
-O GKR **não congela identidade visual canônica** para estas Homes. A designer pode criar, com originalidade e autonomia, tipografia, paleta, imagens, ilustração, iconografia, grid, ritmo, composição, atmosfera, motion, linguagem gráfica, tratamento de componentes e tom de voz/copy não congelada.
-
-Essas escolhas são **output de Design**, não pré-condição documental. Depois que uma direção for aprovada no gate de protótipo, a solução escolhida deve ser documentada no próprio Figma para garantir consistência e handoff.
-
-A liberdade criativa não autoriza alterar significado, papéis de produto, nomenclatura oficial, assinatura institucional quando utilizada, claims factuais, regras econômicas, disponibilidade, dados, parceiros, causalidade, privacidade ou demais contratos governados.
+A Auditoria Integral do GKR permanece concluída. A designer cria manualmente com liberdade visual e utiliza o GKR como fonte de verdade; IA é apoio opcional.
 
 ```text
-SEMANTIC / FUNCTIONAL TRUTH
-→ GKR
-
-VISUAL / CREATIVE EXPRESSION
-→ DESIGN
-
-GENERATIVE TOOL
-→ EXPLORATION INSTRUMENT
-
-HUMAN APPROVAL
-→ SELECTS THE DIRECTION
+V5 SNAPSHOT
+→ FROZEN / HISTORICAL
+CURRENT HANDOFF MODEL
+→ TOOL-NEUTRAL
+GKR FIGMA MATERIALIZATION
+→ OUT OF PROCESS
+V6 PACKAGE
+→ UNDER REMEDIATION / NOT YET EMITTED
 ```
-
----
 
 ## 1. Finalidade
 
@@ -123,54 +93,21 @@ Portanto, a atualização deste handoff **não cria mapa de página, wireframe, 
 
 ## 2. Regime da fase de Design
 
-Este Handoff constitui a **autoridade procedimental comum** para materialização externa das oito Homes. Ele define como a fase deve operar, mas **não concede sozinho o Design Production Release**.
+Este Handoff define como consumir a documentação, não como a designer deve operar sua ferramenta.
 
-A execução somente fica liberada quando coexistirem:
+A designer recebe as fontes governadas e possui liberdade para definir seu processo criativo, inclusive trabalhar diretamente no Figma de forma manual.
 
-1. pacote v5 materializado e reproduzível;
-2. Source Lock operacional da Home no checkpoint da emissão;
-3. gates de validação sem finding material aberto;
-4. ato humano explícito de `DESIGN PRODUCTION RELEASE = GRANTED`.
+IA pode ser usada ou não. Nenhuma exploração generativa é pré-requisito.
 
-Depois desse release, podem ser executados:
+O Handoff não autoriza automaticamente desenvolvimento, publicação, mudança de produto, modelo econômico, funcionalidade, GTM ou claims não sustentados.
 
-- exploração em Figma Make e ferramentas equivalentes;
-- arquitetura visual;
-- wireframes de baixa fidelidade;
-- exploração de UX e direção visual;
-- UI de alta fidelidade;
-- protótipos de navegação e interação;
-- estudos responsivos desktop e mobile;
-- validação das soluções contra os contratos do GKR;
-- construção do Figma definitivo dentro da direção humana aprovada.
-
-O release de Design não autoriza automaticamente:
-
-- desenvolvimento frontend ou backend;
-- publicação em produção;
-- alteração de arquitetura de produto;
-- mudança de modelo econômico;
-- criação de funcionalidades não governadas;
-- alteração de posicionamento;
-- Marketing/GTM;
-- novas promessas, métricas, parceiros, ofertas ou claims não sustentados;
-- merge de implementação.
-
-Regra:
-
-> **O Handoff governa COMO materializar. O Source Lock governa COM QUAIS verdades. O Design Production Release humano governa QUANDO iniciar.**
-
-Documentos Mestres, contratos e Source Locks continuam governando o que não pode ser semanticamente perdido durante a materialização.
-
-A existência deste documento, isoladamente, não significa que um snapshot de entrega já foi emitido, validado ou liberado.
-
----
+> **O GKR governa significado e limites. A designer governa a expressão e o processo criativo. IA, quando usada, apoia sem adquirir autoridade.**
 
 ## 3. Princípio central
 
 > **Ferramentas generativas são instrumentos de exploração e materialização, não fontes de decisão sobre a arquitetura das Homes.**
 
-Uma solução visual produzida por IA, Figma Make, plugin, template, benchmark ou referência externa não se torna canônica por ter sido gerada. Somente após validação humana contra o GKR uma direção pode ser promovida.
+Uma solução visual produzida por IA, sistema de IA de apoio, plugin, template, benchmark ou referência externa não se torna canônica por ter sido gerada. Somente após validação humana contra o GKR uma direção pode ser promovida.
 
 ---
 
@@ -265,47 +202,19 @@ Se houver conflito sobre significado da Home, prevalecem as autoridades específ
 
 ---
 
-## 6. Controle semântico do input generativo
+## 6. Controle semântico do consumo por IA
 
-Toda execução deve começar por um **Source Lock operacional específico da Home**.
+Quando uma IA for utilizada, seu contexto deve ser específico da Home e baseado nas mesmas fontes entregues à designer.
 
-O Source Lock deve registrar:
+Não usar como autoridade: todo o GKR sem seleção, múltiplas Homes misturadas, documentos históricos como vigentes, rascunhos de conversa, benchmark como requisito ou output anterior de IA.
 
-- Home;
-- objetivo da execução;
-- Handoff utilizado;
-- Documento Mestre e contratos aplicáveis;
-- versões;
-- commit/checkpoint do GKR;
-- decisões adicionais autorizadas para a execução;
-- questões abertas.
+A IA deve saber o que é `CANONICAL`, `DESIGN_CREATIVE`, `REAL_DATA_REQUIRED` e `PROHIBITED_INFERENCE`.
 
-> **A ferramenta deve saber de quais fontes pode aprender antes de receber liberdade para propor forma.**
+## 7. Estrutura recomendada para instrução de IA
 
-Não utilizar como input indiscriminado:
+Quando IA for utilizada, a instrução deve informar objetivo, fontes, invariantes, liberdade criativa, proibições de inferência, classes de conteúdo/dados, questões abertas e status não canônico da proposta.
 
-- todo o GKR;
-- todas as oito Homes simultaneamente;
-- documentos históricos misturados a documentos vigentes;
-- rascunhos de conversa sem status governado;
-- benchmark como requisito;
-- output anterior de IA como fonte canônica.
-
----
-
-## 7. Estrutura obrigatória do prompt
-
-O prompt de exploração deve conter:
-
-1. **Objetivo** — Home e artefato a explorar;
-2. **Fontes autorizadas** — IDs e versões;
-3. **Invariantes** — contratos que não podem ser reinterpretados;
-4. **Liberdades de Design** — o que pode ser explorado;
-5. **Proibições de inferência** — o que não pode ser inventado;
-6. **Estado da saída** — `EXPLORAÇÃO / NÃO CANÔNICA`;
-7. **Questões abertas** — lacunas devem ser sinalizadas, não preenchidas como decisão.
-
----
+Essa estrutura não é requisito para a designer trabalhar manualmente.
 
 ## 8. Liberdades de Design
 
@@ -510,52 +419,33 @@ Cada exemplo analítico demonstra **um tipo de leitura**, não prova que a capac
 
 ---
 
-## 14. Fluxo recomendado
+## 14. Fluxo recomendado de consumo
 
 ```text
-PACOTE OFICIAL DA EMISSÃO VIGENTE
+PACOTE VIGENTE
 ↓
-LEIA-PRIMEIRO COMUM
+00-LEIA-PRIMEIRO COMUM
 ↓
 ESCOLHER UMA HOME
 ↓
-LEIA-PRIMEIRO DA HOME
+00-LEIA-PRIMEIRO DA HOME
 ↓
-FONTES CANÔNICAS ISOLADAS
+DOCUMENTO MESTRE + FONTES ESPECÍFICAS
 ↓
-SOURCE LOCK / HANDOFF / GENINPUT ESPECÍFICOS
+COMPREENSÃO HUMANA
 ↓
-OUTPUT = EXPLORAÇÃO
+CRIAÇÃO LIVRE DA DESIGNER
 ↓
-VALIDAÇÃO HUMANA
+IA OPCIONAL
+↓
+REVISÃO HUMANA / CONTRATUAL
 ```
 
-A emissão do pacote não substitui a execução de Design.
+## 15. Estados externos de trabalho
 
----
+Outputs visuais pertencem ao processo externo de Design. Se útil, podem ser tratados como `WORKING`, `CANDIDATE`, `APPROVED BY HUMAN` e, após gate técnico separado, `ENGINEERING-READY`.
 
-## 15. Estados dos outputs
-
-```text
-EXPLORAÇÃO
-→ proposta ainda não validada
-
-CANDIDATO
-→ direção selecionada para avaliação
-
-VALIDADO EM UX
-→ estrutura aceita; UI ainda pode evoluir
-
-VALIDADO EM UI
-→ direção visual aceita
-
-APROVADO PARA HANDOFF DE ENGENHARIA
-→ somente após decisão específica posterior
-```
-
-Nenhum output generativo nasce `canônico` ou `aprovado`.
-
----
+Nenhum output de IA nasce canônico.
 
 ## 16. Registro mínimo de cada exploração
 
@@ -628,27 +518,25 @@ Estado histórico daquela frente:
 
 ---
 
-## 20. Estado pós-auditoria e pós-release / pré-execução
+## 20. Estado tool-neutral corrente
 
 ```text
-HANDOFF / MÉTODO
-→ ACTIVE / RECONCILED
-
+HANDOFF
+→ ACTIVE / TOOL-NEUTRAL
 8 HOMES
-→ COVERED
-
+→ COVERED / UNDER V6 REAUDIT
 VISUAL IDENTITY
-→ DESIGN-OWNED / NOT CANONICALLY PRE-LOCKED
-
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ METHOD DEFINED
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-
-FINAL FIGMA PRODUCTION
-→ SUBJECT TO PROTOTYPE APPROVAL + FINAL ACCEPTANCE CONTRACT
-
-IMPLEMENTATION / PRODUCTION
+→ DESIGN-OWNED
+GKR FIGMA MATERIALIZATION
+→ OUT OF PROCESS
+DESIGNER
+→ PRIMARY CREATIVE AUTHOR
+AI
+→ OPTIONAL SUPPORT
+V6 PACKAGE
+→ NOT YET EMITTED
+PRODUCT ENGINEERING
 → NOT RELEASED BY THIS HANDOFF
 ```
 
-Este documento governa **como** o handoff deve ocorrer. A liberação efetiva foi concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0` sobre o pacote v5 já emitido e validado.
+Este documento governa o consumo das fontes e a preservação semântica. Ele não governa o arquivo Figma da designer.

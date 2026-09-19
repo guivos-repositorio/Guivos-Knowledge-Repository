@@ -2,17 +2,18 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 5.0.2
+version: 6.0.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: design_delivery_v5_release_granted_pre_execution
+maturity: design_delivery_v6_candidate_tool_neutral_pre_snapshot
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-GENINPUT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 related:
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
@@ -23,24 +24,24 @@ related:
 
 ## 1. Finalidade
 
-Este Manifesto define o pacote externo v5 emitido para a frente de Design agora liberada, preservando o snapshot materializado e os gates posteriores internos de direção e aceite.
+Este Manifesto define a composição-alvo do pacote externo v6, orientado ao consumo pela designer e por IA opcional.
 
-O snapshot v4 permanece histórico e reproduzível, mas não é pacote atual porque seu checkpoint foi superado.
+O snapshot v5 permanece histórico, congelado e reproduzível. Ele não será reescrito.
 
-## 2. Princípio do v5
+## 2. Princípio do v6
 
-O v5 elimina GENINPUTs operacionais de checkpoints superados do pacote de produção. Em seu lugar, cada Home recebe um `LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL` gerado no momento da emissão a partir das autoridades pós-auditoria.
+O v6 remove qualquer dependência de Figma Make ou protótipo gerado como etapa governada. Cada Home receberá um `00-LEIA-PRIMEIRO` tool-neutral.
 
-A ausência de identidade visual canônica não é lacuna: estética e sistema visual são responsabilidade criativa da designer.
+A ausência de identidade visual canônica é deliberada: estética e sistema visual são responsabilidade criativa da designer.
 
 ## 3. Composição canônica — 26 fontes únicas
 
 ### 3.1 Fontes comuns
 
-1. `docs/experience-architecture/public-homes-design-handoff.md` — `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.5.0`;
-2. `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — `GKR-UX-HOMES-GENINPUT-001 v2.0.0`;
-3. `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0`;
-4. `docs/experience-architecture/public-homes-design-delivery-operational-flow.md` — `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v2.0.0`.
+1. `docs/experience-architecture/public-homes-design-handoff.md` — `GKR-UX-HOMES-DESIGN-HANDOFF-001 v2.0.0`;
+2. `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — `GKR-UX-HOMES-GENINPUT-001 v3.0.0`;
+3. `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v2.0.0`;
+4. `docs/experience-architecture/public-homes-design-delivery-operational-flow.md` — `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.0`.
 
 ### 3.2 Pessoa
 
@@ -160,21 +161,9 @@ MATERIAL CHANGE TO MEANING / INVARIANT / COPY LOCK / SOURCE PACKAGE / PROMPT / A
 
 Uma alteração criativa no Figma que não modifica o contrato do GKR não exige reemissão do pacote fonte.
 
-## 6. Regra para ferramentas generativas
+## 6. Regra para sistemas de IA
 
-Não carregar documentos específicos de múltiplas Homes na mesma execução.
-
-O contexto de cada execução deve ser:
-
-```text
-00-COMUM
-+
-00-LEIA-PRIMEIRO / SOURCE LOCK DA HOME
-+
-FONTES ESPECÍFICAS DA HOME
-```
-
-A identidade visual é livre; fatos e arquitetura não são.
+IA é opcional. Quando utilizada, recebe `00-COMUM` + `00-LEIA-PRIMEIRO` da Home + fontes específicas, sem autoridade adicional e sem etapa generativa obrigatória.
 
 ## 7. Materiais fora do pacote inicial
 
@@ -188,37 +177,25 @@ A identidade visual é livre; fatos e arquitetura não são.
 
 Referências adicionais entram somente para resolver dúvida concreta e permanecem `INSPIRATION_ONLY` ou fonte adicional explicitamente declarada, conforme sua natureza.
 
-## 8. Gate de emissão
+## 8. Gate de emissão v6
 
-O gate de emissão foi executado e validado:
-
-1. `main` pós-merge capturada em `aa1b524c20f6707d007208222ba8581af097c38d`;
-2. 26/26 fontes, IDs e versões confirmados;
-3. 26/26 blobs canônicos confirmados no mesmo checkpoint;
-4. oito Source Locks operacionais / `LEIA-PRIMEIRO` gerados;
-5. `delivery/design-handoff-v5` materializada;
-6. estrutura, isolamento e reproduzibilidade validados;
-7. snapshot registrado em `GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001`.
-
-O gate humano posterior foi satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`. O snapshot permanece congelado; a nova autoridade libera seu uso para a fase de Design sem reescrever o pacote.
+A emissão v6 exige remediação tool-neutral, revisão 8/8 dos Masters, reconciliação de estados obsoletos, auditoria de prescrições estéticas, fechamento das fontes, Semantic + Mechanical, revisão independente, zero finding material, merge governado, captura do `main`, geração dos oito guias e validação do snapshot.
 
 ## 9. Estado
 
 ```text
 V5
-→ EMITTED / MATERIALIZED / VALIDATED
-
-SNAPSHOT
+→ FROZEN / HISTORICAL
 → delivery/design-handoff-v5
-→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
-→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
-
-DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
-
-FIGMA MAKE
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-
-FINAL FIGMA
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+V6
+→ CANDIDATE / UNDER REMEDIATION
+→ NOT YET EMITTED
+DESIGN CONSUMPTION
+→ TOOL-NEUTRAL
+GKR FIGMA MATERIALIZATION
+→ OUT OF PROCESS
+DESIGNER
+→ PRIMARY CREATIVE AUTHOR
+AI
+→ OPTIONAL SUPPORT
 ```
