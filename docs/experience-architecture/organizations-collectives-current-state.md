@@ -266,7 +266,7 @@ COLETIVO
 └── Planos e Capacidade [especializado / contextual]
 ```
 
-A IA agrupa informação e trabalho; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` materializa esses domínios como superfícies lógicas autenticadas; `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` define as condições funcionais que essas responsabilidades precisam preservar; `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` define os fluxos prioritários canônicos documentais. Nenhuma dessas autoridades define quantidade final de telas, menu visual, navegação materializada, wireframe, UI, protótipo, RBAC técnico ou implementação.
+A IA agrupa informação e trabalho; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` materializa esses domínios como superfícies lógicas autenticadas; `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` define as condições funcionais que essas responsabilidades precisam preservar; `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` define os fluxos prioritários canônicos documentais; e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` define topologia, hierarquia, entrada, retorno e recontextualização. Nenhuma dessas autoridades define quantidade final de telas, menu visual, wireframe, UI, protótipo, RBAC técnico ou implementação.
 
 ## 9. Jornadas atuais
 
