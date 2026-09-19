@@ -1943,7 +1943,7 @@ Sequência governada atual:
 8. reconciliar Intelligence Master com Source Lock vigente — CONCLUÍDO;
 9. reauditar 8/8 Homes como pacotes completos — CANDIDATE PASS / 120 OF 120;
 10. definir pacote v6 candidato — CONCLUÍDO;
-11. sincronizar Estado / Roadmap / navegação — EM CURSO NESTA FRENTE;
+11. sincronizar Estado / Roadmap / navegação — CONCLUÍDO;
 12. executar Semantic + Mechanical no HEAD final — PENDENTE;
 13. executar revisão independente no HEAD final — PENDENTE;
 14. adjudicar findings, se houver — PENDENTE;
