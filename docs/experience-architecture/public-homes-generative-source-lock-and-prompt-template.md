@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 status: active
-version: 2.0.0
+version: 2.0.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -25,7 +25,7 @@ related:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GPA-006
 normative: true
-maturity: post_audit_eight_home_generative_template_pre_release
+maturity: post_audit_eight_home_generative_template_release_granted_pre_execution
 ---
 
 # Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
@@ -42,10 +42,11 @@ V4 HISTORICAL SOURCE LOCKS
 → PROVENANCE ONLY WHEN CHECKPOINT-SUPERSEDED
 
 V5 OPERATIONAL SOURCE LOCK
-→ GENERATED PER HOME FROM THE CURRENT V5 PACKAGE
+→ EMITTED / 8 OF 8 / FROZEN WITH SNAPSHOT V5
 
 FIGMA MAKE / GENERATIVE EXECUTION
-→ ONLY AFTER V5 SNAPSHOT + EXPLICIT HUMAN DESIGN RELEASE
+→ DESIGN PRODUCTION RELEASE GRANTED
+→ AUTHORIZED TO EXECUTE / NOT_STARTED
 ```
 
 A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode completar lacunas de verdade factual ou arquitetura por inferência.
@@ -789,8 +790,9 @@ TEMPLATE
 → ACTIVE / RECONCILED FOR 8 HOMES
 
 V5 PER-HOME SOURCE LOCKS
-→ TO BE EMITTED FROM THE FINAL POST-MERGE CHECKPOINT
+→ EMITTED / 8 OF 8 / FROZEN IN delivery/design-handoff-v5
 
 GENERATIVE EXECUTION
-→ NOT RELEASED UNTIL V5 SNAPSHOT + EXPLICIT HUMAN RELEASE
+→ AUTHORIZED TO EXECUTE / NOT_STARTED
+→ RELEASE AUTHORITY = GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 ```

@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.5.0
+version: 1.5.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: post_audit_design_handoff_reconciled_pre_production_release
+maturity: post_audit_design_handoff_release_granted_pre_execution
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -55,13 +55,13 @@ DESIGN PRODUCTION READINESS
 → GOVERNADO POR GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 
 DESIGN PRODUCTION RELEASE
-→ NOT_GRANTED BY THIS DOCUMENT ALONE
+→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 
 V5 SNAPSHOT / PACOTE EXTERNO
-→ REQUIRED BEFORE RELEASE
+→ EMITTED / MATERIALIZED / VALIDATED
 ```
 
-Uma futura execução definitiva exige cumulativamente: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito de release.
+As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito registrado em `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`.
 
 ### 0.1 Liberdade criativa protegida
 
@@ -628,7 +628,7 @@ Estado histórico daquela frente:
 
 ---
 
-## 20. Estado pós-auditoria e pré-release
+## 20. Estado pós-auditoria e pós-release / pré-execução
 
 ```text
 HANDOFF / MÉTODO
@@ -642,7 +642,7 @@ VISUAL IDENTITY
 
 FIGMA MAKE / GENERATIVE EXPLORATION
 → METHOD DEFINED
-→ EXECUTION ONLY AFTER V5 SNAPSHOT + HUMAN RELEASE
+→ AUTHORIZED TO EXECUTE / NOT_STARTED
 
 FINAL FIGMA PRODUCTION
 → SUBJECT TO PROTOTYPE APPROVAL + FINAL ACCEPTANCE CONTRACT
@@ -651,4 +651,4 @@ IMPLEMENTATION / PRODUCTION
 → NOT RELEASED BY THIS HANDOFF
 ```
 
-Este documento governa **como** o handoff deve ocorrer. A liberação efetiva depende do pacote v5 e do gate de `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001`.
+Este documento governa **como** o handoff deve ocorrer. A liberação efetiva foi concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0` sobre o pacote v5 já emitido e validado.

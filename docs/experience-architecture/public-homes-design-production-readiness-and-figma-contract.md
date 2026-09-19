@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Figma/IA
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: post_audit_design_production_readiness_pre_release
+maturity: post_audit_design_production_readiness_release_granted_pre_execution
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -23,6 +23,8 @@ depends_on:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
 related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-BRAND-SIGNATURE-001
   - GOG-001
 ---
@@ -514,24 +516,26 @@ ZERO FINDING MATERIAL ABERTO
 ATO HUMANO EXPLÍCITO DE DESIGN PRODUCTION RELEASE
 ```
 
+O gate humano foi posteriormente satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`. A autorização libera o início da fase de Design, sem antecipar os gates internos de direção criativa, Figma final ou implementação.
+
 ## 16. Estado
 
 ```text
 DESIGN PRODUCTION READINESS DOCUMENTATION
-→ PREPARED
+→ INTEGRATED / ACTIVE
 
 VISUAL IDENTITY CANONICALIZATION
 → NOT REQUIRED / DELIBERATELY DESIGN-OWNED
 
 V5 SNAPSHOT
-→ NOT YET EMITTED
+→ EMITTED / MATERIALIZED / VALIDATED
 
 DESIGN PRODUCTION RELEASE
-→ NOT_GRANTED
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 
 FIGMA MAKE EXECUTION
-→ NOT YET RELEASED
+→ AUTHORIZED TO EXECUTE / NOT_STARTED
 
 FINAL FIGMA PRODUCTION
-→ NOT YET RELEASED
+→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
 ```
