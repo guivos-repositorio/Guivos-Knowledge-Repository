@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.48.8
+version: 3.48.9
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -947,14 +947,14 @@ A auditoria classificou os masters pelo conteúdo atual e concluiu documentalmen
 
 | Home | Estado atual da auditoria |
 |---|---|
-| Principal / Pessoa | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Organizações e Coletivos | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Mall | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Travel | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Media | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Ads | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Business | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Intelligence | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Principal / Pessoa | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Organizações e Coletivos | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Mall | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Travel | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Media | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Ads | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Business | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Intelligence | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
 
 ### 10.1 Home principal / Pessoa
 
@@ -977,7 +977,7 @@ Estado:
 
 ```text
 HOME PRINCIPAL / PESSOA
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+→ DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 
 WIREFRAME / FIGMA / UI / PROTÓTIPO / IMPLEMENTAÇÃO DA HOME
 → NOT AUTHORIZED BY P CLOSURE, Q RELEASE OR Q FUNCTIONAL DEFINITION
@@ -1036,7 +1036,7 @@ O Lote E foi concluído documentalmente pela reconstrução do Master e pela rec
 Autoridades atuais:
 
 ```text
-GKR-UX-HOME-OC-MASTER-001 v1.0.1
+GKR-UX-HOME-OC-MASTER-001 v1.0.2
 → autoridade de consumo vigente
 
 GKR-UX-HOME-OC-NARR-001 v0.2.0
@@ -1075,7 +1075,7 @@ Estado:
 
 ```text
 HOME O/C
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+→ DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 
 LOTE E
 → COMPLETED
@@ -1148,7 +1148,7 @@ LOTE F
 → COMPLETED DOCUMENTALLY
 
 MALL / TRAVEL / MEDIA / ADS / BUSINESS / INTELLIGENCE
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+→ DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 
 WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
 → NOT AUTHORIZED BY P CLOSURE
@@ -2385,7 +2385,7 @@ PACKAGE-LEVEL CHECKS
 → 120 / 120 PASS
 
 OPEN MATERIAL SOURCE-COMPLETENESS FINDINGS
-→ 0 KNOWN AFTER SECOND REMEDIATION
+→ 0 KNOWN AFTER THIRD REMEDIATION
 → EXACT-HEAD REVALIDATION + RE-REVIEW REQUIRED
 ```
 
@@ -2396,9 +2396,9 @@ Remediações materiais do candidato:
 - Readiness → contrato Designer/IA;
 - Release → produção externa pela designer;
 - Mall Master → v1.1.0 com contrato determinístico absorvido;
-- Travel Master → v1.1.1 com contrato determinístico absorvido;
-- Business Master → v1.1.2 temporalmente reconciliado;
-- Business Source Lock → v1.1.2 reconciliado para designer-first / IA opcional;
+- Travel Master → v1.1.2 reconciliado para produção externa de Design;
+- Business Master → v1.1.3 reconciliado para produção externa de Design;
+- Business Source Lock → v1.1.3 sincronizado com Business Master v1.1.3;
 - Intelligence Master → v0.2.3 temporalmente reconciliado;
 - Intelligence Source Lock → v1.1.2 reconciliado para designer-first / IA opcional;
 - Intelligence Design Handoff → v1.1.3 reconciliado para designer-first / IA opcional;
