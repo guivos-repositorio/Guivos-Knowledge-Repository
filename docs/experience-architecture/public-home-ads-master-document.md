@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-ADS-MASTER-001
 title: Home Pública — Guivos Ads — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-14
+last_updated: 2026-09-19
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-007
@@ -592,3 +592,90 @@ OBJETIVO DA MARCA
 Estado:
 
 > **ARQUITETURA CONCEITUAL E FUNCIONAL DA HOME ADS V1 CONVERGIDA — DOCUMENTO PREPARADO PARA HANDOFF; PROTÓTIPO VISUAL E OPERAÇÃO COMERCIAL NÃO INCLUÍDOS NESTE ESCOPO.**
+
+## Contrato v6 de consumo para Design e IA
+
+Este Master deve ser consumido como **fonte de significado e limites**, não como solução visual pronta.
+
+### Autoria e liberdade criativa
+
+```text
+GKR / MASTER
+→ VERDADE / FUNÇÃO / FRONTEIRAS / INVARIANTES
+
+DESIGNER
+→ EXPRESSÃO VISUAL / DIREÇÃO CRIATIVA / COMPOSIÇÃO / HIERARQUIA
+
+IA
+→ APOIO OPCIONAL / NÃO AUTORITATIVO
+```
+
+A designer tem liberdade para criar tipografia, paleta, fotografia, ilustração, iconografia, grid, composição, densidade, ritmo, componentes, motion, microinterações, atmosfera e copy não congelada.
+
+Nenhuma identidade visual prévia é imposta por este Master. Arquivos visuais existentes podem ser consultados como referência, nunca como baseline obrigatória por inferência.
+
+### Responsividade
+
+A materialização deve preservar a mesma arquitetura semântica em desktop, mobile e demais larguras necessárias.
+
+```text
+MESMO SIGNIFICADO
+≠ MESMA COMPOSIÇÃO
+```
+
+Breakpoints, empilhamento, progressive disclosure e simultaneidade visual são decisões de Design.
+
+### Acessibilidade e robustez
+
+A solução deve permitir que o significado essencial sobreviva:
+
+- sem motion;
+- com reduced motion;
+- sem depender de hover;
+- sem depender exclusivamente de vídeo/áudio;
+- com hierarquia e legibilidade suficientes;
+- com alternativa textual/contextual para mídia significativa;
+- com estados de interação distinguíveis no futuro handoff de implementação.
+
+Essas exigências governam resultado de experiência; não prescrevem estética.
+
+### Uso de IA
+
+IA pode apoiar leitura, síntese, brainstorming, alternativas de layout, Content Design candidato, referências, imagens/assets candidatos e autoauditoria.
+
+Toda saída de IA deve permanecer classificada conforme sua natureza. IA não transforma `OPEN_QUESTION` em `CANONICAL`, nem placeholder em prova.
+
+### REAL_DATA_REQUIRED — Ads
+
+Exige fonte/lastro antes de parecer factual: **preço, CPM/CPC, alcance, inventário, performance, case, marca/parceiro e disponibilidade comercial apresentados como reais**.
+
+Quando o dado ainda não existir, Design pode usar `PROTOTYPE_PLACEHOLDER` claramente provisório ou estruturar o componente para receber o dado real depois.
+
+### PROHIBITED_INFERENCE — Ads
+
+Não inferir nem comunicar como verdade: **compra de relevância pessoal; segmentação por contexto pessoal protegido; performance inventada; promessa de CPM/CPC; Ads com autoridade editorial sobre o produto anfitrião**.
+
+### Critério mínimo de prontidão da materialização
+
+Antes de considerar uma direção de Design pronta para aprovação humana:
+
+- [ ] papel e pergunta-mãe da Home permanecem reconhecíveis;
+- [ ] movimentos/arquitetura semântica permanecem cobertos sem obrigação de um bloco por movimento;
+- [ ] conteúdo candidato não parece verdade congelada;
+- [ ] dados reais e placeholders são distinguíveis;
+- [ ] nenhuma inferência proibida foi introduzida;
+- [ ] desktop e mobile preservam a mesma arquitetura de significado;
+- [ ] acessibilidade não depende de efeito visual específico;
+- [ ] identidade visual permanece criação da designer;
+- [ ] IA, se utilizada, permaneceu apoio e não autoridade;
+- [ ] nenhuma decisão de Produto foi criada para preencher lacuna visual.
+
+```text
+DOCUMENTAÇÃO COMPLETA
+→ REDUZ AMBIGUIDADE DE PRODUTO
+
+LIBERDADE DE DESIGN
+→ PRESERVA ORIGINALIDADE
+
+UMA NÃO SUBSTITUI A OUTRA
+```
