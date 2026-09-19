@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.48.10
+version: 3.48.11
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -454,10 +454,16 @@ PRIMEIRA RESPONSABILIDADE AUTENTICADA DA PESSOA APÓS A HOME
 → CURRENT INTERACTIVE DESIGN REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0
 → FINAL INTERACTIVE CONCLUSION = POST-REVIEW REVALIDATION PASS
 
-MATERIALIZAÇÃO VISUAL DAS HOMES
-→ NOT AUTHORIZED BY P CLOSURE, Q RELEASE OR Q FUNCTIONAL DEFINITION
-→ REQUIRES SEPARATE GOVERNED ACT
-→ PER-002-SPECIFIC DESIGN / VALIDATION / PROTOTYPE AUTHORIZATION DOES NOT AUTHORIZE HOME MATERIALIZATION
+PUBLIC HOMES EXTERNAL DESIGN PRODUCTION
+→ DESIGN PRODUCTION RELEASE = GRANTED
+→ DESIGNER-FIRST / MANUAL FIRST-CLASS
+→ AI OPTIONAL / DESIGNER-CONTROLLED
+→ GKR-CREATED FIGMA = NONE
+→ DOES NOT RELEASE IMPLEMENTATION / PUBLICATION / AUTHENTICATED EXPERIENCE / PRODUCT ENGINEERING
+
+PER-002-SPECIFIC DESIGN / VALIDATION / PROTOTYPE AUTHORIZATION
+→ REMAINS SCOPED TO PER-002
+→ DOES NOT GOVERN PUBLIC HOME DESIGN
 ```
 
 O fechamento de `F-016` conclui a desmaterialização documental auditada sem promover maturidade funcional, sem criar Design e sem liberar implementação. A história permanece no Git; o corpus vigente preserva autoridades, validadores e evidências necessárias.
@@ -1080,9 +1086,8 @@ HOME O/C
 LOTE E
 → COMPLETED
 
-WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
-→ NOT AUTHORIZED BY P CLOSURE
-→ REQUIRES SEPARATE GOVERNED ACT
+PUBLIC HOME O/C — WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
+→ GRANTED FOR EXTERNAL DESIGNER BY COMMON RELEASE
 
 EXPERIÊNCIA AUTENTICADA O/C
 → SURFACE MAP DOCUMENTARY DEFINED
@@ -1139,7 +1144,7 @@ PRIVACIDADE DE REFERÊNCIA
 ≠ EVIDÊNCIA OPERACIONAL
 ```
 
-A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.3` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes e não constitui, por si só, release operacional. A produção externa de Design da Home pública é regida pelo release comum posterior; implementação e publicação permanecem separadas.
+A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.4` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes e não constitui, por si só, release operacional. A produção externa de Design da Home pública é regida pelo release comum posterior; implementação e publicação permanecem separadas.
 
 Estado:
 
@@ -1150,9 +1155,11 @@ LOTE F
 MALL / TRAVEL / MEDIA / ADS / BUSINESS / INTELLIGENCE
 → DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 
-WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
-→ NOT AUTHORIZED BY P CLOSURE
-→ REQUIRES SEPARATE GOVERNED ACT
+PUBLIC HOME WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
+→ GRANTED FOR EXTERNAL DESIGNER BY COMMON RELEASE
+
+IMPLEMENTATION / PUBLICATION / PRODUCT ENGINEERING
+→ NOT RELEASED
 ```
 
 ## 11. Guivos Business
@@ -1328,14 +1335,16 @@ HOME INTELLIGENCE v1
 → CONCEPTUAL ARCHITECTURE COMPLETE
 
 HOME SOURCE LOCK
-→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.3
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.4
 → ACTIVE / NORMATIVE
 → FREEZES SOURCES AND INVARIANTS
-→ DOES NOT AUTHORIZE DESIGN BY ITSELF
+→ DESIGN RELEASE GOVERNED BY COMMON AUTHORITY
 
-DESIGN / IMPLEMENTATION
-→ NOT AUTHORIZED BY P CLOSURE
-→ REQUIRES SEPARATE GOVERNED ACT
+PUBLIC HOME DESIGN
+→ GRANTED FOR EXTERNAL DESIGNER
+
+IMPLEMENTATION / PUBLICATION / PRODUCT ENGINEERING
+→ NOT RELEASED
 ```
 
 ## 13. Grafo, dados e tecnologia
@@ -2385,7 +2394,7 @@ PACKAGE-LEVEL CHECKS
 → 120 / 120 PASS
 
 OPEN MATERIAL SOURCE-COMPLETENESS FINDINGS
-→ 0 KNOWN AFTER FULL TEMPORAL-STATE SWEEP
+→ 0 KNOWN AFTER FULL TEMPORAL-STATE + SOURCE-LOCK SWEEP
 → EXACT-HEAD REVALIDATION + RE-REVIEW REQUIRED
 ```
 
@@ -2400,10 +2409,10 @@ Remediações materiais do candidato:
 - Mall Master → v1.1.1 reconciliado para produção externa de Design;
 - Travel Master → v1.1.3 reconciliado para produção externa de Design;
 - Business Master → v1.1.3 reconciliado para produção externa de Design;
-- Business Source Lock → v1.1.4 sincronizado com Business Master v1.1.3 e Authority Contract v1.0.2;
+- Business Source Lock → v1.1.5 sincronizado com Business Master v1.1.3 e Authority Contract v1.0.2;
 - Intelligence Master → v0.2.4 reconciliado para produção externa de Design;
-- Intelligence Source Lock → v1.1.3 reconciliado para designer-first / IA opcional;
-- Intelligence Design Handoff → v1.1.4 reconciliado para designer-first / IA opcional;
+- Intelligence Source Lock → v1.1.4 reconciliado para designer-first / IA opcional;
+- Intelligence Design Handoff → v1.1.5 reconciliado para designer-first / IA opcional;
 - artefato Figma experimental anterior → `ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE`.
 
 O pacote v6 candidato está definido em `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001`:
