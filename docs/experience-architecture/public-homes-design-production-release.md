@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 title: Homes Públicas — Autorização Governada de Design Production Release
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
-maturity: design_production_release_granted_pre_execution
+maturity: design_production_release_granted_human_first
 depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -60,13 +60,16 @@ AUTHORIZED TARGETS
 → HOME BUSINESS
 → HOME INTELLIGENCE
 
-FIGMA MAKE / GENERATIVE EXPLORATION
+EXTERNAL DESIGN CREATION
 → AUTHORIZED TO EXECUTE
-→ NOT_STARTED
+→ HUMAN-FIRST / MANUAL CREATION PRIMARY
 
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED BY THIS ACT
-→ REQUIRES HUMAN DIRECTION APPROVAL
+AI-ASSISTED EXPLORATION
+→ OPTIONAL
+→ NO TOOL REQUIREMENT
+
+FINAL DESIGN DELIVERY
+→ SUBJECT TO HUMAN REVIEW / ACCEPTANCE
 ```
 
 O release concede permissão para iniciar a exploração e materialização de Design conforme o fluxo governado. Ele não executa Design neste mesmo checkpoint.
@@ -142,27 +145,34 @@ DESIGN FREEDOM
 ## 7. Execução inicialmente liberada
 
 ```text
-FIGMA MAKE / EQUIVALENT GENERATIVE TOOL
-→ EXPLORAÇÃO / PROTÓTIPO
-→ NON-CANONICAL OUTPUT
-→ HUMAN REVIEW REQUIRED
+DESIGNER HUMANA
+→ CRIAÇÃO MANUAL LIVRE DENTRO DOS CONTRATOS
+
+AI / GENERATIVE TOOL
+→ OPCIONAL
+→ FERRAMENTA DE APOIO, NÃO ETAPA OBRIGATÓRIA
+
+OUTPUT AUTOMÁTICO
+→ NON-CANONICAL UNTIL HUMAN REVIEW
 ```
 
-Nenhuma saída automática se torna canônica por ter sido gerada.
+O GKR não exige Figma Make, nem qualquer ferramenta generativa específica. A designer pode criar integralmente de forma manual. Se utilizar IA, a IA deve consumir o mesmo pacote governado e não recebe autoridade adicional.
 
 ## 8. Gate humano de direção permanece obrigatório
 
 ```text
-FIGMA MAKE / EXPLORATION
+DESIGN CREATION
 ↓
 HUMAN REVIEW
 ↓
-DIRECTION APPROVED
+DIRECTION / SOLUTION APPROVED
 ↓
-FINAL FIGMA PRODUCTION
+FINAL DESIGN DELIVERY
+↓
+HUMAN ACCEPTANCE
 ```
 
-DESIGN PRODUCTION RELEASE não equivale a aprovação final de direção nem a aceite final do Figma.
+DESIGN PRODUCTION RELEASE não equivale a aprovação final de direção nem a aceite final da entrega.
 
 ## 9. Limites explícitos
 
@@ -182,14 +192,17 @@ V5 SNAPSHOT
 DESIGN PRODUCTION RELEASE
 → GRANTED
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+EXTERNAL DESIGN CREATION
+→ AUTHORIZED TO EXECUTE
+
+AI-ASSISTED EXPLORATION
+→ OPTIONAL / NOT REQUIRED
 
 HUMAN DIRECTION APPROVAL
-→ NOT_YET_PERFORMED
+→ REQUIRED WHEN APPLICABLE
 
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED
+FINAL DESIGN DELIVERY
+→ REQUIRES HUMAN ACCEPTANCE
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -200,4 +213,4 @@ UXA-102 / V5
 
 ## 11. Próximo movimento legítimo
 
-O próximo movimento permitido é a execução externa de Design, uma Home por vez, iniciando pela leitura do `LEIA-PRIMEIRO`, autoridades comuns e fontes específicas, seguida de Figma Make/exploração e revisão humana.
+O próximo movimento permitido é a execução externa de Design, uma Home por vez, iniciando pela leitura do `LEIA-PRIMEIRO`, Documento Mestre, autoridades comuns e fontes específicas. A criação é da designer; IA pode ser utilizada opcionalmente como apoio. Nenhuma ferramenta específica é requisito do GKR.
