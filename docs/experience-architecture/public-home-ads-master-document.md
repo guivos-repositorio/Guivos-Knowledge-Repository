@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-ADS-MASTER-001
 title: Home Pública — Guivos Ads — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-08-14
 parents:
@@ -62,6 +62,23 @@ A Home é primordialmente B2B. Seus públicos principais incluem:
 O protagonista funcional é o **objetivo comercial legítimo da marca ou parceiro dentro de um contexto Guivos compatível**.
 
 A finalidade econômica predominante do Ads é gerar receita publicitária e comercial para a Guivos. Essa finalidade não autoriza transformar participantes, contexto pessoal protegido, relevância orgânica ou autoridade editorial em mercadoria.
+
+
+## 2.1 Princípio de abertura equivalente
+
+A Home Ads não possui, neste estado, uma pergunta-mãe pública congelada equivalente às Homes Pessoa, O/C, Mall ou Travel.
+
+Isso não é lacuna a ser preenchida pela designer.
+
+O princípio de abertura vigente é:
+
+> **Sua marca dentro do contexto certo.**
+
+e a formulação estrutural superior permanece:
+
+> **O contexto define onde uma marca faz sentido. Ads transforma essa oportunidade em uma solução comercial.**
+
+Qualquer pergunta de Hero criada pela designer deve permanecer `CONTENT_CANDIDATE` até aprovação humana e não pode alterar essa tese.
 
 ## 3. Princípios permanentes
 
@@ -592,3 +609,23 @@ OBJETIVO DA MARCA
 Estado:
 
 > **ARQUITETURA CONCEITUAL E FUNCIONAL DA HOME ADS V1 CONVERGIDA — DOCUMENTO PREPARADO PARA HANDOFF; PROTÓTIPO VISUAL E OPERAÇÃO COMERCIAL NÃO INCLUÍDOS NESTE ESCOPO.**
+
+---
+
+## 15. Contrato de entrada para Design
+
+A designer pode criar livremente identidade visual, tipografia, paleta, composição, grid, mídia, mockups conceituais, interação de qualificação, motion e solução responsiva.
+
+A Home precisa permanecer:
+
+- inequivocamente B2B;
+- contexto-first;
+- orientada a objetivo comercial legítimo;
+- transparente sobre publicidade;
+- simples mesmo quando a operação subjacente for complexa.
+
+Exigem fonte real: preço, CPM/CPC, alcance, inventário, performance, case, parceiro, cliente, disponibilidade comercial e qualquer resultado.
+
+Mockups de superfície podem ser usados como `DESIGN_HYPOTHESIS` ou `PROTOTYPE_PLACEHOLDER`, desde que não pareçam capacidade operacional vigente.
+
+IA é opcional e consome o mesmo pacote governado. Nenhuma ferramenta generativa pode criar automaticamente elegibilidade publicitária, segmentação permitida, preço, alcance ou promessa de performance.
