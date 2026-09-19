@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-V6-AUDIT-001
 title: Homes Públicas — Auditoria de Remediação Tool-Neutral para Design v6
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -108,6 +108,10 @@ Remediado. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` e Handoff específic
 ### R-10 — Pessoa/O-C com estados de auditoria/materialização superados
 
 Remediado para separar Design da Home pública de gates próprios da experiência autenticada.
+
+### R-11 — composição v6 ainda herdava contagem e versões do v5
+
+Remediado. O candidato v6 passa a declarar **27 fontes canônicas** — incluindo `GKR-UX-HOMES-DESIGN-CONSUMPTION-001` como quinta autoridade comum — mais oito guias, totalizando **35 arquivos externos** na futura emissão.
 
 ## 4. Revisão 8/8
 

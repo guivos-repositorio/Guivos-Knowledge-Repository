@@ -124,60 +124,49 @@ Decisão: toda informação não consolidada deve usar uma das classes da seçã
 
 Reclassificação humana: **não é gap**. É liberdade deliberada de Design.
 
-## 6. Pacote fonte v5 por Home
+## 6. Pacote fonte candidato v6 por Home
 
-Quatro autoridades comuns acompanham todas as Homes:
+Cinco autoridades comuns acompanham todas as Homes:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.5.0`;
-2. `GKR-UX-HOMES-GENINPUT-001 v2.0.0`;
-3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0`;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v2.0.0`.
+1. `GKR-UX-HOMES-DESIGN-CONSUMPTION-001 v1.0.0`;
+2. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v2.0.0`;
+3. `GKR-UX-HOMES-GENINPUT-001 v3.0.0`;
+4. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v2.0.0`;
+5. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.0`.
 
 Fontes específicas:
 
 ### Pessoa
-- `GKR-UX-HOME-MASTER-001 v1.0.2`;
+- `GKR-UX-HOME-MASTER-001 v1.1.0`;
 - `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### Organizações e Coletivos
-- `GKR-UX-HOME-OC-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-OC-MASTER-001 v1.1.0`;
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### Mall
-- `GKR-UX-HOME-MALL-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.0.1`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
 
-Contrato corrente que o Source Lock v5 deve explicitar:
-- `MALL-HS-01 BASELINE_PUBLIC` — tese, pergunta-mãe, identidade Guivos e descoberta são base permanente;
-- `MALL-HS-02 COMMERCIAL_DATA_AVAILABLE` — produto/oferta/preço/pontos/marca/parceiro somente com fonte aplicável;
-- `MALL-HS-03 COMMERCIAL_DATA_UNAVAILABLE_OR_ERROR` — ausência não pode virar oferta, estoque, preço ou parceria fictícia;
-- `MALL-HS-04 CAMPAIGN_ACTIVE` — campanha é temporária e não redefine a identidade da Home;
-- `MALL-HS-05 PERSONALIZATION_AUTHORIZED` — recomendação pessoal exige base e autoridade; sem isso, usar descoberta/curadoria geral;
-- `MALL-HS-06 SPONSORED_EXPOSURE` — exposição paga permanece identificada e não se disfarça de relevância orgânica.
+O guia v6 da Home deve explicitar `MALL-HS-01..06`, preservando tese, condições de dados, ausência/erro, campanhas, personalização autorizada e identificação de patrocínio.
 
 ### Travel
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.1`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
 
-Contrato corrente que o Source Lock v5 deve explicitar:
-- `TRAVEL-HS-01 BASELINE_PUBLIC` — pergunta-mãe, identidade Guivos, inspiração e acesso a serviços são a base;
-- `TRAVEL-HS-02 OPERATIONAL_SERVICE` — serviços governados podem ser apresentados sem inferir disponibilidade universal;
-- `TRAVEL-HS-03 DESTINATION_OR_EXPERIENCE_PROVEN` — destino/imagem/experiência apresentados como reais exigem lastro;
-- `TRAVEL-HS-04 OFFER_DATA_AVAILABLE` — preço, pontos, condição e disponibilidade somente quando sustentados;
-- `TRAVEL-HS-05 OFFER_DATA_UNAVAILABLE_OR_ERROR` — ausência/erro não se convertem em tarifa, vaga, parceiro ou condição fictícios;
-- `TRAVEL-HS-06 CAMPAIGN_OR_SPONSORED` — campanha é temporária e patrocínio permanece identificado.
+O guia v6 da Home deve explicitar `TRAVEL-HS-01..06`, preservando baseline pública, serviço operacional, prova de destino/experiência, dados de oferta, indisponibilidade e campanha/patrocínio.
 
 ### Media
-- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1`;
 - `GPA-005 v1.2.0`.
 
 ### Ads
-- `GKR-UX-HOME-ADS-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.1`;
 - `GPA-007 v1.3.0`.
 
 ### Business
 - `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.0`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
 - `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0`;
 - `GPA-004 v1.6.0`.
@@ -185,31 +174,21 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 ### Intelligence
 - `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0`;
 - `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.0`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0`;
 - `GPA-006 v2.0.0`.
 
-O snapshot v5 deve capturar todas as fontes do mesmo commit canônico pós-merge e registrar seus SHAs.
-
 ### 6.9 Fechamento de fontes do candidato
-
-A revisão desta frente verificou a composição do Manifesto v5 contra a branch candidata:
 
 ```text
 HOMES COM MASTER
 → 8 / 8
 
-FONTES CANÔNICAS DO MANIFESTO
-→ 26 / 26 EXISTENTES
+FONTES CANÔNICAS DO MANIFESTO V6
+→ 27 / 27 DECLARADAS
 
-ID DECLARADO × ID REAL
-→ 26 / 26 MATCH
-
-VERSÃO DECLARADA × VERSÃO REAL
-→ 26 / 26 MATCH
-
-GENINPUT HISTÓRICO NO PACOTE OPERACIONAL
-→ 0
+AUTORIDADES COMUNS
+→ 5 / 5
 
 SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE
 → BUSINESS = INCLUDED
@@ -217,16 +196,16 @@ SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE
 
 PESSOA / O-C
 → MASTERS VIGENTES ABSORVEM A VERDADE DE CONSUMO
-→ DOCUMENTOS DE APROFUNDAMENTO PERMANECEM NO GKR, MAS NÃO ENTRAM AUTOMATICAMENTE NO CONTEXTO INICIAL DA IA
+→ APROFUNDAMENTOS PERMANECEM CONSULTÁVEIS, NÃO CARREGADOS POR PADRÃO EM IA
 
-MATERIAL DOCUMENT GAP IDENTIFIED IN SOURCE CLOSURE
+MATERIAL DOCUMENT GAP IDENTIFIED IN SOURCE COMPOSITION
 → 0
 
-FINAL EXACT-HEAD GATE
-→ STILL REQUIRED
+EXACT-HEAD ID / VERSION / PATH / BLOB VALIDATION
+→ REQUIRED BEFORE SNAPSHOT V6
 ```
 
-A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente no contexto de uma IA de apoio.
+A exclusão de aprofundamentos do contexto inicial não os invalida. Eles podem ser consultados deliberadamente para dúvida concreta.
 
 ## 7. Regra de isolamento para IA
 
