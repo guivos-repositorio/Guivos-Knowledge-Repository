@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
@@ -14,6 +14,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
+  - GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
@@ -375,7 +376,7 @@ O estado vigente está detalhado em [Organizações e Coletivos — Estado de UX
 
 Resumo:
 
-> **Atores, autoridades, jobs, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados e Priority Flows autenticados já estão definidos documentalmente. Navegação materializada e wireframes principais autenticados de Organização e Coletivo permanecem não materializados/não iniciados.**
+> **Atores, autoridades, jobs, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados e Priority Flows autenticados já estão definidos documentalmente. A elegibilidade de Navigation Materialization está `PASS / ACTIVE / CANONICAL`; a navegação em si continua não autorizada/não materializada e os wireframes principais permanecem não iniciados.**
 
 Materiais anteriores que afirmavam wireframes principais vigentes ou validação vigente foram reclassificados como registros históricos `superseded`.
 
@@ -391,6 +392,7 @@ Materiais anteriores que afirmavam wireframes principais vigentes ou validação
 | mapa de superfícies autenticadas | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` |
 | mapa de estados autenticados | `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` |
 | fluxos prioritários autenticados | `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001` |
+| elegibilidade de Navigation Materialization | `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001` |
 | Jornada da Organização | `journeys/organization.md` |
 | Jornada do Coletivo | `journeys/collective.md` |
 | Home pública | `public-home-organizations-collectives-master-document.md` |
@@ -411,6 +413,7 @@ fundamentos e papéis
 → mapa lógico de superfícies autenticadas
 → mapa funcional de estados autenticados
 → fluxos prioritários autenticados
+→ elegibilidade de Navigation Materialization — PASS / CANONICAL
 ```
 
 Este commit **não autoriza nem materializa** a continuação. Permanecem deliberadamente diferidos para gates posteriores:

@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.39.0
+version: 3.40.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-18
 depends_on:
@@ -13,6 +13,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
+  - GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
   - GKR-UX-PER002-MAT-ELIGIBILITY-001
   - GKR-UX-PER002-DESIGN-AUTH-001
   - GKR-UX-PER002-DESIGN-DELIVERY-001
@@ -37,7 +38,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.39.0
+→ 3.40.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -62,7 +63,11 @@ O/C AUTHENTICATED STATE MAP
 O/C PRIORITY FLOWS
 → GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
 → DEFINED / CANONICAL DOCUMENTARY
-→ REQUIRES SEPARATE AUTHORIZATION
+
+O/C NAVIGATION MATERIALIZATION ELIGIBILITY
+→ GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0
+→ PASS / ACTIVE / CANONICAL
+→ MATERIALIZATION REQUIRES SEPARATE AUTHORIZATION
 
 BLOCO 2 — G / H / I
 → G COMPLETED / UPDATE_APPLIED
@@ -459,14 +464,15 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.39.0** |
+| Registro do Estado Atual | **3.40.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
 | O/C Authenticated Surface Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0** |
 | O/C Authenticated State Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0** |
 | O/C Priority Flows | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** |
-| O/C Navigation Materialization | **NOT MATERIALIZED** |
+| O/C Navigation Materialization Eligibility | **PASS / ACTIVE / CANONICAL / v1.0.0** |
+| O/C Navigation Materialization | **NOT AUTHORIZED / NOT MATERIALIZED** |
 | O/C Authenticated Wireframes | **NOT STARTED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
 | Baseline final pós-auditoria | **CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a** |
