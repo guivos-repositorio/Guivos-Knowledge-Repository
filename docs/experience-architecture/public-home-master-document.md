@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.2
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-08
 normative: false
@@ -1372,3 +1372,36 @@ HOME PÚBLICA
 Estado desta versão:
 
 > **MASTER RECONCILIADO COM AS AUTORIDADES VIGENTES — CONTEÚDO PRESERVADO E ENRIQUECIDO — Q FUNCTIONAL DEFINITION CONSOLIDATED: PRIMEIRA RESPONSABILIDADE AUTENTICADA = CONTINUAÇÃO AUTENTICADA DE PER-002 / PRIMEIRA SUPERFÍCIE DISTINTA DOWNSTREAM = PER-003 — MATERIALIZAÇÃO NOVA NÃO AUTORIZADA POR ESTE DOCUMENTO.**
+
+---
+
+## 39. Contrato explícito de entrada para Design
+
+Este Master, junto às autoridades comuns do pacote vigente, é suficiente para orientar a compreensão inicial da designer sem reconstrução do histórico.
+
+### 39.1 Liberdade criativa
+
+A designer pode definir livremente identidade visual, tipografia, paleta, fotografia, vídeo, ilustração, iconografia, composição, grid, ritmo, componentes, motion, microinterações, agrupamento físico dos movimentos e solução responsiva.
+
+```text
+11 MOVIMENTOS
+→ FUNÇÕES DE SIGNIFICADO
+
+SEÇÕES / DOBRAS / COMPOSIÇÃO
+→ DESIGNER
+
+VISUAL IDENTITY
+→ NÃO CANONICALIZADA PELO GKR
+```
+
+### 39.2 Dados reais, placeholders e questões abertas
+
+Pessoa, Organização, Coletivo, parceiro, métrica, case, depoimento, país, resultado, disponibilidade ou prova apresentados como reais exigem fonte aplicável.
+
+Histórias, imagens e evidências provisórias podem ser usadas somente como placeholder claramente identificado.
+
+Copy pública final, composição integral do rodapé, disponibilidade operacional e decisões de lançamento permanecem abertas quando não congeladas.
+
+### 39.3 Uso de IA
+
+IA é ferramenta opcional da designer. Quando utilizada, consome o mesmo Master e o mesmo pacote governado; não recebe autoridade adicional e qualquer output permanece hipótese/candidato até revisão humana.
