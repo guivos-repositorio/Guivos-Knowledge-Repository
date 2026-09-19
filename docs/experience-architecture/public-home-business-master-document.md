@@ -29,7 +29,7 @@ Ele reúne em uma única arquitetura pública:
 - os contratos de autoridade;
 - a expressão comercial;
 - a conversão global;
-- os movimentos que deverão orientar o futuro Source Lock e Design.
+- os movimentos que orientam o Source Lock complementar e o Design externo.
 
 Este documento **não é**:
 
@@ -41,15 +41,18 @@ Este documento **não é**:
 - especificação técnica do configurador;
 - handoff para Design.
 
-A progressão governada passa a ser:
+Estado governado atual:
 
 ```text
 ARQUITETURA NARRATIVA      → CONVERGIDA
 CONTRATOS DE AUTORIDADE    → CONVERGIDOS
 CONVERSÃO GLOBAL           → CONVERGIDA / REFINADA
-DOCUMENTO MESTRE           → CONVERGIDO NESTE DOCUMENTO
-SOURCE LOCK                → PRÓXIMA ETAPA
-DESIGN                     → NÃO AUTORIZADO
+DOCUMENTO MESTRE           → ACTIVE / DESIGN-INPUT-READY
+SOURCE LOCK                → ACTIVE / COMPLEMENTARY
+DESIGN PRODUCTION RELEASE  → GRANTED BY COMMON AUTHORITY
+DESIGN CREATION            → DESIGNER-LED / MANUAL-FIRST
+AI                         → OPTIONAL
+PRODUCT ENGINEERING        → NOT RELEASED
 ```
 
 ## 2. Precedência deste Documento Mestre
