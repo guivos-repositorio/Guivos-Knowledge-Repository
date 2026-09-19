@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Intelligence
 status: active
-version: 1.1.3
+version: 1.1.4
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-MASTER-001
@@ -24,27 +24,17 @@ Este documento consolida o **Source Lock da Home Pública do Guivos Intelligence
 
 Seu papel é:
 
-- congelar as fontes vigentes que podem governar a futura materialização da Home Intelligence;
+- congelar as fontes vigentes que governam a produção externa de Design da Home Intelligence e as futuras etapas autorizadas;
 - eliminar ambiguidades entre formulações anteriores e a copy pública efetivamente aprovada;
 - registrar as invariantes que não podem ser reinterpretadas por Design, UX, UI, ferramentas generativas ou implementação futura;
 - separar claramente o que está congelado do que continua aberto;
 - impedir que lacunas visuais, tecnológicas ou operacionais sejam preenchidas por inferência.
 
-Este Source Lock **não é**:
-
-- autorização de Design;
-- wireframe;
-- UI;
-- protótipo;
-- handoff para ferramenta generativa;
-- especificação técnica;
-- prova de implementação;
-- prova de performance;
-- autorização de publicação.
+Este Source Lock **não é** o ato que concede Design Release; o release comum vigente já está `GRANTED` para produção externa pela designer. O Source Lock também não é wireframe, UI, protótipo, ferramenta generativa, especificação técnica, prova de implementação, prova de performance ou autorização de publicação.
 
 Regra:
 
-> **Source Lock congela a fonte. Não autoriza, por si só, a materialização.**
+> **Source Lock congela a fonte. O Design externo é regido pelo release comum vigente; implementação e publicação permanecem gates separados.**
 
 ## 2. Checkpoint do Source Lock
 
@@ -82,14 +72,14 @@ GPA-006 v2.0.0
 
 Objetivo do lock:
 
-> preservar uma fonte pública única, coerente e auditável para a futura materialização da Home Intelligence, sem reabrir decisões já validadas nem antecipar tecnologia, Design ou operação ainda não comprovados.
+> preservar uma fonte pública única, coerente e auditável para a produção externa vigente de Design da Home Intelligence, sem reabrir decisões já validadas nem antecipar tecnologia ou operação ainda não comprovadas.
 
 ## 3. Pacote de fontes autorizado
 
-Para qualquer futura materialização da Home Intelligence, o pacote inicial de autoridade deve ser restrito a:
+Para a produção externa de Design da Home Intelligence, o pacote específico de autoridade deve ser restrito a:
 
 1. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001` — este Source Lock;
-2. `GKR-UX-HOME-INTELLIGENCE-MASTER-001` v0.2.3 — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+2. `GKR-UX-HOME-INTELLIGENCE-MASTER-001` v0.2.4 — `docs/experience-architecture/public-home-intelligence-master-document.md`;
 3. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001` v0.2.1 — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 4. `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001` v1.0.0 — `docs/product-architecture/intelligence-product-source-lock.md`;
 5. `GPA-006` v2.0.0 — `docs/product-architecture/intelligence.md`;
@@ -260,7 +250,7 @@ M05
 → DEMONSTRA OS RESULTADOS
 ```
 
-A futura materialização pode agrupar movimentos, desde que preserve significado, sequência de compreensão e capacidade de reconhecimento de cada função.
+A materialização de Design pode agrupar movimentos, desde que preserve significado, sequência de compreensão e capacidade de reconhecimento de cada função.
 
 ## 8. Copy pública congelada semanticamente
 
@@ -377,7 +367,7 @@ Invariante:
 
 ## 11. Direção visual permitida
 
-A futura materialização pode demonstrar:
+A materialização de Design pode demonstrar:
 
 - conexões;
 - repetições;
