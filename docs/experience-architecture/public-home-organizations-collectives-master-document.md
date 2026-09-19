@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -32,7 +32,8 @@ related:
   - journeys/organization.md
   - journeys/collective.md
 normative: false
-maturity: documentally_rebuilt_pre_materialization_under_full_corpus_audit
+maturity: reconciled_public_home_architecture_source_readiness_hardening
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
 ---
 
 # Home Pública — Organizações e Coletivos
@@ -1663,53 +1664,38 @@ Ideia fundamental:
 
 ---
 
-## 29. Limites de materialização e de checkpoint
+## 29. Limites de materialização e estado corrente
 
-Esta autoridade encerra-se na arquitetura narrativa, semântica e funcional pública.
+Esta autoridade encerra-se na arquitetura narrativa, semântica e funcional da **Home pública** de Organizações e Coletivos. Ela não governa a experiência autenticada O/C nem Product Engineering.
 
-Permanecem bloqueados até autorização explícita posterior ao fechamento dos gates aplicáveis:
-
-- wireframe;
-- Figma;
-- SVG;
-- protótipo;
-- grid e layout;
-- tipografia;
-- fotografia e vídeo finais;
-- sistema visual;
-- componentes;
-- microinterações;
-- implementação;
-- disponibilidade operacional;
-- preços ou planos;
-- cadastro;
-- onboarding;
-- Marketing/GTM;
-- UXA-102/V5;
-- primeira tela autenticada da Pessoa após a Home;
-- qualquer materialização autenticada de Organização ou Coletivo.
+O estado posterior à auditoria integral é:
 
 ```text
-PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
-→ BLOCKED UNTIL AUDIT CLOSES
-→ NÃO DEFINIR NESTE LOTE
+AUDITORIA INTEGRAL DO GKR
+→ COMPLETED / PASS
+
+PUBLIC HOME O/C MASTER
+→ THIS AUTHORITY / RECONCILED
+
+COMMON DESIGN PRODUCTION RELEASE
+→ GRANTED
+
+FINAL SOURCE READINESS AUDIT
+→ IN_PROGRESS
+
+EXTERNAL DESIGNER START
+→ DEFERRED UNTIL PASS
+
+O/C AUTHENTICATED HIGH-FIDELITY AUTHORIZATION
+→ NOT_GRANTED
+
+PRODUCT ENGINEERING
+→ PAUSED / NOT RELEASED
 ```
 
-O histórico contém decisões procedimentais diferentes sobre Design e wireframe. Elas pertencem aos respectivos checkpoints.
+A designer externa, quando liberada, poderá definir grid, layout, tipografia, fotografia, vídeo, sistema visual, componentes, microinterações e demais escolhas criativas da Home pública. Essas escolhas **não são bloqueios documentais nem autoridade deste Master**.
 
-Durante a auditoria integral vigente:
-
-```text
-HANDOFF ANTIGO
-SOURCE LOCK ANTIGO
-PACOTE GENERATIVO ANTIGO
-SNAPSHOT ANTIGO
-DECISÃO DE DESIGN DE CHECKPOINT ANTERIOR
-
-≠ AUTORIZAÇÃO ATUAL DE MATERIALIZAÇÃO
-```
-
-Qualquer futura retomada de Design exige novo ato governado e reconciliação com este Master e com o estado pós-auditoria.
+A experiência autenticada permanece governada por autoridades próprias e não pode ser importada para a Home pública por conveniência visual.
 
 Uma futura materialização deve ser rejeitada ou revisada se:
 
@@ -1733,6 +1719,8 @@ Uma futura materialização deve ser rejeitada ou revisada se:
 - depender de animação ou gesto para informação essencial;
 - bloquear scroll ou usar dark patterns;
 - reduzir Organizações a empresas ou Coletivos a projetos sociais.
+
+A autorização de Design da Home pública **não** autoriza materialização high-fidelity da experiência autenticada O/C nem qualquer implementação.
 
 ---
 
@@ -1811,4 +1799,4 @@ HOME O/C
 
 Estado deste documento:
 
-> **DOCUMENTO MESTRE RECONSTRUÍDO DOCUMENTALMENTE — MATERIALIZAÇÃO NÃO AUTORIZADA; AUDITORIA INTEGRAL AINDA EM CURSO.**
+> **DOCUMENTO MESTRE RECONCILIADO — AUDITORIA INTEGRAL CONCLUÍDA; DESIGN PRODUCTION RELEASE COMUM CONCEDIDO; INÍCIO DA DESIGNER EXTERNA POSTERGADO ATÉ O PASS DA PRONTIDÃO FINAL DAS FONTES.**
