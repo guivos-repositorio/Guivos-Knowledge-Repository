@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.46.0
+id: ROADMAP-13.47.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.46.0
+version: 13.47.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -12,6 +12,8 @@ related:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
@@ -165,7 +167,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | O/C wireframes low-fidelity | **AUTHORIZATION GRANTED / DELIVERY v0.1.0 EXECUTED / VALIDATION v1.0.0 PASS / CURRENT REFERENCE = DELIVERY + VALIDATION** |
 | O/C high-fidelity eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0 / AUTHORIZATION NOT_GRANTED** |
 | GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION** |
-| Design das Homes públicas | **DESIGN PRODUCTION RELEASE GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0 / FIGMA MAKE AUTHORIZED TO EXECUTE** |
+| Design das Homes públicas | **DESIGNER-FIRST / DESIGN PRODUCTION RELEASE GRANTED / SOURCE COMPLETENESS v6 CANDIDATE PASS / AI OPTIONAL** |
 | O/C autenticado high-fidelity | **ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED / SEPARATE GOVERNED GATE** |
 
 Inventário físico corrente após F-016-A:
@@ -1910,62 +1912,67 @@ PRODUCT ENGINEERING
 
 Navigation Materialization foi promovida canonicamente após Surface Map + State Map + Priority Flows + eligibility PASS. Os Authenticated Wireframes low-fidelity foram posteriormente autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O ciclo low-fidelity está fechado; uma eventual frente high-fidelity depende primeiro de adjudicação própria de elegibilidade. High-fidelity UI, protótipo e Product Engineering continuam não autorizados.
 
-## Public Homes — Design Production Readiness / Figma
+## Public Homes — finalização das fontes para Designer e IA opcional
 
-Prioridade temporária aberta para preparar a contratação e produção definitiva das oito Homes públicas em Figma.
-
-Esta frente não prescreve identidade visual. Criatividade, originalidade e imaginação da designer são parte deliberada do processo.
+A prioridade corrente é deixar as oito Homes **100% prontas documentalmente antes do início do trabalho criativo da designer**, sem produzir direção visual no GKR.
 
 ```text
 GKR
-→ SIGNIFICADO / FUNÇÃO / LIMITES / VERDADE
+→ SIGNIFICADO / FUNÇÃO / LIMITES / VERDADE / EVIDÊNCIA
 
-DESIGN
+DESIGNER
 → EXPRESSÃO VISUAL / CRIATIVA
+→ MANUAL FIRST-CLASS
 
-FIGMA MAKE
-→ EXPLORAÇÃO / PROTÓTIPO
+AI
+→ OPTIONAL
 
-HUMAN GATE
-→ APROVA DIREÇÃO ANTES DO FIGMA DEFINITIVO
+GKR-CREATED FIGMA
+→ NONE
 ```
 
-Sequência governada:
+Sequência governada atual:
 
-1. reconciliar Handoff pós-auditoria;
-2. expandir template generativo para oito Homes;
-3. formalizar contrato de prontidão e aceite Figma;
-4. preparar Manifesto v5;
-5. integrar changeset em `main` mediante gates próprios;
-6. capturar `main` pós-merge;
-7. revalidar 26/26 fontes;
-8. gerar oito Source Locks operacionais;
-9. materializar snapshot externo v5 — CONCLUÍDO;
-10. validar isolamento e reproduzibilidade — CONCLUÍDO;
-11. registrar snapshot v5 na autoridade corrente — CONCLUÍDO / INTEGRADO EM `main`;
-12. Semantic + Mechanical no HEAD de registro;
-13. revisão independente;
-14. adjudicar findings, se houver;
-15. ato humano explícito de Design Production Release — CONCLUÍDO / GRANTED;
-16. iniciar Figma Make / prototipação de Design — AUTHORIZED / NOT_STARTED.
+1. reafirmar designer-first / IA opcional — CONCLUÍDO;
+2. abandonar exploração Figma criada pelo GKR como referência — CONCLUÍDO;
+3. abrir auditoria C1–C15 — CONCLUÍDO;
+4. remover gate obrigatório de ferramenta generativa — CONCLUÍDO;
+5. absorver contrato determinístico em Mall Master — CONCLUÍDO;
+6. absorver contrato determinístico em Travel Master — CONCLUÍDO;
+7. reconciliar Business Master com Source Lock vigente — CONCLUÍDO;
+8. reconciliar Intelligence Master com Source Lock vigente — CONCLUÍDO;
+9. reauditar 8/8 Homes como pacotes completos — CANDIDATE PASS / 120 OF 120;
+10. definir pacote v6 candidato — CONCLUÍDO;
+11. sincronizar Estado / Roadmap / navegação — EM CURSO NESTA FRENTE;
+12. executar Semantic + Mechanical no HEAD final — PENDENTE;
+13. executar revisão independente no HEAD final — PENDENTE;
+14. adjudicar findings, se houver — PENDENTE;
+15. decidir separadamente Ready for Review / merge — NÃO AUTORIZADO;
+16. após integração, decidir separadamente emissão/materialização do snapshot v6 — NÃO AUTORIZADO.
 
 ```text
 V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
+→ FROZEN / HISTORICAL
 → delivery/design-handoff-v5
-→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
-→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
-→ 34 FILES
-→ 26 / 26 CANONICAL BLOBS MATCH
+→ f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
+
+SOURCE COMPLETENESS
+→ C1–C15 CANDIDATE PASS
+→ 8 / 8 HOMES
+→ 120 / 120
+
+V6 PACKAGE CANDIDATE
+→ 27 CANONICAL SOURCES
+→ 8 READ-FIRST GUIDES
+→ 35 FILES TOTAL
+→ SNAPSHOT NOT EMITTED
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED
+→ EXTERNAL DESIGNER PRODUCTION
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
 
 O/C HIGH-FIDELITY DESIGN
 → ELIGIBILITY PASS PRESERVED
