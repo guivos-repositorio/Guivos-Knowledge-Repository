@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-MEDIA-MASTER-001
 title: Home Pública — Guivos Media — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
 last_updated: 2026-08-13
 parents:
@@ -10,6 +10,7 @@ parents:
   - GPA-005
   - GKR-STATE-001
 related:
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
   - GPA-001
   - GPA-003
   - GPA-004
@@ -163,13 +164,13 @@ A Home deve funcionar em três maturidades:
 
 ## 8. Guardrails para Design, UX e UI
 
-Preservar hierarquia editorial, significado antes de volume, mídia com propósito, variação de escala e densidade, pessoas em contexto, tipografia como parte da narrativa, metadados secundários e identidade Guivos com expressão própria do Media.
+Preservar hierarquia editorial, significado antes de volume, mídia com propósito, pessoas em contexto, metadados com função clara e distinção entre Media, Blog, feed e streaming.
 
-**Card é componente, não arquitetura.** Evitar cardificação e grids uniformes como linguagem dominante.
+A forma de expressar essa hierarquia — escala, densidade, tipografia, composição, grid, cards ou outros recursos — é Design-owned. Nenhum desses recursos é obrigatório por este Master.
 
-Princípio responsivo: **preservar hierarquia e significado, não geometria**. Mobile não é desktop simplesmente empilhado.
+Princípio responsivo: **preservar hierarquia e significado, não geometria**.
 
-Acessibilidade e performance são requisitos desde a concepção, incluindo contraste, teclado, foco, alternativas textuais, legendas/transcrições quando aplicáveis, redução de movimento, mídia responsiva e carregamento progressivo.
+Acessibilidade e performance permanecem requisitos funcionais.
 
 ## 9. Não escopo e modelos rejeitados
 
@@ -179,7 +180,7 @@ A solução deve ser revista se parecer predominantemente portal de notícias, s
 
 ## 10. Liberdade e critérios de aceite
 
-Design, UX e UI podem definir composição, grid, dobras, agrupamento dos movimentos, tipografia, fotografia, vídeo, paleta, motion, componentes, menu, busca, microinterações e breakpoints.
+Design, UX e UI possuem liberdade integral para definir composição, grid, dobras, agrupamento dos movimentos, tipografia, fotografia, vídeo, paleta, motion, componentes, menu, busca, microinterações, breakpoints e linguagem visual.
 
 O documento define **o que a experiência precisa significar, fazer e preservar**; a equipe define **como materializar**.
 
@@ -212,4 +213,4 @@ PROVOCAR → DAR SIGNIFICADO → MOSTRAR → PERMITIR ESCOLHER → CURAR
 
 Estado:
 
-> **ARQUITETURA CONCEITUAL E FUNCIONAL DA HOME V1 CONVERGIDA — DOCUMENTO PREPARADO PARA HANDOFF; PROTÓTIPO VISUAL NÃO INCLUÍDO NESTE ESCOPO.**
+> **ARQUITETURA CONCEITUAL E FUNCIONAL DA HOME V1 CONVERGIDA — READY FOR TOOL-NEUTRAL DESIGN CONSUMPTION — VISUAL EXPRESSION DESIGN-OWNED.**

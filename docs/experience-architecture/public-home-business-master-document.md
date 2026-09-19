@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-08-16
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
@@ -14,41 +14,42 @@ depends_on:
   - GKR-STATE-001
   - ROADMAP-12.79.0
 normative: true
+related:
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
 ---
 
 # Documento Mestre — Home Pública — Guivos Business
 
 ## 1. Finalidade
 
-Este documento consolida o **Checkpoint 8 — Documento Mestre da Home Pública do Guivos Business**.
+Este documento consolida o Documento Mestre da Home Pública do Guivos Business.
 
-Ele reúne em uma única arquitetura pública:
+Ele reúne narrativa, contratos de autoridade, expressão comercial, conversão global e movimentos que a designer deve compreender antes de criar.
 
-- a narrativa da Home;
-- os contratos de autoridade;
-- a expressão comercial;
-- a conversão global;
-- os movimentos que deverão orientar o futuro Source Lock e Design.
+O Source Lock Business já existe e permanece autoridade complementar vigente:
 
-Este documento **não é**:
+`GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0`.
 
-- Source Lock;
-- wireframe;
-- UI;
-- protótipo;
-- especificação de preços finais;
-- especificação técnica do configurador;
-- handoff para Design.
-
-A progressão governada passa a ser:
+Este Master não é wireframe, UI, protótipo, especificação de preços finais, especificação técnica do configurador ou arquivo de Design.
 
 ```text
-ARQUITETURA NARRATIVA      → CONVERGIDA
-CONTRATOS DE AUTORIDADE    → CONVERGIDOS
-CONVERSÃO GLOBAL           → CONVERGIDA / REFINADA
-DOCUMENTO MESTRE           → CONVERGIDO NESTE DOCUMENTO
-SOURCE LOCK                → PRÓXIMA ETAPA
-DESIGN                     → NÃO AUTORIZADO
+ARQUITETURA NARRATIVA
+→ CONVERGIDA
+
+CONTRATOS DE AUTORIDADE
+→ CONVERGIDOS
+
+CONVERSÃO GLOBAL
+→ CONVERGIDA / REFINADA
+
+DOCUMENTO MESTRE
+→ ACTIVE
+
+SOURCE LOCK
+→ ACTIVE / GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0
+
+DESIGN CONSUMPTION
+→ TOOL-NEUTRAL / DESIGN-OWNED EXPRESSION
 ```
 
 ## 2. Precedência deste Documento Mestre
@@ -361,22 +362,23 @@ A Home deve comunicar positivamente aquilo que o Intelligence entrega.
 
 As limitações de causalidade, dados internos empresariais, privacidade e individualidade continuam normativamente preservadas por `GKR-UX-HOME-BUSINESS-AUTHORITY-001`, mas não precisam dominar a copy pública.
 
-## 15. Direção visual obrigatória para o futuro Design
+## 15. Importância narrativa do Intelligence — expressão visual Design-owned
 
-O Movimento Intelligence deve ser prioritariamente demonstrado por uma representação visual do produto, incluindo conceitos como:
+O Movimento Intelligence precisa tornar perceptível o valor de compreender participação, recorrência, utilização, interesses agregados e movimentos ao longo do tempo.
 
-- dashboard;
-- KPIs;
-- gráficos;
-- evolução temporal;
-- participação;
-- utilização;
-- recorrência;
-- tendências;
-- interesses agregados;
-- movimentos e distribuições.
+A designer decide **como** demonstrar isso.
 
-O Documento Mestre não congela o dashboard final, métricas exatas ou layout.
+Dashboard, KPIs, gráficos, evolução temporal, distribuições, cards, relações, narrativas visuais ou qualquer outra forma são **exemplos admissíveis, não requisitos**.
+
+```text
+CANONICAL
+→ O VALOR E A FUNÇÃO DO INTELLIGENCE
+
+DESIGN_CREATIVE
+→ A FORMA VISUAL DE TORNAR ESSE VALOR COMPREENSÍVEL
+```
+
+Nenhuma métrica, dado ou performance pode ser inventado para preencher a solução.
 
 ## 16. CTA para Guivos Intelligence
 
@@ -612,7 +614,7 @@ INCENTIVOS QUE RECONHECEM, ESTIMULAM E ABREM POSSIBILIDADES
 ↓
 ECOSSISTEMA DE POSSIBILIDADES
 ↓
-INTELLIGENCE VISUAL
+INTELLIGENCE — COMPREENSÃO E LEITURAS ÚTEIS
 ↓
 PLANOS E COMPARAÇÃO
 ↓
@@ -658,13 +660,19 @@ Este Documento Mestre não:
 - define SLA;
 - congela entitlements;
 - define disponibilidade concreta por país/moeda;
-- cria Source Lock;
-- autoriza Design.
+- substitui o Source Lock vigente;
+- prescreve identidade visual, dashboard, layout ou ferramenta.
 
-## 28. Próximo estágio
+## 28. Consumo corrente
 
-Com este Documento Mestre validado, a próxima etapa governada é:
+O próximo estágio não é criar outro Source Lock.
 
-> **SOURCE LOCK — HOME GUIVOS BUSINESS**
+A designer deve consumir, em conjunto:
 
-O Source Lock deverá congelar a fonte pública aprovada para implementação e Design, sem reabrir decisões já consolidadas salvo nova autorização explícita.
+1. este Documento Mestre;
+2. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0`;
+3. contratos de autoridade e conversão listados no pacote;
+4. autoridades comuns tool-neutral;
+5. o `00-LEIA-PRIMEIRO` do pacote v6 quando emitido.
+
+A expressão visual permanece livre; produto, autoridade, planos, claims e dados permanecem governados.

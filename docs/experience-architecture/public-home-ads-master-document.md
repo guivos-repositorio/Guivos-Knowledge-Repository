@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-ADS-MASTER-001
 title: Home Pública — Guivos Ads — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
 last_updated: 2026-08-14
 parents:
@@ -10,6 +10,7 @@ parents:
   - GPA-007
   - GKR-STATE-001
 related:
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
   - GLPA-001
   - GPA-001
   - GPA-002
@@ -498,25 +499,15 @@ A Home não deve apresentar parâmetros candidatos de preço, CPM ou CPC como of
 
 ## 11. Guardrails para Design, UX e UI
 
-A Home Ads deve pertencer à família visual Guivos sem copiar a arquitetura narrativa das demais Homes.
+A Home Ads deve ser reconhecível como Guivos sem copiar a arquitetura narrativa das demais Homes.
 
-Pode ser:
+Ela deve tornar simples a compreensão da oportunidade comercial, dos contextos, das soluções, dos formatos, da autoridade da superfície anfitriã e da qualificação progressiva.
 
-- mais curta;
-- mais comercial;
-- mais concreta;
-- orientada a objetivos;
-- baseada em demonstrações de superfícies;
-- visualmente tecnológica sem parecer dashboard adtech;
-- simples o suficiente para que um anunciante compreenda a oportunidade sem conhecer a taxonomia interna da Guivos.
+Comprimento, densidade, composição, estética tecnológica ou não tecnológica, mockups, tipografia, grid, mídia e linguagem visual são decisões da designer. Nenhuma estética adtech, dashboard ou direção visual específica é obrigatória.
 
-**Mesma marca não significa mesma arquitetura narrativa.**
+Demonstrações conceituais de inventário são permitidas quando claramente tratadas como exemplo e não como capacidade operacional comprovada.
 
-A solução pode mostrar mockups ou demonstrações conceituais de inventário, desde que sejam identificados como exemplo quando não representarem capacidade operacional existente.
-
-Princípio responsivo: **preservar hierarquia e significado, não geometria**.
-
-Acessibilidade e performance são requisitos desde a concepção.
+Princípio responsivo: preservar hierarquia e significado. Acessibilidade e performance permanecem requisitos funcionais.
 
 ## 12. Não escopo e modelos rejeitados
 
@@ -551,7 +542,7 @@ A solução deve ser revista se parecer predominantemente:
 
 ## 13. Liberdade e critérios de aceite
 
-Design, UX e UI podem definir composição, grid, dobras, agrupamento dos movimentos, tipografia, fotografia, vídeo, paleta, motion, componentes, navegação, microinterações e breakpoints.
+Design, UX e UI possuem liberdade integral para definir composição, grid, dobras, agrupamento dos movimentos, tipografia, fotografia, vídeo, paleta, motion, componentes, navegação, microinterações, breakpoints e linguagem visual.
 
 O documento define **o que a experiência precisa significar, fazer e preservar**; a equipe define **como materializar**.
 
@@ -591,4 +582,4 @@ OBJETIVO DA MARCA
 
 Estado:
 
-> **ARQUITETURA CONCEITUAL E FUNCIONAL DA HOME ADS V1 CONVERGIDA — DOCUMENTO PREPARADO PARA HANDOFF; PROTÓTIPO VISUAL E OPERAÇÃO COMERCIAL NÃO INCLUÍDOS NESTE ESCOPO.**
+> **ARQUITETURA CONCEITUAL E FUNCIONAL DA HOME ADS V1 CONVERGIDA — READY FOR TOOL-NEUTRAL DESIGN CONSUMPTION — OPERAÇÃO COMERCIAL CONTINUA SUJEITA A FONTES E GATES PRÓPRIOS.**

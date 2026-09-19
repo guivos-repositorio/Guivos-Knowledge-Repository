@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-MALL-MASTER-001
 title: Home Pública — Guivos Mall — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
 last_updated: 2026-08-12
 parents:
@@ -10,6 +10,7 @@ parents:
   - GPA-002
   - GKR-STATE-001
 related:
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
   - GPA-002
   - GPA-003
   - GPA-004
@@ -26,7 +27,7 @@ A Home do Mall é uma apresentação pública especializada de uma capacidade da
 
 Este documento governa **somente a Home do Guivos Mall**.
 
-Ele não materializa wireframe, UI, protótipo, frontend, backend ou implementação e não autoriza automaticamente nenhuma dessas etapas.
+Ele não materializa wireframe, UI, protótipo, frontend, backend ou implementação. A criação visual externa é Design-owned e consome este Master sob o contrato comum tool-neutral.
 
 ## 2. Premissa central
 
@@ -800,6 +801,6 @@ Ele:
 - protege transparência entre destaque, recomendação, oferta e patrocínio;
 - estabelece prova e confiança sem alegações artificiais de escala;
 - mantém Página de Produto, Perfil, Carrinho e Checkout fora do escopo;
-- não autoriza wireframe, protótipo, UI ou implementação.
+- não cria wireframe, protótipo, UI ou implementação; a expressão visual é responsabilidade externa da designer.
 
-Qualquer materialização posterior requer decisão própria e não decorre automaticamente da existência deste documento.
+O uso deste Master pela designer segue o pacote tool-neutral vigente. Implementação e operação continuam dependentes de gates próprios.

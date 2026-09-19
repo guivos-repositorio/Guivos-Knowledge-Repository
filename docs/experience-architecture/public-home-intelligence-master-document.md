@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
 status: draft
-version: 0.1.1
+version: 0.2.0
 owner: Experience Architecture
 last_updated: 2026-08-19
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -12,6 +12,9 @@ depends_on:
   - GKR-UX-HOMES-OUTCOME-001
   - GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
 related:
+  - GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
+  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
   - GKR-INTELLIGENCE-HOME-CONTINUITY-001
   - GAI-001
   - GAI-002
@@ -68,17 +71,19 @@ HOME PÚBLICA INTELLIGENCE v1
 
 ARQUITETURA NARRATIVA
 → v0.2.1
-→ COPY DE REFERÊNCIA CORRIGIDA
 
 DOCUMENTO MESTRE
 → ESTE ARTEFATO
-→ v0.1.1
+→ v0.2.0
 
 HOME SOURCE LOCK
-→ NÃO CRIADO
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0 / ACTIVE
 
-WIREFRAME / UI / PROTÓTIPO / DESIGN HANDOFF
-→ NÃO INICIADOS NESTE FLUXO
+DESIGN HANDOFF ESPECÍFICO
+→ GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0 / ACTIVE
+
+DESIGN CONSUMPTION
+→ TOOL-NEUTRAL / VISUAL EXPRESSION DESIGN-OWNED
 ```
 
 ## 3. Definição superior preservada
@@ -597,32 +602,18 @@ NECESSIDADE
 
 ## 15. Papel dos elementos visuais
 
-A Home pode usar recursos visuais quando eles ajudam a explicar entrega, relação, sequência, comparação ou resultado.
+A Home pode usar recursos visuais quando ajudarem a explicar entrega, relação, sequência, comparação ou resultado.
 
-São admissíveis conceitualmente:
+KPIs, indicadores, mini gráficos, variações, tendências, distribuições, comparações, cards, fluxos, redes conceituais ou escadas de interpretação são **exemplos admissíveis**, não obrigação visual.
 
-- KPIs e indicadores;
-- mini gráficos;
-- variação entre períodos;
-- tendência;
-- distribuição;
-- comparação agregada;
-- concentração;
-- mudança de padrão;
-- movimento emergente;
-- lacunas;
-- cards de insight;
-- organogramas;
-- fluxos;
-- sequências;
-- redes conceituais;
-- escadas de interpretação.
+A designer pode escolher outras formas desde que o significado permaneça compreensível.
 
-Guardrail:
+```text
+VISUAL EXAMPLE
+≠ REQUIRED UI PATTERN
+```
 
-> **Visual explicativo ≠ wireframe.**
-
-Quando os dados não forem reais, precisam permanecer claramente como **representações conceituais de tipo de leitura**, nunca como prova de operação ou performance.
+Quando dados não forem reais, devem permanecer claramente conceituais e nunca funcionar como prova de operação ou performance.
 
 ## 16. Guardrails mestres
 
@@ -681,23 +672,11 @@ BUSINESS
 
 > **Intelligence conecta autoridades. Não as absorve.**
 
-## 17. O que este Documento Mestre não autoriza
+## 17. O que este Documento Mestre não redefine
 
-A criação deste documento não autoriza automaticamente:
+Este Master não redefine o Product Source Lock, o Home Source Lock, autoridade de Journey ou Business, pricing, operação técnica, uso de dados individuais ou estado de tecnologias como Neo4j, GraphRAG, GDS, Power BI, Guivos.ai e Grafo Global.
 
-- Home Source Lock;
-- wireframe;
-- UI;
-- protótipo;
-- Figma;
-- prompt generativo de Design;
-- implementação front-end;
-- integração técnica;
-- publicação comercial;
-- pricing;
-- promessa de operação de Neo4j, GraphRAG, GDS, Power BI, Guivos.ai ou Grafo Global;
-- uso de dados individuais fora das autoridades previstas;
-- promoção silenciosa de estado global.
+Ele também não cria arquivo Figma, wireframe, protótipo ou implementação. A designer materializa a expressão visual externamente sob o contrato comum tool-neutral.
 
 ## 18. Itens ainda não congelados
 
@@ -715,18 +694,24 @@ Até o Home Source Lock, permanecem refináveis sem alterar a arquitetura:
 
 Esses itens não reabrem a identidade nem os onze movimentos já convergidos.
 
-## 19. Critério de passagem
+## 19. Critério de consumo corrente
 
-Este Documento Mestre considera a arquitetura narrativa **conceitualmente completa em 11 movimentos**, com a copy de referência corrigida, e fornece base suficiente para a próxima etapa governada: elaboração do **Home Source Lock da Home Pública Guivos Intelligence v1**.
+A arquitetura narrativa está conceitualmente completa em 11 movimentos.
 
-Isso não significa que o Source Lock tenha sido criado ou autorizado por este artefato.
+O Home Source Lock e o Handoff específicos já existem. Portanto, esta Home deve ser consumida no pacote v6 por meio da combinação:
 
-```mermaid
-flowchart TD
-    P[Product Source Lock\nintegrado] --> A[Arquitetura narrativa\nv0.2.1]
-    A --> M[Documento Mestre\nv0.1.1]
-    M --> S[Home Source Lock\npróximo ponto]
-    S --> D[Handoff / Design controlado]
+```text
+GPA-006
++
+PRODUCT SOURCE LOCK
++
+HOME SOURCE LOCK
++
+DOCUMENTO MESTRE
++
+HANDOFF ESPECÍFICO
++
+AUTORIDADES COMUNS TOOL-NEUTRAL
 ```
 
-Nenhuma etapa autoriza automaticamente a seguinte.
+Nenhum desses documentos prescreve identidade visual. A designer decide como expressar relações, contexto, temporalidade, evidência e explicabilidade sem transformar exemplos visuais em requisitos.

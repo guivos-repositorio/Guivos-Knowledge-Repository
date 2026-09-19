@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-TRAVEL-MASTER-001
 title: Home Pública — Guivos Travel — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
 last_updated: 2026-08-13
 parents:
@@ -10,6 +10,7 @@ parents:
   - GPA-003
   - GKR-STATE-001
 related:
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
   - GPA-002
   - GPA-003
   - GPA-004
@@ -325,7 +326,7 @@ Direção de título:
 
 # Descubra para onde ir.
 
-Esta deve ser uma das áreas visualmente mais fortes da Home.
+Este movimento possui alta importância narrativa para tornar inspiração e concretude perceptíveis. A forma, intensidade e solução visual são decisões da designer.
 
 A descoberta deve privilegiar:
 
@@ -837,10 +838,8 @@ Expressão complementar:
 
 ## 39. Estado de prontidão
 
-A arquitetura conceitual desta Home está convergida para registro documental.
+A arquitetura conceitual desta Home está convergida.
 
-Não há, neste documento, autorização para wireframe ou materialização visual.
+Este Master não cria materialização visual. A designer pode consumi-lo sob o pacote tool-neutral vigente, preservando as verdades e boundaries documentados e mantendo livre a expressão visual.
 
-Estado:
-
-> **ARQUITETURA CONCEITUAL CONVERGIDA — REGISTRADA COMO DOCUMENTO MESTRE; MATERIALIZAÇÃO VISUAL NÃO AUTORIZADA.**
+> **ARQUITETURA CONCEITUAL CONVERGIDA — READY FOR TOOL-NEUTRAL DESIGN CONSUMPTION — GKR FIGMA MATERIALIZATION OUT OF PROCESS.**

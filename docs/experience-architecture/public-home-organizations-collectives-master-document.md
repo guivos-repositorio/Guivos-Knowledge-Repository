@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-29
 parent: GKR-UX-HOME-MASTER-001
@@ -17,6 +17,7 @@ depends_on:
   - UXA-019
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
 related:
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-BRAND-SIGNATURE-001
   - GKR-BRAND-PUBLIC-AUTHORITY-001
@@ -32,7 +33,7 @@ related:
   - journeys/organization.md
   - journeys/collective.md
 normative: false
-maturity: documentally_rebuilt_pre_materialization_under_full_corpus_audit
+maturity: documentally_rebuilt_tool_neutral_design_consumption
 ---
 
 # Home Pública — Organizações e Coletivos
@@ -41,20 +42,7 @@ maturity: documentally_rebuilt_pre_materialization_under_full_corpus_audit
 
 Este é o **Documento Mestre vigente de consumo** da porta pública compartilhada para **Organizações e Coletivos** no ecossistema Guivos.
 
-Ele registra a verdade narrativa, semântica e funcional atual dessa segunda perspectiva pública da mesma Guivos. Liderança, Brand, Marketing, Produto, Experience Architecture, UX, Design, Desenvolvimento, Research, Legal/Privacidade, Intelligence e demais equipes não devem reconstruir o estado atual da Home por uma cadeia de checkpoints históricos.
-
-```text
-MASTER O/C
-→ verdade atual de consumo da Home pública O/C
-
-ARTEFATOS ESPECIALIZADOS
-→ aprofundamento / evidência / contratos específicos ainda preservados
-
-GIT
-→ história das decisões anteriores
-```
-
-A relação entre as duas portas públicas permanece:
+Ele registra a verdade narrativa, semântica e funcional atual dessa segunda perspectiva pública da mesma Guivos e deve ser consumido sem reconstrução por checkpoints históricos.
 
 ```text
 HOME PÚBLICA PRINCIPAL
@@ -66,60 +54,25 @@ HOME PÚBLICA — ORGANIZAÇÕES E COLETIVOS
 → o que podemos tornar possível juntos?
 ```
 
-As duas Homes preservam a mesma Fundação, a mesma identidade institucional e a mesma arquitetura de participantes, Possibilidades, Oportunidades, Produtos, autoridade, autonomia e evidência.
+As duas Homes preservam Fundação, identidade institucional, participantes, Possibilidades, Oportunidades, Produtos, autoridade, autonomia e evidência.
 
-Este documento **não autoriza**:
+Este Master não cria wireframe, Figma, protótipo, UI ou implementação. A expressão visual externa é Design-owned e segue `GKR-UX-HOMES-DESIGN-CONSUMPTION-001`.
 
-- wireframe;
-- Figma;
-- SVG;
-- protótipo;
-- UI final;
-- implementação;
-- publicação;
-- disponibilidade operacional;
-- Marketing/GTM;
-- oferta comercial;
-- cadastro ou onboarding;
-- início de nova UXA;
-- materialização da experiência autenticada de Organização ou Coletivo.
-
-Estado desta frente:
+Ele também não libera, por consequência, cadastro, onboarding, Marketing/GTM, oferta comercial, nova UXA ou a experiência autenticada de Organização/Coletivo.
 
 ```text
-HOME O/C
-→ DOCUMENTALMENTE RECONSTRUÍDA PRÉ-MATERIALIZAÇÃO
-
 AUDITORIA INTEGRAL
-→ EM CURSO
+→ COMPLETED / PASS
 
-MATERIALIZAÇÃO VISUAL NOVA
-→ NÃO AUTORIZADA
+HOME O/C
+→ DOCUMENTALLY RECONCILED
 
-UXA-102 / V5
-→ NOT_STARTED
+PUBLIC HOME DESIGN
+→ TOOL-NEUTRAL CONSUMPTION
 
-PRODUCT ENGINEERING
-→ PAUSED BEFORE W0-01
-
-PMF
-→ NOT VALIDATED
-
-PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
-→ BLOCKED UNTIL AUDIT CLOSES
+AUTHENTICATED O/C HIGH-FIDELITY
+→ SEPARATE GOVERNED FRONT / NOT GRANTED BY THIS MASTER
 ```
-
-A existência de Source Locks, handoffs, snapshots, pacotes generativos ou decisões de Design emitidos em checkpoints anteriores não os promove a baseline visual vigente durante a auditoria.
-
-```text
-ARTEFATO DE DESIGN EXISTENTE
-≠ DESIGN VIGENTE
-≠ AUTORIZAÇÃO ATUAL
-≠ UI APROVADA
-≠ IMPLEMENTAÇÃO
-```
-
----
 
 ## 2. Papel público da página
 
@@ -1667,74 +1620,32 @@ Ideia fundamental:
 
 Esta autoridade encerra-se na arquitetura narrativa, semântica e funcional pública.
 
-Permanecem bloqueados até autorização explícita posterior ao fechamento dos gates aplicáveis:
+Para a **Home pública**, identidade visual, grid, tipografia, fotografia, vídeo, componentes, motion e linguagem visual pertencem à designer. O GKR não exige nem produz Figma, wireframe ou protótipo intermediário.
 
-- wireframe;
-- Figma;
-- SVG;
-- protótipo;
-- grid e layout;
-- tipografia;
-- fotografia e vídeo finais;
-- sistema visual;
-- componentes;
-- microinterações;
+Continuam fora da autorização desta Home pública:
+
 - implementação;
-- disponibilidade operacional;
-- preços ou planos;
+- disponibilidade operacional não comprovada;
+- preços ou planos não governados;
 - cadastro;
 - onboarding;
 - Marketing/GTM;
 - UXA-102/V5;
-- primeira tela autenticada da Pessoa após a Home;
-- qualquer materialização autenticada de Organização ou Coletivo.
+- primeira tela autenticada da Pessoa;
+- materialização autenticada de Organização ou Coletivo.
 
 ```text
-PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
-→ BLOCKED UNTIL AUDIT CLOSES
-→ NÃO DEFINIR NESTE LOTE
+PUBLIC HOME DESIGN
+→ DESIGN-OWNED EXPRESSION
+
+AUTHENTICATED EXPERIENCE
+→ SEPARATE AUTHORITY / SEPARATE GATE
+
+GKR FIGMA MATERIALIZATION
+→ OUT OF PROCESS
 ```
 
-O histórico contém decisões procedimentais diferentes sobre Design e wireframe. Elas pertencem aos respectivos checkpoints.
-
-Durante a auditoria integral vigente:
-
-```text
-HANDOFF ANTIGO
-SOURCE LOCK ANTIGO
-PACOTE GENERATIVO ANTIGO
-SNAPSHOT ANTIGO
-DECISÃO DE DESIGN DE CHECKPOINT ANTERIOR
-
-≠ AUTORIZAÇÃO ATUAL DE MATERIALIZAÇÃO
-```
-
-Qualquer futura retomada de Design exige novo ato governado e reconciliação com este Master e com o estado pós-auditoria.
-
-Uma futura materialização deve ser rejeitada ou revisada se:
-
-- começar por catálogo de Produtos;
-- parecer landing page SaaS convencional;
-- representar Organização = Business;
-- criar um Produto `Comunidades`;
-- transformar Coletivo em comunidade proprietária da Guivos;
-- confundir Possibilidade e Oportunidade;
-- apresentar Oportunidade como real sem agente/condições quando isso for necessário ao claim;
-- omitir Mecanismo onde a explicação de contribuição exija essa camada;
-- usar Domínios como score, diagnóstico ou roda da vida obrigatória;
-- prometer transformação causal;
-- inferir impacto a partir de atividade, volume, consumo ou popularidade;
-- apresentar Intelligence como autoridade sobre participantes;
-- sugerir acesso irrestrito a Pessoas ou dados;
-- usar patrocínio ou posição comercial como relevância;
-- usar estética como substituto de confiança;
-- pressionar conversão antes de compreensão;
-- importar menus, jobs ou IA da experiência autenticada para a Home pública;
-- depender de animação ou gesto para informação essencial;
-- bloquear scroll ou usar dark patterns;
-- reduzir Organizações a empresas ou Coletivos a projetos sociais.
-
----
+Uma proposta deve ser rejeitada ou revisada se começar por catálogo de Produtos, parecer landing page SaaS convencional, representar Organização = Business, criar Produto `Comunidades`, confundir Possibilidade/Oportunidade, inventar impacto, tratar Intelligence como autoridade, sugerir acesso irrestrito a Pessoas/dados, comprar relevância, usar estética como substituto de confiança, pressionar conversão antes de compreensão, importar IA/jobs da experiência autenticada, depender de animação para informação essencial ou reduzir Organizações/Coletivos a estereótipos.
 
 ## 30. Matriz de conhecimento absorvido
 
@@ -1811,4 +1722,4 @@ HOME O/C
 
 Estado deste documento:
 
-> **DOCUMENTO MESTRE RECONSTRUÍDO DOCUMENTALMENTE — MATERIALIZAÇÃO NÃO AUTORIZADA; AUDITORIA INTEGRAL AINDA EM CURSO.**
+> **DOCUMENTO MESTRE RECONCILIADO — AUDITORIA INTEGRAL CONCLUÍDA — EXPRESSÃO VISUAL DA HOME PÚBLICA DESIGN-OWNED / TOOL-NEUTRAL — EXPERIÊNCIA AUTENTICADA CONTINUA EM GATE PRÓPRIO.**

@@ -2,11 +2,11 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.2
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-08
 normative: false
-maturity: reconciled_architecture_pre_materialization
+maturity: reconciled_architecture_tool_neutral_design_consumption
 depends_on:
   - GEB-P01
   - GKR-CHRISTIAN-FOUNDATION-001
@@ -29,6 +29,7 @@ depends_on:
   - GKR-UX-HOME-GTM-BOUNDARY-001
   - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
 related:
+  - GKR-UX-HOMES-DESIGN-CONSUMPTION-001
   - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
   - GKR-UX-HOME-AUDIT-001
   - GKR-UX-HOME-AUDIT-002
@@ -53,7 +54,7 @@ Este master:
 - absorve autoridades posteriores de Fundação, Marca, Public Canon, Research e Experience Architecture;
 - corrige formulações superadas sem apagar seu histórico no Git;
 - distingue verdade vigente de materialização futura;
-- não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, campanha ou lançamento;
+- não cria wireframe, Figma, UI, protótipo ou implementação; o consumo externo de Design é governado pelo contrato comum tool-neutral;
 - consome a fronteira funcional de Q sem definir sua materialização visual.
 
 ```text
@@ -77,8 +78,9 @@ Estado desta autoridade:
 HOME PRINCIPAL / PESSOA
 → ARQUITETURA ESTRATÉGICA RECONCILIADA NESTE MASTER
 
-MATERIALIZAÇÃO VISUAL NOVA
-→ NÃO AUTORIZADA POR ESTE DOCUMENTO
+DESIGN EXTERNO DA HOME PÚBLICA
+→ CONSUMO GOVERNADO PELO PACOTE TOOL-NEUTRAL
+→ GKR NÃO MATERIALIZA ARQUIVO VISUAL
 
 FINAL BASELINE PÓS-AUDITORIA
 → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
@@ -1371,4 +1373,4 @@ HOME PÚBLICA
 
 Estado desta versão:
 
-> **MASTER RECONCILIADO COM AS AUTORIDADES VIGENTES — CONTEÚDO PRESERVADO E ENRIQUECIDO — Q FUNCTIONAL DEFINITION CONSOLIDATED: PRIMEIRA RESPONSABILIDADE AUTENTICADA = CONTINUAÇÃO AUTENTICADA DE PER-002 / PRIMEIRA SUPERFÍCIE DISTINTA DOWNSTREAM = PER-003 — MATERIALIZAÇÃO NOVA NÃO AUTORIZADA POR ESTE DOCUMENTO.**
+> **MASTER RECONCILIADO PARA CONSUMO TOOL-NEUTRAL — A EXPRESSÃO VISUAL DA HOME PÚBLICA É DESIGN-OWNED; O GKR NÃO CRIA NEM GOVERNA O ARQUIVO FIGMA. A FRONTEIRA AUTENTICADA DE PER-002/PER-003 CONTINUA SUJEITA AOS GATES PRÓPRIOS E NÃO É LIBERADA POR ESTE MASTER.**
