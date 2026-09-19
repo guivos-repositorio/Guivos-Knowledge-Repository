@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
 title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 status: active
-version: 2.0.1
+version: 2.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -14,7 +14,7 @@ depends_on:
 related:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 normative: false
-maturity: post_audit_v5_operational_flow_release_granted_pre_execution
+maturity: post_audit_v5_operational_flow_designer_first
 ---
 
 # Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
@@ -31,7 +31,7 @@ O gate de início foi satisfeito. A execução pode começar somente dentro dest
 - Source Lock operacional da Home;
 - `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0 = GRANTED`.
 
-A autorização de início não elimina os gates internos de revisão humana, direção criativa aprovada e aceite final.
+A autorização de início permite que a designer consuma o pacote e crie manualmente. Revisão humana e aceite final permanecem, sem obrigatoriedade de ferramenta generativa intermediária.
 
 ## 3. Isolamento de contexto
 
@@ -129,4 +129,4 @@ Uma melhoria puramente criativa que não altera contrato pode ocorrer dentro do 
 
 ## 10. Estado
 
-`FLOW v2.0.1 READY / DESIGN PRODUCTION RELEASE GRANTED / FIGMA MAKE AUTHORIZED TO EXECUTE / NOT_STARTED / FINAL FIGMA REQUIRES HUMAN DIRECTION APPROVAL`.
+`FLOW v2.0.1 READY / DESIGN PRODUCTION RELEASE GRANTED / DESIGNER MANUAL CREATION AUTHORIZED / AI OPTIONAL / FINAL DESIGN REMAINS SUBJECT TO HUMAN REVIEW`.
