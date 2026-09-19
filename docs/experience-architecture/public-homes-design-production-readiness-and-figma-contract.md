@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.2.9
+version: 1.2.10
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -197,18 +197,18 @@ Contrato corrente que o guia/Source Lock v6 deve explicitar:
 - `GPA-007 v1.3.0`.
 
 ### Business
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.5`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6`;
 - `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.2`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3`;
 - `GPA-004 v1.6.0`.
 
 ### Intelligence
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.5`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.4`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.4`;
-- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0`;
-- `GPA-006 v2.0.0`.
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.6`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.5`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5`;
+- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1`;
+- `GPA-006 v2.0.1`.
 
 O snapshot v5 deve capturar todas as fontes do mesmo commit canônico pós-merge e registrar seus SHAs.
 
