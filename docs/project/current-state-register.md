@@ -2,13 +2,14 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.44.0
+version: 3.45.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-19
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
   - GKR-FULL-CORPUS-AUDIT-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
@@ -2334,3 +2335,73 @@ PRODUCT ENGINEERING
 ```
 
 O avanço posterior ao fechamento Home Masters inclui, nesta revisão, a promoção canônica de Navigation Materialization após Surface Map, State Map, Priority Flows e sua elegibilidade O/C. Authenticated Wireframes, Design/UI, protótipo e Product Engineering continuam não liberados automaticamente.
+## 31. Homes públicas — Design Production Readiness
+
+A frente anterior de high-fidelity autenticado O/C permanece preservada no gate já alcançado, mas sua execução continua não autorizada. A prioridade temporária passa a ser garantir que as oito Homes públicas possam ser contratadas e produzidas em Figma sem lacunas documentais materiais.
+
+Baseline física de início:
+
+```text
+MAIN
+→ fada353688e26047a8eb8f45a8de67af0aa9b3d0
+
+O/C HIGH-FIDELITY ELIGIBILITY
+→ PASS
+
+O/C HIGH-FIDELITY DESIGN AUTHORIZATION
+→ NOT_GRANTED
+```
+
+`GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0` formaliza o novo critério de prontidão.
+
+Decisão humana incorporada:
+
+```text
+IDENTIDADE VISUAL CANÔNICA PRÉVIA
+→ NOT REQUIRED
+
+TIPOGRAFIA / PALETA / IMAGENS / LINGUAGEM GRÁFICA / ATMOSFERA
+→ DESIGN-OWNED
+
+TOM DE VOZ / COPY NÃO CONGELADA
+→ DESIGN / CONTENT CANDIDATE
+→ HUMAN APPROVAL REQUIRED BEFORE FINALIZATION
+
+SEMANTIC / FUNCTIONAL TRUTH
+→ GKR-GOVERNED
+```
+
+O pacote histórico v4 permanece reproduzível, porém superado para nova contratação. O Manifesto v5 prepara uma emissão pós-merge baseada em 26 fontes canônicas atuais e oito `LEIA-PRIMEIRO / SOURCE LOCK` operacionais.
+
+Fluxo obrigatório:
+
+```text
+V5 SNAPSHOT
+→ FIGMA MAKE / EXPLORAÇÃO
+→ REVISÃO HUMANA
+→ DIREÇÃO CRIATIVA APROVADA
+→ FIGMA DEFINITIVO
+→ ACEITE FINAL
+```
+
+Estado:
+
+```text
+DESIGN PRODUCTION READINESS DOCUMENTATION
+→ PREPARED IN CURRENT CHANGESET
+
+V5 SNAPSHOT
+→ PENDING POST-MERGE EMISSION
+
+FIGMA MAKE
+→ NOT RELEASED
+
+FINAL FIGMA PRODUCTION
+→ NOT RELEASED
+
+DESIGN PRODUCTION RELEASE
+→ REQUIRES SEPARATE EXPLICIT HUMAN ACT
+
+PRODUCT ENGINEERING
+→ PAUSED / NOT RELEASED
+```
