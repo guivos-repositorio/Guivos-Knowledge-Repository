@@ -1,10 +1,11 @@
 ---
 id: GKR-UX-HOME-MEDIA-MASTER-001
 title: Home Pública — Guivos Media — Documento Mestre
-status: draft
+status: active
 version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-13
+last_updated: 2026-09-19
+maturity: design_input_ready_human_first_ai_optional
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-005
