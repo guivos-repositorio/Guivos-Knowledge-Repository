@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-19
 parent: GKR-UX-HOME-MASTER-001
@@ -68,55 +68,53 @@ HOME PÚBLICA — ORGANIZAÇÕES E COLETIVOS
 
 As duas Homes preservam a mesma Fundação, a mesma identidade institucional e a mesma arquitetura de participantes, Possibilidades, Oportunidades, Produtos, autoridade, autonomia e evidência.
 
-Este documento **não autoriza**:
+Este documento **não autoriza por si só** implementação, publicação, disponibilidade operacional, Marketing/GTM, oferta comercial, cadastro/onboarding, início de nova UXA ou materialização da experiência autenticada de Organização ou Coletivo.
 
-- wireframe;
-- Figma;
-- SVG;
-- protótipo;
-- UI final;
-- implementação;
-- publicação;
-- disponibilidade operacional;
-- Marketing/GTM;
-- oferta comercial;
-- cadastro ou onboarding;
-- início de nova UXA;
-- materialização da experiência autenticada de Organização ou Coletivo.
+A criação visual da **Home pública O/C** está, porém, coberta pelo release comum vigente para produção externa pela designer.
 
-Estado desta frente:
+Estado corrente desta frente:
 
 ```text
-HOME O/C
-→ DOCUMENTALMENTE RECONSTRUÍDA PRÉ-MATERIALIZAÇÃO
+HOME O/C PÚBLICA
+→ DOCUMENTALMENTE RECONCILIADA
+→ EXTERNAL DESIGN RELEASE = GRANTED
 
-AUDITORIA INTEGRAL
-→ EM CURSO
+DESIGNER
+→ CREATIVE AUTHOR
+→ MAY CREATE WIREFRAME / FIGMA / SVG / PROTOTYPE / UI EXPLORATION
 
-MATERIALIZAÇÃO VISUAL NOVA
-→ NÃO AUTORIZADA
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+GKR-CREATED FIGMA
+→ NONE
+
+AUDITORIA DOCUMENTAL DA HOME PÚBLICA
+→ CLOSED FOR CURRENT DESIGN HANDOFF
 
 UXA-102 / V5
 → NOT_STARTED
 
 PRODUCT ENGINEERING
-→ PAUSED BEFORE W0-01
+→ NOT RELEASED
 
 PMF
 → NOT VALIDATED
 
+HOME O/C AUTHENTICATED HIGH-FIDELITY
+→ NOT_GRANTED
+
 PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
-→ BLOCKED UNTIL AUDIT CLOSES
+→ NOT RELEASED BY THIS DOCUMENT
 ```
 
-A existência de Source Locks, handoffs, snapshots, pacotes generativos ou decisões de Design emitidos em checkpoints anteriores não os promove a baseline visual vigente durante a auditoria.
+Artefatos visuais produzidos anteriormente pelo GKR continuam sem autoridade e não constituem referência de Design. A designer parte das fontes documentais vigentes e exerce autoria criativa própria.
 
 ```text
-ARTEFATO DE DESIGN EXISTENTE
-≠ DESIGN VIGENTE
-≠ AUTORIZAÇÃO ATUAL
-≠ UI APROVADA
-≠ IMPLEMENTAÇÃO
+PRIOR GKR DESIGN ARTIFACT
+→ ABANDONED / NON-AUTHORITATIVE
+→ NOT A DESIGN REFERENCE
+→ NOT A SOURCE FOR THE DESIGNER
 ```
 
 ---
@@ -1663,11 +1661,11 @@ Ideia fundamental:
 
 ---
 
-## 29. Limites de materialização e de checkpoint
+## 29. Limites de materialização e estado corrente
 
-Esta autoridade encerra-se na arquitetura narrativa, semântica e funcional pública.
+Esta autoridade governa a arquitetura narrativa, semântica e funcional pública. O release comum vigente autoriza a **produção externa de Design da Home pública O/C** pela designer, sem criar direção visual canônica antecipada.
 
-Permanecem bloqueados até autorização explícita posterior ao fechamento dos gates aplicáveis:
+Dentro das invariantes documentais, a designer pode definir:
 
 - wireframe;
 - Figma;
@@ -1675,11 +1673,16 @@ Permanecem bloqueados até autorização explícita posterior ao fechamento dos 
 - protótipo;
 - grid e layout;
 - tipografia;
-- fotografia e vídeo finais;
+- fotografia e vídeo;
 - sistema visual;
 - componentes;
 - microinterações;
+- demais decisões de expressão visual.
+
+Continuam fora deste release e exigem autoridades próprias:
+
 - implementação;
+- publicação;
 - disponibilidade operacional;
 - preços ou planos;
 - cadastro;
@@ -1687,29 +1690,34 @@ Permanecem bloqueados até autorização explícita posterior ao fechamento dos 
 - Marketing/GTM;
 - UXA-102/V5;
 - primeira tela autenticada da Pessoa após a Home;
-- qualquer materialização autenticada de Organização ou Coletivo.
+- qualquer materialização autenticada de Organização ou Coletivo;
+- Product Engineering.
 
 ```text
-PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
-→ BLOCKED UNTIL AUDIT CLOSES
-→ NÃO DEFINIR NESTE LOTE
+PUBLIC O/C HOME DESIGN
+→ GRANTED FOR EXTERNAL DESIGNER
+
+HOME O/C AUTHENTICATED HIGH-FIDELITY
+→ NOT_GRANTED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+
+FIRST AUTHENTICATED PERSON SCREEN AFTER HOME
+→ NOT RELEASED BY THIS DOCUMENT
 ```
 
-O histórico contém decisões procedimentais diferentes sobre Design e wireframe. Elas pertencem aos respectivos checkpoints.
-
-Durante a auditoria integral vigente:
+O histórico contém decisões procedimentais diferentes sobre Design e wireframe. Elas pertencem aos respectivos checkpoints e não funcionam como gate corrente da Home pública.
 
 ```text
-HANDOFF ANTIGO
-SOURCE LOCK ANTIGO
-PACOTE GENERATIVO ANTIGO
-SNAPSHOT ANTIGO
-DECISÃO DE DESIGN DE CHECKPOINT ANTERIOR
+HISTORICAL HANDOFF / SOURCE LOCK / GENERATIVE PACKAGE / SNAPSHOT
+→ PROVENANCE ONLY WHEN SUPERSEDED
 
-≠ AUTORIZAÇÃO ATUAL DE MATERIALIZAÇÃO
+PRIOR GKR DESIGN ARTIFACT
+→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
 ```
 
-Qualquer futura retomada de Design exige novo ato governado e reconciliação com este Master e com o estado pós-auditoria.
+Nenhum novo ato governado é necessário para a designer iniciar ou continuar a criação da **Home pública O/C** sob o pacote vigente. Novos atos continuam necessários para qualquer frente explicitamente não liberada acima.
 
 Uma futura materialização deve ser rejeitada ou revisada se:
 
