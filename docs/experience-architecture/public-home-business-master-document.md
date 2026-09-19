@@ -4,7 +4,8 @@ title: Documento Mestre — Home Pública — Guivos Business
 status: active
 version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-19
+maturity: design_input_ready_human_first_ai_optional
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
 depends_on:
   - GKR-UX-HOME-BUSINESS-NARRATIVE-001
