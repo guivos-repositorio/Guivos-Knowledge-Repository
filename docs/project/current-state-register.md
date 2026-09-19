@@ -2371,7 +2371,7 @@ SEMANTIC / FUNCTIONAL TRUTH
 → GKR-GOVERNED
 ```
 
-O pacote histórico v4 permanece reproduzível, porém superado para nova contratação. O Manifesto v5 prepara uma emissão pós-merge baseada em 26 fontes canônicas atuais e oito `LEIA-PRIMEIRO / SOURCE LOCK` operacionais.
+O pacote histórico v4 permanece reproduzível, porém superado para nova contratação. O Manifesto v5 prepara uma emissão pós-merge baseada em 25 fontes canônicas atuais e oito `LEIA-PRIMEIRO / SOURCE LOCK` operacionais.
 
 Fluxo obrigatório:
 
