@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
-title: Homes Públicas — Prontidão de Produção de Design e Contrato Figma/IA
+title: Homes Públicas — Prontidão de Produção de Design — Contrato Designer/IA
 status: active
-version: 1.0.1
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: post_audit_design_production_readiness_release_granted_pre_execution
+maturity: post_audit_designer_ai_readiness_remediation
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -33,7 +33,7 @@ related:
 
 ## 1. Finalidade
 
-Esta autoridade prepara as oito Homes públicas da Guivos para uma contratação real de Design em que Figma Make ou ferramenta equivalente pode ser usada para prototipação antes da construção definitiva no Figma.
+Esta autoridade prepara as oito Homes públicas da Guivos para uma contratação real de Design **designer-led**. A criação manual é suficiente e é o caminho padrão; sistemas de IA podem ser usados opcionalmente como apoio, sempre consumindo as mesmas fontes governadas. Figma ou ferramenta equivalente é ambiente externo de trabalho da designer, não fonte de verdade do GKR.
 
 O objetivo é reduzir a zero os findings materiais documentais antes do release de produção, sem transformar documentação em direção artística.
 
@@ -109,7 +109,7 @@ Pessoa/O-C já estavam explicitamente reclassificados como evidência histórica
 
 Decisão: o pacote v5 não usa GENINPUT histórico como autoridade operacional. Cada `LEIA-PRIMEIRO` do v5 funciona como Source Lock operacional daquela Home e registra o checkpoint exato da emissão.
 
-### F-05 — aceite final do Figma não estava suficientemente determinístico
+### F-05 — aceite final da entrega de Design não estava suficientemente determinístico
 
 Decisão: este documento estabelece o contrato mínimo de produção e aceite sem definir estética.
 
@@ -223,15 +223,36 @@ FINAL EXACT-HEAD GATE
 → STILL REQUIRED
 ```
 
-A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente no Figma Make.
+A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente em sistemas de IA nem exigidos da designer humana sem necessidade.
 
-## 7. Regra de isolamento para IA
+## 7. Regra de consumo — designer humana e IA opcional
 
-Uma execução de Figma Make trabalha uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente.
+A designer trabalha uma Home por vez a partir do respectivo `LEIA-PRIMEIRO / SOURCE LOCK`, das fontes comuns e das fontes específicas listadas.
 
-A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + quatro fontes comuns + fontes específicas daquela Home.
+A designer humana **não precisa utilizar IA** para executar o trabalho.
 
-Output inicial obrigatório: `EXPLORAÇÃO / NÃO CANÔNICA`.
+Quando um sistema de IA for utilizado:
+
+- trabalhar uma Home por vez;
+- não carregar documentos específicos das oito Homes simultaneamente;
+- receber somente `LEIA-PRIMEIRO / SOURCE LOCK` daquela Home + fontes comuns + fontes específicas listadas;
+- não buscar outra Home para preencher lacuna por conveniência;
+- sinalizar hipótese, placeholder, dado real requerido e questão aberta;
+- manter o output inicial como `EXPLORAÇÃO / NÃO CANÔNICA`.
+
+```text
+HUMAN DESIGN
+→ PRIMARY / SUFFICIENT
+
+AI ASSISTANCE
+→ OPTIONAL
+
+SAME GOVERNED SOURCES
+→ REQUIRED
+
+FIGMA
+→ EXTERNAL WORKSPACE / NOT GKR AUTHORITY
+```
 
 ## 8. Classes obrigatórias de informação
 
