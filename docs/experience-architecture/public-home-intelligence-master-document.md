@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
 status: draft
-version: 0.1.1
+version: 0.1.2
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 depends_on:
   - GPA-006
@@ -701,7 +701,7 @@ A criação deste documento não autoriza automaticamente:
 
 ## 18. Itens ainda não congelados
 
-Até o Home Source Lock, permanecem refináveis sem alterar a arquitetura:
+No regime vigente de Source Lock/Handoff, permanecem refináveis sem alterar a arquitetura:
 
 - formulação final da pergunta-mãe;
 - CTA principal;
@@ -715,18 +715,44 @@ Até o Home Source Lock, permanecem refináveis sem alterar a arquitetura:
 
 Esses itens não reabrem a identidade nem os onze movimentos já convergidos.
 
-## 19. Critério de passagem
+## 19. Estado corrente e critério de consumo
 
-Este Documento Mestre considera a arquitetura narrativa **conceitualmente completa em 11 movimentos**, com a copy de referência corrigida, e fornece base suficiente para a próxima etapa governada: elaboração do **Home Source Lock da Home Pública Guivos Intelligence v1**.
+Este Documento Mestre considera a arquitetura narrativa **conceitualmente completa em 11 movimentos**, com a copy de referência corrigida.
 
-Isso não significa que o Source Lock tenha sido criado ou autorizado por este artefato.
+As etapas documentais posteriores já existem:
+
+```text
+PRODUCT SOURCE LOCK
+→ INTEGRATED
+
+DOCUMENTO MESTRE
+→ THIS AUTHORITY
+
+HOME SOURCE LOCK
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 / ACTIVE
+
+HOME DESIGN HANDOFF
+→ GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 / ACTIVE
+
+COMMON DESIGN PRODUCTION RELEASE
+→ GRANTED
+
+FINAL SOURCE READINESS AUDIT
+→ IN_PROGRESS
+
+EXTERNAL DESIGNER START
+→ DEFERRED UNTIL PASS
+```
+
+O Master continua sendo a porta de consumo do significado da Home; Source Lock e Handoff governam congelamento e materialização externa. Nenhum deles autoriza Product Engineering por inferência.
 
 ```mermaid
 flowchart TD
-    P[Product Source Lock\nintegrado] --> A[Arquitetura narrativa\nv0.2.1]
-    A --> M[Documento Mestre\nv0.1.1]
-    M --> S[Home Source Lock\npróximo ponto]
-    S --> D[Handoff / Design controlado]
+    P[Product Source Lock] --> M[Documento Mestre]
+    M --> S[Home Source Lock]
+    S --> H[Handoff]
+    H --> R[Final Source Readiness]
+    R --> D[Designer externa]
 ```
 
-Nenhuma etapa autoriza automaticamente a seguinte.
+O GKR/ChatGPT não cria a materialização visual dessa sequência.
