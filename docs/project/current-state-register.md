@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.47.0
+version: 3.48.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -11,6 +11,7 @@ related:
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-PACKAGE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
@@ -2413,4 +2414,26 @@ DESIGN PRODUCTION RELEASE
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
+```
+
+
+## 29. Public Homes — Source Package Realignment — 2026-09-19
+
+A direção humana vigente determina que o GKR deve entregar documentação completa e suficiente para a designer criar manualmente as oito Homes. Sistemas de IA podem consumir os mesmos documentos como apoio opcional; nenhum fluxo de Figma Make, protótipo gerado por IA ou materialização visual pelo GKR é obrigatório.
+
+```text
+GKR
+→ SOURCE PACKAGE / MASTERS / SOURCE LOCKS / GUARDRAILS
+
+DESIGNER
+→ MANUAL CREATION / FULL CREATIVE OWNERSHIP WITHIN SEMANTIC BOUNDARIES
+
+AI
+→ OPTIONAL DOCUMENT CONSUMER / NON-CANONICAL OUTPUT
+
+FIGMA ARTIFACT CREATION BY GKR
+→ OUT OF SCOPE
+
+GKR-UX-HOMES-DESIGN-SOURCE-PACKAGE-001
+→ ACTIVE CANDIDATE ON GOVERNED BRANCH
 ```
