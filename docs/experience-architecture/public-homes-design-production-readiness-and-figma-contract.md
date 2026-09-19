@@ -390,18 +390,30 @@ Regras de integridade:
 
 ## 10. Sistemas de IA — apoio opcional, nunca gate obrigatório
 
-A exploração generativa antecede a construção definitiva.
+A designer pode optar por usar IA antes ou durante sua exploração criativa. O uso de IA não altera a sequência governada do trabalho humano.
 
-Sequência obrigatória:
+Quando IA for utilizada:
 
-1. carregar pacote v5 isolado da Home;
-2. gerar exploração/protótipo;
-3. executar autoauditoria contra Source Lock;
-4. revisão humana de significado, conteúdo, UX, responsividade e direção criativa;
-5. registrar decisões aceitas, rejeitadas e lacunas;
-6. somente após aprovação humana, construir/refinar o Figma definitivo.
+1. carregar somente o contexto v6 da Home em trabalho;
+2. classificar a finalidade da sessão — síntese, ideação, Content Design, asset candidato ou autoauditoria;
+3. preservar Source Lock e proibições de inferência;
+4. tratar todo output como candidato;
+5. revisar humanamente antes de incorporar qualquer elemento à direção de Design.
 
-A designer não é obrigada a copiar a proposta do sistema de IA de apoio. A ferramenta serve para visualizar e testar possibilidades.
+Quando IA **não** for utilizada, nenhuma etapa substitutiva é necessária.
+
+```text
+AI
+→ OPTIONAL
+
+AI OUTPUT
+→ CANDIDATE
+
+DESIGNER
+→ DECIDES / CURATES / AUTHORS
+```
+
+A designer não é obrigada a copiar, usar ou sequer solicitar proposta de IA.
 
 ## 11. Contrato mínimo da entrega Figma produzida/curada pela designer
 
