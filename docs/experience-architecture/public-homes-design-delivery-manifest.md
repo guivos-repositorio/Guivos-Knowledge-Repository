@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 5.0.2
+version: 5.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: design_delivery_v5_release_granted_pre_execution
+maturity: design_delivery_v5_release_granted_source_package_reconciliation
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -100,7 +100,7 @@ A emissão v5 gerou oito arquivos adicionais `00-LEIA-PRIMEIRO.md`, um por Home.
 - liberdades criativas;
 - matriz das oito classes operacionais de informação;
 - proibições de inferência;
-- prompt inicial para Figma Make;
+- prompt opcional para consumo por sistemas de IA;
 - estado inicial `EXPLORAÇÃO / NÃO CANÔNICA`;
 - checklist de autoauditoria.
 
@@ -216,9 +216,12 @@ SNAPSHOT
 DESIGN PRODUCTION RELEASE
 → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 
-FIGMA MAKE
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+DESIGNER MANUAL CREATION
+→ AUTHORIZED / EXTERNAL DESIGNER-OWNED
 
-FINAL FIGMA
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+AI SUPPORT
+→ OPTIONAL / NON-CANONICAL
+
+FINAL DESIGN
+→ SUBJECT TO HUMAN REVIEW / DESIGNER-OWNED
 ```
