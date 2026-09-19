@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 5.0.0
+version: 5.0.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: design_delivery_v5_prepared_snapshot_pending
+maturity: design_delivery_v5_snapshot_emitted_release_not_granted
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -15,13 +15,14 @@ depends_on:
 related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
 ---
 
 # Homes Públicas — Manifesto Canônico de Entrega para Design
 
 ## 1. Finalidade
 
-Este Manifesto define o pacote externo v5 que será entregue à frente de Design depois da integração e validação desta remediação.
+Este Manifesto define o pacote externo v5 emitido para a futura frente de Design, preservando o snapshot materializado e os gates posteriores de autorização.
 
 O snapshot v4 permanece histórico e reproduzível, mas não é pacote atual porque seu checkpoint foi superado.
 
@@ -88,7 +89,7 @@ A ausência de identidade visual canônica não é lacuna: estética e sistema v
 
 ## 4. Oito guias operacionais
 
-A emissão v5 deve gerar oito arquivos adicionais `00-LEIA-PRIMEIRO.md`, um por Home. Cada guia funciona como Source Lock operacional daquele snapshot e deve conter:
+A emissão v5 gerou oito arquivos adicionais `00-LEIA-PRIMEIRO.md`, um por Home. Cada guia funciona como Source Lock operacional daquele snapshot e deve conter:
 
 - Home e objetivo;
 - commit canônico de origem;
@@ -112,7 +113,7 @@ Contagem planejada: `26 FONTES CANÔNICAS + 8 GUIAS = 34 ARQUIVOS EXTERNOS`.
 
 ### 5.1 Integridade, formato e transporte
 
-A emissão v5 deve preservar as seguintes regras:
+A emissão v5 preserva as seguintes regras:
 
 1. os 26 documentos canônicos são extraídos do **mesmo commit pós-merge**;
 2. seus conteúdos são reutilizados sem resumo, reescrita ou adaptação para caber no pacote;
@@ -188,25 +189,28 @@ Referências adicionais entram somente para resolver dúvida concreta e permanec
 
 ## 8. Gate de emissão
 
-Somente após merge deste changeset:
+O gate de emissão foi executado e validado:
 
-1. capturar `main` pós-merge;
-2. confirmar 26/26 fontes, IDs e versões;
-3. confirmar que todos os blobs canônicos pertencem ao mesmo checkpoint;
-4. gerar oito Source Locks operacionais / `LEIA-PRIMEIRO`;
-5. materializar branch/snapshot v5;
-6. validar estrutura, isolamento e reproduzibilidade;
-7. registrar snapshot em autoridade própria;
-8. somente então avaliar `DESIGN PRODUCTION RELEASE`.
+1. `main` pós-merge capturada em `aa1b524c20f6707d007208222ba8581af097c38d`;
+2. 26/26 fontes, IDs e versões confirmados;
+3. 26/26 blobs canônicos confirmados no mesmo checkpoint;
+4. oito Source Locks operacionais / `LEIA-PRIMEIRO` gerados;
+5. `delivery/design-handoff-v5` materializada;
+6. estrutura, isolamento e reproduzibilidade validados;
+7. snapshot registrado em `GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001`.
+
+O único gate posterior restante nesta cadeia é uma decisão humana separada sobre `DESIGN PRODUCTION RELEASE`.
 
 ## 9. Estado
 
 ```text
 V5
-→ PREPARED
+→ EMITTED / MATERIALIZED / VALIDATED
 
 SNAPSHOT
-→ PENDING
+→ delivery/design-handoff-v5
+→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
+→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
 
 DESIGN PRODUCTION RELEASE
 → NOT_GRANTED

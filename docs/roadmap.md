@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.44.0
+id: ROADMAP-13.45.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.44.0
+version: 13.45.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -10,6 +10,7 @@ related:
   - GKR-STATE-001
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
@@ -1937,17 +1938,23 @@ Sequência governada:
 6. capturar `main` pós-merge;
 7. revalidar 26/26 fontes;
 8. gerar oito Source Locks operacionais;
-9. materializar snapshot externo v5;
-10. validar isolamento e reproduzibilidade;
-11. Semantic + Mechanical no HEAD aplicável;
-12. revisão independente;
-13. adjudicar findings;
-14. ato humano explícito de Design Production Release;
-15. somente então iniciar Figma Make / prototipação de Design.
+9. materializar snapshot externo v5 — CONCLUÍDO;
+10. validar isolamento e reproduzibilidade — CONCLUÍDO;
+11. registrar snapshot v5 na autoridade corrente — EM CURSO NESTA FRENTE;
+12. Semantic + Mechanical no HEAD de registro;
+13. revisão independente;
+14. adjudicar findings, se houver;
+15. ato humano explícito de Design Production Release;
+16. somente então iniciar Figma Make / prototipação de Design.
 
 ```text
 V5 SNAPSHOT
-→ PENDING
+→ EMITTED / MATERIALIZED / VALIDATED
+→ delivery/design-handoff-v5
+→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
+→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
+→ 34 FILES
+→ 26 / 26 CANONICAL BLOBS MATCH
 
 DESIGN PRODUCTION RELEASE
 → NOT_GRANTED
