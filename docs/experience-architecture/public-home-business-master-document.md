@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.1.1
+version: 1.1.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
@@ -662,8 +662,9 @@ O estado temporal anterior foi superado pela criação e integração do Source 
 GKR-UX-HOME-BUSINESS-MASTER-001
 → CANONICAL DOCUMENTARY HANDOFF INPUT
 
-GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0
+GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 → EXISTS / ACTIVE WITHIN ITS SCOPE
+→ exact version pinned by the current delivery candidate
 
 MASTER
 → NARRATIVE / SEMANTIC / FUNCTIONAL AUTHORITY
