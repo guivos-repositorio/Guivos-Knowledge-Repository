@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.5
+version: 1.1.6
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
@@ -68,7 +68,7 @@ CONVERSÃO VIGENTE
 GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0
 
 CONTRATOS DE AUTORIDADE
-GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0
+GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3
 
 ARQUITETURA FUNCIONAL
 GPA-004 v1.6.0
@@ -85,7 +85,7 @@ Para a produção externa de Design da Home Business, o pacote específico de au
 1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — este Source Lock;
 2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.3 — `docs/experience-architecture/public-home-business-master-document.md`;
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002` v1.0.0 — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.2 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.3 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 5. `GPA-004` v1.6.0 — arquitetura funcional vigente do Guivos Business.
 
 A autoridade narrativa anterior permanece histórica e explicativa, mas **não deve ser adicionada automaticamente ao pacote inicial de materialização**, pois o Documento Mestre já incorpora os refinamentos de precedência posteriores.
@@ -793,7 +793,7 @@ No candidato v6, o conjunto específico do Business deve usar:
 2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — versão exata fixada pelo candidato/snapshot;
 3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
-5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.2`;
+5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3`;
 6. `GPA-004 v1.6.0` ou autoridade posterior vigente.
 
 O pacote poderá ser reduzido somente se uma autoridade posterior consolidar explicitamente as mesmas fronteiras.
