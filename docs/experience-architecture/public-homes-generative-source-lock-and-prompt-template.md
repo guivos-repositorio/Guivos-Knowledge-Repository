@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.2.9
+version: 2.2.10
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -321,21 +321,21 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.5` — `docs/experience-architecture/public-home-business-source-lock.md`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6` — `docs/experience-architecture/public-home-business-source-lock.md`;
 - `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` — `docs/experience-architecture/public-home-business-master-document.md`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.2` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.6.0` — `docs/product-architecture/business.md`.
 
 ### 6.8 Home Pública — Guivos Intelligence
 
 Fontes específicas:
 
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.5` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.4` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.4` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
-- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0` — `docs/product-architecture/intelligence-product-source-lock.md`;
-- `GPA-006 v2.0.0` — `docs/product-architecture/intelligence.md`.
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.6` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.5` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` — `docs/product-architecture/intelligence-product-source-lock.md`;
+- `GPA-006 v2.0.1` — `docs/product-architecture/intelligence.md`.
 
 Os antigos GENINPUTs de checkpoints superados não entram como autoridade operacional do v5. A emissão gera um `00-LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL` novo para cada Home, contendo checkpoint, SHAs, fontes, matriz operacional e prompt preenchido.
 
