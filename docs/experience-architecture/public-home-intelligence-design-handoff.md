@@ -79,7 +79,7 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v1.0.0
 → governa narrativa pública, copy e fronteiras da Home
 
 NÍVEL 2
