@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.3.4
+version: 0.4.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -141,8 +141,8 @@ Uma Home somente pode ser considerada pronta para entrega à designer quando seu
 | Travel | `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.1` | RECONCILED |
 | Media | `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` | RECONCILED |
 | Ads | `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` | RECONCILED |
-| Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.2` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.1` | RECONCILED |
-| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.3` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.1` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.1` | RECONCILED |
+| Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.2` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.2` | RECONCILED |
+| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.3` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.2` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.3` | RECONCILED |
 
 ## 6. Findings iniciais comprovados
 
@@ -358,14 +358,14 @@ A adjudicação histórica permanece proveniência; não é mais necessária par
 
 ### F-DS-004 — RESOLVED
 
-`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.2` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.1` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.3` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.1` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.1` foram temporalmente reconciliados com o regime designer-first / IA opcional.
+`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.2` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.2` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.3` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.2` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.3` foram temporalmente reconciliados com o regime designer-first / IA opcional.
 
 ### F-DS-005 — RESOLVED FOR V6 CONTRACT
 
 O template comum foi promovido para:
 
 ```text
-GKR-UX-HOMES-GENINPUT-001 v2.2.4
+GKR-UX-HOMES-GENINPUT-001 v2.2.5
 → TOOL-NEUTRAL
 → AI OPTIONAL
 → MANUAL DESIGN DOES NOT REQUIRE GENERATIVE EXECUTION RECORD
@@ -387,7 +387,7 @@ REVIEW
 
 P1 — BUSINESS SOURCE LOCK
 → REMEDIATED
-→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.1
+→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.2
 → DESIGNER-FIRST / AI-OPTIONAL
 → NO FROZEN VISUAL REPRESENTATION
 
@@ -402,7 +402,33 @@ P2 — CURRENT-STATE MASTER VERSIONS
 → BUSINESS = v1.1.1
 ```
 
-As remediações alteram o HEAD; portanto os findings somente podem ser considerados encerrados após **Semantic + Mechanical no novo HEAD** e **novo review independente**.
+As remediações do primeiro review foram validadas em `87b460a22ec4ab80cffee58155993977d2732e8c` por Semantic #1293 e Mechanical #1522, mas o re-review encontrou dois P1 adicionais.
+
+## 10.2 Re-review independente — adjudicação dos P1 residuais
+
+Re-review executado sobre o HEAD `87b460a22ec4ab80cffee58155993977d2732e8c`:
+
+```text
+REVIEW
+→ 5257962131
+
+P1 — BUSINESS INTERNAL RECONCILIATION
+→ REMEDIATED
+→ BUSINESS MASTER PIN = v1.1.2
+→ BUSINESS SOURCE LOCK = v1.1.2
+→ OBSOLETE SEPARATE DESIGN AUTHORIZATION REMOVED
+→ INTELLIGENCE MASTER NO LONGER LISTED AS FUTURE GAP
+
+P1 — INTELLIGENCE AUTHORITY / COPY
+→ REMEDIATED
+→ MASTER AUTHORITY ORDER = v0.2.3
+→ SOURCE LOCK = v1.1.2
+→ DESIGN HANDOFF = v1.1.3
+→ QUESTION-MÃE + CTAs = REFERENCE COPY, MICROEDITORIALLY REFINABLE
+→ SEMANTIC INTENT / CLAIM BOUNDARIES REMAIN FROZEN
+```
+
+Estas remediações alteram novamente o HEAD. Portanto, o fechamento exige **Semantic + Mechanical no novo HEAD** e **novo review independente limpo**.
 
 ## 11. Estado candidato
 
@@ -413,8 +439,8 @@ C1–C15
 → 120 / 120
 
 OPEN MATERIAL FINDINGS
-→ 0 KNOWN AFTER REMEDIATION
-→ EXACT-HEAD REVALIDATION REQUIRED
+→ 0 KNOWN AFTER SECOND REMEDIATION
+→ EXACT-HEAD REVALIDATION + RE-REVIEW REQUIRED
 
 DESIGNER CREATIVE FREEDOM
 → PRESERVED
