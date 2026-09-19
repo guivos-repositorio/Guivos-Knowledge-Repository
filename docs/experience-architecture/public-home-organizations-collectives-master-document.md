@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -1811,4 +1811,30 @@ HOME O/C
 
 Estado deste documento:
 
-> **DOCUMENTO MESTRE RECONSTRUÍDO DOCUMENTALMENTE — MATERIALIZAÇÃO NÃO AUTORIZADA; AUDITORIA INTEGRAL AINDA EM CURSO.**
+> **DOCUMENTO MESTRE RECONSTRUÍDO E RECONCILIADO PARA CONSUMO NO REGIME DESIGNER-FIRST / IA OPCIONAL.**
+
+Estado procedimental corrente:
+
+```text
+DESIGN PRODUCTION RELEASE
+→ GRANTED
+→ EXTERNAL DESIGNER PRODUCTION
+
+DESIGNER
+→ CREATIVE AUTHOR
+→ MANUAL FIRST-CLASS
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+GKR-CREATED DESIGN / FIGMA
+→ NONE
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+
+HOME O/C AUTHENTICATED HIGH-FIDELITY
+→ NOT_GRANTED
+```
+
+Este estado libera a criação externa da **Home pública O/C** pela designer dentro das autoridades documentais vigentes. Não libera a experiência autenticada O/C, Product Engineering, implementação ou publicação automática.
