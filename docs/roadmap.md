@@ -1940,7 +1940,7 @@ Sequência governada:
 8. gerar oito Source Locks operacionais;
 9. materializar snapshot externo v5 — CONCLUÍDO;
 10. validar isolamento e reproduzibilidade — CONCLUÍDO;
-11. registrar snapshot v5 na autoridade corrente — EM CURSO NESTA FRENTE;
+11. registrar snapshot v5 na autoridade corrente — CONCLUÍDO / INTEGRADO EM `main`;
 12. Semantic + Mechanical no HEAD de registro;
 13. revisão independente;
 14. adjudicar findings, se houver;
