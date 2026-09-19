@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
-title: Homes Públicas — Prontidão de Produção de Design e Contrato Figma/IA
+title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.0.1
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: post_audit_design_production_readiness_release_granted_pre_execution
+maturity: designer_first_ai_optional_source_finalization
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -29,11 +29,33 @@ related:
   - GOG-001
 ---
 
-# Homes Públicas — Prontidão de Produção de Design e Contrato Figma/IA
+# Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
+
+
+## 0. Correção de precedência — autoria da designer
+
+Esta versão substitui qualquer leitura anterior que tratasse Figma Make como fase necessária.
+
+```text
+DESIGNER
+→ AUTHOR OF THE VISUAL SOLUTION
+→ MANUAL WORK IS FIRST-CLASS
+
+AI
+→ OPTIONAL
+→ DESIGNER-CONTROLLED
+
+GKR / CHATGPT
+→ DOES NOT CREATE THE DESIGN FILE
+→ DOES NOT PRESELECT VISUAL DIRECTION
+
+FINAL DESIGN TOOL
+→ CONTRACTUAL / DESIGNER WORKFLOW DECISION
+```
 
 ## 1. Finalidade
 
-Esta autoridade prepara as oito Homes públicas da Guivos para uma contratação real de Design em que Figma Make ou ferramenta equivalente pode ser usada para prototipação antes da construção definitiva no Figma.
+Esta autoridade prepara as oito Homes públicas da Guivos para uma contratação real de Design em que a designer cria manualmente com liberdade e pode usar sistemas de IA opcionalmente, sem ferramenta obrigatória definida pelo GKR.
 
 O objetivo é reduzir a zero os findings materiais documentais antes do release de produção, sem transformar documentação em direção artística.
 
@@ -46,7 +68,7 @@ Estado desta revisão:
 - arquitetura semântica das oito Homes: documentada e reconciliada;
 - método de handoff: reconciliado pós-auditoria;
 - template generativo: expandido para oito Homes;
-- contrato de protótipo e entrega Figma: definido por esta autoridade;
+- contrato de consumo, criação e entrega de Design: definido por esta autoridade;
 - pacote v5: preparado pelo Manifesto v5, ainda dependente de emissão pós-merge;
 - Design Production Release: não concedido por este documento.
 
@@ -68,7 +90,7 @@ Pertencem à liberdade criativa da designer:
 
 Não existe obrigação de reproduzir visual histórico, snapshot antigo, palette anterior, fonte anterior ou estética pré-existente.
 
-Depois da aprovação humana da direção de protótipo, a solução escolhida passa a ser a baseline criativa daquela entrega e deve ser documentada no Figma final. Mudança material posterior de conceito de Hero, linguagem visual, arquitetura de navegação, composição global ou direção criativa exige nova aprovação humana antes do aceite final; refinamentos não materiais permanecem sob autonomia da designer.
+Depois da aprovação humana da direção criativa, a solução escolhida passa a ser a baseline criativa daquela entrega e deve ser documentada no artefato final entregue pela designer. Mudança material posterior de conceito de Hero, linguagem visual, arquitetura de navegação, composição global ou direção criativa exige nova aprovação humana antes do aceite final; refinamentos não materiais permanecem sob autonomia da designer.
 
 ## 4. O que permanece governado
 
@@ -109,7 +131,7 @@ Pessoa/O-C já estavam explicitamente reclassificados como evidência histórica
 
 Decisão: o pacote v5 não usa GENINPUT histórico como autoridade operacional. Cada `LEIA-PRIMEIRO` do v5 funciona como Source Lock operacional daquela Home e registra o checkpoint exato da emissão.
 
-### F-05 — aceite final do Figma não estava suficientemente determinístico
+### F-05 — aceite final do Design não estava suficientemente determinístico
 
 Decisão: este documento estabelece o contrato mínimo de produção e aceite sem definir estética.
 
@@ -125,10 +147,10 @@ Reclassificação humana: **não é gap**. É liberdade deliberada de Design.
 
 Quatro autoridades comuns acompanham todas as Homes:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.5.0`;
-2. `GKR-UX-HOMES-GENINPUT-001 v2.0.0`;
-3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0`;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v2.0.0`.
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.0`;
+2. `GKR-UX-HOMES-GENINPUT-001 v2.1.0`;
+3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.1.0`;
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.0`.
 
 Fontes específicas:
 
@@ -227,7 +249,7 @@ A exclusão de documentos de aprofundamento do pacote inicial não os invalida. 
 
 ## 7. Regra de isolamento para IA
 
-Uma execução de Figma Make trabalha uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente.
+Quando IA for utilizada, trabalhar uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente.
 
 A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + quatro fontes comuns + fontes específicas daquela Home.
 
@@ -235,7 +257,7 @@ Output inicial obrigatório: `EXPLORAÇÃO / NÃO CANÔNICA`.
 
 ## 8. Classes obrigatórias de informação
 
-Toda informação relevante usada por humano, Figma Make ou ferramenta equivalente deve estar tratável em uma destas oito classes:
+Toda informação relevante usada pela designer ou por sistema de IA deve estar tratável em uma destas oito classes:
 
 - `CANONICAL` — decisão governada que deve ser preservada;
 - `DESIGN_CREATIVE` — campo deliberadamente aberto à criação da designer;
@@ -483,7 +505,7 @@ A entrega pode ser aceita quando:
 FIGMA FINAL CANDIDATO
 ≠ SERVIÇO CONCLUÍDO
 
-FIGMA FINAL ACEITO
+FINAL DESIGN ACCEPTED
 → PRÉ-CONDIÇÃO DE FECHAMENTO OPERACIONAL DA ENTREGA DE DESIGN
 
 TERMOS DE PAGAMENTO / CONTRATO
@@ -533,9 +555,9 @@ V5 SNAPSHOT
 DESIGN PRODUCTION RELEASE
 → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 
-FIGMA MAKE EXECUTION
+AI-ASSISTED DESIGN
 → AUTHORIZED TO EXECUTE / NOT_STARTED
 
-FINAL FIGMA PRODUCTION
+FINAL DESIGN PRODUCTION
 → NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
 ```
