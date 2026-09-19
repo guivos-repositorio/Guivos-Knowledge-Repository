@@ -30,7 +30,7 @@ O v5 elimina GENINPUTs operacionais de checkpoints superados do pacote de produ�
 
 A ausência de identidade visual canônica não é lacuna: estética e sistema visual são responsabilidade criativa da designer.
 
-## 3. Composição canônica — 26 fontes únicas
+## 3. Composição canônica — 25 fontes únicas
 
 ### 3.1 Fontes comuns
 
@@ -49,33 +49,31 @@ A ausência de identidade visual canônica não é lacuna: estética e sistema v
 ### 3.4 Mall
 8. `docs/experience-architecture/public-home-mall-master-document.md` — `GKR-UX-HOME-MALL-MASTER-001 v1.0.0`;
 9. `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md` — `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`;
-10. `docs/project/home-masters-remediation-adjudication.md` — `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0` — fonte compartilhada Mall/Travel.
-
 ### 3.5 Travel
-11. `docs/experience-architecture/public-home-travel-master-document.md` — `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0`;
-12. `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md` — `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
+10. `docs/experience-architecture/public-home-travel-master-document.md` — `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0`;
+11. `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md` — `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### 3.6 Media
-13. `docs/experience-architecture/public-home-media-master-document.md` — `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0`;
-14. `docs/product-architecture/media.md` — `GPA-005 v1.2.0`.
+12. `docs/experience-architecture/public-home-media-master-document.md` — `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0`;
+13. `docs/product-architecture/media.md` — `GPA-005 v1.2.0`.
 
 ### 3.7 Ads
-15. `docs/experience-architecture/public-home-ads-master-document.md` — `GKR-UX-HOME-ADS-MASTER-001 v1.0.0`;
-16. `docs/product-architecture/ads.md` — `GPA-007 v1.3.0`.
+14. `docs/experience-architecture/public-home-ads-master-document.md` — `GKR-UX-HOME-ADS-MASTER-001 v1.0.0`;
+15. `docs/product-architecture/ads.md` — `GPA-007 v1.3.0`.
 
 ### 3.8 Business
-17. `docs/experience-architecture/public-home-business-source-lock.md` — `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0`;
-18. `docs/experience-architecture/public-home-business-master-document.md` — `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0`;
-19. `docs/experience-architecture/public-home-business-conversion-authority-v2.md` — `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
-20. `docs/experience-architecture/public-home-business-authority-contracts.md` — `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0`;
-21. `docs/product-architecture/business.md` — `GPA-004 v1.6.0`.
+16. `docs/experience-architecture/public-home-business-source-lock.md` — `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0`;
+17. `docs/experience-architecture/public-home-business-master-document.md` — `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0`;
+18. `docs/experience-architecture/public-home-business-conversion-authority-v2.md` — `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
+19. `docs/experience-architecture/public-home-business-authority-contracts.md` — `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0`;
+20. `docs/product-architecture/business.md` — `GPA-004 v1.6.0`.
 
 ### 3.9 Intelligence
-22. `docs/experience-architecture/public-home-intelligence-design-handoff.md` — `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0`;
-23. `docs/experience-architecture/public-home-intelligence-source-lock.md` — `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`;
-24. `docs/experience-architecture/public-home-intelligence-master-document.md` — `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`;
-25. `docs/product-architecture/intelligence-product-source-lock.md` — `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0`;
-26. `docs/product-architecture/intelligence.md` — `GPA-006 v2.0.0`.
+21. `docs/experience-architecture/public-home-intelligence-design-handoff.md` — `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0`;
+22. `docs/experience-architecture/public-home-intelligence-source-lock.md` — `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`;
+23. `docs/experience-architecture/public-home-intelligence-master-document.md` — `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`;
+24. `docs/product-architecture/intelligence-product-source-lock.md` — `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0`;
+25. `docs/product-architecture/intelligence.md` — `GPA-006 v2.0.0`.
 
 ## 4. Oito guias operacionais
 
@@ -97,9 +95,9 @@ A emissão v5 deve gerar oito arquivos adicionais `00-LEIA-PRIMEIRO.md`, um por 
 
 `GUIVOS-HOMES-DESIGN-HANDOFF-v5/` deve conter `00-COMUM` e oito diretórios isolados: Pessoa, Organizações-e-Coletivos, Mall, Travel, Media, Ads, Business e Intelligence.
 
-Os 26 arquivos canônicos devem reutilizar os blobs do mesmo checkpoint pós-merge. Os oito guias podem ser materializados especificamente para a emissão.
+Os 25 arquivos canônicos devem reutilizar os blobs do mesmo checkpoint pós-merge. Os oito guias podem ser materializados especificamente para a emissão.
 
-Contagem planejada: `26 FONTES CANÔNICAS + 8 GUIAS = 34 ARQUIVOS EXTERNOS`.
+Contagem planejada: `25 FONTES CANÔNICAS + 8 GUIAS = 33 ARQUIVOS EXTERNOS`.
 
 ## 6. Regra para ferramentas generativas
 
@@ -122,7 +120,7 @@ Referências adicionais entram somente para resolver dúvida concreta.
 Somente após merge deste changeset:
 
 1. capturar `main` pós-merge;
-2. confirmar 26/26 fontes e versões;
+2. confirmar 25/25 fontes e versões;
 3. confirmar que todos os blobs pertencem ao mesmo checkpoint;
 4. gerar oito Source Locks operacionais;
 5. materializar branch/snapshot v5;
