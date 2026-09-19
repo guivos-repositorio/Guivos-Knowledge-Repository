@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.9.0
+version: 1.10.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
@@ -16,6 +16,10 @@ related:
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
@@ -68,6 +72,8 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | wireframe low-fidelity da experiência autenticada do Coletivo | **Delivery v0.1.0 + Validation v1.0.0** | PASS |
 | validação de wireframe da Organização | **PASS / 0 findings materiais** | concluída |
 | validação de wireframe do Coletivo | **PASS / 0 findings materiais** | concluída |
+| elegibilidade high-fidelity O/C | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0** | concluída |
+| autorização high-fidelity O/C | **NOT_GRANTED** | pendente de ato humano separado |
 | UI / protótipo autenticado | não definido | pendente |
 | Engenharia da experiência autenticada | não autorizada a partir de wireframe | pendente |
 
@@ -398,6 +404,7 @@ Materiais anteriores que afirmavam wireframes principais vigentes ou validação
 | autorização de wireframes low-fidelity | `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001` |
 | entrega de wireframes low-fidelity | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001` |
 | validação funcional low-fidelity | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001` |
+| elegibilidade high-fidelity | `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001` |
 | Jornada da Organização | `journeys/organization.md` |
 | Jornada do Coletivo | `journeys/collective.md` |
 | Home pública | `public-home-organizations-collectives-master-document.md` |
@@ -426,7 +433,8 @@ Este commit **não autoriza nem materializa** a continuação. Permanecem delibe
 
 ```text
 Authenticated Wireframes / low-fidelity — DELIVERY + VALIDATION PASS
-→ high-fidelity eligibility — POSSIBLE NEXT GOVERNED FRONT
+→ high-fidelity eligibility — PASS / v1.0.0
+→ high-fidelity design authorization — NOT_GRANTED / NEXT POSSIBLE HUMAN GATE
 → UI high-fidelity — NOT AUTHORIZED
 → protótipo
 → testes
