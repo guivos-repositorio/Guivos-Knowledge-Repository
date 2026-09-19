@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 5.0.2
+version: 5.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: design_delivery_v5_release_granted_pre_execution
+maturity: v5_historical_v6_source_readiness_remediation
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -23,13 +23,13 @@ related:
 
 ## 1. Finalidade
 
-Este Manifesto define o pacote externo v5 emitido para a frente de Design agora liberada, preservando o snapshot materializado e os gates posteriores internos de direção e aceite.
+Este Manifesto preserva o pacote externo v5 como snapshot histórico congelado e governa a transição para uma nova emissão somente depois da remediação `SOURCE_READY` das oito Homes.
 
 O snapshot v4 permanece histórico e reproduzível, mas não é pacote atual porque seu checkpoint foi superado.
 
-## 2. Princípio do v5
+## 2. Princípio do v5 e regra para a próxima emissão
 
-O v5 elimina GENINPUTs operacionais de checkpoints superados do pacote de produção. Em seu lugar, cada Home recebe um `LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL` gerado no momento da emissão a partir das autoridades pós-auditoria.
+O v5 eliminou GENINPUTs operacionais de checkpoints superados e gerou um `LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL` por Home. O snapshot permanece válido como evidência histórica, mas não será reutilizado para nova execução após a mudança material do modelo operacional. A próxima emissão será manual-first, AI-optional e tool-agnostic.
 
 A ausência de identidade visual canônica não é lacuna: estética e sistema visual são responsabilidade criativa da designer.
 
@@ -37,10 +37,10 @@ A ausência de identidade visual canônica não é lacuna: estética e sistema v
 
 ### 3.1 Fontes comuns
 
-1. `docs/experience-architecture/public-homes-design-handoff.md` — `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.5.0`;
-2. `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — `GKR-UX-HOMES-GENINPUT-001 v2.0.0`;
-3. `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0`;
-4. `docs/experience-architecture/public-homes-design-delivery-operational-flow.md` — `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v2.0.0`.
+1. `docs/experience-architecture/public-homes-design-handoff.md` — `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.0`;
+2. `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — `GKR-UX-HOMES-GENINPUT-001 v2.1.0`;
+3. `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.1.0`;
+4. `docs/experience-architecture/public-homes-design-delivery-operational-flow.md` — `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.0`.
 
 ### 3.2 Pessoa
 
@@ -100,7 +100,8 @@ A emissão v5 gerou oito arquivos adicionais `00-LEIA-PRIMEIRO.md`, um por Home.
 - liberdades criativas;
 - matriz das oito classes operacionais de informação;
 - proibições de inferência;
-- prompt inicial para Figma Make;
+- brief de Design para consumo humano;
+- prompt opcional e tool-agnostic para IA;
 - estado inicial `EXPLORAÇÃO / NÃO CANÔNICA`;
 - checklist de autoauditoria.
 
@@ -160,9 +161,9 @@ MATERIAL CHANGE TO MEANING / INVARIANT / COPY LOCK / SOURCE PACKAGE / PROMPT / A
 
 Uma alteração criativa no Figma que não modifica o contrato do GKR não exige reemissão do pacote fonte.
 
-## 6. Regra para ferramentas generativas
+## 6. Regra de consumo pela designer e uso opcional de IA
 
-Não carregar documentos específicos de múltiplas Homes na mesma execução.
+A designer deve trabalhar uma Home por vez no contexto inicial. Se usar IA, não carregar documentos específicos de múltiplas Homes na mesma execução.
 
 O contexto de cada execução deve ser:
 
@@ -174,7 +175,7 @@ O contexto de cada execução deve ser:
 FONTES ESPECÍFICAS DA HOME
 ```
 
-A identidade visual é livre; fatos e arquitetura não são.
+A identidade visual é livre; fatos e arquitetura não são. IA é opcional e não constitui gate obrigatório.
 
 ## 7. Materiais fora do pacote inicial
 
@@ -200,7 +201,7 @@ O gate de emissão foi executado e validado:
 6. estrutura, isolamento e reproduzibilidade validados;
 7. snapshot registrado em `GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001`.
 
-O gate humano posterior foi satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`. O snapshot permanece congelado; a nova autoridade libera seu uso para a fase de Design sem reescrever o pacote.
+O gate humano de v5 foi historicamente satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`. Após a mudança material de operating model, o v5 permanece congelado e não deve iniciar nova execução. Uma nova emissão exige fechamento `8 / 8 SOURCE_READY`, validação e novo ato humano.
 
 ## 9. Estado
 
@@ -213,12 +214,18 @@ SNAPSHOT
 → commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
 → tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
 
-DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+V5 DESIGN PRODUCTION RELEASE
+→ HISTORICALLY GRANTED
 
-FIGMA MAKE
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+CURRENT EXTERNAL DESIGN START
+→ SUSPENDED PENDING SOURCE-READINESS REMEDIATION
 
-FINAL FIGMA
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+DESIGNER MANUAL CREATION
+→ TARGET MODEL
+
+AI SUPPORT
+→ OPTIONAL / TOOL-AGNOSTIC
+
+NEW SNAPSHOT
+→ NOT_STARTED
 ```
