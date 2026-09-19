@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.3
+version: 1.1.4
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
@@ -77,16 +77,16 @@ GPA-004 v1.6.0
 
 Objetivo do lock:
 
-> preservar uma fonte pública única, coerente e auditável para a futura materialização da Home Business, sem reabrir decisões já validadas nem antecipar decisões comerciais ainda não congeladas.
+> preservar uma fonte pública única, coerente e auditável para a produção externa vigente de Design da Home Business, sem reabrir decisões já validadas nem antecipar decisões comerciais ainda não congeladas.
 
 ## 3. Pacote de fontes autorizado
 
-Para qualquer futura materialização da Home Business, o pacote inicial de autoridade deve ser restrito a:
+Para a produção externa de Design da Home Business, o pacote específico de autoridade deve ser restrito a:
 
 1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — este Source Lock;
-2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.2 — `docs/experience-architecture/public-home-business-master-document.md`;
+2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.3 — `docs/experience-architecture/public-home-business-master-document.md`;
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002` v1.0.0 — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.0 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.2 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 5. `GPA-004` v1.6.0 — arquitetura funcional vigente do Guivos Business.
 
 A autoridade narrativa anterior permanece histórica e explicativa, mas **não deve ser adicionada automaticamente ao pacote inicial de materialização**, pois o Documento Mestre já incorpora os refinamentos de precedência posteriores.
@@ -794,14 +794,14 @@ No candidato v6, o conjunto específico do Business deve usar:
 2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — versão exata fixada pelo candidato/snapshot;
 3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
-5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0`;
+5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.2`;
 6. `GPA-004 v1.6.0` ou autoridade posterior vigente.
 
 O pacote poderá ser reduzido somente se uma autoridade posterior consolidar explicitamente as mesmas fronteiras.
 
 ## 29. Autoauditoria do Source Lock
 
-Antes de qualquer futura materialização, confirmar:
+Antes de qualquer consumo de handoff para Design, confirmar:
 
 - a pergunta-mãe permanece intacta?;
 - evolução humana continua anterior ao produto?;
