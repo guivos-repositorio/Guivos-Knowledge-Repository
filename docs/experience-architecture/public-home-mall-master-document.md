@@ -801,9 +801,9 @@ Ele:
 - protege transparência entre destaque, recomendação, oferta e patrocínio;
 - estabelece prova e confiança sem alegações artificiais de escala;
 - mantém Página de Produto, Perfil, Carrinho e Checkout fora do escopo;
-- não autoriza wireframe, protótipo, UI ou implementação.
+- não autoriza, por si só, implementação, publicação ou Product Engineering.
 
-Qualquer materialização posterior requer decisão própria e não decorre automaticamente da existência deste documento.
+A criação externa de Design da Home pública é governada pela autoridade comum de Design Production Release e pelo pacote vigente. Este Master define verdade e limites; não define identidade visual nem ferramenta.
 
 ---
 
