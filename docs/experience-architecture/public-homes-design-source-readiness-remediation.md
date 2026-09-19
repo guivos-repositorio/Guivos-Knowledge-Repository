@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 title: Homes Públicas — Remediação de Prontidão Documental para Designer e IA
 status: draft
-version: 0.4.0
+version: 0.5.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: source_readiness_remediation_in_progress_person_oc_mall_pass
+maturity: source_readiness_remediation_in_progress_person_oc_mall_travel_pass
 depends_on:
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-GENINPUT-001
@@ -346,8 +346,8 @@ NEW EXTERNAL SNAPSHOT
 | Pessoa | **SOURCE_READY / PASS** | 0 |
 | Organizações e Coletivos | **SOURCE_READY / PASS** | 0 |
 | Mall | **SOURCE_READY / PASS** | 0 |
-| Travel | UNDER_AUDIT | — |
-| Media | NOT_YET_AUDITED | — |
+| Travel | **SOURCE_READY / PASS** | 0 |
+| Media | UNDER_AUDIT | — |
 | Ads | NOT_YET_AUDITED | — |
 | Business | NOT_YET_AUDITED | — |
 | Intelligence | NOT_YET_AUDITED | — |
@@ -373,6 +373,14 @@ Home Mall foi fechada após:
 - confirmação contra GPA-002 v1.2.0;
 - explicitação de Movimento 10 = Prova e Confiança com duas facetas;
 - contratos de preço/pontos, disponibilidade, personalização, campanha e patrocínio;
+- acessibilidade/mobile/fallback;
+- matriz operacional e brief para designer/IA;
+- confirmação de zero gap semântico material.
+
+Home Travel foi fechada após:
+- confirmação das nove frentes operacionais contra GPA-003 v1.3.0;
+- separação entre serviço real e inventário/tarifa/disponibilidade específicos;
+- contratos de destino, experiência, recomendação, patrocínio e pontos;
 - acessibilidade/mobile/fallback;
 - matriz operacional e brief para designer/IA;
 - confirmação de zero gap semântico material.
