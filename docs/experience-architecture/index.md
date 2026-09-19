@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.0
+version: 1.20.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-19
 related:
@@ -55,6 +55,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
   - M7.88
 normative: false
 ---
@@ -161,9 +162,12 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C4B — validação integrada individual e promoção de TRN-008..013
 → O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C State Map — DEFINED / CANONICAL DOCUMENTARY
-→ Public Homes Design Production Readiness — ACTIVE / V5 SNAPSHOT EMITTED / DESIGN RELEASE GRANTED
-→ Public Homes Design Production Release — GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
-→ Public Homes Design Handoff v5 Snapshot — delivery/design-handoff-v5 / 34 FILES / 26/26 BYTE-PRESERVED
+→ Public Homes Design Production Release — GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
+→ Public Homes Source Readiness Audit — IN_PROGRESS / GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
+→ Public Homes Design Handoff v5 Snapshot — FROZEN / HISTORICAL FOR NEW DESIGN START / 34 FILES / 26/26 BYTE-PRESERVED
+→ Public Homes v6 Source Package — NOT_EMITTED
+→ External Designer Start — DEFERRED UNTIL FINAL SOURCE READINESS PASS
+→ GKR / ChatGPT Figma Execution — NOT TO BE PERFORMED
 ```
 
 D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada. A definição documental do State Map O/C não altera esse estado.
@@ -307,4 +311,8 @@ A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. 
 
 ### Public Homes — Design Production Release
 
-[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) registra o ato humano posterior que concede `DESIGN PRODUCTION RELEASE = GRANTED`, libera Figma Make/exploração para execução e preserva o gate humano de direção antes do Figma definitivo.
+[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) registra `DESIGN PRODUCTION RELEASE = GRANTED`, preserva a futura produção externa pela designer e explicita que o GKR/ChatGPT não cria artefatos Figma. O início operacional da designer está postergado até o fechamento da auditoria final de prontidão das fontes.
+
+### Public Homes — Final Source Readiness for Designer and AI
+
+[GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001](public-homes-designer-ai-source-readiness-audit.md) governa a revisão final 8/8 dos Masters, fontes específicas e autoridades comuns antes de um novo pacote v6. O objetivo é `P0 = 0`, `P1 = 0`, consumibilidade humana/AI `PASS` e nenhuma definição visual pré-imposta.
