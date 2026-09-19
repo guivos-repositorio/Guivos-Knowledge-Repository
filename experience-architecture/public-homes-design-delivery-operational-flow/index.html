@@ -1627,6 +1627,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../public-homes-design-production-release/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Design Production Release
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../public-homes-design-delivery-manifest/" class="md-nav__link">
         
   
@@ -3636,12 +3671,13 @@
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este fluxo governa como a designer deve consumir o pacote v5, usar Figma Make para prototipação e somente depois construir o Figma definitivo.</p>
 <h2 id="2-gate-de-inicio">2. Gate de início<a class="headerlink" href="#2-gate-de-inicio" title="Permanent link">&para;</a></h2>
-<p>Não iniciar execução enquanto faltar qualquer item:</p>
+<p>O gate de início foi satisfeito. A execução pode começar somente dentro deste fluxo, porque coexistem:</p>
 <ul>
 <li>snapshot v5 materializado e validado;</li>
 <li>Source Lock operacional da Home;</li>
-<li>Design Production Release humano explícito.</li>
+<li><code>GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0 = GRANTED</code>.</li>
 </ul>
+<p>A autorização de início não elimina os gates internos de revisão humana, direção criativa aprovada e aceite final.</p>
 <h2 id="3-isolamento-de-contexto">3. Isolamento de contexto<a class="headerlink" href="#3-isolamento-de-contexto" title="Permanent link">&para;</a></h2>
 <p>Trabalhar uma Home por vez. Carregar <code>00-COMUM</code>, o <code>00-LEIA-PRIMEIRO</code> da Home e somente suas fontes específicas.</p>
 <h2 id="4-fase-a-compreensao-humana">4. Fase A — compreensão humana<a class="headerlink" href="#4-fase-a-compreensao-humana" title="Permanent link">&para;</a></h2>
@@ -3716,7 +3752,7 @@
 <p>Se uma decisão semântica mudar depois do Source Lock, interromper a Home afetada, reconciliar o impacto e emitir novo checkpoint quando material.</p>
 <p>Uma melhoria puramente criativa que não altera contrato pode ocorrer dentro do processo de Design e ser consolidada no Figma final.</p>
 <h2 id="10-estado">10. Estado<a class="headerlink" href="#10-estado" title="Permanent link">&para;</a></h2>
-<p><code>FLOW v2 READY / EXECUTION NOT RELEASED UNTIL V5 SNAPSHOT + HUMAN DESIGN PRODUCTION RELEASE</code>.</p>
+<p><code>FLOW v2.0.1 READY / DESIGN PRODUCTION RELEASE GRANTED / FIGMA MAKE AUTHORIZED TO EXECUTE / NOT_STARTED / FINAL FIGMA REQUIRES HUMAN DIRECTION APPROVAL</code>.</p>
 
 
 

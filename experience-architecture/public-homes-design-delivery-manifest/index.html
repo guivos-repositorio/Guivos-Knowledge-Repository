@@ -13,7 +13,7 @@
       
       
       
-        <link rel="prev" href="../public-homes-design-production-readiness-and-figma-contract/">
+        <link rel="prev" href="../public-homes-design-production-release/">
       
       
         <link rel="next" href="../public-homes-design-delivery-operational-flow/">
@@ -1600,6 +1600,41 @@
     
   
     Homes — Prontidão de Produção / Figma e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-production-release/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Design Production Release
   
 
     
@@ -3878,7 +3913,7 @@
 
 <h1 id="homes-publicas-manifesto-canonico-de-entrega-para-design">Homes Públicas — Manifesto Canônico de Entrega para Design<a class="headerlink" href="#homes-publicas-manifesto-canonico-de-entrega-para-design" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este Manifesto define o pacote externo v5 emitido para a futura frente de Design, preservando o snapshot materializado e os gates posteriores de autorização.</p>
+<p>Este Manifesto define o pacote externo v5 emitido para a frente de Design agora liberada, preservando o snapshot materializado e os gates posteriores internos de direção e aceite.</p>
 <p>O snapshot v4 permanece histórico e reproduzível, mas não é pacote atual porque seu checkpoint foi superado.</p>
 <h2 id="2-principio-do-v5">2. Princípio do v5<a class="headerlink" href="#2-principio-do-v5" title="Permanent link">&para;</a></h2>
 <p>O v5 elimina GENINPUTs operacionais de checkpoints superados do pacote de produção. Em seu lugar, cada Home recebe um <code>LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL</code> gerado no momento da emissão a partir das autoridades pós-auditoria.</p>
@@ -4028,7 +4063,7 @@ FONTES ESPECÍFICAS DA HOME
 <li>estrutura, isolamento e reproduzibilidade validados;</li>
 <li>snapshot registrado em <code>GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001</code>.</li>
 </ol>
-<p>O único gate posterior restante nesta cadeia é uma decisão humana separada sobre <code>DESIGN PRODUCTION RELEASE</code>.</p>
+<p>O gate humano posterior foi satisfeito por <code>GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0</code>. O snapshot permanece congelado; a nova autoridade libera seu uso para a fase de Design sem reescrever o pacote.</p>
 <h2 id="9-estado">9. Estado<a class="headerlink" href="#9-estado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>V5
 → EMITTED / MATERIALIZED / VALIDATED
@@ -4039,10 +4074,13 @@ SNAPSHOT
 → tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
 
 DESIGN PRODUCTION RELEASE
-→ NOT_GRANTED
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 
-FIGMA MAKE / FINAL FIGMA
-→ NOT_RELEASED
+FIGMA MAKE
+→ AUTHORIZED TO EXECUTE / NOT_STARTED
+
+FINAL FIGMA
+→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
 </code></pre></div>
 
 
