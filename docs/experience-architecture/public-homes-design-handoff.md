@@ -1,105 +1,56 @@
 ---
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
-title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
+title: Homes Públicas — Handoff Canônico para Design e Sistemas de IA de Apoio
 status: active
-version: 1.6.0
+version: 2.0.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
 maturity: v6_human_designer_ai_assisted_handoff_candidate
 depends_on:
   - GKR-STATE-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
-  - GKR-FULL-CORPUS-AUDIT-001
-  - GKR-UX-HOME-MASTER-001
-  - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
-  - GKR-UX-HOME-OC-MASTER-001
-  - GKR-UX-HOME-OC-MEDIA-SUPPLY-001
-  - GKR-UX-HOME-MALL-MASTER-001
-  - GKR-UX-HOME-MALL-MEDIA-SUPPLY-001
-  - GKR-UX-HOME-TRAVEL-MASTER-001
-  - GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001
-  - GKR-UX-HOME-MEDIA-MASTER-001
-  - GPA-005
-  - GKR-UX-HOME-ADS-MASTER-001
-  - GPA-007
-  - GKR-UX-HOME-BUSINESS-SOURCELOCK-001
-  - GKR-UX-HOME-BUSINESS-MASTER-001
-  - GKR-UX-HOME-BUSINESS-CONVERSION-002
-  - GKR-UX-HOME-BUSINESS-AUTHORITY-001
-  - GPA-004
-  - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
-  - GKR-UX-HOME-INTELLIGENCE-MASTER-001
-  - GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
-  - GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
-  - GKR-UX-HOME-INTELLIGENCE-GENINPUT-001
-  - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
-  - GPA-006
-  - GKR-UX-HOMES-OUTCOME-001
+  - GKR-UX-HOMES-GENINPUT-001
+related:
+  - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
 ---
 
-# Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
-
-## 0. Estado pós-auditoria e gate de produção
-
-A Auditoria Integral do GKR está concluída com `PASS`. O método de handoff permanece vigente, mas esta revisão separa explicitamente **prontidão documental** de **liberação operacional para a contratação/produção definitiva no Figma**.
-
-```text
-AUDITORIA INTEGRAL
-→ COMPLETED / PASS
-
-HANDOFF CANÔNICO
-→ RECONCILIADO PÓS-AUDITORIA
-
-DESIGN PRODUCTION READINESS
-→ GOVERNADO POR GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
-
-DESIGN PRODUCTION RELEASE
-→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
-
-V5 SNAPSHOT / PACOTE EXTERNO
-→ FROZEN / HISTORICAL FOR NEW EXECUTION
-
-V6 DOCUMENTARY SOURCE
-→ UNDER FINALIZATION
-
-EXTERNAL DESIGN EXECUTION
-→ HOLD UNTIL V6 SNAPSHOT
-```
-
-O `DESIGN PRODUCTION RELEASE` permanece concedido em `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0`, mas o início de uma nova execução externa deve aguardar o snapshot v6 que incorpora este modelo.
-
-### 0.1 Liberdade criativa protegida
-
-O GKR **não congela identidade visual canônica** para estas Homes. A designer pode criar, com originalidade e autonomia, tipografia, paleta, imagens, ilustração, iconografia, grid, ritmo, composição, atmosfera, motion, linguagem gráfica, tratamento de componentes e tom de voz/copy não congelada.
-
-Essas escolhas são **output de Design**, não pré-condição documental. Depois que uma direção for aprovada no gate humano de direção, a solução escolhida deve ser documentada pela designer no próprio Figma para garantir consistência e handoff.
-
-A liberdade criativa não autoriza alterar significado, papéis de produto, nomenclatura oficial, assinatura institucional quando utilizada, claims factuais, regras econômicas, disponibilidade, dados, parceiros, causalidade, privacidade ou demais contratos governados.
-
-```text
-SEMANTIC / FUNCTIONAL TRUTH
-→ GKR
-
-VISUAL / CREATIVE EXPRESSION
-→ DESIGN
-
-AI / GENERATIVE TOOL
-→ OPTIONAL ASSISTIVE INSTRUMENT
-
-HUMAN APPROVAL
-→ SELECTS THE DIRECTION
-```
-
----
+# Homes Públicas — Handoff Canônico para Design e Sistemas de IA de Apoio
 
 ## 1. Finalidade
 
-Este documento governa o **handoff das oito Homes públicas já convergidas da Guivos para a fase de Design, UX, UI, wireframe e prototipação**.
+Este documento é a autoridade procedimental comum para entregar o conhecimento das oito Homes públicas à designer e, quando útil, a sistemas de IA de apoio.
 
-Seu objetivo é permitir que Design trabalhe com um conjunto pequeno, atual e semanticamente controlado de fontes, sem reconstruir decisões a partir do histórico completo do Guivos Knowledge Repository.
+Ele existe para que a designer **não precise reconstruir o produto a partir do histórico do GKR** e, ao mesmo tempo, **não receba uma solução visual pré-fabricada**.
 
-As oito Homes abrangidas por esta versão são:
+```text
+GKR
+→ SIGNIFICADO
+→ FUNÇÃO
+→ FRONTEIRAS
+→ VERDADE
+→ EVIDÊNCIA
+→ FONTES
+
+DESIGNER
+→ AUTORIA CRIATIVA
+→ DIREÇÃO VISUAL
+→ COMPOSIÇÃO
+→ HIERARQUIA
+→ SISTEMA VISUAL RESULTANTE
+→ ARQUIVO OFICIAL DE DESIGN
+
+IA
+→ APOIO OPCIONAL
+→ SEM AUTORIDADE CANÔNICA
+```
+
+## 2. Escopo
+
+Este Handoff cobre:
 
 1. Home Pública — Pessoa;
 2. Home Pública — Organizações e Coletivos;
@@ -110,583 +61,418 @@ As oito Homes abrangidas por esta versão são:
 7. Home Pública — Guivos Business;
 8. Home Pública — Guivos Intelligence.
 
-Este documento **não desenha as páginas** e não determina solução visual final. Ele define quais decisões precisam ser preservadas, quais fontes têm autoridade, como ferramentas generativas podem ser utilizadas e onde termina a arquitetura governada e começa a liberdade de Design.
+Ele não cria wireframes, layouts, UI, identidade visual ou protótipos dentro do GKR.
+
+## 3. Estado de execução
 
 ```text
-GKR
-→ define significado, função, narrativa, fronteiras, Source Locks e invariantes
-
-DESIGNER / FERRAMENTAS DE DESIGN
-→ produz e cura a exploração visual fora desta frente canônica
-
-IA DE APOIO
-→ pode auxiliar leitura, ideação e criação candidata
-→ não possui autoridade canônica
-
-VALIDAÇÃO HUMANA
-→ confronta forma e significado contra o GKR
-```
-
-Portanto, a atualização deste handoff **não cria mapa de página, wireframe, direção visual, UI ou protótipo dentro do GKR**.
-
----
-
-## 2. Regime da fase de Design
-
-Este Handoff constitui a **autoridade procedimental comum** para materialização externa das oito Homes. Ele define como a fase deve operar, mas **não concede sozinho o Design Production Release**.
-
-Uma nova execução somente fica liberada quando coexistirem:
-
-1. snapshot v6 materializado e reproduzível;
-2. Source Lock operacional v6 da Home;
-3. gates de validação sem finding material aberto;
-4. `DESIGN PRODUCTION RELEASE = GRANTED`.
-
-Depois desse gate, a **designer** pode executar:
-
-- estudo e síntese das fontes;
-- uso opcional de IA de apoio;
-- arquitetura visual;
-- wireframes de baixa fidelidade;
-- exploração de UX e direção visual;
-- UI de alta fidelidade;
-- protótipos de navegação e interação;
-- estudos responsivos desktop e mobile;
-- validação das soluções contra os contratos do GKR;
-- construção e curadoria do Figma definitivo pela designer dentro da direção humana aprovada.
-
-O release de Design não autoriza automaticamente:
-
-- desenvolvimento frontend ou backend;
-- publicação em produção;
-- alteração de arquitetura de produto;
-- mudança de modelo econômico;
-- criação de funcionalidades não governadas;
-- alteração de posicionamento;
-- Marketing/GTM;
-- novas promessas, métricas, parceiros, ofertas ou claims não sustentados;
-- merge de implementação.
-
-Regra:
-
-> **O Handoff governa COMO materializar. O Source Lock governa COM QUAIS verdades. O Design Production Release humano governa QUANDO iniciar.**
-
-Documentos Mestres, contratos e Source Locks continuam governando o que não pode ser semanticamente perdido durante a materialização.
-
-A existência deste documento, isoladamente, não significa que um snapshot de entrega já foi emitido, validado ou liberado.
-
----
-
-## 3. Princípio central
-
-> **Sistemas de IA podem apoiar exploração, ideação e criação candidata; não são fonte de decisão sobre a arquitetura das Homes nem autores da entrega oficial.**
-
-Uma solução visual ou verbal produzida por IA, plugin, template, benchmark ou referência externa permanece candidata. A designer decide se, como e quando incorporá-la. Somente validação humana contra o GKR pode aprovar uma direção.
-
----
-
-## 4. Pacote oficial de handoff
-
-A composição operacional de cada emissão é governada por `GKR-UX-HOMES-DESIGN-DELIVERY-001`.
-
-### 4.1 Pessoa
-
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
-
-### 4.2 Organizações e Coletivos
-
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
-
-### 4.3 Guivos Mall
-
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
-
-### 4.4 Guivos Travel
-
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
-
-### 4.5 Guivos Media
-
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, `GPA-005` e Source Lock + Prompt.
-
-### 4.6 Guivos Ads
-
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, `GPA-007` e Source Lock + Prompt.
-
-### 4.7 Guivos Business
-
-O contexto de Business permanece deliberadamente mais amplo. Usar somente o pacote definido pelo Manifesto vigente, baseado em:
-
-1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001`;
-2. `GKR-UX-HOME-BUSINESS-MASTER-001`;
-3. `GKR-UX-HOME-BUSINESS-CONVERSION-002`;
-4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001`;
-5. `GPA-004`;
-6. Source Lock Operacional + Prompt específico de Business.
-
-### 4.8 Guivos Intelligence
-
-Intelligence possui cadeia específica já convergida e deve ser materializado sem ser confundido com tecnologia, dashboard ou mecanismo de decisão.
-
-Ordem operacional específica no pacote v5:
-
-```text
-N0 — LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL V5
-     → fixa checkpoint, fontes, prompt e estado EXPLORAÇÃO
-
-N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
-     → congela significado e invariantes da Home
-
-N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
-     → traduz a Home para o contrato de Design
-
-N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
-     → preserva narrativa, copy e função pública
-
-N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
-     + GPA-006 v2.0.0
-     → governam significado e limites superiores do produto
-```
-
-O GENINPUT histórico de Intelligence permanece como proveniência de uma primeira exploração e não integra o input operacional do v5. Autoridades narrativas superiores continuam válidas por referência e devem ser consultadas quando houver dúvida material.
-
----
-
-## 5. Ordem geral de autoridade
-
-```text
-NÍVEL 0 — HANDOFF CANÔNICO COMUM
-→ governa processo, autorização, fontes e uso de ferramentas generativas
-
-NÍVEL 1 — SOURCE LOCK / HANDOFF / GENINPUT ESPECÍFICOS DA HOME
-→ governam o que pode ser materializado naquela Home e naquela rodada
-
-NÍVEL 2 — DOCUMENTO MESTRE E CONTRATOS COMPLEMENTARES VIGENTES
-→ governam significado, narrativa, experiência e fronteiras
-
-NÍVEL 3 — AUTORIDADES SUPERIORES DE PRODUTO
-→ resolvem dúvidas sobre identidade, autoridade e limites
-
-NÍVEL 4 — HISTÓRICO
-→ explica como uma decisão foi construída
-→ não substitui o estado vigente
-```
-
-Se houver conflito sobre significado da Home, prevalecem as autoridades específicas vigentes da Home conforme seu Source Lock.
-
----
-
-## 6. Controle semântico do input generativo
-
-Toda execução deve começar por um **Source Lock operacional específico da Home**.
-
-O Source Lock deve registrar:
-
-- Home;
-- objetivo da execução;
-- Handoff utilizado;
-- Documento Mestre e contratos aplicáveis;
-- versões;
-- commit/checkpoint do GKR;
-- decisões adicionais autorizadas para a execução;
-- questões abertas.
-
-> **A ferramenta deve saber de quais fontes pode aprender antes de receber liberdade para propor forma.**
-
-Não utilizar como input indiscriminado:
-
-- todo o GKR;
-- todas as oito Homes simultaneamente;
-- documentos históricos misturados a documentos vigentes;
-- rascunhos de conversa sem status governado;
-- benchmark como requisito;
-- output anterior de IA como fonte canônica.
-
----
-
-## 7. Estrutura obrigatória do prompt
-
-O prompt de exploração deve conter:
-
-1. **Objetivo** — Home e artefato a explorar;
-2. **Fontes autorizadas** — IDs e versões;
-3. **Invariantes** — contratos que não podem ser reinterpretados;
-4. **Liberdades de Design** — o que pode ser explorado;
-5. **Proibições de inferência** — o que não pode ser inventado;
-6. **Estado da saída** — `EXPLORAÇÃO / NÃO CANÔNICA`;
-7. **Questões abertas** — lacunas devem ser sinalizadas, não preenchidas como decisão.
-
----
-
-## 8. Liberdades de Design
-
-Desde que preservados os contratos da Home, Design pode explorar:
-
-- grid e composição;
-- agrupamento visual dos movimentos;
-- quantidade de dobras e seções físicas;
-- hierarquia, densidade e ritmo;
-- tipografia e escala;
-- fotografia, vídeo e visualizações;
-- cor, fundos e atmosferas;
-- componentes;
-- comportamento responsivo;
-- Header e navegação;
-- microinterações e motion;
-- tratamento de CTAs;
-- relação entre conteúdo e espaço;
-- alternativas desktop e mobile;
-- protótipos de interação.
-
-
-Estas liberdades são deliberadamente amplas. Não existe requisito prévio de paleta, fonte, estilo fotográfico, sistema de ilustração, estética de ícones ou template visual comum imposto pelo GKR. A coerência entre as oito Homes deve resultar da qualidade da solução escolhida e dos princípios comuns da Guivos, sem transformar as páginas no mesmo template.
-
-Tom de voz, headlines de apoio, microcopy e formulações editoriais não congeladas também podem ser propostas por Design/Content Design. Até aprovação humana, esse material deve permanecer classificado como `CONTENT_CANDIDATE` e não pode introduzir promessa, dado, disponibilidade ou claim não sustentado.
-> **Movimento narrativo é contrato de progressão. Seção visual é decisão de Design.**
-
----
-
-## 9. Limites de inferência
-
-Sem nova decisão governada, ferramentas e Design não podem:
-
-- redefinir o papel de uma Home;
-- reinterpretar pergunta-mãe ou copy congelada;
-- alterar protagonista da experiência;
-- inventar produtos, serviços, funções ou fluxos;
-- modificar taxonomias/ontologias canônicas;
-- confundir Media e Blog;
-- atribuir ao Media autoridade operacional de Travel ou Mall;
-- atribuir a Ads autoridade editorial ou pertinência pessoal;
-- transformar Business em Ads, HR software, LMS/LXP, plataforma de pontos ou controle individual;
-- transformar Journey custeado pela empresa em Journey controlado pela empresa;
-- garantir transformação, impacto ou resultado causal não comprovado;
-- inventar métricas, cases, parceiros, depoimentos, disponibilidade ou prova social;
-- tornar benchmark externo padrão visual da Guivos;
-- expor a complexidade interna do ecossistema como se fosse a experiência do produto.
-
-Quando faltar informação, produzir **hipótese identificada**, nunca falsa decisão.
-
----
-
-## 10. Placeholder e conteúdo fictício
-
-Placeholder é permitido para testar hierarquia, desde que explicitamente identificado.
-
-Nunca representar como reais: parceiros/clientes não confirmados, indicadores de impacto, usuários, preços, descontos, avaliações, destinos, inventário, campanhas, histórias, depoimentos, estatísticas, provas sociais, KPIs de Intelligence, limites de planos, SLA, entitlements, integrações ou disponibilidade não formalizada.
-
-Copy gerada pode apoiar exploração de Content Design, mas não substitui copy governada.
-
----
-
-## 11. Mesma família, personalidades diferentes
-
-```text
-MESMA FAMÍLIA ≠ MESMO TEMPLATE
-```
-
-A coerência deve nascer de princípios comuns, qualidade, linguagem, comportamento e identidade do ecossistema. A expressão pode variar:
-
-- **Pessoa** — amplitude, possibilidade e abertura;
-- **Organizações e Coletivos** — participação, capacidade, responsabilidade e confiança;
-- **Mall** — descoberta, comércio e confiança;
-- **Travel** — inspiração, operação real e acesso direto;
-- **Media** — descoberta editorial, curadoria, profundidade e humanidade;
-- **Ads** — clareza comercial, contexto, tecnologia aplicada e conversão sem atrito;
-- **Business** — evolução humana, possibilidade, capacidade empresarial, inteligência e escala global sem aparência de SaaS B2B genérico;
-- **Intelligence** — **clareza emergindo da complexidade**; compreensão contextualizada, estrutura, precisão, relações, temporalidade e explicabilidade, com futuro sem previsão determinista.
-
-Nenhuma Home deve ser reduzida ao estereótipo do seu setor.
-
----
-
-## 12. Princípios comuns
-
-A materialização deve preservar a Guivos como:
-
-- orientada ao futuro e às possibilidades;
-- simples na experiência;
-- confiável;
-- capaz de operar em escala ampla e global;
-- tecnológica sem ser fria;
-- sofisticada sem ser complexa;
-- humana sem clichês;
-- maior do que a soma dos próprios produtos.
-
-A Home não deve ser prioritariamente uma lista de serviços.
-
----
-
-## 13. Contrato específico — Guivos Intelligence
-
-A materialização de Intelligence deve preservar:
-
-```text
-UNIDADE DE VALOR
-→ compreensão útil e contextualizada
-
-INFORMAÇÃO ≠ COMPREENSÃO
-COMPREENDER ≠ DECIDIR
-RELAÇÃO ≠ CAUSA
-CORRELAÇÃO ≠ CAUSALIDADE
-SINAL ≠ CERTEZA
-TENDÊNCIA ≠ DESTINO
-PERCEBER ANTES ≠ PREVER O FUTURO
-TECNOLOGIA ≠ PRODUTO
-```
-
-### 13.1 Onze movimentos
-
-Os **11 movimentos semânticos** da Home são obrigatórios como progressão funcional, mas não exigem 11 seções físicas.
-
-Contratos de distinção:
-
-```text
-M03 ≠ M10
-M04 ≠ M05
-```
-
-- M03 define por que Intelligence existe;
-- M10 aprofunda por que relações importam;
-- M04 mostra os resultados perceptíveis;
-- M05 demonstra esses resultados de forma concreta;
-- M08 deve dar peso real à explicabilidade e origem da leitura;
-- M09 preserva autonomia e autoridade de decisão;
-- M11 amplia horizonte sem afirmar previsão do futuro.
-
-### 13.2 Duas frentes
-
-Pessoa/Journey:
-
-```text
-INTELLIGENCE → produz compreensão
-JOURNEY → governa a experiência
-PESSOA → escolhe
-```
-
-Business/população:
-
-```text
-INTELLIGENCE → produz leitura populacional protegida
-BUSINESS → governa a relação empresarial
-EMPRESA → decide
-```
-
-A assimetria de privacidade é obrigatória: o que Intelligence pode conhecer para servir a pessoa não se converte automaticamente em informação revelável a uma organização.
-
-### 13.3 Tecnologia subordinada
-
-Intelligence não deve ser materializado como definição de:
-
-- IA/LLM;
-- chatbot;
-- dashboard;
-- Power BI;
-- grafo;
-- Neo4j;
-- GraphRAG;
-- API;
-- relatório;
-- motor autônomo de decisão;
-- previsão do futuro;
-- monitoramento individual/HR software.
-
-Tecnologias podem explicar capacidades, nunca substituir o produto.
-
-### 13.4 Linguagem visual
-
-Direção conceitual:
-
-```text
-DISPERSÃO → RELAÇÃO
-RUÍDO → PADRÃO
-ESTADO → MUDANÇA
-SINAL → MOVIMENTO PERCEPTÍVEL
-NÚMERO → CONTEXTO
-CONCLUSÃO → EXPLICAÇÃO
-INFORMAÇÃO → COMPREENSÃO
-```
-
-Evitar: cérebro digital, rosto com circuitos, rede neural genérica, hologramas, HUD sci-fi, dashboard com dezenas de gráficos, nuvem de pontos sem função, código decorativo, globo conectado sem função, grafo decorativo, robô/chatbot protagonista.
-
-### 13.5 Dados e exemplos
-
-```text
-EXEMPLO CONCEITUAL ≠ EVIDÊNCIA OPERACIONAL
-PLACEHOLDER ≠ DADO REAL
-VISUALIZAÇÃO ≠ CLAIM COMPROVADO
-```
-
-Cada exemplo analítico demonstra **um tipo de leitura**, não prova que a capacidade está operacional em produção.
-
----
-
-## 14. Fluxo recomendado
-
-```text
-PACOTE OFICIAL DA EMISSÃO VIGENTE
-↓
-LEIA-PRIMEIRO COMUM
-↓
-ESCOLHER UMA HOME
-↓
-LEIA-PRIMEIRO DA HOME
-↓
-FONTES CANÔNICAS ISOLADAS
-↓
-SOURCE LOCK / HANDOFF / GENINPUT ESPECÍFICOS
-↓
-OUTPUT = EXPLORAÇÃO
-↓
-VALIDAÇÃO HUMANA
-```
-
-A emissão do pacote não substitui a execução de Design.
-
----
-
-## 15. Estados dos outputs
-
-```text
-EXPLORAÇÃO
-→ proposta ainda não validada
-
-CANDIDATO
-→ direção selecionada para avaliação
-
-VALIDADO EM UX
-→ estrutura aceita; UI ainda pode evoluir
-
-VALIDADO EM UI
-→ direção visual aceita
-
-APROVADO PARA HANDOFF DE ENGENHARIA
-→ somente após decisão específica posterior
-```
-
-Nenhum output generativo nasce `canônico` ou `aprovado`.
-
----
-
-## 16. Registro mínimo de cada exploração
-
-Registrar:
-
-- Home;
-- problema explorado;
-- documentos e versões usados;
-- checkpoint do GKR;
-- ferramenta;
-- decisões preservadas;
-- hipóteses introduzidas;
-- dúvidas abertas;
-- estado do output.
-
----
-
-## 17. Critérios de aceite
-
-O processo está alinhado quando:
-
-1. Design inicia sem reconstruir o histórico completo do GKR;
-2. cada Home possui suas fontes obrigatórias identificadas;
-3. a ferramenta recebe fontes governadas, não corpus indiscriminado;
-4. decisão canônica e hipótese de Design permanecem distintas;
-5. as oito Homes pertencem à mesma Guivos sem virar o mesmo template;
-6. nenhum produto, feature, dado, prova ou promessa é inventado para preencher layout;
-7. movimentos governados permanecem preservados sem obrigação de seções equivalentes;
-8. acessibilidade, mobile e performance participam da validação;
-9. nenhum output visual passa a governar o GKR sem decisão posterior;
-10. Business preserva seus limites vigentes;
-11. Intelligence preserva os 11 movimentos, `M03 ≠ M10`, `M04 ≠ M05`, M08, M09, M11 não preditivo e a separação Pessoa/Journey versus Business/população;
-12. Intelligence é percebido como compreensão contextualizada — não dashboard, chatbot, IA decisora, predição, HR monitoring ou produto Neo4j;
-13. exemplos analíticos fictícios/conceituais permanecem identificados;
-14. a emissão canônica prepara e entrega contexto; não substitui a execução da designer.
-
----
-
-## 18. Regra para novas Homes
-
-Novas Homes devem adotar o mesmo método:
-
-```text
-DOCUMENTO MESTRE
-+
-CONTRATOS COMPLEMENTARES
-+
-HANDOFF CANÔNICO
-↓
-SOURCE LOCK / GENINPUT
-↓
-EMISSÃO DO PACOTE
-↓
-EXPLORAÇÃO EXTERNA
-↓
-VALIDAÇÃO HUMANA
-```
-
----
-
-## 19. Síntese
-
-> **O GKR governa o significado. Design governa a materialização. Sistemas de IA podem ampliar leitura, ideação e criação assistida; a designer mantém autoria e decisão. A validação reconecta forma e significado.**
-
-A versão `1.3.0` incorporou formalmente a Home Pública — Guivos Intelligence ao Handoff comum, elevando a governança de sete para oito Homes sem iniciar Design nem emitir, por aquele ato isolado, um novo snapshot de entrega.
-
-Estado histórico daquela frente:
-
-> **HANDOFF DAS OITO HOMES PREPARADO PARA A GERAÇÃO DE ENTREGA V4 — MATERIALIZAÇÃO SOMENTE APÓS O GATE OPERACIONAL DO MANIFESTO/FLUXO VIGENTES — IMPLEMENTAÇÃO NÃO INCLUÍDA.**
-
----
-
-## 20. Estado pós-auditoria e pós-release / pré-execução
-
-```text
-HANDOFF / MÉTODO
-→ ACTIVE / RECONCILED
-
-8 HOMES
-→ COVERED
-
-VISUAL IDENTITY
-→ DESIGN-OWNED / NOT CANONICALLY PRE-LOCKED
+V5 SNAPSHOT
+→ FROZEN
+→ HISTORICAL FOR NEW EXECUTION
+
+DESIGN PRODUCTION RELEASE
+→ GRANTED
 
 V6 DOCUMENTARY SOURCE
 → UNDER FINALIZATION
 
+V6 SNAPSHOT
+→ NOT_EMITTED
+
 EXTERNAL DESIGN EXECUTION
 → HOLD UNTIL V6 SNAPSHOT
 
-AI SUPPORT
-→ OPTIONAL / NON-AUTHORITATIVE
-
-OFFICIAL FIGMA
-→ DESIGNER-CREATED / DESIGNER-CURATED
-→ SUBJECT TO HUMAN DIRECTION REVIEW + FINAL ACCEPTANCE
-
-IMPLEMENTATION / PRODUCTION
-→ NOT RELEASED BY THIS HANDOFF
+PRODUCT ENGINEERING
+→ PAUSED / NOT RELEASED
 ```
 
-Este documento governa **como** o handoff deve ocorrer. A liberação efetiva foi concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0` sobre o pacote v5 já emitido e validado.
+O release humano continua válido. O `HOLD` existe somente para impedir que a designer receba o pacote v5 como se ele ainda representasse o modelo operacional vigente.
 
-## 21. Regra de autoria do Design — v6
+## 4. Princípio superior — significado governado, expressão livre
+
+A identidade visual não é precondição canônica desta frente.
+
+A designer pode criar livremente:
+
+- tipografia;
+- paleta;
+- fotografia;
+- vídeo;
+- ilustração;
+- iconografia;
+- composição;
+- grid;
+- espaçamento;
+- ritmo;
+- densidade;
+- linguagem gráfica;
+- atmosfera;
+- motion;
+- componentes;
+- microinterações;
+- tratamento responsivo;
+- copy e tom não congelados.
 
 ```text
-GKR
-→ ENTREGA CONTEXTO COMPLETO E GOVERNADO
-
-DESIGNER
-→ CRIA / CURA MANUALMENTE A SOLUÇÃO OFICIAL
-
-IA
-→ APOIO OPCIONAL
-
-FIGMA OFICIAL
-→ SOB AUTORIA E CONTROLE DA DESIGNER / GUIVOS
-
-GKR/IA → FIGMA OFICIAL
-→ SEM MATERIALIZAÇÃO DIRETA NESTE FLUXO
+DESIGN FREEDOM
+≠ PRODUCT REDEFINITION
+≠ FACTUAL INVENTION
+≠ CLAIM WITHOUT EVIDENCE
 ```
 
-A designer pode consultar arquivos históricos como `guivos.com 2.0` e benchmarks externos, mas nenhum deles substitui as fontes governadas nem reduz sua liberdade criativa.
+Nenhum brand book visual deve ser inferido a partir do GKR.
+
+## 5. O que o GKR governa
+
+Design não pode alterar por conveniência visual:
+
+- papel institucional da Home;
+- protagonista e participantes;
+- pergunta-mãe e tese quando congeladas;
+- movimentos narrativos como funções semânticas;
+- nomenclatura oficial;
+- taxonomias e ontologias;
+- responsabilidades dos Produtos Especializados;
+- limites de autoridade;
+- modelo econômico quando governado;
+- regras de privacidade e autonomia;
+- causalidade;
+- classes de conteúdo;
+- distinção entre orgânico, recomendação, destaque e publicidade;
+- claims factuais;
+- disponibilidade real;
+- dados, métricas, preços, parceiros ou resultados;
+- estados canônicos e contratos de produto.
+
+## 6. Oito classes operacionais
+
+Toda informação usada na materialização deve poder ser interpretada em uma destas classes:
+
+1. `CANONICAL` — verdade vigente que deve ser preservada;
+2. `DESIGN_CREATIVE` — espaço deliberadamente aberto à designer;
+3. `CONTENT_CANDIDATE` — copy/tom/label ainda sujeito a aprovação;
+4. `DESIGN_HYPOTHESIS` — solução visual/UX reversível para teste;
+5. `PROTOTYPE_PLACEHOLDER` — conteúdo provisório sem valor factual;
+6. `REAL_DATA_REQUIRED` — informação que exige fonte real para parecer real;
+7. `OPEN_QUESTION` — decisão ainda aberta que não pode ser fechada por inferência;
+8. `PROHIBITED_INFERENCE` — conteúdo ou relação que não pode ser inventado.
+
+Mudança de classe exige evidência ou decisão humana; nunca ocorre automaticamente por uma escolha de Design ou output de IA.
+
+## 7. Fonte de cada Home
+
+A fonte inicial de trabalho é sempre:
+
+```text
+00-COMUM
++
+00-LEIA-PRIMEIRO DA HOME
++
+FONTES ESPECÍFICAS DA HOME
+```
+
+O `00-LEIA-PRIMEIRO` v6 deverá informar checkpoint, fontes, versões, SHAs, ordem de leitura, invariantes e matriz operacional.
+
+Documentos fora do pacote inicial podem ser consultados quando resolvem dúvida concreta. Eles não entram silenciosamente na autoridade de uma Home.
+
+## 8. Ordem de autoridade
+
+Quando houver dúvida:
+
+```text
+AUTORIDADE NORMATIVA ESPECÍFICA
+↓
+DOCUMENTO MESTRE DA HOME
+↓
+CONTRATOS / SOURCE LOCKS ESPECIALIZADOS
+↓
+AUTORIDADES COMUNS DE HANDOFF / READINESS / FLOW
+↓
+LEIA-PRIMEIRO COMO ÍNDICE OPERACIONAL
+↓
+REFERÊNCIA EXTERNA / BENCHMARK / ARQUIVO VISUAL HISTÓRICO
+```
+
+O `LEIA-PRIMEIRO` organiza consumo; não reescreve as autoridades listadas.
+
+## 9. Arquivos visuais existentes e benchmarks
+
+Arquivos como `guivos.com 2.0`, trabalhos anteriores, moodboards e referências de mercado podem ser consultados pela designer.
+
+Eles podem ajudar em:
+
+- entendimento de ativos existentes;
+- componentes reutilizáveis;
+- continuidade quando desejável;
+- inspiração;
+- benchmark de interação;
+- comparação de linguagem.
+
+Mas:
+
+```text
+REFERENCE
+≠ AUTHORITY
+
+EXISTING DESIGN
+≠ MANDATORY BASELINE
+
+HISTORICAL FIGMA
+≠ CURRENT PRODUCT TRUTH
+```
+
+A designer continua livre para manter, transformar ou descartar escolhas visuais anteriores quando o contrato de Design permitir.
+
+## 10. Sistemas de IA
+
+IA é opcional.
+
+Pode apoiar:
+
+- leitura de documentos;
+- síntese;
+- comparação de fontes;
+- identificação de conflitos;
+- ideação;
+- alternativas de arquitetura visual;
+- alternativas de microcopy;
+- geração de imagens/assets candidatos;
+- pesquisa de referências quando autorizada;
+- autoauditoria contra Source Lock.
+
+Não pode:
+
+- criar verdade de produto;
+- resolver `OPEN_QUESTION` por inferência;
+- fabricar dado real;
+- promover placeholder;
+- decidir direção em lugar da designer;
+- aprovar Design;
+- converter seu output em autoridade;
+- substituir o arquivo oficial criado/curado pela designer.
+
+## 11. Mesma família, personalidades diferentes
+
+```text
+MESMA FAMÍLIA
+≠ MESMO TEMPLATE
+```
+
+Direções de percepção que devem permanecer distinguíveis:
+
+- **Pessoa** — horizonte, possibilidade, relações, experiência, pertencimento, autonomia;
+- **Organizações e Coletivos** — participação, capacidade, reciprocidade, responsabilidade, confiança;
+- **Mall** — descoberta, comércio e confiança;
+- **Travel** — inspiração, planejamento/operação e experiência;
+- **Media** — descoberta editorial, curadoria, profundidade e humanidade;
+- **Ads** — clareza comercial, contexto e conversão responsável;
+- **Business** — evolução humana, capacidade empresarial, inteligência e escala sem aparência de SaaS genérico;
+- **Intelligence** — compreensão contextualizada, relações, evidência, explicabilidade e autonomia.
+
+Essas direções não prescrevem cor, layout ou estilo.
+
+## 12. Guardrails transversais
+
+Todas as Homes devem preservar:
+
+- verdade antes de aparência;
+- prova proporcional ao claim;
+- autonomia humana;
+- transparência sobre publicidade e patrocínio;
+- distinção entre participante e produto;
+- ausência de falsa personalização;
+- ausência de promessa de transformação;
+- ausência de métricas/parceiros/resultados inventados;
+- significado essencial sem dependência exclusiva de motion, vídeo ou hover;
+- responsividade como recomposição, não mero empilhamento;
+- acessibilidade como critério de experiência, não decoração posterior.
+
+## 13. Responsividade
+
+A mesma arquitetura semântica deve sobreviver em desktop, mobile e larguras intermediárias necessárias.
+
+```text
+MESMO SIGNIFICADO
+≠ MESMA SIMULTANEIDADE
+≠ MESMA COMPOSIÇÃO
+```
+
+A designer governa breakpoints e composição.
+
+## 14. Conteúdo real, parcial e placeholder
+
+### Conteúdo real
+
+Pode ser apresentado como factual quando possui fonte/lastro aplicável.
+
+### Conteúdo parcial
+
+Pode ser usado quando a incerteza está explicitamente preservada e não altera o claim.
+
+### Placeholder
+
+Pode testar volume, ritmo e hierarquia. Deve permanecer identificável internamente e não pode parecer prova real.
+
+```text
+PLACEHOLDER
+→ TESTA FORMA
+
+PLACEHOLDER
+≠ CRIA VERDADE
+```
+
+## 15. Assets, direitos e continuidade
+
+Na entrega final, assets externos utilizados devem possuir origem/licença ou condição de uso documentada quando aplicável.
+
+Fontes, plugins, bibliotecas e recursos pagos necessários à continuidade devem ser identificados.
+
+O arquivo e as dependências essenciais da entrega devem permanecer sob controle operacional da Guivos após o aceite contratual.
+
+## 16. Processo de Design
+
+```text
+V6 SOURCE PACKAGE
+↓
+COMPREENSÃO HUMANA
+↓
+IA OPCIONAL
+↓
+EXPLORAÇÃO CRIADA / CURADA PELA DESIGNER
+↓
+REVISÃO HUMANA DA DIREÇÃO
+↓
+FINALIZAÇÃO PELA DESIGNER
+↓
+ACEITE FINAL
+```
+
+Nenhum estágio exige que IA gere uma tela.
+
+## 17. Gate humano de direção
+
+A revisão de direção verifica:
+
+- fidelidade semântica;
+- originalidade;
+- clareza;
+- hierarquia;
+- experiência;
+- conteúdo candidato;
+- responsividade;
+- acessibilidade;
+- estados;
+- dados/provas;
+- hipóteses introduzidas.
+
+Mudança material de conceito após aprovação retorna ao gate humano.
+
+## 18. Entrega final de Design
+
+A entrega final deve permitir inspeção de:
+
+- desktop e mobile;
+- comportamento responsivo/intermediário necessário;
+- componentes recorrentes;
+- estados relevantes;
+- navegação/interações essenciais;
+- organização de assets;
+- foundations criadas pela designer;
+- dependências e licenças;
+- placeholders/dados variáveis ainda pendentes;
+- acessibilidade aplicável.
+
+A solução final não precisa ser igual entre Homes e não precisa nascer de uma ferramenta generativa.
+
+## 19. Fronteiras específicas importantes
+
+### Pessoa
+
+- possibilidade antes de produto;
+- Hero orientada à descoberta;
+- Journey com porta própria;
+- Pessoa ≠ Journey;
+- participantes ≠ produtos.
+
+### Organizações e Coletivos
+
+- Organização e Coletivo são participantes distintos;
+- Organização ≠ Business;
+- Coletivo ≠ comunidade Guivos;
+- relação e relevância não podem ser fabricadas.
+
+### Mall
+
+- Shopping e Gift Cards permanecem portas distintas;
+- preço/estoque/campanha/parceria exigem fonte;
+- patrocínio não se disfarça de relevância orgânica.
+
+### Travel
+
+- inspiração, serviços, destinos e experiências não são a mesma coisa;
+- disponibilidade/tarifa/fornecedor exigem lastro;
+- imagem inspiracional não prova operação.
+
+### Media
+
+- Media ≠ Blog;
+- curadoria antes de cronologia;
+- conteúdo patrocinado permanece identificável.
+
+### Ads
+
+- capacidade financeira ≠ elegibilidade;
+- Ads não compra relevância pessoal;
+- produto anfitrião preserva sua autoridade.
+
+### Business
+
+- autonomia da Pessoa permanece preservada;
+- preço, SLA, limite e entitlement exigem autoridade;
+- Intelligence não vira monitoramento indevido de indivíduos.
+
+### Intelligence
+
+- unidade de valor = compreensão útil e contextualizada;
+- `COMPREENDER ≠ DECIDIR`;
+- tendência ≠ destino;
+- correlação ≠ causalidade;
+- tecnologia ≠ produto;
+- não reduzir Intelligence a chatbot, dashboard, LLM ou grafo.
+
+## 20. Critério de sucesso do Handoff
+
+O Handoff está funcionando quando:
+
+1. a designer consegue começar sem reconstruir o histórico completo;
+2. sabe exatamente quais fontes ler;
+3. sabe o que é imutável e o que é livre;
+4. pode criar uma linguagem visual original;
+5. consegue identificar dados que não pode inventar;
+6. IA, se usada, recebe contexto controlado;
+7. as oito Homes permanecem uma família sem virarem clones;
+8. nenhuma decisão de produto nasce apenas porque “precisava desenhar algo”.
+
+## 21. Estado v6
+
+```text
+HANDOFF
+→ v2.0.0 CANDIDATE
+
+DESIGNER
+→ PRIMARY CREATIVE OWNER
+
+AI
+→ OPTIONAL / NON-AUTHORITATIVE
+
+V6 SNAPSHOT
+→ NOT_EMITTED
+
+EXTERNAL DESIGN EXECUTION
+→ HOLD UNTIL V6 SNAPSHOT
+
+DIRECT GKR/AI FIGMA MATERIALIZATION
+→ OUT_OF_SCOPE
+```
+
+> **O GKR governa o significado. A designer governa a expressão. IA pode apoiar ambos sem substituir a decisão humana.**
