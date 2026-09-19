@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.0
+version: 1.20.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-19
 related:
@@ -161,9 +161,11 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C4B — validação integrada individual e promoção de TRN-008..013
 → O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C State Map — DEFINED / CANONICAL DOCUMENTARY
-→ Public Homes Design Production Readiness — ACTIVE / V5 SNAPSHOT EMITTED / DESIGN RELEASE GRANTED
-→ Public Homes Design Production Release — GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
-→ Public Homes Design Handoff v5 Snapshot — delivery/design-handoff-v5 / 34 FILES / 26/26 BYTE-PRESERVED
+→ Public Homes Design Input — V6 HARDENING IN PROGRESS / HUMAN-FIRST / DESIGNER-LED / AI OPTIONAL
+→ Public Homes V5 Snapshot — FROZEN / HISTORICAL / delivery/design-handoff-v5 / 34 FILES / 26/26 BYTE-PRESERVED
+→ Public Homes V6 Manifest — GKR-UX-HOMES-DESIGN-DELIVERY-001 v6.0.0 / CANDIDATE / NOT_EMITTED
+→ Public Homes Design Production Release — GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
+→ New Public Homes Design Handoff — HOLD UNTIL V6 EMISSION
 ```
 
 D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada. A definição documental do State Map O/C não altera esse estado.
@@ -307,4 +309,8 @@ A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. 
 
 ### Public Homes — Design Production Release
 
-[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) registra o ato humano posterior que concede `DESIGN PRODUCTION RELEASE = GRANTED`, libera Figma Make/exploração para execução e preserva o gate humano de direção antes do Figma definitivo.
+[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) registra o ato humano que mantém `DESIGN PRODUCTION RELEASE = GRANTED`. A autoridade foi reconciliada para um fluxo human-first: criação manual da designer como caminho principal, IA opcional e nenhuma ferramenta específica exigida pelo GKR. Enquanto o hardening v6 não for emitido, novos handoffs externos permanecem em HOLD.
+
+### Public Homes — Design Input Hardening v6
+
+[GKR-HOMES-DESIGN-INPUT-HARDENING-V6-001](../project/public-homes-design-input-hardening-v6.md) audita e fortalece os oito Masters e as autoridades comuns para uso direto por designer humana e, opcionalmente, sistemas de IA. O [Manifesto v6](public-homes-design-delivery-manifest.md) está em estado `CANDIDATE / NOT_EMITTED`; o snapshot v5 permanece histórico e imutável.
