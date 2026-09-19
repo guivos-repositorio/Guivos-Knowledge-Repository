@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Intelligence
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
@@ -53,16 +53,22 @@ HOME
 Guivos Intelligence v1
 
 FASE
-Source Lock pré-Design
+Source Lock reconciliado para handoff designer-first
 
-CHECKPOINT DO GKR
+ORIGIN CHECKPOINT
 main @ 31f985625c312e3d0bdc3836dbf34fa39c762d80
+→ HISTORICAL PROVENANCE
 
 gh-pages
 Deployed 31f985625 with MkDocs 1.6.1
+→ HISTORICAL PROVENANCE
+
+RECONCILIATION
+→ 2026-09-19
+→ CURRENT DESIGNER-FIRST / AI-OPTIONAL CONTRACT APPLIES
 
 DOCUMENTO MESTRE
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.2
 
 ARQUITETURA NARRATIVA
 GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1
@@ -83,7 +89,7 @@ Objetivo do lock:
 Para qualquer futura materialização da Home Intelligence, o pacote inicial de autoridade deve ser restrito a:
 
 1. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001` — este Source Lock;
-2. `GKR-UX-HOME-INTELLIGENCE-MASTER-001` v0.1.1 — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+2. `GKR-UX-HOME-INTELLIGENCE-MASTER-001` v0.2.2 — `docs/experience-architecture/public-home-intelligence-master-document.md`;
 3. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001` v0.2.1 — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 4. `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001` v1.0.0 — `docs/product-architecture/intelligence-product-source-lock.md`;
 5. `GPA-006` v2.0.0 — `docs/product-architecture/intelligence.md`;
@@ -505,20 +511,14 @@ O Source Lock não congela:
 - microcopy que não altere significado;
 - ordem interna de exemplos dentro de um mesmo movimento.
 
-Essas liberdades só se tornam executáveis após Handoff/Design explicitamente autorizado.
+Essas liberdades são exercidas pela designer dentro do regime comum designer-first. O Source Lock define limites semânticos; não define forma visual.
 
-## 16. O que este Source Lock não autoriza
+## 16. Limites procedimentais deste Source Lock
 
-A integração deste artefato não autoriza automaticamente:
+Este Source Lock não concede, por si só, autoridade para:
 
-- atualização do Handoff Canônico;
-- Design;
-- Figma Make;
-- ferramenta generativa;
-- wireframe;
-- UI;
-- protótipo;
 - implementação front-end ou back-end;
+- Product Engineering;
 - publicação comercial;
 - Marketing/GTM;
 - pricing;
@@ -526,9 +526,11 @@ A integração deste artefato não autoriza automaticamente:
 - promoção silenciosa de maturidade técnica;
 - alteração de `GKR-STATE-001` ou Roadmap sem sincronização transversal autorizada.
 
-## 17. Critérios para o próximo gate
+O início da fase externa de Design é governado pelas autoridades comuns posteriores. No regime corrente, `DESIGN PRODUCTION RELEASE = GRANTED`, a designer é a autora criativa e IA é opcional.
 
-Antes de iniciar Design, o futuro Handoff deve preservar:
+## 17. Contexto procedimental corrente
+
+O Handoff específico e as autoridades comuns devem preservar:
 
 - o pacote de fontes deste Source Lock;
 - a arquitetura em onze movimentos;
@@ -541,8 +543,21 @@ Antes de iniciar Design, o futuro Handoff deve preservar:
 - exemplos analíticos como demonstração, não prova;
 - todos os guardrails de privacidade, causalidade, previsão e autonomia.
 
-Próximo ponto elegível após a integração deste Source Lock:
+```text
+GKR-UX-HOMES-DESIGN-HANDOFF-001
+→ DESIGNER-FIRST
 
-> **Handoff controlado da Home Pública Guivos Intelligence v1 para Design**, mediante autorização separada.
+GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+→ DESIGN PRODUCTION RELEASE = GRANTED
 
-Nenhuma etapa autoriza automaticamente a seguinte.
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+GKR-CREATED DESIGN / FIGMA
+→ NONE
+
+NEXT GLOBAL GATE
+→ V6 EXACT-HEAD VALIDATION / REVIEW / SNAPSHOT GOVERNANCE
+```
+
+Nenhuma etapa documental autoriza Product Engineering automaticamente.
