@@ -845,7 +845,7 @@ PRODUCT ENGINEERING
 
 A antiga proposta pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece somente `HOLD_REVIEW` e não é autoridade vigente.
 
-Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. A elegibilidade para **Navigation Materialization** foi adjudicada como `PASS` e a materialização documental foi posteriormente autorizada, executada, validada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. O próximo estágio downstream permanece **Authenticated Wireframes**, ainda `NOT STARTED / NOT RELEASED`. A Navigation Materialization canônica não define menu visual final, rota técnica, RBAC técnico, UI, implementação ou Engenharia.
+Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. A elegibilidade para **Navigation Materialization** foi adjudicada como `PASS` e a materialização documental foi posteriormente autorizada, executada, validada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os **Authenticated Wireframes low-fidelity** foram então autorizados e a primeira entrega foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0`; sua validação funcional permanece pendente. High-fidelity UI, protótipo, implementação e Engenharia continuam não autorizados.
 
 ```text
 DOCUMENTAÇÃO
@@ -2211,10 +2211,12 @@ O/C AUTHENTICATED NAVIGATION MATERIALIZATION
 → PRODUCT MENU VISUAL NOT DEFINED
 → NO NEW GKR-SURF-* / GKR-TRN-*
 
-O/C AUTHENTICATED WIREFRAMES
-→ NOT STARTED
+O/C LOW-FIDELITY WIREFRAMES
+→ AUTHORIZATION = GRANTED
+→ DELIVERY = EXECUTED / v0.1.0
+→ FUNCTIONAL VALIDATION = NOT_STARTED
 
-DESIGN / UI / PROTOTYPE
+HIGH-FIDELITY UI / PROTOTYPE
 → NOT AUTHORIZED
 
 PRODUCT ENGINEERING
