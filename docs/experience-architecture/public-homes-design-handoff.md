@@ -58,16 +58,22 @@ DESIGN PRODUCTION RELEASE
 → GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
 
 V5 SNAPSHOT / PACOTE EXTERNO
-→ EMITTED / MATERIALIZED / VALIDATED
+→ FROZEN / HISTORICAL FOR NEW EXECUTION
+
+V6 DOCUMENTARY SOURCE
+→ UNDER FINALIZATION
+
+EXTERNAL DESIGN EXECUTION
+→ HOLD UNTIL V6 SNAPSHOT
 ```
 
-As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito registrado em `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`.
+O `DESIGN PRODUCTION RELEASE` permanece concedido em `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0`, mas o início de uma nova execução externa deve aguardar o snapshot v6 que incorpora este modelo.
 
 ### 0.1 Liberdade criativa protegida
 
 O GKR **não congela identidade visual canônica** para estas Homes. A designer pode criar, com originalidade e autonomia, tipografia, paleta, imagens, ilustração, iconografia, grid, ritmo, composição, atmosfera, motion, linguagem gráfica, tratamento de componentes e tom de voz/copy não congelada.
 
-Essas escolhas são **output de Design**, não pré-condição documental. Depois que uma direção for aprovada no gate de protótipo, a solução escolhida deve ser documentada no próprio Figma para garantir consistência e handoff.
+Essas escolhas são **output de Design**, não pré-condição documental. Depois que uma direção for aprovada no gate humano de direção, a solução escolhida deve ser documentada pela designer no próprio Figma para garantir consistência e handoff.
 
 A liberdade criativa não autoriza alterar significado, papéis de produto, nomenclatura oficial, assinatura institucional quando utilizada, claims factuais, regras econômicas, disponibilidade, dados, parceiros, causalidade, privacidade ou demais contratos governados.
 
@@ -78,8 +84,8 @@ SEMANTIC / FUNCTIONAL TRUTH
 VISUAL / CREATIVE EXPRESSION
 → DESIGN
 
-GENERATIVE TOOL
-→ EXPLORATION INSTRUMENT
+AI / GENERATIVE TOOL
+→ OPTIONAL ASSISTIVE INSTRUMENT
 
 HUMAN APPROVAL
 → SELECTS THE DIRECTION
@@ -129,16 +135,17 @@ Portanto, a atualização deste handoff **não cria mapa de página, wireframe, 
 
 Este Handoff constitui a **autoridade procedimental comum** para materialização externa das oito Homes. Ele define como a fase deve operar, mas **não concede sozinho o Design Production Release**.
 
-A execução somente fica liberada quando coexistirem:
+Uma nova execução somente fica liberada quando coexistirem:
 
-1. pacote v5 materializado e reproduzível;
-2. Source Lock operacional da Home no checkpoint da emissão;
+1. snapshot v6 materializado e reproduzível;
+2. Source Lock operacional v6 da Home;
 3. gates de validação sem finding material aberto;
-4. ato humano explícito de `DESIGN PRODUCTION RELEASE = GRANTED`.
+4. `DESIGN PRODUCTION RELEASE = GRANTED`.
 
-Depois desse release, podem ser executados:
+Depois desse gate, a **designer** pode executar:
 
-- exploração em sistema de IA de apoio e ferramentas equivalentes;
+- estudo e síntese das fontes;
+- uso opcional de IA de apoio;
 - arquitetura visual;
 - wireframes de baixa fidelidade;
 - exploração de UX e direção visual;
@@ -146,7 +153,7 @@ Depois desse release, podem ser executados:
 - protótipos de navegação e interação;
 - estudos responsivos desktop e mobile;
 - validação das soluções contra os contratos do GKR;
-- construção do Figma definitivo dentro da direção humana aprovada.
+- construção e curadoria do Figma definitivo pela designer dentro da direção humana aprovada.
 
 O release de Design não autoriza automaticamente:
 
@@ -172,9 +179,9 @@ A existência deste documento, isoladamente, não significa que um snapshot de e
 
 ## 3. Princípio central
 
-> **Ferramentas generativas são instrumentos de exploração e materialização, não fontes de decisão sobre a arquitetura das Homes.**
+> **Sistemas de IA podem apoiar exploração, ideação e criação candidata; não são fonte de decisão sobre a arquitetura das Homes nem autores da entrega oficial.**
 
-Uma solução visual produzida por IA, sistema de IA de apoio, plugin, template, benchmark ou referência externa não se torna canônica por ter sido gerada. Somente após validação humana contra o GKR uma direção pode ser promovida.
+Uma solução visual ou verbal produzida por IA, plugin, template, benchmark ou referência externa permanece candidata. A designer decide se, como e quando incorporá-la. Somente validação humana contra o GKR pode aprovar uma direção.
 
 ---
 
