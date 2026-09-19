@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.2
+version: 1.0.3
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-19
 parent: GKR-UX-HOME-MASTER-001
@@ -32,7 +32,7 @@ related:
   - journeys/organization.md
   - journeys/collective.md
 normative: false
-maturity: documentally_rebuilt_pre_materialization_under_full_corpus_audit
+maturity: documentally_reconciled_for_external_design
 ---
 
 # Home Pública — Organizações e Coletivos
@@ -1764,7 +1764,7 @@ Uma futura materialização deve ser rejeitada ou revisada se:
 | `GKR-UX-HOME-OC-SYS-001` | classes de conteúdo/verdade, prova proporcional ao claim e fallback honesto | absorvido |
 | `GKR-UX-HOME-OC-HANDOFF-001` | disciplina de significado, acessibilidade e fronteira pública × autenticada | conteúdo válido absorvido; autorização procedimental histórica não governa a auditoria atual |
 | `GKR-UX-HOME-OC-MEDIA-SUPPLY-001` | Media como supply editorial sem transferência de autoridade; patrocínio identificável | absorvido |
-| decisões/Source Locks/Design deliveries anteriores | evidência de checkpoints de construção | não promovidos a autorização atual |
+| decisões/Source Locks/Design deliveries anteriores | evidência de checkpoints de construção | não promovidos a direção visual vigente; o release externo atual é governado pelas autoridades comuns posteriores |
 
 Esta matriz não autoriza remoção automática de nenhum arquivo. A remoção física posterior exige teste de conteúdo único, evidência, dependências, links e necessidade de preservação.
 
@@ -1772,7 +1772,7 @@ Esta matriz não autoriza remoção automática de nenhum arquivo. A remoção f
 
 ## 31. Documentos de aprofundamento ainda preservados
 
-Enquanto a auditoria não decidir sua função final, permanecem como aprofundamento/evidência, entre outros:
+A auditoria documental já decidiu a função corrente desta Home para o handoff externo. Os documentos abaixo permanecem preservados como aprofundamento, evidência ou proveniência enquanto mantiverem função própria:
 
 ### Home O/C
 
