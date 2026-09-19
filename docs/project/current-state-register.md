@@ -2354,7 +2354,7 @@ O/C HIGH-FIDELITY DESIGN AUTHORIZATION
 → NOT_GRANTED
 ```
 
-`GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0` formaliza o novo critério de prontidão.
+`GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.1` formaliza o critério de prontidão corrente e registra o gate de release já satisfeito pela autoridade própria.
 
 Decisão humana incorporada:
 
