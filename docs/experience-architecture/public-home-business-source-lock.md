@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
 depends_on:
   - GKR-UX-HOME-BUSINESS-MASTER-001
@@ -13,6 +13,7 @@ depends_on:
   - GPA-004
   - GKR-STATE-001
   - ROADMAP-12.79.0
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 normative: true
 ---
 
@@ -400,22 +401,31 @@ Supporting copy de referência:
 
 > **Visualize participação, recorrência, utilização, interesses agregados e movimentos ao longo do tempo para compreender cada vez melhor suas iniciativas dentro da Guivos.**
 
-### Direção visual congelada
+### Função semântica congelada; expressão visual livre
 
-A futura materialização deve demonstrar Intelligence prioritariamente de forma visual, podendo utilizar representações de:
+A futura materialização deve tornar compreensível **o que a Empresa consegue compreender a partir do Intelligence**, preservando:
 
-- dashboard;
-- KPIs;
-- gráficos;
-- evolução temporal;
 - participação;
 - utilização;
 - recorrência;
+- evolução temporal quando houver dado legítimo;
 - tendências;
 - interesses agregados;
-- movimentos e distribuições.
+- movimentos e distribuições;
+- explicabilidade e limites.
 
-Essas representações não autorizam métricas, números ou layout final inventados como reais.
+A designer decide livremente **como** expressar essa compreensão. Dashboard, KPIs, gráficos ou outras visualizações são hipóteses possíveis, não direção visual obrigatória e não identidade do Intelligence.
+
+```text
+INTELLIGENCE
+→ COMPREENSÃO ÚTIL E CONTEXTUALIZADA
+
+INTELLIGENCE
+≠ DASHBOARD
+≠ CONJUNTO DE KPIs
+```
+
+Nenhuma representação autoriza métricas, números, causalidade ou layout operacional inventados como reais.
 
 ### CTA congelado
 
@@ -662,9 +672,9 @@ A GUIVOS TORNA ESSA CAPACIDADE OPERÁVEL
 ESCALA GLOBAL
 ```
 
-## 23. Liberdades futuras de Design
+## 23. Liberdades de Design
 
-Somente após autorização procedimental específica para incluir Business na fase de Design, poderão ser explorados:
+Depois do release global do novo pacote documental, a designer poderá explorar:
 
 - grid;
 - composição;
@@ -762,50 +772,47 @@ Continuam fora deste Source Lock:
 
 A materialização futura deve sinalizar essas lacunas, não resolvê-las por inferência.
 
-## 27. Bloqueio procedimental de Design
+## 27. Estado procedimental vigente
 
-O handoff canônico vigente `GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.1.0 cobre explicitamente seis Homes:
+O bloqueio histórico que excluía Business de um Handoff de seis Homes está superado.
 
-1. Pessoa;
-2. Organizações e Coletivos;
-3. Mall;
-4. Travel;
-5. Media;
-6. Ads.
-
-**Guivos Business ainda não está incluído nessa autorização.**
-
-Consequência:
+A frente atual governa **oito Homes públicas**, incluindo Business e Intelligence, e retorna à prontidão documental antes de nova emissão externa.
 
 ```text
 SOURCE LOCK BUSINESS
-→ PODE SER CONGELADO
+→ ACTIVE / RECONCILED
 
-DESIGN BUSINESS
-→ AINDA NÃO AUTORIZADO
+BUSINESS SOURCE READINESS
+→ UNDER CURRENT AUDIT
 
-FERRAMENTA GENERATIVA
-→ AINDA NÃO DEVE RECEBER EXECUÇÃO OPERACIONAL PARA BUSINESS
+DESIGNER
+→ MANUAL-FIRST AFTER GLOBAL PACKAGE RELEASE
+
+AI
+→ OPTIONAL / SAME SOURCE LOCK
+
+FIGMA MAKE
+→ NOT REQUIRED
 ```
 
-Este Source Lock não amplia silenciosamente o escopo do handoff canônico.
+Este Source Lock não autoriza Product Engineering, pricing inventado, operação não comprovada ou experiência autenticada fora do escopo.
 
-## 28. Pacote futuro de handoff do Business
+## 28. Pacote de handoff do Business
 
-Quando houver autorização explícita para Design, o pacote mínimo recomendado será:
+O pacote mínimo para consumo externo deve conter:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` em versão que inclua Guivos Business;
+1. autoridades comuns vigentes do pacote de Design;
 2. este Source Lock;
 3. `GKR-UX-HOME-BUSINESS-MASTER-001`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002`;
 5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001`;
 6. `GPA-004` v1.6.0 ou autoridade posterior vigente.
 
-O pacote poderá ser reduzido somente se uma autoridade posterior consolidar explicitamente as mesmas fronteiras.
+A designer começa pelo Master e Source Lock. Documentos complementares aprofundam conversão e autoridade quando necessário.
 
 ## 29. Autoauditoria do Source Lock
 
-Antes de qualquer futura materialização, confirmar:
+Antes de qualquer entrega externa, confirmar:
 
 - a pergunta-mãe permanece intacta?;
 - evolução humana continua anterior ao produto?;
@@ -816,7 +823,7 @@ Antes de qualquer futura materialização, confirmar:
 - Benefícios não reapareceram como movimento separado?;
 - Pontos permanecem fora da Home?;
 - ecossistema é apresentado pela vida da pessoa antes dos produtos?;
-- Intelligence é visual e positivo sem inventar métricas reais?;
+- Intelligence comunica compreensão sem virar identidade de dashboard ou inventar métricas?;
 - CTA `Conheça o Guivos Intelligence` foi preservado?;
 - Start, Growth, Scale e Enterprise permanecem comparáveis sem entitlements inventados?;
 - o configurador aparece como mais do que calculadora de preço?;
@@ -826,7 +833,8 @@ Antes de qualquer futura materialização, confirmar:
 - escala global não foi reduzida a Brasil + Real?;
 - nenhum país, preço, moeda, cliente, KPI ou integração foi inventado como vigente?;
 - a Home continua parecendo Guivos e não SaaS B2B genérico?;
-- Design só começou após autorização procedimental própria?
+- liberdade visual da designer foi preservada?;
+- IA, se usada, permaneceu subordinada ao mesmo Source Lock?
 
 ## 30. Regra de mudança
 
@@ -852,11 +860,9 @@ Design não pode alterar esses elementos por preferência estética.
 
 ## 31. Próxima etapa
 
-Após integração deste Source Lock, o próximo ponto governado é:
+Concluir a auditoria `SOURCE_READY` da Home Business dentro da frente de oito Homes.
 
-> **INCLUSÃO DO GUIVOS BUSINESS NO HANDOFF CANÔNICO DE DESIGN / AUTORIZAÇÃO PROCEDIMENTAL DE DESIGN**
-
-Somente depois dessa autorização devem começar arquitetura visual, wireframe, UI ou protótipo do Guivos Business.
+Somente após `8 / 8 SOURCE_READY`, validações, revisão independente e novo ato humano de emissão o pacote será liberado para a designer.
 
 ## 32. Síntese
 
