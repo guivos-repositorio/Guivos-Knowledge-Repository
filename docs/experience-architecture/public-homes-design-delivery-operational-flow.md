@@ -58,7 +58,7 @@ O gate de início foi satisfeito. A execução pode começar somente dentro dest
 
 - snapshot v5 materializado e validado;
 - Source Lock operacional da Home;
-- `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0 = GRANTED`.
+- `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0 = GRANTED`.
 
 A autorização de início não elimina os gates internos de revisão humana, direção criativa aprovada e aceite final.
 
