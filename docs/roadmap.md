@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.46.0
+id: ROADMAP-13.47.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.46.0
+version: 13.47.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -11,6 +11,7 @@ related:
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-PACKAGE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
@@ -1910,62 +1911,65 @@ PRODUCT ENGINEERING
 
 Navigation Materialization foi promovida canonicamente após Surface Map + State Map + Priority Flows + eligibility PASS. Os Authenticated Wireframes low-fidelity foram posteriormente autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O ciclo low-fidelity está fechado; uma eventual frente high-fidelity depende primeiro de adjudicação própria de elegibilidade. High-fidelity UI, protótipo e Product Engineering continuam não autorizados.
 
-## Public Homes — Design Production Readiness / Figma
+## Public Homes — Source Package Readiness for Designer + AI
 
-Prioridade temporária aberta para preparar a contratação e produção definitiva das oito Homes públicas em Figma.
+Prioridade temporária aberta para deixar as oito Homes públicas documentalmente completas para criação manual pela designer e consumo opcional por sistemas de IA.
 
 Esta frente não prescreve identidade visual. Criatividade, originalidade e imaginação da designer são parte deliberada do processo.
 
 ```text
 GKR
-→ SIGNIFICADO / FUNÇÃO / LIMITES / VERDADE
+→ SIGNIFICADO / FUNÇÃO / LIMITES / VERDADE / EVIDÊNCIA
 
-DESIGN
+DESIGNER
+→ CRIA MANUALMENTE
 → EXPRESSÃO VISUAL / CRIATIVA
+→ TOTAL LIBERDADE DENTRO DOS BOUNDARIES
 
-FIGMA MAKE
-→ EXPLORAÇÃO / PROTÓTIPO
-
-HUMAN GATE
-→ APROVA DIREÇÃO ANTES DO FIGMA DEFINITIVO
+AI
+→ CONSUMO OPCIONAL DO MESMO PACOTE
+→ NÃO É GATE
+→ NÃO GERA AUTORIDADE VISUAL
 ```
 
-Sequência governada:
+Sequência governada corrente:
 
-1. reconciliar Handoff pós-auditoria;
-2. expandir template generativo para oito Homes;
-3. formalizar contrato de prontidão e aceite Figma;
-4. preparar Manifesto v5;
-5. integrar changeset em `main` mediante gates próprios;
-6. capturar `main` pós-merge;
-7. revalidar 26/26 fontes;
-8. gerar oito Source Locks operacionais;
-9. materializar snapshot externo v5 — CONCLUÍDO;
-10. validar isolamento e reproduzibilidade — CONCLUÍDO;
-11. registrar snapshot v5 na autoridade corrente — CONCLUÍDO / INTEGRADO EM `main`;
-12. Semantic + Mechanical no HEAD de registro;
+1. preservar snapshot v5 como histórico congelado;
+2. corrigir autoridades que tratavam Figma Make como etapa obrigatória — EM CURSO;
+3. instituir contrato canônico do pacote-fonte para Design e IA — MATERIALIZADO EM CANDIDATO;
+4. auditar documentos comuns do pacote;
+5. auditar 8/8 Documentos Mestres;
+6. auditar 8/8 LEIA-PRIMEIRO / Source Locks;
+7. verificar as oito classes operacionais em 8/8 Homes;
+8. verificar dados reais, placeholders, open questions e proibições de inferência;
+9. verificar mobile, responsividade, acessibilidade, fallback e reduced motion;
+10. verificar ausência de conflitos/superseded no contexto inicial;
+11. validar que IA e designer consomem a mesma fonte de verdade;
+12. Semantic + Mechanical;
 13. revisão independente;
-14. adjudicar findings, se houver;
-15. ato humano explícito de Design Production Release — CONCLUÍDO / GRANTED;
-16. iniciar Figma Make / prototipação de Design — AUTHORIZED / NOT_STARTED.
+14. adjudicar findings;
+15. somente após fechamento limpo, preparar snapshot v6 candidato;
+16. emissão/materialização do v6 depende de autorização humana separada.
 
 ```text
 V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
-→ delivery/design-handoff-v5
-→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
-→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
-→ 34 FILES
-→ 26 / 26 CANONICAL BLOBS MATCH
+→ HISTORICAL / FROZEN / UNCHANGED
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED
+→ MEANS EXTERNAL DESIGN MAY CONSUME GOVERNED PACKAGE
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+DESIGNER MANUAL CREATION
+→ PRIMARY MODE
 
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+AI SUPPORT
+→ OPTIONAL / NON-CANONICAL / NOT A REQUIRED STAGE
+
+FIGMA CREATION BY GKR
+→ OUT OF SCOPE
+
+V6 SOURCE PACKAGE
+→ UNDER DOCUMENTARY AUDIT / NOT YET EMITTED
 
 O/C HIGH-FIDELITY DESIGN
 → ELIGIBILITY PASS PRESERVED
