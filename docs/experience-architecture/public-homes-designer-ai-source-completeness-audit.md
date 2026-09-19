@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.2.3
+version: 0.2.4
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -350,7 +350,7 @@ A adjudicação histórica permanece proveniência; não é mais necessária par
 O template comum foi promovido para:
 
 ```text
-GKR-UX-HOMES-GENINPUT-001 v2.1.4
+GKR-UX-HOMES-GENINPUT-001 v2.1.5
 → TOOL-NEUTRAL
 → AI OPTIONAL
 → MANUAL DESIGN DOES NOT REQUIRE GENERATIVE EXECUTION RECORD
