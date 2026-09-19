@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.4.5
+version: 0.4.6
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -510,6 +510,24 @@ P2 — BUSINESS COMMON HANDOFF PIN
 ```
 
 As correções preservam o v5 como snapshot histórico reproduzível e o v6 como cadeia corrente separada. O estado `PASS` permanece candidato até nova validação automática e re-review no HEAD final.
+
+## 9.7 Re-review independente no HEAD `3d9d6283396ee7e64c0e878a0fd3c5a54f800fb2` — um P1 residual de completude
+
+O re-review independente encontrou uma única lacuna residual no pacote externo de Intelligence:
+
+```text
+P1 — INTELLIGENCE REQUIRED AUTHORITIES OMITTED FROM V6 INVENTORY
+→ REMEDIATED
+→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1 ADDED
+→ GKR-UX-HOMES-OUTCOME-001 v1.0.0 ADDED
+→ INTELLIGENCE RESTRICTED PACKAGE = SELF-CONTAINED
+→ HOME-SPECIFIC UNIQUE SOURCES = 24
+→ CANONICAL SOURCES = 29
+→ READ-FIRST GUIDES = 8
+→ TOTAL EXTERNAL FILES = 37
+```
+
+A correção não cria nova autoridade nem reabre produto ou Design. Ela apenas torna o pacote v6 determinístico em relação às autoridades que o próprio Home Source Lock vigente já exige.
 
 ## 10. Remediações aplicadas
 
