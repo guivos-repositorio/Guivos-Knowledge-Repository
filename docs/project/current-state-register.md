@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.48.5
+version: 3.48.6
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -1139,7 +1139,7 @@ PRIVACIDADE DE REFERÊNCIA
 ≠ EVIDÊNCIA OPERACIONAL
 ```
 
-A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.0` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes, mas não autoriza, por si só, Design, materialização, implementação ou publicação.
+A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.1` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes, mas não autoriza, por si só, Design, materialização, implementação ou publicação.
 
 Estado:
 
@@ -1328,7 +1328,7 @@ HOME INTELLIGENCE v1
 → CONCEPTUAL ARCHITECTURE COMPLETE
 
 HOME SOURCE LOCK
-→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.0
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.1
 → ACTIVE / NORMATIVE
 → FREEZES SOURCES AND INVARIANTS
 → DOES NOT AUTHORIZE DESIGN BY ITSELF
@@ -2399,8 +2399,8 @@ Remediações materiais do candidato:
 - Business Master → v1.1.2 temporalmente reconciliado;
 - Business Source Lock → v1.1.1 reconciliado para designer-first / IA opcional;
 - Intelligence Master → v0.2.3 temporalmente reconciliado;
-- Intelligence Source Lock → v1.1.0 reconciliado para designer-first / IA opcional;
-- Intelligence Design Handoff → v1.1.0 reconciliado para designer-first / IA opcional;
+- Intelligence Source Lock → v1.1.1 reconciliado para designer-first / IA opcional;
+- Intelligence Design Handoff → v1.1.1 reconciliado para designer-first / IA opcional;
 - artefato Figma experimental anterior → `ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE`.
 
 O pacote v6 candidato está definido em `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001`:
