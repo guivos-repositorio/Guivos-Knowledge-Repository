@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
 title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 status: active
-version: 3.0.0
+version: 3.0.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -186,9 +186,7 @@ A aprovação pode ocorrer sobre Design produzido manualmente, com IA ou por com
 
 ## 9. Fase F — entrega final de Design
 
-O artefato final de Design pode ser materializado pela designer em Figma ou em ferramenta acordada contratualmente.
-
-O GKR não exige que a ferramenta final seja usada para produzir uma etapa intermediária gerativa.
+A designer é responsável por produzir e organizar os artefatos finais de Design nas ferramentas definidas pela própria execução contratual. O GKR não determina, cria, edita nem governa arquivos de Design e não exige ferramenta específica, etapa intermediária gerativa ou materialização visual pelo repositório.
 
 A entrega deve preservar:
 
