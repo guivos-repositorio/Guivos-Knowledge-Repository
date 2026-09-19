@@ -1,8 +1,8 @@
 ---
 id: GKR-UX-HOMES-GENINPUT-001
-title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
+title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e Sistemas de IA
 status: active
-version: 2.0.1
+version: 3.0.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -25,10 +25,10 @@ related:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GPA-006
 normative: true
-maturity: post_audit_eight_home_generative_template_release_granted_pre_execution
+maturity: v6_designer_ai_consumption_contract_candidate
 ---
 
-# Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
+# Homes Públicas — Source Lock e Contrato de Consumo para Designer e Sistemas de IA
 
 ## 0. Gate pós-auditoria
 
@@ -44,7 +44,7 @@ V4 HISTORICAL SOURCE LOCKS
 V5 OPERATIONAL SOURCE LOCK
 → EMITTED / 8 OF 8 / FROZEN WITH SNAPSHOT V5
 
-FIGMA MAKE / GENERATIVE EXECUTION
+AI SUPPORT / OPTIONAL
 → DESIGN PRODUCTION RELEASE GRANTED
 → AUTHORIZED TO EXECUTE / NOT_STARTED
 ```
@@ -52,6 +52,30 @@ FIGMA MAKE / GENERATIVE EXECUTION
 A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode completar lacunas de verdade factual ou arquitetura por inferência.
 
 ---
+
+## 0.1 Regra superior de autoria
+
+Este contrato não estabelece IA como etapa obrigatória e não autoriza o GKR ou qualquer sistema de IA a criar o arquivo oficial de Figma em nome da designer.
+
+```text
+DESIGNER
+→ HUMAN CREATIVE OWNER
+→ CRIA / CURA A ENTREGA OFICIAL
+
+AI
+→ OPTIONAL ASSISTANT
+→ PODE SINTETIZAR, IDEAR, PROPOR, GERAR CANDIDATOS E AUDITAR
+
+AI OUTPUT
+→ NON-CANONICAL CANDIDATE
+
+AI OUTPUT
+≠ OFFICIAL FIGMA
+≠ DESIGN APPROVAL
+≠ PRODUCT TRUTH
+```
+
+Quando IA for utilizada, este Source Lock limita o contexto e a autoridade da informação, não a liberdade artística.
 
 ## 1. Finalidade
 
@@ -94,7 +118,7 @@ Ele operacionaliza o princípio:
 
 ## 3. Unidade de execução governada
 
-Cada uso relevante de Figma Make ou ferramenta generativa deve ser tratado como uma **execução identificável**.
+Quando a designer optar por usar um sistema de IA de apoio, a sessão relevante deve manter contexto e fontes identificáveis.
 
 Uma execução possui:
 
@@ -334,7 +358,7 @@ O prompt deve informar explicitamente à ferramenta que as fontes possuem funç�
 → Handoff = processo e boundary da fase
 → GENINPUT = método de Source Lock / prompt / classes
 → Readiness = contrato de produção e aceite Figma
-→ Operational Flow = sequência Figma Make → aprovação → Figma definitivo → aceite
+→ Operational Flow = sequência sistema de IA de apoio → aprovação → Figma definitivo → aceite
 
 2. SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE DA HOME, QUANDO EXISTIR
 → congela decisões próprias daquela Home dentro de sua autoridade
@@ -417,7 +441,7 @@ O bloco abaixo é o **template canônico de montagem do prompt**. Ele deve ser p
 Você está apoiando uma exploração de Design para a Guivos.
 
 PAPEL DA FERRAMENTA
-Você é instrumento de exploração e materialização. Você não possui autoridade para redefinir arquitetura de produto, narrativa, posicionamento, taxonomia, operação ou decisões canônicas da Guivos.
+Você é instrumento de apoio à compreensão, ideação e criação assistida. Você não possui autoridade para redefinir arquitetura de produto, narrativa, posicionamento, taxonomia, operação ou decisões canônicas da Guivos.
 
 HOME EM TRABALHO
 [HOME]
@@ -795,4 +819,20 @@ V5 PER-HOME SOURCE LOCKS
 GENERATIVE EXECUTION
 → AUTHORIZED TO EXECUTE / NOT_STARTED
 → RELEASE AUTHORITY = GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+```
+
+## 21. Estado v6
+
+```text
+SOURCE LOCK / AI CONSUMPTION CONTRACT
+→ READY AS V6 CANDIDATE
+
+AI USE
+→ OPTIONAL
+
+HUMAN DESIGNER
+→ PRIMARY CREATIVE AUTHOR
+
+DIRECT GKR/AI FIGMA MATERIALIZATION
+→ OUT_OF_SCOPE
 ```
