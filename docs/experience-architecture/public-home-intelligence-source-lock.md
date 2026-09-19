@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Intelligence
 status: active
-version: 1.1.1
+version: 1.1.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-MASTER-001
@@ -119,7 +119,7 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.3
 → governa narrativa pública, copy de referência e fronteiras da Home
 
 NÍVEL 2
@@ -145,7 +145,7 @@ HISTÓRICO
 
 Se uma formulação histórica divergir da versão vigente do Documento Mestre ou deste Source Lock, prevalece o estado vigente salvo nova decisão explicitamente governada.
 
-## 5. Centro semântico congelado
+## 5. Centro semântico congelado e copy de referência
 
 Unidade de valor:
 
@@ -155,9 +155,11 @@ Ideia-mãe:
 
 > **Compreender melhor amplia o que você consegue perceber.**
 
-Pergunta-mãe:
+Pergunta-mãe de referência:
 
 > **O que se torna possível quando você compreende melhor o que está acontecendo?**
+
+A formulação da pergunta-mãe pode receber refinamento microeditorial pela designer, desde que preserve significado, autoridade, fronteira e o contrato `COMPREENDER ≠ DECIDIR`.
 
 Expressão de apoio inicial:
 
@@ -312,7 +314,7 @@ Até onde essa leitura pode ir?
 
 As formulações podem receber ajustes microeditoriais no Design posterior somente quando preservarem exatamente seu significado, autoridade e claim.
 
-## 9. CTA congelado
+## 9. CTAs de referência governada
 
 CTA principal:
 
@@ -322,7 +324,9 @@ CTA secundário:
 
 > **Conheça o Guivos Intelligence**
 
-O CTA não pode prometer:
+As formulações dos CTAs podem receber refinamento microeditorial pela designer. O que permanece congelado é sua **intenção semântica e limite de claim**, não a redação literal.
+
+Os CTAs não podem prometer:
 
 - futuro conhecido;
 - resposta certa;
@@ -535,7 +539,7 @@ O Handoff específico e as autoridades comuns devem preservar:
 - o pacote de fontes deste Source Lock;
 - a arquitetura em onze movimentos;
 - a copy pública vigente;
-- os CTAs congelados;
+- a intenção semântica dos CTAs e seus limites de claim;
 - as duas frentes e suas autoridades;
 - `M03 ≠ M10`;
 - `M04 ≠ M05`;
