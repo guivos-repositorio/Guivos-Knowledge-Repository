@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.4
+version: 1.1.5
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
@@ -24,15 +24,14 @@ Este documento consolida o **Source Lock da Home Pública do Guivos Business** a
 
 Seu papel é:
 
-- congelar as fontes vigentes que podem governar a futura materialização da Home Business;
+- congelar as fontes vigentes que governam a produção externa de Design da Home Business e as futuras etapas autorizadas;
 - eliminar ambiguidades entre formulações anteriores e o Documento Mestre vigente;
 - registrar as invariantes que não podem ser reinterpretadas por Design, UX, UI, ferramentas generativas ou implementação futura;
 - separar claramente o que está congelado do que continua aberto;
 - impedir que lacunas comerciais, visuais ou operacionais sejam preenchidas por inferência.
 
-Este Source Lock **não é**:
+Este Source Lock **não é** o ato que concede Design Release; esse ato comum já está `GRANTED` para produção externa pela designer. O Source Lock também não é:
 
-- autorização de Design;
 - wireframe;
 - UI;
 - protótipo;
@@ -213,7 +212,7 @@ O que sua empresa pode tornar possível?
 
 Os dez movimentos são funções semânticas, não obrigação de dez blocos visuais equivalentes.
 
-A futura materialização pode agrupar movimentos, desde que preserve ordem de compreensão, significado e capacidade de reconhecimento de cada função.
+A materialização de Design pode agrupar movimentos, desde que preserve ordem de compreensão, significado e capacidade de reconhecimento de cada função.
 
 ## 7. Movimento 01 — Hero
 
@@ -431,13 +430,13 @@ CONHEÇA O GUIVOS INTELLIGENCE
 HOME PRÓPRIA DO GUIVOS INTELLIGENCE
 ```
 
-A Home própria do Intelligence ainda não existe. O destino deve ser preservado sem inventar URL ou disponibilidade pública.
+A autoridade documental da Home própria do Guivos Intelligence já existe. O destino deve ser preservado sem inventar URL pública, publicação ou disponibilidade operacional enquanto essas superfícies não forem formalmente liberadas.
 
 ## 15. Fronteiras do Intelligence preservadas
 
 A Home comunica positivamente o que Intelligence entrega; não precisa carregar a copy principal com explicações defensivas sobre o que ele não faz.
 
-Ainda assim, qualquer futura materialização deve preservar silenciosamente:
+Ainda assim, qualquer materialização de Design deve preservar silenciosamente:
 
 - Intelligence analisa aquilo que ocorre e é legitimamente conhecido dentro do ecossistema Guivos;
 - não transforma interesse em condição;
