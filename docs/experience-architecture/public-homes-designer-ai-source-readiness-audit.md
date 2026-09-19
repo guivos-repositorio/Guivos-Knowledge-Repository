@@ -233,7 +233,62 @@ P3
 
 Nenhum `P0/P1` pode permanecer aberto no fechamento.
 
-## 10. Saída esperada
+## 10. Registro inicial de findings
+
+A primeira passada de consumibilidade sobre as oito Homes e suas fontes diretamente relacionadas identificou os seguintes findings. A classificação abaixo representa o estado **antes da remediação**.
+
+| ID | Severidade | Escopo | Finding | Risco para Design/AI | Estado |
+|---|---|---|---|---|---|
+| SR-001 | P1 | Business Master + Business Source Lock × Intelligence | Intelligence é prescrito visualmente como dashboard/KPIs/gráficos, enquanto a autoridade própria do Intelligence estabelece `INTELLIGENCE ≠ DASHBOARD` e trata essas formas apenas como recursos admissíveis. | engessa a designer e pode fazer AI interpretar dashboard como requisito canônico | OPEN |
+| SR-002 | P1 | Business Master + Source Lock + Authority | cadeia procedimental superada: Source Lock tratado como próximo estágio; Handoff descrito como cobrindo seis Homes; Master/Source Lock declarados inexistentes em autoridade anterior; Home Intelligence tratada como documento futuro | faz designer/AI reconstruir estado corrente a partir de instruções incompatíveis | OPEN |
+| SR-003 | P2 | Mall Master | o Movimento 10 é definido como `PROVA E CONFIANÇA`, mas o corpo usa dois títulos independentes `Movimento 10 — Prova` e `Movimento 10 — Confiança` | pode induzir contagem de 12 movimentos ou materialização de funções como movimentos distintos | OPEN |
+| SR-004 | P2 | O/C Master | front matter e fechamento ainda registram auditoria integral em curso e materialização sob gate histórico, embora a auditoria esteja concluída e o release posterior exista | estado temporal incorreto para consumo atual | OPEN |
+| SR-005 | P1 | Intelligence Master + Source Lock + Handoff | documentos tratam Source Lock/GENINPUT/Handoff como próximos estágios embora Source Lock e Handoff já existam; Handoff ainda nomeia execução em Figma Make | ordem de consumo e próximo gate ficam materialmente incorretos para humano/AI | OPEN |
+| SR-006 | P1 | Mall / Travel / Media / Ads / Intelligence Masters | metadados `status: draft` coexistem com documentos declarados convergidos e utilizados como fontes vigentes no pacote de Design | AI ou designer pode interpretar fontes-mestre correntes como rascunhos sem autoridade de consumo | UNDER_ADJUDICATION |
+| SR-007 | P2 | Camada comum | fluxo anterior tratava Figma Make como etapa obrigatória e confundia release com execução visual pelo GKR/ChatGPT | contraria a decisão humana designer-first e reduz liberdade criativa | REMEDIATED_IN_BRANCH |
+
+### 10.1 Critério de remediação
+
+Uma correção é aceita somente quando:
+
+- elimina o drift sem reabrir decisões semânticas válidas;
+- não converte liberdade visual em regra;
+- mantém história preservada no Git;
+- atualiza a autoridade corrente em vez de reescrever snapshots históricos;
+- não promove Design, implementação ou produto além do necessário para corrigir a fonte.
+
+### 10.2 Estado por Home — primeira passada
+
+```text
+PESSOA
+→ REVIEWED / NO MATERIAL HOME-SPECIFIC FINDING IDENTIFIED IN FIRST PASS
+
+ORGANIZAÇÕES E COLETIVOS
+→ REVIEWED / SR-004 OPEN
+
+MALL
+→ REVIEWED / SR-003 OPEN / SR-006 UNDER_ADJUDICATION
+
+TRAVEL
+→ REVIEWED / SR-006 UNDER_ADJUDICATION
+
+MEDIA
+→ REVIEWED / SR-006 UNDER_ADJUDICATION
+
+ADS
+→ REVIEWED / SR-006 UNDER_ADJUDICATION
+
+BUSINESS
+→ REVIEWED / SR-001 + SR-002 OPEN
+
+INTELLIGENCE
+→ REVIEWED / SR-005 OPEN / SR-006 UNDER_ADJUDICATION
+
+TRANSVERSE COMMON LAYER
+→ SR-007 REMEDIATED IN BRANCH
+```
+
+## 11. Saída esperada
 
 Ao final desta frente:
 
@@ -265,17 +320,17 @@ FIGMA ARTIFACTS PRODUCED BY GKR
 
 Se o resultado for `PASS`, a etapa posterior será a emissão/materialização de um **snapshot v6 somente documental**, seguido de validação de integridade e entrega à designer.
 
-## 11. Estado atual
+## 12. Estado atual
 
 ```text
 AUDIT
 → IN_PROGRESS
 
 COMMON-LAYER RECONCILIATION
-→ IN_PROGRESS
+→ MATERIAL REMEDIATION APPLIED IN BRANCH / VALIDATION PENDING
 
 HOME-BY-HOME REVIEW
-→ NOT_STARTED
+→ FIRST PASS COMPLETED / FINDINGS UNDER REMEDIATION
 
 V6
 → NOT_EMITTED
