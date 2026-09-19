@@ -67,7 +67,7 @@ A autorização vale para o trabalho externo de Design sobre fontes governadas.
 
 Ela não obriga:
 
-- Figma Make;
+- qualquer ferramenta generativa específica;
 - qualquer IA específica;
 - qualquer ferramenta generativa;
 - protótipo gerado previamente pelo GKR;
