@@ -66,7 +66,7 @@ Pertencem à liberdade criativa da designer:
 
 Não existe obrigação de reproduzir visual histórico, snapshot antigo, palette anterior, fonte anterior ou estética pré-existente.
 
-Depois da aprovação humana da direção de protótipo, a solução escolhida passa a ser a baseline criativa daquela entrega e deve ser documentada no Figma final.
+Depois da aprovação humana da direção de protótipo, a solução escolhida passa a ser a baseline criativa daquela entrega e deve ser documentada no Figma final. Mudança material posterior de conceito de Hero, linguagem visual, arquitetura de navegação, composição global ou direção criativa exige nova aprovação humana antes do aceite final; refinamentos não materiais permanecem sob autonomia da designer.
 
 ## 4. O que permanece governado
 
@@ -236,6 +236,9 @@ Cada Home entregue deve possuir:
 - tratamento de loading/empty/error/unavailable apenas quando a Home realmente exigir esses estados;
 - organização de assets;
 - indicação de origem/licença para assets externos aplicáveis;
+- fontes tipográficas, plugins, bibliotecas e recursos pagos com licença, origem e condição de continuidade documentadas;
+- arquivo e bibliotecas essenciais acessíveis sob controle da Guivos, sem dependência exclusiva da conta pessoal da designer após o aceite;
+- source assets editáveis ou origem reutilizável entregues quando forem necessários para manutenção futura;
 - documentação das escolhas criativas aprovadas: cores, tipografia, estilos, componentes e demais foundations criadas pela designer;
 - acessibilidade considerada desde a solução: contraste, foco, teclado, texto ampliado, reduced motion, touch targets, mídia e ordem semântica;
 - internacionalização tolerando expansão/contração de texto;
@@ -278,13 +281,15 @@ A entrega pode ser aceita quando:
 3. componentes e estados recorrentes são reutilizáveis;
 4. protótipo demonstra interações essenciais;
 5. nenhum asset essencial está ausente;
-6. nenhuma fonte/asset externo essencial tem condição de uso desconhecida;
-7. não existem claims, parceiros, dados ou disponibilidade fictícios sem rótulo;
-8. acessibilidade estrutural está considerada;
-9. foundations criadas pela designer estão documentadas no arquivo;
-10. a solução permanece fiel aos contratos semânticos;
-11. a solução preserva criatividade e originalidade, sem se reduzir a template de benchmark;
-12. não há finding material aberto.
+6. nenhuma fonte, plugin, biblioteca ou asset externo essencial tem condição de uso/continuidade desconhecida;
+7. o arquivo, componentes e bibliotecas essenciais podem continuar sob controle da Guivos sem dependência da conta pessoal da designer;
+8. não existem claims, parceiros, dados ou disponibilidade fictícios sem rótulo;
+9. acessibilidade estrutural está considerada;
+10. foundations criadas pela designer estão documentadas no arquivo;
+11. a solução permanece fiel aos contratos semânticos;
+12. a solução preserva criatividade e originalidade, sem se reduzir a template de benchmark;
+13. as oito Homes passaram por revisão integrada de coerência como família Guivos sem obrigação de mesmo template;
+14. não há finding material aberto.
 
 ## 15. Gate de emissão v5 e release
 
