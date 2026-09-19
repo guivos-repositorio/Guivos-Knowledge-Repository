@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
 status: draft
-version: 0.1.1
+version: 0.2.0
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 depends_on:
   - GPA-006
@@ -685,7 +685,7 @@ BUSINESS
 
 A criação deste documento não autoriza automaticamente:
 
-- Home Source Lock;
+- criação de novo Home Source Lock por inferência;
 - wireframe;
 - UI;
 - protótipo;
@@ -701,7 +701,7 @@ A criação deste documento não autoriza automaticamente:
 
 ## 18. Itens ainda não congelados
 
-Até o Home Source Lock, permanecem refináveis sem alterar a arquitetura:
+Mesmo com o Home Source Lock vigente, permanecem refináveis pela designer sem alterar a arquitetura:
 
 - formulação final da pergunta-mãe;
 - CTA principal;
@@ -713,20 +713,69 @@ Até o Home Source Lock, permanecem refináveis sem alterar a arquitetura:
 - profundidade pública de Graph/AI;
 - composição visual das duas frentes.
 
-Esses itens não reabrem a identidade nem os onze movimentos já convergidos.
+Esses itens não reabrem a identidade do Produto nem os onze movimentos já convergidos e permanecem sujeitos às classes operacionais do pacote de Design.
 
-## 19. Critério de passagem
+## 19. Estado corrente de consumo e handoff
 
-Este Documento Mestre considera a arquitetura narrativa **conceitualmente completa em 11 movimentos**, com a copy de referência corrigida, e fornece base suficiente para a próxima etapa governada: elaboração do **Home Source Lock da Home Pública Guivos Intelligence v1**.
+A arquitetura narrativa permanece conceitualmente completa em 11 movimentos.
 
-Isso não significa que o Source Lock tenha sido criado ou autorizado por este artefato.
+O estado temporal vigente é:
+
+```text
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.0
+→ NARRATIVE / SEMANTIC / FUNCTIONAL AUTHORITY
+
+GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+→ ACTIVE / NORMATIVE
+→ HOME SOURCE PACKAGE / INVARIANT FREEZE
+
+GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
+→ PRODUCT SOURCE LOCK
+
+GPA-006 v2.0.0
+→ PRODUCT AUTHORITY
+
+COMPREENDER ≠ DECIDIR
+→ MANDATORY
+```
+
+O Home Source Lock não é mais “próximo ponto”; ele já existe e deve ser consumido no pacote vigente.
+
+### 19.1 Designer-first / IA opcional
+
+```text
+DESIGNER
+→ CREATIVE AUTHOR
+→ MAY WORK MANUALLY
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+GKR / CHATGPT
+→ DOES NOT CREATE OR ADVANCE FIGMA DESIGN FILES
+→ DOES NOT PRESELECT VISUAL DIRECTION
+```
+
+A designer pode criar livremente a expressão visual, desde que preserve:
+
+- Intelligence como Produto Especializado transversal;
+- `COMPREENDER ≠ DECIDIR`;
+- explicabilidade proporcional;
+- privacidade e autoridade;
+- distinção entre sinal, inferência, relação, padrão e causalidade;
+- ausência de diagnóstico ou decisão automática;
+- fronteiras com Journey e Business;
+- ausência de alegação operacional de Graph/AI/Neo4j/GraphRAG/GDS/Power BI sem prova.
+
+### 19.2 Fluxo documental atual
 
 ```mermaid
 flowchart TD
-    P[Product Source Lock\nintegrado] --> A[Arquitetura narrativa\nv0.2.1]
-    A --> M[Documento Mestre\nv0.1.1]
-    M --> S[Home Source Lock\npróximo ponto]
-    S --> D[Handoff / Design controlado]
+    P[Product Source Lock] --> A[Arquitetura narrativa]
+    A --> M[Documento Mestre v0.2.0]
+    M --> S[Home Source Lock v1.0.0]
+    S --> D[Pacote governado para designer]
+    D --> X[Criação externa manual / IA opcional]
 ```
 
-Nenhuma etapa autoriza automaticamente a seguinte.
+Nenhuma etapa documental autoriza Product Engineering automaticamente.
