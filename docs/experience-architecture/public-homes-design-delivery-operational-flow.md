@@ -24,7 +24,7 @@ maturity: designer_first_ai_optional_pre_delivery_finalization
 
 Este fluxo governa **como a designer consome as fontes do GKR** antes e durante a criação das oito Homes.
 
-Ele não prescreve ferramenta criativa específica e não exige Figma Make, IA, wireframe gerado automaticamente ou direção visual prévia.
+Ele não prescreve ferramenta criativa específica e não exige IA, geração automática, wireframe prévio ou direção visual pré-selecionada.
 
 ```text
 SOURCE OF TRUTH
