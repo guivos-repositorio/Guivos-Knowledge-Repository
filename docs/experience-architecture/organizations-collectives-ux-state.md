@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-UX-STATE-001
 title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.8.0
+version: 1.9.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
@@ -15,6 +15,8 @@ related:
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - UXA-014
   - UXA-019
 ---
@@ -25,19 +27,9 @@ related:
 
 O estado vigente é:
 
-> **Os wireframes da experiência autenticada de Organizações e Coletivos ainda não foram definidos.**
+> **A primeira entrega de wireframes autenticados low-fidelity de Organização e Coletivo foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0`; a validação funcional ainda não foi realizada.**
 
-Isso vale para, no mínimo:
-
-- visão geral / início da Organização autenticada;
-- visão geral / início do Coletivo autenticado;
-- arquitetura final de navegação interna;
-- hierarquia visual das superfícies;
-- composição de componentes;
-- estados responsivos;
-- protótipo navegável;
-- UI final;
-- testes de usabilidade dessas superfícies.
+A entrega corrente materializa em baixa fidelidade a visão geral/início de Organização e Coletivo, a hierarquia funcional, variantes de atenção, autoridade, proteção, troca de contexto e indisponibilidade. Permanecem deliberadamente não definidos: UI final, componentes finais, visual high-fidelity, protótipo navegável, implementação e testes de usabilidade.
 
 Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados, Priority Flows e Navigation Materialization autenticada já foram definidos documentalmente em instrumentos próprios. A Navigation Materialization canônica está em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Esse avanço **não equivale** a wireframe, UI, protótipo ou implementação.
 
@@ -177,7 +169,7 @@ Uma validação de wireframe exige um wireframe vigente como objeto.
 
 Portanto:
 
-> **não existe validação vigente de wireframe da Organização ou do Coletivo enquanto os respectivos wireframes oficiais não forem construídos.**
+> **não existe validação vigente de wireframe da Organização ou do Coletivo enquanto `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` não passar pelo gate de validação funcional.**
 
 A futura validação deverá ocorrer contra o objeto então vigente e contra os fundamentos e contratos atualizados naquele momento.
 
@@ -213,8 +205,8 @@ São superfícies e problemas distintos.
 | Priority Flows | **definidos documentalmente** | **definidos documentalmente** |
 | Navigation Materialization Eligibility | **PASS / ACTIVE / CANONICAL** | **PASS / ACTIVE / CANONICAL** |
 | Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** |
-| wireframe | **pendente** | **pendente** |
-| validação de wireframe | **pendente** | **pendente** |
+| wireframe low-fidelity | **DELIVERY v0.1.0 EXECUTED / PENDING VALIDATION** | **DELIVERY v0.1.0 EXECUTED / PENDING VALIDATION** |
+| validação de wireframe | **NOT_STARTED** | **NOT_STARTED** |
 | UI | pendente | pendente |
 | protótipo | pendente | pendente |
 | testes de usabilidade | pendente | pendente |
