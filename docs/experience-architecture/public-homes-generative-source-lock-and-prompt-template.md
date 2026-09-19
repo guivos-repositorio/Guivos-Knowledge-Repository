@@ -241,101 +241,81 @@ Quando houver limitação de tamanho, pode-se utilizar **extrato controlado**, d
 
 ## 6. Pacotes autorizados das oito Homes
 
-A execução deve utilizar somente o pacote correspondente à Home em trabalho, salvo exceção registrada no Source Lock.
+A execução deve utilizar somente o pacote correspondente à Home em trabalho, salvo ampliação deliberada registrada no Source Lock.
+
+### 6.0 Fontes comuns obrigatórias
+
+Todas as oito Homes recebem exatamente estas três autoridades comuns do Manifesto v5:
+
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.5.0` — `docs/experience-architecture/public-homes-design-handoff.md`;
+2. `GKR-UX-HOMES-GENINPUT-001 v2.0.0` — este documento;
+3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`.
+
+Essas três fontes comuns não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso de IA e critérios de produção/aceite.
 
 ### 6.1 Home Pública — Pessoa
 
-```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001
-+
-GKR-UX-HOME-MASTER-001
-+
-GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
-```
+Fontes específicas:
 
-Paths:
-
-- `docs/experience-architecture/public-homes-design-handoff.md`;
-- `docs/experience-architecture/public-home-master-document.md`;
-- `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`.
+- `GKR-UX-HOME-MASTER-001 v1.0.2` — `docs/experience-architecture/public-home-master-document.md`;
+- `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`.
 
 ### 6.2 Home Pública — Organizações e Coletivos
 
-```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001
-+
-GKR-UX-HOME-OC-MASTER-001
-+
-GKR-UX-HOME-OC-MEDIA-SUPPLY-001
-```
+Fontes específicas:
 
-Paths:
-
-- `docs/experience-architecture/public-homes-design-handoff.md`;
-- `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
-- `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
+- `GKR-UX-HOME-OC-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
+- `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
 
 ### 6.3 Home Pública — Guivos Mall
 
-```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001
-+
-GKR-UX-HOME-MALL-MASTER-001
-+
-GKR-UX-HOME-MALL-MEDIA-SUPPLY-001
-```
+Fontes específicas:
 
-Paths:
-
-- `docs/experience-architecture/public-homes-design-handoff.md`;
-- `docs/experience-architecture/public-home-mall-master-document.md`;
-- `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md`.
+- `GKR-UX-HOME-MALL-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-mall-master-document.md`;
+- `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md`.
 
 ### 6.4 Home Pública — Guivos Travel
 
-```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001
-+
-GKR-UX-HOME-TRAVEL-MASTER-001
-+
-GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001
-```
+Fontes específicas:
 
-Paths:
-
-- `docs/experience-architecture/public-homes-design-handoff.md`;
-- `docs/experience-architecture/public-home-travel-master-document.md`;
-- `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-travel-master-document.md`;
+- `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
 
 ### 6.5 Home Pública — Guivos Media
 
-```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001
-+
-GKR-UX-HOME-MEDIA-MASTER-001
-+
-GPA-005
-```
+Fontes específicas:
 
-Paths:
-
-- `docs/experience-architecture/public-homes-design-handoff.md`;
-- `docs/experience-architecture/public-home-media-master-document.md`;
-- `docs/product-architecture/media.md`.
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-media-master-document.md`;
+- `GPA-005 v1.2.0` — `docs/product-architecture/media.md`.
 
 ### 6.6 Home Pública — Guivos Ads
 
-Pacote específico: Handoff Canônico + contrato de prontidão de produção + Documento Mestre Ads + `GPA-007`.
+Fontes específicas:
+
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-ads-master-document.md`;
+- `GPA-007 v1.3.0` — `docs/product-architecture/ads.md`.
 
 ### 6.7 Home Pública — Guivos Business
 
-Pacote específico: Handoff Canônico + contrato de prontidão de produção + Source Lock semântico Business + Documento Mestre + Conversão vigente + Contratos de Autoridade + `GPA-004`.
+Fontes específicas:
+
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0` — `docs/experience-architecture/public-home-business-source-lock.md`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-business-master-document.md`;
+- `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+- `GPA-004 v1.6.0` — `docs/product-architecture/business.md`.
 
 ### 6.8 Home Pública — Guivos Intelligence
 
-Pacote específico: Handoff Canônico + contrato de prontidão de produção + Handoff específico Intelligence + Home Source Lock + Documento Mestre + Product Source Lock + `GPA-006`.
+Fontes específicas:
 
-Os antigos GENINPUTs de checkpoints superados não são usados como fonte operacional do pacote v5. A emissão v5 gera um `LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL` novo para cada Home, contendo o checkpoint exato, as fontes e o prompt controlado.
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0` — `docs/product-architecture/intelligence-product-source-lock.md`;
+- `GPA-006 v2.0.0` — `docs/product-architecture/intelligence.md`.
+
+Os antigos GENINPUTs de checkpoints superados não entram como autoridade operacional do v5. A emissão gera um `00-LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL` novo para cada Home, contendo checkpoint, SHAs, fontes, matriz operacional e prompt preenchido.
 
 ---
 
@@ -344,23 +324,36 @@ Os antigos GENINPUTs de checkpoints superados não são usados como fonte operac
 O prompt deve informar explicitamente à ferramenta que as fontes possuem funções diferentes.
 
 ```text
-1. HANDOFF CANÔNICO
-→ processo, uso de IA, limites da fase de Design
+0. LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL DA EMISSÃO
+→ congela checkpoint, lista de fontes, SHAs, objetivo e matriz daquela execução
+→ não cria significado novo
 
-2. DOCUMENTO MESTRE
-→ significado, identidade, narrativa, função e invariantes da Home
+1. AUTORIDADES COMUNS
+→ Handoff = processo e boundary da fase
+→ GENINPUT = método de Source Lock / prompt / classes
+→ Readiness = contrato de produção e aceite Figma
 
-3. CONTRATO COMPLEMENTAR
-→ relação especializada posterior ou arquitetura do produto aplicável
+2. SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE DA HOME, QUANDO EXISTIR
+→ congela decisões próprias daquela Home dentro de sua autoridade
 
-4. FONTES ADICIONAIS AUTORIZADAS
-→ apenas para a dúvida registrada
+3. DOCUMENTO MESTRE
+→ significado, narrativa, função, percepção e invariantes da Home
 
-5. REFERÊNCIAS EXTERNAS
-→ inspiração sem autoridade
+4. AUTORIDADES COMPLEMENTARES / DE PRODUTO
+→ resolvem identidade, fronteiras e contratos especializados aplicáveis
+
+5. FONTE ADICIONAL DECLARADA
+→ somente para dúvida concreta registrada
+
+REFERÊNCIA EXTERNA / BENCHMARK / MOODBOARD
+→ INSPIRATION_ONLY
+→ SEM AUTORIDADE
+
+HISTÓRICO / GENINPUT SUPERADO
+→ NÃO ENTRA COMO AUTORIDADE OPERACIONAL
 ```
 
-Benchmark, moodboard ou referência visual nunca sobe na hierarquia por ser visualmente convincente.
+O `LEIA-PRIMEIRO` não pode sobrescrever os documentos que lista. Se houver conflito semântico, a execução deve parar e registrar a divergência para decisão humana, observando a precedência vigente das autoridades específicas da Home.
 
 ---
 
