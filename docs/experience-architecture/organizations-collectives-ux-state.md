@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-UX-STATE-001
 title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.10.0
+version: 1.11.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
@@ -18,6 +18,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
   - UXA-014
   - UXA-019
 ---
@@ -28,7 +29,7 @@ related:
 
 O estado vigente é:
 
-> **A primeira entrega de wireframes autenticados low-fidelity de Organização e Coletivo foi executada e funcionalmente validada com `PASS`; a referência corrente é `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` + `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`.**
+> **A primeira entrega low-fidelity de Organização e Coletivo foi executada e validada com `PASS`. A elegibilidade high-fidelity posterior também concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0`; a autorização high-fidelity permanece `NOT_GRANTED`.**
 
 A entrega corrente materializa em baixa fidelidade a visão geral/início de Organização e Coletivo, a hierarquia funcional, variantes de atenção, autoridade, proteção, troca de contexto e indisponibilidade. Permanecem deliberadamente não definidos: UI final, componentes finais, visual high-fidelity, protótipo navegável, implementação e testes de usabilidade.
 
@@ -208,6 +209,8 @@ São superfícies e problemas distintos.
 | Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** |
 | wireframe low-fidelity | **DELIVERY v0.1.0 + VALIDATION v1.0.0** | **DELIVERY v0.1.0 + VALIDATION v1.0.0** |
 | validação de wireframe | **PASS** | **PASS** |
+| high-fidelity eligibility | **PASS** | **PASS** |
+| high-fidelity design authorization | **NOT_GRANTED** | **NOT_GRANTED** |
 | UI | pendente | pendente |
 | protótipo | pendente | pendente |
 | testes de usabilidade | pendente | pendente |
@@ -316,4 +319,4 @@ A proveniência permanece no histórico Git e em referências textuais explicita
 
 ## 12. Regra final
 
-> **O GKR define função, conteúdo, estados, regras, critérios, Priority Flows e Navigation Materialization documentais. O pacote low-fidelity Delivery v0.1.0 + Validation v1.0.0 é a referência visual corrente; high-fidelity, protótipo, layout final e implementação permanecem não autorizados. Artefatos históricos não podem antecipar nem restringir essa autoridade.**
+> **O GKR define função, conteúdo, estados, regras, critérios, Priority Flows e Navigation Materialization documentais. O pacote low-fidelity Delivery v0.1.0 + Validation v1.0.0 é a referência visual corrente; a elegibilidade high-fidelity está `PASS`, mas high-fidelity Design, protótipo, layout final e implementação permanecem não autorizados. Artefatos históricos não podem antecipar nem restringir essa autoridade.**
