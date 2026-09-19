@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.5.1
+version: 1.6.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: post_audit_design_handoff_release_granted_pre_execution
+maturity: designer_first_ai_optional_handoff_under_source_finalization
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -67,7 +67,7 @@ As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível
 
 O GKR **não congela identidade visual canônica** para estas Homes. A designer pode criar, com originalidade e autonomia, tipografia, paleta, imagens, ilustração, iconografia, grid, ritmo, composição, atmosfera, motion, linguagem gráfica, tratamento de componentes e tom de voz/copy não congelada.
 
-Essas escolhas são **output de Design**, não pré-condição documental. Depois que uma direção for aprovada no gate de protótipo, a solução escolhida deve ser documentada no próprio Figma para garantir consistência e handoff.
+Essas escolhas são **output de Design**, não pré-condição documental. A solução criativa aprovada deve ser documentada no artefato final de Design entregue pela designer, com consistência e handoff suficientes para continuidade.
 
 A liberdade criativa não autoriza alterar significado, papéis de produto, nomenclatura oficial, assinatura institucional quando utilizada, claims factuais, regras econômicas, disponibilidade, dados, parceiros, causalidade, privacidade ou demais contratos governados.
 
@@ -78,11 +78,33 @@ SEMANTIC / FUNCTIONAL TRUTH
 VISUAL / CREATIVE EXPRESSION
 → DESIGN
 
-GENERATIVE TOOL
-→ EXPLORATION INSTRUMENT
+AI TOOL
+→ OPTIONAL EXPLORATION INSTRUMENT
 
 HUMAN APPROVAL
 → SELECTS THE DIRECTION
+```
+
+
+### 0.2 Correção de precedência — designer-first / IA opcional
+
+A decisão humana de 2026-09-19 estabelece a seguinte precedência sobre qualquer formulação histórica deste documento que possa sugerir Figma Make como etapa obrigatória:
+
+```text
+DESIGNER
+→ CREATIVE AUTHOR
+→ MAY WORK MANUALLY
+
+AI
+→ OPTIONAL
+→ DESIGNER DISCRETION
+
+GKR / CHATGPT
+→ DOES NOT CREATE OR ADVANCE FIGMA DESIGN FILES
+→ DOES NOT PRESELECT VISUAL DIRECTION
+
+TOOL-SPECIFIC WORDING ELSEWHERE
+→ READ AS HISTORICAL / NON-MANDATORY WHEN IN CONFLICT WITH THIS SECTION
 ```
 
 ---
@@ -110,8 +132,8 @@ Este documento **não desenha as páginas** e não determina solução visual fi
 GKR
 → define significado, função, narrativa, fronteiras, Source Locks e invariantes
 
-DESIGN / FIGMA MAKE / FERRAMENTA EQUIVALENTE
-→ produz exploração visual fora desta frente canônica
+DESIGNER / FERRAMENTA DE DESIGN / IA OPCIONAL
+→ produz a solução visual fora desta frente canônica
 
 VALIDAÇÃO HUMANA
 → confronta forma e significado contra o GKR
@@ -134,7 +156,7 @@ A execução somente fica liberada quando coexistirem:
 
 Depois desse release, podem ser executados:
 
-- exploração em Figma Make e ferramentas equivalentes;
+- criação manual pela designer e, opcionalmente, exploração assistida por IA;
 - arquitetura visual;
 - wireframes de baixa fidelidade;
 - exploração de UX e direção visual;
@@ -168,9 +190,9 @@ A existência deste documento, isoladamente, não significa que um snapshot de e
 
 ## 3. Princípio central
 
-> **Ferramentas generativas são instrumentos de exploração e materialização, não fontes de decisão sobre a arquitetura das Homes.**
+> **A designer é autora da solução. Ferramentas de IA, quando utilizadas, são instrumentos opcionais de exploração e não fontes de decisão sobre a arquitetura das Homes.**
 
-Uma solução visual produzida por IA, Figma Make, plugin, template, benchmark ou referência externa não se torna canônica por ter sido gerada. Somente após validação humana contra o GKR uma direção pode ser promovida.
+Uma solução visual produzida manualmente ou com apoio de IA, plugin, template, benchmark ou referência externa não se torna canônica apenas por existir. Somente após validação humana contra o GKR uma direção pode ser promovida.
 
 ---
 
@@ -644,8 +666,8 @@ FIGMA MAKE / GENERATIVE EXPLORATION
 → METHOD DEFINED
 → AUTHORIZED TO EXECUTE / NOT_STARTED
 
-FINAL FIGMA PRODUCTION
-→ SUBJECT TO PROTOTYPE APPROVAL + FINAL ACCEPTANCE CONTRACT
+FINAL DESIGN PRODUCTION
+→ DESIGNER-OWNED / SUBJECT TO HUMAN ACCEPTANCE
 
 IMPLEMENTATION / PRODUCTION
 → NOT RELEASED BY THIS HANDOFF
