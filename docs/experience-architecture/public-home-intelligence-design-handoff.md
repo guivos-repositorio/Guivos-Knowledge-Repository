@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
 title: Handoff Canônico para Design — Home Pública — Guivos Intelligence
 status: active
-version: 1.1.1
+version: 1.1.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
@@ -276,13 +276,13 @@ Design não pode:
 - inserir claim novo;
 - substituir clareza por jargão analítico ou tecnológico.
 
-CTAs congelados:
+CTAs de referência:
 
 > **Veja o que suas informações podem mostrar**
 
 > **Conheça o Guivos Intelligence**
 
-Os CTAs não podem ser reinterpretados como promessa de decisão certa, diagnóstico, certeza ou futuro conhecido.
+A designer pode refinar microeditorialmente a formulação da pergunta-mãe e dos CTAs, preservando intenção semântica, autoridade, fronteira e claims. Os CTAs não podem ser reinterpretados como promessa de decisão certa, diagnóstico, certeza ou futuro conhecido.
 
 ## 9. Duas frentes preservadas
 
@@ -495,7 +495,7 @@ Dentro das invariantes deste Handoff, Design pode decidir:
 - motion;
 - progressive disclosure;
 - densidade;
-- posição e forma dos CTAs congelados;
+- posição, forma e refinamento microeditorial dos CTAs de referência;
 - presença ou ausência de demonstração tecnológica subordinada;
 - tratamento de redes e relações quando semanticamente necessário.
 
@@ -508,7 +508,7 @@ Design não recebe autoridade para decidir ou alterar:
 - definição do Guivos Intelligence;
 - unidade de valor;
 - promessa pública;
-- pergunta-mãe;
+- significado e função da pergunta-mãe; sua formulação literal pode ser refinada sem alterar esse significado;
 - contrato `COMPREENDER ≠ DECIDIR`;
 - fronteira Person/Journey e Business/população;
 - privacidade e governança;
@@ -531,7 +531,7 @@ Qualquer futura proposta de wireframe, UI ou protótipo deve ser rejeitada ou co
 - [ ] mantém M03 distinto de M10;
 - [ ] mantém M04 distinto de M05;
 - [ ] torna resultados perceptíveis antes de explicar mecanismos;
-- [ ] preserva os CTAs congelados;
+- [ ] preserva a intenção semântica e os limites de claim dos CTAs de referência;
 - [ ] preserva Person/Journey e Business/população sem transferência indevida de autoridade;
 - [ ] preserva explicabilidade e autonomia;
 - [ ] não converte relação em causa;
