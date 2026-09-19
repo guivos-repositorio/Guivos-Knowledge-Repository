@@ -34,7 +34,7 @@ related:
 
 ## 0. Correção de precedência — autoria da designer
 
-Esta versão substitui qualquer leitura anterior que tratasse Figma Make como fase necessária.
+Esta versão substitui qualquer leitura anterior que tratasse uma ferramenta generativa específica como fase necessária.
 
 ```text
 DESIGNER
@@ -245,7 +245,7 @@ FINAL EXACT-HEAD GATE
 → STILL REQUIRED
 ```
 
-A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente no Figma Make.
+A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente em ferramentas de IA.
 
 ## 7. Regra de isolamento para IA
 
@@ -407,25 +407,37 @@ Regras de integridade:
 - logos de terceiros exigem relação/autorização aplicável;
 - preço, avaliação, número de usuários, disponibilidade e resultados não podem ser inventados;
 - conteúdo gerado para protótipo deve ser reconhecível internamente como candidato ou placeholder;
-- no Figma final, assets externos devem possuir origem/licença ou condição de uso registrada;
+- no artefato final, assets externos devem possuir origem/licença ou condição de uso registrada;
 - mídia essencial deve possuir fallback e não pode carregar sozinha o significado da página.
 
-## 10. Figma Make — gate obrigatório de protótipo
+## 10. Criação externa da designer — IA opcional
 
-A exploração generativa antecede a construção definitiva.
+A designer não depende de exploração generativa prévia.
 
-Sequência obrigatória:
+Sequência de referência:
 
-1. carregar pacote v5 isolado da Home;
-2. gerar exploração/protótipo;
-3. executar autoauditoria contra Source Lock;
-4. revisão humana de significado, conteúdo, UX, responsividade e direção criativa;
-5. registrar decisões aceitas, rejeitadas e lacunas;
-6. somente após aprovação humana, construir/refinar o Figma definitivo.
+1. compreender o pacote vigente da Home;
+2. criar manualmente e/ou usar IA opcionalmente;
+3. executar autoauditoria contra Master, Source Lock e autoridades aplicáveis;
+4. apresentar a solução para revisão humana;
+5. registrar ajustes materiais quando necessários;
+6. concluir o artefato final de Design segundo o processo criativo da designer.
 
-A designer não é obrigada a copiar a proposta do Figma Make. A ferramenta serve para visualizar e testar possibilidades.
+```text
+MANUAL DESIGN
+→ FIRST-CLASS
 
-## 11. Contrato mínimo do Figma definitivo
+AI-ASSISTED DESIGN
+→ OPTIONAL
+
+GENERATIVE PROTOTYPE
+→ NOT REQUIRED
+
+GKR-CREATED DESIGN
+→ NONE
+```
+
+## 11. Contrato mínimo do artefato final de Design
 
 O contrato abaixo governa qualidade e editabilidade, não estética.
 
@@ -444,7 +456,7 @@ Cada Home entregue deve possuir:
 - organização de assets;
 - indicação de origem/licença para assets externos aplicáveis;
 - fontes tipográficas, plugins, bibliotecas e recursos pagos com licença, origem e condição de continuidade documentadas;
-- arquivo e bibliotecas essenciais acessíveis sob controle da Guivos, sem dependência exclusiva da conta pessoal da designer após o aceite;
+- arquivo final e bibliotecas essenciais acessíveis sob controle da Guivos, sem dependência exclusiva da conta pessoal da designer após o aceite;
 - source assets editáveis ou origem reutilizável entregues quando forem necessários para manutenção futura;
 - documentação das escolhas criativas aprovadas: cores, tipografia, estilos, componentes e demais foundations criadas pela designer;
 - registro de placeholders e conteúdo variável, indicando classe, origem esperada e condição de substituição;
