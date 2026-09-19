@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 title: Homes Públicas — Remediação de Prontidão Documental para Designer e IA
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: source_readiness_remediation_in_progress_person_oc_pass
+maturity: source_readiness_remediation_in_progress_person_oc_mall_pass
 depends_on:
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-GENINPUT-001
@@ -345,8 +345,8 @@ NEW EXTERNAL SNAPSHOT
 |---|---|---:|
 | Pessoa | **SOURCE_READY / PASS** | 0 |
 | Organizações e Coletivos | **SOURCE_READY / PASS** | 0 |
-| Mall | UNDER_AUDIT | — |
-| Travel | NOT_YET_AUDITED | — |
+| Mall | **SOURCE_READY / PASS** | 0 |
+| Travel | UNDER_AUDIT | — |
 | Media | NOT_YET_AUDITED | — |
 | Ads | NOT_YET_AUDITED | — |
 | Business | NOT_YET_AUDITED | — |
@@ -367,6 +367,14 @@ Home Organizações e Coletivos foi fechada após:
 - matriz operacional específica;
 - brief mínimo para designer;
 - contrato de uso opcional de IA;
+- confirmação de zero gap semântico material.
+
+Home Mall foi fechada após:
+- confirmação contra GPA-002 v1.2.0;
+- explicitação de Movimento 10 = Prova e Confiança com duas facetas;
+- contratos de preço/pontos, disponibilidade, personalização, campanha e patrocínio;
+- acessibilidade/mobile/fallback;
+- matriz operacional e brief para designer/IA;
 - confirmação de zero gap semântico material.
 
 ## 11. Estado
