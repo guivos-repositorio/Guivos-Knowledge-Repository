@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
@@ -363,22 +363,27 @@ A Home deve comunicar positivamente aquilo que o Intelligence entrega.
 
 As limitações de causalidade, dados internos empresariais, privacidade e individualidade continuam normativamente preservadas por `GKR-UX-HOME-BUSINESS-AUTHORITY-001`, mas não precisam dominar a copy pública.
 
-## 15. Direção visual obrigatória para o futuro Design
+## 15. Responsabilidade semântica do Movimento Intelligence no Design
 
-O Movimento Intelligence deve ser prioritariamente demonstrado por uma representação visual do produto, incluindo conceitos como:
+O Movimento Intelligence deve **tornar perceptível o valor da compreensão**, sem prescrever uma forma visual específica.
 
-- dashboard;
-- KPIs;
-- gráficos;
-- evolução temporal;
-- participação;
-- utilização;
-- recorrência;
-- tendências;
-- interesses agregados;
-- movimentos e distribuições.
+A designer possui liberdade para decidir se isso será expresso por narrativa, comparação, composição editorial, visualização de dados conceitual, relações, temporalidade, motion, imagem, abstração, componentes ou outra solução original.
 
-O Documento Mestre não congela o dashboard final, métricas exatas ou layout.
+Elementos como indicadores, KPIs, gráficos, séries temporais, participação, utilização, recorrência, tendências, interesses agregados, movimentos e distribuições são **possibilidades de materialização**, não requisitos visuais e não constituem um dashboard obrigatório.
+
+```text
+VALOR A COMUNICAR
+→ COMPREENSÃO DE MOVIMENTOS / PADRÕES / CONTEXTO
+
+FORMA VISUAL
+→ DESIGNER-OWNED
+
+DASHBOARD / KPI / GRÁFICO
+→ OPTIONAL DESIGN HYPOTHESIS
+→ NOT CANONICAL VISUAL REQUIREMENT
+```
+
+O Documento Mestre não congela dashboard, componente, visualização, métrica exata, estética ou layout.
 
 ## 16. CTA para Guivos Intelligence
 
