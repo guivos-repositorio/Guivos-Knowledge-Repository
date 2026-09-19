@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.0.2
+version: 1.0.3
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
@@ -665,13 +665,38 @@ Este Documento Mestre não:
 - define SLA;
 - congela entitlements;
 - define disponibilidade concreta por país/moeda;
-- cria Source Lock;
-- autoriza Design.
+- substitui o Source Lock vigente;
+- autoriza implementação, publicação ou operação comercial por si só.
 
-## 28. Próximo estágio
+## 28. Estado posterior e consumo por Design
 
-Com este Documento Mestre validado, a próxima etapa governada é:
+O Source Lock da Home Business já existe e permanece a autoridade de congelamento da fonte:
 
-> **SOURCE LOCK — HOME GUIVOS BUSINESS**
+> **GKR-UX-HOME-BUSINESS-SOURCELOCK-001**
 
-O Source Lock deverá congelar a fonte pública aprovada para implementação e Design, sem reabrir decisões já consolidadas salvo nova autorização explícita.
+A autorização posterior das Homes públicas permite o handoff externo de Design, subordinado ao pacote vigente e à revisão humana.
+
+```text
+MASTER
+→ SIGNIFICADO / NARRATIVA / RESPONSABILIDADES
+
+SOURCE LOCK
+→ FONTE CONGELADA / LIMITES / OPEN QUESTIONS
+
+DESIGNER
+→ FORMA VISUAL / EXPRESSÃO CRIATIVA
+
+IA
+→ APOIO OPCIONAL / MESMAS FONTES
+
+IMPLEMENTAÇÃO
+→ NÃO AUTORIZADA
+```
+
+### Robustez, responsividade e acessibilidade
+
+A materialização deve funcionar em desktop e mobile com soluções próprias; responsividade não significa apenas empilhar o desktop.
+
+Significado, navegação e ações essenciais não podem depender exclusivamente de hover, motion, vídeo, cor isolada ou alta conectividade. A futura solução deve preservar hierarquia compreensível, contraste adequado, leitura textual e caminhos operáveis por diferentes modos de interação.
+
+Esses requisitos são funcionais e de robustez; não congelam estética, componentes ou identidade visual.
