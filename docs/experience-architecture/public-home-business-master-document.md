@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-19
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
 depends_on:
   - GKR-UX-HOME-BUSINESS-NARRATIVE-001
@@ -13,6 +13,10 @@ depends_on:
   - GPA-004
   - GKR-STATE-001
   - ROADMAP-12.79.0
+related:
+  - GKR-UX-HOME-BUSINESS-SOURCELOCK-001
+  - GKR-UX-HOME-INTELLIGENCE-MASTER-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
 normative: true
 ---
 
@@ -47,8 +51,9 @@ ARQUITETURA NARRATIVA      → CONVERGIDA
 CONTRATOS DE AUTORIDADE    → CONVERGIDOS
 CONVERSÃO GLOBAL           → CONVERGIDA / REFINADA
 DOCUMENTO MESTRE           → CONVERGIDO NESTE DOCUMENTO
-SOURCE LOCK                → PRÓXIMA ETAPA
-DESIGN                     → NÃO AUTORIZADO
+SOURCE LOCK                → ACTIVE / GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0
+DESIGN PRODUCTION RELEASE  → GRANTED / COMMON AUTHORITY
+EXTERNAL DESIGNER START    → DEFERRED UNTIL FINAL SOURCE READINESS PASS
 ```
 
 ## 2. Precedência deste Documento Mestre
@@ -61,7 +66,7 @@ Refinamentos de precedência:
 
 1. **Pontos Guivos não aparecem na Home Business.** Permanecem mecanismo interno/funcional governado pelas autoridades próprias, sem necessidade de menção pública nesta Home.
 2. Incentivos e benefícios não são movimentos públicos separados. O incentivo pode reconhecer, estimular, viabilizar e abrir novas possibilidades.
-3. Guivos Intelligence deve ser apresentado de forma positiva e visual; limites internos permanecem nos contratos de autoridade e não precisam dominar a copy pública.
+3. Guivos Intelligence deve ser apresentado de forma positiva, compreensível e tangível; a designer possui liberdade para decidir se isso usa gráficos, relações, sequências, indicadores, narrativas visuais ou outra solução. Intelligence não é definido por dashboard, KPI ou tecnologia.
 4. Toda contratação do Guivos Business é concebida como online; o que varia é o modelo de implementação/operação após a contratação.
 5. Planos, comparativo e configurador comercial passam a ter expressão concreta na Home.
 
@@ -361,12 +366,13 @@ A Home deve comunicar positivamente aquilo que o Intelligence entrega.
 
 As limitações de causalidade, dados internos empresariais, privacidade e individualidade continuam normativamente preservadas por `GKR-UX-HOME-BUSINESS-AUTHORITY-001`, mas não precisam dominar a copy pública.
 
-## 15. Direção visual obrigatória para o futuro Design
+## 15. Função de comunicação do Intelligence e liberdade visual
 
-O Movimento Intelligence deve ser prioritariamente demonstrado por uma representação visual do produto, incluindo conceitos como:
+O Movimento Intelligence deve tornar compreensível **o valor de compreender movimentos, padrões e relações dentro do contexto legitimamente conhecido pela Guivos**, sem transformar o produto em dashboard, conjunto de KPIs ou tecnologia específica.
 
-- dashboard;
-- KPIs;
+A designer pode, se considerar útil, explorar recursos como:
+
+- indicadores ou KPIs conceituais;
 - gráficos;
 - evolução temporal;
 - participação;
@@ -374,9 +380,22 @@ O Movimento Intelligence deve ser prioritariamente demonstrado por uma represent
 - recorrência;
 - tendências;
 - interesses agregados;
-- movimentos e distribuições.
+- movimentos e distribuições;
+- relações, sequências ou outras representações visuais.
 
-O Documento Mestre não congela o dashboard final, métricas exatas ou layout.
+Esses recursos são **possibilidades de Design, não requisitos canônicos**. A solução também pode comunicar Intelligence por outra abordagem que preserve o significado governado.
+
+```text
+INTELLIGENCE
+≠ DASHBOARD
+≠ KPI SET
+≠ TECHNOLOGY DEMO
+
+DESIGN FREEDOM
+→ PRESERVED
+```
+
+Métricas, números, dados, resultados ou telas operacionais somente podem aparecer como realidade quando houver fonte aplicável; exemplos conceituais devem permanecer identificados como tais.
 
 ## 16. CTA para Guivos Intelligence
 
@@ -661,10 +680,25 @@ Este Documento Mestre não:
 - cria Source Lock;
 - autoriza Design.
 
-## 28. Próximo estágio
+## 28. Estado corrente e próximo movimento
 
-Com este Documento Mestre validado, a próxima etapa governada é:
+O Source Lock da Home Business já existe e permanece autoridade vigente em `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0`, sujeito às reconciliações de prontidão documental desta frente.
 
-> **SOURCE LOCK — HOME GUIVOS BUSINESS**
+```text
+DOCUMENTO MESTRE
+→ ACTIVE / CONVERGED
 
-O Source Lock deverá congelar a fonte pública aprovada para implementação e Design, sem reabrir decisões já consolidadas salvo nova autorização explícita.
+SOURCE LOCK
+→ ACTIVE
+
+COMMON DESIGN PRODUCTION RELEASE
+→ GRANTED
+
+FINAL SOURCE READINESS AUDIT
+→ IN_PROGRESS
+
+EXTERNAL DESIGNER START
+→ DEFERRED UNTIL PASS
+```
+
+O próximo movimento desta Home não é criar outro Source Lock nem produzir Figma no GKR. É concluir a auditoria de consumibilidade, eliminar findings materiais e integrar a Home ao próximo pacote documental vigente.

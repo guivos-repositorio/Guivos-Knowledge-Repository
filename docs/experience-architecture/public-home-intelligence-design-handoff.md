@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
 title: Handoff Canônico para Design — Home Pública — Guivos Intelligence
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
@@ -13,6 +13,10 @@ depends_on:
   - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
   - GPA-006
   - GKR-UX-HOMES-OUTCOME-001
+related:
+  - GKR-UX-HOMES-DESIGN-HANDOFF-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
 normative: true
 ---
 
@@ -542,39 +546,52 @@ Qualquer futura proposta de wireframe, UI ou protótipo deve ser rejeitada ou co
 - [ ] não inventa maturidade, integração, benchmark, métrica ou caso real;
 - [ ] não transforma Intelligence em dashboard, IA ou produto tecnológico isolado.
 
-## 18. Próximo gate — GENINPUT Intelligence
+## 18. Consumo por designer e AI opcional
 
-Com este Handoff integrado, o próximo artefato elegível é o **GENINPUT Intelligence**, em pacote separado.
+Este Handoff pode ser consumido diretamente pela designer junto ao Documento Mestre, Source Lock e autoridades comuns do pacote vigente.
+
+Um GENINPUT específico ou prompt controlado pode existir **somente quando um sistema de AI for utilizado**. Ele é instrumento opcional de tradução de contexto, não gate obrigatório.
 
 ```text
 HOME SOURCE LOCK
-→ HANDOFF CANÔNICO PARA DESIGN
-→ GENINPUT INTELLIGENCE
-→ MATERIALIZAÇÃO CONTROLADA
-```
+→ HANDOFF ESPECÍFICO
+→ DESIGNER
 
-O GENINPUT deve traduzir este contrato para o formato operacional necessário à ferramenta ou etapa de Design escolhida, sem criar nova autoridade semântica.
+AI, QUANDO USADA
+→ SOURCE-BOUND SUPPORT
+→ CANDIDATE / HYPOTHESIS / PLACEHOLDER
+→ NO ARCHITECTURAL AUTHORITY
+```
 
 Invariante:
 
-> **GENINPUT TRADUZ O HANDOFF ≠ REDEFINE A HOME**
+> **AI PODE APOIAR O HANDOFF ≠ REDEFINE A HOME ≠ SUBSTITUI A DESIGNER**
 
-O GENINPUT **não integra este Handoff** e deve ser tratado em PR separada.
+## 19. Estado operacional corrente
 
-## 19. O que a integração deste Handoff não inicia automaticamente
+A integração deste Handoff não inicia automaticamente a produção visual nem qualquer etapa posterior.
 
-A integração deste documento não inicia automaticamente:
+```text
+HOME HANDOFF
+→ ACTIVE
 
-- GENINPUT;
-- execução em Figma Make ou outra ferramenta generativa;
-- wireframe;
-- UI;
-- protótipo;
-- implementação front-end ou back-end;
-- publicação;
-- Marketing/GTM;
-- pricing;
-- mudança de maturidade técnica;
-- sincronização transversal de `GKR-STATE-001` ou Roadmap.
+COMMON DESIGN PRODUCTION RELEASE
+→ GRANTED
 
-Cada etapa posterior exige o gate e a autorização correspondentes.
+FINAL SOURCE READINESS AUDIT
+→ IN_PROGRESS
+
+EXTERNAL DESIGNER START
+→ DEFERRED UNTIL PASS
+
+AI SUPPORT
+→ OPTIONAL
+
+GKR / CHATGPT FIGMA EXECUTION
+→ NOT TO BE PERFORMED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+```
+
+Wireframe, UI, protótipo e Figma serão decisões e entregáveis da designer dentro do serviço externo, conforme escopo contratual e gates humanos de revisão/aceite. Implementação, publicação, Marketing/GTM e pricing continuam independentes.

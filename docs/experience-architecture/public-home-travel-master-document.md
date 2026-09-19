@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-TRAVEL-MASTER-001
 title: Home Pública — Guivos Travel — Documento Mestre
-status: draft
-version: 1.0.0
+status: active
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-13
+last_updated: 2026-09-19
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-003
@@ -15,6 +15,9 @@ related:
   - GPA-004
   - GLPA-001
   - GEM-005
+normative: false
+maturity: reconciled_architecture_under_source_readiness_audit
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
 ---
 
 # Home Pública — Guivos Travel — Documento Mestre

@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
-title: Homes Públicas — Prontidão de Produção de Design e Contrato Figma/IA
+title: Homes Públicas — Prontidão de Produção de Design e Contrato de Consumo por Designer/IA
 status: active
-version: 1.0.1
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: post_audit_design_production_readiness_release_granted_pre_execution
+maturity: designer_ai_source_readiness_hardening_in_progress
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -25,15 +25,16 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
   - GKR-BRAND-SIGNATURE-001
   - GOG-001
 ---
 
-# Homes Públicas — Prontidão de Produção de Design e Contrato Figma/IA
+# Homes Públicas — Prontidão de Produção de Design e Contrato de Consumo por Designer/IA
 
 ## 1. Finalidade
 
-Esta autoridade prepara as oito Homes públicas da Guivos para uma contratação real de Design em que Figma Make ou ferramenta equivalente pode ser usada para prototipação antes da construção definitiva no Figma.
+Esta autoridade prepara as oito Homes públicas da Guivos para uma contratação real de Design em que a designer cria manualmente usando o GKR como fonte governada e pode recorrer a sistemas de AI como apoio opcional. O GKR não produz arquivos Figma nem impõe uma etapa generativa obrigatória.
 
 O objetivo é reduzir a zero os findings materiais documentais antes do release de produção, sem transformar documentação em direção artística.
 
@@ -46,7 +47,7 @@ Estado desta revisão:
 - arquitetura semântica das oito Homes: documentada e reconciliada;
 - método de handoff: reconciliado pós-auditoria;
 - template generativo: expandido para oito Homes;
-- contrato de protótipo e entrega Figma: definido por esta autoridade;
+- contrato de consumo das fontes, qualidade da entrega e aceite Figma: definido por esta autoridade;
 - pacote v5: preparado pelo Manifesto v5, ainda dependente de emissão pós-merge;
 - Design Production Release: não concedido por este documento.
 
@@ -68,7 +69,7 @@ Pertencem à liberdade criativa da designer:
 
 Não existe obrigação de reproduzir visual histórico, snapshot antigo, palette anterior, fonte anterior ou estética pré-existente.
 
-Depois da aprovação humana da direção de protótipo, a solução escolhida passa a ser a baseline criativa daquela entrega e deve ser documentada no Figma final. Mudança material posterior de conceito de Hero, linguagem visual, arquitetura de navegação, composição global ou direção criativa exige nova aprovação humana antes do aceite final; refinamentos não materiais permanecem sob autonomia da designer.
+Durante o serviço, a designer pode iterar livremente dentro das fronteiras semânticas. Uma direção selecionada para continuidade pode ser registrada como referência de trabalho, mas não precisa nascer de protótipo gerado por AI. Mudança material de significado, arquitetura governada, claims ou boundaries exige reconciliação; refinamentos puramente criativos permanecem sob autonomia da designer.
 
 ## 4. O que permanece governado
 
@@ -141,7 +142,7 @@ Fontes específicas:
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### Mall
-- `GKR-UX-HOME-MALL-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.0.1`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
 
 Contrato corrente que o Source Lock v5 deve explicitar:
@@ -153,7 +154,7 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 - `MALL-HS-06 SPONSORED_EXPOSURE` — exposição paga permanece identificada e não se disfarça de relevância orgânica.
 
 ### Travel
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.1`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
 
 Contrato corrente que o Source Lock v5 deve explicitar:
@@ -165,24 +166,24 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 - `TRAVEL-HS-06 CAMPAIGN_OR_SPONSORED` — campanha é temporária e patrocínio permanece identificado.
 
 ### Media
-- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1`;
 - `GPA-005 v1.2.0`.
 
 ### Ads
-- `GKR-UX-HOME-ADS-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.1`;
 - `GPA-007 v1.3.0`.
 
 ### Business
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.0`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.1`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.1`;
 - `GPA-004 v1.6.0`.
 
 ### Intelligence
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.0`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.0`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.2`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0`;
 - `GPA-006 v2.0.0`.
 
@@ -223,11 +224,11 @@ FINAL EXACT-HEAD GATE
 → STILL REQUIRED
 ```
 
-A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente no Figma Make.
+A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente no contexto inicial da designer ou de sistemas de AI.
 
 ## 7. Regra de isolamento para IA
 
-Uma execução de Figma Make trabalha uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente.
+O consumo operacional trabalha uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente no contexto inicial da designer ou de sistemas de AI.
 
 A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + quatro fontes comuns + fontes específicas daquela Home.
 
@@ -235,7 +236,7 @@ Output inicial obrigatório: `EXPLORAÇÃO / NÃO CANÔNICA`.
 
 ## 8. Classes obrigatórias de informação
 
-Toda informação relevante usada por humano, Figma Make ou ferramenta equivalente deve estar tratável em uma destas oito classes:
+Toda informação relevante usada por designer humana ou sistema de AI deve estar tratável em uma destas oito classes:
 
 - `CANONICAL` — decisão governada que deve ser preservada;
 - `DESIGN_CREATIVE` — campo deliberadamente aberto à criação da designer;
@@ -388,20 +389,27 @@ Regras de integridade:
 - no Figma final, assets externos devem possuir origem/licença ou condição de uso registrada;
 - mídia essencial deve possuir fallback e não pode carregar sozinha o significado da página.
 
-## 10. Figma Make — gate obrigatório de protótipo
+## 10. AI como apoio opcional — não é gate de Design
 
-A exploração generativa antecede a construção definitiva.
+A designer não precisa gerar protótipo por AI antes de criar ou refinar o Figma. Sistemas de AI podem ser utilizados como apoio opcional para ideação, síntese, copy candidata, imagens conceituais, alternativas ou autoauditoria.
 
-Sequência obrigatória:
+Quando AI for utilizada:
 
-1. carregar pacote v5 isolado da Home;
-2. gerar exploração/protótipo;
-3. executar autoauditoria contra Source Lock;
-4. revisão humana de significado, conteúdo, UX, responsividade e direção criativa;
-5. registrar decisões aceitas, rejeitadas e lacunas;
-6. somente após aprovação humana, construir/refinar o Figma definitivo.
+1. usar somente o pacote isolado da Home e fontes adicionais explicitamente declaradas;
+2. preservar as oito classes operacionais de informação;
+3. tratar qualquer output como candidato, hipótese ou placeholder conforme sua natureza;
+4. impedir que a ferramenta invente arquitetura, dado, parceiro, preço, disponibilidade, claim ou evidência;
+5. submeter decisões materiais à revisão humana.
 
-A designer não é obrigada a copiar a proposta do Figma Make. A ferramenta serve para visualizar e testar possibilidades.
+```text
+AI SUPPORT
+→ OPTIONAL
+→ NOT A DESIGN GATE
+→ NOT A SOURCE OF AUTHORITY
+
+GKR / CHATGPT
+→ DOES NOT CREATE FIGMA ARTIFACTS
+```
 
 ## 11. Contrato mínimo do Figma definitivo
 
@@ -447,9 +455,9 @@ PERSONALIDADE DIFERENTE
 
 A coerência pode emergir de qualidade, princípios, interação, linguagem e sistema criado pela designer. Não é necessário forçar mesmas cores, mesmos blocos ou mesma composição.
 
-## 13. Critérios de aceite do protótipo
+## 13. Critérios de revisão intermediária
 
-Antes de iniciar o Figma definitivo:
+Durante o processo de Design e antes do aceite final:
 
 - zero divergência material de significado;
 - nenhum produto/participante confundido;
@@ -492,10 +500,11 @@ TERMOS DE PAGAMENTO / CONTRATO
 
 ## 15. Gate de emissão v5 e release
 
-Antes de qualquer início definitivo:
+O gate histórico de emissão v5 foi cumprido. A decisão humana atual reabriu a prontidão documental para uma auditoria final antes do início externo da designer.
 
 ```text
-MERGE DO PACOTE DE PRONTIDÃO
+HISTORICAL V5 FLOW
+→ MERGE DO PACOTE DE PRONTIDÃO
 ↓
 CAPTURAR MAIN PÓS-MERGE
 ↓
@@ -514,9 +523,15 @@ REVISÃO INDEPENDENTE
 ZERO FINDING MATERIAL ABERTO
 ↓
 ATO HUMANO EXPLÍCITO DE DESIGN PRODUCTION RELEASE
+
+CURRENT FRONT
+→ FINAL SOURCE READINESS AUDIT 8/8
+→ ZERO P0/P1 OPEN
+→ DESIGNER + AI CONSUMABILITY PASS
+→ V6 ELIGIBILITY
 ```
 
-O gate humano foi posteriormente satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`. A autorização libera o início da fase de Design, sem antecipar os gates internos de direção criativa, Figma final ou implementação.
+O gate humano foi posteriormente satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`. A autorização permanece concedida, mas o início operacional da designer está postergado pela decisão humana atual até a conclusão da auditoria final de prontidão das fontes e a adjudicação do pacote v6.
 
 ## 16. Estado
 
@@ -531,11 +546,20 @@ V5 SNAPSHOT
 → EMITTED / MATERIALIZED / VALIDATED
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
 
-FIGMA MAKE EXECUTION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+SOURCE READINESS HARDENING
+→ IN_PROGRESS / GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
 
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+EXTERNAL DESIGNER START
+→ DEFERRED UNTIL FINAL SOURCE READINESS PASS
+
+AI SUPPORT FOR DESIGN
+→ OPTIONAL / SOURCE-BOUND
+
+GKR / CHATGPT FIGMA EXECUTION
+→ NOT TO BE PERFORMED
+
+V6 SOURCE PACKAGE
+→ NOT_EMITTED
 ```
