@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 5.0.2
+version: 5.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: design_delivery_v5_release_granted_pre_execution
+maturity: v5_frozen_historical_pending_designer_ai_source_readiness_v6
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -17,15 +17,16 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
 ---
 
 # Homes Públicas — Manifesto Canônico de Entrega para Design
 
 ## 1. Finalidade
 
-Este Manifesto define o pacote externo v5 emitido para a frente de Design agora liberada, preservando o snapshot materializado e os gates posteriores internos de direção e aceite.
+Este Manifesto preserva a definição e a composição do pacote externo v5 já emitido. Após a decisão humana de reabrir a prontidão documental antes do início da designer, o v5 permanece reproduzível como snapshot histórico e deixa de ser o pacote recomendado para um novo início de Design.
 
-O snapshot v4 permanece histórico e reproduzível, mas não é pacote atual porque seu checkpoint foi superado.
+Os snapshots v1–v4 permanecem históricos. O v5 também passa a ser histórico para novos inícios após a abertura de `GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001`; nenhum deles deve ser reescrito retroativamente.
 
 ## 2. Princípio do v5
 
@@ -100,7 +101,7 @@ A emissão v5 gerou oito arquivos adicionais `00-LEIA-PRIMEIRO.md`, um por Home.
 - liberdades criativas;
 - matriz das oito classes operacionais de informação;
 - proibições de inferência;
-- prompt inicial para Figma Make;
+- prompt/contexto opcional para sistemas de AI, quando utilizados;
 - estado inicial `EXPLORAÇÃO / NÃO CANÔNICA`;
 - checklist de autoauditoria.
 
@@ -158,11 +159,11 @@ MATERIAL CHANGE TO MEANING / INVARIANT / COPY LOCK / SOURCE PACKAGE / PROMPT / A
 → REISSUE / REVALIDATE BEFORE CONTINUING
 ```
 
-Uma alteração criativa no Figma que não modifica o contrato do GKR não exige reemissão do pacote fonte.
+Uma alteração puramente criativa feita pela designer que não modifica o contrato do GKR não exige reemissão do pacote fonte vigente.
 
-## 6. Regra para ferramentas generativas
+## 6. Regra para sistemas de AI
 
-Não carregar documentos específicos de múltiplas Homes na mesma execução.
+O uso de AI é opcional. Quando ocorrer, não carregar documentos específicos de múltiplas Homes na mesma execução.
 
 O contexto de cada execução deve ser:
 
@@ -174,7 +175,7 @@ O contexto de cada execução deve ser:
 FONTES ESPECÍFICAS DA HOME
 ```
 
-A identidade visual é livre; fatos e arquitetura não são.
+A identidade visual é livre; fatos e arquitetura não são. A designer pode trabalhar sem AI.
 
 ## 7. Materiais fora do pacote inicial
 
@@ -200,7 +201,7 @@ O gate de emissão foi executado e validado:
 6. estrutura, isolamento e reproduzibilidade validados;
 7. snapshot registrado em `GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001`.
 
-O gate humano posterior foi satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0`. O snapshot permanece congelado; a nova autoridade libera seu uso para a fase de Design sem reescrever o pacote.
+O gate humano posterior foi satisfeito por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`. O snapshot permanece congelado. A decisão humana posterior reabriu a prontidão documental antes do início externo da designer; portanto, um novo pacote v6 somente poderá ser emitido após o `PASS` da auditoria final de fontes.
 
 ## 9. Estado
 
@@ -216,9 +217,21 @@ SNAPSHOT
 DESIGN PRODUCTION RELEASE
 → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 
-FIGMA MAKE
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+V5 CURRENT USE
+→ HISTORICAL / DO NOT USE AS FINAL SOURCE PACKAGE FOR NEW DESIGN START
 
-FINAL FIGMA
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+SOURCE READINESS AUDIT
+→ IN_PROGRESS
+
+V6
+→ NOT_EMITTED
+
+EXTERNAL DESIGNER START
+→ DEFERRED UNTIL PASS
+
+AI SUPPORT
+→ OPTIONAL / SOURCE-BOUND
+
+GKR / CHATGPT FIGMA EXECUTION
+→ NOT TO BE PERFORMED
 ```
