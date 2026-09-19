@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.6.0
+version: 1.6.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -42,7 +42,7 @@ depends_on:
 
 ## 0. Estado pós-auditoria e gate de produção
 
-A Auditoria Integral do GKR está concluída com `PASS`. O método de handoff permanece vigente, mas esta revisão separa explicitamente **prontidão documental** de **liberação operacional para a contratação/produção definitiva no Figma**.
+A Auditoria Integral do GKR está concluída com `PASS`. O método de handoff permanece vigente, mas esta revisão separa explicitamente **prontidão documental** de **liberação operacional para a contratação e produção externa de Design**.
 
 ```text
 AUDITORIA INTEGRAL
@@ -100,7 +100,8 @@ AI
 → DESIGNER DISCRETION
 
 GKR / CHATGPT
-→ DOES NOT CREATE OR ADVANCE FIGMA DESIGN FILES
+→ DOES NOT CREATE OR ADVANCE DESIGN FILES
+→ DOES NOT CREATE OR ADVANCE FIGMA FILES
 → DOES NOT PRESELECT VISUAL DIRECTION
 
 TOOL-SPECIFIC WORDING ELSEWHERE
@@ -164,7 +165,7 @@ Depois desse release, podem ser executados:
 - protótipos de navegação e interação;
 - estudos responsivos desktop e mobile;
 - validação das soluções contra os contratos do GKR;
-- construção do Figma definitivo dentro da direção humana aprovada.
+- consolidação dos artefatos finais de Design dentro da direção humana aprovada, nas ferramentas escolhidas pela designer e/ou definidas contratualmente.
 
 O release de Design não autoriza automaticamente:
 
