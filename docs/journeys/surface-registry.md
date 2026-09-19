@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.27.0
+version: 0.28.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 related:
@@ -35,6 +35,10 @@ related:
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
+  - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
@@ -52,7 +56,7 @@ A D5-C1 adicionou `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-011 — M
 
 A reconciliação pós-PR #313/#314 corrige a leitura de Organização e Coletivo: `UXA-015..018` são históricos `superseded`; referências administrativas ou especializadas posteriores não podem ser promovidas por inferência a wireframe principal autenticado final.
 
-Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` preserva sua maturidade própria **pre-surface-map**, enquanto `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define posteriormente o mapa lógico-documental canônico de superfícies. Em ato governado ainda posterior, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` define o mapa funcional de estados canônico e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` define os Priority Flows canônicos documentais. Esses atos documentais não materializam navegação principal, wireframes, UI, protótipo ou implementação e não promovem a maturidade individual dos `GKR-SURF-*`.
+Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` preserva sua maturidade própria **pre-surface-map**, enquanto `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o mapa lógico-documental canônico de superfícies. Em atos governados posteriores, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` consolidam estados, fluxos e navegação documental. A autorização, entrega e validação low-fidelity O/C posteriores (`GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001`, `...DELIVERY-001`, `...VALIDATION-001`) adicionam evidência visual funcional sem promover a maturidade individual dos `GKR-SURF-*`.
 
 ## 2. Convenções
 
@@ -111,7 +115,7 @@ A contagem de IDs permanece estrutural. Ela não implica que todos estejam mater
 | GKR-SURF-PER-303 | gestão de downgrade e cancelamento da Pessoa | Pessoa titular | móvel/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-304 | resultado e recuperação de plano/cobrança da Pessoa | Pessoa titular | móvel/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-COL-001 | presença pública existente / entrada coletiva ainda não consolidada | visitante/responsável | público e protegido | parcial | UXA-014; UXA-056 | presença pública por UXA-062; materialização histórica `UXA-016` removida do corpus corrente; proveniência no Git | UXA-063 no recorte público; `UXA-018` removida do corpus corrente; proveniência no Git | [Coletivo](surface-registry-collective-details.md) |
-| GKR-SURF-COL-002 | Visão Geral do Responsável | responsável | computador protegido | parcial / materialização local | UXA-014; UXA-059; UXA-100-A4 | UXA-086/087 como evidência administrativa local; navegação A4 no pacote próprio | UXA-087 local; **não valida o wireframe principal autenticado final** | [Coletivo](surface-registry-collective-details.md) |
+| GKR-SURF-COL-002 | Visão Geral do Responsável | responsável | computador protegido | parcial / materialização local | UXA-014; UXA-059; UXA-100-A4 | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` como materialização principal low-fidelity; UXA-086/087 permanece evidência administrativa local | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS`; UXA-087 permanece validação local anterior | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-003 | gestão de solicitações | responsável | computador protegido | validado | UXA-056; UXA-059 | UXA-088/089 | UXA-089/090/092 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-004 | participantes e vínculos | responsável | protegido | programado | UXA-059 | — | — | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-005 | comunicação oficial | responsável | protegido | programado | UXA-058; UXA-059 | — | — | [Coletivo](surface-registry-collective-details.md) |
@@ -122,7 +126,7 @@ A contagem de IDs permanece estrutural. Ela não implica que todos estejam mater
 | GKR-SURF-COL-302 | revisão de contratação do Coletivo | responsável financeiro autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-303 | gestão de downgrade e cancelamento do Coletivo | responsável autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-304 | resultado e recuperação de plano/cobrança do Coletivo | responsável autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
-| GKR-SURF-ORG-001 | Visão Geral da Organização | representante | protegido | **contratado funcionalmente; materialização visual fora da autoridade documental** | UXA-014; contratos especializados posteriores conforme seu escopo | `UXA-015` removida do corpus corrente; proveniência histórica no Git | `UXA-017` removida do corpus corrente; proveniência histórica no Git; **sem validação vigente do wireframe principal** | [Organização](surface-registry-organization-details.md) |
+| GKR-SURF-ORG-001 | Visão Geral da Organização | representante | protegido | **contratado funcionalmente; materialização visual fora da autoridade documental** | UXA-014; contratos especializados posteriores conforme seu escopo | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` como materialização principal low-fidelity; `UXA-015` permanece proveniência histórica removida | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS`; `UXA-017` permanece proveniência histórica removida | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-002 | cadastro de oportunidade | representante | protegido | validado | UXA-004 | UXA-008 | UXA-013 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-003 | oportunidade aprovada/ativa | representante | protegido | validado | UXA-004 | UXA-008 | UXA-013; integração UXA-098 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-004 | proposta de relação com Coletivo | representante | protegido | contratado | UXA-019 | — | — | [Organização](surface-registry-organization-details.md) |
@@ -152,7 +156,7 @@ Organização: Conecta · Eleva · Transforma
 Guivos Business: Start · Growth · Scale · Enterprise
 ```
 
-`PER-009`, `COL-002` e `ORG-001` continuam identificadores semânticos possíveis de origem/retorno para contratos de Planos. Isso **não prova materialização visual vigente** dessas origens. A criação de `PER-009` não materializa uma arquitetura completa de Conta; da mesma forma, os contratos de navegação de `COL-002` e `ORG-001` não substituem a Arquitetura da Informação autenticada já definida por `GKR-UX-ORGCOL-AUTH-IA-001`, nem o mapa lógico-documental canônico definido por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, nem o mapa funcional de estados definido por `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`, nem os Priority Flows definidos por `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`, nem materializam navegação ou wireframes principais de Coletivo e Organização.
+`PER-009`, `COL-002` e `ORG-001` continuam identificadores semânticos possíveis de origem/retorno para contratos de Planos. Esses contratos, por si sós, não provam materialização visual. Para `COL-002` e `ORG-001`, a materialização low-fidelity corrente é governada separadamente por `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` + `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. Isso não substitui IA, Surface Map, State Map, Priority Flows ou Navigation Materialization e não promove maturidade funcional individual.
 
 A D5-C1 adiciona `PER-010`, `PER-011` e `PER-012` como responsabilidades pessoais especializadas ligadas a Hoje por transições contratadas. A D5-C2 lhes adiciona materialização low-fidelity. A D5-C3 promove somente a maturidade local dessas três superfícies conforme sua autoridade própria.
 
