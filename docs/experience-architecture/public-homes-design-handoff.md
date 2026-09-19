@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.5.1
+version: 1.6.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -39,6 +39,32 @@ depends_on:
 ---
 
 # Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
+
+
+## Modelo de execução corrente — designer-led / tool-agnostic
+
+Este handoff governa **o que a designer precisa compreender**, não qual ferramenta deve usar.
+
+```text
+GKR
+→ SIGNIFICADO / FUNÇÃO / LIMITES / FONTES / VERDADE
+
+DESIGNER HUMANA
+→ CRIAÇÃO MANUAL COMO CAMINHO PADRÃO
+→ TOTAL LIBERDADE VISUAL DENTRO DOS GUARDRAILS
+
+SISTEMAS DE IA
+→ APOIO OPCIONAL
+→ MESMAS FONTES / MESMOS LIMITES
+
+FIGMA / OUTRAS FERRAMENTAS
+→ AMBIENTE EXTERNO
+→ NÃO SÃO AUTORIDADE SEMÂNTICA
+```
+
+Qualquer referência histórica neste documento a `Figma Make`, ferramenta generativa ou prototipação automática deve ser lida como **opção operacional**, nunca como requisito de execução. O GKR não precisa produzir arquivo Figma, wireframe ou exploração visual para que a designer inicie o trabalho.
+
+Arquivos visuais anteriores podem ser consultados como referência, mas não definem identidade visual canônica nem baseline obrigatória das novas Homes.
 
 ## 0. Estado pós-auditoria e gate de produção
 
