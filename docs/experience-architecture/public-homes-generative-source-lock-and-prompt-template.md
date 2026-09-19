@@ -1,8 +1,8 @@
 ---
 id: GKR-UX-HOMES-GENINPUT-001
-title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
+title: Homes Públicas — Source Lock e Prompt Controlado para IA Opcional
 status: active
-version: 2.0.1
+version: 2.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -25,14 +25,14 @@ related:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GPA-006
 normative: true
-maturity: post_audit_eight_home_generative_template_release_granted_pre_execution
+maturity: optional_ai_adapter_for_human_first_design
 ---
 
-# Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
+# Homes Públicas — Source Lock e Prompt Controlado para IA Opcional
 
 ## 0. Gate pós-auditoria
 
-A Auditoria Integral está concluída. Este template volta a ser a autoridade comum para construir os inputs generativos das oito Homes, subordinado ao Handoff e ao contrato de prontidão de produção.
+A Auditoria Integral está concluída. Este template é um adaptador opcional para uso de IA nas oito Homes, subordinado ao Handoff, ao Documento Mestre e ao contrato de prontidão de produção.
 
 ```text
 TEMPLATE
@@ -44,9 +44,9 @@ V4 HISTORICAL SOURCE LOCKS
 V5 OPERATIONAL SOURCE LOCK
 → EMITTED / 8 OF 8 / FROZEN WITH SNAPSHOT V5
 
-FIGMA MAKE / GENERATIVE EXECUTION
-→ DESIGN PRODUCTION RELEASE GRANTED
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+AI / GENERATIVE EXECUTION
+→ OPTIONAL
+→ NOT REQUIRED FOR DESIGN DELIVERY
 ```
 
 A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode completar lacunas de verdade factual ou arquitetura por inferência.
@@ -55,7 +55,7 @@ A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode compl
 
 ## 1. Finalidade
 
-Este documento transforma o controle semântico estabelecido por `GKR-UX-HOMES-DESIGN-HANDOFF-001` em um procedimento operacional reutilizável para exploração de Design com ferramentas generativas.
+Este documento transforma o controle semântico estabelecido por `GKR-UX-HOMES-DESIGN-HANDOFF-001` em um procedimento operacional reutilizável **somente quando a designer optar por usar IA ou ferramenta generativa**.
 
 Ele define:
 
@@ -68,7 +68,7 @@ Ele define:
 
 Este documento não cria wireframes, layouts, componentes, UI final ou identidade visual para nenhuma Home.
 
-> **Ferramentas generativas recebem um contexto governado. Elas não recebem autoridade para completar a arquitetura da Guivos por conta própria.**
+> **A designer recebe o pacote governado. Se usar IA, a IA recebe o mesmo contexto e nenhuma autoridade adicional.**
 
 ---
 
@@ -81,20 +81,20 @@ GKR-UX-HOMES-DESIGN-HANDOFF-001
 → governa a fase de Design, o pacote de fontes, as liberdades e as fronteiras
 
 GKR-UX-HOMES-GENINPUT-001
-→ governa como uma execução generativa é preparada, registrada e validada
+→ governa como uma execução opcional de IA é preparada, registrada e validada
 ```
 
 Este documento não substitui o handoff nem resume os Documentos Mestres.
 
 Ele operacionaliza o princípio:
 
-> **O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração. A validação reconecta forma e significado.**
+> **O GKR governa o significado. A designer governa a materialização. IA pode ampliar a exploração quando útil. A validação humana reconecta forma e significado.**
 
 ---
 
 ## 3. Unidade de execução governada
 
-Cada uso relevante de Figma Make ou ferramenta generativa deve ser tratado como uma **execução identificável**.
+Cada uso relevante de IA ou ferramenta generativa, quando houver, deve ser tratado como uma **execução identificável**.
 
 Uma execução possui:
 
@@ -124,9 +124,9 @@ Esse tipo de input transfere lacunas demais para a ferramenta e aumenta o risco 
 
 ## 4. Source Lock
 
-O **Source Lock** é o registro mínimo que congela o contexto de uma execução.
+O **Source Lock** é o registro mínimo que congela o contexto de uma execução de IA.
 
-Ele deve ser preparado antes da geração.
+Ele deve ser preparado antes da geração automática. A designer não precisa criar um Source Lock adicional para trabalhar manualmente quando já consome o pacote oficial vigente da Home.
 
 ### 4.1 Template normativo
 
@@ -323,7 +323,7 @@ Os antigos GENINPUTs de checkpoints superados não entram como autoridade operac
 
 ## 7. Ordem de autoridade dentro do input
 
-O prompt deve informar explicitamente à ferramenta que as fontes possuem funções diferentes.
+Quando IA for usada, o prompt deve informar explicitamente à ferramenta que as fontes possuem funções diferentes.
 
 ```text
 0. LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL DA EMISSÃO
@@ -333,8 +333,8 @@ O prompt deve informar explicitamente à ferramenta que as fontes possuem funç�
 1. AUTORIDADES COMUNS
 → Handoff = processo e boundary da fase
 → GENINPUT = método de Source Lock / prompt / classes
-→ Readiness = contrato de produção e aceite Figma
-→ Operational Flow = sequência Figma Make → aprovação → Figma definitivo → aceite
+→ Readiness = contrato de produção e aceite de Design
+→ Operational Flow = compreensão humana → criação da designer → IA opcional → revisão → entrega final
 
 2. SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE DA HOME, QUANDO EXISTIR
 → congela decisões próprias daquela Home dentro de sua autoridade
@@ -691,9 +691,9 @@ Pequenas iterações visuais dentro da mesma hipótese podem permanecer sob o me
 
 ---
 
-## 17. Critérios de aceite antes de gerar
+## 17. Critérios de aceite antes de usar IA
 
-Uma execução está pronta para ferramenta generativa quando:
+Uma execução de IA está pronta quando:
 
 1. a Home está identificada;
 2. a fase está identificada;
@@ -735,7 +735,7 @@ Antes de promover um output a `CANDIDATO`, verificar:
 
 Este template deve ser adotado por novas Homes depois que seus próprios documentos de autoridade forem convergidos.
 
-A inclusão de uma nova Home não ocorre porque existe um pedido de geração visual.
+A inclusão de uma nova Home não ocorre porque existe um pedido de geração visual ou porque uma ferramenta de IA está disponível.
 
 A ordem permanece:
 
@@ -746,22 +746,24 @@ FONTES CANÔNICAS IDENTIFICADAS
 ↓
 HANDOFF AUTORIZADO
 ↓
-SOURCE LOCK
+PACOTE DE DESIGN VIGENTE
 ↓
-PROMPT CONTROLADO
+CRIAÇÃO DA DESIGNER
 ↓
-EXPLORAÇÃO GENERATIVA
+SOURCE LOCK + PROMPT, SOMENTE SE IA FOR USADA
 ↓
-VALIDAÇÃO
+EXPLORAÇÃO OPCIONAL
+↓
+VALIDAÇÃO HUMANA
 ```
 
 ---
 
 ## 20. Síntese operacional
 
-A menor unidade segura de trabalho não é o prompt isolado.
+Para Design humano, a menor unidade segura é o **pacote vigente da Home**.
 
-É:
+Quando IA for utilizada, a menor unidade segura da execução automática é:
 
 ```text
 SOURCE LOCK
@@ -772,7 +774,7 @@ PROMPT
 +
 OUTPUT CLASSIFICADO
 +
-VALIDAÇÃO
+VALIDAÇÃO HUMANA
 ```
 
 O objetivo não é tornar o processo burocrático. É permitir liberdade visual sem perder a arquitetura já construída.
@@ -792,7 +794,8 @@ TEMPLATE
 V5 PER-HOME SOURCE LOCKS
 → EMITTED / 8 OF 8 / FROZEN IN delivery/design-handoff-v5
 
-GENERATIVE EXECUTION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-→ RELEASE AUTHORITY = GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+AI / GENERATIVE EXECUTION
+→ OPTIONAL
+→ NOT REQUIRED FOR DESIGN DELIVERY
+→ RELEASE AUTHORITY = GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
 ```
