@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.4
+id: ROADMAP-13.47.5
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.4
+version: 13.47.5
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -448,7 +448,7 @@ Estado:
 
 ```text
 COMPLETED
-DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 ```
 
 O Lote D foi fechado documentalmente pela sequência canônica de PRs #342–#349, preservando e reconciliando a narrativa pública da Home principal/Pessoa contra Fundação, Marca, Public Canon, Journey, Research, Domínios de Evolução e Experience Architecture.
@@ -477,7 +477,7 @@ Gate vigente pós-Q:
 
 ```text
 HOME PRINCIPAL / PESSOA
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+→ DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 
 FINAL BASELINE
 → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
@@ -529,7 +529,7 @@ Estado:
 
 ```text
 COMPLETED
-DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 ```
 
 O Lote E reconstruiu a autoridade de consumo da Home O/C e reconciliou os detalhes especializados sem antecipar a experiência autenticada.
@@ -537,7 +537,7 @@ O Lote E reconstruiu a autoridade de consumo da Home O/C e reconciliou os detalh
 Autoridades atuais:
 
 ```text
-GKR-UX-HOME-OC-MASTER-001 v1.0.1
+GKR-UX-HOME-OC-MASTER-001 v1.0.2
 → autoridade de consumo
 
 GKR-UX-HOME-OC-NARR-001 v0.2.0
@@ -579,7 +579,7 @@ Gate:
 
 ```text
 HOME O/C
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+→ DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 
 WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
 → NOT AUTHORIZED BY P CLOSURE
@@ -595,7 +595,7 @@ Estado:
 
 ```text
 COMPLETED
-DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 ```
 
 O Lote F auditou em conjunto Mall, Travel, Media, Ads, Business e Intelligence.
@@ -634,12 +634,12 @@ Resultado:
 
 | Home | Estado documental |
 |---|---|
-| Mall | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Travel | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Media | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Ads | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Business | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Intelligence | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Mall | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Travel | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Media | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Ads | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Business | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Intelligence | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
 
 O Lote F também corrige `GIA-000` para `v1.6.0`, reconhecendo Product Source Lock integrado, Documento Mestre existente e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` como Source Lock ativo/normativo da Home Intelligence. O Source Lock congela fontes e invariantes e não autoriza, por si só, Design, materialização, implementação ou publicação.
 
