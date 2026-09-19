@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.1.2
+version: 1.1.3
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -147,9 +147,9 @@ Reclassificação humana: **não é gap**. É liberdade deliberada de Design.
 
 Quatro autoridades comuns acompanham todas as Homes:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.0`;
-2. `GKR-UX-HOMES-GENINPUT-001 v2.1.0`;
-3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.1.0`;
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.1`;
+2. `GKR-UX-HOMES-GENINPUT-001 v2.1.4`;
+3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.1.3`;
 4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.1`.
 
 Fontes específicas:
