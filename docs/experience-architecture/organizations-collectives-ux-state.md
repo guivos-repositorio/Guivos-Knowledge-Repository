@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-UX-STATE-001
 title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.9.0
+version: 1.10.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
@@ -17,6 +17,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - UXA-014
   - UXA-019
 ---
@@ -27,7 +28,7 @@ related:
 
 O estado vigente é:
 
-> **A primeira entrega de wireframes autenticados low-fidelity de Organização e Coletivo foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0`; a validação funcional ainda não foi realizada.**
+> **A primeira entrega de wireframes autenticados low-fidelity de Organização e Coletivo foi executada e funcionalmente validada com `PASS`; a referência corrente é `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` + `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`.**
 
 A entrega corrente materializa em baixa fidelidade a visão geral/início de Organização e Coletivo, a hierarquia funcional, variantes de atenção, autoridade, proteção, troca de contexto e indisponibilidade. Permanecem deliberadamente não definidos: UI final, componentes finais, visual high-fidelity, protótipo navegável, implementação e testes de usabilidade.
 
@@ -169,9 +170,9 @@ Uma validação de wireframe exige um wireframe vigente como objeto.
 
 Portanto:
 
-> **não existe validação vigente de wireframe da Organização ou do Coletivo enquanto `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` não passar pelo gate de validação funcional.**
+> **a validação vigente low-fidelity de Organização e Coletivo é `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS`; isso não autoriza high-fidelity, protótipo ou implementação.**
 
-A futura validação deverá ocorrer contra o objeto então vigente e contra os fundamentos e contratos atualizados naquele momento.
+A validação corrente foi executada contra a entrega v0.1.0 e as autoridades vigentes; qualquer reformulação futura exigirá validação correspondente.
 
 ## 9. Home pública não é wireframe autenticado
 
@@ -205,8 +206,8 @@ São superfícies e problemas distintos.
 | Priority Flows | **definidos documentalmente** | **definidos documentalmente** |
 | Navigation Materialization Eligibility | **PASS / ACTIVE / CANONICAL** | **PASS / ACTIVE / CANONICAL** |
 | Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** |
-| wireframe low-fidelity | **DELIVERY v0.1.0 EXECUTED / PENDING VALIDATION** | **DELIVERY v0.1.0 EXECUTED / PENDING VALIDATION** |
-| validação de wireframe | **NOT_STARTED** | **NOT_STARTED** |
+| wireframe low-fidelity | **DELIVERY v0.1.0 + VALIDATION v1.0.0** | **DELIVERY v0.1.0 + VALIDATION v1.0.0** |
+| validação de wireframe | **PASS** | **PASS** |
 | UI | pendente | pendente |
 | protótipo | pendente | pendente |
 | testes de usabilidade | pendente | pendente |
@@ -315,4 +316,4 @@ A proveniência permanece no histórico Git e em referências textuais explicita
 
 ## 12. Regra final
 
-> **O GKR define função, conteúdo, estados, regras, critérios, Priority Flows e Navigation Materialization documentais. `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` é a autoridade canônica pré-wireframe; Design permanece a autoridade exclusiva para wireframes, mockups, protótipos, layout e materialização visual, todos ainda não liberados. Artefatos históricos não podem antecipar nem restringir essa autoridade.**
+> **O GKR define função, conteúdo, estados, regras, critérios, Priority Flows e Navigation Materialization documentais. O pacote low-fidelity Delivery v0.1.0 + Validation v1.0.0 é a referência visual corrente; high-fidelity, protótipo, layout final e implementação permanecem não autorizados. Artefatos históricos não podem antecipar nem restringir essa autoridade.**
