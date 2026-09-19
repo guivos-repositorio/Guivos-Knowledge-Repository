@@ -139,13 +139,27 @@ Fontes específicas:
 
 ### Mall
 - `GKR-UX-HOME-MALL-MASTER-001 v1.0.0`;
-- `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`;
-- contratos Mall de `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0`.
+- `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
+
+Contrato corrente que o Source Lock v5 deve explicitar:
+- `MALL-HS-01 BASELINE_PUBLIC` — tese, pergunta-mãe, identidade Guivos e descoberta são base permanente;
+- `MALL-HS-02 COMMERCIAL_DATA_AVAILABLE` — produto/oferta/preço/pontos/marca/parceiro somente com fonte aplicável;
+- `MALL-HS-03 COMMERCIAL_DATA_UNAVAILABLE_OR_ERROR` — ausência não pode virar oferta, estoque, preço ou parceria fictícia;
+- `MALL-HS-04 CAMPAIGN_ACTIVE` — campanha é temporária e não redefine a identidade da Home;
+- `MALL-HS-05 PERSONALIZATION_AUTHORIZED` — recomendação pessoal exige base e autoridade; sem isso, usar descoberta/curadoria geral;
+- `MALL-HS-06 SPONSORED_EXPOSURE` — exposição paga permanece identificada e não se disfarça de relevância orgânica.
 
 ### Travel
 - `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0`;
-- `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`;
-- contratos Travel de `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0`.
+- `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
+
+Contrato corrente que o Source Lock v5 deve explicitar:
+- `TRAVEL-HS-01 BASELINE_PUBLIC` — pergunta-mãe, identidade Guivos, inspiração e acesso a serviços são a base;
+- `TRAVEL-HS-02 OPERATIONAL_SERVICE` — serviços governados podem ser apresentados sem inferir disponibilidade universal;
+- `TRAVEL-HS-03 DESTINATION_OR_EXPERIENCE_PROVEN` — destino/imagem/experiência apresentados como reais exigem lastro;
+- `TRAVEL-HS-04 OFFER_DATA_AVAILABLE` — preço, pontos, condição e disponibilidade somente quando sustentados;
+- `TRAVEL-HS-05 OFFER_DATA_UNAVAILABLE_OR_ERROR` — ausência/erro não se convertem em tarifa, vaga, parceiro ou condição fictícios;
+- `TRAVEL-HS-06 CAMPAIGN_OR_SPONSORED` — campanha é temporária e patrocínio permanece identificado.
 
 ### Media
 - `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0`;
@@ -300,7 +314,7 @@ MERGE DO PACOTE DE PRONTIDÃO
 ↓
 CAPTURAR MAIN PÓS-MERGE
 ↓
-REVALIDAR 26/26 FONTES CANÔNICAS DO MANIFESTO V5
+REVALIDAR 25/25 FONTES CANÔNICAS DO MANIFESTO V5
 ↓
 GERAR 8 LEIA-PRIMEIRO / SOURCE LOCKS OPERACIONAIS
 ↓
