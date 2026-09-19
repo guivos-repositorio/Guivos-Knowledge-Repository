@@ -1935,7 +1935,7 @@ Sequência governada:
 4. preparar Manifesto v5;
 5. integrar changeset em `main` mediante gates próprios;
 6. capturar `main` pós-merge;
-7. revalidar 25/25 fontes;
+7. revalidar 26/26 fontes;
 8. gerar oito Source Locks operacionais;
 9. materializar snapshot externo v5;
 10. validar isolamento e reproduzibilidade;
