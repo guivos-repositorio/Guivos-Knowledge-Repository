@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.4.2
+version: 0.4.3
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -135,14 +135,14 @@ Uma Home somente pode ser considerada pronta para entrega à designer quando seu
 
 | Home | Fonte mestre corrente | Estado |
 |---|---|---|
-| Pessoa | `GKR-UX-HOME-MASTER-001 v1.0.2` | RECONCILED |
-| Organizações e Coletivos | `GKR-UX-HOME-OC-MASTER-001 v1.0.2` | RECONCILED |
-| Mall | `GKR-UX-HOME-MALL-MASTER-001 v1.1.0` | RECONCILED |
-| Travel | `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.2` | RECONCILED |
+| Pessoa | `GKR-UX-HOME-MASTER-001 v1.0.3` | RECONCILED |
+| Organizações e Coletivos | `GKR-UX-HOME-OC-MASTER-001 v1.0.3` | RECONCILED |
+| Mall | `GKR-UX-HOME-MALL-MASTER-001 v1.1.1` | RECONCILED |
+| Travel | `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.3` | RECONCILED |
 | Media | `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` | RECONCILED |
 | Ads | `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` | RECONCILED |
-| Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.3` | RECONCILED |
-| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.3` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.2` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.3` | RECONCILED |
+| Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.4` | RECONCILED |
+| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.4` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.3` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.4` | RECONCILED |
 
 ## 6. Findings iniciais comprovados
 
@@ -375,6 +375,55 @@ As autoridades globais de estado e Roadmap também foram reconciliadas para não
 
 Essas remediações alteram novamente o HEAD. O estado `PASS` continua candidato até Semantic + Mechanical e novo review independente no SHA final.
 
+## 9.3 Review independente no HEAD `6c6fcc6b065a902e71e6c909745dbecc53954f21` — adjudicação e varredura temporal completa
+
+Review `PRR_kwDOTG6AO88AAAABOWmFXw` encontrou quatro P1 materiais remanescentes:
+
+```text
+P1 — BUSINESS SOURCE LOCK STALE PINS
+→ REMEDIATED
+→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.4
+→ MASTER = v1.1.3
+→ AUTHORITY CONTRACT = v1.0.2
+
+P1 — INTELLIGENCE PRE-SOURCE-LOCK OPENING STATE
+→ REMEDIATED
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.4
+→ SOURCE LOCK EXISTS / ACTIVE
+→ DESIGN HANDOFF EXISTS / ACTIVE
+→ EXTERNAL DESIGN RELEASE = GRANTED
+
+P1 — PERSON MASTER PRE-RELEASE MATERIALIZATION STATE
+→ REMEDIATED
+→ GKR-UX-HOME-MASTER-001 v1.0.3
+→ PUBLIC HOME EXTERNAL DESIGN RELEASE = GRANTED
+→ AUTHENTICATED / IMPLEMENTATION BOUNDARIES PRESERVED
+
+P1 — O/C AUDIT-ERA MATURITY / CURRENT-TENSE RESIDUE
+→ REMEDIATED
+→ GKR-UX-HOME-OC-MASTER-001 v1.0.3
+→ MATURITY = DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
+→ AUDIT FUNCTION IS NO LONGER DESCRIBED AS UNDECIDED
+```
+
+A mesma classe de contradição foi então varrida preventivamente nos demais Masters correntes. Foram reconciliados também:
+
+```text
+MALL MASTER
+→ v1.1.1
+→ NO NEW DESIGN DECISION REQUIRED FOR PUBLIC HOME
+→ IMPLEMENTATION / INTERNAL SURFACES REMAIN UNRELEASED
+
+TRAVEL MASTER
+→ v1.1.3
+→ OPENING AUTHORITY ALIGNED WITH CURRENT EXTERNAL DESIGN RELEASE
+→ IMPLEMENTATION / PUBLICATION REMAIN UNRELEASED
+```
+
+Media e Ads não apresentaram gate temporal equivalente na varredura. O v5 permanece congelado/histórico e não foi alterado.
+
+Essas remediações alteram novamente o HEAD. O estado `PASS` permanece candidato até Semantic + Mechanical e novo review independente no SHA final.
+
 ## 10. Remediações aplicadas
 
 ### F-DS-001 — RESOLVED
@@ -398,7 +447,7 @@ O Design Production Release permanece `GRANTED`, porém agora libera produção 
 
 ### F-DS-003 — RESOLVED
 
-`GKR-UX-HOME-MALL-MASTER-001 v1.1.0` e `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.2` absorvem:
+`GKR-UX-HOME-MALL-MASTER-001 v1.1.1` e `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.3` absorvem:
 
 - estados semânticos;
 - comportamentos;
@@ -411,14 +460,14 @@ A adjudicação histórica permanece proveniência; não é mais necessária par
 
 ### F-DS-004 — RESOLVED
 
-`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.3` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.3` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.2` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.3` foram temporalmente reconciliados com o regime designer-first / IA opcional.
+`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.4` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.4` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.3` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.4` foram temporalmente reconciliados com o regime designer-first / IA opcional.
 
 ### F-DS-005 — RESOLVED FOR V6 CONTRACT
 
 O template comum foi promovido para:
 
 ```text
-GKR-UX-HOMES-GENINPUT-001 v2.2.5
+GKR-UX-HOMES-GENINPUT-001 v2.2.8
 → TOOL-NEUTRAL
 → AI OPTIONAL
 → MANUAL DESIGN DOES NOT REQUIRE GENERATIVE EXECUTION RECORD
