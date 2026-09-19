@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.5.1
+version: 1.6.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: post_audit_design_handoff_release_granted_pre_execution
+maturity: post_audit_design_handoff_designer_first
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -640,15 +640,18 @@ HANDOFF / MÉTODO
 VISUAL IDENTITY
 → DESIGN-OWNED / NOT CANONICALLY PRE-LOCKED
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ METHOD DEFINED
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+DESIGNER MANUAL CREATION
+→ PRIMARY MODE
+→ AUTHORIZED
 
-FINAL FIGMA PRODUCTION
-→ SUBJECT TO PROTOTYPE APPROVAL + FINAL ACCEPTANCE CONTRACT
+AI SUPPORT
+→ OPTIONAL / NON-CANONICAL / NOT A REQUIRED STAGE
+
+FINAL DESIGN PRODUCTION
+→ DESIGNER-OWNED / SUBJECT TO HUMAN REVIEW + FINAL ACCEPTANCE CONTRACT
 
 IMPLEMENTATION / PRODUCTION
 → NOT RELEASED BY THIS HANDOFF
 ```
 
-Este documento governa **como** o handoff deve ocorrer. A liberação efetiva foi concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0` sobre o pacote v5 já emitido e validado.
+Este documento governa **como** o handoff deve ocorrer. A liberação efetiva foi concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0` sobre o pacote v5 já emitido e validado. O modo primário de materialização é criação manual pela designer; IA é apoio opcional.
