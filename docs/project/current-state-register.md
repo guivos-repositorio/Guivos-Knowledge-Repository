@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.47.0
+version: 3.48.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -2339,7 +2339,7 @@ PRODUCT ENGINEERING
 O avanço posterior ao fechamento Home Masters inclui, nesta revisão, a promoção canônica de Navigation Materialization após Surface Map, State Map, Priority Flows e sua elegibilidade O/C. Authenticated Wireframes, Design/UI, protótipo e Product Engineering continuam não liberados automaticamente.
 ## 31. Homes públicas — Design Production Readiness
 
-A frente anterior de high-fidelity autenticado O/C permanece preservada no gate já alcançado, mas sua execução continua não autorizada. A prioridade temporária passa a ser garantir que as oito Homes públicas possam ser contratadas e produzidas em Figma sem lacunas documentais materiais.
+A frente anterior de high-fidelity autenticado O/C permanece preservada no gate já alcançado, mas sua execução continua não autorizada. A prioridade temporária passa a ser garantir que as oito Homes públicas possam ser entregues à designer humana e, opcionalmente, a sistemas de IA, sem lacunas documentais materiais e sem impor identidade visual canônica.
 
 Baseline física de início:
 
@@ -2380,8 +2380,8 @@ Fluxo obrigatório:
 ```text
 V5 SNAPSHOT
 → EMITTED / MATERIALIZED / VALIDATED
-→ DESIGN PRODUCTION RELEASE GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
-→ FIGMA MAKE / EXPLORAÇÃO
+→ DESIGN PRODUCTION RELEASE GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
+→ DESIGN EXTERNO / DESIGNER-LED / IA OPCIONAL
 → REVISÃO HUMANA
 → DIREÇÃO CRIATIVA APROVADA
 → FIGMA DEFINITIVO
@@ -2402,14 +2402,16 @@ V5 SNAPSHOT
 → 26 CANONICAL SOURCES + 8 GUIDES = 34 FILES
 → 26 / 26 CANONICAL BLOBS BYTE-PRESERVED
 
-FIGMA MAKE
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+EXTERNAL DESIGN EXPLORATION
+→ AUTHORIZED / DESIGNER-LED
+→ MANUAL CREATION PRIMARY / AI OPTIONAL
+→ NO GKR-GENERATED FIGMA REQUIRED
 
 FINAL FIGMA PRODUCTION
 → NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
