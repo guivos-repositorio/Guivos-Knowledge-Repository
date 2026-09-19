@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.8.0
+version: 1.9.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
@@ -64,10 +64,10 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | validação com perfis sintéticos | executada metodologicamente; não é PMF | `RP-002-PMF-001` + atlas |
 | validação humana real / PMF | **pendente** | piloto de campo |
 | Home pública de Organizações e Coletivos | possui Documento Mestre próprio | `public-home-organizations-collectives-master-document.md` |
-| wireframe low-fidelity da experiência autenticada da Organização | **entrega v0.1.0 executada** | validação funcional pendente |
-| wireframe low-fidelity da experiência autenticada do Coletivo | **entrega v0.1.0 executada** | validação funcional pendente |
-| validação de wireframe da Organização | **não realizada sobre a entrega corrente** | pendente |
-| validação de wireframe do Coletivo | **não realizada sobre a entrega corrente** | pendente |
+| wireframe low-fidelity da experiência autenticada da Organização | **Delivery v0.1.0 + Validation v1.0.0** | PASS |
+| wireframe low-fidelity da experiência autenticada do Coletivo | **Delivery v0.1.0 + Validation v1.0.0** | PASS |
+| validação de wireframe da Organização | **PASS / 0 findings materiais** | concluída |
+| validação de wireframe do Coletivo | **PASS / 0 findings materiais** | concluída |
 | UI / protótipo autenticado | não definido | pendente |
 | Engenharia da experiência autenticada | não autorizada a partir de wireframe | pendente |
 
@@ -279,7 +279,7 @@ Ambos os documentos possuem estado `draft`.
 
 Eles ajudam a mapear continuidade, estados e relações do ecossistema, mas **não devem ser interpretados como prova de que wireframes ou UI já foram definidos**.
 
-Qualquer trecho desses documentos que derive maturidade de `UXA-015`, `UXA-016`, `UXA-017` ou `UXA-018` fica subordinado à reconciliação de estado registrada aqui: os wireframes autenticados de Organização e Coletivo ainda não foram oficialmente definidos.
+Qualquer trecho desses documentos que derive maturidade de `UXA-015`, `UXA-016`, `UXA-017` ou `UXA-018` fica subordinado à reconciliação de estado registrada aqui: a referência low-fidelity corrente é exclusivamente Delivery v0.1.0 + Validation v1.0.0; os históricos continuam `superseded`.
 
 A existência de Jobs, IA, mapa de superfícies e State Map atuais também não reativa `UXA-015..018`.
 
@@ -377,7 +377,7 @@ O estado vigente está detalhado em [Organizações e Coletivos — Estado de UX
 
 Resumo:
 
-> **A cadeia documental canônica O/C está definida e a primeira entrega de Authenticated Wireframes low-fidelity foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0`. A entrega ainda não foi funcionalmente validada e não é referência visual aprovada.**
+> **A cadeia documental canônica O/C está definida e a primeira entrega de Authenticated Wireframes low-fidelity foi funcionalmente validada com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O pacote Delivery v0.1.0 + Validation v1.0.0 é a referência visual low-fidelity corrente.**
 
 Materiais anteriores que afirmavam wireframes principais vigentes ou validação vigente foram reclassificados como registros históricos `superseded`.
 
@@ -397,6 +397,7 @@ Materiais anteriores que afirmavam wireframes principais vigentes ou validação
 | Navigation Materialization autenticada | `GKR-UX-ORGCOL-AUTH-NAV-MAT-001` |
 | autorização de wireframes low-fidelity | `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001` |
 | entrega de wireframes low-fidelity | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001` |
+| validação funcional low-fidelity | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001` |
 | Jornada da Organização | `journeys/organization.md` |
 | Jornada do Coletivo | `journeys/collective.md` |
 | Home pública | `public-home-organizations-collectives-master-document.md` |
@@ -424,9 +425,9 @@ fundamentos e papéis
 Este commit **não autoriza nem materializa** a continuação. Permanecem deliberadamente diferidos para gates posteriores:
 
 ```text
-Authenticated Wireframes / low-fidelity — DELIVERY EXECUTED
-→ validação funcional — NEXT GOVERNED GATE
-→ UI
+Authenticated Wireframes / low-fidelity — DELIVERY + VALIDATION PASS
+→ high-fidelity eligibility — POSSIBLE NEXT GOVERNED FRONT
+→ UI high-fidelity — NOT AUTHORIZED
 → protótipo
 → testes
 → handoff técnico
