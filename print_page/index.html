@@ -5031,7 +5031,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </ul>
 <h2 id="index-estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#index-estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="#project-current-state-register">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
-<div class="highlight"><pre><span></span><code>GKR-STATE-001 3.39.0
+<div class="highlight"><pre><span></span><code>GKR-STATE-001 3.40.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -5066,10 +5066,11 @@ GIA-COG-001 → ACTIVE / NORMATIVE / CURRENT COGNITIVE REFERENCE ARCHITECTURE / 
 O/C AUTHENTICATED SURFACE MAP → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
 O/C AUTHENTICATED STATE MAP → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
 O/C PRIORITY FLOWS → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
+O/C NAVIGATION MATERIALIZATION ELIGIBILITY → PASS / ACTIVE / CANONICAL / v1.0.0
 O/C NAVIGATION → NOT MATERIALIZED / SEPARATE AUTHORIZATION REQUIRED
 O/C AUTHENTICATED WIREFRAMES → NOT STARTED
 GKR GLOBAL UPDATE → CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
-FUNCTIONAL ADVANCEMENT → PAUSED BY HUMAN INSTRUCTION
+FUNCTIONAL ADVANCEMENT → RESUMED BY HUMAN AUTHORIZATION / ELIGIBILITY FRONT COMPLETED
 NEXT AUTOMATIC EXECUTION → NONE
 SOURCE LOCK → NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
 UXA-102 / V5 → NOT_STARTED
@@ -5824,7 +5825,7 @@ GKR VIGENTE
 </code></pre></div>
 <p>A auditoria integral do corpus foi concluída com resultado <code>PASS</code>. A baseline final pós-auditoria permanece capturada no <code>HEAD 15f4d69f63cd760718dce7903224673aac4f540a</code>. Q concluiu e consolidou documentalmente a definição funcional da primeira responsabilidade autenticada da Pessoa após a Home: ela é a continuação autenticada de <code>PER-002 — Entrada protegida</code>, não uma nova superfície inferida. A adjudicação posterior de elegibilidade de materialização também concluiu <code>PASS</code>: uma materialização low-fidelity funcional de <code>PER-002</code> é justificada, sem novo <code>PER-ID</code>, e seu boundary de handoff está congelado em <code>GKR-UX-PER002-MAT-ELIGIBILITY-001</code>. A decisão governada separada <code>GKR-UX-PER002-DESIGN-AUTH-001</code> concedeu autorização de Design exclusivamente para essa materialização. A primeira entrega low-fidelity foi executada em <code>GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0</code>, com quatro frames principais e três variantes cobrindo 7/7 áreas autorizadas. A validação documental/visual posterior concluiu <code>PASS</code>, registrada em <code>GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0</code>, sem finding material ou bloqueador e sem reformulação requerida. A entrega validada passa a ser a referência corrente low-fidelity de Design de <code>PER-002</code> quando lida com seu validator. A adjudicação pós-validação <code>GKR-UX-PER002-HIFI-ELIGIBILITY-001 v1.0.0</code> concluiu <code>PASS</code> para high-fidelity, e <code>GKR-UX-PER002-HIFI-AUTH-001 v1.0.0</code> concedeu autorização de Design high-fidelity exclusivamente para <code>PER-002</code>. A execução high-fidelity foi concluída em <code>GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0</code>; a validação governada subsequente concluiu <code>PASS</code> em <code>GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0</code>, com 15/15 critérios aprovados, 0 findings materiais, 0 bloqueadores e nenhuma reformulação requerida. O pacote entrega+validator passa a ser a referência corrente high-fidelity de Design de <code>PER-002</code>, sem promover seus tokens locais a Design System global ou UI de produção. A adjudicação pós-validação <code>GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0</code> concluiu <code>PASS</code>, e a decisão separada <code>GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0</code> concedeu autorização explícita apenas para um protótipo interativo simulado de Design de <code>PER-002</code>. A execução foi concluída em <code>GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0</code>. O ato original de validação, preservado em <code>GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1</code>, é evidência histórica pré-review e está <code>superseded</code> como fechamento corrente. A revisão Codex identificou dois findings <code>P2</code> de interação, ambos remediados; a revalidação governada pós-review <code>GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0</code> concluiu <code>PASS</code>, com 16/16 critérios após remediação, 0 findings materiais, 0 bloqueadores, 0 P2 de interação abertos e nenhuma reformulação requerida. A referência interativa corrente é Delivery v0.1.0 + Validation histórica v1.0.1 + Revalidation v1.0.0. Não há próxima execução automática liberada. Source Lock permanece não criado e não autorizado por inferência; <code>UXA-102/V5</code> e Product Engineering permanecem não iniciados/pausados.</p>
 <p>A frente posterior da Cognitive Reference Architecture também foi concluída em seu limite documental: <code>ADR-008</code> aprovou placement e ownership sob a GIA; <code>GIA-COG-001 v0.1.1</code> passou por revisão, remediação, revalidação semântica e gate de promoção e é agora a <strong>Cognitive Reference Architecture vigente, ativa e normativa</strong>. Essa promoção não autoriza <code>GIA-COG-002..008</code>, arquitetura física, dados reais, implementação, operação ou produção.</p>
-<p>A frente documental posterior de Organizações e Coletivos também avançou por gates próprios: <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0</code> é o <strong>mapa lógico-documental canônico das superfícies autenticadas O/C</strong>, <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0</code> é o <strong>mapa funcional canônico documental dos estados autenticados O/C</strong> e <code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0</code> é a <strong>autoridade canônica documental dos fluxos prioritários autenticados O/C</strong>. As três autoridades preservam os registries existentes sem criar IDs paralelos ou promover maturidade por inferência. Priority Flows definidos documentalmente não materializam navegação, não iniciam wireframes e não liberam Design, UI, protótipo ou Product Engineering.</p>
+<p>A frente documental posterior de Organizações e Coletivos também avançou por gates próprios: <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0</code> é o <strong>mapa lógico-documental canônico das superfícies autenticadas O/C</strong>, <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0</code> é o <strong>mapa funcional canônico documental dos estados autenticados O/C</strong> e <code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0</code> é a <strong>autoridade canônica documental dos fluxos prioritários autenticados O/C</strong>. A adjudicação <code>GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0</code> foi promovida como <strong>PASS / ACTIVE / CANONICAL ELIGIBILITY ADJUDICATION</strong>, sem materializar navegação. As autoridades preservam os registries existentes sem criar IDs paralelos ou promover maturidade por inferência. A elegibilidade promovida não inicia Navigation Materialization, wireframes, Design, UI, protótipo ou Product Engineering.</p>
 <h2 id="project-current-state-register-2-estado-executivo">2. Estado executivo<a class="headerlink" href="#project-current-state-register-2-estado-executivo" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>ERA
 → GE-2 — KNOWLEDGE
@@ -5857,6 +5858,11 @@ O/C AUTHENTICATED PRIORITY FLOWS
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 → NO NEW GKR-TRN-* CREATED OR PROMOTED
 
+O/C NAVIGATION MATERIALIZATION ELIGIBILITY
+→ GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0
+→ PASS / ACTIVE / CANONICAL ELIGIBILITY ADJUDICATION
+→ MATERIAL BLOCKER PROVEN = NONE
+
 O/C NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 → REQUIRES SEPARATE GOVERNED AUTHORIZATION
@@ -5873,7 +5879,9 @@ PRODUCT ENGINEERING
 GKR GLOBAL UPDATE — 2026-09-18
 → CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
 → GKR-GLOBAL-UPDATE-2026-09-18-001
-→ FUNCTIONAL ADVANCEMENT PAUSED BY HUMAN INSTRUCTION
+→ PAUSE COMPLETED AFTER INTEGRATION
+→ FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION
+→ O/C NAVIGATION MATERIALIZATION ELIGIBILITY PROMOTED / PASS
 → NAVIGATION MATERIALIZATION NOT AUTHORIZED
 
 BLOCO 2 — G / H / I
@@ -6492,6 +6500,10 @@ PRIORITY FLOWS
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 → GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
 
+NAVIGATION MATERIALIZATION ELIGIBILITY
+→ PASS / ACTIVE / CANONICAL
+→ GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0
+
 NAVEGAÇÃO MATERIALIZADA
 → NOT MATERIALIZED
 → REQUIRES SEPARATE GOVERNED AUTHORIZATION
@@ -6510,7 +6522,7 @@ PRODUCT ENGINEERING
 → NOT RELEASED
 </code></pre></div>
 <p>A antiga proposta pré-auditoria <code>agent/gkr-orgcol-authenticated-surface-map-v1</code> permanece somente <code>HOLD_REVIEW</code> e não é autoridade vigente.</p>
-<p>Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. O próximo gap é <strong>Navigation Materialization</strong>, que continua dependente de autorização própria. Surface Map + State Map + Priority Flows não autorizam wireframe, menu visual final, rota técnica, RBAC técnico, implementação ou Engenharia.</p>
+<p>Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. A elegibilidade para <strong>Navigation Materialization</strong> também foi adjudicada e promovida como <code>PASS</code> em <code>GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0</code>. O próximo gate é a <strong>autorização humana separada da Navigation Materialization</strong>. Elegibilidade promovida não autoriza wireframe, menu visual final, rota técnica, RBAC técnico, implementação ou Engenharia.</p>
 <div class="highlight"><pre><span></span><code>DOCUMENTAÇÃO
 → DEFINE RESPONSABILIDADES, ESTADOS E FRONTEIRAS SEMÂNTICAS
 
@@ -7452,6 +7464,10 @@ O/C AUTHENTICATED PRIORITY FLOWS
 → GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
+O/C NAVIGATION MATERIALIZATION ELIGIBILITY
+→ GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0
+→ PASS / ACTIVE / CANONICAL
+
 O/C NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 
@@ -7721,6 +7737,10 @@ O/C AUTHENTICATED PRIORITY FLOWS
 → GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
+O/C NAVIGATION MATERIALIZATION ELIGIBILITY
+→ GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0
+→ PASS / ACTIVE / CANONICAL
+
 O/C NAVIGATION MATERIALIZATION
 → NOT MATERIALIZED
 → REQUIRES SEPARATE GOVERNED AUTHORIZATION
@@ -7754,6 +7774,7 @@ AINDA NÃO INICIADOS / NÃO AUTORIZADOS ALÉM DO BOUNDARY
 → UXA-102 / V5 = NOT_STARTED
 → MATERIALIZATION OUTSIDE PER-002 AUTHORIZED BOUNDARY = NOT_AUTHORIZED
 → O/C PRIORITY FLOWS = DEFINED / CANONICAL DOCUMENTARY
+→ O/C NAVIGATION MATERIALIZATION ELIGIBILITY = PASS / CANONICAL / v1.0.0
 → O/C NAVIGATION / WIREFRAMES = NOT MATERIALIZED / NOT STARTED
 → PRODUCT ENGINEERING = NOT_AUTHORIZED TO RESUME
 → PMF = NOT VALIDATED
@@ -7773,7 +7794,7 @@ HOME MASTERS INTEGRATION STATE IN MAIN
 HOME MASTERS FRONT IN MAIN
 → MUST NOT BE CLAIMED AS INTEGRATED WHILE THIS CHANGESET IS ABSENT FROM MAIN
 </code></pre></div>
-<p>A revisão <code>v3.35.0</code> desta autoridade integrou o changeset de fechamento de Home Masters. A revisão <code>v3.36.0</code> promoveu documentalmente o Surface Map O/C. A revisão <code>v3.37.0</code> promoveu o State Map O/C e a revisão <code>v3.38.0</code> promove os Priority Flows O/C ao estado <code>DEFINED / CANONICAL DOCUMENTARY</code>, sem alterar a prova, a proveniência ou os gates do fechamento Home Masters.</p>
+<p>A revisão <code>v3.35.0</code> desta autoridade integrou o changeset de fechamento de Home Masters. A revisão <code>v3.36.0</code> promoveu documentalmente o Surface Map O/C. A revisão <code>v3.37.0</code> promoveu o State Map O/C, a revisão <code>v3.38.0</code> promoveu os Priority Flows O/C, a revisão <code>v3.39.0</code> sincronizou globalmente o GKR e a revisão <code>v3.40.0</code> promove a elegibilidade de Navigation Materialization como <code>PASS / CANONICAL</code>, sem autorizar sua execução.</p>
 <p>A PR histórica #365 permanece preservada como candidato anterior não mesclado; sua reconciliação é realizada por branch limpa sobre o <code>main</code> posterior, sem rebase ou merge cego. Os gates downstream continuam independentes:</p>
 <div class="highlight"><pre><span></span><code>PR #365
 → OPEN / DRAFT / NOT MERGED / HOLD
@@ -7804,9 +7825,9 @@ DESIGN / UI / PROTOTYPE
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
 </code></pre></div>
-<p>O avanço posterior ao fechamento Home Masters limita-se, nesta revisão, às definições documentais de Surface Map, State Map e Priority Flows O/C; nenhuma etapa downstream é liberada automaticamente.</p></section><section class="print-page" id="roadmap" heading-number="2.3"><h1 id="roadmap-roadmap-arquitetural-auditoria-integral-e-proximos-gates-da-guivos">Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos<a class="headerlink" href="#roadmap-roadmap-arquitetural-auditoria-integral-e-proximos-gates-da-guivos" title="Permanent link">&para;</a></h1>
+<p>O avanço posterior ao fechamento Home Masters inclui, nesta revisão, a promoção canônica da elegibilidade de Navigation Materialization após Surface Map, State Map e Priority Flows O/C. A própria Navigation Materialization continua não autorizada e nenhuma etapa downstream é liberada automaticamente.</p></section><section class="print-page" id="roadmap" heading-number="2.3"><h1 id="roadmap-roadmap-arquitetural-auditoria-integral-e-proximos-gates-da-guivos">Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos<a class="headerlink" href="#roadmap-roadmap-arquitetural-auditoria-integral-e-proximos-gates-da-guivos" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-funcao">1. Função<a class="headerlink" href="#roadmap-1-funcao" title="Permanent link">&para;</a></h2>
-<p>Este roadmap traduz <code>GKR-STATE-001 v3.39.0</code> em <strong>frentes governadas de avanço</strong>.</p>
+<p>Este roadmap traduz <code>GKR-STATE-001 v3.40.0</code> em <strong>frentes governadas de avanço</strong>.</p>
 <p>Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.</p>
 <div class="highlight"><pre><span></span><code>ROADMAP
 → ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
@@ -7818,8 +7839,8 @@ ROADMAP
 </code></pre></div>
 <p>A <strong>Auditoria Integral do Guivos Knowledge Repository</strong> foi concluída com resultado <code>PASS</code>: 23 de 23 checkpoints governados encerrados. A adjudicação de elegibilidade de Q também foi concluída como <code>PASS</code>, a baseline final pós-auditoria foi capturada no <code>HEAD 15f4d69f63cd760718dce7903224673aac4f540a</code>, e Q foi liberado para definição documental. Essa definição funcional foi posteriormente concluída e consolidada: a primeira responsabilidade autenticada é a continuação autenticada de <code>PER-002 — Entrada protegida</code>, sem criação de nova superfície; <code>PER-003 — Escolha de modalidade</code> é a primeira superfície registrada distinta downstream. A adjudicação de elegibilidade de materialização concluiu <code>PASS</code>, com boundary congelado em <code>GKR-UX-PER002-MAT-ELIGIBILITY-001</code>. O ciclo low-fidelity foi autorizado, executado e validado com <code>PASS</code>. A elegibilidade high-fidelity foi adjudicada como <code>PASS</code>, sua autorização foi concedida, a entrega high-fidelity foi executada em <code>GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0</code> e a validação governada subsequente concluiu <code>PASS</code> em <code>GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0</code>, com 15/15 critérios aprovados, 0 findings materiais, 0 bloqueadores e nenhuma reformulação requerida. Essa entrega+validator passa a ser a referência corrente high-fidelity de Design de <code>PER-002</code>, sem promover tokens locais a Design System global. A adjudicação <code>GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0</code> concluiu <code>PASS</code>; a decisão governada separada <code>GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0</code> concedeu autorização explícita apenas para um protótipo interativo simulado de Design de <code>PER-002</code>. A execução foi concluída em <code>GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0</code>. O ato original de validação foi preservado como evidência histórica pré-review em <code>GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1</code> e está <code>superseded</code> como fechamento corrente. A revisão Codex identificou dois findings <code>P2</code> de interação; ambos foram remediados e seus threads resolvidos. A revalidação governada pós-review <code>GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0</code> concluiu <code>PASS</code>, com 16/16 critérios após remediação, 0 findings materiais, 0 bloqueadores, 0 P2 de interação abertos e nenhuma reformulação requerida. A referência interativa corrente é Delivery v0.1.0 + Validation histórica v1.0.1 + Revalidation v1.0.0. Não há próxima execução automática liberada.</p>
 <p>A frente posterior da <strong>Cognitive Reference Architecture</strong> também concluiu seu ciclo governado no limite documental. <code>ADR-008</code> aprovou placement e ownership sob a GIA; <code>GIA-COG-001 v0.1.1</code> passou por revisão semântica, remediação, revalidação e gate de promoção e é agora a arquitetura cognitiva de referência vigente, <code>active / normative</code>. Essa promoção não libera <code>GIA-COG-002..008</code>, arquitetura física, modelo físico, ontologia física, provedores/modelos/stack, dados reais, Product Engineering, operação ou produção.</p>
-<p>A frente posterior de Organizações e Coletivos também avançou por atos governados próprios. <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0</code> está definido como mapa lógico-documental canônico das superfícies autenticadas O/C, <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0</code> como mapa funcional canônico de estados e <code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0</code> como autoridade canônica documental dos fluxos prioritários. A promoção dos Priority Flows não cria novos <code>GKR-TRN-*</code>, não promove maturidades registradas e não materializa navegação. Surface Map + State Map + Priority Flows não liberam wireframes, Design, UI, protótipo ou Product Engineering.</p>
-<p>A atualização global do GKR de 18/09/2026 sincroniza as autoridades correntes, entrypoints, hubs e MENU sem abrir nova frente funcional. Durante esse ciclo, o avanço para <code>Navigation Materialization</code> permanece explicitamente pausado por instrução humana; <code>NEXT AUTOMATIC EXECUTION = NONE</code> continua válido.</p>
+<p>A frente posterior de Organizações e Coletivos também avançou por atos governados próprios. <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0</code> está definido como mapa lógico-documental canônico das superfícies autenticadas O/C, <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0</code> como mapa funcional canônico de estados e <code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0</code> como autoridade canônica documental dos fluxos prioritários. <code>GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0</code> está promovido como <code>PASS / ACTIVE / CANONICAL ELIGIBILITY ADJUDICATION</code>. Essa promoção não cria novos <code>GKR-SURF-*</code> ou <code>GKR-TRN-*</code>, não promove maturidades registradas e não autoriza Navigation Materialization, wireframes, Design, UI, protótipo ou Product Engineering.</p>
+<p>A atualização global do GKR de 18/09/2026 sincronizou as autoridades correntes, entrypoints, hubs e MENU durante uma pausa funcional. Após sua integração, a retomada funcional foi autorizada e consumida exclusivamente para adjudicar a elegibilidade de Navigation Materialization. Essa elegibilidade está agora promovida como <code>PASS</code>; a execução de Navigation Materialization permanece dependente de autorização humana separada e <code>NEXT AUTOMATIC EXECUTION = NONE</code> continua válido.</p>
 <p>Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite documental; H/I estão auditados/remediados com <code>F-006 RESOLVED</code> e <code>F-007 RESOLVED</code>. <code>F-016</code> também está <code>RESOLVED</code> após auditoria, adjudicação, cleanup documental 26/26, reconciliação estrutural e prova pós-delete. O Lote J concluiu sua auditoria documental com <code>F-017 RESOLVED</code>. O Lote K concluiu sua auditoria documental com <code>F-019 RESOLVED</code>, preservando todos os gates operacionais de Research. O Lote L concluiu sua auditoria documental com <code>F-020</code> e <code>F-021</code> resolvidos, nenhum finding material específico de L aberto e sem promoção de implementação ou produção. O Lote M concluiu sua auditoria documental com <code>OPEN M-SPECIFIC MATERIAL FINDINGS = 0</code> e <code>F-022 NOT OPENED</code>, sem promover execução jurídica, privacidade operacional ou constituição institucional. O Lote N concluiu sua auditoria documental com <code>OPEN N-SPECIFIC MATERIAL FINDINGS = 0</code>, <code>F-022 NOT OPENED</code> e sem promover execução de GTM, publicação ou operação de mercado. O Lote O concluiu sua auditoria documental após rebuild governado do MENU e prova Semantic + Mechanical; <code>F-002 = RESOLVED</code>. O Lote P concluiu a auditoria final de completude com <code>PASS</code>, recomputação de contagens físicas e maturidade documental, <code>OPEN P-SPECIFIC MATERIAL FINDINGS = 0</code> e <code>F-022 NOT OPENED</code>.</p>
 <p><code>F-016-A</code> concluiu o ciclo governado: elegibilidade estrutural/semântica, autorização humana separada, cleanup físico 119/119, reconciliação, Semantic #832, Mechanical #1090 e prova read-only pós-delete v2. A subfrente está <code>RESOLVED</code> e o inventário físico corrente de SVGs é zero.</p>
 <p><code>F-010</code> permanece <code>RESOLVED</code>. O review Codex permaneceu indisponível por limite de uso e nenhuma claim <code>CLEAN</code> é inferida.</p>
@@ -7839,7 +7860,7 @@ ROADMAP
 </tr>
 <tr>
 <td>Estado global</td>
-<td><strong>GKR-STATE-001 v3.39.0</strong></td>
+<td><strong>GKR-STATE-001 v3.40.0</strong></td>
 </tr>
 <tr>
 <td>Cognitive Reference Architecture</td>
@@ -8070,8 +8091,12 @@ ROADMAP
 <td><strong>DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0</strong></td>
 </tr>
 <tr>
+<td>O/C elegibilidade de Navigation Materialization</td>
+<td><strong>PASS / ACTIVE / CANONICAL / GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0</strong></td>
+</tr>
+<tr>
 <td>O/C navegação materializada</td>
-<td><strong>NOT MATERIALIZED</strong></td>
+<td><strong>NOT MATERIALIZED / NOT AUTHORIZED</strong></td>
 </tr>
 <tr>
 <td>O/C wireframes autenticados</td>
@@ -8079,7 +8104,7 @@ ROADMAP
 </tr>
 <tr>
 <td>GKR Global Update — 18/09/2026</td>
-<td><strong>CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / FUNCTIONAL ADVANCEMENT PAUSED</strong></td>
+<td><strong>CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION</strong></td>
 </tr>
 <tr>
 <td>Design das Homes / O/C autenticado</td>
@@ -8621,8 +8646,13 @@ AUTHENTICATED PRIORITY FLOWS
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 → NO NEW GKR-TRN-* CREATED OR PROMOTED
 
+NAVIGATION MATERIALIZATION ELIGIBILITY
+→ GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0
+→ PASS / ACTIVE / CANONICAL
+→ MATERIAL BLOCKER PROVEN = NONE
+
 NAVIGATION MATERIALIZATION
-→ NOT MATERIALIZED
+→ NOT AUTHORIZED / NOT MATERIALIZED
 
 MAIN AUTHENTICATED WIREFRAMES
 → NOT STARTED
@@ -8635,7 +8665,7 @@ PRODUCT ENGINEERING
 → NOT RELEASED
 </code></pre></div>
 <p><code>UXA-015..018</code> e os dois SVGs associados foram removidos pelo cleanup governado F-006 após absorção e validação. Esse cleanup histórico não definiu as autoridades posteriores. As definições subsequentes ocorreram por <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001</code>, <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001</code> e <code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001</code>, sem reativar artefatos removidos, criar/promover transições por inferência, materializar navegação, wireframes ou Design.</p>
-<p>O próximo avanço O/C, se autorizado em ato separado, é <strong>Navigation Materialization</strong> e deve partir de Surface Map + State Map + Priority Flows canônicos, das autoridades especializadas e dos registries estáveis; não deve restaurar propostas pré-auditoria nem inferir wireframes ou materialização visual.</p>
+<p>A elegibilidade de <strong>Navigation Materialization</strong> foi promovida como <code>PASS</code>. O próximo ato O/C é exclusivamente a <strong>autorização humana separada da Navigation Materialization</strong>. Se autorizada, a execução deverá partir de Surface Map + State Map + Priority Flows canônicos, da adjudicação de elegibilidade, das autoridades especializadas e dos registries estáveis; não deverá restaurar propostas pré-auditoria nem inferir wireframes ou materialização visual.</p>
 <h2 id="roadmap-13-lote-i-registries-catalogos-e-materializacoes">13. Lote I — Registries, catálogos e materializações<a class="headerlink" href="#roadmap-13-lote-i-registries-catalogos-e-materializacoes" title="Permanent link">&para;</a></h2>
 <p>Estado do Bloco 2:</p>
 <div class="highlight"><pre><span></span><code>AUDITED / UPDATE_APPLIED
@@ -9557,7 +9587,7 @@ RESEARCH OPERATIONAL STATES
 <p><code>GIA-COG-002..008</code>, <code>UXA-102/V5</code>, navegação materializada/wireframes O/C, Product Engineering, PMF, implementação, produção e testes com participantes reais permanecem não iniciados ou não autorizados. A cadeia interativa de <code>PER-002</code> está fechada pós-review no limite de Design, <code>GIA-COG-001</code> está fechada no limite de arquitetura conceitual/de referência e Surface Map + State Map + Priority Flows O/C estão fechados no limite documental; qualquer avanço posterior exige ato governado próprio.</p>
 <h2 id="roadmap-27-home-masters-fechamento-formal-integrado-e-reconciliacao-pos-merge">27. Home Masters — fechamento formal integrado e reconciliação pós-merge<a class="headerlink" href="#roadmap-27-home-masters-fechamento-formal-integrado-e-reconciliacao-pos-merge" title="Permanent link">&para;</a></h2>
 <p>A frente Home Masters comprovou elegibilidade de fechamento no HEAD <code>39277f305fced32ce351c113ab7e7d5d7cc76242</code>, com <code>C1–C10 = PASS</code>, Semantic #991 <code>SUCCESS</code>, Mechanical #1236 <code>SUCCESS</code>, revisão Codex independente sem finding material e zero threads abertos.</p>
-<p>O pacote formal de fechamento foi documentado por <code>GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0</code>, <code>GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0</code> e <code>GKR-STATE-001 v3.35.0</code>. Essas referências permanecem como proveniência do fechamento Home Masters; não substituem o estado global corrente <code>GKR-STATE-001 v3.39.0</code>.</p>
+<p>O pacote formal de fechamento foi documentado por <code>GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0</code>, <code>GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0</code> e <code>GKR-STATE-001 v3.35.0</code>. Essas referências permanecem como proveniência do fechamento Home Masters; não substituem o estado global corrente <code>GKR-STATE-001 v3.40.0</code>.</p>
 <p>O changeset final da PR #377 passou novamente por Semantic + Mechanical + revisão independente antes do merge governado. A integração foi concluída em <code>main</code> pelo merge commit <code>b39b9427affd350651caa7efbb34f99e374f6709</code>.</p>
 <div class="highlight"><pre><span></span><code>HOME MASTERS
 → PR #377 GOVERNED MERGE COMPLETE
@@ -9597,7 +9627,7 @@ DESIGN / UI / PROTOTYPE
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
 </code></pre></div>
-<p>Qualquer avanço posterior à promoção documental dos Priority Flows deve partir das autoridades correntes e exigir ato governado próprio. Surface Map + State Map + Priority Flows não autorizam, por inferência, navegação materializada, wireframes, Design, UI, protótipo ou Product Engineering.</p></section><section class="print-page" id="glossary" heading-number="2.4"><h1 id="glossary-glossario-canonico-da-guivos">Glossário Canônico da Guivos<a class="headerlink" href="#glossary-glossario-canonico-da-guivos" title="Permanent link">&para;</a></h1>
+<p>A elegibilidade de Navigation Materialization foi promovida canonicamente após Priority Flows. O próximo avanço exige autorização humana própria para a materialização. Surface Map + State Map + Priority Flows + eligibility PASS não autorizam, por inferência, navegação materializada, wireframes, Design, UI, protótipo ou Product Engineering.</p></section><section class="print-page" id="glossary" heading-number="2.4"><h1 id="glossary-glossario-canonico-da-guivos">Glossário Canônico da Guivos<a class="headerlink" href="#glossary-glossario-canonico-da-guivos" title="Permanent link">&para;</a></h1>
 <p>Este glossário estabelece o uso oficial dos principais termos da arquitetura, dos produtos e da governança da Guivos.</p>
 <p>Quando documentos antigos utilizarem nomenclatura diferente, prevalece a definição registrada aqui, salvo decisão posterior formalmente consolidada no GKR.</p>
 <h2 id="glossary-1-participantes-e-relacoes">1. Participantes e relações<a class="headerlink" href="#glossary-1-participantes-e-relacoes" title="Permanent link">&para;</a></h2>
@@ -12921,7 +12951,7 @@ PUBLICAR MAIS ≠ CONTRIBUIR MAIS
 <p>O estado vigente está detalhado em <a href="#experience-architecture-organizations-collectives-ux-state">Organizações e Coletivos — Estado de UX e Wireframes</a>.</p>
 <p>Resumo:</p>
 <blockquote>
-<p><strong>Atores, autoridades, jobs, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados e Priority Flows autenticados já estão definidos documentalmente. Navegação materializada e wireframes principais autenticados de Organização e Coletivo permanecem não materializados/não iniciados.</strong></p>
+<p><strong>Atores, autoridades, jobs, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados e Priority Flows autenticados já estão definidos documentalmente. A elegibilidade de Navigation Materialization está <code>PASS / ACTIVE / CANONICAL</code>; a navegação em si continua não autorizada/não materializada e os wireframes principais permanecem não iniciados.</strong></p>
 </blockquote>
 <p>Materiais anteriores que afirmavam wireframes principais vigentes ou validação vigente foram reclassificados como registros históricos <code>superseded</code>.</p>
 <h2 id="experience-architecture-organizations-collectives-current-state-15-mapa-de-conhecimento">15. Mapa de conhecimento<a class="headerlink" href="#experience-architecture-organizations-collectives-current-state-15-mapa-de-conhecimento" title="Permanent link">&para;</a></h2>
@@ -12966,6 +12996,10 @@ PUBLICAR MAIS ≠ CONTRIBUIR MAIS
 <td><code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001</code></td>
 </tr>
 <tr>
+<td>elegibilidade de Navigation Materialization</td>
+<td><code>GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001</code></td>
+</tr>
+<tr>
 <td>Jornada da Organização</td>
 <td><code>journeys/organization.md</code></td>
 </tr>
@@ -13007,6 +13041,7 @@ PUBLICAR MAIS ≠ CONTRIBUIR MAIS
 → mapa lógico de superfícies autenticadas
 → mapa funcional de estados autenticados
 → fluxos prioritários autenticados
+→ elegibilidade de Navigation Materialization — PASS / CANONICAL
 </code></pre></div>
 <p>Este commit <strong>não autoriza nem materializa</strong> a continuação. Permanecem deliberadamente diferidos para gates posteriores:</p>
 <div class="highlight"><pre><span></span><code>Navigation Materialization
@@ -18573,6 +18608,10 @@ AUTORIDADE FUNCIONAL
 <td><code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0</code>; <strong>DEFINED / CANONICAL DOCUMENTARY</strong>; não cria/promove <code>GKR-TRN-*</code> nem materializa navegação</td>
 </tr>
 <tr>
+<td>elegibilidade de Navigation Materialization O/C</td>
+<td><code>GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0</code>; <strong>PASS / ACTIVE / CANONICAL</strong>; materialização continua não autorizada</td>
+</tr>
+<tr>
 <td>catálogo integrado</td>
 <td><code>active</code> 0.37.0; <strong>0 SVGs físicos após F-016-A</strong>; maturidade funcional preservada por autoridades textuais</td>
 </tr>
@@ -18660,12 +18699,13 @@ AUTORIDADE FUNCIONAL
 → O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C State Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C Priority Flows — DEFINED / CANONICAL DOCUMENTARY
+→ O/C Navigation Materialization Eligibility — PASS / ACTIVE / CANONICAL
 → O/C Navigation Materialization — NOT MATERIALIZED / REQUIRES SEPARATE AUTHORIZATION
 → V5 — pendente e não iniciada
 </code></pre></div>
 <p>D5-A/B/C1/C2/C3/C4A/C4B e a frente documental O/C não consomem nem antecipam V5.</p>
 <h2 id="experience-architecture-11-proxima-evolucao-possivel">11. Próxima evolução possível<a class="headerlink" href="#experience-architecture-11-proxima-evolucao-possivel" title="Permanent link">&para;</a></h2>
-<p>A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo; <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0</code> define o <strong>Surface Map lógico-documental canônico</strong> e <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0</code> define o <strong>State Map funcional canônico documental</strong>. Os <strong>Priority Flows</strong> estão definidos documentalmente em <code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0</code>; a navegação materializada e os wireframes permanecem pendentes e exigem autorização própria. D6, D7, materialização de <code>PER-009</code>, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.</p></section><section class="print-page" id="journeys" heading-number="6.2"><h1 id="journeys-jornadas-integradas">Jornadas Integradas<a class="headerlink" href="#journeys-jornadas-integradas" title="Permanent link">&para;</a></h1>
+<p>A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo; <code>GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0</code> define o <strong>Surface Map lógico-documental canônico</strong> e <code>GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0</code> define o <strong>State Map funcional canônico documental</strong>. Os <strong>Priority Flows</strong> estão definidos documentalmente em <code>GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0</code>; a elegibilidade de Navigation Materialization está promovida como <code>PASS</code> em <code>GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0</code>; a navegação materializada e os wireframes permanecem pendentes e exigem autorizações próprias. D6, D7, materialização de <code>PER-009</code>, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.</p></section><section class="print-page" id="journeys" heading-number="6.2"><h1 id="journeys-jornadas-integradas">Jornadas Integradas<a class="headerlink" href="#journeys-jornadas-integradas" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p><strong>F-016-A — desmaterialização física.</strong> Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome <code>.svg</code> remanescente neste documento é <strong>proveniência histórica</strong>, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.</p>
 </blockquote>
