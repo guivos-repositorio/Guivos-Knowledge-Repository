@@ -142,7 +142,7 @@ Fontes específicas:
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### Mall
-- `GKR-UX-HOME-MALL-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.0.1`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
 
 Contrato corrente que o Source Lock v5 deve explicitar:
@@ -154,7 +154,7 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 - `MALL-HS-06 SPONSORED_EXPOSURE` — exposição paga permanece identificada e não se disfarça de relevância orgânica.
 
 ### Travel
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.1`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
 
 Contrato corrente que o Source Lock v5 deve explicitar:
@@ -166,24 +166,24 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 - `TRAVEL-HS-06 CAMPAIGN_OR_SPONSORED` — campanha é temporária e patrocínio permanece identificado.
 
 ### Media
-- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1`;
 - `GPA-005 v1.2.0`.
 
 ### Ads
-- `GKR-UX-HOME-ADS-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.1`;
 - `GPA-007 v1.3.0`.
 
 ### Business
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.0`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.1`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.1`;
 - `GPA-004 v1.6.0`.
 
 ### Intelligence
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.0`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.0`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.2`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0`;
 - `GPA-006 v2.0.0`.
 
