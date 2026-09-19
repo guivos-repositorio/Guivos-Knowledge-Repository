@@ -160,19 +160,28 @@ source_lock:
   invariants:
     - "<decisão que não pode ser reinterpretada>"
 
-  design_freedoms:
-    - "<aspecto que pode ser explorado>"
-
-  forbidden_inferences:
-    - "<decisão que a ferramenta não pode inventar>"
+  information_classes:
+    canonical:
+      - "<decisão que deve ser preservada>"
+    design_creative:
+      - "<aspecto deliberadamente aberto à criação>"
+    content_candidate:
+      - "<copy/tom/label proposto sujeito a aprovação>"
+    design_hypothesis:
+      - "<hipótese de solução a testar>"
+    prototype_placeholder:
+      - "<conteúdo provisório permitido>"
+    real_data_required:
+      - "<informação que exige fonte real>"
+    open_question:
+      - "<decisão ainda aberta com destino explícito>"
+    prohibited_inference:
+      - "<conteúdo/regra/claim que não pode ser inventado>"
 
   content_state:
     real_content_available: "<yes | partial | no>"
     placeholders_allowed: true
     placeholder_rules: "<regras específicas>"
-
-  open_questions:
-    - "<lacuna ainda não governada>"
 
   tool:
     name: "<ferramenta utilizada>"
@@ -357,29 +366,41 @@ Benchmark, moodboard ou referência visual nunca sobe na hierarquia por ser visu
 
 ## 8. Tipos de informação dentro do prompt
 
-Cada item relevante deve ser tratável como uma destas classes:
+O template utiliza exatamente a mesma taxonomia de `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001`:
 
-### CANÔNICO
+### CANONICAL
 
-Decisão governada por fonte autorizada.
+Decisão governada que deve ser preservada.
 
-### LIBERDADE DE DESIGN
+### DESIGN_CREATIVE
 
-Campo deliberadamente aberto para materialização.
+Campo deliberadamente aberto à criação da designer.
 
-### HIPÓTESE
+### CONTENT_CANDIDATE
 
-Proposta criada para testar uma solução. Não é decisão da Guivos.
+Copy, tom, label ou formulação editorial proposta e sujeita a aprovação humana.
 
-### LACUNA
+### DESIGN_HYPOTHESIS
 
-Informação que as fontes não respondem e que exige decisão humana ou novo contrato.
+Solução criada para testar uma interpretação de Design sem se tornar decisão da Guivos.
 
-### PLACEHOLDER
+### PROTOTYPE_PLACEHOLDER
 
-Conteúdo provisório usado para testar hierarquia ou composição sem afirmar realidade.
+Conteúdo provisório usado para testar hierarquia, volume, ritmo ou comportamento.
 
-A ferramenta não deve converter automaticamente `HIPÓTESE`, `LACUNA` ou `PLACEHOLDER` em `CANÔNICO`.
+### REAL_DATA_REQUIRED
+
+Informação factual que exige fonte real antes de poder ser tratada como verdade pública.
+
+### OPEN_QUESTION
+
+Decisão ainda não necessária ou não governada, com destino explícito.
+
+### PROHIBITED_INFERENCE
+
+Conteúdo, regra ou claim que não pode ser criado para preencher a solução.
+
+A ferramenta não deve promover qualquer classe a `CANONICAL` por inferência. Mudança de classe exige evidência ou aprovação humana conforme o caso.
 
 ---
 
@@ -423,25 +444,38 @@ FONTES AUTORIZADAS E ORDEM DE AUTORIDADE
 
 Considere somente essas fontes como autoridade para esta exploração. Referências visuais externas, quando fornecidas, servem apenas como inspiração e não podem sobrescrever os documentos acima.
 
-INVARIANTES QUE DEVEM SER PRESERVADOS
-[LISTA DE INVARIANTES EXTRAÍDOS DAS FONTES]
+MATRIZ OPERACIONAL DE INFORMAÇÃO
+CANONICAL
+[DECISÕES QUE DEVEM SER PRESERVADAS]
 
-LIBERDADES DE DESIGN NESTA EXECUÇÃO
-[LISTA DO QUE PODE SER EXPLORADO]
+DESIGN_CREATIVE
+[O QUE PODE SER CRIADO LIVREMENTE]
 
-PROIBIÇÕES DE INFERÊNCIA
+CONTENT_CANDIDATE
+[COPY / TOM / LABELS SUJEITOS A APROVAÇÃO]
+
+DESIGN_HYPOTHESIS
+[HIPÓTESES QUE PODEM SER TESTADAS SEM VIRAR DECISÃO]
+
+PROTOTYPE_PLACEHOLDER
+[CONTEÚDO PROVISÓRIO PERMITIDO E COMO DEVE SER MARCADO]
+
+REAL_DATA_REQUIRED
+[DADOS / CASES / PREÇOS / PARCEIROS / PROVAS QUE EXIGEM FONTE REAL]
+
+OPEN_QUESTION
+[QUESTÕES AINDA ABERTAS E SEU DESTINO]
+
+PROHIBITED_INFERENCE
 Não invente ou altere:
 [LISTA ESPECÍFICA]
 
 Além disso, não trate ausência de definição como autorização para criar produto, funcionalidade, dado, parceiro, depoimento, métrica, prova, preço, oferta, campanha, disponibilidade, impacto ou promessa factual.
 
 CONTEÚDO E DADOS
-[INDICAR O QUE É REAL, O QUE É PARCIAL E O QUE É PLACEHOLDER]
+[INDICAR O QUE É REAL, PARCIAL, CANDIDATO OU PLACEHOLDER]
 
 Quando precisar de placeholder, deixe claro que é provisório e não o transforme em evidência real.
-
-QUESTÕES ABERTAS
-[LISTA]
 
 Se uma questão aberta for necessária para materializar a solução, trate a escolha como HIPÓTESE DE DESIGN identificada. Não a apresente como decisão canônica.
 
