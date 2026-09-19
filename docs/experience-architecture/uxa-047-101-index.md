@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.41.0
+version: 3.43.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-18
 depends_on:
@@ -15,6 +15,9 @@ related:
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-PER002-MAT-ELIGIBILITY-001
   - GKR-UX-PER002-DESIGN-AUTH-001
   - GKR-UX-PER002-DESIGN-DELIVERY-001
@@ -39,7 +42,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.41.0
+→ 3.43.0
 
 MARCO FUNCIONAL
 → M7.88
@@ -72,7 +75,20 @@ O/C NAVIGATION MATERIALIZATION ELIGIBILITY
 O/C AUTHENTICATED NAVIGATION MATERIALIZATION
 → GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0
 → DEFINED / CANONICAL DOCUMENTARY
-→ WIREFRAMES NOT RELEASED
+
+O/C LOW-FIDELITY WIREFRAME AUTHORIZATION
+→ GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0
+→ GRANTED / ACTIVE
+
+O/C LOW-FIDELITY WIREFRAME DELIVERY
+→ GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0
+→ EXECUTED
+
+O/C LOW-FIDELITY FUNCTIONAL VALIDATION
+→ GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0
+→ PASS / 30 OF 30 COVERAGE / 15 OF 15 INVARIANTS / 12 OF 12 STATE CHALLENGES
+→ MATERIAL FINDINGS = 0
+→ CURRENT REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
 
 BLOCO 2 — G / H / I
 → G COMPLETED / UPDATE_APPLIED
@@ -469,7 +485,7 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.41.0** |
+| Registro do Estado Atual | **3.43.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
@@ -478,7 +494,7 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 | O/C Priority Flows | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** |
 | O/C Navigation Materialization Eligibility | **PASS / ACTIVE / CANONICAL / v1.0.0** |
 | O/C Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0** |
-| O/C Authenticated Wireframes | **NOT STARTED / NOT RELEASED** |
+| O/C Authenticated Wireframes | **DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS / CURRENT LOW-FIDELITY REFERENCE** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
 | Baseline final pós-auditoria | **CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a** |
 | Lotes concluídos | **A / B / C / D / E / F / G** |
