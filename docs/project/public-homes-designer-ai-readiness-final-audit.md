@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGNER-AI-READINESS-AUDIT-001
 title: Homes Públicas — Auditoria Final de Prontidão para Designer e Sistemas de IA
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: false
@@ -288,6 +288,66 @@ MATERIAL DOCUMENT GAPS
 → 0
 ```
 
+
+## 7.1 Auditoria de suficiência — pacote completo por Home
+
+A prontidão não exige que todos os Masters tenham estrutura idêntica. Cada Home possui natureza própria e pode distribuir responsabilidades entre Master, Source Lock, Handoff, autoridade de produto e guia da emissão.
+
+O critério correto é:
+
+```text
+PACKAGE SUFFICIENCY
+→ YES
+
+MASTER TEMPLATE UNIFORMITY
+→ NOT REQUIRED
+```
+
+Resultado do primeiro passe:
+
+| Home | Suficiência semântica | Responsividade / mobile | Acessibilidade / robustez | Liberdade criativa | Estado |
+|---|---|---|---|---|---|
+| Pessoa | completa no Master | explícita | explícita | explícita | PASS candidato |
+| Organizações e Coletivos | completa no Master | explícita | explícita | explícita | PASS candidato |
+| Mall | completa | adicionada ao Master + guia | adicionada ao Master | adicionada ao Master | PASS candidato |
+| Travel | completa | adicionada ao Master + guia | adicionada ao Master | explícita | PASS candidato |
+| Media | Master + Source Lock operacional | explícita no pacote | explícita no pacote | explícita | PASS candidato |
+| Ads | Master + Source Lock operacional | explícita no pacote | explícita no pacote | explícita | PASS candidato |
+| Business | Master + Source Lock + autoridades de conversão | explícita no Source Lock | adicionada/reconciliada | **forma visual descongelada** | PASS candidato / review required |
+| Intelligence | Master + Home Source Lock + Handoff | explícita no Handoff | adicionada ao Handoff | explícita | PASS candidato / review required |
+
+### Finding adicional — prescrição visual de Business
+
+A leitura encontrou linguagem que tratava dashboard/KPI/gráfico como direção visual obrigatória/congelada.
+
+Remediação aplicada no candidato:
+
+```text
+SEMANTIC OUTCOME
+→ CANONICAL
+
+VISUAL EXPRESSION
+→ DESIGN_CREATIVE
+
+DASHBOARD / KPI / CHART
+→ OPTIONAL DESIGN HYPOTHESIS
+→ NOT REQUIRED
+→ NOT CANONICAL
+```
+
+A designer deve tornar compreensível o valor do Intelligence dentro de Business, mas pode escolher livremente a forma visual.
+
+### Finding adicional — gates históricos em Business e Intelligence
+
+Business Source Lock e Intelligence Handoff ainda carregavam próximos gates já superados.
+
+Remediação aplicada:
+
+- Business: Source Lock ativo + release posterior reconhecido + v6 em HOLD documental;
+- Intelligence: Source Lock/Handoff/input operacional reconhecidos + modelo designer-led + IA opcional;
+- nenhum dos dois autoriza implementação.
+
+
 ## 8. Artefato Figma experimental da conversa
 
 A exploração `Guivos — Home Pessoa — Exploração Exec 001` produzida fora do GKR durante a tentativa operacional:
@@ -353,8 +413,22 @@ DR-005
 → CANDIDATE PROMOTION APPLIED
 → INDEPENDENT REVIEW REQUIRED
 
-DR-006..DR-010
-→ OPEN / PARTIALLY ADDRESSED
+DR-006
+→ V5 PRESERVED / V6 CANDIDATE ESTABLISHED
+
+DR-007
+→ HUMAN-FIRST / AI-OPTIONAL MODEL DEFINED
+→ V6 GUIDES PENDING POST-MERGE GENERATION
+
+DR-008
+→ VISUAL REFERENCE POLICY EXPLICIT
+
+DR-009
+→ ONE-HOME-AT-A-TIME AI ISOLATION PRESERVED
+
+DR-010
+→ PACKAGE SUFFICIENCY AUDIT PASS IN CANDIDATE
+→ FINAL BLOB / VERSION / LINK PROOF PENDING FINAL HEAD
 
 V6 MANIFEST
 → CANDIDATE / NOT_EMITTED
