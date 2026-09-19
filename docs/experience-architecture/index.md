@@ -161,8 +161,8 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C4B — validação integrada individual e promoção de TRN-008..013
 → O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C State Map — DEFINED / CANONICAL DOCUMENTARY
-→ Public Homes Design Production Readiness — ACTIVE / V5 SNAPSHOT EMITTED / DESIGN RELEASE GRANTED
-→ Public Homes Design Production Release — GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ Public Homes Source Readiness — REMEDIATION IN PROGRESS / MANUAL-FIRST / AI-OPTIONAL
+→ V5 Design Production Release — HISTORICAL / NEW EXECUTION SUSPENDED PENDING SOURCE_READY
 → Public Homes Design Handoff v5 Snapshot — delivery/design-handoff-v5 / 34 FILES / 26/26 BYTE-PRESERVED
 ```
 
@@ -305,6 +305,10 @@ A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. 
 
 [GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001](public-homes-design-delivery-v5-snapshot-record.md) registra a emissão externa reproduzível v5 das oito Homes, com 26 fontes canônicas byte-preservadas e oito guias operacionais. O registro preserva que **a emissão isoladamente** não concedeu Design Release.
 
+### Public Homes — Source Readiness Remediation
+
+[GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001](public-homes-design-source-readiness-remediation.md) governa a frente atual de completude documental das oito Homes para designer humana e IA opcional, sem produção de Figma pelo GKR.
+
 ### Public Homes — Design Production Release
 
-[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) registra o ato humano posterior que concede `DESIGN PRODUCTION RELEASE = GRANTED`, libera Figma Make/exploração para execução e preserva o gate humano de direção antes do Figma definitivo.
+[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) preserva o release histórico de v5 e registra que novas execuções estão suspensas até a conclusão da remediação `SOURCE_READY`, sem Figma Make obrigatório.
