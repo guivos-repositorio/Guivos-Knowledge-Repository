@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 title: Homes Públicas — Remediação de Prontidão Documental para Designer e IA
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: source_readiness_remediation_in_progress_person_pass
+maturity: source_readiness_remediation_in_progress_person_oc_pass
 depends_on:
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-GENINPUT-001
@@ -344,8 +344,8 @@ NEW EXTERNAL SNAPSHOT
 | Home | Estado | Finding material aberto |
 |---|---|---:|
 | Pessoa | **SOURCE_READY / PASS** | 0 |
-| Organizações e Coletivos | UNDER_AUDIT | — |
-| Mall | NOT_YET_AUDITED | — |
+| Organizações e Coletivos | **SOURCE_READY / PASS** | 0 |
+| Mall | UNDER_AUDIT | — |
 | Travel | NOT_YET_AUDITED | — |
 | Media | NOT_YET_AUDITED | — |
 | Ads | NOT_YET_AUDITED | — |
@@ -355,6 +355,15 @@ NEW EXTERNAL SNAPSHOT
 Home Pessoa foi fechada após:
 - reconciliação do Movimento 06 no contrato pós-Media;
 - explicitação de condições/fallbacks;
+- matriz operacional específica;
+- brief mínimo para designer;
+- contrato de uso opcional de IA;
+- confirmação de zero gap semântico material.
+
+Home Organizações e Coletivos foi fechada após:
+- alinhamento dos rótulos pós-Media aos 11 movimentos canônicos;
+- reconciliação dos limites procedimentais antigos;
+- explicitação da bifurcação Organização/Coletivo e seus fallbacks;
 - matriz operacional específica;
 - brief mínimo para designer;
 - contrato de uso opcional de IA;
