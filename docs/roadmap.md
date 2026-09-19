@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.46.0
+id: ROADMAP-13.47.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.46.0
+version: 13.47.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -165,7 +165,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | O/C wireframes low-fidelity | **AUTHORIZATION GRANTED / DELIVERY v0.1.0 EXECUTED / VALIDATION v1.0.0 PASS / CURRENT REFERENCE = DELIVERY + VALIDATION** |
 | O/C high-fidelity eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0 / AUTHORIZATION NOT_GRANTED** |
 | GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION** |
-| Design das Homes públicas | **DESIGN PRODUCTION RELEASE GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0 / FIGMA MAKE AUTHORIZED TO EXECUTE** |
+| Design das Homes públicas | **DOCUMENTATION READINESS REMEDIATION IN PROGRESS / DESIGN PRODUCTION RELEASE REMAINS GRANTED / DESIGNER-LED / AI OPTIONAL / NO GKR-GENERATED FIGMA REQUIRED** |
 | O/C autenticado high-fidelity | **ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED / SEPARATE GOVERNED GATE** |
 
 Inventário físico corrente após F-016-A:
@@ -1910,9 +1910,9 @@ PRODUCT ENGINEERING
 
 Navigation Materialization foi promovida canonicamente após Surface Map + State Map + Priority Flows + eligibility PASS. Os Authenticated Wireframes low-fidelity foram posteriormente autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O ciclo low-fidelity está fechado; uma eventual frente high-fidelity depende primeiro de adjudicação própria de elegibilidade. High-fidelity UI, protótipo e Product Engineering continuam não autorizados.
 
-## Public Homes — Design Production Readiness / Figma
+## Public Homes — Designer / AI Documentation Readiness
 
-Prioridade temporária aberta para preparar a contratação e produção definitiva das oito Homes públicas em Figma.
+Prioridade temporária reaberta para eliminar qualquer drift documental antes da entrega definitiva das oito Homes à designer. A criação é designer-led; IA é opcional; Figma ou equivalente é ferramenta externa e não baseline do GKR.
 
 Esta frente não prescreve identidade visual. Criatividade, originalidade e imaginação da designer são parte deliberada do processo.
 
@@ -1947,7 +1947,7 @@ Sequência governada:
 13. revisão independente;
 14. adjudicar findings, se houver;
 15. ato humano explícito de Design Production Release — CONCLUÍDO / GRANTED;
-16. iniciar Figma Make / prototipação de Design — AUTHORIZED / NOT_STARTED.
+16. concluir auditoria final de prontidão designer/IA e emitir pacote sem findings materiais — EM CURSO;
 
 ```text
 V5 SNAPSHOT
@@ -1961,7 +1961,7 @@ V5 SNAPSHOT
 DESIGN PRODUCTION RELEASE
 → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 
-FIGMA MAKE / GENERATIVE EXPLORATION
+EXTERNAL DESIGN / OPTIONAL AI ASSISTANCE
 → AUTHORIZED TO EXECUTE / NOT_STARTED
 
 FINAL FIGMA PRODUCTION
