@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.48.9
+version: 3.48.10
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -1036,7 +1036,7 @@ O Lote E foi concluído documentalmente pela reconstrução do Master e pela rec
 Autoridades atuais:
 
 ```text
-GKR-UX-HOME-OC-MASTER-001 v1.0.2
+GKR-UX-HOME-OC-MASTER-001 v1.0.3
 → autoridade de consumo vigente
 
 GKR-UX-HOME-OC-NARR-001 v0.2.0
@@ -1139,7 +1139,7 @@ PRIVACIDADE DE REFERÊNCIA
 ≠ EVIDÊNCIA OPERACIONAL
 ```
 
-A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.2` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes, mas não autoriza, por si só, Design, materialização, implementação ou publicação.
+A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.3` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes e não constitui, por si só, release operacional. A produção externa de Design da Home pública é regida pelo release comum posterior; implementação e publicação permanecem separadas.
 
 Estado:
 
@@ -1328,7 +1328,7 @@ HOME INTELLIGENCE v1
 → CONCEPTUAL ARCHITECTURE COMPLETE
 
 HOME SOURCE LOCK
-→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.2
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.3
 → ACTIVE / NORMATIVE
 → FREEZES SOURCES AND INVARIANTS
 → DOES NOT AUTHORIZE DESIGN BY ITSELF
@@ -2385,7 +2385,7 @@ PACKAGE-LEVEL CHECKS
 → 120 / 120 PASS
 
 OPEN MATERIAL SOURCE-COMPLETENESS FINDINGS
-→ 0 KNOWN AFTER THIRD REMEDIATION
+→ 0 KNOWN AFTER FULL TEMPORAL-STATE SWEEP
 → EXACT-HEAD REVALIDATION + RE-REVIEW REQUIRED
 ```
 
@@ -2395,13 +2395,15 @@ Remediações materiais do candidato:
 - Operational Flow → tool-neutral;
 - Readiness → contrato Designer/IA;
 - Release → produção externa pela designer;
-- Mall Master → v1.1.0 com contrato determinístico absorvido;
-- Travel Master → v1.1.2 reconciliado para produção externa de Design;
+- Pessoa Master → v1.0.3 reconciliado para produção externa de Design;
+- O/C Master → v1.0.3 reconciliado para produção externa de Design;
+- Mall Master → v1.1.1 reconciliado para produção externa de Design;
+- Travel Master → v1.1.3 reconciliado para produção externa de Design;
 - Business Master → v1.1.3 reconciliado para produção externa de Design;
-- Business Source Lock → v1.1.3 sincronizado com Business Master v1.1.3;
-- Intelligence Master → v0.2.3 temporalmente reconciliado;
-- Intelligence Source Lock → v1.1.2 reconciliado para designer-first / IA opcional;
-- Intelligence Design Handoff → v1.1.3 reconciliado para designer-first / IA opcional;
+- Business Source Lock → v1.1.4 sincronizado com Business Master v1.1.3 e Authority Contract v1.0.2;
+- Intelligence Master → v0.2.4 reconciliado para produção externa de Design;
+- Intelligence Source Lock → v1.1.3 reconciliado para designer-first / IA opcional;
+- Intelligence Design Handoff → v1.1.4 reconciliado para designer-first / IA opcional;
 - artefato Figma experimental anterior → `ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE`.
 
 O pacote v6 candidato está definido em `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001`:
