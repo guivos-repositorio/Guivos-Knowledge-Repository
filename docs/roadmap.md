@@ -88,7 +88,7 @@ Os Lotes A–F estão reconciliados. O Bloco G está concluído no limite docume
 
 `F-010` permanece `RESOLVED`. O review Codex permaneceu indisponível por limite de uso e nenhuma claim `CLEAN` é inferida.
 
-O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `GIA-COG-001` e as definições canônicas do Surface Map, State Map e Priority Flows O/C não autorizam Source Lock adicional, UXA-102/V5, navegação materializada, wireframes O/C, Product Engineering, implementação, produção ou testes com participantes reais. Nenhum próximo avanço é liberado automaticamente; qualquer nova frente depende de ato governado próprio.
+O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `GIA-COG-001` e as definições canônicas de Surface Map, State Map, Priority Flows e Navigation Materialization O/C não autorizam Source Lock adicional, UXA-102/V5, Authenticated Wireframes O/C, Product Engineering, implementação, produção ou testes com participantes reais. Nenhum próximo avanço é liberado automaticamente; qualquer nova frente depende de ato governado próprio.
 
 ## 2. Baseline governada
 
@@ -224,7 +224,7 @@ GKR
 
 ## 4. Programa prioritário — Auditoria Integral do GKR
 
-A auditoria integral foi concluída. Q é uma frente pós-auditoria governada por baseline final capturada e por autorização própria. A frente `GIA-COG-001` é uma evolução arquitetural posterior e separada: sua promoção canônica não altera a baseline histórica nem reabre os lotes da auditoria. As definições posteriores do Surface Map, do State Map e dos Priority Flows O/C também são atos documentais separados e não reabrem H/I nem promovem maturidade visual, transições ou navegação materializada.
+A auditoria integral foi concluída. Q é uma frente pós-auditoria governada por baseline final capturada e por autorização própria. A frente `GIA-COG-001` é uma evolução arquitetural posterior e separada: sua promoção canônica não altera a baseline histórica nem reabre os lotes da auditoria. As definições posteriores do Surface Map, do State Map e dos Priority Flows O/C também são atos documentais separados e não reabrem H/I nem, por si sós, promovem maturidade visual, transições ou Navigation Materialization. A materialização foi definida somente no ato governado posterior `GKR-UX-ORGCOL-AUTH-NAV-MAT-001`.
 
 Sequência governada:
 
@@ -1731,7 +1731,7 @@ STATE MAP DEFINED ≠ GKR-TRN-* PROMOTED ≠ MATERIALIZED NAVIGATION
 
 ## 26. Regra do próximo movimento
 
-`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N, O e P concluíram suas auditorias documentais. `F-022` não foi aberto. A auditoria integral está `COMPLETED / PASS / 23 OF 23`. Q foi adjudicado como elegível, a baseline final foi capturada, a definição funcional foi concluída e consolidada e `PER-002` avançou por gates separados até uma referência interativa pós-review revalidada. O protótipo foi elegível, autorizado, executado, validado no checkpoint pré-review, revisado pelo Codex, remediado e revalidado com `PASS`. O validator original permanece como evidência histórica `superseded`; a conclusão corrente é governada pela revalidação pós-review. A frente `GIA-COG-001` também completou seu ciclo documental: placement/ownership por `ADR-008`, revisão, remediação, revalidação e promoção canônica. `GIA-COG-001 v0.1.1` é agora a arquitetura cognitiva de referência vigente, sem liberar especializações ou implementação. A frente O/C definiu `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` como mapa lógico-documental canônico, promoveu `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` como mapa funcional de estados e promove `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` como autoridade canônica documental dos fluxos prioritários, sem liberar navegação materializada, wireframes, Design ou Engenharia.
+`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N, O e P concluíram suas auditorias documentais. `F-022` não foi aberto. A auditoria integral está `COMPLETED / PASS / 23 OF 23`. Q foi adjudicado como elegível, a baseline final foi capturada, a definição funcional foi concluída e consolidada e `PER-002` avançou por gates separados até uma referência interativa pós-review revalidada. O protótipo foi elegível, autorizado, executado, validado no checkpoint pré-review, revisado pelo Codex, remediado e revalidado com `PASS`. O validator original permanece como evidência histórica `superseded`; a conclusão corrente é governada pela revalidação pós-review. A frente `GIA-COG-001` também completou seu ciclo documental: placement/ownership por `ADR-008`, revisão, remediação, revalidação e promoção canônica. `GIA-COG-001 v0.1.1` é agora a arquitetura cognitiva de referência vigente, sem liberar especializações ou implementação. A frente O/C definiu `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` como mapa lógico-documental canônico, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` como mapa funcional de estados, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` como autoridade canônica documental dos fluxos prioritários e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` como Navigation Materialization canônica documental pré-wireframe, sem liberar Authenticated Wireframes, Design ou Engenharia.
 
 ```text
 AUDITORIA INTEGRAL
