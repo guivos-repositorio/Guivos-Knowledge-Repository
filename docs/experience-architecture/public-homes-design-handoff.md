@@ -6,7 +6,7 @@ version: 1.6.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: post_audit_design_handoff_release_granted_pre_execution
+maturity: v6_human_designer_ai_assisted_handoff_candidate
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -55,7 +55,7 @@ DESIGN PRODUCTION READINESS
 → GOVERNADO POR GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
 
 V5 SNAPSHOT / PACOTE EXTERNO
 → EMITTED / MATERIALIZED / VALIDATED
@@ -110,8 +110,12 @@ Este documento **não desenha as páginas** e não determina solução visual fi
 GKR
 → define significado, função, narrativa, fronteiras, Source Locks e invariantes
 
-DESIGN / FIGMA MAKE / FERRAMENTA EQUIVALENTE
-→ produz exploração visual fora desta frente canônica
+DESIGNER / FERRAMENTAS DE DESIGN
+→ produz e cura a exploração visual fora desta frente canônica
+
+IA DE APOIO
+→ pode auxiliar leitura, ideação e criação candidata
+→ não possui autoridade canônica
 
 VALIDAÇÃO HUMANA
 → confronta forma e significado contra o GKR
@@ -640,12 +644,18 @@ HANDOFF / MÉTODO
 VISUAL IDENTITY
 → DESIGN-OWNED / NOT CANONICALLY PRE-LOCKED
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ METHOD DEFINED
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+V6 DOCUMENTARY SOURCE
+→ UNDER FINALIZATION
 
-FINAL FIGMA PRODUCTION
-→ SUBJECT TO PROTOTYPE APPROVAL + FINAL ACCEPTANCE CONTRACT
+EXTERNAL DESIGN EXECUTION
+→ HOLD UNTIL V6 SNAPSHOT
+
+AI SUPPORT
+→ OPTIONAL / NON-AUTHORITATIVE
+
+OFFICIAL FIGMA
+→ DESIGNER-CREATED / DESIGNER-CURATED
+→ SUBJECT TO HUMAN DIRECTION REVIEW + FINAL ACCEPTANCE
 
 IMPLEMENTATION / PRODUCTION
 → NOT RELEASED BY THIS HANDOFF
