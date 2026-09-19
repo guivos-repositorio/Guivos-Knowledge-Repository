@@ -84,17 +84,26 @@ Este documento **não autoriza**:
 - início de nova UXA;
 - materialização da experiência autenticada de Organização ou Coletivo.
 
-Estado desta frente:
+Estado vigente de consumo:
 
 ```text
-HOME O/C
-→ DOCUMENTALMENTE RECONSTRUÍDA PRÉ-MATERIALIZAÇÃO
+HOME O/C MASTER
+→ ACTIVE / DESIGN-INPUT-READY
 
 AUDITORIA INTEGRAL
-→ EM CURSO
+→ COMPLETED / PASS
 
-MATERIALIZAÇÃO VISUAL NOVA
-→ NÃO AUTORIZADA
+PUBLIC HOME DESIGN PRODUCTION RELEASE
+→ GRANTED BY COMMON AUTHORITY
+
+DESIGN CREATION
+→ DESIGNER-LED / MANUAL-FIRST
+
+AI
+→ OPTIONAL
+
+AUTHENTICATED O/C HIGH-FIDELITY
+→ SEPARATE GATE / NOT_GRANTED
 
 UXA-102 / V5
 → NOT_STARTED
@@ -104,12 +113,9 @@ PRODUCT ENGINEERING
 
 PMF
 → NOT VALIDATED
-
-PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
-→ BLOCKED UNTIL AUDIT CLOSES
 ```
 
-A existência de Source Locks, handoffs, snapshots, pacotes generativos ou decisões de Design emitidos em checkpoints anteriores não os promove a baseline visual vigente durante a auditoria.
+Source Locks, handoffs, snapshots e decisões de Design de checkpoints anteriores preservam proveniência, mas não substituem o pacote vigente nem criam baseline visual automática.
 
 ```text
 ARTEFATO DE DESIGN EXISTENTE
@@ -1667,49 +1673,23 @@ Ideia fundamental:
 
 Esta autoridade encerra-se na arquitetura narrativa, semântica e funcional pública.
 
-Permanecem bloqueados até autorização explícita posterior ao fechamento dos gates aplicáveis:
-
-- wireframe;
-- Figma;
-- SVG;
-- protótipo;
-- grid e layout;
-- tipografia;
-- fotografia e vídeo finais;
-- sistema visual;
-- componentes;
-- microinterações;
-- implementação;
-- disponibilidade operacional;
-- preços ou planos;
-- cadastro;
-- onboarding;
-- Marketing/GTM;
-- UXA-102/V5;
-- primeira tela autenticada da Pessoa após a Home;
-- qualquer materialização autenticada de Organização ou Coletivo.
+O Design público das Homes está governado pela autoridade comum de release e pelo pacote vigente; este Master, isoladamente, não autoriza implementação, publicação, disponibilidade operacional, pricing, cadastro/onboarding, GTM, UXA-102/V5 ou materialização autenticada de Organização/Coletivo.
 
 ```text
-PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
-→ BLOCKED UNTIL AUDIT CLOSES
-→ NÃO DEFINIR NESTE LOTE
+PUBLIC HOME O/C DESIGN
+→ GOVERNED BY COMMON PUBLIC-HOMES RELEASE
+
+AUTHENTICATED O/C HIGH-FIDELITY
+→ SEPARATE GOVERNED GATE
+→ NOT_GRANTED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
 ```
 
-O histórico contém decisões procedimentais diferentes sobre Design e wireframe. Elas pertencem aos respectivos checkpoints.
+O histórico contém decisões procedimentais diferentes sobre Design e wireframe. Elas pertencem aos respectivos checkpoints e não substituem o estado vigente.
 
-Durante a auditoria integral vigente:
-
-```text
-HANDOFF ANTIGO
-SOURCE LOCK ANTIGO
-PACOTE GENERATIVO ANTIGO
-SNAPSHOT ANTIGO
-DECISÃO DE DESIGN DE CHECKPOINT ANTERIOR
-
-≠ AUTORIZAÇÃO ATUAL DE MATERIALIZAÇÃO
-```
-
-Qualquer futura retomada de Design exige novo ato governado e reconciliação com este Master e com o estado pós-auditoria.
+Qualquer nova execução deve consumir este Master e as autoridades comuns vigentes.
 
 Uma futura materialização deve ser rejeitada ou revisada se:
 
@@ -1811,7 +1791,7 @@ HOME O/C
 
 Estado deste documento:
 
-> **DOCUMENTO MESTRE RECONSTRUÍDO DOCUMENTALMENTE — MATERIALIZAÇÃO NÃO AUTORIZADA; AUDITORIA INTEGRAL AINDA EM CURSO.**
+> **DOCUMENTO MESTRE ACTIVE / DESIGN-INPUT-READY — AUDITORIA INTEGRAL CONCLUÍDA — DESIGN PÚBLICO GOVERNADO PELAS AUTORIDADES COMUNS — MATERIALIZAÇÃO AUTENTICADA O/C PERMANECE EM GATE SEPARADO.**
 
 ---
 
