@@ -170,6 +170,9 @@ ORGANIZAÇÃO
 - [PER-002 — Entrega do Protótipo Interativo](experience-architecture/per-002-interactive-prototype-delivery.md)
 - [PER-002 — Validação Pré-Review do Protótipo Interativo — Evidência Histórica](experience-architecture/per-002-interactive-prototype-validation.md)
 - [PER-002 — Revalidação Pós-Review do Protótipo Interativo](experience-architecture/per-002-interactive-prototype-post-review-revalidation.md)
+- [O/C — Autorização Governada de Wireframes Low-Fidelity](experience-architecture/organizations-collectives-authenticated-wireframe-authorization.md)
+- [O/C — Entrega de Wireframes Autenticados Low-Fidelity](experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md)
+- [O/C — Validação Funcional dos Wireframes Autenticados Low-Fidelity](experience-architecture/organizations-collectives-authenticated-low-fidelity-functional-validation.md)
 
 A navegação do repositório não deve ser confundida com a arquitetura de informação de produto, Journey, experiência autenticada ou UI.
 
