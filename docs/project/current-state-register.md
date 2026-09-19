@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.48.12
+version: 3.48.13
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -2423,16 +2423,16 @@ COMMON SOURCES
 → 5
 
 HOME-SPECIFIC UNIQUE SOURCES
-→ 22
+→ 24
 
 CANONICAL SOURCES
-→ 27
+→ 29
 
 READ-FIRST GUIDES
 → 8
 
 TOTAL EXTERNAL FILES
-→ 35
+→ 37
 
 MARKDOWN
 → PRIMARY HUMAN + AI FORMAT
