@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.41.0
+id: ROADMAP-13.42.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.41.0
+version: 13.42.0
 owner: Guivos
 last_updated: 2026-09-18
 normative: true
@@ -34,6 +34,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-GLOBAL-UPDATE-2026-09-18-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-OC-NARR-001
@@ -62,7 +63,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.42.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.43.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -157,7 +158,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | O/C fluxos prioritários | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0** |
 | O/C elegibilidade de Navigation Materialization | **PASS / ACTIVE / CANONICAL / GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0** |
 | O/C Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0** |
-| O/C wireframes low-fidelity | **AUTHORIZATION GRANTED / DELIVERY v0.1.0 EXECUTED / FUNCTIONAL VALIDATION PENDING** |
+| O/C wireframes low-fidelity | **AUTHORIZATION GRANTED / DELIVERY v0.1.0 EXECUTED / VALIDATION v1.0.0 PASS / CURRENT REFERENCE = DELIVERY + VALIDATION** |
 | GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION** |
 | Design das Homes / O/C autenticado | **NOT AUTHORIZED; PER-002-SPECIFIC DESIGN WORK DOES NOT RELEASE O/C OR HOME MATERIALIZATION** |
 
@@ -743,7 +744,8 @@ AUTHENTICATED NAVIGATION MATERIALIZATION
 AUTHENTICATED LOW-FIDELITY WIREFRAMES
 → AUTHORIZATION = GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0 / GRANTED
 → DELIVERY = GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0 / EXECUTED
-→ FUNCTIONAL VALIDATION = NOT_STARTED
+→ FUNCTIONAL VALIDATION = GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 / PASS
+→ CURRENT REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
 
 HIGH-FIDELITY UI / PROTOTYPE
 → NOT AUTHORIZED
@@ -1841,7 +1843,7 @@ RESEARCH OPERATIONAL STATES
 
 A frente Home Masters comprovou elegibilidade de fechamento no HEAD `39277f305fced32ce351c113ab7e7d5d7cc76242`, com `C1–C10 = PASS`, Semantic #991 `SUCCESS`, Mechanical #1236 `SUCCESS`, revisão Codex independente sem finding material e zero threads abertos.
 
-O pacote formal de fechamento foi documentado por `GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0`, `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0` e `GKR-STATE-001 v3.35.0`. Essas referências permanecem como proveniência do fechamento Home Masters; não substituem o estado global corrente `GKR-STATE-001 v3.42.0`.
+O pacote formal de fechamento foi documentado por `GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0`, `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0` e `GKR-STATE-001 v3.35.0`. Essas referências permanecem como proveniência do fechamento Home Masters; não substituem o estado global corrente `GKR-STATE-001 v3.43.0`.
 
 O changeset final da PR #377 passou novamente por Semantic + Mechanical + revisão independente antes do merge governado. A integração foi concluída em `main` pelo merge commit `b39b9427affd350651caa7efbb34f99e374f6709`.
 
@@ -1891,4 +1893,4 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
-Navigation Materialization foi promovida canonicamente após Surface Map + State Map + Priority Flows + eligibility PASS. Os Authenticated Wireframes low-fidelity foram posteriormente autorizados e a primeira entrega `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` foi executada. O próximo gate é a validação funcional dessa entrega; high-fidelity UI, protótipo e Product Engineering continuam não autorizados.
+Navigation Materialization foi promovida canonicamente após Surface Map + State Map + Priority Flows + eligibility PASS. Os Authenticated Wireframes low-fidelity foram posteriormente autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O ciclo low-fidelity está fechado; uma eventual frente high-fidelity depende primeiro de adjudicação própria de elegibilidade. High-fidelity UI, protótipo e Product Engineering continuam não autorizados.
