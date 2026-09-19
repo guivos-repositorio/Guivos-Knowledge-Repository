@@ -4,9 +4,9 @@ title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
 version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-08
+last_updated: 2026-09-19
 normative: false
-maturity: reconciled_architecture_pre_materialization
+maturity: design_input_ready_human_first_ai_optional
 depends_on:
   - GEB-P01
   - GKR-CHRISTIAN-FOUNDATION-001
