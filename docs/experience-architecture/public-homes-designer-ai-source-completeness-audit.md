@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.2.4
+version: 0.3.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -116,7 +116,7 @@ Uma Home somente pode ser considerada pronta para entrega à designer quando seu
 | C14 | Nenhum documento do pacote contém estado temporal superado capaz de induzir execução errada? |
 | C15 | Markdown permanece fonte primária e adequada a consumo humano + IA? |
 
-## 5. Inventário das oito Homes
+## 5. Inventário baseline antes da remediação
 
 | Home | Master | Estado governado |
 |---|---|---|
@@ -128,6 +128,21 @@ Uma Home somente pode ser considerada pronta para entrega à designer quando seu
 | Ads | `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` | REAUDIT |
 | Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0` | REMEDIATION REQUIRED |
 | Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1` | REMEDIATION REQUIRED |
+
+> Esta tabela preserva a **baseline histórica da auditoria inicial**. Ela não representa o conjunto corrente após as remediações.
+
+### 5.1 Inventário corrente do candidato
+
+| Home | Fonte mestre corrente | Estado |
+|---|---|---|
+| Pessoa | `GKR-UX-HOME-MASTER-001 v1.0.2` | RECONCILED |
+| Organizações e Coletivos | `GKR-UX-HOME-OC-MASTER-001 v1.0.0` | RECONCILED |
+| Mall | `GKR-UX-HOME-MALL-MASTER-001 v1.1.0` | RECONCILED |
+| Travel | `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.1` | RECONCILED |
+| Media | `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` | RECONCILED |
+| Ads | `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` | RECONCILED |
+| Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.1` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.0` | RECONCILED |
+| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.0` | RECONCILED |
 
 ## 6. Findings iniciais comprovados
 
@@ -350,7 +365,7 @@ A adjudicação histórica permanece proveniência; não é mais necessária par
 O template comum foi promovido para:
 
 ```text
-GKR-UX-HOMES-GENINPUT-001 v2.1.5
+GKR-UX-HOMES-GENINPUT-001 v2.2.0
 → TOOL-NEUTRAL
 → AI OPTIONAL
 → MANUAL DESIGN DOES NOT REQUIRE GENERATIVE EXECUTION RECORD
@@ -362,6 +377,33 @@ Os guias v5 permanecem congelados como snapshot histórico. Os guias v6 serão e
 
 O artefato Figma experimental anterior permanece fora do corpus, sem autoridade e sem função no handoff.
 
+## 10.1 Review independente do candidato — adjudicação
+
+Review executado sobre o HEAD `a3c1d182caa9a63136e97151e3eb5a54a41a97e2`:
+
+```text
+REVIEW
+→ 5257833716
+
+P1 — BUSINESS SOURCE LOCK
+→ REMEDIATED
+→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.0
+→ DESIGNER-FIRST / AI-OPTIONAL
+→ NO FROZEN VISUAL REPRESENTATION
+
+P1 — V5 MANIFEST VERSIONS
+→ REMEDIATED
+→ FROZEN V5 ROWS RESTORED TO EMITTED VERSIONS
+→ CURRENT VERSIONS LIVE ONLY IN V6 CANDIDATE
+
+P2 — CURRENT-STATE MASTER VERSIONS
+→ REMEDIATED
+→ TRAVEL = v1.1.1
+→ BUSINESS = v1.1.1
+```
+
+As remediações alteram o HEAD; portanto os findings somente podem ser considerados encerrados após **Semantic + Mechanical no novo HEAD** e **novo review independente**.
+
 ## 11. Estado candidato
 
 ```text
@@ -371,7 +413,8 @@ C1–C15
 → 120 / 120
 
 OPEN MATERIAL FINDINGS
-→ 0
+→ 0 KNOWN AFTER REMEDIATION
+→ EXACT-HEAD REVALIDATION REQUIRED
 
 DESIGNER CREATIVE FREEDOM
 → PRESERVED
@@ -392,7 +435,7 @@ SEMANTIC / MECHANICAL
 → REQUIRED ON EXACT FINAL HEAD
 
 INDEPENDENT REVIEW
-→ REQUIRED ON EXACT FINAL HEAD
+→ RE-REVIEW REQUIRED ON EXACT FINAL HEAD
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
