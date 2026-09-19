@@ -409,7 +409,7 @@ A ferramenta não deve promover qualquer classe a `CANONICAL` por inferência. M
 
 Podem ser criados livremente, sem baseline visual pré-imposta pelo GKR: paleta, tipografia, imagens, ilustração, iconografia, composição, grid, respiro, linguagem gráfica, atmosfera, motion, componentes e tom de voz/copy não congelada.
 
-Conteúdo verbal proposto pela designer ou pela IA deve ser rotulado como `CONTENT CANDIDATE` até aprovação humana. O mesmo vale para qualquer direção visual: geração não equivale a aprovação.
+Conteúdo verbal proposto pela designer ou pela IA deve ser rotulado como `CONTENT_CANDIDATE` até aprovação humana. O mesmo vale para qualquer direção visual: geração não equivale a aprovação.
 
 Imagens podem ser selecionadas, produzidas ou geradas criativamente. Quando uma imagem puder ser interpretada como evidência de pessoa, parceiro, case, oferta, destino ou operação real, ela deve ser tratada como conceitual/ilustrativa até haver lastro verificável.
 
