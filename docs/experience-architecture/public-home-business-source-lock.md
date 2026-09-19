@@ -683,7 +683,7 @@ ESCALA GLOBAL
 
 ## 23. Liberdades futuras de Design
 
-Somente após autorização procedimental específica para incluir Business na fase de Design, poderão ser explorados:
+Quando o início operacional da designer externa for liberado após o gate documental corrente, poderão ser explorados:
 
 - grid;
 - composição;
@@ -745,9 +745,9 @@ Não transformar exemplos em capacidades vigentes.
 Quando houver autorização de Design, poderão ser utilizados rótulos explícitos, por exemplo:
 
 - `[EMPRESA — EXEMPLO NÃO REAL]`;
-- `[DASHBOARD INTELLIGENCE — CONCEITUAL]`;
-- `[KPI — EXEMPLO / NÃO REAL]`;
-- `[GRÁFICO — DADO ILUSTRATIVO]`;
+- `[REPRESENTAÇÃO INTELLIGENCE — CONCEITUAL]`;
+- `[INDICADOR — EXEMPLO / NÃO REAL]`, quando a designer optar por esse recurso;
+- `[VISUALIZAÇÃO — DADO ILUSTRATIVO]`, quando aplicável;
 - `[PREÇO — A DEFINIR]`;
 - `[LIMITE DO PLANO — A DEFINIR]`;
 - `[MOEDA — CONFORME MERCADO]`;
@@ -776,7 +776,7 @@ Continuam fora deste Source Lock:
 - regras fiscais e tributárias;
 - arquitetura técnica do checkout/contratação;
 - URL pública, disponibilidade operacional e condição de lançamento da Home Guivos Intelligence;
-- dashboard final e KPIs exatos do Intelligence;
+- representação visual final do Intelligence e métricas exatas, quando aplicáveis;
 - direção visual final da Home Business.
 
 A materialização futura deve sinalizar essas lacunas, não resolvê-las por inferência.
