@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.48.11
+version: 3.48.12
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -1268,7 +1268,7 @@ Uma Organização pode possuir relação comercial Business e Ads, mas isso não
 
 ## 12. Guivos Intelligence
 
-`GPA-006 v2.0.0` permanece autoridade superior do Produto Especializado Guivos Intelligence.
+`GPA-006 v2.0.1` permanece autoridade superior do Produto Especializado Guivos Intelligence.
 
 Unidade de valor:
 
@@ -2409,10 +2409,11 @@ Remediações materiais do candidato:
 - Mall Master → v1.1.1 reconciliado para produção externa de Design;
 - Travel Master → v1.1.3 reconciliado para produção externa de Design;
 - Business Master → v1.1.3 reconciliado para produção externa de Design;
-- Business Source Lock → v1.1.5 sincronizado com Business Master v1.1.3 e Authority Contract v1.0.2;
-- Intelligence Master → v0.2.4 reconciliado para produção externa de Design;
-- Intelligence Source Lock → v1.1.4 reconciliado para designer-first / IA opcional;
-- Intelligence Design Handoff → v1.1.5 reconciliado para designer-first / IA opcional;
+- Business Source Lock → v1.1.6 sincronizado com Business Master v1.1.3 e Authority Contract v1.0.3;
+- Intelligence Master → v0.2.5 reconciliado para produção externa de Design;
+- Intelligence Source Lock → v1.1.5 reconciliado para designer-first / IA opcional;
+- Intelligence Design Handoff → v1.1.6 reconciliado para designer-first / IA opcional;
+- Intelligence Product Source Lock → v1.0.1 reconciliado para tratar o estado pré-Home como proveniência histórica, não gate corrente;
 - artefato Figma experimental anterior → `ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE`.
 
 O pacote v6 candidato está definido em `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001`:
