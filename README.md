@@ -18,7 +18,7 @@ Antes de usar qualquer documento isolado, consulte:
 A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.47.0
+GKR-STATE-001 3.48.0
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -62,9 +62,13 @@ O/C LOW-FIDELITY FUNCTIONAL VALIDATION → PASS / v1.0.0
 O/C CURRENT LOW-FIDELITY REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
 O/C HIGH-FIDELITY ELIGIBILITY → PASS / v1.0.0
 O/C HIGH-FIDELITY DESIGN AUTHORIZATION → NOT_GRANTED
-PUBLIC HOMES DESIGN PRODUCTION READINESS → ACTIVE / V5 SNAPSHOT EMITTED / DESIGN RELEASE GRANTED
-PUBLIC HOMES DESIGN PRODUCTION RELEASE → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
-PUBLIC HOMES FIGMA MAKE → AUTHORIZED TO EXECUTE / NOT_STARTED
+PUBLIC HOMES DESIGN PRODUCTION RELEASE → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
+PUBLIC HOMES SOURCE READINESS AUDIT → IN_PROGRESS / GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
+PUBLIC HOMES V5 → FROZEN / HISTORICAL FOR NEW DESIGN START
+PUBLIC HOMES V6 → NOT_EMITTED
+EXTERNAL DESIGNER START → DEFERRED UNTIL FINAL SOURCE READINESS PASS
+AI SUPPORT FOR DESIGN → OPTIONAL / SOURCE-BOUND
+GKR / CHATGPT FIGMA EXECUTION → NOT TO BE PERFORMED
 VISUAL IDENTITY PRE-LOCK → NOT REQUIRED / DESIGN-OWNED
 GKR GLOBAL UPDATE → CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
 FUNCTIONAL ADVANCEMENT → HIGH-FIDELITY ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED
@@ -164,6 +168,7 @@ ORGANIZAÇÃO
 - [Home Principal / Pessoa](docs/experience-architecture/public-home-master-document.md)
 - [Home de Organizações e Coletivos](docs/experience-architecture/public-home-organizations-collectives-master-document.md)
 - [Homes dos Produtos Especializados](docs/experience-architecture/public-specialized-homes-reconciliation.md)
+- [Auditoria Final de Prontidão das Fontes das Homes para Designer e AI](docs/experience-architecture/public-homes-designer-ai-source-readiness-audit.md)
 - [PER-002 — Elegibilidade de Materialização e Handoff para Design](docs/experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md)
 - [PER-002 — Autorização Governada de Design Low-Fidelity](docs/experience-architecture/per-002-design-authorization.md)
 - [PER-002 — Materialização Low-Fidelity Funcional de Design](docs/experience-architecture/per-002-low-fidelity-design-delivery.md)
