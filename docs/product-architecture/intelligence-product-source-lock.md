@@ -832,7 +832,9 @@ Uma fonte consultada pontualmente não se torna automaticamente parte permanente
 
 ## 31. Checklist de integridade da Home
 
-Antes de iniciar a arquitetura conceitual da Home Intelligence, confirmar:
+Este checklist nasceu no estágio pré-Home e permanece apenas como verificação de integridade da autoridade de produto. No estado corrente, **não antecede, não bloqueia e não reabre** o Documento Mestre, o Home Source Lock, o Design Handoff ou o release externo de Design já existentes.
+
+Ao reutilizar este Source Lock no contexto vigente da Home Intelligence, confirmar:
 
 - `GPA-006 v2.0.1` permanece vigente;
 - este Source Lock permanece vigente;
