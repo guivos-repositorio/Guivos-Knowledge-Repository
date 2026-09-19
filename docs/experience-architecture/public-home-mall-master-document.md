@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MALL-MASTER-001
 title: Home Pública — Guivos Mall — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-12
+last_updated: 2026-09-19
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-002
@@ -218,6 +218,23 @@ inventário + marcas + transparência + autoridade
 
 11 — ECOSSISTEMA E ESCOLHA
 Mall como parte da Guivos + CTAs finais
+```
+
+Regra de leitura do Movimento 10:
+
+```text
+MOVIMENTO 10
+→ PROVA E CONFIANÇA
+
+10A — PROVA
+→ demonstra realidade do Mall
+
+10B — CONFIANÇA
+→ explica condições para escolher com clareza e autonomia
+
+10A + 10B
+→ UM ÚNICO MOVIMENTO SEMÂNTICO
+→ NÃO CRIAM UM 12º MOVIMENTO
 ```
 
 ## 10. Movimento 01 — Abrir o horizonte
@@ -582,7 +599,7 @@ O Gift Card Guivos não deve ser apresentado como pontos, evolução, gamificaç
 
 Este documento não presume regras específicas de valor, resgate, validade, transferência ou cobertura do Gift Card que não estejam autorizadas em produto próprio.
 
-## 24. Movimento 10 — Prova
+## 24. Movimento 10A — Prova — componente de “Prova e Confiança”
 
 A Home precisa demonstrar que o Mall é concreto, não apenas afirmar que ele existe.
 
@@ -618,7 +635,7 @@ A presença de produtos de uma marca no catálogo não autoriza a Guivos a apres
 
 Essa distinção é parte da política de confiança e precisão da Home.
 
-## 26. Movimento 10 — Confiança
+## 26. Movimento 10B — Confiança — componente de “Prova e Confiança”
 
 Direção:
 
