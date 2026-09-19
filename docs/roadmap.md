@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.40.0
+id: ROADMAP-13.41.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.40.0
+version: 13.41.0
 owner: Guivos
 last_updated: 2026-09-18
 normative: true
@@ -32,6 +32,8 @@ related:
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-GLOBAL-UPDATE-2026-09-18-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-OC-NARR-001
@@ -60,7 +62,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.41.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.42.0` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -155,7 +157,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | O/C fluxos prioritários | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0** |
 | O/C elegibilidade de Navigation Materialization | **PASS / ACTIVE / CANONICAL / GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0** |
 | O/C Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0** |
-| O/C wireframes autenticados | **NOT STARTED / NOT RELEASED** |
+| O/C wireframes low-fidelity | **AUTHORIZATION GRANTED / DELIVERY v0.1.0 EXECUTED / FUNCTIONAL VALIDATION PENDING** |
 | GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION** |
 | Design das Homes / O/C autenticado | **NOT AUTHORIZED; PER-002-SPECIFIC DESIGN WORK DOES NOT RELEASE O/C OR HOME MATERIALIZATION** |
 
@@ -738,10 +740,12 @@ AUTHENTICATED NAVIGATION MATERIALIZATION
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 → PRODUCT MENU VISUAL NOT DEFINED
 
-MAIN AUTHENTICATED WIREFRAMES
-→ NOT STARTED
+AUTHENTICATED LOW-FIDELITY WIREFRAMES
+→ AUTHORIZATION = GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0 / GRANTED
+→ DELIVERY = GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0 / EXECUTED
+→ FUNCTIONAL VALIDATION = NOT_STARTED
 
-DESIGN / UI / PROTOTYPE
+HIGH-FIDELITY UI / PROTOTYPE
 → NOT AUTHORIZED
 
 PRODUCT ENGINEERING
@@ -1883,4 +1887,4 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
-Navigation Materialization foi promovida canonicamente após Surface Map + State Map + Priority Flows + eligibility PASS. O próximo estágio downstream são os Authenticated Wireframes, ainda `NOT STARTED / NOT RELEASED`. A Navigation Materialization canônica não autoriza, por inferência, wireframes, Design, UI, protótipo ou Product Engineering.
+Navigation Materialization foi promovida canonicamente após Surface Map + State Map + Priority Flows + eligibility PASS. Os Authenticated Wireframes low-fidelity foram posteriormente autorizados e a primeira entrega `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` foi executada. O próximo gate é a validação funcional dessa entrega; high-fidelity UI, protótipo e Product Engineering continuam não autorizados.
