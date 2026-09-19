@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
-title: Homes Públicas — Prontidão de Produção de Design e Contrato Figma/IA
+title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.0.1
+version: 2.0.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: post_audit_design_production_readiness_release_granted_pre_execution
+maturity: v6_documentary_source_finalization_manual_designer_ai_assisted
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -29,11 +29,11 @@ related:
   - GOG-001
 ---
 
-# Homes Públicas — Prontidão de Produção de Design e Contrato Figma/IA
+# Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 
 ## 1. Finalidade
 
-Esta autoridade prepara as oito Homes públicas da Guivos para uma contratação real de Design em que Figma Make ou ferramenta equivalente pode ser usada para prototipação antes da construção definitiva no Figma.
+Esta autoridade prepara as oito Homes públicas da Guivos para uma contratação real de Design conduzida por designer humana. Sistemas de IA podem ser usados opcionalmente para leitura, síntese, ideação, Content Design candidato, referências/assets candidatos e autoauditoria, sem substituir a autoria da designer.
 
 O objetivo é reduzir a zero os findings materiais documentais antes do release de produção, sem transformar documentação em direção artística.
 
@@ -68,7 +68,7 @@ Pertencem à liberdade criativa da designer:
 
 Não existe obrigação de reproduzir visual histórico, snapshot antigo, palette anterior, fonte anterior ou estética pré-existente.
 
-Depois da aprovação humana da direção de protótipo, a solução escolhida passa a ser a baseline criativa daquela entrega e deve ser documentada no Figma final. Mudança material posterior de conceito de Hero, linguagem visual, arquitetura de navegação, composição global ou direção criativa exige nova aprovação humana antes do aceite final; refinamentos não materiais permanecem sob autonomia da designer.
+Depois da aprovação humana da direção criativa, a solução escolhida passa a ser a baseline criativa daquela entrega e deve ser documentada pela designer no Figma final. Mudança material posterior de conceito de Hero, linguagem visual, arquitetura de navegação, composição global ou direção criativa exige nova aprovação humana antes do aceite final; refinamentos não materiais permanecem sob autonomia da designer.
 
 ## 4. O que permanece governado
 
@@ -223,11 +223,11 @@ FINAL EXACT-HEAD GATE
 → STILL REQUIRED
 ```
 
-A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente no Figma Make.
+A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente no sistema de IA de apoio.
 
 ## 7. Regra de isolamento para IA
 
-Uma execução de Figma Make trabalha uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente.
+Uma execução de sistema de IA de apoio trabalha uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente.
 
 A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + quatro fontes comuns + fontes específicas daquela Home.
 
@@ -235,7 +235,7 @@ Output inicial obrigatório: `EXPLORAÇÃO / NÃO CANÔNICA`.
 
 ## 8. Classes obrigatórias de informação
 
-Toda informação relevante usada por humano, Figma Make ou ferramenta equivalente deve estar tratável em uma destas oito classes:
+Toda informação relevante usada por humano, sistema de IA de apoio ou ferramenta equivalente deve estar tratável em uma destas oito classes:
 
 - `CANONICAL` — decisão governada que deve ser preservada;
 - `DESIGN_CREATIVE` — campo deliberadamente aberto à criação da designer;
@@ -388,7 +388,7 @@ Regras de integridade:
 - no Figma final, assets externos devem possuir origem/licença ou condição de uso registrada;
 - mídia essencial deve possuir fallback e não pode carregar sozinha o significado da página.
 
-## 10. Figma Make — gate obrigatório de protótipo
+## 10. Sistemas de IA — apoio opcional, nunca gate obrigatório
 
 A exploração generativa antecede a construção definitiva.
 
@@ -401,9 +401,9 @@ Sequência obrigatória:
 5. registrar decisões aceitas, rejeitadas e lacunas;
 6. somente após aprovação humana, construir/refinar o Figma definitivo.
 
-A designer não é obrigada a copiar a proposta do Figma Make. A ferramenta serve para visualizar e testar possibilidades.
+A designer não é obrigada a copiar a proposta do sistema de IA de apoio. A ferramenta serve para visualizar e testar possibilidades.
 
-## 11. Contrato mínimo do Figma definitivo
+## 11. Contrato mínimo da entrega Figma produzida/curada pela designer
 
 O contrato abaixo governa qualidade e editabilidade, não estética.
 
@@ -447,7 +447,7 @@ PERSONALIDADE DIFERENTE
 
 A coerência pode emergir de qualidade, princípios, interação, linguagem e sistema criado pela designer. Não é necessário forçar mesmas cores, mesmos blocos ou mesma composição.
 
-## 13. Critérios de aceite do protótipo
+## 13. Critérios de aceite da direção criativa
 
 Antes de iniciar o Figma definitivo:
 
@@ -539,3 +539,25 @@ FIGMA MAKE EXECUTION
 FINAL FIGMA PRODUCTION
 → NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
 ```
+
+## 17. Correção v6 — autoria humana e completude transversal
+
+A revisão de 19/09/2026 reafirma:
+
+```text
+HUMAN DESIGNER
+→ PRIMARY CREATIVE EXECUTOR
+
+AI
+→ OPTIONAL / NON-AUTHORITATIVE SUPPORT
+
+DIRECT GKR/AI FIGMA MATERIALIZATION
+→ OUT_OF_SCOPE
+```
+
+Pessoa e O/C já explicitavam maior parte das regras transversais. Para eliminar dependência excessiva do contrato comum, todos os oito Masters passam a carregar também um contrato v6 mínimo de consumo para Design/IA: liberdade criativa, responsividade, acessibilidade, `REAL_DATA_REQUIRED`, `PROHIBITED_INFERENCE` e critérios mínimos de prontidão.
+
+O objetivo do v6 é duplo:
+
+1. reduzir a zero a necessidade de a designer reconstruir decisões de produto;
+2. preservar integralmente a liberdade de criar a linguagem visual, sem receber uma solução estética pré-fabricada.
