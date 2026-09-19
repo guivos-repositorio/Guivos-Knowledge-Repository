@@ -210,61 +210,63 @@ Quando houver limitação de tamanho, pode-se utilizar **extrato controlado**, d
 
 ---
 
-## 6. Pacotes autorizados das oito Homes
+## 6. Pacotes de contexto das oito Homes
 
-A execução deve utilizar somente o pacote correspondente à Home em trabalho, salvo ampliação deliberada registrada no Source Lock.
+Quando IA for utilizada, ela deve receber somente o contexto correspondente à Home em trabalho, salvo ampliação deliberada e justificada. A designer pode consumir diretamente o mesmo conjunto documental sem usar IA.
 
-### 6.0 Fontes comuns obrigatórias
+### 6.0 Fontes comuns do candidato v6
 
-Todas as oito Homes recebem exatamente estas quatro autoridades comuns do Manifesto v5:
+Todas as oito Homes recebem as autoridades comuns do Manifesto v6. O contrato de consumo tool-neutral complementa este conjunto:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.5.0` — `docs/experience-architecture/public-homes-design-handoff.md`;
-2. `GKR-UX-HOMES-GENINPUT-001 v2.0.0` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
-3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v2.0.0` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`.
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v2.0.0` — `docs/experience-architecture/public-homes-design-handoff.md`;
+2. `GKR-UX-HOMES-GENINPUT-001 v3.0.0` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
+3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v2.0.0` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.0` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`.
 
-Essas quatro fontes comuns não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso de IA, sequência de execução e critérios de produção/aceite.
+5. `GKR-UX-HOMES-DESIGN-CONSUMPTION-001 v1.0.0` — `docs/experience-architecture/public-homes-design-consumption-contract.md`.
+
+Essas fontes comuns não substituem as autoridades específicas da Home. Elas governam consumo documental, taxonomia operacional, liberdade criativa, uso opcional de IA e boundaries do handoff.
 
 ### 6.1 Home Pública — Pessoa
 
 Fontes específicas:
 
-- `GKR-UX-HOME-MASTER-001 v1.0.2` — `docs/experience-architecture/public-home-master-document.md`;
+- `GKR-UX-HOME-MASTER-001 v1.1.0` — `docs/experience-architecture/public-home-master-document.md`;
 - `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`.
 
 ### 6.2 Home Pública — Organizações e Coletivos
 
 Fontes específicas:
 
-- `GKR-UX-HOME-OC-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
+- `GKR-UX-HOME-OC-MASTER-001 v1.1.0` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
 
 ### 6.3 Home Pública — Guivos Mall
 
 Fontes específicas:
 
-- `GKR-UX-HOME-MALL-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-mall-master-document.md`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-mall-master-document.md`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md`.
 
 ### 6.4 Home Pública — Guivos Travel
 
 Fontes específicas:
 
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-travel-master-document.md`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-travel-master-document.md`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
 
 ### 6.5 Home Pública — Guivos Media
 
 Fontes específicas:
 
-- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-media-master-document.md`;
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-media-master-document.md`;
 - `GPA-005 v1.2.0` — `docs/product-architecture/media.md`.
 
 ### 6.6 Home Pública — Guivos Ads
 
 Fontes específicas:
 
-- `GKR-UX-HOME-ADS-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-ads-master-document.md`;
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-ads-master-document.md`;
 - `GPA-007 v1.3.0` — `docs/product-architecture/ads.md`.
 
 ### 6.7 Home Pública — Guivos Business
@@ -272,7 +274,7 @@ Fontes específicas:
 Fontes específicas:
 
 - `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0` — `docs/experience-architecture/public-home-business-source-lock.md`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-business-master-document.md`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.0` — `docs/experience-architecture/public-home-business-master-document.md`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 - `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.6.0` — `docs/product-architecture/business.md`.
@@ -283,28 +285,29 @@ Fontes específicas:
 
 - `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
 - `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.0` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0` — `docs/product-architecture/intelligence-product-source-lock.md`;
 - `GPA-006 v2.0.0` — `docs/product-architecture/intelligence.md`.
 
-Os antigos GENINPUTs de checkpoints superados não entram como autoridade operacional do v5. A emissão gera um `00-LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL` novo para cada Home, contendo checkpoint, SHAs, fontes, matriz operacional e prompt preenchido.
+Os antigos GENINPUTs de checkpoints superados não entram como autoridade do v6. A emissão pós-merge gerará um `00-LEIA-PRIMEIRO` tool-neutral para cada Home, contendo checkpoint, SHAs, fontes e matriz operacional. Instruções de IA serão opcionais, não parte obrigatória do processo.
 
 ---
 
-## 7. Ordem de autoridade dentro do input
+## 7. Ordem de autoridade no contexto
 
-O prompt deve informar explicitamente à ferramenta que as fontes possuem funções diferentes.
+Quando IA for utilizada, o contexto deve explicitar que as fontes possuem funções diferentes. A mesma ordem orienta a leitura humana da designer.
 
 ```text
-0. LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL DA EMISSÃO
-→ congela checkpoint, lista de fontes, SHAs, objetivo e matriz daquela execução
+0. LEIA-PRIMEIRO DA EMISSÃO
+→ registra checkpoint, fontes, SHAs, classes e boundaries da Home
 → não cria significado novo
 
 1. AUTORIDADES COMUNS
-→ Handoff = processo e boundary da fase
-→ GENINPUT = método de Source Lock / prompt / classes
-→ Readiness = contrato de produção e aceite Figma
-→ Operational Flow = sequência sistema de IA de apoio → aprovação → Figma definitivo → aceite
+→ Design Consumption = separação GKR / Designer / IA e boundary tool-neutral
+→ Handoff = processo de consumo e preservação semântica
+→ GENINPUT = contrato opcional de contexto para IA / classes
+→ Readiness = critério documental de prontidão
+→ Operational Flow = compreensão humana → criação da designer → IA opcional → revisão humana
 
 2. SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE DA HOME, QUANDO EXISTIR
 → congela decisões próprias daquela Home dentro de sua autoridade
