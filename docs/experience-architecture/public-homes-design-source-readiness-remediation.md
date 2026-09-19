@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 title: Homes Públicas — Remediação de Prontidão Documental para Designer e IA
 status: draft
-version: 0.7.0
+version: 0.8.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: source_readiness_remediation_in_progress_person_oc_mall_travel_media_ads_pass
+maturity: source_readiness_remediation_in_progress_seven_homes_pass
 depends_on:
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-GENINPUT-001
@@ -349,8 +349,8 @@ NEW EXTERNAL SNAPSHOT
 | Travel | **SOURCE_READY / PASS** | 0 |
 | Media | **SOURCE_READY / PASS** | 0 |
 | Ads | **SOURCE_READY / PASS** | 0 |
-| Business | UNDER_AUDIT | — |
-| Intelligence | NOT_YET_AUDITED | — |
+| Business | **SOURCE_READY / PASS** | 0 |
+| Intelligence | UNDER_AUDIT | — |
 
 Home Pessoa foi fechada após:
 - reconciliação do Movimento 06 no contrato pós-Media;
@@ -400,6 +400,15 @@ Home Ads foi fechada após:
 - separação entre solução conceitual, inventário, pricing e performance;
 - contratos de autoridade com superfícies anfitriãs;
 - estados de qualificação, inelegibilidade e ausência de pricing público;
+- acessibilidade/mobile/fallback;
+- matriz operacional e brief para designer/IA;
+- confirmação de zero gap semântico material.
+
+Home Business foi fechada após:
+- reconciliação contra GPA-004 v1.6.0, Source Lock, conversão e contratos de autoridade;
+- remoção da prescrição visual obrigatória de dashboard/KPIs para Intelligence;
+- atualização do Source Lock de checkpoint de seis Homes para a frente atual de oito;
+- contratos de planos, configurador, contratação e modelos de implementação;
 - acessibilidade/mobile/fallback;
 - matriz operacional e brief para designer/IA;
 - confirmação de zero gap semântico material.
