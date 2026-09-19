@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.5.1
+version: 1.6.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -134,7 +134,7 @@ A execução somente fica liberada quando coexistirem:
 
 Depois desse release, podem ser executados:
 
-- exploração em Figma Make e ferramentas equivalentes;
+- exploração em sistema de IA de apoio e ferramentas equivalentes;
 - arquitetura visual;
 - wireframes de baixa fidelidade;
 - exploração de UX e direção visual;
@@ -170,7 +170,7 @@ A existência deste documento, isoladamente, não significa que um snapshot de e
 
 > **Ferramentas generativas são instrumentos de exploração e materialização, não fontes de decisão sobre a arquitetura das Homes.**
 
-Uma solução visual produzida por IA, Figma Make, plugin, template, benchmark ou referência externa não se torna canônica por ter sido gerada. Somente após validação humana contra o GKR uma direção pode ser promovida.
+Uma solução visual produzida por IA, sistema de IA de apoio, plugin, template, benchmark ou referência externa não se torna canônica por ter sido gerada. Somente após validação humana contra o GKR uma direção pode ser promovida.
 
 ---
 
@@ -618,7 +618,7 @@ VALIDAÇÃO HUMANA
 
 ## 19. Síntese
 
-> **O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração. A validação reconecta forma e significado.**
+> **O GKR governa o significado. Design governa a materialização. Sistemas de IA podem ampliar leitura, ideação e criação assistida; a designer mantém autoria e decisão. A validação reconecta forma e significado.**
 
 A versão `1.3.0` incorporou formalmente a Home Pública — Guivos Intelligence ao Handoff comum, elevando a governança de sete para oito Homes sem iniciar Design nem emitir, por aquele ato isolado, um novo snapshot de entrega.
 
@@ -652,3 +652,24 @@ IMPLEMENTATION / PRODUCTION
 ```
 
 Este documento governa **como** o handoff deve ocorrer. A liberação efetiva foi concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0` sobre o pacote v5 já emitido e validado.
+
+## 21. Regra de autoria do Design — v6
+
+```text
+GKR
+→ ENTREGA CONTEXTO COMPLETO E GOVERNADO
+
+DESIGNER
+→ CRIA / CURA MANUALMENTE A SOLUÇÃO OFICIAL
+
+IA
+→ APOIO OPCIONAL
+
+FIGMA OFICIAL
+→ SOB AUTORIA E CONTROLE DA DESIGNER / GUIVOS
+
+GKR/IA → FIGMA OFICIAL
+→ SEM MATERIALIZAÇÃO DIRETA NESTE FLUXO
+```
+
+A designer pode consultar arquivos históricos como `guivos.com 2.0` e benchmarks externos, mas nenhum deles substitui as fontes governadas nem reduz sua liberdade criativa.
