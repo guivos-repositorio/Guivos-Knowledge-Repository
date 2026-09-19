@@ -2,11 +2,11 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.2
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-08
 normative: false
-maturity: reconciled_architecture_pre_materialization
+maturity: source_ready_for_external_design_manual_first_ai_optional
 depends_on:
   - GEB-P01
   - GKR-CHRISTIAN-FOUNDATION-001
@@ -33,6 +33,7 @@ related:
   - GKR-UX-HOME-AUDIT-001
   - GKR-UX-HOME-AUDIT-002
   - GKR-UX-HOME-PERSON-GENINPUT-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 ---
 
 # Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
@@ -1372,3 +1373,337 @@ HOME PÚBLICA
 Estado desta versão:
 
 > **MASTER RECONCILIADO COM AS AUTORIDADES VIGENTES — CONTEÚDO PRESERVADO E ENRIQUECIDO — Q FUNCTIONAL DEFINITION CONSOLIDATED: PRIMEIRA RESPONSABILIDADE AUTENTICADA = CONTINUAÇÃO AUTENTICADA DE PER-002 / PRIMEIRA SUPERFÍCIE DISTINTA DOWNSTREAM = PER-003 — MATERIALIZAÇÃO NOVA NÃO AUTORIZADA POR ESTE DOCUMENTO.**
+
+---
+
+## 39. Prontidão documental para Designer e IA
+
+Esta revisão fecha a auditoria de suficiência da **Home Pública — Pessoa** para consumo externo de Design.
+
+O objetivo desta seção não é definir forma visual. É garantir que uma designer humana — e, opcionalmente, um sistema de IA usado por ela — consiga criar sem reconstruir significado a partir de conversas, histórico disperso ou inferências.
+
+### 39.1 Resultado da auditoria
+
+```text
+HOME PESSOA
+→ SOURCE_READY = PASS
+
+MASTER
+→ GKR-UX-HOME-MASTER-001 v1.1.0
+
+MEDIA RECONCILIATION
+→ GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.1
+
+MATERIAL DOCUMENT GAPS
+→ 0
+
+UNRESOLVED SEMANTIC CONFLICTS
+→ 0
+
+VISUAL IDENTITY PRE-IMPOSED
+→ 0
+
+MANUAL DESIGNER PATH
+→ COMPLETE
+
+OPTIONAL AI PATH
+→ COMPLETE THROUGH COMMON SOURCE LOCK / BRIEF
+```
+
+O único conflito material encontrado nesta auditoria foi a nomenclatura antiga do Movimento 06 no contrato pós-Media. Ele foi reconciliado para **Da Possibilidade à Experiência**.
+
+### 39.2 Evidência de suficiência
+
+| Critério | Evidência no Master | Estado |
+|---|---|---|
+| identidade e papel | §§ 3–6 | PASS |
+| marca e tese | §§ 7–9 | PASS |
+| arquitetura global | §§ 10–14 | PASS |
+| participantes × produtos | §§ 16–18 | PASS |
+| conteúdo e prova | §§ 19–23 | PASS |
+| autonomia e proteções | § 24 | PASS |
+| interação / motion | § 25 | PASS |
+| acessibilidade / robustez | § 26 | PASS |
+| tecnologia / Intelligence | § 28 | PASS |
+| público × protegido | § 29 | PASS |
+| Marketing/GTM | § 30 | PASS |
+| rodapé | § 31 | PASS COM ITENS DELIBERADAMENTE ABERTOS |
+| critérios de aceitação | § 32 | PASS |
+| anti-padrões | § 33 | PASS |
+| questões abertas | § 34 | PASS / NON-BLOCKING |
+| autoridade de fontes | §§ 35–38 | PASS |
+
+### 39.3 Condições que a solução de Design deve tolerar
+
+Estas condições não criam novas superfícies nem novos IDs. São envelopes de robustez que a solução precisa suportar.
+
+#### Condição pública base
+
+- visitante não autenticado;
+- nenhuma personalização presumida;
+- nenhuma informação sobre Momento pessoal;
+- descoberta disponível sem relato;
+- `Iniciar Jornada` disponível como porta própria no Header.
+
+#### Pessoa com relação existente
+
+- `Login` continua rota de retomada;
+- a Home não força onboarding de primeira entrada;
+- a Home pública não precisa assumir estado autenticado para explicar a Guivos.
+
+#### Mídia rica disponível
+
+- vídeo, imagem ou conteúdo editorial podem enriquecer a experiência;
+- mídia não carrega sozinha significado essencial;
+- conteúdo factual continua sujeito a fonte, direitos e contexto.
+
+#### Mídia indisponível / baixa conectividade
+
+- tese, narrativa e CTA essenciais permanecem compreensíveis;
+- fallback não deve exigir reconstrução semântica;
+- ausência de vídeo não reduz a Home a estado incompleto.
+
+#### Reduced motion
+
+- todos os significados permanecem disponíveis;
+- nenhuma progressão essencial depende de animação;
+- transições podem ser simplificadas sem perda narrativa.
+
+#### Evidência real disponível
+
+- utilizar conforme proveniência, contexto, autorização e função narrativa;
+- distinguir Movimento 02, 06 e 09.
+
+#### Evidência real ainda não selecionada
+
+- não inventar case, pessoa, parceiro, métrica, país, resultado ou depoimento;
+- a arquitetura deve permanecer válida sem prova fictícia;
+- placeholder, se usado internamente, deve ser identificável como provisório.
+
+#### Idioma / região ainda não selecionados
+
+- nenhuma localização é inferida;
+- preferência pública de idioma/região pode ser oferecida;
+- a solução deve tolerar expansão e contração de texto por internacionalização.
+
+### 39.4 Matriz operacional específica da Home Pessoa
+
+#### CANONICAL
+
+- Home pública institucional com perspectiva predominante da Pessoa;
+- pergunta-mãe: **“O que se torna possível quando você entra aqui?”**;
+- possibilidade antes de produto;
+- descoberta como motivação inicial;
+- 11 movimentos narrativos;
+- 7 macroexperiências como referência, não obrigação física;
+- Hero = descoberta;
+- Header = acesso persistente;
+- Journey com porta própria em `Iniciar Jornada`;
+- Pessoa ≠ Journey;
+- Organização ≠ Business;
+- participante ≠ produto;
+- Possibilidade ≠ Oportunidade;
+- Intelligence apoia compreensão e não decide pela Pessoa;
+- autonomia transversal;
+- prova com proveniência e causalidade correta;
+- assinatura Guivos = `Possibility, lived.` / `Possibilidade, vivida.` quando utilizada;
+- `Do possível ao vivido.` pertence ao fundador e não é assinatura complementar da Guivos.
+
+#### DESIGN_CREATIVE
+
+A designer possui liberdade para criar:
+
+- tipografia;
+- paleta;
+- fotografia;
+- vídeo;
+- ilustração;
+- iconografia;
+- composição;
+- grid;
+- ritmo;
+- respiro;
+- motion;
+- microinterações;
+- componentes;
+- linguagem gráfica;
+- atmosfera;
+- direção de arte;
+- tratamento visual do Header/Hero/CTAs;
+- agrupamento físico dos movimentos;
+- solução desktop/mobile;
+- progressive disclosure;
+- copy e tom não congelados.
+
+#### CONTENT_CANDIDATE
+
+Permanecem sujeitos a aprovação humana:
+
+- terceira camada final da Hero;
+- CTA exploratório final;
+- headlines de apoio;
+- labels não congelados;
+- microcopy;
+- formulações editoriais;
+- copy pública de fechamento;
+- conteúdo final do rodapé além do link obrigatório `Mapa do Ecossistema`.
+
+#### DESIGN_HYPOTHESIS
+
+Podem ser testados sem virar decisão canônica:
+
+- alternativas de Hero;
+- quantidade de regiões/seções;
+- agrupamento dos 11 movimentos;
+- forma visual das sete macroexperiências;
+- ritmo e densidade;
+- soluções de Header/launcher;
+- progressive disclosure;
+- maneiras de expressar amplitude;
+- representação de relações entre participantes e produtos;
+- forma visual de prova, autoridade e autonomia;
+- soluções responsivas;
+- motion e transições.
+
+#### PROTOTYPE_PLACEHOLDER
+
+Permitido somente quando necessário para testar estrutura:
+
+- histórias;
+- imagens;
+- vídeos;
+- conteúdo editorial;
+- evidências;
+- pessoas;
+- organizações;
+- coletivos;
+- destinos/experiências meramente ilustrativos.
+
+Placeholder deve ser claramente provisório e jamais parecer fato real.
+
+#### REAL_DATA_REQUIRED
+
+Exigem fonte real antes de apresentação factual:
+
+- pessoa real;
+- organização real;
+- coletivo real;
+- parceiro;
+- case;
+- depoimento;
+- país;
+- número de usuários;
+- métrica;
+- resultado;
+- impacto;
+- performance;
+- disponibilidade;
+- operação em produção;
+- preço;
+- relação comercial;
+- conteúdo patrocinado específico.
+
+#### OPEN_QUESTION
+
+Não bloqueiam o início de Design:
+
+- copy pública final;
+- grid;
+- layout;
+- tipografia;
+- paleta;
+- assets específicos;
+- componentes finais;
+- microinterações;
+- breakpoints;
+- solução final do mobile;
+- forma material do Header;
+- quantidade final de regiões técnicas;
+- composição completa do rodapé;
+- disponibilidade operacional;
+- estratégia de lançamento.
+
+Essas questões são abertas por design ou por gate futuro — não por deficiência documental.
+
+#### PROHIBITED_INFERENCE
+
+Não criar ou insinuar:
+
+- Momento pessoal presumido;
+- diagnóstico;
+- recomendação pessoal sem base;
+- transformação garantida;
+- escala inventada;
+- parceria presumida;
+- métrica não sustentada;
+- causalidade exagerada;
+- disponibilidade operacional não comprovada;
+- produto antes da tese;
+- Organização = Business;
+- Pessoa = Journey;
+- Intelligence como autoridade decisora;
+- consumo, pontos, ranking ou streak como proxy de evolução;
+- sete produtos equivalentes como estrutura obrigatória;
+- nove Domínios como diagnóstico ou score;
+- luxo como prova de evolução;
+- tecnologia como protagonista;
+- `Do possível ao vivido.` como assinatura da Guivos;
+- materialização da responsabilidade autenticada de `PER-002` dentro da Home por inferência.
+
+### 39.5 Brief mínimo para a designer
+
+Antes de criar, a designer deve conseguir responder:
+
+1. qual é o papel da Home Pessoa;
+2. qual pergunta governa a experiência;
+3. o que deve ser percebido antes de qualquer produto;
+4. como Hero, Header e Journey se distinguem;
+5. quais são os 11 movimentos;
+6. quais movimentos usam realidade/prova e com que funções diferentes;
+7. quem são os participantes e quem são os produtos;
+8. como autonomia aparece ao longo da experiência;
+9. quais fatos exigem fonte;
+10. o que permanece livre para criação;
+11. o que não pode ser inferido;
+12. como a Home sobrevive sem motion, vídeo, personalização ou alta conectividade.
+
+Se algum desses pontos não puder ser respondido pelas fontes listadas, a criação deve parar e a divergência deve ser registrada.
+
+### 39.6 Uso opcional de IA
+
+Se a designer usar IA, aplicar `GKR-UX-HOMES-GENINPUT-001` como Source Lock + prompt opcional.
+
+O sistema de IA deve receber:
+
+1. esta Home apenas;
+2. autoridades comuns vigentes;
+3. este Master;
+4. `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001`;
+5. matriz operacional desta seção;
+6. objetivo explícito da execução.
+
+Não carregar documentos específicos de outras Homes por conveniência.
+
+### 39.7 Fechamento
+
+```text
+HOME PESSOA
+→ SOURCE_READY = PASS
+
+DESIGNER
+→ CAN START FROM DOCUMENTATION AFTER GLOBAL PACKAGE RELEASE
+
+AI
+→ OPTIONAL
+
+FIGMA MAKE
+→ NOT REQUIRED
+
+VISUAL DIRECTION
+→ DESIGN-OWNED
+
+MATERIAL SEMANTIC GAP
+→ 0
+```
+
+Este `PASS` é específico da suficiência documental da Home Pessoa. Ele não emite o novo pacote global, não libera Product Engineering e não substitui o gate global de `8 / 8 SOURCE_READY`.
