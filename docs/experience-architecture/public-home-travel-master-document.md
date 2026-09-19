@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-TRAVEL-MASTER-001
 title: Home Pública — Guivos Travel — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-08-13
 parents:
@@ -844,3 +844,53 @@ Não há, neste documento, autorização para wireframe ou materialização visu
 Estado:
 
 > **ARQUITETURA CONCEITUAL CONVERGIDA — REGISTRADA COMO DOCUMENTO MESTRE; MATERIALIZAÇÃO VISUAL NÃO AUTORIZADA.**
+
+---
+
+## 40. Contrato de entrada para Design
+
+### 40.1 Autonomia e privacidade
+
+A Home pode inspirar e facilitar acesso sem presumir destino, orçamento, companhia, intenção, localização ou Momento pessoal.
+
+Personalização e recomendação contextual exigem base, autoridade e transparência aplicáveis.
+
+```text
+INSPIRAÇÃO GERAL
+→ NÃO EXIGE PERFIL PESSOAL
+
+RECOMENDAÇÃO PERSONALIZADA
+→ EXIGE BASE / AUTORIDADE
+
+RELEVÂNCIA
+≠ PRESSÃO COMERCIAL
+```
+
+### 40.2 Responsividade e acessibilidade
+
+A mesma arquitetura semântica deve sobreviver em desktop, tablet e mobile, com menor simultaneidade quando necessário.
+
+A solução deve considerar contraste, teclado/foco, touch targets, texto ampliado, ordem semântica, reduced motion, mídia alternativa, performance e internacionalização.
+
+Nenhum significado essencial pode depender exclusivamente de vídeo, hover, mapa interativo ou animação.
+
+### 40.3 Dados reais, mídia e placeholders
+
+Destino, imagem documental, experiência, tarifa, data, vaga, fornecedor, parceiro, condição comercial e disponibilidade apresentados como reais exigem lastro.
+
+Imagem conceitual pode ser usada como linguagem criativa, mas não como prova de operação.
+
+Placeholder não pode simular disponibilidade, preço ou parceria vigente.
+
+### 40.4 Questões abertas
+
+Inventário, tarifa, disponibilidade, cobertura geográfica, campanhas e condições comerciais futuras devem ser absorvidos pelo Design como variáveis substituíveis, não como decisões inventadas.
+
+### 40.5 Liberdade criativa
+
+Fotografia, vídeo, ilustração, mapa, tipografia, paleta, composição, navegação, ritmo, motion, componentes e maneira de integrar inspiração e operação pertencem à designer.
+
+Mapa, busca, cards, hero de imagem e carrossel são hipóteses, não requisitos.
+
+IA é opcional e consome a mesma verdade documental.
+
