@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
@@ -361,22 +361,15 @@ A Home deve comunicar positivamente aquilo que o Intelligence entrega.
 
 As limitações de causalidade, dados internos empresariais, privacidade e individualidade continuam normativamente preservadas por `GKR-UX-HOME-BUSINESS-AUTHORITY-001`, mas não precisam dominar a copy pública.
 
-## 15. Direção visual obrigatória para o futuro Design
+## 15. Significado e evidências que o Design precisa conseguir expressar
 
-O Movimento Intelligence deve ser prioritariamente demonstrado por uma representação visual do produto, incluindo conceitos como:
+O Movimento Intelligence deve tornar compreensível que a Guivos Business pode apoiar leituras sobre participação, utilização, recorrência, mudanças ao longo do tempo, tendências, interesses agregados, movimentos e distribuições, sempre dentro das autoridades e limites vigentes.
 
-- dashboard;
-- KPIs;
-- gráficos;
-- evolução temporal;
-- participação;
-- utilização;
-- recorrência;
-- tendências;
-- interesses agregados;
-- movimentos e distribuições.
+Esses conceitos governam **o que precisa ser comunicável**, não **como deve ser representado visualmente**.
 
-O Documento Mestre não congela o dashboard final, métricas exatas ou layout.
+A designer possui liberdade para escolher qualquer linguagem visual, composição, recurso ou metáfora adequada — inclusive sem dashboard, KPI ou gráfico — desde que a solução preserve compreensão, hierarquia, evidência, privacidade e os guardrails deste Documento Mestre.
+
+Quando houver números, indicadores ou exemplos apresentados como reais, eles exigem fonte e autoridade aplicáveis. Representações conceituais não podem ser confundidas com prova operacional.
 
 ## 16. CTA para Guivos Intelligence
 
