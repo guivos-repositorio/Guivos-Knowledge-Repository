@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.45.0
+id: ROADMAP-13.46.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.45.0
+version: 13.46.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -10,6 +10,7 @@ related:
   - GKR-STATE-001
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
@@ -164,7 +165,8 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | O/C wireframes low-fidelity | **AUTHORIZATION GRANTED / DELIVERY v0.1.0 EXECUTED / VALIDATION v1.0.0 PASS / CURRENT REFERENCE = DELIVERY + VALIDATION** |
 | O/C high-fidelity eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0 / AUTHORIZATION NOT_GRANTED** |
 | GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION** |
-| Design das Homes / O/C autenticado | **NOT AUTHORIZED; PER-002-SPECIFIC DESIGN WORK DOES NOT RELEASE O/C OR HOME MATERIALIZATION** |
+| Design das Homes públicas | **DESIGN PRODUCTION RELEASE GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0 / FIGMA MAKE AUTHORIZED TO EXECUTE** |
+| O/C autenticado high-fidelity | **ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED / SEPARATE GOVERNED GATE** |
 
 Inventário físico corrente após F-016-A:
 
@@ -1944,8 +1946,8 @@ Sequência governada:
 12. Semantic + Mechanical no HEAD de registro;
 13. revisão independente;
 14. adjudicar findings, se houver;
-15. ato humano explícito de Design Production Release;
-16. somente então iniciar Figma Make / prototipação de Design.
+15. ato humano explícito de Design Production Release — CONCLUÍDO / GRANTED;
+16. iniciar Figma Make / prototipação de Design — AUTHORIZED / NOT_STARTED.
 
 ```text
 V5 SNAPSHOT
@@ -1957,7 +1959,13 @@ V5 SNAPSHOT
 → 26 / 26 CANONICAL BLOBS MATCH
 
 DESIGN PRODUCTION RELEASE
-→ NOT_GRANTED
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+
+FIGMA MAKE / GENERATIVE EXPLORATION
+→ AUTHORIZED TO EXECUTE / NOT_STARTED
+
+FINAL FIGMA PRODUCTION
+→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
 
 O/C HIGH-FIDELITY DESIGN
 → ELIGIBILITY PASS PRESERVED
