@@ -1827,7 +1827,7 @@ A bifurcação Organização/Coletivo deve preservar equivalência de dignidade 
 
 ### 33.2 Dados reais, placeholders e questões abertas
 
-Identidade, iniciativa, parceria, relação, métrica, prova, história e capacidade apresentadas como reais exigem fonte.
+`REAL_DATA_REQUIRED` — identidade, iniciativa, parceria, relação, métrica, prova, história e capacidade apresentadas como reais exigem fonte.
 
 Placeholders podem testar forma, mas não podem criar parceria, relevância, reciprocidade ou autoridade fictícias.
 
