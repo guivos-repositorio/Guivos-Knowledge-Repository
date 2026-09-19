@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.4.0
+version: 0.4.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -136,7 +136,7 @@ Uma Home somente pode ser considerada pronta para entrega à designer quando seu
 | Home | Fonte mestre corrente | Estado |
 |---|---|---|
 | Pessoa | `GKR-UX-HOME-MASTER-001 v1.0.2` | RECONCILED |
-| Organizações e Coletivos | `GKR-UX-HOME-OC-MASTER-001 v1.0.0` | RECONCILED |
+| Organizações e Coletivos | `GKR-UX-HOME-OC-MASTER-001 v1.0.1` | RECONCILED |
 | Mall | `GKR-UX-HOME-MALL-MASTER-001 v1.1.0` | RECONCILED |
 | Travel | `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.1` | RECONCILED |
 | Media | `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` | RECONCILED |
@@ -317,10 +317,33 @@ PACKAGE-LEVEL STRUCTURAL COMPLETENESS
 → 120 / 120 PASS
 
 OPEN MATERIAL SOURCE-COMPLETENESS FINDINGS
-→ 0
+→ 0 KNOWN AFTER LATEST REMEDIATION
+→ EXACT-HEAD REVALIDATION + INDEPENDENT RE-REVIEW REQUIRED
 ```
 
 Esse resultado comprova completude estrutural/semântica do candidato. Ele ainda precisa ser revalidado no HEAD exato pelos gates automáticos e por revisão independente.
+
+## 9.1 Review independente posterior — adjudicação
+
+Review `5258088856` encontrou dois P1 materiais no HEAD `ef47b1b116b5c4629126e02fc238e813d28c7f55`:
+
+```text
+P1 — BUSINESS AUTHORITY CONTRACT
+→ REMEDIATED
+→ GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.1
+→ MASTER + SOURCE LOCK RECOGNIZED AS EXISTING
+→ EXTERNAL DESIGN RELEASE RECOGNIZED
+→ CONTRACT NO LONGER ACTS AS PRE-DESIGN BLOCK
+
+P1 — O/C MASTER PRE-MATERIALIZATION STATE
+→ REMEDIATED
+→ GKR-UX-HOME-OC-MASTER-001 v1.0.1
+→ PUBLIC HOME DESIGN RELEASE RECOGNIZED
+→ AUTHENTICATED HIGH-FIDELITY REMAINS NOT_GRANTED
+→ PRODUCT ENGINEERING REMAINS NOT RELEASED
+```
+
+Essas remediações alteram o HEAD. Portanto o candidato só pode voltar a estado comprovado após Semantic + Mechanical no novo SHA e novo review independente.
 
 ## 10. Remediações aplicadas
 
