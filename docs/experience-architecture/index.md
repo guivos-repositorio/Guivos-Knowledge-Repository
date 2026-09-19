@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.16.0
+version: 1.17.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-19
 related:
   - PAS-001
   - PAS-001-DOMAIN-MODEL-001
@@ -53,6 +53,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - M7.88
 normative: false
 ---
@@ -159,6 +160,7 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C4B — validação integrada individual e promoção de TRN-008..013
 → O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C State Map — DEFINED / CANONICAL DOCUMENTARY
+→ Public Homes Design Production Readiness — PREPARED / V5 SNAPSHOT PENDING / DESIGN RELEASE NOT_GRANTED
 ```
 
 D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada. A definição documental do State Map O/C não altera esse estado.

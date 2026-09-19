@@ -1,14 +1,15 @@
 ---
-id: ROADMAP-13.43.0
+id: ROADMAP-13.44.0
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.43.0
+version: 13.44.0
 owner: Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-19
 normative: true
 related:
   - GKR-STATE-001
   - GKR-FULL-CORPUS-AUDIT-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
@@ -1905,3 +1906,56 @@ PRODUCT ENGINEERING
 ```
 
 Navigation Materialization foi promovida canonicamente após Surface Map + State Map + Priority Flows + eligibility PASS. Os Authenticated Wireframes low-fidelity foram posteriormente autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O ciclo low-fidelity está fechado; uma eventual frente high-fidelity depende primeiro de adjudicação própria de elegibilidade. High-fidelity UI, protótipo e Product Engineering continuam não autorizados.
+
+## Public Homes — Design Production Readiness / Figma
+
+Prioridade temporária aberta para preparar a contratação e produção definitiva das oito Homes públicas em Figma.
+
+Esta frente não prescreve identidade visual. Criatividade, originalidade e imaginação da designer são parte deliberada do processo.
+
+```text
+GKR
+→ SIGNIFICADO / FUNÇÃO / LIMITES / VERDADE
+
+DESIGN
+→ EXPRESSÃO VISUAL / CRIATIVA
+
+FIGMA MAKE
+→ EXPLORAÇÃO / PROTÓTIPO
+
+HUMAN GATE
+→ APROVA DIREÇÃO ANTES DO FIGMA DEFINITIVO
+```
+
+Sequência governada:
+
+1. reconciliar Handoff pós-auditoria;
+2. expandir template generativo para oito Homes;
+3. formalizar contrato de prontidão e aceite Figma;
+4. preparar Manifesto v5;
+5. integrar changeset em `main` mediante gates próprios;
+6. capturar `main` pós-merge;
+7. revalidar 26/26 fontes;
+8. gerar oito Source Locks operacionais;
+9. materializar snapshot externo v5;
+10. validar isolamento e reproduzibilidade;
+11. Semantic + Mechanical no HEAD aplicável;
+12. revisão independente;
+13. adjudicar findings;
+14. ato humano explícito de Design Production Release;
+15. somente então iniciar Figma Make / prototipação de Design.
+
+```text
+V5 SNAPSHOT
+→ PENDING
+
+DESIGN PRODUCTION RELEASE
+→ NOT_GRANTED
+
+O/C HIGH-FIDELITY DESIGN
+→ ELIGIBILITY PASS PRESERVED
+→ EXECUTION PAUSED / NOT AUTHORIZED
+
+PRODUCT ENGINEERING
+→ PAUSED BEFORE W0-01 / NOT RELEASED
+```

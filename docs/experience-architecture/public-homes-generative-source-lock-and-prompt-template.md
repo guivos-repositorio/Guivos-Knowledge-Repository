@@ -2,12 +2,13 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 status: active
-version: 1.1.0
+version: 2.0.0
 owner: Experience Architecture
-last_updated: 2026-08-29
+last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
 depends_on:
   - GKR-STATE-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
 related:
@@ -17,39 +18,37 @@ related:
   - GKR-UX-HOME-TRAVEL-MASTER-001
   - GKR-UX-HOME-MEDIA-MASTER-001
   - GPA-005
+  - GKR-UX-HOME-ADS-MASTER-001
+  - GPA-007
+  - GKR-UX-HOME-BUSINESS-MASTER-001
+  - GPA-004
+  - GKR-UX-HOME-INTELLIGENCE-MASTER-001
+  - GPA-006
 normative: true
-maturity: generative_template_preserved_instantiation_suspended_during_full_corpus_audit
+maturity: post_audit_eight_home_generative_template_pre_release
 ---
 
 # Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 
-## 0. Gate vigente durante a Auditoria Integral do GKR
+## 0. Gate pós-auditoria
 
-Este documento continua normativo como **template e contrato de integridade** para uma futura execução generativa governada.
-
-Ele não constitui autorização para criar ou executar um Source Lock enquanto a Auditoria Integral estiver aberta.
+A Auditoria Integral está concluída. Este template volta a ser a autoridade comum para construir os inputs generativos das oito Homes, subordinado ao Handoff e ao contrato de prontidão de produção.
 
 ```text
 TEMPLATE
-→ PRESERVADO
+→ ACTIVE / 8 HOMES
 
-MÉTODO DE SOURCE LOCK
-→ PRESERVADO
+V4 HISTORICAL SOURCE LOCKS
+→ PROVENANCE ONLY WHEN CHECKPOINT-SUPERSEDED
 
-NOVA INSTANCIAÇÃO OPERACIONAL
-→ SUSPENSA DURANTE A AUDITORIA
+V5 OPERATIONAL SOURCE LOCK
+→ GENERATED PER HOME FROM THE CURRENT V5 PACKAGE
 
-PROMPT / FIGMA MAKE / WIREFRAME / UX / UI / PROTÓTIPO
-→ NÃO AUTORIZADOS COMO NOVA EXECUÇÃO
+FIGMA MAKE / GENERATIVE EXECUTION
+→ ONLY AFTER V5 SNAPSHOT + EXPLICIT HUMAN DESIGN RELEASE
 ```
 
-A regra atual é:
-
-> **TEMPLATE DE EXECUÇÃO ≠ AUTORIZAÇÃO PARA EXECUTAR.**
-
-Source Locks e snapshots históricos permanecem evidência dos checkpoints em que foram emitidos. Uma futura instância exige fechamento dos gates aplicáveis, ato humano explícito de reativação e checkpoint pós-auditoria reconciliado.
-
-As seções abaixo preservam integralmente o método que deverá ser retomado quando houver autorização própria.
+A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode completar lacunas de verdade factual ou arquitetura por inferência.
 
 ---
 
@@ -161,19 +160,28 @@ source_lock:
   invariants:
     - "<decisão que não pode ser reinterpretada>"
 
-  design_freedoms:
-    - "<aspecto que pode ser explorado>"
-
-  forbidden_inferences:
-    - "<decisão que a ferramenta não pode inventar>"
+  information_classes:
+    canonical:
+      - "<decisão que deve ser preservada>"
+    design_creative:
+      - "<aspecto deliberadamente aberto à criação>"
+    content_candidate:
+      - "<copy/tom/label proposto sujeito a aprovação>"
+    design_hypothesis:
+      - "<hipótese de solução a testar>"
+    prototype_placeholder:
+      - "<conteúdo provisório permitido>"
+    real_data_required:
+      - "<informação que exige fonte real>"
+    open_question:
+      - "<decisão ainda aberta com destino explícito>"
+    prohibited_inference:
+      - "<conteúdo/regra/claim que não pode ser inventado>"
 
   content_state:
     real_content_available: "<yes | partial | no>"
     placeholders_allowed: true
     placeholder_rules: "<regras específicas>"
-
-  open_questions:
-    - "<lacuna ainda não governada>"
 
   tool:
     name: "<ferramenta utilizada>"
@@ -231,89 +239,84 @@ Quando houver limitação de tamanho, pode-se utilizar **extrato controlado**, d
 
 ---
 
-## 6. Pacotes autorizados das cinco Homes
+## 6. Pacotes autorizados das oito Homes
 
-A execução deve utilizar somente o pacote correspondente à Home em trabalho, salvo exceção registrada no Source Lock.
+A execução deve utilizar somente o pacote correspondente à Home em trabalho, salvo ampliação deliberada registrada no Source Lock.
+
+### 6.0 Fontes comuns obrigatórias
+
+Todas as oito Homes recebem exatamente estas quatro autoridades comuns do Manifesto v5:
+
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.5.0` — `docs/experience-architecture/public-homes-design-handoff.md`;
+2. `GKR-UX-HOMES-GENINPUT-001 v2.0.0` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
+3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.0` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v2.0.0` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`.
+
+Essas quatro fontes comuns não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso de IA, sequência de execução e critérios de produção/aceite.
 
 ### 6.1 Home Pública — Pessoa
 
-```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001
-+
-GKR-UX-HOME-MASTER-001
-+
-GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
-```
+Fontes específicas:
 
-Paths:
-
-- `docs/experience-architecture/public-homes-design-handoff.md`;
-- `docs/experience-architecture/public-home-master-document.md`;
-- `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`.
+- `GKR-UX-HOME-MASTER-001 v1.0.2` — `docs/experience-architecture/public-home-master-document.md`;
+- `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`.
 
 ### 6.2 Home Pública — Organizações e Coletivos
 
-```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001
-+
-GKR-UX-HOME-OC-MASTER-001
-+
-GKR-UX-HOME-OC-MEDIA-SUPPLY-001
-```
+Fontes específicas:
 
-Paths:
-
-- `docs/experience-architecture/public-homes-design-handoff.md`;
-- `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
-- `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
+- `GKR-UX-HOME-OC-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
+- `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
 
 ### 6.3 Home Pública — Guivos Mall
 
-```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001
-+
-GKR-UX-HOME-MALL-MASTER-001
-+
-GKR-UX-HOME-MALL-MEDIA-SUPPLY-001
-```
+Fontes específicas:
 
-Paths:
-
-- `docs/experience-architecture/public-homes-design-handoff.md`;
-- `docs/experience-architecture/public-home-mall-master-document.md`;
-- `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md`.
+- `GKR-UX-HOME-MALL-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-mall-master-document.md`;
+- `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md`.
 
 ### 6.4 Home Pública — Guivos Travel
 
-```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001
-+
-GKR-UX-HOME-TRAVEL-MASTER-001
-+
-GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001
-```
+Fontes específicas:
 
-Paths:
-
-- `docs/experience-architecture/public-homes-design-handoff.md`;
-- `docs/experience-architecture/public-home-travel-master-document.md`;
-- `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-travel-master-document.md`;
+- `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
 
 ### 6.5 Home Pública — Guivos Media
 
-```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001
-+
-GKR-UX-HOME-MEDIA-MASTER-001
-+
-GPA-005
-```
+Fontes específicas:
 
-Paths:
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-media-master-document.md`;
+- `GPA-005 v1.2.0` — `docs/product-architecture/media.md`.
 
-- `docs/experience-architecture/public-homes-design-handoff.md`;
-- `docs/experience-architecture/public-home-media-master-document.md`;
-- `docs/product-architecture/media.md`.
+### 6.6 Home Pública — Guivos Ads
+
+Fontes específicas:
+
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-ads-master-document.md`;
+- `GPA-007 v1.3.0` — `docs/product-architecture/ads.md`.
+
+### 6.7 Home Pública — Guivos Business
+
+Fontes específicas:
+
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0` — `docs/experience-architecture/public-home-business-source-lock.md`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-business-master-document.md`;
+- `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+- `GPA-004 v1.6.0` — `docs/product-architecture/business.md`.
+
+### 6.8 Home Pública — Guivos Intelligence
+
+Fontes específicas:
+
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0` — `docs/product-architecture/intelligence-product-source-lock.md`;
+- `GPA-006 v2.0.0` — `docs/product-architecture/intelligence.md`.
+
+Os antigos GENINPUTs de checkpoints superados não entram como autoridade operacional do v5. A emissão gera um `00-LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL` novo para cada Home, contendo checkpoint, SHAs, fontes, matriz operacional e prompt preenchido.
 
 ---
 
@@ -322,53 +325,88 @@ Paths:
 O prompt deve informar explicitamente à ferramenta que as fontes possuem funções diferentes.
 
 ```text
-1. HANDOFF CANÔNICO
-→ processo, uso de IA, limites da fase de Design
+0. LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL DA EMISSÃO
+→ congela checkpoint, lista de fontes, SHAs, objetivo e matriz daquela execução
+→ não cria significado novo
 
-2. DOCUMENTO MESTRE
-→ significado, identidade, narrativa, função e invariantes da Home
+1. AUTORIDADES COMUNS
+→ Handoff = processo e boundary da fase
+→ GENINPUT = método de Source Lock / prompt / classes
+→ Readiness = contrato de produção e aceite Figma
+→ Operational Flow = sequência Figma Make → aprovação → Figma definitivo → aceite
 
-3. CONTRATO COMPLEMENTAR
-→ relação especializada posterior ou arquitetura do produto aplicável
+2. SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE DA HOME, QUANDO EXISTIR
+→ congela decisões próprias daquela Home dentro de sua autoridade
 
-4. FONTES ADICIONAIS AUTORIZADAS
-→ apenas para a dúvida registrada
+3. DOCUMENTO MESTRE
+→ significado, narrativa, função, percepção e invariantes da Home
 
-5. REFERÊNCIAS EXTERNAS
-→ inspiração sem autoridade
+4. AUTORIDADES COMPLEMENTARES / DE PRODUTO
+→ resolvem identidade, fronteiras e contratos especializados aplicáveis
+
+5. FONTE ADICIONAL DECLARADA
+→ somente para dúvida concreta registrada
+
+REFERÊNCIA EXTERNA / BENCHMARK / MOODBOARD
+→ INSPIRATION_ONLY
+→ SEM AUTORIDADE
+
+HISTÓRICO / GENINPUT SUPERADO
+→ NÃO ENTRA COMO AUTORIDADE OPERACIONAL
 ```
 
-Benchmark, moodboard ou referência visual nunca sobe na hierarquia por ser visualmente convincente.
+O `LEIA-PRIMEIRO` não pode sobrescrever os documentos que lista. Se houver conflito semântico, a execução deve parar e registrar a divergência para decisão humana, observando a precedência vigente das autoridades específicas da Home.
 
 ---
 
 ## 8. Tipos de informação dentro do prompt
 
-Cada item relevante deve ser tratável como uma destas classes:
+O template utiliza exatamente a mesma taxonomia de `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001`:
 
-### CANÔNICO
+### CANONICAL
 
-Decisão governada por fonte autorizada.
+Decisão governada que deve ser preservada.
 
-### LIBERDADE DE DESIGN
+### DESIGN_CREATIVE
 
-Campo deliberadamente aberto para materialização.
+Campo deliberadamente aberto à criação da designer.
 
-### HIPÓTESE
+### CONTENT_CANDIDATE
 
-Proposta criada para testar uma solução. Não é decisão da Guivos.
+Copy, tom, label ou formulação editorial proposta e sujeita a aprovação humana.
 
-### LACUNA
+### DESIGN_HYPOTHESIS
 
-Informação que as fontes não respondem e que exige decisão humana ou novo contrato.
+Solução criada para testar uma interpretação de Design sem se tornar decisão da Guivos.
 
-### PLACEHOLDER
+### PROTOTYPE_PLACEHOLDER
 
-Conteúdo provisório usado para testar hierarquia ou composição sem afirmar realidade.
+Conteúdo provisório usado para testar hierarquia, volume, ritmo ou comportamento.
 
-A ferramenta não deve converter automaticamente `HIPÓTESE`, `LACUNA` ou `PLACEHOLDER` em `CANÔNICO`.
+### REAL_DATA_REQUIRED
+
+Informação factual que exige fonte real antes de poder ser tratada como verdade pública.
+
+### OPEN_QUESTION
+
+Decisão ainda não necessária ou não governada, com destino explícito.
+
+### PROHIBITED_INFERENCE
+
+Conteúdo, regra ou claim que não pode ser criado para preencher a solução.
+
+A ferramenta não deve promover qualquer classe a `CANONICAL` por inferência. Mudança de classe exige evidência ou aprovação humana conforme o caso.
 
 ---
+
+
+### 8.1 Liberdade criativa de Design
+
+Podem ser criados livremente, sem baseline visual pré-imposta pelo GKR: paleta, tipografia, imagens, ilustração, iconografia, composição, grid, respiro, linguagem gráfica, atmosfera, motion, componentes e tom de voz/copy não congelada.
+
+Conteúdo verbal proposto pela designer ou pela IA deve ser rotulado como `CONTENT_CANDIDATE` até aprovação humana. O mesmo vale para qualquer direção visual: geração não equivale a aprovação.
+
+Imagens podem ser selecionadas, produzidas ou geradas criativamente. Quando uma imagem puder ser interpretada como evidência de pessoa, parceiro, case, oferta, destino ou operação real, ela deve ser tratada como conceitual/ilustrativa até haver lastro verificável.
 
 ## 9. Prompt-base controlado
 
@@ -401,25 +439,38 @@ FONTES AUTORIZADAS E ORDEM DE AUTORIDADE
 
 Considere somente essas fontes como autoridade para esta exploração. Referências visuais externas, quando fornecidas, servem apenas como inspiração e não podem sobrescrever os documentos acima.
 
-INVARIANTES QUE DEVEM SER PRESERVADOS
-[LISTA DE INVARIANTES EXTRAÍDOS DAS FONTES]
+MATRIZ OPERACIONAL DE INFORMAÇÃO
+CANONICAL
+[DECISÕES QUE DEVEM SER PRESERVADAS]
 
-LIBERDADES DE DESIGN NESTA EXECUÇÃO
-[LISTA DO QUE PODE SER EXPLORADO]
+DESIGN_CREATIVE
+[O QUE PODE SER CRIADO LIVREMENTE]
 
-PROIBIÇÕES DE INFERÊNCIA
+CONTENT_CANDIDATE
+[COPY / TOM / LABELS SUJEITOS A APROVAÇÃO]
+
+DESIGN_HYPOTHESIS
+[HIPÓTESES QUE PODEM SER TESTADAS SEM VIRAR DECISÃO]
+
+PROTOTYPE_PLACEHOLDER
+[CONTEÚDO PROVISÓRIO PERMITIDO E COMO DEVE SER MARCADO]
+
+REAL_DATA_REQUIRED
+[DADOS / CASES / PREÇOS / PARCEIROS / PROVAS QUE EXIGEM FONTE REAL]
+
+OPEN_QUESTION
+[QUESTÕES AINDA ABERTAS E SEU DESTINO]
+
+PROHIBITED_INFERENCE
 Não invente ou altere:
 [LISTA ESPECÍFICA]
 
 Além disso, não trate ausência de definição como autorização para criar produto, funcionalidade, dado, parceiro, depoimento, métrica, prova, preço, oferta, campanha, disponibilidade, impacto ou promessa factual.
 
 CONTEÚDO E DADOS
-[INDICAR O QUE É REAL, O QUE É PARCIAL E O QUE É PLACEHOLDER]
+[INDICAR O QUE É REAL, PARCIAL, CANDIDATO OU PLACEHOLDER]
 
 Quando precisar de placeholder, deixe claro que é provisório e não o transforme em evidência real.
-
-QUESTÕES ABERTAS
-[LISTA]
 
 Se uma questão aberta for necessária para materializar a solução, trate a escolha como HIPÓTESE DE DESIGN identificada. Não a apresente como decisão canônica.
 
@@ -647,7 +698,7 @@ Uma execução está pronta para ferramenta generativa quando:
 2. a fase está identificada;
 3. o objetivo é específico;
 4. o checkpoint do GKR está registrado;
-5. as três fontes obrigatórias estão identificadas;
+5. o pacote obrigatório da Home está identificado;
 6. versões e paths estão registrados;
 7. invariantes estão explícitos;
 8. liberdades de Design estão explícitas;
@@ -735,11 +786,11 @@ Estado histórico do método:
 
 ```text
 TEMPLATE
-→ PRONTO E PRESERVADO
+→ ACTIVE / RECONCILED FOR 8 HOMES
 
-INSTANCIAÇÃO POR HOME
-→ SUSPENSA DURANTE A AUDITORIA INTEGRAL
+V5 PER-HOME SOURCE LOCKS
+→ TO BE EMITTED FROM THE FINAL POST-MERGE CHECKPOINT
 
-NOVA EXECUÇÃO GENERATIVA DE DESIGN
-→ NÃO AUTORIZADA
+GENERATIVE EXECUTION
+→ NOT RELEASED UNTIL V5 SNAPSHOT + EXPLICIT HUMAN RELEASE
 ```
