@@ -537,7 +537,7 @@ O Lote E reconstruiu a autoridade de consumo da Home O/C e reconciliou os detalh
 Autoridades atuais:
 
 ```text
-GKR-UX-HOME-OC-MASTER-001 v1.0.0
+GKR-UX-HOME-OC-MASTER-001 v1.1.0
 → autoridade de consumo
 
 GKR-UX-HOME-OC-NARR-001 v0.2.0

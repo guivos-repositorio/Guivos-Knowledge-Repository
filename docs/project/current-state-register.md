@@ -1036,7 +1036,7 @@ O Lote E foi concluído documentalmente pela reconstrução do Master e pela rec
 Autoridades atuais:
 
 ```text
-GKR-UX-HOME-OC-MASTER-001 v1.0.0
+GKR-UX-HOME-OC-MASTER-001 v1.1.0
 → autoridade de consumo vigente
 
 GKR-UX-HOME-OC-NARR-001 v0.2.0
