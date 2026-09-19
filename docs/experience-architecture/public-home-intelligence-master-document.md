@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
 status: draft
-version: 0.2.2
+version: 0.2.3
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -727,8 +727,9 @@ GKR-UX-HOME-INTELLIGENCE-MASTER-001
 → NARRATIVE / SEMANTIC / FUNCTIONAL AUTHORITY
 → exact version pinned by the current delivery candidate
 
-GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 → ACTIVE / NORMATIVE
+→ exact version pinned by the current delivery candidate
 → HOME SOURCE PACKAGE / INVARIANT FREEZE
 
 GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
@@ -775,7 +776,7 @@ A designer pode criar livremente a expressão visual, desde que preserve:
 flowchart TD
     P[Product Source Lock] --> A[Arquitetura narrativa]
     A --> M[Documento Mestre corrente]
-    M --> S[Home Source Lock v1.0.0]
+    M --> S[Home Source Lock corrente]
     S --> D[Pacote governado para designer]
     D --> X[Criação externa manual / IA opcional]
 ```
