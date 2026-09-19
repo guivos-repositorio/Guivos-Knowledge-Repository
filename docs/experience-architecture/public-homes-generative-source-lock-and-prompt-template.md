@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 status: active
-version: 2.1.1
+version: 2.1.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -664,7 +664,7 @@ posterior autorização
 → APROVADO PARA HANDOFF DE ENGENHARIA
 ```
 
-O arquivo do Figma ou a existência de uma tela refinada não altera sozinho o estado arquitetural.
+A existência de arquivo, tela refinada, protótipo ou outro artefato de Design — em Figma ou qualquer ferramenta — não altera sozinha o estado arquitetural.
 
 ---
 
