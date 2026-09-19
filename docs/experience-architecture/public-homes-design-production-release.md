@@ -184,14 +184,17 @@ V5 SNAPSHOT
 DESIGN PRODUCTION RELEASE
 → GRANTED
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+DESIGNER MANUAL CREATION
+→ AUTHORIZED / EXTERNAL DESIGNER-OWNED
 
-HUMAN DIRECTION APPROVAL
-→ NOT_YET_PERFORMED
+AI SUPPORT
+→ OPTIONAL / NON-CANONICAL / NOT A REQUIRED STAGE
 
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED
+HUMAN DESIGN REVIEW
+→ REQUIRED FOR ACCEPTANCE
+
+FINAL DESIGN DELIVERY
+→ DESIGNER-OWNED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -202,4 +205,4 @@ UXA-102 / V5
 
 ## 11. Próximo movimento legítimo
 
-O próximo movimento permitido é a execução externa de Design, uma Home por vez, iniciando pela leitura do `LEIA-PRIMEIRO`, autoridades comuns e fontes específicas, seguida de Figma Make/exploração e revisão humana.
+O próximo movimento permitido é a execução externa de Design, uma Home por vez, iniciando pela leitura do `LEIA-PRIMEIRO`, autoridades comuns e fontes específicas. A designer cria manualmente; IA pode ser usada opcionalmente como apoio.
