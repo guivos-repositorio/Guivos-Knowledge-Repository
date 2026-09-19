@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.3
+id: ROADMAP-13.47.4
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.3
+version: 13.47.4
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -537,7 +537,7 @@ O Lote E reconstruiu a autoridade de consumo da Home O/C e reconciliou os detalh
 Autoridades atuais:
 
 ```text
-GKR-UX-HOME-OC-MASTER-001 v1.0.0
+GKR-UX-HOME-OC-MASTER-001 v1.0.1
 → autoridade de consumo
 
 GKR-UX-HOME-OC-NARR-001 v0.2.0
