@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-AUTHORITY-001
 title: Contratos de Autoridade — Home Pública — Guivos Business
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-BUSINESS-NARRATIVE-001
 depends_on:
   - GKR-UX-HOME-BUSINESS-NARRATIVE-001
@@ -12,6 +12,10 @@ depends_on:
   - GKR-BUSINESS-CONTINUITY-001
   - GKR-STATE-001
   - ROADMAP-12.79.0
+related:
+  - GKR-UX-HOME-BUSINESS-MASTER-001
+  - GKR-UX-HOME-BUSINESS-SOURCELOCK-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
 normative: true
 ---
 
@@ -392,15 +396,20 @@ A Home não pode sugerir que:
 7. integração analítica dá acesso a contexto pessoal protegido;
 8. plano comercial representa mérito ou impacto humano.
 
-## 12. Estado de convergência
+## 12. Estado de convergência e consumo atual
+
+Este documento permanece a autoridade normativa das fronteiras de autoridade do Business. Seu Checkpoint 6 é histórico; as etapas posteriores já foram materializadas em autoridades próprias.
 
 ```text
 ARQUITETURA NARRATIVA   → CONVERGIDA
-CONTRATOS DE AUTORIDADE → CONVERGIDOS / CHECKPOINT 6
-CONVERSÃO               → AUTORIDADE POSTERIOR
-DOCUMENTO MESTRE        → AINDA NÃO EXISTE
-SOURCE LOCK              → AINDA NÃO EXISTE
-DESIGN                   → NÃO AUTORIZADO
+CONTRATOS DE AUTORIDADE → CONVERGIDOS / THIS AUTHORITY
+CONVERSÃO               → GKR-UX-HOME-BUSINESS-CONVERSION-002
+DOCUMENTO MESTRE        → GKR-UX-HOME-BUSINESS-MASTER-001 / ACTIVE
+SOURCE LOCK              → GKR-UX-HOME-BUSINESS-SOURCELOCK-001 / ACTIVE
+DESIGN PRODUCTION RELEASE
+→ GRANTED BY COMMON AUTHORITY
+EXTERNAL DESIGNER START
+→ DEFERRED UNTIL FINAL SOURCE READINESS PASS
 ```
 
-Este documento encerra o Checkpoint 6 e passa a ser fonte normativa para as próximas etapas da Home Business.
+Este documento não governa o relógio procedimental das etapas posteriores. Ele continua governando os limites que Master, Source Lock, designer e sistemas de AI devem preservar.
