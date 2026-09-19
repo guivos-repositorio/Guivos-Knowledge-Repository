@@ -201,7 +201,7 @@ ID DECLARADO × ID REAL
 → 26 / 26 MATCH
 
 VERSÃO DECLARADA × VERSÃO REAL
-→ 25 / 25 MATCH
+→ 26 / 26 MATCH
 
 GENINPUT HISTÓRICO NO PACOTE OPERACIONAL
 → 0
@@ -227,7 +227,7 @@ A exclusão de documentos de aprofundamento do pacote inicial não os invalida. 
 
 Uma execução de Figma Make trabalha uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente.
 
-A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + três fontes comuns + fontes específicas daquela Home.
+A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + quatro fontes comuns + fontes específicas daquela Home.
 
 Output inicial obrigatório: `EXPLORAÇÃO / NÃO CANÔNICA`.
 
@@ -271,6 +271,7 @@ A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOUR
 
 - `CANONICAL` — papel institucional da Home; pergunta-mãe **“O que se torna possível quando você entra aqui?”**; possibilidade antes de produto; 11 movimentos; distinção participante × produto; Journey com porta própria; ausência de falsa personalização; autonomia, prova e confiança.
 - `DESIGN_CREATIVE` — identidade visual, tipografia, cor, imagem, composição, motion, componentes, agrupamento físico e solução responsiva.
+- `DESIGN_HYPOTHESIS` — alternativas de Hero, agrupamento dos 11 movimentos, navegação, densidade, ritmo e interação que podem ser testadas para tornar a tese mais clara sem alterar significado, prioridade semântica ou autonomia.
 - `CONTENT_CANDIDATE` — terceira camada de concretização da Hero, CTA exploratório e microcopy não congelada.
 - `PROTOTYPE_PLACEHOLDER` — histórias, imagens, conteúdo editorial e evidências ainda não selecionadas, sempre identificadas internamente como provisórias.
 - `REAL_DATA_REQUIRED` — qualquer pessoa, organização, coletivo, parceiro, métrica, case, depoimento, país atendido, resultado ou prova apresentada como real.
@@ -281,6 +282,7 @@ A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOUR
 
 - `CANONICAL` — pergunta-mãe **“O que podemos tornar possível juntos?”**; Organização e Coletivo como participantes distintos; narrativa compartilhada antes da bifurcação final; 11 movimentos e 7 macroexperiências como significado, não layout; Header global; relevância contextual; autoridade, proteção, bilateralidade e evidência.
 - `DESIGN_CREATIVE` — expressão visual, ritmo, mídia, composição, sistema gráfico, componentes e modo de representar a bifurcação final sem hierarquia indevida.
+- `DESIGN_HYPOTHESIS` — alternativas para representar visualmente capacidades, relações, macroexperiências e a bifurcação Organização/Coletivo, desde que testáveis e reversíveis e sem criar superioridade, nova autoridade ou nova arquitetura.
 - `CONTENT_CANDIDATE` — CTA exploratório da Hero e copy de apoio não congelada.
 - `PROTOTYPE_PLACEHOLDER` — Organização, Coletivo, iniciativa, história e evidência ainda não selecionados.
 - `REAL_DATA_REQUIRED` — identidade e relação real de Organizações/Coletivos, métricas, parcerias, iniciativas e provas apresentadas como existentes.
@@ -291,6 +293,7 @@ A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOUR
 
 - `CANONICAL` — pergunta-mãe **“O que pode fazer parte do seu próximo momento?”**; Shopping e Gift Cards como portas distintas; descoberta + comércio + confiança; Hero permanente não dominado por promoção; `MALL-HS-01..06`; separação entre oferta, recomendação, destaque e patrocínio.
 - `DESIGN_CREATIVE` — composição comercial, direção de arte, visual de produtos, ritmo, navegação, cards ou alternativas que preservem o contrato.
+- `DESIGN_HYPOTHESIS` — alternativas de descoberta, organização de ofertas, navegação entre Shopping/Gift Cards, densidade de catálogo e apresentação comercial que podem ser testadas sem alterar elegibilidade, confiança, preço, estoque ou natureza de recomendação/patrocínio.
 - `CONTENT_CANDIDATE` — copy de apoio e labels comerciais não congelados.
 - `PROTOTYPE_PLACEHOLDER` — produtos, preços, marcas, campanhas e conteúdos usados apenas para testar layout, claramente marcados no arquivo.
 - `REAL_DATA_REQUIRED` — preço, preço em pontos, estoque, elegibilidade, desconto, marca/parceiro institucional, avaliação, disponibilidade e campanha apresentados como reais.
@@ -301,6 +304,7 @@ A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOUR
 
 - `CANONICAL` — pergunta-mãe **“Até onde o seu próximo momento pode levar você?”**; inspiração + operação real + acesso direto; serviços, destinos e experiências como territórios distintos; Hero permanente não dominado por oferta; `TRAVEL-HS-01..06`.
 - `DESIGN_CREATIVE` — fotografia, vídeo, mapas, composição, ritmo, navegação e modo de organizar os serviços sem transformá-los em nove produtos desconectados.
+- `DESIGN_HYPOTHESIS` — alternativas de exploração por destino, serviço, inspiração, mapa, busca ou jornada visual que podem ser testadas sem inventar disponibilidade, bundle obrigatório, cobertura ou relação comercial.
 - `CONTENT_CANDIDATE` — copy de apoio, labels e CTAs não congelados.
 - `PROTOTYPE_PLACEHOLDER` — destinos, imagens, tarifas, experiências e conteúdos usados para teste, desde que explicitamente provisórios.
 - `REAL_DATA_REQUIRED` — destino/oferta realmente disponível, tarifa, data, vaga, fornecedor, parceiro, condição comercial e experiência apresentada como real.
@@ -311,6 +315,7 @@ A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOUR
 
 - `CANONICAL` — tese editorial; pergunta-mãe **“O que você pode descobrir quando vê além do que já conhece?”**; curadoria antes de cronologia; 11 movimentos; descoberta antes de classificação; Media ≠ Blog/portal/feed/streaming.
 - `DESIGN_CREATIVE` — direção editorial, tipografia, imagem, vídeo, ritmo, navegação, busca, motion e maneira de dar hierarquia ao conteúdo.
+- `DESIGN_HYPOTHESIS` — alternativas de curadoria, destaque, descoberta, busca, agrupamento editorial e continuidade entre conteúdos que podem ser testadas sem transformar Media em feed, portal, streaming ou catálogo de formatos.
 - `CONTENT_CANDIDATE` — headlines, labels e formulações editoriais não congeladas.
 - `PROTOTYPE_PLACEHOLDER` — conteúdo de destaque, história, autor, imagem e vídeo usados para testar composição.
 - `REAL_DATA_REQUIRED` — conteúdo, autor, pessoa, história, direitos de mídia, patrocínio, data ou relação apresentados como reais.
@@ -321,6 +326,7 @@ A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOUR
 
 - `CANONICAL` — tese contexto-first; 7 movimentos; capacidade financeira ≠ elegibilidade; autoridade da superfície anfitriã; publicidade identificada; qualificação progressiva; contexto pessoal protegido fora da comercialização.
 - `DESIGN_CREATIVE` — expressão B2B, visualização de contextos, interação da qualificação, mídia, composição e linguagem visual.
+- `DESIGN_HYPOTHESIS` — alternativas de qualificação progressiva, visualização dos contextos Guivos, apresentação das soluções e sequência comercial que podem ser testadas sem criar direito automático à exibição, segmentação proibida ou promessa de performance.
 - `CONTENT_CANDIDATE` — headline, apoio e microcopy de conversão quando não congelados.
 - `PROTOTYPE_PLACEHOLDER` — marca, campanha, formato, investimento e cenário comercial ilustrativos, sem aparência de operação vigente.
 - `REAL_DATA_REQUIRED` — preço, CPM/CPC, alcance, inventário, performance, case, marca/parceiro e disponibilidade comercial apresentados como reais.
@@ -331,6 +337,7 @@ A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOUR
 
 - `CANONICAL` — Source Lock Business; pergunta-mãe **“O que sua empresa pode tornar possível para as pessoas?”**; 10 movimentos; quatro planos; exclusão pública de Pontos Guivos; autonomia da Pessoa; contratação/configuração online como direção; CTA e demais itens explicitamente congelados no Source Lock.
 - `DESIGN_CREATIVE` — identidade visual, composição, agrupamento dos movimentos, representação dos planos, configurador, visualização de Intelligence e responsividade dentro do Source Lock.
+- `DESIGN_HYPOTHESIS` — alternativas de comparação de planos, configuração, progressão comercial, visualização de capacidades e representação do Intelligence que podem ser testadas sem inventar preço, limites, SLA, entitlement ou alterar a autonomia da Pessoa.
 - `CONTENT_CANDIDATE` — supporting copy e formulações não classificadas como congeladas.
 - `PROTOTYPE_PLACEHOLDER` — preços, limites, entitlements, integrações e exemplos de configuração usados somente para teste.
 - `REAL_DATA_REQUIRED` — preço final, limite de plano, SLA, entitlement, integração, disponibilidade por país/moeda, case, métrica ou condição comercial real.
@@ -341,6 +348,7 @@ A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOUR
 
 - `CANONICAL` — Home Source Lock e Handoff específicos; unidade de valor = compreensão útil e contextualizada; `COMPREENDER ≠ DECIDIR`; 11 movimentos; assimetria Pessoa/Journey × Business/população; copy e CTAs semanticamente congelados conforme o Home Source Lock.
 - `DESIGN_CREATIVE` — forma visual de tornar relações, contexto, temporalidade, evidência e explicabilidade compreensíveis, sem obrigação de dashboard, grafo ou estética tecnológica específica.
+- `DESIGN_HYPOTHESIS` — alternativas visuais para relações, padrões, mudanças, evidência, temporalidade e explicabilidade que podem ser testadas sem transformar Intelligence em decisão automática, previsão determinística, dashboard obrigatório ou tecnologia específica.
 - `CONTENT_CANDIDATE` — somente microajustes/editorial não congelado dentro dos limites expressos pelo Source Lock.
 - `PROTOTYPE_PLACEHOLDER` — exemplos analíticos e dados conceituais claramente marcados como ilustrativos.
 - `REAL_DATA_REQUIRED` — métrica, resultado, acurácia, case, integração, tecnologia operacional, dado ou capacidade apresentada como existente.
