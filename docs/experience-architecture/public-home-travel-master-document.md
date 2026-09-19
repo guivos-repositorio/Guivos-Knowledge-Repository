@@ -840,11 +840,11 @@ Expressão complementar:
 
 A arquitetura conceitual desta Home está convergida para registro documental.
 
-Não há, neste documento, autorização para wireframe ou materialização visual.
+Este documento, isoladamente, não autoriza implementação ou Product Engineering. A criação externa de Design da Home pública é governada pelas autoridades comuns vigentes.
 
 Estado:
 
-> **ARQUITETURA CONCEITUAL CONVERGIDA — REGISTRADA COMO DOCUMENTO MESTRE; MATERIALIZAÇÃO VISUAL NÃO AUTORIZADA.**
+> **ARQUITETURA CONCEITUAL CONVERGIDA — DOCUMENTO MESTRE ACTIVE / DESIGN-INPUT-READY — CRIAÇÃO DE DESIGN EXTERNA GOVERNADA PELO RELEASE COMUM.**
 
 ---
 
