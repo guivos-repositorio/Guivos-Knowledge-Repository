@@ -266,8 +266,8 @@ A execução deve utilizar somente o pacote correspondente à Home em trabalho, 
 
 Todas as oito Homes recebem exatamente estas quatro autoridades comuns do Manifesto v5:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.0` — `docs/experience-architecture/public-homes-design-handoff.md`;
-2. `GKR-UX-HOMES-GENINPUT-001 v2.1.0` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.1` — `docs/experience-architecture/public-homes-design-handoff.md`;
+2. `GKR-UX-HOMES-GENINPUT-001 v2.1.3` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
 3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.1.2` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
 4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.1` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`.
 
