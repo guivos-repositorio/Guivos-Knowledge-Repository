@@ -1,10 +1,11 @@
 ---
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
-status: draft
-version: 0.2.0
+status: active
+version: 1.0.0
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
+maturity: design_input_ready_human_first_ai_optional
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 depends_on:
   - GPA-006
@@ -26,7 +27,7 @@ normative: false
 
 Este documento consolida a **fonte mestre de referência da Home Pública Guivos Intelligence v1** depois da convergência dos onze movimentos da arquitetura narrativa.
 
-A versão `0.1.1` corrige a camada editorial de `0.1.0` para refletir a copy pública efetivamente aprovada em conversa. A correção não altera a arquitetura em 11 movimentos, o significado do produto, as autoridades superiores, as fronteiras interproduto ou os guardrails vigentes.
+A linha `0.1.x` consolidou e corrigiu a camada editorial da Home. A versão `1.0.0` reconcilia esse conteúdo com as autoridades posteriores já existentes — Home Source Lock, Handoff de Design e pacote comum das Homes — sem alterar a arquitetura em 11 movimentos, o significado do produto, as fronteiras interproduto ou os guardrails vigentes.
 
 Sua função é reunir, em uma única leitura, o significado do produto que pode ser comunicado publicamente, a proposta de valor da Home, a progressão narrativa, a copy de referência, as fronteiras interproduto, os resultados esperados, os elementos visuais admissíveis e os guardrails que devem permanecer preservados na próxima etapa.
 
@@ -47,11 +48,11 @@ GKR-UX-HOMES-OUTCOME-001 v1.0.0
 GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1
 → arquitetura narrativa convergida em 11 movimentos
 
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
-→ consolidação mestre desta Home
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v1.0.0
+→ consolidação mestre vigente desta Home
 ```
 
-Este documento ainda **não é o Home Source Lock**.
+Este documento é o **Master vigente da Home**. O Home Source Lock continua sendo uma autoridade complementar própria e já existente; nenhum dos dois substitui o outro.
 
 ## 2. Estado governado
 
@@ -72,13 +73,21 @@ ARQUITETURA NARRATIVA
 
 DOCUMENTO MESTRE
 → ESTE ARTEFATO
-→ v0.1.1
+→ v1.0.0
 
 HOME SOURCE LOCK
-→ NÃO CRIADO
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+→ ACTIVE
 
-WIREFRAME / UI / PROTÓTIPO / DESIGN HANDOFF
-→ NÃO INICIADOS NESTE FLUXO
+DESIGN HANDOFF
+→ GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
+→ ACTIVE
+
+VISUAL MATERIALIZATION BY THIS DOCUMENT
+→ NONE
+
+DESIGN PRODUCTION
+→ GOVERNED BY COMMON PUBLIC-HOMES RELEASE / FLOW
 ```
 
 ## 3. Definição superior preservada
@@ -683,25 +692,23 @@ BUSINESS
 
 ## 17. O que este Documento Mestre não autoriza
 
-A criação deste documento não autoriza automaticamente:
+A existência ou promoção deste Master não autoriza automaticamente:
 
-- Home Source Lock;
-- wireframe;
-- UI;
-- protótipo;
-- Figma;
-- prompt generativo de Design;
-- implementação front-end;
+- implementação front-end/backend;
 - integração técnica;
 - publicação comercial;
 - pricing;
+- Product Engineering;
 - promessa de operação de Neo4j, GraphRAG, GDS, Power BI, Guivos.ai ou Grafo Global;
 - uso de dados individuais fora das autoridades previstas;
-- promoção silenciosa de estado global.
+- promoção silenciosa de capacidade operacional;
+- claims de performance, acurácia ou resultado sem evidência.
+
+O Home Source Lock e o Handoff de Design já existem como autoridades complementares; não são criados nem substituídos por este Master.
 
 ## 18. Itens ainda não congelados
 
-Até o Home Source Lock, permanecem refináveis sem alterar a arquitetura:
+Mesmo após o Home Source Lock, permanecem deliberadamente abertos à etapa de Design e conteúdo, sem alterar a arquitetura:
 
 - formulação final da pergunta-mãe;
 - CTA principal;
@@ -715,21 +722,33 @@ Até o Home Source Lock, permanecem refináveis sem alterar a arquitetura:
 
 Esses itens não reabrem a identidade nem os onze movimentos já convergidos.
 
-## 19. Critério de passagem
+## 19. Estado de passagem e consumo
 
-Este Documento Mestre considera a arquitetura narrativa **conceitualmente completa em 11 movimentos**, com a copy de referência corrigida, e fornece base suficiente para a próxima etapa governada: elaboração do **Home Source Lock da Home Pública Guivos Intelligence v1**.
+A arquitetura narrativa está **conceitualmente completa em 11 movimentos** e reconciliada com as autoridades posteriores.
 
-Isso não significa que o Source Lock tenha sido criado ou autorizado por este artefato.
+```text
+PRODUCT SOURCE LOCK
+→ ACTIVE
 
-```mermaid
-flowchart TD
-    P[Product Source Lock\nintegrado] --> A[Arquitetura narrativa\nv0.2.1]
-    A --> M[Documento Mestre\nv0.1.1]
-    M --> S[Home Source Lock\npróximo ponto]
-    S --> D[Handoff / Design controlado]
+NARRATIVE AUTHORITY
+→ CONVERGED
+
+MASTER v1.0.0
+→ ACTIVE / DESIGN-INPUT-READY
+
+HOME SOURCE LOCK
+→ ACTIVE
+
+HOME DESIGN HANDOFF
+→ ACTIVE
+
+COMMON PUBLIC-HOMES DESIGN PACKAGE
+→ GOVERNS EXTERNAL DESIGN USE
 ```
 
-Nenhuma etapa autoriza automaticamente a seguinte.
+A cadeia documental está pronta para consumo da designer sem exigir criação de nova autoridade intermediária.
+
+Nenhuma dessas autoridades libera Product Engineering ou implementação.
 
 ---
 
@@ -774,4 +793,3 @@ Expressão visual, exemplos finais, assets e escolhas de interação permanecem 
 ### 20.6 IA no processo de Design
 
 IA pode ser usada opcionalmente pela designer como ferramenta de exploração. O uso de IA para criar a Home não altera o papel público do Guivos Intelligence nem transforma a ferramenta usada pela designer em autoridade de produto.
-
