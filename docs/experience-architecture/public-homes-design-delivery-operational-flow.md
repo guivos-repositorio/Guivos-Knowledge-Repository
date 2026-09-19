@@ -70,7 +70,7 @@ Sem aprovação humana da direção, não iniciar construção definitiva.
 
 ## 7. Fase D — Figma definitivo
 
-A direção aprovada pode ser refinada livremente pela designer, preservando contratos.
+A direção aprovada pode ser refinada livremente pela designer, preservando contratos. Alteração material da direção aprovada — como conceito de Hero, linguagem visual, arquitetura de navegação, composição global ou mudança equivalente — retorna ao gate humano antes do aceite final.
 
 A solução criativa aprovada deve ser documentada no arquivo: tipografia, cores, estilos, componentes, assets e regras necessárias para consistência e handoff.
 
@@ -78,7 +78,7 @@ Essas foundations são consequência do Design, não baseline pré-imposta.
 
 ## 8. Fase E — aceite final
 
-Executar o checklist de `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001`.
+Executar o checklist de `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001`, incluindo continuidade de fontes/plugins/assets, controle do arquivo pela Guivos e revisão integrada das oito Homes.
 
 Estados:
 
