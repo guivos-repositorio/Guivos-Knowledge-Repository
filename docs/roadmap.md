@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.8
+id: ROADMAP-13.47.9
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.8
+version: 13.47.9
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -1962,9 +1962,9 @@ SOURCE COMPLETENESS
 → 120 / 120
 
 V6 PACKAGE CANDIDATE
-→ 27 CANONICAL SOURCES
+→ 29 CANONICAL SOURCES
 → 8 READ-FIRST GUIDES
-→ 35 FILES TOTAL
+→ 37 FILES TOTAL
 → SNAPSHOT NOT EMITTED
 
 DESIGN PRODUCTION RELEASE
