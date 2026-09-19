@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.4.3
+version: 0.4.4
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -141,8 +141,8 @@ Uma Home somente pode ser considerada pronta para entrega à designer quando seu
 | Travel | `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.3` | RECONCILED |
 | Media | `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` | RECONCILED |
 | Ads | `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` | RECONCILED |
-| Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.4` | RECONCILED |
-| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.4` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.3` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.4` | RECONCILED |
+| Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.5` | RECONCILED |
+| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.4` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.4` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.5` | RECONCILED |
 
 ## 6. Findings iniciais comprovados
 
@@ -424,6 +424,31 @@ Media e Ads não apresentaram gate temporal equivalente na varredura. O v5 perma
 
 Essas remediações alteram novamente o HEAD. O estado `PASS` permanece candidato até Semantic + Mechanical e novo review independente no SHA final.
 
+## 9.4 Fechamento da varredura de Source Locks correntes
+
+A varredura pós-review encontrou dois resíduos adicionais da mesma classe temporal antes dos gates:
+
+```text
+BUSINESS SOURCE LOCK
+→ v1.1.5
+→ CURRENT MASTER = v1.1.3
+→ CURRENT AUTHORITY CONTRACT = v1.0.2
+→ INTELLIGENCE HOME DOCUMENTARY AUTHORITY RECOGNIZED AS EXISTING
+→ DESIGN MATERIALIZATION LANGUAGE ALIGNED WITH CURRENT RELEASE
+
+INTELLIGENCE SOURCE LOCK
+→ v1.1.4
+→ CURRENT MASTER = v0.2.4
+→ CURRENT EXTERNAL DESIGN RELEASE RECOGNIZED
+→ FUTURE-MATERIALIZATION LANGUAGE REMOVED FROM CURRENT DESIGN CONTRACT
+
+INTELLIGENCE DESIGN HANDOFF
+→ v1.1.5
+→ SYNCHRONIZED TO SOURCE LOCK v1.1.4
+```
+
+Esses ajustes não alteram identidade, semântica, guardrails, implementação ou publicação; apenas removem ambiguidade temporal do handoff corrente.
+
 ## 10. Remediações aplicadas
 
 ### F-DS-001 — RESOLVED
@@ -460,14 +485,14 @@ A adjudicação histórica permanece proveniência; não é mais necessária par
 
 ### F-DS-004 — RESOLVED
 
-`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.4` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.4` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.3` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.4` foram temporalmente reconciliados com o regime designer-first / IA opcional.
+`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.5` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.4` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.4` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.5` foram temporalmente reconciliados com o regime designer-first / IA opcional.
 
 ### F-DS-005 — RESOLVED FOR V6 CONTRACT
 
 O template comum foi promovido para:
 
 ```text
-GKR-UX-HOMES-GENINPUT-001 v2.2.8
+GKR-UX-HOMES-GENINPUT-001 v2.2.9
 → TOOL-NEUTRAL
 → AI OPTIONAL
 → MANUAL DESIGN DOES NOT REQUIRE GENERATIVE EXECUTION RECORD
