@@ -1,8 +1,8 @@
 ---
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
-title: Homes Públicas — Prontidão de Produção de Design e Contrato Figma/IA
+title: Homes Públicas — Prontidão de Produção de Design e Contrato de Consumo Design/IA
 status: active
-version: 1.0.1
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -29,11 +29,11 @@ related:
   - GOG-001
 ---
 
-# Homes Públicas — Prontidão de Produção de Design e Contrato Figma/IA
+# Homes Públicas — Prontidão de Produção de Design e Contrato de Consumo Design/IA
 
 ## 1. Finalidade
 
-Esta autoridade prepara as oito Homes públicas da Guivos para uma contratação real de Design em que Figma Make ou ferramenta equivalente pode ser usada para prototipação antes da construção definitiva no Figma.
+Esta autoridade prepara as oito Homes públicas da Guivos para uma contratação real de Design em que a designer cria manualmente a solução visual a partir do pacote governado. Sistemas de IA podem ser usados opcionalmente como apoio de leitura, exploração ou crítica, sem constituir etapa obrigatória nem baseline visual.
 
 O objetivo é reduzir a zero os findings materiais documentais antes do release de produção, sem transformar documentação em direção artística.
 
@@ -46,7 +46,7 @@ Estado desta revisão:
 - arquitetura semântica das oito Homes: documentada e reconciliada;
 - método de handoff: reconciliado pós-auditoria;
 - template generativo: expandido para oito Homes;
-- contrato de protótipo e entrega Figma: definido por esta autoridade;
+- contrato de consumo documental, entrega visual e aceite: definido por esta autoridade;
 - pacote v5: preparado pelo Manifesto v5, ainda dependente de emissão pós-merge;
 - Design Production Release: não concedido por este documento.
 
@@ -68,7 +68,7 @@ Pertencem à liberdade criativa da designer:
 
 Não existe obrigação de reproduzir visual histórico, snapshot antigo, palette anterior, fonte anterior ou estética pré-existente.
 
-Depois da aprovação humana da direção de protótipo, a solução escolhida passa a ser a baseline criativa daquela entrega e deve ser documentada no Figma final. Mudança material posterior de conceito de Hero, linguagem visual, arquitetura de navegação, composição global ou direção criativa exige nova aprovação humana antes do aceite final; refinamentos não materiais permanecem sob autonomia da designer.
+Depois da aprovação humana da direção criada pela designer, a solução escolhida passa a ser a baseline criativa daquela entrega e deve ser documentada no arquivo final da designer. Mudança material posterior de conceito de Hero, linguagem visual, arquitetura de navegação, composição global ou direção criativa exige nova aprovação humana antes do aceite final; refinamentos não materiais permanecem sob autonomia da designer.
 
 ## 4. O que permanece governado
 
@@ -223,19 +223,19 @@ FINAL EXACT-HEAD GATE
 → STILL REQUIRED
 ```
 
-A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente no Figma Make.
+A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente em sistemas de IA.
 
 ## 7. Regra de isolamento para IA
 
-Uma execução de Figma Make trabalha uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente.
+Quando um sistema de IA for usado como apoio, ele deve trabalhar preferencialmente uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente sem necessidade concreta.
 
-A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + quatro fontes comuns + fontes específicas daquela Home.
+O sistema de IA, quando utilizado, deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + fontes comuns + fontes específicas daquela Home.
 
 Output inicial obrigatório: `EXPLORAÇÃO / NÃO CANÔNICA`.
 
 ## 8. Classes obrigatórias de informação
 
-Toda informação relevante usada por humano, Figma Make ou ferramenta equivalente deve estar tratável em uma destas oito classes:
+Toda informação relevante usada pela designer ou por sistema de IA deve estar tratável em uma destas oito classes:
 
 - `CANONICAL` — decisão governada que deve ser preservada;
 - `DESIGN_CREATIVE` — campo deliberadamente aberto à criação da designer;
@@ -361,7 +361,7 @@ A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOUR
 
 Uma informação classificada como `OPEN_QUESTION`, `REAL_DATA_REQUIRED` ou `PROTOTYPE_PLACEHOLDER` não exige retrabalho posterior de Design quando sua variabilidade é previsível.
 
-Por isso, o Figma final deve testar envelopes realistas de conteúdo, incluindo quando aplicável:
+Por isso, a entrega visual final da designer deve testar envelopes realistas de conteúdo, incluindo quando aplicável:
 
 - títulos curtos e longos;
 - traduções com expansão de texto;
@@ -385,25 +385,43 @@ Regras de integridade:
 - logos de terceiros exigem relação/autorização aplicável;
 - preço, avaliação, número de usuários, disponibilidade e resultados não podem ser inventados;
 - conteúdo gerado para protótipo deve ser reconhecível internamente como candidato ou placeholder;
-- no Figma final, assets externos devem possuir origem/licença ou condição de uso registrada;
+- na entrega final, assets externos devem possuir origem/licença ou condição de uso registrada;
 - mídia essencial deve possuir fallback e não pode carregar sozinha o significado da página.
 
-## 10. Figma Make — gate obrigatório de protótipo
+## 10. IA — apoio opcional, nunca gate obrigatório
 
-A exploração generativa antecede a construção definitiva.
+A designer pode criar toda a solução manualmente sem usar qualquer sistema de IA.
 
-Sequência obrigatória:
+Quando IA for útil, pode apoiar:
 
-1. carregar pacote v5 isolado da Home;
-2. gerar exploração/protótipo;
-3. executar autoauditoria contra Source Lock;
-4. revisão humana de significado, conteúdo, UX, responsividade e direção criativa;
-5. registrar decisões aceitas, rejeitadas e lacunas;
-6. somente após aprovação humana, construir/refinar o Figma definitivo.
+- leitura e síntese do Source Lock;
+- comparação de alternativas;
+- exploração conceitual;
+- crítica de aderência aos boundaries;
+- geração de referências, hipóteses ou conteúdo provisório claramente classificado.
 
-A designer não é obrigada a copiar a proposta do Figma Make. A ferramenta serve para visualizar e testar possibilidades.
+Regras:
 
-## 11. Contrato mínimo do Figma definitivo
+```text
+IA
+→ OPTIONAL
+
+OUTPUT DE IA
+→ NON-CANONICAL
+→ NÃO É BASELINE VISUAL
+→ NÃO SUBSTITUI DECISÃO DA DESIGNER
+
+PROMPT
+→ CONVENIÊNCIA DE CONSUMO
+→ NÃO É ESPECIFICAÇÃO VISUAL
+
+DESIGNER
+→ PODE IGNORAR / ALTERAR / SUBSTITUIR QUALQUER PROPOSTA DE IA
+```
+
+Não existe gate obrigatório de Figma Make, prototipação generativa ou aprovação de output de IA antes da criação manual.
+
+## 11. Contrato mínimo da entrega final da designer
 
 O contrato abaixo governa qualidade e editabilidade, não estética.
 
@@ -449,7 +467,7 @@ A coerência pode emergir de qualidade, princípios, interação, linguagem e si
 
 ## 13. Critérios de aceite do protótipo
 
-Antes de iniciar o Figma definitivo:
+Antes de finalizar a solução visual:
 
 - zero divergência material de significado;
 - nenhum produto/participante confundido;
@@ -459,7 +477,7 @@ Antes de iniciar o Figma definitivo:
 - copy candidata relevante foi aprovada ou marcada para substituição;
 - questões abertas possuem destino explícito.
 
-## 14. Critérios de aceite do Figma final
+## 14. Critérios de aceite da entrega final de Design
 
 A entrega pode ser aceita quando:
 
@@ -480,10 +498,10 @@ A entrega pode ser aceita quando:
 15. existe registro formal do aceite final com versão do arquivo, responsável, assets/licenças e controle dos arquivos essenciais pela Guivos.
 
 ```text
-FIGMA FINAL CANDIDATO
+DESIGN FINAL CANDIDATO
 ≠ SERVIÇO CONCLUÍDO
 
-FIGMA FINAL ACEITO
+DESIGN FINAL ACEITO
 → PRÉ-CONDIÇÃO DE FECHAMENTO OPERACIONAL DA ENTREGA DE DESIGN
 
 TERMOS DE PAGAMENTO / CONTRATO
@@ -533,9 +551,9 @@ V5 SNAPSHOT
 DESIGN PRODUCTION RELEASE
 → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 
-FIGMA MAKE EXECUTION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+AI-ASSISTED EXPLORATION
+→ OPTIONAL / NOT A GOVERNED GATE
 
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+FINAL DESIGN PRODUCTION
+→ EXTERNAL DESIGNER-OWNED / SUBJECT TO HUMAN REVIEW
 ```
