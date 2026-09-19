@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-ORGCOL-AUTH-NAV-MAT-001
 title: Organizações e Coletivos — Materialização da Navegação Autenticada
-status: draft
-version: 0.1.0
+status: active
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
-maturity: authenticated_navigation_materialization_draft_pre_wireframes
+maturity: authenticated_navigation_materialization_canonical_pre_wireframes
 depends_on:
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
@@ -50,6 +50,8 @@ MAIN BASELINE
 A materialização responde:
 
 > **Como a pessoa autenticada encontra e percorre o trabalho legítimo de uma Organização ou de um Coletivo, preservando contexto, autoridade, objeto, estado, retorno e lacunas reais, sem transformar navegação em permissão, tela ou implementação?**
+
+A candidata documental concluiu `DRAFT SUFFICIENCY = PASS`, Semantic #1130 `SUCCESS`, Mechanical #1367 `SUCCESS`, revisão read-only sem finding material e foi então promovida canonicamente por autorização humana explícita. A promoção torna esta topologia a autoridade corrente de Navigation Materialization; ela não libera wireframes.
 
 Este documento **não é wireframe** e não define aparência final.
 
@@ -952,13 +954,14 @@ A candidata somente poderá ser promovida se, cumulativamente:
 23. revisão independente não identifique finding material;
 24. promoção canônica permaneça ato governado separado.
 
-## 23. Resultado draft
+## 23. Resultado canônico
 
 A materialização candidata define:
 
 ```text
 O/C AUTHENTICATED NAVIGATION MATERIALIZATION
-→ DRAFT v0.1.0
+→ ACTIVE v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
 → TOPOLOGY DEFINED
 → HIERARCHY DEFINED
 → ENTRY / RETURN SEMANTICS DEFINED
@@ -991,15 +994,19 @@ PRODUCT ENGINEERING
 
 ```text
 GKR-UX-ORGCOL-AUTH-NAV-MAT-001
-→ DRAFT v0.1.0
+→ ACTIVE v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
 → NORMATIVE = FALSE
 
 NAVIGATION MATERIALIZATION EXECUTION
 → AUTHORIZED BY HUMAN
 → DOCUMENTARY CANDIDATE EXECUTED
+→ VALIDATED
 
 CANONICAL PROMOTION
-→ NOT AUTHORIZED
+→ AUTHORIZED BY HUMAN
+→ EXECUTED
+→ VALIDATED
 
 AUTHENTICATED WIREFRAMES
 → NOT STARTED / NOT RELEASED
