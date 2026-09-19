@@ -110,7 +110,7 @@ Este documento **não desenha as páginas** e não determina solução visual fi
 GKR
 → define significado, função, narrativa, fronteiras, Source Locks e invariantes
 
-DESIGN / FIGMA MAKE / FERRAMENTA EQUIVALENTE
+DESIGNER / SISTEMA DE IA OPCIONAL
 → produz exploração visual fora desta frente canônica
 
 VALIDAÇÃO HUMANA
@@ -134,7 +134,7 @@ A execução somente fica liberada quando coexistirem:
 
 Depois desse release, podem ser executados:
 
-- exploração em Figma Make e ferramentas equivalentes;
+- exploração manual pela designer e, opcionalmente, apoio de sistemas de IA;
 - arquitetura visual;
 - wireframes de baixa fidelidade;
 - exploração de UX e direção visual;
@@ -170,7 +170,7 @@ A existência deste documento, isoladamente, não significa que um snapshot de e
 
 > **Ferramentas generativas são instrumentos de exploração e materialização, não fontes de decisão sobre a arquitetura das Homes.**
 
-Uma solução visual produzida por IA, Figma Make, plugin, template, benchmark ou referência externa não se torna canônica por ter sido gerada. Somente após validação humana contra o GKR uma direção pode ser promovida.
+Uma solução visual produzida por IA, plugin, template, benchmark ou referência externa não se torna canônica por ter sido gerada. Somente após validação humana contra o GKR uma direção pode ser promovida.
 
 ---
 
