@@ -1,8 +1,8 @@
 ---
 id: GKR-UX-HOMES-GENINPUT-001
-title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
+title: Homes Públicas — Source Lock, Brief de Design e Prompt Opcional para IA
 status: active
-version: 2.0.1
+version: 2.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -25,14 +25,14 @@ related:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GPA-006
 normative: true
-maturity: post_audit_eight_home_generative_template_release_granted_pre_execution
+maturity: manual_first_ai_optional_source_lock_template
 ---
 
-# Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
+# Homes Públicas — Source Lock, Brief de Design e Prompt Opcional para IA
 
 ## 0. Gate pós-auditoria
 
-A Auditoria Integral está concluída. Este template volta a ser a autoridade comum para construir os inputs generativos das oito Homes, subordinado ao Handoff e ao contrato de prontidão de produção.
+A Auditoria Integral está concluída. Este template é a autoridade comum para preparar o Source Lock e o brief de consumo das oito Homes. Quando a designer optar por usar IA, o mesmo registro também governa o prompt e o contexto fornecidos à ferramenta.
 
 ```text
 TEMPLATE
@@ -44,31 +44,35 @@ V4 HISTORICAL SOURCE LOCKS
 V5 OPERATIONAL SOURCE LOCK
 → EMITTED / 8 OF 8 / FROZEN WITH SNAPSHOT V5
 
-FIGMA MAKE / GENERATIVE EXECUTION
-→ DESIGN PRODUCTION RELEASE GRANTED
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+DESIGNER MANUAL CREATION
+→ PRIMARY OPERATING MODEL
+
+AI / GENERATIVE SUPPORT
+→ OPTIONAL
+→ TOOL-AGNOSTIC
 ```
 
-A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode completar lacunas de verdade factual ou arquitetura por inferência.
+A designer possui ampla liberdade criativa. Quando houver uso de IA, a ferramenta também pode propor forma, mas não pode completar lacunas de verdade factual ou arquitetura por inferência.
 
 ---
 
 ## 1. Finalidade
 
-Este documento transforma o controle semântico estabelecido por `GKR-UX-HOMES-DESIGN-HANDOFF-001` em um procedimento operacional reutilizável para exploração de Design com ferramentas generativas.
+Este documento transforma o controle semântico estabelecido por `GKR-UX-HOMES-DESIGN-HANDOFF-001` em um procedimento operacional reutilizável para consumo humano pela designer e, opcionalmente, para apoio de sistemas de IA.
 
 Ele define:
 
 - como congelar as fontes de uma execução;
 - quais metadados precisam acompanhar o input;
-- como compor um prompt sem transferir autoridade arquitetural para a ferramenta;
+- como compor um brief de Design completo;
+- como compor um prompt opcional de IA sem transferir autoridade arquitetural para a ferramenta;
 - como distinguir decisão canônica, liberdade de Design, hipótese e lacuna;
 - como registrar a saída para posterior validação humana;
 - como impedir que outputs exploratórios se tornem decisões do GKR por inércia.
 
 Este documento não cria wireframes, layouts, componentes, UI final ou identidade visual para nenhuma Home.
 
-> **Ferramentas generativas recebem um contexto governado. Elas não recebem autoridade para completar a arquitetura da Guivos por conta própria.**
+> **A designer recebe um contexto governado sem direção artística pré-imposta. Quando usar IA, a ferramenta recebe o mesmo contexto e nenhuma autoridade para completar a arquitetura da Guivos por conta própria.**
 
 ---
 
@@ -81,20 +85,20 @@ GKR-UX-HOMES-DESIGN-HANDOFF-001
 → governa a fase de Design, o pacote de fontes, as liberdades e as fronteiras
 
 GKR-UX-HOMES-GENINPUT-001
-→ governa como uma execução generativa é preparada, registrada e validada
+→ governa como o Source Lock, o brief da designer e o uso opcional de IA são preparados, registrados e validados
 ```
 
 Este documento não substitui o handoff nem resume os Documentos Mestres.
 
 Ele operacionaliza o princípio:
 
-> **O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração. A validação reconecta forma e significado.**
+> **O GKR governa o significado. A designer governa a expressão criativa. Sistemas de IA podem ampliar a exploração quando escolhidos pela designer. A validação reconecta forma e significado.**
 
 ---
 
-## 3. Unidade de execução governada
+## 3. Unidade de trabalho governada
 
-Cada uso relevante de Figma Make ou ferramenta generativa deve ser tratado como uma **execução identificável**.
+Cada Home entregue à designer deve possuir uma **unidade de trabalho identificável**, baseada em Source Lock e brief. Se houver uso relevante de IA, esse uso também deve permanecer rastreável dentro da mesma unidade.
 
 Uma execução possui:
 
@@ -105,16 +109,18 @@ FONTES AUTORIZADAS
 +
 OBJETIVO
 +
-PROMPT CONTROLADO
+BRIEF DE DESIGN
 +
-OUTPUT EXPLORATÓRIO
+PROMPT CONTROLADO, SE HOUVER IA
++
+OUTPUT CRIATIVO / EXPLORATÓRIO
 +
 REGISTRO DE HIPÓTESES
 +
 VALIDAÇÃO HUMANA
 ```
 
-Não existe uma execução governada quando apenas se envia uma instrução genérica como:
+Não existe uso governado de IA quando apenas se envia uma instrução genérica como:
 
 > “Crie a Home da Guivos.”
 
@@ -323,7 +329,7 @@ Os antigos GENINPUTs de checkpoints superados não entram como autoridade operac
 
 ## 7. Ordem de autoridade dentro do input
 
-O prompt deve informar explicitamente à ferramenta que as fontes possuem funções diferentes.
+O brief deve informar à designer — e o prompt, quando houver IA — que as fontes possuem funções diferentes.
 
 ```text
 0. LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL DA EMISSÃO
@@ -334,7 +340,7 @@ O prompt deve informar explicitamente à ferramenta que as fontes possuem funç�
 → Handoff = processo e boundary da fase
 → GENINPUT = método de Source Lock / prompt / classes
 → Readiness = contrato de produção e aceite Figma
-→ Operational Flow = sequência Figma Make → aprovação → Figma definitivo → aceite
+→ Operational Flow = compreensão humana → criação livre → IA opcional → revisão humana → entrega final
 
 2. SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE DA HOME, QUANDO EXISTIR
 → congela decisões próprias daquela Home dentro de sua autoridade
@@ -360,7 +366,7 @@ O `LEIA-PRIMEIRO` não pode sobrescrever os documentos que lista. Se houver conf
 
 ---
 
-## 8. Tipos de informação dentro do prompt
+## 8. Tipos de informação dentro do brief e do prompt opcional
 
 O template utiliza exatamente a mesma taxonomia de `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001`:
 
@@ -409,15 +415,15 @@ Conteúdo verbal proposto pela designer ou pela IA deve ser rotulado como `CONTE
 
 Imagens podem ser selecionadas, produzidas ou geradas criativamente. Quando uma imagem puder ser interpretada como evidência de pessoa, parceiro, case, oferta, destino ou operação real, ela deve ser tratada como conceitual/ilustrativa até haver lastro verificável.
 
-## 9. Prompt-base controlado
+## 9. Brief-base e prompt opcional
 
-O bloco abaixo é o **template canônico de montagem do prompt**. Ele deve ser preenchido para cada execução; não deve ser usado com campos vazios quando esses campos forem relevantes.
+O bloco abaixo funciona como **template canônico de brief para a designer** e também como prompt controlado quando houver uso de IA. Ele deve ser preenchido para cada Home; não deve ser usado com campos vazios quando esses campos forem relevantes.
 
 ```text
-Você está apoiando uma exploração de Design para a Guivos.
+Você está apoiando o trabalho de Design para a Guivos. Este conteúdo serve primeiro como brief para a designer humana e, quando aplicável, como contexto controlado para um sistema de IA.
 
-PAPEL DA FERRAMENTA
-Você é instrumento de exploração e materialização. Você não possui autoridade para redefinir arquitetura de produto, narrativa, posicionamento, taxonomia, operação ou decisões canônicas da Guivos.
+PAPEL DA DESIGNER / IA
+A designer é a executora criativa principal. Se uma IA estiver sendo usada, ela é instrumento opcional de apoio. Nenhum dos dois recebe autoridade para redefinir arquitetura de produto, narrativa, posicionamento, taxonomia, operação ou decisões canônicas da Guivos.
 
 HOME EM TRABALHO
 [HOME]
@@ -650,9 +656,9 @@ O arquivo do Figma ou a existência de uma tela refinada não altera sozinho o e
 
 ---
 
-## 15. Registro mínimo da execução
+## 15. Registro mínimo da unidade de trabalho e do uso opcional de IA
 
-Após uma execução relevante, preservar:
+Para cada Home, preservar o registro mínimo da unidade de trabalho. Se houver uso relevante de IA, registrar também esse uso:
 
 ```yaml
 execution_record:
@@ -693,7 +699,7 @@ Pequenas iterações visuais dentro da mesma hipótese podem permanecer sob o me
 
 ## 17. Critérios de aceite antes de gerar
 
-Uma execução está pronta para ferramenta generativa quando:
+Uma unidade está pronta para consumo por IA quando a designer optar por esse caminho e:
 
 1. a Home está identificada;
 2. a fase está identificada;
@@ -708,7 +714,7 @@ Uma execução está pronta para ferramenta generativa quando:
 11. questões abertas estão registradas;
 12. o output começa classificado como `EXPLORAÇÃO`.
 
-Se esses itens não puderem ser preenchidos, a execução deve ser tratada como exploração não governada e não pode alimentar decisões oficiais sem reconciliação posterior.
+Se esses itens não puderem ser preenchidos, a IA não deve ser usada como fonte de apoio governado. A designer pode continuar manualmente dentro das autoridades disponíveis, desde que qualquer dúvida semântica material seja escalada em vez de inferida.
 
 ---
 
@@ -748,9 +754,11 @@ HANDOFF AUTORIZADO
 ↓
 SOURCE LOCK
 ↓
-PROMPT CONTROLADO
+BRIEF DE DESIGN
 ↓
-EXPLORAÇÃO GENERATIVA
+CRIAÇÃO MANUAL DA DESIGNER
+↓
+IA OPCIONAL / PROMPT CONTROLADO, SE NECESSÁRIO
 ↓
 VALIDAÇÃO
 ```
@@ -759,7 +767,7 @@ VALIDAÇÃO
 
 ## 20. Síntese operacional
 
-A menor unidade segura de trabalho não é o prompt isolado.
+A menor unidade segura de trabalho não é o prompt isolado nem a ferramenta escolhida.
 
 É:
 
@@ -781,7 +789,7 @@ O objetivo não é tornar o processo burocrático. É permitir liberdade visual 
 
 Estado histórico do método:
 
-> **SOURCE LOCK E PROMPT CONTROLADO DEFINIDOS — PRONTOS PARA INSTANCIAÇÃO POR HOME — NENHUM OUTPUT VISUAL É CANÔNICO POR GERAÇÃO AUTOMÁTICA.**
+> **SOURCE LOCK + BRIEF DE DESIGN DEFINIDOS — PROMPT DE IA OPCIONAL — PRONTOS PARA INSTANCIAÇÃO POR HOME — NENHUM OUTPUT VISUAL SE TORNA CANÔNICO SEM VALIDAÇÃO HUMANA.**
 
 ### Estado vigente
 

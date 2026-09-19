@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-ADS-MASTER-001
 title: Home Pública — Guivos Ads — Documento Mestre
-status: draft
-version: 1.0.0
+status: active
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-14
+last_updated: 2026-09-19
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-007
@@ -20,6 +20,9 @@ related:
   - GEM-007-A1
   - GEM-010-A2
   - UXA-038
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
+normative: false
+maturity: source_ready_for_external_design_manual_first_ai_optional
 ---
 
 # Home Pública — Guivos Ads — Documento Mestre
@@ -591,4 +594,341 @@ OBJETIVO DA MARCA
 
 Estado:
 
-> **ARQUITETURA CONCEITUAL E FUNCIONAL DA HOME ADS V1 CONVERGIDA — DOCUMENTO PREPARADO PARA HANDOFF; PROTÓTIPO VISUAL E OPERAÇÃO COMERCIAL NÃO INCLUÍDOS NESTE ESCOPO.**
+> **ARQUITETURA CONCEITUAL E FUNCIONAL DA HOME ADS V1 CONVERGIDA — SOURCE_READY PARA DESIGNER E IA OPCIONAL — OPERAÇÃO COMERCIAL E INVENTÁRIO REAL CONTINUAM SUJEITOS A AUTORIDADES PRÓPRIAS.**
+
+---
+
+## 15. Prontidão documental para Designer e IA
+
+### 15.1 Resultado da auditoria
+
+```text
+HOME ADS
+→ SOURCE_READY = PASS
+
+MASTER
+→ GKR-UX-HOME-ADS-MASTER-001 v1.1.0
+
+PRODUCT AUTHORITY
+→ GPA-007 v1.3.0
+
+MATERIAL DOCUMENT GAPS
+→ 0
+
+UNRESOLVED SEMANTIC CONFLICTS
+→ 0
+
+VISUAL IDENTITY PRE-IMPOSED
+→ 0
+```
+
+### 15.2 Condições e estados que a solução deve tolerar
+
+#### Anunciante ainda sem solução definida
+
+- começar por objetivo e objeto a promover;
+- não exigir conhecimento prévio da taxonomia Guivos;
+- qualificação pode aprofundar progressivamente.
+
+#### Solução conceitualmente possível, mas inventário não confirmado
+
+- pode ser explicada como possibilidade ou exemplo;
+- não apresentar como compra disponível;
+- não criar preço, CPM, CPC, alcance ou prazo.
+
+#### Inventário autorizado em superfície anfitriã
+
+- Ads pode explicar/comercializar o inventário permitido;
+- produto anfitrião continua governando finalidade, experiência e limites;
+- pagamento não altera automaticamente relevância orgânica.
+
+#### Formato demonstrativo
+
+- mockup ou exemplo deve ser identificável como demonstração quando não representar capacidade operacional;
+- exemplo visual ≠ inventário disponível.
+
+#### Opportunity Boost
+
+- pode aparecer como mecanismo da família `Impulsionar oportunidades`;
+- não é identidade integral do Ads;
+- parâmetros de preço, CPM, CPC e alcance não podem ser inferidos.
+
+#### Conteúdo patrocinado no Media
+
+- Ads governa relação comercial;
+- Media preserva autoridade editorial;
+- patrocínio deve ser reconhecível;
+- conclusão editorial não é comprável.
+
+#### Mall / Travel
+
+- anúncio pode existir somente onde a superfície permitir;
+- Ads não governa preço, estoque, destino, reserva ou produto;
+- destaque pago não vira “melhor opção”.
+
+#### Journey
+
+- exposição patrocinada permitida não equivale a pertinência pessoal;
+- contexto pessoal protegido não entra como matéria-prima publicitária.
+
+#### Lead incompleto
+
+- experiência de qualificação pode preservar progresso ou encaminhar sem fabricar conclusão;
+- informação faltante deve permanecer faltante;
+- Intelligence pode identificar lacuna, não inventar resposta.
+
+#### Objeto inelegível
+
+- capacidade financeira não cria direito à veiculação;
+- solução deve tolerar rejeição, indisponibilidade ou necessidade de revisão;
+- motivo pode depender de política, contexto, segurança ou autoridade.
+
+#### Sem preço público
+
+- CTA deve conduzir à qualificação/comercial;
+- não inserir tabela fictícia;
+- ausência de pricing público não é gap de Design.
+
+#### Sem case/métrica validada
+
+- não inventar logos, conversão, alcance, ROI, CPM/CPC, audiência ou performance;
+- arquitetura deve funcionar com prova institucional e demonstrações honestas.
+
+#### Mobile
+
+- objetivo, solução, contexto e CTA continuam claros;
+- não reduzir experiência a formulário longo;
+- exemplos de superfícies permanecem legíveis;
+- mobile não é mero empilhamento.
+
+#### Reduced motion / baixa conectividade
+
+- demonstrações e animações não carregam significado exclusivo;
+- CTA e contratos de autoridade permanecem compreensíveis;
+- mockups podem ter fallback estático.
+
+### 15.3 Acessibilidade e robustez
+
+A solução deve prever:
+
+- teclado;
+- foco visível;
+- leitores de tela;
+- contraste;
+- texto ampliado;
+- labels claros para comercial/patrocinado;
+- não depender de cor para distinguir formatos;
+- reduced motion;
+- fallback de mídia/mockup;
+- formulários progressivos acessíveis quando materializados;
+- erros/validação compreensíveis;
+- estados de carregamento e envio sem ambiguidade;
+- expansão de texto;
+- proteção contra dark patterns de conversão.
+
+### 15.4 Matriz operacional específica do Ads
+
+#### CANONICAL
+
+- Ads é produto responsável por publicidade e soluções comerciais;
+- tese: contexto compatível antes de formato;
+- Home primordialmente B2B;
+- objetivo comercial legítimo é protagonista;
+- sete movimentos;
+- objetivo → solução → formato;
+- cinco famílias conceituais de objetivo;
+- autoridade da superfície anfitriã preservada;
+- orçamento + formato disponível ≠ direito automático à exibição;
+- patrocínio/exposição paga ≠ relevância orgânica;
+- Intelligence apoia qualificação sem usar contexto pessoal protegido;
+- Opportunity Boost é mecanismo específico, não identidade integral;
+- conversão é qualificação progressiva, não checkout automático;
+- pricing/CPM/CPC finais não estão congelados.
+
+#### DESIGN_CREATIVE
+
+- direção visual B2B;
+- tipografia;
+- paleta;
+- ilustração;
+- fotografia;
+- vídeo;
+- mockups;
+- composição;
+- grid;
+- ritmo;
+- componentes;
+- demonstrações de superfície;
+- visualização das famílias de objetivo;
+- qualificação progressiva;
+- motion;
+- microinterações;
+- desktop/mobile;
+- direção de arte.
+
+#### CONTENT_CANDIDATE
+
+- headlines;
+- supporting copy;
+- labels de solução;
+- CTA secundário;
+- perguntas de qualificação não congeladas;
+- microcopy;
+- explicações de contexto;
+- mensagens comerciais.
+
+#### DESIGN_HYPOTHESIS
+
+- organização dos sete movimentos;
+- visualização de contexto anfitrião;
+- maneiras de demonstrar inventário;
+- fluxo de qualificação;
+- agrupamento de soluções;
+- modo de mostrar formatos;
+- forma de explicar autoridade/separação;
+- densidade comercial;
+- navegação responsiva.
+
+#### PROTOTYPE_PLACEHOLDER
+
+- marca;
+- anunciante;
+- campanha;
+- banner;
+- formato;
+- superfície;
+- orçamento;
+- alcance;
+- case;
+- métrica;
+- objeto promovido;
+- solução sugerida;
+- lead;
+- exemplo de qualificação.
+
+Todo placeholder deve estar claramente marcado internamente.
+
+#### REAL_DATA_REQUIRED
+
+- anunciante;
+- cliente;
+- parceiro;
+- case;
+- inventário real;
+- superfície autorizada;
+- formato disponível;
+- preço;
+- CPM/CPC;
+- orçamento mínimo;
+- alcance;
+- conversão;
+- performance;
+- audiência;
+- política;
+- elegibilidade;
+- prazo;
+- capacidade operacional;
+- integração;
+- disponibilidade;
+- dados estruturados reais.
+
+#### OPEN_QUESTION
+
+- pricing;
+- CPM/CPC;
+- inventário inicial;
+- CRM;
+- ferramenta de formulário;
+- políticas finais;
+- contratos;
+- operação comercial;
+- algoritmos;
+- métricas públicas;
+- cases de lançamento.
+
+Não bloqueiam Design quando tratados como ausentes/futuros.
+
+#### PROHIBITED_INFERENCE
+
+Não inventar ou insinuar:
+
+- preço;
+- CPM/CPC;
+- ROI;
+- alcance;
+- conversão;
+- audiência;
+- case;
+- cliente;
+- parceiro;
+- inventário disponível;
+- compra automática;
+- dashboard operacional;
+- recomendação comprável;
+- posição paga = relevância;
+- acesso a contexto pessoal protegido;
+- anunciante elegível só porque possui orçamento;
+- Media subordinado editorialmente ao Ads;
+- Mall/Travel subordinados funcionalmente ao Ads;
+- Intelligence comercializando vulnerabilidade;
+- Opportunity Boost como totalidade do produto.
+
+### 15.5 Brief mínimo para a designer
+
+A designer deve conseguir responder:
+
+1. qual é o papel do Ads;
+2. quem é o público principal;
+3. quais são os sete movimentos;
+4. por que objetivo vem antes de formato;
+5. quais são as cinco famílias de solução;
+6. como Ads se relaciona com Mall, Travel, Media, Journey e Intelligence;
+7. o que a superfície anfitriã continua governando;
+8. como publicidade, patrocínio e relevância se distinguem;
+9. como funciona a qualificação progressiva;
+10. o que Opportunity Boost representa;
+11. quais claims/dados comerciais exigem prova;
+12. quais estados de inelegibilidade/indisponibilidade devem ser tolerados;
+13. o que é livre para criação;
+14. o que não pode ser inferido;
+15. como a experiência funciona em mobile e sem motion.
+
+### 15.6 Uso opcional de IA
+
+Se houver IA, fornecer:
+
+1. autoridades comuns vigentes;
+2. `GPA-007`;
+3. este Master;
+4. contratos econômicos/Opportunity Boost somente quando a dúvida exigir;
+5. matriz operacional desta seção;
+6. objetivo explícito.
+
+IA pode apoiar exploração e qualificação conceitual, mas não pode fabricar pricing, performance, inventário, cases ou audiência.
+
+### 15.7 Fechamento
+
+```text
+HOME ADS
+→ SOURCE_READY = PASS
+
+DESIGNER
+→ CAN START FROM DOCUMENTATION AFTER GLOBAL PACKAGE RELEASE
+
+AI
+→ OPTIONAL
+
+FIGMA MAKE
+→ NOT REQUIRED
+
+VISUAL DIRECTION
+→ DESIGN-OWNED
+
+COMMERCIAL OPERATION / PRICING / INVENTORY
+→ REAL DATA / SEPARATE AUTHORITIES
+
+MATERIAL SEMANTIC GAP
+→ 0
+```
+
+Este `PASS` não valida PMF, pricing, inventário, audiência, performance ou implementação.

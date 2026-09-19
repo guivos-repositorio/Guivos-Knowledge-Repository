@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
 title: Reconciliação Pós-Media — Abastecimento Editorial da Home Pública — Pessoa
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
 last_updated: 2026-08-13
 parent: GKR-UX-HOME-MASTER-001
@@ -79,7 +79,7 @@ Consequências:
 
 Histórias, pessoas, lugares, experiências e acontecimentos documentados podem tornar a realidade concreta sem transformar a Guivos em autora dos resultados apresentados.
 
-### Movimento 06 — Do Possível ao Vivido
+### Movimento 06 — Da Possibilidade à Experiência
 
 Uma produção editorial pode mostrar contexto, decisão, experiência, consequência e continuidade quando essa sequência for real, autorizada e verificável.
 

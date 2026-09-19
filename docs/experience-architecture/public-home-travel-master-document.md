@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-TRAVEL-MASTER-001
 title: Home Pública — Guivos Travel — Documento Mestre
-status: draft
-version: 1.0.0
+status: active
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-13
+last_updated: 2026-09-19
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-003
@@ -15,6 +15,9 @@ related:
   - GPA-004
   - GLPA-001
   - GEM-005
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
+normative: false
+maturity: source_ready_for_external_design_manual_first_ai_optional
 ---
 
 # Home Pública — Guivos Travel — Documento Mestre
@@ -837,10 +840,405 @@ Expressão complementar:
 
 ## 39. Estado de prontidão
 
-A arquitetura conceitual desta Home está convergida para registro documental.
+A arquitetura conceitual desta Home está convergida e esta revisão a prepara para consumo externo de Design no modelo manual-first / AI-optional.
 
-Não há, neste documento, autorização para wireframe ou materialização visual.
+A direção visual permanece propriedade da frente de Design. Este Master não produz wireframe, UI ou identidade visual dentro do GKR.
 
 Estado:
 
-> **ARQUITETURA CONCEITUAL CONVERGIDA — REGISTRADA COMO DOCUMENTO MESTRE; MATERIALIZAÇÃO VISUAL NÃO AUTORIZADA.**
+> **ARQUITETURA CONCEITUAL CONVERGIDA — SOURCE_READY PARA DESIGNER E IA OPCIONAL — OPERAÇÃO, INVENTÁRIO, TARIFAS E DISPONIBILIDADE CONTINUAM DEPENDENTES DE DADOS REAIS.**
+
+---
+
+## 40. Prontidão documental para Designer e IA
+
+### 40.1 Resultado da auditoria
+
+```text
+HOME TRAVEL
+→ SOURCE_READY = PASS
+
+MASTER
+→ GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.0
+
+PRODUCT AUTHORITY
+→ GPA-003 v1.3.0
+
+MEDIA RECONCILIATION
+→ GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0
+
+NINE OPERATIONAL SERVICE FRONTS
+→ CONFIRMED BY GPA-003
+
+MATERIAL DOCUMENT GAPS
+→ 0
+
+UNRESOLVED SEMANTIC CONFLICTS
+→ 0
+
+VISUAL IDENTITY PRE-IMPOSED
+→ 0
+```
+
+### 40.2 O que é operacionalmente verdadeiro
+
+`GPA-003 v1.3.0` confirma como frentes existentes:
+
+1. Hotéis;
+2. Experiências;
+3. Aluguel por temporada;
+4. Aéreo;
+5. Pacotes;
+6. Ônibus;
+7. Locação de veículos;
+8. Cruzeiro marítimo;
+9. Câmbio.
+
+Isso autoriza o Design a tratar essas frentes como **capacidades reais do Travel**.
+
+Não autoriza inferir:
+
+- disponibilidade de um destino específico;
+- vaga;
+- tarifa;
+- fornecedor;
+- parceiro;
+- horário;
+- data;
+- rota;
+- propriedade;
+- experiência;
+- câmbio disponível;
+- inventário;
+- cobertura geográfica.
+
+### 40.3 Condições e estados que a solução deve tolerar
+
+#### Visitante sem sessão
+
+- descoberta e nove serviços permanecem compreensíveis;
+- saldo de pontos não é presumido;
+- recomendação pessoal não é presumida;
+- busca/entrada de serviço pode existir sem inventar resultado ou inventário.
+
+#### Pessoa autenticada
+
+- saldo pode aparecer no componente global quando essa capacidade estiver operacional;
+- contexto autorizado pode apoiar relevância;
+- autenticação não transforma todo comportamento da Journey em sinal comercial.
+
+#### Serviço existente, mas sem inventário para o contexto
+
+- a frente de serviço pode permanecer acessível;
+- não mostrar oferta fictícia;
+- não afirmar disponibilidade para data/destino sem consulta ou fonte;
+- comunicar ausência/indisponibilidade de forma honesta quando aplicável.
+
+#### Oferta somente monetária
+
+- exibir somente valor monetário real;
+- não criar preço em pontos por estimativa.
+
+#### Oferta elegível em pontos
+
+- exibir pontos somente quando a oferta específica possuir elegibilidade real;
+- não inferir pagamento híbrido;
+- não inferir taxa de conversão;
+- pontos continuam benefício transacional, não medida de evolução.
+
+#### Destino real com oferta disponível
+
+- pode aproximar inspiração de ação;
+- imagem, lugar, oferta e condição devem corresponder a realidade verificável.
+
+#### Destino real sem oferta comprovada
+
+- pode existir como conteúdo editorial/inspiracional quando a função estiver clara;
+- não pode parecer destino comercialmente disponível no Travel por simples presença visual.
+
+#### Imagem editorial
+
+- Media pode abastecer inspiração;
+- origem editorial não converte conteúdo em oferta;
+- imagem não prova disponibilidade.
+
+#### Patrocinado
+
+- relação comercial deve ser identificada;
+- patrocinado ≠ recomendado;
+- patrocinado ≠ mais relevante.
+
+#### Recomendação contextual
+
+- exige base legítima e transparência proporcional;
+- não deve explorar contexto pessoal protegido sem autoridade;
+- recomendação não substitui escolha.
+
+#### Campanha / promoção
+
+- pode alterar camada comercial;
+- urgência só quando real;
+- Home continua completa sem campanha.
+
+#### Sem mídia / baixa conectividade
+
+- pergunta-mãe, serviços e caminhos essenciais permanecem compreensíveis;
+- imagem não carrega sozinha destino, preço ou condição.
+
+#### Reduced motion
+
+- descoberta não depende de animação;
+- carrosséis, transições ou vídeo podem ser reduzidos sem perda semântica.
+
+#### Mobile
+
+- nove serviços permanecem acessíveis sem virar nove produtos desconectados;
+- busca direta e descoberta por contexto coexistem;
+- mobile não é simples empilhamento do desktop;
+- preço, pontos, patrocinado e recomendação permanecem distinguíveis.
+
+#### Idioma / país / moeda
+
+- layout deve tolerar internacionalização;
+- preço/moeda deve refletir contexto efetivamente suportado;
+- presença internacional visual ≠ cobertura operacional global.
+
+### 40.4 Acessibilidade e robustez
+
+A futura solução deve prever:
+
+- navegação por teclado;
+- foco visível;
+- leitores de tela;
+- contraste;
+- texto ampliado;
+- alvos de toque;
+- labels não dependentes de cor;
+- alt text/contexto para imagens de destinos;
+- legendas/transcrições quando mídia audiovisual for usada;
+- reduced motion;
+- fallback de imagem/vídeo;
+- nenhuma informação essencial exclusiva de hover;
+- datas, preços e moedas legíveis;
+- expansão de texto;
+- estados de indisponibilidade;
+- conteúdo robusto com nomes de destinos e serviços longos.
+
+### 40.5 Matriz operacional específica do Travel
+
+#### CANONICAL
+
+- pergunta-mãe: **“Até onde o seu próximo momento pode levar você?”**;
+- Travel é produto especializado da Guivos para viagens e experiências;
+- inspiração + operação real + acesso direto;
+- nove frentes operacionais reais;
+- 11 movimentos;
+- possibilidade antes de reserva;
+- serviços podem ser organizados por necessidade sem perder identidade;
+- destino ≠ experiência;
+- combinação de serviços não obriga contratação conjunta;
+- preço/pontos só quando elegíveis;
+- pontos ≠ evolução;
+- patrocinado ≠ recomendado ≠ destaque ≠ oferta;
+- fornecedor/oferta disponível ≠ parceiro institucional;
+- Journey acompanha trajetória ampla; Travel opera viagem;
+- Media inspira; Travel governa oferta;
+- Intelligence apoia relevância, não pressão;
+- páginas internas/reserva/pagamento/pós-venda ficam fora da Home.
+
+#### DESIGN_CREATIVE
+
+- identidade visual;
+- tipografia;
+- paleta;
+- direção de arte;
+- fotografia;
+- vídeo;
+- ilustração;
+- iconografia;
+- grid;
+- composição;
+- ritmo;
+- densidade;
+- forma de mostrar destinos;
+- organização dos nove serviços;
+- busca;
+- cards;
+- mapas quando fizerem sentido;
+- motion;
+- transições;
+- campanhas;
+- solução desktop/mobile;
+- progressive disclosure;
+- tratamento visual de preços/pontos/ofertas.
+
+#### CONTENT_CANDIDATE
+
+- headlines de apoio;
+- labels;
+- CTA secundário;
+- microcopy;
+- territórios de descoberta;
+- copy editorial;
+- campanhas;
+- mensagens de confiança não congeladas.
+
+#### DESIGN_HYPOTHESIS
+
+- organização visual dos serviços;
+- agrupamento por necessidade;
+- formas de descoberta de destinos;
+- conexão entre destino e serviços;
+- composição de experiências;
+- exposição de preço/pontos;
+- forma de mostrar recomendações;
+- navegação por inspiração versus busca;
+- densidade de ofertas;
+- representação do ecossistema.
+
+#### PROTOTYPE_PLACEHOLDER
+
+- destino;
+- hotel;
+- voo;
+- pacote;
+- ônibus;
+- veículo;
+- cruzeiro;
+- câmbio;
+- experiência;
+- tarifa;
+- preço em pontos;
+- fornecedor;
+- imagem;
+- horário;
+- data;
+- avaliação;
+- campanha.
+
+Placeholder nunca deve parecer inventário vigente.
+
+#### REAL_DATA_REQUIRED
+
+- destino apresentado como comercialmente disponível;
+- inventário;
+- tarifa;
+- preço;
+- pontos;
+- data;
+- horário;
+- propriedade;
+- voo/rota;
+- fornecedor;
+- parceiro;
+- avaliação;
+- disponibilidade;
+- câmbio;
+- experiência;
+- condição;
+- desconto;
+- campanha;
+- cobertura;
+- recomendação personalizada.
+
+#### OPEN_QUESTION
+
+- inventário vivo;
+- tarifas;
+- condições;
+- campanhas;
+- destinos de destaque;
+- fornecedores/parceiros;
+- disponibilidade por país;
+- conteúdo editorial de lançamento;
+- comportamento detalhado das páginas internas.
+
+Não bloqueiam a Home desde que não sejam preenchidos como fatos.
+
+#### PROHIBITED_INFERENCE
+
+Não inventar ou insinuar:
+
+- destino atendido sem fonte;
+- vaga/disponibilidade;
+- tarifa;
+- parceria;
+- cobertura mundial;
+- melhor preço;
+- recomendação pessoal sem base;
+- urgência artificial;
+- pagamento híbrido;
+- taxa de conversão de pontos;
+- viagem = evolução;
+- pacote obrigatório de múltiplos serviços;
+- conteúdo editorial = oferta;
+- patrocinado = recomendado;
+- imagem = disponibilidade;
+- Intelligence = pressão comercial;
+- Travel = Journey;
+- Mall absorvendo Travel;
+- páginas internas/reserva dentro da Home.
+
+### 40.6 Brief mínimo para a designer
+
+A designer deve conseguir responder:
+
+1. o que torna Travel uma especialidade da Guivos;
+2. qual é a pergunta-mãe;
+3. quais são os nove serviços reais;
+4. quais são os 11 movimentos;
+5. como inspiração e operação coexistem;
+6. como acesso direto convive com narrativa;
+7. como destino difere de experiência;
+8. como serviços podem se conectar sem bundle obrigatório;
+9. como preço/pontos funcionam;
+10. como editorial, oferta, recomendado, destaque e patrocinado diferem;
+11. quais elementos exigem dado real;
+12. quais estados de indisponibilidade a solução deve tolerar;
+13. o que pertence à Home e o que começa nas páginas internas;
+14. o que é livre para criação;
+15. o que é proibido inferir;
+16. como a Home funciona em mobile, reduced motion e baixa conectividade.
+
+### 40.7 Uso opcional de IA
+
+Se a designer optar por IA, o contexto inicial deve conter:
+
+1. autoridades comuns vigentes;
+2. `GPA-003`;
+3. este Master;
+4. `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001`;
+5. matriz operacional desta seção;
+6. objetivo explícito.
+
+Não usar outputs, wireframes ou páginas antigas como autoridade de conteúdo.
+
+### 40.8 Fechamento
+
+```text
+HOME TRAVEL
+→ SOURCE_READY = PASS
+
+DESIGNER
+→ CAN START FROM DOCUMENTATION AFTER GLOBAL PACKAGE RELEASE
+
+AI
+→ OPTIONAL
+
+FIGMA MAKE
+→ NOT REQUIRED
+
+VISUAL DIRECTION
+→ DESIGN-OWNED
+
+NINE SERVICE FRONTS
+→ OPERATIONALLY REAL
+
+SPECIFIC INVENTORY / PRICE / AVAILABILITY
+→ REAL DATA REQUIRED
+
+MATERIAL SEMANTIC GAP
+→ 0
+```
+
+Este `PASS` não certifica tarifas, inventário, disponibilidade, fornecedor, integração, PMF ou operação de uma oferta específica.

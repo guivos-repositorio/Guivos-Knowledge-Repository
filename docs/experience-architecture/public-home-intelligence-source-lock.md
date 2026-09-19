@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Intelligence
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
@@ -13,7 +13,9 @@ depends_on:
   - GPA-006
   - GKR-UX-HOMES-OUTCOME-001
   - GKR-STATE-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 normative: true
+maturity: source_ready_reconciled_manual_first_ai_optional
 ---
 
 # Source Lock — Home Pública — Guivos Intelligence
@@ -505,44 +507,72 @@ O Source Lock não congela:
 - microcopy que não altere significado;
 - ordem interna de exemplos dentro de um mesmo movimento.
 
-Essas liberdades só se tornam executáveis após Handoff/Design explicitamente autorizado.
+Essas liberdades tornam-se executáveis somente após a emissão e o release humano do novo pacote global de oito Homes. A designer permanece executora criativa principal; IA é opcional.
 
 ## 16. O que este Source Lock não autoriza
 
-A integração deste artefato não autoriza automaticamente:
+Este artefato não autoriza automaticamente:
 
-- atualização do Handoff Canônico;
-- Design;
-- Figma Make;
-- ferramenta generativa;
-- wireframe;
-- UI;
-- protótipo;
 - implementação front-end ou back-end;
 - publicação comercial;
 - Marketing/GTM;
 - pricing;
 - novos claims;
-- promoção silenciosa de maturidade técnica;
-- alteração de `GKR-STATE-001` ou Roadmap sem sincronização transversal autorizada.
+- disponibilidade comercial;
+- maturidade técnica não comprovada;
+- Neo4j, GraphRAG, GDS, Power BI ou Guivos.ai como operação vigente sem evidência;
+- uso de dados fora de finalidade e autoridade;
+- exposição individual para Empresa;
+- alteração silenciosa de `GKR-STATE-001` ou Roadmap.
+
+O Source Lock **não exige** Figma Make, ferramenta generativa, dashboard, gráfico ou tecnologia específica como pré-condição criativa.
+
+```text
+DESIGNER
+→ MANUAL-FIRST
+
+AI
+→ OPTIONAL
+
+TECHNOLOGY
+→ SUBORDINATE TO PRODUCT MEANING
+```
 
 ## 17. Critérios para o próximo gate
 
-Antes de iniciar Design, o futuro Handoff deve preservar:
+A Home Intelligence integra a frente atual de oito Homes.
 
-- o pacote de fontes deste Source Lock;
-- a arquitetura em onze movimentos;
-- a copy pública vigente;
-- os CTAs congelados;
-- as duas frentes e suas autoridades;
+Antes de nova emissão externa, confirmar:
+
+- pacote de fontes preservado;
+- arquitetura em onze movimentos;
+- copy pública vigente;
+- CTAs vigentes;
+- duas frentes e suas autoridades;
 - `M03 ≠ M10`;
 - `M04 ≠ M05`;
-- papel subordinado de Graph/IA;
-- exemplos analíticos como demonstração, não prova;
-- todos os guardrails de privacidade, causalidade, previsão e autonomia.
+- Graph/IA/tecnologias subordinados;
+- exemplos analíticos identificados como demonstração quando não reais;
+- guardrails de privacidade, causalidade, previsão e autonomia;
+- acessibilidade e robustez contempladas no Master;
+- ausência de prescrição visual indevida;
+- `SOURCE_READY = PASS`.
 
-Próximo ponto elegível após a integração deste Source Lock:
+Próximo ponto governado:
 
-> **Handoff controlado da Home Pública Guivos Intelligence v1 para Design**, mediante autorização separada.
+```text
+HOME INTELLIGENCE SOURCE_READY
+↓
+8 / 8 HOMES SOURCE_READY
+↓
+CROSS-HOME RECONCILIATION
+↓
+VALIDATION / REVIEW
+↓
+HUMAN SNAPSHOT RELEASE
+↓
+EXTERNAL DESIGNER WORK
+```
 
-Nenhuma etapa autoriza automaticamente a seguinte.
+Nenhuma etapa autoriza Product Engineering automaticamente.
+

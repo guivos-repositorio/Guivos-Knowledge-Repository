@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-19
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
 depends_on:
   - GKR-UX-HOME-BUSINESS-NARRATIVE-001
@@ -13,7 +13,9 @@ depends_on:
   - GPA-004
   - GKR-STATE-001
   - ROADMAP-12.79.0
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 normative: true
+maturity: source_ready_for_external_design_manual_first_ai_optional
 ---
 
 # Documento Mestre — Home Pública — Guivos Business
@@ -361,22 +363,34 @@ A Home deve comunicar positivamente aquilo que o Intelligence entrega.
 
 As limitações de causalidade, dados internos empresariais, privacidade e individualidade continuam normativamente preservadas por `GKR-UX-HOME-BUSINESS-AUTHORITY-001`, mas não precisam dominar a copy pública.
 
-## 15. Direção visual obrigatória para o futuro Design
+## 15. Função semântica do Movimento Intelligence; expressão visual livre
 
-O Movimento Intelligence deve ser prioritariamente demonstrado por uma representação visual do produto, incluindo conceitos como:
+O Movimento Intelligence deve tornar compreensível **o que a Empresa pode compreender a partir das capacidades autorizadas do Intelligence**.
 
-- dashboard;
-- KPIs;
-- gráficos;
-- evolução temporal;
+Devem sobreviver semanticamente, quando aplicáveis e sustentados:
+
 - participação;
 - utilização;
 - recorrência;
+- evolução temporal;
 - tendências;
 - interesses agregados;
-- movimentos e distribuições.
+- movimentos e distribuições;
+- explicabilidade;
+- limitações e autoridade.
 
-O Documento Mestre não congela o dashboard final, métricas exatas ou layout.
+A expressão visual é propriedade da designer. Dashboard, KPIs, gráficos e outras formas de visualização podem ser explorados como hipóteses, mas não são obrigatórios e não definem a identidade do Intelligence.
+
+```text
+INTELLIGENCE
+→ COMPREENSÃO ÚTIL E CONTEXTUALIZADA
+
+INTELLIGENCE
+≠ DASHBOARD
+≠ KPI COMO IDENTIDADE
+```
+
+O Documento Mestre não congela métricas, números, dashboard ou layout.
 
 ## 16. CTA para Guivos Intelligence
 
@@ -668,3 +682,372 @@ Com este Documento Mestre validado, a próxima etapa governada é:
 > **SOURCE LOCK — HOME GUIVOS BUSINESS**
 
 O Source Lock deverá congelar a fonte pública aprovada para implementação e Design, sem reabrir decisões já consolidadas salvo nova autorização explícita.
+
+---
+
+## 29. Prontidão documental para Designer e IA
+
+### 29.1 Resultado da auditoria
+
+```text
+HOME BUSINESS
+→ SOURCE_READY = PASS
+
+MASTER
+→ GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.0
+
+SOURCE LOCK
+→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.0
+
+CONVERSION
+→ GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0
+
+AUTHORITY CONTRACTS
+→ GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0
+
+PRODUCT AUTHORITY
+→ GPA-004 v1.6.0
+
+MATERIAL DOCUMENT GAPS
+→ 0
+
+UNRESOLVED SEMANTIC CONFLICTS
+→ 0
+
+VISUAL IDENTITY PRE-IMPOSED
+→ 0
+```
+
+A auditoria removeu duas prescrições de checkpoint superadas:
+
+1. Business não está mais fora do Handoff das Homes;
+2. Intelligence não precisa ser materializado prioritariamente como dashboard/KPIs/gráficos.
+
+O que permanece obrigatório é a **função semântica**: demonstrar compreensão útil e contextualizada sem inventar métricas.
+
+### 29.2 Condições e estados que a solução deve tolerar
+
+#### Empresa ainda explorando
+
+- a Home deve explicar valor antes de forçar escolha de plano;
+- CTA pode conduzir a compreensão/configuração;
+- nenhum preço precisa ser inventado para tornar a proposta clara.
+
+#### Plano conhecido, entitlements ainda não congelados
+
+- Start, Growth, Scale e Enterprise são planos vigentes;
+- limites, entitlements, preços e SLAs não podem ser preenchidos por inferência;
+- comparação deve tolerar campos ainda não publicados.
+
+#### Configurador com informação incompleta
+
+- pode pedir somente o necessário;
+- informação ausente permanece ausente;
+- não estimar preço ou capacidade sem regra autorizada;
+- configurador não se reduz a calculadora de preço.
+
+#### Contratação
+
+- princípio vigente: contratação online;
+- Self-service, Com apoio do suporte e Gerenciado são modelos de implementação/operação posteriores, não três formas de contratação;
+- formas de pagamento, tributos, moedas e mercados exigem autoridade real.
+
+#### Journey custeado pela empresa
+
+- empresa amplia acesso;
+- Pessoa preserva autoridade sobre sua Journey;
+- empresa não recebe controle sobre objetivos, decisões ou contexto pessoal por financiar acesso.
+
+#### Programas de Incentivo
+
+- incentivo pode reconhecer, estimular, viabilizar ou abrir possibilidades;
+- não deve redefinir evolução;
+- benefícios/pontos não viram movimento autônomo da Home quando o Source Lock os exclui publicamente.
+
+#### Pontos
+
+- pontos permanecem fora da narrativa pública principal da Home Business conforme Source Lock;
+- não inventar orçamento, taxa, saldo, expiração ou conversão;
+- pontos ≠ evolução.
+
+#### Intelligence
+
+- comunicar compreensão agregada/protegida dentro de autoridade;
+- não exigir dashboard como identidade visual;
+- nenhuma métrica real pode ser inventada;
+- dados empresariais internos, causalidade e individualidade preservam os contratos de autoridade.
+
+#### Empresa sem dados suficientes
+
+- não simular insights;
+- não criar KPIs ou gráficos “reais”;
+- demonstração conceitual deve permanecer placeholder explícito.
+
+#### Mercado/país/moeda ainda não confirmado
+
+- escala global é princípio arquitetural;
+- não afirmar disponibilidade universal;
+- layout deve tolerar moedas, idiomas e termos variáveis.
+
+#### Integração/API/SSO ainda não congelada
+
+- não apresentar como disponível;
+- arquitetura deve tolerar inclusão futura sem depender dessas capacidades para explicar valor.
+
+#### Mobile
+
+- tese, Journey, Incentivos, ecossistema, Intelligence, planos e contratação permanecem compreensíveis;
+- comparação de planos/configuração deve ter solução própria;
+- não reduzir mobile a tabela desktop espremida.
+
+#### Reduced motion / baixa conectividade
+
+- entendimento não depende de animações ou dashboards dinâmicos;
+- elementos demonstrativos possuem fallback estático/textual.
+
+### 29.3 Acessibilidade e robustez
+
+A solução deve considerar:
+
+- teclado;
+- foco visível;
+- leitores de tela;
+- contraste;
+- texto ampliado;
+- comparação de planos acessível sem depender de cor;
+- tabelas com semântica adequada quando usadas;
+- formulários/configurador com labels, erros e instruções claras;
+- reduced motion;
+- fallback de gráficos/mídia;
+- expansão de texto;
+- internacionalização;
+- conteúdo robusto a entitlements e preços variáveis;
+- ausência de dark patterns na contratação.
+
+### 29.4 Matriz operacional específica do Business
+
+#### CANONICAL
+
+- Business é produto especializado B2B para empresas;
+- Organização ≠ Business;
+- Empresa é ponto de partida do contrato comercial específico;
+- pergunta-mãe, tese, promessa e princípio humano do Master permanecem;
+- 10 movimentos;
+- empresa pode apoiar sem decidir evolução;
+- Journey aparece antes de Incentivos;
+- Journey custeado ≠ Journey controlado;
+- Pontos permanecem fora da narrativa pública principal da Home;
+- Intelligence comunica compreensão útil sem absorver autoridade;
+- CTA `Conheça o Guivos Intelligence`;
+- quatro planos: Start, Growth, Scale, Enterprise;
+- contratação online;
+- Self-service / Suporte / Gerenciado = implementação/operação;
+- escala global como princípio, não claim de disponibilidade;
+- configurador auxilia adequação, não é apenas calculadora de preço.
+
+#### DESIGN_CREATIVE
+
+- identidade visual;
+- tipografia;
+- paleta;
+- fotografia;
+- ilustração;
+- iconografia;
+- composição;
+- grid;
+- ritmo;
+- representação de Journey/Incentivos/ecossistema;
+- expressão do Intelligence;
+- comparação de planos;
+- configurador;
+- formulários;
+- motion;
+- componentes;
+- desktop/mobile;
+- direção de arte;
+- linguagem gráfica.
+
+#### CONTENT_CANDIDATE
+
+- supporting copy;
+- headlines de apoio;
+- labels do configurador;
+- microcopy;
+- explicações de planos;
+- CTA secundário;
+- mensagens de escala/globalidade;
+- copy comercial não congelada.
+
+#### DESIGN_HYPOTHESIS
+
+- agrupamento dos 10 movimentos;
+- representação de possibilidades;
+- visualização do ecossistema;
+- forma de demonstrar Intelligence;
+- apresentação dos planos;
+- comparativo;
+- comportamento do configurador;
+- etapas de contratação;
+- representação dos modelos de implementação;
+- responsividade.
+
+#### PROTOTYPE_PLACEHOLDER
+
+- empresa;
+- KPI;
+- gráfico;
+- dado;
+- plano;
+- preço;
+- limite;
+- moeda;
+- configuração;
+- integração;
+- mercado;
+- case;
+- depoimento;
+- dashboard;
+- exemplo de resultado.
+
+Placeholder nunca deve parecer operação real.
+
+#### REAL_DATA_REQUIRED
+
+- cliente;
+- logo;
+- case;
+- depoimento;
+- quantidade de empresas/pessoas;
+- país ativo;
+- moeda;
+- preço;
+- desconto;
+- limite;
+- entitlement;
+- SLA;
+- API;
+- integração;
+- SSO;
+- meio de pagamento;
+- condição tributária;
+- KPI;
+- dado;
+- resultado;
+- causalidade;
+- disponibilidade de modelo operacional;
+- suporte.
+
+#### OPEN_QUESTION
+
+- preços;
+- limites/entitlements;
+- fórmula comercial;
+- pricing por participante;
+- Journey custeado;
+- níveis comerciais do Intelligence;
+- critérios exatos dos modelos de implementação;
+- SLA;
+- integrações;
+- APIs;
+- SSO;
+- pagamentos;
+- moedas;
+- países;
+- regras fiscais;
+- checkout;
+- métricas reais.
+
+Esses itens não bloqueiam Design porque o pacote exige ausência honesta e componentes tolerantes a futura configuração.
+
+#### PROHIBITED_INFERENCE
+
+Não criar ou insinuar:
+
+- preço;
+- cliente;
+- case;
+- país ativo;
+- moeda suportada;
+- integração disponível;
+- API;
+- SSO;
+- SLA;
+- suporte 24/7;
+- métricas reais;
+- causalidade;
+- dashboard operacional;
+- empresa controlando a Journey da Pessoa;
+- pontos = evolução;
+- Organização = Business;
+- plano como autoridade sobre dados;
+- contratação offline como fluxo paralelo;
+- Self-service/Suporte/Gerenciado como tipos de compra;
+- Intelligence = dashboard;
+- KPI como prova automática de impacto.
+
+### 29.5 Brief mínimo para a designer
+
+A designer deve conseguir responder:
+
+1. qual é a relação entre Empresa, Organização e Business;
+2. qual é a pergunta-mãe e a promessa;
+3. quais são os 10 movimentos;
+4. por que Journey aparece antes de Incentivos;
+5. por que a empresa apoia sem decidir evolução;
+6. por que Pontos permanecem fora da Home pública;
+7. como o ecossistema aparece sem virar grade de produtos;
+8. o que Intelligence deve comunicar e o que não é;
+9. quais são os quatro planos;
+10. como contratação e implementação/operação se separam;
+11. qual o papel do configurador;
+12. quais campos comerciais continuam abertos;
+13. quais fatos exigem dado real;
+14. o que é livre para criação;
+15. o que é proibido inferir;
+16. como a solução funciona em mobile e sem motion.
+
+### 29.6 Uso opcional de IA
+
+Se a designer usar IA, fornecer:
+
+1. autoridades comuns vigentes;
+2. `GPA-004`;
+3. este Master;
+4. Source Lock Business;
+5. autoridade de conversão;
+6. contratos de autoridade;
+7. matriz operacional desta seção;
+8. objetivo explícito.
+
+Para qualquer representação do Intelligence, `GPA-006 v2.0.0` prevalece sobre referências visuais históricas.
+
+### 29.7 Fechamento
+
+```text
+HOME BUSINESS
+→ SOURCE_READY = PASS
+
+DESIGNER
+→ CAN START FROM DOCUMENTATION AFTER GLOBAL PACKAGE RELEASE
+
+AI
+→ OPTIONAL
+
+FIGMA MAKE
+→ NOT REQUIRED
+
+VISUAL DIRECTION
+→ DESIGN-OWNED
+
+INTELLIGENCE
+→ COMPREHENSION FUNCTION PRESERVED
+→ DASHBOARD NOT REQUIRED
+
+PRICING / ENTITLEMENTS / MARKETS / INTEGRATIONS
+→ REAL DATA / OPEN AUTHORITIES
+
+MATERIAL SEMANTIC GAP
+→ 0
+```
+
+Este `PASS` não congela pricing, entitlements, mercados, integrações, SLA ou operação final.

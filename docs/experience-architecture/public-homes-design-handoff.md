@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
-title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
+title: Homes Públicas — Handoff Canônico para Designer e Sistemas de IA
 status: active
-version: 1.5.1
+version: 1.6.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: post_audit_design_handoff_release_granted_pre_execution
+maturity: post_audit_manual_first_ai_optional_source_handoff
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -42,7 +42,7 @@ depends_on:
 
 ## 0. Estado pós-auditoria e gate de produção
 
-A Auditoria Integral do GKR está concluída com `PASS`. O método de handoff permanece vigente, mas esta revisão separa explicitamente **prontidão documental** de **liberação operacional para a contratação/produção definitiva no Figma**.
+A Auditoria Integral do GKR está concluída com `PASS`. O método de handoff permanece vigente, mas esta revisão separa explicitamente **prontidão documental** de **execução externa de Design**, preservando a designer humana como executora criativa principal e sistemas de IA como apoio opcional.
 
 ```text
 AUDITORIA INTEGRAL
@@ -67,7 +67,7 @@ As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível
 
 O GKR **não congela identidade visual canônica** para estas Homes. A designer pode criar, com originalidade e autonomia, tipografia, paleta, imagens, ilustração, iconografia, grid, ritmo, composição, atmosfera, motion, linguagem gráfica, tratamento de componentes e tom de voz/copy não congelada.
 
-Essas escolhas são **output de Design**, não pré-condição documental. Depois que uma direção for aprovada no gate de protótipo, a solução escolhida deve ser documentada no próprio Figma para garantir consistência e handoff.
+Essas escolhas são **output de Design**, não pré-condição documental. Depois que uma direção for aprovada pela Guivos, a solução escolhida deve ser documentada nos artefatos finais de Design necessários à consistência, continuidade e handoff.
 
 A liberdade criativa não autoriza alterar significado, papéis de produto, nomenclatura oficial, assinatura institucional quando utilizada, claims factuais, regras econômicas, disponibilidade, dados, parceiros, causalidade, privacidade ou demais contratos governados.
 
@@ -78,8 +78,8 @@ SEMANTIC / FUNCTIONAL TRUTH
 VISUAL / CREATIVE EXPRESSION
 → DESIGN
 
-GENERATIVE TOOL
-→ EXPLORATION INSTRUMENT
+AI SYSTEM / GENERATIVE TOOL
+→ OPTIONAL SUPPORT INSTRUMENT
 
 HUMAN APPROVAL
 → SELECTS THE DIRECTION
@@ -89,7 +89,7 @@ HUMAN APPROVAL
 
 ## 1. Finalidade
 
-Este documento governa o **handoff das oito Homes públicas já convergidas da Guivos para a fase de Design, UX, UI, wireframe e prototipação**.
+Este documento governa o **handoff das oito Homes públicas já convergidas da Guivos para a designer e, opcionalmente, para sistemas de IA usados como apoio à criação**.
 
 Seu objetivo é permitir que Design trabalhe com um conjunto pequeno, atual e semanticamente controlado de fontes, sem reconstruir decisões a partir do histórico completo do Guivos Knowledge Repository.
 
@@ -104,14 +104,17 @@ As oito Homes abrangidas por esta versão são:
 7. Home Pública — Guivos Business;
 8. Home Pública — Guivos Intelligence.
 
-Este documento **não desenha as páginas** e não determina solução visual final. Ele define quais decisões precisam ser preservadas, quais fontes têm autoridade, como ferramentas generativas podem ser utilizadas e onde termina a arquitetura governada e começa a liberdade de Design.
+Este documento **não desenha as páginas** e não determina solução visual final. Ele define quais decisões precisam ser preservadas, quais fontes têm autoridade, como a designer deve consumir o pacote, como sistemas de IA podem ser utilizados opcionalmente e onde termina a arquitetura governada e começa a liberdade de Design.
 
 ```text
 GKR
 → define significado, função, narrativa, fronteiras, Source Locks e invariantes
 
-DESIGN / FIGMA MAKE / FERRAMENTA EQUIVALENTE
-→ produz exploração visual fora desta frente canônica
+DESIGNER / FERRAMENTA DE DESIGN ESCOLHIDA
+→ produz a solução criativa fora desta frente canônica
+
+IA / FERRAMENTA GENERATIVA
+→ apoio opcional, nunca pré-requisito
 
 VALIDAÇÃO HUMANA
 → confronta forma e significado contra o GKR
@@ -134,15 +137,16 @@ A execução somente fica liberada quando coexistirem:
 
 Depois desse release, podem ser executados:
 
-- exploração em Figma Make e ferramentas equivalentes;
+- criação manual da designer;
 - arquitetura visual;
-- wireframes de baixa fidelidade;
+- wireframes quando úteis ao processo escolhido pela designer;
 - exploração de UX e direção visual;
 - UI de alta fidelidade;
-- protótipos de navegação e interação;
+- protótipos de navegação e interação quando necessários;
 - estudos responsivos desktop e mobile;
+- uso opcional de sistemas de IA para ideação, variação, apoio ou autoauditoria;
 - validação das soluções contra os contratos do GKR;
-- construção do Figma definitivo dentro da direção humana aprovada.
+- construção e documentação dos artefatos finais de Design na ferramenta contratada.
 
 O release de Design não autoriza automaticamente:
 
@@ -168,9 +172,9 @@ A existência deste documento, isoladamente, não significa que um snapshot de e
 
 ## 3. Princípio central
 
-> **Ferramentas generativas são instrumentos de exploração e materialização, não fontes de decisão sobre a arquitetura das Homes.**
+> **A designer humana é a executora criativa principal. Ferramentas generativas, quando usadas, são instrumentos opcionais de apoio e nunca fontes de decisão sobre a arquitetura das Homes.**
 
-Uma solução visual produzida por IA, Figma Make, plugin, template, benchmark ou referência externa não se torna canônica por ter sido gerada. Somente após validação humana contra o GKR uma direção pode ser promovida.
+Uma solução visual produzida manualmente pela designer ou apoiada por IA, plugin, template, benchmark ou referência externa não se torna canônica por sua origem. Somente após validação humana contra o GKR uma direção pode ser promovida.
 
 ---
 
@@ -265,9 +269,9 @@ Se houver conflito sobre significado da Home, prevalecem as autoridades específ
 
 ---
 
-## 6. Controle semântico do input generativo
+## 6. Controle semântico do pacote e do uso opcional de IA
 
-Toda execução deve começar por um **Source Lock operacional específico da Home**.
+Toda execução deve começar por um **Source Lock operacional específico da Home**. Esse Source Lock serve primeiro à compreensão da designer e, se houver uso de IA, também controla o contexto fornecido à ferramenta.
 
 O Source Lock deve registrar:
 
@@ -280,7 +284,7 @@ O Source Lock deve registrar:
 - decisões adicionais autorizadas para a execução;
 - questões abertas.
 
-> **A ferramenta deve saber de quais fontes pode aprender antes de receber liberdade para propor forma.**
+> **A designer deve saber quais fontes governam significado antes de criar. Se usar IA, a ferramenta deve receber exatamente o mesmo limite de autoridade.**
 
 Não utilizar como input indiscriminado:
 
@@ -293,9 +297,9 @@ Não utilizar como input indiscriminado:
 
 ---
 
-## 7. Estrutura obrigatória do prompt
+## 7. Estrutura obrigatória do prompt quando houver uso de IA
 
-O prompt de exploração deve conter:
+Quando a designer optar por usar IA, o prompt deve conter:
 
 1. **Objetivo** — Home e artefato a explorar;
 2. **Fontes autorizadas** — IDs e versões;
@@ -510,7 +514,7 @@ Cada exemplo analítico demonstra **um tipo de leitura**, não prova que a capac
 
 ---
 
-## 14. Fluxo recomendado
+## 14. Fluxo recomendado — manual-first / AI-optional
 
 ```text
 PACOTE OFICIAL DA EMISSÃO VIGENTE
@@ -523,11 +527,13 @@ LEIA-PRIMEIRO DA HOME
 ↓
 FONTES CANÔNICAS ISOLADAS
 ↓
-SOURCE LOCK / HANDOFF / GENINPUT ESPECÍFICOS
+COMPREENSÃO HUMANA DA DESIGNER
 ↓
-OUTPUT = EXPLORAÇÃO
+CRIAÇÃO MANUAL LIVRE
 ↓
-VALIDAÇÃO HUMANA
+IA OPCIONAL, SE A DESIGNER DECIDIR
+↓
+REVISÃO / VALIDAÇÃO HUMANA
 ```
 
 A emissão do pacote não substitui a execução de Design.
@@ -553,7 +559,7 @@ APROVADO PARA HANDOFF DE ENGENHARIA
 → somente após decisão específica posterior
 ```
 
-Nenhum output generativo nasce `canônico` ou `aprovado`.
+Nenhum output criativo ou generativo nasce `canônico` ou `aprovado`.
 
 ---
 

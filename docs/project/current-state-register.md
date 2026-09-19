@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.47.0
+version: 3.48.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -10,6 +10,7 @@ maturity: current_truth_gia_cog_001_active_normative
 related:
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
@@ -2337,80 +2338,167 @@ PRODUCT ENGINEERING
 ```
 
 O avanço posterior ao fechamento Home Masters inclui, nesta revisão, a promoção canônica de Navigation Materialization após Surface Map, State Map, Priority Flows e sua elegibilidade O/C. Authenticated Wireframes, Design/UI, protótipo e Product Engineering continuam não liberados automaticamente.
-## 31. Homes públicas — Design Production Readiness
+## 31. Homes públicas — Source Readiness para Designer e IA
 
-A frente anterior de high-fidelity autenticado O/C permanece preservada no gate já alcançado, mas sua execução continua não autorizada. A prioridade temporária passa a ser garantir que as oito Homes públicas possam ser contratadas e produzidas em Figma sem lacunas documentais materiais.
+A prioridade corrente deixa de ser a execução de Figma e retorna à **completude documental das oito Homes públicas antes do trabalho externo de Design**.
 
-Baseline física de início:
-
-```text
-MAIN
-→ fada353688e26047a8eb8f45a8de67af0aa9b3d0
-
-O/C HIGH-FIDELITY ELIGIBILITY
-→ PASS
-
-O/C HIGH-FIDELITY DESIGN AUTHORIZATION
-→ NOT_GRANTED
-```
-
-`GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.1` formaliza o critério de prontidão corrente e registra o gate de release já satisfeito pela autoridade própria.
-
-Decisão humana incorporada:
+A decisão humana vigente é:
 
 ```text
-IDENTIDADE VISUAL CANÔNICA PRÉVIA
+DESIGNER HUMANA
+→ EXECUTORA CRIATIVA PRINCIPAL
+→ CRIAÇÃO MANUAL LIVRE
+
+GKR
+→ FONTE DE SIGNIFICADO / FUNÇÃO / LIMITES / FATOS / ARQUITETURA
+
+IA
+→ APOIO OPCIONAL
+→ TOOL-AGNOSTIC
+
+FIGMA MAKE
 → NOT REQUIRED
 
-TIPOGRAFIA / PALETA / IMAGENS / LINGUAGEM GRÁFICA / ATMOSFERA
-→ DESIGN-OWNED
-
-TOM DE VOZ / COPY NÃO CONGELADA
-→ DESIGN / CONTENT CANDIDATE
-→ HUMAN APPROVAL REQUIRED BEFORE FINALIZATION
-
-SEMANTIC / FUNCTIONAL TRUTH
-→ GKR-GOVERNED
+FIGMA EXECUTION BY GKR / CHATGPT
+→ STOPPED
 ```
 
-O pacote histórico v4 permanece reproduzível, porém superado para nova contratação. O snapshot v5 foi emitido a partir da `main` pós-PR #390 com 26 fontes canônicas atuais e oito `LEIA-PRIMEIRO / SOURCE LOCK` operacionais.
+`GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001 v0.1.0` governa a remediação corrente.
 
-Fluxo obrigatório:
+As autoridades comuns foram abertas para reconciliação com o novo modelo:
+
+```text
+GKR-UX-HOMES-DESIGN-HANDOFF-001
+→ v1.6.0 CANDIDATE
+
+GKR-UX-HOMES-GENINPUT-001
+→ v2.1.0 CANDIDATE
+→ SOURCE LOCK + DESIGN BRIEF + OPTIONAL AI PROMPT
+
+GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
+→ v1.1.0 CANDIDATE
+
+GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
+→ v3.0.0 CANDIDATE
+→ MANUAL-FIRST / AI-OPTIONAL / TOOL-AGNOSTIC
+```
+
+### 31.1 Snapshot v5
+
+O snapshot v5 permanece íntegro e reproduzível, porém é reclassificado para **histórico/congelado** para novas execuções, porque a mudança do operating model é material.
 
 ```text
 V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
-→ DESIGN PRODUCTION RELEASE GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
-→ FIGMA MAKE / EXPLORAÇÃO
-→ REVISÃO HUMANA
-→ DIREÇÃO CRIATIVA APROVADA
-→ FIGMA DEFINITIVO
-→ ACEITE FINAL
-```
-
-Estado:
-
-```text
-DESIGN PRODUCTION READINESS DOCUMENTATION
-→ INTEGRATED / ACTIVE
-
-V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
+→ HISTORICAL / FROZEN
 → branch delivery/design-handoff-v5
 → commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
 → tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
 → 26 CANONICAL SOURCES + 8 GUIDES = 34 FILES
 → 26 / 26 CANONICAL BLOBS BYTE-PRESERVED
+```
 
-FIGMA MAKE
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+O ato anterior de `DESIGN PRODUCTION RELEASE = GRANTED` permanece como registro histórico de v5, mas não autoriza uma nova execução após a mudança material de fonte/processo.
 
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+### 31.2 Execução experimental encerrada
 
-DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+`GKR-UX-HOME-PERSON-DESIGN-EXEC-001` foi encerrada como:
+
+```text
+SUPERSEDED / NOT PLANNED
+```
+
+Qualquer arquivo experimental externo criado naquela tentativa:
+
+```text
+→ NON-CANONICAL
+→ NOT A BASELINE
+→ NOT A REQUIRED REFERENCE
+→ NOT PART OF THE SOURCE PACKAGE
+→ MUST NOT CONSTRAIN THE DESIGNER
+```
+
+### 31.3 Critério corrente de fechamento
+
+A frente somente poderá declarar prontidão total quando:
+
+```text
+COMMON AUTHORITIES
+→ TOOL-AGNOSTIC
+
+HOME PESSOA
+→ SOURCE_READY
+
+HOME ORGANIZAÇÕES E COLETIVOS
+→ SOURCE_READY
+
+HOME MALL
+→ SOURCE_READY
+
+HOME TRAVEL
+→ SOURCE_READY
+
+HOME MEDIA
+→ SOURCE_READY
+
+HOME ADS
+→ SOURCE_READY
+
+HOME BUSINESS
+→ SOURCE_READY
+
+HOME INTELLIGENCE
+→ SOURCE_READY
+
+8 / 8 HOMES
+→ SOURCE_READY
+
+MATERIAL DOCUMENT GAPS
+→ 0
+
+UNRESOLVED SEMANTIC CONFLICTS
+→ 0
+
+VISUAL IDENTITY PRE-IMPOSED
+→ 0
+
+NEW EXTERNAL SNAPSHOT
+→ NOT YET EMITTED
+```
+
+### 31.4 Estado corrente
+
+```text
+SOURCE READINESS REMEDIATION
+→ IN_PROGRESS
+
+V5
+→ HISTORICAL / FROZEN
+
+NEW SOURCE PACKAGE
+→ NOT_STARTED
+
+CURRENT EXTERNAL DESIGN START
+→ SUSPENDED PENDING 8 / 8 SOURCE_READY
+
+DESIGNER MANUAL CREATION
+→ TARGET OPERATING MODEL
+
+AI SUPPORT
+→ OPTIONAL / TOOL-AGNOSTIC
+
+O/C AUTHENTICATED HIGH-FIDELITY
+→ ELIGIBILITY PASS PRESERVED
+→ EXECUTION NOT AUTHORIZED
+
+UXA-102 / V5
+→ NOT_STARTED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
+
+### 31.5 Próximo movimento governado
+
+Auditar e completar cada Home contra a matriz `SOURCE_READY`, começando pela **Home Pessoa**, sem produzir telas, wireframes, UI ou arquivos Figma dentro desta frente.
+
+Depois de `8 / 8 SOURCE_READY`, reconciliar o pacote cruzado, validar semanticamente/mecanicamente, obter revisão independente e somente então propor nova emissão externa mediante ato humano separado.

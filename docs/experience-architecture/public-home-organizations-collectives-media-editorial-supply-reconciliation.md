@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-OC-MEDIA-SUPPLY-001
 title: Reconciliação Pós-Media — Abastecimento Editorial da Home Pública — Organizações e Coletivos
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
 last_updated: 2026-08-13
 parent: GKR-UX-HOME-OC-MASTER-001
@@ -69,23 +69,23 @@ Portanto:
 
 ## 5. Usos especialmente relevantes
 
-### Movimento 02 — Reconhecer o que já existe
+### Movimento 02 — Tornar capacidades e contribuições reconhecíveis
 
 O Media pode documentar capacidades reais de Organizações e Coletivos sem insinuar que essas capacidades foram criadas pela Guivos.
 
-### Movimento 03 — Continuidade
+### Movimento 03 — Da fragmentação à continuidade
 
 Relações reais documentadas podem mostrar como uma experiência, conhecimento, conexão ou iniciativa encontrou continuidade. Quando não houver relação real, permanece obrigatório distinguir cenário ilustrativo de evidência.
 
-### Movimento 06 — Complementaridade
+### Movimento 06 — Mostrar complementaridade sem fabricar match
 
 Histórias podem tornar visíveis relações legítimas entre capacidades diferentes sem reduzir participantes a `quem oferece × quem procura`.
 
-### Movimento 08 — Valor, diversidade e escala
+### Movimento 08 — Mostrar circulação de valor, supply e escala responsável
 
 O Media pode fornecer exemplos humanos e contextuais de circulação de valor. Volume de conteúdo, audiência ou visualizações não substitui demonstração de valor real.
 
-### Movimento 09 — Confiança
+### Movimento 09 — Construir confiança por autoridade, evidência e proteção
 
 Produções editoriais podem documentar contexto e relações, mas não substituem governança, consentimento, privacidade, autoridade, fontes, limites ou transparência comercial.
 
