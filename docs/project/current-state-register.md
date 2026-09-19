@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.47.0
+version: 3.48.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -12,6 +12,8 @@ related:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
@@ -2337,79 +2339,117 @@ PRODUCT ENGINEERING
 ```
 
 O avanço posterior ao fechamento Home Masters inclui, nesta revisão, a promoção canônica de Navigation Materialization após Surface Map, State Map, Priority Flows e sua elegibilidade O/C. Authenticated Wireframes, Design/UI, protótipo e Product Engineering continuam não liberados automaticamente.
-## 31. Homes públicas — Design Production Readiness
+## 31. Homes públicas — finalização das fontes para Designer e IA opcional
 
-A frente anterior de high-fidelity autenticado O/C permanece preservada no gate já alcançado, mas sua execução continua não autorizada. A prioridade temporária passa a ser garantir que as oito Homes públicas possam ser contratadas e produzidas em Figma sem lacunas documentais materiais.
-
-Baseline física de início:
+A decisão humana de 2026-09-19 reafirma que o GKR não produzirá nem conduzirá arquivos de Design em Figma. A designer é a autora criativa das Homes e deve trabalhar a partir do Guivos Knowledge Repository, dos Documentos Mestres e das autoridades relacionadas.
 
 ```text
-MAIN
-→ fada353688e26047a8eb8f45a8de67af0aa9b3d0
+DESIGNER
+→ CREATIVE AUTHOR
+→ MANUAL FIRST-CLASS
 
-O/C HIGH-FIDELITY ELIGIBILITY
-→ PASS
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
 
-O/C HIGH-FIDELITY DESIGN AUTHORIZATION
-→ NOT_GRANTED
-```
+GKR / CHATGPT
+→ DOES NOT CREATE FIGMA
+→ DOES NOT PRESELECT VISUAL DIRECTION
 
-`GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.0.1` formaliza o critério de prontidão corrente e registra o gate de release já satisfeito pela autoridade própria.
-
-Decisão humana incorporada:
-
-```text
-IDENTIDADE VISUAL CANÔNICA PRÉVIA
-→ NOT REQUIRED
-
-TIPOGRAFIA / PALETA / IMAGENS / LINGUAGEM GRÁFICA / ATMOSFERA
+VISUAL IDENTITY
 → DESIGN-OWNED
-
-TOM DE VOZ / COPY NÃO CONGELADA
-→ DESIGN / CONTENT CANDIDATE
-→ HUMAN APPROVAL REQUIRED BEFORE FINALIZATION
-
-SEMANTIC / FUNCTIONAL TRUTH
-→ GKR-GOVERNED
 ```
 
-O pacote histórico v4 permanece reproduzível, porém superado para nova contratação. O snapshot v5 foi emitido a partir da `main` pós-PR #390 com 26 fontes canônicas atuais e oito `LEIA-PRIMEIRO / SOURCE LOCK` operacionais.
-
-Fluxo obrigatório:
+O snapshot v5 permanece histórico, reproduzível e congelado:
 
 ```text
 V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
-→ DESIGN PRODUCTION RELEASE GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
-→ FIGMA MAKE / EXPLORAÇÃO
-→ REVISÃO HUMANA
-→ DIREÇÃO CRIATIVA APROVADA
-→ FIGMA DEFINITIVO
-→ ACEITE FINAL
+→ delivery/design-handoff-v5
+→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
+→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
+→ 26 CANONICAL SOURCES + 8 GUIDES = 34 FILES
+→ FROZEN / HISTORICAL DELIVERY SNAPSHOT
+```
+
+A nova frente documental está registrada em `GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001`.
+
+Resultado candidato:
+
+```text
+C1–C15
+→ CANDIDATE PASS
+
+HOMES
+→ 8 / 8
+
+PACKAGE-LEVEL CHECKS
+→ 120 / 120 PASS
+
+OPEN MATERIAL SOURCE-COMPLETENESS FINDINGS
+→ 0
+```
+
+Remediações materiais do candidato:
+
+- Handoff comum → designer-first / IA opcional;
+- Operational Flow → tool-neutral;
+- Readiness → contrato Designer/IA;
+- Release → produção externa pela designer;
+- Mall Master → v1.1.0 com contrato determinístico absorvido;
+- Travel Master → v1.1.0 com contrato determinístico absorvido;
+- Business Master → v1.1.0 temporalmente reconciliado;
+- Intelligence Master → v0.2.0 temporalmente reconciliado;
+- artefato Figma experimental anterior → `ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE`.
+
+O pacote v6 candidato está definido em `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001`:
+
+```text
+COMMON SOURCES
+→ 5
+
+HOME-SPECIFIC UNIQUE SOURCES
+→ 22
+
+CANONICAL SOURCES
+→ 27
+
+READ-FIRST GUIDES
+→ 8
+
+TOTAL EXTERNAL FILES
+→ 35
+
+MARKDOWN
+→ PRIMARY HUMAN + AI FORMAT
 ```
 
 Estado:
 
 ```text
-DESIGN PRODUCTION READINESS DOCUMENTATION
-→ INTEGRATED / ACTIVE
-
-V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
-→ branch delivery/design-handoff-v5
-→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
-→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
-→ 26 CANONICAL SOURCES + 8 GUIDES = 34 FILES
-→ 26 / 26 CANONICAL BLOBS BYTE-PRESERVED
-
-FIGMA MAKE
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
-
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED
+→ EXTERNAL DESIGNER PRODUCTION
+
+GKR-CREATED FIGMA
+→ DISCONTINUED
+
+AI
+→ OPTIONAL
+
+V6 PACKAGE
+→ CANDIDATE DEFINED
+→ SNAPSHOT NOT EMITTED
+
+SEMANTIC / MECHANICAL
+→ REQUIRED ON FINAL HEAD
+
+INDEPENDENT REVIEW
+→ REQUIRED ON FINAL HEAD
+
+O/C AUTHENTICATED HIGH-FIDELITY AUTHORIZATION
+→ NOT_GRANTED
+
+UXA-102 / V5
+→ NOT_STARTED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
