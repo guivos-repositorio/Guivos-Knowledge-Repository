@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.42.0
+version: 3.43.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-18
 normative: true
@@ -34,6 +34,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-GLOBAL-UPDATE-2026-09-18-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-OC-NARR-001
@@ -83,7 +84,7 @@ A auditoria integral do corpus foi concluída com resultado `PASS`. A baseline f
 
 A frente posterior da Cognitive Reference Architecture também foi concluída em seu limite documental: `ADR-008` aprovou placement e ownership sob a GIA; `GIA-COG-001 v0.1.1` passou por revisão, remediação, revalidação semântica e gate de promoção e é agora a **Cognitive Reference Architecture vigente, ativa e normativa**. Essa promoção não autoriza `GIA-COG-002..008`, arquitetura física, dados reais, implementação, operação ou produção.
 
-A frente documental posterior de Organizações e Coletivos avançou por gates próprios até a Navigation Materialization canônica `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. A autorização governada subsequente `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0` liberou exclusivamente os wireframes autenticados low-fidelity, e a primeira entrega foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0`. Essa entrega existe como candidata visual low-fidelity e ainda exige validação funcional governada; não é referência visual validada, não cria novos IDs, não promove transitions e não libera high-fidelity UI, protótipo ou Product Engineering.
+A frente documental posterior de Organizações e Coletivos avançou por gates próprios até a Navigation Materialization canônica `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. A autorização governada subsequente `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0` liberou exclusivamente os wireframes autenticados low-fidelity, a primeira entrega foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e a validação funcional posterior concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`, com 30/30 itens de cobertura, 15/15 invariantes, 12/12 desafios de estado, 0 findings materiais e nenhuma reformulação requerida. O pacote Delivery + Validation passa a ser a referência corrente low-fidelity O/C, sem promover maturidade de superfície/transição nem liberar high-fidelity UI, protótipo ou Product Engineering.
 
 ## 2. Estado executivo
 
@@ -133,8 +134,8 @@ O/C AUTHENTICATED NAVIGATION MATERIALIZATION
 O/C AUTHENTICATED LOW-FIDELITY WIREFRAMES
 → AUTHORIZATION = GRANTED / GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0
 → DELIVERY = EXECUTED / GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0
-→ FUNCTIONAL VALIDATION = NOT_STARTED
-→ VALIDATED VISUAL REFERENCE = NONE
+→ FUNCTIONAL VALIDATION = PASS / GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0
+→ CURRENT LOW-FIDELITY VISUAL REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
 
 HIGH-FIDELITY UI / PROTOTYPE
 → NOT AUTHORIZED / NOT RELEASED FOR O/C AUTHENTICATED EXPERIENCE
@@ -845,7 +846,7 @@ PRODUCT ENGINEERING
 
 A antiga proposta pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece somente `HOLD_REVIEW` e não é autoridade vigente.
 
-Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. A elegibilidade para **Navigation Materialization** foi adjudicada como `PASS` e a materialização documental foi posteriormente autorizada, executada, validada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os **Authenticated Wireframes low-fidelity** foram então autorizados e a primeira entrega foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0`; sua validação funcional permanece pendente. High-fidelity UI, protótipo, implementação e Engenharia continuam não autorizados.
+Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. A elegibilidade para **Navigation Materialization** foi adjudicada como `PASS` e a materialização documental foi posteriormente autorizada, executada, validada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os **Authenticated Wireframes low-fidelity** foram então autorizados, entregues e funcionalmente validados com `PASS` por `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. High-fidelity UI, protótipo, implementação e Engenharia continuam não autorizados.
 
 ```text
 DOCUMENTAÇÃO
@@ -2214,7 +2215,8 @@ O/C AUTHENTICATED NAVIGATION MATERIALIZATION
 O/C LOW-FIDELITY WIREFRAMES
 → AUTHORIZATION = GRANTED
 → DELIVERY = EXECUTED / v0.1.0
-→ FUNCTIONAL VALIDATION = NOT_STARTED
+→ FUNCTIONAL VALIDATION = PASS / v1.0.0
+→ CURRENT REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
 
 HIGH-FIDELITY UI / PROTOTYPE
 → NOT AUTHORIZED
@@ -2245,7 +2247,9 @@ AINDA NÃO INICIADOS / NÃO AUTORIZADOS ALÉM DO BOUNDARY
 → O/C NAVIGATION MATERIALIZATION ELIGIBILITY = PASS / CANONICAL / v1.0.0
 → O/C NAVIGATION MATERIALIZATION = DEFINED / CANONICAL DOCUMENTARY / v1.0.0
 → O/C LOW-FIDELITY WIREFRAME AUTHORIZATION = GRANTED
-→ O/C LOW-FIDELITY WIREFRAME DELIVERY = EXECUTED / VALIDATION PENDING
+→ O/C LOW-FIDELITY WIREFRAME DELIVERY = EXECUTED
+→ O/C LOW-FIDELITY FUNCTIONAL VALIDATION = PASS / v1.0.0
+→ O/C CURRENT LOW-FIDELITY REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
 → PRODUCT ENGINEERING = NOT_AUTHORIZED TO RESUME
 → PMF = NOT VALIDATED
 → IMPLEMENTAÇÃO / PRODUÇÃO = NOT_AUTHORIZED
@@ -2271,7 +2275,7 @@ HOME MASTERS FRONT IN MAIN
 → MUST NOT BE CLAIMED AS INTEGRATED WHILE THIS CHANGESET IS ABSENT FROM MAIN
 ```
 
-A revisão `v3.35.0` desta autoridade integrou o changeset de fechamento de Home Masters. A revisão `v3.36.0` promoveu documentalmente o Surface Map O/C. A revisão `v3.37.0` promoveu o State Map O/C, a revisão `v3.38.0` promoveu os Priority Flows O/C, a revisão `v3.39.0` sincronizou globalmente o GKR, a revisão `v3.40.0` promoveu a elegibilidade de Navigation Materialization, a revisão `v3.41.0` promoveu a própria Navigation Materialization e a revisão `v3.42.0` registra autorização + primeira entrega low-fidelity O/C com validação ainda pendente.
+A revisão `v3.35.0` desta autoridade integrou o changeset de fechamento de Home Masters. A revisão `v3.36.0` promoveu documentalmente o Surface Map O/C. A revisão `v3.37.0` promoveu o State Map O/C, a revisão `v3.38.0` promoveu os Priority Flows O/C, a revisão `v3.39.0` sincronizou globalmente o GKR, a revisão `v3.40.0` promoveu a elegibilidade de Navigation Materialization, a revisão `v3.41.0` promoveu a própria Navigation Materialization, a revisão `v3.42.0` registrou autorização + primeira entrega low-fidelity O/C e a revisão `v3.43.0` registra a validação funcional `PASS` e a referência corrente Delivery + Validation.
 
 A PR histórica #365 permanece preservada como candidato anterior não mesclado; sua reconciliação é realizada por branch limpa sobre o `main` posterior, sem rebase ou merge cego. Os gates downstream continuam independentes:
 
