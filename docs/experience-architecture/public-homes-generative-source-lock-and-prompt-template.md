@@ -1,8 +1,8 @@
 ---
 id: GKR-UX-HOMES-GENINPUT-001
-title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
+title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.1.5
+version: 2.2.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -28,11 +28,11 @@ normative: true
 maturity: designer_first_optional_ai_tool_neutral_template
 ---
 
-# Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
+# Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 
 ## 0. Gate pós-auditoria
 
-A Auditoria Integral está concluída. Este template volta a ser a autoridade comum para construir os inputs generativos das oito Homes, subordinado ao Handoff e ao contrato de prontidão de produção.
+A Auditoria Integral está concluída. Este documento é a autoridade comum para preparar o contexto de consumo das oito Homes por designer humana e, opcionalmente, por sistemas de IA. O trabalho manual da designer é first-class; IA não é etapa obrigatória nem autoridade de produto ou Design.
 
 ```text
 TEMPLATE
@@ -264,14 +264,16 @@ A execução deve utilizar somente o pacote correspondente à Home em trabalho, 
 
 ### 6.0 Fontes comuns obrigatórias
 
-Todas as oito Homes recebem exatamente estas quatro autoridades comuns do Manifesto v5:
+No regime corrente/v6, todas as oito Homes recebem estas quatro autoridades comuns:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.1` — `docs/experience-architecture/public-homes-design-handoff.md`;
-2. `GKR-UX-HOMES-GENINPUT-001 v2.1.5` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
-3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.1.4` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.1` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`.
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — `docs/experience-architecture/public-homes-design-handoff.md`;
+2. `GKR-UX-HOMES-GENINPUT-001` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
+3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`.
 
-Essas quatro fontes comuns não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso de IA, sequência de execução e critérios de produção/aceite.
+As **versões exatas** do conjunto entregue são fixadas pelo manifesto/snapshot correspondente. Para o candidato corrente, prevalece `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001`. Este documento não cria version-lock circular entre autoridades comuns.
+
+Essas quatro fontes não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso opcional de IA, sequência de execução e critérios de produção/aceite.
 
 ### 6.1 Home Pública — Pessoa
 
@@ -291,14 +293,14 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-MALL-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-mall-master-document.md`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.1.0` — `docs/experience-architecture/public-home-mall-master-document.md`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md`.
 
 ### 6.4 Home Pública — Guivos Travel
 
 Fontes específicas:
 
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-travel-master-document.md`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.1` — `docs/experience-architecture/public-home-travel-master-document.md`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
 
 ### 6.5 Home Pública — Guivos Media
@@ -319,8 +321,8 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.0.0` — `docs/experience-architecture/public-home-business-source-lock.md`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-business-master-document.md`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.0` — `docs/experience-architecture/public-home-business-source-lock.md`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.1` — `docs/experience-architecture/public-home-business-master-document.md`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 - `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.0` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.6.0` — `docs/product-architecture/business.md`.
@@ -331,7 +333,7 @@ Fontes específicas:
 
 - `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
 - `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.0` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0` — `docs/product-architecture/intelligence-product-source-lock.md`;
 - `GPA-006 v2.0.0` — `docs/product-architecture/intelligence.md`.
 
