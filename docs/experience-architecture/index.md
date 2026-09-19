@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.13.0
+version: 1.14.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 related:
@@ -49,6 +49,8 @@ related:
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - M7.88
 normative: false
 ---
@@ -210,18 +212,20 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 |---|---|
 | Jornadas Integradas | `active` 0.48.0; Jobs + IA + Surface Map + State Map + Priority Flows + Navigation Materialization O/C reconciliados |
 | Jornada da Pessoa | `draft`; PER-010..012 validados localmente; TRN-008..013 integrais |
-| Jornada do Coletivo | `draft` 0.23.0; Jobs + IA + Surface Map + State Map + Priority Flows + Navigation Materialization definidos; wireframe principal pendente |
-| Jornada da Organização | `draft` 0.16.0; Jobs + IA + Surface Map + State Map + Priority Flows + Navigation Materialization definidos; wireframe principal pendente |
+| Jornada do Coletivo | `draft` 0.23.0; Navigation Materialization definida; entrega low-fidelity principal executada e validação funcional pendente |
+| Jornada da Organização | `draft` 0.16.0; Navigation Materialization definida; entrega low-fidelity principal executada e validação funcional pendente |
 | atores, autoridades e jobs autenticados O/C | `GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.0`; **ACTIVE / DEFINED** |
 | Arquitetura da Informação autenticada O/C | `GKR-UX-ORGCOL-AUTH-IA-001 v1.3.0`; **ACTIVE / DEFINED PRE-SURFACE-MAP** |
 | mapa lógico autenticado O/C | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY** |
 | mapa de estados autenticado O/C | `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY**; não cria/promove `GKR-TRN-*` nem materializa Priority Flows |
 | fluxos prioritários autenticados O/C | `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY**; não cria/promove `GKR-TRN-*` nem materializa navegação |
 | elegibilidade de Navigation Materialization O/C | `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0`; **PASS / ACTIVE / CANONICAL** |
-| Navigation Materialization autenticada O/C | `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY / PRE-WIREFRAME**; não cria/promove `GKR-SURF-*` ou `GKR-TRN-*` |
+| Navigation Materialization autenticada O/C | `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY** |
+| autorização de wireframes low-fidelity O/C | `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0`; **GRANTED / ACTIVE / NORMATIVE** |
+| entrega low-fidelity O/C | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0`; **EXECUTED / FUNCTIONAL VALIDATION PENDING** |
 | catálogo integrado | `active` 0.37.0; **0 SVGs físicos após F-016-A**; maturidade funcional preservada por autoridades textuais |
 | proveniência visual histórica | documentos de galeria/matriz removidos do corpus corrente; recuperáveis no histórico Git; sem autoridade visual |
-| lacunas | `active` 0.37.0; Surface Map + State Map + Priority Flows + Navigation Materialization O/C removidos da fila; Authenticated Wireframes permanecem pendentes |
+| lacunas | `active` 0.37.0; entrega low-fidelity O/C existe; validação funcional do pacote permanece pendente |
 | registro de superfícies | `active` 0.26.0; 57 IDs; maturidade por item; crosswalk O/C sem promoção automática |
 | registro de transições | `active`; 66 transições; State Map não promove maturidade por inferência |
 | detalhamento da Pessoa | `active`; PER-008 recorrente e PER-010..012 com continuidade D5-C validada |
@@ -271,7 +275,8 @@ V1 — encerrada pela UXA-097
 → O/C Priority Flows — DEFINED / CANONICAL DOCUMENTARY
 → O/C Navigation Materialization Eligibility — PASS / ACTIVE / CANONICAL
 → O/C Navigation Materialization — DEFINED / CANONICAL DOCUMENTARY / v1.0.0
-→ O/C Authenticated Wireframes — NOT STARTED / NOT RELEASED
+→ O/C Low-Fidelity Wireframe Authorization — GRANTED / v1.0.0
+→ O/C Low-Fidelity Wireframe Delivery — EXECUTED / v0.1.0 / VALIDATION PENDING
 → V5 — pendente e não iniciada
 ```
 
@@ -279,4 +284,4 @@ D5-A/B/C1/C2/C3/C4A/C4B e a frente documental O/C não consomem nem antecipam V5
 
 ## 11. Próxima evolução possível
 
-A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o **Surface Map lógico-documental canônico** e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` define o **State Map funcional canônico documental**. Os **Priority Flows** estão definidos documentalmente em `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`; a elegibilidade de Navigation Materialization está `PASS` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0`; e a própria Navigation Materialization está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os Authenticated Wireframes permanecem pendentes e exigem autorização própria. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
+A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o **Surface Map lógico-documental canônico** e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` define o **State Map funcional canônico documental**. Os **Priority Flows** estão definidos documentalmente em `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`; a elegibilidade de Navigation Materialization está `PASS` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0`; e a própria Navigation Materialization está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os Authenticated Wireframes low-fidelity foram autorizados e a primeira entrega foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0`; a validação funcional permanece pendente e é o próximo gate. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
