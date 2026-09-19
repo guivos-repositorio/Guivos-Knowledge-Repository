@@ -33,7 +33,7 @@ Seu papel é:
 - estabelecer a ordem de autoridade entre produto, manifesto, modelo de conhecimento, arquitetura de Intelligence, grafo e autoridades temáticas auxiliares;
 - separar afirmações públicas permitidas de implementação, operação, pricing, infraestrutura ou desempenho ainda não comprovados;
 - impedir que tecnologias, mecanismos ou interfaces substituam silenciosamente a identidade e a proposta de valor do produto;
-- impedir que a futura Home transforme personalização em vigilância, Intelligence populacional em perfil individual ou relevância em prioridade comercial;
+- impedir que a Home Pública transforme personalização em vigilância, Intelligence populacional em perfil individual ou relevância em prioridade comercial;
 - registrar o que continua aberto e não pode ser preenchido por inferência durante a construção da Home.
 
 Este Source Lock **não é**:
@@ -199,7 +199,7 @@ Uso permitido:
 - classificação candidata;
 - diferença entre domínio, identidade, diagnóstico, score e prova de evolução.
 
-A futura Home do Intelligence não deve se transformar em uma Home dos Domínios do Journey.
+A Home Pública do Intelligence não deve se transformar em uma Home dos Domínios do Journey.
 
 ### 5.4 Business
 
@@ -211,7 +211,7 @@ Uso permitido:
 - confirmar que Intelligence não é módulo do Business;
 - confirmar que a empresa recebe leitura populacional protegida e não a Journey individual.
 
-A futura Home do Intelligence não deve se transformar em uma Home Business.
+A Home Pública do Intelligence não deve se transformar em uma Home Business.
 
 ## 6. Fontes excluídas por padrão
 
@@ -254,13 +254,13 @@ flowchart TD
 
 Regra de precedência:
 
-> **Em qualquer conflito sobre identidade, valor, autoridade ou limites do Guivos Intelligence, prevalece `GPA-006 v2.0.1`, limitado pelo presente Source Lock quanto ao uso na futura Home.**
+> **Em qualquer conflito sobre identidade, valor, autoridade ou limites do Guivos Intelligence, prevalece `GPA-006 v2.0.1`, limitado pelo presente Source Lock quanto ao uso na Home Pública.**
 
 Arquiteturas e tecnologias não podem reescrever autoridade de produto.
 
 ## 8. Centro semântico congelado
 
-A futura Home deve preservar estes elementos, ainda que sua expressão pública final seja refinada durante a arquitetura narrativa.
+A Home Pública deve preservar estes elementos, ainda que sua expressão pública final seja refinada durante a arquitetura narrativa.
 
 ### 8.1 Natureza
 
@@ -290,7 +290,7 @@ Esses elementos podem ser traduzidos editorialmente, mas não substituídos por 
 
 ## 9. Duas frentes obrigatórias
 
-A futura Home deve reconhecer que existe **um único produto com duas frentes superiores de valor**.
+A Home Pública deve reconhecer que existe **um único produto com duas frentes superiores de valor**.
 
 ```mermaid
 flowchart TD
@@ -350,11 +350,11 @@ PAGAMENTO ≠ PERTINÊNCIA
 MAIOR PLANO ≠ MENOR PRIVACIDADE
 ```
 
-Esses contratos são semânticos e arquiteturais. A futura Home não pode removê-los do significado mesmo quando não aparecerem literalmente em copy pública.
+Esses contratos são semânticos e arquiteturais. A Home Pública não pode removê-los do significado mesmo quando não aparecerem literalmente em copy pública.
 
 ## 11. Tradução pública permitida — Pessoa / Journey
 
-A futura Home pode comunicar que o Intelligence:
+A Home Pública pode comunicar que o Intelligence:
 
 - considera contexto autorizado para tornar a própria experiência da Pessoa mais relevante;
 - relaciona conhecimento, evidências, experiências e possibilidades;
@@ -375,7 +375,7 @@ Não pode comunicar que o Intelligence:
 
 ## 12. Tradução pública permitida — Business / População
 
-A futura Home pode comunicar que o Intelligence ajuda empresas a compreender:
+A Home Pública pode comunicar que o Intelligence ajuda empresas a compreender:
 
 - participação;
 - utilização;
@@ -399,7 +399,7 @@ Não pode comunicar que o Intelligence:
 
 ## 13. Relação com os demais Produtos Especializados
 
-A futura Home pode demonstrar transversalidade, desde que preserve:
+A Home Pública pode demonstrar transversalidade, desde que preserve:
 
 ```mermaid
 flowchart LR
@@ -454,7 +454,7 @@ flowchart LR
 
 ## 15. Tecnologia — posição pública permitida
 
-A futura Home pode comunicar que o Guivos Intelligence combina, conforme finalidade e autoridade:
+A Home Pública pode comunicar que o Guivos Intelligence combina, conforme finalidade e autoridade:
 
 - conhecimento;
 - relações;
@@ -481,7 +481,7 @@ Não inverter essa cadeia.
 
 ## 16. Tecnologia — claims proibidos no estado atual
 
-Sem nova evidência canônica, a futura Home não pode afirmar:
+Sem nova evidência canônica, a Home Pública não pode afirmar:
 
 - Neo4j em produção;
 - Grafo Global populado em produção;
@@ -615,7 +615,7 @@ O produto reconhece seis modos conceituais:
 - documental;
 - programático.
 
-A futura Home pode comunicar que Intelligence pode aparecer **dentro de outros produtos ou como experiência direta**.
+A Home Pública pode comunicar que Intelligence pode aparecer **dentro de outros produtos ou como experiência direta**.
 
 Não deve transformar a existência conceitual desses modos em claim de disponibilidade operacional atual.
 
@@ -635,7 +635,7 @@ PRODUTO PRÓPRIO
 ASSINATURA PRÓPRIA OBRIGATÓRIA
 ```
 
-A futura Home não deve inventar checkout, plano ou preço próprio de Intelligence para Pessoa.
+A Home Pública não deve inventar checkout, plano ou preço próprio de Intelligence para Pessoa.
 
 ### Business
 
@@ -653,11 +653,11 @@ MAIOR PLANO
 
 Uma oferta B2B autônoma do Guivos Intelligence permanece **possibilidade futura**.
 
-A futura Home não pode tratá-la como oferta vigente, plano contratado ou checkout disponível sem nova autoridade.
+A Home Pública não pode tratá-la como oferta vigente, plano contratado ou checkout disponível sem nova autoridade.
 
 ## 23. Privacy e proteção como parte do significado do produto
 
-A futura Home pode comunicar confiança, proteção e responsabilidade como propriedades arquiteturais do produto.
+A Home Pública pode comunicar confiança, proteção e responsabilidade como propriedades arquiteturais do produto.
 
 Não pode afirmar, sem evidência operacional própria:
 
@@ -830,7 +830,7 @@ CONSULTAR / NÃO CONSULTAR / REABRIR GOVERNANÇA
 
 Uma fonte consultada pontualmente não se torna automaticamente parte permanente do lock.
 
-## 31. Checklist pré-Home
+## 31. Checklist de integridade da Home
 
 Antes de iniciar a arquitetura conceitual da Home Intelligence, confirmar:
 
