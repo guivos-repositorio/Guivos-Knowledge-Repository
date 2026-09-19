@@ -363,6 +363,24 @@ O `LEIA-PRIMEIRO` não pode sobrescrever os documentos que lista. Se houver conf
 
 ## 8. Tipos de informação dentro do prompt
 
+## 8.1 Requisitos transversais obrigatórios do LEIA-PRIMEIRO
+
+Cada Source Lock v6 deve explicitar, além das oito classes:
+
+- mobile/responsividade como solução própria, não mero empilhamento;
+- acessibilidade;
+- fallback quando mídia, motion, hover ou conectividade não estiverem disponíveis;
+- reduced motion;
+- preservação de significado sem vídeo/animação;
+- touch targets e foco/teclado quando aplicável;
+- regra de que materiais Figma existentes são referência opcional, nunca baseline obrigatória;
+- regra de que criação manual pela designer é o modo primário;
+- IA como apoio opcional, nunca gate;
+- ausência de obrigação de copiar prompt, output generativo, benchmark ou outra Home.
+
+O LEIA-PRIMEIRO deve permitir que esses boundaries sejam compreendidos sem consultar histórico ou inferir regras comuns.
+
+
 O template utiliza exatamente a mesma taxonomia de `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001`:
 
 ### CANONICAL
@@ -709,7 +727,7 @@ Uma execução está pronta para ferramenta generativa quando:
 11. questões abertas estão registradas;
 12. o output começa classificado como `EXPLORAÇÃO`.
 
-Se esses itens não puderem ser preenchidos, a execução deve ser tratada como exploração não governada e não pode alimentar decisões oficiais sem reconciliação posterior.
+Se esses itens não puderem ser preenchidos, o pacote da Home não está pronto para entrega. Qualquer uso de IA nessa condição é apenas exploração não governada e não pode alimentar decisões oficiais sem reconciliação posterior.
 
 ---
 
