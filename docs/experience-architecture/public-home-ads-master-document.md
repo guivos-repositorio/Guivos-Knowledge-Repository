@@ -629,3 +629,5 @@ Exigem fonte real: preço, CPM/CPC, alcance, inventário, performance, case, par
 Mockups de superfície podem ser usados como `DESIGN_HYPOTHESIS` ou `PROTOTYPE_PLACEHOLDER`, desde que não pareçam capacidade operacional vigente.
 
 IA é opcional e consome o mesmo pacote governado. Nenhuma ferramenta generativa pode criar automaticamente elegibilidade publicitária, segmentação permitida, preço, alcance ou promessa de performance.
+
+`OPEN_QUESTION` — pricing futuro, catálogo vivo de formatos, capacidade operacional por superfície, inventário e condições comerciais ainda não formalizados permanecem abertos e não devem ser preenchidos por inferência.
