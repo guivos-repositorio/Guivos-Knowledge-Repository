@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Intelligence
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
@@ -62,7 +62,7 @@ gh-pages
 Deployed 31f985625 with MkDocs 1.6.1
 
 DOCUMENTO MESTRE
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v1.0.0
 
 ARQUITETURA NARRATIVA
 GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1
@@ -113,7 +113,7 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v1.0.0
 → governa narrativa pública, copy de referência e fronteiras da Home
 
 NÍVEL 2
@@ -505,7 +505,7 @@ O Source Lock não congela:
 - microcopy que não altere significado;
 - ordem interna de exemplos dentro de um mesmo movimento.
 
-Essas liberdades só se tornam executáveis após Handoff/Design explicitamente autorizado.
+Essas liberdades são executáveis no handoff externo após a autorização posterior `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`, preservando revisão humana e sem autorizar implementação.
 
 ## 16. O que este Source Lock não autoriza
 
@@ -526,9 +526,9 @@ A integração deste artefato não autoriza automaticamente:
 - promoção silenciosa de maturidade técnica;
 - alteração de `GKR-STATE-001` ou Roadmap sem sincronização transversal autorizada.
 
-## 17. Critérios para o próximo gate
+## 17. Critérios para consumo em Design
 
-Antes de iniciar Design, o futuro Handoff deve preservar:
+O Handoff específico vigente e qualquer pacote de entrega devem preservar:
 
 - o pacote de fontes deste Source Lock;
 - a arquitetura em onze movimentos;
@@ -541,8 +541,23 @@ Antes de iniciar Design, o futuro Handoff deve preservar:
 - exemplos analíticos como demonstração, não prova;
 - todos os guardrails de privacidade, causalidade, previsão e autonomia.
 
-Próximo ponto elegível após a integração deste Source Lock:
+Estado posterior reconciliado:
 
-> **Handoff controlado da Home Pública Guivos Intelligence v1 para Design**, mediante autorização separada.
+```text
+HOME SOURCE LOCK
+→ ACTIVE
 
-Nenhuma etapa autoriza automaticamente a seguinte.
+HANDOFF ESPECÍFICO
+→ AVAILABLE
+
+PUBLIC HOMES DESIGN PRODUCTION RELEASE
+→ GRANTED
+
+EXECUÇÃO
+→ EXTERNA / DESIGNER-LED / IA OPCIONAL
+
+IMPLEMENTAÇÃO
+→ NOT AUTHORIZED
+```
+
+Nenhuma saída de Design se torna autoridade de produto automaticamente.
