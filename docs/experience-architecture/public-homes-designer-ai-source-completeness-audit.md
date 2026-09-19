@@ -475,6 +475,42 @@ P1 — INTELLIGENCE PRODUCT AUTHORITIES PRE-HOME STATE
 
 Essas remediações alteram novamente o HEAD. O `PASS` continua candidato até Semantic + Mechanical e novo review independente sobre o SHA final.
 
+## 9.6 Re-review independente no HEAD `1f99de11384b7a05f4aa0aee0c50c87deddd217b` — dois P1 e três P2 residuais
+
+O re-review independente encontrou cinco inconsistências de sincronização/precedência, sem alteração conceitual do produto ou da liberdade criativa da designer:
+
+```text
+P1 — INTELLIGENCE HOME SOURCE PACKAGE STALE PINS
+→ REMEDIATED
+→ MASTER = v0.2.5
+→ PRODUCT SOURCE LOCK = v1.0.1
+→ GPA-006 = v2.0.1
+
+P1 — INTELLIGENCE PRODUCT SOURCE LOCK PRE-HOME CHECKLIST
+→ REMEDIATED
+→ CHECKLIST = CURRENT INTEGRITY CHECK ONLY
+→ DOES NOT PRECEDE / BLOCK / REOPEN HOME OR DESIGN AUTHORITIES
+
+P2 — FROZEN V5 INTELLIGENCE ORDER
+→ REMEDIATED
+→ EMITTED V5 PINS RESTORED
+→ SOURCE LOCK = v1.0.0
+→ HANDOFF = v1.0.0
+→ MASTER = v0.1.1
+→ PRODUCT SOURCE LOCK = v1.0.0
+→ GPA-006 = v2.0.0
+
+P2 — CURRENT-STATE INTELLIGENCE SOURCE LOCK
+→ REMEDIATED
+→ CURRENT = v1.1.5
+
+P2 — BUSINESS COMMON HANDOFF PIN
+→ REMEDIATED
+→ CURRENT V6 HANDOFF = v1.6.2
+```
+
+As correções preservam o v5 como snapshot histórico reproduzível e o v6 como cadeia corrente separada. O estado `PASS` permanece candidato até nova validação automática e re-review no HEAD final.
+
 ## 10. Remediações aplicadas
 
 ### F-DS-001 — RESOLVED
