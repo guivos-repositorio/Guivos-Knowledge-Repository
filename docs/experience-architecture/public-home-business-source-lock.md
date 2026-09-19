@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
 depends_on:
   - GKR-UX-HOME-BUSINESS-MASTER-001
@@ -13,6 +13,11 @@ depends_on:
   - GPA-004
   - GKR-STATE-001
   - ROADMAP-12.79.0
+related:
+  - GKR-UX-HOME-INTELLIGENCE-MASTER-001
+  - GKR-UX-HOMES-DESIGN-HANDOFF-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-AUDIT-001
 normative: true
 ---
 
@@ -400,12 +405,13 @@ Supporting copy de referência:
 
 > **Visualize participação, recorrência, utilização, interesses agregados e movimentos ao longo do tempo para compreender cada vez melhor suas iniciativas dentro da Guivos.**
 
-### Direção visual congelada
+### Função semântica congelada; forma visual aberta
 
-A futura materialização deve demonstrar Intelligence prioritariamente de forma visual, podendo utilizar representações de:
+A futura materialização deve tornar compreensível o valor do Intelligence para a empresa **sem congelar uma forma visual específica**.
 
-- dashboard;
-- KPIs;
+A designer pode, conforme sua direção criativa, utilizar ou não:
+
+- indicadores ou KPIs conceituais;
 - gráficos;
 - evolução temporal;
 - participação;
@@ -413,9 +419,22 @@ A futura materialização deve demonstrar Intelligence prioritariamente de forma
 - recorrência;
 - tendências;
 - interesses agregados;
-- movimentos e distribuições.
+- movimentos e distribuições;
+- relações, sequências, narrativas visuais ou outras representações.
 
-Essas representações não autorizam métricas, números ou layout final inventados como reais.
+```text
+CANONICAL
+→ INTELLIGENCE PRECISA SER COMPREENSÍVEL E TANGÍVEL
+
+DESIGN_CREATIVE
+→ COMO ESSA COMPREENSÃO É EXPRESSA VISUALMENTE
+
+INTELLIGENCE
+≠ DASHBOARD OBRIGATÓRIO
+≠ KPI SET OBRIGATÓRIO
+```
+
+Qualquer representação conceitual não autoriza métricas, números, operação ou layout inventados como reais.
 
 ### CTA congelado
 
@@ -433,7 +452,7 @@ CONHEÇA O GUIVOS INTELLIGENCE
 HOME PRÓPRIA DO GUIVOS INTELLIGENCE
 ```
 
-A Home própria do Intelligence ainda não existe. O destino deve ser preservado sem inventar URL ou disponibilidade pública.
+O Documento Mestre e o Source Lock da Home Pública do Intelligence já existem no GKR. O que **não** pode ser presumido é URL pública, disponibilidade operacional, publicação ou lançamento da Home. O destino conceitual pode ser preservado sem inventar essas condições.
 
 ## 15. Fronteiras do Intelligence preservadas
 
@@ -756,52 +775,48 @@ Continuam fora deste Source Lock:
 - países suportados;
 - regras fiscais e tributárias;
 - arquitetura técnica do checkout/contratação;
-- URL e Documento Mestre da futura Home Guivos Intelligence;
+- URL pública, disponibilidade operacional e condição de lançamento da Home Guivos Intelligence;
 - dashboard final e KPIs exatos do Intelligence;
 - direção visual final da Home Business.
 
 A materialização futura deve sinalizar essas lacunas, não resolvê-las por inferência.
 
-## 27. Bloqueio procedimental de Design
+## 27. Estado procedimental de Design
 
-O handoff canônico vigente `GKR-UX-HOMES-DESIGN-HANDOFF-001` v1.1.0 cobre explicitamente seis Homes:
+O Handoff canônico vigente cobre as oito Homes públicas, incluindo Guivos Business, e o Design Production Release comum foi concedido.
 
-1. Pessoa;
-2. Organizações e Coletivos;
-3. Mall;
-4. Travel;
-5. Media;
-6. Ads.
-
-**Guivos Business ainda não está incluído nessa autorização.**
-
-Consequência:
+A decisão humana posterior, contudo, postergou o início operacional da designer até o fechamento da auditoria final de prontidão das fontes.
 
 ```text
-SOURCE LOCK BUSINESS
-→ PODE SER CONGELADO
+BUSINESS IN COMMON HANDOFF
+→ YES
 
-DESIGN BUSINESS
-→ AINDA NÃO AUTORIZADO
+DESIGN PRODUCTION RELEASE
+→ GRANTED
 
-FERRAMENTA GENERATIVA
-→ AINDA NÃO DEVE RECEBER EXECUÇÃO OPERACIONAL PARA BUSINESS
+FINAL SOURCE READINESS AUDIT
+→ IN_PROGRESS
+
+EXTERNAL DESIGNER START
+→ DEFERRED UNTIL PASS
+
+GKR / CHATGPT FIGMA EXECUTION
+→ NOT TO BE PERFORMED
 ```
 
-Este Source Lock não amplia silenciosamente o escopo do handoff canônico.
+Portanto, este Source Lock não aguarda inclusão em Handoff; ele aguarda reconciliação final e integração no próximo pacote documental vigente.
 
-## 28. Pacote futuro de handoff do Business
+## 28. Pacote corrente recomendado do Business
 
-Quando houver autorização explícita para Design, o pacote mínimo recomendado será:
+Para consumo por designer ou sistema de AI, o núcleo específico do Business é:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` em versão que inclua Guivos Business;
-2. este Source Lock;
-3. `GKR-UX-HOME-BUSINESS-MASTER-001`;
-4. `GKR-UX-HOME-BUSINESS-CONVERSION-002`;
-5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001`;
-6. `GPA-004` v1.6.0 ou autoridade posterior vigente.
+1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — este Source Lock;
+2. `GKR-UX-HOME-BUSINESS-MASTER-001`;
+3. `GKR-UX-HOME-BUSINESS-CONVERSION-002`;
+4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001`;
+5. `GPA-004` na versão vigente.
 
-O pacote poderá ser reduzido somente se uma autoridade posterior consolidar explicitamente as mesmas fronteiras.
+As autoridades comuns do pacote v6 serão adicionadas pela emissão transversal. Não é necessário carregar histórico de construção quando as fontes acima resolvem a dúvida.
 
 ## 29. Autoauditoria do Source Lock
 
@@ -816,7 +831,7 @@ Antes de qualquer futura materialização, confirmar:
 - Benefícios não reapareceram como movimento separado?;
 - Pontos permanecem fora da Home?;
 - ecossistema é apresentado pela vida da pessoa antes dos produtos?;
-- Intelligence é visual e positivo sem inventar métricas reais?;
+- Intelligence é compreensível, positivo e tangível sem impor dashboard/KPIs nem inventar métricas reais?;
 - CTA `Conheça o Guivos Intelligence` foi preservado?;
 - Start, Growth, Scale e Enterprise permanecem comparáveis sem entitlements inventados?;
 - o configurador aparece como mais do que calculadora de preço?;
@@ -826,7 +841,7 @@ Antes de qualquer futura materialização, confirmar:
 - escala global não foi reduzida a Brasil + Real?;
 - nenhum país, preço, moeda, cliente, KPI ou integração foi inventado como vigente?;
 - a Home continua parecendo Guivos e não SaaS B2B genérico?;
-- Design só começou após autorização procedimental própria?
+- a materialização externa só começou após o fechamento do gate documental corrente e a liberação operacional aplicável?
 
 ## 30. Regra de mudança
 
@@ -850,13 +865,21 @@ exige nova decisão explícita e atualização governada do Source Lock ou autor
 
 Design não pode alterar esses elementos por preferência estética.
 
-## 31. Próxima etapa
+## 31. Próximo movimento vigente
 
-Após integração deste Source Lock, o próximo ponto governado é:
+A inclusão do Business no Handoff canônico e o Design Production Release já ocorreram.
 
-> **INCLUSÃO DO GUIVOS BUSINESS NO HANDOFF CANÔNICO DE DESIGN / AUTORIZAÇÃO PROCEDIMENTAL DE DESIGN**
+O próximo movimento vigente é:
 
-Somente depois dessa autorização devem começar arquitetura visual, wireframe, UI ou protótipo do Guivos Business.
+```text
+FINAL SOURCE READINESS AUDIT
+→ REMEDIATE MATERIAL FINDINGS
+→ DESIGNER CONSUMABILITY PASS
+→ AI CONSUMABILITY PASS
+→ V6 ELIGIBILITY
+```
+
+Somente após o fechamento desse gate documental a designer externa deve iniciar o trabalho visual. O GKR/ChatGPT não cria o Figma da Home Business.
 
 ## 32. Síntese
 
