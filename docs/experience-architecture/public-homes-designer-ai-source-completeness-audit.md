@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.3.0
+version: 0.3.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -141,8 +141,8 @@ Uma Home somente pode ser considerada pronta para entrega à designer quando seu
 | Travel | `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.1` | RECONCILED |
 | Media | `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` | RECONCILED |
 | Ads | `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` | RECONCILED |
-| Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.1` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.0` | RECONCILED |
-| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.0` | RECONCILED |
+| Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.2` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.1` | RECONCILED |
+| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.1` | RECONCILED |
 
 ## 6. Findings iniciais comprovados
 
@@ -387,7 +387,7 @@ REVIEW
 
 P1 — BUSINESS SOURCE LOCK
 → REMEDIATED
-→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.0
+→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.1
 → DESIGNER-FIRST / AI-OPTIONAL
 → NO FROZEN VISUAL REPRESENTATION
 
