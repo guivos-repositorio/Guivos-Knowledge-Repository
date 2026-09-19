@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
 depends_on:
   - GKR-UX-HOME-BUSINESS-MASTER-001
@@ -400,22 +400,28 @@ Supporting copy de referência:
 
 > **Visualize participação, recorrência, utilização, interesses agregados e movimentos ao longo do tempo para compreender cada vez melhor suas iniciativas dentro da Guivos.**
 
-### Direção visual congelada
+### Responsabilidade semântica congelada; forma visual aberta
 
-A futura materialização deve demonstrar Intelligence prioritariamente de forma visual, podendo utilizar representações de:
+Congela-se **o significado que precisa ser perceptível**, não a forma visual usada para comunicá-lo.
 
-- dashboard;
-- KPIs;
-- gráficos;
-- evolução temporal;
-- participação;
-- utilização;
-- recorrência;
-- tendências;
-- interesses agregados;
-- movimentos e distribuições.
+A materialização deve permitir compreender que Intelligence pode ajudar a interpretar participação, utilização, recorrência, interesses agregados, mudanças, tendências e movimentos legítimos dentro do ecossistema.
 
-Essas representações não autorizam métricas, números ou layout final inventados como reais.
+A designer pode escolher livremente como expressar esse significado. Dashboard, KPI, gráfico, série temporal, relação visual ou qualquer outra representação são apenas hipóteses possíveis.
+
+```text
+SEMANTIC OUTCOME
+→ CANONICAL
+
+VISUAL EXPRESSION
+→ DESIGN_CREATIVE
+
+DASHBOARD / KPI / CHART
+→ OPTIONAL
+→ NOT REQUIRED
+→ NOT CANONICAL
+```
+
+Nenhuma representação autoriza métricas, números, dados, performance ou layout inventados como reais.
 
 ### CTA congelado
 
