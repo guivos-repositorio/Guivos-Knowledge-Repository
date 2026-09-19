@@ -465,7 +465,19 @@ A entrega pode ser aceita quando:
 11. a solução permanece fiel aos contratos semânticos;
 12. a solução preserva criatividade e originalidade, sem se reduzir a template de benchmark;
 13. as oito Homes passaram por revisão integrada de coerência como família Guivos sem obrigação de mesmo template;
-14. não há finding material aberto.
+14. não há finding material aberto;
+15. existe registro formal do aceite final com versão do arquivo, responsável, assets/licenças e controle dos arquivos essenciais pela Guivos.
+
+```text
+FIGMA FINAL CANDIDATO
+≠ SERVIÇO CONCLUÍDO
+
+FIGMA FINAL ACEITO
+→ PRÉ-CONDIÇÃO DE FECHAMENTO OPERACIONAL DA ENTREGA DE DESIGN
+
+TERMOS DE PAGAMENTO / CONTRATO
+→ GOVERNADOS FORA DESTE DOCUMENTO
+```
 
 ## 15. Gate de emissão v5 e release
 
