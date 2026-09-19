@@ -40,7 +40,7 @@ Antes de gerar:
 1. ler o guia da Home;
 2. ler Handoff e contrato de prontidão;
 3. ler Master/autoridades específicas;
-4. identificar `CANONICAL`, `DESIGN CREATIVE`, `CONTENT CANDIDATE`, `PROTOTYPE PLACEHOLDER`, `REAL DATA REQUIRED` e `PROHIBITED INFERENCE`.
+4. identificar `CANONICAL`, `DESIGN_CREATIVE`, `CONTENT_CANDIDATE`, `DESIGN_HYPOTHESIS`, `PROTOTYPE_PLACEHOLDER`, `REAL_DATA_REQUIRED`, `OPEN_QUESTION` e `PROHIBITED_INFERENCE`.
 
 ## 5. Fase B — Figma Make / protótipo exploratório
 
