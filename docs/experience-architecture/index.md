@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.0
+version: 1.20.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-19
 related:
@@ -54,6 +54,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-PACKAGE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - M7.88
 normative: false
@@ -161,8 +162,8 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C4B — validação integrada individual e promoção de TRN-008..013
 → O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C State Map — DEFINED / CANONICAL DOCUMENTARY
-→ Public Homes Design Production Readiness — ACTIVE / V5 SNAPSHOT EMITTED / DESIGN RELEASE GRANTED
-→ Public Homes Design Production Release — GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ Public Homes Source Package — V5 FROZEN / V6 DOCUMENTARY REALIGNMENT IN PROGRESS
+→ Public Homes Design Production Release — GRANTED / DESIGNER MANUAL CREATION PRIMARY / AI OPTIONAL
 → Public Homes Design Handoff v5 Snapshot — delivery/design-handoff-v5 / 34 FILES / 26/26 BYTE-PRESERVED
 ```
 
@@ -307,4 +308,8 @@ A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. 
 
 ### Public Homes — Design Production Release
 
-[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) registra o ato humano posterior que concede `DESIGN PRODUCTION RELEASE = GRANTED`, libera Figma Make/exploração para execução e preserva o gate humano de direção antes do Figma definitivo.
+[GKR-UX-HOMES-DESIGN-SOURCE-PACKAGE-001](public-homes-design-source-package-contract.md) define o contrato canônico do pacote-fonte: GKR fornece verdade, contexto, Source Locks e guardrails; a designer cria manualmente; IA pode consumir a mesma documentação como apoio opcional.
+
+### Public Homes — Design Production Release
+
+[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) registra o ato humano que permite à frente externa de Design consumir o pacote governado. A materialização visual é criada manualmente pela designer; IA é apoio opcional e não constitui gate obrigatório.
