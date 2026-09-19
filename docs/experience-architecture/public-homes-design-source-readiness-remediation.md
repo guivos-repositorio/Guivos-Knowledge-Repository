@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 title: Homes Públicas — Remediação de Prontidão Documental para Designer e IA
 status: draft
-version: 0.6.0
+version: 0.7.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: source_readiness_remediation_in_progress_person_oc_mall_travel_media_pass
+maturity: source_readiness_remediation_in_progress_person_oc_mall_travel_media_ads_pass
 depends_on:
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-GENINPUT-001
@@ -348,8 +348,8 @@ NEW EXTERNAL SNAPSHOT
 | Mall | **SOURCE_READY / PASS** | 0 |
 | Travel | **SOURCE_READY / PASS** | 0 |
 | Media | **SOURCE_READY / PASS** | 0 |
-| Ads | UNDER_AUDIT | — |
-| Business | NOT_YET_AUDITED | — |
+| Ads | **SOURCE_READY / PASS** | 0 |
+| Business | UNDER_AUDIT | — |
 | Intelligence | NOT_YET_AUDITED | — |
 
 Home Pessoa foi fechada após:
@@ -392,6 +392,15 @@ Home Media foi fechada após:
 - contratos de conteúdo-base/derivados, patrocinado e continuidade contextual;
 - direitos/assets como REAL_DATA_REQUIRED;
 - acessibilidade/performance/mobile/fallback;
+- matriz operacional e brief para designer/IA;
+- confirmação de zero gap semântico material.
+
+Home Ads foi fechada após:
+- confirmação contra GPA-007 v1.3.0;
+- separação entre solução conceitual, inventário, pricing e performance;
+- contratos de autoridade com superfícies anfitriãs;
+- estados de qualificação, inelegibilidade e ausência de pricing público;
+- acessibilidade/mobile/fallback;
 - matriz operacional e brief para designer/IA;
 - confirmação de zero gap semântico material.
 ## 11. Estado
