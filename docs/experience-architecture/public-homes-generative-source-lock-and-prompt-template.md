@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 status: active
-version: 2.0.1
+version: 2.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -29,6 +29,27 @@ maturity: post_audit_eight_home_generative_template_release_granted_pre_executio
 ---
 
 # Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
+
+
+## Regra superior de consumo
+
+Este documento serve a dois consumidores distintos sem misturar suas responsabilidades:
+
+```text
+DESIGNER HUMANA
+→ LEITURA DAS FONTES GOVERNADAS
+→ CRIAÇÃO MANUAL SUFICIENTE
+→ NÃO DEPENDE DE PROMPT
+
+SISTEMA DE IA DE DESIGN
+→ USO OPCIONAL
+→ RECEBE SOURCE LOCK CONTROLADO
+→ NÃO SUBSTITUI A DESIGNER
+```
+
+O **Source Lock é obrigatório para governança da fonte**. O **prompt é opcional** e existe apenas quando a designer/equipe decide utilizar IA.
+
+Nenhuma ferramenta generativa, Figma Make ou arquivo visual prévio é requisito para iniciar a criação. Identidade visual continua deliberadamente aberta à criatividade da designer.
 
 ## 0. Gate pós-auditoria
 
