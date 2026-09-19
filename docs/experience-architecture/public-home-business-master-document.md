@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.1.2
+version: 1.1.3
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
@@ -28,7 +28,7 @@ Ele reúne em uma única arquitetura pública:
 - os contratos de autoridade;
 - a expressão comercial;
 - a conversão global;
-- os movimentos que deverão orientar o futuro Source Lock e Design.
+- os movimentos que orientam o Source Lock vigente e a criação externa de Design.
 
 Este documento **não é**:
 
@@ -38,7 +38,7 @@ Este documento **não é**:
 - protótipo;
 - especificação de preços finais;
 - especificação técnica do configurador;
-- handoff para Design.
+- substituto do Source Lock vigente ou do handoff comum de Design.
 
 A progressão governada passa a ser:
 
@@ -47,8 +47,10 @@ ARQUITETURA NARRATIVA      → CONVERGIDA
 CONTRATOS DE AUTORIDADE    → CONVERGIDOS
 CONVERSÃO GLOBAL           → CONVERGIDA / REFINADA
 DOCUMENTO MESTRE           → CONVERGIDO NESTE DOCUMENTO
-SOURCE LOCK                → PRÓXIMA ETAPA
-DESIGN                     → NÃO AUTORIZADO
+SOURCE LOCK                → EXISTS / ACTIVE
+DESIGN PRODUCTION RELEASE  → GRANTED / EXTERNAL DESIGNER
+AI                         → OPTIONAL / DESIGNER-CONTROLLED
+PRODUCT ENGINEERING        → NOT RELEASED
 ```
 
 ## 2. Precedência deste Documento Mestre
