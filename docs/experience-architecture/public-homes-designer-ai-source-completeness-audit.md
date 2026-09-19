@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.3.3
+version: 0.3.4
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -142,7 +142,7 @@ Uma Home somente pode ser considerada pronta para entrega à designer quando seu
 | Media | `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` | RECONCILED |
 | Ads | `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` | RECONCILED |
 | Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.2` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.1` | RECONCILED |
-| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.3` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.0` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.0` | RECONCILED |
+| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.3` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.1` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.1` | RECONCILED |
 
 ## 6. Findings iniciais comprovados
 
@@ -358,14 +358,14 @@ A adjudicação histórica permanece proveniência; não é mais necessária par
 
 ### F-DS-004 — RESOLVED
 
-`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.2` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.1` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.3` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.0` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.0` foram temporalmente reconciliados com o regime designer-first / IA opcional.
+`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.2` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.1` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.3` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.1` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.1` foram temporalmente reconciliados com o regime designer-first / IA opcional.
 
 ### F-DS-005 — RESOLVED FOR V6 CONTRACT
 
 O template comum foi promovido para:
 
 ```text
-GKR-UX-HOMES-GENINPUT-001 v2.2.3
+GKR-UX-HOMES-GENINPUT-001 v2.2.4
 → TOOL-NEUTRAL
 → AI OPTIONAL
 → MANUAL DESIGN DOES NOT REQUIRE GENERATIVE EXECUTION RECORD
