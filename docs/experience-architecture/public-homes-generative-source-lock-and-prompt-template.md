@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 status: active
-version: 2.1.0
+version: 2.1.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -269,7 +269,7 @@ Todas as oito Homes recebem exatamente estas quatro autoridades comuns do Manife
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.0` — `docs/experience-architecture/public-homes-design-handoff.md`;
 2. `GKR-UX-HOMES-GENINPUT-001 v2.1.0` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
 3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.1.0` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.0` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`.
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.1` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`.
 
 Essas quatro fontes comuns não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso de IA, sequência de execução e critérios de produção/aceite.
 
@@ -305,14 +305,14 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-media-master-document.md`;
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-media-master-document.md`;
 - `GPA-005 v1.2.0` — `docs/product-architecture/media.md`.
 
 ### 6.6 Home Pública — Guivos Ads
 
 Fontes específicas:
 
-- `GKR-UX-HOME-ADS-MASTER-001 v1.0.0` — `docs/experience-architecture/public-home-ads-master-document.md`;
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-ads-master-document.md`;
 - `GPA-007 v1.3.0` — `docs/product-architecture/ads.md`.
 
 ### 6.7 Home Pública — Guivos Business
