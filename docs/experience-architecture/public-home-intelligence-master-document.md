@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
-status: draft
-version: 0.1.1
+status: active
+version: 1.0.0
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 depends_on:
   - GPA-006
@@ -17,7 +17,9 @@ related:
   - GAI-002
   - GIA-000
   - GEA-GRAPH-REFERENCE-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-READINESS-REMEDIATION-001
 normative: false
+maturity: source_ready_for_external_design_manual_first_ai_optional
 ---
 
 # Home Pública — Guivos Intelligence v1 — Documento Mestre
@@ -26,7 +28,7 @@ normative: false
 
 Este documento consolida a **fonte mestre de referência da Home Pública Guivos Intelligence v1** depois da convergência dos onze movimentos da arquitetura narrativa.
 
-A versão `0.1.1` corrige a camada editorial de `0.1.0` para refletir a copy pública efetivamente aprovada em conversa. A correção não altera a arquitetura em 11 movimentos, o significado do produto, as autoridades superiores, as fronteiras interproduto ou os guardrails vigentes.
+A versão `1.0.0` consolida a arquitetura em 11 movimentos, a copy pública de referência e a camada de prontidão documental para Designer e IA, sem alterar o significado do produto, as autoridades superiores, as fronteiras interproduto ou os guardrails vigentes.
 
 Sua função é reunir, em uma única leitura, o significado do produto que pode ser comunicado publicamente, a proposta de valor da Home, a progressão narrativa, a copy de referência, as fronteiras interproduto, os resultados esperados, os elementos visuais admissíveis e os guardrails que devem permanecer preservados na próxima etapa.
 
@@ -681,52 +683,440 @@ BUSINESS
 
 > **Intelligence conecta autoridades. Não as absorve.**
 
-## 17. O que este Documento Mestre não autoriza
+## 17. Limites desta Home e da frente de Design
 
-A criação deste documento não autoriza automaticamente:
+Este Documento Mestre governa significado público da Home, não implementação.
 
-- Home Source Lock;
-- wireframe;
-- UI;
-- protótipo;
-- Figma;
-- prompt generativo de Design;
-- implementação front-end;
+Ele não autoriza automaticamente:
+
+- implementação front-end ou back-end;
 - integração técnica;
 - publicação comercial;
 - pricing;
+- disponibilidade comercial;
 - promessa de operação de Neo4j, GraphRAG, GDS, Power BI, Guivos.ai ou Grafo Global;
-- uso de dados individuais fora das autoridades previstas;
-- promoção silenciosa de estado global.
+- uso de dados fora das autoridades previstas;
+- exposição individual para Empresa;
+- promoção silenciosa de maturidade técnica.
 
-## 18. Itens ainda não congelados
+A designer possui liberdade sobre expressão visual. IA é opcional.
 
-Até o Home Source Lock, permanecem refináveis sem alterar a arquitetura:
+```text
+GKR
+→ SIGNIFICADO / AUTORIDADE / LIMITES / VERDADE
 
-- formulação final da pergunta-mãe;
+DESIGNER
+→ EXPRESSÃO VISUAL / CRIATIVA
+
+AI
+→ OPTIONAL SUPPORT
+
+TECHNOLOGY
+→ NOT THE PRODUCT IDENTITY
+```
+
+## 18. Itens deliberadamente abertos
+
+Permanecem abertos sem reabrir a arquitetura:
+
+- pergunta-mãe final;
 - CTA principal;
 - CTA secundário;
 - microcopy;
-- ordem visual final;
-- quantidade final de exemplos visuais;
-- quais exemplos usarão dados reais ou conceituais;
-- profundidade pública de Graph/AI;
-- composição visual das duas frentes.
+- ordem visual;
+- quantidade e forma dos exemplos visuais;
+- escolha entre exemplos reais e conceituais;
+- profundidade pública de Graph/IA;
+- composição das duas frentes;
+- direção de arte;
+- tipografia;
+- paleta;
+- imagens;
+- motion;
+- componentes;
+- layout;
+- breakpoints;
+- eventual pricing/oferta pública futura;
+- demonstrações reais disponíveis no lançamento.
 
-Esses itens não reabrem a identidade nem os onze movimentos já convergidos.
+Esses itens são `CONTENT_CANDIDATE`, `DESIGN_CREATIVE`, `DESIGN_HYPOTHESIS`, `REAL_DATA_REQUIRED` ou `OPEN_QUESTION` conforme o caso.
 
 ## 19. Critério de passagem
 
-Este Documento Mestre considera a arquitetura narrativa **conceitualmente completa em 11 movimentos**, com a copy de referência corrigida, e fornece base suficiente para a próxima etapa governada: elaboração do **Home Source Lock da Home Pública Guivos Intelligence v1**.
+A arquitetura narrativa está completa em 11 movimentos e o Home Source Lock já existe.
 
-Isso não significa que o Source Lock tenha sido criado ou autorizado por este artefato.
+O gate corrente deixa de ser “criar Source Lock” e passa a ser demonstrar suficiência documental dentro da frente das oito Homes.
 
-```mermaid
-flowchart TD
-    P[Product Source Lock\nintegrado] --> A[Arquitetura narrativa\nv0.2.1]
-    A --> M[Documento Mestre\nv0.1.1]
-    M --> S[Home Source Lock\npróximo ponto]
-    S --> D[Handoff / Design controlado]
+```text
+PRODUCT AUTHORITY
+→ PRODUCT SOURCE LOCK
+→ HOME NARRATIVE
+→ HOME MASTER
+→ HOME SOURCE LOCK
+→ SOURCE_READY AUDIT
+→ GLOBAL 8 / 8 RECONCILIATION
+→ HUMAN RELEASE
+→ EXTERNAL DESIGN
 ```
 
-Nenhuma etapa autoriza automaticamente a seguinte.
+Nenhuma etapa autoriza Product Engineering automaticamente.
+
+---
+
+## 20. Prontidão documental para Designer e IA
+
+### 20.1 Resultado da auditoria
+
+```text
+HOME INTELLIGENCE
+→ SOURCE_READY = PASS
+
+MASTER
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v1.0.0
+
+HOME SOURCE LOCK
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.0
+
+PRODUCT AUTHORITY
+→ GPA-006 v2.0.0
+
+PRODUCT SOURCE LOCK
+→ GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
+
+MATERIAL DOCUMENT GAPS
+→ 0
+
+UNRESOLVED SEMANTIC CONFLICTS
+→ 0
+
+VISUAL IDENTITY PRE-IMPOSED
+→ 0
+```
+
+### 20.2 Condições e estados que a solução deve tolerar
+
+#### Sem dados reais para demonstração
+
+- exemplos analíticos podem ser conceituais;
+- rótulo deve deixar claro que não são operação real;
+- números não podem parecer KPI vigente;
+- compreensão do produto não depende de um dashboard funcional.
+
+#### Dado observado
+
+- distinguir do declarado, calculado, inferido, predito e agregado;
+- proveniência e contexto importam;
+- observação não equivale a interpretação.
+
+#### Inferência
+
+- deve permanecer inferência;
+- não vira fato;
+- incerteza e limitações devem ser representáveis;
+- inferência incompatível com declaração legítima da Pessoa não ganha autoridade superior sobre significado pessoal.
+
+#### Sinal / tendência / movimento emergente
+
+- sinal ≠ certeza;
+- tendência ≠ destino;
+- movimento emergente ≠ previsão;
+- percepção antecipada não é promessa de futuro.
+
+#### Relação / correlação
+
+- relação ≠ causa;
+- correlação ≠ causalidade;
+- visual de conexão não deve insinuar causalidade automaticamente.
+
+#### Frente Pessoa / Journey
+
+- compreensão individual somente dentro de contexto autorizado;
+- personalização ≠ exposição;
+- Journey preserva autoridade sobre experiência e Próximo Passo;
+- Intelligence não decide pela Pessoa.
+
+#### Frente Business / população
+
+- compreensão populacional deve preservar agregação, proteção e finalidade;
+- Empresa não recebe Intelligence individual por funcionário;
+- entitlement não amplia autoridade;
+- plano superior não reduz privacidade.
+
+#### Intelligence direto
+
+- quando compreender/investigar é a finalidade, o produto pode ter presença própria;
+- isso não transforma tecnologia ou interface em identidade superior do produto.
+
+#### Intelligence embutido
+
+- output pode aparecer em outros produtos;
+- produto anfitrião preserva autoridade funcional;
+- Intelligence não absorve Journey, Business, Mall, Travel, Media ou Ads.
+
+#### Tecnologia não operacional comprovada
+
+- Graph, Neo4j, GraphRAG, GDS, Power BI, Guivos.ai e outras tecnologias não devem parecer implantadas sem evidência;
+- podem ser explicadas apenas dentro da maturidade autorizada.
+
+#### Erro / baixa confiança / evidência insuficiente
+
+- solução deve conseguir representar incerteza, ausência de evidência, conflito ou limite;
+- não forçar uma conclusão visual;
+- `não sabemos` é estado legítimo.
+
+#### Dado sensível / não autorizado
+
+- não deve ser exposto;
+- ausência de autoridade deve limitar uso e visualização;
+- interface não contorna política.
+
+#### Mobile
+
+- explicação, comparação, proveniência, incerteza e autonomia permanecem legíveis;
+- não reduzir a experiência a cards analíticos;
+- visualização deve adaptar-se sem perder contexto.
+
+#### Reduced motion / baixa conectividade
+
+- relações, sequências e sinais permanecem compreensíveis sem animação;
+- visualização dinâmica possui alternativa estática/textual;
+- mídia rica não é requisito para explicar valor.
+
+### 20.3 Acessibilidade e robustez
+
+A solução deve prever:
+
+- teclado;
+- foco visível;
+- leitores de tela;
+- contraste;
+- texto ampliado;
+- alternativas textuais para gráficos;
+- descrições de relações e tendências;
+- não depender exclusivamente de cor, posição ou animação;
+- reduced motion;
+- tabelas/gráficos com estrutura acessível;
+- estados de erro, incerteza e ausência;
+- conteúdo robusto a valores, labels e descrições longas;
+- internacionalização;
+- explicabilidade acessível sem exigir interação complexa.
+
+### 20.4 Matriz operacional específica do Intelligence
+
+#### CANONICAL
+
+- Intelligence é Produto Especializado transversal e Intelligence Layer;
+- unidade de valor: **compreensão útil e contextualizada**;
+- `COMPREENDER ≠ DECIDIR`;
+- Intelligence ≠ IA ≠ LLM ≠ dashboard ≠ grafo ≠ tecnologia;
+- 11 movimentos;
+- necessidade → capacidade → arquitetura → mecanismo → tecnologia;
+- duas frentes superiores: Pessoa/Journey e Business/população;
+- compreender profundamente ≠ expor profundamente;
+- conhecer ≠ utilizar ≠ compartilhar;
+- declarado ≠ observado ≠ calculado ≠ inferido ≠ predito ≠ agregado;
+- relação/correlação ≠ causa;
+- sinal ≠ certeza;
+- tendência ≠ destino;
+- recomendação ≠ ordem;
+- resultado esperado ≠ comprovado;
+- explicabilidade, proveniência, contexto, incerteza e limite fazem parte do valor;
+- Intelligence conecta autoridades, não as absorve.
+
+#### DESIGN_CREATIVE
+
+- identidade visual;
+- tipografia;
+- paleta;
+- ilustração;
+- fotografia;
+- vídeo;
+- iconografia;
+- composição;
+- grid;
+- ritmo;
+- cards;
+- gráficos;
+- diagramas;
+- redes;
+- fluxos;
+- microinterações;
+- motion;
+- visualização de dados;
+- representação das duas frentes;
+- tratamento da explicabilidade;
+- desktop/mobile;
+- linguagem gráfica;
+- direção de arte.
+
+Nenhuma dessas escolhas pode transformar tecnologia em identidade do produto.
+
+#### CONTENT_CANDIDATE
+
+- pergunta-mãe final;
+- CTAs;
+- supporting copy;
+- microcopy;
+- labels;
+- exemplos explicativos;
+- títulos de leituras;
+- textos de incerteza e proveniência.
+
+#### DESIGN_HYPOTHESIS
+
+- formas de materializar resultados;
+- visualização de relações;
+- séries temporais;
+- distribuição;
+- comparação;
+- cards analíticos;
+- redes;
+- escadas epistemológicas;
+- before/after;
+- exemplos de explicabilidade;
+- formas de separar Pessoa/Business;
+- exposição de tecnologia subordinada;
+- responsividade.
+
+#### PROTOTYPE_PLACEHOLDER
+
+- KPI;
+- métrica;
+- gráfico;
+- dado;
+- pessoa;
+- população;
+- insight;
+- recomendação;
+- relação;
+- tendência;
+- sinal;
+- evidência;
+- fonte;
+- tecnologia;
+- resultado.
+
+Placeholder analítico deve ser explicitamente conceitual.
+
+#### REAL_DATA_REQUIRED
+
+- KPI real;
+- dado real;
+- métrica;
+- benchmark;
+- case;
+- cliente;
+- população;
+- resultado;
+- causalidade;
+- acurácia;
+- tecnologia implantada;
+- integração;
+- performance;
+- modelo de IA;
+- disponibilidade comercial;
+- pricing;
+- Graph/Neo4j/GraphRAG/GDS/Power BI/Guivos.ai em produção.
+
+#### OPEN_QUESTION
+
+- copy final;
+- CTAs finais;
+- profundidade técnica pública;
+- exemplos reais de lançamento;
+- pricing;
+- oferta B2B autônoma;
+- modelo de IA selecionado;
+- infraestrutura;
+- tecnologias implantadas;
+- thresholds;
+- políticas operacionais;
+- métricas e cases.
+
+Não bloqueiam Design quando representados como ausência ou hipótese.
+
+#### PROHIBITED_INFERENCE
+
+Não criar ou insinuar:
+
+- previsão certa do futuro;
+- decisão correta garantida;
+- causalidade automática;
+- diagnóstico humano;
+- score de evolução;
+- acesso individual de Empresa;
+- vigilância;
+- exposição de Journey;
+- mais dados = melhor Intelligence;
+- dashboard = Intelligence;
+- IA = Intelligence;
+- Neo4j/GraphRAG/Power BI/Guivos.ai em produção sem prova;
+- KPI fictício como real;
+- case fictício;
+- melhoria percentual;
+- redução de risco comprovada;
+- produtividade comprovada;
+- relevância comprável;
+- plano superior = mais autoridade;
+- tecnologia aumentando autoridade.
+
+### 20.5 Brief mínimo para a designer
+
+A designer deve conseguir responder:
+
+1. o que é Intelligence e o que ele não é;
+2. qual é sua unidade de valor;
+3. quais são os 11 movimentos;
+4. como M03 difere de M10;
+5. como M04 difere de M05;
+6. quais são as duas frentes;
+7. como compreender e expor se diferenciam;
+8. como dado, inferência, sinal, tendência e causalidade se distinguem;
+9. como explicabilidade/proveniência aparecem no valor;
+10. qual é o papel subordinado de Graph/IA/tecnologia;
+11. quais dados/claims exigem prova real;
+12. como representar `não sabemos`, incerteza ou evidência insuficiente;
+13. o que é livre para criação;
+14. o que é proibido inferir;
+15. como a experiência funciona em mobile e sem motion.
+
+### 20.6 Uso opcional de IA no Design
+
+Se a designer usar IA para criar a Home, o sistema deve receber:
+
+1. autoridades comuns vigentes;
+2. `GPA-006 v2.0.0`;
+3. Product Source Lock;
+4. este Master;
+5. Home Source Lock;
+6. matriz operacional desta seção;
+7. objetivo explícito.
+
+A IA usada **para Design** não ganha acesso ou autoridade sobre dados reais de participantes por causa dessa função. Source material documental é suficiente para exploração visual.
+
+### 20.7 Fechamento
+
+```text
+HOME INTELLIGENCE
+→ SOURCE_READY = PASS
+
+DESIGNER
+→ CAN START FROM DOCUMENTATION AFTER GLOBAL PACKAGE RELEASE
+
+AI FOR DESIGN
+→ OPTIONAL
+
+FIGMA MAKE
+→ NOT REQUIRED
+
+VISUAL DIRECTION
+→ DESIGN-OWNED
+
+TECHNOLOGY
+→ SUBORDINATE / REAL DATA REQUIRED FOR OPERATIONAL CLAIMS
+
+MATERIAL SEMANTIC GAP
+→ 0
+```
+
+Este `PASS` não declara implementação, modelo de IA escolhido, Graph/Neo4j/GraphRAG em produção, pricing, performance ou disponibilidade comercial.
