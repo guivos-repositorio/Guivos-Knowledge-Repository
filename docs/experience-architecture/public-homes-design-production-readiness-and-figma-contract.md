@@ -185,6 +185,43 @@ Contrato corrente que o Source Lock v5 deve explicitar:
 
 O snapshot v5 deve capturar todas as fontes do mesmo commit canônico pós-merge e registrar seus SHAs.
 
+### 6.9 Fechamento de fontes do candidato
+
+A revisão desta frente verificou a composição do Manifesto v5 contra a branch candidata:
+
+```text
+HOMES COM MASTER
+→ 8 / 8
+
+FONTES CANÔNICAS DO MANIFESTO
+→ 25 / 25 EXISTENTES
+
+ID DECLARADO × ID REAL
+→ 25 / 25 MATCH
+
+VERSÃO DECLARADA × VERSÃO REAL
+→ 25 / 25 MATCH
+
+GENINPUT HISTÓRICO NO PACOTE OPERACIONAL
+→ 0
+
+SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE
+→ BUSINESS = INCLUDED
+→ INTELLIGENCE = INCLUDED
+
+PESSOA / O-C
+→ MASTERS VIGENTES ABSORVEM A VERDADE DE CONSUMO
+→ DOCUMENTOS DE APROFUNDAMENTO PERMANECEM NO GKR, MAS NÃO ENTRAM AUTOMATICAMENTE NO CONTEXTO INICIAL DA IA
+
+MATERIAL DOCUMENT GAP IDENTIFIED IN SOURCE CLOSURE
+→ 0
+
+FINAL EXACT-HEAD GATE
+→ STILL REQUIRED
+```
+
+A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente no Figma Make.
+
 ## 7. Regra de isolamento para IA
 
 Uma execução de Figma Make trabalha uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente.
