@@ -1609,7 +1609,7 @@ flowchart TD
 
 ## 53. Limites desta versão
 
-`GPA-006 2.0.0` autoriza como autoridade de produto:
+`GPA-006 2.0.1` autoriza como autoridade de produto:
 
 - identidade e papel do Guivos Intelligence;
 - duas frentes superiores;
@@ -1672,7 +1672,7 @@ A sequência abaixo descreve a progressão histórica que levou à Home vigente;
 
 ```mermaid
 flowchart TD
-    A[GPA-006 2.0.0 convergido]
+    A[GPA-006 2.0.0 convergido\nORIGIN / HISTORICAL]
     B[Integração governada no GKR]
     C[Source Lock do Produto]
     D[Documento Mestre da Home]
