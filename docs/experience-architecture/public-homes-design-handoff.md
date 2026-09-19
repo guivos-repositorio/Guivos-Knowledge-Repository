@@ -2,13 +2,14 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.4.0
+version: 1.5.0
 owner: Experience Architecture
-last_updated: 2026-08-29
+last_updated: 2026-09-19
 normative: true
-maturity: design_handoff_method_preserved_operational_authorization_suspended_during_full_corpus_audit
+maturity: post_audit_design_handoff_reconciled_pre_production_release
 depends_on:
   - GKR-STATE-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
@@ -39,45 +40,49 @@ depends_on:
 
 # Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 
-## 0. Gate vigente durante a Auditoria Integral do GKR
+## 0. Estado pós-auditoria e gate de produção
 
-Este documento preserva o **método canônico de handoff para Design** e a decisão procedimental que, em checkpoints anteriores, autorizou exploração visual externa das Homes.
-
-Durante a **Auditoria Integral do GKR**, sua autorização operacional está suspensa.
+A Auditoria Integral do GKR está concluída com `PASS`. O método de handoff permanece vigente, mas esta revisão separa explicitamente **prontidão documental** de **liberação operacional para a contratação/produção definitiva no Figma**.
 
 ```text
-MÉTODO DE HANDOFF
-→ PRESERVADO
+AUDITORIA INTEGRAL
+→ COMPLETED / PASS
 
-AUTORIZAÇÃO OPERACIONAL DE DESIGN
-→ SUSPENSA DURANTE A AUDITORIA INTEGRAL
+HANDOFF CANÔNICO
+→ RECONCILIADO PÓS-AUDITORIA
 
-WIREFRAME / FIGMA / SVG / UX / UI / PROTÓTIPO
-→ NÃO AUTORIZADOS COMO NOVA EXECUÇÃO DURANTE A AUDITORIA
+DESIGN PRODUCTION READINESS
+→ GOVERNADO POR GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 
-SNAPSHOTS V1–V4 JÁ EMITIDOS
-→ HISTÓRICO PRESERVADO
-→ NÃO SÃO AUTORIZAÇÃO ATUAL
+DESIGN PRODUCTION RELEASE
+→ NOT_GRANTED BY THIS DOCUMENT ALONE
+
+V5 SNAPSHOT / PACOTE EXTERNO
+→ REQUIRED BEFORE RELEASE
 ```
 
-A linguagem das seções históricas abaixo sobre `autorização`, `podem ser executados`, `fluxo recomendado`, `Source Lock` e promoção de outputs descreve o método e o regime procedimental estabelecidos antes do gate atual. Ela não deve ser consumida isoladamente como permissão de execução enquanto `GKR-STATE-001` e `GKR-FULL-CORPUS-AUDIT-001` mantiverem a auditoria aberta.
+Uma futura execução definitiva exige cumulativamente: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito de release.
 
-Uma futura retomada de Design exige, cumulativamente:
+### 0.1 Liberdade criativa protegida
 
-1. fechamento dos gates aplicáveis da auditoria integral;
-2. ato humano explícito de reativação;
-3. reconciliação deste Handoff e do Manifesto/Flow vigentes contra o corpus pós-auditoria;
-4. Source Lock novo ou explicitamente reconciliado para a Home e o checkpoint então vigentes.
+O GKR **não congela identidade visual canônica** para estas Homes. A designer pode criar, com originalidade e autonomia, tipografia, paleta, imagens, ilustração, iconografia, grid, ritmo, composição, atmosfera, motion, linguagem gráfica, tratamento de componentes e tom de voz/copy não congelada.
+
+Essas escolhas são **output de Design**, não pré-condição documental. Depois que uma direção for aprovada no gate de protótipo, a solução escolhida deve ser documentada no próprio Figma para garantir consistência e handoff.
+
+A liberdade criativa não autoriza alterar significado, papéis de produto, nomenclatura oficial, assinatura institucional quando utilizada, claims factuais, regras econômicas, disponibilidade, dados, parceiros, causalidade, privacidade ou demais contratos governados.
 
 ```text
-HANDOFF CANÔNICO
-≠ AUTORIZAÇÃO PERMANENTE
+SEMANTIC / FUNCTIONAL TRUTH
+→ GKR
 
-TEMPLATE DE SOURCE LOCK
-≠ SOURCE LOCK AUTORIZADO
+VISUAL / CREATIVE EXPRESSION
+→ DESIGN
 
-PACOTE HISTÓRICO
-≠ BASELINE VISUAL VIGENTE
+GENERATIVE TOOL
+→ EXPLORATION INSTRUMENT
+
+HUMAN APPROVAL
+→ SELECTS THE DIRECTION
 ```
 
 ---
@@ -315,6 +320,10 @@ Desde que preservados os contratos da Home, Design pode explorar:
 - alternativas desktop e mobile;
 - protótipos de interação.
 
+
+Estas liberdades são deliberadamente amplas. Não existe requisito prévio de paleta, fonte, estilo fotográfico, sistema de ilustração, estética de ícones ou template visual comum imposto pelo GKR. A coerência entre as oito Homes deve resultar da qualidade da solução escolhida e dos princípios comuns da Guivos, sem transformar as páginas no mesmo template.
+
+Tom de voz, headlines de apoio, microcopy e formulações editoriais não congeladas também podem ser propostas por Design/Content Design. Até aprovação humana, esse material deve permanecer classificado como `CONTENT CANDIDATE` e não pode introduzir promessa, dado, disponibilidade ou claim não sustentado.
 > **Movimento narrativo é contrato de progressão. Seção visual é decisão de Design.**
 
 ---
@@ -612,25 +621,27 @@ Estado histórico daquela frente:
 
 ---
 
-## 20. Estado vigente sob auditoria integral
-
-No estado atual:
+## 20. Estado pós-auditoria e pré-release
 
 ```text
 HANDOFF / MÉTODO
-→ PRESERVADO
+→ ACTIVE / RECONCILED
 
-AUTORIZAÇÃO OPERACIONAL DE DESIGN
-→ SUSPENSA
+8 HOMES
+→ COVERED
 
-MANIFEST / FLOW / GENINPUT
-→ NÃO EXECUTÁVEIS COMO AUTORIZAÇÃO ISOLADA
+VISUAL IDENTITY
+→ DESIGN-OWNED / NOT CANONICALLY PRE-LOCKED
 
-SNAPSHOTS HISTÓRICOS
-→ PRESERVADOS
+FIGMA MAKE / GENERATIVE EXPLORATION
+→ METHOD DEFINED
+→ EXECUTION ONLY AFTER V5 SNAPSHOT + HUMAN RELEASE
 
-NOVA EMISSÃO / NOVA EXPLORAÇÃO
-→ EXIGE NOVO ATO GOVERNADO APÓS OS GATES APLICÁVEIS
+FINAL FIGMA PRODUCTION
+→ SUBJECT TO PROTOTYPE APPROVAL + FINAL ACCEPTANCE CONTRACT
+
+IMPLEMENTATION / PRODUCTION
+→ NOT RELEASED BY THIS HANDOFF
 ```
 
-Este documento permanece normativo para **como** um handoff futuro deverá ser governado quando reativado. Ele não é, durante a auditoria integral, autorização para iniciar esse handoff.
+Este documento governa **como** o handoff deve ocorrer. A liberação efetiva depende do pacote v5 e do gate de `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001`.

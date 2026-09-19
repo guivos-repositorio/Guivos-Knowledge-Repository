@@ -2,12 +2,13 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 status: active
-version: 1.1.0
+version: 2.0.0
 owner: Experience Architecture
-last_updated: 2026-08-29
+last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
 depends_on:
   - GKR-STATE-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
 related:
@@ -17,39 +18,37 @@ related:
   - GKR-UX-HOME-TRAVEL-MASTER-001
   - GKR-UX-HOME-MEDIA-MASTER-001
   - GPA-005
+  - GKR-UX-HOME-ADS-MASTER-001
+  - GPA-007
+  - GKR-UX-HOME-BUSINESS-MASTER-001
+  - GPA-004
+  - GKR-UX-HOME-INTELLIGENCE-MASTER-001
+  - GPA-006
 normative: true
-maturity: generative_template_preserved_instantiation_suspended_during_full_corpus_audit
+maturity: post_audit_eight_home_generative_template_pre_release
 ---
 
 # Homes Públicas — Source Lock e Prompt Controlado para Ferramentas Generativas
 
-## 0. Gate vigente durante a Auditoria Integral do GKR
+## 0. Gate pós-auditoria
 
-Este documento continua normativo como **template e contrato de integridade** para uma futura execução generativa governada.
-
-Ele não constitui autorização para criar ou executar um Source Lock enquanto a Auditoria Integral estiver aberta.
+A Auditoria Integral está concluída. Este template volta a ser a autoridade comum para construir os inputs generativos das oito Homes, subordinado ao Handoff e ao contrato de prontidão de produção.
 
 ```text
 TEMPLATE
-→ PRESERVADO
+→ ACTIVE / 8 HOMES
 
-MÉTODO DE SOURCE LOCK
-→ PRESERVADO
+V4 HISTORICAL SOURCE LOCKS
+→ PROVENANCE ONLY WHEN CHECKPOINT-SUPERSEDED
 
-NOVA INSTANCIAÇÃO OPERACIONAL
-→ SUSPENSA DURANTE A AUDITORIA
+V5 OPERATIONAL SOURCE LOCK
+→ GENERATED PER HOME FROM THE CURRENT V5 PACKAGE
 
-PROMPT / FIGMA MAKE / WIREFRAME / UX / UI / PROTÓTIPO
-→ NÃO AUTORIZADOS COMO NOVA EXECUÇÃO
+FIGMA MAKE / GENERATIVE EXECUTION
+→ ONLY AFTER V5 SNAPSHOT + EXPLICIT HUMAN DESIGN RELEASE
 ```
 
-A regra atual é:
-
-> **TEMPLATE DE EXECUÇÃO ≠ AUTORIZAÇÃO PARA EXECUTAR.**
-
-Source Locks e snapshots históricos permanecem evidência dos checkpoints em que foram emitidos. Uma futura instância exige fechamento dos gates aplicáveis, ato humano explícito de reativação e checkpoint pós-auditoria reconciliado.
-
-As seções abaixo preservam integralmente o método que deverá ser retomado quando houver autorização própria.
+A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode completar lacunas de verdade factual ou arquitetura por inferência.
 
 ---
 
@@ -231,7 +230,7 @@ Quando houver limitação de tamanho, pode-se utilizar **extrato controlado**, d
 
 ---
 
-## 6. Pacotes autorizados das cinco Homes
+## 6. Pacotes autorizados das oito Homes
 
 A execução deve utilizar somente o pacote correspondente à Home em trabalho, salvo exceção registrada no Source Lock.
 
@@ -315,6 +314,20 @@ Paths:
 - `docs/experience-architecture/public-home-media-master-document.md`;
 - `docs/product-architecture/media.md`.
 
+### 6.6 Home Pública — Guivos Ads
+
+Pacote específico: Handoff Canônico + contrato de prontidão de produção + Documento Mestre Ads + `GPA-007`.
+
+### 6.7 Home Pública — Guivos Business
+
+Pacote específico: Handoff Canônico + contrato de prontidão de produção + Source Lock semântico Business + Documento Mestre + Conversão vigente + Contratos de Autoridade + `GPA-004`.
+
+### 6.8 Home Pública — Guivos Intelligence
+
+Pacote específico: Handoff Canônico + contrato de prontidão de produção + Handoff específico Intelligence + Home Source Lock + Documento Mestre + Product Source Lock + `GPA-006`.
+
+Os antigos GENINPUTs de checkpoints superados não são usados como fonte operacional do pacote v5. A emissão v5 gera um `LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL` novo para cada Home, contendo o checkpoint exato, as fontes e o prompt controlado.
+
 ---
 
 ## 7. Ordem de autoridade dentro do input
@@ -369,6 +382,15 @@ Conteúdo provisório usado para testar hierarquia ou composição sem afirmar r
 A ferramenta não deve converter automaticamente `HIPÓTESE`, `LACUNA` ou `PLACEHOLDER` em `CANÔNICO`.
 
 ---
+
+
+### 8.1 Liberdade criativa de Design
+
+Podem ser criados livremente, sem baseline visual pré-imposta pelo GKR: paleta, tipografia, imagens, ilustração, iconografia, composição, grid, respiro, linguagem gráfica, atmosfera, motion, componentes e tom de voz/copy não congelada.
+
+Conteúdo verbal proposto pela designer ou pela IA deve ser rotulado como `CONTENT CANDIDATE` até aprovação humana. O mesmo vale para qualquer direção visual: geração não equivale a aprovação.
+
+Imagens podem ser selecionadas, produzidas ou geradas criativamente. Quando uma imagem puder ser interpretada como evidência de pessoa, parceiro, case, oferta, destino ou operação real, ela deve ser tratada como conceitual/ilustrativa até haver lastro verificável.
 
 ## 9. Prompt-base controlado
 
@@ -647,7 +669,7 @@ Uma execução está pronta para ferramenta generativa quando:
 2. a fase está identificada;
 3. o objetivo é específico;
 4. o checkpoint do GKR está registrado;
-5. as três fontes obrigatórias estão identificadas;
+5. o pacote obrigatório da Home está identificado;
 6. versões e paths estão registrados;
 7. invariantes estão explícitos;
 8. liberdades de Design estão explícitas;
@@ -735,11 +757,11 @@ Estado histórico do método:
 
 ```text
 TEMPLATE
-→ PRONTO E PRESERVADO
+→ ACTIVE / RECONCILED FOR 8 HOMES
 
-INSTANCIAÇÃO POR HOME
-→ SUSPENSA DURANTE A AUDITORIA INTEGRAL
+V5 PER-HOME SOURCE LOCKS
+→ TO BE EMITTED FROM THE FINAL POST-MERGE CHECKPOINT
 
-NOVA EXECUÇÃO GENERATIVA DE DESIGN
-→ NÃO AUTORIZADA
+GENERATIVE EXECUTION
+→ NOT RELEASED UNTIL V5 SNAPSHOT + EXPLICIT HUMAN RELEASE
 ```
