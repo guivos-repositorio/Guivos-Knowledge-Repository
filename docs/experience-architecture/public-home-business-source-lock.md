@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.1
+version: 1.1.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
@@ -84,7 +84,7 @@ Objetivo do lock:
 Para qualquer futura materialização da Home Business, o pacote inicial de autoridade deve ser restrito a:
 
 1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — este Source Lock;
-2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.1 — `docs/experience-architecture/public-home-business-master-document.md`;
+2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.2 — `docs/experience-architecture/public-home-business-master-document.md`;
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002` v1.0.0 — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.0 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 5. `GPA-004` v1.6.0 — arquitetura funcional vigente do Guivos Business.
@@ -660,9 +660,9 @@ A GUIVOS TORNA ESSA CAPACIDADE OPERÁVEL
 ESCALA GLOBAL
 ```
 
-## 23. Liberdades futuras de Design
+## 23. Liberdades correntes de Design
 
-Somente após autorização procedimental específica para incluir Business na fase de Design, poderão ser explorados:
+No regime comum vigente, `DESIGN PRODUCTION RELEASE = GRANTED` para produção externa pela designer. Dentro das invariantes semânticas e funcionais deste Source Lock, a designer pode explorar:
 
 - grid;
 - composição;
@@ -754,11 +754,12 @@ Continuam fora deste Source Lock:
 - países suportados;
 - regras fiscais e tributárias;
 - arquitetura técnica do checkout/contratação;
-- URL e Documento Mestre da futura Home Guivos Intelligence;
+- URL pública final e disponibilidade externa da Home Guivos Intelligence, quando ainda não formalizadas;
+- o Documento Mestre da Home Guivos Intelligence **já existe** e não é lacuna futura;
 - representações analíticas finais, indicadores e dados exatos do Intelligence;
 - direção visual final da Home Business.
 
-A materialização futura deve sinalizar essas lacunas, não resolvê-las por inferência.
+A produção externa de Design deve sinalizar essas lacunas quando materialmente relevantes, sem resolvê-las por inferência.
 
 ## 27. Contexto procedimental atual de Design
 
