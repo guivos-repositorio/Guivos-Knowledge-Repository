@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.24.0
+version: 0.25.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -38,7 +38,7 @@ normative: false
 
 ## 1. Finalidade
 
-Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A D5-C1 adicionou seis handoffs bidirecionais mínimos entre `PER-008 — Hoje` e `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução`. A D5-C2 materializou os três destinos, a D5-C3 os validou localmente, a D5-C4A materializou as origens recorrentes em Hoje e fechou o contrato semântico, e a D5-C4B validou individualmente `TRN-008..013` ponta a ponta no limite documental.
+Este registro atribui identificadores estáveis às transições correntes das Jornadas Integradas. A maturidade declarada em cada linha é o estado operativo a ser usado por Design e prototipação; a sequência histórica de validação não é necessária para consumo.
 
 A contagem permanece em **66 transições**. `TRN-008..013` passam a **integralmente validadas**.
 
@@ -86,11 +86,11 @@ Validação integral documental não comprova implementação técnica nem esten
 
 `TRN-007` preserva consentimento, estado canônico, retorno e idempotência; navegar para Hoje não cria avanço ou autorização adicional.
 
-`TRN-008..013` são handoffs de navegação protegida integralmente validados pela D5-C4B no limite documental. Abrir uma responsabilidade especializada não cria, confirma ou altera automaticamente o objeto funcional correspondente. Retornar a Hoje não equivale a concluir, aceitar, reconhecer evolução ou conceder nova autorização.
+`TRN-008..013` são handoffs de navegação protegida integralmente validados no limite documental. Abrir uma responsabilidade especializada não cria, confirma ou altera automaticamente o objeto funcional correspondente. Retornar a Hoje não equivale a concluir, aceitar, reconhecer evolução ou conceder nova autorização.
 
 Para `TRN-008`, `TRN-010` e `TRN-012`, a validação aplica-se ao **estado recorrente de PER-008 quando o affordance correspondente estiver presente e aplicável**. A primeira variante de Hoje da UXA-097 não é obrigada a materializar esses três acessos.
 
-A D5-C1 não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011 ↔ PER-012` ou `PER-010 ↔ PER-012`. Relação semântica entre capacidades não equivale automaticamente a navegação direta.
+O modelo corrente não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011 ↔ PER-012` ou `PER-010 ↔ PER-012`. Relação semântica entre capacidades não equivale automaticamente a navegação direta.
 
 ## 5. Pessoa em Coletivos e operação do responsável
 
@@ -220,7 +220,7 @@ Abrir Planos voluntariamente é navegação administrativa e não constitui sele
 
 `TRN-426` não significa “ir para Business Scale”. A Organização permanece participante e Guivos Business permanece produto separado. A maturidade da transição continua parcial.
 
-A UXA-100-A4 também corrige o rótulo visual obsoleto `Guivos Business` em `ORG-001`, sem transformar a superfície em novo ativo.
+`ORG-001` usa a nomenclatura institucional corrente; Guivos Business permanece produto especializado separado.
 
 ## 9. BND-002
 
@@ -237,7 +237,7 @@ A correção semântica preservada:
 ## 10. Preservações de maturidade
 
 - transições totais permanecem **66**;
-- `TRN-008..013` ficam **integralmente validadas** pela D5-C4B no limite documental;
+- `TRN-008..013` estão **integralmente validadas** no limite documental;
 - `TRN-406/407` ficam **contratadas** até materialização suficiente de `PER-009`;
 - `TRN-417/418` e `TRN-427/428` ficam **integralmente validadas** no limite documental de navegação administrativa;
 - `TRN-401..405`, `TRN-411..415` e `TRN-421..425` permanecem localmente validadas;
@@ -248,4 +248,4 @@ A correção semântica preservada:
 
 ## 11. Próximo gate
 
-A D5-C4B encerra a lacuna específica de continuidade `Hoje ↔ Meus Objetivos / Meus Próximos Passos / Minha Evolução` no limite documental. A Jornada da Pessoa permanece `draft` por outras lacunas. V5/UXA-102, D6, D7, integrações patrocinadas, cobrança real e processos posteriores a `BND-002` permanecem frentes separadas e não são iniciados automaticamente.
+A maturidade corrente deve ser lida diretamente neste registro e nas autoridades específicas citadas. Frentes futuras ou de implementação permanecem separadas e exigem autorização própria.

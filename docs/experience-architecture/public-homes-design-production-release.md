@@ -279,24 +279,3 @@ PRODUCT ENGINEERING
 ```
 
 A designer não precisa aguardar nova materialização para iniciar criação e prototipação com as fontes correntes.
-
-
-
-A completude pré-emissão foi concluída historicamente, mas o snapshot v6 foi invalidado para nova execução por um P1 pós-emissão no Operational Flow v3.0.1.
-
-O próximo movimento legítimo é:
-
-```text
-CANONICAL SOURCES
-→ RECONCILED
-
-CURRENT EXTERNAL SOURCE PACKAGE
-→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
-→ THIS RELEASE DOES NOT FREEZE A TRANSITORY PACKAGE VALUE
-
-NEXT GOVERNED ACT
-→ FOLLOW CURRENT MANIFEST / STATE
-→ MATERIALIZATION OF ANY NEW SNAPSHOT REQUIRES SEPARATE HUMAN AUTHORIZATION
-```
-
-A designer somente deve iniciar ou retomar execução operacional contra um snapshot que o Manifesto + Estado Atual designem explicitamente como corrente e válido.
