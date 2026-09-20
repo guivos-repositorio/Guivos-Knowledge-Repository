@@ -2,21 +2,19 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 title: Homes Públicas — Autorização Governada de Design Production Release
 status: active
-version: 1.2.1
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
-maturity: design_production_release_granted_current_package_delegated
+maturity: design_production_release_granted_main_canonical_first_class
 depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-GENINPUT-001
 related:
   - GKR-STATE-001
-  - GKR-HOME-MASTERS-REMEDIATION-001
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 ---
 
@@ -74,34 +72,25 @@ Ela não obriga:
 - direção visual pré-escolhida;
 - identidade visual predefinida pelo GKR.
 
-## 3. Evidência de entrada
+## 3. Base corrente da autorização
 
-O release foi concedido após emissão e validação do snapshot v5:
+A autorização humana de produção permanece `GRANTED`.
+
+Ela é exercida contra as autoridades correntes do `main`, conforme o Manifesto vigente. A validade do release não depende de snapshot histórico, candidate ou checkpoint de emissão.
 
 ```text
-ORIGIN MAIN FOR SNAPSHOT
-→ aa1b524c20f6707d007208222ba8581af097c38d
+DESIGN PRODUCTION RELEASE
+→ GRANTED
 
-SNAPSHOT BRANCH
-→ delivery/design-handoff-v5
+CANONICAL INPUT
+→ CURRENT MAIN + CURRENT MANIFEST
 
-SNAPSHOT COMMIT
-→ f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
+SNAPSHOT
+→ OPTIONAL TRANSPORT ARTIFACT
 
-SNAPSHOT TREE
-→ 67bacb135166e7f3e85bfb4c52602ba89a515a1e
-
-PACKAGE
-→ 34 FILES
-→ 26 CANONICAL SOURCES
-→ 8 PER-HOME GUIDES
-
-CANONICAL BLOB PRESERVATION
-→ 26 / 26 EXACT MATCH
-→ MISMATCHES = 0
+HISTORICAL PACKAGE
+→ NOT AN AUTHORIZATION SOURCE
 ```
-
-O v5 permanece snapshot histórico congelado. O v6 também foi posteriormente emitido e congelado, mas uma revisão independente pós-emissão identificou contradição material no Operational Flow v3.0.1 preservado pelo snapshot. Portanto, o v6 não é válido para nova execução; a correção canônica ocorre em revisão posterior e exige nova emissão, nunca reescrita do snapshot.
 
 ## 4. Fonte de verdade para cada Home
 
@@ -245,9 +234,6 @@ PUBLIC HOME O/C DESIGN RELEASE
 ## 10. Estado
 
 ```text
-V5 SNAPSHOT
-→ FROZEN / HISTORICAL DELIVERY SNAPSHOT
-
 DESIGN PRODUCTION RELEASE
 → GRANTED
 
@@ -255,8 +241,7 @@ EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 → RELEASED
 
 OPERATIONAL EXECUTION
-→ REQUIRES SNAPSHOT DESIGNATED CURRENT / VALID
-→ CURRENT PACKAGE STATUS GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
+→ AUTHORIZED AGAINST CURRENT CANONICAL SOURCE SET
 
 MANUAL CREATIVE PRODUCTION
 → AUTHORIZED
@@ -267,20 +252,35 @@ AI-ASSISTED CREATIVE PRODUCTION
 GKR-CREATED FIGMA
 → NONE
 
-PRIOR GKR FIGMA EXPLORATION
-→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
+HISTORICAL INPUT
+→ EXCLUDED
 
 FINAL DESIGN ACCEPTANCE
 → HUMAN / SEPARATE
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
-
-UXA-102 / V5
-→ NOT_STARTED
 ```
 
 ## 11. Próximo movimento legítimo
+
+```text
+DESIGNER
+→ MAY CONSUME CURRENT CANONICAL SOURCES
+
+AI
+→ OPTIONAL
+
+SNAPSHOT MATERIALIZATION
+→ ONLY IF A REAL EXTERNAL FREEZE / TRANSPORT NEED APPEARS
+
+PRODUCT ENGINEERING
+→ SEPARATE FUTURE GATE
+```
+
+A designer não precisa aguardar nova materialização para iniciar criação e prototipação com as fontes correntes.
+
+
 
 A completude pré-emissão foi concluída historicamente, mas o snapshot v6 foi invalidado para nova execução por um P1 pós-emissão no Operational Flow v3.0.1.
 

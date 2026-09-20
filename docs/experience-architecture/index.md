@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.16
+version: 1.20.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 related:
@@ -61,6 +61,27 @@ normative: false
 ---
 
 # Arquitetura da Experiência da Guivos
+
+## Consumo corrente para Design e IA
+
+Para criação e prototipação das Homes, utilizar somente o conjunto autorizado por `GKR-UX-HOMES-DESIGN-DELIVERY-001`.
+
+```text
+CURRENT MAIN
+→ PRIMARY SOURCE
+
+CURRENT MANIFEST
+→ AUTHORIZED WHITELIST
+
+SNAPSHOT / CANDIDATE / CHECKPOINT / AUDIT / REMEDIATION
+→ NOT DESIGN INPUT
+→ NOT AI INPUT
+
+GIT HISTORY
+→ PROVENANCE ONLY
+```
+
+Arquivos históricos podem permanecer temporariamente no corpus enquanto sua elegibilidade de remoção física é provada, mas não possuem função operacional para Design/IA.
 
 > **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
 

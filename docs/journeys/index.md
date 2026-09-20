@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.48.0
+version: 0.49.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 related:
@@ -66,57 +66,53 @@ A investigação de supply, oportunidades reais e testes de relevância de Organ
 - [Registro Granular de Transições](transition-registry.md)
 - [Lacunas e Continuidades Ausentes](gaps.md)
 
-## 3. Sequência governada recente
+## 3. Topologia corrente
 
 ```text
-UXA-097 — compreensão inicial → primeira Tela Hoje
-→ UXA-098 — publicação → descoberta → Mapa/Lista → Detalhe
-→ UXA-099 — dez estados residuais Opportunity Boost
-→ UXA-100/A1/A2/A3 — Planos materializados, validados e promovidos
-→ UXA-101 — Detalhe → revisão consciente → BND-001
-→ UXA-100-A4 — reconciliação controlada das origens voluntárias de Planos
-→ D4 — Domínios propagados documentalmente nas três jornadas
-→ D5-A — Domínios materializados na jornada inicial
-→ D5-B — Domínios materializados em Oportunidades
-→ D5-C1 — responsabilidades e handoffs de Objetivos, Próximos Passos e Evolução contratados
-→ D5-C2 — três responsabilidades materializadas em low-fidelity
-→ D5-C3 — três estados-base reformulados e validados localmente
-→ D5-C4A — origens visuais em Hoje + contrato integrado dos handoffs
-→ D5-C4B — validação integrada individual de TRN-008..013
-→ O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
-→ O/C State Map — DEFINED / CANONICAL DOCUMENTARY
-→ O/C Priority Flows — DEFINED / CANONICAL DOCUMENTARY
+PESSOA
+→ HOME PÚBLICA
+→ ENTRADA PROTEGIDA
+→ COMPREENSÃO / HOJE
+→ OBJETIVOS / PRÓXIMOS PASSOS / EVOLUÇÃO
+→ OPORTUNIDADES
+→ EXPERIÊNCIAS / FRONTEIRAS EXTERNAS
+
+COLETIVO
+→ HOME PÚBLICA
+→ EXPERIÊNCIA AUTENTICADA
+→ PARTICIPAÇÃO / RESPONSABILIDADE / SOLICITAÇÕES / CONTINUIDADE
+
+ORGANIZAÇÃO
+→ HOME PÚBLICA
+→ EXPERIÊNCIA AUTENTICADA
+→ CAPACIDADES / OPORTUNIDADES / RELAÇÕES / CONTINUIDADE
 ```
 
-D4 e D5 são frentes não numeradas no programa UXA. A definição documental de Surface Map e State Map O/C também não altera a última frente funcional numerada: UXA-101 continua vigente, e UXA-102/V5 permanece não iniciada.
+A maturidade de cada superfície e transição é determinada pelos registries e autoridades correntes, não pela sequência histórica de UXAs que levou até elas.
 
-Nenhuma etapa autoriza automaticamente a seguinte. Para O/C, Priority Flows já estão definidos documentalmente; o próximo gate separado é Navigation Materialization.
+## 4. Estado documental corrente
 
-## 4. Estado documental
+| Camada | Estado corrente |
+|---|---|
+| Journey da Pessoa | contratos e continuidade documentados; implementação separada |
+| Journey do Coletivo | topologia autenticada e fluxos correntes documentados |
+| Journey da Organização | topologia autenticada e fluxos correntes documentados |
+| Domínios de Evolução | autoridade corrente |
+| Catálogo de telas | catálogo funcional corrente; sem inventário histórico de SVGs |
+| Registro de superfícies | autoridade granular corrente |
+| Registro de transições | autoridade granular corrente |
+| Protótipo/implementação | somente quando explicitamente autorizado |
 
-| Camada | Estado | Referência |
-|---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.48.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A + Jobs/IA + Surface Map/State Map/Priority Flows O/C |
-| propagação dos Domínios de Evolução | `active` 1.0.0 | GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001 |
-| D5-A — jornada inicial | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
-| D5-B — Oportunidades | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
-| D5-C1 — contrato direção/movimento/evolução | `active` 1.0.0 | três responsabilidades + seis handoffs contratados |
-| D5-C2/D5-C3/D5-C4A/D5-C4B | `active` | funções e validações textuais preservadas; materialização física sob F-016 |
-| Pessoa, Coletivo e Organização | `draft` | incompletude explícita preservada |
-| Jornada da Pessoa | `draft` | V4 UXA-101; UXA-102 não iniciada |
-| Jornada do Coletivo | `draft` | Jobs + IA + Surface Map + State Map + Priority Flows definidos documentalmente; navegação/wireframe principal pendentes |
-| Jornada da Organização | `draft` | Jobs + IA + Surface Map + State Map + Priority Flows definidos documentalmente; navegação/wireframe principal pendentes |
-| catálogo integrado | `active` 0.33.0 | **0 SVGs físicos após F-016-A**; contratos textuais preservados; maturidade agregada não inferida |
-| registro de superfícies | `active` 0.26.0 | 57 IDs documentais; Surface Map O/C reconciliado sem promoção individual |
-| registro de transições | `active` | 66 transições documentais; State Map não promove maturidade individual |
-| O/C Surface Map | `active` 1.0.0 | topologia lógico-documental canônica |
-| O/C State Map | `active` 1.0.0 | estados funcionais canônicos documentais |
-| O/C Priority Flows | `active` 1.0.0 | fluxos prioritários canônicos documentais; navegação não materializada |
-| antiga galeria visual integrada | `removed_from_current_corpus` | proveniência preservada no histórico Git |
-| antiga matriz por SVG | `removed_from_current_corpus` | associações/perfis recuperáveis no histórico Git |
-| F-016-A | `resolved` | **119/119 SVGs removidos; 0 SVGs físicos; referências vivas reconciliadas; Semantic #832 + Mechanical #1090 + prova pós-delete v2 SUCCESS** |
-| protótipo, aplicação e motor | não iniciados | — |
-| Engenharia de Produto | pausada antes de W0-01 | W0-01 |
+```text
+HISTORICAL UXA SEQUENCE
+→ NOT REQUIRED FOR DESIGN / AI
+
+PHYSICAL SVG HISTORY
+→ NOT REQUIRED FOR DESIGN / AI
+
+CURRENT REGISTRIES
+→ AUTHORITATIVE FOR PROTOTYPING
+```
 
 ## 5. Domínios de Evolução nas Jornadas
 

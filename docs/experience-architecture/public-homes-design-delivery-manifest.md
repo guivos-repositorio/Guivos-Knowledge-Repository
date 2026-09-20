@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 6.6.0
+version: 7.0.0
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: true
-maturity: v9_candidate_substantive_revalidation_pass_v8_current
+maturity: current_canonical_design_source_manifest
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -14,459 +14,166 @@ depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
-  - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V9-CANDIDATE-001
 ---
 
 # Homes Públicas — Manifesto Canônico de Entrega para Design
 
 ## 1. Finalidade
 
-Este Manifesto governa a emissão externa das oito Homes públicas para criação pela designer.
-
-O snapshot **v6 foi emitido, materializado e teve sua integridade validada**, mas uma revisão independente pós-emissão encontrou um P1 material dentro do próprio pacote: o Operational Flow v3.0.1 preservou linguagem pré-emissão incompatível com o uso corrente. O v6 permanece congelado e reproduzível como proveniência histórica, porém **não é válido para nova execução**. Neste estado, não existe pacote externo corrente; nova emissão/revalidação é necessária. O v5 também permanece congelado como snapshot histórico.
-
-O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.2` foi revalidado, reconciliado e realizado pelo snapshot `GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.1.0`. O v7 foi materializado sob autorização humana explícita a partir de `main = 35c616a4a7bf754577c180d37afe5e0c22380c7b`, em `delivery/design-handoff-v7`, commit `564a2656332dffeb4779ca20ee1ce6697abaa06d`, tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`. Uma revisão independente pós-emissão encontrou um P1 material nas cinco autoridades comuns contidas no próprio snapshot; por isso o v7 permanece congelado/histórico e inválido para nova execução. `CURRENT EXTERNAL SOURCE PACKAGE = NONE`.
-
-O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.3.0` foi revalidado e realizado pelo snapshot `GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001 v1.0.0`. O v8 foi materializado sob autorização humana explícita a partir de `main = 00791d1e09b5e75b33c223e38164eeee1be0c6cd`, em `delivery/design-handoff-v8`, commit `d7eea909b1b5cb6266d7c4a725657ccd909f0e63`, tree `17553412f24d7a97287ddc5944b8622ecf744534`. A emissão contém 29/29 blobs canônicos exatos e 8/8 guias válidos. Como a cadeia comum `1.6.5 / 2.2.17 / 1.2.17 / 3.0.3 / 1.2.1` é package-state agnostic, a contradição auto-invalidante do v7 não está presente. `CURRENT EXTERNAL SOURCE PACKAGE = V8`.
-
-O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V9-CANDIDATE-001 v0.1.0` foi preparado sobre `main = 7bd02df4f0ed8ab2c809992abafa251756dcaf9a` para incorporar os quadros de consulta rápida dos 83 movimentos adicionados aos oito Home Masters. A recomputação direta confirma 29/29 fontes: 21 pins permanecem idênticos ao v8 e 8 pins mudam exatamente nos oito Masters. A revalidação substantiva retorna `PASS`; a validação do HEAD documental final é um gate externo da PR. `CURRENT EXTERNAL SOURCE PACKAGE = V8` e `delivery/design-handoff-v9` não existe.
+Este Manifesto define **o conjunto corrente de fontes que pode ser consumido por designer humana e, opcionalmente, por sistemas de IA** para criação e prototipação das oito Homes públicas.
 
 ```text
+CANONICAL CHECKPOINT
+→ main @ 389caab7f80c800185c97025398c684a6f11e450
+
+SOURCE OF TRUTH
+→ CURRENT MAIN
+
+SNAPSHOT REQUIREMENT
+→ NONE
+
+HISTORICAL / CANDIDATE / CHECKPOINT / AUDIT
+→ EXCLUDED FROM DESIGN AND AI INPUT
+
 DESIGNER
 → CREATIVE AUTHOR
-→ MANUAL FIRST-CLASS
 
 AI
 → OPTIONAL / DESIGNER-CONTROLLED
-
-GKR
-→ SOURCE OF SEMANTIC / FUNCTIONAL / EVIDENCE TRUTH
-
-VISUAL IDENTITY
-→ DESIGN-OWNED
-
-GKR-CREATED FIGMA
-→ NONE
 ```
 
-## 2. Checkpoint e snapshot v6 preservado
+Snapshots, candidates e registros de emissão anteriores pertencem à proveniência do Git. Não são necessários para compreender ou executar o estado corrente.
+
+## 2. Cinco autoridades comuns
+
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.0` — `docs/experience-architecture/public-homes-design-handoff.md`;
+2. `GKR-UX-HOMES-GENINPUT-001 v2.3.0` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`;
+3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.3.0` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.1.0` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`;
+5. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.0` — `docs/experience-architecture/public-homes-design-production-release.md`.
+
+## 3. Fontes específicas por Home
+
+### 3.1 Pessoa
+
+- `GKR-UX-HOME-MASTER-001 v1.0.4` — `docs/experience-architecture/public-home-master-document.md`;
+- `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`.
+
+### 3.2 Organizações e Coletivos
+
+- `GKR-UX-HOME-OC-MASTER-001 v1.0.4` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
+- `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
+
+### 3.3 Mall
+
+- `GKR-UX-HOME-MALL-MASTER-001 v1.1.2` — `docs/experience-architecture/public-home-mall-master-document.md`;
+- `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md`.
+
+### 3.4 Travel
+
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.4` — `docs/experience-architecture/public-home-travel-master-document.md`;
+- `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
+
+### 3.5 Media
+
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.2` — `docs/experience-architecture/public-home-media-master-document.md`;
+- `GPA-005 v1.2.0` — `docs/product-architecture/media.md`.
+
+### 3.6 Ads
+
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.2` — `docs/experience-architecture/public-home-ads-master-document.md`;
+- `GPA-007 v1.3.0` — `docs/product-architecture/ads.md`.
+
+### 3.7 Business
+
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4`;
+- `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3`;
+- `GPA-004 v1.6.0`.
+
+### 3.8 Intelligence
+
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.10`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.8`;
+- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3`;
+- `GKR-UX-HOMES-OUTCOME-001 v1.0.0`;
+- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1`;
+- `GPA-006 v2.0.1`.
+
+## 4. Cobertura atual
 
 ```text
-ORIGIN MAIN
-→ 52f1dade6d7bfcd8c1e5d1b567d7125ac725018f
+HOMES
+→ 8 / 8
 
-SNAPSHOT BRANCH
-→ delivery/design-handoff-v6
+HOME MASTERS
+→ 8 / 8 CURRENT
 
-SNAPSHOT COMMIT
-→ b7fe5d62cef444c8316c66edd8ac73b703698a4a
+QUICK-REFERENCE MOVEMENTS
+→ 83 / 83
 
-SNAPSHOT TREE
-→ 61eef7447fc5c6b36890ccb774f7011615a6abca
-```
-
-O registro reproduzível da emissão e da invalidação posterior para nova execução é `GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001 v1.1.1`.
-
-## 3. Composição canônica para próxima reemissão — 29 fontes únicas
-
-### 3.1 Fontes comuns
-
-1. `docs/experience-architecture/public-homes-design-handoff.md` — `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.5`;
-2. `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — `GKR-UX-HOMES-GENINPUT-001 v2.2.17`;
-3. `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.2.17`;
-4. `docs/experience-architecture/public-homes-design-delivery-operational-flow.md` — `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.3`;
-5. `docs/experience-architecture/public-homes-design-production-release.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1`.
-
-### 3.2 Pessoa
-
-6. `docs/experience-architecture/public-home-master-document.md` — `GKR-UX-HOME-MASTER-001 v1.0.4`;
-7. `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md` — `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.0`.
-
-### 3.3 Organizações e Coletivos
-
-8. `docs/experience-architecture/public-home-organizations-collectives-master-document.md` — `GKR-UX-HOME-OC-MASTER-001 v1.0.4`;
-9. `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md` — `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0`.
-
-### 3.4 Mall
-
-10. `docs/experience-architecture/public-home-mall-master-document.md` — `GKR-UX-HOME-MALL-MASTER-001 v1.1.2`;
-11. `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md` — `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
-
-### 3.5 Travel
-
-12. `docs/experience-architecture/public-home-travel-master-document.md` — `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.4`;
-13. `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md` — `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
-
-### 3.6 Media
-
-14. `docs/experience-architecture/public-home-media-master-document.md` — `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.2`;
-15. `docs/product-architecture/media.md` — `GPA-005 v1.2.0`.
-
-### 3.7 Ads
-
-16. `docs/experience-architecture/public-home-ads-master-document.md` — `GKR-UX-HOME-ADS-MASTER-001 v1.0.2`;
-17. `docs/product-architecture/ads.md` — `GPA-007 v1.3.0`.
-
-### 3.8 Business
-
-18. `docs/experience-architecture/public-home-business-source-lock.md` — `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6`;
-19. `docs/experience-architecture/public-home-business-master-document.md` — `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4`;
-20. `docs/experience-architecture/public-home-business-conversion-authority-v2.md` — `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
-21. `docs/experience-architecture/public-home-business-authority-contracts.md` — `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3`;
-22. `docs/product-architecture/business.md` — `GPA-004 v1.6.0`.
-
-### 3.9 Intelligence
-
-23. `docs/experience-architecture/public-home-intelligence-design-handoff.md` — `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.10`;
-24. `docs/experience-architecture/public-home-intelligence-source-lock.md` — `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9`;
-25. `docs/experience-architecture/public-home-intelligence-master-document.md` — `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.8`;
-26. `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md` — `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3`;
-27. `docs/experience-architecture/public-homes-value-outcome-principle.md` — `GKR-UX-HOMES-OUTCOME-001 v1.0.0`;
-28. `docs/product-architecture/intelligence-product-source-lock.md` — `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1`;
-29. `docs/product-architecture/intelligence.md` — `GPA-006 v2.0.1`.
-
-## 4. Oito guias operacionais do snapshot v6
-
-Cada Home possui `00-LEIA-PRIMEIRO.md` com checkpoint, fontes/IDs/versões/blobs, ordem de leitura, invariantes, matriz das oito classes, dados reais, questões abertas, inferências proibidas, liberdade criativa, manual-first, IA opcional, prompt tool-neutral e autoauditoria.
-
-O guia não substitui as autoridades que lista.
-
-## 5. Estrutura externa v6 preservada
-
-```text
-GUIVOS-HOMES-DESIGN-HANDOFF-v6/
-│
-├── 00-COMUM/
-│   ├── 01-Handoff-Canonico-das-Homes.md
-│   ├── 02-Source-Lock-e-Prompt-IA-Opcional.md
-│   ├── 03-Prontidao-de-Producao-e-Contrato-Designer-IA.md
-│   ├── 04-Fluxo-Operacional-Designer-First.md
-│   └── 05-Design-Production-Release.md
-│
-├── 01-HOME-PESSOA/
-├── 02-HOME-ORGANIZACOES-E-COLETIVOS/
-├── 03-HOME-MALL/
-├── 04-HOME-TRAVEL/
-├── 05-HOME-MEDIA/
-├── 06-HOME-ADS/
-├── 07-HOME-BUSINESS/
-└── 08-HOME-INTELLIGENCE/
-```
-
-```text
-5 COMMON
-+
-24 HOME-SPECIFIC UNIQUE
-=
-29 CANONICAL
-
-29 CANONICAL
-+
-8 GUIDES
-=
-37 EXTERNAL FILES
-```
-
-## 6. Integridade comprovada
-
-```text
-29 / 29 CANONICAL SOURCES PRESENT
-29 / 29 MAIN BLOB × SNAPSHOT BLOB EXACT MATCH
-MISMATCHES = 0
-EXTRA BLOBS = 0
-```
-
-Nenhum documento canônico foi resumido, reescrito ou adaptado para formar o pacote.
-
-## 7. Regra de consumo humano
-
-A designer pode trabalhar sem IA:
-
-```text
-READ
-→ UNDERSTAND
-→ CREATE
-→ AUTOAUDIT
-→ HUMAN REVIEW
-```
-
-## 8. Regra de consumo com IA opcional
-
-Quando a designer optar por IA:
-
-```text
-00-COMUM
-+
-00-LEIA-PRIMEIRO
-+
-HOME-SPECIFIC SOURCES
-↓
-OPTIONAL AI
-↓
-PROPOSAL / HYPOTHESIS
-↓
-DESIGNER JUDGMENT
-```
-
-Não misturar fontes específicas de Homes diferentes por conveniência.
-
-## 9. Formatos e transporte
-
-```text
-GIT SNAPSHOT
-→ REPRODUCIBLE PACKAGE AUTHORITY
-
-MARKDOWN
-→ PRIMARY HUMAN + AI SOURCE
-
-PDF
-→ OPTIONAL HUMAN READING AID
-
-ZIP
-→ OPTIONAL TRANSPORT
-```
-
-## 10. Mudança após emissão
-
-Mudança criativa da designer sem alteração de contrato não exige reemissão.
-
-Mudança material nas fontes ou invariantes da Home exige adjudicação e, quando afetar nova execução, reissue/revalidation. Mudança não material pode preservar o snapshot após review registrado.
-
-## 11. Finding pós-emissão e efeito governado
-
-A revisão independente da PR #402 sobre o HEAD `615ec67af2f3d463747bdb309fc49cb88e557137` encontrou um P1 material no pacote emitido:
-
-```text
-SNAPSHOT V6 FLOW
-→ GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.1
-→ SOURCE COMPLETENESS AUDIT = IN PROGRESS
-→ V6 PACKAGE = NOT YET ELIGIBLE
-
-ADJUDICATION
-→ VALID MATERIAL CONTRADICTION
-
-CANONICAL REMEDIATION
-→ FLOW v3.0.2
-→ RELEASE v1.2.0
-
-FROZEN V6 SNAPSHOT
-→ NOT REWRITTEN
-→ INVALID FOR NEW EXECUTION
-
-V7 CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.2
-→ REALIZED BY V7 SNAPSHOT
-→ NON-NORMATIVE PROVENANCE
-
-V7 SNAPSHOT
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.1.0
-→ MATERIALIZED / INTEGRITY-VALIDATED
-→ FROZEN / HISTORICAL
-→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
-→ branch delivery/design-handoff-v7
-→ commit 564a2656332dffeb4779ca20ee1ce6697abaa06d
-→ tree 39a72433b0b6f75975bc6a128c57fb688bd85bcb
-→ 29 / 29 CANONICAL BLOBS EXACT MATCH
-→ 8 / 8 READ-FIRST GUIDES VALID
-
-CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ V8 CANDIDATE PREPARED / SUBSTANTIVE REVALIDATION PASS / FINAL DOCUMENTARY HEAD VALIDATION = EXTERNAL PR GATE / MATERIALIZATION DECISION PENDING
-```
-
-## 12. Segundo finding pós-emissão — autoridades comuns da próxima reemissão
-
-O re-review Codex da PR #402 sobre o HEAD `b815e0f07f5f59bde2fbbd23288a65b1816cb2e4` identificou outro P1 material antes de qualquer nova emissão:
-
-```text
-P1 — RECONCILE THE COMMON AUTHORITIES BEFORE REISSUING
-→ VALID
-
-GENINPUT v2.2.14
-→ GENERATIVE EXECUTION = AUTHORIZED TO EXECUTE
-→ STALE RELEASE / V6-CANDIDATE REFERENCES
-
-READINESS v1.2.14
-→ AI-ASSISTED DESIGN = AUTHORIZED TO EXECUTE
-→ STALE RELEASE / CURRENT-CANDIDATE REFERENCES
-
-REMEDIATION
-→ HANDOFF v1.6.3
-→ GENINPUT v2.2.15
-→ READINESS v1.2.15
-→ FLOW v3.0.2
-→ RELEASE v1.2.0
-→ CURRENT EXTERNAL SOURCE PACKAGE = NONE
-→ OPERATIONAL EXECUTION = PAUSED
-→ NEW CANDIDATE / REISSUE REQUIRED BEFORE MATERIALIZATION
-```
-
-Esse finding não altera o snapshot v6 histórico. Ele corrige as autoridades canônicas que poderão compor uma futura reemissão.
-
-## 13. Finding pós-emissão do v7 — estado transitório congelado nas autoridades comuns
-
-A revisão Codex da PR #407 no HEAD `01a54fb4c5122967b6cba40ee81c3708321fc14a` identificou um P1 material:
-
-```text
-P1 — RECONCILE COMMON AUTHORITIES BEFORE PROMOTING V7
-→ VALID
-
-V7-CONTAINED COMMON CHAIN
-→ HANDOFF v1.6.3
-→ GENINPUT v2.2.15
-→ READINESS v1.2.15
-→ FLOW v3.0.2
-→ RELEASE v1.2.0
-
-CONTRADICTION
-→ PACKAGE CLAIMED CURRENT
-→ EMBEDDED AUTHORITIES SAY PACKAGE = NONE / EXECUTION PAUSED
-
-ADJUDICATION
-→ V7 NOT PROMOTABLE AS CURRENT
-→ V7 REMAINS IMMUTABLE
-→ V7 FROZEN / HISTORICAL / INVALID FOR NEW EXECUTION
-
-CANONICAL REMEDIATION
-→ HANDOFF v1.6.5
-→ GENINPUT v2.2.17
-→ READINESS v1.2.17
-→ FLOW v3.0.3
-→ RELEASE v1.2.1
-→ TRANSITORY CURRENT-PACKAGE VALUE DELEGATED TO MANIFEST + CURRENT STATE
-
-CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ NEW REISSUE / REVALIDATION REQUIRED
-```
-
-Essa correção evita que um futuro snapshot congele novamente um valor operacional transitório.
-
-## 14. Snapshot v8 corrente
-
-```text
-V8 CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.3.0
-→ NON-NORMATIVE PROVENANCE
-→ REALIZED BY V8 SNAPSHOT
-
-V8 SNAPSHOT
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001 v1.0.0
-→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
-→ FROZEN
-→ branch delivery/design-handoff-v8
-→ origin main 00791d1e09b5e75b33c223e38164eeee1be0c6cd
-→ commit d7eea909b1b5cb6266d7c4a725657ccd909f0e63
-→ tree 17553412f24d7a97287ddc5944b8622ecf744534
-→ 29 / 29 CANONICAL BLOBS EXACT MATCH
-→ 8 / 8 READ-FIRST GUIDES VALID
-→ 37 FILES TOTAL
-
-COMMON AUTHORITY CHAIN
-→ HANDOFF 1.6.5
-→ GENINPUT 2.2.17
-→ READINESS 1.2.17
-→ FLOW 3.0.3
-→ RELEASE 1.2.1
-→ PACKAGE-STATE AGNOSTIC
-
-CURRENT EXTERNAL SOURCE PACKAGE
-→ V8
-→ delivery/design-handoff-v8
-→ VALID FOR NEW EXTERNAL DESIGN EXECUTION
-```
-
-## 15. Snapshots históricos
-
-`delivery/design-handoff-v1` até `delivery/design-handoff-v5` permanecem congelados. O v5 está registrado em `GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001`.
-
-O v6 não reescreve nenhuma emissão anterior. Após o finding pós-emissão, ele permanece congelado como proveniência histórica e não deve ser usado para nova execução.
-
-## 16. Estado
-
-```text
-V5
-→ FROZEN / HISTORICAL
-
-V6
-→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
-→ FROZEN / HISTORICAL
-→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
-
-CURRENT EXTERNAL SOURCE PACKAGE
-→ V8
-→ delivery/design-handoff-v8
-→ commit d7eea909b1b5cb6266d7c4a725657ccd909f0e63
-→ tree 17553412f24d7a97287ddc5944b8622ecf744534
-→ VALID FOR NEW EXTERNAL DESIGN EXECUTION
-
-LATEST MATERIALIZED SNAPSHOT
-→ delivery/design-handoff-v8
-→ commit d7eea909b1b5cb6266d7c4a725657ccd909f0e63
-→ tree 17553412f24d7a97287ddc5944b8622ecf744534
-
-HISTORICAL INVALID SNAPSHOTS
-→ delivery/design-handoff-v6
-→ commit b7fe5d62cef444c8316c66edd8ac73b703698a4a
-→ tree 61eef7447fc5c6b36890ccb774f7011615a6abca
-→ delivery/design-handoff-v7
-→ commit 564a2656332dffeb4779ca20ee1ce6697abaa06d
-→ tree 39a72433b0b6f75975bc6a128c57fb688bd85bcb
+COMMON AUTHORITIES
+→ 5 / 5 CURRENT
 
 DESIGN PRODUCTION RELEASE
 → GRANTED
 
-EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
-→ RELEASED
-
-OPERATIONAL EXECUTION
-→ ENABLED FOR EXTERNAL DESIGNER PRODUCTION UNDER CURRENT V8 PACKAGE
-
-AI
-→ OPTIONAL / DESIGNER-CONTROLLED
-
 GKR-CREATED FIGMA
 → NONE
-
-FINAL DESIGN ACCEPTANCE
-→ HUMAN / SEPARATE
-
-PRODUCT ENGINEERING
-→ PAUSED / NOT RELEASED
 ```
 
+## 5. Consumo para prototipação que atravessa Journey
 
-## 17. Candidato v9 para próxima reemissão
+Quando uma Home levar a uma experiência autenticada, carregar apenas as autoridades Journey correntes necessárias:
+
+- `docs/journeys/index.md`;
+- `docs/journeys/person.md`;
+- `docs/journeys/collective.md`;
+- `docs/journeys/organization.md`;
+- `docs/journeys/screen-catalog.md`;
+- `docs/journeys/surface-registry.md`;
+- `docs/journeys/transition-registry.md`;
+- autoridades autenticadas específicas citadas por essas superfícies.
+
+Não carregar sequências históricas de validação, checkpoints, snapshots, candidatos ou auditorias concluídas.
+
+## 6. Regra de atualização
 
 ```text
-V9 CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V9-CANDIDATE-001 v0.1.0
-→ PREPARED FROM MAIN 7bd02df4f0ed8ab2c809992abafa251756dcaf9a
-→ 29 / 29 SOURCE PINS RECALCULATED
-→ 21 / 29 IDENTICAL TO V8
-→ 8 / 29 UPDATED EXACTLY IN THE 8 HOME MASTERS
-→ QUICK-REFERENCE TABLES = 83 MOVEMENTS
-→ SUBSTANTIVE REVALIDATION PASS
-→ FINAL DOCUMENTARY HEAD VALIDATION = EXTERNAL PR GATE
+MASTER CHANGED
+→ UPDATE THIS MANIFEST + AFFECTED CURRENT AUTHORITIES
 
-CURRENT EXTERNAL SOURCE PACKAGE
-→ V8
-→ UNCHANGED
+NEW VALIDATED RULE
+→ UPDATE EXISTING CANONICAL AUTHORITY
 
-delivery/design-handoff-v9
-→ NOT CREATED
-→ NOT AUTHORIZED
+SNAPSHOT
+→ CREATE ONLY FOR REAL EXTERNAL FREEZE / TRANSPORT NEED
 
-MATERIALIZATION
-→ SEPARATE HUMAN-GOVERNED ACT
-→ NOT AUTHORIZED
+CANDIDATE
+→ NOT CREATED BY DEFAULT
+```
+
+## 7. Estado
+
+```text
+CURRENT DESIGN SOURCE SET
+→ READY
+
+HUMAN CONSUMPTION
+→ FIRST-CLASS
+
+AI CONSUMPTION
+→ OPTIONAL / TOOL-NEUTRAL
+
+HISTORICAL RECONSTRUCTION
+→ NOT REQUIRED
+
+DESIGNER MAY START
+→ YES
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
 ```

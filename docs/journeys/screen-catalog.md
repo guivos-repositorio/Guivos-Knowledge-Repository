@@ -45,60 +45,33 @@ normative: false
 
 ## 1. Regra de leitura
 
-```text
-SVG existente
-≠ superfície granular adicional por padrão
-≠ wireframe vigente automaticamente
-≠ transição integralmente validada automaticamente
-≠ jornada integrada validada
-≠ implementação técnica
-```
-
-Após a reconciliação pós-PR #313/#314, aplica-se também:
+Este catálogo descreve **responsabilidades funcionais correntes**, não a história dos arquivos visuais que já existiram.
 
 ```text
-CONTAGEM FÍSICA DE SVGs
-≠ CONTAGEM DE WIREFRAMES VIGENTES
-≠ CONTAGEM DE WIREFRAMES VALIDADOS
+SURFACE / RESPONSIBILITY
+≠ WIREFRAME FINAL
+≠ IMPLEMENTATION
+
+CURRENT REGISTRY
+→ FUNCTIONAL AUTHORITY
+
+HISTORICAL SVG COUNTS
+→ NOT CURRENT INPUT
+→ NOT DESIGN / AI INPUT
 ```
 
-`UXA-015..018` e seus dois ativos visuais associados foram removidos do corpus corrente por `F-006`; sua proveniência permanece no histórico Git e não sustenta autoridade visual vigente.
+A materialização visual pertence à fase de Design.
 
-A D5-C1 contratou `PER-010 — Meus Objetivos`, `PER-011 — Meus Próximos Passos` e `PER-012 — Minha Evolução`. A D5-C2 criou um SVG low-fidelity para cada uma dessas responsabilidades sem criar novo ID granular. A D5-C3 reformou in-place e validou funcionalmente os três estados-base. A D5-C4B promoveu individualmente `TRN-008..013` para **integralmente validadas no limite documental**, sem promover implementação técnica ou a Jornada da Pessoa além de `draft`.
+## 2. Inventário funcional corrente
 
-## 2. Inventário agregado por família — snapshot histórico pré-F-016-A
+O inventário corrente é governado pelos registries:
 
-As contagens `SVGs` abaixo pertencem ao snapshot histórico anterior à desmaterialização física. O inventário físico corrente é **0** e nenhuma contagem histórica constitui autoridade visual vigente.
+- `GKR-JOURNEY-SURFACE-REGISTRY-001`;
+- `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
+- detalhes de Pessoa, Coletivo, Organização e fronteiras comerciais;
+- autoridades autenticadas específicas quando aplicáveis.
 
-| Participante ou camada | Família | SVGs físicos | Estado de validação que pode ser afirmado | Continuidade integrada | Lacuna associada |
-|---|---|---:|---|---|---|
-| Pessoa | Home pública | 1 | validado | entrada protegida parcial | continuidade entre pacotes |
-| Pessoa | início protegido | 4 | 4 validados | parcial | reconciliação ponta a ponta |
-| Pessoa | expressão guiada | 8 | 8 validados | parcial | integração com inventário |
-| Pessoa | compreensão inicial | 5 | 5 validados | **TRN-007 integralmente validada** | handoffs anteriores ainda parciais |
-| Pessoa | Tela Hoje | 2 | 2 validados | primeira entrada validada; `TRN-008/010/012` integralmente validadas documentalmente | estados alternativos preservam maturidade própria; implementação não comprovada |
-| Pessoa | Meus Objetivos | **1** | **validado localmente pela D5-C3** | `TRN-008/009` **integralmente validadas documentalmente pela D5-C4B** | implementação não comprovada |
-| Pessoa | Meus Próximos Passos | **1** | **validado localmente pela D5-C3** | `TRN-010/011` **integralmente validadas documentalmente pela D5-C4B** | implementação não comprovada |
-| Pessoa | Minha Evolução | **1** | **validado localmente pela D5-C3** | `TRN-012/013` **integralmente validadas documentalmente pela D5-C4B** | estados sensíveis adicionais quando aplicáveis; implementação não comprovada |
-| Pessoa | oportunidades orgânicas | 7 | **7 validados; Detalhe revalidado pela UXA-101** | publicação/descoberta, Mapa/Lista/Detalhe e saída até BND-001 integrados | processo externo posterior separado |
-| Pessoa | Conta/Configurações | **0** | sem SVG | TRN-406/407 contratadas | materialização própria de PER-009 somente se necessária |
-| Pessoa | Planos, comparação e cobrança | **3** | **3 validados no pacote próprio** | TRN-401 a 405 locais; origem voluntária contratada | gateway/proration e materialização de PER-009 |
-| Pessoa em Coletivos | descoberta e busca | 5 | 5 validados no recorte próprio | parcial | continuidade entre famílias |
-| Pessoa em Coletivos | Perfil Público | 4 | 4 validados no recorte próprio | parcial | handoff para solicitação |
-| Pessoa em Coletivos | revisão e solicitação | 5 | 5 validados | parcial | handoff bilateral |
-| Pessoa em Coletivos | Solicitação Pendente | 8 | 8 validados | TRN-105/106/107/108/109 nos gates aplicáveis | outras continuidades separadas |
-| Pessoa em Coletivos | Meus Coletivos | 1 | validado | TRN-108 e TRN-110 integralmente validadas | P0B separado |
-| Pessoa em Coletivos | Central de Atualizações | 1 | validado | TRN-110 e TRN-111 integralmente validadas | P0B/P1 separados |
-| Pessoa em Coletivos | Início do Participante | 1 | validado por UXA-095/096 no recorte da Pessoa participante; não deriva de UXA-016/018 | TRN-111 integralmente validada | P0B e áreas internas separadas |
-| Coletivo | referência inicial histórica | 0 | `UXA-016/018` e ativo visual removidos do corpus corrente | proveniência somente no histórico Git | materialização visual pertence exclusivamente a Design |
-| Coletivo | Visão Geral do Responsável | 1 | UXA-086/087 preservam evidência local do pacote administrativo; **não constituem baseline final da UX principal** | TRN-112 e contratos de Planos preservam maturidade própria | Surface Map, State Map e Priority Flows canônicos definidos; navegação materializada e wireframe principal autenticado pendentes |
-| Coletivo | gestão de solicitações | 7 | 7 validados no fluxo especializado | handoffs aplicáveis integralmente validados | operação interna posterior |
-| Coletivo | Planos, comparação e cobrança | **3** | **3 validados no fluxo especializado** | contratos de origem/retorno preservam maturidade própria; TRN-411 a 415 locais; TRN-416 parcial | contratação/dimensionamento assistido e cobrança real; origem principal final pendente |
-| Organização | visão geral e cadastro | 1 | **materialização histórica de ORG-001 removida; cadastro preserva validação funcional própria por UXA-008/013** | publicação–descoberta preservada; contratos de Planos têm maturidade própria | Surface Map, State Map e Priority Flows canônicos definidos; navegação/composição visual/wireframe principal pendentes; materialização visual pertence exclusivamente a Design |
-| Organização | Planos, comparação e cobrança | **3** | **3 validados no fluxo especializado** | contratos de origem/retorno preservam maturidade própria; TRN-421 a 425 locais; TRN-426 parcial | contratação/dimensionamento assistido e cobrança real; origem principal final pendente |
-| camada comercial | Opportunity Boost | 46 | **46 validados no escopo próprio** | parcial | TRN-304/305/306 e integrações específicas |
-| fronteira documental | destinos externos/comerciais | 0 | não aplicável | BND-001 examinada; BND-002 parcial | processo externo posterior; contratação/dimensionamento assistido |
-| **Total físico do catálogo** |  | **0** | **camada SVG removida por F-016-A; maturidade funcional preservada por autoridade textual** |  |  |
+Não usar contagens históricas de SVGs, perfis ou associações como proxy de maturidade ou cobertura.
 
 ## 3. Instrumentos granulares vigentes
 
@@ -110,38 +83,21 @@ As contagens `SVGs` abaixo pertencem ao snapshot histórico anterior à desmater
 | perfis históricos de rastreabilidade | **34 perfis históricos** | instrumento de matriz removido; proveniência recuperável no histórico Git |
 | galeria visual histórica | **0 SVGs físicos** | documentos de galeria removidos do corpus corrente; proveniência preservada no histórico Git |
 
-## 4. Cobertura visual física
+## 4. Cobertura para Design e prototipação
 
-| Condição | Quantidade histórica/física |
-|---|---:|
-| IDs com referência visual direta ou agrupada | **45** |
-| responsabilidades sem SVG dedicado | **10** |
-| fronteiras intencionalmente sem tela | **2** |
-| **Total de IDs** | **57** |
+```text
+PHYSICAL VISUAL BASELINE
+→ NONE IMPOSED BY GKR
 
-Essas contagens de IDs descrevem o snapshot estrutural/histórico. A camada física SVG corrente é zero após F-016-A.
+DESIGNER
+→ CREATES VISUAL MATERIALIZATION
 
-## 5. Efeito acumulado D5-C2 → D5-C4B no snapshot histórico e na continuidade
+FUNCTIONAL COVERAGE
+→ READ FROM CURRENT SURFACE + TRANSITION REGISTRIES
 
-D5-C2 alterou o inventário físico:
-
-- SVGs físicos registrados: **118 → 121**;
-- associações: **118 → 121**;
-- perfis: **31 → 34**;
-- IDs com referência visual no snapshot: **42 → 45**;
-- responsabilidades sem SVG dedicado no snapshot: **13 → 10**.
-
-No momento de D5-C3, o registro declarou:
-
-- validações funcionais de SVG naquele snapshot: **118 → 121**;
-- pendências específicas daquele snapshot: **3 → 0**;
-- `PER-010`, `PER-011` e `PER-012`: promovidos para **validados localmente**;
-- `TRN-008..013`: permaneceram contratadas naquele checkpoint;
-- `PER-009`: permaneceu responsabilidade sem SVG dedicado.
-
-Depois, D5-C4B promoveu `TRN-008..013` individualmente para **integralmente validadas no limite documental**. Essa promoção não altera as contagens físicas históricas nem cria implementação.
-
-A reconciliação pós-PR #313/#314 **não reescreve a história desses snapshots**, mas supersede seu uso como resumo da maturidade visual atual do repositório, porque `UXA-015..018` deixaram de possuir autoridade vigente.
+HISTORICAL VISUAL INVENTORY
+→ EXCLUDED
+```
 
 ## 6. Separações obrigatórias
 
@@ -175,8 +131,6 @@ A reconciliação pós-PR #313/#314 **não reescreve a história desses snapshot
 
 - catálogo físico: `active` 0.37.0;
 - inventário físico corrente após F-016-A: **0 SVGs**;
-- antiga matriz visual: removida do corpus corrente; 34 perfis históricos permanecem recuperáveis no histórico Git;
-- resumo `121 SVGs / 121 validados / 0 pendentes`: **superseded como claim de maturidade vigente**;
 - Surface Map lógico-documental O/C: **definido/canônico por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`**;
 - State Map funcional O/C: **definido/canônico por `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`**;
 - Priority Flows O/C: **DEFINED / CANONICAL DOCUMENTARY**;

@@ -2,14 +2,12 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.2.17
+version: 2.3.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
 depends_on:
-  - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
-  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
 related:
   - GKR-UX-HOME-MASTER-001
@@ -25,42 +23,36 @@ related:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GPA-006
 normative: true
-maturity: designer_first_optional_ai_tool_neutral_current_package_delegated
+maturity: designer_first_optional_ai_tool_neutral_main_canonical_first_class
 ---
 
 # Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 
-## 0. Gate pós-auditoria
+## 0. Gate corrente de consumo
 
-A Auditoria Integral está concluída. Este documento é a autoridade comum para preparar o contexto de consumo das oito Homes por designer humana e, opcionalmente, por sistemas de IA. O trabalho manual da designer é first-class; IA não é etapa obrigatória nem autoridade de produto ou Design.
+Este documento é a autoridade comum para preparar contexto de consumo das oito Homes por designer humana e, opcionalmente, sistemas de IA.
 
 ```text
 TEMPLATE
 → ACTIVE / 8 HOMES
 
-V4 HISTORICAL SOURCE LOCKS
-→ PROVENANCE ONLY WHEN CHECKPOINT-SUPERSEDED
+CANONICAL SOURCE
+→ CURRENT MAIN
 
-V5 OPERATIONAL SOURCE LOCK
-→ EMITTED / 8 OF 8 / FROZEN WITH SNAPSHOT V5
+AUTHORIZED SOURCE SET
+→ CURRENT MANIFEST + HOME-SPECIFIC AUTHORITIES
 
-EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
-→ DESIGN PRODUCTION RELEASE GRANTED
+HISTORICAL / SNAPSHOT / CANDIDATE / CHECKPOINT
+→ EXCLUDED FROM OPERATIONAL INPUT
 
-CURRENT EXTERNAL SOURCE PACKAGE
-→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
-→ USE ONLY SNAPSHOT DESIGNATED CURRENT / VALID
-
-OPERATIONAL EXECUTION
-→ REQUIRES CURRENT VALID PACKAGE
-→ OTHERWISE PAUSED
+DESIGN PRODUCTION RELEASE
+→ GRANTED
 
 AI METHOD
 → AVAILABLE / OPTIONAL / DESIGNER-CONTROLLED
 ```
 
 A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode completar lacunas de verdade factual ou arquitetura por inferência.
-
 
 ### 0.1 Uso manual não depende deste template
 
@@ -272,7 +264,7 @@ A execução deve utilizar somente o pacote correspondente à Home em trabalho, 
 
 ### 6.0 Fontes comuns obrigatórias
 
-Na próxima emissão válida, todas as oito Homes deverão receber estas cinco autoridades comuns:
+No consumo corrente, todas as oito Homes usam estas cinco autoridades comuns:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — `docs/experience-architecture/public-homes-design-handoff.md`;
 2. `GKR-UX-HOMES-GENINPUT-001` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
@@ -280,7 +272,7 @@ Na próxima emissão válida, todas as oito Homes deverão receber estas cinco a
 4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`;
 5. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001` — `docs/experience-architecture/public-homes-design-production-release.md`.
 
-As **versões exatas** do conjunto entregue são fixadas pelo Manifesto, Current State e snapshot correspondente. Este documento não fixa se o pacote corrente é `NONE`, v7 ou qualquer emissão futura e não cria version-lock circular entre autoridades comuns. Candidatos e snapshots históricos permanecem apenas como proveniência quando assim classificados pelas autoridades de estado.
+As **versões exatas** são fixadas pelo Manifesto corrente no mesmo checkpoint do `main`. Snapshots, candidates, checkpoints e documentos de auditoria não entram no input operacional.
 
 Essas cinco fontes não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso opcional de IA, sequência de execução e critérios de produção/aceite.
 
@@ -288,42 +280,42 @@ Essas cinco fontes não substituem as autoridades específicas da Home. Elas gov
 
 Fontes específicas:
 
-- `GKR-UX-HOME-MASTER-001 v1.0.3` — `docs/experience-architecture/public-home-master-document.md`;
+- `GKR-UX-HOME-MASTER-001 v1.0.4` — `docs/experience-architecture/public-home-master-document.md`;
 - `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`.
 
 ### 6.2 Home Pública — Organizações e Coletivos
 
 Fontes específicas:
 
-- `GKR-UX-HOME-OC-MASTER-001 v1.0.3` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
+- `GKR-UX-HOME-OC-MASTER-001 v1.0.4` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
 
 ### 6.3 Home Pública — Guivos Mall
 
 Fontes específicas:
 
-- `GKR-UX-HOME-MALL-MASTER-001 v1.1.1` — `docs/experience-architecture/public-home-mall-master-document.md`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.1.2` — `docs/experience-architecture/public-home-mall-master-document.md`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md`.
 
 ### 6.4 Home Pública — Guivos Travel
 
 Fontes específicas:
 
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.3` — `docs/experience-architecture/public-home-travel-master-document.md`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.4` — `docs/experience-architecture/public-home-travel-master-document.md`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
 
 ### 6.5 Home Pública — Guivos Media
 
 Fontes específicas:
 
-- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-media-master-document.md`;
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.2` — `docs/experience-architecture/public-home-media-master-document.md`;
 - `GPA-005 v1.2.0` — `docs/product-architecture/media.md`.
 
 ### 6.6 Home Pública — Guivos Ads
 
 Fontes específicas:
 
-- `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` — `docs/experience-architecture/public-home-ads-master-document.md`;
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.2` — `docs/experience-architecture/public-home-ads-master-document.md`;
 - `GPA-007 v1.3.0` — `docs/product-architecture/ads.md`.
 
 ### 6.7 Home Pública — Guivos Business
@@ -331,7 +323,7 @@ Fontes específicas:
 Fontes específicas:
 
 - `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6` — `docs/experience-architecture/public-home-business-source-lock.md`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` — `docs/experience-architecture/public-home-business-master-document.md`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4` — `docs/experience-architecture/public-home-business-master-document.md`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 - `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.6.0` — `docs/product-architecture/business.md`.
@@ -342,13 +334,13 @@ Fontes específicas:
 
 - `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.10` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
 - `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.8` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
 - `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 - `GKR-UX-HOMES-OUTCOME-001 v1.0.0` — `docs/experience-architecture/public-homes-value-outcome-principle.md`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` — `docs/product-architecture/intelligence-product-source-lock.md`;
 - `GPA-006 v2.0.1` — `docs/product-architecture/intelligence.md`.
 
-Os antigos GENINPUTs de checkpoints superados não entram como autoridade operacional do v5. A emissão gera um `00-LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL` novo para cada Home, contendo checkpoint, SHAs, fontes, matriz operacional e prompt preenchido.
+Documentos superados não entram como autoridade operacional. Quando IA for utilizada, o Source Lock da execução registra apenas as fontes correntes necessárias, no checkpoint corrente.
 
 ---
 
@@ -815,6 +807,30 @@ Estado histórico do método:
 > **SOURCE LOCK E PROMPT CONTROLADO DEFINIDOS — PRONTOS PARA INSTANCIAÇÃO POR HOME — NENHUM OUTPUT VISUAL É CANÔNICO POR GERAÇÃO AUTOMÁTICA.**
 
 ### Estado vigente
+
+```text
+TEMPLATE
+→ ACTIVE / CURRENT / 8 HOMES
+
+CANONICAL SOURCE
+→ CURRENT MAIN
+
+SOURCE SET
+→ CURRENT MANIFEST
+
+GENERATIVE METHOD
+→ AVAILABLE / OPTIONAL / DESIGNER-CONTROLLED
+
+SNAPSHOT REQUIREMENT
+→ NONE
+
+HISTORICAL INPUT
+→ EXCLUDED
+
+RELEASE AUTHORITY
+→ GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+```
+
 
 ```text
 TEMPLATE

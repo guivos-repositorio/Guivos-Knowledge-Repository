@@ -2,12 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
 title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 status: active
-version: 3.0.3
+version: 3.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
 depends_on:
-  - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -15,7 +14,7 @@ related:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 normative: false
-maturity: designer_first_ai_optional_current_package_delegated
+maturity: designer_first_ai_optional_main_canonical_first_class
 ---
 
 # Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
@@ -42,15 +41,23 @@ DESIGN TOOL
 
 ## 2. Gate de início
 
-A produção criativa só deve começar quando:
+A produção criativa pode começar quando:
 
-- o pacote vigente estiver materializado;
-- o guia de consumo da Home estiver presente;
-- as fontes específicas estiverem completas;
-- não houver finding material aberto de completude;
-- o Design Production Release estiver vigente.
+- o Manifesto corrente identifica o conjunto autorizado;
+- Master e autoridades específicas da Home pertencem ao mesmo checkpoint do `main`;
+- não existe finding material aberto no conjunto corrente;
+- o Design Production Release está `GRANTED`.
 
-A reauditoria C1–C15 foi concluída para a emissão v6. Uma revisão independente pós-emissão identificou posteriormente um P1 neste próprio fluxo v3.0.1: o snapshot v6 congelado preservou linguagem pré-emissão contraditória. A revisão v3.0.2 corrigiu historicamente essa contradição; a revisão corrente v3.0.3 torna esta autoridade package-state agnostic e delega a identidade e a validade do pacote externo ao Manifesto + Current State vigentes. O snapshot v6 não é reescrito e permanece histórico/inválido para nova execução. O início de trabalho criativo depende das condições deste gate conforme o estado vigente nessas autoridades.
+```text
+SNAPSHOT
+→ NOT REQUIRED
+
+CURRENT MAIN
+→ FIRST-CLASS SOURCE
+
+HISTORICAL / CANDIDATE / CHECKPOINT
+→ DO NOT LOAD
+```
 
 ## 3. Isolamento de contexto
 
