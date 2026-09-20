@@ -588,8 +588,8 @@ PREVENTIVE FINDING — DOWNSTREAM VERSION HARD-CODES IN NARRATIVE
 → SOURCE LOCK = v1.1.8
 → HANDOFF = v1.1.9
 → GENINPUT = v2.2.13
-→ READINESS = v1.2.14
-→ V6 CANDIDATE = v0.2.15
+→ READINESS = v1.2.13
+→ V6 CANDIDATE = v0.2.14
 ```
 
 A mudança elimina a causa estrutural do ciclo de stale pins sem enfraquecer a determinabilidade do pacote: as versões exatas continuam congeladas no candidato/snapshot de entrega, enquanto a Narrative deixa de tentar versionar autoridades downstream que evoluem depois dela.
