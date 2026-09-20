@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.49.0
+version: 3.49.1
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-20
 depends_on:
@@ -32,7 +32,6 @@ related:
   - GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001
   - GKR-UX-PER002-PROTOTYPE-AUTH-001
   - GKR-UX-PER002-PROTOTYPE-DELIVERY-001
-  - GKR-UX-PER002-PROTOTYPE-VALIDATION-001
   - GKR-UX-PER002-PROTOTYPE-REVALIDATION-001
 normative: false
 ---
@@ -262,7 +261,6 @@ Q INTERACTIVE PROTOTYPE EXECUTION
 
 Q ORIGINAL INTERACTIVE PROTOTYPE VALIDATION
 → HISTORICAL PRE-REVIEW EVIDENCE
-→ AUTHORITY = GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1
 → STATUS = SUPERSEDED AS FINAL CURRENT CLOSURE
 → ORIGINAL RESULT = 16 / 16 PASS AT PRE-REVIEW CHECKPOINT
 
@@ -273,7 +271,7 @@ Q CODEX PROTOTYPE REVIEW
 
 Q POST-REVIEW INTERACTIVE PROTOTYPE REVALIDATION
 → PASS
-→ AUTHORITY = GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0
+→ AUTHORITY = GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0
 → VALIDATION CRITERIA = 16 / 16 PASS AFTER REMEDIATION
 → MATERIAL FINDINGS = 0
 → BLOCKING FINDINGS = 0
@@ -283,9 +281,8 @@ Q POST-REVIEW INTERACTIVE PROTOTYPE REVALIDATION
 CURRENT INTERACTIVE DESIGN REFERENCE
 → GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
 +
-→ GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 AS HISTORICAL PRE-REVIEW EVIDENCE
 +
-→ GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 AS CURRENT POST-REVIEW CONCLUSION
+→ GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 AS CURRENT POST-REVIEW CONCLUSION
 
 FINAL CURRENT INTERACTIVE CONCLUSION
 → POST-REVIEW REVALIDATION PASS
@@ -360,7 +357,6 @@ PROTOTYPE VALIDATION PRE-REVIEW
 ≠ CURRENT POST-REVIEW CONCLUSION
 ```
 
-A auditoria integral encerrou a verificação do corpus sem converter maturidade documental em maturidade visual. A adjudicação de materialização de Q estabeleceu que `PER-002` possui contrato funcional suficiente para materialização low-fidelity; a autorização governada liberou essa execução, a entrega existe em `GKR-UX-PER002-DESIGN-DELIVERY-001` e sua validação funcional concluiu `PASS` em `GKR-UX-PER002-DESIGN-VALIDATION-001`. A referência corrente low-fidelity é o pacote entrega+validator. A elegibilidade high-fidelity concluiu `PASS`, a decisão governada autorizou o refinamento, a entrega high-fidelity foi executada em `GKR-UX-PER002-HIFI-DELIVERY-001` e validada com `PASS` por `GKR-UX-PER002-HIFI-VALIDATION-001`. A referência corrente high-fidelity é o pacote entrega+validator. A adjudicação de protótipo concluiu `PASS`, a autorização explícita foi `GRANTED` por `GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0`, a execução foi concluída em `GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0`, o validator original permanece apenas como evidência histórica pré-review em `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1`, e a conclusão corrente pós-remediação é `PASS` em `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0`.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -538,8 +534,7 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 | Interactive prototype eligibility | **PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0** |
 | Interactive prototype authorization | **GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0** |
 | Interactive prototype execution | **EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0** |
-| Original prototype validation | **HISTORICAL PRE-REVIEW / GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / SUPERSEDED** |
-| Post-review prototype revalidation | **PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS** |
+| Post-review prototype revalidation | **PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS** |
 | Current interactive Design reference | **DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0** |
 | Final interactive conclusion | **POST-REVIEW REVALIDATION PASS** |
 | Next automatic execution | **NONE** |
@@ -557,4 +552,4 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 
-A referência corrente high-fidelity de `PER-002` permanece a entrega `v0.1.0` lida com seu validator `v1.0.0`. O protótipo interativo foi executado, o ato original de validação está preservado apenas como evidência histórica pré-review em `v1.0.1`, e a conclusão corrente é a revalidação pós-review `PASS` em `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0`. Isso não promove maturidade de transição, maturidade visual agregada, implementação, operação, PMF ou `UXA-102/V5`.
+A referência corrente high-fidelity de `PER-002` permanece a entrega `v0.1.0` lida com seu validator `v1.0.0`. O protótipo interativo foi executado, o ato original de validação está preservado apenas como evidência histórica pré-review em `v1.0.1`, e a conclusão corrente é a revalidação pós-review `PASS` em `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0`. Isso não promove maturidade de transição, maturidade visual agregada, implementação, operação, PMF ou `UXA-102/V5`.
