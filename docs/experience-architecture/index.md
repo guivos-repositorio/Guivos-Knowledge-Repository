@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.15
+version: 1.19.16
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 related:
@@ -55,6 +55,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V9-CANDIDATE-001
   - M7.88
 normative: false
 ---
@@ -325,3 +326,8 @@ A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. 
 [GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001](public-homes-design-delivery-v8-candidate.md) v0.3.0 preserva a proveniência do candidato v8 revalidado e posteriormente realizado pelo snapshot externo corrente.
 
 [GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001](public-homes-design-delivery-v8-snapshot-record.md) registra a emissão v8 em `delivery/design-handoff-v8`: origem `main = 00791d1e09b5e75b33c223e38164eeee1be0c6cd`, commit `d7eea909b1b5cb6266d7c4a725657ccd909f0e63`, tree `17553412f24d7a97287ddc5944b8622ecf744534`, 29 fontes canônicas + oito guias = 37 arquivos, 29/29 blobs exatos e 8/8 guias validados. A cadeia comum é package-state agnostic; `Manifest + Current State` designam o v8 como `CURRENT EXTERNAL SOURCE PACKAGE`, válido para nova execução externa de Design.
+
+
+### Public Homes — candidato v9 para reemissão
+
+[GKR-UX-HOMES-DESIGN-DELIVERY-V9-CANDIDATE-001](public-homes-design-delivery-v9-candidate.md) prepara a reemissão que incorpora os quadros de consulta rápida adicionados aos oito Home Masters pela PR #411. A recomputação direta sobre `main = 7bd02df4f0ed8ab2c809992abafa251756dcaf9a` confirma 29/29 fontes, 21/29 pins idênticos ao v8 e 8/29 pins alterados exatamente nos oito Masters. O v8 permanece o pacote externo corrente; `delivery/design-handoff-v9` não foi criada e a materialização exige ato humano separado.

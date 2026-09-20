@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.31
+id: ROADMAP-13.47.32
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.31
+version: 13.47.32
 owner: Guivos
 last_updated: 2026-09-20
 normative: true
@@ -18,6 +18,7 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V9-CANDIDATE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
@@ -1971,7 +1972,10 @@ Sequência governada atual:
 31. após integração da remediação, preparar nova reemissão/revalidação — CONCLUÍDO / V8 CANDIDATE PREPARED FROM MAIN b660503a5da5ec5214e3e2c0eba1f1b06daa9489 / 29 OF 29 SOURCE PINS RECALCULATED / SUBSTANTIVE REVALIDATION PASS;
 32. concluir gate externo de validação do HEAD documental final da PR #408 — CONCLUÍDO / Semantic #1531 + Mechanical #1754 = SUCCESS / CODEX CLEAN ON a645330b63170ba4ea58cfcfe082abd93ca0442c / PR #408 MERGED @ 00791d1e09b5e75b33c223e38164eeee1be0c6cd;
 33. decidir separadamente materialização do v8 — CONCLUÍDO / ATO HUMANO EXPLÍCITO AUTORIZADO / snapshot materialized + integrity-validated / branch delivery/design-handoff-v8 / commit d7eea909b1b5cb6266d7c4a725657ccd909f0e63 / tree 17553412f24d7a97287ddc5944b8622ecf744534;
-34. registrar emissão v8 e designá-la pacote externo corrente — CONCLUÍDO NESTA INTEGRAÇÃO / snapshot record + Manifest + Current State reconciled / v8 valid for new external design execution.
+34. registrar emissão v8 e designá-la pacote externo corrente — CONCLUÍDO / snapshot record + Manifest + Current State reconciled / v8 valid for new external design execution;
+35. integrar quadros de consulta rápida aos 8 Home Masters — CONCLUÍDO / PR #411 MERGED / 83 MOVIMENTOS / SEMANTIC CONTRACT UNCHANGED;
+36. limpar MENU para current-only — CONCLUÍDO / PR #412 MERGED;
+37. preparar e revalidar candidato v9 — EM CURSO NESTA FRENTE / 29 OF 29 PINS RECALCULATED / 21 UNCHANGED + 8 UPDATED MASTERS / MATERIALIZATION REQUIRES SEPARATE HUMAN ACT.
 
 ```text
 V5 SNAPSHOT
@@ -2054,4 +2058,31 @@ O/C HIGH-FIDELITY DESIGN
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
+```
+
+### Candidato v9 — reemissão pós-PR #411
+
+```text
+V9 CANDIDATE
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V9-CANDIDATE-001 v0.1.0
+→ PREPARED FROM MAIN 7bd02df4f0ed8ab2c809992abafa251756dcaf9a
+→ 29 / 29 SOURCE PINS RECALCULATED
+→ 21 / 29 UNCHANGED FROM V8
+→ 8 / 29 UPDATED IN THE 8 HOME MASTERS
+→ 83 MOVEMENTS COVERED BY QUICK-REFERENCE TABLES
+→ SUBSTANTIVE REVALIDATION PASS
+→ FINAL DOCUMENTARY HEAD VALIDATION = EXTERNAL PR GATE
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ V8
+→ VALID / FROZEN / UNCHANGED
+
+delivery/design-handoff-v9
+→ NOT CREATED
+→ NOT AUTHORIZED
+
+NEXT
+→ EXACT-HEAD VALIDATION
+→ READY / MERGE AS SEPARATE HUMAN GATES
+→ MATERIALIZATION AS SEPARATE EXPLICIT HUMAN ACT
 ```
