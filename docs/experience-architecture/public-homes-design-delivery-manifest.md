@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 6.2.1
+version: 6.2.2
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: true
-maturity: v7_candidate_revalidated_materialization_decision_pending
+maturity: v7_candidate_revalidated_merged_materialization_decision_pending
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -30,7 +30,7 @@ Este Manifesto governa a emissão externa das oito Homes públicas para criaçã
 
 O snapshot **v6 foi emitido, materializado e teve sua integridade validada**, mas uma revisão independente pós-emissão encontrou um P1 material dentro do próprio pacote: o Operational Flow v3.0.1 preservou linguagem pré-emissão incompatível com o uso corrente. O v6 permanece congelado e reproduzível como proveniência histórica, porém **não é válido para nova execução**. Neste estado, não existe pacote externo corrente; nova emissão/revalidação é necessária. O v5 também permanece congelado como snapshot histórico.
 
-O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.0` foi preparado sobre o `main` pós-PR #403, com 29/29 fontes recalculadas diretamente da base canônica. Ele é preparação documental não normativa: `CURRENT EXTERNAL SOURCE PACKAGE = NONE` permanece verdadeiro e `delivery/design-handoff-v7` não deve existir antes de autorização humana separada de materialização.
+O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.1` foi revalidado no HEAD final `0418b219d4d4a746498cf8b8032b5018f333e29e` e integrado em `main` pela PR #405, merge commit `574814b561a933291fd3e7539f814f4187398277`. Os 29/29 pins canônicos foram reconfirmados no `main` pós-merge. Ele permanece não normativo: `CURRENT EXTERNAL SOURCE PACKAGE = NONE` continua verdadeiro e `delivery/design-handoff-v7` permanece inexistente até autorização humana separada de materialização.
 
 ```text
 DESIGNER
@@ -255,8 +255,12 @@ FROZEN V6 SNAPSHOT
 → INVALID FOR NEW EXECUTION
 
 V7 CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.0
-→ PREPARED / NON-NORMATIVE
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.1
+→ PREPARED / REVALIDATED / MERGED INTO MAIN BY PR #405
+→ NON-NORMATIVE
+→ FINAL REVIEWED HEAD 0418b219d4d4a746498cf8b8032b5018f333e29e
+→ MAIN 574814b561a933291fd3e7539f814f4187398277
+→ POST-MERGE SOURCE PIN RECHECK = 29 / 29 EXACT MATCH
 → REVALIDATION PASS
 → MATERIALIZATION DECISION PENDING / SEPARATE HUMAN ACT
 
