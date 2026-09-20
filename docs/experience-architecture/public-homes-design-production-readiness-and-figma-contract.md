@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.2.10
+version: 1.2.11
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -145,12 +145,13 @@ Reclassificação humana: **não é gap**. É liberdade deliberada de Design.
 
 ## 6. Pacote fonte corrente / candidato v6 por Home
 
-Quatro autoridades comuns acompanham todas as Homes:
+Cinco autoridades comuns acompanham todas as Homes:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001`;
 2. `GKR-UX-HOMES-GENINPUT-001`;
 3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001` — este documento;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001`.
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001`;
+5. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`.
 
 As versões exatas do conjunto corrente são fixadas em `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001`. O snapshot v5 permanece histórico e suas versões emitidas são preservadas por `GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001` e pelo Manifesto na seção histórica correspondente.
 
@@ -204,9 +205,11 @@ Contrato corrente que o guia/Source Lock v6 deve explicitar:
 - `GPA-004 v1.6.0`.
 
 ### Intelligence
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.6`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.5`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.7`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.6`;
 - `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5`;
+- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.2`;
+- `GKR-UX-HOMES-OUTCOME-001 v1.0.0`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1`;
 - `GPA-006 v2.0.1`.
 
@@ -253,7 +256,7 @@ A exclusão de documentos de aprofundamento do pacote inicial não os invalida. 
 
 Quando IA for utilizada, trabalhar uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente.
 
-A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + quatro fontes comuns + fontes específicas daquela Home.
+A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + cinco fontes comuns + fontes específicas daquela Home.
 
 Output inicial obrigatório: `EXPLORAÇÃO / NÃO CANÔNICA`.
 
