@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.13
+id: ROADMAP-13.47.14
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.13
+version: 13.47.14
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -14,6 +14,7 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
@@ -167,7 +168,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | O/C wireframes low-fidelity | **AUTHORIZATION GRANTED / DELIVERY v0.1.0 EXECUTED / VALIDATION v1.0.0 PASS / CURRENT REFERENCE = DELIVERY + VALIDATION** |
 | O/C high-fidelity eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0 / AUTHORIZATION NOT_GRANTED** |
 | GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION** |
-| Design das Homes públicas | **DESIGNER-FIRST / DESIGN PRODUCTION RELEASE GRANTED / SOURCE COMPLETENESS v6 CANDIDATE PASS / AI OPTIONAL** |
+| Design das Homes públicas | **DESIGNER-FIRST / DESIGN PRODUCTION RELEASE GRANTED / V6 SNAPSHOT EMITTED + VALIDATED / AI OPTIONAL** |
 | O/C autenticado high-fidelity | **ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED / SEPARATE GOVERNED GATE** |
 
 Inventário físico corrente após F-016-A:
@@ -1944,11 +1945,11 @@ Sequência governada atual:
 9. reauditar 8/8 Homes como pacotes completos — CANDIDATE PASS / 120 OF 120;
 10. definir pacote v6 candidato — CONCLUÍDO;
 11. sincronizar Estado / Roadmap / navegação — CONCLUÍDO;
-12. executar Semantic + Mechanical no HEAD final — PENDENTE;
-13. executar revisão independente no HEAD final — PENDENTE;
-14. adjudicar findings, se houver — PENDENTE;
-15. decidir separadamente Ready for Review / merge — NÃO AUTORIZADO;
-16. após integração, decidir separadamente emissão/materialização do snapshot v6 — NÃO AUTORIZADO.
+12. executar Semantic + Mechanical no HEAD final — CONCLUÍDO / Semantic #1404 + Mechanical #1633 = SUCCESS;
+13. executar revisão independente no HEAD final — CONCLUÍDO / CLEAN / NO MAJOR ISSUES;
+14. adjudicar findings, se houver — CONCLUÍDO / P2 pós-Ready remediado e re-review limpo;
+15. decidir separadamente Ready for Review / merge — CONCLUÍDO / PR #397 MERGED;
+16. após integração, decidir separadamente emissão/materialização do snapshot v6 — CONCLUÍDO / AUTORIZADO / EMITIDO / VALIDADO.
 
 ```text
 V5 SNAPSHOT
@@ -1961,11 +1962,16 @@ SOURCE COMPLETENESS
 → 8 / 8 HOMES
 → 120 / 120
 
-V6 PACKAGE CANDIDATE
+V6 SNAPSHOT
+→ CURRENT EXTERNAL SOURCE PACKAGE
 → 29 CANONICAL SOURCES
 → 8 READ-FIRST GUIDES
 → 37 FILES TOTAL
-→ SNAPSHOT NOT EMITTED
+→ branch delivery/design-handoff-v6
+→ commit b7fe5d62cef444c8316c66edd8ac73b703698a4a
+→ tree 61eef7447fc5c6b36890ccb774f7011615a6abca
+→ 29 / 29 CANONICAL BLOBS EXACT MATCH
+→ EMITTED / MATERIALIZED / VALIDATED
 
 DESIGN PRODUCTION RELEASE
 → GRANTED
