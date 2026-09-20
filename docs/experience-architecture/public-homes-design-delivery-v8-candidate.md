@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001
 title: Homes Públicas — Pacote v8 Candidato para Reemissão e Revalidação
 status: draft
-version: 0.2.0
+version: 0.2.1
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: false
@@ -284,10 +284,11 @@ delivery/design-handoff-v8
 
 ```text
 V8 CANDIDATE
-→ PREPARED
+→ PREPARED / REVALIDATED
 → NON-NORMATIVE
 → 29 / 29 SOURCE PINS RECALCULATED
-→ REVALIDATION IN PROGRESS
+→ REVALIDATION PASS
+→ MATERIALIZATION DECISION PENDING
 
 CURRENT EXTERNAL SOURCE PACKAGE
 → NONE
