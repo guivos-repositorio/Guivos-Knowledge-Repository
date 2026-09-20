@@ -265,7 +265,10 @@ AI-ASSISTED CREATIVE PRODUCTION
 → OPTIONAL / DESIGNER-CONTROLLED
 
 GKR-CREATED FIGMA
-→ DISCONTINUED
+→ NONE
+
+PRIOR GKR FIGMA EXPLORATION
+→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
 
 FINAL DESIGN ACCEPTANCE
 → HUMAN / SEPARATE
@@ -279,6 +282,20 @@ UXA-102 / V5
 
 ## 11. Próximo movimento legítimo
 
-Antes de entregar fontes à designer, a frente atual deve concluir `GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001` e provar que as oito Homes estão completas para consumo humano e por IA.
+A completude pré-emissão foi concluída historicamente, mas o snapshot v6 foi invalidado para nova execução por um P1 pós-emissão no Operational Flow v3.0.1.
 
-Depois disso, a designer cria manualmente com liberdade, utilizando o GKR e podendo usar IA opcionalmente.
+O próximo movimento legítimo é:
+
+```text
+CANONICAL SOURCES
+→ RECONCILED
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+
+NEXT GOVERNED ACT
+→ PREPARE REISSUE / REVALIDATION
+→ MATERIALIZE ONLY BY SEPARATE HUMAN AUTHORIZATION
+```
+
+Somente depois de uma nova emissão válida a designer deve iniciar ou retomar execução operacional contra o pacote externo corrente.
