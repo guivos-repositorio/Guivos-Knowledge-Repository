@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.2.14
+version: 2.2.15
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -25,7 +25,7 @@ related:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GPA-006
 normative: true
-maturity: designer_first_optional_ai_tool_neutral_template
+maturity: designer_first_optional_ai_tool_neutral_reissue_required
 ---
 
 # Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
@@ -44,11 +44,18 @@ V4 HISTORICAL SOURCE LOCKS
 V5 OPERATIONAL SOURCE LOCK
 → EMITTED / 8 OF 8 / FROZEN WITH SNAPSHOT V5
 
-EXTERNAL DESIGNER PRODUCTION
+EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 → DESIGN PRODUCTION RELEASE GRANTED
 
-AI-ASSISTED EXECUTION
-→ OPTIONAL / DESIGNER-CONTROLLED
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+
+OPERATIONAL EXECUTION
+→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+
+AI METHOD
+→ AVAILABLE / OPTIONAL / DESIGNER-CONTROLLED
 ```
 
 A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode completar lacunas de verdade factual ou arquitetura por inferência.
@@ -264,7 +271,7 @@ A execução deve utilizar somente o pacote correspondente à Home em trabalho, 
 
 ### 6.0 Fontes comuns obrigatórias
 
-No regime corrente/v6, todas as oito Homes recebem estas cinco autoridades comuns:
+Na próxima emissão válida, todas as oito Homes deverão receber estas cinco autoridades comuns:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — `docs/experience-architecture/public-homes-design-handoff.md`;
 2. `GKR-UX-HOMES-GENINPUT-001` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
@@ -272,7 +279,7 @@ No regime corrente/v6, todas as oito Homes recebem estas cinco autoridades comun
 4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`;
 5. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001` — `docs/experience-architecture/public-homes-design-production-release.md`.
 
-As **versões exatas** do conjunto entregue são fixadas pelo manifesto/snapshot correspondente. Para o candidato corrente, prevalece `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001`. Este documento não cria version-lock circular entre autoridades comuns.
+As **versões exatas** do conjunto entregue são fixadas pelo manifesto/snapshot correspondente. Não existe candidato externo corrente válido neste estado; `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001` permanece proveniência histórica da emissão v6. A próxima composição deve ser fixada por novo candidato/reissue governado. Este documento não cria version-lock circular entre autoridades comuns.
 
 Essas cinco fontes não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso opcional de IA, sequência de execução e critérios de produção/aceite.
 
@@ -815,7 +822,17 @@ TEMPLATE
 V5 PER-HOME SOURCE LOCKS
 → EMITTED / 8 OF 8 / FROZEN IN delivery/design-handoff-v5
 
+GENERATIVE METHOD
+→ AVAILABLE / OPTIONAL / DESIGNER-CONTROLLED
+
 GENERATIVE EXECUTION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-→ RELEASE AUTHORITY = GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
+→ PAUSED
+→ REQUIRES VALID CURRENT EXTERNAL SOURCE PACKAGE
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+
+RELEASE AUTHORITY
+→ GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
 ```
