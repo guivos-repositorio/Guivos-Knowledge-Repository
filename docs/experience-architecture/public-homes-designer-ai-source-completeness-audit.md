@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.4.11
+version: 0.4.12
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -625,6 +625,36 @@ P2 — OPERATIONAL FLOW INTERNAL VERSION LABEL
 ```
 
 A correção apenas faz o bloco de estado refletir a revisão `v3.0.1` que já era a revisão declarada e incluída no pacote. Não cria nova autoridade, não altera a composição 29 + 8 = 37 e não modifica os boundaries de Design, IA, snapshot ou Product Engineering.
+
+## 9.13 Emissão/materialização v6 — prova pós-merge
+
+Após a integração da PR #397, o ato humano separado de emissão/materialização foi autorizado e executado a partir de `main @ 52f1dade6d7bfcd8c1e5d1b567d7125ac725018f`.
+
+```text
+V6 SNAPSHOT BRANCH
+→ delivery/design-handoff-v6
+
+SNAPSHOT COMMIT
+→ b7fe5d62cef444c8316c66edd8ac73b703698a4a
+
+SNAPSHOT TREE
+→ 61eef7447fc5c6b36890ccb774f7011615a6abca
+
+CANONICAL SOURCES
+→ 29 / 29 PRESENT
+→ 29 / 29 MAIN BLOB × SNAPSHOT BLOB EXACT MATCH
+
+READ-FIRST GUIDES
+→ 8 / 8
+
+TOTAL EXTERNAL FILES
+→ 37
+
+EXTRA BLOBS
+→ 0
+```
+
+A emissão preserva designer-first / manual-first, IA opcional, ausência de Figma criado pelo GKR como referência e Product Engineering não liberado. O candidato v6 foi realizado sem alteração de composição.
 
 ## 10. Remediações aplicadas
 
