@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.4
+version: 1.0.5
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 parent: GKR-UX-HOME-MASTER-001
@@ -17,22 +17,17 @@ depends_on:
   - UXA-019
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
 related:
-  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-BRAND-SIGNATURE-001
   - GKR-BRAND-PUBLIC-AUTHORITY-001
   - RP-002-CM-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
-  - GKR-UX-HOME-OC-NARR-001
-  - GKR-UX-HOME-OC-NAV-001
-  - GKR-UX-HOME-OC-SYS-001
-  - GKR-UX-HOME-OC-HANDOFF-001
   - GKR-UX-HOME-OC-MEDIA-SUPPLY-001
   - GKR-UX-HOME-SYS-001
   - journeys/organization.md
   - journeys/collective.md
 normative: false
-maturity: documentally_reconciled_for_external_design
+maturity: current_for_external_design
 ---
 
 # Home Pública — Organizações e Coletivos
@@ -1780,10 +1775,6 @@ Uma futura materialização deve ser rejeitada ou revisada se:
 | `GKR-UX-ORGCOL-AUTH-JOBS-001` | pertencimento ≠ representação; contexto e limites de autoridade | absorvido como princípio; jobs autenticados não importados |
 | `GKR-UX-ORGCOL-AUTH-IA-001` | contexto antes de ação, operação ≠ evidência, comercial ≠ relevância | absorvido como princípio; IA autenticada não importada |
 | `GPA-006` | Intelligence = Produto Especializado transversal / Intelligence Layer; `COMPREENDER ≠ DECIDIR` | absorvido |
-| `GKR-UX-HOME-OC-NARR-001` | sete macroexperiências próprias O/C | absorvido |
-| `GKR-UX-HOME-OC-NAV-001` | mesmo Header global, Hero exploratória, `Iniciar Jornada` distinto e bifurcação final | absorvido |
-| `GKR-UX-HOME-OC-SYS-001` | classes de conteúdo/verdade, prova proporcional ao claim e fallback honesto | absorvido |
-| `GKR-UX-HOME-OC-HANDOFF-001` | disciplina de significado, acessibilidade e fronteira pública × autenticada | conteúdo válido absorvido; autorização procedimental histórica não governa a auditoria atual |
 | `GKR-UX-HOME-OC-MEDIA-SUPPLY-001` | Media como supply editorial sem transferência de autoridade; patrocínio identificável | absorvido |
 | decisões/Source Locks/Design deliveries anteriores | evidência de checkpoints de construção | não promovidos a direção visual vigente; o release externo atual é governado pelas autoridades comuns posteriores |
 

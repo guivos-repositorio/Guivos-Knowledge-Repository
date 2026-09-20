@@ -2,17 +2,15 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.1.4
+version: 1.1.5
 owner: Experience Architecture
 last_updated: 2026-09-20
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
 depends_on:
-  - GKR-UX-HOME-BUSINESS-NARRATIVE-001
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
   - GKR-UX-HOME-BUSINESS-CONVERSION-002
   - GPA-004
   - GKR-STATE-001
-  - ROADMAP-12.79.0
 normative: true
 ---
 
@@ -20,7 +18,7 @@ normative: true
 
 ## 1. Finalidade
 
-Este documento consolida o **Checkpoint 8 — Documento Mestre da Home Pública do Guivos Business**.
+Este documento é o **Documento Mestre vigente da Home Pública do Guivos Business**.
 
 Ele reúne em uma única arquitetura pública:
 

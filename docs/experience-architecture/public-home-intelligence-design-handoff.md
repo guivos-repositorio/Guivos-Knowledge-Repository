@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
 title: Handoff Canônico para Design — Home Pública — Guivos Intelligence
 status: active
-version: 1.1.10
+version: 1.1.11
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
@@ -79,7 +79,7 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9
 → governa narrativa pública, copy e fronteiras da Home
 
 NÍVEL 2

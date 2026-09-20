@@ -1,10 +1,11 @@
 ---
 id: GKR-UX-HOME-ADS-MASTER-001
 title: Home Pública — Guivos Ads — Documento Mestre
-status: draft
-version: 1.0.2
+status: active
+version: 1.0.3
 owner: Experience Architecture
 last_updated: 2026-09-20
+maturity: current_for_external_design
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-007

@@ -2,11 +2,11 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.4
+version: 1.0.5
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 normative: false
-maturity: reconciled_for_external_design
+maturity: current_for_external_design
 depends_on:
   - GEB-P01
   - GKR-CHRISTIAN-FOUNDATION-001
@@ -16,23 +16,9 @@ depends_on:
   - GKR-STATE-001
   - UXA-020
   - UXA-021
-  - GKR-UX-HOME-001
-  - GKR-UX-HOME-VAL-001
-  - GKR-UX-HOME-NARR-001
-  - GKR-UX-HOME-NARR-002
-  - GKR-UX-HOME-NARR-003
-  - GKR-UX-HOME-NARR-004
-  - GKR-UX-HOME-NARR-005
-  - GKR-UX-HOME-NAV-001
-  - GKR-UX-HOME-NAV-003
-  - GKR-UX-HOME-SYS-001
-  - GKR-UX-HOME-GTM-BOUNDARY-001
   - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
 related:
   - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
-  - GKR-UX-HOME-AUDIT-001
-  - GKR-UX-HOME-AUDIT-002
-  - GKR-UX-HOME-PERSON-GENINPUT-001
 ---
 
 # Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
@@ -45,7 +31,7 @@ Ele existe para que liderança, Brand, Marketing, Produto, Experience Architectu
 
 Regra de consumo:
 
-> **Para compreender o estado atual da Home Pública — Pessoa, comece por este documento. Os artefatos especializados permanecem como aprofundamento e evidência de decisões específicas enquanto mantiverem função própria e até eventual absorção/remoção ser adjudicada separadamente.**
+> **Para compreender o estado atual da Home Pública — Pessoa, comece por este documento e pelo Manifesto Canônico de Fontes. Não é necessário reconstruir checkpoints, audits, source locks antigos ou documentos intermediários.**
 
 Este master:
 
@@ -1313,7 +1299,6 @@ A definição funcional de Q não deve preencher itens visuais ou operacionais p
 | `GKR-BRAND-SIGNATURE-001` | assinatura institucional correta | absorvido |
 | `GKR-BRAND-PUBLIC-AUTHORITY-001` | Guivos ≠ fundador | absorvido |
 | propagation de autoridade pública | correção da Hero e Movimento 06 | **conteúdo Home absorvido; arquivo ainda não removido** |
-| `GKR-UX-HOME-VAL-001` | pergunta-mãe, amplitude, protagonismo, cinco pilares | absorvido com correções posteriores |
 | `NARR-001` | 11 movimentos e contratos narrativos | absorção mestre; detalhes permanecem no especializado |
 | `NARR-002` | coerência do Movimento 08 | absorvido |
 | `NARR-003` | participante ≠ produto | absorvido |
