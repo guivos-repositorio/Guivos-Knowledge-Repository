@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 6.1.0
+version: 6.1.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -63,7 +63,7 @@ SNAPSHOT TREE
 → 61eef7447fc5c6b36890ccb774f7011615a6abca
 ```
 
-O registro reproduzível da emissão e da invalidação posterior para nova execução é `GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001 v1.1.0`.
+O registro reproduzível da emissão e da invalidação posterior para nova execução é `GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001 v1.1.1`.
 
 ## 3. Composição canônica para próxima reemissão — 29 fontes únicas
 
@@ -256,13 +256,40 @@ CURRENT EXTERNAL SOURCE PACKAGE
 → REISSUE / REVALIDATION REQUIRED
 ```
 
-## 12. Snapshots históricos
+## 12. Segundo finding pós-emissão — autoridades comuns da próxima reemissão
+
+O re-review Codex da PR #402 sobre o HEAD `b815e0f07f5f59bde2fbbd23288a65b1816cb2e4` identificou outro P1 material antes de qualquer nova emissão:
+
+```text
+P1 — RECONCILE THE COMMON AUTHORITIES BEFORE REISSUING
+→ VALID
+
+GENINPUT v2.2.14
+→ GENERATIVE EXECUTION = AUTHORIZED TO EXECUTE
+→ STALE RELEASE / V6-CANDIDATE REFERENCES
+
+READINESS v1.2.14
+→ AI-ASSISTED DESIGN = AUTHORIZED TO EXECUTE
+→ STALE RELEASE / CURRENT-CANDIDATE REFERENCES
+
+REMEDIATION
+→ GENINPUT v2.2.15
+→ READINESS v1.2.15
+→ RELEASE v1.2.0
+→ CURRENT EXTERNAL SOURCE PACKAGE = NONE
+→ OPERATIONAL EXECUTION = PAUSED
+→ NEW CANDIDATE / REISSUE REQUIRED BEFORE MATERIALIZATION
+```
+
+Esse finding não altera o snapshot v6 histórico. Ele corrige as autoridades canônicas que poderão compor uma futura reemissão.
+
+## 13. Snapshots históricos
 
 `delivery/design-handoff-v1` até `delivery/design-handoff-v5` permanecem congelados. O v5 está registrado em `GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001`.
 
 O v6 não reescreve nenhuma emissão anterior. Após o finding pós-emissão, ele permanece congelado como proveniência histórica e não deve ser usado para nova execução.
 
-## 13. Estado
+## 14. Estado
 
 ```text
 V5
