@@ -1,13 +1,13 @@
 /* Guivos Knowledge Repository — primary navigation section headings
-   Reference tone supplied by the project: #E95201.
+   Dark orange derived from the supplied visual reference: #CF4A00.
    Scope intentionally limited to section/group headings. */
 
 .md-nav--primary .md-nav__item--section > .md-nav__link {
-  color: #e95201;
+  color: #cf4a00;
   font-weight: 700;
 }
 
 .md-nav--primary .md-nav__item--section > .md-nav__link:hover,
 .md-nav--primary .md-nav__item--section > .md-nav__link:focus {
-  color: #e95201;
+  color: #cf4a00;
 }
