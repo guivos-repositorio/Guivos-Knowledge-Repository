@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.15
+id: ROADMAP-13.47.16
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.15
+version: 13.47.16
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -168,7 +168,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | O/C wireframes low-fidelity | **AUTHORIZATION GRANTED / DELIVERY v0.1.0 EXECUTED / VALIDATION v1.0.0 PASS / CURRENT REFERENCE = DELIVERY + VALIDATION** |
 | O/C high-fidelity eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0 / AUTHORIZATION NOT_GRANTED** |
 | GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION** |
-| Design das Homes públicas | **DESIGNER-FIRST / DESIGN PRODUCTION RELEASE GRANTED / V6 SNAPSHOT EMITTED + VALIDATED / AI OPTIONAL** |
+| Design das Homes públicas | **DESIGNER-FIRST / DESIGN PRODUCTION RELEASE GRANTED / V6 FROZEN + INVALID FOR NEW EXECUTION / REISSUE REQUIRED / AI OPTIONAL** |
 | O/C autenticado high-fidelity | **ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED / SEPARATE GOVERNED GATE** |
 
 Inventário físico corrente após F-016-A:
@@ -1949,7 +1949,12 @@ Sequência governada atual:
 13. executar revisão independente no HEAD final — CONCLUÍDO / CLEAN / NO MAJOR ISSUES;
 14. adjudicar findings, se houver — CONCLUÍDO / P2 pós-Ready remediado e re-review limpo;
 15. decidir separadamente Ready for Review / merge — CONCLUÍDO / PR #397 MERGED;
-16. após integração, decidir separadamente emissão/materialização do snapshot v6 — CONCLUÍDO / AUTORIZADO / EMITIDO / VALIDADO.
+16. após integração, decidir separadamente emissão/materialização do snapshot v6 — CONCLUÍDO / AUTORIZADO / EMITIDO / INTEGRITY-VALIDATED;
+17. executar review independente pós-emissão sobre o registro v6 — CONCLUÍDO / P1 MATERIAL ENCONTRADO;
+18. adjudicar contradição do Operational Flow v3.0.1 — CONCLUÍDO / P1 VALID;
+19. remediar autoridade canônica sem reescrever snapshot — CONCLUÍDO / FLOW v3.0.2 + RELEASE v1.2.0;
+20. congelar v6 como histórico inválido para nova execução — CONCLUÍDO;
+21. decidir separadamente nova emissão/revalidação do pacote corrigido — PENDENTE / ATO HUMANO SEPARADO.
 
 ```text
 V5 SNAPSHOT
@@ -1963,7 +1968,9 @@ SOURCE COMPLETENESS
 → 120 / 120
 
 V6 SNAPSHOT
-→ CURRENT EXTERNAL SOURCE PACKAGE
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
 → 29 CANONICAL SOURCES
 → 8 READ-FIRST GUIDES
 → 37 FILES TOTAL
@@ -1973,9 +1980,16 @@ V6 SNAPSHOT
 → 29 / 29 CANONICAL BLOBS EXACT MATCH
 → EMITTED / MATERIALIZED / VALIDATED
 
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+
 DESIGN PRODUCTION RELEASE
 → GRANTED
-→ EXTERNAL DESIGNER PRODUCTION
+→ EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
+
+OPERATIONAL EXECUTION
+→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
 
 AI
 → OPTIONAL / DESIGNER-CONTROLLED
