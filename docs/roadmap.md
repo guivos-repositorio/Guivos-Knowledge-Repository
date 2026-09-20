@@ -1956,7 +1956,7 @@ Sequência governada atual:
 20. congelar v6 como histórico inválido para nova execução — CONCLUÍDO;
 21. executar re-review do primeiro P1 no HEAD remediado — CONCLUÍDO / SEGUNDO P1 MATERIAL ENCONTRADO;
 22. adjudicar autoridades comuns ainda liberando execução — CONCLUÍDO / P1 VALID;
-23. reconciliar GENINPUT / Readiness para estado sem pacote corrente — CONCLUÍDO / GENINPUT v2.2.15 + READINESS v1.2.15;
+23. reconciliar autoridades comuns para estado sem pacote corrente — CONCLUÍDO / HANDOFF v1.6.3 + GENINPUT v2.2.15 + READINESS v1.2.15 + FLOW v3.0.2 + RELEASE v1.2.0;
 24. validar novamente Semantic + Mechanical + re-review no HEAD final — EM CURSO;
 25. decidir separadamente nova emissão/revalidação do pacote corrigido — PENDENTE / ATO HUMANO SEPARADO.
 
