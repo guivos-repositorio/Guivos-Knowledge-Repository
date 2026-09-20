@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.3
+version: 1.19.4
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-19
 related:
@@ -161,7 +161,7 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C4B — validação integrada individual e promoção de TRN-008..013
 → O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C State Map — DEFINED / CANONICAL DOCUMENTARY
-→ Public Homes Source Completeness — PRE-EMISSION C1–C15 PASS / 8 OF 8 / 120 OF 120 / POST-EMISSION PACKAGE P1 ADJUDICATED
+→ Public Homes Source Completeness — PRE-EMISSION C1–C15 PASS / 8 OF 8 / 120 OF 120 / 2 POST-EMISSION P1s ADJUDICATED
 → Public Homes Design Production Release — GRANTED / VALID CURRENT PACKAGE REQUIRED / AI OPTIONAL
 → Public Homes Design Handoff v5 Snapshot — FROZEN / HISTORICAL / 34 FILES
 → Public Homes v6 Snapshot — EMITTED / INTEGRITY-VALIDATED / FROZEN HISTORICAL / INVALID FOR NEW EXECUTION / 37 FILES
