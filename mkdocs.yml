@@ -59,8 +59,8 @@ markdown_extensions:
 # Autoridades e evidências de detalhe permanecem preservadas e acessíveis por
 # hubs, links internos, busca e histórico sem serem duplicadas no menu.
 # Documentos históricos, superseded, candidatos, registros de proveniência,
-# remediações concluídas e auditorias de processo permanecem preservados no
-# corpus/Git, mas não são destinos do MENU corrente.
+# remediações concluídas e auditorias de processo não são destinos do MENU.
+# Quando sua absorção é comprovada, saem do corpus corrente e permanecem no Git.
 not_in_nav: |
   *
 
@@ -110,7 +110,6 @@ nav:
       - Homes — Prontidão de Produção / Designer e IA: experience-architecture/public-homes-design-production-readiness-and-figma-contract.md
       - Homes — Design Production Release: experience-architecture/public-homes-design-production-release.md
       - Homes — Manifesto Canônico de Entrega: experience-architecture/public-homes-design-delivery-manifest.md
-      - Homes — Pacote Externo Corrente (v8): experience-architecture/public-homes-design-delivery-v8-snapshot-record.md
       - Homes — Fluxo Operacional de Design: experience-architecture/public-homes-design-delivery-operational-flow.md
       - Home Guivos Mall: experience-architecture/public-home-mall-master-document.md
       - Home Guivos Travel: experience-architecture/public-home-travel-master-document.md

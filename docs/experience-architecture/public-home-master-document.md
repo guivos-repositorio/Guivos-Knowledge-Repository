@@ -30,8 +30,6 @@ depends_on:
   - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
 related:
   - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
-  - GKR-UX-HOME-AUDIT-001
-  - GKR-UX-HOME-AUDIT-002
 ---
 
 # Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
