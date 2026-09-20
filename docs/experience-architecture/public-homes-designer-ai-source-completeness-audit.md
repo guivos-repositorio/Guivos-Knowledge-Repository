@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
-status: draft
-version: 0.4.11
+status: active
+version: 1.1.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: source_completeness_candidate_pass_exact_head_validation_pending
+maturity: post_emission_package_p1s_adjudicated_v6_reissue_required
 depends_on:
   - GKR-STATE-001
   - GKR-HOME-MASTERS-REMEDIATION-001
@@ -16,6 +16,8 @@ depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
 ---
 
 # Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
@@ -55,8 +57,11 @@ GKR / CHATGPT
 A direção operacional vigente é:
 
 ```text
-GKR-CREATED FIGMA / FIGMA MAKE EXECUTION
-→ DISCONTINUED
+GKR-CREATED FIGMA
+→ NONE
+
+PRIOR GKR FIGMA / FIGMA MAKE EXPLORATION
+→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
 
 DESIGN PRODUCTION
 → EXTERNAL / DESIGNER-OWNED
@@ -626,6 +631,102 @@ P2 — OPERATIONAL FLOW INTERNAL VERSION LABEL
 
 A correção apenas faz o bloco de estado refletir a revisão `v3.0.1` que já era a revisão declarada e incluída no pacote. Não cria nova autoridade, não altera a composição 29 + 8 = 37 e não modifica os boundaries de Design, IA, snapshot ou Product Engineering.
 
+## 9.13 Emissão/materialização v6 — prova pós-merge
+
+Após a integração da PR #397, o ato humano separado de emissão/materialização foi autorizado e executado a partir de `main @ 52f1dade6d7bfcd8c1e5d1b567d7125ac725018f`.
+
+```text
+V6 SNAPSHOT BRANCH
+→ delivery/design-handoff-v6
+
+SNAPSHOT COMMIT
+→ b7fe5d62cef444c8316c66edd8ac73b703698a4a
+
+SNAPSHOT TREE
+→ 61eef7447fc5c6b36890ccb774f7011615a6abca
+
+CANONICAL SOURCES
+→ 29 / 29 PRESENT
+→ 29 / 29 MAIN BLOB × SNAPSHOT BLOB EXACT MATCH
+
+READ-FIRST GUIDES
+→ 8 / 8
+
+TOTAL EXTERNAL FILES
+→ 37
+
+EXTRA BLOBS
+→ 0
+```
+
+A emissão preserva designer-first / manual-first, IA opcional, ausência de Figma criado pelo GKR como referência e Product Engineering não liberado. O candidato v6 foi realizado sem alteração de composição.
+
+## 9.14 Review independente pós-emissão na PR #402 — P1 de consistência do pacote v6
+
+A revisão independente sobre o HEAD `615ec67af2f3d463747bdb309fc49cb88e557137` encontrou um P1 material que não invalida a prova histórica de que 29/29 blobs foram preservados, mas invalida o uso do snapshot v6 para nova execução:
+
+```text
+P1 — SHIPPED OPERATIONAL FLOW CONTRADICTS V6 CURRENT STATUS
+→ VALID
+
+V6 SNAPSHOT CONTAINS
+→ GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.1
+→ SOURCE COMPLETENESS AUDIT = IN PROGRESS
+→ V6 PACKAGE = NOT YET ELIGIBLE
+
+CANONICAL REMEDIATION
+→ FLOW = v3.0.2
+→ RELEASE = v1.2.0
+
+FROZEN SNAPSHOT POLICY
+→ delivery/design-handoff-v6 NOT REWRITTEN
+→ V6 = FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+```
+
+A descoberta demonstra que `C1–C15 = PASS` e preservação byte-a-byte eram condições necessárias, mas não suficientes para provar coerência operacional completa do pacote. A auditoria pré-emissão permanece como evidência histórica; a validade operacional do v6 foi reaberta e negada por este P1.
+
+## 9.15 Re-review pós-remediação na PR #402 — P1 nas autoridades comuns
+
+O re-review independente sobre o HEAD `b815e0f07f5f59bde2fbbd23288a65b1816cb2e4` encontrou um segundo P1 material:
+
+```text
+P1 — RECONCILE THE COMMON AUTHORITIES BEFORE REISSUING
+→ VALID
+
+GENINPUT v2.2.14
+→ GENERATIVE EXECUTION = AUTHORIZED TO EXECUTE
+→ STALE RELEASE / CURRENT-CANDIDATE REFERENCES
+
+READINESS v1.2.14
+→ AI-ASSISTED DESIGN = AUTHORIZED TO EXECUTE
+→ STALE RELEASE / CURRENT-CANDIDATE REFERENCES
+
+CANONICAL REMEDIATION
+→ HANDOFF = v1.6.3 / PREVENTIVE STALE-PIN RECONCILIATION
+→ GENINPUT = v2.2.15
+→ READINESS = v1.2.15
+→ FLOW = v3.0.2
+→ RELEASE = v1.2.0
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+
+OPERATIONAL EXECUTION
+→ PAUSED
+
+NEXT MATERIALIZATION
+→ REQUIRES NEW GOVERNED CANDIDATE
+→ REISSUE / REVALIDATION
+→ SEPARATE HUMAN AUTHORIZATION
+```
+
+As versões v2.2.14 / v1.2.14 permanecem legítimas apenas como proveniência da cadeia que levou ao v6. Elas não são mais as autoridades correntes para preparar uma nova emissão.
+
 ## 10. Remediações aplicadas
 
 ### F-DS-001 — RESOLVED
@@ -734,39 +835,64 @@ P1 — INTELLIGENCE AUTHORITY / COPY
 
 Estas remediações alteram novamente o HEAD. Portanto, o fechamento exige **Semantic + Mechanical no novo HEAD** e **novo review independente limpo**.
 
-## 11. Estado candidato
+## 11. Estado final
 
 ```text
 C1–C15
-→ CANDIDATE PASS
+→ PASS / CLOSED
 → 8 / 8 HOMES
 → 120 / 120
 
-OPEN MATERIAL FINDINGS
-→ 0 KNOWN AFTER SECOND REMEDIATION
-→ EXACT-HEAD REVALIDATION + RE-REVIEW REQUIRED
+OPEN MATERIAL FINDINGS AT EMISSION
+→ 0 KNOWN AT EMISSION
 
-DESIGNER CREATIVE FREEDOM
-→ PRESERVED
+POST-EMISSION PACKAGE CONSISTENCY FINDING
+→ 1 P1 VALID
+→ CANONICAL SOURCE REMEDIATED
+→ V6 PACKAGE REMAINS AFFECTED UNTIL REISSUE
 
-GKR-CREATED FIGMA
-→ DISCONTINUED
+FINAL PR #397 HEAD
+→ 7ca0857587f87f982ea53c2ce1719c1a0ed831b6
+
+SEMANTIC #1404
+→ SUCCESS
+
+MECHANICAL #1633
+→ SUCCESS
+
+INDEPENDENT CODEX RE-REVIEW
+→ CLEAN / NO MAJOR ISSUES
+
+V6 SNAPSHOT
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION
+→ delivery/design-handoff-v6
+→ commit b7fe5d62cef444c8316c66edd8ac73b703698a4a
+→ tree 61eef7447fc5c6b36890ccb774f7011615a6abca
+
+CANONICAL BLOB PRESERVATION
+→ 29 / 29 EXACT MATCH
+
+DESIGNER
+→ CREATIVE AUTHOR / MANUAL FIRST-CLASS
 
 AI
 → OPTIONAL / DESIGNER-CONTROLLED
 
-V5 SNAPSHOT
-→ FROZEN / HISTORICAL
+GKR-CREATED FIGMA
+→ NONE
 
-V6 PACKAGE DEFINITION
-→ NEXT
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
 
-SEMANTIC / MECHANICAL
-→ REQUIRED ON EXACT FINAL HEAD
-
-INDEPENDENT REVIEW
-→ RE-REVIEW REQUIRED ON EXACT FINAL HEAD
+DESIGN PRODUCTION RELEASE
+→ GRANTED
+→ OPERATIONAL EXECUTION PAUSED UNTIL VALID PACKAGE EXISTS
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
+
+A auditoria pré-emissão permanece encerrada como prova histórica do que era conhecido no ato de emissão. As revisões pós-emissão encontraram dois P1 materiais: primeiro no Operational Flow v3.0.1 contido no v6 e depois nas autoridades comuns ainda preparadas para execução. Ambos foram remediados somente na linha canônica corrente. O snapshot v6 congelado não é reescrito e permanece inválido para nova execução até nova emissão/revalidação.

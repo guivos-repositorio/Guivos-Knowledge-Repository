@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 title: Homes Públicas — Autorização Governada de Design Production Release
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
-maturity: design_production_release_granted_external_designer_execution
+maturity: design_production_release_granted_valid_package_required
 depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -26,7 +26,7 @@ related:
 
 Esta autoridade registra o ato humano que libera a **produção externa de Design das oito Homes pela designer**, usando o GKR como fonte de verdade semântica e funcional.
 
-O release permanece válido. O método de execução foi posteriormente esclarecido:
+O release permanece válido como autorização humana. Sua execução operacional, porém, exige um pacote externo corrente e semanticamente válido. Um release concedido não cura contradições internas de um snapshot nem autoriza usar um pacote posteriormente invalidado. O método de execução permanece designer-first:
 
 ```text
 DESIGN PRODUCTION RELEASE
@@ -101,7 +101,7 @@ CANONICAL BLOB PRESERVATION
 → MISMATCHES = 0
 ```
 
-O v5 permanece snapshot histórico congelado. Alterações materiais posteriores exigem nova emissão, não reescrita do snapshot.
+O v5 permanece snapshot histórico congelado. O v6 também foi posteriormente emitido e congelado, mas uma revisão independente pós-emissão identificou contradição material no Operational Flow v3.0.1 preservado pelo snapshot. Portanto, o v6 não é válido para nova execução; a correção canônica ocorre em revisão posterior e exige nova emissão, nunca reescrita do snapshot.
 
 ## 4. Fonte de verdade para cada Home
 
@@ -251,8 +251,12 @@ V5 SNAPSHOT
 DESIGN PRODUCTION RELEASE
 → GRANTED
 
-EXTERNAL DESIGNER PRODUCTION
+EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 → RELEASED
+
+OPERATIONAL EXECUTION
+→ REQUIRES VALID CURRENT EXTERNAL SOURCE PACKAGE
+→ PAUSED WHILE REISSUE IS PENDING
 
 MANUAL CREATIVE PRODUCTION
 → AUTHORIZED
@@ -261,7 +265,10 @@ AI-ASSISTED CREATIVE PRODUCTION
 → OPTIONAL / DESIGNER-CONTROLLED
 
 GKR-CREATED FIGMA
-→ DISCONTINUED
+→ NONE
+
+PRIOR GKR FIGMA EXPLORATION
+→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
 
 FINAL DESIGN ACCEPTANCE
 → HUMAN / SEPARATE
@@ -275,6 +282,20 @@ UXA-102 / V5
 
 ## 11. Próximo movimento legítimo
 
-Antes de entregar fontes à designer, a frente atual deve concluir `GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001` e provar que as oito Homes estão completas para consumo humano e por IA.
+A completude pré-emissão foi concluída historicamente, mas o snapshot v6 foi invalidado para nova execução por um P1 pós-emissão no Operational Flow v3.0.1.
 
-Depois disso, a designer cria manualmente com liberdade, utilizando o GKR e podendo usar IA opcionalmente.
+O próximo movimento legítimo é:
+
+```text
+CANONICAL SOURCES
+→ RECONCILED
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+
+NEXT GOVERNED ACT
+→ PREPARE REISSUE / REVALIDATION
+→ MATERIALIZE ONLY BY SEPARATE HUMAN AUTHORIZATION
+```
+
+Somente depois de uma nova emissão válida a designer deve iniciar ou retomar execução operacional contra o pacote externo corrente.

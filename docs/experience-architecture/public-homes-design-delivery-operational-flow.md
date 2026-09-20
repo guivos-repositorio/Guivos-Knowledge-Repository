@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
 title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 status: active
-version: 3.0.1
+version: 3.0.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -15,7 +15,7 @@ related:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 normative: false
-maturity: designer_first_ai_optional_pre_delivery_finalization
+maturity: designer_first_ai_optional_post_v6_invalidation_reissue_required
 ---
 
 # Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
@@ -50,7 +50,7 @@ A produção criativa só deve começar quando:
 - não houver finding material aberto de completude;
 - o Design Production Release estiver vigente.
 
-A frente documental atual ainda deve concluir a reauditoria C1–C15 antes de emitir o pacote v6.
+A reauditoria C1–C15 foi concluída para a emissão v6. Uma revisão independente pós-emissão identificou posteriormente um P1 neste próprio fluxo v3.0.1: o snapshot v6 congelado preservou linguagem pré-emissão contraditória. A autoridade canônica foi corrigida nesta revisão v3.0.2; o snapshot v6 não é reescrito e não permanece válido para nova execução. Uma nova emissão/revalidação é necessária antes de iniciar trabalho criativo com um pacote externo corrente.
 
 ## 3. Isolamento de contexto
 
@@ -220,19 +220,33 @@ Mudanças puramente criativas da designer, sem alteração de contrato, não exi
 ## 11. Estado
 
 ```text
-FLOW v3.0.1
+FLOW v3.0.2
 → DESIGNER-FIRST
 → AI-OPTIONAL
 → TOOL-NEUTRAL
 
 GKR-CREATED FIGMA
-→ DISCONTINUED
+→ NONE
+
+PRIOR GKR FIGMA EXPLORATION
+→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
 
 SOURCE COMPLETENESS AUDIT
-→ IN PROGRESS
+→ PRE-EMISSION C1–C15 PASS / CLOSED
+→ POST-EMISSION PACKAGE CONSISTENCY P1 ADJUDICATED
 
-V6 PACKAGE
-→ NOT YET ELIGIBLE
+V6 SNAPSHOT
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+
+DESIGN PRODUCTION RELEASE
+→ GRANTED
+→ EXECUTION REQUIRES A VALID CURRENT PACKAGE
 
 PRODUCT ENGINEERING
 → NOT RELEASED

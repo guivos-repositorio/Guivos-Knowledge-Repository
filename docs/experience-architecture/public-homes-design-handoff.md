@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.6.2
+version: 1.6.3
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: designer_first_ai_optional_handoff_under_source_finalization
+maturity: designer_first_ai_optional_handoff_reissue_required
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -55,13 +55,22 @@ DESIGN PRODUCTION READINESS
 → GOVERNADO POR GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
 
-V5 SNAPSHOT / PACOTE EXTERNO
-→ EMITTED / MATERIALIZED / VALIDATED
+V6 SNAPSHOT
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+
+OPERATIONAL EXECUTION
+→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
 ```
 
-As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito registrado em `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0`.
+O ato humano de Design Production Release permanece concedido, mas as condições cumulativas de execução não estão atualmente satisfeitas porque não existe pacote externo corrente válido. O v6 foi congelado como histórico após findings pós-emissão; nova execução depende de nova emissão/revalidação governada e de Source Locks operacionais derivados desse novo pacote.
 
 ### 0.1 Liberdade criativa protegida
 
@@ -150,12 +159,12 @@ Este Handoff constitui a **autoridade procedimental comum** para materializaçã
 
 A execução somente fica liberada quando coexistirem:
 
-1. pacote v5 materializado e reproduzível;
+1. pacote externo corrente, materializado, reproduzível e semanticamente válido;
 2. Source Lock operacional da Home no checkpoint da emissão;
 3. gates de validação sem finding material aberto;
 4. ato humano explícito de `DESIGN PRODUCTION RELEASE = GRANTED`.
 
-Depois desse release, podem ser executados:
+Neste estado, o item 1 não está satisfeito. Portanto, a execução operacional permanece pausada. Quando uma nova emissão válida fechar novamente as quatro condições, poderão ser executados:
 
 - criação manual pela designer e, opcionalmente, exploração assistida por IA;
 - arquitetura visual;
@@ -240,27 +249,29 @@ O contexto de Business permanece deliberadamente mais amplo. Usar somente o paco
 
 Intelligence possui cadeia específica já convergida e deve ser materializado sem ser confundido com tecnologia, dashboard ou mecanismo de decisão.
 
-Ordem operacional específica no pacote v5:
+Ordem operacional para a próxima emissão válida, sempre subordinada às versões exatas fixadas pelo Manifesto/candidato governado:
 
 ```text
-N0 — LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL V5
+N0 — LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL DA EMISSÃO
      → fixa checkpoint, fontes, prompt e estado EXPLORAÇÃO
 
-N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9
      → congela significado e invariantes da Home
 
-N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
+N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.10
      → traduz a Home para o contrato de Design
 
-N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
-     → preserva narrativa, copy e função pública
+N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7
+     + GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
+     + GKR-UX-HOMES-OUTCOME-001 v1.0.0
+     → preservam narrativa, valor, copy e função pública
 
-N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
-     + GPA-006 v2.0.0
+N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
+     + GPA-006 v2.0.1
      → governam significado e limites superiores do produto
 ```
 
-O GENINPUT histórico de Intelligence permanece como proveniência de uma primeira exploração e não integra o input operacional do v5. Autoridades narrativas superiores continuam válidas por referência e devem ser consultadas quando houver dúvida material.
+GENINPUTs históricos de Intelligence permanecem apenas como proveniência e não entram automaticamente no input operacional de uma nova emissão.
 
 ---
 
@@ -651,7 +662,7 @@ Estado histórico daquela frente:
 
 ---
 
-## 20. Estado pós-auditoria e pós-release / pré-execução
+## 20. Estado corrente
 
 ```text
 HANDOFF / MÉTODO
@@ -667,11 +678,21 @@ EXTERNAL DESIGNER CREATION
 → MANUAL FIRST-CLASS
 → AI OPTIONAL / DESIGNER-CONTROLLED
 
-FINAL DESIGN PRODUCTION
-→ DESIGNER-OWNED / SUBJECT TO HUMAN ACCEPTANCE
+DESIGN PRODUCTION RELEASE
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
 
-IMPLEMENTATION / PRODUCTION
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+
+OPERATIONAL DESIGN EXECUTION
+→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+
+FINAL DESIGN ACCEPTANCE
+→ HUMAN / SEPARATE
+
+IMPLEMENTATION / PRODUCT ENGINEERING
 → NOT RELEASED BY THIS HANDOFF
 ```
 
-Este documento governa **como** o handoff deve ocorrer. A liberação efetiva foi concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0` sobre o pacote v5 já emitido e validado.
+Este documento governa **como** o handoff deve ocorrer. A autorização humana permanece concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0`, mas a execução operacional está pausada porque `CURRENT EXTERNAL SOURCE PACKAGE = NONE`. A próxima execução exige reissue/revalidation e novo pacote corrente válido.

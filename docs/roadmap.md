@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.13
+id: ROADMAP-13.47.17
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.13
+version: 13.47.17
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -14,6 +14,7 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
@@ -167,7 +168,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | O/C wireframes low-fidelity | **AUTHORIZATION GRANTED / DELIVERY v0.1.0 EXECUTED / VALIDATION v1.0.0 PASS / CURRENT REFERENCE = DELIVERY + VALIDATION** |
 | O/C high-fidelity eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0 / AUTHORIZATION NOT_GRANTED** |
 | GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION** |
-| Design das Homes públicas | **DESIGNER-FIRST / DESIGN PRODUCTION RELEASE GRANTED / SOURCE COMPLETENESS v6 CANDIDATE PASS / AI OPTIONAL** |
+| Design das Homes públicas | **DESIGNER-FIRST / DESIGN PRODUCTION RELEASE GRANTED / V6 FROZEN + INVALID FOR NEW EXECUTION / REISSUE REQUIRED / AI OPTIONAL** |
 | O/C autenticado high-fidelity | **ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED / SEPARATE GOVERNED GATE** |
 
 Inventário físico corrente após F-016-A:
@@ -1941,14 +1942,23 @@ Sequência governada atual:
 6. absorver contrato determinístico em Travel Master — CONCLUÍDO;
 7. reconciliar Business Master com Source Lock vigente — CONCLUÍDO;
 8. reconciliar Intelligence Master com Source Lock vigente — CONCLUÍDO;
-9. reauditar 8/8 Homes como pacotes completos — CANDIDATE PASS / 120 OF 120;
+9. reauditar 8/8 Homes como pacotes completos — CONCLUÍDO / PASS / CLOSED / 120 OF 120;
 10. definir pacote v6 candidato — CONCLUÍDO;
 11. sincronizar Estado / Roadmap / navegação — CONCLUÍDO;
-12. executar Semantic + Mechanical no HEAD final — PENDENTE;
-13. executar revisão independente no HEAD final — PENDENTE;
-14. adjudicar findings, se houver — PENDENTE;
-15. decidir separadamente Ready for Review / merge — NÃO AUTORIZADO;
-16. após integração, decidir separadamente emissão/materialização do snapshot v6 — NÃO AUTORIZADO.
+12. executar Semantic + Mechanical no HEAD final — CONCLUÍDO / Semantic #1404 + Mechanical #1633 = SUCCESS;
+13. executar revisão independente no HEAD final — CONCLUÍDO / CLEAN / NO MAJOR ISSUES;
+14. adjudicar findings, se houver — CONCLUÍDO / P2 pós-Ready remediado e re-review limpo;
+15. decidir separadamente Ready for Review / merge — CONCLUÍDO / PR #397 MERGED;
+16. após integração, decidir separadamente emissão/materialização do snapshot v6 — CONCLUÍDO / AUTORIZADO / EMITIDO / INTEGRITY-VALIDATED;
+17. executar review independente pós-emissão sobre o registro v6 — CONCLUÍDO / P1 MATERIAL ENCONTRADO;
+18. adjudicar contradição do Operational Flow v3.0.1 — CONCLUÍDO / P1 VALID;
+19. remediar autoridade canônica sem reescrever snapshot — CONCLUÍDO / FLOW v3.0.2 + RELEASE v1.2.0;
+20. congelar v6 como histórico inválido para nova execução — CONCLUÍDO;
+21. executar re-review do primeiro P1 no HEAD remediado — CONCLUÍDO / SEGUNDO P1 MATERIAL ENCONTRADO;
+22. adjudicar autoridades comuns ainda liberando execução — CONCLUÍDO / P1 VALID;
+23. reconciliar autoridades comuns para estado sem pacote corrente — CONCLUÍDO / HANDOFF v1.6.3 + GENINPUT v2.2.15 + READINESS v1.2.15 + FLOW v3.0.2 + RELEASE v1.2.0;
+24. validar novamente Semantic + Mechanical + re-review no HEAD final — EM CURSO;
+25. decidir separadamente nova emissão/revalidação do pacote corrigido — PENDENTE / ATO HUMANO SEPARADO.
 
 ```text
 V5 SNAPSHOT
@@ -1957,19 +1967,33 @@ V5 SNAPSHOT
 → f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
 
 SOURCE COMPLETENESS
-→ C1–C15 CANDIDATE PASS
+→ C1–C15 PASS / CLOSED
 → 8 / 8 HOMES
 → 120 / 120
 
-V6 PACKAGE CANDIDATE
+V6 SNAPSHOT
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
 → 29 CANONICAL SOURCES
 → 8 READ-FIRST GUIDES
 → 37 FILES TOTAL
-→ SNAPSHOT NOT EMITTED
+→ branch delivery/design-handoff-v6
+→ commit b7fe5d62cef444c8316c66edd8ac73b703698a4a
+→ tree 61eef7447fc5c6b36890ccb774f7011615a6abca
+→ 29 / 29 CANONICAL BLOBS EXACT MATCH
+→ NOT CURRENT FOR NEW EXECUTION
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
 
 DESIGN PRODUCTION RELEASE
 → GRANTED
-→ EXTERNAL DESIGNER PRODUCTION
+→ EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
+
+OPERATIONAL EXECUTION
+→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
 
 AI
 → OPTIONAL / DESIGNER-CONTROLLED
