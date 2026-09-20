@@ -4,7 +4,7 @@ title: Fronteira entre Arquitetura da Home e Estratégia de Marketing, Lançamen
 status: draft
 version: 0.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-10
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-HANDOFF-001
 depends_on:
   - UXA-020
@@ -14,7 +14,6 @@ depends_on:
   - GKR-UX-HOME-NAV-001
   - GKR-UX-HOME-NAV-002
   - GKR-UX-HOME-SYS-001
-  - GKR-UX-HOME-AUDIT-001
 normative: false
 ---
 

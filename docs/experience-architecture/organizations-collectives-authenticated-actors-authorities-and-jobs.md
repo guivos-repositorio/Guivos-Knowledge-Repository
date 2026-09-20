@@ -668,6 +668,6 @@ Após a definição da Arquitetura da Informação autenticada, `GKR-UX-ORGCOL-A
 
 A sequência governada de `F-006` foi concluída: autorização, cleanup 6/6, reconciliação, validações e prova pós-delete. `F-006` está resolvido. A continuidade desta autoridade permanece funcional e não autoriza materialização visual.
 
-As lacunas posteriores correntes são **Navigation Materialization e wireframes autenticados**. Cada uma exige autorização específica e não é iniciada por esta reconciliação.
+Navigation Materialization e os wireframes autenticados low-fidelity deixaram de ser lacunas correntes: a primeira está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`, e os segundos foram autorizados, entregues e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O próximo limite ainda não executado é **high-fidelity Design**: a elegibilidade está `PASS`, mas a autorização permanece `NOT_GRANTED`.
 
-Nenhuma dessas lacunas deve produzir, por inferência, UI, protótipo ou implementação; Design/UI/protótipo permanecem não autorizados e Product Engineering permanece não liberada.
+Esse limite não deve produzir, por inferência, UI final, protótipo ou implementação; high-fidelity Design permanece não autorizado e Product Engineering permanece não liberada.
