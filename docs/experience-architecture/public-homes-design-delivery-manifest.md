@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 6.1.2
+version: 6.2.0
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 normative: true
-maturity: v6_emitted_frozen_invalidated_for_new_execution_reissue_required
+maturity: v7_reissue_candidate_prepared_materialization_not_authorized
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -19,6 +19,7 @@ related:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
 ---
 
 # Homes Públicas — Manifesto Canônico de Entrega para Design
@@ -28,6 +29,8 @@ related:
 Este Manifesto governa a emissão externa das oito Homes públicas para criação pela designer.
 
 O snapshot **v6 foi emitido, materializado e teve sua integridade validada**, mas uma revisão independente pós-emissão encontrou um P1 material dentro do próprio pacote: o Operational Flow v3.0.1 preservou linguagem pré-emissão incompatível com o uso corrente. O v6 permanece congelado e reproduzível como proveniência histórica, porém **não é válido para nova execução**. Neste estado, não existe pacote externo corrente; nova emissão/revalidação é necessária. O v5 também permanece congelado como snapshot histórico.
+
+O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.1.0` foi preparado sobre o `main` pós-PR #403, com 29/29 fontes recalculadas diretamente da base canônica. Ele é preparação documental não normativa: `CURRENT EXTERNAL SOURCE PACKAGE = NONE` permanece verdadeiro e `delivery/design-handoff-v7` não deve existir antes de autorização humana separada de materialização.
 
 ```text
 DESIGNER
@@ -250,6 +253,11 @@ CANONICAL REMEDIATION
 FROZEN V6 SNAPSHOT
 → NOT REWRITTEN
 → INVALID FOR NEW EXECUTION
+
+V7 CANDIDATE
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.1.0
+→ PREPARED / NON-NORMATIVE
+→ MATERIALIZATION NOT AUTHORIZED
 
 CURRENT EXTERNAL SOURCE PACKAGE
 → NONE
