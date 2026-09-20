@@ -2279,6 +2279,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../experience-architecture/public-homes-design-delivery-v8-candidate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Pacote v8 Candidato (revalidação)
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../experience-architecture/public-homes-design-delivery-operational-flow/" class="md-nav__link">
         
   
@@ -6206,7 +6241,9 @@ GKR-CREATED FIGMA
 <li>registrar e validar a emissão v7 na documentação canônica do <code>main</code> — REVIEW ENCONTROU P1 + P2 VÁLIDOS / V7 NÃO PROMOVÍVEL COMO CURRENT / SNAPSHOT NÃO DEVE SER MUTADO;</li>
 <li>reconciliar autoridades comuns para não congelar estado transitório de pacote — SEGUNDO RE-REVIEW ENCONTROU P1 RESIDUAL / REMEDIADO COM HANDOFF v1.6.5 + GENINPUT v2.2.17 + READINESS v1.2.17 + FLOW v3.0.3 + RELEASE v1.2.1 / PACKAGE STATE FULLY DELEGATED TO MANIFEST + CURRENT STATE / FINAL REVALIDATION PENDING;</li>
 <li>corrigir proveniência v7 residual que ainda chamava snapshot histórico de corrente — CONCLUÍDO / CANDIDATE v0.3.2;</li>
-<li>após integração da remediação, preparar nova reemissão/revalidação — PENDENTE / MATERIALIZAÇÃO EXIGE ATO HUMANO SEPARADO.</li>
+<li>após integração da remediação, preparar nova reemissão/revalidação — CONCLUÍDO / V8 CANDIDATE PREPARED FROM MAIN b660503a5da5ec5214e3e2c0eba1f1b06daa9489 / 29 OF 29 SOURCE PINS RECALCULATED / SUBSTANTIVE REVALIDATION PASS;</li>
+<li>concluir gate externo de validação do HEAD documental final da PR #408 — EM CURSO / EXACT-HEAD SEMANTIC + MECHANICAL + INDEPENDENT REVIEW / NÃO AUTOAFIRMADO NO CONTEÚDO;</li>
+<li>decidir separadamente materialização do v8 — PENDENTE / ATO HUMANO SEPARADO / delivery/design-handoff-v8 NOT CREATED / NOT AUTHORIZED.</li>
 </ol>
 <div class="highlight"><pre><span></span><code>V5 SNAPSHOT
 → FROZEN / HISTORICAL
@@ -6243,9 +6280,23 @@ V7 SNAPSHOT
 → 8 / 8 READ-FIRST GUIDES VALID
 → 37 FILES TOTAL
 
+V8 CANDIDATE
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.2.3
+→ PREPARED FROM MAIN b660503a5da5ec5214e3e2c0eba1f1b06daa9489
+→ 29 / 29 SOURCE PINS RECALCULATED
+→ SUBSTANTIVE REVALIDATION PASS
+→ REVIEWED HEAD 539b9b9503e09863cb421e2432fca3fca40871f7
+→ SEMANTIC #1498 = SUCCESS
+→ MECHANICAL #1721 = SUCCESS
+→ CODEX CLEAN / NO MAJOR ISSUES
+→ REVIEW THREADS = 0 OPEN
+→ delivery/design-handoff-v8 NOT CREATED
+→ FINAL DOCUMENTARY HEAD VALIDATION = EXTERNAL PR #408 GATE / NOT SELF-ASSERTED IN FILE CONTENT
+→ MATERIALIZATION DECISION PENDING / NOT AUTHORIZED
+→ SELF-REFERENTIAL FINAL-HEAD P1 = REMEDIATED
+
 CURRENT EXTERNAL SOURCE PACKAGE
 → NONE
-→ REISSUE / REVALIDATION REQUIRED
 
 CORRECTED COMMON AUTHORITY CHAIN
 → HANDOFF 1.6.5
