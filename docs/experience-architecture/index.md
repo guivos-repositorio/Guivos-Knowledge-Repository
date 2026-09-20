@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.8
+version: 1.19.9
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 related:
@@ -318,6 +318,6 @@ A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. 
 
 [GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001](public-homes-design-delivery-v6-snapshot-record.md) registra o snapshot v6 em `delivery/design-handoff-v6`: 29 fontes canônicas + oito guias = 37 arquivos e 29/29 blobs preservados. O snapshot permanece congelado como proveniência histórica, mas o P1 pós-emissão no Operational Flow v3.0.1 o torna inválido para nova execução. O estado `CURRENT EXTERNAL SOURCE PACKAGE = NONE` pertence ao checkpoint histórico posterior à invalidação do v6 e foi superado pela emissão v7.
 
-[GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001](public-homes-design-delivery-v7-candidate.md) preserva a proveniência do candidato v7 revalidado que foi realizado pelo snapshot corrente.
+[GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001](public-homes-design-delivery-v7-candidate.md) preserva a proveniência do candidato v7 revalidado que foi realizado pelo snapshot posteriormente invalidado para nova execução.
 
-[GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001](public-homes-design-delivery-v7-snapshot-record.md) registra a emissão externa corrente em `delivery/design-handoff-v7`: origem `main = 35c616a4a7bf754577c180d37afe5e0c22380c7b`, commit `564a2656332dffeb4779ca20ee1ce6697abaa06d`, tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`, 29 fontes canônicas + oito guias = 37 arquivos, 29/29 blobs exatos e 8/8 guias validados. `CURRENT EXTERNAL SOURCE PACKAGE = V7`.
+[GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001](public-homes-design-delivery-v7-snapshot-record.md) registra a emissão v7 em `delivery/design-handoff-v7`: origem `main = 35c616a4a7bf754577c180d37afe5e0c22380c7b`, commit `564a2656332dffeb4779ca20ee1ce6697abaa06d`, tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`, 29 fontes canônicas + oito guias = 37 arquivos, 29/29 blobs exatos e 8/8 guias validados. O P1 pós-emissão nas cinco autoridades comuns torna o v7 congelado/histórico e inválido para nova execução. A cadeia canônica foi corrigida para Handoff 1.6.4 / GENINPUT 2.2.16 / Readiness 1.2.16 / Flow 3.0.3 / Release 1.2.1. `CURRENT EXTERNAL SOURCE PACKAGE = NONE` até nova reemissão/revalidação.
