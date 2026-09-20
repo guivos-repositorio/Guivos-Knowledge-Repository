@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.28
+id: ROADMAP-13.47.29
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.28
+version: 13.47.29
 owner: Guivos
 last_updated: 2026-09-20
 normative: true
@@ -2006,7 +2006,7 @@ V7 SNAPSHOT
 → 37 FILES TOTAL
 
 V8 CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.2.2
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.2.3
 → PREPARED FROM MAIN b660503a5da5ec5214e3e2c0eba1f1b06daa9489
 → 29 / 29 SOURCE PINS RECALCULATED
 → SUBSTANTIVE REVALIDATION PASS
