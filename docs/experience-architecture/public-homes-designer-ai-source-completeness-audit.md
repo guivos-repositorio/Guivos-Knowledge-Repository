@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
-status: draft
-version: 0.4.12
+status: active
+version: 1.0.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: source_completeness_candidate_pass_exact_head_validation_pending
+maturity: source_completeness_audit_completed_pass_v6_emitted
 depends_on:
   - GKR-STATE-001
   - GKR-HOME-MASTERS-REMEDIATION-001
@@ -16,6 +16,8 @@ depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
 ---
 
 # Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
@@ -764,39 +766,49 @@ P1 — INTELLIGENCE AUTHORITY / COPY
 
 Estas remediações alteram novamente o HEAD. Portanto, o fechamento exige **Semantic + Mechanical no novo HEAD** e **novo review independente limpo**.
 
-## 11. Estado candidato
+## 11. Estado final
 
 ```text
 C1–C15
-→ CANDIDATE PASS
+→ PASS / CLOSED
 → 8 / 8 HOMES
 → 120 / 120
 
 OPEN MATERIAL FINDINGS
-→ 0 KNOWN AFTER SECOND REMEDIATION
-→ EXACT-HEAD REVALIDATION + RE-REVIEW REQUIRED
+→ 0 AT EMISSION
 
-DESIGNER CREATIVE FREEDOM
-→ PRESERVED
+FINAL PR #397 HEAD
+→ 7ca0857587f87f982ea53c2ce1719c1a0ed831b6
 
-GKR-CREATED FIGMA
-→ DISCONTINUED
+SEMANTIC #1404
+→ SUCCESS
+
+MECHANICAL #1633
+→ SUCCESS
+
+INDEPENDENT CODEX RE-REVIEW
+→ CLEAN / NO MAJOR ISSUES
+
+V6 SNAPSHOT
+→ EMITTED / MATERIALIZED / VALIDATED
+→ delivery/design-handoff-v6
+→ commit b7fe5d62cef444c8316c66edd8ac73b703698a4a
+→ tree 61eef7447fc5c6b36890ccb774f7011615a6abca
+
+CANONICAL BLOB PRESERVATION
+→ 29 / 29 EXACT MATCH
+
+DESIGNER
+→ CREATIVE AUTHOR / MANUAL FIRST-CLASS
 
 AI
 → OPTIONAL / DESIGNER-CONTROLLED
 
-V5 SNAPSHOT
-→ FROZEN / HISTORICAL
-
-V6 PACKAGE DEFINITION
-→ NEXT
-
-SEMANTIC / MECHANICAL
-→ REQUIRED ON EXACT FINAL HEAD
-
-INDEPENDENT REVIEW
-→ RE-REVIEW REQUIRED ON EXACT FINAL HEAD
+GKR-CREATED FIGMA
+→ NONE
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
+
+A auditoria está encerrada para a emissão v6. Mudanças futuras nas fontes devem seguir a regra de impacto e reissue/revalidation do Manifesto e do registro do snapshot; não reabrem retroativamente esta prova.
