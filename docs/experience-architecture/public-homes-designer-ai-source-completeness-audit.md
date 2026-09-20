@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -57,8 +57,11 @@ GKR / CHATGPT
 A direção operacional vigente é:
 
 ```text
-GKR-CREATED FIGMA / FIGMA MAKE EXECUTION
-→ DISCONTINUED
+GKR-CREATED FIGMA
+→ NONE
+
+PRIOR GKR FIGMA / FIGMA MAKE EXPLORATION
+→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
 
 DESIGN PRODUCTION
 → EXTERNAL / DESIGNER-OWNED
