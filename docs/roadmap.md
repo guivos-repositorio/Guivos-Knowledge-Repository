@@ -1,5 +1,5 @@
 ---
-id: ROADMAP-13.47.17
+id: ROADMAP-13.47.18
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
 version: 13.47.18
