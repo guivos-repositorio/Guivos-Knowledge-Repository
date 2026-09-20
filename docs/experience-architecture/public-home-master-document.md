@@ -32,7 +32,6 @@ related:
   - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
   - GKR-UX-HOME-AUDIT-001
   - GKR-UX-HOME-AUDIT-002
-  - GKR-UX-HOME-PERSON-GENINPUT-001
 ---
 
 # Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica

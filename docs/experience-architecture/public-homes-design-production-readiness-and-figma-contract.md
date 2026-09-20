@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.0
+version: 1.3.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -57,7 +57,7 @@ O objetivo é reduzir a zero os findings materiais documentais antes do release 
 
 ## 2. Resultado executivo
 
-Checkpoint corrente: `main @ 389caab7f80c800185c97025398c684a6f11e450`.
+Checkpoint corrente: `CURRENT MAIN`, resolvido no momento do consumo.
 
 ```text
 8 HOME MASTERS
@@ -175,7 +175,7 @@ Fontes específicas:
 - `GKR-UX-HOME-MALL-MASTER-001 v1.1.2`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
 
-Contrato corrente que o guia/Source Lock v6 deve explicitar:
+Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `MALL-HS-01 BASELINE_PUBLIC` — tese, pergunta-mãe, identidade Guivos e descoberta são base permanente;
 - `MALL-HS-02 COMMERCIAL_DATA_AVAILABLE` — produto/oferta/preço/pontos/marca/parceiro somente com fonte aplicável;
 - `MALL-HS-03 COMMERCIAL_DATA_UNAVAILABLE_OR_ERROR` — ausência não pode virar oferta, estoque, preço ou parceria fictícia;
@@ -187,7 +187,7 @@ Contrato corrente que o guia/Source Lock v6 deve explicitar:
 - `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.4`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
 
-Contrato corrente que o guia/Source Lock v6 deve explicitar:
+Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `TRAVEL-HS-01 BASELINE_PUBLIC` — pergunta-mãe, identidade Guivos, inspiração e acesso a serviços são a base;
 - `TRAVEL-HS-02 OPERATIONAL_SERVICE` — serviços governados podem ser apresentados sem inferir disponibilidade universal;
 - `TRAVEL-HS-03 DESTINATION_OR_EXPERIENCE_PROVEN` — destino/imagem/experiência apresentados como reais exigem lastro;
@@ -219,44 +219,35 @@ Contrato corrente que o guia/Source Lock v6 deve explicitar:
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1`;
 - `GPA-006 v2.0.1`.
 
-O snapshot v5 deve capturar todas as fontes do mesmo commit canônico pós-merge e registrar seus SHAs.
+### 6.9 Fechamento corrente de fontes
 
-### 6.9 Fechamento de fontes correntes
-
-A revisão desta frente verificou a composição do Manifesto v5 contra a branch candidata:
+O conjunto corrente é definido pelo Manifesto Canônico vigente.
 
 ```text
 HOMES COM MASTER
 → 8 / 8
 
+AUTORIDADES COMUNS
+→ 5 / 5
+
 FONTES CANÔNICAS DO MANIFESTO
-→ 26 / 26 EXISTENTES
+→ 29 / 29 IDENTIFICADAS POR PATH + ID + VERSION
 
-ID DECLARADO × ID REAL
-→ 26 / 26 MATCH
+HOME MASTERS
+→ CURRENT
 
-VERSÃO DECLARADA × VERSÃO REAL
-→ 26 / 26 MATCH
-
-GENINPUT HISTÓRICO NO PACOTE OPERACIONAL
-→ 0
-
-SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE
+SOURCE LOCK / HANDOFF ESPECÍFICO
 → BUSINESS = INCLUDED
 → INTELLIGENCE = INCLUDED
 
-PESSOA / O-C
-→ MASTERS VIGENTES ABSORVEM A VERDADE DE CONSUMO
-→ DOCUMENTOS DE APROFUNDAMENTO PERMANECEM NO GKR, MAS NÃO ENTRAM AUTOMATICAMENTE NO CONTEXTO INICIAL DA IA
+HISTORICAL / SNAPSHOT / CANDIDATE INPUT
+→ EXCLUDED
 
-MATERIAL DOCUMENT GAP IDENTIFIED IN SOURCE CLOSURE
-→ 0
-
-FINAL EXACT-HEAD GATE
-→ STILL REQUIRED
+MATERIAL DOCUMENT GAP
+→ NONE KNOWN IN CURRENT DESIGN SOURCE SET
 ```
 
-A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente em ferramentas de IA.
+Documentos adicionais podem ser consultados deliberadamente quando uma dúvida concreta exigir autoridade corrente complementar, mas não devem ser carregados indiscriminadamente em ferramentas de IA.
 
 ## 7. Regra de isolamento para IA
 
@@ -300,7 +291,7 @@ OPEN_QUESTION
 
 ### 8.1 Matriz operacional das oito Homes
 
-A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOURCE LOCK` v5 deverá tornar explícita.
+A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOURCE LOCK` corrente deverá tornar explícita.
 
 #### Pessoa
 
@@ -417,7 +408,7 @@ Regras de integridade:
 - imagem conceitual não pode ser apresentada como case/evidência real;
 - logos de terceiros exigem relação/autorização aplicável;
 - preço, avaliação, número de usuários, disponibilidade e resultados não podem ser inventados;
-- conteúdo gerado para protótipo deve ser reconhecível internamente como conjunto corrente ou placeholder;
+- conteúdo gerado para protótipo deve ser reconhecível internamente como `CONTENT_CANDIDATE` ou `PROTOTYPE_PLACEHOLDER` até aprovação humana;
 - no artefato final, assets externos devem possuir origem/licença ou condição de uso registrada;
 - mídia essencial deve possuir fallback e não pode carregar sozinha o significado da página.
 

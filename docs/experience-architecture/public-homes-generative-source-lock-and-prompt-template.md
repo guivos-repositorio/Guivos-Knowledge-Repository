@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.3.0
+version: 2.3.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -802,10 +802,6 @@ O objetivo não é tornar o processo burocrático. É permitir liberdade visual 
 
 > **A ferramenta pode propor forma. Não pode inventar a Guivos que a forma representa.**
 
-Estado histórico do método:
-
-> **SOURCE LOCK E PROMPT CONTROLADO DEFINIDOS — PRONTOS PARA INSTANCIAÇÃO POR HOME — NENHUM OUTPUT VISUAL É CANÔNICO POR GERAÇÃO AUTOMÁTICA.**
-
 ### Estado vigente
 
 ```text
@@ -829,26 +825,4 @@ HISTORICAL INPUT
 
 RELEASE AUTHORITY
 → GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
-```
-
-
-```text
-TEMPLATE
-→ ACTIVE / RECONCILED FOR 8 HOMES
-
-V5 PER-HOME SOURCE LOCKS
-→ EMITTED / 8 OF 8 / FROZEN IN delivery/design-handoff-v5
-
-GENERATIVE METHOD
-→ AVAILABLE / OPTIONAL / DESIGNER-CONTROLLED
-
-GENERATIVE EXECUTION
-→ AVAILABLE ONLY AGAINST A SNAPSHOT DESIGNATED CURRENT / VALID
-→ OTHERWISE PAUSED
-
-CURRENT EXTERNAL SOURCE PACKAGE
-→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
-
-RELEASE AUTHORITY
-→ GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1
 ```

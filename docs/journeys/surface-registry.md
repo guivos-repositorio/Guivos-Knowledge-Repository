@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.29.0
+version: 0.29.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 related:
@@ -112,7 +112,7 @@ A contagem de IDs permanece estrutural. Ela não implica que todos estejam mater
 | GKR-SURF-PER-302 | revisão de contratação da Pessoa | Pessoa/pagador autorizado | móvel/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-303 | gestão de downgrade e cancelamento da Pessoa | Pessoa titular | móvel/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-304 | resultado e recuperação de plano/cobrança da Pessoa | Pessoa titular | móvel/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-COL-001 | presença pública e entrada coletiva | visitante/responsável | público e protegido | parcial | presença pública corrente + topologia autenticada O/C | autoridade visual final pertence a Design | [Coletivo](surface-registry-collective-details.md) |
+| GKR-SURF-COL-001 | presença pública e entrada coletiva | visitante/responsável | público e protegido | parcial | GKR-UX-HOME-OC-MASTER-001; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` quando a entrada cruza para experiência autenticada; expressão pública final pertence a Design | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS` no recorte autenticado | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-002 | Visão Geral do Responsável | responsável | computador protegido | parcial / materialização local | UXA-014; UXA-059; UXA-100-A4 | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` como materialização principal low-fidelity; UXA-086/087 permanece evidência administrativa local | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS`; UXA-087 permanece validação local anterior | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-003 | gestão de solicitações | responsável | computador protegido | validado | UXA-056; UXA-059 | UXA-088/089 | UXA-089/090/092 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-004 | participantes e vínculos | responsável | protegido | programado | UXA-059 | — | — | [Coletivo](surface-registry-collective-details.md) |
@@ -124,7 +124,7 @@ A contagem de IDs permanece estrutural. Ela não implica que todos estejam mater
 | GKR-SURF-COL-302 | revisão de contratação do Coletivo | responsável financeiro autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-303 | gestão de downgrade e cancelamento do Coletivo | responsável autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-304 | resultado e recuperação de plano/cobrança do Coletivo | responsável autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Coletivo](surface-registry-collective-details.md) |
-| GKR-SURF-ORG-001 | Visão Geral da Organização | representante | protegido | low-fidelity validado / high-fidelity separado | autoridades autenticadas O/C correntes | Design governa materialização visual final | [Organização](surface-registry-organization-details.md) |
+| GKR-SURF-ORG-001 | Visão Geral da Organização | representante | protegido | low-fidelity validado / high-fidelity separado | GKR-UX-ORGCOL-AUTH-IA-001; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001; GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0`; materialização visual final pertence a Design | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS` | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-002 | cadastro de oportunidade | representante | protegido | validado | UXA-004 | UXA-008 | UXA-013 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-003 | oportunidade aprovada/ativa | representante | protegido | validado | UXA-004 | UXA-008 | UXA-013; integração UXA-098 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-004 | proposta de relação com Coletivo | representante | protegido | contratado | UXA-019 | — | — | [Organização](surface-registry-organization-details.md) |
