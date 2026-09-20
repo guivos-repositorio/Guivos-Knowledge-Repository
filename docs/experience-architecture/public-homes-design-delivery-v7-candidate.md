@@ -152,9 +152,9 @@ SOURCE PIN METHOD
 → NO V6 PIN REUSE BY INFERENCE
 ```
 
-## 5. Oito guias operacionais previstos para v7
+## 5. Oito guias operacionais realizados no v7
 
-Se a materialização for posteriormente autorizada, cada Home deverá receber exatamente um `00-LEIA-PRIMEIRO.md` contendo:
+A materialização autorizada criou exatamente um `00-LEIA-PRIMEIRO.md` por Home, contendo:
 
 1. nome da Home;
 2. objetivo do pacote;
@@ -173,9 +173,9 @@ Se a materialização for posteriormente autorizada, cada Home deverá receber e
 15. checklist de autoauditoria;
 16. declaração explícita de que nenhum Figma criado pelo GKR é referência.
 
-## 6. Estrutura externa candidata
+## 6. Estrutura externa realizada
 
-A estrutura prevista é:
+A estrutura materializada é:
 
 ```text
 GUIVOS-HOMES-DESIGN-HANDOFF-v7/
@@ -202,12 +202,12 @@ GUIVOS-HOMES-DESIGN-HANDOFF-v7/
 +
 8 READ-FIRST GUIDES
 =
-37 EXPECTED EXTERNAL FILES
+37 EXTERNAL FILES
 ```
 
-## 7. Revalidation gates before any materialization
+## 7. Revalidation gates satisfied before materialization
 
-A materialização v7 somente pode ser considerada após:
+A materialização v7 foi executada somente após a satisfação dos seguintes gates:
 
 - 29/29 fontes confirmadas;
 - path / ID / version / blob reconciliados;
@@ -271,7 +271,7 @@ MERGE COMMIT / MAIN
 POST-MERGE SOURCE PIN RECHECK
 → 29 / 29 EXACT MATCH
 
-delivery/design-handoff-v7
+delivery/design-handoff-v7 AT THAT REVALIDATION CHECKPOINT
 → NOT PRESENT
 
 OPEN REVIEW THREADS AT FINAL REVIEWED HEAD
