@@ -80,7 +80,7 @@ Para a produção externa de Design da Home Intelligence, o pacote específico d
 
 1. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001` — este Source Lock;
 2. `GKR-UX-HOME-INTELLIGENCE-MASTER-001` v0.2.9 — `docs/experience-architecture/public-home-intelligence-master-document.md`;
-3. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001` v0.2.3 — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
+3. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001` v0.2.4 — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 4. `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001` v1.0.1 — `docs/product-architecture/intelligence-product-source-lock.md`;
 5. `GPA-006` v2.0.1 — `docs/product-architecture/intelligence.md`;
 6. `GKR-UX-HOMES-OUTCOME-001` v1.0.0 — princípio transversal de resultado das Homes.

@@ -535,7 +535,7 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 | Interactive prototype authorization | **GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0** |
 | Interactive prototype execution | **EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0** |
 | Post-review prototype revalidation | **PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS** |
-| Current interactive Design reference | **DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0** |
+| Current interactive Design reference | **DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0** |
 | Final interactive conclusion | **POST-REVIEW REVALIDATION PASS** |
 | Next automatic execution | **NONE** |
 | Source Lock pós-validação | **NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE** |
