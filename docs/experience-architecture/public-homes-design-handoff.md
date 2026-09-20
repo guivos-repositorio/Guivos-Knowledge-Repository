@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.6.4
+version: 1.6.5
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -71,7 +71,7 @@ OPERATIONAL EXECUTION
 → OTHERWISE PAUSED
 ```
 
-O ato humano de Design Production Release permanece concedido, mas as condições cumulativas de execução não estão atualmente satisfeitas porque não existe pacote externo corrente válido. O v6 foi congelado como histórico após findings pós-emissão; nova execução depende de nova emissão/revalidação governada e de Source Locks operacionais derivados desse novo pacote.
+O ato humano de Design Production Release permanece concedido. A existência, identidade e validade do pacote externo corrente são determinadas exclusivamente por `GKR-UX-HOMES-DESIGN-DELIVERY-001` + `GKR-STATE-001` no momento do consumo. Esta autoridade comum não fixa `NONE`, versão de snapshot corrente nem estado transitório de emissão.
 
 ### 0.1 Liberdade criativa protegida
 
@@ -165,7 +165,7 @@ A execução somente fica liberada quando coexistirem:
 3. gates de validação sem finding material aberto;
 4. ato humano explícito de `DESIGN PRODUCTION RELEASE = GRANTED`.
 
-Neste estado, o item 1 não está satisfeito. Portanto, a execução operacional permanece pausada. Quando uma nova emissão válida fechar novamente as quatro condições, poderão ser executados:
+Quando as quatro condições estiverem satisfeitas segundo o Manifesto + Current State vigentes, poderão ser executados:
 
 - criação manual pela designer e, opcionalmente, exploração assistida por IA;
 - arquitetura visual;
