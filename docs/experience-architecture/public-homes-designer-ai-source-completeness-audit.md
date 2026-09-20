@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.4.10
+version: 0.4.11
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -610,6 +610,21 @@ CURRENT AUTHORIZED PACKAGE
 ```
 
 A correção mantém o Source Lock como autoridade de pin exato e não altera o conteúdo semântico, o v5 histórico, a liberdade criativa da designer ou os gates de implementação/publicação.
+
+## 9.12 Review automático pós-Ready no HEAD `9bc9dd36a817201b24b77c29c4554326276a069a` — um P2 de rotulagem interna
+
+A transição para Ready for Review disparou novo review automático no mesmo HEAD e revelou um resíduo estritamente interno no Operational Flow:
+
+```text
+P2 — OPERATIONAL FLOW INTERNAL VERSION LABEL
+→ REMEDIATED
+→ FRONTMATTER = v3.0.1
+→ V6 CANDIDATE PIN = v3.0.1
+→ INTERNAL STATE LABEL = v3.0.1
+→ NO SEMANTIC / PACKAGE-COMPOSITION CHANGE
+```
+
+A correção apenas faz o bloco de estado refletir a revisão `v3.0.1` que já era a revisão declarada e incluída no pacote. Não cria nova autoridade, não altera a composição 29 + 8 = 37 e não modifica os boundaries de Design, IA, snapshot ou Product Engineering.
 
 ## 10. Remediações aplicadas
 
