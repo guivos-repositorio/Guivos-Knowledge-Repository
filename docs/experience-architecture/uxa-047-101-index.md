@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.49.3
+version: 3.49.4
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-20
 depends_on:
