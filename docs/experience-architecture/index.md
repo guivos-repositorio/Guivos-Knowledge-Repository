@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.4
+version: 1.19.5
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 related:
   - PAS-001
   - PAS-001-DOMAIN-MODEL-001
@@ -317,3 +317,5 @@ A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. 
 [GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001](public-homes-design-delivery-v6-candidate.md) preserva a definição candidata que foi realizada sem mudança de composição.
 
 [GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001](public-homes-design-delivery-v6-snapshot-record.md) registra o snapshot v6 em `delivery/design-handoff-v6`: 29 fontes canônicas + oito guias = 37 arquivos e 29/29 blobs preservados. O snapshot permanece congelado como proveniência histórica, mas o P1 pós-emissão no Operational Flow v3.0.1 o torna inválido para nova execução. `CURRENT EXTERNAL SOURCE PACKAGE = NONE` até nova emissão/revalidação.
+
+[GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001](public-homes-design-delivery-v7-candidate.md) registra a preparação documental do candidato v7 sobre o `main` pós-PR #403, com 29/29 fontes recalculadas, sem materializar `delivery/design-handoff-v7` e sem alterar `CURRENT EXTERNAL SOURCE PACKAGE = NONE`.
