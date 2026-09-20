@@ -1357,13 +1357,13 @@ Esta matriz **não autoriza remoção automática das fontes**. A remoção fís
 - [Benchmark e diferenciação](public-home-benchmark-and-differentiation-evidence.md)
 - [Comparativo de Hero](public-home-guivos-vs-global-hero-comparative.md)
 
-O fechamento da auditoria integral manteve esses documentos no corpus. Qualquer futura remoção poderá ocorrer **somente após absorção integral comprovada, análise de função atual, referências e evidência**, sob gate separado.
+Os documentos listados acima permanecem no corpus apenas enquanto exercem função corrente de aprofundamento, contrato ou evidência. Qualquer remoção exige absorção integral comprovada e ausência de dependência vigente.
 
 ---
 
-## 37. Regra sobre Source Locks e Design deliveries anteriores
+## 37. Regra sobre artefatos de entrega fora do conjunto corrente
 
-Source Locks e snapshots de Design anteriores são dependentes do checkpoint em que foram emitidos.
+Artefatos de entrega que não pertencem ao conjunto canônico corrente não exercem autoridade operacional sobre esta Home.
 
 ```text
 SOURCE LOCK ANTIGO

@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.48.1
+id: ROADMAP-13.48.2
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.48.1
+version: 13.48.2
 owner: Guivos
 last_updated: 2026-09-20
 normative: true
@@ -158,7 +158,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | O/C wireframes low-fidelity | **AUTHORIZATION GRANTED / DELIVERY v0.1.0 EXECUTED / VALIDATION v1.0.0 PASS / CURRENT REFERENCE = DELIVERY + VALIDATION** |
 | O/C high-fidelity eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0 / AUTHORIZATION NOT_GRANTED** |
 | GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION** |
-| Design das Homes públicas | **DESIGNER-FIRST / DESIGN PRODUCTION RELEASE GRANTED / V6 FROZEN + INVALID FOR NEW EXECUTION / REISSUE REQUIRED / AI OPTIONAL** |
+| Design das Homes públicas | **DESIGNER-FIRST / DESIGN PRODUCTION RELEASE GRANTED / CURRENT MAIN + CURRENT MANIFEST / SNAPSHOT NOT REQUIRED / AI OPTIONAL** |
 | O/C autenticado high-fidelity | **ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED / SEPARATE GOVERNED GATE** |
 
 Inventário físico corrente após F-016-A:

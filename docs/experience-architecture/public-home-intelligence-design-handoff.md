@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
 title: Handoff Canônico para Design — Home Pública — Guivos Intelligence
 status: active
-version: 1.1.10
+version: 1.1.11
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
@@ -67,7 +67,7 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
 → normative: true
 ```
 
-O Handoff preserva essa proveniência, mas seu consumo corrente é reconciliado pelas autoridades posteriores e pelo candidato v6.
+O Handoff preserva essa proveniência apenas no Git. Seu consumo corrente é resolvido pelo `main` e pelo Manifesto canônico vigente, sem dependência de candidate ou snapshot.
 
 ## 3. Cadeia de autoridade
 
@@ -75,11 +75,11 @@ Para Design, aplicar a seguinte ordem:
 
 ```text
 NÍVEL 0
-GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9
+GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9
 → governa narrativa pública, copy e fronteiras da Home
 
 NÍVEL 2
@@ -547,9 +547,9 @@ Qualquer futura proposta de wireframe, UI ou protótipo deve ser rejeitada ou co
 O Handoff específico é consumido dentro do contrato comum das oito Homes.
 
 ```text
-HOME SOURCE LOCK
+CURRENT MANIFEST + CURRENT MAIN
+→ HOME SOURCE LOCK
 → HANDOFF ESPECÍFICO
-→ PACOTE V6 DA HOME
 → DESIGNER HUMANA COMO AUTORA CRIATIVA
 → IA OPCIONAL SOB CONTROLE DA DESIGNER
 ```

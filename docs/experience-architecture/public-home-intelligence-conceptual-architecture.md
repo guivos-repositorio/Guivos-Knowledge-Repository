@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
 title: Home Pública — Guivos Intelligence v1 — Arquitetura Conceitual — Movimentos 1–11
 status: draft
-version: 0.2.3
+version: 0.2.4
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 depends_on:
   - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -64,23 +64,23 @@ HOME INTELLIGENCE v1
 → 11 MOVIMENTOS CONVERGIDOS
 
 ARQUITETURA NARRATIVA
-→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
+→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4
 → CURRENT NARRATIVE REFERENCE
 
 DOCUMENTO MESTRE DA HOME
 → GKR-UX-HOME-INTELLIGENCE-MASTER-001
 → EXISTS / CURRENT
-→ EXACT CURRENT VERSION PINNED BY V6 CANDIDATE
+→ CURRENT VERSION DECLARED BY CURRENT MANIFEST
 
 SOURCE LOCK DA HOME
 → GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 → EXISTS / ACTIVE / NORMATIVE
-→ EXACT CURRENT VERSION PINNED BY V6 CANDIDATE
+→ CURRENT VERSION DECLARED BY CURRENT MANIFEST
 
 DESIGN HANDOFF
 → GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
 → EXISTS / ACTIVE
-→ EXACT CURRENT VERSION PINNED BY V6 CANDIDATE
+→ CURRENT VERSION DECLARED BY CURRENT MANIFEST
 
 EXTERNAL DESIGN RELEASE
 → GRANTED BY COMMON AUTHORITY
@@ -884,18 +884,18 @@ O Movimento 11 cumpre a função de fechamento aspiracional da narrativa sem int
 
 A síntese governada desta arquitetura é consolidada atualmente em:
 
-`GKR-UX-HOME-INTELLIGENCE-MASTER-001`, na revisão corrente pinada pelo candidato v6
+`GKR-UX-HOME-INTELLIGENCE-MASTER-001`, na revisão corrente declarada pelo Manifesto vigente
 
 O Documento Mestre não substitui `GPA-006` nem o Product Source Lock. Ele organiza a tradução da autoridade do produto para a Home Pública.
 
 ## 36. Estado corrente de progressão
 
-O fluxo pré-Home que originalmente sucedia esta arquitetura foi concluído por autoridades posteriores. Ele não deve ser reexecutado por quem consumir esta Narrative no pacote v6.
+O fluxo pré-Home que originalmente sucedia esta arquitetura foi concluído por autoridades posteriores. Ele não deve ser reexecutado por quem consumir esta Narrative no conjunto canônico corrente.
 
 Estado vigente:
 
-- Home Source Lock → `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001` / existe / ativo / normativo / revisão corrente pinada pelo candidato v6;
-- Design Handoff → `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001` / existe / ativo / revisão corrente pinada pelo candidato v6;
+- Home Source Lock → `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001` / existe / ativo / normativo / revisão corrente declarada pelo Manifesto vigente;
+- Design Handoff → `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001` / existe / ativo / revisão corrente declarada pelo Manifesto vigente;
 - produção externa de Design → `GRANTED` pela autoridade comum;
 - designer → autora criativa;
 - IA → opcional e controlada pela designer;

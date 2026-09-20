@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.6
+version: 1.1.7
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
 depends_on:
   - GKR-UX-HOME-BUSINESS-MASTER-001
@@ -62,7 +62,7 @@ RECONCILIATION
 → CURRENT DESIGNER-FIRST / AI-OPTIONAL CONTRACT APPLIES
 
 DOCUMENTO MESTRE
-GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3
+GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4
 
 CONVERSÃO VIGENTE
 GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0
@@ -765,11 +765,11 @@ A produção externa de Design deve sinalizar essas lacunas quando materialmente
 O regime corrente das oito Homes é governado pelas autoridades comuns posteriores a este Source Lock histórico:
 
 ```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.2
+GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.1
 → DESIGNER-FIRST
 → 8 / 8 HOMES
 
-GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
+GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.1
 → DESIGN PRODUCTION RELEASE = GRANTED
 → EXTERNAL DESIGNER PRODUCTION
 
@@ -785,18 +785,34 @@ PRODUCT ENGINEERING
 
 Este Source Lock não concede sozinho Design Release nem implementação. Ele funciona como fonte semântica do Business dentro do pacote comum vigente e deve ser consumido em conjunto com as autoridades comuns atuais.
 
-## 28. Pacote corrente de handoff do Business
+## 28. Conjunto corrente de fontes do Business
 
-No candidato v6, o conjunto específico do Business deve usar:
+O consumo corrente da Home Business é resolvido pelo Manifesto canônico vigente no `main`.
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.2` como autoridade comum de handoff;
-2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — versão exata fixada pelo candidato/snapshot;
-3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3`;
+Usar:
+
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.1` como autoridade comum de handoff;
+2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.7`;
+3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
 5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3`;
-6. `GPA-004 v1.6.0` ou autoridade posterior vigente.
+6. `GPA-004 v1.6.0`.
 
-O pacote poderá ser reduzido somente se uma autoridade posterior consolidar explicitamente as mesmas fronteiras.
+```text
+SOURCE OF TRUTH
+→ CURRENT MAIN
+
+AUTHORIZED WHITELIST
+→ CURRENT MANIFEST
+
+SNAPSHOT / CANDIDATE
+→ NOT REQUIRED
+
+HISTORICAL PACKAGE
+→ NOT OPERATIONAL INPUT
+```
+
+O conjunto somente pode ser reduzido se uma autoridade posterior absorver explicitamente as mesmas fronteiras sem perda semântica.
 
 ## 29. Autoauditoria do Source Lock
 
@@ -845,25 +861,37 @@ exige nova decisão explícita e atualização governada do Source Lock ou autor
 
 Design não pode alterar esses elementos por preferência estética.
 
-## 31. Próxima etapa
+## 31. Estado procedimental corrente
 
-Este Source Lock está reconciliado como fonte do **candidato v6**. O próximo ponto governado não é criar Design dentro do GKR, e sim concluir os gates globais do pacote:
+Este Source Lock integra o conjunto canônico corrente da Home Business.
 
 ```text
-V6 CANDIDATE
-→ EXACT-HEAD VALIDATION
-→ INDEPENDENT REVIEW
-→ ADJUDICATION
-→ SNAPSHOT EMISSION ONLY AFTER GOVERNED AUTHORIZATION
+CURRENT MAIN
+→ PRIMARY SOURCE OF TRUTH
+
+CURRENT MANIFEST
+→ RESOLVES AUTHORIZED VERSIONS
+
+DESIGN PRODUCTION RELEASE
+→ GRANTED
 
 DESIGNER
-→ CREATES EXTERNALLY WITH FULL CREATIVE FREEDOM WITHIN THE CONTRACT
+→ CREATIVE AUTHOR
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+SNAPSHOT / CANDIDATE / REISSUE
+→ NOT A PRECONDITION
 
 GKR
 → DOES NOT CREATE OR ADVANCE DESIGN FILES
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
 ```
 
-A emissão do snapshot v6 e qualquer avanço posterior continuam sujeitos às autoridades comuns e aos gates globais da frente.
+Qualquer alteração semântica futura deve atualizar esta autoridade ou autoridade superior existente; não exige criar novo snapshot por padrão.
 
 ## 32. Síntese
 
