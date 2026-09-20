@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-ADS-MASTER-001
 title: Home Pública — Guivos Ads — Documento Mestre
 status: draft
-version: 1.0.1
+version: 1.0.2
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-007
@@ -96,6 +96,23 @@ A elegibilidade depende também de pertinência contextual, política aplicável
 ## 4. Arquitetura narrativa — 7 movimentos
 
 Os sete movimentos governam a progressão semântica da Home, mas **não obrigam sete blocos visuais independentes**.
+
+
+### Quadro de consulta rápida — significado e função
+
+Este quadro sintetiza, para consulta humana e consumo por sistemas de IA, o significado e a função dos movimentos já definidos neste Documento Mestre. Ele **não substitui, reduz nem altera** o detalhamento, os guardrails, exemplos, evidências ou demais autoridades das seções correspondentes. Os movimentos representam **funções de significado e progressão narrativa**, não obrigação de igual número de seções, blocos ou componentes visuais.
+
+| # | Movimento | O que significa | Função principal |
+|---:|---|---|---|
+| 01 | Abrir a oportunidade comercial | Mostrar imediatamente que uma marca pode estar presente em contextos compatíveis dentro da Guivos. | Explicar o valor do Ads antes de formatos técnicos, métricas ou linguagem adtech. |
+| 02 | Mostrar que contextos diferentes criam oportunidades diferentes | Explicar que Mall, Travel, Media, Journey e outras superfícies possuem contextos próprios e, por isso, oportunidades publicitárias distintas. | Introduzir inventário contextual sem transformar todas as superfícies em espaço publicitário. |
+| 03 | Organizar soluções pelo objetivo da marca | Começar pelo que o anunciante pretende alcançar — presença, oferta, história, oportunidade ou ativação. | Fazer objetivo orientar solução e evitar que formatos técnicos organizem a Home. |
+| 04 | Tornar concretas as superfícies onde a marca pode estar | Demonstrar como publicidade pode aparecer em contextos autorizados do ecossistema. | Dar concretude comercial preservando a autoridade de Mall, Travel, Media, Journey e demais superfícies anfitriãs. |
+| 05 | Apresentar formatos sem transformar formato em arquitetura | Mostrar banner, destaque, patrocínio, boost, ativação e outros formatos como meios possíveis. | Preservar a sequência objetivo → solução → formato. |
+| 06 | Explicar como a publicidade respeita o contexto | Mostrar que publicidade legítima depende de pertinência, transparência, separação, autoridade, privacidade e mensuração responsável. | Construir confiança e impedir que pagamento seja confundido com relevância, recomendação ou qualidade. |
+| 07 | Converter interesse por meio de qualificação inteligente | Conduzir um anunciante interessado para uma experiência progressiva de compreensão e qualificação. | Converter interesse comercial sem depender de formulário longo, contratação automática ou promessa não validada. |
+
+Exemplos permanecem nas seções detalhadas correspondentes para não transformar ilustrações em prescrição visual.
 
 ### 01 — Abrir a oportunidade comercial
 
