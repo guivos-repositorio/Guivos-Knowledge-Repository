@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001
 title: Homes Públicas — Pacote v8 Candidato para Reemissão e Revalidação
 status: draft
-version: 0.2.1
+version: 0.2.2
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: false
-maturity: reissue_candidate_revalidated_materialization_decision_pending
+maturity: substantive_revalidation_pass_final_head_validation_external_gate
 depends_on:
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -214,7 +214,7 @@ A materialização v8 somente poderá ser considerada após:
 - zero finding material aberto;
 - decisão humana separada autorizando materialização.
 
-## 7. Evidência de revalidação
+## 7. Evidência de revalidação substantiva
 
 A primeira revalidação integral do candidato v8 foi concluída no HEAD exato `539b9b9503e09863cb421e2432fca3fca40871f7`.
 
@@ -245,8 +245,14 @@ INDEPENDENT CODEX REVIEW
 OPEN REVIEW THREADS
 → 0
 
-REVALIDATION RESULT
+SUBSTANTIVE REVALIDATION RESULT
 → PASS
+→ EVIDENCE HEAD 539b9b9503e09863cb421e2432fca3fca40871f7
+
+FINAL DOCUMENTARY HEAD VALIDATION
+→ EXTERNAL PR GATE
+→ STATUS MUST NOT BE SELF-ASSERTED INSIDE THIS FILE
+→ READ FROM PR #408 EXACT-HEAD GATES / REVIEW EVIDENCE
 
 CURRENT EXTERNAL SOURCE PACKAGE
 → NONE
@@ -284,10 +290,11 @@ delivery/design-handoff-v8
 
 ```text
 V8 CANDIDATE
-→ PREPARED / REVALIDATED
+→ PREPARED
 → NON-NORMATIVE
 → 29 / 29 SOURCE PINS RECALCULATED
-→ REVALIDATION PASS
+→ SUBSTANTIVE REVALIDATION PASS
+→ FINAL DOCUMENTARY HEAD VALIDATION = EXTERNAL PR GATE / NOT SELF-ASSERTED HERE
 → MATERIALIZATION DECISION PENDING
 
 CURRENT EXTERNAL SOURCE PACKAGE
