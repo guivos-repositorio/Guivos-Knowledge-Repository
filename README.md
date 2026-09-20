@@ -180,7 +180,6 @@ ORGANIZAÇÃO
 - [PER-002 — Elegibilidade Pós-Validação para Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-eligibility.md)
 - [PER-002 — Autorização Governada de Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-authorization.md)
 - [PER-002 — Entrega do Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-delivery.md)
-- [PER-002 — Validação Pré-Review do Protótipo Interativo — Evidência Histórica](docs/experience-architecture/per-002-interactive-prototype-validation.md)
 - [PER-002 — Revalidação Pós-Review do Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-post-review-revalidation.md)
 - [O/C — Autorização Governada de Wireframes Low-Fidelity](docs/experience-architecture/organizations-collectives-authenticated-wireframe-authorization.md)
 - [O/C — Entrega de Wireframes Autenticados Low-Fidelity](docs/experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md)
@@ -258,7 +257,7 @@ As equipes não recebem cópias próprias de autoridades. Elas entram no mesmo c
 | Publicidade / Ads | Arquitetura de Produtos · Modelo Econômico · Go-to-Market |
 | Comercial | Estratégia de Negócio · Produtos · Economia · GTM |
 | Produto | Arquitetura de Produtos · Experience Architecture · Jornadas |
-| UX / Design | Experience Architecture · Jornadas · PER-002 Handoff · Design Authorization · Design Delivery · Functional Validation · High-Fidelity Eligibility · High-Fidelity Authorization · High-Fidelity Delivery · High-Fidelity Validation · Prototype Eligibility · Prototype Authorization · Prototype Delivery · Historical Prototype Validation · Post-Review Prototype Revalidation · Estado Atual |
+| UX / Design | Experience Architecture · Jornadas · PER-002 Handoff · Design Authorization · Design Delivery · Functional Validation · High-Fidelity Eligibility · High-Fidelity Authorization · High-Fidelity Delivery · High-Fidelity Validation · Prototype Eligibility · Prototype Authorization · Prototype Delivery · Post-Review Prototype Revalidation · Estado Atual |
 | Desenvolvimento | Produtos · Experience Architecture · Arquitetura Corporativa |
 | Dados / Intelligence | Intelligence · Arquitetura Corporativa · Research |
 | Research | Research · RP-001 · RP-002 · Privacidade |
