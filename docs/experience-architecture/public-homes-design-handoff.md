@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.7.0
+version: 1.7.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -48,7 +48,8 @@ SOURCE OF TRUTH
 → CURRENT CANONICAL MAIN
 
 CURRENT CHECKPOINT
-→ 389caab7f80c800185c97025398c684a6f11e450
+→ CURRENT MAIN
+→ RESOLVED AT CONSUMPTION TIME
 
 DESIGN PRODUCTION READINESS
 → ACTIVE
