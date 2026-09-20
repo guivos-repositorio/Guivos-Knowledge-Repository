@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-UX-STATE-001
 title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.11.0
+version: 1.12.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-20
 normative: false
 related:
   - GKR-UX-ORGCOL-STATE-001
@@ -19,6 +19,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - UXA-014
   - UXA-019
 ---
@@ -29,7 +30,7 @@ related:
 
 O estado vigente é:
 
-> **A primeira entrega low-fidelity de Organização e Coletivo foi executada e validada com `PASS`. A elegibilidade high-fidelity posterior também concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0`; a autorização high-fidelity permanece `NOT_GRANTED`.**
+> **A primeira entrega low-fidelity de Organização e Coletivo foi executada e validada com `PASS`. A elegibilidade high-fidelity posterior concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0`; a autorização high-fidelity foi concedida por `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`, enquanto a execução permanece `NOT_STARTED`.**
 
 A entrega corrente materializa em baixa fidelidade a visão geral/início de Organização e Coletivo, a hierarquia funcional, variantes de atenção, autoridade, proteção, troca de contexto e indisponibilidade. Permanecem deliberadamente não definidos: UI final, componentes finais, visual high-fidelity, protótipo navegável, implementação e testes de usabilidade.
 
@@ -210,8 +211,9 @@ São superfícies e problemas distintos.
 | wireframe low-fidelity | **DELIVERY v0.1.0 + VALIDATION v1.0.0** | **DELIVERY v0.1.0 + VALIDATION v1.0.0** |
 | validação de wireframe | **PASS** | **PASS** |
 | high-fidelity eligibility | **PASS** | **PASS** |
-| high-fidelity design authorization | **NOT_GRANTED** | **NOT_GRANTED** |
-| UI | pendente | pendente |
+| high-fidelity design authorization | **GRANTED** | **GRANTED** |
+| high-fidelity design execution | **AUTHORIZED / NOT_STARTED** | **AUTHORIZED / NOT_STARTED** |
+| UI | pendente de execução high-fidelity | pendente de execução high-fidelity |
 | protótipo | pendente | pendente |
 | testes de usabilidade | pendente | pendente |
 | handoff técnico | pendente | pendente |

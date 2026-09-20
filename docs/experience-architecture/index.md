@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.15
+version: 1.19.16
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 related:
@@ -53,6 +53,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - M7.88
@@ -220,8 +221,8 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 |---|---|
 | Jornadas Integradas | `active` 0.48.0; Jobs + IA + Surface Map + State Map + Priority Flows + Navigation Materialization O/C reconciliados |
 | Jornada da Pessoa | `draft`; PER-010..012 validados localmente; TRN-008..013 integrais |
-| Jornada do Coletivo | `draft` 0.23.0; low-fidelity validado; high-fidelity eligibility `PASS`; autorização high-fidelity não concedida |
-| Jornada da Organização | `draft` 0.16.0; low-fidelity validado; high-fidelity eligibility `PASS`; autorização high-fidelity não concedida |
+| Jornada do Coletivo | `draft` 0.23.0; low-fidelity validado; high-fidelity eligibility `PASS`; autorização high-fidelity `GRANTED`; execução `NOT_STARTED` |
+| Jornada da Organização | `draft` 0.16.0; low-fidelity validado; high-fidelity eligibility `PASS`; autorização high-fidelity `GRANTED`; execução `NOT_STARTED` |
 | atores, autoridades e jobs autenticados O/C | `GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.0`; **ACTIVE / DEFINED** |
 | Arquitetura da Informação autenticada O/C | `GKR-UX-ORGCOL-AUTH-IA-001 v1.3.0`; **ACTIVE / DEFINED PRE-SURFACE-MAP** |
 | mapa lógico autenticado O/C | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`; **DEFINED / CANONICAL DOCUMENTARY** |
@@ -234,10 +235,11 @@ As seis ficam **integralmente validadas no limite documental**. A primeira varia
 | validação funcional low-fidelity O/C | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`; **PASS / 0 MATERIAL FINDINGS** |
 | referência visual low-fidelity corrente O/C | **DELIVERY v0.1.0 + VALIDATION v1.0.0** |
 | elegibilidade high-fidelity O/C | `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0`; **PASS / PRE-AUTHORIZATION** |
-| autorização high-fidelity O/C | **NOT_GRANTED / REQUIRES SEPARATE HUMAN ACT** |
+| autorização high-fidelity O/C | `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`; **GRANTED / ACTIVE / NORMATIVE** |
+| execução high-fidelity O/C | **AUTHORIZED / NOT_STARTED / REQUIRES SEPARATE EXECUTION ACT** |
 | catálogo integrado | `active` 0.37.0; **0 SVGs físicos após F-016-A**; maturidade funcional preservada por autoridades textuais |
 | proveniência visual histórica | documentos de galeria/matriz removidos do corpus corrente; recuperáveis no histórico Git; sem autoridade visual |
-| lacunas | `active` 0.37.0; ciclo low-fidelity O/C fechado; high-fidelity eligibility = PASS; autorização high-fidelity permanece não concedida |
+| lacunas | `active` 0.37.0; ciclo low-fidelity O/C fechado; high-fidelity eligibility = PASS; autorização high-fidelity = GRANTED; execução = NOT_STARTED |
 | registro de superfícies | `active` 0.26.0; 57 IDs; maturidade por item; crosswalk O/C sem promoção automática |
 | registro de transições | `active`; 66 transições; State Map não promove maturidade por inferência |
 | detalhamento da Pessoa | `active`; PER-008 recorrente e PER-010..012 com continuidade D5-C validada |
@@ -292,7 +294,8 @@ V1 — encerrada pela UXA-097
 → O/C Low-Fidelity Functional Validation — PASS / v1.0.0
 → O/C Current Low-Fidelity Reference — DELIVERY v0.1.0 + VALIDATION v1.0.0
 → O/C High-Fidelity Eligibility — PASS / v1.0.0
-→ O/C High-Fidelity Design Authorization — NOT_GRANTED
+→ O/C High-Fidelity Design Authorization — GRANTED / v1.0.0
+→ O/C High-Fidelity Design Execution — AUTHORIZED / NOT_STARTED
 → V5 — pendente e não iniciada
 ```
 
@@ -300,7 +303,7 @@ D5-A/B/C1/C2/C3/C4A/C4B e a frente documental O/C não consomem nem antecipam V5
 
 ## 11. Próxima evolução possível
 
-A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o **Surface Map lógico-documental canônico** e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` define o **State Map funcional canônico documental**. Os **Priority Flows** estão definidos documentalmente em `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`; a elegibilidade de Navigation Materialization está `PASS` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0`; e a própria Navigation Materialization está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os Authenticated Wireframes low-fidelity foram autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O pacote Delivery + Validation é a referência corrente low-fidelity O/C. A adjudicação `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0` conclui `PASS`; o próximo gate possível é somente uma decisão humana separada de autorização high-fidelity. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
+A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o **Surface Map lógico-documental canônico** e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` define o **State Map funcional canônico documental**. Os **Priority Flows** estão definidos documentalmente em `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`; a elegibilidade de Navigation Materialization está `PASS` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0`; e a própria Navigation Materialization está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os Authenticated Wireframes low-fidelity foram autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O pacote Delivery + Validation é a referência corrente low-fidelity O/C. A adjudicação `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0` conclui `PASS`, e `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0` registra `GRANTED`; a execução high-fidelity permanece um ato separado, autorizado e ainda `NOT_STARTED`. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
 
 ### Public Homes — Design Handoff v5 Snapshot
 

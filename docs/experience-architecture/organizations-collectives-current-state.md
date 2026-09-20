@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.10.0
+version: 1.11.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-20
 normative: false
 related:
   - UXA-014
@@ -20,6 +20,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
@@ -73,8 +74,9 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | validação de wireframe da Organização | **PASS / 0 findings materiais** | concluída |
 | validação de wireframe do Coletivo | **PASS / 0 findings materiais** | concluída |
 | elegibilidade high-fidelity O/C | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0** | concluída |
-| autorização high-fidelity O/C | **NOT_GRANTED** | pendente de ato humano separado |
-| UI / protótipo autenticado | não definido | pendente |
+| autorização high-fidelity O/C | **GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0** | concluída |
+| execução high-fidelity O/C | **AUTHORIZED / NOT_STARTED** | requer ato de execução separado |
+| UI / protótipo autenticado | high-fidelity não executado; protótipo não autorizado | pendente |
 | Engenharia da experiência autenticada | não autorizada a partir de wireframe | pendente |
 
 A existência de Jobs, Arquitetura da Informação, mapa lógico de superfícies e mapa funcional de estados não promove automaticamente fluxos, sitemap técnico, menu visual, wireframe, UI, RBAC técnico ou implementação.
@@ -434,8 +436,9 @@ Este commit **não autoriza nem materializa** a continuação. Permanecem delibe
 ```text
 Authenticated Wireframes / low-fidelity — DELIVERY + VALIDATION PASS
 → high-fidelity eligibility — PASS / v1.0.0
-→ high-fidelity design authorization — NOT_GRANTED / NEXT POSSIBLE HUMAN GATE
-→ UI high-fidelity — NOT AUTHORIZED
+→ high-fidelity design authorization — GRANTED / v1.0.0
+→ high-fidelity design execution — AUTHORIZED / NOT_STARTED / NEXT POSSIBLE HUMAN GATE
+→ interactive prototype — NOT AUTHORIZED
 → protótipo
 → testes
 → handoff técnico

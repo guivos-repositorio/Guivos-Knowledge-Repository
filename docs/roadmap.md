@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.31
+id: ROADMAP-13.47.32
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.31
+version: 13.47.32
 owner: Guivos
 last_updated: 2026-09-20
 normative: true
@@ -46,6 +46,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - GKR-GLOBAL-UPDATE-2026-09-18-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-OC-NARR-001
@@ -74,7 +75,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.44.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.48.35` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -170,10 +171,12 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | O/C elegibilidade de Navigation Materialization | **PASS / ACTIVE / CANONICAL / GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0** |
 | O/C Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0** |
 | O/C wireframes low-fidelity | **AUTHORIZATION GRANTED / DELIVERY v0.1.0 EXECUTED / VALIDATION v1.0.0 PASS / CURRENT REFERENCE = DELIVERY + VALIDATION** |
-| O/C high-fidelity eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0 / AUTHORIZATION NOT_GRANTED** |
+| O/C high-fidelity eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0** |
+| O/C high-fidelity authorization | **GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0** |
+| O/C high-fidelity execution | **AUTHORIZED / NOT_STARTED** |
 | GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION** |
 | Design das Homes públicas | **DESIGNER-FIRST / DESIGN PRODUCTION RELEASE GRANTED / V6 FROZEN + INVALID FOR NEW EXECUTION / REISSUE REQUIRED / AI OPTIONAL** |
-| O/C autenticado high-fidelity | **ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED / SEPARATE GOVERNED GATE** |
+| O/C autenticado high-fidelity | **ELIGIBILITY PASS / AUTHORIZATION GRANTED / EXECUTION NOT_STARTED / SEPARATE EXECUTION GATE** |
 
 Inventário físico corrente após F-016-A:
 
@@ -765,9 +768,12 @@ O/C HIGH-FIDELITY ELIGIBILITY
 → PASS
 
 O/C HIGH-FIDELITY DESIGN AUTHORIZATION
-→ NOT_GRANTED
+→ GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
 
-HIGH-FIDELITY UI / PROTOTYPE
+O/C HIGH-FIDELITY DESIGN EXECUTION
+→ AUTHORIZED / NOT_STARTED
+
+INTERACTIVE PROTOTYPE
 → NOT AUTHORIZED
 
 PRODUCT ENGINEERING
@@ -777,7 +783,7 @@ PRODUCT ENGINEERING
 
 `UXA-015..018` e os dois SVGs associados foram removidos pelo cleanup governado F-006 após absorção e validação. Esse cleanup histórico não definiu as autoridades posteriores. As definições subsequentes ocorreram por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001` e, depois, `GKR-UX-ORGCOL-AUTH-NAV-MAT-001`, sem reativar artefatos removidos, criar/promover transições por inferência ou iniciar wireframes/Design.
 
-A elegibilidade de **Navigation Materialization** foi promovida como `PASS` e a materialização documental foi posteriormente autorizada, executada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os **Authenticated Wireframes low-fidelity** foram posteriormente autorizados, entregues e funcionalmente validados com `PASS`. A adjudicação de **high-fidelity eligibility** também concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0`; a autorização high-fidelity permanece separada e `NOT_GRANTED`.
+A elegibilidade de **Navigation Materialization** foi promovida como `PASS` e a materialização documental foi posteriormente autorizada, executada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os **Authenticated Wireframes low-fidelity** foram posteriormente autorizados, entregues e funcionalmente validados com `PASS`. A adjudicação de **high-fidelity eligibility** concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0`; a autorização humana subsequente está `GRANTED` em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`, enquanto a execução high-fidelity permanece `NOT_STARTED`.
 
 ## 13. Lote I — Registries, catálogos e materializações
 
@@ -1858,7 +1864,7 @@ RESEARCH OPERATIONAL STATES
 → PMF = NOT VALIDATED
 ```
 
-`GIA-COG-002..008`, `UXA-102/V5`, high-fidelity UI/protótipo O/C, Product Engineering, PMF, implementação, produção e testes com participantes reais permanecem não iniciados ou não autorizados. A cadeia low-fidelity O/C está fechada em Delivery v0.1.0 + Validation v1.0.0 = PASS e a elegibilidade high-fidelity está `PASS`. O próximo gate possível é somente uma decisão humana explícita de autorização high-fidelity O/C.
+`GIA-COG-002..008`, `UXA-102/V5`, protótipo O/C, Product Engineering, PMF, implementação, produção e testes com participantes reais permanecem não iniciados ou não autorizados. A cadeia low-fidelity O/C está fechada em Delivery v0.1.0 + Validation v1.0.0 = PASS, a elegibilidade high-fidelity está `PASS` e a autorização high-fidelity está `GRANTED`. O próximo gate possível é somente a execução governada high-fidelity O/C, ainda `NOT_STARTED`.
 
 ## 27. Home Masters — fechamento formal integrado e reconciliação pós-merge
 
@@ -1915,7 +1921,7 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
-Navigation Materialization foi promovida canonicamente após Surface Map + State Map + Priority Flows + eligibility PASS. Os Authenticated Wireframes low-fidelity foram posteriormente autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O ciclo low-fidelity está fechado; uma eventual frente high-fidelity depende primeiro de adjudicação própria de elegibilidade. High-fidelity UI, protótipo e Product Engineering continuam não autorizados.
+Navigation Materialization foi promovida canonicamente após Surface Map + State Map + Priority Flows + eligibility PASS. Os Authenticated Wireframes low-fidelity foram posteriormente autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O ciclo low-fidelity está fechado, a elegibilidade high-fidelity está `PASS` e a autorização high-fidelity está `GRANTED`; a execução high-fidelity permanece `NOT_STARTED`. Protótipo e Product Engineering continuam não autorizados.
 
 ## Public Homes — finalização das fontes para Designer e IA opcional
 
@@ -2050,7 +2056,8 @@ AI
 
 O/C HIGH-FIDELITY DESIGN
 → ELIGIBILITY PASS PRESERVED
-→ EXECUTION PAUSED / NOT AUTHORIZED
+→ AUTHORIZATION GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
+→ EXECUTION AUTHORIZED / NOT_STARTED
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED

@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.48.34
+version: 3.48.35
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-20
 depends_on:
@@ -19,6 +19,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
@@ -52,7 +53,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.48.33
+→ 3.48.35
 
 MARCO FUNCIONAL
 → M7.88
@@ -103,7 +104,13 @@ O/C LOW-FIDELITY FUNCTIONAL VALIDATION
 O/C HIGH-FIDELITY ELIGIBILITY
 → GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0
 → PASS
-→ HIGH-FIDELITY DESIGN AUTHORIZATION = NOT_GRANTED
+
+O/C HIGH-FIDELITY DESIGN AUTHORIZATION
+→ GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
+→ GRANTED
+
+O/C HIGH-FIDELITY DESIGN EXECUTION
+→ AUTHORIZED / NOT_STARTED
 
 BLOCO 2 — G / H / I
 → G COMPLETED / UPDATE_APPLIED
@@ -510,7 +517,9 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 | O/C Navigation Materialization Eligibility | **PASS / ACTIVE / CANONICAL / v1.0.0** |
 | O/C Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0** |
 | O/C Authenticated Wireframes | **DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS / CURRENT LOW-FIDELITY REFERENCE** |
-| O/C High-Fidelity Eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0 / AUTHORIZATION NOT_GRANTED** |
+| O/C High-Fidelity Eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0** |
+| O/C High-Fidelity Authorization | **GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0** |
+| O/C High-Fidelity Execution | **AUTHORIZED / NOT_STARTED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
 | Baseline final pós-auditoria | **CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a** |
 | Lotes concluídos | **A / B / C / D / E / F / G** |

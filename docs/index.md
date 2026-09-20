@@ -17,7 +17,7 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 A leitura de estado continua subordinada ao [Registro do Estado Atual](project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.48.34
+GKR-STATE-001 3.48.35
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -60,7 +60,8 @@ O/C LOW-FIDELITY WIREFRAME DELIVERY → EXECUTED / v0.1.0
 O/C LOW-FIDELITY FUNCTIONAL VALIDATION → PASS / v1.0.0
 O/C CURRENT LOW-FIDELITY REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
 O/C HIGH-FIDELITY ELIGIBILITY → PASS / v1.0.0
-O/C HIGH-FIDELITY DESIGN AUTHORIZATION → NOT_GRANTED
+O/C HIGH-FIDELITY DESIGN AUTHORIZATION → GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
+O/C HIGH-FIDELITY DESIGN EXECUTION → AUTHORIZED / NOT_STARTED
 PUBLIC HOMES DESIGN PRODUCTION READINESS → ACTIVE / DESIGN RELEASE GRANTED / VALID CURRENT PACKAGE REQUIRED
 PUBLIC HOMES DESIGN PRODUCTION RELEASE → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1 / EXECUTION REQUIRES VALID CURRENT PACKAGE
 PUBLIC HOMES SOURCE COMPLETENESS → PRE-EMISSION C1–C15 PASS / 8 OF 8 / 120 OF 120 / 3 POST-EMISSION P1s ADJUDICATED
@@ -72,7 +73,7 @@ PUBLIC HOMES V8 PACKAGE → EMITTED / MATERIALIZED / INTEGRITY-VALIDATED / FROZE
 PUBLIC HOMES CURRENT EXTERNAL SOURCE PACKAGE → V8 / delivery/design-handoff-v8 / d7eea909b1b5cb6266d7c4a725657ccd909f0e63
 VISUAL IDENTITY PRE-LOCK → NOT REQUIRED / DESIGN-OWNED
 GKR GLOBAL UPDATE → CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
-FUNCTIONAL ADVANCEMENT → HIGH-FIDELITY ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED
+FUNCTIONAL ADVANCEMENT → O/C HIGH-FIDELITY AUTHORIZATION GRANTED / EXECUTION NOT_STARTED
 NEXT AUTOMATIC EXECUTION → NONE
 SOURCE LOCK → NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
 UXA-102 / V5 → NOT_STARTED
@@ -186,6 +187,7 @@ ORGANIZAÇÃO
 - [O/C — Entrega de Wireframes Autenticados Low-Fidelity](experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md)
 - [O/C — Validação Funcional dos Wireframes Autenticados Low-Fidelity](experience-architecture/organizations-collectives-authenticated-low-fidelity-functional-validation.md)
 - [O/C — Elegibilidade Pós-Validação para Design High-Fidelity](experience-architecture/organizations-collectives-authenticated-high-fidelity-eligibility.md)
+- [O/C — Autorização Governada de Design High-Fidelity](experience-architecture/organizations-collectives-authenticated-high-fidelity-authorization.md)
 
 A navegação do repositório não deve ser confundida com a arquitetura de informação de produto, Journey, experiência autenticada ou UI.
 
