@@ -1801,8 +1801,6 @@ A auditoria documental já decidiu a função corrente desta Home para o handoff
 - [Header, Hero e CTAs](public-home-organizations-collectives-header-hero-cta-hierarchy.md)
 - [Conteúdo, Prova e Evidência](public-home-organizations-collectives-content-proof-evidence-map.md)
 - [Handoff específico](public-home-organizations-collectives-design-handoff.md)
-- [Auditoria pré-materialização](public-home-organizations-collectives-pre-materialization-readiness-audit.md)
-- [Reauditoria final histórica](public-home-organizations-collectives-final-readiness-reaudit.md)
 - [Supply Editorial do Media](public-home-organizations-collectives-media-editorial-supply-reconciliation.md)
 
 ### Participantes e experiência autenticada

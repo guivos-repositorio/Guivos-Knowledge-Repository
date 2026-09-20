@@ -1354,8 +1354,6 @@ Esta matriz **não autoriza remoção automática das fontes**. A remoção fís
 
 ### Auditoria e evidência
 
-- [Auditoria Pré-Wireframe](public-home-pre-wireframe-readiness-audit.md)
-- [Auditoria Consolidada de Integridade](public-home-consolidated-architecture-integrity-audit.md)
 - [Benchmark e diferenciação](public-home-benchmark-and-differentiation-evidence.md)
 - [Comparativo de Hero](public-home-guivos-vs-global-hero-comparative.md)
 
