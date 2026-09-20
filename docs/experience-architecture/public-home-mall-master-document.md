@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MALL-MASTER-001
 title: Home Pública — Guivos Mall — Documento Mestre
 status: draft
-version: 1.1.1
+version: 1.1.2
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-002
@@ -219,6 +219,27 @@ inventário + marcas + transparência + autoridade
 11 — ECOSSISTEMA E ESCOLHA
 Mall como parte da Guivos + CTAs finais
 ```
+
+
+## Quadro de consulta rápida dos movimentos vigentes
+
+Este quadro sintetiza, para consulta humana e consumo por sistemas de IA, o significado e a função dos movimentos já definidos neste Documento Mestre. Ele **não substitui, reduz nem altera** o detalhamento, os guardrails, exemplos, evidências ou demais autoridades das seções correspondentes. Os movimentos representam **funções de significado e progressão narrativa**, não obrigação de igual número de seções, blocos ou componentes visuais.
+
+| # | Movimento | O que significa | Função principal |
+|---:|---|---|---|
+| 01 | Abrir o horizonte | Começar pela ideia de que algo útil, desejado ou relevante pode fazer parte do próximo momento da pessoa. | Abrir por possibilidade, não por promoção ou pressão de compra. |
+| 02 | Reconhecer a vida real | Reconhecer que produtos, serviços e experiências participam naturalmente de necessidades, desejos e momentos. | Humanizar o contexto comercial sem afirmar que consumo representa evolução pessoal. |
+| 03 | Apresentar o Guivos Mall | Explicar o Mall como capacidade comercial do ecossistema Guivos. | Tornar clara sua responsabilidade sem criar uma marca ou ecossistema separado. |
+| 04 | Apresentar as duas portas atuais | Mostrar Shopping e Gift Cards como as duas formas atuais de explorar o Mall. | Dar orientação inicial simples sem limitar futuras capacidades legítimas do produto. |
+| 05 | Shopping | Tornar compra e descoberta comercial reconhecíveis por comportamentos familiares de e-commerce. | Permitir busca, categorias, ofertas e produtos de forma simples, sem perder o contexto Guivos. |
+| 06 | Produtos, preço e pontos | Mostrar as formas efetivamente disponíveis de aquisição de cada oferta. | Comunicar preço monetário e/ou pontos com clareza e sem inventar conversão, elegibilidade ou mecânica econômica. |
+| 07 | Descoberta e relevância | Permitir que a pessoa encontre possibilidades mesmo quando não iniciou por uma busca específica. | Aumentar encontrabilidade com contexto legítimo, sem pressão, manipulação ou falsa personalização. |
+| 08 | Gift Cards | Mostrar que o Mall também oferece serviços e experiências, não apenas produtos físicos. | Ampliar a compreensão do Mall e apoiar uso próprio ou intenção de presentear. |
+| 09 | Gift Card Guivos | Apresentar um presente que preserva a escolha de quem recebe. | Expressar presente → possibilidade → autonomia, sem definir regras econômicas não autorizadas. |
+| 10 | Prova e Confiança | Demonstrar que ofertas, marcas, parceiros, preços e condições apresentados possuem realidade e autoridade verificáveis. | Tornar o Mall concreto e confiável por inventário real, transparência, origem e condições claras. |
+| 11 | Ecossistema e Escolha | Recolocar o Mall dentro da Guivos e permitir continuidade por diferentes caminhos. | Encerrar reforçando coerência com o ecossistema e autonomia da pessoa sobre o próximo passo. |
+
+O quadro preserva Movimento 10 = Prova e Confiança como síntese da arquitetura narrativa vigente; os detalhamentos existentes de prova e confiança permanecem intactos. Exemplos continuam nas seções correspondentes.
 
 ## 10. Movimento 01 — Abrir o horizonte
 

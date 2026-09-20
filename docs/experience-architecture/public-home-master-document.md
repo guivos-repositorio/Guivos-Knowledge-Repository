@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.3
+version: 1.0.4
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 normative: false
 maturity: reconciled_for_external_design
 depends_on:
@@ -564,6 +564,26 @@ Os movimentos são funções de significado, não obrigação de onze seções v
 | 09 | Autoridade | demonstrar substância, método, proveniência e responsabilidade |
 | 10 | Autonomia e Confiança | explicitar limites e preservar controle |
 | 11 | Descoberta | reabrir continuidade sem fechar como venda |
+
+### Quadro de consulta rápida — significado e função
+
+Este quadro sintetiza, para consulta humana e consumo por sistemas de IA, o significado e a função dos movimentos já definidos neste Documento Mestre. Ele **não substitui, reduz nem altera** o detalhamento, os guardrails, exemplos, evidências ou demais autoridades das seções correspondentes. Os movimentos representam **funções de significado e progressão narrativa**, não obrigação de igual número de seções, blocos ou componentes visuais.
+
+| # | Movimento | O que significa | Função principal |
+|---:|---|---|---|
+| 01 | Hero — Abrir o Horizonte | Introduzir a Guivos pela percepção de que existe um campo maior de possibilidades a descobrir. | Criar curiosidade e amplitude sem começar por produto, catálogo ou conversão. |
+| 02 | Possibilidades Reais | Mostrar que aquilo que a Home apresenta possui relação com pessoas, experiências, lugares, organizações e situações reais. | Provar que o universo descrito é real, sem fabricar escala, histórias ou evidências. |
+| 03 | Amplitude | Revelar que diferentes áreas, contextos e caminhos podem fazer parte da experiência humana. | Mostrar diversidade de possibilidades sem transformar a Home em taxonomia rígida. |
+| 04 | Desconexão | Tornar perceptível que possibilidades, recursos, informações e experiências podem existir de forma dispersa ou pouco contextualizada. | Revelar fragmentação, invisibilidade e distância contextual sem criar diagnóstico sobre a pessoa. |
+| 05 | Guivos / Conexão | Explicar onde a Guivos participa dessa realidade: organizando contexto, relações e caminhos possíveis. | Tornar compreensível o papel do ecossistema sem colocar a Guivos como salvadora ou autora da transformação humana. |
+| 06 | Da Possibilidade à Experiência | Mostrar que uma possibilidade pode ser percebida, escolhida e eventualmente vivida pela pessoa. | Evidenciar agência, escolha, experiência e continuidade, sem afirmar causalidade ou resultado garantido. |
+| 07 | Pertencimento | Mostrar que o ecossistema existe porque Pessoas, Organizações e Coletivos participam com papéis próprios. | Explicar quem participa e quem ajuda a tornar possibilidades e experiências reais. |
+| 08 | Ecossistema / Produtos | Mostrar que diferentes capacidades da Guivos cumprem responsabilidades distintas dentro de uma mesma lógica. | Explicar coerência entre Journey e Produtos Especializados sem transformar a Home em catálogo. |
+| 09 | Autoridade | Demonstrar que conteúdo, relações, evidências e afirmações possuem fontes, critérios e limites. | Construir confiança por substância, método, proveniência, governança e responsabilidade. |
+| 10 | Autonomia e Confiança | Deixar claro que compreender, explorar ou receber apoio não transfere a decisão da pessoa para a Guivos. | Explicitar limites, preservar controle e evitar coerção, manipulação ou dependência. |
+| 11 | Descoberta | Encerrar sem tratar a narrativa como funil fechado ou venda obrigatória. | Reabrir possibilidades de continuidade e permitir que a pessoa escolha se, quando e como deseja avançar. |
+
+Exemplos permanecem nas seções detalhadas correspondentes para não transformar ilustrações em prescrição visual.
 
 Direção narrativa:
 

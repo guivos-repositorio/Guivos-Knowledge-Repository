@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MEDIA-MASTER-001
 title: Home Pública — Guivos Media — Documento Mestre
 status: draft
-version: 1.0.1
+version: 1.0.2
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-005
@@ -66,6 +66,27 @@ Princípios permanentes:
 ## 4. Arquitetura narrativa — 11 movimentos
 
 Os movimentos governam a progressão narrativa, mas **não obrigam onze seções visuais independentes**.
+
+
+### Quadro de consulta rápida — significado e função
+
+Este quadro sintetiza, para consulta humana e consumo por sistemas de IA, o significado e a função dos movimentos já definidos neste Documento Mestre. Ele **não substitui, reduz nem altera** o detalhamento, os guardrails, exemplos, evidências ou demais autoridades das seções correspondentes. Os movimentos representam **funções de significado e progressão narrativa**, não obrigação de igual número de seções, blocos ou componentes visuais.
+
+| # | Movimento | O que significa | Função principal |
+|---:|---|---|---|
+| 01 | Abrir uma nova perspectiva | Começar pela possibilidade de descobrir algo que amplie a forma de perceber um assunto, pessoa, lugar ou experiência. | Provocar descoberta antes de apresentar catálogo, feed ou formatos. |
+| 02 | Dar significado | Explicar por que descobrir novas perspectivas possui valor e por que o Media existe. | Estabelecer propósito editorial de forma simples, sem manifesto excessivo. |
+| 03 | Tornar a tese concreta | Usar uma história, entrevista, experiência, documentário ou produção relevante como prova da proposta editorial. | Demonstrar a tese por conteúdo concreto e hierarquizado. |
+| 04 | Oferecer maneiras de descobrir | Permitir explorar por diferentes formas de expressão — ver, ouvir, ler e descobrir. | Dar controle de exploração sem expor taxonomia editorial interna. |
+| 05 | Demonstrar o pulso editorial | Mostrar o que merece atenção agora com seleção deliberada. | Comunicar atualidade, relevância, qualidade e perspectiva sem virar feed cronológico. |
+| 06 | Aproximar das pessoas | Tornar experiências humanas e seus significados perceptíveis. | Criar proximidade sem reduzir pessoas a cargo, celebridade ou história motivacional genérica. |
+| 07 | Aprofundar a compreensão | Tratar ideias, perguntas e temas com mais contexto e profundidade. | Permitir que descoberta evolua para compreensão sem colocar especialista antes da questão. |
+| 08 | Ampliar o universo | Abrir caminhos entre Pessoas, Lugares, Ideias, Tecnologia, Criatividade, Sociedade, Negócios e Futuro. | Expandir descoberta sem transformar territórios editoriais em departamentos rígidos. |
+| 09 | Criar recorrência | Mostrar que determinadas narrativas podem continuar por séries, temporadas, newsletters, Podcast ou outros projetos editoriais. | Construir continuidade editorial e reconhecimento de propriedades recorrentes. |
+| 10 | Permitir continuidade pelo ecossistema | Fazer uma descoberta abrir outra possibilidade pertinente dentro da Guivos. | Conectar conteúdo a contexto e continuidade sem transformar conteúdo em veículo promocional de produto. |
+| 11 | Reabrir a descoberta | Encerrar lembrando que sempre pode existir algo novo a conhecer. | Manter a narrativa aberta e estimular continuidade por curiosidade, não pressão. |
+
+Exemplos permanecem nas seções detalhadas correspondentes para não transformar ilustrações em prescrição visual.
 
 ### 01 — Abrir uma nova perspectiva
 

@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
 status: draft
-version: 0.2.7
+version: 0.2.8
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 depends_on:
   - GPA-006
@@ -223,6 +223,27 @@ flowchart TD
     M9 --> M10[10 Inteligência conectada]
     M10 --> M11[11 Horizonte ampliado]
 ```
+
+
+### Quadro de consulta rápida — significado e função
+
+Este quadro sintetiza, para consulta humana e consumo por sistemas de IA, o significado e a função dos movimentos já definidos neste Documento Mestre. Ele **não substitui, reduz nem altera** o detalhamento, os guardrails, exemplos, evidências ou demais autoridades das seções correspondentes. Os movimentos representam **funções de significado e progressão narrativa**, não obrigação de igual número de seções, blocos ou componentes visuais.
+
+| # | Movimento | O que significa | Função principal |
+|---:|---|---|---|
+| 01 | Possibilidade | Abrir pela pergunta sobre o que uma compreensão melhor permite perceber. | Apresentar a consequência da compreensão sem antecipar o fechamento da narrativa. |
+| 02 | Necessidade | Mostrar que possuir muita informação não equivale a compreender uma situação. | Evidenciar a lacuna entre informação dispersa e compreensão contextualizada. |
+| 03 | Valor próprio do Intelligence | Mostrar o que o Intelligence acrescenta ao conectar informações que isoladamente mostram apenas parte da realidade. | Explicar por que o produto existe sem absorver Journey, Business ou outras responsabilidades. |
+| 04 | Resultados da inteligência | Apresentar aquilo que uma leitura contextual pode permitir perceber: relações, repetições, mudanças e sinais. | Tornar os resultados do Intelligence compreensíveis antes de demonstrar sua materialização. |
+| 05 | Tornar resultados tangíveis | Materializar esses resultados por leituras, comparações, KPIs, relações, contexto e exemplos conceituais. | Demonstrar concretamente o valor sem confundir representação conceitual com evidência operacional real. |
+| 06 | Como a compreensão se forma | Mostrar que compreensão surge da leitura conjunta de informações, contexto, relações, conhecimento e evidências. | Explicar o mecanismo conceitual em linguagem pública sem transformar tecnologia em protagonista. |
+| 07 | Onde essa compreensão gera valor | Mostrar situações em que compreender melhor pode ajudar a interpretar, comparar, perceber mudanças ou enxergar lacunas. | Demonstrar aplicabilidade sem transformar outros produtos Guivos em módulos do Intelligence. |
+| 08 | Confiança, explicabilidade e limites | Mostrar que uma leitura precisa permitir compreender origem, evidência, interpretação e limite. | Construir confiança por explicabilidade, contestabilidade e distinção entre fato e interpretação. |
+| 09 | Autonomia e decisão | Estabelecer que o Intelligence amplia compreensão, mas não assume a decisão. | Traduzir COMPREENDER ≠ DECIDIR em benefício público e preservar autoridade humana. |
+| 10 | Inteligência conectada | Aprofundar o valor de compreender relações entre acontecimentos, contextos e informações. | Mostrar que relações enriquecem interpretação sem afirmar causalidade. |
+| 11 | Horizonte ampliado | Mostrar que uma compreensão mais ampla pode tornar sinais, mudanças e novas possibilidades mais perceptíveis. | Encerrar ampliando percepção sem transformar Intelligence em previsão determinística do futuro. |
+
+Exemplos permanecem nas seções detalhadas correspondentes para não transformar ilustrações em prescrição visual.
 
 ### Movimento 01 — Possibilidade
 

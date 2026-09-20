@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.1.3
+version: 1.1.4
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
 depends_on:
   - GKR-UX-HOME-BUSINESS-NARRATIVE-001
@@ -140,6 +140,26 @@ O que sua empresa pode tornar possível?
 ```
 
 Os dez movimentos são arquitetura semântica. O futuro Design pode combinar blocos visualmente desde que preserve a progressão, hierarquia e autoridade.
+
+
+## Quadro de consulta rápida dos movimentos vigentes
+
+Este quadro sintetiza, para consulta humana e consumo por sistemas de IA, o significado e a função dos movimentos já definidos neste Documento Mestre. Ele **não substitui, reduz nem altera** o detalhamento, os guardrails, exemplos, evidências ou demais autoridades das seções correspondentes. Os movimentos representam **funções de significado e progressão narrativa**, não obrigação de igual número de seções, blocos ou componentes visuais.
+
+| # | Movimento | O que significa | Função principal |
+|---:|---|---|---|
+| 01 | Possibilidade | Perguntar o que uma empresa pode tornar possível para as pessoas com quem se relaciona. | Abrir a narrativa por potencial humano e empresarial, não por produto ou plano. |
+| 02 | Propósito | Mostrar que empresas podem contribuir criando condições para vidas melhores sem definir universalmente o que isso significa. | Explicar o propósito humano do Business sem atribuir à empresa autoridade sobre a Journey das pessoas. |
+| 03 | Autonomia | Estabelecer que apoiar alguém é diferente de escolher por ela. | Fixar o princípio: a empresa apoia; a pessoa escolhe. |
+| 04 | Guivos Journey | Mostrar que a empresa pode ampliar acesso ao Journey para que pessoas explorem seus próprios caminhos. | Explicar a capacidade de oferecer acesso sem controlar decisões, objetivos ou evolução individual. |
+| 05 | Incentivos | Mostrar que reconhecer ou incentivar também pode tornar novas possibilidades acessíveis. | Explicar incentivo como mecanismo de reconhecimento, estímulo e viabilização, não apenas recompensa retrospectiva. |
+| 06 | Ecossistema | Mostrar que uma possibilidade pode se conectar a outras áreas e experiências da vida. | Explicar amplitude do ecossistema sem transformar produtos em catálogo ou a vida em taxonomia comercial. |
+| 07 | Guivos Intelligence | Mostrar que a empresa pode compreender movimentos agregados de participação e utilização dentro da Guivos. | Comunicar capacidade analítica e contextual preservando privacidade, individualidade e limites de causalidade. |
+| 08 | Planos | Apresentar Start, Growth, Scale e Enterprise como níveis distintos de capacidade. | Permitir que a empresa compreenda e compare capacidades comerciais disponíveis. |
+| 09 | Configurador / Contratação | Traduzir necessidade empresarial em uma configuração comercial compreensível. | Permitir configurar, comparar, conhecer valor e avançar para contratação sem reduzir a experiência a uma calculadora. |
+| 10 | Síntese | Retomar a pergunta inicial depois que propósito, capacidades e oferta já foram compreendidos. | Fechar a narrativa reconectando valor humano e capacidade empresarial e oferecendo continuidade clara. |
+
+Exemplos permanecem nas seções detalhadas correspondentes para não transformar ilustrações em prescrição visual.
 
 ---
 

@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.3
+version: 1.0.4
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -324,6 +324,27 @@ Direção criativa compartilhada:
 A escala visual ou narrativa não deve ser simulada por mapas decorativos, números não sustentados, paredes de logos, stock genérico ou estética tecnológica como substituto de substância.
 
 ---
+
+
+## Quadro de consulta rápida dos movimentos vigentes
+
+Este quadro sintetiza, para consulta humana e consumo por sistemas de IA, o significado e a função dos movimentos já definidos neste Documento Mestre. Ele **não substitui, reduz nem altera** o detalhamento, os guardrails, exemplos, evidências ou demais autoridades das seções correspondentes. Os movimentos representam **funções de significado e progressão narrativa**, não obrigação de igual número de seções, blocos ou componentes visuais.
+
+| # | Movimento | O que significa | Função principal |
+|---:|---|---|---|
+| 01 | Abrir o horizonte | Mostrar que capacidades já existentes em diferentes participantes podem abrir um campo maior de possibilidades quando encontram contexto e relações legítimas. | Ampliar percepção sem prometer transformação, parceria ou resultado automático. |
+| 02 | Tornar capacidades e contribuições reconhecíveis | Evidenciar que Organizações e Coletivos já oferecem conhecimento, infraestrutura, recursos, atividades, oportunidades e outras contribuições reais. | Tornar supply e contribuição perceptíveis sem atribuir à Guivos aquilo que já existe independentemente dela. |
+| 03 | Da fragmentação à continuidade | Mostrar que experiências, capacidades, necessidades e oportunidades podem ganhar mais contexto e continuidade quando relacionadas adequadamente. | Explicar continuidade sem criar cadeia automática de transformação ou causalidade. |
+| 04 | Explicar o papel da Guivos | Posicionar a Guivos como infraestrutura de contexto, conexão, compreensão e acesso, não como substituta dos participantes. | Delimitar claramente o papel do ecossistema e preservar as autoridades de cada participante. |
+| 05 | Explicar quem participa | Diferenciar Pessoa, Organização e Coletivo como participantes estruturais distintos. | Tornar papéis, identidades, responsabilidades e autoridades compreensíveis sem confundi-los com produtos. |
+| 06 | Mostrar complementaridade sem fabricar match | Explicar que uma capacidade existente em um contexto pode ajudar outro, desde que finalidade, autoridade e relevância sejam legítimas. | Demonstrar potencial de complementaridade sem transformar correlação em recomendação ou match automático. |
+| 07 | Mostrar os Domínios de Evolução sem transformar a vida em taxonomia visual obrigatória | Apresentar os Domínios como vocabulário para compreender amplitude de contextos e possibilidades. | Mostrar cobertura e diversidade sem criar diagnóstico, score, hierarquia humana ou nove blocos obrigatórios. |
+| 08 | Mostrar circulação de valor, supply e escala responsável | Explicar como Pessoas, Organizações e Coletivos podem contribuir, participar e receber valor dentro do ecossistema. | Demonstrar circulação de valor e possibilidade de escala sem transformar participação em exploração de atenção, dados ou vulnerabilidade. |
+| 09 | Construir confiança por autoridade, evidência e proteção | Mostrar que relações legítimas exigem clareza sobre participante, papel, finalidade, autoridade, evidência, dados e limites. | Sustentar confiança, transparência, proteção e responsabilidade proporcional. |
+| 10 | Materializar o ecossistema sem virar catálogo | Introduzir os Produtos da Guivos depois que a tese de participantes, relações e valor já está compreendida. | Explicar como diferentes produtos cumprem responsabilidades específicas sem confundir participante com produto. |
+| 11 | Reabrir o horizonte para participação | Apresentar caminhos legítimos para uma Organização ou um Coletivo continuar explorando sua participação. | Encerrar com continuidade e escolha, preservando igual legitimidade entre Organização e Coletivo e sem pressão comercial. |
+
+Exemplos permanecem nas seções detalhadas correspondentes para não transformar ilustrações em prescrição visual.
 
 # Movimento 01 — Abrir o horizonte
 

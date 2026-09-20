@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-TRAVEL-MASTER-001
 title: Home Pública — Guivos Travel — Documento Mestre
 status: draft
-version: 1.1.3
+version: 1.1.4
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-003
@@ -209,6 +209,27 @@ operação real + clareza + identificação
 11 — ECOSSISTEMA
 Travel como capacidade especializada da Guivos
 ```
+
+
+## Quadro de consulta rápida dos movimentos vigentes
+
+Este quadro sintetiza, para consulta humana e consumo por sistemas de IA, o significado e a função dos movimentos já definidos neste Documento Mestre. Ele **não substitui, reduz nem altera** o detalhamento, os guardrails, exemplos, evidências ou demais autoridades das seções correspondentes. Os movimentos representam **funções de significado e progressão narrativa**, não obrigação de igual número de seções, blocos ou componentes visuais.
+
+| # | Movimento | O que significa | Função principal |
+|---:|---|---|---|
+| 01 | Abrir a possibilidade | Começar pela possibilidade de viajar e pelo que um próximo momento pode permitir viver. | Inspirar antes de reservar ou vender. |
+| 02 | Reconhecer diferentes motivos para viajar | Reconhecer que viagens podem responder a descanso, encontro, trabalho, descoberta, celebração, aprendizagem ou outros motivos legítimos. | Tornar a viagem humana e contextual sem exigir narrativa de transformação pessoal. |
+| 03 | Apresentar o Guivos Travel | Explicar que Travel reúne possibilidades para descobrir, planejar e realizar uma viagem. | Tornar o papel do produto compreensível e conectar inspiração à operação. |
+| 04 | Mostrar a operação real | Apresentar os nove serviços efetivamente existentes. | Demonstrar amplitude operacional e permitir acesso direto a quem já sabe o que procura. |
+| 05 | Organizar a viagem pela necessidade | Relacionar serviços à lógica prática de uma viagem: destino, deslocamento, hospedagem, mobilidade e experiências. | Facilitar compreensão sem transformar serviços em contratação conjunta obrigatória. |
+| 06 | Descobrir destinos | Usar lugares, imagens e experiências reais para tornar destinos perceptíveis e desejáveis. | Produzir inspiração e descoberta com realidade, não cenários fictícios. |
+| 07 | Transformar destino em viagem possível | Mostrar como diferentes serviços podem participar de uma mesma possibilidade de viagem. | Dar continuidade entre inspiração e planejamento sem criar pacote ou bundle automático. |
+| 08 | Ofertas, preço e pontos | Mostrar valores e pontos quando efetivamente disponíveis e elegíveis. | Dar transparência comercial sem inventar taxa, conversão ou condição inexistente. |
+| 09 | Experiências | Mostrar que viajar inclui o que se vive no destino, não apenas chegar até ele. | Dar protagonismo a passeios, cultura, gastronomia, atrações e outras experiências reais. |
+| 10 | Prova e Confiança | Demonstrar que destinos, serviços, ofertas, imagens, parceiros e condições possuem base real. | Sustentar credibilidade operacional e transparência. |
+| 11 | Travel dentro do ecossistema | Reposicionar Travel como capacidade especializada conectada à Guivos maior. | Explicar continuidade com Journey, Mall, Media, Business e demais capacidades sem confundir responsabilidades. |
+
+Exemplos permanecem nas seções detalhadas correspondentes para não transformar ilustrações em prescrição visual.
 
 ## 10. Movimento 01 — Abrir a possibilidade
 
