@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 6.1.2
+version: 6.2.0
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 normative: true
-maturity: v6_emitted_frozen_invalidated_for_new_execution_reissue_required
+maturity: v6_frozen_historical_v7_candidate_pre_snapshot_revalidation
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -19,6 +19,7 @@ related:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
 ---
 
 # Homes Públicas — Manifesto Canônico de Entrega para Design
@@ -65,7 +66,9 @@ SNAPSHOT TREE
 
 O registro reproduzível da emissão e da invalidação posterior para nova execução é `GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001 v1.1.1`.
 
-## 3. Composição canônica para próxima reemissão — 29 fontes únicas
+## 3. Composição canônica do candidato v7 — 29 fontes únicas
+
+O novo candidato pré-snapshot está registrado em `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.1.0`, ancorado em `main @ 1a1386bc318afa2e91f5c1ef5ffd3a80e7265cb2`. O candidato não é pacote externo corrente e não materializa os oito guias; ele apenas fixa a composição que deverá passar por revalidação exata antes de qualquer emissão.
 
 ### 3.1 Fontes comuns
 
@@ -332,3 +335,32 @@ FINAL DESIGN ACCEPTANCE
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
+
+
+## 15. Candidato v7 pré-snapshot
+
+```text
+V7 CANDIDATE
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.1.0
+→ ORIGIN MAIN 1a1386bc318afa2e91f5c1ef5ffd3a80e7265cb2
+→ 29 / 29 CANONICAL SOURCES VERIFIED BY PATH / ID / VERSION / BLOB
+→ PRE-SNAPSHOT REVALIDATION
+
+V7 READ-FIRST GUIDES
+→ NOT MATERIALIZED
+
+V7 SNAPSHOT
+→ NOT EMITTED
+→ NOT MATERIALIZED
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+
+OPERATIONAL EXECUTION
+→ PAUSED
+
+NEXT GATE
+→ SEMANTIC + MECHANICAL + INDEPENDENT REVIEW ON EXACT CANDIDATE HEAD
+```
+
+O snapshot v6 permanece congelado e não é reescrito. Uma futura emissão v7 continua condicionada à integração do candidato e a um ato humano separado de materialização.
