@@ -903,7 +903,7 @@ Estado vigente:
 
 ```mermaid
 flowchart TD
-    A[11 movimentos\nconvergidos] --> B[Arquitetura narrativa\nv0.2.3]
+    A[11 movimentos\nconvergidos] --> B[Arquitetura narrativa\nv0.2.4]
     B --> C[Documento Mestre\nrevisão corrente]
     C --> D[Home Source Lock\nrevisão corrente]
     D --> E[Design Handoff\nrevisão corrente]
