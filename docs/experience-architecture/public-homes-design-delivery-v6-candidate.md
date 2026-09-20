@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
 title: Homes Públicas — Pacote v6 Candidato para Designer e IA Opcional
-status: draft
-version: 0.2.15
+status: superseded
+version: 0.3.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: v6_candidate_defined_snapshot_not_emitted
+maturity: realized_into_v6_snapshot
 depends_on:
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -17,19 +17,20 @@ depends_on:
 related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
 ---
 
 # Homes Públicas — Pacote v6 Candidato para Designer e IA Opcional
 
 ## 1. Finalidade
 
-Este documento define a composição **candidata** do próximo pacote externo das oito Homes.
+Este documento preserva a composição candidata que foi validada e posteriormente materializada como snapshot v6 das oito Homes.
 
 O v6 nasce para corrigir uma única classe de problema operacional do v5:
 
 > **a designer deve receber documentação completa e determinística sem ser obrigada a seguir Figma Make, protótipo gerativo ou direção visual criada pelo GKR.**
 
-O v6 permanece pré-snapshot.
+O candidato foi realizado sem alteração de composição no snapshot registrado por `GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001 v1.0.0`.
 
 ```text
 V5
@@ -37,8 +38,8 @@ V5
 → FROZEN
 
 V6
-→ CANDIDATE DEFINITION
-→ NOT YET EMITTED
+→ CANDIDATE REALIZED
+→ SNAPSHOT EMITTED / MATERIALIZED / VALIDATED
 ```
 
 ## 2. Princípios do v6
@@ -125,7 +126,7 @@ MARKDOWN
 
 ## 4. Oito guias de consumo v6
 
-O snapshot v6 deverá gerar um `00-LEIA-PRIMEIRO.md` para cada Home.
+O snapshot v6 materializado contém um `00-LEIA-PRIMEIRO.md` para cada Home.
 
 Cada guia deve conter:
 
@@ -146,7 +147,7 @@ Cada guia deve conter:
 15. checklist de autoauditoria;
 16. indicação explícita de que nenhum Figma criado pelo GKR é referência.
 
-## 5. Estrutura externa candidata
+## 5. Estrutura externa materializada
 
 ```text
 GUIVOS-HOMES-DESIGN-HANDOFF-v6/
@@ -173,7 +174,7 @@ Cada diretório de Home contém:
 - `00-LEIA-PRIMEIRO.md`;
 - somente as fontes específicas daquela Home.
 
-## 6. Contagem candidata
+## 6. Contagem materializada
 
 ```text
 COMMON SOURCES
@@ -257,9 +258,9 @@ MATERIAL SOURCE CHANGE
 
 Mudança criativa feita pela designer sem alterar contrato semântico não exige alteração do GKR.
 
-## 11. Gates antes da emissão
+## 11. Gates de emissão — resultado
 
-O v6 somente se torna elegível para snapshot após:
+A emissão foi autorizada somente depois do fechamento dos seguintes gates:
 
 - C1–C15 = PASS para 8/8 Homes;
 - 29/29 fontes existentes;
@@ -274,13 +275,16 @@ O v6 somente se torna elegível para snapshot após:
 
 ```text
 V6 PACKAGE DEFINITION
-→ PREPARED / CANDIDATE
+→ REALIZED / SUPERSEDED BY SNAPSHOT RECORD
 
 C1–C15
-→ CANDIDATE PASS / 8 OF 8
+→ PASS / 8 OF 8 / 120 OF 120
 
 SNAPSHOT V6
-→ NOT EMITTED
+→ EMITTED / MATERIALIZED / VALIDATED
+→ branch delivery/design-handoff-v6
+→ commit b7fe5d62cef444c8316c66edd8ac73b703698a4a
+→ tree 61eef7447fc5c6b36890ccb774f7011615a6abca
 
 DESIGNER PRODUCTION
 → EXTERNAL / DESIGNER-OWNED
