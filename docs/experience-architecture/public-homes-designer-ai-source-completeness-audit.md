@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: post_emission_package_p1_adjudicated_v6_reissue_required
+maturity: post_emission_package_p1s_adjudicated_v6_reissue_required
 depends_on:
   - GKR-STATE-001
   - GKR-HOME-MASTERS-REMEDIATION-001
@@ -690,6 +690,41 @@ CURRENT EXTERNAL SOURCE PACKAGE
 
 A descoberta demonstra que `C1–C15 = PASS` e preservação byte-a-byte eram condições necessárias, mas não suficientes para provar coerência operacional completa do pacote. A auditoria pré-emissão permanece como evidência histórica; a validade operacional do v6 foi reaberta e negada por este P1.
 
+## 9.15 Re-review pós-remediação na PR #402 — P1 nas autoridades comuns
+
+O re-review independente sobre o HEAD `b815e0f07f5f59bde2fbbd23288a65b1816cb2e4` encontrou um segundo P1 material:
+
+```text
+P1 — RECONCILE THE COMMON AUTHORITIES BEFORE REISSUING
+→ VALID
+
+GENINPUT v2.2.14
+→ GENERATIVE EXECUTION = AUTHORIZED TO EXECUTE
+→ STALE RELEASE / CURRENT-CANDIDATE REFERENCES
+
+READINESS v1.2.14
+→ AI-ASSISTED DESIGN = AUTHORIZED TO EXECUTE
+→ STALE RELEASE / CURRENT-CANDIDATE REFERENCES
+
+CANONICAL REMEDIATION
+→ GENINPUT = v2.2.15
+→ READINESS = v1.2.15
+→ RELEASE = v1.2.0
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+
+OPERATIONAL EXECUTION
+→ PAUSED
+
+NEXT MATERIALIZATION
+→ REQUIRES NEW GOVERNED CANDIDATE
+→ REISSUE / REVALIDATION
+→ SEPARATE HUMAN AUTHORIZATION
+```
+
+As versões v2.2.14 / v1.2.14 permanecem legítimas apenas como proveniência da cadeia que levou ao v6. Elas não são mais as autoridades correntes para preparar uma nova emissão.
+
 ## 10. Remediações aplicadas
 
 ### F-DS-001 — RESOLVED
@@ -858,4 +893,4 @@ PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-A auditoria pré-emissão permanece encerrada como prova histórica do que era conhecido no ato de emissão. A revisão pós-emissão reabriu apenas a validade operacional do pacote e encontrou um P1 material. Esse finding foi remediado na autoridade canônica, mas o snapshot v6 congelado não é reescrito e permanece inválido para nova execução até nova emissão/revalidação.
+A auditoria pré-emissão permanece encerrada como prova histórica do que era conhecido no ato de emissão. As revisões pós-emissão encontraram dois P1 materiais: primeiro no Operational Flow v3.0.1 contido no v6 e depois nas autoridades comuns ainda preparadas para execução. Ambos foram remediados somente na linha canônica corrente. O snapshot v6 congelado não é reescrito e permanece inválido para nova execução até nova emissão/revalidação.
