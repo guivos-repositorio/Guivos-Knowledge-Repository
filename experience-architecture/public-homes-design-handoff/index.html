@@ -2137,7 +2137,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Manifesto de Entrega v6
+    Homes — Manifesto Canônico de Entrega
   
 
     
@@ -2277,7 +2277,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Pacote v7 Candidato (reemissão)
+    Homes — Pacote v7 Candidato (proveniência)
   
 
     
@@ -2288,6 +2288,41 @@
   
   
     <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-delivery-v7-snapshot-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Snapshot v7 (histórico / inválido)
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -4428,7 +4463,7 @@ DESIGN PRODUCTION READINESS
 → GOVERNADO POR GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
+→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1
 
 V6 SNAPSHOT
 → EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
@@ -4436,13 +4471,14 @@ V6 SNAPSHOT
 → INVALID FOR NEW EXECUTION
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
+→ CONSUME ONLY SNAPSHOT DESIGNATED CURRENT / VALID
 
 OPERATIONAL EXECUTION
-→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+→ REQUIRES CURRENT VALID PACKAGE
+→ OTHERWISE PAUSED
 </code></pre></div>
-<p>O ato humano de Design Production Release permanece concedido, mas as condições cumulativas de execução não estão atualmente satisfeitas porque não existe pacote externo corrente válido. O v6 foi congelado como histórico após findings pós-emissão; nova execução depende de nova emissão/revalidação governada e de Source Locks operacionais derivados desse novo pacote.</p>
+<p>O ato humano de Design Production Release permanece concedido. A existência, identidade e validade do pacote externo corrente são determinadas exclusivamente por <code>GKR-UX-HOMES-DESIGN-DELIVERY-001</code> + <code>GKR-STATE-001</code> no momento do consumo. Esta autoridade comum não fixa <code>NONE</code>, versão de snapshot corrente nem estado transitório de emissão.</p>
 <h3 id="01-liberdade-criativa-protegida">0.1 Liberdade criativa protegida<a class="headerlink" href="#01-liberdade-criativa-protegida" title="Permanent link">&para;</a></h3>
 <p>O GKR <strong>não congela identidade visual canônica</strong> para estas Homes. A designer pode criar, com originalidade e autonomia, tipografia, paleta, imagens, ilustração, iconografia, grid, ritmo, composição, atmosfera, motion, linguagem gráfica, tratamento de componentes e tom de voz/copy não congelada.</p>
 <p>Essas escolhas são <strong>output de Design</strong>, não pré-condição documental. A solução criativa aprovada deve ser documentada no artefato final de Design entregue pela designer, com consistência e handoff suficientes para continuidade.</p>
@@ -4513,7 +4549,7 @@ VALIDAÇÃO HUMANA
 <li>gates de validação sem finding material aberto;</li>
 <li>ato humano explícito de <code>DESIGN PRODUCTION RELEASE = GRANTED</code>.</li>
 </ol>
-<p>Neste estado, o item 1 não está satisfeito. Portanto, a execução operacional permanece pausada. Quando uma nova emissão válida fechar novamente as quatro condições, poderão ser executados:</p>
+<p>Quando as quatro condições estiverem satisfeitas segundo o Manifesto + Current State vigentes, poderão ser executados:</p>
 <ul>
 <li>criação manual pela designer e, opcionalmente, exploração assistida por IA;</li>
 <li>arquitetura visual;</li>
@@ -4922,14 +4958,15 @@ EXTERNAL DESIGNER CREATION
 → AI OPTIONAL / DESIGNER-CONTROLLED
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
+→ CONSUME ONLY SNAPSHOT DESIGNATED CURRENT / VALID
 
 OPERATIONAL DESIGN EXECUTION
-→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+→ REQUIRES CURRENT VALID PACKAGE
+→ OTHERWISE PAUSED
 
 FINAL DESIGN ACCEPTANCE
 → HUMAN / SEPARATE
@@ -4937,7 +4974,7 @@ FINAL DESIGN ACCEPTANCE
 IMPLEMENTATION / PRODUCT ENGINEERING
 → NOT RELEASED BY THIS HANDOFF
 </code></pre></div>
-<p>Este documento governa <strong>como</strong> o handoff deve ocorrer. A autorização humana permanece concedida por <code>GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0</code>, mas a execução operacional está pausada porque <code>CURRENT EXTERNAL SOURCE PACKAGE = NONE</code>. A próxima execução exige reissue/revalidation e novo pacote corrente válido.</p>
+<p>Este documento governa <strong>como</strong> o handoff deve ocorrer. A autorização humana permanece concedida por <code>GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1</code>. A designação de qual snapshot é corrente e válido é estado operacional externo a este documento e deve ser lida em <code>GKR-UX-HOMES-DESIGN-DELIVERY-001</code> + <code>GKR-STATE-001</code>; este Handoff não congela esse valor transitório.</p>
 
 
 

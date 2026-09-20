@@ -2076,7 +2076,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Manifesto de Entrega v6
+    Homes — Manifesto Canônico de Entrega
   
 
     
@@ -2216,7 +2216,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Pacote v7 Candidato (reemissão)
+    Homes — Pacote v7 Candidato (proveniência)
   
 
     
@@ -2227,6 +2227,41 @@
   
   
     <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/public-homes-design-delivery-v7-snapshot-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Snapshot v7 (histórico / inválido)
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -6167,7 +6202,11 @@ GKR-CREATED FIGMA
 <li>validar novamente Semantic + Mechanical + re-review no HEAD final — CONCLUÍDO / Semantic #1444 + Mechanical #1672 = SUCCESS / FINAL CODEX RE-REVIEW CLEAN ON d3cd3dce176a4224930cc428483f5530d22e8c6d / PR #402 MERGED @ 0f37eda133dc14a42f686b616993cffcd099cf04;</li>
 <li>decidir separadamente preparação da nova emissão/revalidação — CONCLUÍDO / ATO HUMANO AUTORIZADO / V7 CANDIDATE PREPARED;</li>
 <li>revalidar e integrar candidato v7 — CONCLUÍDO / 29 OF 29 SOURCES CONFIRMED / FINAL Semantic #1463 + Mechanical #1689 = SUCCESS / CODEX CLEAN ON 0418b219d4d4a746498cf8b8032b5018f333e29e / PR #405 MERGED @ 574814b561a933291fd3e7539f814f4187398277 / POST-MERGE SOURCE PIN RECHECK = 29 OF 29 EXACT MATCH / delivery/design-handoff-v7 NOT PRESENT;</li>
-<li>decidir separadamente materialização do v7 — PENDENTE / ATO HUMANO SEPARADO / NOT AUTHORIZED BY REVALIDATION.</li>
+<li>decidir separadamente materialização do v7 — CONCLUÍDO / ATO HUMANO EXPLÍCITO AUTORIZADO / SNAPSHOT MATERIALIZED + INTEGRITY-VALIDATED / branch <code>delivery/design-handoff-v7</code> / commit <code>564a2656332dffeb4779ca20ee1ce6697abaa06d</code> / tree <code>39a72433b0b6f75975bc6a128c57fb688bd85bcb</code>;</li>
+<li>registrar e validar a emissão v7 na documentação canônica do <code>main</code> — REVIEW ENCONTROU P1 + P2 VÁLIDOS / V7 NÃO PROMOVÍVEL COMO CURRENT / SNAPSHOT NÃO DEVE SER MUTADO;</li>
+<li>reconciliar autoridades comuns para não congelar estado transitório de pacote — SEGUNDO RE-REVIEW ENCONTROU P1 RESIDUAL / REMEDIADO COM HANDOFF v1.6.5 + GENINPUT v2.2.17 + READINESS v1.2.17 + FLOW v3.0.3 + RELEASE v1.2.1 / PACKAGE STATE FULLY DELEGATED TO MANIFEST + CURRENT STATE / FINAL REVALIDATION PENDING;</li>
+<li>corrigir proveniência v7 residual que ainda chamava snapshot histórico de corrente — CONCLUÍDO / CANDIDATE v0.3.2;</li>
+<li>após integração da remediação, preparar nova reemissão/revalidação — PENDENTE / MATERIALIZAÇÃO EXIGE ATO HUMANO SEPARADO.</li>
 </ol>
 <div class="highlight"><pre><span></span><code>V5 SNAPSHOT
 → FROZEN / HISTORICAL
@@ -6192,16 +6231,35 @@ V6 SNAPSHOT
 → 29 / 29 CANONICAL BLOBS EXACT MATCH
 → NOT CURRENT FOR NEW EXECUTION
 
+V7 SNAPSHOT
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
+→ branch delivery/design-handoff-v7
+→ commit 564a2656332dffeb4779ca20ee1ce6697abaa06d
+→ tree 39a72433b0b6f75975bc6a128c57fb688bd85bcb
+→ origin main 35c616a4a7bf754577c180d37afe5e0c22380c7b
+→ 29 / 29 CANONICAL BLOBS EXACT MATCH
+→ 8 / 8 READ-FIRST GUIDES VALID
+→ 37 FILES TOTAL
+
 CURRENT EXTERNAL SOURCE PACKAGE
 → NONE
 → REISSUE / REVALIDATION REQUIRED
+
+CORRECTED COMMON AUTHORITY CHAIN
+→ HANDOFF 1.6.5
+→ GENINPUT 2.2.17
+→ READINESS 1.2.17
+→ FLOW 3.0.3
+→ RELEASE 1.2.1
 
 DESIGN PRODUCTION RELEASE
 → GRANTED
 → EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 
 OPERATIONAL EXECUTION
-→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+→ PAUSED UNTIL NEW SNAPSHOT IS DESIGNATED CURRENT / VALID
 
 AI
 → OPTIONAL / DESIGNER-CONTROLLED
