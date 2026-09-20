@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.4.8
+version: 0.4.9
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -142,7 +142,7 @@ Uma Home somente pode ser considerada pronta para entrega à designer quando seu
 | Media | `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` | RECONCILED |
 | Ads | `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` | RECONCILED |
 | Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6` + `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` | RECONCILED |
-| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.6` + `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.2` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.7` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.8` + `GKR-UX-HOMES-OUTCOME-001 v1.0.0` + `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` + `GPA-006 v2.0.1` | RECONCILED |
+| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7` + `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.8` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.9` + `GKR-UX-HOMES-OUTCOME-001 v1.0.0` + `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` + `GPA-006 v2.0.1` | RECONCILED |
 
 ## 6. Findings iniciais comprovados
 
@@ -575,6 +575,25 @@ P2 — EXPERIENCE ARCHITECTURE V6 COUNT
 
 A correção fecha apenas referências correntes residuais; não altera o v5 histórico nem o conteúdo semântico de Intelligence.
 
+## 9.10 Varredura preventiva pós-remediação — remoção de hardcodes downstream na Narrative
+
+A varredura preventiva dos 30 arquivos alterados identificou que a própria Narrative, ao descrever o estado corrente, hardcodava versões downstream que se tornavam obsoletas sempre que Master / Source Lock / Handoff eram repinados.
+
+```text
+PREVENTIVE FINDING — DOWNSTREAM VERSION HARD-CODES IN NARRATIVE
+→ REMEDIATED
+→ NARRATIVE = v0.2.3
+→ DOWNSTREAM MASTER / SOURCE LOCK / HANDOFF REFERENCES = ID + CURRENT VERSION PINNED BY V6 CANDIDATE
+→ MASTER = v0.2.7
+→ SOURCE LOCK = v1.1.8
+→ HANDOFF = v1.1.9
+→ GENINPUT = v2.2.13
+→ READINESS = v1.2.13
+→ V6 CANDIDATE = v0.2.14
+```
+
+A mudança elimina a causa estrutural do ciclo de stale pins sem enfraquecer a determinabilidade do pacote: as versões exatas continuam congeladas no candidato/snapshot de entrega, enquanto a Narrative deixa de tentar versionar autoridades downstream que evoluem depois dela.
+
 ## 10. Remediações aplicadas
 
 ### F-DS-001 — RESOLVED
@@ -611,14 +630,14 @@ A adjudicação histórica permanece proveniência; não é mais necessária par
 
 ### F-DS-004 — RESOLVED
 
-`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6` / `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.6` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.7` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.8` / `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` / `GPA-006 v2.0.1` foram temporalmente reconciliados com o regime designer-first / IA opcional.
+`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6` / `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.8` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.9` / `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` / `GPA-006 v2.0.1` foram temporalmente reconciliados com o regime designer-first / IA opcional.
 
 ### F-DS-005 — RESOLVED FOR V6 CONTRACT
 
 O template comum foi promovido para:
 
 ```text
-GKR-UX-HOMES-GENINPUT-001 v2.2.12
+GKR-UX-HOMES-GENINPUT-001 v2.2.13
 → TOOL-NEUTRAL
 → AI OPTIONAL
 → MANUAL DESIGN DOES NOT REQUIRE GENERATIVE EXECUTION RECORD
