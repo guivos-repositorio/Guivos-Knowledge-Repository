@@ -62,7 +62,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.44.0` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.49.3` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, lista de versões antigas ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -96,7 +96,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | Elemento | Estado vigente |
 |---|---|
 | Era | **GE-2 — Knowledge** |
-| Estado global | **GKR-STATE-001 v3.41.0** |
+| Estado global | **GKR-STATE-001 v3.49.3** |
 | Cognitive Reference Architecture | **GIA-COG-001 v0.1.1 / ACTIVE / NORMATIVE / CONCEPTUAL-REFERENCE** |
 | Família GIA-COG-002..008 | **RESERVED / NOT MATERIALIZED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
@@ -134,7 +134,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | PMF | **NOT VALIDATED** |
 | Fundação | **RECONCILED / ENRICHED IN LOT C** |
 | Public Canon | **GOG-001 v5.3.0** |
-| Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; JOURNEY REMAINS DRAFT** |
+| Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; JOURNEY ACTIVE** |
 | Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
 | Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
 | F-010 | **RESOLVED** |
@@ -670,10 +670,10 @@ Estado do Bloco 2:
 
 ```text
 COMPLETED / UPDATE_APPLIED
-JOURNEY MATURITY → DRAFT PRESERVED
+JOURNEY MATURITY → ACTIVE
 ```
 
-A auditoria reconciliou a jornada atual da Pessoa no limite documental, incluindo handoffs e estados de transição já suportados pelas autoridades vigentes. O fechamento do bloco G não promove a Jornada da Pessoa além de `draft` e não selecionou uma tela histórica como primeira responsabilidade pós-Home.
+A auditoria reconciliou a jornada atual da Pessoa no limite documental, incluindo handoffs e estados de transição já suportados pelas autoridades vigentes. O fechamento do bloco G preserva a Jornada da Pessoa como autoridade integrada `active` e não seleciona uma tela histórica como primeira responsabilidade pós-Home.
 
 Preservações:
 

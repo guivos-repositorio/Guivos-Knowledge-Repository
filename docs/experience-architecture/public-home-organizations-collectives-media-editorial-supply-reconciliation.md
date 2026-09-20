@@ -12,7 +12,6 @@ depends_on:
   - GPA-005
   - GKR-UX-HOME-MEDIA-MASTER-001
 related:
-  - GKR-UX-HOME-OC-AUDIT-001
   - GKR-UX-HOME-SYS-001
 normative: true
 ---

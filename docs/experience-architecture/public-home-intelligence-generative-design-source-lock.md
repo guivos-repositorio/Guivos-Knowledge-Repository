@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-INTELLIGENCE-GENINPUT-001
 title: Source Lock Operacional — Home Pública — Guivos Intelligence — Primeira Exploração de Design
-status: active
-version: 1.0.0
+status: superseded
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-20
+last_updated: 2026-09-20
 parent: GKR-UX-HOMES-GENINPUT-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
@@ -14,10 +14,12 @@ depends_on:
   - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
   - GPA-006
   - GKR-UX-HOMES-OUTCOME-001
-normative: true
+normative: false
 ---
 
 # Source Lock Operacional — Home Pública — Guivos Intelligence
+
+> **Estado histórico:** este artefato preserva a primeira exploração de Design e não integra o conjunto operacional corrente. O consumo atual é governado por `GKR-UX-HOMES-GENINPUT-001` e pelo Manifesto Canônico de Entrega vigente.
 
 ## 1. Finalidade
 

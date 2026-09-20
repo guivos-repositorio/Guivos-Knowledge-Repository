@@ -489,7 +489,7 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.44.0** |
+| Registro do Estado Atual | **3.49.3** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
@@ -503,7 +503,7 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
 | Baseline final pós-auditoria | **CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a** |
 | Lotes concluídos | **A / B / C / D / E / F / G** |
-| Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey remains draft** |
+| Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey active** |
 | Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
 | Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
 | F-010 — cleanup transversal | **RESOLVED — CLEANUP / VALIDATION / INDEPENDENT REVIEW COMPLETE** |

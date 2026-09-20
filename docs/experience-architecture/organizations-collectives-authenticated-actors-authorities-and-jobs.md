@@ -89,7 +89,7 @@ fundamentos e papéis
 → handoff técnico
 ```
 
-No estado corrente, atores/autoridades/jobs, Arquitetura da Informação, Surface Map, State Map e Priority Flows já estão definidos documentalmente. O próximo gap começa em **Navigation Materialization**, seguido de wireframes, ambos dependentes de autorização própria. Nenhuma etapa seguinte é iniciada automaticamente.
+No estado corrente, atores/autoridades/jobs, Arquitetura da Informação, Surface Map, State Map, Priority Flows e Navigation Materialization já estão definidos documentalmente. Os wireframes autenticados low-fidelity foram posteriormente autorizados, entregues e validados com `PASS`. O próximo limite ainda não executado é high-fidelity Design, cuja elegibilidade está `PASS`, mas cuja autorização permanece `NOT_GRANTED`. Nenhuma etapa seguinte é iniciada automaticamente.
 
 ## 3. Unidade de atuação autenticada
 
@@ -647,10 +647,13 @@ AUTHENTICATED PRIORITY FLOWS
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 MATERIALIZED NAVIGATION
-→ NOT MATERIALIZED
+→ GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0
+→ DEFINED / CANONICAL DOCUMENTARY
 
 MAIN AUTHENTICATED WIREFRAMES
-→ NOT STARTED
+→ GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0
+→ GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0
+→ DELIVERY EXECUTED / VALIDATION PASS
 
 UXA-102 / V5
 → NOT STARTED

@@ -4,7 +4,7 @@ title: Contratos de Autoridade — Home Pública — Guivos Business
 status: active
 version: 1.0.3
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-BUSINESS-NARRATIVE-001
 depends_on:
   - GKR-UX-HOME-BUSINESS-NARRATIVE-001
@@ -413,7 +413,7 @@ DOCUMENTO MESTRE
 → EXISTS / ACTIVE
 
 SOURCE LOCK
-→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6
+→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.7
 → EXISTS / ACTIVE
 
 DESIGN PRODUCTION RELEASE
