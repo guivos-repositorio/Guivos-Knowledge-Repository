@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
 title: Home Pública — Guivos Intelligence v1 — Arquitetura Conceitual — Movimentos 1–11
 status: draft
-version: 0.2.2
+version: 0.2.3
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -64,20 +64,23 @@ HOME INTELLIGENCE v1
 → 11 MOVIMENTOS CONVERGIDOS
 
 ARQUITETURA NARRATIVA
-→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.2
+→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
 → CURRENT NARRATIVE REFERENCE
 
 DOCUMENTO MESTRE DA HOME
-→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001
 → EXISTS / CURRENT
+→ EXACT CURRENT VERSION PINNED BY V6 CANDIDATE
 
 SOURCE LOCK DA HOME
-→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.6
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 → EXISTS / ACTIVE / NORMATIVE
+→ EXACT CURRENT VERSION PINNED BY V6 CANDIDATE
 
 DESIGN HANDOFF
-→ GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.7
+→ GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
 → EXISTS / ACTIVE
+→ EXACT CURRENT VERSION PINNED BY V6 CANDIDATE
 
 EXTERNAL DESIGN RELEASE
 → GRANTED BY COMMON AUTHORITY
@@ -881,7 +884,7 @@ O Movimento 11 cumpre a função de fechamento aspiracional da narrativa sem int
 
 A síntese governada desta arquitetura é consolidada atualmente em:
 
-`GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5`
+`GKR-UX-HOME-INTELLIGENCE-MASTER-001`, na revisão corrente pinada pelo candidato v6
 
 O Documento Mestre não substitui `GPA-006` nem o Product Source Lock. Ele organiza a tradução da autoridade do produto para a Home Pública.
 
@@ -891,8 +894,8 @@ O fluxo pré-Home que originalmente sucedia esta arquitetura foi concluído por 
 
 Estado vigente:
 
-- Home Source Lock → `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.6` / existe / ativo / normativo;
-- Design Handoff → `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.7` / existe / ativo;
+- Home Source Lock → `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001` / existe / ativo / normativo / revisão corrente pinada pelo candidato v6;
+- Design Handoff → `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001` / existe / ativo / revisão corrente pinada pelo candidato v6;
 - produção externa de Design → `GRANTED` pela autoridade comum;
 - designer → autora criativa;
 - IA → opcional e controlada pela designer;
@@ -900,10 +903,10 @@ Estado vigente:
 
 ```mermaid
 flowchart TD
-    A[11 movimentos\nconvergidos] --> B[Arquitetura narrativa\nv0.2.2]
-    B --> C[Documento Mestre\nv0.2.5]
-    C --> D[Home Source Lock\nv1.1.6]
-    D --> E[Design Handoff\nv1.1.7]
+    A[11 movimentos\nconvergidos] --> B[Arquitetura narrativa\nv0.2.3]
+    B --> C[Documento Mestre\nrevisão corrente]
+    C --> D[Home Source Lock\nrevisão corrente]
+    D --> E[Design Handoff\nrevisão corrente]
     E --> F[External Design Release\nGRANTED]
 ```
 
