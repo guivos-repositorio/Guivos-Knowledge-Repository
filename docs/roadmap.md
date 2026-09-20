@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.16
+id: ROADMAP-13.47.17
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.16
+version: 13.47.17
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -1954,7 +1954,11 @@ Sequência governada atual:
 18. adjudicar contradição do Operational Flow v3.0.1 — CONCLUÍDO / P1 VALID;
 19. remediar autoridade canônica sem reescrever snapshot — CONCLUÍDO / FLOW v3.0.2 + RELEASE v1.2.0;
 20. congelar v6 como histórico inválido para nova execução — CONCLUÍDO;
-21. decidir separadamente nova emissão/revalidação do pacote corrigido — PENDENTE / ATO HUMANO SEPARADO.
+21. executar re-review do primeiro P1 no HEAD remediado — CONCLUÍDO / SEGUNDO P1 MATERIAL ENCONTRADO;
+22. adjudicar autoridades comuns ainda liberando execução — CONCLUÍDO / P1 VALID;
+23. reconciliar GENINPUT / Readiness para estado sem pacote corrente — CONCLUÍDO / GENINPUT v2.2.15 + READINESS v1.2.15;
+24. validar novamente Semantic + Mechanical + re-review no HEAD final — EM CURSO;
+25. decidir separadamente nova emissão/revalidação do pacote corrigido — PENDENTE / ATO HUMANO SEPARADO.
 
 ```text
 V5 SNAPSHOT
