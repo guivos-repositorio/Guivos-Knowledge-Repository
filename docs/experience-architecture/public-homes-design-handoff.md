@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.6.3
+version: 1.6.4
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: designer_first_ai_optional_handoff_reissue_required
+maturity: designer_first_ai_optional_handoff_current_package_delegated
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -55,7 +55,7 @@ DESIGN PRODUCTION READINESS
 → GOVERNADO POR GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
+→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1
 
 V6 SNAPSHOT
 → EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
@@ -63,11 +63,12 @@ V6 SNAPSHOT
 → INVALID FOR NEW EXECUTION
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
+→ CONSUME ONLY SNAPSHOT DESIGNATED CURRENT / VALID
 
 OPERATIONAL EXECUTION
-→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+→ REQUIRES CURRENT VALID PACKAGE
+→ OTHERWISE PAUSED
 ```
 
 O ato humano de Design Production Release permanece concedido, mas as condições cumulativas de execução não estão atualmente satisfeitas porque não existe pacote externo corrente válido. O v6 foi congelado como histórico após findings pós-emissão; nova execução depende de nova emissão/revalidação governada e de Source Locks operacionais derivados desse novo pacote.
@@ -679,14 +680,15 @@ EXTERNAL DESIGNER CREATION
 → AI OPTIONAL / DESIGNER-CONTROLLED
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
+→ CONSUME ONLY SNAPSHOT DESIGNATED CURRENT / VALID
 
 OPERATIONAL DESIGN EXECUTION
-→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+→ REQUIRES CURRENT VALID PACKAGE
+→ OTHERWISE PAUSED
 
 FINAL DESIGN ACCEPTANCE
 → HUMAN / SEPARATE
@@ -695,4 +697,4 @@ IMPLEMENTATION / PRODUCT ENGINEERING
 → NOT RELEASED BY THIS HANDOFF
 ```
 
-Este documento governa **como** o handoff deve ocorrer. A autorização humana permanece concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0`, mas a execução operacional está pausada porque `CURRENT EXTERNAL SOURCE PACKAGE = NONE`. A próxima execução exige reissue/revalidation e novo pacote corrente válido.
+Este documento governa **como** o handoff deve ocorrer. A autorização humana permanece concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1`. A designação de qual snapshot é corrente e válido é estado operacional externo a este documento e deve ser lida em `GKR-UX-HOMES-DESIGN-DELIVERY-001` + `GKR-STATE-001`; este Handoff não congela esse valor transitório.
