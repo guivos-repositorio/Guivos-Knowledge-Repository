@@ -220,7 +220,7 @@ Mudanças puramente criativas da designer, sem alteração de contrato, não exi
 ## 11. Estado
 
 ```text
-FLOW v3.0.2
+FLOW v3.0.3
 → DESIGNER-FIRST
 → AI-OPTIONAL
 → TOOL-NEUTRAL
