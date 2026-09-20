@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.21
+id: ROADMAP-13.47.22
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.21
+version: 13.47.22
 owner: Guivos
 last_updated: 2026-09-20
 normative: true
@@ -1961,7 +1961,8 @@ Sequência governada atual:
 24. validar novamente Semantic + Mechanical + re-review no HEAD final — CONCLUÍDO / Semantic #1444 + Mechanical #1672 = SUCCESS / FINAL CODEX RE-REVIEW CLEAN ON d3cd3dce176a4224930cc428483f5530d22e8c6d / PR #402 MERGED @ 0f37eda133dc14a42f686b616993cffcd099cf04;
 25. decidir separadamente preparação da nova emissão/revalidação — CONCLUÍDO / ATO HUMANO AUTORIZADO / V7 CANDIDATE PREPARED;
 26. revalidar e integrar candidato v7 — CONCLUÍDO / 29 OF 29 SOURCES CONFIRMED / FINAL Semantic #1463 + Mechanical #1689 = SUCCESS / CODEX CLEAN ON 0418b219d4d4a746498cf8b8032b5018f333e29e / PR #405 MERGED @ 574814b561a933291fd3e7539f814f4187398277 / POST-MERGE SOURCE PIN RECHECK = 29 OF 29 EXACT MATCH / delivery/design-handoff-v7 NOT PRESENT;
-27. decidir separadamente materialização do v7 — PENDENTE / ATO HUMANO SEPARADO / NOT AUTHORIZED BY REVALIDATION.
+27. decidir separadamente materialização do v7 — CONCLUÍDO / ATO HUMANO EXPLÍCITO AUTORIZADO / SNAPSHOT MATERIALIZED + INTEGRITY-VALIDATED / branch `delivery/design-handoff-v7` / commit `564a2656332dffeb4779ca20ee1ce6697abaa06d` / tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`;
+28. registrar e validar a emissão v7 na documentação canônica do `main` — EM CURSO / SNAPSHOT NÃO DEVE SER MUTADO.
 
 ```text
 V5 SNAPSHOT
@@ -1987,9 +1988,19 @@ V6 SNAPSHOT
 → 29 / 29 CANONICAL BLOBS EXACT MATCH
 → NOT CURRENT FOR NEW EXECUTION
 
+V7 SNAPSHOT
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ CURRENT EXTERNAL SOURCE PACKAGE
+→ branch delivery/design-handoff-v7
+→ commit 564a2656332dffeb4779ca20ee1ce6697abaa06d
+→ tree 39a72433b0b6f75975bc6a128c57fb688bd85bcb
+→ origin main 35c616a4a7bf754577c180d37afe5e0c22380c7b
+→ 29 / 29 CANONICAL BLOBS EXACT MATCH
+→ 8 / 8 READ-FIRST GUIDES VALID
+→ 37 FILES TOTAL
+
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ V7
 
 DESIGN PRODUCTION RELEASE
 → GRANTED
