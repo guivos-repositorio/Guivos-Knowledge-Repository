@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001
 title: Homes Públicas — Pacote v8 Candidato para Reemissão e Revalidação
 status: draft
-version: 0.2.3
+version: 0.3.0
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: false
-maturity: substantive_revalidation_pass_final_head_validation_external_gate
+maturity: reissue_candidate_realized_by_v8_snapshot
 depends_on:
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -18,17 +18,18 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001
 ---
 
 # Homes Públicas — Pacote v8 Candidato para Reemissão e Revalidação
 
 ## 1. Finalidade
 
-Este documento prepara a próxima reemissão externa das oito Homes após a invalidação do snapshot v7 para nova execução.
+Este documento preserva a proveniência do candidato que deu origem ao pacote externo v8 das oito Homes após a invalidação do snapshot v7 para nova execução.
 
-Ele **não materializa** novo snapshot, não cria `delivery/design-handoff-v8`, não altera `delivery/design-handoff-v7`, não cria Figma, não libera Product Engineering e não concede qualquer autorização adicional de high-fidelity O/C.
+A materialização foi posteriormente autorizada e executada em `delivery/design-handoff-v8`, registrada por `GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001 v1.0.0`. Este documento continua não normativo e não substitui o registro do snapshot v8 nem as autoridades `Manifest + Current State`.
 
-O candidato v8 existe para revalidar a composição externa contra a cadeia comum final package-state agnostic integrada pela PR #407.
+O candidato v8 foi usado para revalidar a composição externa contra a cadeia comum final package-state agnostic integrada pela PR #407.
 
 ```text
 PREPARATION BASE / MAIN
@@ -44,16 +45,19 @@ V7
 → FROZEN / HISTORICAL
 → INVALID FOR NEW EXECUTION
 
-CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-
 V8
-→ CANDIDATE PREPARED
+→ CANDIDATE PREPARED / REVALIDATED
 → SUBSTANTIVE REVALIDATION PASS
+→ REALIZED BY MATERIALIZED SNAPSHOT
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ GOVERNED BY MANIFEST + CURRENT STATE
+→ V8 DESIGNATION RECORDED BY SNAPSHOT REGISTRATION
 
 delivery/design-handoff-v8
-→ NOT CREATED
-→ NOT AUTHORIZED
+→ MATERIALIZED / INTEGRITY-VALIDATED
+→ commit d7eea909b1b5cb6266d7c4a725657ccd909f0e63
+→ tree 17553412f24d7a97287ddc5944b8622ecf744534
 ```
 
 ## 2. Princípios preservados
@@ -173,9 +177,9 @@ SOURCE PIN METHOD
 → NO V7 PIN REUSE BY INFERENCE
 ```
 
-## 5. Estrutura externa candidata
+## 5. Estrutura externa realizada
 
-Se uma materialização v8 vier a ser autorizada em ato humano separado, a estrutura esperada permanece:
+A materialização v8 autorizada foi executada com a seguinte estrutura:
 
 ```text
 00-COMUM/
@@ -196,14 +200,14 @@ Se uma materialização v8 vier a ser autorizada em ato humano separado, a estru
 +
 8 READ-FIRST GUIDES
 =
-37 EXPECTED EXTERNAL FILES
+37 EXTERNAL FILES
 ```
 
-Os oito guias deverão registrar o checkpoint efetivo de emissão, os 29 pins aplicáveis e a mesma precedência designer-first / IA opcional.
+Os oito guias registram o checkpoint efetivo de emissão, os 29 pins aplicáveis e a mesma precedência designer-first / IA opcional.
 
-## 6. Revalidation gates antes de qualquer materialização
+## 6. Revalidation gates satisfeitos antes da materialização
 
-A materialização v8 somente poderá ser considerada após:
+A materialização v8 foi executada somente após:
 
 - 29/29 fontes confirmadas;
 - path / ID / version / blob reconciliados;
@@ -255,15 +259,16 @@ FINAL DOCUMENTARY HEAD VALIDATION
 → READ FROM PR #408 EXACT-HEAD GATES / REVIEW EVIDENCE
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
+→ GOVERNED BY MANIFEST + CURRENT STATE
 
 delivery/design-handoff-v8
-→ NOT PRESENT
+→ MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN
 
 MATERIALIZATION
-→ DECISION PENDING
 → SEPARATE HUMAN-GOVERNED ACT
-→ NOT AUTHORIZED BY REVALIDATION
+→ EXPLICITLY AUTHORIZED
+→ EXECUTED FROM main 00791d1e09b5e75b33c223e38164eeee1be0c6cd
 ```
 
 ## 8. Regra de imutabilidade
@@ -279,30 +284,33 @@ V7
 → INVALID FOR NEW EXECUTION
 
 V8 CANDIDATE
-→ DOCUMENTARY PREPARATION ONLY
+→ NON-NORMATIVE PROVENANCE
+→ REALIZED BY V8 SNAPSHOT
 
 delivery/design-handoff-v8
-→ NOT CREATED
-→ NOT AUTHORIZED
+→ DO NOT MODIFY
+→ FROZEN
 ```
 
 ## 9. Estado
 
 ```text
 V8 CANDIDATE
-→ PREPARED
-→ NON-NORMATIVE
+→ PREPARED / REVALIDATED
+→ NON-NORMATIVE PROVENANCE
 → 29 / 29 SOURCE PINS RECALCULATED
 → SUBSTANTIVE REVALIDATION PASS
-→ FINAL DOCUMENTARY HEAD VALIDATION = EXTERNAL PR GATE / NOT SELF-ASSERTED HERE
-→ MATERIALIZATION DECISION PENDING
+→ REALIZED BY GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
+→ GOVERNED BY MANIFEST + CURRENT STATE
+→ V8 SNAPSHOT DESIGNATION
 
 MATERIALIZATION
-→ NOT AUTHORIZED
-→ NOT EXECUTED
+→ AUTHORIZED / EXECUTED
+→ branch delivery/design-handoff-v8
+→ commit d7eea909b1b5cb6266d7c4a725657ccd909f0e63
+→ tree 17553412f24d7a97287ddc5944b8622ecf744534
 
 DESIGN PRODUCTION RELEASE
 → GRANTED AS HUMAN AUTHORITY
