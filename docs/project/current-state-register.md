@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.48.14
+version: 3.48.15
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-19
 normative: true
@@ -1144,7 +1144,7 @@ PRIVACIDADE DE REFERÊNCIA
 ≠ EVIDÊNCIA OPERACIONAL
 ```
 
-A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.6` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes e não constitui, por si só, release operacional. A produção externa de Design da Home pública é regida pelo release comum posterior; implementação e publicação permanecem separadas.
+A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.7` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes e não constitui, por si só, release operacional. A produção externa de Design da Home pública é regida pelo release comum posterior; implementação e publicação permanecem separadas.
 
 Estado:
 
@@ -1335,7 +1335,7 @@ HOME INTELLIGENCE v1
 → CONCEPTUAL ARCHITECTURE COMPLETE
 
 HOME SOURCE LOCK
-→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.6
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.7
 → ACTIVE / NORMATIVE
 → FREEZES SOURCES AND INVARIANTS
 → DESIGN RELEASE GOVERNED BY COMMON AUTHORITY
@@ -2410,9 +2410,9 @@ Remediações materiais do candidato:
 - Travel Master → v1.1.3 reconciliado para produção externa de Design;
 - Business Master → v1.1.3 reconciliado para produção externa de Design;
 - Business Source Lock → v1.1.6 sincronizado com Business Master v1.1.3 e Authority Contract v1.0.3;
-- Intelligence Master → v0.2.5 reconciliado para produção externa de Design;
-- Intelligence Source Lock → v1.1.6 reconciliado para designer-first / IA opcional;
-- Intelligence Design Handoff → v1.1.7 reconciliado para designer-first / IA opcional;
+- Intelligence Master → v0.2.6 reconciliado para produção externa de Design;
+- Intelligence Source Lock → v1.1.7 reconciliado para designer-first / IA opcional;
+- Intelligence Design Handoff → v1.1.8 reconciliado para designer-first / IA opcional;
 - Intelligence Product Source Lock → v1.0.1 reconciliado para tratar o estado pré-Home como proveniência histórica, não gate corrente;
 - artefato Figma experimental anterior → `ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE`.
 
