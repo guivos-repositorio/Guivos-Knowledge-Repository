@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.16
+version: 1.20.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 related:
@@ -303,31 +303,25 @@ D5-A/B/C1/C2/C3/C4A/C4B e a frente documental O/C não consomem nem antecipam V5
 
 A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. O Bloco 2 também reconciliou Jobs + IA autenticada de Organização/Coletivo; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o **Surface Map lógico-documental canônico** e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` define o **State Map funcional canônico documental**. Os **Priority Flows** estão definidos documentalmente em `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`; a elegibilidade de Navigation Materialization está `PASS` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0`; e a própria Navigation Materialization está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os Authenticated Wireframes low-fidelity foram autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O pacote Delivery + Validation é a referência corrente low-fidelity O/C. A adjudicação `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0` conclui `PASS`; o próximo gate possível é somente uma decisão humana separada de autorização high-fidelity. D6, D7, materialização de `PER-009`, V5/UXA-102, cobrança real, integrações patrocinadas e demais validações permanecem independentes e exigem autorização própria. Nenhuma é iniciada automaticamente.
 
-### Public Homes — Design Handoff v5 Snapshot
+### Public Homes — fontes correntes para Design
 
-[GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001](public-homes-design-delivery-v5-snapshot-record.md) registra a emissão externa reproduzível v5 das oito Homes, com 26 fontes canônicas byte-preservadas e oito guias operacionais. O registro preserva que **a emissão isoladamente** não concedeu Design Release.
+A produção externa das oito Homes é governada diretamente pelas autoridades correntes do main:
 
-### Public Homes — Design Production Release
+- [Handoff Canônico para Design](public-homes-design-handoff.md);
+- [Contrato de Consumo para Designer e IA Opcional](public-homes-generative-source-lock-and-prompt-template.md);
+- [Prontidão Corrente](public-homes-design-production-readiness-and-figma-contract.md);
+- [Fluxo Operacional Corrente](public-homes-design-delivery-operational-flow.md);
+- [Design Production Release](public-homes-design-production-release.md);
+- [Manifesto Canônico de Fontes](public-homes-design-delivery-manifest.md).
 
-[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) registra `DESIGN PRODUCTION RELEASE = GRANTED` para produção externa pela designer. O release permanece concedido, mas a execução operacional exige um pacote externo corrente e semanticamente válido. O trabalho manual é first-class, IA é opcional e o GKR não cria direção visual nem arquivo Figma.
+~~~text
+CURRENT MAIN → FIRST-CLASS SOURCE
+29 CURRENT DESIGN SOURCES → MANIFESTED
+8 HOME MASTERS → CURRENT
+83 MOVEMENTS → QUICK-REFERENCE AVAILABLE
+SNAPSHOT → NOT REQUIRED
+AI → OPTIONAL
+DESIGNER → CREATIVE AUTHOR
+~~~
 
-### Public Homes — Source Completeness e snapshot v6
-
-[GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001](public-homes-designer-ai-source-completeness-audit.md) preserva a prova pré-emissão C1–C15 = PASS em 8/8 Homes / 120 de 120 verificações e registra o P1 de consistência descoberto pós-emissão. A correção foi aplicada na autoridade canônica, não no snapshot congelado.
-
-[GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001](public-homes-design-delivery-v6-candidate.md) preserva a definição candidata que foi realizada sem mudança de composição.
-
-[GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001](public-homes-design-delivery-v6-snapshot-record.md) registra o snapshot v6 em `delivery/design-handoff-v6`: 29 fontes canônicas + oito guias = 37 arquivos e 29/29 blobs preservados. O snapshot permanece congelado como proveniência histórica, mas o P1 pós-emissão no Operational Flow v3.0.1 o torna inválido para nova execução. O estado `CURRENT EXTERNAL SOURCE PACKAGE = NONE` pertence ao checkpoint histórico posterior à invalidação do v6 e foi superado pela emissão v7.
-
-[GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001](public-homes-design-delivery-v7-candidate.md) preserva a proveniência do candidato v7 revalidado que foi realizado pelo snapshot posteriormente invalidado para nova execução.
-
-[GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001](public-homes-design-delivery-v7-snapshot-record.md) registra a emissão v7 em `delivery/design-handoff-v7`: origem `main = 35c616a4a7bf754577c180d37afe5e0c22380c7b`, commit `564a2656332dffeb4779ca20ee1ce6697abaa06d`, tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`, 29 fontes canônicas + oito guias = 37 arquivos, 29/29 blobs exatos e 8/8 guias validados. O P1 pós-emissão nas cinco autoridades comuns torna o v7 congelado/histórico e inválido para nova execução. A cadeia canônica foi corrigida para Handoff 1.6.5 / GENINPUT 2.2.17 / Readiness 1.2.17 / Flow 3.0.3 / Release 1.2.1. `CURRENT EXTERNAL SOURCE PACKAGE = NONE` até nova reemissão/revalidação.
-
-[GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001](public-homes-design-delivery-v8-candidate.md) v0.3.0 preserva a proveniência do candidato v8 revalidado e posteriormente realizado pelo snapshot externo corrente.
-
-[GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001](public-homes-design-delivery-v8-snapshot-record.md) registra a emissão v8 em `delivery/design-handoff-v8`: origem `main = 00791d1e09b5e75b33c223e38164eeee1be0c6cd`, commit `d7eea909b1b5cb6266d7c4a725657ccd909f0e63`, tree `17553412f24d7a97287ddc5944b8622ecf744534`, 29 fontes canônicas + oito guias = 37 arquivos, 29/29 blobs exatos e 8/8 guias validados. A cadeia comum é package-state agnostic; `Manifest + Current State` designam o v8 como `CURRENT EXTERNAL SOURCE PACKAGE`, válido para nova execução externa de Design.
-
-
-### Public Homes — candidato v9 para reemissão
-
-[GKR-UX-HOMES-DESIGN-DELIVERY-V9-CANDIDATE-001](public-homes-design-delivery-v9-candidate.md) prepara a reemissão que incorpora os quadros de consulta rápida adicionados aos oito Home Masters pela PR #411. A recomputação direta sobre `main = 7bd02df4f0ed8ab2c809992abafa251756dcaf9a` confirma 29/29 fontes, 21/29 pins idênticos ao v8 e 8/29 pins alterados exatamente nos oito Masters. O v8 permanece o pacote externo corrente; `delivery/design-handoff-v9` não foi criada e a materialização exige ato humano separado.
+Histórico de candidates, snapshots, auditorias de emissão e artefatos intermediários permanece no Git e não faz parte do corpus operacional corrente.
