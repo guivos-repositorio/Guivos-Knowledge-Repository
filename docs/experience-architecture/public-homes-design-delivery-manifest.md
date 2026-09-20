@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 6.1.1
+version: 6.1.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
@@ -69,7 +69,7 @@ O registro reproduzível da emissão e da invalidação posterior para nova exec
 
 ### 3.1 Fontes comuns
 
-1. `docs/experience-architecture/public-homes-design-handoff.md` — `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.2`;
+1. `docs/experience-architecture/public-homes-design-handoff.md` — `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.3`;
 2. `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — `GKR-UX-HOMES-GENINPUT-001 v2.2.15`;
 3. `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.2.15`;
 4. `docs/experience-architecture/public-homes-design-delivery-operational-flow.md` — `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.2`;
@@ -273,8 +273,10 @@ READINESS v1.2.14
 → STALE RELEASE / CURRENT-CANDIDATE REFERENCES
 
 REMEDIATION
+→ HANDOFF v1.6.3
 → GENINPUT v2.2.15
 → READINESS v1.2.15
+→ FLOW v3.0.2
 → RELEASE v1.2.0
 → CURRENT EXTERNAL SOURCE PACKAGE = NONE
 → OPERATIONAL EXECUTION = PAUSED
