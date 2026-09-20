@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.12
+id: ROADMAP-13.47.13
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.12
+version: 13.47.13
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -1078,7 +1078,7 @@ F-022
 → NOT OPENED
 ```
 
-`GPA-006 v2.0.1` continua autoridade do produto; `GIA-000 v1.7.0` é a arquitetura vigente de Intelligence e reconhece `GIA-COG-001 v0.1.1` como Cognitive Reference Architecture ativa/normativa; `GEA-GRAPH-REFERENCE-001` permanece referência arquitetural; `ADR-007` mantém Neo4j apenas como referência primária. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.8` permanece Source Lock ativo/normativo da Home; sua autoridade semântica não equivale, por si só, a autorização de implementação. O Design externo é regido pelas autoridades comuns posteriores.
+`GPA-006 v2.0.1` continua autoridade do produto; `GIA-000 v1.7.0` é a arquitetura vigente de Intelligence e reconhece `GIA-COG-001 v0.1.1` como Cognitive Reference Architecture ativa/normativa; `GEA-GRAPH-REFERENCE-001` permanece referência arquitetural; `ADR-007` mantém Neo4j apenas como referência primária. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9` permanece Source Lock ativo/normativo da Home; sua autoridade semântica não equivale, por si só, a autorização de implementação. O Design externo é regido pelas autoridades comuns posteriores.
 
 ```text
 GIA-COG-001 ACTIVE / NORMATIVE
