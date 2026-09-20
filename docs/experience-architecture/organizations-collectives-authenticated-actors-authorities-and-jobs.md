@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-JOBS-001
 title: Organizações e Coletivos — Atores, Autoridades e Jobs Prioritários da Experiência Autenticada
 status: active
-version: 1.4.0
+version: 1.4.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-20
 normative: false
 maturity: authenticated_information_architecture_defined_pre_surface_map
 depends_on:
@@ -63,8 +63,8 @@ A frente parte das seguintes autoridades e estados:
 
 - `UXA-014` define Organização, Coletivo e suas responsabilidades funcionais;
 - `UXA-019` define autoridade bilateral, limites, compromissos, recursos, dados, contestação e ciclo de vida das relações Organização ↔ Coletivo;
-- `GKR-JOURNEY-ORGANIZATION-001` preserva a Jornada da Organização em `draft` e maturidades independentes de fluxos especializados;
-- `GKR-JOURNEY-COLLECTIVE-001` preserva a Jornada do Coletivo em `draft` e maturidades independentes de fluxos especializados;
+- `GKR-JOURNEY-ORGANIZATION-001` preserva a Jornada da Organização em `active` e maturidades independentes de fluxos especializados;
+- `GKR-JOURNEY-COLLECTIVE-001` preserva a Jornada do Coletivo em `active` e maturidades independentes de fluxos especializados;
 - `GKR-UX-ORGCOL-UX-STATE-001` preserva o baseline histórico no qual a arquitetura da informação e os wireframes principais autenticados ainda não estavam definidos;
 - `GKR-UX-ORGCOL-AUTH-IA-001` define a Arquitetura da Informação autenticada de Organização e Coletivo em sua maturidade própria **defined pre-surface-map**, sem materializar wireframes, UI ou implementação;
 - `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` definiu posteriormente o **Surface Map lógico-documental canônico**; naquele ato, não materializou State Map, navegação visual, wireframes, UI ou implementação;

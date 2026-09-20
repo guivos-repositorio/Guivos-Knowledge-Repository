@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.48.2
+id: ROADMAP-13.48.3
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.48.2
+version: 13.48.3
 owner: Guivos
 last_updated: 2026-09-20
 normative: true
@@ -148,7 +148,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | Lote N — GTM / presença pública | **DOCUMENTARY AUDIT COMPLETED / OPEN N-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | Lote O — MENU final / rotas multiequipe | **DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED / OPEN O-SPECIFIC MATERIAL FINDINGS = 0** |
 | Lote P — Auditoria final | **COMPLETED / PASS / OPEN P-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
-| O/C atores, autoridades e jobs | **DEFINED / ACTIVE / GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.0** |
+| O/C atores, autoridades e jobs | **DEFINED / ACTIVE / GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.1** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE / GKR-UX-ORGCOL-AUTH-IA-001 v1.3.0** |
 | O/C mapa lógico de superfícies | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0** |
 | O/C mapa de estados | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0** |

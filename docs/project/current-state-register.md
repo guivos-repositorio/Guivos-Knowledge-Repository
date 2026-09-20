@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.49.2
+version: 3.49.3
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-20
 normative: true
@@ -731,7 +731,7 @@ Permanecem autoridades funcionais:
 
 ### 8.2 Atores, autoridades e jobs
 
-`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.0` está ativo e define, antes da arquitetura visual:
+`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.1` está ativo e define, antes da arquitetura visual:
 
 - classes funcionais de atores;
 - participante representado;
@@ -2322,11 +2322,11 @@ PRIMARY SOURCE OF TRUTH
 → CURRENT MAIN
 
 AUTHORIZED WHITELIST
-→ GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.5
+→ GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.6
 
 COMMON AUTHORITIES
-→ HANDOFF v1.7.1
-→ GENINPUT v2.3.1
+→ HANDOFF v1.7.2
+→ GENINPUT v2.3.2
 → READINESS v1.3.1
 → FLOW v3.1.2
 → RELEASE v1.3.1

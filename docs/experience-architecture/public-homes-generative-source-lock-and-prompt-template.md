@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.3.1
+version: 2.3.2
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
 depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -332,10 +332,10 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.10` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.8` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
-- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.11` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 - `GKR-UX-HOMES-OUTCOME-001 v1.0.0` — `docs/experience-architecture/public-homes-value-outcome-principle.md`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` — `docs/product-architecture/intelligence-product-source-lock.md`;
 - `GPA-006 v2.0.1` — `docs/product-architecture/intelligence.md`.
