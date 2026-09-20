@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 6.0.0
+version: 6.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: v6_emitted_current_v5_frozen_historical
+maturity: v6_emitted_frozen_invalidated_for_new_execution_reissue_required
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -25,9 +25,9 @@ related:
 
 ## 1. Finalidade
 
-Este Manifesto governa o pacote externo corrente das oito Homes públicas para criação pela designer.
+Este Manifesto governa a emissão externa das oito Homes públicas para criação pela designer.
 
-O **v6 é o pacote externo corrente, emitido e validado**. O v5 permanece congelado e reproduzível como snapshot histórico.
+O snapshot **v6 foi emitido, materializado e teve sua integridade validada**, mas uma revisão independente pós-emissão encontrou um P1 material dentro do próprio pacote: o Operational Flow v3.0.1 preservou linguagem pré-emissão incompatível com o uso corrente. O v6 permanece congelado e reproduzível como proveniência histórica, porém **não é válido para nova execução**. Neste estado, não existe pacote externo corrente; nova emissão/revalidação é necessária. O v5 também permanece congelado como snapshot histórico.
 
 ```text
 DESIGNER
@@ -47,7 +47,7 @@ GKR-CREATED FIGMA
 → NONE
 ```
 
-## 2. Checkpoint e snapshot corrente
+## 2. Checkpoint e snapshot v6 preservado
 
 ```text
 ORIGIN MAIN
@@ -63,17 +63,17 @@ SNAPSHOT TREE
 → 61eef7447fc5c6b36890ccb774f7011615a6abca
 ```
 
-O registro reproduzível da emissão é `GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001 v1.0.0`.
+O registro reproduzível da emissão e da invalidação posterior para nova execução é `GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001 v1.1.0`.
 
-## 3. Composição canônica v6 — 29 fontes únicas
+## 3. Composição canônica para próxima reemissão — 29 fontes únicas
 
 ### 3.1 Fontes comuns
 
 1. `docs/experience-architecture/public-homes-design-handoff.md` — `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.2`;
 2. `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — `GKR-UX-HOMES-GENINPUT-001 v2.2.14`;
 3. `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.2.14`;
-4. `docs/experience-architecture/public-homes-design-delivery-operational-flow.md` — `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.1`;
-5. `docs/experience-architecture/public-homes-design-production-release.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0`.
+4. `docs/experience-architecture/public-homes-design-delivery-operational-flow.md` — `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.2`;
+5. `docs/experience-architecture/public-homes-design-production-release.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0`.
 
 ### 3.2 Pessoa
 
@@ -123,13 +123,13 @@ O registro reproduzível da emissão é `GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHO
 28. `docs/product-architecture/intelligence-product-source-lock.md` — `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1`;
 29. `docs/product-architecture/intelligence.md` — `GPA-006 v2.0.1`.
 
-## 4. Oito guias operacionais v6
+## 4. Oito guias operacionais do snapshot v6
 
 Cada Home possui `00-LEIA-PRIMEIRO.md` com checkpoint, fontes/IDs/versões/blobs, ordem de leitura, invariantes, matriz das oito classes, dados reais, questões abertas, inferências proibidas, liberdade criativa, manual-first, IA opcional, prompt tool-neutral e autoauditoria.
 
 O guia não substitui as autoridades que lista.
 
-## 5. Estrutura externa corrente
+## 5. Estrutura externa v6 preservada
 
 ```text
 GUIVOS-HOMES-DESIGN-HANDOFF-v6/
@@ -230,21 +230,52 @@ Mudança criativa da designer sem alteração de contrato não exige reemissão.
 
 Mudança material nas fontes ou invariantes da Home exige adjudicação e, quando afetar nova execução, reissue/revalidation. Mudança não material pode preservar o snapshot após review registrado.
 
-## 11. Snapshots históricos
+## 11. Finding pós-emissão e efeito governado
+
+A revisão independente da PR #402 sobre o HEAD `615ec67af2f3d463747bdb309fc49cb88e557137` encontrou um P1 material no pacote emitido:
+
+```text
+SNAPSHOT V6 FLOW
+→ GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.1
+→ SOURCE COMPLETENESS AUDIT = IN PROGRESS
+→ V6 PACKAGE = NOT YET ELIGIBLE
+
+ADJUDICATION
+→ VALID MATERIAL CONTRADICTION
+
+CANONICAL REMEDIATION
+→ FLOW v3.0.2
+→ RELEASE v1.2.0
+
+FROZEN V6 SNAPSHOT
+→ NOT REWRITTEN
+→ INVALID FOR NEW EXECUTION
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+```
+
+## 12. Snapshots históricos
 
 `delivery/design-handoff-v1` até `delivery/design-handoff-v5` permanecem congelados. O v5 está registrado em `GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001`.
 
-O v6 é corrente e não reescreve nenhuma emissão anterior.
+O v6 não reescreve nenhuma emissão anterior. Após o finding pós-emissão, ele permanece congelado como proveniência histórica e não deve ser usado para nova execução.
 
-## 12. Estado
+## 13. Estado
 
 ```text
 V5
 → FROZEN / HISTORICAL
 
 V6
-→ EMITTED / MATERIALIZED / VALIDATED
-→ CURRENT EXTERNAL SOURCE PACKAGE
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
 
 SNAPSHOT
 → delivery/design-handoff-v6
@@ -254,8 +285,11 @@ SNAPSHOT
 DESIGN PRODUCTION RELEASE
 → GRANTED
 
-EXTERNAL DESIGNER PRODUCTION
+EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 → RELEASED
+
+OPERATIONAL EXECUTION
+→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
 
 AI
 → OPTIONAL / DESIGNER-CONTROLLED
