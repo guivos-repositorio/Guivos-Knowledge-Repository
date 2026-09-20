@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Intelligence
 status: active
-version: 1.1.6
+version: 1.1.7
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-MASTER-001
@@ -58,7 +58,7 @@ RECONCILIATION
 → CURRENT DESIGNER-FIRST / AI-OPTIONAL CONTRACT APPLIES
 
 DOCUMENTO MESTRE
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.6
 
 ARQUITETURA NARRATIVA
 GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.2
@@ -79,8 +79,8 @@ Objetivo do lock:
 Para a produção externa de Design da Home Intelligence, o pacote específico de autoridade deve ser restrito a:
 
 1. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001` — este Source Lock;
-2. `GKR-UX-HOME-INTELLIGENCE-MASTER-001` v0.2.5 — `docs/experience-architecture/public-home-intelligence-master-document.md`;
-3. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001` v0.2.1 — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
+2. `GKR-UX-HOME-INTELLIGENCE-MASTER-001` v0.2.6 — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+3. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001` v0.2.2 — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 4. `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001` v1.0.1 — `docs/product-architecture/intelligence-product-source-lock.md`;
 5. `GPA-006` v2.0.1 — `docs/product-architecture/intelligence.md`;
 6. `GKR-UX-HOMES-OUTCOME-001` v1.0.0 — princípio transversal de resultado das Homes.
@@ -109,7 +109,7 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.6
 → governa narrativa pública, copy de referência e fronteiras da Home
 
 NÍVEL 2
