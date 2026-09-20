@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.19
+id: ROADMAP-13.47.20
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.19
+version: 13.47.20
 owner: Guivos
 last_updated: 2026-09-20
 normative: true
@@ -1959,7 +1959,7 @@ Sequência governada atual:
 22. adjudicar autoridades comuns ainda liberando execução — CONCLUÍDO / P1 VALID;
 23. reconciliar autoridades comuns para estado sem pacote corrente — CONCLUÍDO / HANDOFF v1.6.3 + GENINPUT v2.2.15 + READINESS v1.2.15 + FLOW v3.0.2 + RELEASE v1.2.0;
 24. validar novamente Semantic + Mechanical + re-review no HEAD final — CONCLUÍDO / Semantic #1444 + Mechanical #1672 = SUCCESS / FINAL CODEX RE-REVIEW CLEAN ON d3cd3dce176a4224930cc428483f5530d22e8c6d / PR #402 MERGED @ 0f37eda133dc14a42f686b616993cffcd099cf04;
-25. decidir separadamente nova emissão/revalidação do pacote corrigido — AUTORIZADO / V7 CANDIDATE PRE-SNAPSHOT EM PREPARAÇÃO;
+25. decidir separadamente iniciar preparação/revalidação do pacote corrigido — AUTORIZADO SOMENTE PARA V7 CANDIDATE PRE-SNAPSHOT / SNAPSHOT EMISSION NOT AUTHORIZED;
 26. validar composição e coerência do candidato v7 no HEAD exato — EM CURSO / Semantic + Mechanical + review independente requeridos;
 27. decidir separadamente Ready for Review / merge do candidato v7 — PENDENTE;
 28. após integração do candidato, decidir separadamente emissão/materialização do snapshot v7 — PENDENTE / ATO HUMANO SEPARADO.
