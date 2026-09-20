@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
 title: Homes Públicas — Pacote v7 Candidato para Reemissão e Revalidação
 status: draft
-version: 0.2.1
+version: 0.3.2
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: false
-maturity: reissue_candidate_revalidated_merged_materialization_decision_pending
+maturity: reissue_candidate_realized_by_v7_snapshot_invalidated
 depends_on:
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -18,17 +18,18 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001
 ---
 
 # Homes Públicas — Pacote v7 Candidato para Reemissão e Revalidação
 
 ## 1. Finalidade
 
-Este documento prepara o próximo pacote externo das oito Homes após a invalidação do snapshot v6 para nova execução.
+Este documento preserva a proveniência do candidato que deu origem ao pacote externo v7 das oito Homes após a invalidação do snapshot v6 para nova execução.
 
-Ele **não materializa** um novo snapshot, não cria branch `delivery/design-handoff-v7`, não libera execução operacional, não cria Figma e não libera Product Engineering.
+A materialização foi posteriormente autorizada e executada em `delivery/design-handoff-v7`, registrada por `GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.0.0`. Este documento continua não normativo e não substitui o registro histórico do snapshot v7.
 
-O candidato v7 existe para revalidar a composição externa contra as autoridades canônicas corrigidas após os dois P1 pós-emissão do v6.
+O candidato v7 foi usado para revalidar a composição externa contra as autoridades canônicas corrigidas após os dois P1 pós-emissão do v6.
 
 ```text
 PREPARATION BASE / MAIN
@@ -39,12 +40,12 @@ V6
 → INVALID FOR NEW EXECUTION
 
 V7
-→ CANDIDATE PREPARED
-→ REVALIDATION PASS
-→ MATERIALIZATION DECISION PENDING / SEPARATE HUMAN ACT
+→ CANDIDATE PREPARED / REVALIDATED
+→ REALIZED BY MATERIALIZED SNAPSHOT
 
 CURRENT EXTERNAL SOURCE PACKAGE
 → NONE
+→ V7 MATERIALIZED BUT INVALID FOR NEW EXECUTION
 ```
 
 ## 2. Princípios preservados
@@ -151,9 +152,9 @@ SOURCE PIN METHOD
 → NO V6 PIN REUSE BY INFERENCE
 ```
 
-## 5. Oito guias operacionais previstos para v7
+## 5. Oito guias operacionais realizados no v7
 
-Se a materialização for posteriormente autorizada, cada Home deverá receber exatamente um `00-LEIA-PRIMEIRO.md` contendo:
+A materialização autorizada criou exatamente um `00-LEIA-PRIMEIRO.md` por Home, contendo:
 
 1. nome da Home;
 2. objetivo do pacote;
@@ -172,9 +173,9 @@ Se a materialização for posteriormente autorizada, cada Home deverá receber e
 15. checklist de autoauditoria;
 16. declaração explícita de que nenhum Figma criado pelo GKR é referência.
 
-## 6. Estrutura externa candidata
+## 6. Estrutura externa realizada
 
-A estrutura prevista é:
+A estrutura materializada é:
 
 ```text
 GUIVOS-HOMES-DESIGN-HANDOFF-v7/
@@ -201,12 +202,12 @@ GUIVOS-HOMES-DESIGN-HANDOFF-v7/
 +
 8 READ-FIRST GUIDES
 =
-37 EXPECTED EXTERNAL FILES
+37 EXTERNAL FILES
 ```
 
-## 7. Revalidation gates before any materialization
+## 7. Revalidation gates satisfied before materialization
 
-A materialização v7 somente pode ser considerada após:
+A materialização v7 foi executada somente após a satisfação dos seguintes gates:
 
 - 29/29 fontes confirmadas;
 - path / ID / version / blob reconciliados;
@@ -225,11 +226,14 @@ V6 SNAPSHOT
 → delivery/design-handoff-v6 REMAINS FROZEN
 
 V7 CANDIDATE
-→ DOCUMENTARY PREPARATION ONLY
+→ DOCUMENTARY PROVENANCE OF THE REALIZED SNAPSHOT
 
 delivery/design-handoff-v7
-→ NOT CREATED
-→ NOT AUTHORIZED YET
+→ CREATED UNDER EXPLICIT HUMAN AUTHORIZATION
+→ SNAPSHOT COMMIT 564a2656332dffeb4779ca20ee1ce6697abaa06d
+→ SNAPSHOT TREE 39a72433b0b6f75975bc6a128c57fb688bd85bcb
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
 ```
 
 ## 9. Revalidation and post-merge evidence
@@ -269,7 +273,7 @@ MERGE COMMIT / MAIN
 POST-MERGE SOURCE PIN RECHECK
 → 29 / 29 EXACT MATCH
 
-delivery/design-handoff-v7
+delivery/design-handoff-v7 AT THAT REVALIDATION CHECKPOINT
 → NOT PRESENT
 
 OPEN REVIEW THREADS AT FINAL REVIEWED HEAD
@@ -278,9 +282,15 @@ OPEN REVIEW THREADS AT FINAL REVIEWED HEAD
 REVALIDATION RESULT
 → PASS
 
+POST-EMISSION V7 FINDING
+→ P1 VALID
+→ FIVE COMMON AUTHORITIES CONTAINED STALE NONE / PAUSED STATE
+→ V7 FROZEN / HISTORICAL / INVALID FOR NEW EXECUTION
+
 MATERIALIZATION
-→ NOT AUTHORIZED BY REVALIDATION OR MERGE
-→ REQUIRES SEPARATE EXPLICIT HUMAN ACT
+→ SEPARATELY AUTHORIZED BY HUMAN ACT
+→ EXECUTED FROM MAIN 35c616a4a7bf754577c180d37afe5e0c22380c7b
+→ INTEGRITY-VALIDATED
 ```
 
 ## 10. Estado
@@ -290,22 +300,22 @@ V7 CANDIDATE
 → PREPARED / REVALIDATED
 → MERGED INTO MAIN BY PR #405
 → NON-NORMATIVE
-→ REVALIDATION PASS
+→ REALIZED BY GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.0.0
 → 29 / 29 CANONICAL SOURCES CONFIRMED
-→ POST-MERGE 29 / 29 SOURCE PINS RECONFIRMED
-→ SEMANTIC #1463 = SUCCESS
-→ MECHANICAL #1689 = SUCCESS
-→ INDEPENDENT CODEX REVIEW = CLEAN / NO MAJOR ISSUES
 → FINAL REVIEWED HEAD = 0418b219d4d4a746498cf8b8032b5018f333e29e
-→ MAIN = 574814b561a933291fd3e7539f814f4187398277
 
 CURRENT EXTERNAL SOURCE PACKAGE
 → NONE
+→ REISSUE / REVALIDATION REQUIRED
 
 MATERIALIZATION
-→ DECISION PENDING
-→ SEPARATE HUMAN-GOVERNED ACT
-→ NOT AUTHORIZED BY REVALIDATION
+→ AUTHORIZED / EXECUTED
+→ RESULTING V7 SNAPSHOT LATER INVALIDATED FOR NEW EXECUTION
+→ ORIGIN MAIN 35c616a4a7bf754577c180d37afe5e0c22380c7b
+→ SNAPSHOT COMMIT 564a2656332dffeb4779ca20ee1ce6697abaa06d
+→ SNAPSHOT TREE 39a72433b0b6f75975bc6a128c57fb688bd85bcb
+→ 29 / 29 CANONICAL BLOBS EXACT MATCH
+→ 8 / 8 READ-FIRST GUIDES VALID
 
 DESIGN PRODUCTION RELEASE
 → GRANTED AS HUMAN AUTHORITY

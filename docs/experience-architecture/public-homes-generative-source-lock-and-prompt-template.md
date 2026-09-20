@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.2.15
+version: 2.2.17
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -25,7 +25,7 @@ related:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GPA-006
 normative: true
-maturity: designer_first_optional_ai_tool_neutral_reissue_required
+maturity: designer_first_optional_ai_tool_neutral_current_package_delegated
 ---
 
 # Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
@@ -48,11 +48,12 @@ EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 → DESIGN PRODUCTION RELEASE GRANTED
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
+→ USE ONLY SNAPSHOT DESIGNATED CURRENT / VALID
 
 OPERATIONAL EXECUTION
-→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+→ REQUIRES CURRENT VALID PACKAGE
+→ OTHERWISE PAUSED
 
 AI METHOD
 → AVAILABLE / OPTIONAL / DESIGNER-CONTROLLED
@@ -279,7 +280,7 @@ Na próxima emissão válida, todas as oito Homes deverão receber estas cinco a
 4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`;
 5. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001` — `docs/experience-architecture/public-homes-design-production-release.md`.
 
-As **versões exatas** do conjunto entregue são fixadas pelo manifesto/snapshot correspondente. Não existe candidato externo corrente válido neste estado; `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001` permanece proveniência histórica da emissão v6. A próxima composição deve ser fixada por novo candidato/reissue governado. Este documento não cria version-lock circular entre autoridades comuns.
+As **versões exatas** do conjunto entregue são fixadas pelo Manifesto, Current State e snapshot correspondente. Este documento não fixa se o pacote corrente é `NONE`, v7 ou qualquer emissão futura e não cria version-lock circular entre autoridades comuns. Candidatos e snapshots históricos permanecem apenas como proveniência quando assim classificados pelas autoridades de estado.
 
 Essas cinco fontes não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso opcional de IA, sequência de execução e critérios de produção/aceite.
 
@@ -826,13 +827,12 @@ GENERATIVE METHOD
 → AVAILABLE / OPTIONAL / DESIGNER-CONTROLLED
 
 GENERATIVE EXECUTION
-→ PAUSED
-→ REQUIRES VALID CURRENT EXTERNAL SOURCE PACKAGE
+→ AVAILABLE ONLY AGAINST A SNAPSHOT DESIGNATED CURRENT / VALID
+→ OTHERWISE PAUSED
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
 
 RELEASE AUTHORITY
-→ GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
+→ GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1
 ```

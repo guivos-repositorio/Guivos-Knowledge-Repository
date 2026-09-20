@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.2.15
+version: 1.2.17
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: designer_first_ai_optional_reissue_required
+maturity: designer_first_ai_optional_current_package_delegated
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -143,7 +143,7 @@ Decisão: toda informação não consolidada deve usar uma das classes da seçã
 
 Reclassificação humana: **não é gap**. É liberdade deliberada de Design.
 
-## 6. Pacote fonte corrente / candidato v6 por Home
+## 6. Composição de fontes por Home
 
 Cinco autoridades comuns acompanham todas as Homes:
 
@@ -153,7 +153,7 @@ Cinco autoridades comuns acompanham todas as Homes:
 4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001`;
 5. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`.
 
-Não existe conjunto externo corrente válido neste estado. O v6 candidate/snapshot permanece proveniência histórica da emissão invalidada para nova execução. As versões exatas da próxima entrega deverão ser fixadas por novo candidato/reissue governado. O snapshot v5 permanece histórico e suas versões emitidas são preservadas por `GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001` e pelo Manifesto na seção histórica correspondente.
+A identidade e a validade do pacote externo corrente são determinadas exclusivamente pelo Manifesto + Current State vigentes. Este documento define o contrato de prontidão e a composição semântica, mas não fixa `NONE`, snapshot corrente, candidato corrente ou estado transitório de emissão. As versões exatas de cada entrega são registradas pelo Manifesto e pelo snapshot correspondente.
 
 Fontes específicas:
 
@@ -555,7 +555,7 @@ ZERO FINDING MATERIAL ABERTO
 ATO HUMANO EXPLÍCITO DE DESIGN PRODUCTION RELEASE
 ```
 
-O gate humano foi posteriormente satisfeito e permanece concedido pela autoridade corrente `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0`. O release autoriza a produção externa, mas não permite executar contra um snapshot posteriormente invalidado. A execução operacional depende de um pacote externo corrente e válido, sem antecipar direção criativa, aceite final de Design ou implementação.
+O gate humano foi posteriormente satisfeito e permanece concedido pela autoridade corrente `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1`. O release autoriza a produção externa, mas não permite executar contra um snapshot posteriormente invalidado. A execução operacional depende de um pacote externo corrente e válido, sem antecipar direção criativa, aceite final de Design ou implementação.
 
 ## 16. Estado
 
@@ -570,17 +570,18 @@ V5 SNAPSHOT
 → EMITTED / MATERIALIZED / VALIDATED
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
+→ USE ONLY SNAPSHOT DESIGNATED CURRENT / VALID
 
 MANUAL / AI-ASSISTED DESIGN METHOD
 → AVAILABLE / AI OPTIONAL
 
 OPERATIONAL DESIGN EXECUTION
-→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+→ REQUIRES CURRENT VALID PACKAGE
+→ OTHERWISE PAUSED
 
 FINAL DESIGN ACCEPTANCE
 → HUMAN / SEPARATE

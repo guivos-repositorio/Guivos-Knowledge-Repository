@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 title: Homes Públicas — Autorização Governada de Design Production Release
 status: active
-version: 1.2.0
+version: 1.2.1
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
-maturity: design_production_release_granted_valid_package_required
+maturity: design_production_release_granted_current_package_delegated
 depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -255,8 +255,8 @@ EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 → RELEASED
 
 OPERATIONAL EXECUTION
-→ REQUIRES VALID CURRENT EXTERNAL SOURCE PACKAGE
-→ PAUSED WHILE REISSUE IS PENDING
+→ REQUIRES SNAPSHOT DESIGNATED CURRENT / VALID
+→ CURRENT PACKAGE STATUS GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
 
 MANUAL CREATIVE PRODUCTION
 → AUTHORIZED
@@ -291,11 +291,12 @@ CANONICAL SOURCES
 → RECONCILED
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
+→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
+→ THIS RELEASE DOES NOT FREEZE A TRANSITORY PACKAGE VALUE
 
 NEXT GOVERNED ACT
-→ PREPARE REISSUE / REVALIDATION
-→ MATERIALIZE ONLY BY SEPARATE HUMAN AUTHORIZATION
+→ FOLLOW CURRENT MANIFEST / STATE
+→ MATERIALIZATION OF ANY NEW SNAPSHOT REQUIRES SEPARATE HUMAN AUTHORIZATION
 ```
 
-Somente depois de uma nova emissão válida a designer deve iniciar ou retomar execução operacional contra o pacote externo corrente.
+A designer somente deve iniciar ou retomar execução operacional contra um snapshot que o Manifesto + Estado Atual designem explicitamente como corrente e válido.

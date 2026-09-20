@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 6.2.2
+version: 6.3.2
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: true
-maturity: v7_candidate_revalidated_merged_materialization_decision_pending
+maturity: v7_snapshot_frozen_invalidated_next_reissue_required
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -20,6 +20,7 @@ related:
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001
 ---
 
 # Homes Públicas — Manifesto Canônico de Entrega para Design
@@ -30,7 +31,7 @@ Este Manifesto governa a emissão externa das oito Homes públicas para criaçã
 
 O snapshot **v6 foi emitido, materializado e teve sua integridade validada**, mas uma revisão independente pós-emissão encontrou um P1 material dentro do próprio pacote: o Operational Flow v3.0.1 preservou linguagem pré-emissão incompatível com o uso corrente. O v6 permanece congelado e reproduzível como proveniência histórica, porém **não é válido para nova execução**. Neste estado, não existe pacote externo corrente; nova emissão/revalidação é necessária. O v5 também permanece congelado como snapshot histórico.
 
-O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.1` foi revalidado no HEAD final `0418b219d4d4a746498cf8b8032b5018f333e29e` e integrado em `main` pela PR #405, merge commit `574814b561a933291fd3e7539f814f4187398277`. Os 29/29 pins canônicos foram reconfirmados no `main` pós-merge. Ele permanece não normativo: `CURRENT EXTERNAL SOURCE PACKAGE = NONE` continua verdadeiro e `delivery/design-handoff-v7` permanece inexistente até autorização humana separada de materialização.
+O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.2` foi revalidado, reconciliado e realizado pelo snapshot `GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.1.0`. O v7 foi materializado sob autorização humana explícita a partir de `main = 35c616a4a7bf754577c180d37afe5e0c22380c7b`, em `delivery/design-handoff-v7`, commit `564a2656332dffeb4779ca20ee1ce6697abaa06d`, tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`. Uma revisão independente pós-emissão encontrou um P1 material nas cinco autoridades comuns contidas no próprio snapshot; por isso o v7 permanece congelado/histórico e inválido para nova execução. `CURRENT EXTERNAL SOURCE PACKAGE = NONE`.
 
 ```text
 DESIGNER
@@ -72,11 +73,11 @@ O registro reproduzível da emissão e da invalidação posterior para nova exec
 
 ### 3.1 Fontes comuns
 
-1. `docs/experience-architecture/public-homes-design-handoff.md` — `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.3`;
-2. `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — `GKR-UX-HOMES-GENINPUT-001 v2.2.15`;
-3. `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.2.15`;
-4. `docs/experience-architecture/public-homes-design-delivery-operational-flow.md` — `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.2`;
-5. `docs/experience-architecture/public-homes-design-production-release.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0`.
+1. `docs/experience-architecture/public-homes-design-handoff.md` — `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.5`;
+2. `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — `GKR-UX-HOMES-GENINPUT-001 v2.2.17`;
+3. `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.2.17`;
+4. `docs/experience-architecture/public-homes-design-delivery-operational-flow.md` — `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.3`;
+5. `docs/experience-architecture/public-homes-design-production-release.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1`.
 
 ### 3.2 Pessoa
 
@@ -255,14 +256,20 @@ FROZEN V6 SNAPSHOT
 → INVALID FOR NEW EXECUTION
 
 V7 CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.1
-→ PREPARED / REVALIDATED / MERGED INTO MAIN BY PR #405
-→ NON-NORMATIVE
-→ FINAL REVIEWED HEAD 0418b219d4d4a746498cf8b8032b5018f333e29e
-→ MAIN 574814b561a933291fd3e7539f814f4187398277
-→ POST-MERGE SOURCE PIN RECHECK = 29 / 29 EXACT MATCH
-→ REVALIDATION PASS
-→ MATERIALIZATION DECISION PENDING / SEPARATE HUMAN ACT
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.2
+→ REALIZED BY V7 SNAPSHOT
+→ NON-NORMATIVE PROVENANCE
+
+V7 SNAPSHOT
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.1.0
+→ MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
+→ branch delivery/design-handoff-v7
+→ commit 564a2656332dffeb4779ca20ee1ce6697abaa06d
+→ tree 39a72433b0b6f75975bc6a128c57fb688bd85bcb
+→ 29 / 29 CANONICAL BLOBS EXACT MATCH
+→ 8 / 8 READ-FIRST GUIDES VALID
 
 CURRENT EXTERNAL SOURCE PACKAGE
 → NONE
@@ -298,13 +305,52 @@ REMEDIATION
 
 Esse finding não altera o snapshot v6 histórico. Ele corrige as autoridades canônicas que poderão compor uma futura reemissão.
 
-## 13. Snapshots históricos
+## 13. Finding pós-emissão do v7 — estado transitório congelado nas autoridades comuns
+
+A revisão Codex da PR #407 no HEAD `01a54fb4c5122967b6cba40ee81c3708321fc14a` identificou um P1 material:
+
+```text
+P1 — RECONCILE COMMON AUTHORITIES BEFORE PROMOTING V7
+→ VALID
+
+V7-CONTAINED COMMON CHAIN
+→ HANDOFF v1.6.3
+→ GENINPUT v2.2.15
+→ READINESS v1.2.15
+→ FLOW v3.0.2
+→ RELEASE v1.2.0
+
+CONTRADICTION
+→ PACKAGE CLAIMED CURRENT
+→ EMBEDDED AUTHORITIES SAY PACKAGE = NONE / EXECUTION PAUSED
+
+ADJUDICATION
+→ V7 NOT PROMOTABLE AS CURRENT
+→ V7 REMAINS IMMUTABLE
+→ V7 FROZEN / HISTORICAL / INVALID FOR NEW EXECUTION
+
+CANONICAL REMEDIATION
+→ HANDOFF v1.6.5
+→ GENINPUT v2.2.17
+→ READINESS v1.2.17
+→ FLOW v3.0.3
+→ RELEASE v1.2.1
+→ TRANSITORY CURRENT-PACKAGE VALUE DELEGATED TO MANIFEST + CURRENT STATE
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ NEW REISSUE / REVALIDATION REQUIRED
+```
+
+Essa correção evita que um futuro snapshot congele novamente um valor operacional transitório.
+
+## 14. Snapshots históricos
 
 `delivery/design-handoff-v1` até `delivery/design-handoff-v5` permanecem congelados. O v5 está registrado em `GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001`.
 
 O v6 não reescreve nenhuma emissão anterior. Após o finding pós-emissão, ele permanece congelado como proveniência histórica e não deve ser usado para nova execução.
 
-## 14. Estado
+## 15. Estado
 
 ```text
 V5
@@ -319,10 +365,18 @@ CURRENT EXTERNAL SOURCE PACKAGE
 → NONE
 → REISSUE / REVALIDATION REQUIRED
 
-SNAPSHOT
+LATEST MATERIALIZED SNAPSHOT
+→ delivery/design-handoff-v7
+→ commit 564a2656332dffeb4779ca20ee1ce6697abaa06d
+→ tree 39a72433b0b6f75975bc6a128c57fb688bd85bcb
+
+HISTORICAL INVALID SNAPSHOTS
 → delivery/design-handoff-v6
 → commit b7fe5d62cef444c8316c66edd8ac73b703698a4a
 → tree 61eef7447fc5c6b36890ccb774f7011615a6abca
+→ delivery/design-handoff-v7
+→ commit 564a2656332dffeb4779ca20ee1ce6697abaa06d
+→ tree 39a72433b0b6f75975bc6a128c57fb688bd85bcb
 
 DESIGN PRODUCTION RELEASE
 → GRANTED
@@ -331,7 +385,7 @@ EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 → RELEASED
 
 OPERATIONAL EXECUTION
-→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+→ PAUSED UNTIL A NEW SNAPSHOT IS DESIGNATED CURRENT / VALID
 
 AI
 → OPTIONAL / DESIGNER-CONTROLLED

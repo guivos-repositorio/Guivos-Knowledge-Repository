@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
 title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 status: active
-version: 3.0.2
+version: 3.0.3
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -15,7 +15,7 @@ related:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 normative: false
-maturity: designer_first_ai_optional_post_v6_invalidation_reissue_required
+maturity: designer_first_ai_optional_current_package_delegated
 ---
 
 # Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
@@ -50,7 +50,7 @@ A produção criativa só deve começar quando:
 - não houver finding material aberto de completude;
 - o Design Production Release estiver vigente.
 
-A reauditoria C1–C15 foi concluída para a emissão v6. Uma revisão independente pós-emissão identificou posteriormente um P1 neste próprio fluxo v3.0.1: o snapshot v6 congelado preservou linguagem pré-emissão contraditória. A autoridade canônica foi corrigida nesta revisão v3.0.2; o snapshot v6 não é reescrito e não permanece válido para nova execução. Uma nova emissão/revalidação é necessária antes de iniciar trabalho criativo com um pacote externo corrente.
+A reauditoria C1–C15 foi concluída para a emissão v6. Uma revisão independente pós-emissão identificou posteriormente um P1 neste próprio fluxo v3.0.1: o snapshot v6 congelado preservou linguagem pré-emissão contraditória. A revisão v3.0.2 corrigiu historicamente essa contradição; a revisão corrente v3.0.3 torna esta autoridade package-state agnostic e delega a identidade e a validade do pacote externo ao Manifesto + Current State vigentes. O snapshot v6 não é reescrito e permanece histórico/inválido para nova execução. O início de trabalho criativo depende das condições deste gate conforme o estado vigente nessas autoridades.
 
 ## 3. Isolamento de contexto
 
@@ -220,7 +220,7 @@ Mudanças puramente criativas da designer, sem alteração de contrato, não exi
 ## 11. Estado
 
 ```text
-FLOW v3.0.2
+FLOW v3.0.3
 → DESIGNER-FIRST
 → AI-OPTIONAL
 → TOOL-NEUTRAL
@@ -235,18 +235,16 @@ SOURCE COMPLETENESS AUDIT
 → PRE-EMISSION C1–C15 PASS / CLOSED
 → POST-EMISSION PACKAGE CONSISTENCY P1 ADJUDICATED
 
-V6 SNAPSHOT
-→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
-→ FROZEN / HISTORICAL
-→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
+HISTORICAL INVALID SNAPSHOTS
+→ V6 / V7 REMAIN IMMUTABLE PROVENANCE WHEN SO CLASSIFIED BY MANIFEST / STATE
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
+→ THIS FLOW DOES NOT FREEZE A TRANSITORY PACKAGE VALUE
 
 DESIGN PRODUCTION RELEASE
 → GRANTED
-→ EXECUTION REQUIRES A VALID CURRENT PACKAGE
+→ EXECUTION REQUIRES A SNAPSHOT DESIGNATED CURRENT / VALID
 
 PRODUCT ENGINEERING
 → NOT RELEASED
