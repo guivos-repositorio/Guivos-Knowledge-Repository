@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.2.10
+version: 2.2.11
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -264,16 +264,17 @@ A execução deve utilizar somente o pacote correspondente à Home em trabalho, 
 
 ### 6.0 Fontes comuns obrigatórias
 
-No regime corrente/v6, todas as oito Homes recebem estas quatro autoridades comuns:
+No regime corrente/v6, todas as oito Homes recebem estas cinco autoridades comuns:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — `docs/experience-architecture/public-homes-design-handoff.md`;
 2. `GKR-UX-HOMES-GENINPUT-001` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;
 3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`.
+4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`;
+5. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001` — `docs/experience-architecture/public-homes-design-production-release.md`.
 
 As **versões exatas** do conjunto entregue são fixadas pelo manifesto/snapshot correspondente. Para o candidato corrente, prevalece `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001`. Este documento não cria version-lock circular entre autoridades comuns.
 
-Essas quatro fontes não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso opcional de IA, sequência de execução e critérios de produção/aceite.
+Essas cinco fontes não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso opcional de IA, sequência de execução e critérios de produção/aceite.
 
 ### 6.1 Home Pública — Pessoa
 
@@ -331,9 +332,11 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.6` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.5` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.7` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.6` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
 - `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.2` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
+- `GKR-UX-HOMES-OUTCOME-001 v1.0.0` — `docs/experience-architecture/public-homes-value-outcome-principle.md`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` — `docs/product-architecture/intelligence-product-source-lock.md`;
 - `GPA-006 v2.0.1` — `docs/product-architecture/intelligence.md`.
 
