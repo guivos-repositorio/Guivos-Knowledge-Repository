@@ -2069,10 +2069,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-revalidation-evidence" class="md-nav__link">
+  <a href="#9-revalidation-and-post-merge-evidence" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. Revalidation evidence
+        9. Revalidation and post-merge evidence
       
     </span>
   </a>
@@ -3958,10 +3958,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-revalidation-evidence" class="md-nav__link">
+  <a href="#9-revalidation-and-post-merge-evidence" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. Revalidation evidence
+        9. Revalidation and post-merge evidence
       
     </span>
   </a>
@@ -4203,8 +4203,8 @@ delivery/design-handoff-v7
 → NOT CREATED
 → NOT AUTHORIZED YET
 </code></pre></div>
-<h2 id="9-revalidation-evidence">9. Revalidation evidence<a class="headerlink" href="#9-revalidation-evidence" title="Permanent link">&para;</a></h2>
-<p>A revalidação documental do candidato foi concluída no HEAD <code>59b9dfeb586b06182c58aebf41bfb99d62678e64</code>.</p>
+<h2 id="9-revalidation-and-post-merge-evidence">9. Revalidation and post-merge evidence<a class="headerlink" href="#9-revalidation-and-post-merge-evidence" title="Permanent link">&para;</a></h2>
+<p>A revalidação documental final do candidato foi concluída no HEAD exato <code>0418b219d4d4a746498cf8b8032b5018f333e29e</code> e integrada em <code>main</code> pela PR #405.</p>
 <div class="highlight"><pre><span></span><code>CANONICAL SOURCES
 → 29 / 29 CONFIRMED
 
@@ -4215,35 +4215,54 @@ COMMON-AUTHORITY CHAIN
 → FLOW 3.0.2
 → RELEASE 1.2.0
 
-SEMANTIC #1458
+FINAL PRE-MERGE HEAD
+→ 0418b219d4d4a746498cf8b8032b5018f333e29e
+
+SEMANTIC #1463
 → SUCCESS
 
-MECHANICAL #1684
+MECHANICAL #1689
 → SUCCESS
 
 INDEPENDENT CODEX REVIEW
 → CLEAN / NO MAJOR ISSUES
-→ REVIEWED COMMIT 59b9dfeb58
+→ REVIEWED COMMIT 0418b219d4
 
-OPEN REVIEW THREADS
+PR #405
+→ MERGED
+
+MERGE COMMIT / MAIN
+→ 574814b561a933291fd3e7539f814f4187398277
+
+POST-MERGE SOURCE PIN RECHECK
+→ 29 / 29 EXACT MATCH
+
+delivery/design-handoff-v7
+→ NOT PRESENT
+
+OPEN REVIEW THREADS AT FINAL REVIEWED HEAD
 → 0
 
 REVALIDATION RESULT
 → PASS
 
 MATERIALIZATION
-→ NOT AUTHORIZED BY THIS RESULT
+→ NOT AUTHORIZED BY REVALIDATION OR MERGE
+→ REQUIRES SEPARATE EXPLICIT HUMAN ACT
 </code></pre></div>
 <h2 id="10-estado">10. Estado<a class="headerlink" href="#10-estado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>V7 CANDIDATE
-→ PREPARED
+→ PREPARED / REVALIDATED
+→ MERGED INTO MAIN BY PR #405
 → NON-NORMATIVE
 → REVALIDATION PASS
 → 29 / 29 CANONICAL SOURCES CONFIRMED
-→ SEMANTIC #1458 = SUCCESS
-→ MECHANICAL #1684 = SUCCESS
+→ POST-MERGE 29 / 29 SOURCE PINS RECONFIRMED
+→ SEMANTIC #1463 = SUCCESS
+→ MECHANICAL #1689 = SUCCESS
 → INDEPENDENT CODEX REVIEW = CLEAN / NO MAJOR ISSUES
-→ REVIEWED HEAD = 59b9dfeb586b06182c58aebf41bfb99d62678e64
+→ FINAL REVIEWED HEAD = 0418b219d4d4a746498cf8b8032b5018f333e29e
+→ MAIN = 574814b561a933291fd3e7539f814f4187398277
 
 CURRENT EXTERNAL SOURCE PACKAGE
 → NONE

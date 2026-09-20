@@ -5544,7 +5544,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </ul>
 <h2 id="index-estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#index-estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="#project-current-state-register">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
-<div class="highlight"><pre><span></span><code>GKR-STATE-001 3.48.24
+<div class="highlight"><pre><span></span><code>GKR-STATE-001 3.48.25
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -8556,17 +8556,26 @@ PR #403
 → MERGE COMMIT 1a1386bc318afa2e91f5c1ef5ffd3a80e7265cb2
 → POST-MERGE RECONCILIATION INTEGRATED
 
+PR #405
+→ MERGED
+→ FINAL REVIEWED HEAD 0418b219d4d4a746498cf8b8032b5018f333e29e
+→ SEMANTIC #1463 = SUCCESS
+→ MECHANICAL #1689 = SUCCESS
+→ FINAL INDEPENDENT CODEX REVIEW = CLEAN / NO MAJOR ISSUES
+→ REVIEW THREADS = 0 OPEN
+→ MERGE COMMIT 574814b561a933291fd3e7539f814f4187398277
+→ MAIN RECONFIRMED @ 574814b561a933291fd3e7539f814f4187398277
+
 V7 REISSUE CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.0
-→ PREPARED / NON-NORMATIVE
-→ 29 / 29 CANONICAL SOURCES RECALCULATED FROM MAIN
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.1
+→ PREPARED / REVALIDATED / MERGED INTO MAIN
+→ NON-NORMATIVE
+→ 29 / 29 CANONICAL SOURCES CONFIRMED
+→ POST-MERGE SOURCE PIN RECHECK = 29 / 29 EXACT MATCH
 → REVALIDATION PASS
-→ SEMANTIC #1458 = SUCCESS
-→ MECHANICAL #1684 = SUCCESS
-→ INDEPENDENT CODEX REVIEW = CLEAN / NO MAJOR ISSUES
-→ REVIEWED HEAD 59b9dfeb586b06182c58aebf41bfb99d62678e64
+→ delivery/design-handoff-v7 NOT PRESENT
 → MATERIALIZATION DECISION PENDING / SEPARATE HUMAN ACT
-→ delivery/design-handoff-v7 NOT CREATED
+→ MATERIALIZATION NOT AUTHORIZED BY PR #405 MERGE
 
 CURRENT EXTERNAL SOURCE PACKAGE
 → NONE
@@ -10456,7 +10465,7 @@ GKR-CREATED FIGMA
 <li>reconciliar autoridades comuns para estado sem pacote corrente — CONCLUÍDO / HANDOFF v1.6.3 + GENINPUT v2.2.15 + READINESS v1.2.15 + FLOW v3.0.2 + RELEASE v1.2.0;</li>
 <li>validar novamente Semantic + Mechanical + re-review no HEAD final — CONCLUÍDO / Semantic #1444 + Mechanical #1672 = SUCCESS / FINAL CODEX RE-REVIEW CLEAN ON d3cd3dce176a4224930cc428483f5530d22e8c6d / PR #402 MERGED @ 0f37eda133dc14a42f686b616993cffcd099cf04;</li>
 <li>decidir separadamente preparação da nova emissão/revalidação — CONCLUÍDO / ATO HUMANO AUTORIZADO / V7 CANDIDATE PREPARED;</li>
-<li>revalidar candidato v7 — CONCLUÍDO / 29 OF 29 SOURCES CONFIRMED / Semantic #1458 + Mechanical #1684 = SUCCESS / CODEX CLEAN ON 59b9dfeb586b06182c58aebf41bfb99d62678e64;</li>
+<li>revalidar e integrar candidato v7 — CONCLUÍDO / 29 OF 29 SOURCES CONFIRMED / FINAL Semantic #1463 + Mechanical #1689 = SUCCESS / CODEX CLEAN ON 0418b219d4d4a746498cf8b8032b5018f333e29e / PR #405 MERGED @ 574814b561a933291fd3e7539f814f4187398277 / POST-MERGE SOURCE PIN RECHECK = 29 OF 29 EXACT MATCH / delivery/design-handoff-v7 NOT PRESENT;</li>
 <li>decidir separadamente materialização do v7 — PENDENTE / ATO HUMANO SEPARADO / NOT AUTHORIZED BY REVALIDATION.</li>
 </ol>
 <div class="highlight"><pre><span></span><code>V5 SNAPSHOT
@@ -19658,7 +19667,7 @@ AUTORIDADE FUNCIONAL
 <p><a href="#experience-architecture-public-homes-designer-ai-source-completeness-audit">GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001</a> preserva a prova pré-emissão C1–C15 = PASS em 8/8 Homes / 120 de 120 verificações e registra o P1 de consistência descoberto pós-emissão. A correção foi aplicada na autoridade canônica, não no snapshot congelado.</p>
 <p><a href="#experience-architecture-public-homes-design-delivery-v6-candidate">GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001</a> preserva a definição candidata que foi realizada sem mudança de composição.</p>
 <p><a href="#experience-architecture-public-homes-design-delivery-v6-snapshot-record">GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001</a> registra o snapshot v6 em <code>delivery/design-handoff-v6</code>: 29 fontes canônicas + oito guias = 37 arquivos e 29/29 blobs preservados. O snapshot permanece congelado como proveniência histórica, mas o P1 pós-emissão no Operational Flow v3.0.1 o torna inválido para nova execução. <code>CURRENT EXTERNAL SOURCE PACKAGE = NONE</code> até nova emissão/revalidação.</p>
-<p><a href="#experience-architecture-public-homes-design-delivery-v7-candidate">GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001</a> registra o candidato v7 revalidado: 29/29 fontes confirmadas, Semantic #1458 e Mechanical #1684 em <code>SUCCESS</code>, review independente limpo no HEAD <code>59b9dfeb586b06182c58aebf41bfb99d62678e64</code>, sem materializar <code>delivery/design-handoff-v7</code> e sem alterar <code>CURRENT EXTERNAL SOURCE PACKAGE = NONE</code>.</p></section><section class="print-page" id="journeys" heading-number="6.2"><h1 id="journeys-jornadas-integradas">Jornadas Integradas<a class="headerlink" href="#journeys-jornadas-integradas" title="Permanent link">&para;</a></h1>
+<p><a href="#experience-architecture-public-homes-design-delivery-v7-candidate">GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001</a> registra o candidato v7 revalidado e integrado pela PR #405: 29/29 fontes confirmadas e reconfirmadas pós-merge, Semantic #1463 e Mechanical #1689 em <code>SUCCESS</code>, review independente limpo no HEAD final <code>0418b219d4d4a746498cf8b8032b5018f333e29e</code>, <code>main = 574814b561a933291fd3e7539f814f4187398277</code>, sem materializar <code>delivery/design-handoff-v7</code> e sem alterar <code>CURRENT EXTERNAL SOURCE PACKAGE = NONE</code>.</p></section><section class="print-page" id="journeys" heading-number="6.2"><h1 id="journeys-jornadas-integradas">Jornadas Integradas<a class="headerlink" href="#journeys-jornadas-integradas" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p><strong>F-016-A — desmaterialização física.</strong> Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome <code>.svg</code> remanescente neste documento é <strong>proveniência histórica</strong>, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.</p>
 </blockquote>
@@ -24994,7 +25003,7 @@ NEXT GOVERNED ACT
 <h2 id="experience-architecture-public-homes-design-delivery-manifest-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-public-homes-design-delivery-manifest-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este Manifesto governa a emissão externa das oito Homes públicas para criação pela designer.</p>
 <p>O snapshot <strong>v6 foi emitido, materializado e teve sua integridade validada</strong>, mas uma revisão independente pós-emissão encontrou um P1 material dentro do próprio pacote: o Operational Flow v3.0.1 preservou linguagem pré-emissão incompatível com o uso corrente. O v6 permanece congelado e reproduzível como proveniência histórica, porém <strong>não é válido para nova execução</strong>. Neste estado, não existe pacote externo corrente; nova emissão/revalidação é necessária. O v5 também permanece congelado como snapshot histórico.</p>
-<p>O candidato <code>GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.0</code> foi preparado sobre o <code>main</code> pós-PR #403, com 29/29 fontes recalculadas diretamente da base canônica. Ele é preparação documental não normativa: <code>CURRENT EXTERNAL SOURCE PACKAGE = NONE</code> permanece verdadeiro e <code>delivery/design-handoff-v7</code> não deve existir antes de autorização humana separada de materialização.</p>
+<p>O candidato <code>GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.1</code> foi revalidado no HEAD final <code>0418b219d4d4a746498cf8b8032b5018f333e29e</code> e integrado em <code>main</code> pela PR #405, merge commit <code>574814b561a933291fd3e7539f814f4187398277</code>. Os 29/29 pins canônicos foram reconfirmados no <code>main</code> pós-merge. Ele permanece não normativo: <code>CURRENT EXTERNAL SOURCE PACKAGE = NONE</code> continua verdadeiro e <code>delivery/design-handoff-v7</code> permanece inexistente até autorização humana separada de materialização.</p>
 <div class="highlight"><pre><span></span><code>DESIGNER
 → CREATIVE AUTHOR
 → MANUAL FIRST-CLASS
@@ -25181,8 +25190,12 @@ FROZEN V6 SNAPSHOT
 → INVALID FOR NEW EXECUTION
 
 V7 CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.0
-→ PREPARED / NON-NORMATIVE
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.1
+→ PREPARED / REVALIDATED / MERGED INTO MAIN BY PR #405
+→ NON-NORMATIVE
+→ FINAL REVIEWED HEAD 0418b219d4d4a746498cf8b8032b5018f333e29e
+→ MAIN 574814b561a933291fd3e7539f814f4187398277
+→ POST-MERGE SOURCE PIN RECHECK = 29 / 29 EXACT MATCH
 → REVALIDATION PASS
 → MATERIALIZATION DECISION PENDING / SEPARATE HUMAN ACT
 
@@ -26826,8 +26839,8 @@ delivery/design-handoff-v7
 → NOT CREATED
 → NOT AUTHORIZED YET
 </code></pre></div>
-<h2 id="experience-architecture-public-homes-design-delivery-v7-candidate-9-revalidation-evidence">9. Revalidation evidence<a class="headerlink" href="#experience-architecture-public-homes-design-delivery-v7-candidate-9-revalidation-evidence" title="Permanent link">&para;</a></h2>
-<p>A revalidação documental do candidato foi concluída no HEAD <code>59b9dfeb586b06182c58aebf41bfb99d62678e64</code>.</p>
+<h2 id="experience-architecture-public-homes-design-delivery-v7-candidate-9-revalidation-and-post-merge-evidence">9. Revalidation and post-merge evidence<a class="headerlink" href="#experience-architecture-public-homes-design-delivery-v7-candidate-9-revalidation-and-post-merge-evidence" title="Permanent link">&para;</a></h2>
+<p>A revalidação documental final do candidato foi concluída no HEAD exato <code>0418b219d4d4a746498cf8b8032b5018f333e29e</code> e integrada em <code>main</code> pela PR #405.</p>
 <div class="highlight"><pre><span></span><code>CANONICAL SOURCES
 → 29 / 29 CONFIRMED
 
@@ -26838,35 +26851,54 @@ COMMON-AUTHORITY CHAIN
 → FLOW 3.0.2
 → RELEASE 1.2.0
 
-SEMANTIC #1458
+FINAL PRE-MERGE HEAD
+→ 0418b219d4d4a746498cf8b8032b5018f333e29e
+
+SEMANTIC #1463
 → SUCCESS
 
-MECHANICAL #1684
+MECHANICAL #1689
 → SUCCESS
 
 INDEPENDENT CODEX REVIEW
 → CLEAN / NO MAJOR ISSUES
-→ REVIEWED COMMIT 59b9dfeb58
+→ REVIEWED COMMIT 0418b219d4
 
-OPEN REVIEW THREADS
+PR #405
+→ MERGED
+
+MERGE COMMIT / MAIN
+→ 574814b561a933291fd3e7539f814f4187398277
+
+POST-MERGE SOURCE PIN RECHECK
+→ 29 / 29 EXACT MATCH
+
+delivery/design-handoff-v7
+→ NOT PRESENT
+
+OPEN REVIEW THREADS AT FINAL REVIEWED HEAD
 → 0
 
 REVALIDATION RESULT
 → PASS
 
 MATERIALIZATION
-→ NOT AUTHORIZED BY THIS RESULT
+→ NOT AUTHORIZED BY REVALIDATION OR MERGE
+→ REQUIRES SEPARATE EXPLICIT HUMAN ACT
 </code></pre></div>
 <h2 id="experience-architecture-public-homes-design-delivery-v7-candidate-10-estado">10. Estado<a class="headerlink" href="#experience-architecture-public-homes-design-delivery-v7-candidate-10-estado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>V7 CANDIDATE
-→ PREPARED
+→ PREPARED / REVALIDATED
+→ MERGED INTO MAIN BY PR #405
 → NON-NORMATIVE
 → REVALIDATION PASS
 → 29 / 29 CANONICAL SOURCES CONFIRMED
-→ SEMANTIC #1458 = SUCCESS
-→ MECHANICAL #1684 = SUCCESS
+→ POST-MERGE 29 / 29 SOURCE PINS RECONFIRMED
+→ SEMANTIC #1463 = SUCCESS
+→ MECHANICAL #1689 = SUCCESS
 → INDEPENDENT CODEX REVIEW = CLEAN / NO MAJOR ISSUES
-→ REVIEWED HEAD = 59b9dfeb586b06182c58aebf41bfb99d62678e64
+→ FINAL REVIEWED HEAD = 0418b219d4d4a746498cf8b8032b5018f333e29e
+→ MAIN = 574814b561a933291fd3e7539f814f4187398277
 
 CURRENT EXTERNAL SOURCE PACKAGE
 → NONE
