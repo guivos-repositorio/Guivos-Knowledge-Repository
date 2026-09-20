@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 title: Homes Públicas — Autorização Governada de Design Production Release
 status: active
-version: 1.3.0
+version: 1.3.1
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -15,7 +15,6 @@ depends_on:
   - GKR-UX-HOMES-GENINPUT-001
 related:
   - GKR-STATE-001
-  - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 ---
 
 # Homes Públicas — Autorização Governada de Design Production Release
@@ -24,7 +23,7 @@ related:
 
 Esta autoridade registra o ato humano que libera a **produção externa de Design das oito Homes pela designer**, usando o GKR como fonte de verdade semântica e funcional.
 
-O release permanece válido como autorização humana. Sua execução operacional, porém, exige um pacote externo corrente e semanticamente válido. Um release concedido não cura contradições internas de um snapshot nem autoriza usar um pacote posteriormente invalidado. O método de execução permanece designer-first:
+O release permanece válido como autorização humana. Sua execução operacional usa o conjunto canônico corrente do `main`, conforme o Manifesto vigente. Snapshot ou pacote externo não é pré-condição de Design; quando existir por necessidade real de congelamento ou transporte, não substitui a autoridade do `main`. O método de execução permanece designer-first:
 
 ```text
 DESIGN PRODUCTION RELEASE
