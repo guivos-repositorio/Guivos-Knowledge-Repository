@@ -2,11 +2,11 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.2
+version: 1.0.3
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-08
+last_updated: 2026-09-19
 normative: false
-maturity: reconciled_architecture_pre_materialization
+maturity: reconciled_for_external_design
 depends_on:
   - GEB-P01
   - GKR-CHRISTIAN-FOUNDATION-001
@@ -52,9 +52,10 @@ Este master:
 - preserva a riqueza estratégica construída na frente original;
 - absorve autoridades posteriores de Fundação, Marca, Public Canon, Research e Experience Architecture;
 - corrige formulações superadas sem apagar seu histórico no Git;
-- distingue verdade vigente de materialização futura;
-- não autoriza wireframe, Figma, UI, protótipo, implementação, publicação, campanha ou lançamento;
-- consome a fronteira funcional de Q sem definir sua materialização visual.
+- distingue verdade vigente, autoria criativa de Design e releases operacionais posteriores;
+- governa significado e fronteiras da Home pública, enquanto o release comum vigente autoriza produção externa de Design pela designer;
+- não libera implementação, publicação, campanha, lançamento, UXA-102/V5 ou experiência autenticada;
+- consome a fronteira funcional de Q sem converter Q em autorização para materialização autenticada.
 
 ```text
 MASTER VIGENTE
@@ -77,8 +78,17 @@ Estado desta autoridade:
 HOME PRINCIPAL / PESSOA
 → ARQUITETURA ESTRATÉGICA RECONCILIADA NESTE MASTER
 
-MATERIALIZAÇÃO VISUAL NOVA
-→ NÃO AUTORIZADA POR ESTE DOCUMENTO
+PUBLIC HOME DESIGN PRODUCTION
+→ GRANTED FOR EXTERNAL DESIGNER
+
+DESIGNER
+→ CREATIVE AUTHOR
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+GKR-CREATED FIGMA
+→ NONE
 
 FINAL BASELINE PÓS-AUDITORIA
 → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
@@ -93,7 +103,8 @@ PRIMEIRA RESPONSABILIDADE AUTENTICADA APÓS A HOME
 → PRIMEIRA SUPERFÍCIE DISTINTA DOWNSTREAM = PER-003 — ESCOLHA DE MODALIDADE
 → NOVA SUPERFÍCIE / NOVO PER-ID NÃO EXIGIDOS PELA EVIDÊNCIA ATUAL
 → PER-008 / TELA HOJE = DOWNSTREAM / NÃO É A PRIMEIRA RESPONSABILIDADE AUTENTICADA
-→ DESIGN / WIREFRAME / UI / PROTÓTIPO NÃO AUTORIZADOS POR Q
+→ Q DOES NOT RELEASE AUTHENTICATED DESIGN / WIREFRAME / UI / PROTOTYPE
+→ PUBLIC HOME EXTERNAL DESIGN RELEASE REMAINS GRANTED
 
 UXA-102 / V5
 → NOT_STARTED
@@ -1346,7 +1357,7 @@ SOURCE LOCK ANTIGO
 ≠ VERDADE SUPERIOR AO MASTER RECONCILIADO
 ```
 
-Qualquer futura retomada de materialização exige nova decisão governada e reconciliação das fontes vigentes.
+A produção externa de Design da Home pública já está liberada pelo release comum vigente e não exige novo ato para ser iniciada ou continuada. Novas decisões governadas continuam obrigatórias para implementação, publicação, experiência autenticada, UXA-102/V5 e demais frentes não liberadas.
 
 ---
 
@@ -1371,4 +1382,4 @@ HOME PÚBLICA
 
 Estado desta versão:
 
-> **MASTER RECONCILIADO COM AS AUTORIDADES VIGENTES — CONTEÚDO PRESERVADO E ENRIQUECIDO — Q FUNCTIONAL DEFINITION CONSOLIDATED: PRIMEIRA RESPONSABILIDADE AUTENTICADA = CONTINUAÇÃO AUTENTICADA DE PER-002 / PRIMEIRA SUPERFÍCIE DISTINTA DOWNSTREAM = PER-003 — MATERIALIZAÇÃO NOVA NÃO AUTORIZADA POR ESTE DOCUMENTO.**
+> **MASTER RECONCILIADO COM AS AUTORIDADES VIGENTES — CONTEÚDO PRESERVADO E ENRIQUECIDO — PUBLIC HOME EXTERNAL DESIGN RELEASE = GRANTED — Q FUNCTIONAL DEFINITION CONSOLIDATED: PRIMEIRA RESPONSABILIDADE AUTENTICADA = CONTINUAÇÃO AUTENTICADA DE PER-002 / PRIMEIRA SUPERFÍCIE DISTINTA DOWNSTREAM = PER-003 — IMPLEMENTAÇÃO E MATERIALIZAÇÃO AUTENTICADA NÃO LIBERADAS POR ESTE DOCUMENTO.**

@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
 status: draft
-version: 0.1.1
+version: 0.2.7
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 depends_on:
   - GPA-006
@@ -35,29 +35,30 @@ Este Documento Mestre deriva de autoridades superiores e **não as substitui**.
 Ordem de autoridade:
 
 ```text
-GPA-006 v2.0.0
+GPA-006 v2.0.1
 → autoridade superior do produto
 
-GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
+GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
 → porta de entrada normativa para a Home
 
 GKR-UX-HOMES-OUTCOME-001 v1.0.0
 → princípio transversal de resultado das Homes
 
-GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1
+GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
 → arquitetura narrativa convergida em 11 movimentos
 
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
-→ consolidação mestre desta Home
+GKR-UX-HOME-INTELLIGENCE-MASTER-001
+→ este documento
+→ versão corrente definida no frontmatter e pinada pelo candidato/snapshot
 ```
 
-Este documento ainda **não é o Home Source Lock**.
+Este documento é o Master semântico da Home e deve ser consumido em conjunto com o Home Source Lock vigente. Ele não substitui o Source Lock.
 
 ## 2. Estado governado
 
 ```text
 PRODUTO GUIVOS INTELLIGENCE
-→ CONSOLIDADO EM GPA-006 v2.0.0
+→ CONSOLIDADO EM GPA-006 v2.0.1
 
 PRODUCT SOURCE LOCK
 → INTEGRADO
@@ -67,23 +68,35 @@ HOME PÚBLICA INTELLIGENCE v1
 → 11 MOVIMENTOS CONVERGIDOS
 
 ARQUITETURA NARRATIVA
-→ v0.2.1
+→ v0.2.3
 → COPY DE REFERÊNCIA CORRIGIDA
 
 DOCUMENTO MESTRE
 → ESTE ARTEFATO
-→ v0.1.1
+→ CURRENT VERSION IN FRONTMATTER
 
 HOME SOURCE LOCK
-→ NÃO CRIADO
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
+→ EXISTS / ACTIVE
+→ EXACT VERSION PINNED BY CURRENT DELIVERY CANDIDATE
 
-WIREFRAME / UI / PROTÓTIPO / DESIGN HANDOFF
-→ NÃO INICIADOS NESTE FLUXO
+DESIGN HANDOFF
+→ GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
+→ EXISTS / ACTIVE
+
+PUBLIC HOME DESIGN PRODUCTION
+→ GRANTED FOR EXTERNAL DESIGNER
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
 ```
 
 ## 3. Definição superior preservada
 
-A autoridade de produto permanece em `GPA-006 2.0.0`:
+A autoridade de produto permanece em `GPA-006 2.0.1`:
 
 > **Guivos Intelligence é o Produto Especializado transversal da Guivos e a Intelligence Layer do ecossistema, responsável por transformar dados autorizados, conhecimento, evidências, contextos e relações em compreensão útil, insights, análises, possibilidades e recomendações explicáveis, ampliando a capacidade de Pessoas, Organizações e produtos tomarem melhores decisões dentro de suas próprias autoridades.**
 
@@ -683,14 +696,13 @@ BUSINESS
 
 ## 17. O que este Documento Mestre não autoriza
 
-A criação deste documento não autoriza automaticamente:
+Este documento não libera por si só implementação, integração técnica, publicação comercial, pricing ou criação de autoridades novas por inferência.
 
-- Home Source Lock;
-- wireframe;
-- UI;
-- protótipo;
-- Figma;
-- prompt generativo de Design;
+A produção externa de Design da Home Intelligence — incluindo wireframe, UI, protótipo e Figma — já está autorizada pelo release comum vigente. IA permanece opcional e sob controle da designer.
+
+Continuam não autorizados por inferência:
+
+- criação de novo Home Source Lock;
 - implementação front-end;
 - integração técnica;
 - publicação comercial;
@@ -701,7 +713,7 @@ A criação deste documento não autoriza automaticamente:
 
 ## 18. Itens ainda não congelados
 
-Até o Home Source Lock, permanecem refináveis sem alterar a arquitetura:
+Mesmo com o Home Source Lock vigente, permanecem refináveis pela designer sem alterar a arquitetura:
 
 - formulação final da pergunta-mãe;
 - CTA principal;
@@ -713,20 +725,71 @@ Até o Home Source Lock, permanecem refináveis sem alterar a arquitetura:
 - profundidade pública de Graph/AI;
 - composição visual das duas frentes.
 
-Esses itens não reabrem a identidade nem os onze movimentos já convergidos.
+Esses itens não reabrem a identidade do Produto nem os onze movimentos já convergidos e permanecem sujeitos às classes operacionais do pacote de Design.
 
-## 19. Critério de passagem
+## 19. Estado corrente de consumo e handoff
 
-Este Documento Mestre considera a arquitetura narrativa **conceitualmente completa em 11 movimentos**, com a copy de referência corrigida, e fornece base suficiente para a próxima etapa governada: elaboração do **Home Source Lock da Home Pública Guivos Intelligence v1**.
+A arquitetura narrativa permanece conceitualmente completa em 11 movimentos.
 
-Isso não significa que o Source Lock tenha sido criado ou autorizado por este artefato.
+O estado temporal vigente é:
+
+```text
+GKR-UX-HOME-INTELLIGENCE-MASTER-001
+→ NARRATIVE / SEMANTIC / FUNCTIONAL AUTHORITY
+→ exact version pinned by the current delivery candidate
+
+GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
+→ ACTIVE / NORMATIVE
+→ exact version pinned by the current delivery candidate
+→ HOME SOURCE PACKAGE / INVARIANT FREEZE
+
+GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
+→ PRODUCT SOURCE LOCK
+
+GPA-006 v2.0.1
+→ PRODUCT AUTHORITY
+
+COMPREENDER ≠ DECIDIR
+→ MANDATORY
+```
+
+O Home Source Lock não é mais “próximo ponto”; ele já existe e deve ser consumido no pacote vigente.
+
+### 19.1 Designer-first / IA opcional
+
+```text
+DESIGNER
+→ CREATIVE AUTHOR
+→ MAY WORK MANUALLY
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+GKR / CHATGPT
+→ DOES NOT CREATE OR ADVANCE FIGMA DESIGN FILES
+→ DOES NOT PRESELECT VISUAL DIRECTION
+```
+
+A designer pode criar livremente a expressão visual, desde que preserve:
+
+- Intelligence como Produto Especializado transversal;
+- `COMPREENDER ≠ DECIDIR`;
+- explicabilidade proporcional;
+- privacidade e autoridade;
+- distinção entre sinal, inferência, relação, padrão e causalidade;
+- ausência de diagnóstico ou decisão automática;
+- fronteiras com Journey e Business;
+- ausência de alegação operacional de Graph/AI/Neo4j/GraphRAG/GDS/Power BI sem prova.
+
+### 19.2 Fluxo documental atual
 
 ```mermaid
 flowchart TD
-    P[Product Source Lock\nintegrado] --> A[Arquitetura narrativa\nv0.2.1]
-    A --> M[Documento Mestre\nv0.1.1]
-    M --> S[Home Source Lock\npróximo ponto]
-    S --> D[Handoff / Design controlado]
+    P[Product Source Lock] --> A[Arquitetura narrativa]
+    A --> M[Documento Mestre corrente]
+    M --> S[Home Source Lock corrente]
+    S --> D[Pacote governado para designer]
+    D --> X[Criação externa manual / IA opcional]
 ```
 
-Nenhuma etapa autoriza automaticamente a seguinte.
+Nenhuma etapa documental autoriza Product Engineering automaticamente.

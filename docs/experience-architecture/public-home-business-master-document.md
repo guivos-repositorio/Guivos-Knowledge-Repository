@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.0.0
+version: 1.1.3
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-19
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
 depends_on:
   - GKR-UX-HOME-BUSINESS-NARRATIVE-001
@@ -28,7 +28,7 @@ Ele reúne em uma única arquitetura pública:
 - os contratos de autoridade;
 - a expressão comercial;
 - a conversão global;
-- os movimentos que deverão orientar o futuro Source Lock e Design.
+- os movimentos que orientam o Source Lock vigente e a criação externa de Design.
 
 Este documento **não é**:
 
@@ -38,7 +38,7 @@ Este documento **não é**:
 - protótipo;
 - especificação de preços finais;
 - especificação técnica do configurador;
-- handoff para Design.
+- substituto do Source Lock vigente ou do handoff comum de Design.
 
 A progressão governada passa a ser:
 
@@ -47,8 +47,10 @@ ARQUITETURA NARRATIVA      → CONVERGIDA
 CONTRATOS DE AUTORIDADE    → CONVERGIDOS
 CONVERSÃO GLOBAL           → CONVERGIDA / REFINADA
 DOCUMENTO MESTRE           → CONVERGIDO NESTE DOCUMENTO
-SOURCE LOCK                → PRÓXIMA ETAPA
-DESIGN                     → NÃO AUTORIZADO
+SOURCE LOCK                → EXISTS / ACTIVE
+DESIGN PRODUCTION RELEASE  → GRANTED / EXTERNAL DESIGNER
+AI                         → OPTIONAL / DESIGNER-CONTROLLED
+PRODUCT ENGINEERING        → NOT RELEASED
 ```
 
 ## 2. Precedência deste Documento Mestre
@@ -361,22 +363,15 @@ A Home deve comunicar positivamente aquilo que o Intelligence entrega.
 
 As limitações de causalidade, dados internos empresariais, privacidade e individualidade continuam normativamente preservadas por `GKR-UX-HOME-BUSINESS-AUTHORITY-001`, mas não precisam dominar a copy pública.
 
-## 15. Direção visual obrigatória para o futuro Design
+## 15. Significado e evidências que o Design precisa conseguir expressar
 
-O Movimento Intelligence deve ser prioritariamente demonstrado por uma representação visual do produto, incluindo conceitos como:
+O Movimento Intelligence deve tornar compreensível que a Guivos Business pode apoiar leituras sobre participação, utilização, recorrência, mudanças ao longo do tempo, tendências, interesses agregados, movimentos e distribuições, sempre dentro das autoridades e limites vigentes.
 
-- dashboard;
-- KPIs;
-- gráficos;
-- evolução temporal;
-- participação;
-- utilização;
-- recorrência;
-- tendências;
-- interesses agregados;
-- movimentos e distribuições.
+Esses conceitos governam **o que precisa ser comunicável**, não **como deve ser representado visualmente**.
 
-O Documento Mestre não congela o dashboard final, métricas exatas ou layout.
+A designer possui liberdade para escolher qualquer linguagem visual, composição, recurso ou metáfora adequada — inclusive sem dashboard, KPI ou gráfico — desde que a solução preserve compreensão, hierarquia, evidência, privacidade e os guardrails deste Documento Mestre.
+
+Quando houver números, indicadores ou exemplos apresentados como reais, eles exigem fonte e autoridade aplicáveis. Representações conceituais não podem ser confundidas com prova operacional.
 
 ## 16. CTA para Guivos Intelligence
 
@@ -658,13 +653,56 @@ Este Documento Mestre não:
 - define SLA;
 - congela entitlements;
 - define disponibilidade concreta por país/moeda;
-- cria Source Lock;
+- não substitui o Source Lock vigente;
 - autoriza Design.
 
-## 28. Próximo estágio
+## 28. Estado corrente de handoff
 
-Com este Documento Mestre validado, a próxima etapa governada é:
+O estado temporal anterior foi superado pela criação e integração do Source Lock da Home Business.
 
-> **SOURCE LOCK — HOME GUIVOS BUSINESS**
+```text
+GKR-UX-HOME-BUSINESS-MASTER-001
+→ CANONICAL DOCUMENTARY HANDOFF INPUT
 
-O Source Lock deverá congelar a fonte pública aprovada para implementação e Design, sem reabrir decisões já consolidadas salvo nova autorização explícita.
+GKR-UX-HOME-BUSINESS-SOURCELOCK-001
+→ EXISTS / ACTIVE WITHIN ITS SCOPE
+→ exact version pinned by the current delivery candidate
+
+MASTER
+→ NARRATIVE / SEMANTIC / FUNCTIONAL AUTHORITY
+
+SOURCE LOCK
+→ SOURCE PACKAGE / INVARIANT FREEZE
+
+MASTER
+≠ SOURCE LOCK
+
+MASTER + SOURCE LOCK
+≠ VISUAL DIRECTION
+≠ IMPLEMENTATION RELEASE
+```
+
+Para criação da Home Business, a designer deve consumir o pacote vigente definido pelo Manifesto de entrega, incluindo as autoridades complementares de conversão, autoridade e Produto.
+
+### 28.1 Liberdade de Design
+
+```text
+DESIGNER
+→ CREATIVE AUTHOR
+→ MAY WORK MANUALLY
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+GKR
+→ DOES NOT CREATE FIGMA
+→ DOES NOT DEFINE VISUAL IDENTITY IN ADVANCE
+```
+
+A designer pode criar tipografia, paleta, composição, imagem, grid, componentes, motion, atmosfera e direção visual, desde que preserve as fronteiras deste Master e das autoridades Business vigentes.
+
+### 28.2 Critério de consumo
+
+Nenhuma leitura deste documento deve reabrir como “próxima etapa” a criação do Source Lock já existente.
+
+A próxima frente documental aplicável às Homes é a reauditoria de completude das fontes e eventual emissão de pacote posterior ao v5.

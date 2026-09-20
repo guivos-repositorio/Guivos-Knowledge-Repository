@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 5.0.2
+version: 5.1.6
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: design_delivery_v5_release_granted_pre_execution
+maturity: v5_frozen_v6_candidate_pre_snapshot
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -17,13 +17,15 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
 ---
 
 # Homes Públicas — Manifesto Canônico de Entrega para Design
 
 ## 1. Finalidade
 
-Este Manifesto define o pacote externo v5 emitido para a frente de Design agora liberada, preservando o snapshot materializado e os gates posteriores internos de direção e aceite.
+Este Manifesto registra o pacote externo v5 já emitido e congelado e aponta para o pacote v6 candidato atualmente em finalização documental. O v5 permanece reproduzível como snapshot histórico; novas execuções devem aguardar a adjudicação do v6.
 
 O snapshot v4 permanece histórico e reproduzível, mas não é pacote atual porque seu checkpoint foi superado.
 
@@ -64,12 +66,12 @@ A ausência de identidade visual canônica não é lacuna: estética e sistema v
 
 ### 3.6 Media
 
-13. `docs/experience-architecture/public-home-media-master-document.md` — `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0`;
+13. `docs/experience-architecture/public-home-media-master-document.md` — `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1`;
 14. `docs/product-architecture/media.md` — `GPA-005 v1.2.0`.
 
 ### 3.7 Ads
 
-15. `docs/experience-architecture/public-home-ads-master-document.md` — `GKR-UX-HOME-ADS-MASTER-001 v1.0.0`;
+15. `docs/experience-architecture/public-home-ads-master-document.md` — `GKR-UX-HOME-ADS-MASTER-001 v1.0.1`;
 16. `docs/product-architecture/ads.md` — `GPA-007 v1.3.0`.
 
 ### 3.8 Business
@@ -100,7 +102,7 @@ A emissão v5 gerou oito arquivos adicionais `00-LEIA-PRIMEIRO.md`, um por Home.
 - liberdades criativas;
 - matriz das oito classes operacionais de informação;
 - proibições de inferência;
-- prompt inicial para Figma Make;
+- prompt inicial histórico do v5 para ferramenta generativa; no v6, o guia será tool-neutral e IA será opcional;
 - estado inicial `EXPLORAÇÃO / NÃO CANÔNICA`;
 - checklist de autoauditoria.
 
@@ -158,7 +160,7 @@ MATERIAL CHANGE TO MEANING / INVARIANT / COPY LOCK / SOURCE PACKAGE / PROMPT / A
 → REISSUE / REVALIDATE BEFORE CONTINUING
 ```
 
-Uma alteração criativa no Figma que não modifica o contrato do GKR não exige reemissão do pacote fonte.
+Uma alteração puramente criativa da designer, em qualquer ferramenta, que não modifica o contrato do GKR não exige reemissão do pacote fonte.
 
 ## 6. Regra para ferramentas generativas
 
@@ -216,9 +218,14 @@ SNAPSHOT
 DESIGN PRODUCTION RELEASE
 → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 
-FIGMA MAKE
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+EXTERNAL DESIGNER PRODUCTION
+→ DESIGN PRODUCTION RELEASE GRANTED
+→ MANUAL FIRST-CLASS
 
-FINAL FIGMA
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+V6 PACKAGE
+→ CANDIDATE DEFINED
+→ SNAPSHOT NOT EMITTED
 ```

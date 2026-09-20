@@ -2,9 +2,9 @@
 id: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 title: Source Lock do Produto — Guivos Intelligence
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Product Architecture
-last_updated: 2026-08-18
+last_updated: 2026-09-19
 parent: GPA-006
 depends_on:
   - GPA-006
@@ -25,15 +25,15 @@ normative: true
 
 ## 1. Finalidade
 
-Este documento consolida o **Source Lock do Produto Guivos Intelligence** após a promoção de `GPA-006` para `2.0.0`.
+Este documento consolida o **Source Lock do Produto Guivos Intelligence** após a promoção de `GPA-006` para `2.0.1` e reconcilia seu estado temporal com as autoridades posteriores já existentes da Home Pública.
 
 Seu papel é:
 
-- congelar a base canônica que pode alimentar a futura estruturação da Home Pública do Guivos Intelligence;
+- congelar a base canônica de produto que governa o significado consumido pela Home Pública do Guivos Intelligence;
 - estabelecer a ordem de autoridade entre produto, manifesto, modelo de conhecimento, arquitetura de Intelligence, grafo e autoridades temáticas auxiliares;
 - separar afirmações públicas permitidas de implementação, operação, pricing, infraestrutura ou desempenho ainda não comprovados;
 - impedir que tecnologias, mecanismos ou interfaces substituam silenciosamente a identidade e a proposta de valor do produto;
-- impedir que a futura Home transforme personalização em vigilância, Intelligence populacional em perfil individual ou relevância em prioridade comercial;
+- impedir que a Home Pública transforme personalização em vigilância, Intelligence populacional em perfil individual ou relevância em prioridade comercial;
 - registrar o que continua aberto e não pode ser preenchido por inferência durante a construção da Home.
 
 Este Source Lock **não é**:
@@ -63,14 +63,23 @@ Regra:
 PRODUTO
 Guivos Intelligence
 
-FASE
+ORIGIN PHASE
 Source Lock do Produto — pré-Home
+→ HISTORICAL PROVENANCE
+
+CURRENT HOME STATE
+DOCUMENTO MESTRE = EXISTS
+HOME SOURCE LOCK = EXISTS / ACTIVE
+DESIGN HANDOFF = EXISTS / ACTIVE
+EXTERNAL DESIGN RELEASE = GRANTED
+PRODUCT ENGINEERING = NOT RELEASED
 
 BASE CANÔNICA CONGELADA
 main @ 67557b1c1503d81a716a1b44d7b1a4ae06ed5646
+→ HISTORICAL ORIGIN BASE
 
 AUTORIDADE SUPERIOR DE PRODUTO
-GPA-006 v2.0.0
+GPA-006 v2.0.1
 
 INTELLIGENCE ARCHITECTURE
 GIA-000 v1.5.0
@@ -85,13 +94,13 @@ GRAPH REFERENCE
 GEA-GRAPH-REFERENCE-001 v0.1.2
 ```
 
-O objetivo do lock é preservar uma base única, coerente, auditável e suficientemente restrita para a futura Home sem reabrir a arquitetura do produto.
+O objetivo do lock é preservar uma base única, coerente e auditável de autoridade de produto para a Home vigente, sem reabrir a arquitetura do produto nem competir com as autoridades posteriores de Home e Design.
 
-## 3. Sequência governada
+## 3. Sequência governada — proveniência e estado corrente
 
 ```mermaid
 flowchart TD
-    A[GPA-006 v2.0.0\nProduto convergido]
+    A[GPA-006 v2.0.1\nProduto convergido]
     B[Source Lock do Produto\neste documento]
     C[Arquitetura conceitual da Home Intelligence]
     D[Documento Mestre da Home]
@@ -101,11 +110,11 @@ flowchart TD
     A --> B --> C --> D --> E --> F
 ```
 
-A existência deste Source Lock permite iniciar a **estruturação conceitual da Home** após sua integração governada. Ela não autoriza pular diretamente para Design, wireframe, UI ou implementação.
+Historicamente, a integração deste Source Lock habilitou a estruturação conceitual da Home. Essa progressão já foi concluída documentalmente: Documento Mestre, Home Source Lock e Design Handoff existem, e o release comum vigente concede produção externa de Design à designer. Este documento continua sem autorizar implementação ou Product Engineering.
 
 ## 4. Pacote primário autorizado
 
-A futura Home deve iniciar com um pacote de autoridade deliberadamente pequeno.
+A Home foi estruturada a partir de um pacote de autoridade deliberadamente pequeno; para consumo corrente, esse pacote deve ser lido em conjunto com as autoridades posteriores da Home.
 
 ### Nível 0 — este Source Lock
 
@@ -121,7 +130,7 @@ Governa:
 
 ### Nível 1 — autoridade superior do produto
 
-`GPA-006 v2.0.0 — Guivos Intelligence`
+`GPA-006 v2.0.1 — Guivos Intelligence`
 
 Governa:
 
@@ -190,7 +199,7 @@ Uso permitido:
 - classificação candidata;
 - diferença entre domínio, identidade, diagnóstico, score e prova de evolução.
 
-A futura Home do Intelligence não deve se transformar em uma Home dos Domínios do Journey.
+A Home Pública do Intelligence não deve se transformar em uma Home dos Domínios do Journey.
 
 ### 5.4 Business
 
@@ -202,7 +211,7 @@ Uso permitido:
 - confirmar que Intelligence não é módulo do Business;
 - confirmar que a empresa recebe leitura populacional protegida e não a Journey individual.
 
-A futura Home do Intelligence não deve se transformar em uma Home Business.
+A Home Pública do Intelligence não deve se transformar em uma Home Business.
 
 ## 6. Fontes excluídas por padrão
 
@@ -210,7 +219,7 @@ Não adicionar automaticamente ao contexto inicial da Home:
 
 - conversas e rascunhos não promovidos ao GKR;
 - versões anteriores de `GPA-006`;
-- checkpoints intermediários já consolidados por `GPA-006 v2.0.0`;
+- checkpoints intermediários já consolidados por `GPA-006 v2.0.1`;
 - documentos de uma Home específica;
 - Source Locks das outras Homes;
 - wireframes ou SVGs internos do Journey;
@@ -227,7 +236,7 @@ Quando uma fonte excluída for necessária para responder a uma dúvida concreta
 ```mermaid
 flowchart TD
     L0[0 — Source Lock do Produto]
-    L1[1 — GPA-006 v2.0.0]
+    L1[1 — GPA-006 v2.0.1]
     L2A[2 — GAI-002 Manifesto]
     L2B[2 — GAI-001 Knowledge Model]
     L3[3 — GIA-000 / Graph Reference\nsomente para fronteiras técnicas]
@@ -245,13 +254,13 @@ flowchart TD
 
 Regra de precedência:
 
-> **Em qualquer conflito sobre identidade, valor, autoridade ou limites do Guivos Intelligence, prevalece `GPA-006 v2.0.0`, limitado pelo presente Source Lock quanto ao uso na futura Home.**
+> **Em qualquer conflito sobre identidade, valor, autoridade ou limites do Guivos Intelligence, prevalece `GPA-006 v2.0.1`, limitado pelo presente Source Lock quanto ao uso na Home Pública.**
 
 Arquiteturas e tecnologias não podem reescrever autoridade de produto.
 
 ## 8. Centro semântico congelado
 
-A futura Home deve preservar estes elementos, ainda que sua expressão pública final seja refinada durante a arquitetura narrativa.
+A Home Pública deve preservar estes elementos, ainda que sua expressão pública final seja refinada durante a arquitetura narrativa.
 
 ### 8.1 Natureza
 
@@ -281,7 +290,7 @@ Esses elementos podem ser traduzidos editorialmente, mas não substituídos por 
 
 ## 9. Duas frentes obrigatórias
 
-A futura Home deve reconhecer que existe **um único produto com duas frentes superiores de valor**.
+A Home Pública deve reconhecer que existe **um único produto com duas frentes superiores de valor**.
 
 ```mermaid
 flowchart TD
@@ -341,11 +350,11 @@ PAGAMENTO ≠ PERTINÊNCIA
 MAIOR PLANO ≠ MENOR PRIVACIDADE
 ```
 
-Esses contratos são semânticos e arquiteturais. A futura Home não pode removê-los do significado mesmo quando não aparecerem literalmente em copy pública.
+Esses contratos são semânticos e arquiteturais. A Home Pública não pode removê-los do significado mesmo quando não aparecerem literalmente em copy pública.
 
 ## 11. Tradução pública permitida — Pessoa / Journey
 
-A futura Home pode comunicar que o Intelligence:
+A Home Pública pode comunicar que o Intelligence:
 
 - considera contexto autorizado para tornar a própria experiência da Pessoa mais relevante;
 - relaciona conhecimento, evidências, experiências e possibilidades;
@@ -366,7 +375,7 @@ Não pode comunicar que o Intelligence:
 
 ## 12. Tradução pública permitida — Business / População
 
-A futura Home pode comunicar que o Intelligence ajuda empresas a compreender:
+A Home Pública pode comunicar que o Intelligence ajuda empresas a compreender:
 
 - participação;
 - utilização;
@@ -390,7 +399,7 @@ Não pode comunicar que o Intelligence:
 
 ## 13. Relação com os demais Produtos Especializados
 
-A futura Home pode demonstrar transversalidade, desde que preserve:
+A Home Pública pode demonstrar transversalidade, desde que preserve:
 
 ```mermaid
 flowchart LR
@@ -445,7 +454,7 @@ flowchart LR
 
 ## 15. Tecnologia — posição pública permitida
 
-A futura Home pode comunicar que o Guivos Intelligence combina, conforme finalidade e autoridade:
+A Home Pública pode comunicar que o Guivos Intelligence combina, conforme finalidade e autoridade:
 
 - conhecimento;
 - relações;
@@ -472,7 +481,7 @@ Não inverter essa cadeia.
 
 ## 16. Tecnologia — claims proibidos no estado atual
 
-Sem nova evidência canônica, a futura Home não pode afirmar:
+Sem nova evidência canônica, a Home Pública não pode afirmar:
 
 - Neo4j em produção;
 - Grafo Global populado em produção;
@@ -606,7 +615,7 @@ O produto reconhece seis modos conceituais:
 - documental;
 - programático.
 
-A futura Home pode comunicar que Intelligence pode aparecer **dentro de outros produtos ou como experiência direta**.
+A Home Pública pode comunicar que Intelligence pode aparecer **dentro de outros produtos ou como experiência direta**.
 
 Não deve transformar a existência conceitual desses modos em claim de disponibilidade operacional atual.
 
@@ -626,7 +635,7 @@ PRODUTO PRÓPRIO
 ASSINATURA PRÓPRIA OBRIGATÓRIA
 ```
 
-A futura Home não deve inventar checkout, plano ou preço próprio de Intelligence para Pessoa.
+A Home Pública não deve inventar checkout, plano ou preço próprio de Intelligence para Pessoa.
 
 ### Business
 
@@ -644,11 +653,11 @@ MAIOR PLANO
 
 Uma oferta B2B autônoma do Guivos Intelligence permanece **possibilidade futura**.
 
-A futura Home não pode tratá-la como oferta vigente, plano contratado ou checkout disponível sem nova autoridade.
+A Home Pública não pode tratá-la como oferta vigente, plano contratado ou checkout disponível sem nova autoridade.
 
 ## 23. Privacy e proteção como parte do significado do produto
 
-A futura Home pode comunicar confiança, proteção e responsabilidade como propriedades arquiteturais do produto.
+A Home Pública pode comunicar confiança, proteção e responsabilidade como propriedades arquiteturais do produto.
 
 Não pode afirmar, sem evidência operacional própria:
 
@@ -821,11 +830,13 @@ CONSULTAR / NÃO CONSULTAR / REABRIR GOVERNANÇA
 
 Uma fonte consultada pontualmente não se torna automaticamente parte permanente do lock.
 
-## 31. Checklist pré-Home
+## 31. Checklist de integridade da Home
 
-Antes de iniciar a arquitetura conceitual da Home Intelligence, confirmar:
+Este checklist nasceu no estágio pré-Home e permanece apenas como verificação de integridade da autoridade de produto. No estado corrente, **não antecede, não bloqueia e não reabre** o Documento Mestre, o Home Source Lock, o Design Handoff ou o release externo de Design já existentes.
 
-- `GPA-006 v2.0.0` permanece vigente;
+Ao reutilizar este Source Lock no contexto vigente da Home Intelligence, confirmar:
+
+- `GPA-006 v2.0.1` permanece vigente;
 - este Source Lock permanece vigente;
 - nenhuma autoridade posterior alterou as duas frentes superiores;
 - nenhuma autoridade posterior alterou os contratos de privacidade, relevância ou comercialização;
@@ -872,13 +883,9 @@ MATURIDADE
 ≠ implementação ou operação comprovada
 ```
 
-## 33. Próximo ato governado
+## 33. Progressão histórica e estado corrente
 
-Após integração deste Source Lock:
-
-> **iniciar a arquitetura conceitual da Home Pública do Guivos Intelligence, utilizando este documento como porta de entrada e `GPA-006 v2.0.0` como autoridade superior de produto.**
-
-A sequência permanece:
+A progressão histórica iniciada por este Source Lock foi concluída documentalmente até o handoff da Home:
 
 ```mermaid
 flowchart LR
@@ -887,8 +894,33 @@ flowchart LR
     C[Documento Mestre da Home]
     D[Source Lock da Home]
     E[Handoff de Design]
+    F[Design externo\nrelease comum vigente]
 
-    A --> B --> C --> D --> E
+    A --> B --> C --> D --> E --> F
 ```
 
-Nenhuma etapa autoriza automaticamente a seguinte.
+Estado corrente:
+
+```text
+GPA-006 v2.0.1
+→ AUTORIDADE SUPERIOR DE PRODUTO
+
+HOME MASTER
+→ EXISTS / CURRENT
+
+HOME SOURCE LOCK
+→ EXISTS / ACTIVE
+
+DESIGN HANDOFF
+→ EXISTS / ACTIVE
+
+EXTERNAL DESIGN
+→ GRANTED BY COMMON RELEASE
+→ DESIGNER = CREATIVE AUTHOR
+→ AI = OPTIONAL / DESIGNER-CONTROLLED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+```
+
+A proveniência pré-Home permanece histórica. Ela não funciona como gate corrente para a designer e não reabre etapas já concluídas.

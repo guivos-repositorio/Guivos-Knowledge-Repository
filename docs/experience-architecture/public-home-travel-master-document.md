@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-TRAVEL-MASTER-001
 title: Home Pública — Guivos Travel — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.1.3
 owner: Experience Architecture
-last_updated: 2026-08-13
+last_updated: 2026-09-19
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-003
@@ -27,7 +27,7 @@ A Home do Travel é uma apresentação pública especializada de uma capacidade 
 
 Este documento governa **somente a Home do Guivos Travel**.
 
-Ele não materializa wireframe, UI, protótipo, frontend, backend ou implementação e não autoriza automaticamente nenhuma dessas etapas.
+Este Master não cria por si só implementação ou publicação. A produção externa de Design da Home Travel — incluindo wireframe, UI e protótipo — está autorizada pelo release comum vigente e permanece sob autoria criativa da designer.
 
 Também não governa páginas internas de resultados, hotel, voo, pacote, experiência, reserva, passageiro, pagamento, voucher, perfil, checkout ou pós-venda.
 
@@ -325,7 +325,7 @@ Direção de título:
 
 # Descubra para onde ir.
 
-Esta deve ser uma das áreas visualmente mais fortes da Home.
+Este movimento possui **alta importância narrativa** porque torna inspiração, realidade do destino e possibilidade de viagem imediatamente compreensíveis. A forma, intensidade e linguagem visual usadas para expressar essa importância pertencem integralmente à designer.
 
 A descoberta deve privilegiar:
 
@@ -837,10 +837,146 @@ Expressão complementar:
 
 ## 39. Estado de prontidão
 
-A arquitetura conceitual desta Home está convergida para registro documental.
+A arquitetura conceitual desta Home está convergida e reconciliada para consumo no regime comum designer-first / IA opcional.
 
-Não há, neste documento, autorização para wireframe ou materialização visual.
+O release comum vigente autoriza a produção externa de Design da Home Travel pela designer. Este Master governa significado, narrativa, fronteiras e evidências; não prescreve identidade visual nem substitui a autoria criativa da designer.
+
+```text
+TRAVEL PUBLIC HOME DESIGN
+→ GRANTED FOR EXTERNAL DESIGNER
+
+DESIGNER
+→ CREATIVE AUTHOR
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+GKR-CREATED FIGMA
+→ NONE
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+
+IMPLEMENTATION / PUBLICATION
+→ NOT RELEASED BY THIS DOCUMENT
+```
 
 Estado:
 
-> **ARQUITETURA CONCEITUAL CONVERGIDA — REGISTRADA COMO DOCUMENTO MESTRE; MATERIALIZAÇÃO VISUAL NÃO AUTORIZADA.**
+> **ARQUITETURA CONCEITUAL CONVERGIDA — DOCUMENTO MESTRE RECONCILIADO PARA PRODUÇÃO EXTERNA DE DESIGN; IMPLEMENTAÇÃO E PUBLICAÇÃO NÃO LIBERADAS.**
+
+---
+
+## 40. Contrato determinístico de consumo para Designer e IA
+
+Esta seção absorve no próprio Master as regras antes preservadas apenas em `GKR-HOME-MASTERS-REMEDIATION-001`.
+
+Ela não define layout, estética ou implementação.
+
+### 40.1 Estados semânticos obrigatórios
+
+```text
+TRAVEL-HS-01 — BASELINE_PUBLIC
+→ pergunta-mãe, identidade Guivos, inspiração e acesso aos serviços permanecem a base permanente da Home
+
+TRAVEL-HS-02 — OPERATIONAL_SERVICE
+→ os nove serviços registrados no Master/GPA-003 podem ser apresentados como operação existente
+→ isso não implica disponibilidade de toda oferta, data, tarifa ou destino
+
+TRAVEL-HS-03 — DESTINATION_OR_EXPERIENCE_PROVEN
+→ destino, imagem, experiência ou contexto apresentado como real deve possuir lastro real
+→ imagem inspiracional não simula disponibilidade operacional
+
+TRAVEL-HS-04 — OFFER_DATA_AVAILABLE
+→ preço, pontos, condição ou disponibilidade específica só aparecem quando sustentados pela oferta aplicável
+
+TRAVEL-HS-05 — OFFER_DATA_UNAVAILABLE_OR_ERROR
+→ ausência, erro ou indisponibilidade não se convertem em tarifa, vaga, disponibilidade, parceiro ou condição fictícios
+→ tratamento visual/copy de fallback permanece DESIGN_CREATIVE / CONTENT_CANDIDATE dentro das fronteiras
+
+TRAVEL-HS-06 — CAMPAIGN_OR_SPONSORED
+→ campanha é camada temporária e patrocínio permanece identificado
+→ nenhuma dessas condições compra relevância orgânica nem redefine o Hero permanente
+```
+
+### 40.2 Comportamentos e interações
+
+1. A Pessoa pode começar por descoberta/inspiração ou por acesso direto a serviço.
+2. A narrativa não pode obrigar quem sabe o que procura a percorrer todos os movimentos antes de avançar.
+3. `Serviços`, `Destinos` e `Experiências` permanecem territórios conceituais distintos.
+4. Os nove serviços podem ser organizados pela lógica da viagem sem se tornarem nove produtos desconectados.
+5. Relacionar serviços a uma mesma viagem não cria contratação conjunta obrigatória.
+6. Destino e experiência permanecem conceitos diferentes.
+7. Preço monetário e preço em pontos só aparecem quando elegíveis; saldo global pertence ao contexto de conta/Perfil.
+8. Resultado de busca, detalhe, reserva, passageiro, pagamento, voucher, checkout e pós-venda começam fora da Home.
+
+### 40.3 Navegação governada
+
+```text
+GUIVOS
+→ retorno à Home principal
+
+TRAVEL
+→ identificação da especialidade atual
+
+SERVIÇOS
+→ acesso às capacidades operacionais registradas
+
+DESTINOS
+→ descoberta de lugares reais
+
+EXPERIÊNCIAS
+→ descoberta do que pode ser vivido no destino
+
+BUSCAR
+→ acesso direto quando aplicável
+
+PERFIL
+→ acesso global
+→ comportamento interno fora do escopo da Home
+```
+
+Os CTAs finais expressam destinos semânticos; não congelam rota, URL ou componente.
+
+### 40.4 Contrato para IA e desenvolvimento futuro
+
+É proibido inferir ou fabricar:
+
+- destino, imagem, experiência, fornecedor ou parceiro inexistente;
+- tarifa, disponibilidade, elegibilidade, data, inventário ou condição comercial sem fonte aplicável;
+- cobertura mundial, liderança ou escala sem evidência;
+- pagamento híbrido, taxa de conversão ou regra econômica não autorizada;
+- reserva, checkout, emissão, cancelamento, reembolso, voucher ou pós-venda não definidos;
+- recomendação/personalização sem base, finalidade e autoridade aplicáveis;
+- obrigação de bundle entre serviços;
+- causalidade ou promessa de transformação por viajar.
+
+### 40.5 Critérios objetivos de aceite semântico
+
+Um artefato derivado é semanticamente aceitável somente se:
+
+1. preserva a pergunta-mãe e a arquitetura em onze movimentos sem impor onze seções visuais;
+2. mantém inspiração e operação real simultaneamente legíveis;
+3. permite acesso direto aos serviços sem percurso narrativo obrigatório;
+4. preserva os nove serviços operacionais sem inventar um décimo serviço;
+5. distingue destino, experiência, oferta e conteúdo editorial;
+6. usa somente destinos, imagens, experiências, ofertas e condições sustentados;
+7. mantém páginas internas e fluxos de reserva fora do escopo da Home;
+8. não obriga contratação conjunta de serviços relacionados;
+9. mantém `TRAVEL-HS-01..06` semanticamente distinguíveis;
+10. não transforma este Master em direção visual.
+
+### 40.6 Liberdade criativa
+
+```text
+CANONICAL
+→ significado / estados / relações / limites acima
+
+DESIGN_CREATIVE
+→ tipografia / cor / fotografia / vídeo / composição / grid / mapas / motion / componentes / ritmo / atmosfera
+
+AI
+→ OPTIONAL TOOL
+→ MAY PROPOSE
+→ MAY NOT INVENT DESTINATIONS, AVAILABILITY, PRICES OR PARTNERS
+```

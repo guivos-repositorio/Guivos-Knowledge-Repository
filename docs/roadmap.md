@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.46.0
+id: ROADMAP-13.47.13
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.46.0
+version: 13.47.13
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -12,6 +12,8 @@ related:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
@@ -165,7 +167,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | O/C wireframes low-fidelity | **AUTHORIZATION GRANTED / DELIVERY v0.1.0 EXECUTED / VALIDATION v1.0.0 PASS / CURRENT REFERENCE = DELIVERY + VALIDATION** |
 | O/C high-fidelity eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0 / AUTHORIZATION NOT_GRANTED** |
 | GKR Global Update — 18/09/2026 | **CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION / PAUSE COMPLETED / FUNCTIONAL ADVANCEMENT RESUMED BY HUMAN AUTHORIZATION** |
-| Design das Homes públicas | **DESIGN PRODUCTION RELEASE GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0 / FIGMA MAKE AUTHORIZED TO EXECUTE** |
+| Design das Homes públicas | **DESIGNER-FIRST / DESIGN PRODUCTION RELEASE GRANTED / SOURCE COMPLETENESS v6 CANDIDATE PASS / AI OPTIONAL** |
 | O/C autenticado high-fidelity | **ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED / SEPARATE GOVERNED GATE** |
 
 Inventário físico corrente após F-016-A:
@@ -446,7 +448,7 @@ Estado:
 
 ```text
 COMPLETED
-DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 ```
 
 O Lote D foi fechado documentalmente pela sequência canônica de PRs #342–#349, preservando e reconciliando a narrativa pública da Home principal/Pessoa contra Fundação, Marca, Public Canon, Journey, Research, Domínios de Evolução e Experience Architecture.
@@ -475,7 +477,7 @@ Gate vigente pós-Q:
 
 ```text
 HOME PRINCIPAL / PESSOA
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+→ DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 
 FINAL BASELINE
 → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
@@ -527,7 +529,7 @@ Estado:
 
 ```text
 COMPLETED
-DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 ```
 
 O Lote E reconstruiu a autoridade de consumo da Home O/C e reconciliou os detalhes especializados sem antecipar a experiência autenticada.
@@ -535,7 +537,7 @@ O Lote E reconstruiu a autoridade de consumo da Home O/C e reconciliou os detalh
 Autoridades atuais:
 
 ```text
-GKR-UX-HOME-OC-MASTER-001 v1.0.0
+GKR-UX-HOME-OC-MASTER-001 v1.0.3
 → autoridade de consumo
 
 GKR-UX-HOME-OC-NARR-001 v0.2.0
@@ -570,21 +572,21 @@ Fechamento residual E6:
 
 - P1–P5 O/C foram reclassificados como proveniência histórica, não sequência operacional atual;
 - o Source Lock histórico O/C permanece evidência de checkpoint não autorizadora;
-- o pacote transversal de Design permanece não autorizado por P e exige ato governado próprio;
+- o bloqueio de Design herdado de P foi superado pelo release comum posterior; a produção externa das Homes públicas está liberada para a designer, sem liberar implementação ou experiência autenticada;
 - snapshots históricos de Design permanecem preservados como fatos de seus checkpoints.
 
 Gate:
 
 ```text
 HOME O/C
-→ DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+→ DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 
-WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
-→ NOT AUTHORIZED BY P CLOSURE
-→ REQUIRES SEPARATE GOVERNED ACT
+PUBLIC HOME WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
+→ GRANTED FOR EXTERNAL DESIGNER BY COMMON RELEASE
 
 EXPERIÊNCIA AUTENTICADA O/C
 → NOT MATERIALIZED BY LOT E
+→ AUTHENTICATED HIGH-FIDELITY REMAINS SEPARATELY GOVERNED
 ```
 
 ## 10. Lote F — Homes dos Produtos Especializados
@@ -593,7 +595,7 @@ Estado:
 
 ```text
 COMPLETED
-DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION
+DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
 ```
 
 O Lote F auditou em conjunto Mall, Travel, Media, Ads, Business e Intelligence.
@@ -607,7 +609,7 @@ Autoridades superiores confrontadas:
 | Media | `GPA-005 v1.2.0` |
 | Ads | `GPA-007 v1.3.0` |
 | Business | `GPA-004 v1.6.0` |
-| Intelligence | `GPA-006 v2.0.0` |
+| Intelligence | `GPA-006 v2.0.1` |
 
 Diagnóstico inicial:
 
@@ -632,12 +634,12 @@ Resultado:
 
 | Home | Estado documental |
 |---|---|
-| Mall | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Travel | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Media | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Ads | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Business | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
-| Intelligence | `DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION` |
+| Mall | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Travel | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Media | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Ads | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Business | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Intelligence | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
 
 O Lote F também corrige `GIA-000` para `v1.6.0`, reconhecendo Product Source Lock integrado, Documento Mestre existente e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` como Source Lock ativo/normativo da Home Intelligence. O Source Lock congela fontes e invariantes e não autoriza, por si só, Design, materialização, implementação ou publicação.
 
@@ -1076,7 +1078,7 @@ F-022
 → NOT OPENED
 ```
 
-`GPA-006 v2.0.0` continua autoridade do produto; `GIA-000 v1.7.0` é a arquitetura vigente de Intelligence e reconhece `GIA-COG-001 v0.1.1` como Cognitive Reference Architecture ativa/normativa; `GEA-GRAPH-REFERENCE-001` permanece referência arquitetural; `ADR-007` mantém Neo4j apenas como referência primária. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0` permanece Source Lock ativo/normativo da Home, sem equivaler a autorização de Design ou implementação.
+`GPA-006 v2.0.1` continua autoridade do produto; `GIA-000 v1.7.0` é a arquitetura vigente de Intelligence e reconhece `GIA-COG-001 v0.1.1` como Cognitive Reference Architecture ativa/normativa; `GEA-GRAPH-REFERENCE-001` permanece referência arquitetural; `ADR-007` mantém Neo4j apenas como referência primária. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9` permanece Source Lock ativo/normativo da Home; sua autoridade semântica não equivale, por si só, a autorização de implementação. O Design externo é regido pelas autoridades comuns posteriores.
 
 ```text
 GIA-COG-001 ACTIVE / NORMATIVE
@@ -1910,62 +1912,67 @@ PRODUCT ENGINEERING
 
 Navigation Materialization foi promovida canonicamente após Surface Map + State Map + Priority Flows + eligibility PASS. Os Authenticated Wireframes low-fidelity foram posteriormente autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O ciclo low-fidelity está fechado; uma eventual frente high-fidelity depende primeiro de adjudicação própria de elegibilidade. High-fidelity UI, protótipo e Product Engineering continuam não autorizados.
 
-## Public Homes — Design Production Readiness / Figma
+## Public Homes — finalização das fontes para Designer e IA opcional
 
-Prioridade temporária aberta para preparar a contratação e produção definitiva das oito Homes públicas em Figma.
-
-Esta frente não prescreve identidade visual. Criatividade, originalidade e imaginação da designer são parte deliberada do processo.
+A prioridade corrente é deixar as oito Homes **100% prontas documentalmente antes do início do trabalho criativo da designer**, sem produzir direção visual no GKR.
 
 ```text
 GKR
-→ SIGNIFICADO / FUNÇÃO / LIMITES / VERDADE
+→ SIGNIFICADO / FUNÇÃO / LIMITES / VERDADE / EVIDÊNCIA
 
-DESIGN
+DESIGNER
 → EXPRESSÃO VISUAL / CRIATIVA
+→ MANUAL FIRST-CLASS
 
-FIGMA MAKE
-→ EXPLORAÇÃO / PROTÓTIPO
+AI
+→ OPTIONAL
 
-HUMAN GATE
-→ APROVA DIREÇÃO ANTES DO FIGMA DEFINITIVO
+GKR-CREATED FIGMA
+→ NONE
 ```
 
-Sequência governada:
+Sequência governada atual:
 
-1. reconciliar Handoff pós-auditoria;
-2. expandir template generativo para oito Homes;
-3. formalizar contrato de prontidão e aceite Figma;
-4. preparar Manifesto v5;
-5. integrar changeset em `main` mediante gates próprios;
-6. capturar `main` pós-merge;
-7. revalidar 26/26 fontes;
-8. gerar oito Source Locks operacionais;
-9. materializar snapshot externo v5 — CONCLUÍDO;
-10. validar isolamento e reproduzibilidade — CONCLUÍDO;
-11. registrar snapshot v5 na autoridade corrente — CONCLUÍDO / INTEGRADO EM `main`;
-12. Semantic + Mechanical no HEAD de registro;
-13. revisão independente;
-14. adjudicar findings, se houver;
-15. ato humano explícito de Design Production Release — CONCLUÍDO / GRANTED;
-16. iniciar Figma Make / prototipação de Design — AUTHORIZED / NOT_STARTED.
+1. reafirmar designer-first / IA opcional — CONCLUÍDO;
+2. abandonar exploração Figma criada pelo GKR como referência — CONCLUÍDO;
+3. abrir auditoria C1–C15 — CONCLUÍDO;
+4. remover gate obrigatório de ferramenta generativa — CONCLUÍDO;
+5. absorver contrato determinístico em Mall Master — CONCLUÍDO;
+6. absorver contrato determinístico em Travel Master — CONCLUÍDO;
+7. reconciliar Business Master com Source Lock vigente — CONCLUÍDO;
+8. reconciliar Intelligence Master com Source Lock vigente — CONCLUÍDO;
+9. reauditar 8/8 Homes como pacotes completos — CANDIDATE PASS / 120 OF 120;
+10. definir pacote v6 candidato — CONCLUÍDO;
+11. sincronizar Estado / Roadmap / navegação — CONCLUÍDO;
+12. executar Semantic + Mechanical no HEAD final — PENDENTE;
+13. executar revisão independente no HEAD final — PENDENTE;
+14. adjudicar findings, se houver — PENDENTE;
+15. decidir separadamente Ready for Review / merge — NÃO AUTORIZADO;
+16. após integração, decidir separadamente emissão/materialização do snapshot v6 — NÃO AUTORIZADO.
 
 ```text
 V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
+→ FROZEN / HISTORICAL
 → delivery/design-handoff-v5
-→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
-→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
-→ 34 FILES
-→ 26 / 26 CANONICAL BLOBS MATCH
+→ f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
+
+SOURCE COMPLETENESS
+→ C1–C15 CANDIDATE PASS
+→ 8 / 8 HOMES
+→ 120 / 120
+
+V6 PACKAGE CANDIDATE
+→ 29 CANONICAL SOURCES
+→ 8 READ-FIRST GUIDES
+→ 37 FILES TOTAL
+→ SNAPSHOT NOT EMITTED
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED
+→ EXTERNAL DESIGNER PRODUCTION
 
-FIGMA MAKE / GENERATIVE EXPLORATION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-
-FINAL FIGMA PRODUCTION
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
 
 O/C HIGH-FIDELITY DESIGN
 → ELIGIBILITY PASS PRESERVED

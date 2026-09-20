@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
 title: Handoff Canônico para Design — Home Pública — Guivos Intelligence
 status: active
-version: 1.0.0
+version: 1.1.10
 owner: Experience Architecture
-last_updated: 2026-08-19
+last_updated: 2026-09-19
 parent: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
@@ -49,9 +49,9 @@ Este Handoff **não é**:
 - implementação;
 - autorização de publicação.
 
-## 2. Base exata do Handoff
+## 2. Base de origem e reconciliação corrente
 
-Este Handoff foi preparado a partir do estado reconciliado:
+A base abaixo registra a proveniência histórica de criação deste Handoff:
 
 ```text
 main
@@ -67,7 +67,7 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
 → normative: true
 ```
 
-O Handoff não altera a autoridade superior congelada nesse estado.
+O Handoff preserva essa proveniência, mas seu consumo corrente é reconciliado pelas autoridades posteriores e pelo candidato v6.
 
 ## 3. Cadeia de autoridade
 
@@ -75,23 +75,23 @@ Para Design, aplicar a seguinte ordem:
 
 ```text
 NÍVEL 0
-GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7
 → governa narrativa pública, copy e fronteiras da Home
 
 NÍVEL 2
-GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1
+GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
 → governa função, ordem e separação dos 11 movimentos
 
 NÍVEL 3
-GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
+GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
 → governa a tradução pública permitida do produto
 
 NÍVEL 4
-GPA-006 v2.0.0
+GPA-006 v2.0.1
 → governa identidade, unidade de valor, responsabilidades e autoridade do produto
 
 TRANSVERSAL
@@ -276,13 +276,13 @@ Design não pode:
 - inserir claim novo;
 - substituir clareza por jargão analítico ou tecnológico.
 
-CTAs congelados:
+CTAs de referência:
 
 > **Veja o que suas informações podem mostrar**
 
 > **Conheça o Guivos Intelligence**
 
-Os CTAs não podem ser reinterpretados como promessa de decisão certa, diagnóstico, certeza ou futuro conhecido.
+A designer pode refinar microeditorialmente a formulação da pergunta-mãe e dos CTAs, preservando intenção semântica, autoridade, fronteira e claims. Os CTAs não podem ser reinterpretados como promessa de decisão certa, diagnóstico, certeza ou futuro conhecido.
 
 ## 9. Duas frentes preservadas
 
@@ -495,7 +495,7 @@ Dentro das invariantes deste Handoff, Design pode decidir:
 - motion;
 - progressive disclosure;
 - densidade;
-- posição e forma dos CTAs congelados;
+- posição, forma e refinamento microeditorial dos CTAs de referência;
 - presença ou ausência de demonstração tecnológica subordinada;
 - tratamento de redes e relações quando semanticamente necessário.
 
@@ -508,7 +508,7 @@ Design não recebe autoridade para decidir ou alterar:
 - definição do Guivos Intelligence;
 - unidade de valor;
 - promessa pública;
-- pergunta-mãe;
+- significado e função da pergunta-mãe; sua formulação literal pode ser refinada sem alterar esse significado;
 - contrato `COMPREENDER ≠ DECIDIR`;
 - fronteira Person/Journey e Business/população;
 - privacidade e governança;
@@ -531,7 +531,7 @@ Qualquer futura proposta de wireframe, UI ou protótipo deve ser rejeitada ou co
 - [ ] mantém M03 distinto de M10;
 - [ ] mantém M04 distinto de M05;
 - [ ] torna resultados perceptíveis antes de explicar mecanismos;
-- [ ] preserva os CTAs congelados;
+- [ ] preserva a intenção semântica e os limites de claim dos CTAs de referência;
 - [ ] preserva Person/Journey e Business/população sem transferência indevida de autoridade;
 - [ ] preserva explicabilidade e autonomia;
 - [ ] não converte relação em causa;
@@ -542,39 +542,35 @@ Qualquer futura proposta de wireframe, UI ou protótipo deve ser rejeitada ou co
 - [ ] não inventa maturidade, integração, benchmark, métrica ou caso real;
 - [ ] não transforma Intelligence em dashboard, IA ou produto tecnológico isolado.
 
-## 18. Próximo gate — GENINPUT Intelligence
+## 18. Consumo corrente — designer-first / IA opcional
 
-Com este Handoff integrado, o próximo artefato elegível é o **GENINPUT Intelligence**, em pacote separado.
+O Handoff específico é consumido dentro do contrato comum das oito Homes.
 
 ```text
 HOME SOURCE LOCK
-→ HANDOFF CANÔNICO PARA DESIGN
-→ GENINPUT INTELLIGENCE
-→ MATERIALIZAÇÃO CONTROLADA
+→ HANDOFF ESPECÍFICO
+→ PACOTE V6 DA HOME
+→ DESIGNER HUMANA COMO AUTORA CRIATIVA
+→ IA OPCIONAL SOB CONTROLE DA DESIGNER
 ```
 
-O GENINPUT deve traduzir este contrato para o formato operacional necessário à ferramenta ou etapa de Design escolhida, sem criar nova autoridade semântica.
+`GKR-UX-HOMES-GENINPUT-001` pode traduzir este contrato para consumo por IA quando a designer optar por utilizá-la. Essa tradução não cria nova autoridade semântica e não é etapa obrigatória.
 
 Invariante:
 
-> **GENINPUT TRADUZ O HANDOFF ≠ REDEFINE A HOME**
+> **IA PODE APOIAR O HANDOFF ≠ REDEFINIR A HOME ≠ SUBSTITUIR A DESIGNER**
 
-O GENINPUT **não integra este Handoff** e deve ser tratado em PR separada.
+## 19. Limites do Handoff
 
-## 19. O que a integração deste Handoff não inicia automaticamente
+Este Handoff não autoriza automaticamente:
 
-A integração deste documento não inicia automaticamente:
-
-- GENINPUT;
-- execução em Figma Make ou outra ferramenta generativa;
-- wireframe;
-- UI;
-- protótipo;
 - implementação front-end ou back-end;
+- Product Engineering;
 - publicação;
 - Marketing/GTM;
 - pricing;
 - mudança de maturidade técnica;
-- sincronização transversal de `GKR-STATE-001` ou Roadmap.
+- sincronização transversal de `GKR-STATE-001` ou Roadmap;
+- novos claims, capacidades, integrações ou provas não sustentados.
 
-Cada etapa posterior exige o gate e a autorização correspondentes.
+A criação de Design ocorre externamente pela designer dentro do release comum vigente. O GKR não cria, edita ou avança arquivos Figma e não exige execução generativa.

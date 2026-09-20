@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MALL-MASTER-001
 title: Home Pública — Guivos Mall — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.1.1
 owner: Experience Architecture
-last_updated: 2026-08-12
+last_updated: 2026-09-19
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-002
@@ -26,7 +26,7 @@ A Home do Mall é uma apresentação pública especializada de uma capacidade da
 
 Este documento governa **somente a Home do Guivos Mall**.
 
-Ele não materializa wireframe, UI, protótipo, frontend, backend ou implementação e não autoriza automaticamente nenhuma dessas etapas.
+Este Master não cria por si só implementação ou publicação. A produção externa de Design da Home Mall — incluindo wireframe, UI e protótipo — está autorizada pelo release comum vigente e permanece sob autoria criativa da designer.
 
 ## 2. Premissa central
 
@@ -800,6 +800,119 @@ Ele:
 - protege transparência entre destaque, recomendação, oferta e patrocínio;
 - estabelece prova e confiança sem alegações artificiais de escala;
 - mantém Página de Produto, Perfil, Carrinho e Checkout fora do escopo;
-- não autoriza wireframe, protótipo, UI ou implementação.
+- governa significado e fronteiras sem prescrever identidade visual;
+- permite produção externa de wireframe, protótipo e UI sob o release comum vigente;
+- não libera implementação, publicação ou superfícies internas fora do escopo.
 
-Qualquer materialização posterior requer decisão própria e não decorre automaticamente da existência deste documento.
+Nenhuma decisão adicional é necessária para a designer iniciar ou continuar a criação da Home pública Mall. Implementação, publicação e superfícies internas continuam sujeitas às autoridades próprias.
+
+---
+
+## 35. Contrato determinístico de consumo para Designer e IA
+
+Esta seção absorve no próprio Master as regras antes preservadas apenas em `GKR-HOME-MASTERS-REMEDIATION-001`.
+
+Ela não define layout, estética ou implementação.
+
+### 35.1 Estados semânticos obrigatórios
+
+```text
+MALL-HS-01 — BASELINE_PUBLIC
+→ tese, pergunta-mãe, identidade Guivos e arquitetura de descoberta permanecem válidas independentemente de campanhas ou dados comerciais dinâmicos
+
+MALL-HS-02 — COMMERCIAL_DATA_AVAILABLE
+→ produto, oferta, preço, preço em pontos, marca ou parceiro só podem aparecer quando sustentados por fonte/autoridade aplicável
+
+MALL-HS-03 — COMMERCIAL_DATA_UNAVAILABLE_OR_ERROR
+→ ausência, erro ou indisponibilidade não podem ser convertidos em oferta, estoque, preço, elegibilidade ou parceria fictícios
+→ tratamento visual/copy de fallback permanece DESIGN_CREATIVE / CONTENT_CANDIDATE dentro das fronteiras
+
+MALL-HS-04 — CAMPAIGN_ACTIVE
+→ campanha pode alterar camada comercial temporária
+→ não redefine pergunta-mãe nem transforma promoção em identidade permanente
+
+MALL-HS-05 — PERSONALIZATION_AUTHORIZED
+→ “recomendado para você” exige base legítima, finalidade e regras aplicáveis
+→ sem essa base, usar descoberta/curadoria geral sem alegar personalização
+
+MALL-HS-06 — SPONSORED_EXPOSURE
+→ exposição paga permanece identificada
+→ não assume aparência de recomendação orgânica
+```
+
+### 35.2 Comportamentos e interações
+
+1. `Shopping` e `Gift Cards` permanecem portas distintas e atuais do Mall.
+2. Busca direta permanece conceitualmente disponível para quem já sabe o que procura; sua implementação não é definida aqui.
+3. Produto/oferta exibido pode iniciar outra experiência, mas detalhe, Perfil, Carrinho, Checkout, pedido e pós-compra começam fora da Home.
+4. Saldo global da Pessoa pertence ao contexto de conta/Perfil; preço em pontos pertence à oferta elegível.
+5. `Programa de Pontos` e `Gift Card Guivos` permanecem distintos.
+6. Recomendação, destaque, oferta e patrocínio não podem ser fundidos.
+7. Campanha comercial não elimina a camada permanente de significado e confiança.
+
+### 35.3 Navegação governada
+
+```text
+GUIVOS
+→ retorno à Home principal
+
+MALL
+→ identificação da especialidade atual
+
+SHOPPING
+→ universo comercial de produtos
+
+GIFT CARDS
+→ universo de vouchers, serviços, experiências e presentes
+
+BUSCAR
+→ acesso estrutural à descoberta direta
+
+PERFIL / CARRINHO
+→ acessos globais admitidos no Header
+→ comportamento interno fora do escopo deste Master
+```
+
+A existência conceitual desses acessos não prova rota, URL, componente, disponibilidade técnica ou comportamento implementado.
+
+### 35.4 Contrato para IA e desenvolvimento futuro
+
+É proibido inferir ou fabricar:
+
+- catálogo, estoque, preço, desconto, disponibilidade ou elegibilidade;
+- parceiro institucional a partir da mera presença de marca/oferta;
+- pagamento híbrido, taxa de conversão ou regra econômica não autorizada;
+- mecânica de Perfil, Carrinho, Checkout ou página de produto;
+- recomendação personalizada sem base, finalidade e autoridade aplicáveis;
+- escala, liderança, segurança ou melhor preço sem evidência;
+- decisão visual final a partir deste contrato.
+
+### 35.5 Critérios objetivos de aceite semântico
+
+Um artefato derivado é semanticamente aceitável somente se:
+
+1. preserva a pergunta-mãe e a progressão em onze movimentos sem obrigar onze seções visuais;
+2. mantém `Mall = capacidade da Guivos`, não marca/ecossistema independente;
+3. permite descoberta e acesso direto sem percurso narrativo obrigatório;
+4. preserva `Home ≠ páginas internas`;
+5. separa destaque, recomendação, oferta e patrocínio;
+6. exibe dados comerciais somente quando sustentados;
+7. não cria regra econômica ou estado operacional inexistente;
+8. preserva autonomia da Pessoa e ausência de manipulação como regra;
+9. mantém `MALL-HS-01..06` semanticamente distinguíveis;
+10. não transforma este Master em direção visual.
+
+### 35.6 Liberdade criativa
+
+```text
+CANONICAL
+→ significado / estados / relações / limites acima
+
+DESIGN_CREATIVE
+→ tipografia / cor / imagem / composição / grid / motion / componentes / ritmo / atmosfera
+
+AI
+→ OPTIONAL TOOL
+→ MAY PROPOSE
+→ MAY NOT INVENT FACTS OR PRODUCT RULES
+```

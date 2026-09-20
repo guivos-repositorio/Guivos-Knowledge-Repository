@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MEDIA-MASTER-001
 title: Home Pública — Guivos Media — Documento Mestre
 status: draft
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-13
+last_updated: 2026-09-19
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-005
@@ -163,9 +163,11 @@ A Home deve funcionar em três maturidades:
 
 ## 8. Guardrails para Design, UX e UI
 
-Preservar hierarquia editorial, significado antes de volume, mídia com propósito, variação de escala e densidade, pessoas em contexto, tipografia como parte da narrativa, metadados secundários e identidade Guivos com expressão própria do Media.
+Preservar hierarquia editorial, significado antes de volume, mídia com propósito, pessoas em contexto quando aplicável, metadados subordinados ao conteúdo e identidade Guivos com expressão própria do Media.
 
-**Card é componente, não arquitetura.** Evitar cardificação e grids uniformes como linguagem dominante.
+Escala, densidade, tipografia, composição, ritmo e demais escolhas de expressão visual pertencem à designer. O Documento Mestre governa a hierarquia e o significado editorial que essas escolhas devem conseguir preservar, não uma forma estética específica.
+
+**Card é componente, não arquitetura.** Nenhum padrão de componente, grid ou composição é obrigatório ou proibido por preferência estética; a solução deve apenas evitar que o componente escolhido substitua a hierarquia editorial e o significado do conteúdo.
 
 Princípio responsivo: **preservar hierarquia e significado, não geometria**. Mobile não é desktop simplesmente empilhado.
 
