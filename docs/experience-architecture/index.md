@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.9
+version: 1.19.10
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 related:
@@ -321,3 +321,5 @@ A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. 
 [GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001](public-homes-design-delivery-v7-candidate.md) preserva a proveniência do candidato v7 revalidado que foi realizado pelo snapshot posteriormente invalidado para nova execução.
 
 [GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001](public-homes-design-delivery-v7-snapshot-record.md) registra a emissão v7 em `delivery/design-handoff-v7`: origem `main = 35c616a4a7bf754577c180d37afe5e0c22380c7b`, commit `564a2656332dffeb4779ca20ee1ce6697abaa06d`, tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`, 29 fontes canônicas + oito guias = 37 arquivos, 29/29 blobs exatos e 8/8 guias validados. O P1 pós-emissão nas cinco autoridades comuns torna o v7 congelado/histórico e inválido para nova execução. A cadeia canônica foi corrigida para Handoff 1.6.5 / GENINPUT 2.2.17 / Readiness 1.2.17 / Flow 3.0.3 / Release 1.2.1. `CURRENT EXTERNAL SOURCE PACKAGE = NONE` até nova reemissão/revalidação.
+
+[GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001](public-homes-design-delivery-v8-candidate.md) registra o próximo candidato de reemissão: preparado diretamente sobre `main = b660503a5da5ec5214e3e2c0eba1f1b06daa9489`, 29/29 pins recalculados, cadeia comum final package-state agnostic e revalidação em curso. `delivery/design-handoff-v8` não foi criada e a materialização permanece não autorizada.
