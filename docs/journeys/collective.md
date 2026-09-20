@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: draft
-version: 0.23.0
+version: 0.24.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 related:
@@ -41,9 +41,6 @@ normative: false
 
 # Jornada Integrada do Coletivo
 
-> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
-
-
 ## 1. Formação, decisão e continuidade da Pessoa
 
 ```text
@@ -59,16 +56,14 @@ presença pública
 
 | Etapa | Maturidade | Evidência | Continuidade |
 |---|---|---|---|
-| presença pública e descoberta | validado no recorte público | UXA-060/061/062/063; `UXA-016/018` apenas como histórico superseded | parcial entre famílias |
+| presença pública e descoberta | validado no recorte público | UXA-060/061/062/063; sem dependência de artefato histórico | parcial entre famílias |
 | solicitação | validado | UXA-064/065/066/067 | handoffs bilaterais posteriores validados nos gates |
-| referência administrativa do responsável | evidência local do pacote, **não baseline final da UX principal** | UXA-086/087 | contratos especializados preservam maturidade própria; Surface Map + State Map + Priority Flows definidos; wireframe principal pendente |
+| referência administrativa do responsável | evidência local do pacote, **não baseline final da UX principal** | UXA-086/087 | contratos especializados preservam maturidade própria; Surface Map + State Map + Priority Flows definidos; referência low-fidelity corrente validada |
 | gestão de solicitações do responsável | validado no fluxo especializado | UXA-088/089/090/092 | handoffs bilaterais governados no escopo próprio |
 | aprovação → Meus Coletivos | validado | UXA-090/091/092 | TRN-108 integral |
 | Meus Coletivos → Central | validado | UXA-092/093/094/096 | TRN-110 integral |
 | Central corrente | **validado** | UXA-094/095/096 | TRN-110 e TRN-111 integrais |
 | Início do Participante | **validado no recorte da Pessoa participante** | UXA-095/096 | **TRN-111 integral** |
-
-A reconciliação pós-PR #313/#314 preserva os fluxos independentes acima, mas elimina a inferência de que `UXA-016/018` ou uma referência administrativa local já definam o wireframe principal autenticado final do Coletivo.
 
 A experiência do responsável já possui atores/autoridades/jobs, Arquitetura da Informação, Surface Map e State Map definidos documentalmente; isso não promove automaticamente as superfícies da Pessoa participante a UX principal do Coletivo.
 
@@ -179,8 +174,6 @@ Regras desta vista:
 
 ## 4. Planos como etapa transversal canônica
 
-A UXA-100-A3 registra **Planos** canonicamente na jornada operacional do Coletivo. A UXA-100-A4 preserva um contrato documental de origem/retorno associado semanticamente a `COL-002`. Após a reconciliação pós-PR #313/#314, esse contrato não pode ser interpretado como prova de que `COL-002` seja o wireframe principal autenticado final.
-
 A relação lógica preservada no fluxo especializado é:
 
 ```text
@@ -211,8 +204,6 @@ criar atividade/oportunidade
 ```
 
 Referência do fluxo especializado de Planos:
-
-
 
 Regras:
 
@@ -276,8 +267,8 @@ A Arquitetura da Informação principal do Coletivo é definida por `GKR-UX-ORGC
 
 Esta vista permanece `draft` porque:
 
-- **a Arquitetura da Informação autenticada, o Surface Map, o State Map e os Priority Flows estão definidos documentalmente; a navegação principal materializada e o wireframe principal autenticado do Coletivo ainda não foram definidos**;
-- `UXA-016/018` permanecem históricos `superseded`;
+- **a Arquitetura da Informação autenticada, o Surface Map, o State Map e os Priority Flows estão definidos documentalmente; a a Navigation Materialization está definida e a referência low-fidelity corrente do Coletivo é Delivery v0.1.0 + Validation v1.0.0 / PASS**;
+- a referência operacional corrente não depende de UXA-016/018;
 - `COL-002` possui evidência administrativa local, mas não é baseline final da experiência principal;
 - participantes, comunicação e demais áreas do responsável continuam incompletos em materialização/validação;
 - estados P0B de superfícies da Pessoa permanecem separados;
@@ -292,5 +283,3 @@ Esta vista permanece `draft` porque:
 A taxonomia vigente de planos permanece `Livre · Mobiliza · Impacta · Rede`. Os fluxos públicos, de participação, gestão de solicitações e Planos preservam suas maturidades próprias quando suportados por autoridade independente. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista.
 
 A frente principal autenticada já possui fundamentos, atores/autoridades/jobs, Arquitetura da Informação, Surface Map, State Map e Priority Flows canônicos documentais. O próximo nível lógico é a **Navigation Materialization**, seguida de wireframes quando autorizados — **não o SVG histórico de UXA-016 nem a promoção automática de uma referência administrativa local**.
-
-Nenhuma próxima UXA, Design ou Product Engineering é iniciada automaticamente. A branch pré-auditoria de surface map permanece `HOLD_REVIEW` e sem autoridade vigente.

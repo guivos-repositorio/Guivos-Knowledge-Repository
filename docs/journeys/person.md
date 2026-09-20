@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.22.0
+version: 0.23.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -45,9 +45,6 @@ normative: false
 ---
 
 # Jornada Integrada da Pessoa
-
-> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
-
 
 ## 1. Início protegido e compreensão inicial
 
@@ -171,7 +168,6 @@ Domínio de Evolução
 
 Área da jornada permanece distinta de dimensão estrutural do Contexto Vivo. Prioridade declarada não representa valor humano, obrigação ou urgência automática.
 
-
 ### 3.2 PER-011 — Meus Próximos Passos
 
 `PER-011` governa movimentos contextuais, não uma lista coercitiva de tarefas. Após D5-C3, o estado-base distingue `PRONTO` de `PROPOSTO`, explicita prontidão/dependência e origem da proposta, e utiliza ações coerentes com cada estado.
@@ -186,7 +182,6 @@ domínio relacionado
 ```
 
 Uma sugestão da Guivos não constitui decisão da Pessoa. Períodos sem Próximos Passos ativos são legítimos.
-
 
 ### 3.3 PER-012 — Minha Evolução
 
@@ -203,7 +198,6 @@ Domínio de Evolução
 ```
 
 `Minha Evolução` não é roda da vida obrigatória, ranking, percentual global da Pessoa, diagnóstico ou avaliação espiritual. Inferência permanece visualmente distinta de fato confirmado.
-
 
 ### 3.4 Papel de Hoje
 
@@ -276,7 +270,6 @@ Regras integradas:
 - alcançar `BND-001` transfere autoridade ao terceiro; a Guivos não presume resultado externo.
 
 Referência visual revalidada pela UXA-101:
-
 
 ## 5. Planos como etapa transversal canônica
 

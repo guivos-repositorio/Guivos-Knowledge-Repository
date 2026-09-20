@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-ORGANIZATION-001
 title: Jornada Integrada da Organização
 status: draft
-version: 0.16.0
+version: 0.17.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 related:
@@ -43,9 +43,6 @@ normative: false
 
 # Jornada Integrada da Organização
 
-> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
-
-
 ## 1. Continuidade institucional
 
 ```text
@@ -67,7 +64,7 @@ identidade, unidade e autoridade
 |---|---|---|---|---|---|
 | fundação institucional | definido funcionalmente | UXA-014 | — | — | input dos Jobs/IA |
 | contexto, atores e autoridade | **definidos documentalmente** | GKR-UX-ORGCOL-AUTH-JOBS-001 | — | — | input da IA autenticada |
-| Visão Geral da Organização | **domínio de IA + Surface Map + State Map + Priority Flows definidos; wireframe principal pendente** | UXA-014; GKR-UX-ORGCOL-AUTH-JOBS-001; GKR-UX-ORGCOL-AUTH-IA-001; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001; GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 | `UXA-015`/SVG associado apenas como histórico `superseded` | `UXA-017` superseded; sem validação vigente do wireframe principal | contratos especializados preservam maturidade própria; Priority Flows definidos; navegação/composição visual final pendentes |
+| Visão Geral da Organização | **domínio de IA + Surface Map + State Map + Priority Flows definidos; wireframe principal pendente** | UXA-014; GKR-UX-ORGCOL-AUTH-JOBS-001; GKR-UX-ORGCOL-AUTH-IA-001; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001; GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 | referência anterior absorvida; sem função operacional | GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS | contratos especializados preservam maturidade própria; Navigation Materialization definida; referência low-fidelity corrente validada; high-fidelity depende de autorização separada |
 | responsabilidade material atual | **definida semanticamente na IA, reconciliada no Surface Map/State Map/Priority Flows; materialização pendente** | UXA-014; GKR-UX-ORGCOL-AUTH-JOBS-001; GKR-UX-ORGCOL-AUTH-IA-001; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | — | — | parcial/indeterminada; Priority Flows definidos não promovem maturidade nem materializam navegação |
 | cadastro de oportunidades | validado no fluxo especializado | UXA-004 | UXA-008 | UXA-013 | publicação → descoberta validada por UXA-098 |
 | descoberta Mapa/Lista e detalhe | validado | UXA-004 | UXA-024; UXA-028; UXA-007 | UXA-025; UXA-029; UXA-012; UXA-101 no recorte de saída | TRN-203/204/210/211 por UXA-098; TRN-205 até BND-001 por UXA-101 |
@@ -218,8 +215,6 @@ criar nova oportunidade/programa
 
 Referência do fluxo especializado de Planos:
 
-
-
 Regras:
 
 - `ORG-301` mostra plano atual, uso e período do ciclo;
@@ -285,8 +280,8 @@ A IA e o State Map atuais já cobrem `Relações` como domínio e condições fu
 
 Esta vista permanece `draft` porque:
 
-- **a Arquitetura da Informação autenticada, o Surface Map, o State Map e os Priority Flows estão definidos documentalmente; a navegação materializada e o wireframe principal autenticado da Organização ainda não foram definidos**;
-- `UXA-015/017` permanecem históricos `superseded`;
+- **a Arquitetura da Informação autenticada, o Surface Map, o State Map e os Priority Flows estão definidos documentalmente; a Navigation Materialization está definida e a referência low-fidelity corrente da Organização é Delivery v0.1.0 + Validation v1.0.0 / PASS**;
+- a referência operacional corrente não depende de UXA-015/017;
 - a relação Organização–Coletivo não possui materialização bilateral específica;
 - a matriz institucional completa ainda não existe como experiência materializada/validada;
 - `TRN-201` permanece parcial e `TRN-202` preserva sua maturidade própria;
@@ -303,5 +298,3 @@ Esta vista permanece `draft` porque:
 A Organização mantém publicação/descoberta validada pela UXA-098, saída consciente até `BND-001` validada pela UXA-101 e o fluxo especializado de Planos com sua maturidade documental própria. A taxonomia vigente de planos é `Conecta · Eleva · Transforma`; Guivos Business permanece produto separado. D4 torna `JED-001..JED-009`, multidomínio, `Ainda estou descobrindo` e `other_unmapped` elementos explícitos desta vista.
 
 A frente principal autenticada já possui fundamentos, atores/autoridades/jobs, Arquitetura da Informação, Surface Map, State Map e Priority Flows canônicos documentais. O próximo nível lógico é a **Navigation Materialization**, seguida de wireframes quando autorizados — **não o SVG histórico de UXA-015**.
-
-Nenhuma próxima UXA, Design ou Product Engineering é iniciada automaticamente. A branch pré-auditoria de surface map permanece `HOLD_REVIEW` e sem autoridade vigente.
