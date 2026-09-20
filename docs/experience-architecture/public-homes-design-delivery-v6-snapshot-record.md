@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
 title: Homes Públicas — Registro do Snapshot Externo de Design v6
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -18,7 +18,7 @@ depends_on:
 related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
 normative: false
-maturity: design_delivery_v6_snapshot_emitted_validated_current
+maturity: design_delivery_v6_snapshot_emitted_frozen_invalidated_for_new_execution
 ---
 
 # Homes Públicas — Registro do Snapshot Externo de Design v6
@@ -27,7 +27,7 @@ maturity: design_delivery_v6_snapshot_emitted_validated_current
 
 Este registro fecha o ato humano separado de emissão/materialização do pacote v6 após a integração da PR #397.
 
-Ele registra um fato operacional reproduzível: o pacote externo das oito Homes foi materializado para uso pela designer, com execução manual first-class e IA opcional. O ato não cria nova arquitetura, não produz Design, não cria Figma e não libera Product Engineering.
+Ele registra um fato operacional reproduzível: o pacote externo das oito Homes foi materializado, com execução manual first-class e IA opcional. Uma revisão independente pós-emissão identificou depois um P1 material no Operational Flow v3.0.1 byte-preservado pelo snapshot. Assim, o registro também preserva a invalidação do v6 para nova execução sem reescrever o snapshot. O ato não cria nova arquitetura, não produz Design, não cria Figma e não libera Product Engineering.
 
 ## 2. Checkpoint canônico de origem
 
@@ -211,7 +211,36 @@ MATERIAL SOURCE CHANGE
 
 Mudança criativa da designer que não altera contrato semântico não exige reemissão.
 
-## 11. Preservação das emissões anteriores
+## 11. Finding pós-emissão e adjudicação
+
+A revisão Codex da PR #402 no commit `615ec67af2f3d463747bdb309fc49cb88e557137` identificou:
+
+```text
+P1 — RECONCILE THE SHIPPED FLOW BEFORE DECLARING V6 CURRENT
+→ VALID
+
+SNAPSHOT-CONTAINED FLOW
+→ GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.1
+→ SOURCE COMPLETENESS AUDIT = IN PROGRESS
+→ V6 PACKAGE = NOT YET ELIGIBLE
+
+CANONICAL REMEDIATION
+→ GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.2
+→ GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
+
+SNAPSHOT POLICY
+→ V6 IS NOT REWRITTEN
+→ V6 BECOMES FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+```
+
+A integridade material 29/29 continua comprovada; o problema é justamente que um blob preservado contém estado operacional contraditório. Portanto, integridade do snapshot não equivale a validade semântica para nova execução.
+
+## 12. Preservação das emissões anteriores
 
 ```text
 v1 → delivery/design-handoff-v1
@@ -224,7 +253,7 @@ v6 → delivery/design-handoff-v6
 
 O v6 não reescreve snapshots anteriores. O v5 permanece congelado como proveniência histórica.
 
-## 12. Limites
+## 13. Limites
 
 A emissão v6 não autoriza automaticamente:
 
@@ -239,12 +268,17 @@ A emissão v6 não autoriza automaticamente:
 
 O Design Production Release já estava concedido separadamente para produção externa pela designer e permanece válido.
 
-## 13. Estado
+## 14. Estado
 
 ```text
 V6 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
-→ CURRENT EXTERNAL SOURCE PACKAGE
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
 
 BRANCH
 → delivery/design-handoff-v6
@@ -260,6 +294,10 @@ CANONICAL BLOB PRESERVATION
 
 DESIGN PRODUCTION RELEASE
 → GRANTED
+→ DOES NOT CURE AN INVALIDATED PACKAGE
+
+OPERATIONAL DESIGN EXECUTION
+→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
 
 DESIGNER
 → CREATIVE AUTHOR
@@ -277,6 +315,6 @@ PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-## 14. Síntese
+## 15. Síntese
 
-> **A emissão externa v6 está materializada e reproduzível em `delivery/design-handoff-v6`, congelada no commit `b7fe5d62cef444c8316c66edd8ac73b703698a4a` e tree `61eef7447fc5c6b36890ccb774f7011615a6abca`, com 29/29 fontes canônicas byte-preservadas, oito guias tool-neutral, 37 arquivos externos, designer como autora criativa, IA opcional e nenhum Figma criado pelo GKR como referência.**
+> **A emissão externa v6 permanece materializada e reproduzível em `delivery/design-handoff-v6`, congelada no commit `b7fe5d62cef444c8316c66edd8ac73b703698a4a` e tree `61eef7447fc5c6b36890ccb774f7011615a6abca`, com 29/29 fontes canônicas byte-preservadas e 37 arquivos. Porém, o P1 pós-emissão no Operational Flow v3.0.1 torna o v6 inválido para nova execução. A correção existe somente na autoridade canônica posterior e requer nova emissão/revalidação separada.**
