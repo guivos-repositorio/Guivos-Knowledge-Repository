@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.2.15
+version: 1.2.16
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: true
-maturity: designer_first_ai_optional_reissue_required
+maturity: designer_first_ai_optional_current_package_delegated
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -555,7 +555,7 @@ ZERO FINDING MATERIAL ABERTO
 ATO HUMANO EXPLÍCITO DE DESIGN PRODUCTION RELEASE
 ```
 
-O gate humano foi posteriormente satisfeito e permanece concedido pela autoridade corrente `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0`. O release autoriza a produção externa, mas não permite executar contra um snapshot posteriormente invalidado. A execução operacional depende de um pacote externo corrente e válido, sem antecipar direção criativa, aceite final de Design ou implementação.
+O gate humano foi posteriormente satisfeito e permanece concedido pela autoridade corrente `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1`. O release autoriza a produção externa, mas não permite executar contra um snapshot posteriormente invalidado. A execução operacional depende de um pacote externo corrente e válido, sem antecipar direção criativa, aceite final de Design ou implementação.
 
 ## 16. Estado
 
@@ -570,17 +570,18 @@ V5 SNAPSHOT
 → EMITTED / MATERIALIZED / VALIDATED
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
+→ USE ONLY SNAPSHOT DESIGNATED CURRENT / VALID
 
 MANUAL / AI-ASSISTED DESIGN METHOD
 → AVAILABLE / AI OPTIONAL
 
 OPERATIONAL DESIGN EXECUTION
-→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+→ REQUIRES CURRENT VALID PACKAGE
+→ OTHERWISE PAUSED
 
 FINAL DESIGN ACCEPTANCE
 → HUMAN / SEPARATE
