@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: active
-version: 1.1.1
+version: 1.2.0
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 normative: false
-maturity: post_emission_package_p1s_adjudicated_v6_reissue_required
+maturity: post_emission_p1s_adjudicated_v7_candidate_revalidation_in_progress
 depends_on:
   - GKR-STATE-001
   - GKR-HOME-MASTERS-REMEDIATION-001
@@ -18,6 +18,7 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
 ---
 
 # Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
@@ -726,6 +727,56 @@ NEXT MATERIALIZATION
 ```
 
 As versões v2.2.14 / v1.2.14 permanecem legítimas apenas como proveniência da cadeia que levou ao v6. Elas não são mais as autoridades correntes para preparar uma nova emissão.
+
+## 9.16 Candidato v7 — revalidação pré-snapshot após PR #403
+
+Após a integração da reconciliação pós-merge pela PR #403, `main` foi confirmado em `1a1386bc318afa2e91f5c1ef5ffd3a80e7265cb2`.
+
+O ato humano subsequente autorizou **iniciar a reissue/revalidation**, não materializar um snapshot. A composição da próxima emissão foi então reconstituída diretamente das fontes correntes:
+
+```text
+V7 CANDIDATE
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.1.0
+
+ORIGIN MAIN
+→ 1a1386bc318afa2e91f5c1ef5ffd3a80e7265cb2
+
+CANONICAL SOURCE PATHS
+→ 29 / 29 PRESENT
+
+DECLARED ID × ACTUAL ID
+→ 29 / 29 MATCH
+
+DECLARED VERSION × ACTUAL VERSION
+→ 29 / 29 MATCH
+
+POST-V6 COMMON AUTHORITIES
+→ HANDOFF v1.6.3
+→ GENINPUT v2.2.15
+→ READINESS v1.2.15
+→ FLOW v3.0.2
+→ RELEASE v1.2.0
+
+PRIOR C1–C15 BASELINE
+→ 8 / 8 HOMES
+→ 120 / 120 PASS
+
+V7 GUIDES
+→ NOT MATERIALIZED
+
+V7 SNAPSHOT
+→ NOT EMITTED
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+
+EXACT-HEAD REVALIDATION
+→ SEMANTIC PENDING
+→ MECHANICAL PENDING
+→ INDEPENDENT REVIEW PENDING
+```
+
+O candidato v7 preserva os estados documentais nativos das fontes e não promove documentos `draft`. A elegibilidade de snapshot não será declarada antes dos gates exatos e da revisão independente.
 
 ## 10. Remediações aplicadas
 
