@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.4.6
+version: 0.4.7
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -142,7 +142,7 @@ Uma Home somente pode ser considerada pronta para entrega à designer quando seu
 | Media | `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` | RECONCILED |
 | Ads | `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` | RECONCILED |
 | Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6` + `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` | RECONCILED |
-| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.5` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.6` + `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` + `GPA-006 v2.0.1` | RECONCILED |
+| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5` + `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.2` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.6` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.7` + `GKR-UX-HOMES-OUTCOME-001 v1.0.0` + `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` + `GPA-006 v2.0.1` | RECONCILED |
 
 ## 6. Findings iniciais comprovados
 
@@ -518,7 +518,7 @@ O re-review independente encontrou uma única lacuna residual no pacote externo 
 ```text
 P1 — INTELLIGENCE REQUIRED AUTHORITIES OMITTED FROM V6 INVENTORY
 → REMEDIATED
-→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1 ADDED
+→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.2 ADDED
 → GKR-UX-HOMES-OUTCOME-001 v1.0.0 ADDED
 → INTELLIGENCE RESTRICTED PACKAGE = SELF-CONTAINED
 → HOME-SPECIFIC UNIQUE SOURCES = 24
@@ -528,6 +528,31 @@ P1 — INTELLIGENCE REQUIRED AUTHORITIES OMITTED FROM V6 INVENTORY
 ```
 
 A correção não cria nova autoridade nem reabre produto ou Design. Ela apenas torna o pacote v6 determinístico em relação às autoridades que o próprio Home Source Lock vigente já exige.
+
+## 9.8 Re-review independente no HEAD `95a02abe65e582276a9f0212e5d6ef597e238d6f` — três P1 residuais de coerência de consumo
+
+O re-review independente encontrou três inconsistências materiais na composição efetiva do pacote v6:
+
+```text
+P1 — INTELLIGENCE NARRATIVE TEMPORAL STATE
+→ REMEDIATED
+→ NARRATIVE v0.2.2
+→ PRE-HOME FLOW = HISTORICAL PROVENANCE
+→ CURRENT SOURCE LOCK / HANDOFF / EXTERNAL DESIGN RELEASE RECOGNIZED
+
+P1 — INTELLIGENCE CONSUMPTION INVENTORIES
+→ REMEDIATED
+→ GENINPUT v2.2.11 INCLUDES NARRATIVE + OUTCOME
+→ READINESS v1.2.11 INCLUDES NARRATIVE + OUTCOME
+
+P1 — COMMON SOURCE CONTRACT
+→ REMEDIATED
+→ 5 COMMON SOURCES IN GENINPUT
+→ 5 COMMON SOURCES IN READINESS
+→ DESIGN PRODUCTION RELEASE INCLUDED
+```
+
+As três correções são de sincronização documental. A identidade do produto, a liberdade criativa da designer, o caráter opcional da IA, o v5 congelado e o boundary de Product Engineering permanecem inalterados.
 
 ## 10. Remediações aplicadas
 
@@ -565,14 +590,14 @@ A adjudicação histórica permanece proveniência; não é mais necessária par
 
 ### F-DS-004 — RESOLVED
 
-`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6` / `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.5` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.6` / `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` / `GPA-006 v2.0.1` foram temporalmente reconciliados com o regime designer-first / IA opcional.
+`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6` / `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.6` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.7` / `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` / `GPA-006 v2.0.1` foram temporalmente reconciliados com o regime designer-first / IA opcional.
 
 ### F-DS-005 — RESOLVED FOR V6 CONTRACT
 
 O template comum foi promovido para:
 
 ```text
-GKR-UX-HOMES-GENINPUT-001 v2.2.10
+GKR-UX-HOMES-GENINPUT-001 v2.2.11
 → TOOL-NEUTRAL
 → AI OPTIONAL
 → MANUAL DESIGN DOES NOT REQUIRE GENERATIVE EXECUTION RECORD
