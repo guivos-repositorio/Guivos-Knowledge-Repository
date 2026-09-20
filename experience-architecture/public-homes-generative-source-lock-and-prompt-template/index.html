@@ -1663,7 +1663,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Manifesto de Entrega v5
+    Homes — Manifesto de Entrega v6
   
 
     
@@ -1708,7 +1708,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-delivery-v6-snapshot-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Snapshot v6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -1733,7 +1768,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Pacote v6 Candidato
+    Homes — Pacote v6 Candidato (proveniência)
   
 
     
@@ -1743,7 +1778,7 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--superseded"></span>
   
 
   
@@ -4039,11 +4074,18 @@ V4 HISTORICAL SOURCE LOCKS
 V5 OPERATIONAL SOURCE LOCK
 → EMITTED / 8 OF 8 / FROZEN WITH SNAPSHOT V5
 
-EXTERNAL DESIGNER PRODUCTION
+EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 → DESIGN PRODUCTION RELEASE GRANTED
 
-AI-ASSISTED EXECUTION
-→ OPTIONAL / DESIGNER-CONTROLLED
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+
+OPERATIONAL EXECUTION
+→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+
+AI METHOD
+→ AVAILABLE / OPTIONAL / DESIGNER-CONTROLLED
 </code></pre></div>
 <p>A ferramenta pode propor forma com ampla liberdade criativa. Ela não pode completar lacunas de verdade factual ou arquitetura por inferência.</p>
 <h3 id="01-uso-manual-nao-depende-deste-template">0.1 Uso manual não depende deste template<a class="headerlink" href="#01-uso-manual-nao-depende-deste-template" title="Permanent link">&para;</a></h3>
@@ -4218,7 +4260,7 @@ VALIDAÇÃO HUMANA
 <h2 id="6-pacotes-autorizados-das-oito-homes">6. Pacotes autorizados das oito Homes<a class="headerlink" href="#6-pacotes-autorizados-das-oito-homes" title="Permanent link">&para;</a></h2>
 <p>A execução deve utilizar somente o pacote correspondente à Home em trabalho, salvo ampliação deliberada registrada no Source Lock.</p>
 <h3 id="60-fontes-comuns-obrigatorias">6.0 Fontes comuns obrigatórias<a class="headerlink" href="#60-fontes-comuns-obrigatorias" title="Permanent link">&para;</a></h3>
-<p>No regime corrente/v6, todas as oito Homes recebem estas cinco autoridades comuns:</p>
+<p>Na próxima emissão válida, todas as oito Homes deverão receber estas cinco autoridades comuns:</p>
 <ol>
 <li><code>GKR-UX-HOMES-DESIGN-HANDOFF-001</code> — <code>docs/experience-architecture/public-homes-design-handoff.md</code>;</li>
 <li><code>GKR-UX-HOMES-GENINPUT-001</code> — <code>docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md</code> — este documento;</li>
@@ -4226,7 +4268,7 @@ VALIDAÇÃO HUMANA
 <li><code>GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001</code> — <code>docs/experience-architecture/public-homes-design-delivery-operational-flow.md</code>;</li>
 <li><code>GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001</code> — <code>docs/experience-architecture/public-homes-design-production-release.md</code>.</li>
 </ol>
-<p>As <strong>versões exatas</strong> do conjunto entregue são fixadas pelo manifesto/snapshot correspondente. Para o candidato corrente, prevalece <code>GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001</code>. Este documento não cria version-lock circular entre autoridades comuns.</p>
+<p>As <strong>versões exatas</strong> do conjunto entregue são fixadas pelo manifesto/snapshot correspondente. Não existe candidato externo corrente válido neste estado; <code>GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001</code> permanece proveniência histórica da emissão v6. A próxima composição deve ser fixada por novo candidato/reissue governado. Este documento não cria version-lock circular entre autoridades comuns.</p>
 <p>Essas cinco fontes não substituem as autoridades específicas da Home. Elas governam processo, taxonomia operacional, liberdade criativa, uso opcional de IA, sequência de execução e critérios de produção/aceite.</p>
 <h3 id="61-home-publica-pessoa">6.1 Home Pública — Pessoa<a class="headerlink" href="#61-home-publica-pessoa" title="Permanent link">&para;</a></h3>
 <p>Fontes específicas:</p>
@@ -4665,9 +4707,19 @@ VALIDAÇÃO
 V5 PER-HOME SOURCE LOCKS
 → EMITTED / 8 OF 8 / FROZEN IN delivery/design-handoff-v5
 
+GENERATIVE METHOD
+→ AVAILABLE / OPTIONAL / DESIGNER-CONTROLLED
+
 GENERATIVE EXECUTION
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
-→ RELEASE AUTHORITY = GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0
+→ PAUSED
+→ REQUIRES VALID CURRENT EXTERNAL SOURCE PACKAGE
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+
+RELEASE AUTHORITY
+→ GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
 </code></pre></div>
 
 

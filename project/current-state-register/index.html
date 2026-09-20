@@ -2248,7 +2248,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Manifesto de Entrega v5
+    Homes — Manifesto de Entrega v6
   
 
     
@@ -2293,7 +2293,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/public-homes-design-delivery-v6-snapshot-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Snapshot v6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -2318,7 +2353,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Pacote v6 Candidato
+    Homes — Pacote v6 Candidato (proveniência)
   
 
     
@@ -2328,7 +2363,7 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--superseded"></span>
   
 
   
@@ -6651,10 +6686,10 @@ VISUAL IDENTITY
 → 26 CANONICAL SOURCES + 8 GUIDES = 34 FILES
 → FROZEN / HISTORICAL DELIVERY SNAPSHOT
 </code></pre></div>
-<p>A nova frente documental está registrada em <code>GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001</code>.</p>
-<p>Resultado candidato:</p>
+<p>A auditoria documental está registrada em <code>GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001</code>.</p>
+<p>Resultado final da frente de fontes:</p>
 <div class="highlight"><pre><span></span><code>C1–C15
-→ CANDIDATE PASS
+→ PASS / CLOSED FOR EMISSION
 
 HOMES
 → 8 / 8
@@ -6663,8 +6698,8 @@ PACKAGE-LEVEL CHECKS
 → 120 / 120 PASS
 
 OPEN MATERIAL SOURCE-COMPLETENESS FINDINGS
-→ 0 KNOWN AFTER FULL TEMPORAL-STATE + SOURCE-LOCK SWEEP
-→ EXACT-HEAD REVALIDATION + RE-REVIEW REQUIRED
+→ 0 OPEN AT EMISSION
+→ FINAL EXACT-HEAD GATES + RE-REVIEW CLEAN
 </code></pre></div>
 <p>Remediações materiais do candidato:</p>
 <ul>
@@ -6684,7 +6719,7 @@ OPEN MATERIAL SOURCE-COMPLETENESS FINDINGS
 <li>Intelligence Product Source Lock → v1.0.1 reconciliado para tratar o estado pré-Home como proveniência histórica, não gate corrente;</li>
 <li>artefato Figma experimental anterior → <code>ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE</code>.</li>
 </ul>
-<p>O pacote v6 candidato está definido em <code>GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001</code>:</p>
+<p>O pacote v6 foi materializado a partir de <code>GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001</code> e registrado em <code>GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001</code>:</p>
 <div class="highlight"><pre><span></span><code>COMMON SOURCES
 → 5
 
@@ -6702,27 +6737,68 @@ TOTAL EXTERNAL FILES
 
 MARKDOWN
 → PRIMARY HUMAN + AI FORMAT
+
+SNAPSHOT BRANCH
+→ delivery/design-handoff-v6
+
+SNAPSHOT COMMIT
+→ b7fe5d62cef444c8316c66edd8ac73b703698a4a
+
+SNAPSHOT TREE
+→ 61eef7447fc5c6b36890ccb774f7011615a6abca
+
+CANONICAL BLOB PRESERVATION
+→ 29 / 29 EXACT MATCH
 </code></pre></div>
 <p>Estado:</p>
 <div class="highlight"><pre><span></span><code>DESIGN PRODUCTION RELEASE
 → GRANTED
-→ EXTERNAL DESIGNER PRODUCTION
+→ EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
+
+OPERATIONAL EXECUTION
+→ PAUSED UNTIL VALID CURRENT EXTERNAL SOURCE PACKAGE EXISTS
 
 GKR-CREATED FIGMA
-→ DISCONTINUED
+→ NONE
+
+PRIOR GKR FIGMA EXPLORATION
+→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
 
 AI
 → OPTIONAL
 
 V6 PACKAGE
-→ CANDIDATE DEFINED
-→ SNAPSHOT NOT EMITTED
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
 
-SEMANTIC / MECHANICAL
-→ REQUIRED ON FINAL HEAD
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
 
-INDEPENDENT REVIEW
-→ REQUIRED ON FINAL HEAD
+SEMANTIC #1404 / MECHANICAL #1633
+→ SUCCESS ON FINAL PR #397 HEAD
+
+PRE-EMISSION INDEPENDENT REVIEW
+→ CLEAN / NO MAJOR ISSUES ON 7ca0857587f87f982ea53c2ce1719c1a0ed831b6
+
+POST-EMISSION PR #402 REVIEW #1
+→ P1 VALID ON 615ec67af2f3d463747bdb309fc49cb88e557137
+→ SHIPPED FLOW v3.0.1 CONTRADICTED CURRENT-V6 STATUS
+→ CANONICAL FLOW REMEDIATED TO v3.0.2
+→ RELEASE CLARIFIED TO v1.2.0
+→ V6 SNAPSHOT NOT REWRITTEN
+
+POST-EMISSION PR #402 RE-REVIEW #2
+→ P1 VALID ON b815e0f07f5f59bde2fbbd23288a65b1816cb2e4
+→ GENINPUT v2.2.14 / READINESS v1.2.14 STILL AUTHORIZED EXECUTION
+→ PREVENTIVE HANDOFF STALE-PIN SWEEP REMEDIATED TO v1.6.3
+→ CANONICAL GENINPUT REMEDIATED TO v2.2.15
+→ CANONICAL READINESS REMEDIATED TO v1.2.15
+→ CANONICAL FLOW = v3.0.2
+→ RELEASE = v1.2.0
+→ CURRENT EXTERNAL SOURCE PACKAGE = NONE
+→ REISSUE / REVALIDATION REQUIRED
 
 O/C AUTHENTICATED HIGH-FIDELITY AUTHORIZATION
 → NOT_GRANTED

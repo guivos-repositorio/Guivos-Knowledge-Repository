@@ -2034,10 +2034,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#20-estado-pos-auditoria-e-pos-release-pre-execucao" class="md-nav__link">
+  <a href="#20-estado-corrente" class="md-nav__link">
     <span class="md-ellipsis">
       
-        20. Estado pós-auditoria e pós-release / pré-execução
+        20. Estado corrente
       
     </span>
   </a>
@@ -2137,7 +2137,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Manifesto de Entrega v5
+    Homes — Manifesto de Entrega v6
   
 
     
@@ -2182,7 +2182,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-delivery-v6-snapshot-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Snapshot v6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -2207,7 +2242,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Pacote v6 Candidato
+    Homes — Pacote v6 Candidato (proveniência)
   
 
     
@@ -2217,7 +2252,7 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--superseded"></span>
   
 
   
@@ -4297,10 +4332,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#20-estado-pos-auditoria-e-pos-release-pre-execucao" class="md-nav__link">
+  <a href="#20-estado-corrente" class="md-nav__link">
     <span class="md-ellipsis">
       
-        20. Estado pós-auditoria e pós-release / pré-execução
+        20. Estado corrente
       
     </span>
   </a>
@@ -4358,12 +4393,21 @@ DESIGN PRODUCTION READINESS
 → GOVERNADO POR GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
+→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
 
-V5 SNAPSHOT / PACOTE EXTERNO
-→ EMITTED / MATERIALIZED / VALIDATED
+V6 SNAPSHOT
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+
+OPERATIONAL EXECUTION
+→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
 </code></pre></div>
-<p>As condições cumulativas de início foram satisfeitas: pacote v5 reproduzível no mesmo checkpoint, Source Lock operacional por Home derivado desse pacote, validação dos gates e ato humano explícito registrado em <code>GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.1.0</code>.</p>
+<p>O ato humano de Design Production Release permanece concedido, mas as condições cumulativas de execução não estão atualmente satisfeitas porque não existe pacote externo corrente válido. O v6 foi congelado como histórico após findings pós-emissão; nova execução depende de nova emissão/revalidação governada e de Source Locks operacionais derivados desse novo pacote.</p>
 <h3 id="01-liberdade-criativa-protegida">0.1 Liberdade criativa protegida<a class="headerlink" href="#01-liberdade-criativa-protegida" title="Permanent link">&para;</a></h3>
 <p>O GKR <strong>não congela identidade visual canônica</strong> para estas Homes. A designer pode criar, com originalidade e autonomia, tipografia, paleta, imagens, ilustração, iconografia, grid, ritmo, composição, atmosfera, motion, linguagem gráfica, tratamento de componentes e tom de voz/copy não congelada.</p>
 <p>Essas escolhas são <strong>output de Design</strong>, não pré-condição documental. A solução criativa aprovada deve ser documentada no artefato final de Design entregue pela designer, com consistência e handoff suficientes para continuidade.</p>
@@ -4429,12 +4473,12 @@ VALIDAÇÃO HUMANA
 <p>Este Handoff constitui a <strong>autoridade procedimental comum</strong> para materialização externa das oito Homes. Ele define como a fase deve operar, mas <strong>não concede sozinho o Design Production Release</strong>.</p>
 <p>A execução somente fica liberada quando coexistirem:</p>
 <ol>
-<li>pacote v5 materializado e reproduzível;</li>
+<li>pacote externo corrente, materializado, reproduzível e semanticamente válido;</li>
 <li>Source Lock operacional da Home no checkpoint da emissão;</li>
 <li>gates de validação sem finding material aberto;</li>
 <li>ato humano explícito de <code>DESIGN PRODUCTION RELEASE = GRANTED</code>.</li>
 </ol>
-<p>Depois desse release, podem ser executados:</p>
+<p>Neste estado, o item 1 não está satisfeito. Portanto, a execução operacional permanece pausada. Quando uma nova emissão válida fechar novamente as quatro condições, poderão ser executados:</p>
 <ul>
 <li>criação manual pela designer e, opcionalmente, exploração assistida por IA;</li>
 <li>arquitetura visual;</li>
@@ -4497,24 +4541,26 @@ VALIDAÇÃO HUMANA
 </ol>
 <h3 id="48-guivos-intelligence">4.8 Guivos Intelligence<a class="headerlink" href="#48-guivos-intelligence" title="Permanent link">&para;</a></h3>
 <p>Intelligence possui cadeia específica já convergida e deve ser materializado sem ser confundido com tecnologia, dashboard ou mecanismo de decisão.</p>
-<p>Ordem operacional específica no pacote v5:</p>
-<div class="highlight"><pre><span></span><code>N0 — LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL V5
+<p>Ordem operacional para a próxima emissão válida, sempre subordinada às versões exatas fixadas pelo Manifesto/candidato governado:</p>
+<div class="highlight"><pre><span></span><code>N0 — LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL DA EMISSÃO
      → fixa checkpoint, fontes, prompt e estado EXPLORAÇÃO
 
-N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9
      → congela significado e invariantes da Home
 
-N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.0.0
+N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.10
      → traduz a Home para o contrato de Design
 
-N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
-     → preserva narrativa, copy e função pública
+N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7
+     + GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
+     + GKR-UX-HOMES-OUTCOME-001 v1.0.0
+     → preservam narrativa, valor, copy e função pública
 
-N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
-     + GPA-006 v2.0.0
+N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
+     + GPA-006 v2.0.1
      → governam significado e limites superiores do produto
 </code></pre></div>
-<p>O GENINPUT histórico de Intelligence permanece como proveniência de uma primeira exploração e não integra o input operacional do v5. Autoridades narrativas superiores continuam válidas por referência e devem ser consultadas quando houver dúvida material.</p>
+<p>GENINPUTs históricos de Intelligence permanecem apenas como proveniência e não entram automaticamente no input operacional de uma nova emissão.</p>
 <hr />
 <h2 id="5-ordem-geral-de-autoridade">5. Ordem geral de autoridade<a class="headerlink" href="#5-ordem-geral-de-autoridade" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>NÍVEL 0 — HANDOFF CANÔNICO COMUM
@@ -4826,7 +4872,7 @@ VALIDAÇÃO HUMANA
 <p><strong>HANDOFF DAS OITO HOMES PREPARADO PARA A GERAÇÃO DE ENTREGA V4 — MATERIALIZAÇÃO SOMENTE APÓS O GATE OPERACIONAL DO MANIFESTO/FLUXO VIGENTES — IMPLEMENTAÇÃO NÃO INCLUÍDA.</strong></p>
 </blockquote>
 <hr />
-<h2 id="20-estado-pos-auditoria-e-pos-release-pre-execucao">20. Estado pós-auditoria e pós-release / pré-execução<a class="headerlink" href="#20-estado-pos-auditoria-e-pos-release-pre-execucao" title="Permanent link">&para;</a></h2>
+<h2 id="20-estado-corrente">20. Estado corrente<a class="headerlink" href="#20-estado-corrente" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>HANDOFF / MÉTODO
 → ACTIVE / RECONCILED
 
@@ -4840,13 +4886,23 @@ EXTERNAL DESIGNER CREATION
 → MANUAL FIRST-CLASS
 → AI OPTIONAL / DESIGNER-CONTROLLED
 
-FINAL DESIGN PRODUCTION
-→ DESIGNER-OWNED / SUBJECT TO HUMAN ACCEPTANCE
+DESIGN PRODUCTION RELEASE
+→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0
 
-IMPLEMENTATION / PRODUCTION
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+
+OPERATIONAL DESIGN EXECUTION
+→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+
+FINAL DESIGN ACCEPTANCE
+→ HUMAN / SEPARATE
+
+IMPLEMENTATION / PRODUCT ENGINEERING
 → NOT RELEASED BY THIS HANDOFF
 </code></pre></div>
-<p>Este documento governa <strong>como</strong> o handoff deve ocorrer. A liberação efetiva foi concedida por <code>GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0</code> sobre o pacote v5 já emitido e validado.</p>
+<p>Este documento governa <strong>como</strong> o handoff deve ocorrer. A autorização humana permanece concedida por <code>GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.0</code>, mas a execução operacional está pausada porque <code>CURRENT EXTERNAL SOURCE PACKAGE = NONE</code>. A próxima execução exige reissue/revalidation e novo pacote corrente válido.</p>
 
 
 

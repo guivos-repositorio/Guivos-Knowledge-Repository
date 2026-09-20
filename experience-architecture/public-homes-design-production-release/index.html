@@ -1844,7 +1844,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Manifesto de Entrega v5
+    Homes — Manifesto de Entrega v6
   
 
     
@@ -1889,7 +1889,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-delivery-v6-snapshot-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Snapshot v6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -1914,7 +1949,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Pacote v6 Candidato
+    Homes — Pacote v6 Candidato (proveniência)
   
 
     
@@ -1924,7 +1959,7 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--superseded"></span>
   
 
   
@@ -3762,7 +3797,7 @@
 <h1 id="homes-publicas-autorizacao-governada-de-design-production-release">Homes Públicas — Autorização Governada de Design Production Release<a class="headerlink" href="#homes-publicas-autorizacao-governada-de-design-production-release" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Esta autoridade registra o ato humano que libera a <strong>produção externa de Design das oito Homes pela designer</strong>, usando o GKR como fonte de verdade semântica e funcional.</p>
-<p>O release permanece válido. O método de execução foi posteriormente esclarecido:</p>
+<p>O release permanece válido como autorização humana. Sua execução operacional, porém, exige um pacote externo corrente e semanticamente válido. Um release concedido não cura contradições internas de um snapshot nem autoriza usar um pacote posteriormente invalidado. O método de execução permanece designer-first:</p>
 <div class="highlight"><pre><span></span><code>DESIGN PRODUCTION RELEASE
 → GRANTED
 
@@ -3826,7 +3861,7 @@ CANONICAL BLOB PRESERVATION
 → 26 / 26 EXACT MATCH
 → MISMATCHES = 0
 </code></pre></div>
-<p>O v5 permanece snapshot histórico congelado. Alterações materiais posteriores exigem nova emissão, não reescrita do snapshot.</p>
+<p>O v5 permanece snapshot histórico congelado. O v6 também foi posteriormente emitido e congelado, mas uma revisão independente pós-emissão identificou contradição material no Operational Flow v3.0.1 preservado pelo snapshot. Portanto, o v6 não é válido para nova execução; a correção canônica ocorre em revisão posterior e exige nova emissão, nunca reescrita do snapshot.</p>
 <h2 id="4-fonte-de-verdade-para-cada-home">4. Fonte de verdade para cada Home<a class="headerlink" href="#4-fonte-de-verdade-para-cada-home" title="Permanent link">&para;</a></h2>
 <p>A designer deve receber, para cada Home:</p>
 <ol>
@@ -3951,8 +3986,12 @@ AI OUTPUT
 DESIGN PRODUCTION RELEASE
 → GRANTED
 
-EXTERNAL DESIGNER PRODUCTION
+EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 → RELEASED
+
+OPERATIONAL EXECUTION
+→ REQUIRES VALID CURRENT EXTERNAL SOURCE PACKAGE
+→ PAUSED WHILE REISSUE IS PENDING
 
 MANUAL CREATIVE PRODUCTION
 → AUTHORIZED
@@ -3961,7 +4000,10 @@ AI-ASSISTED CREATIVE PRODUCTION
 → OPTIONAL / DESIGNER-CONTROLLED
 
 GKR-CREATED FIGMA
-→ DISCONTINUED
+→ NONE
+
+PRIOR GKR FIGMA EXPLORATION
+→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
 
 FINAL DESIGN ACCEPTANCE
 → HUMAN / SEPARATE
@@ -3973,8 +4015,19 @@ UXA-102 / V5
 → NOT_STARTED
 </code></pre></div>
 <h2 id="11-proximo-movimento-legitimo">11. Próximo movimento legítimo<a class="headerlink" href="#11-proximo-movimento-legitimo" title="Permanent link">&para;</a></h2>
-<p>Antes de entregar fontes à designer, a frente atual deve concluir <code>GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001</code> e provar que as oito Homes estão completas para consumo humano e por IA.</p>
-<p>Depois disso, a designer cria manualmente com liberdade, utilizando o GKR e podendo usar IA opcionalmente.</p>
+<p>A completude pré-emissão foi concluída historicamente, mas o snapshot v6 foi invalidado para nova execução por um P1 pós-emissão no Operational Flow v3.0.1.</p>
+<p>O próximo movimento legítimo é:</p>
+<div class="highlight"><pre><span></span><code>CANONICAL SOURCES
+→ RECONCILED
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+
+NEXT GOVERNED ACT
+→ PREPARE REISSUE / REVALIDATION
+→ MATERIALIZE ONLY BY SEPARATE HUMAN AUTHORIZATION
+</code></pre></div>
+<p>Somente depois de uma nova emissão válida a designer deve iniciar ou retomar execução operacional contra o pacote externo corrente.</p>
 
 
 
