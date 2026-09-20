@@ -1,10 +1,10 @@
 ---
-id: ROADMAP-13.47.17
+id: ROADMAP-13.47.18
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.17
+version: 13.47.18
 owner: Guivos
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 normative: true
 related:
   - GKR-STATE-001
@@ -1957,7 +1957,7 @@ Sequência governada atual:
 21. executar re-review do primeiro P1 no HEAD remediado — CONCLUÍDO / SEGUNDO P1 MATERIAL ENCONTRADO;
 22. adjudicar autoridades comuns ainda liberando execução — CONCLUÍDO / P1 VALID;
 23. reconciliar autoridades comuns para estado sem pacote corrente — CONCLUÍDO / HANDOFF v1.6.3 + GENINPUT v2.2.15 + READINESS v1.2.15 + FLOW v3.0.2 + RELEASE v1.2.0;
-24. validar novamente Semantic + Mechanical + re-review no HEAD final — EM CURSO;
+24. validar novamente Semantic + Mechanical + re-review no HEAD final — CONCLUÍDO / Semantic #1444 + Mechanical #1672 = SUCCESS / FINAL CODEX RE-REVIEW CLEAN ON d3cd3dce176a4224930cc428483f5530d22e8c6d / PR #402 MERGED @ 0f37eda133dc14a42f686b616993cffcd099cf04;
 25. decidir separadamente nova emissão/revalidação do pacote corrigido — PENDENTE / ATO HUMANO SEPARADO.
 
 ```text
