@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
 title: Homes Públicas — Pacote v7 Candidato para Reemissão e Revalidação
 status: draft
-version: 0.3.1
+version: 0.3.2
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: false
@@ -27,7 +27,7 @@ related:
 
 Este documento preserva a proveniência do candidato que deu origem ao pacote externo v7 das oito Homes após a invalidação do snapshot v6 para nova execução.
 
-A materialização foi posteriormente autorizada e executada em `delivery/design-handoff-v7`, registrada por `GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.0.0`. Este documento continua não normativo e não substitui o registro do snapshot corrente.
+A materialização foi posteriormente autorizada e executada em `delivery/design-handoff-v7`, registrada por `GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.0.0`. Este documento continua não normativo e não substitui o registro histórico do snapshot v7.
 
 O candidato v7 foi usado para revalidar a composição externa contra as autoridades canônicas corrigidas após os dois P1 pós-emissão do v6.
 
