@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001
 title: Homes Públicas — Pacote v8 Candidato para Reemissão e Revalidação
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: false
-maturity: reissue_candidate_prepared_revalidation_in_progress
+maturity: reissue_candidate_revalidated_materialization_decision_pending
 depends_on:
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -49,7 +49,7 @@ CURRENT EXTERNAL SOURCE PACKAGE
 
 V8
 → CANDIDATE PREPARED
-→ REVALIDATION IN PROGRESS
+→ REVALIDATION PASS
 
 delivery/design-handoff-v8
 → NOT CREATED
@@ -214,7 +214,53 @@ A materialização v8 somente poderá ser considerada após:
 - zero finding material aberto;
 - decisão humana separada autorizando materialização.
 
-## 7. Regra de imutabilidade
+## 7. Evidência de revalidação
+
+A primeira revalidação integral do candidato v8 foi concluída no HEAD exato `539b9b9503e09863cb421e2432fca3fca40871f7`.
+
+```text
+CANONICAL SOURCES
+→ 29 / 29 CONFIRMED
+
+COMMON AUTHORITY CHAIN
+→ HANDOFF 1.6.5
+→ GENINPUT 2.2.17
+→ READINESS 1.2.17
+→ FLOW 3.0.3
+→ RELEASE 1.2.1
+
+REVIEWED HEAD
+→ 539b9b9503e09863cb421e2432fca3fca40871f7
+
+SEMANTIC #1498
+→ SUCCESS
+
+MECHANICAL #1721
+→ SUCCESS
+
+INDEPENDENT CODEX REVIEW
+→ CLEAN / NO MAJOR ISSUES
+→ REVIEWED COMMIT 539b9b9503
+
+OPEN REVIEW THREADS
+→ 0
+
+REVALIDATION RESULT
+→ PASS
+
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+
+delivery/design-handoff-v8
+→ NOT PRESENT
+
+MATERIALIZATION
+→ DECISION PENDING
+→ SEPARATE HUMAN-GOVERNED ACT
+→ NOT AUTHORIZED BY REVALIDATION
+```
+
+## 8. Regra de imutabilidade
 
 ```text
 V6
@@ -234,7 +280,7 @@ delivery/design-handoff-v8
 → NOT AUTHORIZED
 ```
 
-## 8. Estado
+## 9. Estado
 
 ```text
 V8 CANDIDATE
