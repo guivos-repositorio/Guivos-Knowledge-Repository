@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
 title: Homes Públicas — Pacote v6 Candidato para Designer e IA Opcional
 status: superseded
-version: 0.3.0
+version: 0.3.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
-maturity: realized_into_v6_snapshot
+maturity: realized_into_v6_snapshot_post_emission_p1_recorded
 depends_on:
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -30,7 +30,7 @@ O v6 nasce para corrigir uma única classe de problema operacional do v5:
 
 > **a designer deve receber documentação completa e determinística sem ser obrigada a seguir Figma Make, protótipo gerativo ou direção visual criada pelo GKR.**
 
-O candidato foi realizado sem alteração de composição no snapshot registrado por `GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001 v1.0.0`.
+O candidato foi realizado sem alteração de composição no snapshot registrado por `GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001`. Uma revisão independente pós-emissão identificou posteriormente um P1 material no Operational Flow v3.0.1 incluído nesta composição. Este documento preserva as versões realmente emitidas como proveniência; ele não é atualizado para fingir que o snapshot continha a correção posterior.
 
 ```text
 V5
@@ -39,7 +39,10 @@ V5
 
 V6
 → CANDIDATE REALIZED
-→ SNAPSHOT EMITTED / MATERIALIZED / VALIDATED
+→ SNAPSHOT EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ POST-EMISSION P1 FOUND
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION
 ```
 
 ## 2. Princípios do v6
@@ -281,13 +284,20 @@ C1–C15
 → PASS / 8 OF 8 / 120 OF 120
 
 SNAPSHOT V6
-→ EMITTED / MATERIALIZED / VALIDATED
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN / HISTORICAL
+→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
 → branch delivery/design-handoff-v6
 → commit b7fe5d62cef444c8316c66edd8ac73b703698a4a
 → tree 61eef7447fc5c6b36890ccb774f7011615a6abca
 
-DESIGNER PRODUCTION
+CURRENT EXTERNAL SOURCE PACKAGE
+→ NONE
+→ REISSUE / REVALIDATION REQUIRED
+
+DESIGNER PRODUCTION AUTHORIZATION
 → EXTERNAL / DESIGNER-OWNED
+→ OPERATIONAL EXECUTION PAUSED UNTIL VALID PACKAGE EXISTS
 
 AI
 → OPTIONAL
