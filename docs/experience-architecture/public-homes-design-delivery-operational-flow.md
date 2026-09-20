@@ -50,7 +50,7 @@ A produção criativa só deve começar quando:
 - não houver finding material aberto de completude;
 - o Design Production Release estiver vigente.
 
-A reauditoria C1–C15 foi concluída para a emissão v6. Uma revisão independente pós-emissão identificou posteriormente um P1 neste próprio fluxo v3.0.1: o snapshot v6 congelado preservou linguagem pré-emissão contraditória. A autoridade canônica foi corrigida nesta revisão v3.0.2; o snapshot v6 não é reescrito e não permanece válido para nova execução. Uma nova emissão/revalidação é necessária antes de iniciar trabalho criativo com um pacote externo corrente.
+A reauditoria C1–C15 foi concluída para a emissão v6. Uma revisão independente pós-emissão identificou posteriormente um P1 neste próprio fluxo v3.0.1: o snapshot v6 congelado preservou linguagem pré-emissão contraditória. A revisão v3.0.2 corrigiu historicamente essa contradição; a revisão corrente v3.0.3 torna esta autoridade package-state agnostic e delega a identidade e a validade do pacote externo ao Manifesto + Current State vigentes. O snapshot v6 não é reescrito e permanece histórico/inválido para nova execução. O início de trabalho criativo depende das condições deste gate conforme o estado vigente nessas autoridades.
 
 ## 3. Isolamento de contexto
 
