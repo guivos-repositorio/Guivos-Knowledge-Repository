@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.10.0
+version: 1.10.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-20
 normative: false
 related:
   - UXA-014
@@ -55,12 +55,12 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | definição de Coletivo | definida funcionalmente | `UXA-014` |
 | distinção Organização × Coletivo | definida funcionalmente | `UXA-014` |
 | relações Organização ↔ Coletivo | contrato funcional existente, não normativo | `UXA-019` |
-| atores, autoridades e jobs autenticados | **definidos documentalmente** | `GKR-UX-ORGCOL-AUTH-JOBS-001` |
-| Arquitetura da Informação autenticada | **definida** | `GKR-UX-ORGCOL-AUTH-IA-001` |
-| mapa lógico de superfícies autenticadas | **definido documentalmente** | `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` |
-| mapa funcional de estados autenticados | **definido documentalmente** | `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` |
-| Jornada da Organização | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-ORGANIZATION-001` |
-| Jornada do Coletivo | documento integrado em `draft`; não equivale a UX final | `GKR-JOURNEY-COLLECTIVE-001` |
+| atores, autoridades e jobs autenticados | **definidos documentalmente** | [Atores, Autoridades e Jobs](organizations-collectives-authenticated-actors-authorities-and-jobs.md) |
+| Arquitetura da Informação autenticada | **definida** | [Arquitetura da Informação](organizations-collectives-authenticated-information-architecture.md) |
+| mapa lógico de superfícies autenticadas | **definido documentalmente** | [Mapa de Superfícies](organizations-collectives-authenticated-surface-map.md) |
+| mapa funcional de estados autenticados | **definido documentalmente** | [Mapa de Estados](organizations-collectives-authenticated-state-map.md) |
+| Jornada da Organização | **active**; continuidade funcional corrente, não equivale a UI final | [Jornada da Organização](../journeys/organization.md) |
+| Jornada do Coletivo | **active**; continuidade funcional corrente, não equivale a UI final | [Jornada do Coletivo](../journeys/collective.md) |
 | corpus de oportunidades reais | Research consolidado pré-campo | `RP-002-SUP-001` |
 | atlas de oportunidades, supply, relevância e testes | `active`, não normativo | `GKR-UX-ORGCOL-SUPPLY-VALUE-001` |
 | papel no supply | pesquisa consolidada pré-campo | `RP-002-OCE-001` |
@@ -68,14 +68,28 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | validação com perfis sintéticos | executada metodologicamente; não é PMF | `RP-002-PMF-001` + atlas |
 | validação humana real / PMF | **pendente** | piloto de campo |
 | Home pública de Organizações e Coletivos | possui Documento Mestre próprio | `public-home-organizations-collectives-master-document.md` |
-| wireframe low-fidelity da experiência autenticada da Organização | **Delivery v0.1.0 + Validation v1.0.0** | PASS |
-| wireframe low-fidelity da experiência autenticada do Coletivo | **Delivery v0.1.0 + Validation v1.0.0** | PASS |
+| wireframe low-fidelity da experiência autenticada da Organização | **Delivery v0.1.0 + Validation v1.0.0** | [Entrega Low-Fidelity](organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md) + [Validação](organizations-collectives-authenticated-low-fidelity-functional-validation.md) |
+| wireframe low-fidelity da experiência autenticada do Coletivo | **Delivery v0.1.0 + Validation v1.0.0** | [Entrega Low-Fidelity](organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md) + [Validação](organizations-collectives-authenticated-low-fidelity-functional-validation.md) |
 | validação de wireframe da Organização | **PASS / 0 findings materiais** | concluída |
 | validação de wireframe do Coletivo | **PASS / 0 findings materiais** | concluída |
-| elegibilidade high-fidelity O/C | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0** | concluída |
+| elegibilidade high-fidelity O/C | **PASS** | [Elegibilidade High-Fidelity](organizations-collectives-authenticated-high-fidelity-eligibility.md) |
 | autorização high-fidelity O/C | **NOT_GRANTED** | pendente de ato humano separado |
 | UI / protótipo autenticado | não definido | pendente |
 | Engenharia da experiência autenticada | não autorizada a partir de wireframe | pendente |
+
+A cadeia autenticada corrente pode ser percorrida diretamente a partir deste hub:
+
+1. [Atores, Autoridades e Jobs](organizations-collectives-authenticated-actors-authorities-and-jobs.md);
+2. [Arquitetura da Informação](organizations-collectives-authenticated-information-architecture.md);
+3. [Mapa de Superfícies](organizations-collectives-authenticated-surface-map.md);
+4. [Mapa de Estados](organizations-collectives-authenticated-state-map.md);
+5. [Fluxos Prioritários](organizations-collectives-authenticated-priority-flows.md);
+6. [Materialização de Navegação](organizations-collectives-authenticated-navigation-materialization.md);
+7. [Entrega Low-Fidelity](organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md);
+8. [Validação Low-Fidelity](organizations-collectives-authenticated-low-fidelity-functional-validation.md);
+9. [Elegibilidade High-Fidelity](organizations-collectives-authenticated-high-fidelity-eligibility.md).
+
+Esses documentos permanecem autoridades correntes de detalhe. Eles saem do MENU principal para reduzir poluição de navegação, não por perda de validade.
 
 A existência de Jobs, Arquitetura da Informação, mapa lógico de superfícies e mapa funcional de estados não promove automaticamente fluxos, sitemap técnico, menu visual, wireframe, UI, RBAC técnico ou implementação.
 
