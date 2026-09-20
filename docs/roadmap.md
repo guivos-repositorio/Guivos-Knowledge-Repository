@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.14
+id: ROADMAP-13.47.15
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.14
+version: 13.47.15
 owner: Guivos
 last_updated: 2026-09-19
 normative: true
@@ -1942,7 +1942,7 @@ Sequência governada atual:
 6. absorver contrato determinístico em Travel Master — CONCLUÍDO;
 7. reconciliar Business Master com Source Lock vigente — CONCLUÍDO;
 8. reconciliar Intelligence Master com Source Lock vigente — CONCLUÍDO;
-9. reauditar 8/8 Homes como pacotes completos — CANDIDATE PASS / 120 OF 120;
+9. reauditar 8/8 Homes como pacotes completos — CONCLUÍDO / PASS / CLOSED / 120 OF 120;
 10. definir pacote v6 candidato — CONCLUÍDO;
 11. sincronizar Estado / Roadmap / navegação — CONCLUÍDO;
 12. executar Semantic + Mechanical no HEAD final — CONCLUÍDO / Semantic #1404 + Mechanical #1633 = SUCCESS;
