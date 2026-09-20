@@ -2286,7 +2286,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Pacote v8 Candidato (revalidação)
+    Homes — Pacote v8 Candidato (proveniência)
   
 
     
@@ -2297,6 +2297,41 @@
   
   
     <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/public-homes-design-delivery-v8-snapshot-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Snapshot v8 (corrente)
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -6242,8 +6277,9 @@ GKR-CREATED FIGMA
 <li>reconciliar autoridades comuns para não congelar estado transitório de pacote — SEGUNDO RE-REVIEW ENCONTROU P1 RESIDUAL / REMEDIADO COM HANDOFF v1.6.5 + GENINPUT v2.2.17 + READINESS v1.2.17 + FLOW v3.0.3 + RELEASE v1.2.1 / PACKAGE STATE FULLY DELEGATED TO MANIFEST + CURRENT STATE / FINAL REVALIDATION PENDING;</li>
 <li>corrigir proveniência v7 residual que ainda chamava snapshot histórico de corrente — CONCLUÍDO / CANDIDATE v0.3.2;</li>
 <li>após integração da remediação, preparar nova reemissão/revalidação — CONCLUÍDO / V8 CANDIDATE PREPARED FROM MAIN b660503a5da5ec5214e3e2c0eba1f1b06daa9489 / 29 OF 29 SOURCE PINS RECALCULATED / SUBSTANTIVE REVALIDATION PASS;</li>
-<li>concluir gate externo de validação do HEAD documental final da PR #408 — EM CURSO / EXACT-HEAD SEMANTIC + MECHANICAL + INDEPENDENT REVIEW / NÃO AUTOAFIRMADO NO CONTEÚDO;</li>
-<li>decidir separadamente materialização do v8 — PENDENTE / ATO HUMANO SEPARADO / delivery/design-handoff-v8 NOT CREATED / NOT AUTHORIZED.</li>
+<li>concluir gate externo de validação do HEAD documental final da PR #408 — CONCLUÍDO / Semantic #1531 + Mechanical #1754 = SUCCESS / CODEX CLEAN ON a645330b63170ba4ea58cfcfe082abd93ca0442c / PR #408 MERGED @ 00791d1e09b5e75b33c223e38164eeee1be0c6cd;</li>
+<li>decidir separadamente materialização do v8 — CONCLUÍDO / ATO HUMANO EXPLÍCITO AUTORIZADO / snapshot materialized + integrity-validated / branch delivery/design-handoff-v8 / commit d7eea909b1b5cb6266d7c4a725657ccd909f0e63 / tree 17553412f24d7a97287ddc5944b8622ecf744534;</li>
+<li>registrar emissão v8 e designá-la pacote externo corrente — CONCLUÍDO NESTA INTEGRAÇÃO / snapshot record + Manifest + Current State reconciled / v8 valid for new external design execution.</li>
 </ol>
 <div class="highlight"><pre><span></span><code>V5 SNAPSHOT
 → FROZEN / HISTORICAL
@@ -6281,22 +6317,26 @@ V7 SNAPSHOT
 → 37 FILES TOTAL
 
 V8 CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.2.3
-→ PREPARED FROM MAIN b660503a5da5ec5214e3e2c0eba1f1b06daa9489
-→ 29 / 29 SOURCE PINS RECALCULATED
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.3.0
+→ NON-NORMATIVE PROVENANCE
 → SUBSTANTIVE REVALIDATION PASS
-→ REVIEWED HEAD 539b9b9503e09863cb421e2432fca3fca40871f7
-→ SEMANTIC #1498 = SUCCESS
-→ MECHANICAL #1721 = SUCCESS
-→ CODEX CLEAN / NO MAJOR ISSUES
-→ REVIEW THREADS = 0 OPEN
-→ delivery/design-handoff-v8 NOT CREATED
-→ FINAL DOCUMENTARY HEAD VALIDATION = EXTERNAL PR #408 GATE / NOT SELF-ASSERTED IN FILE CONTENT
-→ MATERIALIZATION DECISION PENDING / NOT AUTHORIZED
-→ SELF-REFERENTIAL FINAL-HEAD P1 = REMEDIATED
+→ REALIZED BY V8 SNAPSHOT
+
+V8 SNAPSHOT
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001 v1.0.0
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN
+→ origin main 00791d1e09b5e75b33c223e38164eeee1be0c6cd
+→ branch delivery/design-handoff-v8
+→ commit d7eea909b1b5cb6266d7c4a725657ccd909f0e63
+→ tree 17553412f24d7a97287ddc5944b8622ecf744534
+→ 29 / 29 CANONICAL BLOBS EXACT MATCH
+→ 8 / 8 READ-FIRST GUIDES VALID
+→ 37 FILES TOTAL
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
+→ V8
+→ VALID FOR NEW EXTERNAL DESIGN EXECUTION
 
 CORRECTED COMMON AUTHORITY CHAIN
 → HANDOFF 1.6.5
@@ -6310,7 +6350,7 @@ DESIGN PRODUCTION RELEASE
 → EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 
 OPERATIONAL EXECUTION
-→ PAUSED UNTIL NEW SNAPSHOT IS DESIGNATED CURRENT / VALID
+→ ENABLED FOR EXTERNAL DESIGNER PRODUCTION UNDER CURRENT V8 PACKAGE
 
 AI
 → OPTIONAL / DESIGNER-CONTROLLED
