@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.19
+id: ROADMAP-13.47.20
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.19
+version: 13.47.20
 owner: Guivos
 last_updated: 2026-09-20
 normative: true
@@ -1960,8 +1960,8 @@ Sequência governada atual:
 23. reconciliar autoridades comuns para estado sem pacote corrente — CONCLUÍDO / HANDOFF v1.6.3 + GENINPUT v2.2.15 + READINESS v1.2.15 + FLOW v3.0.2 + RELEASE v1.2.0;
 24. validar novamente Semantic + Mechanical + re-review no HEAD final — CONCLUÍDO / Semantic #1444 + Mechanical #1672 = SUCCESS / FINAL CODEX RE-REVIEW CLEAN ON d3cd3dce176a4224930cc428483f5530d22e8c6d / PR #402 MERGED @ 0f37eda133dc14a42f686b616993cffcd099cf04;
 25. decidir separadamente preparação da nova emissão/revalidação — CONCLUÍDO / ATO HUMANO AUTORIZADO / V7 CANDIDATE PREPARED;
-26. revalidar candidato v7 — EM CURSO / 29 OF 29 SOURCES RECALCULATED / SEMANTIC INITIAL PASS;
-27. decidir separadamente materialização do v7 — PENDENTE / ATO HUMANO SEPARADO.
+26. revalidar candidato v7 — CONCLUÍDO / 29 OF 29 SOURCES CONFIRMED / Semantic #1458 + Mechanical #1684 = SUCCESS / CODEX CLEAN ON 59b9dfeb586b06182c58aebf41bfb99d62678e64;
+27. decidir separadamente materialização do v7 — PENDENTE / ATO HUMANO SEPARADO / NOT AUTHORIZED BY REVALIDATION.
 
 ```text
 V5 SNAPSHOT
