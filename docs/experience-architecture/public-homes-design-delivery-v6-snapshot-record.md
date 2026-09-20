@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
 title: Homes Públicas — Registro do Snapshot Externo de Design v6
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -240,7 +240,32 @@ CURRENT EXTERNAL SOURCE PACKAGE
 
 A integridade material 29/29 continua comprovada; o problema é justamente que um blob preservado contém estado operacional contraditório. Portanto, integridade do snapshot não equivale a validade semântica para nova execução.
 
-## 12. Preservação das emissões anteriores
+## 12. Segundo finding pós-emissão — preparação de reissue
+
+O re-review da PR #402 no HEAD `b815e0f07f5f59bde2fbbd23288a65b1816cb2e4` encontrou um segundo P1 material nas autoridades comuns que seriam usadas em uma próxima emissão:
+
+```text
+P1 — RECONCILE THE COMMON AUTHORITIES BEFORE REISSUING
+→ VALID
+
+AFFECTED CANONICAL AUTHORITIES
+→ GKR-UX-HOMES-GENINPUT-001 v2.2.14
+→ GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.2.14
+
+CONTRADICTION
+→ EXECUTION MARKED AUTHORIZED
+→ CURRENT EXTERNAL SOURCE PACKAGE = NONE
+
+CANONICAL REMEDIATION
+→ GENINPUT v2.2.15
+→ READINESS v1.2.15
+→ RELEASE v1.2.0
+→ OPERATIONAL EXECUTION PAUSED UNTIL VALID PACKAGE EXISTS
+```
+
+O finding afeta a preparação da próxima emissão, não a integridade física do snapshot v6. O v6 permanece inalterado, congelado e inválido para nova execução.
+
+## 13. Preservação das emissões anteriores
 
 ```text
 v1 → delivery/design-handoff-v1
@@ -253,7 +278,7 @@ v6 → delivery/design-handoff-v6
 
 O v6 não reescreve snapshots anteriores. O v5 permanece congelado como proveniência histórica.
 
-## 13. Limites
+## 14. Limites
 
 A emissão v6 não autoriza automaticamente:
 
@@ -268,7 +293,7 @@ A emissão v6 não autoriza automaticamente:
 
 O Design Production Release já estava concedido separadamente para produção externa pela designer e permanece válido.
 
-## 14. Estado
+## 15. Estado
 
 ```text
 V6 SNAPSHOT
@@ -315,6 +340,6 @@ PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-## 15. Síntese
+## 16. Síntese
 
 > **A emissão externa v6 permanece materializada e reproduzível em `delivery/design-handoff-v6`, congelada no commit `b7fe5d62cef444c8316c66edd8ac73b703698a4a` e tree `61eef7447fc5c6b36890ccb774f7011615a6abca`, com 29/29 fontes canônicas byte-preservadas e 37 arquivos. Porém, o P1 pós-emissão no Operational Flow v3.0.1 torna o v6 inválido para nova execução. A correção existe somente na autoridade canônica posterior e requer nova emissão/revalidação separada.**
