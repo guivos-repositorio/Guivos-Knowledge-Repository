@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 6.4.3
+version: 6.4.4
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: true
@@ -34,7 +34,7 @@ O snapshot **v6 foi emitido, materializado e teve sua integridade validada**, ma
 
 O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.2` foi revalidado, reconciliado e realizado pelo snapshot `GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.1.0`. O v7 foi materializado sob autorização humana explícita a partir de `main = 35c616a4a7bf754577c180d37afe5e0c22380c7b`, em `delivery/design-handoff-v7`, commit `564a2656332dffeb4779ca20ee1ce6697abaa06d`, tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`. Uma revisão independente pós-emissão encontrou um P1 material nas cinco autoridades comuns contidas no próprio snapshot; por isso o v7 permanece congelado/histórico e inválido para nova execução. `CURRENT EXTERNAL SOURCE PACKAGE = NONE`.
 
-O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.2.2` foi preparado diretamente sobre `main = b660503a5da5ec5214e3e2c0eba1f1b06daa9489`, com 29/29 pins recalculados e a cadeia comum final `1.6.5 / 2.2.17 / 1.2.17 / 3.0.3 / 1.2.1`. A revalidação retornou `PASS` no HEAD `539b9b9503e09863cb421e2432fca3fca40871f7`, com Semantic #1498, Mechanical #1721 e review independente limpo. `delivery/design-handoff-v8` não existe e sua materialização permanece um ato humano separado não autorizado.
+O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.2.3` foi preparado diretamente sobre `main = b660503a5da5ec5214e3e2c0eba1f1b06daa9489`, com 29/29 pins recalculados e a cadeia comum final `1.6.5 / 2.2.17 / 1.2.17 / 3.0.3 / 1.2.1`. A revalidação retornou `PASS` no HEAD `539b9b9503e09863cb421e2432fca3fca40871f7`, com Semantic #1498, Mechanical #1721 e review independente limpo. `delivery/design-handoff-v8` não existe e sua materialização permanece um ato humano separado não autorizado.
 
 ```text
 DESIGNER
@@ -351,7 +351,7 @@ Essa correção evita que um futuro snapshot congele novamente um valor operacio
 
 ```text
 V8 CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.2.2
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.2.3
 → PREPARED FROM MAIN b660503a5da5ec5214e3e2c0eba1f1b06daa9489
 → 29 / 29 SOURCE PINS RECALCULATED
 → COMMON AUTHORITY CHAIN = 1.6.5 / 2.2.17 / 1.2.17 / 3.0.3 / 1.2.1
