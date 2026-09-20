@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 6.2.2
+version: 6.3.0
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: true
-maturity: v7_candidate_revalidated_merged_materialization_decision_pending
+maturity: v7_snapshot_current_integrity_validated
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -20,6 +20,7 @@ related:
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001
 ---
 
 # Homes Públicas — Manifesto Canônico de Entrega para Design
@@ -30,7 +31,7 @@ Este Manifesto governa a emissão externa das oito Homes públicas para criaçã
 
 O snapshot **v6 foi emitido, materializado e teve sua integridade validada**, mas uma revisão independente pós-emissão encontrou um P1 material dentro do próprio pacote: o Operational Flow v3.0.1 preservou linguagem pré-emissão incompatível com o uso corrente. O v6 permanece congelado e reproduzível como proveniência histórica, porém **não é válido para nova execução**. Neste estado, não existe pacote externo corrente; nova emissão/revalidação é necessária. O v5 também permanece congelado como snapshot histórico.
 
-O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.1` foi revalidado no HEAD final `0418b219d4d4a746498cf8b8032b5018f333e29e` e integrado em `main` pela PR #405, merge commit `574814b561a933291fd3e7539f814f4187398277`. Os 29/29 pins canônicos foram reconfirmados no `main` pós-merge. Ele permanece não normativo: `CURRENT EXTERNAL SOURCE PACKAGE = NONE` continua verdadeiro e `delivery/design-handoff-v7` permanece inexistente até autorização humana separada de materialização.
+O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.0` foi revalidado, reconciliado e posteriormente realizado pelo snapshot `GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.0.0`. O v7 foi materializado sob autorização humana explícita a partir de `main = 35c616a4a7bf754577c180d37afe5e0c22380c7b`, em `delivery/design-handoff-v7`, commit `564a2656332dffeb4779ca20ee1ce6697abaa06d`, tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`. `CURRENT EXTERNAL SOURCE PACKAGE = V7`.
 
 ```text
 DESIGNER
@@ -255,18 +256,21 @@ FROZEN V6 SNAPSHOT
 → INVALID FOR NEW EXECUTION
 
 V7 CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.2.1
-→ PREPARED / REVALIDATED / MERGED INTO MAIN BY PR #405
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.0
+→ REALIZED BY V7 SNAPSHOT
 → NON-NORMATIVE
-→ FINAL REVIEWED HEAD 0418b219d4d4a746498cf8b8032b5018f333e29e
-→ MAIN 574814b561a933291fd3e7539f814f4187398277
-→ POST-MERGE SOURCE PIN RECHECK = 29 / 29 EXACT MATCH
-→ REVALIDATION PASS
-→ MATERIALIZATION DECISION PENDING / SEPARATE HUMAN ACT
+
+V7 SNAPSHOT
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.0.0
+→ MATERIALIZED / INTEGRITY-VALIDATED
+→ branch delivery/design-handoff-v7
+→ commit 564a2656332dffeb4779ca20ee1ce6697abaa06d
+→ tree 39a72433b0b6f75975bc6a128c57fb688bd85bcb
+→ 29 / 29 CANONICAL BLOBS EXACT MATCH
+→ 8 / 8 READ-FIRST GUIDES VALID
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ V7
 ```
 
 ## 12. Segundo finding pós-emissão — autoridades comuns da próxima reemissão
@@ -316,10 +320,14 @@ V6
 → INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ V7
 
-SNAPSHOT
+CURRENT SNAPSHOT
+→ delivery/design-handoff-v7
+→ commit 564a2656332dffeb4779ca20ee1ce6697abaa06d
+→ tree 39a72433b0b6f75975bc6a128c57fb688bd85bcb
+
+HISTORICAL INVALID SNAPSHOT
 → delivery/design-handoff-v6
 → commit b7fe5d62cef444c8316c66edd8ac73b703698a4a
 → tree 61eef7447fc5c6b36890ccb774f7011615a6abca
@@ -331,7 +339,7 @@ EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 → RELEASED
 
 OPERATIONAL EXECUTION
-→ PAUSED UNTIL VALID CURRENT PACKAGE EXISTS
+→ VALID CURRENT PACKAGE EXISTS / V7
 
 AI
 → OPTIONAL / DESIGNER-CONTROLLED
