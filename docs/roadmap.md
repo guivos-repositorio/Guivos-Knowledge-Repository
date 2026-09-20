@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.29
+id: ROADMAP-13.47.30
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.29
+version: 13.47.30
 owner: Guivos
 last_updated: 2026-09-20
 normative: true
@@ -1967,7 +1967,9 @@ Sequência governada atual:
 28. registrar e validar a emissão v7 na documentação canônica do `main` — REVIEW ENCONTROU P1 + P2 VÁLIDOS / V7 NÃO PROMOVÍVEL COMO CURRENT / SNAPSHOT NÃO DEVE SER MUTADO;
 29. reconciliar autoridades comuns para não congelar estado transitório de pacote — SEGUNDO RE-REVIEW ENCONTROU P1 RESIDUAL / REMEDIADO COM HANDOFF v1.6.5 + GENINPUT v2.2.17 + READINESS v1.2.17 + FLOW v3.0.3 + RELEASE v1.2.1 / PACKAGE STATE FULLY DELEGATED TO MANIFEST + CURRENT STATE / FINAL REVALIDATION PENDING;
 30. corrigir proveniência v7 residual que ainda chamava snapshot histórico de corrente — CONCLUÍDO / CANDIDATE v0.3.2;
-31. após integração da remediação, preparar nova reemissão/revalidação — PENDENTE / MATERIALIZAÇÃO EXIGE ATO HUMANO SEPARADO.
+31. após integração da remediação, preparar nova reemissão/revalidação — CONCLUÍDO / V8 CANDIDATE PREPARED FROM MAIN b660503a5da5ec5214e3e2c0eba1f1b06daa9489 / 29 OF 29 SOURCE PINS RECALCULATED / SUBSTANTIVE REVALIDATION PASS;
+32. concluir gate externo de validação do HEAD documental final da PR #408 — EM CURSO / EXACT-HEAD SEMANTIC + MECHANICAL + INDEPENDENT REVIEW / NÃO AUTOAFIRMADO NO CONTEÚDO;
+33. decidir separadamente materialização do v8 — PENDENTE / ATO HUMANO SEPARADO / delivery/design-handoff-v8 NOT CREATED / NOT AUTHORIZED.
 
 ```text
 V5 SNAPSHOT
