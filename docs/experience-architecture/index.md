@@ -316,7 +316,7 @@ A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. 
 
 [GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001](public-homes-design-delivery-v6-candidate.md) preserva a definição candidata que foi realizada sem mudança de composição.
 
-[GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001](public-homes-design-delivery-v6-snapshot-record.md) registra o snapshot v6 em `delivery/design-handoff-v6`: 29 fontes canônicas + oito guias = 37 arquivos e 29/29 blobs preservados. O snapshot permanece congelado como proveniência histórica, mas o P1 pós-emissão no Operational Flow v3.0.1 o torna inválido para nova execução. `CURRENT EXTERNAL SOURCE PACKAGE = NONE` até nova emissão/revalidação.
+[GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001](public-homes-design-delivery-v6-snapshot-record.md) registra o snapshot v6 em `delivery/design-handoff-v6`: 29 fontes canônicas + oito guias = 37 arquivos e 29/29 blobs preservados. O snapshot permanece congelado como proveniência histórica, mas o P1 pós-emissão no Operational Flow v3.0.1 o torna inválido para nova execução. O estado `CURRENT EXTERNAL SOURCE PACKAGE = NONE` pertence ao checkpoint histórico posterior à invalidação do v6 e foi superado pela emissão v7.
 
 [GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001](public-homes-design-delivery-v7-candidate.md) preserva a proveniência do candidato v7 revalidado que foi realizado pelo snapshot corrente.
 
