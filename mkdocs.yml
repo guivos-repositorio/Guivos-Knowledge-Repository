@@ -58,8 +58,9 @@ markdown_extensions:
 # O menu principal é uma superfície de descoberta, não um inventário do corpus.
 # Autoridades e evidências de detalhe permanecem preservadas e acessíveis por
 # hubs, links internos, busca e histórico sem serem duplicadas no menu.
-# Documentos `superseded` permanecem preservados no corpus, mas não devem ser
-# promovidos como destinos primários de navegação sem justificativa explícita.
+# Documentos históricos, superseded, candidatos, registros de proveniência,
+# remediações concluídas e auditorias de processo permanecem preservados no
+# corpus/Git, mas não são destinos do MENU corrente.
 not_in_nav: |
   *
 
@@ -89,6 +90,10 @@ nav:
       - Organizações e Coletivos — Mapa de Superfícies Autenticadas: experience-architecture/organizations-collectives-authenticated-surface-map.md
       - Organizações e Coletivos — Mapa de Estados Autenticados: experience-architecture/organizations-collectives-authenticated-state-map.md
       - Organizações e Coletivos — Fluxos Prioritários Autenticados: experience-architecture/organizations-collectives-authenticated-priority-flows.md
+      - Organizações e Coletivos — Materialização de Navegação: experience-architecture/organizations-collectives-authenticated-navigation-materialization.md
+      - Organizações e Coletivos — Wireframes Low-Fidelity Correntes: experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md
+      - Organizações e Coletivos — Validação Low-Fidelity: experience-architecture/organizations-collectives-authenticated-low-fidelity-functional-validation.md
+      - Organizações e Coletivos — Elegibilidade High-Fidelity: experience-architecture/organizations-collectives-authenticated-high-fidelity-eligibility.md
 
   - Produtos e Economia:
       - Arquitetura de Produtos: product-architecture/index.md
@@ -100,19 +105,12 @@ nav:
       - Jornadas Integradas: journeys/index.md
       - Home Principal / Pessoa: experience-architecture/public-home-master-document.md
       - Home de Organizações e Coletivos: experience-architecture/public-home-organizations-collectives-master-document.md
-      - Homes dos Produtos Especializados: experience-architecture/public-specialized-homes-reconciliation.md
-      - Home Masters — Adjudicação de Remediação: project/home-masters-remediation-adjudication.md
       - Homes — Handoff Canônico de Design: experience-architecture/public-homes-design-handoff.md
+      - Homes — Source Lock e Prompt para IA: experience-architecture/public-homes-generative-source-lock-and-prompt-template.md
       - Homes — Prontidão de Produção / Designer e IA: experience-architecture/public-homes-design-production-readiness-and-figma-contract.md
       - Homes — Design Production Release: experience-architecture/public-homes-design-production-release.md
       - Homes — Manifesto Canônico de Entrega: experience-architecture/public-homes-design-delivery-manifest.md
-      - Homes — Auditoria Final de Fontes / Designer e IA: experience-architecture/public-homes-designer-ai-source-completeness-audit.md
-      - Homes — Snapshot v6: experience-architecture/public-homes-design-delivery-v6-snapshot-record.md
-      - Homes — Pacote v6 Candidato (proveniência): experience-architecture/public-homes-design-delivery-v6-candidate.md
-      - Homes — Pacote v7 Candidato (proveniência): experience-architecture/public-homes-design-delivery-v7-candidate.md
-      - Homes — Snapshot v7 (histórico / inválido): experience-architecture/public-homes-design-delivery-v7-snapshot-record.md
-      - Homes — Pacote v8 Candidato (proveniência): experience-architecture/public-homes-design-delivery-v8-candidate.md
-      - Homes — Snapshot v8 (corrente): experience-architecture/public-homes-design-delivery-v8-snapshot-record.md
+      - Homes — Pacote Externo Corrente (v8): experience-architecture/public-homes-design-delivery-v8-snapshot-record.md
       - Homes — Fluxo Operacional de Design: experience-architecture/public-homes-design-delivery-operational-flow.md
       - Home Guivos Mall: experience-architecture/public-home-mall-master-document.md
       - Home Guivos Travel: experience-architecture/public-home-travel-master-document.md
@@ -130,6 +128,7 @@ nav:
   - Dados, Intelligence e Tecnologia:
       - Arquitetura Corporativa: enterprise-architecture/index.md
       - Intelligence e IA: intelligence-architecture/index.md
+      - Arquitetura Cognitiva de Referência: intelligence-architecture/cognitive-reference-architecture.md
       - Dashboards, KPIs e Analytics:
           - Documento Mestre: intelligence-architecture/dashboards-kpis-analytics-master-specification.md
           - KPI Contract Standard: intelligence-architecture/kpi-contract-standard.md
@@ -155,7 +154,6 @@ nav:
       - Operações Internacionais e Cross-Border: governance-framework/international-operations-and-cross-border-readiness.md
 
   - Governança do GKR:
-      - Auditoria Integral do Corpus: project/gkr-full-corpus-audit.md
       - Framework de Auditoria Arquitetural: governance-framework/architectural-audit-framework.md
       - Consolidação do Conhecimento Arquitetural: governance-framework/architectural-knowledge-consolidation-pipeline.md
       - GKR como Fonte Única da Verdade: adr/ADR-001-gkr-as-source-of-truth.md
