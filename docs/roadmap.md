@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.18
+id: ROADMAP-13.47.19
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.18
+version: 13.47.19
 owner: Guivos
 last_updated: 2026-09-20
 normative: true
@@ -15,6 +15,7 @@ related:
   - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
   - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
   - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
@@ -1958,7 +1959,9 @@ Sequência governada atual:
 22. adjudicar autoridades comuns ainda liberando execução — CONCLUÍDO / P1 VALID;
 23. reconciliar autoridades comuns para estado sem pacote corrente — CONCLUÍDO / HANDOFF v1.6.3 + GENINPUT v2.2.15 + READINESS v1.2.15 + FLOW v3.0.2 + RELEASE v1.2.0;
 24. validar novamente Semantic + Mechanical + re-review no HEAD final — CONCLUÍDO / Semantic #1444 + Mechanical #1672 = SUCCESS / FINAL CODEX RE-REVIEW CLEAN ON d3cd3dce176a4224930cc428483f5530d22e8c6d / PR #402 MERGED @ 0f37eda133dc14a42f686b616993cffcd099cf04;
-25. decidir separadamente nova emissão/revalidação do pacote corrigido — PENDENTE / ATO HUMANO SEPARADO.
+25. decidir separadamente preparação da nova emissão/revalidação — CONCLUÍDO / ATO HUMANO AUTORIZADO / V7 CANDIDATE PREPARED;
+26. revalidar candidato v7 — EM CURSO / 29 OF 29 SOURCES RECALCULATED / SEMANTIC INITIAL PASS;
+27. decidir separadamente materialização do v7 — PENDENTE / ATO HUMANO SEPARADO.
 
 ```text
 V5 SNAPSHOT
