@@ -2,11 +2,11 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 6.4.4
+version: 6.5.0
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: true
-maturity: v8_substantive_revalidation_pass_final_head_validation_external_gate
+maturity: v8_snapshot_current_external_source_package
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -22,6 +22,7 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001
 ---
 
 # Homes Públicas — Manifesto Canônico de Entrega para Design
@@ -34,7 +35,7 @@ O snapshot **v6 foi emitido, materializado e teve sua integridade validada**, ma
 
 O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.2` foi revalidado, reconciliado e realizado pelo snapshot `GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.1.0`. O v7 foi materializado sob autorização humana explícita a partir de `main = 35c616a4a7bf754577c180d37afe5e0c22380c7b`, em `delivery/design-handoff-v7`, commit `564a2656332dffeb4779ca20ee1ce6697abaa06d`, tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`. Uma revisão independente pós-emissão encontrou um P1 material nas cinco autoridades comuns contidas no próprio snapshot; por isso o v7 permanece congelado/histórico e inválido para nova execução. `CURRENT EXTERNAL SOURCE PACKAGE = NONE`.
 
-O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.2.3` foi preparado diretamente sobre `main = b660503a5da5ec5214e3e2c0eba1f1b06daa9489`, com 29/29 pins recalculados e a cadeia comum final `1.6.5 / 2.2.17 / 1.2.17 / 3.0.3 / 1.2.1`. A revalidação retornou `PASS` no HEAD `539b9b9503e09863cb421e2432fca3fca40871f7`, com Semantic #1498, Mechanical #1721 e review independente limpo. `delivery/design-handoff-v8` não existe e sua materialização permanece um ato humano separado não autorizado.
+O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.3.0` foi revalidado e realizado pelo snapshot `GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001 v1.0.0`. O v8 foi materializado sob autorização humana explícita a partir de `main = 00791d1e09b5e75b33c223e38164eeee1be0c6cd`, em `delivery/design-handoff-v8`, commit `d7eea909b1b5cb6266d7c4a725657ccd909f0e63`, tree `17553412f24d7a97287ddc5944b8622ecf744534`. A emissão contém 29/29 blobs canônicos exatos e 8/8 guias válidos. Como a cadeia comum `1.6.5 / 2.2.17 / 1.2.17 / 3.0.3 / 1.2.1` é package-state agnostic, a contradição auto-invalidante do v7 não está presente. `CURRENT EXTERNAL SOURCE PACKAGE = V8`.
 
 ```text
 DESIGNER
@@ -347,32 +348,38 @@ CURRENT EXTERNAL SOURCE PACKAGE
 
 Essa correção evita que um futuro snapshot congele novamente um valor operacional transitório.
 
-## 14. Candidato v8 para próxima reemissão
+## 14. Snapshot v8 corrente
 
 ```text
 V8 CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.2.3
-→ PREPARED FROM MAIN b660503a5da5ec5214e3e2c0eba1f1b06daa9489
-→ 29 / 29 SOURCE PINS RECALCULATED
-→ COMMON AUTHORITY CHAIN = 1.6.5 / 2.2.17 / 1.2.17 / 3.0.3 / 1.2.1
-→ SUBSTANTIVE REVALIDATION PASS
-→ SUBSTANTIVE EVIDENCE HEAD 539b9b9503e09863cb421e2432fca3fca40871f7
-→ FINAL DOCUMENTARY HEAD VALIDATION = EXTERNAL PR GATE / NOT SELF-ASSERTED IN MANIFEST
-→ SEMANTIC #1498 = SUCCESS
-→ MECHANICAL #1721 = SUCCESS
-→ CODEX = CLEAN / NO MAJOR ISSUES
-→ REVIEW THREADS = 0 OPEN
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.3.0
+→ NON-NORMATIVE PROVENANCE
+→ REALIZED BY V8 SNAPSHOT
+
+V8 SNAPSHOT
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001 v1.0.0
+→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
+→ FROZEN
+→ branch delivery/design-handoff-v8
+→ origin main 00791d1e09b5e75b33c223e38164eeee1be0c6cd
+→ commit d7eea909b1b5cb6266d7c4a725657ccd909f0e63
+→ tree 17553412f24d7a97287ddc5944b8622ecf744534
+→ 29 / 29 CANONICAL BLOBS EXACT MATCH
+→ 8 / 8 READ-FIRST GUIDES VALID
+→ 37 FILES TOTAL
+
+COMMON AUTHORITY CHAIN
+→ HANDOFF 1.6.5
+→ GENINPUT 2.2.17
+→ READINESS 1.2.17
+→ FLOW 3.0.3
+→ RELEASE 1.2.1
+→ PACKAGE-STATE AGNOSTIC
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-
-delivery/design-handoff-v8
-→ NOT CREATED
-→ NOT AUTHORIZED
-
-MATERIALIZATION
-→ SEPARATE HUMAN-GOVERNED ACT
-→ NOT AUTHORIZED
+→ V8
+→ delivery/design-handoff-v8
+→ VALID FOR NEW EXTERNAL DESIGN EXECUTION
 ```
 
 ## 15. Snapshots históricos
@@ -393,13 +400,16 @@ V6
 → INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
 
 CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
+→ V8
+→ delivery/design-handoff-v8
+→ commit d7eea909b1b5cb6266d7c4a725657ccd909f0e63
+→ tree 17553412f24d7a97287ddc5944b8622ecf744534
+→ VALID FOR NEW EXTERNAL DESIGN EXECUTION
 
 LATEST MATERIALIZED SNAPSHOT
-→ delivery/design-handoff-v7
-→ commit 564a2656332dffeb4779ca20ee1ce6697abaa06d
-→ tree 39a72433b0b6f75975bc6a128c57fb688bd85bcb
+→ delivery/design-handoff-v8
+→ commit d7eea909b1b5cb6266d7c4a725657ccd909f0e63
+→ tree 17553412f24d7a97287ddc5944b8622ecf744534
 
 HISTORICAL INVALID SNAPSHOTS
 → delivery/design-handoff-v6
@@ -416,7 +426,7 @@ EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
 → RELEASED
 
 OPERATIONAL EXECUTION
-→ PAUSED UNTIL A NEW SNAPSHOT IS DESIGNATED CURRENT / VALID
+→ ENABLED FOR EXTERNAL DESIGNER PRODUCTION UNDER CURRENT V8 PACKAGE
 
 AI
 → OPTIONAL / DESIGNER-CONTROLLED
