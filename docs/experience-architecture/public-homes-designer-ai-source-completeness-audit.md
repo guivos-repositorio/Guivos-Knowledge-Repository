@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: active
-version: 1.2.0
+version: 1.2.1
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: false
@@ -732,7 +732,7 @@ As versões v2.2.14 / v1.2.14 permanecem legítimas apenas como proveniência da
 
 Após a integração da reconciliação pós-merge pela PR #403, `main` foi confirmado em `1a1386bc318afa2e91f5c1ef5ffd3a80e7265cb2`.
 
-O ato humano subsequente autorizou **iniciar a reissue/revalidation**, não materializar um snapshot. A composição da próxima emissão foi então reconstituída diretamente das fontes correntes:
+O ato humano subsequente autorizou **iniciar a preparação/revalidação do candidato pré-snapshot v7**, não emitir nem materializar um snapshot. A composição candidata para uma possível emissão futura foi então reconstituída diretamente das fontes correntes:
 
 ```text
 V7 CANDIDATE
