@@ -4,7 +4,7 @@ title: Detalhamento Obrigatório das Superfícies da Organização
 status: active
 version: 0.9.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-20
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
 related:
   - UXA-070
@@ -92,8 +92,8 @@ SVG histórico de ORG-001
 ≠ validação vigente do wireframe principal
 ```
 
-Qualquer futura materialização da Visão Geral da Organização deverá ser construída a partir dos fundamentos, Jobs/autoridades, da arquitetura da informação autenticada vigente e dos Surface Map e State Map canônicos, e não pela promoção automática do SVG histórico.
+Qualquer continuidade visual high-fidelity da Visão Geral da Organização deverá partir dos fundamentos, Jobs/autoridades, da arquitetura da informação autenticada vigente, dos Surface Map e State Map canônicos, da Navigation Materialization e do pacote low-fidelity validado, e não da promoção automática do SVG histórico.
 
 ## 6. Estado
 
-O detalhamento está `active` 0.8.0 como parte integrante do registro. A Jornada da Organização permanece incompleta e `draft`. A arquitetura da informação autenticada permanece em sua maturidade própria **pre-surface-map**; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o mapa lógico-documental canônico e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` define o mapa funcional de estados autenticados e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` define os Priority Flows como `ACTIVE / DEFINED / CANONICAL DOCUMENTARY`; a navegação materializada permanece **NOT MATERIALIZED**, e o wireframe principal autenticado da Organização permanece **NOT STARTED**, enquanto fluxos especializados preservam apenas a maturidade que possuam por autoridade própria.
+O detalhamento está `active` 0.8.0 como parte integrante do registro. A Jornada da Organização está `active`. A arquitetura da informação autenticada preserva sua maturidade documental própria; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` permanecem autoridades canônicas. A Navigation Materialization está definida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`; o wireframe autenticado low-fidelity da Organização foi entregue em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validado com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. High-fidelity permanece apenas elegível, sem autorização de execução; fluxos especializados preservam a maturidade sustentada por suas próprias autoridades.

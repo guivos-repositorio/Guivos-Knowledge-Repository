@@ -281,7 +281,7 @@ Essas cinco fontes não substituem as autoridades específicas da Home. Elas gov
 Fontes específicas:
 
 - `GKR-UX-HOME-MASTER-001 v1.0.4` — `docs/experience-architecture/public-home-master-document.md`;
-- `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`.
+- `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.1` — `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`.
 
 ### 6.2 Home Pública — Organizações e Coletivos
 
@@ -322,7 +322,7 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6` — `docs/experience-architecture/public-home-business-source-lock.md`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.7` — `docs/experience-architecture/public-home-business-source-lock.md`;
 - `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4` — `docs/experience-architecture/public-home-business-master-document.md`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 - `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` — `docs/experience-architecture/public-home-business-authority-contracts.md`;

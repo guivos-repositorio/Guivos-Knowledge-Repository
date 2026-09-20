@@ -122,7 +122,7 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | Interactive prototype authorization | **GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0** |
 | Interactive prototype execution | **EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0** |
 | Post-review prototype revalidation | **PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS** |
-| Current interactive Design reference | **DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0** |
+| Current interactive Design reference | **DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0** |
 | Final interactive conclusion | **POST-REVIEW REVALIDATION PASS** |
 | Next automatic execution | **NONE** |
 | Source Lock pós-validação | **NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT AUTHORIZED BY INFERENCE** |
@@ -507,7 +507,7 @@ PER-002 INTERACTIVE PROTOTYPE
 → AUTHORIZATION GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0
 → EXECUTION EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
 → POST-REVIEW REVALIDATION = PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 / 16 OF 16
-→ CURRENT INTERACTIVE DESIGN REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0
+→ CURRENT INTERACTIVE DESIGN REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0
 
 HOME MATERIALIZATION
 → NOT AUTHORIZED BY THE PER-002-SPECIFIC DESIGN DECISIONS
@@ -1067,7 +1067,7 @@ F-022
 → NOT OPENED
 ```
 
-`GPA-006 v2.0.1` continua autoridade do produto; `GIA-000 v1.7.0` é a arquitetura vigente de Intelligence e reconhece `GIA-COG-001 v0.1.1` como Cognitive Reference Architecture ativa/normativa; `GEA-GRAPH-REFERENCE-001` permanece referência arquitetural; `ADR-007` mantém Neo4j apenas como referência primária. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9` permanece Source Lock ativo/normativo da Home; sua autoridade semântica não equivale, por si só, a autorização de implementação. O Design externo é regido pelas autoridades comuns posteriores.
+`GPA-006 v2.0.1` continua autoridade do produto; `GIA-000 v1.7.0` é a arquitetura vigente de Intelligence e reconhece `GIA-COG-001 v0.1.1` como Cognitive Reference Architecture ativa/normativa; `GEA-GRAPH-REFERENCE-001` permanece referência arquitetural; `ADR-007` mantém Neo4j apenas como referência primária. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10` permanece Source Lock ativo/normativo da Home; sua autoridade semântica não equivale, por si só, a autorização de implementação. O Design externo é regido pelas autoridades comuns posteriores.
 
 ```text
 GIA-COG-001 ACTIVE / NORMATIVE
@@ -1487,7 +1487,7 @@ Q POST-REVIEW INTERACTIVE PROTOTYPE REVALIDATION
 → REFORMULATION REQUIRED = NO
 
 CURRENT INTERACTIVE DESIGN REFERENCE
-→ DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0
+→ DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0
 
 FINAL CURRENT INTERACTIVE CONCLUSION
 → POST-REVIEW REVALIDATION PASS
@@ -1779,7 +1779,7 @@ Q INTERACTIVE PROTOTYPE
 → BLOCKING FINDINGS = 0
 → OPEN P2 INTERACTION FINDINGS = 0
 → REFORMULATION REQUIRED = NO
-→ CURRENT INTERACTIVE REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0
+→ CURRENT INTERACTIVE REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0
 → FINAL CURRENT CONCLUSION = POST-REVIEW REVALIDATION PASS
 → SOURCE LOCK = NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
 

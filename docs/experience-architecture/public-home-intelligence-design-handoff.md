@@ -83,7 +83,7 @@ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9
 → governa narrativa pública, copy e fronteiras da Home
 
 NÍVEL 2
-GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
+GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4
 → governa função, ordem e separação dos 11 movimentos
 
 NÍVEL 3

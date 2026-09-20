@@ -4,7 +4,7 @@ title: Detalhamento Obrigatório das Superfícies do Coletivo
 status: active
 version: 0.13.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-20
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
 related:
   - UXA-070
@@ -83,8 +83,8 @@ materialização administrativa local
 ≠ baseline final da experiência do Coletivo
 ```
 
-A futura UX principal deverá ser construída a partir dos fundamentos, papéis, jobs, arquitetura da informação autenticada, Surface Map e State Map canônicos, e estado vigente.
+A continuidade visual high-fidelity deverá partir dos fundamentos, papéis, jobs, arquitetura da informação autenticada, Surface Map, State Map, Navigation Materialization e do pacote low-fidelity corrente já validado.
 
 ## 5. Estado
 
-O detalhamento está `active` 0.12.0. As superfícies especializadas de solicitações e Planos preservam sua maturidade documental própria. A Jornada do Coletivo continua incompleta e `draft`; a arquitetura da informação autenticada permanece em sua maturidade própria **pre-surface-map**; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o mapa lógico-documental canônico e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` define o mapa funcional de estados autenticados e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` define os Priority Flows como `ACTIVE / DEFINED / CANONICAL DOCUMENTARY`; a navegação principal materializada permanece **NOT MATERIALIZED**, e o wireframe principal autenticado do Coletivo permanece **NOT STARTED**.
+O detalhamento está `active` 0.12.0. As superfícies especializadas de solicitações e Planos preservam sua maturidade documental própria. A Jornada do Coletivo está `active`; a arquitetura da informação autenticada preserva sua maturidade documental própria; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` permanecem autoridades canônicas. A Navigation Materialization está definida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`; o wireframe autenticado low-fidelity do Coletivo foi entregue em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validado com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. High-fidelity permanece apenas elegível, sem autorização de execução.
