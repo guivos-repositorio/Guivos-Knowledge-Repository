@@ -165,6 +165,7 @@ UXA-097 — primeira Hoje e TRN-007
 → Public Homes Design Production Release — GRANTED / VALID CURRENT PACKAGE REQUIRED / AI OPTIONAL
 → Public Homes Design Handoff v5 Snapshot — FROZEN / HISTORICAL / 34 FILES
 → Public Homes v6 Snapshot — EMITTED / INTEGRITY-VALIDATED / FROZEN HISTORICAL / INVALID FOR NEW EXECUTION / 37 FILES
+→ Public Homes v7 Candidate — PRE-SNAPSHOT / REVALIDATION IN PROGRESS / 29 CANONICAL SOURCES PINNED / NOT EMITTED
 ```
 
 D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada. A definição documental do State Map O/C não altera esse estado.
