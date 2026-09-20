@@ -680,7 +680,7 @@
 <span class="md-ellipsis">
     
   
-    Homes — Prontidão de Produção / Figma e IA
+    Homes — Prontidão de Produção / Designer e IA
   
 
     
@@ -712,6 +712,32 @@
     
   </span>
 <span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../experience-architecture/public-homes-designer-ai-source-completeness-audit/">
+<span class="md-ellipsis">
+    
+  
+    Homes — Auditoria Final de Fontes / Designer e IA
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../experience-architecture/public-homes-design-delivery-v6-candidate/">
+<span class="md-ellipsis">
+    
+  
+    Homes — Pacote v6 Candidato
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
 </a>
 </li>
 <li class="md-nav__item">
@@ -1385,10 +1411,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#3-sequencia-governada">
+<a class="md-nav__link" href="#3-sequencia-governada-proveniencia-e-estado-corrente">
 <span class="md-ellipsis">
       
-        3. Sequência governada
+        3. Sequência governada — proveniência e estado corrente
       
     </span>
 </a>
@@ -1788,10 +1814,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#31-checklist-pre-home">
+<a class="md-nav__link" href="#31-checklist-de-integridade-da-home">
 <span class="md-ellipsis">
       
-        31. Checklist pré-Home
+        31. Checklist de integridade da Home
       
     </span>
 </a>
@@ -1806,10 +1832,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#33-proximo-ato-governado">
+<a class="md-nav__link" href="#33-progressao-historica-e-estado-corrente">
 <span class="md-ellipsis">
       
-        33. Próximo ato governado
+        33. Progressão histórica e estado corrente
       
     </span>
 </a>
@@ -1831,14 +1857,14 @@
 </a>
 <h1 id="source-lock-do-produto-guivos-intelligence">Source Lock do Produto — Guivos Intelligence<a class="headerlink" href="#source-lock-do-produto-guivos-intelligence" title="Permanent link">¶</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">¶</a></h2>
-<p>Este documento consolida o <strong>Source Lock do Produto Guivos Intelligence</strong> após a promoção de <code>GPA-006</code> para <code>2.0.0</code>.</p>
+<p>Este documento consolida o <strong>Source Lock do Produto Guivos Intelligence</strong> após a promoção de <code>GPA-006</code> para <code>2.0.1</code> e reconcilia seu estado temporal com as autoridades posteriores já existentes da Home Pública.</p>
 <p>Seu papel é:</p>
 <ul>
-<li>congelar a base canônica que pode alimentar a futura estruturação da Home Pública do Guivos Intelligence;</li>
+<li>congelar a base canônica de produto que governa o significado consumido pela Home Pública do Guivos Intelligence;</li>
 <li>estabelecer a ordem de autoridade entre produto, manifesto, modelo de conhecimento, arquitetura de Intelligence, grafo e autoridades temáticas auxiliares;</li>
 <li>separar afirmações públicas permitidas de implementação, operação, pricing, infraestrutura ou desempenho ainda não comprovados;</li>
 <li>impedir que tecnologias, mecanismos ou interfaces substituam silenciosamente a identidade e a proposta de valor do produto;</li>
-<li>impedir que a futura Home transforme personalização em vigilância, Intelligence populacional em perfil individual ou relevância em prioridade comercial;</li>
+<li>impedir que a Home Pública transforme personalização em vigilância, Intelligence populacional em perfil individual ou relevância em prioridade comercial;</li>
 <li>registrar o que continua aberto e não pode ser preenchido por inferência durante a construção da Home.</li>
 </ul>
 <p>Este Source Lock <strong>não é</strong>:</p>
@@ -1866,14 +1892,23 @@
 <div class="highlight"><pre><span></span><code>PRODUTO
 Guivos Intelligence
 
-FASE
+ORIGIN PHASE
 Source Lock do Produto — pré-Home
+→ HISTORICAL PROVENANCE
+
+CURRENT HOME STATE
+DOCUMENTO MESTRE = EXISTS
+HOME SOURCE LOCK = EXISTS / ACTIVE
+DESIGN HANDOFF = EXISTS / ACTIVE
+EXTERNAL DESIGN RELEASE = GRANTED
+PRODUCT ENGINEERING = NOT RELEASED
 
 BASE CANÔNICA CONGELADA
 main @ 67557b1c1503d81a716a1b44d7b1a4ae06ed5646
+→ HISTORICAL ORIGIN BASE
 
 AUTORIDADE SUPERIOR DE PRODUTO
-GPA-006 v2.0.0
+GPA-006 v2.0.1
 
 INTELLIGENCE ARCHITECTURE
 GIA-000 v1.5.0
@@ -1887,10 +1922,10 @@ GAI-002 v1.0.0
 GRAPH REFERENCE
 GEA-GRAPH-REFERENCE-001 v0.1.2
 </code></pre></div>
-<p>O objetivo do lock é preservar uma base única, coerente, auditável e suficientemente restrita para a futura Home sem reabrir a arquitetura do produto.</p>
-<h2 id="3-sequencia-governada">3. Sequência governada<a class="headerlink" href="#3-sequencia-governada" title="Permanent link">¶</a></h2>
+<p>O objetivo do lock é preservar uma base única, coerente e auditável de autoridade de produto para a Home vigente, sem reabrir a arquitetura do produto nem competir com as autoridades posteriores de Home e Design.</p>
+<h2 id="3-sequencia-governada-proveniencia-e-estado-corrente">3. Sequência governada — proveniência e estado corrente<a class="headerlink" href="#3-sequencia-governada-proveniencia-e-estado-corrente" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>flowchart TD
-    A[GPA-006 v2.0.0\nProduto convergido]
+    A[GPA-006 v2.0.1\nProduto convergido]
     B[Source Lock do Produto\neste documento]
     C[Arquitetura conceitual da Home Intelligence]
     D[Documento Mestre da Home]
@@ -1899,9 +1934,9 @@ GEA-GRAPH-REFERENCE-001 v0.1.2
 
     A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F
 </code></pre>
-<p>A existência deste Source Lock permite iniciar a <strong>estruturação conceitual da Home</strong> após sua integração governada. Ela não autoriza pular diretamente para Design, wireframe, UI ou implementação.</p>
+<p>Historicamente, a integração deste Source Lock habilitou a estruturação conceitual da Home. Essa progressão já foi concluída documentalmente: Documento Mestre, Home Source Lock e Design Handoff existem, e o release comum vigente concede produção externa de Design à designer. Este documento continua sem autorizar implementação ou Product Engineering.</p>
 <h2 id="4-pacote-primario-autorizado">4. Pacote primário autorizado<a class="headerlink" href="#4-pacote-primario-autorizado" title="Permanent link">¶</a></h2>
-<p>A futura Home deve iniciar com um pacote de autoridade deliberadamente pequeno.</p>
+<p>A Home foi estruturada a partir de um pacote de autoridade deliberadamente pequeno; para consumo corrente, esse pacote deve ser lido em conjunto com as autoridades posteriores da Home.</p>
 <h3 id="nivel-0-este-source-lock">Nível 0 — este Source Lock<a class="headerlink" href="#nivel-0-este-source-lock" title="Permanent link">¶</a></h3>
 <p><code>GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001</code></p>
 <p>Governa:</p>
@@ -1913,7 +1948,7 @@ GEA-GRAPH-REFERENCE-001 v0.1.2
 <li>quais lacunas não podem ser preenchidas por inferência.</li>
 </ul>
 <h3 id="nivel-1-autoridade-superior-do-produto">Nível 1 — autoridade superior do produto<a class="headerlink" href="#nivel-1-autoridade-superior-do-produto" title="Permanent link">¶</a></h3>
-<p><code>GPA-006 v2.0.0 — Guivos Intelligence</code></p>
+<p><code>GPA-006 v2.0.1 — Guivos Intelligence</code></p>
 <p>Governa:</p>
 <ul>
 <li>identidade;</li>
@@ -1966,7 +2001,7 @@ GEA-GRAPH-REFERENCE-001 v0.1.2
 <li>classificação candidata;</li>
 <li>diferença entre domínio, identidade, diagnóstico, score e prova de evolução.</li>
 </ul>
-<p>A futura Home do Intelligence não deve se transformar em uma Home dos Domínios do Journey.</p>
+<p>A Home Pública do Intelligence não deve se transformar em uma Home dos Domínios do Journey.</p>
 <h3 id="54-business">5.4 Business<a class="headerlink" href="#54-business" title="Permanent link">¶</a></h3>
 <p><code>GPA-004 v1.6.0</code></p>
 <p>Uso permitido:</p>
@@ -1975,13 +2010,13 @@ GEA-GRAPH-REFERENCE-001 v0.1.2
 <li>confirmar que Intelligence não é módulo do Business;</li>
 <li>confirmar que a empresa recebe leitura populacional protegida e não a Journey individual.</li>
 </ul>
-<p>A futura Home do Intelligence não deve se transformar em uma Home Business.</p>
+<p>A Home Pública do Intelligence não deve se transformar em uma Home Business.</p>
 <h2 id="6-fontes-excluidas-por-padrao">6. Fontes excluídas por padrão<a class="headerlink" href="#6-fontes-excluidas-por-padrao" title="Permanent link">¶</a></h2>
 <p>Não adicionar automaticamente ao contexto inicial da Home:</p>
 <ul>
 <li>conversas e rascunhos não promovidos ao GKR;</li>
 <li>versões anteriores de <code>GPA-006</code>;</li>
-<li>checkpoints intermediários já consolidados por <code>GPA-006 v2.0.0</code>;</li>
+<li>checkpoints intermediários já consolidados por <code>GPA-006 v2.0.1</code>;</li>
 <li>documentos de uma Home específica;</li>
 <li>Source Locks das outras Homes;</li>
 <li>wireframes ou SVGs internos do Journey;</li>
@@ -1995,7 +2030,7 @@ GEA-GRAPH-REFERENCE-001 v0.1.2
 <h2 id="7-ordem-de-autoridade">7. Ordem de autoridade<a class="headerlink" href="#7-ordem-de-autoridade" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>flowchart TD
     L0[0 — Source Lock do Produto]
-    L1[1 — GPA-006 v2.0.0]
+    L1[1 — GPA-006 v2.0.1]
     L2A[2 — GAI-002 Manifesto]
     L2B[2 — GAI-001 Knowledge Model]
     L3[3 — GIA-000 / Graph Reference\nsomente para fronteiras técnicas]
@@ -2012,11 +2047,11 @@ GEA-GRAPH-REFERENCE-001 v0.1.2
 </code></pre>
 <p>Regra de precedência:</p>
 <blockquote>
-<p><strong>Em qualquer conflito sobre identidade, valor, autoridade ou limites do Guivos Intelligence, prevalece <code>GPA-006 v2.0.0</code>, limitado pelo presente Source Lock quanto ao uso na futura Home.</strong></p>
+<p><strong>Em qualquer conflito sobre identidade, valor, autoridade ou limites do Guivos Intelligence, prevalece <code>GPA-006 v2.0.1</code>, limitado pelo presente Source Lock quanto ao uso na Home Pública.</strong></p>
 </blockquote>
 <p>Arquiteturas e tecnologias não podem reescrever autoridade de produto.</p>
 <h2 id="8-centro-semantico-congelado">8. Centro semântico congelado<a class="headerlink" href="#8-centro-semantico-congelado" title="Permanent link">¶</a></h2>
-<p>A futura Home deve preservar estes elementos, ainda que sua expressão pública final seja refinada durante a arquitetura narrativa.</p>
+<p>A Home Pública deve preservar estes elementos, ainda que sua expressão pública final seja refinada durante a arquitetura narrativa.</p>
 <h3 id="81-natureza">8.1 Natureza<a class="headerlink" href="#81-natureza" title="Permanent link">¶</a></h3>
 <blockquote>
 <p><strong>Guivos Intelligence é o Produto Especializado transversal da Guivos e a Intelligence Layer do ecossistema.</strong></p>
@@ -2040,7 +2075,7 @@ DECIDIR
 </blockquote>
 <p>Esses elementos podem ser traduzidos editorialmente, mas não substituídos por uma identidade centrada em chatbot, dashboard, analytics, IA generativa, Neo4j ou BI.</p>
 <h2 id="9-duas-frentes-obrigatorias">9. Duas frentes obrigatórias<a class="headerlink" href="#9-duas-frentes-obrigatorias" title="Permanent link">¶</a></h2>
-<p>A futura Home deve reconhecer que existe <strong>um único produto com duas frentes superiores de valor</strong>.</p>
+<p>A Home Pública deve reconhecer que existe <strong>um único produto com duas frentes superiores de valor</strong>.</p>
 <pre class="mermaid"><code>flowchart TD
     I[Guivos Intelligence]
     P[Pessoa / Journey]
@@ -2090,9 +2125,9 @@ PAGAMENTO ≠ PERTINÊNCIA
 
 MAIOR PLANO ≠ MENOR PRIVACIDADE
 </code></pre></div>
-<p>Esses contratos são semânticos e arquiteturais. A futura Home não pode removê-los do significado mesmo quando não aparecerem literalmente em copy pública.</p>
+<p>Esses contratos são semânticos e arquiteturais. A Home Pública não pode removê-los do significado mesmo quando não aparecerem literalmente em copy pública.</p>
 <h2 id="11-traducao-publica-permitida-pessoa-journey">11. Tradução pública permitida — Pessoa / Journey<a class="headerlink" href="#11-traducao-publica-permitida-pessoa-journey" title="Permanent link">¶</a></h2>
-<p>A futura Home pode comunicar que o Intelligence:</p>
+<p>A Home Pública pode comunicar que o Intelligence:</p>
 <ul>
 <li>considera contexto autorizado para tornar a própria experiência da Pessoa mais relevante;</li>
 <li>relaciona conhecimento, evidências, experiências e possibilidades;</li>
@@ -2112,7 +2147,7 @@ MAIOR PLANO ≠ MENOR PRIVACIDADE
 <li>substitui profissionais, instituições responsáveis ou decisão humana.</li>
 </ul>
 <h2 id="12-traducao-publica-permitida-business-populacao">12. Tradução pública permitida — Business / População<a class="headerlink" href="#12-traducao-publica-permitida-business-populacao" title="Permanent link">¶</a></h2>
-<p>A futura Home pode comunicar que o Intelligence ajuda empresas a compreender:</p>
+<p>A Home Pública pode comunicar que o Intelligence ajuda empresas a compreender:</p>
 <ul>
 <li>participação;</li>
 <li>utilização;</li>
@@ -2134,7 +2169,7 @@ MAIOR PLANO ≠ MENOR PRIVACIDADE
 <li>importa obrigatoriamente bases completas de RH, folha, performance, CRM ou ERP para funcionar.</li>
 </ul>
 <h2 id="13-relacao-com-os-demais-produtos-especializados">13. Relação com os demais Produtos Especializados<a class="headerlink" href="#13-relacao-com-os-demais-produtos-especializados" title="Permanent link">¶</a></h2>
-<p>A futura Home pode demonstrar transversalidade, desde que preserve:</p>
+<p>A Home Pública pode demonstrar transversalidade, desde que preserve:</p>
 <pre class="mermaid"><code>flowchart LR
     I[Guivos Intelligence]
     J[Journey]
@@ -2177,7 +2212,7 @@ DATASET DE ORIGEM
     C --&gt; I --&gt; P --&gt; H --&gt; R
 </code></pre>
 <h2 id="15-tecnologia-posicao-publica-permitida">15. Tecnologia — posição pública permitida<a class="headerlink" href="#15-tecnologia-posicao-publica-permitida" title="Permanent link">¶</a></h2>
-<p>A futura Home pode comunicar que o Guivos Intelligence combina, conforme finalidade e autoridade:</p>
+<p>A Home Pública pode comunicar que o Guivos Intelligence combina, conforme finalidade e autoridade:</p>
 <ul>
 <li>conhecimento;</li>
 <li>relações;</li>
@@ -2199,7 +2234,7 @@ DATASET DE ORIGEM
 </code></pre>
 <p>Não inverter essa cadeia.</p>
 <h2 id="16-tecnologia-claims-proibidos-no-estado-atual">16. Tecnologia — claims proibidos no estado atual<a class="headerlink" href="#16-tecnologia-claims-proibidos-no-estado-atual" title="Permanent link">¶</a></h2>
-<p>Sem nova evidência canônica, a futura Home não pode afirmar:</p>
+<p>Sem nova evidência canônica, a Home Pública não pode afirmar:</p>
 <ul>
 <li>Neo4j em produção;</li>
 <li>Grafo Global populado em produção;</li>
@@ -2302,7 +2337,7 @@ RECOMENDAÇÃO ≠ DECISÃO
 <li>documental;</li>
 <li>programático.</li>
 </ul>
-<p>A futura Home pode comunicar que Intelligence pode aparecer <strong>dentro de outros produtos ou como experiência direta</strong>.</p>
+<p>A Home Pública pode comunicar que Intelligence pode aparecer <strong>dentro de outros produtos ou como experiência direta</strong>.</p>
 <p>Não deve transformar a existência conceitual desses modos em claim de disponibilidade operacional atual.</p>
 <p>Contrato:</p>
 <blockquote>
@@ -2315,7 +2350,7 @@ RECOMENDAÇÃO ≠ DECISÃO
 ≠
 ASSINATURA PRÓPRIA OBRIGATÓRIA
 </code></pre></div>
-<p>A futura Home não deve inventar checkout, plano ou preço próprio de Intelligence para Pessoa.</p>
+<p>A Home Pública não deve inventar checkout, plano ou preço próprio de Intelligence para Pessoa.</p>
 <h3 id="business">Business<a class="headerlink" href="#business" title="Permanent link">¶</a></h3>
 <p>Capacidades de Intelligence podem compor progressivamente os entitlements de Start / Growth / Scale / Enterprise sem transformar Intelligence em módulo do Business.</p>
 <div class="highlight"><pre><span></span><code>MAIOR PLANO
@@ -2326,9 +2361,9 @@ MAIOR PLANO
 </code></pre></div>
 <h3 id="oferta-autonoma">Oferta autônoma<a class="headerlink" href="#oferta-autonoma" title="Permanent link">¶</a></h3>
 <p>Uma oferta B2B autônoma do Guivos Intelligence permanece <strong>possibilidade futura</strong>.</p>
-<p>A futura Home não pode tratá-la como oferta vigente, plano contratado ou checkout disponível sem nova autoridade.</p>
+<p>A Home Pública não pode tratá-la como oferta vigente, plano contratado ou checkout disponível sem nova autoridade.</p>
 <h2 id="23-privacy-e-protecao-como-parte-do-significado-do-produto">23. Privacy e proteção como parte do significado do produto<a class="headerlink" href="#23-privacy-e-protecao-como-parte-do-significado-do-produto" title="Permanent link">¶</a></h2>
-<p>A futura Home pode comunicar confiança, proteção e responsabilidade como propriedades arquiteturais do produto.</p>
+<p>A Home Pública pode comunicar confiança, proteção e responsabilidade como propriedades arquiteturais do produto.</p>
 <p>Não pode afirmar, sem evidência operacional própria:</p>
 <ul>
 <li>compliance integral comprovado;</li>
@@ -2526,10 +2561,11 @@ ELA CONTRADIZ OU AMPLIA O SOURCE LOCK?
 CONSULTAR / NÃO CONSULTAR / REABRIR GOVERNANÇA
 </code></pre></div>
 <p>Uma fonte consultada pontualmente não se torna automaticamente parte permanente do lock.</p>
-<h2 id="31-checklist-pre-home">31. Checklist pré-Home<a class="headerlink" href="#31-checklist-pre-home" title="Permanent link">¶</a></h2>
-<p>Antes de iniciar a arquitetura conceitual da Home Intelligence, confirmar:</p>
+<h2 id="31-checklist-de-integridade-da-home">31. Checklist de integridade da Home<a class="headerlink" href="#31-checklist-de-integridade-da-home" title="Permanent link">¶</a></h2>
+<p>Este checklist nasceu no estágio pré-Home e permanece apenas como verificação de integridade da autoridade de produto. No estado corrente, <strong>não antecede, não bloqueia e não reabre</strong> o Documento Mestre, o Home Source Lock, o Design Handoff ou o release externo de Design já existentes.</p>
+<p>Ao reutilizar este Source Lock no contexto vigente da Home Intelligence, confirmar:</p>
 <ul>
-<li><code>GPA-006 v2.0.0</code> permanece vigente;</li>
+<li><code>GPA-006 v2.0.1</code> permanece vigente;</li>
 <li>este Source Lock permanece vigente;</li>
 <li>nenhuma autoridade posterior alterou as duas frentes superiores;</li>
 <li>nenhuma autoridade posterior alterou os contratos de privacidade, relevância ou comercialização;</li>
@@ -2573,22 +2609,40 @@ MATURIDADE
 = produto conceitual e arquiteturalmente convergido
 ≠ implementação ou operação comprovada
 </code></pre></div>
-<h2 id="33-proximo-ato-governado">33. Próximo ato governado<a class="headerlink" href="#33-proximo-ato-governado" title="Permanent link">¶</a></h2>
-<p>Após integração deste Source Lock:</p>
-<blockquote>
-<p><strong>iniciar a arquitetura conceitual da Home Pública do Guivos Intelligence, utilizando este documento como porta de entrada e <code>GPA-006 v2.0.0</code> como autoridade superior de produto.</strong></p>
-</blockquote>
-<p>A sequência permanece:</p>
+<h2 id="33-progressao-historica-e-estado-corrente">33. Progressão histórica e estado corrente<a class="headerlink" href="#33-progressao-historica-e-estado-corrente" title="Permanent link">¶</a></h2>
+<p>A progressão histórica iniciada por este Source Lock foi concluída documentalmente até o handoff da Home:</p>
 <pre class="mermaid"><code>flowchart LR
     A[Source Lock do Produto]
     B[Home Intelligence\nconstrução conceitual]
     C[Documento Mestre da Home]
     D[Source Lock da Home]
     E[Handoff de Design]
+    F[Design externo\nrelease comum vigente]
 
-    A --&gt; B --&gt; C --&gt; D --&gt; E
+    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F
 </code></pre>
-<p>Nenhuma etapa autoriza automaticamente a seguinte.</p>
+<p>Estado corrente:</p>
+<div class="highlight"><pre><span></span><code>GPA-006 v2.0.1
+→ AUTORIDADE SUPERIOR DE PRODUTO
+
+HOME MASTER
+→ EXISTS / CURRENT
+
+HOME SOURCE LOCK
+→ EXISTS / ACTIVE
+
+DESIGN HANDOFF
+→ EXISTS / ACTIVE
+
+EXTERNAL DESIGN
+→ GRANTED BY COMMON RELEASE
+→ DESIGNER = CREATIVE AUTHOR
+→ AI = OPTIONAL / DESIGNER-CONTROLLED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+</code></pre></div>
+<p>A proveniência pré-Home permanece histórica. Ela não funciona como gate corrente para a designer e não reabre etapas já concluídas.</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

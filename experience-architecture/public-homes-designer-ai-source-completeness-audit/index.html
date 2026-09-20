@@ -1,0 +1,5226 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
+      
+      
+        <meta name="author" content="Guivos">
+      
+      
+      
+        <link rel="prev" href="../public-homes-design-delivery-manifest/">
+      
+      
+        <link rel="next" href="../public-homes-design-delivery-v6-candidate/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA - Guivos Knowledge Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <style>
+    /*
+      A navegação pública do GKR é organizada por grandes assuntos.
+      Somente o primeiro nível recebe maior hierarquia tipográfica;
+      documentos e subgrupos permanecem visualmente secundários.
+    */
+    .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+    .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-top: 0.35rem;
+    }
+
+    .md-nav--primary > .md-nav__list > .md-nav__item--section + .md-nav__item--section {
+      margin-top: 0.2rem;
+    }
+
+    .gkr-page-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 1rem;
+    }
+
+    .gkr-page-print {
+      cursor: pointer;
+    }
+
+    @media print {
+      .gkr-page-actions,
+      .md-header,
+      .md-tabs,
+      .md-sidebar,
+      .md-footer,
+      .md-top,
+      .md-dialog,
+      .md-content__button {
+        display: none !important;
+      }
+
+      .md-main__inner,
+      .md-content,
+      .md-content__inner {
+        margin: 0 !important;
+        max-width: none !important;
+      }
+    }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#homes-publicas-auditoria-final-de-completude-das-fontes-para-designer-e-ia" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guivos Knowledge Repository
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comece por aqui
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Comece por aqui
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/guia-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--public-canon"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/current-state-register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estado Atual do Repositório
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação e Marca
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundação e Marca
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos da Guivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../christian-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamento Cristão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolution-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolução do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-and-digital-assets-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Naming e Ativos Digitais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/brand-public-authority-and-founder-role/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marca, Fundador e Autoridade Pública
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Participantes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Participantes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/person/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/collective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coletivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-current-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Estado Atual
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-authenticated-actors-authorities-and-jobs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Atores, Autoridades e Jobs
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-authenticated-information-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Arquitetura da Informação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-authenticated-surface-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Mapa de Superfícies Autenticadas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-authenticated-state-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Mapa de Estados Autenticados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizations-collectives-authenticated-priority-flows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organizações e Coletivos — Fluxos Prioritários Autenticados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Produtos e Economia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Produtos e Economia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Econômico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estratégia de Negócio
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiência e Journey
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiência e Journey
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura da Experiência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journeys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornadas Integradas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Principal / Pessoa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-organizations-collectives-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home de Organizações e Coletivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-specialized-homes-reconciliation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes dos Produtos Especializados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/home-masters-remediation-adjudication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Masters — Adjudicação de Remediação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-handoff/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Handoff Canônico de Design
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-production-readiness-and-figma-contract/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Prontidão de Produção / Designer e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-production-release/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Design Production Release
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-delivery-manifest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Manifesto de Entrega v5
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Auditoria Final de Fontes / Designer e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Auditoria Final de Fontes / Designer e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-decisao-humana-reafirmada-em-2026-09-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Decisão humana reafirmada em 2026-09-19
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-baseline-da-reauditoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Baseline da reauditoria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-criterio-de-100-pronto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Critério de “100% pronto”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-inventario-baseline-antes-da-remediacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Inventário baseline antes da remediação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Inventário baseline antes da remediação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-inventario-corrente-do-candidato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Inventário corrente do candidato
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-findings-iniciais-comprovados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Findings iniciais comprovados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Findings iniciais comprovados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-001-fluxo-comum-excessivamente-dependente-de-ferramenta-generativa-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-001 — fluxo comum excessivamente dependente de ferramenta generativa — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-002-release-corrente-registrava-execucao-gerativa-como-proximo-movimento-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-002 — release corrente registrava execução gerativa como próximo movimento — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-003-mall-travel-dependiam-de-contrato-deterministico-externo-ao-master-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-003 — Mall / Travel dependiam de contrato determinístico externo ao Master — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-004-business-intelligence-dependiam-de-normalizacao-temporal-externa-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-004 — Business / Intelligence dependiam de normalização temporal externa — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-005-guias-v5-sao-tool-specific-resolved-for-v6-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-005 — guias v5 são tool-specific — RESOLVED FOR V6 CONTRACT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-006-artefato-figma-experimental-anterior-closed-abandoned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-006 — artefato Figma experimental anterior — CLOSED / ABANDONED
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-estrategia-de-remediacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Estratégia de remediação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-liberdade-criativa-protegida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Liberdade criativa protegida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-resultado-da-reauditoria-c1c15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Resultado da reauditoria C1–C15
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#91-review-independente-posterior-adjudicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Review independente posterior — adjudicação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#92-review-independente-no-head-e0d6d2ec7d2d18e9a4c175c0cab907a2727083af-adjudicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Review independente no HEAD e0d6d2ec7d2d18e9a4c175c0cab907a2727083af — adjudicação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#93-review-independente-no-head-6c6fcc6b065a902e71e6c909745dbecc53954f21-adjudicacao-e-varredura-temporal-completa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Review independente no HEAD 6c6fcc6b065a902e71e6c909745dbecc53954f21 — adjudicação e varredura temporal completa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#94-fechamento-da-varredura-de-source-locks-correntes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 Fechamento da varredura de Source Locks correntes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#95-review-independente-final-no-head-5808caeecc412ecc58fde489d43f614d190c99b1-dois-p1-residuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 Review independente final no HEAD 5808caeecc412ecc58fde489d43f614d190c99b1 — dois P1 residuais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#96-re-review-independente-no-head-1f99de11384b7a05f4aa0aee0c50c87deddd217b-dois-p1-e-tres-p2-residuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 Re-review independente no HEAD 1f99de11384b7a05f4aa0aee0c50c87deddd217b — dois P1 e três P2 residuais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#97-re-review-independente-no-head-3d9d6283396ee7e64c0e878a0fd3c5a54f800fb2-um-p1-residual-de-completude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.7 Re-review independente no HEAD 3d9d6283396ee7e64c0e878a0fd3c5a54f800fb2 — um P1 residual de completude
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#98-re-review-independente-no-head-95a02abe65e582276a9f0212e5d6ef597e238d6f-tres-p1-residuais-de-coerencia-de-consumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.8 Re-review independente no HEAD 95a02abe65e582276a9f0212e5d6ef597e238d6f — três P1 residuais de coerência de consumo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#99-re-review-independente-no-head-b4785bc2fa52fafbfaaf38f6d8a7689a692015b2-um-p1-e-um-p2-residuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.9 Re-review independente no HEAD b4785bc2fa52fafbfaaf38f6d8a7689a692015b2 — um P1 e um P2 residuais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#910-varredura-preventiva-pos-remediacao-remocao-de-hardcodes-downstream-na-narrative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.10 Varredura preventiva pós-remediação — remoção de hardcodes downstream na Narrative
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#911-varredura-corrente-no-head-posterior-a-f321f9252d864da7e353d616a8d7f659807e25e9-dois-pins-residuais-no-pacote-autorizado-do-source-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.11 Varredura corrente no HEAD posterior a f321f9252d864da7e353d616a8d7f659807e25e9 — dois pins residuais no pacote autorizado do Source Lock
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#912-review-automatico-pos-ready-no-head-9bc9dd36a817201b24b77c29c4554326276a069a-um-p2-de-rotulagem-interna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.12 Review automático pós-Ready no HEAD 9bc9dd36a817201b24b77c29c4554326276a069a — um P2 de rotulagem interna
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-remediacoes-aplicadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Remediações aplicadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Remediações aplicadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-001-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-001 — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-002-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-002 — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-003-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-003 — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-004-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-004 — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-005-resolved-for-v6-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-005 — RESOLVED FOR V6 CONTRACT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-006-closed-abandoned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-006 — CLOSED / ABANDONED
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#101-review-independente-do-candidato-adjudicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 Review independente do candidato — adjudicação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-re-review-independente-adjudicacao-dos-p1-residuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Re-review independente — adjudicação dos P1 residuais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-estado-candidato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Estado candidato
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-delivery-v6-candidate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Pacote v6 Candidato
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-delivery-operational-flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Fluxo Operacional de Design
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-mall-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Mall
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-travel-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Travel
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-media-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Media
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-business-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Business
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-ads-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Ads
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-home-intelligence-master-document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Guivos Intelligence
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research e Validação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research e Validação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pesquisa do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-002/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Possibilidades, Oportunidades e Supply
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dados, Intelligence e Tecnologia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dados, Intelligence e Tecnologia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Corporativa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intelligence e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboards, KPIs e Analytics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dashboards, KPIs e Analytics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboards-kpis-analytics-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/kpi-contract-standard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KPI Contract Standard
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-guivos-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-guivos-kpi-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — KPI Registry
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-guivos-business-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos Business — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-organization-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Organização — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-collective-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Coletivo — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-person-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Pessoa — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/dashboard-ads-opportunity-boost-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Ads / Opportunity Boost — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-007-neo4j-primary-graph-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tecnologia de Grafo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jurídico, Privacidade e Institucional
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jurídico, Privacidade e Institucional
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/institutional-and-legal-architecture-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura Institucional e Jurídica
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/operational-privacy-and-legal-truth-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacidade e Verdade Operacional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/fundacao-guivos-institutional-concept-and-legal-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundação Guivos — Conceito e Estado Jurídico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/trademark-brazil-signature-filing-authorization-package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proteção Marcária — Autorização de Filing
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GTM e Internacionalização
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GTM e Internacionalização
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go-to-Market
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-007-internationalization-and-territorial-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Internacionalização e Governança Territorial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go-to-market/gtm-008-portugal-pilot-readiness-gates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Piloto Portugal — Gates de Prontidão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/international-operations-and-cross-border-readiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operações Internacionais e Cross-Border
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governança do GKR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governança do GKR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/gkr-full-corpus-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auditoria Integral do Corpus
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-audit-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framework de Auditoria Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Consolidação do Conhecimento Arquitetural
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-001-gkr-as-source-of-truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKR como Fonte Única da Verdade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-006-guivos-knowledge-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Conhecimento da Guivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualizar / Imprimir GKR Completo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-decisao-humana-reafirmada-em-2026-09-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Decisão humana reafirmada em 2026-09-19
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-baseline-da-reauditoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Baseline da reauditoria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-criterio-de-100-pronto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Critério de “100% pronto”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-inventario-baseline-antes-da-remediacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Inventário baseline antes da remediação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Inventário baseline antes da remediação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-inventario-corrente-do-candidato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Inventário corrente do candidato
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-findings-iniciais-comprovados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Findings iniciais comprovados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Findings iniciais comprovados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-001-fluxo-comum-excessivamente-dependente-de-ferramenta-generativa-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-001 — fluxo comum excessivamente dependente de ferramenta generativa — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-002-release-corrente-registrava-execucao-gerativa-como-proximo-movimento-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-002 — release corrente registrava execução gerativa como próximo movimento — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-003-mall-travel-dependiam-de-contrato-deterministico-externo-ao-master-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-003 — Mall / Travel dependiam de contrato determinístico externo ao Master — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-004-business-intelligence-dependiam-de-normalizacao-temporal-externa-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-004 — Business / Intelligence dependiam de normalização temporal externa — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-005-guias-v5-sao-tool-specific-resolved-for-v6-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-005 — guias v5 são tool-specific — RESOLVED FOR V6 CONTRACT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-006-artefato-figma-experimental-anterior-closed-abandoned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-006 — artefato Figma experimental anterior — CLOSED / ABANDONED
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-estrategia-de-remediacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Estratégia de remediação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-liberdade-criativa-protegida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Liberdade criativa protegida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-resultado-da-reauditoria-c1c15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Resultado da reauditoria C1–C15
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#91-review-independente-posterior-adjudicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Review independente posterior — adjudicação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#92-review-independente-no-head-e0d6d2ec7d2d18e9a4c175c0cab907a2727083af-adjudicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Review independente no HEAD e0d6d2ec7d2d18e9a4c175c0cab907a2727083af — adjudicação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#93-review-independente-no-head-6c6fcc6b065a902e71e6c909745dbecc53954f21-adjudicacao-e-varredura-temporal-completa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Review independente no HEAD 6c6fcc6b065a902e71e6c909745dbecc53954f21 — adjudicação e varredura temporal completa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#94-fechamento-da-varredura-de-source-locks-correntes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 Fechamento da varredura de Source Locks correntes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#95-review-independente-final-no-head-5808caeecc412ecc58fde489d43f614d190c99b1-dois-p1-residuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 Review independente final no HEAD 5808caeecc412ecc58fde489d43f614d190c99b1 — dois P1 residuais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#96-re-review-independente-no-head-1f99de11384b7a05f4aa0aee0c50c87deddd217b-dois-p1-e-tres-p2-residuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 Re-review independente no HEAD 1f99de11384b7a05f4aa0aee0c50c87deddd217b — dois P1 e três P2 residuais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#97-re-review-independente-no-head-3d9d6283396ee7e64c0e878a0fd3c5a54f800fb2-um-p1-residual-de-completude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.7 Re-review independente no HEAD 3d9d6283396ee7e64c0e878a0fd3c5a54f800fb2 — um P1 residual de completude
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#98-re-review-independente-no-head-95a02abe65e582276a9f0212e5d6ef597e238d6f-tres-p1-residuais-de-coerencia-de-consumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.8 Re-review independente no HEAD 95a02abe65e582276a9f0212e5d6ef597e238d6f — três P1 residuais de coerência de consumo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#99-re-review-independente-no-head-b4785bc2fa52fafbfaaf38f6d8a7689a692015b2-um-p1-e-um-p2-residuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.9 Re-review independente no HEAD b4785bc2fa52fafbfaaf38f6d8a7689a692015b2 — um P1 e um P2 residuais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#910-varredura-preventiva-pos-remediacao-remocao-de-hardcodes-downstream-na-narrative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.10 Varredura preventiva pós-remediação — remoção de hardcodes downstream na Narrative
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#911-varredura-corrente-no-head-posterior-a-f321f9252d864da7e353d616a8d7f659807e25e9-dois-pins-residuais-no-pacote-autorizado-do-source-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.11 Varredura corrente no HEAD posterior a f321f9252d864da7e353d616a8d7f659807e25e9 — dois pins residuais no pacote autorizado do Source Lock
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#912-review-automatico-pos-ready-no-head-9bc9dd36a817201b24b77c29c4554326276a069a-um-p2-de-rotulagem-interna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.12 Review automático pós-Ready no HEAD 9bc9dd36a817201b24b77c29c4554326276a069a — um P2 de rotulagem interna
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-remediacoes-aplicadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Remediações aplicadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Remediações aplicadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-001-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-001 — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-002-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-002 — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-003-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-003 — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-004-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-004 — RESOLVED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-005-resolved-for-v6-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-005 — RESOLVED FOR V6 CONTRACT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-ds-006-closed-abandoned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F-DS-006 — CLOSED / ABANDONED
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#101-review-independente-do-candidato-adjudicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 Review independente do candidato — adjudicação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-re-review-independente-adjudicacao-dos-p1-residuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Re-review independente — adjudicação dos P1 residuais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-estado-candidato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Estado candidato
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+    <div class="gkr-page-actions">
+      <button
+        type="button"
+        class="md-button gkr-page-print"
+        onclick="window.print()"
+        aria-label="Imprimir somente este assunto"
+      >
+        Imprimir este assunto
+      </button>
+    </div>
+  
+  
+                  
+
+
+  
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/experience-architecture/public-homes-designer-ai-source-completeness-audit.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="homes-publicas-auditoria-final-de-completude-das-fontes-para-designer-e-ia">Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA<a class="headerlink" href="#homes-publicas-auditoria-final-de-completude-das-fontes-para-designer-e-ia" title="Permanent link">&para;</a></h1>
+<h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Esta auditoria existe para assegurar que, antes do início do trabalho criativo pago da designer, o Guivos Knowledge Repository entregue um conjunto de fontes suficientemente completo, atual, autocontido e determinístico para:</p>
+<ul>
+<li>leitura humana pela designer;</li>
+<li>criação manual com liberdade criativa;</li>
+<li>uso opcional de sistemas de IA pela própria designer;</li>
+<li>validação semântica posterior contra o GKR;</li>
+<li>eliminação da necessidade de reconstruir decisões por histórico, auditorias ou conversas.</li>
+</ul>
+<p>Esta frente <strong>não cria Design</strong>.</p>
+<div class="highlight"><pre><span></span><code>GKR
+→ DEFINE VERDADE / FUNÇÃO / LIMITES / EVIDÊNCIA / CONTRATOS
+
+DESIGNER
+→ CRIA MANUALMENTE
+→ POSSUI LIBERDADE VISUAL / CRIATIVA
+
+AI
+→ FERRAMENTA OPCIONAL DA DESIGNER
+→ NÃO É FONTE DE VERDADE
+
+GKR / CHATGPT
+→ NÃO CRIA FIGMA
+→ NÃO PRÉ-COMPÕE DIREÇÃO VISUAL
+→ NÃO SUBSTITUI A DESIGNER
+</code></pre></div>
+<h2 id="2-decisao-humana-reafirmada-em-2026-09-19">2. Decisão humana reafirmada em 2026-09-19<a class="headerlink" href="#2-decisao-humana-reafirmada-em-2026-09-19" title="Permanent link">&para;</a></h2>
+<p>A direção operacional vigente é:</p>
+<div class="highlight"><pre><span></span><code>GKR-CREATED FIGMA / FIGMA MAKE EXECUTION
+→ DISCONTINUED
+
+DESIGN PRODUCTION
+→ EXTERNAL / DESIGNER-OWNED
+
+DESIGN METHOD
+→ MANUAL BY DEFAULT
+→ AI MAY BE USED AT DESIGNER DISCRETION
+
+VISUAL IDENTITY
+→ DESIGN-OWNED
+→ NOT CANONICALIZED BEFORE CREATIVE WORK
+</code></pre></div>
+<p>Qualquer exploração Figma criada durante a tentativa operacional anterior é:</p>
+<div class="highlight"><pre><span></span><code>ABANDONED
+→ NON-AUTHORITATIVE
+→ NOT A DESIGN REFERENCE
+→ NOT A SOURCE
+→ NOT APPROVED FOR IMPLEMENTATION
+</code></pre></div>
+<h2 id="3-baseline-da-reauditoria">3. Baseline da reauditoria<a class="headerlink" href="#3-baseline-da-reauditoria" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>MAIN
+→ d4a56997be235a31ea98f0eb632e7a12aa6de88a
+
+V5 SNAPSHOT
+→ delivery/design-handoff-v5
+→ f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
+→ FROZEN / HISTORICAL DELIVERY SNAPSHOT
+</code></pre></div>
+<p>O v5 não será reescrito. Mudanças materiais desta frente exigirão novo pacote/snapshot posterior.</p>
+<h2 id="4-criterio-de-100-pronto">4. Critério de “100% pronto”<a class="headerlink" href="#4-criterio-de-100-pronto" title="Permanent link">&para;</a></h2>
+<p>Uma Home somente pode ser considerada pronta para entrega à designer quando seu pacote de consumo permite responder, sem inferência externa, a todas as classes abaixo.</p>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Pergunta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C1</td>
+<td>Existe Documento Mestre inequívoco, ID, path, versão, status e precedência?</td>
+</tr>
+<tr>
+<td>C2</td>
+<td>Papel da Home, público/perspectiva, relação com Guivos e limites estão explícitos?</td>
+</tr>
+<tr>
+<td>C3</td>
+<td>Tese, pergunta-mãe, Hero, progressão narrativa e função de cada movimento/região estão definidos?</td>
+</tr>
+<tr>
+<td>C4</td>
+<td>Header, navegação, launcher/portas, CTAs e destinos semânticos estão definidos sem congelar layout?</td>
+</tr>
+<tr>
+<td>C5</td>
+<td>Estados semânticos, comportamentos, dados ausentes/erro e limites de interações estão definidos quando aplicáveis?</td>
+</tr>
+<tr>
+<td>C6</td>
+<td>Conteúdo, prova, evidência, mídia, patrocínio e causalidade possuem contratos explícitos?</td>
+</tr>
+<tr>
+<td>C7</td>
+<td>Dados reais, placeholders, claims, preços, parceiros, métricas e disponibilidade possuem regra de não invenção?</td>
+</tr>
+<tr>
+<td>C8</td>
+<td>Responsividade, acessibilidade, reduced motion/fallback e continuidade sem mídia rica estão protegidos?</td>
+</tr>
+<tr>
+<td>C9</td>
+<td>OPEN_QUESTION/TBD permanecem explicitamente abertos e não são resolvidos por IA?</td>
+</tr>
+<tr>
+<td>C10</td>
+<td>Liberdade criativa da designer está explicitamente preservada e separada da verdade semântica?</td>
+</tr>
+<tr>
+<td>C11</td>
+<td>IA opcional recebe Source Lock/prompt tool-neutral, sem obrigação de Figma Make ou ferramenta específica?</td>
+</tr>
+<tr>
+<td>C12</td>
+<td>Existem critérios objetivos de autoauditoria/aceite sem exigir reconstrução por documento histórico?</td>
+</tr>
+<tr>
+<td>C13</td>
+<td>O pacote contém todas as autoridades necessárias ou o Master absorveu as remediações indispensáveis?</td>
+</tr>
+<tr>
+<td>C14</td>
+<td>Nenhum documento do pacote contém estado temporal superado capaz de induzir execução errada?</td>
+</tr>
+<tr>
+<td>C15</td>
+<td>Markdown permanece fonte primária e adequada a consumo humano + IA?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-inventario-baseline-antes-da-remediacao">5. Inventário baseline antes da remediação<a class="headerlink" href="#5-inventario-baseline-antes-da-remediacao" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Home</th>
+<th>Master</th>
+<th>Estado governado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pessoa</td>
+<td><code>GKR-UX-HOME-MASTER-001 v1.0.2</code></td>
+<td>REAUDIT</td>
+</tr>
+<tr>
+<td>Organizações e Coletivos</td>
+<td><code>GKR-UX-HOME-OC-MASTER-001 v1.0.0</code></td>
+<td>REAUDIT</td>
+</tr>
+<tr>
+<td>Mall</td>
+<td><code>GKR-UX-HOME-MALL-MASTER-001 v1.0.0</code></td>
+<td>REMEDIATION REQUIRED</td>
+</tr>
+<tr>
+<td>Travel</td>
+<td><code>GKR-UX-HOME-TRAVEL-MASTER-001 v1.0.0</code></td>
+<td>REMEDIATION REQUIRED</td>
+</tr>
+<tr>
+<td>Media</td>
+<td><code>GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1</code></td>
+<td>REAUDIT</td>
+</tr>
+<tr>
+<td>Ads</td>
+<td><code>GKR-UX-HOME-ADS-MASTER-001 v1.0.1</code></td>
+<td>REAUDIT</td>
+</tr>
+<tr>
+<td>Business</td>
+<td><code>GKR-UX-HOME-BUSINESS-MASTER-001 v1.0.0</code></td>
+<td>REMEDIATION REQUIRED</td>
+</tr>
+<tr>
+<td>Intelligence</td>
+<td><code>GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1</code></td>
+<td>REMEDIATION REQUIRED</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Esta tabela preserva a <strong>baseline histórica da auditoria inicial</strong>. Ela não representa o conjunto corrente após as remediações.</p>
+</blockquote>
+<h3 id="51-inventario-corrente-do-candidato">5.1 Inventário corrente do candidato<a class="headerlink" href="#51-inventario-corrente-do-candidato" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Home</th>
+<th>Fonte mestre corrente</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pessoa</td>
+<td><code>GKR-UX-HOME-MASTER-001 v1.0.3</code></td>
+<td>RECONCILED</td>
+</tr>
+<tr>
+<td>Organizações e Coletivos</td>
+<td><code>GKR-UX-HOME-OC-MASTER-001 v1.0.3</code></td>
+<td>RECONCILED</td>
+</tr>
+<tr>
+<td>Mall</td>
+<td><code>GKR-UX-HOME-MALL-MASTER-001 v1.1.1</code></td>
+<td>RECONCILED</td>
+</tr>
+<tr>
+<td>Travel</td>
+<td><code>GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.3</code></td>
+<td>RECONCILED</td>
+</tr>
+<tr>
+<td>Media</td>
+<td><code>GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1</code></td>
+<td>RECONCILED</td>
+</tr>
+<tr>
+<td>Ads</td>
+<td><code>GKR-UX-HOME-ADS-MASTER-001 v1.0.1</code></td>
+<td>RECONCILED</td>
+</tr>
+<tr>
+<td>Business</td>
+<td><code>GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3</code> + <code>GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6</code> + <code>GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3</code></td>
+<td>RECONCILED</td>
+</tr>
+<tr>
+<td>Intelligence</td>
+<td><code>GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7</code> + <code>GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3</code> + <code>GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9</code> + <code>GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.10</code> + <code>GKR-UX-HOMES-OUTCOME-001 v1.0.0</code> + <code>GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1</code> + <code>GPA-006 v2.0.1</code></td>
+<td>RECONCILED</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-findings-iniciais-comprovados">6. Findings iniciais comprovados<a class="headerlink" href="#6-findings-iniciais-comprovados" title="Permanent link">&para;</a></h2>
+<h3 id="f-ds-001-fluxo-comum-excessivamente-dependente-de-ferramenta-generativa-resolved">F-DS-001 — fluxo comum excessivamente dependente de ferramenta generativa — RESOLVED<a class="headerlink" href="#f-ds-001-fluxo-comum-excessivamente-dependente-de-ferramenta-generativa-resolved" title="Permanent link">&para;</a></h3>
+<p>As autoridades correntes descrevem Figma Make como Fase B obrigatória / próximo movimento. Isso conflita com a decisão humana atual.</p>
+<p>Remediação exigida:</p>
+<div class="highlight"><pre><span></span><code>DESIGNER
+→ MANUAL CREATIVE AUTHOR
+
+AI
+→ OPTIONAL TOOL
+
+FIGMA MAKE
+→ OPTIONAL IF DESIGNER CHOOSES
+→ NOT A GOVERNED REQUIRED PHASE
+</code></pre></div>
+<h3 id="f-ds-002-release-corrente-registrava-execucao-gerativa-como-proximo-movimento-resolved">F-DS-002 — release corrente registrava execução gerativa como próximo movimento — RESOLVED<a class="headerlink" href="#f-ds-002-release-corrente-registrava-execucao-gerativa-como-proximo-movimento-resolved" title="Permanent link">&para;</a></h3>
+<p><code>GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0</code> deve preservar o release já concedido, mas atualizar o método permitido:</p>
+<div class="highlight"><pre><span></span><code>DESIGN PRODUCTION RELEASE
+→ REMAINS GRANTED
+
+GKR-CREATED DESIGN EXECUTION
+→ NONE
+
+EXTERNAL DESIGNER PRODUCTION
+→ RELEASED
+
+AI USE
+→ OPTIONAL / DESIGNER-CONTROLLED
+</code></pre></div>
+<h3 id="f-ds-003-mall-travel-dependiam-de-contrato-deterministico-externo-ao-master-resolved">F-DS-003 — Mall / Travel dependiam de contrato determinístico externo ao Master — RESOLVED<a class="headerlink" href="#f-ds-003-mall-travel-dependiam-de-contrato-deterministico-externo-ao-master-resolved" title="Permanent link">&para;</a></h3>
+<p>A auditoria anterior precisou adicionar em <code>GKR-HOME-MASTERS-REMEDIATION-001</code>:</p>
+<ul>
+<li>estados semânticos;</li>
+<li>comportamentos/interações;</li>
+<li>navegação governada;</li>
+<li>contrato para AI;</li>
+<li>critérios objetivos de aceite.</li>
+</ul>
+<p>Essas regras são necessárias ao consumo de Design/IA, mas não integram os respectivos Masters e não constam entre as 26 fontes v5.</p>
+<p>A remediação preferida é <strong>absorção semântica nos Masters Mall e Travel</strong>, preservando a adjudicação histórica como proveniência.</p>
+<h3 id="f-ds-004-business-intelligence-dependiam-de-normalizacao-temporal-externa-resolved">F-DS-004 — Business / Intelligence dependiam de normalização temporal externa — RESOLVED<a class="headerlink" href="#f-ds-004-business-intelligence-dependiam-de-normalizacao-temporal-externa-resolved" title="Permanent link">&para;</a></h3>
+<p>A adjudicação anterior normalizou:</p>
+<ul>
+<li>Business Master como input canônico de handoff;</li>
+<li>referências históricas de próxima etapa;</li>
+<li>existência posterior da Home Intelligence;</li>
+<li>existência posterior do Home Source Lock de Intelligence.</li>
+</ul>
+<p>A verdade corrente deve estar nos documentos de consumo, não depender de leitura da adjudicação histórica.</p>
+<h3 id="f-ds-005-guias-v5-sao-tool-specific-resolved-for-v6-contract">F-DS-005 — guias v5 são tool-specific — RESOLVED FOR V6 CONTRACT<a class="headerlink" href="#f-ds-005-guias-v5-sao-tool-specific-resolved-for-v6-contract" title="Permanent link">&para;</a></h3>
+<p>Os oito <code>LEIA-PRIMEIRO</code> v5 foram emitidos com “prompt inicial para Figma Make”.</p>
+<p>Para nova emissão:</p>
+<div class="highlight"><pre><span></span><code>PROMPT / SOURCE LOCK
+→ TOOL-NEUTRAL
+
+MANUAL DESIGN
+→ FIRST-CLASS
+
+AI
+→ OPTIONAL
+
+FIGMA / ADOBE / OTHER DESIGN TOOL
+→ DESIGNER CHOICE
+</code></pre></div>
+<h3 id="f-ds-006-artefato-figma-experimental-anterior-closed-abandoned">F-DS-006 — artefato Figma experimental anterior — CLOSED / ABANDONED<a class="headerlink" href="#f-ds-006-artefato-figma-experimental-anterior-closed-abandoned" title="Permanent link">&para;</a></h3>
+<p>A exploração criada fora do GKR não possui autoridade e não será consumida no trabalho da designer.</p>
+<p>Nenhuma decisão visual será propagada dela.</p>
+<h2 id="7-estrategia-de-remediacao">7. Estratégia de remediação<a class="headerlink" href="#7-estrategia-de-remediacao" title="Permanent link">&para;</a></h2>
+<p>A frente seguirá esta ordem:</p>
+<ol>
+<li>corrigir autoridades comuns para modelo designer-first / AI-optional;</li>
+<li>absorver contratos determinísticos de Mall e Travel em seus Masters;</li>
+<li>reconciliar temporalmente Business e Intelligence nos próprios documentos de consumo;</li>
+<li>reauditar Pessoa, O/C, Media e Ads contra C1–C15;</li>
+<li>reauditar os oito pacotes completos, não apenas arquivos isolados;</li>
+<li>emitir matriz final PASS/GAP;</li>
+<li>somente com C1–C15 = PASS para 8/8 Homes, preparar novo Manifesto/pacote v6;</li>
+<li>materializar snapshot v6 somente mediante ato governado separado;</li>
+<li>entregar Markdown como fonte primária à designer.</li>
+</ol>
+<h2 id="8-liberdade-criativa-protegida">8. Liberdade criativa protegida<a class="headerlink" href="#8-liberdade-criativa-protegida" title="Permanent link">&para;</a></h2>
+<p>A auditoria não definirá:</p>
+<ul>
+<li>tipografia;</li>
+<li>paleta;</li>
+<li>fotografia;</li>
+<li>ilustração;</li>
+<li>iconografia;</li>
+<li>composição;</li>
+<li>grid;</li>
+<li>ritmo;</li>
+<li>motion;</li>
+<li>aparência de componentes;</li>
+<li>linguagem gráfica;</li>
+<li>atmosfera;</li>
+<li>identidade visual final;</li>
+<li>copy não congelada.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>SEMANTIC TRUTH
+→ GKR
+
+CREATIVE EXPRESSION
+→ DESIGNER
+
+AI OUTPUT
+→ PROPOSAL ONLY
+
+DESIGN FREEDOM
+≠ PRODUCT REDEFINITION
+≠ FACTUAL INVENTION
+</code></pre></div>
+<h2 id="9-resultado-da-reauditoria-c1c15">9. Resultado da reauditoria C1–C15<a class="headerlink" href="#9-resultado-da-reauditoria-c1c15" title="Permanent link">&para;</a></h2>
+<p>A reauditoria foi executada sobre o <strong>pacote combinado</strong> de cada Home:</p>
+<div class="highlight"><pre><span></span><code>AUTORIDADES COMUNS CANDIDATAS
++
+MASTER
++
+FONTES ESPECÍFICAS DA HOME
+</code></pre></div>
+<p>Resultado:</p>
+<table>
+<thead>
+<tr>
+<th>Home</th>
+<th>C1–C15</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pessoa</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Organizações e Coletivos</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Mall</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Travel</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Media</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Ads</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Business</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Intelligence</td>
+<td>PASS</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>HOMES
+→ 8 / 8
+
+CRITERIA PER HOME
+→ 15 / 15
+
+PACKAGE-LEVEL STRUCTURAL COMPLETENESS
+→ 120 / 120 PASS
+
+OPEN MATERIAL SOURCE-COMPLETENESS FINDINGS
+→ 0 KNOWN AFTER LATEST REMEDIATION
+→ EXACT-HEAD REVALIDATION + INDEPENDENT RE-REVIEW REQUIRED
+</code></pre></div>
+<p>Esse resultado comprova completude estrutural/semântica do candidato. Ele ainda precisa ser revalidado no HEAD exato pelos gates automáticos e por revisão independente.</p>
+<h2 id="91-review-independente-posterior-adjudicacao">9.1 Review independente posterior — adjudicação<a class="headerlink" href="#91-review-independente-posterior-adjudicacao" title="Permanent link">&para;</a></h2>
+<p>Review <code>5258088856</code> encontrou dois P1 materiais no HEAD <code>ef47b1b116b5c4629126e02fc238e813d28c7f55</code>:</p>
+<div class="highlight"><pre><span></span><code>P1 — BUSINESS AUTHORITY CONTRACT
+→ REMEDIATED
+→ GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.2
+→ MASTER + SOURCE LOCK RECOGNIZED AS EXISTING
+→ EXTERNAL DESIGN RELEASE RECOGNIZED
+→ CONTRACT NO LONGER ACTS AS PRE-DESIGN BLOCK
+
+P1 — O/C MASTER PRE-MATERIALIZATION STATE
+→ REMEDIATED
+→ GKR-UX-HOME-OC-MASTER-001 v1.0.2
+→ PUBLIC HOME DESIGN RELEASE RECOGNIZED
+→ AUTHENTICATED HIGH-FIDELITY REMAINS NOT_GRANTED
+→ PRODUCT ENGINEERING REMAINS NOT RELEASED
+</code></pre></div>
+<p>Essas remediações alteram o HEAD. Portanto o candidato só pode voltar a estado comprovado após Semantic + Mechanical no novo SHA e novo review independente.</p>
+<h2 id="92-review-independente-no-head-e0d6d2ec7d2d18e9a4c175c0cab907a2727083af-adjudicacao">9.2 Review independente no HEAD <code>e0d6d2ec7d2d18e9a4c175c0cab907a2727083af</code> — adjudicação<a class="headerlink" href="#92-review-independente-no-head-e0d6d2ec7d2d18e9a4c175c0cab907a2727083af-adjudicacao" title="Permanent link">&para;</a></h2>
+<p>Review <code>PRR_kwDOTG6AO88AAAABOWjSmg</code> encontrou três P1 residuais de estado pré-release dentro de fontes correntes:</p>
+<div class="highlight"><pre><span></span><code>P1 — O/C MASTER RESIDUAL PRE-RELEASE GATES
+→ REMEDIATED
+→ GKR-UX-HOME-OC-MASTER-001 v1.0.2
+→ PUBLIC HOME EXTERNAL DESIGN RELEASE IS CURRENT
+→ AUTHENTICATED HIGH-FIDELITY REMAINS NOT_GRANTED
+→ PRODUCT ENGINEERING REMAINS NOT RELEASED
+
+P1 — TRAVEL MASTER MATERIALIZATION PROHIBITION
+→ REMEDIATED
+→ GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.2
+→ EXTERNAL DESIGN RELEASE IS CURRENT
+→ IMPLEMENTATION / PUBLICATION REMAIN NOT RELEASED
+
+P1 — BUSINESS MASTER OBSOLETE OPENING GATE
+→ REMEDIATED
+→ GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3
+→ SOURCE LOCK EXISTS / ACTIVE
+→ EXTERNAL DESIGN RELEASE IS CURRENT
+→ PRODUCT ENGINEERING REMAINS NOT RELEASED
+</code></pre></div>
+<p>As autoridades globais de estado e Roadmap também foram reconciliadas para não classificar as Homes correntes como <code>PRE_MATERIALIZATION</code> depois do release externo de Design.</p>
+<p>Essas remediações alteram novamente o HEAD. O estado <code>PASS</code> continua candidato até Semantic + Mechanical e novo review independente no SHA final.</p>
+<h2 id="93-review-independente-no-head-6c6fcc6b065a902e71e6c909745dbecc53954f21-adjudicacao-e-varredura-temporal-completa">9.3 Review independente no HEAD <code>6c6fcc6b065a902e71e6c909745dbecc53954f21</code> — adjudicação e varredura temporal completa<a class="headerlink" href="#93-review-independente-no-head-6c6fcc6b065a902e71e6c909745dbecc53954f21-adjudicacao-e-varredura-temporal-completa" title="Permanent link">&para;</a></h2>
+<p>Review <code>PRR_kwDOTG6AO88AAAABOWmFXw</code> encontrou quatro P1 materiais remanescentes:</p>
+<div class="highlight"><pre><span></span><code>P1 — BUSINESS SOURCE LOCK STALE PINS
+→ REMEDIATED
+→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.4
+→ MASTER = v1.1.3
+→ AUTHORITY CONTRACT = v1.0.2
+
+P1 — INTELLIGENCE PRE-SOURCE-LOCK OPENING STATE
+→ REMEDIATED
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.4
+→ SOURCE LOCK EXISTS / ACTIVE
+→ DESIGN HANDOFF EXISTS / ACTIVE
+→ EXTERNAL DESIGN RELEASE = GRANTED
+
+P1 — PERSON MASTER PRE-RELEASE MATERIALIZATION STATE
+→ REMEDIATED
+→ GKR-UX-HOME-MASTER-001 v1.0.3
+→ PUBLIC HOME EXTERNAL DESIGN RELEASE = GRANTED
+→ AUTHENTICATED / IMPLEMENTATION BOUNDARIES PRESERVED
+
+P1 — O/C AUDIT-ERA MATURITY / CURRENT-TENSE RESIDUE
+→ REMEDIATED
+→ GKR-UX-HOME-OC-MASTER-001 v1.0.3
+→ MATURITY = DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
+→ AUDIT FUNCTION IS NO LONGER DESCRIBED AS UNDECIDED
+</code></pre></div>
+<p>A mesma classe de contradição foi então varrida preventivamente nos demais Masters correntes. Foram reconciliados também:</p>
+<div class="highlight"><pre><span></span><code>MALL MASTER
+→ v1.1.1
+→ NO NEW DESIGN DECISION REQUIRED FOR PUBLIC HOME
+→ IMPLEMENTATION / INTERNAL SURFACES REMAIN UNRELEASED
+
+TRAVEL MASTER
+→ v1.1.3
+→ OPENING AUTHORITY ALIGNED WITH CURRENT EXTERNAL DESIGN RELEASE
+→ IMPLEMENTATION / PUBLICATION REMAIN UNRELEASED
+</code></pre></div>
+<p>Media e Ads não apresentaram gate temporal equivalente na varredura. O v5 permanece congelado/histórico e não foi alterado.</p>
+<p>Essas remediações alteram novamente o HEAD. O estado <code>PASS</code> permanece candidato até Semantic + Mechanical e novo review independente no SHA final.</p>
+<h2 id="94-fechamento-da-varredura-de-source-locks-correntes">9.4 Fechamento da varredura de Source Locks correntes<a class="headerlink" href="#94-fechamento-da-varredura-de-source-locks-correntes" title="Permanent link">&para;</a></h2>
+<p>A varredura pós-review encontrou dois resíduos adicionais da mesma classe temporal antes dos gates:</p>
+<div class="highlight"><pre><span></span><code>BUSINESS SOURCE LOCK
+→ v1.1.5
+→ CURRENT MASTER = v1.1.3
+→ CURRENT AUTHORITY CONTRACT = v1.0.2
+→ INTELLIGENCE HOME DOCUMENTARY AUTHORITY RECOGNIZED AS EXISTING
+→ DESIGN MATERIALIZATION LANGUAGE ALIGNED WITH CURRENT RELEASE
+
+INTELLIGENCE SOURCE LOCK
+→ v1.1.4
+→ CURRENT MASTER = v0.2.4
+→ CURRENT EXTERNAL DESIGN RELEASE RECOGNIZED
+→ FUTURE-MATERIALIZATION LANGUAGE REMOVED FROM CURRENT DESIGN CONTRACT
+
+INTELLIGENCE DESIGN HANDOFF
+→ v1.1.5
+→ SYNCHRONIZED TO SOURCE LOCK v1.1.4
+</code></pre></div>
+<p>Esses ajustes não alteram identidade, semântica, guardrails, implementação ou publicação; apenas removem ambiguidade temporal do handoff corrente.</p>
+<h2 id="95-review-independente-final-no-head-5808caeecc412ecc58fde489d43f614d190c99b1-dois-p1-residuais">9.5 Review independente final no HEAD <code>5808caeecc412ecc58fde489d43f614d190c99b1</code> — dois P1 residuais<a class="headerlink" href="#95-review-independente-final-no-head-5808caeecc412ecc58fde489d43f614d190c99b1-dois-p1-residuais" title="Permanent link">&para;</a></h2>
+<p>O review independente final do candidato encontrou dois P1 materiais adicionais, ambos remediados:</p>
+<div class="highlight"><pre><span></span><code>P1 — BUSINESS AUTHORITY CROSS-PINS
+→ REMEDIATED
+→ GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3
+→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6
+→ MASTER = v1.1.3
+→ RECIPROCAL CURRENT PINS SYNCHRONIZED
+
+P1 — INTELLIGENCE PRODUCT AUTHORITIES PRE-HOME STATE
+→ REMEDIATED
+→ GPA-006 v2.0.1
+→ GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
+→ PRE-HOME STATE = HISTORICAL PROVENANCE
+→ HOME MASTER = v0.2.5 / EXISTS
+→ HOME SOURCE LOCK = v1.1.5 / ACTIVE
+→ DESIGN HANDOFF = v1.1.6 / ACTIVE
+→ EXTERNAL DESIGN RELEASE = GRANTED
+→ PRODUCT ENGINEERING = NOT RELEASED
+</code></pre></div>
+<p>Essas remediações alteram novamente o HEAD. O <code>PASS</code> continua candidato até Semantic + Mechanical e novo review independente sobre o SHA final.</p>
+<h2 id="96-re-review-independente-no-head-1f99de11384b7a05f4aa0aee0c50c87deddd217b-dois-p1-e-tres-p2-residuais">9.6 Re-review independente no HEAD <code>1f99de11384b7a05f4aa0aee0c50c87deddd217b</code> — dois P1 e três P2 residuais<a class="headerlink" href="#96-re-review-independente-no-head-1f99de11384b7a05f4aa0aee0c50c87deddd217b-dois-p1-e-tres-p2-residuais" title="Permanent link">&para;</a></h2>
+<p>O re-review independente encontrou cinco inconsistências de sincronização/precedência, sem alteração conceitual do produto ou da liberdade criativa da designer:</p>
+<div class="highlight"><pre><span></span><code>P1 — INTELLIGENCE HOME SOURCE PACKAGE STALE PINS
+→ REMEDIATED
+→ MASTER = v0.2.5
+→ PRODUCT SOURCE LOCK = v1.0.1
+→ GPA-006 = v2.0.1
+
+P1 — INTELLIGENCE PRODUCT SOURCE LOCK PRE-HOME CHECKLIST
+→ REMEDIATED
+→ CHECKLIST = CURRENT INTEGRITY CHECK ONLY
+→ DOES NOT PRECEDE / BLOCK / REOPEN HOME OR DESIGN AUTHORITIES
+
+P2 — FROZEN V5 INTELLIGENCE ORDER
+→ REMEDIATED
+→ EMITTED V5 PINS RESTORED
+→ SOURCE LOCK = v1.0.0
+→ HANDOFF = v1.0.0
+→ MASTER = v0.1.1
+→ PRODUCT SOURCE LOCK = v1.0.0
+→ GPA-006 = v2.0.0
+
+P2 — CURRENT-STATE INTELLIGENCE SOURCE LOCK
+→ REMEDIATED
+→ CURRENT = v1.1.5
+
+P2 — BUSINESS COMMON HANDOFF PIN
+→ REMEDIATED
+→ CURRENT V6 HANDOFF = v1.6.2
+</code></pre></div>
+<p>As correções preservam o v5 como snapshot histórico reproduzível e o v6 como cadeia corrente separada. O estado <code>PASS</code> permanece candidato até nova validação automática e re-review no HEAD final.</p>
+<h2 id="97-re-review-independente-no-head-3d9d6283396ee7e64c0e878a0fd3c5a54f800fb2-um-p1-residual-de-completude">9.7 Re-review independente no HEAD <code>3d9d6283396ee7e64c0e878a0fd3c5a54f800fb2</code> — um P1 residual de completude<a class="headerlink" href="#97-re-review-independente-no-head-3d9d6283396ee7e64c0e878a0fd3c5a54f800fb2-um-p1-residual-de-completude" title="Permanent link">&para;</a></h2>
+<p>O re-review independente encontrou uma única lacuna residual no pacote externo de Intelligence:</p>
+<div class="highlight"><pre><span></span><code>P1 — INTELLIGENCE REQUIRED AUTHORITIES OMITTED FROM V6 INVENTORY
+→ REMEDIATED
+→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1 ADDED
+→ GKR-UX-HOMES-OUTCOME-001 v1.0.0 ADDED
+→ INTELLIGENCE RESTRICTED PACKAGE = SELF-CONTAINED
+→ HOME-SPECIFIC UNIQUE SOURCES = 24
+→ CANONICAL SOURCES = 29
+→ READ-FIRST GUIDES = 8
+→ TOTAL EXTERNAL FILES = 37
+</code></pre></div>
+<p>A correção não cria nova autoridade nem reabre produto ou Design. Ela apenas torna o pacote v6 determinístico em relação às autoridades que o próprio Home Source Lock vigente já exige.</p>
+<h2 id="98-re-review-independente-no-head-95a02abe65e582276a9f0212e5d6ef597e238d6f-tres-p1-residuais-de-coerencia-de-consumo">9.8 Re-review independente no HEAD <code>95a02abe65e582276a9f0212e5d6ef597e238d6f</code> — três P1 residuais de coerência de consumo<a class="headerlink" href="#98-re-review-independente-no-head-95a02abe65e582276a9f0212e5d6ef597e238d6f-tres-p1-residuais-de-coerencia-de-consumo" title="Permanent link">&para;</a></h2>
+<p>O re-review independente encontrou três inconsistências materiais na composição efetiva do pacote v6:</p>
+<div class="highlight"><pre><span></span><code>P1 — INTELLIGENCE NARRATIVE TEMPORAL STATE
+→ REMEDIATED
+→ NARRATIVE v0.2.2
+→ PRE-HOME FLOW = HISTORICAL PROVENANCE
+→ CURRENT SOURCE LOCK / HANDOFF / EXTERNAL DESIGN RELEASE RECOGNIZED
+
+P1 — INTELLIGENCE CONSUMPTION INVENTORIES
+→ REMEDIATED
+→ GENINPUT v2.2.11 INCLUDES NARRATIVE + OUTCOME
+→ READINESS v1.2.11 INCLUDES NARRATIVE + OUTCOME
+
+P1 — COMMON SOURCE CONTRACT
+→ REMEDIATED
+→ 5 COMMON SOURCES IN GENINPUT
+→ 5 COMMON SOURCES IN READINESS
+→ DESIGN PRODUCTION RELEASE INCLUDED
+</code></pre></div>
+<p>As três correções são de sincronização documental. A identidade do produto, a liberdade criativa da designer, o caráter opcional da IA, o v5 congelado e o boundary de Product Engineering permanecem inalterados.</p>
+<h2 id="99-re-review-independente-no-head-b4785bc2fa52fafbfaaf38f6d8a7689a692015b2-um-p1-e-um-p2-residuais">9.9 Re-review independente no HEAD <code>b4785bc2fa52fafbfaaf38f6d8a7689a692015b2</code> — um P1 e um P2 residuais<a class="headerlink" href="#99-re-review-independente-no-head-b4785bc2fa52fafbfaaf38f6d8a7689a692015b2-um-p1-e-um-p2-residuais" title="Permanent link">&para;</a></h2>
+<p>O re-review independente encontrou dois resíduos de sincronização:</p>
+<div class="highlight"><pre><span></span><code>P1 — REMAINING CURRENT NARRATIVE PINS
+→ REMEDIATED
+→ MASTER = v0.2.6
+→ NARRATIVE PIN = v0.2.2
+→ SOURCE LOCK = v1.1.7
+→ HANDOFF = v1.1.8
+
+P2 — EXPERIENCE ARCHITECTURE V6 COUNT
+→ REMEDIATED
+→ 29 CANONICAL SOURCES
+→ 8 READ-FIRST GUIDES
+→ 37 EXTERNAL FILES
+</code></pre></div>
+<p>A correção fecha apenas referências correntes residuais; não altera o v5 histórico nem o conteúdo semântico de Intelligence.</p>
+<h2 id="910-varredura-preventiva-pos-remediacao-remocao-de-hardcodes-downstream-na-narrative">9.10 Varredura preventiva pós-remediação — remoção de hardcodes downstream na Narrative<a class="headerlink" href="#910-varredura-preventiva-pos-remediacao-remocao-de-hardcodes-downstream-na-narrative" title="Permanent link">&para;</a></h2>
+<p>A varredura preventiva dos 30 arquivos alterados identificou que a própria Narrative, ao descrever o estado corrente, hardcodava versões downstream que se tornavam obsoletas sempre que Master / Source Lock / Handoff eram repinados.</p>
+<div class="highlight"><pre><span></span><code>PREVENTIVE FINDING — DOWNSTREAM VERSION HARD-CODES IN NARRATIVE
+→ REMEDIATED
+→ NARRATIVE = v0.2.3
+→ DOWNSTREAM MASTER / SOURCE LOCK / HANDOFF REFERENCES = ID + CURRENT VERSION PINNED BY V6 CANDIDATE
+→ MASTER = v0.2.7
+→ SOURCE LOCK = v1.1.8
+→ HANDOFF = v1.1.9
+→ GENINPUT = v2.2.13
+→ READINESS = v1.2.13
+→ V6 CANDIDATE = v0.2.14
+</code></pre></div>
+<p>A mudança elimina a causa estrutural do ciclo de stale pins sem enfraquecer a determinabilidade do pacote: as versões exatas continuam congeladas no candidato/snapshot de entrega, enquanto a Narrative deixa de tentar versionar autoridades downstream que evoluem depois dela.</p>
+<h2 id="911-varredura-corrente-no-head-posterior-a-f321f9252d864da7e353d616a8d7f659807e25e9-dois-pins-residuais-no-pacote-autorizado-do-source-lock">9.11 Varredura corrente no HEAD posterior a <code>f321f9252d864da7e353d616a8d7f659807e25e9</code> — dois pins residuais no pacote autorizado do Source Lock<a class="headerlink" href="#911-varredura-corrente-no-head-posterior-a-f321f9252d864da7e353d616a8d7f659807e25e9-dois-pins-residuais-no-pacote-autorizado-do-source-lock" title="Permanent link">&para;</a></h2>
+<p>A reconciliação do HEAD corrente identificou que a seção de pacote autorizado do Intelligence Source Lock ainda preservava Master <code>v0.2.6</code> e Narrative <code>v0.2.2</code>, embora o restante da cadeia vigente já estivesse em Master <code>v0.2.7</code> e Narrative <code>v0.2.3</code>.</p>
+<div class="highlight"><pre><span></span><code>CURRENT AUTHORIZED PACKAGE
+→ MASTER = v0.2.7
+→ NARRATIVE = v0.2.3
+→ SOURCE LOCK = v1.1.9
+→ HANDOFF = v1.1.10
+→ GENINPUT = v2.2.14
+→ READINESS = v1.2.14
+→ V6 CANDIDATE = v0.2.15
+</code></pre></div>
+<p>A correção mantém o Source Lock como autoridade de pin exato e não altera o conteúdo semântico, o v5 histórico, a liberdade criativa da designer ou os gates de implementação/publicação.</p>
+<h2 id="912-review-automatico-pos-ready-no-head-9bc9dd36a817201b24b77c29c4554326276a069a-um-p2-de-rotulagem-interna">9.12 Review automático pós-Ready no HEAD <code>9bc9dd36a817201b24b77c29c4554326276a069a</code> — um P2 de rotulagem interna<a class="headerlink" href="#912-review-automatico-pos-ready-no-head-9bc9dd36a817201b24b77c29c4554326276a069a-um-p2-de-rotulagem-interna" title="Permanent link">&para;</a></h2>
+<p>A transição para Ready for Review disparou novo review automático no mesmo HEAD e revelou um resíduo estritamente interno no Operational Flow:</p>
+<div class="highlight"><pre><span></span><code>P2 — OPERATIONAL FLOW INTERNAL VERSION LABEL
+→ REMEDIATED
+→ FRONTMATTER = v3.0.1
+→ V6 CANDIDATE PIN = v3.0.1
+→ INTERNAL STATE LABEL = v3.0.1
+→ NO SEMANTIC / PACKAGE-COMPOSITION CHANGE
+</code></pre></div>
+<p>A correção apenas faz o bloco de estado refletir a revisão <code>v3.0.1</code> que já era a revisão declarada e incluída no pacote. Não cria nova autoridade, não altera a composição 29 + 8 = 37 e não modifica os boundaries de Design, IA, snapshot ou Product Engineering.</p>
+<h2 id="10-remediacoes-aplicadas">10. Remediações aplicadas<a class="headerlink" href="#10-remediacoes-aplicadas" title="Permanent link">&para;</a></h2>
+<h3 id="f-ds-001-resolved">F-DS-001 — RESOLVED<a class="headerlink" href="#f-ds-001-resolved" title="Permanent link">&para;</a></h3>
+<p>O Operational Flow foi promovido para modelo:</p>
+<div class="highlight"><pre><span></span><code>DESIGNER-FIRST
+→ MANUAL FIRST-CLASS
+
+AI
+→ OPTIONAL
+
+TOOL-SPECIFIC GENERATIVE GATE
+→ REMOVED
+</code></pre></div>
+<h3 id="f-ds-002-resolved">F-DS-002 — RESOLVED<a class="headerlink" href="#f-ds-002-resolved" title="Permanent link">&para;</a></h3>
+<p>O Design Production Release permanece <code>GRANTED</code>, porém agora libera produção externa pela designer sem exigir execução visual pelo GKR.</p>
+<h3 id="f-ds-003-resolved">F-DS-003 — RESOLVED<a class="headerlink" href="#f-ds-003-resolved" title="Permanent link">&para;</a></h3>
+<p><code>GKR-UX-HOME-MALL-MASTER-001 v1.1.1</code> e <code>GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.3</code> absorvem:</p>
+<ul>
+<li>estados semânticos;</li>
+<li>comportamentos;</li>
+<li>navegação;</li>
+<li>contrato para IA;</li>
+<li>critérios objetivos de aceite;</li>
+<li>liberdade criativa.</li>
+</ul>
+<p>A adjudicação histórica permanece proveniência; não é mais necessária para reconstruir essas regras.</p>
+<h3 id="f-ds-004-resolved">F-DS-004 — RESOLVED<a class="headerlink" href="#f-ds-004-resolved" title="Permanent link">&para;</a></h3>
+<p><code>GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3</code> / <code>GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6</code> / <code>GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3</code> e <code>GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7</code> / <code>GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9</code> / <code>GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.10</code> / <code>GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1</code> / <code>GPA-006 v2.0.1</code> foram temporalmente reconciliados com o regime designer-first / IA opcional.</p>
+<h3 id="f-ds-005-resolved-for-v6-contract">F-DS-005 — RESOLVED FOR V6 CONTRACT<a class="headerlink" href="#f-ds-005-resolved-for-v6-contract" title="Permanent link">&para;</a></h3>
+<p>O template comum foi promovido para:</p>
+<div class="highlight"><pre><span></span><code>GKR-UX-HOMES-GENINPUT-001 v2.2.14
+→ TOOL-NEUTRAL
+→ AI OPTIONAL
+→ MANUAL DESIGN DOES NOT REQUIRE GENERATIVE EXECUTION RECORD
+</code></pre></div>
+<p>Os guias v5 permanecem congelados como snapshot histórico. Os guias v6 serão emitidos com linguagem designer-first / AI-optional.</p>
+<h3 id="f-ds-006-closed-abandoned">F-DS-006 — CLOSED / ABANDONED<a class="headerlink" href="#f-ds-006-closed-abandoned" title="Permanent link">&para;</a></h3>
+<p>O artefato Figma experimental anterior permanece fora do corpus, sem autoridade e sem função no handoff.</p>
+<h2 id="101-review-independente-do-candidato-adjudicacao">10.1 Review independente do candidato — adjudicação<a class="headerlink" href="#101-review-independente-do-candidato-adjudicacao" title="Permanent link">&para;</a></h2>
+<p>Review executado sobre o HEAD <code>a3c1d182caa9a63136e97151e3eb5a54a41a97e2</code>:</p>
+<div class="highlight"><pre><span></span><code>REVIEW
+→ 5257833716
+
+P1 — BUSINESS SOURCE LOCK
+→ REMEDIATED
+→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.3
+→ DESIGNER-FIRST / AI-OPTIONAL
+→ NO FROZEN VISUAL REPRESENTATION
+
+P1 — V5 MANIFEST VERSIONS
+→ REMEDIATED
+→ FROZEN V5 ROWS RESTORED TO EMITTED VERSIONS
+→ CURRENT VERSIONS LIVE ONLY IN V6 CANDIDATE
+
+P2 — CURRENT-STATE MASTER VERSIONS
+→ REMEDIATED
+→ TRAVEL = v1.1.1
+→ BUSINESS = v1.1.1
+</code></pre></div>
+<p>As remediações do primeiro review foram validadas em <code>87b460a22ec4ab80cffee58155993977d2732e8c</code> por Semantic #1293 e Mechanical #1522, mas o re-review encontrou dois P1 adicionais.</p>
+<h2 id="102-re-review-independente-adjudicacao-dos-p1-residuais">10.2 Re-review independente — adjudicação dos P1 residuais<a class="headerlink" href="#102-re-review-independente-adjudicacao-dos-p1-residuais" title="Permanent link">&para;</a></h2>
+<p>Re-review executado sobre o HEAD <code>87b460a22ec4ab80cffee58155993977d2732e8c</code>:</p>
+<div class="highlight"><pre><span></span><code>REVIEW
+→ 5257962131
+
+P1 — BUSINESS INTERNAL RECONCILIATION
+→ REMEDIATED
+→ BUSINESS MASTER PIN = v1.1.2
+→ BUSINESS SOURCE LOCK = v1.1.2
+→ OBSOLETE SEPARATE DESIGN AUTHORIZATION REMOVED
+→ INTELLIGENCE MASTER NO LONGER LISTED AS FUTURE GAP
+
+P1 — INTELLIGENCE AUTHORITY / COPY
+→ REMEDIATED
+→ MASTER AUTHORITY ORDER = v0.2.3
+→ SOURCE LOCK = v1.1.2
+→ DESIGN HANDOFF = v1.1.3
+→ QUESTION-MÃE + CTAs = REFERENCE COPY, MICROEDITORIALLY REFINABLE
+→ SEMANTIC INTENT / CLAIM BOUNDARIES REMAIN FROZEN
+</code></pre></div>
+<p>Estas remediações alteram novamente o HEAD. Portanto, o fechamento exige <strong>Semantic + Mechanical no novo HEAD</strong> e <strong>novo review independente limpo</strong>.</p>
+<h2 id="11-estado-candidato">11. Estado candidato<a class="headerlink" href="#11-estado-candidato" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>C1–C15
+→ CANDIDATE PASS
+→ 8 / 8 HOMES
+→ 120 / 120
+
+OPEN MATERIAL FINDINGS
+→ 0 KNOWN AFTER SECOND REMEDIATION
+→ EXACT-HEAD REVALIDATION + RE-REVIEW REQUIRED
+
+DESIGNER CREATIVE FREEDOM
+→ PRESERVED
+
+GKR-CREATED FIGMA
+→ DISCONTINUED
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+V5 SNAPSHOT
+→ FROZEN / HISTORICAL
+
+V6 PACKAGE DEFINITION
+→ NEXT
+
+SEMANTIC / MECHANICAL
+→ REQUIRED ON EXACT FINAL HEAD
+
+INDEPENDENT REVIEW
+→ RE-REVIEW REQUIRED ON EXACT FINAL HEAD
+
+PRODUCT ENGINEERING
+→ PAUSED / NOT RELEASED
+</code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>

@@ -1593,7 +1593,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Prontidão de Produção / Figma e IA
+    Homes — Prontidão de Produção / Designer e IA
   
 
     
@@ -1674,6 +1674,76 @@
   
   
     <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-designer-ai-source-completeness-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Auditoria Final de Fontes / Designer e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-delivery-v6-candidate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Pacote v6 Candidato
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
   
 
   
@@ -3394,10 +3464,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-centro-semantico-congelado" class="md-nav__link">
+  <a href="#5-centro-semantico-congelado-e-copy-de-referencia" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Centro semântico congelado
+        5. Centro semântico congelado e copy de referência
       
     </span>
   </a>
@@ -3532,10 +3602,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-cta-congelado" class="md-nav__link">
+  <a href="#9-ctas-de-referencia-governada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. CTA congelado
+        9. CTAs de referência governada
       
     </span>
   </a>
@@ -3637,10 +3707,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#16-o-que-este-source-lock-nao-autoriza" class="md-nav__link">
+  <a href="#16-limites-procedimentais-deste-source-lock" class="md-nav__link">
     <span class="md-ellipsis">
       
-        16. O que este Source Lock não autoriza
+        16. Limites procedimentais deste Source Lock
       
     </span>
   </a>
@@ -3648,10 +3718,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#17-criterios-para-o-proximo-gate" class="md-nav__link">
+  <a href="#17-contexto-procedimental-corrente" class="md-nav__link">
     <span class="md-ellipsis">
       
-        17. Critérios para o próximo gate
+        17. Contexto procedimental corrente
       
     </span>
   </a>
@@ -3701,65 +3771,60 @@
 <p>Este documento consolida o <strong>Source Lock da Home Pública do Guivos Intelligence v1</strong> após a convergência da arquitetura narrativa em onze movimentos, do Documento Mestre e da correção editorial da copy pública de referência.</p>
 <p>Seu papel é:</p>
 <ul>
-<li>congelar as fontes vigentes que podem governar a futura materialização da Home Intelligence;</li>
+<li>congelar as fontes vigentes que governam a produção externa de Design da Home Intelligence e as futuras etapas autorizadas;</li>
 <li>eliminar ambiguidades entre formulações anteriores e a copy pública efetivamente aprovada;</li>
 <li>registrar as invariantes que não podem ser reinterpretadas por Design, UX, UI, ferramentas generativas ou implementação futura;</li>
 <li>separar claramente o que está congelado do que continua aberto;</li>
 <li>impedir que lacunas visuais, tecnológicas ou operacionais sejam preenchidas por inferência.</li>
 </ul>
-<p>Este Source Lock <strong>não é</strong>:</p>
-<ul>
-<li>autorização de Design;</li>
-<li>wireframe;</li>
-<li>UI;</li>
-<li>protótipo;</li>
-<li>handoff para ferramenta generativa;</li>
-<li>especificação técnica;</li>
-<li>prova de implementação;</li>
-<li>prova de performance;</li>
-<li>autorização de publicação.</li>
-</ul>
+<p>Este Source Lock <strong>não é</strong> o ato que concede Design Release; o release comum vigente já está <code>GRANTED</code> para produção externa pela designer. O Source Lock também não é wireframe, UI, protótipo, ferramenta generativa, especificação técnica, prova de implementação, prova de performance ou autorização de publicação.</p>
 <p>Regra:</p>
 <blockquote>
-<p><strong>Source Lock congela a fonte. Não autoriza, por si só, a materialização.</strong></p>
+<p><strong>Source Lock congela a fonte. O Design externo é regido pelo release comum vigente; implementação e publicação permanecem gates separados.</strong></p>
 </blockquote>
 <h2 id="2-checkpoint-do-source-lock">2. Checkpoint do Source Lock<a class="headerlink" href="#2-checkpoint-do-source-lock" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>HOME
 Guivos Intelligence v1
 
 FASE
-Source Lock pré-Design
+Source Lock reconciliado para handoff designer-first
 
-CHECKPOINT DO GKR
+ORIGIN CHECKPOINT
 main @ 31f985625c312e3d0bdc3836dbf34fa39c762d80
+→ HISTORICAL PROVENANCE
 
 gh-pages
 Deployed 31f985625 with MkDocs 1.6.1
+→ HISTORICAL PROVENANCE
+
+RECONCILIATION
+→ 2026-09-19
+→ CURRENT DESIGNER-FIRST / AI-OPTIONAL CONTRACT APPLIES
 
 DOCUMENTO MESTRE
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7
 
 ARQUITETURA NARRATIVA
-GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1
+GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
 
 PRODUCT SOURCE LOCK
-GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
+GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
 
 ARQUITETURA DE PRODUTO
-GPA-006 v2.0.0
+GPA-006 v2.0.1
 </code></pre></div>
 <p>Objetivo do lock:</p>
 <blockquote>
-<p>preservar uma fonte pública única, coerente e auditável para a futura materialização da Home Intelligence, sem reabrir decisões já validadas nem antecipar tecnologia, Design ou operação ainda não comprovados.</p>
+<p>preservar uma fonte pública única, coerente e auditável para a produção externa vigente de Design da Home Intelligence, sem reabrir decisões já validadas nem antecipar tecnologia ou operação ainda não comprovadas.</p>
 </blockquote>
 <h2 id="3-pacote-de-fontes-autorizado">3. Pacote de fontes autorizado<a class="headerlink" href="#3-pacote-de-fontes-autorizado" title="Permanent link">&para;</a></h2>
-<p>Para qualquer futura materialização da Home Intelligence, o pacote inicial de autoridade deve ser restrito a:</p>
+<p>Para a produção externa de Design da Home Intelligence, o pacote específico de autoridade deve ser restrito a:</p>
 <ol>
 <li><code>GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001</code> — este Source Lock;</li>
-<li><code>GKR-UX-HOME-INTELLIGENCE-MASTER-001</code> v0.1.1 — <code>docs/experience-architecture/public-home-intelligence-master-document.md</code>;</li>
-<li><code>GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001</code> v0.2.1 — <code>docs/experience-architecture/public-home-intelligence-conceptual-architecture.md</code>;</li>
-<li><code>GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001</code> v1.0.0 — <code>docs/product-architecture/intelligence-product-source-lock.md</code>;</li>
-<li><code>GPA-006</code> v2.0.0 — <code>docs/product-architecture/intelligence.md</code>;</li>
+<li><code>GKR-UX-HOME-INTELLIGENCE-MASTER-001</code> v0.2.7 — <code>docs/experience-architecture/public-home-intelligence-master-document.md</code>;</li>
+<li><code>GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001</code> v0.2.3 — <code>docs/experience-architecture/public-home-intelligence-conceptual-architecture.md</code>;</li>
+<li><code>GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001</code> v1.0.1 — <code>docs/product-architecture/intelligence-product-source-lock.md</code>;</li>
+<li><code>GPA-006</code> v2.0.1 — <code>docs/product-architecture/intelligence.md</code>;</li>
 <li><code>GKR-UX-HOMES-OUTCOME-001</code> v1.0.0 — princípio transversal de resultado das Homes.</li>
 </ol>
 <p>Não adicionar automaticamente:</p>
@@ -3782,19 +3847,19 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7
 → governa narrativa pública, copy de referência e fronteiras da Home
 
 NÍVEL 2
-GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1
+GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
 → governa função, ordem e separação dos onze movimentos
 
 NÍVEL 3
-GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
+GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
 → governa a tradução pública permitida da autoridade do produto
 
 NÍVEL 4
-GPA-006 v2.0.0
+GPA-006 v2.0.1
 → governa identidade, unidade de valor, responsabilidades e autoridade do produto
 
 TRANSVERSAL
@@ -3806,7 +3871,7 @@ HISTÓRICO
 → não substitui o estado vigente
 </code></pre></div>
 <p>Se uma formulação histórica divergir da versão vigente do Documento Mestre ou deste Source Lock, prevalece o estado vigente salvo nova decisão explicitamente governada.</p>
-<h2 id="5-centro-semantico-congelado">5. Centro semântico congelado<a class="headerlink" href="#5-centro-semantico-congelado" title="Permanent link">&para;</a></h2>
+<h2 id="5-centro-semantico-congelado-e-copy-de-referencia">5. Centro semântico congelado e copy de referência<a class="headerlink" href="#5-centro-semantico-congelado-e-copy-de-referencia" title="Permanent link">&para;</a></h2>
 <p>Unidade de valor:</p>
 <blockquote>
 <p><strong>compreensão útil e contextualizada.</strong></p>
@@ -3815,10 +3880,11 @@ HISTÓRICO
 <blockquote>
 <p><strong>Compreender melhor amplia o que você consegue perceber.</strong></p>
 </blockquote>
-<p>Pergunta-mãe:</p>
+<p>Pergunta-mãe de referência:</p>
 <blockquote>
 <p><strong>O que se torna possível quando você compreende melhor o que está acontecendo?</strong></p>
 </blockquote>
+<p>A formulação da pergunta-mãe pode receber refinamento microeditorial pela designer, desde que preserve significado, autoridade, fronteira e o contrato <code>COMPREENDER ≠ DECIDIR</code>.</p>
 <p>Expressão de apoio inicial:</p>
 <blockquote>
 <p><strong>Entenda melhor o que está acontecendo. Amplie o que você consegue perceber.</strong></p>
@@ -3904,7 +3970,7 @@ M04
 M05
 → DEMONSTRA OS RESULTADOS
 </code></pre></div>
-<p>A futura materialização pode agrupar movimentos, desde que preserve significado, sequência de compreensão e capacidade de reconhecimento de cada função.</p>
+<p>A materialização de Design pode agrupar movimentos, desde que preserve significado, sequência de compreensão e capacidade de reconhecimento de cada função.</p>
 <h2 id="8-copy-publica-congelada-semanticamente">8. Copy pública congelada semanticamente<a class="headerlink" href="#8-copy-publica-congelada-semanticamente" title="Permanent link">&para;</a></h2>
 <h3 id="movimento-02">Movimento 02<a class="headerlink" href="#movimento-02" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -3948,7 +4014,7 @@ Até onde essa leitura pode ir?
 <p><strong>Ao perceber relações, repetições e mudanças com mais contexto, você pode reconhecer sinais mais cedo e ampliar o que consegue considerar.</strong></p>
 </blockquote>
 <p>As formulações podem receber ajustes microeditoriais no Design posterior somente quando preservarem exatamente seu significado, autoridade e claim.</p>
-<h2 id="9-cta-congelado">9. CTA congelado<a class="headerlink" href="#9-cta-congelado" title="Permanent link">&para;</a></h2>
+<h2 id="9-ctas-de-referencia-governada">9. CTAs de referência governada<a class="headerlink" href="#9-ctas-de-referencia-governada" title="Permanent link">&para;</a></h2>
 <p>CTA principal:</p>
 <blockquote>
 <p><strong>Veja o que suas informações podem mostrar</strong></p>
@@ -3957,7 +4023,8 @@ Até onde essa leitura pode ir?
 <blockquote>
 <p><strong>Conheça o Guivos Intelligence</strong></p>
 </blockquote>
-<p>O CTA não pode prometer:</p>
+<p>As formulações dos CTAs podem receber refinamento microeditorial pela designer. O que permanece congelado é sua <strong>intenção semântica e limite de claim</strong>, não a redação literal.</p>
+<p>Os CTAs não podem prometer:</p>
 <ul>
 <li>futuro conhecido;</li>
 <li>resposta certa;</li>
@@ -4000,7 +4067,7 @@ EMPRESA
 <p><strong>A Empresa não recebe Intelligence individual por funcionário nem acesso à intimidade individual da Journey.</strong></p>
 </blockquote>
 <h2 id="11-direcao-visual-permitida">11. Direção visual permitida<a class="headerlink" href="#11-direcao-visual-permitida" title="Permanent link">&para;</a></h2>
-<p>A futura materialização pode demonstrar:</p>
+<p>A materialização de Design pode demonstrar:</p>
 <ul>
 <li>conexões;</li>
 <li>repetições;</li>
@@ -4122,18 +4189,12 @@ RECOMENDAÇÃO ≠ ORDEM
 <li>microcopy que não altere significado;</li>
 <li>ordem interna de exemplos dentro de um mesmo movimento.</li>
 </ul>
-<p>Essas liberdades só se tornam executáveis após Handoff/Design explicitamente autorizado.</p>
-<h2 id="16-o-que-este-source-lock-nao-autoriza">16. O que este Source Lock não autoriza<a class="headerlink" href="#16-o-que-este-source-lock-nao-autoriza" title="Permanent link">&para;</a></h2>
-<p>A integração deste artefato não autoriza automaticamente:</p>
+<p>Essas liberdades são exercidas pela designer dentro do regime comum designer-first. O Source Lock define limites semânticos; não define forma visual.</p>
+<h2 id="16-limites-procedimentais-deste-source-lock">16. Limites procedimentais deste Source Lock<a class="headerlink" href="#16-limites-procedimentais-deste-source-lock" title="Permanent link">&para;</a></h2>
+<p>Este Source Lock não concede, por si só, autoridade para:</p>
 <ul>
-<li>atualização do Handoff Canônico;</li>
-<li>Design;</li>
-<li>Figma Make;</li>
-<li>ferramenta generativa;</li>
-<li>wireframe;</li>
-<li>UI;</li>
-<li>protótipo;</li>
 <li>implementação front-end ou back-end;</li>
+<li>Product Engineering;</li>
 <li>publicação comercial;</li>
 <li>Marketing/GTM;</li>
 <li>pricing;</li>
@@ -4141,13 +4202,14 @@ RECOMENDAÇÃO ≠ ORDEM
 <li>promoção silenciosa de maturidade técnica;</li>
 <li>alteração de <code>GKR-STATE-001</code> ou Roadmap sem sincronização transversal autorizada.</li>
 </ul>
-<h2 id="17-criterios-para-o-proximo-gate">17. Critérios para o próximo gate<a class="headerlink" href="#17-criterios-para-o-proximo-gate" title="Permanent link">&para;</a></h2>
-<p>Antes de iniciar Design, o futuro Handoff deve preservar:</p>
+<p>O início da fase externa de Design é governado pelas autoridades comuns posteriores. No regime corrente, <code>DESIGN PRODUCTION RELEASE = GRANTED</code>, a designer é a autora criativa e IA é opcional.</p>
+<h2 id="17-contexto-procedimental-corrente">17. Contexto procedimental corrente<a class="headerlink" href="#17-contexto-procedimental-corrente" title="Permanent link">&para;</a></h2>
+<p>O Handoff específico e as autoridades comuns devem preservar:</p>
 <ul>
 <li>o pacote de fontes deste Source Lock;</li>
 <li>a arquitetura em onze movimentos;</li>
 <li>a copy pública vigente;</li>
-<li>os CTAs congelados;</li>
+<li>a intenção semântica dos CTAs e seus limites de claim;</li>
 <li>as duas frentes e suas autoridades;</li>
 <li><code>M03 ≠ M10</code>;</li>
 <li><code>M04 ≠ M05</code>;</li>
@@ -4155,11 +4217,22 @@ RECOMENDAÇÃO ≠ ORDEM
 <li>exemplos analíticos como demonstração, não prova;</li>
 <li>todos os guardrails de privacidade, causalidade, previsão e autonomia.</li>
 </ul>
-<p>Próximo ponto elegível após a integração deste Source Lock:</p>
-<blockquote>
-<p><strong>Handoff controlado da Home Pública Guivos Intelligence v1 para Design</strong>, mediante autorização separada.</p>
-</blockquote>
-<p>Nenhuma etapa autoriza automaticamente a seguinte.</p>
+<div class="highlight"><pre><span></span><code>GKR-UX-HOMES-DESIGN-HANDOFF-001
+→ DESIGNER-FIRST
+
+GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+→ DESIGN PRODUCTION RELEASE = GRANTED
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+GKR-CREATED DESIGN / FIGMA
+→ NONE
+
+NEXT GLOBAL GATE
+→ V6 EXACT-HEAD VALIDATION / REVIEW / SNAPSHOT GOVERNANCE
+</code></pre></div>
+<p>Nenhuma etapa documental autoriza Product Engineering automaticamente.</p>
 
 
 

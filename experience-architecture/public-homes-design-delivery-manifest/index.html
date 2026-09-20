@@ -16,7 +16,7 @@
         <link rel="prev" href="../public-homes-design-production-release/">
       
       
-        <link rel="next" href="../public-homes-design-delivery-operational-flow/">
+        <link rel="next" href="../public-homes-designer-ai-source-completeness-audit/">
       
       
         
@@ -1599,7 +1599,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Prontidão de Produção / Figma e IA
+    Homes — Prontidão de Produção / Designer e IA
   
 
     
@@ -1971,6 +1971,76 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-designer-ai-source-completeness-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Auditoria Final de Fontes / Designer e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-delivery-v6-candidate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Pacote v6 Candidato
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
     </li>
   
 
@@ -3913,7 +3983,7 @@
 
 <h1 id="homes-publicas-manifesto-canonico-de-entrega-para-design">Homes Públicas — Manifesto Canônico de Entrega para Design<a class="headerlink" href="#homes-publicas-manifesto-canonico-de-entrega-para-design" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este Manifesto define o pacote externo v5 emitido para a frente de Design agora liberada, preservando o snapshot materializado e os gates posteriores internos de direção e aceite.</p>
+<p>Este Manifesto registra o pacote externo v5 já emitido e congelado e aponta para o pacote v6 candidato atualmente em finalização documental. O v5 permanece reproduzível como snapshot histórico; novas execuções devem aguardar a adjudicação do v6.</p>
 <p>O snapshot v4 permanece histórico e reproduzível, mas não é pacote atual porque seu checkpoint foi superado.</p>
 <h2 id="2-principio-do-v5">2. Princípio do v5<a class="headerlink" href="#2-principio-do-v5" title="Permanent link">&para;</a></h2>
 <p>O v5 elimina GENINPUTs operacionais de checkpoints superados do pacote de produção. Em seu lugar, cada Home recebe um <code>LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL</code> gerado no momento da emissão a partir das autoridades pós-auditoria.</p>
@@ -3948,12 +4018,12 @@
 </ol>
 <h3 id="36-media">3.6 Media<a class="headerlink" href="#36-media" title="Permanent link">&para;</a></h3>
 <ol>
-<li><code>docs/experience-architecture/public-home-media-master-document.md</code> — <code>GKR-UX-HOME-MEDIA-MASTER-001 v1.0.0</code>;</li>
+<li><code>docs/experience-architecture/public-home-media-master-document.md</code> — <code>GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1</code>;</li>
 <li><code>docs/product-architecture/media.md</code> — <code>GPA-005 v1.2.0</code>.</li>
 </ol>
 <h3 id="37-ads">3.7 Ads<a class="headerlink" href="#37-ads" title="Permanent link">&para;</a></h3>
 <ol>
-<li><code>docs/experience-architecture/public-home-ads-master-document.md</code> — <code>GKR-UX-HOME-ADS-MASTER-001 v1.0.0</code>;</li>
+<li><code>docs/experience-architecture/public-home-ads-master-document.md</code> — <code>GKR-UX-HOME-ADS-MASTER-001 v1.0.1</code>;</li>
 <li><code>docs/product-architecture/ads.md</code> — <code>GPA-007 v1.3.0</code>.</li>
 </ol>
 <h3 id="38-business">3.8 Business<a class="headerlink" href="#38-business" title="Permanent link">&para;</a></h3>
@@ -3983,7 +4053,7 @@
 <li>liberdades criativas;</li>
 <li>matriz das oito classes operacionais de informação;</li>
 <li>proibições de inferência;</li>
-<li>prompt inicial para Figma Make;</li>
+<li>prompt inicial histórico do v5 para ferramenta generativa; no v6, o guia será tool-neutral e IA será opcional;</li>
 <li>estado inicial <code>EXPLORAÇÃO / NÃO CANÔNICA</code>;</li>
 <li>checklist de autoauditoria.</li>
 </ul>
@@ -4030,7 +4100,7 @@ MATERIAL CHANGE TO MEANING / INVARIANT / COPY LOCK / SOURCE PACKAGE / PROMPT / A
 → AFFECTED HOME PACKAGE INVALIDATED FOR NEW EXECUTION
 → REISSUE / REVALIDATE BEFORE CONTINUING
 </code></pre></div>
-<p>Uma alteração criativa no Figma que não modifica o contrato do GKR não exige reemissão do pacote fonte.</p>
+<p>Uma alteração puramente criativa da designer, em qualquer ferramenta, que não modifica o contrato do GKR não exige reemissão do pacote fonte.</p>
 <h2 id="6-regra-para-ferramentas-generativas">6. Regra para ferramentas generativas<a class="headerlink" href="#6-regra-para-ferramentas-generativas" title="Permanent link">&para;</a></h2>
 <p>Não carregar documentos específicos de múltiplas Homes na mesma execução.</p>
 <p>O contexto de cada execução deve ser:</p>
@@ -4076,11 +4146,16 @@ SNAPSHOT
 DESIGN PRODUCTION RELEASE
 → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.0.0
 
-FIGMA MAKE
-→ AUTHORIZED TO EXECUTE / NOT_STARTED
+EXTERNAL DESIGNER PRODUCTION
+→ DESIGN PRODUCTION RELEASE GRANTED
+→ MANUAL FIRST-CLASS
 
-FINAL FIGMA
-→ NOT_RELEASED / REQUIRES HUMAN DIRECTION APPROVAL
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+V6 PACKAGE
+→ CANDIDATE DEFINED
+→ SNAPSHOT NOT EMITTED
 </code></pre></div>
 
 

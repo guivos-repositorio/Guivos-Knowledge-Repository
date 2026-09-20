@@ -680,7 +680,7 @@
 <span class="md-ellipsis">
     
   
-    Homes — Prontidão de Produção / Figma e IA
+    Homes — Prontidão de Produção / Designer e IA
   
 
     
@@ -712,6 +712,32 @@
     
   </span>
 <span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../public-homes-designer-ai-source-completeness-audit/">
+<span class="md-ellipsis">
+    
+  
+    Homes — Auditoria Final de Fontes / Designer e IA
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../public-homes-design-delivery-v6-candidate/">
+<span class="md-ellipsis">
+    
+  
+    Homes — Pacote v6 Candidato
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
 </a>
 </li>
 <li class="md-nav__item">
@@ -1469,7 +1495,7 @@
 <h1 id="home-publica-guivos-intelligence-v1-arquitetura-conceitual-movimentos-111">Home Pública — Guivos Intelligence v1 — Arquitetura Conceitual — Movimentos 1–11<a class="headerlink" href="#home-publica-guivos-intelligence-v1-arquitetura-conceitual-movimentos-111" title="Permanent link">¶</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">¶</a></h2>
 <p>Este documento preserva a <strong>arquitetura conceitual completa da Home Pública do Guivos Intelligence v1</strong> após a integração de <code>GPA-006 2.0.0</code>, do <code>GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 1.0.0</code>, do princípio transversal <code>GKR-UX-HOMES-OUTCOME-001 1.0.0</code> e da convergência em conversa dos <strong>Movimentos 01–11</strong>.</p>
-<p>A versão <code>0.2.1</code> corrige a camada editorial de <code>0.2.0</code> para refletir a copy de referência efetivamente aprovada em conversa, sem alterar a quantidade de movimentos, a arquitetura, as autoridades, as fronteiras ou os guardrails já convergidos.</p>
+<p>A versão <code>0.2.1</code> corrigiu a camada editorial de <code>0.2.0</code>. A versão <code>0.2.2</code> reconcilia somente o <strong>estado temporal de consumo</strong> com as autoridades posteriores já existentes, sem alterar a quantidade de movimentos, a arquitetura narrativa, as fronteiras, os guardrails ou a intenção semântica convergida.</p>
 <p>Este documento <strong>não é</strong>:</p>
 <ul>
 <li>Source Lock da Home;</li>
@@ -1485,29 +1511,42 @@
 </ul>
 <p>As formulações textuais preservadas aqui são <strong>copy de referência convergida</strong>. Sua função é manter significado, intenção, progressão, fronteiras e guardrails até a próxima etapa governada.</p>
 <h2 id="2-estado-da-frente">2. Estado da frente<a class="headerlink" href="#2-estado-da-frente" title="Permanent link">¶</a></h2>
-<div class="highlight"><pre><span></span><code>GPA-006 v2.0.0
-→ INTEGRADO
+<p>A arquitetura abaixo nasceu antes da criação do Home Source Lock e do Handoff. Esse estado de origem permanece apenas como proveniência histórica; o consumo corrente deve usar a cadeia vigente abaixo.</p>
+<div class="highlight"><pre><span></span><code>GPA-006
+→ v2.0.1 / CURRENT
 
 SOURCE LOCK DO PRODUTO
-→ GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.0
-→ INTEGRADO
+→ GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
+→ CURRENT
 
 HOME INTELLIGENCE v1
 → ARQUITETURA CONCEITUAL COMPLETA
 → 11 MOVIMENTOS CONVERGIDOS
 
 ARQUITETURA NARRATIVA
-→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.1
-→ COPY DE REFERÊNCIA CORRIGIDA
+→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
+→ CURRENT NARRATIVE REFERENCE
 
 DOCUMENTO MESTRE DA HOME
-→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001
+→ EXISTS / CURRENT
+→ EXACT CURRENT VERSION PINNED BY V6 CANDIDATE
 
 SOURCE LOCK DA HOME
-→ NÃO CRIADO
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
+→ EXISTS / ACTIVE / NORMATIVE
+→ EXACT CURRENT VERSION PINNED BY V6 CANDIDATE
 
-DESIGN / UI / PROTÓTIPO
-→ NÃO INICIADOS NESTE FLUXO
+DESIGN HANDOFF
+→ GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
+→ EXISTS / ACTIVE
+→ EXACT CURRENT VERSION PINNED BY V6 CANDIDATE
+
+EXTERNAL DESIGN RELEASE
+→ GRANTED BY COMMON AUTHORITY
+
+PRODUCT ENGINEERING / IMPLEMENTATION / PUBLICATION
+→ NOT RELEASED
 </code></pre></div>
 <h2 id="3-intencao-propria-da-home-intelligence">3. Intenção própria da Home Intelligence<a class="headerlink" href="#3-intencao-propria-da-home-intelligence" title="Permanent link">¶</a></h2>
 <p>A Home do Guivos Intelligence não pode funcionar como uma segunda Home do Journey, do Business ou de qualquer outro produto.</p>
@@ -2186,30 +2225,28 @@ PERSONALIZAR ≠ EXPOR
 <p>Não há Movimento 12 previsto neste checkpoint.</p>
 <p>O Movimento 11 cumpre a função de fechamento aspiracional da narrativa sem introduzir nova autoridade de produto.</p>
 <h2 id="35-relacao-com-o-documento-mestre">35. Relação com o Documento Mestre<a class="headerlink" href="#35-relacao-com-o-documento-mestre" title="Permanent link">¶</a></h2>
-<p>A síntese governada desta arquitetura é consolidada em:</p>
-<p><code>GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1</code></p>
+<p>A síntese governada desta arquitetura é consolidada atualmente em:</p>
+<p><code>GKR-UX-HOME-INTELLIGENCE-MASTER-001</code>, na revisão corrente pinada pelo candidato v6</p>
 <p>O Documento Mestre não substitui <code>GPA-006</code> nem o Product Source Lock. Ele organiza a tradução da autoridade do produto para a Home Pública.</p>
-<h2 id="36-proximo-ponto-exato">36. Próximo ponto exato<a class="headerlink" href="#36-proximo-ponto-exato" title="Permanent link">¶</a></h2>
-<p>Após a integração desta correção editorial na arquitetura e no Documento Mestre, o próximo artefato elegível continua sendo o <strong>Source Lock da Home Pública Guivos Intelligence v1</strong>.</p>
-<p>Ainda permanecem fora desta versão:</p>
+<h2 id="36-estado-corrente-de-progressao">36. Estado corrente de progressão<a class="headerlink" href="#36-estado-corrente-de-progressao" title="Permanent link">¶</a></h2>
+<p>O fluxo pré-Home que originalmente sucedia esta arquitetura foi concluído por autoridades posteriores. Ele não deve ser reexecutado por quem consumir esta Narrative no pacote v6.</p>
+<p>Estado vigente:</p>
 <ul>
-<li>Home Source Lock;</li>
-<li>copy final imutável;</li>
-<li>CTA principal e secundário congelados;</li>
-<li>wireframe;</li>
-<li>UI;</li>
-<li>protótipo;</li>
-<li>Design Handoff;</li>
-<li>prova de operação;</li>
-<li>promoção global silenciosa.</li>
+<li>Home Source Lock → <code>GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001</code> / existe / ativo / normativo / revisão corrente pinada pelo candidato v6;</li>
+<li>Design Handoff → <code>GKR-UX-HOME-INTELLIGENCE-HANDOFF-001</code> / existe / ativo / revisão corrente pinada pelo candidato v6;</li>
+<li>produção externa de Design → <code>GRANTED</code> pela autoridade comum;</li>
+<li>designer → autora criativa;</li>
+<li>IA → opcional e controlada pela designer;</li>
+<li>implementação, publicação e Product Engineering → não liberados.</li>
 </ul>
 <pre class="mermaid"><code>flowchart TD
-    A[11 movimentos\nconvergidos] --&gt; B[Arquitetura narrativa\nv0.2.1]
-    B --&gt; C[Documento Mestre\nv0.1.1]
-    C --&gt; D[Home Source Lock\npróximo ponto]
-    D --&gt; E[Handoff / Design controlado]
+    A[11 movimentos\nconvergidos] --&gt; B[Arquitetura narrativa\nv0.2.3]
+    B --&gt; C[Documento Mestre\nrevisão corrente]
+    C --&gt; D[Home Source Lock\nrevisão corrente]
+    D --&gt; E[Design Handoff\nrevisão corrente]
+    E --&gt; F[External Design Release\nGRANTED]
 </code></pre>
-<p>Nenhuma etapa autoriza automaticamente a seguinte.</p>
+<p>A sequência acima descreve o estado documental já alcançado; <strong>não</strong> constitui autorização automática para implementação, publicação ou Product Engineering.</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

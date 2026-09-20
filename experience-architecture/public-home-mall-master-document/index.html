@@ -1599,7 +1599,7 @@
   <span class="md-ellipsis">
     
   
-    Homes — Prontidão de Produção / Figma e IA
+    Homes — Prontidão de Produção / Designer e IA
   
 
     
@@ -1680,6 +1680,76 @@
   
   
     <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-designer-ai-source-completeness-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Auditoria Final de Fontes / Designer e IA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public-homes-design-delivery-v6-candidate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homes — Pacote v6 Candidato
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
   
 
   
@@ -3562,7 +3632,7 @@
 <p>Este documento consolida a arquitetura estratégica, narrativa e funcional da <strong>Home Pública do Guivos Mall</strong>.</p>
 <p>A Home do Mall é uma apresentação pública especializada de uma capacidade da Guivos. Ela deve preservar a percepção da Guivos como um ecossistema maior do que a soma de seus produtos e, ao mesmo tempo, permitir que a experiência se torne comercial de forma natural quando a pessoa estiver pronta para explorar produtos, serviços, Gift Cards, ofertas e demais possibilidades disponíveis.</p>
 <p>Este documento governa <strong>somente a Home do Guivos Mall</strong>.</p>
-<p>Ele não materializa wireframe, UI, protótipo, frontend, backend ou implementação e não autoriza automaticamente nenhuma dessas etapas.</p>
+<p>Este Master não cria por si só implementação ou publicação. A produção externa de Design da Home Mall — incluindo wireframe, UI e protótipo — está autorizada pelo release comum vigente e permanece sob autoria criativa da designer.</p>
 <h2 id="2-premissa-central">2. Premissa central<a class="headerlink" href="#2-premissa-central" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><strong>O Guivos Mall não é a Guivos transformada em e-commerce. É uma das capacidades do ecossistema Guivos, tornando produtos, serviços, presentes e outras possibilidades comercialmente acessíveis quando fizerem sentido na vida das pessoas.</strong></p>
@@ -4139,9 +4209,106 @@ checkout
 <li>protege transparência entre destaque, recomendação, oferta e patrocínio;</li>
 <li>estabelece prova e confiança sem alegações artificiais de escala;</li>
 <li>mantém Página de Produto, Perfil, Carrinho e Checkout fora do escopo;</li>
-<li>não autoriza wireframe, protótipo, UI ou implementação.</li>
+<li>governa significado e fronteiras sem prescrever identidade visual;</li>
+<li>permite produção externa de wireframe, protótipo e UI sob o release comum vigente;</li>
+<li>não libera implementação, publicação ou superfícies internas fora do escopo.</li>
 </ul>
-<p>Qualquer materialização posterior requer decisão própria e não decorre automaticamente da existência deste documento.</p>
+<p>Nenhuma decisão adicional é necessária para a designer iniciar ou continuar a criação da Home pública Mall. Implementação, publicação e superfícies internas continuam sujeitas às autoridades próprias.</p>
+<hr />
+<h2 id="35-contrato-deterministico-de-consumo-para-designer-e-ia">35. Contrato determinístico de consumo para Designer e IA<a class="headerlink" href="#35-contrato-deterministico-de-consumo-para-designer-e-ia" title="Permanent link">&para;</a></h2>
+<p>Esta seção absorve no próprio Master as regras antes preservadas apenas em <code>GKR-HOME-MASTERS-REMEDIATION-001</code>.</p>
+<p>Ela não define layout, estética ou implementação.</p>
+<h3 id="351-estados-semanticos-obrigatorios">35.1 Estados semânticos obrigatórios<a class="headerlink" href="#351-estados-semanticos-obrigatorios" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>MALL-HS-01 — BASELINE_PUBLIC
+→ tese, pergunta-mãe, identidade Guivos e arquitetura de descoberta permanecem válidas independentemente de campanhas ou dados comerciais dinâmicos
+
+MALL-HS-02 — COMMERCIAL_DATA_AVAILABLE
+→ produto, oferta, preço, preço em pontos, marca ou parceiro só podem aparecer quando sustentados por fonte/autoridade aplicável
+
+MALL-HS-03 — COMMERCIAL_DATA_UNAVAILABLE_OR_ERROR
+→ ausência, erro ou indisponibilidade não podem ser convertidos em oferta, estoque, preço, elegibilidade ou parceria fictícios
+→ tratamento visual/copy de fallback permanece DESIGN_CREATIVE / CONTENT_CANDIDATE dentro das fronteiras
+
+MALL-HS-04 — CAMPAIGN_ACTIVE
+→ campanha pode alterar camada comercial temporária
+→ não redefine pergunta-mãe nem transforma promoção em identidade permanente
+
+MALL-HS-05 — PERSONALIZATION_AUTHORIZED
+→ “recomendado para você” exige base legítima, finalidade e regras aplicáveis
+→ sem essa base, usar descoberta/curadoria geral sem alegar personalização
+
+MALL-HS-06 — SPONSORED_EXPOSURE
+→ exposição paga permanece identificada
+→ não assume aparência de recomendação orgânica
+</code></pre></div>
+<h3 id="352-comportamentos-e-interacoes">35.2 Comportamentos e interações<a class="headerlink" href="#352-comportamentos-e-interacoes" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>Shopping</code> e <code>Gift Cards</code> permanecem portas distintas e atuais do Mall.</li>
+<li>Busca direta permanece conceitualmente disponível para quem já sabe o que procura; sua implementação não é definida aqui.</li>
+<li>Produto/oferta exibido pode iniciar outra experiência, mas detalhe, Perfil, Carrinho, Checkout, pedido e pós-compra começam fora da Home.</li>
+<li>Saldo global da Pessoa pertence ao contexto de conta/Perfil; preço em pontos pertence à oferta elegível.</li>
+<li><code>Programa de Pontos</code> e <code>Gift Card Guivos</code> permanecem distintos.</li>
+<li>Recomendação, destaque, oferta e patrocínio não podem ser fundidos.</li>
+<li>Campanha comercial não elimina a camada permanente de significado e confiança.</li>
+</ol>
+<h3 id="353-navegacao-governada">35.3 Navegação governada<a class="headerlink" href="#353-navegacao-governada" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>GUIVOS
+→ retorno à Home principal
+
+MALL
+→ identificação da especialidade atual
+
+SHOPPING
+→ universo comercial de produtos
+
+GIFT CARDS
+→ universo de vouchers, serviços, experiências e presentes
+
+BUSCAR
+→ acesso estrutural à descoberta direta
+
+PERFIL / CARRINHO
+→ acessos globais admitidos no Header
+→ comportamento interno fora do escopo deste Master
+</code></pre></div>
+<p>A existência conceitual desses acessos não prova rota, URL, componente, disponibilidade técnica ou comportamento implementado.</p>
+<h3 id="354-contrato-para-ia-e-desenvolvimento-futuro">35.4 Contrato para IA e desenvolvimento futuro<a class="headerlink" href="#354-contrato-para-ia-e-desenvolvimento-futuro" title="Permanent link">&para;</a></h3>
+<p>É proibido inferir ou fabricar:</p>
+<ul>
+<li>catálogo, estoque, preço, desconto, disponibilidade ou elegibilidade;</li>
+<li>parceiro institucional a partir da mera presença de marca/oferta;</li>
+<li>pagamento híbrido, taxa de conversão ou regra econômica não autorizada;</li>
+<li>mecânica de Perfil, Carrinho, Checkout ou página de produto;</li>
+<li>recomendação personalizada sem base, finalidade e autoridade aplicáveis;</li>
+<li>escala, liderança, segurança ou melhor preço sem evidência;</li>
+<li>decisão visual final a partir deste contrato.</li>
+</ul>
+<h3 id="355-criterios-objetivos-de-aceite-semantico">35.5 Critérios objetivos de aceite semântico<a class="headerlink" href="#355-criterios-objetivos-de-aceite-semantico" title="Permanent link">&para;</a></h3>
+<p>Um artefato derivado é semanticamente aceitável somente se:</p>
+<ol>
+<li>preserva a pergunta-mãe e a progressão em onze movimentos sem obrigar onze seções visuais;</li>
+<li>mantém <code>Mall = capacidade da Guivos</code>, não marca/ecossistema independente;</li>
+<li>permite descoberta e acesso direto sem percurso narrativo obrigatório;</li>
+<li>preserva <code>Home ≠ páginas internas</code>;</li>
+<li>separa destaque, recomendação, oferta e patrocínio;</li>
+<li>exibe dados comerciais somente quando sustentados;</li>
+<li>não cria regra econômica ou estado operacional inexistente;</li>
+<li>preserva autonomia da Pessoa e ausência de manipulação como regra;</li>
+<li>mantém <code>MALL-HS-01..06</code> semanticamente distinguíveis;</li>
+<li>não transforma este Master em direção visual.</li>
+</ol>
+<h3 id="356-liberdade-criativa">35.6 Liberdade criativa<a class="headerlink" href="#356-liberdade-criativa" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>CANONICAL
+→ significado / estados / relações / limites acima
+
+DESIGN_CREATIVE
+→ tipografia / cor / imagem / composição / grid / motion / componentes / ritmo / atmosfera
+
+AI
+→ OPTIONAL TOOL
+→ MAY PROPOSE
+→ MAY NOT INVENT FACTS OR PRODUCT RULES
+</code></pre></div>
 
 
 
