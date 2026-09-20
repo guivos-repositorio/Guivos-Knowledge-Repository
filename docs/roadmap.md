@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.47.23
+id: ROADMAP-13.47.24
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.47.23
+version: 13.47.24
 owner: Guivos
 last_updated: 2026-09-20
 normative: true
@@ -1964,8 +1964,9 @@ Sequência governada atual:
 26. revalidar e integrar candidato v7 — CONCLUÍDO / 29 OF 29 SOURCES CONFIRMED / FINAL Semantic #1463 + Mechanical #1689 = SUCCESS / CODEX CLEAN ON 0418b219d4d4a746498cf8b8032b5018f333e29e / PR #405 MERGED @ 574814b561a933291fd3e7539f814f4187398277 / POST-MERGE SOURCE PIN RECHECK = 29 OF 29 EXACT MATCH / delivery/design-handoff-v7 NOT PRESENT;
 27. decidir separadamente materialização do v7 — CONCLUÍDO / ATO HUMANO EXPLÍCITO AUTORIZADO / SNAPSHOT MATERIALIZED + INTEGRITY-VALIDATED / branch `delivery/design-handoff-v7` / commit `564a2656332dffeb4779ca20ee1ce6697abaa06d` / tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`;
 28. registrar e validar a emissão v7 na documentação canônica do `main` — REVIEW ENCONTROU P1 + P2 VÁLIDOS / V7 NÃO PROMOVÍVEL COMO CURRENT / SNAPSHOT NÃO DEVE SER MUTADO;
-29. reconciliar autoridades comuns para não congelar estado transitório de pacote — CONCLUÍDO DOCUMENTALMENTE / HANDOFF v1.6.4 + GENINPUT v2.2.16 + READINESS v1.2.16 + FLOW v3.0.3 + RELEASE v1.2.1 / FINAL REVALIDATION PENDING;
-30. após integração da remediação, preparar nova reemissão/revalidação — PENDENTE / MATERIALIZAÇÃO EXIGE ATO HUMANO SEPARADO.
+29. reconciliar autoridades comuns para não congelar estado transitório de pacote — SEGUNDO RE-REVIEW ENCONTROU P1 RESIDUAL / REMEDIADO COM HANDOFF v1.6.5 + GENINPUT v2.2.17 + READINESS v1.2.17 + FLOW v3.0.3 + RELEASE v1.2.1 / PACKAGE STATE FULLY DELEGATED TO MANIFEST + CURRENT STATE / FINAL REVALIDATION PENDING;
+30. corrigir proveniência v7 residual que ainda chamava snapshot histórico de corrente — CONCLUÍDO / CANDIDATE v0.3.2;
+31. após integração da remediação, preparar nova reemissão/revalidação — PENDENTE / MATERIALIZAÇÃO EXIGE ATO HUMANO SEPARADO.
 
 ```text
 V5 SNAPSHOT
