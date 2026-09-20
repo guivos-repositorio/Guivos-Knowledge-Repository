@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 title: Homes Públicas — Auditoria Final de Completude das Fontes para Designer e IA
 status: draft
-version: 0.4.7
+version: 0.4.8
 owner: Experience Architecture
 last_updated: 2026-09-19
 normative: false
@@ -142,7 +142,7 @@ Uma Home somente pode ser considerada pronta para entrega à designer quando seu
 | Media | `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1` | RECONCILED |
 | Ads | `GKR-UX-HOME-ADS-MASTER-001 v1.0.1` | RECONCILED |
 | Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` + `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6` + `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` | RECONCILED |
-| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5` + `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.2` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.6` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.7` + `GKR-UX-HOMES-OUTCOME-001 v1.0.0` + `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` + `GPA-006 v2.0.1` | RECONCILED |
+| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.6` + `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.2` + `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.7` + `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.8` + `GKR-UX-HOMES-OUTCOME-001 v1.0.0` + `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` + `GPA-006 v2.0.1` | RECONCILED |
 
 ## 6. Findings iniciais comprovados
 
@@ -554,6 +554,27 @@ P1 — COMMON SOURCE CONTRACT
 
 As três correções são de sincronização documental. A identidade do produto, a liberdade criativa da designer, o caráter opcional da IA, o v5 congelado e o boundary de Product Engineering permanecem inalterados.
 
+## 9.9 Re-review independente no HEAD `b4785bc2fa52fafbfaaf38f6d8a7689a692015b2` — um P1 e um P2 residuais
+
+O re-review independente encontrou dois resíduos de sincronização:
+
+```text
+P1 — REMAINING CURRENT NARRATIVE PINS
+→ REMEDIATED
+→ MASTER = v0.2.6
+→ NARRATIVE PIN = v0.2.2
+→ SOURCE LOCK = v1.1.7
+→ HANDOFF = v1.1.8
+
+P2 — EXPERIENCE ARCHITECTURE V6 COUNT
+→ REMEDIATED
+→ 29 CANONICAL SOURCES
+→ 8 READ-FIRST GUIDES
+→ 37 EXTERNAL FILES
+```
+
+A correção fecha apenas referências correntes residuais; não altera o v5 histórico nem o conteúdo semântico de Intelligence.
+
 ## 10. Remediações aplicadas
 
 ### F-DS-001 — RESOLVED
@@ -590,14 +611,14 @@ A adjudicação histórica permanece proveniência; não é mais necessária par
 
 ### F-DS-004 — RESOLVED
 
-`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6` / `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.5` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.6` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.7` / `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` / `GPA-006 v2.0.1` foram temporalmente reconciliados com o regime designer-first / IA opcional.
+`GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3` / `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6` / `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` e `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.6` / `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.7` / `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.8` / `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` / `GPA-006 v2.0.1` foram temporalmente reconciliados com o regime designer-first / IA opcional.
 
 ### F-DS-005 — RESOLVED FOR V6 CONTRACT
 
 O template comum foi promovido para:
 
 ```text
-GKR-UX-HOMES-GENINPUT-001 v2.2.11
+GKR-UX-HOMES-GENINPUT-001 v2.2.12
 → TOOL-NEUTRAL
 → AI OPTIONAL
 → MANUAL DESIGN DOES NOT REQUIRE GENERATIVE EXECUTION RECORD
