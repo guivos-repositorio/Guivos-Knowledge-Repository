@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 6.3.1
+version: 6.3.2
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: true
@@ -31,7 +31,7 @@ Este Manifesto governa a emissão externa das oito Homes públicas para criaçã
 
 O snapshot **v6 foi emitido, materializado e teve sua integridade validada**, mas uma revisão independente pós-emissão encontrou um P1 material dentro do próprio pacote: o Operational Flow v3.0.1 preservou linguagem pré-emissão incompatível com o uso corrente. O v6 permanece congelado e reproduzível como proveniência histórica, porém **não é válido para nova execução**. Neste estado, não existe pacote externo corrente; nova emissão/revalidação é necessária. O v5 também permanece congelado como snapshot histórico.
 
-O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.1` foi revalidado, reconciliado e realizado pelo snapshot `GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.1.0`. O v7 foi materializado sob autorização humana explícita a partir de `main = 35c616a4a7bf754577c180d37afe5e0c22380c7b`, em `delivery/design-handoff-v7`, commit `564a2656332dffeb4779ca20ee1ce6697abaa06d`, tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`. Uma revisão independente pós-emissão encontrou um P1 material nas cinco autoridades comuns contidas no próprio snapshot; por isso o v7 permanece congelado/histórico e inválido para nova execução. `CURRENT EXTERNAL SOURCE PACKAGE = NONE`.
+O candidato `GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.2` foi revalidado, reconciliado e realizado pelo snapshot `GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.1.0`. O v7 foi materializado sob autorização humana explícita a partir de `main = 35c616a4a7bf754577c180d37afe5e0c22380c7b`, em `delivery/design-handoff-v7`, commit `564a2656332dffeb4779ca20ee1ce6697abaa06d`, tree `39a72433b0b6f75975bc6a128c57fb688bd85bcb`. Uma revisão independente pós-emissão encontrou um P1 material nas cinco autoridades comuns contidas no próprio snapshot; por isso o v7 permanece congelado/histórico e inválido para nova execução. `CURRENT EXTERNAL SOURCE PACKAGE = NONE`.
 
 ```text
 DESIGNER
@@ -73,9 +73,9 @@ O registro reproduzível da emissão e da invalidação posterior para nova exec
 
 ### 3.1 Fontes comuns
 
-1. `docs/experience-architecture/public-homes-design-handoff.md` — `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.4`;
-2. `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — `GKR-UX-HOMES-GENINPUT-001 v2.2.16`;
-3. `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.2.16`;
+1. `docs/experience-architecture/public-homes-design-handoff.md` — `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.6.5`;
+2. `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — `GKR-UX-HOMES-GENINPUT-001 v2.2.17`;
+3. `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.2.17`;
 4. `docs/experience-architecture/public-homes-design-delivery-operational-flow.md` — `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.0.3`;
 5. `docs/experience-architecture/public-homes-design-production-release.md` — `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1`.
 
@@ -256,7 +256,7 @@ FROZEN V6 SNAPSHOT
 → INVALID FOR NEW EXECUTION
 
 V7 CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.1
+→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.2
 → REALIZED BY V7 SNAPSHOT
 → NON-NORMATIVE PROVENANCE
 
@@ -330,9 +330,9 @@ ADJUDICATION
 → V7 FROZEN / HISTORICAL / INVALID FOR NEW EXECUTION
 
 CANONICAL REMEDIATION
-→ HANDOFF v1.6.4
-→ GENINPUT v2.2.16
-→ READINESS v1.2.16
+→ HANDOFF v1.6.5
+→ GENINPUT v2.2.17
+→ READINESS v1.2.17
 → FLOW v3.0.3
 → RELEASE v1.2.1
 → TRANSITORY CURRENT-PACKAGE VALUE DELEGATED TO MANIFEST + CURRENT STATE
