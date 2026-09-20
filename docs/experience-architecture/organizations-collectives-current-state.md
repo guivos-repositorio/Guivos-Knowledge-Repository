@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.10.1
+version: 1.10.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 normative: false
@@ -295,7 +295,7 @@ As Jornadas integradas permanecem documentadas em:
 - [Jornada Integrada da Organização](../journeys/organization.md);
 - [Jornada Integrada do Coletivo](../journeys/collective.md).
 
-Ambos os documentos possuem estado `draft`.
+Ambos os documentos possuem estado `active`.
 
 Eles ajudam a mapear continuidade, estados e relações do ecossistema, mas **não devem ser interpretados como prova de que wireframes ou UI já foram definidos**.
 
