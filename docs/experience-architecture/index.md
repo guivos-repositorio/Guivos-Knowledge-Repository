@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.19.2
+version: 1.19.3
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-19
 related:
@@ -161,10 +161,10 @@ UXA-097 — primeira Hoje e TRN-007
 → D5-C4B — validação integrada individual e promoção de TRN-008..013
 → O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
 → O/C State Map — DEFINED / CANONICAL DOCUMENTARY
-→ Public Homes Source Completeness — C1–C15 PASS / 8 OF 8 / 120 OF 120 / CLOSED FOR EMISSION
-→ Public Homes Design Production Release — GRANTED / EXTERNAL DESIGNER PRODUCTION / AI OPTIONAL
+→ Public Homes Source Completeness — PRE-EMISSION C1–C15 PASS / 8 OF 8 / 120 OF 120 / POST-EMISSION PACKAGE P1 ADJUDICATED
+→ Public Homes Design Production Release — GRANTED / VALID CURRENT PACKAGE REQUIRED / AI OPTIONAL
 → Public Homes Design Handoff v5 Snapshot — FROZEN / HISTORICAL / 34 FILES
-→ Public Homes v6 Snapshot — CURRENT / EMITTED / VALIDATED / 29 CANONICAL SOURCES + 8 GUIDES / 37 FILES TOTAL
+→ Public Homes v6 Snapshot — EMITTED / INTEGRITY-VALIDATED / FROZEN HISTORICAL / INVALID FOR NEW EXECUTION / 37 FILES
 ```
 
 D4 e D5 são frentes não numeradas. UXA-101 continua a última frente funcional numerada e UXA-102/V5 permanece não iniciada. A definição documental do State Map O/C não altera esse estado.
@@ -308,12 +308,12 @@ A D5-C4B encerra somente a lacuna D5-C de continuidade especializada da Pessoa. 
 
 ### Public Homes — Design Production Release
 
-[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) registra `DESIGN PRODUCTION RELEASE = GRANTED` para produção externa pela designer. O trabalho manual é first-class, IA é opcional e o GKR não cria direção visual nem arquivo Figma.
+[GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001](public-homes-design-production-release.md) registra `DESIGN PRODUCTION RELEASE = GRANTED` para produção externa pela designer. O release permanece concedido, mas a execução operacional exige um pacote externo corrente e semanticamente válido. O trabalho manual é first-class, IA é opcional e o GKR não cria direção visual nem arquivo Figma.
 
 ### Public Homes — Source Completeness e snapshot v6
 
-[GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001](public-homes-designer-ai-source-completeness-audit.md) reaudita as oito Homes para consumo humano e por IA opcional. A frente fechou C1–C15 = PASS em 8/8 Homes / 120 de 120 verificações, com gates finais e re-review limpos antes da emissão.
+[GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001](public-homes-designer-ai-source-completeness-audit.md) preserva a prova pré-emissão C1–C15 = PASS em 8/8 Homes / 120 de 120 verificações e registra o P1 de consistência descoberto pós-emissão. A correção foi aplicada na autoridade canônica, não no snapshot congelado.
 
 [GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001](public-homes-design-delivery-v6-candidate.md) preserva a definição candidata que foi realizada sem mudança de composição.
 
-[GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001](public-homes-design-delivery-v6-snapshot-record.md) registra o pacote corrente em `delivery/design-handoff-v6`: 29 fontes canônicas + oito guias tool-neutral = 37 arquivos, 29/29 blobs canônicos preservados, designer-first, manual-first, IA opcional e nenhum Figma criado pelo GKR como referência.
+[GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001](public-homes-design-delivery-v6-snapshot-record.md) registra o snapshot v6 em `delivery/design-handoff-v6`: 29 fontes canônicas + oito guias = 37 arquivos e 29/29 blobs preservados. O snapshot permanece congelado como proveniência histórica, mas o P1 pós-emissão no Operational Flow v3.0.1 o torna inválido para nova execução. `CURRENT EXTERNAL SOURCE PACKAGE = NONE` até nova emissão/revalidação.
