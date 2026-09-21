@@ -217,6 +217,41 @@ Abrir Planos voluntariamente é navegação administrativa e não constitui sele
 
 `ORG-001` usa a nomenclatura institucional corrente; Guivos Business permanece produto especializado separado.
 
+### 8.4 Guivos Business
+
+Guivos Business constitui o quarto contexto corrente desta leitura integrada, mas **não possui IDs `GKR-TRN-*` próprios neste Registry**.
+
+Sua continuidade vigente é governada por:
+
+- `GPA-004 — Guivos Business`;
+- `GPA-004-FUNCTIONAL-PORTFOLIO-001`;
+- `GKR-PLANS-BUSINESS-001`;
+- `GKR-JOURNEY-BUSINESS-001`;
+- autoridades correntes da Home Business.
+
+A continuidade funcional de referência é:
+
+```text
+HOME BUSINESS
+→ OFERTA(S)
+→ PLANOS / CAPACIDADE
+→ CONFIGURADOR
+→ CONTRATAÇÃO ONLINE
+→ SELF-SERVICE / SUPORTE / GERENCIADO
+→ OPERAÇÃO
+```
+
+A ausência de IDs próprios não autoriza reutilizar `ORG-*`, `COL-*`, `COM-*` ou `BND-002` como substitutos de Business.
+
+```text
+BUSINESS
+≠ ORGANIZAÇÃO
+≠ COM-* / ADS
+≠ BND-002
+```
+
+Novos IDs Business somente devem ser criados quando uma necessidade funcional concreta exigir granularidade adicional e houver ato governado próprio.
+
 ## 9. BND-002
 
 `BND-002` é a fronteira genérica de **contratação/dimensionamento assistido**.
