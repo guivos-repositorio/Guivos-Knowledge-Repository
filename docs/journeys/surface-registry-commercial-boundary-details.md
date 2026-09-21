@@ -1,10 +1,10 @@
 ---
 id: GKR-JOURNEY-SURFACE-DETAIL-COMMERCIAL-001
-title: Detalhamento Obrigatório da Camada Comercial e da Fronteira
+title: Detalhamento Obrigatório de Ads / Opportunity Boost e Fronteiras Documentais
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-09-21
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
 related:
   - UXA-099
@@ -15,11 +15,33 @@ related:
 normative: false
 ---
 
-# Detalhamento Obrigatório da Camada Comercial e da Fronteira
+# Detalhamento Obrigatório de Ads / Opportunity Boost e Fronteiras Documentais
 
 ## 1. Finalidade
 
 Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens por si só.
+
+A nomenclatura histórica do ID deste documento e o prefixo `COM-*` **não definem um eixo "Comercial" equivalente a Guivos Business**.
+
+No estado corrente:
+
+```text
+COM-001..005
+→ GUIVOS ADS / OPPORTUNITY BOOST
+→ superfícies de anunciante, entrega patrocinada e controles relacionados
+
+BND-001..002
+→ FRONTEIRAS DOCUMENTAIS
+→ não são participante
+→ não são produto
+
+GUIVOS BUSINESS
+→ PRODUTO ESPECIALIZADO B2B
+→ CONTEXTO DE EXPERIÊNCIA PRÓPRIO
+→ NÃO PERTENCE A COM-*
+```
+
+Os IDs `COM-*` são preservados somente para estabilidade e rastreabilidade do registro.
 
 ## 2. Campos por identificador
 
@@ -53,8 +75,8 @@ Consequentemente:
 
 - `BND-002` não equivale a Enterprise;
 - `BND-002` não equivale a Scale;
-- `BND-002` não pertence exclusivamente a Coletivo ou Organização;
-- `BND-002` não cria qualquer superfície de Guivos Business;
+- no corpus corrente, `BND-002` é alcançado pelos fluxos de **Coletivo e Organização** quando o autoatendimento institucional não for suficiente;
+- `BND-002` não cria nem governa qualquer superfície de Guivos Business;
 - `TRN-416` e `TRN-426` permanecem parciais e com os mesmos IDs.
 
 ## 6. Preservações
@@ -64,7 +86,9 @@ Consequentemente:
 - `BND-002` não define proposta, preço final, contrato, SLA ou capacidade real;
 - `TRN-416` e `TRN-426` permanecem parciais;
 - pagamento de plano e Opportunity Boost permanecem objetos econômicos separados;
-- Organização e Guivos Business permanecem estruturas distintas.
+- `COM-*` permanece recorte de Ads / Opportunity Boost e não de Business;
+- Organização e Guivos Business permanecem estruturas distintas;
+- Guivos Business mantém contratação online e composição Self-service governadas por suas próprias autoridades.
 
 ## 7. Estado
 
