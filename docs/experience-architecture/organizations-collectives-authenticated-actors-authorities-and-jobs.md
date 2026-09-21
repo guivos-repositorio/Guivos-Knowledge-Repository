@@ -6,7 +6,7 @@ version: 1.4.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 normative: false
-maturity: authenticated_information_architecture_defined_pre_surface_map
+maturity: authenticated_actors_authorities_jobs_defined
 depends_on:
   - GKR-UX-ORGCOL-STATE-001
   - GKR-UX-ORGCOL-UX-STATE-001
