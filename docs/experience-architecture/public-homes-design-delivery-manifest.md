@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.32
+version: 7.0.33
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -111,8 +111,8 @@ O uso manual não exige Source Lock ou registro de execução de IA.
 
 - `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.18` — `docs/experience-architecture/public-home-business-source-lock.md`;
 - `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.7` — `docs/experience-architecture/public-home-business-master-document.md`;
-- `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.5` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+- `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.6` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.7.4` — `docs/product-architecture/business.md`;
 - `GKR-PLANS-BUSINESS-001 v1.3.0` — `docs/plans/business.md`.
 
