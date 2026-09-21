@@ -177,6 +177,7 @@ def main() -> int:
 
     removed_auxiliary_paths = [
         UXA_DIR / "uxa-003-a1-first-entry-functional-order.md",
+        ROOT / "docs/project/post-313-organizations-collectives-state-reconciliation.md",
     ]
     for path in removed_auxiliary_paths:
         if path.is_file():
