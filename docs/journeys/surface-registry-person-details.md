@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
 title: Detalhamento Obrigatório das Superfícies da Pessoa
 status: active
-version: 0.23.0
+version: 0.23.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -31,7 +31,7 @@ Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obri
 
 | ID | Autoridade corrente | Estado/versão | Entrada | Decisão principal | Saída | Dados e conteúdos | Gate | Reversibilidade | Supersessão | Continuidade | Lacuna | Observação de escopo |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| GKR-SURF-PER-001 | GKR-UX-HOME-MASTER-001 + UXA-020/021 | contrato funcional corrente | acesso público | iniciar ou continuar | entrada protegida | conteúdo institucional público | nenhum para leitura | retorno livre | nenhuma | parcial | integração ponta a ponta | entrada pública |
+| GKR-SURF-PER-001 | GKR-UX-HOME-MASTER-001 + UXA-020 | contrato funcional corrente | acesso público | iniciar ou continuar | entrada protegida | conteúdo institucional público | nenhum para leitura | retorno livre | nenhuma | parcial | integração ponta a ponta | entrada pública |
 | GKR-SURF-PER-002 | GKR-UX-PER002-MAT-ELIGIBILITY-001 + protótipo corrente GKR-UX-PER002-PROTOTYPE-DELIVERY-001 | protótipo v1.0.0 / validação v2.0.0 PASS | Home pública | compreender o contexto protegido e decidir se prossegue | TRN-002 → PER-003 | finalidade, controles e contexto mínimo; conteúdo sintético no protótipo | autenticação quando necessária; processamento material exige autoridade própria | voltar/interromper/explorar sem personalização quando aplicável | aparência histórica não governa o estado corrente | protótipo interativo validado; TRN-002 permanece localmente validada | implementação técnica não comprovada | entrada protegida; uma responsabilidade com estados/variantes internos |
 | GKR-SURF-PER-003 | UXA-020/023/035 + GKR-JOURNEY-PERSON-001 | contrato funcional corrente | entrada protegida | escolher texto ou voz | expressão guiada | modalidade escolhida | escolha explícita | trocar/voltar/cancelar | nenhuma | parcial | continuidade entre pacotes | escolha de modalidade |
 | GKR-SURF-PER-004 | UXA-069 + GKR-JOURNEY-PERSON-001 | contrato funcional corrente | escolha de modalidade | expressar/revisar/concluir | inventário | conteúdo de origem e derivados | solicitação consciente | editar/descartar/pausar | nenhuma | parcial | integração com inventário | expressão guiada |

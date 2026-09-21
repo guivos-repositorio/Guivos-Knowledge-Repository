@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.36.1
+version: 0.36.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
@@ -141,7 +141,7 @@ O total estrutural permanece **57 IDs**. A contagem não implica que todos estej
 
 | ID | Superfície, estado ou responsabilidade | Perspectiva e família | Canal | Maturidade | Autoridade | Materialização | Validação | Detalhamento obrigatório |
 |---|---|---|---|---|---|---|---|---|
-| GKR-SURF-PER-001 | Home pública | visitante; início protegido | público | validado | UXA-020; GKR-UX-HOME-MASTER-001 | Design-owned / sem baseline visual corrente | UXA-021 | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-001 | Home pública | visitante; início protegido | público | validado | UXA-020; GKR-UX-HOME-MASTER-001 | Design-owned / sem baseline visual corrente | GKR-UX-HOME-MASTER-001 + UXA-020 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-002 | entrada protegida | Pessoa | protegido | validado | UXA-020; UXA-023 | sem baseline visual corrente | UXA-035 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-003 | escolha de modalidade | Pessoa | protegido | validado | UXA-020; UXA-023 | sem baseline visual corrente | UXA-035 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-004 | expressão por texto ou voz | Pessoa | protegido | validado | UXA-069; GKR-JOURNEY-PERSON-001 | sem baseline visual corrente | UXA-069 | [Pessoa](surface-registry-person-details.md) |

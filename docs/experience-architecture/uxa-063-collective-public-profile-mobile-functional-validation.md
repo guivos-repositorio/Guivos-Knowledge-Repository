@@ -2,13 +2,12 @@
 id: UXA-063
 title: Validação Funcional e Reformulação do Perfil Público Móvel do Coletivo
 status: draft
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-04
+last_updated: 2026-09-21
 parent: UXA-005
 depends_on:
   - UXA-001
-  - UXA-003
   - UXA-009
   - UXA-011
   - UXA-011-A1
