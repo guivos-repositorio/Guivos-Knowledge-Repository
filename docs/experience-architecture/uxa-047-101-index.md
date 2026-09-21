@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Corrente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.50.0
+version: 3.51.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-21
 depends_on:
@@ -82,15 +82,37 @@ Para continuidade de Journey e prototipação, a entrada preferencial é [Jornad
 
 As antigas frentes UXA-070 a UXA-086 cuja função foi absorvida pelos registries, catálogos e autoridades correntes não são reconstruídas neste índice. Sua proveniência permanece no Git.
 
-## 5. Planos — UXA-100 e complementos correntes
+## 5. Planos — proveniência histórica absorvida
 
-- [UXA-100](uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md)
-- [UXA-100-A1](uxa-100-a1-plans-journey-integration-and-dedicated-screens.md)
-- [UXA-100-A2](uxa-100-a2-plans-screens-and-journeys-functional-audit.md)
-- [UXA-100-A3](uxa-100-a3-plans-canonical-fragmentation-and-promotion.md)
-- [UXA-100-A4](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md)
+O pacote `UXA-100` e suas subfrentes `A1..A4` **não são autoridades correntes de Planos**. Permanecem fisicamente no corpus somente para rastreabilidade transitória enquanto a auditoria integral conclui a adjudicação de remoção.
 
-`UXA-100-A1..A4` são subfrentes da UXA-100 e não criam UXA-102.
+- [UXA-100 — proveniência histórica](uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md)
+- [UXA-100-A1 — proveniência histórica](uxa-100-a1-plans-journey-integration-and-dedicated-screens.md)
+- [UXA-100-A2 — proveniência histórica](uxa-100-a2-plans-screens-and-journeys-functional-audit.md)
+- [UXA-100-A3 — proveniência histórica](uxa-100-a3-plans-canonical-fragmentation-and-promotion.md)
+- [UXA-100-A4 — proveniência histórica](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md)
+
+```text
+UXA-100 / A1..A4
+→ HISTORICAL_ABSORBED_PROVENANCE_ONLY
+→ NOT DESIGN INPUT
+→ NOT AI INPUT
+→ NOT CURRENT PLAN AUTHORITY
+```
+
+Para leitura corrente de Planos, usar:
+
+- `GKR-PLANS-INDEX-001`;
+- `GKR-PLANS-PERSON-001`;
+- `GKR-PLANS-COLLECTIVE-001`;
+- `GKR-PLANS-ORGANIZATION-001`;
+- `GKR-PLANS-BUSINESS-001`;
+- `GEM-004-PLAN-TAXONOMY-AUTHORITY-001`;
+- `GKR-JOURNEY-SURFACE-REGISTRY-001`;
+- `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
+- `GPA-004` para Guivos Business.
+
+`UXA-100-A1..A4` continuam subfrentes históricas de UXA-100 e não criam UXA-102.
 
 ## 6. Autoridades correntes posteriores
 
