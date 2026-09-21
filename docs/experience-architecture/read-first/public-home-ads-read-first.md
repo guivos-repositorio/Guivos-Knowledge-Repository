@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-ADS-READ-FIRST-001
 title: 00 — Leia Primeiro — Home Pública — Guivos Ads
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: false
@@ -49,7 +49,7 @@ AI
 1. `GKR-UX-HOME-ADS-MASTER-001 v1.0.3` — `docs/experience-architecture/public-home-ads-master-document.md`;
 2. `GPA-007 v1.3.0` — `docs/product-architecture/ads.md`;
 
-Se a designer optar por IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e preparar Source Lock/prompt somente para essa execução.
+Se a designer optar por IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e preparar **Source Lock de execução / prompt** somente para essa execução. Esse artefato de execução não substitui nem altera eventual **Source Lock canônico da Home** já listado entre as fontes específicas.
 
 ## 3. Liberdade criativa
 

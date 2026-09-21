@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-READ-FIRST-001
 title: 00 — Leia Primeiro — Home Pública — Guivos Business
 status: active
-version: 1.0.6
+version: 1.0.7
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: false
@@ -53,7 +53,7 @@ AI
 5. `GPA-004 v1.7.4` — `docs/product-architecture/business.md`;
 6. `GKR-PLANS-BUSINESS-001 v1.3.0` — `docs/plans/business.md` — planos, preços de referência e composição Self-service corrente;
 
-Se a designer optar por IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e preparar Source Lock/prompt somente para essa execução.
+Se a designer optar por IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e preparar **Source Lock de execução / prompt** somente para essa execução. Esse artefato de execução não substitui nem altera eventual **Source Lock canônico da Home** já listado entre as fontes específicas.
 
 ## 3. Liberdade criativa
 
