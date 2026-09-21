@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-NAV-001
 title: Hierarquia entre Header, Hero e CTAs da Home Pública de Organizações e Coletivos
 status: draft
-version: 0.4.0
+version: 0.4.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-OC-MASTER-001
 depends_on:
   - GKR-UX-HOME-OC-MASTER-001
@@ -14,7 +14,6 @@ depends_on:
   - GKR-UX-HOME-NAV-004
 related:
   - GKR-FULL-CORPUS-AUDIT-001
-  - GKR-UX-HOME-HANDOFF-001
   - UXA-014
   - UXA-019
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
