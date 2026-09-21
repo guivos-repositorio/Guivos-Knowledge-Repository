@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.31
+version: 7.0.32
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -57,7 +57,7 @@ Quatro autoridades são universais para o fluxo de Design:
 
 Quando a designer optar por usar IA, acrescenta-se a autoridade condicional:
 
-- `GKR-UX-HOMES-GENINPUT-001 v2.3.4` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`.
+- `GKR-UX-HOMES-GENINPUT-001 v2.3.5` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`.
 
 O uso manual não exige Source Lock ou registro de execução de IA.
 
