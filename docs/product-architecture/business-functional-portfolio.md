@@ -2,7 +2,7 @@
 id: GPA-004-FUNCTIONAL-PORTFOLIO-001
 title: Guivos Business — Portfólio Funcional v1
 status: consolidated
-version: 1.1.0
+version: 1.1.1
 owner: Guivos
 last_updated: 2026-09-20
 depends_on:
@@ -420,25 +420,34 @@ O orçamento pré-pago não é a assinatura do plano Business.
 
 Acesso Journey custeado pela empresa possui relação econômica própria e não deve ser considerado automaticamente incluído em qualquer plano Business.
 
-## 12. Serviço
+## 12. Contratação e modelo de implementação/operação
 
-A separação conceitual aceita é:
+A separação corrente é:
 
 ```text
 PLANO
 = capacidade tecnológica/comercial
 
-SERVIÇO
+CONTRATAÇÃO
+= online
+
+MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 = nível de participação da Guivos na implantação/operação
 ```
 
-Foram trabalhados como direção:
+Os modelos correntes são:
 
-- Self-service;
-- Assisted;
-- Managed.
+- **Self-service** — contratação online e operação autônoma;
+- **Com apoio do suporte** — contratação online com suporte posterior à implementação quando necessário;
+- **Gerenciado** — contratação online com participação operacional mais profunda da Guivos, conforme complexidade e contrato.
 
-Os nomes e escopos finais ainda não são entitlements contratuais congelados.
+Regra:
+
+> **Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.**
+
+Plano e modelo de operação não são equivalentes. O roteamento depende da complexidade real da configuração.
+
+Os detalhes contratuais de cada nível de serviço permanecem sujeitos à formalização comercial aplicável.
 
 ## 13. Relação econômica com outros produtos
 
