@@ -1,0 +1,16 @@
+/* Guivos Knowledge Repository — primary navigation section/group headings
+   Dark orange derived from the supplied visual reference: #CF4A00.
+   Scope intentionally limited to section and nested-group headings. */
+
+.md-nav--primary .md-nav__item--section > .md-nav__link,
+.md-nav--primary .md-nav__item--nested > .md-nav__link {
+  color: #cf4a00;
+  font-weight: 700;
+}
+
+.md-nav--primary .md-nav__item--section > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--section > .md-nav__link:focus,
+.md-nav--primary .md-nav__item--nested > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--nested > .md-nav__link:focus {
+  color: #cf4a00;
+}
