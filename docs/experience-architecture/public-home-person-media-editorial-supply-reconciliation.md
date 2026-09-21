@@ -8,7 +8,6 @@ last_updated: 2026-09-20
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-UX-HOME-MASTER-001
-  - GKR-UX-HOME-SYS-001
   - GPA-005
   - GKR-UX-HOME-MEDIA-MASTER-001
 normative: true
@@ -60,7 +59,7 @@ A existência do material no Media não obriga sua presença na Home.
 
 ## 4. Relação com o sistema de conteúdo já vigente
 
-`GKR-UX-HOME-SYS-001` já distingue conteúdo institucional permanente, evidência real, editorial, ecossistema e navegação/ação.
+`GKR-UX-HOME-MASTER-001` distingue conteúdo institucional permanente, evidência real, editorial, ecossistema e navegação/ação.
 
 O Guivos Media passa a ser reconhecido como **uma fonte editorial possível** para as classes `evidência real` e `conteúdo editorial`, sem monopolizá-las.
 
