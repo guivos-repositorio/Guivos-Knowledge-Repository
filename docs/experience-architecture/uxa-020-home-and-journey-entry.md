@@ -2,7 +2,7 @@
 id: UXA-020
 title: Página Inicial da Guivos e Início da Jornada
 status: active
-version: 0.4.0
+version: 0.4.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: UXA-000
@@ -14,7 +14,6 @@ related:
   - UXA-002
   - UXA-009
   - UXA-010
-  - UXA-021
   - UXA-023
   - PAS-001-CV-VIEW-001
   - PAS-001-OBJ-VIEW-001
@@ -97,7 +96,7 @@ A Home não deverá:
 - transformar patrocínio, popularidade ou posição comercial em relevância pessoal;
 - obrigar a criação de conta para conhecer o ecossistema.
 
-A responsabilidade pública da Home permanece funcionalmente compatível com esta fronteira, mas sua autoridade corrente de narrativa, conteúdo e criação para Design é `GKR-UX-HOME-MASTER-001` e o pacote vigente de Homes. A antiga materialização `UXA-022` foi absorvida/removida e não é autoridade visual corrente. `UXA-021` permanece apenas como evidência funcional histórica especializada enquanto ainda existir no corpus.
+A responsabilidade pública da Home permanece funcionalmente compatível com esta fronteira, mas sua autoridade corrente de narrativa, conteúdo e criação para Design é `GKR-UX-HOME-MASTER-001` e o pacote vigente de Homes. A antiga materialização `UXA-022` foi absorvida/removida e não é autoridade visual corrente. A primeira validação histórica da Home permanece preservada no Git e não integra o corpus corrente.
 
 ## 5. Transição consciente para o ambiente protegido
 
