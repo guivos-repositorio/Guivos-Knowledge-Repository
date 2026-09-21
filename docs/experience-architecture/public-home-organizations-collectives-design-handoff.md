@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-HANDOFF-001
 title: Handoff para Design/UX/UI da Home Pública de Organizações e Coletivos
 status: superseded
-version: 0.2.0
+version: 0.2.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-OC-MASTER-001
 depends_on:
   - GKR-UX-HOME-OC-MASTER-001
@@ -14,7 +14,6 @@ depends_on:
   - GKR-UX-HOME-SYS-001
 related:
   - GKR-FULL-CORPUS-AUDIT-001
-  - GKR-UX-HOME-HANDOFF-001
   - UXA-014
   - UXA-019
   - UXA-015
@@ -242,7 +241,7 @@ Ele não transfere automaticamente a estrutura narrativa da Home orientada à Pe
 
 ### 4.2 Handoff da Home principal
 
-`GKR-UX-HOME-HANDOFF-001` pode ser utilizado como referência de disciplina de entrega.
+`GKR-UX-HOMES-DESIGN-HANDOFF-001` pode ser utilizado como referência de disciplina de entrega.
 
 Não deve ser usado como especificação substituta desta página.
 
