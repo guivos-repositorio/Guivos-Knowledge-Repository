@@ -2,16 +2,14 @@
 id: GKR-UX-HOME-NAV-001
 title: Arquitetura de Navegação e Acessos da Home Pública
 status: draft
-version: 0.4.0
+version: 0.4.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-28
-parent: GKR-UX-HOME-HANDOFF-001
+last_updated: 2026-09-20
 depends_on:
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-001
   - GKR-UX-HOME-VAL-001
-  - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-NARR-001
   - GEB-P01-F01
   - GEB-P01-F02
