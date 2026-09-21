@@ -2,7 +2,7 @@
 id: GPA-004
 title: Guivos Business
 status: consolidated
-version: 1.7.0
+version: 1.7.2
 owner: Guivos
 last_updated: 2026-09-20
 related:
@@ -482,25 +482,34 @@ SERVIÇOS ADICIONAIS, QUANDO APLICÁVEIS
 
 O orçamento de incentivo **não é a assinatura do plano Business**. O acesso ao Journey custeado pela empresa possui relação econômica própria e não deve ser presumido como incluído automaticamente em qualquer plano.
 
-## 13. Nível de serviço
+## 13. Contratação e modelo de implementação/operação
 
-A direção conceitual aceita separa capacidade tecnológica/comercial de participação operacional da Guivos:
+A arquitetura corrente separa capacidade contratada, contratação e participação operacional da Guivos:
 
 ```text
 PLANO
 = capacidade tecnológica/comercial
 
-SERVIÇO
-= quanto a Guivos participa da implantação e operação
+CONTRATAÇÃO
+= online
+
+MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+= quanto a Guivos participa da implantação/operação
 ```
 
-Foram trabalhados como direção:
+Os modelos correntes são:
 
-- Self-service;
-- Assisted;
-- Managed.
+- **Self-service** — a empresa contrata online, acessa a plataforma, configura e opera com autonomia;
+- **Com apoio do suporte** — a contratação e o pagamento ocorrem online; o suporte acompanha a continuidade da implementação quando necessário;
+- **Gerenciado** — após a contratação online, a Guivos participa mais profundamente da implementação/operação conforme complexidade e contrato.
 
-Os nomes, escopos e entitlements desses níveis ainda não constituem oferta comercial final congelada.
+A síntese governada é:
+
+> **Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.**
+
+O modelo não é rigidamente determinado pelo plano. Uma configuração Scale pode ser padronizada o suficiente para Self-service; uma configuração Growth pode exigir apoio por integração, governança ou outra complexidade específica.
+
+Os detalhes contratuais e entitlements de serviço continuam sujeitos à formalização comercial aplicável.
 
 ## 14. Relação com outros produtos do ecossistema
 
@@ -552,7 +561,7 @@ Receitas diretas do Business podem incluir, conforme futura modelagem específic
 - acessos Journey custeados;
 - Intelligence avançado;
 - exportações, API e integrações;
-- serviços Assisted/Managed;
+- serviços com apoio do suporte / gerenciados;
 - taxas operacionais transparentes quando aplicáveis.
 
 Esses itens são direções de modelagem e **não constituem pricing ou entitlement final**.
@@ -586,7 +595,7 @@ Permanecem dependentes de autoridade específica antes de implementação ou pub
 - limites quantitativos e entitlements finais;
 - preço/faixa por escala, participante ou acesso;
 - preço dos acessos Journey custeados pela empresa;
-- definição final de Self-service / Assisted / Managed;
+- critérios contratuais e operacionais exatos de roteamento entre Self-service, Com apoio do suporte e Gerenciado;
 - prazo final de validade dos Pontos Guivos;
 - destino econômico e percentuais de pontos expirados;
 - política completa de estorno, reversão e fraude;
@@ -599,7 +608,9 @@ Permanecem dependentes de autoridade específica antes de implementação ou pub
 - arquitetura técnica de API/exportação;
 - thresholds mínimos de agregação/coorte do Intelligence;
 - composição exata do resumo recorrente de Intelligence por plano;
-- arquitetura convergida da Home Pública do Guivos Business.
+- implementação e publicação operacional da Home Pública do Guivos Business.
+
+A arquitetura convergida da Home Pública do Guivos Business já existe e é governada pelo Documento Mestre e pelo Source Lock correntes. O que permanece aberto é sua implementação/publicação operacional e as decisões comerciais ainda explicitamente não congeladas.
 
 A equivalência econômica Pontos ↔ BRL permanece **não congelada no corpus vigente**: a decisão histórica de conversa continua preservada como proveniência, mas valor monetário e taxa de conversão exigem autoridade econômica específica antes de implementação, cobrança ou liquidação.
 
