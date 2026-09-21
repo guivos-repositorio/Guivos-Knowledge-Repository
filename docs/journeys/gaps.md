@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
@@ -65,7 +65,7 @@ Integrações orgânico–patrocinado permanecem limitadas à maturidade registr
 
 ## 4. Planos, cobrança e contratação assistida
 
-As superfícies e contratos documentais de Planos existem para Pessoa, Coletivo e Organização.
+A arquitetura documental de Planos existe para **Pessoa, Coletivo, Organização e Guivos Business**. Pessoa, Coletivo e Organização possuem superfícies granulares neste Registry; Business possui continuidade própria governada por suas autoridades e por `docs/journeys/business.md`, sem IDs granulares próprios neste momento.
 
 Permanecem fora da maturidade corrente quando não houver autoridade específica:
 
@@ -92,6 +92,20 @@ BND-002
 ```
 
 A composição Self-service e seus fatores de plano/valor são governados por `GPA-004` e `docs/plans/business.md`, sem criação de IDs Business neste registry.
+
+### Lacunas correntes específicas de Business
+
+Permanecem abertas somente quando não houver autoridade própria formalizada:
+
+- thresholds quantitativos e entitlements finais entre Start, Growth, Scale e Enterprise;
+- preços unitários/faixas de componentes variáveis ainda não governados;
+- implementação técnica do configurador;
+- checkout, cobrança, tributação e liquidação reais;
+- critérios operacionais exatos de roteamento entre Self-service, suporte e gerenciado;
+- implementação das integrações/API/exportações contratadas;
+- implementação e publicação operacional da experiência Business.
+
+Essas lacunas não convertem Business em Organização, não remetem automaticamente a `BND-002` e não criam uma camada "Comercial".
 
 ## 5. Organização e Coletivo autenticados
 
