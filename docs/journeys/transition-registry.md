@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.28.0
+version: 0.29.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
@@ -15,10 +15,10 @@ related:
   - UXA-097
   - UXA-098
   - UXA-099
-  - UXA-100
-  - UXA-100-A2
-  - UXA-100-A3
-  - UXA-100-A4
+  - GKR-PLANS-PERSON-001
+  - GKR-PLANS-COLLECTIVE-001
+  - GKR-PLANS-ORGANIZATION-001
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - UXA-101
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C4B-001
@@ -197,8 +197,8 @@ Abrir Planos voluntariamente é navegação administrativa e não constitui sele
 | GKR-TRN-414 | COL-303 | COL-304 | **localmente validada** | execução operacional/transacional |
 | GKR-TRN-415 | COL-304 | COL-301 | **localmente validada** | persistência técnica |
 | GKR-TRN-416 | COL-301 | BND-002 | **parcial** | processo posterior de contratação/dimensionamento assistido não materializado |
-| GKR-TRN-417 | COL-002 | COL-301 | **integralmente validada** | navegação administrativa sem mutação comercial; contexto e autoridade preservados pela UXA-100-A4 |
-| GKR-TRN-418 | COL-301 | COL-002 | **integralmente validada** | retorno à Visão Geral sem alteração de plano/capacidade; UXA-100-A4 |
+| GKR-TRN-417 | COL-002 | COL-301 | **integralmente validada** | navegação administrativa sem mutação comercial; contexto e autoridade preservados pelo contrato corrente |
+| GKR-TRN-418 | COL-301 | COL-002 | **integralmente validada** | retorno à Visão Geral sem alteração de plano/capacidade; contrato corrente |
 
 `TRN-416` não significa “ir para Enterprise”. Ele significa sair do autoatendimento quando a contratação concreta exigir assistência. A maturidade permanece parcial.
 
@@ -214,8 +214,8 @@ Abrir Planos voluntariamente é navegação administrativa e não constitui sele
 | GKR-TRN-424 | ORG-303 | ORG-304 | **localmente validada** | execução institucional |
 | GKR-TRN-425 | ORG-304 | ORG-301 | **localmente validada** | persistência técnica |
 | GKR-TRN-426 | ORG-301 | BND-002 | **parcial** | processo posterior de contratação/dimensionamento assistido não materializado |
-| GKR-TRN-427 | ORG-001 | ORG-301 | **integralmente validada** | navegação institucional sem mutação comercial; Organização/unidade/autoridade preservadas pela UXA-100-A4 |
-| GKR-TRN-428 | ORG-301 | ORG-001 | **integralmente validada** | retorno à Visão Geral sem alteração comercial; UXA-100-A4 |
+| GKR-TRN-427 | ORG-001 | ORG-301 | **integralmente validada** | navegação institucional sem mutação comercial; Organização/unidade/autoridade preservadas pelo contrato corrente |
+| GKR-TRN-428 | ORG-301 | ORG-001 | **integralmente validada** | retorno à Visão Geral sem alteração comercial; contrato corrente |
 
 `TRN-426` não significa “ir para Business Scale”. A Organização permanece participante e Guivos Business permanece produto separado. A maturidade da transição continua parcial.
 
