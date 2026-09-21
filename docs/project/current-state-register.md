@@ -993,7 +993,7 @@ IMPLEMENTATION / PUBLICATION / PRODUCT ENGINEERING
 
 ## 11. Guivos Business
 
-`GPA-004 v1.6.0` permanece autoridade superior do Guivos Business.
+`GPA-004 v1.7.3` permanece autoridade superior do Guivos Business. A síntese corrente da experiência está em `GKR-JOURNEY-BUSINESS-001 — Experiência Integrada do Guivos Business`.
 
 Ofertas principais preservadas:
 
@@ -1049,6 +1049,24 @@ IMPLEMENTAÇÃO / OPERAÇÃO
 
 `Self-service / Com apoio / Gerenciado ≠ Start / Growth / Scale / Enterprise`.
 
+A composição Self-service vigente deve ser lida como:
+
+```text
+OFERTA(S)
++
+ESCALA / PARTICIPANTES / ACESSOS
++
+CAPACIDADES REQUERIDAS
+↓
+PLANO COMPATÍVEL
+↓
+COMPOSIÇÃO DO VALOR
+↓
+CONTRATAÇÃO ONLINE
+```
+
+O plano é a camada de capacidade que suporta integralmente a configuração. O valor pode incluir componentes variáveis e serviços adicionais; o orçamento pré-pago de incentivo permanece recurso operacional separado da assinatura.
+
 ### 11.1 Pontos no Business
 
 O Programa de Pontos permanece capacidade Business quando governado por suas autoridades próprias.
@@ -1087,6 +1105,14 @@ Pontos permanecem fora da narrativa pública da Home Business conforme decisão 
 ORGANIZAÇÃO
 ≠ BUSINESS
 ≠ ADS
+
+COM-* NO JOURNEY REGISTRY
+→ ADS / OPPORTUNITY BOOST
+→ NÃO BUSINESS
+
+BND-*
+→ FRONTEIRAS DOCUMENTAIS
+→ NÃO BUSINESS
 
 INTELLIGENCE APOIANDO BUSINESS
 ≠ INTELLIGENCE COMO MÓDULO BUSINESS
