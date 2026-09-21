@@ -26,7 +26,6 @@ depends_on:
   - GKR-UX-HOME-NAV-001
   - GKR-UX-HOME-NAV-003
   - GKR-UX-HOME-SYS-001
-  - GKR-UX-HOME-GTM-BOUNDARY-001
   - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
 related:
   - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
@@ -1316,9 +1315,9 @@ A definição funcional de Q não deve preencher itens visuais ou operacionais p
 | `NARR-003` | participante ≠ produto | absorvido |
 | `NARR-004` | realidade × experiência × autoridade | absorvido |
 | `NARR-005` | 7 macroexperiências | absorvido com novo rótulo do M06 |
-| `NAV-001/003/004` | Header, launcher, CTAs, scroll e mobile | absorvido; resíduos históricos não governam o master |
+| `NAV-001/003/004` | Header, launcher, CTAs, scroll e mobile | absorvido; `NAV-004` removido do corpus corrente, demais contratos preservados enquanto mantêm função própria |
 | `SYS-001` | conteúdo, prova, histórias, interação, ritmo e acessibilidade | absorvido |
-| `GTM-BOUNDARY-001` | arquitetura ≠ lançamento | absorvido |
+| `GTM-BOUNDARY-001` | arquitetura ≠ lançamento | absorvido; removido do corpus corrente |
 | Media supply | Media como fonte editorial sem transferência de autoridade | absorvido |
 | `UXA-020/021` | fronteira pública/protegida e ausência de coleta na Home | absorvido nos limites atuais |
 
@@ -1347,9 +1346,7 @@ Esta matriz **não autoriza remoção automática das fontes**. A remoção fís
 
 - [Navegação e Acessos](public-home-navigation-access-and-footer-architecture.md)
 - [Header × Hero × CTAs](public-home-header-hero-cta-hierarchy.md)
-- [Scroll e Mobile](public-home-persistent-header-scroll-and-mobile-behavior.md)
 - [Sistema de Conteúdo, Prova, Interação e Visual](public-home-content-proof-interaction-visual-system.md)
-- [Home × Marketing/GTM](public-home-architecture-vs-marketing-gtm-boundary.md)
 - [Supply Editorial do Media](public-home-person-media-editorial-supply-reconciliation.md)
 
 ### Auditoria e evidência
