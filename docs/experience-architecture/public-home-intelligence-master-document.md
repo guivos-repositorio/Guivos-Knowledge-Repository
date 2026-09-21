@@ -1,8 +1,8 @@
 ---
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
-status: draft
-version: 0.2.9
+status: active
+version: 0.2.10
 owner: Experience Architecture
 last_updated: 2026-09-20
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -18,6 +18,7 @@ related:
   - GIA-000
   - GEA-GRAPH-REFERENCE-001
 normative: false
+maturity: reconciled_for_external_design
 ---
 
 # Home Pública — Guivos Intelligence v1 — Documento Mestre

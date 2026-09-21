@@ -1,10 +1,12 @@
 ---
 id: GKR-UX-HOME-MALL-MASTER-001
 title: Home Pública — Guivos Mall — Documento Mestre
-status: draft
-version: 1.1.2
+status: active
+version: 1.1.3
 owner: Experience Architecture
 last_updated: 2026-09-20
+normative: false
+maturity: reconciled_for_external_design
 parents:
   - GKR-UX-HOME-MASTER-001
   - GPA-002

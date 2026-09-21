@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.1
+version: 1.3.2
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: true
@@ -172,7 +172,7 @@ Fontes específicas:
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### Mall
-- `GKR-UX-HOME-MALL-MASTER-001 v1.1.2`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.1.3`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
 
 Contrato corrente que o guia/Source Lock corrente deve explicitar:
@@ -184,7 +184,7 @@ Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `MALL-HS-06 SPONSORED_EXPOSURE` — exposição paga permanece identificada e não se disfarça de relevância orgânica.
 
 ### Travel
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.4`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.5`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
 
 Contrato corrente que o guia/Source Lock corrente deve explicitar:
@@ -196,11 +196,11 @@ Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `TRAVEL-HS-06 CAMPAIGN_OR_SPONSORED` — campanha é temporária e patrocínio permanece identificado.
 
 ### Media
-- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.2`;
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.3`;
 - `GPA-005 v1.2.0`.
 
 ### Ads
-- `GKR-UX-HOME-ADS-MASTER-001 v1.0.2`;
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.3`;
 - `GPA-007 v1.3.0`.
 
 ### Business
@@ -213,7 +213,7 @@ Contrato corrente que o guia/Source Lock corrente deve explicitar:
 ### Intelligence
 - `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.11`;
 - `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.10`;
 - `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4`;
 - `GKR-UX-HOMES-OUTCOME-001 v1.0.0`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1`;
