@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-AUTHORITY-001
 title: Contratos de Autoridade — Home Pública — Guivos Business
 status: active
-version: 1.0.5
+version: 1.0.6
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GPA-004
@@ -10,7 +10,6 @@ depends_on:
   - GPA-004
   - GKR-BUSINESS-CONTINUITY-001
   - GKR-STATE-001
-  - ROADMAP-12.79.0
 normative: true
 ---
 
