@@ -151,8 +151,20 @@ ORGANIZAÇÃO
 
 ### Experiência e Journey
 
+Contextos principais de experiência:
+
+```text
+PESSOA
+COLETIVO
+ORGANIZAÇÃO
+BUSINESS
+```
+
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Jornadas Integradas](docs/journeys/index.md)
+- [Jornada da Pessoa](docs/journeys/person.md)
+- [Jornada do Coletivo](docs/journeys/collective.md)
+- [Jornada da Organização](docs/journeys/organization.md)
 - [Guivos Business — Experiência Integrada](docs/journeys/business.md)
 - [Home Principal / Pessoa](docs/experience-architecture/public-home-master-document.md)
 - [Home de Organizações e Coletivos](docs/experience-architecture/public-home-organizations-collectives-master-document.md)
