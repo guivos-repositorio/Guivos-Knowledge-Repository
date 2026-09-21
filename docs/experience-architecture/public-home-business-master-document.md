@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.1.6
+version: 1.1.7
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
@@ -11,7 +11,6 @@ depends_on:
   - GKR-UX-HOME-BUSINESS-CONVERSION-002
   - GPA-004
   - GKR-STATE-001
-  - ROADMAP-12.79.0
 normative: true
 ---
 

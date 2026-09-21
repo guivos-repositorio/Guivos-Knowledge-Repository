@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.15
+version: 1.1.16
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
@@ -12,7 +12,6 @@ depends_on:
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
   - GPA-004
   - GKR-STATE-001
-  - ROADMAP-12.79.0
 normative: true
 ---
 
@@ -62,7 +61,7 @@ DESIGN REGIME
 → SNAPSHOT NOT REQUIRED
 
 DOCUMENTO MESTRE
-GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.6
+GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.7
 
 CONVERSÃO VIGENTE
 GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1
@@ -87,7 +86,7 @@ Objetivo do lock:
 Para a produção externa de Design da Home Business, o pacote específico de autoridade deve ser restrito a:
 
 1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — este Source Lock;
-2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.6 — `docs/experience-architecture/public-home-business-master-document.md`;
+2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.7 — `docs/experience-architecture/public-home-business-master-document.md`;
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002` v1.0.1 — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.5 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 5. `GPA-004` v1.7.4 — arquitetura funcional vigente do Guivos Business.
@@ -831,7 +830,7 @@ Usar:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.5` como autoridade comum de handoff;
 2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.13`;
-3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.6`;
+3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.7`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1`;
 5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.5`;
 6. `GPA-004 v1.7.4`.

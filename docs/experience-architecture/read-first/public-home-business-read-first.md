@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-READ-FIRST-001
 title: 00 — Leia Primeiro — Home Pública — Guivos Business
 status: active
-version: 1.0.3
+version: 1.0.4
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: false
@@ -46,8 +46,8 @@ AI
 
 ### Fontes específicas desta Home
 
-1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.15` — `docs/experience-architecture/public-home-business-source-lock.md`;
-2. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.6` — `docs/experience-architecture/public-home-business-master-document.md`;
+1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.16` — `docs/experience-architecture/public-home-business-source-lock.md`;
+2. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.7` — `docs/experience-architecture/public-home-business-master-document.md`;
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.5` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 5. `GPA-004 v1.7.4` — `docs/product-architecture/business.md`;
