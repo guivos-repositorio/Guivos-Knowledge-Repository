@@ -2,13 +2,12 @@
 id: UXA-020
 title: Página Inicial da Guivos e Início da Jornada
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-26
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-001
-  - UXA-003
   - UXA-011
   - UXA-011-A1
 related:
@@ -22,10 +21,18 @@ related:
   - PAS-001-PP-VIEW-001
   - PAS-001-OA-VIEW-001
   - GIA-000
+  - GKR-UX-HOME-MASTER-001
+  - GKR-UX-PER002-MAT-ELIGIBILITY-001
+  - GKR-JOURNEY-PERSON-001
+  - GKR-JOURNEY-SURFACE-REGISTRY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: true
 ---
 
 # Página Inicial da Guivos e Início da Jornada
+
+> **Escopo corrente desta autoridade.** Este documento preserva somente a separação funcional entre **Home pública → entrada protegida → Tela Hoje**, com seus limites de autonomia, privacidade, revisão e autorização. A narrativa e expressão da Home pública são governadas por `GKR-UX-HOME-MASTER-001`; o boundary corrente de entrada protegida por `GKR-UX-PER002-MAT-ELIGIBILITY-001`; e a continuidade da Pessoa pelos registries/Journey correntes. `UXA-003` não é mais dependência operacional desta autoridade.
+
 
 ## 1. Decisão arquitetural
 
@@ -90,7 +97,7 @@ A Home não deverá:
 - transformar patrocínio, popularidade ou posição comercial em relevância pessoal;
 - obrigar a criação de conta para conhecer o ecossistema.
 
-A validação funcional e o wireframe da Home são governados pelos identificadores UXA-021 e UXA-022.
+A responsabilidade pública da Home permanece funcionalmente compatível com esta fronteira, mas sua autoridade corrente de narrativa, conteúdo e criação para Design é `GKR-UX-HOME-MASTER-001` e o pacote vigente de Homes. A antiga materialização `UXA-022` foi absorvida/removida e não é autoridade visual corrente. `UXA-021` permanece apenas como evidência funcional histórica especializada enquanto ainda existir no corpus.
 
 ## 5. Transição consciente para o ambiente protegido
 
