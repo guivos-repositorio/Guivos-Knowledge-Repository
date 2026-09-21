@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-HANDOFFS-001
 title: Handoffs entre Participantes
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
+  - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-BUSINESS-001
