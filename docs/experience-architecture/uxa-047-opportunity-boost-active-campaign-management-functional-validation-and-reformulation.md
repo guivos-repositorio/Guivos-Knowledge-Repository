@@ -2,7 +2,7 @@
 id: UXA-047
 title: Validação Funcional e Reformulação dos Wireframes de Gestão da Campanha Ativa do Opportunity Boost
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: UXA-046
@@ -288,14 +288,16 @@ Esta validação não cria:
 - teste com usuários;
 - checkout, faturamento, cobrança ou Engenharia de Produto.
 
-## 10. Próximos atos governados
+## 10. Continuidade corrente
 
-Após integração e nova autorização, poderão ocorrer separadamente:
+Os antigos “próximos atos” desta validação foram executados ou absorvidos por frentes posteriores e não constituem backlog corrente.
 
-1. criar o wireframe do relatório agregado;
-2. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
-3. criar estados móveis de gestão, se priorizados;
-4. criar estados de erro, inventário insuficiente e preferência publicitária;
-5. testar posteriormente estados, pausa, cancelamento, orçamento e controles com Organizações e Coletivos.
+Para continuidade operacional, Design ou IA devem consultar:
 
-Nenhum ato é iniciado automaticamente.
+- `GKR-JOURNEY-SURFACE-REGISTRY-001`;
+- `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
+- `GKR-JOURNEY-GAPS-001`;
+- `UXA-038` como contrato funcional corrente do Opportunity Boost;
+- `UXA-099` para estados residuais ainda governados.
+
+Nenhum protótipo, implementação, política econômica final ou Engenharia de Produto é autorizado por este documento.
