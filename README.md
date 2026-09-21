@@ -236,6 +236,8 @@ As equipes não recebem cópias próprias de autoridades. Elas entram no mesmo c
 | Marketing / marca | Marca e Ativos Digitais · Guia Oficial · Go-to-Market |
 | Publicidade / Ads | Arquitetura de Produtos · Modelo Econômico · Go-to-Market |
 | Comercial | Estratégia de Negócio · Produtos · Economia · GTM |
+
+> **Leitura:** a lente documental **Comercial** organiza estratégia, produtos, economia e GTM no repositório. Ela não representa o produto **Guivos Business**, não é tipo de participante e não substitui Pessoa, Coletivo, Organização ou Business como contextos de experiência.
 | Produto | Arquitetura de Produtos · Experience Architecture · Jornadas |
 | UX / Design | Experience Architecture · Jornadas · PER-002 Handoff · Design Authorization · Design Delivery · Functional Validation · High-Fidelity Eligibility · High-Fidelity Authorization · High-Fidelity Delivery · High-Fidelity Validation · Prototype Eligibility · Prototype Authorization · Prototype Delivery · Post-Review Prototype Revalidation · Estado Atual |
 | Desenvolvimento | Produtos · Experience Architecture · Arquitetura Corporativa |
