@@ -6,7 +6,7 @@ version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: true
-maturity: authenticated_high_fidelity_design_eligibility_pass_pre_authorization
+maturity: authenticated_high_fidelity_design_eligibility_pass_authorization_granted
 depends_on:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
