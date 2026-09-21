@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-ADS-BOUNDARIES-001
 title: Detalhamento Obrigatório — Ads / Opportunity Boost e Fronteiras Documentais
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -65,7 +65,7 @@ BND-*
 
 ## 2. Campos por identificador
 
-| ID | Artefato canônico e caminho | Versão | Entrada | Decisão principal | Saída | Dados e conteúdos | Gate | Reversibilidade | Supersessão | Continuidade | Lacuna | Observação de escopo |
+| ID | Autoridade corrente | Estado/versão | Entrada | Decisão principal | Saída | Dados e conteúdos | Gate | Reversibilidade | Supersessão | Continuidade | Lacuna | Observação de escopo |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | GKR-SURF-COM-001 | GPA-007 + UXA-038 + UXA-041 | contrato funcional corrente | intenção de promover | configurar, revisar, confirmar ou cancelar campanha | campanha configurada | objetivo, orçamento, público permitido, inventário e parâmetros comerciais | autoridade econômica e confirmação | editar, cancelar ou salvar antes da ativação | nenhuma identificada | parcial | integração econômica completa | entrada documental seletiva; não declara jornada completa |
 | GKR-SURF-COM-002 | GPA-007 + UXA-038 + UXA-043 | contrato funcional corrente | entrega identificada | abrir detalhe, pedir explicação, ocultar ou retornar | detalhe, explicação ou retorno orgânico | conteúdo patrocinado identificado, origem, relação comercial e controles | nenhuma legitimidade ou autoridade implícita | ignorar, ocultar, denunciar ou retornar ao contexto orgânico | nenhuma identificada | parcial | integração com superfícies orgânicas | entrada documental seletiva; não declara jornada completa |
@@ -81,7 +81,7 @@ Valores sem evidência suficiente permanecem `indeterminado`, `ausente` ou `não
 
 ## 4. Efeito da UXA-101
 
-A UXA-101 examina `BND-001` e valida `TRN-205` **até a fronteira de autoridade da Guivos**. O estado de revisão permanece em `PER-203`; nenhum SVG é criado para a fronteira e nenhum resultado externo é presumido.
+A UXA-101 examina `BND-001` e valida `TRN-205` **até a fronteira de autoridade da Guivos**. O estado de revisão permanece em `PER-203`; nenhuma superfície adicional é criada para a fronteira e nenhum resultado externo é presumido.
 
 A Guivos deve interromper a saída quando o destino conhecido não puder ser revalidado e deve preservar retorno seguro ao Detalhe. Dados pessoais, inferências ou histórico de jornada não acompanham a transição sem finalidade e autorização adequadas.
 
