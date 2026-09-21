@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.17
+version: 1.1.18
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
@@ -804,7 +804,7 @@ A produção externa de Design deve sinalizar essas lacunas quando materialmente
 O regime corrente das oito Homes é governado pelas autoridades comuns vigentes:
 
 ```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.5
+GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.7
 → DESIGNER-FIRST
 → 8 / 8 HOMES
 
@@ -830,12 +830,13 @@ O consumo corrente da Home Business é resolvido pelo Manifesto canônico vigent
 
 Usar:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.5` como autoridade comum de handoff;
-2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.13`;
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.7` como autoridade comum de handoff;
+2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.18`;
 3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.7`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1`;
 5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.5`;
-6. `GPA-004 v1.7.4`.
+6. `GPA-004 v1.7.4`;
+7. `GKR-PLANS-BUSINESS-001 v1.3.0` — planos, preços de referência e composição Self-service corrente.
 
 ```text
 SOURCE OF TRUTH
