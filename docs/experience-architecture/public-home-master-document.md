@@ -17,15 +17,8 @@ depends_on:
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-001
-  - GKR-UX-HOME-VAL-001
   - GKR-UX-HOME-NARR-001
-  - GKR-UX-HOME-NARR-002
-  - GKR-UX-HOME-NARR-003
-  - GKR-UX-HOME-NARR-004
   - GKR-UX-HOME-NARR-005
-  - GKR-UX-HOME-NAV-001
-  - GKR-UX-HOME-NAV-003
-  - GKR-UX-HOME-SYS-001
   - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
 related:
   - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
@@ -1309,14 +1302,14 @@ A definição funcional de Q não deve preencher itens visuais ou operacionais p
 | `GKR-BRAND-SIGNATURE-001` | assinatura institucional correta | absorvido |
 | `GKR-BRAND-PUBLIC-AUTHORITY-001` | Guivos ≠ fundador | absorvido |
 | propagation de autoridade pública | correção da Hero e Movimento 06 | **conteúdo Home absorvido; arquivo ainda não removido** |
-| `GKR-UX-HOME-VAL-001` | pergunta-mãe, amplitude, protagonismo, cinco pilares | absorvido com correções posteriores |
+| `GKR-UX-HOME-VAL-001` | pergunta-mãe, amplitude, protagonismo, cinco pilares | absorvido com correções posteriores; removido do corpus corrente |
 | `NARR-001` | 11 movimentos e contratos narrativos | absorção mestre; detalhes permanecem no especializado |
-| `NARR-002` | coerência do Movimento 08 | absorvido |
-| `NARR-003` | participante ≠ produto | absorvido |
-| `NARR-004` | realidade × experiência × autoridade | absorvido |
+| `NARR-002` | coerência do Movimento 08 | absorvido; removido do corpus corrente |
+| `NARR-003` | participante ≠ produto | absorvido; removido do corpus corrente |
+| `NARR-004` | realidade × experiência × autoridade | absorvido; removido do corpus corrente |
 | `NARR-005` | 7 macroexperiências | absorvido com novo rótulo do M06 |
-| `NAV-001/003/004` | Header, launcher, CTAs, scroll e mobile | absorvido; `NAV-004` removido do corpus corrente, demais contratos preservados enquanto mantêm função própria |
-| `SYS-001` | conteúdo, prova, histórias, interação, ritmo e acessibilidade | absorvido |
+| `NAV-001/003/004` | Header, launcher, CTAs, scroll e mobile | absorvido; removido do corpus corrente |
+| `SYS-001` | conteúdo, prova, histórias, interação, ritmo e acessibilidade | absorvido; removido do corpus corrente |
 | `GTM-BOUNDARY-001` | arquitetura ≠ lançamento | absorvido; removido do corpus corrente |
 | Media supply | Media como fonte editorial sem transferência de autoridade | absorvido |
 | `UXA-020/021` | fronteira pública/protegida e ausência de coleta na Home | absorvido nos limites atuais |
@@ -1335,18 +1328,11 @@ Esta matriz **não autoriza remoção automática das fontes**. A remoção fís
 ### Mensagem e narrativa
 
 - [Diretriz Estratégica de Mensagem](public-home-message-authority-transformation-direction.md)
-- [Consolidação da Hero e Narrativa](public-home-validated-hero-and-narrative-consolidation.md)
 - [Especificação dos 11 Movimentos](public-home-11-movements-narrative-specification.md)
 - [Macroexperiências](public-home-11-movements-macroexperience-grouping-map.md)
-- [Movimento 08 — Ecossistema e Produtos](public-home-movement-08-ecosystem-products-narrative-hierarchy.md)
-- [Transição Participantes → Produtos](public-home-movement-07-to-08-participant-product-transition.md)
-- [Realidade × Autoridade](public-home-movement-02-vs-09-reality-authority-distinction.md)
 
 ### Navegação, conteúdo e fronteiras
 
-- [Navegação e Acessos](public-home-navigation-access-and-footer-architecture.md)
-- [Header × Hero × CTAs](public-home-header-hero-cta-hierarchy.md)
-- [Sistema de Conteúdo, Prova, Interação e Visual](public-home-content-proof-interaction-visual-system.md)
 - [Supply Editorial do Media](public-home-person-media-editorial-supply-reconciliation.md)
 
 ### Auditoria e evidência
