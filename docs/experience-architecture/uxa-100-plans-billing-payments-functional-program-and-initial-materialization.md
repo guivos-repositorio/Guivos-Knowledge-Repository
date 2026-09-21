@@ -2,9 +2,9 @@
 id: UXA-100
 title: Programa Funcional, Materialização, Validação e Promoção de Planos, Cobrança e Pagamentos
 status: draft
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - GEM-004-A1
@@ -24,9 +24,13 @@ related:
   - GPA-004
   - GKR-STATE-001
 normative: false
+maturity: historical_absorbed_provenance_only
 ---
 
 # Programa Funcional, Materialização, Validação e Promoção de Planos, Cobrança e Pagamentos
+
+> **Estado corrente — proveniência histórica absorvida.** Este documento permanece fisicamente no corpus somente para rastreabilidade transitória. Sua função operacional foi absorvida por `GEM-004-PLAN-TAXONOMY-AUTHORITY-001`, pelas páginas ativas `GKR-PLANS-PERSON-001`, `GKR-PLANS-COLLECTIVE-001`, `GKR-PLANS-ORGANIZATION-001`, pelos registries correntes de superfícies/transições e, para Business, por `GKR-PLANS-BUSINESS-001` + `GPA-004`. **Não é entrada de Design, não é entrada de IA e não deve ser usado como autoridade corrente.** A proveniência definitiva permanece no Git.
+
 
 > **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
 
