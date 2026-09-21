@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Intelligence
 status: active
-version: 1.1.11
+version: 1.1.12
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GKR-UX-HOME-INTELLIGENCE-MASTER-001
@@ -79,7 +79,7 @@ Objetivo do lock:
 Para a produção externa de Design da Home Intelligence, o pacote específico de autoridade deve ser restrito a:
 
 1. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001` — este Source Lock;
-2. `GKR-UX-HOME-INTELLIGENCE-MASTER-001` v0.2.9 — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+2. `GKR-UX-HOME-INTELLIGENCE-MASTER-001` v0.2.10 — `docs/experience-architecture/public-home-intelligence-master-document.md`;
 3. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001` v0.2.4 — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 4. `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001` v1.0.1 — `docs/product-architecture/intelligence-product-source-lock.md`;
 5. `GPA-006` v2.0.1 — `docs/product-architecture/intelligence.md`;
