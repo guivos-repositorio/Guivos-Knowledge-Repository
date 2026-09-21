@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCENARIOS-001
 title: Cenários Integrados de Jornada
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
@@ -160,9 +160,9 @@ O contrato bilateral existe, mas as transições `GKR-TRN-206..209` preservam a 
 
 As superfícies bilaterais e a operação ponta a ponta não devem ser presumidas como completas apenas porque os atores e contratos funcionais existem.
 
-## 8. Opportunity Boost e camada comercial
+## 8. Ads / Opportunity Boost
 
-Os estados residuais do Opportunity Boost possuem validação funcional corrente.
+Os estados residuais de Ads / Opportunity Boost possuem validação funcional corrente. Os IDs `COM-*` associados a esse recorte são legado de identificação e não representam Guivos Business.
 
 Isso não fecha automaticamente a integração orgânico–patrocinado.
 
