@@ -2,14 +2,13 @@
 id: UXA-096
 title: Validação Funcional do Início do Participante, Revalidação de PER-107 e Validação Integrada de TRN-111
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-056
   - UXA-058
-  - UXA-059
   - UXA-094
 related:
   - GKR-SURF-PER-107

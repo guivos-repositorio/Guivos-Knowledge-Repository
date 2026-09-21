@@ -2,14 +2,13 @@
 id: UXA-094
 title: Validação Funcional da Central de Atualizações e Revalidação de GKR-TRN-110
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-056
   - UXA-058
-  - UXA-059
   - UXA-092
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001

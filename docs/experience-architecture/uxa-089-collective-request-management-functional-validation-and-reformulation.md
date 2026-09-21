@@ -2,15 +2,13 @@
 id: UXA-089
 title: Validação Funcional e Reformulação da Gestão de Solicitações do Responsável do Coletivo
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-014
   - UXA-056
-  - UXA-059
-  - UXA-067
   - UXA-087
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -51,8 +49,7 @@ O gate foi realizado contra:
 
 - UXA-014 — fundação funcional de Organizações e Coletivos;
 - UXA-056 — descoberta, perfil público, participação e gestão do Coletivo;
-- UXA-059 — programa e priorização dos wireframes de Coletivos;
-- UXA-066/067 — estados e efeitos já materializados e validados na perspectiva da Pessoa;
+- UXA-056 — contrato funcional corrente da perspectiva da Pessoa, com validação absorvida;
 - UXA-086/087 — Visão Geral do Responsável materializada e validada;
 - UXA-088 — materialização da gestão de solicitações.
 
@@ -234,7 +231,7 @@ A UXA-089 **não promove** `GKR-TRN-105` a `GKR-TRN-109` nem `GKR-TRN-112` para 
 Após esta frente:
 
 ```text
-PER-105 — validada em UXA-067
+PER-105 — contrato corrente em UXA-056, com handoffs revalidados em UXA-090
 ↔ TRN-105/106/107/109 — continuam parciais
 ↔ COL-003 — validada em UXA-089
 

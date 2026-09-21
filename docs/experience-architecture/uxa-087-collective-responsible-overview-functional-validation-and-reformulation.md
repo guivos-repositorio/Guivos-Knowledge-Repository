@@ -2,15 +2,14 @@
 id: UXA-087
 title: Validação Funcional e Reformulação da Visão Geral do Responsável do Coletivo
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-014
   - UXA-056
   - UXA-058
-  - UXA-059
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -44,7 +43,6 @@ O gate foi realizado contra as autoridades vigentes:
 - UXA-014 — fundação funcional de Organizações e Coletivos;
 - UXA-056 — descoberta, perfil público, participação e gestão do Coletivo;
 - UXA-058 — comunicação, origem, autoridade, proteção e reversibilidade das interações;
-- UXA-059 — programa e priorização dos wireframes de Coletivos;
 - `GKR-JOURNEY-SURFACE-REGISTRY-001` e `GKR-JOURNEY-TRANSITION-REGISTRY-001` — registros granulares correntes;
 - UXA-086 — contrato e materialização da Visão Geral do Responsável.
 
@@ -179,7 +177,7 @@ Nesse estado:
 - o responsável poderá continuar navegando por áreas autorizadas;
 - nenhuma perda, punição ou redução de reputação decorrerá da ausência de ação.
 
-A materialização de estados P0B adicionais continua separada conforme UXA-059.
+Estados adicionais permanecem separados e exigem autoridade corrente e gate próprio; o programa histórico UXA-059 não é autorização vigente.
 
 ## 9. Autoridade insuficiente
 
@@ -193,7 +191,7 @@ O contrato aprovado exige, porém, que quando a representação não for válida
 - exista caminho de retorno, ajuda ou contestação aplicável;
 - nenhuma autoridade seja inferida apenas por vínculo, apoio institucional ou posição histórica.
 
-Esse estado poderá receber wireframe separado quando autorizado, conforme UXA-059.
+Esse estado poderá receber expressão visual separada somente quando houver necessidade funcional e autorização própria.
 
 ## 10. Dados, privacidade e proteção
 

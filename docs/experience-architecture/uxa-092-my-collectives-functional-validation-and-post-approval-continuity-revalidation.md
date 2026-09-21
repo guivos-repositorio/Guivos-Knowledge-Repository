@@ -2,15 +2,13 @@
 id: UXA-092
 title: Validação Funcional de Meus Coletivos e Revalidação da Continuidade Pós-Aprovação
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-014
   - UXA-056
-  - UXA-059
-  - UXA-067
   - UXA-089
   - UXA-090
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -42,8 +40,7 @@ A frente responde:
 ## 2. Autoridades utilizadas
 
 - UXA-056 — contrato funcional de descoberta, participação e `Meus Coletivos`;
-- UXA-059 — programa P0A/P0B e regra de família funcional;
-- UXA-066/067 — estados da solicitação na perspectiva da Pessoa;
+- UXA-056 — estados correntes da solicitação na perspectiva da Pessoa;
 - UXA-088/089 — decisão na perspectiva do responsável;
 - UXA-090 — contrato integrado de identidade, estado canônico, autoridade, concorrência e efeito lógico único;
 - UXA-091 — materialização de `PER-106` e refinamento inicial de `TRN-108`;

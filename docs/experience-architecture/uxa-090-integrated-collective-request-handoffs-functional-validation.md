@@ -2,15 +2,13 @@
 id: UXA-090
 title: Validação Integrada dos Handoffs Bilaterais de Solicitação em Coletivos
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-014
   - UXA-056
-  - UXA-059
-  - UXA-067
   - UXA-087
   - UXA-089
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -56,7 +54,7 @@ O pacote valida somente os handoffs cujos endpoints já possuem cobertura sufici
 A inspeção integra:
 
 - UXA-056 — contrato funcional de participação em Coletivos;
-- UXA-066/067 — Solicitação Pendente e seus estados na perspectiva da Pessoa;
+- UXA-056 — contrato funcional corrente da Solicitação Pendente e seus estados na perspectiva da Pessoa;
 - UXA-086/087 — Visão Geral do Responsável;
 - UXA-088/089 — gestão de solicitações na perspectiva responsável;
 - Registro de Superfícies;

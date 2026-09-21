@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.0
+version: 0.29.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
@@ -95,15 +95,15 @@ O modelo corrente não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011
 
 | ID | Origem | Destino | Perspectiva | Condição e efeito principal | Evidência | Estado | Lacuna |
 |---|---|---|---|---|---|---|---|
-| GKR-TRN-101 | PER-101 | PER-102 | visitante | pesquisar/filtrar sem criar vínculo | UXA-061 | localmente validada | continuidade entre famílias |
-| GKR-TRN-102 | PER-102 | PER-103 | visitante | abrir Perfil Público | UXA-061/063 | parcial | ligação entre pacotes |
-| GKR-TRN-103 | PER-103 | PER-104 | solicitante potencial | iniciar revisão consciente | UXA-063/065 | parcial | handoff para solicitação |
-| GKR-TRN-104 | PER-104 | PER-105 | solicitante | enviar solicitação autorizada | UXA-065/067 | parcial | continuidade entre pacotes |
-| GKR-TRN-105 | PER-105 | COL-003 | solicitante → responsável | disponibilizar solicitação com mesmo identificador lógico | UXA-067/089/090 | **integralmente validada** | — |
-| GKR-TRN-106 | COL-003 | PER-105 | responsável → solicitante | pedir informação adicional sem aprovar | UXA-067/089/090 | **integralmente validada** | — |
-| GKR-TRN-107 | PER-105 | COL-003 | solicitante → responsável | responder à mesma finalidade sem duplicação | UXA-067/089/090 | **integralmente validada** | — |
+| GKR-TRN-101 | PER-101 | PER-102 | visitante | pesquisar/filtrar sem criar vínculo | UXA-056 | localmente validada | continuidade entre responsabilidades |
+| GKR-TRN-102 | PER-102 | PER-103 | visitante | abrir Perfil Público | UXA-056 | parcial | ligação ponta a ponta ainda parcial |
+| GKR-TRN-103 | PER-103 | PER-104 | solicitante potencial | iniciar revisão consciente | UXA-056 | parcial | handoff para solicitação |
+| GKR-TRN-104 | PER-104 | PER-105 | solicitante | enviar solicitação autorizada | UXA-056 | parcial | continuidade até estado pendente |
+| GKR-TRN-105 | PER-105 | COL-003 | solicitante → responsável | disponibilizar solicitação com mesmo identificador lógico | UXA-056/089/090 | **integralmente validada** | — |
+| GKR-TRN-106 | COL-003 | PER-105 | responsável → solicitante | pedir informação adicional sem aprovar | UXA-056/089/090 | **integralmente validada** | — |
+| GKR-TRN-107 | PER-105 | COL-003 | solicitante → responsável | responder à mesma finalidade sem duplicação | UXA-056/089/090 | **integralmente validada** | — |
 | GKR-TRN-108 | COL-003 | PER-106 | responsável → participante | aprovação forma vínculo; navegação posterior é opcional | UXA-089/090/092 | **integralmente validada** | — |
-| GKR-TRN-109 | COL-003 | PER-105 | responsável → solicitante | recusar com fundamento proporcional | UXA-067/089/090 | **integralmente validada** | — |
+| GKR-TRN-109 | COL-003 | PER-105 | responsável → solicitante | recusar com fundamento proporcional | UXA-056/089/090 | **integralmente validada** | — |
 | GKR-TRN-110 | PER-106 | PER-107 | participante | abrir Central sem alterar vínculo ou leitura | UXA-092/093/094/096 | **integralmente validada** | — |
 | GKR-TRN-111 | PER-107 | PER-108 | participante | abrir início do mesmo Coletivo com permissão revalidada | UXA-096 | **integralmente validada** | — |
 | GKR-TRN-112 | COL-002 | COL-003 | responsável | abrir fila especializada preservando escopo | UXA-087/089/090 | **integralmente validada** | — |

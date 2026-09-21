@@ -2,7 +2,7 @@
 id: UXA-056
 title: Contrato Funcional de Descoberta, Perfil Público e Participação em Coletivos
 status: active
-version: 0.2.1
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: UXA-000
@@ -614,9 +614,9 @@ A UXA-058 deverá definir:
 - notificações;
 - bloqueio, denúncia e proteção.
 
-## 24. Estados obrigatórios para futuros wireframes
+## 24. Cobertura funcional corrente
 
-Os futuros wireframes deverão cobrir, em incrementos separados:
+A cobertura funcional corrente reconhece, sem impor número de telas ou canal:
 
 1. busca e exploração com resultados;
 2. busca sem resultados;
@@ -639,6 +639,29 @@ Os futuros wireframes deverão cobrir, em incrementos separados:
 19. suspensão e remoção;
 20. Coletivo encerrado.
 
+### 24.1 Validação funcional absorvida
+
+As antigas validações de wireframes móveis de descoberta, Perfil Público, revisão/solicitação e Solicitação Pendente foram absorvidas neste contrato e nos registries correntes.
+
+Regras preservadas:
+
+- descoberta não cria vínculo;
+- origem da descoberta permanece explicável;
+- busca, filtros e retorno preservam contexto sem exigir localização precisa;
+- ausência de resultados não autoriza ampliar critérios ou preencher o vazio com publicidade;
+- conteúdo patrocinado permanece identificado e não substitui o primeiro resultado orgânico;
+- Perfil Público mostra identidade, propósito, funcionamento e condição de entrada antes da ação;
+- entrada aberta, aprovação, convite, entrada fechada e proteção possuem efeitos distintos;
+- acompanhar não equivale a participar;
+- revisão precede criação de vínculo ou envio para análise;
+- dados compartilhados, regras e consequências devem ser compreensíveis antes da confirmação;
+- consultar uma solicitação pendente não altera fila, prioridade ou decisão;
+- espera, pedido de informação, resposta, aprovação, recusa e cancelamento permanecem estados distintos;
+- comprovante transitório não se torna superfície contínua de gestão;
+- canal móvel, computador ou outra composição pertence ao Design e não altera o significado funcional.
+
+`UXA-061`, `UXA-063`, `UXA-065` e `UXA-067` permanecem somente como proveniência no Git.
+
 ## 25. Critérios de aceite
 
 O contrato poderá avançar quando:
@@ -657,7 +680,7 @@ O contrato poderá avançar quando:
 12. Organizações não receberem automaticamente dados de participantes;
 13. avaliação permanecer reservada à UXA-057;
 14. comunicação e recomendação permanecerem reservadas à UXA-058;
-15. nenhum wireframe, protótipo, teste ou desenvolvimento for antecipado.
+15. nenhum Design, protótipo ou desenvolvimento for autorizado por inferência.
 
 ## 26. Limites
 
@@ -674,15 +697,14 @@ Este contrato não:
 - cria cobrança ou vantagem de plano;
 - inicia Engenharia de Produto.
 
-## 27. Próximos atos candidatos
+## 27. Consumo corrente e próximos gates
 
-Após integração e nova autorização, poderão ocorrer separadamente:
+Para consumo atual:
 
-1. UXA-057 — contrato funcional de avaliação e reputação;
-2. UXA-058 — contrato funcional de interações, recomendações e conexões;
-3. materialização dos wireframes de descoberta e perfil público;
-4. materialização dos wireframes de participação e Meus Coletivos;
-5. materialização da gestão do responsável;
-6. validação funcional dos conjuntos materializados.
+- este contrato governa descoberta, Perfil Público, participação e estados da Pessoa;
+- `UXA-057` governa avaliação e reputação;
+- `UXA-058` governa interações, recomendações e conexões;
+- Surface Registry e Transition Registry governam maturidade e continuidade;
+- as autoridades autenticadas de Organização/Coletivo governam IA, superfícies, estados, fluxos e navegação do responsável.
 
-Nenhum ato é iniciado automaticamente.
+Design high-fidelity autenticado de Organização/Coletivo permanece em gate próprio. Protótipo e implementação continuam separados e não são autorizados por este documento.
