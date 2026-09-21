@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-ORGANIZATION-001
 title: Detalhamento Obrigatório das Superfícies da Organização
 status: active
-version: 0.10.0
+version: 0.10.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
 related:
   - UXA-100
@@ -84,4 +84,4 @@ Qualquer continuidade visual high-fidelity da Visão Geral da Organização deve
 
 ## 6. Estado
 
-O detalhamento está `active` 0.10.0 como parte integrante do registro. A Jornada da Organização está `active`. A arquitetura da informação autenticada preserva sua maturidade documental própria; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` permanecem autoridades canônicas. A Navigation Materialization está definida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`; o wireframe autenticado low-fidelity da Organização foi entregue em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validado com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. High-fidelity permanece apenas elegível, sem autorização de execução; fluxos especializados preservam a maturidade sustentada por suas próprias autoridades.
+O detalhamento está `active` 0.10.1 como parte integrante do registro. A Jornada da Organização está `active`. A arquitetura da informação autenticada preserva sua maturidade documental própria; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` permanecem autoridades canônicas. A Navigation Materialization está definida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`; o wireframe autenticado low-fidelity da Organização foi entregue em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validado com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. High-fidelity está **autorizado e ainda não iniciado**; protótipo interativo e implementação permanecem gates separados e não autorizados por essa decisão. Fluxos especializados preservam a maturidade sustentada por suas próprias autoridades.
