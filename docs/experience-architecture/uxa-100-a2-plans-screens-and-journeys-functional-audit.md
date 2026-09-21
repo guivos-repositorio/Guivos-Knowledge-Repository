@@ -2,9 +2,9 @@
 id: UXA-100-A2
 title: Auditoria Funcional das Telas, Fluxos e Jornadas de Planos
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-08
+last_updated: 2026-09-21
 parent: UXA-100
 depends_on:
   - UXA-100-A1
@@ -19,9 +19,13 @@ related:
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
 normative: false
+maturity: historical_absorbed_provenance_only
 ---
 
 # Auditoria Funcional das Telas, Fluxos e Jornadas de Planos
+
+> **Estado corrente — proveniência histórica absorvida.** Este documento permanece fisicamente no corpus somente para rastreabilidade transitória. Sua função operacional foi absorvida por `GEM-004-PLAN-TAXONOMY-AUTHORITY-001`, pelas páginas ativas `GKR-PLANS-PERSON-001`, `GKR-PLANS-COLLECTIVE-001`, `GKR-PLANS-ORGANIZATION-001`, pelos registries correntes de superfícies/transições e, para Business, por `GKR-PLANS-BUSINESS-001` + `GPA-004`. **Não é entrada de Design, não é entrada de IA e não deve ser usado como autoridade corrente.** A proveniência definitiva permanece no Git.
+
 
 ## 1. Finalidade
 
