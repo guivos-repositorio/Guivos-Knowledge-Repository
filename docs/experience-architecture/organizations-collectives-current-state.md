@@ -20,6 +20,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
@@ -73,7 +74,7 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | validação de wireframe da Organização | **PASS / 0 findings materiais** | concluída |
 | validação de wireframe do Coletivo | **PASS / 0 findings materiais** | concluída |
 | elegibilidade high-fidelity O/C | **PASS** | [Elegibilidade High-Fidelity](organizations-collectives-authenticated-high-fidelity-eligibility.md) |
-| autorização high-fidelity O/C | **NOT_GRANTED** | pendente de ato humano separado |
+| autorização high-fidelity O/C | **GRANTED / NOT_STARTED** | [Autorização High-Fidelity](organizations-collectives-authenticated-high-fidelity-authorization.md) |
 | UI / protótipo autenticado | não definido | pendente |
 | Engenharia da experiência autenticada | não autorizada a partir de wireframe | pendente |
 
@@ -87,7 +88,8 @@ A cadeia autenticada corrente pode ser percorrida diretamente a partir deste hub
 6. [Materialização de Navegação](organizations-collectives-authenticated-navigation-materialization.md);
 7. [Entrega Low-Fidelity](organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md);
 8. [Validação Low-Fidelity](organizations-collectives-authenticated-low-fidelity-functional-validation.md);
-9. [Elegibilidade High-Fidelity](organizations-collectives-authenticated-high-fidelity-eligibility.md).
+9. [Elegibilidade High-Fidelity](organizations-collectives-authenticated-high-fidelity-eligibility.md);
+10. [Autorização High-Fidelity](organizations-collectives-authenticated-high-fidelity-authorization.md).
 
 Esses documentos permanecem autoridades correntes de detalhe. Eles saem do MENU principal para reduzir poluição de navegação, não por perda de validade.
 
@@ -448,8 +450,8 @@ Este commit **não autoriza nem materializa** a continuação. Permanecem delibe
 ```text
 Authenticated Wireframes / low-fidelity — DELIVERY + VALIDATION PASS
 → high-fidelity eligibility — PASS / v1.0.0
-→ high-fidelity design authorization — NOT_GRANTED / NEXT POSSIBLE HUMAN GATE
-→ UI high-fidelity — NOT AUTHORIZED
+→ high-fidelity design authorization — GRANTED / v1.0.0
+→ high-fidelity design execution — AUTHORIZED / NOT_STARTED
 → protótipo
 → testes
 → handoff técnico
