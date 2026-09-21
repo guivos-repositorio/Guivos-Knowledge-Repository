@@ -153,6 +153,7 @@ ORGANIZAÇÃO
 
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Jornadas Integradas](docs/journeys/index.md)
+- [Guivos Business — Experiência Integrada](docs/journeys/business.md)
 - [Home Principal / Pessoa](docs/experience-architecture/public-home-master-document.md)
 - [Home de Organizações e Coletivos](docs/experience-architecture/public-home-organizations-collectives-master-document.md)
 - [Homes Públicas — Manifesto Corrente de Entrega](docs/experience-architecture/public-homes-design-delivery-manifest.md)
