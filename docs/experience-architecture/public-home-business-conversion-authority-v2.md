@@ -2,15 +2,14 @@
 id: GKR-UX-HOME-BUSINESS-CONVERSION-002
 title: Autoridade de Conversão Global — Home Pública — Guivos Business — v2
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-21
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
 depends_on:
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
   - GPA-004
   - GKR-STATE-001
-  - ROADMAP-12.79.0
 normative: true
 ---
 
