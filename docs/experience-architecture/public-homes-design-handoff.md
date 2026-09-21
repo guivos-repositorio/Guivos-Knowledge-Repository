@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.7.6
+version: 1.7.7
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -225,7 +225,8 @@ O contexto de Business permanece deliberadamente mais amplo. Usar somente o paco
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002`;
 4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001`;
 5. `GPA-004`;
-6. `GKR-UX-HOMES-GENINPUT-001`, somente quando a designer optar por usar IA ou ferramenta generativa.
+6. `GKR-PLANS-BUSINESS-001`;
+7. `GKR-UX-HOMES-GENINPUT-001`, somente quando a designer optar por usar IA ou ferramenta generativa.
 
 ### 4.8 Guivos Intelligence
 

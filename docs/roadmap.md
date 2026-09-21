@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.11
+version: 13.48.12
 owner: Guivos
 last_updated: 2026-09-21
 normative: true
@@ -60,7 +60,7 @@ A auditoria integral anterior está concluída. Lotes, findings resolvidos, SHAs
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-101` |
 | Homes públicas | `8 / 8 READY FOR EXTERNAL DESIGN` |
-| Manifesto de Design | `GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.27` |
+| Manifesto de Design | `GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.28` |
 | Read-First das Homes | `8 / 8 CURRENT / NON-NORMATIVE` |
 | Design das Homes | `DESIGNER-FIRST / AI OPTIONAL / TOOL-NEUTRAL` |
 | Journey | vistas e registries correntes ativos |
