@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.22.0
+version: 1.23.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -13,6 +13,7 @@ related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-JOURNEYS-001
+  - GKR-JOURNEY-BUSINESS-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -79,6 +80,7 @@ Para prototipação que atravesse uma Home e entre em experiência autenticada, 
 - [Jornada da Pessoa](../journeys/person.md);
 - [Jornada do Coletivo](../journeys/collective.md);
 - [Jornada da Organização](../journeys/organization.md);
+- [Experiência Integrada do Guivos Business](../journeys/business.md);
 - [Catálogo Integrado de Telas](../journeys/screen-catalog.md);
 - [Registro de Superfícies e Estados](../journeys/surface-registry.md);
 - [Registro de Transições](../journeys/transition-registry.md).
