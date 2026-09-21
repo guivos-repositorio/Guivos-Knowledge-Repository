@@ -14,7 +14,6 @@ depends_on:
   - UXA-020
 related:
   - UXA-010
-  - UXA-021
   - PAS-001-CV-VIEW-001
   - PAS-001-OBJ-VIEW-001
   - PAS-001-PP-VIEW-001
