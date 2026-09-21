@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.17
+version: 7.0.18
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -109,22 +109,22 @@ O uso manual não exige Source Lock ou registro de execução de IA.
 
 - `GKR-UX-HOME-BUSINESS-READ-FIRST-001 v1.0.0` — `docs/experience-architecture/read-first/public-home-business-read-first.md`;
 
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.12` — `docs/experience-architecture/public-home-business-source-lock.md`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.5` — `docs/experience-architecture/public-home-business-master-document.md`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.13` — `docs/experience-architecture/public-home-business-source-lock.md`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.6` — `docs/experience-architecture/public-home-business-master-document.md`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.4` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.5` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.7.3` — `docs/product-architecture/business.md`.
 
 ### 3.8 Intelligence
 
 - `GKR-UX-HOME-INTELLIGENCE-READ-FIRST-001 v1.0.0` — `docs/experience-architecture/read-first/public-home-intelligence-read-first.md`;
 
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.11` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.12` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.11` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
 - `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.10` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
 - `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 - `GKR-UX-HOMES-OUTCOME-001 v1.0.0` — `docs/experience-architecture/public-homes-value-outcome-principle.md`;
-- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1` — `docs/product-architecture/intelligence-product-source-lock.md`;
+- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.2` — `docs/product-architecture/intelligence-product-source-lock.md`;
 - `GPA-006 v2.0.1` — `docs/product-architecture/intelligence.md`.
 
 ## 4. Cobertura atual

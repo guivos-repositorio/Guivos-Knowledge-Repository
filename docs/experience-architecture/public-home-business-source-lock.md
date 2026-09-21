@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.12
+version: 1.1.13
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
@@ -44,34 +44,38 @@ Regra:
 
 > **Source Lock congela a fonte. Não autoriza, por si só, a materialização.**
 
-## 2. Checkpoint do Source Lock
+## 2. Estado corrente do Source Lock
 
 ```text
 HOME
 Guivos Business
 
-FASE
-Source Lock reconciliado para handoff designer-first
+STATE
+→ ACTIVE / NORMATIVE
 
-ORIGIN CHECKPOINT
-main @ 41dd34ca7f2a22776b8eea57d99ef1b77db82969
-→ HISTORICAL PROVENANCE
+SOURCE OF TRUTH
+→ CURRENT MAIN
 
-RECONCILIATION
-→ 2026-09-19
-→ CURRENT DESIGNER-FIRST / AI-OPTIONAL CONTRACT APPLIES
+DESIGN REGIME
+→ DESIGNER-FIRST
+→ AI OPTIONAL
+→ SNAPSHOT NOT REQUIRED
 
 DOCUMENTO MESTRE
-GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.5
+GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.6
 
 CONVERSÃO VIGENTE
 GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1
 
 CONTRATOS DE AUTORIDADE
-GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.4
+GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.5
 
 ARQUITETURA FUNCIONAL
 GPA-004 v1.7.3
+
+HISTORICAL ORIGIN / CHECKPOINT
+→ GIT PROVENANCE ONLY
+→ NOT OPERATIONAL INPUT
 ```
 
 Objetivo do lock:
@@ -796,14 +800,14 @@ A produção externa de Design deve sinalizar essas lacunas quando materialmente
 
 ## 27. Contexto procedimental atual de Design
 
-O regime corrente das oito Homes é governado pelas autoridades comuns posteriores a este Source Lock histórico:
+O regime corrente das oito Homes é governado pelas autoridades comuns vigentes:
 
 ```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.4
+GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.5
 → DESIGNER-FIRST
 → 8 / 8 HOMES
 
-GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.1
+GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.2
 → DESIGN PRODUCTION RELEASE = GRANTED
 → EXTERNAL DESIGNER PRODUCTION
 
@@ -825,11 +829,11 @@ O consumo corrente da Home Business é resolvido pelo Manifesto canônico vigent
 
 Usar:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.4` como autoridade comum de handoff;
-2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.9`;
-3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.5`;
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.5` como autoridade comum de handoff;
+2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.13`;
+3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.6`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1`;
-5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.4`;
+5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.5`;
 6. `GPA-004 v1.7.3`.
 
 ```text

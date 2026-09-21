@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-AUTHORITY-001
 title: Contratos de Autoridade — Home Pública — Guivos Business
 status: active
-version: 1.0.4
+version: 1.0.5
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 parent: GPA-004
 depends_on:
   - GPA-004
@@ -18,7 +18,7 @@ normative: true
 
 ## 1. Finalidade
 
-Este documento registra o **Checkpoint 6 — Contratos de Autoridade** da Home Pública do Guivos Business.
+Este documento consolida os **Contratos de Autoridade correntes** da Home Pública do Guivos Business.
 
 Ele define os limites de autoridade que futuras etapas de copy, conversão, Documento Mestre, Source Lock e Design devem preservar.
 
@@ -393,7 +393,7 @@ A Home não pode sugerir que:
 
 ## 12. Estado de convergência e consumo corrente
 
-A proveniência deste documento permanece no Checkpoint 6, mas seu consumo corrente deve respeitar as autoridades posteriores já integradas.
+Este documento permanece autoridade complementar ativa de limites; seu consumo corrente deve respeitar as autoridades Business vigentes e o Manifesto canônico.
 
 ```text
 ARQUITETURA NARRATIVA
@@ -404,15 +404,15 @@ CONTRATOS DE AUTORIDADE
 → ESTE DOCUMENTO = AUTORIDADE COMPLEMENTAR DE LIMITES
 
 CONVERSÃO
-→ GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0
+→ GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1
 → AUTORIDADE POSTERIOR
 
 DOCUMENTO MESTRE
-→ GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4
+→ GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.6
 → EXISTS / ACTIVE
 
 SOURCE LOCK
-→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.7
+→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.13
 → EXISTS / ACTIVE
 
 DESIGN PRODUCTION RELEASE

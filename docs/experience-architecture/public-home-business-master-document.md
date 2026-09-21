@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.1.5
+version: 1.1.6
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
@@ -19,7 +19,7 @@ normative: true
 
 ## 1. Finalidade
 
-Este documento consolida o **Checkpoint 8 — Documento Mestre da Home Pública do Guivos Business**.
+Este documento consolida o **Documento Mestre corrente da Home Pública do Guivos Business**.
 
 Ele reúne em uma única arquitetura pública:
 
@@ -717,7 +717,7 @@ GKR-UX-HOME-BUSINESS-MASTER-001
 
 GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 → EXISTS / ACTIVE WITHIN ITS SCOPE
-→ exact version pinned by the current delivery candidate
+→ exact version pinned by the current Manifesto
 
 MASTER
 → NARRATIVE / SEMANTIC / FUNCTIONAL AUTHORITY
@@ -756,4 +756,4 @@ A designer pode criar tipografia, paleta, composição, imagem, grid, componente
 
 Nenhuma leitura deste documento deve reabrir como “próxima etapa” a criação do Source Lock já existente.
 
-A próxima frente documental aplicável às Homes é a reauditoria de completude das fontes e eventual emissão de pacote posterior ao v5.
+A continuidade documental ocorre pela atualização das autoridades correntes quando houver mudança material. Este Master não cria, por si só, nova fila, pacote, snapshot ou etapa automática.

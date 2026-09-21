@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
 title: Handoff Canônico para Design — Home Pública — Guivos Intelligence
 status: active
-version: 1.1.11
+version: 1.1.12
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 parent: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
@@ -34,7 +34,7 @@ Este Handoff:
 - fixa o contrato que Design deve preservar;
 - explicita as liberdades reais de composição;
 - define os limites que não podem ser reinterpretados por UX, UI, Figma, ferramenta generativa ou implementação futura;
-- estabelece critérios objetivos para o próximo gate de materialização.
+- estabelece critérios objetivos para aceitação da materialização externa quando Design for executado.
 
 Este Handoff **não é**:
 
@@ -49,25 +49,34 @@ Este Handoff **não é**:
 - implementação;
 - autorização de publicação.
 
-## 2. Base de origem e reconciliação corrente
-
-A base abaixo registra a proveniência histórica de criação deste Handoff:
+## 2. Estado corrente
 
 ```text
-main
-43a8b0b07c6b7fe6690f422dc26844d0e22c5ea8
+HOME
+Guivos Intelligence
 
-PR #288
-GKR: congelar Source Lock da Home Intelligence v1
-→ merged
+HANDOFF
+→ ACTIVE / NORMATIVE
+
+SOURCE OF TRUTH
+→ CURRENT MAIN
 
 HOME SOURCE LOCK
-GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
-→ active
-→ normative: true
-```
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.11
 
-O Handoff preserva essa proveniência apenas no Git. Seu consumo corrente é resolvido pelo `main` e pelo Manifesto canônico vigente, sem dependência de candidate ou snapshot.
+HOME MASTER
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.10
+
+DESIGN PRODUCTION RELEASE
+→ GRANTED / EXTERNAL DESIGNER
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+HISTORICAL PR / SHA / CHECKPOINT
+→ GIT PROVENANCE ONLY
+→ NOT OPERATIONAL INPUT
+```
 
 ## 3. Cadeia de autoridade
 
@@ -75,11 +84,11 @@ Para Design, aplicar a seguinte ordem:
 
 ```text
 NÍVEL 0
-GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10
+GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.11
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.10
 → governa narrativa pública, copy e fronteiras da Home
 
 NÍVEL 2
@@ -87,7 +96,7 @@ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4
 → governa função, ordem e separação dos 11 movimentos
 
 NÍVEL 3
-GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
+GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.2
 → governa a tradução pública permitida do produto
 
 NÍVEL 4
