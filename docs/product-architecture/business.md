@@ -2,9 +2,9 @@
 id: GPA-004
 title: Guivos Business
 status: consolidated
-version: 1.7.2
+version: 1.7.3
 owner: Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 related:
   - GPA-004-FUNCTIONAL-PORTFOLIO-001
   - PAS-001
@@ -481,6 +481,52 @@ SERVIÇOS ADICIONAIS, QUANDO APLICÁVEIS
 ```
 
 O orçamento de incentivo **não é a assinatura do plano Business**. O acesso ao Journey custeado pela empresa possui relação econômica própria e não deve ser presumido como incluído automaticamente em qualquer plano.
+
+### 12.1 Composição Self-service da contratação
+
+No modelo Self-service, a empresa deve poder montar digitalmente uma configuração comercial compreensível a partir das dimensões já governadas pelo produto.
+
+```text
+OFERTA(S)
++
+ESCALA / PARTICIPANTES / ACESSOS
++
+CAPACIDADES REQUERIDAS
++
+MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+↓
+CONFIGURAÇÃO
+↓
+PLANO COMPATÍVEL
+↓
+COMPOSIÇÃO DO VALOR
+```
+
+A empresa pode selecionar **Programas de Incentivo**, **Journey custeado** ou **ambas as ofertas**. Conforme a configuração aplicável, também entram no dimensionamento escala, Intelligence, integrações, governança e nível de serviço contratual.
+
+A regra de enquadramento é:
+
+> **O plano contratado deve possuir capacidade suficiente para suportar integralmente os requisitos da configuração escolhida.**
+
+Assim, uma dimensão que exija capacidade superior pode elevar o plano necessário, mesmo que as demais dimensões sejam compatíveis com um degrau inferior.
+
+Essa regra não congela thresholds quantitativos. Os limites que definem quando determinada escala ou capacidade exige Start, Growth, Scale ou Enterprise dependem dos entitlements comerciais aprovados.
+
+A composição de valor deve distinguir:
+
+```text
+VALOR RECORRENTE / CONTRATUAL
+=
+PLANO BUSINESS
++ COMPONENTES VARIÁVEIS APLICÁVEIS
++ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+RECURSO OPERACIONAL SEPARADO
+=
+ORÇAMENTO PRÉ-PAGO DE INCENTIVO
+```
+
+O modelo Self-service não transforma Business em uma soma arbitrária de módulos. O **plano** continua sendo a camada de capacidade; ofertas, volumes, acessos, serviços e orçamento operacional compõem a contratação ao redor dessa camada segundo as regras comerciais vigentes.
 
 ## 13. Contratação e modelo de implementação/operação
 
