@@ -2,16 +2,14 @@
 id: GKR-UX-HOME-SYS-001
 title: Sistema de Conteúdo, Prova, Interação, Ritmo e Percepção Visual da Home Pública
 status: draft
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
-parent: GKR-UX-HOME-HANDOFF-001
+last_updated: 2026-09-20
 depends_on:
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-001
   - GKR-UX-HOME-VAL-001
-  - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-NAV-001
   - GPA-005
