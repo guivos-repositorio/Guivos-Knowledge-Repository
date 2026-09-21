@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 related:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -76,7 +76,22 @@ Permanecem fora da maturidade corrente quando não houver autoridade específica
 - dimensionamento assistido posterior à fronteira;
 - handoffs operacionais de contratação ainda não formalizados.
 
-`BND-002` continua sendo fronteira genérica de contratação/dimensionamento assistido e não corresponde a um plano específico.
+`BND-002` continua sendo fronteira genérica de contratação/dimensionamento assistido para os fluxos aplicáveis de **Coletivo e Organização**. Ele não corresponde a um plano específico e **não governa a contratação do Guivos Business**.
+
+Guivos Business permanece produto especializado separado:
+
+```text
+GUIVOS BUSINESS
+→ CONTRATAÇÃO ONLINE
+→ SELF-SERVICE QUANDO ELEGÍVEL
+→ SUPORTE QUANDO NECESSÁRIO
+→ GERENCIADO QUANDO A COMPLEXIDADE EXIGIR
+
+BND-002
+→ NÃO É FLUXO BUSINESS
+```
+
+A composição Self-service e seus fatores de plano/valor são governados por `GPA-004` e `docs/plans/business.md`, sem criação de IDs Business neste registry.
 
 ## 5. Organização e Coletivo autenticados
 
