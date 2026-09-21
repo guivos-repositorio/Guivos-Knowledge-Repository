@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.9
+version: 7.0.10
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: true
