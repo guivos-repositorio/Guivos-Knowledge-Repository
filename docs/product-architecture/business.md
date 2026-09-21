@@ -2,7 +2,7 @@
 id: GPA-004
 title: Guivos Business
 status: consolidated
-version: 1.7.1
+version: 1.7.2
 owner: Guivos
 last_updated: 2026-09-20
 related:
@@ -561,7 +561,7 @@ Receitas diretas do Business podem incluir, conforme futura modelagem específic
 - acessos Journey custeados;
 - Intelligence avançado;
 - exportações, API e integrações;
-- serviços Assisted/Managed;
+- serviços com apoio do suporte / gerenciados;
 - taxas operacionais transparentes quando aplicáveis.
 
 Esses itens são direções de modelagem e **não constituem pricing ou entitlement final**.
@@ -595,7 +595,7 @@ Permanecem dependentes de autoridade específica antes de implementação ou pub
 - limites quantitativos e entitlements finais;
 - preço/faixa por escala, participante ou acesso;
 - preço dos acessos Journey custeados pela empresa;
-- definição final de Self-service / Assisted / Managed;
+- critérios contratuais e operacionais exatos de roteamento entre Self-service, Com apoio do suporte e Gerenciado;
 - prazo final de validade dos Pontos Guivos;
 - destino econômico e percentuais de pontos expirados;
 - política completa de estorno, reversão e fraude;
@@ -608,7 +608,9 @@ Permanecem dependentes de autoridade específica antes de implementação ou pub
 - arquitetura técnica de API/exportação;
 - thresholds mínimos de agregação/coorte do Intelligence;
 - composição exata do resumo recorrente de Intelligence por plano;
-- arquitetura convergida da Home Pública do Guivos Business.
+- implementação e publicação operacional da Home Pública do Guivos Business.
+
+A arquitetura convergida da Home Pública do Guivos Business já existe e é governada pelo Documento Mestre e pelo Source Lock correntes. O que permanece aberto é sua implementação/publicação operacional e as decisões comerciais ainda explicitamente não congeladas.
 
 A equivalência econômica Pontos ↔ BRL permanece **não congelada no corpus vigente**: a decisão histórica de conversa continua preservada como proveniência, mas valor monetário e taxa de conversão exigem autoridade econômica específica antes de implementação, cobrança ou liquidação.
 
