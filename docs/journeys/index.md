@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.50.0
+version: 0.51.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 related:
@@ -17,6 +17,8 @@ related:
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
 normative: false
 ---
 
@@ -114,9 +116,11 @@ INFORMATION ARCHITECTURE
 → NAVIGATION MATERIALIZATION
 → LOW-FIDELITY DELIVERY
 → LOW-FIDELITY VALIDATION
+→ HIGH-FIDELITY ELIGIBILITY
+→ HIGH-FIDELITY AUTHORIZATION
 ```
 
-A materialização visual final permanece responsabilidade de Design.
+O Design high-fidelity autenticado de Organização e Coletivo está **autorizado e ainda não iniciado**. Protótipo interativo e implementação permanecem gates separados e não autorizados por essa decisão.
 
 ## 9. Autoridades para prototipação
 
@@ -156,6 +160,12 @@ DESIGN / PROTOTYPING INPUT
 
 HISTORICAL RECONSTRUCTION
 → NOT REQUIRED
+
+O/C HIGH-FIDELITY DESIGN
+→ AUTHORIZED / NOT_STARTED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
 
 IMPLEMENTATION
 → SEPARATE GATE

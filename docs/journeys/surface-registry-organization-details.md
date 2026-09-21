@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-ORGANIZATION-001
 title: Detalhamento Obrigatório das Superfícies da Organização
 status: active
-version: 0.9.0
+version: 0.10.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -23,24 +23,18 @@ related:
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
 
 # Detalhamento Obrigatório das Superfícies da Organização
 
-> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
-
-
 ## 1. Finalidade
 
 Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens, maturidade ou status das entradas por conta própria.
 
-A reconciliação pós-PR #313/#314 estabelece que o antigo SVG associado a `ORG-001`, produzido no ciclo `UXA-015/017`, é **histórico e superseded**. O ativo físico foi removido por F-006; sua proveniência permanece no histórico Git e não constitui baseline de produto ou autoridade de Design da experiência autenticada da Organização.
-
-A UXA-100-A4 preserva contratos e decisões de navegação do fluxo de Planos no limite documental em que tenham autoridade própria, mas não transforma o SVG histórico de `ORG-001` em wireframe vigente.
-
-A arquitetura da informação autenticada da Organização permanece definida por `GKR-UX-ORGCOL-AUTH-IA-001` em sua maturidade própria **pre-surface-map**. `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0` define o mapa lógico-documental canônico de superfícies autenticadas e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` define o mapa funcional de estados autenticados e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` define os Priority Flows como autoridades `ACTIVE / DEFINED / CANONICAL DOCUMENTARY`; a Navigation Materialization está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`; o wireframe principal autenticado low-fidelity da Organização foi entregue em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validado com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`; high-fidelity Design, protótipo e implementação permanecem não autorizados.
+A arquitetura da informação autenticada da Organização permanece definida por `GKR-UX-ORGCOL-AUTH-IA-001` em sua maturidade própria **pre-surface-map**. `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0` define o mapa lógico-documental canônico de superfícies autenticadas e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` define o mapa funcional de estados autenticados e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` define os Priority Flows como autoridades `ACTIVE / DEFINED / CANONICAL DOCUMENTARY`; a Navigation Materialization está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`; o wireframe principal autenticado low-fidelity da Organização foi entregue em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validado com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`; high-fidelity Design está autorizado e não iniciado; protótipo e implementação permanecem não autorizados.
 
 ## 2. Campos por identificador
 
@@ -80,7 +74,7 @@ A existência física de um SVG histórico não autoriza classificá-lo como wir
 
 ## 5. Efeito da UXA-100-A4 após a reconciliação
 
-A UXA-100-A4 permanece evidência do pacote especializado de Planos, incluindo decisões documentais de origem/retorno e correção histórica de nomenclatura. Após a reconciliação pós-PR #313/#314:
+A UXA-100-A4 permanece evidência do pacote especializado de Planos, incluindo decisões documentais de origem/retorno e correção histórica de nomenclatura. Na leitura corrente:
 
 ```text
 contrato de navegação de Planos
@@ -96,4 +90,4 @@ Qualquer continuidade visual high-fidelity da Visão Geral da Organização deve
 
 ## 6. Estado
 
-O detalhamento está `active` 0.8.0 como parte integrante do registro. A Jornada da Organização está `active`. A arquitetura da informação autenticada preserva sua maturidade documental própria; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` permanecem autoridades canônicas. A Navigation Materialization está definida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`; o wireframe autenticado low-fidelity da Organização foi entregue em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validado com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. High-fidelity permanece apenas elegível, sem autorização de execução; fluxos especializados preservam a maturidade sustentada por suas próprias autoridades.
+O detalhamento está `active` 0.10.0 como parte integrante do registro. A Jornada da Organização está `active`. A arquitetura da informação autenticada preserva sua maturidade documental própria; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` permanecem autoridades canônicas. A Navigation Materialization está definida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`; o wireframe autenticado low-fidelity da Organização foi entregue em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validado com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. High-fidelity permanece apenas elegível, sem autorização de execução; fluxos especializados preservam a maturidade sustentada por suas próprias autoridades.
