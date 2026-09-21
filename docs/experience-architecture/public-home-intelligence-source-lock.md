@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Intelligence
 status: active
-version: 1.1.9
+version: 1.1.10
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
@@ -58,10 +58,10 @@ RECONCILIATION
 → CURRENT DESIGNER-FIRST / AI-OPTIONAL CONTRACT APPLIES
 
 DOCUMENTO MESTRE
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9
 
 ARQUITETURA NARRATIVA
-GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
+GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4
 
 PRODUCT SOURCE LOCK
 GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
@@ -79,8 +79,8 @@ Objetivo do lock:
 Para a produção externa de Design da Home Intelligence, o pacote específico de autoridade deve ser restrito a:
 
 1. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001` — este Source Lock;
-2. `GKR-UX-HOME-INTELLIGENCE-MASTER-001` v0.2.7 — `docs/experience-architecture/public-home-intelligence-master-document.md`;
-3. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001` v0.2.3 — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
+2. `GKR-UX-HOME-INTELLIGENCE-MASTER-001` v0.2.9 — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+3. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001` v0.2.4 — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 4. `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001` v1.0.1 — `docs/product-architecture/intelligence-product-source-lock.md`;
 5. `GPA-006` v2.0.1 — `docs/product-architecture/intelligence.md`;
 6. `GKR-UX-HOMES-OUTCOME-001` v1.0.0 — princípio transversal de resultado das Homes.
@@ -109,11 +109,11 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9
 → governa narrativa pública, copy de referência e fronteiras da Home
 
 NÍVEL 2
-GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
+GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4
 → governa função, ordem e separação dos onze movimentos
 
 NÍVEL 3
@@ -550,8 +550,9 @@ AI
 GKR-CREATED DESIGN / FIGMA
 → NONE
 
-NEXT GLOBAL GATE
-→ V6 EXACT-HEAD VALIDATION / REVIEW / SNAPSHOT GOVERNANCE
+CURRENT SOURCE RESOLUTION
+→ CURRENT MAIN + CURRENT MANIFEST
+→ SNAPSHOT / CANDIDATE NOT REQUIRED
 ```
 
 Nenhuma etapa documental autoriza Product Engineering automaticamente.

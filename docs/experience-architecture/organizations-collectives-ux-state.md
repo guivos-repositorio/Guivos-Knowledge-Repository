@@ -4,7 +4,7 @@ title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff
 status: active
 version: 1.11.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-20
 normative: false
 related:
   - GKR-UX-ORGCOL-STATE-001
@@ -33,11 +33,11 @@ O estado vigente é:
 
 A entrega corrente materializa em baixa fidelidade a visão geral/início de Organização e Coletivo, a hierarquia funcional, variantes de atenção, autoridade, proteção, troca de contexto e indisponibilidade. Permanecem deliberadamente não definidos: UI final, componentes finais, visual high-fidelity, protótipo navegável, implementação e testes de usabilidade.
 
-Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados, Priority Flows e Navigation Materialization autenticada já foram definidos documentalmente em instrumentos próprios. A Navigation Materialization canônica está em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Esse avanço **não equivale** a wireframe, UI, protótipo ou implementação.
+Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados, Priority Flows e Navigation Materialization autenticada já foram definidos documentalmente em instrumentos próprios. A Navigation Materialization canônica está em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Posteriormente, os wireframes autenticados low-fidelity foram autorizados, entregues em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. Isso **não equivale** a UI final, high-fidelity executado, protótipo ou implementação.
 
-## 2. O que já existe e pode alimentar a futura UX
+## 2. O que já existe e governa a continuidade da UX
 
-A ausência de wireframe não significa ausência de fundamento.
+A existência do pacote low-fidelity validado não equivale a UI final, high-fidelity ou implementação.
 
 Já existem insumos e autoridades documentais relevantes:
 
@@ -48,12 +48,12 @@ Já existem insumos e autoridades documentais relevantes:
 - `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` — mapa lógico de superfícies autenticadas definido documentalmente;
 - `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` — mapa funcional de estados autenticados definido documentalmente;
 - `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001` — fluxos prioritários autenticados definidos documentalmente;
-- Jornadas integradas da Organização e do Coletivo em estado `draft`;
+- Jornadas integradas da Organização e do Coletivo em estado `active`;
 - contratos de oportunidades, publicação, descoberta e relações;
 - Documento Mestre da Home pública de Organizações e Coletivos;
 - `RP-002` — Research sobre supply, papéis, rede, valor e modelo econômico.
 
-Esses materiais são **inputs para a construção futura da UX**, não wireframes implícitos. Jobs, IA, Surface Map, State Map, Priority Flows, elegibilidade e Navigation Materialization canônica não autorizam inferir decisões visuais.
+Esses materiais governam a continuidade da experiência. O pacote low-fidelity corrente é evidência visual funcional explícita; Jobs, IA, Surface Map, State Map, Priority Flows, Navigation Materialization e low-fidelity validado não autorizam inferir UI final, linguagem visual high-fidelity, protótipo ou implementação.
 
 ## 3. Correção dos registros anteriores
 

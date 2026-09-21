@@ -2,18 +2,15 @@
 id: GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
 title: Reconciliação Pós-Media — Abastecimento Editorial da Home Pública — Pessoa
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-13
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-SYS-001
   - GPA-005
   - GKR-UX-HOME-MEDIA-MASTER-001
-related:
-  - GKR-UX-HOME-AUDIT-001
-  - GKR-UX-HOME-AUDIT-002
 normative: true
 ---
 

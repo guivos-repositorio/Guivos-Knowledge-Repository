@@ -17,7 +17,7 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 A leitura de estado continua subordinada ao [Registro do Estado Atual](project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.48.35
+GKR-STATE-001 3.49.3
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -45,8 +45,8 @@ INTERACTIVE PROTOTYPE AUTHORIZATION → GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-0
 INTERACTIVE PROTOTYPE EXECUTION → EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
 ORIGINAL PROTOTYPE VALIDATION → HISTORICAL PRE-REVIEW EVIDENCE / GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / SUPERSEDED
 CODEX PROTOTYPE REVIEW → 2 P2 INTERACTION FINDINGS / REMEDIATED / THREADS RESOLVED
-POST-REVIEW PROTOTYPE REVALIDATION → PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS
-CURRENT INTERACTIVE DESIGN REFERENCE → DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0
+POST-REVIEW PROTOTYPE REVALIDATION → PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS
+CURRENT INTERACTIVE DESIGN REFERENCE → DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0
 FINAL INTERACTIVE CONCLUSION → POST-REVIEW REVALIDATION PASS
 GIA-COG-001 → ACTIVE / NORMATIVE / CURRENT COGNITIVE REFERENCE ARCHITECTURE / v0.1.1
 O/C AUTHENTICATED SURFACE MAP → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
@@ -61,16 +61,14 @@ O/C LOW-FIDELITY FUNCTIONAL VALIDATION → PASS / v1.0.0
 O/C CURRENT LOW-FIDELITY REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
 O/C HIGH-FIDELITY ELIGIBILITY → PASS / v1.0.0
 O/C HIGH-FIDELITY DESIGN AUTHORIZATION → NOT_GRANTED
-PUBLIC HOMES DESIGN PRODUCTION READINESS → ACTIVE / DESIGN RELEASE GRANTED / VALID CURRENT PACKAGE REQUIRED
-PUBLIC HOMES DESIGN PRODUCTION RELEASE → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1 / EXECUTION REQUIRES VALID CURRENT PACKAGE
-PUBLIC HOMES SOURCE COMPLETENESS → PRE-EMISSION C1–C15 PASS / 8 OF 8 / 120 OF 120 / 3 POST-EMISSION P1s ADJUDICATED
+PUBLIC HOMES CANONICAL SOURCE → CURRENT MAIN + GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.6
+PUBLIC HOMES DESIGN PRODUCTION READINESS → PASS / CURRENT / SNAPSHOT NOT REQUIRED
+PUBLIC HOMES DESIGN PRODUCTION RELEASE → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.1
+PUBLIC HOMES MASTERS → 8 OF 8 CURRENT / 83 MOVEMENTS COVERED
 PUBLIC HOMES AI → OPTIONAL / DESIGNER-CONTROLLED
-PUBLIC HOMES GKR-CREATED FIGMA → NONE / PRIOR EXPLORATION ABANDONED + NON-AUTHORITATIVE
-PUBLIC HOMES V6 PACKAGE → EMITTED / MATERIALIZED / INTEGRITY-VALIDATED / FROZEN HISTORICAL / INVALID FOR NEW EXECUTION
-PUBLIC HOMES V7 PACKAGE → EMITTED / MATERIALIZED / INTEGRITY-VALIDATED / FROZEN HISTORICAL / INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
-PUBLIC HOMES V8 PACKAGE → EMITTED / MATERIALIZED / INTEGRITY-VALIDATED / FROZEN / CURRENT / VALID FOR NEW EXTERNAL DESIGN EXECUTION
-PUBLIC HOMES CURRENT EXTERNAL SOURCE PACKAGE → V8 / delivery/design-handoff-v8 / d7eea909b1b5cb6266d7c4a725657ccd909f0e63
-PUBLIC HOMES V9 CANDIDATE → PREPARED / 29 OF 29 PINS RECALCULATED / 21 UNCHANGED + 8 UPDATED MASTERS / MATERIALIZATION NOT AUTHORIZED
+PUBLIC HOMES GKR-CREATED FIGMA → NONE
+PUBLIC HOMES HISTORICAL PACKAGE INPUT → EXCLUDED FROM DESIGN / AI
+PUBLIC HOMES SNAPSHOT / CANDIDATE REQUIREMENT → NONE
 VISUAL IDENTITY PRE-LOCK → NOT REQUIRED / DESIGN-OWNED
 GKR GLOBAL UPDATE → CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
 FUNCTIONAL ADVANCEMENT → HIGH-FIDELITY ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED
@@ -181,7 +179,6 @@ ORGANIZAÇÃO
 - [PER-002 — Elegibilidade Pós-Validação para Protótipo Interativo](experience-architecture/per-002-interactive-prototype-eligibility.md)
 - [PER-002 — Autorização Governada de Protótipo Interativo](experience-architecture/per-002-interactive-prototype-authorization.md)
 - [PER-002 — Entrega do Protótipo Interativo](experience-architecture/per-002-interactive-prototype-delivery.md)
-- [PER-002 — Validação Pré-Review do Protótipo Interativo — Evidência Histórica](experience-architecture/per-002-interactive-prototype-validation.md)
 - [PER-002 — Revalidação Pós-Review do Protótipo Interativo](experience-architecture/per-002-interactive-prototype-post-review-revalidation.md)
 - [O/C — Autorização Governada de Wireframes Low-Fidelity](experience-architecture/organizations-collectives-authenticated-wireframe-authorization.md)
 - [O/C — Entrega de Wireframes Autenticados Low-Fidelity](experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md)
@@ -281,7 +278,7 @@ As rotas abaixo são **atalhos de consumo**. Elas não criam cópias, autoridade
 | Publicidade / Ads | [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
 | Comercial | [Estratégia de Negócio](business-architecture/index.md) · [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
 | Produto | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) |
-| UX / Design | [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) · [PER-002 Handoff](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md) · [Design Authorization](experience-architecture/per-002-design-authorization.md) · [Design Delivery](experience-architecture/per-002-low-fidelity-design-delivery.md) · [Functional Validation](experience-architecture/per-002-low-fidelity-functional-validation.md) · [High-Fidelity Eligibility](experience-architecture/per-002-high-fidelity-design-eligibility.md) · [High-Fidelity Authorization](experience-architecture/per-002-high-fidelity-design-authorization.md) · [High-Fidelity Delivery](experience-architecture/per-002-high-fidelity-design-delivery.md) · [High-Fidelity Validation](experience-architecture/per-002-high-fidelity-design-validation.md) · [Prototype Eligibility](experience-architecture/per-002-interactive-prototype-eligibility.md) · [Prototype Authorization](experience-architecture/per-002-interactive-prototype-authorization.md) · [Prototype Delivery](experience-architecture/per-002-interactive-prototype-delivery.md) · [Historical Prototype Validation](experience-architecture/per-002-interactive-prototype-validation.md) · [Post-Review Prototype Revalidation](experience-architecture/per-002-interactive-prototype-post-review-revalidation.md) · [Estado Atual](project/current-state-register.md) |
+| UX / Design | [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) · [PER-002 Handoff](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md) · [Design Authorization](experience-architecture/per-002-design-authorization.md) · [Design Delivery](experience-architecture/per-002-low-fidelity-design-delivery.md) · [Functional Validation](experience-architecture/per-002-low-fidelity-functional-validation.md) · [High-Fidelity Eligibility](experience-architecture/per-002-high-fidelity-design-eligibility.md) · [High-Fidelity Authorization](experience-architecture/per-002-high-fidelity-design-authorization.md) · [High-Fidelity Delivery](experience-architecture/per-002-high-fidelity-design-delivery.md) · [High-Fidelity Validation](experience-architecture/per-002-high-fidelity-design-validation.md) · [Prototype Eligibility](experience-architecture/per-002-interactive-prototype-eligibility.md) · [Prototype Authorization](experience-architecture/per-002-interactive-prototype-authorization.md) · [Prototype Delivery](experience-architecture/per-002-interactive-prototype-delivery.md) · [Post-Review Prototype Revalidation](experience-architecture/per-002-interactive-prototype-post-review-revalidation.md) · [Estado Atual](project/current-state-register.md) |
 | Desenvolvimento | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Arquitetura Corporativa](enterprise-architecture/index.md) |
 | Dados / Intelligence | [Intelligence](intelligence-architecture/index.md) · [Arquitetura Corporativa](enterprise-architecture/index.md) · [Research](research/index.md) |
 | Research | [Research](research/index.md) · [RP-001](research/RP-001/index.md) · [RP-002](research/RP-002/index.md) · [Privacidade](governance-framework/operational-privacy-and-legal-truth-index.md) |

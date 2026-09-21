@@ -2,15 +2,14 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.6.5
+version: 1.7.2
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 normative: true
-maturity: designer_first_ai_optional_handoff_current_package_delegated
+maturity: designer_first_ai_optional_main_canonical_first_class
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
-  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
   - GKR-UX-HOME-OC-MASTER-001
@@ -32,7 +31,6 @@ depends_on:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
   - GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
   - GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
-  - GKR-UX-HOME-INTELLIGENCE-GENINPUT-001
   - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
   - GPA-006
   - GKR-UX-HOMES-OUTCOME-001
@@ -40,38 +38,37 @@ depends_on:
 
 # Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 
-## 0. Estado pós-auditoria e gate de produção
+## 0. Estado corrente e gate de produção
 
-A Auditoria Integral do GKR está concluída com `PASS`. O método de handoff permanece vigente, mas esta revisão separa explicitamente **prontidão documental** de **liberação operacional para a contratação e produção externa de Design**.
+Esta autoridade governa o handoff **corrente** das oito Homes. Design e IA opcional devem consumir somente autoridades vigentes no `main` canônico, conforme o Manifesto corrente.
 
 ```text
-AUDITORIA INTEGRAL
-→ COMPLETED / PASS
+SOURCE OF TRUTH
+→ CURRENT CANONICAL MAIN
 
-HANDOFF CANÔNICO
-→ RECONCILIADO PÓS-AUDITORIA
+CURRENT CHECKPOINT
+→ CURRENT MAIN
+→ RESOLVED AT CONSUMPTION TIME
 
 DESIGN PRODUCTION READINESS
-→ GOVERNADO POR GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
+→ ACTIVE
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED BY GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1
+→ GRANTED
 
-V6 SNAPSHOT
-→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
-→ FROZEN / HISTORICAL
-→ INVALID FOR NEW EXECUTION
+SNAPSHOTS / CANDIDATES / CHECKPOINTS HISTÓRICOS
+→ NOT OPERATIONAL INPUT
+→ NOT REQUIRED FOR DESIGN OR PROTOTYPING
 
-CURRENT EXTERNAL SOURCE PACKAGE
-→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
-→ CONSUME ONLY SNAPSHOT DESIGNATED CURRENT / VALID
+EXTERNAL SNAPSHOT
+→ OPTIONAL TRANSPORT ARTIFACT
+→ NOT A PRECONDITION FOR EXECUTION
 
-OPERATIONAL EXECUTION
-→ REQUIRES CURRENT VALID PACKAGE
-→ OTHERWISE PAUSED
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
 ```
 
-O ato humano de Design Production Release permanece concedido. A existência, identidade e validade do pacote externo corrente são determinadas exclusivamente por `GKR-UX-HOMES-DESIGN-DELIVERY-001` + `GKR-STATE-001` no momento do consumo. Esta autoridade comum não fixa `NONE`, versão de snapshot corrente nem estado transitório de emissão.
+A designer pode trabalhar diretamente a partir do conjunto canônico vigente definido pelo Manifesto. Um snapshot externo só deve ser criado quando houver necessidade concreta de congelamento ou transporte; ele não substitui o `main` como fonte primária de verdade.
 
 ### 0.1 Liberdade criativa protegida
 
@@ -156,16 +153,18 @@ Portanto, a atualização deste handoff **não cria mapa de página, wireframe, 
 
 ## 2. Regime da fase de Design
 
-Este Handoff constitui a **autoridade procedimental comum** para materialização externa das oito Homes. Ele define como a fase deve operar, mas **não concede sozinho o Design Production Release**.
+Este Handoff constitui a autoridade procedimental comum para criação e prototipação das oito Homes.
 
-A execução somente fica liberada quando coexistirem:
+A execução fica liberada quando coexistirem:
 
-1. pacote externo corrente, materializado, reproduzível e semanticamente válido;
-2. Source Lock operacional da Home no checkpoint da emissão;
-3. gates de validação sem finding material aberto;
-4. ato humano explícito de `DESIGN PRODUCTION RELEASE = GRANTED`.
+1. conjunto canônico corrente identificado pelo Manifesto;
+2. Master e autoridades específicas da Home no mesmo checkpoint do `main`;
+3. ausência de finding material aberto nas autoridades correntes;
+4. `DESIGN PRODUCTION RELEASE = GRANTED`.
 
-Quando as quatro condições estiverem satisfeitas segundo o Manifesto + Current State vigentes, poderão ser executados:
+Não é necessário materializar snapshot para iniciar Design.
+
+Podem ser executados:
 
 - criação manual pela designer e, opcionalmente, exploração assistida por IA;
 - arquitetura visual;
@@ -174,30 +173,12 @@ Quando as quatro condições estiverem satisfeitas segundo o Manifesto + Current
 - UI de alta fidelidade;
 - protótipos de navegação e interação;
 - estudos responsivos desktop e mobile;
-- validação das soluções contra os contratos do GKR;
-- consolidação dos artefatos finais de Design dentro da direção humana aprovada, nas ferramentas escolhidas pela designer e/ou definidas contratualmente.
+- validação das soluções contra os contratos correntes do GKR;
+- consolidação dos artefatos finais de Design nas ferramentas escolhidas pela designer.
 
-O release de Design não autoriza automaticamente:
+O release de Design não autoriza automaticamente desenvolvimento, publicação em produção, mudança de produto/economia, claims não sustentados ou Product Engineering.
 
-- desenvolvimento frontend ou backend;
-- publicação em produção;
-- alteração de arquitetura de produto;
-- mudança de modelo econômico;
-- criação de funcionalidades não governadas;
-- alteração de posicionamento;
-- Marketing/GTM;
-- novas promessas, métricas, parceiros, ofertas ou claims não sustentados;
-- merge de implementação.
-
-Regra:
-
-> **O Handoff governa COMO materializar. O Source Lock governa COM QUAIS verdades. O Design Production Release humano governa QUANDO iniciar.**
-
-Documentos Mestres, contratos e Source Locks continuam governando o que não pode ser semanticamente perdido durante a materialização.
-
-A existência deste documento, isoladamente, não significa que um snapshot de entrega já foi emitido, validado ou liberado.
-
----
+> **O Handoff governa COMO criar. O Manifesto governa QUAIS fontes correntes usar. O Source Lock governa COMO isolar o contexto. O Design Production Release humano governa QUANDO iniciar.**
 
 ## 3. Princípio central
 
@@ -250,20 +231,20 @@ O contexto de Business permanece deliberadamente mais amplo. Usar somente o paco
 
 Intelligence possui cadeia específica já convergida e deve ser materializado sem ser confundido com tecnologia, dashboard ou mecanismo de decisão.
 
-Ordem operacional para a próxima emissão válida, sempre subordinada às versões exatas fixadas pelo Manifesto/candidato governado:
+Ordem operacional corrente, subordinada às versões exatas fixadas pelo Manifesto vigente:
 
 ```text
-N0 — LEIA-PRIMEIRO / SOURCE LOCK OPERACIONAL DA EMISSÃO
-     → fixa checkpoint, fontes, prompt e estado EXPLORAÇÃO
+N0 — MANIFESTO + SOURCE LOCK CORRENTES
+     → fixam checkpoint, fontes autorizadas e estado da exploração
 
-N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9
+N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10
      → congela significado e invariantes da Home
 
-N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.10
+N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.11
      → traduz a Home para o contrato de Design
 
-N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7
-     + GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
+N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9
+     + GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4
      + GKR-UX-HOMES-OUTCOME-001 v1.0.0
      → preservam narrativa, valor, copy e função pública
 
@@ -272,7 +253,7 @@ N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
      → governam significado e limites superiores do produto
 ```
 
-GENINPUTs históricos de Intelligence permanecem apenas como proveniência e não entram automaticamente no input operacional de uma nova emissão.
+Documentos históricos, candidates, snapshots e GENINPUTs superados não entram no input operacional.
 
 ---
 
@@ -291,9 +272,9 @@ NÍVEL 2 — DOCUMENTO MESTRE E CONTRATOS COMPLEMENTARES VIGENTES
 NÍVEL 3 — AUTORIDADES SUPERIORES DE PRODUTO
 → resolvem dúvidas sobre identidade, autoridade e limites
 
-NÍVEL 4 — HISTÓRICO
-→ explica como uma decisão foi construída
-→ não substitui o estado vigente
+FORA DA CADEIA OPERACIONAL — HISTÓRICO / PROVENIÊNCIA
+→ não carregar em Design ou IA
+→ consultar somente para auditoria do repositório
 ```
 
 Se houver conflito sobre significado da Home, prevalecem as autoridades específicas vigentes da Home conforme seu Source Lock.
@@ -667,10 +648,13 @@ Estado histórico daquela frente:
 
 ```text
 HANDOFF / MÉTODO
-→ ACTIVE / RECONCILED
+→ ACTIVE / CURRENT
 
 8 HOMES
 → COVERED
+
+CANONICAL INPUT
+→ CURRENT MAIN + CURRENT MANIFEST
 
 VISUAL IDENTITY
 → DESIGN-OWNED / NOT CANONICALLY PRE-LOCKED
@@ -680,15 +664,13 @@ EXTERNAL DESIGNER CREATION
 → AI OPTIONAL / DESIGNER-CONTROLLED
 
 DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1
+→ GRANTED
 
-CURRENT EXTERNAL SOURCE PACKAGE
-→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
-→ CONSUME ONLY SNAPSHOT DESIGNATED CURRENT / VALID
+SNAPSHOT REQUIREMENT
+→ NONE
 
-OPERATIONAL DESIGN EXECUTION
-→ REQUIRES CURRENT VALID PACKAGE
-→ OTHERWISE PAUSED
+HISTORICAL INPUT
+→ EXCLUDED
 
 FINAL DESIGN ACCEPTANCE
 → HUMAN / SEPARATE
@@ -697,4 +679,5 @@ IMPLEMENTATION / PRODUCT ENGINEERING
 → NOT RELEASED BY THIS HANDOFF
 ```
 
-Este documento governa **como** o handoff deve ocorrer. A autorização humana permanece concedida por `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1`. A designação de qual snapshot é corrente e válido é estado operacional externo a este documento e deve ser lida em `GKR-UX-HOMES-DESIGN-DELIVERY-001` + `GKR-STATE-001`; este Handoff não congela esse valor transitório.
+
+Este documento governa **como** o handoff deve ocorrer. O Manifesto corrente define o conjunto de fontes; histórico e proveniência ficam fora da cadeia de consumo de Design/IA.

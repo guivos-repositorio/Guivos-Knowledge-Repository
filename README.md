@@ -18,7 +18,7 @@ Antes de usar qualquer documento isolado, consulte:
 A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.48.35
+GKR-STATE-001 3.49.3
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -46,8 +46,8 @@ INTERACTIVE PROTOTYPE AUTHORIZATION → GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-0
 INTERACTIVE PROTOTYPE EXECUTION → EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
 ORIGINAL PROTOTYPE VALIDATION → HISTORICAL PRE-REVIEW EVIDENCE / GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / SUPERSEDED
 CODEX PROTOTYPE REVIEW → 2 P2 INTERACTION FINDINGS / REMEDIATED / THREADS RESOLVED
-POST-REVIEW PROTOTYPE REVALIDATION → PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS
-CURRENT INTERACTIVE DESIGN REFERENCE → DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0
+POST-REVIEW PROTOTYPE REVALIDATION → PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS
+CURRENT INTERACTIVE DESIGN REFERENCE → DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0
 FINAL INTERACTIVE CONCLUSION → POST-REVIEW REVALIDATION PASS
 GIA-COG-001 → ACTIVE / NORMATIVE / CURRENT COGNITIVE REFERENCE ARCHITECTURE / v0.1.1
 O/C AUTHENTICATED SURFACE MAP → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
@@ -62,16 +62,14 @@ O/C LOW-FIDELITY FUNCTIONAL VALIDATION → PASS / v1.0.0
 O/C CURRENT LOW-FIDELITY REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
 O/C HIGH-FIDELITY ELIGIBILITY → PASS / v1.0.0
 O/C HIGH-FIDELITY DESIGN AUTHORIZATION → NOT_GRANTED
-PUBLIC HOMES DESIGN PRODUCTION READINESS → ACTIVE / DESIGN RELEASE GRANTED / VALID CURRENT PACKAGE REQUIRED
-PUBLIC HOMES DESIGN PRODUCTION RELEASE → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1 / EXECUTION REQUIRES VALID CURRENT PACKAGE
-PUBLIC HOMES SOURCE COMPLETENESS → PRE-EMISSION C1–C15 PASS / 8 OF 8 / 120 OF 120 / 3 POST-EMISSION P1s ADJUDICATED
+PUBLIC HOMES CANONICAL SOURCE → CURRENT MAIN + GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.6
+PUBLIC HOMES DESIGN PRODUCTION READINESS → PASS / CURRENT / SNAPSHOT NOT REQUIRED
+PUBLIC HOMES DESIGN PRODUCTION RELEASE → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.1
+PUBLIC HOMES MASTERS → 8 OF 8 CURRENT / 83 MOVEMENTS COVERED
 PUBLIC HOMES AI → OPTIONAL / DESIGNER-CONTROLLED
-PUBLIC HOMES GKR-CREATED FIGMA → NONE / PRIOR EXPLORATION ABANDONED + NON-AUTHORITATIVE
-PUBLIC HOMES V6 PACKAGE → EMITTED / MATERIALIZED / INTEGRITY-VALIDATED / FROZEN HISTORICAL / INVALID FOR NEW EXECUTION
-PUBLIC HOMES V7 PACKAGE → EMITTED / MATERIALIZED / INTEGRITY-VALIDATED / FROZEN HISTORICAL / INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
-PUBLIC HOMES V8 PACKAGE → EMITTED / MATERIALIZED / INTEGRITY-VALIDATED / FROZEN / CURRENT / VALID FOR NEW EXTERNAL DESIGN EXECUTION
-PUBLIC HOMES CURRENT EXTERNAL SOURCE PACKAGE → V8 / delivery/design-handoff-v8 / d7eea909b1b5cb6266d7c4a725657ccd909f0e63
-PUBLIC HOMES V9 CANDIDATE → PREPARED / 29 OF 29 PINS RECALCULATED / 21 UNCHANGED + 8 UPDATED MASTERS / MATERIALIZATION NOT AUTHORIZED
+PUBLIC HOMES GKR-CREATED FIGMA → NONE
+PUBLIC HOMES HISTORICAL PACKAGE INPUT → EXCLUDED FROM DESIGN / AI
+PUBLIC HOMES SNAPSHOT / CANDIDATE REQUIREMENT → NONE
 VISUAL IDENTITY PRE-LOCK → NOT REQUIRED / DESIGN-OWNED
 GKR GLOBAL UPDATE → CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
 FUNCTIONAL ADVANCEMENT → HIGH-FIDELITY ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED
@@ -182,7 +180,6 @@ ORGANIZAÇÃO
 - [PER-002 — Elegibilidade Pós-Validação para Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-eligibility.md)
 - [PER-002 — Autorização Governada de Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-authorization.md)
 - [PER-002 — Entrega do Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-delivery.md)
-- [PER-002 — Validação Pré-Review do Protótipo Interativo — Evidência Histórica](docs/experience-architecture/per-002-interactive-prototype-validation.md)
 - [PER-002 — Revalidação Pós-Review do Protótipo Interativo](docs/experience-architecture/per-002-interactive-prototype-post-review-revalidation.md)
 - [O/C — Autorização Governada de Wireframes Low-Fidelity](docs/experience-architecture/organizations-collectives-authenticated-wireframe-authorization.md)
 - [O/C — Entrega de Wireframes Autenticados Low-Fidelity](docs/experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md)
@@ -260,7 +257,7 @@ As equipes não recebem cópias próprias de autoridades. Elas entram no mesmo c
 | Publicidade / Ads | Arquitetura de Produtos · Modelo Econômico · Go-to-Market |
 | Comercial | Estratégia de Negócio · Produtos · Economia · GTM |
 | Produto | Arquitetura de Produtos · Experience Architecture · Jornadas |
-| UX / Design | Experience Architecture · Jornadas · PER-002 Handoff · Design Authorization · Design Delivery · Functional Validation · High-Fidelity Eligibility · High-Fidelity Authorization · High-Fidelity Delivery · High-Fidelity Validation · Prototype Eligibility · Prototype Authorization · Prototype Delivery · Historical Prototype Validation · Post-Review Prototype Revalidation · Estado Atual |
+| UX / Design | Experience Architecture · Jornadas · PER-002 Handoff · Design Authorization · Design Delivery · Functional Validation · High-Fidelity Eligibility · High-Fidelity Authorization · High-Fidelity Delivery · High-Fidelity Validation · Prototype Eligibility · Prototype Authorization · Prototype Delivery · Post-Review Prototype Revalidation · Estado Atual |
 | Desenvolvimento | Produtos · Experience Architecture · Arquitetura Corporativa |
 | Dados / Intelligence | Intelligence · Arquitetura Corporativa · Research |
 | Research | Research · RP-001 · RP-002 · Privacidade |

@@ -2,20 +2,18 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
 title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 status: active
-version: 3.0.3
+version: 3.1.2
 owner: Experience Architecture
 last_updated: 2026-09-19
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
 depends_on:
-  - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 related:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
-  - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
 normative: false
-maturity: designer_first_ai_optional_current_package_delegated
+maturity: designer_first_ai_optional_main_canonical_first_class
 ---
 
 # Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
@@ -42,15 +40,23 @@ DESIGN TOOL
 
 ## 2. Gate de início
 
-A produção criativa só deve começar quando:
+A produção criativa pode começar quando:
 
-- o pacote vigente estiver materializado;
-- o guia de consumo da Home estiver presente;
-- as fontes específicas estiverem completas;
-- não houver finding material aberto de completude;
-- o Design Production Release estiver vigente.
+- o Manifesto corrente identifica o conjunto autorizado;
+- Master e autoridades específicas da Home pertencem ao mesmo checkpoint do `main`;
+- não existe finding material aberto no conjunto corrente;
+- o Design Production Release está `GRANTED`.
 
-A reauditoria C1–C15 foi concluída para a emissão v6. Uma revisão independente pós-emissão identificou posteriormente um P1 neste próprio fluxo v3.0.1: o snapshot v6 congelado preservou linguagem pré-emissão contraditória. A revisão v3.0.2 corrigiu historicamente essa contradição; a revisão corrente v3.0.3 torna esta autoridade package-state agnostic e delega a identidade e a validade do pacote externo ao Manifesto + Current State vigentes. O snapshot v6 não é reescrito e permanece histórico/inválido para nova execução. O início de trabalho criativo depende das condições deste gate conforme o estado vigente nessas autoridades.
+```text
+SNAPSHOT
+→ NOT REQUIRED
+
+CURRENT MAIN
+→ FIRST-CLASS SOURCE
+
+HISTORICAL / CANDIDATE / CHECKPOINT
+→ DO NOT LOAD
+```
 
 ## 3. Isolamento de contexto
 
@@ -220,32 +226,31 @@ Mudanças puramente criativas da designer, sem alteração de contrato, não exi
 ## 11. Estado
 
 ```text
-FLOW v3.0.3
+FLOW
 → DESIGNER-FIRST
 → AI-OPTIONAL
 → TOOL-NEUTRAL
 
+SOURCE OF TRUTH
+→ CURRENT MAIN
+
+AUTHORIZED SOURCE SET
+→ CURRENT MANIFEST
+
+SNAPSHOT REQUIREMENT
+→ NONE
+
+HISTORICAL / CANDIDATE / CHECKPOINT INPUT
+→ EXCLUDED
+
 GKR-CREATED FIGMA
 → NONE
 
-PRIOR GKR FIGMA EXPLORATION
-→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
-
-SOURCE COMPLETENESS AUDIT
-→ PRE-EMISSION C1–C15 PASS / CLOSED
-→ POST-EMISSION PACKAGE CONSISTENCY P1 ADJUDICATED
-
-HISTORICAL INVALID SNAPSHOTS
-→ V6 / V7 REMAIN IMMUTABLE PROVENANCE WHEN SO CLASSIFIED BY MANIFEST / STATE
-
-CURRENT EXTERNAL SOURCE PACKAGE
-→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
-→ THIS FLOW DOES NOT FREEZE A TRANSITORY PACKAGE VALUE
-
 DESIGN PRODUCTION RELEASE
 → GRANTED
-→ EXECUTION REQUIRES A SNAPSHOT DESIGNATED CURRENT / VALID
 
 PRODUCT ENGINEERING
 → NOT RELEASED
 ```
+
+Design pode iniciar diretamente a partir do conjunto canônico corrente. Snapshot externo é opcional e só existe quando houver necessidade real de congelamento ou transporte.

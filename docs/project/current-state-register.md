@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.48.35
+version: 3.49.3
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-20
 normative: true
@@ -11,19 +11,7 @@ related:
   - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
-  - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V9-CANDIDATE-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001
-  - GKR-SPECIALIZED-HOMES-AUDIT-001
   - GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001
-  - GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001
-  - GKR-HOME-MASTERS-REMEDIATION-001
   - GEB-P01
   - GOG-001
   - GKR-BRAND-SIGNATURE-001
@@ -63,7 +51,6 @@ related:
   - GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001
   - GKR-UX-PER002-PROTOTYPE-AUTH-001
   - GKR-UX-PER002-PROTOTYPE-DELIVERY-001
-  - GKR-UX-PER002-PROTOTYPE-VALIDATION-001
   - GKR-UX-PER002-PROTOTYPE-REVALIDATION-001
   - GTM-009
   - GTM-010
@@ -92,7 +79,6 @@ GKR VIGENTE
 → sem depender de versões substituídas para ser compreendido
 ```
 
-A auditoria integral do corpus foi concluída com resultado `PASS`. A baseline final pós-auditoria permanece capturada no `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`. Q concluiu e consolidou documentalmente a definição funcional da primeira responsabilidade autenticada da Pessoa após a Home: ela é a continuação autenticada de `PER-002 — Entrada protegida`, não uma nova superfície inferida. A adjudicação posterior de elegibilidade de materialização também concluiu `PASS`: uma materialização low-fidelity funcional de `PER-002` é justificada, sem novo `PER-ID`, e seu boundary de handoff está congelado em `GKR-UX-PER002-MAT-ELIGIBILITY-001`. A decisão governada separada `GKR-UX-PER002-DESIGN-AUTH-001` concedeu autorização de Design exclusivamente para essa materialização. A primeira entrega low-fidelity foi executada em `GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0`, com quatro frames principais e três variantes cobrindo 7/7 áreas autorizadas. A validação documental/visual posterior concluiu `PASS`, registrada em `GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0`, sem finding material ou bloqueador e sem reformulação requerida. A entrega validada passa a ser a referência corrente low-fidelity de Design de `PER-002` quando lida com seu validator. A adjudicação pós-validação `GKR-UX-PER002-HIFI-ELIGIBILITY-001 v1.0.0` concluiu `PASS` para high-fidelity, e `GKR-UX-PER002-HIFI-AUTH-001 v1.0.0` concedeu autorização de Design high-fidelity exclusivamente para `PER-002`. A execução high-fidelity foi concluída em `GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0`; a validação governada subsequente concluiu `PASS` em `GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0`, com 15/15 critérios aprovados, 0 findings materiais, 0 bloqueadores e nenhuma reformulação requerida. O pacote entrega+validator passa a ser a referência corrente high-fidelity de Design de `PER-002`, sem promover seus tokens locais a Design System global ou UI de produção. A adjudicação pós-validação `GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0` concluiu `PASS`, e a decisão separada `GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0` concedeu autorização explícita apenas para um protótipo interativo simulado de Design de `PER-002`. A execução foi concluída em `GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0`. O ato original de validação, preservado em `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1`, é evidência histórica pré-review e está `superseded` como fechamento corrente. A revisão Codex identificou dois findings `P2` de interação, ambos remediados; a revalidação governada pós-review `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0` concluiu `PASS`, com 16/16 critérios após remediação, 0 findings materiais, 0 bloqueadores, 0 P2 de interação abertos e nenhuma reformulação requerida. A referência interativa corrente é Delivery v0.1.0 + Validation histórica v1.0.1 + Revalidation v1.0.0. Não há próxima execução automática liberada. Source Lock permanece não criado e não autorizado por inferência; `UXA-102/V5` e Product Engineering permanecem não iniciados/pausados.
 
 A frente posterior da Cognitive Reference Architecture também foi concluída em seu limite documental: `ADR-008` aprovou placement e ownership sob a GIA; `GIA-COG-001 v0.1.1` passou por revisão, remediação, revalidação semântica e gate de promoção e é agora a **Cognitive Reference Architecture vigente, ativa e normativa**. Essa promoção não autoriza `GIA-COG-002..008`, arquitetura física, dados reais, implementação, operação ou produção.
 
@@ -117,12 +103,12 @@ COGNITIVE REFERENCE ARCHITECTURE
 → IMPLEMENTATION / REAL DATA / PRODUCTION NOT AUTHORIZED
 
 O/C AUTHENTICATED SURFACE MAP
-→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0
 → DEFINED / CANONICAL DOCUMENTARY
 → STABLE GKR-SURF-* IDS PRESERVED BY CROSSWALK
 
 O/C AUTHENTICATED STATE MAP
-→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
 → DEFINED / CANONICAL DOCUMENTARY
 → NO PARALLEL STATE NAMESPACE
 → NO GKR-TRN-* CREATED OR PROMOTED
@@ -383,7 +369,6 @@ Q — INTERACTIVE PROTOTYPE EXECUTION
 
 Q — ORIGINAL INTERACTIVE PROTOTYPE VALIDATION
 → HISTORICAL PRE-REVIEW EVIDENCE
-→ AUTHORITY = GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1
 → STATUS = SUPERSEDED AS FINAL CURRENT CLOSURE
 → ORIGINAL RESULT = 16 / 16 PASS AT PRE-REVIEW CHECKPOINT
 
@@ -394,7 +379,7 @@ Q — CODEX PROTOTYPE REVIEW
 
 Q — POST-REVIEW INTERACTIVE PROTOTYPE REVALIDATION
 → PASS
-→ AUTHORITY = GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0
+→ AUTHORITY = GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0
 → VALIDATION CRITERIA = 16 / 16 PASS AFTER REMEDIATION
 → MATERIAL FINDINGS = 0
 → BLOCKING FINDINGS = 0
@@ -404,9 +389,8 @@ Q — POST-REVIEW INTERACTIVE PROTOTYPE REVALIDATION
 CURRENT INTERACTIVE DESIGN REFERENCE
 → GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
 +
-→ GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 AS HISTORICAL PRE-REVIEW EVIDENCE
 +
-→ GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 AS CURRENT POST-REVIEW CONCLUSION
+→ GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 AS CURRENT POST-REVIEW CONCLUSION
 
 FINAL CURRENT INTERACTIVE CONCLUSION
 → POST-REVIEW REVALIDATION PASS
@@ -457,7 +441,7 @@ PRIMEIRA RESPONSABILIDADE AUTENTICADA DA PESSOA APÓS A HOME
 → INTERACTIVE PROTOTYPE ELIGIBILITY = PASS
 → INTERACTIVE PROTOTYPE AUTHORIZATION = GRANTED
 → INTERACTIVE PROTOTYPE EXECUTION = EXECUTED
-→ CURRENT INTERACTIVE DESIGN REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0
+→ CURRENT INTERACTIVE DESIGN REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0
 → FINAL INTERACTIVE CONCLUSION = POST-REVIEW REVALIDATION PASS
 
 PUBLIC HOMES EXTERNAL DESIGN PRODUCTION
@@ -706,7 +690,6 @@ PER-001 — HOME PÚBLICA
 
 A autenticação concluída não encerra `PER-002` automaticamente e não autoriza processamento material. `PER-003` é a primeira superfície registrada distinta downstream após o fechamento legítimo dessa responsabilidade. `PER-008 — Tela Hoje` permanece downstream e não é a primeira responsabilidade autenticada.
 
-A adjudicação de materialização de Q concluiu `PASS` e congelou em `GKR-UX-PER002-MAT-ELIGIBILITY-001` o boundary funcional da materialização low-fidelity de `PER-002`. A autorização governada separada `GKR-UX-PER002-DESIGN-AUTH-001` liberou somente essa execução. A primeira entrega foi executada em `GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0`: quatro frames principais — orientação protegida, gate de acesso, continuação autenticada/controles e handoff ready — mais três variantes — sessão já autenticada, recuperação/restrição/falha e saída/exploração sem personalização. O pacote cobre 7/7 áreas autorizadas sem criar nova superfície, novo `PER-ID`, restaurar `UXA-034`, materializar `PER-003` além do handoff ou iniciar `UXA-102/V5`. `GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0` validou funcionalmente a entrega com `PASS`, 0 findings materiais, 0 findings bloqueadores e nenhuma reformulação requerida. O pacote entrega+validator passa a ser a referência corrente low-fidelity funcionalmente validada de `PER-002`; isso não certifica maturidade visual agregada. A adjudicação pós-validação `GKR-UX-PER002-HIFI-ELIGIBILITY-001 v1.0.0` concluiu `PASS`, e `GKR-UX-PER002-HIFI-AUTH-001 v1.0.0` concedeu autorização explícita para refinamento high-fidelity de `PER-002` dentro do mesmo boundary. A entrega high-fidelity foi executada em `GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0`, preservando 4 frames + 3 variantes e 7/7 áreas, com tokens visuais locais explicitamente não globais. `GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0` concluiu `PASS` em nível de especificação, com 15/15 critérios, 0 findings materiais, 0 bloqueadores e nenhuma reformulação. O pacote entrega+validator é a referência corrente high-fidelity de `PER-002`. A adjudicação `GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0` concluiu `PASS`, e `GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0` concedeu autorização explícita para o protótipo interativo simulado de `PER-002`. A execução foi concluída em `GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0`. O validator original foi reclassificado como evidência histórica pré-review em `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1`; após dois P2 de interação identificados pela revisão Codex e remediados, `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0` concluiu `PASS` com 16/16 critérios pós-remediação. A referência interativa corrente é Delivery v0.1.0 + Validation histórica v1.0.1 + Revalidation v1.0.0. Esse fechamento não cria Source Lock, nova superfície, novo `PER-ID`, implementação nem liberação de Engineering.
 
 Duas notas anti-regressão acompanham qualquer próximo estágio: conteúdo exibido ou interação concluída não prova compreensão; e explicação genérica de finalidades futuras ou clique em protótipo não autoriza processamento material futuro. Cada finalidade material continua exigindo disclosure/controle/autorização aplicáveis antes do processamento correspondente.
 
@@ -748,7 +731,7 @@ Permanecem autoridades funcionais:
 
 ### 8.2 Atores, autoridades e jobs
 
-`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.0` está ativo e define, antes da arquitetura visual:
+`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.1` está ativo e define, antes da arquitetura visual:
 
 - classes funcionais de atores;
 - participante representado;
@@ -813,7 +796,7 @@ ORGANIZAÇÃO ≠ COLETIVO
 
 ### 8.4 Mapa lógico de superfícies — estado canônico documental
 
-`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` está ativo como **mapa lógico-documental canônico** da experiência autenticada de Organização e Coletivo.
+`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0` está ativo como **mapa lógico-documental canônico** da experiência autenticada de Organização e Coletivo.
 
 O mapa:
 
@@ -825,7 +808,7 @@ O mapa:
 
 ### 8.5 Mapa funcional de estados — estado canônico documental
 
-`GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` está ativo como **mapa funcional canônico documental dos estados autenticados** de Organização e Coletivo.
+`GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` está ativo como **mapa funcional canônico documental dos estados autenticados** de Organização e Coletivo.
 
 Ele:
 
@@ -1031,9 +1014,8 @@ PER-002 INTERACTIVE PROTOTYPE
 → ELIGIBILITY PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
 → AUTHORIZATION GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0
 → EXECUTION EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
-→ ORIGINAL VALIDATION = HISTORICAL PRE-REVIEW / GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / SUPERSEDED
-→ POST-REVIEW REVALIDATION = PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 / 16 OF 16
-→ CURRENT INTERACTIVE DESIGN REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0
+→ POST-REVIEW REVALIDATION = PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 / 16 OF 16
+→ CURRENT INTERACTIVE DESIGN REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0
 
 HOME MATERIALIZATION
 → NOT AUTHORIZED BY THE PER-002-SPECIFIC DESIGN DECISIONS
@@ -1150,7 +1132,7 @@ PRIVACIDADE DE REFERÊNCIA
 ≠ EVIDÊNCIA OPERACIONAL
 ```
 
-A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes e não constitui, por si só, release operacional. A produção externa de Design da Home pública é regida pelo release comum posterior; implementação e publicação permanecem separadas.
+A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes e não constitui, por si só, release operacional. A produção externa de Design da Home pública é regida pelo release comum posterior; implementação e publicação permanecem separadas.
 
 Estado:
 
@@ -1341,7 +1323,7 @@ HOME INTELLIGENCE v1
 → CONCEPTUAL ARCHITECTURE COMPLETE
 
 HOME SOURCE LOCK
-→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10
 → ACTIVE / NORMATIVE
 → FREEZES SOURCES AND INVARIANTS
 → DESIGN RELEASE GOVERNED BY COMMON AUTHORITY
@@ -1919,10 +1901,9 @@ Q — INTERACTIVE PROTOTYPE
 → ELIGIBILITY = PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
 → AUTHORIZATION = GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0
 → EXECUTION = EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
-→ ORIGINAL VALIDATION = HISTORICAL PRE-REVIEW / GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / SUPERSEDED
 → CODEX REVIEW = 2 P2 INTERACTION FINDINGS / REMEDIATED / THREADS RESOLVED
-→ POST-REVIEW REVALIDATION = PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 / 16 OF 16
-→ CURRENT INTERACTIVE REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0
+→ POST-REVIEW REVALIDATION = PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 / 16 OF 16
+→ CURRENT INTERACTIVE REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0
 → FINAL CURRENT CONCLUSION = POST-REVIEW REVALIDATION PASS
 → SOURCE LOCK = NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
 
@@ -1936,11 +1917,11 @@ COGNITIVE REFERENCE ARCHITECTURE
 → IMPLEMENTATION / REAL DATA / PRODUCTION = NOT AUTHORIZED
 
 O/C AUTHENTICATED SURFACE MAP
-→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0
 → DEFINED / CANONICAL DOCUMENTARY
 
 O/C AUTHENTICATED STATE MAP
-→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
 → DEFINED / CANONICAL DOCUMENTARY
 
 O/C AUTHENTICATED PRIORITY FLOWS
@@ -1955,11 +1936,16 @@ O/C AUTHENTICATED NAVIGATION MATERIALIZATION
 → GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
-O/C WIREFRAMES
-→ NOT STARTED
+O/C AUTHENTICATED WIREFRAMES
+→ AUTHORIZATION GRANTED
+→ DELIVERY = GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0 / EXECUTED
+→ VALIDATION = GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 / PASS
+→ CURRENT LOW-FIDELITY REFERENCE = DELIVERY + VALIDATION
 
-DESIGN / UI / PROTOTYPE
-→ NOT AUTHORIZED BY O/C DOCUMENTARY PROMOTION
+HIGH-FIDELITY DESIGN / PROTOTYPE
+→ HIGH-FIDELITY ELIGIBILITY = PASS
+→ HIGH-FIDELITY AUTHORIZATION = NOT_GRANTED
+→ PROTOTYPE = NOT RELEASED
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
@@ -2146,7 +2132,6 @@ STATE MAP DEFINED
 ```
 ## 29. Próximo ato governado
 
-P foi concluído com resultado `PASS`, a adjudicação de elegibilidade de Q foi concluída como `PASS` sobre o `HEAD 15f4d69f63cd760718dce7903224673aac4f540a`, e esse mesmo `HEAD` foi capturado como baseline final pós-auditoria. A definição funcional de Q foi posteriormente concluída e consolidada sem alterar essa baseline imutável. A adjudicação documental de elegibilidade de materialização também foi concluída como `PASS` e seu boundary canônico foi congelado em `GKR-UX-PER002-MAT-ELIGIBILITY-001`. A cadeia posterior avançou por gates separados: autorização low-fidelity, entrega low-fidelity, validação low-fidelity, elegibilidade high-fidelity, autorização high-fidelity, entrega high-fidelity, validação high-fidelity, elegibilidade de protótipo, autorização explícita de protótipo, execução do protótipo, validação inicial, revisão Codex, remediação e revalidação pós-review. O validator original foi preservado como evidência histórica `superseded` em `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1`; a conclusão corrente é governada por `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 = PASS`. A frente `GIA-COG-001` também completou seu ciclo documental por revisão, remediação, revalidação e promoção canônica, tornando-se arquitetura cognitiva vigente `active / normative`. A frente O/C posterior definiu documentalmente o mapa lógico de superfícies, o mapa funcional de estados e os Priority Flows; materialização de navegação, wireframes, Design e Engenharia permanecem fechados. Nenhum estágio posterior é liberado automaticamente.
 
 ```text
 P — AUDITORIA FINAL DE COMPLETUDE
@@ -2205,14 +2190,13 @@ Q — INTERACTIVE PROTOTYPE
 → ELIGIBILITY = PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
 → AUTHORIZATION = GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0
 → EXECUTION = EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
-→ ORIGINAL VALIDATION = HISTORICAL PRE-REVIEW / GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / SUPERSEDED
 → CODEX REVIEW = 2 P2 INTERACTION FINDINGS / REMEDIATED / THREADS RESOLVED
-→ POST-REVIEW REVALIDATION = PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 / 16 OF 16
+→ POST-REVIEW REVALIDATION = PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 / 16 OF 16
 → MATERIAL FINDINGS = 0
 → BLOCKING FINDINGS = 0
 → OPEN P2 INTERACTION FINDINGS = 0
 → REFORMULATION REQUIRED = NO
-→ CURRENT INTERACTIVE DESIGN REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0
+→ CURRENT INTERACTIVE DESIGN REFERENCE = DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0
 → FINAL CURRENT CONCLUSION = POST-REVIEW REVALIDATION PASS
 → SOURCE LOCK = NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
 
@@ -2224,11 +2208,11 @@ COGNITIVE REFERENCE ARCHITECTURE
 → PHYSICAL ARCHITECTURE / REAL DATA / IMPLEMENTATION / PRODUCTION = NOT AUTHORIZED
 
 O/C AUTHENTICATED SURFACE MAP
-→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0
 → DEFINED / CANONICAL DOCUMENTARY
 
 O/C AUTHENTICATED STATE MAP
-→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
 → DEFINED / CANONICAL DOCUMENTARY
 
 O/C AUTHENTICATED PRIORITY FLOWS
@@ -2298,342 +2282,90 @@ AINDA NÃO INICIADOS / NÃO AUTORIZADOS ALÉM DO BOUNDARY
 
 A cadeia interativa de `PER-002` alcançou fechamento pós-review validado, `GIA-COG-001` alcançou promoção canônica no limite arquitetural conceitual/de referência e a cadeia O/C alcançou Navigation Materialization canônica, low-fidelity validado e elegibilidade high-fidelity `PASS`. Nenhum desses fechamentos libera automaticamente high-fidelity Design, protótipo, estágio operacional ou de produto. Qualquer Source Lock adicional, `GIA-COG-002..008`, UXA-102/V5, high-fidelity Design O/C, Product Engineering, implementação, produção, teste com participantes reais ou dados reais exige ato governado próprio.
 
-## 30. Home Masters — changeset formal de fechamento
+## 30. Home Masters — estado corrente
 
-A frente Home Masters comprovou elegibilidade para fechamento no HEAD `39277f305fced32ce351c113ab7e7d5d7cc76242`, com `C1–C10 = PASS`, Semantic #991 `SUCCESS`, Mechanical #1236 `SUCCESS`, quarto review Codex sem finding material e zero threads de review abertos.
-
-`GKR-CHECKPOINT-HOME-MASTERS-PRIORITY-001 v1.1.0` e `GKR-HOME-MASTERS-REMEDIATION-001 v1.3.0` registram a prova e o changeset de fechamento.
+Os oito Documentos Mestres são a fonte direta de verdade das Homes públicas.
 
 ```text
-HOME MASTERS FORMAL CLOSURE CHANGESET
-→ DOCUMENTALLY COMPLETE IN PR #377
+PESSOA
+→ GKR-UX-HOME-MASTER-001 v1.0.4
 
-HOME MASTERS INTEGRATION STATE IN MAIN
-→ IF THIS CHANGESET IS ABSENT FROM MAIN: PENDING GOVERNED MERGE OF PR #377
-→ IF THIS CHANGESET IS PRESENT IN MAIN: CONCLUDED / GOVERNED / INTEGRATED
+ORGANIZAÇÕES E COLETIVOS
+→ GKR-UX-HOME-OC-MASTER-001 v1.0.4
 
-HOME MASTERS FRONT IN MAIN
-→ MUST NOT BE CLAIMED AS INTEGRATED WHILE THIS CHANGESET IS ABSENT FROM MAIN
+MALL
+→ GKR-UX-HOME-MALL-MASTER-001 v1.1.2
+
+TRAVEL
+→ GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.4
+
+MEDIA
+→ GKR-UX-HOME-MEDIA-MASTER-001 v1.0.2
+
+ADS
+→ GKR-UX-HOME-ADS-MASTER-001 v1.0.2
+
+BUSINESS
+→ GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4
+
+INTELLIGENCE
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9
+
+QUICK-REFERENCE MOVEMENTS
+→ 83 / 83
+
+HISTORICAL REMEDIATION / CHECKPOINT INPUT
+→ NOT REQUIRED
 ```
 
-A revisão `v3.35.0` desta autoridade integrou o changeset de fechamento de Home Masters. A revisão `v3.36.0` promoveu documentalmente o Surface Map O/C. A revisão `v3.37.0` promoveu o State Map O/C, a revisão `v3.38.0` promoveu os Priority Flows O/C, a revisão `v3.39.0` sincronizou globalmente o GKR, a revisão `v3.40.0` promoveu a elegibilidade de Navigation Materialization, a revisão `v3.41.0` promoveu a própria Navigation Materialization, a revisão `v3.42.0` registrou autorização + primeira entrega low-fidelity O/C e a revisão `v3.43.0` registra a validação funcional `PASS` e a referência corrente Delivery + Validation.
+Auditorias, remediações, candidatos e snapshots usados para chegar a este estado não fazem parte da cadeia operacional corrente. O Git preserva sua proveniência.
 
-A PR histórica #365 permanece preservada como candidato anterior não mesclado; sua reconciliação é realizada por branch limpa sobre o `main` posterior, sem rebase ou merge cego. Os gates downstream continuam independentes:
-
-```text
-PR #365
-→ OPEN / DRAFT / NOT MERGED / HOLD
-→ HEAD 3a946a2c2ae840d6ac6f5dba91242479d46db2e5
-→ HISTORICAL CANDIDATE / NO BLIND REBASE OR MERGE
-
-O/C STATE MAP
-→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
-→ DEFINED / CANONICAL DOCUMENTARY
-→ INTEGRATED AS CURRENT DOCUMENTARY AUTHORITY VIA PR #380
-→ MERGE COMMIT 3d4a19a77e30bda1092adbbca40ad23bbae0b170
-
-O/C PRIORITY FLOWS
-→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
-→ DEFINED / CANONICAL DOCUMENTARY
-→ INTEGRATED AS CURRENT DOCUMENTARY AUTHORITY VIA PR #382
-→ MERGE COMMIT fea4d129a3be93d39417ae9b896d9227b39fcbf2
-
-O/C AUTHENTICATED NAVIGATION MATERIALIZATION
-→ GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0
-→ DEFINED / CANONICAL DOCUMENTARY
-→ PRODUCT MENU VISUAL NOT DEFINED
-
-O/C LOW-FIDELITY WIREFRAMES
-→ DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS
-
-HIGH-FIDELITY UI / PROTOTYPE
-→ NOT RELEASED BY HOME-MASTERS CLOSURE, SURFACE-MAP/STATE-MAP/PRIORITY-FLOWS DOCUMENTARY PROMOTION OR LOW-FIDELITY VALIDATION
-
-PRODUCT ENGINEERING
-→ PAUSED BEFORE W0-01 / NOT RELEASED
-```
-
-O avanço posterior ao fechamento Home Masters inclui, nesta revisão, a promoção canônica de Navigation Materialization após Surface Map, State Map, Priority Flows e sua elegibilidade O/C. Authenticated Wireframes, Design/UI, protótipo e Product Engineering continuam não liberados automaticamente.
-## 31. Homes públicas — finalização das fontes para Designer e IA opcional
-
-A decisão humana de 2026-09-19 reafirma que o GKR não produzirá nem conduzirá arquivos de Design em Figma. A designer é a autora criativa das Homes e deve trabalhar a partir do Guivos Knowledge Repository, dos Documentos Mestres e das autoridades relacionadas.
+## 31. Homes públicas — fonte corrente para Design e IA opcional
 
 ```text
+PRIMARY SOURCE OF TRUTH
+→ CURRENT MAIN
+
+AUTHORIZED WHITELIST
+→ GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.6
+
+COMMON AUTHORITIES
+→ HANDOFF v1.7.2
+→ GENINPUT v2.3.2
+→ READINESS v1.3.1
+→ FLOW v3.1.2
+→ RELEASE v1.3.1
+
+DESIGN PRODUCTION READINESS
+→ PASS / CURRENT
+
+DESIGN PRODUCTION RELEASE
+→ GRANTED
+
+SNAPSHOT REQUIREMENT
+→ NONE
+
+CANDIDATE REQUIREMENT
+→ NONE
+
+HISTORICAL PACKAGE INPUT
+→ EXCLUDED
+
 DESIGNER
 → CREATIVE AUTHOR
-→ MANUAL FIRST-CLASS
 
 AI
 → OPTIONAL / DESIGNER-CONTROLLED
 
-GKR / CHATGPT
-→ DOES NOT CREATE FIGMA
-→ DOES NOT PRESELECT VISUAL DIRECTION
-
-VISUAL IDENTITY
-→ DESIGN-OWNED
-```
-
-O snapshot v5 permanece histórico, reproduzível e congelado:
-
-```text
-V5 SNAPSHOT
-→ delivery/design-handoff-v5
-→ commit f2e8375258fda4f37aea27a5e5ec5e83f5c1a66d
-→ tree 67bacb135166e7f3e85bfb4c52602ba89a515a1e
-→ 26 CANONICAL SOURCES + 8 GUIDES = 34 FILES
-→ FROZEN / HISTORICAL DELIVERY SNAPSHOT
-```
-
-A auditoria documental está registrada em `GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001`.
-
-Resultado final da frente de fontes:
-
-```text
-C1–C15
-→ PASS / CLOSED FOR EMISSION
-
-HOMES
-→ 8 / 8
-
-PACKAGE-LEVEL CHECKS
-→ 120 / 120 PASS
-
-OPEN MATERIAL SOURCE-COMPLETENESS FINDINGS
-→ 0 OPEN AT EMISSION
-→ FINAL EXACT-HEAD GATES + RE-REVIEW CLEAN
-```
-
-Remediações materiais do candidato:
-
-- Handoff comum → designer-first / IA opcional;
-- Operational Flow → tool-neutral;
-- Readiness → contrato Designer/IA;
-- Release → produção externa pela designer;
-- Pessoa Master → v1.0.3 reconciliado para produção externa de Design;
-- O/C Master → v1.0.3 reconciliado para produção externa de Design;
-- Mall Master → v1.1.1 reconciliado para produção externa de Design;
-- Travel Master → v1.1.3 reconciliado para produção externa de Design;
-- Business Master → v1.1.3 reconciliado para produção externa de Design;
-- Business Source Lock → v1.1.6 sincronizado com Business Master v1.1.3 e Authority Contract v1.0.3;
-- Intelligence Master → v0.2.7 reconciliado para produção externa de Design;
-- Intelligence Source Lock → v1.1.9 reconciliado para designer-first / IA opcional;
-- Intelligence Design Handoff → v1.1.10 reconciliado para designer-first / IA opcional;
-- Intelligence Product Source Lock → v1.0.1 reconciliado para tratar o estado pré-Home como proveniência histórica, não gate corrente;
-- artefato Figma experimental anterior → `ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE`.
-
-O pacote v6 foi materializado a partir de `GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001` e registrado em `GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001`:
-
-```text
-COMMON SOURCES
-→ 5
-
-HOME-SPECIFIC UNIQUE SOURCES
-→ 24
-
-CANONICAL SOURCES
-→ 29
-
-READ-FIRST GUIDES
-→ 8
-
-TOTAL EXTERNAL FILES
-→ 37
-
-MARKDOWN
-→ PRIMARY HUMAN + AI FORMAT
-
-SNAPSHOT BRANCH
-→ delivery/design-handoff-v6
-
-SNAPSHOT COMMIT
-→ b7fe5d62cef444c8316c66edd8ac73b703698a4a
-
-SNAPSHOT TREE
-→ 61eef7447fc5c6b36890ccb774f7011615a6abca
-
-CANONICAL BLOB PRESERVATION
-→ 29 / 29 EXACT MATCH
-```
-
-Estado:
-
-```text
-DESIGN PRODUCTION RELEASE
-→ GRANTED
-→ EXTERNAL DESIGNER PRODUCTION AUTHORIZATION
-
-OPERATIONAL EXECUTION
-→ PAUSED UNTIL VALID CURRENT EXTERNAL SOURCE PACKAGE EXISTS
-
 GKR-CREATED FIGMA
 → NONE
 
-PRIOR GKR FIGMA EXPLORATION
-→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
+VISUAL IDENTITY
+→ DESIGN-OWNED
 
-AI
-→ OPTIONAL
-
-V6 PACKAGE
-→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
-→ FROZEN / HISTORICAL
-→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
-
-CURRENT EXTERNAL SOURCE PACKAGE
-→ NONE
-→ REISSUE / REVALIDATION REQUIRED
-
-SEMANTIC #1404 / MECHANICAL #1633
-→ SUCCESS ON FINAL PR #397 HEAD
-
-PRE-EMISSION INDEPENDENT REVIEW
-→ CLEAN / NO MAJOR ISSUES ON 7ca0857587f87f982ea53c2ce1719c1a0ed831b6
-
-POST-EMISSION PR #402 REVIEW #1
-→ P1 VALID ON 615ec67af2f3d463747bdb309fc49cb88e557137
-→ SHIPPED FLOW v3.0.1 CONTRADICTED CURRENT-V6 STATUS
-→ CANONICAL FLOW REMEDIATED TO v3.0.2
-→ RELEASE CLARIFIED TO v1.2.0
-→ V6 SNAPSHOT NOT REWRITTEN
-
-POST-EMISSION PR #402 RE-REVIEW #2
-→ P1 VALID ON b815e0f07f5f59bde2fbbd23288a65b1816cb2e4
-→ GENINPUT v2.2.14 / READINESS v1.2.14 STILL AUTHORIZED EXECUTION
-→ PREVENTIVE HANDOFF STALE-PIN SWEEP REMEDIATED TO v1.6.3
-→ CANONICAL GENINPUT REMEDIATED TO v2.2.15
-→ CANONICAL READINESS REMEDIATED TO v1.2.15
-→ CANONICAL FLOW = v3.0.2
-→ RELEASE = v1.2.0
-→ CURRENT EXTERNAL SOURCE PACKAGE = NONE
-→ REISSUE / REVALIDATION REQUIRED
-
-POST-EMISSION PR #402 FINAL RE-REVIEW
-→ CLEAN / NO MAJOR ISSUES ON d3cd3dce176a4224930cc428483f5530d22e8c6d
-→ SEMANTIC #1444 = SUCCESS
-→ MECHANICAL #1672 = SUCCESS
-→ REVIEW THREADS = 0 OPEN
-
-PR #402
-→ MERGED
-→ MERGE COMMIT 0f37eda133dc14a42f686b616993cffcd099cf04
-→ MAIN RECONFIRMED @ 0f37eda133dc14a42f686b616993cffcd099cf04
-→ POST-EMISSION RECONCILIATION CLOSED
-
-PR #403
-→ MERGED
-→ MERGE COMMIT 1a1386bc318afa2e91f5c1ef5ffd3a80e7265cb2
-→ POST-MERGE RECONCILIATION INTEGRATED
-
-PR #405
-→ MERGED
-→ FINAL REVIEWED HEAD 0418b219d4d4a746498cf8b8032b5018f333e29e
-→ SEMANTIC #1463 = SUCCESS
-→ MECHANICAL #1689 = SUCCESS
-→ FINAL INDEPENDENT CODEX REVIEW = CLEAN / NO MAJOR ISSUES
-→ REVIEW THREADS = 0 OPEN
-→ MERGE COMMIT 574814b561a933291fd3e7539f814f4187398277
-
-PR #406
-→ MERGED
-→ FINAL REVIEWED HEAD fd99d016f54f6cc2ebd89f63025334dc82e5f1ed
-→ SEMANTIC #1465 = SUCCESS
-→ MECHANICAL #1690 = SUCCESS
-→ FINAL INDEPENDENT CODEX REVIEW = CLEAN / NO MAJOR ISSUES
-→ REVIEW THREADS = 0 OPEN
-→ MERGE COMMIT 35c616a4a7bf754577c180d37afe5e0c22380c7b
-→ MAIN USED AS AUTHORIZED V7 SNAPSHOT ORIGIN
-
-PR #407
-→ CLOSED / MERGED
-→ FINAL REVIEWED HEAD 937c8f44428a7a2a8620740792b57728098ad2f6
-→ SEMANTIC #1496 = SUCCESS
-→ MECHANICAL #1720 = SUCCESS
-→ FINAL INDEPENDENT CODEX REVIEW = CLEAN / NO MAJOR ISSUES
-→ REVIEW THREADS = 0 OPEN
-→ MERGE COMMIT / MAIN b660503a5da5ec5214e3e2c0eba1f1b06daa9489
-
-PR #408
-→ CLOSED / MERGED
-→ FINAL REVIEWED HEAD a645330b63170ba4ea58cfcfe082abd93ca0442c
-→ SEMANTIC #1531 = SUCCESS
-→ MECHANICAL #1754 = SUCCESS
-→ FINAL INDEPENDENT CODEX REVIEW = CLEAN / NO MAJOR ISSUES
-→ REVIEW THREADS = 0 OPEN
-→ MERGE COMMIT / MAIN 00791d1e09b5e75b33c223e38164eeee1be0c6cd
-→ MAIN USED AS AUTHORIZED V8 SNAPSHOT ORIGIN
-
-CANONICAL COMMON-AUTHORITY REMEDIATION
-→ HANDOFF v1.6.5
-→ GENINPUT v2.2.17
-→ READINESS v1.2.17
-→ FLOW v3.0.3
-→ RELEASE v1.2.1
-→ PACKAGE STATE FULLY DELEGATED TO MANIFEST + CURRENT STATE
-→ COMMON AUTHORITIES NO LONGER FREEZE NONE / PAUSED / CURRENT-SNAPSHOT VALUES
-
-V7 REISSUE CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001 v0.3.2
-→ NON-NORMATIVE PROVENANCE
-→ REALIZED BY V7 SNAPSHOT
-→ RESULTING SNAPSHOT INVALIDATED FOR NEW EXECUTION
-
-V7 EXTERNAL SNAPSHOT
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001 v1.1.0
-→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
-→ FROZEN / HISTORICAL
-→ INVALID FOR NEW EXECUTION AFTER POST-EMISSION P1
-→ ORIGIN MAIN 35c616a4a7bf754577c180d37afe5e0c22380c7b
-→ BRANCH delivery/design-handoff-v7
-→ SNAPSHOT COMMIT 564a2656332dffeb4779ca20ee1ce6697abaa06d
-→ SNAPSHOT TREE 39a72433b0b6f75975bc6a128c57fb688bd85bcb
-→ 29 / 29 CANONICAL BLOBS EXACT MATCH
-→ 8 / 8 READ-FIRST GUIDES VALID
-→ 37 FILES TOTAL
-
-V8 REISSUE CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001 v0.3.0
-→ NON-NORMATIVE PROVENANCE
-→ PREPARATION BASE / MAIN b660503a5da5ec5214e3e2c0eba1f1b06daa9489
-→ 29 / 29 SOURCE PINS RECALCULATED
-→ SUBSTANTIVE REVALIDATION PASS
-→ REALIZED BY V8 SNAPSHOT
-
-V8 EXTERNAL SNAPSHOT
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001 v1.0.0
-→ EMITTED / MATERIALIZED / INTEGRITY-VALIDATED
-→ FROZEN
-→ ORIGIN MAIN 00791d1e09b5e75b33c223e38164eeee1be0c6cd
-→ BRANCH delivery/design-handoff-v8
-→ SNAPSHOT COMMIT d7eea909b1b5cb6266d7c4a725657ccd909f0e63
-→ SNAPSHOT TREE 17553412f24d7a97287ddc5944b8622ecf744534
-→ 29 / 29 CANONICAL BLOBS EXACT MATCH
-→ 8 / 8 READ-FIRST GUIDES VALID
-→ 37 FILES TOTAL
-→ COMMON AUTHORITIES PACKAGE-STATE AGNOSTIC
-→ VALID FOR NEW EXTERNAL DESIGN EXECUTION
-
-CURRENT EXTERNAL SOURCE PACKAGE
-→ V8
-→ delivery/design-handoff-v8
-→ d7eea909b1b5cb6266d7c4a725657ccd909f0e63
-
-DESIGN PRODUCTION RELEASE
-→ GRANTED
-
-OPERATIONAL DESIGN PACKAGE CONDITION
-→ SATISFIED
-
-EXTERNAL DESIGNER PRODUCTION
-→ RELEASED UNDER CURRENT V8 PACKAGE
-
-NEXT GOVERNED ACT
-→ EXTERNAL DESIGNER MAY CONSUME V8 PACKAGE
-→ FINAL DESIGN ACCEPTANCE REMAINS HUMAN / SEPARATE
-→ NO AUTOMATIC PRODUCT ENGINEERING RELEASE
-
-O/C AUTHENTICATED HIGH-FIDELITY AUTHORIZATION
-→ NOT_GRANTED
+O/C AUTHENTICATED HIGH-FIDELITY
+→ ELIGIBILITY PASS
+→ AUTHORIZATION / EXECUTION REMAIN SEPARATE GOVERNED ACTS
 
 UXA-102 / V5
 → NOT_STARTED
@@ -2642,38 +2374,23 @@ PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-## Public Homes — candidato v9 pós-quadros de consulta rápida
+A designer pode consumir diretamente o Manifesto corrente, as cinco autoridades comuns e as fontes específicas da Home. Journey é carregado apenas quando o protótipo atravessa para experiência autenticada.
+
+## 32. Regra corrente de atualização
 
 ```text
-PREPARATION BASE / MAIN
-→ 7bd02df4f0ed8ab2c809992abafa251756dcaf9a
+VALIDATED CHANGE
+→ UPDATE EXISTING CANONICAL AUTHORITY
 
-HOME MASTER QUICK-REFERENCE TABLES
-→ 8 / 8 MASTERS
-→ 83 MOVEMENTS
-→ MERGED VIA PR #411
+MASTER CHANGE
+→ UPDATE MASTER + MANIFEST + AFFECTED CURRENT AUTHORITIES
 
-V9 REISSUE CANDIDATE
-→ GKR-UX-HOMES-DESIGN-DELIVERY-V9-CANDIDATE-001 v0.1.0
-→ PREPARED / NON-NORMATIVE
-→ 29 / 29 SOURCE PINS RECALCULATED
-→ 21 / 29 PINS UNCHANGED FROM V8
-→ 8 / 29 PINS UPDATED EXACTLY IN THE 8 HOME MASTERS
-→ SUBSTANTIVE REVALIDATION PASS
-→ FINAL DOCUMENTARY HEAD VALIDATION = EXTERNAL PR GATE
-→ MATERIALIZATION NOT AUTHORIZED
+SNAPSHOT
+→ ONLY FOR A REAL EXTERNAL FREEZE / TRANSPORT NEED
 
-CURRENT EXTERNAL SOURCE PACKAGE
-→ V8
-→ delivery/design-handoff-v8
-→ FROZEN / VALID
-→ UNCHANGED
+CANDIDATE
+→ NOT CREATED BY DEFAULT
 
-delivery/design-handoff-v9
-→ NOT PRESENT
-
-NEXT GOVERNED ACT
-→ COMPLETE EXACT-HEAD SEMANTIC + MECHANICAL + INDEPENDENT REVIEW FOR V9 CANDIDATE
-→ THEN DECIDE READY / MERGE SEPARATELY
-→ MATERIALIZATION REMAINS A LATER EXPLICIT HUMAN ACT
+HISTORY
+→ GIT
 ```

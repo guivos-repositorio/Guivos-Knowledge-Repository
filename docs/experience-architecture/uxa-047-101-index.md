@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Vigente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.48.35
+version: 3.49.4
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-20
 depends_on:
@@ -21,14 +21,6 @@ related:
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
-  - GKR-UX-HOMES-DESIGN-SOURCE-COMPLETENESS-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-CANDIDATE-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V6-SNAPSHOT-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-CANDIDATE-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V8-CANDIDATE-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V8-SNAPSHOT-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V9-CANDIDATE-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V7-SNAPSHOT-001
   - GKR-UX-PER002-MAT-ELIGIBILITY-001
   - GKR-UX-PER002-DESIGN-AUTH-001
   - GKR-UX-PER002-DESIGN-DELIVERY-001
@@ -40,7 +32,6 @@ related:
   - GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001
   - GKR-UX-PER002-PROTOTYPE-AUTH-001
   - GKR-UX-PER002-PROTOTYPE-DELIVERY-001
-  - GKR-UX-PER002-PROTOTYPE-VALIDATION-001
   - GKR-UX-PER002-PROTOTYPE-REVALIDATION-001
 normative: false
 ---
@@ -53,7 +44,7 @@ Estado transversal sincronizado:
 
 ```text
 GKR-STATE-001
-→ 3.48.35
+→ 3.49.3
 
 MARCO FUNCIONAL
 → M7.88
@@ -68,11 +59,11 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
 
 O/C AUTHENTICATED SURFACE MAP
-→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0
 → DEFINED / CANONICAL DOCUMENTARY
 
 O/C AUTHENTICATED STATE MAP
-→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
 → DEFINED / CANONICAL DOCUMENTARY
 
 O/C PRIORITY FLOWS
@@ -270,7 +261,6 @@ Q INTERACTIVE PROTOTYPE EXECUTION
 
 Q ORIGINAL INTERACTIVE PROTOTYPE VALIDATION
 → HISTORICAL PRE-REVIEW EVIDENCE
-→ AUTHORITY = GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1
 → STATUS = SUPERSEDED AS FINAL CURRENT CLOSURE
 → ORIGINAL RESULT = 16 / 16 PASS AT PRE-REVIEW CHECKPOINT
 
@@ -281,7 +271,7 @@ Q CODEX PROTOTYPE REVIEW
 
 Q POST-REVIEW INTERACTIVE PROTOTYPE REVALIDATION
 → PASS
-→ AUTHORITY = GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0
+→ AUTHORITY = GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0
 → VALIDATION CRITERIA = 16 / 16 PASS AFTER REMEDIATION
 → MATERIAL FINDINGS = 0
 → BLOCKING FINDINGS = 0
@@ -291,9 +281,8 @@ Q POST-REVIEW INTERACTIVE PROTOTYPE REVALIDATION
 CURRENT INTERACTIVE DESIGN REFERENCE
 → GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
 +
-→ GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 AS HISTORICAL PRE-REVIEW EVIDENCE
 +
-→ GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 AS CURRENT POST-REVIEW CONCLUSION
+→ GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 AS CURRENT POST-REVIEW CONCLUSION
 
 FINAL CURRENT INTERACTIVE CONCLUSION
 → POST-REVIEW REVALIDATION PASS
@@ -368,7 +357,6 @@ PROTOTYPE VALIDATION PRE-REVIEW
 ≠ CURRENT POST-REVIEW CONCLUSION
 ```
 
-A auditoria integral encerrou a verificação do corpus sem converter maturidade documental em maturidade visual. A adjudicação de materialização de Q estabeleceu que `PER-002` possui contrato funcional suficiente para materialização low-fidelity; a autorização governada liberou essa execução, a entrega existe em `GKR-UX-PER002-DESIGN-DELIVERY-001` e sua validação funcional concluiu `PASS` em `GKR-UX-PER002-DESIGN-VALIDATION-001`. A referência corrente low-fidelity é o pacote entrega+validator. A elegibilidade high-fidelity concluiu `PASS`, a decisão governada autorizou o refinamento, a entrega high-fidelity foi executada em `GKR-UX-PER002-HIFI-DELIVERY-001` e validada com `PASS` por `GKR-UX-PER002-HIFI-VALIDATION-001`. A referência corrente high-fidelity é o pacote entrega+validator. A adjudicação de protótipo concluiu `PASS`, a autorização explícita foi `GRANTED` por `GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0`, a execução foi concluída em `GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0`, o validator original permanece apenas como evidência histórica pré-review em `GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1`, e a conclusão corrente pós-remediação é `PASS` em `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0`.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -476,37 +464,34 @@ GKR-UX-ORGCOL-AUTH-JOBS-001
 GKR-UX-ORGCOL-AUTH-IA-001
 → Arquitetura da Informação definida pre-surface-map
 
-GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0
 → mapa lógico-documental canônico das superfícies autenticadas O/C
 → stable GKR-SURF-* IDs preservados por crosswalk
 → não cria namespace paralelo
 
-GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
 → mapa funcional canônico documental dos estados autenticados O/C
 → não cria namespace estável de estados
 → não cria nem promove GKR-TRN-*
 ```
 
-Surface Map e State Map são canônicos em nível documental. Permanecem pendentes e não podem ser inferidos a partir deles:
+Surface Map e State Map são canônicos em nível documental. A sequência governada posterior também concluiu a Navigation Materialization canônica e os wireframes autenticados low-fidelity, com Delivery v0.1.0 e Validation v1.0.0 = PASS. Permanecem não liberados por inferência:
 
-- Navigation Materialization O/C;
-- materialização de navegação;
-- wireframe principal da Organização;
-- wireframe principal do Coletivo;
-- UI;
-- protótipo;
-- implementação.
+- high-fidelity Design (elegibilidade PASS, autorização NOT_GRANTED);
+- protótipo autenticado O/C;
+- implementação;
+- Product Engineering.
 
 ## Estado sincronizado
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.44.0** |
+| Registro do Estado Atual | **3.49.3** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
-| O/C Authenticated Surface Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0** |
-| O/C Authenticated State Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0** |
+| O/C Authenticated Surface Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0** |
+| O/C Authenticated State Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0** |
 | O/C Priority Flows | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** |
 | O/C Navigation Materialization Eligibility | **PASS / ACTIVE / CANONICAL / v1.0.0** |
 | O/C Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0** |
@@ -515,7 +500,7 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
 | Baseline final pós-auditoria | **CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a** |
 | Lotes concluídos | **A / B / C / D / E / F / G** |
-| Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey remains draft** |
+| Bloco G — Jornada da Pessoa | **COMPLETED / UPDATE_APPLIED; journey active** |
 | Bloco H — Organização / Coletivo | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED** |
 | Bloco I — Registries / Catálogos / SVGs | **AUDITED / UPDATE_APPLIED / F-006 RESOLVED / F-007 RESOLVED** |
 | F-010 — cleanup transversal | **RESOLVED — CLEANUP / VALIDATION / INDEPENDENT REVIEW COMPLETE** |
@@ -546,9 +531,8 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 | Interactive prototype eligibility | **PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0** |
 | Interactive prototype authorization | **GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0** |
 | Interactive prototype execution | **EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0** |
-| Original prototype validation | **HISTORICAL PRE-REVIEW / GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / SUPERSEDED** |
-| Post-review prototype revalidation | **PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS** |
-| Current interactive Design reference | **DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.0.0** |
+| Post-review prototype revalidation | **PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS** |
+| Current interactive Design reference | **DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0** |
 | Final interactive conclusion | **POST-REVIEW REVALIDATION PASS** |
 | Next automatic execution | **NONE** |
 | Source Lock pós-validação | **NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE** |
@@ -565,4 +549,4 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 | Home Organizações e Coletivos | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 | Homes dos Produtos Especializados | **DOCUMENTALLY_RECONCILED_PRE_MATERIALIZATION** |
 
-A referência corrente high-fidelity de `PER-002` permanece a entrega `v0.1.0` lida com seu validator `v1.0.0`. O protótipo interativo foi executado, o ato original de validação está preservado apenas como evidência histórica pré-review em `v1.0.1`, e a conclusão corrente é a revalidação pós-review `PASS` em `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.0.0`. Isso não promove maturidade de transição, maturidade visual agregada, implementação, operação, PMF ou `UXA-102/V5`.
+A referência corrente high-fidelity de `PER-002` permanece a entrega `v0.1.0` lida com seu validator `v1.0.0`. O protótipo interativo foi executado, o ato original de validação está preservado apenas como evidência histórica pré-review em `v1.0.1`, e a conclusão corrente é a revalidação pós-review `PASS` em `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0`. Isso não promove maturidade de transição, maturidade visual agregada, implementação, operação, PMF ou `UXA-102/V5`.

@@ -2,17 +2,15 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.2.17
+version: 1.3.1
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 normative: true
-maturity: designer_first_ai_optional_current_package_delegated
+maturity: current_design_ready_main_canonical_first_class
 depends_on:
-  - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOMES-GENINPUT-001
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
-  - GKR-HOME-MASTERS-REMEDIATION-001
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-MALL-MASTER-001
@@ -22,8 +20,6 @@ depends_on:
   - GKR-UX-HOME-ADS-MASTER-001
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
 related:
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V4-SNAPSHOT-001
-  - GKR-UX-HOMES-DESIGN-DELIVERY-V5-SNAPSHOT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GKR-BRAND-SIGNATURE-001
   - GOG-001
@@ -61,16 +57,35 @@ O objetivo é reduzir a zero os findings materiais documentais antes do release 
 
 ## 2. Resultado executivo
 
-Baseline auditada: `main @ fada353688e26047a8eb8f45a8de67af0aa9b3d0`.
+Checkpoint corrente: `CURRENT MAIN`, resolvido no momento do consumo.
 
-Estado desta revisão:
+```text
+8 HOME MASTERS
+→ CURRENT
 
-- arquitetura semântica das oito Homes: documentada e reconciliada;
-- método de handoff: reconciliado pós-auditoria;
-- template generativo: expandido para oito Homes;
-- contrato de consumo, criação e entrega de Design: definido por esta autoridade;
-- pacote v5: preparado pelo Manifesto v5, ainda dependente de emissão pós-merge;
-- Design Production Release: não concedido por este documento.
+QUICK-REFERENCE MOVEMENTS
+→ 83 / 83 COVERED
+
+COMMON AUTHORITIES
+→ CURRENT
+
+DESIGN PRODUCTION RELEASE
+→ GRANTED
+
+DESIGNER
+→ CREATIVE AUTHOR
+
+AI
+→ OPTIONAL
+
+SNAPSHOT PRECONDITION
+→ NONE
+
+HISTORICAL INPUT
+→ EXCLUDED
+```
+
+A prontidão é avaliada contra o conjunto canônico corrente, não contra uma emissão histórica.
 
 ## 3. Princípio superior — significado governado, criatividade livre
 
@@ -107,41 +122,32 @@ A liberdade visual não pode alterar:
 - assinatura institucional quando utilizada: `Possibility, lived.` / `Possibilidade, vivida.`;
 - copy explicitamente classificada como congelada por autoridade específica.
 
-## 5. Auditoria de produção — findings de baseline
+## 5. Avaliação corrente de prontidão
 
-### F-01 — snapshot v4 superado
+```text
+SEMANTIC SOURCES
+→ PRESENT
 
-O snapshot v4 nasceu de `f900318af746ba25e3bb18d18bfddee5654620c7`; a baseline desta auditoria está 785 commits à frente. Cinco das 31 fontes do v4 sofreram alteração, incluindo Handoff comum, Masters Pessoa/O/C e seus GENINPUTs.
+HOME-SPECIFIC SOURCES
+→ PRESENT
 
-Decisão: v4 permanece histórico e não pode ser entregue como pacote atual.
+MASTER VERSIONS
+→ CURRENT
 
-### F-02 — gates temporais da Auditoria Integral estavam obsoletos
+MOVEMENT ORDER / COUNT
+→ PRESERVED
 
-Handoff, Manifest, Template e Flow ainda continham linguagem de suspensão durante auditoria, embora a auditoria global esteja concluída.
+DESIGN FREEDOM
+→ PRESERVED
 
-Decisão: reconciliar os quatro documentos para estado pós-auditoria.
+REAL-DATA GUARDRAILS
+→ ACTIVE
 
-### F-03 — template ainda descrevia cinco Homes
+OPEN MATERIAL FINDINGS
+→ NONE KNOWN IN CURRENT DESIGN SOURCE SET
+```
 
-Decisão: `GKR-UX-HOMES-GENINPUT-001 v2.0.0` cobre as oito Homes.
-
-### F-04 — Source Locks operacionais apontavam checkpoints antigos
-
-Pessoa/O-C já estavam explicitamente reclassificados como evidência histórica; Mall, Travel, Media, Business, Ads e Intelligence também registravam checkpoints anteriores.
-
-Decisão: o pacote v5 não usa GENINPUT histórico como autoridade operacional. Cada `LEIA-PRIMEIRO` do v5 funciona como Source Lock operacional daquela Home e registra o checkpoint exato da emissão.
-
-### F-05 — aceite final do Design não estava suficientemente determinístico
-
-Decisão: este documento estabelece o contrato mínimo de produção e aceite sem definir estética.
-
-### F-06 — conteúdo aberto precisava de classificação por estágio
-
-Decisão: toda informação não consolidada deve usar uma das classes da seção 8.
-
-### F-07 — ausência de identidade visual canônica
-
-Reclassificação humana: **não é gap**. É liberdade deliberada de Design.
+Findings, snapshots e remediações encerradas pertencem à história do Git e não são input para Design ou IA.
 
 ## 6. Composição de fontes por Home
 
@@ -153,23 +159,23 @@ Cinco autoridades comuns acompanham todas as Homes:
 4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001`;
 5. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`.
 
-A identidade e a validade do pacote externo corrente são determinadas exclusivamente pelo Manifesto + Current State vigentes. Este documento define o contrato de prontidão e a composição semântica, mas não fixa `NONE`, snapshot corrente, candidato corrente ou estado transitório de emissão. As versões exatas de cada entrega são registradas pelo Manifesto e pelo snapshot correspondente.
+O Manifesto corrente fixa o conjunto canônico no checkpoint do `main`. Snapshot não é pré-condição para Design; quando existir, funciona apenas como artefato de transporte congelado.
 
 Fontes específicas:
 
 ### Pessoa
-- `GKR-UX-HOME-MASTER-001 v1.0.3`;
-- `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.0`.
+- `GKR-UX-HOME-MASTER-001 v1.0.4`;
+- `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.1`.
 
 ### Organizações e Coletivos
-- `GKR-UX-HOME-OC-MASTER-001 v1.0.3`;
+- `GKR-UX-HOME-OC-MASTER-001 v1.0.4`;
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0`.
 
 ### Mall
-- `GKR-UX-HOME-MALL-MASTER-001 v1.1.1`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.1.2`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
 
-Contrato corrente que o guia/Source Lock v6 deve explicitar:
+Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `MALL-HS-01 BASELINE_PUBLIC` — tese, pergunta-mãe, identidade Guivos e descoberta são base permanente;
 - `MALL-HS-02 COMMERCIAL_DATA_AVAILABLE` — produto/oferta/preço/pontos/marca/parceiro somente com fonte aplicável;
 - `MALL-HS-03 COMMERCIAL_DATA_UNAVAILABLE_OR_ERROR` — ausência não pode virar oferta, estoque, preço ou parceria fictícia;
@@ -178,10 +184,10 @@ Contrato corrente que o guia/Source Lock v6 deve explicitar:
 - `MALL-HS-06 SPONSORED_EXPOSURE` — exposição paga permanece identificada e não se disfarça de relevância orgânica.
 
 ### Travel
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.3`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.4`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
 
-Contrato corrente que o guia/Source Lock v6 deve explicitar:
+Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `TRAVEL-HS-01 BASELINE_PUBLIC` — pergunta-mãe, identidade Guivos, inspiração e acesso a serviços são a base;
 - `TRAVEL-HS-02 OPERATIONAL_SERVICE` — serviços governados podem ser apresentados sem inferir disponibilidade universal;
 - `TRAVEL-HS-03 DESTINATION_OR_EXPERIENCE_PROVEN` — destino/imagem/experiência apresentados como reais exigem lastro;
@@ -190,67 +196,58 @@ Contrato corrente que o guia/Source Lock v6 deve explicitar:
 - `TRAVEL-HS-06 CAMPAIGN_OR_SPONSORED` — campanha é temporária e patrocínio permanece identificado.
 
 ### Media
-- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.1`;
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.2`;
 - `GPA-005 v1.2.0`.
 
 ### Ads
-- `GKR-UX-HOME-ADS-MASTER-001 v1.0.1`;
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.2`;
 - `GPA-007 v1.3.0`.
 
 ### Business
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.6`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.3`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.7`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
 - `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3`;
 - `GPA-004 v1.6.0`.
 
 ### Intelligence
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.10`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.9`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.7`;
-- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.11`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9`;
+- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4`;
 - `GKR-UX-HOMES-OUTCOME-001 v1.0.0`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1`;
 - `GPA-006 v2.0.1`.
 
-O snapshot v5 deve capturar todas as fontes do mesmo commit canônico pós-merge e registrar seus SHAs.
+### 6.9 Fechamento corrente de fontes
 
-### 6.9 Fechamento de fontes do candidato
-
-A revisão desta frente verificou a composição do Manifesto v5 contra a branch candidata:
+O conjunto corrente é definido pelo Manifesto Canônico vigente.
 
 ```text
 HOMES COM MASTER
 → 8 / 8
 
+AUTORIDADES COMUNS
+→ 5 / 5
+
 FONTES CANÔNICAS DO MANIFESTO
-→ 26 / 26 EXISTENTES
+→ 29 / 29 IDENTIFICADAS POR PATH + ID + VERSION
 
-ID DECLARADO × ID REAL
-→ 26 / 26 MATCH
+HOME MASTERS
+→ CURRENT
 
-VERSÃO DECLARADA × VERSÃO REAL
-→ 26 / 26 MATCH
-
-GENINPUT HISTÓRICO NO PACOTE OPERACIONAL
-→ 0
-
-SOURCE LOCK / HANDOFF ESPECÍFICO VIGENTE
+SOURCE LOCK / HANDOFF ESPECÍFICO
 → BUSINESS = INCLUDED
 → INTELLIGENCE = INCLUDED
 
-PESSOA / O-C
-→ MASTERS VIGENTES ABSORVEM A VERDADE DE CONSUMO
-→ DOCUMENTOS DE APROFUNDAMENTO PERMANECEM NO GKR, MAS NÃO ENTRAM AUTOMATICAMENTE NO CONTEXTO INICIAL DA IA
+HISTORICAL / SNAPSHOT / CANDIDATE INPUT
+→ EXCLUDED
 
-MATERIAL DOCUMENT GAP IDENTIFIED IN SOURCE CLOSURE
-→ 0
-
-FINAL EXACT-HEAD GATE
-→ STILL REQUIRED
+MATERIAL DOCUMENT GAP
+→ NONE KNOWN IN CURRENT DESIGN SOURCE SET
 ```
 
-A exclusão de documentos de aprofundamento do pacote inicial não os invalida. Eles podem ser consultados deliberadamente para resolver dúvida concreta, mas não devem ser carregados indiscriminadamente em ferramentas de IA.
+Documentos adicionais podem ser consultados deliberadamente quando uma dúvida concreta exigir autoridade corrente complementar, mas não devem ser carregados indiscriminadamente em ferramentas de IA.
 
 ## 7. Regra de isolamento para IA
 
@@ -294,7 +291,7 @@ OPEN_QUESTION
 
 ### 8.1 Matriz operacional das oito Homes
 
-A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOURCE LOCK` v5 deverá tornar explícita.
+A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOURCE LOCK` corrente deverá tornar explícita.
 
 #### Pessoa
 
@@ -411,7 +408,7 @@ Regras de integridade:
 - imagem conceitual não pode ser apresentada como case/evidência real;
 - logos de terceiros exigem relação/autorização aplicável;
 - preço, avaliação, número de usuários, disponibilidade e resultados não podem ser inventados;
-- conteúdo gerado para protótipo deve ser reconhecível internamente como candidato ou placeholder;
+- conteúdo gerado para protótipo deve ser reconhecível internamente como `CONTENT_CANDIDATE` ou `PROTOTYPE_PLACEHOLDER` até aprovação humana;
 - no artefato final, assets externos devem possuir origem/licença ou condição de uso registrada;
 - mídia essencial deve possuir fallback e não pode carregar sozinha o significado da página.
 
@@ -529,60 +526,46 @@ TERMOS DE PAGAMENTO / CONTRATO
 → GOVERNADOS FORA DESTE DOCUMENTO
 ```
 
-## 15. Gate de emissão v5 e release
-
-Antes de qualquer início definitivo:
+## 15. Gate de início de Design
 
 ```text
-MERGE DO PACOTE DE PRONTIDÃO
-↓
-CAPTURAR MAIN PÓS-MERGE
-↓
-REVALIDAR 26/26 FONTES CANÔNICAS DO MANIFESTO V5
-↓
-GERAR 8 LEIA-PRIMEIRO / SOURCE LOCKS OPERACIONAIS
-↓
-MATERIALIZAR SNAPSHOT EXTERNO V5
-↓
-VALIDAR REPRODUTIBILIDADE / ISOLAMENTO
-↓
-SEMANTIC + MECHANICAL
-↓
-REVISÃO INDEPENDENTE
-↓
-ZERO FINDING MATERIAL ABERTO
-↓
-ATO HUMANO EXPLÍCITO DE DESIGN PRODUCTION RELEASE
-```
+CURRENT MAIN
+→ VALIDATED SOURCE OF TRUTH
 
-O gate humano foi posteriormente satisfeito e permanece concedido pela autoridade corrente `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1`. O release autoriza a produção externa, mas não permite executar contra um snapshot posteriormente invalidado. A execução operacional depende de um pacote externo corrente e válido, sem antecipar direção criativa, aceite final de Design ou implementação.
+CURRENT MANIFEST
+→ DEFINES AUTHORIZED INPUT
+
+DESIGN PRODUCTION RELEASE
+→ GRANTED
+
+SNAPSHOT
+→ OPTIONAL / NOT REQUIRED
+
+DESIGN
+→ MAY START
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+```
 
 ## 16. Estado
 
 ```text
-DESIGN PRODUCTION READINESS DOCUMENTATION
-→ INTEGRATED / ACTIVE
+READINESS
+→ PASS / CURRENT
 
-VISUAL IDENTITY CANONICALIZATION
-→ NOT REQUIRED / DELIBERATELY DESIGN-OWNED
+8 HOMES
+→ READY FOR DESIGN CONSUMPTION
 
-V5 SNAPSHOT
-→ EMITTED / MATERIALIZED / VALIDATED
+CANONICAL INPUT
+→ CURRENT MAIN + CURRENT MANIFEST
 
-DESIGN PRODUCTION RELEASE
-→ GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.2.1
+HISTORICAL INPUT
+→ EXCLUDED
 
-CURRENT EXTERNAL SOURCE PACKAGE
-→ GOVERNED BY GKR-UX-HOMES-DESIGN-DELIVERY-001 + GKR-STATE-001
-→ USE ONLY SNAPSHOT DESIGNATED CURRENT / VALID
+GKR-CREATED FIGMA
+→ NONE
 
-MANUAL / AI-ASSISTED DESIGN METHOD
-→ AVAILABLE / AI OPTIONAL
-
-OPERATIONAL DESIGN EXECUTION
-→ REQUIRES CURRENT VALID PACKAGE
-→ OTHERWISE PAUSED
-
-FINAL DESIGN ACCEPTANCE
-→ HUMAN / SEPARATE
+PRODUCT ENGINEERING
+→ NOT RELEASED
 ```

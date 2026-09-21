@@ -4,7 +4,7 @@ title: Reconciliação Transitória da Autoridade Pública da Marca e do Fundado
 status: active
 version: 1.4.0
 owner: Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-20
 depends_on:
   - GKR-BRAND-PUBLIC-AUTHORITY-001
   - GKR-BRAND-SIGNATURE-001
@@ -18,7 +18,6 @@ related:
   - GKR-UX-HOME-MASTER-001
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-NARR-005
-  - GKR-UX-HOME-AUDIT-002
 normative: false
 maturity: transitional_reconciliation_partially_absorbed
 ---

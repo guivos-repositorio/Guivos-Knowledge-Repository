@@ -2,283 +2,161 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.48.0
+version: 0.50.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-20
 related:
   - PAS-001-DOMAIN-MODEL-001
-  - PAS-001-DOMAIN-RECON-001
-  - GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001
-  - GKR-UX-D5-A-001
-  - GKR-UX-D5-B-001
-  - GKR-UX-D5-C1-001
-  - GKR-UX-D5-C2-001
-  - GKR-UX-D5-C3-001
-  - GKR-UX-D5-C4A-001
-  - GKR-UX-D5-C4B-001
-  - UXA-070
-  - UXA-080
-  - UXA-090
-  - UXA-097
-  - UXA-098
-  - UXA-099
-  - UXA-100
-  - UXA-100-A3
-  - UXA-100-A4
-  - UXA-101
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
-  - GKR-UX-ORGCOL-SUPPLY-VALUE-001
-  - RP-002
+  - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
 normative: false
 ---
 
 # Jornadas Integradas
 
-> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
-
-
 ## 1. Finalidade
 
-Esta seção reúne as jornadas da Pessoa, do Coletivo e da Organização para leitura contínua, comparação de perspectivas, inspeção visual, análise de handoffs e identificação de lacunas. Ela não substitui contratos, wireframes, validações ou registros canônicos.
+Esta seção descreve a continuidade corrente entre Homes públicas e experiências autenticadas de Pessoa, Coletivo e Organização.
 
-As vistas consomem explicitamente o eixo transversal dos Domínios de Evolução governado por `PAS-001-DOMAIN-MODEL-001` e reconciliado por `PAS-001-DOMAIN-RECON-001`.
+Ela deve ser lida como topologia funcional atual, não como cronologia de construção.
 
-A investigação de supply, oportunidades reais e testes de relevância de Organizações e Coletivos está exposta também como referência de leitura em [Organizações e Coletivos — Supply, Rede e Modelo de Valor](../experience-architecture/organizations-collectives-supply-and-value.md). Essa referência contém exemplos mundiais, perfis sintéticos, gates, descartes, evidência e limites de PMF; permanece Research consolidado pré-validação de campo.
+## 2. Vistas correntes
 
-## 2. Vistas disponíveis
-
-- [Propagação dos Domínios de Evolução nas Jornadas — D4](evolution-domains-d4.md)
-- [Catálogo de Telas](screen-catalog.md)
 - [Jornada da Pessoa](person.md)
 - [Jornada do Coletivo](collective.md)
 - [Jornada da Organização](organization.md)
-- [Atlas de oportunidades, supply e relevância de Organizações e Coletivos](../experience-architecture/organizations-collectives-supply-and-value.md)
-- [Handoffs entre participantes](handoffs.md)
-- [Cenários integrados](scenarios.md)
+- [Catálogo Integrado de Telas](screen-catalog.md)
 - [Registro Granular de Superfícies e Estados](surface-registry.md)
 - [Registro Granular de Transições](transition-registry.md)
+- [Handoffs entre participantes](handoffs.md)
+- [Cenários integrados](scenarios.md)
 - [Lacunas e Continuidades Ausentes](gaps.md)
 
-## 3. Sequência governada recente
+## 3. Topologia corrente
 
 ```text
-UXA-097 — compreensão inicial → primeira Tela Hoje
-→ UXA-098 — publicação → descoberta → Mapa/Lista → Detalhe
-→ UXA-099 — dez estados residuais Opportunity Boost
-→ UXA-100/A1/A2/A3 — Planos materializados, validados e promovidos
-→ UXA-101 — Detalhe → revisão consciente → BND-001
-→ UXA-100-A4 — reconciliação controlada das origens voluntárias de Planos
-→ D4 — Domínios propagados documentalmente nas três jornadas
-→ D5-A — Domínios materializados na jornada inicial
-→ D5-B — Domínios materializados em Oportunidades
-→ D5-C1 — responsabilidades e handoffs de Objetivos, Próximos Passos e Evolução contratados
-→ D5-C2 — três responsabilidades materializadas em low-fidelity
-→ D5-C3 — três estados-base reformulados e validados localmente
-→ D5-C4A — origens visuais em Hoje + contrato integrado dos handoffs
-→ D5-C4B — validação integrada individual de TRN-008..013
-→ O/C Surface Map — DEFINED / CANONICAL DOCUMENTARY
-→ O/C State Map — DEFINED / CANONICAL DOCUMENTARY
-→ O/C Priority Flows — DEFINED / CANONICAL DOCUMENTARY
+PESSOA
+→ HOME PÚBLICA
+→ ENTRADA PROTEGIDA
+→ COMPREENSÃO / HOJE
+→ OBJETIVOS / PRÓXIMOS PASSOS / EVOLUÇÃO
+→ OPORTUNIDADES
+→ EXPERIÊNCIAS / FRONTEIRAS EXTERNAS
+
+COLETIVO
+→ HOME PÚBLICA
+→ DESCOBERTA / PARTICIPAÇÃO
+→ EXPERIÊNCIA AUTENTICADA
+→ RESPONSABILIDADE / SOLICITAÇÕES / CONTINUIDADE
+
+ORGANIZAÇÃO
+→ HOME PÚBLICA
+→ EXPERIÊNCIA AUTENTICADA
+→ CAPACIDADES / OPORTUNIDADES / RELAÇÕES / CONTINUIDADE
 ```
 
-D4 e D5 são frentes não numeradas no programa UXA. A definição documental de Surface Map e State Map O/C também não altera a última frente funcional numerada: UXA-101 continua vigente, e UXA-102/V5 permanece não iniciada.
+## 4. Domínios de Evolução
 
-Nenhuma etapa autoriza automaticamente a seguinte. Para O/C, Priority Flows já estão definidos documentalmente; o próximo gate separado é Navigation Materialization.
+As três jornadas reconhecem os nove domínios canônicos.
 
-## 4. Estado documental
+`Ainda estou descobrindo` é estado legítimo de exploração, não um décimo domínio.
 
-| Camada | Estado | Referência |
-|---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.48.0 | D4 + D5-C4B + reconciliação pós-313/314 + F-006 + F-016-A + Jobs/IA + Surface Map/State Map/Priority Flows O/C |
-| propagação dos Domínios de Evolução | `active` 1.0.0 | GKR-JOURNEY-DOMAIN-PROPAGATION-D4-001 |
-| D5-A — jornada inicial | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
-| D5-B — Oportunidades | `active` 1.1.0 | materialização in-place; snapshot histórico qualificado |
-| D5-C1 — contrato direção/movimento/evolução | `active` 1.0.0 | três responsabilidades + seis handoffs contratados |
-| D5-C2/D5-C3/D5-C4A/D5-C4B | `active` | funções e validações textuais preservadas; materialização física sob F-016 |
-| Pessoa, Coletivo e Organização | `draft` | incompletude explícita preservada |
-| Jornada da Pessoa | `draft` | V4 UXA-101; UXA-102 não iniciada |
-| Jornada do Coletivo | `draft` | Jobs + IA + Surface Map + State Map + Priority Flows definidos documentalmente; navegação/wireframe principal pendentes |
-| Jornada da Organização | `draft` | Jobs + IA + Surface Map + State Map + Priority Flows definidos documentalmente; navegação/wireframe principal pendentes |
-| catálogo integrado | `active` 0.33.0 | **0 SVGs físicos após F-016-A**; contratos textuais preservados; maturidade agregada não inferida |
-| registro de superfícies | `active` 0.26.0 | 57 IDs documentais; Surface Map O/C reconciliado sem promoção individual |
-| registro de transições | `active` | 66 transições documentais; State Map não promove maturidade individual |
-| O/C Surface Map | `active` 1.0.0 | topologia lógico-documental canônica |
-| O/C State Map | `active` 1.0.0 | estados funcionais canônicos documentais |
-| O/C Priority Flows | `active` 1.0.0 | fluxos prioritários canônicos documentais; navegação não materializada |
-| antiga galeria visual integrada | `removed_from_current_corpus` | proveniência preservada no histórico Git |
-| antiga matriz por SVG | `removed_from_current_corpus` | associações/perfis recuperáveis no histórico Git |
-| F-016-A | `resolved` | **119/119 SVGs removidos; 0 SVGs físicos; referências vivas reconciliadas; Semantic #832 + Mechanical #1090 + prova pós-delete v2 SUCCESS** |
-| protótipo, aplicação e motor | não iniciados | — |
-| Engenharia de Produto | pausada antes de W0-01 | W0-01 |
+Domínio não é score, diagnóstico, prioridade imposta ou prova automática de evolução.
 
-## 5. Domínios de Evolução nas Jornadas
-
-As três vistas integradas reconhecem explicitamente os nove IDs canônicos:
-
-| ID | Domínio |
-|---|---|
-| `JED-001` | Saúde e Bem-estar |
-| `JED-002` | Trabalho, Carreira e Estudos |
-| `JED-003` | Vida Financeira |
-| `JED-004` | Empreendedorismo e Projetos |
-| `JED-005` | Relacionamentos e Vida Social |
-| `JED-006` | Espiritualidade, Propósito e Valores |
-| `JED-007` | Viagens, Lazer, Cultura e Novas Experiências |
-| `JED-008` | Causas, Voluntariado e Contribuição |
-| `JED-009` | Organização e Equilíbrio da Vida |
-
-Regras transversais:
-
-- uma jornada pode ter `0..n` domínios relacionados;
-- multidomínio é legítimo;
-- `Ainda estou descobrindo` é estado de exploração, não `JED-010`;
-- `other_unmapped` preserva área ainda não mapeada;
-- domínio candidato não equivale a domínio confirmado;
-- domínio não é score, diagnóstico, prioridade humana, autoridade ou prova de evolução;
-- mesmo domínio entre participantes não cria match, relevância, compartilhamento ou autorização automática.
-
-A interpretação detalhada por participante está em [Propagação dos Domínios de Evolução nas Jornadas — D4](evolution-domains-d4.md).
-
-## 6. D5-C — direção, movimento e evolução na Jornada da Pessoa
-
-A estrutura governada é:
+## 5. Pessoa — responsabilidades correntes
 
 ```text
-PER-008 — Hoje recorrente
-├── TRN-008 → PER-010 — Meus Objetivos → TRN-009 → PER-008
-├── TRN-010 → PER-011 — Meus Próximos Passos → TRN-011 → PER-008
-└── TRN-012 → PER-012 — Minha Evolução → TRN-013 → PER-008
+HOJE
+├── MEUS OBJETIVOS
+├── MEUS PRÓXIMOS PASSOS
+└── MINHA EVOLUÇÃO
 ```
 
-A D5-C2 acrescentou um estado-base low-fidelity para cada responsabilidade. A D5-C3 reformulou e validou funcionalmente os três estados-base. A D5-C4A reformulou/revalidou Hoje recorrente e governou o contrato dos seis handoffs.
+Essas responsabilidades preservam autonomia, contexto, privacidade e explicabilidade. Abrir ou retornar de uma superfície não cria progresso, prioridade, aceitação ou evolução automaticamente.
 
-A D5-C4B valida integralmente, no limite documental:
-
-- `TRN-008/009` — Hoje recorrente ↔ Meus Objetivos;
-- `TRN-010/011` — Hoje recorrente ↔ Meus Próximos Passos;
-- `TRN-012/013` — Hoje recorrente ↔ Minha Evolução.
-
-A validação cobre origem, destino, autoridade, contexto mínimo, efeitos proibidos, retorno, interrupção, concorrência e idempotência. Para Evolução, cobre também minimização e preservação da natureza epistemológica.
-
-A primeira variante de Hoje permanece sem obrigação de materializar os três aprofundamentos. Quando o affordance não estiver presente, a transição de entrada simplesmente não é instanciada naquele estado visual.
-
-Estado:
-
-- `PER-008` recorrente: **reformulado e revalidado localmente**;
-- `PER-010..012`: **validados localmente**;
-- `TRN-008..013`: **integralmente validadas no limite documental**;
-- nenhum handoff direto entre `PER-010`, `PER-011` e `PER-012` foi criado;
-- `PER-008` permanece síntese recorrente e não absorve as três responsabilidades;
-- `Minha Evolução` não usa score, ranking, radar obrigatório ou roda da vida.
-
-A separação permanece obrigatória:
+## 6. Oportunidades e fronteira externa
 
 ```text
-Domínio de Evolução
-≠ dimensão estrutural do Contexto Vivo
-≠ aspecto descritivo da mudança
+ORGANIZAÇÃO PUBLICA
+→ OPORTUNIDADE ELEGÍVEL
+→ MAPA / LISTA
+→ DETALHE
+→ REVISÃO CONSCIENTE
+→ FRONTEIRA EXTERNA
 ```
 
-## 7. Continuidade de oportunidades após UXA-101
+A Guivos governa a experiência até a transferência consciente de autoridade. O processo de terceiro permanece fora da autoridade da Guivos.
 
-```text
-ORG-003 → TRN-203 → PER-201
-PER-201 ↔ TRN-210 ↔ PER-202
-PER-201/PER-202 → TRN-204/211 → PER-203
-PER-203 → revisão consciente no mesmo estado → TRN-205 → BND-001
-```
-
-- UXA-098 valida `TRN-203`, `204`, `210` e `211`;
-- UXA-101 valida `TRN-205` até a fronteira de autoridade da Guivos;
-- `BND-001` não possui tela Guivos;
-- qualquer resultado posterior pertence ao terceiro até reconciliação autorizada e comprovada.
-
-A continuidade documental acima não substitui o problema de relevância. O aprofundamento de como uma oportunidade é descoberta, qualificada, descartada ou apresentada para um Momento específico está no [Atlas de oportunidades, supply e relevância](../experience-architecture/organizations-collectives-supply-and-value.md).
-
-## 8. Etapa transversal de Planos preservada e conectada
-
-A espinha dorsal comercial permanece:
-
-```text
-*-301 Planos e comparação
-├── upgrade → *-302 revisão → *-304 resultado/recuperação → *-301
-├── downgrade/cancelamento → *-303 → *-304 → *-301
-└── quando autoatendimento não for suficiente → BND-002
-```
-
-A origem voluntária possui identidade contratual no fluxo especializado:
-
-```text
-PER-009 ↔ PER-301   — TRN-406/407 contratadas
-COL-002 ↔ COL-301   — TRN-417/418 validadas no contrato especializado
-ORG-001 ↔ ORG-301   — TRN-427/428 validadas no contrato especializado
-```
-
-A maturidade de `TRN-417/418` e `TRN-427/428` não promove `COL-002` ou `ORG-001` a wireframes principais autenticados vigentes.
-
-Abrir Planos não seleciona tier, não inicia cobrança e não altera consentimento, capacidade ou relevância. `PER-009` permanece sem SVG dedicado; sua futura materialização é gap separado.
-
-A nomenclatura vigente é:
+## 7. Planos
 
 - Pessoa: `Free · Plus · Pro`;
 - Coletivo: `Livre · Mobiliza · Impacta · Rede`;
 - Organização: `Conecta · Eleva · Transforma`;
-- Guivos Business: `Start · Growth · Scale · Enterprise`, como Produto Especializado separado.
+- Guivos Business: `Start · Growth · Scale · Enterprise`, como produto separado.
 
-`BND-002` é fronteira genérica de contratação/dimensionamento assistido e não plano. As transições comerciais internas continuam localmente validadas; `TRN-416/426` permanecem parciais. Cobrança real e processo posterior a `BND-002` continuam fora do escopo.
+Abrir Planos não inicia cobrança nem altera consentimento, capacidade ou relevância.
 
-## 9. Cobertura documental reconciliada
-
-| Indicador | Resultado |
-|---|---:|
-| SVGs físicos existentes | **0** |
-| associações físicas registradas | **0** |
-| perfis documentais | **34** |
-| claim agregada anterior `121 validados / 0 pendentes` | **superseded como estado de maturidade vigente** |
-| nova contagem agregada de wireframes vigentes/validados | **não inferida; requer recomputação governada** |
-| wireframe principal autenticado da Organização | **pendente** |
-| wireframe principal autenticado do Coletivo | **pendente** |
-| superfícies/estados/fronteiras documentais | **57** |
-| transições documentais | **66** |
-| IDs com referência visual física | **0 de 57** |
-| responsabilidades sem SVG dedicado | **métrica histórica; não usada como cobertura corrente após F-016-A** |
-| fronteiras sem tela | **2** |
+## 8. Organização e Coletivo autenticados
 
 ```text
-INVENTÁRIO FÍSICO
-≠ VIGÊNCIA
-≠ VALIDAÇÃO FUNCIONAL ATUAL
+INFORMATION ARCHITECTURE
+→ SURFACE MAP
+→ STATE MAP
+→ PRIORITY FLOWS
+→ NAVIGATION MATERIALIZATION
+→ LOW-FIDELITY DELIVERY
+→ LOW-FIDELITY VALIDATION
 ```
 
-## 10. Separações obrigatórias
+A materialização visual final permanece responsabilidade de Design.
 
-- Domínio de Evolução não equivale a tela materializada;
-- responsabilidade documentada não equivale a wireframe;
-- State Map definido não equivale, por si só, a Priority Flow; Priority Flows posteriores não equivalem a navegação materializada;
-- contrato de navegação especializado não equivale a wireframe principal vigente;
-- Organização ≠ Guivos Business;
-- Organização Transforma ≠ Guivos Business Enterprise;
-- `BND-002` ≠ Enterprise ou Scale;
-- revisão de saída em `PER-203` não cria tela nova;
-- validação até `BND-001` não valida sistema de terceiro;
-- pagar um plano ou patrocínio não altera relevância funcional;
-- `COM-005` validado não promove automaticamente `TRN-305`;
-- exemplos reais do atlas não equivalem a parceiros, oportunidades admitidas ou PMF;
-- validação documental não equivale a implementação técnica.
+## 9. Autoridades para prototipação
 
-## 11. Estado da frente
+```text
+SCREEN CATALOG
+→ responsibilities
 
-V1, V2, V3 e V4 estão encerradas nos limites declarados. D4 propaga `JED-001..JED-009`; D5-A e D5-B materializam o eixo em superfícies existentes; D5-C1 contrata `PER-010..012` e `TRN-008..013`; D5-C2 materializa as três superfícies; D5-C3 valida localmente os três SVGs; D5-C4A materializa as origens em Hoje e governa o contrato integrado; D5-C4B promove as seis ligações para integralmente validadas no limite documental.
+SURFACE REGISTRY
+→ states / ownership / maturity
 
-A reconciliação pós-313/314 e o Bloco H preservam Jobs + IA autenticada como definidos em seus limites próprios. `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` define o mapa lógico-documental canônico de Organização e Coletivo e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` define o mapa funcional de estados autenticados. Os Priority Flows estão definidos por `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`; permanecem pendentes a navegação materializada e os wireframes principais autenticados, ainda que fluxos especializados preservem validações próprias.
+TRANSITION REGISTRY
+→ allowed transitions / effects / limits
 
-O atlas de supply e relevância documenta Research consolidado e simulações, mas não substitui o Dry Run/Piloto com Pessoas reais.
+PERSON / COLLECTIVE / ORGANIZATION VIEWS
+→ participant-specific continuity
+```
 
-V5/UXA-102, D6, D7 e Engenharia de Produto permanecem fora desta frente.
+## 10. Exclusões de consumo
+
+```text
+HISTORICAL UXA SEQUENCE
+SNAPSHOT COUNTS
+OLD SVG INVENTORY
+CHECKPOINT NARRATIVES
+CLOSED AUDITS
+→ NOT REQUIRED FOR DESIGN / AI
+```
+
+## 11. Estado
+
+```text
+JOURNEY DOCUMENTATION
+→ CURRENT
+
+DESIGN / PROTOTYPING INPUT
+→ CURRENT VIEWS + CURRENT REGISTRIES
+
+HISTORICAL RECONSTRUCTION
+→ NOT REQUIRED
+
+IMPLEMENTATION
+→ SEPARATE GATE
+```

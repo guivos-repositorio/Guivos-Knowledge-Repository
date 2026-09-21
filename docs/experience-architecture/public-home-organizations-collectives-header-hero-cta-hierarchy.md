@@ -14,7 +14,6 @@ depends_on:
   - GKR-UX-HOME-NAV-004
 related:
   - GKR-FULL-CORPUS-AUDIT-001
-  - GKR-UX-HOME-OC-AUDIT-001
   - GKR-UX-HOME-HANDOFF-001
   - UXA-014
   - UXA-019
@@ -27,7 +26,7 @@ maturity: reconciled_navigation_detail_pre_materialization
 
 ## 1. Finalidade e função atual
 
-Este documento nasceu como o **P2 da prontidão pré-materialização** da Home Pública de Organizações e Coletivos e, naquele checkpoint, resolveu em princípio `OC-GAP-02 — Header, Hero e hierarquia de CTAs` identificado por `GKR-UX-HOME-OC-AUDIT-001`.
+Este documento nasceu como o **P2 da prontidão pré-materialização** da Home Pública de Organizações e Coletivos e, naquele checkpoint, resolveu em princípio `OC-GAP-02 — Header, Hero e hierarquia de CTAs` identificado pela auditoria pré-materialização então vigente.
 
 Depois da reconstrução documental de `GKR-UX-HOME-OC-MASTER-001 v1.0.0` e da reconciliação narrativa de `GKR-UX-HOME-OC-NARR-001 v0.2.0`, sua função atual é preservar e aprofundar o **contrato especializado de navegação, Hero e hierarquia de ação** da Home O/C, sem competir com o Documento Mestre como autoridade de consumo vigente.
 
@@ -788,7 +787,7 @@ Header / navegação de ambiente autenticado do Coletivo
 
 A Home pública não possui autoridade representada, unidade selecionada, papel autenticado ou governança operacional ativa.
 
-Os estados autenticados atuais são governados pelas autoridades vigentes de Organização/Coletivo, incluindo `UXA-014`, `UXA-019`, Jobs e Arquitetura da Informação autenticada. Jobs + IA estão definidos documentalmente em `pre-surface-map`; o Surface Map lógico-documental autenticado está `DEFINED / CANONICAL DOCUMENTARY` em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` está `ACTIVE / DEFINED / CANONICAL DOCUMENTARY`. `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` está `ACTIVE / DEFINED / CANONICAL DOCUMENTARY`; a navegação materializada permanece `NOT MATERIALIZED`; os wireframes principais autenticados permanecem `NOT STARTED`; Design/UI/protótipo permanecem `NOT AUTHORIZED`; Product Engineering permanece `PAUSED BEFORE W0-01 / NOT RELEASED`.
+Os estados autenticados atuais são governados pelas autoridades vigentes de Organização/Coletivo, incluindo `UXA-014`, `UXA-019`, Jobs e Arquitetura da Informação autenticada. Jobs + IA estão definidos documentalmente em `pre-surface-map`; o Surface Map lógico-documental autenticado está `DEFINED / CANONICAL DOCUMENTARY` em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`, e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` está `ACTIVE / DEFINED / CANONICAL DOCUMENTARY`. `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` está `ACTIVE / DEFINED / CANONICAL DOCUMENTARY`; a Navigation Materialization está `DEFINED / CANONICAL DOCUMENTARY` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`; os wireframes autenticados low-fidelity foram entregues em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`; high-fidelity Design permanece `NOT_GRANTED`, protótipo não está liberado e Product Engineering permanece `PAUSED BEFORE W0-01 / NOT RELEASED`.
 
 ```text
 UXA-015 / UXA-016

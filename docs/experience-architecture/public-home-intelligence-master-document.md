@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
 status: draft
-version: 0.2.8
+version: 0.2.9
 owner: Experience Architecture
 last_updated: 2026-09-20
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -44,12 +44,12 @@ GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
 GKR-UX-HOMES-OUTCOME-001 v1.0.0
 → princípio transversal de resultado das Homes
 
-GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.3
+GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4
 → arquitetura narrativa convergida em 11 movimentos
 
 GKR-UX-HOME-INTELLIGENCE-MASTER-001
 → este documento
-→ versão corrente definida no frontmatter e pinada pelo candidato/snapshot
+→ versão corrente definida no frontmatter e declarada pelo Manifesto corrente
 ```
 
 Este documento é o Master semântico da Home e deve ser consumido em conjunto com o Home Source Lock vigente. Ele não substitui o Source Lock.
@@ -68,7 +68,7 @@ HOME PÚBLICA INTELLIGENCE v1
 → 11 MOVIMENTOS CONVERGIDOS
 
 ARQUITETURA NARRATIVA
-→ v0.2.3
+→ v0.2.4
 → COPY DE REFERÊNCIA CORRIGIDA
 
 DOCUMENTO MESTRE
@@ -78,7 +78,7 @@ DOCUMENTO MESTRE
 HOME SOURCE LOCK
 → GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 → EXISTS / ACTIVE
-→ EXACT VERSION PINNED BY CURRENT DELIVERY CANDIDATE
+→ CURRENT VERSION DECLARED BY CURRENT MANIFEST
 
 DESIGN HANDOFF
 → GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
@@ -757,11 +757,11 @@ O estado temporal vigente é:
 ```text
 GKR-UX-HOME-INTELLIGENCE-MASTER-001
 → NARRATIVE / SEMANTIC / FUNCTIONAL AUTHORITY
-→ exact version pinned by the current delivery candidate
+→ current version declared by the current Manifest
 
 GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 → ACTIVE / NORMATIVE
-→ exact version pinned by the current delivery candidate
+→ current version declared by the current Manifest
 → HOME SOURCE PACKAGE / INVARIANT FREEZE
 
 GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1

@@ -22,6 +22,9 @@ theme:
       primary: black
       accent: blue
 
+extra_css:
+  - stylesheets/menu-section-headings.css
+
 plugins:
   - search
   - mermaid2
@@ -59,8 +62,10 @@ markdown_extensions:
 # Autoridades e evidências de detalhe permanecem preservadas e acessíveis por
 # hubs, links internos, busca e histórico sem serem duplicadas no menu.
 # Documentos históricos, superseded, candidatos, registros de proveniência,
-# remediações concluídas e auditorias de processo permanecem preservados no
-# corpus/Git, mas não são destinos do MENU corrente.
+# remediações concluídas, auditorias de processo e gates intermediários não são
+# destinos do MENU. Documentos draft/proposed somente aparecem quando uma
+# autoridade superior corrente os declara explicitamente fonte operacional.
+# Quando a função corrente deixa de existir, o Git preserva a proveniência.
 not_in_nav: |
   *
 
@@ -85,15 +90,6 @@ nav:
       - Organização: journeys/organization.md
       - Coletivo: journeys/collective.md
       - Organizações e Coletivos — Estado Atual: experience-architecture/organizations-collectives-current-state.md
-      - Organizações e Coletivos — Atores, Autoridades e Jobs: experience-architecture/organizations-collectives-authenticated-actors-authorities-and-jobs.md
-      - Organizações e Coletivos — Arquitetura da Informação: experience-architecture/organizations-collectives-authenticated-information-architecture.md
-      - Organizações e Coletivos — Mapa de Superfícies Autenticadas: experience-architecture/organizations-collectives-authenticated-surface-map.md
-      - Organizações e Coletivos — Mapa de Estados Autenticados: experience-architecture/organizations-collectives-authenticated-state-map.md
-      - Organizações e Coletivos — Fluxos Prioritários Autenticados: experience-architecture/organizations-collectives-authenticated-priority-flows.md
-      - Organizações e Coletivos — Materialização de Navegação: experience-architecture/organizations-collectives-authenticated-navigation-materialization.md
-      - Organizações e Coletivos — Wireframes Low-Fidelity Correntes: experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md
-      - Organizações e Coletivos — Validação Low-Fidelity: experience-architecture/organizations-collectives-authenticated-low-fidelity-functional-validation.md
-      - Organizações e Coletivos — Elegibilidade High-Fidelity: experience-architecture/organizations-collectives-authenticated-high-fidelity-eligibility.md
 
   - Produtos e Economia:
       - Arquitetura de Produtos: product-architecture/index.md
@@ -106,12 +102,7 @@ nav:
       - Home Principal / Pessoa: experience-architecture/public-home-master-document.md
       - Home de Organizações e Coletivos: experience-architecture/public-home-organizations-collectives-master-document.md
       - Homes — Handoff Canônico de Design: experience-architecture/public-homes-design-handoff.md
-      - Homes — Source Lock e Prompt para IA: experience-architecture/public-homes-generative-source-lock-and-prompt-template.md
-      - Homes — Prontidão de Produção / Designer e IA: experience-architecture/public-homes-design-production-readiness-and-figma-contract.md
-      - Homes — Design Production Release: experience-architecture/public-homes-design-production-release.md
       - Homes — Manifesto Canônico de Entrega: experience-architecture/public-homes-design-delivery-manifest.md
-      - Homes — Pacote Externo Corrente (v8): experience-architecture/public-homes-design-delivery-v8-snapshot-record.md
-      - Homes — Fluxo Operacional de Design: experience-architecture/public-homes-design-delivery-operational-flow.md
       - Home Guivos Mall: experience-architecture/public-home-mall-master-document.md
       - Home Guivos Travel: experience-architecture/public-home-travel-master-document.md
       - Home Guivos Media: experience-architecture/public-home-media-master-document.md
@@ -120,7 +111,6 @@ nav:
       - Home Guivos Intelligence: experience-architecture/public-home-intelligence-master-document.md
 
   - Research e Validação:
-      - Research: research/index.md
       - Validação de Mercado: research/market-validation/README.md
       - Pesquisa do Ecossistema: research/RP-001/index.md
       - Possibilidades, Oportunidades e Supply: research/RP-002/index.md
@@ -141,20 +131,7 @@ nav:
           - Dashboard Ads / Opportunity Boost — Documento Mestre: intelligence-architecture/dashboard-ads-opportunity-boost-master-specification.md
       - Tecnologia de Grafo: adr/ADR-007-neo4j-primary-graph-reference.md
 
-  - Jurídico, Privacidade e Institucional:
-      - Arquitetura Institucional e Jurídica: governance-framework/institutional-and-legal-architecture-index.md
-      - Privacidade e Verdade Operacional: governance-framework/operational-privacy-and-legal-truth-index.md
-      - Fundação Guivos — Conceito e Estado Jurídico: governance-framework/fundacao-guivos-institutional-concept-and-legal-status.md
-      - Proteção Marcária — Autorização de Filing: governance-framework/trademark-brazil-signature-filing-authorization-package.md
-
-  - GTM e Internacionalização:
-      - Go-to-Market: go-to-market/index.md
-      - Internacionalização e Governança Territorial: go-to-market/gtm-007-internationalization-and-territorial-governance.md
-      - Piloto Portugal — Gates de Prontidão: go-to-market/gtm-008-portugal-pilot-readiness-gates.md
-      - Operações Internacionais e Cross-Border: governance-framework/international-operations-and-cross-border-readiness.md
-
   - Governança do GKR:
-      - Framework de Auditoria Arquitetural: governance-framework/architectural-audit-framework.md
       - Consolidação do Conhecimento Arquitetural: governance-framework/architectural-knowledge-consolidation-pipeline.md
       - GKR como Fonte Única da Verdade: adr/ADR-001-gkr-as-source-of-truth.md
       - Arquitetura de Conhecimento da Guivos: adr/ADR-006-guivos-knowledge-architecture.md
