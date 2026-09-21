@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.4
+version: 1.0.5
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 normative: false
 maturity: reconciled_for_external_design
 depends_on:
@@ -15,7 +15,6 @@ depends_on:
   - GOG-001
   - GKR-STATE-001
   - UXA-020
-  - UXA-021
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
 related:
@@ -1310,7 +1309,8 @@ A definição funcional de Q não deve preencher itens visuais ou operacionais p
 | `SYS-001` | conteúdo, prova, histórias, interação, ritmo e acessibilidade | absorvido; removido do corpus corrente |
 | `GTM-BOUNDARY-001` | arquitetura ≠ lançamento | absorvido; removido do corpus corrente |
 | Media supply | Media como fonte editorial sem transferência de autoridade | absorvido |
-| `UXA-020/021` | fronteira pública/protegida e ausência de coleta na Home | absorvido nos limites atuais |
+| `UXA-020` | fronteira pública/protegida e ausência de coleta na Home | preservado como autoridade funcional limitada da fronteira |
+| `UXA-021` | primeira validação funcional detalhada da Home | absorvido pelo Master; proveniência histórica somente |
 
 Esta matriz **não autoriza remoção automática das fontes**. A remoção física exige teste posterior de conteúdo único, evidência, dependências e referências.
 
@@ -1320,8 +1320,7 @@ Esta matriz **não autoriza remoção automática das fontes**. A remoção fís
 
 ### Fundação funcional e entrada
 
-- [UXA-020 — Página Inicial e Início da Jornada](uxa-020-home-and-journey-entry.md)
-- [UXA-021 — Validação Funcional da Home](uxa-021-public-home-functional-validation-and-reformulation.md)
+- [UXA-020 — Página Inicial e Início da Jornada](uxa-020-home-and-journey-entry.md) — preservada somente para a fronteira funcional Home pública → entrada protegida.
 
 ### Mensagem e narrativa
 
