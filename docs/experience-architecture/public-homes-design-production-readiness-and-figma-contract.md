@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.15
+version: 1.3.16
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -179,11 +179,11 @@ O Manifesto corrente fixa o conjunto canônico no checkpoint do `main`. Snapshot
 Fontes específicas:
 
 ### Pessoa
-- `GKR-UX-HOME-MASTER-001 v1.0.5`;
+- `GKR-UX-HOME-MASTER-001 v1.0.6`;
 - `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.2`.
 
 ### Organizações e Coletivos
-- `GKR-UX-HOME-OC-MASTER-001 v1.0.4`;
+- `GKR-UX-HOME-OC-MASTER-001 v1.0.5`;
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.1`.
 
 ### Mall
@@ -227,12 +227,12 @@ Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `GKR-PLANS-BUSINESS-001 v1.3.0` — `docs/plans/business.md`.
 
 ### Intelligence
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.13`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.12`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.10`;
-- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.15`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.14`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.11`;
+- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.5`;
 - `GKR-UX-HOMES-OUTCOME-001 v1.0.0`;
-- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1`;
+- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.2`;
 - `GPA-006 v2.0.1`.
 
 ### 6.9 Fechamento corrente de fontes
