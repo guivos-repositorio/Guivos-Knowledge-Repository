@@ -1,17 +1,13 @@
 ---
 id: GKR-UX-HOME-NARR-001
 title: Especificação Narrativa Detalhada dos 11 Movimentos da Home Pública
-status: draft
-version: 0.2.1
+status: active
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 depends_on:
   - UXA-020
   - UXA-021
-  - GKR-UX-HOME-001
-  - GKR-UX-HOME-VAL-001
-  - GKR-UX-HOME-BENCH-001
-  - GKR-UX-HOME-BENCH-002
   - GEB-P01-F01
   - GEB-P01-F02
   - GEB-P01-F03
@@ -21,7 +17,7 @@ depends_on:
 related:
   - GKR-UX-HOME-MASTER-001
 normative: false
-maturity: reconciled_narrative_detail_pre_materialization
+maturity: current_narrative_detail_for_external_design
 ---
 
 # Especificação Narrativa Detalhada dos 11 Movimentos da Home Pública
@@ -64,7 +60,7 @@ A regra principal é:
 
 > **liberdade de composição não significa liberdade para perder significado.**
 
-A existência desta especificação não constitui autorização para retomar wireframe, Figma, UI ou implementação durante a auditoria integral.
+Esta especificação integra o aprofundamento documental corrente para produção externa de Design já liberada pelas autoridades comuns. Ela não autoriza implementação, publicação ou Product Engineering.
 
 ---
 
@@ -105,7 +101,7 @@ Produtos podem ser **apresentados institucionalmente** na Home somente no movime
 
 Estado deste documento:
 
-> **ESPECIFICAÇÃO NARRATIVA RECONCILIADA COM O MASTER VIGENTE PARA SERVIR DE APROFUNDAMENTO À FUTURA MATERIALIZAÇÃO DA HOME, AINDA SEM AUTORIZAÇÃO DE WIREFRAME, FIGMA, UI OU IMPLEMENTAÇÃO.**
+> **ESPECIFICAÇÃO NARRATIVA CORRENTE, SUBORDINADA AO MASTER VIGENTE, DISPONÍVEL COMO APROFUNDAMENTO PARA DESIGN EXTERNO. IMPLEMENTAÇÃO E PRODUCT ENGINEERING PERMANECEM EM GATES SEPARADOS.**
 
 A arquitetura consolidada é:
 
@@ -134,10 +130,8 @@ Quando uma futura decisão de design entrar em conflito com esta especificação
 1. Fundação da Guivos;
 2. `GKR-UX-HOME-MASTER-001`;
 3. `UXA-020` e `UXA-021`;
-4. `GKR-UX-HOME-001`;
-5. `GKR-UX-HOME-VAL-001`;
-6. `GKR-UX-HOMES-DESIGN-HANDOFF-001`;
-7. este documento;
+4. `GKR-UX-HOMES-DESIGN-HANDOFF-001`;
+5. este documento;
 8. benchmark;
 9. proposta de wireframe;
 10. proposta visual;
@@ -2035,7 +2029,7 @@ Sinais desejados:
 
 # 33. Contrato mínimo para futuro wireframe
 
-Quando autorizada a fase de wireframe, cada proposta deverá anexar uma tabela de rastreabilidade com:
+Para propostas de Design que materializem esta narrativa, a rastreabilidade deve permitir verificar:
 
 | Campo | Obrigatório |
 |---|---|
@@ -2269,7 +2263,7 @@ Não aprove a proposta apenas por qualidade estética.
 
 # 42. Gate para materialização
 
-Este documento não autoriza automaticamente a criação do wireframe.
+Este documento não autoriza implementação, publicação ou Product Engineering.
 
 Antes de materialização futura, deverá existir decisão explícita que confirme:
 
