@@ -96,6 +96,13 @@ nav:
       - Modelo Econômico: economic-model/index.md
       - Estratégia de Negócio: business-architecture/index.md
 
+  - Planos:
+      - Visão Geral dos Planos: plans/index.md
+      - Pessoa — Free, Plus e Pro: plans/person.md
+      - Coletivos — Livre, Mobiliza, Impacta e Rede: plans/collectives.md
+      - Organizações — Conecta, Eleva e Transforma: plans/organizations.md
+      - Guivos Business — Start, Growth, Scale e Enterprise: plans/business.md
+
   - Experiência e Journey:
       - Arquitetura da Experiência: experience-architecture/index.md
       - Jornadas Integradas: journeys/index.md
