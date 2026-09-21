@@ -49,7 +49,7 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-A D5-C1 adicionou `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-011 — Meus Próximos Passos` e `GKR-SURF-PER-012 — Minha Evolução` como responsabilidades contratadas. A D5-C2 materializou um SVG low-fidelity para cada uma sem criar novos IDs. A D5-C3 reforma e valida funcionalmente esses três estados-base, mantendo a contagem em 57 IDs e preservando `TRN-008..013` conforme sua autoridade própria.
+`GKR-UX-D5-C1-001` governa o contrato funcional corrente de `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-011 — Meus Próximos Passos` e `GKR-SURF-PER-012 — Minha Evolução`. A sequência histórica de materialização visual permanece no Git; `GKR-UX-D5-C4B-001` registra a validação integrada corrente de `TRN-008..013` no limite documental.
 
 A reconciliação pós-PR #313/#314 corrige a leitura de Organização e Coletivo: `UXA-015..018` são históricos `superseded`; referências administrativas ou especializadas posteriores não podem ser promovidas por inferência a wireframe principal autenticado final.
 
@@ -93,9 +93,9 @@ A contagem de IDs permanece estrutural. Ela não implica que todos estejam mater
 | GKR-SURF-PER-007 | compreensão inicial revisável | Pessoa | protegido | **validado** | UXA-023 | UXA-036; UXA-097 | UXA-037; UXA-097 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-008 | Tela Hoje | Pessoa autenticada | protegido | **validado** | UXA-002; UXA-011-A1 | UXA-006; UXA-097 | UXA-010; UXA-097 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-009 | Conta e configurações da Pessoa | Pessoa autenticada; administração pessoal | protegido | contratado | UXA-100; UXA-100-A1; UXA-100-A4 | — | — | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-010 | Meus Objetivos | Pessoa autenticada; direção e objetivos | protegido | **validado** | PAS-001-OBJ-VIEW-001; GKR-UX-D5-C1-001; GKR-UX-D5-C2-001; GKR-UX-D5-C3-001 | `d5-c2-person-objectives-mobile.svg` | **D5-C3 local** | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-011 | Meus Próximos Passos | Pessoa autenticada; movimentos contextuais | protegido | **validado** | PAS-001-PP-VIEW-001; GKR-UX-D5-C1-001; GKR-UX-D5-C2-001; GKR-UX-D5-C3-001 | `d5-c2-person-next-steps-mobile.svg` | **D5-C3 local** | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-012 | Minha Evolução | Pessoa autenticada; trajetórias e evolução contínua | protegido | **validado** | PAS-001-EC-VIEW-001; GKR-UX-D5-C1-001; GKR-UX-D5-C2-001; GKR-UX-D5-C3-001 | `d5-c2-person-evolution-mobile.svg` | **D5-C3 local** | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-010 | Meus Objetivos | Pessoa autenticada; direção e objetivos | protegido | **contrato funcional corrente / handoffs validados** | PAS-001-OBJ-VIEW-001; GKR-UX-D5-C1-001 | histórico visual preservado no Git | **TRN-008/009 validadas por GKR-UX-D5-C4B-001** | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-011 | Meus Próximos Passos | Pessoa autenticada; movimentos contextuais | protegido | **contrato funcional corrente / handoffs validados** | PAS-001-PP-VIEW-001; GKR-UX-D5-C1-001 | histórico visual preservado no Git | **TRN-010/011 validadas por GKR-UX-D5-C4B-001** | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-012 | Minha Evolução | Pessoa autenticada; trajetórias e evolução contínua | protegido | **contrato funcional corrente / handoffs validados** | PAS-001-EC-VIEW-001; GKR-UX-D5-C1-001 | histórico visual preservado no Git | **TRN-012/013 validadas por GKR-UX-D5-C4B-001** | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-101 | Explorar Coletivos | visitante | móvel | validado | UXA-056 | UXA-060 | UXA-061 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-102 | Resultados de Busca de Coletivos | visitante | móvel | validado | UXA-056 | UXA-060 | UXA-061 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-103 | Perfil Público do Coletivo | visitante | móvel | validado | UXA-056 | UXA-062 | UXA-063 | [Pessoa](surface-registry-person-details.md) |
