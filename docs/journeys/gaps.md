@@ -2,10 +2,14 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.2
+version: 1.0.3
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
+  - GKR-JOURNEY-PERSON-001
+  - GKR-JOURNEY-COLLECTIVE-001
+  - GKR-JOURNEY-ORGANIZATION-001
+  - GKR-JOURNEY-BUSINESS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
