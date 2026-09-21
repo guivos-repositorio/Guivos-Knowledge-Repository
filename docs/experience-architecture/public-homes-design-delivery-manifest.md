@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.14
+version: 7.0.15
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -46,13 +46,20 @@ AI
 
 Snapshots, candidates e registros de emissão anteriores pertencem à proveniência do Git. Não são necessários para compreender ou executar o estado corrente.
 
-## 2. Cinco autoridades comuns
+## 2. Autoridades comuns e autoridade condicional de IA
+
+Quatro autoridades são universais para o fluxo de Design:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.4` — `docs/experience-architecture/public-homes-design-handoff.md`;
-2. `GKR-UX-HOMES-GENINPUT-001 v2.3.2` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`;
-3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.3.5` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.1.2` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`;
-5. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.1` — `docs/experience-architecture/public-homes-design-production-release.md`.
+2. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.3.5` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
+3. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.1.2` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`;
+4. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.1` — `docs/experience-architecture/public-homes-design-production-release.md`.
+
+Quando a designer optar por usar IA, acrescenta-se a autoridade condicional:
+
+- `GKR-UX-HOMES-GENINPUT-001 v2.3.2` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`.
+
+O uso manual não exige Source Lock ou registro de execução de IA.
 
 ## 3. Fontes específicas por Home
 
@@ -116,8 +123,11 @@ HOME MASTERS
 QUICK-REFERENCE MOVEMENTS
 → 83 / 83
 
-COMMON AUTHORITIES
-→ 5 / 5 CURRENT
+UNIVERSAL DESIGN AUTHORITIES
+→ 4 / 4 CURRENT
+
+OPTIONAL AI AUTHORITY
+→ 1 / 1 CURRENT WHEN AI IS USED
 
 DESIGN PRODUCTION RELEASE
 → GRANTED

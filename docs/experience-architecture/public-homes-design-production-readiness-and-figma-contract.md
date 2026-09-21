@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.8
+version: 1.3.9
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -151,13 +151,25 @@ Findings, snapshots e remediações encerradas pertencem à história do Git e n
 
 ## 6. Composição de fontes por Home
 
-Cinco autoridades comuns acompanham todas as Homes:
+Quatro autoridades universais acompanham todas as Homes:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001`;
-2. `GKR-UX-HOMES-GENINPUT-001`;
-3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001` — este documento;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001`;
-5. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`.
+2. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001` — este documento;
+3. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001`;
+4. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`.
+
+Quando a designer optar por usar IA, acrescenta-se:
+
+- `GKR-UX-HOMES-GENINPUT-001` — autoridade condicional de Source Lock/prompt.
+
+O uso manual não depende dessa autoridade de IA.
+
+A lista universal é:
+
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001`;
+2. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001` — este documento;
+3. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001`;
+4. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`.
 
 O Manifesto corrente fixa o conjunto canônico no checkpoint do `main`. Snapshot não é pré-condição para Design; quando existir, funciona apenas como artefato de transporte congelado.
 
@@ -227,8 +239,11 @@ O conjunto corrente é definido pelo Manifesto Canônico vigente.
 HOMES COM MASTER
 → 8 / 8
 
-AUTORIDADES COMUNS
-→ 5 / 5
+AUTORIDADES UNIVERSAIS DE DESIGN
+→ 4 / 4
+
+AUTORIDADE OPCIONAL DE IA
+→ 1 / 1 QUANDO IA FOR UTILIZADA
 
 FONTES CANÔNICAS DO MANIFESTO
 → 29 / 29 IDENTIFICADAS POR PATH + ID + VERSION
