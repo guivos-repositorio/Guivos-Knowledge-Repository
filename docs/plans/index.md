@@ -2,7 +2,7 @@
 id: GKR-PLANS-INDEX-001
 title: Planos — Visão Geral
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-09-20
 normative: false
@@ -66,6 +66,12 @@ Planos do produto especializado B2B **Guivos Business**. Eles são independentes
 | **Growth** | R$ 799,00 | R$ 7.990,00 | acompanhar e compreender |
 | **Scale** | a partir de R$ 1.990,00 | contrato anual | interpretar e integrar em escala |
 | **Enterprise** | sob consulta | contrato anual | governança e operação de alta complexidade |
+
+**Contratação:** online.
+
+**Implementação/operação:** **Self-service quando possível**, com apoio do suporte quando necessário e operação gerenciada quando a complexidade exigir.
+
+O modelo de implementação/operação é independente do plano: a complexidade da configuração determina o nível de acompanhamento.
 
 [Ver detalhes dos planos do Guivos Business](business.md)
 
