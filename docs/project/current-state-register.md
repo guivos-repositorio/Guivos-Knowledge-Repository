@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.4
+version: 3.50.5
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-21
 normative: true
@@ -125,7 +125,7 @@ AUDIT COMPLETE
 
 ## 3. Fundação e identidade da Guivos
 
-A Parte I — Fundação foi reconciliada no Lote C da auditoria sem redução do conhecimento validado.
+A Fundação corrente permanece consolidada sem redução do conhecimento validado.
 
 A leitura fundacional vigente é:
 
@@ -199,7 +199,7 @@ A visão de capacidade máxima pode ser documentada, mas deve permanecer classif
 
 ## 4. Fundamento Cristão
 
-`GKR-CHRISTIAN-FOUNDATION-001 v1.0.0` permanece autoridade fundacional normativa e foi preservado no Lote C por permanecer semanticamente consistente com as autoridades posteriores.
+`GKR-CHRISTIAN-FOUNDATION-001 v1.0.0` permanece autoridade fundacional normativa e semanticamente consistente com as autoridades correntes.
 
 Princípio central:
 
@@ -788,7 +788,7 @@ PONTOS
 
 A empresa financia orçamento; concessão e uso pela Pessoa são eventos distintos.
 
-A auditoria documental do Lote J classificou como `REAL_DRIFT` a claim de que uma equivalência Pontos ↔ BRL já estaria validada como regra vigente. O checkpoint de 2026-08-15 preserva essa decisão como proveniência histórica, mas as autoridades econômicas temáticas correntes não definem nem aprovam valor monetário ou taxa de conversão.
+As autoridades econômicas temáticas correntes **não definem nem aprovam equivalência Pontos ↔ BRL, valor monetário ou taxa de conversão**.
 
 ```text
 PONTOS GUIVOS
@@ -947,7 +947,7 @@ Product Engineering continua pausada antes de `W0-01` e só pode ser reativada p
 
 ## 14. Marca, assinatura e autoridade pública
 
-`GKR-BRAND-SIGNATURE-001 v1.3.0` permanece autoridade verbal institucional e foi preservado no Lote C por permanecer consistente.
+`GKR-BRAND-SIGNATURE-001 v1.3.0` permanece autoridade verbal institucional vigente.
 
 ```text
 GUIVOS — GLOBAL
@@ -1206,7 +1206,7 @@ CONTROLE PROJETADO
 
 `GOG-001 — Guia Oficial da Guivos v5.3.0` é a principal superfície institucional classificada como `public-canon` no estado atual documentado.
 
-No Lote C, o GOG foi reconciliado com Fundação e RP-002 para:
+O GOG corrente permanece alinhado à Fundação e ao RP-002 para:
 
 - distinguir Possibilidade, Mecanismo e Oportunidade;
 - remover a leitura de Oportunidade como caminho universal;
@@ -1329,7 +1329,7 @@ MÉTODO DEFINIDO
 
 ## 25. Dívidas e gates reais ainda abertos
 
-Após o fechamento da auditoria integral e a captura da baseline final, permanecem abertos quando dependentes de realidade, materialização, Design, implementação, operação ou autoridade própria:
+Permanecem abertos quando dependentes de realidade, materialização, Design, implementação, operação ou autoridade própria:
 
 - validação B2C real;
 - PMF e disposição a pagar;
