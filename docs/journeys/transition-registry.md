@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.26.0
+version: 0.27.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-09
+last_updated: 2026-09-21
 related:
   - UXA-087
   - UXA-089
