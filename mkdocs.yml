@@ -98,9 +98,6 @@ nav:
           - Fluxos Prioritários: experience-architecture/organizations-collectives-authenticated-priority-flows.md
           - Navegação Autenticada: experience-architecture/organizations-collectives-authenticated-navigation-materialization.md
           - Wireframes Low-Fidelity: experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md
-          - Validação Low-Fidelity: experience-architecture/organizations-collectives-authenticated-low-fidelity-functional-validation.md
-          - Elegibilidade High-Fidelity: experience-architecture/organizations-collectives-authenticated-high-fidelity-eligibility.md
-          - Autorização High-Fidelity: experience-architecture/organizations-collectives-authenticated-high-fidelity-authorization.md
 
   - Produtos e Economia:
       - Arquitetura de Produtos: product-architecture/index.md
