@@ -2,15 +2,13 @@
 id: UXA-028
 title: Wireframe Alternativo do Mapa de Oportunidades — Visualização em Lista
 status: active
-version: 0.2.0
+version: 0.2.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-27
+last_updated: 2026-09-21
 parent: UXA-024
 depends_on:
   - UXA-004
   - UXA-025
-  - UXA-026
-  - UXA-027
 related:
   - UXA-002
   - UXA-010

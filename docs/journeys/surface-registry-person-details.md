@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
 title: Detalhamento Obrigatório das Superfícies da Pessoa
 status: active
-version: 0.22.0
+version: 0.23.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -51,8 +51,8 @@ Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obri
 | GKR-SURF-PER-106 | UXA-092/094 + GKR-JOURNEY-TRANSITION-REGISTRY-001 | contrato funcional corrente | vínculo confirmado ou acesso recorrente | reconhecer participações e abrir atualizações opcionalmente | PER-107 | Coletivo, estado, papel e mudança de vínculo | autenticação/vínculo | trocar categoria/voltar | refinada UXA-094 | TRN-108/110 integrais | P0B separado | não é feed |
 | GKR-SURF-PER-107 | UXA-094/096 + GKR-JOURNEY-TRANSITION-REGISTRY-001 | contrato funcional corrente | PER-106 ou atualização legítima | compreender mudança e escolher ação/contexto | PER-105/PER-106/PER-108 | origem, tipo, autoridade, data, ação, prazo e vínculo | vínculo/autorização revalidados | retornar/ajustar preferência | revalidada UXA-096 | TRN-110/111 integrais | P0B separado | triagem, não feed |
 | GKR-SURF-PER-108 | UXA-096 + GKR-JOURNEY-TRANSITION-REGISTRY-001 | contrato funcional corrente | vínculo atual e contexto selecionado | compreender propósito/vínculo/momento e escolher área | áreas internas próprias; Central | propósito, vínculo, papel, momento e controles | vínculo/permissões revalidados | voltar/pausar/sair/contestar | revalidada UXA-096 | TRN-111 integral | P0B e áreas internas | síntese interna |
-| GKR-SURF-PER-201 | UXA-004/025/098 + GKR-JOURNEY-TRANSITION-REGISTRY-001 | contrato funcional corrente | oportunidades | explorar/selecionar | lista/detalhe | consulta/localização/filtros | localização conforme escolha | voltar/limpar | nenhuma | TRN-203/204/210 integradas | integração patrocinada | oportunidades |
-| GKR-SURF-PER-202 | UXA-028 | indeterminado | mapa/lista | ordenar/filtrar/selecionar | detalhe | consulta/filtros/cartões | nenhum vínculo | voltar/limpar | nenhuma | TRN-210/211 integradas | integração patrocinada | oportunidades |
+| GKR-SURF-PER-201 | UXA-004/025/098 + GKR-JOURNEY-TRANSITION-REGISTRY-001 | contrato funcional corrente | oportunidades | explorar/selecionar; alternar Mapa ↔ Lista sem perder a consulta | lista/detalhe | região, consulta, busca, filtros e seleção; localização somente quando autorizada | localização opcional; região manual permitida | voltar/limpar/editar região; desativar localização | estados especializados absorvidos no contrato corrente | TRN-203/204/210 integradas | integração patrocinada | Mapa e Lista preservam a mesma consulta territorial |
+| GKR-SURF-PER-202 | UXA-029/098 + GKR-JOURNEY-TRANSITION-REGISTRY-001 | contrato funcional corrente | PER-201 / modo Lista | ordenar/filtrar/selecionar mantendo a mesma consulta territorial | detalhe ou retorno ao Mapa | região, busca, filtros, ordenação, cartões e seleção | nenhum vínculo; localização não é requisito | Mapa ↔ Lista preserva contexto; voltar/limpar | wireframe histórico sem baseline visual corrente | TRN-210/211 integradas | integração patrocinada | Lista é modo textual integral da mesma descoberta territorial |
 | GKR-SURF-PER-203 | UXA-004/012/098/101 + GKR-JOURNEY-TRANSITION-REGISTRY-001 | contrato funcional corrente | mapa/lista via TRN-204/211 | avaliar/salvar/comparar; ao agir, revisar conscientemente a saída externa | permanecer no Detalhe ou `TRN-205 → BND-001` | condições, responsável, relação comercial, destino externo e disclosure de dados/contexto | ação afirmativa + destino conhecido/autorizado revalidado; nenhuma conclusão externa presumida | voltar ao detalhe; bloquear saída inválida; retorno externo neutro | estado de revisão consolidado e validado pela UXA-101 | **TRN-205 integralmente validada até BND-001** | processo e resultado posteriores pertencem ao terceiro | revisão é estado de PER-203; BND-001 não é tela Guivos |
 | GKR-SURF-PER-301 | GKR-PLANS-PERSON-001 + GEM-004-PLAN-TAXONOMY-AUTHORITY-001 + GKR-JOURNEY-TRANSITION-REGISTRY-001 | fluxo especializado de Planos validado | `TRN-406` ou acesso contextual legítimo | compreender plano atual/delta e manter ou escolher mudança | TRN-401/403 ou `TRN-407` | Free/Plus/Pro, preços candidatos e capacidades | autenticação; alternativas gratuitas preservadas | permanecer/retornar | contrato corrente preservado no Surface/Transition Registry | superfície validada; TRN-401..405 locais; TRN-406/407 contratadas | PER-009 sem materialização; gateway/fiscal/proration | comparação no mesmo PER-301 |
 | GKR-SURF-PER-302 | GKR-PLANS-PERSON-001 + GEM-004-PLAN-TAXONOMY-AUTHORITY-001 + GKR-JOURNEY-TRANSITION-REGISTRY-001 | fluxo especializado validado localmente | TRN-401 | revisar contratação | TRN-402 ou retorno | plano alvo, preço, recorrência, pagador/beneficiário | ação afirmativa | voltar sem contratar | contrato corrente preservado no Registry | validada localmente | gateway/fiscal/proration | não é checkout implementado |
@@ -77,6 +77,24 @@ Os antigos degraus de materialização low-fidelity e reformulação visual pert
 
 A UXA-101 não cria superfície nova. `PER-203` continua sendo a responsabilidade de compreender a oportunidade e decidir como prosseguir, agora com estado funcional explícito de revisão antes de `BND-001`. O processo externo posterior continua fora da autoridade da Guivos.
 
-## 7. Estado
+## 7. Mapa e Lista — estados operacionais correntes
+
+`PER-201` e `PER-202` compartilham uma única continuidade de descoberta territorial. Mapa e Lista são modos da mesma consulta; alternar entre eles não cria nova jornada, nova oportunidade ou nova autorização.
+
+Regras correntes:
+
+- localização do dispositivo é opcional;
+- com localização desativada, a Guivos não presume posição, residência, deslocamento ou marcador pessoal;
+- a Pessoa pode informar região manualmente sem transformar essa escolha em residência, posição atual ou histórico territorial;
+- rota, quando aplicável, pode solicitar origem manual ou localização temporária autorizada; isso não autoriza retenção ou rastreamento contínuo;
+- ausência de resultados é estado válido, recuperável e não equivale a ausência de possibilidades para a Pessoa;
+- no estado sem resultados, consulta, região, busca e filtros devem permanecer compreensíveis e revisáveis; cobertura/atualização deve ser explicitada quando houver evidência;
+- ações de recuperação podem editar região, busca ou filtros, com revisão antes de aplicar mudanças; desfazer só existe quando houver alteração reversível concreta;
+- composição para computador ou móvel pertence ao Design e não cria superfície canônica distinta;
+- não existe baseline visual corrente obrigatório para Mapa ou Lista.
+
+Os antigos produtores especializados de localização desativada, estado sem resultados e referência desktop tiveram sua função corrente absorvida por este contrato, pelo Surface Registry e pelas transições vigentes. Sua proveniência permanece no Git e não é entrada padrão de Design ou IA.
+
+## 8. Estado
 
 O detalhamento está `active` como parte integrante do registro granular. A GKR-UX-D5-C4B-001 valida a continuidade especializada com Hoje no limite documental, sem promover a Jornada da Pessoa como completa e sem comprovar implementação técnica.

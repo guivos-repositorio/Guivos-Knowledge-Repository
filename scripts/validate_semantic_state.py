@@ -22,10 +22,7 @@ CONTROL_PATHS = [
 STALE = ("M7.48", "M7.0 —", "GKR-STATE-001 1.99.0", "GKR-STATE-001 1.0.2", "UXA-071, não iniciada")
 
 F016_HISTORICAL_PARENT_ALLOWLIST = {
-    26: 24,
     28: 24,
-    30: 24,
-    32: 24,
     35: 34,
     37: 36,
     41: 40,
@@ -129,6 +126,12 @@ def main() -> int:
         21: "uxa-021-public-home-functional-validation-and-reformulation.md",
         22: "uxa-022-public-home-low-fidelity-wireframe.md",
         24: "uxa-024-opportunity-map-low-fidelity-wireframe.md",
+        26: "uxa-026-opportunity-map-location-disabled-state.md",
+        27: "uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md",
+        30: "uxa-030-opportunity-map-no-results-state.md",
+        31: "uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md",
+        32: "uxa-032-opportunity-map-desktop-reference.md",
+        33: "uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md",
         34: "uxa-034-protected-journey-entry-low-fidelity-wireframe.md",
         36: "uxa-036-initial-understanding-low-fidelity-wireframe.md",
         40: "uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md",
