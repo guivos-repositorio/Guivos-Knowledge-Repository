@@ -91,7 +91,7 @@ Snapshots, candidates e registros de emissão anteriores pertencem à proveniên
 - `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.9` — `docs/experience-architecture/public-home-business-source-lock.md`;
 - `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4` — `docs/experience-architecture/public-home-business-master-document.md`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.4` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.7.2` — `docs/product-architecture/business.md`.
 
 ### 3.8 Intelligence
