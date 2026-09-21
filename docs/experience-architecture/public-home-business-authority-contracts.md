@@ -2,12 +2,11 @@
 id: GKR-UX-HOME-BUSINESS-AUTHORITY-001
 title: Contratos de Autoridade — Home Pública — Guivos Business
 status: active
-version: 1.0.3
+version: 1.0.4
 owner: Experience Architecture
 last_updated: 2026-09-20
-parent: GKR-UX-HOME-BUSINESS-NARRATIVE-001
+parent: GPA-004
 depends_on:
-  - GKR-UX-HOME-BUSINESS-NARRATIVE-001
   - GPA-004
   - GKR-BUSINESS-CONTINUITY-001
   - GKR-STATE-001
@@ -31,7 +30,7 @@ Consequência central para o Business:
 
 > **A empresa pode aumentar sua capacidade de apoiar pessoas sem aumentar sua autoridade sobre a vida delas.**
 
-Este documento não substitui `GPA-004` nem `GKR-UX-HOME-BUSINESS-NARRATIVE-001`. Ele complementa essas autoridades.
+Este documento não substitui `GPA-004`. Ele especializa, para a Home Pública do Guivos Business, os limites de autoridade que o Documento Mestre, a conversão vigente e o Source Lock corrente devem preservar.
 
 ## 2. Contrato 1 — autoridade sobre a evolução
 
