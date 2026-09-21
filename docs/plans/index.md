@@ -67,7 +67,8 @@ Planos do produto especializado B2B **Guivos Business**. Eles são independentes
 | **Scale** | a partir de R$ 1.990,00 | contrato anual | interpretar e integrar em escala |
 | **Enterprise** | sob consulta | contrato anual | governança e operação de alta complexidade |
 
-**Contratação:** online.  
+**Contratação:** online.
+
 **Implementação/operação:** **Self-service quando possível**, com apoio do suporte quando necessário e operação gerenciada quando a complexidade exigir.
 
 O modelo de implementação/operação é independente do plano: a complexidade da configuração determina o nível de acompanhamento.
