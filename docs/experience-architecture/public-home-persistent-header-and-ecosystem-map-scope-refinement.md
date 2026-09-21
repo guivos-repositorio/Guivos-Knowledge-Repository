@@ -2,15 +2,14 @@
 id: GKR-UX-HOME-NAV-002
 title: Refinamento do Header Persistente e Limite do Mapa do Ecossistema na Home Pública
 status: draft
-version: 0.3.0
+version: 0.3.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-10
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-NAV-001
 depends_on:
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-VAL-001
-  - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-NAV-001
   - GKR-UX-HOME-NAV-004
