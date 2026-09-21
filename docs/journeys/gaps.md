@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.3
+version: 1.0.4
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
@@ -146,6 +146,24 @@ PRODUCT ENGINEERING
 ```
 
 Portanto, **Navigation Materialization, wireframe principal low-fidelity e sua validação não são lacunas correntes**.
+
+
+### 5.1 Lacunas especializadas que permanecem abertas
+
+O fechamento da cadeia principal autenticada **não** significa que todas as capacidades especializadas de Organização e Coletivo estejam materializadas ou validadas ponta a ponta.
+
+Permanecem abertas, conforme os Surface Registries e contratos correntes:
+
+- `ORG-004..006`: proposta, negociação e operação bilateral Organização ↔ Coletivo — superfícies ainda ausentes/indeterminadas;
+- `ORG-007`: revisão institucional de evidências/resultados — responsabilidade conhecida, com evidência insuficiente para classificar;
+- `COL-004`: gestão de vínculo — contratada e ainda não materializada especificamente;
+- `COL-005`: comunicação oficial do Coletivo — contratada e ainda não materializada especificamente;
+- `COL-006`: operação/governança interna — contratada e ainda não materializada especificamente;
+- `COL-007`: evento protegido — estado ainda indeterminado;
+- `COL-008`: relação bilateral Organização ↔ Coletivo — superfície ausente;
+- capacidades de avaliação/reputação e de interações/recomendações/conexões governadas por `UXA-057` e `UXA-058` permanecem dependentes de materialização/validação específica onde o Registry ainda não comprova fechamento.
+
+Essas lacunas especializadas não reabrem a cadeia principal autenticada já fechada até `HIGH-FIDELITY AUTHORIZATION`; elas devem ser tratadas como frentes funcionais próprias, sem promoção por analogia.
 
 ## 6. Regra de continuidade
 
