@@ -96,19 +96,39 @@ GUIVOS BUSINESS
 → GOVERNADO POR GPA-004 + AUTORIDADES BUSINESS
 ```
 
-## 3. Contagem
+## 3. Contagem estrutural de IDs
 
-| Categoria | Quantidade |
+Os **contextos correntes de experiência tratados nesta arquitetura** são:
+
+| Contexto | IDs próprios neste Registry |
 |---|---:|
 | Pessoa | 27 |
 | Coletivo | 12 |
 | Organização | 11 |
-| Guivos Business | 0 IDs próprios neste Registry |
-| Ads / Opportunity Boost (`COM-*`, prefixo legado) | 5 |
-| fronteira documental | 2 |
-| **Total de IDs registrados** | **57** |
+| Guivos Business | 0 |
 
-A contagem de IDs permanece estrutural. Ela não implica que todos estejam materializados ou validados.
+Business possui contexto próprio de experiência, mas sua arquitetura corrente está governada por `GPA-004`, autoridades Business, Home Business, Planos Business e `docs/journeys/business.md`; a ausência de IDs próprios neste Registry não reduz seu status como contexto.
+
+Os registros abaixo são **auxiliares** e não constituem contextos equivalentes:
+
+| Registro auxiliar | Quantidade |
+|---|---:|
+| Ads / Opportunity Boost (`COM-*`, prefixo legado) | 5 |
+| Fronteiras documentais (`BND-*`) | 2 |
+
+```text
+CONTEXTOS DE EXPERIÊNCIA
+→ PESSOA
+→ COLETIVO
+→ ORGANIZAÇÃO
+→ BUSINESS
+
+IDS TÉCNICOS AUXILIARES
+→ COM-* = ADS / OPPORTUNITY BOOST
+→ BND-* = FRONTEIRAS
+```
+
+O total estrutural permanece **57 IDs**. A contagem não implica que todos estejam materializados ou validados.
 
 ## 4. Inventário principal
 
