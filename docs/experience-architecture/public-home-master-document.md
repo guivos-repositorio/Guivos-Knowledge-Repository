@@ -1306,7 +1306,7 @@ A definição funcional de Q não deve preencher itens visuais ou operacionais p
 | `NARR-003` | participante ≠ produto | absorvido; removido do corpus corrente |
 | `NARR-004` | realidade × experiência × autoridade | absorvido; removido do corpus corrente |
 | `NARR-005` | 7 macroexperiências | absorvido com novo rótulo do M06; removido do corpus corrente |
-| `NAV-001/003/004` | Header, launcher, CTAs, scroll e mobile | absorvido; removido do corpus corrente |
+| `NAV-001/002/003/004` | Header, launcher, CTAs, scroll, mobile e limite do Mapa do Ecossistema | absorvido; removido do corpus corrente |
 | `SYS-001` | conteúdo, prova, histórias, interação, ritmo e acessibilidade | absorvido; removido do corpus corrente |
 | `GTM-BOUNDARY-001` | arquitetura ≠ lançamento | absorvido; removido do corpus corrente |
 | Media supply | Media como fonte editorial sem transferência de autoridade | absorvido |
