@@ -2,9 +2,9 @@
 id: GEM-004-PLAN-TAXONOMY-AUTHORITY-001
 title: Autoridade Conceitual de Taxonomia, Função e Leitura dos Planos
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Guivos Economic Model
-last_updated: 2026-08-08
+last_updated: 2026-09-20
 parent: GEM-004
 depends_on:
   - GEM-004
@@ -219,9 +219,9 @@ Esta atualização preserva os preços candidatos já governados **somente onde 
 
 A mudança de nome de um plano não autoriza alteração automática de preço, limite ou entitlement.
 
-Para Guivos Business, esta autoridade não cria preços ou entitlements. Referências históricas que tenham atribuído preços de Start/Growth/Scale à jornada de Organização não poderão ser reutilizadas automaticamente como tabela comercial do produto Guivos Business.
+Esta autoridade conceitual não cria preços por si só. A baseline comercial própria do Guivos Business é governada por `GEM-004-A1 v0.3.0`, que registra Start, Growth, Scale e Enterprise de forma independente da jornada de Organização.
 
-Qualquer futura tabela do Guivos Business deverá ser governada explicitamente.
+Nenhum preço de Organização pode ser reutilizado automaticamente como preço Business; quando houver valores iguais, a autoridade econômica deve registrá-los explicitamente em cada contexto.
 
 ## 10. BND-002 — interpretação corrigida
 
