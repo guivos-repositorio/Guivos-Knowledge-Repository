@@ -2,16 +2,15 @@
 id: GKR-UX-HOME-NARR-005
 title: Mapa de Agrupamento dos 11 Movimentos em Macroexperiências da Home Pública
 status: draft
-version: 0.2.0
+version: 0.2.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-27
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-NARR-001
 depends_on:
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-001
   - GKR-UX-HOME-VAL-001
-  - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-NARR-002
   - GKR-UX-HOME-NARR-003
