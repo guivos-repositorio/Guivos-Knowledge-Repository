@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-SYS-001
 title: Mapa de Conteúdo, Prova e Evidência por Movimento da Home Pública de Organizações e Coletivos
 status: draft
-version: 0.2.0
+version: 0.2.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-29
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-OC-MASTER-001
 depends_on:
   - GKR-UX-HOME-OC-MASTER-001
@@ -16,7 +16,6 @@ depends_on:
   - UXA-019
 related:
   - GKR-FULL-CORPUS-AUDIT-001
-  - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - UXA-015
