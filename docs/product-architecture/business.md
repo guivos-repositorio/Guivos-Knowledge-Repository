@@ -482,25 +482,34 @@ SERVIÇOS ADICIONAIS, QUANDO APLICÁVEIS
 
 O orçamento de incentivo **não é a assinatura do plano Business**. O acesso ao Journey custeado pela empresa possui relação econômica própria e não deve ser presumido como incluído automaticamente em qualquer plano.
 
-## 13. Nível de serviço
+## 13. Contratação e modelo de implementação/operação
 
-A direção conceitual aceita separa capacidade tecnológica/comercial de participação operacional da Guivos:
+A arquitetura corrente separa capacidade contratada, contratação e participação operacional da Guivos:
 
 ```text
 PLANO
 = capacidade tecnológica/comercial
 
-SERVIÇO
-= quanto a Guivos participa da implantação e operação
+CONTRATAÇÃO
+= online
+
+MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+= quanto a Guivos participa da implantação/operação
 ```
 
-Foram trabalhados como direção:
+Os modelos correntes são:
 
-- Self-service;
-- Assisted;
-- Managed.
+- **Self-service** — a empresa contrata online, acessa a plataforma, configura e opera com autonomia;
+- **Com apoio do suporte** — a contratação e o pagamento ocorrem online; o suporte acompanha a continuidade da implementação quando necessário;
+- **Gerenciado** — após a contratação online, a Guivos participa mais profundamente da implementação/operação conforme complexidade e contrato.
 
-Os nomes, escopos e entitlements desses níveis ainda não constituem oferta comercial final congelada.
+A síntese governada é:
+
+> **Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.**
+
+O modelo não é rigidamente determinado pelo plano. Uma configuração Scale pode ser padronizada o suficiente para Self-service; uma configuração Growth pode exigir apoio por integração, governança ou outra complexidade específica.
+
+Os detalhes contratuais e entitlements de serviço continuam sujeitos à formalização comercial aplicável.
 
 ## 14. Relação com outros produtos do ecossistema
 
