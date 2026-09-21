@@ -1,8 +1,8 @@
 ---
-id: ROADMAP-13.48.3
+id: ROADMAP-13.48.4
 title: Roadmap Arquitetural — Auditoria Integral e Próximos Gates da Guivos
 status: active
-version: 13.48.3
+version: 13.48.4
 owner: Guivos
 last_updated: 2026-09-20
 normative: true
@@ -751,8 +751,12 @@ O/C HIGH-FIDELITY ELIGIBILITY
 O/C HIGH-FIDELITY DESIGN AUTHORIZATION
 → NOT_GRANTED
 
-HIGH-FIDELITY UI / PROTOTYPE
-→ NOT AUTHORIZED
+O/C HIGH-FIDELITY DESIGN
+→ AUTHORIZATION = GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
+→ EXECUTION = AUTHORIZED / NOT_STARTED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
@@ -1817,8 +1821,12 @@ O/C LOW-FIDELITY WIREFRAMES
 → FUNCTIONAL VALIDATION = PASS / v1.0.0
 → CURRENT REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
 
-HIGH-FIDELITY UI / PROTOTYPE
-→ NOT AUTHORIZED
+O/C HIGH-FIDELITY DESIGN
+→ AUTHORIZATION = GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
+→ EXECUTION = AUTHORIZED / NOT_STARTED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
@@ -1840,7 +1848,7 @@ RESEARCH OPERATIONAL STATES
 → PMF = NOT VALIDATED
 ```
 
-`GIA-COG-002..008`, `UXA-102/V5`, high-fidelity UI/protótipo O/C, Product Engineering, PMF, implementação, produção e testes com participantes reais permanecem não iniciados ou não autorizados. A cadeia low-fidelity O/C está fechada em Delivery v0.1.0 + Validation v1.0.0 = PASS e a elegibilidade high-fidelity está `PASS`. O próximo gate possível é somente uma decisão humana explícita de autorização high-fidelity O/C.
+`GIA-COG-002..008`, `UXA-102/V5`, protótipo O/C, Product Engineering, PMF, implementação, produção e testes com participantes reais permanecem não iniciados ou não autorizados. A cadeia low-fidelity O/C está fechada em Delivery v0.1.0 + Validation v1.0.0 = PASS; a elegibilidade high-fidelity está `PASS` e a autorização high-fidelity foi concedida por `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`. O próximo gate é a execução separada do Design high-fidelity O/C.
 
 ## 27. Experiência e Journey — consolidação current-only
 
@@ -1887,7 +1895,7 @@ Próximos gates reais:
 4. integrar a consolidação somente após aprovação humana;
 5. não criar snapshot/candidate por padrão;
 6. usar snapshot apenas se surgir necessidade real de congelamento ou transporte externo;
-7. manter high-fidelity autenticado O/C e Product Engineering como frentes separadas.
+7. executar high-fidelity autenticado O/C somente em ato separado; Product Engineering permanece uma frente distinta e não liberada.
 
 ```text
 DESIGN PRODUCTION
