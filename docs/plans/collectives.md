@@ -2,7 +2,7 @@
 id: GKR-PLANS-COLLECTIVE-001
 title: Planos — Coletivos
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-09-20
 normative: false
@@ -13,29 +13,22 @@ depends_on:
 
 # Planos — Coletivos
 
-## Comparativo
+## Resumo
 
-| Capacidade | Livre | Mobiliza | Impacta | Rede |
-|---|---:|---:|---:|---:|
-| Mensal candidato | R$ 0,00 | R$ 89,90 | R$ 249,90 | sob consulta |
-| Anual candidato | R$ 0,00 | R$ 899,00 | R$ 2.499,00 | contrato anual |
-| Atividades/mês | 1 gratuita | 4 | 15 | capacidade contratada |
-| Oportunidades/mês | 1 gratuita | 4 | 15 | capacidade contratada |
-| Publicações ativas | 2 | 6 | 20 | capacidade contratada |
-| Publicações pagas | não | sim | sim | sim |
-| Administradores | 2 | 5 | 15 | conforme contrato |
-| Núcleos/unidades | 1 | 1 | até 5 | múltiplos |
-| Indicadores | básicos, 30 dias | ampliados | avançados e históricos | personalizados |
-| Pagamentos/inscrições pagas | não | incluídos | incluídos | incluídos e integráveis |
-| Exportação | não | básica | completa | completa e automatizável |
-| Integrações | não | limitadas | avançadas | API, SSO e dedicadas |
-| Suporte | padrão | prioritário | especializado | gerente dedicado e SLA |
+| Plano | Mensal | Anual | Foco |
+|---|---:|---:|---|
+| **Livre** | R$ 0,00 | R$ 0,00 | presença e mobilização inicial |
+| **Mobiliza** | R$ 89,90 | R$ 899,00 | operação recorrente e monetização |
+| **Impacta** | R$ 249,90 | R$ 2.499,00 | programas estruturados, parceiros e impacto evidenciado |
+| **Rede** | sob consulta | contrato anual | redes, múltiplos núcleos e capacidade dimensionada |
 
 ## Coletivo Livre
 
+**Preço:** R$ 0,00/mês · R$ 0,00/ano
 **Finalidade:** presença inicial, experimentação e mobilização gratuita de pequena escala.
 
-Benefícios:
+### Inclui
+
 - perfil e propósito;
 - até 2 administradores;
 - 1 atividade gratuita/mês;
@@ -47,13 +40,18 @@ Benefícios:
 - indicadores básicos dos últimos 30 dias;
 - gestão essencial de membros e papéis.
 
-Não inclui publicação paga, pagamentos, cupons, lotes, relatórios financeiros ou integrações.
+### Limites principais
+
+- não permite publicação com cobrança obrigatória;
+- não inclui pagamentos, cupons, lotes, relatórios financeiros ou integrações.
 
 ## Coletivo Mobiliza
 
-**Finalidade:** pequena operação recorrente com necessidade de monetização.
+**Preço:** R$ 89,90/mês · R$ 899,00/ano
+**Finalidade:** atender pequena operação recorrente com necessidade de monetização.
 
-Benefícios:
+### Inclui
+
 - até 5 administradores;
 - 4 atividades/mês;
 - 4 oportunidades/mês;
@@ -66,13 +64,20 @@ Benefícios:
 - gestão ampliada de participantes;
 - suporte prioritário.
 
-Limites: 1 núcleo/unidade, cotas mensais não acumulativas, integrações limitadas e sem API/SSO.
+### Limites principais
+
+- 1 núcleo/unidade;
+- cotas mensais não acumulativas;
+- integrações limitadas;
+- sem API/SSO.
 
 ## Coletivo Impacta
 
-**Finalidade:** operação estruturada, programas recorrentes, parceiros e mensuração ampliada.
+**Preço:** R$ 249,90/mês · R$ 2.499,00/ano
+**Finalidade:** atender operação estruturada, programas recorrentes, parceiros e mensuração ampliada.
 
-Benefícios:
+### Inclui
+
 - até 15 administradores;
 - 15 atividades/mês;
 - 15 oportunidades/mês;
@@ -86,14 +91,18 @@ Benefícios:
 - dashboards ampliados;
 - suporte especializado.
 
-Volume acima do limite exige Rede ou dimensionamento específico.
+### Limite principal
+
+Volume acima da capacidade exige Coletivo Rede ou dimensionamento específico.
 
 ## Coletivo Rede
 
-**Finalidade:** redes, fundações, movimentos e operações multiunidade de maior complexidade.
+**Preço:** sob consulta · contrato anual
+**Finalidade:** atender redes, fundações, movimentos e operações multiunidade de maior complexidade.
 
-Benefícios candidatos:
-- capacidade de atividades, oportunidades e publicações dimensionada por contrato;
+### Inclui
+
+- atividades, oportunidades e publicações conforme capacidade contratada;
 - categorias completas e personalizáveis;
 - múltiplos núcleos, territórios e programas;
 - administradores e papéis conforme contrato;
@@ -106,12 +115,27 @@ Benefícios candidatos:
 - gerente dedicado;
 - SLA e governança contratados.
 
-A capacidade fica sujeita ao contrato, uso justo, segurança e disponibilidade operacional.
+### Regra de capacidade
+
+A capacidade é dimensionada por contrato e permanece sujeita a uso justo, segurança e disponibilidade operacional.
+
+## Comparação rápida
+
+| Tema | Livre | Mobiliza | Impacta | Rede |
+|---|---:|---:|---:|---:|
+| Atividades/mês | 1 gratuita | 4 | 15 | contratada |
+| Oportunidades/mês | 1 gratuita | 4 | 15 | contratada |
+| Publicações ativas | 2 | 6 | 20 | contratada |
+| Publicações pagas | não | sim | sim | sim |
+| Administradores | 2 | 5 | 15 | contrato |
+| Núcleos/unidades | 1 | 1 | até 5 | múltiplos |
+| Integrações | não | limitadas | avançadas | dedicadas |
+| Suporte | padrão | prioritário | especializado | dedicado/SLA |
 
 ## Regra de cotas
 
-Criar/publicar, duplicar, republicar, criar nova edição ou alterar substancialmente o objeto consome cota. Correção de texto, horário/local, cancelamento, redução de vagas e edição de informações de acessibilidade/segurança não criam nova unidade.
+Criar/publicar, duplicar, republicar, criar nova edição ou alterar substancialmente o objeto consome cota. Correções de texto, horário/local, cancelamento, redução de vagas e informações de acessibilidade/segurança não criam nova unidade.
 
 ## Estado comercial
 
-Os preços, benefícios e limites constituem **baseline candidata para validação**, não autorização de cobrança ou oferta pública.
+Os preços, benefícios e limites integram a baseline comercial de referência vigente. Cobrança e oferta pública permanecem sujeitas aos gates aplicáveis.

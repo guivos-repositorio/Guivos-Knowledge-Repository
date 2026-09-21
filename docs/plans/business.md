@@ -2,81 +2,100 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-09-20
 normative: false
 depends_on:
   - GPA-004
   - GPA-004-FUNCTIONAL-PORTFOLIO-001
+  - GEM-004-A1
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
 ---
 
 # Planos — Guivos Business
 
-Guivos Business é um **produto especializado B2B**, separado do participante Organização.
+Guivos Business é um **produto especializado B2B**. Seus planos são independentes dos planos do participante Organização.
 
-## Taxonomia atual
+## Resumo
 
-| Plano | Direção funcional | Preço | Entitlements finais |
-|---|---|---|---|
-| Start | operar | a definir | a definir |
-| Growth | acompanhar e compreender | a definir | a definir |
-| Scale | interpretar e integrar | a definir | a definir |
-| Enterprise | governar em alta complexidade e escala | a definir | a definir |
+| Plano | Mensal | Anual | Direção funcional |
+|---|---:|---:|---|
+| **Start** | R$ 299,00 | R$ 2.990,00 | operar |
+| **Growth** | R$ 799,00 | R$ 7.990,00 | acompanhar e compreender |
+| **Scale** | a partir de R$ 1.990,00 | contrato anual | interpretar e integrar |
+| **Enterprise** | sob consulta | contrato anual | governar em alta complexidade e escala |
 
 ## Start
 
+**Preço:** R$ 299,00/mês · R$ 2.990,00/ano
 **Função:** estabelecer a operação empresarial inicial do produto.
 
-**Significado:** iniciar o Guivos Business com escopo controlado e capacidades essenciais.
+### Leitura
 
-**Leitura atual:** começar uma operação Business estruturada.
+- começar uma operação Business estruturada;
+- operar com escopo controlado e capacidades essenciais;
+- acessar o núcleo do produto sem transformar o plano em medida de mérito ou impacto.
 
 ## Growth
 
+**Preço:** R$ 799,00/mês · R$ 7.990,00/ano
 **Função:** ampliar recorrência, públicos, unidades e capacidade analítica.
 
-**Significado:** sustentar crescimento operacional com maior coordenação e governança.
+### Leitura
 
-**Leitura atual:** expandir a operação Business com controle e continuidade.
+- acompanhar e compreender a operação com maior continuidade;
+- ampliar coordenação e capacidade analítica;
+- aprofundar o uso de Intelligence e governança conforme os entitlements aplicáveis.
 
 ## Scale
 
+**Preço:** a partir de R$ 1.990,00/mês · contrato anual
 **Função:** atender operações amplas, multiunidade e integradas.
 
-**Significado:** sustentar maior volume, integração e complexidade mediante capacidade dimensionada.
+### Leitura
 
-**Leitura atual:** operar o Guivos Business em escala com capacidade compatível.
+- interpretar e integrar em maior escala;
+- suportar maior volume, integração e complexidade;
+- exigir dimensionamento de capacidade antes da contratação final.
+
+O valor mensal é referência mínima e não substitui o dimensionamento comercial.
 
 ## Enterprise
 
+**Preço:** sob consulta · contrato anual
 **Função:** adaptar o produto a contextos empresariais de alta complexidade.
 
-**Significado:** tratar necessidades que exigem dimensionamento, governança, integração, segurança, suporte ou contrato específicos.
+### Leitura
 
-**Leitura atual:** adaptar o produto Business a contextos empresariais de alta complexidade.
+- governar operações de alta complexidade e escala;
+- dimensionar capacidade, integração, segurança, governança e suporte;
+- tratar configurações e condições contratuais específicas.
+
+Enterprise não possui valor fixo único. O preço resulta do dimensionamento da operação.
 
 ## O que o plano governa
 
-Os planos Business governam, conforme futuras autoridades comerciais:
-- capacidade;
+O plano Business governa a profundidade contratada de:
+
+- capacidade operacional;
 - escala;
 - Guivos Intelligence;
 - integrações;
 - governança;
 - nível de serviço.
 
-As dimensões previstas para comparação incluem Journey, Programas de Incentivo, capacidade operacional, Intelligence, integrações, governança, serviço e escala.
+Os **entitlements quantitativos finais** de cada capacidade permanecem sujeitos à formalização comercial própria. O pricing de referência não autoriza inferir limites que ainda não tenham sido governados.
 
 ## O que a empresa pode contratar
 
-O plano não determina sozinho qual oferta será usada. A empresa pode contratar:
-- apenas Programas de Incentivo;
-- apenas acessos Guivos Journey custeados;
+O plano não determina sozinho qual oferta será utilizada. A empresa pode contratar:
+
+- Programas de Incentivo;
+- acessos Guivos Journey custeados;
 - ambas as ofertas.
 
-A arquitetura econômica também separa:
+A arquitetura econômica separa:
 
 ```text
 PLANO BUSINESS
@@ -90,22 +109,22 @@ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 SERVIÇOS ADICIONAIS, QUANDO APLICÁVEIS
 ```
 
-O orçamento pré-pago não é a assinatura do plano Business. Acesso Journey custeado pela empresa possui relação econômica própria.
+O orçamento pré-pago não é a assinatura do plano Business. O acesso Journey custeado pela empresa possui relação econômica própria.
 
-## Estado comercial ainda não definido
-
-As autoridades vigentes **não definem ainda**, por plano:
-- preço mensal ou anual;
-- limites quantitativos;
-- SLA;
-- composição final de benefícios;
-- entitlements contratuais.
-
-Esses itens não devem ser inferidos a partir dos planos de Organização nem preenchidos por analogia.
+## Separação obrigatória
 
 ```text
-Organização ≠ Guivos Business
-Organização Transforma ≠ Guivos Business Enterprise
+ORGANIZAÇÃO
+≠ GUIVOS BUSINESS
+
+Organização Transforma
+≠ Business Enterprise
 ```
 
-A futura tabela comercial de Business deverá possuir autoridade própria antes de ser apresentada como pricing ou entitlement vigente.
+Valores iguais entre determinados degraus não criam equivalência funcional entre as duas estruturas.
+
+## Estado comercial
+
+Os preços de Start, Growth, Scale e a condição comercial de Enterprise integram a baseline de referência vigente. Limites quantitativos, SLAs e entitlements contratuais que não estejam expressamente formalizados continuam não inferíveis.
+
+A presença desses valores no GKR não constitui, sozinha, autorização automática de cobrança ou oferta pública.

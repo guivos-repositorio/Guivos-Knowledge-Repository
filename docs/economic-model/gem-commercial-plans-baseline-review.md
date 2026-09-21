@@ -2,9 +2,9 @@
 id: GEM-COMMERCIAL-BASELINE-001
 title: Revisão da Baseline Comercial de Planos e Preços
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Economic Model
-last_updated: 2026-08-08
+last_updated: 2026-09-20
 depends_on:
   - GEM-CLOSURE-REVIEW-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
@@ -28,7 +28,7 @@ Esta revisão registra a reabertura localizada do Guivos Economic Model para tra
 
 A reabertura atende aos critérios da Revisão de Fechamento do Modelo Econômico porque planos e preços passaram a exigir contratos específicos, parâmetros rastreáveis e validação separada.
 
-A versão 0.2.0 reconcilia a revisão com a taxonomia vigente e remove a antiga fusão entre Organização e Guivos Business.
+A versão 0.3.0 preserva a separação entre Organização e Guivos Business e restaura a baseline própria de pricing do Business, sem inferir equivalência entre as duas estruturas.
 
 ## 2. Escopo reaberto
 
@@ -50,6 +50,7 @@ O incremento define:
 - Coletivo Rede e sua fronteira de dimensionamento quando aplicável;
 - planos para Organizações;
 - separação explícita de Guivos Business como Produto Especializado;
+- pricing de referência próprio para Start, Growth, Scale e Enterprise;
 - acesso financiado e patrocinado;
 - benefícios e limites candidatos;
 - preços mensais e anuais candidatos onde existe autoridade econômica aplicável;
@@ -91,7 +92,7 @@ Guivos Business é Produto Especializado com taxonomia própria:
 - Scale;
 - Enterprise.
 
-Esta revisão não atribui aos tiers de Business os preços ou entitlements históricos da jornada de Organização.
+O pricing de Business é governado como baseline própria do produto. Valores eventualmente iguais aos de Organização não constituem equivalência funcional ou contratual.
 
 ### Acesso transversal
 
@@ -114,22 +115,43 @@ Esta revisão não atribui aos tiers de Business os preços ou entitlements hist
 13. Organização ≠ Guivos Business;
 14. Organização Transforma ≠ Guivos Business Enterprise.
 
-## 6. Preços candidatos
+## 6. Preços de referência por contexto
 
-| Público | Plano | Mensal | Anual |
-|---|---|---:|---:|
-| Pessoa | Guivos Free | R$ 0,00 | R$ 0,00 |
-| Pessoa | Guivos Plus | R$ 24,90 | R$ 249,00 |
-| Pessoa | Guivos Pro | R$ 49,90 | R$ 499,00 |
-| Coletivo | Coletivo Livre | R$ 0,00 | R$ 0,00 |
-| Coletivo | Coletivo Mobiliza | R$ 89,90 | R$ 899,00 |
-| Coletivo | Coletivo Impacta | R$ 249,90 | R$ 2.499,00 |
-| Coletivo | Coletivo Rede | sob consulta | contrato anual |
-| Organização | Organização Conecta | R$ 299,00 | R$ 2.990,00 |
-| Organização | Organização Eleva | R$ 799,00 | R$ 7.990,00 |
-| Organização | Organização Transforma | a partir de R$ 1.990,00 | contrato anual |
+### 6.1 Pessoa
 
-Os valores são parâmetros candidatos para validação e não autorização de cobrança. Eles não constituem preços de Start/Growth/Scale/Enterprise do Guivos Business.
+| Plano | Mensal | Anual |
+|---|---:|---:|
+| Guivos Free | R$ 0,00 | R$ 0,00 |
+| Guivos Plus | R$ 24,90 | R$ 249,00 |
+| Guivos Pro | R$ 49,90 | R$ 499,00 |
+
+### 6.2 Coletivos
+
+| Plano | Mensal | Anual |
+|---|---:|---:|
+| Coletivo Livre | R$ 0,00 | R$ 0,00 |
+| Coletivo Mobiliza | R$ 89,90 | R$ 899,00 |
+| Coletivo Impacta | R$ 249,90 | R$ 2.499,00 |
+| Coletivo Rede | sob consulta | contrato anual |
+
+### 6.3 Organizações
+
+| Plano | Mensal | Anual |
+|---|---:|---:|
+| Organização Conecta | R$ 299,00 | R$ 2.990,00 |
+| Organização Eleva | R$ 799,00 | R$ 7.990,00 |
+| Organização Transforma | a partir de R$ 1.990,00 | contrato anual |
+
+### 6.4 Guivos Business
+
+| Plano | Mensal | Anual |
+|---|---:|---:|
+| Business Start | R$ 299,00 | R$ 2.990,00 |
+| Business Growth | R$ 799,00 | R$ 7.990,00 |
+| Business Scale | a partir de R$ 1.990,00 | contrato anual |
+| Business Enterprise | sob consulta | contrato anual |
+
+Os valores compõem a baseline comercial de referência. Eles não constituem, isoladamente, autorização de cobrança ou oferta pública. Scale, Enterprise e demais contextos dimensionados dependem da capacidade contratada e das condições comerciais aplicáveis.
 
 ## 7. Proteções confirmadas
 

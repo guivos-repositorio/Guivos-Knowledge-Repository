@@ -2,7 +2,7 @@
 id: GKR-PLANS-PERSON-001
 title: Planos — Pessoa
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-09-20
 normative: false
@@ -13,48 +13,43 @@ depends_on:
 
 # Planos — Pessoa
 
-## Comparativo
+## Resumo
 
-| Capacidade | Free | Plus | Pro |
-|---|---|---|---|
-| Preço mensal candidato | R$ 0,00 | R$ 24,90 | R$ 49,90 |
-| Preço anual candidato | R$ 0,00 | R$ 249,00 | R$ 499,00 |
-| Catálogo público no Explorar e Mapa | completo | completo | completo |
-| Correspondências personalizadas completas | 2 por semana | sem limite fixo, uso justo | sem limite fixo, uso justo |
-| Demais correspondências personalizadas | prévia limitada | completas | completas |
-| Explicação da correspondência | nas 2 incluídas | completa | aprofundada e comparativa |
-| Jornada essencial | incluída | incluída | incluída |
-| Tela Hoje | geral/básica | personalizada | personalizada e ampliada |
-| Histórico | essencial | ampliado | ampliado com relatórios |
-| Filtros | básicos | avançados | avançados e combinados |
-| Alertas | gerais | personalizados | personalizados e prioritários |
-| Planos e lembretes | básicos | ampliados | integrados entre áreas autorizadas |
-| Exportação | registros essenciais | padrão | relatórios e exportações ampliadas |
-| Integrações autorizadas | não incluídas | limitadas | ampliadas |
-| Processamento e Intelligence | essencial | ampliado | avançado, sujeito a uso justo |
-| Suporte | padrão | ampliado | prioritário |
+| Plano | Mensal | Anual | Para quem / foco |
+|---|---:|---:|---|
+| **Free** | R$ 0,00 | R$ 0,00 | entrada real e jornada essencial |
+| **Plus** | R$ 24,90 | R$ 249,00 | mais personalização, histórico e continuidade |
+| **Pro** | R$ 49,90 | R$ 499,00 | maior profundidade analítica, integração e relatórios |
 
 ## Guivos Free
 
+**Preço:** R$ 0,00/mês · R$ 0,00/ano
 **Finalidade:** garantir participação real, compreensão inicial, descoberta pública e acompanhamento essencial sem pagamento.
 
-Inclui:
+### Inclui
+
 - Página Inicial pública e exploração geral;
 - início protegido e compreensão inicial revisável;
 - jornada essencial;
 - acesso ao catálogo público no Explorar e Mapa;
-- duas correspondências personalizadas completas por semana;
+- 2 correspondências personalizadas completas por semana;
 - histórico essencial;
 - controles de dados, permissões, correção, exportação, exclusão e saída;
 - participação em atividades e oportunidades gratuitas ou pagas conforme as condições do publicador.
 
-A cota semanal não é acumulativa e só é consumida quando a pessoa abre a correspondência completa. O esgotamento da cota não bloqueia busca manual, Explorar, Mapa nem informações públicas essenciais.
+### Limites principais
+
+- a cota semanal não é acumulativa;
+- a cota é consumida quando a pessoa abre a correspondência completa;
+- o esgotamento da cota não bloqueia Explorar, Mapa, busca manual ou informações públicas essenciais.
 
 ## Guivos Plus
 
+**Preço:** R$ 24,90/mês · R$ 249,00/ano
 **Finalidade:** ampliar personalização, conveniência, histórico, alertas e organização da jornada individual.
 
-Inclui tudo do Free, além de:
+### Acrescenta ao Free
+
 - correspondências personalizadas completas sem cota semanal fixa, sujeitas a uso justo;
 - explicação completa da relação entre oportunidade e contexto autorizado;
 - filtros avançados;
@@ -66,13 +61,19 @@ Inclui tudo do Free, além de:
 - integrações limitadas quando autorizadas;
 - suporte ampliado.
 
-**Limites:** uso individual e intransferível; não inclui serviço profissional humano, uso comercial ou administração de Organização/Coletivo.
+### Limites principais
+
+- uso individual e intransferível;
+- não inclui serviço profissional humano;
+- não inclui uso comercial nem administração de Organização ou Coletivo.
 
 ## Guivos Pro
 
+**Preço:** R$ 49,90/mês · R$ 499,00/ano
 **Finalidade:** oferecer maior profundidade analítica, integração autorizada, relatórios e acompanhamento avançado.
 
-Inclui tudo do Plus, além de:
+### Acrescenta ao Plus
+
 - análises aprofundadas e comparativas;
 - organização autorizada entre diferentes áreas da jornada;
 - maior capacidade de processamento e Intelligence;
@@ -82,8 +83,25 @@ Inclui tudo do Plus, além de:
 - suporte prioritário;
 - acesso antecipado a capacidades aprovadas para teste, quando aplicável e informado.
 
-**Limites:** permanece individual; não substitui diagnóstico ou aconselhamento profissional; não garante oportunidade, resultado ou evolução.
+### Limites principais
+
+- permanece plano individual;
+- não substitui diagnóstico ou aconselhamento profissional;
+- não garante oportunidade, resultado ou evolução.
+
+## Comparação rápida
+
+| Tema | Free | Plus | Pro |
+|---|---|---|---|
+| Correspondências personalizadas | 2/semana | ampliadas, uso justo | ampliadas + análise aprofundada |
+| Histórico | essencial | ampliado | ampliado + relatórios |
+| Filtros | básicos | avançados | avançados e combinados |
+| Alertas | gerais | personalizados | personalizados e prioritários |
+| Exportação | essencial | padrão | avançada |
+| Integrações | não incluídas | limitadas | ampliadas |
+| Intelligence | essencial | ampliada | avançada |
+| Suporte | padrão | ampliado | prioritário |
 
 ## Estado comercial
 
-Os preços e benefícios acima constituem **baseline candidata para validação**, não autorização de cobrança ou oferta pública.
+Os preços e benefícios integram a baseline comercial de referência vigente. Cobrança, oferta pública e condições finais permanecem sujeitas aos gates comerciais, jurídicos, fiscais e operacionais aplicáveis.

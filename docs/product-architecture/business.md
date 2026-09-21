@@ -2,9 +2,9 @@
 id: GPA-004
 title: Guivos Business
 status: consolidated
-version: 1.6.0
+version: 1.7.0
 owner: Guivos
-last_updated: 2026-08-15
+last_updated: 2026-09-20
 related:
   - GPA-004-FUNCTIONAL-PORTFOLIO-001
   - PAS-001
@@ -433,7 +433,16 @@ ENTERPRISE
 
 Os planos não representam mérito, impacto, prestígio ou nível de evolução da empresa. Não existe progressão moral ou obrigatória entre eles.
 
-Preços, limites quantitativos, SLAs e entitlements finais ainda não estão definidos por esta autoridade.
+O pricing de referência é governado economicamente por `GEM-004-A1 v0.3.0`:
+
+| Plano | Mensal | Anual |
+|---|---:|---:|
+| Start | R$ 299,00 | R$ 2.990,00 |
+| Growth | R$ 799,00 | R$ 7.990,00 |
+| Scale | a partir de R$ 1.990,00 | contrato anual |
+| Enterprise | sob consulta | contrato anual |
+
+Esta autoridade de produto não redefine os preços. Limites quantitativos, SLAs e entitlements contratuais não formalizados continuam dependentes de autoridade própria.
 
 ## 12. Oferta, plano, escala, orçamento e serviço
 
@@ -573,7 +582,7 @@ Guivos Business não deve ser interpretado como:
 
 Permanecem dependentes de autoridade específica antes de implementação ou publicação comercial definitiva:
 
-- preços de Start, Growth, Scale e Enterprise;
+- condições finais de publicação/oferta dos preços de Start, Growth, Scale e Enterprise;
 - limites quantitativos e entitlements finais;
 - preço/faixa por escala, participante ou acesso;
 - preço dos acessos Journey custeados pela empresa;

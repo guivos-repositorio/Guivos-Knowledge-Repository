@@ -2,9 +2,9 @@
 id: GEM-004-A1
 title: Catálogo Comercial Candidato de Planos, Benefícios e Preços
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Economic Model
-last_updated: 2026-08-08
+last_updated: 2026-09-20
 parent: GEM-004
 depends_on:
   - GEM-004
@@ -24,11 +24,11 @@ normative: true
 
 ## 1. Finalidade
 
-Este catálogo consolida a baseline comercial candidata dos planos destinados a Pessoas, Coletivos e Organizações.
+Este catálogo consolida a baseline comercial de referência dos planos destinados a Pessoas, Coletivos e Organizações e do produto especializado Guivos Business.
 
 A baseline define nomes comerciais candidatos, preços de referência, benefícios, limites, condições de acesso financiado e separações econômicas necessárias para validação.
 
-A versão 0.2.0 reconcilia a nomenclatura com `GEM-004-PLAN-TAXONOMY-AUTHORITY-001`: Pessoa usa `Free · Plus · Pro`, Coletivo usa `Livre · Mobiliza · Impacta · Rede` e Organização usa `Conecta · Eleva · Transforma`. Guivos Business permanece Produto Especializado separado, com taxonomia própria `Start · Growth · Scale · Enterprise` e sem preços ou entitlements criados por este catálogo.
+A versão 0.3.0 preserva a separação entre Organização e Guivos Business e reconcilia a baseline de pricing do Business já registrada historicamente. Pessoa usa `Free · Plus · Pro`, Coletivo usa `Livre · Mobiliza · Impacta · Rede`, Organização usa `Conecta · Eleva · Transforma` e Guivos Business usa `Start · Growth · Scale · Enterprise`. A igualdade eventual de valores entre degraus de Organização e Business não cria equivalência funcional, econômica ou contratual entre as duas estruturas.
 
 Ela não constitui oferta pública, autorização de cobrança, tabela fiscal, contrato definitivo, promessa de capacidade infinita ou evidência de disposição a pagar.
 
@@ -431,9 +431,7 @@ O preço mensal de R$ 1.990,00 é referência mínima candidata e não substitui
 
 Guivos Business não é plano de Organização. É Produto Especializado, com tiers `Start · Growth · Scale · Enterprise`.
 
-Este catálogo não atribui aos tiers de Guivos Business os preços, limites ou benefícios das seções 7.1 a 7.4. Qualquer futura tabela comercial de Business deverá ter autoridade própria.
-
-Não existe equivalência econômica automática:
+Não existe equivalência automática:
 
 ```text
 Organização Conecta ≠ Guivos Business Start
@@ -441,9 +439,44 @@ Organização Eleva ≠ Guivos Business Growth
 Organização Transforma ≠ Guivos Business Scale ou Enterprise
 ```
 
-## 8. Acesso financiado e patrocinado
+## 8. Planos do Guivos Business
 
-### 8.1 Guivos Patrocinado
+### 8.1 Pricing de referência
+
+| Plano | Mensal | Anual | Regra de preço |
+|---|---:|---:|---|
+| Business Start | R$ 299,00 | R$ 2.990,00 | referência fixa da baseline |
+| Business Growth | R$ 799,00 | R$ 7.990,00 | referência fixa da baseline |
+| Business Scale | a partir de R$ 1.990,00 | contrato anual | dimensionamento obrigatório |
+| Business Enterprise | sob consulta | contrato anual | dimensionamento personalizado |
+
+A baseline de preços do Business é própria do produto e não deriva dos preços de Organização.
+
+### 8.2 Leitura por plano
+
+- **Start** — operar;
+- **Growth** — acompanhar e compreender;
+- **Scale** — interpretar e integrar em escala;
+- **Enterprise** — governar em alta complexidade e escala.
+
+### 8.3 Limites da baseline Business
+
+O pricing acima não congela automaticamente:
+
+- limites quantitativos por capacidade;
+- SLA específico;
+- entitlements contratuais não formalizados;
+- preço por participante ou acesso;
+- orçamento pré-pago de incentivo;
+- preço do Journey custeado pela empresa;
+- serviços adicionais;
+- condições fiscais, jurídicas ou internacionais.
+
+Scale e Enterprise dependem de dimensionamento da operação. Enterprise não possui preço fixo único.
+
+## 9. Acesso financiado e patrocinado
+
+### 9.1 Guivos Patrocinado
 
 Acesso financiado poderá ser atribuído sem cobrança ao beneficiário, por prazo, finalidade e capacidades declarados.
 
@@ -454,7 +487,7 @@ Poderá equivaler, conforme contrato, a:
 - capacidades organizacionais específicas;
 - programas sociais ou institucionais limitados.
 
-### 8.2 Proteções
+### 9.2 Proteções
 
 - beneficiário verá quem financia, por quê e até quando;
 - financiador não acessará contexto individual além do autorizado;
@@ -464,7 +497,7 @@ Poderá equivaler, conforme contrato, a:
 - oferta de continuidade paga será opcional e sem pressão;
 - vulnerabilidade, emprego ou vínculo institucional não poderão ser explorados para conversão.
 
-## 9. Separação entre assinatura e transação
+## 10. Separação entre assinatura e transação
 
 | Objeto econômico | Pagador possível | Objeto adquirido |
 |---|---|---|
@@ -475,7 +508,7 @@ Poderá equivaler, conforme contrato, a:
 
 Este catálogo não define percentual de comissão, taxa de pagamento, política de reembolso, split, antecipação ou tributação da transação.
 
-## 10. Estados de entitlement
+## 11. Estados de entitlement
 
 Cada capacidade deverá ser classificada como:
 
@@ -490,7 +523,7 @@ Cada capacidade deverá ser classificada como:
 
 Os limites deste catálogo não poderão contrariar a classificação mais protetiva.
 
-## 11. Critérios de validação obrigatória
+## 12. Critérios de validação obrigatória
 
 Antes de oferta pública, deverão ser avaliados:
 
@@ -511,7 +544,7 @@ Antes de oferta pública, deverão ser avaliados:
 - acesso financiado;
 - conformidade jurídica, fiscal, contábil, regulatória, de privacidade e segurança.
 
-## 12. Limites desta baseline
+## 13. Limites desta baseline
 
 A baseline não aprova:
 

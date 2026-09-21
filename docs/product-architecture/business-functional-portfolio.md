@@ -2,9 +2,9 @@
 id: GPA-004-FUNCTIONAL-PORTFOLIO-001
 title: Guivos Business — Portfólio Funcional v1
 status: consolidated
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-08-15
+last_updated: 2026-09-20
 depends_on:
   - GPA-004
 related:
@@ -398,7 +398,7 @@ SCALE → interpretar e integrar
 ENTERPRISE → governar em alta complexidade/escala
 ```
 
-Preços e entitlements finais ainda não estão definidos.
+O pricing de referência é governado por `GEM-004-A1 v0.3.0`: Start R$ 299,00/mês ou R$ 2.990,00/ano; Growth R$ 799,00/mês ou R$ 7.990,00/ano; Scale a partir de R$ 1.990,00/mês com contrato anual; Enterprise sob consulta com contrato anual. Entitlements quantitativos finais permanecem separados do pricing.
 
 ## 11. Estrutura econômica do contrato Business
 
@@ -462,7 +462,7 @@ O cross-sell comercial pode existir entre produtos, mas a receita de Ads pertenc
 
 Este documento não congela:
 
-- preços;
+- condições finais de publicação/oferta dos preços;
 - limites quantitativos;
 - SLAs;
 - regra final de expiração de pontos;
