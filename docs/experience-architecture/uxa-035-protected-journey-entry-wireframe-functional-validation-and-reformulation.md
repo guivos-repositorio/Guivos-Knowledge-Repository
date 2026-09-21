@@ -2,13 +2,12 @@
 id: UXA-035
 title: Validação Funcional Especializada e Reformulação do Wireframe Móvel do Início Protegido
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-27
+last_updated: 2026-09-21
 parent: UXA-034
 depends_on:
   - UXA-001
-  - UXA-003-A1
   - UXA-009
   - UXA-011
   - UXA-011-A1

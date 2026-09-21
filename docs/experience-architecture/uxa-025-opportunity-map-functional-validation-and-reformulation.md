@@ -2,13 +2,12 @@
 id: UXA-025
 title: Validação Funcional e Reformulação do Mapa de Oportunidades
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-26
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-001
-  - UXA-003-A1
   - UXA-004
   - UXA-009
   - UXA-010

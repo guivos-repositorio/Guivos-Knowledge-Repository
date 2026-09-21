@@ -2,15 +2,14 @@
 id: UXA-010
 title: Validação Funcional e Reformulação da Tela Hoje
 status: active
-version: 0.3.0
+version: 0.3.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-26
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-002
   - UXA-009
 related:
-  - UXA-003
   - UXA-004
   - UXA-020
   - PAS-001-CV-VIEW-001

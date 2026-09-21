@@ -2,13 +2,12 @@
 id: UXA-029
 title: Validação Funcional Especializada e Reformulação da Visualização em Lista do Mapa
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-001
-  - UXA-003-A1
   - UXA-004
   - UXA-009
   - UXA-011-A1
