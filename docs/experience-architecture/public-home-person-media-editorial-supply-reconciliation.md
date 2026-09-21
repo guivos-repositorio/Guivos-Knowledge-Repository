@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
-title: Reconciliação Pós-Media — Abastecimento Editorial da Home Pública — Pessoa
+title: Contrato de Abastecimento Editorial — Home Pública — Pessoa
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-UX-HOME-MASTER-001
@@ -13,11 +13,11 @@ depends_on:
 normative: true
 ---
 
-# Reconciliação Pós-Media — Abastecimento Editorial da Home Pública — Pessoa
+# Contrato de Abastecimento Editorial — Home Pública — Pessoa
 
 ## 1. Finalidade
 
-Este contrato registra a reconciliação da **Home Pública principal da Guivos**, com perspectiva predominante da Pessoa, após a consolidação arquitetural do Guivos Media.
+Este contrato governa a relação corrente de **abastecimento editorial da Home Pública principal da Guivos**, com perspectiva predominante da Pessoa, a partir de conteúdo produzido pelo Guivos Media.
 
 Ele é aditivo. Não altera a pergunta-mãe, os onze movimentos narrativos, as macroexperiências, a tese institucional, o Header, os CTAs, o posicionamento ou a fronteira Home × Marketing/GTM já governados por `GKR-UX-HOME-MASTER-001`.
 
@@ -157,9 +157,9 @@ A relação está alinhada quando:
 7. conteúdo patrocinado permanece identificado;
 8. o abastecimento pode aumentar ou diminuir sem exigir reconstrução da Home.
 
-## 11. Navegação do GKR
+## 11. Consumo corrente
 
-Este contrato complementa o Documento Mestre e permanece no corpus técnico do GKR. Ele **não deve reabrir submenus históricos na navegação principal** das Homes.
+Este contrato complementa o Documento Mestre e integra o conjunto canônico de fontes da Home Pessoa. Sua função é editorial e semântica; não cria rota, submenu, layout ou requisito visual.
 
 ## 12. Síntese
 

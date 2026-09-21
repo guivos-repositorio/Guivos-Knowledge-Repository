@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-OC-READ-FIRST-001
 title: 00 — Leia Primeiro — Home Pública — Organizações e Coletivos
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: false
@@ -47,7 +47,7 @@ AI
 ### Fontes específicas desta Home
 
 1. `GKR-UX-HOME-OC-MASTER-001 v1.0.5` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
-2. `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0` — `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`;
+2. `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.1` — `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`;
 
 Se a designer optar por IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e preparar Source Lock/prompt somente para essa execução.
 

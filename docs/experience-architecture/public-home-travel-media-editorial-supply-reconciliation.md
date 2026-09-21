@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001
-title: Reconciliação Pós-Media — Abastecimento Editorial da Home Pública — Guivos Travel
+title: Contrato de Abastecimento Editorial — Home Pública — Guivos Travel
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-13
+last_updated: 2026-09-21
 parent: GKR-UX-HOME-TRAVEL-MASTER-001
 depends_on:
   - GKR-UX-HOME-TRAVEL-MASTER-001
@@ -17,11 +17,11 @@ related:
 normative: true
 ---
 
-# Reconciliação Pós-Media — Abastecimento Editorial da Home Pública — Guivos Travel
+# Contrato de Abastecimento Editorial — Home Pública — Guivos Travel
 
 ## 1. Finalidade
 
-Este contrato refina, após a consolidação do Guivos Media, a relação editorial já prevista pelo Documento Mestre da **Home Pública do Guivos Travel**.
+Este contrato governa a relação editorial corrente entre o Guivos Media e a **Home Pública do Guivos Travel**, preservando a autoridade operacional do Travel.
 
 Não altera a pergunta-mãe `Até onde o seu próximo momento pode levar você?`, os nove serviços operacionais, os onze movimentos, a lógica `inspiração + operação real + acesso direto aos serviços`, nem qualquer regra econômica ou operacional do Travel.
 
@@ -196,9 +196,9 @@ A relação está alinhada quando:
 7. patrocínio permanece identificado;
 8. a Home continua funcionando mesmo sem conteúdo editorial abundante.
 
-## 13. Navegação do GKR
+## 13. Consumo corrente
 
-Este contrato complementa o Documento Mestre do Travel e permanece no corpus técnico do GKR. Ele **não cria submenu adicional na navegação principal das Homes**.
+Este contrato complementa o Documento Mestre do Travel e integra o conjunto canônico de fontes da Home. Sua função é editorial e semântica; não cria rota, submenu, layout ou requisito visual.
 
 ## 14. Síntese
 

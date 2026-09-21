@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-OC-MEDIA-SUPPLY-001
-title: Reconciliação Pós-Media — Abastecimento Editorial da Home Pública — Organizações e Coletivos
+title: Contrato de Abastecimento Editorial — Home Pública — Organizações e Coletivos
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-13
+last_updated: 2026-09-21
 parent: GKR-UX-HOME-OC-MASTER-001
 depends_on:
   - GKR-UX-HOME-OC-MASTER-001
@@ -16,13 +16,13 @@ related:
 normative: true
 ---
 
-# Reconciliação Pós-Media — Abastecimento Editorial da Home Pública — Organizações e Coletivos
+# Contrato de Abastecimento Editorial — Home Pública — Organizações e Coletivos
 
 ## 1. Finalidade
 
-Este contrato registra a reconciliação da **Home Pública de Organizações e Coletivos** após a consolidação arquitetural do Guivos Media.
+Este contrato governa a relação corrente de **abastecimento editorial da Home Pública de Organizações e Coletivos** por conteúdo produzido pelo Guivos Media.
 
-Ele preserva integralmente a pergunta `O que podemos tornar possível juntos?`, os onze movimentos, a tese de participação, a autonomia dos participantes e todos os contratos históricos de prontidão já registrados.
+Ele preserva integralmente a pergunta `O que podemos tornar possível juntos?`, os onze movimentos, a tese de participação, a autonomia dos participantes e as autoridades correntes da Home.
 
 Seu objetivo é explicitar como o Media pode fornecer histórias, conhecimento e evidências editoriais para tornar essa narrativa mais concreta sem transformar a página em área B2B do Media, mural de cases ou espaço comercial disfarçado.
 
@@ -167,9 +167,9 @@ A relação está alinhada quando:
 7. histórias não viram promessa causal;
 8. a Home funciona mesmo com baixa disponibilidade inicial de conteúdo do Media.
 
-## 12. Navegação do GKR
+## 12. Consumo corrente
 
-Este contrato complementa o Documento Mestre e os registros históricos P1–P5. Ele permanece no corpus técnico e **não reabre os submenus removidos da navegação principal**.
+Este contrato complementa o Documento Mestre e integra o conjunto canônico de fontes da Home O/C. Sua função é editorial e semântica; não cria rota, submenu, layout ou requisito visual.
 
 ## 13. Síntese
 
