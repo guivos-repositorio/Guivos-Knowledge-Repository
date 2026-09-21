@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.24.1
+version: 1.24.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
@@ -61,6 +61,17 @@ Autoridades universais de Design:
 Autoridade condicional de IA:
 
 - [Source Lock e Contrato de Consumo](public-homes-generative-source-lock-and-prompt-template.md) — somente quando a designer optar por usar IA ou ferramenta generativa.
+
+Roteadores `00 — Leia Primeiro` — não normativos:
+
+- [Pessoa](read-first/public-home-person-read-first.md);
+- [Organizações e Coletivos](read-first/public-home-organizations-collectives-read-first.md);
+- [Mall](read-first/public-home-mall-read-first.md);
+- [Travel](read-first/public-home-travel-read-first.md);
+- [Media](read-first/public-home-media-read-first.md);
+- [Ads](read-first/public-home-ads-read-first.md);
+- [Business](read-first/public-home-business-read-first.md);
+- [Intelligence](read-first/public-home-intelligence-read-first.md).
 
 Masters correntes:
 
