@@ -206,7 +206,7 @@ Contrato corrente que o guia/Source Lock corrente deve explicitar:
 ### Business
 - `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.8`;
 - `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4`;
-- `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
+- `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1`;
 - `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3`;
 - `GPA-004 v1.7.2`.
 
