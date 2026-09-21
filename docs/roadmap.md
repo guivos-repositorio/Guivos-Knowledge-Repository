@@ -79,7 +79,7 @@ ROADMAP
 
 A frente posterior da **Cognitive Reference Architecture** também concluiu seu ciclo governado no limite documental. `ADR-008` aprovou placement e ownership sob a GIA; `GIA-COG-001 v0.1.1` passou por revisão semântica, remediação, revalidação e gate de promoção e é agora a arquitetura cognitiva de referência vigente, `active / normative`. Essa promoção não libera `GIA-COG-002..008`, arquitetura física, modelo físico, ontologia física, provedores/modelos/stack, dados reais, Product Engineering, operação ou produção.
 
-A frente posterior de Organizações e Coletivos também avançou por atos governados próprios. `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` está definido como mapa lógico-documental canônico das superfícies autenticadas O/C, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` como mapa funcional canônico de estados e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` como autoridade canônica documental dos fluxos prioritários. `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0` permanece como adjudicação `PASS / ACTIVE / CANONICAL`, e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` está promovido como **Navigation Materialization canônica documental pré-wireframe**. A materialização não cria novos `GKR-SURF-*` ou `GKR-TRN-*`, não promove maturidades registradas e não autoriza wireframes, Design, UI, protótipo ou Product Engineering.
+A frente posterior de Organizações e Coletivos também avançou por atos governados próprios. `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0` está definido como mapa lógico-documental canônico das superfícies autenticadas O/C, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` como mapa funcional canônico de estados e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` como autoridade canônica documental dos fluxos prioritários. `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0` permanece como adjudicação `PASS / ACTIVE / CANONICAL`, e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` está promovido como **Navigation Materialization canônica documental pré-wireframe**. A materialização não cria novos `GKR-SURF-*` ou `GKR-TRN-*`, não promove maturidades registradas e não autoriza wireframes, Design, UI, protótipo ou Product Engineering.
 
 A atualização global do GKR de 18/09/2026 sincronizou as autoridades correntes, entrypoints, hubs e MENU durante uma pausa funcional. Após sua integração, a retomada funcional avançou por gates separados até a Navigation Materialization canônica. Os Authenticated Wireframes low-fidelity foram posteriormente autorizados, entregues e funcionalmente validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`; `NEXT AUTOMATIC EXECUTION = NONE` continua válido.
 
@@ -150,8 +150,8 @@ O fechamento pós-review do protótipo de `PER-002`, a promoção canônica de `
 | Lote P — Auditoria final | **COMPLETED / PASS / OPEN P-SPECIFIC MATERIAL FINDINGS = 0 / F-022 NOT OPENED** |
 | O/C atores, autoridades e jobs | **DEFINED / ACTIVE / GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.1** |
 | O/C Arquitetura da Informação | **DEFINED PRE-SURFACE-MAP / ACTIVE / GKR-UX-ORGCOL-AUTH-IA-001 v1.3.0** |
-| O/C mapa lógico de superfícies | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0** |
-| O/C mapa de estados | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0** |
+| O/C mapa lógico de superfícies | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0** |
+| O/C mapa de estados | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0** |
 | O/C fluxos prioritários | **DEFINED / CANONICAL DOCUMENTARY / ACTIVE / GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0** |
 | O/C elegibilidade de Navigation Materialization | **PASS / ACTIVE / CANONICAL / GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0** |
 | O/C Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0** |
@@ -713,12 +713,12 @@ AUTHENTICATED INFORMATION ARCHITECTURE
 → IA AUTHORITY MATURITY REMAINS PRE-SURFACE-MAP BY ITS OWN SCOPE
 
 AUTHENTICATED SURFACE MAP
-→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0
 → DEFINED / CANONICAL DOCUMENTARY
 → STABLE GKR-SURF-* IDS PRESERVED BY CROSSWALK
 
 AUTHENTICATED STATE MAP
-→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 → NO PARALLEL STATE-ID NAMESPACE
 → NO GKR-TRN-* MATURITY PROMOTION
@@ -1740,7 +1740,7 @@ STATE MAP DEFINED ≠ GKR-TRN-* PROMOTED ≠ MATERIALIZED NAVIGATION
 
 ## 26. Regra do próximo movimento
 
-`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N, O e P concluíram suas auditorias documentais. `F-022` não foi aberto. A auditoria integral está `COMPLETED / PASS / 23 OF 23`. Q foi adjudicado como elegível, a baseline final foi capturada, a definição funcional foi concluída e consolidada e `PER-002` avançou por gates separados até uma referência interativa pós-review revalidada. O protótipo foi elegível, autorizado, executado, validado no checkpoint pré-review, revisado pelo Codex, remediado e revalidado com `PASS`. O validator original permanece como evidência histórica `superseded`; a conclusão corrente é governada pela revalidação pós-review. A frente `GIA-COG-001` também completou seu ciclo documental: placement/ownership por `ADR-008`, revisão, remediação, revalidação e promoção canônica. `GIA-COG-001 v0.1.1` é agora a arquitetura cognitiva de referência vigente, sem liberar especializações ou implementação. A frente O/C definiu `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` como mapa lógico-documental canônico, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` como mapa funcional de estados, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` como autoridade canônica documental dos fluxos prioritários e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` como Navigation Materialization canônica documental pré-wireframe, sem liberar Authenticated Wireframes, Design ou Engenharia.
+`F-016-A`, `F-016`, `F-017`, `F-019`, `F-020`, `F-021` e `F-002` estão `RESOLVED`. J, K, L, M, N, O e P concluíram suas auditorias documentais. `F-022` não foi aberto. A auditoria integral está `COMPLETED / PASS / 23 OF 23`. Q foi adjudicado como elegível, a baseline final foi capturada, a definição funcional foi concluída e consolidada e `PER-002` avançou por gates separados até uma referência interativa pós-review revalidada. O protótipo foi elegível, autorizado, executado, validado no checkpoint pré-review, revisado pelo Codex, remediado e revalidado com `PASS`. O validator original permanece como evidência histórica `superseded`; a conclusão corrente é governada pela revalidação pós-review. A frente `GIA-COG-001` também completou seu ciclo documental: placement/ownership por `ADR-008`, revisão, remediação, revalidação e promoção canônica. `GIA-COG-001 v0.1.1` é agora a arquitetura cognitiva de referência vigente, sem liberar especializações ou implementação. A frente O/C definiu `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0` como mapa lógico-documental canônico, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` como mapa funcional de estados, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` como autoridade canônica documental dos fluxos prioritários e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` como Navigation Materialization canônica documental pré-wireframe, sem liberar Authenticated Wireframes, Design ou Engenharia.
 
 ```text
 AUDITORIA INTEGRAL
@@ -1792,12 +1792,12 @@ COGNITIVE REFERENCE ARCHITECTURE
 → PHYSICAL ARCHITECTURE / REAL DATA / IMPLEMENTATION / PRODUCTION = NOT AUTHORIZED
 
 O/C AUTHENTICATED SURFACE MAP
-→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0
 → DEFINED / CANONICAL DOCUMENTARY
 → STABLE GKR-SURF-* IDS PRESERVED
 
 O/C AUTHENTICATED STATE MAP
-→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 → NO PARALLEL STATE-ID NAMESPACE
 → NO GKR-TRN-* MATURITY PROMOTION

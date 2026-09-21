@@ -469,4 +469,4 @@ Isso não apaga o histórico; apenas impede que materializações prematuras sej
 
 O atlas de supply e relevância possui função diferente: ele preserva Research, exemplos e método para tornar compreensível o universo de oportunidades. Ele **não** promove wireframes, matching, PMF ou implementação a estado superior.
 
-`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` compõem a cadeia documental canônica desta revisão. A Navigation Materialization define topologia/hierarquia/entrada/retorno, mas não define wireframes, Design/UI ou implementação.
+`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` compõem a cadeia documental canônica desta revisão. A Navigation Materialization define topologia/hierarquia/entrada/retorno, mas não define wireframes, Design/UI ou implementação.

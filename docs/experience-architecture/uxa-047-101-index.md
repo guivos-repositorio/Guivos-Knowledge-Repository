@@ -59,11 +59,11 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
 
 O/C AUTHENTICATED SURFACE MAP
-→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0
 → DEFINED / CANONICAL DOCUMENTARY
 
 O/C AUTHENTICATED STATE MAP
-→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
 → DEFINED / CANONICAL DOCUMENTARY
 
 O/C PRIORITY FLOWS
@@ -464,26 +464,23 @@ GKR-UX-ORGCOL-AUTH-JOBS-001
 GKR-UX-ORGCOL-AUTH-IA-001
 → Arquitetura da Informação definida pre-surface-map
 
-GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0
+GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0
 → mapa lógico-documental canônico das superfícies autenticadas O/C
 → stable GKR-SURF-* IDs preservados por crosswalk
 → não cria namespace paralelo
 
-GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
 → mapa funcional canônico documental dos estados autenticados O/C
 → não cria namespace estável de estados
 → não cria nem promove GKR-TRN-*
 ```
 
-Surface Map e State Map são canônicos em nível documental. Permanecem pendentes e não podem ser inferidos a partir deles:
+Surface Map e State Map são canônicos em nível documental. A sequência governada posterior também concluiu a Navigation Materialization canônica e os wireframes autenticados low-fidelity, com Delivery v0.1.0 e Validation v1.0.0 = PASS. Permanecem não liberados por inferência:
 
-- Navigation Materialization O/C;
-- materialização de navegação;
-- wireframe principal da Organização;
-- wireframe principal do Coletivo;
-- UI;
-- protótipo;
-- implementação.
+- high-fidelity Design (elegibilidade PASS, autorização NOT_GRANTED);
+- protótipo autenticado O/C;
+- implementação;
+- Product Engineering.
 
 ## Estado sincronizado
 
@@ -493,8 +490,8 @@ Surface Map e State Map são canônicos em nível documental. Permanecem pendent
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
-| O/C Authenticated Surface Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0** |
-| O/C Authenticated State Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0** |
+| O/C Authenticated Surface Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0** |
+| O/C Authenticated State Map | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0** |
 | O/C Priority Flows | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** |
 | O/C Navigation Materialization Eligibility | **PASS / ACTIVE / CANONICAL / v1.0.0** |
 | O/C Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0** |

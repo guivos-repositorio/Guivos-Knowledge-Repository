@@ -31,7 +31,7 @@ related:
 
 Este documento fechou a etapa imediatamente anterior à **Arquitetura da Informação** da experiência autenticada de Organizações e Coletivos.
 
-Após a validação deste incremento, `GKR-UX-ORGCOL-AUTH-IA-001` definiu a Arquitetura da Informação autenticada no estágio **pre-surface-map**. Essa maturidade permanece própria deste artefato e da IA naquele momento documental. Posteriormente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` consumiu esses inputs e definiu o **Surface Map lógico-documental canônico**; em ato governado ainda posterior, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu o **State Map funcional canônico**; depois, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` definiu os **Priority Flows canônicos documentais**. Este documento permanece `active` como autoridade dos atores, limites e jobs; não reclassifica IA, Surface Map ou State Map como pendentes.
+Após a validação deste incremento, `GKR-UX-ORGCOL-AUTH-IA-001` definiu a Arquitetura da Informação autenticada no estágio **pre-surface-map**. Essa maturidade permanece própria deste artefato e da IA naquele momento documental. Posteriormente, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0` consumiu esses inputs e definiu o **Surface Map lógico-documental canônico**; em ato governado ainda posterior, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` definiu o **State Map funcional canônico**; depois, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` definiu os **Priority Flows canônicos documentais**. Este documento permanece `active` como autoridade dos atores, limites e jobs; não reclassifica IA, Surface Map ou State Map como pendentes.
 
 Ele reconcilia os fundamentos e contratos vigentes para responder quatro perguntas:
 
@@ -67,8 +67,8 @@ A frente parte das seguintes autoridades e estados:
 - `GKR-JOURNEY-COLLECTIVE-001` preserva a Jornada do Coletivo em `active` e maturidades independentes de fluxos especializados;
 - `GKR-UX-ORGCOL-UX-STATE-001` preserva o baseline histórico no qual a arquitetura da informação e os wireframes principais autenticados ainda não estavam definidos;
 - `GKR-UX-ORGCOL-AUTH-IA-001` define a Arquitetura da Informação autenticada de Organização e Coletivo em sua maturidade própria **defined pre-surface-map**, sem materializar wireframes, UI ou implementação;
-- `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` definiu posteriormente o **Surface Map lógico-documental canônico**; naquele ato, não materializou State Map, navegação visual, wireframes, UI ou implementação;
-- `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu posteriormente, em ato governado separado, o **State Map funcional canônico**; naquele ato não materializou Priority Flows, navegação, wireframes, UI ou implementação e não promoveu `GKR-TRN-*`;
+- `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0` definiu posteriormente o **Surface Map lógico-documental canônico**; naquele ato, não materializou State Map, navegação visual, wireframes, UI ou implementação;
+- `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` definiu posteriormente, em ato governado separado, o **State Map funcional canônico**; naquele ato não materializou Priority Flows, navegação, wireframes, UI ou implementação e não promoveu `GKR-TRN-*`;
 - `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` definiu posteriormente os **Priority Flows canônicos documentais**, sem criar/promover `GKR-TRN-*`, sem materializar navegação e sem iniciar wireframes;
 - `GKR-UX-ORGCOL-SUPPLY-VALUE-001` fornece Research sobre supply, relevância e papéis sem transformar Research em Canon ou PMF.
 
@@ -579,7 +579,7 @@ A Arquitetura da Informação autenticada vigente, definida por `GKR-UX-ORGCOL-A
 9. Planos devem permanecer capacidade comercial especializada, não eixo de relevância ou identidade;
 10. a experiência principal não pode ser um dashboard comercial genérico da Organização nem um feed social genérico do Coletivo.
 
-No escopo original deste artefato, essas restrições não materializavam categorias de menu, Surface Map ou wireframes. Posteriormente, o Surface Map lógico-documental foi definido por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`; naquele ato, não houve promoção do State Map, navegação visual ou wireframes. Em ato governado separado e posterior, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu o State Map funcional sem promover Priority Flows, navegação materializada ou wireframes.
+No escopo original deste artefato, essas restrições não materializavam categorias de menu, Surface Map ou wireframes. Posteriormente, o Surface Map lógico-documental foi definido por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001`; naquele ato, não houve promoção do State Map, navegação visual ou wireframes. Em ato governado separado e posterior, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` definiu o State Map funcional sem promover Priority Flows, navegação materializada ou wireframes.
 
 ## 13. Decisões explicitamente adiadas
 
@@ -639,7 +639,7 @@ SURFACE MAP
 → DEFINED / CANONICAL DOCUMENTARY
 
 AUTHENTICATED STATE MAP
-→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 AUTHENTICATED PRIORITY FLOWS
@@ -664,7 +664,7 @@ PRODUCT ENGINEERING
 
 ## 15. Lacuna documental posterior aos gates de F-006
 
-Após a definição da Arquitetura da Informação autenticada, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` fechou a lacuna do **Surface Map lógico-documental**. Em ato governado posterior, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` fechou a lacuna do **State Map funcional**. A maturidade `pre-surface-map` deste artefato continua descrevendo seu próprio estágio de produção e não o estado global corrente.
+Após a definição da Arquitetura da Informação autenticada, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0` fechou a lacuna do **Surface Map lógico-documental**. Em ato governado posterior, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` fechou a lacuna do **State Map funcional**. A maturidade `pre-surface-map` deste artefato continua descrevendo seu próprio estágio de produção e não o estado global corrente.
 
 A sequência governada de `F-006` foi concluída: autorização, cleanup 6/6, reconciliação, validações e prova pós-delete. `F-006` está resolvido. A continuidade desta autoridade permanece funcional e não autoriza materialização visual.
 
