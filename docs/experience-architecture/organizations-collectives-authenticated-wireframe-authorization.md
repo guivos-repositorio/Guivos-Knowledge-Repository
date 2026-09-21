@@ -6,7 +6,7 @@ version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: true
-maturity: authenticated_low_fidelity_wireframes_authorized_pre_validation
+maturity: authenticated_low_fidelity_wireframes_authorization_consumed
 depends_on:
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001
