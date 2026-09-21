@@ -2,14 +2,13 @@
 id: GKR-UX-HOME-NARR-003
 title: Refinamento da Transição Movimento 07 → 08 — Participantes e Produtos na Home Pública
 status: draft
-version: 0.1.2
+version: 0.1.3
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-10
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-NARR-001
 depends_on:
   - UXA-020
   - UXA-021
-  - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-NAV-002
   - GKR-UX-HOME-NAV-003
