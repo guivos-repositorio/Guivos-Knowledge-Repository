@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-UX-STATE-001
 title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.12.0
+version: 1.12.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 normative: false
 related:
   - GKR-UX-ORGCOL-STATE-001
@@ -30,7 +30,7 @@ related:
 
 O estado vigente é:
 
-> **A primeira entrega low-fidelity de Organização e Coletivo foi executada e validada com `PASS`. A elegibilidade high-fidelity posterior também concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0`; a autorização high-fidelity foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`, e a execução permanece `NOT_STARTED`.**
+> **A primeira entrega low-fidelity de Organização e Coletivo foi executada e validada com `PASS`. A elegibilidade high-fidelity posterior também concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1`; a autorização high-fidelity foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`, e a execução permanece `NOT_STARTED`.**
 
 A entrega corrente materializa em baixa fidelidade a visão geral/início de Organização e Coletivo, a hierarquia funcional, variantes de atenção, autoridade, proteção, troca de contexto e indisponibilidade. Permanecem deliberadamente não definidos: UI final, componentes finais, visual high-fidelity, protótipo navegável, implementação e testes de usabilidade.
 
