@@ -2,15 +2,15 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-ADS-BOUNDARIES-001
 title: Detalhamento Obrigatório — Ads / Opportunity Boost e Fronteiras Documentais
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
 related:
   - UXA-099
   - GPA-007
-  - UXA-100
-  - UXA-100-A3
+  - GKR-PLANS-COLLECTIVE-001
+  - GKR-PLANS-ORGANIZATION-001
   - UXA-101
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
 normative: false
@@ -73,7 +73,7 @@ BND-*
 | GKR-SURF-COM-004 | GPA-007 + UXA-038 + UXA-047/049/054 | contrato funcional corrente | campanha ativa | ajustar, pausar, retomar ou encerrar campanha | ajuste, pausa ou encerramento | estado, orçamento, entrega agregada e parâmetros autorizados | autoridade econômica e confirmação conforme efeito | revisar, desfazer quando permitido, pausar ou encerrar | nenhuma identificada | parcial | integração com estados residuais | validações locais UXA-047/054; transições permanecem separadas |
 | GKR-SURF-COM-005 | GPA-007 + UXA-038 + UXA-099 | contrato funcional corrente validado | erro, zero inventário, baixa oferta, falha de atualização ou controle da pessoa | continuar, revisar, tentar novamente, ocultar, reduzir, desativar, desfazer, denunciar ou contestar conforme o estado | continuidade específica sem efeito implícito | erro técnico, inventário, densidade, versão confirmada/candidata, preferências, denúncia e contestação | gates específicos validados pela UXA-099; mudança material não confirmada bloqueia entrega futura | retorno e reversão conforme escopo; escolhas independentes; repetição idempotente | produtor visual histórico absorvido; contrato corrente consolidado pela UXA-099 | **superfície validada; TRN-305 permanece parcial** | integração ponta a ponta das transições | estados residuais funcionalmente validados; materializações históricas permanecem somente no Git |
 | GKR-SURF-BND-001 | UXA-004/007; validação UXA-101 — `docs/experience-architecture/uxa-101-conscious-external-boundary-validation.md` | validação 0.1.0 | estado de revisão em PER-203 | confirmar conscientemente saída para destino externo identificado ou permanecer no Detalhe | autoridade transferida ao destino externo após confirmação e revalidação | identificador do destino, finalidade, responsável e contexto mínimo; dados pessoais não acompanham por conveniência | ação afirmativa, destino ainda válido/autorizado e disclosure proporcional de dados/contexto | cancelar antes da saída; retornar à Guivos não presume conclusão externa | endpoint textual anterior consolidado pela UXA-101 | **fronteira examinada; TRN-205 integralmente validada até o limite de autoridade Guivos** | comportamento e resultado posteriores pertencem ao terceiro | endpoint documental; não é participante estrutural, tela Guivos nem implementação externa |
-| GKR-SURF-BND-002 | UXA-100/A3 — handoff de contratação/dimensionamento assistido | 0.2.0 | COL-301 via TRN-416 ou ORG-301 via TRN-426 quando a contratação deixar de ser autonomamente configurável | solicitar análise, proposta, dimensionamento, configuração assistida ou contrato conforme necessidade | processo governado fora do autoatendimento | participante institucional, contexto de capacidade e dados mínimos necessários ao processo, conforme finalidade e autorização | ação afirmativa e autoridade institucional; nenhum checkout, plano específico ou capacidade infinita presumidos | voltar a Planos antes de compromisso; recusar proposta futura conforme processo | semântica Enterprise/Scale anterior substituída por autoridade genérica | **parcial** | processo posterior, proposta, contrato e handoffs operacionais não materializados | fronteira documental compartilhada e genérica; não é plano, produto, checkout ou tela autônoma; não pertence semanticamente a Enterprise/Scale |
+| GKR-SURF-BND-002 | GEM-004-PLAN-TAXONOMY-AUTHORITY-001 + GKR-JOURNEY-TRANSITION-REGISTRY-001 | 0.2.0 | COL-301 via TRN-416 ou ORG-301 via TRN-426 quando a contratação deixar de ser autonomamente configurável | solicitar análise, proposta, dimensionamento, configuração assistida ou contrato conforme necessidade | processo governado fora do autoatendimento | participante institucional, contexto de capacidade e dados mínimos necessários ao processo, conforme finalidade e autorização | ação afirmativa e autoridade institucional; nenhum checkout, plano específico ou capacidade infinita presumidos | voltar a Planos antes de compromisso; recusar proposta futura conforme processo | semântica Enterprise/Scale anterior substituída por autoridade genérica | **parcial** | processo posterior, proposta, contrato e handoffs operacionais não materializados | fronteira documental compartilhada e genérica; não é plano, produto, checkout ou tela autônoma; não pertence semanticamente a Enterprise/Scale |
 
 ## 3. Regra de incerteza
 
