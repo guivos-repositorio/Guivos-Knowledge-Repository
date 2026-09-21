@@ -163,6 +163,7 @@ def main() -> int:
         91: "uxa-091-my-collectives-materialization-and-post-approval-continuity-refinement.md",
         93: "uxa-093-collective-updates-center-materialization.md",
         95: "uxa-095-participant-home-materialization-and-trn111-refinement.md",
+        100: "uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md",
     }
 
     for number, expected_name in removed_after_absorption.items():
