@@ -2,15 +2,14 @@
 id: GKR-UX-HOME-NAV-003
 title: Hierarquia entre Header Persistente, Hero e CTAs da Home Pública
 status: draft
-version: 0.2.0
+version: 0.2.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-10
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-NAV-002
 depends_on:
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-VAL-001
-  - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-NAV-001
   - GKR-UX-HOME-NAV-002
