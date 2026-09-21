@@ -4411,7 +4411,7 @@ CONTRATOS DE AUTORIDADE
 GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3
 
 ARQUITETURA FUNCIONAL
-GPA-004 v1.6.0
+GPA-004 v1.7.2
 </code></pre></div>
 <p>Objetivo do lock:</p>
 <blockquote>
@@ -4743,10 +4743,43 @@ Interprete e integre.
 ENTERPRISE
 Governe em alta complexidade e escala.
 </code></pre></div>
+<p>O pricing de referência vigente, governado economicamente e refletido em <code>docs/plans/business.md</code>, é:</p>
+<table>
+<thead>
+<tr>
+<th>Plano</th>
+<th style="text-align: right;">Mensal</th>
+<th style="text-align: right;">Anual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start</td>
+<td style="text-align: right;">R$ 299,00</td>
+<td style="text-align: right;">R$ 2.990,00</td>
+</tr>
+<tr>
+<td>Growth</td>
+<td style="text-align: right;">R$ 799,00</td>
+<td style="text-align: right;">R$ 7.990,00</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td style="text-align: right;">a partir de R$ 1.990,00</td>
+<td style="text-align: right;">contrato anual</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td style="text-align: right;">sob consulta</td>
+<td style="text-align: right;">contrato anual</td>
+</tr>
+</tbody>
+</table>
+<p>Esses valores constituem <strong>baseline comercial de referência vigente no GKR</strong>. Eles não equivalem, isoladamente, a autorização automática de cobrança, publicação irrestrita da oferta ou inferência de entitlements ainda não formalizados.</p>
 <p>A Home deve permitir comparação entre planos por matriz, tabela ou interação equivalente.</p>
 <p>A existência do comparativo <strong>não autoriza inventar</strong>:</p>
 <ul>
-<li>preços;</li>
+<li>preços diferentes da baseline comercial vigente;</li>
 <li>limites quantitativos;</li>
 <li>número de usuários;</li>
 <li>quantidade de campanhas;</li>
@@ -4938,8 +4971,8 @@ ESCALA GLOBAL
 <li>quantidade de pessoas atendidas;</li>
 <li>países ativos;</li>
 <li>moedas ativas;</li>
-<li>preços;</li>
-<li>descontos;</li>
+<li>preços diferentes da baseline comercial vigente;</li>
+<li>descontos não formalizados;</li>
 <li>limites por plano;</li>
 <li>SLA;</li>
 <li>entitlements;</li>
@@ -4967,7 +5000,7 @@ ESCALA GLOBAL
 <li><code>[VISUALIZAÇÃO ANALÍTICA — CONCEITUAL]</code>;</li>
 <li><code>[INDICADOR — EXEMPLO / NÃO REAL]</code>;</li>
 <li><code>[RELAÇÃO OU TENDÊNCIA — ILUSTRATIVA]</code>;</li>
-<li><code>[PREÇO — A DEFINIR]</code>;</li>
+<li><code>[PREÇO — A DEFINIR]</code>, somente quando a dimensão ainda não possuir baseline vigente;</li>
 <li><code>[LIMITE DO PLANO — A DEFINIR]</code>;</li>
 <li><code>[MOEDA — CONFORME MERCADO]</code>;</li>
 <li><code>[CONFIGURAÇÃO — EXEMPLO]</code>;</li>
@@ -4977,7 +5010,7 @@ ESCALA GLOBAL
 <h2 id="26-lacunas-deliberadamente-abertas">26. Lacunas deliberadamente abertas<a class="headerlink" href="#26-lacunas-deliberadamente-abertas" title="Permanent link">&para;</a></h2>
 <p>Continuam fora deste Source Lock:</p>
 <ul>
-<li>preços finais;</li>
+<li>condições finais de publicação/oferta dos preços e variações comerciais por mercado;</li>
 <li>limites e entitlements dos quatro planos;</li>
 <li>fórmula comercial do configurador;</li>
 <li>pricing por participante/acesso;</li>
@@ -5023,11 +5056,11 @@ PRODUCT ENGINEERING
 <p>Usar:</p>
 <ol>
 <li><code>GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.2</code> como autoridade comum de handoff;</li>
-<li>este Source Lock <code>GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.7</code>;</li>
+<li>este Source Lock <code>GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.8</code>;</li>
 <li><code>GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4</code>;</li>
 <li><code>GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0</code>;</li>
 <li><code>GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3</code>;</li>
-<li><code>GPA-004 v1.6.0</code>.</li>
+<li><code>GPA-004 v1.7.2</code>.</li>
 </ol>
 <div class="highlight"><pre><span></span><code>SOURCE OF TRUTH
 → CURRENT MAIN
