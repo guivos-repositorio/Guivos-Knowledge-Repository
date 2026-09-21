@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-09-20
 normative: false
@@ -11,6 +11,7 @@ depends_on:
   - GPA-004-FUNCTIONAL-PORTFOLIO-001
   - GEM-004-A1
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
+  - GKR-UX-HOME-BUSINESS-MASTER-001
 ---
 
 # Planos — Guivos Business
@@ -25,6 +26,52 @@ Guivos Business é um **produto especializado B2B**. Seus planos são independen
 | **Growth** | R$ 799,00 | R$ 7.990,00 | acompanhar e compreender |
 | **Scale** | a partir de R$ 1.990,00 | contrato anual | interpretar e integrar |
 | **Enterprise** | sob consulta | contrato anual | governar em alta complexidade e escala |
+
+## Contratação e modelo de implementação/operação
+
+A contratação do Guivos Business é **online**.
+
+A implementação/operação pode seguir três modelos correntes:
+
+### Self-service
+
+A empresa contrata online, acessa a plataforma, configura e opera com autonomia.
+
+É o caminho de referência quando a configuração é suficientemente simples, padronizada e apta à contratação digital.
+
+### Com apoio do suporte
+
+A empresa contrata e paga online normalmente. Depois da contratação, o suporte Guivos acompanha a continuidade da implementação quando necessário.
+
+### Gerenciado
+
+A empresa contrata online e, depois, a implementação/operação recebe participação mais profunda da Guivos conforme a complexidade e o contrato.
+
+A síntese vigente é:
+
+> **Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.**
+
+### Relação entre plano e modelo de operação
+
+```text
+PLANO
+→ capacidade contratada
+
+CONTRATAÇÃO
+→ online
+
+MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+→ definido pela complexidade da configuração
+```
+
+Não congelar equivalências como:
+
+```text
+Start = Self-service obrigatório
+Enterprise = atendimento humano obrigatório
+```
+
+Uma configuração Scale pode ser suficientemente padronizada para operar em Self-service. Uma configuração Growth pode exigir apoio por integração, governança ou outra complexidade específica.
 
 ## Start
 
@@ -84,6 +131,8 @@ O plano Business governa a profundidade contratada de:
 - integrações;
 - governança;
 - nível de serviço.
+
+O nível de serviço não substitui o plano e não constitui uma segunda taxonomia de planos.
 
 Os **entitlements quantitativos finais** de cada capacidade permanecem sujeitos à formalização comercial própria. O pricing de referência não autoriza inferir limites que ainda não tenham sido governados.
 
