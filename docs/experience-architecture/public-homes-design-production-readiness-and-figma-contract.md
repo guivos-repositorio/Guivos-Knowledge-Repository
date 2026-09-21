@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.9
+version: 1.3.10
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -66,8 +66,11 @@ Checkpoint corrente: `CURRENT MAIN`, resolvido no momento do consumo.
 QUICK-REFERENCE MOVEMENTS
 → 83 / 83 COVERED
 
-COMMON AUTHORITIES
+UNIVERSAL DESIGN AUTHORITIES
 → CURRENT
+
+OPTIONAL AI AUTHORITY
+→ CONDITIONAL / CURRENT WHEN USED
 
 DESIGN PRODUCTION RELEASE
 → GRANTED
