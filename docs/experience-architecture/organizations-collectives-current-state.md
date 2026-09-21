@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.10.2
+version: 1.10.3
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 normative: false
