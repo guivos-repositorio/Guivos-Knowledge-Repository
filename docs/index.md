@@ -167,7 +167,7 @@ ORGANIZAÇÃO
 - [Jornadas Integradas](journeys/index.md)
 - [Home Principal / Pessoa](experience-architecture/public-home-master-document.md)
 - [Home de Organizações e Coletivos](experience-architecture/public-home-organizations-collectives-master-document.md)
-- [Homes dos Produtos Especializados](experience-architecture/public-specialized-homes-reconciliation.md)
+- [Homes Públicas — Manifesto Corrente de Entrega](experience-architecture/public-homes-design-delivery-manifest.md)
 - [PER-002 — Elegibilidade de Materialização e Handoff para Design](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md)
 - [PER-002 — Autorização Governada de Design Low-Fidelity](experience-architecture/per-002-design-authorization.md)
 - [PER-002 — Materialização Low-Fidelity Funcional de Design](experience-architecture/per-002-low-fidelity-design-delivery.md)
