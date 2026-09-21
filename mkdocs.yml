@@ -90,6 +90,17 @@ nav:
       - Organização: journeys/organization.md
       - Coletivo: journeys/collective.md
       - Organizações e Coletivos — Estado Atual: experience-architecture/organizations-collectives-current-state.md
+      - Organizações e Coletivos — Experiência Autenticada:
+          - Atores, Autoridades e Jobs: experience-architecture/organizations-collectives-authenticated-actors-authorities-and-jobs.md
+          - Arquitetura da Informação: experience-architecture/organizations-collectives-authenticated-information-architecture.md
+          - Mapa de Superfícies: experience-architecture/organizations-collectives-authenticated-surface-map.md
+          - Mapa de Estados: experience-architecture/organizations-collectives-authenticated-state-map.md
+          - Fluxos Prioritários: experience-architecture/organizations-collectives-authenticated-priority-flows.md
+          - Navegação Autenticada: experience-architecture/organizations-collectives-authenticated-navigation-materialization.md
+          - Wireframes Low-Fidelity: experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md
+          - Validação Low-Fidelity: experience-architecture/organizations-collectives-authenticated-low-fidelity-functional-validation.md
+          - Elegibilidade High-Fidelity: experience-architecture/organizations-collectives-authenticated-high-fidelity-eligibility.md
+          - Autorização High-Fidelity: experience-architecture/organizations-collectives-authenticated-high-fidelity-authorization.md
 
   - Produtos e Economia:
       - Arquitetura de Produtos: product-architecture/index.md
@@ -118,9 +129,16 @@ nav:
       - Home Guivos Intelligence: experience-architecture/public-home-intelligence-master-document.md
 
   - Research e Validação:
+      - Research — Visão Geral: research/index.md
       - Validação de Mercado: research/market-validation/README.md
       - Pesquisa do Ecossistema: research/RP-001/index.md
       - Possibilidades, Oportunidades e Supply: research/RP-002/index.md
+
+  - Jurídico, Privacidade e Institucional:
+      - Arquitetura Institucional e Jurídica: governance-framework/institutional-and-legal-architecture-index.md
+      - Privacidade e Verdade Operacional: governance-framework/operational-privacy-and-legal-truth-index.md
+      - Fundação Guivos — Conceito e Estado Jurídico: governance-framework/fundacao-guivos-institutional-concept-and-legal-status.md
+      - Proteção Marcária — Autorização de Filing: governance-framework/trademark-brazil-signature-filing-authorization-package.md
 
   - GTM, Expansão e Presença Pública:
       - Go-to-Market, Growth & Capital: go-to-market/index.md
