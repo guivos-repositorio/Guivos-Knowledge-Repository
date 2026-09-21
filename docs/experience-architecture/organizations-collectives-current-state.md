@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.10.4
+version: 1.10.5
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 normative: false
@@ -301,7 +301,7 @@ Ambos os documentos possuem estado `active`.
 
 Eles ajudam a mapear continuidade, estados e relações do ecossistema, mas **não devem ser interpretados como prova de que wireframes ou UI já foram definidos**.
 
-Qualquer trecho desses documentos que derive maturidade de `UXA-015`, `UXA-016`, `UXA-017` ou `UXA-018` fica subordinado à reconciliação de estado registrada aqui: a referência low-fidelity corrente é exclusivamente Delivery v0.1.0 + Validation v1.0.0; os históricos continuam `superseded`.
+`UXA-015..018` permanecem somente como proveniência histórica. Nenhuma maturidade corrente pode ser derivada desses produtores removidos; a referência low-fidelity vigente é exclusivamente `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` + `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 / PASS`.
 
 A existência de Jobs, IA, mapa de superfícies e State Map atuais também não reativa `UXA-015..018`.
 
@@ -430,45 +430,62 @@ Materiais anteriores que afirmavam wireframes principais vigentes ou validação
 | supply, rede e modelo econômico — aprofundamento | `RP-002-OCE-001` |
 | estado de UX e wireframes | `GKR-UX-ORGCOL-UX-STATE-001` |
 
-## 16. Próxima sequência legítima para UX autenticada
+## 16. Sequência corrente de maturidade da UX autenticada
 
-A frente já concluiu documentalmente:
-
-```text
-fundamentos e papéis
-→ atores, autoridades e jobs prioritários
-→ Arquitetura da Informação
-→ mapa lógico de superfícies autenticadas
-→ mapa funcional de estados autenticados
-→ fluxos prioritários autenticados
-→ elegibilidade de Navigation Materialization — PASS / CANONICAL
-→ Navigation Materialization — DEFINED / CANONICAL DOCUMENTARY / v1.0.0
-```
-
-Este commit **não autoriza nem materializa** a continuação. Permanecem deliberadamente diferidos para gates posteriores:
+A maturidade corrente é:
 
 ```text
-Authenticated Wireframes / low-fidelity — DELIVERY + VALIDATION PASS
-→ high-fidelity eligibility — PASS / v1.0.1
-→ high-fidelity design authorization — GRANTED / v1.0.0
-→ high-fidelity design execution — AUTHORIZED / NOT_STARTED
-→ protótipo
-→ testes
-→ handoff técnico
+FUNDAMENTOS / PAPÉIS
+→ DEFINED
+
+ATORES / AUTORIDADES / JOBS
+→ DEFINED
+
+INFORMATION ARCHITECTURE
+→ DEFINED
+
+SURFACE MAP
+→ DEFINED / CANONICAL DOCUMENTARY
+
+STATE MAP
+→ DEFINED / CANONICAL DOCUMENTARY
+
+PRIORITY FLOWS
+→ DEFINED / CANONICAL DOCUMENTARY
+
+NAVIGATION MATERIALIZATION
+→ DEFINED / CANONICAL DOCUMENTARY / v1.0.0
+
+LOW-FIDELITY
+→ DELIVERY v0.1.0
+→ VALIDATION v1.0.0 / PASS
+
+HIGH-FIDELITY ELIGIBILITY
+→ PASS / v1.0.1
+
+HIGH-FIDELITY AUTHORIZATION
+→ GRANTED / v1.0.0
+
+HIGH-FIDELITY EXECUTION
+→ AUTHORIZED / NOT_STARTED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
+
+PRODUCT ENGINEERING
+→ NOT_RELEASED
 ```
 
-Nenhuma etapa posterior deve ser presumida antes de autorização governada específica.
+Nenhuma etapa posterior deve ser presumida antes do gate específico aplicável.
 
-A branch pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece apenas `HOLD_REVIEW`; sua existência não transforma estados, fluxos, wireframes ou decisões nela materializados em autoridade vigente.
-
-## 17. Regra de autoridade desta reconciliação
+## 17. Regra de autoridade corrente
 
 Para o estado atual de Organizações e Coletivos:
 
-> **este documento prevalece sobre afirmações de maturidade de wireframe presentes em registros históricos ou documentos `draft` que dependam de `UXA-015` a `UXA-018`.**
+> **as autoridades O/C correntes prevalecem sobre afirmações de maturidade presentes em registros históricos ou documentos que dependam de `UXA-015..018`.**
 
 Isso não apaga o histórico; apenas impede que materializações prematuras sejam confundidas com decisão vigente.
 
 O atlas de supply e relevância possui função diferente: ele preserva Research, exemplos e método para tornar compreensível o universo de oportunidades. Ele **não** promove wireframes, matching, PMF ou implementação a estado superior.
 
-`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` compõem a cadeia documental canônica desta revisão. A Navigation Materialization define topologia/hierarquia/entrada/retorno, mas não define wireframes, Design/UI ou implementação.
+`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` compõem a cadeia documental canônica corrente. A Navigation Materialization define topologia/hierarquia/entrada/retorno, mas não define wireframes, Design/UI ou implementação.

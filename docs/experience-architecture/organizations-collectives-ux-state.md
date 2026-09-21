@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-UX-STATE-001
 title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.12.1
+version: 1.12.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 normative: false
@@ -58,25 +58,18 @@ Esses materiais governam a continuidade da experiência. O pacote low-fidelity c
 
 ## 3. Correção dos registros anteriores
 
-Foram encontrados quatro documentos históricos que davam a entender que os wireframes já existiam e estavam validados:
-
-- `UXA-015` — Visão Geral da Organização;
-- `UXA-016` — Início do Coletivo;
-- `UXA-017` — validação da Visão Geral da Organização;
-- `UXA-018` — validação do Início do Coletivo.
-
-Esses registros foram produzidos prematuramente e **não representam mais o estado vigente**.
-
-A reconciliação atual estabelece:
+`UXA-015..018` são produtores históricos absorvidos e removidos do corpus corrente. Sua proveniência permanece no Git, sem autoridade visual ou funcional vigente.
 
 ```text
-UXA-015 → registro histórico superseded
-UXA-016 → registro histórico superseded
-UXA-017 → registro histórico superseded
-UXA-018 → registro histórico superseded
+UXA-015..018
+→ FUNCTION ABSORBED
+→ PHYSICAL PRODUCERS REMOVED
+→ GIT PRESERVES PROVENANCE
+→ NOT DESIGN INPUT
+→ NOT AI INPUT
 ```
 
-Os SVGs associados permanecem apenas como histórico técnico no repositório e não devem ser utilizados como especificação, referência aprovada, baseline de produto ou autoridade de design.
+Os SVGs associados também foram removidos fisicamente. Nenhum SVG histórico desses produtores permanece disponível como especificação, referência aprovada, baseline de produto ou autoridade de Design.
 
 ## 4. O que não pode ser inferido
 
@@ -299,24 +292,25 @@ Permanecem **históricos apenas**, sem autoridade atual:
 
 Esses elementos podem ser consultados no histórico como evidência de exploração, mas qualquer reutilização futura exigirá nova decisão contra as autoridades então vigentes.
 
-### 11.4 Fechamento de F-006
+### 11.4 Proveniência dos produtores absorvidos
 
-O conteúdo funcional material válido de `UXA-015..018` foi absorvido nas autoridades posteriores; dependências funcionais ativas foram reconciliadas; a remoção física governada foi autorizada e executada; as contagens e instrumentos afetados foram reconciliados.
+O conteúdo funcional ainda válido de `UXA-015..018` foi absorvido por autoridades posteriores; os produtores físicos e seus SVGs foram removidos.
 
 ```text
-F-006
-→ STRUCTURAL AUDIT COMPLETE
-→ ABSORPTION_APPLIED
-→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_CLEANUP_APPLIED_6_OF_6
-→ SEMANTIC_827_SUCCESS
-→ MECHANICAL_1085_SUCCESS
-→ READ_ONLY_POST_DELETE_PROOF_SUCCESS
-→ RESOLVED
+CURRENT FUNCTIONAL AUTHORITY
+→ CURRENT O/C AUTHORITIES
+
+UXA-015..018 + ASSOCIATED SVGs
+→ REMOVED / HISTORICAL
+
+PROVENANCE
+→ GIT
+
+REINTRODUCTION AS BASELINE OR DESIGN REQUIREMENT
+→ PROHIBITED BY CURRENT AUTHORITY
 ```
 
-A proveniência permanece no histórico Git e em referências textuais explicitamente históricas. Nenhum desses IDs ou antigos ativos pode voltar a operar como baseline visual ou requisito de materialização.
+Nenhum desses IDs ou antigos ativos pode voltar a operar como baseline visual, requisito de materialização ou evidência de maturidade corrente.
 
 ## 12. Regra final
 
