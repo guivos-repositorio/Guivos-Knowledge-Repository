@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.4
+version: 1.3.5
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: true
