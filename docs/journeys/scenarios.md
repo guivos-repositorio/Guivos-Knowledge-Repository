@@ -2,13 +2,14 @@
 id: GKR-JOURNEY-SCENARIOS-001
 title: Cenários Integrados de Jornada
 status: active
-version: 1.0.1
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-JOURNEY-ORGANIZATION-001
+  - GKR-JOURNEY-BUSINESS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
@@ -183,9 +184,9 @@ Pagamento, patrocínio ou inventário comercial não alteram relevância orgâni
 
 ## 9. Planos e contratação
 
-Pessoa, Coletivo e Organização possuem jornadas e superfícies de Planos próprias.
+A arquitetura de Planos existe para **Pessoa, Coletivo, Organização e Business**, respeitando autoridades distintas.
 
-Guivos Business permanece produto especializado separado, com contratação online e modelo de composição Self-service quando elegível.
+Pessoa, Coletivo e Organização possuem superfícies granulares de Planos neste Registry. Business possui continuidade própria governada por suas autoridades e não reutiliza IDs desses participantes.
 
 Abrir Planos ou um configurador:
 
@@ -195,7 +196,33 @@ Abrir Planos ou um configurador:
 - não altera relevância;
 - não concede capacidade antes da contratação válida.
 
-## 10. Critério de completude
+## 10. Business — composição e contratação
+
+O cenário corrente de Business é:
+
+```text
+HOME GUIVOS BUSINESS
+→ COMPREENSÃO DAS OFERTAS
+→ PLANOS / CAPACIDADE
+→ CONFIGURADOR
+→ COMPOSIÇÃO DO VALOR
+→ CONTRATAÇÃO ONLINE
+→ SELF-SERVICE / SUPORTE / GERENCIADO
+→ OPERAÇÃO
+```
+
+Esse cenário é governado por `GPA-004`, `GKR-PLANS-BUSINESS-001`, `GKR-JOURNEY-BUSINESS-001` e pelas autoridades correntes da Home Business.
+
+Ele não deve ser reconstruído a partir de:
+
+- `ORG-*`;
+- `COL-*`;
+- `COM-*`;
+- `BND-002`.
+
+A ausência de `GKR-SURF-*` ou `GKR-TRN-*` próprios de Business neste Registry não reduz o contexto. Significa apenas que a continuidade ainda é governada no nível funcional atual e não exige granularização artificial.
+
+## 11. Critério de completude
 
 Um cenário somente é considerado integralmente fechado quando suas transições, estados, autoridades, retornos, interrupções e fronteiras aplicáveis estiverem cobertos por autoridade corrente.
 
@@ -210,7 +237,7 @@ CURRENT SCENARIO
 → USE REGISTRIES AS MATURITY AUTHORITY
 ```
 
-## 11. Estado
+## 12. Estado
 
 ```text
 SCENARIOS
