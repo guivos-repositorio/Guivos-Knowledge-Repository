@@ -82,22 +82,17 @@ Para continuidade de Journey e prototipação, a entrada preferencial é [Jornad
 
 As antigas frentes UXA-070 a UXA-086 cuja função foi absorvida pelos registries, catálogos e autoridades correntes não são reconstruídas neste índice. Sua proveniência permanece no Git.
 
-## 5. Planos — proveniência histórica absorvida
+## 5. Planos — função absorvida; proveniência no Git
 
-O pacote `UXA-100` e suas subfrentes `A1..A4` **não são autoridades correntes de Planos**. Permanecem fisicamente no corpus somente para rastreabilidade transitória enquanto a auditoria integral conclui a adjudicação de remoção.
-
-- [UXA-100 — proveniência histórica](uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md)
-- [UXA-100-A1 — proveniência histórica](uxa-100-a1-plans-journey-integration-and-dedicated-screens.md)
-- [UXA-100-A2 — proveniência histórica](uxa-100-a2-plans-screens-and-journeys-functional-audit.md)
-- [UXA-100-A3 — proveniência histórica](uxa-100-a3-plans-canonical-fragmentation-and-promotion.md)
-- [UXA-100-A4 — proveniência histórica](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md)
+O pacote histórico `UXA-100 + A1..A4` foi removido do corpus corrente após comprovação de absorção funcional.
 
 ```text
 UXA-100 / A1..A4
-→ HISTORICAL_ABSORBED_PROVENANCE_ONLY
+→ FUNCTION ABSORBED
+→ REMOVED FROM CURRENT CORPUS
+→ GIT PRESERVES PROVENANCE
 → NOT DESIGN INPUT
 → NOT AI INPUT
-→ NOT CURRENT PLAN AUTHORITY
 ```
 
 Para leitura corrente de Planos, usar:
@@ -112,7 +107,7 @@ Para leitura corrente de Planos, usar:
 - `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
 - `GPA-004` para Guivos Business.
 
-`UXA-100-A1..A4` continuam subfrentes históricas de UXA-100 e não criam UXA-102.
+A remoção não cria UXA-102 nem altera a maturidade dos planos; elimina apenas produtores históricos já absorvidos.
 
 ## 6. Autoridades correntes posteriores
 
