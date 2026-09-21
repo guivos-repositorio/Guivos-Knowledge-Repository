@@ -103,9 +103,10 @@ GUIVOS BUSINESS
 | Pessoa | 27 |
 | Coletivo | 12 |
 | Organização | 11 |
+| Guivos Business | 0 IDs próprios neste Registry |
 | Ads / Opportunity Boost (`COM-*`, prefixo legado) | 5 |
 | fronteira documental | 2 |
-| **Total** | **57** |
+| **Total de IDs registrados** | **57** |
 
 A contagem de IDs permanece estrutural. Ela não implica que todos estejam materializados ou validados.
 
