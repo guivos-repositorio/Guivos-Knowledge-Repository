@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.3
+version: 3.50.4
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-21
 normative: true
@@ -621,198 +621,81 @@ Referências visuais/funcionais correntes somente existem quando uma autoridade 
 
 A existência de uma referência visual local não promove automaticamente outras superfícies, protótipo, implementação ou Product Engineering.
 
-## 10. Homes públicas — estado de auditoria
+## 10. Homes públicas — estado corrente para Design
 
-A antiga afirmação global de **“8 Homes convergidas documentalmente”** deixa de ser usada como atalho de maturidade.
+As oito Homes públicas estão documentalmente preparadas para consumo por Design externo:
 
-A auditoria classificou os masters pelo conteúdo atual e concluiu documentalmente os lotes D, E e F.
-
-| Home | Estado atual da auditoria |
+| Home | Estado corrente |
 |---|---|
-| Principal / Pessoa | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
-| Organizações e Coletivos | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
-| Mall | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
-| Travel | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
-| Media | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
-| Ads | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
-| Business | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
-| Intelligence | `DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN` |
+| Pessoa | `READY_FOR_EXTERNAL_DESIGN` |
+| Organizações e Coletivos | `READY_FOR_EXTERNAL_DESIGN` |
+| Mall | `READY_FOR_EXTERNAL_DESIGN` |
+| Travel | `READY_FOR_EXTERNAL_DESIGN` |
+| Media | `READY_FOR_EXTERNAL_DESIGN` |
+| Ads | `READY_FOR_EXTERNAL_DESIGN` |
+| Business | `READY_FOR_EXTERNAL_DESIGN` |
+| Intelligence | `READY_FOR_EXTERNAL_DESIGN` |
 
-### 10.1 Home principal / Pessoa
-
-O Lote D foi concluído documentalmente pela sequência canônica de PRs #342–#349.
-
-A reconstrução e as reconciliações posteriores absorveram os conflitos conhecidos com Fundação, Marca, Public Canon e Experience Architecture, incluindo:
-
-- separação `Guivos × fundador` e remoção de `Do possível ao vivido.` como assinatura institucional da Home;
-- Movimento 06 = `Da Possibilidade à Experiência`;
-- distinção `Possibilidade ≠ Oportunidade` e presença de Mecanismo quando necessário;
-- nove Domínios de Evolução como vocabulário de amplitude, sem materialização visual automática;
-- separação `participante ≠ produto` e `Organização ≠ Business`;
-- Intelligence como Produto Especializado transversal / Intelligence Layer;
-- fronteira entre exploração pública e Journey protegida;
-- navegação, Header, launcher e hierarquia de CTAs;
-- prova, histórias reais, patrocínio identificável, autonomia e acessibilidade;
-- briefing/handoff subordinado ao Master e às autoridades especializadas.
-
-Estado:
+A fonte de entrada é o Manifesto Canônico de Entrega para Design, seguido pelas autoridades comuns e pelo Master específico da Home.
 
 ```text
-HOME PRINCIPAL / PESSOA
-→ DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
+GKR
+→ SIGNIFICADO
+→ FUNÇÃO
+→ NARRATIVA
+→ ATORES / AUTORIDADE
+→ LIMITES
+→ EVIDÊNCIAS
+→ FRONTEIRAS DE JORNADA
 
-WIREFRAME / FIGMA / UI / PROTÓTIPO / IMPLEMENTAÇÃO DA HOME
-→ NOT AUTHORIZED BY P CLOSURE, Q RELEASE OR Q FUNCTIONAL DEFINITION
+DESIGNER
+→ TIPOGRAFIA
+→ PALETA
+→ IMAGENS
+→ ILUSTRAÇÃO
+→ GRID
+→ COMPOSIÇÃO
+→ COMPONENTES
+→ MOTION
+→ DIREÇÃO VISUAL
 
-FINAL BASELINE
-→ CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
-
-PER-002 — CURRENT STATE
-→ FUNCTIONAL BOUNDARY = GKR-UX-PER002-MAT-ELIGIBILITY-001 v2.0.0 / CURRENT
-→ CURRENT INTERACTIVE DESIGN REFERENCE = GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v1.0.0
-→ CURRENT VALIDATION = GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v2.0.0 / PASS / 16 OF 16
-→ AUTHENTICATION = INTERNAL GATE / STATE WITHIN PER-002
-→ AUTHENTICATION COMPLETION ≠ PER-002 COMPLETION
-→ AUTHENTICATION ≠ MATERIAL PROCESSING AUTHORIZATION
-→ FIRST DISTINCT DOWNSTREAM SURFACE = PER-003 — ESCOLHA DE MODALIDADE
-→ TRN-001 = PARTIAL / UNCHANGED
-→ TRN-002 = LOCALLY VALIDATED / UNCHANGED
-→ IMPLEMENTATION / PRODUCTION = NOT AUTHORIZED
-→ UXA-102 / V5 = NOT_STARTED
-→ PRODUCT ENGINEERING = PAUSED / NOT RELEASED
-
-HOME MATERIALIZATION
-→ NOT AUTHORIZED BY PER-002-SPECIFIC DESIGN
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
 ```
 
-O fechamento de D não promove disponibilidade operacional, PMF, lançamento ou qualquer lote posterior da auditoria.
+O GKR **não define identidade visual canônica** para essas Homes e não exige reconstrução de arquivos Figma, SVGs, snapshots ou explorações históricas como entrada de Design.
 
-### 10.2 Home de Organizações e Coletivos
+Preservações essenciais:
 
-O Lote E foi concluído documentalmente pela reconstrução do Master e pela reconciliação dos contratos especializados de narrativa, navegação e prova/conteúdo.
+- Pessoa, Organização e Coletivo continuam participantes estruturais;
+- Guivos Business continua produto especializado B2B e contexto próprio de experiência;
+- Organização ≠ Business;
+- Ads ≠ Business;
+- Journey = Experience Layer;
+- Intelligence = Produto Especializado transversal / Intelligence Layer;
+- Possibilidade ≠ Oportunidade;
+- publicidade paga ≠ relevância orgânica;
+- Home pública ≠ experiência autenticada;
+- Home documentada ≠ Home implementada.
 
-Autoridades atuais:
-
-```text
-GKR-UX-HOME-OC-MASTER-001 v1.0.3
-→ autoridade de consumo vigente
-
-GKR-UX-HOME-OC-NARR-001 v0.2.0
-→ progressão e macroexperiências reconciliadas
-
-GKR-UX-HOME-OC-NAV-001 v0.3.0
-→ Header, Hero, CTAs e fronteiras de navegação reconciliados
-
-GKR-UX-HOME-OC-SYS-001 v0.2.0
-→ conteúdo, prova, evidência e verdade editorial reconciliados
-```
-
-O fechamento absorveu e protegeu, entre outros pontos:
-
-- mesma Guivos, outra perspectiva pública;
-- pergunta-mãe `O que podemos tornar possível juntos?`;
-- Pessoa, Organização e Coletivo como participantes estruturais;
-- `participante ≠ produto`;
-- `Organização ≠ Business`;
-- Journey como **Experience Layer**;
-- Travel, Mall, Media, Business, Ads e Intelligence como **Produtos Especializados**;
-- Intelligence também como **Intelligence Layer / Produto Especializado transversal**;
-- nove Domínios de Evolução como vocabulário canônico, sem autorização de taxonomia visual automática;
-- `Possibilidade ≠ Oportunidade`;
-- `Ainda estou descobrindo ≠ décimo domínio`;
-- confiança pública por autoridade, evidência, transparência, proteção e autonomia;
-- separação entre Home pública e experiência autenticada;
-- M11 como `Como podemos continuar daqui?`;
-- caminhos finais O/C como continuidades conceituais, não destinos operacionais presumidos.
-
-Os documentos P1–P5 específicos da Home permanecem como **proveniência histórica** e não como sequência operacional vigente.
-
-O Source Lock de Design da primeira exploração permanece **evidência de checkpoint não autorizadora**.
-
-Estado:
+A Journey deve ser carregada adicionalmente somente quando o protótipo atravessar da Home pública para experiência autenticada.
 
 ```text
-HOME O/C
-→ DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
+PUBLIC HOMES
+→ READY FOR DESIGN
 
-LOTE E
-→ COMPLETED
+SNAPSHOT REQUIREMENT
+→ NONE
 
-PUBLIC HOME O/C — WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
-→ GRANTED FOR EXTERNAL DESIGNER BY COMMON RELEASE
-
-EXPERIÊNCIA AUTENTICADA O/C
-→ SURFACE MAP DOCUMENTARY DEFINED
-→ STATE MAP DOCUMENTARY DEFINED
-→ PRIORITY FLOWS = DEFINED / CANONICAL DOCUMENTARY
-→ NAVIGATION MATERIALIZATION = DEFINED / CANONICAL DOCUMENTARY / v1.0.0
-→ LOW-FIDELITY WIREFRAMES = DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS
-→ HIGH-FIDELITY AUTHORIZATION = GRANTED / EXECUTION NOT_STARTED
-```
-
-### 10.3 Homes dos Produtos Especializados
-
-O Lote F auditou Mall, Travel, Media, Ads, Business e Intelligence em conjunto.
-
-Diagnóstico inicial:
-
-```text
-CURRENT
-→ 0
-
-UPDATE_REQUIRED
-→ 6
-
-REBUILD_REQUIRED
-→ 0
-```
-
-A reconciliação corrente das Homes especializadas é consumida diretamente pelos respectivos Masters, Source Locks quando aplicáveis, GPAs e pelo Manifesto canônico de entrega para Design. O antigo documento transversal de reconciliação foi absorvido e permanece somente na história do Git.
-
-Preservações:
-
-```text
-PRODUTO ESPECIALIZADO
-≠ PARTICIPANTE
-
-JOURNEY
-= EXPERIENCE LAYER
-
-ORGANIZAÇÃO
-≠ BUSINESS
-
-ADS
-≠ ORGANIZAÇÃO
-
-INTELLIGENCE PRODUTO
-+ INTELLIGENCE LAYER
-≠ AUTORIDADE SOBRE OUTROS DOMÍNIOS
-
-PUBLICIDADE PAGA
-≠ RELEVÂNCIA ORGÂNICA
-
-PRIVACIDADE DE REFERÊNCIA
-≠ CONTROLE IMPLEMENTADO
-≠ EVIDÊNCIA OPERACIONAL
-```
-
-A contradição de estado do Intelligence foi corrigida por `GIA-000 v1.6.0`. A leitura vigente reconhece o Product Source Lock integrado, o Documento Mestre da Home e `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10` como Source Lock ativo e normativo da Home. Esse lock congela fontes e invariantes e não constitui, por si só, release operacional. A produção externa de Design da Home pública é regida pelo release comum posterior; implementação e publicação permanecem separadas.
-
-Estado:
-
-```text
-LOTE F
-→ COMPLETED DOCUMENTALLY
-
-MALL / TRAVEL / MEDIA / ADS / BUSINESS / INTELLIGENCE
-→ DOCUMENTALLY_RECONCILED_FOR_EXTERNAL_DESIGN
-
-PUBLIC HOME WIREFRAME / FIGMA / SVG / UI / PROTÓTIPO
-→ GRANTED FOR EXTERNAL DESIGNER BY COMMON RELEASE
+HISTORICAL FIGMA / SVG / CHECKPOINT RECONSTRUCTION
+→ NOT REQUIRED
 
 IMPLEMENTATION / PUBLICATION / PRODUCT ENGINEERING
-→ NOT RELEASED
+→ SEPARATE GATES
+→ NOT RELEASED BY HOME DESIGN READINESS
 ```
+
+A experiência autenticada de Organização/Coletivo permanece governada por suas autoridades próprias: low-fidelity principal validado, high-fidelity autorizado e ainda `NOT_STARTED`, protótipo interativo não autorizado.
 
 ## 11. Guivos Business
 
