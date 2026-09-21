@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.29.1
+version: 0.30.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 related:
@@ -23,8 +23,7 @@ related:
   - UXA-100-A4
   - UXA-101
   - GKR-UX-D5-C1-001
-  - GKR-UX-D5-C2-001
-  - GKR-UX-D5-C3-001
+  - GKR-UX-D5-C4B-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001

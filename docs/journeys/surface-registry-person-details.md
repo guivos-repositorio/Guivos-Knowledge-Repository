@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
 title: Detalhamento Obrigatório das Superfícies da Pessoa
 status: active
-version: 0.16.0
+version: 0.17.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -16,9 +16,6 @@ related:
   - UXA-100-A4
   - UXA-101
   - GKR-UX-D5-C1-001
-  - GKR-UX-D5-C2-001
-  - GKR-UX-D5-C3-001
-  - GKR-UX-D5-C4A-001
   - GKR-UX-D5-C4B-001
 normative: false
 ---
@@ -72,11 +69,11 @@ Valores sem evidência suficiente permanecem `indeterminado`, `ausente` ou `não
 
 `PER-009` fecha a identidade documental da origem voluntária de Planos sem criar um SVG artificial de Conta. `TRN-406/407` permanecem contratadas até que haja materialização suficiente para validação ponta a ponta. Navegar para Planos não seleciona plano, não inicia cobrança e não amplia consentimento.
 
-## 5. Efeito da sequência D5-C
+## 5. Direção, Movimento e Evolução
 
-A D5-C1 contratou `PER-010`, `PER-011` e `PER-012` e seus seis handoffs mínimos com Hoje. A D5-C2 materializou um estado-base low-fidelity para cada responsabilidade. A D5-C3 reformulou e validou funcionalmente os três SVGs no limite local. A D5-C4A reformulou/revalidou Hoje recorrente e governou o contrato integrado. A D5-C4B promove `TRN-008..013` para **integralmente validadas** no limite documental.
+`GKR-UX-D5-C1-001` governa o contrato funcional corrente de `PER-010..012`. `GKR-UX-D5-C4B-001` registra a validação integrada corrente de `TRN-008..013`.
 
-A separação entre Domínio de Evolução, dimensão estrutural do Contexto Vivo e aspecto descritivo da mudança permanece obrigatória.
+Os antigos degraus de materialização low-fidelity e reformulação visual pertencem à proveniência do Git e não são necessários para consumir a verdade corrente.
 
 ## 6. Efeito da UXA-101 preservado
 

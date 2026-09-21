@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.25.0
+version: 0.26.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-09
 related:
@@ -23,9 +23,6 @@ related:
   - UXA-100-A4
   - UXA-101
   - GKR-UX-D5-C1-001
-  - GKR-UX-D5-C2-001
-  - GKR-UX-D5-C3-001
-  - GKR-UX-D5-C4A-001
   - GKR-UX-D5-C4B-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -77,12 +74,12 @@ Validação integral documental não comprova implementação técnica nem esten
 | GKR-TRN-005 | PER-005 | PER-006 | parcial | continuidade entre materializações |
 | GKR-TRN-006 | PER-006 | PER-007 | localmente validada | UXA-037 |
 | GKR-TRN-007 | PER-007 | PER-008 | **integralmente validada** | UXA-097 |
-| GKR-TRN-008 | PER-008 | PER-010 | **integralmente validada** | D5-C4B — Hoje recorrente → acesso genérico a Objetivos; contexto mínimo, revalidação, retorno, interrupção, concorrência e idempotência examinados |
-| GKR-TRN-009 | PER-010 | PER-008 | **integralmente validada** | D5-C4B — retorno `‹ Hoje` neutro; não salva edição incompleta, não altera prioridade/progresso e reconsulta estado canônico |
-| GKR-TRN-010 | PER-008 | PER-011 | **integralmente validada** | D5-C4B — `Abrir este passo` preserva somente referência lógica mínima quando vigente; fallback neutro/atualizado |
-| GKR-TRN-011 | PER-011 | PER-008 | **integralmente validada** | D5-C4B — retorno não marca passo como visto/aceito/iniciado/executado/concluído; Hoje reconsulta estado vigente |
-| GKR-TRN-012 | PER-008 | PER-012 | **integralmente validada** | D5-C4B — entrada genérica/neutra; sem trajetória/domínio/interpretação/evidência sensível por padrão; privacidade revalidada |
-| GKR-TRN-013 | PER-012 | PER-008 | **integralmente validada** | D5-C4B — retorno não confirma interpretação/evolução; natureza epistemológica, minimização e permissões preservadas |
+| GKR-TRN-008 | PER-008 | PER-010 | **integralmente validada** | GKR-UX-D5-C4B-001 — Hoje recorrente → acesso a Objetivos; contexto mínimo, revalidação, retorno, interrupção, concorrência e idempotência examinados |
+| GKR-TRN-009 | PER-010 | PER-008 | **integralmente validada** | GKR-UX-D5-C4B-001 — retorno `‹ Hoje` neutro; não salva edição incompleta, não altera prioridade/progresso e reconsulta estado canônico |
+| GKR-TRN-010 | PER-008 | PER-011 | **integralmente validada** | GKR-UX-D5-C4B-001 — `Abrir este passo` preserva somente referência lógica mínima quando vigente; fallback neutro/atualizado |
+| GKR-TRN-011 | PER-011 | PER-008 | **integralmente validada** | GKR-UX-D5-C4B-001 — retorno não marca passo como visto/aceito/iniciado/executado/concluído; Hoje reconsulta estado vigente |
+| GKR-TRN-012 | PER-008 | PER-012 | **integralmente validada** | GKR-UX-D5-C4B-001 — entrada genérica/neutra; sem trajetória/domínio/interpretação/evidência sensível por padrão; privacidade revalidada |
+| GKR-TRN-013 | PER-012 | PER-008 | **integralmente validada** | GKR-UX-D5-C4B-001 — retorno não confirma interpretação/evolução; natureza epistemológica, minimização e permissões preservadas |
 
 `TRN-007` preserva consentimento, estado canônico, retorno e idempotência; navegar para Hoje não cria avanço ou autorização adicional.
 
