@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.5
+version: 3.50.6
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-21
 normative: true
@@ -636,7 +636,7 @@ As oito Homes públicas estão documentalmente preparadas para consumo por Desig
 | Business | `READY_FOR_EXTERNAL_DESIGN` |
 | Intelligence | `READY_FOR_EXTERNAL_DESIGN` |
 
-A fonte de entrada é o Manifesto Canônico de Entrega para Design, seguido pelas autoridades comuns e pelo Master específico da Home.
+A fonte de entrada é o Manifesto Canônico de Entrega para Design, seguido por quatro autoridades universais de Design, pelo Read-First e pelas fontes específicas da Home. `GKR-UX-HOMES-GENINPUT-001` entra somente quando a designer optar por usar IA.
 
 ```text
 GKR
@@ -699,7 +699,7 @@ A experiência autenticada de Organização/Coletivo permanece governada por sua
 
 ## 11. Guivos Business
 
-`GPA-004 v1.7.3` permanece autoridade superior do Guivos Business. A síntese corrente da experiência está em `GKR-JOURNEY-BUSINESS-001 — Experiência Integrada do Guivos Business`.
+`GPA-004 v1.7.4` permanece autoridade superior do Guivos Business. A síntese corrente da experiência está em `GKR-JOURNEY-BUSINESS-001 — Experiência Integrada do Guivos Business`.
 
 Ofertas principais preservadas:
 
@@ -795,7 +795,7 @@ PONTOS GUIVOS
 → BENEFÍCIO TRANSACIONAL DO ECOSSISTEMA
 
 EQUIVALÊNCIA PONTOS ↔ BRL
-→ DECISÃO HISTÓRICA PRESERVADA COMO PROVENIÊNCIA
+→ NÃO APROVADA COMO REGRA ECONÔMICA VIGENTE
 → SEM TAXA / VALOR MONETÁRIO APROVADO POR AUTORIDADE ECONÔMICA VIGENTE
 → NÃO AUTORIZADA PARA IMPLEMENTAÇÃO, COBRANÇA OU LIQUIDAÇÃO
 → REQUER AUTORIDADE ECONÔMICA ESPECÍFICA PARA VOLTAR A SER REGRA CORRENTE
@@ -1615,14 +1615,20 @@ PRIMARY SOURCE OF TRUTH
 → CURRENT MAIN
 
 AUTHORIZED WHITELIST
-→ GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.13
+→ GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.21
 
-COMMON AUTHORITIES
-→ HANDOFF v1.7.3
-→ GENINPUT v2.3.2
-→ READINESS v1.3.7
-→ FLOW v3.1.2
-→ RELEASE v1.3.1
+UNIVERSAL DESIGN AUTHORITIES
+→ HANDOFF v1.7.5
+→ READINESS v1.3.11
+→ FLOW v3.1.3
+→ RELEASE v1.3.2
+
+OPTIONAL AI AUTHORITY
+→ GENINPUT v2.3.3
+→ ONLY WHEN AI IS USED
+
+READ-FIRST ROUTERS
+→ 8 / 8 CURRENT / NON-NORMATIVE
 
 DESIGN PRODUCTION READINESS
 → PASS / CURRENT
@@ -1663,7 +1669,7 @@ PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-A designer pode consumir diretamente o Manifesto corrente, as cinco autoridades comuns e as fontes específicas da Home. Journey é carregado apenas quando o protótipo atravessa para experiência autenticada.
+A designer pode consumir diretamente o Manifesto corrente, as quatro autoridades universais, o Read-First e as fontes específicas da Home. Quando usar IA, acrescenta `GKR-UX-HOMES-GENINPUT-001`. Journey é carregado apenas quando a solução atravessa para experiência autenticada.
 
 ## 32. Regra corrente de atualização
 

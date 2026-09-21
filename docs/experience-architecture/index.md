@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.24.0
+version: 1.24.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
@@ -51,13 +51,16 @@ GIT
 
 A fonte de entrada é o [Manifesto Canônico de Entrega para Design](public-homes-design-delivery-manifest.md).
 
-Autoridades comuns:
+Autoridades universais de Design:
 
 - [Handoff Canônico](public-homes-design-handoff.md);
-- [Source Lock e Contrato de Consumo](public-homes-generative-source-lock-and-prompt-template.md);
 - [Prontidão de Produção de Design](public-homes-design-production-readiness-and-figma-contract.md);
 - [Fluxo Operacional](public-homes-design-delivery-operational-flow.md);
 - [Design Production Release](public-homes-design-production-release.md).
+
+Autoridade condicional de IA:
+
+- [Source Lock e Contrato de Consumo](public-homes-generative-source-lock-and-prompt-template.md) — somente quando a designer optar por usar IA ou ferramenta generativa.
 
 Masters correntes:
 
@@ -174,13 +177,17 @@ Não carregar o corpus inteiro por padrão.
 Para cada Home:
 
 ```text
-5 COMMON AUTHORITIES
+4 UNIVERSAL DESIGN AUTHORITIES
++
+HOME READ-FIRST
 +
 HOME MASTER
 +
 HOME-SPECIFIC CURRENT AUTHORITIES
 +
-JOURNEY ONLY WHEN THE PROTOTYPE CROSSES INTO AUTHENTICATED EXPERIENCE
+OPTIONAL AI AUTHORITY ONLY WHEN AI IS USED
++
+JOURNEY ONLY WHEN THE SOLUTION CROSSES INTO AUTHENTICATED EXPERIENCE
 ```
 
 Qualquer arquivo fora desse conjunto só deve ser consultado quando uma dúvida concreta exigir autoridade adicional corrente.
