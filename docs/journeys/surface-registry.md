@@ -6,8 +6,6 @@ version: 0.30.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 related:
-  - UXA-070
-  - UXA-080
   - UXA-087
   - UXA-089
   - UXA-090

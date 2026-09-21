@@ -18,7 +18,6 @@ depends_on:
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
   - UXA-011-A1
-  - UXA-070
   - UXA-100-A1
   - UXA-100-A2
   - UXA-100-A3

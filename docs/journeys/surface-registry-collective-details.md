@@ -7,12 +7,6 @@ owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
 related:
-  - UXA-070
-  - UXA-076
-  - UXA-077
-  - UXA-078
-  - UXA-079
-  - UXA-080
   - UXA-087
   - UXA-089
   - UXA-100

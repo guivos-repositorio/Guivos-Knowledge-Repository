@@ -11,7 +11,6 @@ depends_on:
   - UXA-056
   - UXA-058
   - UXA-059
-  - UXA-080
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -46,7 +45,7 @@ O gate foi realizado contra as autoridades vigentes:
 - UXA-056 — descoberta, perfil público, participação e gestão do Coletivo;
 - UXA-058 — comunicação, origem, autoridade, proteção e reversibilidade das interações;
 - UXA-059 — programa e priorização dos wireframes de Coletivos;
-- UXA-080 — registros granulares promovidos;
+- `GKR-JOURNEY-SURFACE-REGISTRY-001` e `GKR-JOURNEY-TRANSITION-REGISTRY-001` — registros granulares correntes;
 - UXA-086 — contrato e materialização da Visão Geral do Responsável.
 
 A `UXA-018` participou historicamente da validação do antigo Início do Coletivo, mas permanece `superseded` e é preservada aqui somente como proveniência histórica. Ela não constitui dependência nem autoridade funcional vigente da UXA-087.

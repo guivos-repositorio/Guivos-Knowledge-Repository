@@ -107,17 +107,7 @@ PRODUCT ENGINEERING
 
 - UXA-068 — `UXA-068` [historical producer removed_after_absorption in F-016]
 - [UXA-069](uxa-069-guided-current-moment-functional-validation-and-reformulation.md)
-- [UXA-070](uxa-070-journey-simulation-environment-functional-program.md)
-- [UXA-071](uxa-071-integrated-journeys-map-materialization.md)
-- [UXA-072](uxa-072-integrated-journeys-functional-validation-and-reformulation.md)
-- [UXA-073](uxa-073-integrated-journeys-reformulation-navigation-and-synchronization.md)
-- [UXA-074](uxa-074-integrated-journeys-functional-revalidation.md)
-- [UXA-075](uxa-075-integrated-journeys-controlled-promotion-and-post-validation-synchronization.md)
-- [UXA-076](uxa-076-integrated-journeys-granular-transition-and-surface-registry.md)
-- [UXA-077](uxa-077-granular-registry-functional-validation.md)
-- [UXA-078](uxa-078-controlled-granular-registry-reformulation.md)
-- [UXA-079](uxa-079-granular-registry-functional-revalidation.md)
-- [UXA-080](uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md)
+- UXA-070 a UXA-080 — produtores históricos removidos após absorção; o estado corrente está consolidado em `docs/journeys/` e nas autoridades atuais de Experiência.
 - UXA-081
 - UXA-082
 - UXA-083
