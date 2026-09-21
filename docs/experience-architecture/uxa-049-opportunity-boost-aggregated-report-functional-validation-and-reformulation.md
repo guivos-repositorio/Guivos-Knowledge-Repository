@@ -2,13 +2,12 @@
 id: UXA-049
 title: Validação Funcional e Reformulação dos Wireframes do Relatório Agregado do Opportunity Boost
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-01
+last_updated: 2026-09-21
 parent: UXA-048
 depends_on:
   - UXA-038
-  - UXA-039
   - UXA-041
   - UXA-043
   - UXA-045

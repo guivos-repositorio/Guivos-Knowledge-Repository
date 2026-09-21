@@ -2,13 +2,12 @@
 id: UXA-099
 title: Contrato Funcional Corrente dos Estados Residuais do Opportunity Boost
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: UXA-055
 depends_on:
   - UXA-038
-  - UXA-039
   - UXA-043
   - UXA-045
   - UXA-047

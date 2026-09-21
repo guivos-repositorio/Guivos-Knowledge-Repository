@@ -128,6 +128,7 @@ def main() -> int:
         33: "uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md",
         34: "uxa-034-protected-journey-entry-low-fidelity-wireframe.md",
         36: "uxa-036-initial-understanding-low-fidelity-wireframe.md",
+        39: "uxa-039-opportunity-boost-functional-validation-and-reformulation.md",
         40: "uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md",
         42: "uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md",
         44: "uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md",
