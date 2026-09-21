@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
 title: Home Pública — Guivos Intelligence v1 — Arquitetura Conceitual — Movimentos 1–11
-status: draft
+status: active
 version: 0.2.4
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 depends_on:
   - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
