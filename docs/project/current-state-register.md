@@ -2147,7 +2147,7 @@ Os oito Documentos Mestres são a fonte direta de verdade das Homes públicas.
 
 ```text
 PESSOA
-→ GKR-UX-HOME-MASTER-001 v1.0.4
+→ GKR-UX-HOME-MASTER-001 v1.0.5
 
 ORGANIZAÇÕES E COLETIVOS
 → GKR-UX-HOME-OC-MASTER-001 v1.0.4
