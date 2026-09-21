@@ -28,7 +28,7 @@ Guivos Business é um **produto especializado B2B**. Seus planos são independen
 
 ## Start
 
-**Preço:** R$ 299,00/mês · R$ 2.990,00/ano  
+**Preço:** R$ 299,00/mês · R$ 2.990,00/ano
 **Função:** estabelecer a operação empresarial inicial do produto.
 
 ### Leitura
@@ -39,7 +39,7 @@ Guivos Business é um **produto especializado B2B**. Seus planos são independen
 
 ## Growth
 
-**Preço:** R$ 799,00/mês · R$ 7.990,00/ano  
+**Preço:** R$ 799,00/mês · R$ 7.990,00/ano
 **Função:** ampliar recorrência, públicos, unidades e capacidade analítica.
 
 ### Leitura
@@ -50,7 +50,7 @@ Guivos Business é um **produto especializado B2B**. Seus planos são independen
 
 ## Scale
 
-**Preço:** a partir de R$ 1.990,00/mês · contrato anual  
+**Preço:** a partir de R$ 1.990,00/mês · contrato anual
 **Função:** atender operações amplas, multiunidade e integradas.
 
 ### Leitura
@@ -63,7 +63,7 @@ O valor mensal é referência mínima e não substitui o dimensionamento comerci
 
 ## Enterprise
 
-**Preço:** sob consulta · contrato anual  
+**Preço:** sob consulta · contrato anual
 **Função:** adaptar o produto a contextos empresariais de alta complexidade.
 
 ### Leitura

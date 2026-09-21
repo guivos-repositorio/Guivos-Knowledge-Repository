@@ -24,7 +24,7 @@ depends_on:
 
 ## Coletivo Livre
 
-**Preço:** R$ 0,00/mês · R$ 0,00/ano  
+**Preço:** R$ 0,00/mês · R$ 0,00/ano
 **Finalidade:** presença inicial, experimentação e mobilização gratuita de pequena escala.
 
 ### Inclui
@@ -47,7 +47,7 @@ depends_on:
 
 ## Coletivo Mobiliza
 
-**Preço:** R$ 89,90/mês · R$ 899,00/ano  
+**Preço:** R$ 89,90/mês · R$ 899,00/ano
 **Finalidade:** atender pequena operação recorrente com necessidade de monetização.
 
 ### Inclui
@@ -73,7 +73,7 @@ depends_on:
 
 ## Coletivo Impacta
 
-**Preço:** R$ 249,90/mês · R$ 2.499,00/ano  
+**Preço:** R$ 249,90/mês · R$ 2.499,00/ano
 **Finalidade:** atender operação estruturada, programas recorrentes, parceiros e mensuração ampliada.
 
 ### Inclui
@@ -97,7 +97,7 @@ Volume acima da capacidade exige Coletivo Rede ou dimensionamento específico.
 
 ## Coletivo Rede
 
-**Preço:** sob consulta · contrato anual  
+**Preço:** sob consulta · contrato anual
 **Finalidade:** atender redes, fundações, movimentos e operações multiunidade de maior complexidade.
 
 ### Inclui

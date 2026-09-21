@@ -23,7 +23,7 @@ depends_on:
 
 ## Guivos Free
 
-**Preço:** R$ 0,00/mês · R$ 0,00/ano  
+**Preço:** R$ 0,00/mês · R$ 0,00/ano
 **Finalidade:** garantir participação real, compreensão inicial, descoberta pública e acompanhamento essencial sem pagamento.
 
 ### Inclui
@@ -45,7 +45,7 @@ depends_on:
 
 ## Guivos Plus
 
-**Preço:** R$ 24,90/mês · R$ 249,00/ano  
+**Preço:** R$ 24,90/mês · R$ 249,00/ano
 **Finalidade:** ampliar personalização, conveniência, histórico, alertas e organização da jornada individual.
 
 ### Acrescenta ao Free
@@ -69,7 +69,7 @@ depends_on:
 
 ## Guivos Pro
 
-**Preço:** R$ 49,90/mês · R$ 499,00/ano  
+**Preço:** R$ 49,90/mês · R$ 499,00/ano
 **Finalidade:** oferecer maior profundidade analítica, integração autorizada, relatórios e acompanhamento avançado.
 
 ### Acrescenta ao Plus

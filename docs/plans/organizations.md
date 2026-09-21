@@ -25,7 +25,7 @@ Organização é um **tipo de participante do ecossistema**. Guivos Business é 
 
 ## Organização Conecta
 
-**Preço:** R$ 299,00/mês · R$ 2.990,00/ano  
+**Preço:** R$ 299,00/mês · R$ 2.990,00/ano
 **Finalidade:** presença institucional e operação inicial de oportunidades e programas.
 
 ### Inclui
@@ -44,7 +44,7 @@ Organização é um **tipo de participante do ecossistema**. Guivos Business é 
 
 ## Organização Eleva
 
-**Preço:** R$ 799,00/mês · R$ 7.990,00/ano  
+**Preço:** R$ 799,00/mês · R$ 7.990,00/ano
 **Finalidade:** operação recorrente, múltiplos públicos, programas e necessidade analítica ampliada.
 
 ### Inclui
@@ -63,7 +63,7 @@ Organização é um **tipo de participante do ecossistema**. Guivos Business é 
 
 ## Organização Transforma
 
-**Preço:** a partir de R$ 1.990,00/mês · contrato anual  
+**Preço:** a partir de R$ 1.990,00/mês · contrato anual
 **Finalidade:** operações institucionais complexas, múltiplas unidades, programas e dimensionamento assistido.
 
 ### Inclui
