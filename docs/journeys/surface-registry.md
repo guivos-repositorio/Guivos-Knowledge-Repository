@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.36.6
+version: 0.36.7
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
@@ -21,7 +21,6 @@ related:
   - UXA-101
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C4B-001
-  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
@@ -42,7 +41,6 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
-  - GKR-ORGCOL-POST313-RECON-001
 normative: false
 ---
 
@@ -55,7 +53,7 @@ Este registro atribui identificadores estáveis a superfícies, estados, respons
 
 `GKR-UX-D5-C1-001` governa o contrato funcional corrente de `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-011 — Meus Próximos Passos` e `GKR-SURF-PER-012 — Minha Evolução`. A sequência histórica de materialização visual permanece no Git; `GKR-UX-D5-C4B-001` registra a validação integrada corrente de `TRN-008..013` no limite documental.
 
-A reconciliação pós-PR #313/#314 corrige a leitura de Organização e Coletivo: `UXA-015..018` são históricos `superseded`; referências administrativas ou especializadas posteriores não podem ser promovidas por inferência a wireframe principal autenticado final.
+`UXA-015..018` permanecem históricos `superseded`; referências administrativas ou especializadas não podem ser promovidas por inferência a wireframe principal autenticado final.
 
 Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` está definido em sua maturidade própria de Arquitetura da Informação, enquanto `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0` define o mapa lógico-documental canônico de superfícies. Em atos governados posteriores, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` consolidam estados, fluxos e navegação documental. A autorização, entrega e validação low-fidelity O/C posteriores (`GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001`, `...DELIVERY-001`, `...VALIDATION-001`) adicionam evidência visual funcional sem promover a maturidade individual dos `GKR-SURF-*`.
 
