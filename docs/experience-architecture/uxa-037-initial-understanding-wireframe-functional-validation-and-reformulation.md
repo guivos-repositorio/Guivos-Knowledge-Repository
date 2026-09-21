@@ -2,7 +2,7 @@
 id: UXA-037
 title: Validação Funcional Especializada e Reformulação do Wireframe Móvel da Compreensão Inicial
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: UXA-036
@@ -259,16 +259,15 @@ Esta validação não:
 - conclui acessibilidade técnica;
 - inicia Engenharia de Produto.
 
-## 10. Próximos atos governados
+## 10. Continuidade corrente
 
-Após integração e nova autorização, poderão ocorrer separadamente:
+Os antigos próximos atos desta validação foram executados ou absorvidos por autoridades posteriores e não constituem backlog corrente.
 
-1. criar a referência móvel da Página Inicial pública;
-2. validar a transição da compreensão para a primeira Tela Hoje;
-3. criar estados especializados de processamento, pausa, falha e retomada;
-4. criar referência do início protegido e da compreensão para computador;
-5. criar estados especializados de texto, voz e arquivos;
-6. criar referência para tablet, caso priorizada;
-7. retomar independentemente os testes dos Resultados Empresariais.
+A continuidade vigente deve ser lida por:
 
-Nenhum ato é iniciado automaticamente.
+- `UXA-097` para a ligação entre compreensão inicial confirmada e Tela Hoje;
+- `GKR-JOURNEY-SURFACE-REGISTRY-001`;
+- `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
+- autoridades correntes de `PER-002` e da Jornada da Pessoa.
+
+Estados especializados ainda não cobertos devem permanecer registrados como lacuna antes de qualquer nova materialização. Nenhum protótipo, implementação ou Engenharia de Produto é autorizado por este documento.
