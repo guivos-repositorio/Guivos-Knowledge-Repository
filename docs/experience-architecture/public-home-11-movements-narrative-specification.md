@@ -2,16 +2,14 @@
 id: GKR-UX-HOME-NARR-001
 title: Especificação Narrativa Detalhada dos 11 Movimentos da Home Pública
 status: draft
-version: 0.2.0
+version: 0.2.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-28
-parent: GKR-UX-HOME-HANDOFF-001
+last_updated: 2026-09-20
 depends_on:
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-001
   - GKR-UX-HOME-VAL-001
-  - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-BENCH-001
   - GKR-UX-HOME-BENCH-002
   - GEB-P01-F01
@@ -138,7 +136,7 @@ Quando uma futura decisão de design entrar em conflito com esta especificação
 3. `UXA-020` e `UXA-021`;
 4. `GKR-UX-HOME-001`;
 5. `GKR-UX-HOME-VAL-001`;
-6. `GKR-UX-HOME-HANDOFF-001`;
+6. `GKR-UX-HOMES-DESIGN-HANDOFF-001`;
 7. este documento;
 8. benchmark;
 9. proposta de wireframe;
@@ -2177,7 +2175,7 @@ Rejeitar propostas que:
 
 # 40. Prompt estruturado para geração do mapa narrativo da Home
 
-O bloco abaixo pode ser usado futuramente como entrada complementar ao Prompt Mestre de `GKR-UX-HOME-HANDOFF-001`.
+O bloco abaixo pode ser usado futuramente como entrada complementar ao Prompt Mestre de `GKR-UX-HOMES-DESIGN-HANDOFF-001`.
 
 ```text
 Você está materializando somente a Home pública de guivos.com.
