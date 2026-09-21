@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.27.0
+version: 0.28.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
@@ -23,6 +23,10 @@ related:
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C4B-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
+  - GKR-JOURNEY-PERSON-001
+  - GKR-JOURNEY-COLLECTIVE-001
+  - GKR-JOURNEY-ORGANIZATION-001
+  - GKR-JOURNEY-BUSINESS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
   - GKR-JOURNEY-GAPS-001
