@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.7.4
+version: 1.7.5
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 normative: true
 maturity: designer_first_ai_optional_main_canonical_first_class
 depends_on:
@@ -194,27 +194,27 @@ A composição operacional de cada emissão é governada por `GKR-UX-HOMES-DESIG
 
 ### 4.1 Pessoa
 
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
+Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente. Quando a designer optar por usar IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e o Source Lock/Prompt aplicável.
 
 ### 4.2 Organizações e Coletivos
 
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
+Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente. Quando a designer optar por usar IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e o Source Lock/Prompt aplicável.
 
 ### 4.3 Guivos Mall
 
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
+Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente. Quando a designer optar por usar IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e o Source Lock/Prompt aplicável.
 
 ### 4.4 Guivos Travel
 
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
+Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente. Quando a designer optar por usar IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e o Source Lock/Prompt aplicável.
 
 ### 4.5 Guivos Media
 
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, `GPA-005` e Source Lock + Prompt.
+Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre e `GPA-005`. Quando a designer optar por usar IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e o Source Lock/Prompt aplicável.
 
 ### 4.6 Guivos Ads
 
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, `GPA-007` e Source Lock + Prompt.
+Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre e `GPA-007`. Quando a designer optar por usar IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e o Source Lock/Prompt aplicável.
 
 ### 4.7 Guivos Business
 
