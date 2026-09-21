@@ -2,16 +2,15 @@
 id: GKR-UX-HOME-NARR-004
 title: Distinção entre Movimento 02 e Movimento 09 — Realidade e Autoridade na Home Pública
 status: draft
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-10
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-NARR-001
 depends_on:
   - UXA-020
   - UXA-021
   - GKR-UX-HOME-001
   - GKR-UX-HOME-VAL-001
-  - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-SYS-001
   - GKR-UX-HOME-GTM-BOUNDARY-001
