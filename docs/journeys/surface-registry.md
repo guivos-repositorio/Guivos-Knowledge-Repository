@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.30.0
+version: 0.31.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 related:
   - UXA-087
   - UXA-089
@@ -65,6 +65,37 @@ Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` está definido em sua
 - `local`: validação limitada ao pacote de origem;
 - `histórico/superseded`: artefato preservado por rastreabilidade sem autoridade vigente para o estado que pretendia definir.
 
+## 2.1 Separação de contextos
+
+A leitura corrente da experiência distingue explicitamente:
+
+```text
+PESSOA
+COLETIVO
+ORGANIZAÇÃO
+BUSINESS
+```
+
+Pessoa, Coletivo e Organização são contextos de participante. **Guivos Business é produto especializado B2B**, com experiência própria, e não deve ser confundido com Organização.
+
+Os identificadores `GKR-SURF-COM-*` permanecem estáveis por rastreabilidade histórica, mas o prefixo `COM` **não define um contexto "Comercial" concorrente com Business**. No corpus vigente, esses cinco IDs pertencem ao recorte de **Guivos Ads / Opportunity Boost**.
+
+Os identificadores `GKR-SURF-BND-*` representam **fronteiras documentais**, não participantes nem produtos.
+
+Consequentemente:
+
+```text
+COM-* ≠ GUIVOS BUSINESS
+COM-* → ADS / OPPORTUNITY BOOST
+
+BND-* ≠ GUIVOS BUSINESS
+BND-* → FRONTEIRAS DOCUMENTAIS
+
+GUIVOS BUSINESS
+→ CONTEXTO DE PRODUTO PRÓPRIO
+→ GOVERNADO POR GPA-004 + AUTORIDADES BUSINESS
+```
+
 ## 3. Contagem
 
 | Categoria | Quantidade |
@@ -72,7 +103,7 @@ Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` está definido em sua
 | Pessoa | 27 |
 | Coletivo | 12 |
 | Organização | 11 |
-| camada comercial | 5 |
+| Ads / Opportunity Boost (`COM-*`, prefixo legado) | 5 |
 | fronteira documental | 2 |
 | **Total** | **57** |
 
@@ -132,13 +163,13 @@ A contagem de IDs permanece estrutural. Ela não implica que todos estejam mater
 | GKR-SURF-ORG-302 | revisão de contratação da Organização | autoridade financeira identificada | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-303 | gestão de downgrade e cancelamento da Organização | representante autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-304 | resultado e recuperação de plano/cobrança da Organização | representante autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | UXA-100-A2/A3 | [Organização](surface-registry-organization-details.md) |
-| GKR-SURF-COM-001 | configuração do anunciante | anunciante | protegido | materializado | UXA-038 | UXA-040 | UXA-041 | [Comercial](surface-registry-commercial-boundary-details.md) |
-| GKR-SURF-COM-002 | cartão patrocinado e explicação | Pessoa exposta | público/protegido | validado | UXA-038 | UXA-042 | UXA-043 | [Comercial](surface-registry-commercial-boundary-details.md) |
-| GKR-SURF-COM-003 | presença patrocinada em lista/mapa | Pessoa exposta | público/protegido | validado | UXA-038 | UXA-044 | UXA-045 | [Comercial](surface-registry-commercial-boundary-details.md) |
-| GKR-SURF-COM-004 | gestão ativa/relatório | anunciante | protegido | validado | UXA-038 | UXA-046/048/053 | UXA-047/049/054 | [Comercial](surface-registry-commercial-boundary-details.md) |
-| GKR-SURF-COM-005 | estados residuais Opportunity Boost | anunciante/Pessoa | misto | **validado** | UXA-055 | UXA-055 | UXA-099 | [Comercial](surface-registry-commercial-boundary-details.md) |
-| GKR-SURF-BND-001 | fronteira de destino externo de oportunidade | Pessoa → terceiro | externo | **examinado** | UXA-004/007/101 | sem tela por definição | **UXA-101; TRN-205 validada até a fronteira** | [Comercial](surface-registry-commercial-boundary-details.md) |
-| GKR-SURF-BND-002 | fronteira de contratação/dimensionamento assistido | Coletivo/Organização → processo assistido quando necessário | externo ao autoatendimento | parcial | GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3 | sem tela por definição | parcial; TRN-416/TRN-426 preservadas | [Comercial](surface-registry-commercial-boundary-details.md) |
+| GKR-SURF-COM-001 | configuração do anunciante | anunciante | protegido | materializado | UXA-038 | UXA-040 | UXA-041 | [Ads / Fronteiras](surface-registry-commercial-boundary-details.md) |
+| GKR-SURF-COM-002 | cartão patrocinado e explicação | Pessoa exposta | público/protegido | validado | UXA-038 | UXA-042 | UXA-043 | [Ads / Fronteiras](surface-registry-commercial-boundary-details.md) |
+| GKR-SURF-COM-003 | presença patrocinada em lista/mapa | Pessoa exposta | público/protegido | validado | UXA-038 | UXA-044 | UXA-045 | [Ads / Fronteiras](surface-registry-commercial-boundary-details.md) |
+| GKR-SURF-COM-004 | gestão ativa/relatório | anunciante | protegido | validado | UXA-038 | UXA-046/048/053 | UXA-047/049/054 | [Ads / Fronteiras](surface-registry-commercial-boundary-details.md) |
+| GKR-SURF-COM-005 | estados residuais Opportunity Boost | anunciante/Pessoa | misto | **validado** | UXA-055 | UXA-055 | UXA-099 | [Ads / Fronteiras](surface-registry-commercial-boundary-details.md) |
+| GKR-SURF-BND-001 | fronteira de destino externo de oportunidade | Pessoa → terceiro | externo | **examinado** | UXA-004/007/101 | sem tela por definição | **UXA-101; TRN-205 validada até a fronteira** | [Ads / Fronteiras](surface-registry-commercial-boundary-details.md) |
+| GKR-SURF-BND-002 | fronteira de contratação/dimensionamento assistido | Coletivo/Organização → processo assistido quando necessário | externo ao autoatendimento | parcial | GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3 | sem tela por definição | parcial; TRN-416/TRN-426 preservadas | [Ads / Fronteiras](surface-registry-commercial-boundary-details.md) |
 
 ## 5. Autoridade de planos, jornada pessoal e origem voluntária
 
@@ -155,7 +186,7 @@ Guivos Business: Start · Growth · Scale · Enterprise
 
 `PER-010`, `PER-011` e `PER-012` são responsabilidades correntes ligadas a Hoje; sua maturidade deve ser lida diretamente nas autoridades e transições vigentes.
 
-Guivos Business é produto especializado e não recebe novos IDs neste registro.
+Guivos Business é produto especializado e constitui um contexto corrente de experiência próprio. Sua continuidade é sintetizada em `docs/journeys/business.md` e governada por `GPA-004`, pelo Portfólio Funcional Business, pelas autoridades da Home Business e por `docs/plans/business.md`. A criação dessa vista não cria novos `GKR-SURF-*` neste registro.
 
 `BND-002` não é plano, produto, checkout ou fronteira exclusiva de Enterprise/Scale. Ele identifica a necessidade de contratação/dimensionamento assistido.
 
