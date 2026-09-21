@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.8
+version: 1.1.9
 owner: Experience Architecture
 last_updated: 2026-09-20
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
@@ -88,11 +88,8 @@ Para a produção externa de Design da Home Business, o pacote específico de au
 4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.3 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 5. `GPA-004` v1.6.0 — arquitetura funcional vigente do Guivos Business.
 
-A autoridade narrativa anterior permanece histórica e explicativa, mas **não deve ser adicionada automaticamente ao pacote inicial de materialização**, pois o Documento Mestre já incorpora os refinamentos de precedência posteriores.
-
 Não adicionar automaticamente:
 
-- conversão v1 supersedida;
 - checkpoints anteriores;
 - rascunhos de conversa;
 - benchmarks externos;
