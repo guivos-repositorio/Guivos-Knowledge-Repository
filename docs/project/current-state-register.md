@@ -484,6 +484,54 @@ COLETIVO
 
 Apoio, financiamento, patrocínio ou infraestrutura não transferem automaticamente propósito, governança, pertencimento ou autoridade.
 
+### 5.4 Contextos correntes de experiência
+
+A ontologia de participantes e a topologia de experiência não são a mesma coisa.
+
+Os **participantes estruturais** permanecem três:
+
+```text
+PESSOA
+ORGANIZAÇÃO
+COLETIVO
+```
+
+Nesta frente de Experience Architecture, porém, os **contextos principais de experiência** são quatro:
+
+```text
+PESSOA
+COLETIVO
+ORGANIZAÇÃO
+BUSINESS
+```
+
+A diferença é deliberada:
+
+```text
+PESSOA / COLETIVO / ORGANIZAÇÃO
+→ participantes estruturais
+→ também possuem contextos próprios de experiência
+
+GUIVOS BUSINESS
+→ produto especializado B2B
+→ possui contexto próprio de experiência
+→ NÃO é participante estrutural
+```
+
+Portanto:
+
+```text
+CONTEXTO DE EXPERIÊNCIA
+≠ TIPO DE PARTICIPANTE
+
+BUSINESS
+≠ ORGANIZAÇÃO
+≠ ADS / OPPORTUNITY BOOST
+≠ "COMERCIAL"
+```
+
+Ads / Opportunity Boost e fronteiras documentais permanecem capacidades/recortes auxiliares e não substituem os quatro contextos acima.
+
 ## 6. Domínios de Evolução
 
 Os nove Domínios de Evolução permanecem o vocabulário canônico da Journey:
