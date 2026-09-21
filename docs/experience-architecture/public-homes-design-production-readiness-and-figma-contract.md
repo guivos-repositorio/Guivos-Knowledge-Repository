@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.11
+version: 1.3.12
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -180,15 +180,15 @@ Fontes específicas:
 
 ### Pessoa
 - `GKR-UX-HOME-MASTER-001 v1.0.5`;
-- `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.1`.
+- `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.2`.
 
 ### Organizações e Coletivos
 - `GKR-UX-HOME-OC-MASTER-001 v1.0.4`;
-- `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0`.
+- `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.1`.
 
 ### Mall
 - `GKR-UX-HOME-MALL-MASTER-001 v1.1.3`;
-- `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
+- `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.1`.
 
 Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `MALL-HS-01 BASELINE_PUBLIC` — tese, pergunta-mãe, identidade Guivos e descoberta são base permanente;
@@ -200,7 +200,7 @@ Contrato corrente que o guia/Source Lock corrente deve explicitar:
 
 ### Travel
 - `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.5`;
-- `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
+- `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.1`.
 
 Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `TRAVEL-HS-01 BASELINE_PUBLIC` — pergunta-mãe, identidade Guivos, inspiração e acesso a serviços são a base;

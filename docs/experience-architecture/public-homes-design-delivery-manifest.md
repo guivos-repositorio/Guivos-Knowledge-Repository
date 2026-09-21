@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.21
+version: 7.0.22
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -51,7 +51,7 @@ Snapshots, candidates e registros de emissão anteriores pertencem à proveniên
 Quatro autoridades são universais para o fluxo de Design:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.5` — `docs/experience-architecture/public-homes-design-handoff.md`;
-2. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.3.11` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
+2. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.3.12` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
 3. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.1.3` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`;
 4. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.2` — `docs/experience-architecture/public-homes-design-production-release.md`.
 
