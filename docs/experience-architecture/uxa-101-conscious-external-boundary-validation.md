@@ -1,7 +1,7 @@
 ---
 id: UXA-101
 title: Validação da Saída Consciente para Fronteira Externa de Oportunidades
-status: draft
+status: active
 version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
@@ -14,7 +14,6 @@ related:
   - GKR-SURF-BND-001
   - GKR-TRN-205
   - GKR-JOURNEY-PERSON-001
-  - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - M7.88
 normative: false
