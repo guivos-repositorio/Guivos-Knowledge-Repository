@@ -1619,8 +1619,8 @@ Após o fechamento da auditoria integral e a captura da baseline final, permanec
 - evidência de atividade efetiva para AIaaS se incluído;
 - implantação real do perfil pessoal do fundador;
 - publicação real de conteúdo do fundador;
-- autorização high-fidelity O/C, somente mediante ato humano governado próprio;
-- high-fidelity UI/protótipo O/C, ainda não autorizados/não liberados;
+- execução de Design high-fidelity O/C, já autorizada e ainda `NOT_STARTED`, somente mediante ato de execução separado;
+- protótipo interativo O/C, ainda não autorizado/não liberado;
 - UXA-102/V5;
 - Product Engineering.
 
@@ -2065,7 +2065,7 @@ AINDA NÃO INICIADOS / NÃO AUTORIZADOS ALÉM DO BOUNDARY
 → IMPLEMENTAÇÃO / PRODUÇÃO = NOT_AUTHORIZED
 ```
 
-A cadeia interativa de `PER-002` alcançou fechamento pós-review validado, `GIA-COG-001` alcançou promoção canônica no limite arquitetural conceitual/de referência e a cadeia O/C alcançou Navigation Materialization canônica, low-fidelity validado e elegibilidade high-fidelity `PASS`. Nenhum desses fechamentos libera automaticamente high-fidelity Design, protótipo, estágio operacional ou de produto. Qualquer Source Lock adicional, `GIA-COG-002..008`, UXA-102/V5, high-fidelity Design O/C, Product Engineering, implementação, produção, teste com participantes reais ou dados reais exige ato governado próprio.
+A cadeia interativa de `PER-002` alcançou fechamento pós-review validado, `GIA-COG-001` alcançou promoção canônica no limite arquitetural conceitual/de referência e a cadeia O/C alcançou Navigation Materialization canônica, low-fidelity validado e elegibilidade high-fidelity `PASS`. A autorização high-fidelity O/C já foi concedida, mas a execução permanece `NOT_STARTED` e exige ato separado de execução. Nenhum desses fechamentos libera automaticamente protótipo interativo, estágio operacional ou de produto. Qualquer Source Lock adicional, `GIA-COG-002..008`, UXA-102/V5, protótipo interativo O/C, Product Engineering, implementação, produção, teste com participantes reais ou dados reais exige ato governado próprio.
 
 ## 30. Home Masters — estado corrente
 
