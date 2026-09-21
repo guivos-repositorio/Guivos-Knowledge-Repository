@@ -204,7 +204,7 @@ Surface Map e State Map são canônicos em nível documental. A sequência gover
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **3.49.3** |
+| Registro do Estado Atual | **3.50.0** |
 | Marco funcional | **M7.88** |
 | Última UXA funcional numerada | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — NOT_STARTED** |
@@ -214,7 +214,8 @@ Surface Map e State Map são canônicos em nível documental. A sequência gover
 | O/C Navigation Materialization Eligibility | **PASS / ACTIVE / CANONICAL / v1.0.0** |
 | O/C Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0** |
 | O/C Authenticated Wireframes | **DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS / CURRENT LOW-FIDELITY REFERENCE** |
-| O/C High-Fidelity Eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0 / AUTHORIZATION NOT_GRANTED** |
+| O/C High-Fidelity Eligibility | **PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0** |
+| O/C High-Fidelity Authorization | **GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0 / EXECUTION NOT_STARTED** |
 | Auditoria integral | **COMPLETED / PASS / 23 OF 23** |
 | Baseline final pós-auditoria | **CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a** |
 | Lotes concluídos | **A / B / C / D / E / F / G** |
