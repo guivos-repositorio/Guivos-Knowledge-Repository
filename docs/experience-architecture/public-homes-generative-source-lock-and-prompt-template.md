@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.3.3
+version: 2.3.4
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -332,8 +332,8 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.11` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.13` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.12` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
 - `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
 - `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 - `GKR-UX-HOMES-OUTCOME-001 v1.0.0` — `docs/experience-architecture/public-homes-value-outcome-principle.md`;
