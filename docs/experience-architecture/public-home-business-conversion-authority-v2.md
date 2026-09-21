@@ -2,18 +2,16 @@
 id: GKR-UX-HOME-BUSINESS-CONVERSION-002
 title: Autoridade de Conversão Global — Home Pública — Guivos Business — v2
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
 last_updated: 2026-08-16
-parent: GKR-UX-HOME-BUSINESS-CONVERSION-001
+parent: GKR-UX-HOME-BUSINESS-MASTER-001
 depends_on:
   - GKR-UX-HOME-BUSINESS-NARRATIVE-001
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
   - GPA-004
   - GKR-STATE-001
   - ROADMAP-12.79.0
-supersedes:
-  - GKR-UX-HOME-BUSINESS-CONVERSION-001
 normative: true
 ---
 
@@ -21,13 +19,13 @@ normative: true
 
 ## 1. Finalidade
 
-Este documento substitui a autoridade de conversão anterior da Home Pública do Guivos Business no ponto em que ela separava `Online / Assistida / Especializada` como formas distintas de contratação.
+Este documento governa a conversão corrente da Home Pública do Guivos Business e sua relação com contratação, implementação e operação em escala global.
 
-A decisão validada posteriormente é mais simples e mais adequada à escala global:
+Regra vigente:
 
 > **Toda contratação do Guivos Business deve ser concebida como contratação online. O que varia é a forma de implementação e condução da operação depois da contratação.**
 
-A arquitetura comercial passa a separar somente:
+A arquitetura comercial separa:
 
 ```text
 PLANO / CAPACIDADE
@@ -233,21 +231,11 @@ Síntese operacional:
 
 > **Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.**
 
-## 7. O que esta autoridade substitui
+## 7. Separação obrigatória
 
-Fica substituída, para a Home Business e futuras implementações derivadas, a arquitetura anterior:
+Não criar formas paralelas de contratação como `Online`, `Assistida` ou `Especializada`, nem tratar `Self-service`, `Com apoio do suporte` e `Gerenciado` como canais comerciais distintos.
 
-```text
-FORMA DE CONTRATAÇÃO
-Online · Assistida · Especializada
-
-+
-
-MODELO DE SERVIÇO
-Self-service · Assisted · Managed
-```
-
-A arquitetura vigente passa a ser:
+A arquitetura vigente é:
 
 ```text
 CONTRATAÇÃO
