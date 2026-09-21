@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.10
+version: 1.1.11
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
 depends_on:
   - GKR-UX-HOME-BUSINESS-MASTER-001
@@ -62,7 +62,7 @@ RECONCILIATION
 → CURRENT DESIGNER-FIRST / AI-OPTIONAL CONTRACT APPLIES
 
 DOCUMENTO MESTRE
-GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4
+GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.5
 
 CONVERSÃO VIGENTE
 GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1
@@ -83,7 +83,7 @@ Objetivo do lock:
 Para a produção externa de Design da Home Business, o pacote específico de autoridade deve ser restrito a:
 
 1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — este Source Lock;
-2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.4 — `docs/experience-architecture/public-home-business-master-document.md`;
+2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.5 — `docs/experience-architecture/public-home-business-master-document.md`;
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002` v1.0.0 — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.3 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 5. `GPA-004` v1.6.0 — arquitetura funcional vigente do Guivos Business.
@@ -505,17 +505,43 @@ Supporting copy:
 
 O componente deve ser concebido como **configurador comercial**, não apenas calculadora simples.
 
-Fatores candidatos podem incluir, quando formalizados:
+A composição Self-service deve preservar as seguintes dimensões, quando aplicáveis e formalizadas:
 
-- número de pessoas;
-- oferta;
-- plano/capacidade;
-- tipo de operação;
-- Intelligence;
-- integrações;
-- governança;
-- serviço;
-- mercado.
+| Dimensão | Papel |
+|---|---|
+| Oferta | Programas de Incentivo, Journey custeado ou ambas |
+| Escala | participantes, acessos e demais volumes formalizados |
+| Intelligence | profundidade/capacidades aplicáveis |
+| Integrações | eventos, conexões e integrações autorizadas |
+| Governança | requisitos de gestão e controle |
+| Nível de serviço | entitlement contratual aplicável |
+| Implementação/operação | Self-service, suporte ou gerenciado |
+| Orçamento de incentivo | recurso pré-pago separado da assinatura |
+| Acessos Journey custeados | relação econômica própria |
+
+Regra congelada de leitura:
+
+```text
+CONFIGURAÇÃO ESCOLHIDA
+→ REQUISITOS DE CAPACIDADE
+→ PLANO QUE SUPORTA INTEGRALMENTE OS REQUISITOS
+→ VALOR DA CONFIGURAÇÃO
+```
+
+O plano não é escolhido apenas pelo preço nem resulta de uma soma arbitrária de módulos. Ele representa a camada de capacidade que comporta a configuração contratada.
+
+O valor deve ser legível em parcelas distintas:
+
+```text
+PLANO BUSINESS
++ COMPONENTES VARIÁVEIS APLICÁVEIS
++ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+ORÇAMENTO PRÉ-PAGO DE INCENTIVO
+→ RECURSO OPERACIONAL SEPARADO
+```
+
+Os thresholds quantitativos, entitlements, SLAs, preços unitários e fórmulas exatas ainda não formalizados não podem ser inventados pelo Design ou pelo configurador conceitual.
 
 Resultado conceitual:
 
@@ -801,7 +827,7 @@ Usar:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.4` como autoridade comum de handoff;
 2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.9`;
-3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4`;
+3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.5`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1`;
 5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.4`;
 6. `GPA-004 v1.7.2`.
