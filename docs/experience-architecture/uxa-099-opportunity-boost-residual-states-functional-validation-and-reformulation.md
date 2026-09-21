@@ -1,335 +1,170 @@
 ---
 id: UXA-099
-title: Validação Funcional e Reformulação dos Dez Estados Residuais do Opportunity Boost
+title: Contrato Funcional Corrente dos Estados Residuais do Opportunity Boost
 status: active
-version: 0.1.0
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-09-21
 parent: UXA-055
 depends_on:
   - UXA-038
   - UXA-039
   - UXA-043
   - UXA-045
-  - UXA-050
-  - UXA-052
-  - UXA-054
+  - UXA-047
+  - UXA-049
   - GEM-007-A1
   - GEM-010-A2
 related:
   - GPA-007
-  - M7.86
+  - GKR-JOURNEY-SURFACE-DETAIL-ADS-BOUNDARIES-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: false
 ---
 
-# Validação Funcional e Reformulação dos Dez Estados Residuais do Opportunity Boost
+# Contrato Funcional Corrente dos Estados Residuais do Opportunity Boost
 
-> **F-016-A — desmaterialização física.** Os SVGs desta frente foram removidos do corpus vigente. Qualquer nome `.svg` remanescente neste documento é **proveniência histórica**, não arquivo disponível, não autoridade visual e não autorização de Design. O contrato funcional permanece governado pelo texto e pelas autoridades funcionais relacionadas.
-
+> **Proveniência F-016.** Este contrato foi originalmente validado a partir de materializações low-fidelity hoje removidas. O vínculo `parent: UXA-055` preserva somente proveniência histórica. Nenhum SVG, composição móvel ou baseline visual histórico é entrada corrente de Design ou IA.
 
 ## 1. Finalidade
 
-Validar funcionalmente os dez estados móveis materializados pela UXA-055 e fechar a pendência residual do Opportunity Boost sem ampliar o escopo para algoritmo, cobrança, política jurídica final, protótipo, teste com pessoas ou Engenharia de Produto.
+Consolidar os estados residuais correntes do Opportunity Boost de forma **independente de canal**, preservando distinções entre erro, inventário, baixa oferta, alteração material, preferência, denúncia e contestação.
 
-A pergunta de validação é:
+A regra superior permanece:
 
-> **Os dez estados distinguem erro, zero e baixa oferta, preservam a autoridade do último estado confirmado sem manter entrega materialmente insegura, protegem o catálogo orgânico, permitem controles claros e reversíveis e separam denúncia, contestação e preferência sem expor a pessoa ao anunciante?**
+> distribuição paga amplia exposição identificada; não compra relevância orgânica, recomendação pessoal, prioridade de jornada ou resultado.
 
-## 2. Resultado
+## 2. Estados correntes
 
-O conjunto é considerado **funcionalmente válido após reformulação controlada de dois wireframes e consolidação transversal de idempotência**.
+| Estado | Regra funcional corrente |
+|---|---|
+| erro técnico patrocinado | preservar catálogo orgânico e permitir nova tentativa sem representar erro como zero inventário |
+| falha de atualização do anunciante | versão candidata não substitui a confirmada; mudança material não confirmada bloqueia nova entrega até revisão |
+| inventário patrocinado indisponível | zero apurado não amplia critérios automaticamente e não altera resultados orgânicos |
+| baixa oferta orgânica | reduzir ou eliminar publicidade; inventário pago não pode compensar artificialmente baixa oferta |
+| mostrar menos deste tipo | preferência publicitária revisável, separada de filtros orgânicos |
+| desativar oportunidades patrocinadas | preservar catálogo orgânico e permitir reversão consciente |
+| ocultar campanha específica | afetar somente a campanha identificada, sem revelar identidade ou motivo da Pessoa ao anunciante |
+| revisar e desfazer preferências | mostrar tipo, objeto, data, escopo e estado atual; reversões são independentes |
+| denunciar conteúdo ou informação | fluxo de integridade separado de preferência publicitária |
+| contestar uso indevido de dados | fluxo de privacidade/governança separado de denúncia e preferência |
 
-Dos dez SVGs examinados:
+Esses estados são responsabilidades funcionais. Não determinam número final de telas, componentes, breakpoints ou composição visual.
 
-- oito são aprovados sem alteração visual;
-- dois exigem reformulação mínima;
-- nenhum novo SVG, ID de superfície ou ID de transição é criado.
+## 3. Alteração material não confirmada
 
-As reformulações incidem somente sobre:
+Quando uma alteração candidata material não puder ser confirmada:
 
-1. `uxa-055-advertiser-update-failure-mobile.svg`;
-2. `uxa-055-review-reverse-preferences-mobile.svg`.
+1. a última versão confirmada permanece a autoridade de configuração;
+2. a versão candidata não é aplicada silenciosamente;
+3. nova entrega entra em pausa protetiva;
+4. eventos válidos anteriores permanecem preservados;
+5. nenhuma nova entrega ou gasto futuro é presumido durante a incerteza;
+6. o anunciante pode revisar, descartar ou reenviar conscientemente;
+7. retomada exige confirmação válida e nova verificação dos gates aplicáveis.
 
-## 3. Escopo examinado
+A pausa protetiva não transforma o valor candidato em verdade canônica. Ela apenas impede continuidade baseada em informação possivelmente desatualizada.
 
-| Estado residual | Artefato | Veredito |
-|---|---|---|
-| erro técnico patrocinado | `uxa-055-sponsored-technical-error-mobile.svg` | válido sem reformulação |
-| falha de atualização do anunciante | `uxa-055-advertiser-update-failure-mobile.svg` | reformulado |
-| inventário patrocinado indisponível | `uxa-055-sponsored-inventory-unavailable-mobile.svg` | válido sem reformulação |
-| baixa oferta orgânica | `uxa-055-low-organic-supply-mobile.svg` | válido sem reformulação |
-| mostrar menos deste tipo | `uxa-055-show-less-type-mobile.svg` | válido sem reformulação |
-| desativar oportunidades patrocinadas | `uxa-055-disable-sponsored-opportunities-mobile.svg` | válido sem reformulação |
-| ocultar campanha específica | `uxa-055-hide-campaign-mobile.svg` | válido sem reformulação |
-| revisar e desfazer preferências | `uxa-055-review-reverse-preferences-mobile.svg` | reformulado |
-| denunciar conteúdo ou informação | `uxa-055-report-content-mobile.svg` | válido sem reformulação |
-| contestar uso indevido de dados | `uxa-055-contest-data-use-mobile.svg` | válido sem reformulação |
+## 4. Preferências e reversibilidade
 
-## 4. Lacunas identificadas
+Controles da Pessoa devem preservar escopos distintos:
 
-### 4.1 Alteração material não confirmada mantinha entrega ativa por inércia
+```text
+MOSTRAR MENOS DESTE TIPO
+≠ OCULTAR CAMPANHA
+≠ DESATIVAR PATROCINADOS
+≠ DENUNCIAR CONTEÚDO
+≠ CONTESTAR USO DE DADOS
+```
 
-O wireframe de falha de atualização apresentava simultaneamente:
-
-- último estado confirmado `ATIVA`;
-- capacidade oficial de 40 vagas;
-- capacidade candidata de 25 vagas;
-- falha ao confirmar a alteração;
-- declaração de que nenhuma pausa seria presumida.
-
-A capacidade é informação material. Uma tentativa explícita de reduzi-la cria incerteza suficiente para impedir nova entrega baseada na informação anterior até que a situação seja revisada. Manter a entrega ativa por inércia entraria em tensão com UXA-038, UXA-039, UXA-050 e UXA-054, que impedem entrega com informação material potencialmente desatualizada.
-
-### 4.2 Histórico de preferências incompleto em data e superfície
-
-O wireframe de revisão apresentava data e superfície para a campanha oculta, mas não registrava o mesmo contexto mínimo para todas as escolhas exibidas.
-
-A própria UXA-055 exige que a revisão permita compreender data, superfície e escopo. Sem esse contexto, a pessoa poderia não distinguir quando e onde uma preferência geral ou uma desativação foi aplicada.
-
-### 4.3 Repetição técnica precisava de contrato transversal explícito
-
-Os artefatos já exigiam tentativa consciente e preservação do último estado confirmado, mas ainda não consolidavam a regra de que repetição da mesma tentativa não poderá duplicar:
-
-- alteração;
-- transição de estado;
-- impressão válida;
-- evento válido;
-- consumo de orçamento;
-- preferência da pessoa.
-
-A idempotência é consolidada nesta validação como propriedade funcional, sem definir mecanismo técnico.
-
-## 5. Reformulação aprovada
-
-### 5.1 Falha de atualização do anunciante
-
-Quando a alteração candidata for material e sua confirmação falhar:
-
-1. a última versão confirmada permanece a autoridade histórica e de configuração;
-2. a versão candidata não é aplicada;
-3. a entrega futura entra em pausa automática de proteção;
-4. a pausa registra causa e horário;
-5. nenhum novo evento válido de entrega ou gasto futuro é presumido durante a incerteza;
-6. eventos válidos anteriores permanecem preservados;
-7. o anunciante poderá revisar, descartar ou reenviar conscientemente a alteração;
-8. reenvio da mesma alteração não duplica versão, estado, evento ou gasto;
-9. retomada dependerá de confirmação válida e nova verificação dos gates aplicáveis.
-
-A pausa protetiva não transforma o rascunho local em estado canônico e não presume que o valor candidato seja verdadeiro. Ela somente impede que uma possível mudança material declarada seja ignorada durante a falha.
-
-### 5.2 Revisão e reversão de preferências
-
-Cada escolha apresentada no histórico deverá mostrar, de forma compatível com seu escopo:
+Cada preferência revisável deve apresentar contexto suficiente para compreensão de:
 
 - tipo de controle;
 - objeto afetado;
 - data de aplicação;
-- superfície ou conjunto de superfícies suportadas;
+- superfície ou conjunto de superfícies aplicáveis;
 - estado atual;
-- possibilidade de revisão e reversão.
+- possibilidade de reversão.
 
-As reversões permanecem independentes. Reativar publicidade não restaura campanha expirada, inelegível ou encerrada e não cria personalização retroativa.
+Reativar publicidade não restaura campanha expirada, encerrada ou inelegível e não cria personalização retroativa.
 
-### 5.3 Idempotência transversal
+## 5. Idempotência funcional
 
-A repetição da mesma intenção deverá ser funcionalmente idempotente:
+A repetição da mesma intenção não deve duplicar efeito lógico:
 
 ```text
-recarregar conteúdo patrocinado
+RECARREGAR CONTEÚDO PATROCINADO
 → não duplica impressão, evento, gasto ou preferência
 
-reenviar a mesma alteração ainda não confirmada
+REENVIAR A MESMA ALTERAÇÃO AINDA NÃO CONFIRMADA
 → não cria duas versões canônicas nem duas transições equivalentes
 
-repetir confirmação já aplicada
+REPETIR CONFIRMAÇÃO JÁ APLICADA
 → preserva o mesmo efeito lógico
 ```
 
-A UXA-099 não define chave técnica, armazenamento, deduplicação, protocolo de rede ou algoritmo de mensuração.
+Este contrato não define chave técnica, armazenamento, protocolo, deduplicação ou algoritmo de mensuração.
 
-## 6. Validação individual dos dez estados
+## 6. Proteções correntes
 
-### 6.1 Erro técnico patrocinado
-
-Confirmado:
-
-- erro técnico é distinguível de zero inventário;
-- catálogo orgânico permanece utilizável;
-- região, busca e filtros são preservados;
-- tentar novamente afeta somente o conteúdo patrocinado;
-- continuar sem publicidade é uma saída legítima;
-- repetição não autoriza duplicação de impressão, evento ou gasto;
-- a pessoa não é identificada ao anunciante.
-
-### 6.2 Falha de atualização do anunciante
-
-Confirmado após reformulação:
-
-- último estado confirmado permanece identificável;
-- alteração candidata permanece separada da autoridade canônica;
-- mudança material não confirmada não mantém entrega futura por inércia;
-- pausa de proteção é distinta de aplicação da candidata;
-- tentativa e referência técnica são preservadas;
-- revisão precede novo envio;
-- reenvio é idempotente;
-- suporte não recebe dados de pessoas.
-
-### 6.3 Inventário patrocinado indisponível
-
-Confirmado:
-
-- zero significa contagem apurada;
-- zero não é falha técnica;
-- critérios não são ampliados automaticamente;
-- ordem e catálogo orgânicos permanecem inalterados;
-- nova consulta depende de ação explícita da pessoa.
-
-### 6.4 Baixa oferta orgânica
-
-Confirmado:
-
-- pouca oferta orgânica reduz ou elimina publicidade;
-- densidade não é compensada;
-- critérios, região e filtros permanecem iguais;
-- campanha paga não adquire posição orgânica;
-- inventário pago disponível não contorna a proteção de densidade.
-
-### 6.5 Mostrar menos deste tipo
-
-Confirmado:
-
-- o tipo publicitário é identificável;
-- a preferência é separada de filtros de oportunidades;
-- categoria orgânica permanece acessível;
-- confirmação começa vazia;
-- a escolha é revisável e reversível;
-- denúncia e contestação permanecem em fluxos diferentes.
-
-### 6.6 Desativar oportunidades patrocinadas
-
-Confirmado:
-
-- superfícies suportadas são explícitas;
-- Tela Hoje e Jornada permanecem fora do inventário;
-- busca, filtros e catálogo orgânicos são preservados;
-- escolha é reversível;
-- confirmação começa vazia;
-- ocultação de campanha e denúncia continuam ações distintas.
-
-### 6.7 Ocultar campanha específica
-
-Confirmado:
-
-- somente a campanha identificada é afetada;
-- Lista e Mapa preservam consulta, região, filtros e orgânico;
-- identidade e motivo da pessoa não são revelados ao anunciante;
-- confirmação começa vazia;
-- ocultar, reduzir e desativar mantêm escopos diferentes;
-- denúncia permanece fluxo de integridade separado.
-
-### 6.8 Revisar e desfazer preferências
-
-Confirmado após reformulação:
-
-- campanha oculta, tipo reduzido e patrocinados desativados aparecem separadamente;
-- data, superfície e escopo ficam compreensíveis para cada escolha;
-- reversões são independentes;
-- reativação não restaura campanha expirada ou inelegível;
-- denúncias e contestações não aparecem como preferências.
-
-### 6.9 Denunciar conteúdo ou informação
-
-Confirmado:
-
-- fluxo pertence à integridade da oportunidade;
-- motivo não começa selecionado;
-- revisão poderá envolver conteúdo, elegibilidade ou segurança;
-- identidade da pessoa não é enviada ao anunciante;
-- denúncia não altera automaticamente preferência publicitária.
-
-### 6.10 Contestar uso indevido de dados
-
-Confirmado:
-
-- fluxo pertence a privacidade e governança;
-- denúncia de conteúdo permanece separada;
-- motivo não começa selecionado;
-- dados protegidos permanecem explicitamente excluídos;
-- contestação e identidade da pessoa não são enviadas ao anunciante;
-- explicação `Por que estou vendo isto?` permanece acessível;
-- contestação não altera preferência automaticamente.
-
-## 7. Cobertura resultante do Opportunity Boost
-
-Após esta validação, o Opportunity Boost possui:
-
-- **46 wireframes materializados**;
-- **46 wireframes funcionalmente validados pelos respectivos pacotes**;
-- **0 estados residuais pendentes da UXA-055**;
-- 25 artefatos que continuam sob a autoridade transversal histórica da UXA-050, sem ampliação retroativa do escopo daquela validação.
-
-A UXA-099 valida os dez artefatos residuais como um pacote próprio e não reabre os 36 wireframes anteriormente validados.
-
-## 8. Impacto proposto na cobertura global
-
-| Indicador | Resultado após eventual integração |
-|---|---:|
-| SVGs existentes e referenciados | **109** |
-| associações individuais | **109** |
-| perfis de rastreabilidade | **28** |
-| com validação funcional vigente | **109** |
-| pendentes de validação específica | **0** |
-| IDs granulares com referência visual | **30 de 40** |
-| responsabilidades sem SVG dedicado | **9** |
-| superfícies granulares | **40** |
-| transições granulares | **37** |
-
-Nenhum contador de superfície, transição, associação, perfil ou SVG é alterado; somente o estado funcional dos dez SVGs residuais muda.
-
-## 9. Proteções preservadas
-
-- pagamento amplia distribuição identificada, não relevância funcional;
 - primeiro resultado orgânico permanece orgânico;
-- baixa oferta orgânica reduz publicidade;
-- ausência de inventário não amplia critérios;
-- erro técnico não é representado como zero;
-- mudança material potencial não é ignorada por falha de confirmação;
-- preferência negativa prevalece sobre entrega contratada;
-- controles da pessoa não reduzem o catálogo orgânico;
-- denúncia, contestação e preferência permanecem taxonomias distintas;
-- anunciante e financiador não recebem identidade, motivo, preferência ou contestação da pessoa;
-- relato protegido, compreensão inicial, Momento Atual, Próximo Passo, mensagens e inferências sensíveis permanecem excluídos de publicidade;
-- repetição da mesma intenção não duplica efeito lógico;
-- nenhuma campanha, cobrança, algoritmo ou perfil publicitário individual é criado.
+- pagamento não altera relevância funcional;
+- localização contínua e histórico territorial sensível não alimentam campanhas;
+- preferência negativa prevalece sobre entrega contratada no escopo aplicável;
+- controles publicitários não reduzem o catálogo orgânico;
+- anunciante ou financiador não recebem identidade, motivo, preferência, denúncia ou contestação da Pessoa por conveniência;
+- relato protegido, compreensão inicial, Momento Atual, Próximo Passo, mensagens e inferências sensíveis permanecem fora do uso publicitário sem autoridade específica;
+- erro técnico, zero inventário e baixa oferta permanecem estados distintos.
 
-## 10. Limites
+## 7. Relação com as superfícies correntes
 
-Esta validação não cria ou aprova:
+```text
+COM-001
+→ configuração / revisão / confirmação do anunciante
+
+COM-002
+→ unidade patrocinada + explicação + controles da Pessoa
+
+COM-003
+→ presença patrocinada em Lista / Mapa
+
+COM-004
+→ campanha ativa / relatório / alterações / encerramento
+
+COM-005
+→ estados residuais deste contrato
+```
+
+`COM-005` permanece funcionalmente validada por este contrato. Isso **não promove** `TRN-305`, cuja ligação ponta a ponta continua parcial no Transition Registry.
+
+## 8. Limites
+
+Este contrato não cria ou aprova:
 
 - política jurídica final de publicidade, denúncia, contestação ou retenção;
 - limiar definitivo de agregação e privacidade;
 - algoritmo de entrega, leilão, densidade ou frequência;
 - antifraude técnico;
 - mecanismo técnico de idempotência;
+- cobrança, checkout ou faturamento;
 - design visual final;
-- acessibilidade técnica;
 - protótipo navegável;
 - teste com pessoas;
-- checkout, faturamento, cobrança ou campanha real;
-- implementação de `TRN-304` ou `TRN-306`;
-- efeito externo de oportunidades em `TRN-205`;
+- implementação de `TRN-304`, `TRN-305` ou `TRN-306`;
 - Engenharia de Produto.
 
-## 11. Estado funcional
+## 9. Estado
 
-`functionally_valid_after_controlled_reformulation — all ten UXA-055 residual mobile states validated; advertiser material-update failure now enters protective automatic pause, preference history carries complete temporal/surface context, and retries are functionally idempotent`.
+```text
+COM-005
+→ FUNCTIONALLY VALIDATED
 
-## 12. Próximos atos governados
+CHANNEL-SPECIFIC HISTORICAL WIREFRAMES
+→ ABSORBED / GIT PROVENANCE
 
-Com a integração futura da UXA-099:
+TRN-305
+→ PARTIAL
 
-1. `V3 — dez estados residuais UXA-055` poderá ser encerrada;
-2. `V4 — efeito externo de oportunidades` passará a ser a próxima prioridade da fila;
-3. `TRN-304` e `TRN-306` permanecerão parciais;
-4. nenhuma jornada será promovida automaticamente;
-5. UXA-100 não será iniciada automaticamente;
-6. Engenharia de Produto permanecerá pausada antes de W0-01.
+PRODUCT ENGINEERING
+→ NOT RELEASED
+```

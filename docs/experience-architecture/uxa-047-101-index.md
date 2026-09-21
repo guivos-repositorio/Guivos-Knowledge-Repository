@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Corrente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.51.0
+version: 3.52.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-21
 depends_on:
@@ -51,10 +51,9 @@ Para continuidade de Journey e prototipação, a entrada preferencial é [Jornad
 
 - [UXA-047](uxa-047-opportunity-boost-active-campaign-management-functional-validation-and-reformulation.md)
 - [UXA-049](uxa-049-opportunity-boost-aggregated-report-functional-validation-and-reformulation.md)
-- [UXA-050](uxa-050-opportunity-boost-complete-wireframe-set-functional-validation.md)
-- [UXA-052](uxa-052-opportunity-boost-mobile-advertiser-configuration-functional-validation-and-reformulation.md)
-- [UXA-054](uxa-054-opportunity-boost-mobile-active-campaign-management-functional-validation-and-reformulation.md)
 - [UXA-099](uxa-099-opportunity-boost-residual-states-functional-validation-and-reformulation.md)
+
+As validações históricas de conjunto completo e de canal específico `UXA-050`, `UXA-052` e `UXA-054` foram absorvidas pelos contratos correntes acima e pelos registries. Sua proveniência permanece no Git.
 
 ## 3. Coletivos — frentes correntes
 
