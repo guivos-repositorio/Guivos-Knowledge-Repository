@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.7
+version: 1.1.8
 owner: Experience Architecture
 last_updated: 2026-09-20
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
@@ -71,7 +71,7 @@ CONTRATOS DE AUTORIDADE
 GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3
 
 ARQUITETURA FUNCIONAL
-GPA-004 v1.6.0
+GPA-004 v1.7.2
 ```
 
 Objetivo do lock:
@@ -466,11 +466,22 @@ ENTERPRISE
 Governe em alta complexidade e escala.
 ```
 
+O pricing de referência vigente, governado economicamente e refletido em `docs/plans/business.md`, é:
+
+| Plano | Mensal | Anual |
+|---|---:|---:|
+| Start | R$ 299,00 | R$ 2.990,00 |
+| Growth | R$ 799,00 | R$ 7.990,00 |
+| Scale | a partir de R$ 1.990,00 | contrato anual |
+| Enterprise | sob consulta | contrato anual |
+
+Esses valores constituem **baseline comercial de referência vigente no GKR**. Eles não equivalem, isoladamente, a autorização automática de cobrança, publicação irrestrita da oferta ou inferência de entitlements ainda não formalizados.
+
 A Home deve permitir comparação entre planos por matriz, tabela ou interação equivalente.
 
 A existência do comparativo **não autoriza inventar**:
 
-- preços;
+- preços diferentes da baseline comercial vigente;
 - limites quantitativos;
 - número de usuários;
 - quantidade de campanhas;
@@ -695,8 +706,8 @@ Não inventar como vigentes:
 - quantidade de pessoas atendidas;
 - países ativos;
 - moedas ativas;
-- preços;
-- descontos;
+- preços diferentes da baseline comercial vigente;
+- descontos não formalizados;
 - limites por plano;
 - SLA;
 - entitlements;
@@ -726,7 +737,7 @@ Durante Design, quando necessário para testar hierarquia, volume, comportamento
 - `[VISUALIZAÇÃO ANALÍTICA — CONCEITUAL]`;
 - `[INDICADOR — EXEMPLO / NÃO REAL]`;
 - `[RELAÇÃO OU TENDÊNCIA — ILUSTRATIVA]`;
-- `[PREÇO — A DEFINIR]`;
+- `[PREÇO — A DEFINIR]`, somente quando a dimensão ainda não possuir baseline vigente;
 - `[LIMITE DO PLANO — A DEFINIR]`;
 - `[MOEDA — CONFORME MERCADO]`;
 - `[CONFIGURAÇÃO — EXEMPLO]`;
@@ -738,7 +749,7 @@ Placeholders devem ser inequivocamente não reais.
 
 Continuam fora deste Source Lock:
 
-- preços finais;
+- condições finais de publicação/oferta dos preços e variações comerciais por mercado;
 - limites e entitlements dos quatro planos;
 - fórmula comercial do configurador;
 - pricing por participante/acesso;
@@ -792,11 +803,11 @@ O consumo corrente da Home Business é resolvido pelo Manifesto canônico vigent
 Usar:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.2` como autoridade comum de handoff;
-2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.7`;
+2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.8`;
 3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
 5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3`;
-6. `GPA-004 v1.6.0`.
+6. `GPA-004 v1.7.2`.
 
 ```text
 SOURCE OF TRUTH
