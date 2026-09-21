@@ -195,7 +195,7 @@ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
 
 Surface Map e State Map são canônicos em nível documental. A sequência governada posterior também concluiu a Navigation Materialization canônica e os wireframes autenticados low-fidelity, com Delivery v0.1.0 e Validation v1.0.0 = PASS. Permanecem não liberados por inferência:
 
-- high-fidelity Design (elegibilidade PASS, autorização NOT_GRANTED);
+- execução high-fidelity O/C (elegibilidade PASS, autorização GRANTED, execução NOT_STARTED e dependente de ato separado);
 - protótipo autenticado O/C;
 - implementação;
 - Product Engineering.
