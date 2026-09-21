@@ -708,8 +708,12 @@ LOW-FIDELITY WIREFRAMES
 HIGH-FIDELITY ELIGIBILITY
 → PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0
 
-HIGH-FIDELITY DESIGN AUTHORIZATION / UI / PROTÓTIPO
-→ NOT AUTHORIZED
+HIGH-FIDELITY DESIGN AUTHORIZATION
+→ GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
+→ EXECUTION = NOT_STARTED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
@@ -718,7 +722,7 @@ PRODUCT ENGINEERING
 
 A antiga proposta pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece somente `HOLD_REVIEW` e não é autoridade vigente.
 
-Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. A elegibilidade para **Navigation Materialization** foi adjudicada como `PASS` e a materialização documental foi posteriormente autorizada, executada, validada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os **Authenticated Wireframes low-fidelity** foram então autorizados, entregues e funcionalmente validados com `PASS` por `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A elegibilidade high-fidelity O/C foi posteriormente adjudicada como `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0`. High-fidelity Design/UI, protótipo, implementação e Engenharia continuam não autorizados.
+Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. A elegibilidade para **Navigation Materialization** foi adjudicada como `PASS` e a materialização documental foi posteriormente autorizada, executada, validada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os **Authenticated Wireframes low-fidelity** foram então autorizados, entregues e funcionalmente validados com `PASS` por `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A elegibilidade high-fidelity O/C foi adjudicada como `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0` e a autorização humana subsequente foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`. A execução high-fidelity permanece `NOT_STARTED`; protótipo interativo, implementação e Product Engineering continuam não liberados.
 
 ```text
 DOCUMENTAÇÃO
@@ -940,7 +944,7 @@ REBUILD_REQUIRED
 → 0
 ```
 
-A remediação foi documental, sem rebuild conceitual. `GKR-UX-SPECIALIZED-HOMES-RECONCILIATION-001 v1.1.5` governa somente estado atual, dependências vigentes, conflitos de continuidade e gates; as GPAs continuam governando os Produtos e os Masters preservam a arquitetura narrativa/funcional.
+A reconciliação corrente das Homes especializadas é consumida diretamente pelos respectivos Masters, Source Locks quando aplicáveis, GPAs e pelo Manifesto canônico de entrega para Design. O antigo documento transversal de reconciliação foi absorvido e permanece somente na história do Git.
 
 Preservações:
 
