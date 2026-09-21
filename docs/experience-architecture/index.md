@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.23.0
+version: 1.24.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
@@ -84,6 +84,43 @@ Para prototipação que atravesse uma Home e entre em experiência autenticada, 
 - [Catálogo Integrado de Telas](../journeys/screen-catalog.md);
 - [Registro de Superfícies e Estados](../journeys/surface-registry.md);
 - [Registro de Transições](../journeys/transition-registry.md).
+
+### 3.1 Contextos principais de experiência
+
+Para leitura de Experience/Journey, usar quatro contextos principais:
+
+```text
+PESSOA
+COLETIVO
+ORGANIZAÇÃO
+BUSINESS
+```
+
+A ontologia estrutural continua distinta:
+
+```text
+PESSOA / COLETIVO / ORGANIZAÇÃO
+→ PARTICIPANTES E CONTEXTOS DE EXPERIÊNCIA
+
+GUIVOS BUSINESS
+→ PRODUTO ESPECIALIZADO B2B
+→ CONTEXTO PRÓPRIO DE EXPERIÊNCIA
+→ NÃO É PARTICIPANTE ESTRUTURAL
+```
+
+Não criar um quinto contexto chamado `Comercial`.
+
+```text
+COM-*
+→ IDS LEGADOS DE ADS / OPPORTUNITY BOOST
+
+BND-*
+→ FRONTEIRAS DOCUMENTAIS
+
+ADS / OPPORTUNITY BOOST / BND-*
+→ RECORTES AUXILIARES
+→ NÃO SUBSTITUEM BUSINESS
+```
 
 ## 4. Organização e Coletivo autenticados
 
