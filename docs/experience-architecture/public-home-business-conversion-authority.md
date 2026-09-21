@@ -1,11 +1,12 @@
 ---
 id: GKR-UX-HOME-BUSINESS-CONVERSION-001
 title: Autoridade de Conversão — Home Pública — Guivos Business
-status: active
-version: 1.0.0
+status: superseded
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-16
+last_updated: 2026-09-20
 parent: GKR-UX-HOME-BUSINESS-AUTHORITY-001
+superseded_by: GKR-UX-HOME-BUSINESS-CONVERSION-002
 depends_on:
   - GKR-UX-HOME-BUSINESS-NARRATIVE-001
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
@@ -13,10 +14,12 @@ depends_on:
   - GKR-BUSINESS-CONTINUITY-001
   - GKR-STATE-001
   - ROADMAP-12.79.0
-normative: true
+normative: false
 ---
 
 # Autoridade de Conversão — Home Pública — Guivos Business
+
+> **SUPERSEDIDA / NÃO NORMATIVA.** Esta autoridade permanece apenas como proveniência da evolução da Home Business. A regra corrente é `GKR-UX-HOME-BUSINESS-CONVERSION-002`: contratação online em todos os modelos; Self-service, Com apoio do suporte e Gerenciado são modelos de implementação/operação após a contratação.
 
 ## 1. Finalidade
 
