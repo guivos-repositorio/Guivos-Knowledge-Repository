@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
 title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 status: active
-version: 3.1.2
+version: 3.1.3
 owner: Experience Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-21
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
 depends_on:
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -65,13 +65,14 @@ Trabalhar uma Home por vez.
 Para cada Home, carregar apenas:
 
 ```text
-COMMON AUTHORITIES
-+
-HOME READ-FIRST / SOURCE LOCK
+UNIVERSAL DESIGN AUTHORITIES
 +
 HOME MASTER
 +
 HOME-SPECIFIC AUTHORITIES
++
+HOME READ-FIRST / SOURCE LOCK
+→ ONLY WHEN APPLICABLE OR WHEN AI IS USED
 ```
 
 Não misturar documentos específicos de Homes diferentes por conveniência.

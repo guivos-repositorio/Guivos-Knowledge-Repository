@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 title: Homes Públicas — Autorização Governada de Design Production Release
 status: active
-version: 1.3.1
+version: 1.3.2
 owner: Guivos
-last_updated: 2026-09-19
+last_updated: 2026-09-21
 normative: true
 maturity: design_production_release_granted_main_canonical_first_class
 depends_on:
@@ -95,11 +95,12 @@ HISTORICAL PACKAGE
 
 A designer deve receber, para cada Home:
 
-1. autoridades comuns vigentes;
+1. autoridades universais vigentes;
 2. Documento Mestre da Home;
 3. autoridades específicas necessárias daquela Home;
-4. guia de consumo / Source Lock da emissão vigente;
-5. classificação explícita do que é verdade, liberdade criativa, candidato, placeholder, dado real necessário, questão aberta e inferência proibida.
+4. classificação explícita do que é verdade, liberdade criativa, candidato, placeholder, dado real necessário, questão aberta e inferência proibida.
+
+Quando a designer optar por usar IA, acrescenta-se o guia de consumo / Source Lock correspondente. O fluxo manual não exige Source Lock nem registro de execução de IA.
 
 As classes operacionais vigentes são:
 
