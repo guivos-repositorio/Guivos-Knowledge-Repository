@@ -2,7 +2,7 @@
 id: GPA-004
 title: Guivos Business
 status: consolidated
-version: 1.7.3
+version: 1.7.4
 owner: Guivos
 last_updated: 2026-09-21
 related:
@@ -200,7 +200,7 @@ mais pontos
 mais evolução
 ```
 
-Existe proveniência histórica de uma decisão de equivalência econômica entre pontos e reais registrada no checkpoint não normativo `GKR-BUSINESS-CONTINUITY-001`. A auditoria documental do Lote J, porém, não encontrou no corpus vigente autoridade econômica temática que defina ou aprove valor monetário ou taxa de conversão para os Pontos Guivos. Portanto, **esta autoridade não trata uma equivalência Pontos ↔ BRL como regra econômica canônica vigente ou implementável**. Qualquer reativação dessa equivalência como regra corrente exige autoridade econômica específica e explícita.
+**Não existe, no corpus econômico vigente, valor monetário canônico ou taxa de conversão aprovada entre Pontos Guivos e BRL.** Portanto, esta autoridade não trata uma equivalência Pontos ↔ BRL como regra econômica vigente ou implementável. Qualquer definição futura de valor monetário ou taxa de conversão exige autoridade econômica específica, explícita e vigente.
 
 ### 6.1 Saldo da pessoa
 

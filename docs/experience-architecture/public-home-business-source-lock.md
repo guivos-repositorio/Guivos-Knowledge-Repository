@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.13
+version: 1.1.14
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
@@ -71,7 +71,7 @@ CONTRATOS DE AUTORIDADE
 GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.5
 
 ARQUITETURA FUNCIONAL
-GPA-004 v1.7.3
+GPA-004 v1.7.4
 
 HISTORICAL ORIGIN / CHECKPOINT
 → GIT PROVENANCE ONLY
@@ -90,7 +90,7 @@ Para a produção externa de Design da Home Business, o pacote específico de au
 2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.5 — `docs/experience-architecture/public-home-business-master-document.md`;
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002` v1.0.1 — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.4 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
-5. `GPA-004` v1.7.3 — arquitetura funcional vigente do Guivos Business.
+5. `GPA-004` v1.7.4 — arquitetura funcional vigente do Guivos Business.
 
 Não adicionar automaticamente:
 
@@ -834,7 +834,7 @@ Usar:
 3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.6`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1`;
 5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.5`;
-6. `GPA-004 v1.7.3`.
+6. `GPA-004 v1.7.4`.
 
 ```text
 SOURCE OF TRUTH
