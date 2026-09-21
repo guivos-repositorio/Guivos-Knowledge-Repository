@@ -66,8 +66,8 @@ Validação integral documental não comprova implementação técnica nem esten
 | ID | Origem | Destino | Estado | Evidência / lacuna principal |
 |---|---|---|---|---|
 | GKR-TRN-001 | PER-001 | PER-002 | parcial | continuidade entre pacotes |
-| GKR-TRN-002 | PER-002 | PER-003 | localmente validada | UXA-034/035 |
-| GKR-TRN-003 | PER-003 | PER-004 | parcial | ligação UXA-034 → UXA-068 |
+| GKR-TRN-002 | PER-002 | PER-003 | localmente validada | UXA-035 + contratos correntes de entrada protegida |
+| GKR-TRN-003 | PER-003 | PER-004 | parcial | integração entrada protegida → expressão guiada ainda parcial |
 | GKR-TRN-004 | PER-004 | PER-005 | parcial | integração expressão–inventário |
 | GKR-TRN-005 | PER-005 | PER-006 | parcial | continuidade entre materializações |
 | GKR-TRN-006 | PER-006 | PER-007 | localmente validada | UXA-037 |
@@ -101,7 +101,7 @@ O modelo corrente não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011
 | GKR-TRN-108 | COL-003 | PER-106 | responsável → participante | aprovação forma vínculo; navegação posterior é opcional | UXA-089/090/092 | **integralmente validada** | — |
 | GKR-TRN-109 | COL-003 | PER-105 | responsável → solicitante | recusar com fundamento proporcional | UXA-067/089/090 | **integralmente validada** | — |
 | GKR-TRN-110 | PER-106 | PER-107 | participante | abrir Central sem alterar vínculo ou leitura | UXA-092/093/094/096 | **integralmente validada** | — |
-| GKR-TRN-111 | PER-107 | PER-108 | participante | abrir início do mesmo Coletivo com permissão revalidada | UXA-095/096 | **integralmente validada** | — |
+| GKR-TRN-111 | PER-107 | PER-108 | participante | abrir início do mesmo Coletivo com permissão revalidada | UXA-096 | **integralmente validada** | — |
 | GKR-TRN-112 | COL-002 | COL-003 | responsável | abrir fila especializada preservando escopo | UXA-087/089/090 | **integralmente validada** | — |
 | GKR-TRN-113 | COL-004 | COL-005 | responsável | comunicar a participantes autorizados | UXA-058/059 | contratada | operação interna não materializada |
 
