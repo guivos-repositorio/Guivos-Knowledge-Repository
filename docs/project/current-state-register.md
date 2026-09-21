@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.2
+version: 3.50.3
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-21
 normative: true
@@ -589,37 +589,7 @@ Wireframe, mockup, protótipo, layout, composição e componentes visuais **não
 
 ## 9. Artefatos visuais e registries
 
-O cleanup governado de `F-006` removeu fisicamente os quatro documentos `UXA-015..018` e os dois SVGs associados. A transação foi aplicada no commit `112a1397743a39bb73f930984a8431f808103a08`.
-
-Estado comprovado no head de cleanup:
-
-- **119 SVGs físicos**;
-- **119 associações físicas**;
-- **34 perfis de rastreabilidade estáveis**;
-- `F006_DELETION_SET_ABSENT = 6/6`;
-- `F006_DIRECT_DELETED_FILENAME_HITS = 0`;
-- Semantic State Validation #827 = `SUCCESS`;
-- Mechanical Validation #1085 = `SUCCESS`;
-- F-006 Post-Delete Read-Only Proof #1 = `SUCCESS`;
-- MkDocs strict = `SUCCESS`.
-
-As **239 menções residuais aos IDs `UXA-015..018`** encontradas pela prova são referências textuais de proveniência/estado histórico a serem lidas sem reativação dos artefatos removidos. Nenhuma referência direta aos seis nomes físicos removidos permanece.
-
-```text
-F-006
-→ STRUCTURAL AUDIT COMPLETE
-→ ABSORPTION APPLIED
-→ ACTIVE FUNCTION DEPENDENCIES RECONCILED
-→ CLEANUP ELIGIBILITY PROVEN
-→ PHYSICAL CLEANUP APPLIED 6/6
-→ POST-CLEANUP VALIDATION PASSED
-→ READ-ONLY PROOF PASSED
-→ RESOLVED
-```
-
-`F-007` permanece resolvido. A contagem de arquivos visuais deixa de ser proxy de maturidade. `F-016` encerrou a retirada/reformulação repo-wide de materializações documentais que competiam com a autoridade de Design.
-
-Recomputação final de P:
+O corpus corrente não utiliza inventário físico de SVGs como proxy de maturidade.
 
 ```text
 PHYSICAL SVGs
@@ -628,28 +598,28 @@ PHYSICAL SVGs
 CURRENT PHYSICAL ASSOCIATIONS
 → 0
 
-SURFACE-LEVEL OBJECTS
-→ 57 / 57 CLASSIFIED
-→ 41 VALIDADO
-→ 7 CONTRATADO
-→ 3 PARCIAL
-→ 3 PROGRAMADO
-→ 1 INDETERMINADO
-→ 1 MATERIALIZADO
-→ 1 EXAMINADO
+HISTORICAL VISUAL PRODUCERS
+→ REMOVED / ABSORBED WHERE GOVERNED
+→ GIT PRESERVES PROVENANCE
 
-TRANSITIONS
-→ 66 / 66 CLASSIFIED
-→ 24 INTEGRALMENTE VALIDADAS
-→ 20 LOCALMENTE VALIDADAS
-→ 15 PARCIAIS
-→ 7 CONTRATADAS
+SURFACE MATURITY
+→ READ FROM GKR-JOURNEY-SURFACE-REGISTRY-001
+
+TRANSITION MATURITY
+→ READ FROM GKR-JOURNEY-TRANSITION-REGISTRY-001
 
 AGGREGATE VISUAL WIREFRAME MATURITY
 → NOT_CERTIFIED
-→ NOT INFERRED FROM DOCUMENTARY MATURITY OR LOCAL DESIGN DELIVERY / VALIDATION
-→ DESIGN AUTHORITY PRESERVED
+→ NOT INFERRED
 ```
+
+Referências visuais/funcionais correntes somente existem quando uma autoridade vigente as declara explicitamente. Em especial:
+
+- Organização/Coletivo autenticados: low-fidelity corrente = `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` + `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 / PASS`;
+- `PER-002`: referência interativa corrente e validação pós-review são governadas pelas autoridades específicas de `PER-002`;
+- Homes públicas: expressão visual final pertence ao Design; o GKR governa significado, função, limites e evidências, não uma identidade visual canônica.
+
+A existência de uma referência visual local não promove automaticamente outras superfícies, protótipo, implementação ou Product Engineering.
 
 ## 10. Homes públicas — estado de auditoria
 
