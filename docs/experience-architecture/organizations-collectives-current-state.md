@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.10.3
+version: 1.10.4
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 normative: false
 related:
   - UXA-014
@@ -449,7 +449,7 @@ Este commit **não autoriza nem materializa** a continuação. Permanecem delibe
 
 ```text
 Authenticated Wireframes / low-fidelity — DELIVERY + VALIDATION PASS
-→ high-fidelity eligibility — PASS / v1.0.0
+→ high-fidelity eligibility — PASS / v1.0.1
 → high-fidelity design authorization — GRANTED / v1.0.0
 → high-fidelity design execution — AUTHORIZED / NOT_STARTED
 → protótipo
