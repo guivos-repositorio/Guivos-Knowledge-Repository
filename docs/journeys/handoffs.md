@@ -2,12 +2,13 @@
 id: GKR-JOURNEY-HANDOFFS-001
 title: Handoffs entre Participantes
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-JOURNEY-ORGANIZATION-001
+  - GKR-JOURNEY-BUSINESS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
@@ -96,7 +97,41 @@ Estado corrente das transições principais:
 
 A existência da relação funcional não autoriza inventar superfícies bilaterais, estados operacionais ou efeitos ainda ausentes.
 
-## 6. Regra de leitura
+## 6. Business e esta vista de handoffs
+
+Business é um dos quatro contextos correntes de experiência, mas **não é participante estrutural** e não deve receber um handoff fictício apenas para aparecer nesta vista.
+
+A continuidade Business corrente é de produto:
+
+```text
+HOME BUSINESS
+→ OFERTA(S)
+→ PLANOS / CAPACIDADE
+→ CONFIGURADOR
+→ CONTRATAÇÃO ONLINE
+→ IMPLEMENTAÇÃO / OPERAÇÃO
+```
+
+Ela é governada por `GKR-JOURNEY-BUSINESS-001` e pelas autoridades Business.
+
+Consequentemente:
+
+```text
+AUSÊNCIA DE HANDOFF BUSINESS NESTA PÁGINA
+≠ AUSÊNCIA DE CONTEXTO BUSINESS
+
+BUSINESS
+≠ PARTICIPANTE ESTRUTURAL
+
+BUSINESS
+≠ ORG-*
+≠ COM-*
+≠ BND-002
+```
+
+Novos handoffs Business somente deverão existir quando uma transferência real de contexto/autoridade exigir contrato granular próprio.
+
+## 7. Regra de leitura
 
 ```text
 HANDOFF VIEW
