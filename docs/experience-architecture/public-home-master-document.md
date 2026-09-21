@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.5
+version: 1.0.6
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 normative: false
@@ -205,9 +205,11 @@ A percepção desejada permanece:
 - humanidade sem clichê;
 - uma Guivos maior do que a soma dos Produtos Especializados.
 
-Direção criativa preservada:
+Qualidades semânticas desejadas:
 
 > **Futuro sem ficção. Tecnologia sem frieza. Sofisticação sem elitismo. Escala sem ruído. Humanidade sem clichê.**
+
+Essas qualidades descrevem a percepção e o significado que a Home deve conseguir sustentar. **Não constituem direção visual canônica** e não prescrevem estética, tipografia, paleta, fotografia, ilustração, composição, grid, motion ou atmosfera.
 
 Regra narrativa central:
 

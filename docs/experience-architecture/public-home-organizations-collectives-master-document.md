@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.4
+version: 1.0.5
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -313,9 +313,11 @@ A percepção desejada permanece:
 - humanidade sem clichê;
 - uma Guivos maior do que a soma dos Produtos Especializados.
 
-Direção criativa compartilhada:
+Qualidades semânticas desejadas:
 
 > **Futuro sem ficção. Tecnologia sem frieza. Sofisticação sem elitismo. Escala sem ruído. Humanidade sem clichê.**
+
+Essas qualidades governam percepção e significado, **não direção visual canônica**. A designer permanece livre para definir estética, tipografia, paleta, fotografia, ilustração, composição, grid, motion e atmosfera.
 
 A escala visual ou narrativa não deve ser simulada por mapas decorativos, números não sustentados, paredes de logos, stock genérico ou estética tecnológica como substituto de substância.
 
