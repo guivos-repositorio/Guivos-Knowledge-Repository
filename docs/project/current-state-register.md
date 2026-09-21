@@ -4,7 +4,7 @@ title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
 version: 3.50.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
@@ -73,7 +73,7 @@ GKR VIGENTE
 
 A frente posterior da Cognitive Reference Architecture também foi concluída em seu limite documental: `ADR-008` aprovou placement e ownership sob a GIA; `GIA-COG-001 v0.1.1` passou por revisão, remediação, revalidação semântica e gate de promoção e é agora a **Cognitive Reference Architecture vigente, ativa e normativa**. Essa promoção não autoriza `GIA-COG-002..008`, arquitetura física, dados reais, implementação, operação ou produção.
 
-A frente documental posterior de Organizações e Coletivos avançou por gates próprios até a Navigation Materialization canônica `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. A autorização governada subsequente `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0` liberou exclusivamente os wireframes autenticados low-fidelity, a primeira entrega foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e a validação funcional posterior concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`, com 30/30 itens de cobertura, 15/15 invariantes, 12/12 desafios de estado, 0 findings materiais e nenhuma reformulação requerida. O pacote Delivery + Validation é a referência corrente low-fidelity O/C. A adjudicação pós-validação `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0` concluiu `PASS` e a decisão humana subsequente `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0` concedeu autorização para Design high-fidelity. A execução permanece `NOT_STARTED`; protótipo interativo e Product Engineering continuam não liberados.
+A frente documental posterior de Organizações e Coletivos avançou por gates próprios até a Navigation Materialization canônica `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. A autorização governada subsequente `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0` liberou exclusivamente os wireframes autenticados low-fidelity, a primeira entrega foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e a validação funcional posterior concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`, com 30/30 itens de cobertura, 15/15 invariantes, 12/12 desafios de estado, 0 findings materiais e nenhuma reformulação requerida. O pacote Delivery + Validation é a referência corrente low-fidelity O/C. A adjudicação pós-validação `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1` concluiu `PASS` e a decisão humana subsequente `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0` concedeu autorização para Design high-fidelity. A execução permanece `NOT_STARTED`; protótipo interativo e Product Engineering continuam não liberados.
 
 ## 2. Estado executivo
 
@@ -127,7 +127,7 @@ O/C AUTHENTICATED LOW-FIDELITY WIREFRAMES
 → CURRENT LOW-FIDELITY VISUAL REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
 
 O/C HIGH-FIDELITY DESIGN ELIGIBILITY
-→ GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1
 → PASS
 → MATERIAL BLOCKER PROVEN = NONE
 
@@ -706,7 +706,7 @@ LOW-FIDELITY WIREFRAMES
 → DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS
 
 HIGH-FIDELITY ELIGIBILITY
-→ PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0
+→ PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1
 
 HIGH-FIDELITY DESIGN AUTHORIZATION
 → GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
@@ -722,7 +722,7 @@ PRODUCT ENGINEERING
 
 A antiga proposta pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece somente `HOLD_REVIEW` e não é autoridade vigente.
 
-Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. A elegibilidade para **Navigation Materialization** foi adjudicada como `PASS` e a materialização documental foi posteriormente autorizada, executada, validada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os **Authenticated Wireframes low-fidelity** foram então autorizados, entregues e funcionalmente validados com `PASS` por `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A elegibilidade high-fidelity O/C foi adjudicada como `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0` e a autorização humana subsequente foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`. A execução high-fidelity permanece `NOT_STARTED`; protótipo interativo, implementação e Product Engineering continuam não liberados.
+Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. A elegibilidade para **Navigation Materialization** foi adjudicada como `PASS` e a materialização documental foi posteriormente autorizada, executada, validada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os **Authenticated Wireframes low-fidelity** foram então autorizados, entregues e funcionalmente validados com `PASS` por `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A elegibilidade high-fidelity O/C foi adjudicada como `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1` e a autorização humana subsequente foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`. A execução high-fidelity permanece `NOT_STARTED`; protótipo interativo, implementação e Product Engineering continuam não liberados.
 
 ```text
 DOCUMENTAÇÃO
@@ -2018,7 +2018,7 @@ O/C LOW-FIDELITY WIREFRAMES
 → CURRENT REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
 
 O/C HIGH-FIDELITY ELIGIBILITY
-→ PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0
+→ PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1
 
 O/C HIGH-FIDELITY DESIGN AUTHORIZATION
 → GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
@@ -2058,7 +2058,7 @@ AINDA NÃO INICIADOS / NÃO AUTORIZADOS ALÉM DO BOUNDARY
 → O/C LOW-FIDELITY WIREFRAME DELIVERY = EXECUTED
 → O/C LOW-FIDELITY FUNCTIONAL VALIDATION = PASS / v1.0.0
 → O/C CURRENT LOW-FIDELITY REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
-→ O/C HIGH-FIDELITY ELIGIBILITY = PASS / v1.0.0
+→ O/C HIGH-FIDELITY ELIGIBILITY = PASS / v1.0.1
 → O/C HIGH-FIDELITY DESIGN AUTHORIZATION = GRANTED / EXECUTION NOT_STARTED
 → PRODUCT ENGINEERING = NOT_AUTHORIZED TO RESUME
 → PMF = NOT VALIDATED
