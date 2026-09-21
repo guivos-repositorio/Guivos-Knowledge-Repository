@@ -3992,7 +3992,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </ul>
 <h2 id="index-estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#index-estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="#project-current-state-register">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
-<div class="highlight"><pre><span></span><code>GKR-STATE-001 3.49.3
+<div class="highlight"><pre><span></span><code>GKR-STATE-001 3.49.4
 M7.88
 ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
 PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
@@ -4859,10 +4859,13 @@ O/C HIGH-FIDELITY DESIGN ELIGIBILITY
 → MATERIAL BLOCKER PROVEN = NONE
 
 O/C HIGH-FIDELITY DESIGN AUTHORIZATION
-→ NOT_GRANTED / REQUIRES SEPARATE EXPLICIT HUMAN ACT
+→ GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0 / REQUIRES SEPARATE EXPLICIT HUMAN ACT
 
-HIGH-FIDELITY UI / PROTOTYPE
-→ NOT AUTHORIZED / NOT RELEASED FOR O/C AUTHENTICATED EXPERIENCE
+O/C HIGH-FIDELITY DESIGN EXECUTION
+→ AUTHORIZED / NOT_STARTED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED / NOT RELEASED FOR O/C AUTHENTICATED EXPERIENCE
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
@@ -6485,6 +6488,7 @@ PRODUCT ENGINEERING
 
 NEXT AUTOMATIC EXECUTION
 → NONE
+→ HIGH-FIDELITY EXECUTION REQUIRES SEPARATE ACT
 → DO NOT CREATE SOURCE LOCK OR START UXA-102 / PRODUCT ENGINEERING BY INFERENCE
 </code></pre></div>
 <p>O fechamento de P encerrou a auditoria integral no limite documental. A cadeia específica posterior de <code>PER-002</code> avançou somente por gates explícitos e separados até uma referência interativa pós-review revalidada. A promoção canônica posterior de <code>GIA-COG-001</code> estabelece somente uma autoridade arquitetural cognitiva conceitual/de referência. Surface Map e State Map O/C estabelecem somente autoridades documentais canônicas das responsabilidades e estados funcionais. Nenhum desses atos constitui implementação, produção ou liberação de Product Engineering.</p>
@@ -6758,10 +6762,13 @@ O/C HIGH-FIDELITY ELIGIBILITY
 → PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0
 
 O/C HIGH-FIDELITY DESIGN AUTHORIZATION
-→ NOT_GRANTED
+→ GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
 
-HIGH-FIDELITY UI / PROTOTYPE
-→ NOT AUTHORIZED
+O/C HIGH-FIDELITY DESIGN EXECUTION
+→ AUTHORIZED / NOT_STARTED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
@@ -6875,7 +6882,8 @@ VISUAL IDENTITY
 
 O/C AUTHENTICATED HIGH-FIDELITY
 → ELIGIBILITY PASS
-→ AUTHORIZATION / EXECUTION REMAIN SEPARATE GOVERNED ACTS
+→ AUTHORIZATION GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
+→ EXECUTION AUTHORIZED / NOT_STARTED
 
 UXA-102 / V5
 → NOT_STARTED
@@ -7744,8 +7752,12 @@ O/C HIGH-FIDELITY ELIGIBILITY
 O/C HIGH-FIDELITY DESIGN AUTHORIZATION
 → NOT_GRANTED
 
-HIGH-FIDELITY UI / PROTOTYPE
-→ NOT AUTHORIZED
+O/C HIGH-FIDELITY DESIGN
+→ AUTHORIZATION = GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
+→ EXECUTION = AUTHORIZED / NOT_STARTED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01
@@ -8651,8 +8663,12 @@ O/C LOW-FIDELITY WIREFRAMES
 → FUNCTIONAL VALIDATION = PASS / v1.0.0
 → CURRENT REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
 
-HIGH-FIDELITY UI / PROTOTYPE
-→ NOT AUTHORIZED
+O/C HIGH-FIDELITY DESIGN
+→ AUTHORIZATION = GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
+→ EXECUTION = AUTHORIZED / NOT_STARTED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
 
 PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
@@ -8673,7 +8689,7 @@ RESEARCH OPERATIONAL STATES
 → DRY RUN REAL = NOT RELEASED
 → PMF = NOT VALIDATED
 </code></pre></div>
-<p><code>GIA-COG-002..008</code>, <code>UXA-102/V5</code>, high-fidelity UI/protótipo O/C, Product Engineering, PMF, implementação, produção e testes com participantes reais permanecem não iniciados ou não autorizados. A cadeia low-fidelity O/C está fechada em Delivery v0.1.0 + Validation v1.0.0 = PASS e a elegibilidade high-fidelity está <code>PASS</code>. O próximo gate possível é somente uma decisão humana explícita de autorização high-fidelity O/C.</p>
+<p><code>GIA-COG-002..008</code>, <code>UXA-102/V5</code>, protótipo O/C, Product Engineering, PMF, implementação, produção e testes com participantes reais permanecem não iniciados ou não autorizados. A cadeia low-fidelity O/C está fechada em Delivery v0.1.0 + Validation v1.0.0 = PASS; a elegibilidade high-fidelity está <code>PASS</code> e a autorização high-fidelity foi concedida por <code>GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0</code>. O próximo gate é a execução separada do Design high-fidelity O/C.</p>
 <h2 id="roadmap-27-experiencia-e-journey-consolidacao-current-only">27. Experiência e Journey — consolidação current-only<a class="headerlink" href="#roadmap-27-experiencia-e-journey-consolidacao-current-only" title="Permanent link">&para;</a></h2>
 <p>Prioridade corrente:</p>
 <div class="highlight"><pre><span></span><code>GOAL
@@ -8715,7 +8731,7 @@ PRODUCT ENGINEERING
 <li>integrar a consolidação somente após aprovação humana;</li>
 <li>não criar snapshot/candidate por padrão;</li>
 <li>usar snapshot apenas se surgir necessidade real de congelamento ou transporte externo;</li>
-<li>manter high-fidelity autenticado O/C e Product Engineering como frentes separadas.</li>
+<li>executar high-fidelity autenticado O/C somente em ato separado; Product Engineering permanece uma frente distinta e não liberada.</li>
 </ol>
 <div class="highlight"><pre><span></span><code>DESIGN PRODUCTION
 → RELEASE GRANTED AGAINST CURRENT CANONICAL SOURCES
