@@ -2,11 +2,10 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.1
+version: 0.29.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
-  - UXA-087
   - UXA-089
   - UXA-090
   - UXA-092
@@ -106,7 +105,7 @@ O modelo corrente não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011
 | GKR-TRN-109 | COL-003 | PER-105 | responsável → solicitante | recusar com fundamento proporcional | UXA-056/089/090 | **integralmente validada** | — |
 | GKR-TRN-110 | PER-106 | PER-107 | participante | abrir Central sem alterar vínculo ou leitura | UXA-092/093/094/096 | **integralmente validada** | — |
 | GKR-TRN-111 | PER-107 | PER-108 | participante | abrir início do mesmo Coletivo com permissão revalidada | UXA-096 | **integralmente validada** | — |
-| GKR-TRN-112 | COL-002 | COL-003 | responsável | abrir fila especializada preservando escopo | UXA-087/089/090 | **integralmente validada** | — |
+| GKR-TRN-112 | COL-002 | COL-003 | responsável | abrir fila especializada preservando escopo | GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 + UXA-089/090 | **integralmente validada** | — |
 | GKR-TRN-113 | COL-004 | COL-005 | responsável | comunicar a participantes autorizados | UXA-058/059 | contratada | operação interna não materializada |
 
 ## 6. Organização, oportunidades e relações bilaterais
