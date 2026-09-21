@@ -2,7 +2,7 @@
 id: UXA-045
 title: Validação Funcional e Reformulação dos Wireframes dos Estados Patrocinados para Lista e Mapa
 status: active
-version: 0.1.2
+version: 0.1.3
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: UXA-044
@@ -12,7 +12,6 @@ depends_on:
   - UXA-025
   - UXA-029
   - UXA-038
-  - UXA-039
   - UXA-043
   - GEM-007-A1
   - GEM-010-A2

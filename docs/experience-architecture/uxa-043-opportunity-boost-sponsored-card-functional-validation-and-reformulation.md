@@ -2,15 +2,14 @@
 id: UXA-043
 title: Validação Funcional e Reformulação dos Wireframes do Cartão Patrocinado e da Explicação do Opportunity Boost
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-29
+last_updated: 2026-09-21
 parent: UXA-042
 depends_on:
   - UXA-004
   - UXA-009
   - UXA-038
-  - UXA-039
   - UXA-041
   - GEM-007-A1
   - GEM-010-A2

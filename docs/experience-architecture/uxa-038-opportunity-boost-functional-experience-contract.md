@@ -2,9 +2,9 @@
 id: UXA-038
 title: Opportunity Boost — Contrato Funcional da Experiência
 status: active
-version: 0.2.0
+version: 0.2.1
 owner: Guivos Experience Architecture
-last_updated: 2026-07-28
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-004
@@ -13,7 +13,6 @@ depends_on:
   - UXA-025
   - GEM-007-A1
 related:
-  - UXA-039
   - GEM-010-A2
   - GPA-007
   - M7.41
