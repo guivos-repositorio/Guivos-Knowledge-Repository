@@ -21,6 +21,8 @@ normative: false
 
 Este catálogo organiza as responsabilidades funcionais correntes que podem exigir expressão visual durante Design e prototipação.
 
+Os contextos de experiência tratados como eixos principais são **Pessoa, Coletivo, Organização e Business**. Ads / Opportunity Boost e fronteiras aparecem somente quando necessários como capacidades, integrações ou limites transversais; não formam um contexto "Comercial".
+
 ```text
 RESPONSIBILITY
 ≠ FINAL SCREEN COUNT
@@ -54,7 +56,7 @@ O inventário detalhado corrente está em:
 - detalhes de [Pessoa](surface-registry-person-details.md);
 - detalhes de [Coletivo](surface-registry-collective-details.md);
 - detalhes de [Organização](surface-registry-organization-details.md);
-- detalhes de [Ads / Opportunity Boost e fronteiras documentais](surface-registry-commercial-boundary-details.md);
+- detalhes de [Ads / Opportunity Boost e fronteiras documentais](surface-registry-ads-boundaries-details.md);
 - [Experiência Integrada do Guivos Business](business.md) para continuidade própria de Business, sem criação automática de novos IDs de superfície.
 
 ## 4. Cobertura visual
