@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.32.0
+version: 0.33.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
