@@ -121,10 +121,12 @@ def main() -> int:
             artifacts[int(match.group(1))] = path
 
     removed_after_absorption = {
+        3: "uxa-003-journeys-and-screen-map.md",
         5: "uxa-005-low-fidelity-wireframes.md",
         6: "uxa-006-today-low-fidelity-wireframe.md",
         7: "uxa-007-opportunity-detail-low-fidelity-wireframe.md",
         8: "uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md",
+        21: "uxa-021-public-home-functional-validation-and-reformulation.md",
         22: "uxa-022-public-home-low-fidelity-wireframe.md",
         24: "uxa-024-opportunity-map-low-fidelity-wireframe.md",
         34: "uxa-034-protected-journey-entry-low-fidelity-wireframe.md",
