@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.0
+version: 3.50.1
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-21
 normative: true
@@ -1698,160 +1698,32 @@ Após o fechamento da auditoria integral e a captura da baseline final, permanec
 - UXA-102/V5;
 - Product Engineering.
 
-## 26. Auditoria integral do corpus — estado corrente
+## 26. Auditoria integral do corpus — referência de proveniência
 
-`GKR-FULL-CORPUS-AUDIT-001 v1.30.0` registra a auditoria integral concluída com resultado `PASS`, a captura da baseline final, a liberação documental de Q e a consolidação canônica posterior de sua definição funcional. Os gates específicos posteriores de `PER-002` — materialização, autorização low-fidelity, entrega, validação low-fidelity, elegibilidade high-fidelity, autorização high-fidelity, entrega high-fidelity, validação high-fidelity, elegibilidade de protótipo, autorização de protótipo, execução de protótipo e revalidação pós-review — ocorreram depois desse registro histórico e estão consolidados no Estado Atual pelas respectivas autoridades. A frente posterior de arquitetura cognitiva foi conduzida separadamente e não altera a baseline histórica da auditoria.
+A auditoria integral anterior está concluída e sua proveniência permanece no Git e nas autoridades de auditoria correspondentes. Este Registro do Estado Atual **não reproduz lotes, checkpoints, SHAs, contagens históricas ou sequência de remediações**.
+
+Para consumo corrente:
 
 ```text
-A / B / C / D / E / F / G
-→ COMPLETED
+ESTADO ATUAL
+→ ESTE REGISTRO + AUTORIDADES TEMÁTICAS VIGENTES
 
-H / I
-→ AUDITED / UPDATE_APPLIED
-→ F-006 RESOLVED
-→ F-007 RESOLVED
+AUDITORIAS / LOTES / CHECKPOINTS / BASELINES HISTÓRICAS
+→ GIT / PROVENIÊNCIA
+→ NOT DESIGN INPUT
+→ NOT AI INPUT
 
-F-016
-→ RESOLVED
-→ DOCUMENTATION DEMATERIALIZATION COMPLETE
-→ LEGACY VISUAL PRODUCERS REMOVED 26/26
-→ POST-DELETE PROOF SUCCESS
-
-F-016-A
-→ RESOLVED
-→ PHYSICAL SVG COUNT = 0
-
-J
-→ DOCUMENTARY AUDIT COMPLETED
-→ F-017 RESOLVED
-→ NO IMPLEMENTATION AUTHORIZATION
-
-K
-→ DOCUMENTARY AUDIT COMPLETED
-→ F-019 RESOLVED
-→ NO OPEN K-SPECIFIC MATERIAL FINDING IDENTIFIED
-→ OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
-→ OPERATIONAL READINESS = HOLD
-→ PARTICIPANT 001 = HOLD
-→ DRY RUN REAL = NOT RELEASED
-→ PMF = NOT VALIDATED
-
-L
-→ DOCUMENTARY AUDIT COMPLETED
-→ F-020 RESOLVED
-→ F-021 RESOLVED
-→ OPEN L-SPECIFIC MATERIAL FINDINGS = 0
-→ F-022 NOT OPENED
-→ IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
-
-M
-→ DOCUMENTARY AUDIT COMPLETED
-→ OPEN M-SPECIFIC MATERIAL FINDINGS = 0
-→ F-022 NOT OPENED
-→ OPERATIONAL / LEGAL EXECUTION NOT AUTHORIZED
-
-N
-→ DOCUMENTARY AUDIT COMPLETED
-→ OPEN N-SPECIFIC MATERIAL FINDINGS = 0
-→ F-022 NOT OPENED
-→ GTM EXECUTION / PUBLICATION / MARKET OPERATION NOT AUTHORIZED
-
-O
-→ DOCUMENTARY AUDIT COMPLETED
-→ MENU REBUILD APPLIED
-→ F-002 = RESOLVED
-→ FINAL SEMANTIC #861 = SUCCESS
-→ FINAL MECHANICAL #1119 = SUCCESS
-→ OPEN O-SPECIFIC MATERIAL FINDINGS = 0
-
-P
-→ FINAL RESULT = PASS
-→ COMPLETED / DOCUMENTARY / READ-ONLY
-→ PHYSICAL COUNTS = 0 SVGs / 0 ASSOCIATIONS
-→ 57 / 57 SURFACE-LEVEL OBJECTS CLASSIFIED
-→ 66 / 66 TRANSITIONS CLASSIFIED
-→ AGGREGATE VISUAL WIREFRAME MATURITY = NOT_CERTIFIED / NOT INFERRED
-→ OPEN P-SPECIFIC MATERIAL FINDINGS = 0
-→ F-022 NOT OPENED
-
-AUDITORIA INTEGRAL
-→ COMPLETED / PASS
-→ 23 OF 23 GOVERNED CHECKPOINTS COMPLETED
-
-FINAL BASELINE
-→ CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
-
-PER-002 — CURRENT STATE
-→ FUNCTIONAL BOUNDARY = GKR-UX-PER002-MAT-ELIGIBILITY-001 v2.0.0 / CURRENT
-→ CURRENT INTERACTIVE DESIGN REFERENCE = GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v1.0.0
-→ CURRENT VALIDATION = GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v2.0.0 / PASS / 16 OF 16
-→ AUTHENTICATION = INTERNAL GATE / STATE WITHIN PER-002
-→ AUTHENTICATION COMPLETION ≠ PER-002 COMPLETION
-→ AUTHENTICATION ≠ MATERIAL PROCESSING AUTHORIZATION
-→ FIRST DISTINCT DOWNSTREAM SURFACE = PER-003 — ESCOLHA DE MODALIDADE
-→ TRN-001 = PARTIAL / UNCHANGED
-→ TRN-002 = LOCALLY VALIDATED / UNCHANGED
-→ IMPLEMENTATION / PRODUCTION = NOT AUTHORIZED
-→ UXA-102 / V5 = NOT_STARTED
-→ PRODUCT ENGINEERING = PAUSED / NOT RELEASED
-
-COGNITIVE REFERENCE ARCHITECTURE
-→ ADR-008 = APPROVED
-→ GIA-COG-001-REV-02 = PASS
-→ GIA-COG-001-PROM-01 = PASS
-→ GIA-COG-001-PROM-02 = EXECUTED
-→ GIA-COG-001 v0.1.1 = ACTIVE / NORMATIVE
-→ GIA-COG-002..008 = RESERVED / NOT MATERIALIZED
-→ IMPLEMENTATION / REAL DATA / PRODUCTION = NOT AUTHORIZED
-
-O/C AUTHENTICATED SURFACE MAP
-→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0
-→ DEFINED / CANONICAL DOCUMENTARY
-
-O/C AUTHENTICATED STATE MAP
-→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
-→ DEFINED / CANONICAL DOCUMENTARY
-
-O/C AUTHENTICATED PRIORITY FLOWS
-→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
-→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
-
-O/C NAVIGATION MATERIALIZATION ELIGIBILITY
-→ GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0
-→ PASS / ACTIVE / CANONICAL
-
-O/C AUTHENTICATED NAVIGATION MATERIALIZATION
-→ GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0
-→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
-
-O/C AUTHENTICATED WIREFRAMES
-→ AUTHORIZATION GRANTED
-→ DELIVERY = GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0 / EXECUTED
-→ VALIDATION = GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 / PASS
-→ CURRENT LOW-FIDELITY REFERENCE = DELIVERY + VALIDATION
-
-HIGH-FIDELITY DESIGN / PROTOTYPE
-→ HIGH-FIDELITY ELIGIBILITY = PASS
-→ HIGH-FIDELITY AUTHORIZATION = GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
-→ HIGH-FIDELITY EXECUTION = AUTHORIZED / NOT_STARTED
-→ INTERACTIVE PROTOTYPE = NOT_AUTHORIZED
-
-PRODUCT ENGINEERING
-→ PAUSED BEFORE W0-01 / NOT RELEASED
-
-NEXT AUTOMATIC EXECUTION
-→ NONE
-→ HIGH-FIDELITY EXECUTION REQUIRES SEPARATE ACT
-→ DO NOT CREATE SOURCE LOCK OR START UXA-102 / PRODUCT ENGINEERING BY INFERENCE
+AUDITORIA CONCLUÍDA
+≠ IMPLEMENTAÇÃO
+≠ PRODUÇÃO
+≠ PMF VALIDADO
 ```
 
-O fechamento de P encerrou a auditoria integral no limite documental. A cadeia específica posterior de `PER-002` avançou somente por gates explícitos e separados até uma referência interativa pós-review revalidada. A promoção canônica posterior de `GIA-COG-001` estabelece somente uma autoridade arquitetural cognitiva conceitual/de referência. Surface Map e State Map O/C estabelecem somente autoridades documentais canônicas das responsabilidades e estados funcionais. Nenhum desses atos constitui implementação, produção ou liberação de Product Engineering.
+Os estados específicos de `PER-002`, arquitetura cognitiva, Organização/Coletivo, Homes, Business, Intelligence, tecnologia, Research e demais domínios devem ser lidos diretamente nas respectivas seções correntes deste registro e nas autoridades temáticas citadas.
 
-## 27. Regra de navegação final
+## 27. Regra de navegação corrente
 
-O `mkdocs.yml` foi reconstruído no Lote O como superfície de descoberta do corpus e validado em modo estrito.
-
-A navegação final de O organiza hubs por domínio e rotas de consumo multiequipe sem transformar o MENU em inventário completo de arquivos. Documentos vigentes não precisam estar diretamente listados no MENU para manter autoridade, desde que continuem alcançáveis por hubs, links internos, busca e Git.
+O `mkdocs.yml` funciona como superfície de descoberta do corpus e organiza hubs por domínio e rotas de consumo multiequipe sem transformar o MENU em inventário completo de arquivos.
 
 ```text
 MENU
@@ -1870,24 +1742,9 @@ REPOSITORY NAVIGATION
 ≠ UI NAVIGATION
 ```
 
-Rotas de consumo reconciliadas atendem:
+Documentos vigentes não precisam estar diretamente listados no MENU para manter autoridade, desde que permaneçam alcançáveis por hubs, links internos, busca e Git.
 
-- liderança / estratégia;
-- marketing;
-- publicidade / Ads;
-- comercial;
-- produto;
-- UX / Experience Architecture;
-- Design;
-- desenvolvimento / Product Engineering;
-- dados / Intelligence;
-- Research;
-- jurídico / privacidade;
-- internacionalização / operação.
-
-Uma mesma autoridade pode atender várias rotas; o GKR não cria cópias paralelas por equipe.
-
-A prova final do rebuild ocorreu no `HEAD 2d80c24c31cbe3e9486165369c80fae0775b8fe1`: Semantic #861 e Mechanical #1119 retornaram `SUCCESS`, incluindo links/navegação, nomenclatura, whitespace, MkDocs strict e clean tracked tree.
+Uma mesma autoridade pode atender várias rotas; o GKR não cria cópias paralelas por equipe. Evidência de builds, SHAs e validações históricas pertence ao Git e aos workflows, não a esta regra de navegação corrente.
 
 ## 28. Preservações finais e regra de não inferência
 
@@ -2020,126 +1877,40 @@ STATE MAP DEFINED
 ≠ GKR-SURF-* PROMOTED BY INFERENCE
 ≠ MATERIALIZED NAVIGATION
 ```
-## 29. Próximo ato governado
+## 29. Gates correntes sem execução automática
 
+Este Registro não define uma fila automática de próximos atos.
 
 ```text
-P — AUDITORIA FINAL DE COMPLETUDE
-→ FINAL RESULT = PASS
-→ COMPLETED / DOCUMENTARY / READ-ONLY
-→ PHYSICAL COUNTS RECOMPUTED = 0 SVGs / 0 ASSOCIATIONS
-→ SURFACE-LEVEL MATURITY RECOMPUTED = 57 / 57 CLASSIFIED
-→ TRANSITION MATURITY RECOMPUTED = 66 / 66 CLASSIFIED
-→ AGGREGATE VISUAL WIREFRAME MATURITY = NOT_CERTIFIED / NOT INFERRED
-→ OPEN P-SPECIFIC MATERIAL FINDINGS = 0
-→ F-022 NOT OPENED
-
-AUDITORIA INTEGRAL
-→ COMPLETED / PASS
-→ 23 OF 23 GOVERNED CHECKPOINTS COMPLETED
-
-FINAL BASELINE
-→ AUTHORIZED / CAPTURED
-→ 15f4d69f63cd760718dce7903224673aac4f540a
-
-PER-002 — CURRENT STATE
-→ FUNCTIONAL BOUNDARY = GKR-UX-PER002-MAT-ELIGIBILITY-001 v2.0.0 / CURRENT
-→ CURRENT INTERACTIVE DESIGN REFERENCE = GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v1.0.0
-→ CURRENT VALIDATION = GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v2.0.0 / PASS / 16 OF 16
-→ AUTHENTICATION = INTERNAL GATE / STATE WITHIN PER-002
-→ AUTHENTICATION COMPLETION ≠ PER-002 COMPLETION
-→ AUTHENTICATION ≠ MATERIAL PROCESSING AUTHORIZATION
-→ FIRST DISTINCT DOWNSTREAM SURFACE = PER-003 — ESCOLHA DE MODALIDADE
-→ TRN-001 = PARTIAL / UNCHANGED
-→ TRN-002 = LOCALLY VALIDATED / UNCHANGED
-→ IMPLEMENTATION / PRODUCTION = NOT AUTHORIZED
-→ UXA-102 / V5 = NOT_STARTED
-→ PRODUCT ENGINEERING = PAUSED / NOT RELEASED
-
-COGNITIVE REFERENCE ARCHITECTURE
-→ GIA-COG-001 v0.1.1 = ACTIVE / NORMATIVE
-→ REV-02 = PASS / 0 OPEN MATERIAL FINDINGS
-→ PROMOTION = EXECUTED
-→ GIA-COG-002..008 = RESERVED / NOT MATERIALIZED
-→ PHYSICAL ARCHITECTURE / REAL DATA / IMPLEMENTATION / PRODUCTION = NOT AUTHORIZED
-
-O/C AUTHENTICATED SURFACE MAP
-→ GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0
-→ DEFINED / CANONICAL DOCUMENTARY
-
-O/C AUTHENTICATED STATE MAP
-→ GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0
-→ DEFINED / CANONICAL DOCUMENTARY
-
-O/C AUTHENTICATED PRIORITY FLOWS
-→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
-→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
-
-O/C NAVIGATION MATERIALIZATION ELIGIBILITY
-→ GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0
-→ PASS / ACTIVE / CANONICAL
-
-O/C AUTHENTICATED NAVIGATION MATERIALIZATION
-→ GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0
-→ ACTIVE / DEFINED / CANONICAL DOCUMENTARY
-→ PRODUCT MENU VISUAL NOT DEFINED
-→ NO NEW GKR-SURF-* / GKR-TRN-*
-
-O/C LOW-FIDELITY WIREFRAMES
-→ AUTHORIZATION = GRANTED
-→ DELIVERY = EXECUTED / v0.1.0
-→ FUNCTIONAL VALIDATION = PASS / v1.0.0
-→ CURRENT REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
-
-O/C HIGH-FIDELITY ELIGIBILITY
-→ PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1
-
-O/C HIGH-FIDELITY DESIGN AUTHORIZATION
-→ GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
-
-O/C HIGH-FIDELITY DESIGN EXECUTION
-→ AUTHORIZED / NOT_STARTED
-
-INTERACTIVE PROTOTYPE
-→ NOT_AUTHORIZED
-
-PRODUCT ENGINEERING
-→ PAUSED BEFORE W0-01 / NOT RELEASED
-
 NEXT AUTOMATIC EXECUTION
 → NONE
 
-RESEARCH OPERATIONAL STATES
-→ OPERATIONAL IMPLEMENTATION NOT AUTHORIZED
-→ OPERATIONAL READINESS = HOLD
-→ PARTICIPANT 001 = HOLD
-→ DRY RUN REAL = NOT RELEASED
-→ PMF = NOT VALIDATED
+O/C HIGH-FIDELITY DESIGN
+→ AUTHORIZED
+→ EXECUTION NOT_STARTED
+→ REQUIRES SEPARATE EXECUTION ACT
 
-TECHNOLOGY / PRODUCT ENGINEERING
-→ IMPLEMENTATION / PRODUCTION NOT AUTHORIZED
-→ PRODUCT ENGINEERING PAUSED BEFORE W0-01
+O/C INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
 
-AINDA NÃO INICIADOS / NÃO AUTORIZADOS ALÉM DO BOUNDARY
-→ GIA-COG-002..008 = NOT_MATERIALIZED / NOT_AUTHORIZED BY INFERENCE
-→ SOURCE LOCK VISUAL POR INFERÊNCIA = NOT_AUTHORIZED
-→ UXA-102 / V5 = NOT_STARTED
-→ MATERIALIZATION OUTSIDE PER-002 AUTHORIZED BOUNDARY = NOT_AUTHORIZED
-→ O/C PRIORITY FLOWS = DEFINED / CANONICAL DOCUMENTARY
-→ O/C NAVIGATION MATERIALIZATION ELIGIBILITY = PASS / CANONICAL / v1.0.0
-→ O/C NAVIGATION MATERIALIZATION = DEFINED / CANONICAL DOCUMENTARY / v1.0.0
-→ O/C LOW-FIDELITY WIREFRAME AUTHORIZATION = GRANTED
-→ O/C LOW-FIDELITY WIREFRAME DELIVERY = EXECUTED
-→ O/C LOW-FIDELITY FUNCTIONAL VALIDATION = PASS / v1.0.0
-→ O/C CURRENT LOW-FIDELITY REFERENCE = DELIVERY v0.1.0 + VALIDATION v1.0.0
-→ O/C HIGH-FIDELITY ELIGIBILITY = PASS / v1.0.1
-→ O/C HIGH-FIDELITY DESIGN AUTHORIZATION = GRANTED / EXECUTION NOT_STARTED
-→ PRODUCT ENGINEERING = NOT_AUTHORIZED TO RESUME
-→ PMF = NOT VALIDATED
-→ IMPLEMENTAÇÃO / PRODUÇÃO = NOT_AUTHORIZED
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED / NOT RELEASED
+
+GIA-COG-002..008
+→ RESERVED / NOT MATERIALIZED
+→ NOT AUTHORIZED BY INFERENCE
+
+REAL MARKET / PMF / REAL PARTICIPANT TESTING
+→ DEPENDS ON REAL EVIDENCE AND OWN GOVERNED ACTS
+
+IMPLEMENTATION / PRODUCTION
+→ NOT AUTHORIZED BY DOCUMENTARY MATURITY ALONE
 ```
 
-A cadeia interativa de `PER-002` alcançou fechamento pós-review validado, `GIA-COG-001` alcançou promoção canônica no limite arquitetural conceitual/de referência e a cadeia O/C alcançou Navigation Materialization canônica, low-fidelity validado e elegibilidade high-fidelity `PASS`. A autorização high-fidelity O/C já foi concedida, mas a execução permanece `NOT_STARTED` e exige ato separado de execução. Nenhum desses fechamentos libera automaticamente protótipo interativo, estágio operacional ou de produto. Qualquer Source Lock adicional, `GIA-COG-002..008`, UXA-102/V5, protótipo interativo O/C, Product Engineering, implementação, produção, teste com participantes reais ou dados reais exige ato governado próprio.
+Qualquer avanço deve partir da autoridade temática vigente e do gate específico aplicável. Nenhum snapshot, Source Lock, protótipo, implementação, operação, teste com participantes reais ou Engenharia de Produto é criado por inferência a partir deste registro.
 
 ## 30. Home Masters — estado corrente
 
