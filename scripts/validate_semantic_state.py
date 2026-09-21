@@ -171,6 +171,15 @@ def main() -> int:
         100: "uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md",
     }
 
+    removed_auxiliary_paths = [
+        UXA_DIR / "uxa-003-a1-first-entry-functional-order.md",
+    ]
+    for path in removed_auxiliary_paths:
+        if path.is_file():
+            errors.append(
+                f"artefato auxiliar histórico deveria estar ausente após cleanup governado: {path.name}"
+            )
+
     for number, expected_name in removed_after_absorption.items():
         expected_path = UXA_DIR / expected_name
         path = artifacts.get(number)

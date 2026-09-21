@@ -2,9 +2,9 @@
 id: UXA-001
 title: Fundação da Arquitetura da Experiência da Guivos
 status: active
-version: 0.2.0
+version: 0.2.1
 owner: Guivos Experience Architecture
-last_updated: 2026-07-26
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - PAS-001
@@ -255,7 +255,7 @@ A ordem representa dependência funcional, não cronologia obrigatória de desen
 | navegação global recorrente | proposta e preservada |
 | recorrência não compulsiva | definido |
 | Tela Hoje como hipótese central recorrente | reformulada e validada funcionalmente |
-| mapa de telas detalhado | UXA-003 |
+| catálogo corrente de responsabilidades visuais | GKR-JOURNEY-SCREEN-CATALOG-001 |
 | fluxos de oportunidades, organizações e coletivos | UXA-004 |
 | wireframes | programa ativo; HOME textual e demais artefatos estruturais |
 | validação com participantes | não iniciada |
