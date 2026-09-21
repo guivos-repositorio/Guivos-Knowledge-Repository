@@ -257,6 +257,8 @@ As rotas abaixo são **atalhos de consumo**. Elas não criam cópias, autoridade
 | Marketing / marca | [Marca e Ativos Digitais](governance-framework/brand-and-digital-assets-index.md) · [Guia Oficial](public/guia-oficial-da-guivos.md) · [GTM](go-to-market/index.md) |
 | Publicidade / Ads | [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
 | Comercial | [Estratégia de Negócio](business-architecture/index.md) · [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
+
+> **Leitura:** a lente documental **Comercial** organiza estratégia, produtos, economia e GTM no repositório. Ela não representa o produto **Guivos Business**, não é tipo de participante e não substitui Pessoa, Coletivo, Organização ou Business como contextos de experiência.
 | Produto | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) |
 | UX / Design | [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) · [PER-002 — Handoff e limite de materialização](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md) · [PER-002 — Protótipo Interativo Corrente](experience-architecture/per-002-interactive-prototype-delivery.md) · [PER-002 — Revalidação Corrente](experience-architecture/per-002-interactive-prototype-post-review-revalidation.md) · [Estado Atual](project/current-state-register.md) |
 | Desenvolvimento | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Arquitetura Corporativa](enterprise-architecture/index.md) |
