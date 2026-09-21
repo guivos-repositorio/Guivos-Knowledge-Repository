@@ -2,7 +2,7 @@
 id: GPA-004
 title: Guivos Business
 status: consolidated
-version: 1.7.0
+version: 1.7.1
 owner: Guivos
 last_updated: 2026-09-20
 related:
