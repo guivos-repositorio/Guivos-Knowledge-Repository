@@ -2,9 +2,9 @@
 id: UXA-021
 title: Validação Funcional e Reformulação da Página Inicial Pública da Guivos
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-26
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -13,13 +13,16 @@ depends_on:
   - UXA-020
 related:
   - UXA-002
-  - UXA-003
   - UXA-010
   - UXA-011-A1
 normative: false
+maturity: historical_absorbed_provenance_only
 ---
 
 # Validação Funcional e Reformulação da Página Inicial Pública da Guivos
+
+> **Estado corrente — proveniência histórica absorvida.** A função pública desta validação foi absorvida pelo `GKR-UX-HOME-MASTER-001` e pelo pacote corrente de Homes. Este documento não é entrada de Design/IA e não governa a materialização atual da Home. A separação Home pública → entrada protegida permanece preservada por `UXA-020` em seu escopo funcional corrente e pelas autoridades atuais de PER-002/Journey.
+
 
 ## 1. Finalidade
 
