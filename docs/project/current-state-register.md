@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.8
+version: 3.50.9
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-21
 normative: true
@@ -1576,10 +1576,10 @@ Os oito Documentos Mestres são a fonte direta de verdade das Homes públicas.
 
 ```text
 PESSOA
-→ GKR-UX-HOME-MASTER-001 v1.0.5
+→ GKR-UX-HOME-MASTER-001 v1.0.6
 
 ORGANIZAÇÕES E COLETIVOS
-→ GKR-UX-HOME-OC-MASTER-001 v1.0.4
+→ GKR-UX-HOME-OC-MASTER-001 v1.0.5
 
 MALL
 → GKR-UX-HOME-MALL-MASTER-001 v1.1.3
@@ -1594,7 +1594,7 @@ ADS
 → GKR-UX-HOME-ADS-MASTER-001 v1.0.3
 
 BUSINESS
-→ GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.5
+→ GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.6
 
 INTELLIGENCE
 → GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.10
