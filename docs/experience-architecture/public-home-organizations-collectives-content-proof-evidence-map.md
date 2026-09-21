@@ -31,7 +31,7 @@ maturity: reconciled_content_proof_detail_pre_materialization
 
 ## 1. Finalidade e função atual
 
-Este documento nasceu como o **P3 da prontidão pré-materialização** da Home Pública de Organizações e Coletivos e, naquele checkpoint, resolveu em princípio `OC-GAP-03 — Conteúdo, prova e evidência por movimento` identificado por `GKR-UX-HOME-OC-AUDIT-001`.
+Este documento nasceu como o **P3 da prontidão pré-materialização** da Home Pública de Organizações e Coletivos e, naquele checkpoint, resolveu em princípio `OC-GAP-03 — Conteúdo, prova e evidência por movimento` identificado pela auditoria pré-materialização então vigente.
 
 Depois da reconstrução documental de `GKR-UX-HOME-OC-MASTER-001 v1.0.0`, da reconciliação de `GKR-UX-HOME-OC-NARR-001 v0.2.0` e de `GKR-UX-HOME-OC-NAV-001 v0.3.0`, sua função atual é preservar e aprofundar o **contrato especializado de conteúdo, prova e evidência** da Home O/C, sem competir com o Documento Mestre como autoridade de consumo vigente.
 

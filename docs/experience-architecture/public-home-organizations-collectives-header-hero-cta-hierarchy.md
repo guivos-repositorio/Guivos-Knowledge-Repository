@@ -26,7 +26,7 @@ maturity: reconciled_navigation_detail_pre_materialization
 
 ## 1. Finalidade e função atual
 
-Este documento nasceu como o **P2 da prontidão pré-materialização** da Home Pública de Organizações e Coletivos e, naquele checkpoint, resolveu em princípio `OC-GAP-02 — Header, Hero e hierarquia de CTAs` identificado por `GKR-UX-HOME-OC-AUDIT-001`.
+Este documento nasceu como o **P2 da prontidão pré-materialização** da Home Pública de Organizações e Coletivos e, naquele checkpoint, resolveu em princípio `OC-GAP-02 — Header, Hero e hierarquia de CTAs` identificado pela auditoria pré-materialização então vigente.
 
 Depois da reconstrução documental de `GKR-UX-HOME-OC-MASTER-001 v1.0.0` e da reconciliação narrativa de `GKR-UX-HOME-OC-NARR-001 v0.2.0`, sua função atual é preservar e aprofundar o **contrato especializado de navegação, Hero e hierarquia de ação** da Home O/C, sem competir com o Documento Mestre como autoridade de consumo vigente.
 

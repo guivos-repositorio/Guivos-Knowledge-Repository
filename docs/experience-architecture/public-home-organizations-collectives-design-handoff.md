@@ -69,7 +69,7 @@ Em qualquer divergência semântica ou procedimental com o Master reconciliado e
 
 ## 1. Finalidade
 
-Este documento executa o **P4 da prontidão pré-materialização** da Home Pública de Organizações e Coletivos e resolve, em princípio, `OC-GAP-04 — Handoff específico para Design/UX/UI` identificado por `GKR-UX-HOME-OC-AUDIT-001`.
+Este documento executa o **P4 da prontidão pré-materialização** da Home Pública de Organizações e Coletivos e resolve, em princípio, `OC-GAP-04 — Handoff específico para Design/UX/UI` identificado pela auditoria pré-materialização então vigente.
 
 Seu objetivo é transformar a estratégia já governada em um **brief executável de materialização futura**, suficientemente claro para que Design, UX, UI ou uma ferramenta generativa não precisem reinventar decisões de posicionamento, narrativa, participante, prova, confiança ou ação.
 
@@ -150,11 +150,9 @@ Governa:
 - arquitetura do ecossistema;
 - bifurcação final.
 
-### 3.2 Auditoria de prontidão
+### 3.2 Auditoria histórica de prontidão
 
-`GKR-UX-HOME-OC-AUDIT-001`
-
-Governa:
+A auditoria de prontidão que originou este handoff foi removida do grafo corrente após absorção de suas decisões válidas. Historicamente, ela governava:
 
 - lacunas de pré-materialização;
 - o que pode ser herdado;

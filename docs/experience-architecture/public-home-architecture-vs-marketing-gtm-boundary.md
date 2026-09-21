@@ -218,9 +218,9 @@ Antes de materialização governada, continuam relevantes:
 
 ---
 
-## 10. Efeito sobre a auditoria pré-wireframe
+## 10. Efeito sobre o gate pré-wireframe histórico
 
-`GKR-UX-HOME-AUDIT-001` deve considerar como **fora do gate pré-wireframe**:
+A auditoria pré-wireframe então vigente considerava como **fora do gate pré-wireframe**:
 
 - inventário de produtos operacionais no lançamento;
 - inventário de páginas do lançamento;

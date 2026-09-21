@@ -26,7 +26,7 @@ maturity: reconciled_narrative_detail_pre_materialization
 
 ## 1. Finalidade e função atual
 
-Este documento nasceu como o **P1 da prontidão pré-materialização** da Home Pública de Organizações e Coletivos e, naquele checkpoint, resolveu `OC-GAP-01` de `GKR-UX-HOME-OC-AUDIT-001`.
+Este documento nasceu como o **P1 da prontidão pré-materialização** da Home Pública de Organizações e Coletivos e, naquele checkpoint, resolveu `OC-GAP-01` registrado pela auditoria pré-materialização então vigente.
 
 Depois da reconstrução documental de `GKR-UX-HOME-OC-MASTER-001 v1.0.0`, sua função atual é preservar e aprofundar o **mapa narrativo detalhado de macroexperiências**, sem competir com o Documento Mestre como autoridade de consumo vigente.
 
