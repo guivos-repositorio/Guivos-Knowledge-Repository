@@ -2,7 +2,7 @@
 id: UXA-010
 title: Validação Funcional e Reformulação da Tela Hoje
 status: active
-version: 0.3.1
+version: 0.3.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: UXA-000
@@ -216,7 +216,6 @@ A nova versão do Wireframe de Baixa Fidelidade da Tela Hoje deverá demonstrar:
 
 Permanecem pendentes de wireframes separados:
 
-- primeira Tela Hoje após a confirmação da compreensão inicial;
 - estado totalmente vazio;
 - múltiplos itens críticos;
 - informação sensível em modo discreto;
@@ -239,15 +238,10 @@ Esta decisão não autoriza:
 - criação automática dos estados alternativos;
 - início da Engenharia de Produto.
 
-## 14. Próximo ponto de decisão
+## 14. Continuidade corrente
 
-Após a integração desta reformulação, os próximos atos dependerão de autorização separada e poderão:
+A primeira continuidade entre compreensão confirmada e Tela Hoje já foi validada por `UXA-097`. As responsabilidades recorrentes de Hoje e seus handoffs com Objetivos, Próximos Passos e Evolução são governados pelas autoridades D5 correntes e pelo Transition Registry.
 
-1. validar funcionalmente a Página Inicial pública;
-2. validar funcionalmente a entrada do fluxo protegido;
-3. detalhar a captura multimodal do Momento Atual;
-4. validar a revisão da compreensão inicial;
-5. criar a primeira variação da Tela Hoje após a transição;
-6. selecionar outro estado alternativo da Tela Hoje para wireframe.
+Os estados alternativos ainda não resolvidos nesta UXA permanecem lacunas somente quando não estiverem cobertos por autoridade posterior. Sua priorização deve ser lida em `GKR-JOURNEY-GAPS-001` e nos registries correntes.
 
-O protótipo navegável continuará dependendo de autorização explícita posterior.
+Este documento não autoriza protótipo navegável, implementação ou Engenharia de Produto.
