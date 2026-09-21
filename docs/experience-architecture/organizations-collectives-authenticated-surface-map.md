@@ -6,7 +6,7 @@ version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
-maturity: authenticated_surface_map_defined_pre_state_flow_wireframe
+maturity: authenticated_surface_map_defined
 depends_on:
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
