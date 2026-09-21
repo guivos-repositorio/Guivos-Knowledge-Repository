@@ -122,6 +122,16 @@ nav:
       - Pesquisa do Ecossistema: research/RP-001/index.md
       - Possibilidades, Oportunidades e Supply: research/RP-002/index.md
 
+  - GTM, Expansão e Presença Pública:
+      - Go-to-Market, Growth & Capital: go-to-market/index.md
+      - Lançamento e Expansão Geográfica: go-to-market/gtm-001-launch-and-geographic-sequencing.md
+      - Internacionalização e Governança Territorial: go-to-market/gtm-007-internationalization-and-territorial-governance.md
+      - Piloto Portugal — Gates de Prontidão: go-to-market/gtm-008-portugal-pilot-readiness-gates.md
+      - Operações Internacionais e Cross-Border: governance-framework/international-operations-and-cross-border-readiness.md
+      - Instagram Guivos — Presença e Governança: go-to-market/gtm-009-instagram-presence-and-editorial-governance.md
+      - Instagram do Fundador — Especificação Mestre: go-to-market/gtm-010-founder-instagram-master-specification.md
+      - Instagram do Fundador — Especificação Operacional: go-to-market/gtm-011-founder-instagram-operating-specification.md
+
   - Dados, Intelligence e Tecnologia:
       - Arquitetura Corporativa: enterprise-architecture/index.md
       - Intelligence e IA: intelligence-architecture/index.md
