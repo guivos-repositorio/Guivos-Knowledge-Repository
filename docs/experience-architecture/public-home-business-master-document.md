@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.1.4
+version: 1.1.5
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
 depends_on:
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
@@ -509,6 +509,38 @@ MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 +
 PRÓXIMO PASSO
 ```
+
+### 20.1 Quadro funcional do Self-service
+
+O configurador deve permitir compreender como a contratação é montada sem transformar a Home em especificação de tela.
+
+| Dimensão | Escolha/configuração empresarial | Papel na contratação |
+|---|---|---|
+| Oferta | Programas de Incentivo, Journey custeado ou ambas | define o que será utilizado |
+| Escala | participantes, acessos e demais volumes formalizados | dimensiona a capacidade necessária |
+| Intelligence | profundidade/capacidades aplicáveis | pode elevar a capacidade requerida |
+| Integrações | eventos, conexões e integrações autorizadas | pode elevar complexidade e capacidade requerida |
+| Governança | requisitos de gestão e controle | pode elevar capacidade requerida |
+| Nível de serviço | entitlement contratual aplicável | pode exigir capacidade superior |
+| Implementação/operação | Self-service, suporte ou gerenciado | define participação operacional da Guivos, não o plano por si só |
+| Orçamento de incentivo | recurso pré-pago para concessões | fica separado da assinatura Business |
+| Acessos Journey custeados | acessos pagos pela empresa | possuem relação econômica própria |
+
+Regra de enquadramento:
+
+```text
+CONFIGURAÇÃO ESCOLHIDA
+↓
+REQUISITOS DE CAPACIDADE
+↓
+PLANO QUE SUPORTA INTEGRALMENTE OS REQUISITOS
+↓
+VALOR DA CONFIGURAÇÃO
+```
+
+O valor deve distinguir a capacidade recorrente da plataforma, componentes variáveis aplicáveis, serviços adicionais e recursos operacionais separados. O orçamento pré-pago de incentivo não deve ser apresentado como assinatura do plano.
+
+Os thresholds exatos entre Start, Growth, Scale e Enterprise permanecem subordinados aos entitlements comerciais aprovados; o Design não deve inventá-los.
 
 ## 21. Contratação
 
