@@ -2,9 +2,9 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.51.0
+version: 0.52.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 related:
   - PAS-001-DOMAIN-MODEL-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -26,7 +26,9 @@ normative: false
 
 ## 1. Finalidade
 
-Esta seção descreve a continuidade corrente entre Homes públicas e experiências autenticadas de Pessoa, Coletivo e Organização.
+Esta seção descreve a continuidade corrente entre Homes públicas e experiências de **Pessoa, Coletivo, Organização e Guivos Business**.
+
+Pessoa, Coletivo e Organização são contextos de participante. Guivos Business é um **produto especializado B2B** com contexto próprio de experiência e não deve ser confundido com Organização, Ads ou uma camada genérica "Comercial".
 
 Ela deve ser lida como topologia funcional atual, não como cronologia de construção.
 
@@ -35,6 +37,7 @@ Ela deve ser lida como topologia funcional atual, não como cronologia de constr
 - [Jornada da Pessoa](person.md)
 - [Jornada do Coletivo](collective.md)
 - [Jornada da Organização](organization.md)
+- [Experiência Integrada do Guivos Business](business.md)
 - [Catálogo Integrado de Telas](screen-catalog.md)
 - [Registro Granular de Superfícies e Estados](surface-registry.md)
 - [Registro Granular de Transições](transition-registry.md)
@@ -63,11 +66,19 @@ ORGANIZAÇÃO
 → HOME PÚBLICA
 → EXPERIÊNCIA AUTENTICADA
 → CAPACIDADES / OPORTUNIDADES / RELAÇÕES / CONTINUIDADE
+
+BUSINESS
+→ HOME GUIVOS BUSINESS
+→ OFERTAS / INTELLIGENCE / PLANOS
+→ CONFIGURADOR
+→ CONTRATAÇÃO ONLINE
+→ SELF-SERVICE / SUPORTE / GERENCIADO
+→ OPERAÇÃO
 ```
 
 ## 4. Domínios de Evolução
 
-As três jornadas reconhecem os nove domínios canônicos.
+As jornadas de **Pessoa, Coletivo e Organização** reconhecem os nove domínios canônicos dentro de seus limites aplicáveis. Business não se torna participante nem recebe score ou domínio próprio por essa razão.
 
 `Ainda estou descobrindo` é estado legítimo de exploração, não um décimo domínio.
 
@@ -136,7 +147,30 @@ TRANSITION REGISTRY
 
 PERSON / COLLECTIVE / ORGANIZATION VIEWS
 → participant-specific continuity
+
+BUSINESS VIEW
+→ product-specific continuity
 ```
+
+## 9.1 Separação Business × Ads / Opportunity Boost
+
+```text
+GUIVOS BUSINESS
+→ PRODUTO ESPECIALIZADO B2B
+→ START / GROWTH / SCALE / ENTERPRISE
+→ CONTRATAÇÃO ONLINE / SELF-SERVICE QUANDO ELEGÍVEL
+
+GUIVOS ADS / OPPORTUNITY BOOST
+→ PRODUTO PUBLICITÁRIO DISTINTO
+→ COM-* NO REGISTRY POR LEGADO DE IDENTIFICADOR
+
+BND-*
+→ FRONTEIRAS DOCUMENTAIS
+→ NÃO SÃO BUSINESS
+→ NÃO SÃO PARTICIPANTES
+```
+
+A expressão histórica `COM-*` não cria um quarto participante chamado "Comercial" e não representa Guivos Business.
 
 ## 10. Exclusões de consumo
 
