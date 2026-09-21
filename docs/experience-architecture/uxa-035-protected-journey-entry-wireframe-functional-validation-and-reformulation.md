@@ -2,7 +2,7 @@
 id: UXA-035
 title: Validação Funcional Especializada e Reformulação do Wireframe Móvel do Início Protegido
 status: active
-version: 0.1.3
+version: 0.1.4
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: UXA-034
@@ -23,6 +23,8 @@ normative: false
 ---
 
 # Validação Funcional Especializada e Reformulação do Wireframe Móvel do Início Protegido
+
+> **F-016-A — proveniência sem baseline visual.** A antiga materialização `UXA-034` foi removida do corpus vigente. O vínculo `parent: UXA-034` preserva somente proveniência histórica; nenhum SVG, composição móvel, número de estados ou layout daquela frente constitui entrada corrente de Design/IA. As decisões funcionais preservadas neste documento devem ser consumidas em conjunto com `UXA-020`, `UXA-023`, `GKR-JOURNEY-SURFACE-REGISTRY-001` e `GKR-JOURNEY-TRANSITION-REGISTRY-001`.
 
 ## 1. Finalidade
 
