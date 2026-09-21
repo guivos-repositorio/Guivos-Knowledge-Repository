@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.7
+version: 1.3.8
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -164,7 +164,7 @@ O Manifesto corrente fixa o conjunto canônico no checkpoint do `main`. Snapshot
 Fontes específicas:
 
 ### Pessoa
-- `GKR-UX-HOME-MASTER-001 v1.0.4`;
+- `GKR-UX-HOME-MASTER-001 v1.0.5`;
 - `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.1`.
 
 ### Organizações e Coletivos
