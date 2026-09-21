@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.7.3
+version: 1.7.4
 owner: Experience Architecture
 last_updated: 2026-09-20
 normative: true
@@ -225,7 +225,7 @@ O contexto de Business permanece deliberadamente mais amplo. Usar somente o paco
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002`;
 4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001`;
 5. `GPA-004`;
-6. Source Lock Operacional + Prompt específico de Business.
+6. `GKR-UX-HOMES-GENINPUT-001`, somente quando a designer optar por usar IA ou ferramenta generativa.
 
 ### 4.8 Guivos Intelligence
 
@@ -263,8 +263,11 @@ Documentos históricos, candidates, snapshots e GENINPUTs superados não entram 
 NÍVEL 0 — HANDOFF CANÔNICO COMUM
 → governa processo, autorização, fontes e uso de ferramentas generativas
 
-NÍVEL 1 — SOURCE LOCK / HANDOFF / GENINPUT ESPECÍFICOS DA HOME
-→ governam o que pode ser materializado naquela Home e naquela rodada
+NÍVEL 1 — SOURCE LOCK / HANDOFF ESPECÍFICOS DA HOME
+→ governam o significado e as fronteiras daquela Home
+
+GENINPUT COMUM — GKR-UX-HOMES-GENINPUT-001
+→ usado somente quando a designer optar por IA ou ferramenta generativa
 
 NÍVEL 2 — DOCUMENTO MESTRE E CONTRATOS COMPLEMENTARES VIGENTES
 → governam significado, narrativa, experiência e fronteiras
@@ -283,9 +286,9 @@ Se houver conflito sobre significado da Home, prevalecem as autoridades específ
 
 ## 6. Controle semântico do input generativo
 
-Toda execução deve começar por um **Source Lock operacional específico da Home**.
+Toda execução **com IA ou ferramenta generativa**, quando escolhida pela designer, deve começar por um contexto governado conforme `GKR-UX-HOMES-GENINPUT-001` e pelas autoridades correntes da Home. Trabalho manual de Design não depende de execução generativa.
 
-O Source Lock deve registrar:
+Quando aplicável, o registro de contexto deve identificar:
 
 - Home;
 - objetivo da execução;
