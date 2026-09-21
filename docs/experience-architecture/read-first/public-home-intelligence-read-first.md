@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-READ-FIRST-001
 title: 00 — Leia Primeiro — Home Pública — Guivos Intelligence
 status: active
-version: 1.0.2
+version: 1.0.3
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: false
@@ -46,10 +46,10 @@ AI
 
 ### Fontes específicas desta Home
 
-1. `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.13` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
-2. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.12` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
-3. `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.10` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
-4. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
+1. `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.14` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
+2. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.13` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+3. `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.11` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+4. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.5` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 5. `GKR-UX-HOMES-OUTCOME-001 v1.0.0` — `docs/experience-architecture/public-homes-value-outcome-principle.md`;
 6. `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.2` — `docs/product-architecture/intelligence-product-source-lock.md`;
 7. `GPA-006 v2.0.1` — `docs/product-architecture/intelligence.md`;
