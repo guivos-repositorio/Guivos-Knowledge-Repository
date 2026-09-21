@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
 title: Organizações e Coletivos — Elegibilidade Pós-Validação para Design High-Fidelity
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-21
 normative: true
 maturity: authenticated_high_fidelity_design_eligibility_pass_authorization_granted
 depends_on:
@@ -19,6 +19,7 @@ depends_on:
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
   - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - GKR-STATE-001
   - UXA-014
   - UXA-019
@@ -30,7 +31,11 @@ related:
 
 Esta autoridade adjudica somente se, após o `PASS` funcional da primeira entrega low-fidelity autenticada de Organização e Coletivo, existe base suficiente para submeter um próximo estágio visual a uma **decisão separada de autorização high-fidelity**.
 
-Ela não autoriza nem executa:
+Ela não é, por si só, o ato de autorização nem de execução de Design high-fidelity.
+
+A autorização separada foi posteriormente concedida por `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`. Portanto, esta autoridade continua governando **elegibilidade**, enquanto o ato posterior governa **autorização**.
+
+Ela não executa:
 
 - Design high-fidelity;
 - UI final;
@@ -145,9 +150,9 @@ HIGH-FIDELITY DESIGN ELIGIBILITY
 
 Este `PASS` significa somente que uma **decisão humana separada de autorização high-fidelity** agora pode ser considerada.
 
-## 7. O que high-fidelity poderá decidir se houver autorização separada
+## 7. O que high-fidelity poderá decidir dentro da autorização separada
 
-Uma autorização futura poderá permitir refinamento visual da experiência autenticada O/C dentro do boundary vigente, incluindo:
+A autorização separada já concedida permite uma execução futura de refinamento visual da experiência autenticada O/C dentro do boundary vigente, incluindo:
 
 - hierarquia visual final;
 - aplicação do sistema visual/brand system vigente;
@@ -342,7 +347,7 @@ A ausência de certificação visual agregada do ecossistema não bloqueia uma e
 
 ## 15. Protótipo
 
-A elegibilidade desta autoridade é limitada a uma futura decisão de autorização de high-fidelity Design.
+A elegibilidade desta autoridade não libera protótipo. A autorização high-fidelity posterior também não libera protótipo automaticamente.
 
 ```text
 INTERACTIVE PROTOTYPE
@@ -376,10 +381,11 @@ O/C HIGH-FIDELITY DESIGN ELIGIBILITY
 → PASS
 
 O/C HIGH-FIDELITY DESIGN AUTHORIZATION
-→ NOT_GRANTED
-→ REQUIRES SEPARATE EXPLICIT HUMAN ACT
+→ GRANTED
+→ GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
 
 O/C HIGH-FIDELITY DESIGN EXECUTION
+→ AUTHORIZED
 → NOT_STARTED
 
 INTERACTIVE PROTOTYPE
@@ -396,17 +402,22 @@ POST-VALIDATION NEXT-STAGE ELIGIBILITY
 → PASS
 
 AUTHORITY
-→ GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1
 
-NEXT ELIGIBLE STAGE
-→ EXPLICIT O/C HIGH-FIDELITY DESIGN AUTHORIZATION DECISION
+AUTHORIZATION DECISION
+→ COMPLETED / GRANTED
+→ GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
+
+NEXT GOVERNED STAGE
+→ HIGH-FIDELITY DESIGN EXECUTION
+→ NOT_STARTED
 
 CURRENT LOW-FIDELITY REFERENCE
 → GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0
 → VALIDATED BY GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0
 
-DO NOT YET
-→ EXECUTE HIGH-FIDELITY
+DO NOT INFER
+→ HIGH-FIDELITY EXECUTION AS COMPLETED
 → CREATE PROTOTYPE
 → CREATE SOURCE LOCK BY INFERENCE
 → START UXA-102/V5
@@ -415,4 +426,4 @@ DO NOT YET
 → PRODUCE
 ```
 
-Esta autoridade abre somente a possibilidade de uma **decisão de autorização high-fidelity separada**. Nenhum estágio posterior é executado por este documento.
+Esta autoridade comprova a elegibilidade que antecedeu a autorização separada. A autorização high-fidelity já foi concedida por autoridade própria, mas a execução permanece `NOT_STARTED`. Nenhum protótipo, implementação, produção ou estágio posterior é executado por este documento.
