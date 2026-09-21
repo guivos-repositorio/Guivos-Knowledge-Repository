@@ -2,10 +2,14 @@
 id: GKR-JOURNEY-BUSINESS-001
 title: Experiência Integrada do Guivos Business
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
+  - GKR-JOURNEYS-001
+  - GKR-JOURNEY-SCREEN-CATALOG-001
+  - GKR-JOURNEY-SURFACE-REGISTRY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GPA-004
   - GPA-004-FUNCTIONAL-PORTFOLIO-001
   - GKR-PLANS-BUSINESS-001
