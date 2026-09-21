@@ -616,7 +616,7 @@ AUTORIDADE DECLARADA
 
 ### 8.3 Arquitetura da Informação
 
-`GKR-UX-ORGCOL-AUTH-IA-001 v1.3.0` está ativo em maturidade `authenticated_information_architecture_defined_pre_surface_map`. Essa maturidade descreve o limite próprio da autoridade de IA; a progressão documental posterior está registrada no Surface Map canônico.
+`GKR-UX-ORGCOL-AUTH-IA-001 v1.3.0` está ativo em maturidade `authenticated_information_architecture_defined`. A progressão documental posterior permanece registrada nas autoridades correntes de Surface Map, State Map, Priority Flows, Navigation Materialization e wireframes autenticados.
 
 Organização:
 
@@ -924,7 +924,7 @@ EXPERIÊNCIA AUTENTICADA O/C
 → PRIORITY FLOWS = DEFINED / CANONICAL DOCUMENTARY
 → NAVIGATION MATERIALIZATION = DEFINED / CANONICAL DOCUMENTARY / v1.0.0
 → LOW-FIDELITY WIREFRAMES = DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS
-→ HIGH-FIDELITY = NOT AUTHORIZED
+→ HIGH-FIDELITY AUTHORIZATION = GRANTED / EXECUTION NOT_STARTED
 ```
 
 ### 10.3 Homes dos Produtos Especializados
