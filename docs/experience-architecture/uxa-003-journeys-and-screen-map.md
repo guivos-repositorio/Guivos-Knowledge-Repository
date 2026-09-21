@@ -2,9 +2,9 @@
 id: UXA-003
 title: Mapa Inicial de Jornadas e Telas
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Experience Architecture
-last_updated: 2026-07-25
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -18,9 +18,13 @@ related:
   - PAS-001-OA-VIEW-001
   - PAS-001-IC-VIEW-001
 normative: false
+maturity: historical_absorbed_provenance_only
 ---
 
 # UXA-003 — Mapa Inicial de Jornadas e Telas
+
+> **Estado corrente — proveniência histórica absorvida.** Este mapa inicial foi substituído operacionalmente por `GKR-JOURNEYS-001`, `GKR-JOURNEY-SCREEN-CATALOG-001`, `GKR-JOURNEY-SURFACE-REGISTRY-001` e `GKR-JOURNEY-TRANSITION-REGISTRY-001`. Ele não representa a taxonomia corrente de contextos, não é entrada de Design/IA e não governa ordem de wireframes. A experiência corrente distingue **Pessoa, Coletivo, Organização e Business** como contextos principais, preservando Business como produto especializado B2B e não participante estrutural.
+
 
 ## 1. Finalidade
 
