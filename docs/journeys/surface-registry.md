@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.36.5
+version: 0.36.6
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 related:
@@ -160,8 +160,8 @@ O total estrutural permanece **57 IDs**. A contagem não implica que todos estej
 | GKR-SURF-PER-106 | Meus Coletivos | participante | móvel | **validado** | UXA-056; UXA-092/094 | sem baseline visual corrente | UXA-092/094 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-107 | Central de Atualizações | participante | móvel | **validado** | UXA-058; UXA-094/096 | sem baseline visual corrente | UXA-094/096 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-108 | Início do Participante | participante | móvel | **validado no recorte da Pessoa participante** | UXA-056; UXA-058; UXA-096 | sem baseline visual corrente | UXA-096 | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-201 | Mapa de Oportunidades | Pessoa/visitante | móvel e computador | validado | UXA-004; UXA-098 | sem baseline visual corrente | UXA-025; integração UXA-098 | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-202 | Lista de Oportunidades | Pessoa/visitante | móvel e computador | validado | UXA-004 | sem baseline visual corrente | UXA-029; integração UXA-098 | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-201 | Mapa de Oportunidades | Pessoa/visitante | multicanal | validado | UXA-004; UXA-098 | sem baseline visual corrente | UXA-025; integração UXA-098 | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-202 | Lista de Oportunidades | Pessoa/visitante | multicanal | validado | UXA-004 | sem baseline visual corrente | UXA-029; integração UXA-098 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-203 | Detalhe de Oportunidade + revisão consciente de saída | Pessoa/visitante | móvel e computador | **validado** | UXA-004; UXA-098; UXA-101 | sem baseline visual corrente; revisão consciente governada por UXA-101 | UXA-012; entradas UXA-098; **saída UXA-101** | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-301 | Planos e comparação da Pessoa | Pessoa autenticada | móvel/protegido | **validado** | GKR-PLANS-PERSON-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente; contrato especializado preservado | maturidade funcional preservada no Registry | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-302 | revisão de contratação da Pessoa | Pessoa/pagador autorizado | móvel/protegido | **validado** | GKR-PLANS-PERSON-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente | maturidade funcional preservada no Registry | [Pessoa](surface-registry-person-details.md) |
@@ -193,7 +193,7 @@ O total estrutural permanece **57 IDs**. A contagem não implica que todos estej
 | GKR-SURF-COM-001 | configuração do anunciante | anunciante | protegido | **validado localmente** | GPA-007; UXA-038; UXA-041 | sem baseline visual corrente | UXA-041 | [Ads / Opportunity Boost e Fronteiras](surface-registry-ads-boundaries-details.md) |
 | GKR-SURF-COM-002 | cartão patrocinado e explicação | Pessoa exposta | público/protegido | validado | GPA-007; UXA-038; UXA-043 | sem baseline visual corrente | UXA-043 | [Ads / Opportunity Boost e Fronteiras](surface-registry-ads-boundaries-details.md) |
 | GKR-SURF-COM-003 | presença patrocinada em lista/mapa | Pessoa exposta | público/protegido | validado | GPA-007; UXA-038; UXA-045 | sem baseline visual corrente | UXA-045 | [Ads / Opportunity Boost e Fronteiras](surface-registry-ads-boundaries-details.md) |
-| GKR-SURF-COM-004 | gestão ativa/relatório | anunciante | protegido | validado | GPA-007; UXA-038; UXA-047/049/054 | sem baseline visual corrente | UXA-047/049/054 | [Ads / Opportunity Boost e Fronteiras](surface-registry-ads-boundaries-details.md) |
+| GKR-SURF-COM-004 | gestão ativa/relatório | anunciante | protegido | validado | GPA-007; UXA-038; UXA-047/049 | sem baseline visual corrente | UXA-047/049 | [Ads / Opportunity Boost e Fronteiras](surface-registry-ads-boundaries-details.md) |
 | GKR-SURF-COM-005 | estados residuais Opportunity Boost | anunciante/Pessoa | misto | **validado** | GPA-007; UXA-038; UXA-099 | sem baseline visual corrente | UXA-099 | [Ads / Opportunity Boost e Fronteiras](surface-registry-ads-boundaries-details.md) |
 | GKR-SURF-BND-001 | fronteira de destino externo de oportunidade | Pessoa → terceiro | externo | **examinado** | UXA-004/007/101 | sem tela por definição | **UXA-101; TRN-205 validada até a fronteira** | [Ads / Opportunity Boost e Fronteiras](surface-registry-ads-boundaries-details.md) |
 | GKR-SURF-BND-002 | fronteira de contratação/dimensionamento assistido | Coletivo/Organização → processo assistido quando necessário | externo ao autoatendimento | parcial | GEM-004-PLAN-TAXONOMY-AUTHORITY-001; GKR-JOURNEY-TRANSITION-REGISTRY-001 | sem tela por definição | parcial; TRN-416/TRN-426 preservadas | [Ads / Opportunity Boost e Fronteiras](surface-registry-ads-boundaries-details.md) |

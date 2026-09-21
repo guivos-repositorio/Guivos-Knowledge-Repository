@@ -2,7 +2,7 @@
 id: UXA-098
 title: Validação Integrada Corrente da Publicação à Descoberta e Detalhe
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: UXA-000
@@ -11,7 +11,6 @@ depends_on:
   - UXA-012
   - UXA-013
   - UXA-025
-  - UXA-028
   - UXA-029
   - UXA-038
   - GKR-JOURNEY-SURFACE-REGISTRY-001

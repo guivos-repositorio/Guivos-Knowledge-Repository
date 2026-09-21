@@ -22,7 +22,6 @@ CONTROL_PATHS = [
 STALE = ("M7.48", "M7.0 —", "GKR-STATE-001 1.99.0", "GKR-STATE-001 1.0.2", "UXA-071, não iniciada")
 
 F016_HISTORICAL_PARENT_ALLOWLIST = {
-    28: 24,
     35: 34,
     37: 36,
     41: 40,
@@ -122,6 +121,7 @@ def main() -> int:
         24: "uxa-024-opportunity-map-low-fidelity-wireframe.md",
         26: "uxa-026-opportunity-map-location-disabled-state.md",
         27: "uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md",
+        28: "uxa-028-opportunity-map-list-state.md",
         30: "uxa-030-opportunity-map-no-results-state.md",
         31: "uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md",
         32: "uxa-032-opportunity-map-desktop-reference.md",

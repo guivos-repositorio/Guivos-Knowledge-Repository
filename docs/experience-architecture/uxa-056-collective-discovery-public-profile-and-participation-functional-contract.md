@@ -2,7 +2,7 @@
 id: UXA-056
 title: Contrato Funcional de Descoberta, Perfil Público e Participação em Coletivos
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-21
 parent: UXA-000
@@ -15,7 +15,6 @@ depends_on:
   - UXA-014
   - UXA-019
   - UXA-025
-  - UXA-028
   - UXA-029
 related:
   - UXA-057
