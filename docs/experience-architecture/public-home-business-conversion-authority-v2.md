@@ -7,7 +7,6 @@ owner: Experience Architecture
 last_updated: 2026-08-16
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
 depends_on:
-  - GKR-UX-HOME-BUSINESS-NARRATIVE-001
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
   - GPA-004
   - GKR-STATE-001
