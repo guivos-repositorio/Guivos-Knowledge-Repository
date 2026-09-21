@@ -2,13 +2,12 @@
 id: UXA-057
 title: Contrato Funcional de Avaliação e Reputação
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-03
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-001
-  - UXA-003
   - UXA-004
   - UXA-009
   - UXA-011

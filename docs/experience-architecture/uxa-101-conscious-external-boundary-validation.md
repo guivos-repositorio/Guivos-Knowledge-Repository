@@ -2,13 +2,12 @@
 id: UXA-101
 title: Validação da Saída Consciente para Fronteira Externa de Oportunidades
 status: draft
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-09-21
 depends_on:
   - UXA-004
   - UXA-012
-  - UXA-059
   - UXA-098
 related:
   - GKR-SURF-PER-203
@@ -146,7 +145,7 @@ Nenhum SVG de `BND-001` é criado.
 
 ### `PER-203`
 
-**Revalidada no recorte de saída externa.** O Detalhe passa a materializar explicitamente o estado de revisão previsto desde UXA-007.
+**Revalidada no recorte de saída externa.** O Detalhe preserva explicitamente o estado de revisão governado pelo contrato corrente de `PER-203` e por esta validação.
 
 ### `GKR-TRN-205`
 

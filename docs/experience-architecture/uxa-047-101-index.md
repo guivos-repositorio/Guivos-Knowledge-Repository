@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Corrente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.53.0
+version: 3.54.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-21
 depends_on:
@@ -60,12 +60,13 @@ As validações históricas de conjunto completo e de canal específico `UXA-050
 - [UXA-056](uxa-056-collective-discovery-public-profile-and-participation-functional-contract.md)
 - [UXA-057](uxa-057-evaluation-and-reputation-functional-contract.md)
 - [UXA-058](uxa-058-interactions-recommendations-connections-functional-contract.md)
-- [UXA-087](uxa-087-collective-responsible-overview-functional-validation-and-reformulation.md)
 - [UXA-089](uxa-089-collective-request-management-functional-validation-and-reformulation.md)
 - [UXA-090](uxa-090-integrated-collective-request-handoffs-functional-validation.md)
 - [UXA-092](uxa-092-my-collectives-functional-validation-and-post-approval-continuity-revalidation.md)
 - [UXA-094](uxa-094-collective-updates-center-functional-validation-and-trn110-revalidation.md)
 - [UXA-096](uxa-096-participant-home-functional-validation-per107-revalidation-and-trn111-integrated-validation.md)
+
+`UXA-087` foi absorvida pela entrega/validação low-fidelity autenticada corrente de Organização/Coletivo e permanece somente no Git.
 
 O antigo programa de wireframes `UXA-059` e as validações móveis `UXA-061/063/065/067` tiveram sua função corrente absorvida por `UXA-056`, pelos registries e pelas validações posteriores `UXA-089/090/092/094/096`. A proveniência permanece no Git.
 

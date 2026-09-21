@@ -166,6 +166,7 @@ def main() -> int:
         84: "uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md",
         85: "uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md",
         86: "uxa-086-collective-responsible-overview-low-fidelity-wireframe.md",
+        87: "uxa-087-collective-responsible-overview-functional-validation-and-reformulation.md",
         88: "uxa-088-collective-request-management-low-fidelity-wireframes.md",
         91: "uxa-091-my-collectives-materialization-and-post-approval-continuity-refinement.md",
         93: "uxa-093-collective-updates-center-materialization.md",
