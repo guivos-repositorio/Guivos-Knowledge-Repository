@@ -167,6 +167,7 @@ nav:
       - Tecnologia de Grafo: adr/ADR-007-neo4j-primary-graph-reference.md
 
   - Governança do GKR:
+      - Framework de Auditoria Arquitetural: governance-framework/architectural-audit-framework.md
       - Consolidação do Conhecimento Arquitetural: governance-framework/architectural-knowledge-consolidation-pipeline.md
       - GKR como Fonte Única da Verdade: adr/ADR-001-gkr-as-source-of-truth.md
       - Arquitetura de Conhecimento da Guivos: adr/ADR-006-guivos-knowledge-architecture.md
