@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.3.2
+version: 2.3.3
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
 depends_on:
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
@@ -264,7 +264,7 @@ A execução deve utilizar somente o pacote correspondente à Home em trabalho, 
 
 ### 6.0 Fontes comuns obrigatórias
 
-No consumo corrente, todas as oito Homes usam estas cinco autoridades comuns:
+No consumo com IA, as oito Homes usam quatro autoridades universais de Design + esta autoridade condicional de IA:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001` — `docs/experience-architecture/public-homes-design-handoff.md`;
 2. `GKR-UX-HOMES-GENINPUT-001` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md` — este documento;

@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.10
+version: 1.3.11
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -271,7 +271,7 @@ Documentos adicionais podem ser consultados deliberadamente quando uma dúvida c
 
 Quando IA for utilizada, trabalhar uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente.
 
-A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + cinco fontes comuns + fontes específicas daquela Home.
+A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + quatro autoridades universais de Design + `GKR-UX-HOMES-GENINPUT-001` + fontes específicas daquela Home.
 
 Output inicial obrigatório: `EXPLORAÇÃO / NÃO CANÔNICA`.
 
