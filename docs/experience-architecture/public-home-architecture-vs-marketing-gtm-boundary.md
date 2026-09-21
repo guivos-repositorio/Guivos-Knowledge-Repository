@@ -2,14 +2,12 @@
 id: GKR-UX-HOME-GTM-BOUNDARY-001
 title: Fronteira entre Arquitetura da Home e Estratégia de Marketing, Lançamento e GTM
 status: draft
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-20
-parent: GKR-UX-HOME-HANDOFF-001
 depends_on:
   - UXA-020
   - UXA-021
-  - GKR-UX-HOME-HANDOFF-001
   - GKR-UX-HOME-NARR-001
   - GKR-UX-HOME-NAV-001
   - GKR-UX-HOME-NAV-002
