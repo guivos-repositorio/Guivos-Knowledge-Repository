@@ -773,7 +773,7 @@ A produção externa de Design deve sinalizar essas lacunas quando materialmente
 O regime corrente das oito Homes é governado pelas autoridades comuns posteriores a este Source Lock histórico:
 
 ```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.2
+GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.4
 → DESIGNER-FIRST
 → 8 / 8 HOMES
 
@@ -799,7 +799,7 @@ O consumo corrente da Home Business é resolvido pelo Manifesto canônico vigent
 
 Usar:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.2` como autoridade comum de handoff;
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.4` como autoridade comum de handoff;
 2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.9`;
 3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.1`;
