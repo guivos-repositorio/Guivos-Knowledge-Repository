@@ -1325,7 +1325,6 @@ Esta matriz **não autoriza remoção automática das fontes**. A remoção fís
 
 ### Mensagem e narrativa
 
-- [Diretriz Estratégica de Mensagem](public-home-message-authority-transformation-direction.md)
 - [Especificação dos 11 Movimentos](public-home-11-movements-narrative-specification.md)
 
 ### Navegação, conteúdo e fronteiras
@@ -1334,8 +1333,6 @@ Esta matriz **não autoriza remoção automática das fontes**. A remoção fís
 
 ### Auditoria e evidência
 
-- [Benchmark e diferenciação](public-home-benchmark-and-differentiation-evidence.md)
-- [Comparativo de Hero](public-home-guivos-vs-global-hero-comparative.md)
 
 Os documentos listados acima permanecem no corpus apenas enquanto exercem função corrente de aprofundamento, contrato ou evidência. Qualquer remoção exige absorção integral comprovada e ausência de dependência vigente.
 
