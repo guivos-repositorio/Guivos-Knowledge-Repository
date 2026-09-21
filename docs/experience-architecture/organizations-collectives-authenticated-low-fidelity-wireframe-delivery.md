@@ -6,7 +6,7 @@ version: 0.1.0
 owner: Design da Experiência da Guivos
 last_updated: 2026-09-18
 normative: false
-maturity: authenticated_low_fidelity_wireframe_delivery_pending_functional_validation
+maturity: authenticated_low_fidelity_wireframe_delivery_validated
 depends_on:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
