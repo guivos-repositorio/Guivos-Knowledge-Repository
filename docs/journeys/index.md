@@ -2,9 +2,9 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.53.0
+version: 0.53.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-22
 related:
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -14,6 +14,7 @@ related:
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
@@ -124,7 +125,8 @@ Abrir Planos não inicia cobrança nem altera consentimento, capacidade ou relev
 ## 8. Organização e Coletivo autenticados
 
 ```text
-INFORMATION ARCHITECTURE
+JOBS / AUTORIDADE
+→ INFORMATION ARCHITECTURE
 → SURFACE MAP
 → STATE MAP
 → PRIORITY FLOWS
