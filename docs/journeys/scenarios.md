@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCENARIOS-001
 title: Cenários Integrados de Jornada
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-22
 related:
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -98,7 +98,7 @@ DESCOBERTA
 
 Estado corrente relevante:
 
-- `GKR-TRN-104` permanece parcial;
+- `GKR-TRN-102..104` permanecem parciais; o contrato funcional existe, mas esses handoffs ainda não foram validados ponta a ponta como conjunto;
 - `GKR-TRN-105..112` estão integralmente validadas conforme o Transition Registry.
 
 Aprovação, vínculo, leitura, presença e autoridade permanecem conceitos separados. Histórico não preserva acesso quando vínculo ou permissão deixam de ser válidos.
