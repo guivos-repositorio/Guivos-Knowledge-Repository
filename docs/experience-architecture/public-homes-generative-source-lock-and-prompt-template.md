@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.3.8
+version: 2.3.9
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -328,11 +328,11 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-BUSINESS-READ-FIRST-001 v1.0.9` — `docs/experience-architecture/read-first/public-home-business-read-first.md`;
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.20` — `docs/experience-architecture/public-home-business-source-lock.md`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.7` — `docs/experience-architecture/public-home-business-master-document.md`;
+- `GKR-UX-HOME-BUSINESS-READ-FIRST-001 v1.0.10` — `docs/experience-architecture/read-first/public-home-business-read-first.md`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.21` — `docs/experience-architecture/public-home-business-source-lock.md`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.8` — `docs/experience-architecture/public-home-business-master-document.md`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.6` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.7` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.7.4` — `docs/product-architecture/business.md`;
 - `GKR-PLANS-BUSINESS-001 v1.3.0` — `docs/plans/business.md`.
 
@@ -340,10 +340,10 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-INTELLIGENCE-READ-FIRST-001 v1.0.5` — `docs/experience-architecture/read-first/public-home-intelligence-read-first.md`;
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.15` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.14` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.11` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+- `GKR-UX-HOME-INTELLIGENCE-READ-FIRST-001 v1.0.6` — `docs/experience-architecture/read-first/public-home-intelligence-read-first.md`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.16` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.15` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.12` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
 - `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.5` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 - `GKR-UX-HOMES-OUTCOME-001 v1.0.0` — `docs/experience-architecture/public-homes-value-outcome-principle.md`;
 - `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.2` — `docs/product-architecture/intelligence-product-source-lock.md`;
