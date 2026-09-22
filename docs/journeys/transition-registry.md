@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.3
+version: 0.29.4
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-22
 related:
@@ -117,10 +117,10 @@ O modelo corrente não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011
 | GKR-TRN-203 | ORG-003 | PER-201 | **integralmente validada** | UXA-098 — ativação elegível à descoberta sem garantia de distribuição |
 | GKR-TRN-204 | PER-201 | PER-203 | **integralmente validada** | UXA-098 — Mapa → Detalhe com mesma oportunidade e retorno preservado |
 | GKR-TRN-205 | PER-203 | BND-001 | **integralmente validada até a fronteira de autoridade Guivos** | **UXA-101 — revisão consciente, destino/responsável, minimização de dados, revalidação, cancelamento, retorno e idempotência examinados; processo externo não é validado** |
-| GKR-TRN-206 | ORG-004 | COL-008 | contratada | superfícies bilaterais ausentes |
-| GKR-TRN-207 | COL-008 | ORG-005 | contratada | interface bilateral ausente |
-| GKR-TRN-208 | ORG-005 | ORG-006 | contratada | operação bilateral não materializada |
-| GKR-TRN-209 | ORG-006 | ORG-006 | contratada | estados operacionais ausentes |
+| GKR-TRN-206 | ORG-004 | COL-008 | contratada | superfícies/lifecycle definidos e cobertura low-fidelity O↔C existente; handoff Organização → Coletivo ainda não validado ponta a ponta |
+| GKR-TRN-207 | COL-008 | ORG-005 | contratada | perspectivas bilaterais definidas; handoff Coletivo → avaliação/negociação da Organização ainda não validado ponta a ponta |
+| GKR-TRN-208 | ORG-005 | ORG-006 | contratada | lifecycle definido; efeito negociação → relação ativa ainda não validado ponta a ponta |
+| GKR-TRN-209 | ORG-006 | ORG-006 | contratada | estados contratuais definidos; revisão/alteração/continuidade ainda não validadas ponta a ponta |
 | GKR-TRN-210 | PER-201 | PER-202 | **integralmente validada** | UXA-098 — mesma consulta/contexto preservados |
 | GKR-TRN-211 | PER-202 | PER-203 | **integralmente validada** | UXA-098 — Lista → Detalhe com identidade e retorno preservados |
 
