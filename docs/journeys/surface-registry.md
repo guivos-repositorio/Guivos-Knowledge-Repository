@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.36.7
+version: 0.36.8
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-22
 related:
   - UXA-089
   - UXA-090
@@ -171,8 +171,8 @@ O total estrutural permanece **57 IDs**. A contagem não implica que todos estej
 | GKR-SURF-COL-004 | participantes e vínculos | responsável | protegido | contratada / não materializada | GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | — | — | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-005 | comunicação oficial | responsável | protegido | contratada / não materializada | UXA-058; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | — | — | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-006 | atividades, consultas e decisões | responsável | protegido | contratada / não materializada | GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | — | — | [Coletivo](surface-registry-collective-details.md) |
-| GKR-SURF-COL-007 | proteção e moderação | responsável | protegido | contratado | UXA-058 | parcial | — | [Coletivo](surface-registry-collective-details.md) |
-| GKR-SURF-COL-008 | relações institucionais | responsável | protegido | contratado | UXA-019 | — | — | [Coletivo](surface-registry-collective-details.md) |
+| GKR-SURF-COL-007 | proteção e moderação | responsável | protegido | contratado | UXA-058; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | parcial — cobertura C-A/X2 no low-fidelity corrente | Governança e Proteção = PASS no pacote low-fidelity; validação dedicada ponta a ponta não comprovada | [Coletivo](surface-registry-collective-details.md) |
+| GKR-SURF-COL-008 | relações institucionais | responsável | protegido | contratado | UXA-019; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | parcial — cobertura Relações O↔C no low-fidelity corrente | Relações O↔C = PASS no pacote low-fidelity; continuidade ponta a ponta permanece contratada | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-301 | Planos e comparação do Coletivo — Livre · Mobiliza · Impacta · Rede | responsável autorizado | computador/protegido | **validado no fluxo especializado** | GKR-PLANS-COLLECTIVE-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente; retorno governado pelo Transition Registry | maturidade funcional preservada no Registry; navegação administrativa preservada no Transition Registry | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-302 | revisão de contratação do Coletivo | responsável financeiro autorizado | computador/protegido | **validado** | GKR-PLANS-COLLECTIVE-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente | maturidade funcional preservada no Registry | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-303 | gestão de downgrade e cancelamento do Coletivo | responsável autorizado | computador/protegido | **validado** | GKR-PLANS-COLLECTIVE-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente | maturidade funcional preservada no Registry | [Coletivo](surface-registry-collective-details.md) |
@@ -180,9 +180,9 @@ O total estrutural permanece **57 IDs**. A contagem não implica que todos estej
 | GKR-SURF-ORG-001 | Visão Geral da Organização | representante | protegido | low-fidelity validado / high-fidelity separado | GKR-UX-ORGCOL-AUTH-IA-001; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001; GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0`; materialização visual final pertence a Design | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS` | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-002 | cadastro de oportunidade | representante | protegido | validado | UXA-004; UXA-013 | sem baseline visual corrente | UXA-013 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-003 | oportunidade aprovada/ativa | representante | protegido | validado | UXA-004; UXA-013; UXA-098 | sem baseline visual corrente | UXA-013; integração UXA-098 | [Organização](surface-registry-organization-details.md) |
-| GKR-SURF-ORG-004 | proposta de relação com Coletivo | representante | protegido | contratado | UXA-019 | — | — | [Organização](surface-registry-organization-details.md) |
-| GKR-SURF-ORG-005 | avaliação e negociação bilateral | representantes | protegido | contratado | UXA-019 | — | — | [Organização](surface-registry-organization-details.md) |
-| GKR-SURF-ORG-006 | relação ativa e revisão | representantes | protegido | contratado | UXA-019 | — | — | [Organização](surface-registry-organization-details.md) |
+| GKR-SURF-ORG-004 | proposta de relação com Coletivo | representante | protegido | contratado | UXA-019; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | parcial — cobertura Relações O↔C no low-fidelity corrente | Relações O↔C = PASS no pacote low-fidelity; continuidade ponta a ponta permanece contratada | [Organização](surface-registry-organization-details.md) |
+| GKR-SURF-ORG-005 | avaliação e negociação bilateral | representantes | protegido | contratado | UXA-019; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | parcial — cobertura Relações O↔C no low-fidelity corrente | Relações O↔C = PASS no pacote low-fidelity; continuidade ponta a ponta permanece contratada | [Organização](surface-registry-organization-details.md) |
+| GKR-SURF-ORG-006 | relação ativa e revisão | representantes | protegido | contratado | UXA-019; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | parcial — cobertura Relações O↔C no low-fidelity corrente | Relações O↔C = PASS no pacote low-fidelity; continuidade ponta a ponta permanece contratada | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-007 | resultados e evidências institucionais | representante | protegido | indeterminado | referências dispersas | — | — | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-301 | Planos e comparação da Organização — Conecta · Eleva · Transforma | representante autorizado | computador/protegido | **validado no fluxo especializado** | GKR-PLANS-ORGANIZATION-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente; retorno governado pelo Transition Registry | maturidade funcional preservada no Registry; navegação administrativa preservada no Transition Registry | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-302 | revisão de contratação da Organização | autoridade financeira identificada | computador/protegido | **validado** | GKR-PLANS-ORGANIZATION-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente | maturidade funcional preservada no Registry | [Organização](surface-registry-organization-details.md) |
