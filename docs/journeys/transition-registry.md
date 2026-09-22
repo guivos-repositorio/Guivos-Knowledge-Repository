@@ -4,7 +4,7 @@ title: Registro Granular de Transições
 status: active
 version: 0.29.3
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-22
 related:
   - UXA-089
   - UXA-090
