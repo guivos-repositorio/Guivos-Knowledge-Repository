@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.10.5
+version: 1.10.6
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-22
 normative: false
 related:
   - UXA-014
@@ -288,7 +288,7 @@ COLETIVO
 └── Planos e Capacidade [especializado / contextual]
 ```
 
-A IA agrupa informação e trabalho; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` materializa esses domínios como superfícies lógicas autenticadas; `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` define as condições funcionais que essas responsabilidades precisam preservar; `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` define os fluxos prioritários canônicos documentais; e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` define topologia, hierarquia, entrada, retorno e recontextualização. Nenhuma dessas autoridades define quantidade final de telas, menu visual, wireframe, UI, protótipo, RBAC técnico ou implementação.
+A IA agrupa informação e trabalho; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` materializa esses domínios como superfícies lógicas autenticadas; `GKR-UX-ORGCOL-AUTH-STATE-MAP-001` define as condições funcionais que essas responsabilidades precisam preservar; `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.1` define os fluxos prioritários canônicos documentais; e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.1` define topologia, hierarquia, entrada, retorno e recontextualização. Nenhuma dessas autoridades define quantidade final de telas, menu visual, wireframe, UI, protótipo, RBAC técnico ou implementação.
 
 ## 9. Jornadas atuais
 
@@ -488,4 +488,4 @@ Isso não apaga o histórico; apenas impede que materializações prematuras sej
 
 O atlas de supply e relevância possui função diferente: ele preserva Research, exemplos e método para tornar compreensível o universo de oportunidades. Ele **não** promove wireframes, matching, PMF ou implementação a estado superior.
 
-`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0` compõem a cadeia documental canônica corrente. A Navigation Materialization define topologia/hierarquia/entrada/retorno, mas não define wireframes, Design/UI ou implementação.
+`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.1`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.2`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.1` e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.1` compõem a cadeia documental canônica corrente. A Navigation Materialization define topologia/hierarquia/entrada/retorno, mas não define wireframes, Design/UI ou implementação.
