@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.23
+version: 3.50.24
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-22
 normative: true
@@ -73,7 +73,7 @@ GKR VIGENTE
 
 A frente posterior da Cognitive Reference Architecture também foi concluída em seu limite documental: `ADR-008` aprovou placement e ownership sob a GIA; `GIA-COG-001 v0.1.1` passou por revisão, remediação, revalidação semântica e gate de promoção e é agora a **Cognitive Reference Architecture vigente, ativa e normativa**. Essa promoção não autoriza `GIA-COG-002..008`, arquitetura física, dados reais, implementação, operação ou produção.
 
-A frente documental posterior de Organizações e Coletivos avançou por gates próprios até a Navigation Materialization canônica `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. A autorização governada subsequente `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0` liberou exclusivamente os wireframes autenticados low-fidelity, a primeira entrega foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e a validação funcional posterior concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`, com 30/30 itens de cobertura, 15/15 invariantes, 12/12 desafios de estado, 0 findings materiais e nenhuma reformulação requerida. O pacote Delivery + Validation é a referência corrente low-fidelity O/C. A adjudicação pós-validação `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1` concluiu `PASS` e a decisão humana subsequente `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0` concedeu autorização para Design high-fidelity. A execução permanece `NOT_STARTED`; protótipo interativo e Product Engineering continuam não liberados.
+A frente documental posterior de Organizações e Coletivos avançou por gates próprios até a Navigation Materialization canônica `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.1`. A autorização governada subsequente `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0` liberou exclusivamente os wireframes autenticados low-fidelity, a primeira entrega foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e a validação funcional posterior concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`, com 30/30 itens de cobertura, 15/15 invariantes, 12/12 desafios de estado, 0 findings materiais e nenhuma reformulação requerida. O pacote Delivery + Validation é a referência corrente low-fidelity O/C. A adjudicação pós-validação `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1` concluiu `PASS` e a decisão humana subsequente `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.1` concedeu autorização para Design high-fidelity. A execução permanece `NOT_STARTED`; protótipo interativo e Product Engineering continuam não liberados.
 
 ## 2. Estado executivo
 
@@ -444,7 +444,7 @@ Permanecem autoridades funcionais:
 
 ### 8.2 Atores, autoridades e jobs
 
-`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.1` está ativo e define, antes da arquitetura visual:
+`GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.2` está ativo e define, antes da arquitetura visual:
 
 - classes funcionais de atores;
 - participante representado;
@@ -469,7 +469,7 @@ AUTORIDADE DECLARADA
 
 ### 8.3 Arquitetura da Informação
 
-`GKR-UX-ORGCOL-AUTH-IA-001 v1.3.0` está ativo em maturidade `authenticated_information_architecture_defined`. A progressão documental posterior permanece registrada nas autoridades correntes de Surface Map, State Map, Priority Flows, Navigation Materialization e wireframes autenticados.
+`GKR-UX-ORGCOL-AUTH-IA-001 v1.3.2` está ativo em maturidade `authenticated_information_architecture_defined`. A progressão documental posterior permanece registrada nas autoridades correntes de Surface Map, State Map, Priority Flows, Navigation Materialization e wireframes autenticados.
 
 Organização:
 
@@ -509,7 +509,7 @@ ORGANIZAÇÃO ≠ COLETIVO
 
 ### 8.4 Mapa lógico de superfícies — estado canônico documental
 
-`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.0` está ativo como **mapa lógico-documental canônico** da experiência autenticada de Organização e Coletivo.
+`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.1` está ativo como **mapa lógico-documental canônico** da experiência autenticada de Organização e Coletivo.
 
 O mapa:
 
@@ -521,7 +521,7 @@ O mapa:
 
 ### 8.5 Mapa funcional de estados — estado canônico documental
 
-`GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.0` está ativo como **mapa funcional canônico documental dos estados autenticados** de Organização e Coletivo.
+`GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.2` está ativo como **mapa funcional canônico documental dos estados autenticados** de Organização e Coletivo.
 
 Ele:
 
@@ -544,14 +544,14 @@ O/C MAPA FUNCIONAL DE ESTADOS
 
 PRIORITY FLOWS
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
-→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.1
 
 NAVIGATION MATERIALIZATION ELIGIBILITY
 → PASS / ACTIVE / CANONICAL
 → GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001 v1.0.0
 
 NAVIGATION MATERIALIZATION
-→ GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.1
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 → PRODUCT MENU VISUAL = NOT DEFINED
 
@@ -562,7 +562,7 @@ HIGH-FIDELITY ELIGIBILITY
 → PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1
 
 HIGH-FIDELITY DESIGN AUTHORIZATION
-→ GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
+→ GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.1
 → EXECUTION = NOT_STARTED
 
 INTERACTIVE PROTOTYPE
@@ -575,7 +575,7 @@ PRODUCT ENGINEERING
 
 A antiga proposta pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece somente `HOLD_REVIEW` e não é autoridade vigente.
 
-Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. A elegibilidade para **Navigation Materialization** foi adjudicada como `PASS` e a materialização documental foi posteriormente autorizada, executada, validada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Os **Authenticated Wireframes low-fidelity** foram então autorizados, entregues e funcionalmente validados com `PASS` por `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A elegibilidade high-fidelity O/C foi adjudicada como `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1` e a autorização humana subsequente foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`. A execução high-fidelity permanece `NOT_STARTED`; protótipo interativo, implementação e Product Engineering continuam não liberados.
+Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. A elegibilidade para **Navigation Materialization** foi adjudicada como `PASS` e a materialização documental foi posteriormente autorizada, executada, validada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.1`. Os **Authenticated Wireframes low-fidelity** foram então autorizados, entregues e funcionalmente validados com `PASS` por `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A elegibilidade high-fidelity O/C foi adjudicada como `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1` e a autorização humana subsequente foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.1`. A execução high-fidelity permanece `NOT_STARTED`; protótipo interativo, implementação e Product Engineering continuam não liberados.
 
 ```text
 DOCUMENTAÇÃO
@@ -1659,7 +1659,7 @@ VISUAL IDENTITY
 
 O/C AUTHENTICATED HIGH-FIDELITY
 → ELIGIBILITY PASS
-→ AUTHORIZATION GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
+→ AUTHORIZATION GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.1
 → EXECUTION AUTHORIZED / NOT_STARTED
 
 UXA-102 / V5
