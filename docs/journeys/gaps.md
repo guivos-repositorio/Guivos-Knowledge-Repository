@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.7
+version: 1.0.8
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-22
 related:
@@ -52,7 +52,7 @@ As ligações `Hoje ↔ Meus Objetivos`, `Hoje ↔ Meus Próximos Passos` e `Hoj
 
 ## 3. Oportunidades e fronteiras externas
 
-A continuidade publicação → descoberta → Mapa/Lista → Detalhe está governada pelas autoridades correntes.
+A continuidade publicação → descoberta → Mapa/Lista → Detalhe está governada pelas autoridades correntes. A entrada institucional `ORG-001 → ORG-002` permanece separadamente parcial em `TRN-201`; o contrato funcional do cadastro existe, mas a ligação ponta a ponta com a visão institucional ainda não está fechada.
 
 Permanece fora da autoridade da Guivos:
 
@@ -65,7 +65,7 @@ DETALHE
 
 A Guivos governa até a transferência consciente de autoridade. O comportamento e o resultado posteriores pertencem ao terceiro.
 
-Integrações orgânico–patrocinado permanecem limitadas à maturidade registrada para `TRN-304..306`.
+Opportunity Boost preserva maturidade parcial nas ligações `TRN-301`, `TRN-302`, `TRN-304`, `TRN-305` e `TRN-306`. Isso inclui ativação/gestão de campanha, projeção em unidade patrocinada, integração com descoberta orgânica e estados residuais; nenhuma dessas ligações é promovida além do estado registrado no Transition Registry.
 
 ## 4. Planos, cobrança e contratação assistida
 
@@ -154,6 +154,7 @@ O fechamento da cadeia principal autenticada **não** significa que todas as cap
 
 Permanecem abertas, conforme os Surface Registries e contratos correntes:
 
+- `TRN-102..104`: descoberta de Coletivo → perfil público → revisão/solicitação → estado pendente — superfícies e contrato funcional existem sob `UXA-056`, mas os handoffs continuam parciais e não foram validados ponta a ponta como conjunto;
 - `COL-001`: presença pública e entrada coletiva — presença pública governada pelo Master/`UXA-056`, com continuidade autenticada coberta pela arquitetura O/C corrente; a separação final entre presença pública, entrada autenticada e operação interna ainda não está fechada ponta a ponta;
 - `ORG-004..006`: proposta, negociação e relação ativa Organização ↔ Coletivo — contratos/lifecycle definidos sob `UXA-019` + Surface/State Map, com cobertura low-fidelity O↔C em `PASS`; materialização dedicada e continuidade ponta a ponta `TRN-206..209` ainda não estão fechadas;
 - `ORG-007`: revisão institucional de evidências/resultados — responsabilidade conhecida, com evidência insuficiente para classificar;
