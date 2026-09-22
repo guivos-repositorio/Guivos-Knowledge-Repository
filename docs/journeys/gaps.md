@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.4
+version: 1.0.5
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-22
 related:
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -154,13 +154,13 @@ O fechamento da cadeia principal autenticada **não** significa que todas as cap
 
 Permanecem abertas, conforme os Surface Registries e contratos correntes:
 
-- `ORG-004..006`: proposta, negociação e operação bilateral Organização ↔ Coletivo — superfícies ainda ausentes/indeterminadas;
+- `ORG-004..006`: proposta, negociação e relação ativa Organização ↔ Coletivo — contratos/lifecycle definidos sob `UXA-019` + Surface/State Map, com cobertura low-fidelity O↔C em `PASS`; materialização dedicada e continuidade ponta a ponta `TRN-206..209` ainda não estão fechadas;
 - `ORG-007`: revisão institucional de evidências/resultados — responsabilidade conhecida, com evidência insuficiente para classificar;
 - `COL-004`: gestão de vínculo — contratada e ainda não materializada especificamente;
 - `COL-005`: comunicação oficial do Coletivo — contratada e ainda não materializada especificamente;
 - `COL-006`: operação/governança interna — contratada e ainda não materializada especificamente;
-- `COL-007`: evento protegido — estado ainda indeterminado;
-- `COL-008`: relação bilateral Organização ↔ Coletivo — superfície ausente;
+- `COL-007`: proteção e moderação — contrato corrente com cobertura low-fidelity parcial e `Governança e Proteção = PASS`; materialização dedicada e continuidade ponta a ponta ainda não estão comprovadas;
+- `COL-008`: relação Organização ↔ Coletivo — contrato/lifecycle definidos sob `UXA-019`, com cobertura low-fidelity O↔C em `PASS`; materialização dedicada e continuidade ponta a ponta permanecem abertas;
 - capacidades de avaliação/reputação e de interações/recomendações/conexões governadas por `UXA-057` e `UXA-058` permanecem dependentes de materialização/validação específica onde o Registry ainda não comprova fechamento.
 
 Essas lacunas especializadas não reabrem a cadeia principal autenticada já fechada até `HIGH-FIDELITY AUTHORIZATION`; elas devem ser tratadas como frentes funcionais próprias, sem promoção por analogia.
