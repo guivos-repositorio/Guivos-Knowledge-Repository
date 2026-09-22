@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-AUTH-STATE-MAP-001
 title: Organizações e Coletivos — Mapa de Estados da Experiência Autenticada
 status: active
-version: 1.1.2
+version: 1.1.3
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-22
 normative: false
@@ -645,20 +645,23 @@ MAPA DE ESTADOS
 → DEFINED / CANONICAL DOCUMENTARY
 
 FLUXOS PRIORITÁRIOS
-→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.1
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 NAVIGATION MATERIALIZATION
-→ NOT MATERIALIZED
+→ ACTIVE / CANONICAL
 
-WIREFRAMES
-→ NOT STARTED
+AUTHENTICATED WIREFRAMES
+→ DELIVERY v0.1.0 / VALIDATION v1.0.0 PASS
 
-DESIGN / UI / PROTÓTIPO
-→ NOT AUTHORIZED
+HIGH-FIDELITY DESIGN
+→ AUTHORIZED / NOT_STARTED
+
+PROTOTYPE
+→ NOT_AUTHORIZED
 
 PRODUCT ENGINEERING
-→ NOT RELEASED
+→ NOT_RELEASED
 ```
 
 A promoção desta autoridade não altera por inferência a maturidade individual dos `GKR-SURF-*` nem dos `GKR-TRN-*`.
