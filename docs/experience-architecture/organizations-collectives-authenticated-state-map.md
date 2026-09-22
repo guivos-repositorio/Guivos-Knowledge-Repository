@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-STATE-MAP-001
 title: Organizações e Coletivos — Mapa de Estados da Experiência Autenticada
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-22
 normative: false
 maturity: authenticated_state_map_defined
 depends_on:
@@ -679,9 +679,28 @@ O ato governado posterior de Priority Flows reconciliou:
 - proteção e não retaliação;
 - retorno e interrupção.
 
-O próximo gate corrente após essa definição posterior é **Navigation Materialization**, ainda não autorizado.
+No momento dessa definição, o próximo gate era **Navigation Materialization**, ainda não autorizado. Esse estado é preservado como proveniência do ato original. Posteriormente, Navigation Materialization foi promovida, o low-fidelity foi autorizado/entregue/validado com `PASS`, e high-fidelity recebeu autorização humana.
 
-Até autorização específica posterior:
+Estado downstream corrente:
+
+```text
+NAVIGATION MATERIALIZATION
+→ ACTIVE / CANONICAL
+
+AUTHENTICATED WIREFRAMES
+→ DELIVERY v0.1.0 / VALIDATION v1.0.0 PASS
+
+HIGH-FIDELITY DESIGN
+→ AUTHORIZED / NOT_STARTED
+
+PROTOTYPE
+→ NOT_AUTHORIZED
+
+PRODUCT ENGINEERING
+→ NOT_RELEASED
+```
+
+Estado preservado no ato de promoção original:
 
 ```text
 PRIORITY FLOWS
