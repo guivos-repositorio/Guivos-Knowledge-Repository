@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.36.8
+version: 0.36.9
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-22
 related:
@@ -166,7 +166,7 @@ O total estrutural permanece **57 IDs**. A contagem não implica que todos estej
 | GKR-SURF-PER-303 | gestão de downgrade e cancelamento da Pessoa | Pessoa titular | móvel/protegido | **validado** | GKR-PLANS-PERSON-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente | maturidade funcional preservada no Registry | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-304 | resultado e recuperação de plano/cobrança da Pessoa | Pessoa titular | móvel/protegido | **validado** | GKR-PLANS-PERSON-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente | maturidade funcional preservada no Registry | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-COL-001 | presença pública e entrada coletiva | visitante/responsável | público e protegido | parcial | GKR-UX-HOME-OC-MASTER-001; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` quando a entrada cruza para experiência autenticada; expressão pública final pertence a Design | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS` no recorte autenticado | [Coletivo](surface-registry-collective-details.md) |
-| GKR-SURF-COL-002 | Visão Geral do Responsável | responsável | computador protegido | parcial / materialização local | UXA-014; GKR-PLANS-COLLECTIVE-001 | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` como materialização principal low-fidelity | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS` | [Coletivo](surface-registry-collective-details.md) |
+| GKR-SURF-COL-002 | Visão Geral do Responsável | responsável | computador protegido | parcial / low-fidelity principal validado | UXA-014; GKR-UX-ORGCOL-AUTH-IA-001; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001; GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` como materialização principal low-fidelity | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS` | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-003 | gestão de solicitações | responsável | computador protegido | validado | UXA-056; UXA-089/090/092 | sem baseline visual corrente; fluxo especializado preservado funcionalmente | UXA-089/090/092 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-004 | participantes e vínculos | responsável | protegido | contratada / não materializada | GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | — | — | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-005 | comunicação oficial | responsável | protegido | contratada / não materializada | UXA-058; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | — | — | [Coletivo](surface-registry-collective-details.md) |
