@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.24.2
+version: 1.24.3
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-22
 related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -17,6 +17,7 @@ related:
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
