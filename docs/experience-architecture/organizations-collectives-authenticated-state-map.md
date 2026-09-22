@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-AUTH-STATE-MAP-001
 title: Organizações e Coletivos — Mapa de Estados da Experiência Autenticada
 status: active
-version: 1.1.1
+version: 1.1.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-22
 normative: false
@@ -351,7 +351,7 @@ A ausência de ID dedicado não autoriza fundir este domínio com configuração
 
 ## 6. Organização — capacidade comercial especializada
 
-`GKR-SURF-ORG-301..304` e `GKR-SURF-BND-002` preservam suas semânticas especializadas sob `UXA-100/A2/A3/A4`, `GEM-004-PLAN-TAXONOMY-AUTHORITY-001` e `GKR-JOURNEY-TRANSITION-REGISTRY-001`.
+`GKR-SURF-ORG-301..304` e `GKR-SURF-BND-002` preservam suas semânticas especializadas sob `GKR-PLANS-ORGANIZATION-001`, `GEM-004-PLAN-TAXONOMY-AUTHORITY-001` e `GKR-JOURNEY-TRANSITION-REGISTRY-001`. O antigo pacote `UXA-100 + A1..A4` permanece somente como proveniência no Git e não é autoridade corrente.
 
 Esta frente apenas preserva que:
 
