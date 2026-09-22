@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
 title: Organizações e Coletivos — Fluxos Prioritários da Experiência Autenticada
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-22
 normative: false
 maturity: authenticated_priority_flows_defined
 depends_on:
@@ -934,13 +934,16 @@ PRIORITY FLOWS
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 NAVIGATION MATERIALIZATION
-→ NOT MATERIALIZED / NOT RELEASED
+→ SUBSEQUENTLY DEFINED / CANONICAL
 
 AUTHENTICATED WIREFRAMES
-→ NOT STARTED / NOT RELEASED
+→ SUBSEQUENTLY AUTHORIZED / DELIVERED / VALIDATED PASS
 
-DESIGN / UI / PROTOTYPE
-→ NOT AUTHORIZED
+HIGH-FIDELITY DESIGN
+→ SUBSEQUENTLY AUTHORIZED / NOT_STARTED
+
+PROTOTYPE
+→ NOT_AUTHORIZED
 
 UXA-102 / V5
 → NOT_STARTED
@@ -949,9 +952,9 @@ PRODUCT ENGINEERING
 → PAUSED BEFORE W0-01 / NOT RELEASED
 ```
 
-## 24. Próximo gate após promoção
+## 24. Continuidade após promoção
 
-O próximo gate governado elegível é **Navigation Materialization**, ainda não autorizado.
+No momento da promoção desta autoridade, o próximo gate governado elegível era **Navigation Materialization**. Esse gate foi posteriormente autorizado e executado; a sequência downstream avançou também por autorização/validação low-fidelity e, depois, por elegibilidade e autorização high-fidelity. O estado corrente é `HIGH-FIDELITY AUTHORIZED / NOT_STARTED`; protótipo e Product Engineering permanecem gates separados e não liberados.
 
 A promoção documental desta autoridade não autoriza automaticamente:
 
