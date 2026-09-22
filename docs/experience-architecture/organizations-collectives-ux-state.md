@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-UX-STATE-001
 title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.12.2
+version: 1.12.3
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-22
 normative: false
 related:
   - GKR-UX-ORGCOL-STATE-001
@@ -30,11 +30,11 @@ related:
 
 O estado vigente é:
 
-> **A primeira entrega low-fidelity de Organização e Coletivo foi executada e validada com `PASS`. A elegibilidade high-fidelity posterior também concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1`; a autorização high-fidelity foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`, e a execução permanece `NOT_STARTED`.**
+> **A primeira entrega low-fidelity de Organização e Coletivo foi executada e validada com `PASS`. A elegibilidade high-fidelity posterior também concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1`; a autorização high-fidelity foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.1`, e a execução permanece `NOT_STARTED`.**
 
 A entrega corrente materializa em baixa fidelidade a visão geral/início de Organização e Coletivo, a hierarquia funcional, variantes de atenção, autoridade, proteção, troca de contexto e indisponibilidade. Permanecem deliberadamente não definidos: UI final, componentes finais, visual high-fidelity, protótipo navegável, implementação e testes de usabilidade.
 
-Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados, Priority Flows e Navigation Materialization autenticada já foram definidos documentalmente em instrumentos próprios. A Navigation Materialization canônica está em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Posteriormente, os wireframes autenticados low-fidelity foram autorizados, entregues em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A autorização high-fidelity posterior não equivale a execução. UI final, protótipo e implementação continuam não materializados por esta autoridade.
+Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados, Priority Flows e Navigation Materialization autenticada já foram definidos documentalmente em instrumentos próprios. A Navigation Materialization canônica está em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.1`. Posteriormente, os wireframes autenticados low-fidelity foram autorizados, entregues em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A autorização high-fidelity posterior não equivale a execução. UI final, protótipo e implementação continuam não materializados por esta autoridade.
 
 ## 2. O que já existe e governa a continuidade da UX
 
@@ -132,7 +132,7 @@ A construção deverá continuar do estado documental vigente, e não dos SVGs h
 5. mapa funcional de estados — definido documentalmente em `GKR-UX-ORGCOL-AUTH-STATE-MAP-001`;
 6. Priority Flows — definidos documentalmente em `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001`;
 7. elegibilidade de Navigation Materialization — `PASS / ACTIVE / CANONICAL` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001`;
-8. Navigation Materialization — `DEFINED / CANONICAL DOCUMENTARY` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`;
+8. Navigation Materialization — `DEFINED / CANONICAL DOCUMENTARY` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.1`;
 9. construir wireframes de baixa fidelidade **somente mediante autorização humana separada**;
 10. validar funcionalmente os wireframes reais;
 11. reformular quando necessário;
