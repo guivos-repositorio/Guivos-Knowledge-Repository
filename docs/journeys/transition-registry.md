@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.4
+version: 0.29.5
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-22
 related:
@@ -72,7 +72,7 @@ Validação integral documental não comprova implementação técnica nem esten
 | GKR-TRN-002 | PER-002 | PER-003 | localmente validada | UXA-035 + contratos correntes de entrada protegida |
 | GKR-TRN-003 | PER-003 | PER-004 | parcial | integração entrada protegida → expressão guiada ainda parcial |
 | GKR-TRN-004 | PER-004 | PER-005 | parcial | integração expressão–inventário |
-| GKR-TRN-005 | PER-005 | PER-006 | parcial | continuidade entre materializações |
+| GKR-TRN-005 | PER-005 | PER-006 | parcial | integração inventário autorizado → processamento visível ainda parcial; produtores visuais históricos não são autoridade corrente |
 | GKR-TRN-006 | PER-006 | PER-007 | localmente validada | UXA-037 |
 | GKR-TRN-007 | PER-007 | PER-008 | **integralmente validada** | UXA-097 |
 | GKR-TRN-008 | PER-008 | PER-010 | **integralmente validada** | GKR-UX-D5-C4B-001 — Hoje recorrente → acesso a Objetivos; contexto mínimo, revalidação, retorno, interrupção, concorrência e idempotência examinados |
