@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-AUTH-NAV-MAT-001
 title: Organizações e Coletivos — Materialização da Navegação Autenticada
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-22
 normative: false
@@ -1018,8 +1018,12 @@ AUTHENTICATED WIREFRAMES
 → VALIDATION v1.0.0 PASS
 → CURRENT LOW-FIDELITY REFERENCE
 
-DESIGN / UI / PROTOTYPE
-→ NOT AUTHORIZED
+HIGH-FIDELITY DESIGN
+→ AUTHORIZED BY HUMAN
+→ EXECUTION NOT_STARTED
+
+PROTOTYPE
+→ NOT_AUTHORIZED
 
 UXA-102 / V5
 → NOT_STARTED
