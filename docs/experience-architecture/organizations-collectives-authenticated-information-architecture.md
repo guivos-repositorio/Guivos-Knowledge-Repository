@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-AUTH-IA-001
 title: Organizações e Coletivos — Arquitetura da Informação da Experiência Autenticada
 status: active
-version: 1.3.1
+version: 1.3.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-22
 normative: false
@@ -20,8 +20,9 @@ related:
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
-  - UXA-100-A3
-  - UXA-100-A4
+  - GKR-PLANS-ORGANIZATION-001
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
 ---
 
 # Organizações e Coletivos — Arquitetura da Informação da Experiência Autenticada
@@ -370,7 +371,7 @@ Esses temas exigirão autoridade técnica própria quando Product Engineering fo
 
 Capacidade especializada/contextual.
 
-O fluxo canônico de Planos da Organização já existe no pacote `UXA-100` e preserva a taxonomia `Conecta · Eleva · Transforma`.
+O fluxo canônico corrente de Planos da Organização é governado por `GKR-PLANS-ORGANIZATION-001`, `GEM-004-PLAN-TAXONOMY-AUTHORITY-001` e `GKR-JOURNEY-TRANSITION-REGISTRY-001`, preservando a taxonomia `Conecta · Eleva · Transforma`.
 
 ### Regras de IA
 
