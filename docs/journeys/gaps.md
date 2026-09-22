@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.6
+version: 1.0.7
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-22
 related:
@@ -154,6 +154,7 @@ O fechamento da cadeia principal autenticada **não** significa que todas as cap
 
 Permanecem abertas, conforme os Surface Registries e contratos correntes:
 
+- `COL-001`: presença pública e entrada coletiva — presença pública governada pelo Master/`UXA-056`, com continuidade autenticada coberta pela arquitetura O/C corrente; a separação final entre presença pública, entrada autenticada e operação interna ainda não está fechada ponta a ponta;
 - `ORG-004..006`: proposta, negociação e relação ativa Organização ↔ Coletivo — contratos/lifecycle definidos sob `UXA-019` + Surface/State Map, com cobertura low-fidelity O↔C em `PASS`; materialização dedicada e continuidade ponta a ponta `TRN-206..209` ainda não estão fechadas;
 - `ORG-007`: revisão institucional de evidências/resultados — responsabilidade conhecida, com evidência insuficiente para classificar;
 - `COL-004`: gestão de vínculo — contrato corrente com cobertura low-fidelity parcial em Participação; materialização dedicada e continuidade ponta a ponta ainda não estão comprovadas;
