@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
 title: Organizações e Coletivos — Mapa de Superfícies da Experiência Autenticada
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-22
 normative: false
 maturity: authenticated_surface_map_defined
 depends_on:
@@ -523,9 +523,28 @@ Em ato governado posterior, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` defin
 - estados de ausência, bloqueio, contestação e indisponibilidade;
 - separação entre semântica funcional e Design.
 
-O próximo gate corrente é **Navigation Materialization**, ainda dependente de autorização específica.
+No momento deste Surface Map, o próximo gate era **Navigation Materialization**, dependente de autorização específica. Esse estado abaixo é preservado como registro do gate naquele momento. Posteriormente, Navigation Materialization foi promovida, o low-fidelity foi autorizado/entregue/validado com `PASS`, e high-fidelity recebeu autorização humana.
 
-Até nova autorização:
+Estado downstream corrente:
+
+```text
+NAVIGATION MATERIALIZATION
+→ ACTIVE / CANONICAL
+
+AUTHENTICATED WIREFRAMES
+→ DELIVERY v0.1.0 / VALIDATION v1.0.0 PASS
+
+HIGH-FIDELITY DESIGN
+→ AUTHORIZED / NOT_STARTED
+
+PROTOTYPE
+→ NOT_AUTHORIZED
+
+PRODUCT ENGINEERING
+→ NOT_RELEASED
+```
+
+Estado preservado no ato de promoção original:
 
 ```text
 STATE MAP
