@@ -2,9 +2,9 @@
 id: UXA-056
 title: Contrato Funcional de Descoberta, Perfil Público e Participação em Coletivos
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-22
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -94,7 +94,7 @@ Deverá apresentar:
 
 ### 4.2 Início do participante
 
-Superfície interna após confirmação do vínculo. `UXA-016` e `UXA-018` permanecem apenas como proveniência histórica `superseded`; não são autoridades vigentes desta superfície. A materialização e a validação posteriores do Início do Participante possuem maturidade própria em `UXA-095/096`, no recorte da Pessoa participante, e não definem a UX principal autenticada administrativa do Coletivo.
+Superfície interna após confirmação do vínculo. `UXA-016` e `UXA-018` permanecem apenas como proveniência histórica `superseded`; não são autoridades vigentes desta superfície. A validação funcional corrente do Início do Participante possui maturidade própria em `UXA-096`, no recorte da Pessoa participante. Produtores anteriores absorvidos permanecem somente como proveniência no Git e não definem a UX principal autenticada administrativa do Coletivo.
 
 Deverá reunir, conforme permissões:
 
