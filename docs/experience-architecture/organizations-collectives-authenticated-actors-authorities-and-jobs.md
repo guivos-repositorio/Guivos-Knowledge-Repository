@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-JOBS-001
 title: Organizações e Coletivos — Atores, Autoridades e Jobs Prioritários da Experiência Autenticada
 status: active
-version: 1.4.1
+version: 1.4.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-22
 normative: false
 maturity: authenticated_actors_authorities_jobs_defined
 depends_on:
@@ -89,7 +89,7 @@ fundamentos e papéis
 → handoff técnico
 ```
 
-No estado corrente, atores/autoridades/jobs, Arquitetura da Informação, Surface Map, State Map, Priority Flows e Navigation Materialization já estão definidos documentalmente. Os wireframes autenticados low-fidelity foram posteriormente autorizados, entregues e validados com `PASS`. O próximo limite ainda não executado é high-fidelity Design, cuja elegibilidade está `PASS`, mas cuja autorização permanece `NOT_GRANTED`. Nenhuma etapa seguinte é iniciada automaticamente.
+No estado corrente, atores/autoridades/jobs, Arquitetura da Informação, Surface Map, State Map, Priority Flows e Navigation Materialization já estão definidos documentalmente. Os wireframes autenticados low-fidelity foram posteriormente autorizados, entregues e validados com `PASS`. A elegibilidade high-fidelity também concluiu `PASS` e a autorização humana posterior foi `GRANTED` em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`. A execução high-fidelity permanece `NOT_STARTED`; protótipo interativo e Product Engineering continuam não liberados. Nenhuma etapa seguinte é iniciada automaticamente.
 
 ## 3. Unidade de atuação autenticada
 
@@ -668,6 +668,6 @@ Após a definição da Arquitetura da Informação autenticada, `GKR-UX-ORGCOL-A
 
 A sequência governada de `F-006` foi concluída: autorização, cleanup 6/6, reconciliação, validações e prova pós-delete. `F-006` está resolvido. A continuidade desta autoridade permanece funcional e não autoriza materialização visual.
 
-Navigation Materialization e os wireframes autenticados low-fidelity deixaram de ser lacunas correntes: a primeira está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`, e os segundos foram autorizados, entregues e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O próximo limite ainda não executado é **high-fidelity Design**: a elegibilidade está `PASS`, mas a autorização permanece `NOT_GRANTED`.
+Navigation Materialization e os wireframes autenticados low-fidelity deixaram de ser lacunas correntes: a primeira está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`, e os segundos foram autorizados, entregues e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A elegibilidade high-fidelity concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1` e a autorização humana posterior foi `GRANTED` em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`.
 
-Esse limite não deve produzir, por inferência, UI final, protótipo ou implementação; high-fidelity Design permanece não autorizado e Product Engineering permanece não liberada.
+O limite corrente é de **execução**: high-fidelity Design está autorizado e `NOT_STARTED`. Essa autorização não produz, por inferência, UI final concluída, protótipo ou implementação; protótipo interativo e Product Engineering permanecem não liberados.
