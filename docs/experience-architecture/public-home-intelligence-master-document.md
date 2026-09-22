@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
 status: active
-version: 0.2.11
+version: 0.2.12
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -12,7 +12,6 @@ depends_on:
   - GKR-UX-HOMES-OUTCOME-001
   - GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
 related:
-  - GKR-INTELLIGENCE-HOME-CONTINUITY-001
   - GAI-001
   - GAI-002
   - GIA-000
@@ -69,7 +68,7 @@ HOME PÚBLICA INTELLIGENCE v1
 → 11 MOVIMENTOS CONVERGIDOS
 
 ARQUITETURA NARRATIVA
-→ v0.2.4
+→ v0.2.5
 → COPY DE REFERÊNCIA CORRIGIDA
 
 DOCUMENTO MESTRE
