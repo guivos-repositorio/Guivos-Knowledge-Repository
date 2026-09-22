@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.36.9
+version: 0.36.10
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-22
 related:
@@ -172,7 +172,7 @@ O total estrutural permanece **57 IDs**. A contagem não implica que todos estej
 | GKR-SURF-COL-005 | comunicação oficial | responsável | protegido | contratada / não materializada | UXA-058; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | — | — | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-006 | atividades, consultas e decisões | responsável | protegido | contratada / não materializada | GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | — | — | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-007 | proteção e moderação | responsável | protegido | contratado | UXA-058; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | parcial — cobertura C-A/X2 no low-fidelity corrente | Governança e Proteção = PASS no pacote low-fidelity; validação dedicada ponta a ponta não comprovada | [Coletivo](surface-registry-collective-details.md) |
-| GKR-SURF-COL-008 | relações institucionais | responsável | protegido | contratado | UXA-019; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | parcial — cobertura Relações O↔C no low-fidelity corrente | Relações O↔C = PASS no pacote low-fidelity; continuidade ponta a ponta permanece contratada | [Coletivo](surface-registry-collective-details.md) |
+| GKR-SURF-COL-008 | relação Organização–Coletivo | responsável | protegido | contratado | UXA-019; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | parcial — cobertura Relações O↔C no low-fidelity corrente | Relações O↔C = PASS no pacote low-fidelity; continuidade ponta a ponta permanece contratada | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-301 | Planos e comparação do Coletivo — Livre · Mobiliza · Impacta · Rede | responsável autorizado | computador/protegido | **validado no fluxo especializado** | GKR-PLANS-COLLECTIVE-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente; retorno governado pelo Transition Registry | maturidade funcional preservada no Registry; navegação administrativa preservada no Transition Registry | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-302 | revisão de contratação do Coletivo | responsável financeiro autorizado | computador/protegido | **validado** | GKR-PLANS-COLLECTIVE-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente | maturidade funcional preservada no Registry | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-303 | gestão de downgrade e cancelamento do Coletivo | responsável autorizado | computador/protegido | **validado** | GKR-PLANS-COLLECTIVE-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente | maturidade funcional preservada no Registry | [Coletivo](surface-registry-collective-details.md) |
