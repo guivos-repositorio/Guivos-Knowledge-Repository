@@ -2,7 +2,7 @@
 id: GEM-004-PLAN-TAXONOMY-AUTHORITY-001
 title: Autoridade Conceitual de Taxonomia, Função e Leitura dos Planos
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Guivos Economic Model
 last_updated: 2026-09-20
 parent: GEM-004
@@ -12,10 +12,6 @@ depends_on:
   - GEM-004-A2
 related:
   - GPA-004
-  - UXA-100
-  - UXA-100-A1
-  - UXA-100-A2
-  - UXA-100-A3
 normative: true
 ---
 
@@ -31,6 +27,8 @@ Este documento estabelece a autoridade conceitual vigente para **nomes, função
 - Guivos Business.
 
 Ele corrige a deriva histórica que misturava planos de Organização com o produto Guivos Business e substitui, para fins de taxonomia e interpretação conceitual, nomenclaturas anteriores conflitantes existentes em instrumentos derivados.
+
+`UXA-100` e seus antigos addenda permanecem apenas como proveniência histórica no Git; não constituem autoridades relacionadas correntes desta taxonomia.
 
 Este documento não autoriza cobrança, oferta pública, implementação, preço novo, entitlement novo, política fiscal, contrato ou SLA.
 
