@@ -91,7 +91,7 @@ Para a produção externa de Design da Home Business, o pacote específico de au
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002` v1.0.2 — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.8 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 5. `GPA-004` v1.7.4 — arquitetura funcional vigente do Guivos Business;
-6. `GKR-PLANS-BUSINESS-001` v1.3.0 — `docs/plans/business.md` — planos, preços de referência e composição Self-service corrente.
+6. `GKR-PLANS-BUSINESS-001` v1.3.1 — `docs/plans/business.md` — planos, preços de referência e composição Self-service corrente.
 
 Não adicionar automaticamente:
 
