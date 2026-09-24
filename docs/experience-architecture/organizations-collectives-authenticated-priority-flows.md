@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
 title: Organizações e Coletivos — Fluxos Prioritários da Experiência Autenticada
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-22
+last_updated: 2026-09-24
 normative: false
 maturity: authenticated_priority_flows_defined
 depends_on:
@@ -23,6 +23,7 @@ related:
   - GKR-UX-ORGCOL-UX-STATE-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-INTELLIGENCE-DASHBOARD-KPI-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
 ---
 
 # Organizações e Coletivos — Fluxos Prioritários da Experiência Autenticada
@@ -940,7 +941,9 @@ AUTHENTICATED WIREFRAMES
 → SUBSEQUENTLY AUTHORIZED / DELIVERED / VALIDATED PASS
 
 HIGH-FIDELITY DESIGN
-→ SUBSEQUENTLY AUTHORIZED / NOT_STARTED
+→ SUBSEQUENTLY AUTHORIZED
+→ EXECUTION RELEASE ISSUED
+→ EXTERNAL DELIVERY NOT_RECEIVED
 
 PROTOTYPE
 → NOT_AUTHORIZED
@@ -954,7 +957,7 @@ PRODUCT ENGINEERING
 
 ## 24. Continuidade após promoção
 
-No momento da promoção desta autoridade, o próximo gate governado elegível era **Navigation Materialization**. Esse gate foi posteriormente autorizado e executado; a sequência downstream avançou também por autorização/validação low-fidelity e, depois, por elegibilidade e autorização high-fidelity. O estado corrente é `HIGH-FIDELITY AUTHORIZED / NOT_STARTED`; protótipo e Product Engineering permanecem gates separados e não liberados.
+No momento da promoção desta autoridade, o próximo gate governado elegível era **Navigation Materialization**. Esse gate foi posteriormente autorizado e executado; a sequência downstream avançou também por autorização/validação low-fidelity e, depois, por elegibilidade e autorização high-fidelity. O estado corrente é `HIGH-FIDELITY AUTHORIZATION GRANTED / EXECUTION RELEASE ISSUED / EXTERNAL DELIVERY NOT_RECEIVED`; protótipo e Product Engineering permanecem gates separados e não liberados.
 
 A promoção documental desta autoridade não autoriza automaticamente:
 

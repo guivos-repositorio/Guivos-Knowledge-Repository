@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.36.15
+version: 0.36.16
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-24
 related:
@@ -57,7 +57,7 @@ Este registro atribui identificadores estáveis a superfícies, estados, respons
 
 `UXA-015..018` permanecem históricos `superseded`; referências administrativas ou especializadas não podem ser promovidas por inferência a wireframe principal autenticado final.
 
-Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` está definido em sua maturidade própria de Arquitetura da Informação, enquanto `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.2` define o mapa lógico-documental canônico de superfícies. Em atos governados posteriores, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.3`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.1` e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2` consolidam estados, fluxos e navegação documental. A autorização, entrega e validação low-fidelity O/C posteriores (`GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001`, `...DELIVERY-001`, `...VALIDATION-001`) adicionam evidência visual funcional sem promover a maturidade individual dos `GKR-SURF-*`.
+Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` está definido em sua maturidade própria de Arquitetura da Informação, enquanto `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.3` define o mapa lógico-documental canônico de superfícies. Em atos governados posteriores, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.4`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.2` e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2` consolidam estados, fluxos e navegação documental. A autorização, entrega e validação low-fidelity O/C posteriores (`GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001`, `...DELIVERY-001`, `...VALIDATION-001`) adicionam evidência visual funcional sem promover a maturidade individual dos `GKR-SURF-*`.
 
 ## 2. Convenções
 
@@ -235,4 +235,4 @@ Guivos Business é produto especializado e constitui um contexto corrente de exp
 
 ## 7. Estado
 
-O registro permanece `active` como inventário granular. A maturidade deve ser lida por superfície e por escopo de autoridade, nunca pela mera existência física de SVG. Para Organização e Coletivo, Jobs e Arquitetura da Informação permanecem definidos em seus limites próprios; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.2` define o mapa lógico-documental canônico de superfícies e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.3` define o mapa funcional de estados canônico e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.1` define os Priority Flows canônicos documentais. A Navigation Materialization está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`; os wireframes principais autenticados low-fidelity foram entregues em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A autorização de Design high-fidelity O/C está `GRANTED` e o ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0` liberou a execução externa; a entrega permanece `NOT_RECEIVED`. Protótipo e implementação não são promovidos por esse estado.
+O registro permanece `active` como inventário granular. A maturidade deve ser lida por superfície e por escopo de autoridade, nunca pela mera existência física de SVG. Para Organização e Coletivo, Jobs e Arquitetura da Informação permanecem definidos em seus limites próprios; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.3` define o mapa lógico-documental canônico de superfícies e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.4` define o mapa funcional de estados canônico e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.2` define os Priority Flows canônicos documentais. A Navigation Materialization está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`; os wireframes principais autenticados low-fidelity foram entregues em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A autorização de Design high-fidelity O/C está `GRANTED` e o ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0` liberou a execução externa; a entrega permanece `NOT_RECEIVED`. Protótipo e implementação não são promovidos por esse estado.

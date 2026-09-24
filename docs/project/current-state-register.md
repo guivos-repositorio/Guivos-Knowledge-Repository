@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.31
+version: 3.50.32
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-24
 normative: true
@@ -510,7 +510,7 @@ ORGANIZAÇÃO ≠ COLETIVO
 
 ### 8.4 Mapa lógico de superfícies — estado canônico documental
 
-`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.2` está ativo como **mapa lógico-documental canônico** da experiência autenticada de Organização e Coletivo.
+`GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.3` está ativo como **mapa lógico-documental canônico** da experiência autenticada de Organização e Coletivo.
 
 O mapa:
 
@@ -522,7 +522,7 @@ O mapa:
 
 ### 8.5 Mapa funcional de estados — estado canônico documental
 
-`GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.3` está ativo como **mapa funcional canônico documental dos estados autenticados** de Organização e Coletivo.
+`GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.4` está ativo como **mapa funcional canônico documental dos estados autenticados** de Organização e Coletivo.
 
 Ele:
 
@@ -545,7 +545,7 @@ O/C MAPA FUNCIONAL DE ESTADOS
 
 PRIORITY FLOWS
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
-→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.1
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.2
 
 NAVIGATION MATERIALIZATION ELIGIBILITY
 → PASS / ACTIVE / CANONICAL
