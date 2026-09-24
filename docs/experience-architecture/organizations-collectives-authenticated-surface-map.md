@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
 title: Organizações e Coletivos — Mapa de Superfícies da Experiência Autenticada
 status: active
-version: 1.1.2
+version: 1.1.3
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-22
+last_updated: 2026-09-24
 normative: false
 maturity: authenticated_surface_map_defined
 depends_on:
@@ -20,6 +20,7 @@ related:
   - GKR-JOURNEY-COLLECTIVE-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-INTELLIGENCE-DASHBOARD-KPI-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
 ---
 
 # Organizações e Coletivos — Mapa de Superfícies da Experiência Autenticada
@@ -501,7 +502,9 @@ AUTHENTICATED WIREFRAMES
 → DELIVERY v0.1.0 / VALIDATION v1.0.0 PASS
 
 HIGH-FIDELITY DESIGN
-→ AUTHORIZED / NOT_STARTED
+→ AUTHORIZATION GRANTED
+→ EXECUTION RELEASE ISSUED
+→ EXTERNAL DELIVERY NOT_RECEIVED
 
 PROTOTYPE
 → NOT_AUTHORIZED
@@ -526,7 +529,7 @@ Em ato governado posterior, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` defin
 - estados de ausência, bloqueio, contestação e indisponibilidade;
 - separação entre semântica funcional e Design.
 
-No momento deste Surface Map, o próximo gate era **Navigation Materialization**, dependente de autorização específica. Esse estado abaixo é preservado como registro do gate naquele momento. Posteriormente, Navigation Materialization foi promovida, o low-fidelity foi autorizado/entregue/validado com `PASS`, e high-fidelity recebeu autorização humana.
+No momento deste Surface Map, o próximo gate era **Navigation Materialization**, dependente de autorização específica. Esse estado abaixo é preservado como registro do gate naquele momento. Posteriormente, Navigation Materialization foi promovida, o low-fidelity foi autorizado/entregue/validado com `PASS`, high-fidelity recebeu autorização humana e o ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0` liberou a execução externa.
 
 Estado downstream corrente:
 
@@ -538,7 +541,9 @@ AUTHENTICATED WIREFRAMES
 → DELIVERY v0.1.0 / VALIDATION v1.0.0 PASS
 
 HIGH-FIDELITY DESIGN
-→ AUTHORIZED / NOT_STARTED
+→ AUTHORIZATION GRANTED
+→ EXECUTION RELEASE ISSUED
+→ EXTERNAL DELIVERY NOT_RECEIVED
 
 PROTOTYPE
 → NOT_AUTHORIZED
