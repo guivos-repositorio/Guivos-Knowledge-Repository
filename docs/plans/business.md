@@ -2,9 +2,9 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 1.3.0
+version: 1.3.1
 owner: Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-23
 normative: false
 depends_on:
   - GPA-004
@@ -73,9 +73,9 @@ Enterprise = atendimento humano obrigatório
 
 Uma configuração Scale pode ser suficientemente padronizada para operar em Self-service. Uma configuração Growth pode exigir apoio por integração, governança ou outra complexidade específica.
 
-## Como funciona a contratação Self-service
+## Como funciona o Self-service dentro da contratação online
 
-Self-service é o **modelo digital de composição e contratação** da configuração Business. Não é um quinto plano, não é uma oferta separada e não significa que tudo esteja incluído na assinatura-base.
+Self-service é um **modelo de implementação/operação dentro da contratação online do Guivos Business**. A composição e a contratação permanecem digitais também quando a implementação posterior exigir suporte ou operação gerenciada. Self-service não é um quinto plano, não é uma oferta separada e não significa que tudo esteja incluído na assinatura-base.
 
 A lógica de referência é:
 
@@ -181,7 +181,7 @@ O configurador deve mostrar essas parcelas separadamente para que a empresa comp
 
 ### Como os “serviços” ficam distribuídos
 
-Para contratação Self-service, a leitura correta não é um catálogo solto de serviços, mas uma composição em camadas:
+No caminho Self-service, a leitura correta não é um catálogo solto de serviços, mas uma composição em camadas:
 
 | Camada | Conteúdo |
 |---|---|
@@ -193,7 +193,7 @@ Para contratação Self-service, a leitura correta não é um catálogo solto de
 | **Recursos operacionais** | orçamento pré-pago de incentivo |
 | **Condições comerciais** | periodicidade, mercado, moeda, tributação e demais condições aplicáveis |
 
-Self-service significa que a empresa consegue **montar, compreender, comparar e contratar essa composição digitalmente** sempre que a configuração for elegível para isso.
+Self-service significa que, além de **montar, compreender, comparar e contratar a composição digitalmente**, a empresa consegue seguir para a implementação/operação com autonomia quando a configuração for elegível. Configurações com suporte ou operação gerenciada continuam sendo contratadas online; o que muda é a participação da Guivos depois da contratação.
 
 ## Start
 
