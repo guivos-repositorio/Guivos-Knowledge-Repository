@@ -2,9 +2,9 @@
 id: GTM-008
 title: Portugal — Gates de Prontidão, Piloto e Escala
 status: proposed
-version: 0.1.0
+version: 0.1.1
 owner: Guivos Strategy & Growth
-last_updated: 2026-08-08
+last_updated: 2026-09-24
 depends_on:
   - GTM-001
   - GTM-007
@@ -184,7 +184,7 @@ Antes da autorização, o plano deverá declarar:
 
 ## 9. Baseline candidata do piloto
 
-Preservando `GTM-001`, a referência histórica governada é:
+A baseline candidata do piloto, alinhada a `GTM-001`, é:
 
 - **30 relações locais de ecossistema qualificadas/ativadas**, cada uma classificada pelo papel correto;
 - **3 clientes Guivos Business**;
