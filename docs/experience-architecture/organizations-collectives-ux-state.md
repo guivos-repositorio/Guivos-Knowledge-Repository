@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-UX-STATE-001
 title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.12.4
+version: 1.12.5
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-22
+last_updated: 2026-09-24
 normative: false
 related:
   - GKR-UX-ORGCOL-STATE-001
@@ -20,6 +20,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
   - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
   - UXA-014
   - UXA-019
 ---
@@ -30,11 +31,11 @@ related:
 
 O estado vigente é:
 
-> **A primeira entrega low-fidelity de Organização e Coletivo foi executada e validada com `PASS`. A elegibilidade high-fidelity posterior também concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1`; a autorização high-fidelity foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.1`, e a execução permanece `NOT_STARTED`.**
+> **A primeira entrega low-fidelity de Organização e Coletivo foi executada e validada com `PASS`. A elegibilidade high-fidelity posterior também concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1`; a autorização high-fidelity foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.2`, e o ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0` liberou a execução externa; a entrega high-fidelity ainda está `NOT_RECEIVED`.**
 
 A entrega corrente materializa em baixa fidelidade a visão geral/início de Organização e Coletivo, a hierarquia funcional, variantes de atenção, autoridade, proteção, troca de contexto e indisponibilidade. Permanecem deliberadamente não definidos: UI final, componentes finais, visual high-fidelity, protótipo navegável, implementação e testes de usabilidade.
 
-Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados, Priority Flows e Navigation Materialization autenticada já foram definidos documentalmente em instrumentos próprios. A Navigation Materialization canônica está em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`. Posteriormente, os wireframes autenticados low-fidelity foram autorizados, entregues em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A autorização high-fidelity posterior não equivale a execução. UI final, protótipo e implementação continuam não materializados por esta autoridade.
+Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados, Priority Flows e Navigation Materialization autenticada já foram definidos documentalmente em instrumentos próprios. A Navigation Materialization canônica está em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`. Posteriormente, os wireframes autenticados low-fidelity foram autorizados, entregues em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. O release externo posterior não equivale a entrega high-fidelity recebida ou validada. UI final recebida pelo GKR, protótipo e implementação continuam não materializados por esta autoridade.
 
 ## 2. O que já existe e governa a continuidade da UX
 
@@ -54,7 +55,7 @@ Já existem insumos e autoridades documentais relevantes:
 - Documento Mestre da Home pública de Organizações e Coletivos;
 - `RP-002` — Research sobre supply, papéis, rede, valor e modelo econômico.
 
-Esses materiais governam a continuidade da experiência. O pacote low-fidelity corrente é evidência visual funcional explícita; Jobs, IA, Surface Map, State Map, Priority Flows, Navigation Materialization e low-fidelity validado não autorizam inferir UI final executada, linguagem visual final, protótipo ou implementação; a autorização high-fidelity existente libera somente uma execução posterior, ainda `NOT_STARTED`.
+Esses materiais governam a continuidade da experiência. O pacote low-fidelity corrente é evidência visual funcional explícita; Jobs, IA, Surface Map, State Map, Priority Flows, Navigation Materialization e low-fidelity validado não autorizam inferir UI final executada, linguagem visual final, protótipo ou implementação; o release high-fidelity existente libera execução externa, com `DELIVERY_NOT_RECEIVED` e validação high-fidelity ainda `NOT_STARTED`.
 
 ## 3. Correção dos registros anteriores
 
@@ -133,13 +134,15 @@ A construção deverá continuar do estado documental vigente, e não dos SVGs h
 6. Priority Flows — definidos documentalmente em `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001`;
 7. elegibilidade de Navigation Materialization — `PASS / ACTIVE / CANONICAL` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001`;
 8. Navigation Materialization — `DEFINED / CANONICAL DOCUMENTARY` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`;
-9. construir wireframes de baixa fidelidade **somente mediante autorização humana separada**;
-10. validar funcionalmente os wireframes reais;
-11. reformular quando necessário;
-12. avançar para UI somente quando autorizado;
-13. construir protótipo somente quando autorizado;
-14. testar com Pessoas / representantes reais;
-15. somente depois preparar handoff técnico.
+9. wireframes low-fidelity — entregues e validados;
+10. elegibilidade high-fidelity — `PASS`;
+11. autorização high-fidelity — `GRANTED`;
+12. release para execução externa high-fidelity — `ISSUED` em `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001`;
+13. receber entrega high-fidelity inspecionável;
+14. validar a entrega high-fidelity contra as autoridades funcionais correntes;
+15. construir protótipo somente quando autorizado por gate posterior;
+16. testar com Pessoas / representantes reais quando houver autorização e objeto adequado;
+17. somente depois preparar handoff técnico.
 
 Nenhuma etapa concluída autoriza automaticamente a seguinte.
 
@@ -200,11 +203,12 @@ São superfícies e problemas distintos.
 | mapa funcional de estados autenticados | **definido documentalmente** | **definido documentalmente** |
 | Priority Flows | **definidos documentalmente** | **definidos documentalmente** |
 | Navigation Materialization Eligibility | **PASS / ACTIVE / CANONICAL** | **PASS / ACTIVE / CANONICAL** |
-| Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** | **DEFINED / CANONICAL DOCUMENTARY / v1.0.0** |
+| Navigation Materialization | **DEFINED / CANONICAL DOCUMENTARY / v1.0.2** | **DEFINED / CANONICAL DOCUMENTARY / v1.0.2** |
 | wireframe low-fidelity | **DELIVERY v0.1.0 + VALIDATION v1.0.0** | **DELIVERY v0.1.0 + VALIDATION v1.0.0** |
 | validação de wireframe | **PASS** | **PASS** |
 | high-fidelity eligibility | **PASS** | **PASS** |
-| high-fidelity design authorization | **GRANTED / EXECUTION NOT_STARTED** | **GRANTED / EXECUTION NOT_STARTED** |
+| high-fidelity design authorization | **GRANTED** | **GRANTED** |
+| high-fidelity execution release | **ISSUED / DELIVERY NOT_RECEIVED** | **ISSUED / DELIVERY NOT_RECEIVED** |
 | UI | pendente | pendente |
 | protótipo | pendente | pendente |
 | testes de usabilidade | pendente | pendente |
@@ -314,4 +318,4 @@ Nenhum desses IDs ou antigos ativos pode voltar a operar como baseline visual, r
 
 ## 12. Regra final
 
-> **O GKR define função, conteúdo, estados, regras, critérios, Priority Flows e Navigation Materialization documentais. O pacote low-fidelity Delivery v0.1.0 + Validation v1.0.0 é a referência visual corrente; a elegibilidade high-fidelity está `PASS` e a autorização de Design high-fidelity está `GRANTED`, porém sua execução permanece `NOT_STARTED`; protótipo, layout final materializado e implementação continuam sujeitos a gates próprios. Artefatos históricos não podem antecipar nem restringir essa autoridade.**
+> **O GKR define função, conteúdo, estados, regras, critérios, Priority Flows e Navigation Materialization documentais. O pacote low-fidelity Delivery v0.1.0 + Validation v1.0.0 é a referência visual corrente; a elegibilidade high-fidelity está `PASS`, a autorização está `GRANTED` e o release de execução externa foi `ISSUED`; a entrega high-fidelity ainda não foi recebida ou validada. Protótipo e implementação continuam sujeitos a gates próprios. Artefatos históricos não podem antecipar nem restringir essa autoridade.**
