@@ -2,15 +2,16 @@
 id: GKR-PLANS-INDEX-001
 title: Planos — Visão Geral
 status: active
-version: 1.2.0
+version: 1.2.1
 owner: Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-23
 normative: false
 depends_on:
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GEM-004-A1
   - GEM-COMMERCIAL-BASELINE-001
   - GPA-004
+  - GPA-004-FUNCTIONAL-PORTFOLIO-001
 ---
 
 # Planos — Visão Geral
