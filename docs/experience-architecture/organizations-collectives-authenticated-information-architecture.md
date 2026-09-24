@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-IA-001
 title: Organizações e Coletivos — Arquitetura da Informação da Experiência Autenticada
 status: active
-version: 1.3.2
+version: 1.3.3
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-22
+last_updated: 2026-09-24
 normative: false
 maturity: authenticated_information_architecture_defined
 depends_on:
@@ -23,6 +23,7 @@ related:
   - GKR-PLANS-ORGANIZATION-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
 ---
 
 # Organizações e Coletivos — Arquitetura da Informação da Experiência Autenticada
@@ -945,7 +946,7 @@ PRODUCT ENGINEERING
 
 O antigo próximo ato deste artefato — definir o mapa lógico de superfícies — foi consumido posteriormente por `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0`. O nível documental seguinte — definir o mapa de estados — foi consumido por `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0`.
 
-Os Priority Flows foram definidos posteriormente por `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`. No momento de promoção desta IA, a continuidade posterior começava em **Navigation Materialization** e depois em wireframes, sempre por gates separados. Esses gates foram subsequentemente executados: Navigation Materialization tornou-se canônica em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`, o low-fidelity foi entregue/validado com `PASS`, e high-fidelity recebeu autorização humana em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`. O estado downstream corrente é `HIGH-FIDELITY AUTHORIZED / NOT_STARTED`; protótipo e Product Engineering permanecem não liberados.
+Os Priority Flows foram definidos posteriormente por `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0`. No momento de promoção desta IA, a continuidade posterior começava em **Navigation Materialization** e depois em wireframes, sempre por gates separados. Esses gates foram subsequentemente executados: Navigation Materialization tornou-se canônica em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`, o low-fidelity foi entregue/validado com `PASS`, e high-fidelity recebeu autorização humana em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`. O estado downstream corrente é `HIGH-FIDELITY AUTHORIZATION GRANTED / EXECUTION RELEASE ISSUED / EXTERNAL DELIVERY NOT_RECEIVED`, conforme `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0`; protótipo e Product Engineering permanecem não liberados.
 
 ```text
 STATE MAP DEFINED ≠ GKR-TRN-* PROMOTED ≠ MATERIALIZED NAVIGATION
