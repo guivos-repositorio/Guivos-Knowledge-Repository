@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-STATE-001
 title: Organizações e Coletivos — Visão Geral e Estado Atual
 status: active
-version: 1.10.7
+version: 1.10.8
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-22
+last_updated: 2026-09-24
 normative: false
 related:
   - UXA-014
@@ -21,6 +21,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
   - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-SUPPLY-VALUE-001
@@ -74,7 +75,8 @@ Para compreender em profundidade **quais oportunidades esses agentes podem mater
 | validação de wireframe da Organização | **PASS / 0 findings materiais** | concluída |
 | validação de wireframe do Coletivo | **PASS / 0 findings materiais** | concluída |
 | elegibilidade high-fidelity O/C | **PASS** | [Elegibilidade High-Fidelity](organizations-collectives-authenticated-high-fidelity-eligibility.md) |
-| autorização high-fidelity O/C | **GRANTED / NOT_STARTED** | [Autorização High-Fidelity](organizations-collectives-authenticated-high-fidelity-authorization.md) |
+| autorização high-fidelity O/C | **GRANTED** | [Autorização High-Fidelity](organizations-collectives-authenticated-high-fidelity-authorization.md) |
+| execução high-fidelity O/C | **RELEASED FOR EXTERNAL DESIGN / DELIVERY NOT_RECEIVED** | [Release e Handoff High-Fidelity](organizations-collectives-authenticated-high-fidelity-execution-handoff.md) |
 | UI / protótipo autenticado | não definido | pendente |
 | Engenharia da experiência autenticada | não autorizada a partir de wireframe | pendente |
 
@@ -89,7 +91,8 @@ A cadeia autenticada corrente pode ser percorrida diretamente a partir deste hub
 7. [Entrega Low-Fidelity](organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md);
 8. [Validação Low-Fidelity](organizations-collectives-authenticated-low-fidelity-functional-validation.md);
 9. [Elegibilidade High-Fidelity](organizations-collectives-authenticated-high-fidelity-eligibility.md);
-10. [Autorização High-Fidelity](organizations-collectives-authenticated-high-fidelity-authorization.md).
+10. [Autorização High-Fidelity](organizations-collectives-authenticated-high-fidelity-authorization.md);
+11. [Release e Handoff para Execução High-Fidelity](organizations-collectives-authenticated-high-fidelity-execution-handoff.md).
 
 Esses documentos permanecem autoridades correntes de detalhe. Eles saem do MENU principal para reduzir poluição de navegação, não por perda de validade.
 
@@ -421,6 +424,8 @@ Materiais anteriores que afirmavam wireframes principais vigentes ou validação
 | entrega de wireframes low-fidelity | `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001` |
 | validação funcional low-fidelity | `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001` |
 | elegibilidade high-fidelity | `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001` |
+| autorização high-fidelity | `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001` |
+| release de execução high-fidelity | `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001` |
 | Jornada da Organização | `journeys/organization.md` |
 | Jornada do Coletivo | `journeys/collective.md` |
 | Home pública | `public-home-organizations-collectives-master-document.md` |
@@ -464,10 +469,16 @@ HIGH-FIDELITY ELIGIBILITY
 → PASS / v1.0.1
 
 HIGH-FIDELITY AUTHORIZATION
-→ GRANTED / v1.0.0
+→ GRANTED / v1.0.2
 
-HIGH-FIDELITY EXECUTION
-→ AUTHORIZED / NOT_STARTED
+HIGH-FIDELITY EXECUTION RELEASE
+→ ISSUED / GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0
+
+HIGH-FIDELITY DELIVERY
+→ NOT_RECEIVED
+
+HIGH-FIDELITY VALIDATION
+→ NOT_STARTED
 
 INTERACTIVE PROTOTYPE
 → NOT_AUTHORIZED
