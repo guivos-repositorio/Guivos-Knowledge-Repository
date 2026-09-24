@@ -103,10 +103,17 @@ nav:
       - Guivos Business — Start, Growth, Scale e Enterprise: plans/business.md
 
   - Experiência e Journey:
-      - Visão Geral: experience-architecture/index.md
+      - Arquitetura da Experiência: experience-architecture/index.md
 
-      - Design das Homes:
-          - Comece por aqui: experience-architecture/public-homes-design-delivery-manifest.md
+      - Design das Homes — Comece por aqui:
+          - Manifesto Canônico de Entrega: experience-architecture/public-homes-design-delivery-manifest.md
+          - Handoff Canônico de Design: experience-architecture/public-homes-design-handoff.md
+          - Prontidão de Produção de Design: experience-architecture/public-homes-design-production-readiness-and-figma-contract.md
+          - Fluxo Operacional de Uso do Pacote: experience-architecture/public-homes-design-delivery-operational-flow.md
+          - Design Production Release: experience-architecture/public-homes-design-production-release.md
+          - IA Opcional — Source Lock e Contrato de Consumo: experience-architecture/public-homes-generative-source-lock-and-prompt-template.md
+
+      - Leia Primeiro por Home:
           - Pessoa: experience-architecture/read-first/public-home-person-read-first.md
           - Organizações e Coletivos: experience-architecture/read-first/public-home-organizations-collectives-read-first.md
           - Guivos Mall: experience-architecture/read-first/public-home-mall-read-first.md
@@ -116,16 +123,22 @@ nav:
           - Guivos Business: experience-architecture/read-first/public-home-business-read-first.md
           - Guivos Intelligence: experience-architecture/read-first/public-home-intelligence-read-first.md
 
-      - Journey:
-          - Visão Geral: journeys/index.md
-          - Pessoa: journeys/person.md
-          - Coletivo: journeys/collective.md
-          - Organização: journeys/organization.md
-          - Guivos Business: journeys/business.md
+      - Documentos Mestres das Homes:
+          - Home Principal / Pessoa: experience-architecture/public-home-master-document.md
+          - Home de Organizações e Coletivos: experience-architecture/public-home-organizations-collectives-master-document.md
+          - Home Guivos Mall: experience-architecture/public-home-mall-master-document.md
+          - Home Guivos Travel: experience-architecture/public-home-travel-master-document.md
+          - Home Guivos Media: experience-architecture/public-home-media-master-document.md
+          - Home Guivos Ads: experience-architecture/public-home-ads-master-document.md
+          - Home Guivos Business: experience-architecture/public-home-business-master-document.md
+          - Home Guivos Intelligence: experience-architecture/public-home-intelligence-master-document.md
 
-      - Organização e Coletivo — Experiência Autenticada:
-          - Estado Atual: experience-architecture/organizations-collectives-current-state.md
-          - High-Fidelity — Handoff de Execução: experience-architecture/organizations-collectives-authenticated-high-fidelity-execution-handoff.md
+      - Journey e Continuidade:
+          - Jornadas Integradas: journeys/index.md
+          - Jornada da Pessoa: journeys/person.md
+          - Jornada do Coletivo: journeys/collective.md
+          - Jornada da Organização: journeys/organization.md
+          - Guivos Business — Experiência Integrada: journeys/business.md
 
   - Research e Validação:
       - Research — Visão Geral: research/index.md
