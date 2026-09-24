@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.36.14
+version: 0.36.15
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-22
+last_updated: 2026-09-24
 related:
   - UXA-089
   - UXA-090
@@ -33,6 +33,8 @@ related:
   - GKR-JOURNEY-SURFACE-DETAIL-ORGANIZATION-001
   - GKR-JOURNEY-SURFACE-DETAIL-ADS-BOUNDARIES-001
   - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
@@ -233,4 +235,4 @@ Guivos Business é produto especializado e constitui um contexto corrente de exp
 
 ## 7. Estado
 
-O registro permanece `active` como inventário granular. A maturidade deve ser lida por superfície e por escopo de autoridade, nunca pela mera existência física de SVG. Para Organização e Coletivo, Jobs e Arquitetura da Informação permanecem definidos em seus limites próprios; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.2` define o mapa lógico-documental canônico de superfícies e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.3` define o mapa funcional de estados canônico e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.1` define os Priority Flows canônicos documentais. A Navigation Materialization está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`; os wireframes principais autenticados low-fidelity foram entregues em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A autorização de Design high-fidelity O/C está `GRANTED`, mas a execução permanece `NOT_STARTED` e depende de ato separado; protótipo e implementação não são promovidos por esse estado.
+O registro permanece `active` como inventário granular. A maturidade deve ser lida por superfície e por escopo de autoridade, nunca pela mera existência física de SVG. Para Organização e Coletivo, Jobs e Arquitetura da Informação permanecem definidos em seus limites próprios; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.2` define o mapa lógico-documental canônico de superfícies e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.3` define o mapa funcional de estados canônico e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.1` define os Priority Flows canônicos documentais. A Navigation Materialization está definida canonicamente em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`; os wireframes principais autenticados low-fidelity foram entregues em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A autorização de Design high-fidelity O/C está `GRANTED` e o ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0` liberou a execução externa; a entrega permanece `NOT_RECEIVED`. Protótipo e implementação não são promovidos por esse estado.
