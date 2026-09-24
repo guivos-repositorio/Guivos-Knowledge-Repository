@@ -2,9 +2,9 @@
 id: GTM-007
 title: Governança de Internacionalização e Programa Territorial
 status: proposed
-version: 0.2.0
+version: 0.2.1
 owner: Guivos Strategy & Growth
-last_updated: 2026-08-20
+last_updated: 2026-09-24
 depends_on:
   - GTM-001
   - GTM-005
@@ -119,7 +119,7 @@ Portugal permanece em `T1_candidate`, com planejamento documentado em `GTM-001`.
 - suporte internacional em produção: `not_evidenced`;
 - campanha local executada: `not_evidenced`.
 
-Conversas anteriores sobre telefone, domínios, polos ou presença internacional não promovem esses objetos a operação real.
+Telefone, domínios, polos, presença de marca ou outros ativos territoriais, isoladamente, não constituem evidência de operação real.
 
 ## 7. Gate de entrada internacional
 
