@@ -2,7 +2,7 @@
 id: GEM-004-PLAN-TAXONOMY-AUTHORITY-001
 title: Autoridade Conceitual de Taxonomia, Função e Leitura dos Planos
 status: active
-version: 1.0.3
+version: 1.0.4
 owner: Guivos Economic Model
 last_updated: 2026-09-20
 parent: GEM-004
@@ -237,6 +237,8 @@ Ela é utilizada quando uma contratação deixa de ser autonomamente configuráv
 - avaliação operacional, técnica, jurídica, comercial ou de segurança.
 
 `BND-002` não pertence semanticamente a Enterprise, Scale, Coletivo ou Organização. Também não significa checkout, tela autônoma, produto ou plano.
+
+No Registry corrente, `BND-002` é utilizado pelos fluxos de Planos de **Coletivo e Organização** quando esses contextos atravessam para contratação/dimensionamento assistido (`TRN-416` e `TRN-426`). **Guivos Business não reutiliza `BND-002`**: sua contratação permanece governada por `GPA-004`, `GKR-PLANS-BUSINESS-001` e pelas autoridades Business vigentes.
 
 Transições existentes que chegam a `BND-002` preservam seus IDs e maturidade até revalidação específica; esta correção semântica não promove nenhuma transição.
 
