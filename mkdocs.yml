@@ -89,16 +89,6 @@ nav:
       - Pessoa: journeys/person.md
       - Organização: journeys/organization.md
       - Coletivo: journeys/collective.md
-      - Organizações e Coletivos — Estado Atual: experience-architecture/organizations-collectives-current-state.md
-      - Organizações e Coletivos — Experiência Autenticada:
-          - Atores, Autoridades e Jobs: experience-architecture/organizations-collectives-authenticated-actors-authorities-and-jobs.md
-          - Arquitetura da Informação: experience-architecture/organizations-collectives-authenticated-information-architecture.md
-          - Mapa de Superfícies: experience-architecture/organizations-collectives-authenticated-surface-map.md
-          - Mapa de Estados: experience-architecture/organizations-collectives-authenticated-state-map.md
-          - Fluxos Prioritários: experience-architecture/organizations-collectives-authenticated-priority-flows.md
-          - Navegação Autenticada: experience-architecture/organizations-collectives-authenticated-navigation-materialization.md
-          - Wireframes Low-Fidelity: experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md
-          - Design High-Fidelity — Release e Handoff de Execução: experience-architecture/organizations-collectives-authenticated-high-fidelity-execution-handoff.md
 
   - Produtos e Economia:
       - Arquitetura de Produtos: product-architecture/index.md
@@ -113,17 +103,10 @@ nav:
       - Guivos Business — Start, Growth, Scale e Enterprise: plans/business.md
 
   - Experiência e Journey:
-      - Arquitetura da Experiência: experience-architecture/index.md
+      - Visão Geral: experience-architecture/index.md
 
-      - Design das Homes — Comece por aqui:
-          - Manifesto Canônico de Entrega: experience-architecture/public-homes-design-delivery-manifest.md
-          - Handoff Canônico de Design: experience-architecture/public-homes-design-handoff.md
-          - Prontidão de Produção de Design: experience-architecture/public-homes-design-production-readiness-and-figma-contract.md
-          - Fluxo Operacional de Uso do Pacote: experience-architecture/public-homes-design-delivery-operational-flow.md
-          - Design Production Release: experience-architecture/public-homes-design-production-release.md
-          - IA Opcional — Source Lock e Contrato de Consumo: experience-architecture/public-homes-generative-source-lock-and-prompt-template.md
-
-      - 00 — Leia Primeiro por Home:
+      - Design das Homes:
+          - Comece por aqui: experience-architecture/public-homes-design-delivery-manifest.md
           - Pessoa: experience-architecture/read-first/public-home-person-read-first.md
           - Organizações e Coletivos: experience-architecture/read-first/public-home-organizations-collectives-read-first.md
           - Guivos Mall: experience-architecture/read-first/public-home-mall-read-first.md
@@ -133,22 +116,16 @@ nav:
           - Guivos Business: experience-architecture/read-first/public-home-business-read-first.md
           - Guivos Intelligence: experience-architecture/read-first/public-home-intelligence-read-first.md
 
-      - Documentos Mestres das Homes:
-          - Home Principal / Pessoa: experience-architecture/public-home-master-document.md
-          - Home de Organizações e Coletivos: experience-architecture/public-home-organizations-collectives-master-document.md
-          - Home Guivos Mall: experience-architecture/public-home-mall-master-document.md
-          - Home Guivos Travel: experience-architecture/public-home-travel-master-document.md
-          - Home Guivos Media: experience-architecture/public-home-media-master-document.md
-          - Home Guivos Ads: experience-architecture/public-home-ads-master-document.md
-          - Home Guivos Business: experience-architecture/public-home-business-master-document.md
-          - Home Guivos Intelligence: experience-architecture/public-home-intelligence-master-document.md
+      - Journey:
+          - Visão Geral: journeys/index.md
+          - Pessoa: journeys/person.md
+          - Coletivo: journeys/collective.md
+          - Organização: journeys/organization.md
+          - Guivos Business: journeys/business.md
 
-      - Journey e Continuidade:
-          - Jornadas Integradas: journeys/index.md
-          - Jornada da Pessoa: journeys/person.md
-          - Jornada do Coletivo: journeys/collective.md
-          - Jornada da Organização: journeys/organization.md
-          - Guivos Business — Experiência Integrada: journeys/business.md
+      - Organização e Coletivo — Experiência Autenticada:
+          - Estado Atual: experience-architecture/organizations-collectives-current-state.md
+          - High-Fidelity — Handoff de Execução: experience-architecture/organizations-collectives-authenticated-high-fidelity-execution-handoff.md
 
   - Research e Validação:
       - Research — Visão Geral: research/index.md
@@ -164,28 +141,23 @@ nav:
 
   - GTM, Expansão e Presença Pública:
       - Go-to-Market, Growth & Capital: go-to-market/index.md
-      - Lançamento e Expansão Geográfica: go-to-market/gtm-001-launch-and-geographic-sequencing.md
-      - Internacionalização e Governança Territorial: go-to-market/gtm-007-internationalization-and-territorial-governance.md
-      - Piloto Portugal — Gates de Prontidão: go-to-market/gtm-008-portugal-pilot-readiness-gates.md
-      - Operações Internacionais e Cross-Border: governance-framework/international-operations-and-cross-border-readiness.md
-      - Instagram Guivos — Presença e Governança: go-to-market/gtm-009-instagram-presence-and-editorial-governance.md
-      - Instagram do Fundador — Especificação Mestre: go-to-market/gtm-010-founder-instagram-master-specification.md
-      - Instagram do Fundador — Especificação Operacional: go-to-market/gtm-011-founder-instagram-operating-specification.md
+
+      - Expansão e Internacionalização:
+          - Lançamento e Expansão Geográfica: go-to-market/gtm-001-launch-and-geographic-sequencing.md
+          - Internacionalização e Governança Territorial: go-to-market/gtm-007-internationalization-and-territorial-governance.md
+          - Piloto Portugal — Gates de Prontidão: go-to-market/gtm-008-portugal-pilot-readiness-gates.md
+          - Operações Internacionais e Cross-Border: governance-framework/international-operations-and-cross-border-readiness.md
+
+      - Presença Pública:
+          - Instagram Guivos: go-to-market/gtm-009-instagram-presence-and-editorial-governance.md
+          - Instagram do Fundador — Mestre: go-to-market/gtm-010-founder-instagram-master-specification.md
+          - Instagram do Fundador — Operacional: go-to-market/gtm-011-founder-instagram-operating-specification.md
 
   - Dados, Intelligence e Tecnologia:
       - Arquitetura Corporativa: enterprise-architecture/index.md
       - Intelligence e IA: intelligence-architecture/index.md
       - Arquitetura Cognitiva de Referência: intelligence-architecture/cognitive-reference-architecture.md
-      - Dashboards, KPIs e Analytics:
-          - Documento Mestre: intelligence-architecture/dashboards-kpis-analytics-master-specification.md
-          - KPI Contract Standard: intelligence-architecture/kpi-contract-standard.md
-          - Dashboard Guivos — Documento Mestre: intelligence-architecture/dashboard-guivos-master-specification.md
-          - Dashboard Guivos — KPI Registry: intelligence-architecture/dashboard-guivos-kpi-registry.md
-          - Dashboard Guivos Business — Documento Mestre: intelligence-architecture/dashboard-guivos-business-master-specification.md
-          - Dashboard Organização — Documento Mestre: intelligence-architecture/dashboard-organization-master-specification.md
-          - Dashboard Coletivo — Documento Mestre: intelligence-architecture/dashboard-collective-master-specification.md
-          - Dashboard Pessoa — Documento Mestre: intelligence-architecture/dashboard-person-master-specification.md
-          - Dashboard Ads / Opportunity Boost — Documento Mestre: intelligence-architecture/dashboard-ads-opportunity-boost-master-specification.md
+      - Dashboards, KPIs e Analytics: intelligence-architecture/dashboards-kpis-analytics-master-specification.md
       - Tecnologia de Grafo: adr/ADR-007-neo4j-primary-graph-reference.md
 
   - Governança do GKR:
