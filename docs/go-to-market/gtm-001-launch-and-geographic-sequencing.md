@@ -2,9 +2,9 @@
 id: GTM-001
 title: Sequenciamento de Lançamento e Expansão Geográfica
 status: draft
-version: 0.4.0
+version: 0.4.1
 owner: Guivos Strategy & Growth
-last_updated: 2026-08-08
+last_updated: 2026-09-24
 parent: GTM-000
 related:
   - GTM-002
@@ -22,7 +22,7 @@ normative: false
 
 Definir onde e em que ordem a Guivos deverá concentrar aquisição, vendas, captação de participantes, alianças estratégicas e capacidade operacional para construir densidade antes de ampliar território.
 
-`GTM-007` passa a governar os estados territoriais e readiness cross-border; `GTM-008` detalha os gates do piloto português. Este documento preserva o sequenciamento e a baseline candidata de metas.
+`GTM-007` governa os estados territoriais e o readiness cross-border; `GTM-008` detalha os gates do piloto português. Este documento define o sequenciamento e a baseline candidata de metas.
 
 ## 2. Tese geográfica
 
@@ -132,11 +132,10 @@ Portugal permanece o primeiro mercado internacional de referência.
 
 A governança operacional desta onda está em `GTM-007` e `GTM-008`. Em 2026-08-08, Portugal permanece `T1_candidate`; este documento não promove a onda a piloto autorizado ou operação real.
 
-### Meta histórica candidata recuperada para o piloto
+### Baseline candidata do piloto
 
-A referência histórica de `30 parceiros locais` foi preservada como evidência histórica, mas sua expressão operacional foi corrigida para evitar conflito de papéis:
+A baseline candidata do piloto considera **30 relações locais de ecossistema qualificadas/ativadas**, com classificação pelo papel correto para evitar conflito entre Organizações, Coletivos, Parcerias Estratégicas e outras relações governadas:
 
-- **30 relações locais de ecossistema qualificadas/ativadas**, classificadas individualmente como Organização, Coletivo, Parceria Estratégica ou outro papel governado aplicável;
 - 3 clientes empresariais;
 - 1 campanha corporativa ou ação institucional demonstrável;
 - 1 caso de sucesso documentado;
@@ -158,7 +157,7 @@ Portugal somente avança quando houver evidência suficiente de:
 
 ## 9. Onda 5 — escala Brasil + Portugal | M37–M60
 
-A meta estratégica histórica de longo prazo é atingir **1.000.000 de Pessoas cadastradas até M60**, sem presumir que crescimento de cadastro equivale a retenção, receita ou evolução.
+A meta estratégica candidata de longo prazo é atingir **1.000.000 de Pessoas cadastradas até M60**, sem presumir que crescimento de cadastro equivale a retenção, receita ou evolução.
 
 Portugal deverá ser tratado como laboratório de internacionalização replicável. Nenhum segundo país é autorizado por este documento.
 

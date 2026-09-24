@@ -2,9 +2,9 @@
 id: GTM-000
 title: Guivos Go-to-Market, Growth & Capital
 status: draft
-version: 0.8.0
+version: 0.8.1
 owner: Guivos Strategy & Growth
-last_updated: 2026-08-23
+last_updated: 2026-09-24
 related:
   - GEM-003
   - GEM-004-A1
@@ -42,21 +42,20 @@ O GTM não redefine produtos, preços, identidade institucional ou arquitetura e
 - `GEM-006` e `GEM-006-PARTNER-ROLE-TAXONOMY-001` para papéis e relações de parceiros;
 - `GEM-009` para contratos de métricas;
 - `GEM-010` para cenários, drivers e separação entre receita, caixa, funding e valuation;
-- `GKR-BRAND-PUBLIC-AUTHORITY-001` para autoridade pública humana e papel do fundador;
-- decisões históricas de planejamento registradas em conversas-fontes, quando explicitamente classificadas como históricas ou candidatas.
+- `GKR-BRAND-PUBLIC-AUTHORITY-001` para autoridade pública humana e papel do fundador.
 
-## 4. Baselines históricas recuperadas
+## 4. Direção estratégica e baseline de planejamento
 
-As conversas-fontes anteriores registraram como direção estratégica:
+A direção estratégica corrente deste domínio estabelece:
 
 - lançamento brasileiro concentrado inicialmente em **Belo Horizonte e São Paulo**;
 - **Belo Horizonte** como núcleo de origem e validação operacional;
 - **São Paulo** como principal frente comercial de escala nacional;
 - **Portugal** como primeiro país de expansão internacional, com **Lisboa** como base inicial e Porto como expansão posterior condicionada a gate;
-- visão de longo prazo de **1.000.000 de usuários em cinco anos**;
-- faixa histórica candidata de valuation pré-receita no lançamento de **R$ 10 milhões a R$ 15 milhões**.
+- meta candidata de longo prazo de **1.000.000 de Pessoas cadastradas até M60**;
+- referência candidata de valuation pré-receita no lançamento de **R$ 10 milhões a R$ 15 milhões**.
 
-Esses itens não transformam automaticamente projeções históricas em metas aprovadas. A baseline quantitativa deste domínio é deliberadamente marcada como candidata até revisão humana.
+As referências territoriais definem direção e sequenciamento. As referências quantitativas permanecem candidatas até revisão e aprovação executiva aplicáveis. Nenhuma delas representa, por si só, resultado realizado, compromisso externo ou meta aprovada.
 
 ### 4.1 Horizontes executivos de planejamento
 
@@ -68,9 +67,9 @@ A baseline de cinco anos é estratificada em três horizontes cumulativos:
 
 A meta de cinco anos é, portanto, o fechamento do horizonte de longo prazo. `GTM-006` concentra a leitura executiva desses horizontes sem substituir as tabelas detalhadas de `GTM-001`, `GTM-002` e `GTM-003`.
 
-### 4.2 Rebaseline P7 de internacionalização
+### 4.2 Governança de internacionalização
 
-`GTM-007` e `GTM-008` transformam a direção Portugal/Lisboa em programa territorial governado, sem alterar seu status para operação real.
+`GTM-007` e `GTM-008` governam a direção Portugal/Lisboa como programa territorial, sem promover Portugal a operação real.
 
 A leitura corrente é:
 
@@ -218,7 +217,7 @@ A versão usada externamente deverá distinguir fatos realizados, metas internas
 
 ## 9. Estado
 
-`draft — candidate planning baseline with P7 territorial governance; calibration, market evidence, operating capacity and executive approval pending`.
+`draft — baseline estratégica candidata; calibração, evidência de mercado, capacidade operacional e aprovação executiva ainda pendentes`.
 
 `GTM-009`, `GTM-010` e `GTM-011` permanecem autoridades editoriais/operacionais ativas dentro deste domínio e não alteram, por si só, o estado `draft` da baseline econômico-comercial e territorial.
 
