@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.3.12
+version: 2.3.13
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -328,13 +328,13 @@ Fontes específicas:
 
 Fontes específicas:
 
-- `GKR-UX-HOME-BUSINESS-READ-FIRST-001 v1.0.13` — `docs/experience-architecture/read-first/public-home-business-read-first.md`;
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.24` — `docs/experience-architecture/public-home-business-source-lock.md`;
+- `GKR-UX-HOME-BUSINESS-READ-FIRST-001 v1.0.14` — `docs/experience-architecture/read-first/public-home-business-read-first.md`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.25` — `docs/experience-architecture/public-home-business-source-lock.md`;
 - `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.8` — `docs/experience-architecture/public-home-business-master-document.md`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 - `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.8` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.7.4` — `docs/product-architecture/business.md`;
-- `GKR-PLANS-BUSINESS-001 v1.3.0` — `docs/plans/business.md`.
+- `GKR-PLANS-BUSINESS-001 v1.3.1` — `docs/plans/business.md`.
 
 ### 6.8 Home Pública — Guivos Intelligence
 
