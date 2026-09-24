@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.17
+version: 13.48.18
 owner: Guivos
 last_updated: 2026-09-24
 normative: true
@@ -18,6 +18,7 @@ related:
   - GKR-JOURNEY-GAPS-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
   - GKR-UX-PER002-PROTOTYPE-REVALIDATION-001
   - GPA-004
   - GPA-006
@@ -66,7 +67,7 @@ A auditoria integral anterior está concluída. Lotes, findings resolvidos, SHAs
 | Journey | vistas e registries correntes ativos |
 | Business | `Start · Growth · Scale · Enterprise` / contratação online / Self-service quando elegível |
 | O/C low-fidelity autenticado | `DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS` |
-| O/C high-fidelity | `AUTHORIZED / NOT_STARTED` |
+| O/C high-fidelity | `AUTHORIZATION GRANTED / EXECUTION RELEASE ISSUED / DELIVERY NOT_RECEIVED` |
 | O/C protótipo interativo | `NOT_AUTHORIZED` |
 | PER-002 | referência interativa pós-review validada |
 | UXA-102 / V5 | `NOT_STARTED` |
@@ -214,8 +215,9 @@ Estado corrente:
 
 ```text
 O/C HIGH-FIDELITY DESIGN
-→ AUTHORIZED
-→ NOT_STARTED
+→ AUTHORIZATION GRANTED
+→ EXECUTION RELEASE ISSUED
+→ EXTERNAL DELIVERY NOT_RECEIVED
 
 INTERACTIVE PROTOTYPE
 → NOT_AUTHORIZED
@@ -224,7 +226,7 @@ PRODUCT ENGINEERING
 → NOT RELEASED
 ```
 
-A execução high-fidelity não é automática. Capacidades especializadas ainda abertas permanecem registradas em `GKR-JOURNEY-GAPS-001` e nos Surface Registries; não reabrem a cadeia principal já fechada.
+O ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0` liberou a execução externa high-fidelity. O próximo avanço nesta frente depende de uma entrega externa inspecionável; capacidades especializadas ainda abertas permanecem registradas em `GKR-JOURNEY-GAPS-001` e nos Surface Registries e não reabrem a cadeia principal já fechada.
 
 ## 7. Pessoa — PER-002 e continuidade
 
@@ -445,12 +447,20 @@ EXPERIENCE / JOURNEY CURRENT-ONLY CONSOLIDATION
 CURRENT DOCUMENTARY FRONT
 → NONE AUTOMATICALLY SELECTED
 
+CURRENT EXTERNAL EXECUTION FRONT
+→ O/C HIGH-FIDELITY DESIGN
+→ RELEASED / DELIVERY PENDING
+
 PUBLIC HOME DESIGN
 → RELEASED FOR EXTERNAL DESIGNER
 
 O/C HIGH-FIDELITY EXECUTION
-→ AUTHORIZED / NOT_STARTED
-→ SEPARATE EXECUTION ACT
+→ RELEASED FOR EXTERNAL DESIGN
+→ DELIVERY NOT_RECEIVED
+
+NEXT O/C GATE
+→ RECEIVE HIGH-FIDELITY DELIVERY
+→ VALIDATE AGAINST CURRENT FUNCTIONAL AUTHORITIES
 
 O/C INTERACTIVE PROTOTYPE
 → NOT_AUTHORIZED
