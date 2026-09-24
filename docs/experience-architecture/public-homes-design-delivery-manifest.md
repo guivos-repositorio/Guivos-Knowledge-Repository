@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.41
+version: 7.0.42
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: true
@@ -51,13 +51,13 @@ Snapshots, candidates e registros de emissão anteriores pertencem à proveniên
 Quatro autoridades são universais para o fluxo de Design:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.10` — `docs/experience-architecture/public-homes-design-handoff.md`;
-2. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.3.24` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
+2. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.3.25` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
 3. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.1.3` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`;
 4. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.2` — `docs/experience-architecture/public-homes-design-production-release.md`.
 
 Quando a designer optar por usar IA, acrescenta-se a autoridade condicional:
 
-- `GKR-UX-HOMES-GENINPUT-001 v2.3.13` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`.
+- `GKR-UX-HOMES-GENINPUT-001 v2.3.14` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`.
 
 O uso manual não exige Source Lock ou registro de execução de IA.
 
@@ -107,12 +107,12 @@ O uso manual não exige Source Lock ou registro de execução de IA.
 
 ### 3.7 Business
 
-- `GKR-UX-HOME-BUSINESS-READ-FIRST-001 v1.0.14` — `docs/experience-architecture/read-first/public-home-business-read-first.md`;
+- `GKR-UX-HOME-BUSINESS-READ-FIRST-001 v1.0.15` — `docs/experience-architecture/read-first/public-home-business-read-first.md`;
 
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.25` — `docs/experience-architecture/public-home-business-source-lock.md`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.26` — `docs/experience-architecture/public-home-business-source-lock.md`;
 - `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.8` — `docs/experience-architecture/public-home-business-master-document.md`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.8` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.9` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.7.4` — `docs/product-architecture/business.md`;
 - `GKR-PLANS-BUSINESS-001 v1.3.1` — `docs/plans/business.md`.
 
