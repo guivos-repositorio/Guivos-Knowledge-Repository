@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-READ-FIRST-001
 title: 00 — Leia Primeiro — Home Pública — Guivos Business
 status: active
-version: 1.0.13
+version: 1.0.14
 owner: Experience Architecture
 last_updated: 2026-09-21
 normative: false
@@ -46,12 +46,12 @@ AI
 
 ### Fontes específicas desta Home
 
-1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.24` — `docs/experience-architecture/public-home-business-source-lock.md`;
+1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.25` — `docs/experience-architecture/public-home-business-source-lock.md`;
 2. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.8` — `docs/experience-architecture/public-home-business-master-document.md`;
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
 4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.8` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 5. `GPA-004 v1.7.4` — `docs/product-architecture/business.md`;
-6. `GKR-PLANS-BUSINESS-001 v1.3.0` — `docs/plans/business.md` — planos, preços de referência e composição Self-service corrente;
+6. `GKR-PLANS-BUSINESS-001 v1.3.1` — `docs/plans/business.md` — planos, preços de referência e composição Self-service corrente;
 
 Se a designer optar por IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e preparar **Source Lock de execução / prompt** somente para essa execução. Esse artefato de execução não substitui nem altera eventual **Source Lock canônico da Home** já listado entre as fontes específicas.
 
