@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-COLLECTIVE-001
 title: Detalhamento Obrigatório das Superfícies do Coletivo
 status: active
-version: 0.17.10
+version: 0.17.11
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-24
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -75,4 +75,4 @@ A continuidade visual high-fidelity deverá partir dos fundamentos, papéis, job
 
 ## 5. Estado
 
-O detalhamento está `active` 0.17.10. As superfícies especializadas de solicitações e Planos preservam sua maturidade documental própria. A Jornada do Coletivo está `active`; a arquitetura da informação autenticada preserva sua maturidade documental própria; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.2`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.3` e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.1` permanecem autoridades canônicas. A Navigation Materialization está definida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`; o wireframe autenticado low-fidelity do Coletivo foi entregue em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validado com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. High-fidelity está autorizado e liberado para execução externa, com entrega ainda `NOT_RECEIVED`; protótipo interativo e implementação permanecem gates separados.
+O detalhamento está `active` 0.17.10. As superfícies especializadas de solicitações e Planos preservam sua maturidade documental própria. A Jornada do Coletivo está `active`; a arquitetura da informação autenticada preserva sua maturidade documental própria; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.3`, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.4` e `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.2` permanecem autoridades canônicas. A Navigation Materialization está definida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`; o wireframe autenticado low-fidelity do Coletivo foi entregue em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validado com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. High-fidelity está autorizado e liberado para execução externa, com entrega ainda `NOT_RECEIVED`; protótipo interativo e implementação permanecem gates separados.
