@@ -18,7 +18,7 @@ A leitura de estado continua subordinada ao [Registro do Estado Atual](project/c
 
 ```text
 GKR-STATE-001
-→ 3.50.29 / CURRENT
+→ 3.50.30 / CURRENT
 
 ERA
 → GE-2 — KNOWLEDGE
