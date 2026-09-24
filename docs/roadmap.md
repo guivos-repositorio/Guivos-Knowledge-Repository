@@ -2,9 +2,9 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.16
+version: 13.48.17
 owner: Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-24
 normative: true
 related:
   - GKR-STATE-001
@@ -35,7 +35,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.50.8` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.50.29` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, inventário de versões antigas, registro de PRs, histórico de auditoria ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -55,12 +55,12 @@ A auditoria integral anterior está concluída. Lotes, findings resolvidos, SHAs
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.50.8 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.50.29 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-101` |
 | Homes públicas | `8 / 8 READY FOR EXTERNAL DESIGN` |
-| Manifesto de Design | `GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.32` |
+| Manifesto de Design | `GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.43` |
 | Read-First das Homes | `8 / 8 CURRENT / NON-NORMATIVE` |
 | Design das Homes | `DESIGNER-FIRST / AI OPTIONAL / TOOL-NEUTRAL` |
 | Journey | vistas e registries correntes ativos |
@@ -114,15 +114,16 @@ AUTORIZAÇÃO
 ≠ EXECUÇÃO AUTOMÁTICA
 ```
 
-## 4. Frente corrente — Experiência e Journey current-only
+## 4. Experiência e Journey — consolidação current-only concluída
 
-Objetivo:
+A consolidação destinada a permitir que humanos, Design e IA opcional consumam somente autoridades correntes foi concluída no corpus vigente.
 
-> permitir que humanos, Design e IA opcional consumam somente autoridades correntes sem reconstruir o histórico do GKR.
-
-Estado:
+Estado corrente:
 
 ```text
+CURRENT-ONLY CONSOLIDATION
+→ COMPLETED
+
 CURRENT MAIN
 → PRIMARY SOURCE OF TRUTH
 
@@ -139,19 +140,24 @@ JOURNEY
 → CURRENT VIEWS + CURRENT REGISTRIES
 
 HISTORICAL PRODUCERS
-→ REMOVE FROM CURRENT CORPUS ONLY AFTER ABSORPTION IS PROVEN
+→ OUTSIDE CURRENT EXECUTION INPUT WHEN FUNCTION IS ABSORBED
+→ GIT PRESERVES PROVENANCE
 ```
 
-Próximos atos permitidos nesta frente:
+A manutenção futura de Experience/Journey deve ocorrer somente quando uma mudança material exigir atualização das autoridades correntes, dependências, versões, links, IDs, navegação ou nomenclatura.
 
-- continuar auditoria de documentos correntes;
-- remover apenas artefatos cuja função esteja comprovadamente absorvida;
-- corrigir dependências, versões, links, IDs, navegação e nomenclatura;
-- preservar validações que ainda exerçam autoridade funcional;
-- manter Design e IA consumindo o conjunto corrente;
-- executar revisão independente do conjunto antes de qualquer gate humano de integração.
+```text
+CONSOLIDATION COMPLETED
+≠ NEW AUTOMATIC FRONT
 
-Esta frente **não** cria snapshot, Figma, protótipo, implementação ou Product Engineering por inferência.
+FUTURE MATERIAL CHANGE
+→ UPDATE CURRENT AUTHORITY
+
+HISTORY / AUDIT RECONSTRUCTION
+→ NOT REQUIRED
+```
+
+A conclusão desta consolidação não cria snapshot, Figma, protótipo, implementação, UXA-102 ou Product Engineering por inferência.
 
 ## 5. Homes públicas — execução externa de Design
 
@@ -433,8 +439,11 @@ Não existe próxima execução automática.
 NEXT AUTOMATIC EXECUTION
 → NONE
 
+EXPERIENCE / JOURNEY CURRENT-ONLY CONSOLIDATION
+→ COMPLETED
+
 CURRENT DOCUMENTARY FRONT
-→ EXPERIENCE / JOURNEY CURRENT-ONLY CONSOLIDATION
+→ NONE AUTOMATICALLY SELECTED
 
 PUBLIC HOME DESIGN
 → RELEASED FOR EXTERNAL DESIGNER
