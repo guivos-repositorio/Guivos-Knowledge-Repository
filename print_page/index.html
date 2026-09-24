@@ -8255,7 +8255,7 @@ HISTORY
 → GIT
 </code></pre></div></section><section class="print-page" id="roadmap" heading-number="2.3"><h1 id="roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos">Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos<a class="headerlink" href="#roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-funcao">1. Função<a class="headerlink" href="#roadmap-1-funcao" title="Permanent link">&para;</a></h2>
-<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.8</code> em <strong>frentes governadas de avanço</strong>.</p>
+<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.29</code> em <strong>frentes governadas de avanço</strong>.</p>
 <p>Ele não é cronologia do projeto, inventário de versões antigas, registro de PRs, histórico de auditoria ou autorização automática para executar a próxima coisa tecnicamente possível.</p>
 <div class="highlight"><pre><span></span><code>ROADMAP
 → ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
@@ -8277,7 +8277,7 @@ ROADMAP
 <tbody>
 <tr>
 <td>Estado global</td>
-<td><code>GKR-STATE-001 v3.50.8 / CURRENT</code></td>
+<td><code>GKR-STATE-001 v3.50.29 / CURRENT</code></td>
 </tr>
 <tr>
 <td>Era</td>
@@ -8297,7 +8297,7 @@ ROADMAP
 </tr>
 <tr>
 <td>Manifesto de Design</td>
-<td><code>GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.32</code></td>
+<td><code>GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.43</code></td>
 </tr>
 <tr>
 <td>Read-First das Homes</td>
@@ -8392,13 +8392,13 @@ DOCUMENTAÇÃO
 AUTORIZAÇÃO
 ≠ EXECUÇÃO AUTOMÁTICA
 </code></pre></div>
-<h2 id="roadmap-4-frente-corrente-experiencia-e-journey-current-only">4. Frente corrente — Experiência e Journey current-only<a class="headerlink" href="#roadmap-4-frente-corrente-experiencia-e-journey-current-only" title="Permanent link">&para;</a></h2>
-<p>Objetivo:</p>
-<blockquote>
-<p>permitir que humanos, Design e IA opcional consumam somente autoridades correntes sem reconstruir o histórico do GKR.</p>
-</blockquote>
-<p>Estado:</p>
-<div class="highlight"><pre><span></span><code>CURRENT MAIN
+<h2 id="roadmap-4-experiencia-e-journey-consolidacao-current-only-concluida">4. Experiência e Journey — consolidação current-only concluída<a class="headerlink" href="#roadmap-4-experiencia-e-journey-consolidacao-current-only-concluida" title="Permanent link">&para;</a></h2>
+<p>A consolidação destinada a permitir que humanos, Design e IA opcional consumam somente autoridades correntes foi concluída no corpus vigente.</p>
+<p>Estado corrente:</p>
+<div class="highlight"><pre><span></span><code>CURRENT-ONLY CONSOLIDATION
+→ COMPLETED
+
+CURRENT MAIN
 → PRIMARY SOURCE OF TRUTH
 
 CURRENT MANIFEST
@@ -8414,18 +8414,20 @@ JOURNEY
 → CURRENT VIEWS + CURRENT REGISTRIES
 
 HISTORICAL PRODUCERS
-→ REMOVE FROM CURRENT CORPUS ONLY AFTER ABSORPTION IS PROVEN
+→ OUTSIDE CURRENT EXECUTION INPUT WHEN FUNCTION IS ABSORBED
+→ GIT PRESERVES PROVENANCE
 </code></pre></div>
-<p>Próximos atos permitidos nesta frente:</p>
-<ul>
-<li>continuar auditoria de documentos correntes;</li>
-<li>remover apenas artefatos cuja função esteja comprovadamente absorvida;</li>
-<li>corrigir dependências, versões, links, IDs, navegação e nomenclatura;</li>
-<li>preservar validações que ainda exerçam autoridade funcional;</li>
-<li>manter Design e IA consumindo o conjunto corrente;</li>
-<li>executar revisão independente do conjunto antes de qualquer gate humano de integração.</li>
-</ul>
-<p>Esta frente <strong>não</strong> cria snapshot, Figma, protótipo, implementação ou Product Engineering por inferência.</p>
+<p>A manutenção futura de Experience/Journey deve ocorrer somente quando uma mudança material exigir atualização das autoridades correntes, dependências, versões, links, IDs, navegação ou nomenclatura.</p>
+<div class="highlight"><pre><span></span><code>CONSOLIDATION COMPLETED
+≠ NEW AUTOMATIC FRONT
+
+FUTURE MATERIAL CHANGE
+→ UPDATE CURRENT AUTHORITY
+
+HISTORY / AUDIT RECONSTRUCTION
+→ NOT REQUIRED
+</code></pre></div>
+<p>A conclusão desta consolidação não cria snapshot, Figma, protótipo, implementação, UXA-102 ou Product Engineering por inferência.</p>
 <h2 id="roadmap-5-homes-publicas-execucao-externa-de-design">5. Homes públicas — execução externa de Design<a class="headerlink" href="#roadmap-5-homes-publicas-execucao-externa-de-design" title="Permanent link">&para;</a></h2>
 <p>As oito Homes estão liberadas para produção externa de Design pela designer.</p>
 <div class="highlight"><pre><span></span><code>DESIGNER
@@ -8645,8 +8647,11 @@ PLANEJAMENTO GTM ≠ EXECUÇÃO GTM
 <div class="highlight"><pre><span></span><code>NEXT AUTOMATIC EXECUTION
 → NONE
 
+EXPERIENCE / JOURNEY CURRENT-ONLY CONSOLIDATION
+→ COMPLETED
+
 CURRENT DOCUMENTARY FRONT
-→ EXPERIENCE / JOURNEY CURRENT-ONLY CONSOLIDATION
+→ NONE AUTOMATICALLY SELECTED
 
 PUBLIC HOME DESIGN
 → RELEASED FOR EXTERNAL DESIGNER
