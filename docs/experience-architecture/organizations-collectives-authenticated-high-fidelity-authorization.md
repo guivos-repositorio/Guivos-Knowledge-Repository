@@ -2,11 +2,11 @@
 id: GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
 title: Organizações e Coletivos — Autorização de Design High-Fidelity
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-22
+last_updated: 2026-09-24
 normative: true
-maturity: authenticated_high_fidelity_design_authorized_pre_execution
+maturity: authenticated_high_fidelity_design_authorized_execution_released
 depends_on:
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
@@ -15,6 +15,7 @@ depends_on:
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
 related:
+  - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
   - GKR-STATE-001
   - UXA-014
   - UXA-019
@@ -34,10 +35,12 @@ O/C HIGH-FIDELITY DESIGN AUTHORIZATION
 
 EXECUTION
 → AUTHORIZED
-→ NOT_STARTED
+→ SEPARATE EXECUTION ACT ISSUED
+→ EXTERNAL DESIGN EXECUTION RELEASED
+→ HIGH-FIDELITY DELIVERY NOT_RECEIVED
 ```
 
-A autorização permite uma execução posterior de Design high-fidelity. Ela não executa Design neste ato.
+A autorização foi seguida pelo ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0`, que libera a execução externa de Design high-fidelity. O release não equivale a entrega visual recebida ou validada.
 
 ## Boundary
 
@@ -78,14 +81,19 @@ SOURCE LOCK
 
 ## Próximo gate
 
-O próximo movimento legítimo é a execução separada do Design high-fidelity O/C.
+O ato separado de execução foi emitido por `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0`.
 
 ```text
 HIGH-FIDELITY DESIGN EXECUTION
-→ AUTHORIZED
-→ NOT_STARTED
-→ REQUIRES SEPARATE EXECUTION ACT
+→ RELEASED FOR EXTERNAL DESIGN
+
+HIGH-FIDELITY DELIVERY
+→ NOT_RECEIVED
+
+NEXT GOVERNED GATE
+→ RECEIVE INSPECTABLE HIGH-FIDELITY DELIVERY
+→ VALIDATE AGAINST CURRENT FUNCTIONAL AUTHORITIES
 
 PROTOTYPE / PRODUCT ENGINEERING / IMPLEMENTATION
-→ NOT RELEASED BY THIS AUTHORIZATION
+→ NOT RELEASED
 ```
