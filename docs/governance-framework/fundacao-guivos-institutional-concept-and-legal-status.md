@@ -2,9 +2,9 @@
 id: GKR-FUNDACAO-GUIVOS-CONCEPT-001
 title: Fundação Guivos — Conceito Institucional e Estado Jurídico
 status: proposed
-version: 0.1.0
+version: 0.1.1
 owner: Guivos
-last_updated: 2026-08-08
+last_updated: 2026-09-24
 related:
   - GKR-INSTITUTIONAL-LEGAL-ARCHITECTURE-001
   - GKR-INSTITUTIONAL-LEGAL-EVIDENCE-001
@@ -18,7 +18,7 @@ normative: true
 
 ## 1. Finalidade
 
-Este documento registra o conceito institucional historicamente desenvolvido sob o nome **Fundação Guivos** e separa esse conceito de qualquer afirmação sobre forma jurídica, constituição, registro ou operação.
+Este documento define o conceito institucional atualmente denominado **Fundação Guivos** e separa esse conceito de qualquer afirmação sobre forma jurídica, constituição, registro ou operação.
 
 A expressão `Fundação Guivos` é, neste estágio, um **nome de trabalho para um futuro veículo institucional de impacto social**. Ela não deve ser interpretada como prova de que exista uma fundação privada juridicamente constituída no Brasil ou em qualquer outra jurisdição.
 
@@ -197,8 +197,8 @@ Este documento não aprova:
 
 O conceito somente poderá avançar para estrutura jurídica após análise profissional aplicável e os gates de evidência do P5.
 
-## 10. Fontes de contexto
+## 10. Referências e limites de enquadramento
 
-Este documento consolida decisões e discussões históricas governadas em ChatsFontes e as reconcilia com as autoridades atuais do GKR.
+O conceito institucional descrito neste documento deve ser lido em conjunto com as autoridades vigentes do GKR. Ele não substitui análise jurídica específica nem constitui, por si só, definição de forma jurídica.
 
 Como referência jurídica externa de enquadramento, o Código Civil brasileiro distingue associações e fundações entre as pessoas jurídicas de direito privado, disciplina associações nos arts. 53 e seguintes e fundações nos arts. 62 e seguintes. A existência legal de pessoa jurídica privada depende do ato constitutivo e respectivo registro, conforme art. 45. O detalhamento e a escolha de forma jurídica permanecem fora deste documento e exigem análise jurídica específica.
