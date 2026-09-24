@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.24.3
+version: 1.24.4
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-22
+last_updated: 2026-09-24
 related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -27,6 +27,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
   - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
 normative: false
 ---
 
@@ -152,6 +153,7 @@ JOBS / AUTORIDADE
 → LOW-FIDELITY VALIDATION
 → HIGH-FIDELITY ELIGIBILITY
 → HIGH-FIDELITY AUTHORIZATION
+→ HIGH-FIDELITY EXECUTION RELEASE
 ```
 
 Essas autoridades governam significado, estados, transições e limites. Elas não impõem identidade visual final.
@@ -223,7 +225,9 @@ HISTORICAL RECONSTRUCTION
 → NOT REQUIRED
 
 O/C HIGH-FIDELITY DESIGN
-→ AUTHORIZED / NOT_STARTED
+→ AUTHORIZATION GRANTED
+→ EXECUTION RELEASE ISSUED
+→ EXTERNAL DELIVERY NOT_RECEIVED
 
 INTERACTIVE PROTOTYPE
 → NOT_AUTHORIZED
