@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.8
+version: 1.0.9
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-22
+last_updated: 2026-09-24
 related:
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -21,6 +21,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
 normative: false
 ---
 
@@ -113,7 +114,7 @@ Essas lacunas não convertem Business em Organização, não remetem automaticam
 
 ## 5. Organização e Coletivo autenticados
 
-A cadeia corrente está documentalmente fechada até a autorização de Design high-fidelity:
+A cadeia corrente está documentalmente fechada até a autorização de Design high-fidelity e o release separado de execução externa:
 
 ```text
 JOBS / AUTORIDADE
@@ -126,14 +127,16 @@ JOBS / AUTORIDADE
 → LOW-FIDELITY VALIDATION
 → HIGH-FIDELITY ELIGIBILITY
 → HIGH-FIDELITY AUTHORIZATION
+→ HIGH-FIDELITY EXECUTION RELEASE
 ```
 
 Estado corrente:
 
 ```text
 O/C HIGH-FIDELITY DESIGN
-→ AUTHORIZED
-→ NOT_STARTED
+→ AUTHORIZATION GRANTED
+→ EXECUTION RELEASE ISSUED
+→ EXTERNAL DELIVERY NOT_RECEIVED
 
 INTERACTIVE PROTOTYPE
 → NOT_AUTHORIZED
@@ -165,7 +168,7 @@ Permanecem abertas, conforme os Surface Registries e contratos correntes:
 - `COL-008`: relação Organização ↔ Coletivo — contrato/lifecycle definidos sob `UXA-019`, com cobertura low-fidelity O↔C em `PASS`; materialização dedicada e continuidade ponta a ponta permanecem abertas;
 - capacidades de avaliação/reputação e de interações/recomendações/conexões governadas por `UXA-057` e `UXA-058` permanecem dependentes de materialização/validação específica onde o Registry ainda não comprova fechamento.
 
-Essas lacunas especializadas não reabrem a cadeia principal autenticada já fechada até `HIGH-FIDELITY AUTHORIZATION`; elas devem ser tratadas como frentes funcionais próprias, sem promoção por analogia.
+Essas lacunas especializadas não reabrem a cadeia principal autenticada já fechada até `HIGH-FIDELITY EXECUTION RELEASE`; elas devem ser tratadas como frentes funcionais próprias, sem promoção por analogia.
 
 ## 6. Regra de continuidade
 
