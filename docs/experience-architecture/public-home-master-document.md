@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.4
+version: 1.0.6
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 normative: false
 maturity: reconciled_for_external_design
 depends_on:
@@ -15,18 +15,7 @@ depends_on:
   - GOG-001
   - GKR-STATE-001
   - UXA-020
-  - UXA-021
-  - GKR-UX-HOME-001
-  - GKR-UX-HOME-VAL-001
   - GKR-UX-HOME-NARR-001
-  - GKR-UX-HOME-NARR-002
-  - GKR-UX-HOME-NARR-003
-  - GKR-UX-HOME-NARR-004
-  - GKR-UX-HOME-NARR-005
-  - GKR-UX-HOME-NAV-001
-  - GKR-UX-HOME-NAV-003
-  - GKR-UX-HOME-SYS-001
-  - GKR-UX-HOME-GTM-BOUNDARY-001
   - GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001
 related:
   - GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001
@@ -216,9 +205,11 @@ A percepção desejada permanece:
 - humanidade sem clichê;
 - uma Guivos maior do que a soma dos Produtos Especializados.
 
-Direção criativa preservada:
+Qualidades semânticas desejadas:
 
 > **Futuro sem ficção. Tecnologia sem frieza. Sofisticação sem elitismo. Escala sem ruído. Humanidade sem clichê.**
+
+Essas qualidades descrevem a percepção e o significado que a Home deve conseguir sustentar. **Não constituem direção visual canônica** e não prescrevem estética, tipografia, paleta, fotografia, ilustração, composição, grid, motion ou atmosfera.
 
 Regra narrativa central:
 
@@ -1310,17 +1301,18 @@ A definição funcional de Q não deve preencher itens visuais ou operacionais p
 | `GKR-BRAND-SIGNATURE-001` | assinatura institucional correta | absorvido |
 | `GKR-BRAND-PUBLIC-AUTHORITY-001` | Guivos ≠ fundador | absorvido |
 | propagation de autoridade pública | correção da Hero e Movimento 06 | **conteúdo Home absorvido; arquivo ainda não removido** |
-| `GKR-UX-HOME-VAL-001` | pergunta-mãe, amplitude, protagonismo, cinco pilares | absorvido com correções posteriores |
+| `GKR-UX-HOME-VAL-001` | pergunta-mãe, amplitude, protagonismo, cinco pilares | absorvido com correções posteriores; removido do corpus corrente |
 | `NARR-001` | 11 movimentos e contratos narrativos | absorção mestre; detalhes permanecem no especializado |
-| `NARR-002` | coerência do Movimento 08 | absorvido |
-| `NARR-003` | participante ≠ produto | absorvido |
-| `NARR-004` | realidade × experiência × autoridade | absorvido |
-| `NARR-005` | 7 macroexperiências | absorvido com novo rótulo do M06 |
-| `NAV-001/003/004` | Header, launcher, CTAs, scroll e mobile | absorvido; resíduos históricos não governam o master |
-| `SYS-001` | conteúdo, prova, histórias, interação, ritmo e acessibilidade | absorvido |
-| `GTM-BOUNDARY-001` | arquitetura ≠ lançamento | absorvido |
+| `NARR-002` | coerência do Movimento 08 | absorvido; removido do corpus corrente |
+| `NARR-003` | participante ≠ produto | absorvido; removido do corpus corrente |
+| `NARR-004` | realidade × experiência × autoridade | absorvido; removido do corpus corrente |
+| `NARR-005` | 7 macroexperiências | absorvido com novo rótulo do M06; removido do corpus corrente |
+| `NAV-001/002/003/004` | Header, launcher, CTAs, scroll, mobile e limite do Mapa do Ecossistema | absorvido; removido do corpus corrente |
+| `SYS-001` | conteúdo, prova, histórias, interação, ritmo e acessibilidade | absorvido; removido do corpus corrente |
+| `GTM-BOUNDARY-001` | arquitetura ≠ lançamento | absorvido; removido do corpus corrente |
 | Media supply | Media como fonte editorial sem transferência de autoridade | absorvido |
-| `UXA-020/021` | fronteira pública/protegida e ausência de coleta na Home | absorvido nos limites atuais |
+| `UXA-020` | fronteira pública/protegida e ausência de coleta na Home | preservado como autoridade funcional limitada da fronteira |
+| `UXA-021` | primeira validação funcional detalhada da Home | absorvido pelo Master; proveniência histórica somente |
 
 Esta matriz **não autoriza remoção automática das fontes**. A remoção física exige teste posterior de conteúdo único, evidência, dependências e referências.
 
@@ -1330,32 +1322,18 @@ Esta matriz **não autoriza remoção automática das fontes**. A remoção fís
 
 ### Fundação funcional e entrada
 
-- [UXA-020 — Página Inicial e Início da Jornada](uxa-020-home-and-journey-entry.md)
-- [UXA-021 — Validação Funcional da Home](uxa-021-public-home-functional-validation-and-reformulation.md)
+- [UXA-020 — Página Inicial e Início da Jornada](uxa-020-home-and-journey-entry.md) — preservada somente para a fronteira funcional Home pública → entrada protegida.
 
 ### Mensagem e narrativa
 
-- [Diretriz Estratégica de Mensagem](public-home-message-authority-transformation-direction.md)
-- [Consolidação da Hero e Narrativa](public-home-validated-hero-and-narrative-consolidation.md)
 - [Especificação dos 11 Movimentos](public-home-11-movements-narrative-specification.md)
-- [Macroexperiências](public-home-11-movements-macroexperience-grouping-map.md)
-- [Movimento 08 — Ecossistema e Produtos](public-home-movement-08-ecosystem-products-narrative-hierarchy.md)
-- [Transição Participantes → Produtos](public-home-movement-07-to-08-participant-product-transition.md)
-- [Realidade × Autoridade](public-home-movement-02-vs-09-reality-authority-distinction.md)
 
 ### Navegação, conteúdo e fronteiras
 
-- [Navegação e Acessos](public-home-navigation-access-and-footer-architecture.md)
-- [Header × Hero × CTAs](public-home-header-hero-cta-hierarchy.md)
-- [Scroll e Mobile](public-home-persistent-header-scroll-and-mobile-behavior.md)
-- [Sistema de Conteúdo, Prova, Interação e Visual](public-home-content-proof-interaction-visual-system.md)
-- [Home × Marketing/GTM](public-home-architecture-vs-marketing-gtm-boundary.md)
 - [Supply Editorial do Media](public-home-person-media-editorial-supply-reconciliation.md)
 
 ### Auditoria e evidência
 
-- [Benchmark e diferenciação](public-home-benchmark-and-differentiation-evidence.md)
-- [Comparativo de Hero](public-home-guivos-vs-global-hero-comparative.md)
 
 Os documentos listados acima permanecem no corpus apenas enquanto exercem função corrente de aprofundamento, contrato ou evidência. Qualquer remoção exige absorção integral comprovada e ausência de dependência vigente.
 

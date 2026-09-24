@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
 title: Organizações e Coletivos — Autorização de Design High-Fidelity
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-22
 normative: true
 maturity: authenticated_high_fidelity_design_authorized_pre_execution
 depends_on:
@@ -24,7 +24,7 @@ related:
 
 ## Decisão
 
-A elegibilidade high-fidelity de Organização e Coletivo está `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0`.
+A elegibilidade high-fidelity de Organização e Coletivo está `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1`.
 
 Este ato registra a decisão humana subsequente:
 

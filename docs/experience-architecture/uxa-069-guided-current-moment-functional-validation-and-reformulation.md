@@ -2,13 +2,12 @@
 id: UXA-069
 title: Validação Funcional e Reformulação da Expressão Guiada do Momento Atual por Texto e Voz
 status: active
-version: 0.1.0
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-04
+last_updated: 2026-09-21
 parent: UXA-068
 depends_on:
   - UXA-001
-  - UXA-003-A1
   - UXA-009
   - UXA-011
   - UXA-011-A1
@@ -26,9 +25,11 @@ normative: false
 
 # Validação Funcional e Reformulação da Expressão Guiada do Momento Atual por Texto e Voz
 
+> **F-016-A — proveniência sem baseline visual.** A antiga materialização `UXA-068` foi removida do corpus vigente. O vínculo `parent: UXA-068` preserva somente proveniência histórica; os antigos estados móveis, SVGs, composição e contagens de materialização não constituem entrada corrente de Design/IA. A responsabilidade funcional vigente é consumida por `GKR-SURF-PER-004`, pela Jornada da Pessoa e pelos registries correntes.
+
 ## 1. Finalidade
 
-Este documento valida funcionalmente os oito estados móveis materializados pela UXA-068 e registra as reformulações necessárias para que a Pessoa possa expressar seu Momento Atual por texto ou voz com finalidade compreensível, ajuda proporcional, efeitos conhecidos e revisão anterior ao uso material.
+Este documento preserva as decisões funcionais extraídas dos oito estados móveis historicamente materializados pela UXA-068 e governa como a Pessoa pode expressar seu Momento Atual por texto ou voz com finalidade compreensível, ajuda proporcional, efeitos conhecidos e revisão anterior ao uso material.
 
 A pergunta de validação é:
 
@@ -36,9 +37,9 @@ A pergunta de validação é:
 
 ## 2. Resultado
 
-> **A família é funcionalmente válida após reformulação.**
+> **A família funcional permanece válida após reformulação.**
 
-Os oito estados permanecem suficientes como referência de baixa fidelidade. Nenhum novo estado gráfico foi criado.
+As decisões funcionais extraídas da antiga materialização permanecem vigentes como contrato textual. Os oito estados históricos não constituem baseline visual, pacote low-fidelity corrente nem requisito de composição para Design/IA.
 
 A validação não aprova modelo de IA, algoritmo adaptativo, gravação, transcrição, armazenamento, textos jurídicos, protocolo clínico, protótipo, teste com pessoas ou Engenharia de Produto.
 
@@ -284,9 +285,9 @@ escolha de modalidade
 → pergunta ou separação, somente quando materialmente útil
 → síntese temporária e revisável
 → decisão sobre usar somente origens ou incluir síntese derivada
-→ inventário da UXA-034
+→ inventário governado por UXA-023/035 e GKR-SURF-PER-005
 → autorização específica para preparar compreensão inicial
-→ processamento visível da UXA-036
+→ processamento governado por UXA-023/037 e GKR-SURF-PER-006
 → compreensão inicial revisável
 ```
 
@@ -315,16 +316,16 @@ Após reformulação, a família demonstra que:
 - persistência e personalização permanecem bloqueadas até gates posteriores;
 - compartilhar pouco não gera culpa ou bloqueio.
 
-## 15. Cobertura validada
+## 15. Cobertura funcional corrente
 
-| Família da jornada pessoal | Materializados | Validados | Pendentes |
-|---|---:|---:|---:|
-| Início protegido geral — UXA-034 | 4 | 4 | 0 |
-| Compreensão inicial — UXA-036 | 5 | 5 | 0 |
-| Expressão Guiada do Momento Atual — UXA-068 e UXA-069 | 8 | 8 | 0 |
-| **Subtotal relacionado** | **17** | **17** | **0** |
+| Responsabilidade | Autoridade funcional corrente | Estado |
+|---|---|---|
+| escolha de modalidade | `PER-003` + `UXA-020/023/035` | contrato funcional corrente |
+| expressão guiada por texto ou voz | `PER-004` + `UXA-069` | contrato funcional corrente |
+| inventário e revisão anterior ao processamento | `PER-005` + `UXA-023/035` | contrato funcional corrente |
+| processamento e compreensão inicial | `PER-006/007` + `UXA-023/037/097` | contratos funcionais correntes |
 
-As contagens permanecem separadas de Coletivos e Opportunity Boost.
+As antigas contagens de estados materializados pertencem à proveniência do Git e não governam a cobertura atual nem a quantidade futura de telas, estados, componentes ou breakpoints.
 
 ## 16. Proteções preservadas
 

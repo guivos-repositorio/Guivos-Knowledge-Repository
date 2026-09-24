@@ -2,13 +2,12 @@
 id: UXA-057
 title: Contrato Funcional de Avaliação e Reputação
 status: active
-version: 0.1.0
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-03
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-001
-  - UXA-003
   - UXA-004
   - UXA-009
   - UXA-011
@@ -767,8 +766,16 @@ Este contrato não:
 - inicia Engenharia de Produto;
 - altera a cobertura dos 46 wireframes do Opportunity Boost.
 
-## 40. Próxima etapa recomendada
+## 40. Continuidade corrente
 
-Após integração e nova autorização, a próxima etapa recomendada será a **UXA-058 — Interações, Recomendações e Conexões**.
+A UXA-058 já foi definida e integra o corpus corrente. Portanto, esta seção não cria uma sequência futura automática.
 
-Somente após os contratos UXA-056, UXA-057 e UXA-058 deverão ser organizados os pacotes de wireframes para perfil público, participação, `Meus Coletivos`, avaliações, comunicação e gestão.
+A lacuna vigente deste contrato é a materialização/validação específica de **avaliação e reputação** onde o Surface Registry ainda não comprova fechamento.
+
+Para continuidade, consultar:
+
+- `GKR-JOURNEY-SURFACE-REGISTRY-001`;
+- `GKR-JOURNEY-GAPS-001`;
+- `UXA-058` para interações, recomendações e conexões.
+
+Nenhum wireframe, protótipo, teste ou desenvolvimento é iniciado por este contrato.

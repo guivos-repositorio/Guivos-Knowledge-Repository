@@ -2,9 +2,9 @@
 id: UXA-001
 title: Fundação da Arquitetura da Experiência da Guivos
 status: active
-version: 0.2.0
+version: 0.2.2
 owner: Guivos Experience Architecture
-last_updated: 2026-07-26
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - PAS-001
@@ -252,14 +252,14 @@ A ordem representa dependência funcional, não cronologia obrigatória de desen
 | HOME anterior à experiência recorrente | definido pela UXA-020 |
 | início voluntário e exploração geral | definido pela UXA-020 |
 | personalização condicionada à compreensão | definido pela UXA-011-A1 e UXA-020 |
-| navegação global recorrente | proposta e preservada |
+| navegação global recorrente | definida nas jornadas/registries correntes |
 | recorrência não compulsiva | definido |
 | Tela Hoje como hipótese central recorrente | reformulada e validada funcionalmente |
-| mapa de telas detalhado | UXA-003 |
+| catálogo corrente de responsabilidades visuais | GKR-JOURNEY-SCREEN-CATALOG-001 |
 | fluxos de oportunidades, organizações e coletivos | UXA-004 |
-| wireframes | programa ativo; HOME textual e demais artefatos estruturais |
-| validação com participantes | não iniciada |
-| design visual e implementação | não iniciados |
+| wireframes | low-fidelity principal O/C entregue e validado; produtores históricos absorvidos onde governado; sem baseline visual global obrigatório |
+| validação com participantes | não comprovada como concluída pelo corpus corrente |
+| design visual e implementação | Homes públicas prontas para Design; O/C high-fidelity autorizado e não iniciado; implementação permanece gate separado e não liberado |
 
 ## 12. Limites
 

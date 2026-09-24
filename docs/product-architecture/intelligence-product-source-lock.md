@@ -2,9 +2,9 @@
 id: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 title: Source Lock do Produto — Guivos Intelligence
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Product Architecture
-last_updated: 2026-09-19
+last_updated: 2026-09-21
 parent: GPA-006
 depends_on:
   - GPA-006
@@ -57,32 +57,30 @@ Regra:
 
 > **O Source Lock congela a autoridade do produto que a Home poderá traduzir. Ele não escreve a Home antecipadamente.**
 
-## 2. Checkpoint congelado
+## 2. Estado corrente da autoridade de produto
 
 ```text
 PRODUTO
 Guivos Intelligence
 
-ORIGIN PHASE
-Source Lock do Produto — pré-Home
-→ HISTORICAL PROVENANCE
+STATE
+→ ACTIVE / NORMATIVE
+
+SOURCE OF TRUTH
+→ CURRENT MAIN
 
 CURRENT HOME STATE
-DOCUMENTO MESTRE = EXISTS
-HOME SOURCE LOCK = EXISTS / ACTIVE
-DESIGN HANDOFF = EXISTS / ACTIVE
-EXTERNAL DESIGN RELEASE = GRANTED
-PRODUCT ENGINEERING = NOT RELEASED
-
-BASE CANÔNICA CONGELADA
-main @ 67557b1c1503d81a716a1b44d7b1a4ae06ed5646
-→ HISTORICAL ORIGIN BASE
+→ DOCUMENTO MESTRE = EXISTS / ACTIVE
+→ HOME SOURCE LOCK = EXISTS / ACTIVE
+→ DESIGN HANDOFF = EXISTS / ACTIVE
+→ EXTERNAL DESIGN RELEASE = GRANTED
+→ PRODUCT ENGINEERING = NOT RELEASED
 
 AUTORIDADE SUPERIOR DE PRODUTO
 GPA-006 v2.0.1
 
 INTELLIGENCE ARCHITECTURE
-GIA-000 v1.5.0
+GIA-000 v1.7.0
 
 KNOWLEDGE MODEL
 GAI-001 v1.1.0
@@ -92,6 +90,10 @@ GAI-002 v1.0.0
 
 GRAPH REFERENCE
 GEA-GRAPH-REFERENCE-001 v0.1.2
+
+HISTORICAL ORIGIN BASE
+→ GIT PROVENANCE ONLY
+→ NOT OPERATIONAL INPUT
 ```
 
 O objetivo do lock é preservar uma base única, coerente e auditável de autoridade de produto para a Home vigente, sem reabrir a arquitetura do produto nem competir com as autoridades posteriores de Home e Design.
@@ -165,7 +167,7 @@ As fontes abaixo **não devem ser despejadas automaticamente na construção da 
 
 ### 5.1 Intelligence Architecture
 
-`GIA-000 v1.5.0`
+`GIA-000 v1.7.0`
 
 Uso permitido:
 

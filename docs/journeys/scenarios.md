@@ -2,88 +2,253 @@
 id: GKR-JOURNEY-SCENARIOS-001
 title: Cenários Integrados de Jornada
 status: active
-version: 0.9.0
+version: 1.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-09-22
 related:
-  - UXA-070
-  - UXA-090
-  - UXA-092
-  - UXA-094
-  - UXA-096
+  - GKR-JOURNEY-PERSON-001
+  - GKR-JOURNEY-COLLECTIVE-001
+  - GKR-JOURNEY-ORGANIZATION-001
+  - GKR-JOURNEY-BUSINESS-001
+  - GKR-JOURNEY-SURFACE-REGISTRY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-JOURNEY-GAPS-001
+  - GKR-UX-D5-C4B-001
 normative: false
 ---
 
 # Cenários Integrados de Jornada
 
-## 1. Regra de evidência
+## 1. Finalidade
 
-Cada cenário distingue nós materializados, nós validados, transições examinadas e ponto de interrupção por lacuna. Uma narrativa compreensível não equivale a fluxo implementado.
+Esta vista resume cenários correntes de continuidade entre participantes, superfícies e fronteiras.
 
-## 2. Cenários vigentes
+Ela não reconstrói a cronologia das UXAs, não substitui os registries e não converte validação documental em implementação técnica.
 
-### 2.1 Pessoa inicia sua jornada protegida
+```text
+SCENARIO VIEW
+→ CURRENT SYNTHESIS
 
-As superfícies locais possuem evidência, mas a continuidade completa até Tela Hoje permanece não validada como conjunto.
+SURFACE REGISTRY
+→ CURRENT STATES / RESPONSIBILITIES
 
-### 2.2 Pessoa encontra, solicita e recebe resultado de participação
+TRANSITION REGISTRY
+→ CURRENT TRANSITION MATURITY
 
-| Campo | Registro |
-|---|---|
-| nós materializados | explorar, busca, Perfil Público, revisão, PER-105, COL-003, PER-106, PER-107 e PER-108 |
-| nós com validação vigente | todos os nós do trecho acima nos gates correspondentes; PER-107/PER-108 por UXA-096 |
-| handoffs integralmente validados | TRN-105, 106, 107, 108, 109, 110, 111 e 112 |
-| interrupção por lacuna | áreas internas especializadas e demais continuidades, não TRN-111 |
-| conclusão permitida | o trecho governado está validado até o Início do Participante |
-| conclusão proibida | declarar toda a jornada interna completa validada ou implementada |
+HISTORICAL UXA SEQUENCE
+→ GIT / PROVENANCE
+```
 
-### 2.3 Pessoa recebe aprovação e encontra o vínculo em Meus Coletivos
+## 2. Pessoa — entrada, compreensão e Hoje
 
-A sequência aprovação → resultado em PER-105 → vínculo formado → navegação opcional → PER-106 permanece integralmente validada por `TRN-108`.
+A continuidade corrente é:
 
-### 2.4 Pessoa abre a Central de Atualizações
+```text
+HOME PÚBLICA
+→ ENTRADA PROTEGIDA
+→ EXPRESSÃO GUIADA
+→ COMPREENSÃO INICIAL
+→ HOJE
+```
 
-`PER-106 → Ver atualizações → PER-107` permanece integralmente validada em `TRN-110`. A Central corrente foi revalidada pela UXA-096 sem alterar esse contrato.
+As transições iniciais anteriores a `PER-007` preservam a maturidade declarada no Transition Registry e não devem ser promovidas por inferência.
 
-### 2.5 Pessoa abre o Início do Participante
+A passagem:
 
-| Campo | Registro |
-|---|---|
-| finalidade | entrar no contexto interno do mesmo Coletivo sem criar obrigação ou autoridade |
-| origem | `PER-107` corrente, revalidada por UXA-096 |
-| gatilho | `Abrir início do Coletivo` |
-| destino | `PER-108 — Início do Participante`, validado por UXA-096 |
-| transição | `TRN-111` **integralmente validada** |
-| entrada | vínculo atual e permissão são revalidados; histórico não concede acesso |
-| efeito | não altera leitura, vínculo, papel, disponibilidade, presença ou autoridade |
-| conteúdo | propósito, vínculo, momento, ação compartilhada, consulta, atalhos e autonomia |
-| separação | Início sintetiza; Central e canais especializados permanecem superfícies próprias |
-| concorrência | estado canônico mais recente prevalece; permissão antiga não é preservada |
-| retorno | neutro; não marca novos itens como lidos nem desfaz leitura explícita anterior |
-| idempotência | abrir, voltar, recarregar ou repetir não duplica efeito lógico |
+```text
+PER-007 — COMPREENSÃO INICIAL
+→ GKR-TRN-007
+→ PER-008 — HOJE
+```
 
-### 2.6 Coletivo solicita informação adicional
+está **integralmente validada no limite documental**.
 
-`TRN-106` e `TRN-107` permanecem integralmente validadas por UXA-090; a Pessoa pode responder, não informar, contestar ou cancelar conforme estado.
+Entrar em Hoje não cria avanço humano, prioridade, personalização, consentimento ou Próximo Passo por si só.
 
-### 2.7 Organização e Coletivo estabelecem relação
+## 3. Pessoa — direção, movimento e evolução
 
-O contrato bilateral existe, mas não há fluxo de interface bilateral específico materializado como conjunto.
+No estado recorrente de Hoje:
 
-### 2.8 Organização publica oportunidade e Pessoa acessa
+```text
+PER-008 — HOJE
+├── GKR-TRN-008 / 009 ↔ PER-010 — MEUS OBJETIVOS
+├── GKR-TRN-010 / 011 ↔ PER-011 — MEUS PRÓXIMOS PASSOS
+└── GKR-TRN-012 / 013 ↔ PER-012 — MINHA EVOLUÇÃO
+```
 
-Cadastro, descoberta e detalhe existem em pacotes distintos; publicação → consumo e efeito externo permanecem incompletos.
+`GKR-TRN-008..013` estão integralmente validadas no limite documental.
 
-### 2.9 Sobreposição comercial identificada
+Abrir ou retornar dessas responsabilidades não cria, confirma, conclui ou altera automaticamente objetivo, passo, prioridade ou evolução.
 
-A camada comercial permanece separada da autoridade orgânica; dez estados residuais UXA-055 seguem sem validação específica.
+## 4. Pessoa e Coletivo — descoberta, solicitação e participação
 
-## 3. Critério de completude
+A continuidade governada inclui:
 
-Um cenário só poderá ser marcado como completo quando todos os seus nós, transições, autoridades, dados, retornos, exceções e saídas estiverem documentados e funcionalmente validados como conjunto.
+```text
+DESCOBERTA
+→ PERFIL PÚBLICO
+→ REVISÃO
+→ SOLICITAÇÃO
+→ ANÁLISE DO RESPONSÁVEL
+→ RESULTADO
+→ MEUS COLETIVOS
+→ ATUALIZAÇÕES
+→ INÍCIO DO PARTICIPANTE
+```
 
-## 4. Estado vigente
+Estado corrente relevante:
 
-O documento permanece `active` como síntese. A UXA-096 fecha o cenário específico `PER-107 → PER-108`, mas não promove a jornada interna completa nem as áreas especializadas.
+- `GKR-TRN-102..104` permanecem parciais; o contrato funcional existe, mas esses handoffs ainda não foram validados ponta a ponta como conjunto;
+- `GKR-TRN-105..112` estão integralmente validadas conforme o Transition Registry.
 
-**UXA-097 não foi iniciada.**
+Aprovação, vínculo, leitura, presença e autoridade permanecem conceitos separados. Histórico não preserva acesso quando vínculo ou permissão deixam de ser válidos.
+
+## 5. Organização → oportunidade → descoberta → detalhe
+
+A continuidade corrente é:
+
+```text
+ORG-003 — CADASTRO / PUBLICAÇÃO
+→ GKR-TRN-203
+→ PER-201 — MAPA
+↔ GKR-TRN-210
+→ PER-202 — LISTA
+
+PER-201
+→ GKR-TRN-204
+→ PER-203 — DETALHE
+
+PER-202
+→ GKR-TRN-211
+→ PER-203 — DETALHE
+```
+
+`GKR-TRN-203`, `204`, `210` e `211` estão **integralmente validadas**.
+
+Ativação gera elegibilidade à descoberta; não garante distribuição, alcance, posição, recomendação ou resultado.
+
+Mapa e Lista representam a mesma consulta funcional, preservando contexto aplicável.
+
+## 6. Detalhe → fronteira externa
+
+A saída consciente é:
+
+```text
+PER-203 — DETALHE
+→ REVISÃO CONSCIENTE
+→ GKR-TRN-205
+→ BND-001 — FRONTEIRA EXTERNA
+→ PROCESSO DO TERCEIRO
+```
+
+`GKR-TRN-205` está **integralmente validada até a fronteira de autoridade da Guivos**.
+
+A Guivos governa:
+
+- informação suficiente antes da saída;
+- identificação de destino e responsável;
+- minimização de dados;
+- revalidação de estado;
+- cancelamento;
+- retorno;
+- idempotência no limite sob sua autoridade.
+
+O processo e o resultado posteriores pertencem ao terceiro e não são validados pela Guivos.
+
+## 7. Organização ↔ Coletivo
+
+O contrato bilateral existe, mas as transições `GKR-TRN-206..209` preservam a maturidade registrada no Transition Registry.
+
+As superfícies bilaterais e a operação ponta a ponta não devem ser presumidas como completas apenas porque os atores e contratos funcionais existem.
+
+## 8. Ads / Opportunity Boost
+
+Os estados residuais de Ads / Opportunity Boost possuem validação funcional corrente. Os IDs `COM-*` associados a esse recorte são legado de identificação e não representam Guivos Business.
+
+Isso não fecha automaticamente a integração orgânico–patrocinado.
+
+Estado corrente:
+
+```text
+GKR-TRN-304
+→ PARTIAL
+
+GKR-TRN-305
+→ PARTIAL
+
+GKR-TRN-306
+→ PARTIAL
+```
+
+Pagamento, patrocínio ou inventário comercial não alteram relevância orgânica, autoridade da Pessoa ou maturidade funcional das transições acima.
+
+## 9. Planos e contratação
+
+A arquitetura de Planos existe para **Pessoa, Coletivo, Organização e Business**, respeitando autoridades distintas.
+
+Pessoa, Coletivo e Organização possuem superfícies granulares de Planos neste Registry. Business possui continuidade própria governada por suas autoridades e não reutiliza IDs desses participantes.
+
+Abrir Planos ou um configurador:
+
+- não inicia cobrança;
+- não seleciona plano automaticamente;
+- não altera consentimento;
+- não altera relevância;
+- não concede capacidade antes da contratação válida.
+
+## 10. Business — composição e contratação
+
+O cenário corrente de Business é:
+
+```text
+HOME GUIVOS BUSINESS
+→ COMPREENSÃO DAS OFERTAS
+→ PLANOS / CAPACIDADE
+→ CONFIGURADOR
+→ COMPOSIÇÃO DO VALOR
+→ CONTRATAÇÃO ONLINE
+→ SELF-SERVICE / SUPORTE / GERENCIADO
+→ OPERAÇÃO
+```
+
+Esse cenário é governado por `GPA-004`, `GKR-PLANS-BUSINESS-001`, `GKR-JOURNEY-BUSINESS-001` e pelas autoridades correntes da Home Business.
+
+Ele não deve ser reconstruído a partir de:
+
+- `ORG-*`;
+- `COL-*`;
+- `COM-*`;
+- `BND-002`.
+
+A ausência de `GKR-SURF-*` ou `GKR-TRN-*` próprios de Business neste Registry não reduz o contexto. Significa apenas que a continuidade ainda é governada no nível funcional atual e não exige granularização artificial.
+
+## 11. Critério de completude
+
+Um cenário somente é considerado integralmente fechado quando suas transições, estados, autoridades, retornos, interrupções e fronteiras aplicáveis estiverem cobertos por autoridade corrente.
+
+```text
+LOCAL VALIDATION
+≠ END-TO-END IMPLEMENTATION
+
+DOCUMENTARY VALIDATION
+≠ TECHNICAL IMPLEMENTATION
+
+CURRENT SCENARIO
+→ USE REGISTRIES AS MATURITY AUTHORITY
+```
+
+## 12. Estado
+
+```text
+SCENARIOS
+→ CURRENT
+
+HISTORICAL UXA NARRATIVE
+→ REMOVED FROM CURRENT SYNTHESIS
+
+IMPLEMENTATION
+→ NOT INFERRED
+
+PRODUCT ENGINEERING
+→ SEPARATE / NOT RELEASED
+```

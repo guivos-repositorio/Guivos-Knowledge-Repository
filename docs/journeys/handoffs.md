@@ -2,21 +2,17 @@
 id: GKR-JOURNEY-HANDOFFS-001
 title: Handoffs entre Participantes
 status: active
-version: 0.11.0
+version: 1.0.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-21
 related:
-  - UXA-019
-  - UXA-056
-  - UXA-058
-  - UXA-059
-  - UXA-090
-  - UXA-092
-  - UXA-094
-  - UXA-096
-  - UXA-097
-  - GKR-UX-D5-C4B-001
+  - GKR-JOURNEY-PERSON-001
+  - GKR-JOURNEY-COLLECTIVE-001
+  - GKR-JOURNEY-ORGANIZATION-001
+  - GKR-JOURNEY-BUSINESS-001
+  - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
 normative: false
 ---
 
@@ -24,57 +20,133 @@ normative: false
 
 ## 1. Finalidade
 
-Esta vista identifica pontos em que a próxima decisão ou contexto passa para outra superfície ou autoridade legítima. Nenhum handoff é considerado validado apenas porque as superfícies existem.
+Esta vista resume transferências correntes de contexto, decisão ou autoridade entre participantes e superfícies.
 
-## 2. Matriz governada de Coletivos
+A maturidade oficial de cada transição pertence ao `GKR-JOURNEY-TRANSITION-REGISTRY-001`. Esta página não mantém a cronologia de validações UXA como fonte operacional.
 
-| ID | Origem | Evento | Destino | Evidência | Estado |
-|---|---|---|---|---|---|
-| TRN-104 | PER-104 | envia solicitação | PER-105 | UXA-065/067 | parcial |
-| TRN-105 | PER-105 | solicitação disponível para análise | COL-003 | UXA-090 | **integralmente validada** |
-| TRN-106 | COL-003 | pede informação adicional | PER-105 | UXA-090 | **integralmente validada** |
-| TRN-107 | PER-105 | envia informação adicional | COL-003 | UXA-090 | **integralmente validada** |
-| TRN-108 | COL-003 | aprova, forma vínculo e apresenta resultado | PER-106 via PER-105 | UXA-092 | **integralmente validada** |
-| TRN-109 | COL-003 | recusa solicitação | PER-105 | UXA-090 | **integralmente validada** |
-| TRN-110 | PER-106 | escolhe `Ver atualizações` sem alterar vínculo/leitura | PER-107 | UXA-094; PER-107 corrente revalidado UXA-096 | **integralmente validada** |
-| TRN-111 | PER-107 | escolhe `Abrir início do Coletivo` com vínculo atual elegível | PER-108 | **UXA-095/096** | **integralmente validada** |
-| TRN-112 | COL-002 | acessa gestão de solicitações | COL-003 | UXA-090 | **integralmente validada** |
+## 2. Pessoa → Coletivo → Pessoa
 
-## 3. Contrato preservado de TRN-110
+| Transição | Origem → destino | Papel do handoff | Estado corrente |
+|---|---|---|---|
+| `GKR-TRN-104` | PER-104 → PER-105 | enviar solicitação autorizada | **parcial** |
+| `GKR-TRN-105` | PER-105 → COL-003 | disponibilizar a mesma solicitação ao responsável | **integralmente validada** |
+| `GKR-TRN-106` | COL-003 → PER-105 | solicitar informação adicional sem aprovar | **integralmente validada** |
+| `GKR-TRN-107` | PER-105 → COL-003 | responder à mesma finalidade sem duplicação | **integralmente validada** |
+| `GKR-TRN-108` | COL-003 → PER-106 | aprovação forma vínculo e apresenta continuidade | **integralmente validada** |
+| `GKR-TRN-109` | COL-003 → PER-105 | recusar solicitação | **integralmente validada** |
+| `GKR-TRN-110` | PER-106 → PER-107 | abrir Atualizações sem alterar vínculo/leitura por navegação | **integralmente validada** |
+| `GKR-TRN-111` | PER-107 → PER-108 | abrir início do mesmo Coletivo com permissão revalidada | **integralmente validada** |
+| `GKR-TRN-112` | COL-002 → COL-003 | responsável abre gestão especializada de solicitações | **integralmente validada** |
 
-A UXA-096 revalida a Central corrente sem modificar o contrato validado da entrada em `PER-107`: vínculo/leitura permanecem inalterados, ações substantivas revalidam estado canônico e repetição não duplica efeito lógico.
+A continuidade não autoriza inferir que toda a Jornada de participação esteja integralmente fechada: `TRN-104` permanece parcial e outras transições do domínio preservam seus próprios estados.
 
-## 4. Contrato validado de TRN-111
+## 3. Proteções do handoff Pessoa ↔ Coletivo
 
-A UXA-096 fecha:
+Os handoffs validados preservam:
+
+- identidade lógica da solicitação e do vínculo;
+- autoridade proporcional ao papel;
+- revalidação de vínculo e permissão antes de ações substantivas;
+- separação entre leitura, presença, vínculo e autoridade;
+- interrupção segura;
+- retorno neutro;
+- idempotência;
+- prevalência do estado canônico mais recente.
 
 ```text
-PER-107
-→ “Abrir início do Coletivo”
-→ vínculo atual e permissão são revalidados
-→ histórico não concede nem preserva acesso
-→ vínculo, leitura, papel, presença e autoridade não mudam
-→ PER-108
+HISTÓRICO DE VÍNCULO
+≠ AUTORIZAÇÃO ATUAL
+
+NAVEGAR
+≠ APROVAR
+≠ PARTICIPAR
+≠ ALTERAR LEITURA
 ```
 
-Foram examinados:
+## 4. Organização → Pessoa — oportunidade e fronteira externa
 
-- identidade do Coletivo e do vínculo lógico;
-- estado canônico atual;
-- perda de permissão, pausa, saída e remoção;
-- retorno neutro à Central;
-- leitura separada do efeito substantivo;
-- ações internas revalidadas antes do efeito;
-- repetição e recarga idempotentes.
+A publicação e descoberta de oportunidade chegam ao Detalhe por transições correntes validadas.
 
-## 5. Estado vigente
+O handoff de autoridade relevante é:
 
-Oito handoffs do trecho de Coletivos estão integralmente validados: `TRN-105`, `106`, `107`, `108`, `109`, `110`, `111` e `112`.
+```text
+PER-203 — DETALHE
+→ REVISÃO CONSCIENTE
+→ GKR-TRN-205
+→ BND-001 — FRONTEIRA EXTERNA
+→ TERCEIRO
+```
 
-Validação integral documental não equivale a implementação técnica.
+`GKR-TRN-205` está **integralmente validada até a fronteira de autoridade Guivos**.
 
-## 6. Continuidade posterior
+Antes da transferência, a experiência deve preservar destino, responsável, dados/contexto envolvidos, limites, revalidação e possibilidade de cancelamento.
 
-A UXA-097 foi concluída e valida integralmente `TRN-007 — PER-007 → PER-008` no limite documental. A D5-C4B também promove `TRN-008..013` para integralmente validadas no limite documental.
+Depois da transferência consciente, o processo do terceiro não passa a ser autoridade ou responsabilidade da Guivos.
 
-O estado atual das demais transições deve ser lido no `GKR-JOURNEY-TRANSITION-REGISTRY-001`. Este documento permanece uma vista específica de handoffs entre participantes e não substitui o registro granular de transições.
+## 5. Organização ↔ Coletivo
+
+As relações institucionais possuem contratos funcionais, mas a continuidade bilateral ainda não está fechada como experiência ponta a ponta.
+
+Estado corrente das transições principais:
+
+| Transição | Origem → destino | Estado |
+|---|---|---|
+| `GKR-TRN-206` | ORG-004 → COL-008 | **contratada** |
+| `GKR-TRN-207` | COL-008 → ORG-005 | **contratada** |
+| `GKR-TRN-208` | ORG-005 → ORG-006 | **contratada** |
+| `GKR-TRN-209` | ORG-006 → ORG-006 | **contratada** |
+
+A existência da relação funcional não autoriza inventar superfícies bilaterais, estados operacionais ou efeitos ainda ausentes.
+
+## 6. Business e esta vista de handoffs
+
+Business é um dos quatro contextos correntes de experiência, mas **não é participante estrutural** e não deve receber um handoff fictício apenas para aparecer nesta vista.
+
+A continuidade Business corrente é de produto:
+
+```text
+HOME BUSINESS
+→ OFERTA(S)
+→ PLANOS / CAPACIDADE
+→ CONFIGURADOR
+→ CONTRATAÇÃO ONLINE
+→ IMPLEMENTAÇÃO / OPERAÇÃO
+```
+
+Ela é governada por `GKR-JOURNEY-BUSINESS-001` e pelas autoridades Business.
+
+Consequentemente:
+
+```text
+AUSÊNCIA DE HANDOFF BUSINESS NESTA PÁGINA
+≠ AUSÊNCIA DE CONTEXTO BUSINESS
+
+BUSINESS
+≠ PARTICIPANTE ESTRUTURAL
+
+BUSINESS
+≠ ORG-*
+≠ COM-*
+≠ BND-002
+```
+
+Novos handoffs Business somente deverão existir quando uma transferência real de contexto/autoridade exigir contrato granular próprio.
+
+## 7. Regra de leitura
+
+```text
+HANDOFF VIEW
+→ CURRENT SYNTHESIS
+
+TRANSITION REGISTRY
+→ MATURITY AUTHORITY
+
+SURFACE REGISTRY
+→ STATE / OWNERSHIP AUTHORITY
+
+HISTORICAL VALIDATION SEQUENCE
+→ GIT / PROVENANCE
+
+IMPLEMENTATION
+→ NOT INFERRED
+```

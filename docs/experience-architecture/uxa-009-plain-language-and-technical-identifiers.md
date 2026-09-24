@@ -1,10 +1,10 @@
 ---
 id: UXA-009
 title: Padrão de Linguagem Clara e Identificadores Técnicos
-status: draft
-version: 0.1.0
+status: active
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-26
+last_updated: 2026-09-21
 parent: UXA-000
 related:
   - UXA-001
@@ -32,17 +32,17 @@ nome completo em português
 
 Exemplo correto:
 
-> Wireframe de Baixa Fidelidade da Tela Hoje (identificador UXA-006).
+> Tela Hoje — responsabilidade recorrente da Pessoa (identificador GKR-SURF-PER-008).
 
 Exemplo a evitar:
 
-> UXA-006.
+> GKR-SURF-PER-008.
 
 Após a primeira menção, poderá ser utilizada uma forma curta compreensível, como `Tela Hoje`, `wireframe da oportunidade` ou `cadastro pela Organização`.
 
 ## 3. Identificador não é nome
 
-Códigos como `UXA-006`, `BUS-CAND-010`, `COD-017` e `M7.19.2` são identificadores internos. Eles servem para:
+Códigos como `GKR-SURF-PER-008`, `GKR-JOURNEY-SCREEN-CATALOG-001`, `GPA-004` e `GKR-TRN-205` são identificadores internos. Eles servem para:
 
 - localizar documentos;
 - preservar histórico;
@@ -59,7 +59,7 @@ Eles não deverão ser apresentados como se fossem o nome principal de uma tela,
 |---|---|
 | GKR | Repositório de Conhecimento da Guivos (Guivos Knowledge Repository — GKR) |
 | UXA-000 | Arquitetura da Experiência da Guivos (identificador UXA-000) |
-| UXA-006 | Wireframe de Baixa Fidelidade da Tela Hoje (identificador UXA-006) |
+| GKR-SURF-PER-008 | Tela Hoje — responsabilidade recorrente da Pessoa (identificador GKR-SURF-PER-008) |
 | COR | Registro de Candidatos a Resultados (Candidate Outcome Register — COR) |
 | CODR | Registro de Decisões sobre Candidatos a Resultados (Candidate Outcome Decision Register — CODR) |
 | COD-017 | Decisão sobre Candidato a Resultado número 17 (identificador COD-017) |
@@ -88,11 +88,11 @@ Títulos e novas entradas de menu deverão:
 
 Exemplo preferencial:
 
-> Wireframe da Tela Hoje — Baixa Fidelidade (UXA-006)
+> Tela Hoje — responsabilidade recorrente da Pessoa (GKR-SURF-PER-008)
 
 Exemplo a evitar:
 
-> UXA-006 — Hoje
+> GKR-SURF-PER-008 — Hoje
 
 A navegação histórica existente será normalizada progressivamente, sem reescrever ou desorganizar grandes blocos de referências em um único incremento.
 
@@ -124,10 +124,10 @@ Respostas, resumos executivos e apresentações deverão:
 Nesta frente, utilizar preferencialmente:
 
 - `Arquitetura da Experiência da Guivos`, em vez de apenas `UXA`;
-- `Programa Inicial de Wireframes de Baixa Fidelidade`, em vez de apenas `UXA-005`;
-- `Wireframe da Tela Hoje`, em vez de apenas `UXA-006`;
-- `Wireframe do Detalhe de Oportunidade`, em vez de apenas `UXA-007`;
-- `Wireframe do Cadastro de Oportunidade pela Organização`, em vez de apenas `UXA-008`;
+- `Jornadas Integradas`, em vez de apenas `GKR-JOURNEYS-001`;
+- `Catálogo Integrado de Telas`, em vez de apenas `GKR-JOURNEY-SCREEN-CATALOG-001`;
+- `Registro de Superfícies e Estados`, em vez de apenas `GKR-JOURNEY-SURFACE-REGISTRY-001`;
+- `Registro Granular de Transições`, em vez de apenas `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
 - `Padrão de Linguagem Clara e Identificadores Técnicos`, em vez de apenas `UXA-009`.
 
 ## 9. Significado de validade do preço

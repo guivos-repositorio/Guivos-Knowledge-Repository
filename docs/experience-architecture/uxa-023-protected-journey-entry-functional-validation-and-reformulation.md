@@ -2,9 +2,9 @@
 id: UXA-023
 title: Validação Funcional e Reformulação do Início Protegido da Jornada
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-26
+last_updated: 2026-09-21
 parent: UXA-020
 depends_on:
   - UXA-001
@@ -14,7 +14,6 @@ depends_on:
   - UXA-020
 related:
   - UXA-010
-  - UXA-021
   - PAS-001-CV-VIEW-001
   - PAS-001-OBJ-VIEW-001
   - PAS-001-PP-VIEW-001
@@ -593,16 +592,15 @@ Esta validação não:
 - inicia Engenharia de Produto ou desenvolvimento;
 - inicia a reaplicação dos testes dos Resultados Empresariais.
 
-## 25. Próximo ponto de decisão
+## 25. Continuidade corrente
 
-Depois da integração deste incremento e de nova autorização, os atos seguintes permanecem separados:
+Os antigos próximos atos desta validação foram executados ou absorvidos por autoridades posteriores e não constituem backlog corrente.
 
-1. criar o wireframe gráfico de baixa fidelidade do início protegido da jornada;
-2. criar a referência móvel da Página Inicial pública;
-3. detalhar estados especializados de texto, voz e arquivos;
-4. validar funcionalmente a revisão da compreensão inicial;
-5. validar a transição entre a compreensão confirmada e a Tela Hoje;
-6. selecionar estados alternativos e exceções para novos wireframes;
-7. retomar, de forma independente, a reaplicação dos quatro testes dos Resultados Empresariais.
+A continuidade vigente deve ser lida por:
 
-Nenhuma integração ou etapa posterior é iniciada automaticamente.
+- `UXA-097` para a ligação entre compreensão inicial confirmada e Tela Hoje;
+- `GKR-JOURNEY-SURFACE-REGISTRY-001`;
+- `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
+- autoridades correntes de `PER-002` e da Jornada da Pessoa.
+
+Estados especializados ainda não cobertos devem permanecer registrados como lacuna antes de qualquer nova materialização. Nenhum protótipo, implementação ou Engenharia de Produto é autorizado por este documento.

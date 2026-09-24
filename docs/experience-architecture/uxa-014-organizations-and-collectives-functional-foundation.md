@@ -2,20 +2,21 @@
 id: UXA-014
 title: Fundação Funcional das Experiências de Organizações e Coletivos
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-26
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-001
-  - UXA-003
   - UXA-004
   - UXA-011
   - UXA-011-A1
   - UXA-013
 related:
-  - UXA-015
-  - UXA-016
+  - UXA-019
+  - GKR-UX-ORGCOL-STATE-001
+  - GKR-UX-ORGCOL-UX-STATE-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
   - PAS-001
 normative: false
 ---

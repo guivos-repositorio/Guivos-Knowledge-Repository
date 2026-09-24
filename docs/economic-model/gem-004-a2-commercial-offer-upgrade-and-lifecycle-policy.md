@@ -2,9 +2,9 @@
 id: GEM-004-A2
 title: Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento
 status: active
-version: 0.2.0
+version: 0.2.1
 owner: Guivos Economic Model
-last_updated: 2026-08-08
+last_updated: 2026-09-23
 parent: GEM-004
 depends_on:
   - GEM-004-A1
@@ -50,7 +50,7 @@ A oferta não poderá ser introduzida como diagnóstico, urgência, condição d
 A oferta poderá aparecer:
 
 - na página pública de Planos e Preços;
-- em `Eu → Plano e cobrança`;
+- na superfície voluntária de Planos da Pessoa (`PER-301`), acessada a partir de contexto administrativo legítimo;
 - após o uso das duas correspondências personalizadas completas do Guivos Free;
 - quando a pessoa selecionar uma prévia de correspondência personalizada adicional;
 - ao solicitar filtros avançados;
@@ -62,7 +62,7 @@ A oferta poderá aparecer:
 
 A oferta poderá aparecer:
 
-- em `Coletivo → Plano e cobrança`;
+- na superfície de Planos do Coletivo (`COL-301`), quando acessada por autoridade e contexto legítimos;
 - ao atingir cota mensal de atividade ou oportunidade;
 - ao atingir limite de publicações simultaneamente ativas;
 - ao tentar criar publicação paga no Coletivo Livre;
@@ -75,7 +75,7 @@ A oferta poderá aparecer:
 
 A oferta poderá aparecer:
 
-- em `Organização → Plano e cobrança`;
+- na superfície de Planos da Organização (`ORG-301`), quando acessada por autoridade institucional válida;
 - ao atingir cota de novas oportunidades ou programas;
 - ao atingir limite de publicações ativas;
 - ao solicitar administradores, unidades ou Coletivos relacionados adicionais;

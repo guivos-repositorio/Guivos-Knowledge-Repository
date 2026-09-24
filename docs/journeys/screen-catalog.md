@@ -2,10 +2,14 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.39.0
+version: 0.42.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 related:
+  - GKR-JOURNEY-PERSON-001
+  - GKR-JOURNEY-COLLECTIVE-001
+  - GKR-JOURNEY-ORGANIZATION-001
+  - GKR-JOURNEY-BUSINESS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
@@ -20,6 +24,8 @@ normative: false
 ## 1. Função
 
 Este catálogo organiza as responsabilidades funcionais correntes que podem exigir expressão visual durante Design e prototipação.
+
+Os contextos de experiência tratados como eixos principais são **Pessoa, Coletivo, Organização e Business**. Ads / Opportunity Boost e fronteiras aparecem somente quando necessários como capacidades, integrações ou limites transversais; não formam um contexto "Comercial".
 
 ```text
 RESPONSIBILITY
@@ -41,7 +47,8 @@ O número final de telas, estados visuais e componentes pertence à solução de
 | Coletivo — responsável | visão geral, solicitações, participantes, comunicação e governança |
 | Organização | visão geral, oportunidades e relações institucionais |
 | Planos | comparação, contratação, gestão e recuperação nos participantes aplicáveis |
-| Comercial | Opportunity Boost e superfícies patrocinadas |
+| Ads / Opportunity Boost | superfícies patrocinadas, gestão publicitária e controles relacionados |
+| Business | Home, ofertas, Planos, configurador, contratação online e implementação/operação |
 | Fronteiras | transferência de autoridade para processos externos |
 
 ## 3. Autoridade granular
@@ -53,7 +60,8 @@ O inventário detalhado corrente está em:
 - detalhes de [Pessoa](surface-registry-person-details.md);
 - detalhes de [Coletivo](surface-registry-collective-details.md);
 - detalhes de [Organização](surface-registry-organization-details.md);
-- detalhes de [fronteiras comerciais](surface-registry-commercial-boundary-details.md).
+- detalhes de [Ads / Opportunity Boost e fronteiras documentais](surface-registry-ads-boundaries-details.md);
+- [Experiência Integrada do Guivos Business](business.md) para continuidade própria de Business, sem criação automática de novos IDs de superfície.
 
 ## 4. Cobertura visual
 

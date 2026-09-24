@@ -2,9 +2,9 @@
 id: GEM-000
 title: Guivos Economic Model
 status: active
-version: 1.3.0
+version: 1.3.1
 owner: Guivos
-last_updated: 2026-07-28
+last_updated: 2026-09-23
 related:
   - GEM-001
   - GEM-002
@@ -12,6 +12,7 @@ related:
   - GEM-004
   - GEM-004-A1
   - GEM-004-A2
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GEM-005
   - GEM-006
   - GEM-007
@@ -35,9 +36,9 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 ## Estado atual
 
-`Opportunity Boost candidate baseline documentarily defined — validation and calibration pending`.
+`Commercial plan baseline and Opportunity Boost candidate baseline documentarily defined — validation and calibration pending`.
 
-O domínio concluiu sua arquitetura documental inicial em GEM-001 a GEM-010. Reaberturas localizadas consolidaram planos, benefícios, limites e preços candidatos para Pessoas, Coletivos e Organizações e definiram o Opportunity Boost como mecanismo publicitário candidato.
+O domínio concluiu sua arquitetura documental inicial em GEM-001 a GEM-010. Reaberturas localizadas consolidaram planos, benefícios, limites e preços de referência para Pessoas, Coletivos e Organizações e, separadamente, para o produto especializado Guivos Business; também definiram o Opportunity Boost como mecanismo publicitário candidato.
 
 O estado vigente não aprova oferta pública, campanha real, cobrança, orçamento, projeção oficial, contabilização, valuation ou operação.
 
@@ -45,6 +46,7 @@ Autoridades principais:
 
 - [Revisão de Fechamento do Guivos Economic Model](gem-closure-review.md);
 - [Revisão da Baseline Comercial de Planos e Preços](gem-commercial-plans-baseline-review.md);
+- [Autoridade Conceitual de Taxonomia, Função e Leitura dos Planos](gem-004-plan-taxonomy-conceptual-authority.md);
 - [Catálogo Comercial Candidato de Planos, Benefícios e Preços](gem-004-a1-commercial-plans-pricing-catalog.md);
 - [Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento](gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md);
 - [Premissas de Precificação e Validação Comercial](gem-010-a1-pricing-assumptions-and-validation.md);
@@ -184,6 +186,7 @@ necessidade ou potencial
 
 ## Autoridades do GEM-004
 
+- [Autoridade Conceitual de Taxonomia, Função e Leitura dos Planos](gem-004-plan-taxonomy-conceptual-authority.md);
 - [Modelo Gratuito e Pago](gem-004-free-and-paid-model.md);
 - [Baseline de Valor Universal Gratuito](gem-004-universal-free-value-baseline.md);
 - [Taxonomia de Ampliações de Valor Pago](gem-004-paid-value-extension-taxonomy.md);

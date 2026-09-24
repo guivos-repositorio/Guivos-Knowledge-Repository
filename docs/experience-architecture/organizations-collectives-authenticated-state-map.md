@@ -2,11 +2,11 @@
 id: GKR-UX-ORGCOL-AUTH-STATE-MAP-001
 title: Organizações e Coletivos — Mapa de Estados da Experiência Autenticada
 status: active
-version: 1.1.0
+version: 1.1.3
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-22
 normative: false
-maturity: authenticated_state_map_defined_pre_priority_flows_wireframes
+maturity: authenticated_state_map_defined
 depends_on:
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-IA-001
@@ -351,7 +351,7 @@ A ausência de ID dedicado não autoriza fundir este domínio com configuração
 
 ## 6. Organização — capacidade comercial especializada
 
-`GKR-SURF-ORG-301..304` e `GKR-SURF-BND-002` preservam suas semânticas especializadas sob `UXA-100/A2/A3/A4`, `GEM-004-PLAN-TAXONOMY-AUTHORITY-001` e `GKR-JOURNEY-TRANSITION-REGISTRY-001`.
+`GKR-SURF-ORG-301..304` e `GKR-SURF-BND-002` preservam suas semânticas especializadas sob `GKR-PLANS-ORGANIZATION-001`, `GEM-004-PLAN-TAXONOMY-AUTHORITY-001` e `GKR-JOURNEY-TRANSITION-REGISTRY-001`. O antigo pacote `UXA-100 + A1..A4` permanece somente como proveniência no Git e não é autoridade corrente.
 
 Esta frente apenas preserva que:
 
@@ -645,20 +645,23 @@ MAPA DE ESTADOS
 → DEFINED / CANONICAL DOCUMENTARY
 
 FLUXOS PRIORITÁRIOS
-→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.1
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 NAVIGATION MATERIALIZATION
-→ NOT MATERIALIZED
+→ ACTIVE / CANONICAL
 
-WIREFRAMES
-→ NOT STARTED
+AUTHENTICATED WIREFRAMES
+→ DELIVERY v0.1.0 / VALIDATION v1.0.0 PASS
 
-DESIGN / UI / PROTÓTIPO
-→ NOT AUTHORIZED
+HIGH-FIDELITY DESIGN
+→ AUTHORIZED / NOT_STARTED
+
+PROTOTYPE
+→ NOT_AUTHORIZED
 
 PRODUCT ENGINEERING
-→ NOT RELEASED
+→ NOT_RELEASED
 ```
 
 A promoção desta autoridade não altera por inferência a maturidade individual dos `GKR-SURF-*` nem dos `GKR-TRN-*`.
@@ -679,9 +682,28 @@ O ato governado posterior de Priority Flows reconciliou:
 - proteção e não retaliação;
 - retorno e interrupção.
 
-O próximo gate corrente após essa definição posterior é **Navigation Materialization**, ainda não autorizado.
+No momento dessa definição, o próximo gate era **Navigation Materialization**, ainda não autorizado. Esse estado é preservado como proveniência do ato original. Posteriormente, Navigation Materialization foi promovida, o low-fidelity foi autorizado/entregue/validado com `PASS`, e high-fidelity recebeu autorização humana.
 
-Até autorização específica posterior:
+Estado downstream corrente:
+
+```text
+NAVIGATION MATERIALIZATION
+→ ACTIVE / CANONICAL
+
+AUTHENTICATED WIREFRAMES
+→ DELIVERY v0.1.0 / VALIDATION v1.0.0 PASS
+
+HIGH-FIDELITY DESIGN
+→ AUTHORIZED / NOT_STARTED
+
+PROTOTYPE
+→ NOT_AUTHORIZED
+
+PRODUCT ENGINEERING
+→ NOT_RELEASED
+```
+
+Estado preservado no ato de promoção original:
 
 ```text
 PRIORITY FLOWS

@@ -2,14 +2,13 @@
 id: UXA-004
 title: Oportunidades, Organizações, Coletivos e Mapa
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Guivos Experience Architecture
-last_updated: 2026-07-25
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-001
   - UXA-002
-  - UXA-003
   - PAS-001-OA-FOUNDATION-001
   - PAS-001-OA-LIFECYCLE-001
   - PAS-001-OA-VIEW-001

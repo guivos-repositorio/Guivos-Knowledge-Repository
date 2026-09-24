@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-UX-STATE-001
 title: Organizações e Coletivos — Estado Funcional de Experiência e Handoff para Design
 status: active
-version: 1.11.0
+version: 1.12.4
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-22
 normative: false
 related:
   - GKR-UX-ORGCOL-STATE-001
@@ -19,6 +19,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - UXA-014
   - UXA-019
 ---
@@ -29,11 +30,11 @@ related:
 
 O estado vigente é:
 
-> **A primeira entrega low-fidelity de Organização e Coletivo foi executada e validada com `PASS`. A elegibilidade high-fidelity posterior também concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.0`; a autorização high-fidelity permanece `NOT_GRANTED`.**
+> **A primeira entrega low-fidelity de Organização e Coletivo foi executada e validada com `PASS`. A elegibilidade high-fidelity posterior também concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1`; a autorização high-fidelity foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.1`, e a execução permanece `NOT_STARTED`.**
 
 A entrega corrente materializa em baixa fidelidade a visão geral/início de Organização e Coletivo, a hierarquia funcional, variantes de atenção, autoridade, proteção, troca de contexto e indisponibilidade. Permanecem deliberadamente não definidos: UI final, componentes finais, visual high-fidelity, protótipo navegável, implementação e testes de usabilidade.
 
-Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados, Priority Flows e Navigation Materialization autenticada já foram definidos documentalmente em instrumentos próprios. A Navigation Materialization canônica está em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`. Posteriormente, os wireframes autenticados low-fidelity foram autorizados, entregues em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. Isso **não equivale** a UI final, high-fidelity executado, protótipo ou implementação.
+Atores, papéis, autoridades, jobs prioritários, Arquitetura da Informação, mapa lógico de superfícies, mapa funcional de estados, Priority Flows e Navigation Materialization autenticada já foram definidos documentalmente em instrumentos próprios. A Navigation Materialization canônica está em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`. Posteriormente, os wireframes autenticados low-fidelity foram autorizados, entregues em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e validados com `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A autorização high-fidelity posterior não equivale a execução. UI final, protótipo e implementação continuam não materializados por esta autoridade.
 
 ## 2. O que já existe e governa a continuidade da UX
 
@@ -53,29 +54,22 @@ Já existem insumos e autoridades documentais relevantes:
 - Documento Mestre da Home pública de Organizações e Coletivos;
 - `RP-002` — Research sobre supply, papéis, rede, valor e modelo econômico.
 
-Esses materiais governam a continuidade da experiência. O pacote low-fidelity corrente é evidência visual funcional explícita; Jobs, IA, Surface Map, State Map, Priority Flows, Navigation Materialization e low-fidelity validado não autorizam inferir UI final, linguagem visual high-fidelity, protótipo ou implementação.
+Esses materiais governam a continuidade da experiência. O pacote low-fidelity corrente é evidência visual funcional explícita; Jobs, IA, Surface Map, State Map, Priority Flows, Navigation Materialization e low-fidelity validado não autorizam inferir UI final executada, linguagem visual final, protótipo ou implementação; a autorização high-fidelity existente libera somente uma execução posterior, ainda `NOT_STARTED`.
 
 ## 3. Correção dos registros anteriores
 
-Foram encontrados quatro documentos históricos que davam a entender que os wireframes já existiam e estavam validados:
-
-- `UXA-015` — Visão Geral da Organização;
-- `UXA-016` — Início do Coletivo;
-- `UXA-017` — validação da Visão Geral da Organização;
-- `UXA-018` — validação do Início do Coletivo.
-
-Esses registros foram produzidos prematuramente e **não representam mais o estado vigente**.
-
-A reconciliação atual estabelece:
+`UXA-015..018` são produtores históricos absorvidos e removidos do corpus corrente. Sua proveniência permanece no Git, sem autoridade visual ou funcional vigente.
 
 ```text
-UXA-015 → registro histórico superseded
-UXA-016 → registro histórico superseded
-UXA-017 → registro histórico superseded
-UXA-018 → registro histórico superseded
+UXA-015..018
+→ FUNCTION ABSORBED
+→ PHYSICAL PRODUCERS REMOVED
+→ GIT PRESERVES PROVENANCE
+→ NOT DESIGN INPUT
+→ NOT AI INPUT
 ```
 
-Os SVGs associados permanecem apenas como histórico técnico no repositório e não devem ser utilizados como especificação, referência aprovada, baseline de produto ou autoridade de design.
+Os SVGs associados também foram removidos fisicamente. Nenhum SVG histórico desses produtores permanece disponível como especificação, referência aprovada, baseline de produto ou autoridade de Design.
 
 ## 4. O que não pode ser inferido
 
@@ -138,7 +132,7 @@ A construção deverá continuar do estado documental vigente, e não dos SVGs h
 5. mapa funcional de estados — definido documentalmente em `GKR-UX-ORGCOL-AUTH-STATE-MAP-001`;
 6. Priority Flows — definidos documentalmente em `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001`;
 7. elegibilidade de Navigation Materialization — `PASS / ACTIVE / CANONICAL` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-ELIGIBILITY-001`;
-8. Navigation Materialization — `DEFINED / CANONICAL DOCUMENTARY` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.0`;
+8. Navigation Materialization — `DEFINED / CANONICAL DOCUMENTARY` em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`;
 9. construir wireframes de baixa fidelidade **somente mediante autorização humana separada**;
 10. validar funcionalmente os wireframes reais;
 11. reformular quando necessário;
@@ -171,7 +165,7 @@ Uma validação de wireframe exige um wireframe vigente como objeto.
 
 Portanto:
 
-> **a validação vigente low-fidelity de Organização e Coletivo é `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS`; isso não autoriza high-fidelity, protótipo ou implementação.**
+> **a validação vigente low-fidelity de Organização e Coletivo é `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0 = PASS`; isso não executa high-fidelity e não autoriza protótipo ou implementação.**
 
 A validação corrente foi executada contra a entrega v0.1.0 e as autoridades vigentes; qualquer reformulação futura exigirá validação correspondente.
 
@@ -199,7 +193,7 @@ São superfícies e problemas distintos.
 | fundamento funcional | existente | existente |
 | relações e limites | existente em conjunto | existente em conjunto |
 | Research de supply/valor | existente | existente |
-| jornada integrada | draft | draft |
+| jornada integrada | **active** | **active** |
 | atores, papéis, autoridades e jobs | **definidos documentalmente** | **definidos documentalmente** |
 | arquitetura de informação autenticada | **definida** | **definida** |
 | mapa lógico de superfícies autenticadas | **definido documentalmente** | **definido documentalmente** |
@@ -210,7 +204,7 @@ São superfícies e problemas distintos.
 | wireframe low-fidelity | **DELIVERY v0.1.0 + VALIDATION v1.0.0** | **DELIVERY v0.1.0 + VALIDATION v1.0.0** |
 | validação de wireframe | **PASS** | **PASS** |
 | high-fidelity eligibility | **PASS** | **PASS** |
-| high-fidelity design authorization | **NOT_GRANTED** | **NOT_GRANTED** |
+| high-fidelity design authorization | **GRANTED / EXECUTION NOT_STARTED** | **GRANTED / EXECUTION NOT_STARTED** |
 | UI | pendente | pendente |
 | protótipo | pendente | pendente |
 | testes de usabilidade | pendente | pendente |
@@ -298,25 +292,26 @@ Permanecem **históricos apenas**, sem autoridade atual:
 
 Esses elementos podem ser consultados no histórico como evidência de exploração, mas qualquer reutilização futura exigirá nova decisão contra as autoridades então vigentes.
 
-### 11.4 Fechamento de F-006
+### 11.4 Proveniência dos produtores absorvidos
 
-O conteúdo funcional material válido de `UXA-015..018` foi absorvido nas autoridades posteriores; dependências funcionais ativas foram reconciliadas; a remoção física governada foi autorizada e executada; as contagens e instrumentos afetados foram reconciliados.
+O conteúdo funcional ainda válido de `UXA-015..018` foi absorvido por autoridades posteriores; os produtores físicos e seus SVGs foram removidos.
 
 ```text
-F-006
-→ STRUCTURAL AUDIT COMPLETE
-→ ABSORPTION_APPLIED
-→ ACTIVE_FUNCTION_DEPENDENCIES_RECONCILED
-→ CLEANUP_ELIGIBILITY_PROVEN
-→ PHYSICAL_CLEANUP_APPLIED_6_OF_6
-→ SEMANTIC_827_SUCCESS
-→ MECHANICAL_1085_SUCCESS
-→ READ_ONLY_POST_DELETE_PROOF_SUCCESS
-→ RESOLVED
+CURRENT FUNCTIONAL AUTHORITY
+→ CURRENT O/C AUTHORITIES
+
+UXA-015..018 + ASSOCIATED SVGs
+→ REMOVED / HISTORICAL
+
+PROVENANCE
+→ GIT
+
+REINTRODUCTION AS BASELINE OR DESIGN REQUIREMENT
+→ PROHIBITED BY CURRENT AUTHORITY
 ```
 
-A proveniência permanece no histórico Git e em referências textuais explicitamente históricas. Nenhum desses IDs ou antigos ativos pode voltar a operar como baseline visual ou requisito de materialização.
+Nenhum desses IDs ou antigos ativos pode voltar a operar como baseline visual, requisito de materialização ou evidência de maturidade corrente.
 
 ## 12. Regra final
 
-> **O GKR define função, conteúdo, estados, regras, critérios, Priority Flows e Navigation Materialization documentais. O pacote low-fidelity Delivery v0.1.0 + Validation v1.0.0 é a referência visual corrente; a elegibilidade high-fidelity está `PASS`, mas high-fidelity Design, protótipo, layout final e implementação permanecem não autorizados. Artefatos históricos não podem antecipar nem restringir essa autoridade.**
+> **O GKR define função, conteúdo, estados, regras, critérios, Priority Flows e Navigation Materialization documentais. O pacote low-fidelity Delivery v0.1.0 + Validation v1.0.0 é a referência visual corrente; a elegibilidade high-fidelity está `PASS` e a autorização de Design high-fidelity está `GRANTED`, porém sua execução permanece `NOT_STARTED`; protótipo, layout final materializado e implementação continuam sujeitos a gates próprios. Artefatos históricos não podem antecipar nem restringir essa autoridade.**

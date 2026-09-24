@@ -17,65 +17,52 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 A leitura de estado continua subordinada ao [Registro do Estado Atual](project/current-state-register.md). Esta superfície preserva somente os marcadores exigidos de sincronização global:
 
 ```text
-GKR-STATE-001 3.49.4
-M7.88
-ÚLTIMA UXA FUNCIONAL NUMERADA → UXA-101
-PRÓXIMA UXA → UXA-102 / V5 → NOT_STARTED
-LOTE O → DOCUMENTARY AUDIT COMPLETED / F-002 RESOLVED
-LOTE P → FINAL COMPLETENESS AUDIT = PASS / COMPLETED
-AUDITORIA INTEGRAL → COMPLETED / PASS / 23 OF 23
-FINAL BASELINE → CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
-Q → FUNCTIONAL DEFINITION = PASS / CANONICALLY CONSOLIDATED
-Q MATERIALIZATION ELIGIBILITY → PASS / CANONICALLY CONSOLIDATED
-FIRST AUTHENTICATED RESPONSIBILITY → AUTHENTICATED CONTINUATION OF PER-002 — ENTRADA PROTEGIDA
-FIRST DISTINCT DOWNSTREAM SURFACE → PER-003 — ESCOLHA DE MODALIDADE
-DESIGN HANDOFF BOUNDARY → GKR-UX-PER002-MAT-ELIGIBILITY-001 / FROZEN
-PER-002 LOW-FIDELITY DESIGN AUTHORIZATION → GRANTED / GKR-UX-PER002-DESIGN-AUTH-001
-PER-002 DESIGN DELIVERY → EXECUTED / GKR-UX-PER002-DESIGN-DELIVERY-001 v0.1.0
-DESIGN DELIVERY COVERAGE → 4 PRIMARY FRAMES + 3 VARIANTS / 7 OF 7 AUTHORIZED AREAS
-FUNCTIONAL VALIDATION → PASS / GKR-UX-PER002-DESIGN-VALIDATION-001 v1.0.0
-CURRENT LOW-FIDELITY DESIGN REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
-HIGH-FIDELITY DESIGN ELIGIBILITY → PASS / GKR-UX-PER002-HIFI-ELIGIBILITY-001 v1.0.0
-HIGH-FIDELITY DESIGN AUTHORIZATION → GRANTED / GKR-UX-PER002-HIFI-AUTH-001 v1.0.0
-HIGH-FIDELITY DESIGN DELIVERY → EXECUTED / GKR-UX-PER002-HIFI-DELIVERY-001 v0.1.0
-HIGH-FIDELITY DESIGN VALIDATION → PASS / GKR-UX-PER002-HIFI-VALIDATION-001 v1.0.0
-CURRENT HIGH-FIDELITY DESIGN REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
-INTERACTIVE PROTOTYPE ELIGIBILITY → PASS / GKR-UX-PER002-PROTOTYPE-ELIGIBILITY-001 v1.0.0
-INTERACTIVE PROTOTYPE AUTHORIZATION → GRANTED / GKR-UX-PER002-PROTOTYPE-AUTH-001 v1.0.0
-INTERACTIVE PROTOTYPE EXECUTION → EXECUTED / GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v0.1.0
-ORIGINAL PROTOTYPE VALIDATION → HISTORICAL PRE-REVIEW EVIDENCE / GKR-UX-PER002-PROTOTYPE-VALIDATION-001 v1.0.1 / SUPERSEDED
-CODEX PROTOTYPE REVIEW → 2 P2 INTERACTION FINDINGS / REMEDIATED / THREADS RESOLVED
-POST-REVIEW PROTOTYPE REVALIDATION → PASS / GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v1.1.0 / 16 OF 16 / 0 OPEN MATERIAL OR BLOCKING FINDINGS
-CURRENT INTERACTIVE DESIGN REFERENCE → DELIVERY v0.1.0 + HISTORICAL VALIDATION v1.0.1 + REVALIDATION v1.1.0
-FINAL INTERACTIVE CONCLUSION → POST-REVIEW REVALIDATION PASS
-GIA-COG-001 → ACTIVE / NORMATIVE / CURRENT COGNITIVE REFERENCE ARCHITECTURE / v0.1.1
-O/C AUTHENTICATED SURFACE MAP → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
-O/C AUTHENTICATED STATE MAP → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
-O/C PRIORITY FLOWS → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
-O/C NAVIGATION MATERIALIZATION ELIGIBILITY → PASS / ACTIVE / CANONICAL / v1.0.0
-O/C NAVIGATION MATERIALIZATION → DEFINED / CANONICAL DOCUMENTARY / v1.0.0
-O/C PRODUCT MENU VISUAL → NOT DEFINED
-O/C LOW-FIDELITY WIREFRAME AUTHORIZATION → GRANTED / v1.0.0
-O/C LOW-FIDELITY WIREFRAME DELIVERY → EXECUTED / v0.1.0
-O/C LOW-FIDELITY FUNCTIONAL VALIDATION → PASS / v1.0.0
-O/C CURRENT LOW-FIDELITY REFERENCE → DELIVERY v0.1.0 + VALIDATION v1.0.0
-O/C HIGH-FIDELITY ELIGIBILITY → PASS / v1.0.0
-O/C HIGH-FIDELITY DESIGN AUTHORIZATION → NOT_GRANTED
-PUBLIC HOMES CANONICAL SOURCE → CURRENT MAIN + GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.6
-PUBLIC HOMES DESIGN PRODUCTION READINESS → PASS / CURRENT / SNAPSHOT NOT REQUIRED
-PUBLIC HOMES DESIGN PRODUCTION RELEASE → GRANTED / GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.1
-PUBLIC HOMES MASTERS → 8 OF 8 CURRENT / 83 MOVEMENTS COVERED
-PUBLIC HOMES AI → OPTIONAL / DESIGNER-CONTROLLED
-PUBLIC HOMES GKR-CREATED FIGMA → NONE
-PUBLIC HOMES HISTORICAL PACKAGE INPUT → EXCLUDED FROM DESIGN / AI
-PUBLIC HOMES SNAPSHOT / CANDIDATE REQUIREMENT → NONE
-VISUAL IDENTITY PRE-LOCK → NOT REQUIRED / DESIGN-OWNED
-GKR GLOBAL UPDATE → CURRENT-AUTHORITY / ENTRYPOINT / MENU SYNCHRONIZATION
-FUNCTIONAL ADVANCEMENT → HIGH-FIDELITY ELIGIBILITY PASS / AUTHORIZATION NOT_GRANTED
-NEXT AUTOMATIC EXECUTION → NONE
-SOURCE LOCK → NOT_CREATED / NOT_REQUIRED BY CURRENT EVIDENCE / NOT_AUTHORIZED BY INFERENCE
-UXA-102 / V5 → NOT_STARTED
-PRODUCT ENGINEERING → PAUSED BEFORE W0-01
+GKR-STATE-001
+→ 3.50.29 / CURRENT
+
+ERA
+→ GE-2 — KNOWLEDGE
+
+MARCO FUNCIONAL
+→ M7.88
+
+ÚLTIMA UXA FUNCIONAL NUMERADA
+→ UXA-101
+
+GIA-COG-001
+→ v0.1.1 / ACTIVE / NORMATIVE
+→ CURRENT COGNITIVE REFERENCE ARCHITECTURE
+
+PER-002
+→ FUNCTIONAL BOUNDARY = GKR-UX-PER002-MAT-ELIGIBILITY-001 v2.0.0 / CURRENT
+→ INTERACTIVE DESIGN REFERENCE = GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v1.0.0
+→ VALIDATION = GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v2.0.0 / PASS / 16 OF 16
+
+O/C AUTHENTICATED EXPERIENCE
+→ SURFACE MAP = CANONICAL
+→ STATE MAP = CANONICAL
+→ PRIORITY FLOWS = CANONICAL
+→ NAVIGATION MATERIALIZATION = CANONICAL
+→ LOW-FIDELITY DELIVERY + VALIDATION = CURRENT / PASS
+→ HIGH-FIDELITY ELIGIBILITY = PASS
+→ HIGH-FIDELITY DESIGN AUTHORIZATION = GRANTED
+→ HIGH-FIDELITY EXECUTION = NOT_STARTED
+→ INTERACTIVE PROTOTYPE = NOT_AUTHORIZED
+
+PUBLIC HOMES
+→ CANONICAL SOURCE = CURRENT MAIN + GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.13
+→ DESIGN PRODUCTION READINESS = GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.3.7 / PASS
+→ DESIGN PRODUCTION RELEASE = GRANTED / v1.3.1
+→ 8 OF 8 HOMES CURRENT
+→ DESIGNER = CREATIVE AUTHOR
+→ AI = OPTIONAL / DESIGNER-CONTROLLED
+→ SNAPSHOT = NOT REQUIRED
+
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED / NOT RELEASED
 ```
 
 ## Como esta base é organizada
@@ -165,25 +152,21 @@ ORGANIZAÇÃO
 
 - [Arquitetura da Experiência](experience-architecture/index.md)
 - [Jornadas Integradas](journeys/index.md)
+- [Jornada da Pessoa](journeys/person.md)
+- [Jornada do Coletivo](journeys/collective.md)
+- [Jornada da Organização](journeys/organization.md)
+- [Guivos Business — Experiência Integrada](journeys/business.md)
 - [Home Principal / Pessoa](experience-architecture/public-home-master-document.md)
 - [Home de Organizações e Coletivos](experience-architecture/public-home-organizations-collectives-master-document.md)
-- [Homes dos Produtos Especializados](experience-architecture/public-specialized-homes-reconciliation.md)
-- [PER-002 — Elegibilidade de Materialização e Handoff para Design](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md)
-- [PER-002 — Autorização Governada de Design Low-Fidelity](experience-architecture/per-002-design-authorization.md)
-- [PER-002 — Materialização Low-Fidelity Funcional de Design](experience-architecture/per-002-low-fidelity-design-delivery.md)
-- [PER-002 — Validação Funcional da Materialização Low-Fidelity](experience-architecture/per-002-low-fidelity-functional-validation.md)
-- [PER-002 — Elegibilidade Pós-Validação para Design High-Fidelity](experience-architecture/per-002-high-fidelity-design-eligibility.md)
-- [PER-002 — Autorização Governada de Design High-Fidelity](experience-architecture/per-002-high-fidelity-design-authorization.md)
-- [PER-002 — Entrega High-Fidelity de Design](experience-architecture/per-002-high-fidelity-design-delivery.md)
-- [PER-002 — Validação Governada da Entrega High-Fidelity](experience-architecture/per-002-high-fidelity-design-validation.md)
-- [PER-002 — Elegibilidade Pós-Validação para Protótipo Interativo](experience-architecture/per-002-interactive-prototype-eligibility.md)
-- [PER-002 — Autorização Governada de Protótipo Interativo](experience-architecture/per-002-interactive-prototype-authorization.md)
-- [PER-002 — Entrega do Protótipo Interativo](experience-architecture/per-002-interactive-prototype-delivery.md)
-- [PER-002 — Revalidação Pós-Review do Protótipo Interativo](experience-architecture/per-002-interactive-prototype-post-review-revalidation.md)
+- [Homes Públicas — Manifesto Corrente de Entrega](experience-architecture/public-homes-design-delivery-manifest.md)
+- [PER-002 — Boundary Funcional Corrente](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md)
+- [PER-002 — Protótipo Interativo Corrente](experience-architecture/per-002-interactive-prototype-delivery.md)
+- [PER-002 — Validação Corrente do Protótipo](experience-architecture/per-002-interactive-prototype-post-review-revalidation.md)
 - [O/C — Autorização Governada de Wireframes Low-Fidelity](experience-architecture/organizations-collectives-authenticated-wireframe-authorization.md)
 - [O/C — Entrega de Wireframes Autenticados Low-Fidelity](experience-architecture/organizations-collectives-authenticated-low-fidelity-wireframe-delivery.md)
 - [O/C — Validação Funcional dos Wireframes Autenticados Low-Fidelity](experience-architecture/organizations-collectives-authenticated-low-fidelity-functional-validation.md)
 - [O/C — Elegibilidade Pós-Validação para Design High-Fidelity](experience-architecture/organizations-collectives-authenticated-high-fidelity-eligibility.md)
+- [O/C — Autorização de Design High-Fidelity](experience-architecture/organizations-collectives-authenticated-high-fidelity-authorization.md)
 
 A navegação do repositório não deve ser confundida com a arquitetura de informação de produto, Journey, experiência autenticada ou UI.
 
@@ -277,8 +260,10 @@ As rotas abaixo são **atalhos de consumo**. Elas não criam cópias, autoridade
 | Marketing / marca | [Marca e Ativos Digitais](governance-framework/brand-and-digital-assets-index.md) · [Guia Oficial](public/guia-oficial-da-guivos.md) · [GTM](go-to-market/index.md) |
 | Publicidade / Ads | [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
 | Comercial | [Estratégia de Negócio](business-architecture/index.md) · [Produtos](product-architecture/index.md) · [Economia](economic-model/index.md) · [GTM](go-to-market/index.md) |
+
+> **Leitura:** a lente documental **Comercial** organiza estratégia, produtos, economia e GTM no repositório. Ela não representa o produto **Guivos Business**, não é tipo de participante e não substitui Pessoa, Coletivo, Organização ou Business como contextos de experiência.
 | Produto | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) |
-| UX / Design | [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) · [PER-002 Handoff](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md) · [Design Authorization](experience-architecture/per-002-design-authorization.md) · [Design Delivery](experience-architecture/per-002-low-fidelity-design-delivery.md) · [Functional Validation](experience-architecture/per-002-low-fidelity-functional-validation.md) · [High-Fidelity Eligibility](experience-architecture/per-002-high-fidelity-design-eligibility.md) · [High-Fidelity Authorization](experience-architecture/per-002-high-fidelity-design-authorization.md) · [High-Fidelity Delivery](experience-architecture/per-002-high-fidelity-design-delivery.md) · [High-Fidelity Validation](experience-architecture/per-002-high-fidelity-design-validation.md) · [Prototype Eligibility](experience-architecture/per-002-interactive-prototype-eligibility.md) · [Prototype Authorization](experience-architecture/per-002-interactive-prototype-authorization.md) · [Prototype Delivery](experience-architecture/per-002-interactive-prototype-delivery.md) · [Post-Review Prototype Revalidation](experience-architecture/per-002-interactive-prototype-post-review-revalidation.md) · [Estado Atual](project/current-state-register.md) |
+| UX / Design | [Experience Architecture](experience-architecture/index.md) · [Jornadas](journeys/index.md) · [PER-002 — Handoff e limite de materialização](experience-architecture/per-002-materialization-eligibility-and-design-handoff-boundary.md) · [PER-002 — Protótipo Interativo Corrente](experience-architecture/per-002-interactive-prototype-delivery.md) · [PER-002 — Revalidação Corrente](experience-architecture/per-002-interactive-prototype-post-review-revalidation.md) · [Estado Atual](project/current-state-register.md) |
 | Desenvolvimento | [Produtos](product-architecture/index.md) · [Experience Architecture](experience-architecture/index.md) · [Arquitetura Corporativa](enterprise-architecture/index.md) |
 | Dados / Intelligence | [Intelligence](intelligence-architecture/index.md) · [Arquitetura Corporativa](enterprise-architecture/index.md) · [Research](research/index.md) |
 | Research | [Research](research/index.md) · [RP-001](research/RP-001/index.md) · [RP-002](research/RP-002/index.md) · [Privacidade](governance-framework/operational-privacy-and-legal-truth-index.md) |

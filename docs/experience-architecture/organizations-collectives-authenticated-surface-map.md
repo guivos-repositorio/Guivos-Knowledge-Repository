@@ -2,11 +2,11 @@
 id: GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
 title: Organizações e Coletivos — Mapa de Superfícies da Experiência Autenticada
 status: active
-version: 1.1.0
+version: 1.1.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-22
 normative: false
-maturity: authenticated_surface_map_defined_pre_state_flow_wireframe
+maturity: authenticated_surface_map_defined
 depends_on:
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
@@ -491,20 +491,23 @@ MAPA DE ESTADOS
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 FLUXOS PRIORITÁRIOS
-→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0
+→ GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.1
 → ACTIVE / DEFINED / CANONICAL DOCUMENTARY
 
 NAVIGATION MATERIALIZATION
-→ NOT MATERIALIZED
+→ ACTIVE / CANONICAL
 
-WIREFRAMES
-→ NOT STARTED
+AUTHENTICATED WIREFRAMES
+→ DELIVERY v0.1.0 / VALIDATION v1.0.0 PASS
 
-UI / PROTÓTIPO
-→ NOT AUTHORIZED
+HIGH-FIDELITY DESIGN
+→ AUTHORIZED / NOT_STARTED
+
+PROTOTYPE
+→ NOT_AUTHORIZED
 
 PRODUCT ENGINEERING
-→ PAUSED BEFORE W0-01 / NOT RELEASED
+→ NOT_RELEASED
 ```
 
 A palavra `DEFINED` neste documento significa **definição documental**, não materialização visual, implementação nem promoção automática da maturidade de qualquer `GKR-SURF-*` ou `GKR-TRN-*` individual.
@@ -523,9 +526,28 @@ Em ato governado posterior, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.0` defin
 - estados de ausência, bloqueio, contestação e indisponibilidade;
 - separação entre semântica funcional e Design.
 
-O próximo gate corrente é **Navigation Materialization**, ainda dependente de autorização específica.
+No momento deste Surface Map, o próximo gate era **Navigation Materialization**, dependente de autorização específica. Esse estado abaixo é preservado como registro do gate naquele momento. Posteriormente, Navigation Materialization foi promovida, o low-fidelity foi autorizado/entregue/validado com `PASS`, e high-fidelity recebeu autorização humana.
 
-Até nova autorização:
+Estado downstream corrente:
+
+```text
+NAVIGATION MATERIALIZATION
+→ ACTIVE / CANONICAL
+
+AUTHENTICATED WIREFRAMES
+→ DELIVERY v0.1.0 / VALIDATION v1.0.0 PASS
+
+HIGH-FIDELITY DESIGN
+→ AUTHORIZED / NOT_STARTED
+
+PROTOTYPE
+→ NOT_AUTHORIZED
+
+PRODUCT ENGINEERING
+→ NOT_RELEASED
+```
+
+Estado preservado no ato de promoção original:
 
 ```text
 STATE MAP

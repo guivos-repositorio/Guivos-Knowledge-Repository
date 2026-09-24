@@ -2,195 +2,182 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.38.0
+version: 1.0.8
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-18
+last_updated: 2026-09-22
 related:
-  - UXA-059
-  - UXA-090
-  - UXA-092
-  - UXA-094
-  - UXA-096
-  - UXA-097
-  - UXA-098
-  - UXA-099
-  - UXA-100
-  - UXA-100-A2
-  - UXA-100-A3
-  - UXA-100-A4
-  - UXA-101
-  - GKR-UX-D5-C1-001
-  - GKR-UX-D5-C2-001
-  - GKR-UX-D5-C3-001
-  - GKR-UX-D5-C4A-001
-  - GKR-UX-D5-C4B-001
-  - GKR-JOURNEY-SCREEN-GALLERY-001
-  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
+  - GKR-JOURNEY-PERSON-001
+  - GKR-JOURNEY-COLLECTIVE-001
+  - GKR-JOURNEY-ORGANIZATION-001
+  - GKR-JOURNEY-BUSINESS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - GKR-UX-ORGCOL-UX-STATE-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
-  - GKR-ORGCOL-POST313-RECON-001
+  - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
 normative: false
 ---
 
 # Lacunas e Continuidades Ausentes
 
-## 1. Natureza do registro
+## 1. Finalidade
 
-Este documento é observacional e não promocional. A D5-C1 fechou a identidade arquitetural de `Meus Objetivos`, `Meus Próximos Passos` e `Minha Evolução`; a D5-C2 fechou a ausência visual do estado-base; a D5-C3 fechou a validação funcional local dos três SVGs; a D5-C4A fechou a ausência de origem visual inequívoca no estado recorrente de Hoje e governou o contrato semântico; a D5-C4B fecha a **lacuna específica de validação integrada de `TRN-008..013`** no limite documental.
+Este documento registra **somente lacunas correntes** de continuidade da experiência. Ele não preserva a cronologia de como cada lacuna foi descoberta ou fechada; essa proveniência pertence ao Git.
 
-A reconciliação pós-PR #313/#314 revelou lacunas da experiência principal autenticada de Organização e Coletivo que haviam sido ocultadas por artefatos prematuros. Posteriormente, `GKR-UX-ORGCOL-AUTH-JOBS-001` fechou documentalmente atores, autoridades e jobs, `GKR-UX-ORGCOL-AUTH-IA-001` definiu a Arquitetura da Informação, `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.0.0` definiu o mapa lógico-documental canônico de superfícies e `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0` definiu o mapa funcional de estados autenticados.
+Uma lacuna registrada aqui:
 
-As lacunas principais vigentes são, portanto:
+- não autoriza execução automática;
+- não reduz a maturidade das autoridades já concluídas;
+- não transforma ausência visual em ausência funcional;
+- não permite completar estados ou transições por inferência.
 
-- Navigation Materialization + wireframe principal autenticado da Organização;
-- Navigation Materialization + wireframe principal autenticado do Coletivo.
+## 2. Pessoa
 
-`UXA-015..018` permanecem históricos `superseded`. Estados sensíveis/alternativos específicos, V5/UXA-102, D6, D7, cobrança real e demais frentes continuam separadas.
+A Jornada da Pessoa possui topologia corrente, Screen Catalog, Surface Registry e Transition Registry ativos.
 
-```text
-JOBS + IA AUTENTICADA
-→ DEFINIDOS
+As continuidades ainda parciais devem ser lidas diretamente no `GKR-JOURNEY-TRANSITION-REGISTRY-001`. Entre as fronteiras ainda não fechadas ponta a ponta estão:
 
-MAPA LÓGICO DE SUPERFÍCIES
-→ DEFINED / CANONICAL DOCUMENTARY
+- integrações iniciais entre Home pública, entrada protegida, expressão, inventário e processamento quando marcadas como parciais no Registry;
+- estados alternativos/sensíveis ainda não governados por autoridade específica;
+- Conta/Configurações quando uma materialização própria for necessária;
+- integrações comerciais patrocinadas que permaneçam parciais.
 
-MAPA FUNCIONAL DE ESTADOS
-→ DEFINED / CANONICAL DOCUMENTARY
+As ligações `Hoje ↔ Meus Objetivos`, `Hoje ↔ Meus Próximos Passos` e `Hoje ↔ Minha Evolução` não constituem lacuna corrente de continuidade básica.
 
-NAVIGATION MATERIALIZATION + WIREFRAMES PRINCIPAIS
-→ PENDENTES / NÃO MATERIALIZADOS
-```
+## 3. Oportunidades e fronteiras externas
 
-## 2. Gates pessoais
+A continuidade publicação → descoberta → Mapa/Lista → Detalhe está governada pelas autoridades correntes. A entrada institucional `ORG-001 → ORG-002` permanece separadamente parcial em `TRN-201`; o contrato funcional do cadastro existe, mas a ligação ponta a ponta com a visão institucional ainda não está fechada.
 
-| Lacuna | IDs relacionados | Estado visual | Estado funcional | Continuidade remanescente |
-|---|---|---|---|---|
-| compreensão inicial → primeira Tela Hoje | PER-007; TRN-007; PER-008 | materializados | integralmente validada por UXA-097 | recorrência e estados alternativos separados |
-| Home pública → entrada protegida | PER-001; TRN-001; PER-002 | materializados | parcial | validação integrada |
-| escolha → expressão | PER-003; TRN-003; PER-004 | materializados | parcial | validação integrada |
-| expressão → inventário | PER-004; TRN-004; PER-005 | materializados | parcial | integração com inventário |
-| inventário → processamento | PER-005; TRN-005; PER-006 | materializados | parcial | continuidade entre materializações |
-| Conta/Configurações da Pessoa | PER-009; TRN-406/407 | sem SVG dedicado | identidade contratada pela UXA-100-A4 | materialização própria somente se necessária para validar ponta a ponta |
-| Hoje ↔ Meus Objetivos | PER-008; TRN-008/009; PER-010 | Hoje recorrente D5-C4A + PER-010 validado D5-C3 | **TRN-008/009 integralmente validadas por D5-C4B** | nenhuma nesta ligação; estados alternativos separados |
-| Hoje ↔ Meus Próximos Passos | PER-008; TRN-010/011; PER-011 | Hoje recorrente D5-C4A + PER-011 validado D5-C3 | **TRN-010/011 integralmente validadas por D5-C4B** | nenhuma nesta ligação; estados alternativos separados |
-| Hoje ↔ Minha Evolução | PER-008; TRN-012/013; PER-012 | Hoje recorrente D5-C4A + PER-012 validado D5-C3 | **TRN-012/013 integralmente validadas por D5-C4B** | estados sensíveis adicionais quando aplicáveis |
-
-`PER-010..012` não são estados internos de Hoje. Para `TRN-008/010/012`, a validação se aplica ao estado recorrente de Hoje quando o affordance estiver presente e aplicável; a primeira variante UXA-097 não é obrigada a expor os três acessos. Não existem handoffs diretos governados entre as três superfícies especializadas.
-
-## 3. Gates de oportunidade e descoberta
-
-| Continuidade | IDs relacionados | Estado visual | Estado funcional | Continuidade remanescente |
-|---|---|---|---|---|
-| publicação/ativação → descoberta | ORG-003; TRN-203; PER-201 | materializados | **integralmente validada por UXA-098** | integração patrocinada separada |
-| Mapa → Lista | PER-201; TRN-210; PER-202 | materializados | **integralmente validada** | nenhuma nesta ligação |
-| Mapa → Detalhe | PER-201; TRN-204; PER-203 | materializados | **integralmente validada** | saída externa governada por UXA-101 |
-| Lista → Detalhe | PER-202; TRN-211; PER-203 | materializados | **integralmente validada** | saída externa governada por UXA-101 |
-| Detalhe → fronteira externa | PER-203; TRN-205; BND-001 | Detalhe reformulado; fronteira sem tela | **integralmente validada até a fronteira Guivos por UXA-101** | processo e resultado posteriores pertencem ao terceiro |
-| patrocinado → Mapa/Lista orgânicos | COM-002; TRN-304/306; PER-201/PER-202 | materializados | parcial | integração orgânico–patrocinado específica |
-
-A supersessão do wireframe principal da Organização não invalida `ORG-002/003` nem o fluxo especializado de publicação/descoberta, que possuem autoridades próprias.
-
-## 4. Gates do Opportunity Boost
-
-| Continuidade ou família | IDs relacionados | Estado visual | Estado funcional | Continuidade remanescente |
-|---|---|---|---|---|
-| dez estados residuais UXA-055 | COM-005 | 10 SVGs | **validado por UXA-099** | nenhuma pendência específica dos SVGs |
-| gestão ativa → estados residuais | COM-004; TRN-305; COM-005 | origem e destino materializados | parcial | validação ponta a ponta |
-| retorno patrocinado → Mapa | COM-002; TRN-304; PER-201 | materializados | parcial | integração específica |
-| retorno patrocinado → Lista | COM-002; TRN-306; PER-202 | materializados | parcial | integração específica |
-
-## 5. Gates de Planos, cobrança e ciclo de vida
-
-| Participante | IDs | Estado visual | Estado funcional | Continuidade remanescente |
-|---|---|---|---|---|
-| Pessoa | PER-009; PER-301 a 304; TRN-401 a 407 | PER-009 sem SVG; 3 SVGs de Planos | PER-301..304 validadas; TRN-401..405 locais; TRN-406/407 contratadas | PER-009; gateway, cobrança real e proration |
-| Coletivo | COL-002; COL-301 a 304; TRN-411 a 418 | pacote de Planos materializado; origem administrativa principal final pendente | TRN-417/418 preservam maturidade do contrato especializado; TRN-411..415 locais; TRN-416 parcial | **wireframe principal autenticado do Coletivo**; cobrança real e processo após BND-002 |
-| Organização | ORG-001; ORG-301 a 304; TRN-421 a 428 | pacote de Planos materializado; ORG-001 histórico superseded como wireframe principal | TRN-427/428 preservam maturidade do contrato especializado; TRN-421..425 locais; TRN-426 parcial | **wireframe principal autenticado da Organização**; cobrança real e processo após BND-002 |
-| fronteira comercial | BND-002 | sem tela por definição | parcial | proposta, contrato, dimensionamento e handoffs posteriores |
-
-`BND-002` permanece fronteira genérica de contratação/dimensionamento assistido e não plano específico.
+Permanece fora da autoridade da Guivos:
 
 ```text
-CONTRATO DE ORIGEM/RETORNO DE PLANOS
-≠ WIREFRAME PRINCIPAL VIGENTE
+DETALHE
+→ REVISÃO CONSCIENTE
+→ FRONTEIRA EXTERNA
+→ PROCESSO DO TERCEIRO
 ```
 
-## 6. Gates de Coletivos
+A Guivos governa até a transferência consciente de autoridade. O comportamento e o resultado posteriores pertencem ao terceiro.
 
-| Lacuna | IDs relacionados | Estado visual | Estado funcional | Continuidade remanescente |
-|---|---|---|---|---|
-| Navigation Materialization / wireframe principal autenticado do Coletivo | COL-001/COL-002 e áreas internas | **wireframe pendente; UXA-016/018 superseded; UXA-086/087 apenas evidência administrativa local** | fundamentos + jobs + IA + Surface Map + State Map + Priority Flows existentes | Navigation Materialization → wireframe → validação |
-| Visão administrativa local → gestão de solicitações | COL-002; TRN-112; COL-003 | origem local + fluxo especializado materializado | TRN-112 preserva maturidade documental própria | integração final deverá ser revista contra as autoridades canônicas e o futuro wireframe principal |
-| solicitação ↔ operação responsável | PER-105; TRN-105/106/107/109; COL-003 | materializados | integralmente validada | aprovação fechada em TRN-108 |
-| continuidade pós-aprovação | PER-105; TRN-108; PER-106 | materializados | integralmente validada | nenhuma nesta ligação |
-| Meus Coletivos → Central | PER-106; TRN-110; PER-107 | materializados | integralmente validada | nenhuma nesta ligação |
-| Central → Início do Participante | PER-107; TRN-111; PER-108 | materializados | integralmente validada no recorte da Pessoa participante | estados P0B e áreas internas separados |
-| contexto administrativo → Planos → contexto administrativo | COL-002; TRN-417/418; COL-301 | pacote especializado materializado | TRN-417/418 preservam maturidade do contrato especializado | integração final deverá ser revista contra as autoridades canônicas e o futuro wireframe principal |
+Opportunity Boost preserva maturidade parcial nas ligações `TRN-301`, `TRN-302`, `TRN-304`, `TRN-305` e `TRN-306`. Isso inclui ativação/gestão de campanha, projeção em unidade patrocinada, integração com descoberta orgânica e estados residuais; nenhuma dessas ligações é promovida além do estado registrado no Transition Registry.
 
-A Arquitetura da Informação do Coletivo está definida em `GKR-UX-ORGCOL-AUTH-IA-001`, o Surface Map lógico-documental em `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` e o State Map funcional em `GKR-UX-ORGCOL-AUTH-STATE-MAP-001`; essas autoridades, somadas aos Priority Flows canônicos, não materializam navegação nem a experiência visual principal.
+## 4. Planos, cobrança e contratação assistida
 
-## 7. Fila por dependência
+A arquitetura documental de Planos existe para **Pessoa, Coletivo, Organização e Guivos Business**. Pessoa, Coletivo e Organização possuem superfícies granulares neste Registry; Business possui continuidade própria governada por suas autoridades e por `docs/journeys/business.md`, sem IDs granulares próprios neste momento.
 
-A fila não autoriza execução automática.
+Permanecem fora da maturidade corrente quando não houver autoridade específica:
 
-| Grupo | Lacuna | IDs relacionados | Estado visual | Gate |
-|---|---|---|---|---|
-| P0B | Meus Coletivos | PER-106 | P0A validado | ativo próprio quando decisão/proteção justificar |
-| P0B | Central | PER-107 | P0A validado | vazio, excesso de volume e baixa conectividade |
-| P0B | Início do Participante | PER-108 | P0A validado | mudança material de decisão/proteção |
-| UX principal | Coletivo autenticado | COL-001/COL-002; COL-004 a 008 | **wireframe principal pendente** | **Jobs + IA + Surface Map + State Map + Priority Flows concluídos documentalmente** → Navigation Materialization → wireframe → validação |
-| UX principal | Organização autenticada | ORG-001; ORG-004 a 007 | **wireframe principal pendente** | **Jobs + IA + Surface Map + State Map concluídos documentalmente** → Priority Flows → wireframe → validação |
-| operação interna | Coletivo | COL-004 a 007; TRN-113 | sem SVGs dedicados | programa, materialização e validação |
-| bilateral | Organização–Coletivo | ORG-004 a 006; COL-008 | sem SVGs | Navigation Materialization e validação bilateral |
-| institucional | matriz completa | ORG-001; ORG-007 | cobertura parcial; ORG-001 histórico não é baseline | Navigation Materialization e validação futura sob autoridade vigente |
-| Conta | Conta/Configurações | PER-009; TRN-406/407 | sem SVG | materializar se arquitetura exigir |
-| comercial | contratação assistida | BND-002; TRN-416/426 | fronteira registrada | contrato comercial/operacional suficiente |
-| patrocinado | integração orgânico–patrocinado | TRN-304/305/306 | materializados parcialmente | validação ponta a ponta específica |
+- gateway e cobrança real;
+- proration;
+- liquidação e condições fiscais;
+- proposta/contrato após `BND-002`;
+- dimensionamento assistido posterior à fronteira;
+- handoffs operacionais de contratação ainda não formalizados.
 
-A lacuna D5-C de `TRN-008..013` não integra mais esta fila após D5-C4B.
+`BND-002` continua sendo fronteira genérica de contratação/dimensionamento assistido para os fluxos aplicáveis de **Coletivo e Organização**. Ele não corresponde a um plano específico e **não governa a contratação do Guivos Business**.
 
-## 8. Fila de validação
-
-| Prioridade | Continuidade ou família | Estado atual | Gate |
-|---:|---|---|---|
-| V1 — encerrado | compreensão inicial → Tela Hoje | TRN-007 integral | UXA-097 |
-| V2 — encerrado | publicação → descoberta e Mapa/Lista/Detalhe | TRN-203/204/210/211 integrais | UXA-098 |
-| V3 — encerrado | dez estados residuais Opportunity Boost | 10 SVGs validados | UXA-099 |
-| Planos — identidade | fragmentação e promoção canônica | encerrada | UXA-100-A3 |
-| Planos — origem voluntária | contratos de Conta/Administração → Planos → retorno | maturidades próprias preservadas; **não provar UI principal de Organização/Coletivo** | UXA-100-A4 + reconciliação pós-313/314 |
-| V4 — encerrado | Detalhe → fronteira externa | TRN-205 integral até BND-001 | UXA-101 |
-| D5-C1 | contrato arquitetural | PER-010..012 + TRN-008..013 contratados | concluído |
-| D5-C2 | materialização low-fidelity | 3 SVGs materializados | concluído |
-| D5-C3 | validação/reformulação low-fidelity | 3 SVGs validados | concluído |
-| D5-C4A | contrato origem recorrente Hoje | concluído | autoridade documental |
-| D5-C4B | integração TRN-008..013 | concluída | validação documental integrada |
-| O/C — State Map | mapa funcional de estados autenticados | **definido / canônico documental** | GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.0.0 |
-| O/C — próximo gate | Navigation Materialization | **não materializada** | autorização governada separada |
-
-## 9. Próximo nível lógico
-
-A D5-C4B encerra a lacuna específica dos seis handoffs pessoais. Para Organização e Coletivo, fundamentos, atores/autoridades/jobs, Arquitetura da Informação, mapa lógico de superfícies e mapa funcional de estados já estão definidos documentalmente.
-
-Os **Priority Flows** foram definidos documentalmente. A lacuna seguinte começa em **Navigation Materialization**, cuja posição como próximo nível lógico não a autoriza automaticamente.
-
-Isso não inicia automaticamente V5/UXA-102, D6, D7, Design, Product Engineering ou qualquer outra lacuna.
-
-Quando essa frente for separadamente autorizada após os gates aplicáveis, a continuidade será:
+Guivos Business permanece produto especializado separado:
 
 ```text
-Priority Flows
-→ wireframes
-→ validação
-→ UI
-→ protótipo
-→ testes
-→ handoff
+GUIVOS BUSINESS
+→ CONTRATAÇÃO ONLINE
+→ SELF-SERVICE QUANDO ELEGÍVEL
+→ SUPORTE QUANDO NECESSÁRIO
+→ GERENCIADO QUANDO A COMPLEXIDADE EXIGIR
+
+BND-002
+→ NÃO É FLUXO BUSINESS
 ```
 
-A branch pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece `HOLD_REVIEW` e não é autoridade vigente.
+A composição Self-service e seus fatores de plano/valor são governados por `GPA-004` e `docs/plans/business.md`, sem criação de IDs Business neste registry.
+
+### Lacunas correntes específicas de Business
+
+Permanecem abertas somente quando não houver autoridade própria formalizada:
+
+- thresholds quantitativos e entitlements finais entre Start, Growth, Scale e Enterprise;
+- preços unitários/faixas de componentes variáveis ainda não governados;
+- implementação técnica do configurador;
+- checkout, cobrança, tributação e liquidação reais;
+- critérios operacionais exatos de roteamento entre Self-service, suporte e gerenciado;
+- implementação das integrações/API/exportações contratadas;
+- implementação e publicação operacional da experiência Business.
+
+Essas lacunas não convertem Business em Organização, não remetem automaticamente a `BND-002` e não criam uma camada "Comercial".
+
+## 5. Organização e Coletivo autenticados
+
+A cadeia corrente está documentalmente fechada até a autorização de Design high-fidelity:
+
+```text
+JOBS / AUTORIDADE
+→ INFORMATION ARCHITECTURE
+→ SURFACE MAP
+→ STATE MAP
+→ PRIORITY FLOWS
+→ NAVIGATION MATERIALIZATION
+→ LOW-FIDELITY DELIVERY
+→ LOW-FIDELITY VALIDATION
+→ HIGH-FIDELITY ELIGIBILITY
+→ HIGH-FIDELITY AUTHORIZATION
+```
+
+Estado corrente:
+
+```text
+O/C HIGH-FIDELITY DESIGN
+→ AUTHORIZED
+→ NOT_STARTED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
+
+UXA-102 / V5
+→ NOT_STARTED
+
+PRODUCT ENGINEERING
+→ PAUSED / NOT RELEASED
+```
+
+Portanto, **Navigation Materialization, wireframe principal low-fidelity e sua validação não são lacunas correntes**.
+
+
+### 5.1 Lacunas especializadas que permanecem abertas
+
+O fechamento da cadeia principal autenticada **não** significa que todas as capacidades especializadas de Organização e Coletivo estejam materializadas ou validadas ponta a ponta.
+
+Permanecem abertas, conforme os Surface Registries e contratos correntes:
+
+- `TRN-102..104`: descoberta de Coletivo → perfil público → revisão/solicitação → estado pendente — superfícies e contrato funcional existem sob `UXA-056`, mas os handoffs continuam parciais e não foram validados ponta a ponta como conjunto;
+- `COL-001`: presença pública e entrada coletiva — presença pública governada pelo Master/`UXA-056`, com continuidade autenticada coberta pela arquitetura O/C corrente; a separação final entre presença pública, entrada autenticada e operação interna ainda não está fechada ponta a ponta;
+- `ORG-004..006`: proposta, negociação e relação ativa Organização ↔ Coletivo — contratos/lifecycle definidos sob `UXA-019` + Surface/State Map, com cobertura low-fidelity O↔C em `PASS`; materialização dedicada e continuidade ponta a ponta `TRN-206..209` ainda não estão fechadas;
+- `ORG-007`: revisão institucional de evidências/resultados — responsabilidade conhecida, com evidência insuficiente para classificar;
+- `COL-004`: gestão de vínculo — contrato corrente com cobertura low-fidelity parcial em Participação; materialização dedicada e continuidade ponta a ponta ainda não estão comprovadas;
+- `COL-005`: comunicação oficial do Coletivo — contrato corrente com cobertura low-fidelity parcial em Participação/Governança; materialização dedicada e continuidade ponta a ponta ainda não estão comprovadas;
+- `COL-006`: atividades, consultas e decisões — contrato corrente com cobertura low-fidelity parcial em Atividades/Governança; materialização dedicada e continuidade ponta a ponta ainda não estão comprovadas;
+- `COL-007`: proteção e moderação — contrato corrente com cobertura low-fidelity parcial e `Governança e Proteção = PASS`; materialização dedicada e continuidade ponta a ponta ainda não estão comprovadas;
+- `COL-008`: relação Organização ↔ Coletivo — contrato/lifecycle definidos sob `UXA-019`, com cobertura low-fidelity O↔C em `PASS`; materialização dedicada e continuidade ponta a ponta permanecem abertas;
+- capacidades de avaliação/reputação e de interações/recomendações/conexões governadas por `UXA-057` e `UXA-058` permanecem dependentes de materialização/validação específica onde o Registry ainda não comprova fechamento.
+
+Essas lacunas especializadas não reabrem a cadeia principal autenticada já fechada até `HIGH-FIDELITY AUTHORIZATION`; elas devem ser tratadas como frentes funcionais próprias, sem promoção por analogia.
+
+## 6. Regra de continuidade
+
+Nenhuma lacuna acima cria uma fila automática de execução.
+
+```text
+CURRENT AUTHORITY
+→ PRESERVED
+
+OPEN GAP
+→ DOCUMENTED WITHOUT IMPLIED EXECUTION
+
+DESIGN / PROTOTYPE / ENGINEERING
+→ ONLY BY THEIR OWN GOVERNED GATE
+```

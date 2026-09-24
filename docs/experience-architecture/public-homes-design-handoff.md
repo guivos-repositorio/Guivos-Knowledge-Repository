@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.7.2
+version: 1.7.10
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 normative: true
 maturity: designer_first_ai_optional_main_canonical_first_class
 depends_on:
@@ -194,27 +194,27 @@ A composição operacional de cada emissão é governada por `GKR-UX-HOMES-DESIG
 
 ### 4.1 Pessoa
 
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
+Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente. Quando a designer optar por usar IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e o Source Lock/Prompt aplicável.
 
 ### 4.2 Organizações e Coletivos
 
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
+Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente. Quando a designer optar por usar IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e o Source Lock/Prompt aplicável.
 
 ### 4.3 Guivos Mall
 
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
+Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente. Quando a designer optar por usar IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e o Source Lock/Prompt aplicável.
 
 ### 4.4 Guivos Travel
 
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, reconciliação pós-Media e Source Lock + Prompt.
+Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente. Quando a designer optar por usar IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e o Source Lock/Prompt aplicável.
 
 ### 4.5 Guivos Media
 
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, `GPA-005` e Source Lock + Prompt.
+Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre e `GPA-005`. Quando a designer optar por usar IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e o Source Lock/Prompt aplicável.
 
 ### 4.6 Guivos Ads
 
-Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre, `GPA-007` e Source Lock + Prompt.
+Usar o Handoff comum e as autoridades específicas registradas no Manifesto vigente, incluindo Documento Mestre e `GPA-007`. Quando a designer optar por usar IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e o Source Lock/Prompt aplicável.
 
 ### 4.7 Guivos Business
 
@@ -225,7 +225,8 @@ O contexto de Business permanece deliberadamente mais amplo. Usar somente o paco
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002`;
 4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001`;
 5. `GPA-004`;
-6. Source Lock Operacional + Prompt específico de Business.
+6. `GKR-PLANS-BUSINESS-001`;
+7. `GKR-UX-HOMES-GENINPUT-001`, somente quando a designer optar por usar IA ou ferramenta generativa.
 
 ### 4.8 Guivos Intelligence
 
@@ -237,18 +238,18 @@ Ordem operacional corrente, subordinada às versões exatas fixadas pelo Manifes
 N0 — MANIFESTO + SOURCE LOCK CORRENTES
      → fixam checkpoint, fontes autorizadas e estado da exploração
 
-N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10
+N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.15
      → congela significado e invariantes da Home
 
-N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.11
+N2 — GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.16
      → traduz a Home para o contrato de Design
 
-N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9
-     + GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4
+N3 — GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.12
+     + GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.5
      + GKR-UX-HOMES-OUTCOME-001 v1.0.0
      → preservam narrativa, valor, copy e função pública
 
-N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1
+N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.2
      + GPA-006 v2.0.1
      → governam significado e limites superiores do produto
 ```
@@ -263,8 +264,11 @@ Documentos históricos, candidates, snapshots e GENINPUTs superados não entram 
 NÍVEL 0 — HANDOFF CANÔNICO COMUM
 → governa processo, autorização, fontes e uso de ferramentas generativas
 
-NÍVEL 1 — SOURCE LOCK / HANDOFF / GENINPUT ESPECÍFICOS DA HOME
-→ governam o que pode ser materializado naquela Home e naquela rodada
+NÍVEL 1 — SOURCE LOCK / HANDOFF ESPECÍFICOS DA HOME
+→ governam o significado e as fronteiras daquela Home
+
+GENINPUT COMUM — GKR-UX-HOMES-GENINPUT-001
+→ usado somente quando a designer optar por IA ou ferramenta generativa
 
 NÍVEL 2 — DOCUMENTO MESTRE E CONTRATOS COMPLEMENTARES VIGENTES
 → governam significado, narrativa, experiência e fronteiras
@@ -283,9 +287,9 @@ Se houver conflito sobre significado da Home, prevalecem as autoridades específ
 
 ## 6. Controle semântico do input generativo
 
-Toda execução deve começar por um **Source Lock operacional específico da Home**.
+Toda execução **com IA ou ferramenta generativa**, quando escolhida pela designer, deve começar por um contexto governado conforme `GKR-UX-HOMES-GENINPUT-001` e pelas autoridades correntes da Home. Trabalho manual de Design não depende de execução generativa.
 
-O Source Lock deve registrar:
+Quando aplicável, o registro de contexto deve identificar:
 
 - Home;
 - objetivo da execução;
@@ -529,19 +533,17 @@ Cada exemplo analítico demonstra **um tipo de leitura**, não prova que a capac
 ## 14. Fluxo recomendado
 
 ```text
-PACOTE OFICIAL DA EMISSÃO VIGENTE
-↓
-LEIA-PRIMEIRO COMUM
+CURRENT MAIN + MANIFESTO VIGENTE
 ↓
 ESCOLHER UMA HOME
 ↓
-LEIA-PRIMEIRO DA HOME
-↓
 FONTES CANÔNICAS ISOLADAS
 ↓
-SOURCE LOCK / HANDOFF / GENINPUT ESPECÍFICOS
+DESIGNER
+├── TRABALHO MANUAL / FERRAMENTA DE DESIGN
+└── IA OPCIONAL → GKR-UX-HOMES-GENINPUT-001
 ↓
-OUTPUT = EXPLORAÇÃO
+OUTPUT DE DESIGN / EXPLORAÇÃO
 ↓
 VALIDAÇÃO HUMANA
 ```

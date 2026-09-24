@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-HOME-MALL-MEDIA-SUPPLY-001
-title: Reconciliação Pós-Media — Abastecimento Editorial da Home Pública — Guivos Mall
+title: Contrato de Abastecimento Editorial — Home Pública — Guivos Mall
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Experience Architecture
-last_updated: 2026-08-13
+last_updated: 2026-09-21
 parent: GKR-UX-HOME-MALL-MASTER-001
 depends_on:
   - GKR-UX-HOME-MALL-MASTER-001
@@ -17,11 +17,11 @@ related:
 normative: true
 ---
 
-# Reconciliação Pós-Media — Abastecimento Editorial da Home Pública — Guivos Mall
+# Contrato de Abastecimento Editorial — Home Pública — Guivos Mall
 
 ## 1. Finalidade
 
-Este contrato registra a reconciliação da **Home Pública do Guivos Mall** após a consolidação arquitetural do Guivos Media.
+Este contrato governa a relação corrente de **abastecimento editorial da Home Pública do Guivos Mall** por conteúdo produzido pelo Guivos Media.
 
 Ele não altera a pergunta-mãe `O que pode fazer parte do seu próximo momento?`, as duas portas atuais `Shopping | Gift Cards`, os onze movimentos, a lógica `descoberta + comércio + confiança`, nem regras de preço, pontos, publicidade, recomendação ou operação comercial já governadas.
 
@@ -222,9 +222,9 @@ A relação está alinhada quando:
 7. a pessoa preserva autonomia;
 8. o Mall continua funcionando mesmo sem conteúdo editorial abundante.
 
-## 13. Navegação do GKR
+## 13. Consumo corrente
 
-Este contrato complementa o Documento Mestre do Mall e permanece no corpus técnico do GKR. Ele **não cria submenu adicional na navegação principal das Homes**.
+Este contrato complementa o Documento Mestre do Mall e integra o conjunto canônico de fontes da Home. Sua função é editorial e semântica; não cria rota, submenu, layout ou requisito visual.
 
 ## 14. Síntese
 

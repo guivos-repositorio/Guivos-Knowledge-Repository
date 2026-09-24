@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.4
+version: 1.0.5
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -23,10 +23,6 @@ related:
   - RP-002-CM-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
-  - GKR-UX-HOME-OC-NARR-001
-  - GKR-UX-HOME-OC-NAV-001
-  - GKR-UX-HOME-OC-SYS-001
-  - GKR-UX-HOME-OC-HANDOFF-001
   - GKR-UX-HOME-OC-MEDIA-SUPPLY-001
   - GKR-UX-HOME-SYS-001
   - journeys/organization.md
@@ -317,9 +313,11 @@ A percepção desejada permanece:
 - humanidade sem clichê;
 - uma Guivos maior do que a soma dos Produtos Especializados.
 
-Direção criativa compartilhada:
+Qualidades semânticas desejadas:
 
 > **Futuro sem ficção. Tecnologia sem frieza. Sofisticação sem elitismo. Escala sem ruído. Humanidade sem clichê.**
+
+Essas qualidades governam percepção e significado, **não direção visual canônica**. A designer permanece livre para definir estética, tipografia, paleta, fotografia, ilustração, composição, grid, motion e atmosfera.
 
 A escala visual ou narrativa não deve ser simulada por mapas decorativos, números não sustentados, paredes de logos, stock genérico ou estética tecnológica como substituto de substância.
 
@@ -1780,10 +1778,10 @@ Uma futura materialização deve ser rejeitada ou revisada se:
 | `GKR-UX-ORGCOL-AUTH-JOBS-001` | pertencimento ≠ representação; contexto e limites de autoridade | absorvido como princípio; jobs autenticados não importados |
 | `GKR-UX-ORGCOL-AUTH-IA-001` | contexto antes de ação, operação ≠ evidência, comercial ≠ relevância | absorvido como princípio; IA autenticada não importada |
 | `GPA-006` | Intelligence = Produto Especializado transversal / Intelligence Layer; `COMPREENDER ≠ DECIDIR` | absorvido |
-| `GKR-UX-HOME-OC-NARR-001` | sete macroexperiências próprias O/C | absorvido |
-| `GKR-UX-HOME-OC-NAV-001` | mesmo Header global, Hero exploratória, `Iniciar Jornada` distinto e bifurcação final | absorvido |
-| `GKR-UX-HOME-OC-SYS-001` | classes de conteúdo/verdade, prova proporcional ao claim e fallback honesto | absorvido |
-| `GKR-UX-HOME-OC-HANDOFF-001` | disciplina de significado, acessibilidade e fronteira pública × autenticada | conteúdo válido absorvido; autorização procedimental histórica não governa a auditoria atual |
+| `GKR-UX-HOME-OC-NARR-001` | sete macroexperiências próprias O/C | absorvido; removido do corpus corrente |
+| `GKR-UX-HOME-OC-NAV-001` | mesmo Header global, Hero exploratória, `Iniciar Jornada` distinto e bifurcação final | absorvido; removido do corpus corrente |
+| `GKR-UX-HOME-OC-SYS-001` | classes de conteúdo/verdade, prova proporcional ao claim e fallback honesto | absorvido; removido do corpus corrente |
+| `GKR-UX-HOME-OC-HANDOFF-001` | disciplina de significado, acessibilidade e fronteira pública × autenticada | conteúdo válido absorvido; removido do corpus corrente |
 | `GKR-UX-HOME-OC-MEDIA-SUPPLY-001` | Media como supply editorial sem transferência de autoridade; patrocínio identificável | absorvido |
 | decisões/Source Locks/Design deliveries anteriores | evidência de checkpoints de construção | não promovidos a direção visual vigente; o release externo atual é governado pelas autoridades comuns posteriores |
 
@@ -1797,10 +1795,6 @@ A auditoria documental já decidiu a função corrente desta Home para o handoff
 
 ### Home O/C
 
-- [Macroexperiências](public-home-organizations-collectives-macroexperience-grouping-map.md)
-- [Header, Hero e CTAs](public-home-organizations-collectives-header-hero-cta-hierarchy.md)
-- [Conteúdo, Prova e Evidência](public-home-organizations-collectives-content-proof-evidence-map.md)
-- [Handoff específico](public-home-organizations-collectives-design-handoff.md)
 - [Supply Editorial do Media](public-home-organizations-collectives-media-editorial-supply-reconciliation.md)
 
 ### Participantes e experiência autenticada

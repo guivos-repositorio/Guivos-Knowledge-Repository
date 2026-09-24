@@ -2,7 +2,7 @@
 id: GEM-004-PLAN-TAXONOMY-AUTHORITY-001
 title: Autoridade Conceitual de Taxonomia, Função e Leitura dos Planos
 status: active
-version: 1.0.1
+version: 1.0.4
 owner: Guivos Economic Model
 last_updated: 2026-09-20
 parent: GEM-004
@@ -12,10 +12,6 @@ depends_on:
   - GEM-004-A2
 related:
   - GPA-004
-  - UXA-100
-  - UXA-100-A1
-  - UXA-100-A2
-  - UXA-100-A3
 normative: true
 ---
 
@@ -31,6 +27,8 @@ Este documento estabelece a autoridade conceitual vigente para **nomes, função
 - Guivos Business.
 
 Ele corrige a deriva histórica que misturava planos de Organização com o produto Guivos Business e substitui, para fins de taxonomia e interpretação conceitual, nomenclaturas anteriores conflitantes existentes em instrumentos derivados.
+
+`UXA-100` e seus antigos addenda permanecem apenas como proveniência histórica no Git; não constituem autoridades relacionadas correntes desta taxonomia.
 
 Este documento não autoriza cobrança, oferta pública, implementação, preço novo, entitlement novo, política fiscal, contrato ou SLA.
 
@@ -240,22 +238,24 @@ Ela é utilizada quando uma contratação deixa de ser autonomamente configuráv
 
 `BND-002` não pertence semanticamente a Enterprise, Scale, Coletivo ou Organização. Também não significa checkout, tela autônoma, produto ou plano.
 
+No Registry corrente, `BND-002` é utilizado pelos fluxos de Planos de **Coletivo e Organização** quando esses contextos atravessam para contratação/dimensionamento assistido (`TRN-416` e `TRN-426`). **Guivos Business não reutiliza `BND-002`**: sua contratação permanece governada por `GPA-004`, `GKR-PLANS-BUSINESS-001` e pelas autoridades Business vigentes.
+
 Transições existentes que chegam a `BND-002` preservam seus IDs e maturidade até revalidação específica; esta correção semântica não promove nenhuma transição.
 
-## 11. Efeito sobre a UXA-100
+## 11. Efeito sobre o legado UXA-100 e os registries correntes
 
-Os nove SVGs, doze superfícies e dezessete transições promovidos pela UXA-100 permanecem com os mesmos IDs e referências.
+`UXA-100` e seus antigos addenda foram absorvidos/removidos do corpus operacional corrente. Seus SVGs e demais materializações permanecem somente como proveniência histórica no Git e **não constituem baseline visual, autoridade de Design ou input corrente para IA**.
 
-Esta autoridade determina somente a leitura correta dos conteúdos:
+Esta autoridade determina somente a leitura conceitual dos IDs que permanecem válidos nas autoridades e registries correntes:
 
 - `PER-*` continua representando Pessoa;
 - `COL-*` continua representando Coletivo;
 - `ORG-*` continua representando a jornada de Organização;
-- nenhum novo `BUS-*`, `SURF`, `TRN`, `BND` ou SVG é criado nesta atualização;
+- nenhum novo `BUS-*`, `SURF`, `TRN`, `BND` ou artefato visual é criado nesta atualização;
 - Guivos Business é formalizado conceitualmente sem antecipar uma nova jornada canônica ou novas superfícies;
-- `BND-002` mantém o ID e muda apenas para a definição genérica governada neste documento.
+- `BND-002` preserva seu ID e sua definição genérica conforme as autoridades correntes.
 
-As materializações UXA-100 existentes deverão ser interpretadas e, quando textual ou documentalmente necessário, sincronizadas com esta autoridade sem promoção artificial de maturidade.
+A maturidade de superfícies e transições deve ser lida exclusivamente nos registries e autoridades vigentes. Esta taxonomia não restaura materializações históricas, não promove maturidade e não cria baseline visual por referência ao legado.
 
 ## 12. Precedência
 

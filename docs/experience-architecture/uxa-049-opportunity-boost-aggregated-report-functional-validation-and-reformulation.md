@@ -2,13 +2,12 @@
 id: UXA-049
 title: Validação Funcional e Reformulação dos Wireframes do Relatório Agregado do Opportunity Boost
 status: active
-version: 0.1.0
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-01
+last_updated: 2026-09-21
 parent: UXA-048
 depends_on:
   - UXA-038
-  - UXA-039
   - UXA-041
   - UXA-043
   - UXA-045
@@ -265,14 +264,16 @@ Esta validação não cria:
 - teste com usuários;
 - checkout, faturamento, cobrança ou Engenharia de Produto.
 
-## 10. Próximos atos governados
+## 10. Continuidade corrente
 
-Após integração e nova autorização, poderão ocorrer separadamente:
+Os antigos “próximos atos” desta validação foram executados ou absorvidos por frentes posteriores e não constituem backlog corrente.
 
-1. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
-2. criar estados de erro, inventário insuficiente e preferência publicitária;
-3. criar estados móveis adicionais de gestão, se priorizados;
-4. testar posteriormente relatório, atribuição, autorrelato, agregação e reconciliação com Organizações e Coletivos;
-5. iniciar políticas especializadas somente após autorização própria.
+Para continuidade operacional, Design ou IA devem consultar:
 
-Nenhum ato é iniciado automaticamente.
+- `GKR-JOURNEY-SURFACE-REGISTRY-001`;
+- `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
+- `GKR-JOURNEY-GAPS-001`;
+- `UXA-038` como contrato funcional corrente do Opportunity Boost;
+- `UXA-099` para estados residuais ainda governados.
+
+Nenhum protótipo, implementação, política econômica final ou Engenharia de Produto é autorizado por este documento.

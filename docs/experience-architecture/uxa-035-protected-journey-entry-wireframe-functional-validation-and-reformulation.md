@@ -2,18 +2,16 @@
 id: UXA-035
 title: Validação Funcional Especializada e Reformulação do Wireframe Móvel do Início Protegido
 status: active
-version: 0.1.0
+version: 0.1.4
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-27
+last_updated: 2026-09-21
 parent: UXA-034
 depends_on:
   - UXA-001
-  - UXA-003-A1
   - UXA-009
   - UXA-011
   - UXA-011-A1
   - UXA-020
-  - UXA-021
   - UXA-023
 related:
   - UXA-002
@@ -25,6 +23,8 @@ normative: false
 ---
 
 # Validação Funcional Especializada e Reformulação do Wireframe Móvel do Início Protegido
+
+> **F-016-A — proveniência sem baseline visual.** A antiga materialização `UXA-034` foi removida do corpus vigente. O vínculo `parent: UXA-034` preserva somente proveniência histórica; nenhum SVG, composição móvel, número de estados ou layout daquela frente constitui entrada corrente de Design/IA. As decisões funcionais preservadas neste documento devem ser consumidas em conjunto com `UXA-020`, `UXA-023`, `GKR-JOURNEY-SURFACE-REGISTRY-001` e `GKR-JOURNEY-TRANSITION-REGISTRY-001`.
 
 ## 1. Finalidade
 
@@ -294,16 +294,15 @@ Esta validação não:
 - conclui acessibilidade técnica;
 - inicia Engenharia de Produto.
 
-## 13. Próximos atos governados
+## 13. Continuidade corrente
 
-Após integração e nova autorização, poderão ocorrer separadamente:
+Os antigos próximos atos desta validação foram executados ou absorvidos por autoridades posteriores e não constituem backlog corrente.
 
-1. criar a referência móvel da Página Inicial pública;
-2. materializar a revisão da compreensão inicial;
-3. validar a transição para a primeira Tela Hoje;
-4. criar estados especializados de texto, voz e arquivos;
-5. criar referência do início protegido para computador;
-6. criar estados de processamento, pausa, falha e retomada;
-7. retomar independentemente os testes dos Resultados Empresariais.
+A continuidade vigente deve ser lida por:
 
-Nenhum ato é iniciado automaticamente.
+- `UXA-097` para a ligação entre compreensão inicial confirmada e Tela Hoje;
+- `GKR-JOURNEY-SURFACE-REGISTRY-001`;
+- `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
+- autoridades correntes de `PER-002` e da Jornada da Pessoa.
+
+Estados especializados ainda não cobertos devem permanecer registrados como lacuna antes de qualquer nova materialização. Nenhum protótipo, implementação ou Engenharia de Produto é autorizado por este documento.

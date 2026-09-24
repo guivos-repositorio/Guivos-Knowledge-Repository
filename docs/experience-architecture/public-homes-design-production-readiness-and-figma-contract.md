@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.3
+version: 1.3.26
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 normative: true
 maturity: current_design_ready_main_canonical_first_class
 depends_on:
@@ -66,8 +66,11 @@ Checkpoint corrente: `CURRENT MAIN`, resolvido no momento do consumo.
 QUICK-REFERENCE MOVEMENTS
 → 83 / 83 COVERED
 
-COMMON AUTHORITIES
+UNIVERSAL DESIGN AUTHORITIES
 → CURRENT
+
+OPTIONAL AI AUTHORITY
+→ CONDITIONAL / CURRENT WHEN USED
 
 DESIGN PRODUCTION RELEASE
 → GRANTED
@@ -151,29 +154,41 @@ Findings, snapshots e remediações encerradas pertencem à história do Git e n
 
 ## 6. Composição de fontes por Home
 
-Cinco autoridades comuns acompanham todas as Homes:
+Quatro autoridades universais acompanham todas as Homes:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001`;
-2. `GKR-UX-HOMES-GENINPUT-001`;
-3. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001` — este documento;
-4. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001`;
-5. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`.
+2. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001` — este documento;
+3. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001`;
+4. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`.
+
+Quando a designer optar por usar IA, acrescenta-se:
+
+- `GKR-UX-HOMES-GENINPUT-001` — autoridade condicional de Source Lock/prompt.
+
+O uso manual não depende dessa autoridade de IA.
+
+A lista universal é:
+
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001`;
+2. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001` — este documento;
+3. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001`;
+4. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`.
 
 O Manifesto corrente fixa o conjunto canônico no checkpoint do `main`. Snapshot não é pré-condição para Design; quando existir, funciona apenas como artefato de transporte congelado.
 
 Fontes específicas:
 
 ### Pessoa
-- `GKR-UX-HOME-MASTER-001 v1.0.4`;
-- `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.1`.
+- `GKR-UX-HOME-MASTER-001 v1.0.6`;
+- `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.2`.
 
 ### Organizações e Coletivos
-- `GKR-UX-HOME-OC-MASTER-001 v1.0.4`;
-- `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.0`.
+- `GKR-UX-HOME-OC-MASTER-001 v1.0.5`;
+- `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.1`.
 
 ### Mall
-- `GKR-UX-HOME-MALL-MASTER-001 v1.1.2`;
-- `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.0`.
+- `GKR-UX-HOME-MALL-MASTER-001 v1.1.3`;
+- `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.1`.
 
 Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `MALL-HS-01 BASELINE_PUBLIC` — tese, pergunta-mãe, identidade Guivos e descoberta são base permanente;
@@ -184,8 +199,8 @@ Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `MALL-HS-06 SPONSORED_EXPOSURE` — exposição paga permanece identificada e não se disfarça de relevância orgânica.
 
 ### Travel
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.4`;
-- `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.0`.
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.5`;
+- `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.1`.
 
 Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `TRAVEL-HS-01 BASELINE_PUBLIC` — pergunta-mãe, identidade Guivos, inspiração e acesso a serviços são a base;
@@ -196,27 +211,28 @@ Contrato corrente que o guia/Source Lock corrente deve explicitar:
 - `TRAVEL-HS-06 CAMPAIGN_OR_SPONSORED` — campanha é temporária e patrocínio permanece identificado.
 
 ### Media
-- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.2`;
+- `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.3`;
 - `GPA-005 v1.2.0`.
 
 ### Ads
-- `GKR-UX-HOME-ADS-MASTER-001 v1.0.2`;
+- `GKR-UX-HOME-ADS-MASTER-001 v1.0.3`;
 - `GPA-007 v1.3.0`.
 
 ### Business
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.8`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4`;
-- `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3`;
-- `GPA-004 v1.7.2`.
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.27`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.8`;
+- `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.10`;
+- `GPA-004 v1.7.4`;
+- `GKR-PLANS-BUSINESS-001 v1.3.1` — `docs/plans/business.md`.
 
 ### Intelligence
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.11`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.10`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.9`;
-- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.4`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.16`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.15`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.12`;
+- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.5`;
 - `GKR-UX-HOMES-OUTCOME-001 v1.0.0`;
-- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.1`;
+- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.2`;
 - `GPA-006 v2.0.1`.
 
 ### 6.9 Fechamento corrente de fontes
@@ -227,11 +243,14 @@ O conjunto corrente é definido pelo Manifesto Canônico vigente.
 HOMES COM MASTER
 → 8 / 8
 
-AUTORIDADES COMUNS
-→ 5 / 5
+AUTORIDADES UNIVERSAIS DE DESIGN
+→ 4 / 4
+
+AUTORIDADE OPCIONAL DE IA
+→ 1 / 1 QUANDO IA FOR UTILIZADA
 
 FONTES CANÔNICAS DO MANIFESTO
-→ 29 / 29 IDENTIFICADAS POR PATH + ID + VERSION
+→ 30 / 30 IDENTIFICADAS POR PATH + ID + VERSION
 
 HOME MASTERS
 → CURRENT
@@ -253,7 +272,7 @@ Documentos adicionais podem ser consultados deliberadamente quando uma dúvida c
 
 Quando IA for utilizada, trabalhar uma Home por vez. Não carregar documentos específicos das oito Homes simultaneamente.
 
-A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + cinco fontes comuns + fontes específicas daquela Home.
+A ferramenta deve receber: `LEIA-PRIMEIRO/SOURCE LOCK` daquela Home + quatro autoridades universais de Design + `GKR-UX-HOMES-GENINPUT-001` + fontes específicas daquela Home.
 
 Output inicial obrigatório: `EXPLORAÇÃO / NÃO CANÔNICA`.
 

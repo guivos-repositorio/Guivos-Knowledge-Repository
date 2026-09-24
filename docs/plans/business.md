@@ -2,9 +2,9 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 1.2.0
+version: 1.3.1
 owner: Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-23
 normative: false
 depends_on:
   - GPA-004
@@ -72,6 +72,128 @@ Enterprise = atendimento humano obrigatório
 ```
 
 Uma configuração Scale pode ser suficientemente padronizada para operar em Self-service. Uma configuração Growth pode exigir apoio por integração, governança ou outra complexidade específica.
+
+## Como funciona o Self-service dentro da contratação online
+
+Self-service é um **modelo de implementação/operação dentro da contratação online do Guivos Business**. A composição e a contratação permanecem digitais também quando a implementação posterior exigir suporte ou operação gerenciada. Self-service não é um quinto plano, não é uma oferta separada e não significa que tudo esteja incluído na assinatura-base.
+
+A lógica de referência é:
+
+```text
+NECESSIDADE DA EMPRESA
+↓
+OFERTA(S) A UTILIZAR
+↓
+ESCALA / PARTICIPANTES / ACESSOS
+↓
+CAPACIDADES NECESSÁRIAS
+↓
+PLANO COMPATÍVEL
+↓
+COMPOSIÇÃO DO VALOR
+↓
+CONTRATAÇÃO ONLINE
+↓
+CONFIGURAÇÃO E OPERAÇÃO
+```
+
+### Quadro de composição Self-service
+
+| Etapa | O que a empresa define ou seleciona | O que isso representa | Pode alterar o plano? | Pode alterar o valor? |
+|---|---|---|---|---|
+| **1. Oferta** | Programas de Incentivo, Guivos Journey custeado ou ambas as ofertas | o que a empresa pretende utilizar | não determina sozinho o plano | sim, conforme a composição econômica aplicável |
+| **2. Escala** | participantes, acessos e demais volumes comercialmente formalizados | quanto da capacidade será utilizada | sim, quando a escala ultrapassar a capacidade do plano | sim |
+| **3. Intelligence** | profundidade analítica e capacidades aplicáveis | quanto de compreensão/analytics a configuração exige | sim, conforme os entitlements vigentes | sim, quando houver capacidade comercializada separadamente |
+| **4. Integrações e eventos** | integrações necessárias para receber/enviar eventos ou dados autorizados | complexidade de conexão com outros sistemas | sim | sim, quando aplicável |
+| **5. Governança** | requisitos de gestão, controle e governança compatíveis com a operação | complexidade administrativa e de controle | sim | pode alterar, conforme a configuração |
+| **6. Nível de serviço contratual** | capacidades de serviço previstas no plano/contrato | nível de atendimento e compromisso contratual | pode exigir plano superior | pode alterar |
+| **7. Implementação/operação** | Self-service, apoio do suporte ou gerenciado | quanto a Guivos participa da implantação/operação | **não define o plano por si só** | sim, se houver serviço adicional contratado |
+| **8. Orçamento de incentivo** | valor que a empresa decide disponibilizar para concessões | recurso operacional pré-pago do programa | **não** | sim, mas fica separado da assinatura |
+| **9. Acessos Journey custeados** | quantidade e condição dos acessos elegíveis contratados | custeio empresarial do Journey existente | pode afetar escala/capacidade | sim; possui relação econômica própria |
+
+Os limites quantitativos e thresholds exatos que fazem uma dimensão migrar de Start para Growth, Scale ou Enterprise continuam dependentes dos entitlements comerciais formalmente aprovados. O quadro define a **lógica de composição**, não inventa esses limites.
+
+### O que determina o plano contratado
+
+O plano deve refletir a **maior capacidade necessária para suportar integralmente a configuração escolhida**.
+
+```text
+CAPACIDADE OPERACIONAL REQUERIDA
++
+ESCALA REQUERIDA
++
+INTELLIGENCE REQUERIDO
++
+INTEGRAÇÃO REQUERIDA
++
+GOVERNANÇA REQUERIDA
++
+NÍVEL DE SERVIÇO CONTRATUAL REQUERIDO
+↓
+PLANO COMPATÍVEL
+```
+
+Na contratação digital, cada requisito deve ser comparado aos entitlements vigentes. Se uma única dimensão exigir capacidade superior, a configuração precisa ser enquadrada em um plano que suporte essa dimensão.
+
+Isso evita duas interpretações incorretas:
+
+```text
+PLANO
+≠ pacote escolhido apenas pelo preço
+
+PLANO
+≠ soma arbitrária de módulos
+```
+
+O plano é a camada de capacidade que sustenta a configuração contratada.
+
+### O que determina o valor total
+
+O valor total não é necessariamente igual apenas ao preço-base do plano.
+
+A composição econômica deve ser apresentada separadamente:
+
+| Componente | Função econômica | Integra a assinatura-base? |
+|---|---|---|
+| **Plano Business** | capacidade-base contratada | sim |
+| **Escala / participantes / acessos** | volume da operação, quando precificado separadamente | conforme regra comercial |
+| **Ofertas contratadas** | Programas de Incentivo e/ou Journey custeado | conforme regra comercial |
+| **Acessos Journey custeados** | acesso ao Journey pago pela empresa | relação econômica própria |
+| **Intelligence avançado / exportações / API / integrações** | capacidades adicionais, quando comercializadas separadamente | somente quando o entitlement do plano não as incluir |
+| **Serviços adicionais** | suporte adicional ou operação gerenciada contratada | não necessariamente |
+| **Orçamento pré-pago de incentivo** | recursos destinados às concessões do programa | **não**; fica separado da assinatura |
+
+Leitura de referência:
+
+```text
+VALOR RECORRENTE / CONTRATUAL
+=
+PLANO BUSINESS
++ COMPONENTES VARIÁVEIS APLICÁVEIS
++ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+RECURSO OPERACIONAL SEPARADO
+=
+ORÇAMENTO PRÉ-PAGO DE INCENTIVO
+```
+
+O configurador deve mostrar essas parcelas separadamente para que a empresa compreenda **o que está pagando pela capacidade da plataforma, o que varia com sua configuração e o que constitui orçamento operacional do programa**.
+
+### Como os “serviços” ficam distribuídos
+
+No caminho Self-service, a leitura correta não é um catálogo solto de serviços, mas uma composição em camadas:
+
+| Camada | Conteúdo |
+|---|---|
+| **Plano-base** | Start · Growth · Scale · Enterprise |
+| **Ofertas Business** | Programas de Incentivo · Journey custeado · ambas |
+| **Capacidades da configuração** | escala · Intelligence · integrações · governança · nível de serviço |
+| **Volumes contratados** | participantes · acessos · demais volumes formalizados |
+| **Serviços de implantação/operação** | Self-service · suporte adicional · gerenciado |
+| **Recursos operacionais** | orçamento pré-pago de incentivo |
+| **Condições comerciais** | periodicidade, mercado, moeda, tributação e demais condições aplicáveis |
+
+Self-service significa que, além de **montar, compreender, comparar e contratar a composição digitalmente**, a empresa consegue seguir para a implementação/operação com autonomia quando a configuração for elegível. Configurações com suporte ou operação gerenciada continuam sendo contratadas online; o que muda é a participação da Guivos depois da contratação.
 
 ## Start
 

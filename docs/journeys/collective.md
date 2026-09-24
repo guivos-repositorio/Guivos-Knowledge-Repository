@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: active
-version: 0.24.0
+version: 0.25.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-22
 related:
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
   - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
@@ -13,6 +14,7 @@ related:
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
   - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: false
@@ -50,7 +52,7 @@ VISÃO GERAL
 → RELAÇÕES INSTITUCIONAIS
 ```
 
-A topologia autenticada é governada pelas autoridades O/C correntes.
+A topologia autenticada é governada pelos Jobs/autoridades e pelas demais autoridades O/C correntes.
 
 ## 4. Domínios de Evolução
 
@@ -82,6 +84,12 @@ COLLECTIVE JOURNEY VIEW
 
 AUTHENTICATED TOPOLOGY
 → CURRENT AUTHORITIES
+
+HIGH-FIDELITY DESIGN
+→ AUTHORIZED / NOT_STARTED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
 
 VISUAL MATERIALIZATION
 → DESIGN-OWNED

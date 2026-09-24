@@ -2,9 +2,9 @@
 id: UXA-038
 title: Opportunity Boost — Contrato Funcional da Experiência
 status: active
-version: 0.2.0
+version: 0.2.2
 owner: Guivos Experience Architecture
-last_updated: 2026-07-28
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-004
@@ -13,7 +13,6 @@ depends_on:
   - UXA-025
   - GEM-007-A1
 related:
-  - UXA-039
   - GEM-010-A2
   - GPA-007
   - M7.41
@@ -389,10 +388,10 @@ Pausa será reversível quando a causa permitir. Cancelamento encerrará entrega
 
 ## 21. Estado funcional
 
-`functionally_valid_after_reformulation — advertiser flow, participant controls, sponsored disclosure, state model and reporting boundaries established; wireframes and evidence pending`.
+`functionally_valid_after_reformulation — advertiser flow, participant controls, sponsored disclosure, state model and reporting boundaries established; historical low-fidelity producers were validated and later absorbed where governed; current consumption occurs through this contract and the Journey registries`.
 
 ## 22. Limites
 
 Este contrato não cria design final, algoritmo, compra de mídia, checkout, cobrança, perfil publicitário individual, política final de categorias, antifraude técnico, protótipo, teste ou desenvolvimento.
 
-A experiência deverá passar por wireframes, validação dos wireframes e testes com Pessoas, Organizações e Coletivos antes de qualquer operação.
+Operação real continua dependente de implementação, política operacional, cobrança, controles técnicos e testes adequados. Wireframes históricos já validados não constituem baseline visual corrente, protótipo navegável nem autorização de implementação.

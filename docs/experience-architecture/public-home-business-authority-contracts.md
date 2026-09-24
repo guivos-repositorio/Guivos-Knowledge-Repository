@@ -2,16 +2,13 @@
 id: GKR-UX-HOME-BUSINESS-AUTHORITY-001
 title: Contratos de Autoridade — Home Pública — Guivos Business
 status: active
-version: 1.0.3
+version: 1.0.10
 owner: Experience Architecture
-last_updated: 2026-09-20
-parent: GKR-UX-HOME-BUSINESS-NARRATIVE-001
+last_updated: 2026-09-23
+parent: GPA-004
 depends_on:
-  - GKR-UX-HOME-BUSINESS-NARRATIVE-001
   - GPA-004
-  - GKR-BUSINESS-CONTINUITY-001
   - GKR-STATE-001
-  - ROADMAP-12.79.0
 normative: true
 ---
 
@@ -19,7 +16,7 @@ normative: true
 
 ## 1. Finalidade
 
-Este documento registra o **Checkpoint 6 — Contratos de Autoridade** da Home Pública do Guivos Business.
+Este documento consolida os **Contratos de Autoridade correntes** da Home Pública do Guivos Business.
 
 Ele define os limites de autoridade que futuras etapas de copy, conversão, Documento Mestre, Source Lock e Design devem preservar.
 
@@ -31,7 +28,7 @@ Consequência central para o Business:
 
 > **A empresa pode aumentar sua capacidade de apoiar pessoas sem aumentar sua autoridade sobre a vida delas.**
 
-Este documento não substitui `GPA-004` nem `GKR-UX-HOME-BUSINESS-NARRATIVE-001`. Ele complementa essas autoridades.
+Este documento não substitui `GPA-004`. Ele especializa, para a Home Pública do Guivos Business, os limites de autoridade que o Documento Mestre, a conversão vigente e o Source Lock corrente devem preservar.
 
 ## 2. Contrato 1 — autoridade sobre a evolução
 
@@ -394,7 +391,7 @@ A Home não pode sugerir que:
 
 ## 12. Estado de convergência e consumo corrente
 
-A proveniência deste documento permanece no Checkpoint 6, mas seu consumo corrente deve respeitar as autoridades posteriores já integradas.
+Este documento permanece autoridade complementar ativa de limites; seu consumo corrente deve respeitar as autoridades Business vigentes e o Manifesto canônico.
 
 ```text
 ARQUITETURA NARRATIVA
@@ -405,16 +402,16 @@ CONTRATOS DE AUTORIDADE
 → ESTE DOCUMENTO = AUTORIDADE COMPLEMENTAR DE LIMITES
 
 CONVERSÃO
-→ GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0
-→ AUTORIDADE POSTERIOR
+→ GKR-UX-HOME-BUSINESS-CONVERSION-002
+→ AUTORIDADE DOWNSTREAM CORRENTE
 
 DOCUMENTO MESTRE
-→ GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4
-→ EXISTS / ACTIVE
+→ GKR-UX-HOME-BUSINESS-MASTER-001
+→ DOWNSTREAM / ACTIVE
 
 SOURCE LOCK
-→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.7
-→ EXISTS / ACTIVE
+→ GKR-UX-HOME-BUSINESS-SOURCELOCK-001
+→ DOWNSTREAM / ACTIVE
 
 DESIGN PRODUCTION RELEASE
 → GRANTED

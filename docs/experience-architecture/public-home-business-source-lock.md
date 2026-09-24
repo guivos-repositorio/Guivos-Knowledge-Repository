@@ -2,17 +2,17 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.8
+version: 1.1.27
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-21
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
 depends_on:
   - GKR-UX-HOME-BUSINESS-MASTER-001
   - GKR-UX-HOME-BUSINESS-CONVERSION-002
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
   - GPA-004
+  - GKR-PLANS-BUSINESS-001
   - GKR-STATE-001
-  - ROADMAP-12.79.0
 normative: true
 ---
 
@@ -44,34 +44,38 @@ Regra:
 
 > **Source Lock congela a fonte. Não autoriza, por si só, a materialização.**
 
-## 2. Checkpoint do Source Lock
+## 2. Estado corrente do Source Lock
 
 ```text
 HOME
 Guivos Business
 
-FASE
-Source Lock reconciliado para handoff designer-first
+STATE
+→ ACTIVE / NORMATIVE
 
-ORIGIN CHECKPOINT
-main @ 41dd34ca7f2a22776b8eea57d99ef1b77db82969
-→ HISTORICAL PROVENANCE
+SOURCE OF TRUTH
+→ CURRENT MAIN
 
-RECONCILIATION
-→ 2026-09-19
-→ CURRENT DESIGNER-FIRST / AI-OPTIONAL CONTRACT APPLIES
+DESIGN REGIME
+→ DESIGNER-FIRST
+→ AI OPTIONAL
+→ SNAPSHOT NOT REQUIRED
 
 DOCUMENTO MESTRE
-GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4
+GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.8
 
 CONVERSÃO VIGENTE
-GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0
+GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2
 
 CONTRATOS DE AUTORIDADE
-GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3
+GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.10
 
 ARQUITETURA FUNCIONAL
-GPA-004 v1.7.2
+GPA-004 v1.7.4
+
+HISTORICAL ORIGIN / CHECKPOINT
+→ GIT PROVENANCE ONLY
+→ NOT OPERATIONAL INPUT
 ```
 
 Objetivo do lock:
@@ -83,16 +87,14 @@ Objetivo do lock:
 Para a produção externa de Design da Home Business, o pacote específico de autoridade deve ser restrito a:
 
 1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — este Source Lock;
-2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.4 — `docs/experience-architecture/public-home-business-master-document.md`;
-3. `GKR-UX-HOME-BUSINESS-CONVERSION-002` v1.0.0 — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.3 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
-5. `GPA-004` v1.6.0 — arquitetura funcional vigente do Guivos Business.
-
-A autoridade narrativa anterior permanece histórica e explicativa, mas **não deve ser adicionada automaticamente ao pacote inicial de materialização**, pois o Documento Mestre já incorpora os refinamentos de precedência posteriores.
+2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.8 — `docs/experience-architecture/public-home-business-master-document.md`;
+3. `GKR-UX-HOME-BUSINESS-CONVERSION-002` v1.0.2 — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
+4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.10 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+5. `GPA-004` v1.7.4 — arquitetura funcional vigente do Guivos Business;
+6. `GKR-PLANS-BUSINESS-001` v1.3.1 — `docs/plans/business.md` — planos, preços de referência e composição Self-service corrente.
 
 Não adicionar automaticamente:
 
-- conversão v1 supersedida;
 - checkpoints anteriores;
 - rascunhos de conversa;
 - benchmarks externos;
@@ -508,17 +510,43 @@ Supporting copy:
 
 O componente deve ser concebido como **configurador comercial**, não apenas calculadora simples.
 
-Fatores candidatos podem incluir, quando formalizados:
+A composição Self-service deve preservar as seguintes dimensões, quando aplicáveis e formalizadas:
 
-- número de pessoas;
-- oferta;
-- plano/capacidade;
-- tipo de operação;
-- Intelligence;
-- integrações;
-- governança;
-- serviço;
-- mercado.
+| Dimensão | Papel |
+|---|---|
+| Oferta | Programas de Incentivo, Journey custeado ou ambas |
+| Escala | participantes, acessos e demais volumes formalizados |
+| Intelligence | profundidade/capacidades aplicáveis |
+| Integrações | eventos, conexões e integrações autorizadas |
+| Governança | requisitos de gestão e controle |
+| Nível de serviço | entitlement contratual aplicável |
+| Implementação/operação | Self-service, suporte ou gerenciado |
+| Orçamento de incentivo | recurso pré-pago separado da assinatura |
+| Acessos Journey custeados | relação econômica própria |
+
+Regra congelada de leitura:
+
+```text
+CONFIGURAÇÃO ESCOLHIDA
+→ REQUISITOS DE CAPACIDADE
+→ PLANO QUE SUPORTA INTEGRALMENTE OS REQUISITOS
+→ VALOR DA CONFIGURAÇÃO
+```
+
+O plano não é escolhido apenas pelo preço nem resulta de uma soma arbitrária de módulos. Ele representa a camada de capacidade que comporta a configuração contratada.
+
+O valor deve ser legível em parcelas distintas:
+
+```text
+PLANO BUSINESS
++ COMPONENTES VARIÁVEIS APLICÁVEIS
++ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+ORÇAMENTO PRÉ-PAGO DE INCENTIVO
+→ RECURSO OPERACIONAL SEPARADO
+```
+
+Os thresholds quantitativos, entitlements, SLAs, preços unitários e fórmulas exatas ainda não formalizados não podem ser inventados pelo Design ou pelo configurador conceitual.
 
 Resultado conceitual:
 
@@ -773,14 +801,14 @@ A produção externa de Design deve sinalizar essas lacunas quando materialmente
 
 ## 27. Contexto procedimental atual de Design
 
-O regime corrente das oito Homes é governado pelas autoridades comuns posteriores a este Source Lock histórico:
+O regime corrente das oito Homes é governado pelas autoridades comuns vigentes:
 
 ```text
-GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.2
+GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.10
 → DESIGNER-FIRST
 → 8 / 8 HOMES
 
-GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.1
+GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.2
 → DESIGN PRODUCTION RELEASE = GRANTED
 → EXTERNAL DESIGNER PRODUCTION
 
@@ -802,12 +830,13 @@ O consumo corrente da Home Business é resolvido pelo Manifesto canônico vigent
 
 Usar:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.2` como autoridade comum de handoff;
-2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.8`;
-3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.4`;
-4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.0`;
-5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.3`;
-6. `GPA-004 v1.7.2`.
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.10` como autoridade comum de handoff;
+2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.27`;
+3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.8`;
+4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2`;
+5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.10`;
+6. `GPA-004 v1.7.4`;
+7. `GKR-PLANS-BUSINESS-001 v1.3.1` — planos, preços de referência e composição Self-service corrente.
 
 ```text
 SOURCE OF TRUTH

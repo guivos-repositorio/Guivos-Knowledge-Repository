@@ -2,15 +2,14 @@
 id: UXA-043
 title: Validação Funcional e Reformulação dos Wireframes do Cartão Patrocinado e da Explicação do Opportunity Boost
 status: active
-version: 0.1.0
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-29
+last_updated: 2026-09-21
 parent: UXA-042
 depends_on:
   - UXA-004
   - UXA-009
   - UXA-038
-  - UXA-039
   - UXA-041
   - GEM-007-A1
   - GEM-010-A2
@@ -231,15 +230,16 @@ Esta validação não cria:
 - política jurídica, fiscal ou contábil final;
 - checkout, cobrança ou Engenharia de Produto.
 
-## 10. Próximos atos governados
+## 10. Continuidade corrente
 
-Após integração e nova autorização, poderão ocorrer separadamente:
+Os antigos “próximos atos” desta validação foram executados ou absorvidos por frentes posteriores e não constituem backlog corrente.
 
-1. criar os wireframes dos estados patrocinados para Lista e Mapa;
-2. validar funcionalmente e reformular esses estados;
-3. criar os wireframes de gestão da campanha ativa;
-4. criar o wireframe do relatório agregado;
-5. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
-6. testar posteriormente disclosure, densidade, frequência e controles com Pessoas, Organizações e Coletivos.
+Para continuidade operacional, Design ou IA devem consultar:
 
-Nenhum ato é iniciado automaticamente.
+- `GKR-JOURNEY-SURFACE-REGISTRY-001`;
+- `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
+- `GKR-JOURNEY-GAPS-001`;
+- `UXA-038` como contrato funcional corrente do Opportunity Boost;
+- validações específicas ainda mantidas no corpus quando a superfície correspondente exigir evidência adicional.
+
+Nenhum protótipo, implementação, política econômica final ou Engenharia de Produto é autorizado por este documento.

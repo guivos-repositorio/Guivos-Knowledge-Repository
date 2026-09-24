@@ -2,13 +2,12 @@
 id: UXA-058
 title: Contrato Funcional de Interações, Recomendações e Conexões
 status: active
-version: 0.2.0
+version: 0.2.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-30
+last_updated: 2026-09-21
 parent: UXA-000
 depends_on:
   - UXA-001
-  - UXA-003
   - UXA-004
   - UXA-009
   - UXA-011
@@ -1057,16 +1056,15 @@ Este contrato não define:
 
 Também não cria automaticamente perfil social global, seguidores entre pessoas, ranking, gamificação de mensagens ou publicidade em canais internos.
 
-## 49. Próximos atos candidatos
+## 49. Continuidade corrente
 
-Após integração e nova autorização, poderão ocorrer separadamente:
+Os pacotes históricos de descoberta, Perfil Público, participação e `Meus Coletivos` já foram materializados, validados e absorvidos pelos contratos/registries correntes. Eles não constituem backlog aberto desta UXA.
 
-1. materializar wireframes da descoberta, perfil público, participação e `Meus Coletivos` definidos pela UXA-056;
-2. materializar wireframes de avaliação e reputação definidos pela UXA-057;
-3. materializar wireframes de interações, recomendações e conexões definidos pela UXA-058;
-4. dividir esses conjuntos por pessoa, responsável e canal;
-5. validar funcionalmente cada conjunto;
-6. desenvolver políticas especializadas de moderação, privacidade, segurança, estatística e notificações;
-7. preparar protótipo e testes somente após validações próprias.
+Permanecem como lacunas especializadas, quando ainda não fechadas no Surface Registry:
 
-Nenhum ato posterior é iniciado automaticamente.
+- avaliação e reputação governadas por `UXA-057`;
+- interações, recomendações e conexões governadas por esta UXA;
+- comunicação, moderação, privacidade, segurança e notificações que exijam contrato/materialização próprios;
+- protótipo e testes somente após autorização e validações específicas.
+
+A fonte de verdade para pendências é `GKR-JOURNEY-GAPS-001` em conjunto com os Surface/Transition Registries. Nenhum ato posterior é iniciado automaticamente.
