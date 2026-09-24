@@ -4503,8 +4503,13 @@
 </tr>
 <tr>
 <td>autorização high-fidelity O/C</td>
-<td><strong>GRANTED / NOT_STARTED</strong></td>
+<td><strong>GRANTED</strong></td>
 <td><a href="../organizations-collectives-authenticated-high-fidelity-authorization/">Autorização High-Fidelity</a></td>
+</tr>
+<tr>
+<td>execução high-fidelity O/C</td>
+<td><strong>RELEASED FOR EXTERNAL DESIGN / DELIVERY NOT_RECEIVED</strong></td>
+<td><a href="../organizations-collectives-authenticated-high-fidelity-execution-handoff/">Release e Handoff High-Fidelity</a></td>
 </tr>
 <tr>
 <td>UI / protótipo autenticado</td>
@@ -4529,7 +4534,8 @@
 <li><a href="../organizations-collectives-authenticated-low-fidelity-wireframe-delivery/">Entrega Low-Fidelity</a>;</li>
 <li><a href="../organizations-collectives-authenticated-low-fidelity-functional-validation/">Validação Low-Fidelity</a>;</li>
 <li><a href="../organizations-collectives-authenticated-high-fidelity-eligibility/">Elegibilidade High-Fidelity</a>;</li>
-<li><a href="../organizations-collectives-authenticated-high-fidelity-authorization/">Autorização High-Fidelity</a>.</li>
+<li><a href="../organizations-collectives-authenticated-high-fidelity-authorization/">Autorização High-Fidelity</a>;</li>
+<li><a href="../organizations-collectives-authenticated-high-fidelity-execution-handoff/">Release e Handoff para Execução High-Fidelity</a>.</li>
 </ol>
 <p>Esses documentos permanecem autoridades correntes de detalhe. Eles saem do MENU principal para reduzir poluição de navegação, não por perda de validade.</p>
 <p>A existência de Jobs, Arquitetura da Informação, mapa lógico de superfícies e mapa funcional de estados não promove automaticamente fluxos, sitemap técnico, menu visual, wireframe, UI, RBAC técnico ou implementação.</p>
@@ -4844,6 +4850,14 @@ PUBLICAR MAIS ≠ CONTRIBUIR MAIS
 <td><code>GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001</code></td>
 </tr>
 <tr>
+<td>autorização high-fidelity</td>
+<td><code>GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001</code></td>
+</tr>
+<tr>
+<td>release de execução high-fidelity</td>
+<td><code>GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001</code></td>
+</tr>
+<tr>
 <td>Jornada da Organização</td>
 <td><code>journeys/organization.md</code></td>
 </tr>
@@ -4908,10 +4922,16 @@ HIGH-FIDELITY ELIGIBILITY
 → PASS / v1.0.1
 
 HIGH-FIDELITY AUTHORIZATION
-→ GRANTED / v1.0.0
+→ GRANTED / v1.0.2
 
-HIGH-FIDELITY EXECUTION
-→ AUTHORIZED / NOT_STARTED
+HIGH-FIDELITY EXECUTION RELEASE
+→ ISSUED / GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0
+
+HIGH-FIDELITY DELIVERY
+→ NOT_RECEIVED
+
+HIGH-FIDELITY VALIDATION
+→ NOT_STARTED
 
 INTERACTIVE PROTOTYPE
 → NOT_AUTHORIZED

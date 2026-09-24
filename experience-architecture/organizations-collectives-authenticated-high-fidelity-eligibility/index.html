@@ -4057,7 +4057,7 @@
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Esta autoridade adjudica somente se, após o <code>PASS</code> funcional da primeira entrega low-fidelity autenticada de Organização e Coletivo, existe base suficiente para submeter um próximo estágio visual a uma <strong>decisão separada de autorização high-fidelity</strong>.</p>
 <p>Ela não é, por si só, o ato de autorização nem de execução de Design high-fidelity.</p>
-<p>A autorização separada foi posteriormente concedida por <code>GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0</code>. Portanto, esta autoridade continua governando <strong>elegibilidade</strong>, enquanto o ato posterior governa <strong>autorização</strong>.</p>
+<p>A autorização separada foi posteriormente concedida por <code>GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001</code>; o ato separado de execução foi emitido por <code>GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0</code>. Portanto, esta autoridade continua governando <strong>elegibilidade</strong>, enquanto os atos posteriores governam <strong>autorização</strong> e <strong>release de execução externa</strong>.</p>
 <p>Ela não executa:</p>
 <ul>
 <li>Design high-fidelity;</li>
@@ -4353,8 +4353,8 @@ O/C HIGH-FIDELITY DESIGN AUTHORIZATION
 → GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
 
 O/C HIGH-FIDELITY DESIGN EXECUTION
-→ AUTHORIZED
-→ NOT_STARTED
+→ RELEASED_FOR_EXTERNAL_EXECUTION
+→ HIGH-FIDELITY_DELIVERY_NOT_RECEIVED
 
 INTERACTIVE PROTOTYPE
 → NOT_AUTHORIZED
@@ -4367,15 +4367,16 @@ SOURCE LOCK
 → PASS
 
 AUTHORITY
-→ GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1
+→ GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.2
 
 AUTHORIZATION DECISION
 → COMPLETED / GRANTED
 → GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
 
 NEXT GOVERNED STAGE
-→ HIGH-FIDELITY DESIGN EXECUTION
-→ NOT_STARTED
+→ HIGH-FIDELITY DESIGN DELIVERY
+→ EXTERNAL EXECUTION RELEASED
+→ DELIVERY NOT_RECEIVED
 
 CURRENT LOW-FIDELITY REFERENCE
 → GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0
@@ -4390,7 +4391,7 @@ DO NOT INFER
 → IMPLEMENT
 → PRODUCE
 </code></pre></div>
-<p>Esta autoridade comprova a elegibilidade que antecedeu a autorização separada. A autorização high-fidelity já foi concedida por autoridade própria, mas a execução permanece <code>NOT_STARTED</code>. Nenhum protótipo, implementação, produção ou estágio posterior é executado por este documento.</p>
+<p>Esta autoridade comprova a elegibilidade que antecedeu a autorização separada. A autorização high-fidelity foi concedida por autoridade própria e o release de execução externa foi emitido por <code>GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0</code>; a entrega high-fidelity ainda não foi recebida ou validada. Nenhum protótipo, implementação, produção ou estágio posterior é executado por este documento.</p>
 
 
 
