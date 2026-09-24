@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
 title: Organizações e Coletivos — Elegibilidade Pós-Validação para Design High-Fidelity
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-24
 normative: true
 maturity: authenticated_high_fidelity_design_eligibility_pass_authorization_granted
 depends_on:
@@ -20,6 +20,7 @@ depends_on:
 related:
   - GKR-UX-ORGCOL-UX-STATE-001
   - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
   - GKR-STATE-001
   - UXA-014
   - UXA-019
@@ -33,7 +34,7 @@ Esta autoridade adjudica somente se, após o `PASS` funcional da primeira entreg
 
 Ela não é, por si só, o ato de autorização nem de execução de Design high-fidelity.
 
-A autorização separada foi posteriormente concedida por `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0`. Portanto, esta autoridade continua governando **elegibilidade**, enquanto o ato posterior governa **autorização**.
+A autorização separada foi posteriormente concedida por `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001`; o ato separado de execução foi emitido por `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0`. Portanto, esta autoridade continua governando **elegibilidade**, enquanto os atos posteriores governam **autorização** e **release de execução externa**.
 
 Ela não executa:
 
@@ -385,8 +386,8 @@ O/C HIGH-FIDELITY DESIGN AUTHORIZATION
 → GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
 
 O/C HIGH-FIDELITY DESIGN EXECUTION
-→ AUTHORIZED
-→ NOT_STARTED
+→ RELEASED_FOR_EXTERNAL_EXECUTION
+→ HIGH-FIDELITY_DELIVERY_NOT_RECEIVED
 
 INTERACTIVE PROTOTYPE
 → NOT_AUTHORIZED
@@ -409,8 +410,9 @@ AUTHORIZATION DECISION
 → GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.0
 
 NEXT GOVERNED STAGE
-→ HIGH-FIDELITY DESIGN EXECUTION
-→ NOT_STARTED
+→ HIGH-FIDELITY DESIGN DELIVERY
+→ EXTERNAL EXECUTION RELEASED
+→ DELIVERY NOT_RECEIVED
 
 CURRENT LOW-FIDELITY REFERENCE
 → GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0
@@ -426,4 +428,4 @@ DO NOT INFER
 → PRODUCE
 ```
 
-Esta autoridade comprova a elegibilidade que antecedeu a autorização separada. A autorização high-fidelity já foi concedida por autoridade própria, mas a execução permanece `NOT_STARTED`. Nenhum protótipo, implementação, produção ou estágio posterior é executado por este documento.
+Esta autoridade comprova a elegibilidade que antecedeu a autorização separada. A autorização high-fidelity foi concedida por autoridade própria e o release de execução externa foi emitido por `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0`; a entrega high-fidelity ainda não foi recebida ou validada. Nenhum protótipo, implementação, produção ou estágio posterior é executado por este documento.
