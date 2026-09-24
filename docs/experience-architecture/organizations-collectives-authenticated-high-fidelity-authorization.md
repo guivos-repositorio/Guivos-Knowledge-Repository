@@ -25,7 +25,7 @@ related:
 
 ## Decisão
 
-A elegibilidade high-fidelity de Organização e Coletivo está `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.1`.
+A elegibilidade high-fidelity de Organização e Coletivo está `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.2`.
 
 Este ato registra a decisão humana subsequente:
 
