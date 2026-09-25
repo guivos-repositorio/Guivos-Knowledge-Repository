@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.6
+version: 1.0.7
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -70,7 +70,7 @@ Estado corrente desta frente:
 
 ```text
 HOME O/C PÚBLICA
-→ DOCUMENTALMENTE RECONCILIADA
+→ AUTORIDADES CORRENTES CONSOLIDADAS
 → EXTERNAL DESIGN RELEASE = GRANTED
 
 DESIGNER
@@ -82,9 +82,6 @@ AI
 
 GKR-CREATED FIGMA
 → NONE
-
-AUDITORIA DOCUMENTAL DA HOME PÚBLICA
-→ CLOSED FOR CURRENT DESIGN HANDOFF
 
 UXA-102 / V5
 → NOT_STARTED
@@ -1778,9 +1775,9 @@ Esta matriz orienta a leitura corrente do Master e a relação entre suas autori
 
 ---
 
-## 31. Documentos de aprofundamento ainda preservados
+## 31. Documentos de aprofundamento correntes
 
-A auditoria documental já decidiu a função corrente desta Home para o handoff externo. Os documentos abaixo permanecem preservados como aprofundamento, evidência ou proveniência enquanto mantiverem função própria:
+Os documentos abaixo complementam este Master com aprofundamento, evidência ou autoridade temática dentro de seus respectivos escopos:
 
 ### Home O/C
 
