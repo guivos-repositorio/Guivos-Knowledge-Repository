@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.24.7
+version: 1.24.8
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 related:
@@ -21,6 +21,7 @@ related:
   - GKR-UX-PERSON-JOURNEY-FLOW-001
   - GKR-UX-PER002-MASTER-001
   - GKR-UX-PER003-MASTER-001
+  - GKR-UX-PER004-MASTER-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
@@ -109,7 +110,8 @@ A Jornada da Pessoa possui uma camada própria de documentação para Design e I
 - [Leia Primeiro](person-journey/read-first.md);
 - [Fluxo Completo de Superfícies](person-journey/flow-map.md);
 - [PER-002 — Entrada Protegida — Documento Mestre](person-journey/per-002-protected-entry-master.md);
-- [PER-003 — Escolha de Modalidade — Documento Mestre](person-journey/per-003-modality-selection-master.md).
+- [PER-003 — Escolha de Modalidade — Documento Mestre](person-journey/per-003-modality-selection-master.md);
+- [PER-004 — Expressão por Texto ou Voz — Documento Mestre](person-journey/per-004-text-voice-expression-master.md).
 
 A coleção parte de `PER-002`, porque `PER-001` já é governada pelo Documento Mestre da Home Pública — Pessoa. As superfícies seguintes entram progressivamente, uma a uma, somente após construção e validação documental.
 

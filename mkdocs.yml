@@ -146,8 +146,9 @@ nav:
           - Fluxo Completo de Superfícies: experience-architecture/person-journey/flow-map.md
 
       - Documentos Mestres por Superfície:
-          - 01 — PER-002 — Entrada Protegida: experience-architecture/person-journey/per-002-protected-entry-master.md
-          - 02 — PER-003 — Escolha de Modalidade: experience-architecture/person-journey/per-003-modality-selection-master.md
+          - Entrada Protegida: experience-architecture/person-journey/per-002-protected-entry-master.md
+          - Escolha de Modalidade: experience-architecture/person-journey/per-003-modality-selection-master.md
+          - Expressão por Texto ou Voz: experience-architecture/person-journey/per-004-text-voice-expression-master.md
 
   - Research e Validação:
       - Research — Visão Geral: research/index.md
