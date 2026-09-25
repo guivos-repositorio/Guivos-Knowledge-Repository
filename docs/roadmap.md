@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.28
+version: 13.48.29
 owner: Guivos
 last_updated: 2026-09-25
 normative: true
@@ -20,6 +20,8 @@ related:
   - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
   - GKR-UX-PER002-PROTOTYPE-REVALIDATION-001
+  - GKR-UX-PERSON-JOURNEY-FLOW-001
+  - GKR-UX-PER002-MASTER-001
   - GPA-004
   - GPA-006
   - GIA-000
@@ -36,7 +38,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.50.40` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.50.41` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -54,7 +56,7 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.50.40 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.50.41 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-101` |
@@ -63,6 +65,8 @@ ROADMAP
 | Read-First das Homes | `8 / 8 CURRENT / NON-NORMATIVE` |
 | Design das Homes | `DESIGNER-FIRST / AI OPTIONAL / TOOL-NEUTRAL` |
 | Journey | vistas e registries correntes ativos |
+| Jornada da Pessoa — documentação para Design | `26 MASTERS PLANEJADOS APÓS A HOME / 1 CONSTRUÍDO / PER-002 CURRENT` |
+| Próximo Master documental da Pessoa | `PER-003 — ESCOLHA DE MODALIDADE / NOT_STARTED` |
 | Business | `Start · Growth · Scale · Enterprise` / contratação online / Self-service quando elegível |
 | O/C low-fidelity autenticado | `DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS` |
 | O/C high-fidelity | `AUTHORIZATION GRANTED / EXECUTION RELEASE ISSUED / DELIVERY NOT_RECEIVED` |
