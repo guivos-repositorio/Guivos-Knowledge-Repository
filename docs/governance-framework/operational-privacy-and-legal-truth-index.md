@@ -1,10 +1,10 @@
 ---
 id: GKR-OPERATIONAL-PRIVACY-LEGAL-INDEX-001
-title: Verdade Operacional, Privacidade, Consentimentos e Superfícies Legais — Índice P6
+title: Verdade Operacional, Privacidade, Consentimentos e Superfícies Legais
 status: proposed
-version: 0.1.0
+version: 0.1.1
 owner: Guivos
-last_updated: 2026-08-08
+last_updated: 2026-09-25
 related:
   - GKR-DATA-PRIVACY-CONSENT-001
   - GKR-LEGAL-SURFACE-GATES-001
@@ -14,7 +14,7 @@ related:
 normative: false
 ---
 
-# Verdade Operacional, Privacidade, Consentimentos e Superfícies Legais — P6
+# Verdade Operacional, Privacidade, Consentimentos e Superfícies Legais
 
 ## 1. Propósito
 
@@ -77,11 +77,11 @@ Define OT0–OT8 e a regra de evidência para separar:
 - assurance;
 - sustentabilidade operacional.
 
-Também registra o estado máximo atualmente suportado pelo GKR para os principais objetos P6.
+Também registra o estado máximo atualmente suportado pelo GKR para os principais objetos de privacidade, consentimentos e superfícies legais.
 
 ## 3. Estado corrente
 
-No checkpoint de criação do P6, a autoridade documental sustenta arquitetura e guardrails, mas não comprova operação de privacidade em produção.
+A autoridade documental vigente sustenta arquitetura e guardrails, mas não comprova operação de privacidade em produção.
 
 | Objeto | Estado no conhecimento governado |
 |---|---|
@@ -154,13 +154,13 @@ Neo4j reference_selected
 
 ## 5. Baseline regulatório brasileiro
 
-O P6 foi estruturado considerando a LGPD e atos vigentes da ANPD consultados no momento da elaboração, incluindo regulamentação sobre Encarregado e comunicação de incidentes.
+A baseline regulatória deste domínio considera a LGPD e atos vigentes da ANPD aplicáveis, incluindo regulamentação sobre Encarregado e comunicação de incidentes.
 
 Esse referencial deve ser verificado novamente antes de implementação, publicação ou operação, especialmente quando houver mudança de jurisdição, atividade, categoria de dados, público ou tecnologia.
 
 ## 6. Próxima maturidade legítima
 
-Após integração do P6, o próximo avanço operacional de privacidade não é escrever uma política genérica.
+O próximo avanço operacional legítimo de privacidade não é escrever uma política genérica.
 
 A sequência recomendada é:
 
@@ -175,7 +175,7 @@ A sequência recomendada é:
 9. publicar somente versões correspondentes à realidade;
 10. capturar evidência operacional e assurance.
 
-## 7. O que o P6 não autoriza
+## 7. O que este domínio não autoriza
 
 - coleta de dados pessoais;
 - dados sensíveis;
@@ -194,12 +194,12 @@ A sequência recomendada é:
 - produção de Guivos Intelligence com dados pessoais;
 - declaração pública de conformidade LGPD.
 
-## 8. Relação com P5 e próximas frentes
+## 8. Relação com arquitetura institucional, internacionalização e Public Canon
 
-P5 responde **quem poderá existir juridicamente e como entidades devem permanecer separadas**.
+A arquitetura institucional e jurídica responde **quem poderá existir juridicamente e como entidades devem permanecer separadas**.
 
-P6 responde **como atividades, dados, superfícies e fatos operacionais devem ser evidenciados**.
+Este domínio responde **como atividades, dados, superfícies e fatos operacionais devem ser evidenciados**.
 
-P7 continuará tratando internacionalização e deverá consumir estes gates antes de converter expansão territorial em operação de dados em nova jurisdição.
+A internacionalização deve consumir estes gates antes de converter expansão territorial em operação de dados em nova jurisdição.
 
-P9 somente poderá produzir Canon/páginas públicas finais depois que os estados factuais das frentes anteriores estiverem reconciliados.
+Public Canon e páginas públicas finais somente podem declarar estados compatíveis com os fatos operacionais efetivamente evidenciados.
