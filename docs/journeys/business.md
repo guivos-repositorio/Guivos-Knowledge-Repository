@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-BUSINESS-001
 title: Experiência Integrada do Guivos Business
 status: active
-version: 1.0.1
+version: 1.0.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-25
 related:
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -256,7 +256,7 @@ Os planos de Organização `Conecta · Eleva · Transforma` não equivalem aos p
 
 Guivos Ads é produto distinto.
 
-Os identificadores históricos `COM-001..005` do Journey Registry representam, no estado corrente, superfícies de **Ads / Opportunity Boost**.
+Os identificadores legados `COM-001..005` do Journey Registry representam, no estado corrente, superfícies de **Ads / Opportunity Boost**.
 
 ```text
 COM-*
@@ -274,9 +274,9 @@ Contratar Ads não concede capacidades Business.
 
 ## 12. Registries
 
-A criação desta vista **não cria novos identificadores** `GKR-SURF-*` ou `GKR-TRN-*`.
+Esta vista **não cria novos identificadores** `GKR-SURF-*` ou `GKR-TRN-*`.
 
-O Registry atual preserva IDs históricos de Pessoa, Coletivo, Organização, Ads/Opportunity Boost e fronteiras. A experiência Business é governada por suas autoridades próprias até que uma necessidade concreta justifique expansão governada do Registry.
+O Registry atual preserva IDs estáveis de Pessoa, Coletivo, Organização, Ads/Opportunity Boost e fronteiras. A experiência Business é governada por suas autoridades próprias até que uma necessidade concreta justifique expansão governada do Registry.
 
 ## 13. Autoridades correntes
 
@@ -288,7 +288,7 @@ Para Business, usar como fontes correntes:
 - `GKR-UX-HOME-BUSINESS-MASTER-001`;
 - `GKR-UX-HOME-BUSINESS-SOURCELOCK-001`.
 
-A Home e o plano devem permanecer semanticamente reconciliados com essas autoridades.
+A Home e o plano devem permanecer semanticamente alinhados a essas autoridades.
 
 ## 14. Estado
 
