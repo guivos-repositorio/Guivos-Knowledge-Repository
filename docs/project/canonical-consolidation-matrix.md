@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 3.4.0
+version: 3.4.1
 owner: Guivos
-last_updated: 2026-09-12
+last_updated: 2026-09-25
 depends_on:
   - GKR-STATE-001
 related:
@@ -63,7 +63,7 @@ INVENTÁRIO FÍSICO ≠ MATURIDADE VISUAL VIGENTE
 | Última UXA | **UXA-101** |
 | Próxima UXA | **UXA-102/V5 — não iniciada** |
 | Product Engineering | **pausada antes de W0-01** |
-| Public Canon | **GOG-001 5.3.0** |
+| Public Canon | **GOG-001 5.3.1** |
 
 ## 4. Fundação, propósito e participantes
 
@@ -183,9 +183,9 @@ Preços, limites, entitlements e SLA finais continuam dependentes de autoridade 
 ## 9. Guivos Intelligence
 
 ```text
-GPA-006 = v2.0.0
-GIA-000 = v1.7.0
-GIA-COG-001 = v0.1.1 / ACTIVE / NORMATIVE / CONCEPTUAL-REFERENCE
+GPA-006 = v2.0.2
+GIA-000 = v1.7.1
+GIA-COG-001 = v0.1.2 / ACTIVE / NORMATIVE / CONCEPTUAL-REFERENCE
 ```
 
 Duas frentes:
@@ -327,7 +327,7 @@ Acesso de usuário, domínio territorial, marca protegida, pesquisa ou prospecç
 
 ## 16. Public Canon
 
-`GOG-001 — Guia Oficial da Guivos v5.3.0` é a tradução institucional pública vigente.
+`GOG-001 — Guia Oficial da Guivos v5.3.1` é a tradução institucional pública vigente.
 
 O Public Canon não pode afirmar como disponível, registrado, implementado ou operacional aquilo que o GKR classifica como candidato, referência, não iniciado ou dependente de evidência.
 
