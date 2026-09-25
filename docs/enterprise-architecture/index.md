@@ -2,7 +2,7 @@
 id: GEA-000
 title: Guivos Enterprise Architecture
 status: consolidated
-version: 1.12.1
+version: 1.12.2
 owner: Guivos
 last_updated: 2026-09-24
 related_adrs:
@@ -110,7 +110,7 @@ graph TD
 | Ecosystem Architecture | Como ocorre a transformação dos participantes? | em consolidação por meio do GEB |
 | Product Architecture | Quais produtos materializam capacidades e propostas de valor? | estrutura superior consolidada; Journey publicado; autoridades dos Produtos Especializados vigentes; Homes especializadas reconciliadas documentalmente pré-materialização |
 | Business Architecture | Como a Guivos organiza transformação, Resultados, capacidades e execução do negócio? | fundamentos e modelo de transformação validados; `BA-STR-002` permanece `draft`; nenhum Outcome canônico aprovado |
-| Guivos Intelligence Architecture | Como conhecimento, dados, contexto e conexões se tornam inteligência aplicada? | `GPA-006 v2.0.0` consolidado; `GIA-000 v1.7.0` vigente; `GIA-COG-001 v0.1.1` é a arquitetura cognitiva de referência vigente em nível conceitual/de referência; Documento Mestre e Source Lock da Home existem, sem equivaler a implementação, produção ou autorização de Design |
+| Guivos Intelligence Architecture | Como conhecimento, dados, contexto e conexões se tornam inteligência aplicada? | `GPA-006 v2.0.1` consolidado; `GIA-000 v1.7.1` vigente; `GIA-COG-001 v0.1.2` é a arquitetura cognitiva de referência vigente em nível conceitual/de referência; Documento Mestre e Source Lock da Home existem, sem equivaler a implementação, produção ou autorização de Design |
 | Guivos Economic Model | Como a Guivos sustenta economicamente o ecossistema sem contrariar seu propósito? | ativo; baseline comercial corrente definida; validação empírica e especializada pendente |
 | Technology and Engineering Architecture | Como as capacidades são implementadas tecnicamente? | planejada e pausada antes de `W0-01` |
 | Governance Architecture | Como decisões, riscos e mudanças são controlados? | ativa por métodos, auditorias, decisões e validação permanente do GKR |
