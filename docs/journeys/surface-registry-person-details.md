@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
 title: Detalhamento Obrigatório das Superfícies da Pessoa
 status: active
-version: 0.23.2
+version: 0.23.3
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-25
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
 related:
   - UXA-090
@@ -71,8 +71,6 @@ Valores sem evidência suficiente permanecem `indeterminado`, `ausente` ou `não
 
 `GKR-UX-D5-C1-001` governa o contrato funcional corrente de `PER-010..012`. `GKR-UX-D5-C4B-001` registra a validação integrada corrente de `TRN-008..013`.
 
-Os antigos degraus de materialização low-fidelity e reformulação visual pertencem à proveniência do Git e não são necessários para consumir a verdade corrente.
-
 ## 6. Efeito da UXA-101 preservado
 
 A UXA-101 não cria superfície nova. `PER-203` continua sendo a responsabilidade de compreender a oportunidade e decidir como prosseguir, agora com estado funcional explícito de revisão antes de `BND-001`. O processo externo posterior continua fora da autoridade da Guivos.
@@ -93,7 +91,7 @@ Regras correntes:
 - composição para computador ou móvel pertence ao Design e não cria superfície canônica distinta;
 - não existe baseline visual corrente obrigatório para Mapa ou Lista.
 
-Os antigos produtores especializados de localização desativada, estado sem resultados e referência desktop tiveram sua função corrente absorvida por este contrato, pelo Surface Registry e pelas transições vigentes. Sua proveniência permanece no Git e não é entrada padrão de Design ou IA.
+Localização desativada, estado sem resultados e composição desktop são governados pelo contrato corrente, pelo Surface Registry e pelas transições vigentes; referências paralelas não são entrada padrão de Design ou IA.
 
 ## 8. Estado
 
