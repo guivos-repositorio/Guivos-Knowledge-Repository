@@ -2844,6 +2844,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/person-journey/per-003-modality-selection-master/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 — PER-003 — Escolha de Modalidade
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -4979,6 +5014,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-person-journey-per-003-modality-selection-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.2 02 — PER-003 — Escolha de Modalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -6198,6 +6244,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-person-journey-per-003-modality-selection-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.2 02 — PER-003 — Escolha de Modalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -6655,7 +6712,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <h2 id="index-estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#index-estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="#project-current-state-register">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
 <div class="highlight"><pre><span></span><code>GKR-STATE-001
-→ 3.50.41 / CURRENT
+→ 3.50.43 / CURRENT
 
 ERA
 → GE-2 — KNOWLEDGE
@@ -6671,10 +6728,11 @@ GIA-COG-001
 → CURRENT COGNITIVE REFERENCE ARCHITECTURE
 
 PERSON JOURNEY DESIGN DOCUMENTATION
-→ FLOW = GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.0
-→ SURFACE MASTERS = 1 / 26 BUILT AFTER PUBLIC HOME
-→ CURRENT MASTER = GKR-UX-PER002-MASTER-001 v0.1.0
-→ NEXT DOCUMENTATION TARGET = PER-003 / NOT_STARTED
+→ FLOW = GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.2
+→ SURFACE MASTERS = 2 / 26 BUILT AFTER PUBLIC HOME
+→ CURRENT MASTERS = PER-002 v0.1.0 + PER-003 v0.1.1
+→ PER-003 CHOICES = TEXT / VOICE / FILE / OPTIONAL GUIDED QUESTIONS
+→ NEXT DOCUMENTATION TARGET = PER-004 / NOT_STARTED
 
 PER-002
 → FUNCTIONAL BOUNDARY = GKR-UX-PER002-MAT-ELIGIBILITY-001 v2.0.0 / CURRENT
@@ -8816,21 +8874,27 @@ SURFACE MASTERS TO BUILD AFTER THE HOME
 → 26
 
 CURRENT FOUNDATION
-→ GKR-UX-PERSON-JOURNEY-READ-FIRST-001 v0.1.0
-→ GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.0
+→ GKR-UX-PERSON-JOURNEY-READ-FIRST-001 v0.1.1
+→ GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.1
 
-CURRENT SURFACE MASTER
+CURRENT SURFACE MASTERS
 → GKR-UX-PER002-MASTER-001 v0.1.0
 → PER-002 — ENTRADA PROTEGIDA
+→ GKR-UX-PER003-MASTER-001 v0.1.1
+→ PER-003 — ESCOLHA DE MODALIDADE
+→ VALIDATED CHOICES = TEXT / VOICE / FILE / OPTIONAL GUIDED QUESTIONS
+→ COMBINATION = ALLOWED / NOT REQUIRED
+→ TEXT / VOICE CONTINUITY = TRN-003 → PER-004
+→ FILE / OPTIONAL QUESTIONS CONTINUITY = NOT FULLY CONTRACTED
 
 BUILT
-→ 1 / 26
+→ 2 / 26
 
 REMAINING
-→ 25 / 26
+→ 24 / 26
 
 NEXT DOCUMENTATION TARGET
-→ PER-003 — ESCOLHA DE MODALIDADE
+→ PER-004 — EXPRESSÃO POR TEXTO OU VOZ
 
 NEW PER-IDS
 → NONE
@@ -8843,7 +8907,7 @@ PRODUCT ENGINEERING
 </code></pre></div>
 <p>A construção ocorre uma superfície por vez. Planejamento não cria página vazia, novo <code>PER-ID</code>, navegação, tela, protótipo ou implementação por inferência.</p></section><section class="print-page" id="roadmap" heading-number="2.3"><h1 id="roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos">Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos<a class="headerlink" href="#roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-funcao">1. Função<a class="headerlink" href="#roadmap-1-funcao" title="Permanent link">&para;</a></h2>
-<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.41</code> em <strong>frentes governadas de avanço</strong>.</p>
+<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.43</code> em <strong>frentes governadas de avanço</strong>.</p>
 <p>Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.</p>
 <div class="highlight"><pre><span></span><code>ROADMAP
 → ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
@@ -8864,7 +8928,7 @@ ROADMAP
 <tbody>
 <tr>
 <td>Estado global</td>
-<td><code>GKR-STATE-001 v3.50.41 / CURRENT</code></td>
+<td><code>GKR-STATE-001 v3.50.43 / CURRENT</code></td>
 </tr>
 <tr>
 <td>Era</td>
@@ -8900,11 +8964,11 @@ ROADMAP
 </tr>
 <tr>
 <td>Jornada da Pessoa — documentação para Design</td>
-<td><code>26 MASTERS PLANEJADOS APÓS A HOME / 1 CONSTRUÍDO / PER-002 CURRENT</code></td>
+<td><code>26 MASTERS PLANEJADOS APÓS A HOME / 2 CONSTRUÍDOS / PER-002 + PER-003 CURRENT</code></td>
 </tr>
 <tr>
 <td>Próximo Master documental da Pessoa</td>
-<td><code>PER-003 — ESCOLHA DE MODALIDADE / NOT_STARTED</code></td>
+<td><code>PER-004 — EXPRESSÃO POR TEXTO OU VOZ / NOT_STARTED</code></td>
 </tr>
 <tr>
 <td>Business</td>
@@ -9072,19 +9136,26 @@ PRODUCT ENGINEERING
 <p><code>PER-002</code> possui boundary funcional corrente, referência interativa local validada e Documento Mestre próprio para consumo de Design e IA opcional. Isso não cria execução automática posterior.</p>
 <div class="highlight"><pre><span></span><code>PERSON JOURNEY DOCUMENTATION
 → FLOW MAP = CURRENT
-→ 1 / 26 SURFACE MASTERS BUILT
+→ 2 / 26 SURFACE MASTERS BUILT
 
 PER-002
 → GKR-UX-PER002-MASTER-001 v0.1.0
 → CURRENT DESIGN DEFINITION
 → LOCAL INTERACTIVE REFERENCE = VALIDATED
 
+PER-003
+→ GKR-UX-PER003-MASTER-001 v0.1.1
+→ CURRENT DESIGN DEFINITION
+→ VALIDATED CHOICES = TEXT / VOICE / FILE / OPTIONAL GUIDED QUESTIONS
+→ TEXT / VOICE → TRN-003 → PER-004
+→ FILE / OPTIONAL QUESTIONS → DOWNSTREAM CONTINUITY NOT FULLY CONTRACTED
+
 AUTHENTICATION
 → INTERNAL GATE / STATE
 → ≠ MATERIAL PROCESSING AUTHORIZATION
 
 NEXT DOCUMENTATION TARGET
-→ PER-003 — ESCOLHA DE MODALIDADE
+→ PER-004 — EXPRESSÃO POR TEXTO OU VOZ
 → DOCUMENTATION ONLY / NOT_STARTED
 
 UXA-102 / V5
@@ -9093,7 +9164,7 @@ UXA-102 / V5
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 </code></pre></div>
-<p>A próxima construção governada desta coleção é documental: <code>PER-003 — Escolha de Modalidade</code>. Materialização visual, teste real, implementação ou avanço de <code>UXA-102/V5</code> dependem de atos próprios.</p>
+<p>A próxima construção governada desta coleção é documental: <code>PER-004 — Expressão por Texto ou Voz</code>. Materialização visual, teste real, implementação ou avanço de <code>UXA-102/V5</code> dependem de atos próprios.</p>
 <h2 id="roadmap-8-guivos-business">8. Guivos Business<a class="headerlink" href="#roadmap-8-guivos-business" title="Permanent link">&para;</a></h2>
 <p><code>GPA-004 v1.7.5</code> governa a arquitetura funcional do Guivos Business.</p>
 <div class="highlight"><pre><span></span><code>BUSINESS
@@ -11246,7 +11317,8 @@ GUIVOS → DEVE POSSUIR IDENTIDADE INSTITUCIONAL PRÓPRIA
 <ul>
 <li><code>GKR-UX-PERSON-JOURNEY-READ-FIRST-001</code> — regras de consumo, granularidade e liberdade criativa;</li>
 <li><code>GKR-UX-PERSON-JOURNEY-FLOW-001</code> — mapa completo das 26 superfícies/responsabilidades a documentar após a Home;</li>
-<li><code>GKR-UX-PER002-MASTER-001</code> — primeiro Documento Mestre, para <code>PER-002 — Entrada Protegida</code>.</li>
+<li><code>GKR-UX-PER002-MASTER-001</code> — Documento Mestre de <code>PER-002 — Entrada Protegida</code>;</li>
+<li><code>GKR-UX-PER003-MASTER-001</code> — Documento Mestre de <code>PER-003 — Escolha de Modalidade</code>.</li>
 </ul>
 <p>A coleção não cria telas por inferência. Cada Documento Mestre deve corresponder a uma superfície/responsabilidade já reconhecida pelo Registry e preservar estados internos dentro dessa mesma responsabilidade quando não existir novo <code>PER-ID</code>.</p>
 <p>Para prototipação e Design, continuar usando:</p>
@@ -14481,7 +14553,8 @@ CURRENT AUTHORITIES
 <ul>
 <li><a href="#experience-architecture-person-journey-read-first">Leia Primeiro</a>;</li>
 <li><a href="#experience-architecture-person-journey-flow-map">Fluxo Completo de Superfícies</a>;</li>
-<li><a href="#experience-architecture-person-journey-per-002-protected-entry-master">PER-002 — Entrada Protegida — Documento Mestre</a>.</li>
+<li><a href="#experience-architecture-person-journey-per-002-protected-entry-master">PER-002 — Entrada Protegida — Documento Mestre</a>;</li>
+<li><a href="#experience-architecture-person-journey-per-003-modality-selection-master">PER-003 — Escolha de Modalidade — Documento Mestre</a>.</li>
 </ul>
 <p>A coleção parte de <code>PER-002</code>, porque <code>PER-001</code> já é governada pelo Documento Mestre da Home Pública — Pessoa. As superfícies seguintes entram progressivamente, uma a uma, somente após construção e validação documental.</p>
 <h3 id="experience-architecture-32-contextos-principais-de-experiencia">3.2 Contextos principais de experiência<a class="headerlink" href="#experience-architecture-32-contextos-principais-de-experiencia" title="Permanent link">&para;</a></h3>
@@ -24345,7 +24418,8 @@ IMPLEMENTATION
 <ul>
 <li><code>GKR-UX-PERSON-JOURNEY-READ-FIRST-001</code> — regras de consumo, granularidade e liberdade criativa;</li>
 <li><code>GKR-UX-PERSON-JOURNEY-FLOW-001</code> — mapa completo das 26 superfícies/responsabilidades a documentar após a Home;</li>
-<li><code>GKR-UX-PER002-MASTER-001</code> — primeiro Documento Mestre, para <code>PER-002 — Entrada Protegida</code>.</li>
+<li><code>GKR-UX-PER002-MASTER-001</code> — Documento Mestre de <code>PER-002 — Entrada Protegida</code>;</li>
+<li><code>GKR-UX-PER003-MASTER-001</code> — Documento Mestre de <code>PER-003 — Escolha de Modalidade</code>.</li>
 </ul>
 <p>A coleção não cria telas por inferência. Cada Documento Mestre deve corresponder a uma superfície/responsabilidade já reconhecida pelo Registry e preservar estados internos dentro dessa mesma responsabilidade quando não existir novo <code>PER-ID</code>.</p>
 <p>Para prototipação e Design, continuar usando:</p>
@@ -24886,8 +24960,12 @@ FLOW MAP
 SURFACE MASTERS
 → BUILT INCREMENTALLY
 
-CURRENT FIRST MASTER
+CURRENT SURFACE MASTERS
 → PER-002 — ENTRADA PROTEGIDA
+→ PER-003 — ESCOLHA DE MODALIDADE
+
+NEXT DOCUMENTATION TARGET
+→ PER-004 — EXPRESSÃO POR TEXTO OU VOZ
 
 VISUAL MATERIALIZATION
 → DESIGN-OWNED
@@ -24969,6 +25047,24 @@ PER-002..304
 </tr>
 </tbody>
 </table>
+<p>Regra corrente de <code>PER-003</code>:</p>
+<div class="highlight"><pre><span></span><code>VALIDATED MODALITY CHOICES
+→ TEXT
+→ VOICE
+→ FILE
+→ OPTIONAL GUIDED QUESTIONS
+
+COMBINATION
+→ ALLOWED
+→ NOT REQUIRED
+
+TEXT / VOICE
+→ TRN-003 → PER-004
+
+FILE / OPTIONAL GUIDED QUESTIONS
+→ DOWNSTREAM CONTINUITY NOT FULLY CONTRACTED
+→ MUST NOT BE INVENTED
+</code></pre></div>
 <h2 id="experience-architecture-person-journey-flow-map-3-continuidade-recorrente-a-partir-de-hoje">3. Continuidade recorrente a partir de Hoje<a class="headerlink" href="#experience-architecture-person-journey-flow-map-3-continuidade-recorrente-a-partir-de-hoje" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>PER-008 — HOJE
 ├── TRN-008 → PER-010 — MEUS OBJETIVOS → TRN-009 → PER-008
@@ -25041,19 +25137,19 @@ PER-301
 <td style="text-align: right;">01</td>
 <td><code>PER-002</code></td>
 <td>Entrada Protegida</td>
-<td><strong>em construção nesta frente</strong></td>
+<td><strong>construído / current</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;">02</td>
 <td><code>PER-003</code></td>
 <td>Escolha de Modalidade</td>
-<td>planejado</td>
+<td><strong>construído / current</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;">03</td>
 <td><code>PER-004</code></td>
 <td>Expressão por Texto ou Voz</td>
-<td>planejado</td>
+<td>próximo / não iniciado</td>
 </tr>
 <tr>
 <td style="text-align: right;">04</td>
@@ -25223,11 +25319,16 @@ PER-001
 NEW SURFACE MASTERS TO BUILD
 → 26
 
-BUILT IN THIS FOUNDATION
+BUILT
+→ 2 / 26
 → PER-002
+→ PER-003
 
-REMAINING AFTER PER-002
-→ 25
+REMAINING
+→ 24 / 26
+
+NEXT DOCUMENTATION TARGET
+→ PER-004 — EXPRESSÃO POR TEXTO OU VOZ
 
 NEW PER-IDS
 → NONE
@@ -25607,6 +25708,512 @@ TRN-002
 
 NEXT DOCUMENT IN CONSTRUCTION SEQUENCE
 → PER-003 — ESCOLHA DE MODALIDADE
+
+NEW VISUAL MATERIALIZATION
+→ NONE
+
+PRODUCT ENGINEERING
+→ NOT RELEASED BY THIS DOCUMENT
+</code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-per-003-modality-selection-master" heading-number="8.2.2"><h1 id="experience-architecture-person-journey-per-003-modality-selection-master-jornada-da-pessoa-per-003-escolha-de-modalidade-documento-mestre-de-superficie">Jornada da Pessoa — PER-003 — Escolha de Modalidade — Documento Mestre de Superfície<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-jornada-da-pessoa-per-003-escolha-de-modalidade-documento-mestre-de-superficie" title="Permanent link">&para;</a></h1>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento consolida a <strong>definição corrente de consumo de <code>PER-003 — Escolha de Modalidade</code></strong> para designer humana, IA opcional, Produto, UX, Research, Legal/Privacidade e Engenharia.</p>
+<p>A superfície existe para permitir que a Pessoa escolha <strong>como deseja começar a compartilhar seu Momento Atual</strong>, preservando equivalência entre as modalidades já validadas, autonomia, reversibilidade e clareza sobre o que poderá acontecer depois.</p>
+<p>Este documento não cria layout, tela final, wireframe, UI, protótipo, sistema visual ou implementação.</p>
+<div class="highlight"><pre><span></span><code>PER-002 — ENTRADA PROTEGIDA
+→ TRN-002
+→ PER-003 — ESCOLHA DE MODALIDADE
+
+PER-003
+→ TEXTO
+→ VOZ
+→ ARQUIVO
+→ PERGUNTAS OPCIONAIS
+
+TRN-003
+→ PER-004 — EXPRESSÃO POR TEXTO OU VOZ
+→ CONTINUIDADE PARCIAL
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-2-papel-na-jornada">2. Papel na Jornada<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-2-papel-na-jornada" title="Permanent link">&para;</a></h2>
+<p><code>PER-003</code> é a superfície de <strong>decisão de modalidade de compartilhamento</strong>.</p>
+<p>Ela não deve transformar a escolha em captura material automática. Seu papel é apresentar as formas correntes de começar, explicar suas consequências imediatas e registrar uma escolha consciente antes de qualquer operação que dependa dessa modalidade.</p>
+<p>As quatro escolhas validadas são:</p>
+<div class="highlight"><pre><span></span><code>MODALIDADE 1
+→ TEXTO
+
+MODALIDADE 2
+→ VOZ
+
+MODALIDADE 3
+→ ARQUIVO
+
+MODALIDADE 4
+→ PERGUNTAS OPCIONAIS
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-3-autoridades-e-reconciliacao-corrente">3. Autoridades e reconciliação corrente<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-3-autoridades-e-reconciliacao-corrente" title="Permanent link">&para;</a></h2>
+<p><code>PER-003</code> é governada por <code>UXA-020</code>, <code>UXA-023</code> e <code>UXA-035</code>, conforme o Surface Registry corrente.</p>
+<p><code>UXA-035</code> preserva explicitamente <strong>texto, voz, arquivo e perguntas opcionais em paridade</strong>, sem modalidade principal pré-selecionada e com possibilidade de combinação sem obrigação.</p>
+<p><code>UXA-069</code> não redefine <code>PER-003</code>; sua própria tabela de cobertura separa:</p>
+<div class="highlight"><pre><span></span><code>PER-003 — ESCOLHA DE MODALIDADE
+→ UXA-020 / UXA-023 / UXA-035
+
+PER-004 — EXPRESSÃO GUIADA POR TEXTO OU VOZ
+→ UXA-069
+</code></pre></div>
+<p>Portanto, este Master preserva as quatro modalidades validadas e trata <code>UXA-069</code> apenas como contexto downstream de <code>PER-004</code>.</p>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-4-continuidade-conhecida-e-lacuna-explicita">4. Continuidade conhecida e lacuna explícita<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-4-continuidade-conhecida-e-lacuna-explicita" title="Permanent link">&para;</a></h2>
+<p>O Transition Registry possui <code>TRN-003 — PER-003 → PER-004</code> em estado parcial.</p>
+<p><code>PER-004</code> é definida correntemente como <strong>Expressão por Texto ou Voz</strong>. Não existe, no estado atual, uma superfície downstream separada contratada para executar de ponta a ponta arquivo ou perguntas opcionais.</p>
+<p>Por isso:</p>
+<div class="highlight"><pre><span></span><code>TEXTO
+→ TRN-003
+→ PER-004
+
+VOZ
+→ TRN-003
+→ PER-004
+
+ARQUIVO
+→ ESCOLHA VALIDADA EM PER-003
+→ CONTINUIDADE DOWNSTREAM ESPECÍFICA = NÃO CONTRATADA
+
+PERGUNTAS OPCIONAIS
+→ ESCOLHA VALIDADA EM PER-003
+→ CONTINUIDADE DOWNSTREAM ESPECÍFICA = NÃO CONTRATADA
+</code></pre></div>
+<p>Design e IA <strong>não podem inventar nova superfície, novo <code>PER-ID</code> ou novo handoff</strong> para fechar essa lacuna.</p>
+<p>A solução visual pode representar as quatro escolhas correntes; a execução completa de arquivo/perguntas depende de autoridade posterior que feche sua continuidade.</p>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-5-job-principal-da-pessoa">5. Job principal da Pessoa<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-5-job-principal-da-pessoa" title="Permanent link">&para;</a></h2>
+<p>A Pessoa precisa conseguir responder:</p>
+<ul>
+<li>quais formas de começar estão disponíveis?</li>
+<li>todas têm valor equivalente?</li>
+<li>posso escrever?</li>
+<li>posso falar?</li>
+<li>posso usar um arquivo?</li>
+<li>posso começar respondendo perguntas opcionais?</li>
+<li>alguma opção começa captura automaticamente?</li>
+<li>posso combinar formas sem ser obrigada?</li>
+<li>posso mudar de ideia antes de iniciar?</li>
+<li>posso sair sem compartilhar?</li>
+<li>o que acontece depois de cada escolha?</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-6-origem">6. Origem<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-6-origem" title="Permanent link">&para;</a></h2>
+<p><code>PER-003</code> é alcançada por <code>TRN-002</code> a partir de <code>PER-002</code>.</p>
+<p>O handoff deve preservar:</p>
+<ul>
+<li>sessão legítima quando aplicável;</li>
+<li>contexto protegido;</li>
+<li>finalidade corrente;</li>
+<li>controles apresentados;</li>
+<li>ausência de autorização ampla por autenticação;</li>
+<li>ausência de captura material iniciada por inferência;</li>
+<li>possibilidade de interrupção.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>TRN-002
+→ LOCALLY VALIDATED
+
+PER-003 ENTRY
+→ NO MODALITY PRESELECTED
+→ NO CAPTURE STARTED
+→ NO MATERIAL PROCESSING STARTED
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-7-estado-inicial">7. Estado inicial<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-7-estado-inicial" title="Permanent link">&para;</a></h2>
+<p>A entrada em <code>PER-003</code> deve começar sem modalidade predefinida.</p>
+<p>Não é permitido:</p>
+<ul>
+<li>selecionar texto por padrão apenas por simplicidade;</li>
+<li>selecionar voz por conveniência do dispositivo;</li>
+<li>selecionar arquivo por existência de upload;</li>
+<li>iniciar perguntas automaticamente como onboarding obrigatório;</li>
+<li>inferir preferência com base em uso anterior sem autoridade explícita;</li>
+<li>iniciar microfone;</li>
+<li>abrir seletor de arquivos;</li>
+<li>iniciar análise;</li>
+<li>posicionar uma modalidade como superior.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-8-modalidade-texto">8. Modalidade Texto<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-8-modalidade-texto" title="Permanent link">&para;</a></h2>
+<p>A opção Texto deve comunicar, em nível proporcional, que:</p>
+<ul>
+<li>a Pessoa poderá escrever livremente;</li>
+<li>poderá começar com pouco;</li>
+<li>texto mais longo não significa melhor contexto;</li>
+<li>poderá editar antes de avançar;</li>
+<li>digitar não equivale a autorizar processamento material;</li>
+<li>conteúdo permanece distinguível como expressão de origem;</li>
+<li>a continuidade funcional conhecida ocorre em <code>PER-004</code>.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>ESCOLHER TEXTO
+→ DEFINE MODALIDADE
+→ NÃO ENVIA RELATO
+→ NÃO INICIA ANÁLISE
+→ NÃO CRIA COMPREENSÃO INICIAL
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-9-modalidade-voz">9. Modalidade Voz<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-9-modalidade-voz" title="Permanent link">&para;</a></h2>
+<p>A opção Voz deve comunicar, antes de qualquer ativação de microfone, que:</p>
+<ul>
+<li>gravação será explícita;</li>
+<li>início e fim deverão ser perceptíveis;</li>
+<li>poderá existir transcrição;</li>
+<li>áudio e transcrição podem ter controles distintos;</li>
+<li>será possível revisar e corrigir a transcrição quando aplicável;</li>
+<li>voz é opção, não obrigação;</li>
+<li>escolher voz não ativa gravação automaticamente;</li>
+<li>a continuidade funcional conhecida ocorre em preparação de voz dentro de <code>PER-004</code>.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>ESCOLHER VOZ
+→ DEFINE MODALIDADE
+→ MICROFONE AINDA NÃO ATIVADO
+→ GRAVAÇÃO AINDA NÃO INICIADA
+→ TRANSCRIÇÃO AINDA NÃO INICIADA
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-10-modalidade-arquivo">10. Modalidade Arquivo<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-10-modalidade-arquivo" title="Permanent link">&para;</a></h2>
+<p>A opção Arquivo deve permanecer disponível como forma validada de começar.</p>
+<p>Antes de qualquer upload, a Pessoa deve conseguir compreender, em nível proporcional:</p>
+<ul>
+<li>para que um arquivo poderá ser usado;</li>
+<li>que escolher Arquivo não abre nem envia documento automaticamente;</li>
+<li>que upload exige ação posterior consciente;</li>
+<li>que o conteúdo de um documento não autoriza leitura irrestrita;</li>
+<li>que informações de terceiros exigem proteção;</li>
+<li>que extrações futuras deverão permanecer revisáveis;</li>
+<li>que formatos, limites e armazenamento não são definidos por este Master.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>ESCOLHER ARQUIVO
+→ DEFINE MODALIDADE
+→ NÃO ABRE FILE PICKER AUTOMATICAMENTE
+→ NÃO FAZ UPLOAD
+→ NÃO AUTORIZA EXTRAÇÃO
+</code></pre></div>
+<p>A continuidade downstream específica dessa modalidade ainda não está contratada na topologia corrente e não pode ser inventada por Design ou IA.</p>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-11-modalidade-perguntas-opcionais">11. Modalidade Perguntas Opcionais<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-11-modalidade-perguntas-opcionais" title="Permanent link">&para;</a></h2>
+<p>Perguntas opcionais permanecem uma modalidade validada de início.</p>
+<p>A experiência deve preservar que:</p>
+<ul>
+<li>o fluxo guiado é opcional;</li>
+<li>cada pergunta deve ter finalidade compreensível;</li>
+<li>perguntas podem ser puladas;</li>
+<li>resposta livre deve permanecer possível quando aplicável;</li>
+<li><code>não sei</code>, <code>prefiro não informar</code> ou equivalente devem existir quando materialmente necessários;</li>
+<li>a profundidade não pode virar questionário excessivo;</li>
+<li>o fluxo não pode funcionar como cadastro obrigatório disfarçado;</li>
+<li>a Pessoa pode interromper.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>ESCOLHER PERGUNTAS OPCIONAIS
+→ DEFINE MODALIDADE
+→ NÃO OBRIGA RESPOSTA
+→ NÃO INICIA QUESTIONÁRIO COMPULSÓRIO
+</code></pre></div>
+<p>A continuidade downstream específica dessa modalidade ainda não está contratada na topologia corrente e não pode ser inferida como nova superfície.</p>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-12-paridade-entre-as-quatro-modalidades">12. Paridade entre as quatro modalidades<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-12-paridade-entre-as-quatro-modalidades" title="Permanent link">&para;</a></h2>
+<p>Texto, Voz, Arquivo e Perguntas Opcionais devem permanecer em <strong>paridade funcional de escolha</strong>.</p>
+<p>Paridade não significa que todas tenham os mesmos controles ou riscos. Significa que nenhuma deve ser apresentada como superior, mais comprometida ou mais capaz de gerar resultado.</p>
+<p>A solução não deve comunicar que:</p>
+<ul>
+<li>voz é mais profunda;</li>
+<li>texto é mais superficial;</li>
+<li>arquivo é mais completo;</li>
+<li>perguntas são mais precisas;</li>
+<li>uma modalidade produz resultado melhor;</li>
+<li>uma modalidade acelera evolução;</li>
+<li>uma modalidade aumenta chances de recomendação;</li>
+<li>combinar várias modalidades demonstra maior comprometimento.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>MODALIDADE
+≠ MÉRITO
+≠ COMPROMETIMENTO
+≠ QUALIDADE HUMANA
+≠ PROMESSA DE RESULTADO
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-13-combinacao-de-modalidades">13. Combinação de modalidades<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-13-combinacao-de-modalidades" title="Permanent link">&para;</a></h2>
+<p><code>UXA-035</code> permite combinar modalidades sem exigir combinação.</p>
+<p>Portanto, Design pode admitir uma escolha composta quando isso permanecer compreensível e reversível.</p>
+<p>Regras:</p>
+<ul>
+<li>nenhuma combinação vem pré-selecionada;</li>
+<li>combinar não é obrigatório;</li>
+<li>o efeito de cada modalidade permanece distinguível;</li>
+<li>permissões e autorizações não são herdadas automaticamente entre modalidades;</li>
+<li>remover uma modalidade deve ter consequência compreensível;</li>
+<li>combinação envolvendo arquivo/perguntas não cria automaticamente nova rota downstream.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-14-troca-de-modalidade">14. Troca de modalidade<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-14-troca-de-modalidade" title="Permanent link">&para;</a></h2>
+<p>Antes de qualquer captura material, a Pessoa deve poder trocar de modalidade sem penalidade.</p>
+<p>Depois que existir conteúdo, a troca passa a depender dos contratos da captura correspondente e deve preservar efeitos sobre:</p>
+<ul>
+<li>rascunho;</li>
+<li>áudio;</li>
+<li>transcrição;</li>
+<li>arquivo;</li>
+<li>respostas;</li>
+<li>persistência;</li>
+<li>descarte;</li>
+<li>continuidade.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>ANTES DA CAPTURA
+→ TROCA = LIVRE
+
+DEPOIS DA CAPTURA
+→ EFEITOS DEVEM SER EXPLICADOS
+→ NÃO PODE HAVER DESCARTE SILENCIOSO
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-15-informacoes-que-devem-ser-exibidas">15. Informações que devem ser exibidas<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-15-informacoes-que-devem-ser-exibidas" title="Permanent link">&para;</a></h2>
+<p>A superfície deve tornar compreensível:</p>
+<ul>
+<li>que existem quatro formas validadas de começar;</li>
+<li>que nenhuma vem pré-selecionada;</li>
+<li>que todas têm valor funcional equivalente como escolha;</li>
+<li>consequência imediata de cada modalidade;</li>
+<li>que Voz não inicia microfone na escolha;</li>
+<li>que Arquivo não inicia upload na escolha;</li>
+<li>que Perguntas são opcionais;</li>
+<li>que Texto não inicia análise;</li>
+<li>que é possível voltar ou interromper;</li>
+<li>que combinar modalidades é opcional;</li>
+<li>que a continuidade downstream de arquivo/perguntas ainda não está integralmente contratada no GKR.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-16-informacoes-que-nao-devem-ser-exigidas">16. Informações que não devem ser exigidas<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-16-informacoes-que-nao-devem-ser-exigidas" title="Permanent link">&para;</a></h2>
+<p><code>PER-003</code> não deve exigir:</p>
+<ul>
+<li>descrição substantiva do Momento Atual;</li>
+<li>objetivo;</li>
+<li>prioridade;</li>
+<li>domínio de evolução;</li>
+<li>justificativa da escolha;</li>
+<li>motivo para preferir uma modalidade;</li>
+<li>dado sensível;</li>
+<li>upload antes da escolha consciente;</li>
+<li>permissão de microfone antes da preparação de voz;</li>
+<li>resposta a pergunta antes da escolha do fluxo guiado;</li>
+<li>consentimento de processamento material.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-17-captura-e-persistencia">17. Captura e persistência<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-17-captura-e-persistencia" title="Permanent link">&para;</a></h2>
+<p>A decisão funcional própria desta superfície é a <strong>seleção explícita de uma ou mais modalidades validadas</strong>.</p>
+<p>Se essa escolha precisar ser mantida tecnicamente para continuidade, a implementação futura deve tratá-la como estado funcional mínimo, sem inferir autorização adicional.</p>
+<div class="highlight"><pre><span></span><code>MODALITY SELECTED
+→ HANDOFF / FLOW CONTEXT
+
+MODALITY SELECTED
+≠ JOURNEY CONTENT
+≠ CONSENT TO PROCESS
+≠ PERSONALIZATION AUTHORIZATION
+</code></pre></div>
+<p>Este Master não decide onde ou por quanto tempo a escolha será persistida.</p>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-18-acoes-e-controles">18. Ações e controles<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-18-acoes-e-controles" title="Permanent link">&para;</a></h2>
+<p>A superfície deve permitir, conforme composição de Design:</p>
+<ul>
+<li>escolher Texto;</li>
+<li>escolher Voz;</li>
+<li>escolher Arquivo;</li>
+<li>escolher Perguntas Opcionais;</li>
+<li>combinar modalidades quando a solução optar por suportar a capacidade já validada;</li>
+<li>trocar escolha antes da captura;</li>
+<li>voltar a <code>PER-002</code> quando compatível;</li>
+<li>interromper;</li>
+<li>não prosseguir naquele momento;</li>
+<li>compreender mais sobre cada modalidade antes de confirmar.</li>
+</ul>
+<p>Não deve existir ação genérica redundante que crie destino indeterminado quando as ações de escolha já são explícitas.</p>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-19-feedback-de-selecao">19. Feedback de seleção<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-19-feedback-de-selecao" title="Permanent link">&para;</a></h2>
+<p>Quando a Pessoa escolher uma modalidade, a solução deve fornecer feedback perceptível e não ambíguo.</p>
+<p>O feedback deve informar:</p>
+<ul>
+<li>qual modalidade foi escolhida;</li>
+<li>se existe combinação;</li>
+<li>qual é o próximo efeito conhecido;</li>
+<li>que captura material ainda não começou, quando aplicável;</li>
+<li>possibilidade de mudar antes do início material;</li>
+<li>quando a continuidade downstream ainda depende de definição posterior.</li>
+</ul>
+<p>A confirmação não precisa assumir uma tela adicional; pode ser resolvida dentro da mesma superfície.</p>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-20-falha-e-indisponibilidade">20. Falha e indisponibilidade<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-20-falha-e-indisponibilidade" title="Permanent link">&para;</a></h2>
+<p>Se uma modalidade estiver tecnicamente indisponível no futuro, a experiência deve:</p>
+<ul>
+<li>explicar indisponibilidade sem culpar a Pessoa;</li>
+<li>preservar outras modalidades legítimas;</li>
+<li>não ativar fallback silencioso;</li>
+<li>não selecionar automaticamente outra opção;</li>
+<li>permitir retorno ou interrupção;</li>
+<li>não coletar dado adicional para compensar a falha sem necessidade.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-21-privacidade-e-permissoes">21. Privacidade e permissões<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-21-privacidade-e-permissoes" title="Permanent link">&para;</a></h2>
+<p>Escolher uma modalidade não concede automaticamente a permissão operacional correspondente.</p>
+<p>Regras mínimas:</p>
+<ul>
+<li>Voz não autoriza microfone;</li>
+<li>Arquivo não autoriza abrir seletor, upload ou extração;</li>
+<li>Texto não autoriza análise do conteúdo futuro;</li>
+<li>Perguntas não autorizam inferência automática além da finalidade apresentada;</li>
+<li>nenhuma modalidade autoriza personalização futura por si só.</li>
+</ul>
+<p><code>PER-003</code> não deve solicitar permissões materiais antes de a operação que realmente as exige.</p>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-22-linguagem-e-claims">22. Linguagem e claims<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-22-linguagem-e-claims" title="Permanent link">&para;</a></h2>
+<p>A linguagem deve:</p>
+<ul>
+<li>tratar as quatro modalidades em paridade;</li>
+<li>evitar julgamento;</li>
+<li>evitar promessa de melhor resultado;</li>
+<li>evitar <code>recomendado para você</code> sem base legítima;</li>
+<li>evitar <code>mais completo</code>, <code>mais profundo</code>, <code>mais inteligente</code> ou equivalentes;</li>
+<li>indicar consequências imediatas com clareza;</li>
+<li>permitir começar com pouco;</li>
+<li>deixar claro que combinar modalidades é opcional.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-23-acessibilidade">23. Acessibilidade<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-23-acessibilidade" title="Permanent link">&para;</a></h2>
+<p>A solução deve preservar:</p>
+<ul>
+<li>seleção compreensível sem depender apenas de cor;</li>
+<li>labels inequívocos;</li>
+<li>foco perceptível;</li>
+<li>navegação por teclado;</li>
+<li>leitura por tecnologia assistiva;</li>
+<li>descrição clara das consequências;</li>
+<li>alvo de interação adequado;</li>
+<li>alternativa textual a qualquer explicação audiovisual;</li>
+<li>nenhuma obrigação de voz;</li>
+<li>nenhuma obrigação de upload;</li>
+<li>possibilidade de pular perguntas opcionais.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-24-conteudo-sintetico-para-design">24. Conteúdo sintético para Design<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-24-conteudo-sintetico-para-design" title="Permanent link">&para;</a></h2>
+<p>Design e prototipação podem usar conteúdo sintético para demonstrar:</p>
+<ul>
+<li>estado sem seleção;</li>
+<li>Texto selecionado;</li>
+<li>Voz selecionada;</li>
+<li>Arquivo selecionado;</li>
+<li>Perguntas Opcionais selecionadas;</li>
+<li>combinação simulada;</li>
+<li>troca de escolha;</li>
+<li>indisponibilidade simulada;</li>
+<li>retorno;</li>
+<li>handoff simulado para <code>PER-004</code> apenas nos caminhos correntemente contratados.</li>
+</ul>
+<p>Não podem ser simulados como reais:</p>
+<ul>
+<li>permissão real de microfone;</li>
+<li>gravação real;</li>
+<li>transcrição real;</li>
+<li>upload real;</li>
+<li>extração real;</li>
+<li>resposta pessoal real;</li>
+<li>processamento real;</li>
+<li>preferência inferida real.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-25-liberdade-de-design">25. Liberdade de Design<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-25-liberdade-de-design" title="Permanent link">&para;</a></h2>
+<p>A designer pode decidir:</p>
+<ul>
+<li>composição da escolha;</li>
+<li>cards, botões, listas ou outra estrutura;</li>
+<li>uso de ilustração ou iconografia;</li>
+<li>ordem visual, desde que não crie superioridade funcional;</li>
+<li>quantidade de passos visuais;</li>
+<li>feedback de seleção;</li>
+<li>microinterações;</li>
+<li>motion;</li>
+<li>tipografia;</li>
+<li>paleta;</li>
+<li>grid;</li>
+<li>responsividade;</li>
+<li>linguagem visual.</li>
+</ul>
+<p>O GKR não impõe quatro cards, colunas, ícones específicos ou qualquer outra solução estética.</p>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-26-uso-por-ia">26. Uso por IA<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-26-uso-por-ia" title="Permanent link">&para;</a></h2>
+<p>Quando IA for usada para explorar <code>PER-003</code>, o contexto mínimo deve incluir:</p>
+<ol>
+<li><code>GKR-UX-PERSON-JOURNEY-READ-FIRST-001</code>;</li>
+<li><code>GKR-UX-PERSON-JOURNEY-FLOW-001</code>;</li>
+<li>este Documento Mestre;</li>
+<li><code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> e o detalhamento da Pessoa;</li>
+<li><code>GKR-JOURNEY-TRANSITION-REGISTRY-001</code>;</li>
+<li><code>UXA-020</code>;</li>
+<li><code>UXA-023</code>;</li>
+<li><code>UXA-035</code>;</li>
+<li><code>PAS-001-CC-LIFECYCLE-001</code> quando necessário;</li>
+<li><code>UXA-069</code> apenas como contexto downstream de <code>PER-004</code>, não como autoridade que redefine <code>PER-003</code>.</li>
+</ol>
+<p>A IA não pode:</p>
+<ul>
+<li>remover uma das quatro modalidades validadas;</li>
+<li>criar quinta modalidade principal;</li>
+<li>transformar perguntas opcionais em questionário obrigatório;</li>
+<li>ativar voz automaticamente;</li>
+<li>iniciar upload automaticamente;</li>
+<li>inferir preferência;</li>
+<li>inventar benefício de uma modalidade;</li>
+<li>inventar continuidade downstream para arquivo/perguntas;</li>
+<li>criar novo <code>PER-ID</code>;</li>
+<li>materializar <code>PER-004</code> como se já estivesse documentada por este Master.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-27-criterios-de-aceite-funcional">27. Critérios de aceite funcional<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-27-criterios-de-aceite-funcional" title="Permanent link">&para;</a></h2>
+<p>Uma futura solução visual de <code>PER-003</code> é aceitável quando:</p>
+<ol>
+<li>Texto, Voz, Arquivo e Perguntas Opcionais permanecem disponíveis;</li>
+<li>nenhuma modalidade vem selecionada por inferência;</li>
+<li>as quatro opções têm paridade funcional de escolha;</li>
+<li>escolher Voz não ativa gravação;</li>
+<li>escolher Arquivo não inicia upload;</li>
+<li>escolher Texto não inicia análise;</li>
+<li>Perguntas permanecem opcionais e puláveis;</li>
+<li>combinação pode existir, mas nunca é obrigatória;</li>
+<li>a Pessoa consegue voltar ou interromper;</li>
+<li>é possível trocar a escolha antes da captura;</li>
+<li>o handoff <code>TRN-003 → PER-004</code> é preservado como continuidade parcial para texto/voz;</li>
+<li>a lacuna downstream de arquivo/perguntas é preservada, não inventada;</li>
+<li>nenhuma autorização material é inferida;</li>
+<li>nenhuma preferência é inferida sem autoridade;</li>
+<li>indisponibilidade possui fallback explícito e não coercitivo;</li>
+<li>acessibilidade estrutural é preservada;</li>
+<li>a solução não cria novo <code>PER-ID</code>.</li>
+</ol>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-28-limites">28. Limites<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-28-limites" title="Permanent link">&para;</a></h2>
+<p>Este Documento Mestre não:</p>
+<ul>
+<li>cria tela final;</li>
+<li>define layout;</li>
+<li>define copy final;</li>
+<li>cria Figma;</li>
+<li>cria protótipo;</li>
+<li>implementa captura;</li>
+<li>solicita microfone;</li>
+<li>implementa gravação;</li>
+<li>implementa transcrição;</li>
+<li>implementa upload;</li>
+<li>define formatos de arquivo;</li>
+<li>implementa fluxo de perguntas;</li>
+<li>fecha a continuidade downstream de arquivo/perguntas;</li>
+<li>define persistência da escolha;</li>
+<li>altera <code>TRN-002</code> ou <code>TRN-003</code>;</li>
+<li>cria nova superfície;</li>
+<li>autoriza Product Engineering.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-003-modality-selection-master-29-estado-corrente">29. Estado corrente<a class="headerlink" href="#experience-architecture-person-journey-per-003-modality-selection-master-29-estado-corrente" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>PER-003 MASTER
+→ CURRENT DESIGN DEFINITION
+
+VALIDATED MODALITY CHOICES
+→ TEXT
+→ VOICE
+→ FILE
+→ OPTIONAL GUIDED QUESTIONS
+
+COMBINATION
+→ ALLOWED
+→ NOT REQUIRED
+
+TRN-002
+→ LOCALLY VALIDATED / UNCHANGED
+
+TRN-003
+→ PARTIAL / UNCHANGED
+
+TEXT / VOICE CONTINUITY
+→ PER-004 — EXPRESSÃO POR TEXTO OU VOZ
+
+FILE / OPTIONAL QUESTIONS CONTINUITY
+→ NOT FULLY CONTRACTED
+→ MUST NOT BE INVENTED
+
+NEXT DOCUMENT IN CONSTRUCTION SEQUENCE
+→ PER-004 — EXPRESSÃO POR TEXTO OU VOZ
 
 NEW VISUAL MATERIALIZATION
 → NONE
@@ -35241,6 +35848,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 
 .print-site-enumerate-headings #section-8-2 > h1:before { content: '8.2 ' }
 .print-site-enumerate-headings #experience-architecture-person-journey-per-002-protected-entry-master > h1:before { content: '8.2.1 ' }
+
+.print-site-enumerate-headings #experience-architecture-person-journey-per-003-modality-selection-master > h1:before { content: '8.2.2 ' }
 
 .print-site-enumerate-headings #section-9 > h1:before { content: '9 ' }
 .print-site-enumerate-headings #research > h1:before { content: '9.1 ' }

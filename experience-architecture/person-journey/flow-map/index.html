@@ -3010,6 +3010,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../per-003-modality-selection-master/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 — PER-003 — Escolha de Modalidade
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -4578,6 +4613,24 @@ PER-002..304
 </tr>
 </tbody>
 </table>
+<p>Regra corrente de <code>PER-003</code>:</p>
+<div class="highlight"><pre><span></span><code>VALIDATED MODALITY CHOICES
+→ TEXT
+→ VOICE
+→ FILE
+→ OPTIONAL GUIDED QUESTIONS
+
+COMBINATION
+→ ALLOWED
+→ NOT REQUIRED
+
+TEXT / VOICE
+→ TRN-003 → PER-004
+
+FILE / OPTIONAL GUIDED QUESTIONS
+→ DOWNSTREAM CONTINUITY NOT FULLY CONTRACTED
+→ MUST NOT BE INVENTED
+</code></pre></div>
 <h2 id="3-continuidade-recorrente-a-partir-de-hoje">3. Continuidade recorrente a partir de Hoje<a class="headerlink" href="#3-continuidade-recorrente-a-partir-de-hoje" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>PER-008 — HOJE
 ├── TRN-008 → PER-010 — MEUS OBJETIVOS → TRN-009 → PER-008
@@ -4650,19 +4703,19 @@ PER-301
 <td style="text-align: right;">01</td>
 <td><code>PER-002</code></td>
 <td>Entrada Protegida</td>
-<td><strong>em construção nesta frente</strong></td>
+<td><strong>construído / current</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;">02</td>
 <td><code>PER-003</code></td>
 <td>Escolha de Modalidade</td>
-<td>planejado</td>
+<td><strong>construído / current</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;">03</td>
 <td><code>PER-004</code></td>
 <td>Expressão por Texto ou Voz</td>
-<td>planejado</td>
+<td>próximo / não iniciado</td>
 </tr>
 <tr>
 <td style="text-align: right;">04</td>
@@ -4832,11 +4885,16 @@ PER-001
 NEW SURFACE MASTERS TO BUILD
 → 26
 
-BUILT IN THIS FOUNDATION
+BUILT
+→ 2 / 26
 → PER-002
+→ PER-003
 
-REMAINING AFTER PER-002
-→ 25
+REMAINING
+→ 24 / 26
+
+NEXT DOCUMENTATION TARGET
+→ PER-004 — EXPRESSÃO POR TEXTO OU VOZ
 
 NEW PER-IDS
 → NONE
