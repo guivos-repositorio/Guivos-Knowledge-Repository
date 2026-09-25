@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.33
+version: 3.50.35
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-25
 normative: true
@@ -72,7 +72,7 @@ GKR VIGENTE
 ```
 
 
-A frente posterior da Cognitive Reference Architecture também foi concluída em seu limite documental: `ADR-008` aprovou placement e ownership sob a GIA; `GIA-COG-001 v0.1.1` passou por revisão, remediação, revalidação semântica e gate de promoção e é agora a **Cognitive Reference Architecture vigente, ativa e normativa**. Essa promoção não autoriza `GIA-COG-002..008`, arquitetura física, dados reais, implementação, operação ou produção.
+`GIA-COG-001 v0.1.2` é a **Cognitive Reference Architecture vigente, ativa e normativa**, subordinada à GIA por `ADR-008`. Essa autoridade permanece em nível conceitual/de referência e não autoriza `GIA-COG-002..008`, arquitetura física, dados reais, implementação, operação ou produção.
 
 A frente documental posterior de Organizações e Coletivos avançou por gates próprios até a Navigation Materialization canônica `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`. A autorização governada subsequente `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0` liberou exclusivamente os wireframes autenticados low-fidelity, a primeira entrega foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e a validação funcional posterior concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`, com 30/30 itens de cobertura, 15/15 invariantes, 12/12 desafios de estado, 0 findings materiais e nenhuma reformulação requerida. O pacote Delivery + Validation é a referência corrente low-fidelity O/C. A adjudicação pós-validação `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.2` concluiu `PASS` e a decisão humana subsequente `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.2` concedeu autorização para Design high-fidelity. O ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0` liberou a execução externa de Design high-fidelity; a entrega permanece `NOT_RECEIVED`. Protótipo interativo e Product Engineering continuam não liberados.
 
@@ -830,7 +830,7 @@ Uma Organização pode possuir relação comercial Business e Ads, mas isso não
 
 ## 12. Guivos Intelligence
 
-`GPA-006 v2.0.1` permanece autoridade superior do Produto Especializado Guivos Intelligence.
+`GPA-006 v2.0.2` permanece autoridade superior do Produto Especializado Guivos Intelligence.
 
 Unidade de valor:
 
@@ -869,9 +869,9 @@ PERCEBER ANTES ≠ PREVER O FUTURO
 TECNOLOGIA ≠ PRODUTO
 ```
 
-`GIA-000 v1.7.0` preserva CIE, LPM, GPMA e Intelligence Engines como candidatos técnicos/arquiteturais, não como implementação comprovada, reconcilia o estado documental da Home Intelligence v1 e reconhece `GIA-COG-001 v0.1.1` como arquitetura cognitiva de referência vigente.
+`GIA-000 v1.7.1` preserva CIE, LPM, GPMA e Intelligence Engines como candidatos técnicos/arquiteturais, não como implementação comprovada, e reconhece `GIA-COG-001 v0.1.2` como arquitetura cognitiva de referência vigente.
 
-`GIA-COG-001 v0.1.1` está `active / normative` em nível conceitual/de referência. Ela governa o fluxo cognitivo lógico, incluindo finalidade/autoridade/sensibilidade, elegibilidade pré-processamento, contexto e evidência, processamento, fusão, assurance, disclosure, projeção ao consumidor e serving, preservando `COMPREENDER ≠ DECIDIR` e `PROCESSING AUTHORIZED ≠ DISCLOSURE AUTHORIZED`.
+`GIA-COG-001 v0.1.2` está `active / normative` em nível conceitual/de referência. Ela governa o fluxo cognitivo lógico, incluindo finalidade/autoridade/sensibilidade, elegibilidade pré-processamento, contexto e evidência, processamento, fusão, assurance, disclosure, projeção ao consumidor e serving, preservando `COMPREENDER ≠ DECIDIR` e `PROCESSING AUTHORIZED ≠ DISCLOSURE AUTHORIZED`.
 
 ```text
 GIA-COG-001
@@ -897,7 +897,7 @@ HOME INTELLIGENCE v1
 → CONCEPTUAL ARCHITECTURE COMPLETE
 
 HOME SOURCE LOCK
-→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.15
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.16
 → ACTIVE / NORMATIVE
 → FREEZES SOURCES AND INVARIANTS
 → DESIGN RELEASE GOVERNED BY COMMON AUTHORITY
@@ -922,7 +922,7 @@ NEO4J
 ≠ production
 ```
 
-A promoção de `GIA-COG-001` não altera esse estado nem seleciona mecanismo, fornecedor ou topologia física.
+`GIA-COG-001` não seleciona mecanismo, fornecedor ou topologia física e não altera os limites de implementação declarados neste registro.
 
 Não há autoridade suficiente para afirmar como implementados:
 
@@ -1205,7 +1205,7 @@ CONTROLE PROJETADO
 
 ## 20. Public Canon
 
-`GOG-001 — Guia Oficial da Guivos v5.3.0` é a principal superfície institucional classificada como `public-canon` no estado atual documentado.
+`GOG-001 — Guia Oficial da Guivos v5.3.1` é a principal superfície institucional classificada como `public-canon` no estado atual documentado.
 
 O GOG corrente permanece alinhado à Fundação e ao RP-002 para:
 
@@ -1583,10 +1583,10 @@ ORGANIZAÇÕES E COLETIVOS
 → GKR-UX-HOME-OC-MASTER-001 v1.0.6
 
 MALL
-→ GKR-UX-HOME-MALL-MASTER-001 v1.1.3
+→ GKR-UX-HOME-MALL-MASTER-001 v1.1.4
 
 TRAVEL
-→ GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.5
+→ GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.6
 
 MEDIA
 → GKR-UX-HOME-MEDIA-MASTER-001 v1.0.3
@@ -1598,7 +1598,7 @@ BUSINESS
 → GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.9
 
 INTELLIGENCE
-→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.13
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.14
 
 QUICK-REFERENCE MOVEMENTS
 → 83 / 83
@@ -1616,16 +1616,16 @@ PRIMARY SOURCE OF TRUTH
 → CURRENT MAIN
 
 AUTHORIZED WHITELIST
-→ GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.44
+→ GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.46
 
 UNIVERSAL DESIGN AUTHORITIES
-→ HANDOFF v1.7.10
-→ READINESS v1.3.26
+→ HANDOFF v1.7.12
+→ READINESS v1.3.27
 → FLOW v3.1.3
 → RELEASE v1.3.2
 
 OPTIONAL AI AUTHORITY
-→ GENINPUT v2.3.15
+→ GENINPUT v2.3.16
 → ONLY WHEN AI IS USED
 
 READ-FIRST ROUTERS

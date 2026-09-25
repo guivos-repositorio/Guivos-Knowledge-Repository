@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Corrente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.54.28
+version: 3.54.30
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-25
 depends_on:
@@ -28,7 +28,7 @@ Este índice existe somente para descoberta das frentes UXA numeradas que ainda 
 
 ```text
 GKR-STATE-001
-→ 3.50.33 / CURRENT
+→ 3.50.35 / CURRENT
 
 MARCO FUNCIONAL
 → M7.88

@@ -2,9 +2,9 @@
 id: GPD-000
 title: Documentação Pública da Guivos
 status: active
-version: 4.3.0
+version: 4.3.1
 owner: Guivos
-last_updated: 2026-09-09
+last_updated: 2026-09-25
 related:
   - GOG-001
   - GKR-STATE-001
@@ -22,7 +22,7 @@ Este domínio contém a tradução institucional pública das autoridades vigent
 
 ## Public Canon vigente
 
-- [GOG-001 — Guia Oficial da Guivos](guia-oficial-da-guivos.md) — **versão 5.3.0**.
+- [GOG-001 — Guia Oficial da Guivos](guia-oficial-da-guivos.md) — **versão 5.3.1**.
 
 `GOG-001` é a única superfície deste domínio classificada como `public-canon`.
 

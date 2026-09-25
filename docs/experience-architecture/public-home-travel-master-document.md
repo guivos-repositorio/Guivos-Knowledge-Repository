@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-TRAVEL-MASTER-001
 title: Home Pública — Guivos Travel — Documento Mestre
 status: active
-version: 1.1.5
+version: 1.1.6
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-25
 normative: false
 maturity: reconciled_for_external_design
 parents:
@@ -860,7 +860,7 @@ Expressão complementar:
 
 ## 39. Estado de prontidão
 
-A arquitetura conceitual desta Home está convergida e reconciliada para consumo no regime comum designer-first / IA opcional.
+A arquitetura conceitual desta Home está pronta para consumo no regime comum designer-first / IA opcional.
 
 O release comum vigente autoriza a produção externa de Design da Home Travel pela designer. Este Master governa significado, narrativa, fronteiras e evidências; não prescreve identidade visual nem substitui a autoria criativa da designer.
 
@@ -886,13 +886,13 @@ IMPLEMENTATION / PUBLICATION
 
 Estado:
 
-> **ARQUITETURA CONCEITUAL CONVERGIDA — DOCUMENTO MESTRE RECONCILIADO PARA PRODUÇÃO EXTERNA DE DESIGN; IMPLEMENTAÇÃO E PUBLICAÇÃO NÃO LIBERADAS.**
+> **ARQUITETURA CONCEITUAL PRONTA PARA PRODUÇÃO EXTERNA DE DESIGN; IMPLEMENTAÇÃO E PUBLICAÇÃO NÃO LIBERADAS.**
 
 ---
 
 ## 40. Contrato determinístico de consumo para Designer e IA
 
-Esta seção absorve no próprio Master as regras antes preservadas apenas em `GKR-HOME-MASTERS-REMEDIATION-001`.
+Esta seção define diretamente as regras determinísticas de consumo deste Master para Designer e IA.
 
 Ela não define layout, estética ou implementação.
 

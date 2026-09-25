@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.44
+version: 7.0.46
 owner: Experience Architecture
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 normative: true
 maturity: current_canonical_design_source_manifest
 depends_on:
@@ -50,14 +50,14 @@ Snapshots, candidates e registros de emissão anteriores pertencem à proveniên
 
 Quatro autoridades são universais para o fluxo de Design:
 
-1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.11` — `docs/experience-architecture/public-homes-design-handoff.md`;
-2. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.3.26` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
+1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.12` — `docs/experience-architecture/public-homes-design-handoff.md`;
+2. `GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001 v1.3.27` — `docs/experience-architecture/public-homes-design-production-readiness-and-figma-contract.md`;
 3. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001 v3.1.3` — `docs/experience-architecture/public-homes-design-delivery-operational-flow.md`;
 4. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001 v1.3.2` — `docs/experience-architecture/public-homes-design-production-release.md`.
 
 Quando a designer optar por usar IA, acrescenta-se a autoridade condicional:
 
-- `GKR-UX-HOMES-GENINPUT-001 v2.3.15` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`.
+- `GKR-UX-HOMES-GENINPUT-001 v2.3.16` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`.
 
 O uso manual não exige Source Lock ou registro de execução de IA.
 
@@ -79,16 +79,16 @@ O uso manual não exige Source Lock ou registro de execução de IA.
 
 ### 3.3 Mall
 
-- `GKR-UX-HOME-MALL-READ-FIRST-001 v1.0.2` — `docs/experience-architecture/read-first/public-home-mall-read-first.md`;
+- `GKR-UX-HOME-MALL-READ-FIRST-001 v1.0.3` — `docs/experience-architecture/read-first/public-home-mall-read-first.md`;
 
-- `GKR-UX-HOME-MALL-MASTER-001 v1.1.3` — `docs/experience-architecture/public-home-mall-master-document.md`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.1.4` — `docs/experience-architecture/public-home-mall-master-document.md`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.1` — `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md`.
 
 ### 3.4 Travel
 
-- `GKR-UX-HOME-TRAVEL-READ-FIRST-001 v1.0.2` — `docs/experience-architecture/read-first/public-home-travel-read-first.md`;
+- `GKR-UX-HOME-TRAVEL-READ-FIRST-001 v1.0.3` — `docs/experience-architecture/read-first/public-home-travel-read-first.md`;
 
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.5` — `docs/experience-architecture/public-home-travel-master-document.md`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.6` — `docs/experience-architecture/public-home-travel-master-document.md`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.1` — `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
 
 ### 3.5 Media
@@ -118,15 +118,15 @@ O uso manual não exige Source Lock ou registro de execução de IA.
 
 ### 3.8 Intelligence
 
-- `GKR-UX-HOME-INTELLIGENCE-READ-FIRST-001 v1.0.7` — `docs/experience-architecture/read-first/public-home-intelligence-read-first.md`;
+- `GKR-UX-HOME-INTELLIGENCE-READ-FIRST-001 v1.0.8` — `docs/experience-architecture/read-first/public-home-intelligence-read-first.md`;
 
-- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.16` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.15` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
-- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.13` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
-- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.5` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
+- `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.17` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.16` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+- `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.14` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+- `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.6` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 - `GKR-UX-HOMES-OUTCOME-001 v1.0.0` — `docs/experience-architecture/public-homes-value-outcome-principle.md`;
-- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.2` — `docs/product-architecture/intelligence-product-source-lock.md`;
-- `GPA-006 v2.0.1` — `docs/product-architecture/intelligence.md`.
+- `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.3` — `docs/product-architecture/intelligence-product-source-lock.md`;
+- `GPA-006 v2.0.2` — `docs/product-architecture/intelligence.md`.
 
 ## 4. Cobertura atual
 

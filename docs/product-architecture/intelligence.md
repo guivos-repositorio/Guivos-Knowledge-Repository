@@ -2,9 +2,9 @@
 id: GPA-006
 title: Guivos Intelligence
 status: consolidated
-version: 2.0.1
+version: 2.0.2
 owner: Guivos
-last_updated: 2026-09-19
+last_updated: 2026-09-25
 related_models:
   - GAI-001
   - GAI-002
@@ -23,7 +23,7 @@ related:
 
 Este documento é a **autoridade superior de produto do Guivos Intelligence**.
 
-A versão 2.0.1 preserva integralmente a estruturação conceitual consolidada em 2.0.0 e reconcilia apenas o estado temporal das autoridades posteriores da Home Pública, que hoje já possui Documento Mestre, Source Lock, Design Handoff e release comum para produção externa pela designer.
+A autoridade vigente é `GPA-006 v2.0.2`. A Home Pública do Guivos Intelligence possui Documento Mestre, Source Lock, Design Handoff e release comum vigente para produção externa pela designer.
 
 Esta autoridade descreve **o que o Guivos Intelligence é e deve preservar como produto**. Ela não declara implementação técnica, operação em produção, disponibilidade comercial pública, pricing final, modelo de IA selecionado ou infraestrutura implantada. As autoridades posteriores da Home Pública e de Design possuem seus próprios estados e não são bloqueadas por esta GPA.
 
@@ -1609,7 +1609,7 @@ flowchart TD
 
 ## 53. Limites desta versão
 
-`GPA-006 2.0.1` autoriza como autoridade de produto:
+`GPA-006 2.0.2` autoriza como autoridade de produto:
 
 - identidade e papel do Guivos Intelligence;
 - duas frentes superiores;
@@ -1666,24 +1666,23 @@ Permanecem não comprovados ou não autorizados por esta GPA:
 - compliance operacional comprovado;
 - impacto humano ou empresarial comprovado.
 
-## 54. Progressão governada — proveniência e estado corrente
+## 54. Cadeia corrente de autoridade e execução
 
-A sequência abaixo descreve a progressão histórica que levou à Home vigente; não constitui gate corrente para a designer:
+A leitura vigente do Guivos Intelligence segue esta cadeia de autoridade:
 
 ```mermaid
 flowchart TD
-    A[GPA-006 2.0.0 convergido\nORIGIN / HISTORICAL]
-    B[Integração governada no GKR]
-    C[Source Lock do Produto]
-    D[Documento Mestre da Home]
-    E[Source Lock da Home]
-    F[Design Handoff]
-    G[Release comum de Design externo]
+    A[GPA-006 2.0.2\nPRODUCT AUTHORITY]
+    B[Product Source Lock]
+    C[Documento Mestre da Home]
+    D[Home Source Lock]
+    E[Design Handoff]
+    F[Release comum de Design externo]
 
-    A --> B --> C --> D --> E --> F --> G
+    A --> B --> C --> D --> E --> F
 ```
 
-Em `GPA-006 2.0.1`, essa progressão está documentalmente reconciliada até o release externo de Design. Implementação, operação e Product Engineering permanecem gates separados e não liberados por esta autoridade.
+Essa cadeia governa a tradução do produto para a Home Pública e a produção externa de Design. Implementação, operação e Product Engineering permanecem gates separados e não liberados por esta autoridade.
 
 ## 55. Fechamento
 

@@ -2,9 +2,9 @@
 id: GIA-COG-001
 title: Cognitive Reference Architecture
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Guivos Intelligence Architecture
-last_updated: 2026-09-10
+last_updated: 2026-09-25
 normative: true
 maturity: conceptual_reference_architecture_active
 related:
@@ -788,7 +788,7 @@ A existência do namespace não autoriza criação automática de documentos.
 
 ```text
 GIA-COG-001
-→ ACTIVE / NORMATIVE v0.1.1
+→ ACTIVE / NORMATIVE v0.1.2
 → CURRENT COGNITIVE REFERENCE ARCHITECTURE
 → CONCEPTUAL / REFERENCE LEVEL
 
@@ -805,29 +805,11 @@ PROVIDERS / MODELS / STACK
 → NOT SELECTED BY THIS DOCUMENT
 ```
 
-## 39. Promoção canônica
+## 39. Autoridade e limites vigentes
 
-O ciclo governado do Documento Mestre foi concluído:
+`GIA-COG-001` é a arquitetura cognitiva de referência vigente, ativa e normativa da Guivos Intelligence Architecture em nível conceitual/lógico.
 
-```text
-GIA-COG-001-REV-01
-→ REVISION REQUIRED
-
-GIA-COG-001-REM-01
-→ 6 / 6 FINDINGS REMEDIATED
-
-GIA-COG-001-REV-02
-→ PASS
-→ 0 OPEN MATERIAL FINDINGS
-
-GIA-COG-001-PROM-01
-→ CANONICAL PROMOTION ELIGIBILITY = PASS
-
-GIA-COG-001-PROM-02
-→ CANONICAL PROMOTION EXECUTED
-```
-
-A promoção estabelece esta arquitetura como referência cognitiva vigente. Ela não libera por inferência qualquer documento `GIA-COG-002..008`, arquitetura física, modelo físico de dados, ontologia física, fornecedor, modelo, stack, dado real, Product Engineering, operação ou produção.
+Sua autoridade cobre o fluxo cognitivo, os contratos, distinções, gates e guardrails definidos neste documento. Ela não libera por inferência qualquer documento `GIA-COG-002..008`, arquitetura física, modelo físico de dados, ontologia física, fornecedor, modelo, stack, dado real, Product Engineering, operação ou produção.
 
 ```text
 ACTIVE / NORMATIVE REFERENCE ARCHITECTURE
@@ -836,4 +818,4 @@ ACTIVE / NORMATIVE REFERENCE ARCHITECTURE
 
 ## 40. Estado
 
-**GIA-COG-001 v0.1.1 é a Cognitive Reference Architecture vigente, ativa e normativa da Guivos Intelligence Architecture. Permanece conceitual/de referência; não implementada, não operacional e não produtiva.**
+**GIA-COG-001 v0.1.2 é a Cognitive Reference Architecture vigente, ativa e normativa da Guivos Intelligence Architecture. Permanece conceitual/de referência; não implementada, não operacional e não produtiva.**

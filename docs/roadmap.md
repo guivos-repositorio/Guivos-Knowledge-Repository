@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.21
+version: 13.48.23
 owner: Guivos
 last_updated: 2026-09-25
 normative: true
@@ -36,7 +36,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.50.33` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.50.35` em **frentes governadas de avanço**.
 
 Ele não é cronologia do projeto, inventário de versões antigas, registro de PRs, histórico de auditoria ou autorização automática para executar a próxima coisa tecnicamente possível.
 
@@ -56,12 +56,12 @@ A auditoria integral anterior está concluída. Lotes, findings resolvidos, SHAs
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.50.33 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.50.35 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-101` |
 | Homes públicas | `8 / 8 READY FOR EXTERNAL DESIGN` |
-| Manifesto de Design | `GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.44` |
+| Manifesto de Design | `GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.46` |
 | Read-First das Homes | `8 / 8 CURRENT / NON-NORMATIVE` |
 | Design das Homes | `DESIGNER-FIRST / AI OPTIONAL / TOOL-NEUTRAL` |
 | Journey | vistas e registries correntes ativos |
@@ -71,7 +71,7 @@ A auditoria integral anterior está concluída. Lotes, findings resolvidos, SHAs
 | O/C protótipo interativo | `NOT_AUTHORIZED` |
 | PER-002 | referência interativa pós-review validada |
 | UXA-102 / V5 | `NOT_STARTED` |
-| Cognitive Reference Architecture | `GIA-COG-001 v0.1.1 / ACTIVE / NORMATIVE` |
+| Cognitive Reference Architecture | `GIA-COG-001 v0.1.2 / ACTIVE / NORMATIVE` |
 | `GIA-COG-002..008` | `RESERVED / NOT MATERIALIZED` |
 | Product Engineering | `PAUSED / NOT RELEASED` |
 | PMF | `NOT VALIDATED` |
