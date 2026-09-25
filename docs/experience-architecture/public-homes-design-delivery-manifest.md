@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.47
+version: 7.0.48
 owner: Experience Architecture
 last_updated: 2026-09-25
 normative: true
@@ -24,7 +24,7 @@ related:
 Este Manifesto define **o conjunto corrente de fontes que pode ser consumido por designer humana e, opcionalmente, por sistemas de IA** para criação e prototipação das oito Homes públicas.
 
 ```text
-CANONICAL CHECKPOINT
+CANONICAL SOURCE
 → CURRENT MAIN
 → RESOLVED AT CONSUMPTION TIME
 
@@ -34,7 +34,7 @@ SOURCE OF TRUTH
 SNAPSHOT REQUIREMENT
 → NONE
 
-HISTORICAL / CANDIDATE / CHECKPOINT / AUDIT
+NON-CURRENT / SUPERSEDED INPUT
 → EXCLUDED FROM DESIGN AND AI INPUT
 
 DESIGNER
@@ -167,7 +167,7 @@ Quando uma Home levar a uma experiência autenticada, carregar apenas as autorid
 - `docs/journeys/transition-registry.md`;
 - autoridades autenticadas específicas citadas por essas superfícies.
 
-Não carregar sequências históricas de validação, checkpoints, snapshots, candidatos ou auditorias concluídas.
+Carregar somente autoridades correntes e fontes explicitamente autorizadas para a Home.
 
 ## 6. Regra de atualização
 
@@ -181,7 +181,7 @@ NEW VALIDATED RULE
 SNAPSHOT
 → CREATE ONLY FOR REAL EXTERNAL FREEZE / TRANSPORT NEED
 
-CANDIDATE
+NON-CURRENT PACKAGE
 → NOT CREATED BY DEFAULT
 ```
 
