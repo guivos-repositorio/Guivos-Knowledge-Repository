@@ -2,9 +2,9 @@
 id: GPA-006
 title: Guivos Intelligence
 status: consolidated
-version: 2.0.1
+version: 2.0.2
 owner: Guivos
-last_updated: 2026-09-19
+last_updated: 2026-09-25
 related_models:
   - GAI-001
   - GAI-002
@@ -1609,7 +1609,7 @@ flowchart TD
 
 ## 53. Limites desta versão
 
-`GPA-006 2.0.1` autoriza como autoridade de produto:
+`GPA-006 2.0.2` autoriza como autoridade de produto:
 
 - identidade e papel do Guivos Intelligence;
 - duas frentes superiores;
@@ -1666,24 +1666,23 @@ Permanecem não comprovados ou não autorizados por esta GPA:
 - compliance operacional comprovado;
 - impacto humano ou empresarial comprovado.
 
-## 54. Progressão governada — proveniência e estado corrente
+## 54. Cadeia corrente de autoridade e execução
 
-A sequência abaixo descreve a progressão histórica que levou à Home vigente; não constitui gate corrente para a designer:
+A leitura vigente do Guivos Intelligence segue esta cadeia de autoridade:
 
 ```mermaid
 flowchart TD
-    A[GPA-006 2.0.0 convergido\nORIGIN / HISTORICAL]
-    B[Integração governada no GKR]
-    C[Source Lock do Produto]
-    D[Documento Mestre da Home]
-    E[Source Lock da Home]
-    F[Design Handoff]
-    G[Release comum de Design externo]
+    A[GPA-006 2.0.2\nPRODUCT AUTHORITY]
+    B[Product Source Lock]
+    C[Documento Mestre da Home]
+    D[Home Source Lock]
+    E[Design Handoff]
+    F[Release comum de Design externo]
 
-    A --> B --> C --> D --> E --> F --> G
+    A --> B --> C --> D --> E --> F
 ```
 
-Em `GPA-006 2.0.1`, essa progressão está documentalmente reconciliada até o release externo de Design. Implementação, operação e Product Engineering permanecem gates separados e não liberados por esta autoridade.
+Essa cadeia governa a tradução do produto para a Home Pública e a produção externa de Design. Implementação, operação e Product Engineering permanecem gates separados e não liberados por esta autoridade.
 
 ## 55. Fechamento
 
