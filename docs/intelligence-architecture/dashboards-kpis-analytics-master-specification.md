@@ -2,9 +2,9 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.8
+version: 0.2.9
 owner: Guivos Intelligence Architecture
-last_updated: 2026-09-13
+last_updated: 2026-09-25
 normative: false
 maturity: governed_multi_dashboard_pre_implementation_master_specification
 depends_on:
@@ -100,13 +100,13 @@ MASTER ESPECIALIZADO
 
 `MATERIALIZED DOCUMENTARILY` indica autoridade documental pré-implementação materializada; não cria, por si só, superfície operacional, dado real ou implementação.
 
-### 2.2 Inventário candidato preservado da frente original
+### 2.2 Inventário candidato de necessidades analíticas
 
-A tabela fornecida para esta frente identificou seis necessidades analíticas. Elas permanecem **input/proveniência de trabalho** até sua adjudicação individual.
+O escopo corrente reconhece seis necessidades analíticas candidatas. Elas permanecem sujeitas à adjudicação individual e não equivalem a dashboards implementados ou dados reais disponíveis.
 
 #### Dashboard Guivos
 
-Finalidade candidata original: visão transversal do ecossistema e da empresa Guivos, incluindo, quando legitimamente definidos e disponíveis:
+Finalidade candidata: visão transversal do ecossistema e da empresa Guivos, incluindo, quando legitimamente definidos e disponíveis:
 
 - Pessoas;
 - Organizações;
@@ -119,11 +119,11 @@ Finalidade candidata original: visão transversal do ecossistema e da empresa Gu
 - cadastros ativos/inativos;
 - demais indicadores transversais autorizados.
 
-Esse escopo foi aprofundado documentalmente no Anexo A sem autorizar dados reais ou implementação.
+O Anexo A detalha esse escopo sem autorizar dados reais ou implementação.
 
 #### Dashboard Guivos Business
 
-Finalidade candidata original: KPIs do Guivos Business conforme a população legitimamente abrangida por cada relação Business, incluindo tendências, evolução temporal, distribuições e comparações permitidas.
+Finalidade candidata: KPIs do Guivos Business conforme a população legitimamente abrangida por cada relação Business, incluindo tendências, evolução temporal, distribuições e comparações permitidas.
 
 ```text
 BUSINESS
@@ -132,13 +132,13 @@ BUSINESS
 → NÃO HERDA CONTEXTO PRIVADO INDIVIDUAL
 ```
 
-Esse escopo foi aprofundado documentalmente no Anexo B sem autorizar dados reais, implementação ou acesso individual além da autoridade aplicável.
+O Anexo B detalha esse escopo sem autorizar dados reais, implementação ou acesso individual além da autoridade aplicável.
 
 #### Dashboard Organização
 
-Finalidade candidata original: leitura quantitativa da própria atuação da Organização e da população/relações sob autoridade aplicável, incluindo oportunidades, vendas, demografia, geografia e cadastros quando legitimamente definidos.
+Finalidade candidata: leitura quantitativa da própria atuação da Organização e da população/relações sob autoridade aplicável, incluindo oportunidades, vendas, demografia, geografia e cadastros quando legitimamente definidos.
 
-Esse escopo foi aprofundado documentalmente no Anexo C sem autorizar dados reais, implementação, materialização da Home autenticada ou acesso individual além da autoridade aplicável.
+O Anexo C detalha esse escopo sem autorizar dados reais, implementação, materialização da Home autenticada ou acesso individual além da autoridade aplicável.
 
 ```text
 DOCUMENTAÇÃO DO ANEXO C
@@ -149,9 +149,9 @@ DOCUMENTAÇÃO DO ANEXO C
 
 #### Dashboard Coletivo
 
-Finalidade candidata original: leitura quantitativa de participação e atuação do Coletivo, incluindo Pessoas relacionadas, oportunidades, inscrições/participações, demografia, geografia e cadastros quando autorizados.
+Finalidade candidata: leitura quantitativa de participação e atuação do Coletivo, incluindo Pessoas relacionadas, oportunidades, inscrições/participações, demografia, geografia e cadastros quando autorizados.
 
-Esse escopo foi aprofundado documentalmente no Anexo D sem autorizar dados reais, implementação, materialização do Início autenticado ou acesso individual além da autoridade aplicável. `Inscrições` e `cadastros` permanecem proveniências candidatas separadas e bloqueadas até contrato semântico próprio; não são automaticamente solicitação, conta técnica, vínculo, pertencimento ou participação.
+O Anexo D detalha esse escopo sem autorizar dados reais, implementação, materialização do Início autenticado ou acesso individual além da autoridade aplicável. `Inscrições` e `cadastros` permanecem proveniências candidatas separadas e bloqueadas até contrato semântico próprio; não são automaticamente solicitação, conta técnica, vínculo, pertencimento ou participação.
 
 `Reputação` permanece bloqueada até possuir definição, fórmula, finalidade, autoridade de leitura, contestação e governança próprias.
 
@@ -167,13 +167,13 @@ REPUTAÇÃO
 
 #### Dashboard Pessoa
 
-Finalidade candidata original: oferecer compreensão individual autorizada da própria trajetória, históricos, contextos, evolução, participações, relações, eventos e outputs de Graph Analytics/Intelligence quando legitimamente autorizados e explicáveis.
+Finalidade candidata: oferecer compreensão individual autorizada da própria trajetória, históricos, contextos, evolução, participações, relações, eventos e outputs de Graph Analytics/Intelligence quando legitimamente autorizados e explicáveis.
 
 ```text
 DECLARADO ≠ OBSERVADO ≠ CALCULADO ≠ INFERIDO ≠ PREDITO
 ```
 
-Esse escopo foi aprofundado documentalmente no Anexo E sem autorizar dados reais, implementação, redefinição de `Hoje`, `Meus Objetivos`, `Meus Próximos Passos` ou `Minha Evolução`, nem disclosure a terceiros além da autoridade aplicável.
+O Anexo E detalha esse escopo sem autorizar dados reais, implementação, redefinição de `Hoje`, `Meus Objetivos`, `Meus Próximos Passos` ou `Minha Evolução`, nem disclosure a terceiros além da autoridade aplicável.
 
 ```text
 DOCUMENTAÇÃO DO ANEXO E
@@ -184,9 +184,9 @@ DOCUMENTAÇÃO DO ANEXO E
 
 #### Ads / Opportunity Boost Analytics
 
-Necessidade candidata original: dados de anúncios e Opportunity Boost do anunciante.
+Necessidade candidata: dados de anúncios e Opportunity Boost do anunciante.
 
-Esse escopo foi aprofundado documentalmente no Anexo F sem autorizar dados reais, implementação, pricing operacional, attribution, campaign manager, checkout, billing ledger ou acesso individual à Journey da Pessoa.
+O Anexo F detalha esse escopo sem autorizar dados reais, implementação, pricing operacional, attribution, campaign manager, checkout, billing ledger ou acesso individual à Journey da Pessoa.
 
 ```text
 MASTER ESPECIALIZADO
