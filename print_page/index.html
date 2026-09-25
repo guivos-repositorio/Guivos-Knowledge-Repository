@@ -11028,36 +11028,23 @@ HISTORICAL UI
 </table>
 <h2 id="product-architecture-especificacao-vigente-do-journey">Especificação vigente do Journey<a class="headerlink" href="#product-architecture-especificacao-vigente-do-journey" title="Permanent link">&para;</a></h2>
 <p>O <code>PAS-001 — Guivos Journey 1.0.0</code> é a especificação arquitetural canônica e ativa da Experience Layer.</p>
-<h3 id="product-architecture-reconciliacao-e-prontidao-do-pas-001">Reconciliação e prontidão do PAS-001<a class="headerlink" href="#product-architecture-reconciliacao-e-prontidao-do-pas-001" title="Permanent link">&para;</a></h3>
-<p><code>PAS-001-RECON-001 1.0.0</code> reconcilia a especificação-base. <code>PAS-001-AUDIT-001 1.0.0</code> aprovou os 15 gates. <code>PAS-001-CANDIDATE-001 1.0.0-rc.1</code> materializou a edição federada e agora é histórica. <code>PAS-001-RELEASE-VALIDATION-001 1.0.0</code> aprovou os 25 gates. <code>PAS-001-PUBLICATION-001 1.0.0</code> registra a promoção para <code>PAS-001 1.0.0 active</code>.</p>
-<p>Todas as nove capacidades estão funcionalmente concluídas. O <code>PAS-001 1.0.0</code> está publicado e seus contratos e extensões permanecem autoridades especializadas.</p>
-<h3 id="product-architecture-auditoria-final-do-pas-001">Auditoria final do PAS-001<a class="headerlink" href="#product-architecture-auditoria-final-do-pas-001" title="Permanent link">&para;</a></h3>
-<p><code>PAS-001-AUDIT-001 1.0.0</code> aprovou os 15 gates, inventariou 54 extensões, validou links, versões, navegação e coerência entre camadas.</p>
-<h3 id="product-architecture-edicao-candidata-do-pas-001">Edição candidata do PAS-001<a class="headerlink" href="#product-architecture-edicao-candidata-do-pas-001" title="Permanent link">&para;</a></h3>
-<p><code>PAS-001-CANDIDATE-001 1.0.0-rc.1</code> preserva historicamente a edição que consolidou filosofia, arquitetura em camadas, princípios, invariantes, mapa, perguntas, fronteiras e autoridade federada antes da promoção.</p>
-<h3 id="product-architecture-validacao-de-release-do-pas-001">Validação de release do PAS-001<a class="headerlink" href="#product-architecture-validacao-de-release-do-pas-001" title="Permanent link">&para;</a></h3>
-<p><code>PAS-001-RELEASE-VALIDATION-001 1.0.0</code> confirmou 25 gates, 35 critérios de aceite, 30 comportamentos proibidos, nove contratos finais, 54 extensões, links, navegação, versões, preservação histórica, plano de publicação e rollback. O parecer <code>Ready for publication</code> autorizou a promoção posteriormente registrada por <code>PAS-001-PUBLICATION-001 1.0.0</code>.</p>
-<h3 id="product-architecture-publicacao-controlada-do-pas-001">Publicação controlada do PAS-001<a class="headerlink" href="#product-architecture-publicacao-controlada-do-pas-001" title="Permanent link">&para;</a></h3>
-<p><code>PAS-001-PUBLICATION-001 1.0.0</code> promove o núcleo arquitetural validado para <code>PAS-001 1.0.0 active</code>, classifica a candidata como histórica e encerra o ciclo de consolidação sem criar tag ou release.</p>
+<h3 id="product-architecture-estado-funcional-do-pas-001">Estado funcional do PAS-001<a class="headerlink" href="#product-architecture-estado-funcional-do-pas-001" title="Permanent link">&para;</a></h3>
+<p><code>PAS-001 1.0.0</code> é a especificação canônica e ativa do Guivos Journey. As nove capacidades estão funcionalmente concluídas, e seus contratos e extensões vigentes permanecem autoridades especializadas.</p>
 <h3 id="product-architecture-mapa-final-de-capacidades">Mapa Final de Capacidades<a class="headerlink" href="#product-architecture-mapa-final-de-capacidades" title="Permanent link">&para;</a></h3>
-<p><a href="#product-architecture-pas-001-guivos-journey-mapa-final-capacidades"><code>PAS-001-CAPABILITY-MAP-001 1.0.0</code></a> apresenta as nove capacidades, perguntas centrais, responsabilidades, entradas, saídas, fronteiras, relações não lineares, contratos e critérios de reabertura. O próximo ponto é <code>PAS-001-ENGINEERING-HANDOFF-001</code>.</p>
+<p><a href="#product-architecture-pas-001-guivos-journey-mapa-final-capacidades"><code>PAS-001-CAPABILITY-MAP-001 1.0.0</code></a> apresenta as nove capacidades, perguntas centrais, responsabilidades, entradas, saídas, fronteiras, relações não lineares, contratos e critérios de reabertura. Qualquer handoff para Engenharia depende de gate próprio; este documento não libera Product Engineering.</p>
 <h3 id="product-architecture-capacidade-01-captura-de-contexto">Capacidade 01 — Captura de Contexto<a class="headerlink" href="#product-architecture-capacidade-01-captura-de-contexto" title="Permanent link">&para;</a></h3>
-<p><code>PAS-001-CC-LIFECYCLE-001 1.0.0</code> concluiu a etapa <code>1 de 3</code>, consolidando o <code>Registro de Captura de Contexto</code>, sessão, estados, transições, entradas, transcrição, interpretação, síntese, confirmação, autorização, persistência temporária, correção, contestação, reconstrução e falha segura.</p>
-<p><code>PAS-001-CC-EVENT-INTEGRATION-001 1.0.0</code> concluiu a etapa <code>2 de 3</code>, consolidando estrutura comum versionada, 20 famílias de eventos, contrato funcional comum de integração, produtores, consumidores, recortes, correção compensatória, revogação propagada, sincronização, prevenção de ciclos, idempotência, ordenação, concorrência, explicabilidade e auditoria.</p>
-<p><code>PAS-001-CC-CONTRACT-001 1.0.0</code> conclui a etapa <code>3 de 3</code>, consolidando 80 KPIs em 16 famílias, baseline segmentada, painel de saúde com 17 visões, cinco níveis de desempenho, 42 guardrails, cenários, 52 critérios de conclusão, 50 regras fundamentais e contrato funcional final.</p>
-<p>A capacidade está <code>Functionally complete — 100%</code>. A auditoria final foi concluída por <code>PAS-001-AUDIT-001 1.0.0</code>.</p>
+<p><code>PAS-001-CC-LIFECYCLE-001 1.0.0</code> governa o <code>Registro de Captura de Contexto</code>, sessão, estados, transições, entradas, transcrição, interpretação, síntese, confirmação, autorização, persistência temporária, correção, contestação, reconstrução e falha segura.</p>
+<p><code>PAS-001-CC-EVENT-INTEGRATION-001 1.0.0</code> governa a estrutura comum versionada, 20 famílias de eventos, contrato funcional comum de integração, produtores, consumidores, recortes, correção compensatória, revogação propagada, sincronização, prevenção de ciclos, idempotência, ordenação, concorrência, explicabilidade e auditoria.</p>
+<p><code>PAS-001-CC-CONTRACT-001 1.0.0</code> governa 80 KPIs em 16 famílias, baseline segmentada, painel de saúde com 17 visões, cinco níveis de desempenho, 42 guardrails, cenários, 52 critérios de conclusão, 50 regras fundamentais e contrato funcional final.</p>
+<p>A capacidade está <code>Functionally complete — 100%</code>.</p>
 <h3 id="product-architecture-capacidade-02-contexto-vivo">Capacidade 02 — Contexto Vivo<a class="headerlink" href="#product-architecture-capacidade-02-contexto-vivo" title="Permanent link">&para;</a></h3>
-<p>As oito extensões normativas <code>STATE</code>, <code>UPDATE</code>, <code>CONFLICT</code>, <code>VIEW</code>, <code>EVENT</code>, <code>INTEGRATION</code>, <code>KPI</code> e <code>CONTRACT</code>, todas em <code>1.0.0</code>, concluíram funcionalmente a Capacidade 02.</p>
+<p>A Capacidade 02 está <code>Functionally complete</code> e é governada pelas extensões normativas <code>STATE</code>, <code>UPDATE</code>, <code>CONFLICT</code>, <code>VIEW</code>, <code>EVENT</code>, <code>INTEGRATION</code>, <code>KPI</code> e <code>CONTRACT</code>, todas em <code>1.0.0</code>.</p>
 <h3 id="product-architecture-capacidade-03-objetivos">Capacidade 03 — Objetivos<a class="headerlink" href="#product-architecture-capacidade-03-objetivos" title="Permanent link">&para;</a></h3>
-<p>As sete extensões normativas de Objetivos concluíram fundamentos, ciclo de vida, progresso, visão, eventos, integrações, KPIs, cenários e contrato final.</p>
-<p>O <code>PAS-001-OBJ-CONTRACT-001 1.0.0</code> substitui normativamente o estado <code>In progress</code> da linha da Capacidade 03 na seção 7 do <code>PAS-001 0.5.0</code>.</p>
-<p>A Capacidade 03 está <strong>Functionally complete</strong>.</p>
+<p>A Capacidade 03 está <strong>Functionally complete</strong>. Suas sete extensões normativas governam fundamentos, ciclo de vida, progresso, visão, eventos, integrações, KPIs, cenários e contrato final.</p>
 <h3 id="product-architecture-capacidade-04-eventos-de-vida">Capacidade 04 — Eventos de Vida<a class="headerlink" href="#product-architecture-capacidade-04-eventos-de-vida" title="Permanent link">&para;</a></h3>
-<p>As seis extensões normativas <code>FOUNDATION</code>, <code>LIFECYCLE</code>, <code>VIEW</code>, <code>EVENT</code>, <code>INTEGRATION</code> e <code>CONTRACT</code>, todas em <code>1.0.0</code>, concluíram fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 60 KPIs, 18 guardrails, cenários e contrato final.</p>
-<p>A Capacidade 04 está <strong>Functionally complete</strong>, com progresso editorial de referência de <code>100%</code>.</p>
+<p>A Capacidade 04 está <strong>Functionally complete</strong>. As extensões normativas <code>FOUNDATION</code>, <code>LIFECYCLE</code>, <code>VIEW</code>, <code>EVENT</code>, <code>INTEGRATION</code> e <code>CONTRACT</code>, todas em <code>1.0.0</code>, governam fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 60 KPIs, 18 guardrails, cenários e contrato final.</p>
 <h3 id="product-architecture-capacidade-05-proximos-passos">Capacidade 05 — Próximos Passos<a class="headerlink" href="#product-architecture-capacidade-05-proximos-passos" title="Permanent link">&para;</a></h3>
-<p>As seis extensões normativas <code>FOUNDATION</code>, <code>LIFECYCLE</code>, <code>VIEW</code>, <code>EVENT</code>, <code>INTEGRATION</code> e <code>CONTRACT</code>, todas em <code>1.0.0</code>, concluíram fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 68 KPIs, 20 guardrails, cenários e contrato final.</p>
-<p>A Capacidade 05 está <strong>Functionally complete</strong>, com progresso editorial de referência de <code>100%</code>.</p>
+<p>A Capacidade 05 está <strong>Functionally complete</strong>. As extensões normativas <code>FOUNDATION</code>, <code>LIFECYCLE</code>, <code>VIEW</code>, <code>EVENT</code>, <code>INTEGRATION</code> e <code>CONTRACT</code>, todas em <code>1.0.0</code>, governam fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 68 KPIs, 20 guardrails, cenários e contrato final.</p>
 <h3 id="product-architecture-capacidade-06-oportunidades-ativas">Capacidade 06 — Oportunidades Ativas<a class="headerlink" href="#product-architecture-capacidade-06-oportunidades-ativas" title="Permanent link">&para;</a></h3>
 <p>As extensões normativas vigentes são:</p>
 <ul>
@@ -11305,7 +11292,6 @@ HISTORICAL UI
 <li>critérios formais de reabertura normativa.</li>
 </ul>
 <p>A Capacidade 07 está <strong>Functionally complete</strong>, com progresso editorial de referência de <code>100%</code>.</p>
-<h2 id="product-architecture-capacidade-08-concluida">Capacidade 08 concluída<a class="headerlink" href="#product-architecture-capacidade-08-concluida" title="Permanent link">&para;</a></h2>
 <h3 id="product-architecture-capacidade-08-experiencias">Capacidade 08 — Experiências<a class="headerlink" href="#product-architecture-capacidade-08-experiencias" title="Permanent link">&para;</a></h3>
 <p>As extensões normativas vigentes são:</p>
 <ul>
@@ -11481,8 +11467,7 @@ HISTORICAL UI
 <li>ausência de lacuna funcional bloqueante conhecida na baseline normativa.
 A Capacidade 09 está <code>Functionally complete</code>, com progresso editorial de referência de <code>100%</code>.</li>
 </ul>
-<p><code>PAS-001-RECON-001 1.0.0</code> conclui a avaliação de prontidão, preserva as Capacidades 02 a 09 como <code>Functionally complete</code>, mantém a Capacidade 01 como <code>Substantially complete</code> e impede o avanço direto para <code>PAS-001 1.0.0</code>.</p>
-<p>A próxima frente oficial é o <strong>Ciclo de Vida e Estados Funcionais da Capacidade 01 — Captura de Contexto</strong>, por meio de <code>PAS-001-CC-LIFECYCLE-001</code>.</p>
+<p><code>PAS-001 1.0.0</code> consolida as nove capacidades do Journey como funcionalmente concluídas. Essa maturidade arquitetural não equivale a implementação e não libera Product Engineering.</p>
 <h2 id="product-architecture-regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#product-architecture-regras-arquiteturais" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
@@ -12381,19 +12366,16 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <p>O Guivos Economic Model é o domínio responsável por descrever como a Guivos sustenta economicamente seu ecossistema de forma coerente com seu propósito.</p>
 <h2 id="economic-model-estado-atual">Estado atual<a class="headerlink" href="#economic-model-estado-atual" title="Permanent link">&para;</a></h2>
 <p><code>Commercial plan baseline and Opportunity Boost candidate baseline documentarily defined — validation and calibration pending</code>.</p>
-<p>O domínio concluiu sua arquitetura documental inicial em GEM-001 a GEM-010. Reaberturas localizadas consolidaram planos, benefícios, limites e preços de referência para Pessoas, Coletivos e Organizações e, separadamente, para o produto especializado Guivos Business; também definiram o Opportunity Boost como mecanismo publicitário candidato.</p>
+<p>O domínio é governado por <code>GEM-001</code> a <code>GEM-010</code>. A baseline corrente define planos, benefícios, limites e preços de referência para Pessoas, Coletivos e Organizações e, separadamente, para o produto especializado Guivos Business; o Opportunity Boost permanece mecanismo publicitário candidato.</p>
 <p>O estado vigente não aprova oferta pública, campanha real, cobrança, orçamento, projeção oficial, contabilização, valuation ou operação.</p>
 <p>Autoridades principais:</p>
 <ul>
-<li><a href="#economic-model-gem-closure-review">Revisão de Fechamento do Guivos Economic Model</a>;</li>
-<li><a href="#economic-model-gem-commercial-plans-baseline-review">Revisão da Baseline Comercial de Planos e Preços</a>;</li>
 <li><a href="#economic-model-gem-004-plan-taxonomy-conceptual-authority">Autoridade Conceitual de Taxonomia, Função e Leitura dos Planos</a>;</li>
 <li><a href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog">Catálogo Comercial Candidato de Planos, Benefícios e Preços</a>;</li>
 <li><a href="#economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy">Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento</a>;</li>
 <li><a href="#economic-model-gem-010-a1-pricing-assumptions-and-validation">Premissas de Precificação e Validação Comercial</a>;</li>
 <li><a href="#economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract">Opportunity Boost — Contrato Econômico e entre Produtos</a>;</li>
 <li><a href="#economic-model-gem-010-a2-opportunity-boost-pricing-budget-and-measurement">Opportunity Boost — Preços, Orçamento e Mensuração</a>;</li>
-<li><a href="#economic-model-gem-opportunity-boost-baseline-review">Revisão da Baseline do Opportunity Boost</a>.</li>
 </ul>
 <h2 id="economic-model-principio-central">Princípio central<a class="headerlink" href="#economic-model-principio-central" title="Permanent link">&para;</a></h2>
 <p>A Guivos deverá mobilizar valor, produtos, parceiros e recursos somente quando existirem responsabilidade principal, custos e riscos visíveis, capacidade adequada, obrigações protegidas, fontes compatíveis, continuidade e atribuição sem duplicidade.</p>
@@ -12491,7 +12473,6 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li><a href="#economic-model-gem-001-economic-actors">Atores e Relações Econômicas</a>;</li>
 <li><a href="#economic-model-gem-001-principles-and-guardrails">Princípios e Guardrails</a>;</li>
 <li><a href="#economic-model-gem-001-development-map">Mapa de Desenvolvimento</a>;</li>
-<li><a href="#economic-model-gem-001-dependency-validation-checkpoint">Checkpoint de Validação como Dependência</a>.</li>
 </ul>
 <h2 id="economic-model-autoridades-do-gem-002">Autoridades do GEM-002<a class="headerlink" href="#economic-model-autoridades-do-gem-002" title="Permanent link">&para;</a></h2>
 <ul>
@@ -12503,7 +12484,6 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li><a href="#economic-model-gem-002-cost-risk-leakage-map">Custos, Riscos e Vazamentos</a>;</li>
 <li><a href="#economic-model-gem-002-capture-sharing-reinvestment-boundaries">Fronteiras de Captura, Compartilhamento e Reinvestimento</a>;</li>
 <li><a href="#economic-model-gem-002-scenarios-and-gates">Cenários e Gates</a>;</li>
-<li><a href="#economic-model-gem-002-dependency-validation-checkpoint">Checkpoint de Validação como Dependência</a>.</li>
 </ul>
 <h2 id="economic-model-autoridades-do-gem-003">Autoridades do GEM-003<a class="headerlink" href="#economic-model-autoridades-do-gem-003" title="Permanent link">&para;</a></h2>
 <ul>
@@ -12517,7 +12497,6 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li><a href="#economic-model-gem-003-concentration-and-resilience">Concentração e Resiliência</a>;</li>
 <li><a href="#economic-model-gem-003-validation-framework">Framework de Validação</a>;</li>
 <li><a href="#economic-model-gem-003-scenarios-and-gates">Cenários e Gates</a>;</li>
-<li><a href="#economic-model-gem-003-dependency-validation-checkpoint">Checkpoint de Validação como Dependência</a>.</li>
 </ul>
 <h2 id="economic-model-autoridades-do-gem-004">Autoridades do GEM-004<a class="headerlink" href="#economic-model-autoridades-do-gem-004" title="Permanent link">&para;</a></h2>
 <ul>
@@ -12533,7 +12512,6 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li><a href="#economic-model-gem-004-upgrade-downgrade-cancellation-policy">Política de Upgrade, Downgrade e Cancelamento</a>;</li>
 <li><a href="#economic-model-gem-004-plan-contract">Contrato Canônico de Plano</a>;</li>
 <li><a href="#economic-model-gem-004-scenarios-and-gates">Cenários e Gates</a>;</li>
-<li><a href="#economic-model-gem-004-dependency-validation-checkpoint">Checkpoint de Validação como Dependência</a>;</li>
 <li><a href="#economic-model-gem-004-a1-commercial-plans-pricing-catalog">Catálogo Comercial Candidato de Planos, Benefícios e Preços</a>;</li>
 <li><a href="#economic-model-gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy">Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento</a>.</li>
 </ul>
@@ -12552,7 +12530,6 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li><a href="#economic-model-gem-005-volunteering-and-social-impact-incentives">Incentivos de Voluntariado e Impacto Social</a>;</li>
 <li><a href="#economic-model-gem-005-incentive-program-contract">Contrato Canônico de Programa de Incentivo</a>;</li>
 <li><a href="#economic-model-gem-005-scenarios-and-gates">Cenários e Gates</a>;</li>
-<li><a href="#economic-model-gem-005-dependency-validation-checkpoint">Checkpoint de Validação como Dependência</a>.</li>
 </ul>
 <h2 id="economic-model-autoridades-do-gem-006">Autoridades do GEM-006<a class="headerlink" href="#economic-model-autoridades-do-gem-006" title="Permanent link">&para;</a></h2>
 <ul>
@@ -12572,7 +12549,6 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li><a href="#economic-model-gem-006-suspension-exit-and-continuity">Suspensão, Saída e Continuidade</a>;</li>
 <li><a href="#economic-model-gem-006-partner-relationship-contract">Contrato Canônico de Relacionamento</a>;</li>
 <li><a href="#economic-model-gem-006-scenarios-and-gates">Cenários e Gates</a>;</li>
-<li><a href="#economic-model-gem-006-dependency-validation-checkpoint">Checkpoint de Validação como Dependência</a>.</li>
 </ul>
 <h2 id="economic-model-autoridades-do-gem-007">Autoridades do GEM-007<a class="headerlink" href="#economic-model-autoridades-do-gem-007" title="Permanent link">&para;</a></h2>
 <ul>
@@ -12593,7 +12569,6 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li><a href="#economic-model-gem-007-shared-capability-and-cost-boundaries">Fronteiras de Capacidades e Custos Compartilhados</a>;</li>
 <li><a href="#economic-model-gem-007-product-risk-and-guardrail-matrix">Matriz de Riscos e Guardrails</a>;</li>
 <li><a href="#economic-model-gem-007-scenarios-and-gates">Cenários e Gates</a>;</li>
-<li><a href="#economic-model-gem-007-dependency-validation-checkpoint">Checkpoint de Validação como Dependência</a>;</li>
 <li><a href="#economic-model-gem-007-a1-opportunity-boost-economic-and-product-contract">Opportunity Boost — Contrato Econômico e entre Produtos</a>.</li>
 </ul>
 <h2 id="economic-model-autoridades-do-gem-008">Autoridades do GEM-008<a class="headerlink" href="#economic-model-autoridades-do-gem-008" title="Permanent link">&para;</a></h2>
@@ -12620,7 +12595,6 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 </ul>
 <h2 id="economic-model-autoridades-do-gem-009">Autoridades do GEM-009<a class="headerlink" href="#economic-model-autoridades-do-gem-009" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="#economic-model-gem-008-dependency-validation-checkpoint">Checkpoint de Validação do GEM-008</a>;</li>
 <li><a href="#economic-model-gem-009-economic-metrics">Métricas Econômicas</a>;</li>
 <li><a href="#economic-model-gem-009-metric-taxonomy">Taxonomia de Métricas Econômicas</a>;</li>
 <li><a href="#economic-model-gem-009-measurement-contract">Contrato Canônico de Métrica Econômica</a>;</li>
@@ -12638,7 +12612,6 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 </ul>
 <h2 id="economic-model-autoridades-do-gem-010">Autoridades do GEM-010<a class="headerlink" href="#economic-model-autoridades-do-gem-010" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="#economic-model-gem-009-dependency-validation-checkpoint">Checkpoint de Validação do GEM-009</a>;</li>
 <li><a href="#economic-model-gem-010-financial-scenarios-and-model">Cenários e Modelo Financeiro</a>;</li>
 <li><a href="#economic-model-gem-010-assumption-governance">Governança de Premissas</a>;</li>
 <li><a href="#economic-model-gem-010-scenario-architecture">Arquitetura de Cenários</a>;</li>
@@ -12810,30 +12783,24 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <h2 id="business-architecture-definicao">Definição<a class="headerlink" href="#business-architecture-definicao" title="Permanent link">&para;</a></h2>
 <p>A Guivos Business Architecture define como o negócio da Guivos transforma necessidades em valor sustentável e como a organização se estrutura para gerar, entregar, capturar e reinvestir esse valor no fortalecimento contínuo do Ecossistema Guivos.</p>
 <p>Ela integra a Guivos Enterprise Architecture e não substitui a Foundation, a Ecosystem Architecture, a Product Architecture ou as arquiteturas especializadas de dados, tecnologia, governança e conhecimento.</p>
-<h2 id="business-architecture-unidades-validadas">Unidades validadas<a class="headerlink" href="#business-architecture-unidades-validadas" title="Permanent link">&para;</a></h2>
+<h2 id="business-architecture-estrutura-corrente">Estrutura corrente<a class="headerlink" href="#business-architecture-estrutura-corrente" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="#business-architecture-foundations">BA-FND-001 — Business Architecture Foundations</a></li>
-<li><a href="#business-architecture-strategy-business-transformation-model">BA-STR-001 — Business Transformation Model</a></li>
+<li><a href="#business-architecture-foundations">BA-FND-001 — Business Architecture Foundations</a> — fundamentos validados;</li>
+<li><a href="#business-architecture-strategy-business-transformation-model">BA-STR-001 — Business Transformation Model</a> — modelo de transformação validado;</li>
+<li><a href="#business-architecture-strategy-business-outcomes">BA-STR-002 — Business Outcomes</a> — unidade estratégica corrente, ainda em <code>draft</code>;</li>
+<li><a href="#business-architecture-strategy-candidate-outcome-register">BA-STR-002-COR-001 — Candidate Outcome Register</a> — registro corrente dos candidatos a Outcome;</li>
+<li><a href="#business-architecture-strategy-external-outcome-validation-protocol">BA-STR-002-EOVP-001 — External Outcome Validation Protocol</a> — evidências externas de suporte;</li>
+<li><a href="#business-architecture-strategy-candidate-outcome-evaluation-matrix">BA-STR-002-COEM-001 — Candidate Outcome Evaluation Matrix</a> — matriz de avaliação dos candidatos;</li>
+<li><a href="#business-architecture-strategy-candidate-outcome-decision-register">BA-STR-002-CODR-001 — Candidate Outcome Decision Register</a> — registro governado das decisões humanas.</li>
 </ul>
-<h2 id="business-architecture-unidade-ativa">Unidade ativa<a class="headerlink" href="#business-architecture-unidade-ativa" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="#business-architecture-strategy-business-outcomes">BA-STR-002 — Business Outcomes</a> — checkpoint 0.20.0; validação externa, COEM inicial e 18 decisões humanas concluídas; catálogo canônico pendente.</li>
-<li><a href="#business-architecture-strategy-candidate-outcome-register">BA-STR-002-COR-001 — Candidate Outcome Register</a> — 18 candidatos; 9 em <code>Under Validation</code>, 3 <code>Merged</code> e 6 <code>Rejected</code>; nenhum aprovado.</li>
-<li><a href="#business-architecture-strategy-external-outcome-validation-protocol">BA-STR-002-EOVP-001 — External Outcome Validation Protocol</a> — execução concluída com seis lotes e 60 evidências.</li>
-<li><a href="#business-architecture-strategy-candidate-outcome-evaluation-matrix">BA-STR-002-COEM-001 — Candidate Outcome Evaluation Matrix</a> — cobertura inicial concluída para 18 candidatos e seis clusters.</li>
-<li><a href="#business-architecture-strategy-candidate-outcome-decision-register">BA-STR-002-CODR-001 — Candidate Outcome Decision Register</a> — concluído; 18 de 18 decisões humanas registradas.</li>
-<li><a href="#business-architecture-strategy-candidate-outcome-decision-submission-bus-cand-010">Human Decision Resolution — BUS-CAND-010</a> — <code>COD-018</code>; fusão em <code>BUS-CAND-005</code> registrada.</li>
-</ul>
-<h2 id="business-architecture-resultado-da-fase-decisoria">Resultado da fase decisória<a class="headerlink" href="#business-architecture-resultado-da-fase-decisoria" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>Human decisions: 18 of 18
-Under Validation: 9
+<h2 id="business-architecture-estado-corrente-de-business-outcomes">Estado corrente de Business Outcomes<a class="headerlink" href="#business-architecture-estado-corrente-de-business-outcomes" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>Under Validation: 9
 Merged: 3
 Rejected: 6
 Approved Outcomes: 0
 Canonical codes: 0
 </code></pre></div>
-<p>A última decisão aceitou <code>Merge into BUS-CAND-005</code> para <code>BUS-CAND-010 — Capacidade de reinvestimento responsável</code>.</p>
-<p>A fusão preserva reinvestimento como decisão governada de financiamento e alocação dentro de Continuidade Econômica Sustentável. Ela não aprova o candidato-alvo e não transforma retenção ou gasto em prova de responsabilidade.</p>
+<p>Reinvestimento responsável permanece integrado à formulação <code>BUS-CAND-005</code> como decisão governada de financiamento e alocação dentro de Continuidade Econômica Sustentável. Isso não aprova o candidato nem transforma retenção ou gasto em prova de responsabilidade.</p>
 <h2 id="business-architecture-organizacao-interna">Organização interna<a class="headerlink" href="#business-architecture-organizacao-interna" title="Permanent link">&para;</a></h2>
 <pre  class="mermaid"><code>graph TD
     BA[Business Architecture]
@@ -12909,7 +12876,7 @@ Canonical codes: 0
 <ol>
 <li><code>BA-FND-001</code> — Business Architecture Foundations — <strong>Validated</strong></li>
 <li><code>BA-STR-001</code> — Business Transformation Model — <strong>Validated</strong></li>
-<li><code>BA-STR-002</code> — Business Outcomes — <strong>Draft 0.20.0; 18 decisões concluídas; reavaliação e Canon pendentes</strong></li>
+<li><code>BA-STR-002</code> — Business Outcomes — <strong>Draft; reavaliação das formulações ativas e Canon pendentes</strong></li>
 <li><code>BA-CAP-001</code> — Core Business Capabilities — <strong>não iniciado</strong></li>
 <li><code>BA-CAP-002</code> — Capability Map</li>
 <li><code>BA-STR-003</code> — Value Chains</li>
@@ -12920,9 +12887,9 @@ Canonical codes: 0
 </ol>
 <h2 id="business-architecture-estado-de-maturidade">Estado de maturidade<a class="headerlink" href="#business-architecture-estado-de-maturidade" title="Permanent link">&para;</a></h2>
 <p>A Business Architecture está <strong>validada em seus fundamentos e em seu modelo de transformação</strong>.</p>
-<p>O BA-STR-002 concluiu Discovery, registro de candidatos, validação externa, cobertura inicial da COEM e 18 decisões humanas. Permanece <code>draft</code> porque nove formulações revisadas ou combinadas ainda precisam retornar aos quatro testes, o AQS-O01 não foi ajustado na prática, os catálogos canônicos não foram definidos e a matriz de sustentação não foi consolidada.</p>
-<h2 id="business-architecture-proximo-incremento-candidato">Próximo incremento candidato<a class="headerlink" href="#business-architecture-proximo-incremento-candidato" title="Permanent link">&para;</a></h2>
-<p>Após integração e nova autorização, reaplicar os quatro testes às nove formulações ativas. O incremento não poderá aprovar candidatos automaticamente, criar códigos canônicos, iniciar <code>BA-CAP-001</code> ou retomar Engenharia de Produto.</p></section></section>
+<p>O <code>BA-STR-002</code> permanece <code>draft</code>. Nove formulações ativas ainda precisam retornar aos quatro testes; o AQS-O01 requer ajuste prático; os catálogos canônicos ainda não estão definidos; e a matriz de sustentação permanece pendente.</p>
+<h2 id="business-architecture-proximo-gate">Próximo gate<a class="headerlink" href="#business-architecture-proximo-gate" title="Permanent link">&para;</a></h2>
+<p>O próximo gate é a reaplicação dos quatro testes às nove formulações ativas, mediante autorização própria. Esse gate não pode aprovar candidatos automaticamente, criar códigos canônicos, iniciar <code>BA-CAP-001</code> ou retomar Engenharia de Produto.</p></section></section>
                     <section class='print-page md-section' id='section-6' heading-number='6'>
                         <h1>Planos<a class='headerlink' href='#section-6' title='Permanent link'></a>
                         </h1>
@@ -25033,7 +25000,7 @@ DECISÃO CANÔNICA
 <p><a href="#governance-framework-fundacao-guivos-institutional-concept-and-legal-status">Fundação Guivos — Conceito Institucional e Estado Jurídico</a></p>
 <p>Registra:</p>
 <ul>
-<li>propósito social/institucional historicamente validado;</li>
+<li>propósito social/institucional vigente como conceito;</li>
 <li>nome de trabalho <code>Fundação Guivos</code>;</li>
 <li>forma jurídica <code>unresolved</code>;</li>
 <li>inexistência de evidência integrada de registro, CNPJ, estatuto, governança ou operação;</li>
@@ -30699,15 +30666,10 @@ IMPLEMENTAÇÃO REAL DO INSTAGRAM
 <p>O estado global vigente não é mantido de forma independente nesta página. Ele é declarado pelo <a href="#project-current-state-register">GKR-STATE-001 — Registro do Estado Atual</a>.</p>
 <p>No estado atual:</p>
 <ul>
-<li>Guivos Journey está publicado em <code>PAS-001 1.0.0</code>, com nove capacidades funcionalmente concluídas;</li>
-<li>Guivos Economic Model possui arquitetura documental inicial concluída em <code>GEM-001</code> a <code>GEM-010</code>;</li>
-<li>a remediação e a validação mecânica do repositório estão concluídas;</li>
-<li><code>BA-STR-002</code> permanece <code>draft</code>; as 18 decisões humanas foram concluídas, mas reavaliação e Canon permanecem pendentes;</li>
-<li>a validação externa, a Matriz de Avaliação inicial e as 18 decisões humanas sobre Resultados estão concluídas;</li>
-<li>o registro possui 9 candidatos em validação, 3 fundidos e 6 rejeitados;</li>
-<li><code>BUS-CAND-010</code> foi fundido em <code>BUS-CAND-005</code> por <code>COD-018</code>;</li>
-<li>nenhum Resultado canônico foi criado;</li>
-<li>a reaplicação dos testes, o AQS-O01 e as Capacidades Empresariais aguardam atos separados;</li>
+<li>Guivos Journey é governado por <code>PAS-001 1.0.0</code>, com nove capacidades funcionalmente concluídas;</li>
+<li>Guivos Economic Model está ativo, com baseline comercial corrente e Opportunity Boost ainda candidato;</li>
+<li>Business Architecture possui fundamentos e modelo de transformação validados; <code>BA-STR-002</code> permanece <code>draft</code> e nenhum Outcome canônico foi criado;</li>
+<li>Guivos Intelligence possui arquitetura cognitiva de referência vigente, sem equivaler a implementação física ou produção;</li>
 <li>Engenharia de Produto permanece pausada antes de <code>W0-01</code>.</li>
 </ul>
 <h2 id="enterprise-architecture-missao">Missão<a class="headerlink" href="#enterprise-architecture-missao" title="Permanent link">&para;</a></h2>
@@ -30812,7 +30774,7 @@ IMPLEMENTAÇÃO REAL DO INSTAGRAM
 <tr>
 <td>Business Architecture</td>
 <td>Como a Guivos organiza transformação, Resultados, capacidades e execução do negócio?</td>
-<td><code>BA-STR-002</code> permanece <code>draft</code>; 18 decisões humanas concluídas; 9 candidatos em validação, 3 fundidos e 6 rejeitados; nenhum Outcome aprovado ou código canônico</td>
+<td>fundamentos e modelo de transformação validados; <code>BA-STR-002</code> permanece <code>draft</code>; nenhum Outcome canônico aprovado</td>
 </tr>
 <tr>
 <td>Guivos Intelligence Architecture</td>
@@ -30822,7 +30784,7 @@ IMPLEMENTAÇÃO REAL DO INSTAGRAM
 <tr>
 <td>Guivos Economic Model</td>
 <td>Como a Guivos sustenta economicamente o ecossistema sem contrariar seu propósito?</td>
-<td>arquitetura documental inicial concluída; validação empírica e especializada pendente</td>
+<td>ativo; baseline comercial corrente definida; validação empírica e especializada pendente</td>
 </tr>
 <tr>
 <td>Technology and Engineering Architecture</td>
