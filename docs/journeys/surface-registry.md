@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.36.17
+version: 0.36.18
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 related:
@@ -149,9 +149,9 @@ O total estrutural permanece **57 IDs**. A contagem não implica que todos estej
 | GKR-SURF-PER-007 | compreensão inicial revisável | Pessoa | protegido | **validado** | UXA-023; UXA-097 | sem baseline visual corrente; contrato funcional consolidado por UXA-097 | UXA-037; UXA-097 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-008 | Tela Hoje | Pessoa autenticada | protegido | **validado** | UXA-002; UXA-011-A1; UXA-097 | sem baseline visual corrente; primeira continuidade governada por UXA-097 | UXA-010; UXA-097 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-009 | Conta e configurações da Pessoa | Pessoa autenticada; administração pessoal | protegido | contratado | GKR-PLANS-PERSON-001; GKR-JOURNEY-TRANSITION-REGISTRY-001 | — | — | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-010 | Meus Objetivos | Pessoa autenticada; direção e objetivos | protegido | **contrato funcional corrente / handoffs validados** | PAS-001-OBJ-VIEW-001; GKR-UX-D5-C1-001 | sem baseline visual corrente; proveniência no Git | **TRN-008/009 validadas por GKR-UX-D5-C4B-001** | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-011 | Meus Próximos Passos | Pessoa autenticada; movimentos contextuais | protegido | **contrato funcional corrente / handoffs validados** | PAS-001-PP-VIEW-001; GKR-UX-D5-C1-001 | sem baseline visual corrente; proveniência no Git | **TRN-010/011 validadas por GKR-UX-D5-C4B-001** | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-012 | Minha Evolução | Pessoa autenticada; trajetórias e evolução contínua | protegido | **contrato funcional corrente / handoffs validados** | PAS-001-EC-VIEW-001; GKR-UX-D5-C1-001 | sem baseline visual corrente; proveniência no Git | **TRN-012/013 validadas por GKR-UX-D5-C4B-001** | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-010 | Meus Objetivos | Pessoa autenticada; direção e objetivos | protegido | **contrato funcional corrente / handoffs validados** | PAS-001-OBJ-VIEW-001; GKR-UX-D5-C1-001 | sem baseline visual corrente | **TRN-008/009 validadas por GKR-UX-D5-C4B-001** | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-011 | Meus Próximos Passos | Pessoa autenticada; movimentos contextuais | protegido | **contrato funcional corrente / handoffs validados** | PAS-001-PP-VIEW-001; GKR-UX-D5-C1-001 | sem baseline visual corrente | **TRN-010/011 validadas por GKR-UX-D5-C4B-001** | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-012 | Minha Evolução | Pessoa autenticada; trajetórias e evolução contínua | protegido | **contrato funcional corrente / handoffs validados** | PAS-001-EC-VIEW-001; GKR-UX-D5-C1-001 | sem baseline visual corrente | **TRN-012/013 validadas por GKR-UX-D5-C4B-001** | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-101 | Explorar Coletivos | visitante | multicanal | validado | UXA-056 | sem baseline visual corrente | UXA-056 — validação funcional absorvida | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-102 | Resultados de Busca de Coletivos | visitante | multicanal | validado | UXA-056 | sem baseline visual corrente | UXA-056 — validação funcional absorvida | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-103 | Perfil Público do Coletivo | visitante | multicanal | validado | UXA-056 | sem baseline visual corrente | UXA-056 — validação funcional absorvida | [Pessoa](surface-registry-person-details.md) |
