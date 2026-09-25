@@ -1030,7 +1030,7 @@ A documentação dessas frentes não significa que toda configuração ou public
 
 ## 17. Research, supply e RP-002
 
-`RP-002` governa o entendimento corrente de Possibilidade, Oportunidade, supply contextual, Organização, Coletivo e método de validação.
+`RP-002` apoia e consolida, no domínio de Research, o entendimento de Possibilidade, Oportunidade, supply contextual, Organização, Coletivo e método de validação. Ele não substitui as autoridades arquiteturais vigentes nem cria Canon por si só.
 
 Formulações correntes compartilhadas por Research e Fundação:
 
