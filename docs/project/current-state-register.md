@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.34
+version: 3.50.35
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-25
 normative: true
@@ -1616,16 +1616,16 @@ PRIMARY SOURCE OF TRUTH
 → CURRENT MAIN
 
 AUTHORIZED WHITELIST
-→ GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.45
+→ GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.46
 
 UNIVERSAL DESIGN AUTHORITIES
-→ HANDOFF v1.7.11
-→ READINESS v1.3.26
+→ HANDOFF v1.7.12
+→ READINESS v1.3.27
 → FLOW v3.1.3
 → RELEASE v1.3.2
 
 OPTIONAL AI AUTHORITY
-→ GENINPUT v2.3.15
+→ GENINPUT v2.3.16
 → ONLY WHEN AI IS USED
 
 READ-FIRST ROUTERS
