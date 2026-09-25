@@ -2,9 +2,9 @@
 id: GKR-INSTITUTIONAL-LEGAL-INDEX-001
 title: Arquitetura Institucional, Fundação Guivos e Jurídico — Índice P5
 status: proposed
-version: 0.1.0
+version: 0.1.1
 owner: Guivos
-last_updated: 2026-08-08
+last_updated: 2026-09-24
 related:
   - GKR-FUNDACAO-GUIVOS-CONCEPT-001
   - GKR-INSTITUTIONAL-LEGAL-ARCHITECTURE-001
@@ -40,7 +40,7 @@ conceito
 
 Registra:
 
-- propósito social/institucional historicamente validado;
+- propósito social/institucional vigente como conceito;
 - nome de trabalho `Fundação Guivos`;
 - forma jurídica `unresolved`;
 - inexistência de evidência integrada de registro, CNPJ, estatuto, governança ou operação;
