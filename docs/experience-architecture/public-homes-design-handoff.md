@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.7.12
+version: 1.7.13
 owner: Experience Architecture
 last_updated: 2026-09-25
 normative: true
@@ -46,7 +46,7 @@ Esta autoridade governa o handoff **corrente** das oito Homes. Design e IA opcio
 SOURCE OF TRUTH
 → CURRENT CANONICAL MAIN
 
-CURRENT CHECKPOINT
+CURRENT SOURCE
 → CURRENT MAIN
 → RESOLVED AT CONSUMPTION TIME
 
@@ -56,7 +56,7 @@ DESIGN PRODUCTION READINESS
 DESIGN PRODUCTION RELEASE
 → GRANTED
 
-SNAPSHOTS / CANDIDATES / CHECKPOINTS HISTÓRICOS
+NON-CURRENT / SUPERSEDED INPUT
 → NOT OPERATIONAL INPUT
 → NOT REQUIRED FOR DESIGN OR PROTOTYPING
 
@@ -158,8 +158,8 @@ Este Handoff constitui a autoridade procedimental comum para criação e prototi
 A execução fica liberada quando coexistirem:
 
 1. conjunto canônico corrente identificado pelo Manifesto;
-2. Master e autoridades específicas da Home no mesmo checkpoint do `main`;
-3. ausência de finding material aberto nas autoridades correntes;
+2. Master e autoridades específicas da Home no mesmo conjunto canônico corrente;
+3. ausência de contradição material ou conflito de autoridade não resolvido nas fontes correntes;
 4. `DESIGN PRODUCTION RELEASE = GRANTED`.
 
 Não é necessário materializar snapshot para iniciar Design.
@@ -236,7 +236,7 @@ Ordem operacional corrente, subordinada às versões exatas fixadas pelo Manifes
 
 ```text
 N0 — MANIFESTO + SOURCE LOCK CORRENTES
-     → fixam checkpoint, fontes autorizadas e estado da exploração
+     → fixam fontes autorizadas e estado da exploração
 
 N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.16
      → congela significado e invariantes da Home
@@ -254,7 +254,7 @@ N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.3
      → governam significado e limites superiores do produto
 ```
 
-Documentos históricos, candidates, snapshots e GENINPUTs superados não entram no input operacional.
+Documentos `superseded` ou fora do conjunto corrente não entram no input operacional.
 
 ---
 
@@ -276,9 +276,8 @@ NÍVEL 2 — DOCUMENTO MESTRE E CONTRATOS COMPLEMENTARES VIGENTES
 NÍVEL 3 — AUTORIDADES SUPERIORES DE PRODUTO
 → resolvem dúvidas sobre identidade, autoridade e limites
 
-FORA DA CADEIA OPERACIONAL — HISTÓRICO / PROVENIÊNCIA
+FORA DA CADEIA OPERACIONAL — FONTES NÃO CORRENTES
 → não carregar em Design ou IA
-→ consultar somente para auditoria do repositório
 ```
 
 Se houver conflito sobre significado da Home, prevalecem as autoridades específicas vigentes da Home conforme seu Source Lock.
@@ -296,7 +295,7 @@ Quando aplicável, o registro de contexto deve identificar:
 - Handoff utilizado;
 - Documento Mestre e contratos aplicáveis;
 - versões;
-- commit/checkpoint do GKR;
+- commit de referência do GKR;
 - decisões adicionais autorizadas para a execução;
 - questões abertas.
 
@@ -582,7 +581,7 @@ Registrar:
 - Home;
 - problema explorado;
 - documentos e versões usados;
-- checkpoint do GKR;
+- commit de referência do GKR;
 - ferramenta;
 - decisões preservadas;
 - hipóteses introduzidas;
@@ -595,7 +594,7 @@ Registrar:
 
 O processo está alinhado quando:
 
-1. Design inicia sem reconstruir o histórico completo do GKR;
+1. Design inicia diretamente pelas autoridades correntes do GKR;
 2. cada Home possui suas fontes obrigatórias identificadas;
 3. a ferramenta recebe fontes governadas, não corpus indiscriminado;
 4. decisão canônica e hipótese de Design permanecem distintas;
@@ -667,7 +666,7 @@ DESIGN PRODUCTION RELEASE
 SNAPSHOT REQUIREMENT
 → NONE
 
-HISTORICAL INPUT
+NON-CURRENT INPUT
 → EXCLUDED
 
 FINAL DESIGN ACCEPTANCE
