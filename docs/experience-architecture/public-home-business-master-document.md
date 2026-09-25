@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.1.8
+version: 1.1.9
 owner: Experience Architecture
-last_updated: 2026-09-21
+last_updated: 2026-09-24
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
 depends_on:
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
@@ -15,8 +15,6 @@ normative: true
 ---
 
 # Documento Mestre — Home Pública — Guivos Business
-
-> **Proveniência histórica.** O vínculo `parent: GKR-BUSINESS-HOME-CONTINUITY-002` registra a linhagem de construção que originou este Master. Ele não é dependência nem autoridade operacional corrente. A autoridade vigente desta Home é definida por `depends_on`, pelo Source Lock corrente e pelo Manifesto canônico de Design.
 
 ## 1. Finalidade
 
@@ -53,13 +51,9 @@ AI                         → OPTIONAL / DESIGNER-CONTROLLED
 PRODUCT ENGINEERING        → NOT RELEASED
 ```
 
-## 2. Precedência deste Documento Mestre
+## 2. Regras correntes da Home Business
 
-Este Documento Mestre preserva os princípios das autoridades anteriores, mas incorpora refinamentos posteriores validados em conversa.
-
-Quando houver diferença entre a montagem pública antiga e este Documento Mestre, prevalece este documento para a Home Business v1.
-
-Refinamentos de precedência:
+As regras abaixo governam a expressão pública da Home Business v1:
 
 1. **Pontos Guivos não aparecem na Home Business.** Permanecem mecanismo interno/funcional governado pelas autoridades próprias, sem necessidade de menção pública nesta Home.
 2. Incentivos e benefícios não são movimentos públicos separados. O incentivo pode reconhecer, estimular, viabilizar e abrir novas possibilidades.
