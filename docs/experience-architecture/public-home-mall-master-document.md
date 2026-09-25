@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MALL-MASTER-001
 title: Home Pública — Guivos Mall — Documento Mestre
 status: active
-version: 1.1.3
+version: 1.1.4
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-09-25
 normative: false
 maturity: reconciled_for_external_design
 parents:
@@ -833,7 +833,7 @@ Nenhuma decisão adicional é necessária para a designer iniciar ou continuar a
 
 ## 35. Contrato determinístico de consumo para Designer e IA
 
-Esta seção absorve no próprio Master as regras antes preservadas apenas em `GKR-HOME-MASTERS-REMEDIATION-001`.
+Esta seção define diretamente as regras determinísticas de consumo deste Master para Designer e IA.
 
 Ela não define layout, estética ou implementação.
 
