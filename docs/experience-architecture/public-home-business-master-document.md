@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.1.8
+version: 1.1.9
 owner: Experience Architecture
-last_updated: 2026-09-21
+last_updated: 2026-09-24
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
 depends_on:
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
@@ -15,8 +15,6 @@ normative: true
 ---
 
 # Documento Mestre — Home Pública — Guivos Business
-
-> **Proveniência histórica.** O vínculo `parent: GKR-BUSINESS-HOME-CONTINUITY-002` registra a linhagem de construção que originou este Master. Ele não é dependência nem autoridade operacional corrente. A autoridade vigente desta Home é definida por `depends_on`, pelo Source Lock corrente e pelo Manifesto canônico de Design.
 
 ## 1. Finalidade
 
@@ -55,9 +53,9 @@ PRODUCT ENGINEERING        → NOT RELEASED
 
 ## 2. Precedência deste Documento Mestre
 
-Este Documento Mestre preserva os princípios das autoridades anteriores, mas incorpora refinamentos posteriores validados em conversa.
+Este Documento Mestre consolida os princípios e refinamentos vigentes definidos pelas autoridades atuais da Home Business.
 
-Quando houver diferença entre a montagem pública antiga e este Documento Mestre, prevalece este documento para a Home Business v1.
+Este Documento Mestre é a referência corrente para a Home Business v1, subordinada às autoridades superiores e ao Source Lock vigente.
 
 Refinamentos de precedência:
 
