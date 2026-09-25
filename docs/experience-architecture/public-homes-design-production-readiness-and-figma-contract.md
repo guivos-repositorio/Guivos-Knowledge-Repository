@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.28
+version: 1.3.29
 owner: Experience Architecture
 last_updated: 2026-09-25
 normative: true
@@ -53,11 +53,11 @@ FINAL DESIGN TOOL
 
 Esta autoridade prepara as oito Homes públicas da Guivos para uma contratação real de Design em que a designer cria manualmente com liberdade e pode usar sistemas de IA opcionalmente, sem ferramenta obrigatória definida pelo GKR.
 
-O objetivo é reduzir a zero os findings materiais documentais antes do release de produção, sem transformar documentação em direção artística.
+O objetivo é eliminar contradições materiais e conflitos de autoridade antes do release de produção, sem transformar documentação em direção artística.
 
 ## 2. Resultado executivo
 
-Checkpoint corrente: `CURRENT MAIN`, resolvido no momento do consumo.
+Fonte corrente: `CURRENT MAIN`, resolvida no momento do consumo.
 
 ```text
 8 HOME MASTERS
@@ -84,11 +84,11 @@ AI
 SNAPSHOT PRECONDITION
 → NONE
 
-HISTORICAL INPUT
+NON-CURRENT INPUT
 → EXCLUDED
 ```
 
-A prontidão é avaliada contra o conjunto canônico corrente, não contra uma emissão histórica.
+A prontidão é avaliada contra o conjunto canônico corrente.
 
 ## 3. Princípio superior — significado governado, criatividade livre
 
@@ -146,7 +146,7 @@ DESIGN FREEDOM
 REAL-DATA GUARDRAILS
 → ACTIVE
 
-OPEN MATERIAL FINDINGS
+OPEN MATERIAL CONFLICTS
 → NONE KNOWN IN CURRENT DESIGN SOURCE SET
 ```
 
@@ -437,7 +437,7 @@ Sequência de referência:
 
 1. compreender o pacote vigente da Home;
 2. criar manualmente e/ou usar IA opcionalmente;
-3. executar autoauditoria contra Master, Source Lock e autoridades aplicáveis;
+3. executar verificação contra Master, Source Lock e autoridades aplicáveis;
 4. apresentar a solução para revisão humana;
 5. registrar ajustes materiais quando necessários;
 6. concluir o artefato final de Design segundo o processo criativo da designer.
@@ -529,7 +529,7 @@ A entrega pode ser aceita quando:
 11. a solução permanece fiel aos contratos semânticos;
 12. a solução preserva criatividade e originalidade, sem se reduzir a template de benchmark;
 13. as oito Homes passaram por revisão integrada de coerência como família Guivos sem obrigação de mesmo template;
-14. não há finding material aberto;
+14. não há contradição material ou conflito de autoridade não resolvido;
 15. existe registro formal do aceite final com versão do arquivo, responsável, assets/licenças e controle dos arquivos essenciais pela Guivos.
 
 ```text
