@@ -2,9 +2,9 @@
 id: GPA-004
 title: Guivos Business
 status: consolidated
-version: 1.7.4
+version: 1.7.5
 owner: Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-25
 related:
   - GPA-004-FUNCTIONAL-PORTFOLIO-001
   - PAS-001
@@ -656,18 +656,14 @@ Permanecem dependentes de autoridade específica antes de implementação ou pub
 - composição exata do resumo recorrente de Intelligence por plano;
 - implementação e publicação operacional da Home Pública do Guivos Business.
 
-A arquitetura convergida da Home Pública do Guivos Business já existe e é governada pelo Documento Mestre e pelo Source Lock correntes. O que permanece aberto é sua implementação/publicação operacional e as decisões comerciais ainda explicitamente não congeladas.
+A arquitetura corrente da Home Pública do Guivos Business é governada pelo Documento Mestre e pelo Source Lock vigentes. Permanecem abertas sua implementação/publicação operacional e as decisões comerciais ainda explicitamente não congeladas.
 
-A equivalência econômica Pontos ↔ BRL permanece **não congelada no corpus vigente**: a decisão histórica de conversa continua preservada como proveniência, mas valor monetário e taxa de conversão exigem autoridade econômica específica antes de implementação, cobrança ou liquidação.
+A equivalência econômica Pontos ↔ BRL permanece **não congelada no corpus vigente**. Valor monetário e taxa de conversão exigem autoridade econômica específica antes de implementação, cobrança ou liquidação.
 
-## 18. Autoridade complementar e continuidade
+## 18. Autoridades complementares
 
 Para detalhes funcionais das duas ofertas, Pontos, Intelligence, planos e fronteiras econômicas, consultar:
 
 - `GPA-004-FUNCTIONAL-PORTFOLIO-001 — Guivos Business — Portfólio Funcional v1`.
 
-Para recuperar decisões validadas, caminhos descartados, temas ainda abertos e o ponto exato de continuidade entre conversas, consultar:
-
-- `GKR-BUSINESS-CONTINUITY-001 — Guivos Business — Checkpoint de Continuidade e Decisões Validadas`.
-
-A Home Pública do Guivos Business permanece uma frente própria de Experience Architecture. A atualização desta autoridade **não cria Documento Mestre, Source Lock, wireframe, UI ou protótipo**, não altera snapshots de Design existentes e não inicia UXA-102 ou Product Engineering.
+A Home Pública do Guivos Business permanece uma frente própria de Experience Architecture. Esta autoridade **não cria Documento Mestre, Source Lock, wireframe, UI ou protótipo** e não inicia UXA-102 ou Product Engineering.
