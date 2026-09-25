@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.5
+version: 1.0.6
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-24
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -37,7 +37,7 @@ maturity: documentally_reconciled_for_external_design
 
 Este é o **Documento Mestre vigente de consumo** da porta pública compartilhada para **Organizações e Coletivos** no ecossistema Guivos.
 
-Ele registra a verdade narrativa, semântica e funcional atual dessa segunda perspectiva pública da mesma Guivos. Liderança, Brand, Marketing, Produto, Experience Architecture, UX, Design, Desenvolvimento, Research, Legal/Privacidade, Intelligence e demais equipes não devem reconstruir o estado atual da Home por uma cadeia de checkpoints históricos.
+Ele registra a verdade narrativa, semântica e funcional vigente dessa segunda perspectiva pública da mesma Guivos, em uma leitura executiva única para liderança, Brand, Marketing, Produto, Experience Architecture, UX, Design, Desenvolvimento, Research, Legal/Privacidade e Intelligence.
 
 ```text
 MASTER O/C
@@ -45,9 +45,6 @@ MASTER O/C
 
 ARTEFATOS ESPECIALIZADOS
 → aprofundamento / evidência / contratos específicos ainda preservados
-
-GIT
-→ história das decisões anteriores
 ```
 
 A relação entre as duas portas públicas permanece:
@@ -98,20 +95,15 @@ PMF
 → NOT VALIDATED
 
 HOME O/C AUTHENTICATED HIGH-FIDELITY
-→ NOT_GRANTED
+→ AUTHORIZATION GRANTED
+→ EXECUTION RELEASE ISSUED
+→ EXTERNAL DELIVERY NOT_RECEIVED
 
 PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
 → NOT RELEASED BY THIS DOCUMENT
 ```
 
-Artefatos visuais produzidos anteriormente pelo GKR continuam sem autoridade e não constituem referência de Design. A designer parte das fontes documentais vigentes e exerce autoria criativa própria.
-
-```text
-PRIOR GKR DESIGN ARTIFACT
-→ ABANDONED / NON-AUTHORITATIVE
-→ NOT A DESIGN REFERENCE
-→ NOT A SOURCE FOR THE DESIGNER
-```
+Somente as autoridades correntes do `main` e o pacote de Design vigente governam a criação visual desta Home. A designer exerce autoria criativa própria; artefatos não correntes não constituem referência obrigatória.
 
 ---
 
@@ -123,7 +115,7 @@ Seu papel é fazer uma Organização ou Coletivo compreender:
 
 > **o que pode se tornar possível quando capacidades, pessoas, iniciativas, conhecimento, recursos, infraestrutura, contextos e formas legítimas de participação conseguem se conectar com mais clareza e continuidade.**
 
-A narrativa preserva quatro fundamentos históricos válidos:
+A narrativa preserva quatro fundamentos vigentes:
 
 - **possibilidade antes de produto**;
 - **participação antes de segmentação**;
@@ -156,7 +148,7 @@ A página deve parecer uma **Home narrativa de ecossistema**, não:
 
 ## 3. Autoridades e fronteiras de interpretação
 
-Este Documento Mestre deve ser interpretado pela verdade atual do GKR, e não pela cronologia histórica de sua construção.
+Este Documento Mestre deve ser interpretado em conjunto com as autoridades vigentes do GKR e com os limites explicitamente declarados neste documento.
 
 ### 3.1 Fundação
 
@@ -1726,15 +1718,7 @@ FIRST AUTHENTICATED PERSON SCREEN AFTER HOME
 → NOT RELEASED BY THIS DOCUMENT
 ```
 
-O histórico contém decisões procedimentais diferentes sobre Design e wireframe. Elas pertencem aos respectivos checkpoints e não funcionam como gate corrente da Home pública.
-
-```text
-HISTORICAL HANDOFF / SOURCE LOCK / GENERATIVE PACKAGE / SNAPSHOT
-→ PROVENANCE ONLY WHEN SUPERSEDED
-
-PRIOR GKR DESIGN ARTIFACT
-→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
-```
+Somente o pacote vigente de Design e as autoridades correntes funcionam como gate da Home pública.
 
 Nenhum novo ato governado é necessário para a designer iniciar ou continuar a criação da **Home pública O/C** sob o pacote vigente. Novos atos continuam necessários para qualquer frente explicitamente não liberada acima.
 
@@ -1763,35 +1747,29 @@ Uma futura materialização deve ser rejeitada ou revisada se:
 
 ---
 
-## 30. Matriz de conhecimento absorvido
+## 30. Autoridades relacionadas e aprofundamentos
 
-| Fonte / família | Conhecimento absorvido neste Master | Estado de consumo |
-|---|---|---|
-| Fundação vigente / `GEB-P01` | Momento, Próximo Passo, Possibilidade, Mecanismo, Oportunidade real, autonomia, evidência | absorvido |
-| Marca vigente | assinatura institucional correta e separação Guivos × fundador | absorvido |
-| `GKR-UX-HOME-MASTER-001` | percepção, guardrails públicos transversais, Header, launcher, interação, acessibilidade, prova, rodapé e fronteira protegida | absorvido no que é comum às duas Homes |
-| `GKR-UX-HOME-NARR-003` | `participante ≠ produto`; participantes respondem “quem”, Produtos/capacidades “como” | absorvido |
-| `UXA-014` | definições, autonomia, responsabilidade, evidência e limites de Organização/Coletivo | absorvido no nível público |
-| `UXA-019` | bilateralidade, finalidade, autoridade, recursos, dados, contestação e saída | absorvido no nível público |
-| `GKR-UX-ORGCOL-SUPPLY-VALUE-001` / RP-002 | relevância relacional, supply, barreiras e classes Direct/Enabling | absorvido como conhecimento explicativo sem promover Research a Canon |
-| nove Domínios / Journey | vocabulário canônico JED-001..009 e `Ainda estou descobrindo` | absorvido |
-| `GKR-UX-ORGCOL-AUTH-JOBS-001` | pertencimento ≠ representação; contexto e limites de autoridade | absorvido como princípio; jobs autenticados não importados |
-| `GKR-UX-ORGCOL-AUTH-IA-001` | contexto antes de ação, operação ≠ evidência, comercial ≠ relevância | absorvido como princípio; IA autenticada não importada |
-| `GPA-006` | Intelligence = Produto Especializado transversal / Intelligence Layer; `COMPREENDER ≠ DECIDIR` | absorvido |
-| `GKR-UX-HOME-OC-NARR-001` | sete macroexperiências próprias O/C | absorvido; removido do corpus corrente |
-| `GKR-UX-HOME-OC-NAV-001` | mesmo Header global, Hero exploratória, `Iniciar Jornada` distinto e bifurcação final | absorvido; removido do corpus corrente |
-| `GKR-UX-HOME-OC-SYS-001` | classes de conteúdo/verdade, prova proporcional ao claim e fallback honesto | absorvido; removido do corpus corrente |
-| `GKR-UX-HOME-OC-HANDOFF-001` | disciplina de significado, acessibilidade e fronteira pública × autenticada | conteúdo válido absorvido; removido do corpus corrente |
-| `GKR-UX-HOME-OC-MEDIA-SUPPLY-001` | Media como supply editorial sem transferência de autoridade; patrocínio identificável | absorvido |
-| decisões/Source Locks/Design deliveries anteriores | evidência de checkpoints de construção | não promovidos a direção visual vigente; o release externo atual é governado pelas autoridades comuns posteriores |
+| Fonte vigente | Papel nesta Home |
+|---|---|
+| Fundação vigente / `GEB-P01` | Momento, Próximo Passo, Possibilidade, Mecanismo, Oportunidade real, autonomia e evidência |
+| Marca vigente | assinatura institucional e separação Guivos × fundador |
+| `GKR-UX-HOME-MASTER-001` | guardrails públicos transversais e fronteira protegida |
+| `GKR-UX-HOME-NARR-003` | participante ≠ produto |
+| `UXA-014` | definições, autonomia, responsabilidade, evidência e limites de Organização/Coletivo |
+| `UXA-019` | bilateralidade, finalidade, autoridade, recursos, dados, contestação e saída |
+| `GKR-UX-ORGCOL-SUPPLY-VALUE-001` / RP-002 | relevância relacional, supply, barreiras e classes Direct/Enabling |
+| `GKR-UX-ORGCOL-AUTH-JOBS-001` | pertencimento ≠ representação; contexto e limites de autoridade |
+| `GKR-UX-ORGCOL-AUTH-IA-001` | contexto antes de ação; operação ≠ evidência; comercial ≠ relevância |
+| `GPA-006` | Intelligence como Produto Especializado transversal; `COMPREENDER ≠ DECIDIR` |
+| `GKR-UX-HOME-OC-MEDIA-SUPPLY-001` | Media como supply editorial sem transferência de autoridade |
 
-Esta matriz não autoriza remoção automática de nenhum arquivo. A remoção física posterior exige teste de conteúdo único, evidência, dependências, links e necessidade de preservação.
+Essas autoridades complementam o Master sem substituir sua função de leitura executiva corrente.
 
 ---
 
 ## 31. Documentos de aprofundamento ainda preservados
 
-A auditoria documental já decidiu a função corrente desta Home para o handoff externo. Os documentos abaixo permanecem preservados como aprofundamento, evidência ou proveniência enquanto mantiverem função própria:
+Os documentos abaixo complementam este Master quando houver necessidade de aprofundamento funcional ou semântico:
 
 ### Home O/C
 
