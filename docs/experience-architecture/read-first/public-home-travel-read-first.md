@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-TRAVEL-READ-FIRST-001
 title: 00 — Leia Primeiro — Home Pública — Guivos Travel
 status: active
-version: 1.0.2
+version: 1.0.3
 owner: Experience Architecture
-last_updated: 2026-09-21
+last_updated: 2026-09-25
 normative: false
 maturity: current_design_routing
 depends_on:
@@ -46,7 +46,7 @@ AI
 
 ### Fontes específicas desta Home
 
-1. `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.5` — `docs/experience-architecture/public-home-travel-master-document.md`;
+1. `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.6` — `docs/experience-architecture/public-home-travel-master-document.md`;
 2. `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.1` — `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`;
 
 Se a designer optar por IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e preparar **Source Lock de execução / prompt** somente para essa execução. Esse artefato de execução não substitui nem altera eventual **Source Lock canônico da Home** já listado entre as fontes específicas.
