@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.40
+version: 3.50.41
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-25
 normative: true
@@ -42,6 +42,9 @@ related:
   - GKR-UX-PER002-MAT-ELIGIBILITY-001
   - GKR-UX-PER002-PROTOTYPE-DELIVERY-001
   - GKR-UX-PER002-PROTOTYPE-REVALIDATION-001
+  - GKR-UX-PERSON-JOURNEY-READ-FIRST-001
+  - GKR-UX-PERSON-JOURNEY-FLOW-001
+  - GKR-UX-PER002-MASTER-001
   - GTM-009
   - GTM-010
   - GTM-011
@@ -1641,3 +1644,46 @@ SNAPSHOT
 CANDIDATE
 → NOT CREATED BY DEFAULT
 ```
+
+## 33. Jornada da Pessoa — documentação de superfícies para Design e IA
+
+A Jornada da Pessoa possui agora uma camada própria de documentação por superfície, subordinada aos registries e às autoridades funcionais correntes.
+
+```text
+PERSON SURFACES IN CURRENT REGISTRY
+→ 27
+
+PER-001
+→ GOVERNADA PELO DOCUMENTO MESTRE DA HOME PÚBLICA — PESSOA
+
+SURFACE MASTERS TO BUILD AFTER THE HOME
+→ 26
+
+CURRENT FOUNDATION
+→ GKR-UX-PERSON-JOURNEY-READ-FIRST-001 v0.1.0
+→ GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.0
+
+CURRENT SURFACE MASTER
+→ GKR-UX-PER002-MASTER-001 v0.1.0
+→ PER-002 — ENTRADA PROTEGIDA
+
+BUILT
+→ 1 / 26
+
+REMAINING
+→ 25 / 26
+
+NEXT DOCUMENTATION TARGET
+→ PER-003 — ESCOLHA DE MODALIDADE
+
+NEW PER-IDS
+→ NONE
+
+NEW VISUAL MATERIALIZATION
+→ NONE
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+```
+
+A construção ocorre uma superfície por vez. Planejamento não cria página vazia, novo `PER-ID`, navegação, tela, protótipo ou implementação por inferência.
