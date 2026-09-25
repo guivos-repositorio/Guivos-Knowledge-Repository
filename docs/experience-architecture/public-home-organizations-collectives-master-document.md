@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.5
+version: 1.0.6
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-24
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -37,7 +37,7 @@ maturity: documentally_reconciled_for_external_design
 
 Este é o **Documento Mestre vigente de consumo** da porta pública compartilhada para **Organizações e Coletivos** no ecossistema Guivos.
 
-Ele registra a verdade narrativa, semântica e funcional atual dessa segunda perspectiva pública da mesma Guivos. Liderança, Brand, Marketing, Produto, Experience Architecture, UX, Design, Desenvolvimento, Research, Legal/Privacidade, Intelligence e demais equipes não devem reconstruir o estado atual da Home por uma cadeia de checkpoints históricos.
+Ele registra a verdade narrativa, semântica e funcional atual dessa segunda perspectiva pública da mesma Guivos e funciona como referência executiva de consumo para liderança, Brand, Marketing, Produto, Experience Architecture, UX, Design, Desenvolvimento, Research, Legal/Privacidade e Intelligence.
 
 ```text
 MASTER O/C
@@ -46,8 +46,6 @@ MASTER O/C
 ARTEFATOS ESPECIALIZADOS
 → aprofundamento / evidência / contratos específicos ainda preservados
 
-GIT
-→ história das decisões anteriores
 ```
 
 A relação entre as duas portas públicas permanece:
@@ -104,7 +102,7 @@ PRIMEIRA TELA AUTENTICADA DA PESSOA APÓS A HOME
 → NOT RELEASED BY THIS DOCUMENT
 ```
 
-Artefatos visuais produzidos anteriormente pelo GKR continuam sem autoridade e não constituem referência de Design. A designer parte das fontes documentais vigentes e exerce autoria criativa própria.
+A designer parte das fontes documentais vigentes e exerce autoria criativa própria. Artefatos visuais não designados como autoridade corrente não constituem referência obrigatória de Design.
 
 ```text
 PRIOR GKR DESIGN ARTIFACT
@@ -123,7 +121,7 @@ Seu papel é fazer uma Organização ou Coletivo compreender:
 
 > **o que pode se tornar possível quando capacidades, pessoas, iniciativas, conhecimento, recursos, infraestrutura, contextos e formas legítimas de participação conseguem se conectar com mais clareza e continuidade.**
 
-A narrativa preserva quatro fundamentos históricos válidos:
+A narrativa preserva quatro fundamentos permanentes:
 
 - **possibilidade antes de produto**;
 - **participação antes de segmentação**;
@@ -156,7 +154,7 @@ A página deve parecer uma **Home narrativa de ecossistema**, não:
 
 ## 3. Autoridades e fronteiras de interpretação
 
-Este Documento Mestre deve ser interpretado pela verdade atual do GKR, e não pela cronologia histórica de sua construção.
+Este Documento Mestre deve ser interpretado pelas autoridades vigentes do GKR e pelo estado corrente declarado neste documento.
 
 ### 3.1 Fundação
 
@@ -1726,15 +1724,7 @@ FIRST AUTHENTICATED PERSON SCREEN AFTER HOME
 → NOT RELEASED BY THIS DOCUMENT
 ```
 
-O histórico contém decisões procedimentais diferentes sobre Design e wireframe. Elas pertencem aos respectivos checkpoints e não funcionam como gate corrente da Home pública.
-
-```text
-HISTORICAL HANDOFF / SOURCE LOCK / GENERATIVE PACKAGE / SNAPSHOT
-→ PROVENANCE ONLY WHEN SUPERSEDED
-
-PRIOR GKR DESIGN ARTIFACT
-→ ABANDONED / NON-AUTHORITATIVE / NOT A DESIGN REFERENCE
-```
+O gate corrente da Home pública é definido exclusivamente pelas autoridades vigentes e pelo release externo de Design aplicável.
 
 Nenhum novo ato governado é necessário para a designer iniciar ou continuar a criação da **Home pública O/C** sob o pacote vigente. Novos atos continuam necessários para qualquer frente explicitamente não liberada acima.
 
@@ -1763,9 +1753,9 @@ Uma futura materialização deve ser rejeitada ou revisada se:
 
 ---
 
-## 30. Matriz de conhecimento absorvido
+## 30. Matriz de autoridades e conteúdos consolidados
 
-| Fonte / família | Conhecimento absorvido neste Master | Estado de consumo |
+| Fonte / família | Conteúdo governado neste Master | Função corrente |
 |---|---|---|
 | Fundação vigente / `GEB-P01` | Momento, Próximo Passo, Possibilidade, Mecanismo, Oportunidade real, autonomia, evidência | absorvido |
 | Marca vigente | assinatura institucional correta e separação Guivos × fundador | absorvido |
@@ -1778,14 +1768,13 @@ Uma futura materialização deve ser rejeitada ou revisada se:
 | `GKR-UX-ORGCOL-AUTH-JOBS-001` | pertencimento ≠ representação; contexto e limites de autoridade | absorvido como princípio; jobs autenticados não importados |
 | `GKR-UX-ORGCOL-AUTH-IA-001` | contexto antes de ação, operação ≠ evidência, comercial ≠ relevância | absorvido como princípio; IA autenticada não importada |
 | `GPA-006` | Intelligence = Produto Especializado transversal / Intelligence Layer; `COMPREENDER ≠ DECIDIR` | absorvido |
-| `GKR-UX-HOME-OC-NARR-001` | sete macroexperiências próprias O/C | absorvido; removido do corpus corrente |
-| `GKR-UX-HOME-OC-NAV-001` | mesmo Header global, Hero exploratória, `Iniciar Jornada` distinto e bifurcação final | absorvido; removido do corpus corrente |
-| `GKR-UX-HOME-OC-SYS-001` | classes de conteúdo/verdade, prova proporcional ao claim e fallback honesto | absorvido; removido do corpus corrente |
-| `GKR-UX-HOME-OC-HANDOFF-001` | disciplina de significado, acessibilidade e fronteira pública × autenticada | conteúdo válido absorvido; removido do corpus corrente |
+| `GKR-UX-HOME-OC-NARR-001` | sete macroexperiências próprias O/C | conteúdo consolidado no Master |
+| `GKR-UX-HOME-OC-NAV-001` | mesmo Header global, Hero exploratória, `Iniciar Jornada` distinto e bifurcação final | conteúdo consolidado no Master |
+| `GKR-UX-HOME-OC-SYS-001` | classes de conteúdo/verdade, prova proporcional ao claim e fallback honesto | conteúdo consolidado no Master |
+| `GKR-UX-HOME-OC-HANDOFF-001` | disciplina de significado, acessibilidade e fronteira pública × autenticada | conteúdo consolidado no Master |
 | `GKR-UX-HOME-OC-MEDIA-SUPPLY-001` | Media como supply editorial sem transferência de autoridade; patrocínio identificável | absorvido |
-| decisões/Source Locks/Design deliveries anteriores | evidência de checkpoints de construção | não promovidos a direção visual vigente; o release externo atual é governado pelas autoridades comuns posteriores |
 
-Esta matriz não autoriza remoção automática de nenhum arquivo. A remoção física posterior exige teste de conteúdo único, evidência, dependências, links e necessidade de preservação.
+Esta matriz orienta a leitura corrente do Master e a relação entre suas autoridades de suporte.
 
 ---
 
