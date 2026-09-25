@@ -23,7 +23,7 @@ related:
 
 Este documento é a **autoridade superior de produto do Guivos Intelligence**.
 
-A versão 2.0.1 preserva integralmente a estruturação conceitual consolidada em 2.0.0 e reconcilia apenas o estado temporal das autoridades posteriores da Home Pública, que hoje já possui Documento Mestre, Source Lock, Design Handoff e release comum para produção externa pela designer.
+A autoridade vigente é `GPA-006 v2.0.2`. A Home Pública do Guivos Intelligence possui Documento Mestre, Source Lock, Design Handoff e release comum vigente para produção externa pela designer.
 
 Esta autoridade descreve **o que o Guivos Intelligence é e deve preservar como produto**. Ela não declara implementação técnica, operação em produção, disponibilidade comercial pública, pricing final, modelo de IA selecionado ou infraestrutura implantada. As autoridades posteriores da Home Pública e de Design possuem seus próprios estados e não são bloqueadas por esta GPA.
 
