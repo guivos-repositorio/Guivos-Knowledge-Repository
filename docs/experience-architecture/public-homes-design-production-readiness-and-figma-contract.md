@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.27
+version: 1.3.28
 owner: Experience Architecture
 last_updated: 2026-09-25
 normative: true
@@ -149,8 +149,6 @@ REAL-DATA GUARDRAILS
 OPEN MATERIAL FINDINGS
 → NONE KNOWN IN CURRENT DESIGN SOURCE SET
 ```
-
-Findings, snapshots e remediações encerradas pertencem à história do Git e não são input para Design ou IA.
 
 ## 6. Composição de fontes por Home
 
