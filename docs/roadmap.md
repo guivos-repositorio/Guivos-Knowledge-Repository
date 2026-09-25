@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.23
+version: 13.48.24
 owner: Guivos
 last_updated: 2026-09-25
 normative: true
@@ -36,21 +36,19 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.50.35` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.50.36` em **frentes governadas de avanço**.
 
-Ele não é cronologia do projeto, inventário de versões antigas, registro de PRs, histórico de auditoria ou autorização automática para executar a próxima coisa tecnicamente possível.
+Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
 ```text
 ROADMAP
 → ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
+→ DECLARA FRENTES CORRENTES E GATES
 
 ROADMAP
 ≠ FILA AUTOMÁTICA
-≠ REGISTRO HISTÓRICO
 ≠ AUTORIZAÇÃO DE IMPLEMENTAÇÃO
 ```
-
-A auditoria integral anterior está concluída. Lotes, findings resolvidos, SHAs, baselines e checkpoints usados para chegar ao estado corrente pertencem ao documento próprio de auditoria e ao Git; não orientam a execução futura por si só.
 
 ## 2. Estado base corrente
 
@@ -99,9 +97,6 @@ ABSORVER CONTEÚDO VÁLIDO
 CURRENT MAIN
 → FONTE PRIMÁRIA DA VERDADE
 
-GIT
-→ HISTÓRICO / PROVENIÊNCIA
-
 SNAPSHOT
 → SOMENTE QUANDO HOUVER NECESSIDADE REAL DE FREEZE / TRANSPORTE
 
@@ -115,16 +110,11 @@ AUTORIZAÇÃO
 ≠ EXECUÇÃO AUTOMÁTICA
 ```
 
-## 4. Experiência e Journey — consolidação current-only concluída
+## 4. Experiência e Journey — estado corrente
 
-A consolidação destinada a permitir que humanos, Design e IA opcional consumam somente autoridades correntes foi concluída no corpus vigente.
-
-Estado corrente:
+Experience/Journey é consumido diretamente pelas autoridades correntes abaixo:
 
 ```text
-CURRENT-ONLY CONSOLIDATION
-→ COMPLETED
-
 CURRENT MAIN
 → PRIMARY SOURCE OF TRUTH
 
@@ -139,26 +129,24 @@ READ-FIRST
 
 JOURNEY
 → CURRENT VIEWS + CURRENT REGISTRIES
-
-HISTORICAL PRODUCERS
-→ OUTSIDE CURRENT EXECUTION INPUT WHEN FUNCTION IS ABSORBED
-→ GIT PRESERVES PROVENANCE
 ```
 
-A manutenção futura de Experience/Journey deve ocorrer somente quando uma mudança material exigir atualização das autoridades correntes, dependências, versões, links, IDs, navegação ou nomenclatura.
+Mudanças materiais em Experience/Journey devem atualizar as autoridades correntes, dependências, versões, links, IDs, navegação ou nomenclatura aplicáveis.
 
 ```text
-CONSOLIDATION COMPLETED
-≠ NEW AUTOMATIC FRONT
+CURRENT AUTHORITIES
+→ SOURCE OF TRUTH
 
-FUTURE MATERIAL CHANGE
+MATERIAL CHANGE
 → UPDATE CURRENT AUTHORITY
 
-HISTORY / AUDIT RECONSTRUCTION
-→ NOT REQUIRED
+DOCUMENTATION
+≠ FIGMA
+≠ PROTOTYPE
+≠ IMPLEMENTATION
+≠ UXA-102
+≠ PRODUCT ENGINEERING
 ```
-
-A conclusão desta consolidação não cria snapshot, Figma, protótipo, implementação, UXA-102 ou Product Engineering por inferência.
 
 ## 5. Homes públicas — execução externa de Design
 
@@ -478,21 +466,16 @@ SNAPSHOT
 → NOT REQUIRED BY DEFAULT
 ```
 
-Qualquer avanço deve partir da autoridade temática vigente e do gate específico aplicável.
+Cada avanço depende da autoridade temática vigente e do gate específico aplicável.
 
-## 16. Limite de proveniência histórica
+## 16. Escopo do Roadmap
 
-A auditoria integral anterior permanece disponível em `GKR-FULL-CORPUS-AUDIT-001` e no Git.
+O Roadmap contém somente frentes correntes, dependências e próximos gates. O estado detalhado de cada domínio deve ser lido em `GKR-STATE-001` e na autoridade temática correspondente.
 
 ```text
-AUDIT LOTS / FINDINGS / PRs / SHAs / HISTORICAL BASELINES
-→ PROVENANCE
-
 CURRENT ROADMAP
 → CURRENT FRONTS + CURRENT GATES
 
-HISTORY
-→ MUST NOT RE-ENTER EXECUTION BY INFERENCE
+DOMAIN DETAIL
+→ CURRENT THEMATIC AUTHORITY
 ```
-
-O Roadmap corrente não exige reconstrução do processo que levou ao estado atual.
