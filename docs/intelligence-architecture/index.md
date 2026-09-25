@@ -2,9 +2,9 @@
 id: GIA-000
 title: Guivos Intelligence Architecture
 status: active
-version: 1.7.0
+version: 1.7.1
 owner: Guivos
-last_updated: 2026-09-10
+last_updated: 2026-09-25
 related:
   - GPA-006
   - GAI-001
@@ -123,7 +123,7 @@ A Intelligence Layer serve todo o ecossistema.
 
 ## Arquitetura funcional versus decomposição técnica
 
-`GPA-006 2.0.0` consolida como responsabilidades funcionais:
+`GPA-006 2.0.1` consolida como responsabilidades funcionais:
 
 1. contexto;
 2. conhecimento;
@@ -292,7 +292,7 @@ Relações inferidas por modelos devem permanecer distinguíveis de relações o
 
 ## Intelligence Serving
 
-`GPA-006 2.0.0` reconhece Intelligence Serving como responsabilidade de entregar outputs ao consumidor autorizado na granularidade, momento, canal e forma adequados.
+`GPA-006 2.0.1` reconhece Intelligence Serving como responsabilidade de entregar outputs ao consumidor autorizado na granularidade, momento, canal e forma adequados.
 
 A realização técnica de Serving permanece aberta e pode futuramente envolver APIs, eventos, relatórios, alertas, superfícies analíticas, interfaces conversacionais ou outros mecanismos.
 
@@ -338,7 +338,7 @@ Dado autorizado para personalização, analytics ou serving não está automatic
 
 ## Estado
 
-`GPA-006 2.0.0` consolida a arquitetura de produto dos Checkpoints 1–12. `GIA-COG-001 v0.1.1` é a Cognitive Reference Architecture vigente, ativa e normativa, subordinada à GIA por `ADR-008`. O **Product Source Lock do Guivos Intelligence** está integrado, a **Home Pública do Intelligence v1** possui arquitetura conceitual completa em 11 movimentos e Documento Mestre `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.1.1`, e o **Source Lock da Home** existe como `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0`, ativo e normativo.
+`GPA-006 2.0.1` é a autoridade superior de produto do Guivos Intelligence. `GIA-COG-001 v0.1.2` é a Cognitive Reference Architecture vigente, ativa e normativa, subordinada à GIA por `ADR-008`. O **Product Source Lock do Guivos Intelligence** está ativo; a **Home Pública do Intelligence v1** possui arquitetura conceitual completa em 11 movimentos e Documento Mestre `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.13`; e o **Source Lock da Home** é `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.16`, ativo e normativo.
 
 O Source Lock da Home congela as fontes de autoridade para futura materialização. Ele não constitui, por si só, autorização de Design, materialização visual, implementação ou publicação.
 
@@ -346,10 +346,10 @@ Estado governado:
 
 ```text
 PRODUTO GUIVOS INTELLIGENCE
-→ CONSOLIDADO EM GPA-006 v2.0.0
+→ GPA-006 v2.0.1 / CONSOLIDATED
 
 COGNITIVE REFERENCE ARCHITECTURE
-→ GIA-COG-001 v0.1.1
+→ GIA-COG-001 v0.1.2
 → ACTIVE / NORMATIVE
 → CONCEPTUAL / REFERENCE LEVEL
 → IMPLEMENTATION / REAL DATA / PRODUCTION NOT AUTHORIZED
@@ -365,12 +365,13 @@ HOME PÚBLICA INTELLIGENCE v1
 → DOCUMENTO MESTRE EXISTENTE
 
 HOME SOURCE LOCK
-→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.0.0
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.16
 → ACTIVE / NORMATIVE
 → CONGELA FONTES; NÃO AUTORIZA MATERIALIZAÇÃO POR SI SÓ
 
-WIREFRAME / UI / PROTÓTIPO / DESIGN HANDOFF
-→ NÃO AUTORIZADOS DURANTE A AUDITORIA INTEGRAL
+PUBLIC HOME DESIGN
+→ GRANTED FOR EXTERNAL DESIGNER
+→ DESIGNER-FIRST / AI OPTIONAL
 
 UXA-102 / V5
 → NOT_STARTED
@@ -402,4 +403,4 @@ Permanecem abertos ou não evidenciados:
 - explicabilidade operacional;
 - controles de privacidade operacionais.
 
-A promoção canônica de `GIA-COG-001` não constitui autorização de Design, Product Engineering, implementação ou produção. Qualquer realização física permanece sujeita a gate próprio.
+O estado ativo e normativo de `GIA-COG-001` não constitui autorização de Product Engineering, implementação, operação ou produção. A produção externa de Design da Home pública é governada separadamente pelo release comum vigente.
