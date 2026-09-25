@@ -562,10 +562,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-experiencia-e-journey-consolidacao-current-only-concluida" class="md-nav__link">
+  <a href="#4-experiencia-e-journey-estado-corrente" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Experiência e Journey — consolidação current-only concluída
+        4. Experiência e Journey — estado corrente
       
     </span>
   </a>
@@ -694,10 +694,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#16-limite-de-proveniencia-historica" class="md-nav__link">
+  <a href="#16-escopo-do-roadmap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        16. Limite de proveniência histórica
+        16. Escopo do Roadmap
       
     </span>
   </a>
@@ -4175,10 +4175,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-experiencia-e-journey-consolidacao-current-only-concluida" class="md-nav__link">
+  <a href="#4-experiencia-e-journey-estado-corrente" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Experiência e Journey — consolidação current-only concluída
+        4. Experiência e Journey — estado corrente
       
     </span>
   </a>
@@ -4307,10 +4307,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#16-limite-de-proveniencia-historica" class="md-nav__link">
+  <a href="#16-escopo-do-roadmap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        16. Limite de proveniência histórica
+        16. Escopo do Roadmap
       
     </span>
   </a>
@@ -4357,17 +4357,16 @@
 
 <h1 id="roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos">Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos<a class="headerlink" href="#roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos" title="Permanent link">&para;</a></h1>
 <h2 id="1-funcao">1. Função<a class="headerlink" href="#1-funcao" title="Permanent link">&para;</a></h2>
-<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.35</code> em <strong>frentes governadas de avanço</strong>.</p>
-<p>Ele não é cronologia do projeto, inventário de versões antigas, registro de PRs, histórico de auditoria ou autorização automática para executar a próxima coisa tecnicamente possível.</p>
+<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.36</code> em <strong>frentes governadas de avanço</strong>.</p>
+<p>Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.</p>
 <div class="highlight"><pre><span></span><code>ROADMAP
 → ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
+→ DECLARA FRENTES CORRENTES E GATES
 
 ROADMAP
 ≠ FILA AUTOMÁTICA
-≠ REGISTRO HISTÓRICO
 ≠ AUTORIZAÇÃO DE IMPLEMENTAÇÃO
 </code></pre></div>
-<p>A auditoria integral anterior está concluída. Lotes, findings resolvidos, SHAs, baselines e checkpoints usados para chegar ao estado corrente pertencem ao documento próprio de auditoria e ao Git; não orientam a execução futura por si só.</p>
 <h2 id="2-estado-base-corrente">2. Estado base corrente<a class="headerlink" href="#2-estado-base-corrente" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -4379,7 +4378,7 @@ ROADMAP
 <tbody>
 <tr>
 <td>Estado global</td>
-<td><code>GKR-STATE-001 v3.50.35 / CURRENT</code></td>
+<td><code>GKR-STATE-001 v3.50.36 / CURRENT</code></td>
 </tr>
 <tr>
 <td>Era</td>
@@ -4479,9 +4478,6 @@ ABSORVER CONTEÚDO VÁLIDO
 CURRENT MAIN
 → FONTE PRIMÁRIA DA VERDADE
 
-GIT
-→ HISTÓRICO / PROVENIÊNCIA
-
 SNAPSHOT
 → SOMENTE QUANDO HOUVER NECESSIDADE REAL DE FREEZE / TRANSPORTE
 
@@ -4494,13 +4490,9 @@ DOCUMENTAÇÃO
 AUTORIZAÇÃO
 ≠ EXECUÇÃO AUTOMÁTICA
 </code></pre></div>
-<h2 id="4-experiencia-e-journey-consolidacao-current-only-concluida">4. Experiência e Journey — consolidação current-only concluída<a class="headerlink" href="#4-experiencia-e-journey-consolidacao-current-only-concluida" title="Permanent link">&para;</a></h2>
-<p>A consolidação destinada a permitir que humanos, Design e IA opcional consumam somente autoridades correntes foi concluída no corpus vigente.</p>
-<p>Estado corrente:</p>
-<div class="highlight"><pre><span></span><code>CURRENT-ONLY CONSOLIDATION
-→ COMPLETED
-
-CURRENT MAIN
+<h2 id="4-experiencia-e-journey-estado-corrente">4. Experiência e Journey — estado corrente<a class="headerlink" href="#4-experiencia-e-journey-estado-corrente" title="Permanent link">&para;</a></h2>
+<p>Experience/Journey é consumido diretamente pelas autoridades correntes abaixo:</p>
+<div class="highlight"><pre><span></span><code>CURRENT MAIN
 → PRIMARY SOURCE OF TRUTH
 
 CURRENT MANIFEST
@@ -4514,22 +4506,21 @@ READ-FIRST
 
 JOURNEY
 → CURRENT VIEWS + CURRENT REGISTRIES
-
-HISTORICAL PRODUCERS
-→ OUTSIDE CURRENT EXECUTION INPUT WHEN FUNCTION IS ABSORBED
-→ GIT PRESERVES PROVENANCE
 </code></pre></div>
-<p>A manutenção futura de Experience/Journey deve ocorrer somente quando uma mudança material exigir atualização das autoridades correntes, dependências, versões, links, IDs, navegação ou nomenclatura.</p>
-<div class="highlight"><pre><span></span><code>CONSOLIDATION COMPLETED
-≠ NEW AUTOMATIC FRONT
+<p>Mudanças materiais em Experience/Journey devem atualizar as autoridades correntes, dependências, versões, links, IDs, navegação ou nomenclatura aplicáveis.</p>
+<div class="highlight"><pre><span></span><code>CURRENT AUTHORITIES
+→ SOURCE OF TRUTH
 
-FUTURE MATERIAL CHANGE
+MATERIAL CHANGE
 → UPDATE CURRENT AUTHORITY
 
-HISTORY / AUDIT RECONSTRUCTION
-→ NOT REQUIRED
+DOCUMENTATION
+≠ FIGMA
+≠ PROTOTYPE
+≠ IMPLEMENTATION
+≠ UXA-102
+≠ PRODUCT ENGINEERING
 </code></pre></div>
-<p>A conclusão desta consolidação não cria snapshot, Figma, protótipo, implementação, UXA-102 ou Product Engineering por inferência.</p>
 <h2 id="5-homes-publicas-execucao-externa-de-design">5. Homes públicas — execução externa de Design<a class="headerlink" href="#5-homes-publicas-execucao-externa-de-design" title="Permanent link">&para;</a></h2>
 <p>As oito Homes estão liberadas para produção externa de Design pela designer.</p>
 <div class="highlight"><pre><span></span><code>DESIGNER
@@ -4786,19 +4777,15 @@ REAL MARKET EVIDENCE
 SNAPSHOT
 → NOT REQUIRED BY DEFAULT
 </code></pre></div>
-<p>Qualquer avanço deve partir da autoridade temática vigente e do gate específico aplicável.</p>
-<h2 id="16-limite-de-proveniencia-historica">16. Limite de proveniência histórica<a class="headerlink" href="#16-limite-de-proveniencia-historica" title="Permanent link">&para;</a></h2>
-<p>A auditoria integral anterior permanece disponível em <code>GKR-FULL-CORPUS-AUDIT-001</code> e no Git.</p>
-<div class="highlight"><pre><span></span><code>AUDIT LOTS / FINDINGS / PRs / SHAs / HISTORICAL BASELINES
-→ PROVENANCE
-
-CURRENT ROADMAP
+<p>Cada avanço depende da autoridade temática vigente e do gate específico aplicável.</p>
+<h2 id="16-escopo-do-roadmap">16. Escopo do Roadmap<a class="headerlink" href="#16-escopo-do-roadmap" title="Permanent link">&para;</a></h2>
+<p>O Roadmap contém somente frentes correntes, dependências e próximos gates. O estado detalhado de cada domínio deve ser lido em <code>GKR-STATE-001</code> e na autoridade temática correspondente.</p>
+<div class="highlight"><pre><span></span><code>CURRENT ROADMAP
 → CURRENT FRONTS + CURRENT GATES
 
-HISTORY
-→ MUST NOT RE-ENTER EXECUTION BY INFERENCE
+DOMAIN DETAIL
+→ CURRENT THEMATIC AUTHORITY
 </code></pre></div>
-<p>O Roadmap corrente não exige reconstrução do processo que levou ao estado atual.</p>
 
 
 
