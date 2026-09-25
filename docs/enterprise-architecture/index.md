@@ -4,7 +4,7 @@ title: Guivos Enterprise Architecture
 status: consolidated
 version: 1.12.2
 owner: Guivos
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 related_adrs:
   - ADR-003
   - ADR-004
