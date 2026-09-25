@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.29
+version: 1.3.30
 owner: Experience Architecture
 last_updated: 2026-09-25
 normative: true
@@ -577,7 +577,7 @@ READINESS
 CANONICAL INPUT
 → CURRENT MAIN + CURRENT MANIFEST
 
-HISTORICAL INPUT
+NON-CURRENT INPUT
 → EXCLUDED
 
 GKR-CREATED FIGMA
