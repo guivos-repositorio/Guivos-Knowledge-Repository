@@ -2,9 +2,9 @@
 id: GEM-000
 title: Guivos Economic Model
 status: active
-version: 1.3.1
+version: 1.3.2
 owner: Guivos
-last_updated: 2026-09-23
+last_updated: 2026-09-24
 related:
   - GEM-001
   - GEM-002
@@ -38,21 +38,18 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 `Commercial plan baseline and Opportunity Boost candidate baseline documentarily defined — validation and calibration pending`.
 
-O domínio concluiu sua arquitetura documental inicial em GEM-001 a GEM-010. Reaberturas localizadas consolidaram planos, benefícios, limites e preços de referência para Pessoas, Coletivos e Organizações e, separadamente, para o produto especializado Guivos Business; também definiram o Opportunity Boost como mecanismo publicitário candidato.
+O domínio é governado por `GEM-001` a `GEM-010`. A baseline corrente define planos, benefícios, limites e preços de referência para Pessoas, Coletivos e Organizações e, separadamente, para o produto especializado Guivos Business; o Opportunity Boost permanece mecanismo publicitário candidato.
 
 O estado vigente não aprova oferta pública, campanha real, cobrança, orçamento, projeção oficial, contabilização, valuation ou operação.
 
 Autoridades principais:
 
-- [Revisão de Fechamento do Guivos Economic Model](gem-closure-review.md);
-- [Revisão da Baseline Comercial de Planos e Preços](gem-commercial-plans-baseline-review.md);
 - [Autoridade Conceitual de Taxonomia, Função e Leitura dos Planos](gem-004-plan-taxonomy-conceptual-authority.md);
 - [Catálogo Comercial Candidato de Planos, Benefícios e Preços](gem-004-a1-commercial-plans-pricing-catalog.md);
 - [Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento](gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md);
 - [Premissas de Precificação e Validação Comercial](gem-010-a1-pricing-assumptions-and-validation.md);
 - [Opportunity Boost — Contrato Econômico e entre Produtos](gem-007-a1-opportunity-boost-economic-and-product-contract.md);
 - [Opportunity Boost — Preços, Orçamento e Mensuração](gem-010-a2-opportunity-boost-pricing-budget-and-measurement.md);
-- [Revisão da Baseline do Opportunity Boost](gem-opportunity-boost-baseline-review.md).
 
 ## Princípio central
 
@@ -156,7 +153,6 @@ necessidade ou potencial
 - [Atores e Relações Econômicas](gem-001-economic-actors.md);
 - [Princípios e Guardrails](gem-001-principles-and-guardrails.md);
 - [Mapa de Desenvolvimento](gem-001-development-map.md);
-- [Checkpoint de Validação como Dependência](gem-001-dependency-validation-checkpoint.md).
 
 ## Autoridades do GEM-002
 
@@ -168,7 +164,6 @@ necessidade ou potencial
 - [Custos, Riscos e Vazamentos](gem-002-cost-risk-leakage-map.md);
 - [Fronteiras de Captura, Compartilhamento e Reinvestimento](gem-002-capture-sharing-reinvestment-boundaries.md);
 - [Cenários e Gates](gem-002-scenarios-and-gates.md);
-- [Checkpoint de Validação como Dependência](gem-002-dependency-validation-checkpoint.md).
 
 ## Autoridades do GEM-003
 
@@ -182,7 +177,6 @@ necessidade ou potencial
 - [Concentração e Resiliência](gem-003-concentration-and-resilience.md);
 - [Framework de Validação](gem-003-validation-framework.md);
 - [Cenários e Gates](gem-003-scenarios-and-gates.md);
-- [Checkpoint de Validação como Dependência](gem-003-dependency-validation-checkpoint.md).
 
 ## Autoridades do GEM-004
 
@@ -198,7 +192,6 @@ necessidade ou potencial
 - [Política de Upgrade, Downgrade e Cancelamento](gem-004-upgrade-downgrade-cancellation-policy.md);
 - [Contrato Canônico de Plano](gem-004-plan-contract.md);
 - [Cenários e Gates](gem-004-scenarios-and-gates.md);
-- [Checkpoint de Validação como Dependência](gem-004-dependency-validation-checkpoint.md);
 - [Catálogo Comercial Candidato de Planos, Benefícios e Preços](gem-004-a1-commercial-plans-pricing-catalog.md);
 - [Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento](gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md).
 
@@ -217,7 +210,6 @@ necessidade ou potencial
 - [Incentivos de Voluntariado e Impacto Social](gem-005-volunteering-and-social-impact-incentives.md);
 - [Contrato Canônico de Programa de Incentivo](gem-005-incentive-program-contract.md);
 - [Cenários e Gates](gem-005-scenarios-and-gates.md);
-- [Checkpoint de Validação como Dependência](gem-005-dependency-validation-checkpoint.md).
 
 ## Autoridades do GEM-006
 
@@ -237,7 +229,6 @@ necessidade ou potencial
 - [Suspensão, Saída e Continuidade](gem-006-suspension-exit-and-continuity.md);
 - [Contrato Canônico de Relacionamento](gem-006-partner-relationship-contract.md);
 - [Cenários e Gates](gem-006-scenarios-and-gates.md);
-- [Checkpoint de Validação como Dependência](gem-006-dependency-validation-checkpoint.md).
 
 ## Autoridades do GEM-007
 
@@ -258,7 +249,6 @@ necessidade ou potencial
 - [Fronteiras de Capacidades e Custos Compartilhados](gem-007-shared-capability-and-cost-boundaries.md);
 - [Matriz de Riscos e Guardrails](gem-007-product-risk-and-guardrail-matrix.md);
 - [Cenários e Gates](gem-007-scenarios-and-gates.md);
-- [Checkpoint de Validação como Dependência](gem-007-dependency-validation-checkpoint.md);
 - [Opportunity Boost — Contrato Econômico e entre Produtos](gem-007-a1-opportunity-boost-economic-and-product-contract.md).
 
 ## Autoridades do GEM-008
@@ -285,7 +275,6 @@ necessidade ou potencial
 
 ## Autoridades do GEM-009
 
-- [Checkpoint de Validação do GEM-008](gem-008-dependency-validation-checkpoint.md);
 - [Métricas Econômicas](gem-009-economic-metrics.md);
 - [Taxonomia de Métricas Econômicas](gem-009-metric-taxonomy.md);
 - [Contrato Canônico de Métrica Econômica](gem-009-measurement-contract.md);
@@ -303,7 +292,6 @@ necessidade ou potencial
 
 ## Autoridades do GEM-010
 
-- [Checkpoint de Validação do GEM-009](gem-009-dependency-validation-checkpoint.md);
 - [Cenários e Modelo Financeiro](gem-010-financial-scenarios-and-model.md);
 - [Governança de Premissas](gem-010-assumption-governance.md);
 - [Arquitetura de Cenários](gem-010-scenario-architecture.md);
