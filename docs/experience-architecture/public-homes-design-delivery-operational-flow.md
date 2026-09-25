@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
 title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
 status: active
-version: 3.1.3
+version: 3.1.4
 owner: Experience Architecture
-last_updated: 2026-09-21
+last_updated: 2026-09-25
 parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
 depends_on:
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
@@ -43,8 +43,8 @@ DESIGN TOOL
 A produção criativa pode começar quando:
 
 - o Manifesto corrente identifica o conjunto autorizado;
-- Master e autoridades específicas da Home pertencem ao mesmo checkpoint do `main`;
-- não existe finding material aberto no conjunto corrente;
+- Master e autoridades específicas da Home pertencem ao mesmo conjunto canônico corrente;
+- não existe contradição material ou conflito de autoridade não resolvido no conjunto corrente;
 - o Design Production Release está `GRANTED`.
 
 ```text
@@ -54,7 +54,7 @@ SNAPSHOT
 CURRENT MAIN
 → FIRST-CLASS SOURCE
 
-HISTORICAL / CANDIDATE / CHECKPOINT
+NON-CURRENT / SUPERSEDED INPUT
 → DO NOT LOAD
 ```
 
@@ -96,7 +96,7 @@ A designer deve compreender primeiro:
 13. limites de produto;
 14. liberdade criativa.
 
-A designer não precisa reconstruir histórico de PRs, auditorias ou conversas para entender o estado vigente.
+A designer deve trabalhar diretamente a partir das autoridades correntes definidas para a Home.
 
 ## 5. Fase B — criação da designer
 
@@ -153,7 +153,7 @@ Quando a designer optar por IA:
 
 A saída de IA não cria autoridade.
 
-## 7. Fase D — autoauditoria da designer
+## 7. Fase D — verificação da designer
 
 Antes de apresentar uma Home para revisão:
 
@@ -241,7 +241,7 @@ AUTHORIZED SOURCE SET
 SNAPSHOT REQUIREMENT
 → NONE
 
-HISTORICAL / CANDIDATE / CHECKPOINT INPUT
+NON-CURRENT / SUPERSEDED INPUT
 → EXCLUDED
 
 GKR-CREATED FIGMA
