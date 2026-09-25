@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.46
+version: 7.0.47
 owner: Experience Architecture
 last_updated: 2026-09-25
 normative: true
@@ -43,8 +43,6 @@ DESIGNER
 AI
 → OPTIONAL / DESIGNER-CONTROLLED
 ```
-
-Snapshots, candidates e registros de emissão anteriores pertencem à proveniência do Git. Não são necessários para compreender ou executar o estado corrente.
 
 ## 2. Autoridades comuns e autoridade condicional de IA
 
