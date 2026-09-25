@@ -45,15 +45,15 @@ Este documento **não é**:
 - prova de performance;
 - copy final imutável.
 
-As formulações textuais preservadas aqui são **copy de referência convergida**. Sua função é manter significado, intenção, progressão, fronteiras e guardrails até a próxima etapa governada.
+As formulações textuais preservadas aqui são **copy de referência vigente**. Sua função é manter significado, intenção, progressão, fronteiras e guardrails para o consumo corrente da Home.
 
 ## 2. Estado da frente
 
-A arquitetura abaixo nasceu antes da criação do Home Source Lock e do Handoff. Esse estado de origem permanece apenas como proveniência histórica; o consumo corrente deve usar a cadeia vigente abaixo.
+O consumo corrente desta arquitetura deve seguir a cadeia vigente abaixo.
 
 ```text
 GPA-006
-→ v2.0.1 / CURRENT
+→ v2.0.2 / CURRENT
 
 SOURCE LOCK DO PRODUTO
 → GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.3
@@ -61,7 +61,7 @@ SOURCE LOCK DO PRODUTO
 
 HOME INTELLIGENCE v1
 → ARQUITETURA CONCEITUAL COMPLETA
-→ 11 MOVIMENTOS CONVERGIDOS
+→ 11 MOVIMENTOS VIGENTES
 
 ARQUITETURA NARRATIVA
 → GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.6
