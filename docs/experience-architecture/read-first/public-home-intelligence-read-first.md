@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-INTELLIGENCE-READ-FIRST-001
 title: 00 — Leia Primeiro — Home Pública — Guivos Intelligence
 status: active
-version: 1.0.8
+version: 1.0.9
 owner: Experience Architecture
 last_updated: 2026-09-25
 normative: false
@@ -62,15 +62,14 @@ O GKR governa significado, função, narrativa, papéis, limites, evidências, n
 
 A designer governa tipografia, paleta, imagens, ilustração, iconografia, grid, composição, componentes, ritmo, motion, atmosfera e direção visual, salvo texto ou regra explicitamente congelados por autoridade corrente.
 
-Não existe obrigação de reproduzir Figma, SVG, snapshot, estética, layout ou exploração histórica.
+Não existe obrigação de reproduzir Figma, SVG, snapshot, estética, layout ou exploração não canônica.
 
-## 4. Não carregar por padrão
+## 4. Fontes fora do conjunto corrente
 
-- auditorias e remediações concluídas;
-- candidates e snapshots;
-- PRs/checkpoints históricos;
-- produtores visuais absorvidos;
-- documentos superseded;
+Não carregar por padrão:
+
+- documentos `superseded`;
+- referências visuais não canônicas ou paralelas às autoridades correntes;
 - fontes de outras Homes sem necessidade concreta.
 
 ## 5. Journey

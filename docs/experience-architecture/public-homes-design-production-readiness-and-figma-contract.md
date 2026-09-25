@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
 title: Homes Públicas — Prontidão de Produção de Design e Contrato Designer/IA
 status: active
-version: 1.3.27
+version: 1.3.28
 owner: Experience Architecture
 last_updated: 2026-09-25
 normative: true
@@ -150,8 +150,6 @@ OPEN MATERIAL FINDINGS
 → NONE KNOWN IN CURRENT DESIGN SOURCE SET
 ```
 
-Findings, snapshots e remediações encerradas pertencem à história do Git e não são input para Design ou IA.
-
 ## 6. Composição de fontes por Home
 
 Quatro autoridades universais acompanham todas as Homes:
@@ -174,16 +172,16 @@ A lista universal é:
 3. `GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001`;
 4. `GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001`.
 
-O Manifesto corrente fixa o conjunto canônico no checkpoint do `main`. Snapshot não é pré-condição para Design; quando existir, funciona apenas como artefato de transporte congelado.
+O Manifesto corrente fixa o conjunto canônico para execução. Design deve partir exclusivamente das autoridades correntes listadas.
 
 Fontes específicas:
 
 ### Pessoa
-- `GKR-UX-HOME-MASTER-001 v1.0.6`;
+- `GKR-UX-HOME-MASTER-001 v1.0.7`;
 - `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.2`.
 
 ### Organizações e Coletivos
-- `GKR-UX-HOME-OC-MASTER-001 v1.0.5`;
+- `GKR-UX-HOME-OC-MASTER-001 v1.0.7`;
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.1`.
 
 ### Mall
@@ -220,10 +218,10 @@ Contrato corrente que o guia/Source Lock corrente deve explicitar:
 
 ### Business
 - `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.27`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.8`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.9`;
 - `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2`;
 - `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.10`;
-- `GPA-004 v1.7.4`;
+- `GPA-004 v1.7.5`;
 - `GKR-PLANS-BUSINESS-001 v1.3.1` — `docs/plans/business.md`.
 
 ### Intelligence

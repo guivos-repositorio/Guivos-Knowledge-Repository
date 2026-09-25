@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.25
+version: 13.48.26
 owner: Guivos
 last_updated: 2026-09-25
 normative: true
@@ -36,7 +36,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.50.37` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.50.38` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -54,12 +54,12 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.50.37 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.50.38 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-101` |
 | Homes públicas | `8 / 8 READY FOR EXTERNAL DESIGN` |
-| Manifesto de Design | `GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.46` |
+| Manifesto de Design | `GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.47` |
 | Read-First das Homes | `8 / 8 CURRENT / NON-NORMATIVE` |
 | Design das Homes | `DESIGNER-FIRST / AI OPTIONAL / TOOL-NEUTRAL` |
 | Journey | vistas e registries correntes ativos |
