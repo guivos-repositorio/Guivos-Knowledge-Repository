@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Intelligence
 status: active
-version: 1.1.15
+version: 1.1.16
 owner: Experience Architecture
-last_updated: 2026-09-21
+last_updated: 2026-09-25
 parent: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-MASTER-001
@@ -20,12 +20,12 @@ normative: true
 
 ## 1. Finalidade
 
-Este documento consolida o **Source Lock da Home Pública do Guivos Intelligence v1** após a convergência da arquitetura narrativa em onze movimentos, do Documento Mestre e da correção editorial da copy pública de referência.
+Este documento é o **Source Lock vigente da Home Pública do Guivos Intelligence v1**, governando a arquitetura narrativa em onze movimentos, o Documento Mestre e a copy pública de referência.
 
 Seu papel é:
 
 - congelar as fontes vigentes que governam a produção externa de Design da Home Intelligence e as futuras etapas autorizadas;
-- eliminar ambiguidades entre formulações anteriores e a copy pública efetivamente aprovada;
+- preservar uma única leitura corrente da copy pública e das invariantes da Home;
 - registrar as invariantes que não podem ser reinterpretadas por Design, UX, UI, ferramentas generativas ou implementação futura;
 - separar claramente o que está congelado do que continua aberto;
 - impedir que lacunas visuais, tecnológicas ou operacionais sejam preenchidas por inferência.
