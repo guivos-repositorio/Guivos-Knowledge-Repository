@@ -2,9 +2,9 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.53.2
+version: 0.53.3
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 related:
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -178,18 +178,11 @@ BND-*
 → NÃO SÃO PARTICIPANTES
 ```
 
-A expressão histórica `COM-*` não cria um quarto participante chamado "Comercial" e não representa Guivos Business.
+O prefixo legado `COM-*` não cria um quarto participante chamado "Comercial" e não representa Guivos Business.
 
-## 10. Exclusões de consumo
+## 10. Regra de consumo
 
-```text
-HISTORICAL UXA SEQUENCE
-SNAPSHOT COUNTS
-OLD SVG INVENTORY
-CHECKPOINT NARRATIVES
-CLOSED AUDITS
-→ NOT REQUIRED FOR DESIGN / AI
-```
+Design, prototipação e IA opcional devem usar as vistas e registries correntes desta seção e as autoridades temáticas vigentes quando necessário.
 
 ## 11. Estado
 
@@ -199,9 +192,6 @@ JOURNEY DOCUMENTATION
 
 DESIGN / PROTOTYPING INPUT
 → CURRENT VIEWS + CURRENT REGISTRIES
-
-HISTORICAL RECONSTRUCTION
-→ NOT REQUIRED
 
 O/C HIGH-FIDELITY DESIGN
 → AUTHORIZATION GRANTED

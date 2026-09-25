@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-ORGANIZATION-001
 title: Jornada Integrada da Organização
 status: active
-version: 0.18.2
+version: 0.18.3
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 related:
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
@@ -76,7 +76,7 @@ Abrir Planos não inicia cobrança nem altera autoridade institucional.
 
 ## 8. Autoridades de prototipação
 
-Usar os registries correntes e as autoridades autenticadas O/C vigentes. Nenhum artefato histórico define UI principal.
+Usar os registries correntes e as autoridades autenticadas O/C vigentes. A UI principal deve derivar exclusivamente dessas autoridades correntes.
 
 ## 9. Estado
 
@@ -97,7 +97,4 @@ INTERACTIVE PROTOTYPE
 
 VISUAL MATERIALIZATION
 → DESIGN-OWNED
-
-HISTORICAL UI
-→ EXCLUDED
 ```

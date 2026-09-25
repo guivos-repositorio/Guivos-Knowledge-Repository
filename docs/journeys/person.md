@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: active
-version: 0.23.0
+version: 0.23.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-25
 related:
   - PAS-001-DOMAIN-MODEL-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -93,9 +93,6 @@ Usar:
 ```text
 PERSON JOURNEY VIEW
 → CURRENT
-
-HISTORICAL SEQUENCE
-→ EXCLUDED
 
 VISUAL MATERIALIZATION
 → DESIGN-OWNED

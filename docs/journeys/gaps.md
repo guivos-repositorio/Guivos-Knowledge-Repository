@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.9
+version: 1.0.10
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 related:
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -29,7 +29,7 @@ normative: false
 
 ## 1. Finalidade
 
-Este documento registra **somente lacunas correntes** de continuidade da experiência. Ele não preserva a cronologia de como cada lacuna foi descoberta ou fechada; essa proveniência pertence ao Git.
+Este documento registra **somente lacunas correntes** de continuidade da experiência e os limites que ainda exigem autoridade, evidência ou materialização própria.
 
 Uma lacuna registrada aqui:
 

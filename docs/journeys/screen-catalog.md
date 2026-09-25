@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.42.0
+version: 0.42.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-25
 related:
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -74,9 +74,6 @@ DESIGNER
 
 CURRENT FUNCTIONAL COVERAGE
 → REGISTRIES
-
-HISTORICAL SVG INVENTORY
-→ NOT INPUT
 ```
 
 ## 5. Separações obrigatórias

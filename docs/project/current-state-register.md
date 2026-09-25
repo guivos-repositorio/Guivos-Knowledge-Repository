@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.36
+version: 3.50.37
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-25
 normative: true
@@ -674,7 +674,7 @@ A experiência autenticada de Organização/Coletivo permanece governada por sua
 
 ## 11. Guivos Business
 
-`GPA-004 v1.7.4` permanece autoridade superior do Guivos Business. A síntese corrente da experiência está em `GKR-JOURNEY-BUSINESS-001 — Experiência Integrada do Guivos Business`.
+`GPA-004 v1.7.5` permanece autoridade superior do Guivos Business. A síntese corrente da experiência está em `GKR-JOURNEY-BUSINESS-001 — Experiência Integrada do Guivos Business`.
 
 Ofertas principais preservadas:
 
