@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.6
+version: 1.0.7
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-24
 normative: false
 maturity: reconciled_for_external_design
 depends_on:
@@ -27,7 +27,7 @@ related:
 
 Este é o **documento mestre vigente de consumo da Home pública principal da Guivos**, com perspectiva predominante da Pessoa.
 
-Ele existe para que liderança, Brand, Marketing, Produto, Experience Architecture, UX, Design, Desenvolvimento, Research, Legal/Privacidade, Intelligence e demais equipes consigam compreender a Home sem reconstruir a verdade atual por meio de uma cadeia de documentos históricos, refinamentos e propagations.
+Ele existe para que liderança, Brand, Marketing, Produto, Experience Architecture, UX, Design, Desenvolvimento, Research, Legal/Privacidade, Intelligence e demais equipes compreendam, em uma única leitura, a verdade vigente da Home.
 
 Regra de consumo:
 
@@ -35,10 +35,8 @@ Regra de consumo:
 
 Este master:
 
-- preserva a riqueza estratégica construída na frente original;
-- absorve autoridades posteriores de Fundação, Marca, Public Canon, Research e Experience Architecture;
-- corrige formulações superadas sem apagar seu histórico no Git;
-- distingue verdade vigente, autoria criativa de Design e releases operacionais posteriores;
+- consolida a Fundação, a Marca, o Public Canon, Research e a Experience Architecture aplicáveis à Home;
+- distingue verdade vigente, autoria criativa de Design e releases operacionais;
 - governa significado e fronteiras da Home pública, enquanto o release comum vigente autoriza produção externa de Design pela designer;
 - não libera implementação, publicação, campanha, lançamento, UXA-102/V5 ou experiência autenticada;
 - consome a fronteira funcional de Q sem converter Q em autorização para materialização autenticada.
@@ -49,9 +47,6 @@ MASTER VIGENTE
 
 DOCUMENTOS ESPECIALIZADOS
 → aprofundamento / evidência / contratos específicos ainda não removidos
-
-GIT
-→ história das decisões anteriores
 ```
 
 ---
@@ -75,9 +70,6 @@ AI
 
 GKR-CREATED FIGMA
 → NONE
-
-FINAL BASELINE PÓS-AUDITORIA
-→ CAPTURED @ 15f4d69f63cd760718dce7903224673aac4f540a
 
 Q — FUNCTIONAL DEFINITION
 → PASS / CANONICALLY CONSOLIDATED
@@ -1293,28 +1285,18 @@ A definição funcional de Q não deve preencher itens visuais ou operacionais p
 
 ---
 
-## 35. Matriz de conhecimento absorvido neste master
+## 35. Autoridades relacionadas e aprofundamentos
 
-| Fonte | Conhecimento absorvido | Estado após esta reconstrução |
-|---|---|---|
-| Fundação vigente | Momento, Próximo Passo, Possibilidade, Oportunidade, autonomia, visão global | absorvido na leitura mestre |
-| `GKR-BRAND-SIGNATURE-001` | assinatura institucional correta | absorvido |
-| `GKR-BRAND-PUBLIC-AUTHORITY-001` | Guivos ≠ fundador | absorvido |
-| propagation de autoridade pública | correção da Hero e Movimento 06 | **conteúdo Home absorvido; arquivo ainda não removido** |
-| `GKR-UX-HOME-VAL-001` | pergunta-mãe, amplitude, protagonismo, cinco pilares | absorvido com correções posteriores; removido do corpus corrente |
-| `NARR-001` | 11 movimentos e contratos narrativos | absorção mestre; detalhes permanecem no especializado |
-| `NARR-002` | coerência do Movimento 08 | absorvido; removido do corpus corrente |
-| `NARR-003` | participante ≠ produto | absorvido; removido do corpus corrente |
-| `NARR-004` | realidade × experiência × autoridade | absorvido; removido do corpus corrente |
-| `NARR-005` | 7 macroexperiências | absorvido com novo rótulo do M06; removido do corpus corrente |
-| `NAV-001/002/003/004` | Header, launcher, CTAs, scroll, mobile e limite do Mapa do Ecossistema | absorvido; removido do corpus corrente |
-| `SYS-001` | conteúdo, prova, histórias, interação, ritmo e acessibilidade | absorvido; removido do corpus corrente |
-| `GTM-BOUNDARY-001` | arquitetura ≠ lançamento | absorvido; removido do corpus corrente |
-| Media supply | Media como fonte editorial sem transferência de autoridade | absorvido |
-| `UXA-020` | fronteira pública/protegida e ausência de coleta na Home | preservado como autoridade funcional limitada da fronteira |
-| `UXA-021` | primeira validação funcional detalhada da Home | absorvido pelo Master; proveniência histórica somente |
+| Fonte vigente | Papel nesta Home |
+|---|---|
+| Fundação vigente / `GEB-P01` | Momento, Próximo Passo, Possibilidade, Oportunidade, autonomia e visão global |
+| `GKR-BRAND-SIGNATURE-001` | assinatura institucional |
+| `GKR-BRAND-PUBLIC-AUTHORITY-001` | separação entre Guivos e fundador |
+| `GKR-UX-HOME-NARR-001` | 11 movimentos e contratos narrativos |
+| `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001` | supply editorial do Media sem transferência de autoridade |
+| `UXA-020` | fronteira funcional Home pública → entrada protegida |
 
-Esta matriz **não autoriza remoção automática das fontes**. A remoção física exige teste posterior de conteúdo único, evidência, dependências e referências.
+Essas autoridades complementam o Master sem substituir sua função de leitura executiva corrente.
 
 ---
 
