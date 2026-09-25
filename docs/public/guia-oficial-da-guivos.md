@@ -20,8 +20,8 @@ update_cycle: Continuous
 | Finalidade | Explicar publicamente o que é a Guivos, como o ecossistema é organizado, seus princípios e seus limites de maturidade |
 | Público | Pessoas, Coletivos, Organizações, clientes, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados |
 | Responsável | Guivos |
-| Versão | 5.3.0 |
-| Última atualização | 27/08/2026 |
+| Versão | 5.3.1 |
+| Última atualização | 25/09/2026 |
 | Status | Public Canon |
 | Fonte | Guivos Knowledge Repository |
 
