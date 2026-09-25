@@ -1030,9 +1030,9 @@ A documentação dessas frentes não significa que toda configuração ou public
 
 ## 17. Research, supply e RP-002
 
-O RP-002 ampliou o entendimento de Possibilidade, Oportunidade, supply contextual, Organização, Coletivo e método de validação.
+`RP-002` governa o entendimento corrente de Possibilidade, Oportunidade, supply contextual, Organização, Coletivo e método de validação.
 
-Formulações preservadas em Research e agora reconciliadas na Fundação:
+Formulações correntes compartilhadas por Research e Fundação:
 
 > **Possibilidade é um caminho potencial de evolução compatível com um Momento.**
 
@@ -1115,7 +1115,7 @@ Simulações sintéticas não são evidência de PMF.
 
 ## 18. Stack mínimo privacy-first do piloto
 
-A documentação do stack mínimo está fechada no limite documental, mas a implementação operacional foi deliberadamente adiada.
+O stack mínimo possui documentação completa no limite definido; sua implementação operacional permanece `DEFERRED / NOT_EXECUTED`.
 
 Elementos documentados incluem:
 
@@ -1134,8 +1134,6 @@ Elementos documentados incluem:
 A1 Research Mailbox possui PASS documental/operacional nos limites explicitamente evidenciados por seu próprio registro; isso não promove o restante do stack.
 
 Identity Vault e demais componentes que exigem configuração física continuam sem prova operacional quando não executados.
-
-O fechamento da auditoria integral do corpus não reabre a decisão de adiar a implantação.
 
 ## 19. Privacidade e direitos
 
@@ -1234,7 +1232,7 @@ P0–P9 DOCUMENTALMENTE CONSOLIDADO
 ≠ OPERAÇÃO JURÍDICA/FISCAL CONCLUÍDA
 ```
 
-O fechamento da auditoria preserva o conhecimento vigente e o histórico Git; eventual cleanup futuro permanece sujeito à mesma regra de absorção sem perda e não reabre automaticamente decisões de domínio.
+O estado de P0–P9 só muda mediante autoridade temática e evidência aplicável; maturidade documental não altera implementação, mercado, tecnologia ou operação por inferência.
 
 ## 22. Fundação Guivos e institucional
 
@@ -1249,11 +1247,11 @@ conceito institucional social validado
 ≠ operação social própria comprovada
 ```
 
-Nenhuma limpeza documental pode promover esse estado por inferência.
+Esse estado só pode mudar mediante autoridade institucional própria e evidência correspondente.
 
 ## 23. Internacionalização
 
-Baseline territorial candidata preservada:
+Direção territorial de referência:
 
 ```text
 Belo Horizonte
@@ -1531,7 +1529,7 @@ IMPLEMENTATION / PRODUCTION
 → NOT AUTHORIZED BY DOCUMENTARY MATURITY ALONE
 ```
 
-Qualquer avanço deve partir da autoridade temática vigente e do gate específico aplicável. Nenhum snapshot, Source Lock, protótipo, implementação, operação, teste com participantes reais ou Engenharia de Produto é criado por inferência a partir deste registro.
+Este registro não autoriza, por si só, snapshot, Source Lock, protótipo, implementação, operação, teste com participantes reais ou Engenharia de Produto. Cada execução depende da autoridade temática vigente e do gate aplicável.
 
 ## 30. Home Masters — estado corrente
 
@@ -1642,7 +1640,4 @@ SNAPSHOT
 
 CANDIDATE
 → NOT CREATED BY DEFAULT
-
-HISTORY
-→ GIT
 ```
