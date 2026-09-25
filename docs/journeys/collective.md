@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: active
-version: 0.25.2
+version: 0.25.3
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 related:
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
@@ -75,7 +75,7 @@ Abrir Planos não altera vínculo, capacidade, consentimento ou participação.
 
 ## 7. Autoridades de prototipação
 
-Usar os registries correntes e as autoridades autenticadas O/C vigentes. Nenhum artefato histórico define UI principal.
+Usar os registries correntes e as autoridades autenticadas O/C vigentes. A UI principal deve derivar exclusivamente dessas autoridades correntes.
 
 ## 8. Estado
 
@@ -96,7 +96,4 @@ INTERACTIVE PROTOTYPE
 
 VISUAL MATERIALIZATION
 → DESIGN-OWNED
-
-HISTORICAL UI
-→ EXCLUDED
 ```
