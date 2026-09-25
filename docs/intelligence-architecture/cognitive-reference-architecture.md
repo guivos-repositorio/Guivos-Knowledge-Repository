@@ -788,7 +788,7 @@ A existência do namespace não autoriza criação automática de documentos.
 
 ```text
 GIA-COG-001
-→ ACTIVE / NORMATIVE v0.1.1
+→ ACTIVE / NORMATIVE v0.1.2
 → CURRENT COGNITIVE REFERENCE ARCHITECTURE
 → CONCEPTUAL / REFERENCE LEVEL
 
