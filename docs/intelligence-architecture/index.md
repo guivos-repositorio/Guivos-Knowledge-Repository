@@ -93,7 +93,7 @@ A Intelligence Architecture deve preservar autonomia humana, finalidade, minimiz
 
 ## Cognitive Reference Architecture
 
-`GIA-COG-001 v0.1.1` é a **Cognitive Reference Architecture vigente, ativa e normativa** da Guivos Intelligence Architecture.
+`GIA-COG-001 v0.1.2` é a **Cognitive Reference Architecture vigente, ativa e normativa** da Guivos Intelligence Architecture.
 
 Ela organiza, em nível lógico e tecnologicamente neutro, o fluxo cognitivo entre request, contexto de representação, finalidade/autoridade/sensibilidade, elegibilidade pré-processamento, contexto e evidência, processamento, normalização, fusão, assurance, output, disclosure, projeção ao consumidor, serving e decisão humana ou do domínio responsável.
 
