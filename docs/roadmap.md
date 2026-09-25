@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.28
+version: 13.48.29
 owner: Guivos
 last_updated: 2026-09-25
 normative: true
@@ -20,6 +20,8 @@ related:
   - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
   - GKR-UX-PER002-PROTOTYPE-REVALIDATION-001
+  - GKR-UX-PERSON-JOURNEY-FLOW-001
+  - GKR-UX-PER002-MASTER-001
   - GPA-004
   - GPA-006
   - GIA-000
@@ -36,7 +38,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.50.40` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.50.41` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -54,7 +56,7 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.50.40 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.50.41 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-101` |
@@ -63,6 +65,8 @@ ROADMAP
 | Read-First das Homes | `8 / 8 CURRENT / NON-NORMATIVE` |
 | Design das Homes | `DESIGNER-FIRST / AI OPTIONAL / TOOL-NEUTRAL` |
 | Journey | vistas e registries correntes ativos |
+| Jornada da Pessoa — documentação para Design | `26 MASTERS PLANEJADOS APÓS A HOME / 1 CONSTRUÍDO / PER-002 CURRENT` |
+| Próximo Master documental da Pessoa | `PER-003 — ESCOLHA DE MODALIDADE / NOT_STARTED` |
 | Business | `Start · Growth · Scale · Enterprise` / contratação online / Self-service quando elegível |
 | O/C low-fidelity autenticado | `DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS` |
 | O/C high-fidelity | `AUTHORIZATION GRANTED / EXECUTION RELEASE ISSUED / DELIVERY NOT_RECEIVED` |
@@ -216,21 +220,27 @@ PRODUCT ENGINEERING
 
 O ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0` liberou a execução externa high-fidelity. O próximo avanço nesta frente depende de uma entrega externa inspecionável; capacidades especializadas ainda abertas permanecem registradas em `GKR-JOURNEY-GAPS-001` e nos Surface Registries e não reabrem a cadeia principal já fechada.
 
-## 7. Pessoa — PER-002 e continuidade
+## 7. Pessoa — documentação por superfície e continuidade
 
-`PER-002` possui referência interativa pós-review validada. Isso não cria execução automática posterior.
+`PER-002` possui boundary funcional corrente, referência interativa local validada e Documento Mestre próprio para consumo de Design e IA opcional. Isso não cria execução automática posterior.
 
 ```text
+PERSON JOURNEY DOCUMENTATION
+→ FLOW MAP = CURRENT
+→ 1 / 26 SURFACE MASTERS BUILT
+
 PER-002
-→ CURRENT INTERACTIVE REFERENCE EXISTS
-→ POST-REVIEW REVALIDATION = PASS
+→ GKR-UX-PER002-MASTER-001 v0.1.0
+→ CURRENT DESIGN DEFINITION
+→ LOCAL INTERACTIVE REFERENCE = VALIDATED
 
 AUTHENTICATION
 → INTERNAL GATE / STATE
 → ≠ MATERIAL PROCESSING AUTHORIZATION
 
-FIRST DISTINCT DOWNSTREAM SURFACE
+NEXT DOCUMENTATION TARGET
 → PER-003 — ESCOLHA DE MODALIDADE
+→ DOCUMENTATION ONLY / NOT_STARTED
 
 UXA-102 / V5
 → NOT_STARTED
@@ -239,7 +249,7 @@ PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-Qualquer nova materialização, teste real, implementação ou avanço de `UXA-102/V5` depende de ato próprio.
+A próxima construção governada desta coleção é documental: `PER-003 — Escolha de Modalidade`. Materialização visual, teste real, implementação ou avanço de `UXA-102/V5` dependem de atos próprios.
 
 ## 8. Guivos Business
 

@@ -140,6 +140,14 @@ nav:
           - Jornada da Organização: journeys/organization.md
           - Guivos Business — Experiência Integrada: journeys/business.md
 
+  - Jornada da Pessoa — Superfícies e Fluxos:
+      - Comece por aqui:
+          - Leia Primeiro: experience-architecture/person-journey/read-first.md
+          - Fluxo Completo de Superfícies: experience-architecture/person-journey/flow-map.md
+
+      - Documentos Mestres por Superfície:
+          - 01 — PER-002 — Entrada Protegida: experience-architecture/person-journey/per-002-protected-entry-master.md
+
   - Research e Validação:
       - Research — Visão Geral: research/index.md
       - Validação de Mercado: research/market-validation/README.md

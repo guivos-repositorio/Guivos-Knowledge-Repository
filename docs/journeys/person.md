@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: active
-version: 0.23.1
+version: 0.23.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 related:
@@ -10,6 +10,9 @@ related:
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-PERSON-JOURNEY-READ-FIRST-001
+  - GKR-UX-PERSON-JOURNEY-FLOW-001
+  - GKR-UX-PER002-MASTER-001
 normative: false
 ---
 
@@ -79,13 +82,24 @@ Participação não cria exposição ilimitada de contexto pessoal.
 - ausência de score humano;
 - nenhum avanço inferido apenas por uso da interface.
 
-## 8. Autoridades de prototipação
+## 8. Documentação por superfície para Design e IA
 
-Usar:
+A Jornada da Pessoa possui uma coleção própria de documentação de consumo para Design, construída **uma superfície por vez**.
+
+Entrada:
+
+- `GKR-UX-PERSON-JOURNEY-READ-FIRST-001` — regras de consumo, granularidade e liberdade criativa;
+- `GKR-UX-PERSON-JOURNEY-FLOW-001` — mapa completo das 26 superfícies/responsabilidades a documentar após a Home;
+- `GKR-UX-PER002-MASTER-001` — primeiro Documento Mestre, para `PER-002 — Entrada Protegida`.
+
+A coleção não cria telas por inferência. Cada Documento Mestre deve corresponder a uma superfície/responsabilidade já reconhecida pelo Registry e preservar estados internos dentro dessa mesma responsabilidade quando não existir novo `PER-ID`.
+
+Para prototipação e Design, continuar usando:
 
 - `GKR-JOURNEY-SCREEN-CATALOG-001`;
 - `GKR-JOURNEY-SURFACE-REGISTRY-001`;
 - `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
+- Documento Mestre da superfície, quando já construído;
 - contratos específicos somente quando a superfície exigir.
 
 ## 9. Estado
