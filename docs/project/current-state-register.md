@@ -2,13 +2,12 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.35
+version: 3.50.36
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-25
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
-  - GKR-FULL-CORPUS-AUDIT-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
   - GEB-P01
@@ -36,7 +35,6 @@ related:
   - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
   - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
   - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
-  - GKR-GLOBAL-UPDATE-2026-09-18-001
   - GKR-UX-HOME-OC-MASTER-001
   - GKR-UX-HOME-OC-NARR-001
   - GKR-UX-HOME-OC-NAV-001
@@ -57,46 +55,29 @@ related:
 
 Este documento registra **o que pode ser afirmado hoje** sobre a Guivos e sobre o estado do Guivos Knowledge Repository.
 
-Ele não é histórico de construção, changelog, checkpoint ou inventário de PRs.
-
-A regra vigente do corpus é:
-
-```text
-GIT
-→ preserva a história
-
-GKR VIGENTE
-→ preserva a verdade atual
-→ com detalhe material suficiente
-→ sem depender de versões substituídas para ser compreendido
-```
-
+O estado deve ser compreendido diretamente por este registro e pelas autoridades temáticas vigentes, sem depender do processo que levou à sua formulação.
 
 `GIA-COG-001 v0.1.2` é a **Cognitive Reference Architecture vigente, ativa e normativa**, subordinada à GIA por `ADR-008`. Essa autoridade permanece em nível conceitual/de referência e não autoriza `GIA-COG-002..008`, arquitetura física, dados reais, implementação, operação ou produção.
 
-A frente documental posterior de Organizações e Coletivos avançou por gates próprios até a Navigation Materialization canônica `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`. A autorização governada subsequente `GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001 v1.0.0` liberou exclusivamente os wireframes autenticados low-fidelity, a primeira entrega foi executada em `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` e a validação funcional posterior concluiu `PASS` em `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`, com 30/30 itens de cobertura, 15/15 invariantes, 12/12 desafios de estado, 0 findings materiais e nenhuma reformulação requerida. O pacote Delivery + Validation é a referência corrente low-fidelity O/C. A adjudicação pós-validação `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.2` concluiu `PASS` e a decisão humana subsequente `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.2` concedeu autorização para Design high-fidelity. O ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0` liberou a execução externa de Design high-fidelity; a entrega permanece `NOT_RECEIVED`. Protótipo interativo e Product Engineering continuam não liberados.
+Organização e Coletivo possuem cadeia autenticada vigente até a execução externa de Design high-fidelity: `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2` governa Navigation Materialization; o pacote low-fidelity `GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001 v0.1.0` + `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0` está `PASS`; high-fidelity possui elegibilidade `PASS`, autorização `GRANTED` e release de execução `ISSUED` por `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0`. A entrega high-fidelity permanece `NOT_RECEIVED`. Protótipo interativo e Product Engineering continuam não liberados.
 
 ## 2. Estado executivo
 
-O estado corrente do GKR deve ser lido por autoridade temática, não pela cronologia de construção.
+O estado corrente do GKR deve ser lido por autoridade temática vigente.
 
 ```text
 CURRENT MAIN
 → VERDADE DOCUMENTAL CORRENTE
 
-GIT
-→ HISTÓRICO / PROVENIÊNCIA
-
-HISTORICAL AUDIT / SNAPSHOT / CHECKPOINT
-→ NOT DESIGN INPUT
-→ NOT AI INPUT
+AUTORIDADES TEMÁTICAS VIGENTES
+→ DETALHE FUNCIONAL E NORMATIVO
 ```
 
 Estado executivo vigente:
 
 - **Participantes estruturais:** Pessoa, Organização e Coletivo;
 - **Contextos principais de experiência:** Pessoa, Coletivo, Organização e Guivos Business, preservando Business como produto especializado B2B e não como participante estrutural;
-- **Homes públicas:** documentação reconciliada e pronta para Design externo, sem identidade visual canônica imposta pelo GKR;
+- **Homes públicas:** autoridades documentais correntes completas e prontas para Design externo, sem identidade visual canônica imposta pelo GKR;
 - **Organização/Coletivo autenticados:** Jobs/autoridade, IA, Surface Map, State Map, Priority Flows, Navigation Materialization e low-fidelity principal definidos/validados; high-fidelity autorizado, com execução externa liberada e entrega ainda `NOT_RECEIVED`; protótipo interativo não autorizado;
 - **Pessoa / PER-002:** fronteira funcional e referência interativa pós-review preservadas pelas autoridades específicas; autenticação continua gate interno e não autorização automática de processamento material;
 - **Journey:** registries de superfícies, transições, cenários, handoffs e gaps ativos como fonte corrente;
@@ -120,7 +101,7 @@ DESIGN AUTHORIZED
 PROTOTYPE
 ≠ IMPLEMENTED PRODUCT
 
-AUDIT COMPLETE
+DOCUMENTATION MATURITY
 ≠ PMF VALIDATED
 ```
 
@@ -136,7 +117,7 @@ A direção humana preservada é:
 
 > **Como podemos ajudar os seres humanos a terem uma vida melhor?**
 
-A arquitetura conceitual reconciliada distingue:
+A arquitetura conceitual vigente distingue:
 
 ```text
 MOMENTO
@@ -434,7 +415,7 @@ A definição funcional de Q e todos os gates específicos de Design de `PER-002
 
 ## 8. Organizações e Coletivos — experiência autenticada
 
-A frente avançou além do estado registrado nas versões globais anteriores.
+A experiência autenticada de Organização e Coletivo é governada pelas autoridades correntes abaixo.
 
 ### 8.1 Fundação e relações
 
@@ -470,7 +451,7 @@ AUTORIDADE DECLARADA
 
 ### 8.3 Arquitetura da Informação
 
-`GKR-UX-ORGCOL-AUTH-IA-001 v1.3.2` está ativo em maturidade `authenticated_information_architecture_defined`. A progressão documental posterior permanece registrada nas autoridades correntes de Surface Map, State Map, Priority Flows, Navigation Materialization e wireframes autenticados.
+`GKR-UX-ORGCOL-AUTH-IA-001 v1.3.2` está ativo em maturidade `authenticated_information_architecture_defined`. Surface Map, State Map, Priority Flows, Navigation Materialization e wireframes autenticados completam o conjunto documental corrente desta experiência.
 
 Organização:
 
@@ -562,9 +543,11 @@ LOW-FIDELITY WIREFRAMES
 HIGH-FIDELITY ELIGIBILITY
 → PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.2
 
-HIGH-FIDELITY DESIGN AUTHORIZATION
-→ GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.2
-→ EXECUTION = NOT_STARTED
+HIGH-FIDELITY DESIGN
+→ ELIGIBILITY = PASS / GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.2
+→ AUTHORIZATION = GRANTED / GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.2
+→ EXECUTION RELEASE = ISSUED / GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0
+→ DELIVERY = NOT_RECEIVED
 
 INTERACTIVE PROTOTYPE
 → NOT_AUTHORIZED
@@ -574,9 +557,7 @@ PRODUCT ENGINEERING
 → NOT RELEASED
 ```
 
-A antiga proposta pré-auditoria `agent/gkr-orgcol-authenticated-surface-map-v1` permanece somente `HOLD_REVIEW` e não é autoridade vigente.
-
-Os Priority Flows O/C foram promovidos documentalmente em ato governado específico. A elegibilidade para **Navigation Materialization** foi adjudicada como `PASS` e a materialização documental foi posteriormente autorizada, executada, validada e promovida em `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`. Os **Authenticated Wireframes low-fidelity** foram então autorizados, entregues e funcionalmente validados com `PASS` por `GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 v1.0.0`. A elegibilidade high-fidelity O/C foi adjudicada como `PASS` em `GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001 v1.0.2` e a autorização humana subsequente foi concedida em `GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001 v1.0.2`. O release de execução externa high-fidelity foi emitido em `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0`; a entrega permanece `NOT_RECEIVED`. Protótipo interativo, implementação e Product Engineering continuam não liberados.
+O conjunto corrente de Organização/Coletivo é composto por Priority Flows ativos, Navigation Materialization `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2`, low-fidelity validado com `PASS` e high-fidelity com elegibilidade `PASS`, autorização `GRANTED` e execução externa `ISSUED`. A entrega high-fidelity permanece `NOT_RECEIVED`; protótipo interativo, implementação e Product Engineering continuam não liberados.
 
 ```text
 DOCUMENTAÇÃO
@@ -598,10 +579,6 @@ PHYSICAL SVGs
 
 CURRENT PHYSICAL ASSOCIATIONS
 → 0
-
-HISTORICAL VISUAL PRODUCERS
-→ REMOVED / ABSORBED WHERE GOVERNED
-→ GIT PRESERVES PROVENANCE
 
 SURFACE MATURITY
 → READ FROM GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -664,7 +641,7 @@ AI
 → OPTIONAL / DESIGNER-CONTROLLED
 ```
 
-O GKR **não define identidade visual canônica** para essas Homes e não exige reconstrução de arquivos Figma, SVGs, snapshots ou explorações históricas como entrada de Design.
+O GKR **não define identidade visual canônica** para essas Homes. O pacote corrente no `main` é suficiente para o consumo de Design; snapshot externo não é pré-condição.
 
 Preservações essenciais:
 
@@ -687,9 +664,6 @@ PUBLIC HOMES
 
 SNAPSHOT REQUIREMENT
 → NONE
-
-HISTORICAL FIGMA / SVG / CHECKPOINT RECONSTRUCTION
-→ NOT REQUIRED
 
 IMPLEMENTATION / PUBLICATION / PRODUCT ENGINEERING
 → SEPARATE GATES
@@ -987,11 +961,11 @@ FALA PESSOAL
 ≠ POSICIONAMENTO INSTITUCIONAL
 ```
 
-`GKR-BRAND-PUBLIC-AUTHORITY-001` também permanece preservado. `GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` foi adjudicado no fechamento de `F-010` como `KEEP TEMPORARILY`: continua transitório, não normativo e parcialmente absorvido, preservando rastreabilidade enquanto seus próprios gates de absorção permanecem aplicáveis. A decisão sob `F-010` está encerrada; eventual remoção futura depende exclusivamente dos critérios internos de `REMOVE_AFTER_ABSORPTION` da própria propagation, sem perda de conhecimento vigente.
+`GKR-BRAND-PUBLIC-AUTHORITY-001` permanece vigente. `GKR-BRAND-PUBLIC-AUTHORITY-PROPAGATION-001` é transitório, não normativo e parcialmente absorvido; não é autoridade primária de consumo. Sua permanência depende apenas dos critérios internos de absorção ainda aplicáveis.
 
 ## 15. Proteção marcária
 
-Portfólio brasileiro GUIVOS reconciliado:
+Portfólio brasileiro GUIVOS vigente:
 
 | Processo | Classe | Estado |
 |---|---:|---|
@@ -1000,7 +974,7 @@ Portfólio brasileiro GUIVOS reconciliado:
 | 932319971 | 42 | registro em vigor |
 | 932412840 | 35 | registro em vigor |
 
-A continuidade `CLUBE DE VIAGENS E TURISMO LTDA → GUIVOS LTDA` permanece reconciliada pelo mesmo CNPJ informado nas autoridades correspondentes.
+A continuidade `CLUBE DE VIAGENS E TURISMO LTDA → GUIVOS LTDA` é sustentada pelo mesmo CNPJ informado nas autoridades correspondentes.
 
 Assinaturas:
 
@@ -1357,28 +1331,19 @@ Permanecem abertos quando dependentes de realidade, materialização, Design, im
 - UXA-102/V5;
 - Product Engineering.
 
-## 26. Auditoria integral do corpus — referência de proveniência
+## 26. Regra de atualidade documental
 
-A auditoria integral anterior está concluída e sua proveniência permanece no Git e nas autoridades de auditoria correspondentes. Este Registro do Estado Atual **não reproduz lotes, checkpoints, SHAs, contagens históricas ou sequência de remediações**.
-
-Para consumo corrente:
+Para consumo corrente, este registro deve ser lido em conjunto com as autoridades temáticas vigentes. Estados específicos de `PER-002`, arquitetura cognitiva, Organização/Coletivo, Homes, Business, Intelligence, tecnologia, Research e demais domínios são definidos nas respectivas seções e autoridades citadas.
 
 ```text
 ESTADO ATUAL
 → ESTE REGISTRO + AUTORIDADES TEMÁTICAS VIGENTES
 
-AUDITORIAS / LOTES / CHECKPOINTS / BASELINES HISTÓRICAS
-→ GIT / PROVENIÊNCIA
-→ NOT DESIGN INPUT
-→ NOT AI INPUT
-
-AUDITORIA CONCLUÍDA
+DOCUMENTAÇÃO
 ≠ IMPLEMENTAÇÃO
 ≠ PRODUÇÃO
 ≠ PMF VALIDADO
 ```
-
-Os estados específicos de `PER-002`, arquitetura cognitiva, Organização/Coletivo, Homes, Business, Intelligence, tecnologia, Research e demais domínios devem ser lidos diretamente nas respectivas seções correntes deste registro e nas autoridades temáticas citadas.
 
 ## 27. Regra de navegação corrente
 
@@ -1403,7 +1368,7 @@ REPOSITORY NAVIGATION
 
 Documentos vigentes não precisam estar diretamente listados no MENU para manter autoridade, desde que permaneçam alcançáveis por hubs, links internos, busca e Git.
 
-Uma mesma autoridade pode atender várias rotas; o GKR não cria cópias paralelas por equipe. Evidência de builds, SHAs e validações históricas pertence ao Git e aos workflows, não a esta regra de navegação corrente.
+Uma mesma autoridade pode atender várias rotas; o GKR não cria cópias paralelas por equipe.
 
 ## 28. Preservações finais e regra de não inferência
 
@@ -1435,10 +1400,8 @@ LUCAS 2:52 NA BIO DO FUNDADOR ≠ COPY INSTITUCIONAL AUTOMÁTICA
 HOME DOCUMENTADA ≠ HOME IMPLEMENTADA
 SOURCE LOCK ≠ AUTORIZAÇÃO AUTOMÁTICA DE DESIGN
 ARTEFATO FÍSICO ≠ AUTORIDADE VIGENTE
-AUDITORIA DOCUMENTAL ≠ EVIDÊNCIA OPERACIONAL
+DOCUMENTAÇÃO ≠ EVIDÊNCIA OPERACIONAL
 CONSOLIDAÇÃO ≠ REDUÇÃO DE CONHECIMENTO
-HISTÓRICO P1–P5 ≠ SEQUÊNCIA OPERACIONAL ATUAL
-DESIGN HANDOFF HISTÓRICO ≠ AUTORIZAÇÃO ATUAL DE DESIGN
 DESIGN HANDOFF BOUNDARY ≠ DESIGN AUTHORIZATION
 DESIGN AUTHORIZATION ≠ DESIGN DELIVERY ≠ FUNCTIONAL VALIDATION
 FUNCTIONAL VALIDATION PASS ≠ HIGH-FIDELITY AUTHORIZATION
@@ -1448,13 +1411,12 @@ HIGH-FIDELITY DELIVERY ≠ HIGH-FIDELITY VALIDATION
 HIGH-FIDELITY VALIDATION PASS ≠ PROTOTYPE AUTHORIZATION
 PROTOTYPE ELIGIBILITY ≠ PROTOTYPE AUTHORIZATION ≠ PROTOTYPE EXECUTION
 PROTOTYPE AUTHORIZATION ≠ PROTOTYPE EXECUTION ≠ PROTOTYPE VALIDATION
-PROTOTYPE VALIDATION PRE-REVIEW ≠ CURRENT POST-REVIEW CONCLUSION
 PROTOTYPE ≠ IMPLEMENTED PRODUCT ≠ REAL AUTHENTICATION ≠ REAL DATA PROCESSING
 DISPLAYED ≠ UNDERSTOOD
 CLICKED ≠ UNDERSTOOD
 GENERIC PURPOSE EXPLANATION ≠ FUTURE PROCESSING AUTHORIZATION
 
-AUDIT COMPLETE
+DOCUMENTATION COMPLETE
 ≠ PRODUTO IMPLEMENTADO
 ≠ PMF VALIDADO
 ≠ TECNOLOGIA EM PRODUÇÃO
@@ -1602,12 +1564,7 @@ INTELLIGENCE
 
 QUICK-REFERENCE MOVEMENTS
 → 83 / 83
-
-HISTORICAL REMEDIATION / CHECKPOINT INPUT
-→ NOT REQUIRED
 ```
-
-Auditorias, remediações, candidatos e snapshots usados para chegar a este estado não fazem parte da cadeia operacional corrente. O Git preserva sua proveniência.
 
 ## 31. Homes públicas — fonte corrente para Design e IA opcional
 
@@ -1642,9 +1599,6 @@ SNAPSHOT REQUIREMENT
 
 CANDIDATE REQUIREMENT
 → NONE
-
-HISTORICAL PACKAGE INPUT
-→ EXCLUDED
 
 DESIGNER
 → CREATIVE AUTHOR
