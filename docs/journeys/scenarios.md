@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCENARIOS-001
 title: Cenários Integrados de Jornada
 status: active
-version: 1.1.1
+version: 1.1.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-22
+last_updated: 2026-09-25
 related:
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -34,9 +34,6 @@ SURFACE REGISTRY
 
 TRANSITION REGISTRY
 → CURRENT TRANSITION MATURITY
-
-HISTORICAL UXA SEQUENCE
-→ GIT / PROVENANCE
 ```
 
 ## 2. Pessoa — entrada, compreensão e Hoje
@@ -242,9 +239,6 @@ CURRENT SCENARIO
 ```text
 SCENARIOS
 → CURRENT
-
-HISTORICAL UXA NARRATIVE
-→ REMOVED FROM CURRENT SYNTHESIS
 
 IMPLEMENTATION
 → NOT INFERRED
