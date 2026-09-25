@@ -18,19 +18,16 @@
 
 /* Jornada da Pessoa — Superfícies e Fluxos
    Verde vivo inspirado na referência fornecida, ajustado para legibilidade.
-   O seletor identifica somente a seção de primeiro nível que contém o
-   Leia Primeiro da coleção Person Journey. */
-.md-nav--primary > .md-nav__list >
-.md-nav__item--nested:has(.md-nav__link[href*="person-journey/read-first"]) >
-.md-nav__link {
+   O Material for MkDocs renderiza o título de primeiro nível como section;
+   nested permanece como fallback defensivo. */
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="person-journey/read-first"]) > .md-nav__link,
+.md-nav--primary .md-nav__item--nested:has(.md-nav__link[href*="person-journey/read-first"]) > .md-nav__link {
   color: #008a00;
 }
 
-.md-nav--primary > .md-nav__list >
-.md-nav__item--nested:has(.md-nav__link[href*="person-journey/read-first"]) >
-.md-nav__link:hover,
-.md-nav--primary > .md-nav__list >
-.md-nav__item--nested:has(.md-nav__link[href*="person-journey/read-first"]) >
-.md-nav__link:focus {
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="person-journey/read-first"]) > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="person-journey/read-first"]) > .md-nav__link:focus,
+.md-nav--primary .md-nav__item--nested:has(.md-nav__link[href*="person-journey/read-first"]) > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--nested:has(.md-nav__link[href*="person-journey/read-first"]) > .md-nav__link:focus {
   color: #008a00;
 }
