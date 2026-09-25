@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
 title: Homes Públicas — Autorização Governada de Design Production Release
 status: active
-version: 1.3.3
+version: 1.3.4
 owner: Guivos
 last_updated: 2026-09-25
 normative: true
@@ -252,7 +252,7 @@ AI-ASSISTED CREATIVE PRODUCTION
 GKR-CREATED FIGMA
 → NONE
 
-HISTORICAL INPUT
+NON-CURRENT INPUT
 → EXCLUDED
 
 FINAL DESIGN ACCEPTANCE
