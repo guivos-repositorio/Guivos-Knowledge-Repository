@@ -220,21 +220,27 @@ PRODUCT ENGINEERING
 
 O ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0` liberou a execução externa high-fidelity. O próximo avanço nesta frente depende de uma entrega externa inspecionável; capacidades especializadas ainda abertas permanecem registradas em `GKR-JOURNEY-GAPS-001` e nos Surface Registries e não reabrem a cadeia principal já fechada.
 
-## 7. Pessoa — PER-002 e continuidade
+## 7. Pessoa — documentação por superfície e continuidade
 
-`PER-002` possui referência interativa pós-review validada. Isso não cria execução automática posterior.
+`PER-002` possui boundary funcional corrente, referência interativa local validada e Documento Mestre próprio para consumo de Design e IA opcional. Isso não cria execução automática posterior.
 
 ```text
+PERSON JOURNEY DOCUMENTATION
+→ FLOW MAP = CURRENT
+→ 1 / 26 SURFACE MASTERS BUILT
+
 PER-002
-→ CURRENT INTERACTIVE REFERENCE EXISTS
-→ POST-REVIEW REVALIDATION = PASS
+→ GKR-UX-PER002-MASTER-001 v0.1.0
+→ CURRENT DESIGN DEFINITION
+→ LOCAL INTERACTIVE REFERENCE = VALIDATED
 
 AUTHENTICATION
 → INTERNAL GATE / STATE
 → ≠ MATERIAL PROCESSING AUTHORIZATION
 
-FIRST DISTINCT DOWNSTREAM SURFACE
+NEXT DOCUMENTATION TARGET
 → PER-003 — ESCOLHA DE MODALIDADE
+→ DOCUMENTATION ONLY / NOT_STARTED
 
 UXA-102 / V5
 → NOT_STARTED
@@ -243,7 +249,7 @@ PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-Qualquer nova materialização, teste real, implementação ou avanço de `UXA-102/V5` depende de ato próprio.
+A próxima construção governada desta coleção é documental: `PER-003 — Escolha de Modalidade`. Materialização visual, teste real, implementação ou avanço de `UXA-102/V5` dependem de atos próprios.
 
 ## 8. Guivos Business
 
