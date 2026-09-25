@@ -116,7 +116,7 @@ graph TD
 ## Relação entre GEA, GKR, GKA e GEB
 
 - **GEA** é o conjunto integrado das arquiteturas da Guivos.
-- **GKR** preserva a representação canônica, decisões, evidências e histórico.
+- **GKR** preserva a representação canônica, decisões e evidências vigentes.
 - **GKA** governa como o conhecimento é descoberto, validado, promovido e evoluído.
 - **GEB** é o blueprint principal da Ecosystem Architecture.
 - **GKR-STATE-001** declara o estado transversal vigente sem redefinir as arquiteturas.
