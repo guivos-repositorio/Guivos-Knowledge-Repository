@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: active
-version: 0.23.2
+version: 0.23.3
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 related:
@@ -13,6 +13,7 @@ related:
   - GKR-UX-PERSON-JOURNEY-READ-FIRST-001
   - GKR-UX-PERSON-JOURNEY-FLOW-001
   - GKR-UX-PER002-MASTER-001
+  - GKR-UX-PER003-MASTER-001
 normative: false
 ---
 
@@ -90,7 +91,8 @@ Entrada:
 
 - `GKR-UX-PERSON-JOURNEY-READ-FIRST-001` — regras de consumo, granularidade e liberdade criativa;
 - `GKR-UX-PERSON-JOURNEY-FLOW-001` — mapa completo das 26 superfícies/responsabilidades a documentar após a Home;
-- `GKR-UX-PER002-MASTER-001` — primeiro Documento Mestre, para `PER-002 — Entrada Protegida`.
+- `GKR-UX-PER002-MASTER-001` — Documento Mestre de `PER-002 — Entrada Protegida`;
+- `GKR-UX-PER003-MASTER-001` — Documento Mestre de `PER-003 — Escolha de Modalidade`.
 
 A coleção não cria telas por inferência. Cada Documento Mestre deve corresponder a uma superfície/responsabilidade já reconhecida pelo Registry e preservar estados internos dentro dessa mesma responsabilidade quando não existir novo `PER-ID`.
 

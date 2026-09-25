@@ -2,7 +2,7 @@
 id: GKR-UX-PERSON-JOURNEY-FLOW-001
 title: Jornada da Pessoa — Mapa Completo de Superfícies para Design
 status: active
-version: 0.1.0
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 normative: false
@@ -65,6 +65,27 @@ Estado corrente das transições:
 | `TRN-005` | PER-005 → PER-006 | parcial |
 | `TRN-006` | PER-006 → PER-007 | localmente validada |
 | `TRN-007` | PER-007 → PER-008 | integralmente validada |
+
+Regra corrente de `PER-003`:
+
+```text
+VALIDATED MODALITY CHOICES
+→ TEXT
+→ VOICE
+→ FILE
+→ OPTIONAL GUIDED QUESTIONS
+
+COMBINATION
+→ ALLOWED
+→ NOT REQUIRED
+
+TEXT / VOICE
+→ TRN-003 → PER-004
+
+FILE / OPTIONAL GUIDED QUESTIONS
+→ DOWNSTREAM CONTINUITY NOT FULLY CONTRACTED
+→ MUST NOT BE INVENTED
+```
 
 ## 3. Continuidade recorrente a partir de Hoje
 
@@ -145,9 +166,9 @@ A ordem abaixo prioriza a espinha dorsal da Journey antes das famílias especial
 
 | Ordem | Superfície | Documento | Situação |
 |---:|---|---|---|
-| 01 | `PER-002` | Entrada Protegida | **em construção nesta frente** |
-| 02 | `PER-003` | Escolha de Modalidade | planejado |
-| 03 | `PER-004` | Expressão por Texto ou Voz | planejado |
+| 01 | `PER-002` | Entrada Protegida | **construído / current** |
+| 02 | `PER-003` | Escolha de Modalidade | **construído / current** |
+| 03 | `PER-004` | Expressão por Texto ou Voz | próximo / não iniciado |
 | 04 | `PER-005` | Inventário e Autorização | planejado |
 | 05 | `PER-006` | Processamento Visível | planejado |
 | 06 | `PER-007` | Compreensão Inicial Revisável | planejado |
@@ -208,11 +229,16 @@ PER-001
 NEW SURFACE MASTERS TO BUILD
 → 26
 
-BUILT IN THIS FOUNDATION
+BUILT
+→ 2 / 26
 → PER-002
+→ PER-003
 
-REMAINING AFTER PER-002
-→ 25
+REMAINING
+→ 24 / 26
+
+NEXT DOCUMENTATION TARGET
+→ PER-004 — EXPRESSÃO POR TEXTO OU VOZ
 
 NEW PER-IDS
 → NONE
