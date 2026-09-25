@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.32
+version: 3.50.33
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
@@ -1577,10 +1577,10 @@ Os oito Documentos Mestres são a fonte direta de verdade das Homes públicas.
 
 ```text
 PESSOA
-→ GKR-UX-HOME-MASTER-001 v1.0.6
+→ GKR-UX-HOME-MASTER-001 v1.0.7
 
 ORGANIZAÇÕES E COLETIVOS
-→ GKR-UX-HOME-OC-MASTER-001 v1.0.5
+→ GKR-UX-HOME-OC-MASTER-001 v1.0.6
 
 MALL
 → GKR-UX-HOME-MALL-MASTER-001 v1.1.3
@@ -1595,10 +1595,10 @@ ADS
 → GKR-UX-HOME-ADS-MASTER-001 v1.0.3
 
 BUSINESS
-→ GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.8
+→ GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.9
 
 INTELLIGENCE
-→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.12
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.13
 
 QUICK-REFERENCE MOVEMENTS
 → 83 / 83
@@ -1616,7 +1616,7 @@ PRIMARY SOURCE OF TRUTH
 → CURRENT MAIN
 
 AUTHORIZED WHITELIST
-→ GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.43
+→ GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.44
 
 UNIVERSAL DESIGN AUTHORITIES
 → HANDOFF v1.7.10
