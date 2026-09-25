@@ -66,6 +66,23 @@ Estado corrente das transições:
 | `TRN-006` | PER-006 → PER-007 | localmente validada |
 | `TRN-007` | PER-007 → PER-008 | integralmente validada |
 
+Regra corrente de `PER-003`:
+
+```text
+PRIMARY EXPRESSION CHANNELS
+→ TEXT
+→ VOICE
+
+GUIDED QUESTIONS
+→ OPTIONAL SUPPORT CAPABILITY
+
+FILES / DOCUMENTS
+→ AUXILIARY / CONDITIONAL CAPABILITY
+
+DESIGN / AI
+→ MUST NOT CREATE A THIRD PRIMARY MODALITY BY INFERENCE
+```
+
 ## 3. Continuidade recorrente a partir de Hoje
 
 ```text
