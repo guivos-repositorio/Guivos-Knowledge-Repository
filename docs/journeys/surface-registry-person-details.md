@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
 title: Detalhamento Obrigatório das Superfícies da Pessoa
 status: active
-version: 0.23.4
+version: 0.23.5
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -33,7 +33,7 @@ Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obri
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | GKR-SURF-PER-001 | GKR-UX-HOME-MASTER-001 + UXA-020 | contrato funcional corrente | acesso público | iniciar ou continuar | entrada protegida | conteúdo institucional público | nenhum para leitura | retorno livre | nenhuma | parcial | integração ponta a ponta | entrada pública |
 | GKR-SURF-PER-002 | GKR-UX-PER002-MAT-ELIGIBILITY-001 + protótipo corrente GKR-UX-PER002-PROTOTYPE-DELIVERY-001 | protótipo v1.0.0 / validação v2.0.0 PASS | Home pública | compreender o contexto protegido e decidir se prossegue | TRN-002 → PER-003 | finalidade, controles e contexto mínimo; conteúdo sintético no protótipo | autenticação quando necessária; processamento material exige autoridade própria | voltar/interromper/explorar sem personalização quando aplicável | sem baseline visual obrigatório | protótipo interativo validado; TRN-002 permanece localmente validada | implementação técnica não comprovada | entrada protegida; uma responsabilidade com estados/variantes internos |
-| GKR-SURF-PER-003 | UXA-020/023/035 + GKR-JOURNEY-PERSON-001 | contrato funcional corrente | entrada protegida | escolher texto ou voz | expressão guiada | modalidade escolhida | escolha explícita | trocar/voltar/cancelar | nenhuma | parcial | continuidade entre pacotes | escolha de modalidade |
+| GKR-SURF-PER-003 | UXA-020/023/035 + GKR-JOURNEY-PERSON-001 | contrato funcional corrente | entrada protegida | escolher entre texto, voz, arquivo ou perguntas opcionais | `TRN-003 → PER-004` para texto/voz; continuidade específica de arquivo/perguntas ainda não contratada | modalidade escolhida | escolha explícita | trocar/voltar/cancelar | nenhuma | parcial | continuidade de arquivo/perguntas | escolha de modalidade; quatro opções em paridade conforme UXA-035 |
 | GKR-SURF-PER-004 | UXA-069 + GKR-JOURNEY-PERSON-001 | contrato funcional corrente | escolha de modalidade | expressar/revisar/concluir | inventário | conteúdo de origem e derivados | solicitação consciente | editar/descartar/pausar | nenhuma | parcial | integração com inventário | expressão guiada |
 | GKR-SURF-PER-005 | UXA-023/035 + GKR-JOURNEY-PERSON-001 | contrato funcional corrente | expressão guiada | revisar e autorizar | processamento | conteúdos e finalidade | autorização específica | recusar/retirar/voltar | nenhuma | parcial | transição entre pacotes | inventário |
 | GKR-SURF-PER-006 | UXA-023/037 + GKR-JOURNEY-PERSON-001 | contrato funcional corrente | inventário autorizado | acompanhar processamento | compreensão | estado e fontes | autorização registrada | interromper/retornar | nenhuma | local | continuidade ponta a ponta | processamento |
