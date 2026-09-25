@@ -2,9 +2,9 @@
 id: GEA-000
 title: Guivos Enterprise Architecture
 status: consolidated
-version: 1.12.0
+version: 1.12.1
 owner: Guivos
-last_updated: 2026-09-12
+last_updated: 2026-09-24
 related_adrs:
   - ADR-003
   - ADR-004
@@ -38,15 +38,10 @@ O estado global vigente não é mantido de forma independente nesta página. Ele
 
 No estado atual:
 
-- Guivos Journey está publicado em `PAS-001 1.0.0`, com nove capacidades funcionalmente concluídas;
-- Guivos Economic Model possui arquitetura documental inicial concluída em `GEM-001` a `GEM-010`;
-- a remediação e a validação mecânica do repositório estão concluídas;
-- `BA-STR-002` permanece `draft`; as 18 decisões humanas foram concluídas, mas reavaliação e Canon permanecem pendentes;
-- a validação externa, a Matriz de Avaliação inicial e as 18 decisões humanas sobre Resultados estão concluídas;
-- o registro possui 9 candidatos em validação, 3 fundidos e 6 rejeitados;
-- `BUS-CAND-010` foi fundido em `BUS-CAND-005` por `COD-018`;
-- nenhum Resultado canônico foi criado;
-- a reaplicação dos testes, o AQS-O01 e as Capacidades Empresariais aguardam atos separados;
+- Guivos Journey é governado por `PAS-001 1.0.0`, com nove capacidades funcionalmente concluídas;
+- Guivos Economic Model está ativo, com baseline comercial corrente e Opportunity Boost ainda candidato;
+- Business Architecture possui fundamentos e modelo de transformação validados; `BA-STR-002` permanece `draft` e nenhum Outcome canônico foi criado;
+- Guivos Intelligence possui arquitetura cognitiva de referência vigente, sem equivaler a implementação física ou produção;
 - Engenharia de Produto permanece pausada antes de `W0-01`.
 
 ## Missão
@@ -114,9 +109,9 @@ graph TD
 | Guivos Knowledge Architecture | Como a Guivos descobre, valida, consolida e evolui conhecimento institucional? | reconhecida por `ADR-006`; documentação interna pendente |
 | Ecosystem Architecture | Como ocorre a transformação dos participantes? | em consolidação por meio do GEB |
 | Product Architecture | Quais produtos materializam capacidades e propostas de valor? | estrutura superior consolidada; Journey publicado; autoridades dos Produtos Especializados vigentes; Homes especializadas reconciliadas documentalmente pré-materialização |
-| Business Architecture | Como a Guivos organiza transformação, Resultados, capacidades e execução do negócio? | `BA-STR-002` permanece `draft`; 18 decisões humanas concluídas; 9 candidatos em validação, 3 fundidos e 6 rejeitados; nenhum Outcome aprovado ou código canônico |
+| Business Architecture | Como a Guivos organiza transformação, Resultados, capacidades e execução do negócio? | fundamentos e modelo de transformação validados; `BA-STR-002` permanece `draft`; nenhum Outcome canônico aprovado |
 | Guivos Intelligence Architecture | Como conhecimento, dados, contexto e conexões se tornam inteligência aplicada? | `GPA-006 v2.0.0` consolidado; `GIA-000 v1.7.0` vigente; `GIA-COG-001 v0.1.1` é a arquitetura cognitiva de referência vigente em nível conceitual/de referência; Documento Mestre e Source Lock da Home existem, sem equivaler a implementação, produção ou autorização de Design |
-| Guivos Economic Model | Como a Guivos sustenta economicamente o ecossistema sem contrariar seu propósito? | arquitetura documental inicial concluída; validação empírica e especializada pendente |
+| Guivos Economic Model | Como a Guivos sustenta economicamente o ecossistema sem contrariar seu propósito? | ativo; baseline comercial corrente definida; validação empírica e especializada pendente |
 | Technology and Engineering Architecture | Como as capacidades são implementadas tecnicamente? | planejada e pausada antes de `W0-01` |
 | Governance Architecture | Como decisões, riscos e mudanças são controlados? | ativa por métodos, auditorias, decisões e validação permanente do GKR |
 

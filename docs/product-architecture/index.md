@@ -2,9 +2,9 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.30.0
+version: 1.30.1
 owner: Guivos
-last_updated: 2026-07-18
+last_updated: 2026-09-24
 ---
 
 # Arquitetura de Produtos da Guivos
@@ -78,65 +78,39 @@ O Ecossistema Guivos está acima de todos os componentes.
 
 O `PAS-001 — Guivos Journey 1.0.0` é a especificação arquitetural canônica e ativa da Experience Layer.
 
-### Reconciliação e prontidão do PAS-001
+### Estado funcional do PAS-001
 
-`PAS-001-RECON-001 1.0.0` reconcilia a especificação-base. `PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates. `PAS-001-CANDIDATE-001 1.0.0-rc.1` materializou a edição federada e agora é histórica. `PAS-001-RELEASE-VALIDATION-001 1.0.0` aprovou os 25 gates. `PAS-001-PUBLICATION-001 1.0.0` registra a promoção para `PAS-001 1.0.0 active`.
-
-Todas as nove capacidades estão funcionalmente concluídas. O `PAS-001 1.0.0` está publicado e seus contratos e extensões permanecem autoridades especializadas.
-
-### Auditoria final do PAS-001
-
-`PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates, inventariou 54 extensões, validou links, versões, navegação e coerência entre camadas.
-
-### Edição candidata do PAS-001
-
-`PAS-001-CANDIDATE-001 1.0.0-rc.1` preserva historicamente a edição que consolidou filosofia, arquitetura em camadas, princípios, invariantes, mapa, perguntas, fronteiras e autoridade federada antes da promoção.
-
-### Validação de release do PAS-001
-
-`PAS-001-RELEASE-VALIDATION-001 1.0.0` confirmou 25 gates, 35 critérios de aceite, 30 comportamentos proibidos, nove contratos finais, 54 extensões, links, navegação, versões, preservação histórica, plano de publicação e rollback. O parecer `Ready for publication` autorizou a promoção posteriormente registrada por `PAS-001-PUBLICATION-001 1.0.0`.
-
-### Publicação controlada do PAS-001
-
-`PAS-001-PUBLICATION-001 1.0.0` promove o núcleo arquitetural validado para `PAS-001 1.0.0 active`, classifica a candidata como histórica e encerra o ciclo de consolidação sem criar tag ou release.
+`PAS-001 1.0.0` é a especificação canônica e ativa do Guivos Journey. As nove capacidades estão funcionalmente concluídas, e seus contratos e extensões vigentes permanecem autoridades especializadas.
 
 ### Mapa Final de Capacidades
 
-[`PAS-001-CAPABILITY-MAP-001 1.0.0`](pas-001-guivos-journey-mapa-final-capacidades.md) apresenta as nove capacidades, perguntas centrais, responsabilidades, entradas, saídas, fronteiras, relações não lineares, contratos e critérios de reabertura. O próximo ponto é `PAS-001-ENGINEERING-HANDOFF-001`.
+[`PAS-001-CAPABILITY-MAP-001 1.0.0`](pas-001-guivos-journey-mapa-final-capacidades.md) apresenta as nove capacidades, perguntas centrais, responsabilidades, entradas, saídas, fronteiras, relações não lineares, contratos e critérios de reabertura. Qualquer handoff para Engenharia depende de gate próprio; este documento não libera Product Engineering.
 
 ### Capacidade 01 — Captura de Contexto
 
-`PAS-001-CC-LIFECYCLE-001 1.0.0` concluiu a etapa `1 de 3`, consolidando o `Registro de Captura de Contexto`, sessão, estados, transições, entradas, transcrição, interpretação, síntese, confirmação, autorização, persistência temporária, correção, contestação, reconstrução e falha segura.
+`PAS-001-CC-LIFECYCLE-001 1.0.0` governa o `Registro de Captura de Contexto`, sessão, estados, transições, entradas, transcrição, interpretação, síntese, confirmação, autorização, persistência temporária, correção, contestação, reconstrução e falha segura.
 
-`PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` concluiu a etapa `2 de 3`, consolidando estrutura comum versionada, 20 famílias de eventos, contrato funcional comum de integração, produtores, consumidores, recortes, correção compensatória, revogação propagada, sincronização, prevenção de ciclos, idempotência, ordenação, concorrência, explicabilidade e auditoria.
+`PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` governa a estrutura comum versionada, 20 famílias de eventos, contrato funcional comum de integração, produtores, consumidores, recortes, correção compensatória, revogação propagada, sincronização, prevenção de ciclos, idempotência, ordenação, concorrência, explicabilidade e auditoria.
 
-`PAS-001-CC-CONTRACT-001 1.0.0` conclui a etapa `3 de 3`, consolidando 80 KPIs em 16 famílias, baseline segmentada, painel de saúde com 17 visões, cinco níveis de desempenho, 42 guardrails, cenários, 52 critérios de conclusão, 50 regras fundamentais e contrato funcional final.
+`PAS-001-CC-CONTRACT-001 1.0.0` governa 80 KPIs em 16 famílias, baseline segmentada, painel de saúde com 17 visões, cinco níveis de desempenho, 42 guardrails, cenários, 52 critérios de conclusão, 50 regras fundamentais e contrato funcional final.
 
-A capacidade está `Functionally complete — 100%`. A auditoria final foi concluída por `PAS-001-AUDIT-001 1.0.0`.
+A capacidade está `Functionally complete — 100%`.
 
 ### Capacidade 02 — Contexto Vivo
 
-As oito extensões normativas `STATE`, `UPDATE`, `CONFLICT`, `VIEW`, `EVENT`, `INTEGRATION`, `KPI` e `CONTRACT`, todas em `1.0.0`, concluíram funcionalmente a Capacidade 02.
+A Capacidade 02 está `Functionally complete` e é governada pelas extensões normativas `STATE`, `UPDATE`, `CONFLICT`, `VIEW`, `EVENT`, `INTEGRATION`, `KPI` e `CONTRACT`, todas em `1.0.0`.
 
 ### Capacidade 03 — Objetivos
 
-As sete extensões normativas de Objetivos concluíram fundamentos, ciclo de vida, progresso, visão, eventos, integrações, KPIs, cenários e contrato final.
-
-O `PAS-001-OBJ-CONTRACT-001 1.0.0` substitui normativamente o estado `In progress` da linha da Capacidade 03 na seção 7 do `PAS-001 0.5.0`.
-
-A Capacidade 03 está **Functionally complete**.
+A Capacidade 03 está **Functionally complete**. Suas sete extensões normativas governam fundamentos, ciclo de vida, progresso, visão, eventos, integrações, KPIs, cenários e contrato final.
 
 ### Capacidade 04 — Eventos de Vida
 
-As seis extensões normativas `FOUNDATION`, `LIFECYCLE`, `VIEW`, `EVENT`, `INTEGRATION` e `CONTRACT`, todas em `1.0.0`, concluíram fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 60 KPIs, 18 guardrails, cenários e contrato final.
-
-A Capacidade 04 está **Functionally complete**, com progresso editorial de referência de `100%`.
+A Capacidade 04 está **Functionally complete**. As extensões normativas `FOUNDATION`, `LIFECYCLE`, `VIEW`, `EVENT`, `INTEGRATION` e `CONTRACT`, todas em `1.0.0`, governam fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 60 KPIs, 18 guardrails, cenários e contrato final.
 
 ### Capacidade 05 — Próximos Passos
 
-As seis extensões normativas `FOUNDATION`, `LIFECYCLE`, `VIEW`, `EVENT`, `INTEGRATION` e `CONTRACT`, todas em `1.0.0`, concluíram fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 68 KPIs, 20 guardrails, cenários e contrato final.
-
-A Capacidade 05 está **Functionally complete**, com progresso editorial de referência de `100%`.
+A Capacidade 05 está **Functionally complete**. As extensões normativas `FOUNDATION`, `LIFECYCLE`, `VIEW`, `EVENT`, `INTEGRATION` e `CONTRACT`, todas em `1.0.0`, governam fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 68 KPIs, 20 guardrails, cenários e contrato final.
 
 ### Capacidade 06 — Oportunidades Ativas
 
@@ -389,8 +363,6 @@ O contrato final consolida:
 
 A Capacidade 07 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-## Capacidade 08 concluída
-
 ### Capacidade 08 — Experiências
 
 As extensões normativas vigentes são:
@@ -575,9 +547,7 @@ A Capacidade 09 — Evolução Contínua está `Functionally complete`, com prog
 - ausência de lacuna funcional bloqueante conhecida na baseline normativa.
 A Capacidade 09 está `Functionally complete`, com progresso editorial de referência de `100%`.
 
-`PAS-001-RECON-001 1.0.0` conclui a avaliação de prontidão, preserva as Capacidades 02 a 09 como `Functionally complete`, mantém a Capacidade 01 como `Substantially complete` e impede o avanço direto para `PAS-001 1.0.0`.
-
-A próxima frente oficial é o **Ciclo de Vida e Estados Funcionais da Capacidade 01 — Captura de Contexto**, por meio de `PAS-001-CC-LIFECYCLE-001`.
+`PAS-001 1.0.0` consolida as nove capacidades do Journey como funcionalmente concluídas. Essa maturidade arquitetural não equivale a implementação e não libera Product Engineering.
 
 ## Regras arquiteturais
 

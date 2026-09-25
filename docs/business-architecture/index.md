@@ -2,9 +2,9 @@
 id: GBA-000
 title: Guivos Business Architecture
 status: validated
-version: 0.16.0
+version: 0.16.1
 owner: Guivos Business Architecture
-last_updated: 2026-07-26
+last_updated: 2026-09-24
 related_adrs:
   - ADR-003
   - ADR-004
@@ -24,24 +24,19 @@ A Guivos Business Architecture define como o negócio da Guivos transforma neces
 
 Ela integra a Guivos Enterprise Architecture e não substitui a Foundation, a Ecosystem Architecture, a Product Architecture ou as arquiteturas especializadas de dados, tecnologia, governança e conhecimento.
 
-## Unidades validadas
+## Estrutura corrente
 
-- [BA-FND-001 — Business Architecture Foundations](foundations/index.md)
-- [BA-STR-001 — Business Transformation Model](strategy/business-transformation-model.md)
+- [BA-FND-001 — Business Architecture Foundations](foundations/index.md) — fundamentos validados;
+- [BA-STR-001 — Business Transformation Model](strategy/business-transformation-model.md) — modelo de transformação validado;
+- [BA-STR-002 — Business Outcomes](strategy/business-outcomes.md) — unidade estratégica corrente, ainda em `draft`;
+- [BA-STR-002-COR-001 — Candidate Outcome Register](strategy/candidate-outcome-register.md) — registro corrente dos candidatos a Outcome;
+- [BA-STR-002-EOVP-001 — External Outcome Validation Protocol](strategy/external-outcome-validation-protocol.md) — evidências externas de suporte;
+- [BA-STR-002-COEM-001 — Candidate Outcome Evaluation Matrix](strategy/candidate-outcome-evaluation-matrix.md) — matriz de avaliação dos candidatos;
+- [BA-STR-002-CODR-001 — Candidate Outcome Decision Register](strategy/candidate-outcome-decision-register.md) — registro governado das decisões humanas.
 
-## Unidade ativa
-
-- [BA-STR-002 — Business Outcomes](strategy/business-outcomes.md) — checkpoint 0.20.0; validação externa, COEM inicial e 18 decisões humanas concluídas; catálogo canônico pendente.
-- [BA-STR-002-COR-001 — Candidate Outcome Register](strategy/candidate-outcome-register.md) — 18 candidatos; 9 em `Under Validation`, 3 `Merged` e 6 `Rejected`; nenhum aprovado.
-- [BA-STR-002-EOVP-001 — External Outcome Validation Protocol](strategy/external-outcome-validation-protocol.md) — execução concluída com seis lotes e 60 evidências.
-- [BA-STR-002-COEM-001 — Candidate Outcome Evaluation Matrix](strategy/candidate-outcome-evaluation-matrix.md) — cobertura inicial concluída para 18 candidatos e seis clusters.
-- [BA-STR-002-CODR-001 — Candidate Outcome Decision Register](strategy/candidate-outcome-decision-register.md) — concluído; 18 de 18 decisões humanas registradas.
-- [Human Decision Resolution — BUS-CAND-010](strategy/candidate-outcome-decision-submission-bus-cand-010.md) — `COD-018`; fusão em `BUS-CAND-005` registrada.
-
-## Resultado da fase decisória
+## Estado corrente de Business Outcomes
 
 ```text
-Human decisions: 18 of 18
 Under Validation: 9
 Merged: 3
 Rejected: 6
@@ -49,9 +44,7 @@ Approved Outcomes: 0
 Canonical codes: 0
 ```
 
-A última decisão aceitou `Merge into BUS-CAND-005` para `BUS-CAND-010 — Capacidade de reinvestimento responsável`.
-
-A fusão preserva reinvestimento como decisão governada de financiamento e alocação dentro de Continuidade Econômica Sustentável. Ela não aprova o candidato-alvo e não transforma retenção ou gasto em prova de responsabilidade.
+Reinvestimento responsável permanece integrado à formulação `BUS-CAND-005` como decisão governada de financiamento e alocação dentro de Continuidade Econômica Sustentável. Isso não aprova o candidato nem transforma retenção ou gasto em prova de responsabilidade.
 
 ## Organização interna
 
@@ -111,7 +104,7 @@ A ordem de construção é determinada pelas dependências arquiteturais, confor
 
 1. `BA-FND-001` — Business Architecture Foundations — **Validated**
 2. `BA-STR-001` — Business Transformation Model — **Validated**
-3. `BA-STR-002` — Business Outcomes — **Draft 0.20.0; 18 decisões concluídas; reavaliação e Canon pendentes**
+3. `BA-STR-002` — Business Outcomes — **Draft; reavaliação das formulações ativas e Canon pendentes**
 4. `BA-CAP-001` — Core Business Capabilities — **não iniciado**
 5. `BA-CAP-002` — Capability Map
 6. `BA-STR-003` — Value Chains
@@ -124,8 +117,8 @@ A ordem de construção é determinada pelas dependências arquiteturais, confor
 
 A Business Architecture está **validada em seus fundamentos e em seu modelo de transformação**.
 
-O BA-STR-002 concluiu Discovery, registro de candidatos, validação externa, cobertura inicial da COEM e 18 decisões humanas. Permanece `draft` porque nove formulações revisadas ou combinadas ainda precisam retornar aos quatro testes, o AQS-O01 não foi ajustado na prática, os catálogos canônicos não foram definidos e a matriz de sustentação não foi consolidada.
+O `BA-STR-002` permanece `draft`. Nove formulações ativas ainda precisam retornar aos quatro testes; o AQS-O01 requer ajuste prático; os catálogos canônicos ainda não estão definidos; e a matriz de sustentação permanece pendente.
 
-## Próximo incremento candidato
+## Próximo gate
 
-Após integração e nova autorização, reaplicar os quatro testes às nove formulações ativas. O incremento não poderá aprovar candidatos automaticamente, criar códigos canônicos, iniciar `BA-CAP-001` ou retomar Engenharia de Produto.
+O próximo gate é a reaplicação dos quatro testes às nove formulações ativas, mediante autorização própria. Esse gate não pode aprovar candidatos automaticamente, criar códigos canônicos, iniciar `BA-CAP-001` ou retomar Engenharia de Produto.
