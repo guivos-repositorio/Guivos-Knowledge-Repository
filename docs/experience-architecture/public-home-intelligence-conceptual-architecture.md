@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
 title: Home Pública — Guivos Intelligence v1 — Arquitetura Conceitual — Movimentos 1–11
 status: active
-version: 0.2.5
+version: 0.2.6
 owner: Experience Architecture
-last_updated: 2026-09-21
+last_updated: 2026-09-25
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 depends_on:
   - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
@@ -28,9 +28,9 @@ normative: false
 
 ## 1. Finalidade
 
-Este documento preserva a **arquitetura conceitual completa da Home Pública do Guivos Intelligence v1** após a integração de `GPA-006 2.0.0`, do `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 1.0.0`, do princípio transversal `GKR-UX-HOMES-OUTCOME-001 1.0.0` e da convergência em conversa dos **Movimentos 01–11**.
+Este documento define a **arquitetura conceitual completa da Home Pública do Guivos Intelligence v1** em **11 movimentos**, subordinada a `GPA-006 2.0.2`, ao `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 1.0.3` e ao princípio transversal `GKR-UX-HOMES-OUTCOME-001 1.0.0`.
 
-A versão `0.2.1` corrigiu a camada editorial de `0.2.0`. A versão `0.2.2` reconcilia somente o **estado temporal de consumo** com as autoridades posteriores já existentes, sem alterar a quantidade de movimentos, a arquitetura narrativa, as fronteiras, os guardrails ou a intenção semântica convergida.
+Seu escopo corrente governa a quantidade e a função dos movimentos, a arquitetura narrativa, as fronteiras, os guardrails e a intenção semântica da Home, sem autorizar implementação ou operação.
 
 Este documento **não é**:
 
@@ -56,7 +56,7 @@ GPA-006
 → v2.0.1 / CURRENT
 
 SOURCE LOCK DO PRODUTO
-→ GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.2
+→ GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.3
 → CURRENT
 
 HOME INTELLIGENCE v1
@@ -64,7 +64,7 @@ HOME INTELLIGENCE v1
 → 11 MOVIMENTOS CONVERGIDOS
 
 ARQUITETURA NARRATIVA
-→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.5
+→ GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.6
 → CURRENT NARRATIVE REFERENCE
 
 DOCUMENTO MESTRE DA HOME
