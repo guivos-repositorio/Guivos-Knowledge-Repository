@@ -885,14 +885,14 @@ MATURIDADE
 ≠ implementação ou operação comprovada
 ```
 
-## 33. Progressão histórica e estado corrente
+## 33. Cadeia corrente de autoridade da Home
 
-A progressão histórica iniciada por este Source Lock foi concluída documentalmente até o handoff da Home:
+A Home Intelligence consome a autoridade de produto pela seguinte cadeia vigente:
 
 ```mermaid
 flowchart LR
     A[Source Lock do Produto]
-    B[Home Intelligence\nconstrução conceitual]
+    B[Arquitetura conceitual da Home]
     C[Documento Mestre da Home]
     D[Source Lock da Home]
     E[Handoff de Design]
