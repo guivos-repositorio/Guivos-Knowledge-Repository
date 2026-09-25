@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-DESIGN-HANDOFF-001
 title: Homes Públicas — Handoff Canônico para Design, UX, UI e Ferramentas Generativas
 status: active
-version: 1.7.10
+version: 1.7.11
 owner: Experience Architecture
-last_updated: 2026-09-21
+last_updated: 2026-09-24
 normative: true
 maturity: designer_first_ai_optional_main_canonical_first_class
 depends_on:
@@ -93,9 +93,9 @@ HUMAN APPROVAL
 ```
 
 
-### 0.2 Correção de precedência — designer-first / IA opcional
+### 0.2 Princípio de execução — designer-first / IA opcional
 
-A decisão humana de 2026-09-19 estabelece a seguinte precedência sobre qualquer formulação histórica deste documento que possa sugerir uma ferramenta generativa específica como etapa obrigatória:
+A execução de Design segue a seguinte precedência:
 
 ```text
 DESIGNER
@@ -112,7 +112,7 @@ GKR / CHATGPT
 → DOES NOT PRESELECT VISUAL DIRECTION
 
 TOOL-SPECIFIC WORDING ELSEWHERE
-→ READ AS HISTORICAL / NON-MANDATORY WHEN IN CONFLICT WITH THIS SECTION
+→ NON-MANDATORY WHEN IN CONFLICT WITH THIS SECTION
 ```
 
 ---
@@ -638,11 +638,7 @@ VALIDAÇÃO HUMANA
 
 > **O GKR governa o significado. Design governa a materialização. Ferramentas generativas ampliam a exploração. A validação reconecta forma e significado.**
 
-A versão `1.3.0` incorporou formalmente a Home Pública — Guivos Intelligence ao Handoff comum, elevando a governança de sete para oito Homes sem iniciar Design nem emitir, por aquele ato isolado, um novo snapshot de entrega.
-
-Estado histórico daquela frente:
-
-> **HANDOFF DAS OITO HOMES PREPARADO PARA A GERAÇÃO DE ENTREGA V4 — MATERIALIZAÇÃO SOMENTE APÓS O GATE OPERACIONAL DO MANIFESTO/FLUXO VIGENTES — IMPLEMENTAÇÃO NÃO INCLUÍDA.**
+O Handoff comum cobre as oito Homes públicas e não autoriza, por si só, implementação, publicação ou Product Engineering.
 
 ---
 
