@@ -2,7 +2,7 @@
 id: GKR-UX-PER003-MASTER-001
 title: Jornada da Pessoa — PER-003 — Escolha de Modalidade — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 normative: false
@@ -16,11 +16,11 @@ depends_on:
   - UXA-020
   - UXA-023
   - UXA-035
-  - UXA-069
   - PAS-001-CC-LIFECYCLE-001
 related:
   - GKR-UX-PER002-MASTER-001
   - GKR-JOURNEY-PERSON-001
+  - UXA-069
   - PER-002
   - PER-003
   - PER-004
@@ -34,7 +34,7 @@ related:
 
 Este documento consolida a **definição corrente de consumo de `PER-003 — Escolha de Modalidade`** para designer humana, IA opcional, Produto, UX, Research, Legal/Privacidade e Engenharia.
 
-A superfície existe para permitir que a Pessoa escolha **como deseja iniciar sua expressão principal do Momento Atual**, preservando equivalência entre canais, autonomia, reversibilidade e clareza sobre o que acontecerá em seguida.
+A superfície existe para permitir que a Pessoa escolha **como deseja começar a compartilhar seu Momento Atual**, preservando equivalência entre as modalidades já validadas, autonomia, reversibilidade e clareza sobre o que poderá acontecer depois.
 
 Este documento não cria layout, tela final, wireframe, UI, protótipo, sistema visual ou implementação.
 
@@ -42,61 +42,105 @@ Este documento não cria layout, tela final, wireframe, UI, protótipo, sistema 
 PER-002 — ENTRADA PROTEGIDA
 → TRN-002
 → PER-003 — ESCOLHA DE MODALIDADE
-→ TRN-003
-→ PER-004 — EXPRESSÃO GUIADA
+
+PER-003
+→ TEXTO
+→ VOZ
+→ ARQUIVO
+→ PERGUNTAS OPCIONAIS
+
+TRN-003
+→ PER-004 — EXPRESSÃO POR TEXTO OU VOZ
+→ CONTINUIDADE PARCIAL
 ```
 
 ## 2. Papel na Jornada
 
-`PER-003` é a superfície de **decisão de canal principal de expressão**.
+`PER-003` é a superfície de **decisão de modalidade de compartilhamento**.
 
-Ela não deve capturar o relato substantivo em si como responsabilidade principal. Seu papel é permitir que a Pessoa escolha conscientemente entre os canais principais atualmente reconhecidos:
+Ela não deve transformar a escolha em captura material automática. Seu papel é apresentar as formas correntes de começar, explicar suas consequências imediatas e registrar uma escolha consciente antes de qualquer operação que dependa dessa modalidade.
+
+As quatro escolhas validadas são:
 
 ```text
-CANAL PRINCIPAL 1
+MODALIDADE 1
 → TEXTO
 
-CANAL PRINCIPAL 2
+MODALIDADE 2
 → VOZ
+
+MODALIDADE 3
+→ ARQUIVO
+
+MODALIDADE 4
+→ PERGUNTAS OPCIONAIS
 ```
 
-A escolha prepara o handoff para `PER-004`, onde a expressão efetivamente acontece.
+## 3. Autoridades e reconciliação corrente
 
-## 3. Reconciliação corrente das modalidades
+`PER-003` é governada por `UXA-020`, `UXA-023` e `UXA-035`, conforme o Surface Registry corrente.
 
-As autoridades anteriores preservam texto, voz, arquivos e perguntas progressivas como capacidades possíveis da Captura de Contexto. Entretanto, o Registry corrente da Pessoa e `UXA-069` fixam `PER-003` como escolha entre **texto e voz**.
+`UXA-035` preserva explicitamente **texto, voz, arquivo e perguntas opcionais em paridade**, sem modalidade principal pré-selecionada e com possibilidade de combinação sem obrigação.
 
-Portanto:
+`UXA-069` não redefine `PER-003`; sua própria tabela de cobertura separa:
 
 ```text
-PER-003
-→ ESCOLHA PRINCIPAL = TEXTO OU VOZ
+PER-003 — ESCOLHA DE MODALIDADE
+→ UXA-020 / UXA-023 / UXA-035
 
-PERGUNTAS GUIADAS
-→ RECURSO OPCIONAL DE APOIO
-→ NÃO SÃO CANAL PRINCIPAL INDEPENDENTE NESTA SUPERFÍCIE
-
-ARQUIVOS
-→ CAPACIDADE AUXILIAR / CONDICIONAL
-→ NÃO SÃO CANAL PRINCIPAL INDEPENDENTE NESTA SUPERFÍCIE
+PER-004 — EXPRESSÃO GUIADA POR TEXTO OU VOZ
+→ UXA-069
 ```
 
-Uma mudança futura nessa taxonomia exige alteração explícita nas autoridades correntes; Design ou IA não podem transformar capacidades auxiliares em novas modalidades principais por conveniência.
+Portanto, este Master preserva as quatro modalidades validadas e trata `UXA-069` apenas como contexto downstream de `PER-004`.
 
-## 4. Job principal da Pessoa
+## 4. Continuidade conhecida e lacuna explícita
+
+O Transition Registry possui `TRN-003 — PER-003 → PER-004` em estado parcial.
+
+`PER-004` é definida correntemente como **Expressão por Texto ou Voz**. Não existe, no estado atual, uma superfície downstream separada contratada para executar de ponta a ponta arquivo ou perguntas opcionais.
+
+Por isso:
+
+```text
+TEXTO
+→ TRN-003
+→ PER-004
+
+VOZ
+→ TRN-003
+→ PER-004
+
+ARQUIVO
+→ ESCOLHA VALIDADA EM PER-003
+→ CONTINUIDADE DOWNSTREAM ESPECÍFICA = NÃO CONTRATADA
+
+PERGUNTAS OPCIONAIS
+→ ESCOLHA VALIDADA EM PER-003
+→ CONTINUIDADE DOWNSTREAM ESPECÍFICA = NÃO CONTRATADA
+```
+
+Design e IA **não podem inventar nova superfície, novo `PER-ID` ou novo handoff** para fechar essa lacuna.
+
+A solução visual pode representar as quatro escolhas correntes; a execução completa de arquivo/perguntas depende de autoridade posterior que feche sua continuidade.
+
+## 5. Job principal da Pessoa
 
 A Pessoa precisa conseguir responder:
 
-- posso começar escrevendo ou falando?
-- as duas opções têm valor equivalente?
-- escolher voz ativa o microfone imediatamente?
-- escolher texto inicia processamento imediatamente?
-- posso mudar de ideia antes de começar?
-- perguntas guiadas serão obrigatórias?
-- arquivo é necessário para prosseguir?
-- o que acontece depois da escolha?
+- quais formas de começar estão disponíveis?
+- todas têm valor equivalente?
+- posso escrever?
+- posso falar?
+- posso usar um arquivo?
+- posso começar respondendo perguntas opcionais?
+- alguma opção começa captura automaticamente?
+- posso combinar formas sem ser obrigada?
+- posso mudar de ideia antes de iniciar?
+- posso sair sem compartilhar?
+- o que acontece depois de cada escolha?
 
-## 5. Origem
+## 6. Origem
 
 `PER-003` é alcançada por `TRN-002` a partir de `PER-002`.
 
@@ -107,7 +151,7 @@ O handoff deve preservar:
 - finalidade corrente;
 - controles apresentados;
 - ausência de autorização ampla por autenticação;
-- ausência de relato material ainda não iniciado;
+- ausência de captura material iniciada por inferência;
 - possibilidade de interrupção.
 
 ```text
@@ -115,47 +159,26 @@ TRN-002
 → LOCALLY VALIDATED
 
 PER-003 ENTRY
-→ NÃO PRESUME MODALIDADE
-→ NÃO PRESUME CAPTURA
-→ NÃO PRESUME PROCESSAMENTO
-```
-
-## 6. Destino
-
-O destino funcional próprio de `PER-003` é `PER-004 — Expressão Guiada`, via `TRN-003`.
-
-`TRN-003` permanece parcial. Portanto, este Master governa o que precisa ser preservado na escolha, mas não promove a integração completa entre escolha e expressão.
-
-```text
-ESCOLHA DE TEXTO
-→ HANDOFF PARA ESTADO DE EXPRESSÃO POR TEXTO EM PER-004
-
-ESCOLHA DE VOZ
-→ HANDOFF PARA PREPARAÇÃO DE VOZ EM PER-004
-
-ESCOLHA
-≠ CAPTURA CONCLUÍDA
-≠ RELATO ENVIADO
-≠ AUTORIZAÇÃO DE PROCESSAMENTO
+→ NO MODALITY PRESELECTED
+→ NO CAPTURE STARTED
+→ NO MATERIAL PROCESSING STARTED
 ```
 
 ## 7. Estado inicial
 
-A entrada em `PER-003` deve começar sem modalidade predefinida por inferência.
-
-```text
-DEFAULT
-→ NO PRIMARY MODALITY SELECTED
-```
+A entrada em `PER-003` deve começar sem modalidade predefinida.
 
 Não é permitido:
 
 - selecionar texto por padrão apenas por simplicidade;
-- selecionar voz por padrão por conveniência de dispositivo;
+- selecionar voz por conveniência do dispositivo;
+- selecionar arquivo por existência de upload;
+- iniciar perguntas automaticamente como onboarding obrigatório;
 - inferir preferência com base em uso anterior sem autoridade explícita;
-- iniciar microfone automaticamente;
-- posicionar uma opção como moralmente superior;
-- esconder a alternativa equivalente.
+- iniciar microfone;
+- abrir seletor de arquivos;
+- iniciar análise;
+- posicionar uma modalidade como superior.
 
 ## 8. Modalidade Texto
 
@@ -165,14 +188,13 @@ A opção Texto deve comunicar, em nível proporcional, que:
 - poderá começar com pouco;
 - texto mais longo não significa melhor contexto;
 - poderá editar antes de avançar;
-- perguntas guiadas, quando aparecerem, são opcionais;
 - digitar não equivale a autorizar processamento material;
 - conteúdo permanece distinguível como expressão de origem;
-- a continuidade ocorrerá em `PER-004`.
+- a continuidade funcional conhecida ocorre em `PER-004`.
 
 ```text
 ESCOLHER TEXTO
-→ DEFINE CANAL PRINCIPAL
+→ DEFINE MODALIDADE
 → NÃO ENVIA RELATO
 → NÃO INICIA ANÁLISE
 → NÃO CRIA COMPREENSÃO INICIAL
@@ -183,144 +205,175 @@ ESCOLHER TEXTO
 A opção Voz deve comunicar, antes de qualquer ativação de microfone, que:
 
 - gravação será explícita;
-- início e fim serão perceptíveis;
+- início e fim deverão ser perceptíveis;
 - poderá existir transcrição;
 - áudio e transcrição podem ter controles distintos;
 - será possível revisar e corrigir a transcrição quando aplicável;
 - voz é opção, não obrigação;
 - escolher voz não ativa gravação automaticamente;
-- a continuidade ocorrerá em preparação de voz dentro de `PER-004`.
+- a continuidade funcional conhecida ocorre em preparação de voz dentro de `PER-004`.
 
 ```text
 ESCOLHER VOZ
-→ DEFINE CANAL PRINCIPAL
+→ DEFINE MODALIDADE
 → MICROFONE AINDA NÃO ATIVADO
 → GRAVAÇÃO AINDA NÃO INICIADA
 → TRANSCRIÇÃO AINDA NÃO INICIADA
 ```
 
-## 10. Equivalência entre Texto e Voz
+## 10. Modalidade Arquivo
 
-Texto e voz devem possuir **valor funcional equivalente**.
+A opção Arquivo deve permanecer disponível como forma validada de começar.
+
+Antes de qualquer upload, a Pessoa deve conseguir compreender, em nível proporcional:
+
+- para que um arquivo poderá ser usado;
+- que escolher Arquivo não abre nem envia documento automaticamente;
+- que upload exige ação posterior consciente;
+- que o conteúdo de um documento não autoriza leitura irrestrita;
+- que informações de terceiros exigem proteção;
+- que extrações futuras deverão permanecer revisáveis;
+- que formatos, limites e armazenamento não são definidos por este Master.
+
+```text
+ESCOLHER ARQUIVO
+→ DEFINE MODALIDADE
+→ NÃO ABRE FILE PICKER AUTOMATICAMENTE
+→ NÃO FAZ UPLOAD
+→ NÃO AUTORIZA EXTRAÇÃO
+```
+
+A continuidade downstream específica dessa modalidade ainda não está contratada na topologia corrente e não pode ser inventada por Design ou IA.
+
+## 11. Modalidade Perguntas Opcionais
+
+Perguntas opcionais permanecem uma modalidade validada de início.
+
+A experiência deve preservar que:
+
+- o fluxo guiado é opcional;
+- cada pergunta deve ter finalidade compreensível;
+- perguntas podem ser puladas;
+- resposta livre deve permanecer possível quando aplicável;
+- `não sei`, `prefiro não informar` ou equivalente devem existir quando materialmente necessários;
+- a profundidade não pode virar questionário excessivo;
+- o fluxo não pode funcionar como cadastro obrigatório disfarçado;
+- a Pessoa pode interromper.
+
+```text
+ESCOLHER PERGUNTAS OPCIONAIS
+→ DEFINE MODALIDADE
+→ NÃO OBRIGA RESPOSTA
+→ NÃO INICIA QUESTIONÁRIO COMPULSÓRIO
+```
+
+A continuidade downstream específica dessa modalidade ainda não está contratada na topologia corrente e não pode ser inferida como nova superfície.
+
+## 12. Paridade entre as quatro modalidades
+
+Texto, Voz, Arquivo e Perguntas Opcionais devem permanecer em **paridade funcional de escolha**.
+
+Paridade não significa que todas tenham os mesmos controles ou riscos. Significa que nenhuma deve ser apresentada como superior, mais comprometida ou mais capaz de gerar resultado.
 
 A solução não deve comunicar que:
 
 - voz é mais profunda;
 - texto é mais superficial;
-- falar é mais autêntico;
-- escrever é mais racional;
-- uma opção produz resultado melhor;
-- uma opção acelera evolução;
-- uma opção aumenta chances de recomendação.
+- arquivo é mais completo;
+- perguntas são mais precisas;
+- uma modalidade produz resultado melhor;
+- uma modalidade acelera evolução;
+- uma modalidade aumenta chances de recomendação;
+- combinar várias modalidades demonstra maior comprometimento.
 
 ```text
-TEXTO
-≠ MENOR QUALIDADE
-
-VOZ
-≠ MAIOR PROFUNDIDADE
-
-CANAL
+MODALIDADE
 ≠ MÉRITO
 ≠ COMPROMETIMENTO
+≠ QUALIDADE HUMANA
+≠ PROMESSA DE RESULTADO
 ```
 
-## 11. Perguntas guiadas
+## 13. Combinação de modalidades
 
-Perguntas progressivas não constituem modalidade principal independente em `PER-003`.
+`UXA-035` permite combinar modalidades sem exigir combinação.
 
-Elas podem ser apresentadas posteriormente quando:
+Portanto, Design pode admitir uma escolha composta quando isso permanecer compreensível e reversível.
 
-- a utilidade estiver explicada;
-- reduzirem incerteza material;
-- forem opcionais;
-- permitirem `não sei`, `prefiro não informar` ou equivalente;
-- a Pessoa puder pular;
-- não funcionarem como cadastro obrigatório disfarçado.
+Regras:
 
-Em `PER-003`, Design pode informar que ajuda guiada poderá existir, mas não deve exigir que a Pessoa escolha antecipadamente um “modo questionário” como condição de entrada.
+- nenhuma combinação vem pré-selecionada;
+- combinar não é obrigatório;
+- o efeito de cada modalidade permanece distinguível;
+- permissões e autorizações não são herdadas automaticamente entre modalidades;
+- remover uma modalidade deve ter consequência compreensível;
+- combinação envolvendo arquivo/perguntas não cria automaticamente nova rota downstream.
 
-## 12. Arquivos e documentos
+## 14. Troca de modalidade
 
-Arquivos permanecem capacidade auxiliar/condicional da Captura de Contexto.
+Antes de qualquer captura material, a Pessoa deve poder trocar de modalidade sem penalidade.
 
-`PER-003` não deve exigir upload nem apresentar arquivo como terceira modalidade principal sem nova autoridade.
+Depois que existir conteúdo, a troca passa a depender dos contratos da captura correspondente e deve preservar efeitos sobre:
 
-Quando arquivos forem utilizados posteriormente, deverão respeitar:
-
-- necessidade;
-- finalidade;
-- proporcionalidade;
-- proteção;
-- proveniência;
-- retenção limitada;
-- revisão;
-- possibilidade de remoção;
-- ausência de extração irrestrita.
-
-## 13. Combinação e troca de canais
-
-A arquitetura funcional admite continuidade entre voz e texto.
-
-Em `PER-003`, antes de existir conteúdo material, a Pessoa deve poder trocar livremente de escolha.
-
-Depois que conteúdo existir, a troca passa a pertencer ao contrato de `PER-004` e deve preservar efeitos sobre:
-
-- rascunho existente;
-- áudio existente;
-- transcrição existente;
+- rascunho;
+- áudio;
+- transcrição;
+- arquivo;
+- respostas;
 - persistência;
 - descarte;
 - continuidade.
 
 ```text
 ANTES DA CAPTURA
-→ TROCA DE TEXTO ↔ VOZ = LIVRE
+→ TROCA = LIVRE
 
 DEPOIS DA CAPTURA
-→ TROCA = GOVERNADA POR PER-004
-→ NÃO DECIDIDA POR PER-003
+→ EFEITOS DEVEM SER EXPLICADOS
+→ NÃO PODE HAVER DESCARTE SILENCIOSO
 ```
 
-## 14. Informações que devem ser exibidas
+## 15. Informações que devem ser exibidas
 
 A superfície deve tornar compreensível:
 
-- que existem dois canais principais correntes: texto e voz;
-- que ambos são opcionais e equivalentes;
-- o que acontece imediatamente após cada escolha;
-- que nenhuma gravação começa na escolha;
-- que nenhuma análise material começa na escolha;
-- que a Pessoa pode voltar;
-- que pode mudar de escolha antes de iniciar captura;
-- que compartilhar pouco é legítimo;
-- que ajuda guiada pode ser opcional posteriormente;
-- que arquivos não são exigência para iniciar.
+- que existem quatro formas validadas de começar;
+- que nenhuma vem pré-selecionada;
+- que todas têm valor funcional equivalente como escolha;
+- consequência imediata de cada modalidade;
+- que Voz não inicia microfone na escolha;
+- que Arquivo não inicia upload na escolha;
+- que Perguntas são opcionais;
+- que Texto não inicia análise;
+- que é possível voltar ou interromper;
+- que combinar modalidades é opcional;
+- que a continuidade downstream de arquivo/perguntas ainda não está integralmente contratada no GKR.
 
-## 15. Informações que não devem ser exigidas
+## 16. Informações que não devem ser exigidas
 
 `PER-003` não deve exigir:
 
-- descrição do Momento Atual;
+- descrição substantiva do Momento Atual;
 - objetivo;
 - prioridade;
 - domínio de evolução;
 - justificativa da escolha;
-- motivo para preferir texto ou voz;
+- motivo para preferir uma modalidade;
 - dado sensível;
-- upload;
-- permissão de microfone antes da escolha de voz;
+- upload antes da escolha consciente;
+- permissão de microfone antes da preparação de voz;
+- resposta a pergunta antes da escolha do fluxo guiado;
 - consentimento de processamento material.
 
-## 16. Captura e persistência
+## 17. Captura e persistência
 
-A única decisão funcional própria desta superfície é a **seleção explícita do canal principal**.
+A decisão funcional própria desta superfície é a **seleção explícita de uma ou mais modalidades validadas**.
 
-Se essa escolha precisar ser mantida tecnicamente para o handoff, a implementação futura deve tratá-la como estado funcional mínimo, sem inferir autorização adicional.
+Se essa escolha precisar ser mantida tecnicamente para continuidade, a implementação futura deve tratá-la como estado funcional mínimo, sem inferir autorização adicional.
 
 ```text
 MODALITY SELECTED
-→ HANDOFF CONTEXT
+→ HANDOFF / FLOW CONTEXT
 
 MODALITY SELECTED
 ≠ JOURNEY CONTENT
@@ -330,83 +383,77 @@ MODALITY SELECTED
 
 Este Master não decide onde ou por quanto tempo a escolha será persistida.
 
-## 17. Ações e controles
+## 18. Ações e controles
 
 A superfície deve permitir, conforme composição de Design:
 
 - escolher Texto;
 - escolher Voz;
+- escolher Arquivo;
+- escolher Perguntas Opcionais;
+- combinar modalidades quando a solução optar por suportar a capacidade já validada;
 - trocar escolha antes da captura;
 - voltar a `PER-002` quando compatível;
 - interromper;
 - não prosseguir naquele momento;
-- compreender mais sobre cada opção antes de confirmar.
+- compreender mais sobre cada modalidade antes de confirmar.
 
-Não deve existir ação genérica redundante que crie destino indeterminado quando as ações de Texto e Voz já são diretas e equivalentes.
+Não deve existir ação genérica redundante que crie destino indeterminado quando as ações de escolha já são explícitas.
 
-## 18. Feedback de seleção
+## 19. Feedback de seleção
 
 Quando a Pessoa escolher uma modalidade, a solução deve fornecer feedback perceptível e não ambíguo.
 
 O feedback deve informar:
 
 - qual modalidade foi escolhida;
-- qual é o próximo efeito;
-- que a captura ainda não começou, quando aplicável;
-- possibilidade de mudar antes do início material.
+- se existe combinação;
+- qual é o próximo efeito conhecido;
+- que captura material ainda não começou, quando aplicável;
+- possibilidade de mudar antes do início material;
+- quando a continuidade downstream ainda depende de definição posterior.
 
 A confirmação não precisa assumir uma tela adicional; pode ser resolvida dentro da mesma superfície.
 
-## 19. Falha e indisponibilidade
+## 20. Falha e indisponibilidade
 
 Se uma modalidade estiver tecnicamente indisponível no futuro, a experiência deve:
 
 - explicar indisponibilidade sem culpar a Pessoa;
-- preservar a outra modalidade quando legítima;
-- não declarar equivalência se uma opção não está operacional naquele momento;
+- preservar outras modalidades legítimas;
 - não ativar fallback silencioso;
+- não selecionar automaticamente outra opção;
 - permitir retorno ou interrupção;
 - não coletar dado adicional para compensar a falha sem necessidade.
 
-Exemplo:
+## 21. Privacidade e permissões
 
-```text
-VOICE TEMPORARILY UNAVAILABLE
-→ INFORM
-→ OFFER TEXT WHEN LEGITIMATE
-→ DO NOT AUTO-SWITCH
-```
+Escolher uma modalidade não concede automaticamente a permissão operacional correspondente.
 
-## 20. Privacidade e permissões
+Regras mínimas:
 
-Escolher Voz não autoriza microfone. Permissão de microfone deve ocorrer apenas quando necessária para iniciar a captura em `PER-004`, com indicação clara de finalidade.
+- Voz não autoriza microfone;
+- Arquivo não autoriza abrir seletor, upload ou extração;
+- Texto não autoriza análise do conteúdo futuro;
+- Perguntas não autorizam inferência automática além da finalidade apresentada;
+- nenhuma modalidade autoriza personalização futura por si só.
 
-Escolher Texto não autoriza análise do conteúdo futuro.
+`PER-003` não deve solicitar permissões materiais antes de a operação que realmente as exige.
 
-`PER-003` não deve solicitar permissões de:
-
-- microfone;
-- câmera;
-- arquivos;
-- localização;
-- contatos;
-- fontes externas;
-
-salvo se uma autoridade futura demonstrar necessidade específica — hipótese não criada por este documento.
-
-## 21. Linguagem e claims
+## 22. Linguagem e claims
 
 A linguagem deve:
 
-- tratar os canais com equivalência;
+- tratar as quatro modalidades em paridade;
 - evitar julgamento;
 - evitar promessa de melhor resultado;
-- evitar “recomendado para você” sem base legítima;
-- evitar “mais completo”, “mais profundo” ou “mais inteligente” para uma modalidade;
+- evitar `recomendado para você` sem base legítima;
+- evitar `mais completo`, `mais profundo`, `mais inteligente` ou equivalentes;
 - indicar consequências imediatas com clareza;
-- permitir começar com pouco.
+- permitir começar com pouco;
+- deixar claro que combinar modalidades é opcional.
 
-## 22. Acessibilidade
+## 23. Acessibilidade
 
 A solução deve preservar:
 
@@ -418,31 +465,37 @@ A solução deve preservar:
 - descrição clara das consequências;
 - alvo de interação adequado;
 - alternativa textual a qualquer explicação audiovisual;
-- nenhuma obrigação de voz para pessoas que não possam ou não queiram falar.
+- nenhuma obrigação de voz;
+- nenhuma obrigação de upload;
+- possibilidade de pular perguntas opcionais.
 
-## 23. Conteúdo sintético para Design
+## 24. Conteúdo sintético para Design
 
 Design e prototipação podem usar conteúdo sintético para demonstrar:
 
 - estado sem seleção;
 - Texto selecionado;
 - Voz selecionada;
+- Arquivo selecionado;
+- Perguntas Opcionais selecionadas;
+- combinação simulada;
 - troca de escolha;
-- indisponibilidade simulada de um canal;
+- indisponibilidade simulada;
 - retorno;
-- handoff simulado para `PER-004`.
+- handoff simulado para `PER-004` apenas nos caminhos correntemente contratados.
 
 Não podem ser simulados como reais:
 
 - permissão real de microfone;
 - gravação real;
 - transcrição real;
-- dado pessoal real;
+- upload real;
+- extração real;
+- resposta pessoal real;
 - processamento real;
-- recomendação real de modalidade;
 - preferência inferida real.
 
-## 24. Liberdade de Design
+## 25. Liberdade de Design
 
 A designer pode decidir:
 
@@ -460,52 +513,59 @@ A designer pode decidir:
 - responsividade;
 - linguagem visual.
 
-O GKR não impõe duas colunas, cards equivalentes, ícones específicos ou qualquer outra solução estética.
+O GKR não impõe quatro cards, colunas, ícones específicos ou qualquer outra solução estética.
 
-## 25. Uso por IA
+## 26. Uso por IA
 
 Quando IA for usada para explorar `PER-003`, o contexto mínimo deve incluir:
 
 1. `GKR-UX-PERSON-JOURNEY-READ-FIRST-001`;
 2. `GKR-UX-PERSON-JOURNEY-FLOW-001`;
 3. este Documento Mestre;
-4. Registry da Pessoa;
-5. Transition Registry;
-6. `UXA-069`;
-7. `PAS-001-CC-LIFECYCLE-001` quando necessário.
+4. `GKR-JOURNEY-SURFACE-REGISTRY-001` e o detalhamento da Pessoa;
+5. `GKR-JOURNEY-TRANSITION-REGISTRY-001`;
+6. `UXA-020`;
+7. `UXA-023`;
+8. `UXA-035`;
+9. `PAS-001-CC-LIFECYCLE-001` quando necessário;
+10. `UXA-069` apenas como contexto downstream de `PER-004`, não como autoridade que redefine `PER-003`.
 
 A IA não pode:
 
-- criar terceira modalidade principal;
-- transformar perguntas em questionário obrigatório;
+- remover uma das quatro modalidades validadas;
+- criar quinta modalidade principal;
+- transformar perguntas opcionais em questionário obrigatório;
 - ativar voz automaticamente;
-- exigir arquivo;
+- iniciar upload automaticamente;
 - inferir preferência;
 - inventar benefício de uma modalidade;
-- criar nova superfície;
+- inventar continuidade downstream para arquivo/perguntas;
+- criar novo `PER-ID`;
 - materializar `PER-004` como se já estivesse documentada por este Master.
 
-## 26. Critérios de aceite funcional
+## 27. Critérios de aceite funcional
 
 Uma futura solução visual de `PER-003` é aceitável quando:
 
-1. Texto e Voz aparecem como canais principais correntes;
+1. Texto, Voz, Arquivo e Perguntas Opcionais permanecem disponíveis;
 2. nenhuma modalidade vem selecionada por inferência;
-3. as duas opções têm valor funcional equivalente;
+3. as quatro opções têm paridade funcional de escolha;
 4. escolher Voz não ativa gravação;
-5. escolher Texto não inicia análise;
-6. perguntas guiadas permanecem opcionais e não são terceiro canal principal;
-7. arquivos não são exigidos nem promovidos a modalidade principal;
-8. a Pessoa consegue voltar ou interromper;
-9. é possível trocar a escolha antes da captura;
-10. o handoff para `PER-004` é compreensível;
-11. nenhuma autorização material é inferida;
-12. nenhuma preferência é inferida sem autoridade;
-13. indisponibilidade de canal possui fallback explícito e não coercitivo;
-14. acessibilidade estrutural é preservada;
-15. a solução não cria novo `PER-ID`.
+5. escolher Arquivo não inicia upload;
+6. escolher Texto não inicia análise;
+7. Perguntas permanecem opcionais e puláveis;
+8. combinação pode existir, mas nunca é obrigatória;
+9. a Pessoa consegue voltar ou interromper;
+10. é possível trocar a escolha antes da captura;
+11. o handoff `TRN-003 → PER-004` é preservado como continuidade parcial para texto/voz;
+12. a lacuna downstream de arquivo/perguntas é preservada, não inventada;
+13. nenhuma autorização material é inferida;
+14. nenhuma preferência é inferida sem autoridade;
+15. indisponibilidade possui fallback explícito e não coercitivo;
+16. acessibilidade estrutural é preservada;
+17. a solução não cria novo `PER-ID`.
 
-## 27. Limites
+## 28. Limites
 
 Este Documento Mestre não:
 
@@ -520,32 +580,41 @@ Este Documento Mestre não:
 - implementa transcrição;
 - implementa upload;
 - define formatos de arquivo;
+- implementa fluxo de perguntas;
+- fecha a continuidade downstream de arquivo/perguntas;
 - define persistência da escolha;
 - altera `TRN-002` ou `TRN-003`;
-- cria `PER-004`;
+- cria nova superfície;
 - autoriza Product Engineering.
 
-## 28. Estado corrente
+## 29. Estado corrente
 
 ```text
 PER-003 MASTER
 → CURRENT DESIGN DEFINITION
 
-PRIMARY MODALITIES
+VALIDATED MODALITY CHOICES
 → TEXT
 → VOICE
+→ FILE
+→ OPTIONAL GUIDED QUESTIONS
 
-GUIDED QUESTIONS
-→ OPTIONAL SUPPORT CAPABILITY
-
-FILES
-→ AUXILIARY / CONDITIONAL CAPABILITY
+COMBINATION
+→ ALLOWED
+→ NOT REQUIRED
 
 TRN-002
 → LOCALLY VALIDATED / UNCHANGED
 
 TRN-003
 → PARTIAL / UNCHANGED
+
+TEXT / VOICE CONTINUITY
+→ PER-004 — EXPRESSÃO POR TEXTO OU VOZ
+
+FILE / OPTIONAL QUESTIONS CONTINUITY
+→ NOT FULLY CONTRACTED
+→ MUST NOT BE INVENTED
 
 NEXT DOCUMENT IN CONSTRUCTION SEQUENCE
 → PER-004 — EXPRESSÃO POR TEXTO OU VOZ
