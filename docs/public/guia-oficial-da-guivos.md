@@ -2,9 +2,9 @@
 id: GOG-001
 title: Guia Oficial da Guivos
 status: public-canon
-version: 5.3.0
+version: 5.3.1
 owner: Guivos
-last_updated: 2026-08-27
+last_updated: 2026-09-25
 classification: Documento Institucional Público
 source: Derived from GKR Canon
 update_cycle: Continuous
@@ -558,11 +558,11 @@ O Public Canon não deve ser lido como promessa de:
 
 ---
 
-# 19. O que está validado documentalmente hoje
+# 19. O que o GKR sustenta hoje
 
 O GKR possui arquitetura funcional detalhada da experiência até a **UXA-101**, além de autoridades posteriores não numeradas em Fundação, Marca, Produtos, Research, Organizações e Coletivos, Go-to-Market e outras frentes.
 
-O inventário visual e suas contagens agregadas estão sendo reconciliados na auditoria integral do corpus. Por isso, uma contagem física de SVGs não deve ser apresentada como equivalente a quantidade de wireframes vigentes ou validados.
+Contagens físicas de SVGs ou outros artefatos visuais não equivalem, por si só, à quantidade de wireframes vigentes ou validados. A autoridade deve ser determinada pelos documentos correntes do GKR, e não pela contagem bruta de arquivos.
 
 ```text
 ARTEFATO FÍSICO
