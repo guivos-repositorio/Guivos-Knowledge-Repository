@@ -2,7 +2,7 @@
 id: GKR-UX-PERSON-JOURNEY-FLOW-001
 title: Jornada da Pessoa — Mapa Completo de Superfícies para Design
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 normative: false
@@ -69,18 +69,22 @@ Estado corrente das transições:
 Regra corrente de `PER-003`:
 
 ```text
-PRIMARY EXPRESSION CHANNELS
+VALIDATED MODALITY CHOICES
 → TEXT
 → VOICE
+→ FILE
+→ OPTIONAL GUIDED QUESTIONS
 
-GUIDED QUESTIONS
-→ OPTIONAL SUPPORT CAPABILITY
+COMBINATION
+→ ALLOWED
+→ NOT REQUIRED
 
-FILES / DOCUMENTS
-→ AUXILIARY / CONDITIONAL CAPABILITY
+TEXT / VOICE
+→ TRN-003 → PER-004
 
-DESIGN / AI
-→ MUST NOT CREATE A THIRD PRIMARY MODALITY BY INFERENCE
+FILE / OPTIONAL GUIDED QUESTIONS
+→ DOWNSTREAM CONTINUITY NOT FULLY CONTRACTED
+→ MUST NOT BE INVENTED
 ```
 
 ## 3. Continuidade recorrente a partir de Hoje
