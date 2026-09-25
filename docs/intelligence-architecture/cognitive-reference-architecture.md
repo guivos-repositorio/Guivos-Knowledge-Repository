@@ -2,9 +2,9 @@
 id: GIA-COG-001
 title: Cognitive Reference Architecture
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Guivos Intelligence Architecture
-last_updated: 2026-09-10
+last_updated: 2026-09-25
 normative: true
 maturity: conceptual_reference_architecture_active
 related:
@@ -805,29 +805,11 @@ PROVIDERS / MODELS / STACK
 → NOT SELECTED BY THIS DOCUMENT
 ```
 
-## 39. Promoção canônica
+## 39. Estado canônico
 
-O ciclo governado do Documento Mestre foi concluído:
+`GIA-COG-001` é a arquitetura cognitiva de referência vigente, ativa e normativa da Guivos Intelligence Architecture, em nível conceitual/lógico.
 
-```text
-GIA-COG-001-REV-01
-→ REVISION REQUIRED
-
-GIA-COG-001-REM-01
-→ 6 / 6 FINDINGS REMEDIATED
-
-GIA-COG-001-REV-02
-→ PASS
-→ 0 OPEN MATERIAL FINDINGS
-
-GIA-COG-001-PROM-01
-→ CANONICAL PROMOTION ELIGIBILITY = PASS
-
-GIA-COG-001-PROM-02
-→ CANONICAL PROMOTION EXECUTED
-```
-
-A promoção estabelece esta arquitetura como referência cognitiva vigente. Ela não libera por inferência qualquer documento `GIA-COG-002..008`, arquitetura física, modelo físico de dados, ontologia física, fornecedor, modelo, stack, dado real, Product Engineering, operação ou produção.
+Esse estado não libera por inferência qualquer documento `GIA-COG-002..008`, arquitetura física, modelo físico de dados, ontologia física, fornecedor, modelo, stack, dado real, Product Engineering, operação ou produção.
 
 ```text
 ACTIVE / NORMATIVE REFERENCE ARCHITECTURE
