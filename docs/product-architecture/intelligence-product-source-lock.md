@@ -2,9 +2,9 @@
 id: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 title: Source Lock do Produto — Guivos Intelligence
 status: active
-version: 1.0.2
+version: 1.0.3
 owner: Product Architecture
-last_updated: 2026-09-21
+last_updated: 2026-09-25
 parent: GPA-006
 depends_on:
   - GPA-006
@@ -25,7 +25,7 @@ normative: true
 
 ## 1. Finalidade
 
-Este documento consolida o **Source Lock do Produto Guivos Intelligence** após a promoção de `GPA-006` para `2.0.1` e reconcilia seu estado temporal com as autoridades posteriores já existentes da Home Pública.
+Este documento é o **Source Lock vigente do Produto Guivos Intelligence** e governa a base canônica de produto consumida pela Home Pública.
 
 Seu papel é:
 
@@ -77,10 +77,10 @@ CURRENT HOME STATE
 → PRODUCT ENGINEERING = NOT RELEASED
 
 AUTORIDADE SUPERIOR DE PRODUTO
-GPA-006 v2.0.1
+GPA-006 v2.0.2
 
 INTELLIGENCE ARCHITECTURE
-GIA-000 v1.7.0
+GIA-000 v1.7.1
 
 KNOWLEDGE MODEL
 GAI-001 v1.1.0
@@ -102,7 +102,7 @@ O objetivo do lock é preservar uma base única, coerente e auditável de autori
 
 ```mermaid
 flowchart TD
-    A[GPA-006 v2.0.1\nProduto convergido]
+    A[GPA-006 v2.0.2\nProduto convergido]
     B[Source Lock do Produto\neste documento]
     C[Arquitetura conceitual da Home Intelligence]
     D[Documento Mestre da Home]
@@ -132,7 +132,7 @@ Governa:
 
 ### Nível 1 — autoridade superior do produto
 
-`GPA-006 v2.0.1 — Guivos Intelligence`
+`GPA-006 v2.0.2 — Guivos Intelligence`
 
 Governa:
 
@@ -167,7 +167,7 @@ As fontes abaixo **não devem ser despejadas automaticamente na construção da 
 
 ### 5.1 Intelligence Architecture
 
-`GIA-000 v1.7.0`
+`GIA-000 v1.7.1`
 
 Uso permitido:
 
@@ -221,7 +221,7 @@ Não adicionar automaticamente ao contexto inicial da Home:
 
 - conversas e rascunhos não promovidos ao GKR;
 - versões anteriores de `GPA-006`;
-- checkpoints intermediários já consolidados por `GPA-006 v2.0.1`;
+- checkpoints intermediários já consolidados por `GPA-006 v2.0.2`;
 - documentos de uma Home específica;
 - Source Locks das outras Homes;
 - wireframes ou SVGs internos do Journey;
@@ -238,7 +238,7 @@ Quando uma fonte excluída for necessária para responder a uma dúvida concreta
 ```mermaid
 flowchart TD
     L0[0 — Source Lock do Produto]
-    L1[1 — GPA-006 v2.0.1]
+    L1[1 — GPA-006 v2.0.2]
     L2A[2 — GAI-002 Manifesto]
     L2B[2 — GAI-001 Knowledge Model]
     L3[3 — GIA-000 / Graph Reference\nsomente para fronteiras técnicas]
@@ -256,7 +256,7 @@ flowchart TD
 
 Regra de precedência:
 
-> **Em qualquer conflito sobre identidade, valor, autoridade ou limites do Guivos Intelligence, prevalece `GPA-006 v2.0.1`, limitado pelo presente Source Lock quanto ao uso na Home Pública.**
+> **Em qualquer conflito sobre identidade, valor, autoridade ou limites do Guivos Intelligence, prevalece `GPA-006 v2.0.2`, limitado pelo presente Source Lock quanto ao uso na Home Pública.**
 
 Arquiteturas e tecnologias não podem reescrever autoridade de produto.
 
@@ -834,11 +834,11 @@ Uma fonte consultada pontualmente não se torna automaticamente parte permanente
 
 ## 31. Checklist de integridade da Home
 
-Este checklist nasceu no estágio pré-Home e permanece apenas como verificação de integridade da autoridade de produto. No estado corrente, **não antecede, não bloqueia e não reabre** o Documento Mestre, o Home Source Lock, o Design Handoff ou o release externo de Design já existentes.
+Este checklist funciona apenas como verificação de integridade da autoridade de produto. No estado corrente, **não antecede, não bloqueia e não reabre** o Documento Mestre, o Home Source Lock, o Design Handoff ou o release externo de Design já existentes.
 
 Ao reutilizar este Source Lock no contexto vigente da Home Intelligence, confirmar:
 
-- `GPA-006 v2.0.1` permanece vigente;
+- `GPA-006 v2.0.2` permanece vigente;
 - este Source Lock permanece vigente;
 - nenhuma autoridade posterior alterou as duas frentes superiores;
 - nenhuma autoridade posterior alterou os contratos de privacidade, relevância ou comercialização;
@@ -904,7 +904,7 @@ flowchart LR
 Estado corrente:
 
 ```text
-GPA-006 v2.0.1
+GPA-006 v2.0.2
 → AUTORIDADE SUPERIOR DE PRODUTO
 
 HOME MASTER
