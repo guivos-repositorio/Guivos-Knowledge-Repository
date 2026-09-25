@@ -2,9 +2,9 @@
 id: GPA-004-FUNCTIONAL-PORTFOLIO-001
 title: Guivos Business — Portfólio Funcional v1
 status: consolidated
-version: 1.1.1
+version: 1.1.2
 owner: Guivos
-last_updated: 2026-09-20
+last_updated: 2026-09-25
 depends_on:
   - GPA-004
 related:
@@ -180,7 +180,7 @@ EMPRESA CRIA/CONTROLA A JOURNEY
 
 Pontos Guivos são benefício transacional do ecossistema e podem ser concedidos por Programas de Incentivo autorizados.
 
-A decisão histórica `X pontos = Y reais` permanece recuperável em `GKR-BUSINESS-CONTINUITY-001`, mas esse checkpoint é não normativo. No corpus vigente, nenhuma autoridade econômica temática define ou aprova uma taxa de conversão Pontos ↔ BRL. Assim, **o portfólio não considera essa equivalência uma regra econômica canônica vigente ou implementável**; eventual definição requer autoridade econômica específica.
+No corpus vigente, nenhuma autoridade econômica temática define ou aprova uma taxa de conversão Pontos ↔ BRL. Portanto, **o portfólio não considera essa equivalência uma regra econômica canônica vigente ou implementável**; eventual definição requer autoridade econômica específica.
 
 ### 6.2 Saldo da pessoa
 
