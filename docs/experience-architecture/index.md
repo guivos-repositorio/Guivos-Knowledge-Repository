@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.24.4
+version: 1.24.5
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 related:
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -41,12 +41,9 @@ Esta seção reúne somente as autoridades correntes necessárias para compreend
 CURRENT MAIN
 → PRIMARY SOURCE OF TRUTH
 
-HISTORICAL / CANDIDATE / SNAPSHOT / CHECKPOINT / CLOSED AUDIT
-→ NOT DESIGN INPUT
-→ NOT AI INPUT
-
-GIT
-→ PRESERVES HISTORY
+CURRENT AUTHORITIES
+→ DESIGN INPUT
+→ AI INPUT WHEN APPLICABLE
 ```
 
 ## 2. Homes públicas — conjunto corrente
@@ -64,7 +61,7 @@ Autoridade condicional de IA:
 
 - [Source Lock e Contrato de Consumo](public-homes-generative-source-lock-and-prompt-template.md) — somente quando a designer optar por usar IA ou ferramenta generativa.
 
-Roteadores `00 — Leia Primeiro` — não normativos:
+Roteadores **Leia Primeiro por Home** — não normativos:
 
 - [Pessoa](read-first/public-home-person-read-first.md);
 - [Organizações e Coletivos](read-first/public-home-organizations-collectives-read-first.md);
@@ -220,9 +217,6 @@ AI
 
 SNAPSHOT REQUIREMENT
 → NONE
-
-HISTORICAL RECONSTRUCTION
-→ NOT REQUIRED
 
 O/C HIGH-FIDELITY DESIGN
 → AUTHORIZATION GRANTED

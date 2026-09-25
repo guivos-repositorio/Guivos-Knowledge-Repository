@@ -2,7 +2,7 @@
 id: GEA-000
 title: Guivos Enterprise Architecture
 status: consolidated
-version: 1.12.2
+version: 1.12.3
 owner: Guivos
 last_updated: 2026-09-25
 related_adrs:
@@ -14,8 +14,6 @@ related_validations:
   - AV-001
 related:
   - GKR-STATE-001
-  - GKR-AUD-002
-  - GKR-REMEDIATION-002
   - BA-STR-002
   - BA-STR-002-CODR-001
   - COD-018
@@ -108,17 +106,17 @@ graph TD
 | Foundation Architecture | Quem é a Guivos e por que ela existe? | congelada em `A2-B3` |
 | Guivos Knowledge Architecture | Como a Guivos descobre, valida, consolida e evolui conhecimento institucional? | reconhecida por `ADR-006`; documentação interna pendente |
 | Ecosystem Architecture | Como ocorre a transformação dos participantes? | em consolidação por meio do GEB |
-| Product Architecture | Quais produtos materializam capacidades e propostas de valor? | estrutura superior consolidada; Journey publicado; autoridades dos Produtos Especializados vigentes; Homes especializadas reconciliadas documentalmente pré-materialização |
+| Product Architecture | Quais produtos materializam capacidades e propostas de valor? | estrutura superior consolidada; Journey vigente; autoridades dos Produtos Especializados correntes; Homes especializadas prontas para Design externo, com implementação governada separadamente |
 | Business Architecture | Como a Guivos organiza transformação, Resultados, capacidades e execução do negócio? | fundamentos e modelo de transformação validados; `BA-STR-002` permanece `draft`; nenhum Outcome canônico aprovado |
 | Guivos Intelligence Architecture | Como conhecimento, dados, contexto e conexões se tornam inteligência aplicada? | `GPA-006 v2.0.2` vigente; `GIA-000 v1.7.1` vigente; `GIA-COG-001 v0.1.2` é a arquitetura cognitiva de referência ativa/normativa em nível conceitual/de referência; Home Master e Source Lock estão vigentes; Design externo da Home está liberado pelo release comum; implementação, produção e Product Engineering permanecem não liberados |
 | Guivos Economic Model | Como a Guivos sustenta economicamente o ecossistema sem contrariar seu propósito? | ativo; baseline comercial corrente definida; validação empírica e especializada pendente |
 | Technology and Engineering Architecture | Como as capacidades são implementadas tecnicamente? | planejada e pausada antes de `W0-01` |
-| Governance Architecture | Como decisões, riscos e mudanças são controlados? | ativa por métodos, auditorias, decisões e validação permanente do GKR |
+| Governance Architecture | Como decisões, riscos e mudanças são controlados? | ativa por métodos, autoridades, decisões e validação permanente do GKR |
 
 ## Relação entre GEA, GKR, GKA e GEB
 
 - **GEA** é o conjunto integrado das arquiteturas da Guivos.
-- **GKR** preserva a representação canônica, decisões, evidências e histórico.
+- **GKR** preserva a representação canônica, decisões e evidências vigentes.
 - **GKA** governa como o conhecimento é descoberto, validado, promovido e evoluído.
 - **GEB** é o blueprint principal da Ecosystem Architecture.
 - **GKR-STATE-001** declara o estado transversal vigente sem redefinir as arquiteturas.
