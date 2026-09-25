@@ -4839,7 +4839,7 @@
 <div class="highlight"><pre><span></span><code>SOURCE OF TRUTH
 → CURRENT CANONICAL MAIN
 
-CURRENT CHECKPOINT
+CURRENT SOURCE
 → CURRENT MAIN
 → RESOLVED AT CONSUMPTION TIME
 
@@ -4849,7 +4849,7 @@ DESIGN PRODUCTION READINESS
 DESIGN PRODUCTION RELEASE
 → GRANTED
 
-SNAPSHOTS / CANDIDATES / CHECKPOINTS HISTÓRICOS
+NON-CURRENT / SUPERSEDED INPUT
 → NOT OPERATIONAL INPUT
 → NOT REQUIRED FOR DESIGN OR PROTOTYPING
 
@@ -4927,8 +4927,8 @@ VALIDAÇÃO HUMANA
 <p>A execução fica liberada quando coexistirem:</p>
 <ol>
 <li>conjunto canônico corrente identificado pelo Manifesto;</li>
-<li>Master e autoridades específicas da Home no mesmo checkpoint do <code>main</code>;</li>
-<li>ausência de finding material aberto nas autoridades correntes;</li>
+<li>Master e autoridades específicas da Home no mesmo conjunto canônico corrente;</li>
+<li>ausência de contradição material ou conflito de autoridade não resolvido nas fontes correntes;</li>
 <li><code>DESIGN PRODUCTION RELEASE = GRANTED</code>.</li>
 </ol>
 <p>Não é necessário materializar snapshot para iniciar Design.</p>
@@ -4983,7 +4983,7 @@ VALIDAÇÃO HUMANA
 <p>Intelligence possui cadeia específica já convergida e deve ser materializado sem ser confundido com tecnologia, dashboard ou mecanismo de decisão.</p>
 <p>Ordem operacional corrente, subordinada às versões exatas fixadas pelo Manifesto vigente:</p>
 <div class="highlight"><pre><span></span><code>N0 — MANIFESTO + SOURCE LOCK CORRENTES
-     → fixam checkpoint, fontes autorizadas e estado da exploração
+     → fixam fontes autorizadas e estado da exploração
 
 N1 — GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.16
      → congela significado e invariantes da Home
@@ -5000,7 +5000,7 @@ N4 — GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.3
      + GPA-006 v2.0.2
      → governam significado e limites superiores do produto
 </code></pre></div>
-<p>Documentos históricos, candidates, snapshots e GENINPUTs superados não entram no input operacional.</p>
+<p>Documentos <code>superseded</code> ou fora do conjunto corrente não entram no input operacional.</p>
 <hr />
 <h2 id="5-ordem-geral-de-autoridade">5. Ordem geral de autoridade<a class="headerlink" href="#5-ordem-geral-de-autoridade" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>NÍVEL 0 — HANDOFF CANÔNICO COMUM
@@ -5018,9 +5018,8 @@ NÍVEL 2 — DOCUMENTO MESTRE E CONTRATOS COMPLEMENTARES VIGENTES
 NÍVEL 3 — AUTORIDADES SUPERIORES DE PRODUTO
 → resolvem dúvidas sobre identidade, autoridade e limites
 
-FORA DA CADEIA OPERACIONAL — HISTÓRICO / PROVENIÊNCIA
+FORA DA CADEIA OPERACIONAL — FONTES NÃO CORRENTES
 → não carregar em Design ou IA
-→ consultar somente para auditoria do repositório
 </code></pre></div>
 <p>Se houver conflito sobre significado da Home, prevalecem as autoridades específicas vigentes da Home conforme seu Source Lock.</p>
 <hr />
@@ -5033,7 +5032,7 @@ FORA DA CADEIA OPERACIONAL — HISTÓRICO / PROVENIÊNCIA
 <li>Handoff utilizado;</li>
 <li>Documento Mestre e contratos aplicáveis;</li>
 <li>versões;</li>
-<li>commit/checkpoint do GKR;</li>
+<li>commit de referência do GKR;</li>
 <li>decisões adicionais autorizadas para a execução;</li>
 <li>questões abertas.</li>
 </ul>
@@ -5259,7 +5258,7 @@ APROVADO PARA HANDOFF DE ENGENHARIA
 <li>Home;</li>
 <li>problema explorado;</li>
 <li>documentos e versões usados;</li>
-<li>checkpoint do GKR;</li>
+<li>commit de referência do GKR;</li>
 <li>ferramenta;</li>
 <li>decisões preservadas;</li>
 <li>hipóteses introduzidas;</li>
@@ -5270,7 +5269,7 @@ APROVADO PARA HANDOFF DE ENGENHARIA
 <h2 id="17-criterios-de-aceite">17. Critérios de aceite<a class="headerlink" href="#17-criterios-de-aceite" title="Permanent link">&para;</a></h2>
 <p>O processo está alinhado quando:</p>
 <ol>
-<li>Design inicia sem reconstruir o histórico completo do GKR;</li>
+<li>Design inicia diretamente pelas autoridades correntes do GKR;</li>
 <li>cada Home possui suas fontes obrigatórias identificadas;</li>
 <li>a ferramenta recebe fontes governadas, não corpus indiscriminado;</li>
 <li>decisão canônica e hipótese de Design permanecem distintas;</li>
@@ -5332,7 +5331,7 @@ DESIGN PRODUCTION RELEASE
 SNAPSHOT REQUIREMENT
 → NONE
 
-HISTORICAL INPUT
+NON-CURRENT INPUT
 → EXCLUDED
 
 FINAL DESIGN ACCEPTANCE
