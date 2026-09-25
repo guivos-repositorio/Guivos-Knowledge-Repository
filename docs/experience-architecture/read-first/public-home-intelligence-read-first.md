@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-READ-FIRST-001
 title: 00 — Leia Primeiro — Home Pública — Guivos Intelligence
 status: active
-version: 1.0.7
+version: 1.0.8
 owner: Experience Architecture
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 normative: false
 maturity: current_design_routing
 depends_on:
@@ -47,7 +47,7 @@ AI
 ### Fontes específicas desta Home
 
 1. `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.16` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
-2. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.15` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+2. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.16` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
 3. `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.13` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
 4. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.5` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 5. `GKR-UX-HOMES-OUTCOME-001 v1.0.0` — `docs/experience-architecture/public-homes-value-outcome-principle.md`;
