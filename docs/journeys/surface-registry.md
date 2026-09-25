@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.36.16
+version: 0.36.17
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 related:
   - UXA-089
   - UXA-090
@@ -53,11 +53,11 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-`GKR-UX-D5-C1-001` governa o contrato funcional corrente de `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-011 — Meus Próximos Passos` e `GKR-SURF-PER-012 — Minha Evolução`. A sequência histórica de materialização visual permanece no Git; `GKR-UX-D5-C4B-001` registra a validação integrada corrente de `TRN-008..013` no limite documental.
+`GKR-UX-D5-C1-001` governa o contrato funcional corrente de `GKR-SURF-PER-010 — Meus Objetivos`, `GKR-SURF-PER-011 — Meus Próximos Passos` e `GKR-SURF-PER-012 — Minha Evolução`. `GKR-UX-D5-C4B-001` registra a validação integrada corrente de `TRN-008..013` no limite documental.
 
-`UXA-015..018` permanecem históricos `superseded`; referências administrativas ou especializadas não podem ser promovidas por inferência a wireframe principal autenticado final.
+`UXA-015..018` permanecem `superseded`; referências administrativas ou especializadas não podem ser promovidas por inferência a wireframe principal autenticado final.
 
-Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` está definido em sua maturidade própria de Arquitetura da Informação, enquanto `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.3` define o mapa lógico-documental canônico de superfícies. Em atos governados posteriores, `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.4`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.2` e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2` consolidam estados, fluxos e navegação documental. A autorização, entrega e validação low-fidelity O/C posteriores (`GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001`, `...DELIVERY-001`, `...VALIDATION-001`) adicionam evidência visual funcional sem promover a maturidade individual dos `GKR-SURF-*`.
+Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` define a Arquitetura da Informação em sua maturidade própria; `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 v1.1.3` define o mapa lógico-documental canônico de superfícies; `GKR-UX-ORGCOL-AUTH-STATE-MAP-001 v1.1.4`, `GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001 v1.0.2` e `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2` governam estados, fluxos e navegação documental. O pacote low-fidelity O/C vigente (`GKR-UX-ORGCOL-AUTH-WIREFRAME-AUTH-001`, `...DELIVERY-001`, `...VALIDATION-001`) adiciona evidência visual funcional sem promover a maturidade individual dos `GKR-SURF-*`.
 
 ## 2. Convenções
 
@@ -69,7 +69,7 @@ Para Organização e Coletivo, `GKR-UX-ORGCOL-AUTH-IA-001` está definido em sua
 - `materializado`: referência existente sem implicar validação;
 - `validado`: superfície examinada funcionalmente no escopo explicitado;
 - `local`: validação limitada ao pacote de origem;
-- `histórico/superseded`: artefato preservado por rastreabilidade sem autoridade vigente para o estado que pretendia definir.
+- `superseded`: artefato sem autoridade vigente para o estado que pretendia definir.
 
 ## 2.1 Separação de contextos
 
@@ -84,7 +84,7 @@ BUSINESS
 
 Pessoa, Coletivo e Organização são contextos de participante. **Guivos Business é produto especializado B2B**, com experiência própria, e não deve ser confundido com Organização.
 
-Os identificadores `GKR-SURF-COM-*` permanecem estáveis por rastreabilidade histórica, mas o prefixo `COM` **não define um contexto "Comercial" concorrente com Business**. No corpus vigente, esses cinco IDs pertencem ao recorte de **Guivos Ads / Opportunity Boost**.
+Os identificadores `GKR-SURF-COM-*` permanecem estáveis como IDs legados, mas o prefixo `COM` **não define um contexto "Comercial" concorrente com Business**. No corpus vigente, esses cinco IDs pertencem ao recorte de **Guivos Ads / Opportunity Boost**.
 
 Os identificadores `GKR-SURF-BND-*` representam **fronteiras documentais**, não participantes nem produtos.
 
