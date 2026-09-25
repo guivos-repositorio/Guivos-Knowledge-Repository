@@ -788,7 +788,7 @@ A existência do namespace não autoriza criação automática de documentos.
 
 ```text
 GIA-COG-001
-→ ACTIVE / NORMATIVE v0.1.1
+→ ACTIVE / NORMATIVE v0.1.2
 → CURRENT COGNITIVE REFERENCE ARCHITECTURE
 → CONCEPTUAL / REFERENCE LEVEL
 
@@ -818,4 +818,4 @@ ACTIVE / NORMATIVE REFERENCE ARCHITECTURE
 
 ## 40. Estado
 
-**GIA-COG-001 v0.1.1 é a Cognitive Reference Architecture vigente, ativa e normativa da Guivos Intelligence Architecture. Permanece conceitual/de referência; não implementada, não operacional e não produtiva.**
+**GIA-COG-001 v0.1.2 é a Cognitive Reference Architecture vigente, ativa e normativa da Guivos Intelligence Architecture. Permanece conceitual/de referência; não implementada, não operacional e não produtiva.**
