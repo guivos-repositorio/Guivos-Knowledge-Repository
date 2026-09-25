@@ -2,9 +2,9 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.44
+version: 7.0.45
 owner: Experience Architecture
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 normative: true
 maturity: current_canonical_design_source_manifest
 depends_on:
@@ -79,16 +79,16 @@ O uso manual não exige Source Lock ou registro de execução de IA.
 
 ### 3.3 Mall
 
-- `GKR-UX-HOME-MALL-READ-FIRST-001 v1.0.2` — `docs/experience-architecture/read-first/public-home-mall-read-first.md`;
+- `GKR-UX-HOME-MALL-READ-FIRST-001 v1.0.3` — `docs/experience-architecture/read-first/public-home-mall-read-first.md`;
 
-- `GKR-UX-HOME-MALL-MASTER-001 v1.1.3` — `docs/experience-architecture/public-home-mall-master-document.md`;
+- `GKR-UX-HOME-MALL-MASTER-001 v1.1.4` — `docs/experience-architecture/public-home-mall-master-document.md`;
 - `GKR-UX-HOME-MALL-MEDIA-SUPPLY-001 v1.0.1` — `docs/experience-architecture/public-home-mall-media-editorial-supply-reconciliation.md`.
 
 ### 3.4 Travel
 
-- `GKR-UX-HOME-TRAVEL-READ-FIRST-001 v1.0.2` — `docs/experience-architecture/read-first/public-home-travel-read-first.md`;
+- `GKR-UX-HOME-TRAVEL-READ-FIRST-001 v1.0.3` — `docs/experience-architecture/read-first/public-home-travel-read-first.md`;
 
-- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.5` — `docs/experience-architecture/public-home-travel-master-document.md`;
+- `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.6` — `docs/experience-architecture/public-home-travel-master-document.md`;
 - `GKR-UX-HOME-TRAVEL-MEDIA-SUPPLY-001 v1.0.1` — `docs/experience-architecture/public-home-travel-media-editorial-supply-reconciliation.md`.
 
 ### 3.5 Media
@@ -118,10 +118,10 @@ O uso manual não exige Source Lock ou registro de execução de IA.
 
 ### 3.8 Intelligence
 
-- `GKR-UX-HOME-INTELLIGENCE-READ-FIRST-001 v1.0.7` — `docs/experience-architecture/read-first/public-home-intelligence-read-first.md`;
+- `GKR-UX-HOME-INTELLIGENCE-READ-FIRST-001 v1.0.8` — `docs/experience-architecture/read-first/public-home-intelligence-read-first.md`;
 
 - `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.16` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
-- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.15` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
+- `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.16` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
 - `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.13` — `docs/experience-architecture/public-home-intelligence-master-document.md`;
 - `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.5` — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
 - `GKR-UX-HOMES-OUTCOME-001 v1.0.0` — `docs/experience-architecture/public-homes-value-outcome-principle.md`;
