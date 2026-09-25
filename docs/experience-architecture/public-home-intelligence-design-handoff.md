@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
 title: Handoff Canônico para Design — Home Pública — Guivos Intelligence
 status: active
-version: 1.1.16
+version: 1.1.17
 owner: Experience Architecture
-last_updated: 2026-09-21
+last_updated: 2026-09-25
 parent: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
@@ -62,10 +62,10 @@ SOURCE OF TRUTH
 → CURRENT MAIN
 
 HOME SOURCE LOCK
-→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.15
+→ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.16
 
 HOME MASTER
-→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.12
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.14
 
 DESIGN PRODUCTION RELEASE
 → GRANTED / EXTERNAL DESIGNER
@@ -84,23 +84,23 @@ Para Design, aplicar a seguinte ordem:
 
 ```text
 NÍVEL 0
-GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.15
+GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.16
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.12
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.14
 → governa narrativa pública, copy e fronteiras da Home
 
 NÍVEL 2
-GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.5
+GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.6
 → governa função, ordem e separação dos 11 movimentos
 
 NÍVEL 3
-GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.2
+GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.3
 → governa a tradução pública permitida do produto
 
 NÍVEL 4
-GPA-006 v2.0.1
+GPA-006 v2.0.2
 → governa identidade, unidade de valor, responsabilidades e autoridade do produto
 
 TRANSVERSAL
