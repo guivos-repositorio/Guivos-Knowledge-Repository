@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Corrente das Frentes UXA-047 a UXA-101
 status: active
-version: 3.54.51
+version: 3.54.52
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-09-25
 depends_on:
