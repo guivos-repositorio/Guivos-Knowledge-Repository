@@ -27682,6 +27682,7 @@ CONTROLE
 → CONTRATOS FUNCIONAIS A FECHAR
 </code></pre></div>
 <p>Cada controle material deve governar consequência, confirmação proporcional ao risco, processamento, resultado, recuperação e estado atualizado do vínculo.</p>
+<p>A adjudicação desta frente concluiu que consulta do vínculo, preferências de atualização, pausa/retomada, saída e contestação permanecem controles/estados de <code>PER-108</code>, sem novo <code>PER-ID</code> ou <code>TRN-ID</code>. Proteção/denúncia pode ter acesso contextual a partir de <code>PER-108</code>, mas triagem, evidências, investigação, acompanhamento, resolução ou recurso pertencem a processo especializado ainda não adjudicado e não podem ser absorvidos por inferência.</p>
 <h3 id="experience-architecture-person-journey-functional-completeness-authority-66-conta-controles-da-pessoa">6.6 Conta / controles da Pessoa<a class="headerlink" href="#experience-architecture-person-journey-functional-completeness-authority-66-conta-controles-da-pessoa" title="Permanent link">&para;</a></h3>
 <p><code>PER-009</code> permanece deliberadamente estreita e não define arquitetura total de Conta.</p>
 <p>A autoridade de Planos da Pessoa, porém, já registra capacidades como controles de dados, permissões, correção, exportação, exclusão e saída, além de níveis de histórico, alertas e exportação.</p>
@@ -36432,16 +36433,106 @@ ATIVIDADE DISPONÍVEL
 <p>O Início pode orientar continuidade, mas não deve absorver funcionalidade especializada por conveniência de layout.</p>
 <p>Este Master não cria novos destinos ou transições.</p>
 <h2 id="experience-architecture-person-journey-per-108-participant-home-master-13-controles-do-vinculo">13. Controles do vínculo<a class="headerlink" href="#experience-architecture-person-journey-per-108-participant-home-master-13-controles-do-vinculo" title="Permanent link">&para;</a></h2>
-<p>Conforme autoridade corrente, a experiência pode tornar acessíveis controles como:</p>
+<p>Conforme autoridade corrente, <code>PER-108</code> governa o estado corrente do vínculo e pode tornar acessíveis controles legitimamente existentes.</p>
+<p>A presença de um controle deve corresponder a capacidade real. Nenhum controle pode ser inventado apenas para completar a interface.</p>
+<h3 id="experience-architecture-person-journey-per-108-participant-home-master-131-consultar-o-estado-do-vinculo">13.1 Consultar o estado do vínculo<a class="headerlink" href="#experience-architecture-person-journey-per-108-participant-home-master-131-consultar-o-estado-do-vinculo" title="Permanent link">&para;</a></h3>
+<p>A Pessoa deve conseguir compreender, quando aplicável:</p>
 <ul>
-<li>preferências de atualização;</li>
-<li>pausa;</li>
-<li>saída;</li>
-<li>proteção;</li>
-<li>denúncia ou contestação;</li>
-<li>consulta ao estado do vínculo.</li>
+<li>vínculo vigente;</li>
+<li>vínculo pausado;</li>
+<li>vínculo encerrado;</li>
+<li>permissão alterada;</li>
+<li>perda de acesso;</li>
+<li>efeito conhecido de uma alteração ainda em processamento.</li>
 </ul>
-<p>A presença de um controle deve corresponder a capacidade legitimamente existente. Nenhum controle pode ser inventado apenas para completar a interface.</p>
+<p>Estado histórico não prevalece sobre o estado corrente.</p>
+<h3 id="experience-architecture-person-journey-per-108-participant-home-master-132-preferencias-de-atualizacao">13.2 Preferências de atualização<a class="headerlink" href="#experience-architecture-person-journey-per-108-participant-home-master-132-preferencias-de-atualizacao" title="Permanent link">&para;</a></h3>
+<p>Preferências de atualização são controles de comunicação/contexto e devem permanecer distintas de:</p>
+<div class="highlight"><pre><span></span><code>PREFERÊNCIA DE ATUALIZAÇÃO
+≠ CONSENTIMENTO
+≠ VÍNCULO
+≠ PAPEL
+≠ AUTORIDADE
+</code></pre></div>
+<p>Alterar preferência não pode criar, pausar ou encerrar vínculo por inferência.</p>
+<p>Quando a alteração produzir efeito persistente, a experiência deve apresentar estado confirmado, falha recuperável ou condição indeterminada sem declarar sucesso não comprovado.</p>
+<h3 id="experience-architecture-person-journey-per-108-participant-home-master-133-pausar-e-retomar">13.3 Pausar e retomar<a class="headerlink" href="#experience-architecture-person-journey-per-108-participant-home-master-133-pausar-e-retomar" title="Permanent link">&para;</a></h3>
+<p>Quando Pausar for uma capacidade legítima, o ciclo funcional mínimo é:</p>
+<div class="highlight"><pre><span></span><code>VÍNCULO VIGENTE
+→ COMPREENDER EFEITO DA PAUSA
+→ AÇÃO CONSCIENTE
+→ CONFIRMAÇÃO PROPORCIONAL AO RISCO
+→ PROCESSAMENTO
+→ VÍNCULO PAUSADO OU FALHA/ESTADO INDETERMINADO
+</code></pre></div>
+<p>Pausar não significa sair do Coletivo.</p>
+<p>Quando Retomar for permitido:</p>
+<div class="highlight"><pre><span></span><code>VÍNCULO PAUSADO
+→ AÇÃO CONSCIENTE DE RETOMAR
+→ REVALIDAÇÃO DE PERMISSÕES E CONDIÇÕES APLICÁVEIS
+→ PROCESSAMENTO
+→ VÍNCULO VIGENTE OU FALHA/ESTADO INDETERMINADO
+</code></pre></div>
+<p>Retomar não restaura silenciosamente papel, permissão, função, compromisso ou autoridade que tenham mudado durante a pausa.</p>
+<h3 id="experience-architecture-person-journey-per-108-participant-home-master-134-sair-do-coletivo">13.4 Sair do Coletivo<a class="headerlink" href="#experience-architecture-person-journey-per-108-participant-home-master-134-sair-do-coletivo" title="Permanent link">&para;</a></h3>
+<p>Quando a saída estiver legitimamente disponível, a Pessoa deve compreender consequências materiais antes de confirmar.</p>
+<p>O ciclo mínimo é:</p>
+<div class="highlight"><pre><span></span><code>VÍNCULO ATIVO OU PAUSADO
+→ SOLICITAR SAÍDA
+→ COMPREENDER CONSEQUÊNCIAS
+→ CONFIRMAÇÃO PROPORCIONAL
+→ PROCESSAMENTO
+→ VÍNCULO ENCERRADO OU FALHA/ESTADO INDETERMINADO
+</code></pre></div>
+<p>Devem permanecer distintas:</p>
+<div class="highlight"><pre><span></span><code>SAÍDA DO COLETIVO
+≠ SAÍDA DA GUIVOS
+≠ EXCLUSÃO DE CONTA
+≠ CANCELAMENTO DE PLANO
+≠ APAGAMENTO AUTOMÁTICO DE DADOS
+</code></pre></div>
+<p>Compromissos previamente aceitos podem possuir consequências próprias quando governados por autoridade específica. O simples ato de sair não autoriza inventar quitação, cancelamento externo ou eliminação de obrigação.</p>
+<p>Repetir uma solicitação já confirmada não deve criar efeitos duplicados.</p>
+<h3 id="experience-architecture-person-journey-per-108-participant-home-master-135-contestacao-e-correcao">13.5 Contestação e correção<a class="headerlink" href="#experience-architecture-person-journey-per-108-participant-home-master-135-contestacao-e-correcao" title="Permanent link">&para;</a></h3>
+<p>Os controles desta seção preservam a distinção já estabelecida em <code>PER-108</code>:</p>
+<div class="highlight"><pre><span></span><code>CONTESTAR
+≠ EDITAR SILENCIOSAMENTE A FONTE OFICIAL
+</code></pre></div>
+<p>A Pessoa pode corrigir dado sob sua autoridade, contestar informação de terceiro, solicitar revisão, consultar a fonte ou retornar sem efeito quando essas capacidades forem legítimas.</p>
+<p>Contestação não altera automaticamente vínculo, papel, permissão ou autoridade.</p>
+<h3 id="experience-architecture-person-journey-per-108-participant-home-master-136-protecao-e-denuncia">13.6 Proteção e denúncia<a class="headerlink" href="#experience-architecture-person-journey-per-108-participant-home-master-136-protecao-e-denuncia" title="Permanent link">&para;</a></h3>
+<p><code>PER-108</code> pode oferecer <strong>acesso contextual</strong> a proteção ou denúncia quando a capacidade existir.</p>
+<p>Esse acesso não autoriza <code>PER-108</code> a absorver automaticamente:</p>
+<ul>
+<li>triagem especializada;</li>
+<li>coleta estruturada de evidências;</li>
+<li>investigação;</li>
+<li>decisão disciplinar;</li>
+<li>acompanhamento de caso;</li>
+<li>resolução;</li>
+<li>recurso;</li>
+<li>comunicação de resultado.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>ACESSO CONTEXTUAL À PROTEÇÃO/DENÚNCIA
+→ PODE PARTIR DE PER-108
+
+PROCESSO ESPECIALIZADO
+→ NÃO ADJUDICADO NESTE MASTER
+→ NÃO CRIAR POR INFERÊNCIA
+</code></pre></div>
+<p>Denunciar não encerra o vínculo automaticamente. Sair do Coletivo não equivale a denunciar.</p>
+<h3 id="experience-architecture-person-journey-per-108-participant-home-master-137-processamento-confirmacao-e-recuperacao">13.7 Processamento, confirmação e recuperação<a class="headerlink" href="#experience-architecture-person-journey-per-108-participant-home-master-137-processamento-confirmacao-e-recuperacao" title="Permanent link">&para;</a></h3>
+<p>Para qualquer controle material que altere estado:</p>
+<ul>
+<li>intenção não equivale a processamento;</li>
+<li>processamento não equivale a sucesso;</li>
+<li>sucesso só pode ser apresentado quando confirmado;</li>
+<li>estado indeterminado deve permanecer indeterminado;</li>
+<li>falha recuperável deve oferecer recuperação proporcional;</li>
+<li>repetição não deve duplicar efeito;</li>
+<li>o estado corrente do vínculo deve prevalecer após confirmação.</li>
+</ul>
+<p>Nenhuma dessas regras cria novo <code>PER-ID</code>, <code>TRN-ID</code> ou destino.</p>
 <h2 id="experience-architecture-person-journey-per-108-participant-home-master-14-trn-111-entrada-no-inicio">14. TRN-111 — entrada no Início<a class="headerlink" href="#experience-architecture-person-journey-per-108-participant-home-master-14-trn-111-entrada-no-inicio" title="Permanent link">&para;</a></h2>
 <p><code>PER-107 → PER-108</code>.</p>
 <p>Estado: <strong>integralmente validada</strong>.</p>
