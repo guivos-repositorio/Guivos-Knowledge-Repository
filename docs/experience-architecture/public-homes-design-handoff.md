@@ -72,7 +72,7 @@ A designer pode trabalhar diretamente a partir do conjunto canônico vigente def
 
 ### 0.1 Liberdade criativa protegida
 
-O GKR **não congela identidade visual canônica** para estas Homes. A designer pode criar, com originalidade e autonomia, tipografia, paleta, imagens, ilustração, iconografia, grid, ritmo, composição, atmosfera, motion, linguagem gráfica, tratamento de componentes e tom de voz/copy não congelada.
+O GKR **não congela uma composição visual canônica** para estas Homes. A designer pode criar, com originalidade e autonomia, paleta, imagens, ilustração, iconografia, grid, ritmo, composição, atmosfera, motion, linguagem gráfica, tratamento de componentes e tom de voz/copy não congelada. **A família e a escala tipográfica oficiais são a exceção já governada por `GKR-BRAND-TYPOGRAPHY-001`; a liberdade de Design permanece na aplicação dessa tipografia, não em sua substituição como identidade oficial.**
 
 Essas escolhas são **output de Design**, não pré-condição documental. A solução criativa aprovada deve ser documentada no artefato final de Design entregue pela designer, com consistência e handoff suficientes para continuidade.
 
@@ -334,7 +334,7 @@ Desde que preservados os contratos da Home, Design pode explorar:
 - agrupamento visual dos movimentos;
 - quantidade de dobras e seções físicas;
 - hierarquia, densidade e ritmo;
-- tipografia e escala;
+- aplicação da tipografia e da escala oficiais governadas por `GKR-BRAND-TYPOGRAPHY-001`;
 - fotografia, vídeo e visualizações;
 - cor, fundos e atmosferas;
 - componentes;
