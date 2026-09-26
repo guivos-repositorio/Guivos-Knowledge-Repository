@@ -24,9 +24,9 @@ related:
 
 Este documento consolida o **recorte governado corrente** de `PER-009 — Conta / Configurações` para Design, IA opcional, Produto, UX, Privacidade e Engenharia.
 
-A autoridade comprovada hoje é deliberadamente estreita: `PER-009` representa uma responsabilidade administrativa autenticada que permite à Pessoa **escolher uma área administrativa e abrir Planos voluntariamente**, preservando retorno neutro.
+`PER-009` representa a responsabilidade administrativa autenticada da Pessoa. O recorte originalmente comprovado para origem/retorno de Planos permanece válido e, pela Autoridade de Completude Funcional, a responsabilidade também passa a localizar os **ciclos administrativos transversais de dados e permissões, exportação, exclusão e saída da Guivos** quando materialmente aplicáveis.
 
-Este Master **não define a arquitetura total de Conta e Configurações**.
+Este Master **não define uma arquitetura total de Conta e Configurações**, não cria um menu universal e não transforma cada controle em nova superfície.
 
 ## 2. Escopo comprovado
 
@@ -181,7 +181,102 @@ Dentro do recorte comprovado, a superfície pode apresentar:
 
 Nenhum outro grupo de configurações é obrigatório por este Master.
 
-## 12. Planos e estado comercial
+## 12. Controles administrativos transversais da Pessoa
+
+A existência de capacidades comerciais de dados, permissões, correção, exportação, exclusão e saída exige responsabilidade funcional localizável. Elas permanecem em `PER-009` quando forem **administrativas e transversais**, sem substituir controles contextuais pertencentes ao objeto de origem.
+
+### 12.1 Dados e permissões
+
+A Pessoa deve poder compreender e controlar, quando houver autoridade aplicável, dados e permissões administrativas sob sua esfera.
+
+O ciclo deve preservar:
+
+- finalidade e escopo compreensíveis;
+- distinção entre dado declarado, observado, inferido e confirmado quando aplicável;
+- autoridade da Pessoa e eventuais limites legítimos;
+- ação consciente para alteração material;
+- processamento, resultado confirmado, falha ou estado indeterminado;
+- reversibilidade quando juridicamente e tecnicamente aplicável.
+
+```text
+PERMISSÃO
+≠ PREFERÊNCIA
+≠ CONSENTIMENTO AMPLO
+≠ AUTENTICAÇÃO
+≠ VÍNCULO
+```
+
+Correção permanece contextual quando o objeto possui autoridade própria. `PER-009` não deve copiar ou sobrescrever silenciosamente a fonte oficial.
+
+### 12.2 Exportação
+
+Quando exportação estiver legitimamente disponível, a experiência deve tornar compreensíveis:
+
+- escopo exportado;
+- finalidade da ação;
+- formato ou abrangência quando material;
+- processamento;
+- resultado disponível, falha ou indisponibilidade;
+- limites conhecidos.
+
+```text
+EXPORTAR DADOS
+≠ COMPARTILHAR DADOS
+≠ AUTORIZAR NOVO TRATAMENTO
+```
+
+A existência de níveis comerciais de exportação não autoriza inventar formato, prazo, volume, canal ou conteúdo ainda não governado.
+
+### 12.3 Exclusão
+
+A experiência deve distinguir explicitamente:
+
+```text
+EXCLUIR COMPREENSÃO
+≠ EXCLUIR DADO
+≠ EXCLUIR CONTA
+```
+
+Antes de uma exclusão material, a Pessoa deve compreender objeto e consequência aplicáveis. O ciclo mínimo é:
+
+```text
+SOLICITAR
+→ COMPREENDER ESCOPO E CONSEQUÊNCIA
+→ CONFIRMAÇÃO PROPORCIONAL
+→ PROCESSAMENTO
+→ RESULTADO CONFIRMADO OU FALHA/ESTADO INDETERMINADO
+```
+
+Restrições legítimas de retenção, obrigação ou autoridade devem ser explicadas quando aplicáveis; não podem ser inventadas por este Master.
+
+### 12.4 Saída da Guivos
+
+Quando a Pessoa puder encerrar sua relação com a Guivos, o controle deve permanecer semanticamente separado de outros encerramentos:
+
+```text
+SAÍDA DA GUIVOS
+≠ SAÍDA DE COLETIVO
+≠ CANCELAMENTO DE PLANO
+≠ EXCLUSÃO AUTOMÁTICA DE TODO DADO
+```
+
+A saída exige consequência compreensível, confirmação proporcional, processamento e resultado verificável. Nenhum efeito financeiro, contratual, coletivo ou de retenção pode ser presumido sem autoridade própria.
+
+### 12.5 Processamento, idempotência e recuperação
+
+Para controles materiais:
+
+- intenção não equivale a processamento;
+- processamento não equivale a sucesso;
+- sucesso exige confirmação;
+- estado indeterminado permanece indeterminado;
+- retry não duplica efeito;
+- falha recuperável oferece continuidade proporcional;
+- autenticação não substitui autorização material.
+
+Esses ciclos não criam novo `PER-ID` ou `TRN-ID`.
+
+## 13. Planos e estado comercial
 
 Quando informação de plano atual for exibida em `PER-009`, ela deve:
 
@@ -192,7 +287,7 @@ Quando informação de plano atual for exibida em `PER-009`, ela deve:
 
 A Conta pode orientar a continuidade, mas não deve absorver o fluxo especializado.
 
-## 13. Estados internos de experiência
+## 14. Estados internos de experiência
 
 Sem criar novos `PER-ID`s, Design pode representar estados internos necessários ao recorte, por exemplo:
 
@@ -206,7 +301,7 @@ Sem criar novos `PER-ID`s, Design pode representar estados internos necessários
 
 Esses estados não autorizam novas capacidades de Conta.
 
-## 14. Erro e recuperação
+## 15. Erro e recuperação
 
 Falha ao abrir Planos deve preservar a Pessoa em contexto administrativo seguro e compreensível.
 
@@ -218,7 +313,7 @@ A experiência não deve:
 - ocultar falha como sucesso;
 - inventar estado financeiro.
 
-## 15. Privacidade e minimização
+## 16. Privacidade e minimização
 
 `PER-009` deve usar apenas os dados necessários ao contexto administrativo corrente e à continuidade voluntária para Planos.
 
@@ -231,7 +326,7 @@ A existência da superfície não autoriza centralizar ou expor, por inferência
 - preferências não contratadas;
 - dados de outras responsabilidades sem finalidade.
 
-## 16. Reversibilidade
+## 17. Reversibilidade
 
 No recorte atual:
 
@@ -242,7 +337,7 @@ No recorte atual:
 
 A reversibilidade de contratação, downgrade, cancelamento e cobrança pertence às autoridades especializadas de `PER-301..304`.
 
-## 17. Linguagem e claims
+## 18. Linguagem e claims
 
 Evitar linguagem que:
 
@@ -254,7 +349,7 @@ Evitar linguagem que:
 - trate plano pago como requisito universal de continuidade;
 - transforme Conta em catálogo de capacidades não governadas.
 
-## 18. Acessibilidade
+## 19. Acessibilidade
 
 O acesso a Planos e o retorno à Conta devem ser compreensíveis sem depender exclusivamente de cor, ícone, posição, animação ou som.
 
@@ -292,7 +387,7 @@ A designer possui liberdade sobre composição, agrupamento, componentes, densid
 
 A liberdade visual não autoriza inventar a arquitetura total da Conta.
 
-## 21. Limites para IA
+## 22. Limites para IA
 
 IA não pode:
 
@@ -306,7 +401,7 @@ IA não pode:
 - impor baseline visual;
 - iniciar Product Engineering.
 
-## 22. Critérios de aceite funcional
+## 23. Critérios de aceite funcional
 
 O consumo de `PER-009` é aceitável quando:
 
@@ -331,7 +426,7 @@ O consumo de `PER-009` é aceitável quando:
 19. Design mantém liberdade criativa dentro das autoridades;
 20. Product Engineering permanece não liberado.
 
-## 23. Lacunas que permanecem abertas
+## 24. Lacunas que permanecem abertas
 
 Este Master não resolve:
 
@@ -342,12 +437,10 @@ Este Master não resolve:
 - recuperação de conta;
 - MFA;
 - segurança;
-- privacidade global;
-- notificações;
-- preferências gerais;
+- arquitetura jurídica/operacional completa de direitos e retenção;
+- notificações e alertas fora de responsabilidades já governadas;
+- preferências gerais sem objeto governado;
 - dispositivos/sessões;
-- exclusão de conta;
-- exportação de dados;
 - métodos de pagamento;
 - histórico financeiro;
 - faturamento;
@@ -360,7 +453,7 @@ Este Master não resolve:
 
 Esses temas exigem autoridades próprias quando forem necessários.
 
-## 24. Estado
+## 25. Estado
 
 ```text
 PER-009
