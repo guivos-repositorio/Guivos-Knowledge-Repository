@@ -196,6 +196,8 @@ JOURNEY → LOCALIZAÇÃO/CICLO DE PARTE DESSAS CAPACIDADES AINDA NÃO CONSOLIDA
 
 A remediação deve primeiro distinguir capacidades e autoridades; não transformar a lista de lacunas de `PER-009` em menu por inferência.
 
+A adjudicação desta frente mantém autenticação, recuperação e variantes de sessão em `PER-002`; mantém correção contextual junto ao objeto quando houver autoridade própria; e localiza em `PER-009` os ciclos administrativos transversais de dados/permissões, exportação, exclusão e saída da Guivos. Isso não cria menu universal, Central de Privacidade, novo `PER-ID` ou novo `TRN-ID`. Notificações/alertas, níveis de histórico, integrações e demais diferenciações comerciais permanecem para a reconciliação Planos × Journey.
+
 ## 7. Capacidades que não justificam nova superfície por si
 
 ### 7.1 Autenticação e recuperação
