@@ -126,6 +126,8 @@ PER-003 / PERGUNTAS OPCIONAIS
 
 A remediação deve preservar opcionalidade, possibilidade de pular/não saber/não informar, revisão, interrupção e continuidade consciente.
 
+A adjudicação posterior desta frente concluiu que a lacuna possui job, estados, captura voluntária de respostas, revisão, falhas/recuperação, reversibilidade e handoff próprios. O contrato candidato `PER-014 — Perguntas Opcionais Guiadas` governa `PER-003 / Perguntas Opcionais → TRN-016 → PER-014 → TRN-017 → PER-005`, preservando `PER-004` para Texto/Voz, `PER-005` como gate de autorização e `PER-006` como processamento posterior.
+
 ### 6.3 Salvar oportunidade
 
 `PER-203` reconhece Salvar para considerar como alternativa legítima quando autorizada, mas não define implementação ou handoff.
