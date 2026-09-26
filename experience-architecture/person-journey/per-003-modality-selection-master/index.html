@@ -16,7 +16,7 @@
         <link rel="prev" href="../per-002-protected-entry-master/">
       
       
-        <link rel="next" href="../per-004-text-voice-expression-master/">
+        <link rel="next" href="../per-013-file-capture-review-master/">
       
       
         
@@ -3331,6 +3331,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../per-013-file-capture-review-master/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Captura e Revisão de Arquivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../per-004-text-voice-expression-master/" class="md-nav__link">
         
   
@@ -5933,7 +5968,7 @@ PERGUNTAS OPCIONAIS
 → CONTINUIDADE DOWNSTREAM ESPECÍFICA = NÃO CONTRATADA
 </code></pre></div>
 <p>Design e IA <strong>não podem inventar nova superfície, novo <code>PER-ID</code> ou novo handoff</strong> para fechar essa lacuna.</p>
-<p>A solução visual pode representar as quatro escolhas correntes; a execução completa de arquivo/perguntas depende de autoridade posterior que feche sua continuidade.</p>
+<p>A solução visual pode representar as quatro escolhas correntes; Arquivo segue o contrato candidato de <code>PER-013</code>, enquanto Perguntas Opcionais ainda depende de autoridade posterior que feche sua continuidade.</p>
 <h2 id="5-job-principal-da-pessoa">5. Job principal da Pessoa<a class="headerlink" href="#5-job-principal-da-pessoa" title="Permanent link">&para;</a></h2>
 <p>A Pessoa precisa conseguir responder:</p>
 <ul>
@@ -6036,7 +6071,7 @@ PER-003 ENTRY
 → NÃO FAZ UPLOAD
 → NÃO AUTORIZA EXTRAÇÃO
 </code></pre></div>
-<p>A continuidade downstream específica dessa modalidade ainda não está contratada na topologia corrente e não pode ser inventada por Design ou IA.</p>
+<p>A continuidade downstream de Arquivo passa a possuir contrato funcional candidato em <code>PER-013</code>, por <code>TRN-014</code> e <code>TRN-015</code>. Isso não implementa upload nem autoriza processamento material; Design ou IA não podem ampliar esse contrato por inferência.</p>
 <h2 id="11-modalidade-perguntas-opcionais">11. Modalidade Perguntas Opcionais<a class="headerlink" href="#11-modalidade-perguntas-opcionais" title="Permanent link">&para;</a></h2>
 <p>Perguntas opcionais permanecem uma modalidade validada de início.</p>
 <p>A experiência deve preservar que:</p>
@@ -6086,7 +6121,7 @@ PER-003 ENTRY
 <li>o efeito de cada modalidade permanece distinguível;</li>
 <li>permissões e autorizações não são herdadas automaticamente entre modalidades;</li>
 <li>remover uma modalidade deve ter consequência compreensível;</li>
-<li>combinação envolvendo arquivo/perguntas não cria automaticamente nova rota downstream.</li>
+<li>combinação envolvendo Arquivo deve respeitar o contrato candidato de <code>PER-013</code>; combinação com Perguntas Opcionais não cria automaticamente nova rota downstream.</li>
 </ul>
 <h2 id="14-troca-de-modalidade">14. Troca de modalidade<a class="headerlink" href="#14-troca-de-modalidade" title="Permanent link">&para;</a></h2>
 <p>Antes de qualquer captura material, a Pessoa deve poder trocar de modalidade sem penalidade.</p>
@@ -6121,7 +6156,7 @@ DEPOIS DA CAPTURA
 <li>que Texto não inicia análise;</li>
 <li>que é possível voltar ou interromper;</li>
 <li>que combinar modalidades é opcional;</li>
-<li>que a continuidade downstream de arquivo/perguntas ainda não está integralmente contratada no GKR.</li>
+<li>que Arquivo possui contrato candidato em <code>PER-013</code>, enquanto a continuidade downstream de Perguntas Opcionais ainda não está integralmente contratada no GKR.</li>
 </ul>
 <h2 id="16-informacoes-que-nao-devem-ser-exigidas">16. Informações que não devem ser exigidas<a class="headerlink" href="#16-informacoes-que-nao-devem-ser-exigidas" title="Permanent link">&para;</a></h2>
 <p><code>PER-003</code> não deve exigir:</p>
@@ -6291,7 +6326,7 @@ MODALITY SELECTED
 <li>iniciar upload automaticamente;</li>
 <li>inferir preferência;</li>
 <li>inventar benefício de uma modalidade;</li>
-<li>inventar continuidade downstream para arquivo/perguntas;</li>
+<li>inventar continuidade além do contrato candidato de Arquivo ou para Perguntas Opcionais;</li>
 <li>criar novo <code>PER-ID</code>;</li>
 <li>materializar <code>PER-004</code> como se já estivesse documentada por este Master.</li>
 </ul>
@@ -6309,7 +6344,7 @@ MODALITY SELECTED
 <li>a Pessoa consegue voltar ou interromper;</li>
 <li>é possível trocar a escolha antes da captura;</li>
 <li>o handoff <code>TRN-003 → PER-004</code> é preservado como continuidade parcial para texto/voz;</li>
-<li>a lacuna downstream de arquivo/perguntas é preservada, não inventada;</li>
+<li>o contrato candidato de Arquivo é preservado sem ampliação e a lacuna downstream de Perguntas Opcionais permanece não inventada;</li>
 <li>nenhuma autorização material é inferida;</li>
 <li>nenhuma preferência é inferida sem autoridade;</li>
 <li>indisponibilidade possui fallback explícito e não coercitivo;</li>
@@ -6331,7 +6366,7 @@ MODALITY SELECTED
 <li>implementa upload;</li>
 <li>define formatos de arquivo;</li>
 <li>implementa fluxo de perguntas;</li>
-<li>fecha a continuidade downstream de arquivo/perguntas;</li>
+<li>promove a continuidade de Arquivo além do contrato candidato ou fecha a continuidade de Perguntas Opcionais;</li>
 <li>define persistência da escolha;</li>
 <li>altera <code>TRN-002</code> ou <code>TRN-003</code>;</li>
 <li>cria nova superfície;</li>
