@@ -4623,6 +4623,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/organizations-collectives-journey/collective-request-management-master/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coletivo — Gestão de Solicitações
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7311,6 +7346,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-organizations-collectives-journey-collective-request-management-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4.4 Coletivo — Gestão de Solicitações
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -9077,6 +9123,17 @@
     <span class="md-ellipsis">
       
         9.4.3 Organização — Oportunidade Aprovada / Ativa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experience-architecture-organizations-collectives-journey-collective-request-management-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4.4 Coletivo — Gestão de Solicitações
       
     </span>
   </a>
@@ -45784,6 +45841,473 @@ PROTOTYPE
 
 PRODUCT ENGINEERING
 → NOT RELEASED
+</code></pre></div></section><section class="print-page" id="experience-architecture-organizations-collectives-journey-collective-request-management-master" heading-number="9.4.4"><h1 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-coletivo-gestao-de-solicitacoes-documento-mestre-de-superficie">Coletivo — Gestão de Solicitações — Documento Mestre de Superfície<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-coletivo-gestao-de-solicitacoes-documento-mestre-de-superficie" title="Permanent link">&para;</a></h1>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-1-responsabilidade">1. Responsabilidade<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-1-responsabilidade" title="Permanent link">&para;</a></h2>
+<p>Este Documento Mestre governa a responsabilidade funcional de <code>GKR-SURF-COL-003</code> — Gestão de Solicitações.</p>
+<p>A superfície permite que uma Pessoa legitimamente autorizada, atuando no contexto de um Coletivo, compreenda e trate solicitações de participação sem confundir análise da solicitação com vínculo, representação, administração ou autoridade posterior.</p>
+<div class="highlight"><pre><span></span><code>SOLICITAÇÃO
+→ ANÁLISE SOB AUTORIDADE
+→ DECISÃO OU PEDIDO LEGÍTIMO DE INFORMAÇÃO
+→ CONTINUIDADE REGISTRADA QUANDO EXISTENTE
+
+SOLICITAÇÃO
+≠ PARTICIPAÇÃO ATIVA
+
+APROVAÇÃO
+≠ REPRESENTAÇÃO
+≠ ADMINISTRAÇÃO
+≠ AUTORIDADE IRRESTRITA
+</code></pre></div>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-2-por-que-esta-responsabilidade-e-especifica-do-coletivo">2. Por que esta responsabilidade é específica do Coletivo<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-2-por-que-esta-responsabilidade-e-especifica-do-coletivo" title="Permanent link">&para;</a></h2>
+<p><code>COL-003</code> pertence ao domínio <strong>Participação</strong> e atende a continuidade de <code>COL-J04</code>.</p>
+<p>A Organização não possui superfície semanticamente equivalente para gerir entrada de participantes em um Coletivo. A família <code>ORG-004..006 / COL-008</code> governa relações bilaterais Organização–Coletivo e não deve ser usada como equivalente.</p>
+<p>Consequentemente:</p>
+<ul>
+<li>este Master não é compartilhado por inferência;</li>
+<li>nenhuma superfície da Organização é criada para produzir simetria;</li>
+<li>relação bilateral não substitui participação;</li>
+<li>eventual equivalência futura exige autoridade própria.</li>
+</ul>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-3-participante-contexto-e-autoridade">3. Participante, contexto e autoridade<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-3-participante-contexto-e-autoridade" title="Permanent link">&para;</a></h2>
+<p>O agente humano é uma <strong>Pessoa autenticada</strong> atuando no contexto do Coletivo.</p>
+<p>Antes de ação material, a experiência deve preservar:</p>
+<ul>
+<li>Coletivo ativo correto;</li>
+<li>papel e autoridade da Pessoa;</li>
+<li>escopo da solicitação;</li>
+<li>estado corrente da solicitação;</li>
+<li>informação e proteção aplicáveis;</li>
+<li>aprovação adicional quando legitimamente exigida.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>ACESSAR SOLICITAÇÕES
+≠ DECIDIR
+
+ANALISAR
+≠ APROVAR
+
+APROVAR
+≠ ATRIBUIR PAPEL
+
+PERTENCER
+≠ REPRESENTAR
+≠ ADMINISTRAR
+</code></pre></div>
+<p>Mudança de contexto, sessão expirada ou alteração de autoridade exige revalidação antes de efeito material.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-4-origens-e-continuidades-legitimas">4. Origens e continuidades legítimas<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-4-origens-e-continuidades-legitimas" title="Permanent link">&para;</a></h2>
+<p>O Transition Registry permanece autoridade para as transições identificadas. Este Master consome, sem promover, a família especializada <code>GKR-TRN-105..109</code> e a entrada contextual <code>GKR-TRN-112</code>.</p>
+<div class="highlight"><pre><span></span><code>CONTEXTO DO COLETIVO
+→ GKR-TRN-112, QUANDO APLICÁVEL
+→ GKR-SURF-COL-003
+
+PERSPECTIVA DA PESSOA
+→ GKR-SURF-PER-105 / AUTORIDADES RELACIONADAS
+→ GKR-TRN-105..109, CONFORME O CONTRATO EXISTENTE
+→ GKR-SURF-COL-003
+</code></pre></div>
+<p>A continuidade operacional após aprovação deve preservar uma lacuna conhecida:</p>
+<div class="highlight"><pre><span></span><code>COL-003
+→ COL-004
+
+TRANSIÇÃO ESTÁVEL DEDICADA
+→ NÃO REGISTRADA
+
+TRATAMENTO
+→ PRESERVAR A LACUNA
+→ NÃO INVENTAR GKR-TRN
+</code></pre></div>
+<p>Aprovação em <code>COL-003</code> não autoriza declarar automaticamente que <code>COL-004</code> foi materializado, persistido ou atualizado.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-5-job-principal">5. Job principal<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-5-job-principal" title="Permanent link">&para;</a></h2>
+<p>A Pessoa autorizada deve conseguir:</p>
+<ol>
+<li>identificar o Coletivo e a solicitação sob análise;</li>
+<li>compreender o estado corrente e a proveniência das informações disponíveis;</li>
+<li>distinguir informação declarada, verificada, ausente, protegida, desatualizada ou contestada;</li>
+<li>reconhecer sua autoridade e eventual necessidade de aprovação adicional;</li>
+<li>analisar a solicitação sem acessar dados pessoais além do necessário;</li>
+<li>aguardar legitimamente quando não houver base suficiente para decidir;</li>
+<li>solicitar informação adicional quando sustentado pela autoridade;</li>
+<li>aprovar ou recusar somente quando houver autoridade e base aplicáveis;</li>
+<li>compreender o resultado confirmado, falha recuperável ou estado indeterminado;</li>
+<li>retornar ao contexto do Coletivo sem duplicar decisão ou perder a referência canônica.</li>
+</ol>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-6-informacao-e-minimizacao">6. Informação e minimização<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-6-informacao-e-minimizacao" title="Permanent link">&para;</a></h2>
+<p>Quando sustentados pelas autoridades de origem, a responsabilidade pode apresentar:</p>
+<ul>
+<li>identidade suficiente da solicitação;</li>
+<li>Coletivo relacionado;</li>
+<li>estado e momento da solicitação;</li>
+<li>informação fornecida legitimamente para a finalidade;</li>
+<li>respostas ou evidências necessárias à decisão;</li>
+<li>proveniência e atualidade material;</li>
+<li>condições de participação aplicáveis;</li>
+<li>proteção ou restrição de acesso;</li>
+<li>histórico material necessário à compreensão e auditoria legítima;</li>
+<li>decisão e fundamento no limite permitido;</li>
+<li>informação adicional solicitada e seu estado.</li>
+</ul>
+<p>A superfície não deve inventar nem exigir por convenção:</p>
+<ul>
+<li>score de candidato;</li>
+<li>ranking de solicitantes;</li>
+<li>recomendação automática de aprovação;</li>
+<li>probabilidade de sucesso;</li>
+<li>perfil psicológico;</li>
+<li>inferência sensível;</li>
+<li>dados não necessários à finalidade;</li>
+<li>comparação competitiva entre pessoas;</li>
+<li>autoridade decorrente de popularidade, plano ou atividade.</li>
+</ul>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-7-proveniencia-e-verdade-operacional">7. Proveniência e verdade operacional<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-7-proveniencia-e-verdade-operacional" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>DECLARADO
+≠ VERIFICADO
+
+INFERIDO
+≠ FATO
+
+AUSÊNCIA DE DADO
+≠ RESPOSTA NEGATIVA
+
+INFORMAÇÃO ADICIONAL SOLICITADA
+≠ OBRIGAÇÃO UNIVERSAL
+
+CONTESTADO
+≠ INVÁLIDO POR DEFINIÇÃO
+
+DECISÃO REGISTRADA
+≠ VÍNCULO TÉCNICO CONFIRMADO
+</code></pre></div>
+<p>A experiência não deve preencher lacunas com inferências silenciosas.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-8-estados-minimos">8. Estados mínimos<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-8-estados-minimos" title="Permanent link">&para;</a></h2>
+<p>Quando aplicáveis, a materialização deve comportar:</p>
+<ul>
+<li>solicitação pendente;</li>
+<li>em análise;</li>
+<li>informação adicional necessária;</li>
+<li>aguardando resposta;</li>
+<li>autoridade insuficiente;</li>
+<li>aprovação adicional necessária;</li>
+<li>informação material incompleta;</li>
+<li>informação protegida;</li>
+<li>informação contestada;</li>
+<li>aprovada;</li>
+<li>recusada;</li>
+<li>retirada ou cancelada pela origem quando autoridade própria permitir;</li>
+<li>expirada quando houver condição de expiração legitimamente definida;</li>
+<li>bloqueada por proteção, privacidade ou governança;</li>
+<li>processamento em curso;</li>
+<li>falha recuperável;</li>
+<li>resultado indeterminado;</li>
+<li>atualização concorrente;</li>
+<li>contexto ou sessão expirados;</li>
+<li>dependência externa indisponível;</li>
+<li>operação degradada ou baixa conectividade.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>PENDENTE
+≠ APROVADA
+
+AGUARDANDO
+≠ RECUSADA
+
+BLOQUEADA
+≠ RECUSADA
+
+APROVADA
+≠ VÍNCULO ATIVO CONFIRMADO
+
+RECUSADA
+≠ PUNIÇÃO
+</code></pre></div>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-9-acoes-e-controles">9. Ações e controles<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-9-acoes-e-controles" title="Permanent link">&para;</a></h2>
+<p>Somente quando estado e autoridade permitirem, a responsabilidade pode oferecer:</p>
+<ul>
+<li>abrir e revisar solicitação;</li>
+<li>consultar informação material autorizada;</li>
+<li>solicitar informação adicional;</li>
+<li>registrar continuidade de análise;</li>
+<li>aprovar;</li>
+<li>recusar;</li>
+<li>retornar sem decidir;</li>
+<li>revalidar contexto e autoridade;</li>
+<li>reconsultar estado canônico;</li>
+<li>repetir processamento recuperável sem duplicar efeito.</li>
+</ul>
+<p>Nenhum controle visual concede autoridade.</p>
+<p>Ações materiais devem exigir confirmação proporcional e feedback explícito do resultado.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-10-solicitacao-de-informacao-adicional">10. Solicitação de informação adicional<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-10-solicitacao-de-informacao-adicional" title="Permanent link">&para;</a></h2>
+<p>Solicitar informação adicional deve ser uma ação finalística, proporcional e necessária à decisão.</p>
+<p>A experiência deve:</p>
+<ul>
+<li>tornar claro o que está sendo solicitado;</li>
+<li>preservar finalidade;</li>
+<li>não converter ausência em inferência negativa;</li>
+<li>não exigir dado sensível por convenção;</li>
+<li>permitir que a solicitação permaneça em estado compatível enquanto aguarda;</li>
+<li>distinguir resposta recebida de resposta validada;</li>
+<li>preservar proteção e minimização.</li>
+</ul>
+<p>Este Master não inventa perguntas, campos ou documentos obrigatórios.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-11-aprovacao-e-recusa">11. Aprovação e recusa<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-11-aprovacao-e-recusa" title="Permanent link">&para;</a></h2>
+<p>Aprovação e recusa são decisões materiais distintas.</p>
+<h3 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-aprovacao">Aprovação<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-aprovacao" title="Permanent link">&para;</a></h3>
+<p>Aprovação significa que a solicitação recebeu decisão favorável no limite da autoridade aplicável. Ela não significa automaticamente:</p>
+<ul>
+<li>criação técnica de vínculo;</li>
+<li>atribuição de papel;</li>
+<li>representação;</li>
+<li>administração;</li>
+<li>acesso ampliado;</li>
+<li>consentimento para outras finalidades;</li>
+<li>comunicação pública.</li>
+</ul>
+<h3 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-recusa">Recusa<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-recusa" title="Permanent link">&para;</a></h3>
+<p>Recusa deve:</p>
+<ul>
+<li>ser registrada como decisão no limite autorizado;</li>
+<li>preservar fundamento quando exigido e permitido;</li>
+<li>não produzir exposição indevida;</li>
+<li>não ser tratada como punição;</li>
+<li>preservar contestação ou revisão quando autoridade própria as prever.</li>
+</ul>
+<p>Este Master não inventa política universal de recurso ou obrigação de justificativa onde ela não estiver governada.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-12-relacao-com-a-perspectiva-da-pessoa">12. Relação com a perspectiva da Pessoa<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-12-relacao-com-a-perspectiva-da-pessoa" title="Permanent link">&para;</a></h2>
+<p>As superfícies <code>PER-103..108</code> permanecem responsabilidades da perspectiva da Pessoa.</p>
+<p><code>COL-003</code> administra a responsabilidade operacional do Coletivo; não absorve a experiência pessoal.</p>
+<div class="highlight"><pre><span></span><code>PESSOA SOLICITANTE
+→ CONTROLA SUA EXPERIÊNCIA SOB AUTORIDADES DA PESSOA
+
+COLETIVO
+→ CONTROLA A ANÁLISE SOB SUA AUTORIDADE LEGÍTIMA
+
+COL-003
+→ NÃO AUTORIZA ACESSO AO CONTEXTO PESSOAL AMPLO
+→ NÃO AUTORIZA INFERÊNCIAS NÃO NECESSÁRIAS
+</code></pre></div>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-13-relacao-com-col-004-participantes-e-vinculos">13. Relação com COL-004 — Participantes e Vínculos<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-13-relacao-com-col-004-participantes-e-vinculos" title="Permanent link">&para;</a></h2>
+<p><code>COL-004</code> é responsabilidade distinta.</p>
+<div class="highlight"><pre><span></span><code>COL-003
+→ DECIDE A SOLICITAÇÃO
+
+COL-004
+→ GOVERNA PARTICIPANTES E VÍNCULOS NO LIMITE DE SUA AUTORIDADE
+
+COL-003 → COL-004
+→ CONTINUIDADE FUNCIONAL RECONHECIDA
+→ TRANSIÇÃO ESTÁVEL DEDICADA AUSENTE
+</code></pre></div>
+<p>Este Master não preenche essa lacuna e não trata aprovação como persistência técnica confirmada do vínculo.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-14-processamento-e-confirmacao">14. Processamento e confirmação<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-14-processamento-e-confirmacao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>INTENÇÃO
+→ CONFIRMAÇÃO CONSCIENTE, QUANDO APLICÁVEL
+→ PROCESSAMENTO
+→ SUCESSO CONFIRMADO
+  OU FALHA RECUPERÁVEL
+  OU RESULTADO INDETERMINADO
+</code></pre></div>
+<p>Regras:</p>
+<ul>
+<li>interface otimista não substitui confirmação;</li>
+<li>retry não pode duplicar decisão;</li>
+<li>resultado indeterminado exige reconsulta antes de repetir ação;</li>
+<li>mudança de contexto exige revalidação;</li>
+<li>sucesso técnico não deve ser confundido com vínculo posterior quando forem estados distintos.</li>
+</ul>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-15-vazio-erro-indisponibilidade-e-recuperacao">15. Vazio, erro, indisponibilidade e recuperação<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-15-vazio-erro-indisponibilidade-e-recuperacao" title="Permanent link">&para;</a></h2>
+<p>A experiência deve tratar explicitamente:</p>
+<ul>
+<li>nenhuma solicitação pendente;</li>
+<li>solicitação não localizada;</li>
+<li>informação necessária ausente;</li>
+<li>informação protegida;</li>
+<li>dado desatualizado ou contestado;</li>
+<li>autoridade insuficiente;</li>
+<li>aprovação adicional pendente;</li>
+<li>dependência indisponível;</li>
+<li>processamento interrompido;</li>
+<li>resultado desconhecido;</li>
+<li>atualização concorrente;</li>
+<li>contexto expirado;</li>
+<li>baixa conectividade.</li>
+</ul>
+<p>Estado vazio não deve ser apresentado como falha do Coletivo.</p>
+<p>Erro técnico não deve ser apresentado como falha moral, administrativa ou da Pessoa solicitante.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-16-reversibilidade-interrupcao-e-idempotencia">16. Reversibilidade, interrupção e idempotência<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-16-reversibilidade-interrupcao-e-idempotencia" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>VOLTAR
+≠ RECUSAR
+
+FECHAR
+≠ DECIDIR
+
+CANCELAR UMA INTENÇÃO
+≠ CANCELAR A SOLICITAÇÃO
+
+RETRY
+≠ REPETIR DECISÃO
+
+MUDAR DE CONTEXTO
+→ REVALIDAR AUTORIDADE
+</code></pre></div>
+<p>Decisões materiais não podem ser disparadas por navegação, fechamento de janela ou simples mudança de contexto.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-17-protecao-privacidade-e-nao-retaliacao">17. Proteção, privacidade e não retaliação<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-17-protecao-privacidade-e-nao-retaliacao" title="Permanent link">&para;</a></h2>
+<p>A experiência deve aplicar minimização e acesso proporcional.</p>
+<p>Solicitação, contestação, pedido de informação, recusa ou revisão não podem ser usados para:</p>
+<ul>
+<li>expor dados além da finalidade;</li>
+<li>retaliar automaticamente a Pessoa;</li>
+<li>inferir características sensíveis;</li>
+<li>produzir ranking oculto;</li>
+<li>ampliar autoridade do Coletivo sobre outros contextos da Pessoa.</li>
+</ul>
+<p>Informação protegida deve permanecer protegida mesmo quando a solicitação exigir análise.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-18-planos-e-capacidade-comercial">18. Planos e capacidade comercial<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-18-planos-e-capacidade-comercial" title="Permanent link">&para;</a></h2>
+<p>Planos do Coletivo permanecem capacidade especializada/contextual.</p>
+<p>Este Master não autoriza:</p>
+<ul>
+<li>prioridade de solicitação por plano;</li>
+<li>maior chance de aprovação por plano;</li>
+<li>ranking por capacidade comercial;</li>
+<li>bloqueio de direito material para induzir upgrade;</li>
+<li>alteração de autoridade por contratação;</li>
+<li>inventar quota ou entitlement de solicitações;</li>
+<li>transformar gestão de participação em funil de upsell.</li>
+</ul>
+<p>Se uma capacidade comercial real e documentada afetar uma função, sua explicação deve preservar alternativas e direitos já autorizados.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-19-acessibilidade">19. Acessibilidade<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-19-acessibilidade" title="Permanent link">&para;</a></h2>
+<p>Estado, autoridade, proteção, informação pendente, decisão, processamento, erro e confirmação não podem depender exclusivamente de:</p>
+<ul>
+<li>cor;</li>
+<li>ícone;</li>
+<li>posição;</li>
+<li>animação;</li>
+<li>hover;</li>
+<li>blur;</li>
+<li>densidade;</li>
+<li>contraste implícito.</li>
+</ul>
+<p>A operação deve ser compreensível por meios acessíveis e não depender de padrões visuais como única fonte de significado.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-20-liberdade-de-design">20. Liberdade de Design<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-20-liberdade-de-design" title="Permanent link">&para;</a></h2>
+<p>Design mantém liberdade sobre:</p>
+<ul>
+<li>composição;</li>
+<li>grid;</li>
+<li>navegação local;</li>
+<li>componentes;</li>
+<li>hierarquia visual;</li>
+<li>número de frames;</li>
+<li>tipografia dentro da autoridade oficial;</li>
+<li>imagens e ícones;</li>
+<li>densidade;</li>
+<li>motion;</li>
+<li>solução responsiva.</li>
+</ul>
+<p>Design não pode:</p>
+<ul>
+<li>fundir <code>COL-003</code> e <code>COL-004</code> por conveniência;</li>
+<li>inventar transição para preencher a lacuna entre eles;</li>
+<li>transformar pessoas em ranking;</li>
+<li>criar score de aprovação;</li>
+<li>ocultar autoridade, proteção ou estado material;</li>
+<li>representar processamento como decisão confirmada;</li>
+<li>usar low-fidelity como baseline visual canônica.</li>
+</ul>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-21-ia-e-prototipacao-source-lock">21. IA e prototipação — source lock<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-21-ia-e-prototipacao-source-lock" title="Permanent link">&para;</a></h2>
+<p>IA pode explorar forma de materialização, mas não pode inventar:</p>
+<ul>
+<li>campos;</li>
+<li>perguntas obrigatórias;</li>
+<li>critérios de aprovação;</li>
+<li>ações;</li>
+<li>estados;</li>
+<li>transições;</li>
+<li>automações;</li>
+<li>rankings;</li>
+<li>scores;</li>
+<li>recomendações;</li>
+<li>notificações;</li>
+<li>integrações;</li>
+<li>permissões;</li>
+<li>entitlement;</li>
+<li>persistência;</li>
+<li>criação automática de vínculo.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>LACUNA
+→ SINALIZAR
+→ NÃO INVENTAR
+</code></pre></div>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-22-criterios-de-aceite">22. Critérios de aceite<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-22-criterios-de-aceite" title="Permanent link">&para;</a></h2>
+<p>Este Master é funcionalmente suficiente quando a materialização:</p>
+<ol>
+<li>preserva <code>COL-003</code> como responsabilidade distinta de <code>COL-004</code>;</li>
+<li>identifica claramente Coletivo, solicitação, estado e autoridade;</li>
+<li>consome <code>TRN-105..109</code> e <code>TRN-112</code> sem promoção;</li>
+<li>preserva a lacuna de transição estável <code>COL-003 → COL-004</code>;</li>
+<li>não confunde aprovação com vínculo, papel, representação ou administração;</li>
+<li>suporta informação adicional sem inventar formulário universal;</li>
+<li>preserva estados de proteção, contestação, indisponibilidade e resultado indeterminado;</li>
+<li>não transforma ausência de dado em conclusão;</li>
+<li>não cria ranking, score ou recomendação automática de aprovação;</li>
+<li>preserva minimização e separação da perspectiva da Pessoa;</li>
+<li>mantém Planos como capacidade especializada/contextual;</li>
+<li>preserva reversibilidade e idempotência;</li>
+<li>mantém low-fidelity como evidência funcional, não baseline visual;</li>
+<li>mantém IA em source lock;</li>
+<li>não cria IDs, não promove maturidade e não libera Product Engineering.</li>
+</ol>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-23-lacunas-preservadas">23. Lacunas preservadas<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-23-lacunas-preservadas" title="Permanent link">&para;</a></h2>
+<p>Permanecem fora deste Master até autoridade específica:</p>
+<ul>
+<li>transição estável dedicada <code>COL-003 → COL-004</code>;</li>
+<li>critérios materiais universais de aprovação, se vierem a existir;</li>
+<li>política universal de revisão/recurso, se vier a existir;</li>
+<li>RBAC técnico;</li>
+<li>persistência;</li>
+<li>integrações externas;</li>
+<li>notificações finais;</li>
+<li>analytics e KPIs;</li>
+<li>entitlement técnico;</li>
+<li>regras técnicas de criação/atualização de vínculo;</li>
+<li>high-fidelity final;</li>
+<li>protótipo;</li>
+<li>implementação;</li>
+<li>Product Engineering.</li>
+</ul>
+<h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-24-estado-documental">24. Estado documental<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-24-estado-documental" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>MASTER
+→ DRAFT / FUNCTIONAL CONTRACT CANDIDATE
+
+SURFACE GOVERNED
+→ GKR-SURF-COL-003
+
+CONTEXTUAL ENTRY
+→ GKR-SURF-COL-002 / GKR-TRN-112, WHEN APPLICABLE
+
+SPECIALIZED TRANSITIONS
+→ GKR-TRN-105..109
+→ MATURITY PRESERVED
+
+POST-APPROVAL CONTINUITY
+→ GKR-SURF-COL-004
+→ DEDICATED STABLE TRANSITION GAP PRESERVED
+
+ORGANIZATION EQUIVALENT
+→ NONE BY INFERENCE
+
+NEW SURFACE ID
+→ NONE
+
+NEW TRANSITION ID
+→ NONE
+
+MATURITY PROMOTION
+→ NONE
+
+LOW-FIDELITY
+→ FUNCTIONAL EVIDENCE / NOT VISUAL BASELINE
+
+PROTOTYPE
+→ NOT AUTHORIZED BY THIS MASTER
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
 </code></pre></div></section></section></section>
                     <section class='print-page md-section' id='section-10' heading-number='10'>
                         <h1>Research e Validação<a class='headerlink' href='#section-10' title='Permanent link'></a>
@@ -55503,6 +56027,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 .print-site-enumerate-headings #experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master > h1:before { content: '9.4.2 ' }
 
 .print-site-enumerate-headings #experience-architecture-organizations-collectives-journey-organization-active-opportunity-master > h1:before { content: '9.4.3 ' }
+
+.print-site-enumerate-headings #experience-architecture-organizations-collectives-journey-collective-request-management-master > h1:before { content: '9.4.4 ' }
 
 .print-site-enumerate-headings #section-10 > h1:before { content: '10 ' }
 .print-site-enumerate-headings #research > h1:before { content: '10.1 ' }
