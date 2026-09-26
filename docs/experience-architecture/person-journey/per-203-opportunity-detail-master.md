@@ -2,7 +2,7 @@
 id: GKR-UX-PER203-MASTER-001
 title: Jornada da Pessoa — PER-203 — Detalhe de Oportunidade — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.1.1
 maturity: current_surface_design_definition
 depends_on:
   - GKR-UXA-012
@@ -64,14 +64,14 @@ A Pessoa precisa conseguir, conforme aplicável:
 7. compreender condições para participar e incertezas de elegibilidade;
 8. identificar quem oferece e quem é responsável;
 9. compreender patrocínio ou relação comercial;
-10. reconhecer alternativas disponíveis;
-11. salvar para considerar quando a capacidade estiver legitimamente disponível;
-12. comparar quando a capacidade estiver legitimamente disponível;
-13. corrigir, contestar, recusar ou não prosseguir;
-14. iniciar conscientemente uma saída externa;
-15. revisar destino, responsável e transferência de dados/contexto antes da saída;
-16. cancelar a saída e permanecer na Guivos;
-17. retornar ao contexto de descoberta quando aplicável.
+14. reconhecer alternativas disponíveis;
+15. salvar para considerar quando a capacidade estiver legitimamente disponível;
+16. comparar quando a capacidade estiver legitimamente disponível;
+17. corrigir, contestar, recusar ou não prosseguir;
+18. iniciar conscientemente uma saída externa;
+19. revisar destino, responsável e transferência de dados/contexto antes da saída;
+20. cancelar a saída e permanecer na Guivos;
+21. retornar ao contexto de descoberta quando aplicável.
 
 ## 4. Identidade e continuidade
 
@@ -124,6 +124,50 @@ Inferência não pode ser apresentada como fato.
 
 Explicação de relevância não equivale a recomendação definitiva, obrigação, prioridade humana ou garantia de adequação.
 
+### 6.1 Como a Guivos compreende o momento atual
+
+Antes de justificar um Próximo Passo, o Detalhe deve apresentar a base corrente usada para compreender o momento da Pessoa, somente com sinais autorizados, identificáveis e corrigíveis.
+
+Quando aplicável, essa base pode incluir objetivo confirmado, Próximo Passo atual, experiência registrada, etapa concluída, preferência declarada, necessidade informada, disponibilidade autorizada, limitação reconhecida e informação de fonte externa autorizada.
+
+A Pessoa deve conseguir distinguir o que confirmou, o que foi observado em ações ou experiências registradas, o que veio de fonte autorizada, o que é inferência e o que ainda não é conhecido.
+
+Controles mínimos, quando houver uso dessa leitura:
+
+- ver as informações utilizadas;
+- corrigir o momento;
+- impedir o uso de uma informação;
+- informar que o momento mudou.
+
+Quando a base for insuficiente, a Guivos não pode simular compreensão segura do momento.
+
+### 6.2 Avanço reconhecido
+
+Quando houver evidência suficiente, o Detalhe deve tornar visível o avanço relevante já reconhecido na Journey. Esse avanço não deve ser reduzido automaticamente a percentual, pontos, sequência de dias ou quantidade de tarefas.
+
+Evidências podem incluir passo realizado, capacidade desenvolvida, contexto modificado, experiência vivida, decisão consciente, continuidade construída e confirmação da própria Pessoa.
+
+Toda evidência de avanço deve preservar, quando aplicável, origem, data, possibilidade de correção e nível de confiança quando houver inferência.
+
+Sem evidência suficiente, o Detalhe não pode simular progresso.
+
+### 6.3 Por que este Próximo Passo faz sentido
+
+Quando a oportunidade for relacionada a um Próximo Passo, a justificativa deve preservar explicitamente a cadeia:
+
+```text
+MOMENTO ATUAL CONFIRMADO
+→ AVANÇO JÁ RECONHECIDO
+→ OBJETIVO AUTORIZADO
+→ LACUNA OU POSSIBILIDADE ATUAL
+→ PRÓXIMO PASSO PROPOSTO
+→ CONTRIBUIÇÃO POSSÍVEL DA OPORTUNIDADE
+```
+
+A explicação deve indicar quais informações sustentam a relação, o que é fato e inferência, por que o momento torna a possibilidade relevante, qual avanço potencial pode ser apoiado, quais alternativas permanecem disponíveis, quais incertezas existem e como contestar ou corrigir a relação.
+
+A Pessoa deve poder reconhecer que a relação faz sentido, faz sentido parcialmente, não faz sentido, que seu momento mudou ou que deseja outro caminho. Essa manifestação melhora a compreensão futura quando autorizada, mas não cria obrigação de agir.
+
 ## 7. Disponibilidade
 
 Disponibilidade pode assumir estados como:
@@ -160,6 +204,25 @@ Quando aplicável, o Detalhe deve tornar compreensíveis:
 Preço não pode ocultar custo material adicional nem receber destaque promocional que prejudique a compreensão do custo total e das condições.
 
 Oportunidade só pode ser apresentada como gratuita quando não houver cobrança necessária para o acesso principal.
+
+### 8.1 Riscos materiais
+
+Riscos materiais devem ser apresentados antes de ações de alto impacto e não podem ficar implícitos apenas em condições, limitações ou avisos genéricos.
+
+Conforme aplicável, podem incluir:
+
+- risco financeiro;
+- risco físico;
+- risco jurídico;
+- risco de fraude;
+- risco de privacidade;
+- risco reputacional;
+- risco emocional;
+- risco de deslocamento;
+- risco contratual;
+- risco institucional.
+
+Quando houver classificação de risco, o nível não substitui a descrição dos fatores que o sustentam. Informação insuficiente deve permanecer explícita e não pode ser convertida em segurança presumida.
 
 ## 9. Prazo, validade e duração
 
@@ -413,7 +476,8 @@ A Pessoa deve conseguir compreender, quando material:
 - relação comercial;
 - dados/contexto usados;
 - dados/contexto enviados na saída;
-- incertezas e alterações relevantes.
+- incertezas e alterações relevantes;
+- riscos materiais aplicáveis e fatores que os sustentam.
 
 Explicabilidade não autoriza exposição excessiva de informação sensível.
 
@@ -488,7 +552,11 @@ Uma futura solução visual é funcionalmente aceitável quando:
 3. distingue contexto autorizado de inferência;
 4. apresenta disponibilidade sem fabricar urgência;
 5. apresenta preço, custos e condições de forma compreensível;
-6. distingue prazo, validade e duração;
+6. apresenta riscos materiais aplicáveis antes de ações de alto impacto, com fatores compreensíveis;
+7. preserva a base autorizada do momento atual e seus controles de correção/uso;
+8. apresenta avanço reconhecido somente quando houver evidência suficiente;
+9. explica explicitamente a cadeia entre momento atual, avanço, objetivo, lacuna, Próximo Passo e contribuição possível da oportunidade;
+10. distingue prazo, validade e duração;
 7. trata elegibilidade como condição explicável, não aprovação;
 8. identifica responsável;
 9. explicita relação comercial material;
@@ -500,14 +568,14 @@ Uma futura solução visual é funcionalmente aceitável quando:
 15. explicita transferência de dados/contexto;
 16. permite cancelar e permanecer na Guivos;
 17. bloqueia redirecionamento silencioso inválido;
-18. preserva minimização de dados;
-19. trata `BND-001` como fronteira, não tela;
-20. não presume resultado externo;
-21. retorno reabre estado vigente sem fabricar conclusão;
-22. estados internos não criam novos `PER-IDs`;
-23. não impõe baseline visual;
-24. IA permanece subordinada às autoridades;
-25. Product Engineering permanece não liberado.
+22. preserva minimização de dados;
+23. trata `BND-001` como fronteira, não tela;
+24. não presume resultado externo;
+25. retorno reabre estado vigente sem fabricar conclusão;
+26. estados internos não criam novos `PER-IDs`;
+27. não impõe baseline visual;
+28. IA permanece subordinada às autoridades;
+29. Product Engineering permanece não liberado.
 
 ## 30. Limites e lacunas
 
