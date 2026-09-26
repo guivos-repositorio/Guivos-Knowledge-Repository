@@ -72,8 +72,8 @@ ROADMAP
 | Read-First das Homes | `8 / 8 CURRENT / NON-NORMATIVE` |
 | Design das Homes | `DESIGNER-FIRST / AI OPTIONAL / TOOL-NEUTRAL` |
 | Journey | vistas e registries correntes ativos |
-| Jornada da Pessoa — documentação para Design | `26 MASTERS PLANEJADOS APÓS A HOME / 20 CONSTRUÍDOS / PER-002 + PER-003 + PER-004 + PER-005 + PER-006 + PER-007 + PER-008 + PER-010 + PER-011 + PER-012 + PER-201 + PER-202 + PER-203 + PER-101 + PER-102 + PER-103 + PER-104 + PER-105 + PER-106 + PER-107 CURRENT` |
-| Próximo Master documental da Pessoa | `PER-108 — INÍCIO DO PARTICIPANTE / NOT_STARTED` |
+| Jornada da Pessoa — documentação para Design | `26 MASTERS PLANEJADOS APÓS A HOME / 22 CONSTRUÍDOS / PER-002 + PER-003 + PER-004 + PER-005 + PER-006 + PER-007 + PER-008 + PER-010 + PER-011 + PER-012 + PER-201 + PER-202 + PER-203 + PER-101 + PER-102 + PER-103 + PER-104 + PER-105 + PER-106 + PER-107 + PER-108 + PER-009 CURRENT` |
+| Próximo Master documental da Pessoa | `PER-301 — PLANOS E COMPARAÇÃO / NOT_STARTED` |
 | Business | `Start · Growth · Scale · Enterprise` / contratação online / Self-service quando elegível |
 | O/C low-fidelity autenticado | `DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS` |
 | O/C high-fidelity | `AUTHORIZATION GRANTED / EXECUTION RELEASE ISSUED / DELIVERY NOT_RECEIVED` |
@@ -234,7 +234,7 @@ O ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0` liberou a execução ex
 ```text
 PERSON JOURNEY DOCUMENTATION
 → FLOW MAP = CURRENT
-→ 14 / 26 SURFACE MASTERS BUILT
+→ 22 / 26 SURFACE MASTERS BUILT
 
 PER-002
 → GKR-UX-PER002-MASTER-001 v0.1.0
@@ -312,9 +312,15 @@ PER-101
 PER-102..PER-107
 → DOCUMENTED / CURRENT
 
-NEXT DOCUMENTATION TARGET
-→ PER-108 — INÍCIO DO PARTICIPANTE
+PER-108
 → GKR-UX-PER108-MASTER-001 v0.1.0 / CURRENT
+
+PER-009
+→ GKR-UX-PER009-MASTER-001 v0.1.0 / CURRENT CANDIDATE
+→ TRN-406 / TRN-407 = CONTRACTED / UNCHANGED
+
+NEXT DOCUMENTATION TARGET
+→ PER-301 — PLANOS E COMPARAÇÃO
 
 UXA-102 / V5
 → NOT_STARTED
@@ -323,7 +329,7 @@ PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-A próxima construção governada desta coleção é documental: `PER-108 — Início do Participante`. Materialização visual, teste real, implementação ou avanço de `UXA-102/V5` dependem de atos próprios.
+A próxima construção governada desta coleção é documental: `PER-301 — Planos e Comparação`. Materialização visual, teste real, implementação ou avanço de `UXA-102/V5` dependem de atos próprios.
 
 ## 8. Guivos Business
 
