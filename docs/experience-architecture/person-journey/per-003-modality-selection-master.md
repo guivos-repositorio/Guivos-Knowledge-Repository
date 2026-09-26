@@ -122,7 +122,7 @@ PERGUNTAS OPCIONAIS
 
 Design e IA **não podem inventar nova superfície, novo `PER-ID` ou novo handoff** para fechar essa lacuna.
 
-A solução visual pode representar as quatro escolhas correntes; a execução completa de arquivo/perguntas depende de autoridade posterior que feche sua continuidade.
+A solução visual pode representar as quatro escolhas correntes; Arquivo segue o contrato candidato de `PER-013`, enquanto Perguntas Opcionais ainda depende de autoridade posterior que feche sua continuidade.
 
 ## 5. Job principal da Pessoa
 
@@ -307,7 +307,7 @@ Regras:
 - o efeito de cada modalidade permanece distinguível;
 - permissões e autorizações não são herdadas automaticamente entre modalidades;
 - remover uma modalidade deve ter consequência compreensível;
-- combinação envolvendo arquivo/perguntas não cria automaticamente nova rota downstream.
+- combinação envolvendo Arquivo deve respeitar o contrato candidato de `PER-013`; combinação com Perguntas Opcionais não cria automaticamente nova rota downstream.
 
 ## 14. Troca de modalidade
 
