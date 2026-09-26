@@ -180,6 +180,21 @@ nav:
           - Downgrade e Cancelamento: experience-architecture/person-journey/per-303-downgrade-cancellation-master.md
           - Resultado e Recuperação de Plano/Cobrança: experience-architecture/person-journey/per-304-plan-billing-result-recovery-master.md
 
+  - Jornada de Organizações e Coletivos — Superfícies e Fluxos:
+      - Comece por aqui:
+          - Leia Primeiro: experience-architecture/organizations-collectives-journey/read-first.md
+
+      - Fundamentos da Jornada:
+          - Jornada Integrada da Organização: journeys/organization.md
+          - Jornada Integrada do Coletivo: journeys/collective.md
+          - Atores, Autoridades e Jobs Prioritários: experience-architecture/organizations-collectives-authenticated-actors-authorities-and-jobs.md
+
+      - Arquitetura e Fluxos:
+          - Arquitetura da Informação: experience-architecture/organizations-collectives-authenticated-information-architecture.md
+          - Mapa de Superfícies: experience-architecture/organizations-collectives-authenticated-surface-map.md
+          - Mapa de Estados: experience-architecture/organizations-collectives-authenticated-state-map.md
+          - Fluxos Prioritários: experience-architecture/organizations-collectives-authenticated-priority-flows.md
+
   - Research e Validação:
       - Research — Visão Geral: research/index.md
       - Validação de Mercado: research/market-validation/README.md
