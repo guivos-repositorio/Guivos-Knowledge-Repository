@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.44
+version: 13.48.45
 owner: Guivos
 last_updated: 2026-09-25
 normative: true
