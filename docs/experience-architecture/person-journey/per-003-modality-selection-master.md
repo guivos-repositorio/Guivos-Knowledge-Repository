@@ -122,7 +122,7 @@ PERGUNTAS OPCIONAIS
 
 Design e IA **não podem inventar nova superfície, novo `PER-ID` ou novo handoff** para fechar essa lacuna.
 
-A solução visual pode representar as quatro escolhas correntes; Arquivo segue o contrato candidato de `PER-013`, enquanto Perguntas Opcionais ainda depende de autoridade posterior que feche sua continuidade.
+A solução visual pode representar as quatro escolhas correntes; Arquivo segue o contrato candidato de `PER-013`, enquanto Perguntas Opcionais segue o contrato candidato de `PER-014`.
 
 ## 5. Job principal da Pessoa
 
@@ -307,7 +307,7 @@ Regras:
 - o efeito de cada modalidade permanece distinguível;
 - permissões e autorizações não são herdadas automaticamente entre modalidades;
 - remover uma modalidade deve ter consequência compreensível;
-- combinação envolvendo Arquivo deve respeitar o contrato candidato de `PER-013`; combinação com Perguntas Opcionais não cria automaticamente nova rota downstream.
+- combinação envolvendo Arquivo deve respeitar o contrato candidato de `PER-013`; combinação com Perguntas Opcionais deve respeitar o contrato candidato de `PER-014`; combinações entre modalidades não criam rotas adicionais por inferência.
 
 ## 14. Troca de modalidade
 
@@ -347,7 +347,7 @@ A superfície deve tornar compreensível:
 - que Texto não inicia análise;
 - que é possível voltar ou interromper;
 - que combinar modalidades é opcional;
-- que Arquivo possui contrato candidato em `PER-013`, enquanto a continuidade downstream de Perguntas Opcionais ainda não está integralmente contratada no GKR.
+- que Arquivo possui contrato candidato em `PER-013` e Perguntas Opcionais possui contrato candidato em `PER-014`; ambos permanecem sem implementação presumida.
 
 ## 16. Informações que não devem ser exigidas
 
@@ -539,7 +539,7 @@ A IA não pode:
 - iniciar upload automaticamente;
 - inferir preferência;
 - inventar benefício de uma modalidade;
-- inventar continuidade além do contrato candidato de Arquivo ou para Perguntas Opcionais;
+- inventar continuidade além dos contratos candidatos de Arquivo (`PER-013`) e Perguntas Opcionais (`PER-014`);
 - criar novo `PER-ID`;
 - materializar `PER-004` como se já estivesse documentada por este Master.
 
@@ -558,7 +558,7 @@ Uma futura solução visual de `PER-003` é aceitável quando:
 9. a Pessoa consegue voltar ou interromper;
 10. é possível trocar a escolha antes da captura;
 11. o handoff `TRN-003 → PER-004` é preservado como continuidade parcial para texto/voz;
-12. o contrato candidato de Arquivo é preservado sem ampliação e a lacuna downstream de Perguntas Opcionais permanece não inventada;
+12. os contratos candidatos de Arquivo (`PER-013`) e Perguntas Opcionais (`PER-014`) são preservados sem ampliação;
 13. nenhuma autorização material é inferida;
 14. nenhuma preferência é inferida sem autoridade;
 15. indisponibilidade possui fallback explícito e não coercitivo;
@@ -581,7 +581,7 @@ Este Documento Mestre não:
 - implementa upload;
 - define formatos de arquivo;
 - implementa fluxo de perguntas;
-- promove a continuidade de Arquivo além do contrato candidato ou fecha a continuidade de Perguntas Opcionais;
+- promove a continuidade de Arquivo ou Perguntas Opcionais além dos respectivos contratos candidatos;
 - define persistência da escolha;
 - altera `TRN-002` ou `TRN-003`;
 - cria nova superfície;
