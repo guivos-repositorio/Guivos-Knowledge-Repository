@@ -133,6 +133,7 @@ A Jornada da Pessoa possui uma camada própria de documentação para Design e I
 - [PER-107 — Central de Atualizações — Documento Mestre](person-journey/per-107-updates-center-master.md).
 - [PER-108 — Início do Participante — Documento Mestre](person-journey/per-108-participant-home-master.md).
 - [PER-009 — Conta / Configurações — Documento Mestre](person-journey/per-009-account-settings-master.md).
+- [PER-301 — Planos e Comparação — Documento Mestre](person-journey/per-301-plans-comparison-master.md).
 
 A coleção parte de `PER-002`, porque `PER-001` já é governada pelo Documento Mestre da Home Pública — Pessoa. As superfícies seguintes entram progressivamente, uma a uma, somente após construção e validação documental.
 
