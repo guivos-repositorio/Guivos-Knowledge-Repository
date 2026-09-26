@@ -95,6 +95,14 @@ Regras correntes:
 
 Localização desativada, estado sem resultados e composição desktop são governados pelo contrato corrente, pelo Surface Registry e pelas transições vigentes; referências paralelas não são entrada padrão de Design ou IA.
 
-## 8. Estado
+## 8. Planos × Journey — rastreabilidade corrente
+
+A autoridade comercial de Planos deve ser consumida junto da rastreabilidade registrada em `GKR-PLANS-PERSON-001`.
+
+As responsabilidades de entrada/compreensão, jornada essencial, descoberta, filtros, histórico distribuído, controles administrativos e Salvar possuem localização funcional corrente. Diferenciações comerciais de cota/uso justo/profundidade, níveis de exportação, alertas/lembretes/acompanhamento, Intelligence/processamento, integrações, relatórios, suporte e acesso antecipado não autorizam comportamento ou entitlement por inferência.
+
+Nenhum novo `PER-ID` ou `TRN-ID` decorre dessa reconciliação.
+
+## 9. Estado
 
 O detalhamento está `active` como parte integrante do registro granular. A GKR-UX-D5-C4B-001 valida a continuidade especializada com Hoje no limite documental, sem promover a Jornada da Pessoa como completa e sem comprovar implementação técnica.
