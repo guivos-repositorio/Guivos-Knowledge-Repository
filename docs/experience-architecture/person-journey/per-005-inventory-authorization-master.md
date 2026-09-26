@@ -118,7 +118,7 @@ Quando existirem legitimamente, o inventário pode representar:
 - itens derivados revisados;
 - itens removidos ou limitados.
 
-A presença nesta lista não autoriza o Design ou a IA a inventar uma modalidade downstream ainda não contratada.
+A presença nesta lista não autoriza o Design ou a IA a inventar modalidade downstream. Arquivo possui contrato candidato próprio em `PER-013`; Perguntas Opcionais permanece sem continuidade downstream integralmente contratada.
 
 Em especial:
 
@@ -432,7 +432,7 @@ A IA não pode:
 - inventar persistência;
 - antecipar personalização;
 - promover `TRN-004` ou `TRN-005`;
-- absorver Arquivo/Perguntas Opcionais por inferência;
+- absorver `PER-013` ou Perguntas Opcionais por inferência;
 - criar novo `PER-ID`;
 - iniciar processamento;
 - materializar `PER-006` como se estivesse definido por este Master.
@@ -477,7 +477,7 @@ Este Documento Mestre não:
 - cria compreensão inicial;
 - libera persistência;
 - libera personalização;
-- fecha continuidade de Arquivo/Perguntas Opcionais;
+- promove Arquivo além do contrato candidato `PER-013` ou fecha continuidade de Perguntas Opcionais;
 - altera maturidade de `TRN-004` ou `TRN-005`;
 - cria `PER-006`;
 - inicia Product Engineering.
