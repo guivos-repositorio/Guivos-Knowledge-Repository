@@ -111,6 +111,8 @@ PER-003 / ARQUIVO
 
 `PER-004` não absorve Arquivo por inferência.
 
+A adjudicação posterior desta frente concluiu que a lacuna possui job, estados, captura material, falhas/recuperação, reversibilidade e handoff próprios. O contrato candidato `PER-013 — Captura e Revisão de Arquivo` governa `PER-003 / Arquivo → TRN-014 → PER-013 → TRN-015 → PER-005`, preservando `PER-005` como gate de autorização e `PER-006` como processamento posterior.
+
 A remediação deve governar seleção, finalidade, revisão, remoção/substituição, falha, processamento autorizado e continuidade antes de qualquer implementação.
 
 ### 6.2 Perguntas Opcionais

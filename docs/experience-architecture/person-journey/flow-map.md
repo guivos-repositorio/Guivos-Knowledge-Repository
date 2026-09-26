@@ -61,12 +61,28 @@ Estado corrente das transições:
 | `TRN-001` | PER-001 → PER-002 | parcial |
 | `TRN-002` | PER-002 → PER-003 | localmente validada |
 | `TRN-003` | PER-003 → PER-004 | parcial |
+| `TRN-014` | PER-003 → PER-013 | contratada — candidato Arquivo |
+| `TRN-015` | PER-013 → PER-005 | contratada — candidato Arquivo |
 | `TRN-004` | PER-004 → PER-005 | parcial |
 | `TRN-005` | PER-005 → PER-006 | parcial |
 | `TRN-006` | PER-006 → PER-007 | localmente validada |
 | `TRN-007` | PER-007 → PER-008 | integralmente validada |
 
 Regra corrente de `PER-003`:
+
+> A coleção original de 26 Surface Masters permanece concluída. `PER-013` é uma extensão de remediação funcional posterior à auditoria de completude e não reescreve retroativamente o marco 26/26.
+
+Para Arquivo, o contrato candidato é:
+
+```text
+PER-003 / ARQUIVO
+→ TRN-014
+→ PER-013 — CAPTURA E REVISÃO DE ARQUIVO
+→ TRN-015
+→ PER-005
+```
+
+
 
 ```text
 VALIDATED MODALITY CHOICES
