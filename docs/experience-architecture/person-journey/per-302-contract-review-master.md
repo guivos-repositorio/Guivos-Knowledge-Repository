@@ -145,6 +145,8 @@ Essa distinção não autoriza inventar arquitetura de gifting, dependentes, ter
 
 Quando não houver autoridade suficiente para distinguir papéis, a experiência deve permanecer no mínimo necessário e não fabricar relações.
 
+Quando pagador e beneficiário forem diferentes, a continuidade substantiva exige que o confirmante seja **pagador autorizado**. Autenticação da Pessoa, isoladamente, não comprova autoridade financeira. Se essa autorização não puder ser estabelecida por fonte legítima, a continuidade por `TRN-402` deve permanecer bloqueada.
+
 ## 10. Revisão consciente
 
 Antes da continuidade, a Pessoa deve conseguir compreender materialmente:
@@ -153,12 +155,14 @@ Antes da continuidade, a Pessoa deve conseguir compreender materialmente:
 - qual plano é alvo;
 - qual preço de referência se aplica;
 - qual recorrência foi selecionada, quando aplicável;
+- a data de início aplicável;
+- as informações vigentes sobre cancelamento e downgrade;
 - que a ação seguinte é uma continuidade comercial e não mera navegação;
 - que processamento e resultado ainda não estão comprovados nesta superfície.
 
 ## 11. Confirmação
 
-A confirmação deve ser uma ação afirmativa, inequívoca e contextual.
+A confirmação deve ser uma ação afirmativa, inequívoca e contextual, realizada por **pagador autorizado**. A superfície não pode habilitar continuidade substantiva quando a autoridade do pagador necessária não estiver comprovada.
 
 Ela não pode ser produzida por:
 
@@ -378,27 +382,30 @@ O consumo de `PER-302` é aceitável quando:
 4. recorrência é clara quando aplicável;
 5. dados ausentes não são inferidos;
 6. pagador/beneficiário não são expandidos além da autoridade;
-7. revisão precede continuidade;
-8. confirmação é afirmativa;
-9. entrar na superfície não contrata;
-10. revisar não contrata;
-11. voltar não contrata;
-12. retorno é possível sem penalidade artificial;
-13. TRN-401 permanece localmente validada;
-14. TRN-402 permanece localmente validada;
-15. processamento financeiro real não é presumido;
-16. gateway não é inventado;
-17. meio de pagamento não é inventado;
-18. fiscal não é inventado;
-19. proration não é inventada;
-20. entitlement não é ativado por inferência;
-21. repetição não duplica efeito;
-22. autonomia é preservada;
-23. privacidade e minimização são preservadas;
-24. acessibilidade é preservada;
-25. Design mantém liberdade criativa;
-26. nenhum novo ID é criado;
-27. Product Engineering permanece não liberado.
+7. pagador autorizado é requisito para confirmação substantiva;
+8. data de início é apresentada quando aplicável e autorizada;
+9. informações vigentes sobre cancelamento e downgrade são apresentadas antes da continuidade;
+10. revisão precede continuidade;
+11. confirmação é afirmativa;
+12. entrar na superfície não contrata;
+13. revisar não contrata;
+14. voltar não contrata;
+15. retorno é possível sem penalidade artificial;
+16. TRN-401 permanece localmente validada;
+17. TRN-402 permanece localmente validada;
+18. processamento financeiro real não é presumido;
+19. gateway não é inventado;
+20. meio de pagamento não é inventado;
+21. fiscal não é inventado;
+22. proration não é inventada;
+23. entitlement não é ativado por inferência;
+24. repetição não duplica efeito;
+25. autonomia é preservada;
+26. privacidade e minimização são preservadas;
+27. acessibilidade é preservada;
+28. Design mantém liberdade criativa;
+29. nenhum novo ID é criado;
+30. Product Engineering permanece não liberado.
 
 ## 28. Lacunas abertas
 
