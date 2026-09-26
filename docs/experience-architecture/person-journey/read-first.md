@@ -181,7 +181,27 @@ A regra operacional é:
 → SÓ ENTÃO AVANÇAR PARA A PRÓXIMA
 ```
 
-## 9. Estado
+## 9. Completude documental versus completude funcional
+
+A coleção de Surface Masters está concluída em `26 / 26`, mas essa contagem não prova que toda capacidade legítima da Pessoa já possua ciclo funcional completo.
+
+A autoridade `GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001` governa essa distinção e registra os findings correntes de completude funcional.
+
+```text
+26 / 26 SURFACE MASTERS
+→ DOCUMENTAÇÃO PREVISTA CONCLUÍDA
+
+COMPLETUDE FUNCIONAL
+→ AVALIADA POR CAPACIDADE
+→ FINDINGS PODEM EXISTIR SEM INVALIDAR OS 26 MASTERS
+
+CAPACIDADE
+≠ TELA
+```
+
+Nenhuma lacuna funcional autoriza, por si só, novo `PER-ID`, `TRN-ID`, superfície visual ou implementação.
+
+## 10. Estado
 
 ```text
 PERSON JOURNEY DESIGN DOCUMENTATION
