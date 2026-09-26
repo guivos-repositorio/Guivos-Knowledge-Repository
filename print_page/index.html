@@ -2914,6 +2914,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/person-journey/per-005-inventory-authorization-master/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventário e Autorização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -5071,6 +5106,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-person-journey-per-005-inventory-authorization-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.4 Inventário e Autorização
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -6312,6 +6358,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-person-journey-per-005-inventory-authorization-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.4 Inventário e Autorização
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -6769,7 +6826,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <h2 id="index-estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#index-estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="#project-current-state-register">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
 <div class="highlight"><pre><span></span><code>GKR-STATE-001
-→ 3.50.44 / CURRENT
+→ 3.50.45 / CURRENT
 
 ERA
 → GE-2 — KNOWLEDGE
@@ -8932,8 +8989,8 @@ SURFACE MASTERS TO BUILD AFTER THE HOME
 → 26
 
 CURRENT FOUNDATION
-→ GKR-UX-PERSON-JOURNEY-READ-FIRST-001 v0.1.2
-→ GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.3
+→ GKR-UX-PERSON-JOURNEY-READ-FIRST-001 v0.1.3
+→ GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.4
 
 CURRENT SURFACE MASTERS
 → GKR-UX-PER002-MASTER-001 v0.1.0
@@ -8950,15 +9007,20 @@ CURRENT SURFACE MASTERS
 → TEMPORARY HELP = USER-REQUESTED / OPTIONAL
 → DRAFT PERSISTENCE = NOT INVENTED
 → TRN-004 → PER-005 = PARTIAL / UNCHANGED
+→ GKR-UX-PER005-MASTER-001 v0.1.0
+→ PER-005 — INVENTÁRIO E AUTORIZAÇÃO
+→ REVIEW + SPECIFIC AUTHORIZATION = CURRENT DESIGN DEFINITION
+→ PERSISTENCE / PERSONALIZATION = BLOCKED
+→ TRN-005 → PER-006 = PARTIAL / UNCHANGED
 
 BUILT
-→ 3 / 26
+→ 4 / 26
 
 REMAINING
-→ 23 / 26
+→ 22 / 26
 
 NEXT DOCUMENTATION TARGET
-→ PER-005 — INVENTÁRIO E AUTORIZAÇÃO
+→ PER-006 — PROCESSAMENTO VISÍVEL
 
 NEW PER-IDS
 → NONE
@@ -8971,7 +9033,7 @@ PRODUCT ENGINEERING
 </code></pre></div>
 <p>A construção ocorre uma superfície por vez. Planejamento não cria página vazia, novo <code>PER-ID</code>, navegação, tela, protótipo ou implementação por inferência.</p></section><section class="print-page" id="roadmap" heading-number="2.3"><h1 id="roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos">Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos<a class="headerlink" href="#roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-funcao">1. Função<a class="headerlink" href="#roadmap-1-funcao" title="Permanent link">&para;</a></h2>
-<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.44</code> em <strong>frentes governadas de avanço</strong>.</p>
+<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.45</code> em <strong>frentes governadas de avanço</strong>.</p>
 <p>Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.</p>
 <div class="highlight"><pre><span></span><code>ROADMAP
 → ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
@@ -8992,7 +9054,7 @@ ROADMAP
 <tbody>
 <tr>
 <td>Estado global</td>
-<td><code>GKR-STATE-001 v3.50.44 / CURRENT</code></td>
+<td><code>GKR-STATE-001 v3.50.45 / CURRENT</code></td>
 </tr>
 <tr>
 <td>Era</td>
@@ -9028,11 +9090,11 @@ ROADMAP
 </tr>
 <tr>
 <td>Jornada da Pessoa — documentação para Design</td>
-<td><code>26 MASTERS PLANEJADOS APÓS A HOME / 3 CONSTRUÍDOS / PER-002 + PER-003 + PER-004 CURRENT</code></td>
+<td><code>26 MASTERS PLANEJADOS APÓS A HOME / 4 CONSTRUÍDOS / PER-002 + PER-003 + PER-004 + PER-005 CURRENT</code></td>
 </tr>
 <tr>
 <td>Próximo Master documental da Pessoa</td>
-<td><code>PER-005 — INVENTÁRIO E AUTORIZAÇÃO / NOT_STARTED</code></td>
+<td><code>PER-006 — PROCESSAMENTO VISÍVEL / NOT_STARTED</code></td>
 </tr>
 <tr>
 <td>Business</td>
@@ -9200,7 +9262,7 @@ PRODUCT ENGINEERING
 <p><code>PER-002</code> possui boundary funcional corrente, referência interativa local validada e Documento Mestre próprio para consumo de Design e IA opcional. Isso não cria execução automática posterior.</p>
 <div class="highlight"><pre><span></span><code>PERSON JOURNEY DOCUMENTATION
 → FLOW MAP = CURRENT
-→ 3 / 26 SURFACE MASTERS BUILT
+→ 4 / 26 SURFACE MASTERS BUILT
 
 PER-002
 → GKR-UX-PER002-MASTER-001 v0.1.0
@@ -9221,12 +9283,19 @@ PER-004
 → TEMPORARY HELP = USER-REQUESTED / OPTIONAL
 → TRN-004 → PER-005 = PARTIAL
 
+PER-005
+→ GKR-UX-PER005-MASTER-001 v0.1.0
+→ CURRENT DESIGN DEFINITION
+→ INVENTORY + REVIEW + SPECIFIC AUTHORIZATION
+→ PERSISTENCE / PERSONALIZATION = BLOCKED
+→ TRN-005 → PER-006 = PARTIAL
+
 AUTHENTICATION
 → INTERNAL GATE / STATE
 → ≠ MATERIAL PROCESSING AUTHORIZATION
 
 NEXT DOCUMENTATION TARGET
-→ PER-005 — INVENTÁRIO E AUTORIZAÇÃO
+→ PER-006 — PROCESSAMENTO VISÍVEL
 → DOCUMENTATION ONLY / NOT_STARTED
 
 UXA-102 / V5
@@ -9235,7 +9304,7 @@ UXA-102 / V5
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 </code></pre></div>
-<p>A próxima construção governada desta coleção é documental: <code>PER-005 — Inventário e Autorização</code>. Materialização visual, teste real, implementação ou avanço de <code>UXA-102/V5</code> dependem de atos próprios.</p>
+<p>A próxima construção governada desta coleção é documental: <code>PER-006 — Processamento Visível</code>. Materialização visual, teste real, implementação ou avanço de <code>UXA-102/V5</code> dependem de atos próprios.</p>
 <h2 id="roadmap-8-guivos-business">8. Guivos Business<a class="headerlink" href="#roadmap-8-guivos-business" title="Permanent link">&para;</a></h2>
 <p><code>GPA-004 v1.7.5</code> governa a arquitetura funcional do Guivos Business.</p>
 <div class="highlight"><pre><span></span><code>BUSINESS
@@ -11390,7 +11459,8 @@ GUIVOS → DEVE POSSUIR IDENTIDADE INSTITUCIONAL PRÓPRIA
 <li><code>GKR-UX-PERSON-JOURNEY-FLOW-001</code> — mapa completo das 26 superfícies/responsabilidades a documentar após a Home;</li>
 <li><code>GKR-UX-PER002-MASTER-001</code> — Documento Mestre de <code>PER-002 — Entrada Protegida</code>;</li>
 <li><code>GKR-UX-PER003-MASTER-001</code> — Documento Mestre de <code>PER-003 — Escolha de Modalidade</code>;</li>
-<li><code>GKR-UX-PER004-MASTER-001</code> — Documento Mestre de <code>PER-004 — Expressão por Texto ou Voz</code>.</li>
+<li><code>GKR-UX-PER004-MASTER-001</code> — Documento Mestre de <code>PER-004 — Expressão por Texto ou Voz</code>;</li>
+<li><code>GKR-UX-PER005-MASTER-001</code> — Documento Mestre de <code>PER-005 — Inventário e Autorização</code>.</li>
 </ul>
 <p>A coleção não cria telas por inferência. Cada Documento Mestre deve corresponder a uma superfície/responsabilidade já reconhecida pelo Registry e preservar estados internos dentro dessa mesma responsabilidade quando não existir novo <code>PER-ID</code>.</p>
 <p>Para prototipação e Design, continuar usando:</p>
@@ -14627,7 +14697,8 @@ CURRENT AUTHORITIES
 <li><a href="#experience-architecture-person-journey-flow-map">Fluxo Completo de Superfícies</a>;</li>
 <li><a href="#experience-architecture-person-journey-per-002-protected-entry-master">PER-002 — Entrada Protegida — Documento Mestre</a>;</li>
 <li><a href="#experience-architecture-person-journey-per-003-modality-selection-master">PER-003 — Escolha de Modalidade — Documento Mestre</a>;</li>
-<li><a href="#experience-architecture-person-journey-per-004-text-voice-expression-master">PER-004 — Expressão por Texto ou Voz — Documento Mestre</a>.</li>
+<li><a href="#experience-architecture-person-journey-per-004-text-voice-expression-master">PER-004 — Expressão por Texto ou Voz — Documento Mestre</a>;</li>
+<li><a href="#experience-architecture-person-journey-per-005-inventory-authorization-master">PER-005 — Inventário e Autorização — Documento Mestre</a>.</li>
 </ul>
 <p>A coleção parte de <code>PER-002</code>, porque <code>PER-001</code> já é governada pelo Documento Mestre da Home Pública — Pessoa. As superfícies seguintes entram progressivamente, uma a uma, somente após construção e validação documental.</p>
 <h3 id="experience-architecture-32-contextos-principais-de-experiencia">3.2 Contextos principais de experiência<a class="headerlink" href="#experience-architecture-32-contextos-principais-de-experiencia" title="Permanent link">&para;</a></h3>
@@ -24493,7 +24564,8 @@ IMPLEMENTATION
 <li><code>GKR-UX-PERSON-JOURNEY-FLOW-001</code> — mapa completo das 26 superfícies/responsabilidades a documentar após a Home;</li>
 <li><code>GKR-UX-PER002-MASTER-001</code> — Documento Mestre de <code>PER-002 — Entrada Protegida</code>;</li>
 <li><code>GKR-UX-PER003-MASTER-001</code> — Documento Mestre de <code>PER-003 — Escolha de Modalidade</code>;</li>
-<li><code>GKR-UX-PER004-MASTER-001</code> — Documento Mestre de <code>PER-004 — Expressão por Texto ou Voz</code>.</li>
+<li><code>GKR-UX-PER004-MASTER-001</code> — Documento Mestre de <code>PER-004 — Expressão por Texto ou Voz</code>;</li>
+<li><code>GKR-UX-PER005-MASTER-001</code> — Documento Mestre de <code>PER-005 — Inventário e Autorização</code>.</li>
 </ul>
 <p>A coleção não cria telas por inferência. Cada Documento Mestre deve corresponder a uma superfície/responsabilidade já reconhecida pelo Registry e preservar estados internos dentro dessa mesma responsabilidade quando não existir novo <code>PER-ID</code>.</p>
 <p>Para prototipação e Design, continuar usando:</p>
@@ -25038,9 +25110,10 @@ CURRENT SURFACE MASTERS
 → PER-002 — ENTRADA PROTEGIDA
 → PER-003 — ESCOLHA DE MODALIDADE
 → PER-004 — EXPRESSÃO POR TEXTO OU VOZ
+→ PER-005 — INVENTÁRIO E AUTORIZAÇÃO
 
 NEXT DOCUMENTATION TARGET
-→ PER-005 — INVENTÁRIO E AUTORIZAÇÃO
+→ PER-006 — PROCESSAMENTO VISÍVEL
 
 VISUAL MATERIALIZATION
 → DESIGN-OWNED
@@ -25230,13 +25303,13 @@ PER-301
 <td style="text-align: right;">04</td>
 <td><code>PER-005</code></td>
 <td>Inventário e Autorização</td>
-<td>próximo / não iniciado</td>
+<td><strong>construído / current</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;">05</td>
 <td><code>PER-006</code></td>
 <td>Processamento Visível</td>
-<td>planejado</td>
+<td>próximo / não iniciado</td>
 </tr>
 <tr>
 <td style="text-align: right;">06</td>
@@ -25395,16 +25468,17 @@ NEW SURFACE MASTERS TO BUILD
 → 26
 
 BUILT
-→ 3 / 26
+→ 4 / 26
 → PER-002
 → PER-003
 → PER-004
+→ PER-005
 
 REMAINING
-→ 23 / 26
+→ 22 / 26
 
 NEXT DOCUMENTATION TARGET
-→ PER-005 — INVENTÁRIO E AUTORIZAÇÃO
+→ PER-006 — PROCESSAMENTO VISÍVEL
 
 NEW PER-IDS
 → NONE
@@ -26957,6 +27031,467 @@ TRN-004
 
 NEXT DOCUMENTATION TARGET
 → PER-005 — INVENTÁRIO E AUTORIZAÇÃO
+
+NEW VISUAL MATERIALIZATION
+→ NONE
+
+PRODUCT ENGINEERING
+→ NOT RELEASED BY THIS DOCUMENT
+</code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-per-005-inventory-authorization-master" heading-number="8.2.4"><h1 id="experience-architecture-person-journey-per-005-inventory-authorization-master-jornada-da-pessoa-per-005-inventario-e-autorizacao-documento-mestre-de-superficie">Jornada da Pessoa — PER-005 — Inventário e Autorização — Documento Mestre de Superfície<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-jornada-da-pessoa-per-005-inventario-e-autorizacao-documento-mestre-de-superficie" title="Permanent link">&para;</a></h1>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento consolida a definição corrente de consumo de <code>PER-005 — Inventário e Autorização</code> para designer humana, IA opcional, Produto, UX, Research, Legal/Privacidade e Engenharia.</p>
+<p>A superfície existe para permitir que a Pessoa veja o que foi recebido, distinga natureza e finalidade dos itens, revise o conjunto aplicável e decida conscientemente quais conteúdos poderão ser usados para preparar uma compreensão inicial temporária e revisável.</p>
+<p>Este documento não cria tela, layout, wireframe, UI, protótipo, sistema visual ou implementação.</p>
+<div class="highlight"><pre><span></span><code>PER-004 — EXPRESSÃO POR TEXTO OU VOZ
+→ TRN-004 / PARCIAL
+→ PER-005 — INVENTÁRIO E AUTORIZAÇÃO
+→ TRN-005 / PARCIAL
+→ PER-006 — PROCESSAMENTO VISÍVEL
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-2-papel-na-jornada">2. Papel na Jornada<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-2-papel-na-jornada" title="Permanent link">&para;</a></h2>
+<p><code>PER-005</code> é a responsabilidade de revisão e autorização anterior ao processamento material.</p>
+<p>Ela governa:</p>
+<ul>
+<li>inventário compreensível do conteúdo recebido;</li>
+<li>distinção entre conteúdo de origem, transcrição, derivado e item removido ou limitado;</li>
+<li>finalidade aplicável a cada uso material;</li>
+<li>seleção consciente dos itens elegíveis;</li>
+<li>autorização específica para preparar compreensão inicial temporária e revisável;</li>
+<li>recusa sem início de processamento;</li>
+<li>revisão, remoção, limitação, retorno e retirada quando aplicável;</li>
+<li>handoff governado para <code>PER-006</code>.</li>
+</ul>
+<p>Ela não governa:</p>
+<ul>
+<li>processamento material;</li>
+<li>formação ou apresentação da compreensão inicial;</li>
+<li>persistência da compreensão;</li>
+<li>personalização;</li>
+<li>decisão posterior sobre persistência ou personalização;</li>
+<li>implementação de storage, retenção, exclusão ou mecanismos jurídicos finais.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-3-entrada-legitima">3. Entrada legítima<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-3-entrada-legitima" title="Permanent link">&para;</a></h2>
+<p>A entrada corrente ocorre por <code>TRN-004 — PER-004 → PER-005</code>, que permanece parcial.</p>
+<p>O contrato corrente de <code>PER-004</code> permite entregar, quando aplicável:</p>
+<ul>
+<li>conteúdos de origem revisados;</li>
+<li>transcrição revisada;</li>
+<li>síntese derivada somente quando conscientemente incluída;</li>
+<li>itens mantidos em aberto;</li>
+<li>origem e natureza;</li>
+<li>escolhas da Pessoa;</li>
+<li>ausência de autorização para processamento material.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>PER-004 CONCLUÍDA
+→ INVENTÁRIO PRONTO
+
+INVENTÁRIO PRONTO
+≠ AUTORIZADO PARA PROCESSAR
+</code></pre></div>
+<p>A parcialidade de <code>TRN-004</code> não é promovida por este Master.</p>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-4-job-da-pessoa">4. Job da Pessoa<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-4-job-da-pessoa" title="Permanent link">&para;</a></h2>
+<p>A Pessoa precisa conseguir responder, antes de qualquer processamento material:</p>
+<ol>
+<li>o que a Guivos recebeu;</li>
+<li>qual é a natureza de cada item;</li>
+<li>qual item poderá ser usado;</li>
+<li>para qual finalidade;</li>
+<li>qual resultado intermediário será preparado;</li>
+<li>o que acontecerá se não autorizar;</li>
+<li>como corrigir, limitar, remover ou voltar;</li>
+<li>se existe algo ainda desconhecido, contestado ou não elegível.</li>
+</ol>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-5-inventario-compreensivel">5. Inventário compreensível<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-5-inventario-compreensivel" title="Permanent link">&para;</a></h2>
+<p>Quando existirem legitimamente, o inventário pode representar:</p>
+<ul>
+<li>textos fornecidos;</li>
+<li>respostas opcionais;</li>
+<li>gravações;</li>
+<li>transcrições;</li>
+<li>arquivos;</li>
+<li>extrações propostas;</li>
+<li>fontes externas conectadas;</li>
+<li>itens derivados revisados;</li>
+<li>itens removidos ou limitados.</li>
+</ul>
+<p>A presença nesta lista não autoriza o Design ou a IA a inventar uma modalidade downstream ainda não contratada.</p>
+<p>Em especial:</p>
+<div class="highlight"><pre><span></span><code>ARQUIVO / PER-003 OPTIONAL QUESTIONS
+→ CONTINUIDADE DOWNSTREAM ESPECÍFICA AINDA NÃO INTEGRALMENTE CONTRATADA
+→ NÃO MATERIALIZAR POR INFERÊNCIA
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-6-natureza-e-proveniencia">6. Natureza e proveniência<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-6-natureza-e-proveniencia" title="Permanent link">&para;</a></h2>
+<p>A experiência deve manter distinguíveis, quando aplicável:</p>
+<table>
+<thead>
+<tr>
+<th>Natureza</th>
+<th>Regra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>conteúdo de origem</td>
+<td>fornecido diretamente pela Pessoa</td>
+</tr>
+<tr>
+<td>gravação</td>
+<td>fonte de voz, com tratamento próprio</td>
+</tr>
+<tr>
+<td>transcrição</td>
+<td>representação automática/revisável; não é confirmação automática</td>
+</tr>
+<tr>
+<td>extração proposta</td>
+<td>derivação que exige clareza de origem e revisão aplicável</td>
+</tr>
+<tr>
+<td>item derivado revisado</td>
+<td>conteúdo conscientemente incluído a partir de ajuda temporária</td>
+</tr>
+<tr>
+<td>removido ou limitado</td>
+<td>não pode reaparecer silenciosamente como elegível</td>
+</tr>
+<tr>
+<td>desconhecido ou contestado</td>
+<td>permanece explicitamente não resolvido</td>
+</tr>
+</tbody>
+</table>
+<p>Remover uma representação derivada não pode excluir silenciosamente sua fonte, e remover a fonte não autoriza preservar derivados sem fundamento e explicação aplicáveis.</p>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-7-finalidade-corrente">7. Finalidade corrente<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-7-finalidade-corrente" title="Permanent link">&para;</a></h2>
+<p>Nesta etapa, a finalidade material ilustrada e contratada é:</p>
+<blockquote>
+<p>usar somente os itens conscientemente autorizados para preparar uma compreensão inicial temporária e revisável.</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code>AUTORIZAR PREPARAÇÃO DA COMPREENSÃO INICIAL
+≠ AUTORIZAR PERSISTÊNCIA DA COMPREENSÃO
+≠ AUTORIZAR PERSONALIZAÇÃO
+≠ AUTORIZAR USO FUTURO IRRESTRITO
+</code></pre></div>
+<p>Persistência e personalização permanecem bloqueadas até gates posteriores.</p>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-8-autorizacoes-especificas">8. Autorizações específicas<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-8-autorizacoes-especificas" title="Permanent link">&para;</a></h2>
+<p>As autorizações devem:</p>
+<ul>
+<li>ser específicas;</li>
+<li>iniciar desmarcadas;</li>
+<li>identificar o item ou conjunto legitimamente agrupado;</li>
+<li>identificar a finalidade;</li>
+<li>explicar o resultado intermediário;</li>
+<li>explicar o efeito da recusa;</li>
+<li>não ser inferidas da autenticação;</li>
+<li>não ser inferidas da captura;</li>
+<li>não ser inferidas da revisão;</li>
+<li>não ser inferidas da continuidade para esta superfície.</li>
+</ul>
+<p>Uma confirmação genérica não substitui autorizações específicas quando efeitos diferentes exigirem decisões diferentes.</p>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-9-selecao-de-itens">9. Seleção de itens<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-9-selecao-de-itens" title="Permanent link">&para;</a></h2>
+<p>A Pessoa deve poder decidir quais itens elegíveis poderão participar da preparação da compreensão inicial.</p>
+<p>O Design deve preservar:</p>
+<ul>
+<li>ausência de seleção automática;</li>
+<li>possibilidade de revisar antes de autorizar;</li>
+<li>possibilidade de retirar item da seleção;</li>
+<li>distinção entre remover do uso atual e excluir a fonte;</li>
+<li>visibilidade de itens limitados ou não elegíveis quando isso for necessário para compreender o estado;</li>
+<li>ausência de pressão para autorizar mais conteúdo.</li>
+</ul>
+<p>Mais itens autorizados não significam automaticamente melhor compreensão.</p>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-10-recusa">10. Recusa<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-10-recusa" title="Permanent link">&para;</a></h2>
+<p>A recusa é uma decisão legítima.</p>
+<p>A autoridade corrente distingue:</p>
+<ul>
+<li>autorizar somente os itens marcados para preparar a compreensão inicial;</li>
+<li>não autorizar processamento e voltar a explorar.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>NÃO AUTORIZAR
+→ NÃO INICIA COMPREENSÃO
+→ NÃO INICIA PERSISTÊNCIA
+→ NÃO INICIA PERSONALIZAÇÃO
+</code></pre></div>
+<p>A recusa de uma finalidade opcional não deve ser apresentada como erro, falha, perda de comprometimento ou insuficiência da Pessoa.</p>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-11-revisao-e-correcao">11. Revisão e correção<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-11-revisao-e-correcao" title="Permanent link">&para;</a></h2>
+<p>Antes de autorizar, a Pessoa deve poder, conforme a natureza do item:</p>
+<ul>
+<li>revisar;</li>
+<li>corrigir;</li>
+<li>voltar à origem quando a autoridade permitir;</li>
+<li>remover;</li>
+<li>limitar;</li>
+<li>contestar;</li>
+<li>manter em aberto;</li>
+<li>excluir da seleção de uso atual.</li>
+</ul>
+<p>A superfície não deve corrigir silenciosamente conteúdo de origem, transcrição ou derivado.</p>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-12-retorno-para-per-004">12. Retorno para PER-004<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-12-retorno-para-per-004" title="Permanent link">&para;</a></h2>
+<p>Quando a Pessoa precisar alterar o conteúdo que pertence à responsabilidade de expressão/revisão, o Design pode oferecer retorno compatível com o contrato corrente.</p>
+<p>Esse retorno:</p>
+<ul>
+<li>não cria nova autorização;</li>
+<li>não preserva seleção inválida silenciosamente;</li>
+<li>não transforma <code>TRN-004</code> em integralmente validada;</li>
+<li>deve exigir nova revisão quando houver mudança material no inventário.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-13-pausa-saida-remocao-e-exclusao">13. Pausa, saída, remoção e exclusão<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-13-pausa-saida-remocao-e-exclusao" title="Permanent link">&para;</a></h2>
+<p>A experiência deve distinguir efeitos diferentes:</p>
+<ul>
+<li>pausar;</li>
+<li>salvar rascunho, somente quando persistência estiver legitimamente definida;</li>
+<li>sair;</li>
+<li>retirar autorização;</li>
+<li>remover item;</li>
+<li>excluir fonte;</li>
+<li>apagar relato e recomeçar;</li>
+<li>voltar a explorar sem processamento.</li>
+</ul>
+<p>A ação destrutiva deve explicar sua consequência antes da confirmação.</p>
+<p>Este Master não define armazenamento, retenção ou política jurídica final.</p>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-14-informacoes-de-terceiros-e-sensibilidade">14. Informações de terceiros e sensibilidade<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-14-informacoes-de-terceiros-e-sensibilidade" title="Permanent link">&para;</a></h2>
+<p>Quando um item puder conter informação de terceiros ou conteúdo sensível, a experiência deve:</p>
+<ul>
+<li>sinalizar a necessidade de cuidado proporcional;</li>
+<li>permitir revisão e remoção;</li>
+<li>limitar uso ao necessário e autorizado;</li>
+<li>não inferir autorização de terceiros;</li>
+<li>não exigir exposição adicional para prosseguir;</li>
+<li>bloquear uso incompatível quando a proteção aplicável não estiver satisfeita.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-15-estados-funcionais">15. Estados funcionais<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-15-estados-funcionais" title="Permanent link">&para;</a></h2>
+<p>O Design deve conseguir acomodar, quando aplicável:</p>
+<ol>
+<li>inventário recebido;</li>
+<li>revisão de item;</li>
+<li>item corrigido;</li>
+<li>item removido ou limitado;</li>
+<li>item contestado ou em aberto;</li>
+<li>nenhuma autorização selecionada;</li>
+<li>seleção parcial;</li>
+<li>autorização pronta para confirmação;</li>
+<li>autorização confirmada;</li>
+<li>recusa de processamento;</li>
+<li>ação necessária;</li>
+<li>pausa;</li>
+<li>retorno para revisão;</li>
+<li>estado pronto para <code>TRN-005</code>.</li>
+</ol>
+<div class="highlight"><pre><span></span><code>ESTADOS FUNCIONAIS
+≠ TELAS CANÔNICAS
+≠ NOVOS PER-IDs
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-16-estado-pronto-para-processamento">16. Estado pronto para processamento<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-16-estado-pronto-para-processamento" title="Permanent link">&para;</a></h2>
+<p>Somente itens revisados e conscientemente autorizados podem compor o handoff material para <code>PER-006</code>.</p>
+<p>O estado deve preservar, quando aplicável:</p>
+<ul>
+<li>identificador lógico do item;</li>
+<li>natureza;</li>
+<li>proveniência;</li>
+<li>finalidade autorizada;</li>
+<li>limites ou exclusões;</li>
+<li>estado de revisão;</li>
+<li>autorização registrada;</li>
+<li>itens não autorizados fora do conjunto de processamento.</li>
+</ul>
+<p>Nenhum dado adicional pode ser inferido como autorizado apenas porque está disponível tecnicamente.</p>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-17-handoff-para-per-006">17. Handoff para PER-006<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-17-handoff-para-per-006" title="Permanent link">&para;</a></h2>
+<p><code>TRN-005 — PER-005 → PER-006</code> permanece parcial.</p>
+<div class="highlight"><pre><span></span><code>INVENTÁRIO REVISADO
+→ AUTORIZAÇÃO ESPECÍFICA
+→ TRN-005 / PARCIAL
+→ PER-006 — PROCESSAMENTO VISÍVEL
+</code></pre></div>
+<p>A passagem não autoriza:</p>
+<ul>
+<li>persistência da compreensão;</li>
+<li>personalização;</li>
+<li>uso futuro irrestrito;</li>
+<li>expansão silenciosa de finalidade.</li>
+</ul>
+<p>Referências visuais paralelas não são autoridade corrente para promover <code>TRN-005</code>.</p>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-18-falhas-e-acao-necessaria">18. Falhas e ação necessária<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-18-falhas-e-acao-necessaria" title="Permanent link">&para;</a></h2>
+<p>A experiência deve prever, sem inventar mecanismo técnico:</p>
+<ul>
+<li>item indisponível;</li>
+<li>origem não identificável;</li>
+<li>conflito entre fonte e derivado;</li>
+<li>autorização incompleta;</li>
+<li>item que exige nova revisão;</li>
+<li>proteção adicional necessária;</li>
+<li>alteração material após seleção;</li>
+<li>falha ao registrar decisão.</li>
+</ul>
+<p>Quando não houver base legítima para continuar, o processamento deve permanecer bloqueado.</p>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-19-linguagem">19. Linguagem<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-19-linguagem" title="Permanent link">&para;</a></h2>
+<p>A linguagem deve:</p>
+<ul>
+<li>dizer claramente o que será usado e para quê;</li>
+<li>evitar “aceitar tudo” como padrão;</li>
+<li>evitar urgência;</li>
+<li>evitar culpa;</li>
+<li>evitar promessa de compreensão completa;</li>
+<li>distinguir autorização de autenticação;</li>
+<li>distinguir revisão de autorização;</li>
+<li>distinguir autorização de persistência/personalização;</li>
+<li>explicar consequências de recusa ou remoção.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-20-acessibilidade">20. Acessibilidade<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-20-acessibilidade" title="Permanent link">&para;</a></h2>
+<p>A futura solução deve considerar:</p>
+<ul>
+<li>operação por teclado;</li>
+<li>foco visível;</li>
+<li>associação clara entre item, finalidade e controle;</li>
+<li>estado selecionado não dependente apenas de cor;</li>
+<li>mensagens de erro e ação necessária acessíveis;</li>
+<li>confirmação destrutiva compreensível;</li>
+<li>suporte a zoom e responsividade;</li>
+<li>linguagem compatível com leitura clara.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-21-conteudo-sintetico-para-design">21. Conteúdo sintético para Design<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-21-conteudo-sintetico-para-design" title="Permanent link">&para;</a></h2>
+<p>Design pode simular:</p>
+<ul>
+<li>inventário fictício;</li>
+<li>itens de naturezas diferentes;</li>
+<li>transcrição sintética;</li>
+<li>item derivado fictício;</li>
+<li>item removido ou limitado;</li>
+<li>seleção parcial;</li>
+<li>recusa;</li>
+<li>ação necessária;</li>
+<li>handoff simulado para <code>PER-006</code>.</li>
+</ul>
+<p>Não pode apresentar como real:</p>
+<ul>
+<li>autorização real;</li>
+<li>processamento real;</li>
+<li>persistência real;</li>
+<li>dado pessoal real;</li>
+<li>conexão real de fonte externa;</li>
+<li>extração real;</li>
+<li>exclusão técnica real.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-22-liberdade-de-design">22. Liberdade de Design<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-22-liberdade-de-design" title="Permanent link">&para;</a></h2>
+<p>A designer pode decidir:</p>
+<ul>
+<li>quantidade de frames;</li>
+<li>composição;</li>
+<li>componentes;</li>
+<li>agrupamento visual;</li>
+<li>hierarquia;</li>
+<li>tipografia;</li>
+<li>paleta;</li>
+<li>iconografia;</li>
+<li>densidade;</li>
+<li>motion;</li>
+<li>microinterações;</li>
+<li>responsividade;</li>
+<li>forma visual de inventário, seleção, confirmação e recusa.</li>
+</ul>
+<p>O GKR não define baseline visual obrigatório para <code>PER-005</code>.</p>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-23-uso-por-ia">23. Uso por IA<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-23-uso-por-ia" title="Permanent link">&para;</a></h2>
+<p>Quando IA for usada para explorar <code>PER-005</code>, o contexto mínimo deve incluir:</p>
+<ol>
+<li><code>GKR-UX-PERSON-JOURNEY-READ-FIRST-001</code>;</li>
+<li><code>GKR-UX-PERSON-JOURNEY-FLOW-001</code>;</li>
+<li>este Documento Mestre;</li>
+<li>Surface Registry e detalhamento da Pessoa;</li>
+<li>Transition Registry;</li>
+<li><code>UXA-023</code>;</li>
+<li><code>UXA-035</code>;</li>
+<li><code>GKR-UX-PER004-MASTER-001</code> para a fronteira de entrada.</li>
+</ol>
+<p>A IA não pode:</p>
+<ul>
+<li>pré-selecionar autorizações;</li>
+<li>transformar autenticação em consentimento;</li>
+<li>inventar finalidade;</li>
+<li>inventar persistência;</li>
+<li>antecipar personalização;</li>
+<li>promover <code>TRN-004</code> ou <code>TRN-005</code>;</li>
+<li>absorver Arquivo/Perguntas Opcionais por inferência;</li>
+<li>criar novo <code>PER-ID</code>;</li>
+<li>iniciar processamento;</li>
+<li>materializar <code>PER-006</code> como se estivesse definido por este Master.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-24-criterios-de-aceite-funcional">24. Critérios de Aceite Funcional<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-24-criterios-de-aceite-funcional" title="Permanent link">&para;</a></h2>
+<p>Uma futura solução visual de <code>PER-005</code> é aceitável quando:</p>
+<ol>
+<li>o inventário é compreensível;</li>
+<li>natureza e proveniência permanecem distinguíveis;</li>
+<li>revisão antecede processamento;</li>
+<li>autorizações iniciam desmarcadas;</li>
+<li>cada autorização possui finalidade compreensível;</li>
+<li>somente itens conscientemente selecionados podem ser autorizados;</li>
+<li>recusa não inicia processamento;</li>
+<li>autenticação não equivale a autorização;</li>
+<li>captura não equivale a autorização;</li>
+<li>persistência e personalização permanecem bloqueadas;</li>
+<li>remoção/limitação não é confundida com exclusão técnica;</li>
+<li>itens alterados materialmente exigem nova revisão aplicável;</li>
+<li>informação de terceiros não é tratada como automaticamente autorizada;</li>
+<li><code>TRN-004</code> permanece parcial;</li>
+<li><code>TRN-005</code> permanece parcial;</li>
+<li>nenhuma nova superfície é criada;</li>
+<li>Product Engineering permanece não liberado.</li>
+</ol>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-25-limites">25. Limites<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-25-limites" title="Permanent link">&para;</a></h2>
+<p>Este Documento Mestre não:</p>
+<ul>
+<li>cria tela final;</li>
+<li>cria Figma;</li>
+<li>cria protótipo;</li>
+<li>define texto jurídico final;</li>
+<li>conclui política de privacidade;</li>
+<li>define storage;</li>
+<li>define retenção;</li>
+<li>implementa exclusão;</li>
+<li>implementa autorização;</li>
+<li>define modelo de IA;</li>
+<li>executa processamento;</li>
+<li>cria compreensão inicial;</li>
+<li>libera persistência;</li>
+<li>libera personalização;</li>
+<li>fecha continuidade de Arquivo/Perguntas Opcionais;</li>
+<li>altera maturidade de <code>TRN-004</code> ou <code>TRN-005</code>;</li>
+<li>cria <code>PER-006</code>;</li>
+<li>inicia Product Engineering.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-005-inventory-authorization-master-26-estado-corrente">26. Estado Corrente<a class="headerlink" href="#experience-architecture-person-journey-per-005-inventory-authorization-master-26-estado-corrente" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>PER-005 MASTER
+→ CURRENT DESIGN DEFINITION
+
+ENTRY
+→ TRN-004 / PARTIAL
+
+JOB
+→ REVIEW + AUTHORIZE
+
+INVENTORY
+→ CONTENT + NATURE + PROVENANCE + PURPOSE
+
+AUTHORIZATION
+→ SPECIFIC
+→ INITIALLY UNSELECTED
+→ ONLY FOR REVIEWED ELIGIBLE ITEMS
+
+CURRENT MATERIAL PURPOSE
+→ PREPARE TEMPORARY / REVIEWABLE INITIAL UNDERSTANDING
+
+REFUSAL
+→ LEGITIMATE
+→ NO PROCESSING
+
+PERSISTENCE
+→ BLOCKED
+
+PERSONALIZATION
+→ BLOCKED
+
+TRN-005
+→ PARTIAL / UNCHANGED
+
+NEXT DOCUMENTATION TARGET
+→ PER-006 — PROCESSAMENTO VISÍVEL
 
 NEW VISUAL MATERIALIZATION
 → NONE
@@ -36595,6 +37130,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 .print-site-enumerate-headings #experience-architecture-person-journey-per-003-modality-selection-master > h1:before { content: '8.2.2 ' }
 
 .print-site-enumerate-headings #experience-architecture-person-journey-per-004-text-voice-expression-master > h1:before { content: '8.2.3 ' }
+
+.print-site-enumerate-headings #experience-architecture-person-journey-per-005-inventory-authorization-master > h1:before { content: '8.2.4 ' }
 
 .print-site-enumerate-headings #section-9 > h1:before { content: '9 ' }
 .print-site-enumerate-headings #research > h1:before { content: '9.1 ' }
