@@ -2759,6 +2759,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../experience-architecture/person-journey/ux-ui-orchestration-master/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documento Mestre de Orquestração UX/UI
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../experience-architecture/person-journey/flow-map/" class="md-nav__link">
         
   
@@ -5967,10 +6002,21 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#experience-architecture-person-journey-ux-ui-orchestration-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.2 Documento Mestre de Orquestração UX/UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#experience-architecture-person-journey-flow-map" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.1.2 Fluxo Completo de Superfícies
+        8.1.3 Fluxo Completo de Superfícies
       
     </span>
   </a>
@@ -5981,7 +6027,7 @@
   <a href="#experience-architecture-person-journey-functional-completeness-authority" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.1.3 Completude Funcional
+        8.1.4 Completude Funcional
       
     </span>
   </a>
@@ -7505,10 +7551,21 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#experience-architecture-person-journey-ux-ui-orchestration-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.2 Documento Mestre de Orquestração UX/UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#experience-architecture-person-journey-flow-map" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.1.2 Fluxo Completo de Superfícies
+        8.1.3 Fluxo Completo de Superfícies
       
     </span>
   </a>
@@ -7519,7 +7576,7 @@
   <a href="#experience-architecture-person-journey-functional-completeness-authority" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.1.3 Completude Funcional
+        8.1.4 Completude Funcional
       
     </span>
   </a>
@@ -27056,7 +27113,16 @@ PRODUCT ENGINEERING
 <li>o Documento Mestre da superfície, quando já construído nesta coleção.</li>
 </ol>
 <p>A Home pública continua governada por <code>GKR-UX-HOME-MASTER-001</code>.</p>
-<h2 id="experience-architecture-person-journey-read-first-3-regra-de-granularidade">3. Regra de granularidade<a class="headerlink" href="#experience-architecture-person-journey-read-first-3-regra-de-granularidade" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-person-journey-read-first-3-documento-mestre-de-orquestracao-uxui">3. Documento Mestre de Orquestração UX/UI<a class="headerlink" href="#experience-architecture-person-journey-read-first-3-documento-mestre-de-orquestracao-uxui" title="Permanent link">&para;</a></h2>
+<p>Antes de materializar a Journey ponta a ponta, consumir <code>GKR-UX-PERSON-JOURNEY-ORCHESTRATION-001</code>.</p>
+<p>Ele governa a conexão entre as responsabilidades: continuidade, comportamento do sistema, plano vigente, oportunidades, limites de capacidade, comunicação de upgrade, ofuscamento legítimo e estados transversais. Os Masters individuais continuam governando cada responsabilidade local.</p>
+<div class="highlight"><pre><span></span><code>LEIA PRIMEIRO
+→ ORQUESTRAÇÃO UX/UI
+→ FLUXO COMPLETO
+→ MASTER DA SUPERFÍCIE
+→ PROTOTIPAÇÃO
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-read-first-4-regra-de-granularidade">4. Regra de granularidade<a class="headerlink" href="#experience-architecture-person-journey-read-first-4-regra-de-granularidade" title="Permanent link">&para;</a></h2>
 <p>Um documento desta coleção corresponde a <strong>uma superfície ou responsabilidade funcional já reconhecida pelo Registry</strong>.</p>
 <div class="highlight"><pre><span></span><code>ESTADO INTERNO
 ≠ NOVA TELA POR INFERÊNCIA
@@ -27072,7 +27138,7 @@ HANDOFF
 ≠ NOVA TELA AUTOMATICAMENTE
 </code></pre></div>
 <p>Exemplo: a revisão consciente antes da saída externa permanece um <strong>estado de <code>PER-203</code></strong>, porque a autoridade corrente não cria um novo <code>PER-ID</code>.</p>
-<h2 id="experience-architecture-person-journey-read-first-4-o-que-cada-documento-mestre-deve-definir">4. O que cada Documento Mestre deve definir<a class="headerlink" href="#experience-architecture-person-journey-read-first-4-o-que-cada-documento-mestre-deve-definir" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-person-journey-read-first-5-o-que-cada-documento-mestre-deve-definir">5. O que cada Documento Mestre deve definir<a class="headerlink" href="#experience-architecture-person-journey-read-first-5-o-que-cada-documento-mestre-deve-definir" title="Permanent link">&para;</a></h2>
 <p>Cada superfície deve ser descrita, quando aplicável, por:</p>
 <ul>
 <li>finalidade;</li>
@@ -27098,7 +27164,7 @@ HANDOFF
 <li>critérios de aceite funcional;</li>
 <li>lacunas que não podem ser preenchidas por inferência.</li>
 </ul>
-<h2 id="experience-architecture-person-journey-read-first-5-liberdade-criativa">5. Liberdade criativa<a class="headerlink" href="#experience-architecture-person-journey-read-first-5-liberdade-criativa" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-person-journey-read-first-6-liberdade-criativa">6. Liberdade criativa<a class="headerlink" href="#experience-architecture-person-journey-read-first-6-liberdade-criativa" title="Permanent link">&para;</a></h2>
 <p>O GKR governa significado, responsabilidade, dados, estados, relações, autoridade, limites, evidência e claims sustentáveis.</p>
 <p>A designer pode definir:</p>
 <ul>
@@ -27122,7 +27188,7 @@ HANDOFF
 <li>copy não congelada, desde que permaneça semanticamente compatível.</li>
 </ul>
 <p>Nenhum Documento Mestre desta coleção deve prescrever estética.</p>
-<h2 id="experience-architecture-person-journey-read-first-6-ia-opcional">6. IA opcional<a class="headerlink" href="#experience-architecture-person-journey-read-first-6-ia-opcional" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-person-journey-read-first-7-ia-opcional">7. IA opcional<a class="headerlink" href="#experience-architecture-person-journey-read-first-7-ia-opcional" title="Permanent link">&para;</a></h2>
 <p>Quando IA for utilizada, ela deve consumir apenas:</p>
 <ul>
 <li>este Leia Primeiro;</li>
@@ -27131,6 +27197,7 @@ HANDOFF
 <li>suas autoridades específicas;</li>
 <li>autoridades comuns estritamente necessárias.</li>
 </ul>
+<p>A prototipação por IA opera em <strong>source lock com o GKR</strong>: se funcionalidade, ação, estado, transição, dado ou entitlement não possuir fundamento documental no repositório, a IA deve sinalizar a lacuna e não inventá-la.</p>
 <p>A IA não pode:</p>
 <ul>
 <li>criar nova responsabilidade funcional;</li>
@@ -27141,7 +27208,7 @@ HANDOFF
 <li>transformar estado interno em nova tela;</li>
 <li>substituir decisão humana de Design.</li>
 </ul>
-<h2 id="experience-architecture-person-journey-read-first-7-prototipacao-e-referencias-existentes">7. Prototipação e referências existentes<a class="headerlink" href="#experience-architecture-person-journey-read-first-7-prototipacao-e-referencias-existentes" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-person-journey-read-first-8-prototipacao-e-referencias-existentes">8. Prototipação e referências existentes<a class="headerlink" href="#experience-architecture-person-journey-read-first-8-prototipacao-e-referencias-existentes" title="Permanent link">&para;</a></h2>
 <p>Uma referência visual ou protótipo existente pode ser consultado <strong>somente dentro do limite em que sua autoridade corrente o permite</strong>.</p>
 <div class="highlight"><pre><span></span><code>REFERÊNCIA VISUAL LOCAL
 ≠ BASELINE VISUAL GLOBAL
@@ -27152,7 +27219,7 @@ PROTÓTIPO
 VALIDAÇÃO DE PROTÓTIPO
 ≠ AUTORIZAÇÃO DE PRODUCT ENGINEERING
 </code></pre></div>
-<h2 id="experience-architecture-person-journey-read-first-8-ordem-de-construcao">8. Ordem de construção<a class="headerlink" href="#experience-architecture-person-journey-read-first-8-ordem-de-construcao" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-person-journey-read-first-9-ordem-de-construcao">9. Ordem de construção<a class="headerlink" href="#experience-architecture-person-journey-read-first-9-ordem-de-construcao" title="Permanent link">&para;</a></h2>
 <p>A sequência de documentação está definida em <code>GKR-UX-PERSON-JOURNEY-FLOW-001</code>.</p>
 <p>A regra operacional é:</p>
 <div class="highlight"><pre><span></span><code>1 SUPERFÍCIE
@@ -27161,7 +27228,7 @@ VALIDAÇÃO DE PROTÓTIPO
 → INCORPORAR AO GKR
 → SÓ ENTÃO AVANÇAR PARA A PRÓXIMA
 </code></pre></div>
-<h2 id="experience-architecture-person-journey-read-first-9-completude-documental-versus-completude-funcional">9. Completude documental versus completude funcional<a class="headerlink" href="#experience-architecture-person-journey-read-first-9-completude-documental-versus-completude-funcional" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-person-journey-read-first-10-completude-documental-versus-completude-funcional">10. Completude documental versus completude funcional<a class="headerlink" href="#experience-architecture-person-journey-read-first-10-completude-documental-versus-completude-funcional" title="Permanent link">&para;</a></h2>
 <p>A coleção de Surface Masters está concluída em <code>26 / 26</code>, mas essa contagem não prova que toda capacidade legítima da Pessoa já possua ciclo funcional completo.</p>
 <p>A autoridade <code>GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001</code> governa essa distinção e registra os findings correntes de completude funcional.</p>
 <p>As duas primeiras remediações adjudicadas introduzem os contratos candidatos <code>PER-013 — Captura e Revisão de Arquivo</code> e <code>PER-014 — Perguntas Opcionais Guiadas</code>, ambos entre modalidades próprias de <code>PER-003</code> e <code>PER-005</code>. Essas extensões pós-auditoria não alteram retroativamente o marco <code>26 / 26</code> da coleção original.</p>
@@ -27177,7 +27244,7 @@ CAPACIDADE
 ≠ TELA
 </code></pre></div>
 <p>Nenhuma lacuna funcional autoriza, por si só, novo <code>PER-ID</code>, <code>TRN-ID</code>, superfície visual ou implementação.</p>
-<h2 id="experience-architecture-person-journey-read-first-10-estado">10. Estado<a class="headerlink" href="#experience-architecture-person-journey-read-first-10-estado" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-person-journey-read-first-11-estado">11. Estado<a class="headerlink" href="#experience-architecture-person-journey-read-first-11-estado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>PERSON JOURNEY DESIGN DOCUMENTATION
 → FOUNDATION ACTIVE
 
@@ -27224,7 +27291,716 @@ VISUAL MATERIALIZATION
 
 PRODUCT ENGINEERING
 → NOT RELEASED BY THIS COLLECTION
-</code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-flow-map" heading-number="8.1.2"><h1 id="experience-architecture-person-journey-flow-map-jornada-da-pessoa-mapa-completo-de-superficies-para-design">Jornada da Pessoa — Mapa Completo de Superfícies para Design<a class="headerlink" href="#experience-architecture-person-journey-flow-map-jornada-da-pessoa-mapa-completo-de-superficies-para-design" title="Permanent link">&para;</a></h1>
+</code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-ux-ui-orchestration-master" heading-number="8.1.2"><h1 id="experience-architecture-person-journey-ux-ui-orchestration-master-jornada-da-pessoa-documento-mestre-de-orquestracao-uxui">Jornada da Pessoa — Documento Mestre de Orquestração UX/UI<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-jornada-da-pessoa-documento-mestre-de-orquestracao-uxui" title="Permanent link">&para;</a></h1>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento governa a <strong>conexão e o comportamento ponta a ponta da Jornada da Pessoa</strong> para orientar designer humana, IA de apoio, Produto, UX, prototipação e futura implementação.</p>
+<p>Os Documentos Mestres por superfície definem responsabilidades locais. Este documento define <strong>como essas responsabilidades devem funcionar em conjunto</strong>: o que a Pessoa encontra em cada momento, como o sistema responde às suas ações, como contexto e estado atravessam a Journey, como o plano vigente afeta capacidades e como possibilidades de upgrade podem ser apresentadas sem distorcer a experiência.</p>
+<p>Ele não substitui os Masters, o Surface Registry, o Transition Registry ou a autoridade comercial de Planos. Em conflito, prevalece a autoridade específica aplicável.</p>
+<div class="highlight"><pre><span></span><code>MASTER DE SUPERFÍCIE
+→ governa responsabilidade local
+
+ESTE DOCUMENTO
+→ governa orquestração entre responsabilidades
+→ continuidade
+→ comportamento
+→ plano e entitlement visível
+→ descoberta progressiva
+→ comunicação de upgrade
+→ estados transversais
+
+PROTÓTIPO UX/UI
+→ materializa essas regras
+→ não cria regra nova
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-2-principio-de-experiencia">2. Princípio de experiência<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-2-principio-de-experiencia" title="Permanent link">&para;</a></h2>
+<p>A Jornada deve parecer <strong>um sistema contínuo</strong>, não uma coleção de telas independentes.</p>
+<p>A Pessoa deve perceber, ao longo do uso:</p>
+<ol>
+<li>onde está;</li>
+<li>o que o sistema compreendeu;</li>
+<li>o que está disponível agora;</li>
+<li>o que depende de uma ação sua;</li>
+<li>o que depende de autorização;</li>
+<li>o que pertence ao seu plano;</li>
+<li>o que existe em outro plano;</li>
+<li>o que mudou após sua ação;</li>
+<li>como voltar, revisar, corrigir, interromper ou continuar.</li>
+</ol>
+<p>A experiência deve preservar contexto legítimo entre superfícies sem transformar navegação em consentimento, decisão, contratação ou confirmação.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-3-modelo-mental-do-sistema">3. Modelo mental do sistema<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-3-modelo-mental-do-sistema" title="Permanent link">&para;</a></h2>
+<p>O comportamento deve seguir o ciclo:</p>
+<div class="highlight"><pre><span></span><code>CONTEXTO VIGENTE
+→ ESTADO REAL
+→ POSSIBILIDADES LEGÍTIMAS
+→ ESCOLHA DA PESSOA
+→ PROCESSAMENTO VISÍVEL QUANDO NECESSÁRIO
+→ RESULTADO CONFIRMADO
+→ CONTINUIDADE COERENTE
+</code></pre></div>
+<p>Nunca:</p>
+<div class="highlight"><pre><span></span><code>EXIBIÇÃO
+≠ ACEITE
+
+CLIQUE
+≠ AUTORIZAÇÃO AMPLA
+
+NAVEGAÇÃO
+≠ CONSENTIMENTO
+
+INTENÇÃO
+≠ PROCESSAMENTO
+
+PROCESSAMENTO
+≠ SUCESSO
+
+PLANO COMERCIAL
+≠ ENTITLEMENT IMPLEMENTADO
+
+UPGRADE DISPONÍVEL
+≠ PRESSÃO PARA UPGRADE
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-4-espinha-dorsal-da-primeira-experiencia">4. Espinha dorsal da primeira experiência<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-4-espinha-dorsal-da-primeira-experiencia" title="Permanent link">&para;</a></h2>
+<p>A entrada principal deve respeitar a sequência governada:</p>
+<div class="highlight"><pre><span></span><code>PER-001 — HOME PÚBLICA
+→ PER-002 — ENTRADA PROTEGIDA
+→ PER-003 — ESCOLHA DE MODALIDADE
+→ expressão por Texto/Voz, Arquivo ou Perguntas Opcionais
+→ PER-005 — INVENTÁRIO E AUTORIZAÇÃO
+→ PER-006 — PROCESSAMENTO VISÍVEL
+→ PER-007 — COMPREENSÃO INICIAL REVISÁVEL
+→ PER-008 — HOJE
+</code></pre></div>
+<p>A primeira experiência deve priorizar compreensão e confiança. Plano pago não deve interromper artificialmente a construção inicial da Journey.</p>
+<h3 id="experience-architecture-person-journey-ux-ui-orchestration-master-41-antes-de-existir-contexto-suficiente">4.1 Antes de existir contexto suficiente<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-41-antes-de-existir-contexto-suficiente" title="Permanent link">&para;</a></h3>
+<p>O sistema não deve antecipar:</p>
+<ul>
+<li>oportunidade personalizada;</li>
+<li>urgência;</li>
+<li>objetivo;</li>
+<li>Próximo Passo;</li>
+<li>evolução;</li>
+<li>recomendação de plano baseada em inferência não confirmada;</li>
+<li>promessa de resultado.</li>
+</ul>
+<h3 id="experience-architecture-person-journey-ux-ui-orchestration-master-42-quando-o-plano-pode-aparecer">4.2 Quando o plano pode aparecer<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-42-quando-o-plano-pode-aparecer" title="Permanent link">&para;</a></h3>
+<p>O plano pode ser visível de forma contextual antes de PER-301 quando houver razão funcional clara, por exemplo:</p>
+<ul>
+<li>identificação discreta do plano vigente;</li>
+<li>capacidade indisponível naquele plano;</li>
+<li>cota legítima atingida;</li>
+<li>comparação de uma capacidade que a Pessoa tentou usar;</li>
+<li>acesso voluntário a Planos por Conta/Configurações.</li>
+</ul>
+<p>O plano <strong>não deve dominar</strong> a entrada protegida, a autorização de dados, o processamento inicial ou a revisão da compreensão.</p>
+<p>A superfície especializada para compreender e comparar planos continua sendo <code>PER-301</code>.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-5-hoje-como-centro-de-continuidade">5. Hoje como centro de continuidade<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-5-hoje-como-centro-de-continuidade" title="Permanent link">&para;</a></h2>
+<p><code>PER-008 — Hoje</code> deve funcionar como síntese dinâmica do estado vigente, não como feed infinito ou catálogo.</p>
+<p>Pode reunir, quando houver base real:</p>
+<ul>
+<li>contexto atual;</li>
+<li>atenção material;</li>
+<li>Próximo Passo existente;</li>
+<li>oportunidade legitimamente aplicável;</li>
+<li>atividade próxima;</li>
+<li>atualização pertinente;</li>
+<li>portas para Objetivos, Próximos Passos e Evolução.</li>
+</ul>
+<p>A quantidade de conteúdo deve responder ao estado real. Ausência é válida.</p>
+<p>O plano pode afetar <strong>profundidade e capacidade</strong>, mas não deve transformar Hoje em vitrine permanente de upsell.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-6-oportunidades-arquitetura-de-acesso">6. Oportunidades — arquitetura de acesso<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-6-oportunidades-arquitetura-de-acesso" title="Permanent link">&para;</a></h2>
+<p>O sistema deve distinguir pelo menos três naturezas de acesso:</p>
+<h3 id="experience-architecture-person-journey-ux-ui-orchestration-master-61-catalogo-e-descoberta-publica">6.1 Catálogo e descoberta pública<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-61-catalogo-e-descoberta-publica" title="Permanent link">&para;</a></h3>
+<p>Free, Plus e Pro preservam acesso ao catálogo público compatível com Explorar, Mapa, Lista, busca manual e informações públicas essenciais.</p>
+<div class="highlight"><pre><span></span><code>PLANO FREE
+≠ CATÁLOGO ARTIFICIALMENTE REDUZIDO
+
+UPGRADE
+≠ DESBLOQUEAR O QUE JÁ É INFORMAÇÃO PÚBLICA ESSENCIAL
+</code></pre></div>
+<p>Uma oportunidade pública não deve ser ocultada apenas para fabricar valor de upgrade.</p>
+<h3 id="experience-architecture-person-journey-ux-ui-orchestration-master-62-correspondencia-personalizada">6.2 Correspondência personalizada<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-62-correspondencia-personalizada" title="Permanent link">&para;</a></h3>
+<p>A correspondência personalizada utiliza contexto autorizado para demonstrar relação entre a Pessoa e uma oportunidade.</p>
+<p>Baseline comercial corrente:</p>
+<ul>
+<li>Free: 2 correspondências personalizadas completas por semana;</li>
+<li>Plus: correspondências personalizadas ampliadas, sujeitas a uso justo;</li>
+<li>Pro: correspondências ampliadas com maior profundidade analítica.</li>
+</ul>
+<p>A cota Free é consumida somente conforme a autoridade comercial vigente: quando a Pessoa abre a correspondência completa.</p>
+<h3 id="experience-architecture-person-journey-ux-ui-orchestration-master-63-profundidade-analitica">6.3 Profundidade analítica<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-63-profundidade-analitica" title="Permanent link">&para;</a></h3>
+<p>Plus e Pro podem ampliar explicação e análise somente nos limites funcionalmente contratados.</p>
+<p>Onde entitlement, profundidade, uso justo ou capacidade técnica ainda não estiverem contratados de modo executável, o protótipo deve representar a diferença como <strong>capacidade comercial declarada</strong>, sem inventar número, algoritmo, limite ou comportamento técnico.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-7-regra-mestre-para-oportunidades-ofuscadas">7. Regra mestre para oportunidades ofuscadas<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-7-regra-mestre-para-oportunidades-ofuscadas" title="Permanent link">&para;</a></h2>
+<p>O ofuscamento é permitido somente para comunicar uma <strong>camada premium real</strong> que a Pessoa ainda não possui ou cuja cota legítima foi atingida.</p>
+<p>Não é permitido usar ofuscamento para esconder:</p>
+<ul>
+<li>existência de oportunidade pública que já deveria estar acessível;</li>
+<li>título ou informação pública essencial apenas para pressionar pagamento;</li>
+<li>condição material necessária para decisão segura;</li>
+<li>patrocínio ou relação comercial;</li>
+<li>informação de segurança, direito ou obrigação;</li>
+<li>dado que a própria Pessoa forneceu;</li>
+<li>estado de processo já iniciado.</li>
+</ul>
+<h3 id="experience-architecture-person-journey-ux-ui-orchestration-master-71-como-uma-correspondencia-ofuscada-deve-se-comportar">7.1 Como uma correspondência ofuscada deve se comportar<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-71-como-uma-correspondencia-ofuscada-deve-se-comportar" title="Permanent link">&para;</a></h3>
+<p>Quando houver base legítima para indicar que existe uma correspondência personalizada além da capacidade vigente, a UI pode apresentar uma prévia limitada que:</p>
+<ol>
+<li>deixa claro que existe conteúdo adicional;</li>
+<li>identifica que o limite decorre do plano/cota, não de erro;</li>
+<li>preserva somente contexto suficiente para compreensão;</li>
+<li>não revela análise premium por transparência visual acidental;</li>
+<li>oferece comparação contextual com o plano que habilita maior capacidade;</li>
+<li>mantém alternativa gratuita de explorar a oportunidade pelo catálogo público, quando ela for pública;</li>
+<li>não cria urgência, medo de perda ou falsa escassez.</li>
+</ol>
+<p>O efeito visual pode usar blur, máscara, redução de detalhe, skeleton estático ou outra solução de Design. O significado deve ser sempre comunicável também por texto e tecnologia assistiva.</p>
+<div class="highlight"><pre><span></span><code>OFUSCADO
+→ CAPACIDADE PREMIUM NÃO DISPONÍVEL NO ESTADO VIGENTE
+→ MOTIVO EXPLICÁVEL
+→ CAMINHO DE UPGRADE OPCIONAL
+→ ALTERNATIVA FREE PRESERVADA QUANDO A INFORMAÇÃO É PÚBLICA
+</code></pre></div>
+<h3 id="experience-architecture-person-journey-ux-ui-orchestration-master-72-o-que-nao-pode-ser-inferido">7.2 O que não pode ser inferido<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-72-o-que-nao-pode-ser-inferido" title="Permanent link">&para;</a></h3>
+<p>O protótipo não pode inventar:</p>
+<ul>
+<li>quantidade de previews ofuscados;</li>
+<li>frequência de exposição;</li>
+<li>percentual de blur;</li>
+<li>regra de ordenação premium;</li>
+<li>ranking de oportunidades;</li>
+<li>probabilidade de sucesso;</li>
+<li>score humano;</li>
+<li>“melhor oportunidade” universal;</li>
+<li>limite Plus/Pro não governado.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-8-plano-vigente-e-consciencia-de-upgrade">8. Plano vigente e consciência de upgrade<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-8-plano-vigente-e-consciencia-de-upgrade" title="Permanent link">&para;</a></h2>
+<p>A Pessoa deve conseguir perceber seu plano atual quando isso for útil, sem precisar memorizar a taxonomia.</p>
+<p>A comunicação pode seguir três níveis:</p>
+<ol>
+<li><strong>silencioso/contextual</strong> — badge, rótulo ou informação de estado quando não interfere na tarefa;</li>
+<li><strong>explicativo</strong> — ao tentar capacidade não incluída ou atingir limite legítimo;</li>
+<li><strong>comparativo</strong> — em PER-301, com Free, Plus e Pro e suas diferenças.</li>
+</ol>
+<p>A interface deve demonstrar que existem capacidades superiores sem declarar que a Pessoa “precisa” delas.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-9-upgrade-contextual">9. Upgrade contextual<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-9-upgrade-contextual" title="Permanent link">&para;</a></h2>
+<p>Um convite de upgrade é legítimo quando nasce de uma ação ou necessidade observável no contexto atual, por exemplo:</p>
+<ul>
+<li>cota Free de correspondência personalizada atingida;</li>
+<li>tentativa de usar capacidade comercialmente definida como Plus/Pro;</li>
+<li>consulta voluntária a Planos;</li>
+<li>necessidade de profundidade que a própria Pessoa pediu e que pertença a plano superior.</li>
+</ul>
+<p>O convite deve explicar:</p>
+<div class="highlight"><pre><span></span><code>VOCÊ ESTÁ EM
+→ plano vigente
+
+ESTA CAPACIDADE
+→ não está disponível / atingiu limite vigente
+
+COM PLUS OU PRO
+→ diferença comercial aplicável
+
+VOCÊ AINDA PODE
+→ continuar com alternativas válidas do plano atual
+
+SE QUISER ALTERAR
+→ abrir PER-301
+</code></pre></div>
+<p>Não usar:</p>
+<ul>
+<li>contagem regressiva artificial;</li>
+<li>“você está perdendo”;</li>
+<li>bloqueio surpresa de capacidade Free;</li>
+<li>comparação depreciativa;</li>
+<li>plano pré-selecionado como decisão;</li>
+<li>upgrade automático;</li>
+<li>dark patterns;</li>
+<li>esconder saída/continuidade gratuita.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-10-comparacao-free-plus-e-pro-no-fluxo">10. Comparação Free, Plus e Pro no fluxo<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-10-comparacao-free-plus-e-pro-no-fluxo" title="Permanent link">&para;</a></h2>
+<p>A comparação completa pertence a <code>PER-301</code>.</p>
+<p>Fora de PER-301, mostrar apenas a diferença necessária ao contexto. Exemplo: se a Pessoa atingiu a cota de correspondência personalizada Free, a experiência pode explicar a ampliação no Plus sem despejar toda a tabela comercial.</p>
+<p>Quando a Pessoa pedir comparação ou abrir Planos, PER-301 deve apresentar:</p>
+<ul>
+<li>plano vigente, quando conhecido;</li>
+<li>Free, Plus e Pro;</li>
+<li>preços correntes;</li>
+<li>capacidades correntes;</li>
+<li>limites relevantes;</li>
+<li>diferenças compreensíveis;</li>
+<li>opção de permanecer no plano atual;</li>
+<li>continuidade para contratação somente por ação afirmativa.</li>
+</ul>
+<p>Nenhum plano deve ser rotulado como “melhor para você” sem autoridade específica. Pode-se explicar <strong>o que muda</strong> em cada opção.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-11-comportamento-por-plano">11. Comportamento por plano<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-11-comportamento-por-plano" title="Permanent link">&para;</a></h2>
+<h3 id="experience-architecture-person-journey-ux-ui-orchestration-master-free">Free<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-free" title="Permanent link">&para;</a></h3>
+<p>Deve parecer uma experiência real e completa em seu escopo, não uma demonstração quebrada.</p>
+<p>Preserva:</p>
+<ul>
+<li>entrada e compreensão;</li>
+<li>jornada essencial;</li>
+<li>catálogo público;</li>
+<li>Explorar, Mapa e busca manual;</li>
+<li>2 correspondências personalizadas completas por semana;</li>
+<li>histórico essencial;</li>
+<li>controles de dados e direitos;</li>
+<li>oportunidades conforme condições do publicador.</li>
+</ul>
+<p>Quando atingir limite, a Pessoa continua navegando pelas capacidades Free.</p>
+<h3 id="experience-architecture-person-journey-ux-ui-orchestration-master-plus">Plus<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-plus" title="Permanent link">&para;</a></h3>
+<p>Deve comunicar expansão de conveniência, personalização e continuidade.</p>
+<p>Pode representar comercialmente:</p>
+<ul>
+<li>correspondências ampliadas sujeitas a uso justo;</li>
+<li>explicação completa da relação;</li>
+<li>filtros avançados;</li>
+<li>alertas personalizados;</li>
+<li>histórico ampliado;</li>
+<li>planos salvos, lembretes e acompanhamento ampliado;</li>
+<li>exportação padrão;</li>
+<li>processamento/Intelligence ampliados;</li>
+<li>integrações limitadas autorizadas;</li>
+<li>suporte ampliado.</li>
+</ul>
+<p>Onde o contrato funcional transversal ainda não existir, protótipo não deve simular operação como se estivesse implementada.</p>
+<h3 id="experience-architecture-person-journey-ux-ui-orchestration-master-pro">Pro<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-pro" title="Permanent link">&para;</a></h3>
+<p>Deve comunicar maior profundidade, não superioridade humana.</p>
+<p>Pode representar comercialmente:</p>
+<ul>
+<li>análises aprofundadas e comparativas;</li>
+<li>organização autorizada entre áreas;</li>
+<li>maior capacidade de processamento/Intelligence;</li>
+<li>relatórios pessoais ampliados;</li>
+<li>exportações avançadas;</li>
+<li>integrações autorizadas ampliadas;</li>
+<li>suporte prioritário;</li>
+<li>acesso antecipado quando aplicável e aprovado.</li>
+</ul>
+<p>Pro não autoriza fabricar precisão, certeza, diagnóstico, garantia ou recomendação absoluta.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-12-descoberta-progressiva">12. Descoberta progressiva<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-12-descoberta-progressiva" title="Permanent link">&para;</a></h2>
+<p>A Journey deve revelar complexidade conforme ela se torna útil.</p>
+<div class="highlight"><pre><span></span><code>PRIMEIRO
+→ tarefa e contexto
+
+DEPOIS
+→ capacidade relacionada
+
+SE HOUVER LIMITE REAL
+→ explicar limite
+
+SE HOUVER ALTERNATIVA
+→ preservar alternativa
+
+SE A PESSOA QUISER SABER MAIS
+→ aprofundar comparação
+
+SE DECIDIR MUDAR
+→ revisão consciente
+→ processamento
+→ resultado confirmado
+</code></pre></div>
+<p>O sistema não deve apresentar todas as capacidades, planos e controles em todas as superfícies.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-13-persistencia-e-continuidade-de-contexto">13. Persistência e continuidade de contexto<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-13-persistencia-e-continuidade-de-contexto" title="Permanent link">&para;</a></h2>
+<p>Ao atravessar superfícies, preservar somente contexto necessário e autorizado.</p>
+<p>Retornos devem reconsultar estado canônico quando aplicável.</p>
+<p>Exemplos:</p>
+<ul>
+<li>Mapa ↔ Lista preserva consulta territorial;</li>
+<li>Detalhe → retorno preserva contexto válido de descoberta;</li>
+<li>Hoje ↔ Objetivos/Próximos Passos/Evolução preserva continuidade sem efeitos silenciosos;</li>
+<li>Conta ↔ Planos preserva navegação sem selecionar plano;</li>
+<li>revisão de contratação preserva plano alvo sem afirmar contratação;</li>
+<li>falha financeira preserva estado anterior até confirmação real.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-14-acao-processamento-e-feedback">14. Ação, processamento e feedback<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-14-acao-processamento-e-feedback" title="Permanent link">&para;</a></h2>
+<p>Toda ação material deve ter estados distinguíveis quando aplicável:</p>
+<div class="highlight"><pre><span></span><code>DISPONÍVEL
+→ AÇÃO DA PESSOA
+→ PROCESSANDO
+→ SUCESSO CONFIRMADO
+   ou
+→ FALHA RECUPERÁVEL
+   ou
+→ ESTADO INDETERMINADO
+</code></pre></div>
+<p>A interface não deve antecipar sucesso.</p>
+<p>Repetição após incerteza deve evitar efeitos duplicados.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-15-estados-vazios-indisponibilidade-e-recuperacao">15. Estados vazios, indisponibilidade e recuperação<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-15-estados-vazios-indisponibilidade-e-recuperacao" title="Permanent link">&para;</a></h2>
+<p>O sistema deve tratar legitimamente:</p>
+<ul>
+<li>ausência de histórico;</li>
+<li>ausência de objetivo;</li>
+<li>ausência de Próximo Passo;</li>
+<li>zero oportunidades na consulta;</li>
+<li>localização desativada;</li>
+<li>oportunidade encerrada;</li>
+<li>dado desatualizado;</li>
+<li>falha de processamento;</li>
+<li>capacidade indisponível;</li>
+<li>limite de plano atingido;</li>
+<li>conexão insuficiente.</li>
+</ul>
+<p>Estado vazio não é espaço obrigatório para publicidade ou upsell.</p>
+<p>Upgrade só aparece no vazio quando resolver uma limitação real do plano; nunca como substituto de conteúdo inexistente.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-16-salvar-e-comparar-oportunidades">16. Salvar e comparar oportunidades<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-16-salvar-e-comparar-oportunidades" title="Permanent link">&para;</a></h2>
+<p>Salvar e Comparar permanecem controles de <code>PER-203</code>.</p>
+<p>Salvar:</p>
+<div class="highlight"><pre><span></span><code>NÃO SALVO
+→ SALVAR
+→ PROCESSAR
+→ SALVO CONFIRMADO
+→ CONSULTAR DEPOIS QUANDO LEGÍTIMO
+→ REMOVER CONSCIENTEMENTE
+</code></pre></div>
+<p>Comparar:</p>
+<div class="highlight"><pre><span></span><code>DETALHE
+→ SELECIONAR COMPARAÇÃO
+→ ADICIONAR OPORTUNIDADE COMPATÍVEL
+→ COMPARAR DIMENSÕES COMPREENSÍVEIS
+→ REMOVER / RETORNAR
+</code></pre></div>
+<p>Comparação não deve produzir vencedor universal nem ranking pessoal.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-17-coletivos-no-fluxo">17. Coletivos no fluxo<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-17-coletivos-no-fluxo" title="Permanent link">&para;</a></h2>
+<p>A família de Coletivos deve preservar a sequência governada de exploração, perfil, revisão, solicitação, pendência, vínculo e participação.</p>
+<p>Estados de vínculo devem permanecer distinguíveis de plano comercial.</p>
+<div class="highlight"><pre><span></span><code>PLANO PESSOA
+≠ VÍNCULO COM COLETIVO
+
+SAIR DO COLETIVO
+≠ SAIR DA GUIVOS
+≠ CANCELAR PLANO
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-18-conta-dados-e-direitos">18. Conta, dados e direitos<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-18-conta-dados-e-direitos" title="Permanent link">&para;</a></h2>
+<p>PER-009 concentra responsabilidades administrativas transversais já governadas sem virar catálogo universal de configurações.</p>
+<p>A experiência deve distinguir:</p>
+<ul>
+<li>correção de compreensão;</li>
+<li>correção de dado;</li>
+<li>exclusão de compreensão;</li>
+<li>exclusão de dado;</li>
+<li>exclusão/saída de conta;</li>
+<li>exportação;</li>
+<li>permissões;</li>
+<li>plano;</li>
+<li>vínculo com Coletivo.</li>
+</ul>
+<p>Não fundir essas ações por conveniência visual.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-19-sistema-dinamico">19. Sistema dinâmico<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-19-sistema-dinamico" title="Permanent link">&para;</a></h2>
+<p>“Dinâmico” significa responder a estado real, não mudar arbitrariamente.</p>
+<p>A UI pode adaptar:</p>
+<ul>
+<li>presença ou ausência de módulos;</li>
+<li>profundidade de informação;</li>
+<li>chamadas contextuais;</li>
+<li>estado de oportunidade;</li>
+<li>capacidades do plano;</li>
+<li>continuidade após ações;</li>
+<li>conteúdo autorizado e vigente.</li>
+</ul>
+<p>A adaptação deve ser explicável quando material e nunca transformar inferência em fato.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-20-prioridade-de-conteudo">20. Prioridade de conteúdo<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-20-prioridade-de-conteudo" title="Permanent link">&para;</a></h2>
+<p>Quando múltiplos elementos disputarem atenção, priorizar:</p>
+<ol>
+<li>segurança, direito ou obrigação material;</li>
+<li>processo iniciado que exija ação;</li>
+<li>prazo real;</li>
+<li>estado solicitado pela Pessoa;</li>
+<li>continuidade da tarefa atual;</li>
+<li>oportunidade contextual legítima;</li>
+<li>descoberta adicional;</li>
+<li>comunicação comercial contextual.</li>
+</ol>
+<p>Patrocínio ou possibilidade de upgrade não ultrapassam prioridade humana apenas por valor comercial.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-21-patrocinio-plano-e-relevancia">21. Patrocínio, plano e relevância<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-21-patrocinio-plano-e-relevancia" title="Permanent link">&para;</a></h2>
+<p>Manter separadas três dimensões:</p>
+<div class="highlight"><pre><span></span><code>RELEVÂNCIA PARA A PESSOA
+≠ PATROCÍNIO
+≠ ENTITLEMENT DO PLANO
+</code></pre></div>
+<p>Patrocínio deve ser identificado.</p>
+<p>Plano determina acesso a capacidades governadas, não relevância humana automática.</p>
+<p>Nenhum plano pago deve fazer oportunidade patrocinada parecer organicamente mais relevante.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-22-prototipacao-uxui-estados-minimos-a-demonstrar">22. Prototipação UX/UI — estados mínimos a demonstrar<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-22-prototipacao-uxui-estados-minimos-a-demonstrar" title="Permanent link">&para;</a></h2>
+<p>Uma prototipação ponta a ponta deve conseguir demonstrar, sem afirmar implementação:</p>
+<ul>
+<li>primeira entrada;</li>
+<li>autenticação/reentrada;</li>
+<li>escolha de modalidade;</li>
+<li>Texto/Voz;</li>
+<li>Arquivo;</li>
+<li>Perguntas Opcionais;</li>
+<li>inventário e autorização;</li>
+<li>processamento;</li>
+<li>revisão da compreensão;</li>
+<li>primeira entrada em Hoje;</li>
+<li>Hoje recorrente;</li>
+<li>Objetivos;</li>
+<li>Próximos Passos;</li>
+<li>Evolução;</li>
+<li>descoberta por Mapa e Lista;</li>
+<li>Detalhe;</li>
+<li>Salvar;</li>
+<li>Comparar;</li>
+<li>saída externa consciente;</li>
+<li>fluxo de Coletivos;</li>
+<li>Conta/controles;</li>
+<li>Free em uso normal;</li>
+<li>Free próximo/ao atingir cota legítima;</li>
+<li>correspondência personalizada ofuscada legítima;</li>
+<li>continuidade Free após limite;</li>
+<li>upgrade contextual;</li>
+<li>comparação Free/Plus/Pro;</li>
+<li>revisão de contratação;</li>
+<li>resultado confirmado;</li>
+<li>falha/recuperação;</li>
+<li>downgrade/cancelamento;</li>
+<li>estados vazios e indisponíveis;</li>
+<li>retorno e persistência coerente de contexto.</li>
+</ul>
+<p>Isso não exige um frame por item. Estados podem pertencer à mesma superfície.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-23-matriz-de-comportamento-para-prototipacao">23. Matriz de comportamento para prototipação<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-23-matriz-de-comportamento-para-prototipacao" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Deve aparecer</th>
+<th>Não deve acontecer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>primeira entrada</td>
+<td>orientação e contexto necessário</td>
+<td>upsell dominante</td>
+</tr>
+<tr>
+<td>Hoje sem histórico</td>
+<td>estado legítimo e continuidades possíveis</td>
+<td>histórico fabricado</td>
+</tr>
+<tr>
+<td>oportunidade pública</td>
+<td>informação pública essencial</td>
+<td>bloqueio artificial por plano</td>
+</tr>
+<tr>
+<td>correspondência Free disponível</td>
+<td>relação personalizada dentro da cota</td>
+<td>cobrança implícita</td>
+</tr>
+<tr>
+<td>cota Free atingida</td>
+<td>explicação do limite + alternativa Free + upgrade opcional</td>
+<td>bloquear catálogo</td>
+</tr>
+<tr>
+<td>capacidade premium</td>
+<td>valor e diferença aplicável</td>
+<td>pressão ou urgência falsa</td>
+</tr>
+<tr>
+<td>conteúdo ofuscado</td>
+<td>motivo do bloqueio e caminho opcional</td>
+<td>esconder disclosure material</td>
+</tr>
+<tr>
+<td>Plus/Pro</td>
+<td>capacidades adicionais governadas</td>
+<td>inventar entitlement técnico</td>
+</tr>
+<tr>
+<td>falha</td>
+<td>estado real + recuperação</td>
+<td>declarar sucesso</td>
+</tr>
+<tr>
+<td>downgrade/cancelamento</td>
+<td>consequências e data quando governadas</td>
+<td>retenção coerciva</td>
+</tr>
+</tbody>
+</table>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-24-liberdade-de-design">24. Liberdade de Design<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-24-liberdade-de-design" title="Permanent link">&para;</a></h2>
+<p>Este documento governa comportamento, hierarquia semântica e continuidade, não estética.</p>
+<p>Design pode decidir:</p>
+<ul>
+<li>arquitetura visual;</li>
+<li>composição;</li>
+<li>componentes;</li>
+<li>navegação visual;</li>
+<li>tipografia conforme autoridade de marca;</li>
+<li>cores;</li>
+<li>imagens;</li>
+<li>iconografia;</li>
+<li>densidade;</li>
+<li>motion;</li>
+<li>microinterações;</li>
+<li>forma visual do ofuscamento;</li>
+<li>responsividade;</li>
+<li>quantidade de frames;</li>
+<li>apresentação comparativa.</li>
+</ul>
+<p>A liberdade visual não pode alterar responsabilidade, plano, preço, benefício, transição, autorização, estado ou significado governado.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-25-regras-para-ia">25. Regras para IA<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-25-regras-para-ia" title="Permanent link">&para;</a></h2>
+<p>Uma IA que construa ou auxilie a prototipação deve consumir este documento junto dos Masters específicos necessários.</p>
+<p>A IA não pode:</p>
+<ul>
+<li>inventar PER/TRN;</li>
+<li>criar benefício ou preço;</li>
+<li>remover benefício;</li>
+<li>inventar entitlement;</li>
+<li>inventar algoritmo;</li>
+<li>inventar oportunidade real;</li>
+<li>preencher dado ausente;</li>
+<li>criar ranking humano;</li>
+<li>declarar plano “melhor para você”;</li>
+<li>transformar upgrade em obrigação;</li>
+<li>ocultar alternativa Free legítima;</li>
+<li>promover candidato a implementado;</li>
+<li>interpretar protótipo como Product Engineering liberado.</li>
+</ul>
+<p>Quando houver lacuna, deve sinalizá-la em vez de completá-la por conveniência.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-26-source-lock-para-prototipacao-por-ia">26. Source lock para prototipação por IA<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-26-source-lock-para-prototipacao-por-ia" title="Permanent link">&para;</a></h2>
+<p>Toda prototipação produzida ou assistida por IA deve operar em <strong>source lock</strong> com o <code>Guivos Knowledge Repository</code>, especialmente com a coleção <code>Jornada da Pessoa — Superfícies e Fluxos</code> e as autoridades relacionadas consumidas por ela.</p>
+<p>A IA somente pode materializar comportamento que possua fundamento documental identificável no GKR.</p>
+<div class="highlight"><pre><span></span><code>NÃO ESTÁ GOVERNADO NO GKR
+→ NÃO INVENTAR
+→ NÃO COMPLETAR POR CONVENIÊNCIA
+→ NÃO TRATAR COMO PADRÃO DE MERCADO
+→ NÃO TRANSFORMAR EM FUNCIONALIDADE
+→ NÃO TRANSFORMAR EM AÇÃO
+→ NÃO TRANSFORMAR EM ESTADO
+→ NÃO TRANSFORMAR EM TRANSIÇÃO
+→ NÃO TRANSFORMAR EM ENTITLEMENT
+</code></pre></div>
+<p>Isso se aplica, entre outros, a:</p>
+<ul>
+<li>funcionalidades;</li>
+<li>ações e controles;</li>
+<li>telas ou responsabilidades;</li>
+<li>estados;</li>
+<li>navegação e handoffs;</li>
+<li>dados exibidos ou capturados;</li>
+<li>automações;</li>
+<li>personalização;</li>
+<li>regras de plano;</li>
+<li>bloqueios;</li>
+<li>cotas;</li>
+<li>permissões;</li>
+<li>integrações;</li>
+<li>notificações;</li>
+<li>alertas;</li>
+<li>recomendações;</li>
+<li>rankings;</li>
+<li>processamento;</li>
+<li>persistência;</li>
+<li>cobrança;</li>
+<li>comportamento de erro e recuperação.</li>
+</ul>
+<p>A liberdade da IA é de <strong>materialização e exploração visual dentro do contrato</strong>, nunca de criação autônoma de produto.</p>
+<p>Quando encontrar uma necessidade não coberta pelas autoridades:</p>
+<ol>
+<li>não preencher a lacuna por inferência;</li>
+<li>não usar comportamento comum de outros produtos como autorização;</li>
+<li>registrar claramente a lacuna;</li>
+<li>indicar qual decisão funcional precisa de autoridade;</li>
+<li>continuar somente nas partes que permanecem governadas;</li>
+<li>aguardar atualização/autorização do GKR antes de materializar a nova funcionalidade ou ação.</li>
+</ol>
+<div class="highlight"><pre><span></span><code>IA
+→ CONSUMIDORA DO GKR
+→ NÃO AUTORA DA VERDADE DE PRODUTO
+
+PROTÓTIPO
+→ PODE EXPLORAR FORMA
+→ NÃO PODE EXPANDIR ESCOPO FUNCIONAL
+
+LACUNA
+→ SINALIZAR
+→ NÃO INVENTAR
+</code></pre></div>
+<p>A existência de espaço visual, convenção de UX, componente disponível, sugestão do modelo, facilidade técnica ou expectativa de mercado <strong>não constitui autoridade</strong> para adicionar comportamento.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-27-criterios-executivos-de-aceite">27. Critérios executivos de aceite<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-27-criterios-executivos-de-aceite" title="Permanent link">&para;</a></h2>
+<p>Uma prototipação orientada por este documento é semanticamente aceitável quando:</p>
+<ol>
+<li>parece uma Journey contínua;</li>
+<li>respeita as responsabilidades e transições governadas;</li>
+<li>preserva estado e contexto legítimos;</li>
+<li>diferencia ação, processamento e resultado;</li>
+<li>Free funciona de verdade em seu escopo;</li>
+<li>catálogo público não é artificialmente bloqueado;</li>
+<li>correspondências personalizadas respeitam a baseline comercial;</li>
+<li>ofuscamento só representa capacidade premium legítima;</li>
+<li>upgrade é contextual, opcional e explicável;</li>
+<li>plano vigente é compreensível quando material;</li>
+<li>Plus e Pro demonstram valor sem prometer resultado;</li>
+<li>diferenças não contratadas tecnicamente não são inventadas;</li>
+<li>estados vazios e falhas são tratados;</li>
+<li>acessibilidade não depende de blur/cor/motion;</li>
+<li>patrocínio, relevância e plano permanecem distintos;</li>
+<li>direitos e privacidade permanecem preservados;</li>
+<li>IA não assume autoridade;</li>
+<li>Design mantém liberdade criativa;</li>
+<li>protótipo não é confundido com implementação;</li>
+<li>prototipação por IA permanece em source lock com o GKR e não inventa funcionalidades ou ações ausentes;</li>
+<li>lacunas são sinalizadas em vez de preenchidas por inferência;</li>
+<li>Product Engineering não é liberado por este documento.</li>
+</ol>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-28-ordem-recomendada-de-consumo-para-construcao">28. Ordem recomendada de consumo para construção<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-28-ordem-recomendada-de-consumo-para-construcao" title="Permanent link">&para;</a></h2>
+<p>Para construir uma prototipação integrada:</p>
+<ol>
+<li>Leia Primeiro;</li>
+<li>este Documento Mestre de Orquestração UX/UI;</li>
+<li>Fluxo Completo de Superfícies;</li>
+<li>Planos — Pessoa;</li>
+<li>Surface Registry e detalhamento da Pessoa;</li>
+<li>Transition Registry;</li>
+<li>Master da superfície em construção;</li>
+<li>autoridades específicas citadas pelo Master.</li>
+</ol>
+<p>A prototipação deve validar continuidade entre superfícies, e não apenas fidelidade isolada de cada frame.</p>
+<h2 id="experience-architecture-person-journey-ux-ui-orchestration-master-29-estado">29. Estado<a class="headerlink" href="#experience-architecture-person-journey-ux-ui-orchestration-master-29-estado" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>PERSON JOURNEY UX/UI ORCHESTRATION
+→ ACTIVE
+
+ROLE
+→ EXECUTIVE / MASTER ORIENTATION
+→ END-TO-END BEHAVIOR
+→ PROTOTYPING CONSUMPTION AUTHORITY
+
+CURRENT PERSON RESPONSIBILITIES
+→ 29
+
+ORIGINAL MASTER COLLECTION
+→ 26 / 26 COMPLETE
+
+POST-AUDIT EXTENSIONS
+→ PER-013 / PER-014
+
+PLANS
+→ FREE / PLUS / PRO
+→ COMMERCIAL BASELINE PRESERVED
+
+OPPORTUNITY BLUR / LOCK
+→ ALLOWED ONLY FOR LEGITIMATE PREMIUM CAPABILITY
+→ PUBLIC ESSENTIAL ACCESS PRESERVED
+
+NEW PER / TRN IDS
+→ NONE
+
+VISUAL BASELINE
+→ NONE
+
+AI PROTOTYPING
+→ SOURCE-LOCKED TO GKR
+→ NO INVENTED FUNCTIONALITY / ACTION / STATE / ENTITLEMENT
+
+PROTOTYPE
+→ DESIGN-OWNED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+</code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-flow-map" heading-number="8.1.3"><h1 id="experience-architecture-person-journey-flow-map-jornada-da-pessoa-mapa-completo-de-superficies-para-design">Jornada da Pessoa — Mapa Completo de Superfícies para Design<a class="headerlink" href="#experience-architecture-person-journey-flow-map-jornada-da-pessoa-mapa-completo-de-superficies-para-design" title="Permanent link">&para;</a></h1>
 <h2 id="experience-architecture-person-journey-flow-map-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-flow-map-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento organiza <strong>todas as superfícies/responsabilidades correntes da Pessoa que deverão receber documentação própria para Design e IA</strong>, sem criar novas telas nem alterar o Registry.</p>
 <p>A Home pública <code>PER-001</code> já possui Documento Mestre próprio e funciona como origem pública da Journey. Por isso, esta coleção começa em <code>PER-002</code>.</p>
@@ -27660,7 +28436,7 @@ NEW PER-IDS
 
 DESIGN / PROTOTYPE / IMPLEMENTATION
 → NOT CREATED BY THIS MAP
-</code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-functional-completeness-authority" heading-number="8.1.3"><h1 id="experience-architecture-person-journey-functional-completeness-authority-jornada-da-pessoa-autoridade-de-completude-funcional">Jornada da Pessoa — Autoridade de Completude Funcional<a class="headerlink" href="#experience-architecture-person-journey-functional-completeness-authority-jornada-da-pessoa-autoridade-de-completude-funcional" title="Permanent link">&para;</a></h1>
+</code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-functional-completeness-authority" heading-number="8.1.4"><h1 id="experience-architecture-person-journey-functional-completeness-authority-jornada-da-pessoa-autoridade-de-completude-funcional">Jornada da Pessoa — Autoridade de Completude Funcional<a class="headerlink" href="#experience-architecture-person-journey-functional-completeness-authority-jornada-da-pessoa-autoridade-de-completude-funcional" title="Permanent link">&para;</a></h1>
 <h2 id="experience-architecture-person-journey-functional-completeness-authority-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-functional-completeness-authority-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Esta autoridade governa como a Guivos avalia a <strong>completude funcional da Jornada da Pessoa</strong>.</p>
 <p>Ela não cria tela, superfície, transição, implementação ou identidade visual. Seu papel é impedir que a conclusão documental da coleção de Surface Masters seja confundida com prova de que toda capacidade legítima da Pessoa já possui ciclo funcional completo.</p>
@@ -48529,9 +49305,11 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 .print-site-enumerate-headings #section-8-1 > h1:before { content: '8.1 ' }
 .print-site-enumerate-headings #experience-architecture-person-journey-read-first > h1:before { content: '8.1.1 ' }
 
-.print-site-enumerate-headings #experience-architecture-person-journey-flow-map > h1:before { content: '8.1.2 ' }
+.print-site-enumerate-headings #experience-architecture-person-journey-ux-ui-orchestration-master > h1:before { content: '8.1.2 ' }
 
-.print-site-enumerate-headings #experience-architecture-person-journey-functional-completeness-authority > h1:before { content: '8.1.3 ' }
+.print-site-enumerate-headings #experience-architecture-person-journey-flow-map > h1:before { content: '8.1.3 ' }
+
+.print-site-enumerate-headings #experience-architecture-person-journey-functional-completeness-authority > h1:before { content: '8.1.4 ' }
 
 .print-site-enumerate-headings #section-8-2 > h1:before { content: '8.2 ' }
 .print-site-enumerate-headings #experience-architecture-person-journey-per-002-protected-entry-master > h1:before { content: '8.2.1 ' }
