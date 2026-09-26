@@ -145,6 +145,7 @@ nav:
       - Comece por aqui:
           - Leia Primeiro: experience-architecture/person-journey/read-first.md
           - Fluxo Completo de Superfícies: experience-architecture/person-journey/flow-map.md
+          - Completude Funcional: experience-architecture/person-journey/functional-completeness-authority.md
 
       - Documentos Mestres por Superfície:
           - Entrada Protegida: experience-architecture/person-journey/per-002-protected-entry-master.md
