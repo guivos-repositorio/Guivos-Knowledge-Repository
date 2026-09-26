@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.24.20
+version: 1.24.21
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 related:
