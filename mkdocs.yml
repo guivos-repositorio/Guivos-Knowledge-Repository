@@ -195,6 +195,9 @@ nav:
           - Mapa de Estados: experience-architecture/organizations-collectives-authenticated-state-map.md
           - Fluxos Prioritários: experience-architecture/organizations-collectives-authenticated-priority-flows.md
 
+      - Documentos Mestres por Superfície:
+          - Visão Geral / Início: experience-architecture/organizations-collectives-journey/overview-start-master.md
+
   - Research e Validação:
       - Research — Visão Geral: research/index.md
       - Validação de Mercado: research/market-validation/README.md
