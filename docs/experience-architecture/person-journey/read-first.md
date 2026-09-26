@@ -2,7 +2,7 @@
 id: GKR-UX-PERSON-JOURNEY-READ-FIRST-001
 title: Jornada da Pessoa — Leia Primeiro para Design e IA
 status: active
-version: 0.1.2
+version: 0.1.3
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 normative: false
@@ -197,9 +197,10 @@ CURRENT SURFACE MASTERS
 → PER-002 — ENTRADA PROTEGIDA
 → PER-003 — ESCOLHA DE MODALIDADE
 → PER-004 — EXPRESSÃO POR TEXTO OU VOZ
+→ PER-005 — INVENTÁRIO E AUTORIZAÇÃO
 
 NEXT DOCUMENTATION TARGET
-→ PER-005 — INVENTÁRIO E AUTORIZAÇÃO
+→ PER-006 — PROCESSAMENTO VISÍVEL
 
 VISUAL MATERIALIZATION
 → DESIGN-OWNED
