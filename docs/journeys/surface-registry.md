@@ -108,7 +108,7 @@ Os **contextos correntes de experiência tratados nesta arquitetura** são:
 
 | Contexto | IDs próprios neste Registry |
 |---|---:|
-| Pessoa | 27 |
+| Pessoa | 29 |
 | Coletivo | 12 |
 | Organização | 11 |
 | Guivos Business | 0 |
@@ -143,6 +143,8 @@ O total estrutural permanece **57 IDs**. A contagem não implica que todos estej
 | GKR-SURF-PER-001 | Home pública | visitante; início protegido | público | validado | UXA-020; GKR-UX-HOME-MASTER-001 | Design-owned / sem baseline visual corrente | GKR-UX-HOME-MASTER-001 + UXA-020 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-002 | entrada protegida | Pessoa | protegido | validado | GKR-UX-PER002-MAT-ELIGIBILITY-001; UXA-020; UXA-023 | referência interativa local corrente `GKR-UX-PER002-PROTOTYPE-DELIVERY-001 v1.0.0`; não é baseline visual global | `GKR-UX-PER002-PROTOTYPE-REVALIDATION-001 v2.0.0 = PASS`; `TRN-002` permanece localmente validada | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-003 | escolha de modalidade | Pessoa | protegido | validado | UXA-020; UXA-023 | sem baseline visual corrente | UXA-035 | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-013 | captura e revisão de arquivo | Pessoa | protegido | contrato funcional candidato | GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001; GKR-UX-PER013-MASTER-001 | sem baseline visual corrente | TRN-014/015 contratadas; implementação não comprovada | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-014 | perguntas opcionais guiadas | Pessoa | protegido | contrato funcional candidato | GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001; GKR-UX-PER014-MASTER-001 | sem baseline visual corrente | TRN-016/017 contratadas; implementação não comprovada | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-004 | expressão por texto ou voz | Pessoa | protegido | validado | UXA-069; GKR-JOURNEY-PERSON-001 | sem baseline visual corrente | UXA-069 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-005 | inventário e autorização | Pessoa | protegido | validado | UXA-023 | sem baseline visual corrente | UXA-035 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-006 | processamento visível | Pessoa | protegido | validado | UXA-023 | sem baseline visual corrente | UXA-037 | [Pessoa](surface-registry-person-details.md) |
