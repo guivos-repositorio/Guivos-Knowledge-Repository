@@ -2,7 +2,7 @@
 id: GKR-UX-PERSON-JOURNEY-READ-FIRST-001
 title: Jornada da Pessoa — Leia Primeiro para Design e IA
 status: active
-version: 0.1.19
+version: 0.1.20
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 normative: false
@@ -12,6 +12,7 @@ depends_on:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
+  - GKR-UX-PERSON-JOURNEY-ORCHESTRATION-001
   - GKR-UX-PERSON-JOURNEY-FLOW-001
   - GKR-UX-HOME-MASTER-001
 ---
@@ -57,7 +58,21 @@ Para cada superfície, a leitura deve partir de:
 
 A Home pública continua governada por `GKR-UX-HOME-MASTER-001`.
 
-## 3. Regra de granularidade
+## 3. Documento Mestre de Orquestração UX/UI
+
+Antes de materializar a Journey ponta a ponta, consumir `GKR-UX-PERSON-JOURNEY-ORCHESTRATION-001`.
+
+Ele governa a conexão entre as responsabilidades: continuidade, comportamento do sistema, plano vigente, oportunidades, limites de capacidade, comunicação de upgrade, ofuscamento legítimo e estados transversais. Os Masters individuais continuam governando cada responsabilidade local.
+
+```text
+LEIA PRIMEIRO
+→ ORQUESTRAÇÃO UX/UI
+→ FLUXO COMPLETO
+→ MASTER DA SUPERFÍCIE
+→ PROTOTIPAÇÃO
+```
+
+## 4. Regra de granularidade
 
 Um documento desta coleção corresponde a **uma superfície ou responsabilidade funcional já reconhecida pelo Registry**.
 
@@ -78,7 +93,7 @@ HANDOFF
 
 Exemplo: a revisão consciente antes da saída externa permanece um **estado de `PER-203`**, porque a autoridade corrente não cria um novo `PER-ID`.
 
-## 4. O que cada Documento Mestre deve definir
+## 5. O que cada Documento Mestre deve definir
 
 Cada superfície deve ser descrita, quando aplicável, por:
 
@@ -105,7 +120,7 @@ Cada superfície deve ser descrita, quando aplicável, por:
 - critérios de aceite funcional;
 - lacunas que não podem ser preenchidas por inferência.
 
-## 5. Liberdade criativa
+## 6. Liberdade criativa
 
 O GKR governa significado, responsabilidade, dados, estados, relações, autoridade, limites, evidência e claims sustentáveis.
 
@@ -132,7 +147,7 @@ A designer pode definir:
 
 Nenhum Documento Mestre desta coleção deve prescrever estética.
 
-## 6. IA opcional
+## 7. IA opcional
 
 Quando IA for utilizada, ela deve consumir apenas:
 
@@ -141,6 +156,8 @@ Quando IA for utilizada, ela deve consumir apenas:
 - o Documento Mestre da superfície em construção;
 - suas autoridades específicas;
 - autoridades comuns estritamente necessárias.
+
+A prototipação por IA opera em **source lock com o GKR**: se funcionalidade, ação, estado, transição, dado ou entitlement não possuir fundamento documental no repositório, a IA deve sinalizar a lacuna e não inventá-la.
 
 A IA não pode:
 
@@ -152,7 +169,7 @@ A IA não pode:
 - transformar estado interno em nova tela;
 - substituir decisão humana de Design.
 
-## 7. Prototipação e referências existentes
+## 8. Prototipação e referências existentes
 
 Uma referência visual ou protótipo existente pode ser consultado **somente dentro do limite em que sua autoridade corrente o permite**.
 
@@ -167,7 +184,7 @@ VALIDAÇÃO DE PROTÓTIPO
 ≠ AUTORIZAÇÃO DE PRODUCT ENGINEERING
 ```
 
-## 8. Ordem de construção
+## 9. Ordem de construção
 
 A sequência de documentação está definida em `GKR-UX-PERSON-JOURNEY-FLOW-001`.
 
@@ -181,7 +198,7 @@ A regra operacional é:
 → SÓ ENTÃO AVANÇAR PARA A PRÓXIMA
 ```
 
-## 9. Completude documental versus completude funcional
+## 10. Completude documental versus completude funcional
 
 A coleção de Surface Masters está concluída em `26 / 26`, mas essa contagem não prova que toda capacidade legítima da Pessoa já possua ciclo funcional completo.
 
@@ -205,7 +222,7 @@ CAPACIDADE
 
 Nenhuma lacuna funcional autoriza, por si só, novo `PER-ID`, `TRN-ID`, superfície visual ou implementação.
 
-## 10. Estado
+## 11. Estado
 
 ```text
 PERSON JOURNEY DESIGN DOCUMENTATION

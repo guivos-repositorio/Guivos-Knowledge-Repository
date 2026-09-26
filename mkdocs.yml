@@ -144,6 +144,7 @@ nav:
   - Jornada da Pessoa — Superfícies e Fluxos:
       - Comece por aqui:
           - Leia Primeiro: experience-architecture/person-journey/read-first.md
+          - Documento Mestre de Orquestração UX/UI: experience-architecture/person-journey/ux-ui-orchestration-master.md
           - Fluxo Completo de Superfícies: experience-architecture/person-journey/flow-map.md
           - Completude Funcional: experience-architecture/person-journey/functional-completeness-authority.md
 
