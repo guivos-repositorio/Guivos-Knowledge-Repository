@@ -92,11 +92,11 @@ A prontidão é avaliada contra o conjunto canônico corrente.
 
 ## 3. Princípio superior — significado governado, criatividade livre
 
-A Guivos não quer engessar a designer. Identidade visual não é um input canônico obrigatório desta frente.
+A Guivos não quer engessar a designer. A expressão visual continua majoritariamente aberta à criação; **a tipografia oficial é uma foundation já governada por `GKR-BRAND-TYPOGRAPHY-001` e deve ser aplicada sem transformar sua escala em template de composição**.
 
 Pertencem à liberdade criativa da designer:
 
-- tipografia e escalas tipográficas;
+- aplicação criativa da tipografia e da escala oficiais governadas por `GKR-BRAND-TYPOGRAPHY-001`;
 - paleta e relações cromáticas;
 - fotografia, vídeo, imagem gerada, ilustração e iconografia;
 - grid, composição, densidade, respiro e ritmo;
@@ -313,7 +313,8 @@ A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOUR
 #### Pessoa
 
 - `CANONICAL` — papel institucional da Home; pergunta-mãe **“O que se torna possível quando você entra aqui?”**; possibilidade antes de produto; 11 movimentos; distinção participante × produto; Journey com porta própria; ausência de falsa personalização; autonomia, prova e confiança.
-- `DESIGN_CREATIVE` — identidade visual, tipografia, cor, imagem, composição, motion, componentes, agrupamento físico e solução responsiva.
+- `CANONICAL` — família e escala tipográfica oficiais conforme `GKR-BRAND-TYPOGRAPHY-001`.
+- `DESIGN_CREATIVE` — aplicação da tipografia oficial, cor, imagem, composição, motion, componentes, agrupamento físico e solução responsiva.
 - `DESIGN_HYPOTHESIS` — alternativas de Hero, agrupamento dos 11 movimentos, navegação, densidade, ritmo e interação que podem ser testadas para tornar a tese mais clara sem alterar significado, prioridade semântica ou autonomia.
 - `CONTENT_CANDIDATE` — terceira camada de concretização da Hero, CTA exploratório e microcopy não congelada.
 - `PROTOTYPE_PLACEHOLDER` — histórias, imagens, conteúdo editorial e evidências ainda não selecionadas, sempre identificadas internamente como provisórias.
