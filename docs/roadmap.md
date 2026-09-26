@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.43
+version: 13.48.44
 owner: Guivos
 last_updated: 2026-09-25
 normative: true
@@ -45,7 +45,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.50.55` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.50.56` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -63,7 +63,7 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.50.55 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.50.56 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-101` |
@@ -72,8 +72,8 @@ ROADMAP
 | Read-First das Homes | `8 / 8 CURRENT / NON-NORMATIVE` |
 | Design das Homes | `DESIGNER-FIRST / AI OPTIONAL / TOOL-NEUTRAL` |
 | Journey | vistas e registries correntes ativos |
-| Jornada da Pessoa — documentação para Design | `26 MASTERS PLANEJADOS APÓS A HOME / 14 CONSTRUÍDOS / PER-002 + PER-003 + PER-004 + PER-005 + PER-006 + PER-007 + PER-008 + PER-010 + PER-011 + PER-012 + PER-201 + PER-202 + PER-203 + PER-101 CURRENT` |
-| Próximo Master documental da Pessoa | `PER-102 — RESULTADOS DE BUSCA DE COLETIVOS / NOT_STARTED` |
+| Jornada da Pessoa — documentação para Design | `26 MASTERS PLANEJADOS APÓS A HOME / 15 CONSTRUÍDOS / PER-002 + PER-003 + PER-004 + PER-005 + PER-006 + PER-007 + PER-008 + PER-010 + PER-011 + PER-012 + PER-201 + PER-202 + PER-203 + PER-101 + PER-102 CURRENT` |
+| Próximo Master documental da Pessoa | `PER-103 — PERFIL PÚBLICO DO COLETIVO / NOT_STARTED` |
 | Business | `Start · Growth · Scale · Enterprise` / contratação online / Self-service quando elegível |
 | O/C low-fidelity autenticado | `DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS` |
 | O/C high-fidelity | `AUTHORIZATION GRANTED / EXECUTION RELEASE ISSUED / DELIVERY NOT_RECEIVED` |
@@ -320,7 +320,7 @@ PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-A próxima construção governada desta coleção é documental: `PER-102 — Resultados de Busca de Coletivos`. Materialização visual, teste real, implementação ou avanço de `UXA-102/V5` dependem de atos próprios.
+A próxima construção governada desta coleção é documental: `PER-103 — Perfil Público do Coletivo`. Materialização visual, teste real, implementação ou avanço de `UXA-102/V5` dependem de atos próprios.
 
 ## 8. Guivos Business
 
