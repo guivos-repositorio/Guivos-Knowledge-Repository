@@ -2,7 +2,7 @@
 id: GKR-UX-PERSON-JOURNEY-FLOW-001
 title: Jornada da Pessoa — Mapa Completo de Superfícies para Design
 status: active
-version: 0.1.9
+version: 0.1.10
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 normative: false
@@ -92,7 +92,7 @@ FILE / OPTIONAL GUIDED QUESTIONS
 ```text
 PER-008 — HOJE
 ├── TRN-008 → PER-010 — MEUS OBJETIVOS → TRN-009 → PER-008
-├── TRN-010 → PER-012 — MINHA EVOLUÇÃO → TRN-011 → PER-008
+├── TRN-010 → PER-011 — MEUS PRÓXIMOS PASSOS → TRN-011 → PER-008
 └── TRN-012 → PER-012 — MINHA EVOLUÇÃO → TRN-013 → PER-008
 ```
 
@@ -175,7 +175,7 @@ A ordem abaixo prioriza a espinha dorsal da Journey antes das famílias especial
 | 07 | `PER-008` | Hoje | **construído / current** |
 | 08 | `PER-010` | Meus Objetivos | **construído / current** |
 | 09 | `PER-011` | Meus Próximos Passos | **construído / current** |
-| 10 | `PER-012` | Minha Evolução | planejado |
+| 10 | `PER-012` | Minha Evolução | **construído / current** |
 | 11 | `PER-201` | Mapa de Oportunidades | planejado |
 | 12 | `PER-202` | Lista de Oportunidades | planejado |
 | 13 | `PER-203` | Detalhe de Oportunidade | planejado |
@@ -230,7 +230,7 @@ NEW SURFACE MASTERS TO BUILD
 → 26
 
 BUILT
-→ 9 / 26
+→ 10 / 26
 → PER-002
 → PER-003
 → PER-004
@@ -240,12 +240,13 @@ BUILT
 → PER-008
 → PER-010
 → PER-011
+→ PER-012
 
 REMAINING
-→ 17 / 26
+→ 16 / 26
 
 NEXT DOCUMENTATION TARGET
-→ PER-011 — MEUS PRÓXIMOS PASSOS
+→ PER-201 — MAPA DE OPORTUNIDADES
 
 NEW PER-IDS
 → NONE
