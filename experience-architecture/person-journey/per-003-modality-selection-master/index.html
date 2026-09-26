@@ -3366,6 +3366,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../per-014-optional-guided-questions-master/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perguntas Opcionais Guiadas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../per-004-text-voice-expression-master/" class="md-nav__link">
         
   
@@ -5968,7 +6003,7 @@ PERGUNTAS OPCIONAIS
 → CONTINUIDADE DOWNSTREAM ESPECÍFICA = NÃO CONTRATADA
 </code></pre></div>
 <p>Design e IA <strong>não podem inventar nova superfície, novo <code>PER-ID</code> ou novo handoff</strong> para fechar essa lacuna.</p>
-<p>A solução visual pode representar as quatro escolhas correntes; Arquivo segue o contrato candidato de <code>PER-013</code>, enquanto Perguntas Opcionais ainda depende de autoridade posterior que feche sua continuidade.</p>
+<p>A solução visual pode representar as quatro escolhas correntes; Arquivo segue o contrato candidato de <code>PER-013</code>, enquanto Perguntas Opcionais segue o contrato candidato de <code>PER-014</code>.</p>
 <h2 id="5-job-principal-da-pessoa">5. Job principal da Pessoa<a class="headerlink" href="#5-job-principal-da-pessoa" title="Permanent link">&para;</a></h2>
 <p>A Pessoa precisa conseguir responder:</p>
 <ul>
@@ -6121,7 +6156,7 @@ PER-003 ENTRY
 <li>o efeito de cada modalidade permanece distinguível;</li>
 <li>permissões e autorizações não são herdadas automaticamente entre modalidades;</li>
 <li>remover uma modalidade deve ter consequência compreensível;</li>
-<li>combinação envolvendo Arquivo deve respeitar o contrato candidato de <code>PER-013</code>; combinação com Perguntas Opcionais não cria automaticamente nova rota downstream.</li>
+<li>combinação envolvendo Arquivo deve respeitar o contrato candidato de <code>PER-013</code>; combinação com Perguntas Opcionais deve respeitar o contrato candidato de <code>PER-014</code>; combinações entre modalidades não criam rotas adicionais por inferência.</li>
 </ul>
 <h2 id="14-troca-de-modalidade">14. Troca de modalidade<a class="headerlink" href="#14-troca-de-modalidade" title="Permanent link">&para;</a></h2>
 <p>Antes de qualquer captura material, a Pessoa deve poder trocar de modalidade sem penalidade.</p>
@@ -6156,7 +6191,7 @@ DEPOIS DA CAPTURA
 <li>que Texto não inicia análise;</li>
 <li>que é possível voltar ou interromper;</li>
 <li>que combinar modalidades é opcional;</li>
-<li>que Arquivo possui contrato candidato em <code>PER-013</code>, enquanto a continuidade downstream de Perguntas Opcionais ainda não está integralmente contratada no GKR.</li>
+<li>que Arquivo possui contrato candidato em <code>PER-013</code> e Perguntas Opcionais possui contrato candidato em <code>PER-014</code>; ambos permanecem sem implementação presumida.</li>
 </ul>
 <h2 id="16-informacoes-que-nao-devem-ser-exigidas">16. Informações que não devem ser exigidas<a class="headerlink" href="#16-informacoes-que-nao-devem-ser-exigidas" title="Permanent link">&para;</a></h2>
 <p><code>PER-003</code> não deve exigir:</p>
@@ -6326,7 +6361,7 @@ MODALITY SELECTED
 <li>iniciar upload automaticamente;</li>
 <li>inferir preferência;</li>
 <li>inventar benefício de uma modalidade;</li>
-<li>inventar continuidade além do contrato candidato de Arquivo ou para Perguntas Opcionais;</li>
+<li>inventar continuidade além dos contratos candidatos de Arquivo (<code>PER-013</code>) e Perguntas Opcionais (<code>PER-014</code>);</li>
 <li>criar novo <code>PER-ID</code>;</li>
 <li>materializar <code>PER-004</code> como se já estivesse documentada por este Master.</li>
 </ul>
@@ -6344,7 +6379,7 @@ MODALITY SELECTED
 <li>a Pessoa consegue voltar ou interromper;</li>
 <li>é possível trocar a escolha antes da captura;</li>
 <li>o handoff <code>TRN-003 → PER-004</code> é preservado como continuidade parcial para texto/voz;</li>
-<li>o contrato candidato de Arquivo é preservado sem ampliação e a lacuna downstream de Perguntas Opcionais permanece não inventada;</li>
+<li>os contratos candidatos de Arquivo (<code>PER-013</code>) e Perguntas Opcionais (<code>PER-014</code>) são preservados sem ampliação;</li>
 <li>nenhuma autorização material é inferida;</li>
 <li>nenhuma preferência é inferida sem autoridade;</li>
 <li>indisponibilidade possui fallback explícito e não coercitivo;</li>
@@ -6366,7 +6401,7 @@ MODALITY SELECTED
 <li>implementa upload;</li>
 <li>define formatos de arquivo;</li>
 <li>implementa fluxo de perguntas;</li>
-<li>promove a continuidade de Arquivo além do contrato candidato ou fecha a continuidade de Perguntas Opcionais;</li>
+<li>promove a continuidade de Arquivo ou Perguntas Opcionais além dos respectivos contratos candidatos;</li>
 <li>define persistência da escolha;</li>
 <li>altera <code>TRN-002</code> ou <code>TRN-003</code>;</li>
 <li>cria nova superfície;</li>
