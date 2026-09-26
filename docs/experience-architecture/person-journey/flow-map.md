@@ -190,7 +190,7 @@ A ordem abaixo prioriza a espinha dorsal da Journey antes das famílias especial
 | 22 | `PER-009` | Conta / Configurações — recorte governado | **construído / current** |
 | 23 | `PER-301` | Planos e Comparação | **construído / current** |
 | 24 | `PER-302` | Revisão de Contratação | **construído / current** |
-| 25 | `PER-303` | Downgrade e Cancelamento | planejado |
+| 25 | `PER-303` | Downgrade e Cancelamento | **construído / current** |
 | 26 | `PER-304` | Resultado e Recuperação de Plano/Cobrança | planejado |
 
 ## 8. Regra para criação no MENU
@@ -230,7 +230,7 @@ NEW SURFACE MASTERS TO BUILD
 → 26
 
 BUILT
-→ 24 / 26
+→ 25 / 26
 → PER-002
 → PER-003
 → PER-004
@@ -255,12 +255,13 @@ BUILT
 → PER-009
 → PER-301
 → PER-302
+→ PER-303
 
 REMAINING
-→ 2 / 26
+→ 1 / 26
 
 NEXT DOCUMENTATION TARGET
-→ PER-303 — DOWNGRADE E CANCELAMENTO
+→ PER-304 — RESULTADO E RECUPERAÇÃO DE PLANO/COBRANÇA
 
 NEW PER-IDS
 → NONE
