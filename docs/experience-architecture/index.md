@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 1.24.14
+version: 1.24.15
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 related:
@@ -120,6 +120,7 @@ A Jornada da Pessoa possui uma camada própria de documentação para Design e I
 - [PER-008 — Hoje — Documento Mestre](person-journey/per-008-today-master.md).
 - [PER-010 — Meus Objetivos — Documento Mestre](person-journey/per-010-objectives-master.md).
 - [PER-011 — Meus Próximos Passos — Documento Mestre](person-journey/per-011-next-steps-master.md).
+- [PER-012 — Minha Evolução — Documento Mestre](person-journey/per-012-evolution-master.md).
 
 A coleção parte de `PER-002`, porque `PER-001` já é governada pelo Documento Mestre da Home Pública — Pessoa. As superfícies seguintes entram progressivamente, uma a uma, somente após construção e validação documental.
 
