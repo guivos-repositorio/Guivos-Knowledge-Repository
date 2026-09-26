@@ -263,7 +263,8 @@ Somente quando estado e autoridade permitirem, a responsabilidade pode oferecer:
 - consultar participantes e vínculos;
 - abrir um vínculo;
 - revisar condição e estado;
-- reconhecer ou aceitar papel/responsabilidade quando houver autoridade e regra aplicáveis;
+- reconhecer aceite já registrado de papel/responsabilidade quando houver autoridade e regra aplicáveis;
+- aceitar papel/responsabilidade somente quando a própria Pessoa atuante for a titular da atribuição e a autoridade correspondente permitir; quando o aceite pertencer a outro participante, encaminhar ou preservar a continuidade na perspectiva autorizada dessa Pessoa, sem aceitar em seu nome;
 - atualizar informação legitimamente editável;
 - pausar participação quando permitido;
 - retomar participação quando permitido;
@@ -296,6 +297,8 @@ PROPOSTA
 SILÊNCIO
 ≠ ACEITE
 ```
+
+O responsável do Coletivo pode reconhecer um aceite legitimamente registrado, mas não pode fornecer o aceite pessoal de outro participante. Quando o aceite depender da Pessoa afetada, a decisão deve ocorrer na perspectiva ou no fluxo autorizado dessa própria Pessoa.
 
 Este Master não cria um mecanismo universal de atribuição de papel nem presume que toda responsabilidade exige o mesmo tipo de aceite.
 
