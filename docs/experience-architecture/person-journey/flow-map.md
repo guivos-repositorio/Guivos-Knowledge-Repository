@@ -28,10 +28,15 @@ A Home pública `PER-001` já possui Documento Mestre próprio e funciona como o
 ```text
 PER-001 — HOME PÚBLICA
 → autoridade já existente
-→ fora da contagem desta nova coleção
+→ fora da contagem da coleção original de Masters
 
-PER-002..304
-→ 26 superfícies/responsabilidades da Pessoa a documentar
+COLEÇÃO ORIGINAL
+→ 26 / 26 Masters concluídos
+
+EXTENSÕES PÓS-AUDITORIA
+→ PER-013 — Captura e Revisão de Arquivo
+→ PER-014 — Perguntas Opcionais Guiadas
+→ contratos funcionais candidatos incorporados ao Registry corrente
 ```
 
 ## 2. Espinha dorsal da entrada e compreensão
@@ -106,9 +111,15 @@ COMBINATION
 TEXT / VOICE
 → TRN-003 → PER-004
 
-FILE / OPTIONAL GUIDED QUESTIONS
-→ DOWNSTREAM CONTINUITY NOT FULLY CONTRACTED
-→ MUST NOT BE INVENTED
+FILE
+→ TRN-014 → PER-013 → TRN-015 → PER-005
+
+OPTIONAL GUIDED QUESTIONS
+→ TRN-016 → PER-014 → TRN-017 → PER-005
+
+BOTH
+→ CONTRACTED AS FUNCTIONAL CANDIDATES
+→ IMPLEMENTATION / MATURITY MUST NOT BE INVENTED
 ```
 
 ## 3. Continuidade recorrente a partir de Hoje
@@ -245,7 +256,8 @@ Exemplos:
 
 ```text
 PERSON SURFACES IN CURRENT REGISTRY
-→ 27
+→ 29
+→ includes PER-013 / PER-014 post-audit extensions
 
 PER-001
 → ALREADY COVERED BY PUBLIC HOME MASTER
