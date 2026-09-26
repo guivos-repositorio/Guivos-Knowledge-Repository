@@ -189,6 +189,8 @@ A autoridade `GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001` governa essa disti
 
 As duas primeiras remediações adjudicadas introduzem os contratos candidatos `PER-013 — Captura e Revisão de Arquivo` e `PER-014 — Perguntas Opcionais Guiadas`, ambos entre modalidades próprias de `PER-003` e `PER-005`. Essas extensões pós-auditoria não alteram retroativamente o marco `26 / 26` da coleção original.
 
+As seis frentes de remediação funcional foram adjudicadas: Arquivo; Perguntas Opcionais; Salvar/Comparar; controles do vínculo com Coletivos; Conta/controles da Pessoa; e Planos × Journey. O Registry corrente passa a conter 29 responsabilidades da Pessoa ao incluir `PER-001` e as extensões pós-auditoria `PER-013/014`; isso não altera a contagem histórica da coleção original nem comprova implementação.
+
 ```text
 26 / 26 SURFACE MASTERS
 → DOCUMENTAÇÃO PREVISTA CONCLUÍDA
