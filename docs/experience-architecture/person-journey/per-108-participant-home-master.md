@@ -194,16 +194,147 @@ Este Master não cria novos destinos ou transições.
 
 ## 13. Controles do vínculo
 
-Conforme autoridade corrente, a experiência pode tornar acessíveis controles como:
+Conforme autoridade corrente, `PER-108` governa o estado corrente do vínculo e pode tornar acessíveis controles legitimamente existentes.
 
-- preferências de atualização;
-- pausa;
-- saída;
-- proteção;
-- denúncia ou contestação;
-- consulta ao estado do vínculo.
+A presença de um controle deve corresponder a capacidade real. Nenhum controle pode ser inventado apenas para completar a interface.
 
-A presença de um controle deve corresponder a capacidade legitimamente existente. Nenhum controle pode ser inventado apenas para completar a interface.
+### 13.1 Consultar o estado do vínculo
+
+A Pessoa deve conseguir compreender, quando aplicável:
+
+- vínculo vigente;
+- vínculo pausado;
+- vínculo encerrado;
+- permissão alterada;
+- perda de acesso;
+- efeito conhecido de uma alteração ainda em processamento.
+
+Estado histórico não prevalece sobre o estado corrente.
+
+### 13.2 Preferências de atualização
+
+Preferências de atualização são controles de comunicação/contexto e devem permanecer distintas de:
+
+```text
+PREFERÊNCIA DE ATUALIZAÇÃO
+≠ CONSENTIMENTO
+≠ VÍNCULO
+≠ PAPEL
+≠ AUTORIDADE
+```
+
+Alterar preferência não pode criar, pausar ou encerrar vínculo por inferência.
+
+Quando a alteração produzir efeito persistente, a experiência deve apresentar estado confirmado, falha recuperável ou condição indeterminada sem declarar sucesso não comprovado.
+
+### 13.3 Pausar e retomar
+
+Quando Pausar for uma capacidade legítima, o ciclo funcional mínimo é:
+
+```text
+VÍNCULO VIGENTE
+→ COMPREENDER EFEITO DA PAUSA
+→ AÇÃO CONSCIENTE
+→ CONFIRMAÇÃO PROPORCIONAL AO RISCO
+→ PROCESSAMENTO
+→ VÍNCULO PAUSADO OU FALHA/ESTADO INDETERMINADO
+```
+
+Pausar não significa sair do Coletivo.
+
+Quando Retomar for permitido:
+
+```text
+VÍNCULO PAUSADO
+→ AÇÃO CONSCIENTE DE RETOMAR
+→ REVALIDAÇÃO DE PERMISSÕES E CONDIÇÕES APLICÁVEIS
+→ PROCESSAMENTO
+→ VÍNCULO VIGENTE OU FALHA/ESTADO INDETERMINADO
+```
+
+Retomar não restaura silenciosamente papel, permissão, função, compromisso ou autoridade que tenham mudado durante a pausa.
+
+### 13.4 Sair do Coletivo
+
+Quando a saída estiver legitimamente disponível, a Pessoa deve compreender consequências materiais antes de confirmar.
+
+O ciclo mínimo é:
+
+```text
+VÍNCULO ATIVO OU PAUSADO
+→ SOLICITAR SAÍDA
+→ COMPREENDER CONSEQUÊNCIAS
+→ CONFIRMAÇÃO PROPORCIONAL
+→ PROCESSAMENTO
+→ VÍNCULO ENCERRADO OU FALHA/ESTADO INDETERMINADO
+```
+
+Devem permanecer distintas:
+
+```text
+SAÍDA DO COLETIVO
+≠ SAÍDA DA GUIVOS
+≠ EXCLUSÃO DE CONTA
+≠ CANCELAMENTO DE PLANO
+≠ APAGAMENTO AUTOMÁTICO DE DADOS
+```
+
+Compromissos previamente aceitos podem possuir consequências próprias quando governados por autoridade específica. O simples ato de sair não autoriza inventar quitação, cancelamento externo ou eliminação de obrigação.
+
+Repetir uma solicitação já confirmada não deve criar efeitos duplicados.
+
+### 13.5 Contestação e correção
+
+Os controles desta seção preservam a distinção já estabelecida em `PER-108`:
+
+```text
+CONTESTAR
+≠ EDITAR SILENCIOSAMENTE A FONTE OFICIAL
+```
+
+A Pessoa pode corrigir dado sob sua autoridade, contestar informação de terceiro, solicitar revisão, consultar a fonte ou retornar sem efeito quando essas capacidades forem legítimas.
+
+Contestação não altera automaticamente vínculo, papel, permissão ou autoridade.
+
+### 13.6 Proteção e denúncia
+
+`PER-108` pode oferecer **acesso contextual** a proteção ou denúncia quando a capacidade existir.
+
+Esse acesso não autoriza `PER-108` a absorver automaticamente:
+
+- triagem especializada;
+- coleta estruturada de evidências;
+- investigação;
+- decisão disciplinar;
+- acompanhamento de caso;
+- resolução;
+- recurso;
+- comunicação de resultado.
+
+```text
+ACESSO CONTEXTUAL À PROTEÇÃO/DENÚNCIA
+→ PODE PARTIR DE PER-108
+
+PROCESSO ESPECIALIZADO
+→ NÃO ADJUDICADO NESTE MASTER
+→ NÃO CRIAR POR INFERÊNCIA
+```
+
+Denunciar não encerra o vínculo automaticamente. Sair do Coletivo não equivale a denunciar.
+
+### 13.7 Processamento, confirmação e recuperação
+
+Para qualquer controle material que altere estado:
+
+- intenção não equivale a processamento;
+- processamento não equivale a sucesso;
+- sucesso só pode ser apresentado quando confirmado;
+- estado indeterminado deve permanecer indeterminado;
+- falha recuperável deve oferecer recuperação proporcional;
+- repetição não deve duplicar efeito;
+- o estado corrente do vínculo deve prevalecer após confirmação.
+
+Nenhuma dessas regras cria novo `PER-ID`, `TRN-ID` ou destino.
 
 ## 14. TRN-111 — entrada no Início
 
