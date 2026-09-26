@@ -2,7 +2,7 @@
 id: GKR-UX-PERSON-JOURNEY-FLOW-001
 title: Jornada da Pessoa — Mapa Completo de Superfícies para Design
 status: active
-version: 0.1.10
+version: 0.1.11
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 normative: false
@@ -176,7 +176,7 @@ A ordem abaixo prioriza a espinha dorsal da Journey antes das famílias especial
 | 08 | `PER-010` | Meus Objetivos | **construído / current** |
 | 09 | `PER-011` | Meus Próximos Passos | **construído / current** |
 | 10 | `PER-012` | Minha Evolução | **construído / current** |
-| 11 | `PER-201` | Mapa de Oportunidades | planejado |
+| 11 | `PER-201` | Mapa de Oportunidades | **construído / current** |
 | 12 | `PER-202` | Lista de Oportunidades | planejado |
 | 13 | `PER-203` | Detalhe de Oportunidade | planejado |
 | 14 | `PER-101` | Explorar Coletivos | planejado |
@@ -230,7 +230,7 @@ NEW SURFACE MASTERS TO BUILD
 → 26
 
 BUILT
-→ 10 / 26
+→ 11 / 26
 → PER-002
 → PER-003
 → PER-004
@@ -241,12 +241,13 @@ BUILT
 → PER-010
 → PER-011
 → PER-012
+→ PER-201
 
 REMAINING
-→ 16 / 26
+→ 15 / 26
 
 NEXT DOCUMENTATION TARGET
-→ PER-201 — MAPA DE OPORTUNIDADES
+→ PER-202 — LISTA DE OPORTUNIDADES
 
 NEW PER-IDS
 → NONE

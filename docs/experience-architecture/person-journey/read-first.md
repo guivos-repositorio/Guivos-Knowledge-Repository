@@ -2,7 +2,7 @@
 id: GKR-UX-PERSON-JOURNEY-READ-FIRST-001
 title: Jornada da Pessoa — Leia Primeiro para Design e IA
 status: active
-version: 0.1.9
+version: 0.1.10
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 normative: false
@@ -204,9 +204,10 @@ CURRENT SURFACE MASTERS
 → PER-010 — MEUS OBJETIVOS
 → PER-011 — MEUS PRÓXIMOS PASSOS
 → PER-012 — MINHA EVOLUÇÃO
+→ PER-201 — MAPA DE OPORTUNIDADES
 
 NEXT DOCUMENTATION TARGET
-→ PER-201 — MAPA DE OPORTUNIDADES
+→ PER-202 — LISTA DE OPORTUNIDADES
 → NOT_STARTED
 
 VISUAL MATERIALIZATION
