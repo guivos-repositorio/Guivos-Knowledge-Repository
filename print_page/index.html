@@ -3194,6 +3194,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/person-journey/per-202-opportunity-list-master/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lista de Oportunidades
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -5439,6 +5474,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-person-journey-per-202-opportunity-list-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.12 Lista de Oportunidades
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -6768,6 +6814,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-person-journey-per-202-opportunity-list-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.12 Lista de Oportunidades
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -7225,7 +7282,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <h2 id="index-estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#index-estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="#project-current-state-register">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
 <div class="highlight"><pre><span></span><code>GKR-STATE-001
-→ 3.50.52 / CURRENT
+→ 3.50.53 / CURRENT
 
 ERA
 → GE-2 — KNOWLEDGE
@@ -7241,9 +7298,9 @@ GIA-COG-001
 → CURRENT COGNITIVE REFERENCE ARCHITECTURE
 
 PERSON JOURNEY DESIGN DOCUMENTATION
-→ FLOW = GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.11
-→ SURFACE MASTERS = 11 / 26 BUILT AFTER PUBLIC HOME
-→ CURRENT MASTERS = PER-002 v0.1.0 + PER-003 v0.1.1 + PER-004 v0.1.0 + PER-005 v0.1.0 + PER-006 v0.1.0 + PER-007 v0.1.0 + PER-008 v0.1.0 + PER-010 v0.1.0 + PER-011 v0.1.0 + PER-012 v0.1.0 + PER-201 v0.1.0
+→ FLOW = GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.12
+→ SURFACE MASTERS = 12 / 26 BUILT AFTER PUBLIC HOME
+→ CURRENT MASTERS = PER-002 v0.1.0 + PER-003 v0.1.1 + PER-004 v0.1.0 + PER-005 v0.1.0 + PER-006 v0.1.0 + PER-007 v0.1.0 + PER-008 v0.1.0 + PER-010 v0.1.0 + PER-011 v0.1.0 + PER-012 v0.1.0 + PER-201 v0.1.0 + PER-202 v0.1.0
 → PER-003 CHOICES = TEXT / VOICE / FILE / OPTIONAL GUIDED QUESTIONS
 → PER-004 = TEXT / VOICE EXPRESSION + REVIEW
 → PER-005 = INVENTORY + REVIEW + SPECIFIC AUTHORIZATION
@@ -7254,7 +7311,8 @@ PERSON JOURNEY DESIGN DOCUMENTATION
 → PER-011 = NEXT STEPS / UNDERSTAND + ORGANIZE + REVIEW + CONTROL
 → PER-012 = EVOLUTION / UNDERSTAND + REVIEW + CONTROL TRAJECTORIES
 → PER-201 = OPPORTUNITY MAP / TERRITORIAL DISCOVERY + QUERY CONTROL
-→ NEXT DOCUMENTATION TARGET = PER-202 / NOT_STARTED
+→ PER-202 = OPPORTUNITY LIST / TEXTUAL TERRITORIAL DISCOVERY + ORDERING
+→ NEXT DOCUMENTATION TARGET = PER-203 / NOT_STARTED
 
 PER-002
 → FUNCTIONAL BOUNDARY = GKR-UX-PER002-MAT-ELIGIBILITY-001 v2.0.0 / CURRENT
@@ -9396,8 +9454,8 @@ SURFACE MASTERS TO BUILD AFTER THE HOME
 → 26
 
 CURRENT FOUNDATION
-→ GKR-UX-PERSON-JOURNEY-READ-FIRST-001 v0.1.10
-→ GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.11
+→ GKR-UX-PERSON-JOURNEY-READ-FIRST-001 v0.1.11
+→ GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.12
 
 CURRENT SURFACE MASTERS
 → GKR-UX-PER002-MASTER-001 v0.1.0
@@ -9425,10 +9483,10 @@ CURRENT SURFACE MASTERS
 → TRN-006 → PER-007 = LOCALLY VALIDATED / UNCHANGED
 
 BUILT
-→ 11 / 26
+→ 12 / 26
 
 REMAINING
-→ 15 / 26
+→ 14 / 26
 
 PER-008
 → GKR-UX-PER008-MASTER-001 v0.1.0 / CURRENT
@@ -9450,8 +9508,12 @@ PER-201
 → GKR-UX-PER201-MASTER-001 v0.1.0 / CURRENT
 → TRN-203 / TRN-204 / TRN-210 = INTEGRALLY VALIDATED / UNCHANGED
 
+PER-202
+→ GKR-UX-PER202-MASTER-001 v0.1.0 / CURRENT
+→ TRN-210 / TRN-211 = INTEGRALLY VALIDATED / UNCHANGED
+
 NEXT DOCUMENTATION TARGET
-→ PER-202 — LISTA DE OPORTUNIDADES
+→ PER-203 — DETALHE DE OPORTUNIDADE
 → NOT_STARTED
 
 NEW PER-IDS
@@ -9465,7 +9527,7 @@ PRODUCT ENGINEERING
 </code></pre></div>
 <p>A construção ocorre uma superfície por vez. Planejamento não cria página vazia, novo <code>PER-ID</code>, navegação, tela, protótipo ou implementação por inferência.</p></section><section class="print-page" id="roadmap" heading-number="2.3"><h1 id="roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos">Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos<a class="headerlink" href="#roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-funcao">1. Função<a class="headerlink" href="#roadmap-1-funcao" title="Permanent link">&para;</a></h2>
-<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.52</code> em <strong>frentes governadas de avanço</strong>.</p>
+<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.53</code> em <strong>frentes governadas de avanço</strong>.</p>
 <p>Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.</p>
 <div class="highlight"><pre><span></span><code>ROADMAP
 → ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
@@ -9486,7 +9548,7 @@ ROADMAP
 <tbody>
 <tr>
 <td>Estado global</td>
-<td><code>GKR-STATE-001 v3.50.52 / CURRENT</code></td>
+<td><code>GKR-STATE-001 v3.50.53 / CURRENT</code></td>
 </tr>
 <tr>
 <td>Era</td>
@@ -9522,11 +9584,11 @@ ROADMAP
 </tr>
 <tr>
 <td>Jornada da Pessoa — documentação para Design</td>
-<td><code>26 MASTERS PLANEJADOS APÓS A HOME / 11 CONSTRUÍDOS / PER-002 + PER-003 + PER-004 + PER-005 + PER-006 + PER-007 + PER-008 + PER-010 + PER-011 + PER-012 + PER-201 CURRENT</code></td>
+<td><code>26 MASTERS PLANEJADOS APÓS A HOME / 12 CONSTRUÍDOS / PER-002 + PER-003 + PER-004 + PER-005 + PER-006 + PER-007 + PER-008 + PER-010 + PER-011 + PER-012 + PER-201 + PER-202 CURRENT</code></td>
 </tr>
 <tr>
 <td>Próximo Master documental da Pessoa</td>
-<td><code>PER-202 — LISTA DE OPORTUNIDADES / NOT_STARTED</code></td>
+<td><code>PER-203 — DETALHE DE OPORTUNIDADE / NOT_STARTED</code></td>
 </tr>
 <tr>
 <td>Business</td>
@@ -9694,7 +9756,7 @@ PRODUCT ENGINEERING
 <p><code>PER-002</code> possui boundary funcional corrente, referência interativa local validada e Documento Mestre próprio para consumo de Design e IA opcional. Isso não cria execução automática posterior.</p>
 <div class="highlight"><pre><span></span><code>PERSON JOURNEY DOCUMENTATION
 → FLOW MAP = CURRENT
-→ 11 / 26 SURFACE MASTERS BUILT
+→ 12 / 26 SURFACE MASTERS BUILT
 
 PER-002
 → GKR-UX-PER002-MASTER-001 v0.1.0
@@ -9756,8 +9818,12 @@ PER-201
 → GKR-UX-PER201-MASTER-001 v0.1.0 / CURRENT
 → TRN-203 / TRN-204 / TRN-210 = INTEGRALLY VALIDATED / UNCHANGED
 
+PER-202
+→ GKR-UX-PER202-MASTER-001 v0.1.0 / CURRENT
+→ TRN-210 / TRN-211 = INTEGRALLY VALIDATED / UNCHANGED
+
 NEXT DOCUMENTATION TARGET
-→ PER-202 — LISTA DE OPORTUNIDADES
+→ PER-203 — DETALHE DE OPORTUNIDADE
 → DOCUMENTATION ONLY / NOT_STARTED
 
 UXA-102 / V5
@@ -9766,7 +9832,7 @@ UXA-102 / V5
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 </code></pre></div>
-<p>A próxima construção governada desta coleção é documental: <code>PER-202 — Lista de Oportunidades</code>. Materialização visual, teste real, implementação ou avanço de <code>UXA-102/V5</code> dependem de atos próprios.</p>
+<p>A próxima construção governada desta coleção é documental: <code>PER-203 — Detalhe de Oportunidade</code>. Materialização visual, teste real, implementação ou avanço de <code>UXA-102/V5</code> dependem de atos próprios.</p>
 <h2 id="roadmap-8-guivos-business">8. Guivos Business<a class="headerlink" href="#roadmap-8-guivos-business" title="Permanent link">&para;</a></h2>
 <p><code>GPA-004 v1.7.5</code> governa a arquitetura funcional do Guivos Business.</p>
 <div class="highlight"><pre><span></span><code>BUSINESS
@@ -11930,6 +11996,7 @@ GUIVOS → DEVE POSSUIR IDENTIDADE INSTITUCIONAL PRÓPRIA
 <li><code>GKR-UX-PER011-MASTER-001</code> — Documento Mestre de <code>PER-011 — Meus Próximos Passos</code>.</li>
 <li><code>GKR-UX-PER012-MASTER-001</code> — Documento Mestre de <code>PER-012 — Minha Evolução</code>.</li>
 <li><code>GKR-UX-PER201-MASTER-001</code> — Documento Mestre de <code>PER-201 — Mapa de Oportunidades</code>.</li>
+<li><code>GKR-UX-PER202-MASTER-001</code> — Documento Mestre de <code>PER-202 — Lista de Oportunidades</code>.</li>
 </ul>
 <p>A coleção não cria telas por inferência. Cada Documento Mestre deve corresponder a uma superfície/responsabilidade já reconhecida pelo Registry e preservar estados internos dentro dessa mesma responsabilidade quando não existir novo <code>PER-ID</code>.</p>
 <p>Para prototipação e Design, continuar usando:</p>
@@ -15175,6 +15242,7 @@ CURRENT AUTHORITIES
 <li><a href="#experience-architecture-person-journey-per-011-next-steps-master">PER-011 — Meus Próximos Passos — Documento Mestre</a>.</li>
 <li><a href="#experience-architecture-person-journey-per-012-evolution-master">PER-012 — Minha Evolução — Documento Mestre</a>.</li>
 <li><a href="#experience-architecture-person-journey-per-201-opportunity-map-master">PER-201 — Mapa de Oportunidades — Documento Mestre</a>.</li>
+<li><a href="#experience-architecture-person-journey-per-202-opportunity-list-master">PER-202 — Lista de Oportunidades — Documento Mestre</a>.</li>
 </ul>
 <p>A coleção parte de <code>PER-002</code>, porque <code>PER-001</code> já é governada pelo Documento Mestre da Home Pública — Pessoa. As superfícies seguintes entram progressivamente, uma a uma, somente após construção e validação documental.</p>
 <h3 id="experience-architecture-32-contextos-principais-de-experiencia">3.2 Contextos principais de experiência<a class="headerlink" href="#experience-architecture-32-contextos-principais-de-experiencia" title="Permanent link">&para;</a></h3>
@@ -25049,6 +25117,7 @@ IMPLEMENTATION
 <li><code>GKR-UX-PER011-MASTER-001</code> — Documento Mestre de <code>PER-011 — Meus Próximos Passos</code>.</li>
 <li><code>GKR-UX-PER012-MASTER-001</code> — Documento Mestre de <code>PER-012 — Minha Evolução</code>.</li>
 <li><code>GKR-UX-PER201-MASTER-001</code> — Documento Mestre de <code>PER-201 — Mapa de Oportunidades</code>.</li>
+<li><code>GKR-UX-PER202-MASTER-001</code> — Documento Mestre de <code>PER-202 — Lista de Oportunidades</code>.</li>
 </ul>
 <p>A coleção não cria telas por inferência. Cada Documento Mestre deve corresponder a uma superfície/responsabilidade já reconhecida pelo Registry e preservar estados internos dentro dessa mesma responsabilidade quando não existir novo <code>PER-ID</code>.</p>
 <p>Para prototipação e Design, continuar usando:</p>
@@ -25601,9 +25670,10 @@ CURRENT SURFACE MASTERS
 → PER-011 — MEUS PRÓXIMOS PASSOS
 → PER-012 — MINHA EVOLUÇÃO
 → PER-201 — MAPA DE OPORTUNIDADES
+→ PER-202 — LISTA DE OPORTUNIDADES
 
 NEXT DOCUMENTATION TARGET
-→ PER-202 — LISTA DE OPORTUNIDADES
+→ PER-203 — DETALHE DE OPORTUNIDADE
 → NOT_STARTED
 
 VISUAL MATERIALIZATION
@@ -25842,7 +25912,7 @@ PER-301
 <td style="text-align: right;">12</td>
 <td><code>PER-202</code></td>
 <td>Lista de Oportunidades</td>
-<td>planejado</td>
+<td><strong>construído / current</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;">13</td>
@@ -25959,7 +26029,7 @@ NEW SURFACE MASTERS TO BUILD
 → 26
 
 BUILT
-→ 11 / 26
+→ 12 / 26
 → PER-002
 → PER-003
 → PER-004
@@ -25971,12 +26041,13 @@ BUILT
 → PER-011
 → PER-012
 → PER-201
+→ PER-202
 
 REMAINING
-→ 15 / 26
+→ 14 / 26
 
 NEXT DOCUMENTATION TARGET
-→ PER-202 — LISTA DE OPORTUNIDADES
+→ PER-203 — DETALHE DE OPORTUNIDADE
 
 NEW PER-IDS
 → NONE
@@ -30765,6 +30836,336 @@ PRODUCT ENGINEERING
 
 NEXT DOCUMENTATION TARGET
 → PER-202 — LISTA DE OPORTUNIDADES
+</code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-per-202-opportunity-list-master" heading-number="8.2.12"><nav class='md-tags'><span class='md-tag'>person-journey</span><span class='md-tag'>per-202</span><span class='md-tag'>opportunities</span><span class='md-tag'>list</span><span class='md-tag'>territorial-discovery</span><span class='md-tag'>surface-master</span></nav><h1 id="jornada-da-pessoa-per-202-lista-de-oportunidades-documento-mestre-de-superficie">Jornada da Pessoa — PER-202 — Lista de Oportunidades — Documento Mestre de Superfície<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-jornada-da-pessoa-per-202-lista-de-oportunidades-documento-mestre-de-superficie" title="Permanent link">&para;</a></h1>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento consolida a definição corrente de consumo de <code>PER-202 — Lista de Oportunidades</code> para designer humana, IA opcional, Produto, UX, Research, Legal/Privacidade e Engenharia.</p>
+<p>A Lista existe para representar <strong>textualmente e de forma integral a mesma consulta territorial de PER-201 — Mapa de Oportunidades</strong>, permitindo compreender, ordenar, filtrar e selecionar oportunidades sem depender da representação cartográfica.</p>
+<p>A Lista não é fallback inferior, erro do Mapa, duplicação de Explorar, ranking comercial ou mecanismo de pressão.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-2-papel-na-jornada">2. Papel na Jornada<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-2-papel-na-jornada" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>PER-201 — MAPA
+↔ TRN-210 / INTEGRALMENTE VALIDADA
+↔ PER-202 — LISTA
+
+PER-202 — LISTA
+→ TRN-211 / INTEGRALMENTE VALIDADA
+→ PER-203 — DETALHE
+</code></pre></div>
+<p>Mapa e Lista são modos da mesma descoberta territorial.</p>
+<p>Alternar modo não reinicia a jornada, não cria consulta silenciosa e não concede nova autorização.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-3-trabalho-da-pessoa">3. Trabalho da Pessoa<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-3-trabalho-da-pessoa" title="Permanent link">&para;</a></h2>
+<p>A Pessoa precisa conseguir, conforme contexto:</p>
+<ol>
+<li>reconhecer a região ativa;</li>
+<li>compreender a busca vigente;</li>
+<li>compreender e revisar filtros ativos;</li>
+<li>compreender a ordenação aplicada;</li>
+<li>percorrer oportunidades por representação textual;</li>
+<li>distinguir resultado orgânico de unidade patrocinada;</li>
+<li>compreender relação comercial material;</li>
+<li>selecionar uma oportunidade;</li>
+<li>abrir o Detalhe conscientemente;</li>
+<li>alternar para o Mapa preservando a consulta;</li>
+<li>compreender zero resultados;</li>
+<li>recuperar-se sem ampliação silenciosa de critérios;</li>
+<li>usar a descoberta sem depender de localização do dispositivo;</li>
+<li>acessar informações essenciais com requisitos de acessibilidade ou baixa resiliência cartográfica.</li>
+</ol>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-4-identidade-da-consulta">4. Identidade da consulta<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-4-identidade-da-consulta" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>MAPA ↔ LISTA
+→ MESMA REGIÃO
+→ MESMA BUSCA
+→ MESMOS FILTROS
+→ MESMA IDENTIDADE DAS OPORTUNIDADES
+→ MESMO CONTEXTO APLICÁVEL
+</code></pre></div>
+<p>A troca de modo não deve alterar silenciosamente nenhum desses elementos.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-5-conteudo-funcional-da-lista">5. Conteúdo funcional da Lista<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-5-conteudo-funcional-da-lista" title="Permanent link">&para;</a></h2>
+<p>A Lista pode apresentar, quando aplicável:</p>
+<ul>
+<li>região ativa;</li>
+<li>origem da região quando material;</li>
+<li>busca vigente;</li>
+<li>filtros ativos;</li>
+<li>ordenação explícita;</li>
+<li>quantidade de resultados orgânicos quando conhecida;</li>
+<li>cartões ou unidades textuais de oportunidade;</li>
+<li>oportunidade selecionada;</li>
+<li>condição ou disponibilidade material;</li>
+<li>patrocínio identificado;</li>
+<li>relação comercial identificada;</li>
+<li>acessibilidade relevante;</li>
+<li>estado da consulta.</li>
+</ul>
+<p>Somente dados existentes e autorizados podem ser apresentados.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-6-regiao-e-localizacao">6. Região e localização<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-6-regiao-e-localizacao" title="Permanent link">&para;</a></h2>
+<p>A Lista territorial não exige localização do dispositivo.</p>
+<p>Pode operar a partir de:</p>
+<ul>
+<li>região manual;</li>
+<li>localização aproximada legitimamente utilizada;</li>
+<li>localização temporária autorizada;</li>
+<li>outro contexto territorial permitido pela autoridade vigente.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>REGIÃO MANUAL
+≠ RESIDÊNCIA
+≠ POSIÇÃO ATUAL
+≠ HISTÓRICO TERRITORIAL
+</code></pre></div>
+<p>Desativar localização não deve eliminar a responsabilidade funcional da Lista quando uma região válida puder ser informada de outra forma.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-7-busca">7. Busca<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-7-busca" title="Permanent link">&para;</a></h2>
+<p>Busca pertence à consulta territorial compartilhada.</p>
+<p>Consultas sensíveis exigem proteção proporcional e não podem ser reutilizadas para publicidade sem autorização específica.</p>
+<p>A Lista não pode transformar termo de busca em diagnóstico, interesse permanente, atributo pessoal ou autorização comercial.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-8-filtros">8. Filtros<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-8-filtros" title="Permanent link">&para;</a></h2>
+<p>Filtros devem permanecer compreensíveis, revisáveis e removíveis.</p>
+<p>A Lista não pode:</p>
+<ul>
+<li>remover filtros silenciosamente;</li>
+<li>ampliar critérios para fabricar resultados;</li>
+<li>tratar filtro comercial como relevância humana;</li>
+<li>ocultar que um resultado é patrocinado.</li>
+</ul>
+<p>Mudanças de filtro devem produzir estado compreensível da consulta.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-9-ordenacao">9. Ordenação<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-9-ordenacao" title="Permanent link">&para;</a></h2>
+<p>Ordenação deve ser explícita e compreensível.</p>
+<p>Critérios funcionais neutros e critérios comerciais devem permanecer separados.</p>
+<div class="highlight"><pre><span></span><code>PUBLICIDADE
+≠ RELEVÂNCIA ORGÂNICA
+
+INTERESSE COMERCIAL
+≠ CRITÉRIO NEUTRO
+</code></pre></div>
+<p>Uma ordenação comercial somente pode existir em área explicitamente publicitária e conforme autoridade própria.</p>
+<p>O primeiro resultado orgânico continua orgânico conforme o contrato vigente de Ads; inventário patrocinado não pode silenciosamente ocupar seu significado funcional.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-10-alternativas-nao-patrocinadas">10. Alternativas não patrocinadas<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-10-alternativas-nao-patrocinadas" title="Permanent link">&para;</a></h2>
+<p>Alternativas não patrocinadas permanecem elegíveis para apresentação.</p>
+<p>Patrocínio, comissão, exclusividade ou interesse do fornecedor não podem eliminar silenciosamente alternativas orgânicas materialmente válidas.</p>
+<p>A ausência de oportunidade orgânica não pode ser mascarada por publicidade.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-11-cartao-ou-unidade-de-resultado">11. Cartão ou unidade de resultado<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-11-cartao-ou-unidade-de-resultado" title="Permanent link">&para;</a></h2>
+<p>Cada unidade deve permitir compreensão suficiente antes da abertura do Detalhe.</p>
+<p>Quando aplicável, pode comunicar:</p>
+<ul>
+<li>identidade da oportunidade;</li>
+<li>responsável;</li>
+<li>finalidade ou natureza;</li>
+<li>modalidade;</li>
+<li>localização ou região;</li>
+<li>condição de disponibilidade;</li>
+<li>custo ou condição material conhecida;</li>
+<li>acessibilidade relevante;</li>
+<li>patrocínio;</li>
+<li>relação comercial.</li>
+</ul>
+<p>A apresentação deve evitar exagero promocional e garantia indevida.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-12-selecao-e-detalhe">12. Seleção e Detalhe<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-12-selecao-e-detalhe" title="Permanent link">&para;</a></h2>
+<p><code>TRN-211</code> conduz de <code>PER-202</code> a <code>PER-203</code>, preservando identidade da oportunidade e contexto necessário ao retorno.</p>
+<p>Selecionar ou abrir uma oportunidade não significa:</p>
+<div class="highlight"><pre><span></span><code>INTERESSE CONFIRMADO
+INSCRIÇÃO
+COMPRA
+CONTRATAÇÃO
+ACEITAÇÃO
+RESULTADO
+EVOLUÇÃO
+</code></pre></div>
+<p>O Detalhe revalida o estado corrente quando necessário.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-13-retorno-do-detalhe">13. Retorno do Detalhe<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-13-retorno-do-detalhe" title="Permanent link">&para;</a></h2>
+<p>O retorno deve preservar a consulta territorial quando ainda válida.</p>
+<p>Quando a oportunidade ou consulta tiver mudado materialmente, o estado corrente deve prevalecer sobre uma continuidade artificial.</p>
+<p>Retorno não altera ordenação, filtros ou seleção sem motivo funcional explícito.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-14-estado-sem-resultados">14. Estado sem resultados<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-14-estado-sem-resultados" title="Permanent link">&para;</a></h2>
+<p>A Lista compartilha o mesmo zero-result state da consulta territorial.</p>
+<div class="highlight"><pre><span></span><code>ZERO RESULTS
+→ ESTADO LEGÍTIMO
+
+NÃO PODE
+→ PREENCHER O VAZIO COM PUBLICIDADE
+→ AMPLIAR AUTOMATICAMENTE A REGIÃO
+→ REMOVER FILTROS SEM CONFIRMAÇÃO
+→ FABRICAR OPORTUNIDADES
+</code></pre></div>
+<p>Região, busca e filtros devem continuar compreensíveis e revisáveis.</p>
+<p>Recuperação pode envolver alteração consciente desses elementos.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-15-organico-patrocinado-e-relacao-comercial">15. Orgânico, patrocinado e relação comercial<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-15-organico-patrocinado-e-relacao-comercial" title="Permanent link">&para;</a></h2>
+<p>Inventário patrocinado deve permanecer identificado.</p>
+<p>Patrocínio não equivale a:</p>
+<ul>
+<li>relevância humana;</li>
+<li>prioridade pessoal;</li>
+<li>adequação;</li>
+<li>recomendação definitiva;</li>
+<li>garantia de resultado.</li>
+</ul>
+<p>Relações comerciais materiais devem ser transparentes.</p>
+<p>Conteúdo patrocinado não pode substituir silenciosamente resultado orgânico.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-16-privacidade">16. Privacidade<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-16-privacidade" title="Permanent link">&para;</a></h2>
+<p>A Lista herda os limites de privacidade da consulta territorial.</p>
+<p>Não deve:</p>
+<ul>
+<li>presumir localização;</li>
+<li>inferir residência;</li>
+<li>registrar trajetória territorial sem finalidade;</li>
+<li>reutilizar busca sensível para publicidade sem autoridade;</li>
+<li>expor inferência sensível desnecessariamente;</li>
+<li>transformar consulta em perfil permanente por padrão.</li>
+</ul>
+<p>Localização continua opcional.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-17-acessibilidade-e-resiliencia">17. Acessibilidade e resiliência<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-17-acessibilidade-e-resiliencia" title="Permanent link">&para;</a></h2>
+<p>A Lista é uma forma válida e integral de acesso à descoberta territorial.</p>
+<p>Ela deve permanecer útil em contextos como:</p>
+<ul>
+<li>indisponibilidade do Mapa;</li>
+<li>baixa conectividade;</li>
+<li>tecnologia cartográfica inadequada;</li>
+<li>preferência da Pessoa;</li>
+<li>requisitos de acessibilidade.</li>
+</ul>
+<p>Informação funcional essencial não pode depender exclusivamente de posição, cor, marcador, distância visual ou gesto cartográfico.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-18-estados-funcionais">18. Estados funcionais<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-18-estados-funcionais" title="Permanent link">&para;</a></h2>
+<p>Estados pertencentes à responsabilidade de <code>PER-202</code> permanecem na mesma superfície quando não existir novo <code>PER-ID</code>.</p>
+<p>Podem incluir:</p>
+<ul>
+<li>consulta disponível;</li>
+<li>carregamento;</li>
+<li>resultados disponíveis;</li>
+<li>zero resultados;</li>
+<li>filtros ativos;</li>
+<li>ordenação alterada;</li>
+<li>oportunidade selecionada;</li>
+<li>localização desativada;</li>
+<li>região manual;</li>
+<li>baixa conectividade;</li>
+<li>erro recuperável;</li>
+<li>retorno do Detalhe.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>ESTADO INTERNO
+≠ NOVA SUPERFÍCIE
+≠ NOVO PER-ID
+</code></pre></div>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-19-explicabilidade">19. Explicabilidade<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-19-explicabilidade" title="Permanent link">&para;</a></h2>
+<p>A Pessoa deve conseguir compreender, quando material:</p>
+<ul>
+<li>região ativa;</li>
+<li>busca vigente;</li>
+<li>filtros aplicados;</li>
+<li>ordenação vigente;</li>
+<li>por que a ordem mudou;</li>
+<li>patrocínio;</li>
+<li>relação comercial;</li>
+<li>condição relevante;</li>
+<li>quantidade de resultados quando conhecida;</li>
+<li>causa conhecida de ausência de resultados;</li>
+<li>alteração material da consulta.</li>
+</ul>
+<p>Explicabilidade não autoriza revelar inferências sensíveis.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-20-linguagem">20. Linguagem<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-20-linguagem" title="Permanent link">&para;</a></h2>
+<p>A linguagem deve ser neutra, clara e não coercitiva.</p>
+<p>Evitar:</p>
+<ul>
+<li>urgência comercial transformada em urgência pessoal;</li>
+<li>“você está perdendo oportunidades”;</li>
+<li>garantias de resultado;</li>
+<li>títulos promocionais exagerados;</li>
+<li>linguagem que faça publicidade parecer recomendação neutra.</li>
+</ul>
+<p>Zero resultados não deve ser apresentado como falha da Pessoa.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-21-acoes-complementares">21. Ações complementares<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-21-acoes-complementares" title="Permanent link">&para;</a></h2>
+<p>Salvar, comparar ou outras ações só podem ser materializadas quando a autoridade correspondente estiver suficientemente definida para o contexto.</p>
+<p>A existência dessas capacidades no domínio de Oportunidades Ativas não autoriza o Master a inventar novos handoffs ou superfícies.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-22-conteudo-sintetico-para-exploracao">22. Conteúdo sintético para exploração<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-22-conteudo-sintetico-para-exploracao" title="Permanent link">&para;</a></h2>
+<p>Design e prototipação podem usar conteúdo claramente fictício para explorar:</p>
+<ul>
+<li>múltiplos resultados;</li>
+<li>região manual;</li>
+<li>busca;</li>
+<li>filtros;</li>
+<li>diferentes ordenações;</li>
+<li>resultados orgânicos;</li>
+<li>unidade patrocinada identificada;</li>
+<li>relação comercial;</li>
+<li>zero resultados;</li>
+<li>localização desativada;</li>
+<li>baixa conectividade;</li>
+<li>oportunidade selecionada.</li>
+</ul>
+<p>Conteúdo sintético não pode ser apresentado como oportunidade, disponibilidade, preço, condição ou localização real.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-23-liberdade-criativa-de-design">23. Liberdade criativa de Design<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-23-liberdade-criativa-de-design" title="Permanent link">&para;</a></h2>
+<p>Este Master governa significado, responsabilidade, limites e critérios funcionais — não composição estética.</p>
+<p>Designer humana pode definir tipografia, cores, imagens, ícones, grid, densidade, cartões, hierarquia, motion, microinterações, responsividade e linguagem gráfica, preservando o contrato funcional.</p>
+<p>Não existe baseline visual obrigatório para <code>PER-202</code>.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-24-uso-de-ia">24. Uso de IA<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-24-uso-de-ia" title="Permanent link">&para;</a></h2>
+<p>IA pode apoiar exploração e produção sob direção humana.</p>
+<p>IA não pode:</p>
+<ul>
+<li>inventar oportunidades reais;</li>
+<li>inventar disponibilidade, preço ou condição;</li>
+<li>alterar a consulta silenciosamente;</li>
+<li>presumir localização ou residência;</li>
+<li>fabricar resultados para preencher vazio;</li>
+<li>misturar publicidade com ordenação neutra;</li>
+<li>ocultar patrocínio ou relação comercial;</li>
+<li>remover alternativas orgânicas;</li>
+<li>transformar seleção em interesse ou ação;</li>
+<li>criar novo <code>PER-ID</code> para estado interno;</li>
+<li>alterar <code>TRN-210/211</code>;</li>
+<li>iniciar Product Engineering.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-25-criterios-funcionais-de-aceitacao">25. Critérios funcionais de aceitação<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-25-criterios-funcionais-de-aceitacao" title="Permanent link">&para;</a></h2>
+<p>Uma futura solução visual é funcionalmente aceitável quando:</p>
+<ol>
+<li>trata a Lista como representação integral da descoberta territorial;</li>
+<li>preserva a mesma consulta de PER-201;</li>
+<li>preserva <code>TRN-210/211</code>;</li>
+<li>região, busca e filtros permanecem compreensíveis;</li>
+<li>ordenação é explícita;</li>
+<li>publicidade não se apresenta como relevância orgânica;</li>
+<li>alternativas não patrocinadas permanecem elegíveis;</li>
+<li>localização não é requisito universal;</li>
+<li>zero resultados é legítimo;</li>
+<li>o vazio não é preenchido com publicidade;</li>
+<li>critérios não são ampliados silenciosamente;</li>
+<li>unidades permitem compreensão suficiente antes do Detalhe;</li>
+<li>seleção não confirma interesse, compra ou resultado;</li>
+<li>retorno preserva contexto quando válido;</li>
+<li>privacidade territorial e de busca é preservada;</li>
+<li>a Lista funciona como alternativa acessível ao Mapa;</li>
+<li>estados internos não criam novos <code>PER-IDs</code>;</li>
+<li>não existe baseline visual imposta;</li>
+<li>IA permanece subordinada às autoridades;</li>
+<li>Product Engineering permanece não liberado.</li>
+</ol>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-26-limites-e-lacunas">26. Limites e lacunas<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-26-limites-e-lacunas" title="Permanent link">&para;</a></h2>
+<p>Este Master não define:</p>
+<ul>
+<li>layout ou wireframe;</li>
+<li>sistema visual;</li>
+<li>algoritmo de ordenação;</li>
+<li>algoritmo de relevância;</li>
+<li>tecnologia de busca;</li>
+<li>tecnologia cartográfica;</li>
+<li>regras econômicas de Ads;</li>
+<li>detalhe integral de <code>PER-203</code>;</li>
+<li>novos handoffs;</li>
+<li>novas superfícies;</li>
+<li>implementação.</li>
+</ul>
+<p>Lacunas permanecem explícitas e não podem ser completadas por inferência.</p>
+<h2 id="experience-architecture-person-journey-per-202-opportunity-list-master-27-estado-governado">27. Estado governado<a class="headerlink" href="#experience-architecture-person-journey-per-202-opportunity-list-master-27-estado-governado" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>PER-202 MASTER
+→ GKR-UX-PER202-MASTER-001 v0.1.0
+→ CURRENT SURFACE DESIGN DEFINITION
+
+TRN-210
+→ INTEGRALLY VALIDATED / UNCHANGED
+
+TRN-211
+→ INTEGRALLY VALIDATED / UNCHANGED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+
+NEXT DOCUMENTATION TARGET
+→ PER-203 — DETALHE DE OPORTUNIDADE
 </code></pre></div></section></section></section>
                     <section class='print-page md-section' id='section-9' heading-number='9'>
                         <h1>Research e Validação<a class='headerlink' href='#section-9' title='Permanent link'></a>
@@ -40413,6 +40814,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 .print-site-enumerate-headings #experience-architecture-person-journey-per-012-evolution-master > h1:before { content: '8.2.10 ' }
 
 .print-site-enumerate-headings #experience-architecture-person-journey-per-201-opportunity-map-master > h1:before { content: '8.2.11 ' }
+
+.print-site-enumerate-headings #experience-architecture-person-journey-per-202-opportunity-list-master > h1:before { content: '8.2.12 ' }
 
 .print-site-enumerate-headings #section-9 > h1:before { content: '9 ' }
 .print-site-enumerate-headings #research > h1:before { content: '9.1 ' }
