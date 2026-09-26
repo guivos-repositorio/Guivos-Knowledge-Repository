@@ -136,6 +136,7 @@ A Jornada da Pessoa possui uma camada própria de documentação para Design e I
 - [PER-301 — Planos e Comparação — Documento Mestre](person-journey/per-301-plans-comparison-master.md).
 - [PER-302 — Revisão de Contratação — Documento Mestre](person-journey/per-302-contract-review-master.md).
 - [PER-303 — Downgrade e Cancelamento — Documento Mestre](person-journey/per-303-downgrade-cancellation-master.md).
+- [PER-304 — Resultado e Recuperação de Plano/Cobrança — Documento Mestre](person-journey/per-304-plan-billing-result-recovery-master.md).
 
 A coleção parte de `PER-002`, porque `PER-001` já é governada pelo Documento Mestre da Home Pública — Pessoa. As superfícies seguintes entram progressivamente, uma a uma, somente após construção e validação documental.
 
