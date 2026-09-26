@@ -670,7 +670,76 @@ A IA não pode:
 
 Quando houver lacuna, deve sinalizá-la em vez de completá-la por conveniência.
 
-## 26. Critérios executivos de aceite
+## 26. Source lock para prototipação por IA
+
+Toda prototipação produzida ou assistida por IA deve operar em **source lock** com o `Guivos Knowledge Repository`, especialmente com a coleção `Jornada da Pessoa — Superfícies e Fluxos` e as autoridades relacionadas consumidas por ela.
+
+A IA somente pode materializar comportamento que possua fundamento documental identificável no GKR.
+
+```text
+NÃO ESTÁ GOVERNADO NO GKR
+→ NÃO INVENTAR
+→ NÃO COMPLETAR POR CONVENIÊNCIA
+→ NÃO TRATAR COMO PADRÃO DE MERCADO
+→ NÃO TRANSFORMAR EM FUNCIONALIDADE
+→ NÃO TRANSFORMAR EM AÇÃO
+→ NÃO TRANSFORMAR EM ESTADO
+→ NÃO TRANSFORMAR EM TRANSIÇÃO
+→ NÃO TRANSFORMAR EM ENTITLEMENT
+```
+
+Isso se aplica, entre outros, a:
+
+- funcionalidades;
+- ações e controles;
+- telas ou responsabilidades;
+- estados;
+- navegação e handoffs;
+- dados exibidos ou capturados;
+- automações;
+- personalização;
+- regras de plano;
+- bloqueios;
+- cotas;
+- permissões;
+- integrações;
+- notificações;
+- alertas;
+- recomendações;
+- rankings;
+- processamento;
+- persistência;
+- cobrança;
+- comportamento de erro e recuperação.
+
+A liberdade da IA é de **materialização e exploração visual dentro do contrato**, nunca de criação autônoma de produto.
+
+Quando encontrar uma necessidade não coberta pelas autoridades:
+
+1. não preencher a lacuna por inferência;
+2. não usar comportamento comum de outros produtos como autorização;
+3. registrar claramente a lacuna;
+4. indicar qual decisão funcional precisa de autoridade;
+5. continuar somente nas partes que permanecem governadas;
+6. aguardar atualização/autorização do GKR antes de materializar a nova funcionalidade ou ação.
+
+```text
+IA
+→ CONSUMIDORA DO GKR
+→ NÃO AUTORA DA VERDADE DE PRODUTO
+
+PROTÓTIPO
+→ PODE EXPLORAR FORMA
+→ NÃO PODE EXPANDIR ESCOPO FUNCIONAL
+
+LACUNA
+→ SINALIZAR
+→ NÃO INVENTAR
+```
+
+A existência de espaço visual, convenção de UX, componente disponível, sugestão do modelo, facilidade técnica ou expectativa de mercado **não constitui autoridade** para adicionar comportamento.
+
+## 27. Critérios executivos de aceite
 
 Uma prototipação orientada por este documento é semanticamente aceitável quando:
 
@@ -693,9 +762,11 @@ Uma prototipação orientada por este documento é semanticamente aceitável qua
 17. IA não assume autoridade;
 18. Design mantém liberdade criativa;
 19. protótipo não é confundido com implementação;
-20. Product Engineering não é liberado por este documento.
+20. prototipação por IA permanece em source lock com o GKR e não inventa funcionalidades ou ações ausentes;
+21. lacunas são sinalizadas em vez de preenchidas por inferência;
+22. Product Engineering não é liberado por este documento.
 
-## 27. Ordem recomendada de consumo para construção
+## 28. Ordem recomendada de consumo para construção
 
 Para construir uma prototipação integrada:
 
@@ -710,7 +781,7 @@ Para construir uma prototipação integrada:
 
 A prototipação deve validar continuidade entre superfícies, e não apenas fidelidade isolada de cada frame.
 
-## 28. Estado
+## 29. Estado
 
 ```text
 PERSON JOURNEY UX/UI ORCHESTRATION
@@ -743,6 +814,10 @@ NEW PER / TRN IDS
 
 VISUAL BASELINE
 → NONE
+
+AI PROTOTYPING
+→ SOURCE-LOCKED TO GKR
+→ NO INVENTED FUNCTIONALITY / ACTION / STATE / ENTITLEMENT
 
 PROTOTYPE
 → DESIGN-OWNED
