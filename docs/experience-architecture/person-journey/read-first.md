@@ -157,6 +157,8 @@ Quando IA for utilizada, ela deve consumir apenas:
 - suas autoridades específicas;
 - autoridades comuns estritamente necessárias.
 
+A prototipação por IA opera em **source lock com o GKR**: se funcionalidade, ação, estado, transição, dado ou entitlement não possuir fundamento documental no repositório, a IA deve sinalizar a lacuna e não inventá-la.
+
 A IA não pode:
 
 - criar nova responsabilidade funcional;
