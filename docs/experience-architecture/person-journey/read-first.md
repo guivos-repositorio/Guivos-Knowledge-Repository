@@ -72,7 +72,7 @@ LEIA PRIMEIRO
 → PROTOTIPAÇÃO
 ```
 
-## 11. Regra de granularidade
+## 4. Regra de granularidade
 
 Um documento desta coleção corresponde a **uma superfície ou responsabilidade funcional já reconhecida pelo Registry**.
 
@@ -93,7 +93,7 @@ HANDOFF
 
 Exemplo: a revisão consciente antes da saída externa permanece um **estado de `PER-203`**, porque a autoridade corrente não cria um novo `PER-ID`.
 
-## 4. O que cada Documento Mestre deve definir
+## 5. O que cada Documento Mestre deve definir
 
 Cada superfície deve ser descrita, quando aplicável, por:
 
@@ -120,7 +120,7 @@ Cada superfície deve ser descrita, quando aplicável, por:
 - critérios de aceite funcional;
 - lacunas que não podem ser preenchidas por inferência.
 
-## 5. Liberdade criativa
+## 6. Liberdade criativa
 
 O GKR governa significado, responsabilidade, dados, estados, relações, autoridade, limites, evidência e claims sustentáveis.
 
@@ -147,7 +147,7 @@ A designer pode definir:
 
 Nenhum Documento Mestre desta coleção deve prescrever estética.
 
-## 6. IA opcional
+## 7. IA opcional
 
 Quando IA for utilizada, ela deve consumir apenas:
 
@@ -167,7 +167,7 @@ A IA não pode:
 - transformar estado interno em nova tela;
 - substituir decisão humana de Design.
 
-## 7. Prototipação e referências existentes
+## 8. Prototipação e referências existentes
 
 Uma referência visual ou protótipo existente pode ser consultado **somente dentro do limite em que sua autoridade corrente o permite**.
 
@@ -182,7 +182,7 @@ VALIDAÇÃO DE PROTÓTIPO
 ≠ AUTORIZAÇÃO DE PRODUCT ENGINEERING
 ```
 
-## 8. Ordem de construção
+## 9. Ordem de construção
 
 A sequência de documentação está definida em `GKR-UX-PERSON-JOURNEY-FLOW-001`.
 
@@ -196,7 +196,7 @@ A regra operacional é:
 → SÓ ENTÃO AVANÇAR PARA A PRÓXIMA
 ```
 
-## 9. Completude documental versus completude funcional
+## 10. Completude documental versus completude funcional
 
 A coleção de Surface Masters está concluída em `26 / 26`, mas essa contagem não prova que toda capacidade legítima da Pessoa já possua ciclo funcional completo.
 
@@ -220,7 +220,7 @@ CAPACIDADE
 
 Nenhuma lacuna funcional autoriza, por si só, novo `PER-ID`, `TRN-ID`, superfície visual ou implementação.
 
-## 10. Estado
+## 11. Estado
 
 ```text
 PERSON JOURNEY DESIGN DOCUMENTATION
