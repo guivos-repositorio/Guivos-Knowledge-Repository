@@ -2,10 +2,10 @@
 id: GKR-UX-PER101-MASTER-001
 title: Jornada da Pessoa — PER-101 — Explorar Coletivos — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.1.1
 maturity: current_surface_design_definition
 depends_on:
-  - GKR-UXA-056
+  - UXA-056
   - GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 tags:
@@ -239,21 +239,13 @@ Mudanças de critério devem ser perceptíveis quando alterarem materialmente o 
 
 A superfície não pode ampliar silenciosamente busca, território ou filtros para produzir resultados.
 
-## 15. Estado sem resultados
+## 15. Limite dos estados de resultados
 
-Ausência de resultados é estado legítimo.
+`PER-101` governa a formulação intencional da descoberta: exploração, consulta, filtros e contexto necessário ao handoff.
 
-Nesse estado:
+Carregamento de resultados, erros de resultados e ausência de resultados pertencem à responsabilidade de `PER-102 — Resultados de Busca de Coletivos`.
 
-- busca e filtros permanecem compreensíveis;
-- critérios podem ser revisados;
-- território pode ser editado conscientemente;
-- cobertura ou atualização podem ser explicadas quando houver evidência;
-- publicidade não preenche o vazio como se fosse resultado;
-- critérios não são ampliados silenciosamente;
-- Coletivos não são fabricados.
-
-Ações de recuperação podem propor edição, nunca presumir consentimento para alterar a consulta.
+`PER-101` não duplica esses estados nem define sua recuperação. A continuidade deve preservar os critérios necessários para que `PER-102` possa explicar e permitir a revisão da consulta sem ampliação silenciosa.
 
 ## 16. Relação com PER-102
 
@@ -310,9 +302,6 @@ Estados pertencentes à responsabilidade de `PER-101` podem incluir:
 - contexto territorial;
 - sugestão contextual;
 - conteúdo patrocinado identificado;
-- carregamento;
-- erro recuperável;
-- ausência de resultados;
 - critérios revisados.
 
 ```text
@@ -350,7 +339,7 @@ Design e prototipação podem usar conteúdo claramente fictício para explorar:
 - conteúdo patrocinado;
 - Coletivo público;
 - Coletivo temporariamente fechado;
-- estados de carregamento e erro.
+- estados de formulação e revisão da consulta antes do handoff para resultados.
 
 Conteúdo sintético não pode ser apresentado como Coletivo, quantidade, disponibilidade, território, patrocínio ou condição real.
 
@@ -396,7 +385,7 @@ Uma futura solução visual é funcionalmente aceitável quando:
 8. não permite que compra de plano ou publicidade domine ordenação orgânica;
 9. mantém busca e filtros revisáveis;
 10. não amplia critérios silenciosamente;
-11. trata ausência de resultados como estado legítimo;
+11. mantém carregamento, erro e ausência de resultados sob responsabilidade de `PER-102`;
 12. não fabrica Coletivos ou resultados;
 13. preserva contexto pertinente em `TRN-101`;
 14. não cria participação, acompanhamento ou vínculo;
@@ -430,7 +419,7 @@ Lacunas permanecem explícitas e não podem ser completadas por inferência.
 
 ```text
 PER-101 MASTER
-→ GKR-UX-PER101-MASTER-001 v0.1.0
+→ GKR-UX-PER101-MASTER-001 v0.1.1
 → CURRENT SURFACE DESIGN DEFINITION
 
 TRN-101
