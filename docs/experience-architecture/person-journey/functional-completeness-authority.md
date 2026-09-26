@@ -177,6 +177,8 @@ CONTROLES DE VÍNCULO
 
 Cada controle material deve governar consequência, confirmação proporcional ao risco, processamento, resultado, recuperação e estado atualizado do vínculo.
 
+A adjudicação desta frente concluiu que consulta do vínculo, preferências de atualização, pausa/retomada, saída e contestação permanecem controles/estados de `PER-108`, sem novo `PER-ID` ou `TRN-ID`. Proteção/denúncia pode ter acesso contextual a partir de `PER-108`, mas triagem, evidências, investigação, acompanhamento, resolução ou recurso pertencem a processo especializado ainda não adjudicado e não podem ser absorvidos por inferência.
+
 ### 6.6 Conta / controles da Pessoa
 
 `PER-009` permanece deliberadamente estreita e não define arquitetura total de Conta.
