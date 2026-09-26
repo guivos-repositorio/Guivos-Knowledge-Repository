@@ -76,6 +76,8 @@ Validação integral documental não comprova implementação técnica nem esten
 | GKR-TRN-006 | PER-006 | PER-007 | localmente validada | UXA-037 |
 | GKR-TRN-014 | PER-003 | PER-013 | contratada | escolha consciente de Arquivo → responsabilidade de captura/revisão; upload não é iniciado pela escolha e não existe autorização material |
 | GKR-TRN-015 | PER-013 | PER-005 | contratada | conteúdo de arquivo revisado → inventário/autorização; origem/derivados/remoções preservados e autorização material ainda ausente |
+| GKR-TRN-016 | PER-003 | PER-014 | contratada | escolha consciente de Perguntas Opcionais → fluxo guiado; nenhuma resposta é obrigatória ou presumida |
+| GKR-TRN-017 | PER-014 | PER-005 | contratada | respostas opcionais revisadas → inventário/autorização; pulos/aberturas/remoções preservados quando aplicável e autorização material ainda ausente |
 | GKR-TRN-007 | PER-007 | PER-008 | **integralmente validada** | UXA-097 |
 | GKR-TRN-008 | PER-008 | PER-010 | **integralmente validada** | GKR-UX-D5-C4B-001 — Hoje recorrente → acesso a Objetivos; contexto mínimo, revalidação, retorno, interrupção, concorrência e idempotência examinados |
 | GKR-TRN-009 | PER-010 | PER-008 | **integralmente validada** | GKR-UX-D5-C4B-001 — retorno `‹ Hoje` neutro; não salva edição incompleta, não altera prioridade/progresso e reconsulta estado canônico |
