@@ -294,20 +294,73 @@ Quando houver condição de acessibilidade da própria oportunidade, ela deve se
 
 Salvar é alternativa legítima quando a capacidade estiver autorizada no contexto.
 
-Salvar deve significar preservação para análise posterior, não:
+Salvar significa **preservar a referência da oportunidade para análise posterior**. Não significa:
 
 - inscrição;
 - reserva;
 - compra;
 - prioridade;
 - resultado;
-- aceitação de publicidade.
+- aceitação de publicidade;
+- garantia de disponibilidade futura.
 
-Este Master não cria novo handoff para Salvar.
+### 14.1 Ciclo funcional de Salvar
+
+Quando a capacidade estiver disponível, `PER-203` deve governar o ciclo mínimo:
+
+```text
+OPORTUNIDADE NÃO SALVA
+→ AÇÃO CONSCIENTE DE SALVAR
+→ ESTADO SALVO CONFIRMADO
+→ CONSULTA POSTERIOR QUANDO LEGITIMAMENTE DISPONÍVEL
+→ REMOÇÃO CONSCIENTE
+```
+
+A experiência deve distinguir:
+
+- não salva;
+- salvamento em processamento, quando material;
+- salva e confirmada;
+- falha recuperável;
+- estado indeterminado, quando não houver confirmação suficiente;
+- remoção solicitada;
+- remoção confirmada.
+
+Repetir Salvar não deve duplicar silenciosamente o mesmo vínculo lógico.
+
+### 14.2 Consulta posterior e mudança da oportunidade
+
+Salvar preserva referência para consideração futura; não congela a oportunidade.
+
+Quando a Pessoa voltar a uma oportunidade salva:
+
+- o estado corrente deve ser reconsultado quando houver autoridade e dado atual;
+- alteração material deve ser distinguível;
+- expiração deve ser explícita;
+- indisponibilidade não deve ser apresentada como decisão da Pessoa;
+- remoção pelo responsável/origem deve ser tratada como indisponibilidade da oportunidade, não como falha pessoal;
+- conteúdo histórico só pode permanecer quando houver fundamento, finalidade e política aplicáveis.
+
+Este contrato **não cria automaticamente uma superfície de “Oportunidades Salvas”**. Uma futura responsabilidade de organização de múltiplos itens só poderá ser adjudicada se existir job próprio que não caiba no contexto atual.
+
+### 14.3 Remover dos salvos
+
+A Pessoa deve poder remover conscientemente uma oportunidade salva.
+
+Remover dos salvos:
+
+```text
+≠ RECUSAR A OPORTUNIDADE
+≠ CANCELAR INSCRIÇÃO
+≠ APAGAR A OPORTUNIDADE NA ORIGEM
+≠ ALTERAR BND-001
+```
+
+Este Master não cria novo handoff ou `TRN-ID` para Salvar.
 
 ## 15. Comparar
 
-Comparação é alternativa legítima quando a capacidade estiver autorizada.
+Comparação é alternativa legítima quando a capacidade estiver autorizada e deve permanecer sob decisão da Pessoa.
 
 Pode considerar aspectos materialmente comparáveis como:
 
@@ -322,9 +375,54 @@ Pode considerar aspectos materialmente comparáveis como:
 
 Comparação não deve produzir vencedor universal.
 
-Dados ausentes e diferenças de contexto devem permanecer explícitos.
+### 15.1 Ciclo funcional de Comparar
 
-Este Master não cria nova superfície ou transição de comparação.
+Quando a capacidade estiver disponível, `PER-203` deve permitir, de forma contextual:
+
+```text
+OPORTUNIDADE EM ANÁLISE
+→ SELECIONAR PARA COMPARAÇÃO
+→ ADICIONAR OUTRA OPORTUNIDADE LEGÍTIMA
+→ REVISAR DIMENSÕES COMPARÁVEIS
+→ REMOVER ITEM DA COMPARAÇÃO
+→ RETORNAR À ANÁLISE
+```
+
+A seleção para comparação não cria inscrição, preferência permanente, ranking ou recomendação automática.
+
+### 15.2 Dimensões e dados ausentes
+
+A comparação deve:
+
+- comparar somente dimensões materialmente compatíveis;
+- identificar diferenças de unidade, período, local, condição ou escopo;
+- preservar contexto suficiente para evitar equivalência falsa;
+- mostrar dado ausente como ausente;
+- distinguir “não aplicável” de “não informado” quando houver autoridade para isso;
+- não converter ausência em resultado negativo;
+- não preencher lacunas com inferência apresentada como fato.
+
+### 15.3 Duração e persistência
+
+O contrato corrente admite comparação contextual dentro da responsabilidade de `PER-203`.
+
+Persistência entre sessões, coleção comparativa permanente, limite de itens, sincronização entre dispositivos ou histórico de comparações **não são presumidos** por este Master.
+
+Se uma implementação futura oferecer persistência, ela deverá possuir finalidade, controle de remoção, estado recuperável e política de retenção compatíveis.
+
+### 15.4 Resultado da comparação
+
+A comparação pode ajudar a Pessoa a compreender diferenças e trade-offs, mas:
+
+```text
+COMPARAR ≠ RANQUEAR
+COMPARAR ≠ ESCOLHER VENCEDOR UNIVERSAL
+COMPARAR ≠ DECIDIR PELA PESSOA
+```
+
+Ordenação objetiva só pode existir quando baseada em critério explícito escolhido ou compreendido pela Pessoa e não deve ser apresentada como valor universal da oportunidade.
+
+Este Master não cria nova superfície, novo handoff ou `TRN-ID` para Comparar.
 
 ## 16. Contestar, corrigir e recusar
 

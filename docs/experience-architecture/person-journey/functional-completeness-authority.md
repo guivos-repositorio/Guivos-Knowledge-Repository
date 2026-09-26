@@ -130,7 +130,7 @@ A adjudicação posterior desta frente concluiu que a lacuna possui job, estados
 
 ### 6.3 Salvar oportunidade
 
-`PER-203` reconhece Salvar para considerar como alternativa legítima quando autorizada, mas não define implementação ou handoff.
+`PER-203` reconhece Salvar para considerar como alternativa legítima quando autorizada e seu contrato corrente passa a governar preservação, confirmação, consulta posterior, remoção e tratamento de mudança, expiração ou indisponibilidade, sem criar novo handoff.
 
 ```text
 SALVAR
@@ -140,11 +140,11 @@ SALVAR
 
 Salvar não significa inscrição, reserva, compra, prioridade, resultado ou aceite de publicidade.
 
-A remediação deve definir ao menos preservação, consulta posterior, remoção e tratamento de oportunidade alterada, expirada ou removida.
+A adjudicação concluiu que Salvar permanece controle/estado de `PER-203`. Uma futura responsabilidade para organizar múltiplos itens salvos só poderá ser criada se um job próprio for comprovado; não é inferida deste contrato.
 
 ### 6.4 Comparar oportunidades
 
-`PER-203` reconhece Comparar, mas não cria superfície ou transição.
+`PER-203` reconhece Comparar e seu contrato corrente passa a governar seleção contextual, dimensões comparáveis, dados ausentes, remoção e retorno, sem criar superfície ou transição.
 
 ```text
 COMPARAR
@@ -152,7 +152,7 @@ COMPARAR
 → NOVA SUPERFÍCIE NÃO ADJUDICADA
 ```
 
-Antes de qualquer novo `PER-ID`, devem ser definidos seleção, duração, persistência, dimensões comparáveis, dados ausentes, remoção, retorno e comportamento entre contextos diferentes.
+A adjudicação concluiu que Comparar permanece capacidade/estado contextual de `PER-203`. Persistência entre sessões, coleção comparativa permanente, histórico e sincronização não são presumidos; somente evidência futura de job próprio poderá justificar nova responsabilidade.
 
 Comparação não produz vencedor universal.
 
