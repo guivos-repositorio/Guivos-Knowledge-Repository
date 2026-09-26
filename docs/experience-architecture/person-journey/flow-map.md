@@ -186,8 +186,8 @@ A ordem abaixo prioriza a espinha dorsal da Journey antes das famílias especial
 | 18 | `PER-105` | Solicitação Pendente | **construído / current** |
 | 19 | `PER-106` | Meus Coletivos | **construído / current** |
 | 20 | `PER-107` | Central de Atualizações | **construído / current** |
-| 21 | `PER-108` | Início do Participante | planejado |
-| 22 | `PER-009` | Conta / Configurações — recorte governado | planejado |
+| 21 | `PER-108` | Início do Participante | **construído / current** |
+| 22 | `PER-009` | Conta / Configurações — recorte governado | **construído / current** |
 | 23 | `PER-301` | Planos e Comparação | planejado |
 | 24 | `PER-302` | Revisão de Contratação | planejado |
 | 25 | `PER-303` | Downgrade e Cancelamento | planejado |
