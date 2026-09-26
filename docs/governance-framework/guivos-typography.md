@@ -1,7 +1,7 @@
 ---
 id: GKR-BRAND-TYPOGRAPHY-001
 title: Tipografia Oficial da Guivos
-version: 1.0.0
+version: 1.0.1
 status: current
 normative: true
 ---
@@ -15,6 +15,8 @@ A família tipográfica oficial registrada para a identidade da Guivos é **Gold
 Este documento consolida a tipografia especificada na fundação visual de referência da Guivos e estabelece a escala tipográfica corrente para consumo por Design, Produto, Comunicação, IA e demais frentes que precisem representar a marca.
 
 A tipografia é uma autoridade de identidade visual. Ela não determina composição, grid, imagens, cores, motion ou layout das superfícies. A liberdade criativa da designer permanece preservada dentro das autoridades funcionais e de marca vigentes.
+
+A partir desta autoridade, **Goldplay e a escala registrada deixam de ser uma dimensão aberta para substituição arbitrária quando uma superfície se apresenta como identidade oficial da Guivos**. A designer continua livre para decidir como aplicar a hierarquia tipográfica — composição, combinação, densidade, quebras, proporção e presença dos níveis — sem transformar a escala em template. Autoridades anteriores das Homes que classificavam a escolha da família e da escala tipográfica como `DESIGN_CREATIVE` devem ser lidas conforme esta autoridade corrente: a criatividade permanece na aplicação, não na redefinição da tipografia oficial.
 
 ## 2. Fonte de referência
 
@@ -65,7 +67,7 @@ A referência tipográfica organiza o uso da seguinte forma:
 | Hero, campanha e primeiro impacto | Display |
 | Título principal de página ou fluxo | H1 |
 | Título de seção e agrupamento de conteúdo | H2 / H3 |
-| Título curto dentro de card, lista ou componente | H4 / Body Medium, conforme contexto |
+| Título curto dentro de card, lista ou componente | H4; a referência visual também menciona `Body Medium`, mas esse estilo não possui definição publicada na escala corrente e não deve ser tratado como token oficial |
 | Texto corrido, descrição, labels e mensagens | Body / Body Small |
 | Metadados, legenda, preço auxiliar e timestamps | Caption / Micro |
 
@@ -83,6 +85,10 @@ As combinações publicadas na referência são:
 | H4 + Caption | Título de card acompanhado de legenda, local, status ou detalhe curto |
 
 Essas combinações são referências de hierarquia e ritmo tipográfico. Não constituem templates obrigatórios de layout.
+
+### 6.1 Referência `Body Medium`
+
+A matriz visual de referência menciona `H4 / Body Medium` para componentes, mas **não publica uma definição de `Body Medium` na escala tipográfica corrente**. Portanto, este registro não inventa tamanho, peso ou line height para esse nome. Até existir especificação explícita, consumidores devem utilizar somente os estilos definidos na seção 4 e não tratar `Body Medium` como token oficial.
 
 ## 7. Goldplay Alt
 
