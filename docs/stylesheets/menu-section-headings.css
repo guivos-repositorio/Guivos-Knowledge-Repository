@@ -31,3 +31,19 @@
 .md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="person-journey/read-first"]) .md-nav__item--nested > .md-nav__link:focus {
   color: #008a00;
 }
+
+
+/* Jornada de Organizações e Coletivos — Superfícies e Fluxos
+   Roxo fornecido como referência visual: #8C00FF.
+   O seletor ancora a regra no Leia Primeiro exclusivo desta coleção. */
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) > .md-nav__link,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) .md-nav__item--nested > .md-nav__link {
+  color: #8c00ff;
+}
+
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) > .md-nav__link:focus,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) .md-nav__item--nested > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) .md-nav__item--nested > .md-nav__link:focus {
+  color: #8c00ff;
+}
