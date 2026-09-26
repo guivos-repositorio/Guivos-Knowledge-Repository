@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.35
+version: 13.48.36
 owner: Guivos
 last_updated: 2026-09-25
 normative: true
@@ -27,6 +27,7 @@ related:
   - GKR-UX-PER005-MASTER-001
   - GKR-UX-PER006-MASTER-001
   - GKR-UX-PER007-MASTER-001
+  - GKR-UX-PER008-MASTER-001
   - GPA-004
   - GPA-006
   - GIA-000
@@ -43,7 +44,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.50.47` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.50.48` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -61,7 +62,7 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.50.47 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.50.48 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-101` |
@@ -70,8 +71,8 @@ ROADMAP
 | Read-First das Homes | `8 / 8 CURRENT / NON-NORMATIVE` |
 | Design das Homes | `DESIGNER-FIRST / AI OPTIONAL / TOOL-NEUTRAL` |
 | Journey | vistas e registries correntes ativos |
-| Jornada da Pessoa — documentação para Design | `26 MASTERS PLANEJADOS APÓS A HOME / 6 CONSTRUÍDOS / PER-002 + PER-003 + PER-004 + PER-005 + PER-006 + PER-007 CURRENT` |
-| Próximo Master documental da Pessoa | `PER-008 — HOJE / NOT_STARTED` |
+| Jornada da Pessoa — documentação para Design | `26 MASTERS PLANEJADOS APÓS A HOME / 7 CONSTRUÍDOS / PER-002 + PER-003 + PER-004 + PER-005 + PER-006 + PER-007 + PER-008 CURRENT` |
+| Próximo Master documental da Pessoa | `PER-010 — MEUS OBJETIVOS / NOT_STARTED` |
 | Business | `Start · Growth · Scale · Enterprise` / contratação online / Self-service quando elegível |
 | O/C low-fidelity autenticado | `DELIVERY v0.1.0 + VALIDATION v1.0.0 / PASS` |
 | O/C high-fidelity | `AUTHORIZATION GRANTED / EXECUTION RELEASE ISSUED / DELIVERY NOT_RECEIVED` |
@@ -232,7 +233,7 @@ O ato separado `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0` liberou a execução ex
 ```text
 PERSON JOURNEY DOCUMENTATION
 → FLOW MAP = CURRENT
-→ 6 / 26 SURFACE MASTERS BUILT
+→ 7 / 26 SURFACE MASTERS BUILT
 
 PER-002
 → GKR-UX-PER002-MASTER-001 v0.1.0
@@ -274,8 +275,12 @@ PER-007
 → GKR-UX-PER007-MASTER-001 v0.1.0 / CURRENT
 → TRN-007 → PER-008 = INTEGRALLY VALIDATED
 
+PER-008
+→ GKR-UX-PER008-MASTER-001 v0.1.0 / CURRENT
+→ TRN-007 + TRN-008..013 = INTEGRALLY VALIDATED / UNCHANGED
+
 NEXT DOCUMENTATION TARGET
-→ PER-008 — HOJE
+→ PER-010 — MEUS OBJETIVOS
 → DOCUMENTATION ONLY / NOT_STARTED
 
 UXA-102 / V5
@@ -285,7 +290,7 @@ PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-A próxima construção governada desta coleção é documental: `PER-008 — Hoje`. Materialização visual, teste real, implementação ou avanço de `UXA-102/V5` dependem de atos próprios.
+A próxima construção governada desta coleção é documental: `PER-010 — Meus Objetivos`. Materialização visual, teste real, implementação ou avanço de `UXA-102/V5` dependem de atos próprios.
 
 ## 8. Guivos Business
 
