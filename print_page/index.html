@@ -3649,6 +3649,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/person-journey/per-302-contract-review-master/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Revisão de Contratação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6037,6 +6072,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-person-journey-per-302-contract-review-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.24 Revisão de Contratação
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -7509,6 +7555,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-person-journey-per-302-contract-review-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.24 Revisão de Contratação
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -7983,8 +8040,8 @@ GIA-COG-001
 
 PERSON JOURNEY DESIGN DOCUMENTATION
 → FLOW = GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.20
-→ SURFACE MASTERS = 23 / 26 BUILT AFTER PUBLIC HOME
-→ CURRENT MASTERS = PER-002 v0.1.0 + PER-003 v0.1.1 + PER-004 v0.1.0 + PER-005 v0.1.0 + PER-006 v0.1.0 + PER-007 v0.1.0 + PER-008 v0.1.0 + PER-010 v0.1.0 + PER-011 v0.1.0 + PER-012 v0.1.0 + PER-201 v0.1.0 + PER-202 v0.1.0 + PER-203 v0.1.1 + PER-101 v0.1.1 + PER-102 v0.1.1 + PER-103 v0.1.0 + PER-104 v0.1.0 + PER-105 v0.1.0 + PER-106 v0.1.0 + PER-107 v0.1.0 + PER-108 v0.1.0 + PER-009 v0.1.0 + PER-301 v0.1.0
+→ SURFACE MASTERS = 24 / 26 BUILT AFTER PUBLIC HOME
+→ CURRENT MASTERS = PER-002 v0.1.0 + PER-003 v0.1.1 + PER-004 v0.1.0 + PER-005 v0.1.0 + PER-006 v0.1.0 + PER-007 v0.1.0 + PER-008 v0.1.0 + PER-010 v0.1.0 + PER-011 v0.1.0 + PER-012 v0.1.0 + PER-201 v0.1.0 + PER-202 v0.1.0 + PER-203 v0.1.1 + PER-101 v0.1.1 + PER-102 v0.1.1 + PER-103 v0.1.0 + PER-104 v0.1.0 + PER-105 v0.1.0 + PER-106 v0.1.0 + PER-107 v0.1.0 + PER-108 v0.1.0 + PER-009 v0.1.0 + PER-301 v0.1.0 + PER-302 v0.1.0
 → PER-003 CHOICES = TEXT / VOICE / FILE / OPTIONAL GUIDED QUESTIONS
 → PER-004 = TEXT / VOICE EXPRESSION + REVIEW
 → PER-005 = INVENTORY + REVIEW + SPECIFIC AUTHORIZATION
@@ -8006,7 +8063,8 @@ PERSON JOURNEY DESIGN DOCUMENTATION
 → PER-107 = UPDATES TRIAGE + COMPREHENSION + REVALIDATED ACTION
 → PER-009 = ACCOUNT / SETTINGS GOVERNED ADMINISTRATIVE SLICE + VOLUNTARY PLANS ENTRY / RETURN
 → PER-301 = FREE / PLUS / PRO COMPARISON + VOLUNTARY PLAN DECISION
-→ NEXT DOCUMENTATION TARGET = PER-302 / NOT_STARTED
+→ PER-302 = CONSCIOUS CONTRACT REVIEW + AFFIRMATIVE CONTINUATION
+→ NEXT DOCUMENTATION TARGET = PER-303 / NOT_STARTED
 
 PER-002
 → FUNCTIONAL BOUNDARY = GKR-UX-PER002-MAT-ELIGIBILITY-001 v2.0.0 / CURRENT
@@ -10177,10 +10235,10 @@ CURRENT SURFACE MASTERS
 → TRN-006 → PER-007 = LOCALLY VALIDATED / UNCHANGED
 
 BUILT
-→ 23 / 26
+→ 24 / 26
 
 REMAINING
-→ 3 / 26
+→ 2 / 26
 
 PER-008
 → GKR-UX-PER008-MASTER-001 v0.1.0 / CURRENT
@@ -10251,8 +10309,8 @@ PER-107
 → TRIAGEM / COMPREENSÃO / NÃO É FEED
 
 NEXT DOCUMENTATION TARGET
-→ PER-302 — REVISÃO DE CONTRATAÇÃO
-→ MASTER = GKR-UX-PER302-MASTER-001
+→ PER-303 — DOWNGRADE E CANCELAMENTO
+→ MASTER = GKR-UX-PER303-MASTER-001
 → NOT_STARTED
 
 NEW PER-IDS
@@ -10323,11 +10381,11 @@ ROADMAP
 </tr>
 <tr>
 <td>Jornada da Pessoa — documentação para Design</td>
-<td><code>26 MASTERS PLANEJADOS APÓS A HOME / 23 CONSTRUÍDOS / PER-002 + PER-003 + PER-004 + PER-005 + PER-006 + PER-007 + PER-008 + PER-010 + PER-011 + PER-012 + PER-201 + PER-202 + PER-203 + PER-101 + PER-102 + PER-103 + PER-104 + PER-105 + PER-106 + PER-107 + PER-108 + PER-009 + PER-301 CURRENT</code></td>
+<td><code>26 MASTERS PLANEJADOS APÓS A HOME / 24 CONSTRUÍDOS / PER-002 + PER-003 + PER-004 + PER-005 + PER-006 + PER-007 + PER-008 + PER-010 + PER-011 + PER-012 + PER-201 + PER-202 + PER-203 + PER-101 + PER-102 + PER-103 + PER-104 + PER-105 + PER-106 + PER-107 + PER-108 + PER-009 + PER-301 + PER-302 CURRENT</code></td>
 </tr>
 <tr>
 <td>Próximo Master documental da Pessoa</td>
-<td><code>PER-302 — REVISÃO DE CONTRATAÇÃO / NOT_STARTED</code></td>
+<td><code>PER-303 — DOWNGRADE E CANCELAMENTO / NOT_STARTED</code></td>
 </tr>
 <tr>
 <td>Business</td>
@@ -10495,7 +10553,7 @@ PRODUCT ENGINEERING
 <p><code>PER-002</code> possui boundary funcional corrente, referência interativa local validada e Documento Mestre próprio para consumo de Design e IA opcional. Isso não cria execução automática posterior.</p>
 <div class="highlight"><pre><span></span><code>PERSON JOURNEY DOCUMENTATION
 → FLOW MAP = CURRENT
-→ 23 / 26 SURFACE MASTERS BUILT
+→ 24 / 26 SURFACE MASTERS BUILT
 
 PER-002
 → GKR-UX-PER002-MASTER-001 v0.1.0
@@ -10586,7 +10644,7 @@ PER-301
 → TRN-406 / TRN-407 = CONTRACTED / UNCHANGED
 
 NEXT DOCUMENTATION TARGET
-→ PER-302 — REVISÃO DE CONTRATAÇÃO
+→ PER-303 — DOWNGRADE E CANCELAMENTO
 
 UXA-102 / V5
 → NOT_STARTED
@@ -10594,7 +10652,7 @@ UXA-102 / V5
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 </code></pre></div>
-<p>A próxima construção governada desta coleção é documental: <code>PER-302 — Revisão de Contratação</code>. Materialização visual, teste real, implementação ou avanço de <code>UXA-102/V5</code> dependem de atos próprios.</p>
+<p>A próxima construção governada desta coleção é documental: <code>PER-303 — Downgrade e Cancelamento</code>. Materialização visual, teste real, implementação ou avanço de <code>UXA-102/V5</code> dependem de atos próprios.</p>
 <h2 id="roadmap-8-guivos-business">8. Guivos Business<a class="headerlink" href="#roadmap-8-guivos-business" title="Permanent link">&para;</a></h2>
 <p><code>GPA-004 v1.7.5</code> governa a arquitetura funcional do Guivos Business.</p>
 <div class="highlight"><pre><span></span><code>BUSINESS
@@ -16267,6 +16325,7 @@ CURRENT AUTHORITIES
 <li><a href="#experience-architecture-person-journey-per-108-participant-home-master">PER-108 — Início do Participante — Documento Mestre</a>.</li>
 <li><a href="#experience-architecture-person-journey-per-009-account-settings-master">PER-009 — Conta / Configurações — Documento Mestre</a>.</li>
 <li><a href="#experience-architecture-person-journey-per-301-plans-comparison-master">PER-301 — Planos e Comparação — Documento Mestre</a>.</li>
+<li><a href="#experience-architecture-person-journey-per-302-contract-review-master">PER-302 — Revisão de Contratação — Documento Mestre</a>.</li>
 </ul>
 <p>A coleção parte de <code>PER-002</code>, porque <code>PER-001</code> já é governada pelo Documento Mestre da Home Pública — Pessoa. As superfícies seguintes entram progressivamente, uma a uma, somente após construção e validação documental.</p>
 <h3 id="experience-architecture-32-contextos-principais-de-experiencia">3.2 Contextos principais de experiência<a class="headerlink" href="#experience-architecture-32-contextos-principais-de-experiencia" title="Permanent link">&para;</a></h3>
@@ -26713,10 +26772,13 @@ CURRENT SURFACE MASTERS
 → PER-106 — MEUS COLETIVOS
 → PER-107 — CENTRAL DE ATUALIZAÇÕES
 → PER-108 — INÍCIO DO PARTICIPANTE
+→ PER-009 — CONTA / CONFIGURAÇÕES
+→ PER-301 — PLANOS E COMPARAÇÃO
+→ PER-302 — REVISÃO DE CONTRATAÇÃO
 
 NEXT DOCUMENTATION TARGET
-→ PER-302 — REVISÃO DE CONTRATAÇÃO
-→ MASTER = GKR-UX-PER302-MASTER-001
+→ PER-303 — DOWNGRADE E CANCELAMENTO
+→ MASTER = GKR-UX-PER303-MASTER-001
 → NOT_STARTED
 
 VISUAL MATERIALIZATION
@@ -27027,7 +27089,7 @@ PER-301
 <td style="text-align: right;">24</td>
 <td><code>PER-302</code></td>
 <td>Revisão de Contratação</td>
-<td>planejado</td>
+<td><strong>construído / current</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;">25</td>
@@ -27072,7 +27134,7 @@ NEW SURFACE MASTERS TO BUILD
 → 26
 
 BUILT
-→ 23 / 26
+→ 24 / 26
 → PER-002
 → PER-003
 → PER-004
@@ -27093,12 +27155,16 @@ BUILT
 → PER-105
 → PER-106
 → PER-107
+→ PER-108
+→ PER-009
+→ PER-301
+→ PER-302
 
 REMAINING
-→ 3 / 26
+→ 2 / 26
 
 NEXT DOCUMENTATION TARGET
-→ PER-302 — REVISÃO DE CONTRATAÇÃO
+→ PER-303 — DOWNGRADE E CANCELAMENTO
 
 NEW PER-IDS
 → NONE
@@ -36181,7 +36247,377 @@ VISUAL MATERIALIZATION
 PRODUCT ENGINEERING
 → NOT RELEASED
 </code></pre></div>
-<p>Próxima superfície da coleção após a incorporação deste Master: <code>PER-302 — Revisão de Contratação</code>.</p></section></section></section>
+<p>Próxima superfície da coleção após a incorporação deste Master: <code>PER-302 — Revisão de Contratação</code>.</p></section><section class="print-page" id="experience-architecture-person-journey-per-302-contract-review-master" heading-number="8.2.24"><h1 id="experience-architecture-person-journey-per-302-contract-review-master-jornada-da-pessoa-per-302-revisao-de-contratacao-documento-mestre-de-superficie">Jornada da Pessoa — PER-302 — Revisão de Contratação — Documento Mestre de Superfície<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-jornada-da-pessoa-per-302-revisao-de-contratacao-documento-mestre-de-superficie" title="Permanent link">&para;</a></h1>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento consolida a definição corrente de <code>PER-302 — Revisão de Contratação</code> para Design, IA opcional, Produto, UX, Privacidade e Engenharia.</p>
+<p><code>PER-302</code> existe para que a Pessoa autenticada <strong>revise conscientemente a mudança de plano pretendida antes de qualquer continuidade que possa produzir efeito comercial</strong>.</p>
+<p>A superfície governa compreensão e confirmação consciente da intenção. Não comprova checkout, pagamento, processamento financeiro ou ativação de entitlement.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-2-autoridades-correntes">2. Autoridades correntes<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-2-autoridades-correntes" title="Permanent link">&para;</a></h2>
+<p>A leitura de <code>PER-302</code> deve preservar conjuntamente:</p>
+<ul>
+<li><code>GKR-JOURNEY-SURFACE-DETAIL-PERSON-001</code> — contrato detalhado da superfície;</li>
+<li><code>GKR-PLANS-PERSON-001</code> — planos, preços, capacidades e limites;</li>
+<li><code>GEM-004-PLAN-TAXONOMY-AUTHORITY-001</code> — taxonomia vigente;</li>
+<li><code>GKR-JOURNEY-TRANSITION-REGISTRY-001</code> — maturidade das transições.</li>
+</ul>
+<p>Nenhuma referência visual histórica substitui essas autoridades.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-3-papel-funcional">3. Papel funcional<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-3-papel-funcional" title="Permanent link">&para;</a></h2>
+<p>A Pessoa deve conseguir:</p>
+<ol>
+<li>reconhecer qual mudança iniciou em <code>PER-301</code>;</li>
+<li>revisar o plano alvo;</li>
+<li>revisar preço e recorrência quando legitimamente aplicáveis;</li>
+<li>compreender pagador e beneficiário somente no limite da autoridade disponível;</li>
+<li>distinguir revisão de contratação de pagamento concluído;</li>
+<li>confirmar conscientemente a continuidade;</li>
+<li>retornar sem contratar;</li>
+<li>não sofrer alteração de plano apenas por entrar, revisar ou voltar.</li>
+</ol>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-4-entrada-trn-401">4. Entrada — TRN-401<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-4-entrada-trn-401" title="Permanent link">&para;</a></h2>
+<p><code>GKR-TRN-401: PER-301 → PER-302</code>.</p>
+<p>Estado: <strong>localmente validada</strong>.</p>
+<p>A entrada ocorre após ação afirmativa em <code>PER-301</code> sobre uma mudança que exige revisão de contratação.</p>
+<p>Entrar em <code>PER-302</code>:</p>
+<ul>
+<li>não contrata;</li>
+<li>não cobra;</li>
+<li>não ativa entitlement;</li>
+<li>não confirma pagamento;</li>
+<li>não autoriza inventar meio de pagamento;</li>
+<li>não torna a decisão irreversível.</li>
+</ul>
+<p>Este Master não promove a maturidade de <code>TRN-401</code>.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-5-contexto-minimo-recebido">5. Contexto mínimo recebido<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-5-contexto-minimo-recebido" title="Permanent link">&para;</a></h2>
+<p>A continuidade pode preservar somente o contexto necessário e autorizado, como:</p>
+<ul>
+<li>plano de origem, quando relevante e conhecido;</li>
+<li>plano alvo;</li>
+<li>preço de referência aplicável;</li>
+<li>recorrência escolhida quando a escolha existir e estiver governada;</li>
+<li>contexto mínimo de pagador/beneficiário quando legitimamente disponível.</li>
+</ul>
+<p>A superfície não deve inferir dados financeiros ausentes.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-6-plano-alvo">6. Plano alvo<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-6-plano-alvo" title="Permanent link">&para;</a></h2>
+<p>O plano alvo deve corresponder à taxonomia vigente da Pessoa:</p>
+<div class="highlight"><pre><span></span><code>FREE
+PLUS
+PRO
+</code></pre></div>
+<p><code>PER-302</code> não cria plano, variante comercial ou pacote adicional.</p>
+<p>A revisão deve deixar claro qual plano está sendo considerado sem transformar essa apresentação em contratação consumada.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-7-preco">7. Preço<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-7-preco" title="Permanent link">&para;</a></h2>
+<p>O preço apresentado deve vir da autoridade comercial vigente.</p>
+<p>Baseline corrente:</p>
+<table>
+<thead>
+<tr>
+<th>Plano</th>
+<th style="text-align: right;">Mensal</th>
+<th style="text-align: right;">Anual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Free</strong></td>
+<td style="text-align: right;">R$ 0,00</td>
+<td style="text-align: right;">R$ 0,00</td>
+</tr>
+<tr>
+<td><strong>Plus</strong></td>
+<td style="text-align: right;">R$ 24,90</td>
+<td style="text-align: right;">R$ 249,00</td>
+</tr>
+<tr>
+<td><strong>Pro</strong></td>
+<td style="text-align: right;">R$ 49,90</td>
+<td style="text-align: right;">R$ 499,00</td>
+</tr>
+</tbody>
+</table>
+<p>Esses valores são referências comerciais vigentes. Este Master não comprova cobrança implementada.</p>
+<p>Não inventar:</p>
+<ul>
+<li>desconto;</li>
+<li>promoção;</li>
+<li>cupom;</li>
+<li>taxa;</li>
+<li>imposto;</li>
+<li>parcelamento;</li>
+<li>economia percentual;</li>
+<li>trial;</li>
+<li>preço personalizado.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-8-recorrencia">8. Recorrência<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-8-recorrencia" title="Permanent link">&para;</a></h2>
+<p>Quando a contratação pretendida distinguir mensal e anual, a recorrência deve ser explicitamente compreensível antes da continuidade.</p>
+<p>A superfície não deve inferir:</p>
+<ul>
+<li>data de renovação;</li>
+<li>renovação automática implementada;</li>
+<li>data de cobrança;</li>
+<li>ciclo financeiro já iniciado;</li>
+<li>regra de proration.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-9-pagador-e-beneficiario">9. Pagador e beneficiário<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-9-pagador-e-beneficiario" title="Permanent link">&para;</a></h2>
+<p>O registry reconhece <code>pagador/beneficiário</code> como conteúdo possível de <code>PER-302</code>.</p>
+<p>Essa distinção não autoriza inventar arquitetura de gifting, dependentes, terceiros pagadores ou faturamento empresarial.</p>
+<p>Quando não houver autoridade suficiente para distinguir papéis, a experiência deve permanecer no mínimo necessário e não fabricar relações.</p>
+<p>Quando pagador e beneficiário forem diferentes, a continuidade substantiva exige que o confirmante seja <strong>pagador autorizado</strong>. Autenticação da Pessoa, isoladamente, não comprova autoridade financeira. Se essa autorização não puder ser estabelecida por fonte legítima, a continuidade por <code>TRN-402</code> deve permanecer bloqueada.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-10-revisao-consciente">10. Revisão consciente<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-10-revisao-consciente" title="Permanent link">&para;</a></h2>
+<p>Antes da continuidade, a Pessoa deve conseguir compreender materialmente:</p>
+<ul>
+<li>o que está escolhendo;</li>
+<li>qual plano é alvo;</li>
+<li>qual preço de referência se aplica;</li>
+<li>qual recorrência foi selecionada, quando aplicável;</li>
+<li>a data de início aplicável;</li>
+<li>as informações vigentes sobre cancelamento e downgrade;</li>
+<li>que a ação seguinte é uma continuidade comercial e não mera navegação;</li>
+<li>que processamento e resultado ainda não estão comprovados nesta superfície.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-11-confirmacao">11. Confirmação<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-11-confirmacao" title="Permanent link">&para;</a></h2>
+<p>A confirmação deve ser uma ação afirmativa, inequívoca e contextual, realizada por <strong>pagador autorizado</strong>. A superfície não pode habilitar continuidade substantiva quando a autoridade do pagador necessária não estiver comprovada.</p>
+<p>Ela não pode ser produzida por:</p>
+<ul>
+<li>carregamento da tela;</li>
+<li>rolagem;</li>
+<li>seleção anterior em <code>PER-301</code>;</li>
+<li>foco em componente;</li>
+<li>retorno à superfície;</li>
+<li>opção pré-confirmada com efeito substantivo;</li>
+<li>inatividade.</li>
+</ul>
+<p>Confirmar a continuidade em <code>PER-302</code> não permite afirmar que pagamento ou ativação foram concluídos.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-12-saida-trn-402">12. Saída — TRN-402<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-12-saida-trn-402" title="Permanent link">&para;</a></h2>
+<p><code>GKR-TRN-402: PER-302 → PER-304</code>.</p>
+<p>Estado: <strong>localmente validada</strong>.</p>
+<p>A transição representa continuidade após confirmação consciente dentro do fluxo documental.</p>
+<p>A lacuna principal permanece: <strong>processamento financeiro real</strong>.</p>
+<p>Portanto, <code>TRN-402</code> não pode ser descrita como prova de:</p>
+<ul>
+<li>pagamento aprovado;</li>
+<li>cobrança realizada;</li>
+<li>assinatura ativada;</li>
+<li>entitlement persistido;</li>
+<li>emissão fiscal;</li>
+<li>transação liquidada.</li>
+</ul>
+<p>Este Master não promove a maturidade de <code>TRN-402</code>.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-13-retorno-sem-contratar">13. Retorno sem contratar<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-13-retorno-sem-contratar" title="Permanent link">&para;</a></h2>
+<p>A reversibilidade é requisito explícito de <code>PER-302</code>.</p>
+<p>A Pessoa pode voltar sem contratar.</p>
+<p>O retorno:</p>
+<ul>
+<li>preserva o estado comercial anterior;</li>
+<li>não deve gerar cobrança;</li>
+<li>não deve criar assinatura;</li>
+<li>não deve ser tratado como falha;</li>
+<li>não deve exigir justificativa;</li>
+<li>não deve ocultar a alternativa de permanecer como está.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-14-estados-internos-de-experiencia">14. Estados internos de experiência<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-14-estados-internos-de-experiencia" title="Permanent link">&para;</a></h2>
+<p>Sem novos IDs, Design pode representar estados como:</p>
+<ul>
+<li>carregamento;</li>
+<li>revisão disponível;</li>
+<li>plano alvo conhecido;</li>
+<li>recorrência conhecida;</li>
+<li>recorrência ainda não selecionada quando necessária;</li>
+<li>contexto comercial incompleto;</li>
+<li>pronta para confirmação;</li>
+<li>confirmação em continuidade;</li>
+<li>indisponibilidade temporária;</li>
+<li>erro recuperável;</li>
+<li>retorno voluntário.</li>
+</ul>
+<p>Estado interno não cria nova superfície nem nova transição.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-15-dados-incompletos-ou-inconsistentes">15. Dados incompletos ou inconsistentes<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-15-dados-incompletos-ou-inconsistentes" title="Permanent link">&para;</a></h2>
+<p>Se plano, preço, recorrência ou outro dado material necessário não puder ser confirmado por autoridade corrente:</p>
+<div class="highlight"><pre><span></span><code>NÃO INFERIR
+→ NÃO FABRICAR
+→ NÃO CONFIRMAR SILENCIOSAMENTE
+→ PRESERVAR RETORNO
+</code></pre></div>
+<p>A experiência deve bloquear uma confirmação enganosa quando faltar informação material indispensável.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-16-idempotencia">16. Idempotência<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-16-idempotencia" title="Permanent link">&para;</a></h2>
+<p>Reabrir <code>PER-302</code>, revisar novamente ou repetir navegação não deve duplicar efeito comercial.</p>
+<p>A confirmação de interface não pode ser usada como prova de processamento financeiro duplicável ou concluído.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-17-cobranca-e-meios-de-pagamento">17. Cobrança e meios de pagamento<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-17-cobranca-e-meios-de-pagamento" title="Permanent link">&para;</a></h2>
+<p>Este Master não define nem comprova:</p>
+<ul>
+<li>cartão;</li>
+<li>Pix;</li>
+<li>boleto;</li>
+<li>carteira;</li>
+<li>gateway;</li>
+<li>tokenização;</li>
+<li>antifraude;</li>
+<li>autorização financeira;</li>
+<li>captura;</li>
+<li>liquidação;</li>
+<li>recorrência técnica;</li>
+<li>cobrança automática.</li>
+</ul>
+<p>Nenhum desses elementos deve ser criado apenas para “completar” uma tela de contratação.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-18-fiscal-e-proration">18. Fiscal e proration<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-18-fiscal-e-proration" title="Permanent link">&para;</a></h2>
+<p>Permanecem lacunas:</p>
+<ul>
+<li>regras fiscais;</li>
+<li>tributos;</li>
+<li>emissão fiscal;</li>
+<li>proration;</li>
+<li>créditos;</li>
+<li>compensações;</li>
+<li>estornos;</li>
+<li>cálculo entre ciclos.</li>
+</ul>
+<p>A revisão não deve apresentar cálculos não governados como fatos.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-19-entitlement">19. Entitlement<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-19-entitlement" title="Permanent link">&para;</a></h2>
+<p><code>PER-302</code> não ativa capacidade.</p>
+<p>A mudança efetiva de entitlement depende de autoridade e implementação posteriores.</p>
+<p>A Pessoa não deve receber indicação de “plano ativo” apenas porque confirmou continuidade nesta superfície.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-20-autonomia-e-ausencia-de-pressao">20. Autonomia e ausência de pressão<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-20-autonomia-e-ausencia-de-pressao" title="Permanent link">&para;</a></h2>
+<p>A revisão não deve usar:</p>
+<ul>
+<li>urgência inventada;</li>
+<li>escassez artificial;</li>
+<li>vergonha;</li>
+<li>perda fictícia;</li>
+<li>opção paga pré-confirmada;</li>
+<li>confirmação ambígua;</li>
+<li>obstáculos artificiais para voltar;</li>
+<li>claims de resultado garantido.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-21-privacidade-e-minimizacao">21. Privacidade e minimização<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-21-privacidade-e-minimizacao" title="Permanent link">&para;</a></h2>
+<p>Somente dados necessários à revisão consciente podem ser apresentados ou solicitados.</p>
+<p>Dados financeiros, identidade de terceiros e demais informações sensíveis exigem finalidade e autoridade próprias.</p>
+<p><code>PER-302</code> não é autorização genérica para coleta financeira.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-22-linguagem">22. Linguagem<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-22-linguagem" title="Permanent link">&para;</a></h2>
+<p>A linguagem deve distinguir:</p>
+<ul>
+<li><strong>revisar</strong> de contratar;</li>
+<li><strong>confirmar continuidade</strong> de pagamento aprovado;</li>
+<li><strong>preço de referência</strong> de valor efetivamente cobrado;</li>
+<li><strong>recorrência escolhida</strong> de renovação técnica implementada;</li>
+<li><strong>intenção</strong> de entitlement ativo.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-23-acessibilidade">23. Acessibilidade<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-23-acessibilidade" title="Permanent link">&para;</a></h2>
+<p>Plano alvo, preço, recorrência, consequências da continuidade, retorno e ação afirmativa devem ser compreensíveis sem depender exclusivamente de cor, posição, ícone, animação ou som.</p>
+<p>A confirmação deve ter nome e contexto semanticamente compreensíveis por tecnologias assistivas.</p>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-24-conteudo-sintetico">24. Conteúdo sintético<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-24-conteudo-sintetico" title="Permanent link">&para;</a></h2>
+<p>Prototipação pode usar conteúdo sintético claramente identificado, mas não pode inventar como autoridade:</p>
+<ul>
+<li>identidade real de pagador;</li>
+<li>dados de cartão;</li>
+<li>cobrança;</li>
+<li>transação;</li>
+<li>desconto;</li>
+<li>imposto;</li>
+<li>status de pagamento;</li>
+<li>entitlement;</li>
+<li>renovação.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-25-liberdade-criativa-de-design">25. Liberdade criativa de Design<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-25-liberdade-criativa-de-design" title="Permanent link">&para;</a></h2>
+<p>Não existe baseline visual canônica imposta por este Master.</p>
+<p>A designer mantém liberdade sobre composição, hierarquia, componentes, responsividade, motion, microinterações e forma de revisão, preservando:</p>
+<ul>
+<li>clareza da intenção;</li>
+<li>dados comerciais autorizados;</li>
+<li>ação afirmativa;</li>
+<li>reversibilidade;</li>
+<li>acessibilidade;</li>
+<li>ausência de efeito financeiro inventado;</li>
+<li>autoridades correntes de marca.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-26-limites-para-ia">26. Limites para IA<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-26-limites-para-ia" title="Permanent link">&para;</a></h2>
+<p>IA não pode:</p>
+<ul>
+<li>alterar plano ou preço;</li>
+<li>inventar promoção;</li>
+<li>inventar meio de pagamento;</li>
+<li>simular cobrança;</li>
+<li>afirmar aprovação financeira;</li>
+<li>ativar entitlement;</li>
+<li>inventar proration;</li>
+<li>promover <code>TRN-401/402</code>;</li>
+<li>criar novos IDs;</li>
+<li>impor baseline visual;</li>
+<li>iniciar Product Engineering.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-27-criterios-de-aceite-funcional">27. Critérios de aceite funcional<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-27-criterios-de-aceite-funcional" title="Permanent link">&para;</a></h2>
+<p>O consumo de <code>PER-302</code> é aceitável quando:</p>
+<ol>
+<li>a entrada ocorre a partir de intenção afirmativa governada;</li>
+<li>plano alvo é identificável;</li>
+<li>preço vem da autoridade corrente;</li>
+<li>recorrência é clara quando aplicável;</li>
+<li>dados ausentes não são inferidos;</li>
+<li>pagador/beneficiário não são expandidos além da autoridade;</li>
+<li>pagador autorizado é requisito para confirmação substantiva;</li>
+<li>data de início é apresentada quando aplicável e autorizada;</li>
+<li>informações vigentes sobre cancelamento e downgrade são apresentadas antes da continuidade;</li>
+<li>revisão precede continuidade;</li>
+<li>confirmação é afirmativa;</li>
+<li>entrar na superfície não contrata;</li>
+<li>revisar não contrata;</li>
+<li>voltar não contrata;</li>
+<li>retorno é possível sem penalidade artificial;</li>
+<li>TRN-401 permanece localmente validada;</li>
+<li>TRN-402 permanece localmente validada;</li>
+<li>processamento financeiro real não é presumido;</li>
+<li>gateway não é inventado;</li>
+<li>meio de pagamento não é inventado;</li>
+<li>fiscal não é inventado;</li>
+<li>proration não é inventada;</li>
+<li>entitlement não é ativado por inferência;</li>
+<li>repetição não duplica efeito;</li>
+<li>autonomia é preservada;</li>
+<li>privacidade e minimização são preservadas;</li>
+<li>acessibilidade é preservada;</li>
+<li>Design mantém liberdade criativa;</li>
+<li>nenhum novo ID é criado;</li>
+<li>Product Engineering permanece não liberado.</li>
+</ol>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-28-lacunas-abertas">28. Lacunas abertas<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-28-lacunas-abertas" title="Permanent link">&para;</a></h2>
+<p>Permanecem fora deste Master:</p>
+<ul>
+<li>processamento financeiro real;</li>
+<li>gateway;</li>
+<li>meios de pagamento;</li>
+<li>autorização/captura/liquidação;</li>
+<li>antifraude;</li>
+<li>fiscal;</li>
+<li>proration;</li>
+<li>estorno;</li>
+<li>persistência de entitlement;</li>
+<li>regras técnicas de renovação;</li>
+<li>resultado/recuperação de <code>PER-304</code>;</li>
+<li>implementação ponta a ponta;</li>
+<li>validação integral de <code>TRN-401/402</code>.</li>
+</ul>
+<h2 id="experience-architecture-person-journey-per-302-contract-review-master-29-estado">29. Estado<a class="headerlink" href="#experience-architecture-person-journey-per-302-contract-review-master-29-estado" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>PER-302
+→ DOCUMENTED IN GOVERNED SCOPE
+
+MASTER
+→ GKR-UX-PER302-MASTER-001 v0.1.0
+→ CURRENT CANDIDATE
+
+TRN-401
+→ LOCALLY VALIDATED / UNCHANGED
+
+TRN-402
+→ LOCALLY VALIDATED / UNCHANGED
+
+CHECKOUT / FINANCIAL PROCESSING
+→ NOT PROVEN
+
+VISUAL MATERIALIZATION
+→ DESIGN-OWNED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+</code></pre></div>
+<p>Próxima superfície da coleção após a incorporação deste Master: <code>PER-303 — Downgrade e Cancelamento</code>.</p></section></section></section>
                     <section class='print-page md-section' id='section-9' heading-number='9'>
                         <h1>Research e Validação<a class='headerlink' href='#section-9' title='Permanent link'></a>
                         </h1>
@@ -45858,6 +46294,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 .print-site-enumerate-headings #experience-architecture-person-journey-per-009-account-settings-master > h1:before { content: '8.2.22 ' }
 
 .print-site-enumerate-headings #experience-architecture-person-journey-per-301-plans-comparison-master > h1:before { content: '8.2.23 ' }
+
+.print-site-enumerate-headings #experience-architecture-person-journey-per-302-contract-review-master > h1:before { content: '8.2.24 ' }
 
 .print-site-enumerate-headings #section-9 > h1:before { content: '9 ' }
 .print-site-enumerate-headings #research > h1:before { content: '9.1 ' }
