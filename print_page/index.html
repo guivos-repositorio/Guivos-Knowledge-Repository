@@ -4553,6 +4553,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/organizations-collectives-journey/organization-opportunity-registration-master/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização — Cadastro de Oportunidade / Programa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7219,6 +7254,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4.2 Organização — Cadastro de Oportunidade / Programa
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -8963,6 +9009,17 @@
     <span class="md-ellipsis">
       
         9.4.1 Visão Geral / Início
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4.2 Organização — Cadastro de Oportunidade / Programa
       
     </span>
   </a>
@@ -44805,6 +44862,403 @@ PROTOTYPE
 
 PRODUCT ENGINEERING
 → NOT RELEASED
+</code></pre></div></section><section class="print-page" id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master" heading-number="9.4.2"><h1 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-organizacao-cadastro-de-oportunidade-programa-documento-mestre-de-superficie">Organização — Cadastro de Oportunidade / Programa — Documento Mestre de Superfície<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-organizacao-cadastro-de-oportunidade-programa-documento-mestre-de-superficie" title="Permanent link">&para;</a></h1>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-1-responsabilidade">1. Responsabilidade<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-1-responsabilidade" title="Permanent link">&para;</a></h2>
+<p>Este Documento Mestre governa a responsabilidade funcional de <code>GKR-SURF-ORG-002</code> — <strong>cadastro de oportunidade / programa pela Organização</strong>.</p>
+<p>Sua função é permitir que uma Pessoa com autoridade institucional legítima <strong>crie, revise, preserve como rascunho, envie ou cancele um cadastro</strong>, compreendendo as condições materiais que serão submetidas antes de qualquer ativação.</p>
+<div class="highlight"><pre><span></span><code>ORG-001 — VISÃO GERAL
+↓
+TRN-201
+↓
+ORG-002 — CADASTRO / REVISÃO / ENVIO
+↓
+TRN-202
+↓
+ORG-003 — APROVADA / ATIVA
+</code></pre></div>
+<p>Este Master não absorve <code>ORG-003</code>. Cadastro e publicação ativa possuem responsabilidades e estados distintos.</p>
+<div class="highlight"><pre><span></span><code>CADASTRAR
+≠ APROVAR
+≠ ATIVAR
+≠ DISTRIBUIR
+≠ GERAR RELEVÂNCIA
+≠ GERAR IMPACTO
+</code></pre></div>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-2-por-que-esta-responsabilidade-e-especifica-de-organizacao">2. Por que esta responsabilidade é específica de Organização<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-2-por-que-esta-responsabilidade-e-especifica-de-organizacao" title="Permanent link">&para;</a></h2>
+<p>A arquitetura conjunta permite Masters compartilhados somente quando job, responsabilidade e continuidade forem equivalentes.</p>
+<p>Neste caso, <code>ORG-J04</code> e <code>ORG-002</code> sustentam uma responsabilidade institucional própria. O Coletivo possui atividades, oportunidades e governança em autoridades diferentes, sem uma superfície estável equivalente a <code>ORG-002</code>.</p>
+<p>Portanto:</p>
+<div class="highlight"><pre><span></span><code>RESPONSABILIDADE PRÓPRIA DA ORGANIZAÇÃO
+→ MASTER ESPECÍFICO
+
+AUSÊNCIA DE EQUIVALENTE NO COLETIVO
+→ NÃO DUPLICAR
+→ NÃO INVENTAR
+→ NÃO FORÇAR PARIDADE
+</code></pre></div>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-3-participante-contexto-e-autoridade">3. Participante, contexto e autoridade<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-3-participante-contexto-e-autoridade" title="Permanent link">&para;</a></h2>
+<p>O agente humano é uma Pessoa autenticada atuando em contexto de Organização.</p>
+<p>A entrada exige:</p>
+<ul>
+<li>Organização ativa e identificável;</li>
+<li>unidade/contexto institucional quando aplicável;</li>
+<li>representação institucional válida;</li>
+<li>autoridade compatível com a ação pretendida;</li>
+<li>aprovação adicional quando a autoridade corrente assim exigir.</li>
+</ul>
+<p>A superfície deve distinguir acesso, edição, envio e aprovação.</p>
+<div class="highlight"><pre><span></span><code>ACESSAR
+≠ EDITAR
+
+EDITAR
+≠ ENVIAR
+
+ENVIAR
+≠ APROVAR
+
+REPRESENTAR
+≠ AUTORIDADE IRRESTRITA
+</code></pre></div>
+<p>Quando a autoridade for insuficiente, a experiência deve preservar o trabalho permitido sem simular capacidade inexistente.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-4-origens-e-destinos-legitimos">4. Origens e destinos legítimos<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-4-origens-e-destinos-legitimos" title="Permanent link">&para;</a></h2>
+<h3 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-origem-principal">Origem principal<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-origem-principal" title="Permanent link">&para;</a></h3>
+<p>A continuidade registrada é:</p>
+<ul>
+<li><code>GKR-TRN-201</code> — <code>ORG-001 → ORG-002</code>, com maturidade própria preservada.</li>
+</ul>
+<p>O cadastro também pode ser retomado a partir de rascunho ou continuidade institucional já autorizada quando a fonte de verdade sustentar esse estado.</p>
+<h3 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-destino-principal">Destino principal<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-destino-principal" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>GKR-TRN-202</code> — <code>ORG-002 → ORG-003</code>, preservando sua maturidade corrente.</li>
+</ul>
+<p>A navegação para <code>ORG-003</code> não pode ocorrer como se a ativação estivesse confirmada antes do resultado real do processo aplicável.</p>
+<p>Este Master não cria transições adicionais.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-5-job-principal">5. Job principal<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-5-job-principal" title="Permanent link">&para;</a></h2>
+<p>A Pessoa autorizada deve conseguir:</p>
+<ol>
+<li>compreender o que está cadastrando e em nome de qual Organização;</li>
+<li>informar ou revisar os dados materiais necessários;</li>
+<li>identificar campos ausentes, inválidos, contestados ou dependentes de confirmação;</li>
+<li>compreender condições, riscos e responsabilidades antes do envio;</li>
+<li>salvar rascunho quando permitido;</li>
+<li>revisar antes de submeter;</li>
+<li>enviar somente com autoridade suficiente;</li>
+<li>cancelar ou retirar a intenção antes de efeito material, quando o estado permitir;</li>
+<li>compreender o resultado sem confundir envio com aprovação ou ativação.</li>
+</ol>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-6-informacao-e-dados">6. Informação e dados<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-6-informacao-e-dados" title="Permanent link">&para;</a></h2>
+<p>O contrato corrente admite, quando aplicável e sustentado pela autoridade de origem:</p>
+<ul>
+<li>identidade da Organização responsável;</li>
+<li>responsável institucional;</li>
+<li>identificação e descrição da oportunidade ou programa;</li>
+<li>disponibilidade e vigência;</li>
+<li>preço ou condição econômica, quando houver;</li>
+<li>elegibilidade;</li>
+<li>condições materiais;</li>
+<li>riscos;</li>
+<li>relação comercial aplicável;</li>
+<li>evidências ou referências necessárias;</li>
+<li>estado do cadastro;</li>
+<li>informação sobre aprovação aplicável.</li>
+</ul>
+<p>Somente dados necessários ao cadastro e à decisão legítima devem ser capturados.</p>
+<p>Nenhum campo pode ser inventado por convenção de mercado ou conveniência do protótipo.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-7-proveniencia-e-qualidade-da-informacao">7. Proveniência e qualidade da informação<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-7-proveniencia-e-qualidade-da-informacao" title="Permanent link">&para;</a></h2>
+<p>Informação deve permanecer distinguível quando for:</p>
+<ul>
+<li>declarada pela Organização;</li>
+<li>proveniente de fonte externa autorizada;</li>
+<li>inferida;</li>
+<li>desconhecida;</li>
+<li>desatualizada;</li>
+<li>contestada;</li>
+<li>ainda não confirmada.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>INFORMAÇÃO DECLARADA
+≠ INFORMAÇÃO VERIFICADA
+
+INFERÊNCIA
+≠ FATO
+
+AUSÊNCIA DE DADO
+≠ ZERO
+≠ NÃO APLICÁVEL
+</code></pre></div>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-8-estados-minimos">8. Estados mínimos<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-8-estados-minimos" title="Permanent link">&para;</a></h2>
+<p>A responsabilidade deve suportar, quando aplicável:</p>
+<ul>
+<li>novo cadastro;</li>
+<li>rascunho;</li>
+<li>rascunho incompleto;</li>
+<li>dados válidos para revisão;</li>
+<li>informação material ausente;</li>
+<li>informação inválida;</li>
+<li>informação contestada;</li>
+<li>autoridade insuficiente;</li>
+<li>aprovação adicional necessária;</li>
+<li>pronto para envio;</li>
+<li>envio em processamento;</li>
+<li>envio confirmado;</li>
+<li>envio com falha recuperável;</li>
+<li>resultado indeterminado;</li>
+<li>cancelado antes do envio;</li>
+<li>retirado quando o ciclo vigente permitir;</li>
+<li>dependência indisponível;</li>
+<li>contexto ou sessão expirados;</li>
+<li>atualização concorrente.</li>
+</ul>
+<p>O Design pode materializar esses estados de formas diferentes, desde que preserve seu significado.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-9-acoes-e-controles">9. Ações e controles<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-9-acoes-e-controles" title="Permanent link">&para;</a></h2>
+<p>A superfície pode oferecer, conforme estado e autoridade:</p>
+<ul>
+<li>iniciar cadastro;</li>
+<li>editar;</li>
+<li>revisar;</li>
+<li>salvar rascunho;</li>
+<li>retomar rascunho;</li>
+<li>corrigir informação;</li>
+<li>remover informação ainda não submetida quando permitido;</li>
+<li>cancelar;</li>
+<li>enviar para o próximo estágio;</li>
+<li>retornar sem enviar;</li>
+<li>revalidar contexto/autoridade;</li>
+<li>tentar novamente após falha recuperável.</li>
+</ul>
+<p>Ações destrutivas ou materiais exigem clareza proporcional ao efeito.</p>
+<p>Não deve existir pré-seleção silenciosa que converta preenchimento em publicação.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-10-revisao-antes-do-envio">10. Revisão antes do envio<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-10-revisao-antes-do-envio" title="Permanent link">&para;</a></h2>
+<p>Antes de um envio material, a Pessoa deve conseguir compreender:</p>
+<ul>
+<li>o que será submetido;</li>
+<li>em nome de qual Organização;</li>
+<li>quais condições materiais estão vigentes;</li>
+<li>quais informações ainda possuem incerteza relevante;</li>
+<li>qual autoridade está sendo exercida;</li>
+<li>qual é o próximo estágio conhecido;</li>
+<li>o que o envio <strong>não</strong> garante.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>REVISÃO
+→ COMPREENSÃO ANTES DO EFEITO
+
+ENVIO
+≠ APROVAÇÃO
+≠ PUBLICAÇÃO ATIVA
+≠ DESCOBERTA GARANTIDA
+</code></pre></div>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-11-processamento-e-feedback">11. Processamento e feedback<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-11-processamento-e-feedback" title="Permanent link">&para;</a></h2>
+<p>O envio deve preservar:</p>
+<div class="highlight"><pre><span></span><code>INTENÇÃO
+→ CONFIRMAÇÃO CONSCIENTE
+→ PROCESSAMENTO
+→ SUCESSO CONFIRMADO
+OU
+→ FALHA RECUPERÁVEL
+OU
+→ ESTADO INDETERMINADO
+</code></pre></div>
+<p><code>INTENÇÃO ≠ PROCESSAMENTO ≠ SUCESSO</code>.</p>
+<p>Retry não pode duplicar cadastro ou efeito material.</p>
+<p>Quando o resultado estiver indeterminado, a experiência deve reconsultar a fonte de verdade antes de convidar a repetir a ação.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-12-vazio-erro-indisponibilidade-e-recuperacao">12. Vazio, erro, indisponibilidade e recuperação<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-12-vazio-erro-indisponibilidade-e-recuperacao" title="Permanent link">&para;</a></h2>
+<p>A experiência deve tratar explicitamente:</p>
+<ul>
+<li>ausência de rascunhos;</li>
+<li>informação obrigatória ausente;</li>
+<li>dado inválido;</li>
+<li>dependência externa indisponível;</li>
+<li>perda ou expiração de autoridade;</li>
+<li>sessão expirada;</li>
+<li>conflito de atualização;</li>
+<li>falha de processamento;</li>
+<li>estado de resultado ainda desconhecido.</li>
+</ul>
+<p>Nenhum erro técnico deve ser apresentado como falha institucional da Organização.</p>
+<p>Quando seguro, conteúdo já informado deve ser preservado para recuperação.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-13-reversibilidade-interrupcao-e-retorno">13. Reversibilidade, interrupção e retorno<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-13-reversibilidade-interrupcao-e-retorno" title="Permanent link">&para;</a></h2>
+<p>Antes de envio confirmado, deve ser possível retornar ou interromper sem mutação silenciosa, respeitando o estado real.</p>
+<p>Quando o contrato permitir:</p>
+<ul>
+<li>rascunho pode ser salvo;</li>
+<li>rascunho pode ser descartado conscientemente;</li>
+<li>cadastro pode ser cancelado antes do envio;</li>
+<li>cadastro submetido pode seguir regras próprias de retirada/correção conforme seu estado.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>VOLTAR
+≠ ENVIAR
+
+FECHAR
+≠ DESCARTAR AUTOMATICAMENTE
+
+CANCELAR INTENÇÃO
+≠ APAGAR HISTÓRICO LEGÍTIMO
+</code></pre></div>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-14-continuidade-com-org-003-e-descoberta">14. Continuidade com ORG-003 e descoberta<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-14-continuidade-com-org-003-e-descoberta" title="Permanent link">&para;</a></h2>
+<p><code>ORG-003</code> governa a oportunidade aprovada/ativa e permanece fora desta responsabilidade.</p>
+<p>Somente quando o estado real e a autoridade aplicável sustentarem a continuidade, <code>TRN-202</code> pode levar ao estágio correspondente.</p>
+<p>A descoberta pela Pessoa permanece separada e usa autoridades próprias, inclusive <code>TRN-203</code> no recorte já validado.</p>
+<div class="highlight"><pre><span></span><code>ORG-002
+→ CADASTRO
+
+ORG-003
+→ ESTADO INSTITUCIONAL APROVADO / ATIVO
+
+PER-201...
+→ DESCOBERTA PELA PESSOA
+
+PERSPECTIVAS
+→ NÃO SE FUNDem
+</code></pre></div>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-15-relacao-com-planos-e-capacidade">15. Relação com Planos e capacidade<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-15-relacao-com-planos-e-capacidade" title="Permanent link">&para;</a></h2>
+<p>Plano comercial pode afetar capacidade somente quando uma autoridade específica sustentar o limite.</p>
+<p>Este Master não pode:</p>
+<ul>
+<li>inventar quota;</li>
+<li>inventar entitlement;</li>
+<li>bloquear cadastro por limite não documentado;</li>
+<li>alterar relevância orgânica;</li>
+<li>converter cadastro em upsell;</li>
+<li>inferir que pagamento garante distribuição, relevância ou resultado.</li>
+</ul>
+<p>Se uma limitação legítima de capacidade for encontrada, a continuidade para Planos deve seguir a autoridade própria, preservando alternativas existentes.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-16-privacidade-protecao-e-minimizacao">16. Privacidade, proteção e minimização<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-16-privacidade-protecao-e-minimizacao" title="Permanent link">&para;</a></h2>
+<p>O cadastro deve capturar e exibir somente informação necessária à finalidade legítima.</p>
+<p>Dados pessoais ou sensíveis não se tornam institucionais apenas por estarem associados a uma oportunidade.</p>
+<p>A Organização não recebe, por publicar uma oportunidade, acesso adicional ao contexto individual de Pessoas.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-17-acessibilidade">17. Acessibilidade<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-17-acessibilidade" title="Permanent link">&para;</a></h2>
+<p>Estado, obrigatoriedade, erro, autoridade, risco, processamento e confirmação não podem depender exclusivamente de:</p>
+<ul>
+<li>cor;</li>
+<li>ícone;</li>
+<li>posição;</li>
+<li>animação;</li>
+<li>hover;</li>
+<li>blur;</li>
+<li>densidade visual.</li>
+</ul>
+<p>Revisão e confirmação devem ser compreensíveis por tecnologia assistiva e navegação sem apontador.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-18-liberdade-de-design">18. Liberdade de Design<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-18-liberdade-de-design" title="Permanent link">&para;</a></h2>
+<p>Design mantém liberdade sobre:</p>
+<ul>
+<li>composição;</li>
+<li>grid;</li>
+<li>navegação local;</li>
+<li>componentes;</li>
+<li>progressão visual;</li>
+<li>quantidade de frames;</li>
+<li>tipografia dentro da autoridade oficial de marca;</li>
+<li>imagens e ícones;</li>
+<li>densidade;</li>
+<li>motion;</li>
+<li>solução responsiva.</li>
+</ul>
+<p>Essa liberdade não autoriza:</p>
+<ul>
+<li>transformar o fluxo em wizard obrigatório sem fundamento;</li>
+<li>inventar etapas;</li>
+<li>inventar campos;</li>
+<li>inventar aprovação;</li>
+<li>esconder condição material;</li>
+<li>declarar sucesso antes de confirmação;</li>
+<li>fundir <code>ORG-002</code> e <code>ORG-003</code>;</li>
+<li>usar publicação como promessa de relevância ou impacto.</li>
+</ul>
+<p>O low-fidelity existente pode ser consumido como evidência funcional, não como baseline visual obrigatório.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-19-ia-e-prototipacao-source-lock">19. IA e prototipação — source lock<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-19-ia-e-prototipacao-source-lock" title="Permanent link">&para;</a></h2>
+<p>IA pode explorar forma para materializar este contrato, mas não pode inventar:</p>
+<ul>
+<li>campos;</li>
+<li>estados;</li>
+<li>ações;</li>
+<li>transições;</li>
+<li>automações;</li>
+<li>validações materiais;</li>
+<li>critérios de elegibilidade;</li>
+<li>integrações;</li>
+<li>notificações;</li>
+<li>métricas;</li>
+<li>recomendações;</li>
+<li>permissões;</li>
+<li>entitlements;</li>
+<li>regras de plano;</li>
+<li>persistência.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>GKR
+→ FONTE DE VERDADE
+
+IA
+→ CONSUMIDORA
+
+LACUNA
+→ SINALIZAR
+→ NÃO INVENTAR
+</code></pre></div>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-20-criterios-de-aceite">20. Critérios de aceite<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-20-criterios-de-aceite" title="Permanent link">&para;</a></h2>
+<p>O contrato é preservado quando a materialização futura:</p>
+<ol>
+<li>identifica claramente a Organização e o contexto ativo;</li>
+<li>verifica autoridade antes de ação material;</li>
+<li>mantém <code>ORG-002</code> separado de <code>ORG-003</code>;</li>
+<li>permite compreender, preencher e revisar os dados materiais sustentados pelas autoridades;</li>
+<li>preserva rascunho/cancelamento/retorno conforme estado;</li>
+<li>não confunde envio com aprovação ou ativação;</li>
+<li>distingue informação declarada, inferida, desconhecida e contestada quando aplicável;</li>
+<li>trata falha e resultado indeterminado sem duplicar efeito;</li>
+<li>não inventa quota, entitlement ou regra de plano;</li>
+<li>não promete distribuição, relevância ou impacto;</li>
+<li>preserva privacidade e minimização;</li>
+<li>não transforma low-fidelity em baseline visual obrigatório;</li>
+<li>não amplia escopo por IA;</li>
+<li>não promove maturidade de <code>ORG-002</code>, <code>TRN-201</code> ou <code>TRN-202</code>.</li>
+</ol>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-21-lacunas-preservadas">21. Lacunas preservadas<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-21-lacunas-preservadas" title="Permanent link">&para;</a></h2>
+<p>Este Master não resolve por inferência:</p>
+<ul>
+<li>integração técnica final com descoberta;</li>
+<li>materialização high-fidelity final;</li>
+<li>regras técnicas de RBAC;</li>
+<li>persistência;</li>
+<li>integrações externas;</li>
+<li>notificações;</li>
+<li>critérios adicionais não documentados;</li>
+<li>entitlement técnico;</li>
+<li>implementação;</li>
+<li>Product Engineering.</li>
+</ul>
+<p>Lacunas devem permanecer explícitas até autoridade própria.</p>
+<h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-22-estado-documental">22. Estado documental<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master-22-estado-documental" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>MASTER
+→ DRAFT / FUNCTIONAL CONTRACT CANDIDATE
+
+SURFACE GOVERNED
+→ GKR-SURF-ORG-002
+
+ORIGIN
+→ GKR-SURF-ORG-001 / GKR-TRN-201
+
+NEXT RESPONSIBILITY
+→ GKR-SURF-ORG-003 / GKR-TRN-202
+
+COLLECTIVE EQUIVALENT
+→ NONE BY INFERENCE
+
+NEW SURFACE ID
+→ NONE
+
+NEW TRANSITION ID
+→ NONE
+
+MATURITY PROMOTION
+→ NONE
+
+LOW-FIDELITY
+→ FUNCTIONAL EVIDENCE / NOT VISUAL BASELINE
+
+PROTOTYPE
+→ NOT AUTHORIZED BY THIS MASTER
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
 </code></pre></div></section></section></section>
                     <section class='print-page md-section' id='section-10' heading-number='10'>
                         <h1>Research e Validação<a class='headerlink' href='#section-10' title='Permanent link'></a>
@@ -54520,6 +54974,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 
 .print-site-enumerate-headings #section-9-4 > h1:before { content: '9.4 ' }
 .print-site-enumerate-headings #experience-architecture-organizations-collectives-journey-overview-start-master > h1:before { content: '9.4.1 ' }
+
+.print-site-enumerate-headings #experience-architecture-organizations-collectives-journey-organization-opportunity-registration-master > h1:before { content: '9.4.2 ' }
 
 .print-site-enumerate-headings #section-10 > h1:before { content: '10 ' }
 .print-site-enumerate-headings #research > h1:before { content: '10.1 ' }
