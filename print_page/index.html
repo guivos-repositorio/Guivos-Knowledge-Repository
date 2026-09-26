@@ -27651,20 +27651,20 @@ CONTROLE
 <p>A remediação deve preservar opcionalidade, possibilidade de pular/não saber/não informar, revisão, interrupção e continuidade consciente.</p>
 <p>A adjudicação posterior desta frente concluiu que a lacuna possui job, estados, captura voluntária de respostas, revisão, falhas/recuperação, reversibilidade e handoff próprios. O contrato candidato <code>PER-014 — Perguntas Opcionais Guiadas</code> governa <code>PER-003 / Perguntas Opcionais → TRN-016 → PER-014 → TRN-017 → PER-005</code>, preservando <code>PER-004</code> para Texto/Voz, <code>PER-005</code> como gate de autorização e <code>PER-006</code> como processamento posterior.</p>
 <h3 id="experience-architecture-person-journey-functional-completeness-authority-63-salvar-oportunidade">6.3 Salvar oportunidade<a class="headerlink" href="#experience-architecture-person-journey-functional-completeness-authority-63-salvar-oportunidade" title="Permanent link">&para;</a></h3>
-<p><code>PER-203</code> reconhece Salvar para considerar como alternativa legítima quando autorizada, mas não define implementação ou handoff.</p>
+<p><code>PER-203</code> reconhece Salvar para considerar como alternativa legítima quando autorizada e seu contrato corrente passa a governar preservação, confirmação, consulta posterior, remoção e tratamento de mudança, expiração ou indisponibilidade, sem criar novo handoff.</p>
 <div class="highlight"><pre><span></span><code>SALVAR
 → B — PARCIAL
 → NÃO EXIGE NOVA SUPERFÍCIE POR PADRÃO
 </code></pre></div>
 <p>Salvar não significa inscrição, reserva, compra, prioridade, resultado ou aceite de publicidade.</p>
-<p>A remediação deve definir ao menos preservação, consulta posterior, remoção e tratamento de oportunidade alterada, expirada ou removida.</p>
+<p>A adjudicação concluiu que Salvar permanece controle/estado de <code>PER-203</code>. Uma futura responsabilidade para organizar múltiplos itens salvos só poderá ser criada se um job próprio for comprovado; não é inferida deste contrato.</p>
 <h3 id="experience-architecture-person-journey-functional-completeness-authority-64-comparar-oportunidades">6.4 Comparar oportunidades<a class="headerlink" href="#experience-architecture-person-journey-functional-completeness-authority-64-comparar-oportunidades" title="Permanent link">&para;</a></h3>
-<p><code>PER-203</code> reconhece Comparar, mas não cria superfície ou transição.</p>
+<p><code>PER-203</code> reconhece Comparar e seu contrato corrente passa a governar seleção contextual, dimensões comparáveis, dados ausentes, remoção e retorno, sem criar superfície ou transição.</p>
 <div class="highlight"><pre><span></span><code>COMPARAR
 → B — PARCIAL
 → NOVA SUPERFÍCIE NÃO ADJUDICADA
 </code></pre></div>
-<p>Antes de qualquer novo <code>PER-ID</code>, devem ser definidos seleção, duração, persistência, dimensões comparáveis, dados ausentes, remoção, retorno e comportamento entre contextos diferentes.</p>
+<p>A adjudicação concluiu que Comparar permanece capacidade/estado contextual de <code>PER-203</code>. Persistência entre sessões, coleção comparativa permanente, histórico e sincronização não são presumidos; somente evidência futura de job próprio poderá justificar nova responsabilidade.</p>
 <p>Comparação não produz vencedor universal.</p>
 <h3 id="experience-architecture-person-journey-functional-completeness-authority-65-controles-do-vinculo-com-coletivos">6.5 Controles do vínculo com Coletivos<a class="headerlink" href="#experience-architecture-person-journey-functional-completeness-authority-65-controles-do-vinculo-com-coletivos" title="Permanent link">&para;</a></h3>
 <p><code>PER-108</code> reconhece, conforme autoridade corrente:</p>
@@ -33568,18 +33568,58 @@ EVOLUÇÃO
 <p>Quando houver condição de acessibilidade da própria oportunidade, ela deve ser apresentada proporcionalmente e sem inferir necessidades pessoais não autorizadas.</p>
 <h2 id="experience-architecture-person-journey-per-203-opportunity-detail-master-14-salvar-para-considerar">14. Salvar para considerar<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-14-salvar-para-considerar" title="Permanent link">&para;</a></h2>
 <p>Salvar é alternativa legítima quando a capacidade estiver autorizada no contexto.</p>
-<p>Salvar deve significar preservação para análise posterior, não:</p>
+<p>Salvar significa <strong>preservar a referência da oportunidade para análise posterior</strong>. Não significa:</p>
 <ul>
 <li>inscrição;</li>
 <li>reserva;</li>
 <li>compra;</li>
 <li>prioridade;</li>
 <li>resultado;</li>
-<li>aceitação de publicidade.</li>
+<li>aceitação de publicidade;</li>
+<li>garantia de disponibilidade futura.</li>
 </ul>
-<p>Este Master não cria novo handoff para Salvar.</p>
+<h3 id="experience-architecture-person-journey-per-203-opportunity-detail-master-141-ciclo-funcional-de-salvar">14.1 Ciclo funcional de Salvar<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-141-ciclo-funcional-de-salvar" title="Permanent link">&para;</a></h3>
+<p>Quando a capacidade estiver disponível, <code>PER-203</code> deve governar o ciclo mínimo:</p>
+<div class="highlight"><pre><span></span><code>OPORTUNIDADE NÃO SALVA
+→ AÇÃO CONSCIENTE DE SALVAR
+→ ESTADO SALVO CONFIRMADO
+→ CONSULTA POSTERIOR QUANDO LEGITIMAMENTE DISPONÍVEL
+→ REMOÇÃO CONSCIENTE
+</code></pre></div>
+<p>A experiência deve distinguir:</p>
+<ul>
+<li>não salva;</li>
+<li>salvamento em processamento, quando material;</li>
+<li>salva e confirmada;</li>
+<li>falha recuperável;</li>
+<li>estado indeterminado, quando não houver confirmação suficiente;</li>
+<li>remoção solicitada;</li>
+<li>remoção confirmada.</li>
+</ul>
+<p>Repetir Salvar não deve duplicar silenciosamente o mesmo vínculo lógico.</p>
+<h3 id="experience-architecture-person-journey-per-203-opportunity-detail-master-142-consulta-posterior-e-mudanca-da-oportunidade">14.2 Consulta posterior e mudança da oportunidade<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-142-consulta-posterior-e-mudanca-da-oportunidade" title="Permanent link">&para;</a></h3>
+<p>Salvar preserva referência para consideração futura; não congela a oportunidade.</p>
+<p>Quando a Pessoa voltar a uma oportunidade salva:</p>
+<ul>
+<li>o estado corrente deve ser reconsultado quando houver autoridade e dado atual;</li>
+<li>alteração material deve ser distinguível;</li>
+<li>expiração deve ser explícita;</li>
+<li>indisponibilidade não deve ser apresentada como decisão da Pessoa;</li>
+<li>remoção pelo responsável/origem deve ser tratada como indisponibilidade da oportunidade, não como falha pessoal;</li>
+<li>conteúdo histórico só pode permanecer quando houver fundamento, finalidade e política aplicáveis.</li>
+</ul>
+<p>Este contrato <strong>não cria automaticamente uma superfície de “Oportunidades Salvas”</strong>. Uma futura responsabilidade de organização de múltiplos itens só poderá ser adjudicada se existir job próprio que não caiba no contexto atual.</p>
+<h3 id="experience-architecture-person-journey-per-203-opportunity-detail-master-143-remover-dos-salvos">14.3 Remover dos salvos<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-143-remover-dos-salvos" title="Permanent link">&para;</a></h3>
+<p>A Pessoa deve poder remover conscientemente uma oportunidade salva.</p>
+<p>Remover dos salvos:</p>
+<div class="highlight"><pre><span></span><code>≠ RECUSAR A OPORTUNIDADE
+≠ CANCELAR INSCRIÇÃO
+≠ APAGAR A OPORTUNIDADE NA ORIGEM
+≠ ALTERAR BND-001
+</code></pre></div>
+<p>Este Master não cria novo handoff ou <code>TRN-ID</code> para Salvar.</p>
 <h2 id="experience-architecture-person-journey-per-203-opportunity-detail-master-15-comparar">15. Comparar<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-15-comparar" title="Permanent link">&para;</a></h2>
-<p>Comparação é alternativa legítima quando a capacidade estiver autorizada.</p>
+<p>Comparação é alternativa legítima quando a capacidade estiver autorizada e deve permanecer sob decisão da Pessoa.</p>
 <p>Pode considerar aspectos materialmente comparáveis como:</p>
 <ul>
 <li>custo;</li>
@@ -33592,8 +33632,39 @@ EVOLUÇÃO
 <li>cancelamento.</li>
 </ul>
 <p>Comparação não deve produzir vencedor universal.</p>
-<p>Dados ausentes e diferenças de contexto devem permanecer explícitos.</p>
-<p>Este Master não cria nova superfície ou transição de comparação.</p>
+<h3 id="experience-architecture-person-journey-per-203-opportunity-detail-master-151-ciclo-funcional-de-comparar">15.1 Ciclo funcional de Comparar<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-151-ciclo-funcional-de-comparar" title="Permanent link">&para;</a></h3>
+<p>Quando a capacidade estiver disponível, <code>PER-203</code> deve permitir, de forma contextual:</p>
+<div class="highlight"><pre><span></span><code>OPORTUNIDADE EM ANÁLISE
+→ SELECIONAR PARA COMPARAÇÃO
+→ ADICIONAR OUTRA OPORTUNIDADE LEGÍTIMA
+→ REVISAR DIMENSÕES COMPARÁVEIS
+→ REMOVER ITEM DA COMPARAÇÃO
+→ RETORNAR À ANÁLISE
+</code></pre></div>
+<p>A seleção para comparação não cria inscrição, preferência permanente, ranking ou recomendação automática.</p>
+<h3 id="experience-architecture-person-journey-per-203-opportunity-detail-master-152-dimensoes-e-dados-ausentes">15.2 Dimensões e dados ausentes<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-152-dimensoes-e-dados-ausentes" title="Permanent link">&para;</a></h3>
+<p>A comparação deve:</p>
+<ul>
+<li>comparar somente dimensões materialmente compatíveis;</li>
+<li>identificar diferenças de unidade, período, local, condição ou escopo;</li>
+<li>preservar contexto suficiente para evitar equivalência falsa;</li>
+<li>mostrar dado ausente como ausente;</li>
+<li>distinguir “não aplicável” de “não informado” quando houver autoridade para isso;</li>
+<li>não converter ausência em resultado negativo;</li>
+<li>não preencher lacunas com inferência apresentada como fato.</li>
+</ul>
+<h3 id="experience-architecture-person-journey-per-203-opportunity-detail-master-153-duracao-e-persistencia">15.3 Duração e persistência<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-153-duracao-e-persistencia" title="Permanent link">&para;</a></h3>
+<p>O contrato corrente admite comparação contextual dentro da responsabilidade de <code>PER-203</code>.</p>
+<p>Persistência entre sessões, coleção comparativa permanente, limite de itens, sincronização entre dispositivos ou histórico de comparações <strong>não são presumidos</strong> por este Master.</p>
+<p>Se uma implementação futura oferecer persistência, ela deverá possuir finalidade, controle de remoção, estado recuperável e política de retenção compatíveis.</p>
+<h3 id="experience-architecture-person-journey-per-203-opportunity-detail-master-154-resultado-da-comparacao">15.4 Resultado da comparação<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-154-resultado-da-comparacao" title="Permanent link">&para;</a></h3>
+<p>A comparação pode ajudar a Pessoa a compreender diferenças e trade-offs, mas:</p>
+<div class="highlight"><pre><span></span><code>COMPARAR ≠ RANQUEAR
+COMPARAR ≠ ESCOLHER VENCEDOR UNIVERSAL
+COMPARAR ≠ DECIDIR PELA PESSOA
+</code></pre></div>
+<p>Ordenação objetiva só pode existir quando baseada em critério explícito escolhido ou compreendido pela Pessoa e não deve ser apresentada como valor universal da oportunidade.</p>
+<p>Este Master não cria nova superfície, novo handoff ou <code>TRN-ID</code> para Comparar.</p>
 <h2 id="experience-architecture-person-journey-per-203-opportunity-detail-master-16-contestar-corrigir-e-recusar">16. Contestar, corrigir e recusar<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-16-contestar-corrigir-e-recusar" title="Permanent link">&para;</a></h2>
 <p>A Pessoa deve poder não prosseguir.</p>
 <p>Quando aplicável, deve conseguir:</p>
