@@ -243,7 +243,7 @@ ESCOLHER ARQUIVO
 → NÃO AUTORIZA EXTRAÇÃO
 ```
 
-A continuidade downstream específica dessa modalidade ainda não está contratada na topologia corrente e não pode ser inventada por Design ou IA.
+A continuidade downstream de Arquivo passa a possuir contrato funcional candidato em `PER-013`, por `TRN-014` e `TRN-015`. Isso não implementa upload nem autoriza processamento material; Design ou IA não podem ampliar esse contrato por inferência.
 
 ## 11. Modalidade Perguntas Opcionais
 
@@ -347,7 +347,7 @@ A superfície deve tornar compreensível:
 - que Texto não inicia análise;
 - que é possível voltar ou interromper;
 - que combinar modalidades é opcional;
-- que a continuidade downstream de arquivo/perguntas ainda não está integralmente contratada no GKR.
+- que Arquivo possui contrato candidato em `PER-013`, enquanto a continuidade downstream de Perguntas Opcionais ainda não está integralmente contratada no GKR.
 
 ## 16. Informações que não devem ser exigidas
 
@@ -539,7 +539,7 @@ A IA não pode:
 - iniciar upload automaticamente;
 - inferir preferência;
 - inventar benefício de uma modalidade;
-- inventar continuidade downstream para arquivo/perguntas;
+- inventar continuidade além do contrato candidato de Arquivo ou para Perguntas Opcionais;
 - criar novo `PER-ID`;
 - materializar `PER-004` como se já estivesse documentada por este Master.
 
@@ -558,7 +558,7 @@ Uma futura solução visual de `PER-003` é aceitável quando:
 9. a Pessoa consegue voltar ou interromper;
 10. é possível trocar a escolha antes da captura;
 11. o handoff `TRN-003 → PER-004` é preservado como continuidade parcial para texto/voz;
-12. a lacuna downstream de arquivo/perguntas é preservada, não inventada;
+12. o contrato candidato de Arquivo é preservado sem ampliação e a lacuna downstream de Perguntas Opcionais permanece não inventada;
 13. nenhuma autorização material é inferida;
 14. nenhuma preferência é inferida sem autoridade;
 15. indisponibilidade possui fallback explícito e não coercitivo;
@@ -581,7 +581,7 @@ Este Documento Mestre não:
 - implementa upload;
 - define formatos de arquivo;
 - implementa fluxo de perguntas;
-- fecha a continuidade downstream de arquivo/perguntas;
+- promove a continuidade de Arquivo além do contrato candidato ou fecha a continuidade de Perguntas Opcionais;
 - define persistência da escolha;
 - altera `TRN-002` ou `TRN-003`;
 - cria nova superfície;
