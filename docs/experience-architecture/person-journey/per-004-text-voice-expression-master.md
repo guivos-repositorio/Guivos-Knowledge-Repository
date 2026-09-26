@@ -91,7 +91,7 @@ PER-003 / VOZ
 → PER-004 / EXPRESSÃO POR VOZ
 ```
 
-As escolhas Arquivo e Perguntas Opcionais permanecem válidas em `PER-003`, mas sua continuidade downstream específica ainda não está integralmente contratada.
+As escolhas Arquivo e Perguntas Opcionais permanecem válidas em `PER-003`; suas continuidades candidatas são governadas respectivamente por `PER-013` e `PER-014`, sem absorção por `PER-004`.
 
 Portanto:
 
@@ -109,7 +109,7 @@ Existem dois conceitos diferentes que não podem ser confundidos.
 
 São uma modalidade validada de início em `PER-003`.
 
-Sua continuidade downstream própria ainda não está integralmente contratada.
+Sua continuidade candidata própria é governada por `PER-014`, sem alterar a natureza da pergunta adaptativa de apoio deste Master.
 
 ### 4.2 Pergunta adaptativa em PER-004
 
