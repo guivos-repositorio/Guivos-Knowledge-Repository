@@ -8,6 +8,7 @@ last_updated: 2026-09-26
 normative: false
 maturity: current_surface_design_definition
 depends_on:
+  - GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
   - GKR-PLANS-PERSON-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
