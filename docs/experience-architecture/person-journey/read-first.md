@@ -187,7 +187,7 @@ A coleção de Surface Masters está concluída em `26 / 26`, mas essa contagem 
 
 A autoridade `GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001` governa essa distinção e registra os findings correntes de completude funcional.
 
-A primeira remediação adjudicada introduz o contrato candidato `PER-013 — Captura e Revisão de Arquivo`, entre `PER-003 / Arquivo` e `PER-005`. Essa extensão pós-auditoria não altera retroativamente o marco `26 / 26` da coleção original.
+As duas primeiras remediações adjudicadas introduzem os contratos candidatos `PER-013 — Captura e Revisão de Arquivo` e `PER-014 — Perguntas Opcionais Guiadas`, ambos entre modalidades próprias de `PER-003` e `PER-005`. Essas extensões pós-auditoria não alteram retroativamente o marco `26 / 26` da coleção original.
 
 ```text
 26 / 26 SURFACE MASTERS
