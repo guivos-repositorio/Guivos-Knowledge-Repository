@@ -358,7 +358,7 @@ A matriz abaixo governa a classificação mínima que cada `LEIA-PRIMEIRO / SOUR
 #### Guivos Media
 
 - `CANONICAL` — tese editorial; pergunta-mãe **“O que você pode descobrir quando vê além do que já conhece?”**; curadoria antes de cronologia; 11 movimentos; descoberta antes de classificação; Media ≠ Blog/portal/feed/streaming.
-- `DESIGN_CREATIVE` — direção editorial, tipografia, imagem, vídeo, ritmo, navegação, busca, motion e maneira de dar hierarquia ao conteúdo.
+- `DESIGN_CREATIVE` — direção editorial, aplicação da tipografia oficial, imagem, vídeo, ritmo, navegação, busca, motion e maneira de dar hierarquia ao conteúdo.
 - `DESIGN_HYPOTHESIS` — alternativas de curadoria, destaque, descoberta, busca, agrupamento editorial e continuidade entre conteúdos que podem ser testadas sem transformar Media em feed, portal, streaming ou catálogo de formatos.
 - `CONTENT_CANDIDATE` — headlines, labels e formulações editoriais não congeladas.
 - `PROTOTYPE_PLACEHOLDER` — conteúdo de destaque, história, autor, imagem e vídeo usados para testar composição.
