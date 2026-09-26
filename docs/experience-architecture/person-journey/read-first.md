@@ -2,7 +2,7 @@
 id: GKR-UX-PERSON-JOURNEY-READ-FIRST-001
 title: Jornada da Pessoa — Leia Primeiro para Design e IA
 status: active
-version: 0.1.19
+version: 0.1.20
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 normative: false
@@ -12,6 +12,7 @@ depends_on:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
+  - GKR-UX-PERSON-JOURNEY-ORCHESTRATION-001
   - GKR-UX-PERSON-JOURNEY-FLOW-001
   - GKR-UX-HOME-MASTER-001
 ---
@@ -57,7 +58,21 @@ Para cada superfície, a leitura deve partir de:
 
 A Home pública continua governada por `GKR-UX-HOME-MASTER-001`.
 
-## 3. Regra de granularidade
+## 3. Documento Mestre de Orquestração UX/UI
+
+Antes de materializar a Journey ponta a ponta, consumir `GKR-UX-PERSON-JOURNEY-ORCHESTRATION-001`.
+
+Ele governa a conexão entre as responsabilidades: continuidade, comportamento do sistema, plano vigente, oportunidades, limites de capacidade, comunicação de upgrade, ofuscamento legítimo e estados transversais. Os Masters individuais continuam governando cada responsabilidade local.
+
+```text
+LEIA PRIMEIRO
+→ ORQUESTRAÇÃO UX/UI
+→ FLUXO COMPLETO
+→ MASTER DA SUPERFÍCIE
+→ PROTOTIPAÇÃO
+```
+
+## 11. Regra de granularidade
 
 Um documento desta coleção corresponde a **uma superfície ou responsabilidade funcional já reconhecida pelo Registry**.
 
