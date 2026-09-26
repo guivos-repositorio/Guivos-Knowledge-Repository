@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: active
-version: 0.23.18
+version: 0.23.19
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 related:
@@ -111,6 +111,7 @@ Entrada:
 - `GKR-UX-PER102-MASTER-001` — Documento Mestre de `PER-102 — Resultados de Busca de Coletivos`.
 - `GKR-UX-PER103-MASTER-001` — Documento Mestre de `PER-103 — Perfil Público do Coletivo`.
 - `GKR-UX-PER104-MASTER-001` — Documento Mestre de `PER-104 — Revisão e Solicitação`.
+- `GKR-UX-PER105-MASTER-001` — Documento Mestre de `PER-105 — Solicitação Pendente`.
 
 A coleção não cria telas por inferência. Cada Documento Mestre deve corresponder a uma superfície/responsabilidade já reconhecida pelo Registry e preservar estados internos dentro dessa mesma responsabilidade quando não existir novo `PER-ID`.
 
