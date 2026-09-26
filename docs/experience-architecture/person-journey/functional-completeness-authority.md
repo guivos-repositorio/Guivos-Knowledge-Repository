@@ -278,6 +278,17 @@ CAPACIDADE NO PLANO
 
 Divergências devem ser resolvidas sem inventar capacidade, preço, entitlement ou superfície.
 
+A reconciliação da sexta frente localiza responsabilidades para entrada/compreensão, jornada essencial, descoberta, filtros, histórico distribuído, controles administrativos e Salvar. Diferenciações de cotas/uso justo/profundidade de correspondências, níveis de exportação, alertas/lembretes/acompanhamento ampliado, níveis de Intelligence/processamento, integrações, relatórios pessoais, suporte e acesso antecipado permanecem benefícios comerciais cuja execução depende das autoridades específicas de entitlement/capacidade quando necessárias. A ausência dessas autoridades não autoriza inventar comportamento, limite, menu, superfície ou disponibilidade.
+
+```text
+PLANOS × JOURNEY
+→ RASTREABILIDADE FUNCIONAL RECONCILIADA
+→ DIFERENCIAÇÕES NÃO CONTRATADAS EXPLICITAMENTE LIMITADAS
+→ NOVO PER-ID = NONE
+→ NOVO TRN-ID = NONE
+→ PRODUCT ENGINEERING = NOT RELEASED
+```
+
 ## 11. Sequência de remediação
 
 A existência desta autoridade não autoriza automaticamente mutações subsequentes.

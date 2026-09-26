@@ -102,6 +102,42 @@ depends_on:
 | Intelligence | essencial | ampliada | avançada |
 | Suporte | padrão | ampliado | prioritário |
 
+## Rastreabilidade funcional na Jornada da Pessoa
+
+A taxonomia e os benefícios comerciais acima não significam, por si só, que toda diferenciação esteja pronta para execução. A rastreabilidade corrente é:
+
+| Capacidade comercial | Responsabilidade funcional localizável | Estado de execução documental |
+|---|---|---|
+| Página Inicial, início protegido e compreensão inicial | `PER-001..007` | localizada no escopo corrente |
+| jornada essencial, objetivos, próximos passos e evolução | `PER-008, PER-010..012` | localizada no escopo corrente |
+| Explorar, Mapa, Lista e Detalhe de oportunidades | `PER-201..203` | localizada no escopo corrente |
+| filtros e descoberta | `PER-201..202` | responsabilidade localizada; diferenciação básica/avançada/combinada não autoriza inventar regras de entitlement |
+| correspondências personalizadas e explicação da relação | Journey/descoberta e contexto autorizado | responsabilidade conceitualmente localizável; cotas, uso justo e profundidade por plano exigem contrato de entitlement/processamento antes da execução |
+| histórico | `PER-008, PER-010..012` | responsabilidade distribuída; níveis essencial/ampliado/relatórios não criam Central de Histórico |
+| controles de dados, permissões, correção, exportação, exclusão e saída | `PER-009` + controles contextuais do objeto | ciclos administrativos localizados; níveis de exportação ainda dependem de contrato de entitlement/formato |
+| salvar oportunidade | `PER-203` | ciclo funcional localizado; não equivale a “planos salvos” de acompanhamento pessoal |
+| alertas, lembretes e acompanhamento ampliado | responsabilidades contextuais quando existentes | diferenciação comercial ainda não possui contrato funcional transversal suficiente; não liberada para execução por esta página |
+| processamento e Intelligence | responsabilidades da Journey que consumam processamento autorizado | níveis essencial/ampliado/avançado dependem de autoridade de entitlement/capacidade; não inventar limites |
+| integrações | somente onde houver integração autorizada e autoridade própria | níveis limitada/ampliada ainda não constituem contrato funcional executável |
+| relatórios pessoais | evolução/histórico podem fornecer dados legítimos | produto/escopo de relatório por plano ainda não contratado funcionalmente |
+| suporte | fora da topologia de superfícies da Journey até autoridade própria | níveis padrão/ampliado/prioritário são diferenciação comercial, não nova superfície da Pessoa |
+| acesso antecipado | capacidade aprovada para teste, quando aplicável e informado | condicionado à aprovação específica; não cria direito a capacidade inexistente |
+
+Regra de consumo:
+
+```text
+BENEFÍCIO COMERCIAL
+≠ ENTITLEMENT IMPLEMENTADO
+≠ EXPERIÊNCIA IMPLEMENTADA
+
+BENEFÍCIO COMERCIAL
+→ RESPONSABILIDADE FUNCIONAL LOCALIZÁVEL
+→ AUTORIDADE DE ENTITLEMENT/CAPACIDADE QUANDO NECESSÁRIA
+→ IMPLEMENTAÇÃO SOMENTE APÓS GATES APLICÁVEIS
+```
+
+Esta matriz não altera preços, não cria benefício, não remove benefício e não libera Product Engineering.
+
 ## Estado comercial
 
 Os preços e benefícios integram a baseline comercial de referência vigente. Cobrança, oferta pública e condições finais permanecem sujeitas aos gates comerciais, jurídicos, fiscais e operacionais aplicáveis.
