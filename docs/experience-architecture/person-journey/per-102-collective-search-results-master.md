@@ -2,7 +2,7 @@
 id: GKR-UX-PER102-MASTER-001
 title: Jornada da Pessoa — PER-102 — Resultados de Busca de Coletivos — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.1.1
 maturity: current_surface_design_definition
 depends_on:
   - UXA-056
@@ -144,6 +144,7 @@ Publicidade:
 - não recebe aparência de relevância neutra;
 - não implica confiança, legitimidade ou adequação;
 - não substitui ausência de resultado orgânico;
+- não substitui nem ocupa o lugar do primeiro resultado orgânico quando resultados orgânicos existirem;
 - não utiliza contexto sensível sem autoridade própria.
 
 A compra de plano ou relação comercial não pode elevar silenciosamente um Coletivo no conjunto orgânico.
@@ -364,7 +365,7 @@ Uma futura solução visual é funcionalmente aceitável quando:
 3. respeita visibilidade e encontrabilidade;
 4. protege Coletivos sensíveis;
 5. não exige localização precisa;
-6. distingue publicidade de resultado orgânico;
+6. distingue publicidade de resultado orgânico e preserva o primeiro resultado orgânico contra substituição patrocinada;
 7. não permite que compra de plano, publicidade ou popularidade dominem ordenação orgânica;
 8. não define ranking universal como autoridade;
 9. governa carregamento sem fabricar resultados;
@@ -403,7 +404,7 @@ Lacunas permanecem explícitas e não podem ser completadas por inferência.
 
 ```text
 PER-102 MASTER
-→ GKR-UX-PER102-MASTER-001 v0.1.0
+→ GKR-UX-PER102-MASTER-001 v0.1.1
 → CURRENT SURFACE DESIGN DEFINITION
 
 TRN-101
