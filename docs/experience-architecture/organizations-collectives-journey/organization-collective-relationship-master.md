@@ -238,6 +238,11 @@ Quando materialmente aplicáveis, devem permanecer distinguíveis:
 - recurso indisponível;
 - dado ou consentimento ausente;
 - conflito de interesse;
+- uso de marca contestado;
+- relação comercial não declarada;
+- risco de perda de autonomia;
+- baixa conectividade;
+- operação internacional;
 - denúncia em análise;
 - suspensão urgente;
 - renovação pendente;
@@ -342,7 +347,22 @@ Design possui liberdade criativa, mas não pode:
 - inventar transições, scores ou autoridade;
 - usar low-fidelity como baseline visual canônica.
 
-## 19. IA — source lock
+## 19. Acessibilidade
+
+Estado, autoridade, versão, proteção, efeito e consequência material devem permanecer perceptíveis e compreensíveis sem depender exclusivamente de cor, ícone, posição, densidade visual, animação, movimento ou outro único canal sensorial.
+
+A superfície deve preservar, quando aplicável:
+
+- identificação textual ou semanticamente equivalente do estado;
+- distinção compreensível entre proposta, negociação, aprovação, relação ativa, alteração pendente, pausa, contestação e encerramento;
+- identificação da autoridade e da versão material relevante;
+- comunicação acessível de risco, proteção, erro, indeterminação e ação necessária;
+- confirmação e reversibilidade perceptíveis para ações materiais;
+- leitura e operação compatíveis com tecnologias assistivas e diferentes formas de interação.
+
+Acessibilidade não reduz requisitos de autoridade, consentimento, proteção ou confirmação.
+
+## 20. IA — source lock
 
 IA não pode inventar:
 
@@ -362,7 +382,7 @@ LACUNA
 → NÃO INVENTAR
 ```
 
-## 20. Critérios de aceite
+## 21. Critérios de aceite
 
 1. ORG-004, ORG-005 e ORG-006 mantêm responsabilidades distintas;
 2. todas operam o mesmo objeto bilateral compartilhado com COL-008;
@@ -377,7 +397,7 @@ LACUNA
 11. relação não vira impacto;
 12. Organização↔Organização permanece lacuna explícita.
 
-## 21. Lacunas preservadas
+## 22. Lacunas preservadas
 
 Permanecem abertas:
 
@@ -390,7 +410,7 @@ Permanecem abertas:
 - analytics/KPIs;
 - Organização↔Organização.
 
-## 22. Fechamento documental
+## 23. Fechamento documental
 
 ```text
 SURFACES GOVERNED
