@@ -190,13 +190,17 @@ A perspectiva do Coletivo deve distinguir quando materialmente aplicável:
 
 - proposta recusada;
 - autoridade insuficiente;
-- aprovação divergente;
-- informação ausente;
-- dado ou consentimento ausente;
+- aprovação divergente entre as partes;
+- relação ativa sem atenção material;
 - compromisso atrasado;
 - recurso indisponível;
+- dado ou consentimento ausente;
 - conflito de interesse;
-- risco/proteção;
+- denúncia em análise;
+- suspensão urgente;
+- renovação pendente;
+- encerramento solicitado por uma das partes;
+- risco ou condição de proteção;
 - informação sensível protegida;
 - evidência insuficiente;
 - falha recuperável;
@@ -344,7 +348,7 @@ IA não pode inventar:
 - novos critérios de aprovação;
 - autoridade;
 - pesos de decisão;
-- campos obrigatórios além das autoridades;
+- campos obrigatórios além do que os contratos governantes já exigem ou autorizam;
 - lifecycle paralelo;
 - transições;
 - automações;
