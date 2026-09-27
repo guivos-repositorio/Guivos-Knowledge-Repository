@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-COLLECTIVE-001
 title: Detalhamento Obrigatório das Superfícies do Coletivo
 status: active
-version: 0.17.12
+version: 0.17.13
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-25
+last_updated: 2026-09-27
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
 related:
   - UXA-089
