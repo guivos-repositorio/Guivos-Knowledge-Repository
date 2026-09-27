@@ -2,7 +2,7 @@
 id: GKR-UX-PERSON-INTERNAL-OPPORTUNITY-APPLICATION-CONTRACT-001
 title: Jornada da Pessoa — Manifestação de Interesse e Inscrição Interna em Oportunidades — Contrato Funcional Candidato
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-26
 normative: false
@@ -11,6 +11,8 @@ depends_on:
   - GKR-UX-PUBLISHER-APPLICATION-CONTRACT-001
   - GKR-UX-PER203-MASTER-001
   - GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001
+  - GKR-JOURNEY-SURFACE-REGISTRY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
 ---
 
 # Jornada da Pessoa — Manifestação de Interesse e Inscrição Interna em Oportunidades — Contrato Funcional Candidato
@@ -19,7 +21,7 @@ depends_on:
 
 Este documento define a responsabilidade funcional candidata da perspectiva da Pessoa quando uma oportunidade permitir manifestação de interesse ou inscrição **dentro da Guivos**.
 
-Ele governa responsabilidade antes de identidade de superfície.
+A adjudicação posterior confirmou esta responsabilidade como `GKR-SURF-PER-204`, preservando o contrato funcional aqui definido.
 
 ```text
 CONTRATO FUNCIONAL
@@ -32,7 +34,7 @@ PROCESSO INTERNO
 ≠ BND-001
 ```
 
-Nenhum Surface ID ou Transition ID é criado por este contrato.
+A identidade canônica corrente é `GKR-SURF-PER-204`. A entrada interna a partir de `PER-203` é `GKR-TRN-212`; a continuidade externa por `TRN-205 → BND-001` permanece separada.
 
 ## 2. Origem e fronteira com PER-203
 
@@ -44,7 +46,8 @@ Quando a oportunidade oferecer processo interno legítimo, a Pessoa pode iniciar
 PER-203
 → OPORTUNIDADE COM PROCESSO INTERNO LEGÍTIMO
 → AÇÃO CONSCIENTE
-→ RESPONSABILIDADE CANDIDATA DE MANIFESTAÇÃO / INSCRIÇÃO
+→ TRN-212
+→ PER-204 — MANIFESTAÇÃO DE INTERESSE / INSCRIÇÃO INTERNA
 ```
 
 Abrir ou visualizar `PER-203` não cria interesse, inscrição ou candidatura.
@@ -74,7 +77,7 @@ A responsabilidade candidata permite que a Pessoa:
 10. compreender decisão ou encerramento sem promessa de resultado;
 11. retornar à oportunidade e à Journey sem perder contexto legítimo.
 
-Esse job persiste além do ato inicial de `PER-203`; por isso não deve ser absorvido por conveniência pelo Detalhe.
+Esse job persiste além do ato inicial de `PER-203`; por isso foi adjudicado como responsabilidade própria em `PER-204` e não deve ser absorvido por conveniência pelo Detalhe.
 
 ## 4. Dois modos, dois objetos
 
@@ -297,7 +300,7 @@ Retorno não significa:
 - converter processo interno em externo;
 - confirmar resultado.
 
-`PER-203` permanece referência da oportunidade; a responsabilidade candidata governa o objeto bilateral interno.
+`PER-203` permanece referência da oportunidade; `PER-204` governa o objeto bilateral interno. O retorno contextual é necessário, mas não recebe `TRN-213` sem adjudicação própria.
 
 ## 15. Relação com relevância
 
@@ -369,26 +372,19 @@ GAP
 → NÃO INVENTAR
 ```
 
-## 19. Critério para adjudicar identidade de superfície
+## 19. Identidade adjudicada
 
-Um futuro gate poderá decidir novo `PER-ID` somente após confirmar que:
+A responsabilidade satisfaz os critérios de job próprio, estados persistentes, acompanhamento, correção/retirada, recuperação e continuidade independente do Detalhe. O Registry a identifica como `GKR-SURF-PER-204`.
 
-1. o job bilateral persiste além do Detalhe;
-2. há estados próprios após o envio;
-3. existe acompanhamento independente da leitura da oportunidade;
-4. correção, retirada e recuperação pertencem ao objeto bilateral;
-5. o retorno a `PER-203` não elimina essa responsabilidade;
-6. a responsabilidade não cabe legitimamente como estado interno de superfície existente.
+A mudança consciente de responsabilidade a partir de `PER-203` é `GKR-TRN-212`. Isso não cria inscrição por navegação: a oportunidade deve suportar processo interno legítimo e a Pessoa deve escolher prosseguir conscientemente.
 
-Este contrato registra esses elementos como candidatos; não promove identidade por si só.
+O retorno a `PER-203` continua funcionalmente necessário, mas não recebe identidade de transição dedicada por simetria. `TRN-213` permanece não criado até prova de necessidade própria.
 
 ## 20. Lacunas preservadas
 
 Permanecem abertas:
 
-- decisão formal sobre novo Surface ID da Pessoa;
-- Transition ID entre `PER-203` e a responsabilidade interna;
-- eventual retorno dedicado;
+- eventual identidade dedicada para retorno, somente se necessidade própria for comprovada;
 - campos e documentos por tipo de oportunidade;
 - regras específicas de elegibilidade/seleção;
 - notificações;
@@ -404,13 +400,16 @@ Permanecem abertas:
 
 ```text
 RESPONSABILIDADE FUNCIONAL DA PESSOA
-→ CANDIDATA
+→ CONTRATO FUNCIONAL CANDIDATO COM IDENTIDADE ADJUDICADA
 
 SURFACE ID
-→ NONE
+→ GKR-SURF-PER-204
 
-TRANSITION ID
-→ NONE
+TRANSITION ID DE ENTRADA
+→ GKR-TRN-212
+
+TRANSITION ID DE RETORNO DEDICADO
+→ NONE / NÃO JUSTIFICADO
 
 PER-203
 → PRESERVADO

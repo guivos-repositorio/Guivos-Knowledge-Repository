@@ -108,7 +108,7 @@ Os **contextos correntes de experiência tratados nesta arquitetura** são:
 
 | Contexto | IDs próprios neste Registry |
 |---|---:|
-| Pessoa | 29 |
+| Pessoa | 30 |
 | Coletivo | 12 |
 | Organização | 11 |
 | Guivos Business | 0 |
@@ -134,7 +134,7 @@ IDS TÉCNICOS AUXILIARES
 → BND-* = FRONTEIRAS
 ```
 
-O total estrutural permanece **57 IDs**. A contagem não implica que todos estejam materializados ou validados.
+O total estrutural corrente é de **58 IDs**. A contagem não implica que todos estejam materializados ou validados.
 
 ## 4. Inventário principal
 
@@ -165,6 +165,7 @@ O total estrutural permanece **57 IDs**. A contagem não implica que todos estej
 | GKR-SURF-PER-201 | Mapa de Oportunidades | Pessoa/visitante | multicanal | validado | UXA-004; UXA-098 | sem baseline visual corrente | UXA-025; integração UXA-098 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-202 | Lista de Oportunidades | Pessoa/visitante | multicanal | validado | UXA-004 | sem baseline visual corrente | UXA-029; integração UXA-098 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-203 | Detalhe de Oportunidade + revisão consciente de saída | Pessoa/visitante | móvel e computador | **validado** | UXA-004; UXA-098; UXA-101 | sem baseline visual corrente; revisão consciente governada por UXA-101 | UXA-012; entradas UXA-098; **saída UXA-101** | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-204 | Manifestação de Interesse / Inscrição Interna em Oportunidade | Pessoa autenticada quando exigido pelo processo | protegido/multicanal | contrato funcional candidato com identidade adjudicada | GKR-UX-PERSON-INTERNAL-OPPORTUNITY-APPLICATION-CONTRACT-001; GKR-UX-PUBLISHER-APPLICATION-CONTRACT-001; GKR-JOURNEY-TRANSITION-REGISTRY-001 | sem baseline visual corrente | `TRN-212` contratada; implementação não comprovada | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-301 | Planos e comparação da Pessoa | Pessoa autenticada | móvel/protegido | **validado** | GKR-PLANS-PERSON-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente; contrato especializado preservado | maturidade funcional preservada no Registry | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-302 | revisão de contratação da Pessoa | Pessoa/pagador autorizado | móvel/protegido | **validado** | GKR-PLANS-PERSON-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente | maturidade funcional preservada no Registry | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-303 | gestão de downgrade e cancelamento da Pessoa | Pessoa titular | móvel/protegido | **validado** | GKR-PLANS-PERSON-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente | maturidade funcional preservada no Registry | [Pessoa](surface-registry-person-details.md) |

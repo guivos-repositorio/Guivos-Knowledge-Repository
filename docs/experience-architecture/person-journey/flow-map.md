@@ -2,9 +2,9 @@
 id: GKR-UX-PERSON-JOURNEY-FLOW-001
 title: Jornada da Pessoa — Mapa Completo de Superfícies para Design
 status: active
-version: 0.1.20
+version: 0.1.21
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-25
+last_updated: 2026-09-26
 normative: false
 maturity: current_documentation_sequence
 depends_on:
@@ -146,10 +146,15 @@ PER-010 ↔ PER-012
 PER-201 — MAPA DE OPORTUNIDADES
 ↔ PER-202 — LISTA DE OPORTUNIDADES
 → PER-203 — DETALHE DE OPORTUNIDADE
-→ estado de revisão consciente dentro de PER-203
-→ TRN-205
-→ BND-001 — FRONTEIRA EXTERNA
-→ TERCEIRO
+├── processo externo
+│   → estado de revisão consciente dentro de PER-203
+│   → TRN-205
+│   → BND-001 — FRONTEIRA EXTERNA
+│   → TERCEIRO
+└── processo interno legítimo
+    → ação consciente
+    → TRN-212
+    → PER-204 — MANIFESTAÇÃO DE INTERESSE / INSCRIÇÃO INTERNA
 ```
 
 Regras estruturais:
@@ -158,7 +163,10 @@ Regras estruturais:
 - alternar Mapa ↔ Lista não cria nova Journey;
 - a revisão consciente não cria nova superfície;
 - `BND-001` não é tela Guivos;
-- resultado posterior ao handoff pertence ao terceiro.
+- resultado posterior ao handoff externo pertence ao terceiro;
+- `PER-204` governa o objeto bilateral interno após entrada consciente por `TRN-212`;
+- manifestação de interesse, inscrição, elegibilidade, seleção e participação permanecem objetos/estados distintos;
+- retorno contextual de `PER-204` à oportunidade é necessário, mas não cria `TRN-213` sem adjudicação própria.
 
 ## 5. Família de Coletivos na perspectiva da Pessoa
 
@@ -214,6 +222,7 @@ A ordem abaixo prioriza a espinha dorsal da Journey antes das famílias especial
 | 11 | `PER-201` | Mapa de Oportunidades | **construído / current** |
 | 12 | `PER-202` | Lista de Oportunidades | **construído / current** |
 | 13 | `PER-203` | Detalhe de Oportunidade | **construído / current** |
+| 13A | `PER-204` | Manifestação de Interesse / Inscrição Interna | **contrato funcional candidato com identidade adjudicada** |
 | 14 | `PER-101` | Explorar Coletivos | **construído / current** |
 | 15 | `PER-102` | Resultados de Busca de Coletivos | **construído / current** |
 | 16 | `PER-103` | Perfil Público do Coletivo | **construído / current** |
@@ -256,8 +265,8 @@ Exemplos:
 
 ```text
 PERSON SURFACES IN CURRENT REGISTRY
-→ 29
-→ includes PER-013 / PER-014 post-audit extensions
+→ 30
+→ includes PER-013 / PER-014 post-audit extensions and adjudicated PER-204
 
 PER-001
 → ALREADY COVERED BY PUBLIC HOME MASTER

@@ -19,6 +19,7 @@ tags:
   - opportunities
   - detail
   - external-boundary
+  - internal-opportunity-process
   - surface-master
 ---
 
@@ -44,9 +45,14 @@ PER-202 — LISTA
 → PER-203 — DETALHE
 
 PER-203 — DETALHE
-→ ESTADO INTERNO DE REVISÃO CONSCIENTE
-→ TRN-205 / INTEGRALMENTE VALIDADA ATÉ BND-001
-→ BND-001 — AUTORIDADE EXTERNA
+├── PROCESSO EXTERNO
+│   → ESTADO INTERNO DE REVISÃO CONSCIENTE
+│   → TRN-205 / INTEGRALMENTE VALIDADA ATÉ BND-001
+│   → BND-001 — AUTORIDADE EXTERNA
+└── PROCESSO INTERNO LEGÍTIMO
+    → AÇÃO CONSCIENTE DE PROSSEGUIR
+    → TRN-212 / CONTRATADA
+    → PER-204 — MANIFESTAÇÃO DE INTERESSE / INSCRIÇÃO INTERNA
 ```
 
 `BND-001` é fronteira de autoridade, não tela da Guivos.
@@ -68,9 +74,11 @@ A Pessoa precisa conseguir, conforme aplicável:
 15. salvar para considerar quando a capacidade estiver legitimamente disponível;
 16. comparar quando a capacidade estiver legitimamente disponível;
 17. corrigir, contestar, recusar ou não prosseguir;
-18. iniciar conscientemente uma saída externa;
-19. revisar destino, responsável e transferência de dados/contexto antes da saída;
-20. cancelar a saída e permanecer na Guivos;
+18. iniciar conscientemente uma saída externa quando o processo pertencer a terceiro;
+19. revisar destino, responsável e transferência de dados/contexto antes da saída externa;
+20. iniciar conscientemente `TRN-212 → PER-204` quando a oportunidade oferecer processo interno legítimo;
+21. distinguir manifestação de interesse de inscrição, elegibilidade, seleção e participação;
+22. cancelar a continuidade e permanecer no Detalhe antes de qualquer efeito material;
 21. retornar ao contexto de descoberta quando aplicável.
 
 ## 4. Identidade e continuidade
@@ -461,6 +469,29 @@ Antes da saída, a Pessoa deve compreender, quando aplicável:
 7. que preço, disponibilidade, condição ou elegibilidade podem ser revalidados externamente;
 8. que a conclusão externa não é garantida pela Guivos.
 
+
+## 17.1 Continuidade interna para PER-204
+
+Quando a oportunidade oferecer processo interno legítimo, `PER-203` pode apresentar a ação consciente que inicia `GKR-TRN-212 → GKR-SURF-PER-204`.
+
+Essa ramificação não transforma o Detalhe em formulário, candidatura ou acompanhamento. `PER-203` continua responsável por compreender a oportunidade e decidir como prosseguir; `PER-204` passa a governar o objeto bilateral interno.
+
+```text
+VISUALIZAR PER-203
+≠ MANIFESTAR INTERESSE
+≠ INSCREVER-SE
+
+AÇÃO CONSCIENTE PARA PROCESSO INTERNO
+→ TRN-212
+→ PER-204
+```
+
+A entrada deve preservar identidade da oportunidade, publicador, finalidade e somente o contexto necessário à continuidade. Dados da Journey, razões internas de relevância, inferências ou informações sensíveis não atravessam por padrão.
+
+`TRN-205 → BND-001` continua sendo a rota governada aqui para processo externo. A existência de `TRN-212` não altera sua maturidade nem presume que toda oportunidade possua processo interno.
+
+O retorno contextual de `PER-204` à oportunidade é funcionalmente necessário, mas não recebe `TRN-213` sem adjudicação própria.
+
 ## 18. Ação afirmativa
 
 A saída exige ato afirmativo.
@@ -660,8 +691,9 @@ Uma futura solução visual é funcionalmente aceitável quando:
 13. explicita relação comercial material;
 14. preserva alternativas legítimas de salvar/comparar quando aplicáveis;
 15. permite não prosseguir;
-16. mantém revisão consciente como estado de `PER-203`;
-17. exige ação afirmativa antes da saída;
+16. mantém revisão consciente da saída externa como estado de `PER-203`;
+17. distingue processo externo `TRN-205 → BND-001` de processo interno `TRN-212 → PER-204`;
+18. exige ação afirmativa antes de qualquer continuidade material;
 18. identifica destino e responsável;
 19. explicita transferência de dados/contexto;
 20. permite cancelar e permanecer na Guivos;
@@ -690,7 +722,7 @@ Este Master não define:
 - comportamento interno de sistemas terceiros;
 - resultado posterior a `BND-001`;
 - reconciliação externa sem autoridade própria;
-- novos handoffs;
+- novos handoffs além de `TRN-212` sem adjudicação própria;
 - novas superfícies;
 - implementação técnica.
 
@@ -711,6 +743,9 @@ TRN-211
 
 TRN-205
 → INTEGRALLY VALIDATED TO BND-001 / UNCHANGED
+
+TRN-212
+→ CONTRACTED TO PER-204 / INTERNAL PROCESS ONLY
 
 BND-001
 → EXTERNAL AUTHORITY BOUNDARY / NOT A GUIVOS SCREEN

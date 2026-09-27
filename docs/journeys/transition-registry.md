@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.6
+version: 0.29.7
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 related:
@@ -38,7 +38,7 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições correntes das Jornadas Integradas. A maturidade declarada em cada linha é o estado operativo a ser usado por Design e prototipação.
 
-A contagem permanece em **66 transições**. `TRN-008..013` passam a **integralmente validadas**.
+A contagem corrente é de **67 transições**. `TRN-212` formaliza a entrada consciente da Pessoa no processo interno de manifestação de interesse ou inscrição.
 
 ## 2. Convenções de estado
 
@@ -59,10 +59,10 @@ Validação integral documental não comprova implementação técnica nem esten
 |---|---:|
 | jornada pessoal | 13 |
 | Pessoa em Coletivos e operação do responsável | 13 |
-| Organização, oportunidades e relações bilaterais | 11 |
+| Organização, oportunidades e relações bilaterais | 12 |
 | Opportunity Boost | 6 |
 | Planos, cobrança e ciclo de vida | 23 |
-| **Total** | **66** |
+| **Total** | **67** |
 
 ## 4. Jornada pessoal
 
@@ -127,6 +127,7 @@ O modelo corrente não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011
 | GKR-TRN-209 | ORG-006 | ORG-006 | contratada | estados contratuais definidos; revisão/alteração/continuidade ainda não validadas ponta a ponta |
 | GKR-TRN-210 | PER-201 | PER-202 | **integralmente validada** | UXA-098 — mesma consulta/contexto preservados |
 | GKR-TRN-211 | PER-202 | PER-203 | **integralmente validada** | UXA-098 — Lista → Detalhe com identidade e retorno preservados |
+| GKR-TRN-212 | PER-203 | PER-204 | contratada | oportunidade suporta processo interno legítimo + ação consciente; entrada preserva finalidade, publicador e recorte autorizado de dados; não cria elegibilidade, seleção, participação ou resultado |
 
 ### 6.1 Contrato V4 de `GKR-TRN-205`
 
@@ -273,12 +274,13 @@ A correção semântica preservada:
 
 ## 10. Preservações de maturidade
 
-- transições totais permanecem **66**;
+- transições totais correntes são **67**, incluindo `TRN-212` como contratada;
 - `TRN-008..013` estão **integralmente validadas** no limite documental;
 - `TRN-406/407` ficam **contratadas** até materialização suficiente de `PER-009`;
 - `TRN-417/418` e `TRN-427/428` ficam **integralmente validadas** no limite documental de navegação administrativa;
 - `TRN-401..405`, `TRN-411..415` e `TRN-421..425` permanecem localmente validadas;
-- `TRN-205` permanece integralmente validada até `BND-001`;
+- `TRN-205` permanece integralmente validada até `BND-001` para processo externo;
+- `TRN-212` permanece **contratada** para `PER-203 → PER-204`; retorno dedicado não recebe `TRN-213` sem adjudicação própria;
 - nenhum comportamento posterior a `BND-001` é atribuído à Guivos;
 - `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais;
 - validação documental continua distinta de implementação técnica.
