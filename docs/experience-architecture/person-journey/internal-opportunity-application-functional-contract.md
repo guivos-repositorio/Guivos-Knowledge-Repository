@@ -380,7 +380,7 @@ A responsabilidade satisfaz os critérios de job próprio, estados persistentes,
 
 A mudança consciente de responsabilidade a partir de `PER-203` é `GKR-TRN-212`. Isso não cria inscrição por navegação: a oportunidade deve suportar processo interno legítimo e a Pessoa deve escolher prosseguir conscientemente.
 
-O retorno a `PER-203` continua funcionalmente necessário, mas não recebe identidade de transição dedicada por simetria. `TRN-213` permanece não criado até prova de necessidade própria.
+O retorno a `PER-203` continua funcionalmente necessário, mas não recebe identidade de transição dedicada por simetria. `TRN-213` já governa exclusivamente o handoff bilateral inicial consciente `PER-204 → ORG-008`; não deve ser reutilizado para esse retorno contextual.
 
 ## 20. Lacunas preservadas
 
