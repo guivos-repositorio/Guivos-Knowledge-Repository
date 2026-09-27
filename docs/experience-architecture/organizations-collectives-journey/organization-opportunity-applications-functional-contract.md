@@ -2,7 +2,7 @@
 id: GKR-UX-ORG-OPPORTUNITY-APPLICATIONS-CONTRACT-001
 title: Jornada de Organizações e Coletivos — Organização — Manifestações de Interesse e Inscrições em Oportunidades — Contrato Funcional Candidato
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-26
 normative: false
@@ -77,7 +77,7 @@ ORGANIZAÇÃO
 
 A Organização não recebe a Journey, o contexto privado usado para personalização nem as razões internas de relevância.
 
-Este contrato não cria a transição técnica entre `PER-204` e `GKR-SURF-ORG-008`.
+A continuidade bilateral `PER-204 → ORG-008` está formalizada por `GKR-TRN-213`, contratada para o envio consciente e recebimento do mesmo objeto no recorte autorizado. A continuidade institucional `ORG-003 → ORG-008` está formalizada separadamente por `GKR-TRN-214`, sem criar ou receber objeto por si só.
 
 ## 4. Dois objetos operacionais distintos
 
@@ -475,9 +475,8 @@ A identidade `GKR-SURF-ORG-008` foi adjudicada porque os critérios cumulativos 
 
 Permanecem deliberadamente não definidos:
 
-- Transition ID entre `PER-204` e `ORG-008`;
-- eventual transição entre `ORG-003` e `ORG-008`;
-- retorno dedicado;
+- retorno dedicado a partir de `ORG-008`;
+- continuidade bilateral de resposta/atualização que exija transição própria;
 - campos/documentos por oportunidade;
 - critérios de elegibilidade/seleção;
 - automação decisória;
@@ -502,7 +501,9 @@ SURFACE ID
 → ADJUDICADA
 
 TRANSITION IDs
-→ NONE
+→ GKR-TRN-213 = PER-204 → ORG-008 / CONTRATADA
+→ GKR-TRN-214 = ORG-003 → ORG-008 / CONTRATADA
+→ RETORNOS DEDICADOS = NONE
 
 ORG-002
 → PRESERVADO
