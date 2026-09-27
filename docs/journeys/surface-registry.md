@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.36.19
+version: 0.36.20
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-26
 related:
@@ -134,7 +134,7 @@ IDS TÉCNICOS AUXILIARES
 → BND-* = FRONTEIRAS
 ```
 
-O total estrutural corrente é de **59 IDs**. A contagem não implica que todos estejam materializados ou validados.
+O total estrutural corrente é de **61 IDs**. A contagem não implica que todos estejam materializados ou validados.
 
 ## 4. Inventário principal
 
@@ -223,7 +223,7 @@ Guivos Business é produto especializado e constitui um contexto corrente de exp
 
 ## 6. Preservações e correções
 
-- total de IDs permanece **57**;
+- total estrutural corrente: **61 IDs**;
 - `PER-010`, `PER-011` e `PER-012` preservam sua maturidade corrente;
 - `PER-009` permanece contratado e sem materialização própria necessária;
 - a antiga conclusão agregada `121 validados / 0 pendentes` **não é mais vigente**;
