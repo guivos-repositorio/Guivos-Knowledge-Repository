@@ -506,10 +506,10 @@ Transições preservadas:
 
 - `GKR-TRN-105..109`;
 - `GKR-TRN-112`;
-- `COL-003 → COL-004` continua continuidade lógica sem ID estável;
+- `GKR-TRN-114` formaliza `COL-003 → COL-004` como continuidade operacional do mesmo vínculo já formado, sem duplicar aprovação ou persistência técnica;
 - `GKR-TRN-113` continua contratada no recorte `COL-004 → COL-005`.
 
-A navegação não transforma a continuidade lógica `COL-003 → COL-004` em `GKR-TRN-*`.
+A navegação consome `GKR-TRN-114` somente no handoff material já adjudicado; navegação local não cria transições adicionais.
 
 ### 8.4 Governança e Proteção
 
@@ -861,7 +861,7 @@ Podem existir como handoffs contextuais quando houver contrato funcional própri
 | Continuidade | Transições existentes | Tratamento nesta autoridade |
 |---|---|---|
 | oportunidade Organização | `TRN-201..203` | reutilizar; sem promoção |
-| participação Coletivo | `TRN-105..109`, `TRN-112`, `TRN-113` | reutilizar; preservar gap `COL-003 → COL-004` |
+| participação Coletivo | `TRN-105..109`, `TRN-112..114` | reutilizar; `TRN-114` preserva o mesmo vínculo já formado |
 | relação O↔C | `TRN-206..209` | reutilizar; permanecem contratadas |
 | Planos Coletivo | `TRN-417/418` | preservar validada |
 | Planos Organização | `TRN-427/428` | preservar validada |
