@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
 title: Organizações e Coletivos — Mapa de Superfícies da Experiência Autenticada
 status: active
-version: 1.1.3
+version: 1.1.4
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-24
+last_updated: 2026-09-26
 normative: false
 maturity: authenticated_surface_map_defined
 depends_on:
@@ -158,9 +158,10 @@ A maturidade de `GKR-SURF-ORG-001` permanece a do registro central; este mapa n�
 Crosswalk vigente:
 
 - `GKR-SURF-ORG-002` — cadastro de oportunidade;
-- `GKR-SURF-ORG-003` — oportunidade aprovada/ativa.
+- `GKR-SURF-ORG-003` — oportunidade aprovada/ativa;
+- `GKR-SURF-ORG-008` — manifestações de interesse / inscrições em oportunidades, com identidade adjudicada e responsabilidade bilateral própria.
 
-As duas entradas continuam separadas no registro. Este domínio lógico não as funde e não transforma publicação em relevância, distribuição ou impacto.
+As três entradas continuam separadas no registro. Este domínio lógico não as funde. `ORG-008` não amplia `ORG-003`, não concede acesso à Journey da Pessoa e não cria transição por inferência. Publicação também não se transforma em relevância, distribuição ou impacto.
 
 ```text
 OPORTUNIDADE PUBLICADA
@@ -392,7 +393,7 @@ Esta capacidade **não** é uma função genérica de planejamento do Coletivo.
 | Domínio lógico | IDs estáveis relacionados | Tratamento |
 |---|---|---|
 | Organização — Visão Geral | `GKR-SURF-ORG-001` | preservado |
-| Organização — Oportunidades e Programas | `GKR-SURF-ORG-002`, `GKR-SURF-ORG-003` | preservados e separados |
+| Organização — Oportunidades e Programas | `GKR-SURF-ORG-002`, `GKR-SURF-ORG-003`, `GKR-SURF-ORG-008` | preservados e separados; `ORG-008` mantém responsabilidade bilateral própria; transições ainda não adjudicadas |
 | Organização — Relações | `GKR-SURF-ORG-004..006` para Organização–Coletivo; sem ID dedicado para Organização–Organização | `ORG-004..006` preservados no escopo de `UXA-019`; lacuna explícita para relações Organização–Organização |
 | Organização — Responsabilidades e Evidências | `GKR-SURF-ORG-007` | preservado; maturidade não promovida |
 | Organização — Organização e Autoridade | sem ID dedicado | nenhum ID criado; requisito transversal |
