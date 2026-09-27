@@ -167,6 +167,7 @@ Permanecem abertas, conforme os Surface Registries e contratos correntes:
 - `COL-006`: atividades, consultas e decisões — contrato corrente com cobertura low-fidelity parcial em Atividades/Governança; materialização dedicada e continuidade ponta a ponta ainda não estão comprovadas;
 - `COL-007`: proteção e moderação — contrato corrente com cobertura low-fidelity parcial e `Governança e Proteção = PASS`; materialização dedicada e continuidade ponta a ponta ainda não estão comprovadas;
 - `COL-008`: relação Organização ↔ Coletivo — contrato/lifecycle definidos sob `UXA-019`, com cobertura low-fidelity O↔C em `PASS`; materialização dedicada e continuidade ponta a ponta permanecem abertas;
+- `Coletivo ↔ Coletivo`: necessidade conceitual reconhecida por `UXA-014`, mas sem evidência suficiente para adjudicar superfície, lifecycle ou transições próprias; `COL-008` e `UXA-019` permanecem exclusivos de Organização↔Coletivo, e nenhum novo ID deve ser criado por analogia;
 - capacidades de avaliação/reputação e de interações/recomendações/conexões governadas por `UXA-057` e `UXA-058` permanecem dependentes de materialização/validação específica onde o Registry ainda não comprova fechamento.
 
 Essas lacunas especializadas não reabrem a cadeia principal autenticada já fechada até `HIGH-FIDELITY EXECUTION RELEASE`; elas devem ser tratadas como frentes funcionais próprias, sem promoção por analogia.
