@@ -357,6 +357,31 @@ Crosswalk vigente:
 - `GKR-SURF-COL-008` — relação Organização–Coletivo, no escopo estável definido por `UXA-019`;
 - relações Coletivo–Coletivo permanecem sem ID estável dedicado nesta frente; a lacuna é explícita e não autoriza ampliar semanticamente `GKR-SURF-COL-008`.
 
+Adjudicação estrutural vigente:
+
+- `UXA-014` reconhece relações com outros Coletivos como parte legítima da experiência coletiva;
+- as autoridades correntes não definem objeto, lifecycle, estados especializados, entradas/saídas ou transições suficientes para registrar uma superfície própria;
+- `UXA-019` e `GKR-SURF-COL-008` continuam exclusivos da relação Organização–Coletivo;
+- a ausência de ID não significa ausência da necessidade funcional; significa **identidade de superfície ainda não adjudicável sem nova evidência**;
+- nenhuma relação Coletivo–Coletivo deve ser modelada como Organização–Coletivo apenas para reutilizar IDs existentes.
+
+```text
+NECESSIDADE CONCEITUAL
+→ RECONHECIDA
+
+SUPERFÍCIE DEDICADA
+→ NÃO ADJUDICÁVEL COM A EVIDÊNCIA CORRENTE
+
+COL-008
+→ NÃO REUTILIZAR
+
+NOVO GKR-SURF-*
+→ NÃO CRIAR
+
+NOVO GKR-TRN-*
+→ NÃO CRIAR
+```
+
 ```text
 APOIO
 ≠ POSSE
