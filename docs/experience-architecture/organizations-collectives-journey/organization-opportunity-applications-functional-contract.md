@@ -2,7 +2,7 @@
 id: GKR-UX-ORG-OPPORTUNITY-APPLICATIONS-CONTRACT-001
 title: Jornada de Organizações e Coletivos — Organização — Manifestações de Interesse e Inscrições em Oportunidades — Contrato Funcional Candidato
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-26
 normative: false
@@ -24,11 +24,11 @@ depends_on:
 
 Este contrato define a responsabilidade funcional candidata da Organização para **receber e administrar o recorte autorizado de manifestações de interesse e inscrições internas** vinculadas a oportunidades publicadas sob sua autoridade.
 
-Ele governa a responsabilidade antes de qualquer identidade de superfície ou transição.
+A responsabilidade possui identidade de superfície adjudicada como `GKR-SURF-ORG-008`. Este contrato ainda não adjudica nenhuma nova transição.
 
 ```text
 CONTRATO FUNCIONAL
-≠ NOVO ORG-ID AUTOMÁTICO
+→ GKR-SURF-ORG-008 ADJUDICADA
 
 RECEBER OBJETO BILATERAL
 ≠ ACESSAR JOURNEY DA PESSOA
@@ -37,7 +37,7 @@ PUBLICAR OPORTUNIDADE
 ≠ GERENCIAR INSCRITOS
 ```
 
-Nenhum `GKR-SURF-ORG-*` ou `GKR-TRN-*` é criado por este contrato.
+`GKR-SURF-ORG-008` identifica esta responsabilidade própria. Nenhum novo `GKR-TRN-*` é criado por este contrato.
 
 ## 2. Fronteira com ORG-002 e ORG-003
 
@@ -77,7 +77,7 @@ ORGANIZAÇÃO
 
 A Organização não recebe a Journey, o contexto privado usado para personalização nem as razões internas de relevância.
 
-Este contrato não cria a transição técnica entre `PER-204` e a futura responsabilidade da Organização.
+Este contrato não cria a transição técnica entre `PER-204` e `GKR-SURF-ORG-008`.
 
 ## 4. Dois objetos operacionais distintos
 
@@ -433,7 +433,7 @@ IA pode apoiar exploração e materialização somente dentro das autoridades do
 
 Ela não pode inventar:
 
-- ORG-ID;
+- novos ORG-IDs além de `ORG-008`;
 - TRN-ID;
 - campos;
 - documentos obrigatórios;
@@ -456,9 +456,9 @@ LACUNA
 → NÃO INVENTAR
 ```
 
-## 20. Critérios para futura identidade de superfície
+## 20. Adjudicação da identidade de superfície
 
-Novo `ORG-ID` somente poderá ser adjudicado depois de confirmar cumulativamente:
+A identidade `GKR-SURF-ORG-008` foi adjudicada porque os critérios cumulativos abaixo estão satisfeitos:
 
 1. job próprio diferente de cadastrar/ativar a oportunidade;
 2. objeto bilateral próprio;
@@ -475,9 +475,8 @@ Novo `ORG-ID` somente poderá ser adjudicado depois de confirmar cumulativamente
 
 Permanecem deliberadamente não definidos:
 
-- novo Surface ID da Organização;
-- Transition ID entre `PER-204` e a responsabilidade institucional;
-- eventual transição entre `ORG-003` e a gestão de manifestações/inscrições;
+- Transition ID entre `PER-204` e `ORG-008`;
+- eventual transição entre `ORG-003` e `ORG-008`;
 - retorno dedicado;
 - campos/documentos por oportunidade;
 - critérios de elegibilidade/seleção;
@@ -499,7 +498,8 @@ RESPONSABILIDADE FUNCIONAL DA ORGANIZAÇÃO
 → CANDIDATA
 
 SURFACE ID
-→ NONE
+→ GKR-SURF-ORG-008
+→ ADJUDICADA
 
 TRANSITION IDs
 → NONE
