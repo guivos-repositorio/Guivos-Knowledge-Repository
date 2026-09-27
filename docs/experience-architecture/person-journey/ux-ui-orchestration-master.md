@@ -2,9 +2,9 @@
 id: GKR-UX-PERSON-JOURNEY-ORCHESTRATION-001
 title: Jornada da Pessoa — Documento Mestre de Orquestração UX/UI
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-09-27
 normative: true
 maturity: ux_orchestration_authority
 depends_on:
@@ -569,7 +569,82 @@ Plano determina acesso a capacidades governadas, não relevância humana automá
 
 Nenhum plano pago deve fazer oportunidade patrocinada parecer organicamente mais relevante.
 
-## 22. Prototipação UX/UI — estados mínimos a demonstrar
+
+## 22. Navegação orientada por perfil, plano e descoberta de capacidades
+
+A Orquestração governa não apenas a existência das superfícies, mas **como a Pessoa pode navegar e agir nelas na prática**.
+
+Para cada contexto, a prototipação e a implementação futura devem conseguir determinar:
+
+```text
+PERFIL / CONTEXTO
++
+PLANO VIGENTE
++
+ESTADO REAL
++
+AUTORIDADE / CONSENTIMENTO
+→ AÇÕES EXECUTÁVEIS AGORA
+→ AÇÕES CONDICIONAIS
+→ CAPACIDADES SUPERIORES DESCOBRÍVEIS
+→ CONTINUIDADES DE NAVEGAÇÃO
+→ FEEDBACK APÓS AÇÃO
+```
+
+Uma capacidade pertencente a Plus ou Pro **não deve desaparecer por padrão** para quem está no Free quando sua descoberta for útil para compreender a evolução possível da experiência.
+
+Ela pode permanecer visível como capacidade superior, desde que:
+
+- seja identificada como não incluída no plano vigente;
+- não pareça executável quando não for;
+- explique objetivamente o que muda no plano superior;
+- ofereça acesso opcional a `PER-301`;
+- preserve a continuidade legítima do plano atual;
+- não esconda informação pública, direito, segurança ou estado material;
+- não use pressão, urgência artificial ou promessa de resultado.
+
+```text
+CAPACIDADE SUPERIOR
+→ PODE SER DESCOBRÍVEL
+
+DESCOBRÍVEL
+≠ EXECUTÁVEL
+
+BLOQUEADA PELO PLANO
+→ MOTIVO EXPLICÁVEL
+→ UPGRADE OPCIONAL
+→ ALTERNATIVA ATUAL PRESERVADA QUANDO EXISTIR
+```
+
+A forma visual — lock, badge, preview, card, tooltip, comparação ou outra solução — pertence ao Design. O significado e o comportamento pertencem à Orquestração.
+
+## 23. Contrato comportamental das superfícies
+
+Cada superfície deve ser compreensível como um **componente funcional do sistema**, não apenas como conteúdo de tela.
+
+Para prototipação e futura implementação, cada superfície deve permitir responder:
+
+| Dimensão | Comportamento que precisa estar governado |
+|---|---|
+| entrada | de onde e sob quais condições a Pessoa chega |
+| contexto | qual estado e informação legítima são preservados |
+| conteúdo | o que aparece no estado corrente |
+| ações | o que é executável agora |
+| capacidades superiores | o que permanece descobrível, mas não executável no plano atual |
+| processamento | o que acontece após ação material |
+| feedback | sucesso, falha, indeterminação ou bloqueio |
+| transição | quando há mudança real de responsabilidade/estado |
+| navegação | quais mudanças de superfície são neutras |
+| persistência | o que deve permanecer ao sair e retornar |
+| plano | como Free/Plus/Pro altera capacidade ou profundidade |
+| upgrade | quando e como a ampliação pode ser explicada |
+| proteção | o que não pode ser exposto ou inferido |
+| recuperação | como continuar após vazio, falha, limite ou interrupção |
+
+A prototipação deve materializar esse comportamento de forma testável. A implementação futura deve consumi-lo como contrato de produto, sem tratar composição visual do protótipo como regra funcional adicional.
+
+
+## 24. Prototipação UX/UI — estados mínimos a demonstrar
 
 Uma prototipação ponta a ponta deve conseguir demonstrar, sem afirmar implementação:
 
@@ -609,7 +684,7 @@ Uma prototipação ponta a ponta deve conseguir demonstrar, sem afirmar implemen
 
 Isso não exige um frame por item. Estados podem pertencer à mesma superfície.
 
-## 23. Matriz de comportamento para prototipação
+## 25. Matriz de comportamento para prototipação
 
 | Situação | Deve aparecer | Não deve acontecer |
 |---|---|---|
@@ -624,7 +699,7 @@ Isso não exige um frame por item. Estados podem pertencer à mesma superfície.
 | falha | estado real + recuperação | declarar sucesso |
 | downgrade/cancelamento | consequências e data quando governadas | retenção coerciva |
 
-## 24. Liberdade de Design
+## 26. Liberdade de Design
 
 Este documento governa comportamento, hierarquia semântica e continuidade, não estética.
 
@@ -648,7 +723,7 @@ Design pode decidir:
 
 A liberdade visual não pode alterar responsabilidade, plano, preço, benefício, transição, autorização, estado ou significado governado.
 
-## 25. Regras para IA
+## 27. Regras para IA
 
 Uma IA que construa ou auxilie a prototipação deve consumir este documento junto dos Masters específicos necessários.
 
@@ -670,7 +745,7 @@ A IA não pode:
 
 Quando houver lacuna, deve sinalizá-la em vez de completá-la por conveniência.
 
-## 26. Source lock para prototipação por IA
+## 28. Source lock para prototipação por IA
 
 Toda prototipação produzida ou assistida por IA deve operar em **source lock** com o `Guivos Knowledge Repository`, especialmente com a coleção `Jornada da Pessoa — Superfícies e Fluxos` e as autoridades relacionadas consumidas por ela.
 
@@ -739,7 +814,7 @@ LACUNA
 
 A existência de espaço visual, convenção de UX, componente disponível, sugestão do modelo, facilidade técnica ou expectativa de mercado **não constitui autoridade** para adicionar comportamento.
 
-## 27. Critérios executivos de aceite
+## 29. Critérios executivos de aceite
 
 Uma prototipação orientada por este documento é semanticamente aceitável quando:
 
@@ -766,7 +841,7 @@ Uma prototipação orientada por este documento é semanticamente aceitável qua
 21. lacunas são sinalizadas em vez de preenchidas por inferência;
 22. Product Engineering não é liberado por este documento.
 
-## 28. Ordem recomendada de consumo para construção
+## 30. Ordem recomendada de consumo para construção
 
 Para construir uma prototipação integrada:
 
@@ -781,7 +856,7 @@ Para construir uma prototipação integrada:
 
 A prototipação deve validar continuidade entre superfícies, e não apenas fidelidade isolada de cada frame.
 
-## 29. Estado
+## 31. Estado
 
 ```text
 PERSON JOURNEY UX/UI ORCHESTRATION
