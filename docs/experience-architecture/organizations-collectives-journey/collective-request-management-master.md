@@ -464,7 +464,7 @@ Design mantém liberdade sobre:
 Design não pode:
 
 - fundir `COL-003` e `COL-004` por conveniência;
-- inventar transição para preencher a lacuna entre eles;
+- tratar `GKR-TRN-114` como nova aprovação, novo vínculo ou confirmação de persistência técnica;
 - transformar pessoas em ranking;
 - criar score de aprovação;
 - ocultar autoridade, proteção ou estado material;
