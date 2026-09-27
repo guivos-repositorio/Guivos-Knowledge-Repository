@@ -456,16 +456,16 @@ Esta capacidade **não** é uma função genérica de planejamento do Coletivo.
 | Domínio lógico | IDs estáveis relacionados | Tratamento |
 |---|---|---|
 | Organização — Visão Geral | `GKR-SURF-ORG-001` | preservado |
-| Organização — Oportunidades e Programas | `GKR-SURF-ORG-002`, `GKR-SURF-ORG-003`, `GKR-SURF-ORG-008` | preservados e separados; `ORG-008` mantém responsabilidade bilateral própria; transições ainda não adjudicadas |
-| Organização — Relações | `GKR-SURF-ORG-004..006` para Organização–Coletivo; sem ID dedicado para Organização–Organização | `ORG-004..006` preservados no escopo de `UXA-019`; lacuna explícita para relações Organização–Organização |
-| Organização — Responsabilidades e Evidências | `GKR-SURF-ORG-007` | preservado; maturidade não promovida |
+| Organização — Oportunidades e Programas | `GKR-SURF-ORG-002`, `GKR-SURF-ORG-003`, `GKR-SURF-ORG-008` | preservados e separados; `ORG-008` mantém responsabilidade bilateral própria; `TRN-213..216` preservam a continuidade bilateral contratada |
+| Organização — Relações | `GKR-SURF-ORG-004..006` para Organização–Coletivo; sem ID dedicado para Organização–Organização | `ORG-004..006` preservados no escopo de `UXA-019`; Organização–Organização permanece necessidade conceitual adjudicada sem ID dedicado justificável pela evidência corrente |
+| Organização — Responsabilidades e Evidências | `GKR-SURF-ORG-007` | contrato funcional candidato definido; maturidade preservada pelas autoridades correntes |
 | Organização — Organização e Autoridade | sem ID dedicado | nenhum ID criado; requisito transversal |
 | Organização — Planos e Capacidade comercial | `GKR-SURF-ORG-301..304`, `GKR-SURF-BND-002` | fluxo especializado separado |
 | Coletivo — Início | `GKR-SURF-COL-002` | preservado; `COL-001` permanece fronteira/presença pública separada |
 | Coletivo — Atividades e Oportunidades | `GKR-SURF-COL-006` | preservado; sem ID novo por inferência |
 | Coletivo — Participação | `GKR-SURF-COL-003..005` | preservados; superfícies da Pessoa permanecem separadas |
 | Coletivo — Governança e Proteção | `GKR-SURF-COL-005`, `GKR-SURF-COL-006`, `GKR-SURF-COL-007` | responsabilidades distintas preservadas; `COL-005` somente no recorte de comunicação oficial ligada a decisão/governança |
-| Coletivo — Relações | `GKR-SURF-COL-008` para Organização–Coletivo; sem ID dedicado para Coletivo–Coletivo | `COL-008` preservado no escopo de `UXA-019`; lacuna explícita para relações Coletivo–Coletivo |
+| Coletivo — Relações | `GKR-SURF-COL-008` para Organização–Coletivo; sem ID dedicado para Coletivo–Coletivo | `COL-008` preservado no escopo de `UXA-019`; Coletivo–Coletivo permanece necessidade conceitual adjudicada sem ID dedicado justificável pela evidência corrente |
 | Coletivo — Aprendizados e Evidências | sem ID dedicado | nenhum ID criado; requisito transversal |
 | Coletivo — Coletivo e Autoridade | `GKR-SURF-COL-002` parcialmente; sem ID exclusivo | nenhum ID novo; autoridade transversal |
 | Coletivo — Planos e Capacidade comercial | `GKR-SURF-COL-301..304`, `GKR-SURF-BND-002` | fluxo especializado separado |

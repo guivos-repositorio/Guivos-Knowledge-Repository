@@ -801,7 +801,7 @@ Esta matriz demonstra cobertura funcional sem transformar ausência de autoridad
 | `ORG-J02` — Momento e atenção material | §6 | coberto no limite documental |
 | `ORG-J03` — identidade, capacidade, condições e responsabilidades | §6 + §15 | coberto funcionalmente; sem nova transição |
 | `ORG-J04` — oportunidades e programas | §7 | coberto com reutilização de `TRN-201..203` |
-| `ORG-J05` — relações com Coletivos e Organizações | §14 | **parcial**: Organização↔Coletivo coberto por `UXA-019`; Organização↔Organização permanece lacuna explícita |
+| `ORG-J05` — relações com Coletivos e Organizações | §14 | **parcial**: Organização↔Coletivo coberto por `UXA-019`; Organização↔Organização permanece necessidade conceitual adjudicada sem superfície/lifecycle/transições próprios justificáveis pela evidência corrente |
 | `ORG-J06` — compromissos, evidências e resultados | §8 + §14 | coberto no limite documental; sem fabricar impacto |
 | `ORG-J07` — capacidade comercial e Planos | §16.1 | conexão especializada preservada; não é eixo principal |
 | `ORG-J08` — corrigir, contestar, revisar, pausar ou encerrar | §14 + §15 | coberto transversalmente |
@@ -817,7 +817,7 @@ Esta matriz demonstra cobertura funcional sem transformar ausência de autoridad
 | `COL-J04` — participação, solicitações, papéis e vínculos | §10 | coberto com fluxos existentes; continuidade pós-aprovação formalizada por `TRN-114` |
 | `COL-J05` — decisões, comunicação, moderação e proteção | §12 | coberto no limite documental |
 | `COL-J06` — oportunidades ou atividades legítimas | §11 | coberto funcionalmente |
-| `COL-J07` — relações com Organizações e outros Coletivos | §14 | **parcial**: Organização↔Coletivo coberto por `UXA-019`; Coletivo↔Coletivo permanece lacuna explícita |
+| `COL-J07` — relações com Organizações e outros Coletivos | §14 | **parcial**: Organização↔Coletivo coberto por `UXA-019`; Coletivo↔Coletivo permanece necessidade conceitual adjudicada sem superfície/lifecycle/transições próprios justificáveis pela evidência corrente |
 | `COL-J08` — avanço, aprendizado e evidências | §13 | coberto no limite documental; domínio sem ID exclusivo preservado |
 | `COL-J09` — capacidade e Planos | §16.1 | conexão especializada preservada; não é eixo principal |
 | `COL-J10` — corrigir, contestar, revisar, pausar ou encerrar | §14 + §15 | coberto transversalmente |
@@ -842,11 +842,11 @@ COBERTURA DE JOB
 
 ORG-J05
 → ORGANIZAÇÃO↔COLETIVO COBERTO
-→ ORGANIZAÇÃO↔ORGANIZAÇÃO = GAP EXPLÍCITO
+→ ORGANIZAÇÃO↔ORGANIZAÇÃO = NECESSIDADE ADJUDICADA / SEM ID DEDICADO JUSTIFICADO
 
 COL-J07
 → COLETIVO↔ORGANIZAÇÃO COBERTO
-→ COLETIVO↔COLETIVO = GAP EXPLÍCITO
+→ COLETIVO↔COLETIVO = NECESSIDADE ADJUDICADA / SEM ID DEDICADO JUSTIFICADO
 ```
 
 ## 20. Matriz inicial de reconciliação com o Transition Registry
@@ -907,7 +907,7 @@ A promoção documental desta autoridade consumiu cumulativamente os seguintes c
 4. as perspectivas de Pessoa, Organização e Coletivo permanecerem separadas;
 5. todas as referências a `GKR-TRN-*` preservarem origem, destino e maturidade vigentes;
 6. nenhuma lacuna seja preenchida por ID inventado;
-7. Organização–Organização e Coletivo–Coletivo permaneçam lacunas explícitas onde não houver autoridade própria;
+7. Organização–Organização e Coletivo–Coletivo preservem suas adjudicações explícitas sem criação de IDs por analogia;
 8. Planos e Produtos Especializados permaneçam especializados/contextuais;
 9. ausência, bloqueio, contestação e indisponibilidade tenham tratamento explícito;
 10. reversibilidade, interrupção, concorrência e idempotência sejam preservadas;
