@@ -313,7 +313,7 @@ CORRELAÇÃO
 ≠ CAUSALIDADE
 ```
 
-A ausência atual de superfície exclusiva para Aprendizados e Evidências do Coletivo permanece uma lacuna explícita; este Master não a absorve silenciosamente.
+Aprendizados e Evidências do Coletivo permanece responsabilidade transversal adjudicada: `COL-006` pode produzir registros relevantes, mas não absorve o domínio, não se torna sua superfície exclusiva e não converte atividade em resultado ou impacto.
 
 ## 18. Planos e capacidade comercial
 
@@ -402,7 +402,6 @@ Permanecem abertas:
 - infraestrutura técnica;
 - notificações/canais técnicos;
 - analytics/KPIs;
-- superfície exclusiva de Aprendizados e Evidências;
 - validação dedicada ponta a ponta de `COL-006`;
 - implementação.
 
