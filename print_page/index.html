@@ -30167,7 +30167,7 @@ PRODUCT ENGINEERING
 <h2 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento define a responsabilidade funcional candidata da perspectiva da Pessoa quando uma oportunidade permitir manifestação de interesse ou inscrição <strong>dentro da Guivos</strong>.</p>
 <p>A adjudicação posterior confirmou esta responsabilidade como <code>GKR-SURF-PER-204</code>, preservando o contrato funcional aqui definido.</p>
-<p>A continuidade de entrada permanece <code>GKR-TRN-212</code> (<code>PER-203 → PER-204</code>). Quando a Pessoa realiza envio interno consciente para uma Organização, o handoff bilateral do mesmo objeto para <code>ORG-008</code> é <code>GKR-TRN-213</code>, em estado contratado. Essa transição não equivale a elegibilidade, seleção, participação ou resultado e não cria retorno simétrico por inferência.</p>
+<p>A continuidade de entrada permanece <code>GKR-TRN-212</code> (<code>PER-203 → PER-204</code>). Quando a Pessoa realiza envio interno consciente para uma Organização, o handoff bilateral inicial do mesmo objeto para <code>ORG-008</code> é <code>GKR-TRN-213</code>, em estado contratado. No pós-envio, <code>GKR-TRN-215</code> traz comunicação/atualização material da Organização para <code>PER-204</code>, enquanto <code>GKR-TRN-216</code> leva resposta/alteração material consciente da Pessoa para <code>ORG-008</code>; ambas permanecem contratadas. Essas transições não equivalem a elegibilidade, seleção, participação ou resultado e não criam retornos de navegação por simetria.</p>
 <div class="highlight"><pre><span></span><code>CONTRATO FUNCIONAL
 ≠ NOVO PER-ID AUTOMÁTICO
 
@@ -42732,7 +42732,7 @@ ORGANIZAÇÃO
 → RECEBE SOMENTE O RECORTE AUTORIZADO DO MESMO OBJETO
 </code></pre></div>
 <p>A Organização não recebe a Journey, o contexto privado usado para personalização nem as razões internas de relevância.</p>
-<p>A continuidade bilateral <code>PER-204 → ORG-008</code> está formalizada por <code>GKR-TRN-213</code>, contratada para o envio consciente e recebimento do mesmo objeto no recorte autorizado. A continuidade institucional <code>ORG-003 → ORG-008</code> está formalizada separadamente por <code>GKR-TRN-214</code>, sem criar ou receber objeto por si só.</p>
+<p>A continuidade bilateral <code>PER-204 → ORG-008</code> está formalizada por <code>GKR-TRN-213</code>, contratada para o envio consciente e recebimento inicial do mesmo objeto no recorte autorizado. A continuidade institucional <code>ORG-003 → ORG-008</code> está formalizada separadamente por <code>GKR-TRN-214</code>, sem criar ou receber objeto por si só. No pós-envio, <code>GKR-TRN-215</code> formaliza comunicação/atualização material <code>ORG-008 → PER-204</code>, e <code>GKR-TRN-216</code> formaliza resposta/alteração material <code>PER-204 → ORG-008</code>; ambas permanecem contratadas.</p>
 <h2 id="experience-architecture-organizations-collectives-journey-organization-opportunity-applications-functional-contract-4-dois-objetos-operacionais-distintos">4. Dois objetos operacionais distintos<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-applications-functional-contract-4-dois-objetos-operacionais-distintos" title="Permanent link">&para;</a></h2>
 <h3 id="experience-architecture-organizations-collectives-journey-organization-opportunity-applications-functional-contract-41-manifestacao-de-interesse">4.1 Manifestação de interesse<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-organization-opportunity-applications-functional-contract-41-manifestacao-de-interesse" title="Permanent link">&para;</a></h3>
 <p>A Organização pode, quando a oportunidade sustentar esse modo:</p>
@@ -43072,7 +43072,6 @@ ANALYTICS
 <p>Permanecem deliberadamente não definidos:</p>
 <ul>
 <li>retorno dedicado a partir de <code>ORG-008</code>;</li>
-<li>continuidade bilateral de resposta/atualização que exija transição própria;</li>
 <li>campos/documentos por oportunidade;</li>
 <li>critérios de elegibilidade/seleção;</li>
 <li>automação decisória;</li>
@@ -43097,6 +43096,8 @@ SURFACE ID
 TRANSITION IDs
 → GKR-TRN-213 = PER-204 → ORG-008 / CONTRATADA
 → GKR-TRN-214 = ORG-003 → ORG-008 / CONTRATADA
+→ GKR-TRN-215 = ORG-008 → PER-204 / CONTRATADA
+→ GKR-TRN-216 = PER-204 → ORG-008 / CONTRATADA
 → RETORNOS DEDICADOS = NONE
 
 ORG-002
