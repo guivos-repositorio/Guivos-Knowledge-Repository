@@ -2,7 +2,7 @@
 id: GKR-UX-OPPORTUNITY-POST-SUBMIT-BILATERAL-CONTINUITY-001
 title: Oportunidades Internas — Continuidade Bilateral Pós-Envio — Contrato Funcional Candidato
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-26
 normative: false
@@ -30,7 +30,7 @@ PÓS-ENVIO
 → MESMO OBJETO BILATERAL
 → DUAS AUTORIDADES
 → EVENTOS MATERIAIS EXPLÍCITOS
-→ IDs DE TRANSIÇÃO AINDA NÃO ADJUDICADOS
+→ TRN-215 / TRN-216 ADJUDICADAS COMO CONTRATADAS
 ```
 
 ## 2. Fronteira de responsabilidade
@@ -210,21 +210,25 @@ Este contrato não adjudica transições para:
 
 Esses retornos permanecem contextuais enquanto não houver evidência de mudança de responsabilidade que exija transição própria.
 
-## 12. Critério para futura adjudicação de TRN
+## 12. Adjudicação das continuidades pós-envio
 
-A direção `ORG-008 → PER-204` pode justificar uma transição própria se a continuidade material descrita neste contrato for confirmada como handoff estável entre responsabilidades.
+A direção `ORG-008 → PER-204` constitui handoff estável entre responsabilidades quando a Organização produz comunicação ou atualização material legitimamente destinada à Pessoa. Essa continuidade é `GKR-TRN-215`, em estado **contratada**.
 
-A direção `PER-204 → ORG-008` pós-envio pode justificar outra transição própria se ficar demonstrado que não é apenas repetição de `TRN-213`, mas uma continuidade recorrente com semântica própria.
-
-Nenhum número é reservado neste documento.
+A direção `PER-204 → ORG-008` após o envio inicial constitui continuidade própria quando a Pessoa responde ou altera conscientemente o mesmo objeto bilateral. Ela não é repetição de `TRN-213`, que permanece delimitada ao envio inicial. Essa continuidade é `GKR-TRN-216`, em estado **contratada**.
 
 ```text
 GKR-TRN-215
-→ NÃO ADJUDICADA
+→ ORG-008 → PER-204
+→ COMUNICAÇÃO / ATUALIZAÇÃO MATERIAL INSTITUCIONAL
+→ CONTRATADA
 
 GKR-TRN-216
-→ NÃO ADJUDICADA
+→ PER-204 → ORG-008
+→ RESPOSTA / ALTERAÇÃO MATERIAL PÓS-ENVIO DA PESSOA
+→ CONTRATADA
 ```
+
+Nenhuma das duas transições equivale a elegibilidade, seleção, participação ou resultado. Eventos locais sem mudança material bilateral não acionam esses handoffs.
 
 ## 13. Não criado por este contrato
 
@@ -259,8 +263,11 @@ ORG-008
 TRN-213
 → PRESERVADA / ENVIO INICIAL
 
-NOVOS TRN IDs
-→ NONE
+TRN-215
+→ ORG-008 → PER-204 / CONTRATADA
+
+TRN-216
+→ PER-204 → ORG-008 / CONTRATADA
 
 VISUAL BASELINE
 → NONE
