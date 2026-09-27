@@ -141,6 +141,10 @@ nav:
           - Jornada da Organização: journeys/organization.md
           - Guivos Business — Experiência Integrada: journeys/business.md
 
+  - Interações entre Participantes:
+      - Relações, Interações, Conexões e Visibilidade: experience-architecture/participant-relationships-interactions-visibility-contract.md
+      - Comunicações e Notificações: experience-architecture/communications-notifications-cross-ecosystem-contract.md
+
   - Jornada da Pessoa — Superfícies e Fluxos:
       - Comece por aqui:
           - Leia Primeiro: experience-architecture/person-journey/read-first.md
