@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.36.18
+version: 0.36.19
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-25
+last_updated: 2026-09-26
 related:
   - UXA-089
   - UXA-090
@@ -110,7 +110,7 @@ Os **contextos correntes de experiência tratados nesta arquitetura** são:
 |---|---:|
 | Pessoa | 30 |
 | Coletivo | 12 |
-| Organização | 11 |
+| Organização | 12 |
 | Guivos Business | 0 |
 
 Business possui contexto próprio de experiência, mas sua arquitetura corrente está governada por `GPA-004`, autoridades Business, Home Business, Planos Business e `docs/journeys/business.md`; a ausência de IDs próprios neste Registry não reduz seu status como contexto.
@@ -134,7 +134,7 @@ IDS TÉCNICOS AUXILIARES
 → BND-* = FRONTEIRAS
 ```
 
-O total estrutural corrente é de **58 IDs**. A contagem não implica que todos estejam materializados ou validados.
+O total estrutural corrente é de **59 IDs**. A contagem não implica que todos estejam materializados ou validados.
 
 ## 4. Inventário principal
 
@@ -189,6 +189,7 @@ O total estrutural corrente é de **58 IDs**. A contagem não implica que todos 
 | GKR-SURF-ORG-005 | avaliação e negociação bilateral | representantes | protegido | contratado | UXA-019; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | parcial — cobertura Relações O↔C no low-fidelity corrente | Relações O↔C = PASS no pacote low-fidelity; continuidade ponta a ponta permanece contratada | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-006 | relação ativa e revisão | representantes | protegido | contratado | UXA-019; GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001; GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | parcial — cobertura Relações O↔C no low-fidelity corrente | Relações O↔C = PASS no pacote low-fidelity; continuidade ponta a ponta permanece contratada | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-007 | resultados e evidências institucionais | representante | protegido | indeterminado | referências dispersas | — | — | [Organização](surface-registry-organization-details.md) |
+| GKR-SURF-ORG-008 | Manifestações de Interesse / Inscrições em Oportunidades | representante autorizado | protegido/multicanal | contrato funcional candidato com identidade adjudicada | GKR-UX-ORG-OPPORTUNITY-APPLICATIONS-CONTRACT-001; GKR-UX-PUBLISHER-APPLICATION-CONTRACT-001 | sem baseline visual corrente | transições ainda não adjudicadas; implementação não comprovada | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-301 | Planos e comparação da Organização — Conecta · Eleva · Transforma | representante autorizado | computador/protegido | **validado no fluxo especializado** | GKR-PLANS-ORGANIZATION-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente; retorno governado pelo Transition Registry | maturidade funcional preservada no Registry; navegação administrativa preservada no Transition Registry | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-302 | revisão de contratação da Organização | autoridade financeira identificada | computador/protegido | **validado** | GKR-PLANS-ORGANIZATION-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente | maturidade funcional preservada no Registry | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-303 | gestão de downgrade e cancelamento da Organização | representante autorizado | computador/protegido | **validado** | GKR-PLANS-ORGANIZATION-001; GEM-004-PLAN-TAXONOMY-AUTHORITY-001 | sem baseline visual corrente | maturidade funcional preservada no Registry | [Organização](surface-registry-organization-details.md) |
