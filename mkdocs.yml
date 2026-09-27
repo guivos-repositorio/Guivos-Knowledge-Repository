@@ -185,6 +185,9 @@ nav:
       - Comece por aqui:
           - Leia Primeiro: experience-architecture/organizations-collectives-journey/read-first.md
 
+      - Orquestração da Jornada:
+          - Documento Mestre de Orquestração UX/UI: experience-architecture/organizations-collectives-journey/ux-ui-orchestration-master.md
+
       - Fundamentos da Jornada:
           - Jornada Integrada da Organização: journeys/organization.md
           - Jornada Integrada do Coletivo: journeys/collective.md
