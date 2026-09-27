@@ -7,6 +7,16 @@ owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-27
 normative: false
 maturity: functional_contract_candidate
+depends_on:
+  - GKR-UX-ORGCOL-JOURNEY-READ-FIRST-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
+  - GKR-JOURNEY-SURFACE-REGISTRY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - UXA-058
 related:
   - GKR-SURF-COL-004
   - GKR-SURF-COL-005
@@ -74,18 +84,23 @@ A Pessoa autorizada deve conseguir:
 
 ## 5. Objeto funcional mínimo
 
-Quando aplicável e autorizado, o objeto de comunicação pode carregar:
+Para comunicado oficial, o contrato existente de `UXA-058` permanece obrigatório. A materialização deve registrar, no recorte aplicável:
 
-- identidade do Coletivo;
-- finalidade material;
-- referência ao objeto, decisão, vínculo ou condição que originou a comunicação;
-- audiência autorizada;
+- título objetivo;
+- natureza oficial;
+- autor e papel;
+- Coletivo, Organização ou atividade de origem;
+- público/audiência autorizada;
 - conteúdo estritamente necessário;
-- classificação/proteção aplicável;
-- autoria ou autoridade responsável;
-- estado do processamento;
-- referência temporal;
-- proveniência necessária à compreensão.
+- data de publicação;
+- validade ou encerramento;
+- anexos, quando existentes;
+- alterações materiais;
+- possibilidade de dúvida, quando permitida;
+- contato responsável;
+- política de notificação.
+
+Além disso, a experiência deve preservar finalidade material, referência ao objeto/decisão/vínculo/condição de origem, classificação/proteção aplicável, estado do processamento e proveniência necessária à compreensão.
 
 Não são autorizados por inferência:
 
@@ -127,13 +142,18 @@ Preferência, consentimento, obrigação material e disponibilidade da informaç
 A materialização deve conseguir representar, quando aplicáveis:
 
 - comunicação não iniciada;
-- rascunho local;
+- rascunho;
+- programado, quando suportado e legitimamente configurado;
 - revisão necessária;
 - audiência ou autoridade insuficiente;
 - proteção adicional necessária;
 - pronta para confirmação consciente;
 - processamento;
-- enviada/efetivada com confirmação suficiente;
+- publicada/enviada com confirmação suficiente;
+- atualizada;
+- expirada;
+- substituída;
+- retirada com justificativa;
 - falha recuperável;
 - resultado indeterminado;
 - cancelada antes do efeito;
