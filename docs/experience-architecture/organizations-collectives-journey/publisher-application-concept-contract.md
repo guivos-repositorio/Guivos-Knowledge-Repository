@@ -97,14 +97,44 @@ Manifestação de interesse pode ser uma intenção leve e reversível quando le
 
 Nenhum dos dois estados deve ser inferido apenas por navegação, tempo de permanência, clique exploratório, salvamento ou explicação de relevância.
 
-## 5. Objeto bilateral mínimo
+## 5. Objetos bilaterais mínimos
 
-Quando uma inscrição interna existir, o objeto lógico pode conter somente o necessário e autorizado para sua finalidade, como classes conceituais:
+Manifestação de interesse e inscrição são objetos logicamente distintos. Cada modo compartilha somente o recorte necessário e autorizado para sua própria finalidade.
+
+### 5.1 Manifestação de interesse
+
+Quando a oportunidade oferecer legitimamente uma manifestação de interesse interna, o objeto leve pode conter somente:
 
 - identidade ou referência necessária da Pessoa;
 - oportunidade correspondente;
 - publicador responsável;
-- tipo de manifestação;
+- manifestação consciente de interesse;
+- estado corrente da manifestação;
+- data/hora material quando necessária;
+- proveniência;
+- retirada pela Pessoa quando aplicável;
+- evidência mínima de processamento e confirmação.
+
+A manifestação de interesse, por si só:
+
+```text
+NÃO É INSCRIÇÃO
+NÃO É CANDIDATURA
+NÃO É ELEGIBILIDADE
+NÃO É SELEÇÃO
+NÃO AUTORIZA SOLICITAÇÃO AUTOMÁTICA DE INFORMAÇÕES ADICIONAIS
+NÃO AUTORIZA REUTILIZAR CAMPOS, CRITÉRIOS OU ESTADOS DA INSCRIÇÃO
+```
+
+O publicador pode reconhecer a existência e o estado da manifestação somente no limite autorizado. Qualquer continuidade que exija novos dados ou converta a intenção em inscrição requer ação consciente e autoridade próprias.
+
+### 5.2 Inscrição
+
+Quando uma inscrição interna existir, o objeto pode conter somente o necessário e autorizado para essa finalidade, como classes conceituais:
+
+- identidade ou referência necessária da Pessoa;
+- oportunidade correspondente;
+- publicador responsável;
 - informações fornecidas conscientemente para a inscrição;
 - declarações ou respostas exigidas legitimamente;
 - autorizações aplicáveis;
@@ -112,12 +142,12 @@ Quando uma inscrição interna existir, o objeto lógico pode conter somente o n
 - data/hora material quando necessária;
 - proveniência das informações;
 - alterações materiais;
-- solicitações de informação;
+- solicitações de informação legitimamente necessárias;
 - decisão do publicador quando sua autoridade permitir;
 - retirada/cancelamento pela Pessoa quando aplicável;
 - evidência mínima de processamento e confirmação.
 
-Este contrato não define formulário, campos obrigatórios universais, documentos, critérios seletivos ou prazo padrão.
+Este contrato não define formulário, campos obrigatórios universais, documentos, critérios seletivos ou prazo padrão para nenhum dos dois modos.
 
 ## 6. Dados que não atravessam por padrão
 
