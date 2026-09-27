@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.9
+version: 0.29.10
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-26
 related:
@@ -38,7 +38,7 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições correntes das Jornadas Integradas. A maturidade declarada em cada linha é o estado operativo a ser usado por Design e prototipação.
 
-A contagem corrente é de **71 transições**. `TRN-212` formaliza a entrada consciente da Pessoa no processo interno de manifestação de interesse ou inscrição; `TRN-213` formaliza o handoff bilateral inicial autorizado para a Organização; `TRN-214` formaliza o acesso institucional contextual da oportunidade ativa à gestão desses objetos; `TRN-215` e `TRN-216` formalizam as duas direções materiais da continuidade bilateral pós-envio.
+A contagem corrente é de **72 transições**. `TRN-212` formaliza a entrada consciente da Pessoa no processo interno de manifestação de interesse ou inscrição; `TRN-213` formaliza o handoff bilateral inicial autorizado para a Organização; `TRN-214` formaliza o acesso institucional contextual da oportunidade ativa à gestão desses objetos; `TRN-215` e `TRN-216` formalizam as duas direções materiais da continuidade bilateral pós-envio.
 
 ## 2. Convenções de estado
 
@@ -58,11 +58,11 @@ Validação integral documental não comprova implementação técnica nem esten
 | Família | Quantidade |
 |---|---:|
 | jornada pessoal | 13 |
-| Pessoa em Coletivos e operação do responsável | 13 |
+| Pessoa em Coletivos e operação do responsável | 14 |
 | Organização, oportunidades e relações bilaterais | 16 |
 | Opportunity Boost | 6 |
 | Planos, cobrança e ciclo de vida | 23 |
-| **Total** | **71** |
+| **Total** | **72** |
 
 ## 4. Jornada pessoal
 
@@ -111,6 +111,7 @@ O modelo corrente não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011
 | GKR-TRN-111 | PER-107 | PER-108 | participante | abrir início do mesmo Coletivo com permissão revalidada | UXA-096 | **integralmente validada** | — |
 | GKR-TRN-112 | COL-002 | COL-003 | responsável | abrir fila especializada preservando escopo | GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 + UXA-089/090 | **integralmente validada** | — |
 | GKR-TRN-113 | COL-004 | COL-005 | responsável | comunicar a participantes autorizados | UXA-058 + GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 + GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | contratada | operação interna não materializada |
+| GKR-TRN-114 | COL-003 | COL-004 | responsável | continuar operacionalmente para gestão do mesmo vínculo já formado pela aprovação | GKR-UX-COL-REQUEST-MANAGEMENT-MASTER-001 + GKR-UX-COL-PARTICIPANTS-LINKS-MASTER-001 + UXA-092 | contratada | persistência técnica do vínculo e materialização dedicada de COL-004 não comprovadas |
 
 ## 6. Organização, oportunidades e relações bilaterais
 
@@ -278,7 +279,7 @@ A correção semântica preservada:
 
 ## 10. Preservações de maturidade
 
-- transições totais correntes são **71**, incluindo `TRN-212`, `TRN-213`, `TRN-214`, `TRN-215` e `TRN-216` como contratadas;
+- transições totais correntes são **72**, incluindo `TRN-114` como continuidade operacional pós-aprovação contratada e `TRN-212`, `TRN-213`, `TRN-214`, `TRN-215` e `TRN-216` como contratadas;
 - `TRN-008..013` estão **integralmente validadas** no limite documental;
 - `TRN-406/407` ficam **contratadas** até materialização suficiente de `PER-009`;
 - `TRN-417/418` e `TRN-427/428` ficam **integralmente validadas** no limite documental de navegação administrativa;
