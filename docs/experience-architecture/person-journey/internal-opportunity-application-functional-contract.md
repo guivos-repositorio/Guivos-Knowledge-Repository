@@ -2,7 +2,7 @@
 id: GKR-UX-PERSON-INTERNAL-OPPORTUNITY-APPLICATION-CONTRACT-001
 title: Jornada da Pessoa — Manifestação de Interesse e Inscrição Interna em Oportunidades — Contrato Funcional Candidato
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-26
 normative: false
@@ -23,7 +23,7 @@ Este documento define a responsabilidade funcional candidata da perspectiva da P
 
 A adjudicação posterior confirmou esta responsabilidade como `GKR-SURF-PER-204`, preservando o contrato funcional aqui definido.
 
-A continuidade de entrada permanece `GKR-TRN-212` (`PER-203 → PER-204`). Quando a Pessoa realiza envio interno consciente para uma Organização, o handoff bilateral do mesmo objeto para `ORG-008` é `GKR-TRN-213`, em estado contratado. Essa transição não equivale a elegibilidade, seleção, participação ou resultado e não cria retorno simétrico por inferência.
+A continuidade de entrada permanece `GKR-TRN-212` (`PER-203 → PER-204`). Quando a Pessoa realiza envio interno consciente para uma Organização, o handoff bilateral inicial do mesmo objeto para `ORG-008` é `GKR-TRN-213`, em estado contratado. No pós-envio, `GKR-TRN-215` traz comunicação/atualização material da Organização para `PER-204`, enquanto `GKR-TRN-216` leva resposta/alteração material consciente da Pessoa para `ORG-008`; ambas permanecem contratadas. Essas transições não equivalem a elegibilidade, seleção, participação ou resultado e não criam retornos de navegação por simetria.
 
 ```text
 CONTRATO FUNCIONAL
