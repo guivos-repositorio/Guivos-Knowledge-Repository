@@ -2,7 +2,7 @@
 id: GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
 title: Participantes — Relações, Interações, Conexões e Visibilidade — Contrato Transversal
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-27
 normative: true
@@ -105,9 +105,84 @@ SILÊNCIO
 
 ## 7. Pessoa ↔ Pessoa
 
-Não há contrato corrente para follow, amizade, conexão, chat, DM, compartilhamento privado ou acesso ao perfil privado de outra Pessoa.
+### 7.1 Adjudicação corrente
 
-Interação de duas Pessoas dentro de Coletivo, atividade, consulta, decisão ou oportunidade permanece interação mediada pelo objeto/contexto correspondente e não cria relação social bilateral automática.
+A necessidade de Pessoas perceberem outras Pessoas em contextos compartilhados é compatível com o ecossistema, mas o corpus corrente não prova um objeto bilateral autônomo Pessoa↔Pessoa.
+
+Por isso:
+
+```text
+COEXISTÊNCIA EM CONTEXTO COMPARTILHADO
+→ PODE SER MATERIALIZADA QUANDO A SUPERFÍCIE / FINALIDADE EXIGIR
+
+RELAÇÃO SOCIAL BILATERAL AUTÔNOMA
+→ NÃO ADJUDICADA
+
+NOVO PER-* / GKR-TRN-*
+→ NÃO JUSTIFICADO
+```
+
+Não criar por inferência:
+
+- follow;
+- amizade;
+- conexão bilateral;
+- chat ou DM;
+- solicitação de conexão;
+- lista de contatos;
+- compartilhamento privado P↔P;
+- acesso ao perfil privado de outra Pessoa;
+- feed social derivado de conexões.
+
+### 7.2 Pessoas no mesmo contexto
+
+Duas Pessoas podem aparecer uma para a outra quando isso for necessário ao objeto legítimo que compartilham — por exemplo, participação em Coletivo, atividade, consulta, decisão ou outra superfície cuja autoridade exija participantes visíveis.
+
+Essa visibilidade deve ser **contextual**, não uma autorização global sobre a Pessoa.
+
+O recorte pode conter, quando necessário e autorizado:
+
+- identidade ou nome de apresentação;
+- imagem pública/de apresentação, se existir e for apropriada;
+- papel no contexto;
+- vínculo pertinente;
+- responsabilidade pertinente;
+- contribuição/ação conscientemente pública naquele objeto;
+- estado necessário à coordenação.
+
+Não deve revelar por consequência:
+
+- Journey privada;
+- objetivos privados;
+- dados de contato;
+- outros Coletivos/Organizações;
+- oportunidades relacionadas;
+- inferências pessoais;
+- histórico fora do objeto;
+- dados sensíveis;
+- informação não necessária à finalidade.
+
+### 7.3 Interação mediada
+
+```text
+PESSOA A
++
+OBJETO / CONTEXTO COMPARTILHADO
++
+PESSOA B
+→ INTERAÇÃO MEDIADA PELO OBJETO
+
+INTERAÇÃO MEDIADA
+≠ CONEXÃO SOCIAL
+≠ PERMISSÃO DE CONTATO DIRETO
+≠ VÍNCULO PERSISTENTE P↔P
+```
+
+Comentários, respostas, menções, mensagens contextuais ou outras mecânicas específicas somente podem existir quando a autoridade do objeto correspondente as contratar. Este documento não as cria genericamente.
+
+### 7.4 Reabertura
+
+Pessoa↔Pessoa deve ser reaberto somente se nova evidência canônica exigir um objeto relacional próprio, como conexão bilateral persistente, mensagem privada, rede de contatos ou outro lifecycle independente do contexto compartilhado.
 
 ## 8. Pessoa ↔ Organização
 
@@ -193,8 +268,11 @@ NEW SURFACE IDS
 NEW TRANSITION IDS
 → NONE
 
-PERSON↔PERSON
+PERSON↔PERSON AUTONOMOUS SOCIAL RELATIONSHIP
 → NOT ADJUDICATED
+
+PERSON↔PERSON CONTEXTUAL CO-PRESENCE
+→ ALLOWED WHEN REQUIRED BY AUTHORIZED SHARED OBJECT
 
 COLLECTIVE-INITIATED MEMBERSHIP
 → NOT ADJUDICATED
