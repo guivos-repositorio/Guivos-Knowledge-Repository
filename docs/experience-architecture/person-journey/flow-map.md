@@ -265,8 +265,8 @@ Exemplos:
 
 ```text
 PERSON SURFACES IN CURRENT REGISTRY
-→ 29
-→ includes PER-013 / PER-014 post-audit extensions
+→ 30
+→ includes PER-013 / PER-014 post-audit extensions and adjudicated PER-204
 
 PER-001
 → ALREADY COVERED BY PUBLIC HOME MASTER
