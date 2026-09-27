@@ -95,7 +95,7 @@ Volume de participação, reação ou mensagem não substitui autoridade legíti
 Uma atividade deve permitir compreender, no recorte aplicável:
 
 - identidade e finalidade;
-- responsável;
+- responsável, quando houver responsabilidade legitimamente assumida e voluntariamente aceita;
 - contexto do Coletivo;
 - condição/estado;
 - referência temporal quando material;
@@ -106,7 +106,7 @@ Uma atividade deve permitir compreender, no recorte aplicável:
 - público/participantes visíveis somente no limite autorizado;
 - registros autorizados após encerramento.
 
-Participar de uma atividade não cria automaticamente participação permanente no Coletivo.
+Participar de uma atividade não cria automaticamente participação permanente no Coletivo. Necessidade do Coletivo, participação e responsabilidade individual permanecem distintas; responsabilidade atribuída a uma Pessoa participante exige aceitação voluntária quando aplicável.
 
 ```text
 ATIVIDADE REALIZADA
@@ -180,7 +180,9 @@ A materialização deve distinguir, quando aplicáveis:
 - programada;
 - ativa/em curso;
 - alterada materialmente;
+- adiada;
 - pausada;
+- cancelada;
 - encerrada;
 - arquivada;
 - bloqueada;
