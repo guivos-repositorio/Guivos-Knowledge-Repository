@@ -412,7 +412,14 @@ O registro estável **não possui atualmente um `GKR-SURF-COL-*` dedicado exclus
 
 `GKR-SURF-COL-002` contém parte do contexto de autoridade na visão geral do responsável, mas **não é reclassificado aqui como superfície exclusiva de autoridade**.
 
-Não existe hoje um ID estável dedicado exclusivamente a este domínio. Nenhum novo ID é criado.
+Adjudicação estrutural vigente:
+
+- `UXA-014` exige propósito, autonomia, papéis, regras, moderação, participação voluntária e governança do Coletivo, mas não define objeto canônico ou lifecycle independente para uma superfície exclusiva de autoridade;
+- o modelo autenticado já exige que vínculo, contexto, papel, representação e autoridade sejam revalidados proporcionalmente em cada ação material;
+- `COL-002` contextualiza identidade, propósito, papel, governança e autoridade, sem absorver as responsabilidades próprias de `COL-003..008`;
+- portanto, **Coletivo e Autoridade permanece responsabilidade transversal absorvida pelas superfícies e contratos funcionais aplicáveis, não uma superfície dedicada com a evidência corrente**;
+- nenhum novo ID é criado; eventual identificador futuro exige nova evidência de objeto/responsabilidade/lifecycle próprios e governança do registro central;
+- ausência de ID dedicado não autoriza confundir pertencimento, representação, decisão coletiva, administração ou RBAC técnico.
 
 ```text
 PERTENCIMENTO
