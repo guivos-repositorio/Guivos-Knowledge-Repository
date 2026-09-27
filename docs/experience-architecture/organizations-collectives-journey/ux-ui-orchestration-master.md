@@ -404,7 +404,261 @@ Quando múltiplos elementos disputarem atenção, priorizar:
 
 Plano ou promoção não ultrapassa responsabilidade material apenas por valor comercial.
 
-## 21. Prototipação UX/UI — cobertura mínima
+
+## 21. Matriz de comportamento por superfície e plano
+
+A orquestração deve traduzir a baseline comercial em comportamento compreensível sem confundir **benefício comercial declarado** com **entitlement tecnicamente implementado**.
+
+### 21.1 Organização
+
+| Contexto / superfície | Conecta | Eleva | Transforma | Comportamento de orquestração |
+|---|---|---|---|---|
+| ORG-001 — Visão Geral | dashboard básico e indicadores essenciais | analytics avançados e agregados | dashboards personalizados conforme contrato | mostrar apenas profundidade sustentada pelo plano; capacidade superior pode ser explicada sem fabricar dado |
+| ORG-002/003 — Oportunidades | até 10 novas/mês; 15 ativas | até 50 novas/mês; 75 ativas | capacidade contratada | antes de ação que consome cota, tornar limite vigente compreensível; correção legítima não deve ser confundida com nova publicação |
+| administração | até 3 admins; 1 unidade | até 10 admins; até 5 unidades | conforme contrato / múltiplas unidades | ação de adicionar/expandir deve refletir capacidade vigente e autoridade humana |
+| relação com Coletivos | até 2 administráveis | até 10 administráveis | conforme contrato | não ocultar relação já existente por mudança de plano; diferenciar criar/administrar nova capacidade de consultar histórico legítimo |
+| exportação | básica | completa | automatizável | opção pode estar ausente, limitada ou explicada conforme capacidade governada |
+| integrações | não incluídas | limitadas | API/SSO/dedicadas | não mostrar integração como funcional se implementação não estiver contratada |
+| suporte | padrão | prioritário | dedicado/SLA | diferença comercial pode ser explicada em Planos/ajuda contextual sem alterar prioridade funcional da Journey |
+
+### 21.2 Coletivo
+
+| Contexto / superfície | Livre | Mobiliza | Impacta | Rede | Comportamento de orquestração |
+|---|---|---|---|---|---|
+| atividades | 1 gratuita/mês | 4/mês | 15/mês | contratada | ação de nova atividade deve refletir cota real; edição legítima não deve consumir unidade por inferência |
+| oportunidades | 1 gratuita/mês | 4/mês | 15/mês | contratada | explicar limite antes de nova criação quando material |
+| publicações ativas | 2 | 6 | 20 | contratada | atingir capacidade não apaga nem deslegitima publicações vigentes |
+| cobrança/publicação paga | não | sim | sim | sim | Livre não deve exibir cobrança como capacidade operacional disponível; pode explicar upgrade quando a pessoa responsável tenta publicar com cobrança |
+| administração | até 2 admins | até 5 | até 15 | contrato | autoridade humana continua separada de capacidade quantitativa |
+| núcleos/unidades | 1 | 1 | até 5 | múltiplos | criação/gestão adicional deve respeitar capacidade vigente |
+| participantes | gestão essencial | gestão ampliada | capacidades ampliadas conforme autoridades | conforme contrato | dados exibidos continuam sujeitos a finalidade, papel, minimização e proteção |
+| indicadores | básicos / 30 dias | ampliados | históricos e de impacto | personalizados | plano não autoriza inferir impacto; evidência continua necessária |
+| exportação | não declarada como capacidade própria | básica | completa | massa/personalizada conforme contrato | somente materializar opção executável quando houver autoridade técnica suficiente |
+| integrações | não | limitadas | avançadas | dedicadas/API/SSO | não inventar integração, fornecedor ou comportamento técnico |
+| suporte | padrão | prioritário | especializado | dedicado/SLA | não interfere na legitimidade de ações de governança |
+
+## 22. Ação visível, contextual, indisponível e não materializável
+
+Cada ação governada deve poder ser classificada, no contexto corrente, como:
+
+```text
+VISÍVEL E DISPONÍVEL
+→ plano + autoridade + estado permitem ação
+
+VISÍVEL E CONDICIONAL
+→ ação existe, mas depende de condição explicável
+
+VISÍVEL E INDISPONÍVEL
+→ capacidade conhecida, porém não disponível no plano/estado atual
+→ motivo + alternativa legítima + upgrade opcional quando aplicável
+
+OCULTA POR IRRELEVÂNCIA
+→ ação não pertence ao contexto atual
+→ ocultação não pode esconder direito, obrigação ou estado material
+
+NÃO MATERIALIZÁVEL
+→ benefício/capacidade comercial existe, mas comportamento técnico ainda não está contratado
+→ não simular como implementado
+```
+
+A decisão de ocultar não pode ser usada para esconder informação necessária à compreensão de estado, consequência, segurança, cobrança, direito ou responsabilidade.
+
+## 23. Upgrade contextual e avanço por necessidade
+
+Upgrade deve surgir de **necessidade observável**, nunca de pressão genérica.
+
+Exemplos legítimos:
+
+- Organização tenta criar nova oportunidade após atingir cota;
+- Organização precisa ampliar administradores, unidades ou Coletivos relacionados;
+- Organização solicita analytics/exportação/integração pertencente a plano superior;
+- Coletivo tenta publicar oferta paga estando no Livre;
+- Coletivo atinge cota de atividade, oportunidade ou publicação ativa;
+- Coletivo precisa de mais administradores, núcleos, analytics, exportação ou integração;
+- necessidade real exige dimensionamento assistido.
+
+A orientação deve explicar:
+
+```text
+CONTEXTO ATUAL
+→ plano vigente
+
+AÇÃO PRETENDIDA
+→ o que a pessoa responsável tentou fazer
+
+LIMITAÇÃO REAL
+→ capacidade/cota aplicável
+
+ALTERNATIVA NO PLANO ATUAL
+→ quando existir
+
+PLANO / CAMINHO QUE AMPLIA
+→ diferença comercial objetiva
+
+DECISÃO
+→ permanece com a pessoa autorizada
+```
+
+Não usar urgência artificial, perda fabricada, bloqueio surpresa, upgrade automático, plano pré-selecionado como decisão ou linguagem que confunda maior plano com maior legitimidade.
+
+`ORG-301` e `COL-301` permanecem superfícies especializadas de compreensão/comparação. Mudança consciente segue seus fluxos `301→302/303→304`; dimensionamento assistido usa `BND-002` somente quando a necessidade concreta o justificar.
+
+## 24. Mudança de tela e continuidades disponíveis
+
+Toda superfície deve oferecer somente continuidades justificadas por Registry, Priority Flows, Master ou navegação contextual neutra.
+
+A UI deve diferenciar:
+
+- **ação funcional** — produz ou solicita mudança de estado;
+- **handoff** — muda responsabilidade/perspectiva;
+- **navegação contextual** — muda tela sem produzir efeito material;
+- **retorno** — volta ao contexto anterior sem desfazer ação;
+- **atalho administrativo** — abre responsabilidade especializada sem mutação;
+- **saída para Planos** — consulta capacidade comercial sem selecionar plano.
+
+Exemplos já governados:
+
+```text
+ORG-001 ↔ ORG-301
+→ TRN-427 / TRN-428
+→ NAVEGAÇÃO INSTITUCIONAL SEM MUTAÇÃO COMERCIAL
+
+COL-002 ↔ COL-301
+→ TRN-417 / TRN-418
+→ NAVEGAÇÃO ADMINISTRATIVA SEM MUTAÇÃO COMERCIAL
+
+ORG-003 → ORG-008
+→ TRN-214
+→ ACESSO CONTEXTUAL À GESTÃO DE MANIFESTAÇÕES
+
+COL-003 → COL-004
+→ TRN-114
+→ CONTINUIDADE OPERACIONAL DO VÍNCULO JÁ FORMADO
+```
+
+Relação semântica entre superfícies não autoriza criar link direto por conveniência.
+
+## 25. Informações pertinentes sobre participantes envolvidos
+
+Quando uma responsabilidade envolver pessoas, membros, responsáveis, administradores, solicitantes ou contraparte, a superfície deve apresentar **somente o recorte necessário para a tarefa e autorizado pelo contexto**.
+
+Pode ser pertinente, conforme autoridade específica:
+
+- identidade ou referência necessária;
+- papel no contexto;
+- vínculo;
+- estado da solicitação/participação;
+- responsabilidade pela próxima ação;
+- proveniência da manifestação;
+- dados conscientemente enviados para a finalidade;
+- histórico material necessário à decisão;
+- contraparte institucional/coletiva aplicável.
+
+Nunca inferir que “membro” significa administrador, representante, aprovador ou responsável.
+
+```text
+PARTICIPANTE VISÍVEL
+≠ TODOS OS DADOS VISÍVEIS
+
+MEMBRO
+≠ ADMINISTRADOR
+
+ADMINISTRADOR
+≠ AUTORIDADE UNIVERSAL
+
+DADO EXISTENTE
+≠ DADO NECESSÁRIO NESTA SUPERFÍCIE
+```
+
+## 26. Eventos, atualizações e notificações
+
+A orquestração deve identificar **eventos materiais que exigem consciência ou continuidade**, mas não inventar canal, frequência ou automação sem autoridade específica.
+
+Eventos potencialmente notificáveis incluem, quando governados pelo objeto:
+
+- nova solicitação recebida;
+- pedido de informação adicional;
+- resposta à solicitação;
+- aprovação ou recusa;
+- mudança material de estado;
+- ação requerida pela contraparte;
+- proposta O↔C recebida ou alterada;
+- aprovação, recusa, contestação, pausa ou encerramento bilateral;
+- manifestação/inscrição interna recebida;
+- comunicação/atualização material em `ORG-008 ↔ PER-204`;
+- prazo real;
+- falha ou indeterminação que exija retomada;
+- capacidade/cota atingida quando isso afetar uma ação pretendida;
+- resultado confirmado de mudança de plano/cobrança.
+
+Para cada evento, a materialização deve responder, quando aplicável:
+
+```text
+O QUE ACONTECEU?
+→ estado factual
+
+QUEM / QUAL CONTEXTO?
+→ recorte autorizado
+
+EXIGE AÇÃO?
+→ sim / não / indeterminado
+
+QUAL AÇÃO?
+→ somente se governada
+
+PARA ONDE CONTINUAR?
+→ superfície/handoff legítimo
+
+O QUE NÃO DEVE SER EXPOSTO?
+→ dados internos/protegidos fora da finalidade
+```
+
+Sem contrato específico, não inventar:
+
+- e-mail obrigatório;
+- push;
+- SMS;
+- WhatsApp;
+- frequência;
+- digest;
+- lembrete automático;
+- escalonamento;
+- preferência padrão;
+- marcação de leitura;
+- SLA de notificação.
+
+```text
+EVENTO MATERIAL
+→ PODE EXIGIR ATUALIZAÇÃO VISÍVEL
+
+EVENTO MATERIAL
+≠ CANAL AUTOMATICAMENTE AUTORIZADO
+≠ AUTOMAÇÃO AUTOMATICAMENTE AUTORIZADA
+```
+
+## 27. Matriz mínima de tradução por superfície
+
+Todo Master de superfície consumido pela orquestração deve ser traduzível para a seguinte matriz, sem exigir que todos os campos gerem UI própria:
+
+| Dimensão | Pergunta de orquestração |
+|---|---|
+| contexto | quem atua e em nome de quem? |
+| estado | qual é o estado real agora? |
+| informação | o que precisa ser mostrado para compreender/agir? |
+| participantes | quem é pertinente e qual recorte pode ser exibido? |
+| ações | o que pode ser feito agora? |
+| plano | o plano altera capacidade, cota ou profundidade? |
+| autoridade | quem pode executar/confirmar? |
+| transição | qual mudança material pode ocorrer? |
+| navegação | quais continuidades neutras são legítimas? |
+| feedback | como processamento, sucesso, falha ou indeterminação aparecem? |
+| evento | quem precisa tomar conhecimento após mudança material? |
+| proteção | o que não deve ser exposto? |
+| upgrade | existe ampliação objetiva aplicável e opcional? |
+| retorno | como voltar/retomar sem fabricar efeito? |
+
+
+## 28. Prototipação UX/UI — cobertura mínima
 
 Uma prototipação integrada deve conseguir demonstrar, sem afirmar implementação:
 
@@ -431,7 +685,7 @@ Uma prototipação integrada deve conseguir demonstrar, sem afirmar implementaç
 
 Isso não exige um frame por item.
 
-## 22. Liberdade de Design
+## 29. Liberdade de Design
 
 Este documento governa significado, continuidade e comportamento transversal, não estética.
 
@@ -439,7 +693,7 @@ Design pode decidir composição, grid, componentes, navegação visual, tipogra
 
 A liberdade visual não pode alterar participante, autoridade, responsabilidade, estado, transição, evidência, plano ou significado governado.
 
-## 23. IA — source lock
+## 30. IA — source lock
 
 IA utilizada para Design ou prototipação deve operar em source lock com o GKR e consumir esta autoridade junto dos Masters necessários.
 
@@ -456,7 +710,7 @@ NÃO ESTÁ GOVERNADO NO GKR
 
 IA é consumidora da verdade de produto, não sua autora.
 
-## 24. Critérios executivos de aceite
+## 31. Critérios executivos de aceite
 
 Uma materialização orientada por esta autoridade é semanticamente aceitável quando:
 
@@ -477,7 +731,7 @@ Uma materialização orientada por esta autoridade é semanticamente aceitável 
 15. protótipo não é confundido com implementação;
 16. Product Engineering não é liberado por esta autoridade.
 
-## 25. Ordem recomendada de consumo
+## 32. Ordem recomendada de consumo
 
 ```text
 LEIA PRIMEIRO
@@ -492,7 +746,7 @@ LEIA PRIMEIRO
 → REGISTRIES / AUTORIDADE ESPECÍFICA QUANDO NECESSÁRIO
 ```
 
-## 26. Boundary de maturidade
+## 33. Boundary de maturidade
 
 Esta autoridade candidata organiza o consumo da verdade documental já existente. Ela não reabre o checkpoint de completude estrutural e não promove maturidade de superfície ou transição.
 
@@ -516,7 +770,7 @@ PRODUCT ENGINEERING
 → NOT_RELEASED
 ```
 
-## 27. Estado
+## 34. Estado
 
 ```text
 O/C JOURNEY UX/UI ORCHESTRATION
