@@ -2,12 +2,13 @@
 id: GKR-UX-ORGCOL-JOURNEY-READ-FIRST-001
 title: Jornada de Organizações e Coletivos — Leia Primeiro
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-09-27
 normative: true
 maturity: journey_consumption_authority
 depends_on:
+  - GKR-UX-ORGCOL-JOURNEY-ORCHESTRATION-001
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
@@ -78,6 +79,7 @@ Nenhum documento isolado autoriza extrapolar os demais.
 
 ```text
 LEIA PRIMEIRO
+→ DOCUMENTO MESTRE DE ORQUESTRAÇÃO UX/UI
 → JORNADAS INTEGRADAS
 → ATORES / AUTORIDADES / JOBS
 → ARQUITETURA DA INFORMAÇÃO
