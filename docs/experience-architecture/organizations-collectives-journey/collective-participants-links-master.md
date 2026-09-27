@@ -105,16 +105,15 @@ GKR-SURF-COL-003
 → GKR-SURF-COL-004
 ```
 
-O Transition Registry não registra atualmente uma transição estável dedicada `COL-003 → COL-004`.
+O Transition Registry registra `GKR-TRN-114 — COL-003 → COL-004` como continuidade operacional do mesmo vínculo já formado pela aprovação. A transição permanece contratada e não constitui prova de persistência técnica.
 
 Portanto:
 
 ```text
 CONTINUIDADE FUNCIONAL
-→ RECONHECIDA
-
-TRANSIÇÃO ESTÁVEL DEDICADA
-→ AUSENTE
+→ GKR-TRN-114
+→ CONTRATADA
+→ MESMO VÍNCULO / NOVA RESPONSABILIDADE OPERACIONAL
 
 TRATAMENTO
 → NÃO INVENTAR GKR-TRN
@@ -499,7 +498,7 @@ Design mantém liberdade sobre:
 Design não pode:
 
 - fundir `COL-003`, `COL-004` e `COL-005` por conveniência;
-- inventar transição para `COL-003 → COL-004`;
+- tratar `GKR-TRN-114` como nova aprovação, novo vínculo ou confirmação técnica automática;
 - promover `TRN-113`;
 - transformar participantes em ranking ou dashboard obrigatório;
 - criar métricas sem autoridade;
@@ -541,7 +540,7 @@ Este Master é funcionalmente suficiente quando a materialização:
 
 1. preserva `COL-004` como responsabilidade distinta de `COL-003` e `COL-005`;
 2. identifica claramente Coletivo, vínculo, estado, papel e autoridade aplicáveis;
-3. preserva a lacuna estável `COL-003 → COL-004`;
+3. preserva `GKR-TRN-114` como handoff estável entre decisão da solicitação e gestão do vínculo, sem duplicar `GKR-TRN-108`;
 4. consome `TRN-113` como contratado, sem promoção;
 5. não confunde pertencimento, papel, representação, administração e autoridade;
 6. suporta ativo, pausa, saída e encerramento sem tratá-los como equivalentes;
@@ -559,7 +558,6 @@ Este Master é funcionalmente suficiente quando a materialização:
 
 Permanecem fora deste Master até autoridade específica:
 
-- transição estável dedicada `COL-003 → COL-004`;
 - regras técnicas finais de criação e persistência de vínculo;
 - modelo técnico de papéis e responsabilidades;
 - RBAC técnico;
@@ -584,7 +582,7 @@ SURFACE GOVERNED
 
 POST-APPROVAL ORIGIN
 → GKR-SURF-COL-003
-→ DEDICATED STABLE TRANSITION GAP PRESERVED
+→ GKR-TRN-114 / CONTRACTED / SAME LINK CONTINUITY
 
 OFFICIAL COMMUNICATION CONTINUITY
 → GKR-TRN-113
