@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-ORGANIZATION-001
 title: Detalhamento Obrigatório das Superfícies da Organização
 status: active
-version: 0.13.8
+version: 0.13.9
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-09-27
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
 related:
   - GKR-PLANS-ORGANIZATION-001
