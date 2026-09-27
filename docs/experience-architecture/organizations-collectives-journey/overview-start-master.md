@@ -429,7 +429,7 @@ O contrato é consumido corretamente quando:
 
 Este documento não resolve:
 
-- identidade dedicada para Organização e Autoridade;
+- `Organização e Autoridade` permanece responsabilidade transversal adjudicada pelas autoridades autenticadas correntes; este Master não cria identidade dedicada nem reabre essa decisão;
 - identidade dedicada para Coletivo e Autoridade;
 - superfície exclusiva de Aprendizados e Evidências do Coletivo;
 - completude de `ORG-007`;
