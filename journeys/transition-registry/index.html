@@ -6366,7 +6366,7 @@
 <h1 id="registro-granular-de-transicoes">Registro Granular de Transições<a class="headerlink" href="#registro-granular-de-transicoes" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis às transições correntes das Jornadas Integradas. A maturidade declarada em cada linha é o estado operativo a ser usado por Design e prototipação.</p>
-<p>A contagem corrente é de <strong>67 transições</strong>. <code>TRN-212</code> formaliza a entrada consciente da Pessoa no processo interno de manifestação de interesse ou inscrição.</p>
+<p>A contagem corrente é de <strong>69 transições</strong>. <code>TRN-212</code> formaliza a entrada consciente da Pessoa no processo interno de manifestação de interesse ou inscrição; <code>TRN-213</code> formaliza o handoff bilateral autorizado para a Organização; <code>TRN-214</code> formaliza o acesso institucional contextual da oportunidade ativa à gestão desses objetos.</p>
 <h2 id="2-convencoes-de-estado">2. Convenções de estado<a class="headerlink" href="#2-convencoes-de-estado" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -6422,7 +6422,7 @@
 </tr>
 <tr>
 <td>Organização, oportunidades e relações bilaterais</td>
-<td style="text-align: right;">12</td>
+<td style="text-align: right;">14</td>
 </tr>
 <tr>
 <td>Opportunity Boost</td>
@@ -6434,7 +6434,7 @@
 </tr>
 <tr>
 <td><strong>Total</strong></td>
-<td style="text-align: right;"><strong>67</strong></td>
+<td style="text-align: right;"><strong>69</strong></td>
 </tr>
 </tbody>
 </table>
@@ -6818,6 +6818,20 @@
 <td>contratada</td>
 <td>oportunidade suporta processo interno legítimo + ação consciente; entrada preserva finalidade, publicador e recorte autorizado de dados; não cria elegibilidade, seleção, participação ou resultado</td>
 </tr>
+<tr>
+<td>GKR-TRN-213</td>
+<td>PER-204</td>
+<td>ORG-008</td>
+<td>contratada</td>
+<td>envio consciente e recebimento do mesmo objeto bilateral no recorte autorizado; muda perspectiva e autoridade sem criar elegibilidade, seleção, participação ou resultado</td>
+</tr>
+<tr>
+<td>GKR-TRN-214</td>
+<td>ORG-003</td>
+<td>ORG-008</td>
+<td>contratada</td>
+<td>acesso institucional contextual à gestão de manifestações/inscrições da oportunidade; não cria objeto, não confirma recebimento e não altera o estado da oportunidade</td>
+</tr>
 </tbody>
 </table>
 <h3 id="61-contrato-v4-de-gkr-trn-205">6.1 Contrato V4 de <code>GKR-TRN-205</code><a class="headerlink" href="#61-contrato-v4-de-gkr-trn-205" title="Permanent link">&para;</a></h3>
@@ -7150,13 +7164,16 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 </ul>
 <h2 id="10-preservacoes-de-maturidade">10. Preservações de maturidade<a class="headerlink" href="#10-preservacoes-de-maturidade" title="Permanent link">&para;</a></h2>
 <ul>
-<li>transições totais correntes são <strong>67</strong>, incluindo <code>TRN-212</code> como contratada;</li>
+<li>transições totais correntes são <strong>69</strong>, incluindo <code>TRN-212</code>, <code>TRN-213</code> e <code>TRN-214</code> como contratadas;</li>
 <li><code>TRN-008..013</code> estão <strong>integralmente validadas</strong> no limite documental;</li>
 <li><code>TRN-406/407</code> ficam <strong>contratadas</strong> até materialização suficiente de <code>PER-009</code>;</li>
 <li><code>TRN-417/418</code> e <code>TRN-427/428</code> ficam <strong>integralmente validadas</strong> no limite documental de navegação administrativa;</li>
 <li><code>TRN-401..405</code>, <code>TRN-411..415</code> e <code>TRN-421..425</code> permanecem localmente validadas;</li>
 <li><code>TRN-205</code> permanece integralmente validada até <code>BND-001</code> para processo externo;</li>
-<li><code>TRN-212</code> permanece <strong>contratada</strong> para <code>PER-203 → PER-204</code>; retorno dedicado não recebe <code>TRN-213</code> sem adjudicação própria;</li>
+<li><code>TRN-212</code> permanece <strong>contratada</strong> para <code>PER-203 → PER-204</code>;</li>
+<li><code>TRN-213</code> permanece <strong>contratada</strong> para <code>PER-204 → ORG-008</code> como handoff bilateral autorizado;</li>
+<li><code>TRN-214</code> permanece <strong>contratada</strong> para <code>ORG-003 → ORG-008</code> como continuidade institucional contextual;</li>
+<li>retornos dedicados a partir de <code>ORG-008</code> permanecem sem <code>TRN-ID</code> e exigem adjudicação própria;</li>
 <li>nenhum comportamento posterior a <code>BND-001</code> é atribuído à Guivos;</li>
 <li><code>TRN-304</code>, <code>TRN-305</code>, <code>TRN-306</code>, <code>TRN-416</code> e <code>TRN-426</code> permanecem parciais;</li>
 <li>validação documental continua distinta de implementação técnica.</li>
