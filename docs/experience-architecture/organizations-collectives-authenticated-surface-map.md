@@ -399,9 +399,12 @@ APOIO
 O registro estável **não possui atualmente um `GKR-SURF-COL-*` dedicado exclusivamente a este domínio**. Portanto:
 
 - nenhum ID é criado nesta frente;
-- evidência continua requisito transversal nos objetos responsáveis;
-- ausência de evidência deve permanecer declarável;
-- eventual ID dedicado dependerá de governança futura do registro central.
+- `UXA-014` exige resultados e aprendizados coletivos autorizados e condiciona avanço coletivo à existência de evidência suficiente, sem definir objeto canônico ou lifecycle independente para este domínio;
+- o State Map já governa transversalmente proveniência, suficiência, ausência, conflito e contestação de evidência;
+- atividades, decisões, relações, proteção e demais objetos permanecem fontes de verdade de seus próprios fatos; este domínio não os duplica nem converte atividade em resultado ou impacto;
+- portanto, **Aprendizados e Evidências permanece responsabilidade transversal de compreensão e sustentação epistemológica, não uma superfície dedicada com a evidência corrente**;
+- ausência de evidência deve permanecer declarável e aprendizado não pode ser inferido apenas da ocorrência de atividade;
+- eventual criação futura de identificador exige nova evidência de objeto/responsabilidade/lifecycle próprios e governança do registro central.
 
 ### 7.7 Coletivo e Autoridade
 
