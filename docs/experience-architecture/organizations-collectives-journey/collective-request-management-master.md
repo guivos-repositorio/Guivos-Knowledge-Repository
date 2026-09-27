@@ -331,11 +331,12 @@ COL-004
 → GOVERNA PARTICIPANTES E VÍNCULOS NO LIMITE DE SUA AUTORIDADE
 
 COL-003 → COL-004
-→ CONTINUIDADE FUNCIONAL RECONHECIDA
-→ TRANSIÇÃO ESTÁVEL DEDICADA AUSENTE
+→ GKR-TRN-114
+→ CONTINUIDADE OPERACIONAL DO MESMO VÍNCULO JÁ FORMADO
+→ CONTRATADA
 ```
 
-Este Master não preenche essa lacuna e não trata aprovação como persistência técnica confirmada do vínculo.
+`GKR-TRN-114` fecha a lacuna de identidade da continuidade, mas não trata aprovação como persistência técnica confirmada do vínculo e não duplica o efeito de `GKR-TRN-108`.
 
 ## 14. Processamento e confirmação
 
@@ -504,7 +505,7 @@ Este Master é funcionalmente suficiente quando a materialização:
 1. preserva `COL-003` como responsabilidade distinta de `COL-004`;
 2. identifica claramente Coletivo, solicitação, estado e autoridade;
 3. consome `TRN-105..109` e `TRN-112` sem promoção;
-4. preserva a lacuna de transição estável `COL-003 → COL-004`;
+4. preserva `GKR-TRN-114` como continuidade operacional do vínculo já formado, sem duplicar `GKR-TRN-108`;
 5. não confunde aprovação com vínculo, papel, representação ou administração;
 6. suporta informação adicional sem inventar formulário universal;
 7. preserva estados de proteção, contestação, indisponibilidade e resultado indeterminado;
@@ -521,7 +522,6 @@ Este Master é funcionalmente suficiente quando a materialização:
 
 Permanecem fora deste Master até autoridade específica:
 
-- transição estável dedicada `COL-003 → COL-004`;
 - critérios materiais universais de aprovação, se vierem a existir;
 - política universal de revisão/recurso, se vier a existir;
 - RBAC técnico;
