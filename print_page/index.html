@@ -29563,10 +29563,15 @@ PER-010 ↔ PER-012
 <div class="highlight"><pre><span></span><code>PER-201 — MAPA DE OPORTUNIDADES
 ↔ PER-202 — LISTA DE OPORTUNIDADES
 → PER-203 — DETALHE DE OPORTUNIDADE
-→ estado de revisão consciente dentro de PER-203
-→ TRN-205
-→ BND-001 — FRONTEIRA EXTERNA
-→ TERCEIRO
+├── processo externo
+│   → estado de revisão consciente dentro de PER-203
+│   → TRN-205
+│   → BND-001 — FRONTEIRA EXTERNA
+│   → TERCEIRO
+└── processo interno legítimo
+    → ação consciente
+    → TRN-212
+    → PER-204 — MANIFESTAÇÃO DE INTERESSE / INSCRIÇÃO INTERNA
 </code></pre></div>
 <p>Regras estruturais:</p>
 <ul>
@@ -29574,7 +29579,10 @@ PER-010 ↔ PER-012
 <li>alternar Mapa ↔ Lista não cria nova Journey;</li>
 <li>a revisão consciente não cria nova superfície;</li>
 <li><code>BND-001</code> não é tela Guivos;</li>
-<li>resultado posterior ao handoff pertence ao terceiro.</li>
+<li>resultado posterior ao handoff externo pertence ao terceiro;</li>
+<li><code>PER-204</code> governa o objeto bilateral interno após entrada consciente por <code>TRN-212</code>;</li>
+<li>manifestação de interesse, inscrição, elegibilidade, seleção e participação permanecem objetos/estados distintos;</li>
+<li>retorno contextual de <code>PER-204</code> à oportunidade é necessário, mas não cria <code>TRN-213</code> sem adjudicação própria.</li>
 </ul>
 <h2 id="experience-architecture-person-journey-flow-map-5-familia-de-coletivos-na-perspectiva-da-pessoa">5. Família de Coletivos na perspectiva da Pessoa<a class="headerlink" href="#experience-architecture-person-journey-flow-map-5-familia-de-coletivos-na-perspectiva-da-pessoa" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>PER-101 — EXPLORAR COLETIVOS
@@ -29694,6 +29702,12 @@ PER-301
 <td><strong>construído / current</strong></td>
 </tr>
 <tr>
+<td style="text-align: right;">13A</td>
+<td><code>PER-204</code></td>
+<td>Manifestação de Interesse / Inscrição Interna</td>
+<td><strong>contrato funcional candidato com identidade adjudicada</strong></td>
+</tr>
+<tr>
 <td style="text-align: right;">14</td>
 <td><code>PER-101</code></td>
 <td>Explorar Coletivos</td>
@@ -29793,8 +29807,8 @@ DOCUMENTADO + VALIDADO
 </ul>
 <h2 id="experience-architecture-person-journey-flow-map-10-estado">10. Estado<a class="headerlink" href="#experience-architecture-person-journey-flow-map-10-estado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>PERSON SURFACES IN CURRENT REGISTRY
-→ 29
-→ includes PER-013 / PER-014 post-audit extensions
+→ 30
+→ includes PER-013 / PER-014 post-audit extensions and adjudicated PER-204
 
 PER-001
 → ALREADY COVERED BY PUBLIC HOME MASTER
@@ -30095,7 +30109,7 @@ PRODUCT ENGINEERING
 </code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-internal-opportunity-application-functional-contract" heading-number="8.2.4"><h1 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-jornada-da-pessoa-manifestacao-de-interesse-e-inscricao-interna-em-oportunidades-contrato-funcional-candidato">Jornada da Pessoa — Manifestação de Interesse e Inscrição Interna em Oportunidades — Contrato Funcional Candidato<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-jornada-da-pessoa-manifestacao-de-interesse-e-inscricao-interna-em-oportunidades-contrato-funcional-candidato" title="Permanent link">&para;</a></h1>
 <h2 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento define a responsabilidade funcional candidata da perspectiva da Pessoa quando uma oportunidade permitir manifestação de interesse ou inscrição <strong>dentro da Guivos</strong>.</p>
-<p>Ele governa responsabilidade antes de identidade de superfície.</p>
+<p>A adjudicação posterior confirmou esta responsabilidade como <code>GKR-SURF-PER-204</code>, preservando o contrato funcional aqui definido.</p>
 <div class="highlight"><pre><span></span><code>CONTRATO FUNCIONAL
 ≠ NOVO PER-ID AUTOMÁTICO
 
@@ -30105,14 +30119,15 @@ MUDANÇA DE RESPONSABILIDADE
 PROCESSO INTERNO
 ≠ BND-001
 </code></pre></div>
-<p>Nenhum Surface ID ou Transition ID é criado por este contrato.</p>
+<p>A identidade canônica corrente é <code>GKR-SURF-PER-204</code>. A entrada interna a partir de <code>PER-203</code> é <code>GKR-TRN-212</code>; a continuidade externa por <code>TRN-205 → BND-001</code> permanece separada.</p>
 <h2 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-2-origem-e-fronteira-com-per-203">2. Origem e fronteira com PER-203<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-2-origem-e-fronteira-com-per-203" title="Permanent link">&para;</a></h2>
 <p><code>PER-203 — Detalhe de Oportunidade</code> permanece responsável por compreensão, condições materiais, relevância contextual autorizada, salvar, comparar e revisão de saída externa.</p>
 <p>Quando a oportunidade oferecer processo interno legítimo, a Pessoa pode iniciar conscientemente uma continuidade própria.</p>
 <div class="highlight"><pre><span></span><code>PER-203
 → OPORTUNIDADE COM PROCESSO INTERNO LEGÍTIMO
 → AÇÃO CONSCIENTE
-→ RESPONSABILIDADE CANDIDATA DE MANIFESTAÇÃO / INSCRIÇÃO
+→ TRN-212
+→ PER-204 — MANIFESTAÇÃO DE INTERESSE / INSCRIÇÃO INTERNA
 </code></pre></div>
 <p>Abrir ou visualizar <code>PER-203</code> não cria interesse, inscrição ou candidatura.</p>
 <p>A continuidade externa permanece:</p>
@@ -30136,7 +30151,7 @@ PROCESSO INTERNO
 <li>compreender decisão ou encerramento sem promessa de resultado;</li>
 <li>retornar à oportunidade e à Journey sem perder contexto legítimo.</li>
 </ol>
-<p>Esse job persiste além do ato inicial de <code>PER-203</code>; por isso não deve ser absorvido por conveniência pelo Detalhe.</p>
+<p>Esse job persiste além do ato inicial de <code>PER-203</code>; por isso foi adjudicado como responsabilidade própria em <code>PER-204</code> e não deve ser absorvido por conveniência pelo Detalhe.</p>
 <h2 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-4-dois-modos-dois-objetos">4. Dois modos, dois objetos<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-4-dois-modos-dois-objetos" title="Permanent link">&para;</a></h2>
 <h3 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-41-manifestacao-de-interesse">4.1 Manifestação de interesse<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-41-manifestacao-de-interesse" title="Permanent link">&para;</a></h3>
 <p>É intenção leve, consciente e reversível quando legitimamente oferecida.</p>
@@ -30308,7 +30323,7 @@ ENCERRAR PROCESSO
 <li>converter processo interno em externo;</li>
 <li>confirmar resultado.</li>
 </ul>
-<p><code>PER-203</code> permanece referência da oportunidade; a responsabilidade candidata governa o objeto bilateral interno.</p>
+<p><code>PER-203</code> permanece referência da oportunidade; <code>PER-204</code> governa o objeto bilateral interno. O retorno contextual é necessário, mas não recebe <code>TRN-213</code> sem adjudicação própria.</p>
 <h2 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-15-relacao-com-relevancia">15. Relação com relevância<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-15-relacao-com-relevancia" title="Permanent link">&para;</a></h2>
 <p>Relevância usada para ajudar a Pessoa a compreender uma oportunidade não atravessa automaticamente para o publicador.</p>
 <div class="highlight"><pre><span></span><code>RELEVÂNCIA PARA A PESSOA
@@ -30366,23 +30381,14 @@ EXPLICAÇÃO DE PERTINÊNCIA
 → SINALIZAR
 → NÃO INVENTAR
 </code></pre></div>
-<h2 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-19-criterio-para-adjudicar-identidade-de-superficie">19. Critério para adjudicar identidade de superfície<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-19-criterio-para-adjudicar-identidade-de-superficie" title="Permanent link">&para;</a></h2>
-<p>Um futuro gate poderá decidir novo <code>PER-ID</code> somente após confirmar que:</p>
-<ol>
-<li>o job bilateral persiste além do Detalhe;</li>
-<li>há estados próprios após o envio;</li>
-<li>existe acompanhamento independente da leitura da oportunidade;</li>
-<li>correção, retirada e recuperação pertencem ao objeto bilateral;</li>
-<li>o retorno a <code>PER-203</code> não elimina essa responsabilidade;</li>
-<li>a responsabilidade não cabe legitimamente como estado interno de superfície existente.</li>
-</ol>
-<p>Este contrato registra esses elementos como candidatos; não promove identidade por si só.</p>
+<h2 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-19-identidade-adjudicada">19. Identidade adjudicada<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-19-identidade-adjudicada" title="Permanent link">&para;</a></h2>
+<p>A responsabilidade satisfaz os critérios de job próprio, estados persistentes, acompanhamento, correção/retirada, recuperação e continuidade independente do Detalhe. O Registry a identifica como <code>GKR-SURF-PER-204</code>.</p>
+<p>A mudança consciente de responsabilidade a partir de <code>PER-203</code> é <code>GKR-TRN-212</code>. Isso não cria inscrição por navegação: a oportunidade deve suportar processo interno legítimo e a Pessoa deve escolher prosseguir conscientemente.</p>
+<p>O retorno a <code>PER-203</code> continua funcionalmente necessário, mas não recebe identidade de transição dedicada por simetria. <code>TRN-213</code> permanece não criado até prova de necessidade própria.</p>
 <h2 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-20-lacunas-preservadas">20. Lacunas preservadas<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-20-lacunas-preservadas" title="Permanent link">&para;</a></h2>
 <p>Permanecem abertas:</p>
 <ul>
-<li>decisão formal sobre novo Surface ID da Pessoa;</li>
-<li>Transition ID entre <code>PER-203</code> e a responsabilidade interna;</li>
-<li>eventual retorno dedicado;</li>
+<li>eventual identidade dedicada para retorno, somente se necessidade própria for comprovada;</li>
 <li>campos e documentos por tipo de oportunidade;</li>
 <li>regras específicas de elegibilidade/seleção;</li>
 <li>notificações;</li>
@@ -30396,13 +30402,16 @@ EXPLICAÇÃO DE PERTINÊNCIA
 </ul>
 <h2 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-21-estado-governado">21. Estado governado<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-21-estado-governado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>RESPONSABILIDADE FUNCIONAL DA PESSOA
-→ CANDIDATA
+→ CONTRATO FUNCIONAL CANDIDATO COM IDENTIDADE ADJUDICADA
 
 SURFACE ID
-→ NONE
+→ GKR-SURF-PER-204
 
-TRANSITION ID
-→ NONE
+TRANSITION ID DE ENTRADA
+→ GKR-TRN-212
+
+TRANSITION ID DE RETORNO DEDICADO
+→ NONE / NÃO JUSTIFICADO
 
 PER-203
 → PRESERVADO
@@ -36002,7 +36011,7 @@ PRODUCT ENGINEERING
 
 NEXT DOCUMENTATION TARGET
 → PER-203 — DETALHE DE OPORTUNIDADE
-</code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-per-203-opportunity-detail-master" heading-number="8.3.15"><nav class='md-tags'><span class='md-tag'>person-journey</span><span class='md-tag'>per-203</span><span class='md-tag'>opportunities</span><span class='md-tag'>detail</span><span class='md-tag'>external-boundary</span><span class='md-tag'>surface-master</span></nav><h1 id="jornada-da-pessoa-per-203-detalhe-de-oportunidade-documento-mestre-de-superficie">Jornada da Pessoa — PER-203 — Detalhe de Oportunidade — Documento Mestre de Superfície<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-jornada-da-pessoa-per-203-detalhe-de-oportunidade-documento-mestre-de-superficie" title="Permanent link">&para;</a></h1>
+</code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-per-203-opportunity-detail-master" heading-number="8.3.15"><nav class='md-tags'><span class='md-tag'>person-journey</span><span class='md-tag'>per-203</span><span class='md-tag'>opportunities</span><span class='md-tag'>detail</span><span class='md-tag'>external-boundary</span><span class='md-tag'>internal-opportunity-process</span><span class='md-tag'>surface-master</span></nav><h1 id="jornada-da-pessoa-per-203-detalhe-de-oportunidade-documento-mestre-de-superficie">Jornada da Pessoa — PER-203 — Detalhe de Oportunidade — Documento Mestre de Superfície<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-jornada-da-pessoa-per-203-detalhe-de-oportunidade-documento-mestre-de-superficie" title="Permanent link">&para;</a></h1>
 <h2 id="experience-architecture-person-journey-per-203-opportunity-detail-master-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento consolida a definição corrente de consumo de <code>PER-203 — Detalhe de Oportunidade</code> para designer humana, IA opcional, Produto, UX, Research, Legal/Privacidade e Engenharia.</p>
 <p>O Detalhe existe para permitir que a Pessoa <strong>compreenda uma oportunidade, suas condições, seu responsável, sua relação com o contexto autorizado e as consequências de prosseguir antes de decidir</strong>.</p>
@@ -36017,9 +36026,14 @@ PER-202 — LISTA
 → PER-203 — DETALHE
 
 PER-203 — DETALHE
-→ ESTADO INTERNO DE REVISÃO CONSCIENTE
-→ TRN-205 / INTEGRALMENTE VALIDADA ATÉ BND-001
-→ BND-001 — AUTORIDADE EXTERNA
+├── PROCESSO EXTERNO
+│   → ESTADO INTERNO DE REVISÃO CONSCIENTE
+│   → TRN-205 / INTEGRALMENTE VALIDADA ATÉ BND-001
+│   → BND-001 — AUTORIDADE EXTERNA
+└── PROCESSO INTERNO LEGÍTIMO
+    → AÇÃO CONSCIENTE DE PROSSEGUIR
+    → TRN-212 / CONTRATADA
+    → PER-204 — MANIFESTAÇÃO DE INTERESSE / INSCRIÇÃO INTERNA
 </code></pre></div>
 <p><code>BND-001</code> é fronteira de autoridade, não tela da Guivos.</p>
 <h2 id="experience-architecture-person-journey-per-203-opportunity-detail-master-3-trabalho-da-pessoa">3. Trabalho da Pessoa<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-3-trabalho-da-pessoa" title="Permanent link">&para;</a></h2>
@@ -36038,9 +36052,11 @@ PER-203 — DETALHE
 <li>salvar para considerar quando a capacidade estiver legitimamente disponível;</li>
 <li>comparar quando a capacidade estiver legitimamente disponível;</li>
 <li>corrigir, contestar, recusar ou não prosseguir;</li>
-<li>iniciar conscientemente uma saída externa;</li>
-<li>revisar destino, responsável e transferência de dados/contexto antes da saída;</li>
-<li>cancelar a saída e permanecer na Guivos;</li>
+<li>iniciar conscientemente uma saída externa quando o processo pertencer a terceiro;</li>
+<li>revisar destino, responsável e transferência de dados/contexto antes da saída externa;</li>
+<li>iniciar conscientemente <code>TRN-212 → PER-204</code> quando a oportunidade oferecer processo interno legítimo;</li>
+<li>distinguir manifestação de interesse de inscrição, elegibilidade, seleção e participação;</li>
+<li>cancelar a continuidade e permanecer no Detalhe antes de qualquer efeito material;</li>
 <li>retornar ao contexto de descoberta quando aplicável.</li>
 </ol>
 <h2 id="experience-architecture-person-journey-per-203-opportunity-detail-master-4-identidade-e-continuidade">4. Identidade e continuidade<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-4-identidade-e-continuidade" title="Permanent link">&para;</a></h2>
@@ -36331,6 +36347,20 @@ COMPARAR ≠ DECIDIR PELA PESSOA
 <li>que preço, disponibilidade, condição ou elegibilidade podem ser revalidados externamente;</li>
 <li>que a conclusão externa não é garantida pela Guivos.</li>
 </ol>
+<h2 id="experience-architecture-person-journey-per-203-opportunity-detail-master-171-continuidade-interna-para-per-204">17.1 Continuidade interna para PER-204<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-171-continuidade-interna-para-per-204" title="Permanent link">&para;</a></h2>
+<p>Quando a oportunidade oferecer processo interno legítimo, <code>PER-203</code> pode apresentar a ação consciente que inicia <code>GKR-TRN-212 → GKR-SURF-PER-204</code>.</p>
+<p>Essa ramificação não transforma o Detalhe em formulário, candidatura ou acompanhamento. <code>PER-203</code> continua responsável por compreender a oportunidade e decidir como prosseguir; <code>PER-204</code> passa a governar o objeto bilateral interno.</p>
+<div class="highlight"><pre><span></span><code>VISUALIZAR PER-203
+≠ MANIFESTAR INTERESSE
+≠ INSCREVER-SE
+
+AÇÃO CONSCIENTE PARA PROCESSO INTERNO
+→ TRN-212
+→ PER-204
+</code></pre></div>
+<p>A entrada deve preservar identidade da oportunidade, publicador, finalidade e somente o contexto necessário à continuidade. Dados da Journey, razões internas de relevância, inferências ou informações sensíveis não atravessam por padrão.</p>
+<p><code>TRN-205 → BND-001</code> continua sendo a rota governada aqui para processo externo. A existência de <code>TRN-212</code> não altera sua maturidade nem presume que toda oportunidade possua processo interno.</p>
+<p>O retorno contextual de <code>PER-204</code> à oportunidade é funcionalmente necessário, mas não recebe <code>TRN-213</code> sem adjudicação própria.</p>
 <h2 id="experience-architecture-person-journey-per-203-opportunity-detail-master-18-acao-afirmativa">18. Ação afirmativa<a class="headerlink" href="#experience-architecture-person-journey-per-203-opportunity-detail-master-18-acao-afirmativa" title="Permanent link">&para;</a></h2>
 <p>A saída exige ato afirmativo.</p>
 <p>A opção de cancelar e permanecer no Detalhe deve continuar disponível.</p>
@@ -36495,8 +36525,9 @@ COMPARAR ≠ DECIDIR PELA PESSOA
 <li>explicita relação comercial material;</li>
 <li>preserva alternativas legítimas de salvar/comparar quando aplicáveis;</li>
 <li>permite não prosseguir;</li>
-<li>mantém revisão consciente como estado de <code>PER-203</code>;</li>
-<li>exige ação afirmativa antes da saída;</li>
+<li>mantém revisão consciente da saída externa como estado de <code>PER-203</code>;</li>
+<li>distingue processo externo <code>TRN-205 → BND-001</code> de processo interno <code>TRN-212 → PER-204</code>;</li>
+<li>exige ação afirmativa antes de qualquer continuidade material;</li>
 <li>identifica destino e responsável;</li>
 <li>explicita transferência de dados/contexto;</li>
 <li>permite cancelar e permanecer na Guivos;</li>
@@ -36524,7 +36555,7 @@ COMPARAR ≠ DECIDIR PELA PESSOA
 <li>comportamento interno de sistemas terceiros;</li>
 <li>resultado posterior a <code>BND-001</code>;</li>
 <li>reconciliação externa sem autoridade própria;</li>
-<li>novos handoffs;</li>
+<li>novos handoffs além de <code>TRN-212</code> sem adjudicação própria;</li>
 <li>novas superfícies;</li>
 <li>implementação técnica.</li>
 </ul>
@@ -36542,6 +36573,9 @@ TRN-211
 
 TRN-205
 → INTEGRALLY VALIDATED TO BND-001 / UNCHANGED
+
+TRN-212
+→ CONTRACTED TO PER-204 / INTERNAL PROCESS ONLY
 
 BND-001
 → EXTERNAL AUTHORITY BOUNDARY / NOT A GUIVOS SCREEN

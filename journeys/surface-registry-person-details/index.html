@@ -6627,18 +6627,33 @@
 </tr>
 <tr>
 <td>GKR-SURF-PER-203</td>
-<td>UXA-004/012/098/101 + GKR-JOURNEY-TRANSITION-REGISTRY-001 + GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001</td>
+<td>UXA-004/012/098/101 + GKR-JOURNEY-TRANSITION-REGISTRY-001 + GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001 + GKR-UX-PERSON-INTERNAL-OPPORTUNITY-APPLICATION-CONTRACT-001</td>
 <td>contrato funcional corrente</td>
 <td>mapa/lista via TRN-204/211</td>
-<td>avaliar; salvar para considerar; comparar contextualmente; ao agir, revisar conscientemente a saída externa</td>
-<td>permanecer no Detalhe ou <code>TRN-205 → BND-001</code></td>
-<td>condições, responsável, relação comercial, estado salvo, dimensões comparáveis, destino externo e disclosure de dados/contexto</td>
-<td>ação afirmativa; salvar/comparar não criam inscrição nem autorização externa; destino conhecido/autorizado revalidado ao sair</td>
-<td>remover dos salvos; adicionar/remover da comparação; voltar ao detalhe; bloquear saída inválida; retorno externo neutro</td>
-<td>Salvar/Comparar absorvidos como controles/estados de PER-203; revisão externa consolidada pela UXA-101</td>
-<td><strong>TRN-205 integralmente validada até BND-001</strong></td>
-<td>persistência técnica de salvos/comparação e processo externo posterior</td>
-<td>Salvar não congela oportunidade; Comparar não produz vencedor universal; BND-001 não é tela Guivos</td>
+<td>avaliar; salvar para considerar; comparar contextualmente; escolher conscientemente processo externo ou processo interno legítimo quando disponível</td>
+<td>permanecer no Detalhe; <code>TRN-205 → BND-001</code> para processo externo; <code>TRN-212 → PER-204</code> para processo interno</td>
+<td>condições, responsável, relação comercial, estado salvo, dimensões comparáveis, destino externo/disclosure ou identidade/finalidade mínima para continuidade interna</td>
+<td>ação afirmativa; salvar/comparar não criam inscrição; saída externa exige destino revalidado; processo interno exige oportunidade compatível e escolha consciente</td>
+<td>remover dos salvos; adicionar/remover da comparação; cancelar continuidade e permanecer; retorno externo neutro; retorno contextual de PER-204 sem TRN dedicado</td>
+<td>Salvar/Comparar absorvidos como controles/estados; revisão externa consolidada pela UXA-101; inscrição interna separada em PER-204</td>
+<td><code>TRN-205</code> integral até BND-001; <code>TRN-212</code> contratada até PER-204</td>
+<td>persistência técnica de salvos/comparação; processo externo posterior; implementação interna; retorno dedicado ainda não adjudicado</td>
+<td>visualizar/salvar/comparar ≠ manifestar interesse ≠ inscrever-se; BND-001 não é tela Guivos</td>
+</tr>
+<tr>
+<td>GKR-SURF-PER-204</td>
+<td>GKR-UX-PERSON-INTERNAL-OPPORTUNITY-APPLICATION-CONTRACT-001 + GKR-UX-PUBLISHER-APPLICATION-CONTRACT-001 + GKR-JOURNEY-TRANSITION-REGISTRY-001</td>
+<td>contrato funcional candidato com identidade adjudicada</td>
+<td><code>TRN-212</code> a partir de PER-203 quando houver processo interno legítimo</td>
+<td>manifestar interesse ou inscrever-se conscientemente; revisar, autorizar, enviar e acompanhar o objeto bilateral</td>
+<td>acompanhamento/decisão/encerramento legítimo ou retorno contextual à oportunidade</td>
+<td>oportunidade, publicador, finalidade, recorte autorizado de dados, estado e proveniência aplicável</td>
+<td>autenticação quando necessária + ação consciente + autoridade específica de envio</td>
+<td>corrigir/retirar/cancelar quando aplicável; recuperar falha; retornar sem presumir resultado</td>
+<td>nenhuma</td>
+<td><code>TRN-212</code> contratada</td>
+<td>campos/documentos por oportunidade; regras seletivas; notificações; integrações; retenção quantitativa; eventual retorno dedicado; implementação</td>
+<td>manifestação ≠ inscrição ≠ elegibilidade ≠ seleção ≠ participação; relevância da Pessoa ≠ score/ranking do candidato</td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-301</td>
@@ -6709,7 +6724,7 @@
 <h2 id="5-direcao-movimento-e-evolucao">5. Direção, Movimento e Evolução<a class="headerlink" href="#5-direcao-movimento-e-evolucao" title="Permanent link">&para;</a></h2>
 <p><code>GKR-UX-D5-C1-001</code> governa o contrato funcional corrente de <code>PER-010..012</code>. <code>GKR-UX-D5-C4B-001</code> registra a validação integrada corrente de <code>TRN-008..013</code>.</p>
 <h2 id="6-efeito-da-uxa-101-preservado">6. Efeito da UXA-101 preservado<a class="headerlink" href="#6-efeito-da-uxa-101-preservado" title="Permanent link">&para;</a></h2>
-<p>A UXA-101 não cria superfície nova. <code>PER-203</code> continua sendo a responsabilidade de compreender a oportunidade e decidir como prosseguir, agora com estado funcional explícito de revisão antes de <code>BND-001</code>. O processo externo posterior continua fora da autoridade da Guivos.</p>
+<p>A UXA-101 não cria superfície nova para a revisão de saída externa. <code>PER-203</code> continua sendo a responsabilidade de compreender a oportunidade e decidir como prosseguir. Para processo externo, a revisão permanece estado interno antes de <code>TRN-205 → BND-001</code>; quando houver processo interno legítimo, <code>TRN-212</code> transfere a responsabilidade para <code>PER-204</code>. O processo externo posterior continua fora da autoridade da Guivos.</p>
 <h2 id="7-mapa-e-lista-estados-operacionais-correntes">7. Mapa e Lista — estados operacionais correntes<a class="headerlink" href="#7-mapa-e-lista-estados-operacionais-correntes" title="Permanent link">&para;</a></h2>
 <p><code>PER-201</code> e <code>PER-202</code> compartilham uma única continuidade de descoberta territorial. Mapa e Lista são modos da mesma consulta; alternar entre eles não cria nova jornada, nova oportunidade ou nova autorização.</p>
 <p>Regras correntes:</p>

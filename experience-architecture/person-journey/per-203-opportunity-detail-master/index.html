@@ -3911,6 +3911,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#171-continuidade-interna-para-per-204" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.1 Continuidade interna para PER-204
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#18-acao-afirmativa" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6983,6 +6994,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#171-continuidade-interna-para-per-204" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.1 Continuidade interna para PER-204
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#18-acao-afirmativa" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -7189,9 +7211,14 @@ PER-202 — LISTA
 → PER-203 — DETALHE
 
 PER-203 — DETALHE
-→ ESTADO INTERNO DE REVISÃO CONSCIENTE
-→ TRN-205 / INTEGRALMENTE VALIDADA ATÉ BND-001
-→ BND-001 — AUTORIDADE EXTERNA
+├── PROCESSO EXTERNO
+│   → ESTADO INTERNO DE REVISÃO CONSCIENTE
+│   → TRN-205 / INTEGRALMENTE VALIDADA ATÉ BND-001
+│   → BND-001 — AUTORIDADE EXTERNA
+└── PROCESSO INTERNO LEGÍTIMO
+    → AÇÃO CONSCIENTE DE PROSSEGUIR
+    → TRN-212 / CONTRATADA
+    → PER-204 — MANIFESTAÇÃO DE INTERESSE / INSCRIÇÃO INTERNA
 </code></pre></div>
 <p><code>BND-001</code> é fronteira de autoridade, não tela da Guivos.</p>
 <h2 id="3-trabalho-da-pessoa">3. Trabalho da Pessoa<a class="headerlink" href="#3-trabalho-da-pessoa" title="Permanent link">&para;</a></h2>
@@ -7210,9 +7237,11 @@ PER-203 — DETALHE
 <li>salvar para considerar quando a capacidade estiver legitimamente disponível;</li>
 <li>comparar quando a capacidade estiver legitimamente disponível;</li>
 <li>corrigir, contestar, recusar ou não prosseguir;</li>
-<li>iniciar conscientemente uma saída externa;</li>
-<li>revisar destino, responsável e transferência de dados/contexto antes da saída;</li>
-<li>cancelar a saída e permanecer na Guivos;</li>
+<li>iniciar conscientemente uma saída externa quando o processo pertencer a terceiro;</li>
+<li>revisar destino, responsável e transferência de dados/contexto antes da saída externa;</li>
+<li>iniciar conscientemente <code>TRN-212 → PER-204</code> quando a oportunidade oferecer processo interno legítimo;</li>
+<li>distinguir manifestação de interesse de inscrição, elegibilidade, seleção e participação;</li>
+<li>cancelar a continuidade e permanecer no Detalhe antes de qualquer efeito material;</li>
 <li>retornar ao contexto de descoberta quando aplicável.</li>
 </ol>
 <h2 id="4-identidade-e-continuidade">4. Identidade e continuidade<a class="headerlink" href="#4-identidade-e-continuidade" title="Permanent link">&para;</a></h2>
@@ -7503,6 +7532,20 @@ COMPARAR ≠ DECIDIR PELA PESSOA
 <li>que preço, disponibilidade, condição ou elegibilidade podem ser revalidados externamente;</li>
 <li>que a conclusão externa não é garantida pela Guivos.</li>
 </ol>
+<h2 id="171-continuidade-interna-para-per-204">17.1 Continuidade interna para PER-204<a class="headerlink" href="#171-continuidade-interna-para-per-204" title="Permanent link">&para;</a></h2>
+<p>Quando a oportunidade oferecer processo interno legítimo, <code>PER-203</code> pode apresentar a ação consciente que inicia <code>GKR-TRN-212 → GKR-SURF-PER-204</code>.</p>
+<p>Essa ramificação não transforma o Detalhe em formulário, candidatura ou acompanhamento. <code>PER-203</code> continua responsável por compreender a oportunidade e decidir como prosseguir; <code>PER-204</code> passa a governar o objeto bilateral interno.</p>
+<div class="highlight"><pre><span></span><code>VISUALIZAR PER-203
+≠ MANIFESTAR INTERESSE
+≠ INSCREVER-SE
+
+AÇÃO CONSCIENTE PARA PROCESSO INTERNO
+→ TRN-212
+→ PER-204
+</code></pre></div>
+<p>A entrada deve preservar identidade da oportunidade, publicador, finalidade e somente o contexto necessário à continuidade. Dados da Journey, razões internas de relevância, inferências ou informações sensíveis não atravessam por padrão.</p>
+<p><code>TRN-205 → BND-001</code> continua sendo a rota governada aqui para processo externo. A existência de <code>TRN-212</code> não altera sua maturidade nem presume que toda oportunidade possua processo interno.</p>
+<p>O retorno contextual de <code>PER-204</code> à oportunidade é funcionalmente necessário, mas não recebe <code>TRN-213</code> sem adjudicação própria.</p>
 <h2 id="18-acao-afirmativa">18. Ação afirmativa<a class="headerlink" href="#18-acao-afirmativa" title="Permanent link">&para;</a></h2>
 <p>A saída exige ato afirmativo.</p>
 <p>A opção de cancelar e permanecer no Detalhe deve continuar disponível.</p>
@@ -7667,8 +7710,9 @@ COMPARAR ≠ DECIDIR PELA PESSOA
 <li>explicita relação comercial material;</li>
 <li>preserva alternativas legítimas de salvar/comparar quando aplicáveis;</li>
 <li>permite não prosseguir;</li>
-<li>mantém revisão consciente como estado de <code>PER-203</code>;</li>
-<li>exige ação afirmativa antes da saída;</li>
+<li>mantém revisão consciente da saída externa como estado de <code>PER-203</code>;</li>
+<li>distingue processo externo <code>TRN-205 → BND-001</code> de processo interno <code>TRN-212 → PER-204</code>;</li>
+<li>exige ação afirmativa antes de qualquer continuidade material;</li>
 <li>identifica destino e responsável;</li>
 <li>explicita transferência de dados/contexto;</li>
 <li>permite cancelar e permanecer na Guivos;</li>
@@ -7696,7 +7740,7 @@ COMPARAR ≠ DECIDIR PELA PESSOA
 <li>comportamento interno de sistemas terceiros;</li>
 <li>resultado posterior a <code>BND-001</code>;</li>
 <li>reconciliação externa sem autoridade própria;</li>
-<li>novos handoffs;</li>
+<li>novos handoffs além de <code>TRN-212</code> sem adjudicação própria;</li>
 <li>novas superfícies;</li>
 <li>implementação técnica.</li>
 </ul>
@@ -7714,6 +7758,9 @@ TRN-211
 
 TRN-205
 → INTEGRALLY VALIDATED TO BND-001 / UNCHANGED
+
+TRN-212
+→ CONTRACTED TO PER-204 / INTERNAL PROCESS ONLY
 
 BND-001
 → EXTERNAL AUTHORITY BOUNDARY / NOT A GUIVOS SCREEN
