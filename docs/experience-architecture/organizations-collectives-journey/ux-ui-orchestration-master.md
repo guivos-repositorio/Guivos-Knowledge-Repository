@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-JOURNEY-ORCHESTRATION-001
 title: Jornada de Organizações e Coletivos — Documento Mestre de Orquestração UX/UI
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-27
 normative: true
@@ -658,7 +658,95 @@ Todo Master de superfície consumido pela orquestração deve ser traduzível pa
 | retorno | como voltar/retomar sem fabricar efeito? |
 
 
-## 28. Prototipação UX/UI — cobertura mínima
+
+## 28. Navegação orientada por perfil, plano e descoberta de capacidades
+
+A Orquestração deve governar **como a pessoa autorizada navega em nome da Organização ou do Coletivo**, considerando simultaneamente perfil/papel, autoridade, participante ativo, plano, estado e objeto corrente.
+
+```text
+PESSOA AUTENTICADA
++
+PARTICIPANTE ATIVO
++
+PAPEL / AUTORIDADE
++
+PLANO VIGENTE
++
+ESTADO REAL
+→ AÇÕES EXECUTÁVEIS
+→ AÇÕES CONDICIONAIS
+→ CAPACIDADES SUPERIORES DESCOBRÍVEIS
+→ CONTINUIDADES DE NAVEGAÇÃO
+→ HANDOFFS
+→ FEEDBACK
+```
+
+Capacidades de planos superiores **não devem desaparecer por padrão** quando sua descoberta for útil para explicar como a Organização ou o Coletivo pode ampliar sua operação.
+
+Elas podem permanecer visíveis como capacidades superiores quando:
+
+- pertencem comprovadamente a plano superior;
+- estão claramente diferenciadas das ações executáveis;
+- o motivo da indisponibilidade é explicável;
+- o plano que amplia a capacidade pode ser identificado objetivamente;
+- existe caminho opcional para `ORG-301` ou `COL-301`, conforme o participante;
+- a ação atual continua possível quando houver alternativa no plano vigente;
+- nenhuma informação protegida é revelada apenas para promover upgrade.
+
+Exemplos:
+
+```text
+COLETIVO LIVRE
+→ PUBLICAÇÃO PAGA PODE SER DESCOBRÍVEL
+→ NÃO EXECUTÁVEL
+→ EXPLICAR MOBILIZA/IMPACTA/REDE CONFORME AUTORIDADE COMERCIAL
+
+ORGANIZAÇÃO CONECTA
+→ ANALYTICS AVANÇADOS PODEM SER DESCOBRÍVEIS
+→ NÃO SIMULAR DADOS AVANÇADOS
+→ EXPLICAR ELEVA
+
+CAPACIDADE DIMENSIONADA
+→ PODE INDICAR CAMINHO ASSISTIDO
+→ BND-002 SOMENTE QUANDO A NECESSIDADE CONCRETA JUSTIFICAR
+```
+
+A UI pode usar lock, badge, preview, comparação, tooltip ou outra solução definida por Design. A Orquestração governa o significado: **descoberta não equivale a entitlement**.
+
+## 29. Contrato comportamental das superfícies
+
+Cada superfície O/C deve funcionar como uma responsabilidade executável do sistema, não apenas como um documento de conteúdo.
+
+Para prototipação e futura implementação, cada superfície deve permitir determinar:
+
+| Dimensão | Comportamento governado |
+|---|---|
+| entrada | origem e condições legítimas de acesso |
+| participante ativo | Organização ou Coletivo em cujo contexto se atua |
+| perfil/papel | capacidade humana aplicável |
+| autoridade | ações que a pessoa pode efetivamente realizar |
+| plano | capacidade/cota/profundidade aplicável |
+| estado | situação real do objeto/responsabilidade |
+| conteúdo | informação necessária e autorizada |
+| participantes envolvidos | recorte pertinente, papel e vínculo |
+| ações executáveis | controles que podem produzir efeito agora |
+| ações condicionais | controles dependentes de estado/autoridade |
+| capacidades superiores | opções descobríveis de plano superior sem falsa executabilidade |
+| processamento | comportamento após ação material |
+| feedback | sucesso, falha, indeterminação, bloqueio ou espera |
+| transição | mudança material de responsabilidade/estado |
+| navegação | mudança de superfície sem efeito material |
+| handoff | mudança de perspectiva/responsabilidade |
+| evento | quem precisa tomar conhecimento de mudança material |
+| persistência | contexto que pode permanecer legitimamente |
+| retorno | retomada sem duplicação ou efeito silencioso |
+| upgrade | explicação objetiva da ampliação disponível |
+| proteção | informação que não pode atravessar contexto/autoridade |
+
+A prototipação deve conseguir demonstrar esses comportamentos. A futura implementação deve poder derivar estados e regras funcionais dessas autoridades sem depender de inferência visual.
+
+
+## 30. Prototipação UX/UI — cobertura mínima
 
 Uma prototipação integrada deve conseguir demonstrar, sem afirmar implementação:
 
@@ -685,7 +773,7 @@ Uma prototipação integrada deve conseguir demonstrar, sem afirmar implementaç
 
 Isso não exige um frame por item.
 
-## 29. Liberdade de Design
+## 31. Liberdade de Design
 
 Este documento governa significado, continuidade e comportamento transversal, não estética.
 
@@ -693,7 +781,7 @@ Design pode decidir composição, grid, componentes, navegação visual, tipogra
 
 A liberdade visual não pode alterar participante, autoridade, responsabilidade, estado, transição, evidência, plano ou significado governado.
 
-## 30. IA — source lock
+## 32. IA — source lock
 
 IA utilizada para Design ou prototipação deve operar em source lock com o GKR e consumir esta autoridade junto dos Masters necessários.
 
@@ -710,7 +798,7 @@ NÃO ESTÁ GOVERNADO NO GKR
 
 IA é consumidora da verdade de produto, não sua autora.
 
-## 31. Critérios executivos de aceite
+## 33. Critérios executivos de aceite
 
 Uma materialização orientada por esta autoridade é semanticamente aceitável quando:
 
@@ -731,7 +819,7 @@ Uma materialização orientada por esta autoridade é semanticamente aceitável 
 15. protótipo não é confundido com implementação;
 16. Product Engineering não é liberado por esta autoridade.
 
-## 32. Ordem recomendada de consumo
+## 34. Ordem recomendada de consumo
 
 ```text
 LEIA PRIMEIRO
@@ -746,7 +834,7 @@ LEIA PRIMEIRO
 → REGISTRIES / AUTORIDADE ESPECÍFICA QUANDO NECESSÁRIO
 ```
 
-## 33. Boundary de maturidade
+## 35. Boundary de maturidade
 
 Esta autoridade candidata organiza o consumo da verdade documental já existente. Ela não reabre o checkpoint de completude estrutural e não promove maturidade de superfície ou transição.
 
@@ -770,7 +858,7 @@ PRODUCT ENGINEERING
 → NOT_RELEASED
 ```
 
-## 34. Estado
+## 36. Estado
 
 ```text
 O/C JOURNEY UX/UI ORCHESTRATION
