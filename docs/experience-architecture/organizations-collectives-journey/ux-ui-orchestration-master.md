@@ -17,7 +17,6 @@ depends_on:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-UX-ORGCOL-DOCUMENTARY-COMPLETENESS-001
-normative: true
 ---
 
 # Jornada de Organizações e Coletivos — Documento Mestre de Orquestração UX/UI
