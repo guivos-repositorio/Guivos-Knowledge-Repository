@@ -2,7 +2,7 @@
 id: GKR-UX-ORGCOL-JOURNEY-ORCHESTRATION-001
 title: Jornada de Organizações e Coletivos — Documento Mestre de Orquestração UX/UI
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-27
 normative: true
@@ -16,6 +16,8 @@ depends_on:
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
   - GKR-UX-ORGCOL-DOCUMENTARY-COMPLETENESS-001
 ---
 
@@ -857,6 +859,25 @@ INTERACTIVE PROTOTYPE
 PRODUCT ENGINEERING
 → NOT_RELEASED
 ```
+
+## Integrações transversais entre participantes
+
+Esta Orquestração deve consumir conjuntamente:
+
+- `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001` para relações, interação, conexão, visibilidade bilateral e recorte de dados entre Pessoa, Coletivo e Organização;
+- `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001` para eventos, atualizações, comunicações e notificações decorrentes dessas relações.
+
+```text
+RELAÇÃO / VISIBILIDADE
+→ CONTRATO DE PARTICIPANTES
+
+EVENTO / COMUNICAÇÃO / ALERTA
+→ CONTRATO DE COMUNICAÇÕES E NOTIFICAÇÕES
+
+ORQUESTRAÇÃO LOCAL
+→ NÃO INVENTA NENHUM DOS DOIS
+```
+
 
 ## 36. Estado
 
