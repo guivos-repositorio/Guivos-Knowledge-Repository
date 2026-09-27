@@ -499,9 +499,7 @@ Estados alternativos obrigatórios incluem:
 
 Suportar `COL-J08`.
 
-O Surface Map reconhece o domínio lógico **Aprendizados e Evidências**, mas não existe ID exclusivo dedicado no registro corrente.
-
-Essa ausência permanece explícita.
+O Surface Map reconhece o domínio lógico **Aprendizados e Evidências** e o adjudica como responsabilidade transversal de compreensão e sustentação epistemológica. Não existe ID exclusivo dedicado porque as autoridades correntes não comprovam objeto ou lifecycle independente para uma superfície própria.
 
 Continuidade funcional:
 
@@ -862,7 +860,7 @@ COL-J07
 | Coletivo — participação | `COL-003..005` + `PER-105/106` | `TRN-105..109`, `TRN-112`, `TRN-114`; `TRN-113` para `COL-004 → COL-005` no recorte de comunicação | preservar maturidades próprias; não duplicar aprovação nem vínculo |
 | Coletivo — atividade/oportunidade | `COL-006` | sem cadeia estável completa conhecida | lacuna preservada |
 | Coletivo — governança/comunicação/proteção | `COL-005..007` | `TRN-113` no recorte conhecido | reutilizar; sem promoção |
-| Coletivo — aprendizados/evidências | domínio lógico sem ID exclusivo | sem transição dedicada conhecida | lacuna preservada |
+| Coletivo — aprendizados/evidências | responsabilidade transversal; sem ID exclusivo | sem transição dedicada própria necessária com a evidência corrente | adjudicado transversalmente; não criar ID por analogia |
 | Relação Organização ↔ Coletivo | `ORG-004..006`, `COL-008` | `TRN-206..209` | reutilizar como contratadas; sem promoção |
 | Planos do Coletivo | `COL-002 ↔ COL-301` | `TRN-417/418` | conexão especializada já validada |
 | Planos da Organização | `ORG-001 ↔ ORG-301` | `TRN-427/428` | conexão especializada já validada |
