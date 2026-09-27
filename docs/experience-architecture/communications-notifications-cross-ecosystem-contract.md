@@ -2,7 +2,7 @@
 id: GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
 title: Comunicações e Notificações — Contrato Transversal do Ecossistema
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-27
 normative: true
@@ -163,7 +163,18 @@ Eventos bilaterais devem preservar o mesmo objeto O↔C, destinatário responsá
 
 ## 13. Pessoa ↔ Pessoa
 
-Como a relação bilateral Pessoa↔Pessoa não está adjudicada, este documento não cria mensagens ou notificações P↔P.
+A relação social bilateral autônoma Pessoa↔Pessoa não está adjudicada. Co-presença em objeto compartilhado não cria canal P↔P.
+
+Eventos de um objeto compartilhado podem gerar atualizações para cada Pessoa quando o contrato daquele objeto justificar, mas a entrega continua sendo **objeto→Pessoa**, não uma mensagem privada Pessoa→Pessoa por inferência.
+
+```text
+PESSOA A AGE EM OBJETO COMPARTILHADO
+→ OBJETO MUDA
+→ PESSOA B PODE RECEBER ATUALIZAÇÃO SE FOR DESTINATÁRIA LEGÍTIMA
+
+ISSO
+≠ DM PESSOA A → PESSOA B
+```
 
 ## 14. Canais
 
