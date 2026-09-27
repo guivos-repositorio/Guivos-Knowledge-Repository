@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.8
+version: 0.29.9
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-26
 related:
@@ -38,7 +38,7 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições correntes das Jornadas Integradas. A maturidade declarada em cada linha é o estado operativo a ser usado por Design e prototipação.
 
-A contagem corrente é de **69 transições**. `TRN-212` formaliza a entrada consciente da Pessoa no processo interno de manifestação de interesse ou inscrição; `TRN-213` formaliza o handoff bilateral autorizado para a Organização; `TRN-214` formaliza o acesso institucional contextual da oportunidade ativa à gestão desses objetos.
+A contagem corrente é de **71 transições**. `TRN-212` formaliza a entrada consciente da Pessoa no processo interno de manifestação de interesse ou inscrição; `TRN-213` formaliza o handoff bilateral inicial autorizado para a Organização; `TRN-214` formaliza o acesso institucional contextual da oportunidade ativa à gestão desses objetos; `TRN-215` e `TRN-216` formalizam as duas direções materiais da continuidade bilateral pós-envio.
 
 ## 2. Convenções de estado
 
@@ -59,10 +59,10 @@ Validação integral documental não comprova implementação técnica nem esten
 |---|---:|
 | jornada pessoal | 13 |
 | Pessoa em Coletivos e operação do responsável | 13 |
-| Organização, oportunidades e relações bilaterais | 14 |
+| Organização, oportunidades e relações bilaterais | 16 |
 | Opportunity Boost | 6 |
 | Planos, cobrança e ciclo de vida | 23 |
-| **Total** | **69** |
+| **Total** | **71** |
 
 ## 4. Jornada pessoal
 
@@ -130,6 +130,8 @@ O modelo corrente não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011
 | GKR-TRN-212 | PER-203 | PER-204 | contratada | oportunidade suporta processo interno legítimo + ação consciente; entrada preserva finalidade, publicador e recorte autorizado de dados; não cria elegibilidade, seleção, participação ou resultado |
 | GKR-TRN-213 | PER-204 | ORG-008 | contratada | envio consciente e recebimento do mesmo objeto bilateral no recorte autorizado; muda perspectiva e autoridade sem criar elegibilidade, seleção, participação ou resultado |
 | GKR-TRN-214 | ORG-003 | ORG-008 | contratada | acesso institucional contextual à gestão de manifestações/inscrições da oportunidade; não cria objeto, não confirma recebimento e não altera o estado da oportunidade |
+| GKR-TRN-215 | ORG-008 | PER-204 | contratada | comunicação ou atualização material institucional do mesmo objeto bilateral; somente recorte legitimamente comunicável, sem expor estado interno protegido ou fabricar resultado |
+| GKR-TRN-216 | PER-204 | ORG-008 | contratada | resposta ou alteração material consciente pós-envio no mesmo objeto bilateral; não repete o envio inicial de TRN-213 e preserva finalidade, proveniência e idempotência |
 
 ### 6.1 Contrato V4 de `GKR-TRN-205`
 
@@ -276,7 +278,7 @@ A correção semântica preservada:
 
 ## 10. Preservações de maturidade
 
-- transições totais correntes são **69**, incluindo `TRN-212`, `TRN-213` e `TRN-214` como contratadas;
+- transições totais correntes são **71**, incluindo `TRN-212`, `TRN-213`, `TRN-214`, `TRN-215` e `TRN-216` como contratadas;
 - `TRN-008..013` estão **integralmente validadas** no limite documental;
 - `TRN-406/407` ficam **contratadas** até materialização suficiente de `PER-009`;
 - `TRN-417/418` e `TRN-427/428` ficam **integralmente validadas** no limite documental de navegação administrativa;
@@ -285,7 +287,9 @@ A correção semântica preservada:
 - `TRN-212` permanece **contratada** para `PER-203 → PER-204`;
 - `TRN-213` permanece **contratada** para `PER-204 → ORG-008` como handoff bilateral autorizado;
 - `TRN-214` permanece **contratada** para `ORG-003 → ORG-008` como continuidade institucional contextual;
-- retornos dedicados a partir de `ORG-008` permanecem sem `TRN-ID` e exigem adjudicação própria;
+- `TRN-215` permanece **contratada** para `ORG-008 → PER-204` como comunicação/atualização material institucional pós-envio;
+- `TRN-216` permanece **contratada** para `PER-204 → ORG-008` como resposta/alteração material consciente pós-envio;
+- retornos de navegação `ORG-008 → ORG-003` e `PER-204 → PER-203` permanecem contextuais, sem `TRN-ID` dedicado;
 - nenhum comportamento posterior a `BND-001` é atribuído à Guivos;
 - `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais;
 - validação documental continua distinta de implementação técnica.
