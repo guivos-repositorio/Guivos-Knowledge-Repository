@@ -45310,9 +45310,8 @@ GKR-SURF-COL-003 — GESTÃO DE SOLICITAÇÕES
 └── RECUSAR
 ↓
 VÍNCULO DA PESSOA QUANDO APROVADO
-↓
+↓ GKR-TRN-114 — CONTINUIDADE OPERACIONAL DO VÍNCULO JÁ FORMADO
 GKR-SURF-COL-004 — PARTICIPANTES E VÍNCULOS
-[COL-003 → COL-004 = CONTINUIDADE LÓGICA; TRANSIÇÃO ESTÁVEL NÃO DECLARADA]
 ↓ GKR-TRN-113 QUANDO HOUVER COMUNICAÇÃO OFICIAL A PARTICIPANTES AUTORIZADOS
 GKR-SURF-COL-005 — COMUNICAÇÃO OFICIAL QUANDO APLICÁVEL À CONTINUIDADE DA PARTICIPAÇÃO
 </code></pre></div>
@@ -45325,7 +45324,7 @@ GKR-SURF-COL-005 — COMUNICAÇÃO OFICIAL QUANDO APLICÁVEL À CONTINUIDADE DA 
 <li><code>GKR-TRN-109</code> — <code>COL-003 → PER-105</code>;</li>
 <li><code>GKR-TRN-112</code> — <code>COL-002 → COL-003</code>.</li>
 </ul>
-<p>Essas transições mantêm sua maturidade própria. A continuidade pós-aprovação <code>COL-003 → COL-004</code> é reconhecida pelo Surface Map, mas <strong>não possui transição estável declarada</strong>. Quando a continuidade exige comunicação oficial a participantes autorizados, <code>GKR-TRN-113 — COL-004 → COL-005</code> já existe como transição <strong>contratada</strong> e mantém essa maturidade sem promoção nesta autoridade.</p>
+<p>Essas transições mantêm sua maturidade própria. A continuidade pós-aprovação <code>COL-003 → COL-004</code> é formalizada por <code>GKR-TRN-114</code> como handoff operacional do vínculo já formado; ela não repete a aprovação de <code>GKR-TRN-108</code> nem confirma persistência técnica. Quando a continuidade exige comunicação oficial a participantes autorizados, <code>GKR-TRN-113 — COL-004 → COL-005</code> permanece <strong>contratada</strong>.</p>
 <p>Preservações:</p>
 <div class="highlight"><pre><span></span><code>PERTENCER
 ≠ REPRESENTAR
@@ -45743,7 +45742,7 @@ MUDANÇA DE CONTEXTO
 <tr>
 <td><code>COL-J04</code> — participação, solicitações, papéis e vínculos</td>
 <td>§10</td>
-<td>coberto com fluxos existentes e lacuna pós-aprovação explícita</td>
+<td>coberto com fluxos existentes; continuidade pós-aprovação formalizada por <code>TRN-114</code></td>
 </tr>
 <tr>
 <td><code>COL-J05</code> — decisões, comunicação, moderação e proteção</td>
@@ -45874,8 +45873,8 @@ COL-J07
 <tr>
 <td>Coletivo — participação</td>
 <td><code>COL-003..005</code> + <code>PER-105/106</code></td>
-<td><code>TRN-105..109</code>, <code>TRN-112</code>; <code>COL-003 → COL-004</code> sem ID; <code>TRN-113</code> para <code>COL-004 → COL-005</code> no recorte de comunicação</td>
-<td>reutilizar o existente; preservar somente a lacuna real</td>
+<td><code>TRN-105..109</code>, <code>TRN-112</code>, <code>TRN-114</code>; <code>TRN-113</code> para <code>COL-004 → COL-005</code> no recorte de comunicação</td>
+<td>preservar maturidades próprias; não duplicar aprovação nem vínculo</td>
 </tr>
 <tr>
 <td>Coletivo — atividade/oportunidade</td>
@@ -47492,10 +47491,11 @@ COL-004
 → GOVERNA PARTICIPANTES E VÍNCULOS NO LIMITE DE SUA AUTORIDADE
 
 COL-003 → COL-004
-→ CONTINUIDADE FUNCIONAL RECONHECIDA
-→ TRANSIÇÃO ESTÁVEL DEDICADA AUSENTE
+→ GKR-TRN-114
+→ CONTINUIDADE OPERACIONAL DO MESMO VÍNCULO JÁ FORMADO
+→ CONTRATADA
 </code></pre></div>
-<p>Este Master não preenche essa lacuna e não trata aprovação como persistência técnica confirmada do vínculo.</p>
+<p><code>GKR-TRN-114</code> fecha a lacuna de identidade da continuidade, mas não trata aprovação como persistência técnica confirmada do vínculo e não duplica o efeito de <code>GKR-TRN-108</code>.</p>
 <h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-14-processamento-e-confirmacao">14. Processamento e confirmação<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-14-processamento-e-confirmacao" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>INTENÇÃO
 → CONFIRMAÇÃO CONSCIENTE, QUANDO APLICÁVEL
@@ -47603,7 +47603,7 @@ MUDAR DE CONTEXTO
 <p>Design não pode:</p>
 <ul>
 <li>fundir <code>COL-003</code> e <code>COL-004</code> por conveniência;</li>
-<li>inventar transição para preencher a lacuna entre eles;</li>
+<li>tratar <code>GKR-TRN-114</code> como nova aprovação, novo vínculo ou confirmação de persistência técnica;</li>
 <li>transformar pessoas em ranking;</li>
 <li>criar score de aprovação;</li>
 <li>ocultar autoridade, proteção ou estado material;</li>
@@ -47640,7 +47640,7 @@ MUDAR DE CONTEXTO
 <li>preserva <code>COL-003</code> como responsabilidade distinta de <code>COL-004</code>;</li>
 <li>identifica claramente Coletivo, solicitação, estado e autoridade;</li>
 <li>consome <code>TRN-105..109</code> e <code>TRN-112</code> sem promoção;</li>
-<li>preserva a lacuna de transição estável <code>COL-003 → COL-004</code>;</li>
+<li>preserva <code>GKR-TRN-114</code> como continuidade operacional do vínculo já formado, sem duplicar <code>GKR-TRN-108</code>;</li>
 <li>não confunde aprovação com vínculo, papel, representação ou administração;</li>
 <li>suporta informação adicional sem inventar formulário universal;</li>
 <li>preserva estados de proteção, contestação, indisponibilidade e resultado indeterminado;</li>
@@ -47656,7 +47656,6 @@ MUDAR DE CONTEXTO
 <h2 id="experience-architecture-organizations-collectives-journey-collective-request-management-master-23-lacunas-preservadas">23. Lacunas preservadas<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-request-management-master-23-lacunas-preservadas" title="Permanent link">&para;</a></h2>
 <p>Permanecem fora deste Master até autoridade específica:</p>
 <ul>
-<li>transição estável dedicada <code>COL-003 → COL-004</code>;</li>
 <li>critérios materiais universais de aprovação, se vierem a existir;</li>
 <li>política universal de revisão/recurso, se vier a existir;</li>
 <li>RBAC técnico;</li>
@@ -47769,13 +47768,12 @@ ALTERAR VÍNCULO
 → SOLICITAÇÃO APROVADA
 → GKR-SURF-COL-004
 </code></pre></div>
-<p>O Transition Registry não registra atualmente uma transição estável dedicada <code>COL-003 → COL-004</code>.</p>
+<p>O Transition Registry registra <code>GKR-TRN-114 — COL-003 → COL-004</code> como continuidade operacional do mesmo vínculo já formado pela aprovação. A transição permanece contratada e não constitui prova de persistência técnica.</p>
 <p>Portanto:</p>
 <div class="highlight"><pre><span></span><code>CONTINUIDADE FUNCIONAL
-→ RECONHECIDA
-
-TRANSIÇÃO ESTÁVEL DEDICADA
-→ AUSENTE
+→ GKR-TRN-114
+→ CONTRATADA
+→ MESMO VÍNCULO / NOVA RESPONSABILIDADE OPERACIONAL
 
 TRATAMENTO
 → NÃO INVENTAR GKR-TRN
@@ -48101,7 +48099,7 @@ MUDAR DE CONTEXTO
 <p>Design não pode:</p>
 <ul>
 <li>fundir <code>COL-003</code>, <code>COL-004</code> e <code>COL-005</code> por conveniência;</li>
-<li>inventar transição para <code>COL-003 → COL-004</code>;</li>
+<li>tratar <code>GKR-TRN-114</code> como nova aprovação, novo vínculo ou confirmação técnica automática;</li>
 <li>promover <code>TRN-113</code>;</li>
 <li>transformar participantes em ranking ou dashboard obrigatório;</li>
 <li>criar métricas sem autoridade;</li>
@@ -48139,7 +48137,7 @@ MUDAR DE CONTEXTO
 <ol>
 <li>preserva <code>COL-004</code> como responsabilidade distinta de <code>COL-003</code> e <code>COL-005</code>;</li>
 <li>identifica claramente Coletivo, vínculo, estado, papel e autoridade aplicáveis;</li>
-<li>preserva a lacuna estável <code>COL-003 → COL-004</code>;</li>
+<li>preserva <code>GKR-TRN-114</code> como handoff estável entre decisão da solicitação e gestão do vínculo, sem duplicar <code>GKR-TRN-108</code>;</li>
 <li>consome <code>TRN-113</code> como contratado, sem promoção;</li>
 <li>não confunde pertencimento, papel, representação, administração e autoridade;</li>
 <li>suporta ativo, pausa, saída e encerramento sem tratá-los como equivalentes;</li>
@@ -48156,7 +48154,6 @@ MUDAR DE CONTEXTO
 <h2 id="experience-architecture-organizations-collectives-journey-collective-participants-links-master-24-lacunas-preservadas">24. Lacunas preservadas<a class="headerlink" href="#experience-architecture-organizations-collectives-journey-collective-participants-links-master-24-lacunas-preservadas" title="Permanent link">&para;</a></h2>
 <p>Permanecem fora deste Master até autoridade específica:</p>
 <ul>
-<li>transição estável dedicada <code>COL-003 → COL-004</code>;</li>
 <li>regras técnicas finais de criação e persistência de vínculo;</li>
 <li>modelo técnico de papéis e responsabilidades;</li>
 <li>RBAC técnico;</li>
@@ -48179,7 +48176,7 @@ SURFACE GOVERNED
 
 POST-APPROVAL ORIGIN
 → GKR-SURF-COL-003
-→ DEDICATED STABLE TRANSITION GAP PRESERVED
+→ GKR-TRN-114 / CONTRACTED / SAME LINK CONTINUITY
 
 OFFICIAL COMMUNICATION CONTINUITY
 → GKR-TRN-113

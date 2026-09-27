@@ -7583,9 +7583,8 @@ GKR-SURF-COL-003 — GESTÃO DE SOLICITAÇÕES
 └── RECUSAR
 ↓
 VÍNCULO DA PESSOA QUANDO APROVADO
-↓
+↓ GKR-TRN-114 — CONTINUIDADE OPERACIONAL DO VÍNCULO JÁ FORMADO
 GKR-SURF-COL-004 — PARTICIPANTES E VÍNCULOS
-[COL-003 → COL-004 = CONTINUIDADE LÓGICA; TRANSIÇÃO ESTÁVEL NÃO DECLARADA]
 ↓ GKR-TRN-113 QUANDO HOUVER COMUNICAÇÃO OFICIAL A PARTICIPANTES AUTORIZADOS
 GKR-SURF-COL-005 — COMUNICAÇÃO OFICIAL QUANDO APLICÁVEL À CONTINUIDADE DA PARTICIPAÇÃO
 </code></pre></div>
@@ -7598,7 +7597,7 @@ GKR-SURF-COL-005 — COMUNICAÇÃO OFICIAL QUANDO APLICÁVEL À CONTINUIDADE DA 
 <li><code>GKR-TRN-109</code> — <code>COL-003 → PER-105</code>;</li>
 <li><code>GKR-TRN-112</code> — <code>COL-002 → COL-003</code>.</li>
 </ul>
-<p>Essas transições mantêm sua maturidade própria. A continuidade pós-aprovação <code>COL-003 → COL-004</code> é reconhecida pelo Surface Map, mas <strong>não possui transição estável declarada</strong>. Quando a continuidade exige comunicação oficial a participantes autorizados, <code>GKR-TRN-113 — COL-004 → COL-005</code> já existe como transição <strong>contratada</strong> e mantém essa maturidade sem promoção nesta autoridade.</p>
+<p>Essas transições mantêm sua maturidade própria. A continuidade pós-aprovação <code>COL-003 → COL-004</code> é formalizada por <code>GKR-TRN-114</code> como handoff operacional do vínculo já formado; ela não repete a aprovação de <code>GKR-TRN-108</code> nem confirma persistência técnica. Quando a continuidade exige comunicação oficial a participantes autorizados, <code>GKR-TRN-113 — COL-004 → COL-005</code> permanece <strong>contratada</strong>.</p>
 <p>Preservações:</p>
 <div class="highlight"><pre><span></span><code>PERTENCER
 ≠ REPRESENTAR
@@ -8016,7 +8015,7 @@ MUDANÇA DE CONTEXTO
 <tr>
 <td><code>COL-J04</code> — participação, solicitações, papéis e vínculos</td>
 <td>§10</td>
-<td>coberto com fluxos existentes e lacuna pós-aprovação explícita</td>
+<td>coberto com fluxos existentes; continuidade pós-aprovação formalizada por <code>TRN-114</code></td>
 </tr>
 <tr>
 <td><code>COL-J05</code> — decisões, comunicação, moderação e proteção</td>
@@ -8147,8 +8146,8 @@ COL-J07
 <tr>
 <td>Coletivo — participação</td>
 <td><code>COL-003..005</code> + <code>PER-105/106</code></td>
-<td><code>TRN-105..109</code>, <code>TRN-112</code>; <code>COL-003 → COL-004</code> sem ID; <code>TRN-113</code> para <code>COL-004 → COL-005</code> no recorte de comunicação</td>
-<td>reutilizar o existente; preservar somente a lacuna real</td>
+<td><code>TRN-105..109</code>, <code>TRN-112</code>, <code>TRN-114</code>; <code>TRN-113</code> para <code>COL-004 → COL-005</code> no recorte de comunicação</td>
+<td>preservar maturidades próprias; não duplicar aprovação nem vínculo</td>
 </tr>
 <tr>
 <td>Coletivo — atividade/oportunidade</td>
