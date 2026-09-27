@@ -237,7 +237,10 @@ O registro estável **não possui atualmente um `GKR-SURF-ORG-*` dedicado exclus
 
 - nenhum novo ID é criado nesta frente;
 - autoridade continua requisito transversal das superfícies registradas;
-- eventual criação futura de identificador exige governança própria do registro central;
+- `UXA-014` exige legitimidade, autoridade institucional, representantes, papéis, governança e prestação de contas, mas não define um objeto canônico independente nem lifecycle próprio para este domínio;
+- o modelo de contexto autenticado já exige que contexto, papel, representação e autoridade sejam preservados proporcionalmente em cada ação material;
+- portanto, **Organização e Autoridade permanece responsabilidade transversal absorvida pelas superfícies e contratos funcionais aplicáveis, não uma superfície dedicada com a evidência corrente**;
+- eventual criação futura de identificador exige nova evidência de objeto/responsabilidade/lifecycle próprios e governança do registro central;
 - ausência de ID dedicado não autoriza fundir autoridade com configuração técnica ou RBAC.
 
 ```text
