@@ -181,6 +181,31 @@ Crosswalk vigente:
 - `GKR-SURF-ORG-006` — relação Organização–Coletivo ativa e revisão, no escopo estável definido por `UXA-019`;
 - relações Organização–Organização permanecem sem ID estável dedicado nesta frente; a lacuna é explícita e não autoriza ampliar semanticamente `GKR-SURF-ORG-004..006`.
 
+Adjudicação estrutural vigente:
+
+- `UXA-014` reconhece relações com outras Organizações como parte legítima da experiência institucional;
+- as autoridades correntes não definem objeto, lifecycle, estados especializados, entradas/saídas ou transições suficientes para registrar uma superfície própria;
+- `UXA-019` e `GKR-SURF-ORG-004..006` continuam exclusivos de Organização–Coletivo;
+- a ausência de ID não significa ausência da necessidade funcional; significa **identidade de superfície ainda não adjudicável sem nova evidência**;
+- nenhuma relação Organização–Organização deve ser modelada como Organização–Coletivo apenas para reutilizar IDs existentes.
+
+```text
+NECESSIDADE CONCEITUAL
+→ RECONHECIDA
+
+SUPERFÍCIE DEDICADA
+→ NÃO ADJUDICÁVEL COM A EVIDÊNCIA CORRENTE
+
+ORG-004..006
+→ NÃO REUTILIZAR
+
+NOVO GKR-SURF-*
+→ NÃO CRIAR
+
+NOVO GKR-TRN-*
+→ NÃO CRIAR
+```
+
 Essas entradas permanecem objetos distintos. A relação não transfere automaticamente autoridade sobre a contraparte.
 
 ### 5.4 Responsabilidades e Evidências
