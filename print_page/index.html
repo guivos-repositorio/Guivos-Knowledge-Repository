@@ -30784,7 +30784,7 @@ EXPLICAÇÃO DE PERTINÊNCIA
 <h2 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-19-identidade-adjudicada">19. Identidade adjudicada<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-19-identidade-adjudicada" title="Permanent link">&para;</a></h2>
 <p>A responsabilidade satisfaz os critérios de job próprio, estados persistentes, acompanhamento, correção/retirada, recuperação e continuidade independente do Detalhe. O Registry a identifica como <code>GKR-SURF-PER-204</code>.</p>
 <p>A mudança consciente de responsabilidade a partir de <code>PER-203</code> é <code>GKR-TRN-212</code>. Isso não cria inscrição por navegação: a oportunidade deve suportar processo interno legítimo e a Pessoa deve escolher prosseguir conscientemente.</p>
-<p>O retorno a <code>PER-203</code> continua funcionalmente necessário, mas não recebe identidade de transição dedicada por simetria. <code>TRN-213</code> permanece não criado até prova de necessidade própria.</p>
+<p>O retorno a <code>PER-203</code> continua funcionalmente necessário, mas não recebe identidade de transição dedicada por simetria. <code>TRN-213</code> já governa exclusivamente o handoff bilateral inicial consciente <code>PER-204 → ORG-008</code>; não deve ser reutilizado para esse retorno contextual.</p>
 <h2 id="experience-architecture-person-journey-internal-opportunity-application-functional-contract-20-lacunas-preservadas">20. Lacunas preservadas<a class="headerlink" href="#experience-architecture-person-journey-internal-opportunity-application-functional-contract-20-lacunas-preservadas" title="Permanent link">&para;</a></h2>
 <p>Permanecem abertas:</p>
 <ul>
@@ -44619,17 +44619,17 @@ REPRESENTAÇÃO
 <tr>
 <td>Organização — Oportunidades e Programas</td>
 <td><code>GKR-SURF-ORG-002</code>, <code>GKR-SURF-ORG-003</code>, <code>GKR-SURF-ORG-008</code></td>
-<td>preservados e separados; <code>ORG-008</code> mantém responsabilidade bilateral própria; transições ainda não adjudicadas</td>
+<td>preservados e separados; <code>ORG-008</code> mantém responsabilidade bilateral própria; <code>TRN-213..216</code> preservam a continuidade bilateral contratada</td>
 </tr>
 <tr>
 <td>Organização — Relações</td>
 <td><code>GKR-SURF-ORG-004..006</code> para Organização–Coletivo; sem ID dedicado para Organização–Organização</td>
-<td><code>ORG-004..006</code> preservados no escopo de <code>UXA-019</code>; lacuna explícita para relações Organização–Organização</td>
+<td><code>ORG-004..006</code> preservados no escopo de <code>UXA-019</code>; Organização–Organização permanece necessidade conceitual adjudicada sem ID dedicado justificável pela evidência corrente</td>
 </tr>
 <tr>
 <td>Organização — Responsabilidades e Evidências</td>
 <td><code>GKR-SURF-ORG-007</code></td>
-<td>preservado; maturidade não promovida</td>
+<td>contrato funcional candidato definido; maturidade preservada pelas autoridades correntes</td>
 </tr>
 <tr>
 <td>Organização — Organização e Autoridade</td>
@@ -44664,7 +44664,7 @@ REPRESENTAÇÃO
 <tr>
 <td>Coletivo — Relações</td>
 <td><code>GKR-SURF-COL-008</code> para Organização–Coletivo; sem ID dedicado para Coletivo–Coletivo</td>
-<td><code>COL-008</code> preservado no escopo de <code>UXA-019</code>; lacuna explícita para relações Coletivo–Coletivo</td>
+<td><code>COL-008</code> preservado no escopo de <code>UXA-019</code>; Coletivo–Coletivo permanece necessidade conceitual adjudicada sem ID dedicado justificável pela evidência corrente</td>
 </tr>
 <tr>
 <td>Coletivo — Aprendizados e Evidências</td>
@@ -46091,7 +46091,7 @@ MUDANÇA DE CONTEXTO
 <tr>
 <td><code>ORG-J05</code> — relações com Coletivos e Organizações</td>
 <td>§14</td>
-<td><strong>parcial</strong>: Organização↔Coletivo coberto por <code>UXA-019</code>; Organização↔Organização permanece lacuna explícita</td>
+<td><strong>parcial</strong>: Organização↔Coletivo coberto por <code>UXA-019</code>; Organização↔Organização permanece necessidade conceitual adjudicada sem superfície/lifecycle/transições próprios justificáveis pela evidência corrente</td>
 </tr>
 <tr>
 <td><code>ORG-J06</code> — compromissos, evidências e resultados</td>
@@ -46158,7 +46158,7 @@ MUDANÇA DE CONTEXTO
 <tr>
 <td><code>COL-J07</code> — relações com Organizações e outros Coletivos</td>
 <td>§14</td>
-<td><strong>parcial</strong>: Organização↔Coletivo coberto por <code>UXA-019</code>; Coletivo↔Coletivo permanece lacuna explícita</td>
+<td><strong>parcial</strong>: Organização↔Coletivo coberto por <code>UXA-019</code>; Coletivo↔Coletivo permanece necessidade conceitual adjudicada sem superfície/lifecycle/transições próprios justificáveis pela evidência corrente</td>
 </tr>
 <tr>
 <td><code>COL-J08</code> — avanço, aprendizado e evidências</td>
@@ -46230,11 +46230,11 @@ MUDANÇA DE CONTEXTO
 
 ORG-J05
 → ORGANIZAÇÃO↔COLETIVO COBERTO
-→ ORGANIZAÇÃO↔ORGANIZAÇÃO = GAP EXPLÍCITO
+→ ORGANIZAÇÃO↔ORGANIZAÇÃO = NECESSIDADE ADJUDICADA / SEM ID DEDICADO JUSTIFICADO
 
 COL-J07
 → COLETIVO↔ORGANIZAÇÃO COBERTO
-→ COLETIVO↔COLETIVO = GAP EXPLÍCITO
+→ COLETIVO↔COLETIVO = NECESSIDADE ADJUDICADA / SEM ID DEDICADO JUSTIFICADO
 </code></pre></div>
 <h2 id="experience-architecture-organizations-collectives-authenticated-priority-flows-20-matriz-inicial-de-reconciliacao-com-o-transition-registry">20. Matriz inicial de reconciliação com o Transition Registry<a class="headerlink" href="#experience-architecture-organizations-collectives-authenticated-priority-flows-20-matriz-inicial-de-reconciliacao-com-o-transition-registry" title="Permanent link">&para;</a></h2>
 <table>
@@ -46353,7 +46353,7 @@ COL-J07
 <li>as perspectivas de Pessoa, Organização e Coletivo permanecerem separadas;</li>
 <li>todas as referências a <code>GKR-TRN-*</code> preservarem origem, destino e maturidade vigentes;</li>
 <li>nenhuma lacuna seja preenchida por ID inventado;</li>
-<li>Organização–Organização e Coletivo–Coletivo permaneçam lacunas explícitas onde não houver autoridade própria;</li>
+<li>Organização–Organização e Coletivo–Coletivo preservem suas adjudicações explícitas sem criação de IDs por analogia;</li>
 <li>Planos e Produtos Especializados permaneçam especializados/contextuais;</li>
 <li>ausência, bloqueio, contestação e indisponibilidade tenham tratamento explícito;</li>
 <li>reversibilidade, interrupção, concorrência e idempotência sejam preservadas;</li>
