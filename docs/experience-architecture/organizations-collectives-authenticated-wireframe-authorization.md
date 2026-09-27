@@ -170,7 +170,7 @@ Também permanecem obrigatórios:
 - `ORG-001` e `COL-002` como anchors;
 - O↔O e C↔C continuam gaps;
 - `ORG-004..006` e `COL-008` continuam restritos a O↔C;
-- `COL-003 → COL-004` continua sem novo transition ID;
+- `COL-003 → COL-004` consome `GKR-TRN-114` como continuidade operacional contratada do mesmo vínculo já formado, sem criar segundo vínculo;
 - Planos não vira eixo principal;
 - Intelligence não vira autoridade decisória;
 - nenhum produto especializado ganha destaque estrutural por razões comerciais;
