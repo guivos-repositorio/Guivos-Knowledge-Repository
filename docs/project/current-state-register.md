@@ -1741,13 +1741,13 @@ PER-102
 → TRN-102 preservada como partial
 
 PER-103
-→ GKR-UX-PER103-MASTER-001 v0.1.0 / CURRENT
+→ GKR-UX-PER103-MASTER-001 v0.2.0 / CURRENT
 → PERFIL PÚBLICO DO COLETIVO
 → TRN-102 preservada como partial
 → TRN-103 preservada como partial
 
 PER-104
-→ GKR-UX-PER104-MASTER-001 v0.1.0 / CURRENT
+→ GKR-UX-PER104-MASTER-001 v0.2.0 / CURRENT
 → REVISÃO E SOLICITAÇÃO
 → TRN-103 / TRN-104 preservadas como partial
 
