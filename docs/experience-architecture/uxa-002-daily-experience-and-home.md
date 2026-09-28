@@ -2,9 +2,9 @@
 id: UXA-002
 title: Experiência Diária e Tela Hoje
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Experience Architecture
-last_updated: 2026-07-26
+last_updated: 2026-09-27
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -15,10 +15,16 @@ depends_on:
   - PAS-001-IC-VIEW-001
 related:
   - UXA-020
+  - GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
 normative: false
 ---
 
 # UXA-002 — Experiência Diária e Tela Hoje
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Este documento permanece como formulação conceitual não normativa da experiência diária. Para relações entre participantes prevalece `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001`; para eventos, atualizações, alertas, canais e entrega prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`. Referências históricas abaixo a convite genérico Coletivo → Pessoa, resumo diário, horários, canais, modo silencioso, agrupamento, limites de frequência ou estados de notificação **não constituem capacidades executáveis correntes**.
 
 ## 1. Pergunta central
 
@@ -73,7 +79,7 @@ A tela poderá apresentar um item somente quando houver fundamento material, com
 3. oportunidade relevante com janela temporal real;
 4. alteração de preço, prazo, disponibilidade ou elegibilidade;
 5. atividade de Coletivo próxima ou solicitada;
-6. convite, inscrição, reserva ou processo em andamento;
+6. inscrição, reserva ou processo legitimamente contratado em andamento;
 7. mudança de contexto que afete a jornada;
 8. experiência recente aguardando reconhecimento;
 9. resultado ou evidência que mereça revisão;
@@ -123,7 +129,7 @@ O item poderá ser:
 - confirmar contexto;
 - decidir sobre Próximo Passo;
 - revisar alteração de oportunidade;
-- responder convite;
+- responder a uma decisão ou solicitação legitimamente contratada;
 - concluir processo;
 - registrar resultado;
 - revisar permissão.
@@ -168,7 +174,7 @@ A tela não deverá exibir dezenas de oportunidades. O acesso ao catálogo compl
 Poderá mostrar:
 
 - próxima atividade de um Coletivo do qual participa;
-- solicitação de entrada ou convite;
+- solicitação de entrada iniciada pela Pessoa e seu estado governado;
 - mudança relevante em regras ou agenda;
 - oportunidade criada pelo Coletivo;
 - ação ou causa próxima;
@@ -255,28 +261,17 @@ Intervenções poderão ocorrer quando houver:
 - evento de vida;
 - mudança de preço ou disponibilidade;
 - aprovação ou rejeição externa;
-- convite;
+- evento material legitimamente contratado;
 - alerta de risco;
 - solicitação do participante.
 
 A Guivos não deverá enviar contato apenas para recuperar usuários inativos.
 
-## 7. Controles de frequência
+## 7. Controles de frequência — hipótese histórica não adjudicada
 
-O participante deverá poder definir:
+A formulação original propôs resumo diário, dias e horários, categorias, canais, prioridade, modo silencioso, pausas, notificações por Coletivo/oportunidade, uso de localização, agrupamento e limites de frequência.
 
-- resumo diário ligado ou desligado;
-- dias e horários;
-- categorias autorizadas;
-- canais;
-- prioridade de alertas;
-- modo silencioso;
-- períodos de pausa;
-- notificações por Coletivo;
-- notificações por oportunidade;
-- uso de localização;
-- agrupamento de mensagens;
-- limites de frequência.
+Esses controles **não são entitlement nem comportamento executável corrente**. Sua eventual materialização exige autoridade funcional/canônica específica e deve obedecer a `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`, inclusive consentimento, minimização, finalidade e distinção entre evento, atualização, alerta e canal externo.
 
 ## 8. Controle de relevância
 
@@ -332,7 +327,7 @@ Poderão ser estudadas:
 - oportunidades consideradas e justificadas;
 - processos iniciados e concluídos;
 - controles de relevância utilizados;
-- notificações silenciadas;
+- sinais de utilidade/controle de atenção, somente quando houver autoridade e instrumentação legítimas;
 - tempo até uma ação no mundo real;
 - correções de contexto;
 - retornos voluntários após mudança material.
@@ -344,5 +339,5 @@ Não deverão ser metas isoladas:
 - sequência de dias;
 - quantidade de cliques;
 - rolagem;
-- notificações abertas;
+- abertura de notificações como meta de engajamento;
 - volume de oportunidades exibidas.
