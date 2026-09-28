@@ -2,9 +2,9 @@
 id: UXA-058
 title: Contrato Funcional de Interações, Recomendações e Conexões
 status: active
-version: 0.2.2
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-27
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -18,12 +18,30 @@ depends_on:
   - UXA-057
 related:
   - UXA-096
+  - GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
   - GKR-UX-ORGCOL-UX-STATE-001
   - M7.60
 normative: false
 ---
 
 # Contrato Funcional de Interações, Recomendações e Conexões
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Este documento é uma exploração funcional anterior e permanece `normative: false`. Sempre que houver conflito, as autoridades transversais `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001` e `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001` prevalecem.
+>
+> Em particular, este documento **não autoriza** materializar por si só:
+>
+> - relação social autônoma Pessoa↔Pessoa;
+> - solicitação de contato, conexão persistente, chat ou mensagem privada;
+> - caixa pessoal de contatos/mensagens;
+> - convite genérico Coletivo→Pessoa ou inclusão unilateral;
+> - Central de Atualizações universal para todo o ecossistema;
+> - confirmação de leitura, estado lido/não lido, digest ou resumo periódico;
+> - canal externo, frequência, preferência padrão, escalonamento ou automação de notificação.
+>
+> Trechos abaixo que descrevem essas capacidades registram **hipóteses funcionais históricas**, não contrato executável. Sua eventual retomada exige nova evidência canônica e adjudicação explícita. Interações já sustentadas por objetos compartilhados continuam válidas somente dentro da autoridade específica desses objetos.
 
 ## 1. Finalidade
 
