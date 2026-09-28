@@ -87,9 +87,9 @@ nav:
       - Marca, Fundador e Autoridade Pública: governance-framework/brand-public-authority-and-founder-role.md
 
   - Participantes:
-      - Pessoa: journeys/person.md
-      - Organização: journeys/organization.md
-      - Coletivo: journeys/collective.md
+      - Pessoa: participants/person.md
+      - Organização: participants/organization.md
+      - Coletivo: participants/collective.md
 
   - Produtos e Economia:
       - Arquitetura de Produtos: product-architecture/index.md
