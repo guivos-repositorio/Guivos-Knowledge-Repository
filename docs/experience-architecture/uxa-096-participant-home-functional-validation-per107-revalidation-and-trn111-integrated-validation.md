@@ -2,9 +2,9 @@
 id: UXA-096
 title: Validação Funcional Corrente do Início do Participante e TRN-111
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-27
 parent: UXA-000
 depends_on:
   - UXA-056
@@ -12,6 +12,7 @@ depends_on:
   - UXA-094
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
 related:
   - GKR-SURF-PER-107
   - GKR-SURF-PER-108
@@ -21,6 +22,12 @@ normative: false
 ---
 
 # Validação Funcional Corrente do Início do Participante e TRN-111
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> A relação `PER-107 → PER-108` permanece válida no contexto governado da participação em Coletivos. `PER-107` não é, por consequência, uma caixa universal de notificações.
+>
+> Este documento não herda de `UXA-058` ou `UXA-094` qualquer capacidade genérica de mensagem privada, convite Coletivo→Pessoa, lido/não lido, digest, preferência, canal externo ou automação de entrega. Para essas matérias, prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`.
 
 ## 1. Finalidade
 

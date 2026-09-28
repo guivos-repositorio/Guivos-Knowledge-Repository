@@ -2,9 +2,9 @@
 id: UXA-094
 title: Validação Funcional Corrente da Central de Atualizações e TRN-110
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-27
 parent: UXA-000
 depends_on:
   - UXA-056
@@ -12,6 +12,7 @@ depends_on:
   - UXA-092
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
 related:
   - GKR-SURF-PER-106
   - GKR-SURF-PER-107
@@ -21,6 +22,12 @@ normative: false
 ---
 
 # Validação Funcional Corrente da Central de Atualizações e TRN-110
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> `PER-107` permanece uma Central de Atualizações **contextual à participação em Coletivos**. Este documento não a transforma em caixa universal do ecossistema.
+>
+> Para entrega e mecanismos de comunicação/notificação, prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`. Portanto, preferências, lido/não lido, digest, frequência, deduplicação de UI, retenção, canal externo, lembretes e escalonamento permanecem **não adjudicados**, salvo futura autoridade específica. A abertura de `PER-107` e `TRN-110` continuam válidas sem depender desses mecanismos.
 
 ## 1. Finalidade
 
@@ -71,11 +78,11 @@ Quando uma atualização estiver obsoleta:
 - encaminhar ao contexto corrente;
 - não reconstituir efeito histórico.
 
-## 6. Preferências
+## 6. Preferências — fronteira corrente
 
-Preferências de atualização são separadas do vínculo e da autoridade.
+Este documento não contrata preferências executáveis de atualização.
 
-Silenciar ou reduzir determinado tipo de atualização não encerra participação nem revoga obrigações materiais.
+Qualquer futura preferência deverá permanecer separada de vínculo e autoridade: silenciar ou reduzir uma entrega, quando esse mecanismo vier a ser adjudicado, não poderá por si só encerrar participação nem revogar obrigação material.
 
 ## 7. Idempotência
 
