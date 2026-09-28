@@ -224,7 +224,6 @@ A designer pode representar dentro de `PER-107`:
 - atualização com ação disponível;
 - atualização com prazo legítimo;
 - atualização material de risco ou segurança;
-- atualização obsoleta;
 - vínculo ou autorização alterados;
 - erro recuperável;
 - indisponibilidade temporária.
@@ -417,7 +416,7 @@ PER-107
 → DOCUMENTED
 
 MASTER
-→ GKR-UX-PER107-MASTER-001 v0.1.0
+→ GKR-UX-PER107-MASTER-001 v0.2.0
 → CURRENT
 
 TRN-110
