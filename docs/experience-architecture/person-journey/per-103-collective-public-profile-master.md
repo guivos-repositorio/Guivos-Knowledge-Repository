@@ -2,12 +2,14 @@
 id: GKR-UX-PER103-MASTER-001
 title: Jornada da Pessoa — PER-103 — Perfil Público do Coletivo — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.2.0
+last_updated: 2026-09-27
 maturity: current_surface_design_definition
 depends_on:
   - UXA-056
   - GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
 tags:
   - person-journey
   - per-103
@@ -18,6 +20,10 @@ tags:
 ---
 
 # Jornada da Pessoa — PER-103 — Perfil Público do Coletivo — Documento Mestre de Superfície
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Para iniciativa de vínculo entre Pessoa e Coletivo prevalece `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001`. O corpus corrente contrata a solicitação iniciada pela Pessoa e não contrata convite genérico Coletivo → Pessoa, inclusão unilateral ou acesso por convite como lifecycle executável.
 
 ## 1. Finalidade
 
@@ -107,7 +113,6 @@ Podem existir, conforme autoridade, condições como:
 
 - entrada aberta;
 - entrada sujeita a aprovação;
-- convite;
 - critérios declarados;
 - temporariamente fechado;
 - outras condições governadas.
@@ -159,7 +164,7 @@ Coletivos sensíveis ou protegidos podem exigir, conforme autoridade:
 - contagem oculta;
 - responsáveis parcialmente ocultos;
 - restrição de encontrabilidade;
-- acesso por convite;
+- acesso restrito conforme autoridade específica legitimamente adjudicada;
 - outras reduções proporcionais.
 
 ```text
@@ -172,7 +177,7 @@ PERFIL PÚBLICO
 
 A Pessoa deve conseguir reconhecer a origem material pela qual chegou ao Coletivo quando isso afetar sua compreensão.
 
-Origem pode incluir busca, exploração, sugestão da Guivos, recomendação de pessoa, convite, link compartilhado ou conteúdo patrocinado.
+Origem pode incluir busca, exploração, sugestão da Guivos, recomendação contextual legitimamente autorizada, link compartilhado ou conteúdo patrocinado. Convite genérico Coletivo → Pessoa não é origem executável corrente.
 
 Uma origem não pode se apresentar como outra.
 
@@ -390,7 +395,7 @@ Lacunas permanecem explícitas e não podem ser completadas por inferência.
 
 ```text
 PER-103 MASTER
-→ GKR-UX-PER103-MASTER-001 v0.1.0
+→ GKR-UX-PER103-MASTER-001 v0.2.0
 → CURRENT SURFACE DESIGN DEFINITION
 
 TRN-102
