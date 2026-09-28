@@ -2,7 +2,7 @@
 id: GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
 title: Comunicações e Notificações — Contrato Transversal do Ecossistema
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-27
 normative: true
@@ -152,6 +152,12 @@ Comunicação destinada a participantes deve respeitar audiência, vínculo, fin
 ## 10. Comunicação Pessoa → Coletivo
 
 Solicitações, respostas e ações da Pessoa seguem os objetos e transições existentes. Não presumir mensagem livre ao Coletivo fora das responsabilidades governadas.
+
+### Iniciativa Coletivo → Pessoa
+
+O estado corrente não contrata convite genérico de adesão iniciado pelo Coletivo. Consequentemente, este contrato também não cria notificação de convite, lembrete de convite, expiração de convite ou campanha de recrutamento.
+
+Se essa capacidade for futuramente adjudicada, comunicação e notificação somente poderão ser definidas depois que o objeto relacional, o aceite da Pessoa e os dados autorizados estiverem contratados.
 
 ## 11. Organização ↔ Pessoa
 
