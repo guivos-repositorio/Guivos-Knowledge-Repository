@@ -1,15 +1,16 @@
 ---
 id: GKR-UX-PER104-MASTER-001
 title: Jornada da Pessoa — PER-104 — Revisão e Solicitação — Documento Mestre de Superfície
-version: 0.1.0
+version: 0.2.0
 status: active
 maturity: current_surface_design_definition
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-09-27
 depends_on:
   - UXA-056
   - GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
 related:
   - GKR-UX-PER103-MASTER-001
   - GKR-SURF-PER-105
@@ -19,6 +20,10 @@ normative: true
 ---
 
 # Jornada da Pessoa — PER-104 — Revisão e Solicitação — Documento Mestre de Superfície
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Para iniciativa de vínculo entre Pessoa e Coletivo prevalece `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001`. `PER-104` governa a revisão da solicitação iniciada conscientemente pela Pessoa; não contrata convite genérico Coletivo → Pessoa, aceite de convite ou inclusão unilateral.
 
 ## 1. Finalidade
 
@@ -103,11 +108,9 @@ Quando a entrada exigir aprovação, a Pessoa deve compreender antes do envio:
 
 A confirmação produz solicitação, não aprovação.
 
-### 5.3 Entrada por convite
+### 5.3 Iniciativa do Coletivo — limite não contratado
 
-Convite não cria participação automática. Quando o contexto aplicável vier de convite, a Pessoa continua com autoridade para aceitar, recusar, ignorar ou denunciar conforme o contrato correspondente.
-
-Este Master não inventa handoff de convite ausente do Registry.
+Convite genérico Coletivo → Pessoa, aceite de convite e inclusão unilateral não pertencem ao lifecycle executável corrente. Eventual iniciativa futura exige nova evidência canônica e adjudicação específica antes de qualquer handoff, estado ou transição.
 
 ## 6. Conteúdo que precisa ser compreendido
 
@@ -375,7 +378,7 @@ IA pode apoiar exploração e documentação, mas não pode:
 - reutilizar contexto sensível sem autoridade;
 - criar novo `PER-ID`;
 - promover `TRN-103` ou `TRN-104`;
-- inventar continuidade de entrada aberta ou convite;
+- inventar continuidade de entrada aberta ou iniciativa do Coletivo não adjudicada;
 - impor baseline visual;
 - iniciar Product Engineering.
 
@@ -417,7 +420,7 @@ Permanecem fora deste Master:
 - promoção de `TRN-103` ou `TRN-104`;
 - definição técnica de idempotência;
 - continuidade ponta a ponta de entrada aberta quando não registrada;
-- continuidade ponta a ponta de convite quando não registrada;
+- qualquer continuidade de convite/iniciativa do Coletivo sem nova adjudicação canônica;
 - implementação de backend;
 - política detalhada de decisão do responsável;
 - `PER-105` e seus estados pós-envio;
