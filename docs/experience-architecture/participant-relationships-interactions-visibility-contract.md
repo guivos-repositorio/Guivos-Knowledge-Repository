@@ -2,7 +2,7 @@
 id: GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
 title: Participantes — Relações, Interações, Conexões e Visibilidade — Contrato Transversal
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-27
 normative: true
@@ -87,21 +87,62 @@ O Coletivo não recebe por consequência objetivos privados, inferências da Jou
 
 ## 6. Iniciativa do Coletivo em relação à Pessoa
 
-O corpus corrente sustenta Pessoa solicitando participação. Não sustenta ainda um mecanismo genérico de convite/adesão unilateral iniciado pelo Coletivo.
+### 6.1 Adjudicação corrente
+
+O corpus corrente prova o fluxo **Pessoa solicita → Coletivo avalia → vínculo pode ser formado**. A auditoria não encontrou autoridade suficiente para criar um segundo lifecycle genérico iniciado pelo Coletivo.
+
+Portanto:
 
 ```text
-CONVITE DO COLETIVO
-→ LACUNA A ADJUDICAR
+PESSOA → SOLICITA PARTICIPAÇÃO
+→ FLUXO GOVERNADO
 
-ADICIONAR PESSOA SEM ACEITE
-→ NÃO AUTORIZADO POR INFERÊNCIA
+COLETIVO → CONVITE GENÉRICO DE ADESÃO
+→ NÃO CONTRATADO
+
+COLETIVO → ADICIONAR PESSOA DIRETAMENTE
+→ NÃO AUTORIZADO
+
+COLETIVO → PROPOR PAPEL FORA DE OBJETO CONTRATADO
+→ NÃO CONTRATADO
+```
+
+A ausência de contrato não significa proibição permanente. Significa que Design, IA e implementação não podem inventar esse comportamento sem nova evidência canônica.
+
+### 6.2 Inclusão exige manifestação da Pessoa
+
+Nenhuma Pessoa deve adquirir vínculo, papel, responsabilidade ou condição de participante apenas porque um responsável pelo Coletivo a selecionou.
+
+```text
+SELEÇÃO PELO COLETIVO
+≠ VÍNCULO
+
+CONVITE FUTURO
+≠ ACEITE
 
 PROPOSTA DE PAPEL
 ≠ ACEITE
 
 SILÊNCIO
 ≠ ACEITE
+
+DADO DE CONTATO DISPONÍVEL
+≠ AUTORIZAÇÃO PARA CONVIDAR
 ```
+
+Qualquer futura iniciativa do Coletivo deve preservar manifestação consciente da Pessoa antes da formação do vínculo e deve definir finalidade, expiração, recusa, revogação, proteção, dados revelados e continuidade.
+
+### 6.3 Descoberta não é convite
+
+Um Coletivo poder ser descoberto por Pessoas, publicar atividade/oportunidade ou aparecer em contexto pertinente não cria automaticamente uma lista de Pessoas que o Coletivo possa prospectar.
+
+Da mesma forma, uma Pessoa aparecer legitimamente em objeto compartilhado não autoriza o Coletivo a reutilizar sua identidade ou seus dados para convite de adesão fora daquele propósito.
+
+### 6.4 Reabertura
+
+Esta adjudicação deve ser reaberta somente se nova evidência canônica exigir uma iniciativa Coletivo→Pessoa, como convite explícito para participação, indicação nominal, proposta de papel ou adesão assistida.
+
+Nesse caso, a nova autoridade deverá decidir se a iniciativa usa superfície existente ou exige objeto/transição próprios. Nenhum ID deve ser criado antecipadamente.
 
 ## 7. Pessoa ↔ Pessoa
 
@@ -275,7 +316,8 @@ PERSON↔PERSON CONTEXTUAL CO-PRESENCE
 → ALLOWED WHEN REQUIRED BY AUTHORIZED SHARED OBJECT
 
 COLLECTIVE-INITIATED MEMBERSHIP
-→ NOT ADJUDICATED
+→ NOT CONTRACTED BY CURRENT AUTHORITY
+→ REQUIRES NEW CANONICAL EVIDENCE BEFORE MATERIALIZATION
 
 PRODUCT ENGINEERING
 → NOT RELEASED
