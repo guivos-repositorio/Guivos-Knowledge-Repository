@@ -2,15 +2,16 @@
 id: GKR-UX-PER107-MASTER-001
 title: Jornada da Pessoa — PER-107 — Central de Atualizações — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-09-27
 normative: false
 maturity: current_surface_design_definition
 depends_on:
   - UXA-056
   - UXA-092
   - UXA-094
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
   - GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -22,6 +23,10 @@ related:
 ---
 
 # Jornada da Pessoa — PER-107 — Central de Atualizações — Documento Mestre de Superfície
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> `PER-107` permanece Central contextual à participação em Coletivos, não caixa universal do ecossistema. Para mecanismos de comunicação/notificação prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`. Este Master não contrata preferências executáveis, lido/não lido, confirmação de leitura, digest, frequência, deduplicação de UI, retenção, canal externo, lembrete, escalonamento ou automação de entrega.
 
 ## 1. Finalidade
 
@@ -61,7 +66,7 @@ A superfície deve permitir que a Pessoa:
 8. diferencie atenção comum de risco ou segurança material;
 9. perceba quando uma atualização se tornou obsoleta;
 10. escolha conscientemente uma continuidade;
-11. ajuste preferências de atualização dentro da autoridade existente;
+11. compreenda os limites de entrega sem presumir preferências executáveis não adjudicadas;
 12. retorne sem produzir efeito substantivo.
 
 ## 4. Estrutura mínima de compreensão
@@ -144,18 +149,16 @@ Quando uma atualização estiver obsoleta, a experiência deve:
 
 Obsolescência não autoriza apagar silenciosamente contexto material que a Pessoa precise compreender.
 
-## 9. Preferências
+## 9. Preferências — limite não adjudicado
 
-Preferências de atualização permanecem separadas de vínculo e autoridade.
+Este Master não contrata controles executáveis de preferência, silenciamento, redução de frequência ou canal. Se uma autoridade futura adjudicar preferências, elas deverão permanecer separadas de vínculo, papel, autoridade e obrigação material.
 
 ```text
-SILENCIAR / REDUZIR ATUALIZAÇÕES
+PREFERÊNCIA FUTURA DE ENTREGA
 ≠ ENCERRAR PARTICIPAÇÃO
 ≠ REVOGAR AUTORIDADE
 ≠ REVOGAR OBRIGAÇÃO MATERIAL
 ```
-
-A experiência deve evitar linguagem que faça a Pessoa acreditar que controlar notificações equivale a sair do Coletivo ou alterar seu papel.
 
 ## 10. Idempotência de consumo
 
@@ -201,7 +204,7 @@ Conforme autoridade e atualização, a Pessoa pode:
 - filtrar ou agrupar atualizações quando houver suporte legítimo;
 - seguir uma ação válida;
 - abrir continuidade do vínculo quando contratada;
-- ajustar preferências permitidas;
+- usar somente controles de entrega que venham a ser adjudicados por autoridade específica;
 - retornar a `PER-106`;
 - ignorar ou adiar atenção quando não houver obrigação material;
 - reconhecer atualização obsoleta sem executar ação inválida.
@@ -216,12 +219,11 @@ A designer pode representar dentro de `PER-107`:
 - conjunto de atualizações;
 - agrupamento ou filtro legítimo;
 - ausência de atualizações;
-- atualização não lida;
-- atualização compreendida;
+- atualização disponível;
+- atualização obsoleta quando materialmente comprovada;
 - atualização com ação disponível;
 - atualização com prazo legítimo;
 - atualização material de risco ou segurança;
-- atualização obsoleta;
 - vínculo ou autorização alterados;
 - erro recuperável;
 - indisponibilidade temporária.
@@ -346,7 +348,7 @@ IA não pode:
 - usar não lidos para pressionar a Pessoa;
 - inferir urgência sem fundamento;
 - marcar efeito substantivo por simples leitura;
-- transformar preferência em alteração de vínculo;
+- inventar preferência executável ou transformá-la em alteração de vínculo;
 - executar ação sem revalidar destino;
 - manter ação obsoleta como válida;
 - absorver `PER-108` em `PER-107`;
@@ -373,9 +375,9 @@ O consumo de `PER-107` é aceitável quando:
 12. abertura não é apresentada como aceite;
 13. ação substantiva revalida estado no destino;
 14. atualização obsoleta não mantém ação inválida;
-15. preferências permanecem separadas do vínculo;
-16. silenciar não encerra participação;
-17. repetição de abertura/leitura não duplica evento;
+15. preferências executáveis não são materializadas sem adjudicação;
+16. eventual preferência futura permanece separada do vínculo;
+17. repetição de abertura não duplica evento;
 18. `TRN-110` permanece integralmente validada;
 19. entrada pela `TRN-110` exige ação explícita;
 20. `TRN-111` permanece integralmente validada;
@@ -414,7 +416,7 @@ PER-107
 → DOCUMENTED
 
 MASTER
-→ GKR-UX-PER107-MASTER-001 v0.1.0
+→ GKR-UX-PER107-MASTER-001 v0.2.0
 → CURRENT
 
 TRN-110

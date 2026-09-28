@@ -2,15 +2,16 @@
 id: GKR-UX-PER106-MASTER-001
 title: Jornada da Pessoa — PER-106 — Meus Coletivos — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-09-27
 normative: false
 maturity: current_surface_design_definition
 depends_on:
   - UXA-056
   - UXA-092
   - UXA-094
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
   - GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -22,6 +23,10 @@ related:
 ---
 
 # Jornada da Pessoa — PER-106 — Meus Coletivos — Documento Mestre de Superfície
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Para eventos, atualizações e notificações prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`. `PER-106` pode sinalizar existência de atualização material legitimamente relacionada ao vínculo, mas este Master não contrata estado lido/não lido, contador de não lidos, preferências, digest, frequência, deduplicação de UI ou canal de entrega.
 
 ## 1. Finalidade
 
@@ -56,7 +61,7 @@ A superfície deve permitir que a Pessoa:
 3. compreenda seu papel atual quando houver papel aplicável;
 4. reconheça mudança relevante de estado;
 5. compreenda última atualização relevante quando legitimamente disponível;
-6. reconheça itens não lidos por categoria sem pressão artificial;
+6. reconheça a existência de atualização material legitimamente disponível, sem inferir estado lido/não lido;
 7. troque categoria ou contexto sem alterar o vínculo;
 8. escolha conscientemente abrir a Central de Atualizações;
 9. retorne sem produzir efeito substantivo;
@@ -117,7 +122,7 @@ Quando legitimamente disponíveis e necessárias, `PER-106` pode exibir:
 - papel atual da Pessoa;
 - mudança relevante de estado;
 - última atualização relevante;
-- itens não lidos por categoria;
+- sinal de atualização material legitimamente disponível, sem estado lido/não lido;
 - ação legítima para abrir contexto relacionado;
 - acesso explícito à Central de Atualizações.
 
@@ -146,7 +151,7 @@ Ordenação ou agrupamento visual não deve ser apresentado como avaliação da 
 
 ## 8. Atualizações sem absorver PER-107
 
-`PER-106` pode apresentar sinais resumidos necessários para orientar a Pessoa, como última atualização relevante ou quantidade/categoria de itens não lidos quando houver autoridade e dado real.
+`PER-106` pode apresentar sinais resumidos necessários para orientar a Pessoa, como última atualização relevante ou existência de atualização material quando houver autoridade e dado real. Isso não autoriza contador, categoria lido/não lido ou mecanismo de leitura.
 
 Isso não transforma a superfície em Central de Atualizações.
 
@@ -333,7 +338,7 @@ IA não pode:
 
 - inventar Coletivo, vínculo, papel, estado ou atualização;
 - criar ranking, score ou comparação entre participantes;
-- transformar itens não lidos em obrigação;
+- inventar estado lido/não lido, contador de não lidos ou transformá-los em obrigação;
 - inferir autoridade a partir de papel sem contrato;
 - criar ou encerrar vínculo;
 - expor outros vínculos a um Coletivo;
@@ -360,7 +365,7 @@ O consumo de `PER-106` é aceitável quando:
 10. não abrir `PER-106` não desfaz aprovação;
 11. repetição do evento não duplica vínculo;
 12. última atualização relevante só aparece quando houver dado legítimo;
-13. não lidos não criam pressão artificial;
+13. estado lido/não lido ou contador não é inferido nem materializado sem adjudicação;
 14. `PER-106` não se transforma em feed;
 15. `PER-107` permanece responsabilidade separada;
 16. `TRN-108` permanece integralmente validada;
@@ -401,7 +406,7 @@ PER-106
 → DOCUMENTED
 
 MASTER
-→ GKR-UX-PER106-MASTER-001 v0.1.0
+→ GKR-UX-PER106-MASTER-001 v0.2.0
 → CURRENT
 
 TRN-108
