@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001
 title: Jornada da Pessoa — Autoridade de Completude Funcional
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-09-27
 normative: true
 maturity: functional_completeness_authority
 depends_on:
@@ -13,6 +13,7 @@ depends_on:
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-PLANS-PERSON-001
   - GKR-DATA-PRIVACY-CONSENT-001
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
 related:
   - GKR-SURF-PER-003
   - GKR-SURF-PER-009
@@ -21,6 +22,10 @@ related:
 ---
 
 # Jornada da Pessoa — Autoridade de Completude Funcional
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Para notificações, alertas e mecanismos de entrega prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`. Menções anteriores a preferências de atualização/comunicação não constituem entitlement implementado nem controle executável enquanto não houver adjudicação específica.
 
 ## 1. Finalidade
 
@@ -160,7 +165,7 @@ Comparação não produz vencedor universal.
 
 `PER-108` reconhece, conforme autoridade corrente:
 
-- preferências de atualização;
+- preferências de atualização — somente como necessidade conceitual/comercial ainda não adjudicada para execução;
 - pausa;
 - saída;
 - proteção;
@@ -177,7 +182,7 @@ CONTROLES DE VÍNCULO
 
 Cada controle material deve governar consequência, confirmação proporcional ao risco, processamento, resultado, recuperação e estado atualizado do vínculo.
 
-A adjudicação desta frente concluiu que consulta do vínculo, preferências de atualização, pausa/retomada, saída e contestação permanecem controles/estados de `PER-108`, sem novo `PER-ID` ou `TRN-ID`. Proteção/denúncia pode ter acesso contextual a partir de `PER-108`, mas triagem, evidências, investigação, acompanhamento, resolução ou recurso pertencem a processo especializado ainda não adjudicado e não podem ser absorvidos por inferência.
+A adjudicação desta frente concluiu que consulta do vínculo, pausa/retomada, saída e contestação podem permanecer controles/estados de `PER-108`, sem novo `PER-ID` ou `TRN-ID`. Preferências de atualização não são controle executável corrente e permanecem sujeitas à autoridade transversal de comunicações/notificações. Proteção/denúncia pode ter acesso contextual a partir de `PER-108`, mas triagem, evidências, investigação, acompanhamento, resolução ou recurso pertencem a processo especializado ainda não adjudicado e não podem ser absorvidos por inferência.
 
 ### 6.6 Conta / controles da Pessoa
 
