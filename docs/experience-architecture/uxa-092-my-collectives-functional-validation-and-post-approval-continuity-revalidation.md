@@ -2,9 +2,9 @@
 id: UXA-092
 title: Validação Funcional Corrente de Meus Coletivos e Continuidade Pós-Aprovação
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-27
 parent: UXA-000
 depends_on:
   - UXA-056
@@ -12,6 +12,7 @@ depends_on:
   - UXA-090
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
 related:
   - GKR-SURF-PER-105
   - GKR-SURF-PER-106
@@ -21,6 +22,10 @@ normative: false
 ---
 
 # Validação Funcional Corrente de Meus Coletivos e Continuidade Pós-Aprovação
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Para iniciativa Coletivo→Pessoa prevalece `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001`. O corpus corrente não contrata convite genérico de adesão iniciado pelo Coletivo. Assim, a categoria histórica **convite** abaixo não constitui estado executável corrente de `PER-106` nem autoriza novo lifecycle, superfície ou transição.
 
 ## 1. Finalidade
 
@@ -37,7 +42,7 @@ A experiência não mistura:
 - participação confirmada;
 - acompanhamento;
 - solicitação pendente;
-- convite;
+- convite — somente como hipótese histórica não executável até nova adjudicação;
 - pausa/saída;
 - vínculo encerrado.
 

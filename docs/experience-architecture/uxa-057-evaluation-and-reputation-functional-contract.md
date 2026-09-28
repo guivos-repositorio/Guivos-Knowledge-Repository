@@ -2,9 +2,9 @@
 id: UXA-057
 title: Contrato Funcional de Avaliação e Reputação
 status: active
-version: 0.1.2
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-21
+last_updated: 2026-09-27
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -19,11 +19,19 @@ depends_on:
   - UXA-056
 related:
   - UXA-058
+  - GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
   - M7.59
 normative: false
 ---
 
 # Contrato Funcional de Avaliação e Reputação
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Este documento permanece `normative: false`. Referências a `UXA-058` como fronteira de recomendações, convites, mensagens ou solicitação de contato não promovem essas capacidades a contrato corrente. Para relações entre participantes prevalece `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001`; para comunicações e notificações prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`.
+>
+> Em particular, este contrato não cria relação social autônoma Pessoa↔Pessoa, solicitação de contato, DM, convite genérico Coletivo→Pessoa ou canal externo. Convites contextuais para **avaliar uma experiência elegível**, quando citados neste documento, são prompts vinculados ao objeto de avaliação e não convite de adesão, contato direto ou nova relação entre participantes; sua futura entrega continua sujeita à autoridade de comunicações/notificações.
 
 ## 1. Finalidade
 
@@ -712,18 +720,11 @@ Deverão ser materializados separadamente, quando autorizados:
 23. prevenção de incentivo ou conflito;
 24. denúncia separada de avaliação.
 
-## 37. Relação com a UXA-058
+## 37. Relação com interações e comunicações
 
-A UXA-058 definirá:
+A `UXA-058` permanece proveniência funcional não normativa e não cria, por si só, recomendações P↔P, convite genérico de adesão, mensagem privada ou solicitação de contato.
 
-- recomendações entre pessoas;
-- compartilhamento e convites;
-- comunicados;
-- discussões;
-- perguntas e respostas;
-- mensagens entre participantes e responsáveis;
-- solicitação de contato;
-- bloqueio e segurança da interação.
+Interações contextuais relacionadas à avaliação somente podem existir dentro do objeto e da finalidade autorizados. Relações entre participantes e qualquer comunicação/notificação devem obedecer às autoridades transversais correntes.
 
 Uma resposta oficial à avaliação não cria automaticamente conversa privada.
 
