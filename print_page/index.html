@@ -29599,6 +29599,36 @@ ALERTA PRIORITÁRIO
 → REGRA DE PRIORIZAÇÃO AINDA EXIGE CONTRATO EXECUTÁVEL
 </code></pre></div>
 <p>Até existir regra executável de disparo, frequência, deduplicação e preferência, Design/IA não deve inventar comportamento automático.</p>
+<h3 id="experience-architecture-communications-notifications-cross-ecosystem-contract-71-adjudicacao-dos-niveis-free-plus-e-pro">7.1 Adjudicação dos níveis Free, Plus e Pro<a class="headerlink" href="#experience-architecture-communications-notifications-cross-ecosystem-contract-71-adjudicacao-dos-niveis-free-plus-e-pro" title="Permanent link">&para;</a></h3>
+<p>A baseline comercial prova a existência das categorias <strong>geral</strong>, <strong>personalizado</strong> e <strong>prioritário</strong>, mas não prova seus algoritmos, cadência ou canais.</p>
+<div class="highlight"><pre><span></span><code>FREE — ALERTA GERAL
+→ CATEGORIA COMERCIAL EXISTENTE
+→ REGRA EXECUTÁVEL DE DISPARO NÃO ADJUDICADA
+
+PLUS — ALERTA PERSONALIZADO
+→ CATEGORIA COMERCIAL EXISTENTE
+→ DEPENDE DE CONTEXTO AUTORIZADO E EXPLICABILIDADE
+→ REGRA EXECUTÁVEL DE DISPARO NÃO ADJUDICADA
+
+PRO — ALERTA PERSONALIZADO E PRIORITÁRIO
+→ CATEGORIA COMERCIAL EXISTENTE
+→ PRIORIDADE NÃO SIGNIFICA URGÊNCIA ARTIFICIAL
+→ REGRA EXECUTÁVEL DE PRIORIZAÇÃO NÃO ADJUDICADA
+</code></pre></div>
+<p>Nenhum plano autoriza inferir maior exposição de dados da Pessoa, acesso adicional de publicadores, frequência mais agressiva ou interrupção artificial.</p>
+<h3 id="experience-architecture-communications-notifications-cross-ecosystem-contract-72-limite-de-prototipacao">7.2 Limite de prototipação<a class="headerlink" href="#experience-architecture-communications-notifications-cross-ecosystem-contract-72-limite-de-prototipacao" title="Permanent link">&para;</a></h3>
+<p>Enquanto as regras executáveis permanecerem abertas, protótipos podem representar <strong>estados conceituais</strong> necessários para explicar a diferenciação comercial, mas não devem simular como canônico:</p>
+<ul>
+<li>momento exato de disparo;</li>
+<li>quantidade/frequência;</li>
+<li>algoritmo de correspondência;</li>
+<li>score ou ranking;</li>
+<li>ordem de prioridade;</li>
+<li>canal externo;</li>
+<li>preferência padrão;</li>
+<li>escalonamento ou insistência.</li>
+</ul>
+<p>Uma representação conceitual não promove o contrato a implementação.</p>
 <h2 id="experience-architecture-communications-notifications-cross-ecosystem-contract-8-planos-e-upgrade">8. Planos e upgrade<a class="headerlink" href="#experience-architecture-communications-notifications-cross-ecosystem-contract-8-planos-e-upgrade" title="Permanent link">&para;</a></h2>
 <p>Quando um alerta personalizado ou prioritário for capacidade de plano superior, ele pode ser descobrível segundo a Orquestração.</p>
 <p>O upgrade pode aparecer quando a Pessoa demonstra necessidade real da capacidade ou consulta Planos. Não deve interromper informação material já devida no plano atual.</p>
@@ -29625,7 +29655,18 @@ ISSO
 ≠ DM PESSOA A → PESSOA B
 </code></pre></div>
 <h2 id="experience-architecture-communications-notifications-cross-ecosystem-contract-14-canais">14. Canais<a class="headerlink" href="#experience-architecture-communications-notifications-cross-ecosystem-contract-14-canais" title="Permanent link">&para;</a></h2>
+<h3 id="experience-architecture-communications-notifications-cross-ecosystem-contract-141-adjudicacao-corrente">14.1 Adjudicação corrente<a class="headerlink" href="#experience-architecture-communications-notifications-cross-ecosystem-contract-141-adjudicacao-corrente" title="Permanent link">&para;</a></h3>
 <p>Nenhum canal externo é definido por inferência.</p>
+<p>A auditoria documental corrente não encontrou autoridade suficiente para tornar <strong>push, e-mail, SMS, WhatsApp ou mensagem direta</strong> canais canônicos de entrega de alertas. A existência técnica futura de um canal também não estabelece consentimento, preferência ou finalidade.</p>
+<div class="highlight"><pre><span></span><code>ALERTA CONTRATADO
+≠ CANAL EXTERNO CONTRATADO
+
+CANAL TECNICAMENTE DISPONÍVEL
+≠ CANAL AUTORIZADO PARA A PESSOA
+
+DADO DE CONTATO EXISTENTE
+≠ CONSENTIMENTO DE ENTREGA
+</code></pre></div>
 <p>Até autoridade específica, não presumir:</p>
 <ul>
 <li>push;</li>
@@ -29646,6 +29687,18 @@ ISSO
 <h2 id="experience-architecture-communications-notifications-cross-ecosystem-contract-15-deduplicacao-leitura-e-validade">15. Deduplicação, leitura e validade<a class="headerlink" href="#experience-architecture-communications-notifications-cross-ecosystem-contract-15-deduplicacao-leitura-e-validade" title="Permanent link">&para;</a></h2>
 <p>A futura execução deve distinguir evento de entrega. Um mesmo evento não deve produzir múltiplos efeitos materiais por retry.</p>
 <p>Estado lido/não lido, expiração, agrupamento, digest e retenção permanecem não adjudicados até regra própria.</p>
+<h3 id="experience-architecture-communications-notifications-cross-ecosystem-contract-151-garantias-minimas-sem-inventar-mecanismo">15.1 Garantias mínimas sem inventar mecanismo<a class="headerlink" href="#experience-architecture-communications-notifications-cross-ecosystem-contract-151-garantias-minimas-sem-inventar-mecanismo" title="Permanent link">&para;</a></h3>
+<p>Mesmo sem mecanismo executável adjudicado, uma futura implementação deverá preservar:</p>
+<ul>
+<li>idempotência material: retry não pode multiplicar consequência;</li>
+<li>rastreabilidade do evento de origem;</li>
+<li>destinatário autorizado no momento relevante;</li>
+<li>minimização do conteúdo entregue;</li>
+<li>continuidade para objeto/superfície legítimos;</li>
+<li>ausência de falsa urgência;</li>
+<li>ausência de inferência de leitura, ciência ou aceite.</li>
+</ul>
+<p>Estas garantias não definem UI, armazenamento, retenção, badge, contador ou fila.</p>
 <h2 id="experience-architecture-communications-notifications-cross-ecosystem-contract-16-privacidade">16. Privacidade<a class="headerlink" href="#experience-architecture-communications-notifications-cross-ecosystem-contract-16-privacidade" title="Permanent link">&para;</a></h2>
 <p>A notificação deve conter somente o mínimo necessário. Conteúdo sensível ou protegido pode exigir mensagem neutra que leve à superfície autenticada em vez de expor detalhes no canal.</p>
 <h2 id="experience-architecture-communications-notifications-cross-ecosystem-contract-17-criterios-de-aceite">17. Critérios de aceite<a class="headerlink" href="#experience-architecture-communications-notifications-cross-ecosystem-contract-17-criterios-de-aceite" title="Permanent link">&para;</a></h2>
@@ -29670,10 +29723,16 @@ EVENT TAXONOMY
 → BASELINE DE MATERIALIDADE DEFINIDA
 
 EXTERNAL CHANNELS
+→ AUDITED / NO CANONICAL CHANNEL ADJUDICATED
+
+DELIVERY FREQUENCY / DEDUP UI / PREFERENCES / READ STATE / DIGEST / RETENTION
 → NOT ADJUDICATED
 
-PERSON PLUS/PRO ALERT EXECUTION
-→ CONTRACT STILL INCOMPLETE
+PERSON FREE/PLUS/PRO ALERT CATEGORIES
+→ COMMERCIALLY DECLARED
+
+PERSON FREE/PLUS/PRO ALERT EXECUTION
+→ NOT ADJUDICATED
 
 NEW SURFACE IDS
 → NONE
