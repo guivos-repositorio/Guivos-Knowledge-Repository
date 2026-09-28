@@ -12798,13 +12798,13 @@ PER-105
 → TRN-105 / TRN-106 / TRN-107 / TRN-108 / TRN-109 = INTEGRALLY VALIDATED / UNCHANGED
 
 PER-106
-→ GKR-UX-PER106-MASTER-001 v0.1.0 / CURRENT
+→ GKR-UX-PER106-MASTER-001 v0.2.0 / CURRENT
 → MEUS COLETIVOS
 → TRN-108 / TRN-110 = INTEGRALLY VALIDATED / UNCHANGED
 → NÃO É FEED / RANKING / SCORE
 
 PER-107
-→ GKR-UX-PER107-MASTER-001 v0.1.0 / CURRENT
+→ GKR-UX-PER107-MASTER-001 v0.2.0 / CURRENT
 → CENTRAL DE ATUALIZAÇÕES
 → TRN-110 / TRN-111 = INTEGRALLY VALIDATED / UNCHANGED
 → TRIAGEM / COMPREENSÃO / NÃO É FEED
@@ -39683,6 +39683,10 @@ PRODUCT ENGINEERING
 → NOT RELEASED
 </code></pre></div>
 <p>Próxima superfície da coleção após a incorporação deste Master: <code>PER-106 — Meus Coletivos</code>.</p></section><section class="print-page" id="experience-architecture-person-journey-per-106-my-collectives-master" heading-number="9.3.21"><h1 id="experience-architecture-person-journey-per-106-my-collectives-master-jornada-da-pessoa-per-106-meus-coletivos-documento-mestre-de-superficie">Jornada da Pessoa — PER-106 — Meus Coletivos — Documento Mestre de Superfície<a class="headerlink" href="#experience-architecture-person-journey-per-106-my-collectives-master-jornada-da-pessoa-per-106-meus-coletivos-documento-mestre-de-superficie" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Reconciliação de autoridade — 2026-09-27</strong></p>
+<p>Para eventos, atualizações e notificações prevalece <code>GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001</code>. <code>PER-106</code> pode sinalizar existência de atualização material legitimamente relacionada ao vínculo, mas este Master não contrata estado lido/não lido, contador de não lidos, preferências, digest, frequência, deduplicação de UI ou canal de entrega.</p>
+</blockquote>
 <h2 id="experience-architecture-person-journey-per-106-my-collectives-master-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-per-106-my-collectives-master-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento consolida a definição corrente de consumo de <code>PER-106 — Meus Coletivos</code> para designer humana, IA opcional, Produto, UX, Research, Privacidade e Engenharia.</p>
 <p>A superfície permite à Pessoa <strong>reconhecer seus vínculos com Coletivos, compreender o estado e o papel atual de cada vínculo, perceber mudanças relevantes e escolher conscientemente qual contexto deseja abrir</strong>.</p>
@@ -39707,7 +39711,7 @@ PER-106
 <li>compreenda seu papel atual quando houver papel aplicável;</li>
 <li>reconheça mudança relevante de estado;</li>
 <li>compreenda última atualização relevante quando legitimamente disponível;</li>
-<li>reconheça itens não lidos por categoria sem pressão artificial;</li>
+<li>reconheça a existência de atualização material legitimamente disponível, sem inferir estado lido/não lido;</li>
 <li>troque categoria ou contexto sem alterar o vínculo;</li>
 <li>escolha conscientemente abrir a Central de Atualizações;</li>
 <li>retorne sem produzir efeito substantivo;</li>
@@ -39758,7 +39762,7 @@ PRESENÇA EM ATIVIDADE
 <li>papel atual da Pessoa;</li>
 <li>mudança relevante de estado;</li>
 <li>última atualização relevante;</li>
-<li>itens não lidos por categoria;</li>
+<li>sinal de atualização material legitimamente disponível, sem estado lido/não lido;</li>
 <li>ação legítima para abrir contexto relacionado;</li>
 <li>acesso explícito à Central de Atualizações.</li>
 </ul>
@@ -39784,7 +39788,7 @@ PRESENÇA EM ATIVIDADE
 </ul>
 <p>Ordenação ou agrupamento visual não deve ser apresentado como avaliação da Pessoa.</p>
 <h2 id="experience-architecture-person-journey-per-106-my-collectives-master-8-atualizacoes-sem-absorver-per-107">8. Atualizações sem absorver PER-107<a class="headerlink" href="#experience-architecture-person-journey-per-106-my-collectives-master-8-atualizacoes-sem-absorver-per-107" title="Permanent link">&para;</a></h2>
-<p><code>PER-106</code> pode apresentar sinais resumidos necessários para orientar a Pessoa, como última atualização relevante ou quantidade/categoria de itens não lidos quando houver autoridade e dado real.</p>
+<p><code>PER-106</code> pode apresentar sinais resumidos necessários para orientar a Pessoa, como última atualização relevante ou existência de atualização material quando houver autoridade e dado real. Isso não autoriza contador, categoria lido/não lido ou mecanismo de leitura.</p>
 <p>Isso não transforma a superfície em Central de Atualizações.</p>
 <div class="highlight"><pre><span></span><code>PER-106
 → RECONHECER VÍNCULOS
@@ -39935,7 +39939,7 @@ PER-107
 <ul>
 <li>inventar Coletivo, vínculo, papel, estado ou atualização;</li>
 <li>criar ranking, score ou comparação entre participantes;</li>
-<li>transformar itens não lidos em obrigação;</li>
+<li>inventar estado lido/não lido, contador de não lidos ou transformá-los em obrigação;</li>
 <li>inferir autoridade a partir de papel sem contrato;</li>
 <li>criar ou encerrar vínculo;</li>
 <li>expor outros vínculos a um Coletivo;</li>
@@ -39961,7 +39965,7 @@ PER-107
 <li>não abrir <code>PER-106</code> não desfaz aprovação;</li>
 <li>repetição do evento não duplica vínculo;</li>
 <li>última atualização relevante só aparece quando houver dado legítimo;</li>
-<li>não lidos não criam pressão artificial;</li>
+<li>estado lido/não lido ou contador não é inferido nem materializado sem adjudicação;</li>
 <li><code>PER-106</code> não se transforma em feed;</li>
 <li><code>PER-107</code> permanece responsabilidade separada;</li>
 <li><code>TRN-108</code> permanece integralmente validada;</li>
@@ -39999,7 +40003,7 @@ PER-107
 → DOCUMENTED
 
 MASTER
-→ GKR-UX-PER106-MASTER-001 v0.1.0
+→ GKR-UX-PER106-MASTER-001 v0.2.0
 → CURRENT
 
 TRN-108
@@ -40018,6 +40022,10 @@ PRODUCT ENGINEERING
 → NOT RELEASED
 </code></pre></div>
 <p>Próxima superfície da coleção após a incorporação deste Master: <code>PER-107 — Central de Atualizações</code>.</p></section><section class="print-page" id="experience-architecture-person-journey-per-107-updates-center-master" heading-number="9.3.22"><h1 id="experience-architecture-person-journey-per-107-updates-center-master-jornada-da-pessoa-per-107-central-de-atualizacoes-documento-mestre-de-superficie">Jornada da Pessoa — PER-107 — Central de Atualizações — Documento Mestre de Superfície<a class="headerlink" href="#experience-architecture-person-journey-per-107-updates-center-master-jornada-da-pessoa-per-107-central-de-atualizacoes-documento-mestre-de-superficie" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Reconciliação de autoridade — 2026-09-27</strong></p>
+<p><code>PER-107</code> permanece Central contextual à participação em Coletivos, não caixa universal do ecossistema. Para mecanismos de comunicação/notificação prevalece <code>GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001</code>. Este Master não contrata preferências executáveis, lido/não lido, confirmação de leitura, digest, frequência, deduplicação de UI, retenção, canal externo, lembrete, escalonamento ou automação de entrega.</p>
+</blockquote>
 <h2 id="experience-architecture-person-journey-per-107-updates-center-master-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-per-107-updates-center-master-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento consolida a definição corrente de consumo de <code>PER-107 — Central de Atualizações</code> para designer humana, IA opcional, Produto, UX, Research, Privacidade e Engenharia.</p>
 <p>A superfície permite à Pessoa <strong>triar e compreender atualizações relacionadas a vínculos legítimos, reconhecer origem, tipo, autoridade, contexto temporal e ação possível e decidir conscientemente se deseja seguir para uma continuidade válida</strong>.</p>
@@ -40047,7 +40055,7 @@ PER-107
 <li>diferencie atenção comum de risco ou segurança material;</li>
 <li>perceba quando uma atualização se tornou obsoleta;</li>
 <li>escolha conscientemente uma continuidade;</li>
-<li>ajuste preferências de atualização dentro da autoridade existente;</li>
+<li>compreenda os limites de entrega sem presumir preferências executáveis não adjudicadas;</li>
 <li>retorne sem produzir efeito substantivo.</li>
 </ol>
 <h2 id="experience-architecture-person-journey-per-107-updates-center-master-4-estrutura-minima-de-compreensao">4. Estrutura mínima de compreensão<a class="headerlink" href="#experience-architecture-person-journey-per-107-updates-center-master-4-estrutura-minima-de-compreensao" title="Permanent link">&para;</a></h2>
@@ -40114,14 +40122,13 @@ AÇÃO SUBSTANTIVA
 <li>revalidar o destino antes de ação substantiva.</li>
 </ul>
 <p>Obsolescência não autoriza apagar silenciosamente contexto material que a Pessoa precise compreender.</p>
-<h2 id="experience-architecture-person-journey-per-107-updates-center-master-9-preferencias">9. Preferências<a class="headerlink" href="#experience-architecture-person-journey-per-107-updates-center-master-9-preferencias" title="Permanent link">&para;</a></h2>
-<p>Preferências de atualização permanecem separadas de vínculo e autoridade.</p>
-<div class="highlight"><pre><span></span><code>SILENCIAR / REDUZIR ATUALIZAÇÕES
+<h2 id="experience-architecture-person-journey-per-107-updates-center-master-9-preferencias-limite-nao-adjudicado">9. Preferências — limite não adjudicado<a class="headerlink" href="#experience-architecture-person-journey-per-107-updates-center-master-9-preferencias-limite-nao-adjudicado" title="Permanent link">&para;</a></h2>
+<p>Este Master não contrata controles executáveis de preferência, silenciamento, redução de frequência ou canal. Se uma autoridade futura adjudicar preferências, elas deverão permanecer separadas de vínculo, papel, autoridade e obrigação material.</p>
+<div class="highlight"><pre><span></span><code>PREFERÊNCIA FUTURA DE ENTREGA
 ≠ ENCERRAR PARTICIPAÇÃO
 ≠ REVOGAR AUTORIDADE
 ≠ REVOGAR OBRIGAÇÃO MATERIAL
 </code></pre></div>
-<p>A experiência deve evitar linguagem que faça a Pessoa acreditar que controlar notificações equivale a sair do Coletivo ou alterar seu papel.</p>
 <h2 id="experience-architecture-person-journey-per-107-updates-center-master-10-idempotencia-de-consumo">10. Idempotência de consumo<a class="headerlink" href="#experience-architecture-person-journey-per-107-updates-center-master-10-idempotencia-de-consumo" title="Permanent link">&para;</a></h2>
 <p>Repetir abertura, retorno ou leitura:</p>
 <ul>
@@ -40155,7 +40162,7 @@ AÇÃO SUBSTANTIVA
 <li>filtrar ou agrupar atualizações quando houver suporte legítimo;</li>
 <li>seguir uma ação válida;</li>
 <li>abrir continuidade do vínculo quando contratada;</li>
-<li>ajustar preferências permitidas;</li>
+<li>usar somente controles de entrega que venham a ser adjudicados por autoridade específica;</li>
 <li>retornar a <code>PER-106</code>;</li>
 <li>ignorar ou adiar atenção quando não houver obrigação material;</li>
 <li>reconhecer atualização obsoleta sem executar ação inválida.</li>
@@ -40168,12 +40175,11 @@ AÇÃO SUBSTANTIVA
 <li>conjunto de atualizações;</li>
 <li>agrupamento ou filtro legítimo;</li>
 <li>ausência de atualizações;</li>
-<li>atualização não lida;</li>
-<li>atualização compreendida;</li>
+<li>atualização disponível;</li>
+<li>atualização obsoleta quando materialmente comprovada;</li>
 <li>atualização com ação disponível;</li>
 <li>atualização com prazo legítimo;</li>
 <li>atualização material de risco ou segurança;</li>
-<li>atualização obsoleta;</li>
 <li>vínculo ou autorização alterados;</li>
 <li>erro recuperável;</li>
 <li>indisponibilidade temporária.</li>
@@ -40279,7 +40285,7 @@ AÇÃO SUBSTANTIVA
 <li>usar não lidos para pressionar a Pessoa;</li>
 <li>inferir urgência sem fundamento;</li>
 <li>marcar efeito substantivo por simples leitura;</li>
-<li>transformar preferência em alteração de vínculo;</li>
+<li>inventar preferência executável ou transformá-la em alteração de vínculo;</li>
 <li>executar ação sem revalidar destino;</li>
 <li>manter ação obsoleta como válida;</li>
 <li>absorver <code>PER-108</code> em <code>PER-107</code>;</li>
@@ -40305,9 +40311,9 @@ AÇÃO SUBSTANTIVA
 <li>abertura não é apresentada como aceite;</li>
 <li>ação substantiva revalida estado no destino;</li>
 <li>atualização obsoleta não mantém ação inválida;</li>
-<li>preferências permanecem separadas do vínculo;</li>
-<li>silenciar não encerra participação;</li>
-<li>repetição de abertura/leitura não duplica evento;</li>
+<li>preferências executáveis não são materializadas sem adjudicação;</li>
+<li>eventual preferência futura permanece separada do vínculo;</li>
+<li>repetição de abertura não duplica evento;</li>
 <li><code>TRN-110</code> permanece integralmente validada;</li>
 <li>entrada pela <code>TRN-110</code> exige ação explícita;</li>
 <li><code>TRN-111</code> permanece integralmente validada;</li>
@@ -40343,7 +40349,7 @@ AÇÃO SUBSTANTIVA
 → DOCUMENTED
 
 MASTER
-→ GKR-UX-PER107-MASTER-001 v0.1.0
+→ GKR-UX-PER107-MASTER-001 v0.2.0
 → CURRENT
 
 TRN-110
