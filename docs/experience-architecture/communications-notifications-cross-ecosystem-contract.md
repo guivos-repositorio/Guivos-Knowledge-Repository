@@ -2,7 +2,7 @@
 id: GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
 title: Comunicações e Notificações — Contrato Transversal do Ecossistema
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-27
 normative: true
@@ -137,6 +137,43 @@ ALERTA PRIORITÁRIO
 
 Até existir regra executável de disparo, frequência, deduplicação e preferência, Design/IA não deve inventar comportamento automático.
 
+### 7.1 Adjudicação dos níveis Free, Plus e Pro
+
+A baseline comercial prova a existência das categorias **geral**, **personalizado** e **prioritário**, mas não prova seus algoritmos, cadência ou canais.
+
+```text
+FREE — ALERTA GERAL
+→ CATEGORIA COMERCIAL EXISTENTE
+→ REGRA EXECUTÁVEL DE DISPARO NÃO ADJUDICADA
+
+PLUS — ALERTA PERSONALIZADO
+→ CATEGORIA COMERCIAL EXISTENTE
+→ DEPENDE DE CONTEXTO AUTORIZADO E EXPLICABILIDADE
+→ REGRA EXECUTÁVEL DE DISPARO NÃO ADJUDICADA
+
+PRO — ALERTA PERSONALIZADO E PRIORITÁRIO
+→ CATEGORIA COMERCIAL EXISTENTE
+→ PRIORIDADE NÃO SIGNIFICA URGÊNCIA ARTIFICIAL
+→ REGRA EXECUTÁVEL DE PRIORIZAÇÃO NÃO ADJUDICADA
+```
+
+Nenhum plano autoriza inferir maior exposição de dados da Pessoa, acesso adicional de publicadores, frequência mais agressiva ou interrupção artificial.
+
+### 7.2 Limite de prototipação
+
+Enquanto as regras executáveis permanecerem abertas, protótipos podem representar **estados conceituais** necessários para explicar a diferenciação comercial, mas não devem simular como canônico:
+
+- momento exato de disparo;
+- quantidade/frequência;
+- algoritmo de correspondência;
+- score ou ranking;
+- ordem de prioridade;
+- canal externo;
+- preferência padrão;
+- escalonamento ou insistência.
+
+Uma representação conceitual não promove o contrato a implementação.
+
 ## 8. Planos e upgrade
 
 Quando um alerta personalizado ou prioritário for capacidade de plano superior, ele pode ser descobrível segundo a Orquestração.
@@ -184,7 +221,22 @@ ISSO
 
 ## 14. Canais
 
+### 14.1 Adjudicação corrente
+
 Nenhum canal externo é definido por inferência.
+
+A auditoria documental corrente não encontrou autoridade suficiente para tornar **push, e-mail, SMS, WhatsApp ou mensagem direta** canais canônicos de entrega de alertas. A existência técnica futura de um canal também não estabelece consentimento, preferência ou finalidade.
+
+```text
+ALERTA CONTRATADO
+≠ CANAL EXTERNO CONTRATADO
+
+CANAL TECNICAMENTE DISPONÍVEL
+≠ CANAL AUTORIZADO PARA A PESSOA
+
+DADO DE CONTATO EXISTENTE
+≠ CONSENTIMENTO DE ENTREGA
+```
 
 Até autoridade específica, não presumir:
 
@@ -209,6 +261,20 @@ O contrato pode evoluir para governar canais sem exigir nova superfície quando 
 A futura execução deve distinguir evento de entrega. Um mesmo evento não deve produzir múltiplos efeitos materiais por retry.
 
 Estado lido/não lido, expiração, agrupamento, digest e retenção permanecem não adjudicados até regra própria.
+
+### 15.1 Garantias mínimas sem inventar mecanismo
+
+Mesmo sem mecanismo executável adjudicado, uma futura implementação deverá preservar:
+
+- idempotência material: retry não pode multiplicar consequência;
+- rastreabilidade do evento de origem;
+- destinatário autorizado no momento relevante;
+- minimização do conteúdo entregue;
+- continuidade para objeto/superfície legítimos;
+- ausência de falsa urgência;
+- ausência de inferência de leitura, ciência ou aceite.
+
+Estas garantias não definem UI, armazenamento, retenção, badge, contador ou fila.
 
 ## 16. Privacidade
 
@@ -239,10 +305,16 @@ EVENT TAXONOMY
 → BASELINE DE MATERIALIDADE DEFINIDA
 
 EXTERNAL CHANNELS
+→ AUDITED / NO CANONICAL CHANNEL ADJUDICATED
+
+DELIVERY FREQUENCY / DEDUP UI / PREFERENCES / READ STATE / DIGEST / RETENTION
 → NOT ADJUDICATED
 
-PERSON PLUS/PRO ALERT EXECUTION
-→ CONTRACT STILL INCOMPLETE
+PERSON FREE/PLUS/PRO ALERT CATEGORIES
+→ COMMERCIALLY DECLARED
+
+PERSON FREE/PLUS/PRO ALERT EXECUTION
+→ NOT ADJUDICATED
 
 NEW SURFACE IDS
 → NONE
