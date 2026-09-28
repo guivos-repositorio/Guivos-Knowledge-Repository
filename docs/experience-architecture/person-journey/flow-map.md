@@ -2,9 +2,9 @@
 id: GKR-UX-PERSON-JOURNEY-FLOW-001
 title: Jornada da Pessoa — Mapa Completo de Superfícies para Design
 status: active
-version: 0.1.21
+version: 0.1.22
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-09-28
 normative: false
 maturity: current_documentation_sequence
 depends_on:
@@ -166,7 +166,7 @@ Regras estruturais:
 - resultado posterior ao handoff externo pertence ao terceiro;
 - `PER-204` governa o objeto bilateral interno após entrada consciente por `TRN-212`;
 - manifestação de interesse, inscrição, elegibilidade, seleção e participação permanecem objetos/estados distintos;
-- retorno contextual de `PER-204` à oportunidade é necessário, mas não cria `TRN-213` sem adjudicação própria.
+- retorno contextual de `PER-204` à oportunidade permanece necessário e sem `TRN-ID` dedicado; `TRN-213` já identifica exclusivamente o handoff bilateral `PER-204 → ORG-008`.
 
 ## 5. Família de Coletivos na perspectiva da Pessoa
 
