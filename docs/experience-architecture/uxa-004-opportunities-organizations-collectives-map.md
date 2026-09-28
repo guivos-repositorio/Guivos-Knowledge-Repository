@@ -2,9 +2,9 @@
 id: UXA-004
 title: Oportunidades, Organizações, Coletivos e Mapa
 status: active
-version: 0.1.1
+version: 0.2.0
 owner: Guivos Experience Architecture
-last_updated: 2026-09-21
+last_updated: 2026-09-27
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -16,10 +16,16 @@ related:
   - GPA-004
   - PAS-001-IC-VIEW-001
   - GKR-GLOSSARY-001
+  - GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
 normative: false
 ---
 
 # UXA-004 — Oportunidades, Organizações, Coletivos e Mapa
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Este documento é `normative: false`. Para relações entre participantes prevalece `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001`; para comunicações e notificações prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`. Menções históricas a convite de adesão, aceite de convite ou definição de notificações não criam capacidades executáveis.
 
 ## 1. Finalidade
 
@@ -588,8 +594,9 @@ Visão da Organização
 Explorar ou Mapa
 → perfil do Coletivo
 → regras e propósito
-→ solicitar entrada ou aceitar convite
-→ definir visibilidade e notificações
+→ solicitar participação pela Pessoa
+→ aguardar avaliação e decisão do Coletivo
+→ formar vínculo somente após decisão e manifestação consciente aplicáveis
 → participar de atividade
 → controlar saída e dados
 ```

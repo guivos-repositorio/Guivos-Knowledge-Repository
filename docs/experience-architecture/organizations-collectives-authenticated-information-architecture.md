@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-AUTH-IA-001
 title: Organizações e Coletivos — Arquitetura da Informação da Experiência Autenticada
 status: active
-version: 1.3.3
+version: 1.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-24
+last_updated: 2026-09-27
 normative: false
 maturity: authenticated_information_architecture_defined
 depends_on:
@@ -13,6 +13,8 @@ depends_on:
   - GKR-UX-ORGCOL-UX-STATE-001
   - UXA-014
   - UXA-019
+  - GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
 related:
   - GKR-JOURNEY-ORGANIZATION-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -27,6 +29,10 @@ related:
 ---
 
 # Organizações e Coletivos — Arquitetura da Informação da Experiência Autenticada
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Para relações entre participantes prevalece `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001`; para comunicações e notificações prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`. Esta arquitetura não autoriza convite genérico Coletivo → Pessoa, inclusão unilateral, preferências executáveis de notificação ou canais de entrega não adjudicados.
 
 ## 1. Finalidade
 
@@ -357,14 +363,14 @@ Concentrar a identidade institucional e o contexto necessário para atuar legiti
 Este domínio não define ainda:
 
 - cadastro técnico de usuários;
-- convite;
+- eventual mecanismo de convite, somente se previamente adjudicado por autoridade funcional/canônica específica;
 - RBAC final;
 - matriz técnica de permissões;
 - autenticação;
 - MFA;
 - administração de segurança.
 
-Esses temas exigirão autoridade técnica própria quando Product Engineering for reativada.
+Os temas técnicos exigirão autoridade própria quando Product Engineering for reativada. Convite ou iniciativa entre participantes exige antes autoridade funcional/canônica específica e não pode surgir apenas da implementação técnica.
 
 ## 11. Organização — Planos e Capacidade
 
