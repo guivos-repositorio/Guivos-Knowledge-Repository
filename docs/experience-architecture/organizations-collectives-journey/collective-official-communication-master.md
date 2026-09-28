@@ -2,7 +2,7 @@
 id: GKR-UX-COL-OFFICIAL-COMMUNICATION-MASTER-001
 title: Jornada de Organizações e Coletivos — Coletivo — Comunicação Oficial — Documento Mestre de Superfície
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-27
 normative: false
@@ -17,6 +17,7 @@ depends_on:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - UXA-058
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
 related:
   - GKR-SURF-COL-004
   - GKR-SURF-COL-005
@@ -28,6 +29,10 @@ related:
 ---
 
 # Coletivo — Comunicação Oficial — Documento Mestre de Superfície
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Para mecanismos de comunicação, notificação e entrega prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`. `COL-005` governa o objeto de Comunicação Oficial e sua responsabilidade funcional; não contrata por si só canal externo, preferência executável, confirmação de leitura, digest, frequência, lembrete, escalonamento ou automação de entrega. Menções a estados posteriores de entrega/leitura são condicionais a autoridade e evidência específicas.
 
 ## 1. Responsabilidade
 
@@ -173,7 +178,7 @@ LIDO
 ≠ ACEITO
 ```
 
-Nenhum desses estados posteriores é declarado se a infraestrutura ou autoridade correspondente não fornecer evidência.
+`ENTREGUE` e `LIDO` não são estados executáveis contratados por este Master. Só podem ser materializados se autoridade específica futura os adjudicar e a infraestrutura correspondente fornecer evidência suficiente; até lá, permanecem distinções semânticas de não equivalência.
 
 ## 9. Confirmação e efeito
 
