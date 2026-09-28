@@ -2,9 +2,9 @@
 id: UXA-056
 title: Contrato Funcional de Descoberta, Perfil Público e Participação em Coletivos
 status: active
-version: 1.0.2
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-22
+last_updated: 2026-09-27
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -18,6 +18,8 @@ depends_on:
   - UXA-029
 related:
   - UXA-057
+  - GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
   - UXA-058
   - UXA-096
   - M7.58
@@ -25,6 +27,16 @@ normative: false
 ---
 
 # Contrato Funcional de Descoberta, Perfil Público e Participação em Coletivos
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Este documento permanece `normative: false`. Para relações entre participantes e comunicações/notificações, prevalecem `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001` e `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`.
+>
+> O fluxo canônico atualmente comprovado é **Pessoa solicita participação → Coletivo avalia → vínculo pode ser formado**. Portanto, menções históricas abaixo a **entrada por convite**, **convite recebido/pendente**, **convite genérico Coletivo→Pessoa**, **proposta de papel fora de objeto contratado** ou **inclusão iniciada unilateralmente pelo Coletivo** não constituem contrato executável.
+>
+> Da mesma forma, referências históricas a **solicitação de contato Pessoa↔Pessoa**, **itens lidos/não lidos**, **digest/resumo**, **preferências de notificação** ou **Central de Atualizações universal** não criam essas capacidades. `PER-107` permanece contextual à participação em Coletivos; qualquer unificação ou mecanismo de entrega exige adjudicação própria.
+>
+> Permanecem válidos, quando sustentados pelas autoridades específicas, descoberta do Coletivo, perfil público, solicitação iniciada conscientemente pela Pessoa, decisão do Coletivo, vínculo confirmado, participação, visibilidade minimizada e continuidades do objeto compartilhado.
 
 ## 1. Finalidade
 
