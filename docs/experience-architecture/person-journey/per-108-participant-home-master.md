@@ -2,15 +2,16 @@
 id: GKR-UX-PER108-MASTER-001
 title: Jornada da Pessoa — PER-108 — Início do Participante — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-09-27
 normative: false
 maturity: current_surface_design_definition
 depends_on:
   - UXA-056
   - UXA-058
   - UXA-096
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
   - GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -20,6 +21,10 @@ related:
 ---
 
 # Jornada da Pessoa — PER-108 — Início do Participante — Documento Mestre de Superfície
+
+> **Reconciliação de autoridade — 2026-09-27**
+>
+> Para comunicações e notificações prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`. Este Master não contrata preferências executáveis de atualização, lido/não lido, confirmação de leitura, digest, frequência, canal externo ou automação de entrega. `PER-108` pode preservar apenas controles que possuam autoridade específica vigente.
 
 ## 1. Finalidade
 
@@ -211,9 +216,9 @@ A Pessoa deve conseguir compreender, quando aplicável:
 
 Estado histórico não prevalece sobre o estado corrente.
 
-### 13.2 Preferências de atualização
+### 13.2 Preferências de atualização — limite não adjudicado
 
-Preferências de atualização são controles de comunicação/contexto e devem permanecer distintas de:
+Preferências executáveis de atualização não estão adjudicadas pela autoridade corrente. Se uma autoridade futura contratar esse controle, ele deverá permanecer distinto de:
 
 ```text
 PREFERÊNCIA DE ATUALIZAÇÃO
@@ -223,9 +228,7 @@ PREFERÊNCIA DE ATUALIZAÇÃO
 ≠ AUTORIDADE
 ```
 
-Alterar preferência não pode criar, pausar ou encerrar vínculo por inferência.
-
-Quando a alteração produzir efeito persistente, a experiência deve apresentar estado confirmado, falha recuperável ou condição indeterminada sem declarar sucesso não comprovado.
+A existência comercial ou conceitual de preferências não autoriza sua materialização em `PER-108`. Eventual controle futuro não poderá criar, pausar ou encerrar vínculo por inferência e deverá possuir contrato próprio de consequência, confirmação e recuperação.
 
 ### 13.3 Pausar e retomar
 
@@ -363,7 +366,7 @@ Retornar, reabrir ou atualizar a superfície não deve, por si só:
 - aceitar função;
 - registrar concordância;
 - mudar autoridade;
-- marcar conteúdo externo como lido.
+- inferir ou marcar conteúdo externo como lido.
 
 Ações substantivas devem ocorrer somente em capacidades próprias e com estado corrente revalidado.
 
@@ -554,7 +557,7 @@ PER-108
 → DOCUMENTED
 
 MASTER
-→ GKR-UX-PER108-MASTER-001 v0.1.0
+→ GKR-UX-PER108-MASTER-001 v0.2.0
 → CURRENT
 
 TRN-111
