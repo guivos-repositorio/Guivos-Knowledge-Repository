@@ -2,15 +2,17 @@
 id: UXA-001
 title: Fundação da Arquitetura da Experiência da Guivos
 status: active
-version: 0.2.2
+version: 0.3.0
 owner: Guivos Experience Architecture
-last_updated: 2026-09-21
+last_updated: 2026-09-28
 parent: UXA-000
 depends_on:
   - PAS-001
   - PAS-001-CAPABILITY-MAP-001
   - GLPA-001
   - GIA-000
+  - GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
+  - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
 related:
   - UXA-020
   - PAS-001-CV-VIEW-001
@@ -81,6 +83,19 @@ A frente deverá produzir:
 - hipóteses e roteiros de teste de usabilidade;
 - contratos de handoff posteriores para Produto, UI, Engenharia, QA, Segurança, Jurídico, IA e Analytics.
 
+## 4.1 Precedência das autoridades correntes
+
+Esta fundação preserva princípios e intenção arquitetural, mas **não é autoridade suficiente para materializar topologia, superfície, interação ou controle executável quando autoridades posteriores já adjudicaram o tema**.
+
+Para leitura corrente:
+
+- registries e Documentos Mestres vigentes governam identidades, responsabilidades e transições de superfícies;
+- `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001` governa relações e iniciativas entre participantes;
+- `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001` governa comunicação, atualização, alerta, entrega e limites de notificação;
+- as autoridades autenticadas de Organização e Coletivo governam sua Arquitetura da Informação e navegação correntes.
+
+Consequentemente, referências conceituais abaixo a **preferências**, **Central de Intervenções**, categorias antigas de menu ou outras capacidades não constituem, isoladamente, controle executável, inbox universal, canal de entrega, entitlement, nova superfície ou nova transição.
+
 ## 5. Modelo de entrada e navegação global proposto
 
 ### 5.0 Página Inicial da Guivos — HOME
@@ -107,11 +122,11 @@ A HOME poderá permanecer acessível por marca ou menu institucional depois do i
 | **Jornada** | reunir Contexto, Objetivos, Próximos Passos, Experiências e Evolução |
 | **Explorar** | descobrir Oportunidades, Organizações, Coletivos, conteúdos, serviços e experiências |
 | **Mapa** | visualizar oportunidades, organizações, coletivos e eventos por localização autorizada |
-| **Eu** | controlar contexto, preferências, privacidade, integrações, conta e plano |
+| **Eu** | acessar responsabilidades pessoais e administrativas adjudicadas; preferências somente quando houver objeto e autoridade específicos |
 
-A `Central de Intervenções` deverá permanecer acessível por um controle global de atenção, sem se tornar uma caixa de entrada infinita.
+A referência histórica a uma `Central de Intervenções` global não contrata inbox universal nem controle global executável. Atualizações e comunicações devem seguir as superfícies e autoridades contextuais correntes; `PER-107`, em particular, permanece contextual à participação em Coletivos.
 
-### 5.2 Navegação principal da Organização
+### 5.2 Navegação conceitual histórica da Organização
 
 | Destino | Responsabilidade |
 |---|---|
@@ -122,7 +137,7 @@ A `Central de Intervenções` deverá permanecer acessível por um controle glob
 | **Resultados** | acompanhar participação, disponibilidade, processos e evidências autorizadas |
 | **Organização** | perfil, equipe, papéis, permissões, integrações, cobrança e conformidade |
 
-### 5.3 Navegação principal do Coletivo
+### 5.3 Navegação conceitual histórica do Coletivo
 
 | Destino | Responsabilidade |
 |---|---|
