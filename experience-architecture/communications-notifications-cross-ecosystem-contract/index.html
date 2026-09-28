@@ -7173,7 +7173,15 @@ ALERTA PRIORITÁRIO
 <h2 id="12-organizacao-coletivo">12. Organização ↔ Coletivo<a class="headerlink" href="#12-organizacao-coletivo" title="Permanent link">&para;</a></h2>
 <p>Eventos bilaterais devem preservar o mesmo objeto O↔C, destinatário responsável, escopo e estado. Não duplicar relação para criar uma notificação.</p>
 <h2 id="13-pessoa-pessoa">13. Pessoa ↔ Pessoa<a class="headerlink" href="#13-pessoa-pessoa" title="Permanent link">&para;</a></h2>
-<p>Como a relação bilateral Pessoa↔Pessoa não está adjudicada, este documento não cria mensagens ou notificações P↔P.</p>
+<p>A relação social bilateral autônoma Pessoa↔Pessoa não está adjudicada. Co-presença em objeto compartilhado não cria canal P↔P.</p>
+<p>Eventos de um objeto compartilhado podem gerar atualizações para cada Pessoa quando o contrato daquele objeto justificar, mas a entrega continua sendo <strong>objeto→Pessoa</strong>, não uma mensagem privada Pessoa→Pessoa por inferência.</p>
+<div class="highlight"><pre><span></span><code>PESSOA A AGE EM OBJETO COMPARTILHADO
+→ OBJETO MUDA
+→ PESSOA B PODE RECEBER ATUALIZAÇÃO SE FOR DESTINATÁRIA LEGÍTIMA
+
+ISSO
+≠ DM PESSOA A → PESSOA B
+</code></pre></div>
 <h2 id="14-canais">14. Canais<a class="headerlink" href="#14-canais" title="Permanent link">&para;</a></h2>
 <p>Nenhum canal externo é definido por inferência.</p>
 <p>Até autoridade específica, não presumir:</p>

@@ -29339,8 +29339,71 @@ SILÊNCIO
 ≠ ACEITE
 </code></pre></div>
 <h2 id="experience-architecture-participant-relationships-interactions-visibility-contract-7-pessoa-pessoa">7. Pessoa ↔ Pessoa<a class="headerlink" href="#experience-architecture-participant-relationships-interactions-visibility-contract-7-pessoa-pessoa" title="Permanent link">&para;</a></h2>
-<p>Não há contrato corrente para follow, amizade, conexão, chat, DM, compartilhamento privado ou acesso ao perfil privado de outra Pessoa.</p>
-<p>Interação de duas Pessoas dentro de Coletivo, atividade, consulta, decisão ou oportunidade permanece interação mediada pelo objeto/contexto correspondente e não cria relação social bilateral automática.</p>
+<h3 id="experience-architecture-participant-relationships-interactions-visibility-contract-71-adjudicacao-corrente">7.1 Adjudicação corrente<a class="headerlink" href="#experience-architecture-participant-relationships-interactions-visibility-contract-71-adjudicacao-corrente" title="Permanent link">&para;</a></h3>
+<p>A necessidade de Pessoas perceberem outras Pessoas em contextos compartilhados é compatível com o ecossistema, mas o corpus corrente não prova um objeto bilateral autônomo Pessoa↔Pessoa.</p>
+<p>Por isso:</p>
+<div class="highlight"><pre><span></span><code>COEXISTÊNCIA EM CONTEXTO COMPARTILHADO
+→ PODE SER MATERIALIZADA QUANDO A SUPERFÍCIE / FINALIDADE EXIGIR
+
+RELAÇÃO SOCIAL BILATERAL AUTÔNOMA
+→ NÃO ADJUDICADA
+
+NOVO PER-* / GKR-TRN-*
+→ NÃO JUSTIFICADO
+</code></pre></div>
+<p>Não criar por inferência:</p>
+<ul>
+<li>follow;</li>
+<li>amizade;</li>
+<li>conexão bilateral;</li>
+<li>chat ou DM;</li>
+<li>solicitação de conexão;</li>
+<li>lista de contatos;</li>
+<li>compartilhamento privado P↔P;</li>
+<li>acesso ao perfil privado de outra Pessoa;</li>
+<li>feed social derivado de conexões.</li>
+</ul>
+<h3 id="experience-architecture-participant-relationships-interactions-visibility-contract-72-pessoas-no-mesmo-contexto">7.2 Pessoas no mesmo contexto<a class="headerlink" href="#experience-architecture-participant-relationships-interactions-visibility-contract-72-pessoas-no-mesmo-contexto" title="Permanent link">&para;</a></h3>
+<p>Duas Pessoas podem aparecer uma para a outra quando isso for necessário ao objeto legítimo que compartilham — por exemplo, participação em Coletivo, atividade, consulta, decisão ou outra superfície cuja autoridade exija participantes visíveis.</p>
+<p>Essa visibilidade deve ser <strong>contextual</strong>, não uma autorização global sobre a Pessoa.</p>
+<p>O recorte pode conter, quando necessário e autorizado:</p>
+<ul>
+<li>identidade ou nome de apresentação;</li>
+<li>imagem pública/de apresentação, se existir e for apropriada;</li>
+<li>papel no contexto;</li>
+<li>vínculo pertinente;</li>
+<li>responsabilidade pertinente;</li>
+<li>contribuição/ação conscientemente pública naquele objeto;</li>
+<li>estado necessário à coordenação.</li>
+</ul>
+<p>Não deve revelar por consequência:</p>
+<ul>
+<li>Journey privada;</li>
+<li>objetivos privados;</li>
+<li>dados de contato;</li>
+<li>outros Coletivos/Organizações;</li>
+<li>oportunidades relacionadas;</li>
+<li>inferências pessoais;</li>
+<li>histórico fora do objeto;</li>
+<li>dados sensíveis;</li>
+<li>informação não necessária à finalidade.</li>
+</ul>
+<h3 id="experience-architecture-participant-relationships-interactions-visibility-contract-73-interacao-mediada">7.3 Interação mediada<a class="headerlink" href="#experience-architecture-participant-relationships-interactions-visibility-contract-73-interacao-mediada" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>PESSOA A
++
+OBJETO / CONTEXTO COMPARTILHADO
++
+PESSOA B
+→ INTERAÇÃO MEDIADA PELO OBJETO
+
+INTERAÇÃO MEDIADA
+≠ CONEXÃO SOCIAL
+≠ PERMISSÃO DE CONTATO DIRETO
+≠ VÍNCULO PERSISTENTE P↔P
+</code></pre></div>
+<p>Comentários, respostas, menções, mensagens contextuais ou outras mecânicas específicas somente podem existir quando a autoridade do objeto correspondente as contratar. Este documento não as cria genericamente.</p>
+<h3 id="experience-architecture-participant-relationships-interactions-visibility-contract-74-reabertura">7.4 Reabertura<a class="headerlink" href="#experience-architecture-participant-relationships-interactions-visibility-contract-74-reabertura" title="Permanent link">&para;</a></h3>
+<p>Pessoa↔Pessoa deve ser reaberto somente se nova evidência canônica exigir um objeto relacional próprio, como conexão bilateral persistente, mensagem privada, rede de contatos ou outro lifecycle independente do contexto compartilhado.</p>
 <h2 id="experience-architecture-participant-relationships-interactions-visibility-contract-8-pessoa-organizacao">8. Pessoa ↔ Organização<a class="headerlink" href="#experience-architecture-participant-relationships-interactions-visibility-contract-8-pessoa-organizacao" title="Permanent link">&para;</a></h2>
 <p>A relação bilateral atualmente comprovada está no processo interno de manifestação/inscrição em oportunidade.</p>
 <p>A Organização recebe somente o objeto e o recorte de dados conscientemente autorizados para a finalidade. A Pessoa recebe somente atualização material legitimamente comunicável do mesmo objeto.</p>
@@ -29399,8 +29462,11 @@ NEW SURFACE IDS
 NEW TRANSITION IDS
 → NONE
 
-PERSON↔PERSON
+PERSON↔PERSON AUTONOMOUS SOCIAL RELATIONSHIP
 → NOT ADJUDICATED
+
+PERSON↔PERSON CONTEXTUAL CO-PRESENCE
+→ ALLOWED WHEN REQUIRED BY AUTHORIZED SHARED OBJECT
 
 COLLECTIVE-INITIATED MEMBERSHIP
 → NOT ADJUDICATED
@@ -29518,7 +29584,15 @@ ALERTA PRIORITÁRIO
 <h2 id="experience-architecture-communications-notifications-cross-ecosystem-contract-12-organizacao-coletivo">12. Organização ↔ Coletivo<a class="headerlink" href="#experience-architecture-communications-notifications-cross-ecosystem-contract-12-organizacao-coletivo" title="Permanent link">&para;</a></h2>
 <p>Eventos bilaterais devem preservar o mesmo objeto O↔C, destinatário responsável, escopo e estado. Não duplicar relação para criar uma notificação.</p>
 <h2 id="experience-architecture-communications-notifications-cross-ecosystem-contract-13-pessoa-pessoa">13. Pessoa ↔ Pessoa<a class="headerlink" href="#experience-architecture-communications-notifications-cross-ecosystem-contract-13-pessoa-pessoa" title="Permanent link">&para;</a></h2>
-<p>Como a relação bilateral Pessoa↔Pessoa não está adjudicada, este documento não cria mensagens ou notificações P↔P.</p>
+<p>A relação social bilateral autônoma Pessoa↔Pessoa não está adjudicada. Co-presença em objeto compartilhado não cria canal P↔P.</p>
+<p>Eventos de um objeto compartilhado podem gerar atualizações para cada Pessoa quando o contrato daquele objeto justificar, mas a entrega continua sendo <strong>objeto→Pessoa</strong>, não uma mensagem privada Pessoa→Pessoa por inferência.</p>
+<div class="highlight"><pre><span></span><code>PESSOA A AGE EM OBJETO COMPARTILHADO
+→ OBJETO MUDA
+→ PESSOA B PODE RECEBER ATUALIZAÇÃO SE FOR DESTINATÁRIA LEGÍTIMA
+
+ISSO
+≠ DM PESSOA A → PESSOA B
+</code></pre></div>
 <h2 id="experience-architecture-communications-notifications-cross-ecosystem-contract-14-canais">14. Canais<a class="headerlink" href="#experience-architecture-communications-notifications-cross-ecosystem-contract-14-canais" title="Permanent link">&para;</a></h2>
 <p>Nenhum canal externo é definido por inferência.</p>
 <p>Até autoridade específica, não presumir:</p>
