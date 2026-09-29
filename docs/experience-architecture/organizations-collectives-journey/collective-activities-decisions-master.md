@@ -2,9 +2,9 @@
 id: GKR-UX-COL-ACTIVITIES-DECISIONS-MASTER-001
 title: Jornada de Organizações e Coletivos — Coletivo — Atividades, Consultas e Decisões — Documento Mestre de Superfície
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-27
+last_updated: 2026-09-28
 normative: false
 maturity: functional_contract_candidate
 depends_on:
@@ -16,8 +16,8 @@ depends_on:
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - UXA-058
 related:
+  - UXA-058
   - GKR-SURF-COL-005
   - GKR-SURF-COL-006
   - GKR-SURF-COL-007
@@ -116,7 +116,7 @@ ATIVIDADE REALIZADA
 
 ## 7. Conversa contextual da atividade
 
-UXA-058 autoriza comunicação própria por atividade, separada do Coletivo permanente.
+A proveniência histórica de UXA-058 registrou comunicação própria por atividade. No estado corrente, este Master preserva apenas a comunicação contextual necessária à atividade; comunicação oficial material permanece em `COL-005` e comunicação/notificação segue `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`.
 
 Ela pode reunir, quando aplicável, comunicados da atividade, ponto de encontro, horário, alterações, requisitos, segurança, acessibilidade, dúvidas, materiais e participantes visíveis conforme consentimento.
 
@@ -128,7 +128,7 @@ Este Master não transforma conversa de atividade em chat irrestrito.
 
 Consulta é pedido estruturado de contribuição antes de decisão.
 
-A consulta deve informar, conforme UXA-058:
+A consulta deve informar, conforme o contrato funcional consolidado neste Master:
 
 - assunto;
 - quem pode participar;
@@ -156,7 +156,7 @@ Este Master não inventa quórum, peso, maioria, unanimidade ou método de vota�
 
 Decisão é registro de autoridade e fundamento.
 
-A decisão deve informar, conforme UXA-058:
+A decisão deve informar, conforme o contrato funcional consolidado neste Master:
 
 - autoridade;
 - fundamento;
@@ -383,8 +383,8 @@ Este Master é funcionalmente suficiente quando a materialização:
 2. mantém as três naturezas distinguíveis;
 3. preserva oportunidades especializadas em suas autoridades próprias;
 4. exige autoridade contextual para ações materiais;
-5. implementa o contrato de consulta de UXA-058 sem inventar votação;
-6. implementa o contrato de decisão de UXA-058 sem substituir governança por popularidade;
+5. implementa o contrato corrente de consulta consolidado neste Master sem inventar votação;
+6. implementa o contrato corrente de decisão consolidado neste Master sem substituir governança por popularidade;
 7. distingue atividade, resultado e impacto;
 8. preserva comunicação oficial em `COL-005`;
 9. preserva proteção/moderação em `COL-007`;

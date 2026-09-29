@@ -2,9 +2,9 @@
 id: GKR-UX-COL-PROTECTION-MODERATION-MASTER-001
 title: Jornada de Organizações e Coletivos — Coletivo — Proteção e Moderação — Documento Mestre de Superfície
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-27
+last_updated: 2026-09-28
 normative: false
 maturity: functional_contract_candidate
 depends_on:
@@ -16,8 +16,8 @@ depends_on:
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - UXA-058
 related:
+  - UXA-058
   - GKR-SURF-COL-005
   - GKR-SURF-COL-006
   - GKR-SURF-COL-007
@@ -25,6 +25,10 @@ related:
 ---
 
 # Coletivo — Proteção e Moderação — Documento Mestre de Superfície
+
+## 0. Precedência
+
+`UXA-058` permanece relacionada apenas como proveniência histórica. Este Master, junto das autoridades O/C correntes das quais depende, governa o contrato funcional atual de `COL-007`; capacidades históricas de interação, mensagem, convite ou conexão de `UXA-058` não são reativadas por esta referência.
 
 ## 1. Responsabilidade
 
