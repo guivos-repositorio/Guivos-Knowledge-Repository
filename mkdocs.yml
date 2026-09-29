@@ -96,6 +96,15 @@ nav:
       - Modelo Econômico: economic-model/index.md
       - Estratégia de Negócio: business-architecture/index.md
 
+  - Ecossistema:
+      - Guivos Journey: product-architecture/journey.md
+      - Guivos Mall: product-architecture/mall.md
+      - Guivos Travel: product-architecture/travel.md
+      - Guivos Business: product-architecture/business.md
+      - Guivos Media: product-architecture/media.md
+      - Guivos Intelligence: product-architecture/intelligence.md
+      - Guivos Ads: product-architecture/ads.md
+
   - Planos:
       - Visão Geral dos Planos: plans/index.md
       - Pessoa — Free, Plus e Pro: plans/person.md
