@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.10
+version: 1.0.11
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-25
+last_updated: 2026-09-28
 related:
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -168,7 +168,8 @@ Permanecem abertas, conforme os Surface Registries e contratos correntes:
 - `COL-007`: proteção e moderação — contrato corrente com cobertura low-fidelity parcial e `Governança e Proteção = PASS`; materialização dedicada e continuidade ponta a ponta ainda não estão comprovadas;
 - `COL-008`: relação Organização ↔ Coletivo — contrato/lifecycle definidos sob `UXA-019`, com cobertura low-fidelity O↔C em `PASS`; materialização dedicada e continuidade ponta a ponta permanecem abertas;
 - `Coletivo ↔ Coletivo`: necessidade conceitual reconhecida por `UXA-014`, mas sem evidência suficiente para adjudicar superfície, lifecycle ou transições próprias; `COL-008` e `UXA-019` permanecem exclusivos de Organização↔Coletivo, e nenhum novo ID deve ser criado por analogia;
-- capacidades de avaliação/reputação e de interações/recomendações/conexões governadas por `UXA-057` e `UXA-058` permanecem dependentes de materialização/validação específica onde o Registry ainda não comprova fechamento.
+- capacidades de avaliação/reputação permanecem condicionadas às autoridades correntes aplicáveis e à materialização/validação específica onde o Registry ainda não comprova fechamento;
+- referências históricas de `UXA-058` a interações, recomendações, conexões, convite, contato ou mensagem **não constituem lacuna de implementação**: `UXA-058` é proveniência histórica, e qualquer relação bilateral autônoma Pessoa↔Pessoa ou iniciativa genérica Coletivo→Pessoa exige nova evidência canônica e adjudicação própria antes de materialização.
 
 Essas lacunas especializadas não reabrem a cadeia principal autenticada já fechada até `HIGH-FIDELITY EXECUTION RELEASE`; elas devem ser tratadas como frentes funcionais próprias, sem promoção por analogia.
 
