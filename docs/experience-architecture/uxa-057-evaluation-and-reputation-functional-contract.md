@@ -2,9 +2,9 @@
 id: UXA-057
 title: Contrato Funcional de Avaliação e Reputação
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-27
+last_updated: 2026-09-28
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -155,7 +155,7 @@ Relato opcional associado à avaliação. Poderá ser público, restrito ao resp
 
 ### 6.3 Recomendação
 
-Declaração de que uma pessoa considera um objeto relevante para outra pessoa ou contexto. Recomendação será contratada na UXA-058 e não equivale a avaliação positiva.
+Declaração de que uma pessoa considera um objeto relevante para outra pessoa ou contexto. Recomendação não equivale a avaliação positiva e **não possui, por `UXA-058`, contrato executável corrente**. Qualquer futura recomendação entre participantes exige autoridade própria compatível com `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001`.
 
 ### 6.4 Depoimento
 
@@ -587,7 +587,7 @@ A Guivos deverá detectar e limitar:
 - automação abusiva;
 - concentração anormal sem contexto legítimo.
 
-Uma Organização ou Coletivo poderá convidar pessoas elegíveis a avaliar, mas não poderá selecionar apenas pessoas satisfeitas quando o convite for apresentado como processo geral.
+Uma Organização ou Coletivo poderá, em futura materialização especificamente adjudicada, originar um **pedido contextual de avaliação** para pessoas elegíveis; isso não constitui convite de adesão, contato direto ou autorização de canal. A mecânica de entrega do prompt não está contratada por este documento e deve obedecer a `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`. Quando existir processo geral autorizado, não poderá selecionar apenas pessoas satisfeitas.
 
 ## 30. Incentivos e conflitos de interesse
 
@@ -769,7 +769,7 @@ Este contrato não:
 
 ## 40. Continuidade corrente
 
-A UXA-058 já foi definida e integra o corpus corrente. Portanto, esta seção não cria uma sequência futura automática.
+A `UXA-058` permanece no corpus somente como proveniência funcional não normativa. Ela não cria sequência futura automática nem backlog executável de recomendação, conexão, convite, mensagem ou contato.
 
 A lacuna vigente deste contrato é a materialização/validação específica de **avaliação e reputação** onde o Surface Registry ainda não comprova fechamento.
 
@@ -777,6 +777,8 @@ Para continuidade, consultar:
 
 - `GKR-JOURNEY-SURFACE-REGISTRY-001`;
 - `GKR-JOURNEY-GAPS-001`;
-- `UXA-058` para interações, recomendações e conexões.
+- `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001` para relações e interações entre participantes;
+- `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001` para eventual entrega de prompts, atualizações ou alertas;
+- `UXA-058` somente como proveniência histórica não normativa.
 
 Nenhum wireframe, protótipo, teste ou desenvolvimento é iniciado por este contrato.
