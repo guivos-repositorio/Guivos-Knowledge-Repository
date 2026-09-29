@@ -2,9 +2,9 @@
 id: GKR-UX-COL-OFFICIAL-COMMUNICATION-MASTER-001
 title: Jornada de Organizações e Coletivos — Coletivo — Comunicação Oficial — Documento Mestre de Superfície
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-27
+last_updated: 2026-09-28
 normative: false
 maturity: functional_contract_candidate
 depends_on:
@@ -16,9 +16,9 @@ depends_on:
   - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - UXA-058
   - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
 related:
+  - UXA-058
   - GKR-SURF-COL-004
   - GKR-SURF-COL-005
   - GKR-SURF-COL-006
@@ -32,7 +32,7 @@ related:
 
 > **Reconciliação de autoridade — 2026-09-27**
 >
-> Para mecanismos de comunicação, notificação e entrega prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`. `COL-005` governa o objeto de Comunicação Oficial e sua responsabilidade funcional; não contrata por si só canal externo, preferência executável, confirmação de leitura, digest, frequência, lembrete, escalonamento ou automação de entrega. Menções a estados posteriores de entrega/leitura são condicionais a autoridade e evidência específicas.
+> Para mecanismos de comunicação, notificação e entrega prevalece `GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001`. `COL-005` governa o objeto de Comunicação Oficial e sua responsabilidade funcional; não contrata por si só canal externo, preferência executável, confirmação de leitura, digest, frequência, lembrete, escalonamento ou automação de entrega. Menções a estados posteriores de entrega/leitura são condicionais a autoridade e evidência específicas. `UXA-058` permanece relacionada somente como proveniência histórica e não reativa capacidades antigas de interação, mensagem, convite ou conexão.
 
 ## 1. Responsabilidade
 
@@ -89,7 +89,7 @@ A Pessoa autorizada deve conseguir:
 
 ## 5. Objeto funcional mínimo
 
-Para comunicado oficial, o contrato existente de `UXA-058` permanece obrigatório. A materialização deve registrar, no recorte aplicável:
+Para comunicado oficial, o contrato funcional corrente é consolidado neste Master. A proveniência histórica de `UXA-058` não é autoridade executável autônoma. A materialização deve registrar, no recorte aplicável:
 
 - título objetivo;
 - natureza oficial;
