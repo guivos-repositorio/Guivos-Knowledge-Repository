@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.10
+version: 0.29.11
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-09-28
 related:
   - UXA-089
   - UXA-090
@@ -110,7 +110,7 @@ O modelo corrente não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011
 | GKR-TRN-110 | PER-106 | PER-107 | participante | abrir Central sem alterar vínculo ou leitura | UXA-092/094/096 | **integralmente validada** | — |
 | GKR-TRN-111 | PER-107 | PER-108 | participante | abrir início do mesmo Coletivo com permissão revalidada | UXA-096 | **integralmente validada** | — |
 | GKR-TRN-112 | COL-002 | COL-003 | responsável | abrir fila especializada preservando escopo | GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 + UXA-089/090 | **integralmente validada** | — |
-| GKR-TRN-113 | COL-004 | COL-005 | responsável | comunicar a participantes autorizados | UXA-058 + GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 + GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | contratada | operação interna não materializada |
+| GKR-TRN-113 | COL-004 | COL-005 | responsável | comunicar a participantes autorizados | GKR-UX-COL-OFFICIAL-COMMUNICATION-MASTER-001 + GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001 + GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 + GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | contratada | operação interna não materializada |
 | GKR-TRN-114 | COL-003 | COL-004 | responsável | continuar operacionalmente para gestão do mesmo vínculo já formado pela aprovação | GKR-UX-COL-REQUEST-MANAGEMENT-MASTER-001 + GKR-UX-COL-PARTICIPANTS-LINKS-MASTER-001 + UXA-092 | contratada | persistência técnica do vínculo e materialização dedicada de COL-004 não comprovadas |
 
 ## 6. Organização, oportunidades e relações bilaterais
