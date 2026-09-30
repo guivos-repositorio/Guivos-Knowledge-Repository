@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-EVALUATION-REPUTATION-D1-D4-EXAMINATION-001
-title: "Avaliação e Reputação — Consolidação do exame D1–D4"
+title: "Avaliação e Reputação — Consolidação do exame D1–D5"
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-29
+last_updated: 2026-09-30
 related:
   - UXA-057
   - GKR-UX-EVALUATION-REPUTATION-HUMAN-ADJUDICATION-DOSSIER-001
@@ -15,19 +15,19 @@ related:
 normative: false
 ---
 
-# Avaliação e Reputação — Consolidação do exame D1–D4
+# Avaliação e Reputação — Consolidação do exame D1–D5
 
 Este documento reúne as responsabilidades e dependências já examinadas para UXA-057. É um **instrumento de leitura e adjudicação**, não uma decisão de produto nem uma especificação de tela. As matrizes especializadas e os contratos normativos vigentes prevalecem em seus escopos. O avanço sequencial da análise não constitui aprovação de alternativas.
 
-## 1. Situação das cinco decisões
+## 1. Situação das cinco frentes
 
 | Gate | Exame documental | Decisão humana e consequência |
 | --- | --- | --- |
 | D1 — cobertura inicial | Seis categorias examinadas individualmente | Nenhuma categoria selecionada; cobertura inicial pendente |
 | D2 — responsabilidades da Pessoa | Entrada contextual, registro protegido, continuidade e três alternativas de materialização examinadas | Materialização não escolhida; nenhum Master estendido |
 | D3 — exibição contextual | Superfícies candidatas, perfil versus detalhe, estados de publicação e três autorizações independentes examinados | Nenhuma superfície ou publicação autorizada |
-| D4 — competências | Resposta oficial, contestação, denúncia/moderação e recurso examinados; casos multipartes preparados para consolidação | Nenhuma alçada, política, instância ou permissão concedida |
-| D5 — handoffs | Matriz H1–H13 já documentada | Adjudicação ainda não iniciada; H3 e H13 bloqueadas |
+| D4 — competências | Resposta oficial, contestação, denúncia, moderação independente e recurso examinados e reconciliados; auditoria conceitual D4.7 concluída | Nenhuma alçada, política, instância ou permissão concedida |
+| D5 — handoffs | H1–H13 examinados; reconciliação D5.18 e auditoria D5.19 concluídas | Nenhuma transição liberada; H3 e H13 bloqueados; origem permanente de H6 indefinida |
 
 ## 2. D1 — seis categorias, sem priorização implícita
 
@@ -68,11 +68,11 @@ Limiar estatístico, comentários, retenção, proteção, moderação e autorid
 
 **D4.2 — Contestação.** Questão específica com fundamento e evidência: erro de objeto/etapa, elegibilidade, duplicidade, falsificação, conflito oculto ou violação identificada. Discordância com crítica desfavorável não basta. Contestação não remove conteúdo automaticamente.
 
-**D4.3 — Denúncia e moderação.** Denúncia de possível violação não é avaliação negativa nem comprovação de infração. Triagem especializada, análise de risco, medidas proporcionais, decisão fundamentada e registro. Medidas cautelares, prazos e retenção não estão aprovados. COL-007 mantém apenas seu escopo vigente.
+**D4.3 — Denúncia e moderação (síntese histórica; competências desdobradas no exame posterior).** Denúncia de possível violação não é avaliação negativa nem comprovação de infração. Triagem especializada, análise de risco, medidas proporcionais, decisão fundamentada e registro. Medidas cautelares, prazos e retenção não estão aprovados. COL-007 mantém apenas seu escopo vigente.
 
-**D4.4 — Recurso.** Reexame de decisão recorrível por instância distinta do decisor original, com legitimidade, acesso proporcional às evidências, proteção e registro de resultado. Recurso não reverte automaticamente medida nem autoriza divulgação de dados protegidos.
+**Recurso — competência D4.5 no exame sequencial posterior.** Reexame de decisão recorrível por instância distinta do decisor original, com legitimidade, acesso proporcional às evidências, proteção e registro de resultado. Recurso não reverte automaticamente medida nem autoriza divulgação de dados protegidos.
 
-**D4.5 — Casos multipartes, a consolidar antes da adjudicação.** Separar publicador, executor, certificador, registrador de presença, patrocinador, titular da edição e representante com mandato. Coexecução pode requerer competências e respostas por aspecto, sem acesso irrestrito entre parceiros. Relações O↔C devem preservar confidencialidade e direitos das Pessoas legitimamente afetadas. Denúncia contra o próprio representante, substituição de mandato, conflito de interesse, objeto encerrado e experiência histórica exigem instância especializada e trilha de decisão.
+**Casos multipartes — requisito transversal do exame posterior.** Separar publicador, executor, certificador, registrador de presença, patrocinador, titular da edição e representante com mandato. Coexecução pode requerer competências e respostas por aspecto, sem acesso irrestrito entre parceiros. Relações O↔C devem preservar confidencialidade e direitos das Pessoas legitimamente afetadas. Denúncia contra o próprio representante, substituição de mandato, conflito de interesse, objeto encerrado e experiência histórica exigem instância especializada e trilha de decisão.
 
 COL-002 e ORG-001 são entradas administrativas candidatas sujeitas à extensão expressa; não concedem painel, contestação ou moderação universal. A instância de recurso não pode ser controlada isoladamente pela parte interessada ou pelo decisor original.
 
@@ -81,3 +81,38 @@ COL-002 e ORG-001 são entradas administrativas candidatas sujeitas à extensão
 Antes de qualquer mudança normativa: selecionar cobertura D1 expressamente; decidir partição/materialização D2; comprovar superfícies e autoridade de publicação D3; aprovar competências, políticas jurídicas/operacionais e salvaguardas D4; só então verificar H1–H13 individualmente com origem/destino reais, revalidação, retorno, falha, interrupção, proteção e idempotência. H3 exige origem pública real e H13 contrato UXA-057 específico.
 
 **Estado: DRAFT / NON-NORMATIVE / EXAMINATION CONSOLIDATED / ALL HUMAN GATES PENDING / NO NEW IDS / NO TRANSITIONS / NO MASTER OR REGISTRY CHANGES / NO DESIGN OR ENGINEERING RELEASE.**
+
+
+## 7. Reconciliação D4.6 e auditoria D4.7 — atualização do exame
+
+A sequência posterior examinou **D4.1 resposta oficial**, **D4.2 contestação fundamentada**, **D4.3 denúncia**, **D4.4 moderação independente** e **D4.5 recurso e revisão independente**. A numeração da seção 5 preserva a síntese documental anterior; para o exame sequencial atual, prevalece esta separação explícita das cinco competências.
+
+**D4.6:** reconciliou as cinco competências, preservando mandatos específicos, triagem distinta de decisão, impedimentos por conflito, acesso proporcional a evidências, continuidade privada, integridade de versões, decisão distinta da execução e revisão por instância diferente. Resposta não equivale a contestação; denúncia não comprova infração; discordância não autoriza moderação; recurso não suspende automaticamente decisão.
+
+**D4.7:** concluiu a auditoria de cobertura conceitual das cinco competências. Permanecem pendentes legitimidade, autoridades, procedimentos/prazos, confidencialidade, medidas cautelares/definitivas, efeitos recursais e arquitetura de H8–H12. COL-007 não é moderador universal; ORG-001 e COL-002 dependem de extensão expressa para competências especializadas.
+
+## 8. D5.18–D5.19 — reconciliação e auditoria dos 13 handoffs
+
+A matriz H1–H13 foi reconciliada com D1–D4 e auditada para futura adjudicação. **13/13 examinados; 0 liberados para implementação**. A numeração e as responsabilidades exatas de cada handoff permanecem na [matriz candidata](uxa-057-evaluation-reputation-handoff-matrix.md); o exame posterior não altera seus contratos nem cria transições.
+
+- **H3:** bloqueado até política de publicação e origem/destino públicos reais.
+- **H6:** origem permanente da continuidade privada da autora indefinida; PER-009 é hipótese, não autorização.
+- **H13:** bloqueado até contrato de avaliação da execução Organização–Coletivo, mandatos e superfícies comprovadas.
+- **H8–H12:** responsabilidades de governança conceitualmente examinadas, sem materialização de superfícies, políticas ou alçadas.
+
+Todo handoff requer origem e destino comprovados, identidade e elegibilidade revalidadas, unidade/versão estável, minimização de dados, retorno seguro, falha recuperável e idempotência quando aplicável. A aprovação de cobertura D1 não autoriza automaticamente registro D2, publicação D3, governança D4 ou transição D5.
+
+## 9. Adjudicação individual A1–A3 — estado da conversa
+
+| Etapa | Categoria | Exame de alternativas | Decisão expressa |
+| --- | --- | --- | --- |
+| A1 / D1.1 | Atividades e encontros de Coletivos | Cobertura inicial, futura, parcial, análise ou exclusão | Pendente |
+| A2 / D1.2 | Cursos e programas | Cobertura e unidade integral/parcial por modalidade | Pendente |
+| A3 / D1.3 | Oportunidades | Cobertura e etapas de candidatura, entrevista, seleção e participação posterior | Pendente |
+| A4 / D1.4 | Experiências continuadas | Próxima etapa individual | Não iniciada nesta atualização |
+
+A expressão **“de acordo, segue”** autorizou a continuidade sequencial, não a seleção das opções exibidas. D1.5 e D1.6 permanecem examinadas, mas não adjudicadas. Não inferir cobertura inicial ou priorização a partir da ordem da conversa.
+
+## 10. Estado consolidado desta atualização
+
+**DRAFT / NON-NORMATIVE / D1–D5 CONCEPTUAL EXAMINATION COMPLETE / A1–A3 OPTIONS EXAMINED BUT UNSELECTED / ALL HUMAN GATES PENDING / H3 AND H13 BLOCKED / H6 ORIGIN UNDECIDED / NO NEW GKR-TRN / NO MASTER EXTENSIONS / NO DESIGN OR ENGINEERING RELEASE.**
