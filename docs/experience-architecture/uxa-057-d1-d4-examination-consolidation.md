@@ -2,9 +2,9 @@
 id: GKR-UX-EVALUATION-REPUTATION-D1-D4-EXAMINATION-001
 title: "Avaliação e Reputação — Consolidação do exame D1–D5"
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-30
+last_updated: 2026-10-01
 related:
   - UXA-057
   - GKR-UX-EVALUATION-REPUTATION-HUMAN-ADJUDICATION-DOSSIER-001
@@ -116,3 +116,16 @@ A expressão **“de acordo, segue”** autorizou a continuidade sequencial, nã
 ## 10. Estado consolidado desta atualização
 
 **DRAFT / NON-NORMATIVE / D1–D5 CONCEPTUAL EXAMINATION COMPLETE / A1–A3 OPTIONS EXAMINED BUT UNSELECTED / ALL HUMAN GATES PENDING / H3 AND H13 BLOCKED / H6 ORIGIN UNDECIDED / NO NEW GKR-TRN / NO MASTER EXTENSIONS / NO DESIGN OR ENGINEERING RELEASE.**
+
+
+## 11. Atualização posterior — A1–A8
+
+Após D1–D5, o exame foi reorganizado em blocos de preparação de adjudicação. A1 elegibilidade comum, A2 regras por categoria, A3 registro protegido e envio, A4 continuidade privada, A5 objeto público e identidade, A6 consentimento e destinos e A7 governança foram integralmente examinados/preparados, totalizando **40 decisões candidatas e 0 adjudicadas**.
+
+A7 reconciliou H8 resposta institucional, H9 contestação, H10 denúncia, H11 moderação independente e H12 recurso independente. Permanecem invariantes candidatos: denúncia ou contestação não retiram conteúdo automaticamente; recurso não suspende nem republica automaticamente; decisão e execução são estados distintos; evidências possuem acesso proporcional; autoridade, mandato e conflito de interesse precisam ser verificáveis. COL-007 não recebeu competência universal.
+
+A8 foi decomposto em sete decisões para o contrato especializado Organização–Coletivo. Até 2026-10-01 foram examinadas A8.1 unidade institucional, A8.2 execução e elegibilidade, A8.3 autoria e representação, A8.4 critérios e evidências e A8.5 conflitos e reciprocidade. A8.6 publicação/governança e A8.7 integração/liberação de H13 permanecem pendentes. Contrato, parceria ou pagamento não comprovam isoladamente execução avaliável; entidade autora e representante operador são identidades distintas; evidência privada não é automaticamente publicável; reciprocidade, se futuramente admitida, não poderá ser condicionada.
+
+O registro corrente e detalhado desta fase está em [Estado do exame e preparação de adjudicação](uxa-057-adjudication-preparation-progress.md).
+
+**Estado atualizado: DRAFT / NON-NORMATIVE / A1–A7 EXAMINED OR PREPARED WITH ZERO ADJUDICATIONS / A8 5 OF 7 EXAMINED / H3 AND H13 BLOCKED / H6 ORIGIN UNDEFINED / 0 OF 13 HANDOFFS AUTHORIZED / NO MASTER OR REGISTRY CHANGES / NO DESIGN OR ENGINEERING RELEASE.**
