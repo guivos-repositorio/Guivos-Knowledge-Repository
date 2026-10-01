@@ -2,13 +2,14 @@
 id: GKR-UX-EVALUATION-REPUTATION-READ-FIRST-001
 title: "Avaliação e Reputação — Leia Primeiro"
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-30
+last_updated: 2026-10-01
 related:
   - UXA-057
   - GKR-UX-EVALUATION-REPUTATION-D1-D4-EXAMINATION-001
   - GKR-UX-EVALUATION-REPUTATION-HANDOFF-MATRIX-001
+  - GKR-UX-EVALUATION-REPUTATION-ADJUDICATION-PROGRESS-001
 normative: false
 ---
 
@@ -32,17 +33,13 @@ O registro protegido da autora, a eventual exibição pública, a resposta insti
 | D4 — Governança | Resposta oficial, contestação, denúncia, moderação independente e recurso | Examinada; mandatos, políticas e autoridades pendentes |
 | D5 — Handoffs | H1–H13, origem/destino, elegibilidade, revalidação, retorno e idempotência | Examinada; nenhuma transição liberada |
 
-Leitura detalhada: [Consolidação do exame D1–D5](uxa-057-d1-d4-examination-consolidation.md) e [Matriz candidata dos 13 handoffs](uxa-057-evaluation-reputation-handoff-matrix.md). As matrizes especializadas vigentes continuam sendo fontes de detalhe, sem substituição por este roteador.
+Leitura detalhada: [Consolidação do exame D1–D5](uxa-057-d1-d4-examination-consolidation.md), [Estado do exame e preparação de adjudicação](uxa-057-adjudication-preparation-progress.md) e [Matriz candidata dos 13 handoffs](uxa-057-evaluation-reputation-handoff-matrix.md). As matrizes especializadas vigentes continuam sendo fontes de detalhe, sem substituição por este roteador.
 
-## 3. Situação da adjudicação individual
+## 3. Situação da preparação de adjudicação
 
-- **A1 / D1.1 — Atividades e encontros de Coletivos:** alternativas apresentadas; nenhuma selecionada. Participação efetiva, unidade delimitada e proteção de participação sensível são requisitos examinados.
-- **A2 / D1.2 — Cursos e programas:** alternativas apresentadas; nenhuma selecionada. Inscrição, participação parcial e conclusão não são equivalentes.
-- **A3 / D1.3 — Oportunidades:** alternativas apresentadas; nenhuma selecionada. Candidatura confirmada, entrevista, seleção e participação posterior são etapas diferentes; não seleção não invalida experiência vivida.
-- **A4 / D1.4 — Experiências continuadas:** próxima categoria a examinar/adjudicar; sem decisão.
-- **D1.5 e D1.6:** examinadas anteriormente; cobertura não adjudicada.
+O exame posterior reorganizou as pendências em nove blocos. **A1–A7 somam 40 decisões candidatas examinadas/preparadas e 0 adjudicadas.** A8, contrato especializado de avaliação institucional Organização–Coletivo, possui 5/7 decisões examinadas; A8.6 e A8.7 permanecem pendentes. A9, integração e aceitação individual dos handoffs, ainda não foi iniciado.
 
-O comando conversacional de avançar para a etapa seguinte não equivale à seleção de uma alternativa. Nenhuma cobertura inicial foi autorizada.
+O estado detalhado, as dependências e os invariantes candidatos estão em [Estado do exame e preparação de adjudicação](uxa-057-adjudication-preparation-progress.md). O comando conversacional de avançar para a etapa seguinte não equivale à seleção de alternativa. Nenhuma cobertura, autoridade, publicação ou transição foi autorizada.
 
 ## 4. Bloqueios que devem permanecer visíveis
 
