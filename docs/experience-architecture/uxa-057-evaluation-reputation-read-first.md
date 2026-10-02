@@ -2,9 +2,9 @@
 id: GKR-UX-EVALUATION-REPUTATION-READ-FIRST-001
 title: "Avaliação e Reputação — Leia Primeiro"
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-10-01
+last_updated: 2026-10-02
 related:
   - UXA-057
   - GKR-UX-EVALUATION-REPUTATION-D1-D4-EXAMINATION-001
@@ -37,9 +37,13 @@ Leitura detalhada: [Consolidação do exame D1–D5](uxa-057-d1-d4-examination-c
 
 ## 3. Situação da preparação de adjudicação
 
-O exame posterior reorganizou as pendências em nove blocos. **A1–A7 somam 40 decisões candidatas examinadas/preparadas e 0 adjudicadas.** A8, contrato especializado de avaliação institucional Organização–Coletivo, possui 5/7 decisões examinadas; A8.6 e A8.7 permanecem pendentes. A9, integração e aceitação individual dos handoffs, ainda não foi iniciado.
+A preparação conceitual sistêmica foi concluída para **A1–A8: 47/47 decisões substantivas preparadas e reconciliadas, 0/47 adjudicadas**. As 28 combinações par-a-par entre A1–A8 foram reconciliadas e o exame sistêmico de ordem superior também foi concluído, sem necessidade de novo bloco substantivo A10.
 
-O estado detalhado, as dependências e os invariantes candidatos estão em [Estado do exame e preparação de adjudicação](uxa-057-adjudication-preparation-progress.md). O comando conversacional de avançar para a etapa seguinte não equivale à seleção de alternativa. Nenhuma cobertura, autoridade, publicação ou transição foi autorizada.
+A fase atual é de exame individual para adjudicação humana. **A1 está integralmente examinado: 6/6 decisões passaram por análise, stress test e gate humano, permanecendo 0/6 adjudicadas.** Em A2, **A2.1 — atividades e encontros de Coletivos** também passou por exame, stress test e gate humano e permanece não adjudicada. A próxima decisão sequencial é **A2.2 — cursos e programas**.
+
+A9 permanece a camada posterior de integração e aceitação individual dos handoffs. **0/13 handoffs estão validados e 0/13 autorizados.**
+
+O estado detalhado está em [Estado do exame e preparação de adjudicação](uxa-057-adjudication-preparation-progress.md). Expressões conversacionais de continuidade, inclusive “de acordo, segue”, **não selecionam alternativas nem constituem adjudicação**. Nenhuma cobertura, autoridade, publicação ou transição foi autorizada.
 
 ## 4. Bloqueios que devem permanecer visíveis
 
