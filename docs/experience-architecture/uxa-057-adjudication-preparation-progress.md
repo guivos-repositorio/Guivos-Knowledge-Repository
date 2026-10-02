@@ -2,9 +2,9 @@
 id: GKR-UX-EVALUATION-REPUTATION-ADJUDICATION-PROGRESS-001
 title: "Avaliação e Reputação — Estado do exame e preparação de adjudicação"
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-10-01
+last_updated: 2026-10-02
 related:
   - UXA-057
   - GKR-UX-EVALUATION-REPUTATION-READ-FIRST-001
@@ -36,6 +36,48 @@ Até esta atualização:
 | A9 | Integração e aceitação dos handoffs | Não iniciado |
 
 A1–A7 totalizam **40 decisões candidatas examinadas/preparadas e 0 adjudicadas**. A8 está em curso. Nenhum dos 13 handoffs está autorizado.
+
+## 1.1. Atualização de preparação sistêmica e gates humanos — 02/10/2026
+
+Após a preparação inicial registrada neste documento, UXA-057 avançou por reconciliação integral, protocolo de adjudicação humana e exame individual das decisões de A1 e A2.1.
+
+- **A1–A8:** 47/47 decisões substantivas preparadas e reconciliadas sistemicamente; **0/47 adjudicadas**.
+- **Reconciliação par-a-par:** 28/28 combinações de blocos concluídas, com 942/942 interseções semânticas aprovadas no exame conceitual.
+- **Reconciliação sistêmica de ordem superior:** 50/50 cenários examinados sem necessidade de novo bloco A10.
+- **A1:** 6/6 decisões individualmente examinadas, stress-tested e apresentadas em gate humano; todas permanecem não adjudicadas, com convergência analítica para a alternativa E de cada decisão.
+- **A2.1 — atividades e encontros de Coletivos:** exame individual, stress test e gate humano concluídos; 12/12 invariantes candidatos compatíveis com a alternativa E; permanece não adjudicada.
+- **Próxima etapa:** A2.2 — cursos e programas.
+- **A9:** permanece camada posterior de integração e aceitação individual dos 13 handoffs; 0/13 validados e 0/13 autorizados.
+
+A continuidade textual do exame não constitui escolha substantiva. Em especial, expressões de continuidade como “de acordo, segue” não adjudicam alternativas.
+
+### A1 — gates humanos concluídos, sem adjudicação
+
+| Decisão | Tema | Convergência analítica | Estado |
+| --- | --- | --- | --- |
+| A1.1 | Unidade avaliável delimitada | E — contrato comum + especialização governada por categoria | Gate apresentado; não adjudicada |
+| A1.2 | Participação efetiva | E — experiência material + especialização por categoria | Gate apresentado; não adjudicada |
+| A1.3 | Legitimidade/autoria | E — principal legítimo + capacidade + autoridade específica | Gate apresentado; não adjudicada |
+| A1.4 | Evidência/verificação | E — evidência proporcional, proveniente e orientada a claims | Gate apresentado; não adjudicada |
+| A1.5 | Temporalidade, duplicação e sobreposição | E — identidade do ato/experiência + recorrência, escopo e histórico | Gate apresentado; não adjudicada |
+| A1.6 | Estados de elegibilidade | E — arquitetura multidimensional, contextual e derivada | Gate apresentado; não adjudicada |
+
+### A2.1 — atividades e encontros de Coletivos
+
+A convergência analítica candidata é **experiência material da unidade governada**, preservando atividade/edição/sessão/ciclo/etapa, capacidade, temporalidade e escopo efetivamente vividos. Membership, inscrição, RSVP, compra, check-in, presença técnica, conclusão e resultado não substituem universalmente participação material. Participação parcial pode sustentar avaliação limitada quando admitida pela regra aplicável. Recorrência, composição e sobreposição não propagam automaticamente experiência, elegibilidade ou cardinalidade.
+
+Os 12 invariantes candidatos examinados são: vínculo à unidade de atividade; participação material; membership não substitutiva; inscrição/check-in não conclusivos; escopo parcial possível; capacidade explícita; recorrência governada; composição/sobreposição explícitas; evidência proporcional; suporte a experiências informais/off-platform; preservação histórica; e não presunção de resultado.
+
+A associação de uma atividade a áreas de evolução da Journey representa **possível contribuição contextual**, não prova automática de evolução pessoal.
+
+### Bloqueios preservados
+
+- **H3:** bloqueado até adjudicação e validação de A5/A6 e autoridades/destinos pertinentes.
+- **H6:** V2 bloqueado; autoridade permanente de continuidade privada indefinida.
+- **H11:** V2 bloqueado; autoridade decisória de moderação indefinida.
+- **H12:** V2 bloqueado; autoridade recursal indefinida.
+- **H13:** bloqueado até A2.5/A8 e dependências cumulativas.
+- Nenhuma rota, tela, GKR-TRN, extensão de Master, Design ou Engenharia é liberada por esta atualização.
 
 ## 2. A1 — elegibilidade comum
 
