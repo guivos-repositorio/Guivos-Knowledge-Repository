@@ -2,9 +2,9 @@
 id: GKR-UX-EVALUATION-REPUTATION-D1-D4-EXAMINATION-001
 title: "Avaliação e Reputação — Consolidação do exame D1–D5"
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-10-01
+last_updated: 2026-10-02
 related:
   - UXA-057
   - GKR-UX-EVALUATION-REPUTATION-HUMAN-ADJUDICATION-DOSSIER-001
@@ -129,3 +129,28 @@ A8 foi decomposto em sete decisões para o contrato especializado Organização�
 O registro corrente e detalhado desta fase está em [Estado do exame e preparação de adjudicação](uxa-057-adjudication-preparation-progress.md).
 
 **Estado atualizado: DRAFT / NON-NORMATIVE / A1–A7 EXAMINED OR PREPARED WITH ZERO ADJUDICATIONS / A8 5 OF 7 EXAMINED / H3 AND H13 BLOCKED / H6 ORIGIN UNDEFINED / 0 OF 13 HANDOFFS AUTHORIZED / NO MASTER OR REGISTRY CHANGES / NO DESIGN OR ENGINEERING RELEASE.**
+
+
+## 12. Atualização de reconciliação sistêmica e adjudicação humana — 02/10/2026
+
+A preparação posterior completou A8, auditou individualmente H1–H13, reconciliou transversalmente os quatro planos de UXA-057 — experiência/elegibilidade, registro privado, representação pública e governança — e estabeleceu protocolo explícito de adjudicação humana.
+
+A1–A8 totalizam **47 decisões substantivas preparadas e sistemicamente reconciliadas, 0 adjudicadas**. As 28 combinações únicas entre os oito blocos foram examinadas, totalizando 942 interseções semânticas aprovadas no exame conceitual. O teste sistêmico posterior examinou 50 cenários de ordem superior e não identificou necessidade de um novo bloco A10.
+
+O protocolo preserva a cadeia `EXAMINED → ADJUDICATED → DOCUMENTED → UNDER_VALIDATION → VALIDATED → AUTHORIZED`. Continuidade conversacional não seleciona alternativa. Adjudicação também não altera automaticamente o GKR nem autoriza implementação.
+
+### A1 — contrato comum de elegibilidade
+
+As seis decisões A1.1–A1.6 passaram individualmente por exame, stress test e gate humano. Todas permanecem não adjudicadas, embora a análise tenha convergido para alternativas E: unidade avaliável com contrato comum e especialização por categoria; participação baseada em experiência material; autoria por principal legítimo/capacidade/autoridade específica; evidência proporcional e orientada a claims; admissibilidade de novo ato baseada na identidade da experiência e do ato; e elegibilidade multidimensional/contextual/derivada.
+
+### A2.1 — atividades e encontros de Coletivos
+
+A2.1 também passou por exame, stress test e gate humano. A convergência candidata é a experiência material da unidade governada, limitada pela capacidade e pelo escopo efetivamente vividos. Membership, inscrição, RSVP, compra, check-in, presença técnica, conclusão e resultado não substituem universalmente participação material. Atividades informais ou off-platform podem ser legítimas; recorrência e composição não propagam automaticamente participação ou cardinalidade. A associação a áreas de evolução representa possível contribuição contextual à Journey, não prova automática de resultado pessoal.
+
+A próxima decisão sequencial é **A2.2 — cursos e programas**.
+
+### Bloqueios preservados
+
+H3 continua bloqueado. H6 permanece V2 bloqueado com autoridade de continuidade privada indefinida. H11 e H12 permanecem V2 bloqueados por ausência de autoridade decisória e recursal adjudicada. H13 continua bloqueado por A2.5/A8 e demais dependências cumulativas. Nenhum dos 13 handoffs está validado ou autorizado.
+
+**Estado atualizado: DRAFT / NON-NORMATIVE / A1–A8 47 OF 47 PREPARED AND SYSTEM-RECONCILED / 0 OF 47 ADJUDICATED / A1 6 OF 6 HUMAN GATES PRESENTED / A2.1 HUMAN GATE PRESENTED / NEXT A2.2 / 0 OF 13 HANDOFFS VALIDATED OR AUTHORIZED / NO IMPLEMENTATION RELEASE.**
