@@ -157,8 +157,8 @@ nav:
   # Roteador de exame explicitamente solicitado; não concede autoridade operacional a documentos draft.
   - Avaliação e Reputação — Em exame:
       - Leia Primeiro: experience-architecture/uxa-057-evaluation-reputation-read-first.md
-      - Estado do Exame e Preparação de Adjudicação: experience-architecture/uxa-057-adjudication-preparation-progress.md
-      - Consolidação do Exame D1–D5: experience-architecture/uxa-057-d1-d4-examination-consolidation.md
+      - Estado Atual — Preparação e Gates de Adjudicação: experience-architecture/uxa-057-adjudication-preparation-progress.md
+      - Consolidação do Exame e Reconciliação Sistêmica: experience-architecture/uxa-057-d1-d4-examination-consolidation.md
       - Matriz Candidata dos 13 Handoffs: experience-architecture/uxa-057-evaluation-reputation-handoff-matrix.md
 
   - Jornada da Pessoa — Superfícies e Fluxos:
