@@ -2,12 +2,13 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.80
+version: 3.50.81
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
+  - GKR-UX-EVALUATION-REPUTATION-SURFACE-RESPONSIBILITY-ADJUDICATION-001
   - GKR-ORG-OPPORTUNITY-BOOST-ENTITLEMENT-001
   - GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001
   - GKR-UX-ORGANIZATION-BUSINESS-HANDOFF-CONTRACT-001
@@ -1364,7 +1365,8 @@ Estado corrente:
 - `PER-009` não é autoridade canônica de avaliações e somente pode funcionar como ponto administrativo de acesso mediante extensão expressa;
 - documentos candidatos anteriores de UXA-057 permanecem `superseded / normative:false`;
 - a documentação de consumo está organizada no MENU da Jornada da Pessoa sob **Avaliação e Reputação**;
-- Surface Registry e Transition Registry não recebem novos IDs por esta adjudicação.
+- Surface Registry e Transition Registry não recebem novos IDs por esta adjudicação;
+- responsabilidades de superfície `R-A..R-D` estão adjudicadas por `GKR-UX-EVALUATION-REPUTATION-SURFACE-RESPONSIBILITY-ADJUDICATION-001`, sem `SURF-ID`/`TRN-ID` novos e sem seleção de cobertura inicial por inferência.
 
 ```text
 UXA-057 SEMANTIC ADJUDICATION COMPLETE
@@ -1392,7 +1394,7 @@ Permanecem abertos quando dependentes de realidade, materialização, Design, im
 - materialização granular de Journey → Mall e Journey → Travel somente se necessidade real exigir `SURF/TRN`; contrato semântico interno já fechado por `GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001`;
 - materialização granular de Organização → Guivos Business somente se necessidade real exigir `SURF/TRN`; contrato semântico interno já fechado por `GKR-UX-ORGANIZATION-BUSINESS-HANDOFF-CONTRACT-001`;
 - materialização de `PER-009` somente se necessária;
-- materialização das responsabilidades de Avaliação e Reputação ainda sem superfície adjudicada (registro protegido, continuidade da autora, resposta/contestação, moderação/recurso e integrações públicas específicas);
+- materialização física das responsabilidades adjudicadas de Avaliação e Reputação (`R-A..R-D`), seleção de cobertura inicial real, integrações públicas específicas e eventuais `SURF/TRN`; responsabilidades funcionais já adjudicadas por `GKR-UX-EVALUATION-REPUTATION-SURFACE-RESPONSIBILITY-ADJUDICATION-001`;
 - arquitetura técnica final de analytics/Intelligence Business;
 - regras econômicas restantes de Pontos;
 - operação Ads real, pricing, inventário e mensuração; o entitlement de Opportunity Boost para planos atuais de Organização já está reconciliado sem benefício automático por plano;
