@@ -2,12 +2,13 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.81
+version: 3.50.82
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
+  - GKR-POINTS-ECONOMIC-AUTHORITY-001
   - GKR-UX-EVALUATION-REPUTATION-SURFACE-RESPONSIBILITY-ADJUDICATION-001
   - GKR-ORG-OPPORTUNITY-BOOST-ENTITLEMENT-001
   - GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001
@@ -1396,7 +1397,7 @@ Permanecem abertos quando dependentes de realidade, materialização, Design, im
 - materialização de `PER-009` somente se necessária;
 - materialização física das responsabilidades adjudicadas de Avaliação e Reputação (`R-A..R-D`), seleção de cobertura inicial real, integrações públicas específicas e eventuais `SURF/TRN`; responsabilidades funcionais já adjudicadas por `GKR-UX-EVALUATION-REPUTATION-SURFACE-RESPONSIBILITY-ADJUDICATION-001`;
 - arquitetura técnica final de analytics/Intelligence Business;
-- regras econômicas restantes de Pontos;
+- Pontos Guivos: defaults econômicos adjudicados por `GKR-POINTS-ECONOMIC-AUTHORITY-001`; permanecem abertos prazo numérico de validade, destino econômico de expirados, percentuais, política operacional de fraude/chargeback/estorno/reversão, outras origens de emissão, taxas/margens, regras fiscais/contábeis/jurídicas/liquidação, eventual Pontos↔BRL, catálogo final, ledger, checkout e conciliação;
 - operação Ads real, pricing, inventário e mensuração; o entitlement de Opportunity Boost para planos atuais de Organização já está reconciliado sem benefício automático por plano;
 - emissão das GRUs das aplicações das assinaturas;
 - evidência de atividade efetiva para AIaaS se incluído;
