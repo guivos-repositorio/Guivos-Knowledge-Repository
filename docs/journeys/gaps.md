@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.14
+version: 1.0.15
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
+  - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
   - GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001
   - GKR-UXA-102-V5-AUTHORITY-001
   - GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001
@@ -84,7 +85,7 @@ A autoridade transversal corrente é `GKR-UXA-102-V5-AUTHORITY-001`.
 O exame de V5 não promove maturidade e não cria transições. Permanecem abertas cinco famílias de lacuna:
 
 1. **G1 — primeira entrada, expressão e inventário**: refinada por `GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001`; `TRN-003/004/005` passam a localmente validadas, enquanto `TRN-001` permanece parcial e `TRN-014..017` permanecem contratadas até adjudicação/materialização de `PER-013/014`; a cadeia completa ainda não é integralmente validada;
-2. **G2 — descoberta e solicitação de Coletivo**: `TRN-101..104` e `TRN-114` ainda não possuem fechamento transversal equivalente ao downstream já governado;
+2. **G2 — descoberta e solicitação de Coletivo**: refinada por `GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001`; erro/retorno/idempotência deixam de ser lacuna genérica, mas `TRN-102/103/104` permanecem `partial` por ausência de validação ponta a ponta e `TRN-114` permanece `contracted` até maturidade/materialização de `COL-003/004`; `TRN-101` permanece localmente validada;
 3. **G3 — Organização e relação O↔C**: `TRN-201/202/206..209` permanecem parciais/contratadas quanto a continuidade, concorrência, confirmação e retry;
 4. **G4 — processo interno de oportunidade**: `TRN-212` e `TRN-214` mantêm responsabilidades existentes, sem criação de retorno dedicado por simetria;
 5. **G5 — Opportunity Boost**: `TRN-301..306` preservam integração/economia ainda parciais, sem autorização para inventar mecanismo de cobrança, mensuração ou deduplicação.
