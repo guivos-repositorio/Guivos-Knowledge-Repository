@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.91
+version: 3.50.92
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -24,6 +24,8 @@ related:
   - GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001
   - GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001
   - GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
+  - GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
+  - UXA-104
   - UXA-103
   - GKR-UXA-102-V5-AUTHORITY-001
   - UXA-102
@@ -117,7 +119,8 @@ Estado executivo vigente:
 - **Product Engineering:** permanece pausada/não liberada;
 - **UXA-102 / V5:** `TRANSVERSE CONTRACT ADJUDICATED`; 76/76 transições examinadas; 0 promoções de maturidade;
 - **UXA-103:** escopo adjudicado; contrato funcional de `TRN-005` adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado pela evidência corrente;
-- **execução automática seguinte:** nenhuma fora do gate governado da UXA-103.
+- **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `NOT_STARTED`; nenhuma promoção de maturidade;
+- **execução automática seguinte:** nenhuma; o próximo ato depende de autorização humana do exame funcional da UXA-104.
 
 ```text
 DOCUMENTED
@@ -1768,6 +1771,12 @@ UXA-103
 → TRN-005 LOCALLY VALIDATED
 → 1 MATURITY PROMOTION
 → INTEGRALLY VALIDATED NOT SUPPORTED
+
+UXA-104
+→ SCOPE ADJUDICATED / GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
+→ PER-013 / PER-014 + TRN-014..017
+→ FUNCTIONAL EXAM NOT_STARTED
+→ 0 MATURITY PROMOTIONS
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
