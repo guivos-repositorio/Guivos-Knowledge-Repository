@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-HANDOFFS-001
 title: Handoffs entre Participantes
 status: active
-version: 1.0.3
+version: 1.0.4
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-25
+last_updated: 2026-10-03
 related:
+  - GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-JOURNEY-ORGANIZATION-001
@@ -98,7 +99,29 @@ Estado corrente das transições principais:
 
 A existência da relação funcional não autoriza inventar superfícies bilaterais, estados operacionais ou efeitos ainda ausentes.
 
-## 6. Business e esta vista de handoffs
+## 6. Handoffs internos para produtos especializados
+
+Journey → Mall e Journey → Travel possuem contrato semântico canônico em `GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001`.
+
+```text
+JOURNEY → MALL
+→ CONTRACTED INTERNAL HANDOFF
+
+JOURNEY → TRAVEL
+→ CONTRACTED INTERNAL HANDOFF
+
+DEDICATED SURF/TRN
+→ NOT CREATED
+
+BND-001
+→ NOT APPLICABLE WHILE AUTHORITY REMAINS GUIVOS
+```
+
+A referência a produto, serviço, oferta ou viagem dentro do Journey não constitui, por si só, handoff. A passagem exige mudança real da responsabilidade dominante e ação afirmativa/consciente quando aplicável.
+
+A materialização granular deverá ocorrer somente se uma necessidade real de navegação, dados, consequência, recuperação ou autoridade exigir contrato próprio.
+
+## 7. Business e esta vista de handoffs
 
 Business é um dos quatro contextos correntes de experiência, mas **não é participante estrutural** e não deve receber um handoff fictício apenas para aparecer nesta vista.
 
@@ -132,7 +155,7 @@ BUSINESS
 
 Novos handoffs Business somente deverão existir quando uma transferência real de contexto/autoridade exigir contrato granular próprio.
 
-## 7. Regra de leitura
+## 8. Regra de leitura
 
 ```text
 HANDOFF VIEW
