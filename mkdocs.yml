@@ -168,6 +168,13 @@ nav:
       - Relações, Interações, Conexões e Visibilidade: experience-architecture/participant-relationships-interactions-visibility-contract.md
       - Comunicações e Notificações: experience-architecture/communications-notifications-cross-ecosystem-contract.md
 
+  # Roteador de exame explicitamente solicitado; não concede autoridade operacional a documentos draft.
+  - Avaliação e Reputação — Em exame:
+      - Leia Primeiro: experience-architecture/uxa-057-evaluation-reputation-read-first.md
+      - Estado Atual — Preparação e Gates de Adjudicação: experience-architecture/uxa-057-adjudication-preparation-progress.md
+      - Consolidação do Exame e Reconciliação Sistêmica: experience-architecture/uxa-057-d1-d4-examination-consolidation.md
+      - Matriz Candidata dos 13 Handoffs: experience-architecture/uxa-057-evaluation-reputation-handoff-matrix.md
+
   - Jornada da Pessoa — Superfícies e Fluxos:
       - Comece por aqui:
           - Leia Primeiro: experience-architecture/person-journey/read-first.md
