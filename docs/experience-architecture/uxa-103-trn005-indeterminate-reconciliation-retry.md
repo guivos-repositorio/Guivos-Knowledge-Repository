@@ -2,11 +2,11 @@
 id: UXA-103
 title: UXA-103 — TRN-005 — Resultado Indeterminado, Reconciliação e Retry
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
-maturity: maturity_exam_completed_candidate
+maturity: maturity_conclusion_adjudicated
 depends_on:
   - UXA-102
   - GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
@@ -36,9 +36,9 @@ UXA-103
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → PER-005 / PER-006 / TRANSITION REGISTRY RECONCILED
 → TRN-005 PARTIAL / UNCHANGED
-→ MATURITY EXAM COMPLETED AT CANDIDATE LEVEL
-→ CANDIDATE ELIGIBILITY LOCALLY VALIDATED
-→ MATURITY ADJUDICATION PENDING
+→ MATURITY EXAM COMPLETE
+→ ADJUDICATED ELIGIBILITY LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION PENDING
 → MATURITY PROMOTIONS 0
 ```
 
@@ -65,6 +65,6 @@ O exame funcional foi concluído e o contrato foi adjudicado por `GKR-UXA-103-TR
 
 `PER-005`, `PER-006` e o Transition Registry estão reconciliados com a autoridade adjudicada. O exame específico de maturidade foi concluído em nível candidato por `GKR-UXA-103-TRN005-MATURITY-EXAM-001`.
 
-A conclusão candidata é elegibilidade para `LOCALLY VALIDATED`, não para `INTEGRALLY VALIDATED`. O próximo gate é a adjudicação humana dessa conclusão; nenhuma promoção é presumida.
+A conclusão de maturidade foi adjudicada: elegibilidade para `LOCALLY VALIDATED`, não para `INTEGRALLY VALIDATED`. O próximo gate é materializar a promoção; nenhuma promoção ocorre até esse ato.
 
 Nenhuma promoção de maturidade ocorre por esta abertura.
