@@ -2,9 +2,9 @@
 id: GKR-UX-PERSON-JOURNEY-READ-FIRST-001
 title: Jornada da Pessoa — Leia Primeiro para Design e IA
 status: active
-version: 0.1.20
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-25
+last_updated: 2026-10-03
 normative: false
 maturity: current_design_routing
 depends_on:
@@ -71,6 +71,19 @@ LEIA PRIMEIRO
 → MASTER DA SUPERFÍCIE
 → PROTOTIPAÇÃO
 ```
+
+## 3.1 Avaliação e Reputação
+
+Para avaliação de experiências e reputação contextual, consumir nesta ordem:
+
+1. `GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001 — Avaliação e Reputação — Autoridade Canônica`;
+2. **Avaliação e Reputação — Visão Geral**;
+3. **Avaliar uma Experiência**;
+4. **Minhas Avaliações**;
+5. **Reputação Contextual**;
+6. **Proteção e Governança de Avaliações**.
+
+Esses documentos governam significado e continuidade do domínio, mas não equivalem a novas superfícies. `PER-009` não é a autoridade canônica de avaliações e somente pode funcionar como ponto administrativo de acesso mediante extensão expressa. Os antigos documentos candidatos de UXA-057 permanecem fora do fluxo corrente de consumo.
 
 ## 4. Regra de granularidade
 

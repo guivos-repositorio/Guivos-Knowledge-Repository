@@ -1,10 +1,10 @@
 ---
 id: GKR-UX-EVALUATION-REPUTATION-INITIAL-COVERAGE-001
 title: Avaliação e Reputação — Matriz Candidata de Cobertura Inicial e Evidências
-status: draft
-version: 0.1.0
+status: superseded
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-29
+last_updated: 2026-10-03
 related:
   - UXA-057
   - GKR-UX-EVALUATION-REPUTATION-RESPONSIBILITY-ADJUDICATION-001
@@ -15,6 +15,11 @@ normative: false
 ---
 
 # Avaliação e Reputação — Matriz Candidata de Cobertura Inicial e Evidências
+
+> **Estado pós-adjudicação — 03/10/2026**
+>
+> Este documento foi superado por `GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001 — Avaliação e Reputação — Autoridade Canônica`. Permanece somente como proveniência técnica não normativa das alternativas e hipóteses examinadas. Não deve ser usado como fonte corrente de produto, MENU, superfície, transição, Design ou Engenharia.
+
 
 ## 1. Finalidade e limite
 

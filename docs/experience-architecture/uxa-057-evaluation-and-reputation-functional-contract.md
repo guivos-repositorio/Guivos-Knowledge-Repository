@@ -2,9 +2,9 @@
 id: UXA-057
 title: Contrato Funcional de Avaliação e Reputação
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-28
+last_updated: 2026-10-03
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -18,6 +18,7 @@ depends_on:
   - UXA-019
   - UXA-056
 related:
+  - GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001
   - UXA-058
   - GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001
   - GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001
@@ -26,6 +27,11 @@ normative: false
 ---
 
 # Contrato Funcional de Avaliação e Reputação
+
+> **Autoridade canônica pós-adjudicação — 03/10/2026**
+>
+> O contrato normativo corrente do domínio é `GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001 — Avaliação e Reputação — Autoridade Canônica`. Este documento permanece como especificação funcional detalhada e fonte de critérios, mas não prevalece sobre a autoridade canônica em caso de divergência. Nenhuma superfície, transição, Design ou Engenharia é liberada por esta atualização.
+
 
 > **Reconciliação de autoridade — 2026-09-27**
 >

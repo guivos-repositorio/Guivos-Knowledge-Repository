@@ -2,9 +2,9 @@
 id: GKR-UX-PER009-MASTER-001
 title: Jornada da Pessoa — PER-009 — Conta / Configurações — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-10-03
 normative: false
 maturity: current_surface_design_definition
 depends_on:
@@ -77,6 +77,8 @@ PER-009
 ≠ CENTRAL DE SEGURANÇA POR INFERÊNCIA
 ≠ PERFIL POR INFERÊNCIA
 ≠ NOTIFICAÇÕES POR INFERÊNCIA
+≠ PAINEL DE AVALIAÇÕES POR INFERÊNCIA
+≠ AUTORIDADE CANÔNICA DE AVALIAÇÃO E REPUTAÇÃO
 ```
 
 A designer pode compor a superfície, mas não preencher áreas não governadas como se fossem capacidades confirmadas.
@@ -275,6 +277,26 @@ Para controles materiais:
 - autenticação não substitui autorização material.
 
 Esses ciclos não criam novo `PER-ID` ou `TRN-ID`.
+
+## 12.6 Avaliação e Reputação
+
+A autoridade canônica de avaliações pertence a `GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001`, não a `PER-009`.
+
+Quando existir adjudicação específica, `PER-009` poderá funcionar como **ponto administrativo de acesso** para continuidade da autora, por exemplo localizar uma responsabilidade especializada de consulta ou direitos transversais. Isso não autoriza, por analogia:
+
+- armazenar a avaliação canônica em `PER-009`;
+- transformar Conta em painel universal de avaliações;
+- publicar avaliações;
+- alterar visibilidade sem contrato aplicável;
+- moderar, contestar ou responder avaliações;
+- criar nova transição sem origem/destino comprovados.
+
+```text
+PER-009 ACCESS
+≠ REVIEW AUTHORITY
+≠ PUBLICATION AUTHORITY
+≠ MODERATION AUTHORITY
+```
 
 ## 13. Planos e estado comercial
 

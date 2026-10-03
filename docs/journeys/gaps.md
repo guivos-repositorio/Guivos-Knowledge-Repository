@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.11
+version: 1.0.12
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-28
+last_updated: 2026-10-03
 related:
+  - GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-JOURNEY-ORGANIZATION-001
@@ -50,6 +51,29 @@ As continuidades ainda parciais devem ser lidas diretamente no `GKR-JOURNEY-TRAN
 - integrações comerciais patrocinadas que permaneçam parciais.
 
 As ligações `Hoje ↔ Meus Objetivos`, `Hoje ↔ Meus Próximos Passos` e `Hoje ↔ Minha Evolução` não constituem lacuna corrente de continuidade básica.
+
+## 2.1 Avaliação e Reputação — lacunas de materialização
+
+A autoridade semântica de Avaliação e Reputação passa a ser `GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001`, mas a materialização de superfícies e handoffs permanece deliberadamente aberta onde o Registry não comprova responsabilidade suficiente.
+
+Lacunas correntes:
+
+- **entrada contextual para avaliar**: `PER-108` e `PER-203` podem ser origens candidatas somente mediante extensão explícita de seus contratos; outros objetos exigem origem comprovada;
+- **registro protegido da avaliação**: responsabilidade reconhecida, porém sem `GKR-SURF-*` adjudicada;
+- **continuidade da autora / “Minhas Avaliações”**: responsabilidade reconhecida, porém sem superfície adjudicada; `PER-009` é apenas possível ponto administrativo de acesso e não autoridade canônica;
+- **exibição pública contextual**: `PER-103` e `PER-203` podem receber integração somente após extensão explícita; Organização, atividade, curso/programa e relação institucional não possuem, por esta frente, detalhe público comprovado;
+- **resposta e contestação do responsável**: `COL-002` e `ORG-001` são apenas entradas administrativas candidatas até extensão expressa e comprovação de mandato;
+- **denúncia, moderação e recurso**: responsabilidades reconhecidas, sem superfície especializada adjudicada;
+- **relação Organização↔Coletivo**: avaliação reputacional permanece separada de `ORG-005/COL-008` e de `UXA-019`; negociação bilateral não autoriza publicação reputacional;
+- **handoffs UXA-057**: nenhum novo `GKR-TRN-*` é criado enquanto origem, destino, autoridade, retorno, falha e idempotência não estiverem comprovados.
+
+```text
+AUTORIDADE DE DOMÍNIO RESOLVIDA
+≠ SUPERFÍCIE MATERIALIZADA
+≠ TRANSIÇÃO MATERIALIZADA
+≠ DESIGN LIBERADO
+≠ ENGENHARIA LIBERADA
+```
 
 ## 3. Oportunidades e fronteiras externas
 
