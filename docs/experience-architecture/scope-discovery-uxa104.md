@@ -1,18 +1,19 @@
 ---
 id: GKR-UXA-104-SCOPE-DISCOVERY-001
 title: UXA-104 — Descoberta de Escopo
-status: candidate
-version: 0.1.0
+status: active
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
-maturity: scope_candidate_not_adjudicated
+maturity: scope_adjudicated
 depends_on:
   - GKR-STATE-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
   - GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001
   - GKR-UXA-103-TRN005-MATURITY-EXAM-001
+  - GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
 related:
   - UXA-103
   - GKR-UX-PER003-MASTER-001
@@ -23,17 +24,16 @@ related:
 
 ## 1. Estado deste artefato
 
-Este documento registra somente a descoberta de escopo candidata para a próxima frente numerada.
+Este documento preserva a descoberta que antecedeu a adjudicação humana do escopo da UXA-104.
 
 ```text
 UXA-104
-→ NEXT
-→ NOT_STARTED
-→ NOT AUTHORIZED
+→ SCOPE ADJUDICATED
+→ FUNCTIONAL EXAM NOT_STARTED
 
 SCOPE
-→ CANDIDATE ONLY
-→ NOT ADJUDICATED
+→ ADJUDICATED
+→ AUTHORITY = GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
 
 FUNCTIONAL EXAM
 → NOT_STARTED
@@ -45,7 +45,7 @@ PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-A existência deste artefato não inicia UXA-104, não cria autoridade normativa e não autoriza exame funcional, Design, protótipo ou implementação.
+A autoridade normativa de escopo é `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001`. Este artefato de descoberta permanece não normativo e não autoriza, por si só, exame funcional, Design, protótipo ou implementação.
 
 ## 2. Base canônica consultada
 
@@ -94,12 +94,12 @@ Essas famílias permanecem abertas, mas já possuem validações específicas pr
 
 Nenhuma delas é automaticamente promovida por esta descoberta.
 
-## 4. Convergência analítica candidata
+## 4. Convergência analítica adjudicada
 
-A evidência corrente converge, sem adjudicação, para:
+A convergência abaixo foi adjudicada humanamente como escopo da UXA-104:
 
 ```text
-UXA-104 CANDIDATE SCOPE
+UXA-104 ADJUDICATED SCOPE
 → G1 / FILE + OPTIONAL GUIDED QUESTIONS CONTINUITY
 → PER-013 + PER-014
 → TRN-014..017
@@ -115,7 +115,7 @@ G2–G5
 
 Motivo: `PER-003` já declara quatro escolhas válidas, mas somente Texto/Voz possuem continuidade materializada por `PER-004 → PER-005`. Arquivo e Perguntas Opcionais mantêm contratos de transição sem Masters canônicos próprios, constituindo a continuidade funcional mais diretamente adjacente à cadeia G1 já tratada.
 
-Esta convergência não equivale a adjudicação de escopo.
+Esta convergência foi adjudicada exclusivamente como limite de escopo; não constitui contrato funcional nem promoção de maturidade.
 
 ## 5. Limites
 
@@ -132,13 +132,11 @@ Este artefato:
 
 ## 6. Próximo gate humano
 
-O próximo gate é exclusivamente a adjudicação humana da seguinte conclusão candidata:
+O escopo foi adjudicado e materializado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001`.
 
 ```text
-ADJUDICATE UXA-104 SCOPE?
-→ PER-013 / PER-014
-→ TRN-014..017
-→ G1 FILE + OPTIONAL GUIDED QUESTIONS CONTINUITY
+NEXT GOVERNED GATE
+→ AUTHORIZE UXA-104 FUNCTIONAL EXAM
 ```
 
-Somente após essa adjudicação poderá existir uma autoridade normativa de escopo e, em gate posterior, um exame funcional.
+O exame funcional permanece `NOT_STARTED` até autorização humana própria.
