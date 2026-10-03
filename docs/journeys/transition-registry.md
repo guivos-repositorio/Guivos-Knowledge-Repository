@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.23
+version: 0.29.24
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
@@ -76,7 +76,7 @@ Validação integral documental não comprova implementação técnica nem esten
 
 | ID | Origem | Destino | Estado | Evidência / lacuna principal |
 |---|---|---|---|---|
-| GKR-TRN-001 | PER-001 | PER-002 | parcial | continuidade entre pacotes |
+| GKR-TRN-001 | PER-001 | PER-002 | **localmente validada** | UXA-105 — escopo e contrato funcional adjudicados; continuidade público → protegido examinada; maturidade promovida por gate humano; validação integral ponta a ponta não comprovada |
 | GKR-TRN-002 | PER-002 | PER-003 | localmente validada | UXA-035 + contratos correntes de entrada protegida |
 | GKR-TRN-003 | PER-003 | PER-004 | **localmente validada** | GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 — escolha Texto/Voz → expressão; autoridade, interrupção, falha e ausência de processamento implícito examinadas localmente |
 | GKR-TRN-004 | PER-004 | PER-005 | **localmente validada** | GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 — expressão revisada → inventário sem autorização material implícita; retorno/remoção preservados |
@@ -364,7 +364,7 @@ TRN-005
 
 Preservações:
 
-- `TRN-001` permanece parcial;
+- `TRN-001` está localmente validada após adjudicação específica de maturidade da UXA-105;
 - `TRN-002` e `TRN-006` permanecem localmente validadas;
 - `TRN-005` está localmente validada após adjudicação específica de maturidade da UXA-103; a evidência não sustenta promoção para integralmente validada;
 - `TRN-014..017` permanecem contratadas enquanto `PER-013/014` forem contratos candidatos;
