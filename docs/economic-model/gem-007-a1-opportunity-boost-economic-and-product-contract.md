@@ -2,9 +2,9 @@
 id: GEM-007-A1
 title: Opportunity Boost — Contrato Econômico e entre Produtos
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Economic Model
-last_updated: 2026-08-08
+last_updated: 2026-10-03
 parent: GEM-007
 depends_on:
   - GEM-003-REVENUE-FAMILY-CATALOG-001
@@ -14,6 +14,7 @@ depends_on:
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - UXA-004
 related:
+  - GKR-ORG-OPPORTUNITY-BOOST-ENTITLEMENT-001
   - GPA-007
   - UXA-038
   - GEM-010-A2
@@ -74,9 +75,9 @@ O Coletivo Livre não contrata diretamente. Poderá receber **Boost Social Finan
 
 Organização é participante institucional e utiliza a taxonomia **Conecta · Eleva · Transforma**. Guivos Business é Produto Especializado separado e sua taxonomia `Start · Growth · Scale · Enterprise` não pode ser usada como proxy de elegibilidade de Organização.
 
-A Organização poderá contratar Opportunity Boost quando o seu plano, contrato ou autoridade econômica vigente explicitamente conceder essa capacidade. Esta versão não cria equivalência automática entre os antigos tiers atribuídos à Organização e `Conecta / Eleva / Transforma`.
+A Organização poderá contratar Opportunity Boost quando autoridade econômica ou contratual vigente explicitamente conceder essa capacidade. `GKR-ORG-OPPORTUNITY-BOOST-ENTITLEMENT-001` estabelece que `Conecta`, `Eleva` e `Transforma` não concedem entitlement automático de Boost por presença no plano.
 
-Até a reconciliação específica dos entitlements de Organização, a simples presença em qualquer um desses planos não deve ser interpretada isoladamente como autorização técnica/operacional de cobrança.
+A simples presença em `Conecta`, `Eleva` ou `Transforma` não constitui autorização técnica/operacional de cobrança, verba de mídia, desconto ou inventário. Contrato específico poderá estabelecer capacidade própria somente de forma expressa.
 
 A assinatura não inclui verba de Boost por padrão.
 
@@ -212,6 +213,6 @@ O Opportunity Boost não poderá:
 
 ## 14. Estado
 
-`candidate_reconciled — economic and cross-product contract preserved; Organization entitlement mapping requires current-plan reconciliation before operationalization`.
+`candidate_reconciled — economic and cross-product contract preserved; current Organization plan entitlement mapping reconciled by GKR-ORG-OPPORTUNITY-BOOST-ENTITLEMENT-001; pricing, billing and operationalization remain pending`.
 
 Este documento não autoriza oferta pública, cobrança, campanha real, algoritmo, uso publicitário de dados pessoais, interface final ou Engenharia de Produto.
