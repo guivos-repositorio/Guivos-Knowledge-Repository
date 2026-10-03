@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -229,6 +229,138 @@ A calculadora deve receber, no mínimo, periodicidade, população/escala, ofert
 
 O contrato de experiência detalhado está em `GKR-UX-PLANS-BUSINESS-CONFIGURATOR-001`.
 
+
+## Tabela de composição econômica vigente
+
+A contratação Business usa a seguinte composição:
+
+```text
+ASSINATURA RECORRENTE / CONTRATUAL
+=
+PLANO-BASE
++ COMPONENTE DE POPULAÇÃO / ESCALA
++ COMPONENTE DE OFERTA
++ ACESSOS JOURNEY CUSTEADOS
++ CAPACIDADES ADICIONAIS
++ SERVIÇOS ADICIONAIS
+
+RECURSO OPERACIONAL SEPARADO
+=
+ORÇAMENTO PRÉ-PAGO DE INCENTIVO
+```
+
+### População / escala
+
+A base precificável é a **população elegível para a configuração contratada**. A cobrança é progressiva por faixa.
+
+| População elegível | Mensal por pessoa na faixa | Anual por pessoa na faixa |
+|---|---:|---:|
+| 1–50 | incluído | incluído |
+| 51–250 | R$ 1,49 | R$ 14,90 |
+| 251–1.000 | R$ 0,99 | R$ 9,90 |
+| 1.001–5.000 | R$ 0,69 | R$ 6,90 |
+| 5.001–20.000 | R$ 0,49 | R$ 4,90 |
+| acima de 20.000 | dimensionado | dimensionado |
+
+```text
+POPULATION_COMPONENT
+=
+SOMA DAS PESSOAS EM CADA FAIXA × TARIFA DA FAIXA
+```
+
+A cobrança progressiva evita salto integral de preço quando a população cruza uma faixa.
+
+### Oferta Business
+
+| Oferta | Mensal | Anual |
+|---|---:|---:|
+| **Programas de Incentivo** | R$ 199,00 | R$ 1.990,00 |
+| **Journey custeado** | R$ 99,00 | R$ 990,00 |
+| **Incentivos + Journey** | R$ 249,00 | R$ 2.490,00 |
+
+A taxa de Programas de Incentivo habilita a operação do programa. O orçamento destinado às recompensas permanece separado.
+
+A taxa de Journey custeado habilita a gestão empresarial dos acessos; os acessos financiados são cobrados separadamente.
+
+### Acessos Journey Plus custeados
+
+| Quantidade | Mensal por acesso | Anual por acesso |
+|---|---:|---:|
+| 1–99 | R$ 19,90 | R$ 199,00 |
+| 100–499 | R$ 17,90 | R$ 179,00 |
+| 500–1.999 | R$ 15,90 | R$ 159,00 |
+| 2.000+ | R$ 13,90 | R$ 139,00 |
+
+### Acessos Journey Pro custeados
+
+| Quantidade | Mensal por acesso | Anual por acesso |
+|---|---:|---:|
+| 1–99 | R$ 39,90 | R$ 399,00 |
+| 100–499 | R$ 35,90 | R$ 359,00 |
+| 500–1.999 | R$ 31,90 | R$ 319,00 |
+| 2.000+ | R$ 27,90 | R$ 279,00 |
+
+A faixa de Journey é determinada pela quantidade total de acessos custeados daquela modalidade no contrato.
+
+### Capacidades adicionais
+
+Uma capacidade só gera add-on quando **não estiver incluída no tier contratado**.
+
+| Capacidade | Mensal | Anual |
+|---|---:|---:|
+| **Intelligence avançado** | R$ 299,00 | R$ 2.990,00 |
+| **Exportações automatizadas / Power BI** | R$ 249,00 | R$ 2.490,00 |
+| **API Business** | R$ 399,00 | R$ 3.990,00 |
+| **SSO / SAML** | R$ 299,00 | R$ 2.990,00 |
+| **Governança e trilha de auditoria avançadas** | R$ 249,00 | R$ 2.490,00 |
+| **Integração dedicada adicional** | R$ 490,00 | R$ 4.900,00 |
+
+### Inclusões mínimas por tier
+
+| Capacidade | Start | Growth | Scale | Enterprise |
+|---|---|---|---|---|
+| Intelligence avançado | adicional | incluído | incluído | incluído |
+| Exportações automatizadas / Power BI | adicional | adicional | incluído | incluído |
+| API Business | adicional | adicional | incluído | incluído |
+| SSO / SAML | adicional | adicional | incluído | incluído |
+| Governança / auditoria avançadas | adicional | incluído | incluído | incluído |
+| 1 integração dedicada | adicional | adicional | incluída | incluída conforme contrato |
+| Integrações dedicadas adicionais | adicional | adicional | R$ 490/mês por integração | dimensionado |
+
+```text
+CAPACIDADE INCLUÍDA NO TIER
+→ ADD-ON = R$ 0,00
+```
+
+### Serviços adicionais
+
+| Serviço | Mensal | Anual |
+|---|---:|---:|
+| **Self-service** | R$ 0,00 | R$ 0,00 |
+| **Suporte ampliado** | R$ 299,00 | R$ 2.990,00 |
+| **Operação gerenciada** | R$ 990,00 | R$ 9.900,00 |
+| **Gestão dedicada / SLA ampliado** | R$ 1.990,00 | R$ 19.900,00 |
+| **Projeto de implantação customizada** | sob consulta | sob consulta |
+
+Serviço adicional não define automaticamente o plano-base e não deve ser cobrado separadamente quando estiver expressamente incorporado ao contrato.
+
+### Orçamento pré-pago de incentivo
+
+| Item | Regra |
+|---|---|
+| Valor | definido pela empresa |
+| Integra a assinatura recorrente | não |
+| Impacto na assinatura | R$ 0,00 |
+| Natureza | recurso operacional pré-pago |
+| Uso | conforme regras do programa e saldo disponível |
+
+```text
+INCENTIVE PROGRAM FEE
+≠ INCENTIVE BUDGET
+```
+
+Nenhum markup, spread, taxa de resgate ou expiração econômica é criado por esta tabela.
+
 ## Start
 
 **Preço:** R$ 299,00/mês · R$ 2.990,00/ano
@@ -290,7 +422,7 @@ O plano Business governa a profundidade contratada de:
 
 O nível de serviço não substitui o plano e não constitui uma segunda taxonomia de planos.
 
-Os **entitlements quantitativos finais** de cada capacidade permanecem sujeitos à formalização comercial própria. O pricing de referência não autoriza inferir limites que ainda não tenham sido governados.
+Os **entitlements quantitativos que não estejam definidos** permanecem sujeitos à formalização comercial própria. As inclusões mínimas das capacidades adicionais por tier são governadas por `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001` e não podem ser cobradas novamente como add-on quando já incluídas.
 
 ## O que a empresa pode contratar
 
@@ -303,15 +435,23 @@ O plano não determina sozinho qual oferta será utilizada. A empresa pode contr
 A arquitetura econômica separa:
 
 ```text
-PLANO BUSINESS
+PLANO-BASE
 +
-ESCALA / PARTICIPANTES / ACESSOS
+POPULAÇÃO / ESCALA
 +
-OFERTAS CONTRATADAS
+OFERTA(S)
 +
+ACESSOS JOURNEY CUSTEADOS
++
+CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
++
+SERVIÇOS ADICIONAIS
+=
+ASSINATURA RECORRENTE / CONTRATUAL
+
 ORÇAMENTO PRÉ-PAGO DE INCENTIVO
-+
-SERVIÇOS ADICIONAIS, QUANDO APLICÁVEIS
+=
+RECURSO OPERACIONAL SEPARADO
 ```
 
 O orçamento pré-pago não é a assinatura do plano Business. O acesso Journey custeado pela empresa possui relação econômica própria.
