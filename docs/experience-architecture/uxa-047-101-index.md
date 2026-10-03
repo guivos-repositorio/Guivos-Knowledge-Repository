@@ -145,6 +145,11 @@ INTERACTIVE PROTOTYPE O/C
 UXA-102 / V5
 → ADJUDICADA / MATERIALIZADA EM MAIN
 
+UXA-103
+→ [TRN-005 — Resultado Indeterminado, Reconciliação e Retry](uxa-103-trn005-indeterminate-reconciliation-retry.md)
+→ SCOPE ADJUDICATED
+→ FUNCTIONAL EXAM NOT_STARTED
+
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
