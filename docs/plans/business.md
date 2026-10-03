@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 1.4.0
+version: 1.5.0
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -11,6 +11,7 @@ depends_on:
   - GPA-004-FUNCTIONAL-PORTFOLIO-001
   - GEM-004-A1
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
+  - GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
   - GKR-UX-HOME-BUSINESS-MASTER-001
 ---
 
@@ -224,7 +225,7 @@ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 
 A calculadora deve receber, no mínimo, periodicidade, população/escala, oferta(s) e volumes aplicáveis.
 
-**Estado econômico atual:** a arquitetura suporta preço por população/faixa, por acesso e por produto/componente, porém os thresholds e valores variáveis ainda exigem autoridade econômica específica. Até essa adjudicação, a calculadora pode mostrar parcelas fixas conhecidas e itens sujeitos a dimensionamento, mas não pode fabricar um total final.
+**Estado econômico atual:** a tabela variável foi adjudicada em `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`. O configurador possui autoridade numérica para população/escala, ofertas, acessos Journey, capacidades adicionais e serviços adicionais, respeitando os entitlements por tier e mantendo Scale/Enterprise dimensionados quando aplicável.
 
 O contrato de experiência detalhado está em `GKR-UX-PLANS-BUSINESS-CONFIGURATOR-001`.
 
