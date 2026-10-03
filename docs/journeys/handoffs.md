@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-HANDOFFS-001
 title: Handoffs entre Participantes
 status: active
-version: 1.0.4
+version: 1.0.5
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
+  - GKR-UX-ORGANIZATION-BUSINESS-HANDOFF-CONTRACT-001
   - GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -155,7 +156,30 @@ BUSINESS
 
 Novos handoffs Business somente deverão existir quando uma transferência real de contexto/autoridade exigir contrato granular próprio.
 
-## 8. Regra de leitura
+## 8. Organização → Guivos Business
+
+`GKR-UX-ORGANIZATION-BUSINESS-HANDOFF-CONTRACT-001` fecha semanticamente a passagem da jornada institucional para o produto especializado Business.
+
+```text
+ORGANIZAÇÃO
+→ PARTICIPANTE ESTRUTURAL
+
+GUIVOS BUSINESS
+→ PRODUTO ESPECIALIZADO B2B
+
+ORGANIZAÇÃO → BUSINESS
+→ CONTRACTED INTERNAL HANDOFF
+
+DEDICATED SURF/TRN
+→ NOT CREATED
+
+BND-002
+→ DOES NOT PROVE BUSINESS ENTRY
+```
+
+A materialização granular somente deverá existir se uma necessidade real de navegação, dados, consequência, recuperação ou autoridade justificar contrato próprio.
+
+## 9. Regra de leitura
 
 ```text
 HANDOFF VIEW
