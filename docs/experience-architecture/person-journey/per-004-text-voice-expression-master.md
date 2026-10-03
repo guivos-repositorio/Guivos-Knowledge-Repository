@@ -2,9 +2,9 @@
 id: GKR-UX-PER004-MASTER-001
 title: Jornada da Pessoa — PER-004 — Expressão por Texto ou Voz — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-25
+last_updated: 2026-10-03
 normative: false
 maturity: current_surface_design_definition
 depends_on:
@@ -77,7 +77,7 @@ Ela não governa:
 
 ## 3. Entrada legítima
 
-A entrada corrente em `PER-004` ocorre por `TRN-003`, em estado parcial.
+A entrada corrente em `PER-004` ocorre por `TRN-003`, em estado **localmente validado** por `GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001`.
 
 A continuidade contratada é clara para:
 
@@ -441,7 +441,7 @@ Nenhuma ação implica aceitação silenciosa da organização sugerida.
 
 ## 20. Handoff para PER-005
 
-`TRN-004 — PER-004 → PER-005` permanece parcial.
+`TRN-004 — PER-004 → PER-005` está **localmente validada** por `GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001`.
 
 O handoff deve preservar, quando aplicável:
 
@@ -745,10 +745,10 @@ DRAFT PERSISTENCE
 → NOT INVENTED
 
 TRN-003
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED / G1
 
 TRN-004
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED / G1
 
 NEXT DOCUMENTATION TARGET
 → PER-005 — INVENTÁRIO E AUTORIZAÇÃO
